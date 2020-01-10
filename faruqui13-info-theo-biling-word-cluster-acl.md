@@ -1,0 +1,15 @@
+An Information Theoretic Approach to Bilingual Word Clustering
+Manaal Faruqui and Chris Dyer
+2013
+
+#Abstract
+
+incorporates both monolingual distributional evidence as well as
+cross-lingual evidence from parallel corpora to learn high quality word
+clusters jointly in any number of languages. The monolingual component of our
+objective is the average mutual information of clusters of adjacent words in
+each language, while the bilingual component is the average mutual
+information of the aligned clusters. To evaluate our method, we use the word
+clusters in an NER system and demonstrate a statistically significant
+improvement in F 1 score when using bilingual word clusters instead of
+monolingual clusters.
