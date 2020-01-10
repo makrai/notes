@@ -29,15 +29,15 @@ arXiv:1906.02715 [cs.LG]
       explain the particular form of the parse tree embeddings described in [7]
   * semantics: BERT distinguishes word senses at a very fine level
     * much of this [information] encoded in a relatively low-dim subspace
-    * mistakes in word sense disambiguation may correspond to changes in
-      internal geometric representation of word meaning
+    * mistakes in word sense disambiguation may correspond to 
+      changes in internal geometric representation of word meaning
 
 #2 Context and related work 2
 
-* BERT model introduced in [6]. To set context and terminology, we briefly
+* BERT model introduced in [6]. [We] set context and terminology:
   * input to BERT is based on a sequence of tokens (words or pieces of words)
   * output is a sequence of vectors, one for each input token, context embeds
-  * internals consist of two parts. First, an
+  * internals consist of two parts
     * initial embedding for each token is created by
       combining a pre-trained wordpiece embed with position and segment info
     * initial sequence of embeddings is run through multiple transformer layers
@@ -45,40 +45,40 @@ arXiv:1906.02715 [cs.LG]
       * two versions, a 12-layer BERT-base model and a 24-layer BERT-large
     * in each transformer layer is a set of attention matrices,
       one for each attention head,
-      each [head] contains a scalar value for each pair (token i , token j)
+      each [head] contains a scalar value for each pair (token_i , token j)
 
 ##2.1 Language representation by neural networks
 
 * [related work on] the internal states of RNN-based models have shown that
-  they represent information about soft hierarchical syntax in a form that
+  [RNNs] represent information about soft hierarchical syntax in a form that
   can be extracted by a one-hidden-layer network [11]
 * [from] full-sentence embeddings, a wide variety of syntactic properties could
   be extracted not just by an MLP, but by logistic regression [4]
 * context embeddings in BERT and related models
-  contain enough information to perform [ tasks in the ] “NLP pipeline” [24]
-  –tagging part-of-speech, co-reference resolution, dependency labeling, etc
+  contain enough information to perform [tasks in the] “NLP pipeline” [24]
+  –tagging part-of-speech, co-reference resolution, dependency labeling, etc–
   with simple classifiers (linear or small MLP models) [25, 21]
 * visualization-based work [27] suggests
   attention matrices may encode important relations between words
-* direct representation of a dependency parse tree (Hewitt & Manning [7]) A
-  * a single global linear transformation [ termed] a “structural probe”) the
+* direct representation of a dependency parse tree (Hewitt & Manning [7])
+  * a single global linear transformation [termed] a “structural probe”
   * square of the distance between context embeddings is roughly proportional
     to tree distance in the dependency parse. They ask
     * why squaring distance is necessary; we address this question in sec 3
-* two motivating questions for our research. Can we find
+* two motivating questions for our research
   * other examples of intermediate representations? And, from a
   * geometric perspective, how do all these [information coexist in a] vector?
 
 #3 Geometry of syntax 2
 
-* [we build] on the work by Hewitt and Manning [7] in two ways. First, we look
-  * whether attention matrices encode syntactic features. Second, we provide
+* [we build] on the work by Hewitt and Manning [7] in two ways
+  * whether attention matrices encode syntactic features
   * a simple mathematical analysis of the tree embeddings that they found
 
 ##  3.1 Attention probes and dependency representations
 
-* attention probe, an analog of edge probing [25]. An attention probe is a
-  * a pair of tokens, (token i , token j ) where the
+* attention probe, an analog of edge probing [25]
+  * a pair of tokens, (token_i , token_j)
   * input is a model-wide attention vector
     formed by [concating every attention matrix from every] head in every layer
   * goal is to classify a given relation between the two tokens with a linear m
@@ -88,19 +88,19 @@ arXiv:1906.02715 [cs.LG]
 
 * corpus of parsed sentences from the Penn Treebank [14]
   * filtered [to] the 30 dependency relations with more than 5,000 examples in
-  * ran each sentence through BERTbase, and obtained the model-wide attention
+  * ran each sentence through BERT-base, and obtained the model-wide attention
     vector (see Figure 1) between every pair of tokens in the sentence,
-* two L2 regularized linear classifiers via stochastic gradient descent, using
+* two L2 regularized linear classifiers via stochastic gradient descent
   1. linear binary classifier to predict ... the existence of a dependency rel
     * trained with a balanced class split, and 30% train/test split. The second
-  2. multiclass classifier to predict which type of dependency relation exists
+  2. multiclass classifier to predict [the type of the] dependency relation
     * trained with distributions outlined in table 2
 
 ###   3.1.2 Results
 
 * binary probe achieved an accuracy of 85.8%, and the
-* multiclass probe achieved an accuracy of 71.9%. Our real aim, again, is not
-* success [suggests that syntactic information is] encoded in the attention vs
+* multiclass probe achieved an accuracy of 71.9%
+* success [suggests that syntactic information is] encoded in the attention vcs
 
 ##  3.2 Geometry of parse tree embeddings 3
 
