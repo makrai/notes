@@ -4,7 +4,7 @@ Javier Gonzalez-Dominguez, Ignacio Lopez-Moreno, Haşim Sak, Joaquin
   Gonzalez-Rodriguez, Pedro J. Moreno 
 2014
 
-#Abstract
+# Abstract
 
 * The proposed approach is compared to baseline i-vector and feed forward Deep
   Neural Network (DNN) systems in the NIST Language Recognition Evaluation
@@ -14,7 +14,7 @@ Javier Gonzalez-Dominguez, Ignacio Lopez-Moreno, Haşim Sak, Joaquin
 * combination of the different systems leads to significant performance
   improvements (up to 28%).
 
-#Intro
+# Intro
 
 * In [10] we found Deep feeed forward Neural Networks (DNNs) to surpass
   i-vector based approaches when dealing with very short test utterances (≤3s)

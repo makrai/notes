@@ -2,10 +2,10 @@ Grégoire Montavon
 2009
 Deep learning for spoken language identification
 
-#Abstract
+# Abstract
   * small speech samples, extracted features
 
-#2 Design and implementation
+# 2 Design and implementation
 
 * datasets:
   * VoxForge 

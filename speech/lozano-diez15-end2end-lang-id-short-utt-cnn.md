@@ -4,7 +4,7 @@ Alicia Lozano-Diez, Ruben Zazo-Candil, Javier Gonzalez-Dominguez,
   Doroteo T. Toledano, Joaquin Gonzalez-Rodriguez
 INTERSPEECH 2015
 
-#Abstract
+# Abstract
 
 Convolutional Deep Neural Networks (CDNNs)
   * ability they have shown when modeling speech signals, and their 
@@ -21,7 +21,7 @@ Convolutional Deep Neural Networks (CDNNs)
     fusion at score level. This combination outperforms our best standalone
     system (up to 11% of relative improvement in terms of EER).
 
-#1 Intro
+# 1 Intro
 
 * In the last years, the LID problem has been addressed following the
   i-vector scheme [3], which is also within state-ofthe-art approaches for

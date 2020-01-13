@@ -20,7 +20,7 @@ Ruben Zazo, Alicia Lozano-Diez, Joaquin Gonzalez-Rodriguez
     unbalanced datasets, channel variability and, specially, to the mismatch
     between development and test datasets.
 
-#1 Intro
+# 1 Intro
 
 * Most of the state-of-the-art systems for LID [1, 2] rely on acoustic
   modeling [3, 4]. 
@@ -80,9 +80,9 @@ Ruben Zazo, Alicia Lozano-Diez, Joaquin Gonzalez-Rodriguez
           utterances and a controlled environment, but its 
         * performance degrades in severe mismatched conditions.
 
-#2 System Description
+# 2 System Description
 
-##LSTM
+## LSTM
 
 More information about the training process of a LSTM can be found in [10,
 12].

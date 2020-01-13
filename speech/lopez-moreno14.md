@@ -3,7 +3,7 @@ Ignacio Lopez-Moreno, Javier Gonzalez-Dominguez, Oldrich Plchot,
   David Martinez, Joaquin Gonzalez-Rodriguez, Pedro Moreno
 2014
 
-#Abstract
+# Abstract
 
 
 we 
@@ -41,9 +41,9 @@ previous works on neural networks applied to LID report results using
     NIPS workshop on Deep Learning for Speech ... 2009.
 this study, we propose the use of deep neural networks (DNNs)
 
-#2
+# 2
 
-##i-vector based baseline systems,
+## i-vector based baseline systems,
 
 * sharing i-vectors as the same starting point, differ in the type of back-end
 * 39 PLP (13 + ∆ + ∆∆) feature vectors extracted 5374with a 10ms frame rate...
@@ -63,7 +63,7 @@ this study, we propose the use of deep neural networks (DNNs)
         per-language covariances. For further details about this approach, see
         [9].
 
-##2.2 the proposed DNN architecture
+## 2.2 the proposed DNN architecture
 
 * a fully connected feed-forward neural network [18]. The hidden layers
   contain units with rectified linear activation functions.

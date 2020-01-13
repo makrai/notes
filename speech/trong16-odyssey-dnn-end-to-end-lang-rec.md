@@ -19,7 +19,7 @@ Trung Ngo Trong, Ville Hautamäki, Kong Aik Lee
   * deeper architecture compare[d] to any previous DNN approaches to language
     recognition task.
 
-#Intro
+# Intro
 
 * A more challenging task is language diarization [3]
 * Many state-of-the-art LID systems still heavily rely on acoustic modeling

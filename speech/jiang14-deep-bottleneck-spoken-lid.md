@@ -6,7 +6,7 @@
 * information
 * a total variance akkor is működik, ha csak nyelv szintjén van cimkézve a tanulóadat?
 
-#Abstract
+# Abstract
 
 * representations which are specific to language information
 * in recent years, representations based on both phonotactic and acoustic
@@ -16,7 +16,7 @@
     DBF based i-vector representation for each speech utterance
 * Results on NIST language recognition evaluation 2009 (LRE09)
 
-#Intro
+# Intro
 
 * just phonotactic and acoustic features
   * representations from various research domains, such as 
@@ -88,7 +88,7 @@
     * We will present a more detailed discussion and comparison
 * equal error rate (EER)
 
-#Methods
+# Methods
 
 * Deep Bottleneck Features
 * DNN Training
@@ -193,7 +193,7 @@
       * the outputs of the mono DBF-TV systems are integrated 
         * by the use of an averaging criteria 
 
-#Results and Discussion
+# Results and Discussion
 
 * Experimental Setup
   * LID Database.
@@ -239,4 +239,4 @@
 * Performance of the Proposed PDBF-TV System
 * Performance Comparison with State-of-the-Art
 
-#Conclusions
+# Conclusions

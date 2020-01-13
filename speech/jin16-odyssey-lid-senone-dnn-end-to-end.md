@@ -16,7 +16,7 @@ Ma Jin, Yan Song, Ian Mcloughlin, Lirong Dai, Zhongfu Ye
   which mitigates against over-fitting, has potential not just for LID, but
   also for other resource constrained tasks.
 
-#1 Intro
+# 1 Intro
 
 * using deep bottleneck features (DBFs) from a DNN trained for ASR [7]. 
   * Song et.al, Richardson et.al and Bing et.al [4, 5, 6] proposed

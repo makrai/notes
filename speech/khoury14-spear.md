@@ -4,7 +4,7 @@ Spear: an open source toolbox for speaker recognition based on bob
 
 http://pypi.python.org/pypi/bob.spear
 
-#Abstract
+# Abstract
 
 * Spear, an
   * open source and extensible toolbox for state-of-the-art speaker recognition
@@ -24,7 +24,7 @@ http://pypi.python.org/pypi/bob.spear
       * As a proof of concept, an experimental comparison of different
       * modeling techniques is conducted on the MOBIO database
 
-#1. Introduction
+# 1. Introduction
 
 * new paradigms such as
   * session variability modeling [1, 2] and
@@ -52,7 +52,7 @@ http://pypi.python.org/pypi/bob.spear
     * from the front-end feature extractor
     * to the final steps of decision and evaluation
 
-#2. Prior work
+# 2. Prior work
 
 * front-end level, feature extraction
   * HTK (Hidden Markov Model Toolkit) and
@@ -87,7 +87,7 @@ http://pypi.python.org/pypi/bob.spear
       * (only “raw” and “txt” formats supported)
       * (e.g. no model or score files)
 
-#3. Spear toolbox
+# 3. Spear toolbox
 
 * use of Bob
   * efficient C++ implementations of a large set of machine learning and
@@ -102,15 +102,15 @@ http://pypi.python.org/pypi/bob.spear
   * compare a variety of state-of-the-art algorithms
   * on several facial image databases
   * local workstation (single or multiple processes) or on a grid computing
-#3.1. Preprocessing
-#3.2. Feature extraction
-#3.3. Modeling, enrollment, and score computation
-#3.4. Score Fusion
-#3.5. Decision and Evaluation
-#3.6. Databases
+# 3.1. Preprocessing
+# 3.2. Feature extraction
+# 3.3. Modeling, enrollment, and score computation
+# 3.4. Score Fusion
+# 3.5. Decision and Evaluation
+# 3.6. Databases
 
-#4. Experiments
+# 4. Experiments
 
-#5. Conclusions
+# 5. Conclusions
 
 * contributions are encouraged and will be integrated

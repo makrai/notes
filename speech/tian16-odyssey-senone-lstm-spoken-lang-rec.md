@@ -3,7 +3,7 @@ Investigation of Senone-based Long-Short Term Memory RNNs
   for Spoken Language Recognition
 2016 Odyssey
 
-#Abstract
+# Abstract
 
 * Recently, the integration
   * of
@@ -20,7 +20,7 @@ Investigation of Senone-based Long-Short Term Memory RNNs
     LSTM RNN to produce frame alignments for sufficient statistics extraction.
 * Experiments on the NIST LRE 2015 demonstrate the effectiveness
 
-#Introduction
+# Introduction
 
 * based on Gaussian Mixture Models (GMM) have been proposed for
   * spoken language recognition (SLR) [1], among which
@@ -108,7 +108,7 @@ Investigation of Senone-based Long-Short Term Memory RNNs
   * Experiments and discussions are shown in Section 5
   * conclusions are presented in Section 6.
 
-#2 DNNs for feature extraction
+# 2 DNNs for feature extraction
 
 * The DNN based bottleneck features are being widely used in various speech
   related applications [7, 12, 13].
