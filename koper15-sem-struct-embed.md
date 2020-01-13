@@ -2,7 +2,7 @@ M Köper, C Scheible, S Schulte im Walde
 Multilingual Reliability and "Semantic" Structure of Continuous Word Spaces
 Proceedings of the 11th International Conference on Computational Sem 2015
 
-#Abstract
+# Abstract
 
 experiments with continuous word vectors for English and German, a
 morphologically rich language
@@ -13,12 +13,12 @@ morphologically rich language
   1. continuous representations lack the ability to solve analogies of
      paradigmatic relations
 
-#Intro
+# Intro
 
 * Zuanović+ (2014), who achieved strong performance for superlative and
 country-capital analogies in Croatian
 
-#2 Data
+# 2 Data
 
 * semantic relation dataset (Sem-Para) also contains analogy tasks. Here, the
   paradigmatic relation between A and B is the same as between C and D. The
