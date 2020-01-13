@@ -17,7 +17,7 @@ Marco Lippi, Paolo Torroni
    5. a subjective perspective on the major challenges that lie ahead.  
    6. concludes with a look to future applications.
 
-#2. ARGUMENTATION MODELS
+# 2. ARGUMENTATION MODELS
 
 * related tasks, such as 
   * rhetorical characterization of sentences [Houngbo and Mercer 2014],
@@ -28,7 +28,7 @@ Marco Lippi, Paolo Torroni
     * Argumentative opinion analysis [Villalba and Saint-Dizier 2012]
     * Argument scheme classification [Feng and Hirst 2011]
 
-#4
+# 4
 
 * opinionated claim mining [Rosenthal and McKeown 2012], a problem that is
   * closer to sentiment analysis, where the aim is to 

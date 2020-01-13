@@ -4,7 +4,7 @@ Do Multi-Sense Embeddings Improve Natural Language Understanding?
 
 jiweil/mutli
 
-#Abstract
+# Abstract
 
 * ‘multi-sense’ methods
   * proposed and tested on artificial word-similarity tasks,
@@ -28,7 +28,7 @@ jiweil/mutli
         * sentiment analysis
         * named entity extraction
 
-#1 Introduction
+# 1 Introduction
 
 * embeddings could model aspects of word sense (Kintsch, 2001)
 * models that represent each word type by different senses
@@ -55,7 +55,7 @@ jiweil/mutli
   4. the most straightforward way to yield better performance on these tasks is
      just to increase embedding dimensionality
 
-#2 Related Work p2
+# 2 Related Work p2
 
 * Reisinger and Mooney (2010) and Huang+ (2012)
   * pre-clustering the contexts of each token to create a fixed number of senses
@@ -72,7 +72,7 @@ jiweil/mutli
 * Qiu+ (2014) who maintains
   * separate representations for different part-of-speech tags of the same word
 
-#3 Learning Sense-Specific Embeddings p2
+# 3 Learning Sense-Specific Embeddings p2
 
 * Chinese Restaurant Processes (CRP) (Blei+ 2004; Teh+ 2006)
   * have been applied in the related field of word sense induction
@@ -80,7 +80,7 @@ jiweil/mutli
     * semantic relatedness ... and
     * the number of customers already sitting at that table
 
-#3.1 Chinese Restaurant Processes
+# 3.1 Chinese Restaurant Processes
 
 * can be viewed as a practical interpretation of
   * Dirichlet Processes (Ferguson, 1973) for nonparametric clustering
@@ -97,7 +97,7 @@ where
   * `P(w|d_t )`: probability of assigning the current data point to cluster `d_t`
   * γ: hyper parameter controlling the preference for sitting at a new table
 
-#3.2 Incorporating CRP into Distributed Language Models
+# 3.2 Incorporating CRP into Distributed Language Models
 
 * footnote 2:
   * models that predict succeeding words ...  models that predict words using
@@ -105,7 +105,7 @@ where
 * once the sense label is decided (line7), the model will adjust the embeddings
   for neighboring words, both global word vectors and sense-specific vectors
 
-#4 Obtaining Word Representations for NLU tasks p4
+# 4 Obtaining Word Representations for NLU tasks p4
 
 * decide sense labels for tokens in context
   * inference procedure for sense labels where 
@@ -117,7 +117,7 @@ where
   * Compute the probability of each possible sense for the current word, and
     represent the word with the expectation vector:
 
-#5 Word Similarity Evaluation p4
+# 5 Word Similarity Evaluation p4
 
 * the standard artificial task for matching human word similarity judgments
 * Early work used similarity datasets like
@@ -128,9 +128,9 @@ where
   * Stanford’s Contextual Word Similarities (SCWS) (Huang+ 2012)
   * words in context
 
-#6 Experiments on NLP Tasks
+# 6 Experiments on NLP Tasks
 
-#6.1 The Tasks
+# 6.1 The Tasks
 
 * NER
 * POS
@@ -140,15 +140,15 @@ where
   * SemEval-2010 Task 8 (Hendrickx+ 2009)
 * Sentence Semantic Relatedness
 
-#6.2 Discussions
+# 6.2 Discussions
 
 * EXPECTATION can be viewed as another form of one-word-one-vector models,
   just one where different senses are entangled but weighted to emphasize the
   important ones
 
-#7 Conclusion p8
+# 7 Conclusion p8
 
-#8 Appendix
+# 8 Appendix
 
 * represent the input at a sentence or phrase level
   * In sentiment classification and sentence semantic relatedness tasks,

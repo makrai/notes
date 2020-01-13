@@ -4,7 +4,7 @@ acl 2018
 
 https://github.com/codogogo/explirefit
 
-#Abstract
+# Abstract
 
 * Semantic specialization of distributional word vectors,
   referred to as retrofitting
@@ -21,7 +21,7 @@ https://github.com/codogogo/explirefit
   * specialize vector spaces of new languages (i.e., unseen in the training)
     by coupling ER with shared multilingual distributional vector spaces
 
-#1 Intro
+# 1 Intro
 
 * the usefulness [of algebraic word vector spaces] has been shown in tasks
   * Collobert+ 2011;
@@ -97,7 +97,7 @@ https://github.com/codogogo/explirefit
     ICLR 2017
   * we can also specialize distributional spaces for languages unseen
 
-#2 Related Work
+# 2 Related Work
 
 * vector space specialization for downstream tasks
   * dialog state tracking (Mrkšić+ 2017; Vulić+ 2017b)
@@ -110,7 +110,7 @@ https://github.com/codogogo/explirefit
   * joint specialization methods, and
   * post-processing (i.e., retrofitting) methods
 
-###Joint Specialization Models
+### Joint Specialization Models
 
 * integrate external constraints into ... CBOW, Skip-Gram (Mikolov+ 2013b), or
   Canonical Correlation Analysis (Dhillon+ 2015)
@@ -121,7 +121,7 @@ https://github.com/codogogo/explirefit
 * lower performance compared to retrofitting methods (Mrkšić+ 2016)
 * tied to the distributional objective
 
-###Post-Processing Models aka.~the retrofitting family
+### Post-Processing Models aka.~the retrofitting family
 
 * inject lexical knowledge from external resources into arbitrary pretrained wv
 * both similarity and dissimilarity (Mrkšić+ 2016; Mrkšić+ 2017; Vulić+ 2017b)
@@ -130,11 +130,11 @@ https://github.com/codogogo/explirefit
   * both similarity and dissimilarity constraints in[] the specialization
   * specializes the full vocabulary of the original distributional space
 
-#4 Experimental Setup 5
+# 4 Experimental Setup 5
 
-##Distributional Vectors
+## Distributional Vectors
 
-##Linguistic Constraints
+## Linguistic Constraints
 
 * We experiment with the sets of linguistic constraints used in prior work
   (Zhang+ 2014; Ono+ 2015)
@@ -144,11 +144,11 @@ https://github.com/codogogo/explirefit
   * only 57,320 unique words in all synonymy and antonymy constraints combined,
   * only 15.3% [or less] of the words from constraints are found in the embeds
 
-#5 Results and Discussion 6
+# 5 Results and Discussion 6
 
-##5.1 Word Similarity
+## 5.1 Word Similarity
 
-###Evaluation Setup
+### Evaluation Setup
 
 * two settings
   * lexically disjoint, we remove ... all linguistic constraints that contain
@@ -156,13 +156,13 @@ https://github.com/codogogo/explirefit
   * lexical overlap) we retain the constraints containing SimLex or SimVerb
   * comparison: the SOTA local retrofitting model Attract-Repel (Mrkšić+ 2017)
 
-###Results
+### Results
 
 * The ER model with the contrastive objective (ER-CNT) yields better
   performance on average
   than the one using the simpler square distance objective (ER-MSD)
 
-###Analysis
+### Analysis
 
 * We examine in more detail the performance of the ER model with respect to
   * the type of constraints used for training the model:
@@ -171,9 +171,9 @@ https://github.com/codogogo/explirefit
     (i.e., with respect to ... the topological regularization factor λ). All
     * The best performance is obtained for λ = 0.3
 
-##5.2 Language Transfer 7
+## 5.2 Language Transfer 7
 
-###Evaluation Setup
+### Evaluation Setup
 
 * We use the mapping model of Smith+ (2017) to induce a multilingual space
   * chosen for its ease of use, readily available implementation, and strong
@@ -192,26 +192,26 @@ https://github.com/codogogo/explirefit
 * evaluate ... on the respective SimLex-999 dataset for each language
   (Leviant and Reichart, 2015; Mrkšić+ 2017)
 
-###Results. The results are provided in Table 3
+### Results. The results are provided in Table 3
 
 * The more sophisticated contrastive ER-CNT model variant again outperforms the
   simpler ER-MSD variant, and it does so for all three languages
 
-##5.3 Downstream Tasks 8
+## 5.3 Downstream Tasks 8
 
-###5.3.1 Lexical Text Simplification
+### 5.3.1 Lexical Text Simplification
 
 * Light-LS lexical simplification algorithm of Glavaš and Štajner (2015)
 * candidate [words] are ranked according to several measures of simplicity
 
-####Evaluation Setup. We evaluate LIGHT-LS on the
+#### Evaluation Setup. We evaluate LIGHT-LS on the
 
 * LS dataset crowdsourced by Horn+ (2014)
 * two evaluation metrics from prior work (Horn+ 2014; Glavaš and Štajner, 2015)
   * accurracy is the [ratio of correct simplifications among] indicated complex
   * change (C): replaced word among indicated complex words
 
-###5.3.2 Dialog State Tracking
+### 5.3.2 Dialog State Tracking
 
 * dialog state tracking (DST) (Henderson+ 2014; Williams+ 2016)
 * typically the first component of a dialog system pipeline (Young, 2010),
@@ -220,7 +220,7 @@ https://github.com/codogogo/explirefit
   (should not recommend an “expensive pub in the south”
   when asked for a “cheap bar in the east”)
 
-####Evaluation Setup
+#### Evaluation Setup
 
 * we employ the Neural Belief Tracker (NBT), a DST model
   * makes inferences purely based on pre-trained word vectors (Mrkšić+ 2017)
@@ -228,9 +228,9 @@ https://github.com/codogogo/explirefit
 * the Wizard-of-Oz (WOZ) v2.0 dataset (Wen+ 2017; Mrkšić+ 2017)
 * joint goal accuracy (JGA), a standard DST evaluation metric
 
-####Results
+#### Results
 
-#Conclusion
+# Conclusion
 
 * future work, we will investigate explicit retrofitting methods for
   * asymmetric relations like hypernymy and meronymy

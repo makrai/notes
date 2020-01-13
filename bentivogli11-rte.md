@@ -2,7 +2,7 @@ The Seventh PASCAL Recognizing Textual Entailment Challenge
 Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
 2011
 
-#Abstract
+# Abstract
 
 * exercise proposed in RTE-6, consisting of a 
   * Main Task, in which Textual Entailment is performed on a real corpus in the
@@ -16,7 +16,7 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
     * knowledge resources used by the systems participating in the Main Task
     * tools
 
-#1 Introduction
+# 1 Introduction
 
 [értelmesebben van leírva a követkető szakaszban]
 
@@ -53,7 +53,7 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
     Resources initiative, are presented.  
   * Conclusions and perspectives on future work are outlined in Section 6.
 
-#2 The RTE-7 Main Task: Recognizing Textual Entailment within a Corpus
+# 2 The RTE-7 Main Task: Recognizing Textual Entailment within a Corpus
 
 * introduced as a pilot task in RTE-5 (see Bentivogli et al., 2009b) and became
   the Main task in 2006,
@@ -69,13 +69,13 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
      Task 2 , and partly taken directly from Summarization data set
      documents.
 
-##2.5 Evaluation Measures
+## 2.5 Evaluation Measures
 
 * Precision, Recall, and [micro-averaged] F-measure.
 
-##2.6 Submitted Systems and Results
+## 2.6 Submitted Systems and Results
 
-#5 System approaches
+# 5 System approaches
 
 * BIU proposes a new version of its transformation-based approach using
   entailment rules and syntactic motivated operations to perform a sequence of
@@ -115,4 +115,4 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
   that perform lexical word matching and measure syntactic similarity over
   chunks and named entities.
 
-#6 RTE-7 Ablation Tests and RTE Knowledge Resources initiative
+# 6 RTE-7 Ablation Tests and RTE Knowledge Resources initiative

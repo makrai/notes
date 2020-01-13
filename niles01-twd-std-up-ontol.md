@@ -2,7 +2,7 @@ Towards a Standard Upper Ontology
 Ian Niles, Adam Pease
 2001
 
-#Abstract
+# Abstract
 
 * Suggested Upper Merged Ontology (SUMO) is an upper level ontology that has
   been proposed as a starter document for The Standard Upper Ontology Working
@@ -10,7 +10,7 @@ Ian Niles, Adam Pease
   * from the fields of engineering, philosophy, and information science. 
   * SUMO provides definitions for general-purpose terms
 
-#1 Intro
+# 1 Intro
 
 * Recognizing both the need for large ontologies and the need for an open
   process leading to a free, public standard, a diverse group of collaborators
@@ -22,7 +22,7 @@ Ian Niles, Adam Pease
   * It is estimated that it will eventually contain between 1000 and 2500 terms
     and roughly ten definitional statements for each term
 
-#2. SUMO Methodology
+# 2. SUMO Methodology
 
 * This content included the ontologies available on the Ontolingua server, John
   Sowa’s upper level ontology, the ontologies developed by ITBM-CNR, and
@@ -72,7 +72,7 @@ Ian Niles, Adam Pease
        disjoint, etc. Despite this strong similarity between the two concepts,
        it was decided that both of them should be maintained in the SUMO.
 
-#3. SUMO Top Level
+# 3. SUMO Top Level
 
 ```
 Physical -- everything that has a position in space/time
@@ -116,7 +116,7 @@ Abstract
 
 [nincs 4. szakasz]
 
-#5. Challenges to SUMO
+# 5. Challenges to SUMO
 
 * our goal is to construct a single, consistent, and comprehensive ontology. It
   will be unfortunate if we cannot reach this goal, but perhaps it is

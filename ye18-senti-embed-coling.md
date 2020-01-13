@@ -2,7 +2,7 @@ Zhe Ye, Fang Li, Timothy Baldwin
 Encoding Sentiment Information into Word Vectors for Sentiment Analysis
 COLING 2018
 
-#Abstract
+# Abstract
 
 * methods have been proposed to encode external knowledge into word embeddings
 * this paper is to encode sentiment knowledge into pre-trained word vectors
@@ -11,7 +11,7 @@ COLING 2018
   this method improves the accuracy of sentiment analysis
   compared to a number of benchmark methods
 
-#1 Intro
+# 1 Intro
 
 * deep neural networks, such as CNNs have been widely used for sentiment
 * A simple CNN trained over pre-trained word vectors
@@ -36,9 +36,9 @@ COLING 2018
      sentiment lexicon during the training of the CNN sentiment classifier
   1. we achieve SOTA accuracy over a range of benchmark sentiment analysis DSs
 
-#2 Related Work
+# 2 Related Work
 
-##2.1 Encoding External Knowledge into Word Vectors
+## 2.1 Encoding External Knowledge into Word Vectors
 
 * two categories of encoding external knowledge
   * during the word vector learning stage; and
@@ -84,7 +84,7 @@ COLING 2018
 * [The two method above] both ... before applying word vectors in downstream
   Our method [during] fine-tuning the word vectors in a downstream task
 
-##2.2 Adapting Word Vectors for Sentiment Analysis
+## 2.2 Adapting Word Vectors for Sentiment Analysis
 
 * Maas+ (2011) combine ... a probabilistic document model and a sentiment
   component to learn word vectors

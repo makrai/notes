@@ -3,11 +3,11 @@ Tim Van de Cruys
 ACL 2009 https://www.aclweb.org/anthology/W09-0211
 Natural Language Engineering 2010
 
-#Abstract
+# Abstract
 
 * evaluated in a pseudo-disambiguation task. The results [are promising]
 
-#1 Intro
+# 1 Intro
 
 * situations [with] co-occurrence frequencies of three modes and beyond
   * information retrieval: words × documents × authors
@@ -28,9 +28,9 @@ Natural Language Engineering 2010
   * violation is due to the ambiguity of the verb play, and the individual
     preferences (play, SUBJ, turntable) and (play, OBJ, piano) are perfect
 
-#2 Previous work
+# 2 Previous work
 
-##2.1 selectional preferences and verb clustering in NLP
+## 2.1 selectional preferences and verb clustering in NLP
 
 * early approaches (Basili+ 1992; Grishman and Sterling 1992)
 * Resnik (1993, 1996)
@@ -46,9 +46,9 @@ Natural Language Engineering 2010
     * distributional similarity methods [mostly for] textual entailment
       (Bhagat, Pantel and Hovy 2007; Basili+ 2007; and Erk 2007)
 
-#2.2 factorization algorithms ... used for language processing
+# 2.2 factorization algorithms ... used for language processing
 
-###2.2.1 Two-way factorizations
+### 2.2.1 Two-way factorizations
 
 * SVD [has been used in] image recognition, information retrieval and
   signal processing (Deprettere 1988)
@@ -56,7 +56,7 @@ Natural Language Engineering 2010
   * probabilistic latent semantic analysis (Hofmann 1999) and
   * non-negative matrix factorization (Lee and Seung 2000), remedy these
 
-###2.2.2 Three-way factorizations
+### 2.2.2 Three-way factorizations
 
 * multilinear generalizations of the SVD
   * In statistics, the three-way component analysis
@@ -70,28 +70,28 @@ Natural Language Engineering 2010
 * One of the few papers that has investigated the application ... for NLP is
   Turney (2007), in which a three-mode tensor is used to compute ... sem sim
 
-#3 Methodology 6
+# 3 Methodology 6
 
-##3.1 Three-way data
+## 3.1 Three-way data
 
-##3.2 Tensor algebra
+## 3.2 Tensor algebra
 
 * preliminaries based on Kiers (2000) and Kolda and Bader (2009)
 
-#3.3 Multi-way factorization algorithms 11
+# 3.3 Multi-way factorization algorithms 11
 
 * two different (but related) multi-way factorization algorithms
   * parallel factor analysis and
   * non-negative tensor factorization
 * overview of multi-way data analysis (Acar & Yener 2009; Kolda & Bader 2009)
 
-###3.3.1 Parallel factor analysis
+### 3.3.1 Parallel factor analysis
 
 * algorithms available to calculate the PARAFAC decomposition
   * alternating least squares (ALS, Carroll and Chang 1970; Harshman 1970)
     * In each iteration, two of the modes are fixed and the third one is fitted
 
-###3.3.2 Non-negative tensor factorization
+### 3.3.2 Non-negative tensor factorization
 
 * algorithms
   * Bro and Jong (1997) use an alternating least squares algorithm
@@ -103,11 +103,11 @@ Natural Language Engineering 2010
   * implemented in matlab, using the Tensor Toolbox for sparse tensor[s]
     (Bader and Kolda 2009)
 
-#4 Application 12
+# 4 Application 12
 
-##4.1 three-way selectional preferences
+## 4.1 three-way selectional preferences
 
-##4.2 Methodological remarks
+## 4.2 Methodological remarks
 
 * Twente Nieuws Corpus (Ordelman 2002), a .5 B words corpus of Dutch news
 * dimension sizes: the 1 k verbs, 10 k subjects, and 10 k direct objects
@@ -116,7 +116,7 @@ Natural Language Engineering 2010
   * PPMI ... proves beneficial for similarity (Bullinaria and Levy 2007)
 * [rank] varying between 50 and 300
 
-##4.3 Examples
+## 4.3 Examples
 
 * example dimensions that have been found by the algorithm with k = 100
   * police arrest suspect, majority support proposal, governemt send troop, etc
@@ -130,9 +130,9 @@ Natural Language Engineering 2010
     * The subject slot is more spread out: ‘fame’, ‘nature’, ‘use’, ‘hygiene’,
       ‘revenge’, ‘shame’, ‘institution’, ‘Culture’, ‘division’ (.04 each)
 
-#5 Evaluation [in] pseudo-disambiguation task
+# 5 Evaluation [in] pseudo-disambiguation task
 
-##5.1 Evaluation framework
+## 5.1 Evaluation framework
 
 * pseudo-disambiguation task, similar to the one used by Rooth+ (1999)
   * The task is to judge which subject (s or s') and direct object (o or o')
@@ -148,9 +148,9 @@ Natural Language Engineering 2010
       verbs by subjects [and] direct objects (1k × 20k)
     * pointwise mutual information
 
-##5.2 Evaluation results
+## 5.2 Evaluation results
 
-#6 conclusions and ... future work
+# 6 conclusions and ... future work
 
 * future work
   1. inclusion of other dependency relations

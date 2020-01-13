@@ -2,12 +2,12 @@ Quentin Pradet, Laurence Danlos, and Gaël de Chalendar
 Adapting VerbNet to French using existing resources
 LREC 2014
 
-#Abstract
+# Abstract
 
 * [we use] two French resources: a semantic lexicon (Les Verbes Français) and
   a syntactic lexicon (Lexique-Grammaire)
 
-#1 Intro
+# 1 Intro
 
 * we first have translated top-level VerbNet members in French and used French
   linguistic resources that encode the syntactic and semantic behavior of
@@ -16,7 +16,7 @@ LREC 2014
   VerbNet syntactic alternations for French, which gives rise to various
   problems that we will discuss in Section 4.2.
 
-#2 Related work
+# 2 Related work
 
 * other languages, Merlo+ (2002) have used cross-linguistic similarities
   to convert 20 Levin classes to Italian
@@ -27,16 +27,16 @@ LREC 2014
     the mappings between VerbNet and WordNet(.Br)
 * Our translation will be [open and] linked to the English VerbNet and the two
 
-#3 Presentation of VerbNet and French Lexical resources
+# 3 Presentation of VerbNet and French Lexical resources
 
 * thematic roles nor semantic formulae [are] why we want to build ... Verb3net
 
-#4 Building Verb3net
+# 4 Building Verb3net
 
 * top hierarchy in Verb3net should be as close as possible to that in VerbNet
   *  verbs that are zero-related to nominals doesn’t have a French equivalent,
 
-##Second step
+## Second step
 
 * For example, all the frames involving a conative, dative or benefactive
   alternation can be systematically suppressed because these alternations don’t
@@ -47,7 +47,7 @@ LREC 2014
   * In French, the order of complements depends on a number of syntactic and
     semantic factors (Thuilier 2012), but [no] lexical factors
 
-###4.2.3. Case by case work
+### 4.2.3. Case by case work
 
 * semantic differences which are taken into account in VerbNet but not in
   LVF or in LG. For example, among the verbs of Sending and Carrying
@@ -60,7 +60,7 @@ LREC 2014
     such a hi- erarchy cannot be adopted for French.  Without going into all
     the details, let us underline the following points:
 
-#5 Conclustion
+# 5 Conclustion
 
 * not yet completed. When it will be completed, we will make it freely
 * part of the ASFALDA 6 project

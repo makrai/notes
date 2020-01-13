@@ -4,7 +4,7 @@ Paul Smolensky
 1990
 
 
-#Abstract
+# Abstract
 
 * [csak kis részét értem]
 * tensor product representation, is defined for the
@@ -19,7 +19,7 @@ Paul Smolensky
   * enables analysis of the interference of symbolic structures stored
   * the basis for working connectionist models of high-level cognitive tasks
 
-#I. Introduction
+# I. Introduction
 
 * Connectionist models rely on parallel numerical computation rather than the
   * serial symbolic computation of traditional AI models
@@ -82,7 +82,7 @@ Paul Smolensky
   * however, the analysis presented here is of structured objects in general;
     it applies equally well to objects like images and speech trains
 
-##1.1 Distributed representation and variable binding in connectionist systems
+## 1.1 Distributed representation and variable binding in connectionist systems
 
 * why natural connectionist representation of structured objects is a problem
   I list several properties of the solution to this problem that is presented
@@ -133,7 +133,7 @@ Paul Smolensky
   * A connectionist "recirculation" learning algorithm can be derived for
     finding these optimal representations (Section 3.9)
 
-##1.2 Connectionist representation of symbolic structures 7
+## 1.2 Connectionist representation of symbolic structures 7
 
 I respond to the possible connectionist criticism that it is misguided to even
 try to solve this problem
@@ -202,9 +202,9 @@ In response to this argument I have five points
   * not that mental operations are always serial symbol manipulations (although
   * that the information processed often has useful symbolic descriptions
 
-##1.3 I outline the rest of the paper
+## 1.3 I outline the rest of the paper
 
-#2 2. Connectionist Representation and Tensor Product Binding: Defs and Exmps 9
+# 2 2. Connectionist Representation and Tensor Product Binding: Defs and Exmps 9
 
 * the notion of connectionist representation is formally defined and
 * the tensor product representation is constructed
@@ -212,7 +212,7 @@ In response to this argument I have five points
 * special cases that reduce to previous connectionist representations
 
 
-#3 Tensor Product Representation: Properties 27
+# 3 Tensor Product Representation: Properties 27
 
 * properties of the tensor product representation are proved and
   several extensions discussed
@@ -224,8 +224,8 @@ In response to this argument I have five points
   optimality for patterns representing roles in structures, and a connectionist
   "recirculation" algorithm for learning these optimal representations
 
-##3.9. Learning optimal role representations
+## 3.9. Learning optimal role representations
 
-#4 Summary and conclusion 54
+# 4 Summary and conclusion 54
 
 

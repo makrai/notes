@@ -2,7 +2,7 @@ Two Multivariate Generalizations of Pointwise Mutual Information
 Tim Van de Cruys
 ACL-Workshop on Distributional Semantics and Compositionality 2011
 
-#Abstract
+# Abstract
 
 * [in NLP], PMI has [been a] useful association measure
   * e.g. collocation extraction and word space models
@@ -10,7 +10,7 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
   * two multivariate generalizations of PMI, and
   * their usefulness and nature in the extraction of SVO triples
 
-#1 Introduction
+# 1 Introduction
 
 * Mutual information (Shannon and Weaver, 1949) is a measure of mutual dep
   * instantiation for specific outcomes called pointwise mutual information
@@ -22,7 +22,7 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
     Baroni and Lenci, 2010; Giesbrecht, 2010; Van de Cruys, 2010)
 * little attention has been devoted to the weighting of ...  cooccurrences
 
-#2 Previous work, mainly in the field of information theory
+# 2 Previous work, mainly in the field of information theory
 
 * interaction information (McGill 1954)
   * based on the notion of conditional entropy
@@ -36,9 +36,9 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
 * based on their global [non pointwise] multivariate counterparts
 * the global case ought to be the expected value for all the instantiations
 
-##3.2 Multivariate mutual information
+## 3.2 Multivariate mutual information
 
-###3.2.1 Interaction information
+### 3.2.1 Interaction information
 
 * Interaction information (McGill, 1954) –
   also called co-information (Bell, 2003) – is
@@ -47,7 +47,7 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
 * [the numerator and the denominator] have been swapped ... to ensure a proper
   set-theoretic measure (Fano, 1961; Reza, 1994)
 
-###3.2.2 Total correlation
+### 3.2.2 Total correlation
 
 * Total correlation (Watanabe, 1960) –
   also called multi-information (Studený and Vejnarová, 1998)
@@ -92,7 +92,7 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
 * we computed Kendall’s `τ_b` to compare the rankings yielded by the two
   * `τ_b` = 0.21, indicating that the [methods] differ to a significant extent
 
-#5 Conclusion and future research
+# 5 Conclusion and future research
 
 * future work
   * the exact nature of the dependencies that [the two diff]  measures capture

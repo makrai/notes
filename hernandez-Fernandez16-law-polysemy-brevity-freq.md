@@ -2,7 +2,7 @@ A Hernández-Fernández, B Casas, R Ferrer-i-Cancho, and J Baixeries
 Testing the Robustness of Laws of Polysemy and Brevity versus Frequency
 2016
 
-#Abstract
+# Abstract
 
 * Here we 
   * focus on a couple of [laws]: the 
@@ -10,7 +10,7 @@ Testing the Robustness of Laws of Polysemy and Brevity versus Frequency
     * the law of abbreviation, i.e. ... more frequent words to be shorter. Here
   * evaluate the robustness of these laws in [new conditions]
 
-#1 Intro
+# 1 Intro
 
 * Zipfs law for word frequencies can be explained by information theoretic
   models of communication and is a robust pattern of language that presents
@@ -37,4 +37,4 @@ Testing the Robustness of Laws of Polysemy and Brevity versus Frequency
     * Altmann, E.G., Gerlach, M.: (2016) Statistical Laws in Linguistics, pp. 7–26.
   * significant correlation of the right sign is found in all the combinations
 
-##3.4 Statistical Methods
+## 3.4 Statistical Methods

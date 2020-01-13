@@ -2,7 +2,7 @@ Omer Levy and Yoav Goldberg
 Neural Word Embedding as Implicit Matrix Factorization
 nips 2014
 
-#Abstract
+# Abstract
 
 * [skip-gram with negative-sampling] is implicitly factorizing a word-context
   matrix, whose cells are the pointwise mutual information (PMI) of the

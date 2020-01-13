@@ -5,7 +5,7 @@ Evaluation of Word Vector Representations by Subspace Alignment
 script and linguistic vectors
 https://github.com/ytsvetko/qvec
 
-#Abstract
+# Abstract
 
 * correlation with similarity judgments [often correlate poorly with
   performance] as features in downstream evaluation tasks
@@ -16,7 +16,7 @@ https://github.com/ytsvetko/qvec
   * obtains strong correlation with performance of the vectors
     in a battery of downstream semantic evaluation tasks
 
-#1 Introduction
+# 1 Introduction
 
 * manually constructed “linguistic” word vectors
   * whose components have well-defined linguistic properties (§2)
@@ -35,7 +35,7 @@ https://github.com/ytsvetko/qvec
 * extrinsic
   * high correlation (0.34 ≤ r ≤ 0.89) with the extrinsic tasks (§5)
 
-#2 Linguistic Dimension Word Vectors
+# 2 Linguistic Dimension Word Vectors
 
 * we exploit an existing semantic resource—SemCor (Miller et al., 1993)
 * we construct a set of linguistic word vectors,

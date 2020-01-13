@@ -3,7 +3,7 @@ Mapping Ontologies Using Ontologies:
 Balázs Indig, Márton Miháltz, András Simonyi 
 2016 lrec
 
-#1 Intro
+# 1 Intro
 
 * We
   * linking the verb frame database to available external linguistic resources
@@ -12,7 +12,7 @@ Balázs Indig, Márton Miháltz, András Simonyi
       and target resources using two OWL ontologies and by employing the Racer
       OWL reasoner (Haarslev et al., 2012).
 
-#2 Related work
+# 2 Related work
 
 * Semantic role labeling was 
   * pioneered by (Gildea and Jurafsky, 2002). 

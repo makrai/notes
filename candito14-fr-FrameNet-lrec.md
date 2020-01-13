@@ -3,7 +3,7 @@ M Candito, P Amsili, L Barque, F Benamara, G de Chalendar, M Djemaa, P Haas,
   R Huyghe, Y Yannick Mathieu, P Muller, B Sagot, L Vieu
 lrec 2014
 
-#Invited talk at TLT 2016
+# Invited talk at TLT 2016
 
 * The Asfalda project aims to develop a French
   * corpus with frame-based semantic annotations and automatic
@@ -16,7 +16,7 @@ lrec 2014
   advantage that, though the number of frames is limited (around a hundred), we
   obtain full coverage within a given domain
 
-#1 Introduction
+# 1 Introduction
 
 * resources built within ASFALDA will consist in a French 
   * lexicon in which lexical units are associated to FrameNet frames, and a 
@@ -49,7 +49,7 @@ lrec 2014
 * building on previous work that automatically projects [FrameNet] to French
   (Padó, 2007; Mouton et al., 2010)
 
-#2 General Strategy
+# 2 General Strategy
 
 * Two main strategies have been proposed in the past for FrameNet developments:
   * frame-by-frame strategy, that 

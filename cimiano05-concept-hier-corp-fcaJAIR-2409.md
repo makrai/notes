@@ -17,7 +17,7 @@ Valency patterns in Italian
     * selected sample of 80 verbs. These verbs are conceived of as
 * rigorous review, and ... the revised version differs substantially 
 
-#1 Introduction
+# 1 Introduction
 
 * organized as follows. 
   2. illustrates the general characteristics of Italian morphosyntax. 
@@ -26,7 +26,7 @@ Valency patterns in Italian
   5. and 6. valency changing operations
   7. provides the conclusions.
 
-##2.1 General characteristics of Italian
+## 2.1 General characteristics of Italian
 
 * fusional language (making use of both prefixation and suffixation) char-
   * high degree of allomorphic variation, with 
@@ -47,7 +47,7 @@ Valency patterns in Italian
     * like other pro-drop languages, shows patterns of head marking, as
     * agreement for A, and the dative and accusative clitics for R and P, resp
 
-##2.2 Italian morphosyntax: Basic clause structure
+## 2.2 Italian morphosyntax: Basic clause structure
 
 * pro-drop language ... omitting subjects in topic and non-contrastive focus
 * rich system of nominal and verbal agreement. 
@@ -68,7 +68,7 @@ Valency patterns in Italian
   * In compound tenses ...  the past participle agreement depends on
     unaccusative vs unergativ
 
-##2.3 Argument coding
+## 2.3 Argument coding
 
 * Arguments in Italian are coded by means of 
   * verb agreement, – that singles out A/ S from P – and 
@@ -76,7 +76,7 @@ Valency patterns in Italian
     * non-core arguments (e.g., recipient/ beneficiary phrases) and 
     * adjuncts (e.g., goal phrases). The adpositions (i.e.  prepositions)
 
-##2.4 Voice and valency rearranging ~ valency changing patterns and markers
+## 2.4 Voice and valency rearranging ~ valency changing patterns and markers
 
 * rich and very productive system of valency 
   * rearranging constructions, 
@@ -100,19 +100,19 @@ Valency patterns in Italian
       (formed with the auxiliaries essere ‘be’, venire ‘come’, andare ‘go’ + 
       the past participle of the lexical verb) 
 
-#3 Valency patterns
+# 3 Valency patterns
 
-##3.1 Identification of valency classes
+## 3.1 Identification of valency classes
 
 * Two useful syntactic tests for differentiating non-core arguments from adjs
   * preposing/free permutation, that is only possible with adjuncts
   * variation in the number and type of adposition(s), possible with adjuncts,
 
-##3.2 Avalent verbs (coding frame: ((S) > V.subj[3SG/S])
+## 3.2 Avalent verbs (coding frame: ((S) > V.subj[3SG/S])
 
 * metereological phenomena ...  and astronomical events
 
-##3.3 Monovalent verbs (coding frame: `<S>V.subj[S]`)
+## 3.3 Monovalent verbs (coding frame: `<S>V.subj[S]`)
 
 * stative verbs (giacere ‘lie’, scarseggiare ‘be short of’, vivere ‘live’)
 * continuation of states (sopravvivere ‘survive’)
@@ -121,7 +121,7 @@ Valency patterns in Italian
 * manner of motion verbs 
   (volare ‘fly’, atterrare ‘land’, saltare ‘jump’, correre ‘run’) (21d):
 
-##3.4 Bivalent verbs (coding frame: `A > V.subj [A] (con+I`)
+## 3.4 Bivalent verbs (coding frame: `A > V.subj [A] (con+I`)
 
 * subclasses, varying both in their 
   * aspectual characteristics and in the 
@@ -145,7 +145,7 @@ Valency patterns in Italian
     * aspectual nature of the verb (e.g., the presence/absence of a change)
     * agentivity/control of the subject/object
 
-##3.5 Trivalent verbs (coding frame: `A > V.subj[A] > T (a+R) (L) (I) (di+X)`)
+## 3.5 Trivalent verbs (coding frame: `A > V.subj[A] > T (a+R) (L) (I) (di+X)`)
 
 * three nuclear arguments, 
   * A, the agent, surfacing as subject,
@@ -159,7 +159,7 @@ Valency patterns in Italian
     prestare ‘lend’, comprare ‘buy’, restituire ‘return’), as in (36a),
   * mental transfer (e.g., mostrare ‘show’, dire ‘tell’, spiegare ‘explain’...)
 
-#4 Uncoded argument alternations
+# 4 Uncoded argument alternations
 
 * a very pervasive pattern of P deletion [and] argument rearranging strategies,
   * degrees of productivity, reflecting the aspectual characteristics of verbs
@@ -185,8 +185,8 @@ Valency patterns in Italian
       confined to modal or negative polarity contexts
     * the Locatum subject alternation
 
-#5 Coded alternations: voice and valency changes
+# 5 Coded alternations: voice and valency changes
 
-#6 Other argument rearranging alternations
+# 6 Other argument rearranging alternations
 
-#7 Conclusion 50
+# 7 Conclusion 50

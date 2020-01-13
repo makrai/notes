@@ -2,7 +2,7 @@ Nenad Tomašev and Dunja Mladenić
 Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
 2013
 
-#Abstract
+# Abstract
 
 * we
   * adapted the Hidden Naive Bayes (HNB) model to the problem of modeling
@@ -16,7 +16,7 @@ Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
 * tested in ... object recognition from images in class-imbalanced data and the
 * results show ... clear benefits when compared to the other hubness-aware kNN
 
-#Introduction
+# Introduction
 
 * basic k-nearest neighbor classification rule (Fix and Hodges, 1951)
 * extensions

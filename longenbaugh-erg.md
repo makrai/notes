@@ -1,7 +1,7 @@
 Experimental approaches to ergative languages
 Nicholas Longenbaugh and Maria Polinsky
 
-#Abs
+# Abs
 * three major topics
   * competition between accusative and ergative alignment, where researchers
     have attempted to derive the typological preference for accusative

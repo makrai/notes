@@ -2,7 +2,7 @@ An Overview of the KL-ONE Knowledge Representation System
 RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 (1985) COGNITIVE SCIENCE 9, 171-216
 
-#Abstract
+# Abstract
 
 * KL-ONE is a system for representing knowledge in Artificial Intelligence pro-
   groms.  It has been developed and refined over a long period and has been
@@ -15,7 +15,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
     * taxonomy and classification that ore central to it
   * use of KL-ONE and its classifier in a recognition task
 
-#1. INTRODUCTION
+# 1. INTRODUCTION
 
 * KL-ONE 
   * a system for representing knowledge in Artificial Intelligence 
@@ -47,7 +47,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
     between descriptions
   * inferences that follow from structuring a domain in a KL-ONE knowledge base
 
-#2. LANGUAGE STRUCTURE AND PHILSOPHY
+# 2. LANGUAGE STRUCTURE AND PHILSOPHY
 
 * representation of conceptual information based on the idea of 
   * strucfured inheritance networks (Brachman, 1978, 1979)
@@ -71,7 +71,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   * Krypton (Brachman et al., 1983)
   * KL-TWO (Moser, 1983).
 
-##2.1 Epistemological Primitives
+## 2.1 Epistemological Primitives
 
 * the principal element of KL-ONE is the structured conceptual object, Concept
 * Brachman (1979) and Woods (1975), the history of network representations is
@@ -88,7 +88,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   * structure-forming operations 
     * e.g., “specialization,” “restriction,” “differentiation”
 
-##2.2 Primitive and Defined Concepts
+## 2.2 Primitive and Defined Concepts
 
 * one usually first specifies some primitive types, which are then typically
   followed by other types (either primitive or defined) that are specified in
@@ -100,7 +100,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * default or typicality information. KL-ONE as yet does not address this
   directly, although we do comment on it in section 7.
 
-#3. NETWORKS AND THE NOTION OF A CLASSIFIER p7
+# 3. NETWORKS AND THE NOTION OF A CLASSIFIER p7
 
 * KL-ONE is based on the idea of sfructured inheritance 
   * it is convenient to think of a KL-ONE knowledge base as a type of semantic
@@ -116,7 +116,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * KL-ONE knowledge bases have a network flavor, with the links standing for
   what we have called the “epistemologically primitive” relations
   
-#4. GENERIC CONCEPTS AND BASIC TAXONOMY p8
+# 4. GENERIC CONCEPTS AND BASIC TAXONOMY p8
 
 * types of Concepts
   * The most important type is the Generic Concept, 
@@ -142,7 +142,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   Concepts as a “taxonomy.”
 * always have a single root Concept, usually named THING.
 
-#5. ROLES, RESTRICTION, AND DIFFERENTIATION p11
+# 5. ROLES, RESTRICTION, AND DIFFERENTIATION p11
 
 * Roles are the KL-ONE equivalent of two-place predicates.
 * distinguishes Roles from their fillers. The difference is motivated
@@ -163,20 +163,20 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   senders of messages must be persons. No cancellation of Value Restrictions
   is allowed
 
-##5.1. RoleSet Restriction p13
+## 5.1. RoleSet Restriction p13
 
 * specification ... with respect to the components of a RoleSet
 
-##5.2. RoleSet Differentiation p15
+## 5.2. RoleSet Differentiation p15
 
 * a differentiation relation between President and Officer specifies that any
   president of a company is, by definition, an officer of that company.
 
-#6. CLASSIFICATION OF KL-ONE CONCEPTS p17
+# 6. CLASSIFICATION OF KL-ONE CONCEPTS p17
 
 [semmi új]
 
-#7. A NOTE ON DEFAULT VALUES AND CANCELLATION p19
+# 7. A NOTE ON DEFAULT VALUES AND CANCELLATION p19
 
 * it would be inappropriate to “cancel” an inherited component and KL-ONE
   does not allow any such cancellation.
@@ -192,7 +192,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   precisely because of its reliance upon necessary conditions rather than
   default assertions.
 
-#8. INDIVIDUAL CONCEPTS p20
+# 8. INDIVIDUAL CONCEPTS p20
 
 * suitable for uniquely describing individuals. The primary unit for
   individual description is the Individual Concept, which is similar to the
@@ -209,7 +209,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * Role filler can also be a Lisp object. The IRole for Body shows a Lisp string
   as the description of the Body of MESSAGE.
 
-#9. STRUCTURAL DESCRIPTIONS p22
+# 9. STRUCTURAL DESCRIPTIONS p22
 
 * form Concepts by constraining the relation between more than one Role of the
   same Concept.  
@@ -228,13 +228,13 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   events
 * two types of SDS
 
-##9.1 Role Value Maps
+## 9.1 Role Value Maps
 
 * express the equality of two sets of Role fillers.
 * “the grandparents of a person are exactly the same as the parents of the
   parents of that person.“”
 
-##9.2. Structural Descriptions
+## 9.2. Structural Descriptions
 
 * two fundamental aspects to the relation of two Roles using KL-ONE Concepts.
   1. simply getting access to those Concepts in such a way that their use in
@@ -245,7 +245,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
      using explicit links; thus the KL-ONE structure that implements SDS is
      unhappily complicated.
 
-#10. ASSERTIONAL LANGUAGE p27
+# 10. ASSERTIONAL LANGUAGE p27
 
 * We have tried carefully to distinguish between 
   * purely descriptional structure and 
@@ -263,7 +263,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   of Contexts can be created by putting the meta-anchor (i.e., a Nexus-see
   section 11.1) of one Context into another Context.
 
-#11. ADDITIONAL KL-ONE FACILITIES p28
+# 11. ADDITIONAL KL-ONE FACILITIES p28
 
 * meta-describe a KL-ONE object in KL-ONE. Of couise, to do this, the system
   needs to have the Concepts of a KL-ONE Concept, a KL-ONE Role, a KL-ONE Role
@@ -272,7 +272,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   * “PRE-” and “POST-” for conditional execution, or “WHEN-” for side
     effects
 
-#12. CONCLUSION p30
+# 12. CONCLUSION p30
 
 * KL-ONE has pioneered the idea of constructing a representation out of
   “epistemological” primitives and has provided a first set of such primitives
@@ -285,4 +285,4 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * interaction of Roles through its Structural Description and Role Value Map
   mechanisms.
 
-#APPENDIX AN EXAMPLE USING KL-ONE AND THE CLASSIFIER p33
+# APPENDIX AN EXAMPLE USING KL-ONE AND THE CLASSIFIER p33

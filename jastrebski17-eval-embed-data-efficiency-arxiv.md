@@ -5,7 +5,7 @@ How to evaluate word embeddings?
 
 Results [and scripts] will be posted online upon publication
 
-#Abstract
+# Abstract
 
 * Maybe the single most important goal of representation learning is making
   subsequent learning faster. Surprisingly, this fact is
@@ -18,7 +18,7 @@ Results [and scripts] will be posted online upon publication
   downstream model]
   * questions the cosine–based, unsupervised, evaluation methods
 
-#1 Introduction
+# 1 Introduction
 
 * relatively simple algebraic structure [of embeds] (Arora+ 2016)
   * words can be decomposed into an overcomplete basis
@@ -43,7 +43,7 @@ Results [and scripts] will be posted online upon publication
     * address some of the critiques (Faruqui+ 2016), in authors’ opinion
       mostly due to their purely unsupervised nature
 
-#2 Proposal
+# 2 Proposal
 
 * argument[s] for data efficiency focused evaluation
   * pretrained word embeddings provide little benefit [in] deep learning models
@@ -76,7 +76,7 @@ Results [and scripts] will be posted online upon publication
 * include representatives of typical model classes (nonlinear and linear ones)
 * report AUC of learning curve for each task, and pick [interesting] tasks
 
-#Experiments
+# Experiments
 
 In this section we define specific metrics and tasks
 * three main points of proposal:
@@ -87,7 +87,7 @@ In this section we define specific metrics and tasks
 * one of the main goals of representation learning is disentangling factors of
   variation, usually learned representations are entangled and dense
 
-##Datasets and models
+## Datasets and models
 
 * Datasets [in] 4 categories: Similarity, Analogy, Sentence and Single word
   * Sentence and Single word datasets have binary targets
@@ -123,7 +123,7 @@ In this section we define specific metrics and tasks
   * Single word: RF, SVM (with RBF kernel), Naive Bayes,
     k-Nearest Neighbor Classifier and Logistic Regression
     
-##Embeddings
+## Embeddings
 
 * “shallow” pretrained embeddings: 
   * GloVe (100 and 300 dimensions) (Pennington+ 2014), 
@@ -143,11 +143,11 @@ In this section we define specific metrics and tasks
 
 TODO
 
-##3.4 Learnable Similarity and Analogy tasks
+## 3.4 Learnable Similarity and Analogy tasks
 
 * analogy: In the case of HasContext and InstanceOf datasets...
 
-##3.3 Rank stability under changing dataset size
+## 3.3 Rank stability under changing dataset size
 
 * Mean absolute value of change of ranking is approximately (averaged over all
   categories) 0.6 with standard deviation of 0.2. This means that usually an
@@ -161,7 +161,7 @@ TODO
 * data efficiency [ exemplified by differences between GloVe 100 and ] 300
   (elaborated on in the next section)
 
-##3.6 Linear vs non–linear models
+## 3.6 Linear vs non–linear models
 
 * there [are] embeddings especially fitted for use with linear models, Fig. 1.  
   * typically used evaluation does not answer [whether there is] information
@@ -173,7 +173,7 @@ TODO
       our evaluation reveals more complicated picture,
     * significantly better rank of GloVe 100 at the beginning [than] at the end 
 
-##3.7 Discussion
+## 3.7 Discussion
 
 * algebraic interpretation of word embeddings (Arora+ 2016)
   * decompose word embedding space into a set of concepts 
@@ -181,6 +181,6 @@ TODO
   * can be obtained using standard methods like k-SVD.
   * Theoretically, tasks ... should test for existence of such concepts
 
-#4 Conclustion
+# 4 Conclustion
 
 * e.g. differences between different size GloVe embeddings

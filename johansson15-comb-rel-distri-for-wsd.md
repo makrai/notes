@@ -2,7 +2,7 @@ Combining Relational and Distributional Knowledge for Word Sense Disambiguation
 Richard Johansson: Språkbanken, Department of Swedish, University of
 2015 NODALIDA Nordic Conference of Computational Linguistics
 
-#Abstract
+# Abstract
 
 * input to the algorithm is a 
   * large unlabeled corpus and a 

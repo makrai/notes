@@ -33,17 +33,17 @@
     * any claim ... needs to be demonstrated in these domains first
     * detaile[s] in Materials and Methods and SI Appendix, section I.
 
-#Constructing Semantic Network from Translations
+# Constructing Semantic Network from Translations
 
 * these Networks are language specific
 * The link is weighted by the number of such [languages]
 * how similar are these semantic networks across language groups?
 
-#Semantic Clusterings
+# Semantic Clusterings
 
 * our web-based platform (29).
 
-#Evidence for Universal Semantic Structure
+# Evidence for Universal Semantic Structure
 
 * we group the languages by various factors (SI Appendix, Table SIII)
   * geography, climate, or topography of the region where they are spoken, and
@@ -83,7 +83,7 @@
       two bootstrap experiments to obtain p 1 (Mantel test or randomly
       permuted dendrograms) and p 2 (surrogate groups).
 
-#Heterogeneity of the Semantic Network
+# Heterogeneity of the Semantic Network
 
 * both node degrees and link weights [trend] toward a heavy-tailed distribution
 * numbers of polysemies of [concepts] in any two languages
@@ -102,18 +102,18 @@
       * can be accommodated using a slightly more complicated model described
         in SI Appendix, section IV.
 
-#Discussion
+# Discussion
 
 * For instance, SEA/OCEAN and SALT are more closely related to each other than
   either is to SUN, and this pattern is true for both coastal and inland
   languages.
 * implications [for] reconstruction of human history using linguistic data
 
-#Materials and Methods
+# Materials and Methods
 
 ## Supporting Appendix
 
-##I. Methodology for Data Collection and Analysis 3
+## I. Methodology for Data Collection and Analysis 3
 
 * based on the expert judgment of authors WC, LS, and IM in typology and
 * comparative historical linguistics.
@@ -126,7 +126,7 @@
     meanings 9
     E. Trimming, collapsing, projecting
 
-##II. Notation and Methods of Network Representation
+## II. Notation and Methods of Network Representation
 
     A. Network representations
         1. Multi-layer network representation 17
@@ -141,7 +141,7 @@
     E. Node degree and link presence/absence data 26
     F. Node degree and Swadesh meanings 26
 
-##III. Universal Structure: Conditional dependence 27
+## III. Universal Structure: Conditional dependence 27
 
     A. Comparing semantic networks between language groups 28
         1. Mantel test 28
@@ -150,7 +150,7 @@
     C. Single-language graph size is a significant summary statistic 32
     D. Conclusion 33
 
-##IV. Model for Degree of Polysemy 33
+## IV. Model for Degree of Polysemy 33
 
     A. Aggregation of language samples 33
     B. Independent sampling from the aggregate graph 34

@@ -2,7 +2,7 @@ Context-Dependent Sense Embedding
 Lin Qiu and Kewei Tu and Yong Yu
 2016 acl
 
-#Abstract
+# Abstract
 
 * recent work on sense embedding uses
   * context clustering methods to determine the senses of words, which is
@@ -20,7 +20,7 @@ Lin Qiu and Kewei Tu and Yong Yu
   * outperforms the state-of-the-art model on a word sense induction task by a
     13% relative gain
 
-#1 Intro
+# 1 Intro
 
 * embeddings have been proven helpful in many NLP tasks
   * Collobert and Weston, 2008

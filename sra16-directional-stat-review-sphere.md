@@ -6,7 +6,7 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
   * common mathematical models
   * software, applications, and open mathematical challenges
 
-#1 Intro
+# 1 Intro
 
 * in classical information retrieval ... for analyzing and clustering text
   * to remove the biases induced by the length of a document [36, 37]
@@ -27,16 +27,16 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
     * [40] S. Sra and D. Karp.  JMVA 2013 The multivariate Watson distribution
       * also describes asymptotic estimates of the concentration parameter
 
-#2 Basic Directional Distributions
+# 2 Basic Directional Distributions
 
-##2.3 Watson distribution
+## 2.3 Watson distribution
 
 * multivariate Watson distribution [28]
 * the vectors ± x ∈ S {p − 1} are equivalent. This constraint is also denoted
 * x ∈ P p − 1 , where P p − 1 is the projective hyperplane
 * parametrized by a mean-direction μ ∈ P p − 1 , and a concentration parameter
 
-#3 Related work and applications
+# 3 Related work and applications
 
 * classical references on directional statistics are [26, 27, 46]
 * more recent, updated reference is [28]
@@ -59,9 +59,9 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
   speaker modeling [44]
 * the Angular Gaussian distribution [45] ... to model natural images [22]
 
-#5 Mixture models
+# 5 Mixture models
 
-##5.3 Application: clustering using movMF
+## 5.3 Application: clustering using movMF
 
 * Mixtures of vMFs have been ... used in text clustering; see overview [6]
 * TODO
@@ -70,7 +70,7 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
     concentration parameter κ as discussed in Sec. 4.1 is of great importance
     ... due to floating point difficulties
 
-###Performance evaluation
+### Performance evaluation
 
 * normalized mutual information (NMI) [42]
   * also previously used to assess movMF based clustering [5, 6])
@@ -82,7 +82,7 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
   against Latent Dirichlet Allocation (LDA) [8] and
   an Exponential-family Dirichlet compound multinomial model (EDCM) [17]
 
-#Conclusion
+# Conclusion
 
 * we hope to see more exploration of directional models in
   Bayesian models, Hidden Markov Models using directional models, and 

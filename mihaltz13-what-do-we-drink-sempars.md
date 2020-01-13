@@ -2,7 +2,7 @@ Márton Miháltz 1 , Bálint Sass 1 , Balázs Indig 2
 What Do We Drink? Automatically Extending Hungarian WordNet With Selectional Preference Relations 
 Joint Symposium on Semantic Processing, Textual Inference and Structures 2013
 
-#Abstract
+# Abstract
 
 * experiment ... aims to extend Hungarian WordNet with new verb-noun relations
   * selectional restrictions for various argument positions. We present an
@@ -13,7 +13,7 @@ Joint Symposium on Semantic Processing, Textual Inference and Structures 2013
   * intends to cover ... various case inflections or postposition particles
   * The new links in HuWN are assigned corpus-based probabilities.  We present
 
-#1 Introduction
+# 1 Introduction
 
 * one of PWN’s weaknesses lies in the low number of cross-part-of-speech
   * existing: morphological (derivational)
@@ -25,7 +25,7 @@ Joint Symposium on Semantic Processing, Textual Inference and Structures 2013
   * totaling 42,000 synsets.  
 * new relations to reflect some intrinsic properties of Hungarian (Kuti+ 2008).
 
-#2 verb argument syntax and semantics and present our goals. 
+# 2 verb argument syntax and semantics and present our goals. 
 
 * Connections between verbs and their nominal arguments show a range of types. On
   * idiomatic, non-compositional verb-argument relationships where a certain
@@ -44,7 +44,7 @@ Joint Symposium on Semantic Processing, Textual Inference and Structures 2013
   * e.g. {to drink}– [case=acc, p=.87]–{liquid} designates
     P(liquid| drink acc) = .87
 
-#Related Work
+# Related Work
 
 * relied on WordNet in the detection of selectional preferences 
   * Resnik (1996, 1998)
@@ -63,7 +63,7 @@ Joint Symposium on Semantic Processing, Textual Inference and Structures 2013
 * assign[ing] semantic class labels to verb argument positions [ enables us to
   extend] Hungarian WordNet with a new type of verb-noun (verb-argument) rel
 
-#4 Methods
+# 4 Methods
 
 input: frequency list of nouns in a certain argument position of a given verb
 returns a weighted list of Word-Net synsets that represent them (classes/genlz)
@@ -93,7 +93,7 @@ words covered by the classes (see Section 6.)
   Mazsola DB] because Mazsola 1) employed a less sophisticated parser, 2) does
   not differentiate between verb complements and optional modifiers (adjuncts).
 
-#5 Results and Discussion
+# 5 Results and Discussion
 
 * still working on an evaluation methodology to compare [to] judgments of human 
 * we demonstrate our results on some relevant examples.
@@ -113,7 +113,7 @@ words covered by the classes (see Section 6.)
     * {liquid} > {beverage, drink} > {alcohol, alcoholic drink}. 
     * which of these do we exactly want to link {drink} (verb) to?
 
-#6 Future work
+# 6 Future work
 
 * It is often the case that binding one of the arguments ... entails special
   selectional preference conditions on another argument position. Examples are

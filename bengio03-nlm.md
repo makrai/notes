@@ -2,7 +2,7 @@ Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin
 A Neural Probabilistic Language Model
 2003
 
-#1 Intro
+# 1 Intro
 
 * n-gram language model
  * back-off trigram models (Katz, 1987) or in
@@ -21,7 +21,7 @@ A Neural Probabilistic Language Model
   4. training such large-scale model is expensive but feasible, scales to large
      contexts, and yields good comparative results (Section 4)
 
-#1.1 Fighting the Curse of Dimensionality with Distributed Representations
+# 1.1 Fighting the Curse of Dimensionality with Distributed Representations
 
 * In a nutshell, the idea of the proposed approach can be summarized as
   * associate with each word in the vocabulary a distributed word feature vector
@@ -36,7 +36,7 @@ A Neural Probabilistic Language Model
 * feature vectors ... could be initialized using prior knowledge of semantic
   features
 
-#1.2 Relation to Previous Work
+# 1.2 Relation to Previous Work
 
 * The idea of using neural networks to model high-dimensional discrete
   distributions (Bengio and Bengio, 2000a,b)
@@ -69,7 +69,7 @@ A Neural Probabilistic Language Model
     * secondary structure prediction, and for
     * text-to-speech mapping (Jensen and Riis, 2000)
 
-#2. A Neural Model
+# 2. A Neural Model
 
 * R(θ) is a regularization term
   * in our experiments, R is a weight decay penalty applied only to the weights
@@ -89,7 +89,7 @@ A Neural Probabilistic Language Model
   the frequency of the context (using the same procedure that combines trigram,
   bigram, and unigram in the interpolated trigram, which is a mixture)
 
-#3. Parallel Implementation 7
+# 3. Parallel Implementation 7
 
 * the amount of computation required for obtaining the output probabilities
   ... require the computation of the probabilities for all the words
@@ -99,7 +99,7 @@ A Neural Probabilistic Language Model
   * Linux clusters with a fast network ... Parameter-Parallel Processing
     * see 3.2
 
-#3.2 Parameter-Parallel Processing
+# 3.2 Parameter-Parallel Processing
 
 * parallelize across the parameters, in particular the parameters of the
   output units, because that is where the vast majority of the computation
@@ -114,13 +114,13 @@ A Neural Probabilistic Language Model
   * batch gradient descent is generally much slower than stochastic gradient
     descent (LeCun et al., 1998)
 
-#4. Experimental Results 11
+# 4. Experimental Results 11
 
 * Brown corpus and Associated Press (AP)
 * different preprocessing
 * learning rate
 
-##4.2 Results
+## 4.2 Results
 
 * number of epochs
 * weight decay penalty
@@ -131,9 +131,9 @@ A Neural Probabilistic Language Model
   from 2 words of context to 4 words brought improvements to the neural
   network, not to the n-grams)
 
-#5. Extensions and Future Work
+# 5. Extensions and Future Work
 
-##5.1 An Energy Minimization Network
+## 5.1 An Energy Minimization Network
 
 * A variant of the above neural network can be interpreted as an energy
   minimization model following Hinton’s ... products of experts (Hinton, 2000)
@@ -161,7 +161,7 @@ A Neural Probabilistic Language Model
   * This feature vector C(i) can then be used in the input context part 
     when we try to predict the probabilities of words that follow word i
 
-##5.2 Other Future Work
+## 5.2 Other Future Work
 
 1. Decomposing the network in sub-networks
   * [e.g.] using a clustering of the words
@@ -186,6 +186,6 @@ A Neural Probabilistic Language Model
 5. Interpreting (and possibly using) the word feature representation
 6. Polysemous words
 
-#Acknowledgments
+# Acknowledgments
 
 * The authors would like to thank Léon Bottou, Yann Le Cun and Geoffrey Hinton

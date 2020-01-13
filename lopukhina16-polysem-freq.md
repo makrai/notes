@@ -3,7 +3,7 @@ The Taming of the Polysemy:
 2016
 A Lopukhina, K Lopukhin, B Iomdin, G Nosyrev
 
-#Abstract
+# Abstract
 
 * sense frequency distribution
 * word sense frequency estimation for Russian nouns.
@@ -11,13 +11,13 @@ A Lopukhina, K Lopukhin, B Iomdin, G Nosyrev
   sufficiently large corpus and a good dictionary that provides examples for
   each sense.
 
-#Introduction
+# Introduction
 
 * present separate information about the frequency of each sense
 * English verb pattern frequency distributions can be found in the Pattern
   Dictionary of English Verbs, developed by Patrick Hanks and colleagues
   (http://pdev.org.uk/; Hanks & Pustejovsky 2005; Hanks 2008).
 
-#6 Conclusions and Future Work
+# 6 Conclusions and Future Work
 
 * dominance of the commonest sense of the word [in] English (Kilgarriff 2004)

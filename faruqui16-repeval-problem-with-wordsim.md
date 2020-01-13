@@ -1,7 +1,7 @@
 Problems With Evaluation of Word Embeddings Using Word Similarity Tasks
 Manaal Faruqui  Yulia Tsvetkov  Pushpendre Rastogi  Chris Dyer 
 
-#1 Introduction
+# 1 Introduction
 
 * The origin of word similarity tasks 
   * Rubenstein and Goodenough (1965) who constructed a list of 65 word pairs
@@ -10,22 +10,22 @@ Manaal Faruqui  Yulia Tsvetkov  Pushpendre Rastogi  Chris Dyer
     * They found a positive correlation between contextual similarity and
       human-annotated similarity of word pairs.
 
-#2 Problems
+# 2 Problems
 
-##2.2 Subjectivity of the task 
+## 2.2 Subjectivity of the task 
 
-##2.3 Semantic or task-specific similarity?  
+## 2.3 Semantic or task-specific similarity?  
 
-##2.4 No standardized splits & overfitting 
+## 2.4 No standardized splits & overfitting 
 
-##2.5 Low correlation with extrinsic evaluation 
+## 2.5 Low correlation with extrinsic evaluation 
 
 * [with] tasks like text classification, parsing, sentiment analysis 
   (Tsvetkov et al., 2015; Schnabel et al., 2015)
 
-##2.6 Absence of statistical significance
+## 2.6 Absence of statistical significance
 
-##2.7 Frequency effects in cosine similarity
+## 2.7 Frequency effects in cosine similarity
 
 * frequent words ... are longer as they are updated more often during training
   (Turian et al., 2010).
@@ -43,7 +43,7 @@ Manaal Faruqui  Yulia Tsvetkov  Pushpendre Rastogi  Chris Dyer
   * the average rank of the 1000 nearest neighbors of a word follows: nn-rank ≈
     1000 · word-rank^0.17
 
-##2.8 Inability to account for polysemy
+## 2.8 Inability to account for polysemy
 
 * there has been progress on obtaining multiple vectors per word-type to
   account for different word-senses

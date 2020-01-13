@@ -6,7 +6,7 @@ probing datasets and the evaluation suite LINSPECTOR with
 https://github.com/UKPLab/linspectoi
 
 
-#Abstract
+# Abstract
 
 * ever growing number of word representation models [for many] languages,
 * lack of a standardized technique to provide insights into what is captured
@@ -31,7 +31,7 @@ https://github.com/UKPLab/linspectoi
   especially for morphologically rich languages
 
 
-#1 Introduction
+# 1 Introduction
 
 * embedding models ... differ in terms of
   * design objective
@@ -117,9 +117,9 @@ https://github.com/UKPLab/linspectoi
   * comparing transfer learning techniques
 
 
-#2. Related Work on Word Representation Evaluation
+# 2. Related Work on Word Representation Evaluation
 
-##2.1 Intrinsic evaluation 4
+## 2.1 Intrinsic evaluation 4
 
 * word similarity datasets ... in other languages
   * Leviant and Reichart (2015) collected human-assessed translations of
@@ -140,7 +140,7 @@ https://github.com/UKPLab/linspectoi
     downstream tasks even for English one of the morphologically poorest
   * rely on nearest neighbor relation as a proxy to predict the performance
 
-##2.2 Extrinsic evaluation 5
+## 2.2 Extrinsic evaluation 5
 
 * test a single representation model on several downstream tasks
   (Ling+ 2015; Pennington, Socher, and Manning 2014; Bojanowski+ 2017), or to
@@ -150,40 +150,40 @@ https://github.com/UKPLab/linspectoi
   Nayak, Angeli, and Manning (2016), which introduces an evaluation suite of
   six downstream tasks: 2 syntactic + 4 semantic
 
-##2.3 Evaluation via probing task 6
+## 2.3 Evaluation via probing task 6
 
 
-#3. Probing Tasks 7
+# 3. Probing Tasks 7
 
-##3.1 Task Definitions
+## 3.1 Task Definitions
 
-##3.2 Dataset Creation 13
+## 3.2 Dataset Creation 13
 
-##3.4 Token-Level Probing Tasks 16
-
-
-#4. Evaluation Methodology 18
-
-##4.2 Multilingual Embeddings 19
-
-##4.5 Diagnostic evaluation: a case study on SRL 23
+## 3.4 Token-Level Probing Tasks 16
 
 
-#5. Experiments and Results 24
+# 4. Evaluation Methodology 18
 
-##5.2 Results
+## 4.2 Multilingual Embeddings 19
 
-###5.2.2 Results on Token-Level Probing Tasks 29
-
-
-#6. Analysis 30
-
-##6.2 Diagnostic Task 35
-
-##6.3 Summary of Experimental Findings 38
+## 4.5 Diagnostic evaluation: a case study on SRL 23
 
 
-#7. Conclusion 39
+# 5. Experiments and Results 24
+
+## 5.2 Results
+
+### 5.2.2 Results on Token-Level Probing Tasks 29
+
+
+# 6. Analysis 30
+
+## 6.2 Diagnostic Task 35
+
+## 6.3 Summary of Experimental Findings 38
+
+
+# 7. Conclusion 39
 
 * the number of correlated probing tests was higher for agglutinative
   languages, especially for syntactic tasks
@@ -199,4 +199,4 @@ https://github.com/UKPLab/linspectoi
   * how?
 
 
-#8. Acknowledgements 40
+# 8. Acknowledgements 40

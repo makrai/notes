@@ -3,7 +3,7 @@ Flattening the Density Gradient for Eliminating Spatial Centrality
 Kazuo Hara, Ikumi Suzuki, Kei Kobayashi, Kenji Fukumizu, Milos Radovanovic
 AAAI, 2016
 
-#Abstract 
+# Abstract 
 
 * Spatial centrality, whereby samples closer to the center of a dataset tend to
   be closer to all other samples, is regarded as one source of hubness. Hubness
@@ -22,7 +22,7 @@ AAAI, 2016
   method improves k-NN classification performance and outperforms an existing
   hub-reduction method.
 
-#Introduction
+# Introduction
 
 * k-nearest neighbor (k-NN) classifier is vulnerable to the hubness problem,
   which is a phenomenon that occurs in high-dimensional spaces 

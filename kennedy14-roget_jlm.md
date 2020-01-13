@@ -2,7 +2,7 @@ Evaluation of Automatic Updates
 of Roget’s Thesaurus
 Alistair Kennedy and Stan Szpakowicz
 
-#abstract
+# abstract
 
 * three NLP tasks: selection of the best synonym from a set of candidates,
   pseudo-word-sense disambiguation and SAT-style analogy problems.
@@ -26,7 +26,7 @@ Alistair Kennedy and Stan Szpakowicz
   * propose and evaluate a new method for solving SAT-style analogy problems;
   * compare semantic similarity calculation with Roget’s Thesaurus and WordNet
 
-#1 About Roget’s Thesaurus
+# 1 About Roget’s Thesaurus
 
 * revisions continuing to this day (Kendall 2008). A 
 * nine-level hierarchy
@@ -36,7 +36,7 @@ Alistair Kennedy and Stan Szpakowicz
   * division by part-of-speech quite low in the hierarchy, not at the very top
     as in WordNet.
 
-#2 previous work on updating thesauri
+# 2 previous work on updating thesauri
 
 * attempts to expand the lexicon of Roget’s Thesaurus
 * mapping word senses between Roget’s Thesaurus, WordNet and LDOCE (Procter
@@ -48,12 +48,12 @@ Alistair Kennedy and Stan Szpakowicz
   available bilingual resources such as _machine-readable dictionaries_ and
   on-line encyclopaedias.
 
-#3 measuring semantic relatedness
+# 3 measuring semantic relatedness
 
 * Kennedy and Szpakowicz (2011, 2012) discussed introducing supervision into
   the process of context re-weighting.
 
-#6 automatic evaluation
+# 6 automatic evaluation
 
 1. one is given a term q and seeks its best synonym s in a set of words C .
 2. take two words and merge

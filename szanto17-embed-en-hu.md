@@ -2,7 +2,7 @@ Word Embedding-based Task adaptation from English to Hungarian
 Szántó Zsolt, Carlos Ricardo Collazos García, Farkas Richárd
 2017 mszny 297
 
-#Abstract
+# Abstract
 
 * document classification tasks: sentiment and topic
 * In our setting, only an English training dataset is available and our aim is
@@ -12,7 +12,7 @@ Szántó Zsolt, Carlos Ricardo Collazos García, Farkas Richárd
   * sentiment classification and a
   * topic classification dataset
 
-#3 Evaluation Datasets
+# 3 Evaluation Datasets
 
 * two types of classification tasks, sentiment and topic classification. In
   each case, we worked on user generated short texts from social media. Both

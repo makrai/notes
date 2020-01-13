@@ -4,7 +4,7 @@ EMNLP 2016
 
 http://people.ds.cam.ac.uk/dsg40/simverb.html
 
-#Abstract
+# Abstract
 
 * covers
   * all normed verb types from the USF free-association database, pro-
@@ -12,7 +12,7 @@ http://people.ds.cam.ac.uk/dsg40/simverb.html
 * facilitates detailed analyses of how syntactic and semantic phenomena
   together influence human understanding of verb meaning
 
-#Introduction
+# Introduction
 
 * Verbs [express] an event as well the relational information
 * syntactic and semantic (Jackendoff, 1972; Gruber, 1976; Levin, 1993)
@@ -34,7 +34,7 @@ http://people.ds.cam.ac.uk/dsg40/simverb.html
     WordNet (Miller, 1995) and PropBank (Palmer+ 2005). Moreover, the large
   * standardised development and test sets in SimVerb-3500 allow for principled
 
-#2 Related Work
+# 2 Related Work
 
 * SimVerb-3500 focuses on similarity [as opposed to relatedness]
   * as this ... seems to yield a higher agreement between human annotators
@@ -42,9 +42,9 @@ http://people.ds.cam.ac.uk/dsg40/simverb.html
   * the data set of Baker+ (2014) and Simlex-999 (Hill+ 2015)
   * 134 and 222 verb pairs, respectively), making them unrepresentative of the
 
-#3 The new SimVerb-3500 data
+# 3 The new SimVerb-3500 data
 
-##Design Motivation
+## Design Motivation
 
 Hill+ (2015) argue that comprehensive ... evaluation resources have to satisfy
   1. Representative (the resource covers the full range of concepts in language);
@@ -60,15 +60,15 @@ Hill+ (2015) argue that comprehensive ... evaluation resources have to satisfy
   * give low ratings to antonyms, and to
   * distinguish between similarity and relatedness
 
-##3.2 Choice of Verb Pairs and Coverage 3
+## 3.2 Choice of Verb Pairs and Coverage 3
 
-###The USF norms data set (further USF)
+### The USF norms data set (further USF)
 
 * the largest database of free association collected for English
 * the proportion of participants who produced associate `a` when presented with
   cue `c` can be used as a proxy for the strength of association
 
-###VerbNet (VN)
+### VerbNet (VN)
 
 * the largest online verb lexicon currently available for English
 * hierarchical, domain-independent, and broad-coverage
@@ -85,34 +85,34 @@ Hill+ (2015) argue that comprehensive ... evaluation resources have to satisfy
 * VerbNet enables [connections to]
   FrameNet (Baker+ 1998), WordNet (Miller, 1995), and PropBank (Palmer+ 2005)
 
-###Sampling Procedure 4
+### Sampling Procedure 4
 
-#4 Word Pair Scoring 5
+# 4 Word Pair Scoring 5
 
 * We employ the Prolific Academic (PA) crowdsourcing platform, 11 an online
   marketplace very similar to Amazon Mechanical Turk and to CrowdFlower
 
-##4.1 Survey Structure
+## 4.1 Survey Structure
 
 Following the SimLex-999 annotation guidelines
 
-###Checkpoint Questions
+### Checkpoint Questions
 
-###Participants. 843 raters participated in the study, ... over 65,000 ratings
+### Participants. 843 raters participated in the study, ... over 65,000 ratings
 
 * native English speakers with a 90% approval rate (maximum rate on PA), of age
 
-##4.2 Post-Processing
+## 4.2 Post-Processing
 
 The score was finally scaled linearly from the 0-6 to the 0-10 interval as in
 (Hill+ 2015)
 
-#5 Analysis
+# 5 Analysis
 
 performance of a diverse range of popular representation learning
 architectures, together with benchmark performance on existing evaluation sets
 
-##Inter-Annotator Agreement
+## Inter-Annotator Agreement
 
 * two measures
   * IAA-1 (pairwise) computes the average pairwise Spearman’s ρ correlation
@@ -125,7 +125,7 @@ architectures, together with benchmark performance on existing evaluation sets
 * SimVerb-3500 obtains ρ = 0.84 (IAA-1) and ρ = 0.86 (IAA-2), a very good
   agreement compared to other benchmarks (see Tab. 2)
 
-##Vector Space Models
+## Vector Space Models
 
 * We compare the performance of prominent representation models
   * unsupervised models that learn from distributional information in text,
@@ -141,7 +141,7 @@ architectures, together with benchmark performance on existing evaluation sets
       further refined using linguistic constraints (Paragram+CF, Mrkšić+ 2016)
   * Descriptions of these models are in the supplementary material
 
-##Comparison to SimLex-999 (SL-222)
+## Comparison to SimLex-999 (SL-222)
 
 * 170 pairs from SL-222 also appear in SimVerb-3500
 * correlation ... is ρ = 0.91. This proves ... that the ratings are consistent
@@ -157,7 +157,7 @@ architectures, together with benchmark performance on existing evaluation sets
     clear gap to IAA-1 of 0.84
   * We attribute th[is] to SimVerb-3500 being a more extensive and diverse
 
-##Development Set
+## Development Set
 
 * Previous works often optimise models
   * on the entire dataset, which leads to overfitting (Faruqui+ 2016) or use
@@ -167,19 +167,19 @@ architectures, together with benchmark performance on existing evaluation sets
   * The ranking of models is identical on the test and the full SV-3500 set,
     with slight differences in ranking on the development set
 
-#6 Evaluating Subsets
+# 6 Evaluating Subsets
 
 SimVerb-3500 enables a variety of new linguistic analyses, [ due to ] coverage
 and scale
 
-##Frequency
+## Frequency
 
 * performance of all models improves [with] the frequency of the verbs
 * with much steeper curves for the purely distributional models (SGNS, SymPat)
 * The non-distributional non data-driven model of Faruqui and Dyer (2015) is
   only slightly affected by frequency
 
-##WordNet Synsets
+## WordNet Synsets
 
 * Intuitively, representations for verbs with more diverse usage patterns are
   more difficult to learn with statistical models
@@ -190,7 +190,7 @@ and scale
 * approaches which use additional information beyond corpus co-occurrence are
   again more robust
 
-##VerbNet Classes
+## VerbNet Classes
 
 * the connection between VerbNet classes and human similarity judgments
 * verbs in the same top-level VerbNet class are often not assigned high sim
@@ -198,7 +198,7 @@ and scale
 * further developments [ should ] focus on constructing specialised
   representations at the finer-grained level of VN classes
 
-##Lexical Relations
+## Lexical Relations
 
 * SimVerb-3500 contains relation annotations for all pairs ... from WordNet
   (e.g., antonyms, synonyms, hyper/hyponyms, no relation)
@@ -210,7 +210,7 @@ and scale
     * the ranking is arbitrary: every antonym pair should have a very low
   * highly ranked synonyms, but to a much lesser degree than with antonyms
 
-##Human Agreement
+## Human Agreement
 
 * varying performance of computational models regarding frequency and ambigu[y]
 * we analyse what disagreement effects may be captured in human ratings
@@ -218,7 +218,7 @@ and scale
 * While the standard deviation of ratings is diverse for individual pairs,
 * humans are much less influenced by frequency or polysemy
 
-#7 Conclusions 8
+# 7 Conclusions 8
 
 * how humans or machines represent the meaning of verbs,
   and, by extension, scenes, events and full sentences

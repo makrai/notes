@@ -4,7 +4,7 @@ NIPS 2018
 
 code is available on GitHub at https://github.com/Mehran-k/SimplE
 
-#Abstract
+# Abstract
 
 * Knowledge graphs contain [structured] knowledge about the world 
 * Tensor factorization approaches [to link prediction] have proved promising
@@ -19,7 +19,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * derive a bound on the size of its embeddings for full expressivity
   * outperforms several state-of-the-art tensor factorization techniques
 
-#1 Introduction
+# 1 Introduction
 
 * KGs have applications in several fields including
   * search, question answering, natural language processing, recommendation sys
@@ -54,7 +54,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * the function used in ComplEx [39, 40], a SOTA approach for link prediction,
     involves redundant computations
 
-#2 Background and notation
+# 2 Background and notation
 
 * A tensor factorization model
   * defines two things
@@ -62,7 +62,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * a function f taking ... h, r and t as input and generating a prediction
   * is fully expressive if given any  ... full assignment of truth values
 
-#3 Related Work
+# 3 Related Work
 
 * Translational Approaches
   * entity `e` is a single vector `v_e ∈ R_d`
@@ -102,7 +102,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * Neural tensor network (NTN) [37] combines E-MLP with several bilinear
       parts (see Subsection 5.4 for a definition of bilinear models)
 
-#4 SimplE: A Simple Yet Fully Expressive Model
+# 4 SimplE: A Simple Yet Fully Expressive Model
 
 * SimplE takes advantage of the inverse of relations [for weights tying]
   * inverse of relations has been used for other purposes [20, 21, 6]
@@ -120,9 +120,9 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * Trouillon and Nickel [38] show that the margin-based loss function is
       more prone to overfitting compared to log-likelihood
 
-#5 Theoretical Analyses
+# 5 Theoretical Analyses
 
-##5.1 Fully Expressiveness
+## 5.1 Fully Expressiveness
 
 * Proposition 2. FSTransE [and TransE, FTransE, STransE, TransH [41], and
   TransR [22] have] the following restrictions
@@ -134,7 +134,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * e.g.  friendship relation in FB15k [with 20 friends],
       `netflix genre` in FB15k and `has part` in WN18
 
-##5.2 Incorporating Background Knowledge into the Embeddings
+## 5.2 Incorporating Background Knowledge into the Embeddings
 
 * incorporating background knowledge into tensor factorization approaches
   * post-processing steps or add
@@ -143,7 +143,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * Minervini+ [25] show ... in terms of equivalence and inversion ... through
     parameter tying
 
-##5.3 Time Complexity and Parameter Growth
+## 5.3 Time Complexity and Parameter Growth
 
 * time complexity for TransE is O(d) where d is the size of the embedding
 * STransE ([with] the two relation matrices) increases [it] to O(d 2 )
@@ -154,7 +154,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * SimplE-ignr requires one multiplication between three vectors for each
   triple. This number is 2 for SimplE and 4 for ComplEx
 
-##5.4 Family of Bilinear Models
+## 5.4 Family of Bilinear Models
 
 * [i.e.] the family of models where the embedding for each
   * entity e is v_e ∈ R d , for each
@@ -170,7 +170,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * SimplE [is compatible] with other embedding models (in KG completion,
   computer vision and natural language processing) such as [35, 47, 36]
 
-#6 Experiments and Results
+# 6 Experiments and Results
 
 * Datasets: We conducted experiments on two standard benchmarks:
   * WN18, a subset of Wordnet [24], and
@@ -186,13 +186,13 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     SimplE-ignr were 200 and 0.03 respectively, and for
     SimplE were 200 and 0.1
 
-##6.1 Entity Prediction Results
+## 6.1 Entity Prediction Results
 
 * On WN18, SimplE-ignr and SimplE perform as good as ComplEx, a SOTA ... model
   On FB15k, SimplE outperforms the existing baselines
 * bilinear approaches tend to have better performances
 
-##Incorporating background knowledge
+## Incorporating background knowledge
 
 Table 2: Background Knowledge Used in Section 6.2
 * hyponym <-> hypernym, memberMeronym <-> memberHolonym, instanceHyponym <->
@@ -200,7 +200,7 @@ Table 2: Background Knowledge Used in Section 6.2
   synsetDomainTopicOf , memberOfDomainUsage <-> synsetDomainUsageOf ,
   memberOfDomainRegion <-> synsetDomainRegionOf , similarTo = similarTo
 
-#7 Conclusion
+# 7 Conclusion
 
 * future, SimplE could be improved or may help improve relational learning
   * ensembles of SimplE models as [18] do it for DistMult,

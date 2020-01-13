@@ -1,4 +1,4 @@
-#1. Bevezetés
+# 1. Bevezetés
 
 * Az igemódosító két típus[a] (É.Kiss 1998)
   * igekötő
@@ -24,9 +24,9 @@
 * Az igekötő megkettőzhető (fel-felugrott, be-benézett),
   a puszta névszói igemódosító ... nem (*bort-bort iszik) *vérré-vérré válik)
 
-#2. Termékenység és szabályszerűség az igekötős igék létrehozásában
+# 2. Termékenység és szabályszerűség az igekötős igék létrehozásában
 
-#3. A vonzatosság kérdése
+# 3. A vonzatosság kérdése
 
 * (Komlósy 1992: 501)
   moziba jár, úszni akar, újságot olvas, szénné éget, pirosra fest,
@@ -42,7 +42,7 @@
 * mozgásigék esetében a _ki, be, fel, le_ igekötő nem az ige vonzata?
   * funkciója más: ... fakultatívvá teszi a direkcionális vonzatot
 
-#4. Az igekötős igék továbbképezhetősége
+# 4. Az igekötős igék továbbképezhetősége
 
 * pl
   * felvágás (nominalizáció),
@@ -62,7 +62,7 @@
 * A -gat/-get képzővel cselekvésigéből iteratív vagy deminutív akcióminőséget
   * de az igemódosító előtt kerül a szerkezetbe
 
-#5. A helyhatározó mint igemódosító
+# 5. A helyhatározó mint igemódosító
 
 * néhány olyan határozószó, amely az igemódosítókhoz hasonlóan viselkedik és
   esetleg igekötőként is értelmezhető
@@ -87,7 +87,7 @@
   * további vizsgálatoknak kell majd tisztázniuk
   * pl. _az asztalra teszi a könyvet_ és _az asztalon tartja a könyvet_ nem
 
-#6. Konklúzió
+# 6. Konklúzió
 
 * kétfajta igemódosító, a puszta névszói igemódosító és az igekötő különbségei
 * vonzatosság: a puszta névszói igemódosító mindig vonzata az alapigének,

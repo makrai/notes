@@ -1,6 +1,6 @@
 uspu
 
-#Abstract
+# Abstract
 
 * hypernymy, such as poodle is-a dog , is an important generalization aid
 * [for] e.g. entailment, coreference, relation extraction, and [QA]
@@ -20,7 +20,7 @@ uspu
     * much more compact word representation, and yielding 
     * many new state-of-the-art results
 
-##1.1
+## 1.1
 
 * A novel unsupervised low-dimensional embedding method via performing
   non-negative matrix factorization (NMF) on a weighted PMI matrix, which can

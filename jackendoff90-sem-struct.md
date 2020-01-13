@@ -6,7 +6,7 @@ az itteni elemzés szintaxisalapúbb, mint a 4lang
 minden példát összevetni
 különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
 
-#Introduction
+# Introduction
 
 * two basic problems
   * The Problem of Meaning is to
@@ -49,11 +49,11 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * simplify the argument structure[s]
     * very general principles for the linking [are] topic of the final chapter
 
-#Part I Basic Machinery
+# Part I Basic Machinery
 
-#Chapter 1 Overview of Conceptual Semantics 7
+# Chapter 1 Overview of Conceptual Semantics 7
 
-##1.1 E-Concepts and I-Concepts 8
+## 1.1 E-Concepts and I-Concepts 8
 
 * concepts, thoughts, or ideas
   1. External: something out there in the world
@@ -62,7 +62,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
      imagination
     * can be conveyed to others only by means of language, gesture, drawing
 
-##1.2 First Principles of I-Conceptual Knowledge 11
+## 1.2 First Principles of I-Conceptual Knowledge 11
 
 * a finite set of mental primitives and a finite set of principles of mental
   combination that collectively describe the set of possible I-concepts
@@ -92,7 +92,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
       cognitively primitive monads linked with each other by meaning
       postulates. The Appendix to this chapter compares the two positions
 
-##1.3 Three Models for the Description of Meaning 16
+## 1.3 Three Models for the Description of Meaning 16
 
 * a mentally encoded concept C
   * draw inferences i.e.
@@ -156,7 +156,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * contact with relevant results in perceptual psychology
     * learnability and hence to the possibility of a strong innate formal basis
 
-##1.4 Organization of the Grammar 19
+## 1.4 Organization of the Grammar 19
 
 * levels of structure: phonological, syntactic, and conceptual
 * syntax has subcomponents
@@ -184,7 +184,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * The organization proposed [here] eliminates this syntacto-centrism
     * three levels as equally _creative_; none is derived from the others
 
-##1.5 Intuitions about Lexical Relations 22
+## 1.5 Intuitions about Lexical Relations 22
 
 * What counts as a lexical item?
   * homonymous items such as the river bank and the savings bank as separate
@@ -209,13 +209,13 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * [for] making the learner's job easier, a formal lexical relation is
       preferable: learning one use then makes it easier to learn the other
 
-##1.6 X-Bar Semantics 32
+## 1.6 X-Bar Semantics 32
 
 * cross-categorial feature decompositions with an _X-bar_ flavor play an
   important role in the characterization of I-concepts
   * [in] three major subsystems within conceptual structure
 
-###1.6.1 Ontological Categories and Argument Structure
+### 1.6.1 Ontological Categories and Argument Structure
 
 * S&C, chapters 3, 4, and 9, proposes a basic organization for CS
 * Instead of a division of formal entities into [logical types]
@@ -242,7 +242,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
      allows for recursion of conceptual structure and hence an infinite class
      of possible concepts
 
-###1.6.2 Organization of Semantic Fields
+### 1.6.2 Organization of Semantic Fields
 
 * A second cross-categorial property of conceptual structure
 * the _localistic_ theory of Gruber (1965)
@@ -271,7 +271,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
       another is not still in its original position.  However, in the field of
       information transfer, this inference does not hold
 
-###1.6.3 Aggregation and Boundedness
+### 1.6.3 Aggregation and Boundedness
 
 * aspects of conceptual structure that display a strong _X-bar_ character but
   are not expressed in so regular a fashion in syntax (at least in English)
@@ -289,9 +289,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     features of the sentence as a whole
 * _end_
 
-##1.7 Where Traditional Features Fail 37
+## 1.7 Where Traditional Features Fail 37
 
-###1.7.1 Spatial Structure of Objects
+### 1.7.1 Spatial Structure of Objects
 
 * How are [duck and goose] distinguished from one another?
   * different appearance
@@ -299,12 +299,12 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
 * the 3D model structure of Marr 1982
   * extension ... to encode action patterns such as throwing and saluting
 
-###1.7.2 Focal Values in a Continuous Domain
+### 1.7.2 Focal Values in a Continuous Domain
 
 * a percept whose value in color space is close to focal red is easily
   categorized as red
 
-###1.7.3 Preference Rule Systems
+### 1.7.3 Preference Rule Systems
 
 * which satisfies both conditions at once, is more _stereotypical_
   * that satisfy only one of the conditions ... are somewhat more marginal but
@@ -317,7 +317,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   (Lerdahl and Jackendoff 1983)
 * comparison with ... prototype theory, and fuzzy set theory
 
-##1.8 Appendix: Lexical Composition versus Meaning Postulates
+## 1.8 Appendix: Lexical Composition versus Meaning Postulates
 
 * the solution Fodor advocates
   * each lexical item must be accompanied by its own specific meaning
@@ -328,9 +328,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
 * studies of language acquisition have benefited from decompositional theories
   of lexical concepts (e.g.  Landau and Gleitman 1985; Pinker 1989)
 
-#Chapter 2 Argument Structure and Thematic Roles 43
+# Chapter 2 Argument Structure and Thematic Roles 43
 
-##2.1 Basic Function-Argument Structures 46
+## 2.1 Basic Function-Argument Structures 46
 
 (1)
   a. The argument serves as a spatial reference point, in terms of which the
@@ -349,7 +349,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * the well-formedness conditions ... require the Path argument to be
       present in CS even if it is not expressed syntactically
 
-##2.2 The Status of Thematic Roles 50
+## 2.2 The Status of Thematic Roles 50
 
 * thematic (q-)roles
   * [for a broad sampling of] parallel notions in other syntactic theories,
@@ -416,7 +416,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
         * not a role in Gruber's system
         * CS: neither can serve as a default case ... see chapter 7
 
-##2.3 Argument Fusion and Selectional Restrictions 55
+## 2.3 Argument Fusion and Selectional Restrictions 55
 
 * combinatorial rules that develop the conceptual structure of a [syntactic
   constituent] headed by a lexical item H
@@ -464,7 +464,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * the way the verb links its arguments to syntactic structure
   * selectional restriction and implicit argument
 
-##2.4 Restrictive Modification
+## 2.4 Restrictive Modification
 
 * the use of one constituent as a modifier of another
 * syntactic realizations
@@ -481,9 +481,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   means. The Restrictive Modifier Rule is the simplest of such means; we will
   encounter others in part III
 
-#Chapter 3 Multiple Thematic Roles for a Single NP 59
+# Chapter 3 Multiple Thematic Roles for a Single NP 59
 
-##3.1 The Status of the q-Criterion
+## 3.1 The Status of the q-Criterion
 
 * q-Criterion ... says, in our terms,
   * that each subcategorized NP (plus the subject) corresponds to exactly one
@@ -505,7 +505,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * 3.1.2 Cases Where Multiple NPs Hold a Single q-Role
 * The rest of this chapter will recast [the q-Criterion] in more adequate terms
 
-##3.2 Argument Binding 61
+## 3.2 Argument Binding 61
 
 * there is nothing to prevent two indexed positions in {conceptual structure,
   syntax} from bearing the same index
@@ -519,7 +519,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * [asymetric, explains cases like] ?`*`_Bill talked about Mary to herself_
   * avoids the repetition of the conceptual material
 
-##3.3 On So-Called Syntactic Binding 64
+## 3.3 On So-Called Syntactic Binding 64
 
 * argument binding might take over the work traditionally ascribed to syntactic
   binding, so that binding can be treated as a unified mechanism
@@ -528,7 +528,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
 * transitive-intransitive alternation: _Bill dressed (Harry) (in a new suit)._
   * to lexical items
 
-##3.4 Appendix: Thematic Conditions on Control 68
+## 3.4 Appendix: Thematic Conditions on Control 68
 
 * PRO must also be treated in terms of argument binding [with] sem conditions
 * give/get order/promise to do sg
@@ -540,7 +540,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
       * passive?:  *Bill was promised to be allowed to leave
 * important ... especially in nominals
 
-#Chapter 4 Unifying Lexical Entries 71
+# Chapter 4 Unifying Lexical Entries 71
 
 * unify related uses of a lexical item into a single entry
   * This chapter will propose two abbreviatory conventions that
@@ -555,7 +555,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * if filled, it is coindexed to a conceptual argument;
     * if unfilled, the conceptual argument becomes implicit
 
-##4.1 Optional Outer Functions 76
+## 4.1 Optional Outer Functions 76
 
 * c. `to(under(...)` to encode the Goal and Route senses of _under_ and _over_
   * the Place sense provides a "conceptual core" that remains constant in
@@ -581,7 +581,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
       with the object position
     * Chapter 11 will propose ... a more flexible linking convention
 
-##4.2 Multiple Argument Structures 81
+## 4.2 Multiple Argument Structures 81
 
 * climb,
   * [its] use of a preference rule system was discussed in section 1.7.2
@@ -606,7 +606,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * discussed in section 3.3
     * [the intransitive] binds the Theme to the Agent
 
-##4.3 Remarks
+## 4.3 Remarks
 
 * more productive lexical processes
   * can be expressed in terms of manipulations on the indices in the verb's LCS
@@ -614,7 +614,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * delete i, the index that marks the external argument
     * "logical subject" becomes an implicit argument
 
-#A last remark to close part I
+# A last remark to close part I
 
 * one important thread of these chapters has been to compare a fine-grained
   theory of argument structure ... with a coarse-grained theory
@@ -623,9 +623,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * as a temporary shortcut
   * as a codification of a level of mental representation
 
-#Part II Mostly on the Problem of Meaning
+# Part II Mostly on the Problem of Meaning
 
-##5.1 Introduction to Part II
+## 5.1 Introduction to Part II
 
 * GO, STAY, BE, ORIENT, EXT, and CAUSE listed in (2.1)
   * account for a substantial fraction of the 
@@ -645,9 +645,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
       * for certain arguments of certain semantic functions, but
       * there are lexical exceptions to the pattern
 
-#Chapter 5 Some Further Conceptual Functions 87
+# Chapter 5 Some Further Conceptual Functions 87
 
-##5.2 Verbs of Manner of Motion and Configuration 91
+## 5.2 Verbs of Manner of Motion and Configuration 91
 
 * tekergőzik, vonaglik, dance
   * no Paths, even as an implicit argument,
@@ -660,7 +660,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     not ... expressed in CS [but in an external] representation
   * CONF + BE
 
-##5.3 Inchoative 95
+## 5.3 Inchoative 95
 
 * point (ORIENT), surround (EXT), stay, cover
 * S&C: BE -> GO
@@ -690,7 +690,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * etc. in chapter 6
     * when modified by a durative expression
 
-##5.4 Kinds of Conceptual Clause Modification
+## 5.4 Kinds of Conceptual Clause Modification
 
 * a partial taxonomy of functions that convert a State or Event into a
   restrictive modifier of another State or Event
@@ -724,12 +724,12 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * I have not found a spatial counterpart for EXCH
 * conceptual category of the modifying constituents `[BY [GO ...]]`
 
-#Chapter 6 Some Featural Elaborations of Spatial Functions 101
+# Chapter 6 Some Featural Elaborations of Spatial Functions 101
 
 * ezeket két szinten is bevezeti a CS-ben, minek?
 * a 4lang szótárszerűbb: inkább szavakkal magyaráz, mint jegyekkel
 
-##6.1 Distributive Location 106
+## 6.1 Distributive Location 106
 
 * an unbounded stream of water or people
 * media in the sense discussed in section 1.6.3
@@ -756,7 +756,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
 * completiveness [load with hay]
   * Fillmore (1968), Chomsky (1972), Anderson (1971)
 
-##6.2 Verbs of Touching 112
+## 6.2 Verbs of Touching 112
 
 * attached to => in contact with => located at
 * [_touch_ is] ambiguous between a State reading and an inchoative Event
@@ -793,7 +793,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * the contact function is BE or GO and whether
   * its second argument is a Place or a Path
 
-##6.3 Verbs of Attachment 116
+## 6.3 Verbs of Attachment 116
 
 * adhere or stick. 2 (27) is either a State or the inchoative of a State
 * secondary locative, causation
@@ -818,7 +818,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
   * The hoses stuck/connected/joined/`*`attached/glued
   * _mix_ and _combine_ ... contact throughout a volume instead of on a surface
 
-##6.4 Verbs of Material Composition 122
+## 6.4 Verbs of Material Composition 122
 
 * make form build assemble; put; construct erect manufacture produce create
   * typically causative
@@ -844,7 +844,7 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * a diacritic on the field feature Comp, as follows:
 * the usual question: are the inchoatives [INCH BE-verbs, or] GO-verbs?
 
-##6.5 Conclusion
+## 6.5 Conclusion
 
 * Each of the semantic classes investigated here is realized with a
   characteristic syntactic structure[, a canonical mapping ] to a standard
@@ -857,9 +857,9 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     missed. Conversely, if an apparently principled fact is violated in other
     languages, the principle must be questioned
 
-#Chapter 7 The Action Tier and the Analysis of Causation 125
+# Chapter 7 The Action Tier and the Analysis of Causation 125
 
-##7.1 The Roles Actor and Patient; the Action Tier 130
+## 7.1 The Roles Actor and Patient; the Action Tier 130
 
 * affected entity, the traditional role of Patient
   * missing from the theory of thematic relations in S&C and earlier sources
@@ -897,56 +897,56 @@ különféle neveken hívja a dekompozíciót (X-bar flavor, tiers)
     * permit the function AFF a feature elaboration [± volitional]
 * a general linking rule that correlates agentivity with subject position
 
-##7.2 Varieties of Causation 133
+## 7.2 Varieties of Causation 133
 
 * hindering, overcoming, letting, helping, and resisting
   * Talmy (1985)
 
-##7.3 Varieties of Dyadic Interaction; the Role Beneficiary 138
-##7.4 Temporal Relations between the Cause and the Effect 139
-##7.5 Extensions of Force-Dynamics to Logical Verbs and Psych-Verbs 142
-##7.6 The Role Instrument; Unifying the Uses of Hit 145
-##7.7 Argument Binding in Force-Dynamic Verbs 150
-##7.8 Appendix: Lexical versus Periphrastic Causatives
+## 7.3 Varieties of Dyadic Interaction; the Role Beneficiary 138
+## 7.4 Temporal Relations between the Cause and the Effect 139
+## 7.5 Extensions of Force-Dynamics to Logical Verbs and Psych-Verbs 142
+## 7.6 The Role Instrument; Unifying the Uses of Hit 145
+## 7.7 Argument Binding in Force-Dynamic Verbs 150
+## 7.8 Appendix: Lexical versus Periphrastic Causatives
 
-#Part III Mostly on the Problem of Correspondence
+# Part III Mostly on the Problem of Correspondence
 
-#Chapter 8 Adjuncts That Express an Incorporated Argument 155
-##8.1 Introduction to Part III 159
-##8.2 Fill and Cover 164
-##8.3 Butter, Powder, Water, Ice, and Frost 166
-##8.4 Empty, Uncover, and Skin 170
-##8.5 Bottle, Pocket, and Package 171
-##8.6 Load, Spray, Pack, Stuff, Clear, and Drain 174
-##8.7 Obligatory Adjuncts: Rid, Provide, Present, Deprive, Swarm, and Teem 179
-##8.8 The Passive by-Phrase
-#Chapter 9 Adjuncts That Express an Argument of a Modifying Conceptual Clause 183
-##9.1 Three Kinds of For-Adjuncts 185
-##9.2 The Conceptual Structure of the For's of Beneficiary and Benefit; the Instrumental 189
-##9.3 Buy, Pay, and Sell 191
-##9.4 The For-Exchange Adjunct Rule 194
-##9.5 _For-Dative_ and _To-Dative_ Adjuncts 200
-##9.6 Depictive Predication 207
-##9.7 Appendix: Control in Gerundive Secondary Predicates
-#Chapter 10 Adjuncts That Express Arguments of a Superordinate Conceptual Clause 211
-##10.1 Babe Ruth Homered His Way into the Hearts of America 218
-##10.2 Alternative Approaches to the Way-Construction 223
-##10.3 Willy Jumped into Harriet's Arms 225
-##10.4 Charlie Laughed Himself Silly 235
-##10.5 An Alternative Treatment of Resultatives 241
-##10.6 Final Remarks on Adjuncts
-#Chapter 11 Toward a Theory of Linking 245
-##11.1 The Notion of Linking Rules 247
-##11.2 What Conceptual Semantics Can Do for Linking Theory 249
-##11.3 What Linking Theory Can Do for Conceptual Semantics 255
-##11.4 Digression: What Is Left of Subcategorization? 257
-##11.5 Refining the Thematic Hierarchy 262
-##11.6 Factoring Argument Fusion 264
-##11.7 Linking Non-NP Arguments 267
-##11.8 The Subject and the External Argument 269
-##11.9 Incorporating Most of the Adjunct Rules 275
-##11.10 Depictive Predication Again 278
-##11.11 Summary 279
-##11.12 Appendix: Restatement of the Rest of the Adjunct Rules
+# Chapter 8 Adjuncts That Express an Incorporated Argument 155
+## 8.1 Introduction to Part III 159
+## 8.2 Fill and Cover 164
+## 8.3 Butter, Powder, Water, Ice, and Frost 166
+## 8.4 Empty, Uncover, and Skin 170
+## 8.5 Bottle, Pocket, and Package 171
+## 8.6 Load, Spray, Pack, Stuff, Clear, and Drain 174
+## 8.7 Obligatory Adjuncts: Rid, Provide, Present, Deprive, Swarm, and Teem 179
+## 8.8 The Passive by-Phrase
+# Chapter 9 Adjuncts That Express an Argument of a Modifying Conceptual Clause 183
+## 9.1 Three Kinds of For-Adjuncts 185
+## 9.2 The Conceptual Structure of the For's of Beneficiary and Benefit; the Instrumental 189
+## 9.3 Buy, Pay, and Sell 191
+## 9.4 The For-Exchange Adjunct Rule 194
+## 9.5 _For-Dative_ and _To-Dative_ Adjuncts 200
+## 9.6 Depictive Predication 207
+## 9.7 Appendix: Control in Gerundive Secondary Predicates
+# Chapter 10 Adjuncts That Express Arguments of a Superordinate Conceptual Clause 211
+## 10.1 Babe Ruth Homered His Way into the Hearts of America 218
+## 10.2 Alternative Approaches to the Way-Construction 223
+## 10.3 Willy Jumped into Harriet's Arms 225
+## 10.4 Charlie Laughed Himself Silly 235
+## 10.5 An Alternative Treatment of Resultatives 241
+## 10.6 Final Remarks on Adjuncts
+# Chapter 11 Toward a Theory of Linking 245
+## 11.1 The Notion of Linking Rules 247
+## 11.2 What Conceptual Semantics Can Do for Linking Theory 249
+## 11.3 What Linking Theory Can Do for Conceptual Semantics 255
+## 11.4 Digression: What Is Left of Subcategorization? 257
+## 11.5 Refining the Thematic Hierarchy 262
+## 11.6 Factoring Argument Fusion 264
+## 11.7 Linking Non-NP Arguments 267
+## 11.8 The Subject and the External Argument 269
+## 11.9 Incorporating Most of the Adjunct Rules 275
+## 11.10 Depictive Predication Again 278
+## 11.11 Summary 279
+## 11.12 Appendix: Restatement of the Rest of the Adjunct Rules
 
-#Epilogue: Compositionality, Autonomy, Modularity 283
+# Epilogue: Compositionality, Autonomy, Modularity 283

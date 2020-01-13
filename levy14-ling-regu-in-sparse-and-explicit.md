@@ -2,7 +2,7 @@ Omer Levy and Yoav Goldberg
 Linguistic Regularities in Sparse and Explicit Word Representations
 acl 2014
 
-#Abstract
+# Abstract
 
 * searching for a word that maximizes
   a linear combination of three pairwise word similarities
@@ -10,7 +10,7 @@ acl 2014
   * a similar amount of relational similarities can be recovered from
     traditional distributional word representations
 
-#1 Introduction
+# 1 Introduction
 
 * relational similarities
   * using vector arithmetic on RNN-embedded vectors
@@ -22,14 +22,14 @@ acl 2014
   * the explicit vector space representation as a competitive baseline
   * for further work on neural embeddings
 
-#2 Explicit Vector Space Representation
+# 2 Explicit Vector Space Representation
 
 * positive pointwise mutual information
 * a window of 2 to each side
 
-#3 Analogies and Vector Arithmetic
+# 3 Analogies and Vector Arithmetic
 
-#3.2 Vector Arithmetic
+# 3.2 Vector Arithmetic
 
 * PAIRDIRECTION:
   * alternative to 3COSADD is to require that the 
@@ -38,7 +38,7 @@ acl 2014
   * PAIRDIRECTION for solving the semantic analogies of the SemEval task,
   * 3COSADD for solving the syntactic analogies
 
-#4 Empirical Setup
+# 4 Empirical Setup
 
 * Underlying Corpus and Preprocessing
   * Wikipedia
@@ -46,12 +46,12 @@ acl 2014
 * Word Representations
   * min_count=100
 
-#4.1 Evaluation Conditions
+# 4.1 Evaluation Conditions
 
 * Open Vocabulary
   * azt érti alatta, hogy a keresési tér a teljes szókincs
 
-#5 Preliminary Results
+# 5 Preliminary Results
 
 * Why is PAIRDIRECTION performing so well on the SEMEVAL task, yet so poorly on
   the others? Recall that the PairDirection objective 
@@ -64,38 +64,38 @@ acl 2014
     * e.g. man:woman, king:? ... feminine entities, but not necessarily royal
   * SEMEVAL test set [already provides related] candidates
 
-#6 Refining the Objective Function
+# 6 Refining the Objective Function
 
 * linear objectives ... exhibit a “soft-or” behavior and
   * allow one sufficiently large term to dominate the expression
   * multiplicative combination, 3COSMUL
 
-#7 Main Results
+# 7 Main Results
 
-#8 Error Analysis
+# 8 Error Analysis
 
-#8.1 Agreement between Representations
+# 8.1 Agreement between Representations
 
 * a non-negligible amount of cases in which
   * [the two resentations] complement each other
 * Some trends emerge
   * nem csak azt kell nézni, hogy melyik a jobb, hanem százalékot is
 
-#8.3 Default-Behavior Errors
+# 8.3 Default-Behavior Errors
 
 * "Fresno” is returned 82 times
   * as an incorrect answer in the city-in-state relation
 
-#8.4 Verb-inflection Errors
+# 8.4 Verb-inflection Errors
 
-#9 Interpreting Relational Similarities
+# 9 Interpreting Relational Similarities
 
 * úgy lenne érdekes, hogy PPMI helyett olyan hasonlóságot használni, ami nem
   részesíti előnyben a ritka szavakat
 
-#10 Related Work
+# 10 Related Work
 
-#11 Discussion
+# 11 Discussion
 
 * contrary to the recent findings of Baroni et al. (2014), 
   under certain conditions traditional word similarities induced by explicit

@@ -3,7 +3,7 @@ Analogy-based Detection of Morphological and Semantic Relations
 Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
 2016
 
-#Abstract
+# Abstract
 
 * 4 types of linguistic relations:
   * inflectional and derivational morphology, and
@@ -31,7 +31,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
     window size and dimensionality of the SVD-based word embeddings
   * show that GloVe and SVD yield similar patterns of results
 
-#1 Intro
+# 1 Intro
 
 * Analogical reasoning ... can be used for
   * morphological analysis (Lavallée and Langlais, 2010),
@@ -42,7 +42,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
   * Köper+ (2015) showed that lexicographic relations such as _synonymy_
     are _not_ reliably discovered in the same way
 
-#2 Related work
+# 2 Related work
 
 * synonymy and antonymy (Turney, 2008),
 * ConceptNet relations and selectional preferences
@@ -75,7 +75,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
   * this is the first study to address the effect of model parameters on
     _individual_ linguistic relations
 
-#3 The Bigger Analogy Test Set (BATS)
+# 3 The Bigger Analogy Test Set (BATS)
 
 * 40 linguistic relations that are listed in table 1
   * Each represented with 50 unique word pairs
@@ -96,16 +96,16 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
   * encyclopedic section was com- piled on the basis of word lists in Wikipedia
     and other internet resources
 
-#4 Testing the test
+# 4 Testing the test
 
-##The vector offset method
+## The vector offset method
 
 * Mikolov+ (2013a)
   `argmax_{d \in V} sim(d, c − a + b)`
 * Levy and Goldberg (2014b) propose an alternative optimization objective:
   `argmax_{d \in V} cos(d − c, b−a)`
 
-##Corpus and models
+## Corpus and models
 
 * (de)merits of count-based models as compared to the neural-net-based models
 * Our source corpus
@@ -123,7 +123,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
   * On our 5 B corpus GloVe achieved 80.4% average accuracy (versus 71.7% on 6
     B corpus in the original study)
 
-#5 Results and discussion
+# 5 Results and discussion
 
 ## 5.1 Word category effect
 
@@ -147,7 +147,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
     * It would thus be beneficial to exclude from the set of possible answers
       not only the words a, b and c, but also their morphological forms
 
-##Window size effect
+## Window size effect
 
 * Lebret and Collobert (2015) shows
   * [sem] benefit from larger windows while [synt] do not
@@ -159,14 +159,14 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
   * [no] one-on-one correspondence between “semantics” and “larger windows”
 * Levy+ (2015) suggest that GloVe actually benefits from larger windows
 
-##Vector dimensionality effect
+## Vector dimensionality effect
 
 * 19 BATS categories
   * either peaked at 1200 dimensions or did not start decreasing by that point
 * the other 20 relations show all kinds of patterns
   * 14 categories peaked between 200 and 1100 dimensions
 
-##Other parameters
+## Other parameters
 
 * changing the power `a` for the Σ matrix of the SVD transformation can
   [change] the performance on individual categories by 40-50%
@@ -179,7 +179,7 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
     contain only low-frequency vocabulary;
   * SVD was shown to handle low frequencies well (Wartena, 2014)
 
-#Conclusion
+# Conclusion
 
 * phrases
   * BATS ... not focus on word _phrases_, but we included WordNet phrases as

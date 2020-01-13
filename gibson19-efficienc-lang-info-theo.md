@@ -1,12 +1,12 @@
 How Efficiency Shapes Human Language
 E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
 
-#Abstract
+# Abstract
 
 * we review studies that deploy ... tools from probability and information theo
   * from the lexicon through syntax. These studies show how a pervasive
 
-#Why Do Languages Look the Way they Do?
+# Why Do Languages Look the Way they Do?
 
 * cross-linguistic universals
 * Chomsky (1975) de-emphasized efficiency of use as a source for similarities
@@ -24,7 +24,7 @@ E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
       it remains to be seen whether this is possible in all cases. Finally, we
   * challenges for the efficiency/learnability framework.
 
-#What is Communicative Efficiency? 3
+# What is Communicative Efficiency? 3
 
 * source coding: choosing a code that makes signals short on average, according
   to the distribution over messages coming out of the information source, is
@@ -50,7 +50,7 @@ E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
     24. Pereira, F. (2000) 
       Formal grammar and information theory: together again? Phys. Eng. Sci.
 
-#The Existence of Ambiguity Out of Context 5
+# The Existence of Ambiguity Out of Context 5
 
 * context resolves all communicatively relevant ambiguity [26] 
   (even for children learning their native language [27]), and 
@@ -61,9 +61,9 @@ E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
   * intuitively by looking at places where we attempt to communicate with zero
     ambiguity, such as legal contracts and computer programming languages
 
-#Evidence of Communicative Efficiency in Human Language 
+# Evidence of Communicative Efficiency in Human Language 
 
-##Word Length
+## Word Length
 
 * Zipf [29]: more frequent words tends to be shorter (e.g., ‘the’)
 * In an optimal code, the length of a signal will depend on its probability in
@@ -74,7 +74,7 @@ E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
   * information-theoretically efficient shortening processes in production
     choice was demonstrated by Mahowald+ [33]
 
-#The Partitioning of Semantic Space in the Lexicon 6
+# The Partitioning of Semantic Space in the Lexicon 6
 
 * research over the past 70 years on why a language has the words that it does,
   * kinship relations (e.g., [34,35]), color [36,37], 
@@ -87,6 +87,6 @@ E Gibson, R Futrell, S P. Piantadosi, I Dautriche, K Mahowald, L Bergen, R Levy
   1. informativeness, that [ make communicatively relevant distinctions ]
   1. complexity: how well the [ lexicon can be ] represented and learned. In
 
-#How Learnability Interacts with Efficiency 11
+# How Learnability Interacts with Efficiency 11
 
-#Challenges for the Efficiency Approach 14
+# Challenges for the Efficiency Approach 14

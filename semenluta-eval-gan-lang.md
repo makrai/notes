@@ -2,7 +2,7 @@ Stanislau Semeniuta, Aliaksei Severyn, Sylvain Gelly
 On Accurate Evaluation of GANs for Language Generation
 https://arxiv.org/abs/1806.04936
 
-#Abstract
+# Abstract
 
 * The latest works introducing novel GAN models for language generation use
   n-gram based metrics for evaluation and only report single scores of the best

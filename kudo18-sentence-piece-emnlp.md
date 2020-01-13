@@ -5,7 +5,7 @@ EMNLP 2018
 
 available under the Apache 2 license at https://github.com/google/sentencepiece
 
-#Abstract
+# Abstract
 
 * designed for Neural-based text processing, including NMT. It provides
   open-source C++ and Python implementations for subword units. 
@@ -17,7 +17,7 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
   * We also compare the performance of subword training and segmentation with
     various configurations
 
-#Introduction
+# Introduction
 
 * Deep neural networks are demonstrating a large impact on NLP
   * NMT (Bahdanau+ 2014; Luong+ 2015; Wu+ 2016; Vaswani+ 2017) ... has had a
@@ -42,7 +42,7 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
       from raw sentences.  SentencePiece enables building a purely end-to-end
       system that does not depend on any language-specific processing.
 
-#2 System Overview
+# 2 System Overview
 
 * four main components: Normalizer, Trainer, Encoder, and Decoder.  
   * Normalizer is a module to normalize semantically equivalent Unicode
@@ -53,23 +53,23 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
 * Encoder and Decoder ... manages the vocabulary to id mapping 
   * useful for most of NMT systems as their input and output are id sequences.
 
-#3 Library Design
+# 3 Library Design
 
-##3.1 3.1 Lossless Tokenization
+## 3.1 3.1 Lossless Tokenization
 
 * The information that no space exists between “world” and “.” is not kept in
   the tokenized sequence.  Detokenization ... has to be language-dependent 
   * e.g. while the detokenizer usually puts whitespaces between the ...  tokens
     in most European languages, no spaces are required in Japanese and Chinese.
 
-##3.4 Customizable character normalization
+## 3.4 Customizable character normalization
 
 * e.g. Japanese fullwidth Latin characters can be normalized into ASCII Latin
 * Lowercasing is also an effective normalization, depending on the application.
 * Recently, Unicode standard Normalization Forms, e.g., NFC and NFKC
   * better reproducibility and strong support as Unicode standard.
 
-##3.5 3.5 Self-contained models
+## 3.5 3.5 Self-contained models
 
 * Recently, many researchers have provided pretrained NMT models 
   * However, it is not always stated how the data was preprocessed
@@ -78,10 +78,10 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
   * Even using the Moses toolkit, ... version and command line flags
   * Strictly speaking, NFKC normalization ... depending on the Unicode version.
 
-#4 Experiments
+# 4 Experiments
 
-##4.1 Comparison of different preprocessing
+## 4.1 Comparison of different preprocessing
 
-##4.2 Segmentation performance
+## 4.2 Segmentation performance
 
-#5 Conclusions 
+# 5 Conclusions 

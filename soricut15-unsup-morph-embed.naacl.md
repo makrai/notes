@@ -2,7 +2,7 @@ Radu Soricut, Franz Och
 Unsupervised morphology induction using word embeddings
 NAACL 2015
 
-#Abstract
+# Abstract
 
 * unsupervised method for inducing morphological transformations between words
 * relies on certain regularities manifest in high-dimensional vector spaces
@@ -13,7 +13,7 @@ NAACL 2015
   * significant improvements across all languages
   * improve on current SOTA for the morphologically-rich Stanford Rare-words
 
-#1 Intro
+# 1 Intro
 
 * Word representations [from] neural networks (Bengio+ 2003; Socher+ 2011a) or
   specialized models (Mikolov+ 2013a) have been
@@ -42,7 +42,7 @@ NAACL 2015
     for which a morphological analysis is found
 * languages: English, German, French, Spanish, Romanian, Arabic, and Uzbek
 
-#2 Previous Work
+# 2 Previous Work
 
 * word-representations [for] sentence-level tasks such as
   * language modeling (Mnih and Hinton, 2007; Mikolov and Zweig, 2012)
@@ -61,7 +61,7 @@ NAACL 2015
     between the resulting representation and other words that exhibit similar
     morphological properties
 
-#3 Morphology Induction using Embedding Spaces 2
+# 3 Morphology Induction using Embedding Spaces 2
 
 ## 3.1 Morphological Transformations
 
@@ -71,11 +71,11 @@ NAACL 2015
   2. Train embedding space, Evaluate quality of candidate rules
   4. Generate lexicalized morphological transformations
 
-###Evaluate quality of candidate rules
+### Evaluate quality of candidate rules
 
 * We use as `F_E` function rank E , the cosine-similarity rank function in E n . We
 
-###Generate lexicalized morphological transformations
+### Generate lexicalized morphological transformations
 
 * e.g. rule suffix:ly: we want to avoid applying them for e.g. _only, on_
 * compute best direction vectors ↑d w for each rule support set S r . It
@@ -91,17 +91,17 @@ NAACL 2015
   * to favor the accuracy of the word-representations for the normal forms;
   * different normalization procedures e.g. length: more linguistically motived
 
-##3.3 Morphological Transformations for Rare and Unknown Words
+## 3.3 Morphological Transformations for Rare and Unknown Words
 
 * e.g. unassertiveness → assertive
 
-#4 Empirical Results 7
+# 4 Empirical Results 7
 
 * How does the impact of morphology analysis change with training data size?
 
-##4.1 Quality of Morphological Analysis [in] word-similarity
+## 4.1 Quality of Morphological Analysis [in] word-similarity
 
-###Data
+### Data
 
 * test sets, we use standard, publicly-available word-similarity datasets
 * Most relevant ... is the Stanford English Rare-Word dataset (Luong+ 2013),
@@ -112,19 +112,19 @@ NAACL 2015
 * Spanish, Romanian, and Arabic we use their respective versions of WS353
   (Hassan and Mihalcea, 2009)
 
-###Results
+### Results
 
 We present in Table 4 the results obtained across
 * 6 language pairs and 9 datasets, using a
 * count threshold for SG+Morph of C = 100. We also include the results obtained
 
-##4.2 Quality of Morphological Analysis for Unknown/Rare Words
+## 4.2 Quality of Morphological Analysis for Unknown/Rare Words
 
 * T1-words should be morphologically an- alyzed, while
   T2-words should not; a method that over-analyses has poor performance on T2,
 
-##4.3 Morphology and Training Data Size
+## 4.3 Morphology and Training Data Size
 
-#5 Conclusions and Future Work
+# 5 Conclusions and Future Work
 
 * word-compounds in German ... require a more focused approach for solving

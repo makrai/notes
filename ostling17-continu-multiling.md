@@ -2,7 +2,7 @@ Continuous multilinguality with language vectors
 Robert Östling and Jörg Tiedemann
 2017 ACL
 
-#Abstract
+# Abstract
 
 * Most existing models for multilingual natural language processing (NLP)
   treat language as a discrete category
@@ -13,7 +13,7 @@ Robert Östling and Jörg Tiedemann
   * experiments with 1303 Bible translations into 990 different languages
   * genetic relationships between languages
 
-#1 Introduction
+# 1 Introduction
 
 * Neural language models (Bengio+ 2003; Mikolov+ 2010; Sundermeyer+ 2012)
 * we
@@ -23,7 +23,7 @@ Robert Östling and Jörg Tiedemann
   * languages are related and share many features and properties
   * data sparseness for most languages in the world and also for most domains
 
-#2 Related Work
+# 2 Related Work
 
 * Multilingual language models is not a new idea (Fugen et al., 2003)
 * Ammar et al. (2016)
@@ -40,7 +40,7 @@ Robert Östling and Jörg Tiedemann
 * automatic language classification, by Wichmann et al. (2010) among others
   * However, our purpose is not to detect genealogical relationships
 
-#3 Data
+# 3 Data
 
 * Bible translations crawled from the web
   * from various sources and periods of times
@@ -59,7 +59,7 @@ Robert Östling and Jörg Tiedemann
 * historical versions of languages (with their own ISO 639-3 code) are treated
   as distinct languages
 
-#4 Methods
+# 4 Methods
 
 * Our model is based on a standard stacked character-based LSTM 
   (Hochreiter and Schmidhuber, 1997) with two layers, followed by a hidden
@@ -70,14 +70,14 @@ Robert Östling and Jörg Tiedemann
     * attempt to capture different types of information about languages
     * using the same embedding everywhere gives similar results
 
-#5 Results
+# 5 Results
 
 * hierarchical agglomerative clustering [of the language vector space] 
   for visualization. 
 * For measuring performance, we use cross-entropy on held-out data. For this,
   we use a set of the 128 most commonly translated Bible verses
 
-##5.2 Structure of the language space
+## 5.2 Structure of the language space
 
 * Germanic languages ... closely matches the established genetic relationships
   in this language family

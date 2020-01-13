@@ -1,6 +1,6 @@
 Ittzés Nóra, az NSZ szerk. szab-ból 
 
-#Homonim címszavak
+# Homonim címszavak
 
 Az azonos alakú (homonim) szavakat külön szócikkbe vesszük, s a címszó jobb
 felső sarkához tett indexszámmal különböztetjük meg őket egymástól: _vár_1 ige és

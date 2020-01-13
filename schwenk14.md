@@ -2,7 +2,7 @@ Holger Schwenk, Fethi Bougares, Loïc Barrault
 Efficient Training Strategies for Deep Neural Network Language Models
 NIPS workshop on Deep Learning and Representation Learning 2014
 
-#1 Introduction
+# 1 Introduction
 
 * optimal training can have an important impact on the performance,
   * [3] Yoshua Bengio
@@ -12,7 +12,7 @@ NIPS workshop on Deep Learning and Representation Learning 2014
     Efficient backprop
     In Neural Networks: Tricks of the trade.  Springer, 1998
 
-#2 Continuous space language models
+# 2 Continuous space language models
 
 * Usually one tanh hidden
 * In this paper, we will investigate much deeper architectures

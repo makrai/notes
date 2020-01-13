@@ -4,7 +4,7 @@ IJCAI 2015
 
 nem találtam kódot http://nlp.fudan.edu.cn/
 
-#Abstract
+# Abstract
 
 * We present a general architecture to learn the word and topic embeddings
   efficiently, which is an
@@ -16,7 +16,7 @@ nem találtam kódot http://nlp.fudan.edu.cn/
     * text classification
   * outperforms state-of-the-art methods
 
-#1 Introduction
+# 1 Introduction
 
 * distributed representations are widely used for NLP tasks, such as
   * syntax [Turian+ 2010; Collobert+ 2011; Mnih...]
@@ -51,9 +51,9 @@ nem találtam kódot http://nlp.fudan.edu.cn/
     * replaces the bilinear layer with a tensor layer
     * capture more interactions between word and topic
 
-#2 Neural Models For Word Embeddings
+# 2 Neural Models For Word Embeddings
 
-#3 Neural Tensor Skip-Gram Model
+# 3 Neural Tensor Skip-Gram Model
 
 * we introduce latent topics and assume that
   each word has different embeddings under different topics
@@ -69,16 +69,16 @@ nem találtam kódot http://nlp.fudan.edu.cn/
     * In EMNLP, 2013
 * energy-based function
 
-#3.1 Tensor Factorization
+# 3.1 Tensor Factorization
 
-#3.2 Related Models and Special Cases
+# 3.2 Related Models and Special Cases
 
 * Skip-Gram
 * Topical Word Embeddings Liu+ 2015]
 
-#4 Experiments
+# 4 Experiments
 
-#4.2 Contextual Word Similarity
+# 4.2 Contextual Word Similarity
 
 * to obtain word topics
   * The widely used collapsed Gibbs sampling LDA

@@ -1,7 +1,7 @@
 Learning Deep Structured Semantic Models for Web Search using Clickthrough Data
 Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, Larry Heck
 
-#ABSTRACT
+# ABSTRACT
 
 * Latent semantic models, such as LSA, intend to map a query to its relevant
   documents at the semantic level where keyword-based matching often fails. 

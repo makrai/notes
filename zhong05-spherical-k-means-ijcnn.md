@@ -2,7 +2,7 @@ Efficient Online Spherical K-means Clustering
 Shi Zhong
 IJCNN 2005
 
-#Abstract
+# Abstract
 
 * spherical k-means algorithm,
   * i.e., the k-means algorithm with cosine similarity, is a

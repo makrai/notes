@@ -2,7 +2,7 @@ Jiaqi Mu, Suma Bhat, Pramod Viswanath
 All-but-the-Top: Simple and Effective Postprocessing for Word Representations
 ICLR, 2018
 
-#Abstract
+# Abstract
 
 * eliminate the common mean vector and a few top dominating directions from the
 * empirically validated on a variety of 

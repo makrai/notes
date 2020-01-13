@@ -2,7 +2,7 @@ Cristian Danescu-Niculescu-Mizil Justin Cheng Jon Kleinberg Lillian Lee
 You had me at hello: How phrasing affects memorability
 acl 2012
 
-#Abstract
+# Abstract
 
 * how ... the choice of words and sentence structure [can affect achieve
   widespread public awareness]
@@ -14,7 +14,7 @@ acl 2012
       * make them easy to apply in new contexts — that is, more portable.  We
     * the concept of “memorable language” can be extended across domains.
 
-#1 Hello. My name is Inigo Montoya. [Introduction]
+# 1 Hello. My name is Inigo Montoya. [Introduction]
 
 * with respect to lexical language models trained on the newswire portions of
   the Brown corpus [21], memorable quotes have significantly lower likelihood
@@ -23,7 +23,7 @@ acl 2012
 * containing fewer markers that indicate references to nearby text.
   * In their patterns of verb tenses, personal pronouns, and determiners
 
-#4 A long time ago, in a galaxy far, far away [Realted work]
+# 4 A long time ago, in a galaxy far, far away [Realted work]
 
 * computational humor recognition [25].
   * [25] Rada Mihalcea and Carlo Strapparava. 

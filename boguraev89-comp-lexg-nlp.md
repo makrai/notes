@@ -2,7 +2,7 @@ Computational lexicography for natural language processing
 Bran Boguraev and Ted Briscoe eds
 1989 Longman Publishing
 
-#Foreword
+# Foreword
 
 * attention drawn to lexical resources
 * theoretical role and applications in traditional linguistic professions and
@@ -15,7 +15,7 @@ Bran Boguraev and Ted Briscoe eds
   1. establish now lexical KBs for a wide variety of researchers and applications
   2. reuse existing lexical resources
 
-#Introduction to computational lexicography for natural language processing
+# Introduction to computational lexicography for natural language processing
 B. Boguraev, E. Briscoe
 Pages: 1-40
 
@@ -51,14 +51,14 @@ Pages: 1-40
     * MRDs other than LDOCE
     * aims not central to NLP
 
-##NLP p3
+## NLP p3
 
 * division between lex sem and pragmatic knowledge
   * Lyons (1981) discusses this in great detail
 * rules (p5) p6 and lexicon
 * POS and subcat info (syntactic feats), chaps 3--5
 
-##Comp lexg p10
+## Comp lexg p10
 
 * lexicons developed for syntactic and morphological parsing (1982, 1986)
   * different representations
@@ -68,7 +68,7 @@ Pages: 1-40
     1. published dicts rely on the users' linguistic and common sense knowledge
     2. informal presentation, inappropriate linguistic models
 
-###1.2.1 The nature of a dictionary entry p13
+### 1.2.1 The nature of a dictionary entry p13
 
 > The entries in most dictionaries distinct 'homographs' of a word form when is
 > servers as noun, verb or some other POS
@@ -129,7 +129,7 @@ Pages: 1-40
     Waltz and Pollack, 1985; McCelland, Rumelhart el al., 1986)
 * dictionaries are not encyclopedias
 
-###1.2.2 Dictionary organization and representation p18
+### 1.2.2 Dictionary organization and representation p18
 
 * reliability of the grammar coding system, chaps 3--5
 * sense definitions
@@ -137,13 +137,13 @@ Pages: 1-40
   * genus and differentiae spotting systems, chaps 7 and 8 !
 * a dictionary DB system developed at Cambridge, chap 2
 
-##1.3 Overview of work with MRDs in NLP p21
+## 1.3 Overview of work with MRDs in NLP p21
 
-###1.3.1 Word lists
+### 1.3.1 Word lists
 
 * for spell checkers, MT, indexing, speech
 
-###1.3.2 Taxonomies
+### 1.3.2 Taxonomies
 
 * Cowie (1983) presents a system for analysing descriptive text into
   hierarchically structured knowledge fragments with the MRD source of LDOCE,
@@ -152,21 +152,21 @@ Pages: 1-40
 * Amsler (1980, 1981), semantic hierarchy of defining concepts
 * chaps 7--9, sec 1.3.6 !
 
-###1.3.3 Access/browsing
+### 1.3.3 Access/browsing
 
 * chap 2
 * network of sense relations p20
 
-###1.3.4 Speech processing
+### 1.3.4 Speech processing
 
-###1.3.5 Parsing
+### 1.3.5 Parsing
 
 * recent grammar formalisms generalise the notion of a non-terminal symbol from
   a simple atom to a set of syntactic features
 * chapters 3 and 4 for precise analysis of the codes and comparison between the
   coding systems of LDOCE grammar and OALD
 
-###1.3.6 Semantic processing
+### 1.3.6 Semantic processing
 
 * MRD as a knowledge base;
 * continuum between the minimal semantic knowledge implied by the use of a
@@ -191,13 +191,13 @@ Pages: 1-40
     * organised along a generalisation/specialisation axis
 * WSD p22
 
-###1.3.7 Generation
+### 1.3.7 Generation
 
 * McDermott (1981) suggests that no significant insights into natural language
   generation are going to be made until we have a program which has something
   significant to say
 
-##1.4 Reliability and utility of MRDs
+## 1.4 Reliability and utility of MRDs
 
 * coverage
   * within a single entry
@@ -220,7 +220,7 @@ Pages: 1-40
   * phrasal verbs
     * made up from verbs and particles taken from the restricted vocabulary
 
-##Organization of the contributions
+## Organization of the contributions
 
 2. construction of a dictionary DB system for LDOCE
 3. analysing and rationalising the grammar code system (by Amsterdam group)
@@ -244,28 +244,28 @@ Pages: 1-40
   * issues shared by computational lexicography and knowledge acquisition
   * experiments on extracting semantic information
 
-##Notes p28
+## Notes p28
 
-#Placing the dictionary on-line H. Alshawi, B. Boguraev, D. Carter p28
+# Placing the dictionary on-line H. Alshawi, B. Boguraev, D. Carter p28
 Pages: 41-63
 
-#An independent analysis of the LDOCE grammar coding system
+# An independent analysis of the LDOCE grammar coding system
 E. Akkerman
 Pages: 65-83
 
-#Utilising the LDOCE grammar codes
+# Utilising the LDOCE grammar codes
 B. Boguraev, E. Briscoe
 Pages: 85-116
 
-#The derivation of a large computational lexicon for English from LDOCE
+# The derivation of a large computational lexicon for English from LDOCE
 J. Carroll, C. Grover
 Pages: 117-133
 
-#LDOCE and speech recognition
+# LDOCE and speech recognition
 D. Carter
 Pages: 135-152
 
-#7 Analysing the dictionary definitions p84
+# 7 Analysing the dictionary definitions p84
 H. Alshawi
 Pages: 153-169
 
@@ -273,16 +273,16 @@ Pages: 153-169
 of synonyms and specialised words and the difficulty of delimiting domains
 * partial syntactic analysis
 
-##Def anal
-##Analysis examples
-##Some problems
-##Phrasal analysis hierarchies
-##Analysis rules
-##Performance remarks
-##Further research
-##Notes
+## Def anal
+## Analysis examples
+## Some problems
+## Phrasal analysis hierarchies
+## Analysis rules
+## Performance remarks
+## Further research
+## Notes
 
-#8 Meaning and structure in dictionary definitions p93
+# 8 Meaning and structure in dictionary definitions p93
 P. Vossen, W. Meijs, M. den Broeder
 Pages: 171-192
 
@@ -291,9 +291,9 @@ Pages: 171-192
 * hyponyms, adjectives involved
 * combine them with subject field, speech register, and sociolect codes
 
-##8.5 p99
+## 8.5 p99
 
-#9 A tractable machine dictionary as a resource for comp sem p104
+# 9 A tractable machine dictionary as a resource for comp sem p104
 Y. Wilks, D. Fass, C. Guo, J. McDonald, T. Plate, B. Slator
 Pages: 193-228
 
@@ -369,7 +369,7 @@ Pages: 193-228
   3. how such information can be used in 
     Preference Semantics, and Collative Semantics
 
-##9.2 The extraction of semantic information from LDOCE
+## 9.2 The extraction of semantic information from LDOCE
 
 * organization
   * description of LDOCE
@@ -380,14 +380,14 @@ Pages: 193-228
   * box codes CONCRETE, ABSTRACT, and ANIMATE, hierarchy
   * pragmatic (`subject`) codes 
 
-###9.2.1 Az LDOCE -- együttes előfordulás statisztikája (Tony Plate)
+### 9.2.1 Az LDOCE -- együttes előfordulás statisztikája (Tony Plate)
 
-###9.2.2 Gépesített szótár építése az LDOCE alapján
+### 9.2.2 Gépesített szótár építése az LDOCE alapján
 
 1200 szavas key defining vocabulary (KDV)
 
-###9.2.3 genus
+### 9.2.3 genus
 
-##taxonomy p108
+## taxonomy p108
 
-##9.3 utilisation LDOCE p118
+## 9.3 utilisation LDOCE p118

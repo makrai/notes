@@ -2,7 +2,7 @@ Daniel Fried, Tamara Polajnar, and Stephen Clark
 Low-Rank Tensors for Verbs in Compositional Distributional Semantics
 ACL 2015
 
-#Abstract
+# Abstract
 
 * We investigate the effect of low-rank tensors on the transitive verb
   construction where the verb is a third-order tensor
@@ -10,7 +10,7 @@ ACL 2015
   verb, they achieve performance comparable to, and occasionally surpassing,
 * on sentence similarity and verb disambiguation tasks
 
-#1 Introduction
+# 1 Introduction
 
 * compositional distributional semantics (CDS):
   * combining the distributional representations for words, often [syntax-driv]

@@ -5,7 +5,7 @@ EMNLP 2017, Outstanding Paper Award arXiv:1705.02364v4 [cs.CL] 21 Jul 2017
 
 https://github.com/facebookresearch/InferSent
 
-#Abstract
+# Abstract
 
 * we show how
   * universal sentence representations
@@ -17,7 +17,7 @@ https://github.com/facebookresearch/InferSent
     * suitability of natural language inference for transfer learning [in] NLP
 * encoder is publicly available
 
-#Intro
+# Intro
 
 * existing work on ... learning sentence encoders [is] unsupervised
   * like SkipThought (Kiros+ 2015) or FastSent (Hill+ 2016)
@@ -30,7 +30,7 @@ https://github.com/facebookresearch/InferSent
     compared to all existing approaches like SkipThought or FastSent,
     * much faster to train
 
-#2 Related work
+# 2 Related work
 
 * Recent work on generating sentence embeddings
   * [non-neural]
@@ -55,7 +55,7 @@ https://github.com/facebookresearch/InferSent
         * image captioning data from the COCO dataset (Lin+ 2014). These
       * significantly lower results compared to the unsupervised Skip-Thought
 
-#3 Approach
+# 3 Approach
 
 1. how the NLI task can be used to train universal sentence encoding models
 2. architectures that we investigated for the sentence encoder
@@ -66,7 +66,7 @@ https://github.com/facebookresearch/InferSent
   * hierarchical convolutional network that can be seen as
     * a tree-based method that blends different levels of abstraction
 
-##3.1 The Natural Language Inference task
+## 3.1 The Natural Language Inference task
 
 * SNLI dataset consists of 570k human-generated English sentence pairs,
   * entailment, contradiction and neutral. It captures
@@ -84,16 +84,16 @@ https://github.com/facebookresearch/InferSent
   * The resulting vector ... is fed into a 3-class classifier consisting of
     multiple fully-connected layers culminating in a softmax layer
 
-##3.2 Sentence encoder architectures
+## 3.2 Sentence encoder architectures
 
-###3.2.2 BiLSTM with mean/max pooling
+### 3.2.2 BiLSTM with mean/max pooling
 
 * two ways of combining the varying number of `{h_t}_t` to form a fixed-size
   1. maximum value over each dimension of the hidden units (max pooling)
      (Collobert and Weston, 2008) or by considering the
   2. average of the representations (mean pooling)
 
-###3.2.4 Hierarchical ConvNet
+### 3.2.4 Hierarchical ConvNet
 
 * One of the currently best performing models on classification tasks is a
   convolutional architecture termed AdaSent (Zhao+ 2015), which
@@ -101,7 +101,7 @@ https://github.com/facebookresearch/InferSent
   of abstractions
 * we introduce a faster version consisting of 4 convolutional layers
 
-#4 Evaluation of sentence representations
+# 4 Evaluation of sentence representations
 
 * 12 transfer tasks
 * Adam (Kingma and Ba, 2014) to fit a logistic regression classifier
@@ -128,7 +128,7 @@ https://github.com/facebookresearch/InferSent
     * captions by their relevance for a given query image (Caption Retrieval). We
   * pairwise rankingloss L cir (x, y):
 
-#5 Empirical results
+# 5 Empirical results
 
 * The BiLSTM-4096 with the max-pooling operation performs best
   on both SNLI and transfer tasks
@@ -139,7 +139,7 @@ https://github.com/facebookresearch/InferSent
     * converged faster on SNLI (5 epochs instead of 10), but obtained
     * worse results on the transfer tasks
 
-##Embedding size
+## Embedding size
 
 * increased embedding sizes lead to increased performance for almost all models
   * Since it is easier to linearly separate in high dimension,
@@ -147,14 +147,14 @@ https://github.com/facebookresearch/InferSent
   * particularly true for some models (BiLSTM-Max, HConvNet, inner-att), 
     *  unequal abilities to incorporate more information as the size grows
 
-##Comparison with SkipThought
+## Comparison with SkipThought
 
 * We train our model in less than a day on a single GPU
   * compared to the best SkipThought-LN network trained for a month
 
-##MultiGenre NLI
+## MultiGenre NLI
 
 * On semantic textual similarity STS14, we are also competitive with PPDB based
   paragram-phrase embeddings
 
-#Appendix Max-pooling visualization for BiLSTM-max trained and untrained
+# Appendix Max-pooling visualization for BiLSTM-max trained and untrained

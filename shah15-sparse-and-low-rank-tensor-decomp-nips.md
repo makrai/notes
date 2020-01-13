@@ -2,7 +2,7 @@ Parikshit Shah, Nikhil Rao, Gongguo Tang
 Sparse and Low-Rank Tensor Decomposition 
 NIPS 2015
 
-#Abstract
+# Abstract
 
 * Motivated by the problem of robust factorization of a low-rank tensor
 * We present an 
@@ -15,7 +15,7 @@ NIPS 2015
   * situations where the problem is recoverable and provide 
   * theoretical guarantees for our algorithm. We validate our algorithm with
 
-#Introduction
+# Introduction
 
 * Tensors [representat] 
   * graphical models with latent variables [1], 

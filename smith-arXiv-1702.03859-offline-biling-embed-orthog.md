@@ -2,7 +2,7 @@ Offline bilingual word vectors , orthogonal transformations and the inverted sof
 arXiv:1702.03859v1 [cs.CL] 13 Feb 2017
 Samuel L. Smith, David H. P. Turban, Steven Hamblin & Nils Y. Hammerla
 
-#ABSTRACT
+# ABSTRACT
 
 Usually bilingual word vectors are trained “online”. Mikolov et al. (2013a)
 showed they can also be found “offline”; whereby two pre-trained embeddings are
@@ -20,7 +20,7 @@ knowledge. In this work,
   * “pseudo-dictionary” from the identical character strings which appear in
     both languages, achieving 40% precision
 
-##2.1 Previous work
+## 2.1 Previous work
 
 * Faruqui & Dyer (2014) obtained bilingual word vectors using CCA. They did not
   attempt any translation tasks, but showed that the combination of CCA and

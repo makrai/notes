@@ -1,7 +1,7 @@
 Aitor Ormazabal, Mikel Artetxe, Gorka Labaka, Aitor Soroa, Eneko Agirre
 Analyzing the Limitations of Cross-lingual Word Embedding Mappings 
 
-#Abstract
+# Abstract
 
 * it is not clear whether [the isomorphism assumption] is an inherent
   limitation of mapping approaches or a more general issue when learning

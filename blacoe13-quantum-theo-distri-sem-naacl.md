@@ -2,7 +2,7 @@ A Quantum-Theoretic Approach to Distributional Semantics
 William Blacoe, Elham Kashefi, Mirella Lapata
 NAACL 2013
 
-#Abstract
+# Abstract
 
 * we explore the potential of quantum theory ... for capturing lexical meaning
 * a novel semantic space model
@@ -13,7 +13,7 @@ NAACL 2013
 * Experiments on word similarity and association
 * results competitive with a variety of classical models
 
-#1 Introduction
+# 1 Introduction
 
 * cognitive science and natural language processing [recently]
   replicating human behavior and enabling real-world applications. Examples:
@@ -57,13 +57,13 @@ NAACL 2013
 * we show how word meanings can be expressed as quantum states
   * [word's subspace is] spanned by vectors representing its potential usages
 
-#2 introducing some of the mathematical background
+# 2 introducing some of the mathematical background
 
-#3 semantic space model
+# 3 semantic space model
 
-#4, 5 evaluation experiments
+# 4, 5 evaluation experiments
 
-#6 related work and conclusion
+# 6 related work and conclusion
 
 * Within cognitive science the formal apparatus of quantum theory has been used
   * conjunction fallacies 3 (Tversky and Kahneman, 1983) 

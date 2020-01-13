@@ -5,7 +5,7 @@ ISWC 2017
 Ruder: Injecting additional prior knowledge into word embeddings 
 such as word similarity 
 
-#Abstract
+# Abstract
 
 * Assessing the degree of semantic relatedness between words
 * applications, such as ontology learning for the Semantic Web, semantic search

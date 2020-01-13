@@ -2,7 +2,7 @@ Dimitri Kartsaklis (University of Oxford), Mehrnoosh Sadrzadeh (Queen Mary
 A Study of Entanglement in a Categorical Framework of Natural Language
 QPL 2014, arXiv:1412.8102
 
-#Datasets
+# Datasets
 
 * Grefenstette and Sadrzadeh
   Compositional Distributional Model Evaluation Dataset, EMNLP 2011
@@ -24,7 +24,7 @@ QPL 2014, arXiv:1412.8102
 
 http://www.cs.ox.ac.uk/activities/compdistmeaning/
 
-#Abstract
+# Abstract
 
 * a number of proposals for verb construction lead to almost separable tensors,
   * considerably simplifies the interactions between the words
@@ -32,7 +32,7 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
 * we briefly examine a machine learning method that creates verb tensors
   exhibiting a sufficient level of entanglement
 
-#1 Intro
+# 1 Intro
 
 * Abramsky and Coecke [1]
   * provide a structural proof for a class of quantum protocols,
@@ -76,9 +76,9 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
     * a partial flow between the verb and either its subject or its object,
       depending which dimension they are copying
 
-#7 Experiments
+# 7 Experiments
 
-#7.1 Creating a semantic space
+# 7.1 Creating a semantic space
 
 * ukWaC corpus [5], originally using as a basis the
 * 2,000 content words with the highest frequency ([minus] stop words)
@@ -87,7 +87,7 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
   (i.e.  point-wise mutual information multiplied by raw counts). The
 * vector space was normalized and projected onto a 300-dimensional space using
 
-##7.2 Detecting sentence similarity
+## 7.2 Detecting sentence similarity
 
 * two similarity tasks involving pairs of transitive sentences; for each pair,
   we construct composite vectors for the two sentences
@@ -103,4 +103,4 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
   * 108 pairs of transitive sentences. The difference with our first task is
   * sentences of a pair are unrelated in a word level
 
-#10 Conclusion 12
+# 10 Conclusion 12

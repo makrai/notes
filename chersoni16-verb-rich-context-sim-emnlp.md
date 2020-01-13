@@ -23,7 +23,7 @@ EMNLP 2016
   to data sparseness and perform similarly or better than single dependencies
   in a wider range of parameter settings
 
-#2 psycholinguistic and computational background for this research
+# 2 psycholinguistic and computational background for this research
 
 * studies in sentence processing suggests that 
   * verbs activate expectations on their typical argument nouns and vice
@@ -49,7 +49,7 @@ EMNLP 2016
     on two similarity tasks, evaluated on VerbSim (Yang and Powers, 2004) and
     on a set of 1,000 verbs extracted from WordNet (Fellbaum, 1998).
 
-#3 our reinterpretation of joint contexts with syntactic dependencies
+# 3 our reinterpretation of joint contexts with syntactic dependencies
 
 * A joint context, as defined in Melamud+ (2014), is a word window of [radius]
   n around a target word.  The target is replaced by a placeholder, and the
@@ -88,14 +88,14 @@ The value of each joint feature will be the frequency of occurrence of the
 target verb with the corresponding argument combination, possibly weighted by
 some statistical association measure.
 
-#4 Evaluation settings and results
+# 4 Evaluation settings and results
 
-##Datasets
+## Datasets
 
 * The DSMs are evaluated on two test sets: 
   * VerbSim (Yang and Powers, 2006), 130 verb pairs
   * the verb subset of SimLex-999 (Hill+ 2015), 222 verb pairs.  
 
-##4.4 Results
+## 4.4 Results
 
-#Conclusions
+# Conclusions

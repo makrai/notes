@@ -2,13 +2,13 @@ Sean MacAvaney and Amir Zeldes
 A Deeper Look into Dependency-Based Word Embeddings
 naacl 2018
 
-#Abstract
+# Abstract
 
 * embeddings trained with Universal and Stanford dependency contexts
   excel at different tasks
 * enhanced dependencies often improve performance
 
-#Intro
+# Intro
 
 * word embeddings trained with neural networks have gained popularity
   * machine translation (Zou+ 2013) and information retrieval (Hui+ 2017)

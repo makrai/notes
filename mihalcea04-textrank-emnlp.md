@@ -2,11 +2,11 @@ TextRank: Bringing Order into Texts
 Rada Mihalcea and Paul Tarau
 2004
 
-#Abstract
+# Abstract
 
 unsupervised methods for keyword and sentence extraction
 
-#1 Introduction
+# 1 Introduction
 
 * Graph-based ranking algorithms 
   * like Kleinberg’s HITS algorithm (Kleinberg, 1999) or 
@@ -17,9 +17,9 @@ unsupervised methods for keyword and sentence extraction
     * relies on the collective knowledge of Web architects rather than
       individual content analysis of Web pages
 
-#3 keyword extraction 3
+# 3 keyword extraction 3
 
-##3.2 Eval
+## 3.2 Eval
 
 * Experiments were also performed with directed graphs, where a 
   * direction was set following the 
@@ -29,7 +29,7 @@ unsupervised methods for keyword and sentence extraction
   * results ... are worse than results obtained with undirected graphs, which
     suggests that ... there is no natural “direction”
 
-#4 sentence extraction
+# 4 sentence extraction
 
 * edge: “similarity” ... measured as a function of their content overlap
   * number of common tokens 

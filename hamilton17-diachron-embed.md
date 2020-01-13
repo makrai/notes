@@ -4,7 +4,7 @@ Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change
 
 http://nlp.stanford.edu/projects/histwords
 
-#Abstract
+# Abstract
 
 We 
   * develop a robust methodology for quantifying semantic change by evaluating
@@ -17,7 +17,7 @@ We
     2. the law of innovation—independent of frequency, words that are more
        polysemous have higher rates of semantic change.
 
-#Intro
+# Intro
 
 * Shifts in word meaning exhibit systematic regularities (Bréal, 1897;
   Ullmann, 1962). The 
@@ -56,14 +56,14 @@ We
   * widely different embedding approaches and test their approaches 
   * only on English
 
-#Diachronic embedding methods
+# Diachronic embedding methods
 
 * we construct diachronic (historical) word embeddings, by 
   * first constructing embeddings in each time-period and 
   * then aligning them over time, and the 
 * metrics that
 
-##2.3 Aligning historical embeddings
+## 2.3 Aligning historical embeddings
 
 * Explicit PPMI vectors are naturally aligned, as each column simply
 * Low-dimensional embeddings will not be naturally aligned 
@@ -78,7 +78,7 @@ We
 
 `arg min_{Q > Q=I} ||QW (t) − W (t+1)||_F`
 
-##2.4 Time-series from historical embeddings
+## 2.4 Time-series from historical embeddings
 
 Diachronic word embeddings can be used in two ways to quantify semantic change:
 1. we can measure changes in pair-wise word similarities over time, or 
@@ -86,12 +86,12 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
 2.  we can measure how an individual word’s embedding shifts over time.
   * the cosine-distance between a word’s representation for different time[s]
 
-#3 Comparison of different approaches
+# 3 Comparison of different approaches
 
 * We compare the different distributional approaches on a set of benchmarks
   * both their synchronic ... and their diachronic validity
 
-##known changes
+## known changes
 
 * all the methods ... capturing the correct directionality of the shifts, but
 * differences in whether the methods deemed the shifts ...  significant 
@@ -99,7 +99,7 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
 * smaller COHA dataset, where SVD performed best. 
 * PPMI was noticeably worse than the other two approaches (Table 3).
 
-##discovering
+## discovering
 
 * examining the top-10 words that changed the most from the 1900s to the 1990s
   (limiting our analysis to words with relative frequencies above 10 −5 in both
@@ -108,9 +108,9 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
   scientific terms due to changes in the corpus sample.
 * [genuine precision] SGNS ... 70%; 40% for SVD, and 10% for PPMI
 
-##3.3 Methodological recommendations
+## 3.3 Methodological recommendations
 
-#4 Statistical laws of semantic change
+# 4 Statistical laws of semantic change
 
 * how a word’s rate of semantic change \Delta, depends on its frequency, f (t) (w_i )
   and a measure of its polysemy, d (t) (w_i ) (defined in Section 4.4).
@@ -126,7 +126,7 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
   * The distribution of polysemy scores varies substantially across languages,
     so the large range for this constant is not surprising.
 
-##4.4 Law of innovation
+## 4.4 Law of innovation
 
 * _contextual diversity_ as a proxy for its polysemousness
 * [network:] words are connected to each other if they co-occur more than one
@@ -145,7 +145,7 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
     * control is naturally captured in equation (7)
     * [captured changes the directionality]
 
-#5 Discu
+# 5 Discu
 
 * recent work on detecting the emergence of novel word senses 
   (Lau et al., 2012; Mitra et al., 2014; Cook et al., 2014; Mitra et al., 2015;

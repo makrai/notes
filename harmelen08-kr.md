@@ -2,7 +2,7 @@ Handbook of Knowledge Representation
 Frank van Harmelen, Vladimir Lifschitz, and Bruce Porter
 2008
 
-#Preface
+# Preface
 
 Fifty years later ...  Advances have been made on three fronts
   1. general methods of knowledge representation and reasoning, addressing

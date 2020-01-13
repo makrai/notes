@@ -7,7 +7,7 @@ shi-jx@mail.tsinghua.edu.cn
 liuzy@mail.tsinghua.edu.cn
 licj17@mail.tsinghua.edu.cn
 
-#Abstract
+# Abstract
 
 * we differentiate the original sense and extended senses of a word by
   introducing their global occurrence information and model their re-
@@ -22,7 +22,7 @@ licj17@mail.tsinghua.edu.cn
   embedding models, and achieves more stable performance when trained on
   smaller data.
 
-#Introduction
+# Introduction
 
 * Pervious work mostly focus on using clustering to induce word senses 
   (Reisinger and Mooney, 2010; Huang et al., 2012; Tian et al., 2014;
@@ -62,14 +62,14 @@ licj17@mail.tsinghua.edu.cn
     * For efficiency and scalability, our proposed model also adopts an 
       online joint learning procedure
 
-##3.3 Relationship with State-of-the-art Methods
+## 3.3 Relationship with State-of-the-art Methods
 
 * FCSE-1 will degrade to hard assignment if we set upper = 0, which is 
   similar with the NPMSSG model in (Neelakantan et al., 2014).
 * if we set e = 0, the second sample for the extended meanings has been turned
   off, and then FCSE-2 degrades to the SG+ model in (Li and Jurafsky, 2015),
 
-#5 Related Work
+# 5 Related Work
 
 * Multi-prototype word embedding 
   * Chen et al., 2014
@@ -95,7 +95,7 @@ licj17@mail.tsinghua.edu.cn
       via Wikipedia anchors
       * fails to deal with the words that are not included in knowledge bases
 
-#6 Conclusion
+# 6 Conclusion
 
 * future, we are interested in 
   * incorporating external knowledge, such as WordNet

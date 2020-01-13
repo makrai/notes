@@ -2,7 +2,7 @@ Maximum Entropy, Word-Frequency, Chinese Characters, and Multiple Meanings
 Xiaoyong Yan, Petter Minnhagen 
 PLoS 2015
 
-#Abstract
+# Abstract
 
 * The word-frequency distribution of a text written by an author is well
   accounted for by a maximum entropy distribution, the RGF (random group

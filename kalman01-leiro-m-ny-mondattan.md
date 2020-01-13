@@ -2,13 +2,13 @@ Magyar leíró nyelvtan – Mondattan I
 Kálmán ed
 2001
 
-###1.3.1. bekebelezés (inkorporáció). ragozott ige kitétele jelen időben
+### 1.3.1. bekebelezés (inkorporáció). ragozott ige kitétele jelen időben
 
 f. Vége (van)
 g. Ez botrány (volt)
 h. Ő (volt) az igazgató
 
-#3. Igevivők
+# 3. Igevivők
 
 * tárgybekebelezés
 * igevivő-pozíció: közvetlenül a ragozott ige előtt állhatnak akkor is, amikor
@@ -24,9 +24,9 @@ h. Ő (volt) az igazgató
 * az alábbiakban tárgyalt igevivőtípusok mindegyike megjelenhet
   mind lapos prozódiájú (semleges), mind irtóhangsúlyos (nem semleges) mokban
 
-##3.2. Az igevivők fajtái
+## 3.2. Az igevivők fajtái
 
-###3.2.1. Az igekötők
+### 3.2.1. Az igekötők
 
 * az igével való speciális viszonyuk következménye az igevivőként való
   megjelenés. Ebbe a csoportba tartoznak például az igekötők

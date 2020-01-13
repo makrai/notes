@@ -2,16 +2,16 @@ Universal Neural Machine Translation for Extremely Low Resource Languages
 Jiatao Gu, Hany Hassan, Jacob Devlin, Victor O.K. Li
 naacl 2018 
 
-#Intro
+# Intro
 
 * simulated “zero-resource" settings, our model can 
   consistently outperform a strong multi-lingual NMT baseline
 
-#2 Motivation
+# 2 Motivation
 
-##2.1 Challenges
+## 2.1 Challenges
 
-##Lexical-level Sharing 
+## Lexical-level Sharing 
 
 * Conventionally, a multilingual NMT model has a vocabulary that represents the
   union of the vocabularies of all source languages

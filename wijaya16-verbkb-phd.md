@@ -2,7 +2,7 @@ Derry Tanti Wijaya
 VerbKB: A Knowledge Base of Verbs for Natural Language Understanding
 2016 PhD Thesis
 
-#Abstract
+# Abstract
 
 * typed with a pair of NELL semantic categories
   that indicates its subject type and its object type
@@ -26,7 +26,7 @@ VerbKB: A Knowledge Base of Verbs for Natural Language Understanding
   * DBPedia [Auer+ 2007] or
   * Freebase [Bollacker+ 2008]
 
-#1 Intro
+# 1 Intro
 
 * Some verbs express relationships among these entities in the world, some
   express events that change these relationships, and some do both
@@ -43,7 +43,7 @@ VerbKB: A Knowledge Base of Verbs for Natural Language Understanding
   * Each synset is then either mapped to a pre-existing NELL relation or added
     as a new relation in NELL
 
-##1.1 Overall Description of the General Approach to Building VerbKB
+## 1.1 Overall Description of the General Approach to Building VerbKB
 
 * Since a verb pattern often has multiple senses, e.g., “play”, we add to the
   verb pattern, its type signatures [to differentiate] senses e.g.,

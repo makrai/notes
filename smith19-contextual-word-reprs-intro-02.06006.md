@@ -2,7 +2,7 @@ Noah A. Smith
 Contextual Word Representations: A Contextual Introduction
 arXiv:1902.06006 [cs.CL]
 
-#5 Contextual Word Vectors
+# 5 Contextual Word Vectors
 
 * ELMo, which stands for “embeddings from language models” (Peters+ 2018a),
   * vectors for words in context, or contextual word vectors
@@ -42,25 +42,25 @@ arXiv:1902.06006 [cs.CL]
   * see Peters+ (2018b) for some exploration. Some of the findings on BERT
   * finetuning may be critical
 
-#6 Cautionary Notes
+# 6 Cautionary Notes
 
-##Word vectors are biased
+## Word vectors are biased
 
 * detecting and correcting bias (Bolukbasi+ 2016; Caliskan+ 2017)
 
-##[beyond word level]
+## [beyond word level]
 
 * understanding and production of language ... requires knowing how words are
   put together to form more complicated concepts, propositions
 
-##[evaluation]
+## [evaluation]
 
 * the gains above ...  reflect only a handful of benchmarks
 * benchmarks are, to varying degrees, controversial
 * No one ... believes they are “complete”
 * evaluation ... includes both human-judgment-based and automatic methods
 
-#7 What’s Next
+# 7 What’s Next
 
 * apply variations on contextual word vectors to new problems
 * variations on the learning methods. For example, finetuning

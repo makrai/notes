@@ -4,7 +4,7 @@ Dipanjan Das ∗ Desai Chen ∗∗ André F. T. Martins † Nathan Schneider ‡
 
 We have released our frame-semantic parser as open-source software.
 
-#Abstract 
+# Abstract 
 
 * Frame semantics is a linguistic theory that has been instantiated for English
   in the FrameNet lexicon. 

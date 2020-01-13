@@ -2,7 +2,7 @@ Sean MacAvaney, Amir Zeldes
 Deeper Look into Dependency-Based Word Embeddings
 NAACL-SRW 2018
 
-#Abstract
+# Abstract
 
 We investigate the effect
   * of various dependency-based word embeddings

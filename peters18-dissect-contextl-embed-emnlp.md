@@ -2,7 +2,7 @@ Matthew E. Peters, Mark Neumann, Luke Zettlemoyer, Wen-tau Yih
 Dissecting Contextual Word Embeddings: Architecture and Representation
 EMNLP 2018
 
-#Abstract
+# Abstract
 
 * the choice of neural architecture (e.g. LSTM, CNN, or self attention)
 * both end task accuracy and qualitative [intrinsic] properties
@@ -16,7 +16,7 @@ EMNLP 2018
     * local syntax based in the lower contextual layers to
     * longer range semantics such coreference at the upper layers
 
-#Intro
+# Intro
 
 * Language model pre-training has been shown to substantially improve tasks
   * question answering, coreference resolution, and semantic role labeling
@@ -49,13 +49,13 @@ EMNLP 2018
     * phrase representations useful for syntactic tasks
   * both at the word and span level
 
-#2 Contextual word representations from biLMs
+# 2 Contextual word representations from biLMs
 
 * To learn contextual word representations, we follow previous work
   1. training a biLM on a large text corpus (Sec. 2.1). Then,
   2. the internal layer activations from the biLM are transferred to downstream
 
-##2.1 Bidirectional language models
+## 2.1 Bidirectional language models
 
 * biLM combines a forward and backward LM to jointly maximize the log likelihud
 * first produce a context-insensitive token representation or word embedding
@@ -68,7 +68,7 @@ EMNLP 2018
 * When training, we tie the weights of the word embedding layers and Softmax,
   but maintain separate weights for the contextual layers
 
-##2.2 Character based language models
+## 2.2 Character based language models
 
 * Fully character aware models (Kim+ 2015)
 * considerably more parameter efficient then word based models but
@@ -79,14 +79,14 @@ EMNLP 2018
   character aware models have slightly better perplexities then word based
   * differences tend to be small (Józefowicz+ 2016)
 
-##2.3 Deep contextual word representations
+## 2.3 Deep contextual word representations
 
 * Peters+ (2018) introduced ELMo word representations
   * all of the layers are combined with a weighted average pooling operation
 
-#3 Architectures for deep biLMs
+# 3 Architectures for deep biLMs
 
-##3.1 LSTM
+## 3.1 LSTM
 
 * Among the RNN variants, LSTMs ... provide SOTA performance 
   for several benchmark LM tasks (Józefowicz+ 2016; Merity+ 2018; Melis+ 2018)
@@ -94,7 +94,7 @@ EMNLP 2018
   * use a large hidden state while reducing the total number of parameters
   * adopted by Peters+ (2018) for computing ELMo representations
 
-##3.2 Transformer
+## 3.2 Transformer
 
 * Transformer (Vaswani+ 2017)
 * a feed forward self-attention based architecture [originally for MT]
@@ -107,7 +107,7 @@ EMNLP 2018
 * Concurrent with, Radford+ (2018) trained a large forward Transformer LM and
   fine tuned it for a variety of NLP tasks
 
-##3.3 Gated CNN
+## 3.3 Gated CNN
 
 * competitive results for sequence modeling
   * e.g.~sequence-to-sequence machine translation (Gehring+ 2017)
@@ -118,7 +118,7 @@ EMNLP 2018
   * modified to support causal convolutions (van den Oord+ 2016) for both dirs
   * wide receptive field at the top layer
 
-##3.4 Pre-trained biLMs
+## 3.4 Pre-trained biLMs
 
 * first time that the Transformer [provides] competitive results for LM
 * our goal is to compare representations [of approximately equal] perplexity
@@ -128,7 +128,7 @@ EMNLP 2018
 * the faster architectures will allow training to scale to large unlabeled txt
   * improve the quality of biLM [] for syntactic tasks (Zhang and Bowman, 2018)
 
-#4 Evaluation as word representations 4
+# 4 Evaluation as word representations 4
 
 * four benchmark NLP tasks
 * we ... swapping out pre-trained GloVe vectors (Pennington+ 2014) 
@@ -142,7 +142,7 @@ EMNLP 2018
   * gains for MultiNLI are more modest
     6% for the Gated CNN to 13% for the 4-layer LSTM
 
-##4.1 MultiNLI
+## 4.1 MultiNLI
 
 * The MultiNLI dataset (Williams+ 2018) contains
   * crowd sourced textual entailment annotations
@@ -157,7 +157,7 @@ EMNLP 2018
   * reduce the matched/mismatched performance differences [between] domains
   * 4-layer LSTM ELMo-like embeddings sets a new SOTA
 
-##4.2 Semantic Role Labeling
+## 4.2 Semantic Role Labeling
 
 * The Ontonotes 5.0 Dataset (Pradhan+ 2013) contains
 * predicate argument annotations for a variety of types of text, including
@@ -166,7 +166,7 @@ EMNLP 2018
 * With ELMo representations, it is SOTA for this task (Peters+ 2018)
 * LSTM based word representations perform the best, with 0.6% of the 4-layer
 
-##4.3 Constituency parsing
+## 4.3 Constituency parsing
 
 * The Penn Treebank (Marcus+ 1993) contains phrase structure annotation for
   40k sentences sourced from the Wall Street Journal
@@ -177,7 +177,7 @@ EMNLP 2018
 * the explicit recurrence structure modeled with the biLSTM in the RSP
   is [not] important for parsing, see Sec.~5.3
 
-##4.4 Named entity recognition
+## 4.4 Named entity recognition
 
 * The CoNLL 2003 NER task (Sang and Meulder, 2003)
 * 20K sentences from the Reuters RCV1 news corpus
@@ -187,7 +187,7 @@ EMNLP 2018
   * 2-layer LSTM performs the best, with
     averaged F_1 0.4% 0.8% higher then the other biLMs
 
-#5 Properties of contextual vectors 6
+# 5 Properties of contextual vectors 6
 
 * In this section, we examine the intrinsic properties of contextual vectors
   * focusing on those that are independent of the architecture details
@@ -203,12 +203,12 @@ EMNLP 2018
   * beyond single tokens: a simple span representation based on the context
     vectors captures elements of phrasal syntax
 
-##5.1 Contextual similarity
+## 5.1 Contextual similarity
 
 * Nearest neighbors using cosine similarity,
   we can apply a similar method to context vectors
 
-###Intra-sentence similarity
+### Intra-sentence similarity
 
 * e.g. the words in the noun phrase “the new international space station” are
   clustered together
@@ -217,7 +217,7 @@ EMNLP 2018
 * coreference resolution: high contextual similarity of “it” to “government”,
 * Section 5.3 provides empirical support for these observations
 
-###Span representations
+### Span representations
 
 * use [the biLM’s context vectors] to form representations of spans
 * we compute a span representation s(s_0, s_1),i at layer i by concatenating
@@ -230,7 +230,7 @@ EMNLP 2018
   * spans are clustered by chunk type confirming our intuition
 * Sec. 5.3 evaluates whether we can use these span reprs for constituency pars
 
-###Unsupervised pronominal coref
+### Unsupervised pronominal coref
 
 * contextual [repr] of coreferential mentions should be similar,
   as in many cases it is possible to replace them with their referent. If true,
@@ -262,7 +262,7 @@ EMNLP 2018
   * accuracies only drop 2-3% [if we don't filter by number agreement] and
   * highest at layers near the top of each model
 
-##5.2 Context independent word representation 8
+## 5.2 Context independent word representation 8
 
 * word analogy task introduced in Mikolov+ (2013) are commonly used as
 * we ... compare the word embedding layer from the biLMs to word vectors
@@ -274,7 +274,7 @@ EMNLP 2018
   * near zero accuracy in the semantic portion, but
   * scored well on the syntactic portion
 
-##5.3 Probing contextual information
+## 5.3 Probing contextual information
 
 * In this section, we quantify some of the ... observations made in Sec. 5.1
 * a series of linear probes (Belinkov+ 2017) with two NLP tasks
@@ -284,7 +284,7 @@ EMNLP 2018
   * all biLM architectures learn syntax, including span-based syntax; and
   * POS is captured at lower layers then constituent structure
 
-###POS tagging
+### POS tagging
 
 * Peters+ (2018) showed that the contextual vectors from the first layer of the
   2-layer LSTM plus a linear classifier was near SOTA for POS tagging
@@ -292,7 +292,7 @@ EMNLP 2018
 * Accuracies for all of the models are high, ranging from 97.2 to 97.4, and
 * similar trend with [resp to which layer is best]
 
-###Constituency parsing
+### Constituency parsing
 
 * Our linear model
   * independently predicts the constituent type for all possible spans in a
@@ -302,7 +302,7 @@ EMNLP 2018
 * The third row in Fig. 3 shows the results
   * independent ... alone has F1 of near 80% for the best layers from each arch
 
-##5.4 Learned layer weights
+## 5.4 Learned layer weights
 
 * Fig. 4 plots the softmax-normalized layer weights s / arch / task
 * SRL model weights are omitted as they close to constant
@@ -314,7 +314,7 @@ EMNLP 2018
 * the maximum layer weights occur below the top layers as the most transferable
   * the top layers specialize for language modeling
 
-#6 Related work 9
+# 6 Related work 9
 
 * McCann+ (2017) learned contextualized vectors with an NMT system (CoVe)
 * biLM based representations outperformed CoVe in all considered tasks
@@ -345,7 +345,7 @@ EMNLP 2018
   * Sundararajan+ (2017) used a gradient based method
   * Murdoch+ (2018) decomposed LSTMs to interpret classification predictions
 
-#7 Conclusions and future work
+# 7 Conclusions and future work
 
 * future work
   * scaling up model size or data size?

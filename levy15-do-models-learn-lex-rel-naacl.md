@@ -4,11 +4,11 @@ NAACL 2015
 
 mindig csak igen-nem?
 
-#Abstract
+# Abstract
 
 * hypernymy and entailment
 
-#1 Introduction
+# 1 Introduction
 
 
 * inference relations between two words (x and y), such as
@@ -31,7 +31,7 @@ mindig csak igen-nem?
     * we argue that these supervised methods memorizing 
       ... whether y is a “prototypical hypernym” (i.e. a category)
 
-#2 Experiment Setup
+# 2 Experiment Setup
 
 * previously reported results
   * we
@@ -39,12 +39,12 @@ mindig csak igen-nem?
     * observe similar trends to previously published results, and
     * make the dataset splits available for replication
 
-#2.1 Word Representations
+# 2.1 Word Representations
 
 * over Wikipedia (1.5 billion tokens)
 * the cross-product of 3 types of contexts and 3 representation models
 
-#2.1.1 Context Types
+# 2.1.1 Context Types
 
   * Bag-of-Words
     * w = 5
@@ -55,7 +55,7 @@ mindig csak igen-nem?
     * (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010)
     * the same parsing apparatus as in (Levy and Goldberg, 2014)
 
-#2.1.2 Representation Models
+# 2.1.2 Representation Models
 
   * PPMI (Niwa and Nitta, 1994)
   * SVD to k = 500
@@ -64,7 +64,7 @@ mindig csak igen-nem?
     * using a modified version of word2vec that allows different
     * context types (Levy and Goldberg, 2014)
 
-#2.2 Labeled Datasets
+# 2.2 Labeled Datasets
 
 * (Kotlerman et al., 2010)
   * Manually annotated lexical entailment of distributionally similar nouns
@@ -86,7 +86,7 @@ mindig csak igen-nem?
   * identical except for one of the arguments
   * This dataset is the most realistic [entailment in context]
 
-#2.3 Supervised Methods
+# 2.3 Supervised Methods
 
 * 4 compositions for representing (x, y) as a feature vector:
   * concat (~x ⊕~y ) (Baroni et al., 2012)
@@ -103,7 +103,7 @@ mindig csak igen-nem?
   * (Biemann and Riedl, 2013) using
 * Google’s syntactic N-grams (Goldberg and Orwant, 2013) as a corpus
 
-#3 Negative Results: no relation
+# 3 Negative Results: no relation
 
 * Lexical Memorization
   * y = animal
@@ -120,20 +120,20 @@ mindig csak igen-nem?
     * Weeds et al. (2014) reported a similar result
   * Table 3
 
-#4 Prototypical Hypernyms
+# 4 Prototypical Hypernyms
 
 * whether y is a likely “category” word – a prototypical hypernym –
   * and, to a lesser extent, whether x is a likely “instance” word
 * extends to other inference relations, such as meronymy
 
-##4.1 Testing the Hypothesis
+## 4.1 Testing the Hypothesis
 
 * measure on mismatched pairs
   * (banana, animal)
   * -> synthetic examples S
 * We therefore expect it to classify a similar proportion of T+ and S as [good]
 
-##4.2 Prototypical Hypernym Features
+## 4.2 Prototypical Hypernym Features
 
 * interpretable features: PPMI
 * dataset-specific: psychosomatic −1
@@ -144,16 +144,16 @@ mindig csak igen-nem?
   * and their analogues
     * e.g. such −2
 
-#5 Analysis of Vector Composition
+# 5 Analysis of Vector Composition
 
 * in the setting of a linear SVM
 
-#6 Adding Intra-Pair Similarity
+# 6 Adding Intra-Pair Similarity
 
 * radial basis function (RBF) kernel with diff
 * slightly reduce match error (false positive with \in S pairs)
 
-#7 The Limitations of Contextual Features
+# 7 The Limitations of Contextual Features
 
 * requiring ... features, such as textual patterns that connect x with y
   * bib

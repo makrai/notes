@@ -5,7 +5,7 @@ TACL 2016
 * Ebben a fájlban a http://arxiv.org/abs/1502.03520v3 cikk több verziója is ki
   van jegyzetelve
 
-#A cikk címe
+# A cikk címe
 * v1--3
   * Random Walks on Context Spaces:
     Towards an Explanation of the Mysteries of Semantic Word Embeddings
@@ -17,7 +17,7 @@ TACL 2016
   * RAND-WALK: A Latent Variable Model Approach to Word Embeddings
 * van v7 is
 
-#Abstract
+# Abstract
 
 * Semantic word embeddings ... are created by diverse methods such as
   * Latent Semantic Analysis (LSA),
@@ -39,7 +39,7 @@ TACL 2016
   * Experimental support
     * latent word vectors are fairly uniformly dispersed (“isotropic”)
 
-#1 Introduction
+# 1 Introduction
 
 * co-occurrence statistics. Reweighting heuristics ... is dimension reduction
   (Deerwester+ 1990)
@@ -99,7 +99,7 @@ TACL 2016
     * better at capturing semantic relations than syntactic ones
     * (see Section 5)
 
-##1.2 Benefits of generative approach
+## 1.2 Benefits of generative approach
 
 * giving some form of “unification” of existing methods
 * brings more intepretability to word embeddings
@@ -122,7 +122,7 @@ TACL 2016
       mitigates the effect of the above approximation error
       * a theoretical explanation of ...  that dimension reduction improves
 
-#2 Generative model and its properties p3
+# 2 Generative model and its properties p3
 
 * The model treats corpus generation as a dynamic process
   * driven by the random walk of a discourse vector
@@ -162,7 +162,7 @@ TACL 2016
       * empirically observed and studied before (Andreas and Klein, 2014)
       * allows the normalization ... to be ignored, leading to speedups
 
-#3 Training objective and relationship to other models p7
+# 3 Training objective and relationship to other models p7
 
 * Objective for training with PMI
 * Fitting to either of the objectives involve solving a version of Weighted SVD
@@ -171,11 +171,11 @@ TACL 2016
 * Connection to GloVe
 * Connection to word2vec (CBOW)
 
-#4 Explaining "relations = lines" p9
+# 4 Explaining "relations = lines" p9
 
-#5 Experimental verification
+# 5 Experimental verification
 
-#5.1 Model verification
+# 5.1 Model verification
 
 * we tested two counter-intuitive properties:
   * the concentration of the partition function Z c for different c
@@ -191,14 +191,14 @@ TACL 2016
     * This correlation is much weaker for other types of word embeddings
       * [word2vec and GloVe]
 
-#5.2 Performance on analogy tasks
+# 5.2 Performance on analogy tasks
 
 * semantic
   * performance comparable to state of art
 * syntactic tasks,
   * bad
 
-#5.3 Verifying "relations = lines"
+# 5.3 Verifying "relations = lines"
 
 * csak a sajátjával hasonlítja őket
 * Cheating solver for analogy testbeds
@@ -213,8 +213,8 @@ TACL 2016
   * uses these pairs to estimate the relation direction (via rank 1 SVD),
   * substitute this (corrected) estimate for a − b in (5.1)
 
-#6 Conclusions p15
+# 6 Conclusions p15
 
 * an optimization objective with essentially “no knobs to turn”,
 
-#B Maximum likelihood estimator for co-occurrence p30
+# B Maximum likelihood estimator for co-occurrence p30

@@ -3,18 +3,18 @@ Last Words
 Computational Linguistics and Deep Learning
 2015
 
-#1. The Deep Learning Tsunami
+# 1. The Deep Learning Tsunami
 
 * Hinton: Babel fish (not to hu)
 
-#2. The Success of Deep Learning
+# 2. The Success of Deep Learning
 
 * Neon, the new transcription system for Google Voice
   * http://googleblog.blogspot.com/2015/07/neon-prescription-or-rather-new.html
 * “Using a (deep breath) long short-term memory _deep recurrent_ neural network
   (whew!), we cut our transcription errors by 49%.”
 
-#3. Why Computational Linguists Need Not Worry
+# 3. Why Computational Linguists Need Not Worry
 
 * The really dramatic gains may only have been possible on true signal
   processing tasks (image, speech)
@@ -37,7 +37,7 @@ Computational Linguistics and Deep Learning
 * Abstract Meaning Representation
   * http://amr.isi.edu
 
-#4. Deep Learning of Language
+# 4. Deep Learning of Language
 
 * The gains so far have not so much been from true Deep Learning (use of a
   hierarchy of more abstract representations to promote generalization) as from
@@ -59,7 +59,7 @@ Computational Linguistics and Deep Learning
         * Addressing the rare word problem in neural machine translation
 * compositionality in models,
 
-#5. Scientific Questions That Connect Computational Linguistics and Deep
+# 5. Scientific Questions That Connect Computational Linguistics and Deep
 * Learning
 
 * I would like to suggest that we might return ... to some of the interesting

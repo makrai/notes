@@ -2,7 +2,7 @@ Measuring and Comparing the Productivity of Mandarin Chinese Suffixes
 Eiji Nishimoto
 Computational Linguistics and Chinese Language Processing 2003
 
-#Abstract
+# Abstract
 
 * The present study attempts to measure and compare the morphological
   productivity of five Mandarin Chinese suffixes:

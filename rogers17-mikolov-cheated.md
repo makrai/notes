@@ -2,13 +2,13 @@ Anna Rogers, Aleksandr Drozd, and Bofang Li
 The (Too Many) Problems of Analogical Reasoning with Word Vectors
 `*`SEM 2017
 
-#Absztrakt helyett
+# Absztrakt helyett
 
 * philosophy of analogy
 * accuracy on the analogy task depends on the target [being] close to the src
   * not only for 3CosAdd, but also 3CosMul and LRCos
 
-#1 Intro
+# 1 Intro
 
 * Given the vital role that analogical reasoning plays in human cognition
   * automated analogical reasoning could become a game-changer in many fields,
@@ -31,7 +31,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * [we] show the accuracy of 3CosAdd depends on proximity of the target to its
   source (i.e. queen should be quite similar to king)
 
-#Background: “Relational Similarity” vs “Word Analogies”
+# Background: “Relational Similarity” vs “Word Analogies”
 
 * The most fundamental term [is not analogy, but] relational similarity, i.e
   ... that pairs of words may hold similar relations
@@ -55,9 +55,9 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * Drozd+ (2016): some relations missed by 3CosAdd could be recovered with a
   supervised method
 
-#3 What Does 3CosAdd Really Do?
+# 3 What Does 3CosAdd Really Do?
 
-#3.1 Methodology
+# 3.1 Methodology
 
 * We present a series of experiments performed with BATS dataset
 * [more relations and more difficult than the] Google test
@@ -68,11 +68,11 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * 3CosMul, a multiplicative objective proposed by Levy and Goldberg (2014), now
   available in the same script
 
-##3.2 The “Honest” 3CosAdd
+## 3.2 The “Honest” 3CosAdd
 
 * 3CosAdd as initially formulated by Mikolov+ (2013c) excludes `a`, `a_0` and b
 
-##3.3 Distance to the Target Vector
+## 3.3 Distance to the Target Vector
 
 * Levy and Goldberg (2014) suggested that 3CosAdd method is
   mathematically equivalent to seeking a word `b_0` which is similar to `b`
@@ -89,7 +89,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   * In BATS data, this factor affects several semantic categories, including
     country:language, thing:color, animal:young, and animal:shelter
 
-##3.5 Density of Vector Neighborhoods
+## 3.5 Density of Vector Neighborhoods
 
 * we can hypothesize that the more crowded a particular region is, the more
   difficult it should be to hit a particular target
@@ -98,7 +98,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * results seem counter-intuitive: denser neighborhoods actually yield higher
   * [but] there are virtually no cases of very tight neighborhoods)
 
-#4 Comparison with Other Methods
+# 4 Comparison with Other Methods
 
 * 3CosAdd, has much higher chances of success where target vectors are close
 * We also consider LRCos, a method based on supervised learning from a set of
@@ -116,20 +116,20 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * Our BATS experiment confirms the overall superiority of 3CosMul to 3CosAdd,
   although the difference is less dramatic
 
-#5 Discussion: What Should We Expect from the Word Analogy Task?
+# 5 Discussion: What Should We Expect from the Word Analogy Task?
 
-##5.1 How Regular Are “Linguistic Regularities”?
+## 5.1 How Regular Are “Linguistic Regularities”?
 
 * frustratingly small margin of error
 
-##5.2 Can We Just Blame the Corpus?
+## 5.2 Can We Just Blame the Corpus?
 
 * polysemy
 * In addition to irrelevant information, there is also missing information
 * data that the current VSMs do not have, including multimodal data and
   frequencies of events too commonplace to be mentioned in writing (Erk, 2016)
 
-##5.3 Semantics is Messy
+## 5.3 Semantics is Messy
 
 * asymmetry of similarity judgments (Tversky, 1977)
 * analogy has long been rejected in generative linguistics as a mechanism for
@@ -138,6 +138,6 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * criticisms [of analogies:] ambiguity, guesswork and puzzle-like nature
   (Pringle, 2003)
 
-#6 Implications for Evaluation of VSMs
+# 6 Implications for Evaluation of VSMs
 
-#7 Conclusion
+# 7 Conclusion

@@ -2,7 +2,7 @@ De-Conflated Semantic Representations
 Mohammad Taher Pilehvar and Nigel Collier
 EMNLP 2016
 
-#Abstract
+# Abstract
 
 * sense representations are either
   * not linked to any sense inventory or are
@@ -10,7 +10,7 @@ EMNLP 2016
 * evaluations on six datasets across two semantic similarity tasks and report
   state-of-the-art results on most of them
 
-#1 Introduction
+# 1 Introduction
 
 * Knowledge-based techniques ... either
   * use sense definitions and employ Word Sense Disambiguation (WSD) to gather
@@ -31,14 +31,14 @@ EMNLP 2016
   * cross-level semantic similarity. Experimental results show that the
   * six datasets, outperforming the recent state of the art on most of them
 
-#2 De-Conflated Representations
+# 2 De-Conflated Representations
 
 Preliminaries. Our proposed approach
 * takes a set of pre-trained word representations and 
   uses the graph structure of a semantic lexical resource in order to
   de-conflate the representations into those of word senses
 
-##2.1 Overview of the approach
+## 2.1 Overview of the approach
 
 * The gist of our approach lies in its computation of
   a list of sense biasing words for a given word sense. To this end, we first
@@ -47,7 +47,7 @@ Preliminaries. Our proposed approach
   2. placing the senses in the proximity of their corresponding sense biasing
      words (§2.3)
 
-##2.2 Determining sense biasing words
+## 2.2 Determining sense biasing words
 
 * we use the Personalized PageRank (Haveliwala, 2002, PPR) algorithm which
   * has been extensively used by several NLP applications (
@@ -62,7 +62,7 @@ Preliminaries. Our proposed approach
     [i.e.] semantic relatedness between y i and y t . We use this notion and
   * [to] retrieve a list of most semantically-related words to y t _..._
 
-##2.3 Learning sense representations
+## 2.3 Learning sense representations
 
 * similar to the frameworks of
   * Das and Smith (acl 2011)
@@ -78,7 +78,7 @@ Preliminaries. Our proposed approach
   our experiments were trained (cf. §3.1). However, upon de-conflation, the
   emerging anatomical sense
 
-#3 Experiments
+# 3 Experiments
 
 The YP-130 dataset focuses on verb similarity, whereas 
 SimLex999 contains verbs and adjectives and 
@@ -87,7 +87,7 @@ a verb).
 The results we obtain on these datasets exhibit the reliability of our approach
 in modeling non-nominal word senses.
 
-###3.2.2 Discussion
+### 3.2.2 Discussion
 
 * the SimLex-999 dataset is different from our other word similarity benchmarks
   in that it assigns relatively low scores to _antonymous_ pairs
@@ -96,7 +96,7 @@ in modeling non-nominal word senses.
   improvement on this dataset. To this end, we performed an experiment 
   * in which the similarity of [antonyms] was simply divided by five 
 
-##Cross-Level semantic similarity
+## Cross-Level semantic similarity
 
 * SemEval-2014 task on Cross-Level Semantic Similarity (Jurgens+ 2014, CLSS).
   The _word to sense_ similarity subtask of this task, with 500 instances
@@ -109,7 +109,7 @@ in modeling non-nominal word senses.
   (Iacobacci+ 2015, Rothe & Schütze 2015, Pilehvar & Navigli 2015 & Chen+ 2014)
   which are linked to the WordNet sense inventory
 
-#4 Related Work
+# 4 Related Work
 
 * two main branches
 * knowledge from external sense inventories for learning sense[s]

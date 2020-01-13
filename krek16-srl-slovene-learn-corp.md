@@ -2,7 +2,7 @@ Semantic Role Labeling in the Training Corpus for Slovene
 Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
 2016, Conference on Language Technologies & Digital Humanities Ljubljana
 
-#Abstract
+# Abstract
 
 The paper describes the procedure, tagset, criteria and tools for semantic role
 labeling in the training corpus for Slovene. In the first part we present the
@@ -14,7 +14,7 @@ The paper finishes with a short summary of the decisions that were taken in the
 process, and future work in the context of the bilateral Slovene-Croatian
 project Semantic Role Labeling in Slovene and Croatian.
 
-#1 Introduction
+# 1 Introduction
 
 Labeling of semantic roles (Eng. Semantic Role Labeling - SRL) is a procedure
 that is the linguistic point of view, dedicated (automatic) identifying
@@ -43,7 +43,7 @@ In this paper we present the starting point for determining the semantic
 categories and tags for the English, the tagging process and tools for semantic
 markup training corpus for Slovene.
 
-#2 Theoretical and methodological background
+# 2 Theoretical and methodological background
 
 In selecting the method of semantic tagging and semantic categories for
 determining Slovene We first analyzed the individual approaches that have been
@@ -117,7 +117,7 @@ therefore maintain obligatornost only delovalnikih, in the circumstances, these
 deferrals are not included, but it's one of the challenges that we intend to
 engage in further stages of the labeling.
 
-#3 Semantic tagging of Slovene: set of labels and the criteria for their determination
+# 3 Semantic tagging of Slovene: set of labels and the criteria for their determination
 
 The basis for a set of participatory roles and their labels, it has, as has
 been said, represented tags Prague Dependency Treebank. From the perspective
@@ -180,7 +180,7 @@ relationships, which require a more precise definition of semantic tags, both
 in terms of conceptual and formal (syntactic and morphological) criteria, as
 well as potential additional / new participatory role.
 
-##3.1 Competitive participatory role / semantic relations
+## 3.1 Competitive participatory role / semantic relations
 
 Individual relationships between the participants from the perspective of
 determining the appropriate participatory roles often compete. Competitive
@@ -221,7 +221,7 @@ the verb valency pattern provides a potential okoliščinsko udeležensko city,
 which in some cases actually expressed, for example. in elementary school in
 Bistrica (ACT) are prepared.
 
-##3.2 »Manjkajoče« udeleženske vloge/pomenska razmerja
+## 3.2 »Manjkajoče« udeleženske vloge/pomenska razmerja
 
 In the case of verbal meaning, which provide comprehensive valency pattern,
 such as verbs of communication, sensing, thinking, etc., For example. `Who-ACT
@@ -243,7 +243,7 @@ information the electrode cable lead to the device; the fact that he led the
 girl, offering the possibility of more specialized participatory roles, for
 example. "Trail" (PATH), which also has a system FrameNet.
 
-#Tools and format of labeling the training corpus for Slovene
+# Tools and format of labeling the training corpus for Slovene
 
 Semantic tagging corpus we used the tool SentenceMarkup, which was primarily
 developed for the syntactic annotation of Slovene (Dobrovoljc et al., 2012).
@@ -260,7 +260,7 @@ in tabular and XML format, in addition to data on the type of connection on
 each level tagging also contains information on lemma, MSD tag and allows
 display of the entire sentence.
 
-#5 Conclusion and future work
+# 5 Conclusion and future work
 
 In the current phase of semantic tagging of the training corpus, our aim was to
 establish a sufficiently robust and at the same time optimal set of

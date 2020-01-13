@@ -127,14 +127,14 @@ ICLR 2017
 
 ## 4.1 Textual similarity tasks
 
-###Datasets
+### Datasets
 
 * 22 textual similarity datasets ... from SemEval
   semantic textual similarity (STS) tasks (12-15) (Agirre+ 12; 13; 14; 15),
   SemEval 2015 Twitter task (Xu+ 2015), and the
   SemEval 2014 Semantic Relatedness task (Marelli+ 2014)
 
-###Experimental settings
+### Experimental settings
 
 1. Unsupervised
   * skip-thought vectors (Kiros+ 2015),
@@ -158,7 +158,7 @@ ICLR 2017
 
 * The weighting parameter a is fixed to 10^-3
 
-###Effect of weighting parameter on performance
+### Effect of weighting parameter on performance
 
 * We study the sensitivity of our method to the 
   * weighting parameter `a`, the
@@ -189,7 +189,7 @@ ICLR 2017
   * PP, DAN, RNN, and LSTM, which are the methods used in Section 4.1. We also
   * the skip-thought vectors (with improved training in (Lei Ba+ 2016))
 
-###Results
+### Results
 
 * The advantage is not as significant as in the textual similarity tasks
 * our method doesn’t outperform RNN’s and LSTM’s for sentiment tasks because
@@ -209,14 +209,14 @@ ICLR 2017
 
 # Appendix A details of experimental setting 13
 
-##Unsupervised task: textual similarity
+## Unsupervised task: textual similarity
 
-###The competitors
+### The competitors
 
-###Detailed experimental results
+### Detailed experimental results
 
-###Effects of smooth inverse frequency and common component removal ... separat
+### Effects of smooth inverse frequency and common component removal ... separat
 
-##Supervised tasks
+## Supervised tasks
 
-##Additional supervised tasks
+## Additional supervised tasks

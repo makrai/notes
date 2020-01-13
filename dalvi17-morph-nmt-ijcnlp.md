@@ -2,7 +2,7 @@ Fahim Dalvi, Nadir Durrani, Hassan Sajjad, Yonatan Belinkov, Stephan Vogel
 Understanding and Improving Morphological Learning in the NMT Decoder
 2017 IJCNLP
 
-#Abstract
+# Abstract
 
 * little is known about
   * linguistic patterns of morphology, syntax and semantics learned
@@ -18,7 +18,7 @@ Understanding and Improving Morphological Learning in the NMT Decoder
   * helps the decoder learn target language morphology and
   * improves the translation quality by 0.2–0.6 BLEU points
 
-#1 Intro
+# 1 Intro
 
 * [NMT] improvements are attributed to
   * more fluent output (Toral and Sánchez-Cartagena, 2017) and
@@ -69,9 +69,9 @@ Understanding and Improving Morphological Learning in the NMT Decoder
   morphological tagging accuracy of the decoder by 3% and also improves the
   translation quality by up to 0.6 BLEU points
 
-#2 Experimental setup
+# 2 Experimental setup
 
-##Morphological Annotations
+## Morphological Annotations
 
 * We used the following tools recommended on the Moses website 1 to annotate
   * LoPar (Schmid, 2000) for German, 
@@ -79,12 +79,12 @@ Understanding and Improving Morphological Learning in the NMT Decoder
   * MXPOST (Ratnaparkhi, 1998) for English.  The 
   * number of tags produced by these taggers is 214 for German and 368 for Cz
 
-#3 Analysis of the decoder
+# 3 Analysis of the decoder
 
-#4 The three proposed methods to integrate morphology into the decoder
+# 4 The three proposed methods to integrate morphology into the decoder
 
-#5 Results
+# 5 Results
 
-#6 Related work and
+# 6 Related work and
 
-#7 Concludes the paper
+# 7 Concludes the paper

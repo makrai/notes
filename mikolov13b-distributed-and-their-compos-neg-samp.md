@@ -3,7 +3,7 @@ Google Inc.
 NIPS 2013
 Distributed Representations of Words and Phrases and their Compositionality
 
-#Abstract
+# Abstract
 
 * The recently introduced continuous Skip-gram model
 * In this paper we present several extensions
@@ -14,7 +14,7 @@ Distributed Representations of Words and Phrases and their Compositionality
     * finding phrases
     * vector representations for millions of _phrases_
 
-#1 Introduction
+# 1 Introduction
 
 * earl[y] use of word representations dates back to Rumelhart+ (1986) 
 * applied to 
@@ -34,9 +34,9 @@ Distributed Representations of Words and Phrases and their Compositionality
   * vec(“Russia”) + vec(“river”) is close to vec(“Volga River”), and
   * vec(“Germany”) + vec(“capital”) is close to vec(“Berlin”).
 
-#2 The Skip-gram Model
+# 2 The Skip-gram Model
 
-##2.1 Hierarchical Softmax
+## 2.1 Hierarchical Softmax
 
 * a binary tree representation of the output layer with the 
   W words as its leaves and, 
@@ -47,7 +47,7 @@ Distributed Representations of Words and Phrases and their Compositionality
   inner node n of the binary tree
 * we use a binary Huffman tree
 
-##2.2 Negative Sampling
+## 2.2 Negative Sampling
 
 * Noise Contrastive Estimation (NCE), which was 
   * introduced by Gutmann and Hyvarinen [4] and 
@@ -57,24 +57,24 @@ Distributed Representations of Words and Phrases and their Compositionality
 * noise distribution
   * unigram distribution U(w) raised to the 3/4rd power
 
-##2.3 Subsampling of Frequent Words
+## 2.3 Subsampling of Frequent Words
 
 * the most frequent words ... usually provide less information
 * each word w_i in the training set is discarded with probability ...
 
-#3 Empirical Results
+# 3 Empirical Results
 
 * az utolsó bekezdésben a linearitásról
 
-#4 Learning Phrases
+# 4 Learning Phrases
 
 4.1 Phrase Skip-Gram Results
 
-#5 Additive Compositionality 
+# 5 Additive Compositionality 
 
-#6 Comparison to Published Word Representations
+# 6 Comparison to Published Word Representations
 
-#7 Conclusion
+# 7 Conclusion
 
 * The choice of ... the hyper-parameter selection is a task specific decision
 * most crucial decisions that affect the performance are the choice of 

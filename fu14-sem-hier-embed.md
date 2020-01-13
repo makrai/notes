@@ -2,7 +2,7 @@ Learning Semantic Hierarchies via Word Embeddings
 Ruiji Fu, Jiang Guo, Bing Qin, Wanxiang Che, Haifeng Wang, Ting Liu
 acl 2014
 
-#Abstract
+# Abstract
 
 * We identify whether a candidate word pair has hypernym–hyponym relation by
 using the word-embedding-based semantic projections

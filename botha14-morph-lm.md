@@ -2,7 +2,7 @@ Compositional Morphology for Word Representations and Language Modelling
 Jan A. Botha and Phil Blunsom
 2014
 
-#Abstract
+# Abstract
 
 * evaluated in the context of log-bilinear language models, rendered suitably
 * efficient for implementation inside a machine translation decoder by
@@ -15,12 +15,12 @@ Jan A. Botha and Phil Blunsom
   lacked the probabilistic basis necessary for use with a machine translation
   decoder
 
-#1 Intro
+# 1 Intro
 
 * trans into 6 languages, including the morphologically complex Czech, German
   and Russian
 
-#2 Additive
+# 2 Additive
 
 * languages types
   * more fusional languages (e.g. Czech, Russian) to 
@@ -29,11 +29,11 @@ Jan A. Botha and Phil Blunsom
   we do not impose a single tree structure over a word, which would ignore the
   ambiguity inherent in words like `un[[lock]able]` vs. `[un[lock]]able`. In
 
-#4 Experiments
+# 4 Experiments
 
-##4.1 Data & Methods
+## 4.1 Data & Methods
 
-###Word Factorisation μ. 
+### Word Factorisation μ. 
 
 * We obtain labelled morphological segmentations from ... Morfessor Cat-MAP
   (Creutz & Lagus, 2007). The mapping μ of a word is taken as its surface form
@@ -43,7 +43,7 @@ Jan A. Botha and Phil Blunsom
   segmentations in a more sophisticated way, we keep the overall method more
   language independent.
 
-##4.2 Intrinsic Language Model Evaluation
+## 4.2 Intrinsic Language Model Evaluation
 
 * Analysis. Model perplexity on a whole dataset is a convenient summary of
   its intrinsic performance, but such a global view does not give much insight
@@ -53,7 +53,7 @@ Jan A. Botha and Phil Blunsom
   * nouns and adjectives (Figure 4), suggesting our segmentation-based
     representations help abstract over German’s productive compounding
 
-#5 Related work
+# 5 Related work
 
 * phrase similarity ratings based on bilingual word embeddings
   as a translation model feature (Zou+ 2013)

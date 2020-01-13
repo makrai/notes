@@ -2,11 +2,11 @@ Rémi Lebret, Ronan Collobert
 Word Emdeddings through Hellinger PCA
 EACL 2014
 
-#Abstract
+# Abstract
 
 We compare [to pre-Mikolov] on named entity recognition and movie review tasks
 
-#1 Introduction
+# 1 Introduction
 
 * distributed approaches based on neural network language models (NNLM)
   * Collobert and Weston, 2008
@@ -18,7 +18,7 @@ We compare [to pre-Mikolov] on named entity recognition and movie review tasks
   improve performance (Labutov and Lipson, 2013). We show in this paper that
   such embedding specialization can be easily done via neural network
 
-#2 Related Work
+# 2 Related Work
 
 * Connectionist approaches[,] distributed representations which 
   encode the structural relationships between words

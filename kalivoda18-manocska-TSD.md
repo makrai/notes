@@ -2,7 +2,7 @@ Manócska : A Unified Verb Frame Database for Hungarian
 Ágnes Kalivoda, Noémi Vadász, and Balázs Indig
 2018 tsd
 
-#4 The structure
+# 4 The structure
 
 * The XML-format (presented on Fig. 1) contains all the six resources,
   * including every fine-grained feature available in the MetaMorpho database
@@ -19,7 +19,7 @@ Manócska : A Unified Verb Frame Database for Hungarian
             * each feature as a key–value pair chosen from a predefined domain,
         * frame frequencies coming from the different resources are attributes
 
-#5 Theoretical Implications
+# 5 Theoretical Implications
 
 * the verb itself can be substituted with several semantically related words,
   but interestingly, its frames can not vary so freely

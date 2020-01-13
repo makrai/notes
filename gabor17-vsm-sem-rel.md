@@ -2,7 +2,7 @@ Exploring Vector Spaces for Semantic Relations
 Kata Gábor, Haïfa Zargayouna, Isabelle Tellier, D Buscaldi, Thierry Charnois
 EMNLP 2017
 
-#Abstract
+# Abstract
 
 we explore the potential of 
   * pre-trained word embeddings to identify generic types of semantic relations

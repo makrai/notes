@@ -3,7 +3,7 @@ Bilingual Word Embeddings from Non-Parallel Document-Aligned Data
   Applied to Bilingual Lexicon Induction
 2015
 
-#Abstract
+# Abstract
 
 * We show that our BWE-based BLI models significantly outperform the
   MuPTM-based and context-counting models in this setting, and obtain the best
@@ -12,7 +12,7 @@ Bilingual Word Embeddings from Non-Parallel Document-Aligned Data
   on recently proposed BWEs that require _parallel_ data for bilingual
   training
 
-#1 Introduction
+# 1 Introduction
 
 * “more traditional” distributional models (Turney and Pantel, 2010),
 * the skip-gram model with negative sampling (SGNS) (Mikolov+ 2013c)
@@ -36,9 +36,9 @@ Bilingual Word Embeddings from Non-Parallel Document-Aligned Data
     * outperforms  other BLI models ... recently proposed
       (Gouws+ 2014; Chandar+ 2014)
 
-#2 Model Architecture
+# 2 Model Architecture
 
-#3 Experimental Setup
+# 3 Experimental Setup
 
 * Training Data
 * BWESG Training Setup
@@ -61,6 +61,6 @@ Bilingual Word Embeddings from Non-Parallel Document-Aligned Data
 * Test Data
 * Evaluation Metrics
 
-#4 Results and Discussion
+# 4 Results and Discussion
 
-#5 Conclusions and Future Work
+# 5 Conclusions and Future Work

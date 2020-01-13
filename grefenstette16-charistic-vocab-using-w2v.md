@@ -3,7 +3,7 @@ Determining the Characteristic Vocabulary for a Specialized Dictionary
   using Word2vec and a Directed Crawler
 2016 LREC
 
-#Abstract
+# Abstract
 
 * Specialized dictionaries are used to understand concepts in specific domains,
   * concepts 
@@ -18,9 +18,9 @@ Determining the Characteristic Vocabulary for a Specialized Dictionary
   package, that can be used together, circumventing the need of a background
   corpus. Both tools are available on the web.
 
-##4.1 Word2vec Trick
+## 4.1 Word2vec Trick
 
-##4.2 Examples
+## 4.2 Examples
 
 * In step 4, this combined text is input into word2vec using the
 default parameters 10 from the demo-word.sh script

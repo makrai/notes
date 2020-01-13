@@ -2,7 +2,7 @@ R. Harald Baayen and Fermín Moscoso del Prado Martín
 Semantic Density and past-Tense Formation in Three Germanic Languages
 Language 2005
 
-#Abstract
+# Abstract
 
 * We report a series of lexical statistics showing that irregular verbs
   * cluster in denser regions in semantic space. Compared to regular verbs
@@ -15,7 +15,7 @@ Language 2005
   * challenge the hypothesis of the ... formal encapsulation of rules of inflec
   * sensitivity to probability is ... intrinsic to human language
 
-#Introduction
+# Introduction
 
 * irregular verbs of Germanic languages such as English, German, and Dutch
   occupy a central position in the study of morphological processing,
@@ -87,7 +87,7 @@ Language 2005
       * s[ubtle] confounds of regularity and semantic density, and we
     * discuss the consequences of [our] findings for linguistic theory
 
-#2 lexical statistical surveys that docum[ent] a number of
+# 2 lexical statistical surveys that docum[ent] a number of
 
 * [organization of the section]
   * synonym sets and regularity. We th

@@ -2,7 +2,7 @@ Sentiment Embeddings with Applications to Sentiment Analysis
 Duyu Tang, Furu Wei, Bing Qin, Nan Yang, Ting Liu, Ming Zhou
 IEEE 2016
 
-#Abstract
+# Abstract
 
 * words with similar contexts but opposite sentiment polarity, such as good/bad
 * We [encoding sentiment information of] sentences and words together

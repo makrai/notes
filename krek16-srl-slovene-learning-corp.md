@@ -2,7 +2,7 @@ Označevanje udeleženskih vlog v učnem korpusu za slovenščino
 Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
 2016 Conference on Language Technologies & Digital Humanities Ljubljana, 
 
-#1 Introduction
+# 1 Introduction
 
 * srl (Shen and Lapata, 2007; Christensen et al., 2011)
 * lack of consensus on the various _categories_ and the criteria for determining
@@ -21,7 +21,7 @@ Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
   * to be as compatible with the categories and criteria applicable to other
     languages (cf.. Petukhov and Bunt, 2008: 39)
 
-#2 Theoretical and methodological background
+# 2 Theoretical and methodological background
 
 * We first analyzed the individual approaches that have been developed and used
   for other languages, 
@@ -41,7 +41,7 @@ Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
     Mikulov et al., 2006)
   * our tag set is a simplification of PDT with ideas from FrameNet
 
-#3 Set of labels and the criteria for their determination
+# 3 Set of labels and the criteria for their determination
 
 * for example. for different time categories (When, parallel, from a when, this
   is a when, how long, since a when, etc. - a total of 9) who have in PDT
@@ -52,7 +52,7 @@ Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
   that define the duration of the condition or action (how long), FREQ but
   frequency (how often, how many times).
 
-#5 Conclusion and future work
+# 5 Conclusion and future work
 
 * In the next phase we intend in the context of a bilateral project between
   Slovenia and Croatia to establish a system for SRL that will be assigned to

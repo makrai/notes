@@ -2,7 +2,7 @@ Gongbo Tang, Rico Sennrich, Joakim Nivre
 Encoders Help You Disambiguate Word Senses in Neural Machine Translation
 EMNLP 2019
 
-#Abstract
+# Abstract
 
 * NMT has achieved new SOTA performance in translating ambiguous words.
   However, it is still unclear which component dominates ...  disambiguation.
@@ -19,7 +19,7 @@ EMNLP 2019
     self-attention can detect ambiguous nouns and 
     distribute more attention to the context. 
 
-#1 Introduction
+# 1 Introduction
 
 Neural machine translation (NMT) models (Kalchbrenner and Blunsom, 2013;
 Sutskever+ 2014; Cho+ 2014; Bahdanau+ 2015; Luong+ 2015) have access to
@@ -59,8 +59,8 @@ phrase-based methods, and Rios+ (2018) have confirmed this empirically.
   * Self-attention can recognize the ambiguous nouns and distribute more
     attention to the context words compared to dealing with nouns in general.
 
-#2 Methodology 2
+# 2 Methodology 2
 
-#3 Experiments 3
+# 3 Experiments 3
 
-#4 Analysis 4
+# 4 Analysis 4

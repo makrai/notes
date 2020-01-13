@@ -1,12 +1,12 @@
-#TOREAD
+# TOREAD
 
-##Berend
+## Berend
 
 Sluice networks: Learning what to share between loosely related tasks
 Sebastian Ruder, Joachim Bingel, Isabelle Augenstein, Anders Søgaard
 https://arxiv.org/abs/1705.08142
 
-##Orosz Gyuri
+## Orosz Gyuri
 
 David Mimno and Laure Thompson
 The strange geometry of skip-gram with negative sampling
@@ -58,7 +58,7 @@ post ] (edited)
 9:00
 (az első listáért a kerditek @gyuri nak járnak)
 
-#Kornai
+# Kornai
 
 The (Too Many) Problems of Analogical Reasoning with Word Vectors
 Anna Rogers Aleksandr Drozd Bofang Li

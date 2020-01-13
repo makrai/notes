@@ -2,7 +2,7 @@ Walaa Medhat, Ahmed Hassan, Hoda Korashy
 Sentiment analysis algorithms and applications: A survey
 2014 Ain Shams Engineering Journal
 
-#1. Introduction
+# 1. Introduction
 
 * Sentiment Analysis (SA) or Opinion Mining (OM) is the computational study of
   people’s opinions, attitudes and emotions toward an entity
@@ -40,7 +40,7 @@ Sentiment analysis algorithms and applications: A survey
 
 # 3 FS techniques
 
-#4. Sentiment classification techniques
+# 4. Sentiment classification techniques
 
 * Machine Learning Approach (ML) ... uses linguistic features.  The
 * Lexicon-based Approach relies on a sentiment lexicon
@@ -51,13 +51,13 @@ Sentiment analysis algorithms and applications: A survey
   * sentiment lexicons playing a key role in the majority of methods
   * Fig. 2 as mentioned before
 
-##4.3. Other techniques
+## 4.3. Other techniques
 
 # 5 related fields to SA
 
 # 6 results and discussions
 
-#7 conclusion and future trend in research
+# 7 conclusion and future trend in research
 
 * Naı̈ve Bayes and Support Vector Machines are the most frequently used ML
   algorithms for solving SC problem. They are considered a reference model

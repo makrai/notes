@@ -2,7 +2,7 @@ Shihao Ji, Hyokun Yun, Pinar Yanardag, Shin Matsushima, S. V. N. Vishwanathan
 WordRank: Learning Word Embeddings via Robust Ranking
 (Submitted on 9 Jun 2015 (v1), last revised 27 Sep 2016 (this version, v4))
 
-#Abstract
+# Abstract
 
 * we argue that word embedding can be naturally viewed as a ranking problem due
 * performance of WordRank is measured in word similarity and word analogy

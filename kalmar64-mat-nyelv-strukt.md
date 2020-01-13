@@ -1,11 +1,11 @@
 Kalmár László: Matematikai és nyelvi struktúrák
 ÁLTALANOS NYELVÉSZETI TANULMÁNYOK 1964 Budapest, , 11-74
 
-#Credit 
+# Credit 
 
 Ezek a jegyzetek részben Sass Bálinttól vannak.
 
-#3. rész: 
+# 3. rész: 
 
 * a matematikai nyelvészet definíciója
 
@@ -14,7 +14,7 @@ Ezek a jegyzetek részben Sass Bálinttól vannak.
 
 * `\cup` = kupa, `\cap` = kapu
 
-#18.
+# 18.
 
 * amikor különbséget tesz kifejezés és formula között ..., akkor ... a szófajok
   kérdését tisztázta a maga formulanyelvei számára. Először 
@@ -27,7 +27,7 @@ Ezek a jegyzetek részben Sass Bálinttól vannak.
   megjelenése újabb nyelvi problémák elé állította a matematikust, s Carnap
   definíciói és megállapításai e problémák megoldására hasznosnak bizonyultak.
 
-#21.
+# 21.
 
 * Örülnék, ha a nyelvész kartársak a következő tanulságokat szűrnék le
 * főként az algebra és a topológia újabb, a halmazelméleti módszerek által

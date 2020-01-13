@@ -2,7 +2,7 @@ Explanation in Computational Stylometry
 Walter Daelemans
 2013 International Conference on Intelligent Text Processing
 
-#Abstract
+# Abstract
 
 * applications in diverse areas
   * literary science, forensics, language psychology, sociolinguistics, even
@@ -11,7 +11,7 @@ Walter Daelemans
 * we [suggest] a reinterpretation of current and historical methods
   in the framework and methodology of machine learning of NLP would
 
-#1 Meta-knowledge Extraction from Text
+# 1 Meta-knowledge Extraction from Text
 
 * factors. Content (topic), text type (genre, register)
   * psychological and
@@ -64,7 +64,7 @@ Walter Daelemans
 *  modern authorship studies have not yet [produced] solid, scientific, and
    steadily progressing studies (Rudman 1997; 2010)
 
-#2 Problems in Computational Stylometry 4
+# 2 Problems in Computational Stylometry 4
 
 * unsolved basic research questions we will not go into in this paper
   * Is style invariant or does it change with age and language experience?
@@ -76,7 +76,7 @@ Walter Daelemans
     * obfuscation reduces authorship identification methods to random behaviour
       (Brennan+ 2012)
 
-##[short texts] and Character n-grams
+## [short texts] and Character n-grams
 
 * Authorship attribution and profiling work reasonably well when
   large amounts of text are available, and
@@ -96,7 +96,7 @@ Walter Daelemans
   * the fundamental problem ...: ‘Given two (possibly short) documents,
     determine if they were written by a single (Koppel 12)
 
-##2.2 Cross-genre stylometry 5
+## 2.2 Cross-genre stylometry 5
 
 * how style, content, and genre interact (Koppel+ 2012)
 * “unmasking” technique (Koppel +07; Stein+ 11)
@@ -111,7 +111,7 @@ Walter Daelemans
     not for shorter texts below 10,000 words in size [25]. We tested whether
   * didn’t work very well for the cross-genre case
 
-##2.3 Explanation
+## 2.3 Explanation
 
 * In [early profiling work on] gender assignment (Koppel,+ 03)] They provided a
   plausible explanation for their success in distinguishing male from female
@@ -120,7 +120,7 @@ Walter Daelemans
     * more frequent use of nouns, determiners, prepositions etc.  Figure 1
     * similar frequent features ... in Dutch
 
-#3 Detecting Harmful Content in Social Media
+# 3 Detecting Harmful Content in Social Media
 
 * identify possibly threatening situations in social networks sites (SNS) 
   by ... text and image analysis

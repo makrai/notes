@@ -6,7 +6,7 @@ Az új címen csak egy változat van
 
 https://github.com/enalisnick/infiniteWordEmbeddings
 
-#Abstract
+# Abstract
 
 * Our [models]
   * Stochastic Dimensionality Skip-Gram (SD-SG) and
@@ -19,7 +19,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   providing a distribution over embedding dimensionalities, which offers a
   window into how semantics distribute across dimensions
 
-#1 Introduction
+# 1 Introduction
 
 * One flaw [of embeddings] is that the vectors, since their dimensionality is
   fixed across the vocabulary, do not accurately reflect each word’s semantic
@@ -36,7 +36,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   * captures specificity, polysemy, and homonymy
     without explicit definition of such concepts within the model
 
-#2 Fixed Dimension Word Embeddings
+# 2 Fixed Dimension Word Embeddings
 
 * negative sampling
   * Mikolov+ (2013), which
@@ -45,14 +45,14 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   * Huang+ (2013) have
     * used the negative samples directly in the normalizing sum, as we do
 
-#3 Infinite skip-gram p13
+# 3 Infinite skip-gram p13
 
 * params
   * `a`
     * necessary for defining a convergent geometric series and
     * controls the model’s growing behavior
 
-##3.1 A Finite partition function
+## 3.1 A Finite partition function
 
 * two key properties
   * first proposed by Côté & Larochelle (2015)
@@ -63,7 +63,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
         elements
   * Per-dimension constant penalty
 
-##3.2 Learning
+## 3.2 Learning
 
 * − log p(c_k |w_i) /le E_{z|w} − log p(c_k |w_i , z)
 * z ˆ ∼ p(z|w) for learning
@@ -72,7 +72,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
 * p(c k |w i , z ˆ m) can be computed with negative sampling
   * marginalize only over the context words in the current window
 
-##3.3 Prediction, similarities, and disambiguation
+## 3.3 Prediction, similarities, and disambiguation
 
 * predicting context words,
   * where l is the max dimension expanded to during learning
@@ -97,7 +97,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
         as net’s nearest neighbor. Yet, when technology-related words are
         summed over, www is the nearest neighbor
 
-#4 Related work
+# 4 Related work
 
 * parameter-expanded embeddings without explicit linguistic motivations
   * Vilnis & McCallum (2014)
@@ -135,11 +135,11 @@ https://github.com/enalisnick/infiniteWordEmbeddings
     fixed dimensionality, enabling a costly replication of the full vocabulary
     embedding matrix
 
-#5 Evaluation
+# 5 Evaluation
 
 [old version of the paper]
 
-##5.1 Qualitative results
+## 5.1 Qualitative results
 
 * one billion word subset of Wikipedia (6/29/08 snapshot)
 * Three SG models with dimensionalities 100, 300, and 500 were trained
@@ -159,7 +159,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   * initialized to two, produced ... lengths ranging from 275 to 536
 * We attempted to use AdaGrad, but ... it made vectors grow to extreme lengths
 
-###5.1.1 Nearest neighbors
+### 5.1.1 Nearest neighbors
 
 * iSG columns: which part of the vocab is used for marginalization
   * to compute the expected inner product
@@ -169,13 +169,13 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   * SG only captures one meaning in its representation. Conversely, iSG was
     able to capture various meanings,
 
-###5.1.2 Modes of meaning
+### 5.1.2 Modes of meaning
 
-##5.2 Experiment: context prediction
+## 5.2 Experiment: context prediction
 
 [new version of the paper]
 
-##Quantitative Evaluation. 
+## Quantitative Evaluation. 
 
 * We test each model’s ability to rank word pairs according to ...  similarity
   * WordSim353 (Finkelstein+ 2001) and MEN (Bruni+ 2014). As is
@@ -183,7 +183,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
   worse than their 200 dimensional counterparts. 
   All scores are ... separated by no more than 0.1.
 
-##Qualitative Evaluation. 
+## Qualitative Evaluation. 
 
 * distributions over vector dimensionalities. Subfigure (b) of Figure 1 shows
   * the distribution is long-tailed, and vague words occupy the tail while

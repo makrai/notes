@@ -2,11 +2,11 @@ Alona Fyshe, Leila Wehbe, Partha Talukdar, Brian Murphy, and Tom Mitchell
 A Compositional and Interpretable Semantic Space
 2015
 
-#Abstract
+# Abstract
 
 phrasal meaning ... in an interpretable way
 
-#1 Introduction
+# 1 Introduction
 
 * Neural network (NN) models are becoming increasingly popular
   * Socher+ 2012;
@@ -15,9 +15,9 @@ phrasal meaning ... in an interpretable way
   * Pennington+ 2014
 * This paper: Compositional Non-negative Sparse Embedding
 
-#2 Method
+# 2 Method
 
-#2.1 Non-negative Sparse Embeddings
+# 2.1 Non-negative Sparse Embeddings
 
 * A ∈ R^{w×l} that is sparse, non-negative, and represents word semantics
 * D ∈ R^{l×c} : the encoding of corpus statistics in the latent space
@@ -28,7 +28,7 @@ phrasal meaning ... in an interpretable way
 * D is found via gradient descent
 * (the final solution may not be globally optimal)
 
-#2.2 Compositional NNSE
+# 2.2 Compositional NNSE
 
 * weighted addition composition function
   * maintains the convexity of the loss function,
@@ -36,11 +36,11 @@ phrasal meaning ... in an interpretable way
     matrix composition function will lead to a non-convex optimization
 * alternating direction method of multipliers (ADMM) (Boyd, 2010)
 
-#3 Data and experiments
+# 3 Data and experiments
 
 * We used the 1000 dependency SVD dimensions X
 
-#3.1 Phrase Vector Estimation
+# 3.1 Phrase Vector Estimation
 
 * two measures of accuracy: rank accuracy ->
   * median or
@@ -68,7 +68,7 @@ phrasal meaning ... in an interpretable way
   * we chose test phrases for which all 4 models are incorrect and
   * produce a different top ranked phrase; Mechanical Turk
 
-#3.2 Interpretability
+# 3.2 Interpretability
 
 * intruder = kakukktojás (lit. betolakodó)
 * we selected
@@ -78,4 +78,4 @@ phrasal meaning ... in an interpretable way
 * intruders detected is higher for CNNSE, but
 * agreement amongst Mturk users is higher for NNSE,
 
-###3.2.2 Coherence of Phrase Representations
+### 3.2.2 Coherence of Phrase Representations

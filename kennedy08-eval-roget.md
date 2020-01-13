@@ -4,7 +4,7 @@ Alistair Kennedy and Stan Szpakowicz
 
 https://sites.google.com/site/openrogets/
 
-#Abstract
+# Abstract
 
 * examine the differences in content between the 1911 and 1987 versions of
   Roget’s, and we test both versions 
@@ -22,7 +22,7 @@ https://sites.google.com/site/openrogets/
 * hope that this work will encourage others to use the 1911 Roget’s Thesaurus
 in NLP tasks.
 
-#Introduction
+# Introduction
 
 * 1911 Thesaurus instead of newer versions ... is in the public domain,
   along with related NLP-oriented software packages.
@@ -40,7 +40,7 @@ in NLP tasks.
   phrase, as well as the phrase itself. This was shown to improve results in a
   few applications, which we will discuss later in the paper.
 
-#2 Content comparison of the 1911 and 1987 Thesauri
+# 2 Content comparison of the 1911 and 1987 Thesauri
 
 * similar in structure, there are a few differences, among them, the number
   of levels and the number of parts-of-speech represented.
@@ -66,9 +66,9 @@ in NLP tasks.
   * The Paragraph and Semicolon Group are not given names, but can often
     be represented by the first word.
 
-#3 Comparison on applications p462
+# 3 Comparison on applications p462
 
-##Word relatedness
+## Word relatedness
 
 * three data sets containing pairs of words with manually assigned similarity
   scores: 
@@ -97,7 +97,7 @@ in NLP tasks.
   * Lesk (Banerjee and Pedersen, 2002)
   * and finally Vector and Vector Pair (Patwardhan, 2003)
 
-##Synonym identification
+## Synonym identification
 
 * problem: we take a term q and we seek the correct synonym s from a set C.
 * three data sets for this application: 
@@ -110,7 +110,7 @@ in NLP tasks.
 * Roget’s Thesaurus 
   * both versions generally have fewer missing terms than WordNet
 
-##Sentence relatedness
+## Sentence relatedness
 
 * data set from (Li et al., 2006).  They 
   * took a subset of the term pairs from (Rubenstein and Goodenough, 1965) and
@@ -126,13 +126,13 @@ in NLP tasks.
   frequently words from the sentence appear in these concepts. The second is
   the depth (or specificity) of the concept itself.
 
-###3.3.1 Weighting based on word frequency
+### 3.3.1 Weighting based on word frequency
 
-###3.3.2 Weighting based on specificity
+### 3.3.2 Weighting based on specificity
 
 * concepts near the leaves of the hierarchy are more specific than those close
   to the root of the hierarchy.  
 
-###3.3.3 Sentence similarity results
+### 3.3.3 Sentence similarity results
 
-#4 Conclusion and future work p467
+# 4 Conclusion and future work p467

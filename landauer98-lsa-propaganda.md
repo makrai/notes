@@ -7,11 +7,11 @@ Psychological Review 1997
 címek hierarchiája:
 középen álló > középen dőlt > balra zárt (dőlt) 
 
-#Abstract
+# Abstract
 
 right number of dimensions (e.g., 300)
 
-#Intro
+# Intro
 
 a very simple mechanism of induction, the choice of the correct dimensionality
 in which to represent similarity between objects and events, can sometimes, in
@@ -20,7 +20,7 @@ sufficient enhancement of knowledge to bridge the gap between the information
 available in local contiguity and what people know after large amounts of
 experience
 
-#Overview
+# Overview
 
 * tested with a standard multiple-choice synonym test,
 * much theory in philosophy, linguistics, artificial intelligence research, and
@@ -32,9 +32,9 @@ experience
   * some auxiliary data and simulation results
   * contextual disambiguation
 
-#The Problem of Induction p2
+# The Problem of Induction p2
 
-#The Latent Semantic Analysis Model p4
+# The Latent Semantic Analysis Model p4
 
 ## An Informal Explanation of the Inductive Value of Dim Optimization
 
@@ -90,7 +90,7 @@ experience
   * complicating the model appropriately might allow it to simulate ... aspects
     of grammar and syntax that involve ordered and hierarchical relations
 
-###Singular Value Decomposition (SVD)
+### Singular Value Decomposition (SVD)
 
 * SVD is the general method for linear decomposition of a matrix into
   independent principal components of which factor analysis is the special case
@@ -114,12 +114,12 @@ experience
     to represent each word and each context. See Figure 2.  
 * Similarity was usually measured by the cosine between vectors
 
-###Brief Note on Neurocognitive and Psychological Plausibility
+### Brief Note on Neurocognitive and Psychological Plausibility
 
 * semantic network-represented theories, such as Kintsch (1988), 
   could easily be recast in vector algebra
 
-#Evaluating the Model p9
+# Evaluating the Model p9
 
 ## LSA's Acquisition of Word Knowledge From Text
 
@@ -127,16 +127,16 @@ experience
 * The Learning Rate of LSA Versus Humans and Its Reliance on Induction p11
 * Conclusions From the Vocabulary Simulations
 
-#Generalizing the Domain of LSA
+# Generalizing the Domain of LSA
 
-##Other Aspects of Lexical Knowledge
-##Real-World Reference
-##Conditioning, Perceptual Learning, and Chunking p18
-##A New Light on Classical Association Theory
-##Analogy to Episodic and Semantic Memories !
-##Analogy to Explicit and Implicit Memories p19 
-##Expertise 
-##Contextual Disambiguation 
+## Other Aspects of Lexical Knowledge
+## Real-World Reference
+## Conditioning, Perceptual Learning, and Chunking p18
+## A New Light on Classical Association Theory
+## Analogy to Episodic and Semantic Memories !
+## Analogy to Explicit and Implicit Memories p19 
+## Expertise 
+## Contextual Disambiguation 
 ### Text Comprehension: An LSA Interpret of Construction-Integration Theory p20
 
-#Summary p24
+# Summary p24

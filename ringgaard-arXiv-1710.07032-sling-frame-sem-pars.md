@@ -2,7 +2,7 @@ Michael Ringgaard, Rahul Gupta, Fernando C. N. Pereira
 SLING: A framework for frame semantic parsing
 arXiv:1710.07032 [cs.CL]
 
-#Abstract
+# Abstract
 
 * transition-based, neural-network parsing with
   * bidirectional LSTM input encoding and a
@@ -13,7 +13,7 @@ arXiv:1710.07032 [cs.CL]
   * efficient and scalable frame store implementation as well as a
   * neural network JIT compiler for fast inference during parsing
 
-#1 Intro
+# 1 Intro
 
 * Transition-based parsing is
   * often associated with dependency parsing, but

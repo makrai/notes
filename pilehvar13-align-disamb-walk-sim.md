@@ -3,12 +3,12 @@ Align, Disambiguate and Walk:
     A Unified Approach for Measuring Semantic Similarity
 acl 2013
 
-#Abstract
+# Abstract
 
 * approach to semantic similarity that operates at multiple levels
   * all the way from comparing word senses to comparing text documents
 
-#1 Introduction
+# 1 Introduction
 
 * The contributions of this paper are threefold.
 * unified representation of ... an arbitrarily-sized piece of text,
@@ -21,7 +21,7 @@ acl 2013
     * Rubenstein and Goodenough, 1965
   * sense-coarsening
 
-#2 A Unified Semantic Representation
+# 2 A Unified Semantic Representation
 
 * 2.1 Semantic Signatures
   * random walks: nem lehetne expliciten?
@@ -30,4 +30,4 @@ acl 2013
     in order to disambiguate each element
 * 2.3 Semantic Signature Similarity
 
-#3 Experiment 1: Textual Similarity 
+# 3 Experiment 1: Textual Similarity 

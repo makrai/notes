@@ -2,7 +2,7 @@ Kazuma Hashimoto and Yoshimasa Tsuruoka
 Learning embeddings for transitive verb disambiguation by implicit tensor factr
 3rd Workshop on Continuous Vector Space Models and their Compositionality 2015
 
-#Abstract
+# Abstract
 
 * directly models the interaction between predicates and their two arguments,
   and learns verb phrase embeddings
@@ -14,7 +14,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
   * three phrase similarity tasks
 * adjuncts provide useful information in learning the meanings of verb phrases
 
-#1 Intro
+# 1 Intro
 
 * representing the meaning of transitive verb phrases
   (Grefenstette and Sadrzadeh, 2011; Grefenstette+ 2013; Kartsaklis+ 2012)
@@ -45,7 +45,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
     have achieved a Spearman’s rank correlation score of 0.614, which is
     significantly higher than the state of the art (0.456)
 
-#2 Method 2
+# 2 Method 2
 
 * adjuncts, e.g. _An importer [makes] payment in his own domestic currency_
   * If we further observe the verb phrase “pay money” with a similar adjunct
@@ -56,12 +56,12 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 * plausibility judgment task
   * i.e. score of observed has to be greater than that of random
 
-##2.1 Transitive Verb Phrases with Adjuncts
+## 2.1 Transitive Verb Phrases with Adjuncts
 
 * To compute argument embeddings composed by subject-verb-object tuples, we
   use the copy-subject function in Kartsaklis+ (2012)
 
-##2.2 Relationship to Previous Work
+## 2.2 Relationship to Previous Work
 
 * Representing transitive verbs with matrices
   * proposed by
@@ -77,9 +77,9 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 * which [pre-trained] word embeddings are suitable for each method or task
   (Milajevs+ 2014)
 
-#3 Experimental Settings
+# 3 Experimental Settings
 
-##3.3 Baseline method
+## 3.3 Baseline method
 
 * PAS-CLBLM in Hashimoto+ (2014)
   * a word predication model using predicate-argument structures
@@ -91,19 +91,19 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
     where w_s, w_v, w_o ∈ R^{d×1} are the weight vectors ... for composition
     and s(j), v(i), o(k) ∈ R^{d×1} are the embeddings
 
-#4 Results and Discussion 6
+# 4 Results and Discussion 6
 
 * in our method, d = 50
 
-##4.1 Evaluation on Transitive Verb Tasks
+## 4.1 Evaluation on Transitive Verb Tasks
 
-###4.1.1 Evaluation Settings
+### 4.1.1 Evaluation Settings
 
 * We evaluated the learned embeddings of transitive verbs using
   * a transitive verb _disambiguation_ task and
   * 3 tasks for ... the semantic _similarity_ between transitive verb phrases
 
-####Transitive verb disambiguation 7
+#### Transitive verb disambiguation 7
 
 * The first dataset GS’11 is provided by Grefenstette and Sadrzadeh (2011)
   * each verb pair takes the same subject and object
@@ -114,7 +114,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
     * “run” and “operate” are similar when subj = “people” and obj = “company”
     * In the same [context, not similar to] “move”
 
-####Transitive verb phrase similarity
+#### Transitive verb phrase similarity
 
 The other datasets are
   * ML’10 provided by Mitchell and Lapata (2010),
@@ -126,22 +126,22 @@ The other datasets are
 * require one to capture the topical similarity
   rather than the disambiguation aspect (Polajnar+ 2014)
 
-###4.1.2 Result Overview 7
+### 4.1.2 Result Overview 7
 
-###4.1.3 Disambiguation Task 8
+### 4.1.3 Disambiguation Task 8
 
 * weighed addition composition functions put more weight on head words
   (Hashimoto+ 2014; Muraoka+ 2014; Socher+ 2013)
 
-###4.1.4 Phrase Similarity Task
+### 4.1.4 Phrase Similarity Task
 
 * Milajevs+ (2014) and Polajnar+ (2014) [achieve much better correlation
   scores using element-wise vector addition] than other tensor-based
   complex composition functions
 
-##4.2 Qualitative Evaluation on Verb Matrices 9
+## 4.2 Qualitative Evaluation on Verb Matrices 9
 
-#5 Related Work 9
+# 5 Related Work 9
 
 * representing transitive verb phrases using word embeddings
   (Grefenstette and Sadrzadeh, 2011; Hashimoto+ 2014; Kartsaklis+ 2012;
@@ -155,9 +155,9 @@ The other datasets are
     * Polajnar+ 2014
     * Van de Cruys+ 2013
 
-#6 Conclusion and Future Work 9
+# 6 Conclusion and Future Work 9
 
-#Bib 10
+# Bib 10
 
 * Dimitri Kartsaklis and Mehrnoosh Sadrzadeh
   Prior Disambiguation of Word Tensors for Constructing Sentence Vectors

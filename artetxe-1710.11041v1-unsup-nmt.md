@@ -2,7 +2,7 @@ Unsupervised Neural Machine Translation
 Mikel Artetxe [mikél ártedzse], Gorka Labaka, Eneko Agirre, Kyunghyun Cho
 arXiv.1710 conference paper at ICLR 2018
 
-#Abstract
+# Abstract
 
 * several proposals [e.g.] triangulation and semi-supervised learning
 * Our model builds upon the
@@ -12,7 +12,7 @@ arXiv.1710 conference paper at ICLR 2018
 * 15.56 and 10.21 BLEU points in WMT 2014 French-to-English and
   German-to-English translation
 
-#1 Intro
+# 1 Intro
 
 * NMT ... is known to fail [behind SMT?] when the training data is not big
   enough (Koehn & Knowles, 2017)
@@ -28,9 +28,9 @@ arXiv.1710 conference paper at ICLR 2018
   * backtranslation (Sennrich+ 2016a) into the training procedure to further
   * Figure 1 summarizes this general schema of the proposed system
 
-#2 Related work
+# 2 Related work
 
-##2.1 unsupervised cross-lingual embeddings
+## 2.1 unsupervised cross-lingual embeddings
 
 * bilingual signal at the document level, typically ... parallel corpora
   (Gouws+ 2015; Luong+ 2015a).  Closer to our scenario,
@@ -44,6 +44,6 @@ arXiv.1710 conference paper at ICLR 2018
   * adversarial training has also been proposed to learn such mappings in an
     unsupervised manner (Miceli Barone, 2016; Zhang+ 2017)
 
-##2.2 statistical decipherment, an SMT-inspired unsupervised NMT
+## 2.2 statistical decipherment, an SMT-inspired unsupervised NMT
 
-##2.3 training NMT systems in different low-resource scenarios
+## 2.3 training NMT systems in different low-resource scenarios

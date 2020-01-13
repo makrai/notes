@@ -2,9 +2,9 @@ Corpus linguistics in morphology: morphological productivity
 R. Harald Baayen
 in Corpus linguistics. An international handbook, 2009
 
-#1. Morphological productivity 899
+# 1. Morphological productivity 899
 
-#2. Theoretical frameworks
+# 2. Theoretical frameworks
 
 * [in] probabilistic paradigmatic morphology
   productivity [not] crucially depends on regularity
@@ -20,11 +20,11 @@ in Corpus linguistics. An international handbook, 2009
     and even time
   * Corpus-derived measures [and] lexical processing in the mental lexicon
 
-#3. Measuring productivity 6
+# 3. Measuring productivity 6
 
 * Several corpus-based measures (Baayen 1992,1993; Baayen/Renouf 1996)
 
-##3.1. Mathematical formalizations of productivity
+## 3.1. Mathematical formalizations of productivity
 
 * realized productivity
   * the size of the morphological category,
@@ -59,13 +59,13 @@ in Corpus linguistics. An international handbook, 2009
   * Gaeta/Ricca (2005) have shown that similar rankings are obtained for counts
     excluding [or] including words that have undergone further word formation
 
-##3.2. Interpretation and validation 10
+## 3.2. Interpretation and validation 10
 
-###3.2.1. Realized productivity 12
+### 3.2.1. Realized productivity 12
 
-###3.2.2. Expanding productivity 14
+### 3.2.2. Expanding productivity 14
 
-###3.2.3. Potential productivity 16
+### 3.2.3. Potential productivity 16
 
 * e.g. suffix for creating agent nouns in Dutch
   * unmarked is ER (GEEF-ER, ’giver’),
@@ -84,11 +84,11 @@ in Corpus linguistics. An international handbook, 2009
     the observed number of types in a corpus of size N
   * Rough estimate of S: the finite Zipf-Mandelbrot model (Evert 2004)
 
-#4. Forces shaping productivity 18
+# 4. Forces shaping productivity 18
 
 * two .. factors: societal factors [and] processing constraints
 
-##4.1. Productivity in the speech community
+## 4.1. Productivity in the speech community
 
 * speakers with different backgrounds and varying communicative goals
 * stylometry (Burrows 1992)
@@ -98,19 +98,19 @@ in Corpus linguistics. An international handbook, 2009
   change over time
   * a domain with rapid innovation or with slow or little innovation
 
-###4.1.1. Register and productivity
+### 4.1.1. Register and productivity
 
-###4.1.2. Productivity through time 23
+### 4.1.2. Productivity through time 23
 
 from the perspective of the [changing needs of society]
 
-##4.2. Productivity and processing constraints in the mental lexicon 26 911
+## 4.2. Productivity and processing constraints in the mental lexicon 26 911
 
 lexical, sublexical, and supralexical probabilities
 
-###4.2.1. Productive and unproductive: an absolute distinction?
+### 4.2.1. Productive and unproductive: an absolute distinction?
 
-###4.2.2. Processing constraints 29
+### 4.2.2. Processing constraints 29
 
 * exemplar-driven analogical generalization ... underlie[s] both unproductive
   and productive rules
@@ -133,13 +133,13 @@ lexical, sublexical, and supralexical probabilities
   * In comprehension, the[se] constituents are easier to parse out, [so]
     affixes that [create such words are] more productive (Hay 2003...)
 
-###4.2.3. Conspiracies 33 914
+### 4.2.3. Conspiracies 33 914
 
 * see the last paragraph of this section (sec.~4)
 * Relative frequency and junctural phonotactics are involved in two
   correlational conspiracies
 
-####conspiracy 1
+#### conspiracy 1
 
 * the strong intercorrelations of all measures of productivity,
   measures for junctural phonotactics,
@@ -171,7 +171,7 @@ lexical, sublexical, and supralexical probabilities
         [to which the morpheme attaches]
       * rather than through the memory traces of the derivatives
 
-####conspiracy 2
+#### conspiracy 2
 
 * processing constraints, grammatical constraints, and memory constraints
 * English suffixes can be arranged in a hierarchy
@@ -219,7 +219,7 @@ lexical, sublexical, and supralexical probabilities
     (as evidenced by relative frequency and selectional restrictions), and
   * factors arising at the interface of memory and onomasiological needs
 
-#5. Concluding remarks 38 917
+# 5. Concluding remarks 38 917
 
 * new insights have been obtained ... by combining
   historical, stylistic, onomasiological, and cognitive factors
@@ -227,4 +227,4 @@ lexical, sublexical, and supralexical probabilities
   * sociolinguistic variables or
     the role of word formation in communal lexicons (Clark 1998)
 
-#6. Literature (a selection)
+# 6. Literature (a selection)

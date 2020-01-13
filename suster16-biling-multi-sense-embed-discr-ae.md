@@ -4,7 +4,7 @@ NAACL, 2016
 
 http://github.com/rug-compling/bimu
 
-#Abstract
+# Abstract
 
 * learning multi-sense word embeddings relying both on monolingual and
   bilingual information. Our model consists of an
@@ -17,7 +17,7 @@ http://github.com/rug-compling/bimu
   counterparts across a range of evaluation tasks
   * (crosslingual information is not available at test time)
 
-#Introduction
+# Introduction
 
 * [embeddings] in concrete NLP applications
   * Turian et al., 2010
@@ -77,36 +77,36 @@ http://github.com/rug-compling/bimu
       * the standard Skip-Gram embeddings turn out to be the most robust
   * implementation of all the models [and the evaluation scripts are] available
 
-#2 Word Embeddings with Discrete Autoencoders
+# 2 Word Embeddings with Discrete Autoencoders
 
-##2.1 Learning and regularization
+## 2.1 Learning and regularization
 
 Optimizing the autoencoding objective is broadly similar to the learning
 algorithm defined for multi-sense embedding induction in some of the previous
 work (Neelakantan et al., 2014; Li and Jurafsky, 2015). Note though that this
 previous work has considered only monolingual context
 
-#5 Evaluation Tasks
+# 5 Evaluation Tasks
 
-##5.1 Word similarity
+## 5.1 Word similarity
 
-##5.2 Supersense similarity
+## 5.2 Supersense similarity
 
-##5.3 POS tagging
+## 5.3 POS tagging
 
 * we use the learned word representations to initialize the embedding layer
   of a neural network tagging model
 * the same convolutional architecture as Li and Jurafsky (2015):
 
-#6 Results
+# 6 Results
 
 We compare three embeddings models, Skip-Gram (S G ), Multi-sense (M U ) and
 Bilingual Multi-sense (B I M U ), using our own implementation for each of
 them
 
-#7 Additional Related Work
+# 7 Additional Related Work
 
-##Multi-sense models
+## Multi-sense models
 
 * lines of research
   * sense induction as a separate, clustering problem that is
@@ -116,7 +116,7 @@ them
     (Neelakantan et al., 2014; Tian et al., 2014; Li and Jurafsky, 2015;
     Bartunov et al., 2015)
 
-##Multilingual models
+## Multilingual models
 
 * [multilingual] multi-sense embedding models
   * Guo et al. (2014) perform a 

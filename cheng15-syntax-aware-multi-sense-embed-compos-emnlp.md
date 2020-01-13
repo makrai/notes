@@ -3,14 +3,14 @@ Syntax-Aware Multi-Sense Word Embeddings
 Jianpeng Cheng & Dimitri Kartsaklis
 emnlp 2015
 
-#Abstract
+# Abstract
 
 * each word is associated with a number of senses,
   the most plausible of which is selected dynamically during the composition
 * We evaluate the produced vectors qualitatively and quantitatively
   * At the sentence level, ...  on the MSRPar task, ... results [around SOTA]
 
-#Introduction
+# Introduction
 
 * deep-learning architectures ... in modelling the meaning of sentences for
   a variety of tasks (Socher+ 2012; Kalchbrenner+ 2014)

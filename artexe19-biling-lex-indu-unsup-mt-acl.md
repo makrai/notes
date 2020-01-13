@@ -1,7 +1,7 @@
 Mikel Artetxe, Gorka Labaka, Eneko Agirre
 Bilingual Lexicon Induction through Unsupervised Machine Translation
 
-#Abstract
+# Abstract
 
 * A recent research line ... by aligning independently trained word embeddings
   + nearest neighbor or related retrieval methods.  

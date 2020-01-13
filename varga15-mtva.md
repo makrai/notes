@@ -5,7 +5,7 @@ Automatic Close Captioning for Live Hungarian Television Broadcast Speech:
 
 decoder!
 
-#1 Introduction
+# 1 Introduction
 
 when more speakers talk simultaneously
  * may occur up to one third of the total time
@@ -21,7 +21,7 @@ Section 4 presents and discusses the results of the experiments.
      * noise, hesitation, simultaneous speech, etc. 
    * Experiments on re-spoken BC data are also discussed.
 
-#2 Related Work
+# 2 Related Work
 
 BN
  * The research group having the most results in Hungarian BN recognition 

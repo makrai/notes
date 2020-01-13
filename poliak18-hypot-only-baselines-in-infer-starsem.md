@@ -2,13 +2,13 @@ Hypothesis Only Baselines in Natural Language Inference
 Adam Poliak, Jason Naradowsky, Aparajita Haldar, R Rudinger, Benjamin Van Durme
 naacl 2018
 
-#Abstract
+# Abstract
 
 * [is] inference [a] relationship between a context and a hypothesis?
 *  experiments on ten distinct NLI datasets
 * hypothesisonly model, ... significantly outperform a majorityclass baseline
 
-#1 Intro
+# 1 Intro
 
 * datasets ... vary in ... size, construction, genre, label classes
   Dagan et al., (2006, 2013), Nangia et al., (2017)
@@ -21,7 +21,7 @@ naacl 2018
     trained an NLI classifier with access limited to hypotheses and discovered
     similar results on three of the ten datasets that we study.
     
-#2 Motivation
+# 2 Motivation
 
 * [further related work]
   * In the Story Cloze task (Mostafazadeh et al., 2016, 2017)
@@ -34,7 +34,7 @@ naacl 2018
       sufficient for achieving high accuracy on this dataset 
       (Schwartz et al., 2017a; Cai et al., 2017; Bugert et al., 2017)
 
-#3 Methodology
+# 3 Methodology
 
 * We modify Conneau et al. (2017)’s InferSent method 
   * A Conneau, D Kiela, H Schwenk, L Barrault, & A Bordes. 
@@ -47,12 +47,12 @@ naacl 2018
     sentence representation by maxpooling over its hidden states
   * representation of a hypothesis is used as input to a MLP classifier
 
-#5 Datasets
+# 5 Datasets
 
 * ten NLI datasets and 
   categorize[d] into three distinct groups based [how] they were constructed.
 
-##Human elicited
+## Human elicited
 
 * humans were given a context and 
   asked to generate a corresponding hypothesis and label 
@@ -68,7 +68,7 @@ naacl 2018
     * Premises ... can originate from fictional stories, personal letters,
       telephone speech, and a 9/11 report.
 
-##Human Judged
+## Human Judged
 
 * hypotheses and premises were automatically paired but labeled by a human,
 * datasets 
@@ -84,7 +84,7 @@ naacl 2018
   * Multiple Premise Entailment (MPE) Unlike
   * Johns Hopkins Ordinal CommonSense Inference (JOCI)
 
-##Automatically Recast
+## Automatically Recast
 
 * automatically generated from existing datasets for other NLP tasks, and
   sentence pairs were constructed and labeled with minimal human intervention,
@@ -112,7 +112,7 @@ naacl 2018
       * we [suppose that] notentailed examples 
         might not keep ... in the spirit of NLI
 
-#5 Results
+# 5 Results
 
 ## Criticism of the Majority Baseline 
 
@@ -127,22 +127,22 @@ naacl 2018
   to labeling each instance with the majority class tag. We find the same
   behavior in one recast dataset (DPR)
 
-#6 Statistical Irregularities
+# 6 Statistical Irregularities
 
 * specific words, grammaticality, and lexical semantics.
 
-##Can Labels be Inferred from Single Words?
+## Can Labels be Inferred from Single Words?
 
 * conditional probability of a label l given the word w 
 * if P(l|w) is highly skewed across labels, there exists the [a] bias.
 * Figure 2 
 * In DPR, ... a weaker effect
 
-##What are “Give-away” Words?
+## What are “Give-away” Words?
 
 * instrument -> entailment, tall -> neural, sleeping, asleep, sleeps -> contrad
 
-###Qualitative Examples 
+### Qualitative Examples 
 
 * In our top10 list, for example, 
   * three words refer to the act of sleeping.
@@ -153,23 +153,23 @@ naacl 2018
 * eliciting norming data are prone to repeated responses across subjects 
   (McRae et al., 2005) (see discussion in §2 of (Zhang et al., 2017))
 
-##6.3 On the Role of Grammaticality
+## 6.3 On the Role of Grammaticality
 
-#7 Related Work
+# 7 Related Work
 
-##Non-semantic information to help NLI
+## Non-semantic information to help NLI
 
 * sentence structure
 
-##World Knowledge and NLI
+## World Knowledge and NLI
 
-##NLI’s resurgence
+## NLI’s resurgence
 
 * NLI, [in the mid-2000’s] commonly referred to as RTE
 * Bowman et al. (2015) sparked a renewed interested in NLI, 
   particularly among deep-learning researchers
 
-#8 Conclusion
+# 8 Conclusion
 
 * future work, we plan to apply a similar hypothesis-only baseline to
   multi-modal tasks that ... classify the relationship between two inputs, 

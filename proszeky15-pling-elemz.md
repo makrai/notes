@@ -2,13 +2,13 @@ Prószéky Gábor, Indig Balázs
 Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
 2015
 
-#1. Bevezetés
+# 1. Bevezetés
 
 * párhuzamosan jelen lévő szálak (morfológiai elemző, különböző grammatikai
   jelenségeket azonosító szálak, korpuszgyakorisági szálak, anaforafeloldó
   szálak, fókuszazonosító szál stb.) 
 
-#2. A performancia-alapú közelítés
+# 2. A performancia-alapú közelítés
 
 * a nyelvi szerkezetek elemzés közbeni kiválasztása közben hozott döntéseink
   felül tudják bírálni a lexikont. A korábban kialakított nyelvi ismereteket
@@ -21,7 +21,7 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   nyelvhasználó fejében mindkét – a korábban megtanult szerkezetekre építő és
   az aktuális helyzet alapján döntéseket hozó – rendszer egyaránt él. 
 
-#3. Pszicholingvisztikai és nyelvészeti motiváció
+# 3. Pszicholingvisztikai és nyelvészeti motiváció
 
 * Több mint negyven éve jelentek meg azok a megértési stratégiák, melyeknek már
   lehetett, vagy inkább lehetett volna számítógépes implementációjuk
@@ -55,13 +55,13 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   * anaforikus elemek kezelése. Az előbbi 
     * névmásfeloldásról, akár szinonim megjelölésről
 
-#4. Az pszicholingvisztikai motivációjú számítógépes elemzés alapjai
+# 4. Az pszicholingvisztikai motivációjú számítógépes elemzés alapjai
 
 * egy analitikus grammatikán alapul: innen a neve is: AnaGramma
 * szálak együttműködésének mellékhatása a morfológiai egyértelműsítés és a
   kombinatorikus robbanások idejében történő megelőzése
 
-#5. Az egyes nyelvi jelenségek kezelése az AnaGramma-rendszerben
+# 5. Az egyes nyelvi jelenségek kezelése az AnaGramma-rendszerben
 
 * nemcsak a bemutatott „tisztán” morfológiai és szintaktikai relációkat leíró
   szálak, hanem akár 
@@ -88,9 +88,9 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   le minden elemzési lépés, a részszerkezetek teljes összekapcsolása nem
   feltétlen egyetlen mondaton belül valósul meg. 
 
-#6. Az AnaGramma-elemzés kialakítását célzó kutatási alprojektek
+# 6. Az AnaGramma-elemzés kialakítását célzó kutatási alprojektek
 
-#7. Összefoglalás
+# 7. Összefoglalás
 
 * hasonló rendszerekkel összehasonlítani. Az egyetlen olyan algoritmikus
   közelítés, ahol az elemzési teljesség igénye, és a párhuzamosíthatóság is

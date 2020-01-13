@@ -2,7 +2,7 @@ Dana Lahat, Tülay Adali, and Christian Jutten
 Multimodal Data Fusion: An Overview of Methods, Challenges, and Prospects
 IEEE 2015
 
-#INTRODUCTION
+# INTRODUCTION
 
 * [history of] data fusion have been laid in the
   * first half of the 20th century [1], [2]. Joint analysis of multiple data
@@ -29,20 +29,20 @@ IEEE 2015
   4. complicating factors [in the] processing of heterogeneous data
   5. model design
 
-#III Multimodality as a form of diversity
+# III Multimodality as a form of diversity
 
 * Uniqueness is necessary in order to achieve interpretability
 * multimodality ... can achieve uniqueness even in cases that are not unique
   otherwise
 
-##III-A mathematical preliminaries that will serve us
+## III-A mathematical preliminaries that will serve us
 
 * latent variable space
 * can be regarded as a form of compression
 
-##III-B data-driven approach
+## III-B data-driven approach
 
-##III-C diversity and data fusion in [mxs or tensors] 8
+## III-C diversity and data fusion in [mxs or tensors] 8
 
 * singular value decomposition (SVD) and eigenvalue decomposition (EVD) are
   * made unique by imposing orthogonality on the underlying matrices and
@@ -74,7 +74,7 @@ IEEE 2015
     independence, linear relationships, or even matrix factorizations
   * Proving uniqueness ... is a matter of ongoing research
   * see the end of Section III-D for examples
-###2 Higher Order Arrays 9
+### 2 Higher Order Arrays 9
 * canonical polyadic decomposition (CPD)
 * CPD is inherently ‘‘essentially unique’’ up to a scaled permutation matrix,
 * as [array dim] N increases, indeed the bound on the number of rank-1 terms
@@ -88,7 +88,7 @@ IEEE 2015
   statistical independence
   * [for] more flexible [factorizations]; see the end of Section III-D
 
-##III-D data fusion 12
+## III-D data fusion 12
 
 ezt a szakaszt csak felületesen olvastam el
 
@@ -114,7 +114,7 @@ ezt a szakaszt csak felületesen olvastam el
   * a generalization of IVA that allows decomposition into
     terms of rank larger than one has been proposed [119]– [121]
 
-##III-E Conclusion: A Link Between Data Sets Is Indeed a New Form of Diversity
+## III-E Conclusion: A Link Between Data Sets Is Indeed a New Form of Diversity
 
 * The strength of IVA and coupled CPD over a set of unlinked factorizations
   lies in their ability to exploit commonalities among data sets
@@ -123,9 +123,9 @@ ezt a szakaszt csak felületesen olvastam el
 * links among the data sets allow desired properties within one data set to
   propagate to the ensemble ... [16]
 
-#4 Challenges at the data level
+# 4 Challenges at the data level
 
-##at the acquisition and observation level
+## at the acquisition and observation level
 
 1. Non-commensurability [különmércéjűség]
 2. Different Resolutions
@@ -157,7 +157,7 @@ ezt a szakaszt csak felületesen olvastam el
       landscape-changing events such as natural disasters
   * Calibration ... as a special case of alignment and registration
 
-##due to various types of uncertainty
+## due to various types of uncertainty
 
 1. Noise:
   * heterogeneous types of errors [8]
@@ -180,12 +180,12 @@ ezt a szakaszt csak felületesen olvastam el
        points [8] (recall Challenge IV-A.2)
     5. link prediction ... in recommender systems and social network analysis
 
-#5 Challenges at the model design level 17
+# 5 Challenges at the model design level 17
 
 * topics [we leave] outside the scope of this overview:
   computation, algorithms and fusion of large-scale data,
 
-##A. Level of Data Fusion
+## A. Level of Data Fusion
 
 * at which level of abstraction, reduction and simplification
   1. data integration
@@ -217,13 +217,13 @@ ezt a szakaszt csak felületesen olvastam el
   * using the data as is, or with minimal reduction
 * Features, at different levels, may accommodate heterogeneities across
   modalities, such as different types of uncertainty and non-commensurability
-###Order selection and dimension reduction
+### Order selection and dimension reduction
 * As in non-multimodal analysis, a dimension reduction step may be required
   to avoid overfitting [or] as a form of compression [9]
 
-##B links between data sets 19
+## B links between data sets 19
 
-###1) ‘‘Soft’’ and ‘‘Hard’’ Links Between Data Sets
+### 1) ‘‘Soft’’ and ‘‘Hard’’ Links Between Data Sets
 
 * whether each data set will have its own set of individual parameters,
   * soft
@@ -232,7 +232,7 @@ ezt a szakaszt csak felületesen olvastam el
     * link ... can be interpreted as similarity, smoothness, or continuity
   * hard
     * data sets explicitly share certain factor matrices or latent variables
-####‘‘Hard’’ links between data sets
+#### ‘‘Hard’’ links between data sets
 * methods that are based on stacking data in a single tensor fall within this
   category
   * [e.g.] PARAFAC (Section III-C-2),
@@ -259,7 +259,7 @@ ezt a szakaszt csak felületesen olvastam el
     linked multiway component analysis (LMWCA) and
     structured data fusion (SDF)
   * In the fusion of astrophysical observations ... (Example II-C.3),
-####‘‘Soft’’ links between data sets
+#### ‘‘Soft’’ links between data sets
 * Prevalent types of ‘‘soft’’ links are
   * statistical dependence, as in IVA (Example III-D.1);
   * covariations, as in CCA  and its extension to more than two matrices,
@@ -272,18 +272,18 @@ ezt a szakaszt csak felületesen olvastam el
 * Generalized linked-mode for multiway data [8] and LMWCA [65]
 * models with ‘‘soft’’ links are often reformulated using shared variables
 
-###2) Shared Versus Unshared Elements
+### 2) Shared Versus Unshared Elements
 
-##C Analytical Framework 21
+## C Analytical Framework 21
 
 * theoretical approaches to the analysis of the ensemble of linked data sets
 * A survey of techniques for multiview machine learning can be found in [206]
   A multimodal deep-learning method for information retrieval from
   images and text is described in [207]
 
-##D Structured Data Fusion: A General Mathematical Framework
+## D Structured Data Fusion: A General Mathematical Framework
 
-##E validation issues 23
+## E validation issues 23
 
 * there is still very little theoretical [and quantitative] validation
 * [for] IVA (Example III-D.1) and coupled tensor decompositions (Example

@@ -3,13 +3,13 @@ Negative-Sampling Word-Embedding Method
 Yoav Goldberg and Omer Levy
 arXiv:1402.3722
 
-#[no title]
+# [no title]
 
 * This note is an attempt to explain equation (4) (negative sampling) in “Dis-
   tributed Representations of Words and Phrases and their Compositionality” by
   Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean [2].
 
-##Remarks
+## Remarks
 
 * Unlike the Skip-gram model described above, the [negative sampling
   formulation] does not model p(c|w) but instead models a quantity related to

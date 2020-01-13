@@ -2,7 +2,7 @@ Jingwei Zhang, Jeremy Salwen, Michael Glass, Alfio Gliozzo
 Word Semantic Representations using Bayesian Probabilistic Tensor Factorization
 EMNLP 2014
 
-#Abstract
+# Abstract
 
 * Many forms of word relatedness have been developed
 * We
@@ -13,7 +13,7 @@ EMNLP 2014
   * generalizing to words outside the vocabulary of any particular perspective
 * evaluated the word embeddings with GRE antonym questions, SOTA
 
-#1 Introduction
+# 1 Introduction
 
 * word relatedness [whose] information does not lie in word distributions
   * e.g. antonyms [vs] synonyms
@@ -35,9 +35,9 @@ EMNLP 2014
     recreated synonym / antonym word relatedness. The result achieves
     state-of-the-art performance
 
-#2 Related work
+# 2 Related work
 
-##2.1 word vector representations
+## 2.1 word vector representations
 
 * Yih+ (2012) apply polarity inducing latent semantic analysis (PILSA)
   * treat each entry of a thesaurus as a document
@@ -54,7 +54,7 @@ EMNLP 2014
   * our method of BPTF is well suited to symmetric relations with many unknown
     relatedness entries
 
-##2.2 BPTF Model
+## 2.2 BPTF Model
 
 * Bayesian Probabilistic Matrix Factorization (Salakhutdinov and Mnih 2008)
   * as a collaborative filtering algorithm
@@ -62,23 +62,23 @@ EMNLP 2014
   * incorporate temporal factors.  They modeled latent feature vector for users
   * trained efficiently using Markov chain Monte Carlo methods
 
-##2.3 Antonomy Detection
+## 2.3 Antonomy Detection
 
 * Lin and Zhao (2003) ... looking for pre-identified phrases in corpus
 * Turney (2008) ... transforming antonym pairs into analogy relations
 * Mohammad+ (2008; 2013) use affix patterns (e.g. “un-”, “in-” and “im-”)
 * Yih+ (2012) and Chang+ (2013)
 
-#3 BPTF model and the sampling method
+# 3 BPTF model and the sampling method
 
-##3.1 The Bayesian Probabilistic Tensor Factorization Model
+## 3.1 The Bayesian Probabilistic Tensor Factorization Model
 
 * Our model is
   * a variation of the BPMF model (Salakhutdinov and Mnih, 2008)
   * similar to the temporal BPTF model (Xiong+ 2010)
 * We assume the relatedness `R_ijk` to be Gaussian,
 
-#4 experimental evaluation and results
+# 4 experimental evaluation and results
 
 * antonym questions
 * limitations [of thesauri]
@@ -88,7 +88,7 @@ EMNLP 2014
   distributional similarities as the second slice, then
   * use ... relatedness on the first slice to answer antonym questions
 
-##4.1 The GRE Antonym Questions
+## 4.1 The GRE Antonym Questions
 
 * There are several publicly available test datasets to measure the correctness
   of our word embeddings
@@ -105,7 +105,7 @@ EMNLP 2014
     1. renounce 1. forbid 1. purify 1. criticize 1. correct
     The goal is to choose the most opposite word (purify)
 
-##4.3 Tests
+## 4.3 Tests
 
 * We first train on a tensor from a subset consisting of words with antonym
   entries, then add all other words using the out-of-vocabulary method
@@ -113,12 +113,12 @@ EMNLP 2014
 * We choose the vector length D = 40, the burn-in period starting from the 30
   * Note that Yih+ (2012) use a vector length of 300
 
-##4.4 Results
+## 4.4 Results
 
 * WordNet records less antonym relations for nouns, verbs and adverbs, while
   the GRE antonym questions has a large coverage of them
 
-#5 conclusion and future work
+# 5 conclusion and future work
 
 * future works
   1. additional perspective slices include LSA for topic relatedness, and

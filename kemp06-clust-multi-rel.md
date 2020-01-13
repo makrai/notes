@@ -2,7 +2,7 @@ Learning Systems of Concepts with an Infinite Relational Model
 Charles Kemp, Joshua B. Tenenbaum, TL Griffiths, Takeshi Yamada, Naonori Ueda
 2006
 
-#Abstract
+# Abstract
 
 * We present a nonparametric Bayesian model that 
   discovers systems of related concepts. 
@@ -12,7 +12,7 @@ Charles Kemp, Joshua B. Tenenbaum, TL Griffiths, Takeshi Yamada, Naonori Ueda
   clustering objects and features, learning ontologies, 
   discovering kinship systems, and discovering structure in political data.
 
-#1 Intro
+# 1 Intro
 
 * The systems we wish to discover are simple versions of the “domain theories”
   discussed by cognitive scientists and AI researchers (Davis 1990). Suppose

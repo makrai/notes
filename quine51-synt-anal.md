@@ -2,7 +2,7 @@ Willard Van Orman Quine
 Two Dogmas of Empiricism
 1951, 1953, 1961
 
-#0
+# 0
 
 1. a belief in some fundamental cleavage between truths which are
   * analytic, or grounded in meanings independently of matters of fact and
@@ -14,7 +14,7 @@ Two Dogmas of Empiricism
     natural science
   * shift toward pragmatism
 
-#1. BACKGROUND FOR ANALYTICITY
+# 1. BACKGROUND FOR ANALYTICITY
 
 * Leibniz spoke of the truths of reason as true in all possible worlds
 * Kant [interpreted by Quine]: a statement is analytic when it is true by
@@ -39,7 +39,7 @@ Two Dogmas of Empiricism
     state-description
   * aimed primarily ... at ... the clarification of probability and induction
 
-#II. DEFINITION p4
+# II. DEFINITION p4
 
 * analytic statements [which depends on the notion of synonymy] reduce to ..
   logical truths, by definition; 'bachelor,' for example, is defined as
@@ -71,7 +71,7 @@ Two Dogmas of Empiricism
     * definiendum may be a newly created notation, newly endowed with meaning
       here and now
 
-#III. INTERCHANGEABILITY p5
+# III. INTERCHANGEABILITY p5
 
 * synonymy of two linguistic forms consists simply in their interchangeability
   in all contexts without change of truth value;
@@ -82,12 +82,12 @@ Two Dogmas of Empiricism
   psychological associations or poetic quality; indeed no two expressions are
   synonymous in such a sense
 
-#IV. SEMANTICAL RULES p9
+# IV. SEMANTICAL RULES p9
 
 * I do not know whether the statement 'Everything green is extended' is
   analytic
 
-#V. THE VERIFICATION THEORY AND REDUCTIONISM p12
+# V. THE VERIFICATION THEORY AND REDUCTIONISM p12
 
 * verification theory of meaning, which has been
   * conspicuous in the literature from Peirce onward, is that
@@ -100,7 +100,7 @@ Two Dogmas of Empiricism
   also of a limiting kind of statement which is vacuously confirmed, ipso
   facto, come what may; and such a statement is analytic
 
-#VI. EMPIRICISM WITHOUT THE DOGMAS p15
+# VI. EMPIRICISM WITHOUT THE DOGMAS p15
 
 * knowledge or beliefs ... is a man- made fabric which impinges on experience
   only along the edges

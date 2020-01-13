@@ -2,7 +2,7 @@ Building a Semantic Parser Overnight
 Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
 2015 ACL
 
-#Abstract
+# Abstract
 
 * build a semantic parser in a new domain starting with zero training examples?
 * We introduce a new methodology for this setting
@@ -18,7 +18,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
   * we test our methodology on seven domains and show that
     * we can build an adequate semantic parser in just a few hours
 
-#1 Introduction
+# 1 Introduction
 
 * semantic parsers
   *  mapping natural language utterances to executable logical forms,
@@ -38,7 +38,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
      utterances (e.g., “what is the newest published article?”)
   4. train a semantic parser
 
-##Linguistic reflections
+## Linguistic reflections
 
 * design a simple grammar that
   * simultaneously generates both logical forms and canonical utterances so
@@ -56,7 +56,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
   * not tuned on any one domain, was able to obtain an
     * average accuracy of 59% over all domains
 
-#8 Related work and discussion
+# 8 Related work and discussion
 
 * semantic parsing [with] large knowledge bases such as Freebase
   (Cai and Yates, 2013; Kwiatkowski et al., 2013; Berant et al., 2013)

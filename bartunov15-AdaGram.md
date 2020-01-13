@@ -8,7 +8,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * nonparametric Bayesian model
   * variational learning
 
-#Abstract
+# Abstract
 
 * Skip-gram ... does not take into account word ambiguity
 * a number of Skip-gram modifications were proposed
@@ -20,7 +20,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * derive efficient online variational learning algorithm for the model and
   * empirically demonstrate its efficiency on word-sense induction task
 
-#1. Introduction
+# 1. Introduction
 
 * word sense induction (WSI) problem
   * automatic identification of the meanings of a word
@@ -33,7 +33,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
     * named-entity recognition (Turian et al., 2010) and
     * sentiment analysis (Maas et al., 2011)
 
-#2. Skip-gram model
+# 2. Skip-gram model
 
 * sentence boundaries
   *  For training the Skip-gram model it is common to ignore sentence and
@@ -43,7 +43,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 
     *  p(v|w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_w out_n ) (3)
 
-#3. Adaptive Skip-gram
+# 3. Adaptive Skip-gram
 
 * variable z encodes the index of active meaning
 
@@ -71,7 +71,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
       * we do not consider any regularization (and so the informative prior)
         for representations and seek for point estimate of θ
 
-##3.1. Learning representations
+## 3.1. Learning representations
 
 * variational lower bound on the marginal likelihood
   * the marginal likelihood of the model is intractable
@@ -95,9 +95,9 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * conservative initialization strategy for q(β)
     * starting with only one allocated meaning for each word,
 
-##3.2. Disambiguation and prediction
+## 3.2. Disambiguation and prediction
 
-#4. Related work
+# 4. Related work
 
 * modifications of Skip-gram proposed to learn multi-prototype representations
   * Qiu et al.  (2014) developed
@@ -124,7 +124,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
         * in terms of variational lower bound
     * we use models of Neelakantan et al. (2014) as baselines
 
-#5. Experiments
+# 5. Experiments
 
 * paramaters
   * mincount = 20 occurrences
@@ -132,12 +132,12 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * truncation level of Stick-breaking approximation: T = 30
   * dimensionality D of representations: 300
 
-##5.1. Nearest neighbors
+## 5.1. Nearest neighbors
 
 * The predictive probability of each meaning reflects how frequently it was
   used in the training corpus
 
-##5.2. Semantic resolution
+## 5.2. Semantic resolution
 
   * nagyobb alfánál hosszabban sima, de kevésbé monoszém
   * For most of the words α = 0.1 results in most interpretable model
@@ -148,9 +148,9 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
     * learned meanings are too specific, sometimes duplicating
     * decreases model performance
 
-##5.3. Word prediction
+## 5.3. Word prediction
 
-##5.4. Word-sense induction p8
+## 5.4. Word-sense induction p8
 
 * paradigm
   * target word + disambig context + contexts to be labeled
@@ -159,7 +159,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * The results are then averaged over all target words
   * annyiban WSI (as opposed to WSD), hogy nincs explicit jelentéskészlet
 
-###5.4.1. SemEval-2010 dataset
+### 5.4.1. SemEval-2010 dataset
 
 * SemEval-2010 Word Sense Induction & Disambiguation competition
   * (Manandhar et al., 2010)
@@ -183,7 +183,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
       * undesirable clusterings ... above will get ARI of nearly zero
       * We still report VM and FS values
 
-###5.4.2. SemEval-2007 dataset
+### 5.4.2. SemEval-2007 dataset
 
 * Agirre & Soroa, 2007
 * 27232 contexts collected from Wall Street Journal (WSJ)
@@ -196,7 +196,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * difference ... affect the performance
 * Each model was supplied with contexts of the size that maximizes ARI
 
-###5.4.3. New Wikipedia Word-sense Induction (WWSI) dataset
+### 5.4.3. New Wikipedia Word-sense Induction (WWSI) dataset
 
 * 188 target words and 36354 contexts
 * currently the largest WSI dataset available
@@ -216,9 +216,9 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * Such phenomenon is also common for topic modeling, see e.g
     * Boyd-Graber et al., (2014)
 
-#6. Conclusion
+# 6. Conclusion
 
-#Appendix. WWSI Dataset construction details
+# Appendix. WWSI Dataset construction details
 
 * list of ambiguous words
   * Similarly to (Navigli & Vannella, 2013)

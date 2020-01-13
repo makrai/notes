@@ -3,7 +3,7 @@ Composition of Sentence Embeddings:
   Lessons from Statistical Relational Learning
 `*`SEMEVAL 2019
 
-#Abstract
+# Abstract
 
 * modeling of semantic relations 
   * e.g. sentence similarity, entailment, and discourse relations 
@@ -16,26 +16,26 @@ Composition of Sentence Embeddings:
 * significantly improve the state of the art 
   in both transferable sentence representation learning and relation prediction
 
-#1 Intro
+# 1 Intro
 
 * all tasks involve predicting whether a relation R holds between two sentences 
   * noticed in the literature before (Baudiš+ 2016) and it has been
     leveraged for the evaluation of sentence embeddings (Conneau+ 2017)
 * Our contributions are as follows:
 
-#2 composition functions used in textual relational learning 
+# 2 composition functions used in textual relational learning 
 and that they lack expressiveness
 
-#3 analogies with existing SRL models
+# 3 analogies with existing SRL models
 
-#4 new compositions inspired from SRL 3
+# 4 new compositions inspired from SRL 3
 
                                      `***`
 
 experiments to test composition functions and show that some of them can
 improve the learning of representations and their downstream uses 
 
-#5 On the evaluation of relational models 
+# 5 On the evaluation of relational models 
 
 * SentEval (Conneau+ 2017) 
   a general evaluation for transferable sentence representations, open source
@@ -55,13 +55,13 @@ improve the learning of representations and their downstream uses
   composition function when dealing with relational transfer tasks, which
   improves results even when the sentence encoder was not trained with it.
 
-#6 Experiments
+# 6 Experiments
 
-##6.1 Training tasks
+## 6.1 Training tasks
 
-##6.2 Evaluation tasks
+## 6.2 Evaluation tasks
 
-#7 Related work
+# 7 Related work
 
 * interactions between SRL and NLP. We believe that our framework merges 
   * two specific lines of work: relation prediction and 
@@ -80,7 +80,7 @@ improve the learning of representations and their downstream uses
     compositions, therefore it would also be interesting to try applying our
     techniques within their framework.
 
-#8 Conclusion 8
+# 8 Conclusion 8
 
 * these more expressive compositions
   * Larger scale data might leverage [them], as well as more compositional,

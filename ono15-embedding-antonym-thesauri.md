@@ -2,13 +2,13 @@ M Ono, M Miwa, Y Sasaki
 Word Embedding-based Antonym Detection using Thesauri and Distri Info
 HLT-NAACL, 2015
 
-#Abstract
+# Abstract
 
 evaluation results on the GRE antonym question task show that our model
 outperforms the state-of-the-art systems and it can answer the antonym
 questions in the F-score of 89%
 
-#Intro
+# Intro
 
 * embeddings have shown to capture
   * synonyms and analogies (Mikolov+ 2013b; Mnih and Kavukcuoglu, 2013;

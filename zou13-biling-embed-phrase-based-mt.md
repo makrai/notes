@@ -2,7 +2,7 @@ Will Y. Zou, Richard Socher, Daniel Cer, Christopher D. Manning
 2013
 Bilingual Word Embeddings for Phrase-Based Machine Translation
 
-#Abstract
+# Abstract
 
 * bilingual word embeddings
 * utilizing MT word alignments to constrain translational equivalence
@@ -11,7 +11,7 @@ Bilingual Word Embeddings for Phrase-Based Machine Translation
   * A single semantic similarity feature induced with bilingual embeddings
     adds near half a BLEU point
 
-#1 Introduction
+# 1 Introduction
 
 * semantic similarities of phrase-pairs
 * curriculum training (Bengio+ ICML 2009)
@@ -21,7 +21,7 @@ Bilingual Word Embeddings for Phrase-Based Machine Translation
 * semantic relationships across bilingual embeddings were 
   further improved through unsupervised learning on a large unlabeled corpus
 
-#2 Review of [Distributed word representations]
+# 2 Review of [Distributed word representations]
 
 * useful in NLP applications such as
   * information retrieval (Pasca+ 2006; Manning+ 2008),
@@ -48,16 +48,16 @@ Bilingual Word Embeddings for Phrase-Based Machine Translation
     * apply them in a practical phrase-based MT system
 * Only recently applied to machine translation (Le+ 2012)
 
-#3 Algorithm and methods
+# 3 Algorithm and methods
 
-##3.1 Unsupervised training with global context
+## 3.1 Unsupervised training with global context
 
 * embedding learning formulations in Collobert+ (2008)
 * We incorporate the global context information as in Huang+ (2012),
 
-#4 Experiments
+# 4 Experiments
 
-#5 Conclusion
+# 5 Conclusion
 
 * initialization and optimization constraint using MT alignments
 * improve NIST08 end-to-end machine translation results 

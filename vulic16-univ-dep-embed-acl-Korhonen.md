@@ -2,7 +2,7 @@ Ivan Vulić and Anna Korhonen
 Is “Universal Syntax” Universally Useful for Learning Distributed Word Reprs?
 ACL 2016
 
-#1 Intro
+# 1 Intro
 
 * DEPS-based embeddings outperform the less informed BOW-based embeddings 
   in a variety of similarity tasks 
@@ -32,13 +32,13 @@ ACL 2016
     Selective sharing for multilingual dependency parsing
 
 
-#2 Methodology
+# 2 Methodology
 
 * simple post-hoc intervention into the UDEPS context extraction
   * arc collapsing from prior work (Levy and Goldberg, 2014a; Melamud+ 2016)
 
 
-#4 Results and discussion
+# 4 Results and discussion
 
 * verb similarity is indeed
   * a difficult problem _in English_ as evidenced by

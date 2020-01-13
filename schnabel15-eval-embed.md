@@ -4,13 +4,13 @@ Evaluation methods for unsupervised word embeddings
 
 http://www.cs.cornell.edu/~schnabts/eval/
 
-#Abstract
+# Abstract
 
 * Different evaluations result in different orderings of embedding methods,
   calling into question [whether] there is one single optimal [embedding]
 * We present new evaluation techniques that directly compare embeddings
 
-#1 Intro
+# 1 Intro
 
 * extrinsic evaluation, ...  Examples include part-of-speech tagging and
   named-entity recognition (Pennington+ 2014)
@@ -38,7 +38,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
   * a survey of evaluation methods, not a survey of embedding methods
     * example embeddings presented here were chosen as representative samples
 
-#2 Word embeddings
+# 2 Word embeddings
 
 * motivated by a probabilistic prediction approach
   * CBOW ... of word2vec (Mikolov+ 2013a) and C&W embeddings (Collobert+ 2011)
@@ -50,7 +50,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
   * Sparse Random Projections (Li+ 2006) follow a
   * capture [  much relevant information from the ] co-occurrence matrix
 
-#3 Relatedness
+# 3 Relatedness
 
 * We begin with intrinsic evaluation of relatedness
   * Section 3.1 introduces the list of datasets that is commonly used
@@ -59,7 +59,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
     * we ask people directly for their preferences among different embeddings
     * we can achieve the same results as offline, absolute metrics
 
-#3.1 Absolute intrinsic evaluation
+# 3.1 Absolute intrinsic evaluation
 
 * the same datasets and tasks as Baroni+ (2014).  While
 * we present results on all tasks[, but] we will mainly focus on relatedness
@@ -71,7 +71,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
     * We follow the procedure that is outlined in Baroni+ (2014)
 * design questions come up when designing reusable datasets
 
-##Query inventory
+## Query inventory
 
 * WordSim-353 dataset (Finkelstein+ 2002), for example,
   only tries to have word pairs with a diverse set of similarity scores
@@ -81,7 +81,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
   * we want to test the quality of embeddings on rare words, but also because
   * it is related with distance in the embedding space as we show later
 
-##Metric aggregation
+## Metric aggregation
 
 * similar to ranking evaluation in Information Retrieval
 * we usually cannot directly compare scores from different rankings
@@ -89,11 +89,11 @@ http://www.cs.cornell.edu/~schnabts/eval/
   same ranges
 * we have to decide whether (dog, cat) is more similar than (banana, apple)
 
-##3.3 Comparative intrinsic evaluation
+## 3.3 Comparative intrinsic evaluation
 
 TODO
 
-#4 Coherence
+# 4 Coherence
 
 * In this novel coherence task we assess
   whether groups of words in a small neighborhood in the embedding space are
@@ -105,7 +105,7 @@ TODO
   * intruder word to be the first word that had a frequency of avg ± 500
     starting at rank 100 of the list of nearest neighbors
 
-#5 Extrinsic Tasks
+# 5 Extrinsic Tasks
 
 * Noun phrase chunking
   * we use a noun phrase chunking task similar to that used by Turian+  (2010)
@@ -117,12 +117,12 @@ TODO
     Maas+ (2011)
   * LIBLINEAR logistic regression model (Fan+ 2008) with the default parameters
 
-#6 Discussion
+# 6 Discussion
 
 * Word frequency information in the embedding space also affects cosine
   similarity
 
-#8 Conclusion
+# 8 Conclusion
 
 * Factors such as
   * word frequency play a significant and previously unacknowledged role

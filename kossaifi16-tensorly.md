@@ -2,7 +2,7 @@ TensorLy: Tensor Learning in Python
 JeangKossaifi, Yannis Panagakis, and Maja Pantic
 NIPS Tensor-Learn Workshop. 2016
 
-#Intro
+# Intro
 
 * Example[ for signal processing and machine learning applications]
   * Anima Anandkumar, Rong Ge, and Majid Janzamin. “
@@ -38,7 +38,7 @@ NIPS Tensor-Learn Workshop. 2016
   *  it comes with extensive tests and documentation; and
   *  it depends exclusively on numpy and scipy
 
-#TensorLy functionality and implementation
+# TensorLy functionality and implementation
 
 * TensorLy’s current functionalities in term of tensor operations
   * Tensor unfolding (X [n] ), folding and vectorisation (vec( X̃ ))
@@ -56,16 +56,16 @@ NIPS Tensor-Learn Workshop. 2016
   * Tensor Ridge regression (Tucker and Kruskal) [11, 32, 18]
 * operations are optimised for speed: tensor operations have been redefined
 
-#3 Experiments
+# 3 Experiments
 
 * In TensorLy, tensors are simply numpy mutli-dimensional arrays which are
   passed directly to the various methods, decomposition or regression. This
 * competitive performance even though the library is implemented in a
   high-level, interactive language
 
-##Tensor regression
+## Tensor regression
 
-#4 Conclusion and future work
+# 4 Conclusion and future work
 
 * Going forward we will further extend the available decompositions with other
   state-of-the-art methods such as PARAFAC2, DEDICOM, etc and also include

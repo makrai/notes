@@ -1,7 +1,7 @@
 Optimal Brain Damage
 Yann Le Cun, John S. Denker and Sara A. Sol1a
 
-#ABSTRACT
+# ABSTRACT
 
 We have used information-theoretic ideas to derive a class of practical and
 nearly optimal schemes for adapting the size of a neural network. By removing

@@ -2,7 +2,7 @@ Richard Socher, Milind Ganjoo, Hamsa Sridhar, Osbert Bastani, Christopher D. Man
 2013
 Zero-Shot Learning Through Cross-Modal Transfer
 
-#Abstract
+# Abstract
 
 * recognize objects in images even if no training data ... for the object class
 * knowledge about unseen visual categories comes from unsupervised text
@@ -17,7 +17,7 @@ Zero-Shot Learning Through Cross-Modal Transfer
   * the second is conservative in its prediction of novelty and
     * keeps the seen classes’ accuracy high
 
-#1 Introduction
+# 1 Introduction
 
 * classify instances of an unseen visual class, called zero-shot learning,
 * semantic space of words is learned by a neural network model [15]
@@ -25,7 +25,7 @@ Zero-Shot Learning Through Cross-Modal Transfer
   * state of the art accuracy on known classes as well as
   * reasonable performance on unseen classes
 
-#2 Related Work
+# 2 Related Work
 
 * low-level image features
 * Domain Adaptation:
@@ -37,7 +37,7 @@ Zero-Shot Learning Through Cross-Modal Transfer
   * Most recently, Bruni+ [5]:
     * joint models are better to predict the color of concrete objects
 
-#3 Word and Image Representations
+# 3 Word and Image Representations
 
 * vectors of distributional characteristics
   * most often their co-occurrences with words in context
@@ -49,11 +49,11 @@ Zero-Shot Learning Through Cross-Modal Transfer
 * Coates+ [6] to extract image features from raw pixels
 * a zero-shot olytályokhoz használt szavak előre adottak
 
-#5 Zero-Shot Learning Model
+# 5 Zero-Shot Learning Model
 
 * softmax classifier
 
-#6 Experiments
+# 6 Experiments
 
 6.1 Seen and Unseen Classes Separately
 6.2 Influence of Novelty Detectors on Average Accuracy
@@ -63,4 +63,4 @@ Zero-Shot Learning Through Cross-Modal Transfer
 6.6 Extension to CIFAR-100 and Analysis of Deep Semantic Mapping
 6.7 Zero-Shot Classes with Distractor Words
 
-#7 Conclusion
+# 7 Conclusion

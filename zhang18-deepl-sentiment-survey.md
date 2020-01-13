@@ -2,9 +2,9 @@ L Zhang, S Wang, B Liu
 Deep learning for sentiment analysis: A survey
 Wiley Interdisciplinary Reviews 2018
 
-#Deep learning
+# Deep learning
 
-##MEMORY NETWORK 11
+## MEMORY NETWORK 11
 
 * Weston+ (2014) introduced the concept of Memory Networks (MemNN)
   for the question answering problem. It works with
@@ -18,7 +18,7 @@ Wiley Interdisciplinary Reviews 2018
   * refines the attention mechanism to some extent. Note also
   * a similar idea is the Neural Turing Machines reported by Graves+ 2014
 
-#SENTIMENT ANALYSIS TASKS 12
+# SENTIMENT ANALYSIS TASKS 12
 
 * three levels of granularity:
   document level, sentence level, and aspect level
@@ -36,7 +36,7 @@ Wiley Interdisciplinary Reviews 2018
 * Apart from these core tasks, sentiment analysis also studies
   emotion analysis, sarcasm detection, multilingual sentiment analysis
 
-#DOCUMENT LEVEL SENTIMENT CLASSIFICATION 13
+# DOCUMENT LEVEL SENTIMENT CLASSIFICATION 13
 
 * Tang+ (EMNLP 2015) proposed a neural network to learn 
   document representation, with the consideration of sentence relationships
@@ -72,7 +72,7 @@ Wiley Interdisciplinary Reviews 2018
   * two networks for sentiment classification and 
     domain classification (i.e. whether a document is from the sr or tg domain)
 
-#SENTENCE LEVEL SENTIMENT CLASSIFICATION 16
+# SENTENCE LEVEL SENTIMENT CLASSIFICATION 16
 
 * since a sentence is usually short compared to a document, some 
   syntactic and semantic information may be used to help.
@@ -131,11 +131,11 @@ Wiley Interdisciplinary Reviews 2018
   * linguistic resources such as sentiment lexicon, negation words and
     intensity words
 
-#ASPECT LEVEL SENTIMENT CLASSIFICATION 18
+# ASPECT LEVEL SENTIMENT CLASSIFICATION 18
 
-#ASPECT EXTRACTION AND CATEGORIZATION 20
+# ASPECT EXTRACTION AND CATEGORIZATION 20
 
-#OPINION EXPRESSION EXTRACTION 21
+# OPINION EXPRESSION EXTRACTION 21
 
 * opinion (expression/term) extraction/identification 
   * identify the expressions of sentiment in a sentence or a document. Similar
@@ -148,7 +148,7 @@ Wiley Interdisciplinary Reviews 2018
   co-extract aspect and opinion terms. 
 * CMLA is also proposed for co-extraction of aspect and opinion terms. 84 
 
-#SENTIMENT ANALYSIS WITH WORD EMBEDDING 22
+# SENTIMENT ANALYSIS WITH WORD EMBEDDING 22
 
 * even without the use of deep learning models, word embeddings can be used 
 * sentiment-encoded word embeddings. For sentiment analysis, 
@@ -196,7 +196,7 @@ Wiley Interdisciplinary Reviews 2018
 * Sharma+ 114 proposed a semi-supervised technique to use sentiment bearing
   word embeddings for ranking sentiment intensity of adjectives. 
 
-#EMOTION ANALYSIS 23
+# EMOTION ANALYSIS 23
 
 * Wang Z, Zhang Y, Lee S, Li S, and Zhou G 
   A bilingual attention network for code-switched emotion prediction 
@@ -216,7 +216,7 @@ Wiley Interdisciplinary Reviews 2018
   A question answering approach to emotion cause extraction
   (EMNLP 2017), 2017
 
-#OTHER RELATED TASKS [with deep learning] 25
+# OTHER RELATED TASKS [with deep learning] 25
 
 * Sentiment Intersubjectivity: Gui+ (IJCAI, 2016) tackled intersubjectivity
   * gap between the surface form ... and the corresponding abstract concepts,

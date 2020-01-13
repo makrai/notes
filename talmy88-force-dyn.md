@@ -2,7 +2,7 @@ Force Dynamics in Language and Cognition
 Leonard Talmy
 1988
 
-#Abstract
+# Abstract
 
 * exertion of force, resistance to such exertion and the overcoming of such
   resistance, blockage of a force and the removal of such blockage, etc
@@ -15,9 +15,9 @@ Leonard Talmy
   * parallelisms between physical and psychosocial reference
 * parallel [to] early science and ... naive physics and psychology
 
-#0. INTRODUCTION
+# 0. INTRODUCTION
 
-##0.1. A Neglected Semantic Category
+## 0.1. A Neglected Semantic Category
 
 * In English, our main language of demonstration
   * [in] conjunctions, prepositions, and other closed-class elements + modals
@@ -70,7 +70,7 @@ Leonard Talmy
   8. other cognitive domains
   9. other conceptual systems
 
-##0.2. Illustrating the Category
+## 0.2. Illustrating the Category
 
 * keep (on) VPing
 * can (not)
@@ -78,9 +78,9 @@ Leonard Talmy
 * polite / civil
 * have (got) to VP / get to VP
 
-#1. BASIC FORCE DYNAMIC
+# 1. BASIC FORCE DYNAMIC
 
-##1.1. Steady-State Force-Dynamic Patterns
+## 1.1. Steady-State Force-Dynamic Patterns
 
 * two forces
 * role difference between the two entities exerting the forces
@@ -100,14 +100,14 @@ Leonard Talmy
 * closed-class-representation:
   * _because (of), although, despite, against, still_
 
-##1.2. Shifting Force-Dynamic Patterns
+## 1.2. Shifting Force-Dynamic Patterns
 
 * change through time
 * the motion [of a stronger] Antagonist in or out
   * a slash on the resultant line separating the before and after states
 * the balance of forces can shift
 
-##1.3. Secondary Steady-State Force-Dynamic Patterns
+## 1.3. Secondary Steady-State Force-Dynamic Patterns
 
 * cases in which the Antagonist remains away
 * corresponding to each of the steady-state patterns in (3), with an Antagonist
@@ -117,14 +117,14 @@ Leonard Talmy
 * conceptually derivative, founded on a negation of the basic steady-state
   forms
 
-##1.4. The Relation of Agency to the Force-Dynamic Patterns
+## 1.4. The Relation of Agency to the Force-Dynamic Patterns
 
 * I regard ... nonagentive forms as more basic
 * the inclusion of an agent in a sentence, though often yielding a
   syntactically simpler construction, actually involves an additional semantic
   complex
 
-##1.5. Alternatives of Foregrounding in Force-Dynamic Patterns
+## 1.5. Alternatives of Foregrounding in Force-Dynamic Patterns
 
 * a sentence ... can pick out different subsets of the factors [as] explicit
 * I borrow from Relational Grammar the use of ‘1’ [for] subject, and ‘2’ for o
@@ -132,7 +132,7 @@ Leonard Talmy
 * [foregrounding the] resultant ... or its ... tendency
 * 1.5.1. Asymmetry in the Expression of ‘Make’ versus ‘Let’
 
-##1.6. Force-Dynamic Patterns with a Weaker Antagonist
+## 1.6. Force-Dynamic Patterns with a Weaker Antagonist
 
 * ‘despite/although’ formulations, where the Agonist appears as subject
 * cases with the Antagonist as subject: _hinder, help, leave alone_
@@ -140,7 +140,7 @@ Leonard Talmy
   infinitive complement without to, namely,
   * make, let, have, and help
 
-##1.7. Particularized Factors in Force-Dynamic Patterns
+## 1.7. Particularized Factors in Force-Dynamic Patterns
 
 * where a pattern’s VP factors is particularized as ‘be’ or ‘move,’ the
   corresponding construction generally also includes some basic lexical item
@@ -148,7 +148,7 @@ Leonard Talmy
 * [if _move_] is particularized, say, as ‘down’ or ‘out,’
   * _1 hold 2 up/in,; 1 support 2_; and _1 confine 2_
 
-#2. FORCE DYNAMICS AS A GENERALIZATION p19
+# 2. FORCE DYNAMICS AS A GENERALIZATION p19
 
 * earlier ones
   * such as McCawley (1968),
@@ -156,20 +156,20 @@ Leonard Talmy
     * often represented as ‘CAUSE’
   * Shibatani (1973) and Jackendoff (1976) [are more] complex
 
-#3. Extension to psychological reference 21
+# 3. Extension to psychological reference 21
 
 * psychodynamics ... generalizes notions of physical pushing, blocking
   * wanting and refraining
   * psychological ‘pressure’, ‘pushing’
 * _refrain from, exertion (ráveszi, erőt vesz rajta)_
 
-##3.1. The Self Divided
+## 3.1. The Self Divided
 
-##3.2 Central vs Peripheral within the Self
+## 3.2 Central vs Peripheral within the Self
 
 * Agonist is desires, Agonist is supression
 
-##3.3. Psychological ... Force Properties in [non-]Sentient Entities
+## 3.3. Psychological ... Force Properties in [non-]Sentient Entities
 
 * language can ascribe intrinsic force properties to physical entities without
   sentience such as wind, a dam, or a rolling log
@@ -177,14 +177,14 @@ Leonard Talmy
   * psychological component is normally included and understood as the factor
     that renders the ... stronger Agonist able to withstand
 
-##3.4. The Force-Dynamic Properties of Repose, Animation, and Generativity 24
+## 3.4. The Force-Dynamic Properties of Repose, Animation, and Generativity 24
 
 * repose
   * an intrinsic tendency toward rest
 * [the body is] essentially inert, requiring animation by the psych[e]
 * recursion e.g. kepp preventing
 
-#4. FORCE DYNAMICS WITH MORE COMPLEX ASPECTUAL PATTERNS 25
+# 4. FORCE DYNAMICS WITH MORE COMPLEX ASPECTUAL PATTERNS 25
 
 * factors that distinguish the expressions within this set
   1. ‘phase’: the location along the temporal sequence at which focal attention
@@ -203,7 +203,7 @@ Leonard Talmy
     * that would function as _try_ does for a sentient Antagonist subject
       * The wind blew on the hut with little/no effect / ineffectively
 
-#5. EXTENSION SOCIAL 27
+# 5. EXTENSION SOCIAL 27
 
 * interactions between sentient entities
 * sociodynamics
@@ -212,7 +212,7 @@ Leonard Talmy
   * production of stimuli, including communication
 * words like push and pressure, _1 urge 2 to V_
 
-#6. MODALS AS A SYNTACTIC CATEGORY FOR THE EXPRESSION OF FORCE DYNAMICS 29
+# 6. MODALS AS A SYNTACTIC CATEGORY FOR THE EXPRESSION OF FORCE DYNAMICS 29
 
 * more core and more peripheral [modals]
   * degree of their showing certain syntactic and morphological properties
@@ -242,7 +242,7 @@ Leonard Talmy
       * psychosocial interaction extended ... to the ... domain of inference
         Sweetser (1984)
 
-##6.1. The ‘Greater Modal System’
+## 6.1. The ‘Greater Modal System’
 
 * [the honorary modal verbs] all take the Antagonist as subject
   * modals all take the Agonist as subject,
@@ -250,7 +250,7 @@ Leonard Talmy
   * adpositions with geometric schematization, (Herskovits 1986; Talmy 1983)
   * conjunctions [as] relations between events (Talmy 1978a; 1978b)
 
-##6.2. Force-Dynamic Matrix Combining Modals and Open-Class Lexical Forms
+## 6.2. Force-Dynamic Matrix Combining Modals and Open-Class Lexical Forms
 
 * modals must take the Agonist as subject and offer no ready syntactic slot for
   the expression of the Antagonist
@@ -264,7 +264,7 @@ Leonard Talmy
       * _Dad says that she may go to the playground (if she wants)._
     * indicated in the diagrams with a dotted marking of the force tendency
 
-##6.3. The Force Dynamics of _should_
+## 6.3. The Force Dynamics of _should_
 
 * (37) a. She should lock her doors when she goes out
 * general form of the should construction as _E' holds that E should VP_
@@ -274,7 +274,7 @@ Leonard Talmy
   * the lizard ... knows nothing of outside social expectation
   * cross-domain clash between actuality and the speaker’s desires
 
-##6.4. The Force Dynamics of _have to_ [and _must_]
+## 6.4. The Force Dynamics of _have to_ [and _must_]
 
 * implicit sentient external authority
 * suggests little deciding and a sense of externally imposed pressure
@@ -284,7 +284,7 @@ Leonard Talmy
   * here ... a psychological black box
 * from a force-neutral selection process to a force-dynamic coercive pressure
 
-#7. FORCE DYNAMICS IN DISCOURSE: argumentation and expectation 40
+# 7. FORCE DYNAMICS IN DISCOURSE: argumentation and expectation 40
 
 * persuasion ... exhort [buzdít], to convince, and to logically demonstrate
 * [FD] ‘argument space,’
@@ -303,7 +303,7 @@ Leonard Talmy
     * but [different] set of assumptions about the underlying direction of
       implication
 
-#8. CONCEPTUAL MODELS OF PHYSICS AND PSYCHOLOGY IMPLICIT IN LING 43
+# 8. CONCEPTUAL MODELS OF PHYSICS AND PSYCHOLOGY IMPLICIT IN LING 43
 
 * conceptual models of certain physical and psychological phenomena are
   * built into the semantic structure of language. These conceptual models
@@ -364,4 +364,4 @@ Leonard Talmy
       * entity’s ... intrinsic tendency toward motion or rest
 * psychology
 
-#9. FURTHER RESEARCH 48
+# 9. FURTHER RESEARCH 48

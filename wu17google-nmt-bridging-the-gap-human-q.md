@@ -6,7 +6,7 @@ Google’s Neural Machine Translation System:
   Bridging the Gap between Human and Machine Translation
 TACL 2017
 
-#Abstract
+# Abstract
 
 * Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers
   * residual connections as well as 
@@ -33,7 +33,7 @@ TACL 2017
     reduces translation errors by an average of 60% compared to Google’s
     phrase-based production system
 
-#4 Segmentation Approaches
+# 4 Segmentation Approaches
 
 * two broad categories of approaches to address the translation of OOV words.
   * simply copy rare words (as most rare words are names or numbers) based on the 

@@ -1,7 +1,7 @@
 Christodoulopoulos, Goldwater, Steedman:
 Two Decades of Unsupervised POS induction: How far have we come?
 
-#Introduction
+# Introduction
 
 * POS induction systems, where no prior knowledge is available, in contrast to 
   * POS disambiguation systems which use a dictionary to provide possible tags
@@ -22,20 +22,20 @@ Two Decades of Unsupervised POS induction: How far have we come?
   yields state-of-the-art performance on WSJ and improvements on seven of the
   eight non-English corpora.
 
-#POS Induction Systems
+# POS Induction Systems
 
-#Evaluation Measures
+# Evaluation Measures
 
-##[many-to-1] 
+## [many-to-1] 
 
 * tends to yield higher scores as `|C|` increases, 
   * assigning each word to its own class yields a perfect score.
 
-##[1-to-1] difficult to compare solutions with different values of `|C|`.
+## [1-to-1] difficult to compare solutions with different values of `|C|`.
 
-##[s-fscore] does not require a gold standard tagging
+## [s-fscore] does not require a gold standard tagging
 
-##Variation of Information (Meilă, 2003) 
+## Variation of Information (Meilă, 2003) 
 
 * regards the system output `C` and the gold standard tags `T` as two separate
   clusterings, and evaluates the amount of in- formation lost in going from `C`
@@ -43,7 +43,7 @@ Two Decades of Unsupervised POS induction: How far have we come?
   entropy of each clustering conditioned on the other.
 * How about simply `H(T|C)`?
 
-#Empirical results (the behavior of different evaluation methods)
+# Empirical results (the behavior of different evaluation methods)
 
 * s-score assigns a lower score to the supervised system than to brown,
   indicating that words in the supervised clusters (which are very close to the
@@ -54,21 +54,21 @@ Two Decades of Unsupervised POS induction: How far have we come?
 * If a gold standard is available, then many-to-1 and 1-to-1 are the most
   intuitive measures, but should not be used when `|C|` is variable,
 
-#System comparison
+# System comparison
 
 * because most of the systems were initially developed on WSJ corpus, and often
   evaluated only on it, there is a question of whether their methods and/or
   hyperparameters are overly specific to the domain or to the English language.
 * clark, feat, (brown)
 
-#Learning from induced prototypes
+# Learning from induced prototypes
 
 * Using the most frequent words in each gold standard class as prototypes, the
   authors report 80.5% accuracy
 * brown system produces the best prototypes.
 * clark+proto actually performs worse than clark
 
-#Noun-supervis POS tagging
+# Noun-supervis POS tagging
 
 * noun-supervision: label non-noun
 * Hungarian: feat or feat+proto

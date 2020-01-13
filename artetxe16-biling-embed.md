@@ -5,7 +5,7 @@ Mikel Artetxe [mikél ártedzse], Gorka Labaka, Eneko Agirre
 
 https://github.com/artetxem/vecmap
 
-#Intro
+# Intro
 
 * Bilingual word embeddings have attracted a lot of attention in recent times
   Zou et al., 2013
@@ -54,14 +54,14 @@ https://github.com/artetxem/vecmap
       theoretical reasoning, while showing that 
     * one of our models clearly outperforms previous alternatives.
 
-#2 Learning bilingual mappings
+# 2 Learning bilingual mappings
 
-##2.1 Orthogonality for monolingual invariance
+## 2.1 Orthogonality for monolingual invariance
 
 Monolingual invariance is needed to preserve the dot products after mapping,
 avoiding performance degradation in monolingual tasks
 
-##2.2 Length normalization for maximum cosine
+## 2.2 Length normalization for maximum cosine
 
 * Normalizing word embeddings in both languages to be unit vectors guarantees
   that all training instances contribute equally to the optimization goal.
@@ -69,7 +69,7 @@ avoiding performance degradation in monolingual tasks
   normalization, in contrast to Xing et al. (2015), who introduce
   orthogonality only to ensure that unit length is preserved after mapping.
 
-##2.3 Mean centering for maximum covariance
+## 2.3 Mean centering for maximum covariance
 
 * Dimension-wise mean centering captures the intuition that two randomly taken
   words would not be expected to be semantically similar, ensuring that the
@@ -88,7 +88,7 @@ avoiding performance degradation in monolingual tasks
       * Our experiments (cf. Section 3) show [that this restriction] degrade
         the quality of the monolingual embeddings. 
 
-#3 Experiments
+# 3 Experiments
 
 * code for Mikolov et al. (2013b) and Xing et al. (2015) is not publicly
   available, so we implemented and tested them
@@ -105,7 +105,7 @@ avoiding performance degradation in monolingual tasks
 * length normalization, when **followed by** mean centering ... obtain further
   improvements in bilingual performance without hurting monolingual performance 
 
-#4 Conclusion
+# 4 Conclusion
 
 * It is the proposed method with the orthogonality constraint and a global
   preprocessing with length normalization and dimension-wise mean centering

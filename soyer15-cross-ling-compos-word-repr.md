@@ -4,7 +4,7 @@ Leveraging monolingual data for crosslingual compositional word representations
 
 https://github.com/ogh/binclusion
 
-#Abstract 
+# Abstract 
 
 * three criteria; 
   * it constrains the word-level representations to be compositional, 
@@ -18,7 +18,7 @@ https://github.com/ogh/binclusion
     * ... for the English to German
     * ...
 
-#1 Introduction
+# 1 Introduction
 
 * Hermann & Blunsom (2014) introduced ... compositional crosslingual word repr
 * short-comings.  
@@ -43,27 +43,27 @@ https://github.com/ogh/binclusion
     * comparable or greatly improve upon the previous state of the art
       * German to English sub-task...
 
-#2 Model
+# 2 Model
 
-#2.1 Inducing crosslingual word representations
+# 2.1 Inducing crosslingual word representations
 
-#2.2 Creating representations for phrases and documents
+# 2.2 Creating representations for phrases and documents
 
 * we use separate word representations for each language.
 * composition
   * addition
   * bigram based addition
 
-#2.3 Objective
+# 2.3 Objective
 
 * 2.3.1 Bilingual objective
 * 2.3.2 Monolingual objective
 
-#3 Experiments
+# 3 Experiments
 
-#3.1 Crosslingual document classification
+# 3.1 Crosslingual document classification
 
-#3.2 Inducing crosslingual word representations
+# 3.2 Inducing crosslingual word representations
 
 * preproc
   * Following Turian et al. (2010) we remove all English sentences ... that
@@ -71,13 +71,13 @@ https://github.com/ogh/binclusion
 * implemented in a high-level, dynamic programming language 
   * (Bezanson et al., 2012),
 
-#4 Results
+# 4 Results
 
-#4.1 Crosslingual document classification
+# 4.1 Crosslingual document classification
 
-#4.2 Interesting properties of the induced crosslingual word representations
+# 4.2 Interesting properties of the induced crosslingual word representations
 
-#5 Conclusion and future work
+# 5 Conclusion and future work
 
 * we plan to investigate more complex composition functions, possibly based on
 * convolution

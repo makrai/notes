@@ -2,7 +2,7 @@ Predefined Sparseness in Recurrent Sequence Models
 Thomas Demeester, Johannes Deleu, Fréderic Godin, Chris Develder
 CoNLL 2018
 
-#Abstract
+# Abstract
 
 * Inducing sparseness while training neural networks ... starting from a dense
   * advantage does not hold during training. 

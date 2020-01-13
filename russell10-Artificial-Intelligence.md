@@ -2,7 +2,7 @@ Stuart Russell and Peter Norvig
 Artificial-Intelligence
 2010
 
-#Preface
+# Preface
 
 * Artificial Intelligence (AI) is a big field, and this is a big book
 * We have tried to explore the full breadth of the field, which encompasses
@@ -13,7 +13,7 @@ Artificial-Intelligence
   * we have tried to synthesize what is now known into a common framework,
     rather than trying to explain each subfield [in] historical context
 
-##New to this edition
+## New to this edition
 
 * changes in AI ... since the last edition in 2003.  There have been important
   * widespread deployment of practical speech recognition, machine
@@ -22,9 +22,9 @@ Artificial-Intelligence
   * theoretical progress, particularly in areas such as
     probabilistic reasoning, machine learning, and computer vision
 
-#12 Knowledge representation
+# 12 Knowledge representation
 
-##Bibliographical and historical notes
+## Bibliographical and historical notes
 
 * the first expert system, D ENDRAL (Feigenbaum+ 1971; Lindsay+ 
   1980), interpreted the output of a mass spectrometer ... as accurately as
@@ -106,9 +106,9 @@ Artificial-Intelligence
   * default logic (Reiter, 1980), and
   * modal nonmonotonic logic (McDermott and Doyle, 1980)
 
-#22 NLP
+# 22 NLP
 
-##Bibliographical notes
+## Bibliographical notes
 
 * There are two [non VSM-based probabilistic models of IR], one due to
   * Ponte and Croft (1998) and

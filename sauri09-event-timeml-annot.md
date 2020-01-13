@@ -3,7 +3,7 @@ Annotating Events in English \\ TimeML Annotation Guidelines
 Roser Saurı́, Lotus Goldberg, Marc Verhagen, James Pustejovsky
 May 5, 2009
 
-#Intro
+# Intro
 
 * This document describes the annotation guidelines employed for annotating
   event instances in the English dataset of the TempEval 2010 evaluation, one

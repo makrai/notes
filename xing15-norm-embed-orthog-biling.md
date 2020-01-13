@@ -5,7 +5,7 @@ Normalized Word Embedding and Orthogonal Transform
 
 nincs kód
 
-#Abstract
+# Abstract
 
 * words [have been translated in Mikolov+ 2013] from one language to another
   by a simple linear transform
@@ -20,13 +20,13 @@ nincs kód
   * normalizes the word vectors on a hypersphere and
   * constrains the linear transform as an orthogonal transform
 
-#1 Intro
+# 1 Intro
 
 * This paper: To respect the normalization constraint on word vectors, the
   linear transform in the bilingual projection has to be constrained as an
   orthogonal transform
 
-#2 Related work (Multilingual learning)
+# 2 Related work (Multilingual learning)
 
 * rely on a multilingual lexicon or a word/pharse alignment
   * projection-based approaches
@@ -56,14 +56,14 @@ nincs kód
       of the parallel sentences in the training corpus, with the distance
       computed upon the sentence vectors
 
-#3 Normalized word vectors
+# 3 Normalized word vectors
 
 * skip-gram model,
   * predict the context words with a word in the central position
 * we simply divide a vector by its l-2 norm whenever the vector is updated
   * every n mini-batches
 
-#4 Orthogonal transform
+# 4 Orthogonal transform
 
 * We us[e] the cosine distance in the transform learning,
 * Orthogonal:
@@ -83,9 +83,9 @@ nincs kód
       * by padding a small tunable constant at the end of the word vectors
     * The vectors are then renormalized
 
-#5 Experiment
+# 5 Experiment
 
-##5.1 Monolingual word embedding
+## 5.1 Monolingual word embedding
 
 * data published by the EMNLP 2011 SMT workshop (WMT11)
 * we largely follow Mikolov (2013)’s settings
@@ -99,7 +99,7 @@ nincs kód
   * model and the text window was set to 5
   * embedding of 169k English and 116k Spanish
 
-##5.2 Monolingual word similarity
+## 5.2 Monolingual word similarity
 
 * WordSimilarity-353 Test Collection
   * by (Finkelstein et al., 2002) is used. The dataset involves
@@ -107,7 +107,7 @@ nincs kód
   * mean values of 13 people
 * dimension of the vector space varies from 300 to 1000
 
-##5.3 Bilingual word translation
+## 5.3 Bilingual word translation
 
 * train and test
   * 6000 frequent words in English
@@ -117,7 +117,7 @@ nincs kód
   * best dimension setting is 800 for English and 200 for Spanish,
 * 5.3.2 Results with orthogonal transform
 
-#6 Conclusions
+# 6 Conclusions
 
 * It is unknown if the normalized embedding works on other tasks such as
   relation prediction,

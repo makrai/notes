@@ -2,7 +2,7 @@ A Joint Model for Word Embedding and Word Morphology
 Kris Cao, Marek Rei
 repl4nlp 2016
 
-#Abstract
+# Abstract
 
 * a joint model for performing 
   * unsupervised morphological analysis on words, and learning a

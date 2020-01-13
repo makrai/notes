@@ -4,7 +4,7 @@ Recurrent Continuous Translation Models
 
 Code and models available at nal.co
 
-#Abstract
+# Abstract
 
 * do not rely on alignments or phrasal translation units
 * generation and a conditioning
@@ -14,7 +14,7 @@ Code and models available at nal.co
   * perplexity with respect to gold translations that is > 43% lower than
     that of stateof-the-art alignment-based translation models
 
-#1 Introduction
+# 1 Introduction
 
 * In most statistical approaches to machine translation
   * models count phrase pairs and their occurrences as distinct if the
@@ -43,7 +43,7 @@ Code and models available at nal.co
     * sensitive to word position and order
     * state-of-the-art translation system cdec
 
-#2 Framework
+# 2 Framework
 
 * 2.1 Recurrent Language Model
   * h_i is defined in 3a, and \sigma is a component-wise sigmoid
@@ -51,13 +51,13 @@ Code and models available at nal.co
   each word f_i are conditioned on the source sentence e. We next define two
   conditioning architectures each giving rise to a specific RCTM.
 
-#3 Recurrent Continuous Translation Model I
+# 3 Recurrent Continuous Translation Model I
 
 * does not make use of an explicit parse tree,
 
-#5 Experiments
+# 5 Experiments
 
-##5.2 Perplexity of gold translations
+## 5.2 Perplexity of gold translations
 
 * We compare the perplexities of the RCTMs with the perplexity of the 
   * IBM Model 1 (Brown et al., 1993) and of the 
@@ -66,7 +66,7 @@ Code and models available at nal.co
   * unconditional target RLM and a 5- gram target language model with modified
     Kneser- Nay smoothing (KN-5)
     
-#6 Conclusion
+# 6 Conclusion
 
 * potential advantages and extensions
   * morphologically rich languages through character-level recurrences

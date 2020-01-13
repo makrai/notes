@@ -2,7 +2,7 @@ The Limitations of Cross-language Word Embeddings Evaluation
 Amir Bakarov, Roman Suvorov, Ilya Sochenkov
 naacl 2018
 
-#Abstract
+# Abstract
 
 * lack of correlation between intrinsic and extrinsic cross-language
 * we
@@ -11,7 +11,7 @@ naacl 2018
   * scores even on different intrinsic benchmarks do not correlate to each oth
 * one [have to] understand how do native speakers process semantics
 
-#1 Intro
+# 1 Intro
 
 * bib
   * (cross-language word embeddings) rapidly gained popularity in the NLP
@@ -22,7 +22,7 @@ naacl 2018
   * because [both] word similarity and paraphrase detection evaluate
     semantic modeling (i.e. not ... POS tags, or the ability to cluster words)
 
-#2 Related Work
+# 2 Related Work
 
 * cross-language word embeddings evaluation (Camacho-Collados et al., 2015)
 * effect of assessments’ language (Leviant and Reichart, 2015)
@@ -35,7 +35,7 @@ naacl 2018
 * works [ from ] cross-language information retrieval (Braschler et al., 2000),
   * no ... from the position of word embeddings
 
-#3 Problems of Cross-language Evaluation
+# 3 Problems of Cross-language Evaluation
 
 * ... against human references on any intrinsic task
 1. Translation Disagreement
@@ -59,9 +59,9 @@ naacl 2018
   * connotative associations [could influence the mono-ling] human assessments
     (Liza and Grzes, 2016)
 
-#4 Experimental Setup
+# 4 Experimental Setup
 
-##4.1 Distributional Models ... cross-language
+## 4.1 Distributional Models ... cross-language
 
 1. MSE (Multilingual Supervised Embeddings)
   * Trains using a bilingual dictionary and
@@ -77,8 +77,8 @@ naacl 2018
 * We mapped vector spaces of Russian and English FastText models
   * English-Russian bilingual dictionary (Conneau et al., 2017)
 
-##4.2 Intrinsic Tasks
-###Word Semantic Similarity
+## 4.2 Intrinsic Tasks
+### Word Semantic Similarity
 
 * three publicly available datasets for cross-language word similarity
   (Camacho-Collados et al., 2015, 2017)
@@ -96,15 +96,15 @@ naacl 2018
   * re-assessed ... with the help of 3 English-Russian volunteers, having
     Krippendorff’s alpha 0.5
 
-###Dictionary Induction (also called word translation)
+### Dictionary Induction (also called word translation)
 
-##Extrinsic Task and Our Dataset
+## Extrinsic Task and Our Dataset
 
-###Cross-language Paraphrase Detection
+### Cross-language Paraphrase Detection
 
 * a sub-task of bigger tasks like cross-language plagiarism detection
 
-#5 Results and Discussion
+# 5 Results and Discussion
 
 * mutual similarities between datasets
   * measured as Spearman’s rank correlation between evaluation scores
@@ -112,7 +112,7 @@ naacl 2018
     extrinsic+SemEval; word relations; word translation+some word similarities;
     others
 
-#6 Conclusions and Future Work
+# 6 Conclusions and Future Work
 
 * Our research does not address some
   * evaluation methods (like MultiQVEC (Ammar et al., 2016)) and

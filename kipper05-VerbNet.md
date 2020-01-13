@@ -2,7 +2,7 @@ Verbnet: a broad-coverage, comprehensive verb lexicon
 Karin Kipper
 2005
 
-#Abstract
+# Abstract
 
 * Pustejovsky's Generative Lexicon has concentrated on nouns rather than verbs
 * WordNet does not provide a comprehensive account of possible syntactic frames

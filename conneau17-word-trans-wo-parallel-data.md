@@ -12,7 +12,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * experiments on the English-Esperanto language pair
     * limited amount of parallel data
 
-#1 Intro
+# 1 Intro
 
 * works aimed at improving these cross-lingual word embeddings
   * rely on bilingual word lexicons
@@ -76,7 +76,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
      compare our approach to supervised methods.  Finally, we explain how our
   5. related work on learning cross-lingual word embeddings
 
-#2. Model
+# 2. Model
 
 * Xing+ (2015) showed that [Mikolov 13's] results are improved by enforc-
   ing an orthogonality constraint on W . In that case, the equation (1) boils
@@ -90,7 +90,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
     * spread more of those points in dense regions
   * Next, we describe the details of each of these steps
 
-##2.1 Domain-adversarial setting
+## 2.1 Domain-adversarial setting
 
 * This approach is [the adaptation of] Ganin+ 2016 to language
   * Ganin, Ustinova, Ajakan, Germain, Larochelle, Laviolette, Marchand, Lempitsky
@@ -100,7 +100,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   deep adversarial networks (Goodfellow+ 2014)
   * The details of training are given in the next section
 
-##2.2 Refinement procedure
+## 2.2 Refinement procedure
 
 * The matrix W obtained with adversarial training 
   * good performance [but] still not on par with the supervised approach
@@ -119,7 +119,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * However [one iteration] is already strong
     * improvements [in more iterations] are usually below 1%.
 
-##2.3 Cross-domain similarity local scaling (csls)
+## 2.3 Cross-domain similarity local scaling (csls)
 
 * some [solutions of hubness] being reminiscent of pre-processing already
   existing in spectral clustering algorithms (Zelnik-manor & Perona, 2005).
@@ -142,15 +142,15 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * significantly increases the accuracy for word translation retrieval, while
   * not requiring any parameter tuning.
 
-#3 Training and architectural choices 5
+# 3 Training and architectural choices 5
 
-##3.2 Discriminator inputs
+## 3.2 Discriminator inputs
 
 * we only feed the discriminator with the 50,000 most frequent words. 
   * At each training step ...  sampled uniformly.  
   * Sampling [according to the] frequency did not have any noticeable impact
 
-##3.3 Orthogonality
+## 3.3 Orthogonality
 
 * orthogonal constraint ... made the training procedure more stable in our
   experiments
@@ -160,7 +160,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
     `W ← (1 + β)W − β(W W^T)W` where β = 0.01 is usually found to perform well.
   * eigenvalues of our matrices all have a modulus close to 1, as expected.
 
-##3.5 Validation criterion for unsupervised model selection
+## 3.5 Validation criterion for unsupervised model selection
 
 * we consider the 10k most frequent source words, and use CSLS to generate a
   translation for each of them. We then compute the average cosine similarity
@@ -173,7 +173,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   criterion during training, and also for hyperparameter selection in all our
   experiments.
 
-#4 Experiments 6
+# 4 Experiments 6
 
 * organization
   * We first present the cross-lingual evaluation tasks 
@@ -182,10 +182,10 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * appendix, we offer a complementary analysis on the alignment of several
     sets of English embeddings trained with different methods and corpora.
 
-###4.1.3 Sentence translation retrieval 
+### 4.1.3 Sentence translation retrieval 
 
 * bag-of-words aggregation methods to perform sentence retrieval on the
   Europarl corpus
   * idf-weighted average to merge word into sentence embeddings
 
-#5 Related work 9
+# 5 Related work 9

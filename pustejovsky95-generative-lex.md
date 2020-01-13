@@ -4,7 +4,7 @@ The Generative Lexicon
 
 Contents p6
 
-#1 Introduction
+# 1 Introduction
 
 * goal
   * [static] view: different word senses ... generally associated with 
@@ -78,7 +78,7 @@ Contents p6
         exhibit a regularity and systematicity across languages that is
         absent from ... sense extension or modes of metaphor_
 
-#2 The Nature of Lexical Knowledge 5
+# 2 The Nature of Lexical Knowledge 5
 
 * much of the structural information of a sentence is best encoded from a
   lexicalized perspective
@@ -88,7 +88,7 @@ Contents p6
   1. creative use of words in novel contexts
   1. Developing a richer, co-compositional semantic representation
 
-##2.1 Semantic Classes and Categorial Alternation 8
+## 2.1 Semantic Classes and Categorial Alternation 8
 
 * I believe it will soon be difficult to carry out serious computational
   research in the fields of linguistics and NLP without the help of electronic
@@ -143,7 +143,7 @@ Contents p6
         * dog and book: animacy
         * book and literature: mass/count distinction
 
-###2.1.1 Verbal Alternations
+### 2.1.1 Verbal Alternations
 
 * syntactic patterns that words participate in
   (e.g., common grammatical alternations)
@@ -202,7 +202,7 @@ Contents p6
   * restructure the above classification slightly, by making reference to
     subevents and to an event focusing mechanism called event headedness
 
-###2.1.2 Nominal Alternations pd32
+### 2.1.2 Nominal Alternations pd32
 
 * also have characteristic grammatical behaviors, depending on semantic categ
   * the point of departure for ... classification
@@ -244,7 +244,7 @@ Contents p6
   * I hope to identify what the goals are for the _diverse_ communities, and then
     outline what I think the _common_ goals are
 
-###2.1.3 Adjective Classes
+### 2.1.3 Adjective Classes
 
 * Some of the previous discussion on types of stativity, e.g., the
   * individual-level vs. stage-level distinction
@@ -284,7 +284,7 @@ Contents p6
       not on their folk-epistemology
     * I return to this discussion below in chapter 10
 
-##2.2 Interlexical Relations 23/38
+## 2.2 Interlexical Relations 23/38
 
 * five classes of lexical relations:
 1. Synonymy
@@ -329,7 +329,7 @@ Contents p6
     * presuppose the truth of the complement
     * Kiparsky and Kiparsky (1971)
 
-#3 The Logical Problem of Polysemy 27
+# 3 The Logical Problem of Polysemy 27
 
 * describe the behavior of ambiguity
   * lexical selection process in the grammar
@@ -338,7 +338,7 @@ Contents p6
   * explore two dimensions of the problem of lexical ambiguity and then
   * discuss the simplest lexical model that is able to account for these
 
-##3.1 Varieties of Sense Extension 27
+## 3.1 Varieties of Sense Extension 27
 
 * Weinreich (1964) distinguishes two types of ambiguity
   1. contrastive ambiguity: distinct and unrelated meanings (i.e., homonymy)
@@ -365,7 +365,7 @@ Contents p6
     no change in lexical category, and the multiple senses of the word have
     overlapping, dependent, or shared meanings
 
-##3.2 Contrasitive Ambiguity 29
+## 3.2 Contrasitive Ambiguity 29
 
 * sense enumeration lexicons (SELs)
 * pragmatically constrained disambiguation
@@ -378,7 +378,7 @@ Contents p6
   * not require context and pragmatic information for disambiguation
   * by virtue of sortal knowledge of the NP
 
-##3.3 Complemetary Polysemy 31
+## 3.3 Complemetary Polysemy 31
 
 * a larger set of alternations called Figure-Ground Reversals
   16. Count/Mass alternations; lamb
@@ -398,7 +398,7 @@ Contents p6
 * inchoative/causative alternation _open; break_
   * one sense is actually entailed by the other sense
 
-##3.4 An Elemetary Lexical Semantic Theory 33
+## 3.4 An Elemetary Lexical Semantic Theory 33
 
 * I present the simplest model of lexical design possible, and one which is
   widely assumed in both computational and theoretical linguistics
@@ -421,7 +421,7 @@ Contents p6
 * the lexicon remains a separate and independent component or source of data,
   or a _plug-in module_ from the computational perspective
 
-#4 Limitations of Sense Enumerative Lexicons 39
+# 4 Limitations of Sense Enumerative Lexicons 39
 
 * the goal of a semantic theory [repeated from chapter 1]
 * three basic arguments showing the inadequacies of SELs
@@ -431,7 +431,7 @@ Contents p6
   3. single word sense can have multiple syntactic realization
 * to maintain compositionality we must enrich the semantics of the expressions
 
-##4.1 The Goals of Lexical Semantic Theory 40
+## 4.1 The Goals of Lexical Semantic Theory 40
 
 * goal of a theory of lexical semantics, and with it a compositional semantics,
   * describe adequately the data
@@ -461,7 +461,7 @@ Contents p6
   (5) a. ?The cookies were baked
       b. The cookies were baked in the oven
 
-##4.2 The Creative Use of Words 42
+## 4.2 The Creative Use of Words 42
 
 * regular sense alternations that are as systematic as transformational
 * one might simply keep the meaning of _good_ vague enough to cover all the cases
@@ -474,7 +474,7 @@ Contents p6
 * _fast_ and _slow_, where the meaning of the predicate also varies depending on
   the head being modified
 
-##4.3 Permeability of Word Senses 46
+## 4.3 Permeability of Word Senses 46
 
 * not always obvious how to select the correct word sense in any given context:
   consider the systematic ambiguity of verbs like _bake_ (discussed by Atkins et
@@ -498,7 +498,7 @@ Contents p6
     * e.g. sad and happy are able to predicate of both individuals and events
   * _noisy_, which predicates of an individual or of a particular location
 
-##4.4 Difference in Syntactic Forms 50
+## 4.4 Difference in Syntactic Forms 50
 
 * It is equally arbitrary to create separate word senses ...  just because it
   can participate in distinct lexical realizations
@@ -514,7 +514,7 @@ Contents p6
   * there is an interesting systematicity ... that we will try to characterize
 * &ast;A car and a tree ran into each other
 
-##4.5 Semantic Expressiveness 55
+## 4.5 Semantic Expressiveness 55
 
 * in terms of the type system
 * SELs in terms of its generative capacity, we have ... a monomorphic language
@@ -552,7 +552,7 @@ Contents p6
   within generative lexicon theory, how best to constrain the application of
   coercion operations
 
-##4.6 Generative Lexical Models 57
+## 4.6 Generative Lexical Models 57
 
 * conservative approach to decomposition, where
   * lexical items are minimally decomposed into structured forms (or templates)
@@ -594,7 +594,7 @@ Contents p6
       richer notion of types
     * each lexical item has [a set of allowed] type shifting operators
 
-##4.7 Strong vs. Weak Compositionality 59
+## 4.7 Strong vs. Weak Compositionality 59
 
 * space (and possibly time) considerations
 * two parameters are important for characterizing semantic devices:
@@ -603,12 +603,12 @@ Contents p6
     * I have argued elsewhere [for] a high degree of cocomposition
   2. How many [senses are necessary for] a unique interpretation of the phrase
 
-#5 The Semantic Type System 61
+# 5 The Semantic Type System 61
 
 * I turn to the general motivations of linguistic theory, and specifically, to
   the overriding principles
 
-##5.1 Levels of Representation 61
+## 5.1 Levels of Representation 61
 
 * four levels of representations
   1. Argument Structure
@@ -640,7 +640,7 @@ Contents p6
   * Semantic underspecification for lexical items plays an important role
   * I call such meta-entries _lexical conceptual paradigms_ (leps)
 
-##5.2 Argument Structure 62
+## 5.2 Argument Structure 62
 
 * by far the best understood of [the four levels]
 * the way arguments are mapped onto syntactic expressions. For example,
@@ -683,7 +683,7 @@ Contents p6
   argument
   * e.g. _Mary built a **wooden** house_
 
-##5.3 Extended Event Structure 67
+## 5.3 Extended Event Structure 67
 
 * event variable for a verb within an event-based semantics is listed as a
   single argument along with the logical parameter defined by a particular
@@ -728,7 +728,7 @@ Contents p6
       * My terminal died for two days
       * Mary left town for two weeks
 
-##5.4 Qualia Structure 76
+## 5.4 Qualia Structure 76
 
 * four essential aspects of a word's meaning (or qualia):
   * constitutive:
@@ -787,7 +787,7 @@ Contents p6
         * e.g. walk
         * bind into both AGENTIVE and FORMAL qualia roles
 
-##5.5 The Interaction of Semantic Levels 81
+## 5.5 The Interaction of Semantic Levels 81
 
 * for discussion, a system
   * based on typed feature structures such as Carpenter's (1992) system, and
@@ -799,9 +799,9 @@ Contents p6
    providing constraints on the types of arguments
  * (42)
 
-#6 Qualia Structure 85 (p100)
+# 6 Qualia Structure 85 (p100)
 
-##6.1 Modes of Explanation 85
+## 6.1 Modes of Explanation 85
 
 1. Constitutive: constituents, or proper parts
   * Material
@@ -830,7 +830,7 @@ Contents p6
   _watching_, _drinking,_ and _reading_ respectively
 * adjectival submodification
 
-##6.2 The Qualia Structure of Nominals 90
+## 6.2 The Qualia Structure of Nominals 90
 
 * In this section
   * typing system necessary to characterize the semantics of NPs, and,
@@ -854,26 +854,26 @@ Contents p6
       a lexical item such as _door_ as a dotted type
 * process/result nominals such as _merger, joint venture, consolidation,_ etc
 
-###6.2.1 The Interpretation of the FORMAL Quale p110
+### 6.2.1 The Interpretation of the FORMAL Quale p110
 
 * distinguishes an object from a larger set
 * _reading_ requires not just that the complement be _information_ or
   propositional in nature, but ... it must have some _physical_ manifestation
   in order to be interpreted as symbolic
 
-###6.2.2 The Interpretation of the agentive Quale p112
+### 6.2.2 The Interpretation of the agentive Quale p112
 
 * "coming into being," in Aristotle's terms (Physics), of an object
 * will distinguish natural kinds from artifacts
   * cookies, cakes, and bread are typically baked
 
-###6.2.3 The Interpretation of the constitutive Quale p113
+### 6.2.3 The Interpretation of the constitutive Quale p113
 
 * parts or material of an object
 * what that object is logically part of, if such a relation exists. The
   relation `part_of`
 
-###6.2.4 The Interpretation of the telic Quale p114
+### 6.2.4 The Interpretation of the telic Quale p114
 
 * thematic role..., modes of explanation
 * Modes of Telic:
@@ -899,7 +899,7 @@ Contents p6
 ]
 ```
 
-###6.2.5 Mapping from Qualia p116
+### 6.2.5 Mapping from Qualia p116
 
 * consequences of qualia-based representations
   for how arguments are mapped to syntax
@@ -914,7 +914,7 @@ Contents p6
     * there is a default argument
     * (the material z used by x to bring about y)
 
-#7 Generative Mechanisms in Semantics 105
+# 7 Generative Mechanisms in Semantics 105
 
 ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
@@ -937,7 +937,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * the notion of lexical conceptual paradigm [and] canonical syntactic forms
     * how syntactic categories relate to semantic types
 
-##7.1 Coertion and Type Shifting 106 p121
+## 7.1 Coertion and Type Shifting 106 p121
 
 * Type shifting
   * first introduced as a way of allowing operators such as negation and
@@ -947,7 +947,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     developed the mechanism to allow an NP, or any expression, in general, to
     change its type
 
-###7.1.1 Parametric Polymorphism and Type Shifting
+### 7.1.1 Parametric Polymorphism and Type Shifting
 
 * Klein and Sag (1985) show how the "raised" and "non-raised" forms with
   _believe_, and Equi and non-Equi sentences with _prefer_ can be accounted for
@@ -955,11 +955,11 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * have been treated as ambiguous verbs ... in McCawley (1979) and Dowty (1979)
   concerning the complement types of the verb _want_ p124
 
-###7.1.2 Subtype Coercion p128
+### 7.1.2 Subtype Coercion p128
 
-###7.1.3 True Complement Coercion
+### 7.1.3 True Complement Coercion
 
-##7.2 Co-composition 122 p137
+## 7.2 Co-composition 122 p137
 
 * _bake_ has two meanings, ... a change of state sense and a creation sense
   (Atkins et al, 1988)
@@ -971,7 +971,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * manner co-composition, feature transcription, and light verb specification
   * [see] one phenomenon related to the semantics of light verbs in chapter 10
 
-##7.3 Selective Binding 127
+## 7.3 Selective Binding 127
 
 * Now we return to the problem of adjectival polysemy
   * In chapters 3 and 4, I discussed three types
@@ -993,9 +993,9 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * similar to fast and long
   * ... "a house that I've had for a long time,"
 
-##7.4 Semantic Selection 131
+## 7.4 Semantic Selection 131
 
-###7.4.1 Canonical Syntactic Forms p147
+### 7.4.1 Canonical Syntactic Forms p147
 
 * canonical syntactic form [of] a semantic type
 * two lexical items are truly distinguished in their semantic types
@@ -1019,9 +1019,9 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   2. the ability of the complement to metonymically reconstruct the required
      coercing type from the semantic structure within the complement
 
-#8 The Sematics of Nominals 141
+# 8 The Sematics of Nominals 141
 
-##8.1 Basic Issues 141
+## 8.1 Basic Issues 141
 
 * classification of the different nominal types
 * four major areas of concern
@@ -1038,7 +1038,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * unified types and dotted types
   4. [how] coercion and co-composition rules makes use of qualia-based info
 
-##8.2 Nominals with Unified Types 142
+## 8.2 Nominals with Unified Types 142
 
 * multiple inheritance
   * has been explored in a generative lexicon
@@ -1075,7 +1075,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * [but there are] naturally occurring object being used as a tool, or to a
     rhetorical device used as a tool of persuasion
 
-##8.3 Nominals with Complex Types 149
+## 8.3 Nominals with Complex Types 149
 
 * dot objects,
   * first discussed in chapters 6 and 7
@@ -1132,7 +1132,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * dot objects are constructed in a pair-wise recursive fashion
 * distinction is between nominals such as book and novel: narrative
 
-##8.4 Propositions and Event Descriptions 157 p172
+## 8.4 Propositions and Event Descriptions 157 p172
 
 * event descriptions and nominalizations
 * our assumptions regarding the treatment of
@@ -1163,7 +1163,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * relation between events and propositions to facts, as well as
   * further consequences to the analysis of tense as a generalized quantifier
 
-##8.5 Varieties of Nominalization 165
+## 8.5 Varieties of Nominalization 165
 
 * Davidson (1967) and Parsons (1981)
   * connection between nominalizations and events
@@ -1201,7 +1201,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * NPs themselves are not factive
   * factive interpretation [is due to] factive predicates such as inform
 
-##8.6 Lexicalisation of LCPs 177
+## 8.6 Lexicalisation of LCPs 177
 
 * _sale, purchase,_ and _transaction_
   * `give`, `take`
@@ -1213,13 +1213,13 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * If pine cones were to be edible or eaten,
     * then the semantic conceptualization ... would change as well,
 
-###8.6.1 Referential Transparency
+### 8.6.1 Referential Transparency
 
 * distinctions made in the way that NPs refer
   * pronouns, proper names, and descriptions
   * important both for anaphoric binding [and] interpretive differences
 
-#9 The Lexical Semantics of Causation 183
+# 9 The Lexical Semantics of Causation 183
 
 * how extended event structure and qualia structure interact
   to account for the polysemy associated with certain verbal alternations
@@ -1235,7 +1235,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * responsible for the syntactic binding violations
   5. modal causative, such as _risk_ and _gamble_
 
-##9.1 How Language Encodes Causation 183
+## 9.1 How Language Encodes Causation 183
 
 * causal reasoning has been elucidated in the AI and computational linguistics
   * Wilks (1978) develops a taxonomy of causal relations
@@ -1271,7 +1271,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * gives rise to the polysemy exhibited by the predicates in the
     causative/unaccusative alternation and in the raising/control alternation
 
-##9.2 Causation and Uncaussativity 188
+## 9.2 Causation and Uncaussativity 188
 
 * alternation
   * diathesis
@@ -1283,7 +1283,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * not a true adjunct, but is in fact adding specificity to the relation in
     the event associated with the AGENTIVE quale for the verb
 
-##9.3 Aspectual Causatives and Coertion 198
+## 9.3 Aspectual Causatives and Coertion 198
 
 * _begin_ and _finish_
   * it was suggested that the verb selects for ... event function
@@ -1294,11 +1294,11 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * associated with the TELIC roles of the complements are reading and drinking
 * force
 
-##9.4 Experiencer Predicates 208
+## 9.4 Experiencer Predicates 208
 
 * _kill_, _break_, psych
 
-##9.5 Modal Causatives 215
+## 9.5 Modal Causatives 215
 
 * the uncertainty of the resulting state [is encoded into] the lexical item
   * _John *risks* killing the tree by watering it so much_
@@ -1314,7 +1314,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * GOAL: that which is achieved by the act
   * POSSESSION: something valued by the victim
 
-##9.6 Conclusion 218
+## 9.6 Conclusion 218
 
 * have been ignored [in this chapter]
   * the semantics of resultative constructions, morphologically derived
@@ -1322,9 +1322,9 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * causative constructions involving the verbs _make_, and _have_, and the
   Italian causative, _fare_
 
-#10 Consequences of Generative Lexicon 221
+# 10 Consequences of Generative Lexicon 221
 
-##10.1 Co-composition and Verbal Semantics 221
+## 10.1 Co-composition and Verbal Semantics 221
 
 * [differently from] _sink, kill_, and the other verb classes [the
   representation for _open_] makes reference to a predicate with the same name
@@ -1338,7 +1338,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * Some cases of nominal polysemy [are not] straightforward
   * lamb and haddock (tőkehal)
 
-##10.2 Stage-Level Predication 225
+## 10.2 Stage-Level Predication 225
 
 * stage-level/individual-level distinction in predicate types
   * first made by Carlson (1977)
@@ -1364,16 +1364,16 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * must be engaged in this activity in order to be identified by this term
   * identified with the AGENTIVE quale of the noun
 
-##10.3 Further Applications of Coertion 230
+## 10.3 Further Applications of Coertion 230
 
-###Temporal Connectives
+### Temporal Connectives
 
 * before, after, while, and during,
 * lexically-encoded linguistic knowledge and pragmatic effects on
   interpretation is studied in more detail in Asher and Lascarides (1995) and
   Nunberg (1995)
 
-###Functional Prepositions and the Role of Qualia
+### Functional Prepositions and the Role of Qualia
 
 * _at_ and _in_
 * _at_ seems to only select locations that have in their qualia structure a
@@ -1386,9 +1386,9 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     such as _in_ (and _at_), they predicate ... the activity associated
   * "in hospital"
 
-##10.4 Linguistic versus Commonsense Knowledge 232 p247
+## 10.4 Linguistic versus Commonsense Knowledge 232 p247
 
-###WordNet (Note 7) p282
+### WordNet (Note 7) p282
 
 * the way that it structures these three categories
   * Nouns are organized into topical hierarchies [along] hyponymy
@@ -1398,7 +1398,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * two classes: ascriptive and nonascriptive
       The former involves a typically bipolar
 
-###0
+### 0
 
 * Herzog and Rollinger (1991), and in particular, Lang (1991)
   * there appears to be a continuum between these two types of knowledge
@@ -1419,20 +1419,20 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * rhetorical relations in discourse and
     * pragmatic constraints on co-reference
 
-##10.5 Lexical Inference and Rhetoric 236 p251
+## 10.5 Lexical Inference and Rhetoric 236 p251
 
 * enthymemic inference in the structure of rhetoric
   * that is, the conditions which license ellipsis in persuasive discourse
 * ellipsed proposition is the major premise
 
-##10.6 Summary 238
+## 10.6 Summary 238
 
 * the natural language vocabulary is itself the data set of primitives
 * left unanswered in the current work
   * details of interpretation concerning quantification, and
   * connections to pragmatic and commonsense inferencing
 
-#Preface ix
+# Preface ix
 
 * My aim in the current work has been to outline what I feel is the necessary
   infrastructure for a truly generative, highly distributed, and lexically-

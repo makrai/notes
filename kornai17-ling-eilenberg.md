@@ -2,13 +2,13 @@ Linguistic computation by Eilenberg machines
 András Kornai
 2017 mol
 
-#Intro
+# Intro
 
 * Section 2 we consider assigning Abstract Meaning Representations (AMRs) to
   strings by graph grammars as a typical example of linguistics computation
   with a semantic goal (Koller, 2015).
 
-#2 Hypergraph rewriting
+# 2 Hypergraph rewriting
 
 * ACR, with the early work such as Quillian, (1962) actually preceding
   Montague Grammar by nearly a decade, has strong conceptual affiliation to
@@ -39,7 +39,7 @@ András Kornai
   reading will be the only one surviving from all nondeterministic linking
   attempts.
 
-#Conclusion
+# Conclusion
 
 * this is the first ever theory that spells out in detail the9 form that
   meaning postulates must take (for a survey in MG, see Zimmermann, 1999) 

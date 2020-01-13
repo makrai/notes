@@ -2,7 +2,7 @@ Towards universal paraphrastic sentence embeddings
 John Wieting Mohit Bansal Kevin Gimpel Karen Livescu
 ICLR 2016
 
-#Abstract
+# Abstract
 
 * general-purpose, paraphrastic sentence embeddings
   based on supervision from the Paraphrase Database (Ganitkevitch+ 2013)
@@ -26,7 +26,7 @@ ICLR 2016
 
 http://ttic.uchicago.edu/~wieting
 
-#1 Intro
+# 1 Intro
 
 * [domain independent? embeddings] used effectively for many downstream tasks
   * Turian+ 2010 Word representations: A ... general method for semi-supervised
@@ -59,7 +59,7 @@ http://ttic.uchicago.edu/~wieting
     17.1 points higher than averaging GloVe vectors 2 and
     12.8 points higher than averaging PARAGRAM-SL 999 vectors
 
-#2 Related work
+# 2 Related work
 
 * vector for a word sequence
   * Mitchell & Lapata (2008; 2010) comparing many functions
@@ -93,21 +93,21 @@ http://ttic.uchicago.edu/~wieting
   (Weston+ 10; Yih+ 11; Huang+ 13; Hermann & Blunsom, 14; Socher+ 14;
   Faruqui & Dyer, 14; Bordes+ 14b;a; Lu+ 15) [and] our prior work (Wieting+ 15)
 
-#4 Experiments
+# 4 Experiments
 
-##4.2 Transfer learning
+## 4.2 Transfer learning
 
-##4.3 Paragram-phrase xxl
+## 4.3 Paragram-phrase xxl
 
-##4.4 Using representations in learned models
+## 4.4 Using representations in learned models
 
-#5 Discussion
+# 5 Discussion
 
 * length
   * while the LSTM models do perform better on the shortest text pairs, they
     are still outperformed, at all lengths, by the PARAGRAM-PHRASE model.
 
-#6 Qualitative analysis
+# 6 Qualitative analysis
 
 * To explore [differences between PARAGRAM-PHRASE and PARAGRAM-SL 999 vectors]
   that were used for initialization, 
@@ -129,7 +129,7 @@ http://ttic.uchicago.edu/~wieting
     * we ... used the reciprocal of [the probability] scores 
     * indicating that learned weights are more sophisticated than inv freq
 
-#7 Conclusion
+# 7 Conclusion
 
 * Future work will focus on improving our embeddings by 
   * effectively handling undertrained words

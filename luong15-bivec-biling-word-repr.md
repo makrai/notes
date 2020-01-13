@@ -5,7 +5,7 @@ NAACL-HLT 2015 Denver
 All our code, data, and embeddings are publicly available at
 http://stanford.edu/~lmthang/bivec
 
-#Abstract
+# Abstract
 
 * bilingual tasks
   * most often the crosslingual document classification (CLDC) evaluation
@@ -19,14 +19,14 @@ http://stanford.edu/~lmthang/bivec
   * best embeddings from past bilingual representation work
   * by a large margin in the monolingual word similarity evaluation
 
-#1 Introduction
+# 1 Introduction
 
 * representations where similar-meaning words in two languages are 
   embedded close together in the same high-dimensional space
 
-#2 Background
+# 2 Background
 
-##2.1 Monolingual Models
+## 2.1 Monolingual Models
 
 * Existing approaches to distributed word representation learning
   * nem tudom, hogy mi a különbség
@@ -38,7 +38,7 @@ http://stanford.edu/~lmthang/bivec
   * noise contrastive estimation method (Gutmann and Hyvärinen, 2012)
 * In our evaluation, we consider ... the sum of [the] input and output vectors
 
-##2.2 Bilingual Models
+## 2.2 Bilingual Models
 
 * Bilingual Mapping (Mikolov+ 2013b)
 * Monolingual Adaptation
@@ -53,7 +53,7 @@ http://stanford.edu/~lmthang/bivec
     Chandar A P+ 2014; Gouws+ 2014
   * none of these work has [been] examined ... using monolingual metrics
 
-#3 Our Approach
+# 3 Our Approach
 
 * joint objective similar to (Klementiev+ 2012; Gouws+ 2014): 
   `α(Mono_1 + Mono_2 ) + βBi` 
@@ -61,7 +61,7 @@ http://stanford.edu/~lmthang/bivec
   the same type of models for both of our monolingual and bilingual constraints
   * skipgram model with negative sampling
 
-##3.2 Bilingual Skipgram Model (BiSkip)
+## 3.2 Bilingual Skipgram Model (BiSkip)
 
 * predict words cross-lingually
 * four skipgram models jointly
@@ -70,20 +70,20 @@ http://stanford.edu/~lmthang/bivec
 * BiSkip-MonoAlign
   * monotonic alignments
 
-#4 Experiments
+# 4 Experiments
 
-##4.1 Data
+## 4.1 Data
 
 * Europarl v7 corpus
 * (49.7M English tokens and 52.0M German tokens)
 
-##4.2 Training
+## 4.2 Training
 
 * 10 epochs
 
-##4.3 Evaluation Tasks
+## 4.3 Evaluation Tasks
 
-###4.3.1 Word Similarity
+### 4.3.1 Word Similarity
 
 * datasets:
   * For English,
@@ -95,7 +95,7 @@ http://stanford.edu/~lmthang/bivec
     * then asked two German speakers to help us verify these
       * we fixed 23 translation pairs
 
-###4.3.2 Cross-lingual Document Classification
+### 4.3.2 Cross-lingual Document Classification
 
 * follow Klementiev+ (2012)
 * train with 1000 and test on 5000 RCV-labeled documents
@@ -108,7 +108,7 @@ http://stanford.edu/~lmthang/bivec
 * transfer learning of models 
   from a resource-rich language into a resource-poor one
 
-#5 Results
+# 5 Results
 
 * CLDC
   * we compare over
@@ -130,12 +130,12 @@ http://stanford.edu/~lmthang/bivec
     * the embedding dimension
     * Past work have demonstrated that (Pennington+ 2014; Faruqui & Dyer, 2014)
 
-#6 Analysis
+# 6 Analysis
 
-##6.1 Nearest Neighbor Words
-##6.2 Embedding Visualization
+## 6.1 Nearest Neighbor Words
+## 6.2 Embedding Visualization
 
-#7 Related Work
+# 7 Related Work
 
 * dimensionality reduction of word representations
   * from a cooccurrence matrix of words and contexts
@@ -164,7 +164,7 @@ http://stanford.edu/~lmthang/bivec
       * bootstrapping style to iteratively enlarge the initial lexicon
         (Peirsman and Padó, 2010; Vulić and Moens, 2013)
 
-#8 Conclusion
+# 8 Conclusion
 
 * would be interesting to
   * extend our method to multiple languages

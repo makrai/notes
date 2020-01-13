@@ -2,12 +2,12 @@ Advances in Pre-Training Distributed Word Representations
 T Mikolov, Edouard Grave, Piotr Bojanowski, Christian Puhrsch, Armand Joulin
 LREC 2018
 
-#Abstract
+# Abstract
 
 * a combination of known tricks that are however rarely used together
 * outperform the current SOTA by a large margin on a number of tasks
 
-#Introduction
+# Introduction
 
 * known modifications and data pre-processing strategies
   * position dependent features introduced by Mnih and Kavukcuoglu (2013),

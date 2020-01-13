@@ -5,7 +5,7 @@ Polyglot: Distributed Word Representations for Multilingual NLP
 TODO
     a cikk óta volt-e előrelépés?
 
-#2 Related Work
+# 2 Related Work
 
 * variety of unsupervised feature learning methods ...  unilaterally improve
   the performance of supervised learning tasks (Turian+ 2010)
@@ -15,7 +15,7 @@ TODO
   variety of term-based evaluation tasks
 * we: similar network architecture to the one SENNA used
 
-#3 Distributed Word Representation
+# 3 Distributed Word Representation
 
 * predict the last word of a phrase that consists of n words
 * In our work, we start from the example construction method outlined in
@@ -26,7 +26,7 @@ TODO
 * 2n + 1
 * output: 1 score
 
-#4 Corpus Preparation
+# 4 Corpus Preparation
 
 * process Wikipedia markup, we first extract the text using a modified version
   of the Bliki engine
@@ -39,7 +39,7 @@ TODO
   * groups
   * morphology
 
-#5 Training
+# 5 Training
 
 * parameters
   * window size 2n + 1 = 5,
@@ -65,11 +65,11 @@ TODO
   * we divide each layer by the fan in of that layer, and we consider the
     embeddings layer to have a fan in of 1
 
-#6 Qualitative Analysis
+# 6 Qualitative Analysis
 
 * Euclidean
 
-#7 Sequence Tagging
+# 7 Sequence Tagging
 
 * Here we analyze the quality of the models we have generated
 * part of speech tagging
@@ -81,7 +81,7 @@ TODO
 * universal tagset proposed by (Petrov+ 2012)
 * (we do not add OOV words seen during training)
 
-#8 Conclusion
+# 8 Conclusion
 
 * We hope that these resources will advance the study of possible pair-wise
   mappings between embeddings of several languages and their relations

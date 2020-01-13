@@ -1,7 +1,7 @@
 R Navigli SOFSEM 2012: Theory and practice of computer …, 2012 Springer
 A quick tour of word sense disambiguation, induction and related approaches
 
-#Introduction
+# Introduction
 
 * see [53] for a complete survey
   * Navigli, R.: Word Sense Disambiguation: A survey. ACM Computing Surveys
@@ -12,9 +12,9 @@ A quick tour of word sense disambiguation, induction and related approaches
   * Section 5 we discuss other techniques for text understanding
   * concluding remarks in Section 6.
 
-#3 Word Sense Induction p7
+# 3 Word Sense Induction p7
 
-##3.1 Techniques
+## 3.1 Techniques
 
 * Context clustering:
 * Word clustering:
@@ -44,14 +44,14 @@ A quick tour of word sense disambiguation, induction and related approaches
     * Latent semantic word sense induction and disambiguation
     * ACL 11
 
-##3.2 Evaluation
+## 3.2 Evaluation
 * a specific instance of clustering
 * Unsupervised evaluation
 * Supervised evaluation: 
   * the output of WSI is evaluated in a WSD task
 * Within an application:
 
-#6 Conclusion
+# 6 Conclusion
 
 * improve the state of the art in fields such as search result clustering
   [54,13] and lexicography [20].

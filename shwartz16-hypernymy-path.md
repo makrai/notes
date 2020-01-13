@@ -5,7 +5,7 @@ Vered Shwartz, Yoav Goldberg, Ido Dagan
 
   Our code and data are available in: https://github.com/vered1986/HypeNET
 
-#Abstract
+# Abstract
 
 * Detecting hypernymy relations is a key task in NLP, which is addressed in the
 literature using two complementary approaches. 
@@ -18,7 +18,7 @@ literature using two complementary approaches.
   integrate both path-based and distributional signals, significantly improving
   upon the state-of-the-art on this task.
 
-#1 Intro
+# 1 Intro
 
 * For instance, knowing that Tom Cruise is an actor
 * For a couple of decades, this task has been addressed by two types of
@@ -39,7 +39,7 @@ literature using two complementary approaches.
   we followed previous methodology of constructing a dataset based on
   knowledge resources.
 
-#2 Background
+# 2 Background
 
 We 
   * introduce the two main approaches for hypernymy detection: distributional
@@ -47,7 +47,7 @@ We
   * discuss the recent use of recurrent neural networks in the related task of
     relation classification (Section 2.3).
 
-##Distributional Methods
+## Distributional Methods
 
 * Earlier methods developed unsupervised measures for hypernymy, 
   * symmetric similarity measures (Lin, 1998), and followed by 
@@ -72,9 +72,9 @@ We
         Inclusive yet selective: Supervised distributional hypernymy detection
         COLING, pages 1025–1036.
 
-##Path-based Methods
+## Path-based Methods
 
-##RNNs for Relation Classification
+## RNNs for Relation Classification
 
 * classify the relation that is expressed between two target terms in a given
   sentence to one of predefined relation classes
@@ -87,14 +87,14 @@ We
   techniques showed good performance in capturing the indicative information
   in such paths.
 
-#3 LSTM-based Hypernymy Detection
+# 3 LSTM-based Hypernymy Detection
 
-#4 Dataset
+# 4 Dataset
 
-#5 Baselines
+# 5 Baselines
 
-#6 Results
+# 6 Results
 
-#7 Analysis
+# 7 Analysis
 
-#8 Conclusion
+# 8 Conclusion

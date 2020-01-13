@@ -1,4 +1,4 @@
-#Q1: What is encoded/captured in a vector? 27
+# Q1: What is encoded/captured in a vector? 27
 
 * Yossi Adi, Einat Kermany, Yonatan Belinkov, Ofer Lavi, Y Goldberg
   Fine-grained Analysis of Sentence Embeddings Using Auxiliary Prediction Tasks
@@ -23,7 +23,7 @@
   Exploring Semantic Properties of Sentence Embeddings
   ACL 2018
 
-#Q2: what kinds of linguistic structures can be captured by an RNN? 43
+# Q2: what kinds of linguistic structures can be captured by an RNN? 43
 
 * T Linzen
   Assessing the Ability of LSTMs to Learn Syntax-Sensitive Dependencies
@@ -45,7 +45,7 @@
   Shauli Ravfogel, Francis M. Tyers, Yoav Goldberg 
   EMNLP 2018
 
-#Q3: how did a given model reach a decision?  
+# Q3: how did a given model reach a decision?  
   how is the architecture capturing the phenomena?
 
 * Representation of linguistic form and function in recurrent neural networks
@@ -58,13 +58,13 @@
   Alon Jacovi, Oren Sar Shalom, Yoav Goldberg
   EMNLP 2018
 
-#Q4: when do models fail? what can't they do? 56
+# Q4: when do models fail? what can't they do? 56
 
 * Breaking NLI Systems with Sentences that Require Simple Lexical Inferences
   Max Glockner, Vered Shwartz, Yoav Goldberg 
   2018 ACL
 
-#Q5 Q5: What is the representation power of RNNs? 78
+# Q5 Q5: What is the representation power of RNNs? 78
 
 * Recurrent Neural Networks as Weighted Language Recognizers
   Y Chen
@@ -76,7 +76,7 @@
   G Weiss, Goldberg, Yahav
   2018
 
-#Q6 Extracting an FSA from an RNN 116
+# Q6 Extracting an FSA from an RNN 116
 
 * Extracting Automata from Recurrent Neural Networks
     [Using Queries and Counterexamples](https://arxiv.org/abs/1711.09576)

@@ -2,7 +2,7 @@ Oren Melamud, David McClosky, Siddharth Patwardhan, Mohit Bansal
 The Role of Context Types and Dimensionality in Learning Word Embeddings
 2016 naacl
 
-#Abstract
+# Abstract
 
 * how using different types of context to learn skip-gram word embeddings
   affects performance on a wide range of intrinsic and extrinsic NLP tasks.
@@ -17,7 +17,7 @@ The Role of Context Types and Dimensionality in Learning Word Embeddings
 * we propose a new variant of the skip-gram model that learns word embeddings
   from weighted contexts of substitute words.
 
-#1 Intro
+# 1 Intro
 
 * Bansal+ (2014) and Levy and Goldberg (2014) showed that using
   syntactic contexts rather than window contexts in word2vec captures

@@ -6,9 +6,9 @@ TACL Volume 7, 2019 p.49-72
   (Tables SM1, SM2, and SM3, respectively), available at
   http://boknilev.github.io/nlp-analysis-methods
 
-#Abstract
+# Abstract
 
-#Intro
+# Intro
 
 * [deep learning in NLP ...  improved] various tasks, including
   * language modeling (Mikolov+ 2010; Jozefowicz+ 2016),
@@ -26,24 +26,24 @@ TACL Volume 7, 2019 p.49-72
   * In theory, one could observe the importance assigned by statistical NLP
     models to such features in order to gain a better understanding
 
-#2 [analysis] work
+# 2 [analysis] work
 
 * We also point to limitations in current methods for answering this question
 
-#3 visualization methods
+# 3 visualization methods
 
 * difficulty in evaluating visualization work
 
-#4 compilation of challenge sets, or test suites, for fine-grained evaluation
+# 4 compilation of challenge sets, or test suites, for fine-grained evaluation
 
-#5 adversarial examples
+# 5 adversarial examples
 
 * dealing with text as a discrete input and how different studies handle them
 
-#6 explaining model predictions
+# 6 explaining model predictions
 
 * relatively underexplored area, and we call for more work in this direction
 
-#7 a few other methods
+# 7 a few other methods
 
-#8 conclusion ... and potential research directions
+# 8 conclusion ... and potential research directions

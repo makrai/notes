@@ -2,7 +2,7 @@ A Flexible, Corpus-Driven Model of Regular and Inverse Selectional Preferences
 Katrin Erk, Sebastian Padó, Ulrike Padó
 2010 CL
 
-#Abstract
+# Abstract
 
 * inverse selectional preferences, that is, 
   * plausibility scores for predicates given argument heads.

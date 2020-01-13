@@ -2,7 +2,7 @@ Ivan Vulić, Goran Glavaš, Nikola Mrkšić, Anna Korhonen
 Post-Specialisation: Retrofitting Vectors of Words Unseen in Lexical Resources
 naacl 2018
 
-#Abstract
+# Abstract
 
 * Word vector specialisation (also known as retrofitting) is a 
   * portable, light-weight approach :-) ? to 

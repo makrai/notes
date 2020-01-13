@@ -5,7 +5,7 @@ ACL 2017
 This is a modified version of a paper originally published at ACL 2017 with
 updated results and discussion in section 5
 
-#Ruder
+# Ruder
 
 * Transfer learning is another popular post-hoc analysis technique
   * representations learned for task A (typically a high-level task) are
@@ -19,7 +19,7 @@ updated results and discussion in section 5
   * Language Models know about NER and chunking
   * speech+vision representations know about various semantic tasks
 
-#Abstract
+# Abstract
 
 * we analyze ... neural MT models at various levels of granularity and
 * evaluate the quality of the representations for learning morphology through
@@ -30,7 +30,7 @@ updated results and discussion in section 5
   * target language, and
   * encoder vs. decoder representations
 
-#1 Introduction
+# 1 Introduction
 
 * NMT systems have become [SOTA especially since]
   sequence-to-sequence models and attention
@@ -79,7 +79,7 @@ updated results and discussion in section 5
     * attention mechanism affects the quality of the encoder representations
       more than that of the decoder representations
 
-#2 Methodology
+# 2 Methodology
 
 * encoder-decoder (Sutskever+ 14)
 * In this work, we use LSTM (Hochreiter and Schmidhuber, 1997) encoder-decoders
@@ -96,9 +96,9 @@ updated results and discussion in section 5
     * similar trends to the non-linear case, but
     * overall lower results; Qian+ (2016b) reported similar findings
 
-#3 Data 3
+# 3 Data 3
 
-##Language pairs
+## Language pairs
 
 * several language pairs,
 * including morphologically-rich languages, that [ received ] attention in MT
@@ -107,19 +107,19 @@ updated results and discussion in section 5
     * Arabic-Hebrew, two languages with rich and similar morphological sys
     * Arabic-German, two languages with rich but different morphologies
 
-##MT data
+## MT data
 
 * the WIT 3 corpus of TED talks (Cettolo+ 2012; Cettolo, 2016) made available
 
-##Annotated data [for] POS and morphological classifiers:
+## Annotated data [for] POS and morphological classifiers:
 
 * goldstandard and predicted tags
 * train and test our classifiers on predicted annotations, and similarly on
   gold annotations, when we have them. We report both results wherever availabl
 
-#4 Encoder Analysis
+# 4 Encoder Analysis
 
-##4.1 Effect of word representation
+## 4.1 Effect of word representation
 
 * word representations extracted with different encoders
   * word-based model uses a word embedding matrix which is ... learned in NMT
@@ -129,14 +129,14 @@ updated results and discussion in section 5
     especially in the case of morphologically-richer languages like ar and cz
   * also manifests in better translation quality (BLEU), as shown in Table 2
 
-###Impact of word frequency
+### Impact of word frequency
 
 * e.g. Arabic POS and morphological tagging. Figure 3 shows the effect
 * word-based vs. char-based reprs, obtained from the encoder of the Arabic-He
   (other language pairs are similar)
 * char-based model is superior [especially] on OOV words (+37.6% POS, +32.7%)
 
-###Analyzing specific tags
+### Analyzing specific tags
 
 * Figure 5 we plot confusion matrices for POS tagging
 * word-based and char-based representations ... share similar misclassifs
@@ -151,7 +151,7 @@ updated results and discussion in section 5
   * especially plural nouns (NNS, DT+NNS): the char-based model really shines,
   * in Arabic ... expressed by certain suffixes (“-wn/yn” for masc. plural)
 
-##4.2 Effect of encoder depth
+## 4.2 Effect of encoder depth
 
 * Modern NMT systems use very deep architectures with up to 8 or 16 layers
   (Wu+ 2016; Zhou+ 2016)
@@ -166,7 +166,7 @@ updated results and discussion in section 5
 * similar pattern was recently observed in a joint language-vision deep RNN
   (Gelderloos and Chrupała, 2016)
 
-##Effect of target language
+## Effect of target language
 
 * While translating from morphologically-rich languages is challenging,
   translating into such languages is even harder
@@ -192,7 +192,7 @@ updated results and discussion in section 5
   when it is actually learning to translate rather than merely memorizing
 * consistently true also for char-based experiments, and in other lang pairs
 
-#5 Decoder Analysis 7
+# 5 Decoder Analysis 7
 
 * extract features for words in the target sentence
 * These features are used to train a classifier on POS or morphological tagging
@@ -214,7 +214,7 @@ updated results and discussion in section 5
     * In the following section
       the role of the attention mechanism in the division of labor encd vs decd
 
-##5.1 Effect of attention
+## 5.1 Effect of attention
 
 * during decoding, the attention weights are combined with the decoder’s hidden
   states to generate the current translation
@@ -227,7 +227,7 @@ updated results and discussion in section 5
     * only mildly hurts the quality of the decoder representations. It seems
     * contrary to our hypothesis
 
-##5.2 Effect of word representation
+## 5.2 Effect of word representation
 
 * word-based versus character CNN representations on the decoder side
 * decoder predictions are still done at the word-level, which
@@ -240,9 +240,9 @@ updated results and discussion in section 5
       not in English-to-Arabic.  A
     * possible explanation: decoder’s predictions are still done at word level
 
-#6 Related Work 8
+# 6 Related Work 8
 
-##Analysis of neural models The opacity of neural networks has motivated
+## Analysis of neural models The opacity of neural networks has motivated
 
 * visualizes hidden unit activations in recurrent neural networks
   (Elman, 1991; Karpathy+ 2015; Kádár+ 2016; Qian+ 2016a). While such
@@ -258,7 +258,7 @@ updated results and discussion in section 5
   * Vylomova+ (2016) also analyze different representations for
     morphologically-rich languages in MT, but do not measure the repr quality
 
-##Word representations in MT systems that deal with morphologically-rich langs
+## Word representations in MT systems that deal with morphologically-rich langs
 
 * word segmentation
   (Nieflen and Ney, 2000; Koehn and Knight, 2003; Badr+ 2008) and
@@ -281,7 +281,7 @@ updated results and discussion in section 5
   (Kim+ 2015; Belinkov and Glass, 2016; Costa-jussà and Fonollosa, 2016;
   Jozefowicz+ 2016; Sajjad+ 2017)
 
-#7 Conclusion
+# 7 Conclusion
 
 * Character-based representations are better than word-based ones for learning
   morphology, especially in rare and unseen words

@@ -2,7 +2,7 @@ Issues in evaluating semantic spaces using word analogies
 Tal Linzen
 2016
 
-#1 Introduction
+# 1 Introduction
 
                                x = a' − a + b. 
 

@@ -2,7 +2,7 @@ Training and Evaluating a German Named Entity Recognizer with Sem Genization
 Manaal Faruqui and Sebastian Padó
 in Pinkal+ 2010 Semantic Approaches in Natural Language Processing
 
-#2 Named Entity Recognition with Semantic Generalization 130
+# 2 Named Entity Recognition with Semantic Generalization 130
 
 * use Stanford’s Named Entity Recognition system
   * uses a linear-chain Conditional Random Field to predict the most likely

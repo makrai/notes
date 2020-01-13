@@ -3,7 +3,7 @@ Selecting among three-mode principal component models of different types and
 complexities: A numerical convex hull based method
 British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
 
-#Abstract
+# Abstract
 
 * three-mode principal component models [ for ] three-way, three-mode data,
   * Candecomp/Parafac, Tucker3, Tucker2, and Tucker1 models. The following
@@ -15,7 +15,7 @@ British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
   except for Tucker3 data arrays
   with at least one small mode and a relatively large amount of error
 
-#1. Introduction
+# 1. Introduction
 
 * three-mode principal component models consists of the
   * Candecomp/Parafac (CP), Tucker3 (T3), Tucker2 (T2), and Tucker1 (T1) models
@@ -61,15 +61,15 @@ British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
 * how the number of free parameters is defined.  Furthermore, a description is
 * how to find the higher boundary of the convex hull as well as an elbow in it
 
-##3.1. Kiers and der Kinderen’s quick method for ... approximate T3 and T2
+## 3.1. Kiers and der Kinderen’s quick method for ... approximate T3 and T2
 
-##3.2. The number of free parameters
+## 3.2. The number of free parameters
 
-##3.3. Ceulemans and Van Mechelen’s procedure for finding solutions
+## 3.3. Ceulemans and Van Mechelen’s procedure for finding solutions
 
-##3.4. Selecting among the hull solutions: A[n] implementation of the ...  test
+## 3.4. Selecting among the hull solutions: A[n] implementation of the ...  test
 
-##3.5. Stepwise overview of the ... model selection procedure
+## 3.5. Stepwise overview of the ... model selection procedure
 
 * one should not use this heuristic too rigidly, but rather as a helpful tool
   for making a first selection of interesting solutions

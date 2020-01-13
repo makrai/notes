@@ -4,7 +4,7 @@ IJCNLP 2017
 
 Our code is available at https://github.com/ boknilev/nmt-repr-analysis
 
-#Abstract
+# Abstract
 
 * Our quantitative analysis yields interesting insights regarding
   * higher layers are better at learning semantics while
@@ -13,7 +13,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
     especially with higher quality NMT models
     * keeping the English source-side fixed
 
-#1 Introduction
+# 1 Introduction
 
 * exploring what kind of linguistic information such models learn on
   * morphological (Vylomova+ 2016; Belinkov+ 2017) and
@@ -50,16 +50,16 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
 
 # 3 The data and experimental setup. In
 
-##3.1 Data
+## 3.1 Data
 
-###MT
+### MT
 
 * fully-aligned United Nations corpus for training NMT models (Ziemski+ 2016),
 * six languages: Ar Zh En Fr Es Ru
 
 # 4 Results
 
-##4.1
+## 4.1
 
 * Comparing layers 1 through 4, we see that
   * in 3/5 target languages (Ar, Ru, Zh), POS tagging accuracy peaks at layer 1
@@ -79,7 +79,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
     * especially true with higher layer representations (around 5% below lay 4)
   * excellent sentence recreation capabilities (96.6 BLEU).  This indicates
 
-##4.2 Effect of target language
+## 4.2 Effect of target language
 
 * Belinkov+ (2017)reported a fairly consistent effect of the target language on
   the quality of NMT encoder representations for POS and morphological tagging
@@ -91,7 +91,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
   * some of the differences [may] disappear when the NMT model is better
   * To verify this, we trained systems using a smaller data size (200K sents)
 
-##4.3 Analysis at the semantic tag level
+## 4.3 Analysis at the semantic tag level
 
 * The SEM tags are grouped in coarse-grained categories such as
   e.g. events, names, time, and logical expressions (Bjerva+ 2016). In Figure 2
@@ -120,7 +120,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
     * a limitation of the NMT system at learning this type of semantic classes
     * many named entities are out of vocabulary words for the NMT system
 
-##4.4 Analyzing discourse relations
+## 4.4 Analyzing discourse relations
 
 * cases of disagreement between ... layer 1 and layer 4
 * We focus on discourse relations, as they show the largest improvement 1 --> 4
@@ -129,13 +129,13 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
 * NIL, a tag for punctuation marks without semantic content (e.g.  end-of-sent)
 * identifying the discourse function requires a fairly large context
 
-##4.5 -Other architectural variants
+## 4.5 -Other architectural variants
 
 * bidirectional encoder and residual connections. We also experiment with NMT
 * different depths. Our motivation in this section is to see if the patterns we
   observed thus far hold in different NMT architectures
 
-###Bidirectional LSTMs encoder
+### Bidirectional LSTMs encoder
 
 * ubiquitous in NLP and also ... some improvement as NMT encoders (Britz+ 2017)
 * We ... note improvements in both translation (+1-2 BLEU) and SEM tagging
@@ -144,14 +144,14 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
   * higher layer representations improve SEM tagging, while
   * POS tagging peaks at layer 1, in line with our previous observations
 
-###Residual connections
+### Residual connections
 
 * useful for SEM tagging (Bjerva+ 2016)
 * small but consistent improvements in both translation and POS and SEM tagging
 * layers as before: POS tagging does not benefit from features from the upper
   * SEM tagging improves with layer 4 representations
 
-###Shallower MT models In comparing network depth in NMT,
+### Shallower MT models In comparing network depth in NMT,
 
 * Britz+ (2017) found that encoders with 2 to 4 layers performed the best
 * we report here results using ... models trained originally with 2 and 3 lays
@@ -159,7 +159,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
   POS tagging does not benefit from upper layers, while
   * SEM tagging does, although the improvement is rather small in the shallower
 
-#5 Related Work
+# 5 Related Work
 
 * visualization of hidden units (Elman, 1991; Karpathy+ 2015; Kádár+ 2016;
   Qian+ 2016a), which provide illuminating, but often anecdotal information on
@@ -170,7 +170,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
   (2017), who also used hidden vectors from neural MT models to pred ling prop
   * they focused on ryntax and morphology, respectively
 
-#6 Conclusion
+# 6 Conclusion
 
 * future, we would like to extend this work to
   * other syntactic and semantic tasks that requirebuilding relations such as

@@ -2,7 +2,7 @@ A Stylometric Inquiry into Hyperpartisan and Fake News
 Martin Potthast, Johannes Kiesel, Kevin Reinartz, Janek Bevendorff, Benno Stein
 2017
 
-#Intro
+# Intro
 
 * “fake news” encompasses the observation that, 
  * in social media, a certain kind of ‘news’ spread much more successfully
@@ -35,7 +35,7 @@ Martin Potthast, Johannes Kiesel, Kevin Reinartz, Janek Bevendorff, Benno Stein
   4. methodology including our variant of Unmasking
   5. results of the aforementioned experiments.
 
-#2 Related work
+# 2 Related work
 
 * Fake news detection
   * Knowledge-based (also called fact checking)

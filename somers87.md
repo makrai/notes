@@ -6,7 +6,7 @@ parts:
   1. problems for case
   1. valency and case in comp ling
 
-#part one: theories
+# part one: theories
 
 ## 1 Valency
 
@@ -54,12 +54,12 @@ parts:
 
 ## 2 Fillmore
 
-###2.1 intro
+### 2.1 intro
 
 * the most important problems for Case grammar [are treated in Part II]
   * including the definition of some of the cases themselves
 
-###2.2 phase I. Up to and including 'The Case for Case'
+### 2.2 phase I. Up to and including 'The Case for Case'
 
 * A proposal concerning English prepositions (1966)
 * Toward a modern theory of Case (1966)
@@ -86,7 +86,7 @@ parts:
   * deep cases are relations, p36
     * P: proposition
 
-###2.3 phase II. Semantics and the lexicon
+### 2.3 phase II. Semantics and the lexicon
 
 * the cases as labels for roles of participants in events
 * Lexical entries for verbs (1968)
@@ -110,7 +110,7 @@ parts:
     * locative and time
     * lexical decomposition and benefactive
 
-###2.4 phase III. Recent extensions
+### 2.4 phase III. Recent extensions
 
 * discourse analysis, speech-act theo, and artificial intelligence
 * Subjects, speakers and roles (1972)
@@ -142,9 +142,9 @@ parts:
 
 * Case grammar by John Anderson, (1968 and) 1971
   
-###3.2 Localism 
-###3.3 Formalism 
-###3.4 Essential features of the theory
+### 3.2 Localism 
+### 3.3 Formalism 
+### 3.4 Essential features of the theory
 
 * dependency rather than constituency
 * prepositions are surface realizations of the cases
@@ -178,7 +178,7 @@ parts:
   -                       loc nom
   ```
 
-###3.5 Discussion
+### 3.5 Discussion
 
 * context-sensitive grammar
 * importance of morpho-syntactic evidence
@@ -199,11 +199,11 @@ parts:
 
 ## 4 Chafe /tSeif/ (1970), Cook (1979), Longacre (1976): Verb features
 
-###4.1 Introduction
+### 4.1 Introduction
 
 * meaning-oriented
 
-###4.2 Chafe's verb features
+### 4.2 Chafe's verb features
 
 * state and non-state
   * state: single argument
@@ -217,12 +217,12 @@ parts:
 * relational roles: Patient and Agent
 * no argument: ambient verbs
 
-###4.3 Derivational features
+### 4.3 Derivational features
 
 * relation between verbs of different types
 * diagram p66
 
-###4.4 Further relations and features
+### 4.4 Further relations and features
 
 * Experiencer + Patient
   * state: want, know, like
@@ -248,13 +248,13 @@ parts:
   * action-process throw, put
   * always optional
 
-###4.5 Cook's case frame matrix (1971...)
+### 4.5 Cook's case frame matrix (1971...)
 
 * five cases are 'propositional' because they are introduced by verb features
 * omits Instrument
 * conflates Patient and Complement to Object
 
-###4.4 verb types combined with either no or one relation, Figure 6
+### 4.4 verb types combined with either no or one relation, Figure 6
 
 * a locative-ról szólót nem értem
 * criticism: what is derivation?  
@@ -263,7 +263,7 @@ parts:
   * lexicalised
   * deletable: say Exp ~ optional
 
-###4.6 Longacre's case frame scheme
+### 4.6 Longacre's case frame scheme
 
 * 'more detailed and more irregular' than Cook
 * ten nuclear cases
@@ -290,7 +290,7 @@ parts:
   * ezt a részt átugrottam
 *  implemented in the PTOSYS system, Somers and Johnson 1979
 
-###4.7 Vendler (1967)/Dowty (1979) event classification
+### 4.7 Vendler (1967)/Dowty (1979) event classification
 
 * independent of Chafe and Case grammar, linguistic philosophers
 * dates back to Aristotle and...
@@ -365,7 +365,7 @@ parts:
   * the range of semantic functions
   * mapping semant functions onto synt functions: semant func hier
 
-###6.2 Predications
+### 6.2 Predications
 
 * nuclear arguments and satellites (complement and adjunct)
 * the range of semantic functions for arguments and satellites overlaps
@@ -384,7 +384,7 @@ parts:
   * +/- Control, +/- Dynamic !
   * Zero function: Roses (Zer) are red. The cup (Zer) is on the table.
 
-###6.3 The semantic functions
+### 6.3 The semantic functions
 
 * the roles semantic functions play
   * fundamental semantic relations
@@ -401,7 +401,7 @@ parts:
   * absence of Pat of Obj (Go and Proc)
   * Exp
 
-###6.4 Synt func assign and the Semant Function Hier (SFH)
+### 6.4 Synt func assign and the Semant Function Hier (SFH)
 
 * semantic function assignments: interactions between predicates and predicate-frames
 * a semantic interpretation of Subject and Object
@@ -418,14 +418,14 @@ parts:
 * argument vs satellite
 * 113 languages are mentioned
 
-#part two: some classical problems for case
+# part two: some classical problems for case
 
 * how much the problems are artifacts of the theory
 * multilingual lang processing
 
 ## 7: defining the cases / specificity and multiplicity (and hierarchies) 
 
-###7.1 Introduction
+### 7.1 Introduction
 
 * is a given case-set intended?
   * different applications of Case theory should result in different case systems
@@ -467,7 +467,7 @@ parts:
         * ezt ő arra mondja, hogy semmi köze az esethez. Somers generatív?
     * inherent features of typical role-fillers
 
-###7.2 Agentivity and causation
+### 7.2 Agentivity and causation
 
 * animacy
   * pling experiments
@@ -487,7 +487,7 @@ parts:
       * -> Agt (precedence) and Ins
     * degrees of Agt
 
-###7.3 Dat/Exp/Benefactive/Rec
+### 7.3 Dat/Exp/Benefactive/Rec
 
 * Dat
   * Indo-Eu dative case or indirect object
@@ -535,7 +535,7 @@ parts:
     * benefit from the object or the whole action (27)
     * stacking of outer benefactives
 
-###7.4 Obj, Pat
+### 7.4 Obj, Pat
 
 * distinctions: affected, effected, complementiser, +/- stative
 * contrast with Factitive
@@ -573,7 +573,7 @@ parts:
     * a third value: neither affected nor effected e.g. perception and cognition
   * characterization by Cook
 
-###7.5 Loc/Src/Pth/Gol 145
+### 7.5 Loc/Src/Pth/Gol 145
 
 * adverbs of place and...
 * one-case-per-clause?
@@ -672,7 +672,7 @@ parts:
       * David is long =IN the leg
     * tell over the phone, hear whit my own ears, witness with unbelieving eyes
 
-###7.6 Comitative p164
+### 7.6 Comitative p164
 
 * not including Manner
 * Comitative, accompaniment
@@ -700,7 +700,7 @@ parts:
   * degrees of participation
   * in negative sentences
 
-###7.7 Essive p171
+### 7.7 Essive p171
 
 * nominal predication ("x is a y")
 * PP complements
@@ -826,9 +826,9 @@ parts:
     * small axis: semantics
     * large axis: syntax
 
-#Part Three: Case and Valency in Language Processing
+# Part Three: Case and Valency in Language Processing
 
-##Introduction
+## Introduction
 
 * ATN parsing
   * An augmented transition network (ATN) is a type of graph theoretic
@@ -838,13 +838,13 @@ parts:
 
 ## 11 case in comp ling and AI
 
-###11.1 Introduction
+### 11.1 Introduction
 
 * areas
 * systems, points of view
 * general discussion
 
-###11.2 Fundamental issues
+### 11.2 Fundamental issues
 
 * using Case
   * general hlu
@@ -873,7 +873,7 @@ parts:
   * language oriented or deeper cognitive aspect
     * deep: Schank 1972--77,...
 
-###11.3 Case parsers
+### 11.3 Case parsers
 
 * systems in which case analysis is the central goal
 * PARSIFAL Marcus 1980
@@ -902,7 +902,7 @@ parts:
   * inherent features
   * ...
 
-###11.4 Case supplants (kiszorítja) syntactic parse
+### 11.4 Case supplants (kiszorítja) syntactic parse
 
 * Case plays instrumental role
 * SPEECHLIS Nash-Webber 1975
@@ -934,7 +934,7 @@ parts:
     * no synt anal phase as such
 * proposal for Case-driven ATN parser p229
 
-###11.5 Specialized case systems p232
+### 11.5 Specialized case systems p232
 
 * domain-specific relations
   * CHRONOS Kulikowski
@@ -982,7 +982,7 @@ parts:
   * is this still Case? Section 7
     * Charniak
 
-###11.6 Linguistic vs cognitive representations p244
+### 11.6 Linguistic vs cognitive representations p244
 
 * Simmons 1971--73
   * Napoleon elvesztette a waterlooi csatát Wellingtonnal szemben.
@@ -991,7 +991,7 @@ parts:
 * on the importance of the distinction p251
   * actual/virtual: filled frame/just positions
 
-###11.7 What constitutes using Case? p254
+### 11.7 What constitutes using Case? p254
 
 * Charniak 1975
 * case use vs case notation: labels vs meaning
@@ -1016,7 +1016,7 @@ parts:
 * former
   * the intermediate representation depends on the target language
 
-###12.1 Valency in MT
+### 12.1 Valency in MT
 
 * lexicon entries
 * complement vs adjunct p265
@@ -1027,7 +1027,7 @@ parts:
     * meaningful
     * translation process
 
-###12.2 Case in MT p268
+### 12.2 Case in MT p268
 
 * problems that could be solved using Case
   * like/tetszik
@@ -1066,7 +1066,7 @@ parts:
         * 30 major + additional
         * can be obligatory
 
-###12.3 Personal approaches p278
+### 12.3 Personal approaches p278
 
 * we suppose that only in the bilingual transfer state can source- and
   target-language information used (simultaneously)

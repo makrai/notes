@@ -2,13 +2,13 @@ Samuel Brody and Mirella Lapata
 Bayesian Word Sense Induction
 2009
 
-#Abstract
+# Abstract
 
 * Bayesian: modeling the contexts of the ambiguous word as samples from a
   multinomial distribution over senses which are in turn characterized as
   distributions over words
 
-#1 Introduction
+# 1 Introduction
 
 * induced senses can lead to improved performance in
   * machine translation (Vickrey+ 2005) and
@@ -32,7 +32,7 @@ Bayesian Word Sense Induction
   * on a recently released benchmark dataset (Agirre and Soroa, 2007)
   * improvements over the state-of-the-art
 
-#2 Related work
+# 2 Related work
 
 * context
   * first or second order co-occurrences

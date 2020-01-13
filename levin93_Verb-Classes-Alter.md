@@ -3,7 +3,7 @@ English Verb Classes and Alternations
 Beth Levin
 1993
 
-#Preface
+# Preface
 
 * resource materials on the English verb lexicon ... make up this book
   * grew out of work begun as part of the cross-linguistic study of lexical
@@ -15,7 +15,7 @@ Beth Levin
 * This work is guided by the assumption that the [expression and interpretation
   of] arguments, is to a large extent deterrmined by its meaning
 
-##The Nature of Lexical Knowledge 1
+## The Nature of Lexical Knowledge 1
 
 * Bloomfield (1933) ... wrote, "The lexicon is really an appendix of the
   grammar, a list of basic irregularities" (p. 274 ). Bloomfield's view
@@ -28,7 +28,7 @@ Beth Levin
     [e.g.] _The bullet whistled through the window_ `*`_The dog barked down the
     street behind the jogger_
 
-##Verb Meaning: A Key to Verb Behavior 4
+## Verb Meaning: A Key to Verb Behavior 4
 
 * Hale and Keyser (1987) ... consider the archaic English verb gaily, a whaling
   term, used as in _The sailors gallied the whales._
@@ -46,7 +46,7 @@ Beth Levin
 * causative/inchoative alternation ... in the following section
   * The window broke./The little boy broke the window
 
-##A More Complex Example 5
+## A More Complex Example 5
 
 * _break, cut, hit,_ and _touch_ (Fillmore 1967, Guerssel+ 1985, Hale and
   Keyser 1986, 1987, and Laughren 1988)
@@ -85,14 +85,14 @@ Beth Levin
     the
   * existence of certain morphologically related forms
 
-##The Larger Context 11
+## The Larger Context 11
 
 * Subcategorization frames
 * "semantic bootstrapping" models of child language acquisition (Pinker 1989)
   are built on the assumption that a word's syntactic properties are
   predictable from its meaning
 
-##Challenges 12
+## Challenges 12
 
 * identification of the appropriate representation of verb meaning
   *  deviations from semantic/syntactic correlations might reflect the use of
@@ -113,7 +113,7 @@ Beth Levin
       (1957), while that denoted by English
     * blush is open either to an activity or to a change of state
 
-##The Underlying Research Methodology 14
+## The Underlying Research Methodology 14
 
 * Once [a class with respect to diathesis alternations] is identified, it
   can be examined to isolate the meaning components they have in common
@@ -144,7 +144,7 @@ Beth Levin
   * diathesis alternations, and also to a more limited extent its
   * morphological properties and extended meanings
 
-##The Scope of this Book 17
+## The Scope of this Book 17
 
 * Part I ... diathesis alternations that are relevant to ... lexical knowledge
 * Part II presents a large number of semantically coherent classes of verbs
@@ -187,7 +187,7 @@ Beth Levin
     * Similarly, in Part I of the book only some classes of verbs that do not
       display a particular diathesis alternation are noted
 
-##The Layout of the Book
+## The Layout of the Book
 
 * The alternations are subdivided into groups on the basis of the syntactic
   frames involved
@@ -201,14 +201,14 @@ Beth Levin
 
 Part One Alternations 25
 
-#1 Transitivity Alternations
+# 1 Transitivity Alternations
 
 1.1 Object of Transitive Subject of Intransitive Alternations
 1.2 Unexpressed Object Alternations
 1.3 Conative Alternation
 1.4 Preposition Drop Alternations
 
-#2 Alternations Involving Arguments Within the VP
+# 2 Alternations Involving Arguments Within the VP
 
 2.1 Dative Alternation
 2.2 Benefactive Alternation
@@ -225,7 +225,7 @@ Part One Alternations 25
 2.13 Possessor-Attribute Factoring Alternations Possessor Object
 2.14 As Alternation
 
-#3 Oblique Subject Alternations
+# 3 Oblique Subject Alternations
 
 3.1 Time Subject Alternation
 3.2 Natural Force Subject Alternation
@@ -237,24 +237,24 @@ Part One Alternations 25
 3.9 Sum of Money Subject Alternation
 3.10 Source Subject Alternation
 
-#4 Reflexive Diathesis Alternations
+# 4 Reflexive Diathesis Alternations
 
 4.1 Virtual Reflexive Alternation
 4.2 Reflexive of Appearance Alternation
 
-#5 Passive
+# 5 Passive
 
 5.1 Verbal Passive
 5.2 Prepositional Passive
 5.3 Adjectival Passive (transitive verbs)
 5.4 Adjectival Perfect Participles (intransitive verbs)
 
-#6 Alternations Involving Postverbal Subjects
+# 6 Alternations Involving Postverbal Subjects
 
 6.1 There-Insertion
 6.2 Locative Inversion
 
-#7 Other Constructions
+# 7 Other Constructions
 
 7.1 Cognate Object Construction
 7.2 Cognate Prepositional Phrase Construction
@@ -265,7 +265,7 @@ Part One Alternations 25
 7.7 Bound Nonreflexive Anaphor as Prepositional Object
 7.8 Directional Phrases with Nondirected Motion Verbs
 
-#8 Verbs Requiring Special Diatheses
+# 8 Verbs Requiring Special Diatheses
 
 8.1 Obligatory Passive
 8.2 Obligatorily Reflexive Object

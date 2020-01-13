@@ -2,7 +2,7 @@ Will Wei Sun, Junwei Lu, Han Liu, Guang Cheng
 Provable Sparse Tensor Decomposition
 arXiv:1502.01425v3 [stat.ML] 2 May 2016
 
-#Abstract
+# Abstract
 
 * We propose a novel sparse tensor decomposition method, namely
   Tensor Truncated Power (TTP) method, that
@@ -72,7 +72,7 @@ arXiv:1502.01425v3 [stat.ML] 2 May 2016
   * high-dimensional clustering (Hsu and Kakade, 2013) and
   * mixture of sparse regressions (Chaganty and Liang, 2013)
 
-##1.1 Comparison with Related Work
+## 1.1 Comparison with Related Work
 
 * the robust tensor decomposition method with non-sparse decomposition
   components proposed by Anandkumar+ (2014c)
@@ -98,13 +98,13 @@ arXiv:1502.01425v3 [stat.ML] 2 May 2016
 
 # 2 Our sparse tensor decomposition method TTP and its implementation
 
-#3 The local and global statistical rates of the proposed TTP method
+# 3 The local and global statistical rates of the proposed TTP method
 
 # 4 practical selections of tuning parameters
 
 # 5 simulation results, followed by
 
-#6 a real application in
+# 6 a real application in
 
 # online supplementary material
 

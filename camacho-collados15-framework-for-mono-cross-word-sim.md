@@ -5,7 +5,7 @@ José Camacho-Collados, Mohammad Taher Pilehvar and Roberto Navigli
 
 http://lcl.uniroma1.it/similarity-datasets/ 
 
-#Abstract
+# Abstract
 
 * We propose an automatic standardization for the construction of cross-lingual
   similarity datasets, and provide an evaluation, demonstrating its reliability

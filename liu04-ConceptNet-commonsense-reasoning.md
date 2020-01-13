@@ -5,7 +5,7 @@ H Liu and P Singh
 Mindenről több helyen is beszél és emiatt redundáns. A jegyzetben a
 redundanciát elkerültem, de nem refaktoráltam a cikket
 
-#Abstract
+# Abstract
 
 * semantic network presently consisting of
   * over 1.6 million assertions of commonsense knowledge
@@ -14,12 +14,12 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     Open Mind Common Sense Project — a
     * [crowd sourced] collaboration with over 14 000 authors
 
-##1.2 Making sense of text
+## 1.2 Making sense of text
 
 * defeasible
   * often just a default assumption about the typical case
 
-##1.3
+## 1.3
 
 * size and scope of ConceptNet make it comparable to ... two other most notable
   largescale semantic knowledge bases in the literature: Cyc and WordNet
@@ -40,7 +40,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     * understand novel or unknown concepts by employing
       structural analogies to situate them within what is already known
 
-#2. Comparison to Cyc and WordNet 2
+# 2. Comparison to Cyc and WordNet 2
 
 * ConceptNet
   * a richer (though still very pragmatic) set of semantic relations
@@ -58,7 +58,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
   * 300 000 nodes: semistructured English fragments
   * twenty semantic relations
 
-##2.1 Differences in acquisition 3
+## 2.1 Differences in acquisition 3
 
 * WordNet and Cyc are both largely handcrafted by knowledge engineers,
 * ConceptNet is generated automatically
@@ -69,7 +69,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     e.g. ‘The effect of eating food is ...’; ‘A knife is used for ...’
   * 700 000 English sentences
 
-##2.2 Structured like WordNet, relationally rich like Cyc 4
+## 2.2 Structured like WordNet, relationally rich like Cyc 4
 
 * nodes
   * compound concepts, which compose an action verb with one or two direct or
@@ -89,7 +89,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
       ‘dog’ is a ‘canine’ is a ‘carnivore’ is a ‘placental mammal’
     * [not has the] association that ‘dog’ is a ‘pet’
 
-##2.3 ConceptNet as a context machine
+## 2.3 ConceptNet as a context machine
 
 * Gelernter [8]
   * human reasoning ... along a spectrum of mental focus
@@ -115,9 +115,9 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     mapped into ConceptNet
 * ConceptNet’s [natural metalanguage]: (Liu H and Singh P 2004)
 
-#3. Origin, construction and structure of ConceptNet 5
+# 3. Origin, construction and structure of ConceptNet 5
 
-##3.1 History
+## 3.1 History
 
 * Open Mind Common Sense (OMCS) Web site [6] was built in 2000, a collection of
   * 30 different activities
@@ -140,7 +140,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
       (a newer version is discussed by Lieberman et al [11])
     * conversational topic spotter [12]
 
-##3.2 ConceptNet 2.0 6
+## 3.2 ConceptNet 2.0 6
 
 * weighting ... each binary assertion based on
   * how many times it was uttered in the OMCS corpus, and on
@@ -167,14 +167,14 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     * inferences using the semantic network
       * discussed in a later section
 
-##3.3 Building ConceptNet
+## 3.3 Building ConceptNet
 
 * ConceptNet is produced by an automatic process
   1. extraction rules to the semi-structured English sentences of the OMCS
   2. ‘relaxation’ procedures (i.e.  filling in and smoothing over network gaps)
     to optimise the connectivity of the semantic network
 
-###3.3.3 ‘Relaxation’ over the network
+### 3.3.3 ‘Relaxation’ over the network
 
 1. duplicate assertions are merged and ... ‘frequency’ is added
 2. heuristically ‘lift’ knowledge from the children nodes to the [IsA-]parent
@@ -196,7 +196,7 @@ IMPLIES
 5. noun synonyms and derivatives (_-ation_)
   * addition of a lexical SuperThematicKLine
 
-##3.4 Structure of the ConceptNet knowledge base 7
+## 3.4 Structure of the ConceptNet knowledge base 7
 
 * Figure 2 is a treemap of the ConceptNet relational ontology, showing the
   relative amounts of knowledge falling under each relation-type
@@ -214,7 +214,7 @@ IMPLIES
   * assertions are normalised,
   * ‘relaxation’
 
-#4.  ConceptNet’s integrated natural-language-processing engine 8
+# 4.  ConceptNet’s integrated natural-language-processing engine 8
 
 * context vs logic
   * logic is microscopic, highly granular, well-defined, and static,
@@ -227,22 +227,22 @@ IMPLIES
     * topic gisting, disambiguation/classification,
       novel-concept identification, and affect sensing
 
-##4.1 An integrated natural-language-processing engine
+## 4.1 An integrated natural-language-processing engine
 
 * MontyLingua performs language-processing functions including text
   normalisation, _commonsense-informed_ part-of- speech tagging, semantic
   recognition, chunking, surface parsing, lemmatisation, thematic-role
   extraction, and pronominal resolution
 
-##4.2 Contextual neighbourhoods 9
+## 4.2 Contextual neighbourhoods 9
 
-###4.2.1 Realm-filtering
+### 4.2.1 Realm-filtering
 
 * the relevance of each relation-type varies with respect to each task or applc
   * relation-types are assigned [different] numeric weights for each task
   * [for] spreading activation
 
-###4.2.2 Topic generation
+### 4.2.2 Topic generation
 
 The GetContext() function is useful for
   * semantic query expansion and topic generation
@@ -251,7 +251,7 @@ The GetContext() function is useful for
     * topic gisting
     * extract all the concepts from a text document and take their intersection
 
-##4.3 Analogy-making
+## 4.3 Analogy-making
 
 * [Analogy] is a process of
   * decomposing an idea into its constituent aspects and parts, and then
@@ -276,7 +276,7 @@ The GetContext() function is useful for
 * dimensionally bias the GetAnalogousConcepts() feature
   * emphasise functional versus affective versus attribute similarity
 
-##4.4 Projection 10
+## 4.4 Projection 10
 
 * Subevent projection may be useful for goal planning, while
 * causal projection
@@ -284,14 +284,14 @@ The GetContext() function is useful for
   * selection of discourse transitions in SAM
     Collaborative Storytelling Agent (Wang)
 
-##Summary
+## Summary
 
 * three node-level functionalities are implemented,
   context-finding, analogy-making, and projection
 * four document-level functions, topic-gisting, disambiguation and
   classification, novel-concept identification, and affect sensing
 
-#5. Characteristics and quality of the ConceptNet knowledge base 12
+# 5. Characteristics and quality of the ConceptNet knowledge base 12
 
 * difficult to evaluate
   * What is and is not ‘common sense?’
@@ -302,7 +302,7 @@ The GetContext() function is useful for
   * coverage by making some quantitative inquiries
   * goodness [by] human evaluations of OMCS and ConcepNet
 
-##5.1 Characteristics of the knowledge base
+## 5.1 Characteristics of the knowledge base
 
 * [informativeness] of ConceptNet’s nodes
   * Are concepts expressed simply or obscurely?
@@ -319,7 +319,7 @@ The GetContext() function is useful for
       k-lines mainly facilitate the connectivity of nodes otherwise already
       connected. The truth is probably a mix of the two extremes
 
-##5.2 Quality of the knowledge
+## 5.2 Quality of the knowledge
 
 * quality of the Open Mind Common Sense corpus
   * original OMCS corpus was previously evaluated by Singh et al [6]. Human
@@ -327,7 +327,7 @@ The GetContext() function is useful for
     85% as largely making sense, and
     84% as knowledge someone would have by high school
 
-###5.2.1 Evaluation of ConceptNet version 1.2
+### 5.2.1 Evaluation of ConceptNet version 1.2
 
 * Concepts were judged along these two dimensions,
   * results for this concept are fairly comprehensive,
@@ -336,6 +336,6 @@ The GetContext() function is useful for
 * each on a Likert 1 (strongly disagree) to 5 (strongly agree) scale
 * inter-judge agreement
 
-#6. research applications of ConceptNet 14
+# 6. research applications of ConceptNet 14
 
-#7. how ConceptNet fits into a bigger picture
+# 7. how ConceptNet fits into a bigger picture

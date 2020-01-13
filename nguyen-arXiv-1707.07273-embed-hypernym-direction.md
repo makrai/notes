@@ -5,7 +5,7 @@ https://arxiv.org/abs/1707.07273
 
 http://www.ims.uni-stuttgart.de/data/hypervec
 
-#Abstract
+# Abstract
 
 * model is able to generalize over unseen hypernymy pairs, ... by mapping to
   other languages.  
@@ -14,7 +14,7 @@ http://www.ims.uni-stuttgart.de/data/hypervec
   * on hypernymy detection and directionality, and 
   * on predicting graded lexical entailment.
 
-#1 Intro
+# 1 Intro
 
 * hypernymy detection is useful for NLP tasks such as 
   * taxonomy creation (Snow+ 2006; Navigli+ 2011), 
@@ -46,18 +46,18 @@ http://www.ims.uni-stuttgart.de/data/hypervec
   * generalizing hypernymy by mapping to German and Italian
   * outperform state-of-the-art measures and previous embedding models.
 
-#2 Related work
+# 2 Related work
 
 * első sorban ld. az intrót
 * Hypernym-specific embeddings
   * Vendrov+ (2016) ... explicitly model partial order structure of the
     visual-semantic hierarchy or the hierarchy of hypernymy in WordNet
 
-#3 Hierarchical Embeddings 3
+# 3 Hierarchical Embeddings 3
 
-##3.1 Learning Hierarchical Embeddings
+## 3.1 Learning Hierarchical Embeddings
 
-###3.1.2 
+### 3.1.2 
 
 * problem: differentiate hypernymy from other paradigmatic relations 
   e.g.~synonymy, meronymy, antonymy, etc. 
@@ -69,7 +69,7 @@ http://www.ims.uni-stuttgart.de/data/hypervec
 * assuming that the magnitude of the hypernym is larger than the magnitude of
   the hyponym
 
-#5 Generalizing Hypernymy
+# 5 Generalizing Hypernymy
 
 * generalization in ... by 
   * relying on a small seed set only, rather than using a large set of training data; and 

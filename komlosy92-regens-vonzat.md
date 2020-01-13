@@ -2,7 +2,7 @@ Komlósy András:
 Régensek és vonzatok. 
 1992, in Kiefer Ferenc (szerk.) Strukturális magyar nyelvtan I. Mondattan.
 
-##5.2. A melléknévi igeneves szerkezetek sajátosságai
+## 5.2. A melléknévi igeneves szerkezetek sajátosságai
 
 ```
 (13)  a Péterrel beszélgető   gyerekek
@@ -12,7 +12,7 @@ Régensek és vonzatok.
             igeneves szerkezet
 ```
 
-###5.2.1. Elhatárolási problémák
+### 5.2.1. Elhatárolási problémák
 
 * szintaktikai irányultság
   * csak a hozzájuk mint régensekhez kapcsolódó vonzatstruktúrák s az ahhoz
@@ -61,7 +61,7 @@ Régensek és vonzatok.
     a. *A kamrában levő tégla bontott.
     b. *A Katitól kapott virág vágott.
 
-###5.2.2. A kopulás mondatoknak nem felel meg igeneves szerkezet
+### 5.2.2. A kopulás mondatoknak nem felel meg igeneves szerkezet
 
 * Mivel a van és a lesz ige egyik használatában _sem tárgyas_, természetes, hogy
   a csak tárgyas igékhez járuló képzőket vagy egyáltalán nem veszik fel
@@ -75,7 +75,7 @@ Régensek és vonzatok.
   * alapjában kopulás (19a), vagy a létezést (19b), birtoklást (19c) jelentő
     van-nal szerkesztett mondatot kellene feltételeznünk, nem léteznek:
 
-###5.2.3. Az -ó képzős igenév
+### 5.2.3. Az -ó képzős igenév
 
 * bármely nem passzív, nem ható igetőhöz. Az igenév megőrzi az alapige
   vonzatkeretét és felveheti az alapige mellett előforduló szabad határozókat
@@ -86,7 +86,7 @@ Régensek és vonzatok.
   Experiens, s az alanyi funkciójú argumentum nem Ágens, hanem Kezdőpont
   szerepű. Ilyenek például a következő melléknevek: _dühítő_,
 
-###5.2.4. A -t képzős igenevek
+### 5.2.4. A -t képzős igenevek
 
 * "passziváló" -t-nek. Azokat a tulajdonságait, amelyek a nem-passzi-
 váló -t-vel szembeállítják, az alábbiakban foglalhatjuk össze:

@@ -2,7 +2,7 @@ Opinion dynamics on directed small-world networks
 Luo-Luo Jiang, Da-Yin Hua, Jun-Fang Zhu, Bing-Hong Wang, Tao Zhou
 2008 The European Physical …, 2008 Springer
 
-#1 Introduction
+# 1 Introduction
 
 * The Spiral of Silence phenomenon [9] 
   * It is common in real world that people adhere to their own opinion even

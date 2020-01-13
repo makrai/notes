@@ -4,7 +4,7 @@ Improving Topic Models with Latent Feature Word Representations
 
 https://github.com/datquocnguyen/LFTM
 
-#Abstract
+# Abstract
 
 * Probabilistic topic models are widely used to discover latent topics in
   document collections, while
@@ -19,7 +19,7 @@ https://github.com/datquocnguyen/LFTM
     document classification tasks,
   * especially on datasets with few or short documents
 
-#1 Introduction
+# 1 Introduction
 
 * Topic modeling algorithms,
   * such as
@@ -62,9 +62,9 @@ https://github.com/datquocnguyen/LFTM
     model by a two-component mixture of a Dirichlet multinomial component and a
     latent feature component
 
-#2 Background
+# 2 Background
 
-##2.1 LDA model
+## 2.1 LDA model
 
 * represents
   * each document d as a probability distribution θ d over topics, where
@@ -72,7 +72,7 @@ https://github.com/datquocnguyen/LFTM
 * Gibbs sampling algorithm for estimating LDA topic models as described by
   Griffiths and Steyvers (2004)
 
-##2.2 DMM model for short texts
+## 2.2 DMM model for short texts
 
 * topic models for short or few documents for text clustering is more
   challenging because of data sparsity and the limited contexts in such texts

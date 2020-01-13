@@ -2,7 +2,7 @@ O Majewska, I Vulić, D McCarthy, Yan Huang, A Murakami, V Laippala, A Korhonen
 Investigating the cross-lingual translatability of VerbNet-style classification
 LREC 2017, Springer 2018
 
-#Abstract
+# Abstract
 
 * systematic investigation ... into the applicability and accuracy of [the]
   translation approach across different, typologically diverse languages
@@ -17,7 +17,7 @@ LREC 2017, Springer 2018
 * We make ...  available with this paper
   * annotation guidelines and the six language-specific verb classifications
 
-#1 Intro
+# 1 Intro
 
 * one of the richest lexical resources currently available is VerbNet
   (Kipper+ 2000; Kipper Schuler 2005)
@@ -52,7 +52,7 @@ LREC 2017, Springer 2018
     * discussion of the impact of cross-linguistic variation
   5. conclusions and directions for future work.
 
-#3 Translation of verb classes: method and evaluation on Polish
+# 3 Translation of verb classes: method and evaluation on Polish
 
 * We adopt the basic method of Sun+ (2010) for translating VerbNet
 * classification chosen for translation was
@@ -70,28 +70,28 @@ LREC 2017, Springer 2018
       * involved translation of syntactic frames and diathesis alternations
     * semantic characteristics
 
-##3.2 Test case: Polish
+## 3.2 Test case: Polish
 
 * characteristics which distinguish it from English are
   verbal aspect and its extensive case system, which have been
   argued to pose a challenge to Levin-style classification (Gawronska 2001;
   Pala and Horák 2008).
 
-##3.3 Data analysis
+## 3.3 Data analysis
 
 * 74% ... of VerbNet frames could be directly translated into Polish
 * those derived from [English] were sufficient
   as evaluation criteria of class membership
 
-#4 Multilingual transfer of verb classes
+# 4 Multilingual transfer of verb classes
 
-##4.2 Comparison of manual versus automatic approach
+## 4.2 Comparison of manual versus automatic approach
 
 * we chose Mandarin as the test language
 
-##4.3 Discussion of the impact of language differences
+## 4.3 Discussion of the impact of language differences
 
-###4.3.1 Morphosyntactic alignments and morphological complexity
+### 4.3.1 Morphosyntactic alignments and morphological complexity
 
 * In Mandarin, a[n] SVO language, [there is a] serial verb constructions, where
   * two or more verbs (or VPs) appear concatenated together,
@@ -105,7 +105,7 @@ LREC 2017, Springer 2018
   * distinct English verbs translated into the same Italian verbs or
     into phrases and idiomatic expressions rather than single words, which
 
-###4.3.2 Lexicalization patterns and varying verb inventories
+### 4.3.2 Lexicalization patterns and varying verb inventories
 
 * what elements of an event are encoded in or outside the verb. The
 * assumption
@@ -121,7 +121,7 @@ LREC 2017, Springer 2018
       * ‘Manner’ may be expressed as a gerundive
     3. ‘Motion’ + ‘Figure’ ... are lexicalized in the verb root, [e.g.] Navajo
 
-###4.3.3 Causativity and transitivity
+### 4.3.3 Causativity and transitivity
 
 * Croatian, Polish ..., and Italian ... require a reflexive pronoun to
   accompany the non-causative verb.
@@ -132,14 +132,14 @@ LREC 2017, Springer 2018
 * Finnish, however, two different verbs [_kuivasi_; _kuivuivat_]
   express the transitive (22a) and intransitive meaning
 
-###4.3.4 Cross-linguistic commonalities
+### 4.3.4 Cross-linguistic commonalities
 
 * e.g. all languages studied allow ‘remove’ verbs to appear in frames such as
   NP V NP PP.SOURCE (I removed the stains from the tablecloth)
 * Further research is necessary to investigate the applicability of the method
   to [e.g.] ergative and active-stative languages,
 
-#5 Conclusion and future work
+# 5 Conclusion and future work
 
 * stages
   * detailed, language-independent translation guidelines were developed and

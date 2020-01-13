@@ -3,7 +3,7 @@ Sparse Coding of Neural Word Embeddings
 TACL 2016 arXiv:1612.07130v1 [cs.CL] 21 Dec 2016
 Gábor Berend
 
-#Abstract
+# Abstract
 
 * (near) state-of-the art performance for
   * both part-ofspeech tagging and named entity recognition
@@ -15,7 +15,7 @@ Gábor Berend
     the different tasks
   * favorable generalization properties on small training data
 
-#Intro
+# Intro
 
 * our proposed model performs substantially better than traditional
   feature-rich models in the absence of abundant training data
@@ -33,7 +33,7 @@ Gábor Berend
 * we release the sparse word representations
   `https://begab.github.io/sparse_embeds`
 
-#2 Related work
+# 2 Related work
 
 * polyglot (Al-Rfou+ 2013)
   * embeddings for more than 100 languages
@@ -42,7 +42,7 @@ Gábor Berend
   * SPArse Modeling Software 1 (SPAMS)
 * close resemblance to (Faruqui+ 2015)
 
-##Distributed word representations
+## Distributed word representations
 
 * a plethora of approaches
   * Bengio+ 2003
@@ -71,7 +71,7 @@ Gábor Berend
     * unsupervised pre-training
     * for English
 
-##2.2 Sparse coding
+## 2.2 Sparse coding
 
 * sparse coding
   * express signals in the form of sparse linear combination of basis vectors
@@ -92,7 +92,7 @@ Gábor Berend
     (Mikolov+ 2013a)
     * without the need to determine dense CBOW representations first
 
-#3 Sequence labeling framework
+# 3 Sequence labeling framework
 
 * not apply any features based on gazetters, capitalization patterns or
   character suffixes
@@ -105,16 +105,16 @@ Gábor Berend
 * linear chain CRF (Lafferty+ 2001) using CRFsuite (Okazaki, 2007)
   * default coefficients of CRFsuite  for l1 and l2 regularization
 
-#4 Experiments
+# 4 Experiments
 
 * m: number of the basis vectors and the
   * Starting with m = 256 and doubling it at each iteration, ... a steady
     growth in the usefulness ...  plateauing at 1024,
 * λ regularization coefficient affecting the sparsity of α
 
-##4.1 Baseline methods
+## 4.1 Baseline methods
 
-###Brown clustering (Brown+ 1992)
+### Brown clustering (Brown+ 1992)
 
 * useful source of feature generation for sequence labeling tasks
   * Ratinov and Roth, 2009; Turian+ 2010; Owoputi+ 2013;
@@ -131,7 +131,7 @@ Gábor Berend
 * number of Brown clusters to be identified to 1024, that is
   * the number of basis vectors applied during sparse coding
 
-###Feature-rich representation
+### Feature-rich representation
 
 * linear chain CRFs that assign standard state-of-the-art feature-rich
   representation to sequences. We apply the very same features and feature
@@ -140,14 +140,14 @@ Gábor Berend
   features as a combination of word forms at different (not necessarily
   contiguous) positions of a sentence
 
-###Using dense word representations
+### Using dense word representations
 
 * similar model to the one proposed in Section 3 except for the fact that we
   used the original dense word representations for inducing features
 
-##4.2 POS tagging experiments
+## 4.2 POS tagging experiments
 
-###4.2.1 Experiments using CoNLL 2006/07 data
+### 4.2.1 Experiments using CoNLL 2006/07 data
 
 * bg da de en es hu it nl pt sl sv tr
 * mapping the treebank specific POS tags to the Google universal POS tags in
@@ -158,7 +158,7 @@ Gábor Berend
     * 17 categories
 * coverage of word embeddings, Figure 1
 
-####Comparing word embeddings p6
+#### Comparing word embeddings p6
 
 * skip-gram (SG), continuous bagof-words (CBOW) and Glove
 * train them on the same Wikipedia dumps used for training the polyglot
@@ -167,7 +167,7 @@ Gábor Berend
 * Figure 2, performance is quite insensitive to the choice of λ
   * unless it yields some extreme sparsity level (>99.5%)
 
-####Analyzing the effects of window size
+#### Analyzing the effects of window size
 
 * Figure 3: applying context window sizes of 2 ...  tend to produce better
   overall POS tagging accuracies than applying a larger window size of 10
@@ -183,12 +183,12 @@ Gábor Berend
   * Table 3b: polyglot embeddings perform the best for dense representations as
     well ?
 
-####Comparing the effects of training corpus size
+#### Comparing the effects of training corpus size
 
 * first 150, the first 1,500 and all the available training sentences from each
   corpora. Figure 4
 
-####Comparing sparse coding techniques
+#### Comparing sparse coding techniques
 
 * constraining D
   * we explicitly constrain D to be a member of the convex set of matrices
@@ -216,14 +216,14 @@ Gábor Berend
         * the number of times they are assigned a non-zero coefficient in α for
       * strong for SC-3 and SC-4 but not for SC-1
 
-###4.2.2 Experiments using UD treebanks
+### 4.2.2 Experiments using UD treebanks
 
 * 33 treebanks for 29 languages
 * word identity
 * Table 5 presents the state-of-the-art results of the bidirectional LSTM
   models by Plank+ (2016)
 
-##4.3 Named entity recognition experiments
+## 4.3 Named entity recognition experiments
 
 * 2002 and 2003 CoNLL shared tasks on multilingual named entity recognition
   * English, Spanish and Dutch datasets

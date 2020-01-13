@@ -8,7 +8,7 @@ i.e. cs.University of Technology of Compiègne
 EVEREST: Learning high-level representations of sparse tensors
 * see sec 8
 
-#Abstract
+# Abstract
 
 * multi-relational data
   * such as social networks, movie preferences or knowledge bases
@@ -24,7 +24,7 @@ EVEREST: Learning high-level representations of sparse tensors
 * an NLP application demonstrates our scalability
   * efficient and semantically meaningful verb representations
 
-#1 Intro
+# 1 Intro
 
 * Statistical Relational Learning (SRL, Getoor and Taska, The MIT Press, 2007)
   * e.g. Social networks, [recommender systems,] semantic web or bioinfo
@@ -45,7 +45,7 @@ EVEREST: Learning high-level representations of sparse tensors
   * ties or beats SOTA algorithms on various benchmarks of link prediction, a
     standard test-bed for SRL methods
 
-#2 Related work
+# 2 Related work
 
 * trying to model simultaneously a collection of relations
   which can themselves be similar
@@ -94,12 +94,12 @@ EVEREST: Learning high-level representations of sparse tensors
 * Semantic Matching Energy model (SME) of Bordes+ (2012) embeds relations as a
   vector from the same space as the entities
 
-#3 Relational data modeling
+# 3 Relational data modeling
 
 * This section is very short, just 9 lines
 * entities have a unique representation shared between relation types
 
-#4 Model description
+# 4 Model description
 
 * This is the initial model considered in (Sutskever+ 2009)
   24. Sutskever, R. Salakhutdinov, and J. Tenenbaum
@@ -117,7 +117,7 @@ EVEREST: Learning high-level representations of sparse tensors
   2. parameterizing the relations R j by latent “relational” factors that reduce
     the overall number of parameters of the model
 
-##4.2.Sharing parameters across relations through latent factors
+## 4.2.Sharing parameters across relations through latent factors
 
 * When learning a large number of relations, the number of observations for
   many relations can be quite small, leading to a risk of overfitting
@@ -132,17 +132,17 @@ EVEREST: Learning high-level representations of sparse tensors
 * Further, constraining `Θ_r` to be the outer product `u_r v_r^T` also speeds
   up all computations relying on linear algebra
 
-#5 Regularized formulation and optimization
+# 5 Regularized formulation and optimization
 
-#6 Relation to other models 5
+# 6 Relation to other models 5
 
-#7 Application to multi-relational benchmarks
+# 7 Application to multi-relational benchmarks
 
-#8 Learning semantic representations of verbs 6
+# 8 Learning semantic representations of verbs 6
 
-##8.1 Experimental setting
+## 8.1 Experimental setting
 
-###Data
+### Data
 
 * 2,000,000 Wikipedia articles [filtered to] sentences for which the syntactic
   structure was (subject, verb, direct object) each term of the triplet being a
@@ -151,7 +151,7 @@ EVEREST: Learning high-level representations of sparse tensors
   * number of verbs is 4,547: this is much larger than for previously
   * 1 m + 20 k + 250 k relationships to build a training/validation/test set
 
-###Practical training setup
+### Practical training setup
 
 * parameters ... optimized over the validation set
   * size p ∈ {25, 50, 100} of the representations,
@@ -161,9 +161,9 @@ EVEREST: Learning high-level representations of sparse tensors
   * the weighting of the negative triplets
   * we gradually increased the number of sampled negative verbs
 
-##8.2 Results 7
+## 8.2 Results 7
 
-###Verb prediction
+### Verb prediction
 
 * how well we predict a relevant and meaningful verb given a pair (subject, DO)
   * metrics, namely, (1) the rank of the correct verb and (2) p@z
@@ -175,13 +175,13 @@ EVEREST: Learning high-level representations of sparse tensors
   * representations (2) are sparse[, i.e.] dominated by few large values, the
     top 2% of the largest values of α account for about 25% of the l_1 norm
 
-###Lexical similarity classification 8
+### Lexical similarity classification 8
 
 * task of lexical similarity classification
   * described in Yang and Powers (2006) Verb sim on the taxonomy of wordnet
   * 130 pairs of verbs labeled by humans with a score in {0, 1, 2, 3, 4}
 
-#9 Conclusion
+# 9 Conclusion
 
 * handling large amounts of linked relations seems necessary
   to model the wealth of relations underlying the semantics of [the real world]

@@ -4,7 +4,7 @@ Conceptual Graphs p239
 Chapter 5 of Handbook of Knowledge Representation
   Edited by F. van Harmelen, V.  Lifschitz and B. Porter
 
-#Abstract
+# Abstract
 
 A conceptual graph (CG) is a graph representation for logic
   * based on the
@@ -23,7 +23,7 @@ A conceptual graph (CG) is a graph representation for logic
 * This article surveys the notation, applications, and reasoning methods used
   with CGs and their mapping to and from other versions of logic
 
-#5.1 From Existential Graphs to Conceptual Graphs
+# 5.1 From Existential Graphs to Conceptual Graphs
 
 * early graph-based semantic representations
   * semantic network (Masterman), which included a lattice of concept types
@@ -61,10 +61,10 @@ A conceptual graph (CG) is a graph representation for logic
   by a quantified variable. That point was independently rediscovered by
   linguists, computational linguists, and philosophers such as Davidson [6]
 
-#5.2 Common Logic p244
+# 5.2 Common Logic p244
 
-#5.3 Reasoning with Graphs
+# 5.3 Reasoning with Graphs
 
-#5.4 Propositions, Situations, and Metalanguage
+# 5.4 Propositions, Situations, and Metalanguage
 
-#5.5 Research Extensions
+# 5.5 Research Extensions

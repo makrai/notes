@@ -3,7 +3,7 @@ ICLR 2016
 Marc’Aurelio Ranzato, Sumit Chopra, Michael Auli, Wojciech Zaremba
   Facebook AI Research
 
-#Intro
+# Intro
 
 * It is ... essential that interactive AI systems are capable of generating text 
   (Reiter & Dale, 2000).

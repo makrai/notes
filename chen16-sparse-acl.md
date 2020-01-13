@@ -2,7 +2,7 @@ Compressing Neural Language Models by Sparse Word Representations
 Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
 2016 ACL
 
-#Abstract
+# Abstract
 
 * [neural] approaches are time- and memory-intensive because of the
   large numbers of parameters for word embeddings and the output layer
@@ -11,7 +11,7 @@ Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
     with the growth of the vocabulary size, which is almost imperceptible
   * improves the performance in terms of the perplexity measure
 
-#Intro
+# Intro
 
 * neural network-based LMs have achieved significant breakthroughs:
   * more precisely than traditional n-gram statistics (Mikolov et al., 2011);
@@ -33,9 +33,9 @@ Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
   * infrequent word ... representation by a sparse combination of common words
   * LSTM-based recurrent neural network (RNN) as the hidden layer
 
-#3 Our Proposed Model
+# 3 Our Proposed Model
 
-##3.1 Sparse Representations of Words
+## 3.1 Sparse Representations of Words
 
 * We split the vocabulary V into two disjoint subsets (B and C)
   * B is a base set, containing a fixed number of common words (8k

@@ -2,7 +2,7 @@ Yanfeng Sun, Junbin Gao, Xia Hong, Bamdev Mishra and Baocai Yin
 Heterogeneous Tensor Decomposition for Clustering via Manifold Optimization
 IEEE transactions on pattern analysis and machine intelligence 2015
 
-#1 Introduction
+# 1 Introduction
 
 * tensorial data structure is exploited in 
   * computer vision applications [13], [14] and 
@@ -46,24 +46,24 @@ IEEE transactions on pattern analysis and machine intelligence 2015
   * Riemannian dictionary learning [38], [39], and 
   * computer vision tasks [40], to name a few.
 
-#2 Heterogeneous Tucker decomposition model for clustering
+# 2 Heterogeneous Tucker decomposition model for clustering
 
-##2.1 notations for tensor representation and operations used in this paper 
+## 2.1 notations for tensor representation and operations used in this paper 
 
-##2.2 the clustering scheme based on ... heterogeneous Tucker
+## 2.2 the clustering scheme based on ... heterogeneous Tucker
 
-##2.3 optimization problems
+## 2.3 optimization problems
 
-#3 the Riemannian geometry for the multinomial manifold 
+# 3 the Riemannian geometry for the multinomial manifold 
 
 and develops all the necessary optimization-related ingredients.  Section 4
 
-#4 algorithm procedure for the tensor clustering 
+# 4 algorithm procedure for the tensor clustering 
 
 including the proposed Riemannian trust-region algorithm. Section 5 shows
 
-#5 numerical experimental results 
+# 5 numerical experimental results 
 
 on both synthetic tensorial data and real-world datasets.  Finally Section 
 
-#6 concludes the paper.
+# 6 concludes the paper.

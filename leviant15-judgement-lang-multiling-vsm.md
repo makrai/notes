@@ -7,7 +7,7 @@ An earlier version of the paper appears with the name _Judgment Language
 Matters: Towards Judgment Language Informed Vector Space Modeling_. Please cite
 the current version
 
-#Abstract
+# Abstract
 
 * we translate two prominent evaluation sets,
   * wordsim353 (association) and SimLex999 (similarity),
@@ -27,7 +27,7 @@ the current version
   correlate with human judgments made with that language, for similarity some
   JL s better correlate with all monolingual models than others
 
-#Previous work
+# Previous work
 
 * evaluation sets consisting of English word pairs scored by humans for
   semantic relations (mostly association and similarity)
@@ -50,9 +50,9 @@ the current version
     (Camacho-Collados et al., 2015; Köper et al., 2015)) our investigation of
     the JL effect is much more thorough
 
-#6 The VSM Training Language Effect
+# 6 The VSM Training Language Effect
 
-##Training Language Choice
+## Training Language Choice
 
 * English is overall the best choice of TL for both BOW and W2V
   * JL itself is overall the second best TL , which is observed in 10 of the 11
@@ -61,7 +61,7 @@ the current version
   .Here we observe considerable differences between word similarity and
   association
 
-##Judgment Language Choice
+## Judgment Language Choice
 
 * WS 353
   * in 7 of 8 cases a model trained with a TL `T` best correlates with human

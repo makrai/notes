@@ -2,12 +2,12 @@ Evaluating the Stability of Embedding-based Word Similarities
 Maria Antoniak and David Mimno
 naacl 2018
 
-#Abstract
+# Abstract
 
 * including specific documents in the training set can result in substantial
   variations ... more prominent for smaller training corpora
 
-#1 Introduction
+# 1 Introduction
 
 * Word embeddings are ... used by researchers in unexpected ways
   in fields such as digital humanities and computational social science
@@ -25,7 +25,7 @@ naacl 2018
     taking bootstrap samples of the documents
 * Smaller corpora and larger document sizes increase this variation
 
-#2 Related Work
+# 2 Related Work
 
 * [embed in digital humanities and computational social sci]
   * Hamilton et al. (2016) ... measure semantic shifts, and
@@ -49,7 +49,7 @@ naacl 2018
     frequency, word ambiguity, and the number of training epochs on [skip-gram]
   * Tian et al. (2016) explore the robustness of SGNS and GloVe
 
-#3 Corpora
+# 3 Corpora
 
 * We [explore] size, vocabulary, and other parameters of the training corpus
 * datasets
@@ -58,9 +58,9 @@ naacl 2018
 * bootstrap sampling ... operates by removing or multiplying the presence of
   documents
 
-#Corpus Parameters
+# Corpus Parameters
 
-##Order and presence of documents
+## Order and presence of documents
 
 * three different methods to sample the corpus:
   FIXED, SHUFFLED, and BOOTSTRAP
@@ -69,12 +69,12 @@ naacl 2018
 * Algorithmic variability may arise from ... initializations ... negative
   sampling, or ... subsampling of tokens within documents
 
-##Size of corpus
+## Size of corpus
 
 * for each corpus, we curate a smaller sub-corpus that contains 20%
   * contiguous sequences of documents at the beginning of each training
 
-##Length of documents
+## Length of documents
 
 * We use two document segmentation strategies. In the first setting,
  1. each training instance is a single document . In the second setting,
@@ -85,7 +85,7 @@ naacl 2018
   * Sampling whole documents with replacement should magnify the[ir] effect
   * Sampling sentences with replacement should have less [such] effect
 
-#5 Algorithms
+# 5 Algorithms
 
 * four categories of algorithms
 * online stochastic updates [including] word2vec and fastText packages
@@ -97,7 +97,7 @@ naacl 2018
 * to test whether word order is a significant factor we include a
   document-based ... LSA (Deerwester et al., 1990; Landauer and Dumais, 1997)
 
-#6 Methods
+# 6 Methods
 
 * To establish statistical significance bounds for our observations, we train
   50 LSA models, 50 SGNS models, 50 GloVe models, and 50 PPMI models
@@ -115,7 +115,7 @@ naacl 2018
   * average changes in rank within those lists
   * examine these metrics across different algorithms and corpus parameters
 
-#7 Results 7
+# 7 Results 7
 
 * FIXED setting. For example, we can see the effect of
   the random SVD solver for LSA and ... random subsampling for PPMI

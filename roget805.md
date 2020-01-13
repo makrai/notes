@@ -18,7 +18,7 @@ This note is on Wikipedia articles
     * Some of Aristotle's Categories are included in Roget's first class
       _abstract relations_
 
-#1 Abstract Relations
+# 1 Abstract Relations
 
 * 1.1 Existence
 * 1.2 Relation
@@ -29,20 +29,20 @@ This note is on Wikipedia articles
 * 1.7 Change
 * 1.8 Causation
 
-#2 Space
+# 2 Space
 
 * 2.1 Space in General
 * 2.2 Dimensions
 * 2.3 Form
 * 2.4 Motion
 
-#3 Matter
+# 3 Matter
 
 * 3.1 Matter in General
 * 3.2 Inorganic Matter
 * 3.3 Organic Matter
 
-#4 the Intellectual Faculties
+# 4 the Intellectual Faculties
 
 * 4.1 Formation of Ideas
 	* 4.1.1 Operations of Intellect in General
@@ -57,7 +57,7 @@ This note is on Wikipedia articles
 	* 4.2.2 Modes of Communication
 	* 4.2.3 Means of Communicating Ideas
 
-#5 the Voluntary Powers
+# 5 the Voluntary Powers
 
 * 5.1 Individual Volition
 	* 5.1.1 Volition in General
@@ -71,7 +71,7 @@ This note is on Wikipedia articles
 	* 5.2.3 Conditional Intersocial Volition
 	* 5.2.4 Possessive Relations
 
-#6 the Sentient and Moral Powers
+# 6 the Sentient and Moral Powers
 
 * 6.1 Affections in General
 * 6.2 Personal Affections

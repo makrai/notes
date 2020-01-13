@@ -4,7 +4,7 @@ arXiv:1901.09590 [cs.LG]
 
 https://github.com/ibalazevic/TuckER
 
-#Abstract
+# Abstract
 
 * linear model based on Tucker decomposition of the binary tensor
 * outperforms all previous SOTA models across standard link prediction DSs
@@ -15,7 +15,7 @@ https://github.com/ibalazevic/TuckER
   * [still inreasonably high]
 * several previously introduced linear models can be viewed as special cases
 
-#1 Intro
+# 1 Intro
 
 * Knowledge graphs ... represented by a third-order binary tensor
   * 1 indicating a true fact and 0 indicating the unknown (false or a missing)
@@ -48,30 +48,30 @@ https://github.com/ibalazevic/TuckER
   * fully expressive and ["low"] bound on the entity and relation embed dim
   * subsumes several previous ... tensor factorization approaches to link pred
 
-#2. Related Work
+# 2. Related Work
 
-##linear models for link prediction
+## linear models for link prediction
 
-###RESCAL (Nickel+ 2011)
+### RESCAL (Nickel+ 2011)
 
 * bilinear product between vector embeddings for each subject and object entity
 * full rank matrix for each relation. Although [] very expressive and powerful
 * prone to overfitting ... increases quadratically in the embedding dimension
 
-###DistMult (Yang+ 2015) is
+### DistMult (Yang+ 2015) is
 
 * a special case of RESCAL with a diagonal matrix per relation, so the number
 * [the] tensor learned by DistMult is symmetric in the subject and object
 * a special case of CP, where subject and object entity embeddings are
   equivalent
 
-###ComplEx (Trouillon+ 2016)
+### ComplEx (Trouillon+ 2016)
 
 * extends DistMult to the complex domain. Even though each relation matrix of
 * subject and object entity embeddings for the same entity are ... complex
   conjugates, which introduces asymmetry into the tensor decomposition
 
-###SimplE (Kazemi & Poole, 2018) is a linear model
+### SimplE (Kazemi & Poole, 2018) is a linear model
 
 * based on Canonical Polyadic (CP) decomposition (Hitchcock, 1927). In CP
 * subject and object entity embeddings for the same entity are independent
@@ -82,9 +82,9 @@ https://github.com/ibalazevic/TuckER
   head embedding of the object entity, inverse relation embedding and tail
   embedding of the subject entity
 
-##Recent SOTA non-linear models
+## Recent SOTA non-linear models
 
-###ConvE (Dettmers+ 2018) is
+### ConvE (Dettmers+ 2018) is
 
 * the first nonlinear model that significantly outperformed ...  linear models
 * subject entity and relation embedding vectors, after they are reshaped to
@@ -95,7 +95,7 @@ https://github.com/ibalazevic/TuckER
 * unintuitive [because of] reshaping and concatenating of vectors as well as
   using 2D convolution on word embeddings
 
-###HypER (Balažević+ 2018)
+### HypER (Balažević+ 2018)
 
 * simplified convolutional model, that uses
 * a hypernetwork to generate 1D convolutional filters for each relation,
@@ -108,9 +108,9 @@ https://github.com/ibalazevic/TuckER
 * Scoring functions of all models described above and TuckER are summarized in
   Table 1
 
-#3. Background
+# 3. Background
 
-##3.2. Tucker Decomposition 3
+## 3.2. Tucker Decomposition 3
 
 * Tucker, (1964) and refined in his subsequent work (Tucker, 1966)
   * decomposes a tensor into a set of matrices and a smaller core tensor
@@ -122,7 +122,7 @@ https://github.com/ibalazevic/TuckER
   * improved uniqueness (Kolda & Bader, 2009) by imposing e.g sparsity, making
     its elements small or making the core “all-orthogonal”
 
-#4. Tucker Decomposition for Link Prediction
+# 4. Tucker Decomposition for Link Prediction
 
 * We propose a model that uses Tucker decomposition for link prediction on the
   third-order binary tensor representation of a knowledge graph
@@ -132,7 +132,7 @@ https://github.com/ibalazevic/TuckER
 * fully expressive, i.e.  given sufficient ...  dimensionality, it is able to
   assign [any combination of] truth true triples [and] false ones
 
-##4.1. Training 4
+## 4.1. Training 4
 
 * the tensor being factorized is comprised of ∞ and −∞ 
   (after applying the inverse of logistic sigmoid)
@@ -148,9 +148,9 @@ https://github.com/ibalazevic/TuckER
       triples as positive samples
 * minimize the Bernoulli negative log-likelihood loss function
 
-#5. Theoretical Analysis
+# 5. Theoretical Analysis
 
-##5.1. Bound on Embedding Dimensionality for Full Expressiveness
+## 5.1. Bound on Embedding Dimensionality for Full Expressiveness
 
 * ComplEx and SimplE are fully expressive with [the following dimensions]
   * ComplEx: d_e = `d_r` = n_e · n_r (Trouillon+ 2017)
@@ -162,14 +162,14 @@ https://github.com/ibalazevic/TuckER
     (Feng+ 2016) and STransE (Nguyen+ 2016)
 * TuckER : `d_e = n_e` and `d_r = n r`
 
-##5.2. ... Previous Tensor Factorization Approaches [as special cases] 5
+## 5.2. ... Previous Tensor Factorization Approaches [as special cases] 5
 
-###RESCAL (Nickel+ 2011) Following the notation introduced in Section 3.2,
+### RESCAL (Nickel+ 2011) Following the notation introduced in Section 3.2,
 
 * the second dimension of original tensor X ∈ R n_e ×n r ×n e is not reduced
 * also known as Tucker2 decomposition (Kolda & Bader, 2009). As is the case
 
-###DistMult (Yang+ 2015) ... can be viewed in two ways:
+### DistMult (Yang+ 2015) ... can be viewed in two ways:
 
 * as equivalent to that of TuckER with acore tensor ... is superdiagonal with
   1s on that superdiagonal
@@ -178,7 +178,7 @@ https://github.com/ibalazevic/TuckER
 * as equivalent to that of RESCAL ...  with a core tensor ... which is diagonal
   for every d_e × d_e slice
 
-###ComplEx (Trouillon+ 2016)
+### ComplEx (Trouillon+ 2016)
 
 * Bilinear models are a family of models where subject and object entity
   * embeddings are represented by vectors `e_s` , e o
@@ -195,14 +195,14 @@ https://github.com/ibalazevic/TuckER
 * ComplEx ... is equivalent to a hard regularization of the core tensor of
   TuckER in the real domain
 
-###SimplE (Kazemi & Poole, 2018) The authors show that SimplE
+### SimplE (Kazemi & Poole, 2018) The authors show that SimplE
 
 * belongs to the family of bilinear models
 * equivalent to:
   * that of TuckER (see Equation 1)
   * that of RESCAL (see Equation 4)
 
-##5.3. Representing Asymmetric Relations
+## 5.3. Representing Asymmetric Relations
 
 * possible ways in which linear link prediction models introduce asymmetry into
   factorization of the binary tensor of triples
@@ -224,7 +224,7 @@ https://github.com/ibalazevic/TuckER
   * Multiplying W with `w_r`, we obtain a
     full rank relation-specific matrix `W_r` which [can be] transformed
 
-#6. Experiments and Results 6
+# 6. Experiments and Results 6
 
 * datasets:
   * FB15k (Bordes+ 2013) is a subset of Freebase, a large database of
@@ -236,7 +236,7 @@ https://github.com/ibalazevic/TuckER
   * WN18RR (Dettmers+ 2018) is a subset of WN18, created by removing the
     inverse relations from validation and test sets
 
-##6.2. Implementation and Experiments
+## 6.2. Implementation and Experiments
 
 * embedding dimension
   * For FB15k and FB15k-237, we set both entity and relation embedding
@@ -276,13 +276,13 @@ TuckER [consistently obtains better results than] some simpler linear models
 * TuckER improves the results of all previous linear models by a larger margin
   on datasets with [many] relations
 
-##6.4. Influence of Embedding Dimensionality 8
+## 6.4. Influence of Embedding Dimensionality 8
 
 * we train ComplEx, SimplE and TuckER on FB15k-237
   with embedding sizes `d_e = d_r` ∈ {20, 50, 100, 200}
   Figure 3 shows the obtained MRR on the test set for each of the models
 
-#7. Conclusion
+# 7. Conclusion
 
 * Future work
   * softly regularizing the model other than dropout

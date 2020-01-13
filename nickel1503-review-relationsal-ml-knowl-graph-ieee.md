@@ -2,7 +2,7 @@ Maximilian Nickel ; Kevin Murphy ; Volker Tresp ; Evgeniy Gabrilovich
 A Review of Relational Machine Learning for Knowledge Graphs
 Proceedings of the IEEE (Volume: 104 , Issue: 1 , Jan. 2016) 
 
-#Abstract
+# Abstract
 
 * two fundamentally different kinds of statistical relational models, 
   * both of which can scale to massive data sets. The first is based on 

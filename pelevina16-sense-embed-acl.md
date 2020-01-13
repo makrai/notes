@@ -4,16 +4,16 @@ Maria Pelevina, Nikolay Arefyev, Chris Biemann, and Alexander Panchenko
 
 WSI
 
-#Abstract
+# Abstract
 
 induce a sense inventory from existing word embeddings via clustering of
 ego-networks of related words
 
-#intro
+# intro
 
 * comparably to state-of-the-art unsupervised WSD systems
 
-#5.2
+# 5.2
 
 AdaGram sometimes outperforms our method, sometimes it is on par, depending on
 the metric. We interpret these results as an indication of comparability of our

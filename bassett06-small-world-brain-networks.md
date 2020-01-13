@@ -2,7 +2,7 @@ Small-World Brain Networks
 Danielle Smith Bassett and Ed Bullmore
 2006 Neuroscientist ; 12; 512
 
-#Mathematical Concepts
+# Mathematical Concepts
 
 * To evaluate the properties of a real-life network, these parameters must be
   compared to the mean clustering coefficient and path length estimated in a

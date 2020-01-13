@@ -2,11 +2,11 @@ Quoc Le and Tomas Mikolov
 Distributed Representations of Sentences and Documents
 31 st International Conference on Machine Learning, 2014
 
-#Abstract
+# Abstract
 
 * we achieve new SOTA on several text classification and sentiment analysis ts
 
-#Introduction
+# Introduction
 
 * bag-of-words or bag-of-n-grams (Harris, 1954)
 * we concatenate the paragraph vector with several word vectors from a
@@ -22,9 +22,9 @@ Distributed Representations of Sentences and Documents
   * combining the word vectors in an order given by a parse tree of a sentence,
     using matrix-vector operations (Socher+ 2011b)
 
-#2. Algorithms
+# 2. Algorithms
 
-##2.1. Learning Vector Representation of Words
+## 2.1. Learning Vector Representation of Words
 
 * previous methods for learning word vectors
 * hierarchical softmax
@@ -35,7 +35,7 @@ Distributed Representations of Sentences and Documents
   * image understanding (Frome+ 2013) and
   * relational extraction (Socher+ 2013a)
 
-##2.2. Paragraph Vector: A distributed memory model
+## 2.2. Paragraph Vector: A distributed memory model
 
 * The paragraph vectors are also asked to contribute to the prediction task of
   the next word given many contexts sampled from the paragraph

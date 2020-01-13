@@ -5,7 +5,7 @@ Journal of Biomedical Informatics 62 (2016) 59–65
 
 https://nactem.ac.uk/pvtopic/
 
-#Abstract
+# Abstract
 
 * _Systematic reviews_ require expert reviewers to manually screen thousands of
   citations in order to identify all relevant articles to the review.  
@@ -17,7 +17,7 @@ https://nactem.ac.uk/pvtopic/
   our novel topic detection method and a baseline topic model (i.e., Latent
   Dirichlet Allocation).
 
-#1
+# 1
 
 * the identification of relevant studies is more challenging in [the public
   health] domain compared to others, e.g., clinical documents. This can be

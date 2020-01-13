@@ -3,7 +3,7 @@ Sense Disambiguation "Ambiguous Sensation"
 Judit Kuti, Enikő Héja, Bálint Sass
 2010 LREC
 
-#1 The challenge
+# 1 The challenge
 
 * Véronis (2003) tried to show the
   * problematic nature of the intuition-based meaning-definition and the
@@ -11,7 +11,7 @@ Judit Kuti, Enikő Héja, Bálint Sass
   * first experiment ... showed that the inter-annotator agreement was [low]
     even regarding the question whether a certain word form was ... polysemous
 
-#2. The resources
+# 2. The resources
 
 * Hungarian Explanatory Dictionary (henceforward HED)
   * approx. 75000 entries, including collocations and idioms
@@ -21,9 +21,9 @@ Judit Kuti, Enikő Héja, Bálint Sass
 * Hungarian WordNet (henceforward HuWN) (see Miháltz+ 2008)
   * developed between 2005 and 2007,
 
-#3. The case study
+# 3. The case study
 
-##3.2. The data
+## 3.2. The data
 
 * verbs are in general more polysemous than nouns and adjectives
   * Palmer, Dang and Fellbaum
@@ -33,7 +33,7 @@ Judit Kuti, Enikő Héja, Bálint Sass
   * Véronis' results for adjectives and nouns are [in] the same order of
     magnitude as the results for verbs,
 
-#5. Interpretation of the results
+# 5. Interpretation of the results
 
 * it was the Hungarian verbal WordNet on the basis of which the best ITA-value
   was obtained, with the exception of the sense-cluster oriented evaluation of

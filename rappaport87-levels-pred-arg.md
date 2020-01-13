@@ -27,8 +27,8 @@ Levels of lexical representation
 * Section 2.2 discusses how this problem can be overcome by adopting a
   representation involving _predicate decomposition_
 
-#1. PREDICATE-ARGUMENT STRUCTURE 39
+# 1. PREDICATE-ARGUMENT STRUCTURE 39
 
-#2. THE LEXICAL SEMANTIC REPRESENTATION 45
+# 2. THE LEXICAL SEMANTIC REPRESENTATION 45
 
-#3. CONCLUSION 52
+# 3. CONCLUSION 52

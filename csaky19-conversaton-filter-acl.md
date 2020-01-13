@@ -1,7 +1,7 @@
 Improving Neural Conversational Models with Entropy-Based Data Filtering
 Richard Csaky, Patrik Purgai, Gábor Recski
 
-##3.2 Clustering Methods and Filtering
+## 3.2 Clustering Methods and Filtering
 
 * clusters of utterances established by clustering their vector representations
   using the Mean Shift algorithm (Fukunaga and Hostetler, 1975)

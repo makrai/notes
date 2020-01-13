@@ -2,7 +2,7 @@ Joseph Turian, Lev Ratinov, Yoshua Bengio
 Word representations: A simple and general method for semi-supervised learning
 2010
 
-#Abstract
+# Abstract
 
 * unsupervised word representations
   as extra word features [to an existing supervised NLP system]

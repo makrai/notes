@@ -2,7 +2,7 @@ Neural machine translation by jointly learning to align and translate
 Dzmitry Bahdanau and KyungHyun Cho and Yoshua Bengio
 2015
 
-#1 Introduction
+# 1 Introduction
 
 * Neural machine translation is a newly emerging approach to MT
   * proposed by
@@ -17,7 +17,7 @@ Dzmitry Bahdanau and KyungHyun Cho and Yoshua Bengio
     performance of a basic encoder–decoder deteriorates rapidly
     as the length of an input sentence increases
 
-#2 Background: neural machine translation
+# 2 Background: neural machine translation
 
 * neural networks to directly learn this conditional distribution
   * Kalchbrenner and Blunsom, 2013; Cho+ 2014a;

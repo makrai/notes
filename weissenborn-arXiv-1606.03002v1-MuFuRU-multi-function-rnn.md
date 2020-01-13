@@ -2,13 +2,13 @@ MuFuRU: The Multi-Function Recurrent Unit
 arXiv:1606.03002v1 [cs.NE] 9 Jun 2016
 Dirk Weissenborn, Tim Rocktäschel
 
-#Abstract
+# Abstract
 
 Our experiments demonstrate that the additional functionality helps in
 different sequence modeling tasks, including the evaluation of propositional
 logic formulae, language modeling and sentiment analysis.
 
-#Intro
+# Intro
 
 Recurrent neural networks (RNNs) 
   * Impressive results were achieved for tasks that involve text, such as

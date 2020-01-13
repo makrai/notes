@@ -2,11 +2,11 @@ Manaal Faruqui, Jesse Dodge, Sujay K Jauhar, Chris Dyer, Eduard Hovy, NA Smith
 Retrofitting Word Vectors to Semantic Lexicons
 NAACL 2015 Best Student Paper Award
 
-#Abstract
+# Abstract
 
 semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 
-#1 Introduction
+# 1 Introduction
 
 * Recent work has shown that by either
   * changing the objective of the word vector training algorithm
@@ -24,7 +24,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
   * constructed from lexicon-derived relational information
 * the new vectors to be (i) similar to the vectors of related word types
 
-#2 Retrofitting with Semantic Lexicons
+# 2 Retrofitting with Semantic Lexicons
 
 * Ω be an ontology, an undirected graph
 * Markov random field (Kindermann and Snell, 1980)
@@ -33,7 +33,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * prior approach here ... will serve as a baseline
 * `\beta_{ij} = deg(i)^{-1}`
 
-#3 Word Vector Representations
+# 3 Word Vector Representations
 
 * available pre-trained English word vectors
   * glove
@@ -49,7 +49,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
       * monolingual vectors were trained on WMT-2011 news corpus for
         English, French, German and Spanish
 
-#4 Semantic Lexicons
+# 4 Semantic Lexicons
 
 * both manually and automatically created lexicons
 
@@ -68,7 +68,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
   * For example, the frame "Cause change of position on a scale" is associated
     with push, raise, and growth (among many others)
 
-#5 Evaluation Benchmarks
+# 5 Evaluation Benchmarks
 
 * both semantic and syntactic aspects of the representations
 * extrinsic sentiment analysis task
@@ -85,9 +85,9 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
   * a treebank containing sentences annotated with fine-grained sentiment
     labels on phrases and sentences from movie review excerpts
 
-#6 Experiments
+# 6 Experiments
 
-##6.3 Comparisons to Prior Work
+## 6.3 Comparisons to Prior Work
 
 * Yu and Dredze (2014)
    Mo Yu and Mark Dredze
@@ -99,18 +99,18 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
     A general framework for incorporating knowledge into word representations
    CIKM 2014 
 
-##6.4 Multilingual Evaluation
+## 6.4 Multilingual Evaluation
 
 * German RG-65 (Gurevych, 2005),
 * French RG-65 (Joubarne and Inkpen, 2011) and
 * Spanish MC-30 (Hassan and Mihalcea, 2009)
 * Universal WordNet (de Melo and Weikum, 2009),
 
-#7 Further Analysis
+# 7 Further Analysis
 
 * Retrofitting vs. vector length
 
-#8 Related Work
+# 8 Related Work
 
 * graph structures to propagate information among semantic concepts
   (Zhu, 2005; Culp and Michailidis, 2008)
@@ -124,4 +124,4 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
     * language generation (Krahmer+ 2003) and
     * sentiment analysis (Goldberg and Zhu, 2006)
 
-#9 Conclusion
+# 9 Conclusion

@@ -3,7 +3,7 @@ Which Algorithm to Choose?
 arXiv:1511.03688v1 [stat.ML] 11 Nov 2015
 Hervé Cardot (a) and David Degras (b)
 
-#abstract
+# abstract
 
 * In the current context of data explosion, online techniques that do not
   require storing all data in memory are indispensable to routinely perform
@@ -19,7 +19,7 @@ Hervé Cardot (a) and David Degras (b)
   are discussed. All studied algorithms are available package onlinePCA on
   CRAN.
 
-#Intro
+# Intro
 
 * [PCA] has found applications in fields [like] 
   * latent semantic indexing (Zha and Simon, 1999),

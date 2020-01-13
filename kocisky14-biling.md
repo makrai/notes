@@ -2,7 +2,7 @@ Tomáš Kočiskíý  and Karl Moritz Hermann  and Phil Blunsom
 Learning Bilingual Word Representations by Marginalizing Alignments
 2014
 
-#Abstract
+# Abstract
 
 * We present a probabilistic model that 
   * simultaneously learns alignments and distributed representations 
@@ -13,7 +13,7 @@ Learning Bilingual Word Representations by Marginalizing Alignments
 * demonstrated in a cross-lingual classification task, where we
   * outperform the prior published state of the art
 
-#1 Introduction
+# 1 Introduction
 
 * distributed representations
   * AI and reinforcement learning (Mnih+ 2013),
@@ -36,7 +36,7 @@ Learning Bilingual Word Representations by Marginalizing Alignments
   * IBM model 2
   * performs on par with the original model,
 
-#2 Background
+# 2 Background
 
 * we incorporate ideas from the log-bilinear language model (Mnih & Hinton 07)
 * FastAlign (FA) (Dyer+ 2013),

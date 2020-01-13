@@ -2,7 +2,7 @@ Prior Disambiguation of Word Tensors for Constructing Sentence Vectors
 Dimitri Kartsaklis, Mehrnoosh Sadrzadeh
 EMNLP 2013 October Seattle, Washington, USA SIGDAT 1590–1601
 
-#Abstract
+# Abstract
 
 * Recent work has shown that compositional-distributional models using
   element-wise operations on contextual word vectors
@@ -12,7 +12,7 @@ EMNLP 2013 October Seattle, Washington, USA SIGDAT 1590–1601
     positive effect of disambiguation on vector mixture models, and
     we compare the effectiveness of the two approaches
 
-#Introduction
+# Introduction
 
 * no text corpus, regardless of its size, can provide reliable distributional
   representations for ... phrase or sentence level
@@ -49,13 +49,13 @@ Specifically, this paper aims to:
   tensor-based models; they also
   * reconfirm previous findings ... for simple vector mixture models
 
-#2 Vectors vs tensors
+# 2 Vectors vs tensors
 
 * a compositional approach based on linear maps, tensor-based models
   * e.g., one can consider building linear maps for prepositions and logical
     words, rather than treating them as noise and discard them, as common
 
-#3 Disambiguation in vector mixtures 3
+# 3 Disambiguation in vector mixtures 3
 
 * Pulman (2013) and Kartsaklis+ (2013): the element-wise combination of
   “ambiguous” vectors produces results that are hard to interpret;
@@ -63,18 +63,18 @@ Specifically, this paper aims to:
     some amount of disambiguation that emerges as a side-effect of the compos
   * leaving the resulting vector in an intermediate state
 
-#4 Tensors as multilinear maps
+# 4 Tensors as multilinear maps
 
 * The generalization of [matrix multiplication] to tensors of higher order is
   known as tensor contraction. Given two tensors of orders n and m, the tensor
   contraction operation will always produce a tensor of order n + m − 2
 
-#5 Creating verb tensors 4
+# 5 Creating verb tensors 4
 
 * [Now we review proposals for] constructing tensors for relational words
   in ... the frameworks of Coecke+ (2010) and Baroni and Zamparelli (2010),
 
-##Relational
+## Relational
 
 * Following ideas from the set-theoretic view of formal semantics,
   Grefenstette and Sadrzadeh (2011a) suggest that the meaning of a
@@ -86,20 +86,20 @@ Specifically, this paper aims to:
 * arity of the head word in a sentence will also determine the order of the
   sentence space
 
-##Kronecker
+## Kronecker
 
 * Grefenstette and Sadrzadeh (2011b) proposes the creation of a
   verb matrix as the Kronecker product of the verb’s contextual vector with
   itself
 * sentence space is of order 2
 
-##Frobenius
+## Frobenius
 
 * Using Frobenius algebras, Kartsaklis+ (2012) provide a unified sentence space
   * turn the matrix of Equation 3 to a tensor of order 3 (as required by the
     type-logical identities) by copying one of the existing dimensions. When
 
-##Linear regression 5
+## Linear regression 5
 
 * idea first introduced by Baroni and Zamparelli (2010) for the creation of
   adjective matrices, Grefenstette+ (2013) use linear regression in order to
@@ -109,13 +109,13 @@ Specifically, this paper aims to:
   pair is the contextual vector of the whole phrase created exactly as if it
   were a single word
 
-#6 Generic context-based disambiguation 5
+# 6 Generic context-based disambiguation 5
 
 * [clustering] the set of contexts
 
-#Experiments 6
+# Experiments 6
 
-##Experimental setting
+## Experimental setting
 
 * ukWaC (Ferraresi+ 2008), a corpus of English text with 2 billion words
 * 2000 dimensions, with weights calculated as the [conditional probability]
@@ -124,9 +124,9 @@ Specifically, this paper aims to:
 
 ## Models
 
-###Implementation details 7
+### Implementation details 7
 
-##8.1 Verb disambiguation task 7
+## 8.1 Verb disambiguation task 7
 
 * Perhaps surprisingly, one of the most popular tasks for testing
   compositionality in distributional models is based on disambiguation. This
@@ -157,7 +157,7 @@ Specifically, this paper aims to:
 * Both datasets consist of 200 pairs of sentences
   (10 main verbs × 2 landmarks × 10 contexts)
 
-#Results
+# Results
 
 * G&S dataset are shown in Table 1. 5 The verbs-only model (BL) refers to a
   * The tensor-based models present much better performance
@@ -184,7 +184,7 @@ Specifically, this paper aims to:
     model that produced this side-effect. Unfortunately, the extent to which
   * this ... is still not quite clear (Kartsaklis+ 2013). Keeping a note of
 
-##8.2 Phrase/sentence similarity task
+## 8.2 Phrase/sentence similarity task
 
 * does not use disambiguation as a criterion of composition
 * based on ... Mitchell and Lapata (2010). On the contrary with the task of
@@ -193,13 +193,13 @@ Specifically, this paper aims to:
 * groups exhibiting various degrees of similarity:
   36 highly similar phrasesm medium similarity, low-similarity pairs
 
-###Verb phrases It can be shown that
+### Verb phrases It can be shown that
 
 * for simple verb phrases the relational model reduces itself to the copy-subj
 * effects of disambiguation ... are quite impressive
 * [w]hat benefit the most from disambiguation are the vector mixtures; both
 
-###Transitive sentences
+### Transitive sentences
 
 * we extend each one of the 72 verb phrases to a full transitive sentence
   by adding an appropriate subject such that the similarity relationships of
@@ -220,7 +220,7 @@ Specifically, this paper aims to:
 * suggests that as the length of the text segments increases, the performance
   of vector mixtures and tensor-based models converges
 
-#9 Discussion
+# 9 Discussion
 
 * The positive effect of disambiguation is more evident for the vector mixture
   * This is expected: composite representations created by element-wise
@@ -240,7 +240,7 @@ Specifically, this paper aims to:
   when more words are involved, vector mixture models ... less effective; on
   * performance of tensor-based models seems to be proportional to the length
 
-#10 Conclusion and future work 10
+# 10 Conclusion and future work 10
 
 * future work, we aim to investigate the application of [the tensor
   contraction] procedure to the regression model of Grefenstette+ (2013)

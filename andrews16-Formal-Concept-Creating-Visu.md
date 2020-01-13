@@ -6,7 +6,7 @@ In-Close2 program is available at `https://sourceforge.net/projects/inclose/`
 and the Java-Script program to visualise the tree in a Web-Browser can be accessed [at]
 `http://homepages.shu.ac.uk/~aceslh/fca/fcaTree.html1`
 
-#Abstract
+# Abstract
 
 * tool for creating and visualising formal concept trees.  The 
   * concept tree provides an alternative visualisation to the more commonly
@@ -17,7 +17,7 @@ and the Java-Script program to visualise the tree in a Web-Browser can be access
   * ‘iceberg trees’ can also be produced, by specifying a minimum support for
     objects.
 
-#Introduction
+# Introduction
 
 * tools that visualise and explore formal concept lattices, such as the well
   * Concept Explorer [15] ... ToscanaJ [4], Conflexplore [6], FcaStone/Graphviz
@@ -38,7 +38,7 @@ and the Java-Script program to visualise the tree in a Web-Browser can be access
   * output formal concepts in the D3 Collapsible Tree JSON file format
   * the limitation being only on the JavaScript to deal with very large JSONs
 
-#2 Concept Trees
+# 2 Concept Trees
 
 * A lattice can be thought of as a collection of overlapping trees [5] where
 * In ... a concept lattice, where an arc is removed to form a corresponding
@@ -57,7 +57,7 @@ and the Java-Script program to visualise the tree in a Web-Browser can be access
   * attributes are inherited down the branches of the tree, 
   * objects are inherited up the branches
 
-#3 Visualising the Concept Tree
+# 3 Visualising the Concept Tree
 
 The tree is best read from top to bottom 
 * in a manner of attribute ...  specialization, of concepts
@@ -68,7 +68,7 @@ The tree is best read from top to bottom
     attributes more easily. But, so long as this limitation is kept in mind,
     the concept tree is still a useful and readable visualisation.
 
-#4 ‘Iceberg Trees’
+# 4 ‘Iceberg Trees’
 
 * idea of a formal concept ‘iceberg’ lattice was 
 * described by [12] as being 

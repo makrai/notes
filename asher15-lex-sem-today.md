@@ -2,7 +2,7 @@ Nicholas Asher, Tim Van de Cruys, Márta Abrusán
 Lexical semantics today
 chap in 2015 The Routledge Handbook of Linguistics, N. York/London: Routledge
 
-#11.1 Introduction
+# 11.1 Introduction
 
 * lexical semanticists investigated argument structure, verbal diathesis
   (shifts in meaning due to shifts in argument structure), polysemy, and

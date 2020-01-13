@@ -4,7 +4,7 @@ Edilson A. Corrêa Jr. a , Diego R. Amancio
 https://arxiv.org/abs/1803.08476
 journal-length
 
-#Abstract
+# Abstract
 
 * we generate context embeddings, which are 
   * embeddings containing information about the semantical context of a word.
@@ -14,7 +14,7 @@ journal-length
 * Our [unsupervised] method outperformed ... several baselines and methods that
   participated in the SemEval-2013 Task 13 [36].
 
-#Bib
+# Bib
 
 [6] Amancio, D. R., Oliveira Jr., O. N., & Costa, L. F. (2012). 
   ...complex networks metrics and word senses. Europhysics Letters

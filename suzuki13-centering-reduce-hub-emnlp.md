@@ -2,7 +2,7 @@ Centering Similarity Measures to Reduce Hubs
 Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
 2013 emnlp
 
-#Abstract
+# Abstract
 
 * We show analytically why hubs emerge and why they are suppressed by cen-
   tering, under a simple probabilistic model of data
@@ -12,7 +12,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
   * (weighted) centering is effective ... in
     word sense disambiguation and document classification tasks
 
-##1.2 Contrib
+## 1.2 Contrib
 
 * by centering, ... their inner product and cosine are affected;
   see Section 3 for detail
@@ -27,7 +27,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
     * objects similar to the centroid also emerge as hubs
   6. weighted centering (Section 6)
 
-#2 Related work
+# 2 Related work
 
 * approaches to improving kNN classification:
   * learning similarity/distance measures from training data (metric learning)
@@ -56,31 +56,31 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
     * Laplacian-based kernel requires O(n^3) time for matrix inversion
     * Mutual Proximity also has a time complexity of O(n^2)
 
-#3 Centering
+# 3 Centering
 
 * centering reduces hubs because it makes the length of the feature vector
   `x_cent` short for (hub) objects x that lie close to the data centroid x̄
   * since we measure object similarity by inner product
 
-#4 Theoretical analysis
+# 4 Theoretical analysis
 
 * why objects most similar to the centroid tend to be hubs
 * Consider ... a distribution with a finite mean vector μ
 
-#5 Hubs in multi-cluster data
+# 5 Hubs in multi-cluster data
 
 * objects that are only slightly more similar to the data mean (centroid)
   may emerge as hubs
   * [demonstration] Using both synthetic and real datasets
 
-##5.2 Real dataset
+## 5.2 Real dataset
 
 * Reuters Transcribed dataset
   * multi-class document classification dataset
   * ten classes, and each class roughly forms a cluster
 * Figure 2
 
-#6 Hubness weighted centering
+# 6 Hubness weighted centering
 
 * centering can be interpreted as an operation that
   shifts the origin towards hubs
@@ -88,7 +88,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
   between the object and all objects
 * parameter $\gamma$
 
-#7 [NLP] Experiments
+# 7 [NLP] Experiments
 
 * word sense disambiguation (WSD) and document classification
 * we also tested two recently proposed approaches to hub reduction:
@@ -104,7 +104,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
       * commute-time kernel (Saerens+ 2004), but
       * present only the best results among these kernels
 
-##7.1 WSD
+## 7.1 WSD
 
 * parameter tuning on the training data
   * neighborhood size k
@@ -113,12 +113,12 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
 * we followed Radovanović+ (2010a) and counted `N_k(x)`, the number of
   times object x occurs in the kNN lists of other objects in the dataset
 
-##7.2 Document classification
+## 7.2 Document classification
 
 * Two multiclass document classification datasets were used:
   * Reuters Transcribed and Mini Newsgroups,
 
-#Conclusion
+# Conclusion
 
 * future work
   * class distribution in the dataset

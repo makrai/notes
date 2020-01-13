@@ -2,7 +2,7 @@ Jiang Guo, Wanxiang Che, Haifeng Wang, Ting Liu
 Learning Sense-specific Word Embeddings By Exploiting Bilingual Resources
 2014
 
-#Abstract
+# Abstract
 
 * from bilingual parallel data
 * We evaluate our embeddings using the
@@ -11,7 +11,7 @@ Learning Sense-specific Word Embeddings By Exploiting Bilingual Resources
   * Chinese named entity recognition and obtain
     * noticeable improvements against single embeddings
 
-#6 Related Work
+# 6 Related Work
 
 * language models based on feed-forward neural networks
   * Schwenk and Gauvain (2002), Bengio et al.  (2003), Mnih and Hinton (2007)

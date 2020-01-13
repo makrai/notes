@@ -6,7 +6,7 @@ ACL 2018
 probing data sets and tools, hoping they will become a standard
 https://github.com/facebookresearch/SentEval/tree/master/data/probing
 
-#Abstract
+# Abstract
 
 * "Downstream" tasks, often based on sentence classification, are commonly used
 * difficult to infer what kind of information is present in the representations
@@ -16,7 +16,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     trained in eight distinct ways, uncovering
   * intriguing properties of both encoders and training methods
 
-#1 Intro
+# 1 Intro
 
 * sentence embedding methods have achieved impressive results in tasks ranging
   * machine translation (Sutskever+ 2014; Cho+ 2014) to
@@ -45,7 +45,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * explore a wide range of SOTA encoding architectures and training methods,
   * relate probing and downstream task performance
 
-#2 Probing tasks 2
+# 2 Probing tasks 2
 
 * probing benchmark criteria
   * should only require single sentence embeddings as input (as opposed to,
@@ -62,12 +62,12 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * from the random pre-processed portion made available by Paperno+ (2016)
   * only ... sentences in the 5-to-28 word range
 
-##Surface information
+## Surface information
 
 * SentLen as a 6-way classification task (Adi+ 2017)
 * word content (WC): which of the 1k words a sentence contains (1k-way classif)
 
-##Syntactic information The next batch of tasks test whether sentence
+## Syntactic information The next batch of tasks test whether sentence
 
 * bigram shift (BShift) task tests
   whether an encoder is sensitive to legal word orders. In this binary
@@ -86,7 +86,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     e.g. “[Then] [very dark gray letters on a black screen] [appeared] [.]” has
     “ADVP NP VP .”
 
-###Semantic information
+### Semantic information
 
 * also rely on syntactic structure, but they further require some [denot]
 * grouped ... with the semantic tasks, since, at least for models ... without
@@ -114,11 +114,11 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     * For these tasks, we ran Amazon Mechanical Turk experiments
     * majority voting.  See Appendix for details
 
-#3 Sentence embedding models 4
+# 3 Sentence embedding models 4
 
-#4 Probing task experiments 5
+# 4 Probing task experiments 5
 
-##Probing task comparison
+## Probing task comparison
 
 * extremes,
   * performance is not particularly high on the surface tasks, which might be
@@ -141,7 +141,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
       * what BiLSTM-max is able to capture about this task is already encoded
         in its architecture, and further training doesn’t help much
 
-##Probing vs. downstream tasks
+## Probing vs. downstream tasks
 
 * downstream tasks available in the SentEval 5 suite (Conneau and Kiela, 2018),
   * classification (MR, CR, SUBJ, MPQA, SST2, SST5, TREC
@@ -173,7 +173,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     but we must leave a full understanding of this behaviour to future work
 * see Conclusion
 
-#5 Related work 8
+# 5 Related work 8
 
 * Adi+ (2017) introduced SentLen, WC and a word order test, focusing on a
   bag-of-vectors baseline, an autoencoder and skip-thought
@@ -192,7 +192,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 * Finally, Conneau+ (2017)
   * large-scale, multi-task evaluation, entirely on downstream tasks
 
-#6 Conclusion 9
+# 6 Conclusion 9
 
 > Their purpose [of our tasks] is not to encourage the development of ad-hoc
 > models that attain top performance on them

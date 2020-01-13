@@ -2,7 +2,7 @@ Using Semantic Roles to Improve Question Answering
 Dan Shen and Mirella Lapata
 2007
 
-#Abstract
+# Abstract
 
 Shallow semantic parsing, the automatic identification and labeling of
 sentential constituents
@@ -12,7 +12,7 @@ sentential constituents
   * answer extraction as an instance of graph matching. 
   * Experimental results on the TREC datasets ... over state-of-the-art models.
 
-#Intro
+# Intro
 
 * labeling of semantic roles conveyed by sentential constituents
   * refer ... to Carreras and Màrquez (2005) for an overview [of approaches]
@@ -38,7 +38,7 @@ sentential constituents
         on questions and generally on 
       * out-of-domain data
 
-#2 Related work
+# 2 Related work
 
 * QA-related tasks ranging from 
   * query expansion, to 

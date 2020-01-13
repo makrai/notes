@@ -2,7 +2,7 @@ Siklósi Borbála, Novák Attila
 Beágyazási modellek alkalmazása lexikai kategorizációs feladatokra
 2016
 
-#2. Folytonos disztribúciós szemantikai modellek
+# 2. Folytonos disztribúciós szemantikai modellek
 
 * poliszémia, illetve homonímia kezelésére ...  sikerrel alkalmazott módszerek
     1. Banea, C., Chen, D., Mihalcea, R., Cardie, C., Wiebe, J.: 
@@ -15,6 +15,6 @@ Beágyazási modellek alkalmazása lexikai kategorizációs feladatokra
         sense2vec - A fast and accurate method for WSD in ... embeddings
         Under review as a conference paper at ICLR 2016
 
-#3. Kísérletek
+# 3. Kísérletek
 
 CBOW, 300 dimenziós, 5 token sugarú mintavételezési ablakot

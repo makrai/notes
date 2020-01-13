@@ -2,7 +2,7 @@ The Taming of the Polysemy: Automated Word Sense Frequency Estimation for Lexico
 Anastasiya Lopukhina, Konstantin Lopukhin, Boris Iomdin, Grigory Nosyrev
 2016 Euralex
 
-#Abstract
+# Abstract
 
 * for Russian nouns
 * system based on semantic context vectors, supplied with contexts and

@@ -2,7 +2,7 @@ Patrick J. Hayes
 1979
 The naive physics manifesto
 
-#0. Intro
+# 0. Intro
 
 * I propose the construction of a formalization of a sizeable portion of
   common-sense knowledge about the eveyday physical world
@@ -10,7 +10,7 @@ The naive physics manifesto
 * along the way I will outline the theory of meaning which this proposal
   assumes
 
-#1. The proposal: a summary
+# 1. The proposal: a summary
 
 * not to 
   * develop a new formalism toexpress this knowledge in
@@ -32,7 +32,7 @@ The naive physics manifesto
     * [but] idiosyncratic formalisms [should be] systematically reducible to
       the basic formalism: they will be regarded as 'semantic sugar'
 
-#2 What the proposal isn't
+# 2 What the proposal isn't
 
 * not a program
   * [demos] divert attention from the main goal
@@ -47,17 +47,17 @@ The naive physics manifesto
       * non-unique Skolem function, simar to Hilbert’s $\epsilon$-symbol
       * default
 
-#3.The axiom-concept graph: clusters and density
+# 3.The axiom-concept graph: clusters and density
 
-#4.The a/c ratio and reductionist formalisations
+# 4.The a/c ratio and reductionist formalisations
 
-#5. Meanings, model theory, and fidelity
+# 5. Meanings, model theory, and fidelity
 
-#6.Thoroughnes and closure
+# 6.Thoroughnes and closure
 
-#7. Some likely clusters and their concepts
+# 7. Some likely clusters and their concepts
 
-##7.4 Histories: describing happenings
+## 7.4 Histories: describing happenings
 
 * The  now-classical approach to describing actions and change, pioneered by
   John McCarthy, is to use the concept of state or situation. This is though to
@@ -70,12 +70,12 @@ The naive physics manifesto
 * By a _history_ I mean such an object, viz. a connected piece of space-time
   ypically bounded on all four dimensions, in which ‘something happens’ 
 
-#8. Some structured formalisation techniques
+# 8. Some structured formalisation techniques
 
-#9. Why it needs to be done
+# 9. Why it needs to be done
 
-#10. Why is can be done
+# 10. Why is can be done
 
-#11. How to get it done
+# 11. How to get it done
 
-#12. Is this science?
+# 12. Is this science?

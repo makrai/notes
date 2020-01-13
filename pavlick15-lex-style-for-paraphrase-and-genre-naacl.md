@@ -2,7 +2,7 @@ Inducing Lexical Style Properties for Paraphrase and Genre Differentiation
 Ellie Pavlick, Ani Nenkova
 naacl 2015
 
-#1 Introduction
+# 1 Introduction
 
 * more generalized characterizations of the lexicon (Brown et al., 1992;
   * Wilson et al., HLT+EMNLP 2005

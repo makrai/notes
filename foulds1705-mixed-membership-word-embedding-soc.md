@@ -2,7 +2,7 @@ James Foulds
 Mixed Membership Word Embeddings for Computational Social Science
 arXiv:1705.07368 [cs.CL]
 
-#Abstract
+# Abstract
 
 * I propose a probabilistic model-based word embedding method which can recover
   interpretable embeddings, without big data. The key insight is to leverage
@@ -17,7 +17,7 @@ arXiv:1705.07368 [cs.CL]
   * interpretability of the models [illustrated] with computational social
     science case studies on State of the Union addresses and NIPS articles
 
-#1 Introcuction
+# 1 Introcuction
 
 * [embeddings] follow a long line of research in data-driven semantic repr
   * latent semantic analysis (Deerwester+ 1990) and
@@ -51,7 +51,7 @@ arXiv:1705.07368 [cs.CL]
     * arises from defining [word and hence doc] embeddings in terms of [topic]
       embeddings
 
-#Background [on word embeddings, topic models, and mixed membership models]
+# Background [on word embeddings, topic models, and mixed membership models]
 
 * Topic models such as latent Dirichlet allocation (LDA) (Blei+ 2003) are [a]
   class of probabilistic language models that have been used for semantic

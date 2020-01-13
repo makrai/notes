@@ -3,9 +3,9 @@ Knowledge Representation
 John F. Sowa
 2000
 
-#Preface xi
+# Preface xi
 
-##Exercises
+## Exercises
 
 * The two basic notations used for logic are 
   * predicate calculus and 
@@ -13,7 +13,7 @@ John F. Sowa
     * two-dimensional form of logic that is based on the semantic networks of
       AI and the logical graphs of C. S. Peirce
 
-##Organization. 
+## Organization. 
 
 * Chapter 1 introduces logic through a historical survey, ranging from
   Aristodes syllogisms to the modern graphic and algebraic systems.  The
@@ -97,19 +97,19 @@ John F. Sowa
 7.5 Language Patterns 445
 7.6 Tools for Knowledge Acquisition 452
 
-#APPENDIX A Summary of Notations 467
+# APPENDIX A Summary of Notations 467
 A.1 Predicate Calculus 4^7
 A.2 Conceptual Graphs 476
 A.3 Knowledge Interchange Format 489x 2*
 
-#APPENDIX B Sample Ontology 492
+# APPENDIX B Sample Ontology 492
 B.l Principles of Ontology 492
 B.2 Top-Level Categories 497
 B.3 Role and Relation Types 502
 B-4 Thematic Roles 506
 B.5 Placement of the Thematic Roles 510
 
-#Appendix c Extended Example 513
+# Appendix c Extended Example 513
 C.l Hotel Reservation System 513
 C.2 Library Database 515
 C.3 ACE Vocabulary 518

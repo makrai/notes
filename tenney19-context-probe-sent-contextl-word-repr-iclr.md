@@ -6,7 +6,7 @@ ICLR 2019 camera-ready version, 17 pages including appendices
 
 * data processing and model code
 
-#Abstract
+# Abstract
 
 * Contextualized representation models
   such as ELMo (Peters+ 2018a) and BERT (Devlin+ 2018)
@@ -28,7 +28,7 @@ ICLR 2019 camera-ready version, 17 pages including appendices
       higher-level syntactic structures
 
 
-#1 Introduction
+# 1 Introduction
 
 * contextualized word embeddings
   * training objectives like
@@ -63,26 +63,26 @@ ICLR 2019 camera-ready version, 17 pages including appendices
   * augmented baselines to better understand the role of pretraining and the
     ability of encoders to capture long-range dependencies
 
-#2 Edge probing 2
+# 2 Edge probing 2
 
-#3 Experimental set-up 4
+# 3 Experimental set-up 4
 
-#4 Experiments 5
+# 4 Experiments 5
 
-#5 Results 6
+# 5 Results 6
 
-#6 Related work 9
+# 6 Related work 9
 
-#7 Conclusion 10
+# 7 Conclusion 10
 
 
 
-#A Changes from original version 14
+# A Changes from original version 14
 
-#B Dataset statistics
+# B Dataset statistics
 
-#C Model details
+# C Model details
 
-#D Contextual representation models 15
+# D Contextual representation models 15
 
-#E Retokenization 16
+# E Retokenization 16

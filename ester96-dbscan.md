@@ -3,7 +3,7 @@ A density-based algorithm for discovering clusters
   in large spatial databases with noise
 1996 KDD
 
-#Wikipedia
+# Wikipedia
 
 * points are classified as core points, (density-)reachable points and outliers
 * algorithm: the abstract one is memory-critical

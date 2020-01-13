@@ -5,14 +5,14 @@ EMNLP 2018
 Ruder: Zhuang+ propose to use second-order co-occurrence relations to
 train word embeddings via a newly designed metric
 
-#Abstract
+# Abstract
 
 * In this paper, a metric is designed to estimate second order cooccurrence
   * based on [quantized] context overlap
   * joint training with existing neural word embedding models
 * Experimental results ... for word similarity tasks and text classification
 
-#1 Intro
+# 1 Intro
 
 * global matrix factorization approach, dimensionality reduction
   (Deerwester+ 1990; Lee and Seung, 2001; Srebro+ 2005; Mnih and Hinton, 2007;
@@ -38,7 +38,7 @@ train word embeddings via a newly designed metric
   * We think it is helpful to revive the classical method
     in a modern, embedding driven way
 
-#2 Quantify Context Overlap
+# 2 Quantify Context Overlap
 
 * overlap of Point-wise Mutual Information (PMI) (Church and Hanks, 1990)
   reflects context overlap
@@ -52,25 +52,25 @@ train word embeddings via a newly designed metric
   * exponential function f (x) = exp(x) works much better in our experiments
     * similar ... as the cooccurrence counts, i.e., few word pairs have
 
-#4 Experiments
+# 4 Experiments
 
-##4.1 Setup
+## 4.1 Setup
 
-###Corpus ... 6 billion tokens collected from diversified corpora
+### Corpus ... 6 billion tokens collected from diversified corpora
 
-###Preprocessing Following (Lee and Chen, 2017), the Stanford tokenizer
+### Preprocessing Following (Lee and Chen, 2017), the Stanford tokenizer
 
-###Parameter
+### Parameter
 
 * vocabularies are limited to the 200K most frequent words. Following , a
 * decreasing weighting function ... to construct the cooccurrence mx (Pennington+ 2014)
 
-##4.2 Intrinsic Evaluation: word similarity [and] analogy tasks. Word
+## 4.2 Intrinsic Evaluation: word similarity [and] analogy tasks. Word
 
 * The improved semantics performance, to a certain extent, reflects second
   order co-occurrence relations are more semantic
 
-##4.3 Text Classification
+## 4.3 Text Classification
 
 * datasets from (Kim, 2014) including
   binary classification tasks CR (Hu and Liu, 2004), MR (Pang and Lee, 2005),
@@ -78,7 +78,7 @@ train word embeddings via a newly designed metric
   multiple classification tasks TREC (Li and Roth, 2002), SST1 (Socher+ 2013)
 * We train Convolutional Neural Networks (CNN) on top of our static pretrained
 
-#5 Model Analysis
+# 5 Model Analysis
 
 * word frequency [is important in] word embeddings (Gittens+ 2017). Inspired
 * word analogy accuracy [vs] the log mean freq of the words (Shazeer+ 2016) in
@@ -87,7 +87,7 @@ train word embeddings via a newly designed metric
     infrequent words carry more information in second order co-occurrence
     relations
 
-#6 Conclusion
+# 6 Conclusion
 
 * context overlap leverages global association distribution
   to measure word pairs correlation

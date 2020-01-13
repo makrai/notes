@@ -2,7 +2,7 @@ Rudi L. Cilibrasi and Paul M.B. Vitányi
 2004
 The Google Similarity Distance
 
-#Abstract
+# Abstract
 
 * We present a new theory of similarity between words and phrases
   * based on information distance and Kolmogorov complexity
@@ -19,7 +19,7 @@ The Google Similarity Distance
       * massive randomized trial in binary classification using SVM
       * mean agreement of 87%
 
-#1 Introduction
+# 1 Introduction
 
 * Previously, we and others developed a compression-based method to establish a
   universal similarity metric among objects given as finite binary strings
@@ -33,7 +33,7 @@ The Google Similarity Distance
 * the Google semantics of a word or phrase consists of
   the set of web pages returned by the query concerned
 
-##A. An example 2
+## A. An example 2
 
 * Normalized Google Distance NGD(horse, rider) ≈ 0.443
   * usually  in between 0 (identical) and 1 (unrelated)
@@ -42,7 +42,7 @@ The Google Similarity Distance
   of pages ... The NGD(horse, rider) we computed in that situation was ≈ 0.460
 * probabilities of search terms and the computed NGD’s should stabilize
 
-##B. Related Work:
+## B. Related Work:
 
 * cognitive psychology (Landauer and Dumais 2003)
 * linguistics, and computer science, about using word (phrases) frequencies in
@@ -54,7 +54,7 @@ The Google Similarity Distance
   * theory, aim, feature analysis, and execution 
     cannot meaningfully be compared [to ours]
 
-##C. Outline
+## C. Outline
 
 * terms with different meaning have the same semantics, and that
 * opposites like ”true” and ”false” often have a similar semantics
@@ -70,7 +70,7 @@ The Google Similarity Distance
   validate the universality, robustness, and accuracy of our proposal
 5.  classification trial [against] WordNet database
 
-##D. Materials and Methods 3
+## D. Materials and Methods 3
 
 * the returned google counts are inaccurate (Bagrow 2005)
 * especially if one uses the boolean OR operator between search terms
@@ -82,13 +82,13 @@ The Google Similarity Distance
 * web searches for rare two-word phrases correlated well (Keller, 2003) with
   the frequency found in traditional corpora, as well as with human judgments
 
-#II. Technical preliminaries
+# II. Technical preliminaries
 
 * Kolmogorov complexity K(x) 
   * the length, in bits, of the ultimate compressed version 
     from which x can be recovered by a general decompression program
 
-##A. Normalized Information Distance:
+## A. Normalized Information Distance:
 
 * In Bennett+ (1998), we considered the following [information distance E(x,y)]
 * given two strings x and y, what is the length of the shortest binary
@@ -113,7 +113,7 @@ The Google Similarity Distance
     * minorizes, up to a vanishing additive term,
       every other possible normalized computable distance
 
-##B. Normalized Compression Distance
+## B. Normalized Compression Distance
 
 * The NID is uncomputable since the Kolmogorov complexity is uncomputable
 * But we can use real data compression programs to approximate the Kolmogorov
@@ -122,12 +122,12 @@ The Google Similarity Distance
   * how the NCD approximates the NID if C approximates K, see [8], which
   * do not need to concern us here
 
-#III. Theory of Googling for similarity 4
+# III. Theory of Googling for similarity 4
 
 * In the sequel, we show ... that the Google distribution is
   universal for all the individual web users distributions
 
-##C. The Google Code:
+## C. The Google Code:
 
 * we cannot use the probability of the events directly to determine a prefix
   code, or, rather the underlying information content implied by the
@@ -140,7 +140,7 @@ The Google Similarity Distance
   * the shortest expected prefix-code word length 
     of the associated Google event x
 
-##D. The Google Similarity Distance:
+## D. The Google Similarity Distance:
 
 * properties of the NGD (as long as we choose parameter N ≥ M )
   * range of the NGD is in between 0 and ∞
@@ -154,18 +154,18 @@ The Google Similarity Distance
   * NGD(x, y) = NGD(y, x): it is symmetric
   * the NGD [does not] satisfy the triangle inequality
 
-##E. Universality of Google Distribution 6
+## E. Universality of Google Distribution 6
 
 A central notion in the application of compression to learning is the notion
 of “universal distribution,” see [27]
 
-##F. Universality of Normalized Google Distance
+## F. Universality of Normalized Google Distance
 
 az NGD nagyjából olyan kicsi, mint a legkisebb egyedi normalizált G-távolság
 
-#IV. Applications and experiments 8
+# IV. Applications and experiments 8
 
-#unsorted
+# unsorted
 
 * LSA: [37]
 * are google hits representative for language? [38], [23]

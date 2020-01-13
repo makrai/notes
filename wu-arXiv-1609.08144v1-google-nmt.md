@@ -6,7 +6,7 @@ Google's Neural Machine Translation System:
   C Young, J Smith, J Riesa, A Rudnick, O Vinyals, G Corrado, M Hughes, J Dean
 Submitted on 26 Sep 2016
 
-#Introduction
+# Introduction
 
 * In practice ... NMT systems used to be worse in accuracy than phrase-based
   translation systems, especially when training on very large-scale datasets
@@ -66,7 +66,7 @@ Submitted on 26 Sep 2016
     to our previous phrase-based system on many
     * English ↔ French, English ↔ Spanish, and English ↔ Chinese
 
-#Related Work
+# Related Work
 
 * Statistical Machine Translation (SMT) [3, 4, 5]
 * phrase-based systems (PBMT) which translate sequences of words or phrases
@@ -98,7 +98,7 @@ Submitted on 26 Sep 2016
         respect to arbitrary evaluation metrics, which are not necessarily
         differentiable
 
-#3 Model Architecture
+# 3 Model Architecture
 
 * common sequence-to-sequence learning framework [39] with attention [2]
 * three components:
@@ -113,28 +113,28 @@ Submitted on 26 Sep 2016
   * attention network
 
 
-##Residual Connections
+## Residual Connections
 
 * exploding and vanishing gradient problems [32, 21]
 * Motivated by [20], we introduce residual connections among the LSTM layers
   in a stack
 
-##Bi-directional Encoder for First Layer
+## Bi-directional Encoder for First Layer
 
-##Model Parallelism
+## Model Parallelism
 
-#4 Segmentation Approaches
+# 4 Segmentation Approaches
 
-##Wordpiece Model
+## Wordpiece Model
 
-##Mixed Word/Character Model
+## Mixed Word/Character Model
 
-#5 Training Criteria
+# 5 Training Criteria
 
-#6 Quantizable Model and Quantized Inference
+# 6 Quantizable Model and Quantized Inference
 
-#7 Decoder
+# 7 Decoder
 
-#8 Experiments and Results
+# 8 Experiments and Results
 
-#9 Conclusion
+# 9 Conclusion

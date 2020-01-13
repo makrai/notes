@@ -2,7 +2,7 @@ Rapid induction of multiple taxonomies for enhanced faceted text browsing
 Lawrence Muchemi and Gregory Grefenstette
 2016 July International Journal of Artificial Intelligence and Applications
 
-#Abstract
+# Abstract
 
 * rapidly inducing multiple subject-specific taxonomies from crawled data
 * two methodologies
@@ -28,7 +28,7 @@ Lawrence Muchemi and Gregory Grefenstette
   datasets drawn from the fields of medicine (diseases) and leisure (hobbies)
   and show that the induced taxonomies are of high quality
 
-##3.2 Word embedding in taxonomy generation
+## 3.2 Word embedding in taxonomy generation
 
 * The details of this domain-specific lexicon identification process and
   evaluation are found in [12].

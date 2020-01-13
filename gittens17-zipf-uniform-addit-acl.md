@@ -6,14 +6,14 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
   * skip-gram model have additive structure [if] the words are uniformly
     distributed
 
-#Abstract
+# Abstract
 
 * theoretical justification for ... additive compositionality in ... Skip-Gram
 * connection between the Skip-Gram model and the
   Sufficient Dimensionality Reduction (SDR) framework of Globerson and Tishby:
   * symbol frequencies
 
-#1 Intro
+# 1 Intro
 
 * history
   * co-occurrences are reweighed to
@@ -45,7 +45,7 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
     since there are many ways of coupling X and Y , each of which may have
     different amounts of mutual information)
 
-#2 Compositionality of Skip-Gram
+# 2 Compositionality of Skip-Gram
 
 * Minimizing the angle has been empirically successful at capturing composition
   in multiple loglinear word models . One way to understand the success of this
@@ -55,7 +55,7 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
   * peaks of this categorical distribution are ... the words with which c
     co-occurs most often
 
-#3 Skip-Gram learns a Sufficient Dimensionality Reduction Model
+# 3 Skip-Gram learns a Sufficient Dimensionality Reduction Model
 
 * SDR model 
   * learns optimal embeddings for discrete random variables X and Y without

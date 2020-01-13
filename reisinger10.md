@@ -2,12 +2,12 @@ Joseph Reisinger and Raymond J. Mooney
 Multi-Prototype Vector-Space Models of Word Meaning
 2010
 
-#1 Introduction
+# 1 Introduction
 
 * unsupervised word sense discovery (WSD) (Schütze, 1998)
   * clusters the contexts in which a word appears
 
-#2 Background
+# 2 Background
 
 * In previous work, vector-space lexical similarity and word sense discovery
   have been treated as two separate tasks
@@ -41,9 +41,9 @@ Multi-Prototype Vector-Space Models of Word Meaning
     * Computational Linguistics, 24(1):97–123
   * Most work has also focused on corpus-based distributional approaches,
 
-#3 Multi-Prototype Vector-Space Models
+# 3 Multi-Prototype Vector-Space Models
 
-#3.1 Clustering Occurrences
+# 3.1 Clustering Occurrences
 
 * clusters correspond to _..._
   * we do not assume that clusters correspond to traditional word senses
@@ -64,12 +64,12 @@ Multi-Prototype Vector-Space Models of Word Meaning
     * preliminary experiments comparing various clustering methods
       * movMF gave the best results
 
-#4 Experimental Evaluation
+# 4 Experimental Evaluation
 
 * comparisons to human judgements of semantic similarity for
   * both isolated words as well as words in sentential contexts
 
-#5 Discussion and Future Work
+# 5 Discussion and Future Work
 
 * ways it could be improved
   * Feature representations
@@ -80,4 +80,4 @@ Multi-Prototype Vector-Space Models of Word Meaning
       our best-performing clusterings are significantly more fine-grained
   * Joint model
 
-#6 Conclusions
+# 6 Conclusions

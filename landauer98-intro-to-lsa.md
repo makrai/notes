@@ -6,7 +6,7 @@ Introduction to Latent Semantic Analysis
   * seminal: Dumais+ 88, Furnas+ 88
   * easy entry: Landauer+ 98 (ez); Deerwester+ 1990
 
-#[Intro]
+# [Intro]
 
 * LSA can be construed in two ways:
   1. as a practical expedient for obtaining approximate estimates of the
@@ -23,7 +23,7 @@ Introduction to Latent Semantic Analysis
   * [but] establishing concrete relations to mentalisticly interpretable
     features poses daunting technical and conceptual problems
 
-##Additional detail about LSA
+## Additional detail about LSA
 
 * data preprocessing transformation, needs to be described more fully
   * subject the data in the raw word-by-context matrix to
@@ -34,22 +34,22 @@ Introduction to Latent Semantic Analysis
         information about which passage it appeared in
       * have long been known to [improve] IR (Harman, 1986)
 
-##LSA to model human conceptual knowledge
+## LSA to model human conceptual knowledge
 
-##LSA and information retrieval
+## LSA and information retrieval
 
-##LSA and synonym tests
+## LSA and synonym tests
 
-##Simulating word sorting and relatedness judgments
+## Simulating word sorting and relatedness judgments
 
-##Simulating subject-matter knowledge
+## Simulating subject-matter knowledge
 
-##Simulating semantic priming
+## Simulating semantic priming
 
-##Assigning holistic quality scores to essay test answers
+## Assigning holistic quality scores to essay test answers
 
-##LSA and Text Comprehension
+## LSA and Text Comprehension
 
-##Predicting learning from text
+## Predicting learning from text
 
-##Summary and some caveats
+## Summary and some caveats

@@ -4,13 +4,13 @@ Emotion Analysis: A Survey
 
 gépi tanulás szempontjából szar cikk
 
-#Abstract
+# Abstract
 
 * an interdisciplinary field, called Affective Computing
 
-#D. Computational approaches 2
+# D. Computational approaches 2
 
-##1. lexicon based approach
+## 1. lexicon based approach
 
 * two sub types: 
   * dictionary based and 
@@ -19,7 +19,7 @@ gépi tanulás szempontjából szar cikk
     * Keyword based approaches define a set of predefined terms 
       * Strapparava used WordNet-Affect [34] 
   
-##2. machine learning approach
+## 2. machine learning approach
 
 * Supervised machine learning
   * SVM is a tradition approach in this regard. Few researchers [40] [41] have

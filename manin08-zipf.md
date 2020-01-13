@@ -12,9 +12,9 @@ Dmitrii Y. Manin
   * Appendix: some evidence to support the assumption that
     a word’s frequency is proportional to the extent of its meaning
 
-#1. Some previous models
+# 1. Some previous models
 
-##1.1. Statistical models of Mandelbrot and Simon
+## 1.1. Statistical models of Mandelbrot and Simon
 
 * due to two prominent figures in 20th-century science
   * Benoît Mandelbrot, of fractals fame, and
@@ -40,7 +40,7 @@ Dmitrii Y. Manin
       the probability for the next word to be one of the n-words is equal to
       the fraction of all n-word tokens in the preceding sequence
 
-##1.2. Guiraud’s semic matrices
+## 1.2. Guiraud’s semic matrices
 
 * Pierre Guiraud ... suggested that
   * Zipf’s law "would be produced by the structure of the signified"
@@ -57,7 +57,7 @@ Dmitrii Y. Manin
         situation, the probability of a word with m marked semes is also
         exponential in m. This leads to Zipf’s distribution for words
 
-##1.3. Models based on optimality principles
+## 1.3. Models based on optimality principles
 
 * Zipf’s law maximizes some quantity
 * Zipf himself
@@ -111,7 +111,7 @@ Dmitrii Y. Manin
     1. word meanings tend to expand, and
     2. close synonyms are disfavored (Sections 4, 5)
 
-#2. Synonymy, polysemy, semantic space 6
+# 2. Synonymy, polysemy, semantic space 6
 
 * a measure so that we can speak of words being more “specific” or “generic”
 * _together_, _join_, _couple_, and _fastener_ have meanings that are subsets
@@ -139,14 +139,14 @@ Dmitrii Y. Manin
   * However, contrary to Zipf, it doesn’t seem plausible that such a
     generalization makes understanding more difficult for the _listener_
 
-#3. Zipf’s law and Zipfian coverings 9
+# 3. Zipf’s law and Zipfian coverings 9
 
 * each point in S is covered by a sequence of words with more and more precise
   (narrow, specific) meanings, with precision growing in geometric progression
 * we now turn to the mechanisms and regularities of word meaning change.
   * two basic processes: meaning expansion and avoidance of close synonymy
 
-#4. Zipfian coverings and avoidance of excessive synonymy 12
+# 4. Zipfian coverings and avoidance of excessive synonymy 12
 
 * narrowing is typically a result of competition between words 
   (except for the relatively rare cases where [ the ] denoted disappears).
@@ -162,12 +162,12 @@ Dmitrii Y. Manin
     * if they are sufficiently different in scope, whether they belong to
     * the same word (polysemy) or to different words (synonymy)
 
-#5. Numerical models
+# 5. Numerical models
 
 * two numerical models
   * simulate the two basic processes by which word meanings change in extent
 
-#6. Discussion
+# 6. Discussion
 
 * The assumption of proportionality of word frequency to the extent of its
   meaning
@@ -181,7 +181,7 @@ Dmitrii Y. Manin
   * the original Zipf’s law still stands out in terms of
     both fit quality and stability of the exponent
 
-#Appendix Meaning and frequency p20
+# Appendix Meaning and frequency p20
 
 * Suppose that some “head” word `w_0` has a set of partial synonyms and/or
   hyponyms (“specific” words) `{w_0^1 , . . . , w_0^n}`, whose meanings

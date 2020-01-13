@@ -2,7 +2,7 @@ Authorship Verification for Short Messages using Stylometry
 Marcelo Luiz Brocardo, Issa Traore, Sherif Saad, Isaac Woungang 
 ieee 2013
 
-#1 Intro
+# 1 Intro
 
 * [research in] Authorship analysis of physical and electronic documents
   [2], [3], [16], [23]

@@ -5,7 +5,7 @@ ACL 2016
 Instructions and code to reproduce the experiments available at
 http://cogcomp.cs.illinois.edu/page/publication_view/794
 
-#Abstract
+# Abstract
 
 * a systematic comparison of
   * four popular approaches of inducing cross-lingual embeddings,
@@ -19,7 +19,7 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
     almost always perform better, but
   * cheaply supervised models often prove competitive on certain tasks
 
-#1 Intro
+# 1 Intro
 
 * quality of ... word vectors can be significantly improved by incorporating
   cross-lingual distributional information
@@ -47,9 +47,9 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
     requiring weaker form of cross-lingual supervision (such as context
     agnostic translation dictionary) are competitive
 
-#2 Bilingual Embeddings
+# 2 Bilingual Embeddings
 
-##2.1 Bilingual Skip-Gram Model (BiSkip)
+## 2.1 Bilingual Skip-Gram Model (BiSkip)
 
 * Luong+ (2015) proposed Bilingual SkipGram, a simple extension of the
   monolingual skipgram model, which learns bilingual embeddings by
@@ -60,7 +60,7 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
     word alignments, so that the model is trained to predict words
     cross-lingually
 
-##2.2 Bilingual Compositional Model (BiCVM)
+## 2.2 Bilingual Compositional Model (BiCVM)
 
 * Hermann and Blunsom (2014) present a method that learns bilingual word
   vectors from a sentence aligned corpus
@@ -71,7 +71,7 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
   minimizing the l2 norm, they use a noise-contrastive large-margin update,
   with randomly drawn sentence pairs
 
-##2.3 Bilingual Correlation Based Embeddings (BiCCA)
+## 2.3 Bilingual Correlation Based Embeddings (BiCCA)
 
 The BiCCA model, proposed by Faruqui and Dyer (2014), showed that when
 (independently trained) monolingual vector matrices W, V are projected using
@@ -80,7 +80,7 @@ improves on word similarity and word analogy tasks. They first construct W 0
 ⊆ W, V 0 ⊆ V such that |W 0 |= |V 0 | and the corresponding words (w i , v i )
 in the matrices are translations of each other
 
-##2.4 Bilingual Vectors from Comparable Data (BiVCD)
+## 2.4 Bilingual Vectors from Comparable Data (BiVCD)
 
 * proposed by Vulić and Moens (2015). Their approach is designed to
 * use comparable corpus between the source and target language pair to induce
@@ -91,7 +91,7 @@ in the matrices are translations of each other
   parallel data in our experiments (to ensure comparability), and treat two
   aligned sentences as comparable
 
-#3 Data
+# 3 Data
 
 * 4 language pairs: English-German (en-de), English-French (en-fr),
   English-Swedish (en-sv) and EnglishChinese (en-zh)
@@ -101,7 +101,7 @@ in the matrices are translations of each other
   * For en-zh, we use the FBIS parallel corpus from the news domain
     (LDC2003E14)
 
-#4 Evaluation
+# 4 Evaluation
 
 * These tasks have been used in previous works (Klementiev+ 2012; Luong
  + 2015; Vulić and Moens, 2013a; Guo+ 2015) for evaluating
@@ -110,7 +110,7 @@ in the matrices are translations of each other
 * all models are trained with embeddings of size 200. We provide all models
   with parallel corpora, irrespective of their requirements
 
-##4.1 Parameter Selection
+## 4.1 Parameter Selection
 
 * We follow the BestAvg parameter selection strategy from Lu+ (2015): we
   * by tuning on a set of values (described below) and picking the parameter
@@ -151,7 +151,7 @@ in the matrices are translations of each other
     documents, and merging is performed using the sentence length ratio
     strategy
 
-##4.2 Monolingual Evaluation
+## 4.2 Monolingual Evaluation
 
 * SimLex dataset for English (Hill+ 2014) which contains 999 pairs
   * across all language pairs, BiCVM is the best performing model in terms of
@@ -179,7 +179,7 @@ in the matrices are translations of each other
   quantification of linguistic properties of words (Tsvetkov+ 2015;
   Schnabel+ 2015)
 
-##4.3 Cross-lingual Dictionary Induction
+## 4.3 Cross-lingual Dictionary Induction
 
 * (Vulić and Moens, 2013a; Gouws+ 2015; Mikolov+ 2013b)
 * We follow the setup of Vulić and Moens (2013a)
@@ -201,7 +201,7 @@ in the matrices are translations of each other
   * results (Table 4), it can be seen that for dictionary induction, the
     performance improves with the quality of supervision
 
-#4.4 Cross-lingual Document Classification
+# 4.4 Cross-lingual Document Classification
 
 * setup of Klementiev+ (2012), but extend it to cover all of our
   language pairs. We use the
@@ -229,7 +229,7 @@ in the matrices are translations of each other
   * consistent with the trend in cross-lingual dictionary induction, where too
     the most expensive form of supervision performed the best
 
-##4.5 Cross-lingual Dependency Parsing
+## 4.5 Cross-lingual Dependency Parsing
 
 * direct-transfer of dependency parsers was first shown in Täckström+ 
   (2012)
@@ -256,7 +256,7 @@ in the matrices are translations of each other
       level contexts to learn the embeddings, which only captures the semantic
       meaning of the sentences and ignores the internal syntactic structure
 
-#5 Qualitative Analysis
+# 5 Qualitative Analysis
 
 BiCCA and BiVCD are better at separating antonyms. The words peace and war,
 (and their French translations paix and guerre) are well separated in BiCCA
@@ -267,7 +267,7 @@ English, they will also be present together in its French translation
 However, BiCCA uses bilingual dictionary and BiVCD use comparable sentence
 context, which helps in pulling apart the synonyms and antonyms
 
-#6 Discussion
+# 6 Discussion
 
 * Ammar+ (2016) train multilingual word vectors using more than two
   languages;
@@ -288,7 +288,7 @@ context, which helps in pulling apart the synonyms and antonyms
   * Multi-view CCA (Rastogi+ 2015) and deep CCA (Lu+ 2015) can
     be viewed as _extensions of BiCCA_
 
-#7 Conclusion
+# 7 Conclusion
 
 * When evaluating on intrinsic tasks such as monolingual word similarity,
   models relying on cheaper forms of supervision (such as BiVCD) perform al-

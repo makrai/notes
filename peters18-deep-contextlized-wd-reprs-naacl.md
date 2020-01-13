@@ -2,7 +2,7 @@ Deep contextualized word representations
 ME Peters, M Neumann, M Iyyer, M Gardner, C Clark, K Lee, L Zettlemoyer
 naacl 2018 outstanding paper
 
-#Ruder
+# Ruder
 
 * whether to use the pre-trained language model as a 
   * fixed feature extractor and incorporate its representation as features into
@@ -12,7 +12,7 @@ naacl 2018 outstanding paper
 * core components of transfer learning for NLP: 
   * expressive language model encoder such as a deep BiLSTM or the Transformer
 
-#Abstract
+# Abstract
 
 * a new type of deep contextualized word representation that models both
   * complex characteristics of word use (e.g., syntax and semantics), and 
@@ -24,7 +24,7 @@ naacl 2018 outstanding paper
   * significantly improve the SOTA across six challenging NLP problems,
     including question answering, textual entailment and sentiment analysis
 
-#1 Introduction
+# 1 Introduction
 
 * Pre-trained word representations (Mikolov+ 2013; Pennington+ 2014)
 * each token is assigned a representation that is a function of the entire
@@ -48,7 +48,7 @@ naacl 2018 outstanding paper
   (McCann+ 2017), which computes contextualized representations using a
   neural machine translation encoder
 
-#2 Related work
+# 2 Related work
 
 * pretrained word vectors ... are a
   * standard component of most [SOTA] archectures, including
@@ -90,7 +90,7 @@ naacl 2018 outstanding paper
     * pretraining the biLM with unlabeled data, we
     * fix the weights and add additional task-specific model capacity
 
-#5 Analysis
+# 5 Analysis
 
 * ablation analysis to validate our chief claims and to elucidate some inter-
   esting aspects of ELMo representations

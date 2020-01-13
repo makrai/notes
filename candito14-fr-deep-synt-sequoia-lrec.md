@@ -2,12 +2,12 @@ Marie Candito, G Perrier, B Guillaume, C Ribeyre, K Fort, D Seddah, É Clergerie
 Deep Syntax Annotation of the Sequoia French Treebank
 LREC 2014, Reykjavik, Iceland
 
-#Abstract
+# Abstract
 
 * abstracts away from surface syntactic variation and diathesis alternations,
 * corpus, named DEEP SEQUOIA , is freely available, and hopefully useful 
 
-#Intro
+# Intro
 
 * making explicit the canonical subcategorization frame of predicates, and
   which linguistic expressions fill it. The deep annotations were added to
@@ -20,9 +20,9 @@ LREC 2014, Reykjavik, Iceland
   4. the methodology we adopted for the annotation of the corpus. We then
   5. compare our work with respect to other deep annotation schemes or corpora
 
-#2. Deep Syntactic Representations
+# 2. Deep Syntactic Representations
 
-##2.1.  Building on the Surface Dependency Scheme of the FTB
+## 2.1.  Building on the Surface Dependency Scheme of the FTB
 
 * the Sequoia corpus was first annotated using constituency trees, following
   the annotation scheme of the FTB (Abeillé and Barrier, 2004), except that a
@@ -45,7 +45,7 @@ LREC 2014, Reykjavik, Iceland
       conjunct as the head 3 , although it is clearly problematic for the
       representation of shared modifiers.
 
-##2.2 Linguistic Characteristics
+## 2.2 Linguistic Characteristics
 
 * syntactic alternations or diathesis alternations. In order to 
 * capture such regularities without resorting to semantic properties or
@@ -57,7 +57,7 @@ LREC 2014, Reykjavik, Iceland
 * redistributions to a canonical subcategorization frame
   * e.g. a passive occurrence of a transitive verb
 
-##2.3 Deep Syntax versus Semantic Representations
+## 2.3 Deep Syntax versus Semantic Representations
 
 * ambiguous lemmas [are] not disambiguated
 * polylexical expressions  are not marked as such, and are 
@@ -79,7 +79,7 @@ LREC 2014, Reykjavik, Iceland
   * disambiguate predicative lemmas, keeping only true semantic arguments
   * associate them with semantic roles or a simple number
 
-#5. Related Work
+# 5. Related Work
 
 * two main theoretical frameworks dominate the dependency syntax landscape
   * Prague Dependency school and the 

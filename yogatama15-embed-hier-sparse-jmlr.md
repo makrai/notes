@@ -2,7 +2,7 @@ Dani Yogatama and Manaal Faruqui and Chris Dyer and Noah A. Smith
 Word Representations withe Hierarchical Sparse Coding
 2015 jmlr
 
-#Abstract
+# Abstract
 
 * algorithm based on stochastic proximal methods that is 
   significantly faster than previous approaches, 
@@ -12,7 +12,7 @@ Word Representations withe Hierarchical Sparse Coding
   sentence completion, and sentiment analysis
   * outperforms or is competitive with state-of-the-art methods
 
-#Introduction
+# Introduction
 
 * this work [is] based on decomposition of a high-dimensional matrix
   * contexts are words ... (Turney & Pantel, 2010)
@@ -30,9 +30,9 @@ Word Representations withe Hierarchical Sparse Coding
 * We propose a stochastic proximal algorithm for hierarchical sparse coding
   * billions of word tokens and 400,000 word types
 
-#2. Model
+# 2. Model
 
-##2.1. Background and Notation
+## 2.1. Background and Notation
 
 * Other [contexts] include:
   * global context (Huang et al., 2012)
@@ -56,7 +56,7 @@ Word Representations withe Hierarchical Sparse Coding
   which results in sparse codes
 * our motivation is to use Ω to encourage a coarse-to-fine organization
 
-##2.2 Structured Regularization for Word Representations
+## 2.2 Structured Regularization for Word Representations
 
 * For Ω(A), we design a forest-structured regularizer that
   * encourages the model to use some dimensions in the code space 
@@ -75,7 +75,7 @@ Word Representations withe Hierarchical Sparse Coding
 * Our hierarchical sparse coding approach is still several steps away from
   inducing [a lexicon like WordNet]
 
-##2.3. Learning
+## 2.3. Learning
 
 * The function is not convex with respect to D and A, but 
   it is convex with respect to each when the other is fixed
@@ -93,9 +93,9 @@ Word Representations withe Hierarchical Sparse Coding
   * [once D is fixed,] we parallelize solving for all columns of A
 * For a large corpus with billions of word tokens ... We propose an alternative
 
-#3 Experiments
+# 3 Experiments
 
-##3.3. Results
+## 3.3. Results
 
 * similarity ranking and sentiment analysis tasks, 
   our method performed the best in both low and high dimensional embeddings
@@ -114,7 +114,7 @@ Word Representations withe Hierarchical Sparse Coding
     both models outperformed SG and CBOW. On the
   * semantic analogies task, GV outperformed SG, FOREST , and CBOW
 
-##3.5 discussion
+## 3.5 discussion
 
 * the average numbers of nonzero entries are 91% and 85% respectively
   * not extremely sparse, this makes intuitive sense since we try to represent

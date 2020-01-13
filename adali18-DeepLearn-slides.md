@@ -5,9 +5,9 @@ DeepLearn 2018 Genova, Italy
 
 zoom, hogy lapozható legyen: 272%
 
-#Preliminaries—Uniqueness, diversity, and interpretability
+# Preliminaries—Uniqueness, diversity, and interpretability
 
-##uniqueness 18(8b)
+## uniqueness 18(8b)
 
 * Multilinear tensorial representation CANDECOMP-PARAFAC (CP)
   * uniqueness ... holds for R > max(I, J, K) ≤ min(IJ, JK, IK)
@@ -21,34 +21,34 @@ zoom, hogy lapozható legyen: 272%
 
 * Examples in Matlab—Thanks to Evrim Acar, Simula Lab, Norway
 
-#Single and multiset decompositions 31(14)
+# Single and multiset decompositions 31(14)
 
-##ICA & diversity
+## ICA & diversity
 
-###ICA
-###Infomax 35(16)
-###Fast ICA 39(18)
+### ICA
+### Infomax 35(16)
+### Fast ICA 39(18)
 
-##CCA, MCCA, IVA & diversity 55(26)
+## CCA, MCCA, IVA & diversity 55(26)
 
-###CCA
-###MCCA 59(28b)
-###IVA 61(29) 
+### CCA
+### MCCA 59(28b)
+### IVA 61(29) 
 
 * summary 72(34)
 
-#Applications—Role of diversity 72(34b)
+# Applications—Role of diversity 72(34b)
 
-##Multiset data fusion
+## Multiset data fusion
 
 * fMRI
 * Abondoned object detection 80(38)
 
-##Multimodal data fusion 92(44)
+## Multimodal data fusion 92(44)
 
 * Auditory Oddball Task (AOD), schizophrenia 98(47)
 * summary 112(54)
 
-##software 114(55)
+## software 114(55)
 
 * Additional resources: http://mlsp.umbc.edu 112(56)

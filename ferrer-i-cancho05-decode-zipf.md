@@ -2,7 +2,7 @@ Ferrer i Cancho, Ramon
 Decoding least effort and scaling in signal frequency distributions
 Physica (2005)
 
-#Abstract
+# Abstract
 
 * [jobban összefoglalja Manin (08)] 
 * a general communication model where objects map to signals
@@ -15,7 +15,7 @@ Physica (2005)
 * constraining just the number of interpretations of signals does not lead to
   scaling
 
-#[nincsenek szakaszok]
+# [nincsenek szakaszok]
 
 * We assume a _general_ communication framework where signals are mapped to
   objects [1,2]

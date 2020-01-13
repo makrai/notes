@@ -1,21 +1,21 @@
 Identification of Disaster-implicated Named Entities
 Dávid Márk Nemeskey · Judit Ács · András Kornai
 
-#2 Basic emergency vocabulary
+# 2 Basic emergency vocabulary
 
-##2.1 Manual extraction
+## 2.1 Manual extraction
 
 * Force TEMISGT (1999) Glossary and acronyms of emergency management terms,
   3rd edn. Office of Emergency Management, U.S.  Department of Energy
 
-##2.2 Corpus-based, manual seed
+## 2.2 Corpus-based, manual seed
 
 * theoretical justification of ignoring negative evidence 
   * Kornai et al (2003 EACL) Classifying the Hungarian Web
 
-#3 Semantic similarity
+# 3 Semantic similarity
 
-#6 Conclusion
+# 6 Conclusion
 
 * iterated keyword-weight bootstrap the 
   * simple recall-based ranking of selecting and weighing keywords 

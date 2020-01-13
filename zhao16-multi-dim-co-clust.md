@@ -3,7 +3,7 @@ Identifying Multi-Dimensional Co-Clusters in Tensors
   Based on Hyperplane Detection in Singular Vector Spaces
 PLOS Published: September 6, 2016
 
-#Abstract
+# Abstract
 
 * higher-order singular value decomposition (HOSVD)
   transforms a tensor into a core part and a singular vector matrix along each
@@ -13,7 +13,7 @@ PLOS Published: September 6, 2016
   identification of multi-dimensional co-clusters
 * favorable performance ... on noisy or overlapped data
 
-#1 Intro
+# 1 Intro
 
 * series of efficient approaches, such as
   sub-dimensional clustering, linear grouping and co-clustering [2, 4–10]
@@ -87,7 +87,7 @@ PLOS Published: September 6, 2016
      defining a scoring function, we can successfully identify significant
      co-clusters in the tensor
 
-#Conclusion
+# Conclusion
 
 * future
   * use of several other decomposition methods

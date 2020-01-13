@@ -2,7 +2,7 @@ Bag of Tricks for Efficient Text Classification
 Armand Joulin, Edouard Grave, Piotr Bojanowski, and Tomas Mikolov
 Bag of Tricks for Efficient Text Classification
 
-#Három cikk és egy repó
+# Három cikk és egy repó
 
 * gyuri9:50 AM
   * "Bag of Tricks for Efficient Text Classification" irja le az osztalyozást
@@ -13,12 +13,12 @@ RNN (ICLR 2016) https://arxiv.org/abs/1511.06303    Alternative structures for
 fastText        https://arxiv.org/abs/1607.01759    Bag of trick for Efficient
 skip-gram       https://arxiv.org/abs/1607.04606    Enriching Word Vectors
 
-#Abstract
+# Abstract
 
 often on par with deep learning classifiers in terms of accuracy, and many
 orders of magnitude faster 
 
-#Intro
+# Intro
 
 * Text classification
   * applications, such as web search, information retrieval, ranking and
@@ -34,7 +34,7 @@ orders of magnitude faster
   * evaluate the quality of our approach fastText 1 on two different tasks,
     * tag prediction and sentiment analysis.
 
-#2 Model architecture
+# 2 Model architecture
 
 * baseline for sentence classification is to 
   * represent sentences as bag of words (BoW) and train a 
@@ -58,9 +58,9 @@ orders of magnitude faster
   * trained asynchronously on multiple CPUs using stochastic gradient descent
     and a linearly decaying learning rate.
 
-##Hierarchical softmax
+## Hierarchical softmax
 
-##N-gram features
+## N-gram features
 
 * bag of n-grams as additional features to capture some partial information
   about the local word order. This is very efficient in practice while
@@ -69,11 +69,11 @@ orders of magnitude faster
   the n-grams by using the hashing trick (Weinberger et al., 2009) with the
   same hashing function as in Mikolov et al. (2011)
 
-#3 Experiments
+# 3 Experiments
 
-##3.1 Sentiment analysis
+## 3.1 Sentiment analysis
 
-##3.2 Tag prediction
+## 3.2 Tag prediction
 
 * YFCC100M dataset (Thomee et al., 2016) which consists of almost 
   * 100M images with captions, titles and tags. We focus on 
@@ -82,7 +82,7 @@ orders of magnitude faster
   prediction model similar to ours, but based on the Wsabie model of Weston et
   al. (2011).
 
-#Discussion and conclusion
+# Discussion and conclusion
 
 * Although deep neural networks have in theory much higher representational
   power than shallow models, it is not clear if simple text classification

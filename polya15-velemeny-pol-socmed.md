@@ -1,11 +1,11 @@
 lexikai skálák!
 
-##1.1
+## 1.1
 
 * Az individualizmus-kollektivizmus modul a személyes névmásokat, a
   személyragos és személyjeles szóalakokat ismeri fel a szövegekben
 
-##1.2
+## 1.2
 
 * optimista személyek többet beszélnek a jövőről és kevesebbet beszélnek a
   múltról,
@@ -13,7 +13,7 @@ lexikai skálák!
   szerkezetek, időhatározószavak és a jelentésükben jövő időre utaló
   aspektuális igék alapján történik
 
-##1.3 Közösségiség és ágencia modul
+## 1.3 Közösségiség és ágencia modul
 
 * A közösségiség az egyén / csoporttag más egyénekhez / csoporttagokhoz fűződő
   viszonyának minőségét jellemzi a társakkal való együttműködés és a
@@ -36,14 +36,14 @@ lexikai skálák!
     melléknevekből és igékből képzett határozószók, ítélet részei pedig ezek
     főnévi alakjai vagy absztrakt fogalmi kategóriák.
 
-##1.4 Érzelmi polaritás modul
+## 1.4 Érzelmi polaritás modul
 
-##1.5 Politikai szereplők modul
+## 1.5 Politikai szereplők modul
 
 * azonosítja a politikai pártokra vagy politikusokra vonatkozó utalásokat a
   szövegben,
 
-#Bibliography
+# Bibliography
 
 13. László, J., Csertő, I., Fülöp, É., Ferenczhalmy, R., Hargitai, R., Lendvai,
     P., Péley, B., Pólya, T., Szalai, K., Vincze, O., Ehmann, B.: 

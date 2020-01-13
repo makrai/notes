@@ -5,7 +5,7 @@ NIPS 2017
 Ruder: Injecting additional prior knowledge into word embeddings such as
 monotonicity
 
-#Abstract
+# Abstract
 
 * We propose learning deep models that are
   * monotonic with respect to a user-specified set of inputs by
@@ -14,7 +14,7 @@ monotonicity
 * Experiments on benchmark and real-world datasets show that six-layer
   SOTA for classification and regression with monotonicity guarantees
 
-#1 Intro
+# 1 Intro
 
 * For example, if one is predicting whether to give someone else a loan, we
   expect and would like to constrain the prediction to be monotonically

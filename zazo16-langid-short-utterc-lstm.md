@@ -3,7 +3,7 @@ Ruben Zazo , Alicia Lozano-Diez, Javier Gonzalez-Dominguez,
   Doroteo T.  Toledano, Joaquin Gonzalez-Rodriguez
 2016
 
-#Abstract
+# Abstract
 
 * Long Short Term Memory (LSTM) Recurrent Neural Networks (RNNs) have recently
   outperformed other state-of-the-art approaches, such as i-vector and Deep
@@ -23,7 +23,7 @@ Ruben Zazo , Alicia Lozano-Diez, Javier Gonzalez-Dominguez,
   * also analyze the effect of even more limited test data 
     * proving that with ... 0.5s an accuracy of over 50% can be achieved.
 
-#1 Intro
+# 1 Intro
 
 * the i-vector approach has proven to be successful in several scenarios,
   including rapid LID [10], it suffers from two major drawbacks
@@ -75,9 +75,9 @@ Ruben Zazo , Alicia Lozano-Diez, Javier Gonzalez-Dominguez,
   * configuration parameters in both the task and the neural network topology.
   * conclusions of the study and potential future work.
 
-#Results and Discussion
+# Results and Discussion
 
-##System performance
+## System performance
 
 * have from 5 to 21 times fewer parameters (see Size in Table 2) than the
   reference system

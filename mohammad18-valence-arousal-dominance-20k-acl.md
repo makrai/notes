@@ -14,7 +14,7 @@ ACL long 2018
   (anger, fear, sadness, joy)
   http://saifmohammad.com/WebPages/AffectIntensity.htm
 
-#Abstract
+# Abstract
 
 * Factor analysis studies have shown that the
   primary dimensions of meaning are valence, arousal, and dominance (VAD)
@@ -25,7 +25,7 @@ ACL long 2018
     in the shared understanding of valence, arousal, and dominance
     * across demographic variables such as age, gender, and personality
 
-#1 Introduction
+# 1 Introduction
 
 * factor analysis studies
   * the three most important, largely independent,
@@ -67,9 +67,9 @@ ACL long 2018
   * higher degrees of shared representations of those concepts
     within those groups
 
-#2 Related Work
+# 2 Related Work
 
-##Primary Dimensions of Meaning
+## Primary Dimensions of Meaning
 
 * Osgood+ (1957) asked human participants to rate words along dimensions
 * three most prominent dimensions of meaning are
@@ -82,7 +82,7 @@ ACL long 2018
 * even though the names given by Osgood+ (1957) and Russell (1980) are
   different, they describe similar dimensions (Bakker+ 2014)
 
-##Existing Affect Lexicons:
+## Existing Affect Lexicons:
 
 * Affective Norms of English Words (ANEW, Bradley and Lang 1999) asked VAD rate
 * Warriner+ (2013) created a similar lexicon for more than 13,000 words
@@ -92,7 +92,7 @@ ACL long 2018
   language), and the only one that was created via comparative annotations
   (instead of rating scales)
 
-##Best-Worst Scaling (BWS, Louviere, 1991),
+## Best-Worst Scaling (BWS, Louviere, 1991),
 
 * building on work in the 1960’s in mathematical psychology and psychophysics
 * Annotators are given n items (commonly n = 4). 4
@@ -112,17 +112,17 @@ ACL long 2018
   * tweet–emotion intensity (Mohammad and Bravo-Marquez, 2017; Mohammad+ 2018;
     Mohammad and Kiritchenko, 2018)
 
-##Automatically Creating Affect Lexicons
+## Automatically Creating Affect Lexicons
 
 * automatically determining word–sentiment and word–emotion associations
   (Yang+ 2007; Mohammad and Kiritchenko, 2015; Yu+ 2015;
   Staiano and Guerini, 2014)
 
-#3 Obtaining Human Ratings of Valence, Arousal, and Dominance
+# 3 Obtaining Human Ratings of Valence, Arousal, and Dominance
 
-##how we selected the terms to be annotated
+## how we selected the terms to be annotated
 
-##how we crowdsourced the annotation ... using best–worst scaling
+## how we crowdsourced the annotation ... using best–worst scaling
 
 * All terms in the NRC Emotion Lexicon (Mohammad and Turney, 2013)
   * labels indicating ... the eight basic emotions:
@@ -135,7 +135,7 @@ ACL long 2018
 * Hashtag Emotion Corpus (HEC) (Mohammad, 2012)
   * About 1000 high-frequency content terms, including emoticons
 
-#4 Demographic Survey
+# 4 Demographic Survey
 
 * age, gender, country they live in, and personality traits
 * personality traits ... across the big five (Barrick and Mount, 1991)
@@ -154,14 +154,14 @@ ACL long 2018
     inventive and curious (seek out new experiences) or
     consistent and cautious (anxious about new experiences)
 
-#5 Examining of the NRC VAD Lexicon
+# 5 Examining of the NRC VAD Lexicon
 
-##5.1 A Comparsion [to] the Warriner+ Lexicon Scores
+## 5.1 A Comparsion [to] the Warriner+ Lexicon Scores
 
 * We calculated the Pearson correlations r between the NRC VAD Lexicon scores
 * low correlations
 
-##5.2 Independence of Dimensions
+## 5.2 Independence of Dimensions
 
 * Russell (1980) found through his factor analysis work that valence, arousal,
   and dominance are nearly independent dimensions. However,
@@ -174,16 +174,16 @@ ACL long 2018
 * correlations for V–A and A–D are low in both our and Warriner annotations,
   * slightly higher in magnitude in our annotations
 
-##5.3 Reliability of the Annotations
+## 5.3 Reliability of the Annotations
 
 * we calculate average split-half reliability (SHR) over 100 trials
   All annotations for a [4-tuple is] randomly split into two halves
 * [our] SHR scores ... are markedly higher than those [of] Warriner+ (2013),
   especially for arousal and dominance
 
-##Summary of Main Results
+## Summary of Main Results
 
-#6 Shared Understanding of VAD Within and Across Demographic Groups
+# 6 Shared Understanding of VAD Within and Across Demographic Groups
 
 * Language use is also relevant to the understanding and treatment of
   neuropsychiatric disorders, such as sleep, mood, and anxiety disorders, which
@@ -198,7 +198,7 @@ ACL long 2018
     * difference for valence is not statistically significant. Also notable, is
   * extroverts have a particularly higher shared understanding of V, A, and D
 
-#7 Applications and Future Work
+# 7 Applications and Future Work
 
 * sentiment or emotion detection systems
   * obtain sentiment-aware word embeddings and sentiment-aware sentence reprs

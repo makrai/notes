@@ -2,7 +2,7 @@ Polarity inducing latent semantic analysis
 W Yih, G Zweig, JC Platt
 2012 Joint EMNLP-CoNLL
 
-#Abstract
+# Abstract
 
 * new vector space representation where
   * antonyms lie on opposite sides of a sphere
@@ -18,7 +18,7 @@ W Yih, G Zweig, JC Platt
     * augmenting the training data with general newspaper text
     * we improve on ... previous results by 11 points absolute in F measure
 
-#1 Introduction
+# 1 Introduction
 
 * Cruse (1986) notes that numerous kinds of antonymy are possible, for example
   antipodal pairs like “top-bottom” orgradable opposites like “light-heavy.”
@@ -29,16 +29,16 @@ W Yih, G Zweig, JC Platt
 * we present a novel method for assigning both negative and positive values
   to the TF-IDF weights used in latent semantic analysis
 
-#2 previous work
+# 2 previous work
 
-#3 the classical LSA approach and analyzes some of its limitations. In Section
+# 3 the classical LSA approach and analyzes some of its limitations. In Section
 
-#4 we present our polarity inducing extension to LSA
+# 4 we present our polarity inducing extension to LSA
 
-#5 supervised discriminative training
+# 5 supervised discriminative training
 
-#6 embedding new words in the thesaurus-derived subspace
+# 6 embedding new words in the thesaurus-derived subspace
 
-#7 experimental results
+# 7 experimental results
 
-#8 method outperforms previous approaches on a GRE
+# 8 method outperforms previous approaches on a GRE

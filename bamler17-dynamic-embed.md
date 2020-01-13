@@ -2,7 +2,7 @@ Dynamic Word Embeddings
 Robert Bamler, Stephan Mandt
 2017
 
-#Abstract
+# Abstract
 
 * We present a
   * probabilistic language model for time-stamped text data
@@ -18,7 +18,7 @@ Robert Bamler, Stephan Mandt
   * more interpretable and ... higher predictive likelihoods
     than ... static models trained separately on time slices
 
-#1 Intro
+# 1 Intro
 
 * Word embeddings
   * Bengio+ 03; Mikolov+ 13a; Pennington+ 14; Mnih & Kavukcuoglu, 13; Levy& 14
@@ -59,7 +59,7 @@ Robert Bamler, Stephan Mandt
     * visualize the continuous dynamics of the entire embedding cloud as it
       deforms over time
 
-#2. related work
+# 2. related work
 
 * Probabilistic models that have been extended to latent time series models
   * none of them relate to word embeddings. The
@@ -85,13 +85,13 @@ Robert Bamler, Stephan Mandt
     times approximately differ by a global rotation in addition to a small
     semantic drift
 
-#3. our model
-#4. two efficient variational inference algorithms
-#5. experimental results
+# 3. our model
+# 4. two efficient variational inference algorithms
+# 5. experimental results
 
 * track semantic changes ... by following nearest-neighbor relations over time
 
-##Algorithms and Baselines
+## Algorithms and Baselines
 
 * SGI denotes the non-Bayesian skip-gram model with independent random init
   * nearby times are made comparable by approximate orthogonal transformations,
@@ -101,7 +101,7 @@ Robert Bamler, Stephan Mandt
 * DSG-F: dynamic skip-gram filtering (proposed)
 * DSG-S: dynamic skip-gram smoothing (proposed)
 
-##Data and preprocessing
+## Data and preprocessing
 
 * Our three corpora exemplify opposite limits
   both in the covered time span and in the amount of text per time step
@@ -116,7 +116,7 @@ approximately 10^10 observed words. The corpus consists of 5-gram tables
   * median number of tweets per day is 722. We converted all tweets to
   * lower case and used a context window size of 4
 
-##Qualitative results
+## Qualitative results
 
 * Figure 4 visualizes the smoothness of the trajectories
  * histograms of the Euclidean distances ||u it − u i,t+δ ||
@@ -126,14 +126,14 @@ approximately 10^10 observed words. The corpus consists of 5-gram tables
 * skip-gram smoothing (DSG-S) may diffuse information into the past
   (see ”presidential” to ”clinton-trump” in Fig. 5)
 
-##Quantitative [predictive]
+## Quantitative [predictive]
 
 * The improvement of our approach over the static model is particularly
   pronounced in the SoU and Twitter corpora, which are much smaller than the
   massive Google books corpus.  There, sharing information between across time
   is crucial
 
-#6. Conclusions
+# 6. Conclusions
 
 * Our approach may be used as a[n] and anomaly detection tool when streaming
   text on social media, as well

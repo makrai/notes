@@ -1,6 +1,6 @@
 Unsupervised Word Sense Induction using Distributional Statistics
 Kartik Goyal and Eduard Hovy
 
-#Abstract
+# Abstract
 
 Dirichlet allocation and spectral clustering

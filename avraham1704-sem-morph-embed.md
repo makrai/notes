@@ -2,13 +2,13 @@ Oded Avraham, Yoav Goldberg
 The Interplay of Semantics and Morphology in Word Embeddings
 2017
 
-#Abstract
+# Abstract
 
 * different types of linguistic properties (surface form, lemma, morph tag)
 * We train several models, where
   each uses a different subset of these properties [as] representations
 
-#1 Intro
+# 1 Intro
 
 * poor performance of traditional models on morphologically complex words
 * The morphology-driven models allow pooling evidence from [words with the]
@@ -69,7 +69,7 @@ The Interplay of Semantics and Morphology in Word Embeddings
     * [we] tease apart inflectional from derivational processes, leading to
   * Most of the works [evaluate eighter the semantics or morphology]
 
-#Conclusion
+# Conclusion
 
 * using the lemma component (either alone or together with the surface form) is
   better [for sem].  Indeed, excluding the morphological component will make

@@ -2,7 +2,7 @@ Scott Crossley, Tom Salsbury, Danielle McNamara
 The Development of Polysemy and Frequency Use in English Second Language Speakers
 Language Learning 2010
 
-#Abstract
+# Abstract
 
 * The data were analyzed both quantitatively and qualitatively. In the
   1. growth of WordNet polysemy values and CELEX word frequency values were

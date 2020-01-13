@@ -2,12 +2,12 @@ Yla R. Tausczik and James W. Pennebaker
 The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 2010 Journal of Language and Social Psychology
 
-#Abstract
+# Abstract
 
 * Empirical results ... including to show attentional focus, emotionality,
   social relationships, thinking styles, and individual differences
 
-#Computerized Text Analysis: A Brief History
+# Computerized Text Analysis: A Brief History
 
 * earliest
   * Freud (1901) wrote about slips of the tongue
@@ -39,7 +39,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * pronouns and articles
   * first-person singular pronouns [were] linked to ... depression
 
-#The Development of LIWC and the Psychometrics of Words
+# The Development of LIWC and the Psychometrics of Words
 
 * Pennebaker & Beall, (1986)
   * categories included the degree to which the stories were organized,
@@ -50,7 +50,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * judges tend to get depressed when reading depressing stories
 * Martha Francis and [Pennebaker began developing a] text analysis program
 
-##The Logic and Development of LIWC
+## The Logic and Development of LIWC
 
 * LIWC program has [a] processing component and the dictionaries
 * calculate the percentage of each LIWC category
@@ -65,9 +65,9 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * significant [revision] in 1997 and again in 2007
   * For details ... see Pennebaker, Chung, Ireland, Gonzales, and Booth (2007)
 
-##The Psychometrics of Word Usage
+## The Psychometrics of Word Usage
 
-##Content Versus Style Words [function words]
+## Content Versus Style Words [function words]
 
 * goal was to ... tap
   * both psychological processes and the [topic]
@@ -79,14 +79,14 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * (cf. Chung & Pennebaker, 2007)
   * detect emotional and biological states, status, honesty
 
-#The Social and Psychological Meaning of Words
+# The Social and Psychological Meaning of Words
 
 * In this section, we give a brief discussion of psychological processes and a
   small set of related of language categories. The section concludes with a
   comprehensive summary of findings about the correlates of word categories
   from a large group of studies
 
-##Attentional Focus: Pronouns and Verb Tense
+## Attentional Focus: Pronouns and Verb Tense
 
 * language use ... can tell us where they are attending
   * such as tracking people’s gaze
@@ -113,7 +113,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
       * could indicate increased psychological distance and 
         a higher degree of resolution for disclosed events
 
-##Emotionality: Positive and Negative Emotions
+## Emotionality: Positive and Negative Emotions
 
 * Use of emotion words [as a measure] of immersion [belemerülés]
   * higher use of emotion words showed more immersion in the traumatic event,
@@ -124,7 +124,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * positively with pronoun use[, auxiliary verb use,] and negation use
       * All correlations are highly significant, p < .001
 
-##Social Relationships
+## Social Relationships
 
 * status, whether a group is working well together, if someone is being
   deceptive, and the quality of a close relationship. Word choice provides
@@ -134,7 +134,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   who is dominating the conversation and how engaged they are in the
   conversation. Assents and positive emotion words measure levels of agreement
 
-##Status, Dominance, and Social Hierarchy
+## Status, Dominance, and Social Hierarchy
 
 * Higher-status individuals speak more often and freely make statements that
   involve others. Lower-status language is more self-focused and tentative
@@ -146,7 +146,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * members of small groups are rated as being more involved and task focused by
   their teammates if they use more words (Hancock, Cosley, McLeod, & Gay 2007)
 
-##Social Coordination and Group Processes
+## Social Coordination and Group Processes
 
 * More communication, more unity, and positive feedback may promote better
   group performance
@@ -160,7 +160,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * early assents may indicate blind agreement by unmotivated group members
       (Leshed, Hancock, Cosley, McLeod, & Gay, 2007)
 
-##Honesty and Deception
+## Honesty and Deception
 
 * Deceptive statements
   * moderately descriptive, distanced from self, and more negative. Newman+
@@ -177,7 +177,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * non-naïve individuals assigned to be deceptive ... showed less diversity
   * Complexity may be reduced in deceptive speech because of the cognitive load
 
-##Close Relationships
+## Close Relationships
 
 * first-person plural (“we”) has not been found to be related to higher
   relationship quality
@@ -186,7 +186,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     overinvolved emotional reaction ... hostility
   * heterosexual romantic partners
 
-##Thinking Styles: Conjunctions, Nouns, Verbs, and Cognitive Mechanisms
+## Thinking Styles: Conjunctions, Nouns, Verbs, and Cognitive Mechanisms
 
 * two components of reasoning: the extent to which someone
   * differentiates between multiple competing solutions
@@ -209,7 +209,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   compared with older participants
   * no difference [when] story based on a picture
 
-##Individual Differences
+## Individual Differences
 
 * age
   * become less self-focused, refer more to the moment, and
@@ -231,7 +231,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * more positive emotion, and less negative emotion. The
   * findings ... support traditional personality models
 
-#Conclusion
+# Conclusion
 
 * Newer text analysis will be able to analyze more complex language structure
   while retaining LIWC’s transparency

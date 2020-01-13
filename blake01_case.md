@@ -1,15 +1,15 @@
 Barry J. Blake 2004
 Case
 
-#3 Modern approaches to case
+# 3 Modern approaches to case
 
-##3.1 Introduction
+## 3.1 Introduction
 
-##3.2 Grammatical relations
+## 3.2 Grammatical relations
 
-##3.3 Abstract case
+## 3.3 Abstract case
 
-##3.4 Semantic roles and grammatical relations 85
+## 3.4 Semantic roles and grammatical relations 85
 
 * a small, universal set
   * Since the late 1960s a number of theories
@@ -20,7 +20,7 @@ Case
     * John Anderson’s Localist Case Grammar (1971, 1977, 1997),
     * Starosta’s Lexicase (1971, 1988) and Dik’s Functional Grammar (1978)
 
-###3.4.4 Localist Case Grammar
+### 3.4.4 Localist Case Grammar
 
 * three characteristics of Localist Case Grammar that account for [how the
   larger number of semantic roles recognised by scholars] can be accommodated
@@ -45,31 +45,31 @@ Case
   * e.g. tying the holistic reading to the case relation [abs]
 * the core grammar of all languages is organised on an absolutive–ergative bas
 
-###3.4.5 Starosta’s Lexicase 305
+### 3.4.5 Starosta’s Lexicase 305
 
-##3.5 Hierarchies
+## 3.5 Hierarchies
 
-#5 Survey of case marking
+# 5 Survey of case marking
 
-##5.1 Introduction
+## 5.1 Introduction
 
-##5.2 Organisation of the core 140
+## 5.2 Organisation of the core 140
 
-###5.2.6 Interpretations of core marking
+### 5.2.6 Interpretations of core marking
 
-####Absolutive and ergative
+#### Absolutive and ergative
 
 * [it is claimed that] the SP/A distinction has a semantic basis
   (John Anderson 1977, 1979, Kibrik 1979 and Wierzbicka 1981)
 
-##5.3 Dative
+## 5.3 Dative
 
-##5.4 Genitive
+## 5.4 Genitive
 
-##5.5 Partitive
+## 5.5 Partitive
 
-##5.6 Local cases
+## 5.6 Local cases
 
-##5.7 Other cases
+## 5.7 Other cases
 
-##5.8 Inflectional case hierarchy
+## 5.8 Inflectional case hierarchy

@@ -3,7 +3,7 @@ Character-level Convolutional Networks for Text Classification
 (former: Text Understanding from Scratch arXiv:1502.01710v1)
 nips 15
 
-#Abstract
+# Abstract
 
 deep learning ... from character-level inputs all the way up to abstract 
     using temporal convolutional networks (LeCun et al., 1998, ConvNets). 
@@ -14,7 +14,7 @@ We
         without the knowledge of words, phrases, sentences 
     both English and Chinese.
 
-#1. Introduction
+# 1. Introduction
 Text understanding (Norvig, 1987)
 apply word2vec or similar techniques with an _engineered language model_
   * Frome et al., 2013
@@ -39,7 +39,7 @@ inspired by ConvNet’s success in computer vision.
     end-to-end ConvNet model (Girshick et al., 2013., Zeiler & Fergus,
     2014)
 
-#2. ConvNet Model Design
+# 2. ConvNet Model Design
 
 2.1. Key Modules
 2.2. Character quantization

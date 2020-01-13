@@ -14,7 +14,7 @@ LREC, 2010
   * an autonomous resource besides the FrameNet lexicon, of which we have
   * a beginning nucleus consisting of 791 annotated sentences
 
-#1 Goals and Method
+# 1 Goals and Method
 
 * semantic frames (Fillmore, 1982; Fillmore, 1985) – 
   * schematic representations of the situations [of] human experience, each

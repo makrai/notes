@@ -2,7 +2,7 @@ D. E. RUMELHART and 1. L. McCLELLAND
 1986
 On Learning the Past Tenses of English Verbs
 
-#THE ISSUE
+# THE ISSUE
 
 * the exact characterization of implicit knowledge [about linguistic rules]
   * explicit
@@ -18,7 +18,7 @@ On Learning the Past Tenses of English Verbs
   * lack the computational power -> Chapter 4.
   * language acquisition
 
-#THE PHENOMENON
+# THE PHENOMENON
 
 * three stages in the acquisition of the use of past tense by children
   * Stage 1: children use only a small number of verbs in the past tense
@@ -35,7 +35,7 @@ On Learning the Past Tenses of English Verbs
 * Other Facts About Past-Tense Acquisition
   * different points in Stage 2
 
-#THE MODEL
+# THE MODEL
 
 * the model is presented, as learning experiences, with pairs of inputs
 * Structure of the Model

@@ -10,7 +10,7 @@ www.github.com/nmrksic/attract-repel
   * Hebrew and Croatian intrinsic evaluation datasets; and
   * Italian and German Dialogue State Tracking datasets collected for this work
 
-#Abstract
+# Abstract
 
 * We present Attract-Repel
 * jointly injecting mono~ and cross-lingual synonymy and antonymy 
@@ -21,7 +21,7 @@ www.github.com/nmrksic/attract-repel
   * downstream task of dialogue state tracking (DST) across multiple languages
   * multilingual DST models, which brings further performance improvements
 
-#Intro
+# Intro
 
 * common techniques for inducing distributed word representations
   * Ó Séaghdha and Korhonen, 2014;
@@ -57,9 +57,9 @@ www.github.com/nmrksic/attract-repel
       * this is the first work on multilingual training of any component of a
         statistical dialogue system
 
-#Related Work
+# Related Work
 
-##Semantic Specialisation
+## Semantic Specialisation
 
 * [applications] of distributional word representations
   * Part-of-Speech (POS) tagging (Collobert+ 2011),
@@ -83,7 +83,7 @@ www.github.com/nmrksic/attract-repel
   * none of [the SOTA models] learn representations jointly
     * see the [SimLex-999 web page](www.cl.cam.ac.uk/~fh295/simlex.html)
 
-###Learning from Scratch
+### Learning from Scratch
 
 * modify the prior or the regularization of the original training procedure
   using the set of linguistic constraints (Yu and Dredze, 2014; Xu+ 2014;
@@ -102,7 +102,7 @@ www.github.com/nmrksic/attract-repel
   interpretable sparse binary vectors which achieve
   competitive performance across a range of intrinsic evaluation tasks
 
-###Fine-Tuning Pre-trained Vectors
+### Fine-Tuning Pre-trained Vectors
 
 * Rothe and Schütze (2015) fine-tune word vector spaces
   to improve the representations of synsets/lexemes found in WordNet
@@ -120,7 +120,7 @@ www.github.com/nmrksic/attract-repel
   * different languages into a unified vector space which
     benefits from positive semantic transfer
 
-###Cross-Lingual Word Representations
+### Cross-Lingual Word Representations
 
 * rely on cross-lingual distributional information (Klementiev+ 2012; Zou+
   2013; Soyer+ 2015; Huang+ 2015, inter alia)
@@ -144,9 +144,9 @@ www.github.com/nmrksic/attract-repel
   five strong cross-lingual word embedding models in
   both intrinsic and extrinsic evaluation across several languages
 
-#4 Experimental Setup 6
+# 4 Experimental Setup 6
 
-##4.1 Distributional Vectors
+## 4.1 Distributional Vectors
 
 * sixteen experimental languages: EN DE IT RU NL SV FR ES PT PL BG HR GA FA VI
 * The first four languages are those of the Multilingual SimLex-999 dataset
@@ -158,15 +158,15 @@ www.github.com/nmrksic/attract-repel
 * In addition, for each of the 16 languages we also train SGNS (Mikolov+ 2013b)
   on the latest Wikipedia dump
 
-##4.2 Linguistic Constraints
+## 4.2 Linguistic Constraints
 
-###Monolingual Similarity
+### Monolingual Similarity
 
 * Multilingual Paraphrase Database (Ganitkevitch and CallisonBurch, 2014)
   * for ten of our sixteen languages
   * the remaining six languages (HE, HR, SV, GA, VI, FA) serve as lower-rsc
 
-###Cross-Lingual Similarity
+### Cross-Lingual Similarity
 
 * BabelNet, a multilingual semantic network
   * constructed by linking Wikipedia to WordNet
@@ -174,13 +174,13 @@ www.github.com/nmrksic/attract-repel
   * synonymous if they belong to (at least) one set of synonymous Babel synsets
   * all BabelNet word senses tagged as conceptual but [not] the Named Entities
 
-###Antonymy
+### Antonymy
 
 * BabelNet is also used to extract both monolingual and cross-lingual antonymy
 * Following Faruqui+ (2015), who found PPDB constraints [better] than WordNet,
   we do not use BabelNet for monolingual synonymy
 
-#5 Intrinsic Evaluation 7
+# 5 Intrinsic Evaluation 7
 
 ## 5.1 Datasets
 
@@ -191,14 +191,14 @@ www.github.com/nmrksic/attract-repel
 * SimVerb-3500 (Gerz+ 2016), a semantic similarity dataset that focuses on verb
   pair similarity.  
   
-##5.2 Experiments 
+## 5.2 Experiments 
 
-###Monolingual and Cross-Lingual Specialisation
+### Monolingual and Cross-Lingual Specialisation
 
 * a) monolingual synonyms; b) monolingual antonyms; and c) the combination of
   both. We then add cross-lingual synonyms and antonyms --> four-lingual space
 
-###Comparison to Baseline Methods 
+### Comparison to Baseline Methods 
 
 * Both mono~ and cross-lingual specialisation was performed 
   using Attract-Repel and counter-fitting, in order to conclusively [compare]
@@ -208,7 +208,7 @@ www.github.com/nmrksic/attract-repel
   when they make use of similarity (but not antonymy) constraints, 
   illustrates the performance range of the two preceding models
   
-###Importance of Initial Vectors
+### Importance of Initial Vectors
 
 * three different sets of initial vectors:
   * well-known distributional word vector collections (Sect. 4.1);
@@ -216,14 +216,14 @@ www.github.com/nmrksic/attract-repel
   * word vectors randomly initialised using the XAVIER initialisation 
     (Glorot and Bengio, 2010).  
     
-###Specialisation for Lower-Resource Languages 
+### Specialisation for Lower-Resource Languages 
 
 * In this experiment, we first construct bilingual spaces which combine:
   * one of the four SimLex languages; with
   * each of the other twelve languages. 
 * we can analyse the improvement over monolingual specialisation 
 
-###Comparison to State-of-the-Art Bilingual Spaces 
+### Comparison to State-of-the-Art Bilingual Spaces 
 
 * [our] English-Italian and English-German bilingual spaces 
   were compared to five SOTA methods for constructing bilingual vector spaces:
@@ -235,7 +235,7 @@ www.github.com/nmrksic/attract-repel
       constraints.  For these models, we use competitive setups proposed in
       (Vulić and Korhonen, 2016a)
 
-#6 Downstream Task Evaluation 10
+# 6 Downstream Task Evaluation 10
 
 6.1 Dialogue State Tracking
 
@@ -243,9 +243,9 @@ www.github.com/nmrksic/attract-repel
 
 6.3 Results and Discussion
 
-#7 Conclusion
+# 7 Conclusion
 
-#8 Further Work
+# 8 Further Work
 
 * improving vector space models for morphologically rich languages
 * discrepancies between our intrinsic and task-based experiments 

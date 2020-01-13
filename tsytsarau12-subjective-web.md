@@ -2,7 +2,7 @@ Mikalai Tsytsarau · Themis Palpanas
 Survey on mining subjective data on the web
 Data Min Knowl Disc (2012)
 
-#Abstract
+# Abstract
 
 * In the past years ... Sentiment Analysis and Opinion Mining ... in
   Information Retrieval and Web data analysis
@@ -13,7 +13,7 @@ Data Min Knowl Disc (2012)
 * In this study, we review the development of Sentiment Analysis and Opinion M
   + Contradiction Analysis
 
-#Intro
+# Intro
 
 * subjectivity filtering is applied (Riloff+ 2005)
   * analyzing sentiments expressed by the authors, or
@@ -25,7 +25,7 @@ Data Min Knowl Disc (2012)
 * we will use the term Subjectivity Analysis to refer to all three of
   ... Opinion Mining and Opinion Aggregation + Contradiction Analysis
 
-##1.1 Relation to previous work
+## 1.1 Relation to previous work
 
 * [our] classification of the papers into four different approaches
   * machine learning, dictionary-based, statistical, and semantic. We provide
@@ -35,15 +35,15 @@ Data Min Knowl Disc (2012)
     * detect artificially-constructed opinionated data
   * and contradiction analysis, where we report on 17 approaches
 
-#2 2 Subjectivity analysis: a general view
+# 2 2 Subjectivity analysis: a general view
 
 * confluence of different approaches
   * Opinion Mining originates from the IR community
   * Sentiment Analysis ... was initially formulated as [an] NLP task
 
-#3 Opinion mining 5
+# 3 Opinion mining 5
 
-##3.2 Problems in opinion mining 6
+## 3.2 Problems in opinion mining 6
 
 * two steps:
   * identify (topics, opinionative sentences), and
@@ -55,14 +55,14 @@ Data Min Knowl Disc (2012)
       Yu and Hatzivassiloglou (2003), Ku+ (2006), Zhang+ (2007),
       He+ (2008)
 
-#4 Opinion aggregation 13
+# 4 Opinion aggregation 13
 
-#5 Contradiction analysis
+# 5 Contradiction analysis
 
-#6 Discussion
+# 6 Discussion
 
 * In this section, we elaborate on the emerging trends,
   * compare the various methods that have been proposed for SA, and
   * list open problems and interesting future research directions
 
-#7 Conclusions
+# 7 Conclusions

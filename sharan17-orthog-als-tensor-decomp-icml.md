@@ -4,7 +4,7 @@ Guaranteed Tensor Decomposition via Orthogonalized Alternating Least Squares
   A Theoretically Principled Tensor Decomposition Algorithm for Practical Use]
 ICML 2017
 
-#http://web.stanford.edu/~vsharan/orth-als.html
+# http://web.stanford.edu/~vsharan/orth-als.html
 
 * In practice, we have also observed that
   * it is sometimes useful to orthogonalize the factor estimates for a few
@@ -15,7 +15,7 @@ ICML 2017
     orthogonalized Orth-ALS, and then tune the number of steps for which
     orthogonalization takes place to get the best results
 
-#Abstract
+# Abstract
 
 * The popular Alternating Least Squares (ALS) algorithm for tensor decomp
   * efficient and easy to implement, but
@@ -30,7 +30,7 @@ ICML 2017
     over-complete tensors, as well as tensor completion—and for computing
   * word embeddings from a third-order word tri-occurrence tensor
 
-#Introduction
+# Introduction
 
 * tensor methods have become ... incredibly useful
   * topic modeling (Anandkumar+ 2012),
@@ -79,9 +79,9 @@ ICML 2017
   6. we illustrate our proof techniques for the special case of orthogonal
      tensors
 
-#2 Background and Related Work
+# 2 Background and Related Work
 
-#2.1. tensor decomposition
+# 2.1. tensor decomposition
 
 * three families of algorithms [distinct from alternating minimization
   approaches] and the tensor power method
@@ -105,16 +105,16 @@ ICML 2017
   * speedup ALS via sampling and randomized least squares
     (Battaglino+ 2017; Cheng+ 2016; Papalexakis+ 2012)
 
-#2.2. ALS algorithm
+# 2.2. ALS algorithm
 
-#2.3. The tensor power method
+# 2.3. The tensor power method
 
-#3 Notation
+# 3 Notation
 
 * Though all algorithms in the paper extend to asymmetric tensors, 
   we prove convergence results under the symmetric setting where A = B = C.
 
-#4 The Algorithm: Orthogonalized Alternating Least Squares (OrthALS) 5
+# 4 The Algorithm: Orthogonalized Alternating Least Squares (OrthALS) 5
 
 * combines the 
   * computational benefits of standard ALS and the 
@@ -143,7 +143,7 @@ ICML 2017
   pseudoinverse term for standard ALS, which evaluates to identity for Orth-ALS
   and does not have to be computed. The cost of [both] is O(k 2 d),
 
-###Variants of Orthogonalized ALS
+### Variants of Orthogonalized ALS
 
 * Hybrid-ALS
   * Particularly for low-dimensional settings, in practice we found that 
@@ -153,9 +153,9 @@ ICML 2017
     orthogonalized Orth-ALS, and then 
     tune the number of steps for which orthogonalization takes place
     
-##4.1 Performance Guarantees
+## 4.1 Performance Guarantees
 
-#5 Experiments 7
+# 5 Experiments 7
 
 * We compare the performance
   * of Orth-ALS, standard ALS (with random and SVD initialization),
@@ -166,9 +166,9 @@ ICML 2017
 * factorization of Orth-ALS [vs] standard ALS on a large real-world tensor of
   word tri-occurrence based on the 1.5 billion word English Wikipedia corpus
 
-##5.2 Learning Word Embeddings via Tensor Factorization 11
+## 5.2 Learning Word Embeddings via Tensor Factorization 11
 
-###Methodology
+### Methodology
 
 * English Wikipedia as our corpus, with 1.5 billion words
 * word co-occurrence tensor T of the 10,000 most frequent words, where the
@@ -190,13 +190,13 @@ ICML 2017
   * we use an optimized ALS solver for sparse tensors (Smith and Karypis; 2015)
     which also has an efficient parallel implementation
 
-###Evaluation: Similarity and Analogy Tasks
+### Evaluation: Similarity and Analogy Tasks
 
 * word similarity tasks (Bruni+ 2012; Finkelstein+ 2001)
   * the objective is to maximize the correlation between the similarity scores
 * The word analogy tasks (Mikolov+ 2013a;c)
 
-###Results. The performances are summarized in the Table 1
+### Results. The performances are summarized in the Table 1
 
 * The use of Orth-ALS rather than standard ALS leads to significant improvement
 * matrix SVD method still outperforms the tensor based methods
@@ -209,12 +209,12 @@ ICML 2017
   together, beyond the [2-mode] structure
 * Or [the two tasks we evaluated on] do not require this higher order
 
-#6 Proof Overview: the Orthogonal Tensor Case 12
+# 6 Proof Overview: the Orthogonal Tensor Case 12
 
-#7 Conclusion 18
+# 7 Conclusion 18
 
 * future work would be 
   * other tensor-related tasks, such as tensor completion
   * more application-specific domains, such as natural language processing
 
-#Appendix 21
+# Appendix 21

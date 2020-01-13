@@ -6,7 +6,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 * The global vectors, sense vectors and cluster centers of our model and 
 * code for learning them are available
 
-#Abstract
+# Abstract
 
 * an extension to the Skip-gram model that 
   * efficiently learns multiple embeddings per word type
@@ -14,7 +14,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 * non-parametrically estimating the number of senses per word type
 * efficiency and scalability
 
-#1 Introduction
+# 1 Introduction
 
 * Skipgram ... applied to machine translation 
   * (Zou et al, 2013; Mikolov et al, 2013c)
@@ -43,7 +43,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
       * később véletlen nélkül írja: ha a távolság meghalad egy küszöböt
   * training on nearly a billion tokens in less than 6 hours
 
-#2 Related Work
+# 2 Related Work
 
 * Dhillon and Ungar (2011) estimate word vector representations using 
   * Canonical Correlation Analysis (CCA)
@@ -52,11 +52,11 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
     et al (2011) use token-specific representations of words as part of the
     learning algorithm, the final outputs are still one-to-one mappings
 
-#3 Background: Skip-gram model
+# 3 Background: Skip-gram model
 
 * a Skip-gramban valójában kétféle vektor van
 
-#4 Multi-Sense Skip-gram (MSSG) model
+# 4 Multi-Sense Skip-gram (MSSG) model
 
 * Az első bekezdés midkét modelljükre igaz, utána nem. 
 * cluster valójában cluster centroid?
@@ -65,7 +65,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
   * sense vector v_s(w, k) (k = 1, 2,... , K) and 
   * a context cluster center μ(w, k) (k = 1, 2, ... , K)
 
-#5 Non-Parametric MSSG model (NP-MSSG)
+# 5 Non-Parametric MSSG model (NP-MSSG)
 
 * online non-parametric clustering procedure described in Meyerson (2001)
 * mikor készül új jelentés? A távolságban determinisztikus vagy véletlen?
@@ -81,20 +81,20 @@ if (createClusterlambda < minDist) {
   sense = ncluster(word) 
 ```
 
-#6 Experiments
+# 6 Experiments
 
 * Wikipedia 990 million tokens 
   * m20 w5 K3 \lambda=-.5 n1, initial learning rate 0.025
 * multithread?
 
-##6.1 Nearest Neighbors
+## 6.1 Nearest Neighbors
 
 * The nearest neighbors [by] cosine similarity between the 
   * embedding for each sense of the word and 
   * the context embeddings of all other words in the vocabulary
 * In NP-MSSG we set λ to -0.5
 
-##6.2 Word Similarity
+## 6.2 Word Similarity
 
 * datasets: 
   * WordSim-353 (Finkelstein et al, 2001) dataset and the 
@@ -110,4 +110,4 @@ if (createClusterlambda < minDist) {
 * word analogy task
   * plain sgram is better
 
-#7 Conclusion
+# 7 Conclusion

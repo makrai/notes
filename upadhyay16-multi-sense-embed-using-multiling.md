@@ -2,7 +2,7 @@ Shyam Upadhyay, Kai-Wei Chang, James Zou, Matt Taddy, Adam Kalai
 Beyond bilingual: Multi-sense word embeddings using multilingual context
 2017 Rejected from ICLR, Best Paper at Workshop on Repl4NLP
 
-#Abstract
+# Abstract
 
 sense identification. 
 * We present a multiview Bayesian non-parametric algorithm which improves
@@ -18,7 +18,7 @@ corpora efficiently for multi-sense representation learning
 * performance [comparable] to a state of the art monolingual model 
   trained on five times more training data
 
-#1 Introduction
+# 1 Introduction
 
 * Several attempts (Reisinger and Mooney, 2010; Neelakantan et al., 2014; Li
   and Jurafsky, 2015) have been made to infer multi-sense word representations
@@ -36,7 +36,7 @@ corpora efficiently for multi-sense representation learning
     our algorithm to only associate a word with a new sense vector when
     evidence (from either same or foreign language context) requires it.
 
-#2 Related work
+# 2 Related work
 
 * two broad categories – 
   * two-staged approaches and 

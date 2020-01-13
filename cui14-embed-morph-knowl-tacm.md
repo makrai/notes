@@ -10,7 +10,7 @@ ACM Trans. Embedd. Comput. Syst. V, N, Article A (January 2014)
     both contextual information and morphological word sim to learn embeddings.
 * Experiments on an analogical reasoning task and a word similarity task 
 
-#Abstract
+# Abstract
 
 * it is challenging to handle unseen words or rare words with insufficient
 * inspired by the study on word recognition process in cognitive psychology, we

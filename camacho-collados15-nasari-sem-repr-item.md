@@ -4,7 +4,7 @@ NASARI: a Novel Approach to a Semantically-Aware Representation of Items
 
 http://lcl.uniroma1.it/nasari/
 
-#Abstract
+# Abstract
 
 * either on lexicographic resources, such as WordNet, or on encyclopedic
   resources, such as Wikipedia. We propose a vector representation technique
@@ -16,16 +16,16 @@ http://lcl.uniroma1.it/nasari/
   * sense clustering.  We are releasing our
 * vector representations at http://lcl.uniroma1.it/nasari/
 
-#Intro
+# Intro
 
 * we provide improvements over the conventional tf-idf weighting scheme by
   applying lexical specificity (Lafon, 1980), a statistical measure mainly used
   for term extraction, to the task of computing vector weights in a vector
   representation
 
-#2 Semantic representation of concepts
+# 2 Semantic representation of concepts
 
-##Semantic representation NASARI 
+## Semantic representation NASARI 
 
 Our concept modeling approach consists of two phases. First, for a given
 concept, we collect a set of relevant Wikipedia pages by leveraging the
@@ -33,7 +33,7 @@ structural information in Wikipedia and WordNet (Section 2.1). Then, we analyze
 the obtained contextual information and construct two vector representations
 of the concept (Section 2.2)
 
-###Lexical specificity
+### Lexical specificity
 
 * based on the hypergeometric distribution over word frequencies
 * particularly suitable for extracting an accurate set of representative terms

@@ -2,7 +2,7 @@ Yanzhou Huang, Deyi Xiong, Xiaodong Shi, Yidong Chen, ChangXing Wu, Guimin Huang
 Adapted competitive learning on continuous semantic space for WSI
 Neurocomputing, 2016
 
-#Abstract
+# Abstract
 
 * The majority of existing WSI algorithms are not applicable to capture
   both lexical semantics and syntactic relations
@@ -19,7 +19,7 @@ Neurocomputing, 2016
   on the SEMEVAL-2010 WSI dataset, improv[ing] the quality of word sense
   clustering over several competitive baselines
 
-#1 Introduction
+# 1 Introduction
 
 * Conventional
   * simple vector addition or component-wise multiplication in context
@@ -56,7 +56,7 @@ Neurocomputing, 2016
       are considered as the representations of the induced word senses
   * without resorting to any external resources
 
-#2 Related work
+# 2 Related work
 
 * In this section, we give an overview on previous works of WSI and
   highlight the differences from our framework
@@ -105,7 +105,7 @@ Neurocomputing, 2016
     * use the representations of words and word clusters simultaneously,
     * better generalization ability to the test data
 
-#6. Conclusion and future work
+# 6. Conclusion and future work
 
 1. RAE based method is
   * superior to a simple vector average method

@@ -9,7 +9,7 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
 * The software tools used to build the corpus are distributed under an open lic
 * The terms of use of the corpus are described in Section 4
 
-#Abstract
+# Abstract
 
 * We present DepCC, the largest linguistically analyzed corpus in English
   * 365 million documents, 252 B tokens and 7.5 B of named entity
@@ -17,7 +17,7 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
   * provenance information [i.e.  the place of origin]
 * We demonstrate the utility of this corpus on ... the SimVerb3500 dataset
 
-#1 Introduction
+# 1 Introduction
 
 * commonly used text collections in the NLP community, such as BNC or Wikipedia
   * in the range 0.1–3 B tokens
@@ -40,9 +40,9 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
   * the corresponding crawl contains over 3 B pages
   * the indexed Web contains about 5 B pages
 
-#2 Related Work
+# 2 Related Work
 
-##2.2.  Large Scale Text Collections
+## 2.2.  Large Scale Text Collections
 
 * WaCkypedia (Baroni+ 2009) is a parsed version of English Wikipedia as of
   * POS tagged with the TreeTagger (Schmid, 1994) and
@@ -65,7 +65,7 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
   * named entity tagging. However, this corpus contains
   * roughly 15 times less tokens than DepCC
 
-##2.3 Common Crawl as a Corpus
+## 2.3 Common Crawl as a Corpus
 
 * Kolias+ (2014) present an exploratory study of one of the early versions of
   the Common Crawl . The authors provide various descriptive statistics
@@ -76,7 +76,7 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
   * available under an open license
 * GloVe ... authors distribute two models trained on the English part of CC
 
-#3 Building a Web-Scale Dependency-Parsed Corpus in English from Common Crawl 3
+# 3 Building a Web-Scale Dependency-Parsed Corpus in English from Common Crawl 3
 
 * Figure 1 shows how a linguistically analyzed corpus is built from the Web
   1. web pages are downloaded by the web crawler of CommonCrawl, called CCBot
@@ -84,7 +84,7 @@ Building a WebScale Dependency-Parsed Corpus from Common Crawl
      is performed using the C4Corpus tool
   3. we perform linguistic analysis of the corpus ... in the CoNLL format (3.4)
 
-##3.1 Input Web Crawl: the Common Crawl
+## 3.1 Input Web Crawl: the Common Crawl
 
 The DepCC corpus is based on the crawl of February 2016 11 containing more than
 1.73 B URLs. The CommonCrawl URL index for this crawl is available online
@@ -92,7 +92,7 @@ The DepCC corpus is based on the crawl of February 2016 11 containing more than
 distributed file system. 13 As summarized in Table 2, the total size of the
 compressed HTML WARC files is about 30 Tb
 
-##3.2. Preprocessing of Texts: the C4Corpus Tool
+## 3.2. Preprocessing of Texts: the C4Corpus Tool
 
 * The raw corpus was processed with the C4Corpus tool (Habernal+ 2016)
   and is available on the distributed cloud-based file system Amazon S3. 14
@@ -110,24 +110,24 @@ total size of 0.68 Tb, based on the language detection in the first phase. Note
 that we use all texts written in English, not only those published under the
 CC-BY license
 
-##3.3.  Linguistic Analysis of Texts
+## 3.3.  Linguistic Analysis of Texts
 
 * four stages presented in Figure 1 and is
 * implemented using the Apache Hadoop framework 15 for parallelization and the
   Apache UIMA framework 16 for integration of linguistic analysers via the
   DKPro Core library (Eckart de Castilho and Gurevych, 2014)
 
-###3.3.1. POS Tagging and Lemmatization
+### 3.3.1. POS Tagging and Lemmatization
 
 For morphological analysis of texts, we used OpenNLP part-of-speech tagger and
 Stanford lemmatizer
 
-###3.3.2. Named Entity Recognition
+### 3.3.2. Named Entity Recognition
 
 * we use the Stanford NER tool (Finkel+ 2005). 18 Overall,
 * 7.48 B occurrences of named entities were identified in the 251.92 B tokens
 
-###3.3.3. Dependency Parsing
+### 3.3.3. Dependency Parsing
 
 * Unfortunately, the most accurate parsers,
   * e.g. Stanford parser based on the PCFG grammar (De Marneffe+ 2006),
@@ -148,7 +148,7 @@ Stanford lemmatizer
   * To avoid crashes, we filter all sentences longer than 50 tokens
     * hardly any well-formed sentences of 50 tokens or more in this corpus
 
-###3.3.4. Collapsing of Syntactic Dependencies
+### 3.3.4. Collapsing of Syntactic Dependencies
 
 * Collapsed and enhanced dependencies,
   e. g. the Stanford Dependencies (De Marneffe+ 2006) 20 can be useful
@@ -161,28 +161,28 @@ Stanford lemmatizer
     * original and enhanced versions are saved respectively into the columns
       “DEPREL” and “DEPS” as illustrated in Table 3
 
-##3.4 Format of the Output Documents 4
+## 3.4 Format of the Output Documents 4
 
-##3.5 Computational Settings
+## 3.5 Computational Settings
 
-##3.6. Running Time
+## 3.6. Running Time
 
-##3.7 Using the Corpus in the Amazon Cloud
+## 3.7 Using the Corpus in the Amazon Cloud
 
-##3.8. Index of the Corpus
+## 3.8. Index of the Corpus
 
-#4 Terms of Use
+# 4 Terms of Use
 
 * you need to make sure to respect the Terms of Use of the original CC dataset
 
-#5 Evaluation: Verb Similarity Task
+# 5 Evaluation: Verb Similarity Task
 
 * task structurally [the same as] SimLex-999 (Hill+ 2015)
 * We chose this task since verb meaning is largely defined by the meaning of
   its arguments (Fillmore, 1982), therefore
   dependency-based features seem relevant
 
-##5.1. Datasets: SimVerb3500 and SimLex222
+## 5.1. Datasets: SimVerb3500 and SimLex222
 
 * SimVerb3500 (Gerz+ 2016). The dataset is composed of
   * challenging dataset for verb relatedness
@@ -190,7 +190,7 @@ Stanford lemmatizer
   * train and test parts, called respectively SimVerb3000 and SimVerb500. In
 * SimLex222, which is the verb part of SimLex999 dataset (Hill+ 2015)
 
-##5.2. A Distributional Model for Verb Similarity
+## 5.2. A Distributional Model for Verb Similarity
 
 * We compute syntactic count-based distributional representations of words
   using the JoBimText framework (Biemann and Riedl, 2013). 30 The sparse
@@ -201,11 +201,11 @@ Stanford lemmatizer
   * each row and column of the sparse term-feature matrix is pruned such that
     at most wpf nonzero elements in a row and fpw elements in a column are !=0
 
-##5.3. Discussion of Results
+## 5.3. Discussion of Results
 
 Table 4 presents results of the experiments
 
-###5.3.1. Baselines
+### 5.3.1. Baselines
 
 * current stateof-art result on this dataset:
   * Count based SVD system is from (Baroni+ 2014)
@@ -217,7 +217,7 @@ Table 4 presents results of the experiments
 * our goal is to show the impact of the large corpora on performance and
   not to present a new model for verb similarity
 
-###5.3.2. Impact of the Corpora on Performance
+### 5.3.2. Impact of the Corpora on Performance
 
 The bottom part of the table presents the distributional model described in
 Section 5.2. trained on the corpora of various sizes. Note, that the
@@ -229,13 +229,13 @@ corpus
   (Gerz+ 2016), on the SimVerb dataset,
   through the sheer [puszta] size of the input corpus (Banko and Brill, 2001)
 
-###5.3.3. Differences in Performance for Test/Train Sets
+### 5.3.3. Differences in Performance for Test/Train Sets
 
 * the absolute performance on the test part (SimVerb500) is higher than the
   absolute performance on the train part (SimVerb300) for almost all models,
   * We [don't know why]
 
-#6 Conclusion
+# 6 Conclusion
 
 * The corpus can be used in various contexts
   * syntaxbased word embeddings (Levy and Goldberg, 2014)

@@ -4,12 +4,12 @@ WMT 2018
 
 https://github.com/awslabs/sockeye/ tree/master/contrib/sacrebleu
 
-#Abstract
+# Abstract
 
 * The main culprit is different tokenization and normalization schemes applied
   to the reference
 
-#1 Introduction
+# 1 Introduction
 
 * BLEU (Papineni+ 2002). BLEU’s
   * relative language independence, ease of computation, and reasonable
@@ -26,12 +26,12 @@ https://github.com/awslabs/sockeye/ tree/master/contrib/sacrebleu
     * Sometimes referred to as detokenized BLEU,
       since it requires that system output be detokenized prior to scoring
 
-#Problem Description
+# Problem Description
 
 The first problem deal[s] with parameters [and is] more theoretical
 A second problem, that of preprocessing, exists in practice
 
-##2.1 Problem: BLEU is underspecified
+## 2.1 Problem: BLEU is underspecified
 
 * Among [BLEU] parameters are:
   * The number of references used;
@@ -48,7 +48,7 @@ A second problem, that of preprocessing, exists in practice
   * all gathered together under the label “BLEU”, over time, they
     leave an impression ... of very high BLEU scores for some language pairs
 
-##2.2 Problem: Different reference preprocessings cannot be compared
+## 2.2 Problem: Different reference preprocessings cannot be compared
 
 * Preprocessing includes input text modifications such as
   * normalization (e.g., collapsing punctuation, removing special characters)
@@ -76,6 +76,6 @@ A second problem, that of preprocessing, exists in practice
   many systems  limited the vocabulary in their attempt to deal with unknown
   * It’s possible that these papers applied this same masking to the references
 
-#4 Summary
+# 4 Summary
 
 * test sets ... from academic, government, and industry sources. It is a shame,

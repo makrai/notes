@@ -1,7 +1,7 @@
 Alternative structures for character-level RNNs
 Piotr Bojanowski, Armand Joulin, and Tomáš Mikolov
 
-#Három cikk és két repó
+# Három cikk és két repó
 
 * gyuri9:50 AM
   * "Bag of Tricks for Efficient Text Classification" irja le az osztalyozást
@@ -15,14 +15,14 @@ Piotr Bojanowski, Armand Joulin, and Tomáš Mikolov
 https://github.com/facebookresearch/fastText
 https://github.com/facebook/Conditional-character-based-RNN
 
-#Abstract
+# Abstract
 
 * two alternative structural modifications to the classical RNN model
   * conditioning the character level representation on the previous word
   * character history to condition the output probability
 * We evaluate [on] multi-lingual real world data
 
-#Intro
+# Intro
 
 * sequential data ...  applications, for example in
   * language modeling (Goodman, 2001),
@@ -54,7 +54,7 @@ https://github.com/facebook/Conditional-character-based-RNN
   * Sec.  4
     * conditioning the softmax output on the recent history
 
-##Related work
+## Related work
 
 * mix of word and character level input for neural network language models
   * Kang+ (2011) in the context of Chinese
@@ -69,15 +69,15 @@ https://github.com/facebook/Conditional-character-based-RNN
     * Bilmes & Kirchhoff (2003) build their embedding by
       * concatenating features built on previously seen words
 
-#5 Experimental evaluation
+# 5 Experimental evaluation
 
 * We evaluate our method using entropy in bits per character. It is
   * defined as the empirical estimate of the cross-entropy between the target
     distribution and the model output in base 2
 
-#5 Experimental evaluation
+# 5 Experimental evaluation
 
-##The multilingual Europarl dataset
+## The multilingual Europarl dataset
 
 * The CRNN baseline as well as the proposed models 
   still are quite far from the performance of a word-level RNN

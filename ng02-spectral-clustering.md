@@ -2,7 +2,7 @@ On Spectral Clustering: Analysis and an algorithm
 Andrew Y. Ng, Michael I. Jordan, Yair Weiss
 2002
 
-#Abstract
+# Abstract
 
 * spectral clustering methods 
   * algorithms that cluster points using eigenvectors of matrices derived from

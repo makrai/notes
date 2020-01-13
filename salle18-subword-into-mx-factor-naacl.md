@@ -4,13 +4,13 @@ naacl 2018
 
 implementation of subword LexVec ... at https://github.com/alexandres/lexvec
 
-#Abstract
+# Abstract
 
 * We evaluate the impact of different types of subwords 
   (n-grams and un- supervised morphemes), with
 * results confirming the importance of subword information
 
-#Introduction
+# Introduction
 
 * Popular counting models include PPMI-SVD (Levy et al., 2014),
   GloVe (Pennington et al., 2014), and LexVec (Salle et al., 2016b)
@@ -36,7 +36,7 @@ implementation of subword LexVec ... at https://github.com/alexandres/lexvec
       give coherent answers
     * like fastText
 
-#Conclustion
+# Conclustion
 
 * future work
   * downstream tasks

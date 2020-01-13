@@ -45,9 +45,9 @@ ha fordítva mennének az élek?
   the second-order space is significantly denser
   than the original contextual embedding space
 
-#2 Related Work
+# 2 Related Work
 
-##2.1 Alternate features for training embeddings
+## 2.1 Alternate features for training embeddings
 
 * Levy and Goldberg [11] utilized syntactic dependencies as context, and found
   improved functional similarity and decreased topical sensitivity
@@ -72,7 +72,7 @@ ha fordítva mennének az élek?
     using lexical substitutions to incorporate the joint contexts of two words
     and extend contextual information in training
 
-##2.2 Absolute positioning in the embedding space
+## 2.2 Absolute positioning in the embedding space
 
 * correlations between individual dimensions ... and semantic groupings
   16. Alona Fyshe, Leila Wehbe, P P Talukdar, Brian Murphy, and Tom M Mitchell
@@ -108,7 +108,7 @@ ha fordítva mennének az élek?
   have relied more on nearest neighborhood structure
   than consistent affine transformations
 
-#3 Second-order embeddings
+# 3 Second-order embeddings
 
 * graph: directed edge (v, w) is added for each w ∈ NN_v^k
 * node2vec (Grover and Leskovec. 2016)
@@ -119,7 +119,7 @@ ha fordítva mennének az élek?
   to make it more robust to random initializations
   With sample embedding sets V, we can k calculate the nearest average weight
 
-#4 Exper
+# 4 Exper
 
 * for the first two tasks, we use deep and highly non-linear neural models,
 * the model for paraphrase recognition is a simple logistic regression
@@ -131,7 +131,7 @@ ha fordítva mennének az élek?
   * [dimensionality] of 100; all other settings are node2vec defaults
   * three samples in the graph induction step
 
-##4.1 NER
+## 4.1 NER
 
 * We adopt the NER system of Lample+ [40], which is
   * based on a bidirectional long short-term memory (LSTM) network with a
@@ -144,7 +144,7 @@ ha fordítva mennének az élek?
   * converse pattern emerges for PER entities
   * ORG and LOC are less clear, with small variations in precision and recall
 
-##4.2 Recognizing textual entailment
+## 4.2 Recognizing textual entailment
 
 * Stanford Natural Language Inference (SNLI) dataset [42]. The dataset consists
   * 570,152 sentence pairs
@@ -159,7 +159,7 @@ ha fordítva mennének az élek?
     decreases performance, but using multiple samples or different settings for
     k show equivalent or superior performance
 
-##4.3 Paraphrase recognition
+## 4.3 Paraphrase recognition
 
 * Microsoft Research Paraphrase Corpus (MSRPC) [44], consisting of
   5,801 sentence pairs (67%)
@@ -174,7 +174,7 @@ ha fordítva mennének az élek?
   * For classification, we use logistic regression as implemented in LIBLINEAR
 * Table 5
 
-##4.4 Neighborhood analysis
+## 4.4 Neighborhood analysis
 
 * Qualitatively,
   * unrelated nearest neighbors in the first-order space
@@ -190,7 +190,7 @@ ha fordítva mennének az élek?
     * already dense areas of the first-order space become appreciably denser,
       with all 100 of the top pairwise similarities clustering around 0.999
 
-#5 Discuss
+# 5 Discuss
 
 * On the NER task, the
   * distinct increase in precision for MISC entities

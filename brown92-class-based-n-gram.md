@@ -2,7 +2,7 @@ Class-Based n-gram Models of Natural Language
 Peter F Brown, Peter V de Souza, RL Mercer, VJ Della Pietra, Jenifer C Lai
 1992
 
-#Abstract
+# Abstract
 
 * the problem of * predicting a word from previous words in a sample of text
 * We
@@ -13,7 +13,7 @@ Peter F Brown, Peter V de Souza, RL Mercer, VJ Della Pietra, Jenifer C Lai
     either syntactically based groupings or semantically based groupings,
     depending on the nature of the underlying statistics
 
-#1. Introduction
+# 1. Introduction
 
 * noisy channel
   * In a number of natural language processing tasks, we face the problem of
@@ -32,7 +32,7 @@ Peter F Brown, Peter V de Souza, RL Mercer, VJ Della Pietra, Jenifer C Lai
     1. find pairs of words that function together as a single lexical entity
     2. find classes that have some loose semantic coherence
 
-#3. Word Classes 4
+# 3. Word Classes 4
 
 * the partition that maximizes L(\pi) is, in the limit,
   the [one] that maximizes the average mutual information of adjacent classes
@@ -57,7 +57,7 @@ Peter F Brown, Peter V de Souza, RL Mercer, VJ Della Pietra, Jenifer C Lai
     most probable word to a new class ... and we ... merge that pair for which
     the loss in average mutual information is least
 
-#4. Sticky Pairs and Semantic Classes 10
+# 4. Sticky Pairs and Semantic Classes 10
 
 * At the expense of a slightly greater perplexity, the 3-gram model with word
   classes requires only about one-third as much storage as the 3-gram LM

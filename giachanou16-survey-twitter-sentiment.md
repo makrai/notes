@@ -2,7 +2,7 @@ Anastasia Giachanou and Fabio Crestani
 Like it or not: A survey of Twitter sentiment analysis methods
 ACM Comput Surv 2016
 
-#Abstract
+# Abstract
 
 * studies are categorized according to the approach they follow
 * we discuss fields related
@@ -10,7 +10,7 @@ ACM Comput Surv 2016
     emotion detection, and tweet sentiment quantification
 * Resources that have been used in the Twitter sentiment analysis literature
 
-#1 Introduction
+# 1 Introduction
 
 * Liu [2012] “an opinion is a quintuple (e i , a i j , s i jkl , h k , t l )
   * e i is the name of an entity
@@ -50,11 +50,11 @@ ACM Comput Surv 2016
 
 The rest of the article is organized as follows. Section
 
-#2 Twitter, TSA challenges, and feature selection methods
+# 2 Twitter, TSA challenges, and feature selection methods
 
-##2.3. Feature Selection for Twitter Sentiment Analysis 8
+## 2.3. Feature Selection for Twitter Sentiment Analysis 8
 
-###textual features: semantic, syntactic, stylistic, and Twitter-specific
+### textual features: semantic, syntactic, stylistic, and Twitter-specific
 
 * Semantic features include ... sentiment lexicons or the semantic concept
   * classif
@@ -71,15 +71,15 @@ The rest of the article is organized as follows. Section
 * Stylistic features refer to the writing style used in Twitter, whereas
 * unique characteristics of tweets such as retweets or hashtags
 
-###TSA feature selection is based on approaches ...  effective in other domains
+### TSA feature selection is based on approaches ...  effective in other domains
   * An+ [2014] used the chi-squared measure, which is a common statistical test
   * Kiritchenko+ [2014] used a Pointwise Mutual Information (PMI) measure
     to identify terms that reveal sentiment. Also, a number of researchers
   * [Pak and Paroubek 2010; Agarwal+ 2011; Kouloumpis+ 2011]. In the remainder
 
-#3 TSA methods and the corresponding articles
+# 3 TSA methods and the corresponding articles
 
-##3.1. Machine-Learning Methods
+## 3.1. Machine-Learning Methods
 
 * with the SVM and NB classifiers being the most prevalent
 * Unigram-based SVM is usually considered as a baseline
@@ -88,9 +88,9 @@ The rest of the article is organized as follows. Section
   and Conditional Random Field (CRF)
 * ensemble
 
-###3.1.2. Classifier Ensembles
+### 3.1.2. Classifier Ensembles
 
-###3.1.3. Deep Learning 17
+### 3.1.3. Deep Learning 17
 
 * Tang+ [2015a] ... learn semantic representations of user and products,
 * Tang+ [2015b] used deep learning for review prediction.  Deep learning has
@@ -105,7 +105,7 @@ The rest of the article is organized as follows. Section
   Word embeddings were then used to model the interactions of the two contexts
 * Table IV summarizes the articles that employed deep learning to address TSA
 
-##3.6. Discussion 23
+## 3.6. Discussion 23
 
 * Distant supervision is one alternative to get a large amount of annotated tws
 * Label propagation is another alternative that can reduce the demand
@@ -118,9 +118,9 @@ The rest of the article is organized as follows. Section
 * graph-based method ... that exploit the Twitter social graph
   and its attributes (i.e., followers, replies, and past tweets of a user)
 
-#4 fields related to TSA
+# 4 fields related to TSA
 
-##4.4. Emotion Detection on Tweets 26
+## 4.4. Emotion Detection on Tweets 26
 
 * Mohammad [2012]
   * proposed to consider hashtags that show an emotion (#anger, #surprise)
@@ -133,13 +133,13 @@ The rest of the article is organized as follows. Section
   Sintsova+ [2014] ... detect domain-specific emotional tweets
 * weak labels compared to strong labels on emotion recognition Janssens+ [2014]
 
-#5 resources
+# 5 resources
 
-##5.1. Sentiment Lexicons 27
+## 5.1. Sentiment Lexicons 27
 
-##5.2. Datasets 29
+## 5.2. Datasets 29
 
-#6 open problems and future directions
+# 6 open problems and future directions
 
 * use of deep learning
   * One interesting direction would be to examine the effectiveness of
@@ -162,4 +162,4 @@ The rest of the article is organized as follows. Section
   * [if] users start writing longer tweets, then additional features such as
     proximity or more sophisticated topic extraction methods will be necessary
 
-#7 conclusions of this survey 34
+# 7 conclusions of this survey 34

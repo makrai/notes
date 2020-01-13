@@ -3,7 +3,7 @@ Enhanced English Universal Dependencies:
 Sebastian Schuster and Christopher D. Manning
 LREC 2016
 
-#Abstract
+# Abstract
 
 * Many shallow natural language understanding tasks use dependency trees to
   extract relations between content words
@@ -18,7 +18,7 @@ LREC 2016
     * from basic UD trees to enhanced and enhanced++ English UD graphs
   * release both converters as part of Stanford CoreNLP and the Stanford Parser
 
-#1 Intro
+# 1 Intro
 
 * Stanford Dependencies (SD) representation (de Marneffe+ 2006) has 
   both a syntactic and a shallow semantic representation
@@ -58,7 +58,7 @@ LREC 2016
     * from basic to enhanced and enhanced++ English UD graphs
     * release[d] both tools as part of Stanford CoreNLP and the Stanford Parser
 
-#2 The enhanced UD representation 2
+# 2 The enhanced UD representation 2
 
 * adding relations and augmenting relation names
   * contain all the relations of the basic UD tree
@@ -75,7 +75,7 @@ LREC 2016
 * Propagated governors and dependents [to] clauses with conjoined phrases
 * Subjects of controlled verbs
 
-#3 The enhanced++ UD representation
+# 3 The enhanced++ UD representation
 
 * for many NLU systems that try to extract relationships between entities, e.g.
   * open domain relation extraction (e.g., Mausam+ (2012)), or
@@ -93,7 +93,7 @@ LREC 2016
   * the relation between house and hill is going to be more relevant
 * another representation which allows for the deletion of relations
 
-##1/4 Partitives and light noun constructions
+## 1/4 Partitives and light noun constructions
 
 * partitive noun phrases such as _both of the girls_,
 * we
@@ -109,14 +109,14 @@ LREC 2016
   * the light nouns are the head of these phrases in the ... basic UD trees
   * [We] analyze light noun constructions ... as a quantificational determiner
 
-##2/4 Multi-word prepositions
+## 2/4 Multi-word prepositions
 
 * UD representation analyzes some multi-word expressions with function words,
   e.g., _due to_, using a special mwe relation,
   the set of these expressions is very limited and
   does not include many multi-word prepositions
 
-##3/4 Conjoined prepositions and prepositional phrases
+## 3/4 Conjoined prepositions and prepositional phrases
 
 * such as “I bike to and from work” also pose some challenges
   * Ideally
@@ -128,7 +128,7 @@ LREC 2016
   * should encode that [the two nmod:to] relations are conjoined by _or_. For
     these reasons, we also analyze such clauses with copy nodes
 
-#4/4 Relative pronouns
+# 4/4 Relative pronouns
 
 * we attach
   * the referent of the pronoun [directly] to the governor of the pronoun
@@ -139,9 +139,9 @@ LREC 2016
   ++boy nsubj lived
   ```
 
-#4 Generating dependency trees and graphs 4
+# 4 Generating dependency trees and graphs 4
 
-##4.1 Converting to basic dependencies
+## 4.1 Converting to basic dependencies
 
 * based on the Stanford Dependencies converter (de Marneffe+ 2006)
   which we updated according to the English Universal Dependencies guidelines
@@ -168,7 +168,7 @@ LREC 2016
     * the output of most constituency parsers does not contain these ... nodes
     * we try to solve this issue by considering the selectional restrictions
 
-##4.2 Converting to enhanced and enhanced++ dependencies
+## 4.2 Converting to enhanced and enhanced++ dependencies
 
 * Currently, we don’t propagate object or nominal modifier relations in clauses
   with conjoined verb phrases such as “the store buys and sells cameras”. 
@@ -176,7 +176,7 @@ LREC 2016
   * Nyblom+ (2013) successfully used a machine learning approach to solve
     this problem for Finnish but as there currently exists no corpus annotated
 
-#5 Comparison to AMR
+# 5 Comparison to AMR
 
 * Representing the meaning of sentences as directed graphs ... Shieber (1984)
 * Abstract Meaning Representation (AMR) (Banarescu+ 2013)
@@ -189,7 +189,7 @@ LREC 2016
 * our representation does not [distinguish between comitative] and instrumental
   * AMR requires SRL which is very hard
 
-#6 Limitations
+# 6 Limitations
 
 * generalized quantifiers and controlled verbs, such as the following sentence
   e.g. _Everybody wants to buy a house_

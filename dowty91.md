@@ -6,7 +6,7 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
   * principles determining which roles are associated with which grammatical
     relations
 
-#1 Introduction
+# 1 Introduction
 
 * thematic roles is so taken for granted that
   * psycholinguists
@@ -61,7 +61,7 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
   12. 'unaccusative' phenomenon
   13. summary
 
-#2 THE LOGICAL TYPE OF THEMATIC ROLES
+# 2 THE LOGICAL TYPE OF THEMATIC ROLES
 
 * thematic role (type) is a set of entailments of a group of predicates
   * with respect to one of the arguments of each
@@ -71,7 +71,7 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
 * allow[ed] to be as precise as possible
   * in describing the substantive semantic CONTENT of thematic roles
 
-#3 Traditional problems in identifying thematic roles
+# 3 Traditional problems in identifying thematic roles
   and using them to distinguish arguments P8
 
 3.1. Role fragmentations and unclear boundaries
@@ -88,9 +88,9 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
   * 3.3.4. a consequence of 
     general constraints between syntax and discourse structure
 
-#4 A proposed strategy for research on the semantics of thematic roles p14
+# 4 A proposed strategy for research on the semantics of thematic roles p14
 
-#10 Related proposals p53
+# 10 Related proposals p53
 
 * Jackendoff (76, 87) thematic roles are are defined in terms of configurations
   of semantic representation, DO, CAUSE, STAY

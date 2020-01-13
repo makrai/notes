@@ -1,7 +1,7 @@
 Billy Chiu and Anna Korhonen and Sampo Pyysalo
 Intrinsic Evaluation of Word Vectors Fails to Predict Extrinsic Performance
 
-#Abstract
+# Abstract
 
 * We study the correlation between results on
   * ten word similarity benchmarks and tagger performance on

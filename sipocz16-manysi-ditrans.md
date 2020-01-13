@@ -2,7 +2,7 @@ Sipőcz Katalin
 A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
 2016
 
-#1 Bevezetés
+# 1 Bevezetés
 
 * Az utóbbi években meglehetősen sok tipológiai vizsgálat foglalkozott a
   ditranzitív igék és ditranzitív szerkezetek különféle tulajdonságaival. Az
@@ -12,8 +12,8 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   részében definiálom a ditranzitív ige és a ditranzitív szerkezet fogalmát,
   ezt követően kitérek a ditranzitív igék szemantikai csoportosítására.  
 
-#2. A ditranzitivitás
-##2.1. A ditranzitív ige és a ditranzitív szerkezet tipológiai megközelítésben
+# 2. A ditranzitivitás
+## 2.1. A ditranzitív ige és a ditranzitív szerkezet tipológiai megközelítésben
 
 * ágens (A), a recipiens (R) és a téma (T)
 * jellemzően fizikai transzfert fejeznek ki (ad, küld, visz stb.), de más,
@@ -47,7 +47,7 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
     megfigyelhető.
   * angol, német, magyar
 
-#3. A ditranzitív igék szemantikai csoportjai és szintaktikai megjelenésük
+# 3. A ditranzitív igék szemantikai csoportjai és szintaktikai megjelenésük
 
 * ditranzitív igék meghatározása kettős alapon nyugszik: egyrészt szintaktikai
   (ditranzitív szerkezetben szerepel), másrészt szemantikai alapú (transzfert
@@ -92,7 +92,7 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   irányítja, hogy a ditranzitív szerkezetekben a szintaktikai tárgy szerepét
   a mondat topikabb résztvevője tölti be.
 
-##3.1. A transzfer igék
+## 3.1. A transzfer igék
 
 * alcsoportokba sorolhatók. A transzfer ige kifejezheti a 
   * birtoklásban történt változást (ad, elad), valamint kiemelheti csupán a T
@@ -117,13 +117,13 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
     Lokatív thematikus szerepet betöltő Recipiens [+ ÉLŐ ] jegye biztosítja
     példánkban.
 
-##3.2. A benefaktív igék
+## 3.2. A benefaktív igék
 
 * [A két könyv együtt adja az ember számára léte titka megértésének
   lehetőségét]
 * jelöltség
 
-##3.3. A kommunikációs igék
+## 3.3. A kommunikációs igék
 
 * A manysiban gyakoriak az olyan, mentális transzfert kifejező igék, melyekre
   jellemző, hogy az ige és T argumentuma azonos tőre vezethető vissza, pl.:
@@ -133,13 +133,13 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   sír’ stb. Az ilyen szintagmák főképpen a folklórés irodalmi szövegekben 
   gyakoriak,
 
-##3.4. Az instrumentálisz stratégia terjedése
+## 3.4. Az instrumentálisz stratégia terjedése
 
 * egyes igék esetében a Téma és az Instrumentum thematikus szerepek közeliek
   (pl. felszerel, ellát, (meg)ken stb.), azaz a cselekvés eszköze és tárgya nem
   különül el élesen
 
-#4. Konklúzió
+# 4. Konklúzió
 
 * az indirektív szerkesztés is teljes a ditranzitív tartományban, de a
   prototipikus instru- mentális vonzatú (nem ditranzitív) igékkel

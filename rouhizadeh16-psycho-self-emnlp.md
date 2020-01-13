@@ -78,7 +78,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
       from EmoLex word-emotion association lexicon (Mohammad and Turney, 2013),
     * dividing each of our clusters into positive, negative, and neutral
 
-##Analysis
+## Analysis
 
 * encoded as the mean from maximum likelihood estimation over the probability
   of mentioning a first person singular pronoun in a given context
@@ -104,7 +104,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * we found significant relationships [with] gender (β = .11, p < .001),
   age (r = −0.17, p < .001), and depression score (r = −0.06, p < .01)
 
-##Syntactic Context
+## Syntactic Context
 
 * we observed shifts in the magnitude of correlations
 

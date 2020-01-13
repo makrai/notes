@@ -2,9 +2,9 @@ Frederick Jelinek
 Statistical Methods for Speech Recognition +22
 1997
 
-#3 The Acoustic Model 39
+# 3 The Acoustic Model 39
 
-##3.11 Additional Reading 52
+## 3.11 Additional Reading 52
 
 * Baum algorithm aims at estimating HMM parameters in a maximum likelihood way
   * to maximize P(A)
@@ -17,7 +17,7 @@ Statistical Methods for Speech Recognition +22
   * optimization of the a posteriori probability criterion [18]. A
   * survey of these approaches can be found in [19]
 
-#4 Basic Language Modeling 57 79
+# 4 Basic Language Modeling 57 79
 
 * We will return ... to language modeling [and discuss considerably more
   sophisticated methods than those introduced here] in chapters
@@ -29,24 +29,24 @@ Statistical Methods for Speech Recognition +22
     15.7 The Back-Off Language Model 271
     15.8 Additional Reading 273
 
-##4.1 Introduction 57
-##4.2 Equivalence Classification of History 59
-##4.3 The Trigram Language Model 60
+## 4.1 Introduction 57
+## 4.2 Equivalence Classification of History 59
+## 4.3 The Trigram Language Model 60
 
 P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
 
-##4.4 Optimal Linear Smoothing 62
-##4.5 An Example of a Trigram Language Model 66
-##4.6 Practical Aspects of Deleted Interpolation 66
-##4.7 Backing-Off 69
-##4.8 HMM Tagging
-##4.9 Use of Tag Equivalence Classification in a Language Model 72
+## 4.4 Optimal Linear Smoothing 62
+## 4.5 An Example of a Trigram Language Model 66
+## 4.6 Practical Aspects of Deleted Interpolation 66
+## 4.7 Backing-Off 69
+## 4.8 HMM Tagging
+## 4.9 Use of Tag Equivalence Classification in a Language Model 72
 
 * [the Brown clusters by P. F. Brown] can be found in section 10.12 [11]
 * Others are discussed in section 4.11
 
-##4.10 Vocabulary Selection and Personalization from Text Databases 73
-##4.11 Additional Reading 75 References 76
+## 4.10 Vocabulary Selection and Personalization from Text Databases 73
+## 4.11 Additional Reading 75 References 76
 
 * linear smoothing. Ney and Essen [13] and Essen and Steinbiss [14]
 * it [is in general not] useful to attempt n-gram language models with n > 3
@@ -66,9 +66,9 @@ P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
 * collocations like New York or _nuclear magnetic resonance_
   * Smadja's technique (1993) can be used
 
-#8 The Complexity of Tasks—The Quality of Language Models
+# 8 The Complexity of Tasks—The Quality of Language Models
 
-##8.5 Additional Reading 166
+## 8.5 Additional Reading 166
 
 * Cover and King ... [2] estimates text _entropy_ somewhat differently than
   does Shannon's method described in section 8.2
@@ -80,9 +80,9 @@ P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
   which attempts to measure the quantity Hx defined in (5). They describe their
   method and present their result in ... [6]
 
-#10 Decision Trees and Tree Language Models
+# 10 Decision Trees and Tree Language Models
 
-##10.11 Construction of Decision Trees Based on Word Encoding 184 206
+## 10.11 Construction of Decision Trees Based on Word Encoding 184 206
 
 * decision tree construction is equivalent to successive refinement of
   equivalence classes driven by answers to questions.  We will introduce

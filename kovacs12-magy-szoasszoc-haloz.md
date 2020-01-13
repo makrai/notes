@@ -9,11 +9,11 @@ Kovács, László and Orosz, Katalin and Pollner, Péter
     A Theory of Lexical Access in Speech Production
   * Gary S. Dell inspirálta 
 
-#Az Agykapocs-projekt
+# Az Agykapocs-projekt
 
 * A szóasszociációs adatok gyűjtésének módszertana
 
-#Irányított, irányítatlan és súlyozott hálózatok
+# Irányított, irányítatlan és súlyozott hálózatok
 
 * csoportkeresési eljárásoknak ... áttekintés[é]t például Fortunato (2010)
 * klikk perkolációs algoritmus

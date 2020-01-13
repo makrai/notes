@@ -6,7 +6,7 @@
 * Magyarlánc --> e-magyar
 * szövegelemtár --> reprezentációs szint (ha jól értem)
 
-#Összefoglaló 7
+# Összefoglaló 7
 
 * és a belőlük formálható mondatok -- mit ért az alatt, hogy a gazdag
   morfológiájú nyelvekben több lehetséges mondat van?
@@ -14,7 +14,7 @@
 * Google Analogy Test Set magyar fordítását már előállította [Makrai
   (2015)](http://corpus.nytud.hu/efnilex-vect/).
 
-#Abstract 8
+# Abstract 8
 
 1 Számítógépes szóábrázolás vektorok segítségével 9
 
@@ -27,7 +27,7 @@
   szóalakkincsnek. A célfüggvény (objective function) terminus bevett a magyar
   gépitanulás-közösségben.
 
-##1.2 Tulajdonság-/környezetvektor (distribution vector) 10
+## 1.2 Tulajdonság-/környezetvektor (distribution vector) 10
 
 * LSA-t is kéne említeni
 

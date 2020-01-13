@@ -2,14 +2,14 @@ Explaining Zipf’s Law via Mental Lexicon
 Armen E. Allahverdyan, Weibing Deng and Q. A. Wang 
 Phys Review 2013
 
-#Abstract
+# Abstract
 
 * Zipf’s law is 
   * the major regularity of statistical linguistics that served as 
   * a prototype for rank-frequency relations and scaling laws in natural
     sciences
 
-#Preliminary summary 3
+# Preliminary summary 3
 
 13. The basic reason for the words to have ... (variable) probabilities is that
   * author should be able to compose different texts, 

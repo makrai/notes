@@ -3,7 +3,7 @@ A critique of pure learning
   nd what artificial neural networks can learn from animal brains
 Nature Communications (2019) 10:3770 https://doi.org/10.1038/s41467-019-11786-6
 
-#Learning by ANNs
+# Learning by ANNs
 
 * Symbolic AI can be seen as the psychologist’s approach
   it draws inspiration from the human cognitive processing,
@@ -11,7 +11,7 @@ Nature Communications (2019) 10:3770 https://doi.org/10.1038/s41467-019-11786-6
 * ANNs, which use neuron-like elements, take their
   inspiration from neuroscience
 
-#Learning by animals
+# Learning by animals
 
 The term “learning” in neuroscience (and in psychology) refers to
   * a long-lasting change in behavior that is the result of experience
@@ -21,7 +21,7 @@ The term “learning” in neuroscience (and in psychology) refers to
 * [differences] between the neuroscience and ANN usage of the term learning
   * [amount of supervision]
 
-#Genomes specify rules for brain wiring
+# Genomes specify rules for brain wiring
 
 * specification of which neurons are connected, as well as to the strengths of
 * In some simple organisms, genomes have the capacity to specify every
@@ -32,7 +32,7 @@ The term “learning” in neuroscience (and in psychology) refers to
 * speculation that the neocortex consists of many copies of a basic “canonical”
   microcircuit 34,35 , which are wired together to form the entire cortex
 
-#Supervised learning or supervised evolution?
+# Supervised learning or supervised evolution?
 
 * ANNs should not be viewed as the analog of learning in animals [but as that
   of] both evolution and learning.  In animals, there are
@@ -50,7 +50,7 @@ The term “learning” in neuroscience (and in psychology) refers to
     * [marbled lungfish genome] is >40 times larger than the humans
     * suggests that the regularizing effect ... might represent a feature
 
-#Implications for ANNs
+# Implications for ANNs
 
 * We have argued that [innate mechanisms] work synergistically with learning
   * analogous approaches might inspire new approaches to accelerate ...  ANNs

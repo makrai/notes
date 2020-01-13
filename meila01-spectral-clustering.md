@@ -1,4 +1,4 @@
-#Wikipedia
+# Wikipedia
 
 * general approach [is to use a standard clustering method] on relevant
   eigenvectors of a Laplacian matrix of A

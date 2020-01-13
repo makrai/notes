@@ -2,7 +2,7 @@ Understanding deep learning requires re-thinking generalization
 Chiyuan Zhang; Samy Bengio; Moritz Hardt; Oriol Vinyals; Benjamin Recht
 arxiv:16
 
-#Abstract
+# Abstract
 
 * Specifically, our experiments establish that state-of-the-art convolutional
 networks for image classification trained with stochastic gradient methods

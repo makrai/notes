@@ -2,7 +2,7 @@ An Information Theoretic Approach to Bilingual Word Clustering
 Manaal Faruqui and Chris Dyer
 2013
 
-#Abstract
+# Abstract
 
 incorporates both monolingual distributional evidence as well as
 cross-lingual evidence from parallel corpora to learn high quality word

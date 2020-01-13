@@ -4,7 +4,7 @@ Journal of IEEE transactions on affective computing (under review)
 
 extended lexicons are publicly available for access
 
-#Abstract
+# Abstract
 
 * we propose a regression-based method to automatically infer
   multi-dimensional affective representation of words via their word embedding
@@ -20,7 +20,7 @@ extended lexicons are publicly available for access
     * our method achieve better results than publicly available sentiment
       lexicons on eight sentiment corpora
 
-#1 Intro
+# 1 Intro
 
 * Affective computing from text has many potential applications, such as the
   * analysis of consumer opinions on a company’s products [2],
@@ -69,9 +69,9 @@ extended lexicons are publicly available for access
   1. Several affective lexicons with about million of words are built and
     * lexicons based on word embedding perform better than previous [ones]
 
-#2 Related works 2
+# 2 Related works 2
 
-##affective models
+## affective models
 
 * Affective meaning includes emotion, sentiment, trait, mood, and attitudes,
   * several proposed emotion categorizations Ekman [24] 6 Parrot [25] 6 Frijda
@@ -86,7 +86,7 @@ extended lexicons are publicly available for access
     * serotonin, dopamine and noradrenaline based on neuroscience [35]
   * interaction information between different dimensions can be captured
 
-##lexicon generation methods
+## lexicon generation methods
 
 * we will only focus on dimension based lexicons
   * sentiment: Since sentiments can be described by a one dimensional model, we
@@ -133,10 +133,10 @@ extended lexicons are publicly available for access
      maximizes intergroup distance without considering the actual values of the
      seed words [51]
 
-##Word embedding models
+## Word embedding models
 
-#3 Method for inferring affective meanings
+# 3 Method for inferring affective meanings
 
-#4 Experiments
+# 4 Experiments
 
-#5 Conclsion
+# 5 Conclsion

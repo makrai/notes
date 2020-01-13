@@ -2,7 +2,7 @@ Sentiment Analysis in the News
 A Balahur, R Steinberger, M Kabadjov, V Zavarella, E van der Goot, M Halkia, B
   Pouliquen, J Belyaeva
 
-#Abstract
+# Abstract
 
 * difference
   * highly subjective text types (movie or product reviews)
@@ -27,7 +27,7 @@ A Balahur, R Steinberger, M Kabadjov, V Zavarella, E van der Goot, M Halkia, B
       opinion mining and that the approaches taking this into consideration
       produce a better performance.
 
-#Intro
+# Intro
 
 * The EMM applications NewsBrief and MedISys categorise the news into one or
   more of several hundred subject domain classes, including, for instance,

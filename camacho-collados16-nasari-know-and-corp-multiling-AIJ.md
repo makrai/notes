@@ -5,7 +5,7 @@ José Camacho-Collados, Mohammad Taher Pilehvar, Roberto Navigli
 
 `http://lcl.uniroma1.it/nasari/`
 
-#Abstract
+# Abstract
 
 * a novel multilingual vector representation, called Nasari
   * both concepts and named entities
@@ -16,7 +16,7 @@ José Camacho-Collados, Mohammad Taher Pilehvar, Roberto Navigli
     * for each of which we report state-of-the-art performance 
       on several standard datasets across different languages
 
-#Intro
+# Intro
 
 * representations of word senses can be directly useful to
   * Word Sense Disambiguation (Navigli 2009)
@@ -36,10 +36,10 @@ José Camacho-Collados, Mohammad Taher Pilehvar, Roberto Navigli
     * Word Sense Disambiguation (Section 9)
   * summary of the experiments in Section 5
 
-#3. Representing texts as vectors
+# 3. Representing texts as vectors
 
 * lexical specificity and ... its fast computation (Section 3.1)
 * our three types of vector, i.e.,
   lexical (Section 3.2), embedded (Section 3.3) and unified (Section 3.4)
 
-##3.5. Vector comparison
+## 3.5. Vector comparison

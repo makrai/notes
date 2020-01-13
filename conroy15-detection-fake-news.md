@@ -2,7 +2,7 @@ Automatic Deception Detection: Methods for Finding Fake News
 Niall J. Conroy, Victoria L. Rubin, and Yimin Chen
 ASIST 2015
 
-#Abstract
+# Abstract
 
 * “Fake news detection” is defined as the task of categorizing news along a
   continuum of veracity, with an associated measure of certainty
@@ -12,19 +12,19 @@ ASIST 2015
     * message metadata or structured knowledge network queries 
   * hybrid approach
 
-#Introduction
+# Introduction
 
 * information is of questionable veracity 
   (Ciampaglia, Shiralkar, Rocha, Bollen, Menczer & Flammini, 2015)
 
-#LINGUISTIC APPROACHES
+# LINGUISTIC APPROACHES
 
 * Most liars use their language strategically to avoid being caught
   * language “leakage”
   * frequencies and patterns of pronoun, conjunction, and negative emotion word
     (Feng & Hirst, 2013)
 
-##Data Representation
+## Data Representation
 
 * tagging of words into respective lexical cues for example, 
   * parts of speech or “shallow syntax” (Hancock & Markowitz, 2013), 
@@ -37,7 +37,7 @@ ASIST 2015
   * combine [syntax analysis] with other linguistic or network ...  techniques
     (Feng et al., 2012; Feng & Hirst, 2013)
 
-##Semantic Analysis
+## Semantic Analysis
 
 * compatibility between a personal experience [and] 
   a content “profile” derived from a collection of analogous data.  
@@ -46,7 +46,7 @@ ASIST 2015
     * Compatibility with the existence of some distinct aspect 
       (eg. an art museum near the hotel)
 
-##Rhetorical Structure and Discourse Analysis
+## Rhetorical Structure and Discourse Analysis
 
 * Systematic differences between deceptive and truthful messages in terms of
   their coherence and structure (Rubin & Lukoianova, 2014)

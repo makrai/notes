@@ -2,7 +2,7 @@ Andrew Trask & Phil Michalak & John Liu
 Sense2vec: a fast and accurate method for WSD in ... embed
 2015
 
-#Abstract
+# Abstract
 
 * supervised disambiguation,
 * disambiguate both 
@@ -13,7 +13,7 @@ Sense2vec: a fast and accurate method for WSD in ... embed
   * greater than 8% average error reduction in unlabeled attachment scores
     across 6 languages.
 
-#1 Introduction
+# 1 Introduction
 
 * distributed representations ... for a wide variety of NLP tasks including 
   * Part-of-Speech tagging, Named Entity Recognition, Analogy/Similarity
@@ -27,7 +27,7 @@ Sense2vec: a fast and accurate method for WSD in ... embed
 
 #
 
-##2.5 Clustering convolutional context embeddings
+## 2.5 Clustering convolutional context embeddings
 
 * Chen et al. (2015) 
   * selects the number of word clusters for each word based on the number of

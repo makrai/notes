@@ -2,7 +2,7 @@ Neural Machine Translation of Rare Words with Subword Units
 Rico Sennrich and Barry Haddow and Alexandra Birch
 acl 2016
 
-#Abstract
+# Abstract
 
 * We discuss the suitability of different word segmentation techniques,
   including simple character n-gram models and 
@@ -10,7 +10,7 @@ acl 2016
   empirically show that subword models improve over a back-off dictionary
   baseline for the WMT 15 translation tasks English→German and English→Russian
 
-#Introduction
+# Introduction
 
 * subword models achieve better accuracy for the translation of rare words than
   large-vocabulary models and back-off dictionaries
@@ -24,9 +24,9 @@ acl 2016
     variable-length character sequences, making it a 
     very suitable word segmentation strategy for neural network models.
 
-#3 Subword Translation
+# 3 Subword Translation
 
-##3.2 Byte Pair Encoding (BPE)
+## 3.2 Byte Pair Encoding (BPE)
 
 * data compression technique that 
   * iteratively replaces the most frequent pair of bytes in a sequence with a

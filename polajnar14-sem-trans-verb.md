@@ -2,7 +2,7 @@ Tamara Polajnar, Laura Rimell, Stephen Clark
 Using Sentence Plausibility to Learn the Semantics of Transitive Verbs
 NIPS learning semantics workshop 2014; in arXiv, some minor errata fixed
 
-#1 Intro
+# 1 Intro
 
 * ways to combine distributional representations of Subject, Verb, Object (SVO)
   triples to form transitive sentences [2–6, 11, 13]
@@ -52,12 +52,12 @@ NIPS learning semantics workshop 2014; in arXiv, some minor errata fixed
       disambiguation task, while
     * the purely distributional approach performs better on sentence similarity
 
-#2 Methods
+# 2 Methods
 
 tensor training can be expensive and in practice, for some tasks, the verb can
 be approximated as a matrix
 
-#3 Tasks
+# 3 Tasks
 
 * verb disambiguation, and transitive sentence similarity
   * In each case the system must ... assign similarity values to pairs of SVOs
@@ -73,4 +73,4 @@ be approximated as a matrix
   * _author write book_ !~  _delegate buy land_
     _programme offer support_ ~ _service provide help_
 
-#5 Conclusion
+# 5 Conclusion

@@ -2,7 +2,7 @@ LexRank: Graph-based Lexical Centrality as Salience in Text Summarization
 Güneş Erkan and Dragomir R. Radev
 2004 iaij
 
-#1 Intro
+# 1 Intro
 
 * robust graph-based methods for NLP have also been gaining a lot of interest,
   * word clustering (Brew & im Walde, 2002) and 
@@ -23,7 +23,7 @@ Güneş Erkan and Dragomir R. Radev
     * edges are defined in terms of the similarity 
     * make use of several centrality heuristics defined on graphs
 
-#2 Sentence centrality and summarization
+# 2 Sentence centrality and summarization
 
 * The centroid of a cluster is a pseudo-document which consists of words that
   have tf×idf scores above a predefined threshold

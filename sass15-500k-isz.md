@@ -4,14 +4,14 @@ MSZNY 2015
 
 erőforrások elérhetők a http://corpus.nytud.hu/isz cı́men
 
-#Kivonat 
+# Kivonat 
 
 * Két nagy méretű, magyar nyelvi erőforrást teszünk közzé. Az egyik 
   * a régi MNSZ [1] tagmondatainak sekély szintaktikai elemzéssel ellátott
   * az ebből az adatbázisból automatikusan származtatott igeiszerkezet-lista,
     melyből a Magyar Igei Szerkezetek cı́mű szótár [3] is született. Az
 
-#1.  Az erőforrások létrehozása
+# 1.  Az erőforrások létrehozása
 
 A Mazsola adatbázis a Magyar Nemzeti Szövegtár 187 millió szavas régi változa-
 * tagmondatokra bontottunk és 

@@ -1,7 +1,7 @@
 Why Self-Attention? A Targeted Evaluation of NMT Architectures
 Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 
-#Abstract
+# Abstract
 
 * Recently, non-recurrent architectures (convolutional, self-attentional) have
   * outperformed RNNs in neural machine translation. CNNs and 

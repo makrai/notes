@@ -5,9 +5,9 @@ emnlp 2008
 Both datasets are apparently in the public domain and
 will be made available on request
 
-#8 Evaluation
+# 8 Evaluation
 
-##8.1 Task and data
+## 8.1 Task and data
 
 * a set of closest-opposite questions
 * Each question has one target word and five alternatives
@@ -29,6 +29,6 @@ will be made available on request
   * we relied on the hypothesis that the intended sense of the alternatives are
     those which are most antonymous to one of the senses of the target word
 
-##8.2 Experiments
+## 8.2 Experiments
 
-#8.3 Discussion
+# 8.3 Discussion

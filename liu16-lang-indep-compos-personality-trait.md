@@ -3,7 +3,7 @@ A Language-independent and Compositional Model
 Fei Liu, Julien Perez, Scott Nowson
 2016 EACL
 
-#Abstract
+# Abstract
 
 * Many methods have been used to recognise author personality
   * e.g. linear regression or Support Vector Machines
@@ -14,7 +14,7 @@ Fei Liu, Julien Perez, Scott Nowson
   * preliminary visualisation work, are encouraging for the ability to detect
     complex human traits
 
-#Intro
+# Intro
 
 * modelling people from their language
   * language use is known to be influenced by sociodemographic characteristics
@@ -44,7 +44,7 @@ Fei Liu, Julien Perez, Scott Nowson
   2. short text level analysis
   * state-of-the-art performance across five personality traits and three langs
 
-#Related work
+# Related work
 
 * Early work on computational personality recognition
   * Argamon+ 2005; Nowson and Oberlander, 2006
@@ -80,7 +80,7 @@ Fei Liu, Julien Perez, Scott Nowson
       * Word to Sentence to Document, W2S2D
   * Character to Word to Sentence for Personality Trait, C2W2S4PT
 
-#4 Experiments and Results
+# 4 Experiments and Results
 
-##4.4 superiority of C2W2S4PT is less clear in Italian [because of fewer data
+## 4.4 superiority of C2W2S4PT is less clear in Italian [because of fewer data
 as in] English and Spanish

@@ -1,7 +1,7 @@
 Ignacio Iacobacci, Mohammad Taher Pilehvar and Roberto Navigli
 SensEmbed: Learning Sense Embeddings for Word and Relational Similarity
 
-#Abstract
+# Abstract
 
 * we: polysemy + structured knowledge
 * approach
@@ -11,7 +11,7 @@ SensEmbed: Learning Sense Embeddings for Word and Relational Similarity
   * word similarity and
   * relational similarity frameworks
 
-#1 Introduction
+# 1 Introduction
 
 * applied to a variety of NLP tasks, such as
   * Word Sense Disambiguation (Chen+ 2014),
@@ -26,7 +26,7 @@ SensEmbed: Learning Sense Embeddings for Word and Relational Similarity
       (Ganitkevitch+ 2013, PPDB),
       * an automatically extracted dataset of paraphrase pairs
 
-#2 Sense Embeddings
+# 2 Sense Embeddings
 
 * we leveraged a state-of-the-art Word Sense Disambiguation (WSD) algorithm to
   automatically generate large amounts of sense-annotated corpora

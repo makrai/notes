@@ -3,7 +3,7 @@ Frustratingly Easy Meta-Embedding
 Joshua Coates, Danushka Bollegala
 arXiv:1804.05262 NAACL-HLT 2018
 
-#Abstract
+# Abstract
 
 * Creating accurate meta-embeddings from pre-trained source embeddings
   * received attention lately. Methods based on
@@ -47,7 +47,7 @@ arXiv:1804.05262 NAACL-HLT 2018
   * averaging can provide an approximation of the performance of concatenation
 * empirical results demonstrating the quality of average meta-embeddings
 
-#2 Analysis
+# 2 Analysis
 
 * To evaluate semantic similarity between word embeddings we consider ... the
   Euclidean distances of pairs of words in the source embedding sets and their
@@ -56,4 +56,4 @@ arXiv:1804.05262 NAACL-HLT 2018
   semantic information. We begin by examining concatenation through this lens,
   before moving on to averaging.  
   
-##2.1 Concatenation
+## 2.1 Concatenation

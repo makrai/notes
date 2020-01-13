@@ -2,13 +2,13 @@ Weight functions impact on LSA performance
 Preslav Nakov, Antonia Popova, Plamen Mateev
 RANLP, 2001
 
-#Abstract
+# Abstract
 
 * Several preliminary transformations of the frequency text-document matrix
   with different weight functions are tested on the basis of control subsets.
   Additional clustering based on correlation matrix is applied 
 
-#1 Intro
+# 1 Intro
 
 * The effective usage of LSA is a process of very sophisticated tuning and 
   can be viewed as kind of art. The main factors ... are the following:
@@ -19,7 +19,7 @@ RANLP, 2001
 * The general idea [of LSA] is that there exists a set of latent dependencies
   between the words and their contexts (phrases, paragraphs and texts)
 
-#2. Weight functions
+# 2. Weight functions
 
 * express the transformation as a product of ... local and global weight[s]
   (Witter 97; Dumais 91): 

@@ -2,7 +2,7 @@ Phrase-Based & Neural Unsupervised Machine Translation
 Guillaume Lample, Myle Ott, Ludovic Denoyer, Alexis Conneau, M'A Ranzato
 arXiv:1804.07755v1 EMNLP 2018
 
-#Abstract
+# Abstract
 
 * Machine translation ... achieve near human-level performance on some langs
 * hinder[ed] when having access to only large _monolingual_ corpora
@@ -16,7 +16,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * our models outperforming the state of the art by more than 11 BLEU points
   * by obtaining 27.1 and 23.6 BLEU points respectively
 
-#Introduction
+# Introduction
 
 * Machine Translation (MT) is a flagship of the recent successes [in NLP]
   * a testbed for sequence transduction algorithms
@@ -73,14 +73,14 @@ arXiv:1804.07755v1 EMNLP 2018
   4. evaluate them empirically
   5. how they relate to other approaches
 
-#2 Principles of Unsupervised MT
+# 2 Principles of Unsupervised MT
 
 * common principles underlying unsupervised MT
   * illustrated in Figure 1
   * suitable initialization, language modeling and iterative back-translation
   * how they can be better instantiated in a neural and phrase-based model
 
-##Initialization
+## Initialization
 
 * [align] words, short phrases or even sub-word units, BPE (Sennrich+ 2015b)
 * Klementiev+ (2012) used a provided bilingual dictionary
@@ -89,11 +89,11 @@ arXiv:1804.07755v1 EMNLP 2018
 * motivating intuition is [that] an initial “word-by-word” translation
   can still preserve some of the original semantics
 
-##Language Modeling
+## Language Modeling
 
 * They improve the quality ... by performing local substitutions and reordering
 
-##Iterative Back-translation
+## Iterative Back-translation
 
 * back-translation (Sennrich+ 2015a)
 * unsupervised setting[:]
@@ -101,12 +101,12 @@ arXiv:1804.07755v1 EMNLP 2018
 * turns the [problem into a supervised learning task] with noisy source
 * iterative algorithm (He+ 2016)
 
-#3 Unsupervised MT systems 3
+# 3 Unsupervised MT systems 3
 
 * how to effectively combine [the three principles detailed in Section 2]
   in the context of a NMT model (Section 3.1) or PBSMT model (Section 3.2)
 
-##3.1 Unsupervised NMT
+## 3.1 Unsupervised NMT
 
 * organized
   1. how the previously mentioned three key principles are instantiated in our
@@ -114,7 +114,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * In general, an NMT model is composed of an encoder and a decoder; the
     specific details of this architecture is given in Section 4
 
-###Initialization
+### Initialization
 
 * prior work relied on bilingual dictionaries, here
 * we propose a ... simpler approach which is suitable for related languages. 1
@@ -129,12 +129,12 @@ arXiv:1804.07755v1 EMNLP 2018
 * token embeddings ... are used to initialize
   the lookup tables in the encoder and decoder
 
-###Language Modeling
+### Language Modeling
 
 * accomplished via denoising autoencoding, by minimizing: L lm = E x∼S [− log P
   * noise model with some words dropped and swapped as in Lample+ (2018)
 
-###Back-translation
+### Back-translation
 
 * principle: The pairs ... can be seen as aligned sentences
   * on which ... a new MT model can be learned
@@ -148,7 +148,7 @@ arXiv:1804.07755v1 EMNLP 2018
     another subspace for the translation tasks
   * This leads to an additional constraint required ... which we discuss next
 
-###Sharing Latent Representations
+### Sharing Latent Representations
 
 * A shared encoder representation acts like an interlingua, which is
   translated [to] the decoder target language regardless of the input source
@@ -171,7 +171,7 @@ arXiv:1804.07755v1 EMNLP 2018
     * lack the adversarial term in the loss, since the architecture and
   * [we] simplify the model and reduce the number of hyper-parameters
 
-##3.2 Unsupervised PBSMT 4
+## 3.2 Unsupervised PBSMT 4
 
 * PBSMT first infers an alignment, and then populates phrase tables. Each entry
   * estimation based on normalized counts
@@ -181,7 +181,7 @@ arXiv:1804.07755v1 EMNLP 2018
 * In the unsupervised setting, ... how to populate the phrase tables?
   * the principles of Section 2 are effective to solve this problem
 
-###Initialization
+### Initialization
 
 * We populate the initial phrase tables [in both directions] using a [rotation
   matrix] (Conneau+ 2018)
@@ -189,13 +189,13 @@ arXiv:1804.07755v1 EMNLP 2018
   * to work at the level of BPEs [(Kunchukuttan and Bhattacharyya, 2016), we
     leave] to future work
 
-###Language Modeling
+### Language Modeling
 
 * smoothed n-gram language models using KenLM (Heafield, 2011)
 * neural models could also be considered
 * fixed throughout training iterations
 
-###Iterative Back-Translation: 
+### Iterative Back-Translation: 
 
 * seed PBSMT: unigram phrase tables and the language model on the target side
 * We then use this model to translate the source monolingual corpus 
@@ -205,7 +205,7 @@ arXiv:1804.07755v1 EMNLP 2018
 * at any given point[, the language model may be able to fix some] mistakes 
   * As long as that happens, the translation [and the ph tables] improve
 
-#4 Experiments 5
+# 4 Experiments 5
 
 * organized
   * datasets and experimental protocol we used. Then,
@@ -216,7 +216,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * ablation study to understand the importance of each component
   * qualitative assessment of the translations
 
-##4.1 Datasets and Methodology
+## 4.1 Datasets and Methodology
 
 * language pairs:
   * two pairs are used to compare to recent work on unsupervised MT
@@ -228,7 +228,7 @@ arXiv:1804.07755v1 EMNLP 2018
     * removing diacritics from Romanian on the source side to deal with their
       inconsistent use across the monolingual dataset (Sennrich+ 2016)
 
-##4.2 Initialization
+## 4.2 Initialization
 
 * Both the NMT and PBSMT approaches require either
   * cross-lingual BPE embeddings (to initialize the shared lookup tables) or
@@ -237,7 +237,7 @@ arXiv:1804.07755v1 EMNLP 2018
 * cross-lingual BPE embeddings for related language pairs like en-fr and en-de
   * more than 95% of the tokens are shared
 
-###4.2.1 initialize the phrase tables in PBSMT
+### 4.2.1 initialize the phrase tables in PBSMT
 
 * generate n-gram embeddings on the source and target corpora independently,
 * align them using the MUSE library (Conneau+ 2018)
@@ -245,13 +245,13 @@ arXiv:1804.07755v1 EMNLP 2018
   * not observe any improvement using longer phrases. Table 1
 * unigrams are correctly aligned to bigrams, and vice versa
 
-##4.3 Training
+## 4.3 Training
 
-###4.3.1 NMT
+### 4.3.1 NMT
 
 * LSTM (Hochreiter and Schmidhuber, 1997) and Transformer (Vaswani+ 2017)
 
-##4.4 Model selection
+## 4.4 Model selection
 
 * Moses’s implementation of PBSMT has 15 hyper-parameters,
   * weight[s of scoring function], word penalty, etc
@@ -270,7 +270,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * LSTM models using a small validation set of 100 parallel sentences, and
   * Transformer models with the unsupervised criterion defined in Lample+ 18
 
-##4.5 Results
+## 4.5 Results
 
 * both our unsupervised NMT and PBSMT largely outperform previous unsupervised
   * large gains on all languages pairs and in both directions
@@ -295,7 +295,7 @@ arXiv:1804.07755v1 EMNLP 2018
       a multi-NMT system combining parallel resources from 5 ... languages
 * Russian: obtained a respectable BLEU score of 15.4 on ru → en
 
-###Iterative back-translation
+### Iterative back-translation
 
 * Table 3 illustrates the quality ... after each backtranslation step
   * e.g. fr → en model obtains a BLEU score of
@@ -304,7 +304,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * same improvement ... in the different language pairs we have tested
   * for the en → de task, the increase is less pronounced, but still signific
 
-##4.6 Ablation Study
+## 4.6 Ablation Study
 
 * of the NMT-Transformer model on the fr → en data
 * if we remove the
@@ -314,7 +314,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * not initialize the model with pre-trained embeddings,
     the model does learn, but much slower and to a much lower accuracy
 
-##4.7 Qualitative study
+## 4.7 Qualitative study
 
 * Table 4 shows examples ... from the French-English newstest 2014 dataset
   at different iterations of the learning algorithm for both the NMT and PBSMT
@@ -326,7 +326,7 @@ arXiv:1804.07755v1 EMNLP 2018
   * the phrase table [trained in a supervised way contains] 0.633 vs 0.0076,
   * This underlines the importance of the initial unsupervised phrase alignment
 
-#5 Related Work 9
+# 5 Related Work 9
 
 * first known attempt at fully unsupervised MT is the Ravi and Knight (2011),
   * linguistic prior knowledge to reframe the task as ... deciphering
@@ -367,7 +367,7 @@ arXiv:1804.07755v1 EMNLP 2018
       2015b; Press and Wolf, 2016) are usually shared between related languages
     * without ... adversarial loss terms
 
-#Conclusions and Future Work
+# Conclusions and Future Work
 
 * future, we plan to further investigate
   * initialization of phrase tables with n-grams aligned in an unsupervised

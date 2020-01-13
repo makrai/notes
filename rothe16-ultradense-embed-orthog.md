@@ -5,7 +5,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
 * output lexicons ... available at www.cis.lmu.de/~sascha/Ultradense/
 * implementation by someone else: https://github.com/joemzhao/ultradensifier
 
-#Abstract
+# Abstract
 
 * we introduce Densifier, a method that learns an
   * orthogonal transformation of the embedding space that
@@ -19,7 +19,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
     * no information is lost when the ultradense subspace is used, but
     * training is an order of magnitude more efficient
 
-#1 Introduction
+# 1 Introduction
 
 * Embeddings are useful for ... sentiment analysis
   Kim (2014), Kalchbrenner+ (2014), Severyn and Moschitti (2015), Ebert+(2015)
@@ -39,7 +39,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
 * make embeddings more interpretable
 * first step towards a general decomposition
 
-#3 Lexicon Creation
+# 3 Lexicon Creation
 
 * resources used in this paper cover five languages and three domains
   * [the FrWac embeddings for French](http://fauconnier.github.io/)
@@ -59,9 +59,9 @@ Ultradense Word Embeddings by Orthogonal Transformation
 abstract: fundamental, obvious, legitimate, reasonable, optimistic, satisfied
 concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 
-#4 Evaluation
+# 4 Evaluation
 
-##4.2 Quality of Predictions
+## 4.2 Quality of Predictions
 
 * size of the lexicon resource has no big effect
   * results for Spanish (small resource) and French (large) are about the same
@@ -69,9 +69,9 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
   * reason for this likely is ...  modeling the context
   * Infrequent words can occur in frequent contexts
 
-#5 Parameter Analysis
+# 5 Parameter Analysis
 
-##5.1 Size of Subspace
+## 5.1 Size of Subspace
 
 * sentiment
   * for lexicon creation: a single dimension is sufficient 
@@ -80,11 +80,11 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 * [directly] train low-dimensional word2vec embeddings?
   * does not work very well
 
-##5.2 Size of Training Resource
+## 5.2 Size of Training Resource
 
 * small training resource of 300 entries is sufficient for high performance
 
-#6 Related Work on postprocessing word embeddings
+# 6 Related Work on postprocessing word embeddings
 
 * Faruqui+ (2015) perform postprocessing based on a semantic lexicon
   * good for word similarity

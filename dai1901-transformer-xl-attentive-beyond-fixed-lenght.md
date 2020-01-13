@@ -5,7 +5,7 @@ ACL 2019 long paper. Code and pretrained models are available at this https URL
 code, pretrained models, and hyperparameters are available in both Tensorflow
 and PyTorch
 
-#Abstract
+# Abstract
 
 * Transformers
   * learning longer-term dependency, but are
@@ -20,7 +20,7 @@ and PyTorch
   * up to 1,800+ times faster than vanilla Transformers during evaluation.
     Notably, we improve the SOTA results of bpc/perplexity
 
-#Introduction
+# Introduction
 
 Language modeling ... as unsupervised pretraining (
   * Dai and Le, 2015

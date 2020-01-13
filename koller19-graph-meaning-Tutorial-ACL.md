@@ -4,7 +4,7 @@ Alexander Koller, Stephan Oepen, Weiwei Sun
 
 https://github.com/cfmrp/tutorial
 
-#1 Tutorial Content and Relevance
+# 1 Tutorial Content and Relevance
 
 * Participants will be enabled to 
   * identify genuine content differences between frameworks as well as to 
@@ -22,7 +22,7 @@ https://github.com/cfmrp/tutorial
     abstract form, relevant constraints that the linguistic signal imposes on
     interpretation.
 
-#2 Semantic Graph Banks
+# 2 Semantic Graph Banks
 
 * we will give a systematic overview of the available semantic graph banks. On
 * with respect to 
@@ -40,7 +40,7 @@ https://github.com/cfmrp/tutorial
     * follow Kuhlmann and Oepen (2016)
     * three flavors ... which by degree of anchoring we will call type (0)..(2)
 
-##bi-lexical dependency graphs, where 
+## bi-lexical dependency graphs, where 
 
 * Type (0) The strongest form of anchoring
 * graph nodes injectively correspond to surface lexical units (tokens). In
@@ -56,7 +56,7 @@ https://github.com/cfmrp/tutorial
   * Prague Semantic Dependencies 
     (PSD; a simplification of the tecto-grammatical structures of Hajič+ 2012)
 
-##type 1
+## type 1
 
 * relaxing the correspondence relations between nodes and tokens, while 
   still explicitly annotating the correspondence between nodes and parts of the
@@ -75,7 +75,7 @@ https://github.com/cfmrp/tutorial
 * All three frameworks ... as target representations in recent parsing research
   (e.g. Buys and Blunsom, 2017; Chen+ 2018; Hershcovich+ 2018).
 
-##Abstract Meaning Representation (AMR; Banarescu+ 2013), which in our
+## Abstract Meaning Representation (AMR; Banarescu+ 2013), which in our
 
 * unanchored, in that the correspondence ... is not explicitly annotated. The
 * deliberately backgrounds notions of compositionality and derivation. At the
@@ -85,13 +85,13 @@ https://github.com/cfmrp/tutorial
 * first general release of an AMR graph bank in 2014, the framework has
 * subject of ... SemEval 2016 and 2017 (May, 2016; May and Priyadarshi, 2017)
 
-#Processing Semantic Graphs
+# Processing Semantic Graphs
 
 * a dizzying array of different semantic parsing algorithms, and it is a
 * Different [approaches are more or less effective for] different flavors
 * we organize the [graph-based sem parsing landscape] along three dimensions
 
-##Decoding strategy 
+## Decoding strategy 
 
 * include 
   * factorization-based methods, which 
@@ -101,19 +101,19 @@ https://github.com/cfmrp/tutorial
     * individual parsing decisions for each token in the sentence. Some 
   * neural techniques also [ use ] an encoder-decoder architecture, as in NMT
 
-##Compositionality 
+## Compositionality 
 
 * whether [the] representations are constructed compositionally. Some
 * standard linguistic [assumption:]  graphs have a latent compositional struct
 * Others are more agnostic and simply predict the edges of the target graph
 
-##Structural information
+## Structural information
 
 * model the target graph directly, [or] use probability models that 
   * e.g. a syntactic derivation tree or a term over a graph algebra
 * tree-based models ... go together well with compositional models.
 
-#4 Tutorial Structure
+# 4 Tutorial Structure
 
 1. Linguistic Foundations: Layers of Sentence Meaning
 2. Formal Foundations: Labeled Directed Graphs 
@@ -147,9 +147,9 @@ https://github.com/cfmrp/tutorial
   * Contrastive discussion across frameworks, approaches, and languages.
 5. Outlook: Applications of Semantic Graphs
 
-#Presenters
+# Presenters
 
-##Alexander Koller
+## Alexander Koller
 
 * PhD in 2004, with a thesis on underspecified processing of semantic
   ambiguities using graph-based representations.
@@ -160,7 +160,7 @@ https://github.com/cfmrp/tutorial
   achieved state-of-the-art semantic parsing accuracy for AMR using neural
   supertagging and dependency in the context of a compositional model.
 
-##Stephan Oepen
+## Stephan Oepen
 
 * studied Linguistics, German and Russian Philology, Computer Science, and
   Computational Linguistics at Berlin, Volgograd, and Saarbrücken. He has
@@ -173,7 +173,7 @@ https://github.com/cfmrp/tutorial
   tasks on Semantic Dependency Parsing as well as the First Shared Task on
   Cross-Framework Meaning Representation Parsing (MRP) at CoNLL 2019
 
-#Weiwei Sun
+# Weiwei Sun
 
 * symbolic and statistical parsing, with a special focus on parsing into
   semantic graphs of various flavors. She has repeatedly chaired teams that

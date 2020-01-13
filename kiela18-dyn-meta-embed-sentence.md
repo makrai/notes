@@ -2,7 +2,7 @@ Dynamic Meta-Embeddings for Improved Sentence Representations
 Douwe Kiela, Changhan Wang, and Kyunghyun Cho
 arXiv:1804.07983v2 [cs.CL] 5 Sep 2018
 
-#Abstract
+# Abstract
 
 * selecting what pre-trained word embeddings to use:
   better left for neural networks to figure out by themselves. To that end, we
@@ -11,7 +11,7 @@ arXiv:1804.07983v2 [cs.CL] 5 Sep 2018
   tasks
 * [the technique can] shed new light on the usage of word embeddings in NLP
 
-##7.2 Linguistic Analysis
+## 7.2 Linguistic Analysis
 
 * fine-grained analysis of the behavior of DME 
   on the validation set of SNLI. Figure 3 shows a breakdown of the 

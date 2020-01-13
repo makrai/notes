@@ -2,7 +2,7 @@ Functional Distributional Semantics
 Guy Emerson and Ann Copestake
 2016
 
-#Intro
+# Intro
 
 * vectors do not provide ‘natural’ composition operations
   that have clear analogues with operations in formal semantics,
@@ -13,9 +13,9 @@ Guy Emerson and Ann Copestake
 * Garrette et al. (2011) incorporate distributional information in a 
   Markov Logic Network (Richardson and Domingos, 2006)
 
-#2 Formal Framework of Functional Distributional Semantics
+# 2 Formal Framework of Functional Distributional Semantics
 
-##2.1 Semantic Functions
+## 2.1 Semantic Functions
 
 * these functions do not directly define probability distributions over
   entities. Rather, they define binary-valued conditional distributions,
@@ -28,15 +28,15 @@ Guy Emerson and Ann Copestake
   partial information about an entity, but leave other features unspecified;
 * world knowledge belongs to the probability distribution over entities
 
-#3 Implementation
+# 3 Implementation
 
-#4 Training and Initial Experiments
+# 4 Training and Initial Experiments
 
-##4.3 Training Data
+## 4.3 Training Data
 
-##4.2 Evaluation
+## 4.2 Evaluation
 
-#5 Related Work
+# 5 Related Work
 
 * Coecke et al. (2010) and Baroni et al. (2014) introduce a
   * tensor-based framework that incorporates argument structure through tensor

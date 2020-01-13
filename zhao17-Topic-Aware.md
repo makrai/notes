@@ -1,4 +1,4 @@
-#Intro
+# Intro
 
 pioneering work have attempted to integrate word sense disambiguation into
 various compositional models for semantic capture [24], [25], [26], [27],

@@ -2,7 +2,7 @@ LexIt: A Computational Resource on Italian Argument Structure
 Alessandro Lenci, Gabriella Lapesa, Giulia Bonansinga
 lrec 2012
 
-#Abstract
+# Abstract
 
 * a computational framework for the automatic acquisition and exploration
 * verbs, nouns and adjectives,
@@ -12,7 +12,7 @@ lrec 2012
   characterized fully on distributional ground: in the paper
 * we describe both the process of data extraction and the evaluation
 
-#1 Intro
+# 1 Intro
 
 * extraction of
   * subcategorization frames (Korhonen, 2002; Schulte im Walde, 2008),
@@ -35,7 +35,7 @@ lrec 2012
   3. evaluation of [the] verb subcategorization frames
   4. ongoing work for the extension of the resource
 
-#2 Building Distributional Profiles
+# 2 Building Distributional Profiles
 
 * each target lemma is associated with a distributional profile, an array of
   * a syntactic profile, specifying the syntactic slots (subject,
@@ -94,13 +94,13 @@ lrec 2012
   * mod-pre, containing the modified noun occurring before the adjective
     (i.e uomo grande, “a big man”)
 
-###2.1.1. The SCF extraction algorithm
+### 2.1.1. The SCF extraction algorithm
 
 4. the statistical salience of each SCFs with the target predicate was
    estimated in terms of LMI (cf. section (4.)). LMI proved to be
    * LMI allowed us to downgrade [frames due to e.g. mistaken PP-attachment]
 
-##Semantic profiles
+## Semantic profiles
 
 * Semantic profiles ... are further articulated into lexical sets and
   selectional preferences of predicates over semantic classes of slot fillers
@@ -109,7 +109,7 @@ lrec 2012
 * variation of the algorithm described in Schulte im Walde (2006)
 * 24 mutually exclusive top-nodes: ANIMAL, ARTIFACT, ACT, ATTRIBUTE, FOOD etc.
 
-#5 Conclusions and Future Work
+# 5 Conclusions and Future Work
 
 ongoing work on LexIt includes
 * from domain corpora

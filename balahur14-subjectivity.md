@@ -3,11 +3,11 @@ Computational approaches to subjectivity and sentiment analysis:
   Present and envisaged methods and applications.
 Computer Speech and Language 2014
 
-#Abstract
+# Abstract
 
 * This article [describes the contributions in the] special issue
 
-#Intro
+# Intro
 
 * subjectivity classification vs sentiment vs emotion
   * subjectivity classification labels text as either subjective or objective,
@@ -16,12 +16,12 @@ Computer Speech and Language 2014
 * this special issue [contains] the extended versions of the best articles ...
   at the 3rd Workshop on ... Subjectivity and Sentiment Analysis (WASSA 2012)
 
-#2 Recent trends in subjectivity and sentiment analysis (SSA)
+# 2 Recent trends in subjectivity and sentiment analysis (SSA)
 
 * further efforts are needed to expand the results to the 
   multilingual and cross-lingual settings and new, informal types of texts
 
-##2.1. Multilingual subjectivity and sentiment analysis
+## 2.1. Multilingual subjectivity and sentiment analysis
 
 * methods to adapt [English] resources and tools for sentiment analysis ... to
   build resources in other languages
@@ -41,8 +41,8 @@ Computer Speech and Language 2014
   * Another type of approach was proposed by Bader+ (2011), with LSI
   * Steinberger+ (2011a,b) [use a variant of] “triangulation”
 
-##2.2. Subjectivity and sentiment analysis in Social Media
+## 2.2. Subjectivity and sentiment analysis in Social Media
 
-#3. Special issue articles and their contribution to advancing research in SSA
+# 3. Special issue articles and their contribution to advancing research in SSA
 
-#4. Challenges and envisaged developments
+# 4. Challenges and envisaged developments

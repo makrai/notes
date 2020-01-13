@@ -4,14 +4,14 @@ ICLR 2019
 
 github.com/abefrandsen/compositional-embeddings (no documentation)
 
-#Abstract
+# Abstract
 
 * model
   * capture specific syntactic relations between words
   * correlations between three words (measured by their PMI) form a tensor
   * Tucker decomposition gives the word embeddings as well as a core tensor
 
-#1 Introduction 1
+# 1 Introduction 1
 
 * vector representations ... for supervised learning (Maas+ ACL 2011)
   * AL Maas, RE Daly, PT Pham, D Huang, AY Ng, C Potts
@@ -41,9 +41,9 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
   * different core tensors ... recover many previous composition methods
 * experiments (Section 5)
 
-##Related work
+## Related work
 
-###Syntax and word embeddings
+### Syntax and word embeddings
 
 * Andreas & Klein (2014) find that ... syntax-blind word embeddings fail
 * syntax-aware embedding algorithms
@@ -52,7 +52,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
     * a negative set of samples in which the [context words are shuffled],
       [to capture] the syntactic elements which are sensitive to word order
 
-###Word embedding composition
+### Word embedding composition
 
 * Gittens+ (2017) give a theoretical justification for additive [composition]
   in ... the skip-gram model, but these assumptions don’t address syntax
@@ -68,7 +68,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
 * Maillard & Clark (2015) treat adjectives as matrices and nouns as vectors
 * [our tensor] generalizes many previous composition methods (see Section 3.3)
 
-###Tensor factorization for word embeddings
+### Tensor factorization for word embeddings
 
 * embedding methods are closely connected [to] matrix factorization problems
   * Levy & Goldberg (2014b) and Li+ (2015)
@@ -80,7 +80,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
   * arives naturally at the more general Tucker decomposition (Section 4)
   * a different (yet still common[?]) definition of third-order PMI
 
-#2 Preliminaries 3
+# 2 Preliminaries 3
 
 * The Tucker decomposition for a tensor can be computed efficiently
 * CP decomposition (Carroll & Chang 1970; Harshman 1970)
@@ -88,7 +88,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
   * hard to compute in the general case (Håstad, 1990; Hillar & Lim, 2013)
 * Tucker is natural for syntactic embeddings, dee Section 4
 
-#3 Syntactic rand-walk model 4
+# 3 Syntactic rand-walk model 4
 
 * [~more direct dependence on syntactic neighbors than on topic]
 * we need to mediate the interaction between three quantities, namely a
@@ -100,14 +100,14 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
   * proportional to the [context-free] probability of generating word b
   * adjustment based on the syntactic relationship
 
-##3.2 Inference 5
+## 3.2 Inference 5
 
 * bottleneck in computing the marginal probabilities is [normalization]
   * we would need to divide by the appropriate partition functions, namely Z
   * Fortunately, ... these quantities are highly concentrated
     [in terms of?] the norm of the composition tensor
 
-##3.3 Composition 6
+## 3.3 Composition 6
 
 * view the discourse vector c corresponding to a syntactic word pair (a, b) as
   a suitable representation for the phrase as a whole
@@ -120,22 +120,22 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
     can also recover any manner of linear or multiplicative interactions
     between v_a and v_b, such as those proposed in Mitchell & Lapata (2010)
 
-#4 Learning 7
+# 4 Learning 7
 
 * we define the PMI for 3 words
   * all the partition numbers will be canceled out
 * all the parameters of the syntactic RAND-WALK model can be obtained [as]
   the Tucker decomposition of the PMI3 tensor
 
-##4.1 Implementation
+## 4.1 Implementation
 
-###Corpus
+### Corpus
 
 * Wikipedia[, remove stopwords and] words that appear less than 1000
 * vocabulary of size 68,279
 * Stanford Dependency Parser (Chen & Manning, 2014)
 
-###Training
+### Training
 
 * first train the word embeddings ... following Arora+ (2015)
 * next train the composition tensor T via
@@ -147,16 +147,16 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
 * Tensorflow framework (Abadi+ 2016) with the
   Adam optimizer (Kingma & Ba, 2014) (default), and train for 1-5 epochs
 
-#5 Experimental verification 8
+# 5 Experimental verification 8
 
-##5.1 Model verification
+## 5.1 Model verification
 
 * Arora+ (2015) empirically verify the model assumptions of RAND-WALK, and
   since we trained our embeddings in the same way, we don’t repeat
 * Norm of composition tensor
 * Concentration of partition functions
 
-##5.2 Qualitative analysis of composition
+## 5.2 Qualitative analysis of composition
 
 * We test [our] composition for adjective-noun and verb-object pairs
   by ... the words with closest embedding to the composed vector
@@ -164,7 +164,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
 * quality vaires
 * More results can be found in supplementary material
 
-##5.3 Phrase similarity
+## 5.3 Phrase similarity
 
 * adjective-noun phrase similarity task (Mitchell & Lapata 2010)
   * 108 pairs each of adjective-noun and verb-object phrases
@@ -218,6 +218,6 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
   * tensor can improve the quality of the phrase embeddings in many cases, and
   * improvements are at least somewhat orthogonal to improvements [from] sif
 
-#A Additional qualitiative results 14
+# A Additional qualitiative results 14
 
-##Sentiment analysis 15
+## Sentiment analysis 15

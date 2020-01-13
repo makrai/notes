@@ -2,7 +2,7 @@ Sanjeev Arora, Rong Ge, Tengyu Ma, Ankur Moitra ;
 Simple, Efficient, and Neural Algorithms for Sparse Coding
 2015 Proceedings of The 28th Conference on Learning Theory, PMLR 40:113-149,
 
-#Abstract
+# Abstract
 
 * Sparse coding is a basic task in many fields including signal processing,
   neuroscience and machine learning
@@ -21,7 +21,7 @@ Simple, Efficient, and Neural Algorithms for Sparse Coding
     * All previous algorithms [run in time exponential in some] parameter.
   * improve upon the sample complexity of existing approaches
 
-#Intro
+# Intro
 
 * sparsity
   * In neuroscience, sparse representations are believed to improve energy
@@ -38,13 +38,13 @@ Simple, Efficient, and Neural Algorithms for Sparse Coding
   * MOD Aharon et al.  (2006) and 
   * k-SVD Engan et al. (1999)
 
-##Efficient Algorithms vs Neural Algorithms. 
+## Efficient Algorithms vs Neural Algorithms. 
 
 * Recently [progress on designing polynomial time algorithms] provable
 * it can be much more challenging to analyze the behavior of an empirically
 * the .. heuristics are important for [being] implementable in neural
 
-##1.1. Recent Work
+## 1.1. Recent Work
 
 * generative model
 * Spielman et al. (2012) gave an algorithm that succeeds when m ≤ n) which

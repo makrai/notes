@@ -2,7 +2,7 @@ Italian VerbNet: A Construction-based Approach to Italian Verb Classification
 Lucia Busso, Alessandro Lenci
 LREC 2016
 
-#Abstract
+# Abstract
 
 * inspired by 
   * Levin (1993) and VerbNet (Kipper-Schuler, 2005)
@@ -16,7 +16,7 @@ LREC 2016
   argument alternations, here regarded simply as epiphenomena, consistently
   with the constructionist approach
 
-#1 Introduction
+# 1 Introduction
 
 * lexical semantics, computational linguistics, cognitive sciences etc
   (Pinker, 1989; Jackendoff, 1990; Levin, 1993;
@@ -40,7 +40,7 @@ LREC 2016
   accounting for Italian the syntactic peculiarities, and stemming from the
   integration of various resources and theoretical frameworks
 
-#3 Towards an Italian Verb Classification
+# 3 Towards an Italian Verb Classification
 
 * Constructionism
   * “[surface differences are] most naturally attributed directly to the
@@ -59,7 +59,7 @@ LREC 2016
   * FrameNet’s roles (aka Frame Elements)
 * classes [here have] a prototype-like structure (Rosch, 1973)
 
-##3.1. Methodology and Resources
+## 3.1. Methodology and Resources
 
 * bootstrapped from ... the 1000 most frequent Italian verbs (Lebani+ 2014)
 * monolingual Italian dictionary (Sabatini & Coletti, 2012, henceforth: S&C)
@@ -76,7 +76,7 @@ LREC 2016
   event and of its temporal structure (which is instead present in VerbNet’s
   semantic description)
 
-##3.2. Class Description and Structure
+## 3.2. Class Description and Structure
 
 * [verbs that all refer to] the movement of a Theme performed by an Agent or a
   Cause + verbs of KILLING [were] used to “tune” our method
@@ -86,7 +86,7 @@ LREC 2016
   * named each subclass with its most prototypical Italian member
   * [subclasses do] not precisely correspond to a VerbNet _class_
 
-##3.3. Some notable differences with Levin classes
+## 3.3. Some notable differences with Levin classes
 
 * Four different groups of mismatches
   1. subclasses that had to be eliminated from the Italian classification due

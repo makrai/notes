@@ -4,7 +4,7 @@ The meaning-frequency law in Zipfian optimization models of communication
 
 [nem tűnik jónak, az angolsága néhol érthetelen, de az irodalma érdekes]
 
-#Abstract
+# Abstract
 
 * Zipf’s meaning-frequency law
   * words that are more frequent tend to have more meanings
@@ -15,7 +15,7 @@ The meaning-frequency law in Zipfian optimization models of communication
   the assumptions of the family and (b) is found at least in the narrow regime
   where those models exhibit Zipf’s law for word frequencies
 
-#1. Introduction
+# 1. Introduction
 
 * Zipf’s law of meaning distribution (Zipf 1945)
   * Baayen & Moscoso del Prado Martín 2005 [cited by 115]
@@ -64,7 +64,7 @@ The meaning-frequency law in Zipfian optimization models of communication
   * yield Eq.  2 with \delta = 1 thus 
     satisfying only the weak meaning-frequency relationship
 
-#4. A weak meaning-frequency law is possible
+# 4. A weak meaning-frequency law is possible
 
 * tendency of different forms to _contrast_ in meaning 
   * Clark (1987) The principle of contrast: a constraint on language acquisit
@@ -78,7 +78,7 @@ The meaning-frequency law in Zipfian optimization models of communication
     * Gerlach & Altmann 2013) [84]
       Stochastic model for the vocabulary growth in natural languages
 
-#5. Discussion
+# 5. Discussion
 
 * There are many models of Zipf’s law for word frequencies 
   * Piantadosi (2014) Zipf’s law in natural language: a critical revw... [136]

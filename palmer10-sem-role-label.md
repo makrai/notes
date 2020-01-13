@@ -24,9 +24,9 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   creation of large corpora annotated according to these standards, and
   automatic systems trained using the resulting data
 
-#1 Semantic Roles 1
+# 1 Semantic Roles 1
 
-##1.1 Introduction 1
+## 1.1 Introduction 1
 
 * _John threw a ball to Mary in the park_ should result in the identification of
   * a throwing event involving
@@ -48,7 +48,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * motivations behind the annotations, and then it
   * techniques for developing automated systems
 
-##1.2 Linguistic Background 2
+## 1.2 Linguistic Background 2
 
 * Case Grammar
   * Fillmore’s seminal paper on “deep” cases as
@@ -93,9 +93,9 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * related to the same commonalities semantic roles were intended to capture
   * Frame Elements (Fillmore, 1985)
 
-##1.3 More Elaborated Frameworks 7
+## 1.3 More Elaborated Frameworks 7
 
-##1.3.1 Lexical Conceptual Structures
+## 1.3.1 Lexical Conceptual Structures
 
 * Building on ideas about semantics first expounded by Gruber (1965),
   Jackendoff elaborated significantly on the notion of cases by treating them
@@ -119,7 +119,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * extending this approach to all of the verbs in multiple languages and, in
     particular, to more abstract verbs, has proved daunting [csüggesztő]
 
-##1.3.2 Proto-Roles 7
+## 1.3.2 Proto-Roles 7
 
 * Dowty (1991) took a[n] approach, borrowing from prototype theory
 * every Agent may not be a sentient being that volitionally causes a change of
@@ -133,7 +133,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * spray/load alternation as discussed in the paragraph ... Incremental Themes
   * Psychological predicates
 
-##1.3.3 Levin’s Verb Classes and Alternations
+## 1.3.3 Levin’s Verb Classes and Alternations
 
 * syntactic variations are a direct reflection of the underlying semantics
   * transitive/intransitive alternation called the causative/inchoative
@@ -157,7 +157,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   with varying degrees of success (Schulte im Walde, 2009)
 * the original classes have been extended and made available on-line in VerbNet
 
-##1.3.4 Frame Semantics 18
+## 1.3.4 Frame Semantics 18
 
 * Frame Semantics (Fillmore, 1985, 1982; Fillmore et al., 2002) and is embodied
   in FrameNet, a lexical resource which currently has entries for 10,000
@@ -173,7 +173,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * semantic frames but without restricting himself to a small vocabulary of
   primitives
 
-#2 Available Lexical Resources 21
+# 2 Available Lexical Resources 21
 
 * differing goals, and yet are surprisingly compatible. They 
 * differ primarily in the granularity of the semantic role labels. 
@@ -184,7 +184,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * [in the _approve_ example], FrameNet labels them as Grantor and Action
 * can be seen as complementary
 
-##2.1 FrameNet 21
+## 2.1 FrameNet 21
 
 * Based on Filmore’s Frame Semantics,
 * [frames] describe
@@ -221,7 +221,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
       * Rate, and
       * Unit, the unit of measure for the Goods
 
-##2.2 VerbNet 22
+## 2.2 VerbNet 22
 
 * Dang et al., 1998; Kipper et al., 2000; Kipper Schuler, 2005;
   Kipper et al., 2008
@@ -254,7 +254,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * coherent syntactic and semantic characterization of the classes, which will
   facilitate the acquisition of new class members
 
-###Syntactic Frames
+### Syntactic Frames
 
 * Each VerbNet class contains a set of ... syntactic frames
 * constructions such as transitive, intransitive, prepositional phrases,
@@ -269,7 +269,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * syntactic nature of the constituent
   * NP, PP, sentential complements (finite and nonfinite)
 
-###Semantic Predicates
+### Semantic Predicates
 
 * denote the relations between participants and events
 * a conjunction of semantic predicates, such as motion, contact or cause
@@ -280,7 +280,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * link the verb classes to the Omega ontology (Philpot et al., 2005) and to
   * create upper level nodes (Palmer et al., 2009)
 
-##2.3 PropBank 24
+## 2.3 PropBank 24
 
 * NomBank, as a companion to PropBank, provides corresponding semantic role
   labels for _noun_ predicates (Meyers et al., 2004)
@@ -329,7 +329,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * selectional restrictions, verb semantics, and inter-verb relationships
 * mapping between VerbNet and PropBank, and between VerbNet and FrameNet
 
-###2.3.1 Limitations to a Verb-Specific Approach
+### 2.3.1 Limitations to a Verb-Specific Approach
 
 * adventages of [inter-verb] labels
 * make inferences and generalizations based on role labels
@@ -344,7 +344,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
       significantly on them
 * genre-specific nature of the training corpus
 
-##2.4 Semlink . 27
+## 2.4 Semlink . 27
 
 * type to type mappings between PropBank and VerbNet have been made, as well as
   between VerbNet and FrameNet. These mappings have been used to leverage a
@@ -352,66 +352,66 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   and semantic role labels. Efforts to extend this instance mapping to FrameNet
   are underway. This project is called Semlink
 
-###2.4.1 Hierarchy of Thematic Roles
+### 2.4.1 Hierarchy of Thematic Roles
 
 * hierarchical organization of all Agent-like (or Patient-like, or Goal-like,
   etc.) VerbNet roles and FrameNet Elements
 
-##2.5 Summary . 28
+## 2.5 Summary . 28
 
-#3 Machine Learning for Semantic Role Labeling . 31
+# 3 Machine Learning for Semantic Role Labeling . 31
 
-##3.1 Identification and Classification . 31
+## 3.1 Identification and Classification . 31
 
-##3.2 Features Used for Classification . 33
+## 3.2 Features Used for Classification . 33
 
-###3.2.1 Phrase Type 33
+### 3.2.1 Phrase Type 33
 
-###3.2.2 Governing Category
+### 3.2.2 Governing Category
 
-###3.2.3 Parse Tree Path
+### 3.2.3 Parse Tree Path
 
-###3.2.4 Position
+### 3.2.4 Position
 
-###3.2.5 Voice 40
+### 3.2.5 Voice 40
 
-###3.2.6 Head Word 40
+### 3.2.6 Head Word 40
 
-###3.2.7 Subcategorization
+### 3.2.7 Subcategorization
 
-###3.2.8 Argument Set
+### 3.2.8 Argument Set
 
-###3.2.9 Features Introduced in Later Systems
+### 3.2.9 Features Introduced in Later Systems
 
-##3.3 Choice of Machine Learning Method . 43
+## 3.3 Choice of Machine Learning Method . 43
 
-###3.3.1 Feature Combinations
+### 3.3.1 Feature Combinations
 
-##3.4 Joint Inference . 44
+## 3.4 Joint Inference . 44
 
-###3.4.1 Reranking 44
+### 3.4.1 Reranking 44
 
-###3.4.2 Viterbi Search 45
+### 3.4.2 Viterbi Search 45
 
-###3.4.3 Integer Linear Programming
+### 3.4.3 Integer Linear Programming
 
-##3.5 Impact of Parsing .46
+## 3.5 Impact of Parsing .46
 
-###3.5.1 Integrated Parsing and SRL 46
+### 3.5.1 Integrated Parsing and SRL 46
 
-###3.5.2 Choice of Syntactic Representation
+### 3.5.2 Choice of Syntactic Representation
 
-###3.5.3 Combining Parsers
+### 3.5.3 Combining Parsers
 
-##3.6 Evaluation . 49
+## 3.6 Evaluation . 49
 
-##3.7 Genre . 50
+## 3.7 Genre . 50
 
-##3.8 Choice of Resources and Combination of Resources . 50
+## 3.8 Choice of Resources and Combination of Resources . 50
 
-##3.9 Unsupervised and Partially Supervised Approaches . 51
+## 3.9 Unsupervised and Partially Supervised Approaches . 51
 
-#4 A Cross-Lingual Perspective . 53
+# 4 A Cross-Lingual Perspective . 53
 
 1. different styles of semantic role annotation ... across languages
   * semantic role projection, the task of
@@ -480,7 +480,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * Propbank and FrameNet both assign semantic roles to constituents
   * Czech and Japanese are assigned to words directly
 
-##4.1 Semantic Role Projection .56
+## 4.1 Semantic Role Projection .56
 
 * project semantic role annotation from a resource-rich language
 * there has to be parallel data, word-aligned
@@ -492,7 +492,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   1. the SRL framework in the source language is also meaningful in the target
   2. a predicate [is always translated into a predicate with the same] roles
 
-##4.2 Semantic Role Alignment . 59
+## 4.2 Semantic Role Alignment . 59
 
 * As semantically annotated corpora become available in multiple languages
   * how consistent the semantic annotation is across languages
@@ -500,7 +500,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * predicate in the source language may be translated into multiple predicates
 * potential application in Machine Translation and other NLP systems
 
-##4.3 Language-(In)Dependent Semantic Role Labeling . 61
+## 4.3 Language-(In)Dependent Semantic Role Labeling . 61
 
 * how semantic role labeling techniques developed for one language can be
   adapted for use in another language
@@ -546,7 +546,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
       * SB takes a verb phrase as a complement
     * the subject of NP is typically Arg1 rather Arg0
 
-###4.3.1 The Chinese PropBank 62
+### 4.3.1 The Chinese PropBank 62
 
 * developed in close association with the English Propbank
   (Palmer et al., 2005)
@@ -571,7 +571,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * Conversely, ... one constituent receives multiple semantic roles from
       different predicates
 
-###4.3.2 Semantic Role Labeling for Verbs
+### 4.3.2 Semantic Role Labeling for Verbs
 
 * Commonalities
   * stages:
@@ -597,7 +597,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * syntactic chunks vs. full parses as input is a tradeoff
   * Results in the literature are inconclusive
 
-###4.3.3 Semantic Role Labeling for Nouns 70
+### 4.3.3 Semantic Role Labeling for Nouns 70
 
 * Compared with verbs, however, the distribution of the arguments for
   nominalized predicates is less uniform
@@ -614,6 +614,6 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * a support verb to a large extent determines whether or not the arguments of
     a nominalized predicate can occur outside the NP of which it is the head
 
-###4.3.4 Summary 75
+### 4.3.4 Summary 75
 
-#5 Summary . 77
+# 5 Summary . 77

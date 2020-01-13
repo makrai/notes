@@ -1,10 +1,10 @@
 Pléh and Lukács and Kas
 2008
-#13. A szótár plingje
+# 13. A szótár plingje
 
 Bevezetés: a mentális szótár fogalma és státusza
 
-##13.1. A mentális lexikon pszichológiai vizsgálati módszerei
+## 13.1. A mentális lexikon pszichológiai vizsgálati módszerei
 
 * szógyakoriság,
 * denotáció és konnotáció
@@ -45,12 +45,12 @@ ellenpólust használja dimenziónévként : stabilitás, S), vagyis az EPA rend
 Ezt illusztrálja konkrét fogalmakra a 13.4. ábra Pléh és Czigler (1979) adatai
 alapján
 
-###13.1.2. Kísérleti módszerek a mentális szótár kutatásában
+### 13.1.2. Kísérleti módszerek a mentális szótár kutatásában
 
 * szuboptimális feltételek megteremtése
 * a reakcióidő, illetve a pontosság
 
-##13.3. A mentális lexikon szemantikai szerveződése
+## 13.3. A mentális lexikon szemantikai szerveződése
 
 * tovaterjedő aktivációnak
 * ezek a jelentésviszonyok sok mindenben befolyásolják a fordítást, a
@@ -60,9 +60,9 @@ alapján
     * a valóságra vonatkoznak, mind pedig abban, hogy
     * valóságos mentális tartalommal rendelkező egységek
 
-##13.4. A szavak elsajátítása
+## 13.4. A szavak elsajátítása
 
-##13.5. Kitekintés
+## 13.5. Kitekintés
 
 A mentális lexikon modern, mentalisztikus kutatásának nézetünk szerint három
 átfogó tanulsága van

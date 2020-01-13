@@ -4,14 +4,14 @@ Comparing Performance of
   on Real Data
 2013
 
-#Abstract
+# Abstract
 
 * an experimental comparison of publicly available algorithms for computing
   intents [intenzió] of all formal concepts and mining frequent closed itemsets
 * Experiments are performed on real data sets from 
   UCI Machine Learning Repository and FIMI Repository
 
-#Intro
+# Intro
 
 * Frequent itemset mining (FIM) introduced in (Agrawal+, 1993) was proposed as
   a method for market basket analysis
@@ -24,7 +24,7 @@ Comparing Performance of
     finding the set of all closed frequent itemsets using a minimum support
     equal to zero [20]
 
-#2 Compared Algorithms
+# 2 Compared Algorithms
 
 * algorithms [for] generating formal concepts and/or a concept lattice
   * Ganter: Two basic algorithms in concept analysis. TH Darmstadt, 1984.
@@ -61,7 +61,7 @@ Comparing Performance of
   FP-Close [13] although it gave a segmentation fault for 4 out of 14 data
   sets.
 
-#3 Experimental Evaluation
+# 3 Experimental Evaluation
 
 * The input file 
   * of In-Close2 is in the cxt (formal context) format while the input 

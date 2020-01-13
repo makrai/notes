@@ -3,7 +3,7 @@ Investigating the cross-linguistic potential of VerbNet-style classification
 CoLing 2010 Beijing, China
 
 
-#1 Intro
+# 1 Intro
 
 * Levin style classification for languages other than English
   * 59 verbs and three classes, Merlo+ (2002) applied a supervised
@@ -15,7 +15,7 @@ CoLing 2010 Beijing, China
   * Basic NLP resources  are now sufficiently developed for this language
     * corpora, taggers, parsers and subcategorization acquisition systems
 
-#2 French gold
+# 2 French gold
 
 * we followed the idea of Merlo+ (2002) and
   * translated a number of Levin classes from English to French. As our aim was

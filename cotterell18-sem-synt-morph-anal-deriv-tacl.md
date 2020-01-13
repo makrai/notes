@@ -2,7 +2,7 @@ Ryan Cotterell and  Hinrich Schütze
 Joint Semantic Synthesis and Morphological Analysis of the Derived Word
 TACL 2018
 
-#Abstract
+# Abstract
 
 * we propose a novel probabilistic model of word formation that [jointly] captr
   * the analysis of a word w into its _constituent segments_ and
@@ -15,7 +15,7 @@ TACL 2018
 * generate[s] compositional word embeddings
   * [do] the representations correspond to a linguist’s notion of morph prod?
 
-#1 Introduction
+# 1 Introduction
 
 * Morphological segmentation ... to aid a diverse set of applications, such as
   * automatic speech recognition (Afify+ 2006)
@@ -38,7 +38,7 @@ TACL 2018
       * [dependency] vectors (Levy and Goldberg, 2014a) are better suited
     * productivity of English derivational affixes in the context of distri sem
 
-#5 Related Work
+# 5 Related Work
 
 * vector sem ... for morph segment (Salton, 1971; Turney and Pantel, 2010)
 	* unsupervised induction of morphology
@@ -73,7 +73,7 @@ TACL 2018
     which [implement] SPE-style phonological rules (Chomsky and Halle, 1968),
     may be run backwards to get canonical underlying forms
 
-#6 Experiments and Results
+# 6 Experiments and Results
 
 * We conduct experiments on English and German derivational morphology. We
   * segment words into their canonical morphemes as well as its ability to
@@ -91,7 +91,7 @@ TACL 2018
     * taken from Zeller+ (2013) and is described in Cotterell+ (2016b).  It,
     * 10,000 derivational forms. We report results on 10-fold cross validation
 
-#7 Conclusion
+# 7 Conclusion
 
 * SOTA on the derivational vector approximation task (Lazaridou+ 2013)
 * Future work will focus on the

@@ -2,7 +2,7 @@ ND Sidiropoulos, LD Lathauwer, X Fu, K Huang, EE Papalexakis, and C Faloutsos
 Tensor Decomposition for Signal Processing and Machine Learning
 IEEE Transactions on signal processing 2017
 
-#Abstract
+# Abstract
 
 * This overview ... focuses on fundamentals and motivation (using various
   application examples), aiming to ... balance of breadth and depth
@@ -12,7 +12,7 @@ IEEE Transactions on signal processing 2017
   mixture and topic modeling, classification, and
   multilinear subspace learning
 
-#1 Introduction
+# 1 Introduction
 
 * applications in
   * signal processing (speech, audio, communications, radar, biomedical),
@@ -70,12 +70,12 @@ IEEE Transactions on signal processing 2017
       to moderate data; they tend to use computationally heavier algorithms
     * ML researchers are nowadays trained to think about scalability
 
-#2 matrix preliminaries 3
+# 2 matrix preliminaries 3
 
 including matrix rank and low-rank approximation, and a review of some useful
 matrix products and their properties
 
-#3 rank and rank decomposition for tensors: CPD/PARAFAC 4
+# 3 rank and rank decomposition for tensors: CPD/PARAFAC 4
 
 * bounds on tensor rank,
   multilinear (mode-) ranks, and
@@ -84,20 +84,20 @@ matrix products and their properties
 * why low-rank tensor approximation may not be well-posed in general
 * Tensors can be viewed as data or _as multi-linear operators_
 
-##A. Low-Rank Tensor Approximation 5
+## A. Low-Rank Tensor Approximation 5
 
 * Alternating Least Squares (ALS) 
 
-#4 uniqueness of low-rank tensor decomposition 9
+# 4 uniqueness of low-rank tensor decomposition 9
 
 * two stepping-stone proofs: one based on eigendecomposition, the other bearing
   Kruskal’s mark (“down-converted to baseband” in terms of difficulty)
 
-#5 The Tucker model and multilinear SVD 12
+# 5 The Tucker model and multilinear SVD 12
 
 connections with rank decomposition
 
-#7 algorithmic aspects 16
+# 7 algorithmic aspects 16
 
 * how different types of constraints can be handled,
   how to exploit data sparsity,
@@ -109,22 +109,22 @@ connections with rank decomposition
 * statistical performance analysis, focusing on the widely-used 
   Cramér-Rao bound and its efficient numerical computation
 
-#8 Cramér-Rao bound 21
+# 8 Cramér-Rao bound 21
 
 * a lower bound on the variance of any unbiased estimator (and thus on mean
   square error of unbiased estimators), which is expressed in terms of the
   (pseudo-)inverse of the Fisher information matrix
 
-#9 applications 23
+# 9 applications 23
 
 * signal processing (communication and speech signal separation,
   multidimensional harmonic retrieval)
 * machine learning (collaborative filtering, mixture and topic modeling,
   classification, and multilinear subspace learning)
 
-#9.E Gaussian Mixture Parameter Estimation 25
+# 9.E Gaussian Mixture Parameter Estimation 25
 
-#10 Software, demos, history, and what lies ahead 28
+# 10 Software, demos, history, and what lies ahead 28
 
 * Matlab provides native support for tensor objects, but `...`
 * freely available toolboxes:

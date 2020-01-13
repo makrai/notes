@@ -2,7 +2,7 @@ Convolutional Neural Networks for Sentence Classification
 Yoon Kim
 emnlp 2014
 
-#1 Intro
+# 1 Intro
 
 * word vector representations (Bengio+ 2003; Yih+ 2011; Mikolov+ 2013) 
   * Yih+ CoNLL 11: ... Discriminative Projections for Text Similarity Measures

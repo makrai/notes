@@ -2,7 +2,7 @@ Syntactic Stylometry for Deception Detection
 Song Feng, Ritwik Banerjee, Yejin Choi
 acl 2012
 
-#Abstract
+# Abstract
 
 * Over four different datasets spanning 
   from the product review to the essay domain, we demonstrate that 

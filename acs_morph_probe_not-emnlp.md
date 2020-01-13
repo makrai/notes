@@ -4,7 +4,7 @@ rejected from emnlp 19
 
     We will publicly release our code and data.
 
-#Intro
+# Intro
 
 * The extent to which distributed models like Contextual word representations
   (CWR) s encode linguistics ... has been widely probed 
@@ -27,7 +27,7 @@ rejected from emnlp 19
     that the last wordpiece 2 of a word in BERT encodes much more morpho-
     logical information than the first wordpiece. 
     
-#2 Probing Tasks
+# 2 Probing Tasks
 
 * up to 15 Estonian noun classes. 
 * See Appendix A for details of the sampling method, as well as the full list

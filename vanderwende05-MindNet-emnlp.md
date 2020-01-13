@@ -1,7 +1,7 @@
 MindNet: an automatically-created lexical resource
 Lucy Vanderwende, Gary Kacmarcik, Hisami Suzuki, Arul Menezes
 
-#Abstract
+# Abstract
 
 * MindNet, a lexical resource built automatically by processing text. We will
 * two forms of MindNet: as a
@@ -11,13 +11,13 @@ Lucy Vanderwende, Gary Kacmarcik, Hisami Suzuki, Arul Menezes
 * English and Japanese MindNets will be shown and will be
 * made available ... for research purposes
 
-#1 MindNet
+# 1 MindNet
 
 * Previous publications on MindNet
   (Suzuki et al., 2005, Richardson et al., 1998, Vanderwende 1995)
   * MindNet from the data contained in Japanese and English lexiconos
 
-##Semantic Relations
+## Semantic Relations
 
 * directed, labeled relationships between two words; see Table 1:
   * Attributive Manner Source Cause Means Synonym Goal Part Time Hypernym
@@ -31,7 +31,7 @@ Lucy Vanderwende, Gary Kacmarcik, Hisami Suzuki, Arul Menezes
     * we solicit feedback on the level of accuracy which is tolerable for
       specific applications
 
-##Semantic Relation Structures
+## Semantic Relation Structures
 
 * semrel structure
   * the hierarchical collection of semantic relations (semrels) ... extracted
@@ -40,7 +40,7 @@ Lucy Vanderwende, Gary Kacmarcik, Hisami Suzuki, Arul Menezes
   * semrel structure ... viewed from the perspective of each unique word
   * a different word placed at the root of the structure
 
-#2 MNEX
+# 2 MNEX
 
 * MNEX (MindNet Explorer) is
   * the web-based interface to MindNet that is designed to facilitate browsing
@@ -56,7 +56,7 @@ Lucy Vanderwende, Gary Kacmarcik, Hisami Suzuki, Arul Menezes
       * e.g. all paths from the word bird, restricted to Noun part of speech,
         through the Part relation:
 
-#3 3 Relation to other work
+# 3 3 Relation to other work
 
 * WordNet, EuroWordNet
 * FrameNet (Baker et al., 1998) and OpenCyc

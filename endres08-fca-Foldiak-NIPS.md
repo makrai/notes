@@ -4,7 +4,7 @@ Dominik Endres, Peter Földiák
 
 We explore the effects of neural code sparsity on the lattice.
 
-#Intro
+# Intro
 
 * organization
   2. a short introduction to FCA
@@ -14,7 +14,7 @@ We explore the effects of neural code sparsity on the lattice.
      from the responses of neurons in the high-level visual cortex of monkeys
   5. we discuss the concept lattices so obtained
 
-#1 Intro
+# 1 Intro
 
 * Mammalian brains consist of billions of neurons
 * the patterns of activation ... can be understood as the codewords comprising
@@ -29,7 +29,7 @@ We explore the effects of neural code sparsity on the lattice.
 
 [a section 2 Sparse coding-ot ld. a 2009-es cikkről szóló jegyzetben]
 
-#3 Concept lattices of local, sparse and dense codes
+# 3 Concept lattices of local, sparse and dense codes
 
 * neural codes [are sparse]
 * In the case of a binary neural code, the 
@@ -62,14 +62,14 @@ We explore the effects of neural code sparsity on the lattice.
     * hampered by a small encoding capacity 
       (maximal number of concepts with non-empty extents)
 
-#5
+# 5
 
 [ld. a 2009-es cikkben (nem a jegyzetben) részletesebben]
 
 * the neural code has a higher ”resolution” for faces of conspecifics
   [fajtársak] than for faces in general [e.g.] humans or cartoons
 
-#6 Conclusion
+# 6 Conclusion
 
 FCA ... is feasible even for high-level visual codes, where linear decoding
 methods [19, 20]

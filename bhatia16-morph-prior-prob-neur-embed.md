@@ -2,7 +2,7 @@ Robert Guthrie and Jacob Eisenstein
 Morphological Priors for Probabilistic Neural Word Embeddings
 arXiv:1608.01056v2 [cs.CL] 24 Sep 2016
 
-#Abstract
+# Abstract
 
 * to generalize to rare or unseen words: incorporating morphological info
 * The morphological information provides a prior distribution on the latent

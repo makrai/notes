@@ -2,14 +2,14 @@ High-Fidelity Lexical Axiom Construction from Verb Glosses
 Gene Kim and Lenhart Schubert
 2016 acl
 
-#1 Introduction
+# 1 Introduction
 
 * attempts to transduce informal lexical knowledge from machine readable
   dictionaries into a formally structured form
   (Calzolari, 1984; Chodorow et al., 1985; Harabagiu et al., 1999;
   Moldovan and Rus, 2001; Hobbs, 2008; Allen et al., 2013)
 
-#2 Related work
+# 2 Related work
 
 * extracting lexical information from machine-readable dictionaries. Early
   approaches to this problem focused on surface-level techniques, including
@@ -28,9 +28,9 @@ Gene Kim and Lenhart Schubert
       ontology with glosses of semantically related clusters of words 
       to concepts corresponding to these words
 
-##Limitations of Logical Representations Used by Previous Approaches
+## Limitations of Logical Representations Used by Previous Approaches
 
-#4 Gloss Axiomatization
+# 4 Gloss Axiomatization
 
 * In this section, we describe our approach to semantic parsing and
   axiomatization of WordNet entries. Our approach consists of 
@@ -42,9 +42,9 @@ Gene Kim and Lenhart Schubert
   2. Semantic parsing of the gloss (Section 4.2)
   3. Axiom construction (Section 4.3)
 
-##Argument Structure Inference
+## Argument Structure Inference
 
-##Semantic Parsing of Glosses
+## Semantic Parsing of Glosses
 
 * preprocessing of the glosses is necessary because glosses often omit
   arguments, resulting in an incomplete sentence
@@ -59,11 +59,11 @@ Gene Kim and Lenhart Schubert
 Dummy arguments in the parsed gloss are correlated with the arguments in the
 frame using the mapping in Table 1
 
-#6 Experiments
+# 6 Experiments
 
-##Semantic Parsing Evaluation
+## Semantic Parsing Evaluation
 
-##Inference Evaluation
+## Inference Evaluation
 
 * manually created verb entailment dataset (Weisman et al., 2012)
 * When generating inferences, we find verbs in the consequent of the axiom
@@ -72,9 +72,9 @@ frame using the mapping in Table 1
   abstract word is reached (e.g., be, go, etc.), which glosses do not
   sufficiently describe. This blacklist contains 24 abstract words
 
-##Error Analysis
+## Error Analysis
 
-#7 Future Work and Conclusions
+# 7 Future Work and Conclusions
 
 * include nouns, adjectives, and adverbs
 * may be improved by looking through the hypernym graph and borrowing results

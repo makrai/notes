@@ -2,14 +2,14 @@ A Coenen, E Reif, A Yuan, B Kim, A Pearce, F Viégas, M Wattenberg
 Visualizing and Measuring the Geometry of BERT
 arXiv:1906.02715 [cs.LG]
 
-#Abstract
+# Abstract
 
 * [there seem to be] separate semantic and syntactic subspaces
 * fine-grained geometric representation of word senses
 * syntactic representations in attention mxs and individual word embeddings
 * mathematical argument to explain the geometry of these representations
 
-#1 Intro
+# 1 Intro
 
 * which features are extracted [by BERT], how is this information represented?
 * Similar questions [with] convolutional neural networks [10, 9]
@@ -32,7 +32,7 @@ arXiv:1906.02715 [cs.LG]
     * mistakes in word sense disambiguation may correspond to 
       changes in internal geometric representation of word meaning
 
-#2 Context and related work 2
+# 2 Context and related work 2
 
 * BERT model introduced in [6]. [We] set context and terminology:
   * input to BERT is based on a sequence of tokens (words or pieces of words)
@@ -47,7 +47,7 @@ arXiv:1906.02715 [cs.LG]
       one for each attention head,
       each [head] contains a scalar value for each pair (token_i , token j)
 
-##2.1 Language representation by neural networks
+## 2.1 Language representation by neural networks
 
 * [related work on] the internal states of RNN-based models have shown that
   [RNNs] represent information about soft hierarchical syntax in a form that
@@ -69,7 +69,7 @@ arXiv:1906.02715 [cs.LG]
   * other examples of intermediate representations? And, from a
   * geometric perspective, how do all these [information coexist in a] vector?
 
-#3 Geometry of syntax 2
+# 3 Geometry of syntax 2
 
 * [we build] on the work by Hewitt and Manning [7] in two ways
   * whether attention matrices encode syntactic features
@@ -135,7 +135,7 @@ arXiv:1906.02715 [cs.LG]
     * vary widely from around 1.2 (compound:prt, advcl)
     to 2.5 (mwe, parataxis, auxpass). Such systematic differences suggest that
 
-#4 Geometry of word senses 5
+# 4 Geometry of word senses 5
 
 ##  4.1 Visualization of word senses 6
 
@@ -166,7 +166,7 @@ arXiv:1906.02715 [cs.LG]
   * accuracy monotonically increasing through the layers. This is a strong
   * an even higher score of 71.5 was obtained using the technique in next sec
 
-###4.2.1 An embedding subspace for word senses? 7
+### 4.2.1 An embedding subspace for word senses? 7
 
 * hypothesized: a linear transformation under which distances between
   embeddings would better reflect their semantic relationships–that is, words
@@ -222,23 +222,23 @@ arXiv:1906.02715 [cs.LG]
   * i.e. multiplying each embedding by our trained semantic probe, we obtained
   * higher ratio, lower average misclassification rates
 
-#5 Conclusion and future work
+# 5 Conclusion and future work
 
 * future research
   * What other meaningful subspaces exist? After all, there
   * what the internal geometry can tell us about the specifics of the
     transformer architecture? ... Find areas for improvement, or refine
 
-#Appendix 10
+# Appendix 10
 
-##6.1 Embedding trees in Euclidean space
+## 6.1 Embedding trees in Euclidean space
 
-##6.2 Ideal vs. actual parse tree embeddings
+## 6.2 Ideal vs. actual parse tree embeddings
 
-##6.3 Additional BERT parse tree visualizations
+## 6.3 Additional BERT parse tree visualizations
 
-##6.4 Additional word sense visualizations
+## 6.4 Additional word sense visualizations
 
-##6.5 Dependency relation performance 14
+## 6.5 Dependency relation performance 14
 
-##6.6 Semantic probe performance across layers 15
+## 6.6 Semantic probe performance across layers 15

@@ -4,7 +4,7 @@ Explicit Representation of Antonymy in Language Modeling
 
 Ötlet: antonímalista nélkül a fosztóképzőkből tanulva
 
-#1 Introduction
+# 1 Introduction
 
 * Continuous space word representations [for]  machine translation 
   (Auli et al., 2013; Kalchbrenner and Blunsom, 2013; Son et al., 2012; 
@@ -12,7 +12,7 @@ Explicit Representation of Antonymy in Language Modeling
 * Previous approaches cannot distinguish between words like “hot” and “cold”
   because they are distributionally similar
 
-#2 Related Work
+# 2 Related Work
 
 * More recently [than Mikolov et al 2013 Efficient...], Lebret et al. (2013)
   show that good representations can be learned with a fairly simple
@@ -21,7 +21,7 @@ Explicit Representation of Antonymy in Language Modeling
 * in learning antonyms, [...] the work of Yih et al. (2012) is closest to ours
 * utolsó két mondatothoz lás még 3.3 első bekezdését is
 
-#3 Model
+# 3 Model
 
 * solutions to the normalization problem:
   * hierarchical output layer
@@ -33,7 +33,7 @@ Explicit Representation of Antonymy in Language Modeling
 * 3.3 Modeling Antonymy
   * semantic regularization
 
-#5 Comparison with Vector Offset Method
+# 5 Comparison with Vector Offset Method
 
 * after training with antonym constraints, we found that the vector offset
   method performs poorly
@@ -43,6 +43,6 @@ Explicit Representation of Antonymy in Language Modeling
 * [vector offset works only when] the negated form of a word (e.g.
   “illogical”) always follows the non-negated form
 
-#References
+# References
 
 * Wen-tau Yih, Geoffrey Zweig, and John C Platt (2012) Polarity inducing LSA

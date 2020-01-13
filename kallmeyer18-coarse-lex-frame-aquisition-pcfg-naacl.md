@@ -2,11 +2,11 @@ Coarse Lexical Frame Acquisition at the Syntax–Semantics Interface
   Using a Latent-Variable PCFG Model
 Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
 
-#Abstract
+# Abstract
 
 * input [is] syntactic dependency trees
 
-#1 Intro
+# 1 Intro
 
 * without using any explicit semantic information as training data 
 * The task involves 
@@ -52,7 +52,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
     * frame grouping by lexical heads and one 
     * based on agglomerative clustering
 
-#2, 3
+# 2, 3
 
 * We 
   * converted lexicalized dependency trees of sentences 
@@ -64,9 +64,9 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
       methods for splitting and merging frames and semantic roles and using
       word embeddings for better generalization
 
-#4 evaluation dataset and results from experiments
+# 4 evaluation dataset and results from experiments
 
-##4.2 Evaluation Measures
+## 4.2 Evaluation Measures
 
 * we report 
   * the harmonic mean of BCubed precision and recall (BCF) (Bagga & Baldwin 98), and 
@@ -81,16 +81,16 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
       vs. quantity’ constraints).  Reporting 
   * B C F alongside F P U ensures that these pitfalls are not overlooked
 
-##4.4 Results
+## 4.4 Results
 
-###Quantitative Comparison with Baselines 
+### Quantitative Comparison with Baselines 
 
 * frame type clustering, our method ... outperforms all the baselines.  F P U
   * output contains a small proportion of “rag bag” clusters [which is bad]
   * many incomplete yet homogeneous clusters (as we discuss below). With
 * roles ... performance ... very similar to the syntactic baseline (B C F=97.3)
 
-###What is in the clusters? 
+### What is in the clusters? 
 
 [performance in verb clust] varies from one gold frame category to another one.
   * The most problematic: `ACTIVITY_START`, `PROCESS_START`, and PLACING .
@@ -105,7 +105,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
     * clusters (consisting of only one or two instances): ... those with
       wrong (and incomplete) dependency parses
 
-#5 Related Work
+# 5 Related Work
 
 * differs from most work on word sense induction (WSI), e.g. 
   (Goyal and Hovy, 2014; Lau et al., 2012; Manandhar et al., 2010; Van de Cruys

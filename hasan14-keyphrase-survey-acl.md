@@ -5,7 +5,7 @@ Kazi Saidul Hasan and Vincent Ng
 ugyanez a téma jobban le van írva [ebben a posztban](
 http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extraction/)
 
-#Intro
+# Intro
 
 * keyphrases 
   * enabled fast and accurate searching for a given document 
@@ -15,7 +15,7 @@ http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extractio
     * opinion mining (Berend, 2011), and 
     * document indexing (Gutwin et al., 1999).
 
-#2 [corpus-related issues]
+# 2 [corpus-related issues]
 
 * length
 * structural consistency
@@ -27,9 +27,9 @@ http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extractio
     * informal text (e.g., emails, chats, informal meetings, personal blogs)
       * any number of potentially uncorrelated topics
 
-#3 Keyphrase Extraction Approaches
+# 3 Keyphrase Extraction Approaches
 
-##3.1 extracting a list of words/phrases that serve as candidate keyphrases
+## 3.1 extracting a list of words/phrases that serve as candidate keyphrases
 
 * heuristic rules
   1.  using a stop word list to remove stop words (Liu et al., 2009b), 
@@ -45,5 +45,5 @@ http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extractio
     Kumar and Srinathan, 2008; El-Beltagy and Rafea, 2009; You et al., 2009;
     Newman et al., 2012).
 
-##3.2 supervised keyphrases selection
-##3.2 unsupervised keyphrases selection
+## 3.2 supervised keyphrases selection
+## 3.2 unsupervised keyphrases selection

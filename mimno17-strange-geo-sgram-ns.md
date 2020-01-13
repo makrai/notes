@@ -2,12 +2,12 @@ The Strange Geometry of Skip-Gram with Negative Sampling
 David Mimno and Laure Thompson
 EMNLP 2017 (best paper honorable mention)
 
-#elevator pitch
+# elevator pitch
 
 * in the popular SGNS algorithm ... the negative sampling objective dominates,
   resulting in vectors that lie within a narrow cone
 
-#Abstract
+# Abstract
 
 * vector positions ... occupy a narrow cone,
   diametrically opposed to the context vectors
@@ -15,7 +15,7 @@ EMNLP 2017 (best paper honorable mention)
   * depends on the ratio of positive to negative examples
   * neither theoretically nor empirically inherent in related embedding algos
 
-#1 Intro
+# 1 Intro
 
 * numerous methods with similar objectives
   (Turian+ 2010; Dhillon+ 2012; Pennington+ 2014; Luo+ 2015)
@@ -41,7 +41,7 @@ EMNLP 2017 (best paper honorable mention)
   * this relationship between vectors is effectively hidden by the
     commonly-used t-SNE projection (van der Maaten and Hinton, 2008)
 
-#3 Results
+# 3 Results
 
 * we compare SGNS-trained vectors to vectors trained by ... GloVe
 * We
@@ -63,7 +63,7 @@ EMNLP 2017 (best paper honorable mention)
 
     TODO
 
-#Conclusion
+# Conclusion
 
 * vectors lie on a narrow primary axis that is effectively non-negative
 * further work

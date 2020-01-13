@@ -2,7 +2,7 @@ R Cotterell, H Schütze, J Eisner
 Morphological smoothing and extrapolation of word embeddings
 ACL 2016
 
-#Abstract
+# Abstract
 
 * We ... exploiting existing morphological resources 
   that can enumerate a word’s component morphemes
@@ -15,11 +15,11 @@ ACL 2016
   and [okosított] word similarity
   * large improvements over strong baselines
 
-#1 Introduction
+# 1 Introduction
 
 * Our proposed method runs as a fast postprocessor [on] word embeddings
 
-#7 Related Work 5
+# 7 Related Work 5
 
 * Faruqui+ (2015) ... designed a retrofitting procedure 
 * Wieting+ (2015) compute compositional embeddings of phrases, with their
@@ -53,7 +53,7 @@ ACL 2016
   Morphemes were combined into words by concatenating strings 
   * then applying a stochastic edit process (modeling phonology)
 
-#8 Experiments
+# 8 Experiments
 
 * three experiments
   1. identify a corpus word 
@@ -69,14 +69,14 @@ ACL 2016
   * characterized in Table 6: 
 * the noun and verb sense of bats are separate types in L
 
-##8.1 Experiment 1: Extrapolation vs. Analogy 6
+## 8.1 Experiment 1: Extrapolation vs. Analogy 6
 
 * uses embeddings for word selection
 * task is to identify the unique word i ∈ C 
   that expresses the morphological attributes M i
 * we ... choose the most similar unsmoothed word by cosine distance
 
-##8.2 Experiment 2: Held-Out Evaluation 8
+## 8.2 Experiment 2: Held-Out Evaluation 8
 
 * evaluate the smoothed and extrapolated representations
 * [whether] our approach improves the embeddings of the entire vocabulary, 
@@ -87,7 +87,7 @@ ACL 2016
   * the word2vec skip-gram objective on held-out data—
     as one would evaluate a language model
 
-##8.3 Experiment 3: Word Similarity 9
+## 8.3 Experiment 3: Word Similarity 9
 
 * using the WS-353 data set (Finkelstein+ 2001), 
   translated into Spanish (Hassan & Mihalcea, 2009) and German (Leviant, 2016).
@@ -98,7 +98,7 @@ ACL 2016
 * In essence, our approach embeds a lemma as the average of all [infled forms]
   after “correcting” those forms by subtracting off their other morphemes
 
-#9 Conclusion and Future Work 9
+# 9 Conclusion and Future Work 9
 
 * Future work will consider the role of 
   * derivational morphology in embeddings as well as 

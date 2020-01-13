@@ -26,7 +26,7 @@ The Dangers of Following Trends in Research:
   * we provide an overview on use of sparsity and then discuss
     a couple of specific problems
 
-#II.Sparsity in signal processing and machine learning
+# II.Sparsity in signal processing and machine learning
 
 * before the trend
 	* reasons to favor sparsity
@@ -61,7 +61,7 @@ The Dangers of Following Trends in Research:
     challenged in recent work
 * Next, we give examples of the other pitfalls
 
-##A. Analysis of Functional Magnetic Resonance Imaging Data
+## A. Analysis of Functional Magnetic Resonance Imaging Data
 
 * In the promotion of a new tool, one practice is
   identifying the **main competitor** for the given application domain and then
@@ -87,7 +87,7 @@ The Dangers of Following Trends in Research:
 * another dangerous habit is the propagation of references without [reading]
   * [13] ... became a standard reference when promoting DL for fMRI analysis
 
-##B. Color Image Representation
+## B. Color Image Representation
 
 * two [+1] common optimization approaches used with sparse problems
   1. obtains the sparsest solution that satisfies a modeling error constraint
@@ -95,7 +95,7 @@ The Dangers of Following Trends in Research:
   3. use a regularization parameter as a weighting factor between the error
      term and the sparsity term, usually through the `l_1`-norm
 
-##C. Performance Comparisons
+## C. Performance Comparisons
 
 *	accuracy, computational speed, ... robustness, reproducibility,
   interpretability, ease of implementation, memory requirements
@@ -105,7 +105,7 @@ The Dangers of Following Trends in Research:
   * often inadequately explored in the sparsity papers
 * sensitivity of the method to the choice of the regularization parameter
 
-#III. Discussion
+# III. Discussion
 
 * AlphaGo success is not only thanks to deep nets as reported in the media, but
   [also] Monte Carlo tree search procedure [20]

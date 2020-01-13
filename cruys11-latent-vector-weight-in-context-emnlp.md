@@ -11,7 +11,7 @@ EMNLP 2011
   * better results than state-of-the-art methods in lexical substitution, while
     at the same time providing more accurate meaning representations
 
-#1 Introduction
+# 1 Introduction
 
 * methods to tackle language’s ambiguity, ranging from
   * coarser-grained sense inventories (Hovy+ 2006) and
@@ -22,7 +22,7 @@ EMNLP 2011
     * This research inscribes itself in the same line of thought
       i.e. the meaning representation of a word is adapted ‘on the fly’,
 
-#Related work
+# Related work
 
 * Lin (1998) uses the dependency relations ...  as context features
 * An overview of dependency-based semantic space models ( Padó and Lapata 2007)
@@ -58,12 +58,12 @@ EMNLP 2011
     (‘senses’). Contextualized meaning is then modeled as a change in the
     original sense distribution
 
-#3 Methodology of our method
+# 3 Methodology of our method
 the factorization model, and the computation of meaning in context
 
-#4 Evaluation on a lexical substitution task, both for English and French. The
+# 4 Evaluation on a lexical substitution task, both for English and French. The
 
-#5 conclusions and topics that deserve further exploration
+# 5 conclusions and topics that deserve further exploration
 
 * topics ... we consider worth exploring in the future. First of all, we would
   * optimal configuration for combining window-based and dependency-based

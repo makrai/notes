@@ -2,7 +2,7 @@ Ang Lu, Weiran Wang, Mohit Bansal, Kevin Gimpel, and Karen Livescu
 Deep Multilingual Correlation for Improved Word Embeddings
 NAACL 2015
 
-#Abstract
+# Abstract
 
 * Adding multilingual context when learning embeddings can improve their
   quality, for example via canonical correlation analysis (CCA) on embeddings

@@ -2,7 +2,7 @@ A survey of opinion mining and sentiment analysis
 B Liu, L Zhang
 chapter in Mining text data, 2012 - Springer
 
-#Abs 415
+# Abs 415
 
 * This survey covering published literature during 2002-2015, is
 * organized on the basis of
@@ -10,9 +10,9 @@ chapter in Mining text data, 2012 - Springer
   * techniques used and
   * applications
 
-#1 Intro
+# 1 Intro
 
-##1.1 Earlier reviews
+## 1.1 Earlier reviews
 
 * Pang+ (2008) performed an extensive survey of more than three hundred
   papers by covering applications, common challenges for sentiment analysis,
@@ -86,9 +86,9 @@ chapter in Mining text data, 2012 - Springer
   1. the exploited lexica are listed in Table 10, and
   1. summary of one hundred and sixty one articles is presented in Table 10
 
-#2. background information related to the survey
+# 2. background information related to the survey
 
-#3. SOTA discussion on SA covering common issues listed in previous paragraph
+# 3. SOTA discussion on SA covering common issues listed in previous paragraph
 
 * subsection 3.1--subsection 3.5 discuss different tasks and sub-tasks 
   along with applied approaches and techniques
@@ -100,10 +100,10 @@ chapter in Mining text data, 2012 - Springer
 * ontology and non-ontology based approaches are considered 
   for lexicon creation and aspect extraction
 
-###3.2.1.1 Machine learning based approaches [to Polarity determination]
+### 3.2.1.1 Machine learning based approaches [to Polarity determination]
 
 * subsection 3.6 presents ... applications of SA
 
-#4. discussion..., open issues, and possible applications of sentiment analysis
+# 4. discussion..., open issues, and possible applications of sentiment analysis
 
-#5. concluded in section 5
+# 5. concluded in section 5

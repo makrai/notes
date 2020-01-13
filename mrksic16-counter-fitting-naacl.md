@@ -4,7 +4,7 @@ naacl 2016
 
 tool and word vectors are available at github.com/nmrksic/counter-fitting
 
-#Abstract
+# Abstract
 
 * we present a novel counter-fitting method which
 * injects antonymy and synonymy constraints into vector space representations
@@ -13,7 +13,7 @@ tool and word vectors are available at github.com/nmrksic/counter-fitting
 * can be used to tailor the word vector space for the downstream task of
   dialogue state tracking, resulting in robust improvements across domains
 
-#1 Introduction
+# 1 Introduction
 
 * word representations supported by the distributional hypothesis + corpora
   (Curran, 2003; Ó Séaghdha & Korhonen, 2014; Mikolov+ 2013; Pennington+ 2014)
@@ -29,7 +29,7 @@ tool and word vectors are available at github.com/nmrksic/counter-fitting
 * counter-fitting, is a lightweight post-processing procedure in the spirit of
   retrofitting (Faruqui+ 2015)
 
-#2 Related Work
+# 2 Related Work
 
 * improving word vector representations using lexical resources has focused
   * modify the prior or the regularization of the original training procedure

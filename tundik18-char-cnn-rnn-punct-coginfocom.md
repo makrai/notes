@@ -3,7 +3,7 @@ Joint Wordand Character-level Embedding CNN-RNN Models
   for Punctuation Restoration
 Coginfocom 2018
 
-#Abstract
+# Abstract
 
 * The sequence-to-sequence modelling paradigm, biLSTM
 * The current paper proposes to
@@ -13,7 +13,7 @@ Coginfocom 2018
     character~ and on word-level features, and demonstrate significant
   * evaluation ... on a Hungarian Broadcast Dataset and on the IWSLT English ds
 
-#INTRODUCTION
+# INTRODUCTION
 
 * [our previous work] on automatic punctuation of ASR at CogInfoCom 2017 [1],
   * relies on text processing, whereas the second one on
@@ -39,17 +39,17 @@ Coginfocom 2018
     * rely on very basic low-level features in cognitive tasks [15].  The
     * success of Convolutional Neural Net- works (CNN) in [speech] [16], [17]
 
-#II Hungarian and English Datasets in Section II
+# II Hungarian and English Datasets in Section II
 
-##A. The Hungarian Broadcast Dataset
+## A. The Hungarian Broadcast Dataset
 
 * punctuation marks ... in- clude commas, periods, question marks and exclamat
 
-#III word-level, character-level, and hybrid punctuation restoration models
+# III word-level, character-level, and hybrid punctuation restoration models
 
 * closing with a weighted ensemble so- lution, in Section III
 
-#IV The evaluation of system performance with objective measures
+# IV The evaluation of system performance with objective measures
 
 * The character-level approach is very simple with few vocabulary entries,
   still it yielded a punctuation performance close to the one seen with

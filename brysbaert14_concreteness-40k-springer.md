@@ -2,7 +2,7 @@ Marc Brysbaert & Amy Beth Warriner & Victor Kuperman
 Concreteness ratings for 40 thousand generally known English word lemmas
 Behav Res (2014) 46:904–911
 
-#Abstract 
+# Abstract 
 
 * Concreteness ratings are presented for 37,058 English words and 2,896 2-word
   expressions (such as zebra crossing and zoom in), 
@@ -12,7 +12,7 @@ Behav Res (2014) 46:904–911
   a comparison with the existing concreteness norms indicates that
   participants, as before, largely focused on visual and haptic [tapintási]
 
-#Intro
+# Intro
 
 * Concreteness evaluates the degree to which the concept denoted by a word
   refers to a perceptible entity. The variable came to the foreground in

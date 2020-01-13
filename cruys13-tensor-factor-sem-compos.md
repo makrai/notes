@@ -2,7 +2,7 @@ Tim Van de Cruys, Thierry Poibeau, Anna Korhonen
 A Tensor-based Factorization Model of Semantic Compositionality
 naacl 2013
 
-#Abstract
+# Abstract
 
 * compositionality is modeled as a multi-way interaction 
   between latent factors, which are automatically constructed from corpus data
@@ -12,7 +12,7 @@ naacl 2013
 * evaluated on a similarity task for transitive phrases
   * with modified mertric, it exceeds SOTA
 
-#1 Intro
+# 1 Intro
 
 * reconcile ... distributional semantics with the principle of compositionality
   * Mitchell and Lapata, 2008
@@ -29,7 +29,7 @@ naacl 2013
       the matrix models the way it changes the meaning of neighbouring phrases
 * multiplication often seems to produce the best results (Blacoe & Lapata 2012)
 
-#2. previous distributional work [for] computing compositionality
+# 2. previous distributional work [for] computing compositionality
 
 * Closely related to [compositionality is] word meaning in context
   * Erk and Padó (2008, 2009) make use of selectional preferences
@@ -50,9 +50,9 @@ naacl 2013
       construction of the tensor
     * [we?] use ... parallel factor analysis (Harshman and Lundy, 1994)
 
-#3. method [and] mathematical machinery 3
+# 3. method [and] mathematical machinery 3
 
-##3.2 The construction of latent noun factors
+## 3.2 The construction of latent noun factors
 
 * Non-negative matrix factorization (NMF) ... from standard co-occurrence data
   * [we minimize] the Kullback-Leibler (KL) divergence
@@ -60,12 +60,12 @@ naacl 2013
   * computed [by] alternating between the two iterative update rules
     * converge[s] to a local minimum in the KL divergence
 
-##3.3 Modeling multi-way interactions
+## 3.3 Modeling multi-way interactions
 
 * inspired by ... Tucker decomposition (Tucker, 1966), although 
   our own model instantiation differs significantly
 
-###3.3.1 Tucker decomposition
+### 3.3.1 Tucker decomposition
 
 * also known as higher order singular value decomposition (HOSVD) 
   (De Lathauwer+ 2000) 
@@ -74,16 +74,16 @@ naacl 2013
 * matrices `A, B`, and `C` represent the latent factors for each mode,
 * `G` indicates the level of interaction between the ... latent factors
 
-###3.3.2 Reconstructing a Tucker model from two-way factors
+### 3.3.2 Reconstructing a Tucker model from two-way factors
 
 * Computing the Tucker decomposition [is rather costly in] time and memory
   * not unique
 * we consider the factor matrices as given [from our first step],
 * the first mode is represented by its original instances
 
-##3.4 The composition of SVO triples
+## 3.4 The composition of SVO triples
 
-#4. Examples 5
+# 4. Examples 5
 
 1.
   * we compute the outer product `w_athlete ◦ w_race`
@@ -97,7 +97,7 @@ naacl 2013
   damage,(man,car) ...  crash (.43), drive (.35), ride (.35)
   damage,(car,man) ...  scare (.26), kill (.23), hurt (.23)
 
-#5. Evaluation, quantitative 6
+# 5. Evaluation, quantitative 6
 
 * similarity task for transitive sentences (Grefenstette and Sadrzadeh 2011a)
   * an extension of the similarity task for compositional models
@@ -109,7 +109,7 @@ naacl 2013
   * Grefenstette and Sadrzadeh’s (2011b) best scoring model ... outer product
     * "categorical"
 
-##5.2 Implementational details
+## 5.2 Implementational details
 
 * UKWAC corpus (Baroni+ 2009), a 2 billion word [web]corpus
 * nouns: 10 K nouns, cross-classified by 2 K context words
@@ -118,7 +118,7 @@ naacl 2013
   * weighted using a three-way extension of PMI (Van de Cruys, 2011)
   * We set K = 300 as our number of latent factors
 
-#6 Conclusion
+# 6 Conclusion
 
 * future work issues
  1. more compositional phenomena [and] a differing number of modes

@@ -2,14 +2,14 @@ An example for natural language understanding and the ai problems it raises
 John McCarthy
 1976
 
-#1 The story
+# 1 The story
 
 * real event
   * a question as what does the “J” in “John J. Hug” stand for has an answer
   * In a made-up story, [such] questions ... do not necessarily have an answer,
     and an intelligent person or program would know that
 
-#2 Artificial natural language
+# 2 Artificial natural language
 
 components:
 1. formalism capable of expressing the assertions of the sentences
@@ -41,7 +41,7 @@ components:
     * questions [and answers] expressed in the “fact” language
       [to] avoid grammar problems
 
-#3 The use of logical formulas
+# 3 The use of logical formulas
 
 * individual constants 5representing people, groups of people, the main event
   and its sub-events, places, organizations, etc
@@ -56,7 +56,7 @@ components:
     * the group robbed the store, [not] each member robbed the store
   * We don’t want to assert how many there were
 
-#4 The need for nonmonotonic reasoning
+# 4 The need for nonmonotonic reasoning
 
 * After reading the story, one is prepared to answer negatively the question of
   whether there was someone else besides Mr. Hug and the robbers present.
@@ -75,7 +75,7 @@ components:
 * Another problem [is the isolation] from the rest of the world. 
   * The members of the Police Emergency Squad all have mothers 
 
-#5 CONCLUSION
+# 5 CONCLUSION
 
 * [each] predicate calculus sentence ... is generated approximately from a
   sentence of the story 

@@ -4,7 +4,7 @@
 
 https://github.com/largelymfs/topical_word_embeddings
 
-#Abstract
+# Abstract
 
 * word ambiguity
 * we
@@ -21,7 +21,7 @@ https://github.com/largelymfs/topical_word_embeddings
   * exceed latent topic models and other representative document models
     * on text classification
 
-#1 Intro
+# 1 Intro
 
 * problem with Huang+ (2012)
     * ignore complicated correlations among ... contexts
@@ -65,9 +65,9 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
       2: a (szó, téma) párok alkotják a szókincset
       3: a szó és a témavektor konkatenáltja reprezentál egy szót
 
-#2 Our Models
+# 2 Our Models
 
-##2.4 Optimization and Parameter Estimation
+## 2.4 Optimization and Parameter Estimation
 
 * similar optimization scheme as that of Skip-Gram used in (Mikolov+ 13)
   SGD + back-propagation
@@ -77,7 +77,7 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
     this topics, and learn topic embed- dings while keeping word embeddings
     unchanged
 
-#3 Experiments
+# 3 Experiments
 
 ## Contextual Word Similarity
 
@@ -118,7 +118,7 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
       * LDA-C regards the context sentence c
   * Skip-Gram
 
-##Text Classification
+## Text Classification
 
 * Datasets and Experiment Setting
   * 20NewsGroup
@@ -137,7 +137,7 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
     * Skip-Gram
     * and Paragraph Vector (PV) models (Le and Mikolov 2014)
 
-#Future Work
+# Future Work
 
 * number of topics
   * LDA the topic number must be pre-defined

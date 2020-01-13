@@ -2,7 +2,7 @@ Yanfeng Sun, Junbin Gao, Xia Hong, Yi Guo and Chris J. Harris
 Dimensionality Reduction Assisted Tensor Clustering
 2014 IJCNN July 6-11, 2014, Beijing, China
 
-#Abstract
+# Abstract
 
 * based on tensor Tucker decomposition models
 * an extra tensor mode is formed
@@ -13,7 +13,7 @@ Dimensionality Reduction Assisted Tensor Clustering
 * experiments ... yield comparable or even better performance
   compared to most recent clustering algorithms based on matrix factorization
 
-#1 Intro
+# 1 Intro
 
 * trend in tensor decomposition research is to introduce more structures in
   decomposition models
@@ -35,10 +35,10 @@ Dimensionality Reduction Assisted Tensor Clustering
     * we extend [our] tensor clustering algorithms to semi-supervised learning
   3. both learning stages are [simultaneous]
 
-#2 reviewing the concepts of tensors and introducing necessary notations
+# 2 reviewing the concepts of tensors and introducing necessary notations
 
-#3 algorithm for each proposed model
+# 3 algorithm for each proposed model
 
-#4 numerical experiments over synthetic data and real world data
+# 4 numerical experiments over synthetic data and real world data
 
-#5 Further analysis and conclusion
+# 5 Further analysis and conclusion

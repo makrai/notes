@@ -5,7 +5,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
 * Notes during the talk
   * Babelfy is the state-of-the-art graphical appoach to wsd-delinking
 
-#Abstract
+# Abstract
 
 * the disambiguated [word in the definitions] are
   * directly connected to the definiendum
@@ -14,7 +14,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * 263 languages
   * freely available at http://lcl.uniroma1.it/disambiguated-glosses
 
-#1 Introduction
+# 1 Introduction
 
 * definitional knowledge has proved to be key in achieving state-of-the-art
   * Word Sense Disambiguation
@@ -38,7 +38,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * extrinsically on Open Information Extraction and Sense Clustering tasks
     * two state-of-the-art systems
 
-#2 Related Work
+# 2 Related Work
 
 * WordNet glosses have still been used successfully _in recent work_
   * Khan+ 2013;
@@ -88,7 +88,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * produce a large-scale high-quality corpus of glosses,
     * automatically disambiguated with BabelNet synsets
 
-#3 Methodology
+# 3 Methodology
 
 * combination of different languages and resources
 * problem:
@@ -96,7 +96,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * lack of meaningful context would negatively affect the performance of
   * a Word Sense Disambiguation/Entity Linking system
 
-#3.1.  Context-rich Disambiguation
+# 3.1.  Context-rich Disambiguation
 
 * context enrichment procedure by
   * collecting all the definitions of this synset
@@ -105,7 +105,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * state-of-the-art graph-based approach to Entity Linking and WSD,
     * Babelfy 8 (Moro+ 2014)
 
-#3.2.  Disambiguation Refinement
+# 3.2.  Disambiguation Refinement
 
 * TODO megérteni
 * NASARI
@@ -121,20 +121,20 @@ A Large-Scale Multilingual Disambiguation of Glosses
   * discard low-confidence disambiguated instances and
   * correct the original disambiguation output by Babelfy in some cases
 
-#4 Statistics p3
+# 4 Statistics p3
 
 * verbs, adjectives and adverbs [are] often harder to disambiguate 
   as they are not directly related to the definiendum
 
-#5 Evaluation p4
+# 5 Evaluation p4
 
-#5.1.  Intrinsic evaluation
+# 5.1.  Intrinsic evaluation
 
 * manually assessing the quality of disambiguation
 
-#5.2 Extrinsic evaluation
+# 5.2 Extrinsic evaluation
 
-###5.2.1. Open Information Extraction
+### 5.2.1. Open Information Extraction
 
 * before the high-precision refinement, ... focused on
 * DefIE (Delli Bovi+ 2015)
@@ -143,7 +143,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
       * relation instances [syntactic dependencies]
 * Open Information Extraction (OIE) system
 
-###5.2.2. Sense Clustering 
+### 5.2.2. Sense Clustering 
 
 * this experiment evaluates our refined high-precision corpus
   * Knowledge resources such as Wikipedia or WordNet
@@ -167,6 +167,6 @@ A Large-Scale Multilingual Disambiguation of Glosses
       * 4.4M synsets covered by the default NASARI
       * 4.6M synsets covered by NASARI enriched
 
-#6 Release
+# 6 Release
 
-#7 Conclusion
+# 7 Conclusion

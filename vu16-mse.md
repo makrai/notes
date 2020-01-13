@@ -2,7 +2,7 @@ K-Embeddings: Learning Conceptual Embeddings for Words using Context
 T Vu, DS Parker 
 naacl 2016
 
-#Abstract
+# Abstract
 
 * two phases
   1. resembles existing methods, but 

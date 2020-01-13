@@ -4,7 +4,7 @@ NAACL 2019
 
 https://github.com/cambridgeltl/sw_study
 
-#Abstract
+# Abstract
 
 * subword-level information (e.g., characters, character n-grams, morphemes)
 * especially for morphologically rich languages
@@ -30,7 +30,7 @@ https://github.com/cambridgeltl/sw_study
   * We also show that more sophisticated configurations are particularly useful
     for representing rare words
 
-#1 Introduction
+# 1 Introduction
 
 * Word representations are central to a wide variety of NLP tasks
   * Collobert+ 2011
@@ -90,9 +90,9 @@ https://github.com/cambridgeltl/sw_study
     representation? Can more advanced techniques based on position embeddings
     and self-attention yield better task performance?
 
-#2 Methodology
+# 2 Methodology
 
-##2.1 The general framework
+## 2.1 The general framework
 
 `w = f Θ (δ(w), W s , W p)`
 * δ(w) is a deterministic function that segments w into an ordered sequence
@@ -110,11 +110,11 @@ https://github.com/cambridgeltl/sw_study
 * Again, following Bojanowski+ (2017), we calculate the word embedding w t
    and parametrize context words with another word embedding matrix W c
 
-##2.2 segmentation of words into subword units
+## 2.2 segmentation of words into subword units
 
 We consider three well-known segmentation methods for the function δ
 
-###Supervised Morphological Segmentation
+### Supervised Morphological Segmentation
 
 * We use CHIPMUNK (Cotterell+ 2015) as a representative supervised segmentation
   system, proven to provide a good trade-off between accuracy and speed
@@ -122,12 +122,12 @@ We consider three well-known segmentation methods for the function δ
 * For each word, ... it also outputs the corresponding morphotactic tags T w 
   In §2.3 we discuss how to incorporate information from T w
 
-###Morfessor
+### Morfessor
 
 * Morfessor (Smit+ 2014) denotes a family of generative probabilistic models
 * used e.g. to learn morphologically aware word embeddings (Luong+ 2013)
 
-###BPE Byte Pair Encoding (BPE; Gage (1993))
+### BPE Byte Pair Encoding (BPE; Gage (1993))
 
 * a simple data compression algorithm. It has become
 * a de facto standard for providing subword information in NMT (Sennrich+ 2016)
@@ -136,7 +136,7 @@ We consider three well-known segmentation methods for the function δ
   number of iterations can be set in advance to control the granularity of the
   byte combinations 
 
-###[summarized]
+### [summarized]
 
 * An example output for all three methods is shown in Table 1
 * Note that a standard practice in subword-informed models is to
@@ -146,7 +146,7 @@ We consider three well-known segmentation methods for the function δ
     leave the integration of fine-grained information such as inflectional and
     derivational affixes as future work
 
-##2.3 subword and position embeddings
+## 2.3 subword and position embeddings
 
 * For CHIPMUNK,
   * we define each row in W s as the concatenation of the subword s and ... tag
@@ -160,7 +160,7 @@ We consider three well-known segmentation methods for the function δ
       * Gehring+ ICML 2017 Convolutional sequence to sequence learning
       * Mikolov+ 2018
 
-##2.4 composition functions
+## 2.4 composition functions
 
 * A composition function f Θ is then applied to the sequence of subword embeds
   * 1) addition, 2) single-head and 3) multi-head self-attention
@@ -173,11 +173,11 @@ We consider three well-known segmentation methods for the function δ
     * self-attention mechanism, that is, a learnable weighted addition
       * we are the first to apply [it] to the problem of subword composition
 
-###Composition Based on Self-Attention
+### Composition Based on Self-Attention
 
 inspired by Lin+ (2017)
 
-#3 Experimental Setup
+# 3 Experimental Setup
 
 * English (EN), German (DE), Finnish (FI), Turkish (TR) and Hebrew (HE)
 
@@ -190,15 +190,15 @@ inspired by Lin+ (2017)
   * used as insightful baselines
   * FT [generates all character n-grams of length 3 to 6] along with the full w
 
-###Training Setup
+### Training Setup
 
 * grid search of learning rate and batch size for each δ on the German
   WordSim-353 data set (WS; Leviant and Reichart (2015)).   
 * hyperparameters are then fixed for all other languages and evaluation runs
 
-##3.1 Evaluation Tasks
+## 3.1 Evaluation Tasks
 
-###Word Similarity and Relatedness
+### Word Similarity and Relatedness
 
 * Multilingual SimLex-999  for English, German and Hebrew, each containing 999
   (SIMLEX; Hill+ (2015); Leviant and Reichart (2015); Mrkšić+ (2017)) 
@@ -210,7 +210,7 @@ inspired by Lin+ (2017)
 * rare words, we evaluate on the recently released CARD-660 dataset (CARD;
   Pilehvar+ (2018)) for English, annotated for true semantic similarity
 
-###Dependency Parsing
+### Dependency Parsing
 
 * Universal Dependencies treebanks (UD v2.2; Nivre+ (2016))
 * subword-informed word embeddings from different configurations 
@@ -218,7 +218,7 @@ inspired by Lin+ (2017)
   which has shown competitive performance in shared tasks (Dozat+ 2017) and
   among other parsing models (Ma and Hovy, 2017; Shi+ 2017; Ma+ 2018)
 
-###Fine-Grained Entity Typing (Yaghoobzadeh and Schütze, 2015)
+### Fine-Grained Entity Typing (Yaghoobzadeh and Schütze, 2015)
 
 * a suitable semi-semantic task to test our subword models, as
   * the subwords ... usually carry some ... information [on] entity types
@@ -228,13 +228,13 @@ inspired by Lin+ (2017)
   where they stacked all the subwords of entity tokens into a flattened seq
   we use the hierarchical embedding composition instead
 
-#Results and Analysis
+# Results and Analysis
 
-###Q1. Tasks and Languages
+### Q1. Tasks and Languages
 
-###Q2 and Q3. Configurations
+### Q2 and Q3. Configurations
 
-###Further Discussion
+### Further Discussion
 
 * our best configuration ... surpasses all the SOTA models on the rare word
 * accurate representations for rare and unseen words
@@ -245,13 +245,13 @@ inspired by Lin+ (2017)
     Learning semantic representations for novel words:
       Leveraging both form and context
 
-#Conclusion
+# Conclusion
 
 * segmentation and composition methods, or the use of position embeddings, have
   to be carefully tuned
 
-#Acknowledgments
+# Acknowledgments
 
 Roi Reichart for many fruitful discussions
 
-#Supplemental Material 13
+# Supplemental Material 13

@@ -5,7 +5,7 @@ arXiv:1804.06786v2 [cs.CL] 23 May 2018
 * our Wikipedia and British Library data at
 http://www.cs.cornell.edu/ ̃jhessel/ concreteness/concreteness.html
 
-#Abstract
+# Abstract
 
 * concepts with concrete visual manifestations may be easier to learn than
 * We apply the approach in four settings, ranging from image captions to
@@ -16,7 +16,7 @@ http://www.cs.cornell.edu/ ̃jhessel/ concreteness/concreteness.html
   1. the precise positive relationship between concreteness and performance
      varies between datasets
 
-#1. Intro
+# 1. Intro
 
 * Text and images are often used together to serve as a richer form of content
   * e.g

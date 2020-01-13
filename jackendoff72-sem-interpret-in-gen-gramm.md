@@ -4,16 +4,16 @@ Sem interpretation in gen gramm
 
 csak a 2. fejezetet szeretném elolvasni, azt is csak them hier kapcsán
 
-#Preface p5
+# Preface p5
 
 generative semantics: synt and sem are inseparable
 I: the two can be accounted for independently
 
-#1 Outline of the theo p7
+# 1 Outline of the theo p7
 
 interaction between sem and synt rules
 
-##1.1
+## 1.1
 
 * Chomsky:1957: no meaning
 * Katz and Fodor (1963)
@@ -21,7 +21,7 @@ interaction between sem and synt rules
   * by making sem part of gen gramm, more incisive [metsző, éles] study of
     meaning would be possible
 
-##1.2 ...sem component p8
+## 1.2 ...sem component p8
 
 * Katz and Fodor
   * taken for granted is a single hier struct into which the sem content of the
@@ -55,7 +55,7 @@ interaction between sem and synt rules
   * diagram 1.2
 * parallel processing
 
-##1.3 Katz--Postal p9
+## 1.3 Katz--Postal p9
 
 * sem interp is performed by projection rules
   * adds those parts not due to lex items but synt
@@ -81,7 +81,7 @@ interaction between sem and synt rules
     Postal)
   * extremely unconstrained notion of trafo
 
-##1.4 On choosing between two theories p12
+## 1.4 On choosing between two theories p12
 
 * three kinds of differences corresponding to Chomsky:1965's levels of
   observational, descriptive, and explanatory adequacy
@@ -93,7 +93,7 @@ interaction between sem and synt rules
   * Chomsky 1970a Lexical Hypothesis: trafo does not deriv morph
 * other constraint on trafos by Emonds (1970)
 
-##1.5 Elems of sem interpretation p14
+## 1.5 Elems of sem interpretation p14
 
 * Katz and Fodor are interested in synonymy, analyticity, anomaly, truth
   conditions, and actual content
@@ -110,7 +110,7 @@ interaction between sem and synt rules
   * higher pro-verbs (Lakoff 1971, McCawley 1968b), case gramm (Fillmore 1968)
     represent this internal struct in synt
 
-##1.6 Well formedness p15
+## 1.6 Well formedness p15
 
 * some are part of the gramm, others that of pragmatics and konwledge of the
   real world
@@ -122,7 +122,7 @@ interaction between sem and synt rules
 3. Thematic Hier Cond, chaps 2 and 4
 * constraints on the selection of corefs of complement subjects
 
-##1.7 Assumptions about the synt amd the lex p17
+## 1.7 Assumptions about the synt amd the lex p17
 
 * differences from Aspects
   * lexical insertion will be simpler, unrestricted
@@ -134,13 +134,13 @@ interaction between sem and synt rules
   * since than: Lakoff (1971), Chapin (1967) vs Gruber (1967b)
   * we: separate lex items related by morph or sem redundancy rules
 
-##1.8 Remarks on motivating rules p18
+## 1.8 Remarks on motivating rules p18
 
-#2 Gramm rels and the func struct p19
+# 2 Gramm rels and the func struct p19
 
-##2.1 Sem insuff of func rels 
+## 2.1 Sem insuff of func rels 
 
-##2.2 Thematic rels p21
+## 2.2 Thematic rels p21
 
 * based on Gruber
 * which is the theme
@@ -158,33 +158,33 @@ interaction between sem and synt rules
   * unifying various uses of the same morphological verb
   * distribution of reflexives, passive, antecedents for deleted comp subj
 
-##2.3 Thematic relations vs Case Grammar 24
+## 2.3 Thematic relations vs Case Grammar 24
 
 * 1 NP : 1 Case
 * _buy_ and _sell_, _trade sg to sy for x_
 
-##2.4 Correlating thematic rels with deep struct p25
+## 2.4 Correlating thematic rels with deep struct p25
 
-##2.5 The thematic hierarchy condition p28
+## 2.5 The thematic hierarchy condition p28
 
-#3 Adverbs p30
+# 3 Adverbs p30
 
-##3.3 p32
+## 3.3 p32
 
-###3.5.2. p38
+### 3.5.2. p38
 
-##3.11 p50
+## 3.11 p50
 
-#4 Pronouns and reflexives
+# 4 Pronouns and reflexives
 
-#5 Coref and complem
+# 5 Coref and complem
 
-##5.4 p100
+## 5.4 p100
 
-#6 Focus and presupp
+# 6 Focus and presupp
 
-#7 Modal struct
+# 7 Modal struct
 
-#8 Negation
+# 8 Negation
 
-#9 Conclusion and hypotheses 
+# 9 Conclusion and hypotheses 

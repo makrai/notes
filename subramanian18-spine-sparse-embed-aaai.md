@@ -4,7 +4,7 @@ AAAI 2018
 
 https://github.com/harsh19/SPINE
 
-#Abstract
+# Abstract
 
 * Prediction without justification has limited utility
 * neural models ... capture the underlying complexity and latent trends
@@ -16,7 +16,7 @@ https://github.com/harsh19/SPINE
   * much more interpretable than the original GloVe and word2vec embeddings
   * outperform existing popular word embeddings on [diverse] downstream tasks
 
-#Intro
+# Intro
 
 * Distributed representations ... obtain state-of-the-art results in NLP tasks,
   * parsing (Bansal, Gimpel, and Livescu 2014),
@@ -47,9 +47,9 @@ https://github.com/harsh19/SPINE
   Danish, Dahiya, and Talukdar
   2016)
 
-#Related Work
+# Related Work
 
-##Interpretability in word embeddings
+## Interpretability in word embeddings
 
 * Murphy+ (2012) proposed NNSE (Non-Negative Sparse Embeddings)
   * non-negative matrix factorization on the co-occurrence matrix of words
@@ -65,7 +65,7 @@ https://github.com/harsh19/SPINE
   * We direct interested readers to (Faruqui+ 2015; Lee+ 2007)
   * we compare our approach with SPOWV in both performance and interpretability
 
-##k-sparse autoencoders
+## k-sparse autoencoders
 
 * Ng 2011
 * with high probability, at most k hidden units are active for any given input
@@ -79,7 +79,7 @@ https://github.com/harsh19/SPINE
 * Our proposed novel objective function and choice of activation function
   mitigate this issue
 
-#Methodology
+# Methodology
 
 * loss function.  L (D) = RL(D) + λ 1 ASL(D) + λ 2 P SL(D) where
   * RL(D) is the reconstruction loss over the data set,
@@ -90,7 +90,7 @@ https://github.com/harsh19/SPINE
     * "partial"
       * penalizes values that are neither close to 0 nor to 1
 
-##Choice of activation function
+## Choice of activation function
 
 * nonnegativity in the output embeddings is a useful property
 * This drives us to use activation functions that produce non-negative values
@@ -101,7 +101,7 @@ https://github.com/harsh19/SPINE
 * capped ReLU (cap-ReLU) activation function, that
   produces activation values in the [0, 1]
 
-##Hyperparameter tuning
+## Hyperparameter tuning
 
 * We tune our hyperparameters using the automatic metric to evaluate topic
   coherence discussed in Lau+ (2014). The metric
@@ -118,7 +118,7 @@ https://github.com/harsh19/SPINE
   * making the autoencoder denoising,
     attaining embeddings that are 6% more sparse at similar reconstruction loss
 
-##alternate loss consisting of `l_1` regularizer
+## alternate loss consisting of `l_1` regularizer
 
 * instead of PSL and ASL formulation
 * In order to achieve similar levels of topic coherence with this formulation,
@@ -127,14 +127,14 @@ https://github.com/harsh19/SPINE
 * ASL & PSL combination [can] force activations to 0 and 1,
   whereas, `l_1` formulation drives values to 0
 
-#interpretability tests
+# interpretability tests
 
 * We estimate the interpretability of the dimensions in two ways
   * word intrusion detection tests [odd man out]
   * we qualitatively examine the top participating words
     from a few randomly sampled dimensions
 
-##Words intrusion detection
+## Words intrusion detection
 
 * [also called] reading tree leaves (Chang+ 2009)
   * first used to interpret probabilistic topic models
@@ -148,7 +148,7 @@ https://github.com/harsh19/SPINE
       * top 10 percentile in at least one other dimension h 0 ∈ H \ {h}
     * following Murphy, Talukdar, and Mitchell (2012); Faruqui+ (2015)
 
-#Benchmark Downstream Tasks
+# Benchmark Downstream Tasks
 
 * tasks
   * sentiment analysis
@@ -173,23 +173,23 @@ https://github.com/harsh19/SPINE
 
 # Results and Discussion
 
-##Interpretability [in] word intrusion detection task
+## Interpretability [in] word intrusion detection task
 
 * This forms the key result of our effort
 
-##... downstream tasks
+## ... downstream tasks
 
 * [our] embeddings ... perform competitively well on all benchmark tasks, and
   do significantly better on a majority of them
 
-##Qualitative assessment
+## Qualitative assessment
 
 * For a few sampled words, we investigate the
   top words from dimensions where the given word is active
 * Often, our representations [capture different interpretations of a] word
   * e.g. ‘remote’ can be used in various settings: remote areas (like remote
 
-##Retroffiting vs joint learning
+## Retroffiting vs joint learning
 
 * An alternate to [retrofitting] is to add various sparsity and non-negativity
   inducing regularizers when training Word2Vec or GloVe.  One practical
@@ -197,7 +197,7 @@ https://github.com/harsh19/SPINE
   * does not need access to a giant corpus. Moreover, our
   * agnostic to, and abstracted from, the underlying [word embedding] method
 
-##Interpretability and downstream performance
+## Interpretability and downstream performance
 
 * [our] Embeddings ... outperform original [ones] for some downstream tasks
 * counter-intuitive, as an increase in interpretability might have come at the
@@ -213,7 +213,7 @@ https://github.com/harsh19/SPINE
   * extreme case, [one-hot vectors]
     * highly interpretable, but ... perform significantly worse on downstream
 
-##General discussion
+## General discussion
 
 * We attribute the success of our method to the ...  autoencoder framework,
 * non-negativity and sparsity lead to semantically coherent (interpretable) dim
@@ -225,7 +225,7 @@ https://github.com/harsh19/SPINE
   these large weights represent. Hence, this notion of post-hoc inter-
   pretability is more useful in explaining predictions
 
-#Conclusion
+# Conclusion
 
 * future work
   * inducing varying amounts of sparsity

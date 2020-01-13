@@ -4,7 +4,7 @@ Szántó Zsolt, Vincze Veronika, Farkas Richárd
 
 A létrehozott szóvektorok szabadon elérhetők a rgai.inf.u-szeged.hu/w2v oldalon
 
-#Abstract
+# Abstract
 
 * bemutatunk publikusan elérhető magyar nyelvű szóvektorokat, amelyeket
   * 4,3 milliárd szövegszónyi korpuszból építettünk. Az első modellek
@@ -13,13 +13,13 @@ A létrehozott szóvektorok szabadon elérhetők a rgai.inf.u-szeged.hu/w2v olda
 * összehasonlítunk ugyanazon adatbázisból épített szó~ és karakterszintű embed
 * téma~ és véleményosztályozási feladatokon kiértékelve
 
-#2. Szóbeágyazási modellek 334
+# 2. Szóbeágyazási modellek 334
 
 * Jelen cikkben a Facebook kutatói által publikált [3] FastTextet alkalmazzuk,
   * a szavak vektorát kiegészítjük a bennük szereplő karakter 3 és 4 gramokkal
   * skip-gram módszerrel tanítunk szóbeágyazásokat
 
-##3.1. Szóbeágyazások kiértékelése
+## 3.1. Szóbeágyazások kiértékelése
 
 * Véleményosztályozásra az arukereso.hu oldalról letöltött termékértékeléseket
   * Az egyes termékekhez megadható előnyöket és hátrányokat alkalmaztuk pozitív
@@ -28,7 +28,7 @@ A létrehozott szóvektorok szabadon elérhetők a rgai.inf.u-szeged.hu/w2v olda
   * Mindkét esetben tehát bináris dokumentumosztályozási problémát fogalmaztunk
   * a tanító és a kiértékelő adatbázison is az egyes címkék 50-50%-ban
 
-#4. Eredmények
+# 4. Eredmények
 
 * FastText rendszer neuronhálókon [9] alapuló dokumentumosztályozóját
   * sebességben vetekszik a hagyományos lineáris modelleket alkalmazó
@@ -40,4 +40,4 @@ A létrehozott szóvektorok szabadon elérhetők a rgai.inf.u-szeged.hu/w2v olda
   * karakterszintű modell alkalmazásával a témaosztályozás esetén 3,5, míg
     véleménydetekció esetén csekélyebb, 0,4 százalékpontos javulást sikerült
 
-#5. Összegzés
+# 5. Összegzés

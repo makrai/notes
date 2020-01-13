@@ -2,7 +2,7 @@ G. Fagiolo.
 Clustering in complex directed networks. 
 2007 Physical Review E, 76(2): 026107
 
-#Abstract
+# Abstract
 * We 
   * distinguish between CCs that count 
     * all [un]directed triangles in the graph 

@@ -3,7 +3,7 @@ Cross-Lingual Induction and Transfer of Verb Classes
   Based on Word Vector Space Specialisation
 acl 2017
 
-#Abstract
+# Abstract
 
 * Existing approaches to automatic VerbNet-style verb classification are 
   ... limited to languages with mature NLP pipelines
@@ -19,7 +19,7 @@ acl 2017
 * new state-of-the-art verb classification performance
   across all six target languages explored in this work
 
-#Intro
+# Intro
 
 * expressing ... relational information among [the participants of an event] 
   (Jackendoff, 1972; Gruber, 1976; Levin, 1993)
@@ -72,9 +72,9 @@ acl 2017
      * F-1 score from prior work from 0.55 to 0.79 for French, and
      * from 0.43 to 0.74 for Brazilian Portuguese
 
-#Methodology: Specialising for VerbNet
+# Methodology: Specialising for VerbNet
 
-##Motivation: Verb Classes and VerbNet
+## Motivation: Verb Classes and VerbNet
 
 * VerbNet is a hierarchical, domain-independent, broad-coverage verb lexicon
   based on Levin’s classification and taxonomy of English (EN) verbs
@@ -103,9 +103,9 @@ acl 2017
   * clustering algorithm is then run
     on top of the VerbNet-specialised representations ... (Sect. 2.2)
 
-##2.1 Vector Space Specialisation
+## 2.1 Vector Space Specialisation
 
-###Specialisation Model
+### Specialisation Model
 
 * state-of-the-art specialisation model ... termed PARAGRAM (Wieting+ 2015)
   * ATTRACT constraints ... word pairs standing in desirable lexical relations;
@@ -123,7 +123,7 @@ acl 2017
 * VerbNet classes [contain verbs] in a variety of lexical relations,
   including synonyms, antonyms, troponyms, hypernyms
 
-##2.2 Clustering
+## 2.2 Clustering
 
 * we employ the MNCut spectral clustering algorithm (Meila and Shi, 2001),
   * Following Brew and Schulte im Walde, (2002); Sun+ (2009+)
@@ -134,25 +134,25 @@ acl 2017
   * Again, following prior work (Sun+ 2010, 2013)
   * based on the eigenvector structure of the word similarity matrix
 
-#3 Experimental Setup
+# 3 Experimental Setup
 
 * FR, PT, IT, PL, HR, and, FI
 
-##gold standard (Sun+ 2010): these have been developed for
+## gold standard (Sun+ 2010): these have been developed for
 
 * FR (Sun+ 2010),
 * PT (Scarton+ 2014),
 * IT, PL, HR, and FI (Majewska+ 2017)
 * based on the EN gold standard of Sun+ (2008)
 
-#4 Results
+# 4 Results
 
-##Starting Source Vector Space Fig. 2a
+## Starting Source Vector Space Fig. 2a
 
 * small but consistent gains with SGNS-DEPS, which utilises ... dependency
   * (Padó and Lapata, 2007; Levy and Goldberg, 2014)
 
-##Bilingual vs. Multilingual
+## Bilingual vs. Multilingual
 
 * The transfer model can operate with more than two languages, effectively
 * model relies on more constraints
@@ -163,13 +163,13 @@ acl 2017
   * additional languages do not lead to clear improvements
     * procedure becomes dominated by cross-lingual constraints
 
-##Clustering Algorithm
+## Clustering Algorithm
 
 * K-means clustering [results are] lower
 * hierarchical agglomerative clustering with Ward’s linkage (Ward, 1963),
   * on par with spectral clustering
 
-##Verb Classification vs. Semantic Similarity
+## Verb Classification vs. Semantic Similarity
 
 * correlation between verb classification and semantic similarity
   (Baker+ 2014)
@@ -179,7 +179,7 @@ acl 2017
 * VerbNet-style class membership is definitely
   not equivalent to pure semantic similarity captured by SimVerb
 
-##4.1 Further Discussion and Future Work
+## 4.1 Further Discussion and Future Work
 
 * verb polysemy
   * [recent] polysemy-aware verb classification models for English

@@ -2,13 +2,13 @@ Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
 Factors Influencing the Surprising Instability of Word Embeddings
 naacl 2018
 
-#Abstract
+# Abstract
 
 * even relatively high frequency words (100-200 occurrences) are often
   unstable. We provide empirical evidence for how various factors contribute
 * we analyze the effects of stability on [word similarity and POS tagging]
 
-#1 Intro
+# 1 Intro
 
 * factors that play a role in the stability of word embeddings, including
   properties of the data, ... the algorithm, and ... the words
@@ -38,7 +38,7 @@ naacl 2018
     typical first-order embeddings. Here,
   * we use second-order properties of embeddings to quantify stability
 
-#3 Defining Stability
+# 3 Defining Stability
 
 * using cosine similarity
   * comparable results for ... l 1 norm, l 2 norm, and l ∞ norm
@@ -56,7 +56,7 @@ naacl 2018
   * We see this pattern for low frequency words as well as for high frequency
     words
 
-#4 Factors Influencing Stability
+# 4 Factors Influencing Stability
 
 * we build a regression model that aims to predict the stability of a word
   given:
@@ -64,7 +64,7 @@ naacl 2018
   1.  properties of the data used to train the embeddings; and
   1.  properties of the algorithm used to construct these embeddings
 
-##4.1 Word Properties
+## 4.1 Word Properties
 
 * (most frequent) and ... (second most frequent) POS
   * If the word is not present in the Brown corpus, then all of these POS
@@ -76,7 +76,7 @@ naacl 2018
   * finer-grained representation, we use the number of different WordNet senses
 * number of syllables in a word, determined using the CMU Pronuncing Dictionary
 
-##4.3 Data Properties
+## 4.3 Data Properties
 
 * two sources: New York Times (NYT) (Sandhaus, 2008) and Europarl (Koehn, 2005)
 * seven domains of data: (1) NYT U.S., (2) NYT New York and Region, (3) NYT
@@ -107,7 +107,7 @@ naacl 2018
       space A and ... B (represented as percentages of ... sentences)
     * We further include the absolute difference between these percentages
 
-##4.4 Algorithm Properties
+## 4.4 Algorithm Properties
 
 * different algorithms being used, as well as the different parameter settings
 * window size and minimal count: standard parameter settings
@@ -115,7 +115,7 @@ naacl 2018
   100 iterations for higher dimensions
 * dimensions: 50, 100, 200, 400, or 800
 
-#5 Lessons Learned: What Contributes to the Stability of an Embedding
+# 5 Lessons Learned: What Contributes to the Stability of an Embedding
 
 * the regression model achieves a coefficient of determination (R^2) score
   of 0.301 on the training data[: the model] reasonably fits the training data
@@ -152,9 +152,9 @@ naacl 2018
    * Removing frequency ... gives a score of 0.301
  * ld. a korábbi kérdésemet
 
-#6 Impact of Stability on Downstream Tasks
+# 6 Impact of Stability on Downstream Tasks
 
-##6.1 Word Similarity
+## 6.1 Word Similarity
 
 * we take the absolute difference between our predicted value and the [gold]
   ground-truth value ... broken down by stability of the two words
@@ -163,7 +163,7 @@ naacl 2018
   error decreases
   * why?
 
-##Part-of-Speech Tagging
+## Part-of-Speech Tagging
 
 * bidirectional LSTM implemented using DyNet (Neubig+ 2017). We train
   * input noise rate of 0.1, and recurrent dropout of 0.4
@@ -172,6 +172,6 @@ naacl 2018
   [greater stability], but also leads to much worse performance
 * In general, lower stability words are shifted more during training
 
-#7 Conclusion and Recommendations
+# 7 Conclusion and Recommendations
 
 * future tasks, we recommend ... learning a good curriculum for word2vec

@@ -1,4 +1,4 @@
-#Abstract
+# Abstract
 
 * This article evaluates three proposed laws of semantic change. Our claim is
   * the proposed negative correlation between meaning change and word frequency

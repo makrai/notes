@@ -4,7 +4,7 @@ Computational Intelligence, Volume 29, Number 3, 2013
 
 This paper expands on work first published in Mohammad and Turney (2010)
 
-#Abstract
+# Abstract
 
 * large, high-quality, word--emotion and word--polarity association lexicon
 * [solutions] in emotion annotation in a crowdsourcing scenario
@@ -15,7 +15,7 @@ This paper expands on work first published in Mohammad and Turney (2010)
   * asking if a term is _associated_ with an emotion leads to markedly higher
     interannotator agreement than that obtained by asking if a term _evokes_ it
 
-#1 Introduction
+# 1 Introduction
 
 * emotions in text, automatic analysis
   * facial expressions (Aristotle 1913; Russell 1994)
@@ -45,4 +45,4 @@ This paper expands on work first published in Mohammad and Turney (2010)
   1. Which emotions tend to go together
 * Our lexicon now has close to 10,000 terms
 
-#2. APPLICATIONS
+# 2. APPLICATIONS

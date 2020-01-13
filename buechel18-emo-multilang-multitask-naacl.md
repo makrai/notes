@@ -15,7 +15,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * The orthorgonal constraint ... probably is not significantly helpful when
     the evaluation metric is ranking based
 
-#Abstract
+# Abstract
 
 * Predicting the emotional value of lexical items is a well-known problem
   * research has focused on polarity for quite a long time
@@ -46,7 +46,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * competitive to human annotation reliability
     in terms of inter-study as well as split-half reliability
 
-#1 Introduction
+# 1 Introduction
 
 * terms _polarity_ and _emotion_ here
   * polarity: “semantic orientation” (Hatzivassiloglou and McKeown, 1997)
@@ -77,9 +77,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       Hao Peng, Sam Thomson, and Noah A. Smith. ACL 2017
       Deep multitask learning for semantic dependency parsing
 
-#2 Related work 2
+# 2 Related work 2
 
-##Emotion Representation and Data Sets
+## Emotion Representation and Data Sets
 
 * Psychological models of emotion can typically be subdivided into
   * discrete (or categorical) and
@@ -107,7 +107,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * emotion prediction can be seen as a generalization over classical
   2. diversity of available emotion lexicons with VAD encodings is large[st]
 
-##Word Embeddings
+## Word Embeddings
 
 * Word2vec (with its variants SGNS and CBOW) features an extremely trimmed NN
 * FastText is a derivative of Word2vec, also incorporating sub-word
@@ -154,7 +154,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   with one hidden layer in combination with boosting (Du and Zhang, 2016)
 * supervised, Li+ (2017) propose ridge regression, again using word embeddings
 
-##Sentence-Level and Text-Level Prediction 4
+## Sentence-Level and Text-Level Prediction 4
 
 * DL approaches
 * fully established as the method of choice
@@ -167,20 +167,20 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * for word embeddings (the default input for word emotion induction),
     there does not seem to be any meaningful order of their components
 
-#3 reference methods and our proposed deep MTL model
+# 3 reference methods and our proposed deep MTL model
 
-##3.1 Reference Methods
+## 3.1 Reference Methods
 
 (two originally polarity-based [which adaptat] for VAD prediction)
 
-###Linear Regression Baseline (LinReg)
+### Linear Regression Baseline (LinReg)
 
-###Ridge Regression (RidgReg),
+### Ridge Regression (RidgReg),
 
 * Li+ (2017) propose [it] for word emotion
 * identical[] to linear regression during prediction, but introduces L 2 regu
 
-###Turney-Littman Algorithm (TL)
+### Turney-Littman Algorithm (TL)
 
 * one of the earliest contributions in the field, Turney and Littman (2003)
 * a simple PMI-based approach to determine the semantic polarity of a word w
@@ -192,7 +192,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   3. introduce a normalization term
     such that emo(w) T L lies within the range of the seed lexicon
 
-###Densifier
+### Densifier
 
 * Rothe+ (2016) train an orthogonal matrix Q ∈ R n×n
 * To adapt this algorithm to dimensional emotion formats,
@@ -210,7 +210,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     based on a pilot study. Since the original
   * implementation is not accessible, we devised our own using tensorflow.org
 
-###Boosted Neural Networks (ensembleNN)
+### Boosted Neural Networks (ensembleNN)
 
 * Du and Zhang (2016) propose simple FFNNs in combination with a boosting
 * Boosting: several weak estimators are combined to form a strong estimator
@@ -219,7 +219,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * boosting algorithm AdaBoost.R2 (Drucker, 1997) was used to train the
   * Our re-implementation copies their[s] exactly using scikit-learn
 
-##3.2 Multi-Task Learning Neural Network
+## 3.2 Multi-Task Learning Neural Network
 
 * We use leaky ReLU activation (LReLU) as nonlinearity (Maas+ 2013)
 * dropout (Srivastava+ 2014) is applied during training
@@ -230,14 +230,14 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   biases are uniformly initialized as .01
   Tensorflow is used for implementation
 
-#4 Results 7
+# 4 Results 7
 
 * In this section, we
   * validate our assumption that MTL is superior to single-task learning
   * we compare our proposed MTLNN model in a large-scale evaluation
 * Performance figures will be measured as Pearson correlation (r)
 
-##4.1 Single-Task vs. Multi-Task Learning
+## 4.1 Single-Task vs. Multi-Task Learning
 
 * each combination of model and data set displays a satisfactory performance of
   at least r ≈ .75 after 15,000 steps compared to previous work (see below)
@@ -252,7 +252,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * MTLNN model [converging in] about a minute on a middle-class GPU). This is
     * only about a third as many parameters as the separate model SepNN
 
-##4.2 Comparison against Reference Methods
+## 4.2 Comparison against Reference Methods
 
 * We combined each [lexicon with each] applicable publicly available embedding
   * the embedding model provided by Sedoc+ (2017) will be used separately
@@ -286,7 +286,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * For the EN+ data set, Warriner+ (2013) report  r = .914, .689 and .770
     * our MTLNN model performs very competitive with r = .870, .674 and .758
 
-#5 Conclusion 9
+# 5 Conclusion 9
 
 * future work
   * other format of emotion representation [than VAD]

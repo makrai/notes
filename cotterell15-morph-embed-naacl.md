@@ -2,14 +2,14 @@ Ryan Cotterell and Hinrich Schütze
 Morphological Word-Embeddings
 NAACL 2015
 
-#Abstract
+# Abstract
 
 * Linguistic similarity is multi-faceted: semantics, syntax, or morphology
 * This work considers guiding word-embeddings with morphological annotation
   * extend the log-bilinear model to this end
 * German as a case study
 
-#1 Intro
+# 1 Intro
 
 * We augment the log-bilinear model (LBL) of Mnih and Hinton (2007) 
   with a multi-task objective
@@ -21,7 +21,7 @@ NAACL 2015
   with the next word, encouraging the resulting embeddings to encode [both]
   * present a novel metric and experiments on German as a case study
 
-#2 Related Work
+# 2 Related Work
 
 * no previous [supervised work] to incorporate morphological tags into embeds
 * there has been recent work on incorporating ... segmentations
@@ -44,7 +44,7 @@ NAACL 2015
   * a neural factored LM
   * separate embeddings for each constituent morpheme of a word, summing them
 
-##2.2 Computational Morphology
+## 2.2 Computational Morphology
 
 * much of the information needed to determine a word’s morphological tag is
   encoded in the word itself. For example, the suffix ed is generally
@@ -53,11 +53,11 @@ NAACL 2015
 * our model : isolation of the components of the contextual signature that are
   indeed predictive of morphology
 
-#5 Evaluation
+# 5 Evaluation
 
 * is [it] true that words similar in the embedding space are morph related? yes
 
-##5.1 MorphoDist
+## 5.1 MorphoDist
 
 * We introduce a new evaluation metric for morphologically-driven embeddings
   * are words that are similar in the embedded space also morph related?
@@ -68,9 +68,9 @@ NAACL 2015
   * Levin+ (2013) had a similar motivation for their evaluation of fixed-length
     acoustic embeddings that preserve linguistic similarity
 
-#6 Experiments and Results
+# 6 Experiments and Results
 
-##6.1 Experiment 1: Morphological Content
+## 6.1 Experiment 1: Morphological Content
 
 * We first investigated whether the embeddings learned by Morph-LBL do indeed
   encode morphological information
@@ -79,12 +79,12 @@ NAACL 2015
   as a multiway classification problem. We trained a
   * k nearest neighbors classifier where k was optimized on development data
 
-##6.2 Experiment 2: MorphoDist
+## 6.2 Experiment 2: MorphoDist
 
 * We also evaluated the three types of embeddings 
   using the MorphoDist metric introduced in section 5.1
 
-##6.3 Discussion
+## 6.3 Discussion
 
 * superior performance of Morph-LBL over both the original LBL and word2vec
   under both evaluation metrics
@@ -97,7 +97,7 @@ NAACL 2015
   relationships only making use of the distributional signature, without
   word-internal features
 
-#7 Conclusion and Future Work
+# 7 Conclusion and Future Work
 
 * We [introduced] Morph-LBL, for the semi-supervised induction of
   morphologically guided embeddings

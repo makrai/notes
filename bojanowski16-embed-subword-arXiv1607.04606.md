@@ -3,7 +3,7 @@ arXiv:1607.04606v1 [cs.CL] 15 Jul 2016
 Piotr Bojanowski , Edouard Grave, Arm, Joulin, and Tomas Mikolov
 Facebook AI Research
 
-#Három cikk és két repó
+# Három cikk és két repó
 
 * gyuri 9:50 AM March 8
   * "Bag of Tricks for Efficient Text Classification" irja le az osztalyozást
@@ -17,7 +17,7 @@ Facebook AI Research
 `https://github.com/facebookresearch/fastText`
 https://github.com/facebook/Conditional-character-based-RNN
 
-#Abstract
+# Abstract
 
 * each word is represented as a bag of character n-grams
 * A vector representation is associated to each character n-gram,
@@ -27,7 +27,7 @@ https://github.com/facebook/Conditional-character-based-RNN
   * five different languages, on
   * word similarity and analogy tasks
 
-#1 Introduction
+# 1 Introduction
 
 * continuous representations of words
 * long history (Rumelhart et al., 1988)
@@ -37,9 +37,9 @@ https://github.com/facebook/Conditional-character-based-RNN
   (Turney et al., 2010; Baroni and Lenci, 2010)
 * neural network community (Collobert and Weston 2008)
 
-#2 Related work
+# 2 Related work
 
-##Morphological word representations
+## Morphological word representations
 
 * incorporate morphological information into word representations
 * Alexandrescu and Kirchhoff (2006) introduced factored neural LM
@@ -60,7 +60,7 @@ https://github.com/facebook/Conditional-character-based-RNN
   representations of character fourgrams through SVD, and 
   derived representations for words by summing the fourgrams representations
 
-##Character level features for NLP
+## Character level features for NLP
 
 * recurrent neural networks, applied to
   * language modeling (Mikolov et al., 2012; Sutskever et al., 2011; 
@@ -79,9 +79,9 @@ https://github.com/facebook/Conditional-character-based-RNN
 * MT use subword units to obtain representations of rare words
   (Sennrich et al., 2016; Luong and Manning, 2016)
 
-#4 Experiments
+# 4 Experiments
 
-##Datasets and baseline
+## Datasets and baseline
 
 * First, we compare our model to the C implementation of 
   the skip-gram and CBOW models from the word2vec package
@@ -90,19 +90,19 @@ https://github.com/facebook/Conditional-character-based-RNN
 * datasets of three different sizes: small (50M tokens), medium (200M tokens)
   and full (the complete Wikipedia dump)
 
-##Implementation details
+## Implementation details
 
 * on English data, our model with character n-grams is approximately 
   1.5× slower to train than the skip-gram baseline
 
-##Human similarity judgement
+## Human similarity judgement
 
 * effect of using character n-grams is significantly more important 
   * for German than for English or Spanish
   * on smaller datasets
 * English rare words dataset (RW), our approach also outperforms the baselines
 
-##Word analogy tasks
+## Word analogy tasks
 
 * morphological information significantly helps for the syntactic tasks, our
   approach outperforming the baselines on en-syn. 
@@ -111,7 +111,7 @@ https://github.com/facebook/Conditional-character-based-RNN
 * for Czech, a morphologically rich language, 
   using subword information strongly improves
 
-##Comparison with morphological representations
+## Comparison with morphological representations
 
 * We also compare our approach to previous work on incorporating subword
   information in word vectors, on word similarity tasks. The

@@ -2,7 +2,7 @@ Sparse Overcomplete Word Vector Representations
 Manaal Faruqui, Yulia Tsvetkov, Dani Yogatama, Chris Dyer, Noah Smith
 acl 2015
 
-#Abstract
+# Abstract
 
 * Current distributed representations of words
   * dense and uninterpretable
@@ -12,7 +12,7 @@ acl 2015
 * We propose methods that transform word vectors into sparse
   (and optionally binary) vectors
 
-#1 Introduction
+# 1 Introduction
 
 * most lexical semantic theories ... focus on identifying
   * classes of words (Levin, 1993; Baker+ 1998; Schuler, 2005) and
@@ -58,25 +58,25 @@ acl 2015
 * [also] in a word intrusion experiment with humans (Chang+ 2009) (§4)
   * our sparse vectors are more interpretable than the original vectors
 
-#2 Sparse Overcomplete Word Vectors
+# 2 Sparse Overcomplete Word Vectors
 
-##2.1 Sparse Coding, method A
+## 2.1 Sparse Coding, method A
 * four initializing methods for these vectors, discussed in Appendix A
 * loss for each word vector ... can be optimized ... in parallel (§2.3)
 * Note that this problem is not convex
-##2.2 Sparse Nonnegative Vectors, method B
+## 2.2 Sparse Nonnegative Vectors, method B
 * Nonnegativity ... has often been shown to correspond to interpretability
   (Lee and Seung, 1999; Cichocki+ 2009; Murphy+ 2012;
   Fyshe+ 2014; Fyshe+ 2015)
 * we use a variation of the nonnegative sparse coding method (Hoyer, 2002)
-##2.3 Optimization
+## 2.3 Optimization
 * online adaptive gradient descent (AdaGrad; Duchi+ 2010)
 * In order to speed up training we use asynchronous updates
   * in parallel for every word vector
     * (Duchi+ 2012; Heigold+ 2014)
 * to an l1-regularized objective, We use the AdaGrad variant of the
   regularized dual averaging algorithm (Xiao, 2009)
-##2.4 Binarizing Transformation
+## 2.4 Binarizing Transformation
 * as an optimization problem
   * a mixed integer bilinear program, ... NP-hard (Al-Khayyal and Falk, 1983)
 * relaxation to this hard problem is to
@@ -86,7 +86,7 @@ acl 2015
   * (i) applying our method to Glove initial vectors and
   * (ii) applying k-means clustering (k = 100)
   * In §3 we will find that these vectors perform well quantitatively
-##2.5 Hyperparameter Tuning
+## 2.5 Hyperparameter Tuning
 * parameters
   * l1-regularization penalty λ, the
   * l2-regularization penalty τ , and
@@ -99,7 +99,7 @@ acl 2015
   * so that the vectors in D are near unit norm
 * These hyperparameters were chosen for method A and retained for method B
 
-#3 Experiments
+# 3 Experiments
 
 * seven other tasks were used to evaluate the quality
   * The first of these is a word similarity task, where the
@@ -108,7 +108,7 @@ acl 2015
     l2-regularized logistic regression model
   * These tasks are described in detail in Appendix B
 
-##3.1 Effects of Transforming Vectors
+## 3.1 Effects of Transforming Vectors
 
 * (method A)
   * Table 3 shows consistent improvements of sparsifying vectors
@@ -121,16 +121,16 @@ acl 2015
   * tend to outperform the sparsified variants,
     * except when initializing with Glove
 
-##3.2 Effect of Vector Length
+## 3.2 Effect of Vector Length
 
 * K = αL where α ∈ {1, 2, 3, 5, 10, 15, 20}
 * K = 3 000 (α = 10) gives the best result
 
-##3.3 Alternative Transformations
+## 3.3 Alternative Transformations
 
-#4 Interpretability
+# 4 Interpretability
 
-##4.1 Word Intrusion experiment (Chang+ 2009)
+## 4.1 Word Intrusion experiment (Chang+ 2009)
 
 * kakukktojás
   * naval, industrial, technological, marine, identity
@@ -142,11 +142,11 @@ acl 2015
   * the “true” intruder is a word from the bottom half of the list
     * a word that appears in the top 10% of some other dimension
 
-##4.2 Qualitative Evaluation of Interpretability
+## 4.2 Qualitative Evaluation of Interpretability
 
 * focusing on individual dimensions
 
-#5 Related Work
+# 5 Related Work
 
 * overcomplete features have been widely used in
   * image processing, computer vision
@@ -167,7 +167,7 @@ acl 2015
       * improving interpretation
         (Paul and Dredze, 2012; Zhu and Xing, 2012)
 
-#A Initial Vector Representations (X)
+# A Initial Vector Representations (X)
 
 * Glove
   * 6 billion words from Wikipedia and English Gigaword and are of length 300
@@ -189,7 +189,7 @@ acl 2015
     * containing 360 million words and are of
   * length 48
 
-#B Evaluation Benchmarks
+# B Evaluation Benchmarks
 
 * Word Similarity
   * two word similarity tasks

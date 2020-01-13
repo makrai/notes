@@ -3,7 +3,7 @@ Multimodal Data Fusion Using Source Separation:
 Tülay Adali, Yuri Levin-Schwartz, and Vince D. Calhoun
 IEEE 2015
 
-#ABSTRACT 
+# ABSTRACT 
 
 * very little is known about the actual interaction among the data sets
 	* minimize the underlying assumptions

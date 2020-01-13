@@ -6,7 +6,7 @@ AAAI 2019
 code is publicly available1 as part of the NeuroX toolkit (Dalvi+ 2019)
 https://github.com/fdalvi/NeuroX
 
-#Abstract
+# Abstract
 
 * We propose two methods:
   * Linguistic Correlation Analysis
@@ -24,7 +24,7 @@ https://github.com/fdalvi/NeuroX
   1. how important are the neurons identified through the linguistic
      correlation method to the overall task? Our
 
-#Intro
+# Intro
 
 * methods to facilitate neuron analysis. First, we perform an
   * Linguistic Correlation Analysis
@@ -53,7 +53,7 @@ https://github.com/fdalvi/NeuroX
     through part-of-speech (POS), morphological, and semantic tagging
   * An analysis of distributed vs. focused information in NMT and NLM models
 
-#Related Work
+# Related Work
 
 * what NNs learn about various language properties
   * word and sentence embeddings
@@ -76,7 +76,7 @@ https://github.com/fdalvi/NeuroX
   * doubts were cast on the importance of individual units (Morcos+ 2018),
   * ablation studies similar to the ones we conduct (Zhou+ 2018)
 
-#Methodology 2
+# Methodology 2
 
 * e.g. in an NMT system, M could be the encoder, x the input word embeddings,
   and z the hidden states. Our goal is to study individual neurons in the
@@ -84,7 +84,7 @@ https://github.com/fdalvi/NeuroX
 * Cross-model Correlation Analysis method for
   ranking based on the correlations between neurons from different networks
 
-##Linguistic Correlation Analysis
+## Linguistic Correlation Analysis
 
 * classification task where the goal is to predict a property l in a property
 * e.g. word-structure (morphology) or semantic information in an NMT model
@@ -101,14 +101,14 @@ https://github.com/fdalvi/NeuroX
     * particularly useful [analyzing neural networks]:
       both individual focused neurons and a group of distributed neurons,
 
-###Ranking Neurons: Given the trained weights of the classifier θ ∈ R D×L
+### Ranking Neurons: Given the trained weights of the classifier θ ∈ R D×L
 
 * for an individual property, We consider the top n neurons  that cumulatively
   contribute to some percentage of the total weight mass as salient neurons
 * To extract a ranking of neurons w.r.t. all of the labels in P, we use an
   iterative process `for percent in 1..100: for label in P`
 
-##Cross-model Correlation Analysis
+## Cross-model Correlation Analysis
 
 * to identify neurons salient to the model M independent of any property. In
 * according to their importance to the task the model M is trained on
@@ -117,7 +117,7 @@ https://github.com/fdalvi/NeuroX
   * rank neurons in one of the models M i by their best correlation coefficient
     with any neuron from a different model
 
-##Evaluation using Neuron Ablation
+## Evaluation using Neuron Ablation
 
 * Given the list of neurons from a trained model M, we evaluate the rankings
 * We clamp the value of a subset of neurons to zero as in (Morcos+ 2018)
@@ -125,7 +125,7 @@ https://github.com/fdalvi/NeuroX
   * the classifier (to evaluate property-specific rankings) and
   * the original model M (to evaluate model-level rankings)
 
-###Ablation in Classification
+### Ablation in Classification
 
 * we keep N% top or bottom neurons and
   * set the activation values of all other neurons to zero in the test set OR
@@ -134,11 +134,11 @@ https://github.com/fdalvi/NeuroX
     * it shows that much of the performance can be regained
     * it facilitates the analysis of how distributed a particular property is
 
-###Ablation in Neural Model M:
+### Ablation in Neural Model M:
 
 * [we report the drop] in terms of BLEU scores (for NMT) or perplexity (NLM)
 
-#Experimental Settings 4
+# Experimental Settings 4
 
 * two architectures:
   * NMT based on sequence-to-sequence learning with attention
@@ -146,19 +146,19 @@ https://github.com/fdalvi/NeuroX
   * LSTM based NLM (Hochreiter and Schmidhuber 1997)
 * leave ... the Transformer (Vaswani+ 2017) or QRNN (Bradbury+ 2017) for future
 
-##Language Properties
+## Language Properties
 
 * part-of-speech (POS), morphological and semantic tagging
 * Additionally we considered some general properties
   e.g. position of words in a sentence and predicting a months of year tag
 
-#Evaluation 4
+# Evaluation 4
 
 * In this section, we present the evaluation of our techniques:
 
-##Linguistic Correlation Analysis
+## Linguistic Correlation Analysis
 
-###Classifier Performance: We first evaluate the classifier performance
+### Classifier Performance: We first evaluate the classifier performance
 
 * to ensure that the learned weights are actually meaningful for further
 * higher accuracies compared to the local majority baseline 7 (MAJ) in all
@@ -170,14 +170,14 @@ https://github.com/fdalvi/NeuroX
     * maintaining the original accuracy of the classifier without any
       regularization (λ 1 , λ 2 = 0). Figure 2 presents the results of a grid
 
-##Neuron Ablation in the Classifier:
+## Neuron Ablation in the Classifier:
 
-#Analysis and Discussion 6
+# Analysis and Discussion 6
 
 The rankings produced by the linguistic correlation and cross-correlation anal
 give ... the most important neurons for an auxiliary task or the overall model
 
-##Focused versus Distributed Neurons:
+## Focused versus Distributed Neurons:
 
 * Recall that our linguistic-correlation method provides
   * an overall ranking w.r.t. a property set (POS/SEM tagging), and also
@@ -195,7 +195,7 @@ give ... the most important neurons for an auxiliary task or the overall model
       just a couple of neurons. In contrast, an
     * open category like location (LOC) is very distributed
 
-##Shared Neurons within and across Properties: Since some information is
+## Shared Neurons within and across Properties: Since some information is
 
 * we expect to see some neurons that are common across various properties, and
   others that are unique to certain properties.  To investigate this, we
@@ -206,7 +206,7 @@ give ... the most important neurons for an auxiliary task or the overall model
   * multiple neurons targeting [verb number]
   * a single neuron targeting the future tense verb tag (VER:futu) in POS
 
-##Retraining Classifier with the Selected Neurons
+## Retraining Classifier with the Selected Neurons
 
 * with the top or bottom N% neurons alone
 * Table 4 shows the results after retraining.  There are several points to note
@@ -217,7 +217,7 @@ give ... the most important neurons for an auxiliary task or the overall model
 * using only 20% of the top neurons, the classifier is able to regain much
   * our method could be useful for model distillation purposes
 
-##Cross-model Correlation Ranking
+## Cross-model Correlation Ranking
 
 * word position
   * we found several neurons corresponding to the position of the word in a s
@@ -229,7 +229,7 @@ give ... the most important neurons for an auxiliary task or the overall model
   correspond to fundamental structural properties in a sentence, like
   relations, conjunctions, determiners and punctuations
 
-##Comparing NMT vs.~NLM: There is
+## Comparing NMT vs.~NLM: There is
 
 * difference between top and bottom neurons ... averaged over all properties,
   * NMT neurons are 12.8% (absolute) better accuracy than the bottom 10%
@@ -238,8 +238,8 @@ give ... the most important neurons for an auxiliary task or the overall model
   * NMT model distributes the information more, compared to the NLM model OR
   * difference in the architecture of NLM (unidirectional) and NMT (bidir)
 
-#Conclusion and Future Work
+# Conclusion and Future Work
 
 * successfully manipulate verb tense neurons and control output (Bau+ 2019)
 
-#Acknowledgments We thank Preslav Nakov and the anonymous reviewers
+# Acknowledgments We thank Preslav Nakov and the anonymous reviewers

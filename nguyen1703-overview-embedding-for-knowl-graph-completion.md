@@ -3,11 +3,11 @@ An overview of embedding models of entities and relationships
   for knowledge base completion
 arXiv:1703.08098 [cs.CL]
 
-#Abstract
+# Abstract
 
 standard benchmark datasets FB15k, WN18, FB15k-237, WN18RR, FB13 and WN11
 
-#1 Intro
+# 1 Intro
 
 * KBs can thus be formalized as directed multi-relational graphs, where
   nodes correspond to entities and edges linking the nodes encode various rels

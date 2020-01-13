@@ -5,7 +5,7 @@ A Unified Model for Word Sense Representation and Disambiguation
 
 Our sense representations can be downloaded at http://pan.baidu.com/s/1eQcPK8i
 
-#Abstract
+# Abstract
 
 * idea is that both 
   * word sense representation (WSR) and word sense disambiguation (WSD) will
@@ -20,7 +20,7 @@ Our sense representations can be downloaded at http://pan.baidu.com/s/1eQcPK8i
   * coarse-grained all-words WSD.
     * competitive performance
 
-#1 Intro
+# 1 Intro
 
 * cluster-based models suffer from
   * determine the number of clusters.  "offline"

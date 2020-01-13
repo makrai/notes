@@ -2,14 +2,14 @@ Kenneth Ward Church, Patrick Hanks
 1990
 Word association norms, Mutual information, and lexicography
 
-#Abstract
+# Abstract
 
 * association: quicker response
 * statistical description of ... linguistic phenomena 
   [e.g.] semantic relations
 
 
-#1 Meaning and Association
+# 1 Meaning and Association
 
 * egy szállóige születése: a Firth híres mondatát idéző cikkek közül Church+ a
   harmadik leghivatkozottabb, és 24 évvel megelőzi a második legrégebbi
@@ -20,7 +20,7 @@ Word association norms, Mutual information, and lexicography
   developed significantly in recent years, so that it is now becoming possible
   to test and apply informal assertions of this kind
 
-#2 2. Practical Applications
+# 2 2. Practical Applications
 
 The proposed statistical description has a large number of ...  applications,
  * constraining the language model both for speech recognition and OCR
@@ -30,7 +30,7 @@ The proposed statistical description has a large number of ...  applications,
  * compiling lexicons of lexico-syntactic facts, and
  * lexicographers in identifying normal and conventional usage.
 
-#4 An information theoretic measure
+# 4 An information theoretic measure
 
 * mutual information (Fano 1961)
 `log P(x,y) / P(x) P(y)
@@ -44,6 +44,6 @@ The proposed statistical description has a large number of ...  applications,
 * association ratio is different from mutual information in two respects
   1. joint probabilities are supposed to be symmetric
 
-#9 Conclusions
+# 9 Conclusions
 
 * the former is less interesting because its semantics are compositional

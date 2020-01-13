@@ -6,7 +6,7 @@ Polona Gantar and Iztok Kosem and Simon Krek
   compilation, involved extracting corpus data, i.e. grammatical relations,
   collocations, examples, and grammatical labels
 
-#Introduction
+# Introduction
 
 * multi-word expressions, form variations and neologisms automatically is a
   recognisable trend, multi-word expressions also having a dedicated COST
@@ -20,9 +20,9 @@ Polona Gantar and Iztok Kosem and Simon Krek
     Communication in Slovene project (2007-2013),
   * ...
 
-#2. Background
+# 2. Background
 
-##2.1. Lexicographic situation in Slovenia
+## 2.1. Lexicographic situation in Slovenia
 
 * Slovene is listed among the less resourced languages in this area (Krek
   2012b).  However, in the past five years significant progress has been made
@@ -34,7 +34,7 @@ Polona Gantar and Iztok Kosem and Simon Krek
   availability of resources, such as corpora and language-technology tools, is
   now much smaller than the persisting gap in availability of dictionary data
 
-#3 Slovene Lexical Database
+# 3 Slovene Lexical Database
 
 * Slovene Lexical Database (SLD, Gantar and Krek 2011; Gantar et al. 2012). The
   SLD had a twofold goal: it was intended as the 
@@ -43,13 +43,13 @@ Polona Gantar and Iztok Kosem and Simon Krek
     * its concept is biased towards lexicography
   * potential resource for the enhancement of NLP tools for Slovene.
 
-##3.1. Database content
+## 3.1. Database content
 
 * !!
 
-##3.3. Stages in making SLD; from manual to (semi-)automatic
+## 3.3. Stages in making SLD; from manual to (semi-)automatic
 
-###3.3.3 Stage 3; "Semi-automatic"
+### 3.3.3 Stage 3; "Semi-automatic"
 
 * negative effect on lexicographers’ distribution of time (and effort) to
   different tasks – for example, for headwords with many (sub-)senses and

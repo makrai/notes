@@ -2,7 +2,7 @@ In fluence Sets Based on Reverse Nearest Neighbor Queries
 Flip Korn and S. Muthukrishnan
 2010 ACM Sigmund
 
-#Abstract
+# Abstract
 
 * In this paper, we 
   * formalize a novel notion of infence based on reverse neighbor queries
@@ -13,7 +13,7 @@ Flip Korn and S. Muthukrishnan
     * approaches based on range searching or nearest neighbors are ineffective
       at finding infence sets of our interest.
 
-#1 Intro
+# 1 Intro
 
 * structure of the paper is as follows. 
   * Section 2 defines RNN queries and describes its relationship to NN queries.

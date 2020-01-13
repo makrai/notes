@@ -3,7 +3,7 @@ Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever,
   Ruslan Salakhutdinov
 Journal of Machine Learning Research 15 (2014)
 
-#Abstract
+# Abstract
 
 * At test time, it is easy to approximate the effect of averaging the
   predictions of all these thinned networks by simply using a single unthinned
@@ -12,7 +12,7 @@ Journal of Machine Learning Research 15 (2014)
   and computational biology, obtaining state-of-the-art results on many
   benchmark data sets.
 
-#1 Introduction
+# 1 Introduction
 
 * regularization: 
   * L1 and L2 regularization and soft weight sharing (Nowlan and Hinton, 1992).
@@ -49,19 +49,19 @@ Journal of Machine Learning Research 15 (2014)
     includes a detailed analysis of the practical considerations involved in
     choosing hyperparameters when training dropout networks.
 
-#2 Motivation
+# 2 Motivation
 
 A motivation for dropout comes from a theory of the role of sex in evolution
 (Livnat et al., 2010).
 
-#5 Learning Dropout Nets
+# 5 Learning Dropout Nets
 
-##5.1 Backpropagation
+## 5.1 Backpropagation
 
 * The only difference is that for each training case in a mini-batch, we sample
   a thinned network by dropping out units.
 
-#6 Experimental Results
+# 6 Experimental Results
 
 * MNIST: A standard toy data set of handwritten digits.
 * TIMIT: A standard speech benchmark for clean speech recognition.
@@ -73,7 +73,7 @@ A motivation for dropout comes from a theory of the role of sex in evolution
 * Alternative Splicing data set: 
   * RNA features for predicting alternative gene splicing 
 
-#7 Salient Features
+# 7 Salient Features
 
 * how dropout affects the sparsity of hidden unit activations.
 * how the advantages obtained from dropout vary with the 
@@ -81,11 +81,11 @@ A motivation for dropout comes from a theory of the role of sex in evolution
   * size of the network and the 
   * size of the training set.
 
-#9 Marginalizing Dropout
+# 9 Marginalizing Dropout
 
 * deterministic versions of dropout
 
-#10 Multiplicative Gaussian Noise
+# 10 Multiplicative Gaussian Noise
 
 * Dropout involves multiplying hidden activations by Bernoulli distributed
   random variables which take the value 1 with probability p and 0 otherwise.
@@ -94,7 +94,7 @@ A motivation for dropout comes from a theory of the role of sex in evolution
   multiplying by a random variable drawn from N (1, 1) works just as well, or
   perhaps better than using Bernoulli noise.
 
-#11 Conclustion
+# 11 Conclustion
 
 * A dropout network typically takes 2-3 times longer to train
 * one way to obtain some of the benefits of dropout without stochasticity is

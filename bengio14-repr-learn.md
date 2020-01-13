@@ -2,7 +2,7 @@ Yoshua Bengio, Aaron Courville, and Pascal Vincent
 2014
 Representation Learning: A Review and New Perspectives
 
-#Abstract
+# Abstract
 
 * covering advances in
   * probabilistic models, autoencoders, manifold learning, and deep networks
@@ -13,7 +13,7 @@ Representation Learning: A Review and New Perspectives
   * the geometrical connections between
     representation learning, density estimation and manifold learning
 
-#1 Introduction
+# 1 Introduction
 
 * this paper focuses on deep learning methods:
 * unsupervised feature learning and deep learning, covering
@@ -22,7 +22,7 @@ Representation Learning: A Review and New Perspectives
   * manifold learning, and
   * deep networks
 
-#2 Why should we care about learning representations?
+# 2 Why should we care about learning representations?
 
 * Representation learning [has]
    * regular workshops at the leading conferences NIPS and ICML, and a new
@@ -31,7 +31,7 @@ Representation Learning: A Review and New Perspectives
 * Below, we briefly highlight some ... empirical successes both in academia
   and in industry
 
-##2.1 Speech Recognition and Signal Processing
+## 2.1 Speech Recognition and Signal Processing
 
 * one of the early applications of neural networks, in particular
   convolutional (or time-delay) neural networks
@@ -81,7 +81,7 @@ Representation Learning: A Review and New Perspectives
     * polyphonic transcription (Boulanger-Lewandowski+ 2012),
     * audio tagging (Hamel+ 2011)
 
-##2.2 Object Recognition
+## 2.2 Object Recognition
 
 MNIST digit image classification problem
   * beginning
@@ -92,7 +92,7 @@ MNIST digit image classification problem
     * knowledge-free version: Rifai+ (2011c) is
 * object recognition in natural images: (Krizhevsky+ 2012)
 
-##2.3. Natural Language Processing
+## 2.3. Natural Language Processing
 
 Distributed representations for symbolic data
   * were introduced by Hinton (1986)
@@ -121,7 +121,7 @@ Recursive auto-encoders (which generalize recurrent networks)
   * semantic parsing. AISTATS’2012
 * sentiment analysis (Glorot+ 2011b; Socher+ 2011b)
 
-##2.4. Multitask and Transfer Learning, Domain Adaptation
+## 2.4. Multitask and Transfer Learning, Domain Adaptation
 
 * two transfer learning challenges held in 2011
   * ICML 2011 workshop of the same name, was won using
@@ -135,9 +135,9 @@ Recursive auto-encoders (which generalize recurrent networks)
   * multitask learning
     * Krizhevsky+ (2012); Collobert+ (2011)
 
-##3. What Makes A Representation Good?
+## 3. What Makes A Representation Good?
 
-##3.1 Priors for Representation Learning in AI
+## 3.1 Priors for Representation Learning in AI
 
 In Bengio+ (2007): AI task
 Smoothness, see 3.2
@@ -181,23 +181,23 @@ Simplicity of Factor Dependencies
     * This can be seen in many laws of physics
 This idea is pursued further in Sections 3.5 and 11.4
 
-##3.2 Smoothness and the Curse of Dimensionality
+## 3.2 Smoothness and the Curse of Dimensionality
 
 * kernel machines
 We advocate learning algorithms that are flexible and non-parametric7
 * but do not rely exclusively on the smoothness assumption
 
-##3.3 Distributed representations
-##3.4 Depth and abstraction
-##3.5 Disentangling Factors of Variation
-##3.6 Good criteria for learning representations?
+## 3.3 Distributed representations
+## 3.4 Depth and abstraction
+## 3.5 Disentangling Factors of Variation
+## 3.6 Good criteria for learning representations?
 
-#4 Building deep representations
+# 4 Building deep representations
 
 * greedy layerwise unsupervised pre-training
 (Deep Boltzmann Machine)
 
-#5 Single-layer learning modules
+# 5 Single-layer learning modules
 
 * probabilistic graphical models and one rooted in neural networks
 * single-layer greedy learning modules
@@ -208,15 +208,15 @@ In the next few sections (6--8) we will review the major developments in
     * the three interpretations
   * this review does not cover ... Independent Component Analysis
 
-#6 Probabilistic models
+# 6 Probabilistic models
 
-##6.1 Directed Graphical Models
+## 6.1 Directed Graphical Models
 
 * 6.1.1 Explaining Away
 
-#7 Directly learning a parametric map from input to representation
+# 7 Directly learning a parametric map from input to representation
 
-##7.2 Regularized Auto-Encoders
+## 7.2 Regularized Auto-Encoders
 
   * auto-encoders originally ... dimensionality reduction ... bottleneck,
   `d_h < d_x`
@@ -239,7 +239,7 @@ In the next few sections (6--8) we will review the major developments in
   * 7.2.3 Contractive Auto-Encoders
   * 7.2.4 Predictive Sparse Decomposition
 
-#8 Representation learning as manifold learning
+# 8 Representation learning as manifold learning
 
 * manifold hypothesis, according to which 
   * real-world data presented in high dimensional spaces are expected to con-
@@ -265,7 +265,7 @@ In the next few sections (6--8) we will review the major developments in
 * we will focus on [non-linear manifold learning methods] that learn a
   parametric map that can directly compute a representation for new points
 
-##8.1 Learning a parametric mapping based on a neighborhood graph
+## 8.1 Learning a parametric mapping based on a neighborhood graph
 
 * as with the parametric variant (van der Maaten, 2009) 
   of t-SNE (van der Maaten and Hinton, 2008).
@@ -274,17 +274,17 @@ In the next few sections (6--8) we will review the major developments in
   * simultaneously learns a manifold embedding and a classifier
   * encourages training set neigbhors to have similar representations
 
-##8.2 Learning to represent non-linear manifolds
+## 8.2 Learning to represent non-linear manifolds
 
-##8.3 Leveraging the modeled tangent spaces
+## 8.3 Leveraging the modeled tangent spaces
 
-#9 Connections between probabilistic and direct encoding models
+# 9 Connections between probabilistic and direct encoding models
 
-#10 Global training of deep models
+# 10 Global training of deep models
 
-#11 Building-in invariance
+# 11 Building-in invariance
 
-#12 Conclusion
+# 12 Conclusion
 
   * Practical Concerns and Guidelines
   * Incorporating Generic AI-level Priors

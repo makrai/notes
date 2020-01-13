@@ -3,7 +3,7 @@ The Teachable Language Comprehender:
 M. Ross QUILLIAN
 1969
 
-#Intro
+# Intro
 
 * psych real
   * Reaction time data Supporting the notion that people's semantic memories
@@ -41,7 +41,7 @@ M. Ross QUILLIAN
   attempt.) Correspondingly, TLC so far works with syntax on a relatively
   local, primitive basis,
 
-##1.5 Teaching TLC To Comprehend p15
+## 1.5 Teaching TLC To Comprehend p15
 
 * TLC's memory contains
   * factual assertions about the world, and
@@ -62,9 +62,9 @@ M. Ross QUILLIAN
     * over a long (but finite) period of general reading, the monitor (teacher)
       will become completely unnecessary
 
-#2 THE MEMORY p18
+# 2 THE MEMORY p18
 
-##A. The Format For Factual Information p18
+## A. The Format For Factual Information p18
 
 * information is encoded as either a _unit_ or as a _property._ A
   * unit represents the memory's concept of some object, event idea, assertion,
@@ -114,7 +114,7 @@ M. Ross QUILLIAN
   represent one set of other units, bound together by AND, by INCLUSIVE-OR,
   or by EXCLUSIVE-OR
 
-##B The Overall Organization Of Factual Information p23
+## B The Overall Organization Of Factual Information p23
 
 * inheritance
 * breadth-first tracing, _activation tag_
@@ -126,9 +126,9 @@ M. Ross QUILLIAN
   * tags which allow the program to distinguish an intersection unit that is
     connected to an initial unit by a path going only through supersets
 
-#HOW TLC WORKS
+# HOW TLC WORKS
 
-##A. Finding Memory Properties Related To The Text p26
+## A. Finding Memory Properties Related To The Text p26
 
 * obstacles
   * Words usually have multiple meanings
@@ -148,11 +148,11 @@ M. Ross QUILLIAN
   * At this point the program ... is ready to use the information [the input
     piece of text to one property] provides
 
-##B. The Encoding Process p34
+## B. The Encoding Process p34
 
 * [prolog jellegű keresés]
 
-##C. Identifying Units by Information in Memory p36
+## C. Identifying Units by Information in Memory p36
 
 * _superset intersection in memory_
   * The two units' superset chains merge at some point
@@ -170,7 +170,7 @@ M. Ross QUILLIAN
     there is anything contradictory
 * units in the memory which represent sets
 
-##D. Automatic Generalization of Data and of Form Tests in TLC's Memory p43
+## D. Automatic Generalization of Data and of Form Tests in TLC's Memory p43
 
 * _young client_
   * Correct comprehension of this phrase must supply the fact that this
@@ -184,7 +184,7 @@ M. Ross QUILLIAN
   properties having the same attribute. This goes some way toward generalizing
   each capability given to TLC,
 
-##E. TLC And Complex Sentence Structure p47
+## E. TLC And Complex Sentence Structure p47
 
 * _lawyer's young client_
 * [in form tests, there is a] syntactic _head_
@@ -196,8 +196,8 @@ M. Ross QUILLIAN
 * name a particular syntactic relationship (step) in the grammar, and name
   particular words of the input string to be related in that way
 
-##F. Unsolved Problems p58
+## F. Unsolved Problems p58
 
 * reason spatially
 
-#4 SUMMARY p63--67
+# 4 SUMMARY p63--67

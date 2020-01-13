@@ -2,7 +2,7 @@ In-Close, a Fast Algorithm for Computing Formal Concepts
 Simon Andrews
 2016
 
-#Abstract
+# Abstract
 
 * In-Close 
   * uses incremental closure and matrix searching to quickly compute all formal

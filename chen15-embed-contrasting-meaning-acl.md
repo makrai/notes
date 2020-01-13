@@ -2,7 +2,7 @@ Revisiting Word Embedding for Contrasting Meaning
 Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
 2015 ACL
 
-#Abstract
+# Abstract
 
 * 92% on the widely-used, publicly available dataset, the GRE “most contrasting
   word” questions (Mohammad+ 2008)
@@ -10,7 +10,7 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
   * our best result relying solely on lexical resources (Roget’s and
     WordNet)
 
-#Intro
+# Intro
 
 * Lexical contrast [modeled] (Lin and Zhao, 03; Mohammad+ 08; Mohammad+ 13).
 * embedding spaces, leading to stateof-the-art performances. For example,
@@ -28,7 +28,7 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
 * we constructed our study in a framework that examines a number of basic
   concerns in modeling contrasting meaning
 
-#2 Related Work
+# 2 Related Work
 
 * terms contrasting, opposite, and antonym have different definitions in the
   literature, while sometimes they are used interchangeably
@@ -41,26 +41,26 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
   * _Contrasting_ [has] the broadest meaning, word pairs having _some ... difference_
 * semantic differentials (Osgood+ 1957)
 
-##Word Embeddings
+## Word Embeddings
 
 * stochastic neighbor embedding (SNE) (Hinton and Roweis, 2002), which explic-
   itly enforces that in the embedding space, the distribution of neighbors of
   a given word to be similar to that in the original, uncompressed space. SNE
   can learn multiple senses of a word with a mixture component
 
-##Modelling Contrasting Meaning
+## Modelling Contrasting Meaning
 
 * sentiment contrast may be viewed as
   * a specific case of more general semantic contrast or
   * Tang+ (2014) learned sentiment-specific embedding
 
-#3 The Models
+# 3 The Models
 
 * aim of the models is to enforce that in the embedding space, the word pairs
   with higher degrees of contrast will be put farther from each other than
   those of less contrast
 
-##3.5 Semantic Differential Reconstruction (SDR)
+## 3.5 Semantic Differential Reconstruction (SDR)
 
 * Using factor analysis, Osgood+ (1957) identified three dimensions
   * evaluative (good-bad), potency (strong-weak), and activity(active-passive)
@@ -74,9 +74,9 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
       mutual information (PMI) between w and a set of seed words eval+ and
       eval− are computed respectively, and
 
-#5 Results
+# 5 Results
 
-##5.2 Roles of Lexical Resources
+## 5.2 Roles of Lexical Resources
 
 * target-gold-answer pairs in the GRE test set are connected by short paths
   (with length between 1 to 3).  More specifically, based on breadth-first

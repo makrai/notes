@@ -4,13 +4,13 @@ Improving Word Representations via Global Context and Multiple Word Prototypes
 
 The dataset and word vectors can be downloaded at http://www.socher.org
 
-#Abstract
+# Abstract
 
 * We present a new neural network architecture which
   1. learns word embeddings [incorporating global context], and
   2. accounts for homonymy and polysemy
 
-#1 Introduction
+# 1 Introduction
 
 * Reisinger and Mooney (2010b) introduced a
   multi-prototype VSM [learned from] sense-labeled words
@@ -20,24 +20,24 @@ The dataset and word vectors can be downloaded at http://www.socher.org
   * new dataset with human judgments on similarity between pairs of words
     in sentential context
 
-#2 Global Context-Aware Neural Language Model
+# 2 Global Context-Aware Neural Language Model
 
-#2.1 Training Objective
+# 2.1 Training Objective
 
 * Given a word sequence s and document d in which the sequence occurs,
   our goal is to discriminate the correct last word in s
   from other random words (Collobert and Weston 2008)
 
-#2.2 Neural Network Architecture
+# 2.2 Neural Network Architecture
 
 * two scoring components
   * local context
   * For the score of the global context, we represent the document also
     as an ordered list of word embeddings, d = (d1, d2, ..., dk)
 
-#2.3 Learning
+# 2.3 Learning
 
-#3 Multi-Prototype Neural Language Model
+# 3 Multi-Prototype Neural Language Model
 
 * word sense discrimination (Schütze, 1998)
 * learn multiple prototypes
@@ -52,13 +52,13 @@ The dataset and word vectors can be downloaded at http://www.socher.org
   * similarity between two vectors [...] can be
     any of the distance functions presented by Curran (2004)
 
-#4 Experiments
+# 4 Experiments
 
 * preproc
   * we keep the frequent numbers intact and
     replace each digit of the uncommon numbers to “DG”
 
-#4.1 Qualitative Evaluations
+# 4.1 Qualitative Evaluations
 
 * Center Word & Nearest Neighbors
 
@@ -68,19 +68,19 @@ The dataset and word vectors can be downloaded at http://www.socher.org
 | star`_1` | movie, film, radio
 | star`_2` | galaxy, planet, moon
 
-#4.2 WordSim-353
+# 4.2 WordSim-353
 
 * We also found that correlation can be further improved by removing stop words
   * Thus, each window of text (training example) contains more information
 
-#4.3 New Dataset: Word Similarity in Context
+# 4.3 New Dataset: Word Similarity in Context
 
 1. human judgments on pairs of words presented in sentential context,
 2. word pairs and their contexts are chosen to 
   reflect interesting variations in meanings of homonymous and polysemous words
 3. verbs and adjectives are present in addition to nouns
 
-#5 Related Work
+# 5 Related Work
 
 * Andriy Mnih and Geoffrey Hinton. 2007. 
   Three new graphical models for statistical language modelling

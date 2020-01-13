@@ -4,7 +4,7 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
 
 * heuristics
 
-#Abstract
+# Abstract
 
 * tasks
   * set expansion task is well suited to study these meaning distinctions
@@ -14,7 +14,7 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
     * Category Builder is shown [ to outperform ] Word2Vec in ... analogy
     * despite being shown only two of the three input terms
 
-#1 Introduction
+# 1 Introduction
 
 * bib
   James Pustejovsky and Bran Boguraev. 1997. 
@@ -47,9 +47,9 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
 * in the Category Builder approach ..., relevant contexts are chosen given the
   task at hand
 
-#3 Related Work
+# 3 Related Work
 
-##3.1 Set Expansion
+## 3.1 Set Expansion
 
 * two large families, differing on whether the expansion 
   * packaged families is based on a preprocessed, limited corpus (Shen+ 2017)
@@ -64,7 +64,7 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
   * classification-based methods (a strict superset), which produce a
   * Our approach is classification-based
 
-##3.2 Analogies
+## 3.2 Analogies
 
 * people can solve [analogies] even if the first term is not shown.  That is,
   e.g. “What is the glove for the foot?”. People also answer questions such as
@@ -79,15 +79,15 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
     terms 
   * Here, we ... evaluate for retrieval, where we are ranking over all words
 
-##3.3 Similarity
+## 3.3 Similarity
 
 * priming effects [and] categorization can change the perceived similarity
   between items (Goldstone et al., 2001; Medin et al. 1993 ... Lakoff, 1987;
   Ellis, 1993; Agar, 1994; Goldstone et al., 2001; Hofstadter and Sander, 2013)
 
-#4 Representations and Algorithms
+# 4 Representations and Algorithms
 
-##4.1 Contexts
+## 4.1 Contexts
 
 * contexts ... in literature. Levy (2018) provides a comprehensive overview. 
 * We use contexts derived from syntactic parse trees
@@ -106,7 +106,7 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
   * reminiscent of PPMI 0.75 from Levy et al. (2015).
   * two matrices thus produced are shown in Equation 5
 
-##4.2 Focused Similarity and Set Expansion
+## 4.2 Focused Similarity and Set Expansion
 
 * a matrix multiplication as shown in Equation 6. Note that if we had used
   PPMI in Equation 5, the matrices would be each other’s transposes and each
@@ -120,21 +120,21 @@ Abhijit A. Mahabal, Dan Roth, Sid Mittal
     * weighting contexts based on what fraction of the seeds are associated
       with that context. The parameter ρ described in [4.4] achieves this.
 
-##4.3 Set Expansion via Matrix Multiplication
+## 4.3 Set Expansion via Matrix Multiplication
 
 * The score for a term in E is the sum of its focused similarity to each seed.
 * disease-related context for cancer [still] rank high in the expansion. 
   * To address this, we can limit ourselves to only the top n contexts
     (typically, n = 100 is used)
 
-##4.6 Sparse Representations for Analogies
+## 4.6 Sparse Representations for Analogies
 
 * To solve the analogy problem “What is the Ganga of Egypt?” we are looking for
   * something that 
     * [is in] set expansion of the (singleton) set {Ganga}, as described above)
     * we see often with Egypt
 
-#5.5 Qualitative Demonstration
+# 5.5 Qualitative Demonstration
 
 * synthetic corpus produced by replacing all instances of cat and denver into
   the hypothetical CatDenver

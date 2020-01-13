@@ -3,32 +3,32 @@ racial disparities in officer respect
 Rob Voigt , Nicholas P. Camp , Vinodkumar Prabhakaran at al
 2017
 
-#[intro]
+# [intro]
 
-#Data p2
+# Data p2
 
-#Study 1: Perceptions of Officer Treatment from Language
+# Study 1: Perceptions of Officer Treatment from Language
 
 * reliability for each item ranging from moderate (Cronbach’s α = 0.73) to high
   (α = 0.91) agreement (see SI Appendix, Annotator Agreement).
 
-#Study 2: Linguistic Correlates of Respect
+# Study 2: Linguistic Correlates of Respect
 
 * In this study, we ... develop [NLP] models of respect and formality and tune
   them on the 414 individual utterances; 
   * in study 3, we apply these models to our full dataset of 36,738 utterances.
 
-#Study 3: Racial Disparities in Respect. p3
+# Study 3: Racial Disparities in Respect. p3
 
-#Discussion.
+# Discussion.
 
-#Materials and Methods
+# Materials and Methods
 
-##Data and Processing.
+## Data and Processing.
 
-##Human Annotation of Utterances.
+## Human Annotation of Utterances.
 
-##Computational Annotation of Utterances.
+## Computational Annotation of Utterances.
 
 * features include lexicons (lists of words). For example, to detect informal
   titles, we used an augmented version of a word list from ref. 34. We also

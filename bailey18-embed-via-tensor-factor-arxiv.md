@@ -10,13 +10,13 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   be found in `tensor_decomp.py`. 
   Included is also Joint Symmetric CP Decomposition, described in the paper
 
-#Abstract
+# Abstract
 
 * we modify the performance metrics for the
   Outlier Detection (Camacho-Collados and Navigli 2016) task
 * representations for each meaning of a polysemous word by multiplying vectors
 
-#1 Intro
+# 1 Intro
 
 * embeddings may encode [analogy] in a nonlinear way
   (S Jastrzebski, Lesniak, and Czarnecki 2017)
@@ -28,7 +28,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     Matrix factorization using window sampling and negative sampling for [word]
 * tensors containing [co-occurrences of more than two words]
 
-#2 Related work
+# 2 Related work
 
 * overview of tensor factorization methods is given in Kolda and Bader (2009)
   * it may be NP-hard to obtain these factorizations in general
@@ -54,15 +54,15 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   * while nonnegative [instead of symmetric] is a well-posed problem
     (Lim & Comon 2009a, Qi+ 2016)
 
-#Mathematical preliminaries
+# Mathematical preliminaries
 
-##Pointwise Mutual Information
+## Pointwise Mutual Information
 
 * In this paper
   * context window ... irrespective of [word] order
   * 3-way PPMI tensors
 
-##Tensor factorization
+## Tensor factorization
 
 * CP Decomposition
   * gives rise to a meaningful interpretation of the element-wise product be-
@@ -73,7 +73,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
 * leaving the study of other tensor decompositions to future
   e.g. Tensor Train or HOSVD (aka Tucker. Oseledets 2011; Kolda and Bader 2009) 
 
-#Why factorize the third moment [i.e. third order co-occurrences]?
+# Why factorize the third moment [i.e. third order co-occurrences]?
 
 1. how embedding vectors cluster
   * For identifying the clusters of a planted partition model
@@ -98,9 +98,9 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
       identify the isotropic Gaussian mixture models (Anandkumar+ 2014)
 2. further contextualizes the co-occurrence matrix
 
-#Methodologies
+# Methodologies
 
-##Computing the Symmetric CP Decomposition
+## Computing the Symmetric CP Decomposition
 
 * Even the sparse representation of the tensor takes [large  memory]
   * standard algorithms are infeasible for our uses, e.g.
@@ -117,7 +117,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     * we also include a certain proportion of elements with zero PPMI 
       similar to that of Salle, Villavicencio, and Idiart (2016)
 
-##Joint Symmetric Rank-R CP Decomposition
+## Joint Symmetric Rank-R CP Decomposition
 
 * find the optimal order [i.e. shape?]
 * we propose a novel joint tensor factorization problem
@@ -133,12 +133,12 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     * supersymmetric (Comon, Qi, and Usevich 2015) ... blind source separation
 * in our formulation the rank is fixed
 
-##Shifted PMI
+## Shifted PMI
 
 * the best shift we found for CP-S was a shift of α ≈ 3, whereas
 * any nonzero shift for JCP-S resulted in a worse embedding across the board
 
-##Computational notes
+## Computational notes
 
 * nonnegative CP decomposition (Lim & Comon 2009b; Qi+ 2014)
   * well-posed
@@ -146,14 +146,14 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     the results on down-stream tasks either for CP decomposition or Joint CP
   * We thus [only report results on the simpler] unrestricted CP decomposition
 
-#Evaluation
+# Evaluation
 
 * corpus of 10 million sentences gathered from Wikipedia
 * Because of [small corpus], the results shown should be considered a proof
   of concept rather than an objective comparison to [SOTA] embeddings
 * we use 300-dimensional [normalized] vectors (Mikolov+ 2013; Murphy+ 2012)
 
-##Quantitative tasks
+## Quantitative tasks
 
 * Outlier Detection
 * 3-way Outlier Detection
@@ -169,7 +169,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   (Bruni+ 2014; Radinsky+ 2011; Luong+ 2013; Hill+ 2015)
   For an overview of word similarity evaluation, see Schnabel+ (2015)
 
-#Multiplicative compositionality
+# Multiplicative compositionality
 
 * [our] embeddings capture polysemy information 
   ... through multiplicative compositionality [in unsup fashion]
@@ -180,7 +180,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   both for multiplicative and additive composition
   In contrast, for CBOW, only additive composition yields [good] vectors
 
-#Conclusion
+# Conclusion
 
 * Our key contributions
   1. Two novel tensor factorization based word embeddings [CP-S and JCP-S,] 

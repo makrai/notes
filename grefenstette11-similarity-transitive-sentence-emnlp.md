@@ -13,13 +13,13 @@ see 6.6
   * transitive verbs, each paired with both a subject and an object noun
     * Additionally, a ‘landmark’ verb is provided
 
-#6 Evaluation 7
+# 6 Evaluation 7
 
 * we present a new evaluation task extending the experimental methodology of
   Mitchell and Lapata (2008) to transitive verb-centric sentences, and 
   compare our model to those discussed by Mitchell and Lapata (2008)
 
-##First Dataset Description 
+## First Dataset Description 
 
 * The first experiment, described in detail by Mitchell and Lapata (2008),
 * evaluates how well compositional models disambiguate ambiguous words given
@@ -31,7 +31,7 @@ see 6.6
   indeed semantically close within the context of the noun, as well as 
 * an evaluator-set similarity score between 1 and 7
 
-##Evaluation Methodology 
+## Evaluation Methodology 
 
 * Candidate models provide a similarity score for each entry
 * The scores of high similarity entries and low similarity entries are averaged
@@ -41,16 +41,16 @@ see 6.6
 * It is assumed that inter-annotator agreement provides the theoretical maximum
 * baseline: The cosine measure of the verb vectors, ignoring the noun, is taken
 
-##Other Models 
+## Other Models 
 
 The other models we compare ours to are those evaluated by Mitchell and Lapata
 (2008)
 
-##Model Parameters 
+## Model Parameters 
 
-##First Experiment Results 
+## First Experiment Results 
 
-##6.6 Second Dataset Description 
+## 6.6 Second Dataset Description 
 
 * follows the format of the Mitchell and Lapata, (2008) dataset [but]
 * target and landmark verbs are transitive, and 

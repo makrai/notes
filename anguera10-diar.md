@@ -2,7 +2,7 @@ Speaker Diarization: A Review of Recent Research
 Xavier Anguera, Simon Bozonnet, Nicholas Evans, Corinne Fredouille, Gerald Friedland, Oriol Vinyals
 2010
 
-#Abstract
+# Abstract
 
 * task of determining “who spoke when?” in an audio or video recording 
   * unknown amount of speech and also an 
@@ -33,9 +33,9 @@ Xavier Anguera, Simon Bozonnet, Nicholas Evans, Corinne Fredouille, Gerald Fried
     identify the remaining problems and highlight potential solutions in the
     context of current work.
 
-#Speaker diarization
+# Speaker diarization
 
-##B. Main Approaches
+## B. Main Approaches
 
 * Most of present state-of-the-art speaker diarization systems fit into one of
   two categories: the bottom-up and the top-down [number of clusters]

@@ -3,10 +3,10 @@ Improving zero-shot learning by mitigating the hubness problem
 
 http://clic.cimec.unitn.it/~georgiana.dinu/down/
 
-#Abstact
+# Abstact
     hubness problem = default error
 
-#1 Introduction
+# 1 Introduction
 
 * unsupervised vector-based representations of meaning
   * Collobert+ 2011;
@@ -38,7 +38,7 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
   * `(*)` inverting the query: 
     * a képvektor melyik szónak a legkevesebbedik legközelebbi szomszédja?
 
-#2 Hubness in zero-shot mapping
+# 2 Hubness in zero-shot mapping
 
 * Original vs. mapped vectors
   * 300-dimensional vectors of English words as source and vectors of Italian
@@ -46,7 +46,7 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
     Italian words,
     * miért 300 dim a forrás?, |V| = 200 000
 
-#3 A globally corrected neighbour retrieval method p4
+# 3 A globally corrected neighbour retrieval method p4
 
 * Methods for [downplaying the importance of elements that have a high hubness
   score] have been proposed and evaluated, for example, by
@@ -78,7 +78,7 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
   * globally-corrected (GC)
 * ha `(*)`-ban döntetlen, akkor cos
 
-##3.1 English to Italian word translation
+## 3.1 English to Italian word translation
 
 * work on acquiring translation dictionaries
   * by vector-space methods on
@@ -122,7 +122,7 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
       * Radovanović+ (2010b): hubness correlates with it
       * Hubness level is plotted against cosine-to-mean in Figure 3
 
-##3.2 Zero-shot image labeling and retrieving
+## 3.2 Zero-shot image labeling and retrieving
 
 * Experimental setting 
   * Images are represented by 4096-dimensional vectors extracted using the

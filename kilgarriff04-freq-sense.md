@@ -2,7 +2,7 @@ How Dominant is the Commonest Sense of a Word?
 Adam Kilgarriff
 2004 tsd
 
-#Abstract
+# Abstract
 
 We present a mathematical model of word sense frequency distributions, and use
 word distributions to set parameters. The model implies that the expected
@@ -12,7 +12,7 @@ expected much more often than even ones. The model is compared with the limited
 evidence available from SEMCOR. The implications for WSD and its evaluation are
 discussed.
 
-#Intro
+# Intro
 
 * if the commonest sense is commonest by far, accounting for, say, 90% of the
   corpus instances for the word, it becomes hard for an ‘intelligent’ WSD
@@ -34,9 +34,9 @@ discussed.
     * Gold standard datasets for evaluating word sense disambiguation programs.  
     * 1998 Computer Speech and Language, Special Issue on Evaluation of Spee...
 
-#2 The Model
+# 2 The Model
 
-##2.1 Assumptions
+## 2.1 Assumptions
 
 * words have a Zipfian or power-law distribution [16]. As a first
   approximation, the product of frequency and rank is constant.
@@ -52,7 +52,7 @@ discussed.
   of word senses will show no interesting distributional differences to the
   population of words. (There will just be rather more of them.)
 
-#4 Discussion
+# 4 Discussion
 
 * One possible reason for the theoretical figures being higher than the SEMCOR
   figures lies in the dictionary-writing process. Where a lexicographer is
@@ -60,7 +60,7 @@ discussed.
   of the examples are in the same area of meaning, it becomes tempting to
   allocate the word more column inches and more meanings.
 
-##4.3 
+## 4.3 
 
 * A system that concentrates on identifying the commonest sense could well
 outperform one that concentrates on disambiguation.

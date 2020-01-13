@@ -4,7 +4,7 @@ ACL 2017
 
 The code ... is available at https://github.com/azpoliak/skip-gram-tensor
 
-#Abstract
+# Abstract
 
 * [We] generalize the skip-gram model to tensor factorization
 * lets us train embeddings through richer higher-order coocurrences, e.g.,
@@ -12,7 +12,7 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
   morphological information (to share parameters across related words)
 * We experiment on 40 languages
 
-#1 Introduction
+# 1 Introduction
 
 * we embed n-tuples rather than pairs, ... to escape the bag-of-words
 * we [interpret] the skip-gram model (Mikolov+ 2013)
@@ -24,7 +24,7 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
   * positional and morphological content in the model by factorizing a
     positional tensor and morphology tensor
 
-#2 Matrix Factorization: how skip-gram is an example of EPCA
+# 2 Matrix Factorization: how skip-gram is an example of EPCA
 
 * the optimal values of C and W [in PCA] can be regarded as the max-likelihood
   parameter estimates for the Gaussian graphical model drawn in Figure 1a
@@ -49,7 +49,7 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
   with the canonical link function (Mohamed, 2011), which
   generates `x_j`k from a multinomial with log-linear parameterization
 
-##2.1 Related work
+## 2.1 Related work
 
 * Levy and Goldberg (2014b) ... argued that skipgram estimation _by negative
   sampling_ implicitly factorizes a shifted matrix of positive empirical PMI
@@ -61,7 +61,7 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
 * avenues of future research using
   Bayesian (Mohamed+ 2008) and maximum-margin (Srebro+ 2004) extensions to EPCA
 
-#3 Tensor Factorization
+# 3 Tensor Factorization
 
 * We focus on the polyadic decomposition (Hitchcock, 1927)
 * [Now], the new matrix `R ∈ R^{d×n_3}` embeds types of context--word relations
@@ -81,14 +81,14 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
 * HOSG is a bit slower to train than skip-gram, since X yields up to `n^3`
   times as many summands as X (but `<< n^3` in practice, as X is often sparse)
 
-#4 Two Tensors for Word Embedding
+# 4 Two Tensors for Word Embedding
 
 * first version increases the number of parameters (giving more expressivity)
 * second version decreases the number of parameters (giving better smoothing)
 
-##4.1 Positional Tensor
+## 4.1 Positional Tensor
 
-##4.2 Compositional Morphology Tensor
+## 4.2 Compositional Morphology Tensor
 
 * We decompose each [focus] word into a lemma j and a morphological tag k
   * contexts i are still full words
@@ -99,11 +99,11 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
   * similar to the work of Cotterell+ (2016),
     who parameterized word embeddings as a sum w j + r k
 
-#5 Experiments
+# 5 Experiments
 
-##5.1 Experiment 1: Positional Tensor
+## 5.1 Experiment 1: Positional Tensor
 
-##5.2 Experiment 2: Morphology Tensor
+## 5.2 Experiment 2: Morphology Tensor
 
 * We expect ... lemma embeddings to be predictive of human judgments of lemma
   similarity
@@ -111,7 +111,7 @@ The code ... is available at https://github.com/azpoliak/skip-gram-tensor
 * Note we did not compare to a baseline that simply embeds lemmas rather than
   words (equivalent to fixing r k = 1)
 
-#6 Related Work
+# 6 Related Work
 
 * tensor
   * Similarly [to Van de Cruys+ (2013),] Hashimoto and Tsuruoka (2015) use an

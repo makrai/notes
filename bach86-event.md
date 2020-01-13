@@ -13,7 +13,7 @@ The algebra of events
   3. our proposals about events and processes
   4. problems
 
-#1. EVENTS, PROCESSES, STATES
+# 1. EVENTS, PROCESSES, STATES
 
 ```
 eventualities

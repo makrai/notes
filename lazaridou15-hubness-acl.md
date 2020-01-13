@@ -2,7 +2,7 @@ Hubness and Pollution: Delving into Cross-Space Mapping for Zero-Shot Learning
 Angeliki Lazaridou, Georgiana Dinu and Marco Baroni
 ACL 2015 Long, Oral
 
-#Abstract
+# Abstract
 
 * Zero-shot methods in language, vision and other domains rely on a 
   * cross-space mapping function that projects vectors 
@@ -16,7 +16,7 @@ ACL 2015 Long, Oral
   * large improvements over the state of the art, both in cross-linguistic
     (word translation) and cross-modal (image labeling) zero-shot experiments
 
-#1 Intro
+# 1 Intro
 
 * We connect hubness to least-squares estimation, and we show how it is greatly
   mitigated (enyhül) when the mapping function is estimated with a max-margin

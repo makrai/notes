@@ -2,9 +2,9 @@ Yann LeCun, Yoshua Bengio, & Geoffrey Hinton
 Deep learning
 2015 nature
 
-#Abstract
+# Abstract
 
-#[Intro]
+# [Intro]
 
 * For decades, feature extraction
   * required careful engineering and considerable domain expertise 
@@ -68,19 +68,19 @@ Deep learning
           * produce a semantic representation of its meaning, and 
           * generate a translation in another language.
 
-#Supervised learning
+# Supervised learning
 
-#Backpropagation to train multilayer architectures
+# Backpropagation to train multilayer architectures
 
-#Convolutional neural networks
+# Convolutional neural networks
 
-#Image understanding with deep convolutional networks
+# Image understanding with deep convolutional networks
 
-#Distributed representations and language processing
+# Distributed representations and language processing
 
-#Recurrent neural networks
+# Recurrent neural networks
 
-#The future of deep learning
+# The future of deep learning
   * Unsupervised learning
   * vision
     * Human vision is an active process that sequentially samples the optic

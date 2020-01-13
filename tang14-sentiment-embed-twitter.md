@@ -2,7 +2,7 @@ D Tang, F Wei, N Yang, M Zhou, T Liu
 Learning sentiment-specific word embedding for twitter sentiment classification
 ACL 2014 -
 
-#Abstract
+# Abstract
 
 * [only] syntactic context ... is problematic for sentiment analysis 
   [because of] words with similar syntactic context but opposite sentiment

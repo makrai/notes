@@ -8,13 +8,13 @@ Bryan Perozzi, Rami Al-Rfou, Vivek Kulkarni, Steven Skiena
 * induced networks differ from other methods of creating language networks
 * meaningful community structure. 
 
-#2 Continuous Space Language Models
+# 2 Continuous Space Language Models
 
-##2.1 Polyglot
+## 2.1 Polyglot
 
 * [learning] procedure similar to the one proposed by Collobert et al.  [11]
 
-#3 Word Embedding Networks
+# 3 Word Embedding Networks
 
 * desirable properties for a language network. Specifically, we are seeking to
   1. Is Connected
@@ -25,7 +25,7 @@ Bryan Perozzi, Rami Al-Rfou, Vivek Kulkarni, Steven Skiena
   * examine two approaches for constructing graphs from word embeddings, 
   * induce networks for the 20, 000 most frequent words
 
-##3.1 k-Nearest Neighbors
+## 3.1 k-Nearest Neighbors
 
 * we convert it to an undirected one.
 * few disconnected components, even for small values of k. In addition, 
@@ -43,7 +43,7 @@ Bryan Perozzi, Rami Al-Rfou, Vivek Kulkarni, Steven Skiena
     “When is “nearest neighbor” meaningful?” In: Database Theory—ICDT Springer
 * highly modular community structure.
 
-##3.2 d-Proximity
+## 3.2 d-Proximity
 
 * link each word to all those within a fixed distance d of it
 * We find that [these] networks ... do not bridge distant groups together. They

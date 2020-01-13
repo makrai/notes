@@ -3,7 +3,7 @@ Noun Sense Induction and Disambiguation
   using Graph-Based Distributional Semantics
 2016 KONVENS Conference on NLP, Germany
 
-#Abstract
+# Abstract
 
 * sense representations obtained by clustering dependency-parse-based second-
   order similarity networks as a pivot. We then add features for disambiguation
@@ -15,7 +15,7 @@ Noun Sense Induction and Disambiguation
   * top participants of the SemEval 2013 word sense induction task and
   * a more recent state-of-the-art neural word sense induction system
 
-#2 Related Work
+# 2 Related Work
 
 * unsupervised WSD methods fall into two categories:
   * context clustering (Pedersen and Bruce, 1997; Schütze, 1998) and
@@ -32,11 +32,11 @@ Noun Sense Induction and Disambiguation
         * context words relevant to the target, as in the UoS system 
           (Hope and Keller, 2013a)
 
-#4 Results
+# 4 Results
 
-##4.2 Evaluation on TWSI
+## 4.2 Evaluation on TWSI
 
-###Discussion of results
+### Discussion of results
 
 * Table 2
 * none of our models was able to outperform the most frequent sense

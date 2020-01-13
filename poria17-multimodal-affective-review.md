@@ -3,7 +3,7 @@ A review of affective computing:
 Soujanya Poria, Erik Cambria, Rajiv Bajpai, Amir Hussain
 Information Fusion, 2017
 
-#Abstract
+# Abstract
 
 * Affective computing is an emerging interdisciplinary research field
 * AI, NLP, cognitive and social sciences
@@ -13,7 +13,7 @@ Information Fusion, 2017
 * our first of its kind, comprehensive literature review of affective computing
   * a detailed discussion of state of the art in multimodal affect analysis
 
-#1. Introduction
+# 1. Introduction
 
 * Affective computing [aims to enable] systems to recognize, feel, infer and
   interpret human emotions

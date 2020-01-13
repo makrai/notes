@@ -2,7 +2,7 @@ Pavel Pecina and Pavel Schlesinger
 Combining Association Measures for Collocation Extraction
 2006
 
-#1 Introduction
+# 1 Introduction
 
 * Lexical association measures
   * automatic collocation extraction (Manning and Schütze, 1999),
@@ -18,12 +18,12 @@ Combining Association Measures for Collocation Extraction
 * In this paper: combining
 * Czech data; two-word (bigram) collocations
 
-#2 Reference data
+# 2 Reference data
 
 * reference set of collocations manually extracted
 * dependency bigrams
 
-#3 Association measures
+# 3 Association measures
 
 * estimation of joint and conditional bigram probabilities (Table 1, 1–3),
 * mutual information and derived measures (4–9),

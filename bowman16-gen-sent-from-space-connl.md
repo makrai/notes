@@ -3,7 +3,7 @@
 Generating Sentences from a Continuous Space
 CoNLL. 2016
 
-#Abstract
+# Abstract
 
 * rnn-based variational autoencoder generative model that
   * incorporates distributed latent representations of entire sentences. This
@@ -14,7 +14,7 @@ CoNLL. 2016
 * paths through this latent space ... generate coherent novel sentences
 * negative results on the use of the model in language modeling
 
-#1 Intro
+# 1 Intro
 
 * Recurrent neural network language models (rnnlms, Mikolov et al., 2011)
   * the state of the art in unsupervised generative modeling
@@ -44,11 +44,11 @@ CoNLL. 2016
   * produce diverse, coherent sentences through purely deterministic decoding
   * interpolate smoothly between sentences
 
-#3 A VAE for sentences
+# 3 A VAE for sentences
 
-##3.1 Optimization challenges
+## 3.1 Optimization challenges
 
-###Word dropout and historyless decoding
+### Word dropout and historyless decoding
 
 * In addition to weakening the penalty term on the encodings, we also
 * weakening the decoder. As in rnnlms and sequence autoencoders

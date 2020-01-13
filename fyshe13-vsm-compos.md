@@ -19,7 +19,7 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
   -> VSM for semantic composition of adjective-noun phrases new evaluation task
   -> brain activity
 
-#1 Introduction
+# 1 Introduction
 
 * two feature types
   * global corpus co-occurrence patterns
@@ -37,7 +37,7 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
   * increasing linguistic sophistication, up to full syntactic and dependency
     parses (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010).
     
-##In this paper we systematically explore the utility of a 
+## In this paper we systematically explore the utility of a 
 
 * global, topic-based VSM built from what we call Document features, and a
 * local, type-based VSM built from Dependency features
@@ -54,7 +54,7 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
   * addition performs well on corpus-only tasks,
   * dilation performs best on the brain activity task
 
-#2 Related Work
+# 2 Related Work
 
 * Mitchell and Lapata (2010) explored several methods of
   combining adjective and noun vectors
@@ -65,7 +65,7 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
 * (Blacoe and Lapata, 2012) ... compared several methods
   to create phrase vectors, point-wise multiplication
 
-#3 Creating a Vector-Space
+# 3 Creating a Vector-Space
 
 * A series of three additional filtering steps selected [phrases and features]
   1. co-occurrence frequency cut-off ... of 
@@ -81,26 +81,26 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
   3. features observed for no more than one target were removed, as were 
     empty target entries
 
-#4 Experiments
+# 4 Experiments
 
 * filtering, cutoff, _..._
 
-##4.1 Judgements of Word Similarity
+## 4.1 Judgements of Word Similarity
 
 * cosine distances
 
-##4.2 Judgements of Phrase Similarity
+## 4.2 Judgements of Phrase Similarity
 
 * addition
 * dilatation
   * coherent with the notion of cocomposition (Pustejovsky, 1995)
 
-##4.3 Composed vs Observed Phrase Vectors
+## 4.3 Composed vs Observed Phrase Vectors
 
 * overrepresentation of operational adjectives
   like “better” and “more”
 
-##4.4 Brain Activity Data
+## 4.4 Brain Activity Data
 
 * Magnetoencephalography (MEG)
   * much higher temporal resolution (1 ms) than fMRI

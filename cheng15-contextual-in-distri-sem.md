@@ -2,7 +2,7 @@ Contextual Text Understanding in Distributional Semantic Space
 Jianpeng Cheng, Zhongyuan Wang, Ji-Rong Wen, Jun Yan, Zheng Chen 
 2015 ACM
 
-#Abstract
+# Abstract
 
 * [multi-sense embedding is] prone to data sparsity, since each sense needs to
   be managed discriminatively. In this work, we propose a new framework for
@@ -16,25 +16,25 @@ Jianpeng Cheng, Zhongyuan Wang, Ji-Rong Wen, Jun Yan, Zheng Chen
 * [eval] including word/phrase similarity measurements, paraphrase
   identification and question-answer relatedness classification
 
-#4 Jointly embedding words and concepts
+# 4 Jointly embedding words and concepts
 
 * We propose two classes of neural language models for co-training word-concept
   embeddings, based on the Skip-gram.
 
-##4.1 Parallel Word-Concept Skip-gram (PWCS)
+## 4.1 Parallel Word-Concept Skip-gram (PWCS)
 
-##4.2 Generative Word-Concept Skip-gram (GWCS)
+## 4.2 Generative Word-Concept Skip-gram (GWCS)
 
-#6 Experiments
+# 6 Experiments
 
-##6.3 Similarities of Words and Phrases
+## 6.3 Similarities of Words and Phrases
 
 * word-level dataset
   * the Stanford Contextual Word Similarity Dataset (SCWS) of Huang et al.
 * phrase similarity dataset 
   * Mitchell and Lapata (M& L) [32].
 
-###Comparison with Baselines and Published Results
+### Comparison with Baselines and Published Results
 
 * we compare the results of our models with a few well-established baselines
   * neural language model of Collobert and Weston (C&W) [10], the 
@@ -55,7 +55,7 @@ Jianpeng Cheng, Zhongyuan Wang, Ji-Rong Wen, Jun Yan, Zheng Chen
   concept vectors, whereas the size of sense vectors is usually several times
   more than the size of the vocabulary (55,000).
 
-#7 Related Work
+# 7 Related Work
 
 * approaches to training sense embeddings directly from a neural language
   model, without considering any clustering step in mind. 

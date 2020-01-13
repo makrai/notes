@@ -3,7 +3,7 @@ Lexikális szemantika:
 Prószéky Gábor, Miháltz Márton, and Kuti Judit
 2013
 
-#Abstract
+# Abstract
 
 * WordNet adatbázist, különös tekintettel a kognitív
 * organization
@@ -16,7 +16,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
     1. jelentésegyértelműsítésben
     2. igé[k] szemantikus megszorításaival való automatikus kiegészítésére
 
-#1 A lex a ling, az AI, a pling és az NLP világában
+# 1 A lex a ling, az AI, a pling és az NLP világában
 
 * Schank modelljében például a _megiszik_ és az _injekciót kap_ „metaigéje” az,
   amelyik lehetővé teszi a bejutást, méghozzá folyadék bejutását egy élő
@@ -49,7 +49,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
   * aprólékos kidolgozottsága, valamint az adatbázis egy részének egy
     idő után nyílt forráskódú közreadása ellenére sem
 
-#2 A Princeton WordNet p7
+# 2 A Princeton WordNet p7
 
 * három előfeltevéssel élt (Miller 1998):
   1. A különválaszthatóság hipotézise
@@ -62,7 +62,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
       * elvérzett a nagyságrend problémáján
       * megelégedett azzal, hogy ... bemutatott 20–50 példát
 
-#3. Többnyelvű wordnetek p10
+# 3. Többnyelvű wordnetek p10
 
 * 1996 és 1999 között EuroWordNet (EWN)
   * különböző nyelvek közötti jelentéskapcsolatok is megjelentek
@@ -112,7 +112,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
     * ellenőrzése, a hierarchiáknak a magyar nyelv szemantikai paradigmájához
       adaptációja már teljes mértékben kézi
 
-#4. A Magyar WordNet és újításai p13
+# 4. A Magyar WordNet és újításai p13
 
 * 42 000 fogalmi csomópontot tartalmaz
 * szófajok közöti arányok (főnév, ige, melléknév, határozószó)
@@ -130,7 +130,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
   * igék esetében az MNSZ-ben azonosított leggyakoribb igei vonzatkeretek
 * a gazdasági-üzleti szaknyelv irányába tartalmaz bővítést
 
-##a Princeton WordNethez képest bevezetett újítások
+## a Princeton WordNethez képest bevezetett újítások
 
 * nagyrészt az igei, kisebb részben a melléknévi
 * melléknévi WordNet meghatározó struktúrája a kétpólusú klaszter
@@ -182,9 +182,9 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
     gyakran melléknévként lexikalizálódott – utóállapotokat és az őket
     potenciálisan előidéző igéket közvetlen kapcsolatba hozza egymással
 
-#5. A HuWN-nel kapcsolatos további kutatások p18
+# 5. A HuWN-nel kapcsolatos további kutatások p18
 
-##5.1. Az igei Magyar WordNet mint jelentésegyértelműsítő jelentéstár
+## 5.1. Az igei Magyar WordNet mint jelentésegyértelműsítő jelentéstár
 
 * WSD: Véronis (2003)
   * az intuitív jelentésfogalom problematikus voltát,
@@ -202,7 +202,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
   * 15 ige 30 előfordulását annotálta 5-5 kísérleti személy
     * „nincs” és „nem tudom” választ is adhattak
 
-##5.2. HuWN automatikus kiegészítés[e] ige–vonzatosztály kapcsolatokkal p20
+## 5.2. HuWN automatikus kiegészítés[e] ige–vonzatosztály kapcsolatokkal p20
 
 * igék és jellemző argumentumaik
 * _isz-_ sört/szavait/kortyot
@@ -226,4 +226,4 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
   * Logikailag ... _ital_ ... hiszen nem minden folyadék [iható]
   * alkalmazásokban [releváns, hogy] alkohol és fajtái is szignifikáns
 
-#6. Összefoglalás p26
+# 6. Összefoglalás p26

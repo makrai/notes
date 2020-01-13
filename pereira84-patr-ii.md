@@ -8,7 +8,7 @@ Using Dana Scott's domain theory, we elucidate [megmagyarázzuk]
 the nature of the feature systems used in augmented phrase-structure grammar
 formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 
-#1 Instroduction
+# 1 Instroduction
 
 * we elucidate the nature of the feature systems used in augmented phrase-
   structure grammar formalisms, in particular those of recent versions of
@@ -22,7 +22,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
   * requires a notion of partial information that is
   * precisely captured by the constructs of denotational semantics
 
-#2. Denotational Semantics
+# 2. Denotational Semantics
 
 * In broad terms,
   * DS is the study of the connection between programs and 
@@ -36,7 +36,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
   * the meaning of a construct describes
     * what information it adds to a partial description of a data object
 
-#3. The Domain of Feature Structures
+# 3. The Domain of Feature Structures
 
 * feature systems ... are more or less isomorphic to directed graphs
   * or, as they are sometimes described, partial functions
@@ -60,7 +60,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
     * the values n(l_1),...  n(l_m)
       * for which the node, as a partial function, is defined
 
-#4. The Domain of Descriptions
+# 4. The Domain of Descriptions
 
 * The inclusion order K in D provides the notion of a description being 
   _more or less specific_ than another
@@ -84,11 +84,11 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
   * D as directed rooted graphs and of elements of 
   * F as their unfoldings as trees
 
-#5.  Providing a Denotation for a Grammar
+# 5.  Providing a Denotation for a Grammar
 
 * TODO
 
-#7. Conclusion
+# 7. Conclusion
 
 * We plan to develop the approach further to give accounts of 
   negative and disjunctive constraints

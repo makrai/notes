@@ -2,7 +2,7 @@ The structure of a semantic theory
 Jerrold J. Katz & Jerry A. Fodor
 1963
 
-#Intro
+# Intro
 
 * characterize the form of [a semantic theory of a natural language]
 * results ... will apply directly to ... languages closely related to English
@@ -13,7 +13,7 @@ Jerrold J. Katz & Jerry A. Fodor
   * theories [have] been either too loosely formulated or
     * too weak in explanatory and descriptive power
 
-#2 The projection problem
+# 2 The projection problem
 
 * by studying the contribution that semantics will be required to make to a
   synchronic description of a language we can clarify the subject, the form
@@ -21,7 +21,7 @@ Jerrold J. Katz & Jerry A. Fodor
   constraints upon a semantic theory
 * infinite number of sentences <= rules, the _projection problem_
 
-#3. Synchronic linguistic description minus grammar equals semantics p4
+# 3. Synchronic linguistic description minus grammar equals semantics p4
 
 * [Syntacit parses] specify the elements out of which a sentence is
   constructed, the grammatical relations between these elements and between the
@@ -48,7 +48,7 @@ Jerrold J. Katz & Jerry A. Fodor
   * paraphrase
 * a valósággal nem kapcsolja össze (utasítások végrehajtása, igazságérték)
 
-#4. What is beyond the descriptive scope of a semantic theory p8
+# 4. What is beyond the descriptive scope of a semantic theory p8
 
 * upper bound
 * Previous conceptions
@@ -88,7 +88,7 @@ Jerrold J. Katz & Jerry A. Fodor
       and semantic relations which obtain within and among the sentences of the
       discourse
 
-#5. The components of a semantic theory p13
+# 5. The components of a semantic theory p13
 
 * dictionary
 * in what respects a dictionary and grammar alone are _not_ sufficient to match
@@ -98,7 +98,7 @@ Jerrold J. Katz & Jerry A. Fodor
   * rules which take account of semantic relations between morphemes and of the
     interaction between meaning and syntactic structure
 
-#6. The structure and evaluation of dictionary entries p15
+# 6. The structure and evaluation of dictionary entries p15
 
 * two parts: POS and senses
 * sense: a SENSE-CHARACTERIZATION and one or more synonyms (optional)
@@ -144,9 +144,9 @@ Jerrold J. Katz & Jerry A. Fodor
   * we do not attempt to decide here;
 * no mechanical discovery/decision procedure
 
-#7. The projection rule component p25
+# 7. The projection rule component p25
 
-#8. Metatheory p39
+# 8. Metatheory p39
 
 * metatheory for semantics must [represent] semantic universals
 * an enumeration of the semantic markers from which the theoretical vocabulary

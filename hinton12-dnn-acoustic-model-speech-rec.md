@@ -3,7 +3,7 @@ Geoffrey Hinton, Li Deng, Dong Yu, George Dahl, Abdel-rahman Mohamed...
 Deep Neural Networks for Acoustic Modeling in Speech Recognition
 Toronto, Microsoft, Google, IBM
 
-#Introduction
+# Introduction
 
 * machine learning algorithms can lead to significant advances in automatic
   speech recognition.
@@ -33,7 +33,7 @@ Toronto, Microsoft, Google, IBM
     * when each phone is modelled by a number of different “triphone” 
       * HMMs that take into account the phones on either side.
 
-#II. Training deep neural networks
+# II. Training deep neural networks
 
 two-stage
   1. layers of feature detectors are initialized, one layer at a time, by
@@ -52,9 +52,9 @@ C. Modeling real-valued data
 D. Stacking RBMs to make a deep belief network
 E. Interfacing a DNN with an HMM
 
-#III. Phonetic classification and recognition on TIMIT
+# III. Phonetic classification and recognition on TIMIT
 
-#IV. Comparing DBN-DNNs with GMMs for large-vocabulary speech recognition
+# IV. Comparing DBN-DNNs with GMMs for large-vocabulary speech recognition
 
 A. Bing-Voice-Search speech recognition task
 B. Switchboard speech recognition task
@@ -66,7 +66,7 @@ G. Speeding up DNNs at recognition time
 H. Alternative pre-training methods for DNNs
 I. Alternative fine-tuning methods for DNNs
 
-#V. Other ways of using deep neural networks for speech recognition
+# V. Other ways of using deep neural networks for speech recognition
 
 A. Using DBN-DNNs to provide input features for GMM-HMM systems
   * Here we describe a class of methods where neural networks are used to
@@ -79,4 +79,4 @@ A. Using DBN-DNNs to provide input features for GMM-HMM systems
 B. Using DNNs to estimate articulatory features for detection-based speech
 recognition
 
-#VI. Summary and future directions
+# VI. Summary and future directions

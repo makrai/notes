@@ -2,7 +2,7 @@ Two/Too Simple Adaptations of Word2Vec for Syntax Problems
 Wang Ling, Chris Dyer, Alan Black, and Isabel Trancoso
 2015 NAACL
 
-#Abstract
+# Abstract
 
 * We present two simple modifications to the models in the popular Word2Vec
   * more suited to tasks involving syntax. The main 

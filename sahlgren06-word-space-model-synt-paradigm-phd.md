@@ -4,7 +4,7 @@ The Word-Space Model
   relations between words in high-dimensional vector spaces
 PhD 2006
 
-#Abstract
+# Abstract
 
 * three main theoretical cornerstones of the word-space model
   * geometric metaphor of meaning, the
@@ -15,7 +15,7 @@ PhD 2006
   * depending on how the distributional patterns of words are used to
     accumulate word spaces
 
-##1.5 road map
+## 1.5 road map
 
 * chapters
   2. what the word-space model is,
@@ -29,7 +29,7 @@ PhD 2006
   4. concludes the text
 * the main contribution of this dissertation is theoretical
 
-##3.3 A brief history of context vectors
+## 3.3 A brief history of context vectors
 
 * Osgood’s feature-space approach was the major influence for early
   connectionist research that used distributed representations of meaning
@@ -62,7 +62,7 @@ PhD 2006
       context vectors (which he calls _term vectors_ or _word vectors_)
       * co-occurrence counts are collected in a words-by-words matrix
 
-##3.5 Similarity in mathematical terms 41
+## 3.5 Similarity in mathematical terms 41
 
 * Minkowski metric [`l`-metrika]
 * Widdows (2004) points out, these measures are not ideal to use for word-space
@@ -70,7 +70,7 @@ PhD 2006
   * Minkowski metrics have the opposite problem: frequent words will [be] far
 * solution to this problem is to factor out the effects of vector length
 
-##4.5 Hyperspace Analogue to Language 49
+## 4.5 Hyperspace Analogue to Language 49
 
 * the Hyperspace Analogue to Language (HAL) (Lund+ 1995), which, in
   * developed specifically for word-space research, and was
@@ -87,7 +87,7 @@ PhD 2006
 * normalization of the vectors to unit length;
 * a Minkowski metric to compute vector similarities
 
-##4.6 Random Indexing
+## 4.6 Random Indexing
 
 * Random Indexing (RI)
   (Kanerva+ 2000; Karlgren & Sahlgren, 2001; Sahlgren, 2005), which was
@@ -109,7 +109,7 @@ PhD 2006
      word token at a time, and adding the context’s ... r-dimensional index
      vector(s) to the word’s r-dimensional context vector
 
-#6 Rethinking the distributional hypothesis 65
+# 6 Rethinking the distributional hypothesis 65
 
 * the distributional hypothesis, as motivated by the works of Zellig Harris
   * states that differences of meaning correlate with differences of
@@ -117,9 +117,9 @@ PhD 2006
   * neither specifies what kind of distributional information we should look
     for, nor what kind of meaning differences it mediates
 
-##6.1 The origin of differences: Saussure
+## 6.1 The origin of differences: Saussure
 
-##6.2 Syntagma and paradigm 60
+## 6.2 Syntagma and paradigm 60
 
 * Syntagmatic relations concern positioning, and
   * Greek word _suntag-matikos,_ which means arranged, or put in order. The
@@ -142,7 +142,7 @@ PhD 2006
   * A paradigm is thus a set of such substitutable entities
 * usually depicted as orthogonal axes in a 2-dimensional grid
 
-##6.3 A Saussurian refinement
+## 6.3 A Saussurian refinement
 
 * Although Harris was arguably more directly influenced by the works of
   Bloomfield than of Saussure, the latter’s structuralist legacy is
@@ -154,7 +154,7 @@ PhD 2006
     * co-occurrence information contains syntagmatic relations between words
     * information about shared neighbors contains paradigmatic relations
 
-##7 Syntagmatic and paradigmatic uses of context 71
+## 7 Syntagmatic and paradigmatic uses of context 71
 
 * very few studies have investigated the effects of using different contexts
 * other word-space parameters ... have been meticulously scrutinized
@@ -178,11 +178,11 @@ PhD 2006
   what these different uses of context entail, what their differences are, and
   how they can be used to build word spaces
 
-##7.1 Syntagmatic uses of context 72
+## 7.1 Syntagmatic uses of context 72
 
 can be characterized by the size of the context region
 
-##7.2 The context region
+## 7.2 The context region
 
 * word-space algorithms that prefer a syntagmatic use of context, such as LSA,
   hail from the information retrieval community, where a document is a natural
@@ -205,7 +205,7 @@ can be characterized by the size of the context region
   * the majority of terms never co-occur (Picard 1999)
   * The smaller the context regions ..., the worse the sparse-data problem
 
-##7.3 Paradigmatic uses of context 74
+## 7.3 Paradigmatic uses of context 74
 
 * need not only consist of words that share the same immediately preceding or
   succeeding neighbor or neighbors
@@ -214,7 +214,7 @@ can be characterized by the size of the context region
   2. The position of the words within the context region
   3. The direction in which the context region is extended
 
-##7.4 The context window
+## 7.4 The context window
 
 * most researches favor the use of statically-sized context windows
   * _focus word_ to refer to the word in the middle of the context window
@@ -243,7 +243,7 @@ can be characterized by the size of the context region
 * a példában látszik: syntagmatic: context = sentence
   paradigmatic: context = word
 
-##7.5 What is the difference? 77
+## 7.5 What is the difference? 77
 
 * Schütze & Pedersen (1997) argue that a paradigmatic [small window] context
   ... is both quantitatively ... and qualitatively ... better
@@ -258,7 +258,7 @@ can be characterized by the size of the context region
 * Schütze (1992): it is unnecessary to apply SVD ... when using paradigmatic
   contexts, since they are already dense, and ... contain paradigmatic rels
 
-##7.6 And what about linguistics?
+## 7.6 And what about linguistics?
 
 * linguistic sophistication in the use of contexts
 * HAL ... includes at least ... word order into the directional co-occurrence
@@ -285,12 +285,12 @@ can be characterized by the size of the context region
   Grefenstette (1992a, 1992b, 1993) ... used syntactic context to measure
   similarity between words
 
-#8 Experiment setup 83
+# 8 Experiment setup 83
 
 the data, the preprocessing, the transformation and weighting schemes, the
 word-space implementation, the software, the tests, and the evaluation metrics
 
-##8.1 Data
+## 8.1 Data
 
 * Touchstone Applied Science Associates (TASA) corpus, 1 which consists of
   * high-school level English texts on a number of different topics such as
@@ -301,11 +301,11 @@ word-space implementation, the software, the tests, and the evaluation metrics
   * 150 words large context regions
   * 12–17 words small context regions
 
-##8.2 Preprocessing
+## 8.2 Preprocessing
 
 * morphological normalization
 
-##8.3 Frequency thresholding
+## 8.3 Frequency thresholding
 
 * frequency thresholding for words with frequency less than 50
   * In Chapter 9, I use a frequency threshold of 20 instead, and
@@ -319,7 +319,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
 * For tests with a specified vocabulary ..., the frequency threshold does not
   apply to the context vectors for the test words
 
-##8.4 [syntagmatic:] Transformation of frequency counts
+## 8.4 [syntagmatic:] Transformation of frequency counts
 
 * I optimize ... in each particular task
 * four different transformations for the syntagmatic uses of context
@@ -331,7 +331,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
 * notation for the parameters involved in syntagmatic uses of context
   * c is the context region (+ for large and − for small), and a is the
 
-##8.5 [paradigmatic:] Weighting of context windows
+## 8.5 [paradigmatic:] Weighting of context windows
 
 * two ... weighting schemes for the slots ... for the paradigmatic uses
   * Constant weighting over the window
@@ -340,21 +340,21 @@ word-space implementation, the software, the tests, and the evaluation metrics
   * linear distance weighting where the weight decreases with some constant
   * 1/l where l is the distance to the focus word.  Figure 8.1 shows the
 
-##8.6 Word-space implementation
+## 8.6 Word-space implementation
 
 * no dimensionality reduction of the context vectors in these experiments
   * I do not want [it] to interfere with ...  syntagmatic [vs] paradigmatic
 
-##8.7 Software
+## 8.7 Software
 
-##8.8 Tests
+## 8.8 Tests
 
 * different tests measure ... syntagmatic and paradigmatic relations to
   different degrees
   * syntagmatic and paradigmatic relations are not mutually exclusive
 * Most of the following tests use some sort of lexical resource for comparison
 
-##8.9 Evaluation metrics
+## 8.9 Evaluation metrics
 
 * [in ch 10, 11, 13, and 14,] I employ two different evaluation metrics
   * lax(h) and strict(h) settings
@@ -367,7 +367,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
   * antonym test, which consists of word pairs, I use lax(10) and strict(1)
   * part-of-speech test, ... I use lax(1) and strict(10)
 
-#15 Analysis 127
+# 15 Analysis 127
 
 * remains unclear to what extent the word spaces contain syntagmatic and
   paradigmatic information, and which parameters influence this distinction?
@@ -376,7 +376,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
   2. a comparative analysis of the performance of the different word spaces
   3. related research
 
-##15.1 The context region
+## 15.1 The context region
 
 |Test	        |Strict	|Lax	  |
 |-------------|-------|-------|
@@ -386,22 +386,22 @@ word-space implementation, the software, the tests, and the evaluation metrics
 |Antonym	    |large	|same	  |
 |PoS	        |small	|large	|
 
-##15.2 Frequency transformations
+## 15.2 Frequency transformations
 
 * binary counts tend to produce good results for the small regions, whereas
   tfidf-transformations produce good results for the large context regions
 
-##15.3 The context window [for the paradigmatic uses of context] 130
+## 15.3 The context window [for the paradigmatic uses of context] 130
 
 * narrow windows ... seem optimal for thesaurus, synonym, and POS
 * wider windows seem optimal for the association and antonym tests
 * consistent[ly] over the evaluation metrics
 
-##15.4 Window weights [for the paradigmatic uses of context]
+## 15.4 Window weights [for the paradigmatic uses of context]
 
 * weighting of the positions in the context windows is suboptimal for [most]
 
-##15.5 Comparison of contexts 131
+## 15.5 Comparison of contexts 131
 
 * Table 15.6
   * the degree to which the relations are essential to the test (− and +), and
@@ -419,7 +419,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
   * syntagmatic ... are more refined when the regions are smaller, while
   * paradigmatic representations ... are more refined the smaller the context
 
-##15.6 Related research 133
+## 15.6 Related research 133
 
 * Schütze & Pedersen (1993) compute syntagmatic and paradigmatic relations
   * paradigmatic similarity [by comparing the left or the right] vectors,
@@ -444,14 +444,14 @@ word-space implementation, the software, the tests, and the evaluation metrics
 * Both types of context usage are therefore equally well-motivated,
   both empirically and theoretically
 
-##15.7 The semantic continuum
+## 15.7 The semantic continuum
 
 * small context regions ... yield more syntagmatic word spaces, while
 * narrow context windows ... yield more paradigmatic spaces
 
-#16 Conclusion 139
+# 16 Conclusion 139
 
-##16.1 Flashbacks
+## 16.1 Flashbacks
 
 * background-chapters discussed the underlying
   * theoretical assumptions
@@ -483,13 +483,13 @@ word-space implementation, the software, the tests, and the evaluation metrics
   15. analyzed and scrutinized the results from the experiments, and also
       provided a brief review of related research
 
-##16.2 Summary of the results
+## 16.2 Summary of the results
 
 * On the theoretical side, I have argued that the word-space model uses the
   * geometric metaphor of meaning as representational basis, and the
   * distributional methodology as discovery procedure. I have argued that the
 
-##16.3 Answering the questions
+## 16.3 Answering the questions
 
 * Is it at all possible to extract semantic knowledge by merely looking at
   usage data? Clearly: yes
@@ -499,9 +499,9 @@ word-space implementation, the software, the tests, and the evaluation metrics
     syntagma and paradigm
   * if we believe that meaning is essentially referential, then [no]
 
-##16.4 Contributions
+## 16.4 Contributions
 
-##16.5 The word-space model revisited
+## 16.5 The word-space model revisited
 
 * I ... feel obliged to discuss a few remaining concerns
 * internal structure of the spaces: word spaces [may] have
@@ -520,7 +520,7 @@ word-space implementation, the software, the tests, and the evaluation metrics
 * its flexibility and ability to continuously evolve ...  when subjected to a
   continuous data flow
 
-##16.6 Beyond the linguistic frontier 142
+## 16.6 Beyond the linguistic frontier 142
 
 * not a psychologically realistic model of human semantic processing. The only
 * it is arguable that human[s] also use extralinguistic context when learning,

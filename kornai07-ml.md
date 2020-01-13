@@ -2,9 +2,9 @@ András Kornai
 Mathematical linguisitcs
 2007
 
-#5 Syntax
+# 5 Syntax
 
-##Semantics-driven theories
+## Semantics-driven theories
 
 * [e.g. split ergativity] gives rise to the suspicion, shared by many in the
   field of artificial intelligence (AI), that mainstream linguistics goes about
@@ -76,7 +76,7 @@ Mathematical linguisitcs
     connect the vast majority of lexical items to [the few primitives]
   * inner syntax [of] conceptual representations, both primitive and derived
 
-##5.7 Further reading
+## 5.7 Further reading
 
 * Moravcsik and Wirth (1980) presents the analysis of (5.8) and (5.9) in a
   variety of syntactic frameworks. Some of these frameworks are still in use in
@@ -85,9 +85,9 @@ Mathematical linguisitcs
     is in wide use, and covers an immense variety of languages, many of which
     have no analyses in any other framework
 
-#6 Semantics
+# 6 Semantics
 
-#6.1 The explanatory burden of semantics
+# 6.1 The explanatory burden of semantics
 
 (A) characterizing the set of expressions and (B) characterizing the set of
 meanings (C) expressions that have similar form should receive analyses by the
@@ -97,7 +97,7 @@ system must be flexible about naming.  (F) the system must remain invariant
 under a change of facts.  (G) all expressions should receive analysis by the
 same apparatus as supposed statements of fact
 
-###6.2.1 Montague grammar
+### 6.2.1 Montague grammar
 
 * The problem, known as the defeasability of natural language statements, has
   given rise to a wide variety of
@@ -110,9 +110,9 @@ same apparatus as supposed statements of fact
       outdated_ may be considered true without any individual instances holding
       true
 
-###6.2.2 Truth values and variable binding term operators
+### 6.2.2 Truth values and variable binding term operators
 
-##6.3 Grammatical semantics
+## 6.3 Grammatical semantics
 
 * a range of syntactic theories we called grammatical because they rely on
   notions such as (deep) case, valence, dependency, and linking, which are
@@ -120,7 +120,7 @@ same apparatus as supposed statements of fact
   goal here is to develop a formal theory of semantics that fits these theories
   as well as standard MG fits combinatorial theories of syntax
 
-##6.4 Further reading
+## 6.4 Further reading
 
 * generics is Carlson and Pelletier (1995). That generics admit exceptions
   and thus require a mechanism greatly different from that of standard

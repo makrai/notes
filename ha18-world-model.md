@@ -2,7 +2,7 @@ David Ha, Jürgen Schmidhuber
 World Models
 2018
 
-#1 Intro
+# 1 Intro
 
 * schmidhuberezés
   * reinforcement learning (RL) 

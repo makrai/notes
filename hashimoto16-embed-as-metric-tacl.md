@@ -2,7 +2,7 @@ Word Embeddings as Metric Recovery in Semantic Spaces
 Tatsunori B. Hashimoto, David Alvarez-Melis and Tommi S. Jaakkola
 TACL 2016
 
-#Abstract
+# Abstract
 
 * We 
   * ground word embeddings in semantic spaces studied in the
@@ -20,6 +20,6 @@ TACL 2016
   * two new inductive reasoning datasets
     * series completion and classification
 
-#6 Empirical validation
+# 6 Empirical validation
 
-##6.3 Word embeddings can embed manifolds
+## 6.3 Word embeddings can embed manifolds

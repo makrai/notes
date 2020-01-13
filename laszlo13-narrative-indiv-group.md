@@ -4,7 +4,7 @@ Narrative Language as an Expression of Individual and Group Identity:
   The Narrative Categorical Content Analysis
 SAGE Open April-June 2013: 1­–12
 
-#Abstract
+# Abstract
 
 * NarrCat
 * Psycho-Thematic modules, such as
@@ -17,7 +17,7 @@ SAGE Open April-June 2013: 1­–12
   * complex, higher level exploration of composite psychological processes
 * unique feature of NarrCat is its capacity of SRL
 
-#Intro
+# Intro
 
 * Linguistic Category Model (LCM) by Semin and Fiedler (1988)
   * three interrelated perspectives: as a functional tool, as architecture of
@@ -75,7 +75,7 @@ SAGE Open April-June 2013: 1­–12
   relations_
   * who feels or acts this content toward whom?
 
-#Conceptualization of Content Analysis in NarrCat
+# Conceptualization of Content Analysis in NarrCat
 
 * focus of NarrCat is 
   * not on psychological correlates of words, nor on function words (as
@@ -90,11 +90,11 @@ SAGE Open April-June 2013: 1­–12
   * A fully functional SRL analyzer requires ... anaphora resolution
   * external linguistic parsers + project-specific support modules in NarrCat
 
-#Technological Background
+# Technological Background
 
 NooJ, MNSZ
 
-#The Structure of NarrCat
+# The Structure of NarrCat
 
 * dictionaries ... compiled from the ten thousand most frequent verbs,
   adjectives, nouns, and adverbs in Hungarian language,
@@ -107,10 +107,10 @@ NooJ, MNSZ
 * Hypermodules, such as
   * Psychological Perspective and Spatio-Temporal Perspective,
 
-##The Psycho-Thematic Modules p4
+## The Psycho-Thematic Modules p4
 
-##The Relational Module Group p7
+## The Relational Module Group p7
 
-##Hypermodules of NarrCat p8
+## Hypermodules of NarrCat p8
 
-#Summary and Conclusion p9
+# Summary and Conclusion p9

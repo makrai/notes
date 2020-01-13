@@ -25,13 +25,13 @@ Inference and the computer understanding of natural language
 Roger C. Schank and Charles J. Rieger 111
 1973 Stanford University, DARPA
 
-#Abstract
+# Abstract
 
 * inference mechanisms designed to function in a language-free deep conceptual
   base (Conceptual Dependency) + The conceptual analysis of a natural
   language sentence into this conceptual base,
 
-#I. INTRODUCTION
+# I. INTRODUCTION
 
 * the notion of inference and how it differs from logical deductions (for
   instance in a theorem-prover or question answerer)
@@ -62,7 +62,7 @@ Roger C. Schank and Charles J. Rieger 111
     credibility of some piece of information which was used in its generation
     changes
 
-#II. INFERENCE AND PARSING 4
+# II. INFERENCE AND PARSING 4
 
 * we shall disregard any discussion of syntactic parsing [as there are
   computer programs that] go directly from an input sentence into a meaning
@@ -104,7 +104,7 @@ Roger C. Schank and Charles J. Rieger 111
       processes is contained in the particular language
     * [from now on]: inference that come from world knowledge
 
-#III. THE FOURTEEN PRIMITIVE ACTIONS 9
+# III. THE FOURTEEN PRIMITIVE ACTIONS 9
 
 * a syntax of possible conceptual relationships and 
   a set of conceptual categories that these relate
@@ -158,7 +158,7 @@ Roger C. Schank and Charles J. Rieger 111
      and its cases
   4. Only animate objects may serve as actors except for PROPEL
 
-#IV. LANGUAGE-FREE INFERENCES 15
+# IV. LANGUAGE-FREE INFERENCES 15
 
 (13) John told Mary that he wants a book
 (14) John likes chocolate
@@ -183,9 +183,9 @@ Roger C. Schank and Charles J. Rieger 111
   can be inferred that that is what happened
 * INTENTION-INFERENCE
 
-#V. OBSERVATIONS 29
+# V. OBSERVATIONS 29
 
-#VI. THE Program 30
+# VI. THE Program 30
 
 * The internally stored form of a proposition is called a bond, and is stored
   as a single entity under a LISP generated atom (superatom)
@@ -200,6 +200,6 @@ Roger C. Schank and Charles J. Rieger 111
 * sub-proposition: info conveyed purely by analyzer-initiated inference
   * explicit-focused, explicit-peripheral, or implicit p36/42
 
-#APPENDIX A: Computer EXAMPLES 45
-#APPENDIX B: INFERENCE AND REFERENCE ESTABLISHMENT ... 57
-#REFERENCES G3
+# APPENDIX A: Computer EXAMPLES 45
+# APPENDIX B: INFERENCE AND REFERENCE ESTABLISHMENT ... 57
+# REFERENCES G3

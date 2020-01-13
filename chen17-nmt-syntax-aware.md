@@ -2,7 +2,7 @@ Improved Neural Machine Translation with a Syntax-Aware Encoder and Decoder
 Huadong Chen, Shujian Huang, David Chiang, Jiajun Chen
 2017
 
-#Abstract
+# Abstract
 
 * we propose 
   * a bidirectional tree encoder which 
@@ -12,7 +12,7 @@ Huadong Chen, Shujian Huang, David Chiang, Jiajun Chen
 * on Chinese-English ... outperform the sequential attentional model as well as
   a stronger baseline with a bottom-up tree encoder and word coverage
 
-#1 Intro
+# 1 Intro
 
 * NMT models still suffer from syntactic errors such as attachment (Shi+ 2016).
   We argue that instead of letting the NMT model rely solely on the

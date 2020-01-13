@@ -3,7 +3,7 @@ Angeliki Lazaridou and Elia Bruni and Marco Baroni
 Is this a wampimuk?
   Cross-modal mapping between distributional semantics and the visual world
 
-#Abstract
+# Abstract
 
 Following up on recent work on establishing a mapping between
     vector-based semantic embeddings of words and 
@@ -13,7 +13,7 @@ fast mapping, a challenging and more cognitively plausible variant of
 the zero-shot task, in which the learner is exposed to new objects and the
 corresponding words in very limited linguistic contexts
 
-#1 Introduction
+# 1 Introduction
 
 * Computational models of meaning that 
     rely on corpus-extracted context vectors ... 
@@ -49,7 +49,7 @@ we
         Frome-ról nagyrészt hallgat, mint büdös disznó a zabban
     and show that zero-shot learning scales to a large and noisy dataset
 
-#2 Related Work
+# 2 Related Work
 
 Socher et al. (2013) 
     outlier detector
@@ -61,12 +61,12 @@ Frome et al. (2013) focus on zero-shot learning
 traditional distributional vectors bearing other desirable properties,
 such as high interpretability of dimensions
 
-#3 Zero-shot learning and fast mapping
+# 3 Zero-shot learning and fast mapping
 
 “We found a cute, hairy wampimuk sleeping behind the tree.” 
 new concepts are assumed to be encounted in a limited linguistic context
 
-##4.4 Cross-modal Mapping
+## 4.4 Cross-modal Mapping
 
 We implement 4 alternative learning algorithms for inducing the
 cross-modal projection function fproj_{v→w}
@@ -93,14 +93,14 @@ cross-modal projection function fproj_{v→w}
             Levy, 2007
             Parameters were estimated with standard backpropagation and L-BFGS
 
-#5 Results
+# 5 Results
 
 For the zero-shot task we report the [top k accuracy] with the union of
 seen and unseen concepts. 
 For fast mapping, we report the mean rank of the correct concept among
 fast mapping candidates
 
-##5.1 Zero-shot Learning in CIFAR-100
+## 5.1 Zero-shot Learning in CIFAR-100
 
     all concepts but one as seen concepts
     nn: 20 hidden units
@@ -113,14 +113,14 @@ fast mapping candidates
     hidden layer acts as a cross-modal concept categorization/organization
     system
 
-##5.2 Zero-shot Learning in ESP
+## 5.2 Zero-shot Learning in ESP
 
     tuning the number of hidden units of NN
     train on 70%, test on 30%
     To the best of our knowledge, this is the first time this task has been
     performed on a dataset as noisy as ESP
 
-##5.3 Fast Mapping in ESP
+## 5.3 Fast Mapping in ESP
 
     context n: n sentences, n = 1, 5, 10, 20, full
     visual -> word    
@@ -129,7 +129,7 @@ fast mapping candidates
         full visual representation for it
         qualitative analysis
 
-#6 Conclusion
+# 6 Conclusion
 
 we plan to experiment in the future with more sophisticated neural
 network architectures inspired by recent work in machine translation (Jianfeng Gao

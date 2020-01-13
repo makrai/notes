@@ -5,7 +5,7 @@ John Wieting, Mohit Bansal, Kevin Gimpel, Karen Livescu, Dan Roth
 We release the new datasets, complete with ... annotations, as well as
 our code and the trained models
 
-#Nem tudom, honnan szedtem ebben a formában, de jó
+# Nem tudom, honnan szedtem ebben a formában, de jó
 
 * We find
   * skip-gram word vectors (Mikolov+ 2013a) can be fine-tuned for the
@@ -15,7 +15,7 @@ our code and the trained models
   * improved performance by training a[n] RNN (Socher+ 2010) directly
     on phrase pairs from PPDB
 
-#1 Intro
+# 1 Intro
 
 * Paraphrase detection
   * See (Androutsopoulos and Malakasiotis 2010) for a survey on approaches
@@ -43,7 +43,7 @@ our code and the trained models
     * ML-Paraphrase, is a reannotation of the bigram similarity corpus from
       Mitchell and Lapata (2010)
 
-#2 Related work
+# 2 Related work
 
 * embeddings ... tailored to specific downstream tasks (Bansal+ 2014)
 * Phrase representation[ vectors]
@@ -65,15 +65,15 @@ our code and the trained models
 * Concurrently with our work Yu and Dredze (2015)
   construct paraphrase models for short phrases [using PPDB]
 
-#3 3 New Paraphrase Datasets
+# 3 3 New Paraphrase Datasets
 
-#4 Paraphrase Models
+# 4 Paraphrase Models
 
-#5 Experiments – Word Paraphrasing
+# 5 Experiments – Word Paraphrasing
 
-#6 Experiments – Compositional Paraphrasing
+# 6 Experiments – Compositional Paraphrasing
 
-#7 Qualitative Analysis
+# 7 Qualitative Analysis
 
 * RNN performs better ... for less similar pairs
   * Vector addition only does better on the most similar pairs
@@ -93,7 +93,7 @@ our code and the trained models
     * [i.e.] addition ... perform[s] well when two paraphrastic phrases have
       high lexical overlap and similar length
 
-#8 Conclusion
+# 8 Conclusion
 
 * [future work]
   * [base our composition function on] dependency syntax (Socher+ 2014)

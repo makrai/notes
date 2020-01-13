@@ -2,7 +2,7 @@ Latent Dirichlet Allocation
 David M. Blei, Andrew Y. Ng, and Michael I. Jordan
 Journal of Machine Learning Research 3 (2003) 993-1022
 
-#Abstract
+# Abstract
 
 * latent Dirichlet allocation (LDA)
   * generative probabilistic model

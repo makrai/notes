@@ -6,7 +6,7 @@ Argumentum 2018 Debreceni Egyetemi Kiadó
   „a matematikus tapasztalatait igyekszik gyümölcsöztetni a nyelv
   strukturális vizsgálata számára”.
 
-#7.3 (Sass 2011)
+# 7.3 (Sass 2011)
 
 * minden mondatvázból a gyakoriságot az illeszkedő, rövidebb (a rövidebbek
   között a lehető leghosszabb) szerkezetek közül egy véletlenszerűen

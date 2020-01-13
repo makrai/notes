@@ -3,13 +3,13 @@ Words are Vectors, Dependencies are Matrices:
   Learning Word Embeddings from Dependency Graphs
 IWCS 2019
 
-#Abstract
+# Abstract
 
 * good performance on both intrinsic and extrinsic evaluation tasks
 * represent dependency chains as products of matrices 
   * provides a straightforward way of handling further contexts
 
-#1 Introduction
+# 1 Introduction
 
 * [dependency] in Skip-gram was explored by Levy and Goldberg (2014), who
   * contexts [were a concatenation of the word] and the dependency-label
@@ -20,7 +20,7 @@ IWCS 2019
   * relatedness as domain similarity
   * function similarity: the degree to which words share similar funcl roles
 
-#4 Evaluation 5
+# 4 Evaluation 5
 
 * We compared the performance of our model to that of
   * Skip-gram (SG),
@@ -44,7 +44,7 @@ IWCS 2019
     * for word similarity we based the hyperparameter choice on the SimLex-999
     * we removed all tokens ... with frequencies less than 100
 
-##4.1 Word Similarity Datasets
+## 4.1 Word Similarity Datasets
 
 * The datasets used for this evaluation included
   * Agirre+ (2009)’s relatedness and similarity splits of WordSim353 (WS353)
@@ -58,7 +58,7 @@ IWCS 2019
 * DM outperformed LG on all benchmarks and SGdep on all similarity [as opposed
   to relatedness] datasets
 
-#4.2 RELPRON
+# 4.2 RELPRON
 
 * RELPRON
   * introduced by Rimell+ (2016) as an evaluation dataset for semantic comp
@@ -80,11 +80,11 @@ IWCS 2019
     1. simple-sum (SS), is the sum of the words’ input-embeddings. The second,
     2. enhanced-sum (ES), makes use of the dependency structure
 
-###Simple-sum composition 7
+### Simple-sum composition 7
 
 * summing the input-embeddings of the agent a, verb v and patient p in a phrase
 
-###Enhanced-sum composition
+### Enhanced-sum composition
 
 * focus on one specific word – in this case, the head noun, which is the term’s
 * There are two ways that we can view the head noun
@@ -106,15 +106,15 @@ IWCS 2019
     * This composition method (multiplying dependency matrices, and summing
       over words) can be applied to any possible dependency graph:
 
-##4.3 Similarity vs Relatedness 8
+## 4.3 Similarity vs Relatedness 8
 
-##4.4 Qualitative Evaluation 9
+## 4.4 Qualitative Evaluation 9
 
-##4.5 Dependency Parsing
+## 4.5 Dependency Parsing
 
 * we used the input-embeddings of DM, LG and SG to initialise ... the Stanford
 
-##4.6 Part-of-speech Tagging
+## 4.6 Part-of-speech Tagging
 
 * evaluation framework, VecEval (Nayak+ 2016). VecEval’s word-labelling model
 * resembles the one introduced by Collobert+ (2011). First, it constructs the
@@ -122,11 +122,11 @@ IWCS 2019
   surrounding words and then passes it through two neural network layers,
   followed by a softmax classifier
 
-##4.7 Chunking
+## 4.7 Chunking
 
 * the chunking CoNLL’00 shared task (Tjong Kim Sang and Buchholz, 2000)
 
-#5 Conclusion 10
+# 5 Conclusion 10
 
 * [Our] Skip-gram-based DSM [is]
   superior or on par with Levy and Goldberg (2014)’s model

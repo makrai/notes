@@ -1,4 +1,4 @@
-##1.4
+## 1.4
 
 * First there is the Frege-Russell-Tarski-Montague-Kamp tradition, what we call
   the {\it standard} theory in this book. [\dots] Here meanings are modeled by
@@ -14,7 +14,7 @@
   theory, of which both {\tt 4lang} and \href{http://amr.isi.edu}{AMR} are
   modern instances
 
-##2.6 Proof theory
+## 2.6 Proof theory
 
 * There are several rules of deduction in common use, and the theory of logic
   * inputs, called its premisses, and one
@@ -29,7 +29,7 @@
       e.g.  intuitionistic logic, which disallows both double negation and the
       closely related tertium non datur (law of the excluded middle)
 
-##2.7 Multivariate statistics
+## 2.7 Multivariate statistics
 
 * concept formation, the ability to acquire words based only on a few examples
   * We
@@ -42,7 +42,7 @@
   * [but there are] words like _mirror_ or _wiggle_ that are _sui generis_
     * these offer no significant contrasts
 
-##5.5 Representing knowledge and meaning
+## 5.5 Representing knowledge and meaning
 
 * the autonomy of syntax thesis (Chomsky 1973), claiming that 
   * the syntactic rules and principles of a language are formulated without
@@ -55,7 +55,7 @@
     good engineering sense to maximally isolate our theory of semantics from
     the details of syntactic representation.
 
-##5.7
+## 5.7
 
 Here we will discuss three well known ranges of ‘pragmatic’ phenomena
   * cooccurrence restrictions,
@@ -63,7 +63,7 @@ Here we will discuss three well known ranges of ‘pragmatic’ phenomena
   * dependence of linguistic meaning on external (non-linguistic) factors
 * synt jól formált de furcsa mondatok tagadása nem feltétlenül furcsa
 
-##7.1 Schematic inferences
+## 7.1 Schematic inferences
 
 * In Chapter 3 we used McCarthy’s 1976 analysis of a simple newspaper story 
 * Here we use a more systematic test set, 

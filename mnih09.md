@@ -4,7 +4,7 @@ A scalable hierarchical distributed language model embedding HLBL
 
 itt egy szónak még csak egyféle vektora van
 
-#Abstract
+# Abstract
 
 * Morin and Bengio have proposed a hierarchical language model
   * two orders of magnitude faster than the non-hierarchical model it was 
@@ -23,7 +23,7 @@ itt egy szónak még csak egyféle vektora van
   * Perhaps the best known [vecor `n`-gram] model is the 
     Neural Probabilistic Language Model NPLM (Bengio et al 2003)
 
-#2 The hierarchical neural network language model
+# 2 The hierarchical neural network language model
 
 * normalization is costly
 * One way to speed up the process is [a specialized importance sampling] 
@@ -39,11 +39,11 @@ itt egy szónak még csak egyféle vektora van
   * replace this procedure by an [unsupervised] method for building trees 
   * trees where each word can occur more than once
 
-#3 The log-bilinear language model 
+# 3 The log-bilinear language model 
 
 * log-bilinear language model (LBL) (Mnih and Hinton 2007.) 
 
-#4 The hierarchical log-bilinear model 3
+# 4 The hierarchical log-bilinear model 3
 
 * based on the hierarchical model from (Morin & Bengio 05). 
 * The distinguishing features of our model are
@@ -59,7 +59,7 @@ itt egy szónak még csak egyféle vektora van
   have multiple senses or multiple usage patterns
 * az utolsó két bekezdést nem értettem meg
 
-#5 Hierarchical clustering of words
+# 5 Hierarchical clustering of words
 
 * It is also not clear that using expert knowledge, even when it is available,
   will lead to superior performance. :-)
@@ -102,9 +102,9 @@ itt egy szónak még csak egyféle vektora van
         the above algorithms, we will use an algorithm that generates 
     4. RANDOM balanced trees. It starts with a random permutation of the words
 
-#6 Experimental results
+# 6 Experimental results
 
-#7 Discussion and future work
+# 7 Discussion and future work
 
 * the words with the largest numbers of codes (i.e. the word that were
   replicated the most) were not the words with multiple distinct senses

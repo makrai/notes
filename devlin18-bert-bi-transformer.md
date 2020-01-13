@@ -1,7 +1,7 @@
 Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
-#Abstract
+# Abstract
 
 * Bidirectional ... Transformers. Unlike recent language representation models,
 * jointly conditioning on both left and right context in all layers. As a

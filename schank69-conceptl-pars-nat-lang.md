@@ -11,7 +11,7 @@ Roger C. Schank and Lawrence G. Tesler
       * intended to map pieces of the conceptual network into linguistic items
       * may be used for both parsing and generating
 
-#3 Underlying theory
+# 3 Underlying theory
 
 * For each type of dependency, semantic categories (such as `animate` object,
   human `institution` , `animal motion`) are delimited with respect to the

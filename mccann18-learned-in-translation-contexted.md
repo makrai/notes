@@ -4,7 +4,7 @@ arXiv:1708.00107 [cs.CL]
 
 CoVe
 
-#Abstract
+# Abstract
 
 * pretrained ... deep LSTM encoder 
   from an attentional sequence-to-sequence model trained for MT to

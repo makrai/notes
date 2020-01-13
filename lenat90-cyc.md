@@ -2,7 +2,7 @@ CYC: TOWARD PROGRAMS WITH COMMON SENSE
 Lenat, V Guha, Pittman, Pratt, Shepherd
 1990
 
-#Abstract
+# Abstract
 
 * attempt to assemble a massive knowledge base [on the order of 10^8 axioms]
   spanning human consensus knowledge
@@ -14,14 +14,14 @@ Lenat, V Guha, Pittman, Pratt, Shepherd
   * efficient inferencing and default reasoning [heuristic level], and the
   * content and organization of the knowledge base
 
-#Motivation: Brittleness Bottleneck
+# Motivation: Brittleness Bottleneck
 
 * For three decades, Artificial Intelligence researchers have grappled with
   issues like control of search in problem solving, organization of memory,
   logic for the representation of knowledge, perception, and so on, driven by
   tasks ranging from infants exploring their “worlds” through experts
 
-##The Path to Artificial Intelligence
+## The Path to Artificial Intelligence
 
 * three tasks:
 1. Develop a language (actually a logic)
@@ -37,7 +37,7 @@ Lenat, V Guha, Pittman, Pratt, Shepherd
     upon a significant amount of knowledge as their primary source of power
     Later dubbed “expert systems,”
 
-##The Source of Software Brittleness
+## The Source of Software Brittleness
 * special knowledge: a tudás kérge
 * Programs often use names for concepts such as predicates, variables, etc.,
   that are meaningful to humans examining the code; however, only a shadow of
@@ -46,13 +46,13 @@ Lenat, V Guha, Pittman, Pratt, Shepherd
   person? Is Freda larger or smaller than a bacterium?  Is Freda larger or
   smaller than the Pacific Ocean?
 
-##Overcoming Brittleness
+## Overcoming Brittleness
 * this would include beliefs, knowledge of others’ (often grouped by culture,
   age group, or historical era) limited awareness of what we know, various ways
   of representing things, knowledge of which approximations (micro-theories)
   are reasonable in various contexts,
 
-##L
+## L
 
 ate in 1984, we began the first serious attempt at iii)
 * [since then, we] anticipate a kind of crossover (from primarily manual
@@ -62,7 +62,7 @@ ate in 1984, we began the first serious attempt at iii)
   * disambiguation of word senses, resolving anaphora, inducing the meaning of
     ellipses, and so on
 
-##Overview of the Cyc Project
+## Overview of the Cyc Project
 
 * The next three paragraphs-and, in much more detail, the next three sections
   of this article-discuss our approach to i), ii), and iii):
@@ -96,7 +96,7 @@ ate in 1984, we began the first serious attempt at iii)
         with the topic are represented in Cyc, then questions any human ought
         to be able to answer after reading the story are posed to Cyc
 
-##T
+## T
 * Currently in the KB
   * between one and two million assertions
   * many of which are general rules, classifications, constraints, and so on;
@@ -113,7 +113,7 @@ ate in 1984, we began the first serious attempt at iii)
   3. No one in the early twenty-first century even considers buying a machine
      without common sense,
 
-#CycL---The Cyc Representation Language p5
+# CycL---The Cyc Representation Language p5
 
 * “wish list”
   * be usable by many different problem solvers
@@ -126,7 +126,7 @@ ate in 1984, we began the first serious attempt at iii)
     etc.) [26]
   * operations such as reification, reflection, and so on
 
-##Epistemological Level and Default Reasoning
+## Epistemological Level and Default Reasoning
 
 * To improve inferencing abilities, we want to include special-purpose
   representations and inference routines, procedural attachments, etc. But
@@ -160,7 +160,7 @@ ate in 1984, we began the first serious attempt at iii)
 * An argument for a proposition P is similar to a proof for P, but is non-
   monotonic
 
-##The Heuristic Level: Inferencing In Cyc p7
+## The Heuristic Level: Inferencing In Cyc p7
 
 * a host of “logically” superfluous mechanisms for improving efficiency
 * “shallow” still means one or two deductions away from what is already there in the KB
@@ -188,7 +188,7 @@ ate in 1984, we began the first serious attempt at iii)
     * which free-variable bindings make an expression true
   6. Bundle:
 
-##Default Reasoning Modules
+## Default Reasoning Modules
 
 * Most of the gain in speed of processing at the Heuristic Level comes about
   because of the way we implement Ask. (Much of the complexily at the
@@ -205,7 +205,7 @@ ate in 1984, we began the first serious attempt at iii)
   * “Unknown” is used for sentences for which there are unresolved conflict-
     ing arguments,
 
-##Speeding up the Argument-Generator Module
+## Speeding up the Argument-Generator Module
 
 * The bulk of Cyc’s time spent inferencing is used by the ArgumentGenerator
   module. A number of techniques have been introduced to make the
@@ -229,9 +229,9 @@ ate in 1984, we began the first serious attempt at iii)
     mechanism is rarely used
 * specifying control information for individual [sentences]
 
-##Denials
+## Denials
 
-#The Cyc Ontology
+# The Cyc Ontology
 
 * most of the discussion of the ontology of Cyc’s KB in this article will be at
   the EL, not HL
@@ -239,7 +239,7 @@ ate in 1984, we began the first serious attempt at iii)
   * introducing some of the basic concepts and distinctions used
   * “representation issues” such as time, events, agents, causality
 
-##Some Basic Concepts and Distinctions
+## Some Basic Concepts and Distinctions
 
 * The ontology of Cyc is organized around the concept of categories. We shall
   also refer to these as classes or collections
@@ -262,7 +262,7 @@ ate in 1984, we began the first serious attempt at iii)
   hierarchy has to be specified
 * a distinction is made between instances (elements) and specs (subsets)
 
-##Substances and Processes vs. Individuals and Events
+## Substances and Processes vs. Individuals and Events
 
 * Substances are usually referred to in English as mass nouns; some of them are
   obvious (sand, air, peanut butter) and some less so (time, walking)
@@ -272,26 +272,26 @@ ate in 1984, we began the first serious attempt at iii)
 * the substancehood principle applies only to pieces larger than the _granule_
   of that substance
 
-##Events and Persistent Objects
+## Events and Persistent Objects
 
 * Walking is a type of temporal substance-what we will call a Process
 * two abstractions of time to specify these temporal properties:
   interval-based and set-based
   * before
 
-#Temporal Projection
+# Temporal Projection
 
 * default periods of persistence with classes of propositions by using ax-
   ioms, which are called Temporal Projection Axioms
 
-#Causality
+# Causality
 
 * Given any atomic ground sentence q that refers to an event, either q should
   be “basic” or there should be some sentence p so that (causes p q) is true
   Intuitively, q being classified as _basic_ corresponds to the notion of it
   being “unexplainable.”
 
-#Actions and Concurrent Processes
+# Actions and Concurrent Processes
 
 * as there may be orthogonal ways of breaking down a physical object, there
   may be orthogonal ways of breaking down an action into subEvents
@@ -314,7 +314,7 @@ ate in 1984, we began the first serious attempt at iii)
   * reified “mileposts” for these attributes’ values can be defined, and
   * partial orders and even crude calculi developed
 
-#Composite Objects and Agents
+# Composite Objects and Agents
 
 * a very incomplete treatment of Agents and Agreements
 * objects like books and people with whom we would like to associate an
@@ -335,7 +335,7 @@ ate in 1984, we began the first serious attempt at iii)
     agent may have an attitude only toward sentences that involve only terms of
     which he is aware
 
-##A
+## A
 
 ttributing our own beliefs to other agents (with whom we might never have
 directly communicated)
@@ -359,7 +359,7 @@ directly communicated)
   * responsibilities (logically, these are also propositions) to specific
     participants
 
-#Conclusion
+# Conclusion
 
 * not touched on in this article
   * subsystem roams over the KB, typically at night, looking for unexpected
@@ -386,7 +386,7 @@ directly communicated)
     purposeful several-year hiatus to focus solely on research) to write books
     and technical reports and journal articles,
 
-##C
+## C
 
 * application programs using it, but the early results are promising
   * DEC, for example, John McDermott, David Marques, Renata Bushko,

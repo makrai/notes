@@ -2,7 +2,7 @@ Learning Continuous Phrase Representations for Translation Modeling
 Jianfeng Gao, Xiaodong He, Wen-tau Yih, Li Deng
 2014 ACL
 
-#Abstract
+# Abstract
 
 * A pair of source and target phrases are projected into continuous-valued vec-
   tor representations in a low-dimensional latent space,

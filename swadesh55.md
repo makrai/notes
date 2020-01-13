@@ -2,7 +2,7 @@ Morris Swadesh
 Towards Greater Accuracy in Lexicostatistic Dating
 1955 International Journal of American Linguistics, Vol. 21, No. 2 pp. 121137
 
-#1. Introduction
+# 1. Introduction
 
 * estimating time depth by counting cognates in test vocabularies
   * interest the reconstruction of prehistory
@@ -15,20 +15,20 @@ Towards Greater Accuracy in Lexicostatistic Dating
   suggestions coming from colleagues in publications, discussion and
   correspondence.
 
-#2. The method
+# 2. The method
 
 * a certain meaning is intended
 * the common, everyday equivalent is listed for each language.
 * lists for the two languages are then set parallel and scored for cognates
 * define divergence as `st`, that is average _degree of separation_ multiplied by time,
 
-#3. Accuracy
+# 3. Accuracy
 
 * The main effort in the present paper is with respect to the diagnostic list.
   Certain changes are attempted and their effect on accuracy quantitatively
   evaluated
 
-#4. The test vocabulary
+# 4. The test vocabulary
 
 * items for a test list must be universal and non-cultural... Moreover, they
   must be easily identifiable broad concepts, which can be matched with
@@ -37,13 +37,13 @@ Towards Greater Accuracy in Lexicostatistic Dating
 * negative features to be avoided: potential duplication (noted by Douglas
   Taylor), identical roots, sound imitation, semantic shading.
 
-##4.1. Universality p5
+## 4.1. Universality p5
 
 * we now drop the words ice, snow, freeze, snake, sea.
 * contrary suggestion has been to develop variants of the test list for
   different large areas of the world
 
-##4.2. Cultural implications
+## 4.2. Cultural implications
 
 * of the passage of time. It was at first thought that some culture concepts,
   artifacts and activities were so ancient and so widespread as to exempt them
@@ -65,9 +65,9 @@ Towards Greater Accuracy in Lexicostatistic Dating
       borrowed along with the objects
   * animal species
 
-##4.3. Simplicity
+## 4.3. Simplicity
 
-##4.4. Interlingual ambiguity and semantic shading
+## 4.4. Interlingual ambiguity and semantic shading
 
 * cut, pull, dig, squeeze
   * it is frequently hard to match them in given languages, and
@@ -79,20 +79,20 @@ Towards Greater Accuracy in Lexicostatistic Dating
   single word for foot and leg. Others make a distinction between the lower and
   upper
 
-##4.5. Potential duplication
+## 4.5. Potential duplication
 
 * synonymous.
   * In comparing two languages both of which have wife identical with woman,
 
-##4.6. Identical roots p7
+## 4.6. Identical roots p7
 
-##4 7. Sound imitation
+## 4 7. Sound imitation
 
 * . Baby-words, including those for father and mother (like pa, papa, dad...)
 
-##4.8. Form words [function words]
+## 4.8. Form words [function words]
 
-#5. Item persistence
+# 5. Item persistence
 
 * elements [not] having approximately the same likelihood to persist
 * the new list seems to offer considerable promise for rectifying much if not
@@ -100,7 +100,7 @@ Towards Greater Accuracy in Lexicostatistic Dating
 * Once we have an accurate measure of the skewing, the effect could be
   incorporated into the time depth equation
 
-#6. Control procedure p9
+# 6. Control procedure p9
 
 6.1. Overlapping histories [of languages]
 6.2. Hidden divergence
@@ -112,4 +112,4 @@ Towards Greater Accuracy in Lexicostatistic Dating
 6.6. Modifying factors
   * influence of possible factors other than time itself.
 
-#7. Provisional evaluation
+# 7. Provisional evaluation

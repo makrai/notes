@@ -3,7 +3,7 @@ Simultaneous Component and Clustering Models
 Maurizio Vichi, Roberto Rocci, and Henk A.L. Kiers
 2007
 
-#Abstract
+# Abstract
 
 * can be seen as the simultaneous version of
   two procedures based on the sequential application of k-means and Tucker2
@@ -13,7 +13,7 @@ Maurizio Vichi, Roberto Rocci, and Henk A.L. Kiers
   * combine the two techniques in a unique general model, named CT3Clus, having
 * simulation study follows to show the effectiveness of the proposal
 
-#1 Intro
+# 1 Intro
 
 * three modes: units, variables and occasions. Large data sets of this kind are
 * However,
@@ -38,25 +38,25 @@ Maurizio Vichi, Roberto Rocci, and Henk A.L. Kiers
   of the factorial k-means model proposed by Vichi and Kiers (2001). The new
   * fitted to data by using a Least-Squares approach. This model, together with
 
-#2 establishes the notation.  Section 3 briefly describes
+# 2 establishes the notation.  Section 3 briefly describes
 
-#3 two different sequential procedures (also called ‘tandem analyses’) to
+# 3 two different sequential procedures (also called ‘tandem analyses’) to
 obtain clustering and dimensionality reduction of variables and occasions by
 means of k-means and Tucker2. Section 4 is devoted to presenting
 
-#4 T3Clus and 3Fk-means for simultaneous classification and reduction, and
+# 4 T3Clus and 3Fk-means for simultaneous classification and reduction, and
 provides algorithms for these methods. A
 
-#5 comparison of T3Clus and 3Fk-means, theoretical and simulation
+# 5 comparison of T3Clus and 3Fk-means, theoretical and simulation
 
-#6 the combined version of T3Clus and 3Fk-means, termed CT3Clus(α)
+# 6 the combined version of T3Clus and 3Fk-means, termed CT3Clus(α)
 
-#7 An ALS algorithm for fitting the combined version of T3Clus and 3Fk-means to
+# 7 An ALS algorithm for fitting the combined version of T3Clus and 3Fk-means to
 
-#8 simulation study to test the performance of the proposed method in
+# 8 simulation study to test the performance of the proposed method in
 
 * recovering a true clustering structure, to
 * sensitivity of the algorithm to the presence of local optima and
 * test a criterion for automatic model selection. A
 
-#9 final discussion
+# 9 final discussion

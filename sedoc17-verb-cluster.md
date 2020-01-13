@@ -2,7 +2,7 @@ J Sedoc, D Wijaya, M Rouhizadeh, A Schwartz, L Ungar
 Deriving Verb Predicates By Clustering Verbs with Arguments
 arXiv preprint arXiv:1708.00416
 
-#Abstract
+# Abstract
 
 * Verb classes
   * Hand-built verb clusters such as ... Levin classes (Levin, 1993)
@@ -15,7 +15,7 @@ arXiv preprint arXiv:1708.00416
   * the same verb can be in different clusters depending on its argument type
   * [eval in] predicting sarcasm, sentiment, and locus of control in tweets
 
-#1 Introduction
+# 1 Introduction
 
 * selectional preferences
   * strong indicators of verb diathesis alternations (McCarthy, 2001)
@@ -35,9 +35,9 @@ arXiv preprint arXiv:1708.00416
     the embeddings (section 3)
   * predicting control, sarcasm, and sentiment in tweets (section 6)
 
-#2 Related Work
+# 2 Related Work
 
-##Verb Clustering
+## Verb Clustering
 
 * applications including e.g.,
   * metaphor detection (Shutova+ 2010)
@@ -58,7 +58,7 @@ arXiv preprint arXiv:1708.00416
     * 65,000 verbs (+prepositions) and outperforms other large-scale verb
     * clusters align [well] to hand-built verb classes. Unlike these previous
 
-##Verb Embeddings
+## Verb Embeddings
 
 * Schwartz+ (2016) has observed that verbs['s] distributional representation
   can benefit from taking verb argument role into accounts
@@ -86,9 +86,9 @@ arXiv preprint arXiv:1708.00416
 * at run time, given any text containing a verb and its arguments, we
   * using NELL’s noun phrase to category mapping 2 to obtain the typed verb and
 
-#Results and Discussion
+# Results and Discussion
 
 * baselines: we use Levin classes, VerbNet, as well as
   clusters of subject, verb, object GloVe embeddings. In order to evaluate the
 
-#8 Conclusion
+# 8 Conclusion

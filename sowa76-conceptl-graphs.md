@@ -2,7 +2,7 @@ John F. Sowa
 Conceptual Graphs for a Data Base Interface
 1976
 
-#Abstracr
+# Abstracr
 
 * formalism, called conceptual graphs, that can 
   * describe data according to the user’s view and 

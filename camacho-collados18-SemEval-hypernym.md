@@ -1,7 +1,7 @@
 
 SemEval-2018 Hypernym Discovery
 
-#Introduction and Motivation from the task site
+# Introduction and Motivation from the task site
 
 * Hypernymy 
   * contributes to improvements in 
@@ -13,7 +13,7 @@ SemEval-2018 Hypernym Discovery
   * [taxonomy is useful] resource for 
     web retrieval, website navigation or records management (Bordea et al 2015)
 
-#What is New?
+# What is New?
 
 * Traditionally [evaluated in] Taxonomy Evaluation 
   (e.g.  SemEval-2015 task 17, SemEval-2016 task 13)

@@ -3,7 +3,7 @@ Triclustering Algorithms for Three-Dimensional Data Analysis:
 Rui Henriques, Sara C. Madeira
 ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 
-#Abstract
+# Abstract
 
 * increasingly prevalent across biomedical and social domains. Notable examples
   * gene-sample-time, individual-feature-time, or node-node-time data,
@@ -20,7 +20,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * applications
   * challenges and opportunities to advance the field of triclustering
 
-#1 Introduction
+# 1 Introduction
 
 * biomedical domains
   * periodic profiling of biological entities and clinical monitoring of indivs
@@ -95,7 +95,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * Comparison of the state-of-the-art triclustering algorithms
   * Overview of real-world applications, [with insights to their] potential
 
-#2 The formal ground on triclustering and peer tasks for 3D data analysis 3
+# 2 The formal ground on triclustering and peer tasks for 3D data analysis 3
 
 * temporal 3D dataset (also referred as three-way time series)
 * each bicluster B i satisfies specific criteria of 
@@ -124,7 +124,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   (producing suboptimal solutions) (Mahanta+ 2011) and place restrictions on
   the allowed structure, coherence, and quality of triclusters (Sim+ 2010a).
 
-##2.1 Merit Functions
+## 2.1 Merit Functions
 
 * [The homogeneity, statistical significance and] dissimilarity criteria ...
   are essentially defined by the selected merit functions and how they are
@@ -143,7 +143,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
     * pattern-based merit functions assess the maximality of triclusters with
       well-defined patterns.
 
-###3D Merit Functions
+### 3D Merit Functions
 
 * e.g. algebraic distances, correlation coefficients, and residue-based funcs
   (Gutiérrez-Avilés and Rubio-Escudero 2014b; Sim+ 2010a)
@@ -183,14 +183,14 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * 2D merit functions can enforce contiguity of time points and accommodate
   temporal misalignments. Xu+ (2009) placed an order-preserving assumption on
 
-###Pattern-based merit functions
+### Pattern-based merit functions
 
 * typically applied on symbolic or integer 3D data (Liu+ 2010)
 * frequent closed cube (Ji+ 2006)
   * a pattern is a set of symbols on a subset of objects from one dimension and
     repeated across the subsets of objects from the remaining dimensions. In
     
-##2.2 Related Tasks
+## 2.2 Related Tasks
 
 Variants of the triclustering task can be found in the literature, including 
   1. handle deviant observations, specify alternative criteria of interest, or
@@ -216,19 +216,19 @@ Variants of the triclustering task can be found in the literature, including
   1. vertical partitioned data (Alqadah and Bhatnagar 2008), and 
   1. time-annotated graphs (Guigourès+ 2015).
 
-#3 A taxonomy for comprehensive understanding and guided development of algos 3
+# 3 A taxonomy for comprehensive understanding and guided development of algos 3
 
-#4 Formalizes the properties of triclustering solutions 11
+# 4 Formalizes the properties of triclustering solutions 11
 
-##4.1 Locality degree
+## 4.1 Locality degree
 
-##4.2 Homogeneity criteria
+## 4.2 Homogeneity criteria
 
-##4.3 Statistical significance guarantees 16
+## 4.3 Statistical significance guarantees 16
 
-##4.4 Data-specific challenges to address 17
+## 4.4 Data-specific challenges to address 17
 
-#5 Algorithms 19
+# 5 Algorithms 19
 
 triclustering algorithms ... can be divided according to 
   * iterative searches (greedy; Section 5.1) or on 
@@ -250,14 +250,14 @@ triclustering algorithms ... can be divided according to
 * The way homogeneity criteria are pursued further determines the
   susceptibility [hajlam] of triclustering searches to different biases
 
-#6 Evaluation
+# 6 Evaluation
 
-#7 Applications
+# 7 Applications
 
-#8 Contributions in the literature [in our] taxonomy
+# 8 Contributions in the literature [in our] taxonomy
 
-#9 Implications and future work
+# 9 Implications and future work
 
-##5.2 Stochastic Approaches
+## 5.2 Stochastic Approaches
 
 a plaid assumption. MultiFacTV uses a tensor factorization objective function

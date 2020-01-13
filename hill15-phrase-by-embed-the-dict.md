@@ -2,11 +2,11 @@ Felix Hill, Anna Korhonen, Kyunghyun Cho, Yoshua Bengio
 Learning to Understand Phrases by Embedding the Dictionary
 2016 arxiv
 
-#ASSOC
+# ASSOC
 
 * lstm pling real?
 
-#Abstract
+# Abstract
 
 * using the definitions found in everyday dictionaries
 * recurrent neural network
@@ -14,7 +14,7 @@ Learning to Understand Phrases by Embedding the Dictionary
   * reverse dictionary
   * general-knowledge (crossword) question answerer
 
-#1 Introduction
+# 1 Introduction
 
 * (a tall, long-necked, spotted ruminant of Africa)
 * model
@@ -31,7 +31,7 @@ Learning to Understand Phrases by Embedding the Dictionary
     * bespoke [személyre szabott] commercial crossword solving tools,
 * all of our code, training and evaluation sets + system demo published
 
-#2 Model Architecture
+# 2 Model Architecture
 
 * RNN
   * achieved state-of-the-art performance in
@@ -47,13 +47,13 @@ Learning to Understand Phrases by Embedding the Dictionary
     * length) increases
   * 2.2 Implementation Details
 
-#3 Reverse Dictionaries
+# 3 Reverse Dictionaries
 
-#4 General Knowledge (crossword) Question Answering
+# 4 General Knowledge (crossword) Question Answering
 
 * outperforming commercial systems on questions containing more than four words
 
-#5 Conclustion
+# 5 Conclustion
 
 * future work
   * question-like language,

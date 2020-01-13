@@ -3,7 +3,7 @@ Diversity in Independent Component and Vector Analyses
   Identifiability, algorithms, and applications in medical imaging
 2014  IEEE Signal Processing Magazine
 
-#S
+# S
 * independent component analysis (ICA) 
   * [S]tarting with a simple generative model and the 
     assumption of statistical independence of the underlying components, 

@@ -2,7 +2,7 @@ John M. Anderson
 2006
 Modern Grammars of Case
 
-#Prologue
+# Prologue
 
 * creativity in language 
   * [involves] the capacity to formulate representations for newly perceived
@@ -36,7 +36,7 @@ Modern Grammars of Case
     * e.g. the treatment of passives or causatives is recurrently modified in
       the light of conceptual shifts
 
-#5 The Identity of Semantic Relations
+# 5 The Identity of Semantic Relations
 
 * three main approaches ... to the identification of ‘case’ and ‘cases’
   1. distribution of individual semantic relations
@@ -53,9 +53,9 @@ Modern Grammars of Case
 * The first two approaches attempt ... to complement the ... semantic
   definitions of ‘cases’ with distributional
 
-##5.1 Distributional criteria for particular ‘cases’ 92
+## 5.1 Distributional criteria for particular ‘cases’ 92
 
-##5.2 General criteria: principles of ‘complementarity’ and ‘contrast’ 95
+## 5.2 General criteria: principles of ‘complementarity’ and ‘contrast’ 95
 
 * largely originates in Fillmore’s (1971) proposal 
 * determined by ... the relationships 
@@ -71,7 +71,7 @@ Modern Grammars of Case
   * where ... distinctions in semantic relation 
     can rather be ascribed to other elements in the structures
 
-##5.3 The ineluctability of ‘case’ 103
+## 5.3 The ineluctability of ‘case’ 103
 
 * The mainstream of modern linguistics inherited [the view] that there were two
   kinds of case, the grammatical and the local or notional
@@ -80,7 +80,7 @@ Modern Grammars of Case
     depending on the syntactic-derivationalist orientation of Anderson
   * Others are more fundamental, as we shall see.
 
-##5.4 Localist grammars of case 107
+## 5.4 Localist grammars of case 107
 
 * one tradition that attempts to arrive at a comprehensive theory of ‘case’
   compatible with the overall Fillmorean position, the ‘localist’ tradition
@@ -91,9 +91,9 @@ Modern Grammars of Case
 5.4.2 Hjelmslev and localism
 5.4.3 A localist interpretation of ‘datives/experiencers’
 
-##5.5 Conclusion and prospect
+## 5.5 Conclusion and prospect
 
-#Epilogue
+# Epilogue
 
 * the main tenets of the ‘case grammar’ hypothesis, especially the 
   * fundamental syntactic status of ‘case relations’, and the 

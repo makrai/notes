@@ -2,7 +2,7 @@ Spectral Probabilistic Modeling and Applications to Natural Language Processing
 Ankur Parikh
 2015 Doctoral Thesis
 
-#Abstract
+# Abstract
 
 * Probabilistic modeling with latent variables is a powerful paradigm
   * applications: language processing, text mining, and computational biology.

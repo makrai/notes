@@ -3,7 +3,7 @@ Neural Language Models as Psycholinguistic Subjects:
   Representations of Syntactic State
 arXiv preprint arXiv:1903.03260
 
-#Abstract
+# Abstract
 
 * We deploy the methods of controlled psycholinguistic experimentation to [see
   whether] neural network language models [represent] syntactic state
@@ -22,7 +22,7 @@ arXiv preprint arXiv:1903.03260
     in a way that is comparable to the RNNG, while the LSTM trained on the
   * small dataset does not or does so only weakly
 
-#1 Introduction
+# 1 Introduction
 
 * sentence representations using neural sequence models of various kinds
   (Elman, 1990; Sutskever+ 2014; Goldberg, 2017; Peters+ 2018; Devlin+ 2018)

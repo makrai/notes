@@ -2,7 +2,7 @@ An Analysis of Open Information Extraction based on Semantic Role Labeling
 Janara Christensen , Mausam , Stephen Soderland and Oren Etzioni
 2011
 
-#Abstract
+# Abstract
 
 * Open Information Extraction extracts relations from text without requiring a
   pre-specified domain or vocabulary
@@ -22,14 +22,14 @@ Janara Christensen , Mausam , Stephen Soderland and Oren Etzioni
   is 20-700 times faster than SRL systems we have tested (dependent on use of
   dependency parser versus constituency).
 
-##2.2 SRL
+## 2.2 SRL
 
 * roles are commonly divided into metaroles (A0-A7) and additional common
   classes such as location, time, etc. Each Ai can represent a different role
   based on the verb, though A0 and A1 most often refer to agents and patients
   respectively.
 
-#6 Related work
+# 6 Related work
 
 * We are the first to use SRL for Open IE, but its use for traditional IE is
   investigated by Harabagiu et al.  [11]. They used a lexico-semantic feedback

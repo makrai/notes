@@ -2,7 +2,7 @@ Jerry R. Hobbs
 2008
 Deep Lexical Semantics
 
-#Abstract
+# Abstract
 
 we have 
   * taken a basic core of about 5000 [most frequent] synsets in WordNet 
@@ -19,7 +19,7 @@ we have
 * In this paper we focus on our work on the 450 of these synsets that are
   concerned with _events_ and their structure.
   
-#1 Intro
+# 1 Intro
 
 * must have 
   * underlying theories
@@ -56,7 +56,7 @@ we have
       primitives, but also the primitives are explicated in axiomatic theories,
       enabling one to reason
 
-#2 Identifying the Core Event Words
+# 2 Identifying the Core Event Words
 
 * the Princeton WordNet group has compiled a CoreWordNet, consisting of 4,979
   synsets that express frequent and salient concepts
@@ -72,7 +72,7 @@ we have
   * to group together _words that need to be defined or characterized together_
     if a coherent theory is to result.
 
-#3 Some Core Theories
+# 3 Some Core Theories
 
 * The theories differ from other commonsense knowledge bases, such as Cyc [4]
   or SUMO [7], primarily in the abstract character and linguistic motivation of
@@ -115,14 +115,14 @@ we have
   * a rather sparse theory of _space_, and 
   * a large number of theories explicating a commonsense theory of _cognition_
 
-#4 Some Word Senses Linked to Core Theories
+# 4 Some Word Senses Linked to Core Theories
 
 * have p7
   * the predicate possess would be explicated in a commonsense theory of
     economics,
 * _remain_
 
-#5 Summary
+# 5 Summary
 
 * we have identified the words which because of their frequency are most
   demanding of explication in terms of the inferences they trigger.

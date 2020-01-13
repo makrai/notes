@@ -4,16 +4,16 @@ MSYNY 2019
 
 https://github.  com/benedekrozemberczki/diff2vec
 
-#1 Intro
+# 1 Intro
 
 * a magyar WordNetből készítettünk [gráf]beágyazásokat a diff2Vec [2] algóval
 * Javaslunk egy újszerű módszert is, mellyel kombinálhatók [a disztribúciós és
   a gráfos] beágyazások,
 * A beágyazásokat a magyar WordNetből általunk készített feladaton teszteltük
 
-#2. Kapcsolódó munkák
+# 2. Kapcsolódó munkák
 
-##2.1. Gráfbeágyazások
+## 2.1. Gráfbeágyazások
 
 * A legtöbb ilyen algoritmus a skip-gram/CBOW beágyazó megoldásra épít, de
   előtte át kell alakítanunk a gráfot ezzel kompatibilis formába
@@ -37,7 +37,7 @@ https://github.  com/benedekrozemberczki/diff2vec
   * Beágyazás dimenziója
   * Ablak mérete
 
-##2.2. Magyar nyelvű beágyazási eredmények
+## 2.2. Magyar nyelvű beágyazási eredmények
 
 4. Makrai, M
    Comparison of distributed language models on medium-resourced languages
@@ -56,13 +56,13 @@ https://github.  com/benedekrozemberczki/diff2vec
    (MSZNY 2018)
   * aszerint rangsorolják, hogy azok mennyire homogén legközelebbi szóhalmazt
 
-#3. Mondatkörnyezetés gráfalapú beágyazások 3
+# 3. Mondatkörnyezetés gráfalapú beágyazások 3
 
 * Az általunk használt algoritmusok nem veszik figyelembe az élek címkéit,
   * a kapcsolatok szerint ... külön-külön futtattuk az algoritmusokat. Az így
   * javaslunk, és tesztelünk egy módszert különböző beágyazások kombinálására
 
-#3.1. Beágyazások kiértékelése
+# 3.1. Beágyazások kiértékelése
 
 * a magyar WordNetből [9] két gráfot készítettünk: szinonima, hiperníma
 * Mondatkörnyezet beágyazásként a Szeged_fasttext-et [7] használjuk. Vettük
@@ -81,7 +81,7 @@ https://github.  com/benedekrozemberczki/diff2vec
   a gráfból töröltük az egyes szópárokat összekötő összes legrövidebb út összes
   élét, hiszen célunk a tudásbázisban nem szereplő asszociációk predikál[ás]a
 
-##3.2 Beágyazások kombinációja
+## 3.2 Beágyazások kombinációja
 
 * A legkézenfekvőbb ..., ha egyszerűen konkatenáljuk a szavak vektorait
   * amennyiben valamelyik beágyazásban nem szerepel egy szó, akkor [ott 0]
@@ -96,13 +96,13 @@ https://github.  com/benedekrozemberczki/diff2vec
       Extending word embeddings with multilingual relational knowledge
       CoRR abs/1704.03560 (2017)
 
-##3.3 Diff2Vec beágyazások
+## 3.3 Diff2Vec beágyazások
 
-##3.6 Mondatkörnyezetés gráfalapú beágyazások kapcsolata
+## 3.6 Mondatkörnyezetés gráfalapú beágyazások kapcsolata
 
 * A Szeged_fasttext [7] egy magyar előtanított szóbeágyazási modell 100 di-
 
-#4. Konklúzió
+# 4. Konklúzió
 
 * jövőben [ún.] heterogén gráfalapú beágyazó algoritmusokkal tervezzük
   * az élek címkéit is képesek figyelembe venni

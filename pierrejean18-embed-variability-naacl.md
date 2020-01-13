@@ -5,7 +5,7 @@ naacl 2018
 * when retraining a model with the exact same hyperparameters
 * features that are intrinsic to a word, corpus or embedding model
 
-#1 Intro
+# 1 Intro
 
 * stability problems (Hellrich and Hahn, 2016)
 * intrinsic tests
@@ -22,7 +22,7 @@ naacl 2018
     * with pairwise interactions
   * conducted on 3 different corpora with similar results
 
-#2 Experiment Setup
+# 2 Experiment Setup
 
 * variation = 1 join ratio
 * N = 25
@@ -34,7 +34,7 @@ naacl 2018
   * BNC is a generic corpus while PLOS and ACL are specialized corpora) and
   * lemmatized and POS-tagged using the Talismane toolkit (Urieli, 2013)
 
-#3 Models Variation
+# 3 Models Variation
 
 * Standard deviation
   * is low (average of 0.04) across the 10 pairs of models, meaning that the
@@ -54,9 +54,9 @@ naacl 2018
   * generic adjectives, i.e. adjectives than can modifiy almost any noun
     (special in ACL, current in PLOS and whole in the BNC)
 
-#4 Predicting the Variation
+# 4 Predicting the Variation
 
-##Selected Features
+## Selected Features
 
 * features that are intrinsic to the word, corpus or model:
   * pos: part of speech (nouns, adjectives, adverbs, verbs, proper nouns);
@@ -71,7 +71,7 @@ naacl 2018
       not follow the general distribution of the model
   * NN-sim: cosine similarity of the word nearest neighbor
 
-##Models and Results
+## Models and Results
 
 * feature ablation approach similar to Lapesa and Evert (2017)
 * similar global pattern for models trained on the 3 corpora with two features

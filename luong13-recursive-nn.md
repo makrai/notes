@@ -4,12 +4,12 @@ CONLL 2013
 
 rare dataset
 
-#Abstract
+# Abstract
 
 building representations for morphologically complex words 
 from their morphemes
 
-#1 Introduction
+# 1 Introduction
 
 * deep neural network models (Collobert+ 2011)
 * conventional feature-based models (Koo+ 2008; Ratinov and Roth, 2009)
@@ -26,7 +26,7 @@ from their morphemes
   and the semantics in grouping related words
   * detailed analysis in Section 6
 
-#2 Related Work
+# 2 Related Work
 
 * history
   * morphological inflections was a very central problem in early work in the
@@ -45,14 +45,14 @@ from their morphemes
   * Mikolov+ (2013) showed syntactic and semantic regularities
     * We believe that these ... relationships will not hold for rare ... words
 
-#3 Morphological RNNs
+# 3 Morphological RNNs
 
 * We assume access to a dictionary of morphemic analyses of words
 
-#3.1 Context-insensitive Morphological RNN
+# 3.1 Context-insensitive Morphological RNN
 * squared Euclidean distance
 
-#3.2 Context-sensitive Morphological RNN
+# 3.2 Context-sensitive Morphological RNN
 * itt már az embeddinget is kompozícionálisan tanulják
 * az előbbinél a ritka szavaknál rossz a tanulóadat
 * build representations for complex words from their morphemes
@@ -60,7 +60,7 @@ from their morphemes
     a morfnak a szavakon felüli disztribúcióját is tükrözi az embedding
   * a Conclusion-ben "word context"
 
-#5 Experiments
+# 5 Experiments
 
 * we initialize our models with existing word representations
   * [Collobert+ (2011) (denoted as C&W)](http://ronan.collobert.com/senna/)
@@ -68,11 +68,11 @@ from their morphemes
   * Huang+ (2012) (referred as HSMN)
   * [multi-prototype approach](http://wwwnlp.stanford.edu/~ehhuang/)
 
-#5.1 Word Similarity Task
+# 5.1 Word Similarity Task
 * 5.1.1 Rare Word Dataset
   * Pair construction
 
-#6 Analysis
+# 6 Analysis
 
 * qualitative analysis: nearest neighbors of several complex words
 * cosine similarity

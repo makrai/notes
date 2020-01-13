@@ -2,7 +2,7 @@ Zoltán Subecz
 Detection and Classification of Events in Hungarian Natural Language Texts
 TSD 2014
 
-#Abstract
+# Abstract
 
 * we ... detect and classify verbal and infinitival events in Hungarian texts.
   * First we identify the multiword noun + verb and noun + infinitive

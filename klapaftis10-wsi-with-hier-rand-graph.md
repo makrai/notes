@@ -2,7 +2,7 @@ Word Sense Induction & Disambiguation Using Hierarchical Random Graphs
 Suresh Manandhar and Ioannis P. Klapaftis
 2010 EMNLP
 
-#Abstract
+# Abstract
 
 Graph-based methods have gained attention in many areas of NLP
   * Word Sense Disambiguation (WSD), text summarization, keyword extraction,
@@ -12,7 +12,7 @@ Graph-based methods have gained attention in many areas of NLP
     grouping of the senses of a polysemous word
   * improvements over state-of-the-art WSD systems based on sense induction
 
-#1 Intro
+# 1 Intro
 
 * graphbased framework ... in
   * unsupervised WSD, a number of methods

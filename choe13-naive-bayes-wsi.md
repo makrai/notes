@@ -4,14 +4,14 @@ Naive Bayes Word Sense Induction
 Code used for experiments is available for download at
 http://cs.brown.edu/~dc65/
 
-#Abstract
+# Abstract
 
 * extended naive Bayes model for word sense induction (WSI)
 * idea: words closer to the target word are more relevant in predicting sense
 * The proposed model is very simple yet effective
 * evaluated on SemEval-2010 WSI data
 
-#1 Introduction
+# 1 Introduction
 
 * oragnization
   2. we describe relevant previous work. In
@@ -21,7 +21,7 @@ http://cs.brown.edu/~dc65/
   5. we evaluate the model on SemEval-2010 data
   6. we conclude
 
-#2 Related Work
+# 2 Related Work
 
 * Bayesian WSI systems have been developed by several authors
   * Brody and Lapata (2009)
@@ -35,19 +35,19 @@ http://cs.brown.edu/~dc65/
     * to SemEval-2010 data (Manandhar et al., 2010)
     * their system assigns many senses (about 10) to each word,
 
-#3 Model
+# 3 Model
 
 * Following Yarowsky (1995), we assume that a word in a document has one sense
 
-#3.1 Naive Bayes
+# 3.1 Naive Bayes
 
-#3.2 Distance Incorporated Naive Bayes
+# 3.2 Distance Incorporated Naive Bayes
 
-#4 Inference
+# 4 Inference
 
-#5 Experiments
+# 5 Experiments
 
-#5.4.1 Short Descriptions of Other WSI Systems Evaluated on SemEval-2010
+# 5.4.1 Short Descriptions of Other WSI Systems Evaluated on SemEval-2010
 
 * UoY runs a clustering algorithm on a graph
   * with words as nodes and co-occurrences between words as edges

@@ -6,7 +6,7 @@ http://www.karlmoritz.com/resources
 https://github.com/karlmoritz/bicvm
 sentence aligned text
 
-#Abstract
+# Abstract
 
 * joint-space embedding
 * leverage parallel data
@@ -22,7 +22,7 @@ sentence aligned text
   * capture semantic relationships across languages without parallel data
     * qualitative analysis and the study of pivoting effects
 
-#1 Introduction
+# 1 Introduction
 
 * experiments on two corpora
   * cross-lingual document classification on the Reuters RCV1/RCV2 corpora
@@ -50,7 +50,7 @@ sentence aligned text
 * transferring linguistic knowledge into low-resource languages
   (Klementiev+ 2012; Zou+ 2013; Lauly+ 2013)
 
-#3 Approach
+# 3 Approach
 
 * bilingual (and trivially multilingual) energy
 * l2 between parallel sentences
@@ -58,18 +58,18 @@ sentence aligned text
   * ensures that the representations of non-aligned sentences 
     observe a certain margin from each other
 
-##3.1 Two Composition Models
+## 3.1 Two Composition Models
 
 * add
 * bi(gram)
   * sum tanh(x_{i-1} + x_i)
 
-##3.2 Document-level Semantics
+## 3.2 Document-level Semantics
 
-#4 Corpora
+# 4 Corpora
 
-#5 Experiments
+# 5 Experiments
 
-#6 Related Work
+# 6 Related Work
 
-#7 Conclusion
+# 7 Conclusion

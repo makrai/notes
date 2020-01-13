@@ -22,7 +22,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
     * Morphological Analogies and for
     * the new task of Polarity Spectrum Creation
 
-#1 Intro
+# 1 Intro
 
 * antonyms are often interchangeable in context and thus have
   similar word embeddings even though they denote opposites
@@ -34,7 +34,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
   * frequent word _friend_, find a less frequent synonym like _comrade_;
   * noun _friend_, find the verb _befriend_ (POS)
 
-#2 Word Embedding Transformation
+# 2 Word Embedding Transformation
 
 * an overview of DENSIFIER; see Rothe+ (2016) for details
   * Let Q ∈ R^{d×d} be an orthogonal matrix that
@@ -66,7 +66,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
     This means the number of examples in the lexica – which give rise to more
     negative than positive examples – does not influence the training
 
-#3 Setup and Method 2
+# 3 Setup and Method 2
 
 * We use pretrained 300-dimensional English word embeddings (W2V)
 * To train the transformation matrix
@@ -87,9 +87,9 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
   * `spectrum(v) = {nn( u_v + x \cdot  u_v^p ) | \forall x ∈ R}`
   * “word v with POS of word w”: `POS_w (v) = nn( u_v −  u_m v +  u_w )`
 
-#4 Evaluation 3
+# 4 Evaluation 3
 
-##Antonym Classification
+## Antonym Classification
 
 * We evaluate on Adel and Schütze (2014)’s data; the
   * task is to decide for a pair of words whether they are antonyms or synonyms
@@ -103,7 +103,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
     recall and F 1 improve by a lot (+.30 and +.16)
   * melyik cimke a pozitív? gondolom, az antonym
 
-##Polarity Spectrum Creation
+## Polarity Spectrum Creation
 
 * PSC-SET: Given a query word how well can we predict a spectrum?
 * PSC-ORD: How good is the order in the spectrum?
@@ -120,7 +120,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
       We then report the weighted average correlation of the optimal
       separation. For fat ↔ skinny, this improves ρ to .67
 
-##Morphological Analogy
+## Morphological Analogy
 
 * derivational forms from WordNet (Fellbaum, 1998)
   * We discard words with ≥2 derivational forms of the same POS
@@ -138,7 +138,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
   * Semantics(v) being  `u_v −  u_v^m`
 * The dev set indicates that a 8-dimensional POS subspace is optimal
 
-##POS Tagging
+## POS Tagging
 
 * FLORS (Schnabel and Schütze, 2014), a state-of-the-art POS tagger which was
   extended by Yin+  (2015) with word embeddings as additional features
@@ -148,7 +148,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
   * outperform W2V except for a virtual tie on news (Table 3, line 5)
   * need 100GB of RAM,
 
-#5 Related Work
+# 5 Related Work
 
 * antonyms having similar embeddings
   * in Yih+ (2012), the antonym is the inverse of the entire vector

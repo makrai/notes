@@ -2,7 +2,7 @@ Representing General Relational Knowledge in ConceptNet 5
 Robert Speer and Catherine Havasi
 2012 LREC
 
-#Abstract
+# Abstract
 
 ConceptNet is a knowledge representation project, providing a large semantic
 graph that describes _general human knowledge_ and how it is expressed in _natural
@@ -10,7 +10,7 @@ language_. This paper presents the latest iteration, ConceptNet 5, including its
 fundamental design decisions, ways to use it, and evaluations of its coverage
 and accuracy
 
-#1.  Introduction
+# 1.  Introduction
 
 * words and common phrases in any written human language
 * an open domain of predicates `AtLocation(jazz, new orleans)`
@@ -38,7 +38,7 @@ and accuracy
 * fork: Should we make sure to distinguish the eating utensil from the
   branching of a path?
 
-#2.  Motivation for ConceptNet 5
+# 2.  Motivation for ConceptNet 5
 
 * goals
   * include knowledge from other crowd-sourced knowledge
@@ -66,7 +66,7 @@ and accuracy
       Japanese, and Korean
   * SQL
 
-#3.  Knowledge in ConceptNet 5
+# 3.  Knowledge in ConceptNet 5
 
 * _concepts_, which are words and phrases that can be extracted from natural
   language text, and _assertions_ of the ways that these concepts relate to each
@@ -79,7 +79,7 @@ and accuracy
   * ontological connections to SUMO and MILO (Niles and Pease, 2001)
   * well-structured Wiktionaries in other [languages, e.g.] Japanese and German
 
-##3.1 Representation
+## 3.1 Representation
 
 * Its _assertions_ can be seen as
   * edges that connect its nodes, which are concepts (words and phrases)
@@ -107,14 +107,14 @@ and accuracy
     * To represent a true _negative_ statement, such as “Pigs cannot fly”,
       ConceptNet 5 uses negated relations such as /r/NotCapableOf
 
-##3.2.  Relations
+## 3.2.  Relations
 
 In addition to free-text relations, the standard interlingual relations we
 identify in ConceptNet appear in Table 1
 
-##3.3.  Granularity
+## 3.3.  Granularity
 
-##3.4.  Normalizing and aligning concepts
+## 3.4.  Normalizing and aligning concepts
 
 * ConceptNet deals with natural-language data, but it should not store the
   assertion that “a cat is an animal” in a completely different way than “cats
@@ -159,7 +159,7 @@ identify in ConceptNet appear in Table 1
       will find all edges describing the parts of a wheel, automatically
       ordered by the absolute value of their score
 
-##4.2 Downloading
+## 4.2 Downloading
 
 * Web API at its web site, http://conceptnet5.media.mit.edu, and may be
   redistributed or reused under a choice of two Creative Commons licenses.  The
@@ -169,7 +169,7 @@ identify in ConceptNet appear in Table 1
   from it is maintained on GitHub in the “conceptnet5” project:
   https://github.com/ commonsense/conceptnet5
 
-#5 Evaluation
+# 5 Evaluation
 
 * showed the natural language form of the text (which was machine-generated in
   the cases where the original data was not in natural language) and asked

@@ -4,7 +4,7 @@ ACL 2017, Vancouver, Canada
 
 https://github.com/pilehvar/sensecnn
 
-#Abstract
+# Abstract
 
 * By incorporating a novel disambiguation algorithm
   into a state-of-the-art classification model, we create a pipeline to
@@ -14,7 +14,7 @@ https://github.com/pilehvar/sensecnn
   when the fine granularity of the underlying sense inventory is reduced and
   the document is sufficiently large
 
-#Intro
+# Intro
 
 * sub-word or character-level information
   (Ballesteros+ 2015; Kim+ 2016)
@@ -27,7 +27,7 @@ https://github.com/pilehvar/sensecnn
       (Kalchbrenner+ 2014; Kim, 2014; Johnson and Zhang, 2015; Tang et
       al., 2015; Xiao and Cho, 2016)
 
-#2 Motivation
+# 2 Motivation
 
 * MWEs
   * are lexical units ... idiosyncratic (Sag+ 2002)
@@ -35,7 +35,7 @@ https://github.com/pilehvar/sensecnn
     (Tsvetkov and Wintner, 2014; Salehi+ 2015)
     Our pipeline facilitates this goal
 
-#3 Diambiguation Algorithm
+# 3 Diambiguation Algorithm
 
 * graph-based joint disambiguation and entity linking algorithm which can
   * take any arbitrary semantic network as input
@@ -49,14 +49,14 @@ https://github.com/pilehvar/sensecnn
     Limsopatham and Collier, 2016)
     * our algorithm relies only on semantic networks and [no sense-annotation]
 
-#4 Classification Model
+# 4 Classification Model
 
 * In our experiments, we use a standard NN based classification approach
   * similar to the
     * Convolution Neural Network classifier of Kim (2014) and the
     * pioneering model of Collobert+ (2011)
 
-##4.2 Pre-trained Supersense Embeddings
+## 4.2 Pre-trained Supersense Embeddings
 
 * WordNet sense distinctions are too fine-grained (Hovy+ 2013)
 * grouping together similar senses of the same word, either using
@@ -69,14 +69,14 @@ https://github.com/pilehvar/sensecnn
     * supersense embeddings, we simply
       average the embeddings of senses in the corresponding cluster
 
-#5 Evaluation
+# 5 Evaluation
 
-##5.2 Topic
+## 5.2 Topic
 
 when pre-trained representations are used to initialize the embedding layer, no
 improvement is observed over the word-based model
 
-##5.3 Polarity
+## 5.3 Polarity
 
 * Results are generally better than those of Kim (2014), showing that
   * the addition of the recurrent layer to the model ... was beneficial
@@ -88,9 +88,9 @@ improvement is observed over the word-based model
     * since the datasets mostly contain short texts, e.g., sentences or
       snippets, the disambiguation algorithm does not have sufficient context
 
-##5.4 Analysis
+## 5.4 Analysis
 
-##Senses granularity
+## Senses granularity
 
 * reducing fine-granularity of sense distinctions can be beneficial to both
   tasks

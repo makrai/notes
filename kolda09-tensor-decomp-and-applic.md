@@ -3,7 +3,7 @@ Tamara G. Kolda and Brett W. Bader
 2009 SIAM REVIEW
 
 
-#Abstract
+# Abstract
 
 * applications in psychometrics, chemometrics, signal processing, numerical
   linear algebra, computer vision, numerical analysis, data mining,
@@ -15,7 +15,7 @@ Tamara G. Kolda and Brett W. Bader
     DEDICOM, and PARATUCK2 as well as nonnegative variants of all of the above
 * The N-way Toolbox, Tensor Toolbox, and Multilinear Engine are ... packages
 
-#1 Intro
+# 1 Intro
 
 * history
  * Tensor decompositions originated with Hitchcock in 1927 [105, 106]
@@ -30,7 +30,7 @@ Tamara G. Kolda and Brett W. Bader
 
 * pointers to other papers that discuss notation
 
-##2.6. Matrix Kronecker, Khatri–Rao, and Hadamard Products
+## 2.6. Matrix Kronecker, Khatri–Rao, and Hadamard Products
 
 # 3 CP decomposition 9
 
@@ -46,7 +46,7 @@ Tamara G. Kolda and Brett W. Bader
 * slicewise expressions [of tensor decomposition] do not easily extend beyond
   three dimensions
 
-##3.1. Tensor Rank 10
+## 3.1. Tensor Rank 10
 
 * the rank of a real-valued tensor may actually be different over R and C
 * maximum and typical ranks
@@ -58,14 +58,14 @@ Tamara G. Kolda and Brett W. Bader
     * there is always only one typical rank over C
   * See also the concept of border rank discussed in section 3.3
 
-##3.2. Uniqueness 13
+## 3.2. Uniqueness 13
 
 * De Lathauwer [55] has looked at 
   * methods to determine the rank of a tensor and the 
   * when a given CP decomposition is unique
     deterministically or generically (i.e., with probability one)
 
-##3.3. Low-Rank Approximations and the Border Rank 14
+## 3.3. Low-Rank Approximations and the Border Rank 14
 
 * the components of the best rank-k model may not be solved for sequentially
 * degenerate if it may be approximated arbitrarily well by a factorization of
@@ -80,7 +80,7 @@ Tamara G. Kolda and Brett W. Bader
   that are sufficient to approximate the given tensor with arbitrarily small
   nonzero error
 
-##3.4. Computing the CP Decomposition 17
+## 3.4. Computing the CP Decomposition 17
 
 * there is no finite algorithm for determining the rank of a tensor [143, 101];
 * how to choose the number of rank-one components. Most procedures fit multiple
@@ -107,12 +107,12 @@ Tamara G. Kolda and Brett W. Bader
     * generally superior to ALS in terms of their convergence properties but
     * more expensive in both memory and time
 
-##3.5. Applications of CP 19
+## 3.5. Applications of CP 19
 
 * connection to tensor rank and tensor border rank, conditions for uniqueness,
   algorithms and computational issues, and applications
 
-#4 Tucker decomposition [aka. HOSVD] 20
+# 4 Tucker decomposition [aka. HOSVD] 20
 
 * relationship to compression, the notion of n-rank, algorithms and
   computational issues, and applications
@@ -139,13 +139,13 @@ Tamara G. Kolda and Brett W. Bader
       and complexities: A numerical convex hull based method,
       British J.  Math. Statist. Psych., 59 (2006), pp. 133–150.
 
-##4.1. The n-Rank 22
+## 4.1. The n-Rank 22
 
-##4.2. Computing the Tucker Decomposition 22
+## 4.2. Computing the Tucker Decomposition 22
 
-##4.3. Lack of Uniqueness and Methods to Overcome It 25
+## 4.3. Lack of Uniqueness and Methods to Overcome It 25
 
-##4.4. Applications of Tucker
+## 4.4. Applications of Tucker
 
 * Kiers and Van Mechelen (2001) ... is a good introduction 
   * when to use three-way techniques rather than two-way (based on an ANOVA)

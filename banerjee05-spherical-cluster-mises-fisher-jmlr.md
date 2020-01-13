@@ -2,7 +2,7 @@ Clustering on the Unit Hypersphere using von Mises-Fisher Distributions
 Arindam Banerjee, Inderjit S. Dhillon, Joydeep Ghosh, Suvrit Sra
 Journal of Machine Learning Research 6 (2005)
 
-#Abstract
+# Abstract
 
 * high-dimensional data that is also
   * inherently directional in nature
@@ -23,7 +23,7 @@ Journal of Machine Learning Research 6 (2005)
     * superior results,
       especially for difficult clustering tasks in high-dimensional spaces
 
-#1 Introduction
+# 1 Introduction
 
 * generative (also known as parametric or probabilistic)
   (Smyth, 1997; Jaakkola and Haussler, 1999)
@@ -49,7 +49,7 @@ Journal of Machine Learning Research 6 (2005)
   bioinformatics (Eisen+ 1998), collaborative filtering (Sarwar+ 2001)
   * the Pearson correlation coefficient ... is [a] cosine similarity
 
-##1.1 Contributions
+## 1.1 Contributions
 
 * our generative model has the same relation to spkmeans 
   as a model based on a mixture of unit covariance Gaussians has 
@@ -57,27 +57,27 @@ Journal of Machine Learning Research 6 (2005)
 * computational needs for hard assignments are lower than what is required for
   the standard soft assignments (E-step) for these models
 
-#2. Preliminaries
+# 2. Preliminaries
 
-#3. EM on a Mixture of vMFs (moVMF)
+# 3. EM on a Mixture of vMFs (moVMF)
 
 * We now consider a mixture of k vMF (moVMF) distributions
 * Let X ... be a data set of n independently sampled points
 
-#4. Handling Large and High-Dimensional Data Sets 8
+# 4. Handling Large and High-Dimensional Data Sets 8
 
 * critical issues [related to] the mixture model outlined in section 3 
   * How to compute κ from (3.6) for high-dimensional data? 4.1
   * Is it possible to significantly reduce computations? hard assignments, 4.2
 
-##4.2 Analysis of Hard Assignments
+## 4.2 Analysis of Hard Assignments
 
 * For hard assignments, [computing the partition function] is not required
   * substantially faster running times.  In particular, 
   * hard-assignments need O(k) computations in high-precision per iteration
   * soft-assignments need O(nk) computations in high-precision per iteration
 
-#8. Conclusions and Future Work
+# 8. Conclusions and Future Work
 
 * further study of such models. For example, one can consider
   * a hybrid algorithm that employs

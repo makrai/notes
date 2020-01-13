@@ -2,7 +2,7 @@ Ivan Vulić, Simone Paolo Ponzetto, Goran Glavaš
 Multilingual and Cross-Lingual Graded Lexical Entailment
 ACL 209
 
-#Abstract
+# Abstract
 
 * Starting from HyperLex, the only available GR-LE dataset in English, we
   * new monolingual GR-LE datasets for three other languages, and combine those

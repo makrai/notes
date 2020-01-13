@@ -2,7 +2,7 @@ SemEval 2014 TaskBroad-Coverage Semantic Dependency Parsing
 Stephan Oepen, Marco Kuhlmann, Yusuke Miyao, Daniel Zeman, Dan Flickinger, Jan
   Hajič, Angelina Ivanova, and Yi Zhang
 
-#Abstract
+# Abstract
 
 * Task 8 at SemEval 2014 defines Broad-Coverage Semantic Dependency Parsing
   (SDP) as the problem of recovering sentence-internal predicate–argument rela-
@@ -15,7 +15,7 @@ Stephan Oepen, Marco Kuhlmann, Yusuke Miyao, Daniel Zeman, Dan Flickinger, Jan
   * task setup, 
   * participating systems, and main results.
 
-#1 Background and Motivation
+# 1 Background and Motivation
 
 * predominant data structure in dependency parsing to date are trees, in the
   formal sense that every node in the de- pendency graph is reachable from a

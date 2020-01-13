@@ -3,7 +3,7 @@ Neural Transfer Learning for Natural Language Processing
 PhD 2019
 
 
-##3.3 Sequential transfer learning 63
+## 3.3 Sequential transfer learning 63
 
 * arguably the most frequently used transfer learning scenario in NLP and ML.  
 * with respect to the sr task: 
@@ -11,7 +11,7 @@ PhD 2019
   * supervised (§3.3.2.2)
   * unsupervised (§3.3.2.3) source tasks 
 
-###3.3.1 Introduction .
+### 3.3.1 Introduction .
 
 * We define sequential transfer learning as the setting where 
   * source and target tasks are different and 
@@ -27,22 +27,22 @@ PhD 2019
   * Despite these differences, both inductive transfer learning methods are 
     closely related.
 
-####Sequential transfer learning stages .
+#### Sequential transfer learning stages .
 
-###3.3.2 Pretraining
+### 3.3.2 Pretraining
 
 * the most common scenario involving a source and target task (§3.3.2)
-###3.3.2.1 Distantly supervised pretraining .
-###3.3.2.2 Supervised pretraining
-###3.3.2.3 Unsupervised pretraining .
-###3.3.2.4 Multi-task pretraining .
-###3.3.2.5 Architectures
+### 3.3.2.1 Distantly supervised pretraining .
+### 3.3.2.2 Supervised pretraining
+### 3.3.2.3 Unsupervised pretraining .
+### 3.3.2.4 Multi-task pretraining .
+### 3.3.2.5 Architectures
 
-###3.3.3 Adaptation
+### 3.3.3 Adaptation
 
-###3.3.3.1 Fine-tuning settings
-###3.3.3.2 A framework for adaptation. .
+### 3.3.3.1 Fine-tuning settings
+### 3.3.3.2 A framework for adaptation. .
 
-###3.3.4 Lifelong learning .
+### 3.3.4 Lifelong learning .
 
-###3.3.5 Evaluation scenarios .
+### 3.3.5 Evaluation scenarios .

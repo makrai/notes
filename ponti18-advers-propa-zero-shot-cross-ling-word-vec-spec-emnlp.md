@@ -4,7 +4,7 @@ EMNLP 2018
 
 code is available at https://github.com/cambridgeltl/ adversarial-postspec
 
-#Abstract
+# Abstract
 
 * a novel approach to specializing the full distributional vocabulary
   * [an] adversarial post-specialization method
@@ -16,7 +16,7 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
 * we also propose a cross-lingual transfer method for zero-shot specialization
   * without any lexical knowledge in the target language [or] bilingual data
 
-#1 Intro
+# 1 Intro
 
 * specialize the distributional spaces for a particular relation, e.g.,
   * synonymy (i.e., true similarity) (Faruqui+ 2015; Mrkšić+ 2017) or
@@ -38,7 +38,7 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
   Conneau+ (2018), we can successfully perform
   * [i.e. no] linguistic constraints in those languages, [or] bilingual data
 
-#2 Methodology
+# 2 Methodology
 
 * The post-specialization procedure (Vulić+ 2018) is a two-step process.  First,
   * words observed in external resources is fine-tuned using any off-the-shelf
@@ -49,11 +49,11 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
   * specialization is propagated to the entire vocabulary
     * adversarial architecture, described in §2.2
 
-##2.2 Adversarial Post-Specialization 3
+## 2.2 Adversarial Post-Specialization 3
 
-#5 Related Work 9
+# 5 Related Work 9
 
-##Generative Adversarial Networks
+## Generative Adversarial Networks
 
 * originally devised to generate images from input noise variables
   (Goodfellow+ 2014). The generation process is
@@ -76,7 +76,7 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
   * unsupervised mapping between monolingual vector spaces
     to learn cross-lingual word embeddings (Zhang+ 2017; Conneau+ 2018)
 
-#6 Conclusion and Future Work
+# 6 Conclusion and Future Work
 
 * In future work, we will explore
   * more sophisticated adversarial models such as Cycle-GAN (Zhu+ 2017)

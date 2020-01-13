@@ -5,7 +5,7 @@ Semantic and Lexical Universals
 * megszerezni a definíciókat
 * combinatorics of primitives formalized by someone?
 
-#Contents
+# Contents
 
 * Opening Statement Anna Wierzbicka vii 1
 
@@ -33,7 +33,7 @@ Semantic and Lexical Universals
   * 17 Semantic Primitives Across Languages: A Critical Review Anna Wierzbicka
     445
 
-#Opening Statement Anna Wierzbicka
+# Opening Statement Anna Wierzbicka
 
 * This set of papers ... is the first attempt ever to empirically test a
   hypothetical set of semantic and lexical universals across a number of
@@ -44,13 +44,13 @@ Semantic and Lexical Universals
   * the processes of consciousness may not be uniform across the cultural
     regions of the world
 
-#Part 1: General
+# Part 1: General
 
-#1 Semantic Theory and Semantic Universals Cliff Goddard 7
+# 1 Semantic Theory and Semantic Universals Cliff Goddard 7
 
-##1.1 semantic theory underlying the present work
+## 1.1 semantic theory underlying the present work
 
-###1. Semiotic Principle. A sign cannot be reduced to or analysed into any
+### 1. Semiotic Principle. A sign cannot be reduced to or analysed into any
 
  combination of things which are not themselves signs; Peirce (1932)
  * what philosophers know as a fully intensional conception of meaning. It is
@@ -70,7 +70,7 @@ Semantic and Lexical Universals
   literature
 * found in the work of Yorick Wilks and Jerrol Katz
 
-###2. exhaustive decomposition into discrete terms
+### 2. exhaustive decomposition into discrete terms
 
 * Principle of Discrete and Exhaustive Analysis
   * in a fully determinate way; that is, any complex meaning can be
@@ -88,7 +88,7 @@ Semantic and Lexical Universals
   others who propose _scalar_ notations for semantics, such as 'fuzzy set
   theory'
 
-###3. Semantic Primitives Principle. There exists a finite set of undecomposable
+### 3. Semantic Primitives Principle. There exists a finite set of undecomposable
 
  meanings — semantic primitives
  * does not mean that all lexical universals must also be semantic
@@ -115,7 +115,7 @@ Semantic and Lexical Universals
     for reasons we will consider in section 1.2
   * their most persistent advocate has been Anna Wierzbicka
 
-###4. The ... metalanguage of semantic representation 
+### 4. The ... metalanguage of semantic representation 
 
 * a minimal subset of ordinary natural language (Natural Semantic Metalanguage
   (NSM) approach)
@@ -164,12 +164,12 @@ Semantic and Lexical Universals
   morphemes drawn from an ordinary language: it is rather an artificial,
   extra-linguistic syntax devised and imposed by the analyst
 
-###5. Expressive Equivalence of NSMs. The NSMs derived from various languages
+### 5. Expressive Equivalence of NSMs. The NSMs derived from various languages
 
  will ... have the same expressive power.  Any simple proposition expressible
  in an NSM based on `L_1` will be expressible in an NSM based on `L_2`
 
-###6. Principle (VI): the linguistic exponents of semantically primitive meanings
+### 6. Principle (VI): the linguistic exponents of semantically primitive meanings
 
  in different languages can be placed into one-to-one correspondence
  * differences [like] allolexy and part-of-speech membership; see section 2.1
@@ -177,7 +177,7 @@ Semantic and Lexical Universals
  * entails that the exponents of semantic primitives in different languages
    share a common set of combinatorial properties
 
-###7.  Strong Lexicalisation Hypothesis. Every semantically primitive meaning can
+### 7.  Strong Lexicalisation Hypothesis. Every semantically primitive meaning can
 
   be expressed through a distinct word, morpheme or fixed phrase in every
   language
@@ -218,7 +218,7 @@ Semantic and Lexical Universals
       lexicalised in all languages
     * that is precisely the thesis to be tested in the present work
 
-##1.2 literature on semantic and lexical universals in the 20th century
+## 1.2 literature on semantic and lexical universals in the 20th century
 
 * The following review restricts itself
   * to ideas about substantive semantic universals
@@ -304,7 +304,7 @@ Semantic and Lexical Universals
         of the Meaning-Text Model, that the elementary lexical meanings of
         different languages correspond
 
-##The NSM Search for Universal Semantic Primitives p20
+## The NSM Search for Universal Semantic Primitives p20
 
 * list,
   * first published in English in the book Semantic primitives (Wierzbicka 1972:15-16)
@@ -338,7 +338,7 @@ Semantic and Lexical Universals
   * Considerable progress has since been made toward this goal, as explained in
     Wierzbicka (1991) and in chapter 2 of the present book
 
-##1.4 Goals and Methods of the Present Project p22
+## 1.4 Goals and Methods of the Present Project p22
 
 * The purpose of the present project is to submit the list of proposed
   primitives in Table 1 to its first thorough cross-linguistic test
@@ -366,15 +366,15 @@ Semantic and Lexical Universals
 * Further discussion of methodological issues and a preliminary review of the
 entire proposed primitive inventory is provided in chapter 2
 
-#2 Introducing Lexical Primitives; Cliff Goddard and Anna Wierzbicka 31
+# 2 Introducing Lexical Primitives; Cliff Goddard and Anna Wierzbicka 31
 
 * The main part of this chapter surveys the proposed primitive inventory whose
   cross-linguistic validity is being put to the test in this book. Before
   embarking on this exercise, we address some methodological issues
 
-##2.1 Methodological Issues
+## 2.1 Methodological Issues
 
-###2.1.1 The Problem of Polysemy
+### 2.1.1 The Problem of Polysemy
 
 * polysemy must never be postulated lightly, and that it
   * has ... to be justified on language-internal grounds; but
@@ -401,12 +401,12 @@ entire proposed primitive inventory is provided in chapter 2
     * even if both are primitive
 
 
-###2.1.2 Formal versus Semantic Complexity
+### 2.1.2 Formal versus Semantic Complexity
 
 * The words SOMEONE and SOMETHING are both formally analysable, but in neither
   case is the meaning of the whole word the sum of the parts;
 
-###2.1.3 Allomorphy and Allolexy
+### 2.1.3 Allomorphy and Allolexy
 
 * e.g
   * the combination of the meanings THIS and SOMEONE is more naturally
@@ -421,7 +421,7 @@ entire proposed primitive inventory is provided in chapter 2
   * in the natural semantic metalanguage based on Latin, volo would never occur
     without an explicit subject
 
-###2.1.4 Differences in Range of Use
+### 2.1.4 Differences in Range of Use
 
 * without this in any way invalidating their claim to semantic equivalence
 * Yankunytjatjara exponent of the semantic element BECAUSE, namely a particular
@@ -430,7 +430,7 @@ entire proposed primitive inventory is provided in chapter 2
   Yankunytjatjara possesses two extremely common purposive constructions,
 * social and cultural factors
 
-###2.1.5 Resonance
+### 2.1.5 Resonance
 
 1. non-paraphrasable effects resulting from the association between an exponent
    and other, complex meanings also expressible by the same lexical form.  For
@@ -448,7 +448,7 @@ entire proposed primitive inventory is provided in chapter 2
   acknowledged their existence there is little [to say]
   * Wittgenstein: not attempt to speak of what cannot be spoken of
 
-###2.1.6 Non-Compositional Relationships
+### 2.1.6 Non-Compositional Relationships
 
 * assumption was that it would seem that if two concepts had something in
   common they could not both be semantically indivisible
@@ -459,13 +459,13 @@ entire proposed primitive inventory is provided in chapter 2
     * as a long line of philosophers have suggested; and
   * BECAUSE and CAN seem to be related to IF (cf. Austin 1961)
 
-##2.2 The Proposed Primitive Inventory p37
+## 2.2 The Proposed Primitive Inventory p37
 
 * In some cases, we will discuss and
   * refute putative decompositions which are circulating
   * indicate areas where the elements ... have proved ...  indispensable
 
-###2.2.1 Substantives: I, YOU, SOMEONE, SOMETHING, PEOPLE p37
+### 2.2.1 Substantives: I, YOU, SOMEONE, SOMETHING, PEOPLE p37
 
 * pronouns
 * universal fact about human languages that the word for 'what' or 'something'
@@ -481,7 +481,7 @@ entire proposed primitive inventory is provided in chapter 2
   * 'cultural scripts' embodying shared understandings about interactive
     conventions within a given society
 
-###2.2.2 Mental Predicates: THINK, SAY, KNOW, FEEL, WANT p39
+### 2.2.2 Mental Predicates: THINK, SAY, KNOW, FEEL, WANT p39
 
 * complement
 * KNOW
@@ -501,7 +501,7 @@ entire proposed primitive inventory is provided in chapter 2
     for interjections, speech act verbs, 'experiencer constructions', etc.
   * canonical contexts: 'feel (something) good/bad'
 
-###2.2.3 Determiners and Quantifiers p39
+### 2.2.3 Determiners and Quantifiers p39
 
 * THIS, THE SAME, OTHER, ONE, TWO, MANY, ALL
 * THIS is [neutral] with respect to animacy, personhood and discreteness:
@@ -534,7 +534,7 @@ entire proposed primitive inventory is provided in chapter 2
     'the same two people', 'these two people', and so on ... in many languages,
     ... are normally realised as ... 'third-person pronouns'
 
-###2.2.4 Actions and Events: DO, HAPPEN (TO) p42
+### 2.2.4 Actions and Events: DO, HAPPEN (TO) p42
 
 * do `tesz, csinál`
 * polysemy is often involved, particularly with exponents of SAY and HAPPEN
@@ -552,7 +552,7 @@ entire proposed primitive inventory is provided in chapter 2
     notion of 'event'
 * frequent lexical links between [the exponents of `do` and `happen_to`]
 
-###2.2.5 Meta-Predicates: NO, IF, CAN, LIKE, BECAUSE, VERY p43
+### 2.2.5 Meta-Predicates: NO, IF, CAN, LIKE, BECAUSE, VERY p43
 
 * NO has an inherently first-person orientation, representing the speaker's
   rejection of something — an offer, a request, a statement, food, unwelcome
@@ -586,7 +586,7 @@ entire proposed primitive inventory is provided in chapter 2
 * VERY
   * [for] expressive evaluations, such as wonderful, marvellous, terrific
 
-###2.2.6 Time and Place: WHEN, WHERE, AFTER, BEFORE, UNDER, ABOVE p45
+### 2.2.6 Time and Place: WHEN, WHERE, AFTER, BEFORE, UNDER, ABOVE p45
 
 * there must be in any language some complex ones: 'at this time', 'at the same
   time', 'at some time before this time' and so on.  And similarly for places,
@@ -594,7 +594,7 @@ entire proposed primitive inventory is provided in chapter 2
   'in this place' and 'in the same place'
 * BEFORE and AFTER, and UNDER and ABOVE
 
-###2.2.7 Taxonomy and Partonomy: KIND OF, HAVE PARTS p46
+### 2.2.7 Taxonomy and Partonomy: KIND OF, HAVE PARTS p46
 
 * both are inherently 'relational', and also that although both appear to be
   fundamental to human conceptualisation, they nevertheless present some
@@ -611,7 +611,7 @@ entire proposed primitive inventory is provided in chapter 2
   * in some languages there is no separate lexical item for 'part', but the
     word meaning 'thing' can be used in a construction
 
-###2.2.8 Evaluators and Descriptors: GOOD, BAD, BIG, SMALL p47
+### 2.2.8 Evaluators and Descriptors: GOOD, BAD, BIG, SMALL p47
 
 * a basis on which morality, law and religion rest
 * Earlier NSM work (Wierzbicka 1972) assumed that the concepts in question were
@@ -626,7 +626,7 @@ entire proposed primitive inventory is provided in chapter 2
     * three words corresponding to bad
 * have no relation to time
 
-#17 Semantic Primitives Across Languages:
+# 17 Semantic Primitives Across Languages:
   A Critical Review Anna Wierzbicka p445
 
 * polysemy (in a broad sense, covering also homonymy) is a major problem. If,
@@ -640,15 +640,15 @@ entire proposed primitive inventory is provided in chapter 2
   of ... no polysemy, no synonymy/allolexy can be met in a straightforward
   manner:
 
-##17.1 Substantives 447
-##17.2 Mental Predicates
-##17.3 Determiners and Quantifiers
-##17.4 Actions and Events (Do and HAPPEN)
-##17.5 Meta-Predicates
-##17.6 Time and Place
-##17.7 Partonomy and Taxonomy
-##17.8 Evaluators and Descriptors
-##17.9 Conclusion p497
+## 17.1 Substantives 447
+## 17.2 Mental Predicates
+## 17.3 Determiners and Quantifiers
+## 17.4 Actions and Events (Do and HAPPEN)
+## 17.5 Meta-Predicates
+## 17.6 Time and Place
+## 17.7 Partonomy and Taxonomy
+## 17.8 Evaluators and Descriptors
+## 17.9 Conclusion p497
 
 * the most controversial case has proved to be that of PART,
 * The primitives repeatedly vindicated in this way include, in particular,

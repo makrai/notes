@@ -3,7 +3,7 @@ Active Authentication on Mobile Devices
   via Stylometry, Application Usage, Web Browsing, and GPS Location
 ieee 17
 
-#Abstract
+# Abstract
 
 * Active authentication is the problem of continuously verifying the identity
 * dataset is novel in the context of active authentication
@@ -19,7 +19,7 @@ ieee 17
     a parallel binary decision fusion architecture
   * quantify the contribution of each modality to the overall performance
 
-#I. INTRODUCTION
+# I. INTRODUCTION
 
 * people are using their phones to access and store sensitive data. The same
   * 2013 Pew Internet Project study of 2076 people [1], 91% of American adults
@@ -51,14 +51,14 @@ ieee 17
   * V  performance of each individual classifier, ... the fusion system, and
     the contribution of each individual classifier to the fused decisions
 
-#II. Related work
+# II. Related work
 
-##A. Multimodal Biometric Systems
+## A. Multimodal Biometric Systems
 
 * Our approach in this paper is to apply the Chair-Varshney optimal fusion rule
   (Chair and Varshney 1986)
 
-##C. Stylometry, Web Browsing, Application Usage, Location
+## C. Stylometry, Web Browsing, Application Usage, Location
 
 * Stylometry is the study of linguistic style. It
   * extensively applied to the problems of authorship attribution,
@@ -74,18 +74,18 @@ ieee 17
   * we ... implement the n-gram analysis approach presented in (Brocardo+ 13)
     that has been shown to work sufficiently well on short blocks of texts
 
-#IV. Classification and decision fusion
+# IV. Classification and decision fusion
 
-##1) Text
+## 1) Text
 
 * The tracking application captured the keys that were touched on the
   keyboard and not the autocorrected result
   * messages had a lot of misspellings and words that were erased in the final
   * In the case of SMS, we also were able to record the submitted result
 
-#V. RESULTS
+# V. RESULTS
 
-##B. Performance: Individual Classifiers
+## B. Performance: Individual Classifiers
 
 * the text modality converges to ... one of the worse performers of the four
   modalities

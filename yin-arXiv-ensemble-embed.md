@@ -2,7 +2,7 @@ Learning Meta-Embeddings by Using Ensembles of Embedding Sets
 Wenpeng Yin and Hinrich Schütze
 2015
 
-#Introduction
+# Introduction
 
 * deep neural network (NN) models have achieved remarkable results in NLP
   * Collobert and Weston, 2008

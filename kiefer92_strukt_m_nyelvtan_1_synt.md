@@ -2,35 +2,35 @@ Kiefer ed
 Strukturális magyar nyelvtan 1. kötet Mondattan
 1992
 
-#grammatikaelméleti bevezető 25 É. kiss katalin; szabolcsi anna
+# grammatikaelméleti bevezető 25 É. kiss katalin; szabolcsi anna
 
-#az egyszerű mondat szerkezete 74 É. kiss katalin
+# az egyszerű mondat szerkezete 74 É. kiss katalin
 
-#a főnévi csoport szerkezete 161 szabolcsi anna; laczkÓ tibor
+# a főnévi csoport szerkezete 161 szabolcsi anna; laczkÓ tibor
 
-#régensek és vonzatok 274 Komlósy András
+# régensek és vonzatok 274 Komlósy András
 
-##0. Bevezetés  275
-##1. A vonzat és a szabad határozó fogalma  277
-##2. A régensről  290
-##3. A régensek jellemzésében figyelembe veendő tények  298
+## 0. Bevezetés  275
+## 1. A vonzat és a szabad határozó fogalma  277
+## 2. A régensről  290
+## 3. A régensek jellemzésében figyelembe veendő tények  298
 
-###3.8
+### 3.8
 
 * határozatlan vonzatú igék:
   tárgyatlan ige esetében az alany, tárgyas ige esetében a tárgy
   csak akkor lehet határozott, ha a mondat irtó prozódiájú
   (sőt némelyiküknél akkor sem)
 
-##4. A régensek reprezentálásának főbb elvei  317
-##5. Aktív és passzív igetövek a magyarban  344
-##6. A vonzatstruktúra megváltozásával járó képzési folyamatok a magyarban 384
+## 4. A régensek reprezentálásának főbb elvei  317
+## 5. Aktív és passzív igetövek a magyarban  344
+## 6. A vonzatstruktúra megváltozásával járó képzési folyamatok a magyarban 384
 
-##8. Komplex régensek  449
+## 8. Komplex régensek  449
 
-##8.2 Igekötős igék 455,
+## 8.2 Igekötős igék 455,
 
-###8.2.1. A szófajisággal kapcsolatos problémák 456
+### 8.2.1. A szófajisággal kapcsolatos problémák 456
 
 * az igekötős ige külön szó-e?
 * Egy szótári tétel
@@ -48,7 +48,7 @@ Strukturális magyar nyelvtan 1. kötet Mondattan
   * miért nem az a lóvá tesz, a részt vesz, a számba vesz, a számon kér, a
     sorba áll, a hidegre tesz, a lépre csal vagy akár a palira vesz
 
-###8.2.2. Az igekötők szórendi viselkedése 460
+### 8.2.2. Az igekötők szórendi viselkedése 460
 
 * A szófaji csoportokat az általuk betölthető szintaktikai funkciók
 * mondatszerkezetben pozícióit kell feltérképeznünk
@@ -78,7 +78,7 @@ Strukturális magyar nyelvtan 1. kötet Mondattan
 * való nélküli nominalizáció
 * a _nem_ el tudja szakítani az -ás/-és képzős tőtől
 
-###8.2.3. Az igekötőkéhez hasonló viselkedésű további egységek 461
+### 8.2.3. Az igekötőkéhez hasonló viselkedésű további egységek 461
 
 * Vonzatok — nem meglepő módon — csak meghatározott ...  régenscsoportok mellett
 * hangsúlykérő igék (l. 3.8.: (40)b) vonzatai például sohasem
@@ -93,7 +93,7 @@ Strukturális magyar nyelvtan 1. kötet Mondattan
   egységek nagy része (ezt az ütközést gyakran feloldja valamelyik elemnek a
   fókuszba kerülése)
 
-###8.2.4. Az adatok értelmezése  464
+### 8.2.4. Az adatok értelmezése  464
 
 * az igekötők ... semmilyen más helyzetekben és szerepben nem fordulnak elő a
   mondatainkban
@@ -113,16 +113,16 @@ Strukturális magyar nyelvtan 1. kötet Mondattan
 
 * kitüntetett szemantikai kapcsolat[, kettejük együttese az] állítmány
 
-###8.3.1. Módhatározóí vonzatok  468
+### 8.3.1. Módhatározóí vonzatok  468
 
 jól bánik Marival, ügyesen kezeli, neveletlenül viselkedett
 
-###8.3.2. Predikatív vonzatok  468
+### 8.3.2. Predikatív vonzatok  468
 
 * predikatív vonzat igekötős igéhez is járulhat, de ilyenkor sohasem ő, hanem
   mindig csak az igekötő mutat igekötőszerű viselkedést
 
-###8.3.3. Köznévi vonzatok  469
+### 8.3.3. Köznévi vonzatok  469
 
 * i.e. névelőtlen és kvantálatlan köznevekkel kifejezett vonzatok _újságot
   olvas, moziba jár, homok ment vmibe_
@@ -132,11 +132,11 @@ jól bánik Marival, ügyesen kezeli, neveletlenül viselkedett
 * A téma lezárásaként megemlítendőnek tartjuk (52)-t
   * _hajat vág_
 
-###8.3.4. Állítmányi szerepű névszók  477
+### 8.3.4. Állítmányi szerepű névszók  477
 
-###8.3.5. Idiómák és idiómaszerű egységek 479
+### 8.3.5. Idiómák és idiómaszerű egységek 479
 
-##9. Összefoglalás  482
+## 9. Összefoglalás  482
 
 * Ezek a mechanizmusok a hozzárendelés eszközeként egyrészt a vonzat
   szintaktikai funkcióját, másrészt az argumentum szituációbeli szerepének a
@@ -144,7 +144,7 @@ jól bánik Marival, ügyesen kezeli, neveletlenül viselkedett
 * Igekötőknek azokat az elemeket nevezhetjük, amelyek nem ilyen másodlagos
   tétellel lehetnek csak igék módosítói, hanem ez az elsődleges funkciójuk
 
-###Irodalom
+### Irodalom
 
 * A generatív grammatika szótári komponensére, az argumentumstruktúrák
   reprezentálására általában vonatkozó monográfiák közül a következők a
@@ -162,19 +162,19 @@ jól bánik Marival, ügyesen kezeli, neveletlenül viselkedett
   -ozik, -kodik, -kozik, -ódzik képzők, amelyek a származékok jelentésétől
   függően aktív bennható, visszaható vagy reciprok igéket hozhatnak létre
 
-#az alárendelt mondatok szerkezete 487 kenesei istvÁn
+# az alárendelt mondatok szerkezete 487 kenesei istvÁn
 
-#a mellérendelés 654 bÁnrÉti zoltÁn
+# a mellérendelés 654 bÁnrÉti zoltÁn
 
-#az aspektus és a mondat szerkezete 729 Kiefer Ferenc
+# az aspektus és a mondat szerkezete 729 Kiefer Ferenc
 
-#4. folyamatos–befejezett >
+# 4. folyamatos–befejezett >
 
-##4.2 ...kifejezésének … eszközei >
+## 4.2 ...kifejezésének … eszközei >
 
-###4.2.1 Az igekötők 756
+### 4.2.1 Az igekötők 756
 
-####4.2.1.1. Az igekötők funkciói
+#### 4.2.1.1. Az igekötők funkciói
 
 * három különböző funkciója van:
   1. a perfektiválás (aspektusképzés),
@@ -223,10 +223,10 @@ jól bánik Marival, ügyesen kezeli, neveletlenül viselkedett
       megszabadít (*szabadít), megnémít-megnémul(*némít, *némul), megvendégel
       (*vendégel)
 
-####4.2.1.2. Befejezett szemléletű igekötő néküli igék 758
+#### 4.2.1.2. Befejezett szemléletű igekötő néküli igék 758
 
-####4.2.1.3. Aspektuálisan kétértelmű igék
+#### 4.2.1.3. Aspektuálisan kétértelmű igék
 
-####4.2.1.4. Az igekötő szórendi helye
+#### 4.2.1.4. Az igekötő szórendi helye
 
-#függelék 810
+# függelék 810

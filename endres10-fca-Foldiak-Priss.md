@@ -3,7 +3,7 @@ to semantic neural decoding
 Dominik Maria Endres · Peter Földiák · Uta Priss
 Ann Math Artif Intell (2009) 57:233–248
 
-#Intro
+# Intro
 
 organization
 2.  more details on sparse coding
@@ -16,7 +16,7 @@ organization
 
 [a cikk többi részét ld. a 2008-as cikk jegyzetében]
 
-#2 Sparse coding
+# 2 Sparse coding
 
 * sparse coding is to be distinguished from local and dense distributed coding
   * detailed in [12],
@@ -49,7 +49,7 @@ organization
   * is also possible to define sparseness for graded or even continuous-valued
     responses (see e.g. [4, 12, 18])
 
-#7 Conclusion
+# 7 Conclusion
 
 * Our results suggest that at least on our limited sample of neurons and
   stimuli, only a small number (e.g.  7) of neurons are needed to form quite

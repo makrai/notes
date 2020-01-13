@@ -2,14 +2,14 @@ Investigation of Zipf’s ‘Law-Of-Meaning’ on Turkish Corpora
 Bahar İLGEN, Bahar KARAOĞLAN
 2007
 
-#Abstract
+# Abstract
 
 * Zipf’s law-of-meaning states that the number of meanings of a word is related
   * consistent with the principal of least effort. 
 * In this study ... Zipfian parameters are derived from two Turkish corpora on
   which the meanings are labeled
 
-#1 Intro
+# 1 Intro
 
 * Zipf (1945) ... laws have been proven to be true over many languages 
   * Dinçer 2004: A statistical Information Retrieval System For Turkish”, 
@@ -25,7 +25,7 @@ Bahar İLGEN, Bahar KARAOĞLAN
     polysemy is low [7]
 * The paper is organized as follows: Section II reviews the 
 
-#2. related work
+# 2. related work
 
 * Lorge (1949), ... relation between word meanings and word frequencies for the
 * Eaton (1940), ... for four different languages [2].  
@@ -44,8 +44,8 @@ Bahar İLGEN, Bahar KARAOĞLAN
     3.83 LDOCE 
   * per polysemous word
 
-#3. Zipf’s Model and the material
+# 3. Zipf’s Model and the material
 
-#4. results of the experiments on two corpora are covered
+# 4. results of the experiments on two corpora are covered
 
-#5. conclusion
+# 5. conclusion

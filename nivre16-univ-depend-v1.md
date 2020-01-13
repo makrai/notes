@@ -6,13 +6,13 @@ Universal Dependencies v1: A Multilingual Treebank Collection
 
 Google universal tag-et kiadó POS tagger magyarra?
 
-#1 Introduction
+# 1 Introduction
 
 * typologically different languages 
   * (e.g., morphologically rich languages, pro-drop languages, and languages
   * featuring clitic doubling).
 
-#3 Annotation Guideline Principles
+# 3 Annotation Guideline Principles
 
 * lexicalism
   * words are the basic units of grammatical annotation
@@ -20,7 +20,7 @@ Google universal tag-et kiadó POS tagger magyarra?
   * a transparent relation between the original textual representation and
   * the linguistically motivated word segmentation
 
-##3.1 Word Segmentation
+## 3.1 Word Segmentation
 
 * basic annotation units in UD are syntactic words 
   * (not phonological or orthographic words). Concretely,
@@ -32,7 +32,7 @@ Google universal tag-et kiadó POS tagger magyarra?
   * annotated using special dependency relations, 
   *     rather than by collapsing multiple tokens into one.
 
-##3.3 Syntax
+## 3.3 Syntax
 
 * three types of structure: nominals, clauses and modifier words
 * a distinction between 

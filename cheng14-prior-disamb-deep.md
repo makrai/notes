@@ -3,7 +3,7 @@ Investigating the Role of Prior Disambiguation
   in Deep-learning Compositional Models of Meaning
 2014
 
-#1 Introduction
+# 1 Introduction
 
 * compositionality in distributed representations
   * Early attempts: fixed algebraic operations such as
@@ -38,7 +38,7 @@ Investigating the Role of Prior Disambiguation
   * recursive neural networks (RecNNs) [15]
   * recursive auto-encoder (RAE) [16, 6]
 
-#3 Combining NNs with context-based word sense disambiguation
+# 3 Combining NNs with context-based word sense disambiguation
 
 * each input word is associated with a set of vectors, each representing
   different meanings of the word in the training corpus. As input to the
@@ -60,8 +60,8 @@ Investigating the Role of Prior Disambiguation
       * an ambiguous vector and
       * a set of 3 meaning vectors
 
-#4 Experiments
+# 4 Experiments
 
-#5 Discussion
+# 5 Discussion
 
-#6 Conclusion
+# 6 Conclusion

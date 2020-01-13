@@ -4,7 +4,7 @@
     see for example Section 2 of Baroni and Ueyama (2006) and Chapter 1 of
     Ferraresi (2007)
 
-#2 Related Work
+# 2 Related Work
 
 * Kornai+ (2006), who work on Hungarian, and
 * Emerson and O’Neil (2006) on Chinese
@@ -28,8 +28,8 @@
     * neither Shaoul and Westbury nor the other developers of mega-corpora had
       corpus balance, cleaning or linguistic annotation among their priorities
 
-#3. Exploring the WaCky corpora
+# 3. Exploring the WaCky corpora
 
-#4. Availability and format
+# 4. Availability and format
 
-#5. Conclusion: Directions for further work
+# 5. Conclusion: Directions for further work

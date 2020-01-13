@@ -4,7 +4,7 @@ The Large-Scale Structure of Semantic Networks:
 M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 
 
-#Abstract
+# Abstract
 
 * 3 types of semantic networks
   * word associations, WordNet, and Roget's Thesaurus
@@ -24,7 +24,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
     * age of acquisition, usage frequency
     * on behavioral performance in semantic processing tasks.
 
-#1 Intro
+# 1 Intro
 
 * Network structures ... for modeling semantic knowledge and inference. Within
   * [explicanda]
@@ -74,7 +74,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
   * We verify this relation experimentally with age-of-acquisition norms
     (Gilhooly & Logie, 1980; Morrison, Chappell, & Ellis, 1997)
 
-#2. Basic concepts from graph theory 4
+# 2. Basic concepts from graph theory 4
 
 * nodes that are connected by either [a directed or an indirected edge] are
   said to be neighbors; a neighborhood is a subset of nodes consisting of
@@ -121,7 +121,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * scale-free structures are characterized by ... degree distributions, with
   power-law (rather than exponential) tails.
 
-#3. Small-world and scale-free network structures 7
+# 3. Small-world and scale-free network structures 7
 
 * Karinthy (1929)
 * small-world phenomenon [may seem surprising, it] occurs even in random graphs
@@ -173,14 +173,14 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
   * compares it to other frameworks for modeling semantic structure.
 
 
-#4. Graph-theoretic analyses of semantic networks 9
+# 4. Graph-theoretic analyses of semantic networks 9
 
 * edges unlabeled and weighted equally
 * More subtle analyses ... would be an important subject of future work
 
-#4.1. Methods
+# 4.1. Methods
 
-##4.1.2 Roget’s thesaurus
+## 4.1.2 Roget’s thesaurus
 
 * viewed as a bipartite graph, a graph in which there are two different kinds
   * word nodes and semantic category nodes
@@ -190,7 +190,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 
 * we treat WordNet as an undirected graph.
 
-##4.2. Results and analyses
+## 4.2. Results and analyses
 
 * Our analysis of these semantic networks focuses on five properties:
   * sparsity
@@ -223,7 +223,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * [base-line] ensembles of random networks with
   * sizes and connection densities equal to those [in] semantic networks
 
-###4.2.5. Power-law degree distribution
+### 4.2.5. Power-law degree distribution
 
 * Fig. 5 plots the degree distributions for the word nodes of each network in
 * For the directed associative network, the in-degree distribution is shown. As
@@ -249,7 +249,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
         * subjects that gave associative responses to that cue
         * different associates that each participant was asked to generate
 
-##4.3. Discussion
+## 4.3. Discussion
 
 * Power laws in human language were
   * made famous by Zipf (1965)
@@ -264,7 +264,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
   * anticipated by Skinner (1937), who measured ... a much smaller set of cues
     than did Nelson et al. (1999)
 
-#5. Growing network model
+# 5. Growing network model
 
 * process known as preferential attachment
   (Barabási & Albert, 1999; see also, Simon, 1955):
@@ -303,12 +303,12 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 
 model model results discussion
 
-#6. Psychological implications of semantic growth 22
+# 6. Psychological implications of semantic growth 22
 
 6.2. Age of acquisition, word frequency, and centrality 26
 
-#7. General discussion 32
+# 7. General discussion 32
 
-#8. Conclusion 33
+# 8. Conclusion 33
 
 Notes 34

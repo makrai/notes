@@ -4,7 +4,7 @@ naacl 2018
 
 embeddings and datasets https://github.com/yogarshi/bisparse-dep/
 
-#Abstract
+# Abstract
 
 * Cross-lingual Hypernymy Detection
   * determining if a word in one language (“fruit”) is a hypernym of 

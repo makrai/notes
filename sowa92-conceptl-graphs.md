@@ -2,7 +2,7 @@ Conceptual graphs as a universal knowledge representation
 John F. Sowa
 1992 Computers Math. Applic
 
-#Abstract
+# Abstract
 
 * Conceptual graphs are a knowledge representation language designed as a
   synthesis of several different traditions
@@ -27,7 +27,7 @@ John F. Sowa
 * This paper surveys conceptual graphs, their development from each of these
   traditions, and the applications based on them
 
-#1. A common framework for AI
+# 1. A common framework for AI
 
 * Natural languages set the standard for flexibility and expressive power
 * Symbolic logic sets the standard for precision and generality in formal
@@ -59,7 +59,7 @@ John F. Sowa
     * relationship to frames, predicate calculus, and other systems
   4. applications of CGs that have been implemented in the last five years
 
-#2. Foundations of conceptual graphs P3
+# 2. Foundations of conceptual graphs P3
 
 * The box and circle notation for conceptual graphs was invented by John Sowa
 * In 1882, [Peirce] had developed his relational graphs,
@@ -124,6 +124,6 @@ John F. Sowa
 * To show conceptual relations, Schank's graphs [22] have various kinds of
   arrows instead of labeled circles
 
-#3. Examples of conceptual graphs 6
+# 3. Examples of conceptual graphs 6
 
-#4. Applications of conceptual graphs 13
+# 4. Applications of conceptual graphs 13

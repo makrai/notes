@@ -1,7 +1,7 @@
 Putting Semantics into Semantic Roles
 James F. Allen 1,2 and Choh Man Teng 1
 
-#Abstract
+# Abstract
 
 * there have been many proposals for theories of semantic roles over the years,
   * models are mostly justified by intuition and 
@@ -10,7 +10,7 @@ James F. Allen 1,2 and Choh Man Teng 1
   * more objective criteria for designing role sets, and lend
   * some experimental evaluation
 
-#1 Intro
+# 1 Intro
 
 * role taxonomy is 
   * defined by an informal gloss and some examples. In other cases, semantic
@@ -27,7 +27,7 @@ James F. Allen 1,2 and Choh Man Teng 1
 * This paper will examine ... the TRIPS roles (Allen & Teng, 2017) 1 . The
   * the third [property] allows empirical evaluation
 
-#2 Prelim
+# 2 Prelim
 
 * A key distinction that most frameworks make is between the 
   * inner (or core or argument) roles and the 
@@ -41,7 +41,7 @@ James F. Allen 1,2 and Choh Man Teng 1
     * e.g. _melt **into a puddle**_ ... denotes [a] relationship called
       RESULTINGOBJECT(the melting event, a puddle)
 
-#3 Overview of TRIPS Semantic Roles
+# 3 Overview of TRIPS Semantic Roles
 
 * AGENT, AFFECTED, NEUTRAL, FORMAL, EXPERIENCER
   * [features:] causality, temporality, existence, and sentience
@@ -50,15 +50,15 @@ James F. Allen 1,2 and Choh Man Teng 1
   * +/affected, +/existent +/cognitive
   * NEUTRAL and FORMAL roles are acausal
 
-#4 Axiomatizing Roles
+# 4 Axiomatizing Roles
 
-##The Framework
+## The Framework
 
 * We start from the formalism developed in Allen & Teng (2013), 
   * extended from the interval temporal logic based framework 
     (Allen & Ferguson 1994; Allen 1984)
 
-#5 Integration with an Ontology
+# 5 Integration with an Ontology
 
 * literature concerning roles in [early] semantic networks 
   (e.g., Hayes, 1980; Thomason & Touretsky, 1991)
@@ -76,7 +76,7 @@ James F. Allen 1,2 and Choh Man Teng 1
   i.e., the parser prefers interpretations that satisfy the constraints
   * inherited down the hierarchy
 
-#6 Derivability in Definitions
+# 6 Derivability in Definitions
 
 * [e.g.] _kill_, defined as `cause to die`
   * two essential roles: AGENT and AFFECTED. 
@@ -92,7 +92,7 @@ James F. Allen 1,2 and Choh Man Teng 1
     * occur ...  in an embedded clause [e.g.] _approach_ `move towards`
       * We ... created a mapping based on the semantics of the roles
 
-##6.1 Experimental Evaluation of Derivability
+## 6.1 Experimental Evaluation of Derivability
 
 * we built a customized TRIPS system to parse definitions
   * a dozen top level syntactic rules that capture the common ...  definitions,

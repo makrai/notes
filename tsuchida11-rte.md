@@ -3,7 +3,7 @@ KOMA at TAC2011: A Method for Recognizing Textual Entailment
 Masaaki Tsuchida and Kai Ishikawa
 2011
 
-#Abstract
+# Abstract
 
 * combines the entailment score calculated by 
   * lexical-level matching with the 
@@ -13,7 +13,7 @@ Masaaki Tsuchida and Kai Ishikawa
     * try to discard the T-H pairs that have high entailment score and are
       actually not entailment
 
-#1 Intro
+# 1 Intro
 
 * methods based on 
   * logical inference (Hickl and Bensley, 2007; Clark and Harrison, 2009),
@@ -28,7 +28,7 @@ Masaaki Tsuchida and Kai Ishikawa
     Ishikawa, 2010)  were 
   * basically lexical-level matching approaches,
 
-#2 Description of Our System
+# 2 Description of Our System
 
 * discards the entailment pair candidates that have high scores but seem not
   entail.  For this filtering, we use various 

@@ -4,7 +4,7 @@ LREC 2006
 
 https://ilexir.co.uk/valex/index.html
 
-#Abstract
+# Abstract
 
 * We introduce a large computational subcategorization lexicon which includes
   * subcategorization frame (SCF) and frequency information for 6,397 English
@@ -15,7 +15,7 @@ https://ilexir.co.uk/valex/index.html
   * freely for research use, along with a
   * script which can be used to filter and build sub-lexicons
 
-#1. Introduction
+# 1. Introduction
 
 * automatic verb classification, selectional preference acquisition,
   psycholinguistic experiments
@@ -36,12 +36,12 @@ https://ilexir.co.uk/valex/index.html
 * Briscoe and Carroll’s (1997) comprehensive system
   (Korhonen, 2002b; Korhonen and Preiss, 2003). The lexicon includes SCF
 
-#2 introduce the system we used for SCF acquisition in section 2
+# 2 introduce the system we used for SCF acquisition in section 2
 
-#3 The process of constructing the large lexicon is described in section 3
+# 3 The process of constructing the large lexicon is described in section 3
 
-#4.  evaluates
+# 4.  evaluates
 
 the performance of the large lexicon and a few representative sub-lexicons
 
-#5. summarises the paper
+# 5. summarises the paper

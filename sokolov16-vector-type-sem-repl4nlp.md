@@ -2,7 +2,7 @@ Konstantin Sokolov
 A Vector Model for Type-Theoretical Semantics 
 1st Workshop on Representation Learning for NLP 2016
 
-#1 Introduction
+# 1 Introduction
 
 * logical polysemy and co-predication, which 
   * received formal treatment in the works of Pustejovsky (1995) and are

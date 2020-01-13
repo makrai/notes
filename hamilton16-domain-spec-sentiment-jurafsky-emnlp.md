@@ -7,7 +7,7 @@ inferred lexicons along with code for SentProp and all methods evaluated
 
 summarized in Buechel+ 2018
 
-#Abstract
+# Abstract
 
 * label propagation framework ... using small sets of seed words
 * our approach achieves state-of-the-art performance
@@ -19,7 +19,7 @@ summarized in Buechel+ 2018
   * community-specific sentiment lexicons for 250 online communities, Reddit
     * sentiment varies drastically between different communities
 
-#1 Intro
+# 1 Intro
 
 * e.g
   * _soft_ varies drastically between [sports] and [toy animals] (Figure 1)
@@ -79,7 +79,7 @@ summarized in Buechel+ 2018
       * alternative label propagation algorithm, and
       * a bootstrapping method to obtain confidences. Together these
 
-#3 Framework 3
+# 3 Framework 3
 
 * Our framework, SentProp, is designed to meet four key desiderata:
   1. Resource-light: without massive corpora or hand-curated resources.
@@ -90,16 +90,16 @@ summarized in Buechel+ 2018
   * lexical graph from unlabeled corpora and 
   * propagating sentiment labels over this graph.
 
-##3.1 Constructing a lexical graph
+## 3.1 Constructing a lexical graph
 
-###Distributional word embeddings—The first step in our approach is building
+### Distributional word embeddings—The first step in our approach is building
 
-###Defining the graph edges—Given a set of word embeddings
+### Defining the graph edges—Given a set of word embeddings
 
 * nearest k neighbors within the semantic space (cosine-similarity)
 
-##3.2 Propagating polarities from a seed set
+## 3.2 Propagating polarities from a seed set
 
-##3.3 Bootstrap-sampling for robustness
+## 3.3 Bootstrap-sampling for robustness
 
-#7 Conclusion 10
+# 7 Conclusion 10

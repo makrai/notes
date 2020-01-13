@@ -6,7 +6,7 @@ https://github.com/ganguli-lab/tensorAMP
 
 Kornai ajánlásával
 
-#Abstract
+# Abstract
 
 * Low-rank tensor decomposition
 * We
@@ -16,7 +16,7 @@ Kornai ajánlásával
     * the behavior of symmetric, cubic tensor decomposition
   * demonstrate that AMP significantly outperforms ALS in the presence of noise
 
-#1 Intro
+# 1 Intro
 
 * we derive and analyze an approximate message passing (AMP) algorithm
   for optimal Bayesian recovery of
@@ -72,7 +72,7 @@ Kornai ajánlásával
 * connections to the statistical mechanics literature
   * In practice, ... the prior or underlying rank of the tensors are not known
 
-#5 Summary
+# 5 Summary
 
 * our [AMP algorithms] can flexibly assign different priors to different
   modes of a high-order tensor, thereby enabling AMP to handle arbitrarily

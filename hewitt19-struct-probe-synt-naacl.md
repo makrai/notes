@@ -5,7 +5,7 @@ NAACL 2019
 geometry of English parse trees is approximately discoverable in the geometry
 of deep models of language
 
-#Abstract
+# Abstract
 
 * whether syntax trees are represented in their entirety ...  in a linear
   transformation of a neural network’s word representation space
@@ -15,7 +15,7 @@ of deep models of language
     * squared L2 norm encodes depth in the parse tree. Using our probe, we show
   * such transformations exist for both ELMo and BERT but not in baselines,
 
-#1 Introduction
+# 1 Introduction
 
 * probing methods are designed to evaluate the extent to which [pretrained deep
   LMs i.e. contextualized word reprs] encode particular knowledge of interest,

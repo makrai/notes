@@ -2,7 +2,7 @@ Poincaré Embeddings for Learning Hierarchical Representations
 Maximilian Nickel and Douwe Kiela
 https://arxiv.org/abs/1705.08039
 
-#Abstract
+# Abstract
 
 * we introduce a new approach for learning hierarchical representations of
   symbolic data by embedding them into hyperbolic space – or 
@@ -11,7 +11,7 @@ https://arxiv.org/abs/1705.08039
   * simultaneously capturing hierarchy and similarity
 * efficient algorithm to learn the embeddings based on Riemannian optimization
 
-#Intro
+# Intro
 
 * symbolic data such as text, graphs and multi-relational data
   * word embeddings such as Word2vec [17], GloVe [23] and FastText [4]
@@ -47,7 +47,7 @@ https://arxiv.org/abs/1705.08039
   3. introduce Poincaré embeddings and discuss how to compute them
   4. evaluate our approach
 
-#2 Embeddings and Hyperbolic Geometry
+# 2 Embeddings and Hyperbolic Geometry
 
 * hyperbolic space has recently been considered to model complex networks.  For
   * hyperbolic geometry for greedy routing in geographic communication
@@ -70,7 +70,7 @@ https://arxiv.org/abs/1705.08039
     Embeddings to model visual-semantic hierarchies over words, sentences, and
     images
 
-#3 Poincaré Embeddings
+# 3 Poincaré Embeddings
 
 * we consider the task of inferring the hierarchical relationships fully
   unsupervised,
@@ -80,7 +80,7 @@ https://arxiv.org/abs/1705.08039
   * multiple latent hierarchies can co-exist
   * decrease the difficulty for an optimization method to find a good embedding
 
-##3.1 Optimization
+## 3.1 Optimization
 
 * scales well to large datasets, as the
   * computational and memory complexity of an update depends linearly on the
@@ -89,7 +89,7 @@ https://arxiv.org/abs/1705.08039
     updates are sparse (only a small number of embeddings are modified in an
     update) and collisions are very unlikely on large-scale data
 
-#4 Evaluation
+# 4 Evaluation
 
 * **Translational [distance]** For asymmetric data, we also include the score
   function `d(u, v) = |u − v + r|^2` , as proposed by Bordes+ [6] for
@@ -100,7 +100,7 @@ https://arxiv.org/abs/1705.08039
     indicates the hierarchy of elements. This is, for instance, the case for
     is-a(u, v) relations in taxonomies
 
-##4.3 Lexical Entailment
+## 4.3 Lexical Entailment
 
 * outperforms all state-of-the-art methods evaluated in
   * Vulić, Daniela Gerz, Douwe Kiela, Felix Hill, and Anna Korhonen
@@ -109,7 +109,7 @@ https://arxiv.org/abs/1705.08039
 * achieved a state-of-the-art accuracy of 0.86 on W BLESS [33, 14], which
   evaluates non-graded lexical entailment
 
-#5 Discussion and Future Work
+# 5 Discussion and Future Work
 
 * future work, we intend, to both expand the applications of Poincaré
   * multi-relational data

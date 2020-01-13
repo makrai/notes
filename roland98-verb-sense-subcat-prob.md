@@ -2,7 +2,7 @@ Verb Sense and Verb Subcategorization Probabilities
 Douglas Roland and Daniel Jurafsky
 1998 CUNY Sentence Processing Conference
 
-#Introduction
+# Introduction
 
 * Even after controlling for the above context effects, we found variation in
   subcategorization frequencies. We show that much of this remaining variation
@@ -15,8 +15,8 @@ Douglas Roland and Daniel Jurafsky
   auditorily` are distinct lemmas. Also following Levelt, we assume that a
   lemma expresses expectations for syntactic and semantic arguments
 
-#2 Methodology
+# 2 Methodology
 
-#3 Isolated sentence versus connected-discourse corpora
+# 3 Isolated sentence versus connected-discourse corpora
 
-#4 Other experimental factors
+# 4 Other experimental factors

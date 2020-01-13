@@ -2,16 +2,16 @@ Dániel Lévai, András Kornai
 The impact of inflection on word vectors
 MSZNY 2019
 
-#Abstract 249
+# Abstract 249
 
 * We present a method to evaluate the [coherence (self-similarity) and]
   similarity of [morphological] word vector clusters
 * Because of the high dimension, naive statistical testing of the distances
   from [of?] the mean does not produce easily interpretable results
 
-#1 Introduction
+# 1 Introduction
 
-#2 Methods
+# 2 Methods
 
 * derivation does not concern us in this paper, and we used the <> sign
 * The model was generated using the surface forms only and
@@ -28,7 +28,7 @@ MSZNY 2019
   * Fig. 3 shows that some coordinates are highly likely to be positive and
     others negative, whereas for a random set of points the line would be flat
 
-#3 The statistics of grammatically defined clusters 251
+# 3 The statistics of grammatically defined clusters 251
 
 * Visualizing high-dimensional data is a difficult exercise [13]
   Grinstein, G., Trutschl, M., Cvek, U.: High-dimensional visualizations
@@ -42,7 +42,7 @@ MSZNY 2019
 * comparing the standard deviations and the entropy of the clusters. If a
   * mit ért egy klaszter std-je és entrópiája alatt?
 
-#4 Quantifying similarity 253
+# 4 Quantifying similarity 253
 
 * Here we [introduce] a similarity measure between sets of vectors on the sphere
 * we begin with the definition of a cap (vectors at a small angle to an axis):
@@ -58,7 +58,7 @@ MSZNY 2019
       * maximal difference to be around cos(α) = 0.13
     * sim(C_1, C_2) = what ratio of C_2 is in the cap of C_1
 
-#5 The role of affix frequency 255
+# 5 The role of affix frequency 255
 
 * We begin by examining the clusters based on their case endings
   * the more specific case endings like [/Adj][Transl] and [/Adj][Temp]
@@ -75,7 +75,7 @@ MSZNY 2019
     * infinitive and plural third person verbs
       * [note that] verbs in general did not show strong coherence
 
-#6 Asymmetrical similarity 257
+# 6 Asymmetrical similarity 257
 
 * [how asymmetric]
   * When comparing not round-shaped clusters, this way of measuring similarity
@@ -90,7 +90,7 @@ MSZNY 2019
 
 In the following sections [we symmetrize] the similarity measure
 
-##6.1 Subcategories [ for adjectives, nouns and numbers]
+## 6.1 Subcategories [ for adjectives, nouns and numbers]
 
 * If some subcategories show high similarity, we can say that it is not worth
   preserving as separate categories
@@ -105,11 +105,11 @@ In the following sections [we symmetrize] the similarity measure
 * [for] plural adjectives, the similarities are significantly higher than their
   singular counterparts’ similarities
 
-##6.2 Paradigm self-similarities
+## 6.2 Paradigm self-similarities
 
 [itt már egyáltalán nem értem]
 
-#7 Conclusions and further research
+# 7 Conclusions and further research
 
 * future work may also include
   * using disambiguated text corpus to have bigger clusters thus more data to
@@ -120,4 +120,4 @@ In the following sections [we symmetrize] the similarity measure
     projected onto the subspace with the similarities obtained without
     projection
 
-#Acknowledgment 260
+# Acknowledgment 260

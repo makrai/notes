@@ -2,7 +2,7 @@ Attention Is All You Need
 A Vaswani, L Jones, N Shazeer, N Parmar, J Uszkoreit, Ł Kaiser, I Polosukhin
 NIPS 2017
 
-#Abstract
+# Abstract
 
 * the Transformer
 * Experiments on two machine translation tasks show these models to be 
@@ -12,7 +12,7 @@ NIPS 2017
 * generalizes well ... to English constituency parsing 
   both with large and limited training data
 
-#Attention Visualizations 13
+# Attention Visualizations 13
 
 * long-distance dependencies in the encoder self-attention in layer 5 of 6.
   ... completing the phrase ‘making...more difficult’

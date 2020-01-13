@@ -2,7 +2,7 @@ Armand Joulin, Piotr Bojanowski, Tomas Mikolov, Herve Jegou, Edouard Grave
 Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion
 (Submitted on 20 Apr 2018 (v1), last revised 5 Sep 2018 (this version, v3))
 
-#Abstract
+# Abstract
 
 * word representations learned separately on distinct languages can be aligned
 * Existing works typically solve a 

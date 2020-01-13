@@ -1,4 +1,4 @@
-#Versions and authors
+# Versions and authors
 
 * Swadesh himself created several versions of his list. He o
  * started (1950) with a list of 225 meanings, which he

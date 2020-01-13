@@ -2,7 +2,7 @@ Laure Vieu, Elisabetta Jezek, Tim Van de Cruys
 Quantitative methods for identifying systematic polysemy classes
 2015
 
-#Abstract
+# Abstract
 
 * four experiments [to extract lists of nouns with] inherent polysemy 
   with semiautomatic and automatic procedures

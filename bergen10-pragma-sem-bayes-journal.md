@@ -3,7 +3,7 @@ Pragmatic reasoning through semantic inference
 Semantics & Pragmatics Volume 9, Article 20, 2016
 
 
-#Abstract 
+# Abstract 
 
 * techniques from game theory and Bayesian cognitive science to formalize
   Gricean pragmatic reasoning 

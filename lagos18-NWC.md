@@ -1,9 +1,9 @@
-#3. A historical overview of word classes
+# 3. A historical overview of word classes
 
 * The parts of speech in the Tékhnē grammatikē were based solely on
   * morphology ... and semantics — syntactic behaviour was not taken into consi
 
-#4.2.1. Hengeveld’s definition and classification
+# 4.2.1. Hengeveld’s definition and classification
 
 * In his functional theory of parts of speech, Hengeveld delineates four
   cross-linguistically valid functional slots that words can occupy, based on
@@ -23,9 +23,9 @@
   * Krongo, in which the “modifier in a referential phrase” function can only
     be represented by a relative clause construction 
 
-#6. Word class shift
+# 6. Word class shift
 
-##6.1. Conversion
+## 6.1. Conversion
 
 * conversion [is] the occurrence of a word without morphological
   differentiation in morphosyntactic environments that are associated with a
@@ -36,4 +36,4 @@
   of the word class it is normally associated with, but appears to not entirely
   take on the prototypical categorial features of any other major word class
 
-#7.4. Representing inflection and derivation TODO
+# 7.4. Representing inflection and derivation TODO

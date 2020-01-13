@@ -2,7 +2,7 @@ Learning Word Embeddings for Low-resource Languages by PU Learning
 Chao Jiang, Hsiang-Fu Yu, Cho-Jui Hsieh, and Kai-Wei Chang
 2018 naacl
 
-#Abstract
+# Abstract
 
 * this paper [learn a word embedding] on a corpus with only a few million ws
 * zero entries in the co-occurrence matrix also provide valuable information
@@ -11,7 +11,7 @@ Chao Jiang, Hsiang-Fu Yu, Cho-Jui Hsieh, and Kai-Wei Chang
 * validate the proposed approaches in four different languages
   * [translation of the] word similarity task and the word analogy task
 
-#Introduction
+# Introduction
 
 * Positive-Unlabeled Learning (PU-Learning) in collaborative filtering applica-
   tions (Pan et al., 2008; Hu et al., 2008; Pan and Scholz, 2009;
@@ -22,9 +22,9 @@ Chao Jiang, Hsiang-Fu Yu, Cho-Jui Hsieh, and Kai-Wei Chang
   * We tailor the coordinate descent algorithm (Yu et al., 2017b)
     for solving the corresponding optimization problem
 
-#2 Related work
+# 2 Related work
 
-##Positive and Unlabeled (PU) Learning:
+## Positive and Unlabeled (PU) Learning:
 
 * Positive and Unlabeled (PU) learning (Li and Liu, 2005) is proposed for
   training a model when the positive instances are partially labeled and the
@@ -38,15 +38,15 @@ Chao Jiang, Hsiang-Fu Yu, Cho-Jui Hsieh, and Kai-Wei Chang
 * Yu et al. (2017b) proposed an efficient algorithm for matrix factorization
   with PU-learning, such that the weighted matrix is constructed implicitly
 
-#3 PU-Learning for Word Embedding
+# 3 PU-Learning for Word Embedding
 
 1. Follow the literature (Levy and Goldberg, 2014a), we use the PPMI metric
 2. PU-Learning approach ... to factorize the [mx to word] and context
 3. final embedding vector ... by combining the word ... and the context vector
 
-##3.2 PU-Learning for Matrix Factorization
+## 3.2 PU-Learning for Matrix Factorization
 
-###Weighting function
+### Weighting function
 
 * [the learning objective] is
   * very similar to the one used in ... GloVe,
@@ -71,7 +71,7 @@ C ij =
     * we find that ρ = 0.0625 achieves the best results in general
   * improves the performance especially on analogy tasks
 
-###Bias term
+### Bias term
 
 * Unlike previous work on PU matrix completion
   (Yu et al., 2017b; Hsieh et al., 2015)
@@ -80,7 +80,7 @@ C ij =
 * To incorporate the bias term in (3), we propose [a] training algorithm based
   on the coordinate descent approach
 
-#4 Experimental Setup
+# 4 Experimental Setup
 
 * low-resource setting, we train word embedding models on
   Dutch, Danish, Czech and, English data sets collected from Wikipedia

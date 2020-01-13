@@ -2,7 +2,7 @@ In Defense of a Dogma
 H. P. Grice and P. F. Strawson
 The Philosophical Review, Vol. 65, No. 2 (Apr., 1956), pp. 141-158
 
-#In his
+# In his
 
 * ways in which a distinction can be criticized, and
   more than one in which it can be rejected. It can be criticized

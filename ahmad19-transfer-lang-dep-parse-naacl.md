@@ -3,7 +3,7 @@ On Difficulties of Cross-Lingual Transfer with Order Differences:
 Wasi Uddin Ahmad, Zhisong Zhang, Xuezhe Ma, Kai-Wei Chang, Nanyun Peng
 NAACL 2019
 
-#Abstract
+# Abstract
 
 * In this paper, we ... posit that an order-agnostic model will perform better
   when transferring to distant foreign languages
@@ -14,7 +14,7 @@ NAACL 2019
   * self-attentive models have better overall cross-lingual transferability and
     perform especially well on distant languages
 
-#1 Introduction
+# 1 Introduction
 
 * Cross-lingual transfer
   * applied to many NLP tasks such as

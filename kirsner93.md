@@ -3,7 +3,7 @@ From meaning to message in two theories:
   Cognitive and Saussurean views of modern Dutch demonstratives
 1993
 
-#Intro
+# Intro
 
 Cognitive Grammar 
   bleaching (fehérítő) + metaphorical use
@@ -15,7 +15,7 @@ Comlumbia Scholl (Saussurean)
     basd on extraling, psych bias, [Gricean] implicatures
   meanings are imprecise
 
-#3.1
+# 3.1
 
 Saussurean
   * the linguistic unit is less informative then usually assumed

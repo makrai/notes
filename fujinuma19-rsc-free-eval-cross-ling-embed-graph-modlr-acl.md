@@ -3,7 +3,7 @@ A Resource-Free Evaluation Metric for Cross-Lingual Word Embeddings
   Based on Graph Modularity
 ACL 2019
 
-#Abstract 
+# Abstract 
 
 * word similarity should be independent of language
   i.e., word vectors within one language should not be more similar to each

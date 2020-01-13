@@ -2,14 +2,14 @@ JK Kim, MC de Marneffe, E Fosler-Lussier
 Adjusting word embeddings with semantic intensity orders
 repl4nlp 2016
 
-#Abstract
+# Abstract
 
 we adjust word vectors using the semantic intensity information in addition to
 synonyms and antonyms from WordNet and PPDB, and show 
 improved performance on judging semantic intensity orders of adjective pairs on
 three different human annotated datasets.  1
 
-#1 Introduction
+# 1 Introduction
 
 Word embedding models ...  directly used in word-level NLP tasks such as 
   * antonym detection (Ono+ 2015; Pham+ 2015; Chen+ 2015)

@@ -3,7 +3,7 @@ A robust self-learning method
 Mikel Artetxe [mikél ártedzse], Gorka Labaka, Eneko Agirre
 ACL 2018
 
-#Abstract
+# Abstract
 
 * Recent work [learns] cross-lingual word embeddings 
   without parallel data … through adversarial training

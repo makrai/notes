@@ -2,12 +2,12 @@ Omer Levy, Yoav Goldberg, and Ido Dagan
 Improving Distributional Similarity with Lessons Learned from Word Embeddings
 2015
 
-#Abstract
+# Abstract
 
 * We reveal that much of the performance gains of word embeddings are
   due to certain system design choices and hyperparameter optimizations
 
-#1 Introduction
+# 1 Introduction
 
 * Baroni+ (2014) conducts a set of systematic experiments
   comparing word2vec embeddings to the more traditional distributional methods,
@@ -20,7 +20,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   performance
   than switching to a better algorithm or training on a larger corpus
 
-#2 Background
+# 2 Background
 
 * For historical reasons, we refer to
   * “count-based” (PPMI and SVD) and
@@ -34,14 +34,14 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
     (Padó and Lapata, 2007; Baroni and Lenci, 2010; Levy and Goldberg, 2014a)
   * this work focuses on fixed-window bag-of-words contexts
 
-#2.1 Explicit Representations (PPMI Matrix)
+# 2.1 Explicit Representations (PPMI Matrix)
 
 * pointwise mutual information (PMI) (Church and Hanks, 1990)
   * log 0 = ? -> positive PMI
 * bias towards infrequent events (Turney and Pantel, 2010)
 * widely regarded as state-ofthe-art
 
-#2.2 Singular Value Decomposition (SVD)
+# 2.2 Singular Value Decomposition (SVD)
 
 * A common method of [dimensionality reduction] is
   truncated Singular Value Decomposition (SVD), which
@@ -55,7 +55,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   * W^SVD = U d · Σ d   word
   * C^SVD = V d         context
 
-#2.3 Skip-Grams with Negative Sampling (SGNS)
+# 2.3 Skip-Grams with Negative Sampling (SGNS)
 
 * SGNS as Implicit Matrix Factorization (Levy and Golberg 2014c)
 * w · c = PMI(w, c) − log k
@@ -65,7 +65,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
     * due to a sigmoid function surrounding w  · c
   * weighted => rare (w, c) pairs affect the objective much less
 
-#2.4 Global Vectors (GloVe)
+# 2.4 Global Vectors (GloVe)
 
 * w · c + b_w + b_c = log (#(w, c))
 * If we were to fix
@@ -80,11 +80,11 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
 * The model is fit to minimize a weighted least square loss,
   * giving more weight to frequent (w, c) pairs
 
-#3 Transferable Hyperparameters
+# 3 Transferable Hyperparameters
 
 * [from] word2vec and GloVe to count-based methods
 
-#3.1 Pre-processing Hyperparameters
+# 3.1 Pre-processing Hyperparameters
 
 * Dynamic Context Window (dyn)
   * words can be weighted according to their distance from the focus word
@@ -111,7 +111,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   * word2vec removes these tokens ... before creating context windows
   * preliminary experiments showed that [the effect of this] was small
 
-#3.2 Association Metric Hyperparameters
+# 3.2 Association Metric Hyperparameters
 
 * Shifted PMI (neg)
   * SPPMI(w, c) = max(PMI(w, c) − log(k), 0)
@@ -129,7 +129,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
     (Pantel and Lin, 2002; Turney and Littman, 2003)
   * smoothing alleviates PMI’s bias towards rare words
 
-#3.3 Post-processing Hyperparameters
+# 3.3 Post-processing Hyperparameters
 
 * Adding Context Vectors (w+c)
   * originally motivated as an ensemble method
@@ -157,19 +157,19 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   * +/normalize rows/columns
   * +row -column is superior
 
-#4 Experimental Setup
+# 4 Experimental Setup
 
-#5 Results
+# 5 Results
 
-#5.1 Hyperparameters vs Algorithms
-#5.2 Hyperparameters vs Big Data
-#5.3 Re-evaluating Prior Claims
-#5.4 Comparison with CBOW
+# 5.1 Hyperparameters vs Algorithms
+# 5.2 Hyperparameters vs Big Data
+# 5.3 Re-evaluating Prior Claims
+# 5.4 Comparison with CBOW
 * cannot be easily expressed as a factorization
 
-#6 Hyperparameter Analysis
+# 6 Hyperparameter Analysis
 
-#6.1 Harmful Configurations
-#6.2 Beneficial Configurations
+# 6.1 Harmful Configurations
+# 6.2 Beneficial Configurations
 
-#7 Practical Recommendations
+# 7 Practical Recommendations

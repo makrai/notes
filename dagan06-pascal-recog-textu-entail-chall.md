@@ -2,7 +2,7 @@ The PASCAL Recognising Textual Entailment Challenge
 Ido Dagan, Oren Glickman, and Bernardo Magnini
 2006 Springer
 
-##1.1 Rational
+## 1.1 Rational
 
 * applications, such as 
   * Question Answering (QA),
@@ -14,7 +14,7 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
     such as presupposition and implicature see [16]
   * fuzzy or uncertain inference (e.g. [1], [8], [9])
 
-##1.2 The Challange Scope
+## 1.2 The Challange Scope
 
 * Each portion of the dataset was intended to include typical T -H examples
   that may correspond to success and failure cases of the actual applications
@@ -22,9 +22,9 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
     world knowledge, at different levels of difficulty
   * biased to choosing nontrivial pairs,
 
-#2 Dataset Preparation and Application Settings
+# 2 Dataset Preparation and Application Settings
 
-##2.1 Application Settings
+## 2.1 Application Settings
 
 * Information Retrieval (IR)
 * Comparable Documents (CD)
@@ -34,7 +34,7 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
 * Machine Translation (MT)
 * Paraphrase Acquisition (PP)
 
-##3.3 Submitted Systems and Results
+## 3.3 Submitted Systems and Results
 
 * degree of word overlap between T and H, 
   * possibly including stemming, lemmatization, part of speech tagging, and
@@ -51,7 +51,7 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
     learning methods, logical inference and various specific scoring
     mechanisms
 
-#4 Discussion
+# 4 Discussion
 
 * Assumed Background Knowledge.
   * “Grew up in Yemen” → “Speaks Arabic”.
@@ -59,7 +59,7 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
   * temporal reasoning, complex logical inference or arithmetic calculations
     (see example 1911 from Table 1) were typically avoided
 
-#5 Conclusions
+# 5 Conclusions
 
 * further efforts can be made to create “natural” distributions of
   Text-Hypothesis examples. For example, 

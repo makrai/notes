@@ -4,7 +4,7 @@ Polysemy: Theoretical and Computational Approaches
 
 Reviewed by Jean Véronis Université de Provence, Aix-en-Provence
 
-#Chapter 1 a survey of the main theories of meaning
+# Chapter 1 a survey of the main theories of meaning
 and their treatment of polysemy
 
 * theories
@@ -17,10 +17,10 @@ and their treatment of polysemy
 * In the course of this overview, Ravin and Leacock put the individual chapters
   into perspective by relating them to the various theories
 
-#In Chapter 2, “Aspects of the micro-structure of word meanings”, D. Alan Cruse
+# In Chapter 2, “Aspects of the micro-structure of word meanings”, D. Alan Cruse
 addresses the issue of the extreme context-sensitivity of word meaning
 
-#Chapter 3 by Christiane Fellbaum is devoted to “autotroponymy”
+# Chapter 3 by Christiane Fellbaum is devoted to “autotroponymy”
 
 This term requires a two-step explanation
 * Troponyms are

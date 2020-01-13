@@ -3,7 +3,7 @@ An Empirical Evaluation of Generic Convolutional and Recurrent Networks
 Shaojie Bai, J. Zico Kolter, Vladlen Koltun
 arXiv:1803.01271
 
-#Abstract
+# Abstract
 
 * recent results indicate that convolutional architectures can outperform
   recurrent networks on tasks such as audio synthesis and machine translation
@@ -16,7 +16,7 @@ arXiv:1803.01271
 
 http://github.com/locuslab/TCN
 
-#Introduction
+# Introduction
 
 * recent research ... in audio synthesis, word-level language modeling, and MT
   (van den Oord+ 2016; Kalchbrenner+ 2016; Dauphin+ 2017; Gehring+ 2017a;b)
@@ -37,7 +37,7 @@ http://github.com/locuslab/TCN
     also simpler and clearer
     * therefore ... a more appropriate starting point in [sequence modeling]
 
-#2. Background 2
+# 2. Background 2
 
 * Convolutional networks (LeCun et al., 1989)
   * applied to sequences for decades (Sejnowski & Rosenberg, 1987; Hinton 1989)
@@ -89,7 +89,7 @@ http://github.com/locuslab/TCN
   * to sequence modeling, we are not aware of a thorough one
   * Yin et al. (2017) ... for sentence-level and document-level classification
 
-#3. Temporal Convolutional Networks 3
+# 3. Temporal Convolutional Networks 3
 
 * a generic architecture for convolutional sequence prediction
 * distill the best practices in convolutional network design into a simple arch
@@ -119,7 +119,7 @@ http://github.com/locuslab/TCN
   extremely deep network or very large filters,
   neither of which were particularly feasible [in 1989]
 
-##3.4. Residual Connections
+## 3.4. Residual Connections
 
 * A residual block (He et al., 2016)
   `o = Activation(x + F(x))`
@@ -127,12 +127,12 @@ http://github.com/locuslab/TCN
   rather than the entire transformation, which has
   repeatedly been shown to benefit very deep networks
 
-##3.3. Dilated Convolutions
+## 3.3. Dilated Convolutions
 
 dilated convolutions (van den Oord et al. 2016) enable an exponentially large
 receptive field (Yu & Koltun, 2016)
 
-##3.5. Discussion
+## 3.5. Discussion
 
 * advantages ... of using TCNs for sequence modeling
   * Parallelism. Unlike in RNNs..., convolutions can be done in parallel
@@ -146,7 +146,7 @@ receptive field (Yu & Koltun, 2016)
   * Data storage during evaluation
   * Potential parameter change for a transfer of domain
 
-#4. Sequence Modeling Tasks
+# 4. Sequence Modeling Tasks
 
 * the adding problem (Hochreiter & Schmidhuber, 1997) has been used repeatedly
   as a stress test for sequence models (Le+ 2015; Arjovsky+ 2016; Zhang+ 2016)
@@ -163,23 +163,23 @@ receptive field (Yu & Koltun, 2016)
     Most of the existing models fail on LAMBADA (Paperno+ 2016; Grave+ 2017)
   * The training data for LAMBADA is ... 200M words. The vocabulary size is 93K
 
-#5 Experiments
+# 5 Experiments
 
 * experiments ... varying the depth of the network `n` and occasionally `k`
 * We use an exponential dilation `d = 2^i` for layer i in the network
 
-##5.1. Synopsis of Results
+## 5.1. Synopsis of Results
 
 * on several of these tasks, the generic, canonical recurrent architectures we
   study (e.g., LSTM, GRU) are not the state-of-the-art. (See the supplement)
 
-##5.3. Polyphonic Music and Language Modeling
+## 5.3. Polyphonic Music and Language Modeling
 
 * These domains are dominated by recurrent architectures, with
   * many specialized designs developed for these tasks
   (Zhang+ 16; Ha+ 17; Krueger+ 17; Grave+ 17; Greff+ 17; Merity+ 17)
 
-###Polyphonic music
+### Polyphonic music
 
 * On Nottingham and JSB Chorales, the TCN with virtually no tuning
   * outperforms
@@ -192,7 +192,7 @@ receptive field (Yu & Koltun, 2016)
       improve performance significantly. This is largely orthogonal to the
       RNN/TCN distinction, as a similar variant of TCN may well be possible
 
-###Word-level language modeling
+### Word-level language modeling
 
 * recent LSTM works on LSTMs for this task (Krueger+ 2017; Merity+ 2017)
 * [we follow] standard practice that ties the weights of encoder
@@ -204,13 +204,13 @@ receptive field (Yu & Koltun, 2016)
   TCN outperforms the LSTM results of Grave et al. (2017) [in] perplexity
   without any hyperparameter search
 
-###Character-level language modeling (PTB and text8)
+### Character-level language modeling (PTB and text8)
 
 * accuracy measured in bits per character
 * TCN outperforms regularized LSTMs and GRUs
 * Specialized architectures exist that outperform all of these, see the supplmt
 
-##5.4. Memory Size of TCN and RNNs
+## 5.4. Memory Size of TCN and RNNs
 
 * We focus on
   1. the copy memory task, which is a stress test designed to evaluate long-
@@ -221,7 +221,7 @@ receptive field (Yu & Koltun, 2016)
 * State-of-the-art results [with] additional memory mechanisms (Grave+ 2017)
   are even better
 
-#6. Conclusion
+# 6. Conclusion
 
 * Numerous advanced schemes for regularizing and optimizing LSTMs ...  proposed
   (Press & Wolf, 2016; Krueger+ 2017; Merity+ 2017; Campos+ 2018)
@@ -229,17 +229,17 @@ receptive field (Yu & Koltun, 2016)
 * The preeminence enjoyed by recurrent networks in sequence modeling may be
   largely a vestige of history
 
-#Supplementary Material
+# Supplementary Material
 
-##A. Hyperparameters Settings
-##B. State-of-the-Art Results
-##C. Effect of Filter Size and Residual Block
+## A. Hyperparameters Settings
+## B. State-of-the-Art Results
+## C. Effect of Filter Size and Residual Block
 
 * we kept the model size and depth exactly the same for different models, so
 * tasks: copy memory, permuted MNIST (P-MNIST), and Penn Treebank word-level
 * both factors (filter size and residual connections) contribute to sequence
 
-###Filter size k. In both the
+### Filter size k. In both the
 
 * copy memory and the P-MNIST tasks, we observed
   faster convergence and better accuracy for larger filter sizes
@@ -247,13 +247,13 @@ receptive field (Yu & Koltun, 2016)
   * local context ... is especially important for PTB language modeling
   * the very success of n-gram models
 
-###Residual block
+### Residual block
 
 * stabilized training and brought faster convergence with better final results
   * In all three scenarios that we compared here
 * Especially in language modeling ... performance (See Figure 6f)
 
-##D. Gating Mechanisms
+## D. Gating Mechanisms
 
 * gated activation (van den Oord et al., 2016; Dauphin et al., 2017).  
   * in prior work on convolutional architectures for language modeling is the 

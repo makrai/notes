@@ -2,7 +2,7 @@ Ilya Sutskever, Ruslan Salakhutdinov, and Joshua B. Tenenbaum
 Modelling Relational Data using Bayesian Clustered Tensor Factorization
 NIPS 2009
 
-#Abstract
+# Abstract
 
 * cluster-based models yield more easily interpretable representations, while
   factorization-based approaches have given better predictive performance on

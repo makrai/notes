@@ -2,7 +2,7 @@ Quan Wang; Zhendong Mao; Bin Wang; Li Guo
 Knowledge Graph Embedding: A Survey of Approaches and Applications
 IEEE Transactions on Knowledge and Data Engineering (Vol: 29, Issue: 12) 2017
 
-#Abstract
+# Abstract
 
 * review based on the type of information used in the embedding task
 * [organization]
@@ -13,7 +13,7 @@ IEEE Transactions on Knowledge and Data Engineering (Vol: 29, Issue: 12) 2017
       logical rules
   3. downstream tasks such as KG completion, relation extraction, question ans
 
-#1 Introduction
+# 1 Introduction
 
 * KGs, such as Freebase [1], DBpedia [2], YAGO [3], and NELL [4]
 * applications, from semantic parsing [5, 6] and
