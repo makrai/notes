@@ -2,7 +2,7 @@ Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R Thomas McCoy,
 Najoung Kim, Benjamin Van Durme, Samuel R. Bowman, Dipanjan Das, Ellie Pavlick
 What do you learn from context?
   Probing for sentence structure in contextualized word representations
-ICLR 2019 camera-ready version, 17 pages including appendices
+ICLR 2019
 
 * data processing and model code
 
@@ -17,13 +17,13 @@ ICLR 2019 camera-ready version, 17 pages including appendices
   * sub-sentence tasks derived from the traditional structured NLP pipeline
 * We probe word-level contextual representations from four recent models
 * investigate ... syntactic, semantic, local, and long-range phenomena
-* models trained on language modeling and translation produce
+* models trained on language modeling and translation
   * strong representations for syntactic phenomena, but only offer
   * comparably small improvements on semantic tasks over a non-contextual basel
 * [from the Conclusion]
   * the performance of ELMo cannot be fully explained by a model with access to
     local context
-    * [i.e. it does] encode distant linguistic information, which 
+    * [i.e. ELMo does] encode distant linguistic information, which 
       can help disambiguate longer-range dependency relations and 
       higher-level syntactic structures
 

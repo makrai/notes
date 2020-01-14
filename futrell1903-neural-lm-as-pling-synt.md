@@ -7,7 +7,7 @@ arXiv preprint arXiv:1903.03260
 
 * We deploy the methods of controlled psycholinguistic experimentation to [see
   whether] neural network language models [represent] syntactic state
-  * artificial sentences containing a variety of syntactically complex
+  * artificial sentences, syntactically complex
   * We test four models:
     * two publicly available LSTM sequence models of English (Jozefowicz+ 2016;
       Gulordava+ 2018) trained on large datasets; an
