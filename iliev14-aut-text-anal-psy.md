@@ -1,6 +1,6 @@
+R Iliev, M Dehghani, E Sagi
 Automated text analysis in psychology:
   Methods, applications, and future developments
-R Iliev, M Dehghani, E Sagi
 Language and Cognition, 2014
 
 # Abstract
@@ -132,11 +132,11 @@ Language and Cognition, 2014
 
 # 3.Conclusions p20
 
-* Technological innovations [for data collection] have facilitated some of the
-  most important theoretical advances in psychological science
+* Technological innovations [for data collection] have facilitated 
+  theoretical advances in psychological science
   * precise reaction time (Helmholtz, 1850)
   * mechanical control of stimuli exposure (Mueller & Schumann, 1894)
-  * measurement of galvanic skin response (Vigouroux, 1879 ; Jung, 1906)
+  * measurement of Galvanic skin response (Vigouroux, 1879 ; Jung, 1906)
   * electro-encephalograms (Berger, 1929)
   * fMRI (Ogawa, Lee, Kay, & Tank, 1990) and 
   * optical brain imaging (Villringer & Chance, 1997)
@@ -151,10 +151,10 @@ Language and Cognition, 2014
       * companies offer specialized software for automated text analysis, and
       * text analysis tools [in] standard statistical packages 
         (e.g., SAS Text Miner, SPSS Text Analytics, R)
-* we review ... measures of subjective properties [of authors]
-  * examples, including some from clinical psychology, personality and
-    individual differences, intelligence, knowledge assessment, lie detection,
-    political attitudes, group dynamics, and cultural change
+* measures of subjective properties [of authors]
+  * from clinical psychology, personality and individual differences,
+    intelligence, knowledge assessment, lie detection, political attitudes,
+    group dynamics, and cultural change
   * organized as follows
     * introduce the idea of using language in general and text in particular
     * three popular approaches for automating such tasks:

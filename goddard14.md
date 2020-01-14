@@ -29,19 +29,19 @@ Words and Meanings
 
 # 8 ... proverbs in English and Malay
 
-# 9 The meaning of “abstract nouns”: Locke, Bentham, and contemporary semantics
+# 9 The meaning of “abstract nouns”: Locke, Bentham, and contemporary sem 205
 
 # 9.1 “Abstract” and “concrete” in the linguistic and logical literature
     e.g. beauty, not physical
 # 9.2 Abstract nouns and mental ontologies
 # 9.3 Example 1: illness and disease
-# 9.4 Example 2: the post-Holocaust “trauma discourse” in English-spea countries
+# 9.4 Example 2: the post-Holocaust “trauma discourse” in English-spea countris
 # 9.5 Locke on the semantics of abstract nouns
 # 9.6 Further explications and issues
 # 9.7 “Fictitious entities”, vagueness, and translatability
 # 9.8 Final remarks
 
-# 10 Broader horizons: beyond lexical semantics
+# 10 Broader horizons: beyond lexical semantics 235
 
 substantial NSM literature on grammar
 
