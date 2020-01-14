@@ -22,13 +22,13 @@ arXiv:1902.06006 [cs.CL]
   * SRL (16% on the Ontonotes SRL benchmark)
   * NER (4% relative error reduction on the CoNLL 2003 benchmark), and
   * coreference resolution (10% on the Ontonotes corefer benchmark)
-  * additional tasks were reported by Peters+ (2018a) and later by
+  * additional tasks were reported by Peters+ (2018a)
 * ULMFiT (Howard and Ruder 2018) introduced a similar approach, ULMFiT, showing
   a benefit for text classification methods
 * BERT (Devlin+ 18) bidirectional encoder representations from transformers
   * several innovations to the learning method and learned from more data,
   * a further 45% error reduction (relative to ELMo) on the first task and
-    7% on the second. 
+    7% on the second
   * On the SWAG benchmark
     * grounded commonsense reasoning (Zellers+ 2018)
     * BERT gave another 66% relative to ELMo
@@ -39,7 +39,7 @@ arXiv:1902.06006 [cs.CL]
     * The effects of the dataset ... have not been fully assessed
 * open questions about the relative performance of the different methods
   * differences in the learning algorithms, particularly the NN architectures,
-  * see Peters+ (2018b) for some exploration. Some of the findings on BERT
+  * see Peters+ (2018b) for some exploration
   * finetuning may be critical
 
 # 6 Cautionary Notes
@@ -63,8 +63,8 @@ arXiv:1902.06006 [cs.CL]
 # 7 What’s Next
 
 * apply variations on contextual word vectors to new problems
-* variations on the learning methods. For example, finetuning
+* variations on the learning methods
 * settings where relatively little supervision
   * low-resource genres and languages
-  * characterize the generalizations that these methods are (not) learning 
+  * characterize the generalizations that these methods are (not) learning
     in linguistic terms; see for example Goldberg (2019)

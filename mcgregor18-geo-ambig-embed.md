@@ -1,5 +1,5 @@
-Geometric Methods for Context Sensitive Distributional Semantics
 McGregor, Stephen
+Geometric Methods for Context Sensitive Distributional Semantics
 2017 PhD
 
 # Abstract

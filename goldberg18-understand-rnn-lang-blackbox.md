@@ -64,7 +64,7 @@
   Max Glockner, Vered Shwartz, Yoav Goldberg 
   2018 ACL
 
-# Q5 Q5: What is the representation power of RNNs? 78
+# Q5: What is the representation power of RNNs? 78
 
 * Recurrent Neural Networks as Weighted Language Recognizers
   Y Chen
