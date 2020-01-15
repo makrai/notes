@@ -1,4 +1,4 @@
-G Sudre, D Pomerleau, M Palatucci c, L Wehbe, A Fyshe, R Salmelin, T Mitchell
+G Sudre, D Pomerleau, M Palatucci, L Wehbe, A Fyshe, R Salmelin, T Mitchell
 Tracking neural coding of perceptual and semantic features of concrete nouns
 2012
 

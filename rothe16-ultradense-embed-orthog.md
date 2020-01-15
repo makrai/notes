@@ -1,6 +1,6 @@
 Sascha Rothe, Sebastian Ebert, and Hinrich Schütze
 Ultradense Word Embeddings by Orthogonal Transformation
-2016 NAACL
+2016 NAACL (az ACL-es hivatkozik erre )
 
 * output lexicons ... available at www.cis.lmu.de/~sascha/Ultradense/
 * implementation by someone else: https://github.com/joemzhao/ultradensifier
@@ -39,6 +39,8 @@ Ultradense Word Embeddings by Orthogonal Transformation
 * make embeddings more interpretable
 * first step towards a general decomposition
 
+# 2 Model
+
 # 3 Lexicon Creation
 
 * resources used in this paper cover five languages and three domains
@@ -61,6 +63,8 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 
 # 4 Evaluation
 
+## 4.1 Top-Ranked Words
+
 ## 4.2 Quality of Predictions
 
 * size of the lexicon resource has no big effect
@@ -68,6 +72,10 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 * word embeddings represent sentiment and concreteness much better than freq
   * reason for this likely is ...  modeling the context
   * Infrequent words can occur in frequent contexts
+
+## 4.3 Determining Association Strength
+
+## 4.4 Text Polarity Classification
 
 # 5 Parameter Analysis
 
@@ -88,7 +96,7 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 
 * Faruqui+ (2015) perform postprocessing based on a semantic lexicon
   * good for word similarity
-  * bad for other applications like detecting syntactic relations
+  * bad for ... syntactic relations
 * In a tensor framework, Rothe and Schütze (2015) transform the word embeddings
   to sense (synset) embeddings
 * Xing+ (2015) restricted the work of Mikolov+ (2013 ling regu) to an orthogonl
@@ -99,8 +107,8 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
   * Heerschop+ (2011) used WordNet together with a PageRank-based algorithm
   * Scheible (2010): a semi-automatic approach based on machine translation
   * The winning system of SemEval2015 10E (Amir+ 2015) was 
-    based on structured skipgram embeddings with 600 dimensions and support
-    vector regression with RBF kernels
+    based on structured skipgram embeddings with 600 dimensions and 
+    support vector regression with RBF kernels
   * Hamdan+ (2015), the second ranked team, used the average of six sentiment
     lexicons as a final sentiment score
 * Tang+ (2014b) train sentiment specific embeddings 
