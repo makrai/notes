@@ -8,33 +8,32 @@ Behav Res (2014) 46:904–911
   expressions (such as _zebra crossing_ and _zoom in_),
   obtained from over 4,000 participants by means of a norming study using Turk
 * Although the instructions stressed that [concreteness would be based on]
-  all senses and motor responses,
+  all senses [érzékek] and motor responses,
   a comparison with the existing concreteness norms indicates that
   participants, as before, largely focused on visual and haptic [tapintási]
 
 # Intro
 
-* Concreteness: the degree to which the entity is perceptible entity
+* Concreteness: the degree to which the entity is perceptible
   * Paivio’s dual-coding theory (Paivio, 1971, 2013)
     * concrete words are easier to remember than abstract words,
       because they activate perceptual memory codes in addition to verbal
   * context availability theory (Schwanenflugel, Harnishfeger, and Stowe 1988)
     * concrete words are easier to process
       because they are related to strongly supporting memory contexts, whereas
-      abstract words are not, as can be demonstrated by asking people how easy
-      it is to think of a context in which the word can be used
+    * how easy it is to think of a context in which the word can be used
 * topics related to concreteness
   * hemispheric differences in the processing (Oliveira+ 2013)
-  * effects ... in working memory (Mate, Allen, & Baqués, 12; Nishiyama, 13)
-  * How ... stored in and retrieved from long-term memory
-    (Hanley, Hunt, Steed, & Jackman, 2013; Kousta, Vigliocco, Vinson, Andrews,
-    & Del Campo, 2011; Paivio, 2013)
+  * working memory (Mate, Allen, & Baqués, 12; Nishiyama, 13)
+  * long-term memory
+    (Hanley, Hunt, Steed, & Jackman, 2013; Kousta+ 2011; Paivio, 2013)
   * bilingual and monolingual word processing
     (Barber, Otten, Kousta, & Vigliocco, 2013; Connell & Lynott, 2012;
     Gianico-Relyea & Altarriba, 2012; Kaushanskaya & Rechtzigel, 2012)
   * affective connotation
     (Ferre, Guasch, Moldovan, Sánchez-Casas, 2012; Kousta+ 2011)
   * neuropsychological patients (Loiselle+ 2012)?
+    * selective anterior temporal lobe resection and ... amygdalo-hippocampectm
   * within the embodied view of cognition
     (Barsalou, 1999; Fischer & Zwaan, 2008; Wilson, 2002)
     * words referring to easily perceptible entities coactivate the brain reg
@@ -50,15 +49,15 @@ Behav Res (2014) 46:904–911
   * existing concreteness ratings ... tend to focus too much on visual
     (Connell & Lynott, 2012; Lynott & Connell, 2009, in press)
     at the expense of the other senses and ... action-related experiences
-  * Lynott and Connell (2009) asked participant to what extent adjectives were
-    experienced by touch, by hearing, by seeing, smelling, and tasting
-  * perceptual strength ratings were correlated only with ... vision, touch,
-    and, to a lesser extent, smell
-  * none of the concreteness ratings [ includes ] experience based
-* [not generally known words] could qualify as noise
+  * to what extent adjectives were experienced 
+    by touch, hearing, seeing, smelling, and tasting (Lynott and Connell 2009)
+    * perceptual strength ratings were correlated only with ... vision, touch,
+      and, to a lesser extent, smell
+  * none of the concreteness ratings [includes] experience based
+* [rare words] could qualify as noise
 * [our] list does not contain proper names or inflected forms
-    * inflected verb forms are homonymous (and derivationally related) to
-      uninflected adjectives (appalling) or nouns (playing)
+    * [some] inflected verb forms are homonymous (and derivationally related)
+      to uninflected adjectives (appalling) or nouns (playing)
       * whether the word is used more often as an adjective/noun than as a verb
   * some nouns are used more frequently in plural form than in singular form
     (e.g., eyes) or have different meanings in singular and plural (glasses)

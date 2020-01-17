@@ -1,6 +1,6 @@
 Sascha Rothe and Hinrich Schütze
 Word Embedding Calculus in Meaningful Ultradense Subspaces
-2016 ACL
+2016 ACL (hivatkozik az NAACL-esre)
 
 * test sets and word embeddings: http://www.cis.lmu.de/~sascha/Ultradense/
 * implementation by someone else: https://github.com/joemzhao/ultradensifier
@@ -41,7 +41,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
     transforms the original word embedding space into a space in which
     certain types of information are represented by a small number of dims
   * orthogonality can be seen as a hard regularization of the transformation
-* By choosing an orthogonal and thus _linear_ transformation we also assume that
+* By choosing an orthogonal and thus _linear_ transformation we also assume:
   the information is already encoded linearly in the original word embedding
   * a frequent assumption, as we generally use the vector addition
 * Concretely, we learn Q such that the
@@ -63,8 +63,8 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
   * Eq. 2 is weighted with `α^*` and Eq. 3 with `1 − α^*`
   * batch gradient descent where
     each batch contains the same number of positive and negative examples
-    This means the number of examples in the lexica – which give rise to more
-    negative than positive examples – does not influence the training
+    * This means the number of examples in the lexica – which give rise to more
+      negative than positive examples – does not influence the training
 
 # 3 Setup and Method 2
 
