@@ -170,14 +170,14 @@ arXiv:1906.02715 [cs.LG]
 
 * hypothesized: a linear transformation under which distances between
   embeddings would better reflect their semantic relationships–that is, words
-* we trained a probe following Hewitt and Manning’s methodology. We
+* we trained a probe following Hewitt and Manning’s methodology
   * initialized a random matrix B ∈ R k×m , testing different values for m
   * Loss is,
     * roughly, defined as the difference between the average cosine similarity
       between embeddings of words with different senses, and that between
       embeddings of the same sense. However,
-    * we clamped the cosine similarity terms to within ±0.1 of the pre-training
-      averages for same and different senses
+    * we clamped the cosine similarity terms 
+      to within ±0.1 of the pre-training averages for same and different senses
       * Without clamping, the trained matrix simply ended up taking
         well-separated clusters and separating them further). We
       * [clamping values tested] between 0.05 and 0.2
