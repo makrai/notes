@@ -2,8 +2,7 @@ Gábor Berend
 Word Sense Disambiguation for Hungarian using Transformers
 MSZNY 2020
 
-we make the contextualized word embeddings obtained for nearly 12500
-sense-annotated utterances publicly available
+contextualized word embeddings obtained for nearly 12500 sense-annotated utters
 http://github.com/begab/huWSDdata
 
 # Abstract
@@ -42,8 +41,8 @@ http://github.com/begab/huWSDdata
     contextualized word representations for tackling WSD
 * Contextualized word representations (McCann+ 2017; Peters+ 2018; Devlin+
   2019) are recent extensions of traditional word embeddings, such as
-  * applicable in a variety of settings, including natural language inference
-    (Williams+ 2018) or reading comprehension (Khashabi+ 2018)
+  * applicable in ... natural language inference (Williams+ 2018) or
+    reading comprehension (Khashabi+ 2018)
 
 # 3 Experiments
 
@@ -71,9 +70,9 @@ http://github.com/begab/huWSDdata
 * 1+12 stacked layers using self-attention
   * Each [layer] employs vectorial representations of 768 dimensions
 * sensitivity analysis on using ... different layers of the multi-layered
-* we had to omit one of the sense-annotated words from our analysis [because] it
-  was included in an excerpt being longer than the longest sequence M-BERT
-  architecture can possibly deal with, i.e. a sequence length of 512. We also
+* we had to omit one of the sense-annotated words from our analysis [because]
+  it was included in an excerpt being longer than the longest sequence M-BERT
+  architecture can possibly deal with, i.e. a sequence length of 512
 
 ## 3.3 Results
 
@@ -102,11 +101,11 @@ http://github.com/begab/huWSDdata
 * Similar to (Vincze+ 2008), we also conducted experiments in a leave-one-out
 * number of nearest neighbors, i.e. k ∈ {1, 3, 5, 7, 9}. Figure 2 illustrates
 * plateauing effect for the last few layers of M-BERT ... 8 to 12
-* [number of] the nearest neighbors ... k = 5, provides a trade-off between
-  * [not too] biased in predicting (the most) frequent senses – as opposed to
+* [number of] the nearest neighbors ... k = 5, provides a trade-off
+  * [not too] biased in predicting (the most) frequent senses
 * layer 5 and beyond are outperforming Vincze+ (2008) irrespective of `k`
-* final layers [and] k > 3, [consistently] fair margin (cf. 0.74 versus 0.82) 
-* F-scores of the senses for the individual word forms in the dataset 
+* final layers [and] k > 3, [consistently] fair margin (cf. 0.74 versus 0.82)
+* F-scores of the senses for the individual word forms in the dataset
   * MFS baseline and our k–nn solution relying on the M-BERT [by] word
   * Shannon entropy [vs] F-score obtained for it for a particular model
   * Figure 3 for the MFS and the 5–nn approach relying on the final layer of
@@ -117,4 +116,4 @@ http://github.com/begab/huWSDdata
 * we plan to extend it to the more challenging all words WSD setting
   * English [dataset] Raganato+ (2017); Taghipour and Ng (2015),
   * however, such large scale training data is not ... available for Hungarian
-  * how [ training data – in some ] foreign language – can improve hu
+* how [training data – in some] foreign language – can improve Hungarian
