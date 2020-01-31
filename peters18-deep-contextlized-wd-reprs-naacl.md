@@ -1,6 +1,6 @@
-Deep contextualized word representations
 ME Peters, M Neumann, M Iyyer, M Gardner, C Clark, K Lee, L Zettlemoyer
-naacl 2018 outstanding paper
+Deep contextualized word representations
+NAACL 2018 outstanding paper
 
 # Ruder
 
