@@ -1,5 +1,6 @@
 Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+NAACL 19
 
 # Abstract
 
