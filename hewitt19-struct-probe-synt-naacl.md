@@ -12,7 +12,7 @@ of deep models of language
 * linear transformations
   * two
     * squared L2 distance encodes the distance between words in the parse tree,
-    * squared L2 norm encodes depth in the parse tree. Using our probe, we show
+    * squared L2 norm encodes depth in the parse tree
   * such transformations exist for both ELMo and BERT but not in baselines,
 
 # 1 Introduction
@@ -22,8 +22,8 @@ of deep models of language
   * part-of-speech (Belinkov+ 2017),
   * morphology (Peters+ 2018a), or
   * sentence length (Adi+ 2017)
-* Such methods work by specifying a probe (Conneau+ 2018; Hupkes+ 2018), a
-  supervised model for finding information in a representation
+* Such methods work by specifying a probe (Conneau+ 2018; Hupkes+ 2018),
+  * a supervised model for finding information in a representation
 * whether deep models’ representations encode syntax (Linzen, 2018)
   * recent work (Kuncoro+ 2018; Peters+ 2018b; Tenney+ 2019),
   * [we:] whether deep contextual models encode entire parse trees
