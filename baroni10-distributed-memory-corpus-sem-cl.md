@@ -323,6 +323,49 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 
 ## 6.1 The W 1 ×LW 2 Space 20
 
+### 6.1.1 Similarity Judgments
+### 6.1.2 Synonym Detection
+### 6.1.3 Noun Categorization
+
+* prominent role in cognitive research on concepts and meaning, as a probe into
+* semantic organization of the lexicon and the 
+* [hierarchical concept] taxonomies (Murphy 2002). Research in corpus-based
+* computational point of view: assign a semantic class or type to words.
+* We focus here on noun categorization, which we operationalize as a clustering
+  * verbs (Merlo and Stevenson 2001; Schulte im Walde 2006).
+* Cluster quality is evaluated by percentage purity, one of the standard measrs
+  * for each cluster we count the number of items that belong to the true class
+    that is most represented in the cluster, and then we sum these counts
+    across clusters.  The resulting sum is divided by the total number of items
+
+### 6.1.4 Selectional Preferences
+
+* typical filler of an argument slot of a verb (such as the typical killer)
+* our method is generalizable to [ tasks that require ] assigning 
+  semantic roles, logical metonymy, coercion ( Pustejovsky 1995) 
+* human judgments on a seven-point scale about the plausibility of nouns as
+* algorithm
+  * select a set of nouns that are highly associated with the verb via a subj/ob
+  * we project the vectors onto [the tr or intr subj of kill] subspace where
+  * measure the length of the noun vectors in this subspace, and pick the top n
+    longest ones as prototypical subjects of the verb.  The 
+  * same operation is performed for the object relation.  In our experiments,
+  * We normalize and sum the vectors (in the [orig] space) of the picked nouns,
+    to obtain a centroid that represents an abstract “subject prototype” for
+  * plausibility of ... is then measured by the cosine of the noun vector to
+    the subject (object) centroid in 
+  * [this provides] plausibility scores for nouns that do not co-occur with V
+    e.g.  The corpus may contain neither eat topinambur nor eat sympathy, but
+    the topinambur vector will likely be closer to the prototypical eat object
+* method is essentially the same as the one proposed by Padó+ (2007), Erk (07).
+  * they treat the identification of typical fillers using different resources
+* we measure performance by the Spearman ρ correlation coefficient between
+* advantage resides in versatility 
+  * D M models perform very well in tasks involving attributional similarity.
+  * The performance of unstructured D S Ms  is also high, sometimes even better
+  * D M model also [ brilliant ] in capturing selectional preferences, a task
+    * not directly addressable by unstructured D S Ms.  This fact suggests that
+
 ## 6.2 The W 1 W 2 ×L Space 27
 
 ## 6.3 The W 1 L×W 2 Space 34
