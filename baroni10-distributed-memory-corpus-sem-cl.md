@@ -2,131 +2,199 @@ Marco Baroni, Alessandro Lenci
 Distributional Memory: A General Framework for Corpus-Based Semantics
 Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 
-* we make our  publicly available from http://clic.cimec.unitn.it/dm. The site
+* we make publicly available from http://clic.cimec.unitn.it/dm
   * best DM model (TypeDM)
   * Perl scripts that perform the basic operations on the tensor and its
     derived vectors
 
 # Abstract
 
-* “one task, one model” approach, the Distributional Memory framework
+* alternative to the “one task, one model” approach, the Distributional Memory
   * extracts ... set of weighted word-link-word tuples
     arranged into a third-order tensor
   * Different matrices are then generated from the tensor, and
-    their rows and columns constitute natural spaces to [for sem problems]
+    their rows and columns constitute natural spaces [for semantic problems]
 * e.g. similarity judgments, synonyms, concept categorization,
   selectional preferences of verbs, analogy problems,
   classifying relations between word pairs,
   harvesting qualia structures with patterns or example pairs,
-  typical properties of concepts, verbs alternation classes
-* Extensive empirical testing in all these domains shows that a Distributional
+  typical properties of concepts, verb alternation classes
+* Extensive empirical testing in all these domains
 
 # 1 Introduction
 
-* distributional hypothesis (Harris 1954; Miller and Charles 1991), stating
+* distributional hypothesis (Harris 1954; Miller and Charles 1991)
   * the degree of semantic similarity between two words (or other units)
     [is] a function of the degree of overlap among their linguistic contexts
-  * the format of distributional representations greatly varies depending on
-    the specific aspects of meaning they are designed to model
+  * the format of distributional representations greatly varies
+    depending on the specific aspects of meaning they are designed to model
 * Turney (2006b) calls
-  * attributional similarity, which encompasses standard
+  * attributional similarity
     * taxonomic semantic relations such as synonymy, co-hyponymy, and hypernymy
-    * Words like dog and puppy, for example, are attributionally similar in the
+    * Words like dog and puppy, for example, are attributionally similar
     * their meanings share a large number of attributes:
       They are animals, they bark, and so on
   * relational similarity
     * the property shared by pairs of words (e.g, dog–animal and car–vehicle)
       linked by similar semantic relations (e.g., hypernymy)
     * despite [that the words in the pairs are not] attributionally similar
-      (e.g., dog is not attributionally similar to car, nor is animal to vehic)
-    * Turney [represents pairs] in the space of the patterns that connect them
-      in the corpus
+      (e.g., dog is not similar to car, nor is animal to vehicle)
+    * Turney [represents pairs] in the space of the 
+      patterns that connect them in the corpus
     * Turney ... solving analogies and harvesting instances of relations
     * relation extraction algorithms
       (Hearst 1992, 1998; Girju, Badulescu, and Moldovan 2006;
       Pantel and Pennacchiotti 2006)
       also rely on relational similarity, and focus on
       learning one relation type at a time (e.g., finding parts)
-* cognitive science and linguistics ... typically represent concepts as
-  clusters of properties (Jackendoff 1990; Murphy 2002)
+* cognitive science and linguistics ... typically represent 
+  concepts as clusters of properties (Jackendoff 1990; Murphy 2002)
   * noun properties known ... as qualia roles (Pustejovsky 1995), and
     * Cimiano and Wenderoth (2007) identify e.g. the constitutive parts
   * verb selectional preferences (Erk 2007),
-    * productive semantic phenomena: unseen arguments
-      (eating topinambur = csicsóka)
+    * productive semantic phenomena (eating topinambur = csicsóka)
   * argument alternations
     (Merlo and Stevenson 2001; Joanis, Stevenson, and James 2008),
   * event types (Zarcone and Lenci 2008), and so forth
-  * “topical” relatedness between words: They might find, for example, a
+  * “topical” relatedness between words
     * e.g. relation between dog and fidelity
-    * Topical relatedness, addressed by DSMs based on document distributions
+    * Topical relatedness, addressed by DSMs based on _document_ distributions
       such as LSA (Landauer and Dumais 1997) and
       Topic Models (Griffiths, Steyvers, and Tenenbaum 2007), is
       not further discussed in this article
 * applications in computational lexicography, especially for
   * automatic thesaurus construction (.. Kilgarriff+ 2004; Rapp 2004)
-  * lexical semanticists[, provide synonymy] with a more robust empirical
+  * lexical semanticists[, provide synonymy] with more robust empirics
   * semi-automatic bootstrapping or extension of terminological repositories,
     computational lexicons (e.g., WordNet), and ontologies (.. Lenci 2010)
 * in linguistics, for instance in the study of
   * semantic change (Sagi, Kaufmann, and Clark 2009),
-  * lexical variation (Peirsman and Speelman 2009), and for the analysis of
+  * lexical variation (Peirsman and Speelman 2009), and
   * multiword expressions (Alishahi and Stevenson 2008)
 * [large differences between DSMs]
   * corpus-based models hold promise as large-scale simulations of
     how humans acquire and use conceptual and linguistic information
     (Landauer and Dumais 1997)
-  * cognitive (neuro)science is that humans resort to a single semantic memory,
-    a relatively stable long-term knowledge database,
+  * cognitive (neuro)science: humans resort to a single 
+    semantic memory, a relatively stable long-term knowledge database,
     adapting the information stored there to the various tasks at hand
     (Murphy 2002; Rogers and McClelland 2004)
-  * [positive example:] WordNet (Fellbaum 1998), a single, general purpose
-    network of semantic information that has been adapted to all sorts of
-    tasks, many of them certainly not envisaged by the resource creators
+  * [positive example:] WordNet (Fellbaum 1998), 
+    a single, general purpose network of semantic information that 
+    has been adapted to all sorts of tasks, 
+    many of them certainly not envisaged by the resource creators
 * we believe that the lack of generalization in corpus-based semantics stems
   from the choice of representing co-occurrence statistics directly as
   matrices [i.e.] binary relations between target items and their contexts
   * DM represents corpus-extracted co-occurrences as a third-order tensor, a
-  * word– link–word tuples. Matrices are then generated from the tensor
+  * word–link–word tuples. Matrices are then generated from the tensor
 
 # 2. Modeling Co-occurrence in Distributional Semantics 4
 
-* unstructured DSMs: not use the linguistic structure of texts to compute
+* unstructured DSMs: not use the linguistic structure of texts
 * structured DSMs, co-occurrence statistics are ...  corpus-derived triples:
-  * e.g.,
     * word pairs and the
       * parser-extracted syntactic relation or
       * lexico-syntactic pattern that links them (..Rothenhäusler & Schütze 09)
-    * Sketch Engine “word sketches”: two words linked by a grammatical relation
-      (Kilgarriff+ 2004). The number of shared triples is then used to measure
-      the attributional similarity between word pairs
-  * more sparse (because there are more triples than pairs). What little
+      * Sketch Engine “word sketches”: two words linked by a grammatical rel
+        (Kilgarriff+ 2004). 
+        The number of shared triples is used to measure the attributional sim
+  * more sparse (because there are more triples than pairs)
 * DM is built upon the structured DSM idea
 * Structured DSMs extract a much richer array of distributional information
   * but they still represent it [as] two-way matrix,
     either by dropping one element from the tuple (Padó and Lapata 2007) or,
-    more commonly, by concatenating two elements. The two words can be
-* debate in DSMs has so far
-  * context choice—for example, lexical collocates vs. documents (Sahlgren
-    2006; Turney and Pantel 2010)
+    more commonly, by concatenating two elements
+* debate in DSMs so far
+  * context choice
+    e.g. lexical collocates vs. documents (Sahlgren 2006; Turney & Pantel 2010)
   * structured contexts (Padó and Lapata 2007; Rothenhäusler and Schütze 2009)
-* DM: the core geometrical structure ... is a three-way object, namely a
-  * semantic spaces are then generated [through] tensor matricization, mapping
+* DM: the core geometrical structure ... is a three-way object
+  * semantic spaces are then generated [through] tensor matricization
     * produces both familiar spaces, similar to those commonly used ... and
       other less known distributional spaces, which will yet prove useful
     * all these different semantic spaces are now alternative views of the same
-      underlying distributional ... distributional memory, harvested only once
-    turned into a general purpose resource for semantic modeling
+      underlying ... distributional memory, harvested only once from the corpus
+    * turned into a general purpose resource for semantic modeling
   * allows distributional information to be represented in a [symbolic] way
-    * similar to other types of knowledge
-    * In linguistics, cognitive science, and AI,
-      semantic and conceptual knowledge is represented in terms of
-      symbolic structures built around typed relations between elements
+    * similar to other types of knowledge in linguistics, cog science, and AI,
+      * semantic and conceptual knowledge is represented in terms of 
+        symbolic structures built around typed relations between elements
       * synsets, concepts, properties, and so forth: customary in lex
 
 # 3 The Distributional Memory framework 6
 
-TODO
+## 3.1 Weighted Tuple Structures
+
+* weighted distributional tuples that 
+  * encode ... typed co-occurrence relations among words. Let W 1 and W 2 be
+  * L is a set of strings representing syntagmatic co-occurrence links between
+    words in a text. T ⊆ W 1 × L × W 2 is a set of corpus-derived tuples t =  w
+  * e.g. `<marine, use, bomb>`  encodes [a] piece of distributional information
+  * _use_ specifies the type of the syntagmatic link between [the two] words.
+* In this article, we make the further assumption that W 1 = W 2 . This is a
+* we enforce an inverse link constraint such that for any link l in L,
+* matricization process described in Section 3.3 to 
+  generate exactly four distinct vector spaces that, as we discuss there, are
+* See Section 6.6 of Turney (2006b) for a discussion of similar assumptions.
+  Turney, Peter (CL 2006) Similarity of semantic relations
+* in the general formalism, 
+  * W 2 could be a larger set of “relata” including 
+    documents, morphological features, or even visual features
+  * inverse link constraint might not be appropriate, for example, if 
+    * asymmetric association measure, or if 
+    * we are only interested in one direction of certain grammatical relations.
+
+## 3.2 Labeled tensors 8
+
+* a fiber [in higher order tensors] is obtained by fixing the values of all
+  indices but one
+  * A mode-n fiber is a fiber where only the n-th index has not been fixed. For
+
+## 3.3 Labeled tensor matricization 9
+
+* The simplest case is mode-n matricization, which 
+  * Kolda 09: In this review, we consider only the special case of mode-n
+    matricization because it is the only form relevant to our discussion. A
+    more general treatment of matricization can be found in Kolda [134].
+    * [134] TG Kolda , Multilinear Operators for Higher-Order Decompositions,
+      2006 Tech. Report SAND2006-2081, Sandia National Laboratories
+  * arranges the mode-n fibers to be the columns of the resulting matrix (where
+* In DM, matricization is applied to [get] matrices whose row and column vector
+  spaces correspond to the linguistic objects we want to study; that is, the
+  * outcome of matricization must be labeled matrices. Therefore, 
+  * we must ... determine the labels of the [fibre] index
+  * use the [tuple] formed by the labels of the [N-1] index elements that are
+    fixed.  Specifically, each mode-n fiber of a tensor X λ is labeled with the
+* Under the assumption that W 1 = W 2 and the inverse link constraint, 
+  matricizing the [labeled third-order tensor X λ yields only] the following
+  four distinct semantic vector spaces:
+  * word by link–word (W 1 × LW 2 )
+    * words x features such as  use, gun  or  own, book  
+    * we can measure the similarity of words to each other, in order to tackle
+      attributional similarity tasks such as 
+      synonym detection or concept categorization
+  * word–word by link (W 1 W 2 × L)
+    * represent word pairs in a space whose dimensions are links, and it can be
+      used to measure relational similarity among different pairs
+    * vector of /sergeant, gun/ is highly similar to that of /teacher, book/
+  * The other two [spaces] look less familiar, [but subsume] interesting sem
+  * word–link by word (W 1 L × W 2 )
+    * capture different verb classes based on the argument alternations
+    * We will show in Section 6.3 how
+    * e.g. the object slot of kill is similar to the subject slot of die
+    * generalizing from similar observations, that [this slot] is a theme
+  * link by word–word (L × W 1 W 2 ) 
+    * The usefulness of this will of course depend on what the links are
+    * We will illustrate in Section 6.4 one function of this space, namely, to
+    * feature selection: picking links that can then be used to determine a
+      meaningful subspace of the W 1 W 2 × L space.  
+* possible uses we can make of the labeled tensor. In 
+  * Direct matricization [above]
+  * Section 6.5: smoothing through tensor decomposition. Other possibilities,
+  * graph-based algorithms operating ... on the graph defined by the tensor
+    (Baroni and Lenci 2009), or 
+  * deriving unstructured semantic spaces ... by removing one of the indices,
 
 # 4 Related work 12
 
@@ -169,7 +237,7 @@ TODO
 
 * we experiment with three different DM models, corresponding to different ways
   * All models are based on ... word–link–word tuples from a dependency parse
-* corpus ... contains about 2.83 billion tokens <- ukWaC, Wikipedia, etc
+* corpus ... contains about 2.83 billion tokens <~ ukWaC, Wikipedia, etc
 * approximately the top 20,000 most frequent nouns and top 5,000 Vs and ADJs
   * augmenting the list with lemmas that we found in [the] standard test sets,
 
@@ -246,7 +314,22 @@ TODO
 
 # 6 Sem Experiments 18
 
-TODO
+* alternatives are conceivable [with respect to space selection and operations]
+  * Turney (2008) models synonymy detection with a DSM that closely resembles
+    our W 1 W 2 × L space, whereas we tackle this task under the more standard
+    W 1 × L W 2 view.  It is an open question whether there are principled ways
+* Most experiments report global (micro-averaged) test set accuracy (alone, or
+  combined with other measures) to assess the performance of the algorithms.
+
+## 6.1 The W 1 ×LW 2 Space 20
+
+## 6.2 The W 1 W 2 ×L Space 27
+
+## 6.3 The W 1 L×W 2 Space 34
+
+## 6.4 The L×W 1 W 2 Space 37
+
+## 6.5 Smoothing by Tensor Decomposition 39
 
 # 7 Conclusion 41
 
