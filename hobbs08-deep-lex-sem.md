@@ -87,8 +87,8 @@ we have
   * Set Theory
     * in a standard fashion,
   * Composite Entities
-    * The predicate `partOf` is a very broad notion covering among other
-      relations the componentOf relation
+    * The predicate `partOf` is a very broad notion 
+      covering among other relations the componentOf relation
     * the figure-ground relation `at`
   * Scales
     * partial orderings[,] monotone ... functions, the construction of

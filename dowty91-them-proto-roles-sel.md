@@ -1,5 +1,5 @@
-Thematic Proto-Roles and Argument Selection
 David Dowty
+Thematic Proto-Roles and Argument Selection
 Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
 
 * argument selection:
