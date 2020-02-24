@@ -10,10 +10,10 @@ EMNLP 2019
     massive computational overhead: Finding the most similar pair in a
   * unsuitable for semantic similarity search as well as for ... clustering
 * we present Sentence-BERT (SBERT), a modification of the pretrained BERT
-  * use siamese and triplet network structures to derive semantically
+  * use siamese and triplet network structures
   * sentence embeddings that can be compared using cosine-similarity
   * time complexity [of] finding the most similar pair
-    from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while
+    from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT
   * evaluate SBERT and SRoBERTa on common STS tasks and transfer learning
     * outperforms other SOTA sentence embeddings methods
 
@@ -33,26 +33,26 @@ EMNLP 2019
   * SentEval (Conneau and Kiela, 2018), an evaluation toolkit for sentence
 * SBERT can be adapted to a specific task
   * new SOTA on a
-  * argument similarity dataset (Misra+ 2016) and
-  * distinguish sentences from different sections of a Wikipedia article
-    (Dor+ 2018)
+    * argument similarity dataset (Misra+ 2016) and
+    * distinguish sentences from different sections of a Wikipedia article
+      (Dor+ 2018)
 
 # 2 Related work
 
 BERT, then, we discuss stateof-the-art sentence embedding methods
 
-* BERT (Devlin+ 2018) is a pre-trained transformer network (Vaswani+ 2017), which
-set for various NLP tasks new SOTA results, including question
-answering, sentence classification, and sentence-pair regression. The
+* BERT (Devlin+ 2018) is a pre-trained transformer network (Vaswani+ 2017),
+  which set for various NLP tasks new SOTA results, including question
+  answering, sentence classification, and sentence-pair regression. The
   * input for BERT for sentence-pair regression consists of the two sentences,
     separated by a special [SEP] token. Multi-head attention over 12
     (base-model) or 24 layers (large-model) is applied and the
   * output is passed to a simple regression function to derive the final label
   * new SOTA on the Semantic Textual Semilarity (STS) benchmark (Cer+ 2017)
-* RoBERTa (Liu+ 2019) showed, that the performance of BERT can further improved
-  by small adaptations to the pre-training process. We also tested
-* XLNet (Yang+ 2019) led in general to worse results than BERT [in these tasks]
-* derive sentence embeddings from BERT. To bypass this limitations, researchers
+  * RoBERTa (Liu+ 2019) showed, that the performance of BERT can further
+    improved by small adaptations to the pre-training process. We also tested
+  * XLNet (Yang+ 2019) led ... to worse results than BERT [in these tasks]
+* derive sentence embeddings from BERT. To bypass this limitations
   * averaging the outputs (similar to average word embeddings) or by using the
   * CLS token
     * (for example: May+ (2019); Zhang+ (2019); Qiao+ (2019))
@@ -69,7 +69,7 @@ answering, sentence classification, and sentence-pair regression. The
   * Universal Sentence Encoder (Cer+ 2018) trains a transformer network and
     augments unsupervised learning with training on SNLI
   * the task on which sentence embeddings are trained significantly impacts
-    their quality (Hill+ 2016). Previous work  found
+    their quality (Hill+ 2016)
   * the SNLI datasets are suitable for training sentence embeddings
     (Conneau+ 2017; Cer+ 2018)
   * Yang+ (2018) ... train on conversations from Reddit
@@ -80,16 +80,36 @@ answering, sentence classification, and sentence-pair regression. The
     context vectors and precomputed candidate embeddings using attention
     * the score function is not symmetric and the
     * computational overhead is too large for use-cases like clustering, which
-* we use the pre-trained BERT and RoBERTa network and only fine-tune it to
+* we use the pre-trained BERT and RoBERTa network and only fine-tune it
   * less than 20 minutes, while yielding better results than comparable methods
 
-# 3 SBERT,
+# 3 SBERT
 
-# 4 evaluates on common STS tasks and Argument Facet Similarity (AFS) corpus
+# 4 evaluates on common STS tasks and Argument Facet Similarity (AFS) corpus 4
 
-# 5 evaluates SBERT on SentEval
+# 5 evaluates SBERT on SentEval 6
 
-# 6 ablation study to test some design aspect of SBERT
+# 6 ablation study to test some design aspect of SBERT 7
+
+* pooling strategies (MEAN, MAX, and CLS). 
+* For the classification objective function, we evaluate different concat
+  10 different random seeds and average the performances.
+  * we only report scores with MEAN pooling strategy.  
+  * pooling strategy has a rather minor impact. 
+  * The impact of the concatenation mode is much larger. 
+    * InferSent (Conneauet+ 2017) and Universal Sentence Encoder (Cer+ 2018)
+      both use (u, v, |u − v|, u ∗ v) as input for a softmax classifier.
+    * However, in our architecture, adding the element-wise u ∗ v decreased the
+      performance.
+    * The most important component is the elementwise difference |u − v|. Note,
+  * At inference, when predicting similarities for the STS benchmark dataset,
+    only the sentence embeddings u and v are used in combination with
+    cosine-similarity. The element-wise difference measures the distance
+* When trained with the regression objective function, we observe that the
+  pooling strategy has a large impact. There, the 
+  * MAX strategy perform significantly worse than MEAN or CLS-token strategy.
+  * in contrast to (Conneau+ 2017), who found it beneficial for the
+    BiLSTM-layer of InferSent to use MAX instead of MEAN pooling.
 
 # 7 computational efficiency
 
