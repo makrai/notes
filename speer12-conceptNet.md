@@ -14,7 +14,7 @@ and accuracy
 
 * words and common phrases in any written human language
 * an open domain of predicates `AtLocation(jazz, new orleans)`
-* hisotry
+* history
   * originated as a representation for the knowledge collected by the _Open
     Mind Common Sense_ project (Singh+ 2002), which uses a long-running
     interactive Web site to collect new statements from visitors to the site,
