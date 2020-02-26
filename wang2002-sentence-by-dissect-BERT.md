@@ -6,19 +6,19 @@ Our codes are publicly available at the Github
 
 # Abstract
 
-* generate a high quality sentence representation from BERTbased word models
-* different layers of BERT capture different linguistic properties. This allows
-* fusion information across layers to find better sentence representation. In
+* generate a high quality sentence representation from BERT-based word models
+* different layers of BERT capture different linguistic properties
+* fusion information across layers to find better sentence representation
 * we study the layer-wise pattern of the word representation of deep contextlzd
   * dissecting BERT-based word models through geometric analysis of the space
-  * No further training is required in SBERTWK. We
+  * No further training is required in SBERT-WK
 * evaluate SBERT-WK on semantic textual similarity and downstream supervised
-* ten sentencelevel probing tasks are presented for detailed linguistic
+* ten sentence-level probing tasks are presented for detailed linguistic
 
 # 1 Introduction
 
 * As reported in [8] and [9], different layers of BERT learns different levels
-  * intermediate layers encode the most transferable features, representation
+  * intermediate layers encode the most transferable features
   * higher layers are more expressive in high-level semantic information
   * information fusion across layers has its potential
 * we: experiments on patterns of the isolated word representation across layers
@@ -31,18 +31,18 @@ Our codes are publicly available at the Github
   * a common ... approach based on BERT-based models is to average the
     representations obtained from the last layer or using the CLS token
     * both are sub-optimal as shown in the experimental section of this paper
-  * sentence embedding using pre-trained BERT, called Sentence-BERT [11]. It
+  * sentence embedding using pre-trained BERT, called Sentence-BERT [11]
     * leverages further training with high-quality labeled sentence pairs
   * unsupervised learning of sentence encoders, e.g., SkipThought [12] and
-    FastSent [13], build self-supervision from a large unlabeled corpus. Yet,
-  * supervision: InferSent [14] shows that training on high quality labeled data,
+    FastSent [13], build self-supervision from a large unlabeled corpus
+  * supervision: InferSent [14] shows that training on high quality label[s]
     e.g., the Stanford Natural Language Inference (SNLI) dataset, can
-    consistently outperform unsupervised training objectives.  Recently,
-  * USE [15] incorporates both supervised and unsupervised training objectives on
-    the Transformer architecture. The method in [16] is trained in a
+    consistently outperform unsupervised training objectives
+  * USE [15] incorporates both supervised and unsupervised training objectives
+    on the Transformer architecture. The method in [16] is trained in a
     multi-tasking manner so as to combine inductive biases of diverse training
     objectives.  However,
-  * multi-tasking learning for sentence embedding is still under development, and
+  * multi-tasking learning for sentence embedding is still under development,
     * selecting supervised tasks and handling interactions between tasks
 * we investigate sentence embedding by studying the geometric structure of deep
   * new method by dissecting BERT-based word models

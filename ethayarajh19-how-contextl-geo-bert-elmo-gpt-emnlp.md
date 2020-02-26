@@ -20,12 +20,12 @@ EMNLP 2019
 * [our] findings:
   * In all layers of all three models, the contextualized word representations
     of all words are not isotropic: they are
-    * not uniformly distributed with respect to direction. Instead, they are
-    * occupying a narrow cone in the vector space. The anisotropy
+    * not uniformly distributed with respect to direction. Instead, they
+    * occupying a narrow cone in the vector space
     * in GPT-2’s last layer, two random words will on average have almost
       perfect cosine similarity!
     * isotropy has both theoretical and empirical benefits for static
-      embeddings (Mu+ 2018), the extent of anisotropy in contextualized
+      embeddings (Mu+ 2018)
   * upper layers of contextualizing models produce more context-specific
     * Occurrences of the same word in different contexts are more dissimilar
       [in cosine similarity] to each other in upper layers
@@ -47,7 +47,7 @@ EMNLP 2019
 
 # 2 Related Work
 
-## Contextualized Word Representations Given the limitations of static word
+## Contextualized Word Representations
 
 * ELMo (Peters+ 2018), BERT (Devlin+ 2018), and GPT-2 (Radford+ 2019) are deep
   * ELMo ... by concatenating the internal states of a 2-layer biLSTM trained
@@ -65,10 +65,27 @@ EMNLP 2019
 
 # 3 Approach 3
 
+## 3.3 Measures of Contextuality
+
+* self-similarity, intra-sentence similarity, and maximum explainable variance.
+  * self-similarity of a word w in layer l is the average cosine similarity
+    between its contextualized representations across its n unique contexts.
+  * intra-sentence similarity of a sentence is the average cosine similarity
+    between its word representations and the sentence vector, which is just the
+    mean of those word vectors. This measure captures how context-specificity
+    * If IntraSim l (s) is high but SelfSim l (w) is low, this suggests a less
+      nuanced contextualization, where words in a sentence are contextualized
+      simply by making their representations converge in vector space.  
+  * the maximum explainable variance MEV l (w) is the proportion of variance in
+    w’s contextualized representations for a given layer that can be explained
+    by their first principal component.  It gives us 
+    * an upper bound on how well a static embedding could replace a word’s
+      contextualized representations.  The closer MEV l (w) is to 0, the poorer
+
 ## 3.4 Adjusting for Anisotropy 4
 
 * isotropy [is important] when discussing contextuality
-  * SelfSim ` (w) = 0.95 would suggest that w’s representations were poorly
+  * SelfSim l (w) = 0.95 would suggest that w’s representations were poorly
 * To adjust for the effect of anisotropy, we use three anisotropic baselines,
   one for each of our contextuality measures
   * for self-similarity and intra-sentence similarity,
@@ -76,8 +93,8 @@ EMNLP 2019
     between uniformly randomly sampled words from different contexts
   * For maximum explainable variance (MEV), the baseline is
     the proportion of variance in uniformly randomly sampled word reprs
-    that is explained by their first principal component. The more anisotropic
-* we calculate separate baselines for each layer as well
+    that is explained by their first principal component
+* we calculate separate baselines for each layer
   * We then subtract from each measure its respective baseline
 * references to contextuality measures in the rest of the paper refer to the
   anisotropy-adjusted measures
@@ -96,34 +113,32 @@ EMNLP 2019
 
 * Contextualized representations are anisotropic in all non-input layers
 * the greater the anisotropy, the narrower this cone (Mimno and Thompson, 2017)
-* almost all layers of BERT, ELMo and GPT-2, the representations of all words
-  * The only exception is ELMo’s input layer, which produces
+* almost all layers of BERT, ELMo and GPT-2
+  * The only exception is ELMo’s input layer, which [consists of]
     static character-level embeddings
-    without using contextual or even positional information (Peters+ 2018). It
+    without using contextual or even positional information (Peters+ 2018)
 * Contextualized representations are generally more anisotropic in higher lays
   * average cosine similarity between uniformly randomly words is
     * roughly 0.6 in layers 2 through 8 but
-    * increases exponentially from layers 8 through 12.  In fact, word
+    * increases exponentially from layers 8 through 12
   * representations in GPT-2’s last layer are so anisotropic that any two words
     have on average an almost perfect cosine similarity!
   * pattern holds for BERT and ELMo as well, though there are exceptions:
     e.g., the anisotropy in BERT’s penultimate layer is much higher than last
 * theoretical and empirical benefits for [isotropy in] static word embeddings
-  * theory, it allows for stronger “self-normalization” during training
-    (Arora+ 2017), and in
-  * practice, subtracting the mean vector from static embeddings leads to
+  * in theory, it allows for stronger “self-normalization” during training
+    (Arora+ 2017)
+  * in practice, subtracting the mean vector from static embeddings leads to
     improvements on several downstream NLP tasks (Mu+ 2018)
-* anisotropy is inherent to, or least a by-product of, the process of
-  contextualization
+* anisotropy is inherent to, or ... a by-product of, the process of contextlztn
 
 # 5 Future Work 9
 
-* anisotropy
-  * Mu+ (2018) found that making static embeddings more isotropic –
-    * by subtracting their mean from each embedding –
+* isotropy
+  * Mu+ (2018) found that making static embeddings more isotropic 
+    * – by subtracting their mean from each embedding –
     * leads to surprisingly large improvements in performance on downstream
-  * isotropy ... may also have benefits for contextualized word
-    representations,
+  * may also have benefits for contextualized word representations
     * anisotropy penalty to the language modelling objective
 * static word representations from contextualized ones
   * challenges to deploying large models such as BERT in production, 

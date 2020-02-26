@@ -32,7 +32,7 @@ EMNLP 2017 (best paper honorable mention)
   * as an approximation to a matrix factorization (Levy and Goldberg, 2014)
   * empirical effects of ... arbitrary-seeming algorithmic choices (Levy+ 15)
     * Omer Levy, Yoav Goldberg, and Ido Dagan. TACL 2015. 
-      Im proving ... similarity with lessons learned from word embeddings
+      Improving ... similarity with lessons learned from word embeddings
 * we find that the SGNS objective results in
   * vectors that are narrowly clustered in a single orthant
   * can be made non-negative without significant loss
@@ -49,27 +49,61 @@ EMNLP 2017 (best paper honorable mention)
     both with K = 50 dim, a vocabulary of ≈ 70k ..., and context window 5
   * then evaluate sensitivity to negative samples, window size, and dimension
 * Embeddings are sensitive to word frequency (Hellrich and Hahn, 2016)
-* Interactions between infrequent terms are rare, no matter how large the
-  corpus
-* We define four categories of words by ranked frequency: the top 100 words
-  (ultra-high frequency), the 100–500th ranked words (high frequency), the
-  500–5000th ranked words (moderate frequency) and the remaining (low
-  frequency) words
+* Interactions between infrequent terms are rare, 
+  no matter how large the corpus
+* We define four categories of words by ranked frequency: the 
+  top 100 words (ultra-high frequency), the 
+  100–500th ranked words (high frequency), 
+  the 500–5000th ranked words (moderate frequency) and the 
+  remaining (low frequency) words
+
+## SGNS vectors are arranged along a primary axis. Our first observation is
+
 * All vectors have a large, positive inner product with the mean, indicating
-  * with the exception of the rare words, which have slightly less positive
-    inner products
+  * with the exception of the rare words, 
+    which have slightly less positive inner products
   * the vectors trained by GloVe show a clear relationship with word frequency,
     with low-frequency words opposing the frequency-balanced mean vector
+* After normalizing 
+  * SGNS vectors to length 1.0, 
+  the lowest and highest frequency words are most similar to the mean vector,
+  with the moderate-frequency words showing the greatest deviation.
+  * Normalization does not change the relative order for GloVe vectors.
 
-    TODO
+## SGNS vectors point away from context vectors.
+
+## SGNS vectors are mostly non-negative. Not
+
+## SGNS context vectors point away from the word vectors. What then is the
+
+## Positive and negative weights come to equilibrium. Eq. 1 balances two
+
+## Effect of window size 
+
+* Both SGNS and GloVe operate over word co-occurrences within a sliding window
+* window size parameter has an effect on the semantics of vectors, so it is
+* each pair is weighted 
+  * linearly by token distance in SGNS and 
+  * by 1/distance in GloVe. Figure 7 shows average inner products for each
+    frequency with the global mean vector for 10 trials each at window size 5,
+    10, 15, 20 with K = 50. 
+* Increasing window size leads to 
+  * greater divergence between high~ and low-frequency words for word and
+    context vectors, but does not change their pattern. 
+  * GloVe results are similarly unchanged.
+
+## Effect of vector [dimensionality]
+
+* increase in inner product with the global mean as we increase K (10 trials
+  * effect is small relative to that of the number of negative samples `S`
 
 # Conclusion
 
 * vectors lie on a narrow primary axis that is effectively non-negative
 * further work
-  * theoretical reasons why the observed concentration ... not appear to affect
+  * theoretical reasons why the observed concentration [not] affect
     performance relative to algorithms that do not have this property
 * measuring the interplay between positive and negative objectives
   may provide insight into algorithmic choices that are now poorly understood,
-  such as the effect of reducing the occurrence of frequent words in the corpus
-  and the sampling distribution of negative examples
+  * reducing the occurrence of frequent words in the corpus and the 
+  * sampling distribution of negative examples

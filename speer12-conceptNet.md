@@ -1,5 +1,5 @@
-Representing General Relational Knowledge in ConceptNet 5
 Robert Speer and Catherine Havasi
+Representing General Relational Knowledge in ConceptNet 5
 2012 LREC
 
 # Abstract

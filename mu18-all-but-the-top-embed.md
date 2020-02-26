@@ -24,20 +24,19 @@ ICLR, 2018
     representation of the cooccurrence statistics
 * performance of several of the recent methods is roughly
   similar on a variety of intrinsic and extrinsic evaluation testbeds
-* Every representation we tested, in many languages, has the following props
-  * The word representations have non-zero mean – indeed, word vectors share a
+* Every representation we tested, in many languages, has the following proprtys
+  * The word representations have non-zero mean
     large common vector (with norm up to a half of the average norm of a word)
-  * After removing the common mean vector, the representations are far from
-    isotropic – indeed, much of the energy of most word vectors is contained in
-    a very low dimensional subspace (say, 8 dimensions out of 300)
+  * After removing the mean vector, the representations are far from isotropic
+    * much of the energy of most word vectors is contained in say, 8 dimensions
 * eliminate [the common vector and the dominating direction] by:
   * removing the nonzero mean vector from all word vectors,
   * projecting the representations away from the dominating D [db] directions,
   * [the number of dims to remove] D depends on the
     * representations (for example, the dimension of the representation, the
       training methods and their specific hyperparameters, the training corpus)
-    * and also depends on the downstream applications
-    * rule of thumb of choosing D around d/100, where d is the dimension of the
+    * downstream applications
+    * rule of thumb of choosing D around d/100, where d is the dimension
       * works uniformly well across languages, representations and test scenars
 * tasks:
   * word similarity task ... on seven different datasets, on average by 1.7%;
@@ -59,20 +58,20 @@ ICLR, 2018
     * performance ... improves on a majority of instances (34 out of 40) by a
       good margin (2.85% on average)
 
-## Related Work. Our work is directly related to word representation
+## Related Work
 
-* in NLP
+* directly related
   * centering the mean (Sahlgren+ 2016)  and
   * nulling away only the first principal component (Arora+ 2017))
     * Arora compute the principal component on the sentence level
-    * i.e. specific [to the] semantic textual similarity dataset, then extract
+    * i.e. specific [to the] semantic textual similarity dataset
     * our dominating vectors are over the entire vocabulary of the language
 * More generally, the idea of removing the top principal components
   * positive-valued, high-dimensional [>>300] data matrix analysis
     * Bullinaria & Levy (2012) posits that the PCA of the cooccurrence matrix
       are corrupted by information other than lexical semantics, thus
       heuristically justifying the removal of the top principal components. A
-    * [in] population matrix analysis (Price+ 2006): entries are all positive
+    * population matrix analysis (Price+ 2006): entries are all positive
 
 ## [End of Intro]
 
@@ -85,33 +84,67 @@ ICLR, 2018
 ## Angular Asymmetry of Representations
 
 * understanding of word representations involves either
-  * PMI-based: 
+  * PMI-based:
     word2vec (Mikolov+ 10; Levy & Goldberg, 14) and GloVe (Pennington+ 14)
     * probabilistic i.e. generative: Arora+ 2016
   * CCA-based spectral factorization approaches
     * have long been understood from a probabilistic (i.e., generative) view
       (Browne, 1979; Hotelling, 1936) and
     * recently in the NLP context (Stratos+ 2015), a corresponding effort for
-      the PMI-based methods has only recently been conducted in an inspired
-      work 
-* [if] the word vectors are angularly uniform (“isotropic"), 
+* [if] the word vectors are angularly uniform (“isotropic"),
   the family of PMI-based word representations can be explained under the
-  RAND-WALK model in terms of the maximum likelihood rule. Our observation that
+  RAND-WALK model in terms of the maximum likelihood rule
   * isotropy conditions are relaxed in Section 2.2 of (Arora+ 2016), but the
     match with the spectral properties observed in Figure 1 is not immediate
 * This contradiction is explicitly resloved by relaxing the constraints on the
-  word vectors to directly fit the observed spectral properties. The 
-  * relaxed conditions are: the word vectors should be isotropic around a point
+  word vectors to directly fit the observed spectral properties
+  * relaxed conditions: the word vectors should be isotropic around a point
     (whose distance to the origin is a small fraction of the average norm of
-    word vectors) lying on a low dimensional subspace. Our main result is to
+    word vectors) lying on a low dimensional subspace
   * [then] maximum likelihood rule continues to be close to the PMI-based
-    spectral factorization methods.  
+    spectral factorization methods
   * RAND-WALK, explored in detail in Appendix A: A brief summary and the
     mathematical connection between our work and theirs
+
+# 3 Experiments 6
+
+# 4 Postprocessing and supervised classification 8
+
+# 5 Conclusion 9
 
 # Appendix: All-but-the-Top: Simple and Effective postprocessing for Word
 
 ## A Angular asymmetry of representations
+
+* intro: same as in Section 2
+* Formally, the model, the original constraints of (Arora+ 2016) and the
+  enlarged constraints on the word vectors are listed below:
+  * A generative model of sentences: the word at time t, denoted by `w_t`, is
+    generated via a log-linear model with a latent discourse variable `c_t`
+    * `c_t` ... forms a “slowly moving" random walk,
+  * Constraints on the word vectors: (Arora+ 2016) suppose that there is a
+    Bayesian priori on the word vectors:
+  * Revised conditions: We revise the Bayesian prior postulate (and in a
+    * differs from the original one in two ways:
+      * it imposes a formal deterministic constraint on the word vectors;
+      * allows the word vectors to be angularly asymmetric:
+        as long as the energy in the direction of u 1 ,. . . ,u D is bounded,
+        there is no constraint on the coefficients. Indeed, note that there is
+        no constraint on ṽ(w) to be orthogonal to u 1 , . . . u D
+
+## Empirical Validation [of] that the enlarged conditions are met by [embeds]
+
+* u 1 . . . u D are the singular vectors associated with the top D singular
+  * D = 20 for WORD2VEC and D = 10 for GLOVE, and the corresponding value of
+    DA^2 for WORD2VEC and GLOVE vectors are both roughly 40, respectively; both
+    values are small compared to d = 300.  0.008 0.007 0.006 0.005 0.004 0.003
+* statistical isotropy of the “remaining" vectors ṽ(w) for words w in the
+  * plotting the remaining spectrum (i.e. the (D + 1)-th, ..., 300th singular
+
+## Mathematical Contribution: the main theorem in (Arora+ 2016) still holds
+
+* [the] relaxation on the geometry of word representations is empirically
+  satisfied by the vectors learnt as part of the maximum likelihood rule
 
 ## B Neural networks learn to postprocess 14
 
