@@ -31,7 +31,7 @@ Our codes are publicly available at the Github
   * a common ... approach based on BERT-based models is to average the
     representations obtained from the last layer or using the CLS token
     * both are sub-optimal as shown in the experimental section of this paper
-  * sentence embedding using pre-trained BERT, called Sentence-BERT [11]
+  * sentence embedding using pre-trained BERT, called Sentence-BERT (Reimers&) 
     * leverages further training with high-quality labeled sentence pairs
   * unsupervised learning of sentence encoders, e.g., SkipThought [12] and
     FastSent [13], build self-supervision from a large unlabeled corpus
@@ -40,21 +40,22 @@ Our codes are publicly available at the Github
     consistently outperform unsupervised training objectives
   * USE [15] incorporates both supervised and unsupervised training objectives
     on the Transformer architecture. The method in [16] is trained in a
-    multi-tasking manner so as to combine inductive biases of diverse training
-    objectives.  However,
+    multi-tasking manner so as to combine inductive biases of diverse objs
   * multi-tasking learning for sentence embedding is still under development,
-    * selecting supervised tasks and handling interactions between tasks
+    * selecting supervised tasks and handling interactions between them
 * we investigate sentence embedding by studying the geometric structure of deep
   * new method by dissecting BERT-based word models
   * inherits the strength of deep contextualized models
   * compatible with ... BERT [5] and SBERT [11]
 * contributions
   * evolution of isolated word representation patterns across layers
-    * highly correlated with word’s content. It provides useful insights into
+    * highly correlated with word’s content
   * eight downstream tasks and seven semantic textual similarity tasks, and
-    * SOTA performance.  Furthermore, we use sentence-level probing tasks to
+    * SOTA performance.  Furthermore, we use sentence-level probing tasks
 
 # 2 Related work
+
+## A. Contextualized Word Embedding
 
 * ELMo [4], GPT1 [7], GPT2 [17] and BERT [5] are pre-trained deep neural LMs
   * BERT-based models are dominating in leaderboards of language understanding
@@ -65,7 +66,7 @@ Our codes are publicly available at the Github
   * OpenAI GPT [7] incorporates a fine-tuning process when it is applied to
     downstream tasks
 
-B. Universal Sentence Embedding
+## B. Universal Sentence Embedding
 
 * Non-parameterized methods usually rely on high quality pretrained word embed
   * average word embedding results as the representation for a sentence
@@ -76,14 +77,14 @@ B. Universal Sentence Embedding
     * uSIF extends SIF by introducing an angular-distance-based random walk
       model.  No hyper-parameter tuning is needed in uSIF
     * GEM: weights from exploiting geometric analysis of the [word] space
-      ... with several hand-crafted measurements.  Instead of weighted
-      * p-mean [30] to concatenate the power means of word embeddings and fuses
-        different word embedding models so as to shorten the performance gap
-        between non-parameterized and parameterized models
-* Parameterized models are more complex, and they usualy perform better than
-  * skipthought model [12] extends the unsupervised training of word2vec [1]
-    from the word level to the sentence level. It adopts the encoder-decoder
-    architecture to learn the sentence encoder
+      ... with several hand-crafted measurements
+      * p-mean [30] to concatenate the power means of word embeddings and 
+        fuses different word embedding models 
+        to shorten the performance gap between non-parameterized and parameterd
+* Parameterized models are more complex, and they usualy perform better
+  * skipthought sentence encoder [12] 
+    * extends the unsupervised training of word2vec [1] to the sentence level.
+    * adopts the encoder-decoder architecture
   * InferSent [14] employs bi-directional LSTM with supervised training. It
     trains the model to predict the entailment or contradiction of sentence
     pairs with the Stanford Natural Language Inference (SNLI) dataset. It
@@ -91,8 +92,8 @@ B. Universal Sentence Embedding
   * USE (Universal Sentence Encoder) method [15] extends the InferSent model by
     * Transformer architecture with unsupervised as well as supervised training
   * multiple objectives in sentence embedding can provide better [16, 31]
-  * SBERT method [11] is the only parameterized sentence embedding model on BERT
-    * similar [to] InferSent [14]. It uses the Siamese network on top of the BERT
+  * SBERT method [11]: the only parameterized sentence embedding model on BERT
+    * similar [to] InferSent [14]. It uses the Siamese network on top of BERT
     * fine-tunes it based on high quality sentence inference data (e.g. SNLI)
     * [no] clear objective function
 * we combine the advantage of both parameterized and non-parameterized methods
@@ -107,19 +108,18 @@ B. Universal Sentence Embedding
   * Independent Component Analysis (ICA) and
   * Canonical Correlation Analysis (CCA).  Subspace analysis has solid
   * to explain ... the internal states of Deep Neural Networks [32], [33], [34]
-* Subspace analysis ... in post-processing and evaluation of word embeddings
-  [37], [38], [39].  3
+* in post-processing and evaluation of word embeddings [37], [38], [39].  
 * subspace analysis in sentence embedding
   * SCDV [40] determines the sentence/document vector
     by splitting words into clusters and analyzing them accordingly
   * GEM [29] models the sentence generation process as a Gram-Schmidt procedure
-    and expands the subspace formed by word vectors gradually. Both
+    and expands the subspace formed by word vectors gradually
   * DCT [41] and EigenSent [42] map a sentence matrix into the spectral space
     and model the high-order dynamics of a sentence from a signal processing
     perspective
-  * [so far] on static word embedding methods. To the best of our knowledge,
-* [we] subspace analysis to find generic sentence embeddings based on deep
-  contextualized word models. We will show in this work that
+  * [so far] on static word embedding methods
+* [we:] subspace analysis to find generic sentence embeddings 
+  based on deep contextualized word models
   * SBERT-WK can consistently outperform SOTA methods with low compute
     and good interpretability, which is attributed to
     high transparency and efficiency of subspace analysis
@@ -138,19 +138,19 @@ by examining [their] alignment and novelty properties
 
 ## C. Computational Complexity
 
-# 5 Evaluated with respect to various tasks
+# 5 Evaluated
 
 * goal is to obtain a general purpose sentence embedding method, we evaluate
-  * Semantic textual similarity tasks.  They predict the similarity between two
+  * Semantic textual similarity tasks
     * [relevant for] clustering and information retrieval via semantic search
   * Supervised downstream tasks.  They measure embedding’s transfer capability
     * including entailment and sentiment classification
-  * Probing tasks.  They are proposed in recent years to measure the lin-
-* SentEval toolkit [44] is used in all experiments. The proposed
-* Here, we evaluate it on top of two models: SBERT 3 and XLNET 4 . The latter
-  * XLNET is the XLNET pre-trained model obtained from the Transformer Repo
+  * Probing tasks [to measure the linguistic features] and provide fine-grained
+* SentEval toolkit [44] is used in all experiments
+* SBERTWK method can be built upon ... BERT, SBERT, RoBERTa and XLNET
+  * Here, we evaluate it on top of two models: SBERT and XLNET
+  * XLNET pre-trained model obtained from the Transformer Repo
   * We adopt their base models that contain 12 self-attention layers
-  * SBERTWK method can be built upon ... BERT, SBERT, RoBERTa and XLNET
 * we compare SBERT-WK with the following 10 different methods,
   * including parameterized and non-parameterized models
   1. Average of GloVe word embeddings;
@@ -169,10 +169,8 @@ by examining [their] alignment and novelty properties
 
 # 6 Concluding remarks and future work directions
 
-* SBERT-WK, by dissecting deep contextualized models, leveraging the diverse
-  * demands no further training. Evaluation was conducted on a wide range of
 * [future] research topics in the 
   * subspace analysis in the deep contextualized models to regulate the
-    training **or** fine-tuning process.  This representation might yield even
+    training or fine-tuning process
   * understand deep contextualized neural models through subspace analysis
     * Theoretical analysis ... could be the key in revealing the myth
