@@ -13,7 +13,7 @@ Our codes are publicly available at the Github
   * dissecting BERT-based word models through geometric analysis of the space
   * No further training is required in SBERT-WK
 * evaluate SBERT-WK on semantic textual similarity and downstream supervised
-* ten sentence-level probing tasks are presented for detailed linguistic
+* ten sentence-level probing tasks are presented for detailed linguistic[s]
 
 # 1 Introduction
 
@@ -22,9 +22,8 @@ Our codes are publicly available at the Github
   * higher layers are more expressive in high-level semantic information
   * information fusion across layers has its potential
 * we: experiments on patterns of the isolated word representation across layers
-  * Words of richer information in a sentence have higher variation in their
-    representations, while
-    the token representation changes gradually, across layers
+  * Words of richer information ... have higher variation in their repr, while
+  * the token representation changes gradually, across layers
   * This finding helps define
     “salient” word representations and informative words [for] sentence embed
 * sentence embedding method, which transforms a sentence to a vector
@@ -36,8 +35,8 @@ Our codes are publicly available at the Github
   * unsupervised learning of sentence encoders, e.g., SkipThought [12] and
     FastSent [13], build self-supervision from a large unlabeled corpus
   * supervision: InferSent [14] shows that training on high quality label[s]
-    e.g., the Stanford Natural Language Inference (SNLI) dataset, can
-    consistently outperform unsupervised training objectives
+    can consistently outperform unsupervised training objectives
+    * e.g., the Stanford Natural Language Inference (SNLI) dataset
   * USE [15] incorporates both supervised and unsupervised training objectives
     on the Transformer architecture. The method in [16] is trained in a
     multi-tasking manner so as to combine inductive biases of diverse objs
@@ -138,9 +137,9 @@ by examining [their] alignment and novelty properties
 
 ## C. Computational Complexity
 
-# 5 Evaluated
+# 5 Evaluation
 
-* goal is to obtain a general purpose sentence embedding method, we evaluate
+* goal is to obtain a general purpose sentence embedding method, we evaluate on
   * Semantic textual similarity tasks
     * [relevant for] clustering and information retrieval via semantic search
   * Supervised downstream tasks.  They measure embedding’s transfer capability
