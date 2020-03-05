@@ -13,9 +13,9 @@ arXiv:1802.03426 [stat.ML]
 
 * two categories of Dimension reduction algorithms
   * preserve the [global/local] distance structure within the data and those
-  * global: PCA [22], MDS [23], and Sammon mapping [41] fall into the former
+  * global: PCA [22], MDS [23], and Sammon mapping [41]
   * local: t-SNE [50, 49], Isomap [47], LargeVis [45], 
-    Laplacian eigenmaps [5, 6] and diffusion maps [14] all fall into the latter
+    Laplacian eigenmaps [5, 6] and diffusion maps [14]
 * mathematical foundations [of UMAP] related to 
   the work of Belkin and Niyogi on Laplacian eigenmaps. We seek to address the
   issue of uniform data distributions on manifolds through a combination of
