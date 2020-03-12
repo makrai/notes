@@ -17,28 +17,26 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
 
 * history
   * co-occurrences are reweighed to
-    * suppress the effect of more frequent words (Rohde et al., 2006) and/or to
+    * suppress the effect of more frequent words (Rohde+ 2006) and/or to
     * emphasize pairs of words whose co-occurrence frequency maximally deviates
       from the independence assumption (Church and Hanks, 1990)
-  * Mikolov+ main departure from Bengio+ (2003) was to follow the 
+  * Mikolov+ main departure from Bengio+ (2003) was to follow the
     * suggestion of Mnih and Hinton, (2007) and tradeaway the expressive
-    * scalability ... afforded by ... log-linear models.
+    * scalability ... afforded by ... log-linear models
 * mathematically-flavored explanations (Paperno and Baroni, 2016)), the only
-* rigorous theoretical understanding of this phenomenon is (
-  * Arora et al., (2016)
-    * factorizing the so-called PMI matrix, and that algebraic operations on
-    * can be used to solve analogies, 
-    * conditions on the process that generated the training corpus.
+* rigorous theoretical understanding of this phenomenon (Arora+ 2016)
+  * factorizing the so-called PMI matrix ... can be used to solve analogies,
+  * conditions on the process that generated the training corpus
 * we
-  * Sufficient Dimensionality Reduction model of (Globerson and Tishby, 2003)
-  * word vectors learned by Skip-Gram are information-theoretically optimal.
-  * the context word c in the Skip-Gram model essentially serves the role that
-    the discourse vector does in the PMI model of (Arora et al., 2016): the 
+  * Sufficient Dimensionality Reduction model of Globerson and Tishby (2003)
+  * word vectors learned by Skip-Gram are information-theoretically optimal
+  * the context word c in the Skip-Gram model = 
+    discourse vector in the PMI model of Arora+ (2016)
   * exact non-linear composition operator when no assumptions are made on the
-    context word. 
-  * When an analogous assumption to that of (Arora et al., 2016) is made, that
-    the context words are uniformly distributed, we prove that the composition
-    operator reduces to vector addition.
+    context word
+  * When an analogous assumption to that of Arora+ (2016) is made, that
+    the context words are uniformly distributed, we prove that the 
+    composition operator reduces to vector addition
   * the learned context embeddings and target embeddings preserve the maximal
     amount of mutual information between any pair of random variables X and Y
     consistent with the observed co-occurence matrix ... (in a min-max sense,
@@ -49,25 +47,25 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
 
 * Minimizing the angle has been empirically successful at capturing composition
   in multiple loglinear word models . One way to understand the success of this
-* explanation: 
+* explanation:
   * recall that each word c is characterized by a categorical distribution over
-    all other words w, as stated in (1). The 
+    all other words w, as stated in (1). The
   * peaks of this categorical distribution are ... the words with which c
     co-occurs most often
 
 # 3 Skip-Gram learns a Sufficient Dimensionality Reduction Model
 
-* SDR model 
+* SDR model
   * learns optimal embeddings for discrete random variables X and Y without
     assuming any parametric form on the distributions of X and Y , and it is
   * useful in ... information retrieval, document classification, and
     association analysis (Globerson and Tishby, 2003)
   * obtained by learning the parameters of an exponentially parameterized
-    distribution. In Theorem 3 below, we show that if a 
+    distribution. In Theorem 3 below, we show that if a
   * Skip-Gram model [ can be ] modified (by adding ... information on word
-    frequencies) to obtain the parameters of an SDR model.
+    frequencies) to obtain the parameters of an SDR model
   * the original algorithm of (Globerson and Tishby, 2003) for learning SDR
-    embeddings is expensive, as it involves information projections.
+    embeddings is expensive, as it involves information projections
   * applications in network science (Grover and Leskovec, 2016), proteinomics
-    (Asgari and Mofrad, 2015), and other fields.
+    (Asgari and Mofrad, 2015), and other fields
 * Lemma 2: Skip-Gram optimizes a KL Divergence

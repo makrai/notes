@@ -20,7 +20,7 @@ Results [and scripts] will be posted online upon publication
 
 # 1 Introduction
 
-* relatively simple algebraic structure [of embeds] (Arora+ 2016)
+* relatively simple algebraic structure [of embeddings] (Arora+ 2016)
   * words can be decomposed into an overcomplete basis
 * tune algorithm, corpus and hyperparameters towards the target task
   (Lai+ 2016, Sharp+ 2016b), which challenges [unsup pretrain]

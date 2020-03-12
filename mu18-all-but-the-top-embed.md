@@ -19,9 +19,9 @@ ICLR, 2018
     training the language model and downstream applications
   * Bengio+ (2003); Mikolov+ (2010); Huang+ (2012) in a neural network LM
   * Mikolov+ (2013); Mnih & Hinton (2007) by log-linear models
-  * and Dhillon+ (2012); Pennington+ (2014); Levy & Goldberg (2014);
-    Stratos+ (2015); Arora+ (2016) by producing a low-dimensional
-    representation of the cooccurrence statistics
+  * low-dimensional representation of the cooccurrence statistics
+    * Dhillon+ (2012); Pennington+ (2014); Levy & Goldberg (2014); 
+      Stratos+ (2015); Arora+ (2016)
 * performance of several of the recent methods is roughly
   similar on a variety of intrinsic and extrinsic evaluation testbeds
 * Every representation we tested, in many languages, has the following proprtys
