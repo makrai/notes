@@ -393,8 +393,8 @@ Contents p6
 * contextual priming and discourse setting ... seems irrelevant [for their
   disambiguation]
 * relating the multiple complement types that verbs select for
-  * _begin_ are polysemous in that they must be able to select for ... Verb
-    Phrase, Gerundive Phrase, or Noun Phrase
+  * _begin_ [is] polysemous in that 
+    [it must be able to select for] Verb Phrase, Gerundive Phrase, or NP
 * inchoative/causative alternation _open; break_
   * one sense is actually entailed by the other sense
 

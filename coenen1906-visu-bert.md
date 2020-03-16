@@ -128,7 +128,7 @@ arXiv:1906.02715 [cs.LG]
     transformed by the Hewitt and Manning’s “structural probe” matrix B,
     yielding a set of points in 1024-dimensional space. We
   * used PCA to project to two dimensions
-    * t-SNE and UMAP [16], were harder to interpret.)
+    * t-SNE and UMAP [16], were harder to interpret
 * whether the difference between these projected trees and the canonical ones
   is merely noise, or a more interesting pattern. By looking at the
   * average embedding distances of each dependency relation (see Figure 3) , we
@@ -140,8 +140,8 @@ arXiv:1906.02715 [cs.LG]
 ##  4.1 Visualization of word senses 6
 
 * sentences [from] the introductions to English-language Wikipedia articles
-  * interactive application. A user enters a word.  1,000 sentences. BERT-base
-  * visualizes 1,000 context embeddings using UMAP [16], generally showing
+  * interactive application. A user enters a word. 1,000 sentences. BERT-base
+  * visualizes 1,000 context embeddings using UMAP [16]
   * e.g. _die_
     * crisp, well-separated clusters: German article, be killed, game tool
     * within one of these clusters there is a kind of

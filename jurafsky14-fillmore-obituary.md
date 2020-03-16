@@ -25,7 +25,7 @@ Obituary Charles J. Fillmore
   * machine translation (Wilks 1973),
   * question-answering (Hendrix, Thompson, and Slocum 1973),
   * spoken-language understanding (Nash-Webber 1975), and
-  * dialogue systems (Bobrow et al.  1977)
+  * dialogue systems (Bobrow+ 1977)
 * General-purpose semantic role labelers
   * via ATNs (Simmons 1973) or,
   * from parse trees, by using dictionaries with verb-specific case frames
@@ -85,11 +85,11 @@ Obituary Charles J. Fillmore
     * first on FrameNet (Gildea and Jurafsky 2000) and then
     * on PropBank data (Gildea and Palmer 2002, inter alia)
 * plethora of systems for SRL
-  * surveys in Palmer, Gildea, and Xue (2010) and Màrquez et al. (2008))
+  * surveys in Palmer, Gildea, and Xue (2010) and Màrquez+ (2008))
   * appli[cations] to improve the state of the art in tasks across NLP such as
     * question answering
       (Shen and Lapata 2007; Surdeanu, Ciaramita, and Zaragoza 2011) and
-    * machine translation (Liu and Gildea 2010; Lo et al.  2013)
+    * machine translation (Liu and Gildea 2010; Lo+ 2013)
 * FrameNets for many other languages including
   Spanish, German, Japanese, Portuguese, Italian, and Chinese
   * return to the discovery procedures that first inspired Fillmore

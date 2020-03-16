@@ -13,7 +13,7 @@ ICLR 2017
 * theoretical explanation ... using a latent variable generative model
   * a simple extension of the model in Arora+ (TACL’16)
     with new “smoothing” terms that allow for words occurring out of context,
-    as well as high probabilities for words like _and, not_ in all contexts
+    as well as high probabilities for [function] words in all contexts
 
 # 1 Intro
 
@@ -49,9 +49,16 @@ ICLR 2017
   * simple modification for the Random Walk on Discourses model (Arora+ 2016)
   * modif[ication] motivated by [that
     word embedding methods give] large vectors to frequent words
+* [anisotropy]
+  * most word embedding methods ... seek to capture word cooccurence probs
+  * end up giving 
+    * large vectors to frequent words, as well as giving 
+    * unnecessarily large inner products to word pairs, 
+      to fit ... that words sometimes occur out of context in documents. These
+    * word vectors to have huge components along semantically meaningless dir
 * better (by a few percent points) than traditional TF-IDF
-* CBOW also
-  * does not use simple average of word vectors, as misleadingly suggested
+* similarity to CBOW 
+  * CBOW also does not use simple average, as misleadingly suggested
   * implementation shows it implicitly uses a weighted average
     * different from TF-IDF
     * quite similar ... to ours (See Section 3.1.)
