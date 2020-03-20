@@ -27,20 +27,18 @@ arXiv:2003.08271 [cs.CL]
 
 ### Convolutional models
 
-### Sequential models. Sequential models usually adopt
+### Sequential models
 
-### Graph-based models. Different from the above models, graph-based models
-take
+### Graph-based models
 
 * word[s] as nodes and learn the contextual representation with a
-* pre-defined linguistic structure between words, e.g. syntactic structure
-  [146, 161] or semantic relation [111]
-* more straightforward [ is ] self-attention mechanism, which implicitly
+* pre-defined linguistic structure between words, 
+  e.g. syntactic structure [146, 161] or semantic relation [111]
+* more straightforward [is] self-attention mechanism
 
 #### Analysis Both convolutional and sequential models learn the contextual
 
-* Transformer ... is easy to overfit on small or modestly-sized datasets [130,
-  49]
+* Transformer is easy to overfit on small or modestly-sized datasets [130, 49]
   49. Qipeng Guo, Xipeng Qiu, Pengfei Liu, Yunfan Shao, Xiangyang Xue, and
   Zheng Zhang. Star-transformer. In NAACLHLT, pages 1315–1325, 2019
   130. Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever
@@ -58,30 +56,27 @@ take
 ### 2.4.2 Pre-trained contextual encoders
 
 * CoVe: McCann+ [113] pre-trained a deep LSTM encoder from an attentional
-  sequence-to-sequence model with machine translation (MT). The context vectors
-  (CoVe) output by the pretrained encoder can improve the performance of a wide
+  sequence-to-sequence model with machine translation (MT)
+  * context vectors (CoVe) output by the pretrained encoder
 * ELMo: Peters+ [122] pre-trained 2-layer LSTM encoder with a bidirectional
-  language model (BiLM), consisting of a forward LM and a backward LM. The
-  contextual representations output by the pre-trained BiLM, ELMo (Embeddings
+  language model (BiLM), consisting of a forward LM and a backward LM
+  * contextual representations output by the pre-trained BiLM, ELMo (Embeddings
   from Language Models), are shown to bring large improvements on a broad range
 * Akbik+ [1] captured word meaning with contextual string embeddings
-  pre-trained with character-level LM.  However, these PTMs are usually used as
-  a feature extractor to produce the contextual word embeddings, which are fed
-  into the main model for downstream tasks. Their parameters are fixed and the
-  rest parameters of the main model are still trained from scratch
+  pre-trained with character-level LM
 * Ramachandran+ [134] found the seq2seq models can be significantly improved by
-  unsupervised pre-training. The weights of both encoder and decoder are
-  initialized with pretrained weights of two language models and then
-  fine-tuned with labeled data
+  unsupervised pre-training
+  * weights of both encoder and decoder are initialized with pretrained weights
+    of two language models and then fine-tuned with labeled data
 * ULMFiT (Universal Language Model Finetuning) [62] attempted to fine-tune
-  pre-trained LM for text classification (TC) and achieved SOTA results on six
-  widely-used TC datasets
+  pre-trained LM for text classification (TC)
+  * SOTA results on six widely-used TC datasets
   * ULMFiT consists of 3 phases:
     1. pre-training LM on general-domain data;
     1. fine-tuning LM on target data;
     1. fine-tuning on the target task. ULMFiT also investigates some effective
-  * fine-tuning strategies, including discriminative fine-tuning, slanted
-    triangular learning rates, and gradual unfreezing
+  * fine-tuning strategies including discriminative fine-tuning, 
+    slanted triangular learning rates, and gradual unfreezing
   * Since ULMFiT, fine-tuning has become the mainstream approach to adapt PTMs
     for the downstream tasks
 * very deep PTMs have shown their powerful ability in learning universal
@@ -93,12 +88,12 @@ take
 # 3 overview of PTMs and categorization of PTMs
 
 * differences between PTMs are the usages of contextual encoders (2.2),
-  pre-training tasks, and purposes. We have briefly
-* In this section, [ pre-training tasks and ] a taxonomy of PTMs
+  pre-training tasks, and purposes
+* In this section, [pre-training tasks and] a taxonomy of PTMs
 
 ## 3.1 Pre-training Tasks
 
-3. Self-Supervised learning: predict any part of the input from other parts in
+3. Self-Supervised learning: predict any part of the input from other parts
 
 ### 3.1.3 Permuted Language Modeling (PLM)
 
@@ -121,14 +116,14 @@ take
 * idea of NCE is also used in the well-known word2vec embedding [116]
 * recently proposed CTL tasks in the following paragraphs
 
-#### Deep InfoMax (DIM) Deep InfoMax (DIM) [59] is
+#### Deep InfoMax (DIM) [59]
 
-* original proposed for images, which improves the quality of the
-* maximizing the mutual information between an image representation and local
-  regions of the image
-* Kong+ [83] applied DIM to language representation learning. The global
+* original proposed for images
+* maximizing the mutual information between an image representation and 
+  local regions of the image
+* Kong+ [83] applied DIM to language representation learning
 
-#### Replaced Token Detection (RTD) Replaced Token Detection (RTD) is
+#### Replaced Token Detection (RTD) 
 
 * the same as NCE but predicts whether a token is replaced given its context
 * CBOW with negative sampling (CBOW-NS) [116] can be viewed as a simple version
@@ -167,9 +162,9 @@ take
 
 ### 3.1.6 Others
 
-* sentiment label-aware MLM for sentiment analysis [78], gap sentence
-  generation (GSG) for text summarization [197], disfluency detection [179] and
-  so on. In addition, some
+* sentiment label-aware MLM for sentiment analysis [78], 
+  gap sentence generation (GSG) for text summarization [197], 
+  disfluency detection [179]
 * auxiliary pre-training tasks are designed to incorporate factual knowledge,
   * denoising entity auto-encoding (dEA) in ERNIE(THU) [199],
   * entity linking (EL) in KnowBERT [123]
@@ -195,7 +190,7 @@ take
   * commonsense [48],
   * factual [199, 123, 101, 188, 182], to
   * domain-specific knowledge [54]
-* injecting knowledge during pre-training. Early studies  focused on
+* injecting knowledge during pre-training
   * joint learning knowledge graph embeds and word embeds [183, 202, 187, 190]
   * Since BERT, some auxiliary pre-training tasks are designed to incorporate
     * LIBERT [87] (linguistically-informed BERT) incorporates linguistic
@@ -212,20 +207,20 @@ take
       * KEPLER (Wang+ [182]) jointly optimizes knowledge embedding and LM
         * inject structure information of knowledge graph via entity embed-
       * K-BERT [101] explicitly injects related triples extracted from KG into
-        the sentence to obtain an extended tree-form input for BERT.  Moreover,
+        the sentence to obtain an extended tree-form input for BERT
       * Xiong+ [188] adopted entity replacement identification to encourage the
         model to be more aware of factual knowledge
-  * these methods ... may suffer from catastrophic forgetting when injecting
+  * these methods ... may suffer from catastrophic forgetting
     * To address this, K-Adapter [178] injects multiple kinds of knowledge by
       training different adapters independently for different pre-training
       tasks, which allows continual knowledge infusion
 * incorporate external knowledge into pre-trained models without retraining
-  * K-BERT [101] allows injecting factual knowledge during fine-tuning on
+  * K-BERT [101] allows injecting factual knowledge during fine-tuning
   * Guan+ [48] employed commonsense knowledge bases, ConceptNet and ATOMIC, to
     enhance GPT-2 for story generation
   * Yang+ [192] proposed a knowledge-text fusion model to acquire related
     linguistic and factual knowledge for machine reading comprehension
-* extended language model to prediction conditioned on knowledge graph. These
+* extended language model to prediction conditioned on knowledge graph
   * knowledge graph language model (KGLM, Logan IV+ [106]) and
   * latent relation language model (LRLM, Hayashi+ [53]) respectively, both of
 
@@ -238,13 +233,13 @@ take
 * image-text pairs, aiming to fit downstream
   * tasks like visual question answering(VQA) and visual commonsense reasoning
   * two separate encoders for image and text representation independently e.g
-    ViLBERT [107] and LXMERT [162].  While other methods like
+    ViLBERT [107] and LXMERT [162]
   * single-stream unified Transformer, e.g.  VisualBERT [95], B2T2 [2], VLBERT
     [150], Unicoder-VL [94] and UNITER [16]
   * MLM and image-text matching, are introduced in these approaches
   * images are converted into sequences of regions by applying RoI or bounding
     box retrieval techniques before encoded by pre-trained Transformers
-* audio-text pairs, such as SpeechBERT [20]. This work tries to build an
+* audio-text pairs, such as SpeechBERT [20]
   * end-to-end Speech Question Answering(SQA) model by
   * encoding audio and text with a single Transformer encoder, which is
     pre-trained with MLM on speech and text corpus and fine-tuned on QA
@@ -283,7 +278,7 @@ take
 * can also be used in task-specific models, e.g. information retrieval [108],
   and sequence labeling [168]
 
-#### Distillation from other knowledge. Distillation from soft target
+#### Distillation from other knowledge
 
 * not regard the teacher model as a black box
 
@@ -305,7 +300,7 @@ take
 ## 4.5 Multilingual and Language-Specific PTMs
 
 * Multilingual BERT 3) (M-BERT) is pre-trained by MLM with the shared
-  vocabulary and weights on Wikipedia text from the top 104 languages. Each
+  vocabulary and weights on Wikipedia text from the top 104 languages
   * no CL objectives specifically designed nor any cross-ling data
   * CL generalization surprisingly well [127]
   * lexical overlap between languages plays a negligible role K+ [74] in the
@@ -324,7 +319,7 @@ take
   * monolingual PTMs pre-trained on language-specific corpus for French [112,
     88], Finnish [173], Dutch [29, 31] have been released
 
-# 5 To downstream tasks 13
+# 5 Adapting To downstream tasks 13
 
 ## 5.1 Transfer Learning
 
@@ -344,7 +339,7 @@ take
   traditional NLP pipeline: basic syntactic information appears earlier in the
   network, while high-level semantic information appears at higher layers
 * three ways to select the representation:
-  * Embedding Only. One approach is to choose only the pre-trained static
+  * Embedding Only: choose only the pre-trained static
   * Top Layer.  The most simple and effective way
   * automatic choose the best layer in a soft version, like ELMo [122]: r t = γ
     * where α l is the softmax-normalized weight for layer l and γ is a scalar
@@ -353,7 +348,7 @@ take
 
 * two common ways of model transfer:
   * feature extraction (where the pre-trained parameters are frozen), and
-    * it is important to expose the internal [most transferable ] layers [124]
+    * it is important to expose the internal [most transferable] layers [124]
   * fine-tuning (where the pre-trained parameters are unfrozen and fine-tuned)
     * usually more general and convenient for many different downstream tasks
 
@@ -365,7 +360,7 @@ take
 
 ### Two-stage fine-tuning An alternative solution is two-stage transfer, which
 
-* first stage [with] an intermediate task or corpus. In the
+* first stage [with] an intermediate task or corpus
 * second stage, the transferred model is fine-tuned to the target task
 * Sun+ [154]: “further pretraining” on the related-domain corpus (BERT) and
   * SOTA performance on eight widely-studied text classification datasets
@@ -378,17 +373,17 @@ multi-task learning and pre-training are complementary technologies
 ### Fine-tuning with extra adaptation modules The
 
 * main drawback of fine-tuning is its parameter inefficiency: every downstream
-  task has its own fine-tuned parameters. Therefore, a better
+  task has its own fine-tuned parameters
 * solution is to inject some fine-tunable adaptation modules into PTMs while
   * original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
   * PAL: small additional task-specific adaptation modules, shared BERT with
   * matches separately fine-tuned models on the GLUE benchmark with roughly 7
-    times fewer parameters. Similarly,
+    times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
   * Adapter modules yield a compact and extensible model; they add only a few
     trainable parameters per task, and new tasks can be added without
-    revisiting previous ones. The parameters of
+    revisiting previous ones
 
 ### Others Instead of fine-tuning all the layers simultaneously,
 
@@ -401,6 +396,14 @@ multi-task learning and pre-training are complementary technologies
 
 # 6 Related resources on PTMs: open-source systems, paper lists 15
 
+* Table 5: Open-Source Implementations
+
+|Table 6:         |Collections of Related Resources     |
+|-----------------|-------------------------------------|
+| ...             |                                     |
+|Bert Lang Street |https://bertlang.unibocconi.it/      |
+|BertViz [172]    |https://github.com/jessevig/bertviz  |
+
 # 7 Applications across NLP tasks 15
 
 ## 7.1 General Evaluation Benchmark
@@ -410,7 +413,7 @@ multi-task learning and pre-training are complementary technologies
     * single-sentence classification tasks (CoLA and SST-2)
     * pairwise text classification tasks (MNLI, RTE, WNLI, QQP, and MRPC)
     * text similarity task (STSB)
-    * and relevant ranking task (QNLI). GLUE benchmark is well-designed for
+    * and relevant ranking task (QNLI)
 * SuperGLUE [176]: more challenging tasks and more diverse task formats (e.g.,
   coreference resolution and question answering)
 
@@ -423,7 +426,7 @@ multi-task learning and pre-training are complementary technologies
   * English-Turkish and English-German NMT model by using a pre-trained
     language model for source word embedding initialization
 * Clinchant+ [23] : examining the best strategy to utilize BERT on the encoder
-  * some improvement by using BERT as an initialization of the encoder. Also,
+  * some improvement by using BERT as an initialization of the encoder
   * better performance on the out-of-domain dataset
 * Imamura and Sumita [65] proposed a two stages BERT fine-tuning method for NMT
   1. encoder is initialized by a pre-trained BERT model and they only train the
@@ -431,12 +434,12 @@ multi-task learning and pre-training are complementary technologies
   2. whole NMT model is jointly fine-tuned on the training set. By experiment,
 * Zhu+ [204] suggested using pre-trained BERT as an extra memory in NMT models
   * they first encode the input tokens by a pre-trained BERT and use the output
-    of the last layer as an extra memory. Then, the
+    of the last layer as an extra memory
   * NMT model can access the memory via an extra attention module in each layer
     of both encoder and decoder
   * noticeable improvement on supervised, semi-supervised and unsupervised MT
 * Song+ [147] proposed a masked sequence-to-sequence pre-training method (MASS)
-  to pre-train the encoder and decoder jointly.  In the experiment, this
+  to pre-train the encoder and decoder jointly
   * surpass the BERT-style pre-training proposed by Conneau and Lample [25]
     both on unsupervised MT and English-Romanian supervised MT
 
@@ -454,7 +457,7 @@ multi-task learning and pre-training are complementary technologies
   * BERT transforms the extractive QA task to the spans prediction task [32]
   * PTM as an encoder for predicting spans has become a competitive baseline
   * Zhang+ [200] proposed a retrospective reader architecture and initialize
-    the encoder with PTM (e.g., ALBERT). For
+    the encoder with PTM (e.g., ALBERT)
 * multi-round generative QA
   * “PTM + Adversarial Training + Rationale Tagging + Knowledge Distillation”
     (Ju+  [73])
@@ -467,8 +470,8 @@ multi-task learning and pre-training are complementary technologies
 * BERT outperforms previous SOTA models by simply fine-tuning on SST-2, which
   is a widely used dataset for sentiment analysis (SA) [32]
 * Bataa and Wu [8] utilized BERT with transfer learning, new SOTA in Japanese
-* aspect-based sentiment (ABSA) shows less significant improvement [153]. To
-  * Sun+ [153] [ transforming ABSA ] to a sentence pair classification task
+* aspect-based sentiment (ABSA) shows less significant improvement [153]
+  * Sun+ [153] [transforming ABSA] to a sentence pair classification task
   * Xu+ [189] proposed post-training to adapt BERT to the ABSA domain and tasks
   * Rietzler+ [137] analyzing the behavior of cross-domain post-training with
     ABSA performance
@@ -476,7 +479,7 @@ multi-task learning and pre-training are complementary technologies
     further improved via adversarial training
   * Song+ [148] added an additional pooling module, which can be implemented as
     either LSTM or attention mechanism, to leverage BERT intermediate layers
-    for ABSA.  In addition,
+    for ABSA
   * Li+ [97] jointly learned aspect detection and sentiment classification
     towards end-to-end ABSA
 * “Mask and Infill” (Wu+ [186]) based on BERT, for sentiment transfer
@@ -493,8 +496,8 @@ multi-task learning and pre-training are complementary technologies
 * Liu and Lapata [104] proposed BERTSUM [which] included a novel document-level
   encoder, and a general framework for both extractive summarization and
   abstractive summarization.  In the encoder frame, BERTSUM extends BERT by
-  inserting multiple [CLS] tokens to learn the sentence representations.  For
-  * extractive: BERTSUM stacks several inter-sentence Transformer layers. For
+  inserting multiple [CLS] tokens to learn the sentence representations
+  * extractive: BERTSUM stacks several inter-sentence Transformer layers
   * abstractive: two-staged fine-tuning approach using a new fine-tuning schedl
 
 ## 7.6 Named Entity Recgonition
@@ -509,27 +512,27 @@ multi-task learning and pre-training are complementary technologies
 * Liu+ [98] used layer-wise pruning and dense connection to speed up ELMo’s
   inference on NER
 * Tsai+ [168] leveraged knowledge distillation to run a small BERT for
-  NER on a single CPU. Besides, BERT is also used on
+  NER on a single CPU
 * domain-specific NER, such as biomedicine [52, 91], etc
 
 # 8 Challenges and future directions 17
 
 ## Upper Bound of PTMs ... by more training steps and larger corpus
 
-* e.g. Megatron-LM [144] (8.3 billion parameters, 72 Transformer layers with a
+* e.g. Megatron-LM [144]: 8.3 billion parameters, 72 Transformer layers with a
   hidden size of 3072 and 32 attention heads) and
   Turing-NLG (17 billion parameters, 78 Transformer layers with a hidden size
   of 4256 and 28 attention heads)
 * needs ... techniques such as distributed training, mixed precision, gradient
   accumulation, etc. Therefore, a more practical
-* [otherr] direction is to design more efficient model architecture,
+* [other] direction is to design more efficient model architecture,
   self-supervised pre-training tasks, optimizers and training skills
   * ELECTRA [22] is a good solution towards this direction
 
 ## Task-oriented Pre-training and Model Compression
 
 * The discrepancy between PTMs and downstream tasks usually lies in two
-  aspects: model architecture and data distribution. A larger discrepancy may
+  aspects: model architecture and data distribution
 * specific model architecture and pre-training tasks for downstream task or
   extract partial task-specific knowledge from existing PTMs
 * [teach] task-oriented PTMs with general-purpose existing PTMs
@@ -538,12 +541,12 @@ multi-task learning and pre-training are complementary technologies
 
 * main limitation of Transformer is its computation complexity: quadratic to
 * cannot deal with the sequence longer than 512 tokens
-* Breaking this limit e.g.  Transformer-XL [27].  Therefore, searching for more
+* Breaking this limit e.g.  Transformer-XL [27]
 * neural architecture search (NAS) [205]
 
 ## Knowledge Transfer Beyond Fine-tuning Currently, fine-tuning is the dominant
 
-* using PTMs as external knowledge [125] , and so on.  More efficient methods
+* using PTMs as external knowledge [125]
 
 ## Interpretability and Reliability of PTMs Although
 
@@ -553,7 +556,7 @@ multi-task learning and pre-training are complementary technologies
   * Jin+ [71] successfully attacked the finetuned BERT on text classification
     and textual entailment with adversarial examples
   * universal adversarial triggers (Wallace+ [175])
-    [mislead model] when concatenated to any input.  Some triggers can even
-  * Sun+ [155] showed BERT is not robust on misspellings. Besides, adversarial
+    [mislead model] when concatenated to any input
+  * Sun+ [155] showed BERT is not robust on misspellings
 
 # 9 Conclusion 18
