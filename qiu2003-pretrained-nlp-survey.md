@@ -299,9 +299,9 @@ arXiv:2003.08271 [cs.CL]
 
 ## 4.5 Multilingual and Language-Specific PTMs
 
-* Multilingual BERT 3) (M-BERT) is pre-trained by MLM with the shared
-  vocabulary and weights on Wikipedia text from the top 104 languages
-  * no CL objectives specifically designed nor any cross-ling data
+* Multilingual BERT (M-BERT) is pre-trained by MLM with the shared vocabulary
+  and weights on Wikipedia text from the top 104 languages
+  * no cross-ling (CL) objectives specifically designed nor any CL data
   * CL generalization surprisingly well [127]
   * lexical overlap between languages plays a negligible role K+ [74] in the
   * MASS [147] pretrained on multiple languages
@@ -370,7 +370,7 @@ arXiv:2003.08271 [cs.CL]
 ### Multi-task fine-tuning: Liu+ [103] fine-tuned BERT [demonstrating that]
 multi-task learning and pre-training are complementary technologies
 
-### Fine-tuning with extra adaptation modules The
+### Fine-tuning with extra adaptation modules
 
 * main drawback of fine-tuning is its parameter inefficiency: every downstream
   task has its own fine-tuned parameters
@@ -419,13 +419,13 @@ multi-task learning and pre-training are complementary technologies
 
 ## 7.2 Machine Translation
 
-* Conneau and Lample [25] initialize the entire encoder and decoder by a
-  multilingual pre-trained BERT model and shows a significant improvement on
-  unsupervised MT and English-Romanian supervised MT
+* Conneau and Lample [25] 
+  * initialize the entire encoder and decoder by a multiling pre-trained BERT
+  * signifcnt improvement on unsupervised MT and English-Romanian supervised MT
 * Edunov+ [37] used ELMo to set the word embedding layer in the NMT
   * English-Turkish and English-German NMT model by using a pre-trained
     language model for source word embedding initialization
-* Clinchant+ [23] : examining the best strategy to utilize BERT on the encoder
+* Clinchant+ [23] examin the best strategy to utilize BERT on the encoder
   * some improvement by using BERT as an initialization of the encoder
   * better performance on the out-of-domain dataset
 * Imamura and Sumita [65] proposed a two stages BERT fine-tuning method for NMT
@@ -490,7 +490,7 @@ multi-task learning and pre-training are complementary technologies
 
 * Zhong+ [203] introduced transferable knowledge (e.g., BERT) for summarization
 * Zhang+ [198] tries to pre-trained a document-level model that predicts
-  sentences instead of words, and then apply it on downstream tasks such as
+  sentences instead of words, and then apply it on downstream tasks
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
 * Liu and Lapata [104] proposed BERTSUM [which] included a novel document-level
@@ -548,7 +548,7 @@ multi-task learning and pre-training are complementary technologies
 
 * using PTMs as external knowledge [125]
 
-## Interpretability and Reliability of PTMs Although
+## Interpretability and Reliability of PTMs
 
 * explainable artificial intelligence (XAI) [4] has become a hotspot in general
 * attention interpretability is still controversial [66, 142]
