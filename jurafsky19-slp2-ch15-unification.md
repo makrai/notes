@@ -671,26 +671,24 @@ S → NP VP
 
 #### The Need for Copying
 
-* COPY DAG within the UNIFY-STATE procedure require some elaboration
+* COPY DAG within the UNIFY-STATE procedure
 * states [in] the chart they may be used again and again in derivations,
 * [not copying would have] negative consequences regardless of whether the
-  unification succeeds or fails, since in either case the original states are
+  unification succeeds or fails
 * e.g. _Show me morning flights._
   * When the word _me_ is read, the state representing the (uni)transitive verb
-    phrase will be completed since its dot has moved to the end. C OMPLETER
+    phrase will be completed since its dot has moved to the end
   * we have already altered the DAG attached to the state representing _show_,
-    as well as the one attached to the VP thereby ruining them for use with the
-* can be quite expensive. As a result, a number of
+    as well as the one attached to the VP thereby ruining them
+* can be quite expensive
 * alternative techniques have been developed that attempt to minimize this cost
   (Pereira, 1985; Karttunen and Kay, 1985; Tomabechi, 1991; Kogure, 1990)
-  B Kiefer+ (1999b) and Penn and Munteanu (2003) describe a set of related
-  techniques used to speed up a large unification-based parsing system
+  * B Kiefer+ (1999b) and Penn and Munteanu (2003) describe a set of techniques
 
 ### 15.5.2 Unification-Based Parsing
 
-* A more radical approach to using unification in parsing can be motivated by
-* alternative way of denoting our augmented grammar rules.  Consider the
-  following S rule that we have been using throughout this chapter
+* A more radical approach to using unification in parsing
+* alternative way of denoting our augmented grammar rules
 
 S → NP VP
 `<NP HEAD AGREEMENT> = <VP HEAD AGREEMENT>`
@@ -701,133 +699,122 @@ S → NP VP
   (Shieber, 1986)
 
 X 0 → X 1 X 2
-`<X 0 CAT>` = S
-`<X 1 CAT>` = NP
-`<X 2 CAT>` = VP
-
-
+`<X 0 CAT> = S`
+`<X 1 CAT> = NP`
+`<X 2 CAT> = VP` 
 `<X 1 HEAD AGREEMENT> = <X 2 HEAD AGREEMENT>`
 `<X 0 HEAD> = <X 2 HEAD>`
 
 * Altering the Earley algorithm to deal with this notational change is trivial
-  Instead of seeking the categories of constituents in the context-free
-  components of the rule, it simply needs to look at the CAT feature in the DAG
-* benefit? to this change. To see the potential benefit of this change,
-  consider the following rules
+  * Instead of seeking the categories of constituents in the CF components, 
+    it simply needs to look at the CAT feature in the DAG
 
 X 0 → X 1 X 2
-`<X 0 CAT>` = < X 1 CAT>`
+`<X 0 CAT> = < X 1 CAT>`
 `<X 2 CAT> = PP`
 
 X 0 → X 1 and X 2
 `<X 1 CAT = < X 2 CAT>`
 `<X 0 CAT = < X 2 CAT>`
 
-1. generalize over e.g. NP → NP PP and VP → VP PP. It simply states that
+* (1) generalize over e.g. NP → NP PP and VP → VP PP
   * any category can be followed by a prepositional phrase, and that the
-2. generalize over e.g. `S → S and S`, `NP → NP and NP`, and so on
-  * any constituent can be conjoined with a constituent of the same category to
+* (2) generalize over e.g. `S → S and S`, `NP → NP and NP`, and so on
+  * any constituent can be conjoined with a constituent of the same category
 * not ... correct, or complete, accounts of the phenomena in question
-* constituents with constrained, but unspecified, categories
-
-* their effect
-could be approximated [without CAT] by simply enumerating all the instantiatins
-* A more compelling case for the new approach is motivated by the existence of
-  * constituents that are not easily characterized using any existing synt cat
-
-Consider the following examples of the English H OW -M ANY construction from
-the WSJ (Jurafsky, 1992)
-
-* _How early does it open?_
-* _How deep is her Greenness?_
-* _How papery are your profits?_
-* _How quickly we forget._
-* _How many of you can name three famous sporting Blanchards?_
-
-* lexical item or phrase that is rather hard to characterize syntactically. It
+* constituents with constrained, but unspecified, categories 
+* benefit?
+  * their effect
+    could be approximated [without CAT] by simply enumerating all the instnttns
+  * A more compelling case for the new approach is motivated by
+    * constituents that are not easily characterized using a synt cat 
+* e.g. English HOW-MANY construction from the WSJ (Jurafsky, 1992) 
+  * _How early does it open?_
+  * _How deep is her Greenness?_
+  * _How papery are your profits?_
+  * _How quickly we forget._
+  * _How many of you can name three famous sporting Blanchards?_ 
+* lexical item or phrase that is rather hard to characterize syntactically
   * adjective, adverb, or some kind of quantified phrase (although not all)
   * semantics: a scalar concept
 
 X 0 → X 1 X 2
-`<X 1 ORTH>` = hhowi
-`<X 2 SEM>` = SCALAR>`
+`<X 1 ORTH> = hhowi`
+`<X 2 SEM> = SCALAR>`
 
-* A complete account of rules like this involves semantics, see Ch. 17. The key
-  * not make any use of the notion of a syntactic category
-
-Of course, dealing this kind of rule requires some changes to our parsing scheme
-
-All of the parsing approaches we have considered thus far are driven by the syntac-
-tic category of the various constituents in the input. More specifically, they are based
-on simple atomic matches between the categories that have been predicted, and cate-
-* COMPLETER [ searches the chart based on] the category of the constituent
-  following the • in the existing state. Clearly this approach will run into
-  trouble when there are no such categories to consult
+* A complete account of rules like this involves semantics, see Ch. 17
+  * not make any use of the notion of a syntactic category 
+* COMPLETER [searches the chart based on] the category of the constituent
+  following the • in the existing state
+  * trouble when there are no such categories to consult
 * remedy: search the chart for states whose DAGs unify with the new DAG
   * PREDICTOR can be changed in a similar fashion by having it
     add states to the chart states whose X 0 DAG component can unify with the
-    constituent following the • of the predicting state. Exercise 6 asks you to
+    constituent following the • of the predicting state. Exercise 6
 
 ## 15.6 Types and Inheritance, and other extensions to constraint-based formlsm
 
 > I am surprised that ancient and modern writers have not attributed greater
-> importance to the laws of inheritance..
-															 Alexis de Tocqueville, Democracy in America, 1840
+> importance to the laws of inheritance...
+                              Alexis de Tocqueville, Democracy in America, 1840
 
-* two problems that have led to extensions to the formalism. The first problem
-1. place a constraint on what can be the value of a feature. For example, we
-  e.g. NUMBER attribute can take only sg and pl as values. But in our current
+* two problems that have led to extensions to the formalism
+1. place a constraint on what can be the value of a feature
+  * e.g. NUMBER attribute can take only sg and pl as values
   * keep intransitive verb like _sneeze_ from unifying with a direct object
-  * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985) and
-    * adding a special atom `none` which is not allowed to unify with anythin
-  * Lexical Functional Grammar (LFG, Bresnan, 1982), for example, focused on
-    * adding coherence conditions which specified
-      when a feature should not be filled. The
-  * Generalized Phrase Structure Grammar (GPSG, Gazdar+ 1985, 1988) added a
+  * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985)
+    * adding a special atom `none` which is not allowed to unify with anything
+  * Lexical Functional Grammar (LFG, Bresnan, 1982)
+    * adding coherence conditions, when a feature should not be filled
+  * Generalized Phrase Structure Grammar (GPSG, Gazdar+ 1985, 1988)
     * feature co-occurrence restrictions, to
       prevent, for example, nouns from having some verbal properties
-2. capture generalizations across feature structuress
-  * e.g. many types of English verb phrases described in the Subcategorization
-    * many kinds of subcategorization frames for verbs.  Syntacticians were
-  * solution: types. Type systems for unification grammars have the following
-  1. Each feature structure is labeled by a type
-  2. each type has appropriateness conditions expressing
-    which features are appropriate for it and what types of values the**y** take
-  3. type hierarchy, in which more specific types inherit properties of abstrac
-  4. unification operation is modified to unify the types of feature structures
-     in addition to unifying the attributes and values
-  * Types come in two kinds: simple types (also called atomic ), and complex
-* an atomic symbol like sg or pl, and replaces the simple atomic values
-* hierarchy:  multiple-inheritance (a kind of partial order called a lattice)
-* Fig. 15.13 shows the type hierarchy for ... agreement, which will be
-  * the type of the kind of atomic object that can be the value of AGREE
-  * the unification of any two types is the most-general type that is more
-    specific than the two input types. Thus:
-    * legnagyobb közös osztó
-    `3rd ⊔ 1st = undefined`
-    * The unification of two types which do not have a defined unifier is
+2. capture generalizations across feature structures
+  * subcategorization frames for verbs in English
+  * solution: types
+    1. Each feature structure is labeled by a type
+    2. each type has appropriateness conditions expressing
+      which features are appropriate for it and 
+      what types of values they take
+    3. type hierarchy, in which more specific types 
+      inherit properties of abstract ones
+    4. unification operation is modified to unify the types of FSs
+       in addition to unifying the attributes and values
+* Types come in two kinds: simple types (also called atomic), and complex
+  * simple types: an atomic symbol like sg or pl
+    * hierarchy:  multiple-inheritance (a kind of partial order called a lattice)
+    * Fig. 15.13 shows the type hierarchy for ... agreement
+    * the type of the kind of atomic object that can be the value of AGREE
+    * the unification of any two types is 
+      the most-general type that is more specific than the two input types.
+      * legnagyobb közös osztó
+    * The unification of two types which do not have a defined unifier 
+      * e.g.  `3rd ⊔ 1st = undefined`
       * it is also possible to explicitly represent this fail type using ⊥
         (Aı̈t-Kaci, 1984)
-* complex types, which
+* complex types
   * specify:
     * a set of features that are appropriate for that type
-    * restrictions on the values of those features (expressed in terms of types)
+    * restrictions on the values of those features 
+      (expressed in terms of types)
     * equality constraints between the values
-  * e.g. verb: just represents agreement and verbal morphology information. A
-    * two appropriate features, AGREE and VFORM , and would also define the
-    * type of the values of the two features.  Let’s suppose that the
+  * e.g. verb: just represents agreement and verbal morphology information
+    * two appropriate features, AGREE and VFORM
+    * type of the values of the two features
       * AGREE feature takes values of type agr defined in Fig. 15.13 above, and
       * VFORM feature takes values of type vform >= finite, infinitive, gerund,
-        base, presentparticiple, past-participle, and passive-participle. Thus
+        base, presentparticiple, past-participle, and passive-participle
   * indicate the type either at the top of the AVM or to the lower left of `[`
   * noun might be defined with the the VFORM feature:
+
   ```
   [ noun
     AGREE   agr ]
   ```
 
 * Complex types are also part of the type hierarchy
-  * Subtypes herit all the features of their parents + the constraints on valus
+  * Subtypes inherit 
+    all the features of their parents + the constraints on values
   * encode the hierarchical structure of the lexicon Sanfilippo (1993),
     Fig. 15.14 shows the subcategories of verbs which take sentential comp
 
@@ -900,6 +887,6 @@ NP → Det Nominal
   * Prolog
     * Colmerauer, F Didier, Robert Pasero, Philippe Roussel, and J Trudel
     * resolution principle of Robinson (1965), and implemented a French
-  * natural language via Definite Clause Grammars was based on
-    Colmerauer’s (1975) metamorphosis grammars, and was developed and named by
-  * Augmented Transition Network (ATN) grammars. An ATN is a Recursive
+    * natural language via Definite Clause Grammars was based on
+      Colmerauer’s (1975) metamorphosis grammars, and was developed and named
+  * Augmented Transition Network (ATN) grammars
