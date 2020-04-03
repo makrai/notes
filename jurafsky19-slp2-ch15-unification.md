@@ -169,7 +169,7 @@ Speech and Language Processing (2Nd Edition)
 
 * elegantly express syntactic constraints that would be difficult to express
   * augmenting the rules of ordinary context-free grammars with attachments
-    that specify feature structures for the constituents of the rules, along
+    that specify feature structures for the constituents of the rules, long
   * unification operations that express constraints on those constituents.
 * From a grammatical point of view, these attachments will accomplish the follw
   * associate complex feature structures with both
@@ -434,7 +434,7 @@ Verb → want
 * Verbs [ subcategorize for] their subjects as well as their complements. For
   * e.g. _seem_ can take an `Sfin` as its subject
 
-### 15.3.4 Long-Distance Dependencies
+### 15.3.4 Long-Distance Dependencies (out of the VP)
 
 * The model of subcategorization we have developed so far has two components. 
   * head word has a SUBCAT feature which contains a list of the complements
@@ -767,4 +767,138 @@ on simple atomic matches between the categories that have been predicted, and ca
     add states to the chart states whose X 0 DAG component can unify with the
     constituent following the • of the predicting state. Exercise 6 asks you to
 
-## 15.6 types and inheritance, and other extensions to constraint-based formlsm
+## 15.6 Types and Inheritance, and other extensions to constraint-based formlsm
+
+> I am surprised that ancient and modern writers have not attributed greater
+> importance to the laws of inheritance...  
+															 Alexis de Tocqueville, Democracy in America, 1840
+
+* two problems that have led to extensions to the formalism. The first problem
+1. place a constraint on what can be the value of a feature. For example, we
+  e.g. NUMBER attribute can take only sg and pl as values. But in our current
+  * keep intransitive verb like _sneeze_ from unifying with a direct object
+  * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985) and 
+    * adding a special atom `none` which is not allowed to unify with anythin
+  * Lexical Functional Grammar (LFG, Bresnan, 1982), for example, focused on
+    * adding coherence conditions which specified 
+      when a feature should not be filled. The 
+  * Generalized Phrase Structure Grammar (GPSG, Gazdar+ 1985, 1988) added a
+    * feature co-occurrence restrictions, to 
+      prevent, for example, nouns from having some verbal properties.
+2. capture generalizations across feature structuress
+  * e.g. many types of English verb phrases described in the Subcategorization
+    * many kinds of subcategorization frames for verbs.  Syntacticians were
+  * solution: types. Type systems for unification grammars have the following
+  1. Each feature structure is labeled by a type.
+  2. each type has appropriateness conditions expressing 
+    which features are appropriate for it and what types of values the**y** take
+  3. type hierarchy, in which more specific types inherit properties of abstrac
+  4. unification operation is modified to unify the types of feature structures
+     in addition to unifying the attributes and values.
+  * Types come in two kinds: simple types (also called atomic ), and complex
+* an atomic symbol like sg or pl, and replaces the simple atomic values 
+* hierarchy:  multiple-inheritance (a kind of partial order called a lattice)
+* Fig. 15.13 shows the type hierarchy for ... agreement, which will be 
+  * the type of the kind of atomic object that can be the value of AGREE 
+  * the unification of any two types is the most-general type that is more
+    specific than the two input types. Thus:
+    * legnagyobb közös osztó
+    `3rd ⊔ 1st = undefined` 
+    * The unification of two types which do not have a defined unifier is
+      * it is also possible to explicitly represent this fail type using ⊥
+        (Aı̈t-Kaci, 1984).
+* complex types, which 
+  * specify:
+    * a set of features that are appropriate for that type
+    * restrictions on the values of those features (expressed in terms of types)
+    * equality constraints between the values
+  * e.g. verb: just represents agreement and verbal morphology information. A
+    * two appropriate features, AGREE and VFORM , and would also define the
+    * type of the values of the two features.  Let’s suppose that the 
+      * AGREE feature takes values of type agr defined in Fig. 15.13 above, and
+      * VFORM feature takes values of type vform >= finite, infinitive, gerund,
+        base, presentparticiple, past-participle, and passive-participle. Thus
+  * indicate the type either at the top of the AVM or to the lower left of `[`
+  * noun might be defined with the the VFORM feature: 
+  ```
+  [ noun
+    AGREE   agr ]
+  ```
+
+* Complex types are also part of the type hierarchy. 
+  * Subtypes herit all the features of their parents + the constraints on valus
+  * encode the hierarchical structure of the lexicon Sanfilippo (1993), 
+    Fig. 15.14 shows the subcategories of verbs which take sentential comp
+
+### 15.6.1 Advanced: Extensions to Typing 
+
+* inheritance
+  * mainly been used in lexical type hierarchies 
+  * encode generalizations and subregular exceptions to them. 
+  * order-dependent?
+    * In early versions of default unification the operation was order-dependent,
+      * priority union operation (Kaplan, 1987).  
+    * More recent architectures are orderindependent 
+      (Lascarides and Copestake, 1997; Young and Rounds, 1993), 
+      * related to Reiter’s default logic (Reiter, 1980).
+* lexical rule (Jackendoff, 1975)
+  * e.g. HPSG (Pollard and Sag, 1987, 1994) and LFG (Bresnan, 1982) use an
+  * for capturing lexical generalizations: the lexical rule. Lexical rules
+  * a reduced, hence more redundancy-free lexicon to be automatically expanded
+  * See Pollard and Sag (1994) for examples, 
+    Carpenter (1991) on complexity issues, and 
+    Meurers and Minnen (1997) on efficient implementation.  Conversely, see
+    Krieger and Nerbonne (1993) on using the type hierarchy to replace lex ruls
+* Types ... to represent constituency. Instead of rules like
+
+```
+NP → Det Nominal
+`<Det AGREEMENT>  = <Nominal AGREEMENT>`
+`<NP AGREEMENT>   = <Nominal AGREEMENT>`
+```
+
+* represent the whole phrase structure rule as a type. In order to do this, we
+* represent constituents as features. One way to do this, following , is to
+  * feature called DTRS (“daughters”), whose value is a list of phrases
+    (Sag and Wasow 1999)
+
+### 15.6.2 Other Extensions to Unification
+
+* path inequalities (Moshier, 1988; Carpenter, 1992; Carpenter & Penn, 1994)
+* negation (Johnson, 1988, 1990), 
+* set-valued features (Pollard and Moshier, 1990), and 
+* disjunction (Kay, 1979; Kasper and Rounds, 1986). In some unification systems
+* operation incorporated into feature structures OR in a separate metalanguage 
+  * descriptions may thus use negation and disjunction to describe a set of
+    feature structures (i.e., a certain feature must not contain a certain
+    value, or may contain any of a set of values) but an 
+  * actual instance of a feature structure that meets the description would not
+    have negated or disjoint values.
+* disambiguation. Much recent work in unification grammars has focused on
+  * probabilistic augmentations.  See the History section
+
+# Végszó helyett
+
+* HuMor
+* feature geometry
+* Prolog
+
+# Summary
+
+# Bibliographical and Historical Notes
+
+* [distinctive] features in linguistic theory comes originally from 
+  * phonology.  
+    * Anderson (1985) credits Jakobson (1939) with being the first 
+    * Trubetskoi (1939) and others. The semantic use of features followed soon
+  * in syntax: well established by the 1950s and popularized by Chomsky (1965) 
+* unification operation in linguistics was developed independently by 
+  Kay (1979) (feature structure u) and Colmerauer (1970, 1975) (term u)
+  * Both were working in machine translation
+  * [combination operation should] be reversible: both parsing and generation. 
+  * Prolog
+    * Colmerauer, F Didier, Robert Pasero, Philippe Roussel, and J Trudel
+    * resolution principle of Robinson (1965), and implemented a French
+  * natural language via Definite Clause Grammars was based on 
+    Colmerauer’s (1975) metamorphosis grammars, and was developed and named by
+  * Augmented Transition Network (ATN) grammars. An ATN is a Recursive
