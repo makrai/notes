@@ -867,8 +867,8 @@ NP → Det Nominal
 
 # Végszó helyett
 
-* HuMor
-* feature geometry
+* HuMor, MetaForfo, Anagramma
+* magyar NP, feature geometry
 * Prolog
 
 # Summary
