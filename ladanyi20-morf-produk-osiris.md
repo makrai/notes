@@ -4,6 +4,15 @@ in Imrényi+ 2020 eds Nyelvtan, Osiris
 
 tartalom 16 (11)
 
+# Egy interpretáció elé
+
+* A fejezet nem azt a módszert követi, hogy definiálja a terminusokat, és aztán
+  abban a jelentésben használja őket, hanem olyan jelentésben használja a
+  szavakat, amit én intuitív-hagyományosnak mondanék. Ennek ellenére én
+  megpróbálom a magam kocka módján olvasni: bizonyos tulajdonságokat
+  definiálónak tekintek, az emiatt tautológgá váló mondatokat pedig egyszerűen
+  kihagyom.
+
 #6.1. Morfológiai sémák gyakorisága és erőssége (545)
 
 * sémák: A szavak és szóalakok létrehozásakor [érvényesülő] mintázatok
@@ -21,10 +30,10 @@ tartalom 16 (11)
 * amelyeket a nyelvhasználók új szavak és szóalakok létrehozására alkalmaznak
 * mi számít új szónak, nem mindig könnyű megállapítani, ezért nehéz
 * gyenge sémák is előfordulhatnak a produktív sémák között (pl. -árium képzős)
-  * szemin- akv- szol- kalend- antikv- honor- planet- terr- millecenten-
-    legend- centen- bicenten- stat- brevi- pessz- urb- glossz- nagyszemin- b-
-    alm- herb- kolumb- kisszemin- szcen- di- proszemin- ossz- gran- ordin-
-    lekcion- evangeli- likt- lucern- szakrament- filmszcen- osszu- sall-
+  * szeminakvszolkalendantikvhonorplanetterrmillecenten-
+    legendcentenbicentenstatbrevipesszurbglossznagyszeminb-
+    almherbkolumbkisszeminszcendiproszeminosszgranordin-
+    lekcionevangeliliktlucernszakramentfilmszcenosszusall-
     antifon-
   * részletesebben lásd 6.2.1
 * morfológiai produktivitás fokozati jellegű, és
@@ -43,7 +52,7 @@ tartalom 16 (11)
 
 ##6.2.1. Produktivitás és sémaerősség 551
 
-Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
+* Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
 
 ### -gat/-get és -g
 
@@ -62,12 +71,12 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
       * A kritika természetesen az idén is g y a lá z g a to tt {Magyar Narancs
       * trockista torzóját b a lz s a m o z g a tjá k (Eörsi István, Szép
       * Jóskát amíg élt m e g g y ilk o lg a ttá k itt is amott is (Eörsi
-  * olyan esetekben is megjelen­ het, amikor más képzőt tartalmazó igék
-    fordulnak elő ugyanebben a grammatikai jelentésben. Pél­ dául ilyenek a
+  * olyan esetekben is megjelen­ het, amikor más [rivális] képzőt tartalmazó
+    igék fordulnak elő ugyanebben a grammatikai jelentésben. Pél­ dául ilyenek
     * a produktív képzés sémáját muta­ tó -gat/-get képzős alakok is (pl. a
       lép-ked/lép-del/lép-des mellett a lép-eget, a nő-dögél mellett a
       növ-öget, a húz-gál/huz-igál mellett a húz-ogat).  Ezenkívül az MNSZ2
-  * kis számban, ad hoc - létrejöhetnek olyan derivátumok is, amelyek a
+  * kis számban, ad hoc létrejöhetnek olyan derivátumok is, amelyek a
     produktív sémát követik. Ilyen produktív sémát követő ige
     * például
 
@@ -85,7 +94,7 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
   miniszterelnökről, hogy háttal a térkép mögött b ö k ö g e t és ott jelöli ki
   a helyszíneket
 * ha az igekötős ige jelentése eltávolodik az alapige jelentésétől (_átcsap_)
-  * vagy ha a [derivátum] lexika- lizálódott jelentésű (pl. a kapkod/kapdos nem
+  * vagy ha a [derivátum] lexikalizálódott jelentésű (pl. a kapkod/kapdos nem
     egyenlő azzal, hogy ’gyakran kap’), akkor a [szóban forgó] jelentést
     (különösen a csökkent intenzi­ tást) inkább a produktív -gat/-get képzős
     ige fejezi ki:
@@ -119,7 +128,7 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
   nem tudunk általánosítható, szisztematikus közös jelentést megállapítani
 * A latin eredetű jövevényszavaknak azonban van egy jól körülhatárolható
   csoportja, amelyekben az -árium végű szavak jelentése ’gyűjtemény’
-  * e.g. lectioná- rium (a korpuszban így!) ’olvasmánygyűjtemény’, a latinból
+  * e.g. lectionárium (a korpuszban így!) ’olvasmánygyűjtemény’, a latinból
     átvett hagyomá­ nyos evangeliárium ’evangéliumos könyv, liturgikus kódex’,
     legendárium ’legen­ dagyűjtemény’, vokabulárium ’szógyűjtemény, szószedet’
   * a jelentés ’gyűjtemény és intézménye­ sült hely’ is lehet, mint például:
@@ -149,7 +158,7 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
       * előfordulnak még további új képzések, amelyek azonban elszigetelt pél­
         dák; jelentésük a fenti csoportok egyikébe sem illik bele. A
 
-    * geológiai szakszavak tartoznak. Ezeknek a derivátu- moknak
+    * geológiai szakszavak tartoznak. Ezeknek a derivátumoknak
       * helynévi alapszavuk van, és földtörténeti korszakokat neveznek meg
       * csákvárium, hatvanium, sümegium, bérbaltavárium
       * némelyikében a képző -ium formában fordul elő:
@@ -159,7 +168,7 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
     szónak a ’pálinkabolt’ mellett ’pálinkafőzőé’ jelentése is van
   * [nem kompozicionális:] bronzárium; a borárium pedig a korpusz példáiban nem
     egy borokat áruló üzlet, hanem egy étterem neve .54
-    * n e k tá riu m növényrész, a hagym á- riu m növénynév, mindkettő
+    * n e k tá riu m növényrész, a hagym áriu m növénynév, mindkettő
       biológiai szakszó
     * sch w a jd á riu m (Schwajda György nevéből) a Nemzeti Színház ironikus
       megnevezése; a
@@ -167,28 +176,149 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
       szerinti beskatulyázás’
   * Az első csoport sémáját követő képzés lehetséges alapszavai az áru-, étel-
     és italnevek lehetnének
-    * A korpuszban azonban nincs *szendvics-árium, *likör-árium (vagy
-      liikőr-árium), *hotdog-árium, sem *hus-árium (vagy *hús-árium),
-      *kenyer-árium (vagy *kenyér-árium), *ital-árium stb. képzett szavak
+    * A korpuszban azonban nincs `*`szendvics-árium, `*`likör-árium (vagy
+      liikőr-árium), `*`hotdog-árium, sem `*`hus-árium (vagy `*`hús-árium),
+      `*`kenyer-árium (vagy `*`kenyér-árium), `*`ital-árium stb. képzett szavak
     * Ennek ellenére a fenti szavakat a magyar anyanyelvű beszélők minden
       valószínűség szerint azonnal megértenék
 * nemcsak a jelentéseket, hanem a [képzett] alakokat tekintve is vannak
-  eltérések a főnévi alapszó + képző sémától. A néhány
+  eltérések a főnévi alapszó + képző sémától
   * nem idegen eredetű alapszó: a lekvár és a nektár szó eleve -ár-ra végződik,
   * az -a-ra végződő szavak esetében pedig (pálinka, novella, morzsa) az
     alapszó [átfedést] mutat az [képzővel]
-    * többfélekép­ pen is elemezhetjük. A képzőt -árium alakúnak tekinthetjük,
+    * többfélekép­ pen is elemezhetjük
       * tőcsonkulást feltételezünk: lekv-árium, pálink-árium (a tőcsonkulás
         * idegen ere­ detű képzőkkel elő szokott fordulni). Egy alternatív
-      * képző- alternánsokkal számolhatunk, vagyis a magyar szavakkal a képző
+      * képzőalternánsokkal számolhatunk, vagyis a magyar szavakkal a képző
         * -ium (lekvár-ium, nektár-ium) és -rium (pálinká-rium, morzsá-rium)
         * -ium-os mintázat előfordul néhány korábban idézett nem idegen eredetű
           alapszavú, geológiai szakszóként használt derivátumban is:
           hatvan-ium, sümeg-ium
+      * nem szegmen­ táljuk egyértelműen: szavak és szóalakok mentális
+        reprezentációinak alak és jelentés szerinti [összefüggései hálózatosak]
 * derivátumok kis száma, egyes derivátumok egyedi jelentése, vala­ mint az
   alapsémától való eltérések alapján nagyon gyenge sémának tekint­ hetjük
 
-##6.2.2. Szemantikai alapértelmezés, alkalmazási tartomány, produktivitás
+##6.2.2. Szemantikai alapértelmezés, alkalmazási tartomány, produktivitás (550)
+
+### Alapbeállítású és nem alapbeállítású képzők és a produktivitás
+
+-cska/-cske és -ka/-ke
+
+* ism: a produktivitás mértékét nemcsak a séma erőssége befolyásolja, hanem az
+  is, hogy alapbeállí­ tású sémának (alapsémának) számít-e. Az 
+* alapbeállítás: [csak kevés tényező korlátozza a séma alkalmazását
+* a séma alkalmazási tartománya az[on] alapszavaknak a kör[e], amelyekből a
+  séma alapján új szavakat tudunk létrehozni. Ez is behatárol[t] 
+* a -cska/-cske és -ka/-ke [rivális] kicsinyítő képzők példáján mutatjuk be.
+* A -cska/-cske képző sémája az alapséma, míg a -ka/-ke ... csak bizo­ nyos
+  meghatározott feltételek fennállása esetén 
+  * például egy szó­ tagú tövekkel a -ka/-ke nem, csak a -cska/-cske képző
+    * fájl-ócska, gén-ecske, blog-ocska stb.  típusú derivátumok, addig a nem
+    * `*`fájl-ka, `*`gén-ke, `*`blog-ka szavak .56 
+    * egy szótagú szó: 
+      * -ka/-ke Az összes derivátuma lexikalizálódott
+      (pl.  szálka, tálka, nyálka, zárka, bőrke, lapka, padka, 
+      nyj. hóka ’holdacska —> fehér foltos homlokú ló’, 
+      nyj. tóka ’kacsa’, hurka *— húr, kaska ’kosár’ «kas), míg a megfelelő
+      * -cska/-cske képzős sza­ vak jelentése áttetsző (’kis N’), vö. Ladányi
+  * Ha az alapszónak vannak tőváltozatai, ak­ kor a -ka/-ke mindig az
+    alapszóhoz, vagyis a szótári tőhöz, míg a -cska/-cske a kötött tőhöz
+    csatlakozik (pl.  madár-ka, de madar-acska).
+  * Ez korlátozásokat jelent a -ka/-ke alkalmazásában, mert például az -a/-e
+    végű szavak csak kötött tőváltozatukkal tud­ nák felvenni ezeknek a
+    * mappá-cska, fiolá-cska, tevé-cske, kefé-cske típusú kicsinyítő képzős
+    * `*`mappá-ka, `*`fiolá-ka, `*`tevé-ke, * kéjé-ke típusúak nem .57
+* alapséma: alkalmazási tartománya nagyobb: lehetséges alapszavak köre kevésbé
+  van korlátozva: magasabb típusgyakoriság:  produktivitás nagyobb
+* Ebben az esetben is így van ez: a két képző típusgyakorisága 
+  * MNSZ1 két alkorpuszában (sajtó és szemé­ lyes)
+    * -cska/-cske képző típusgyakorisága a két alkorpuszban 2000 fölött, míg a
+      -ka/-ke képzős derivátumoké mindössze 40-50 között volt.
+
+### Az alkalmazási tartomány növekedése és a produktivitás: -izmus
+
+* versengő képzők [produktivitásában] szere­ pet játszhat az is, hogy 
+  tud-e nőni az alkalmazási tartománya. Az alkalmazási tartomány növekedése a
+  * típusgyakoriság és a produktivitás növekedésével jár együtt. Ennek a
+* pl. -izmus képzőt mutatjuk be.  
+* latin eredetű, de már a 17. századtól kezdve nem idegen eredetű alapszavakon
+  is előfordul 
+* Főnévi alapszavakból vagy (magánhang­ zóra végződő szavak esetében) tövekből
+  hoz létre szintén főnévi derivátumot. Ez a képző az 
+* évszázadok folyamán különböző jelentésekben jellegze­ tes szócsoportokhoz
+* két jelentésben ma is aktív:
+  * ’valamilyen nyelvi sajátság, nyelvjárás és annak követése’ (pl.
+    szeged-izmus, budapest-izmus). A képző lehetséges 
+    * alapszavai ebben a jelentés­ ben a földrajzi és a népnevek.
+  * ’valamilyen tan, irány, elmélet, felfogás stb. és annak kö­ vetése,
+    valamilyen mozgalom’ (pl. bandit-izmus, appony-izmus, bethlen-izmus).
+    * alapszava tipikusan is családnév  vagy helyvagy szerve­ zetnevek
+* Az MNSZ1 vizsgált két alkorpuszában, a sajtó (press) és a személyes (index)
+  * 1600-1700 -izm u s képzős szó szerepel. Ezek 
+  * zöme ismert idegen szó a ma­ gyarban; a példák között 
+  * számos összetétel fordul elő, többek között a m echanizm us, szocializ­ m
+    us, k a p ita lizm u s, im p eria lizm u s, liberalizm us, rasszizm us, n a
+    cio n alizm us stb.  utótagokkal
+  * a fenti két jelentésben előfordulnak neologizmusok, kisebb részben az első,
+    nagyobb részben a második jelentésben. Példák ez utóbbi típusra: ( 6 )
+    kádár-izmus, antall-izmus, horn-izmus, csurk-izmus, lukács-izmus,
+    tandor-izmus, döbrög-izmus, lakitelk-izmus, vasgárd-izmus
+  * a második jelentésre épülő új, harmadik jelentésben fordul elő: ’egyfajta
+    mentalitás: valamilyen felfogáshoz vagy életformához való erős kötődés
+    (ironikus konnotációval)’. Ebben a jelen­ tésben a képző köznevekhez járul,
+    * (7) hord-izmus («horda), család-izmus, kutatóprogram-izmus, pógár-izmus
+      (♦polgár), prol-izmus («proli)
+    * az ironikus jelen­ téstartalom abból adódik, hogy a követett fel­
+      fogásbeli vagy életmódbeli mint[ával] a nyelvhasználó nem akar
+      azonosulni, [esetleg] kifejezetten negatívan értékel[i őket], egyben
+      megmosolyog vagy kinevet
+    * Ebben a jelentésben igei alap­ szóval, sőt szintaktikai szerkezettel is
+      előfordul az MNSZ 1-ben (egy-egy elszigetelt példá­ ban)
+      * U gyanilyen a z elmebetegség h a tá rá t súroló tü n et a fentebb
+        említett korholizmus, a harag-mánia, a kényszeres gyűlölködés. ...
+        legalább egy tucat kézzel hányták bele a hozzávalókat, az
+        „ahogy-esik-úgy-puffanizmus” Csont András kritikus terminus technicu-
+        sa alapján. Ezek a példák is azt mutatják, hogy a 
+    * a tréfás/ironikus stílus és az egyedi szóalko­ tási módok [amúgy is]
+      szorosan kötődnek egymáshoz.
+    * Különösen jól mutatják ezt az ironikus hozzáállást azok a derivátumok,
+      amelyeknek az írásmódja eltér a sztenderd nyelvváltozatétól
+      (pógár-izmus).
+* olyan esetekben is, amikor létezik egy hasonló jelentésű, jellegzetesen
+  idegen végződésű/képzőjű szó [az alaptag pedig] idegen ere­ detű
+  * irónia ~ ironizmus, párt­ szimpátia ~ pártszimpatizmus, a lefedőmasinéria
+    ~ lefedőmasinizmus, a produktivitás ~ produktivizmus, a specialitás --
+    specializmus
+  * utóbbi kettő a referáló szerint mást jelent
+* vagyis a képző más hozzá hasonló (idegen ere­ detű és hasonló funkciójú)
+  képzők alkalmazási tartományában is működik
+* sőt nem-idegen képzők tartományában is alkot neologizmust
+  * -ság/-ség képző, valamint az -os-ság/-es-ség és a -z-ás/-z-és
+  * baloldaliság ~ baloldalizmus, a többségiség ~ többségizmus, a humorosság
+    ~ humorizmus, a lobbizás ~ lobbizmus, a brahizás ~ brahizmus
+  * anti-..  .-izmus ...-[ellenesség] utótagú összetétellel egyenértékűen
+    * pártellenesség  ~  antipártizmus, kisebbség-ellenesség  ~
+      antikisebbségizmus, örményellenesség  ~  antiörményizmus, halés
+      hódellenesség  ~  antihal~ és antihódizmus (a korpuszban így!).
+  * érezni lehet bizonyos mértékig az ironikus konnotációt
+    * az -izmus képzőre épülő sémá­ nak ez a plusz jelentése adja a motivációt
+* általában az idegen eredetű képzők esetében is a produktivitás mértéké­ nek
+  emelkedését jelenti, ha a képz[ő alkalmazási tartománya kiterjed]
+  * az idegen eredetű szókincs­ rétegen belül (más idegen eredetű képzőkébe)
+  * nem idegen eredetű alap­ szavakon is alkalmazhatóvá válik, illetve ha az
+  * a szemantikailag rokon magyar képző vagy képzőkombináció[éba]
+* alkalmazási tartomány nagyságának kiterjedése: produktivitás [növekedése]
+
+## ***
+
+* változik az időben: morfológiai mintázatok, mind ezek termékenysége . (Erről a
+  * részletesebben lásd 10.) Vannak olyan mintázatok is, amelyek 
+  * pl. egykor termékenyek [i.e. aktívak] voltak,[de már nem azok]
+  * Ez azonban nem zárja ki, hogy szórványosan [létrehozzanak új szavakat]
+* vannak olyan új szavak is, amelyeket [csak] egy-egy összetett szerkezetű szó
+  egyedi mintázata alapján hoz­ nak létre a nyelvhasználók. Ezek a jelenségek a
+  * morfológiai kreativitás fogal­ mával függnek össze: következő szakasz
 
 #6.3. Morfológiai kreativitás (554)
 
@@ -210,4 +340,4 @@ Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
 
 #6.5. Produktivitás és kreativitás viszonya a szóalkotásban (563)
 
-#6.6. Morfológiai produktivitás és kreativitás - összefoglalás (564)
+#6.6. Morfológiai produktivitás és kreativitás összefoglalás (564)
