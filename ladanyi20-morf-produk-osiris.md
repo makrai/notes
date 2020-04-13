@@ -148,8 +148,8 @@ tartalom 16 (11)
     részben alakilag is annak egyedi mintáját követi
   * pl.  biolárium a szolárium újraelemzése:
 
-|bio+lógia	    |`*`biol+ógia     |
 |---------------|-----------------|
+|bio+lógia	    |`*`biol+ógia     |
 |`*`szo+lárium	|szol(ár)+árium   |
 
 * nem a magyarban jöttek létre szóképzéssel , hanem idegen nyelvekből valók
