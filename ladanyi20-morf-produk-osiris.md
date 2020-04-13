@@ -1,6 +1,6 @@
 Ladányi Mária
 6. MORFOLÓGIAI PRODUKTIVITÁS ÉS KREATIVITÁS
-in Imrényi+ 2020 eds Nyelvtan, Osiris
+in Imrényi+ eds 2020 Nyelvtan, Osiris
 
 tartalom 16 (11)
 
