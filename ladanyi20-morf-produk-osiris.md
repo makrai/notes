@@ -16,7 +16,7 @@ tartalom 16 (11)
   hiányára utalhat. Az (555.) 560. oldalon alalszakaszként referál egy részre,
   ami a végső változatban alszakasz.
 
-#6.1. Morfológiai sémák gyakorisága és erőssége (545)
+# 6.1. Morfológiai sémák gyakorisága és erőssége (545)
 
 * sémák: A szavak és szóalakok létrehozásakor [érvényesülő] mintázatok
 * A sémák alkalmazhatósága több tényezőtől is függ
@@ -28,7 +28,7 @@ tartalom 16 (11)
   * i.e. ha több szóban valósulnak meg
   * típusgyakoriság (részletesebben lásd 5.)
 
-#6.2. Morfológiai sémák produktivitása (545)
+# 6.2. Morfológiai sémák produktivitása (545)
 
 * amelyeket a nyelvhasználók új szavak és szóalakok létrehozására alkalmaznak
 * mi számít új szónak, nem mindig könnyű megállapítani
@@ -55,7 +55,7 @@ tartalom 16 (11)
 |6.3.1. |-z	            |-l       |
 
 
-##6.2.1. Produktivitás és sémaerősség 551
+## 6.2.1. Produktivitás és sémaerősség 551
 
 * Egy nagyon produktív és egy nagyon terméketlen képzőt fogunk megnézni
 
@@ -210,7 +210,7 @@ tartalom 16 (11)
 * derivátumok kis száma, egyes derivátumok egyedi jelentése, vala­ mint az
   alapsémától való eltérések alapján nagyon gyenge sémának tekint­ hetjük
 
-##6.2.2. Szemantikai alapértelmezés, alkalmazási tartomány, produktivitás (550)
+## 6.2.2. Szemantikai alapértelmezés, alkalmazási tartomány, produktivitás (550)
 
 ### Alapbeállítású és nem alapbeállítású képzők és a produktivitás
 
@@ -330,7 +330,7 @@ tartalom 16 (11)
   egyedi mintázata alapján hoz­ nak létre a nyelvhasználók
   * morfológiai kreativitás fogal­ mával függnek össze: következő szakasz
 
-#6.3. Morfológiai kreativitás (554)
+# 6.3. Morfológiai kreativitás (554)
 
 * produktivitás és kreativitás egymással érintkező fogalmak
 * a morfológiai kreativitás a tágabb fogalom, mivel ez túlmutat a sémák[on]
@@ -355,7 +355,7 @@ tartalom 16 (11)
     * gyakrabban találkozhatunk a szóképzésnek nemcsak a pro­ duktív
       típusaival, hanem a sajátosabb módjaival is
 
-#6.5. Produktivitás és kreativitás viszonya a szóalkotásban (563)
+# 6.5. Produktivitás és kreativitás viszonya a szóalkotásban (563)
 
 * ezt az összefoglaló szakaszt előreveszem
 * [neologizmusos példákat mutattunk be]
@@ -365,7 +365,7 @@ tartalom 16 (11)
 * Termékeny sémák eseté­ ben a sémától egy bizonyos irányban történő,
   szisztematikus eltérés új séma kiépüléséhez vezethet
 
-##6.3.1. Termékeny mintázatok, sémakövetés, lexikai kreativitás
+## 6.3.1. Termékeny mintázatok, sémakövetés, lexikai kreativitás
 
 * a kreativitás abban je­ lentkezik, hogy a mintázatot új alapszón alkalmazzuk
 * -z és -l, az -s, -i és -nyi, az -ód(ik)/-őd(ik) és az -ós/-ős képzővel
@@ -429,7 +429,7 @@ tartalom 16 (11)
   c. meghaladja a Tom Kennedy-s, autópálya-szentelős, ordas-eszmézős
   propagandát
 
-##6.3.2. Nem teljes sémakövetés: sémavariációk
+## 6.3.2. Nem teljes sémakövetés: sémavariációk
 
 ### Az alkalmazási tartományon történő túllépés
 
@@ -494,7 +494,7 @@ tartalom 16 (11)
 * Az alábbi példában nem onomatopoetikus tövön, hanem cselekvő igéken
   * eszegek vattát / iszogok könnyet (az alapséma szerint: eszeget, iszogat)
 
-##6.3.3. Nem produktív képzésmód aktivizálása
+## 6.3.3. Nem produktív képzésmód aktivizálása
 
 ### -andó/-endő
 
@@ -530,16 +530,16 @@ tartalom 16 (11)
     b. Ám ez a mesterséges arab szó-ötlemény sem vert gyökeret
     c. testetlen csavarintmányaid útján
 
-#6.4. Egyedi mintázatok (560)
+# 6.4. Egyedi mintázatok (560)
 
-##6.4.1. Egyedi mintázatok analógiás követése
+## 6.4.1. Egyedi mintázatok analógiás követése
 
 1. De hogy ezen mi a gunyorászni való (a dudorászni ige analógiájára)
 1. számos egyszerűbbség végett (a kisebbség szó analógiájára)
 1. Alighanem a legjobb, Tcsuszó Sándor terminusával, valódisítványnak nevezni
    (a hamisítvány szó analógiájára)
 
-##6.4.2. Egyedi mintázatok követése szerkezeti motivációval
+## 6.4.2. Egyedi mintázatok követése szerkezeti motivációval
 
 * Vö. Zemszkaja—Kitajgorodszkaja—Sirjajev 1981: 81.
 * [olyat] követ, amely gyakran hangzásában (pl. rímelési tulajdonságait
@@ -548,7 +548,7 @@ tartalom 16 (11)
   1. becses adat-kapat
   1. nincs más csak / hajtás s / hajtatás / daloljunk / pajtás/ pajtatás A
 
-##6.4.3. Morfológiai blend
+## 6.4.3. Morfológiai blend
 
 * két szó ~~ pontos szerkezeti sémát nem követő ~~ egybevonásával keletkezik
 * Angol példák: brunch = breakfast & lunch, telethon = telephon & m a ra th on,
@@ -583,7 +583,7 @@ tartalom 16 (11)
     * Teótad figyelmesebben / böngészem át a halálhíreket, / s olvasom a márvány
       személyiket / a halótelepeken (~lakótelep kifordításával, illetve anal)
 
-##6.4.4. Produktív képzők sémáitól való egyedi eltérés
+## 6.4.4. Produktív képzők sémáitól való egyedi eltérés
 
 * pl.
   * órákig vártalak ariadne/ e hovátlan világon...
@@ -595,4 +595,4 @@ tartalom 16 (11)
 * A fenti pél­ dákban ugyanakkor mind[kettő] tipikusan toldalékolhatatlan
   szavakon fordul elő: kérdőszón illetve határozószón
 
-#6.6. Morfológiai produktivitás és kreativitás összefoglalás (564)
+# 6.6. Morfológiai produktivitás és kreativitás összefoglalás (564)
