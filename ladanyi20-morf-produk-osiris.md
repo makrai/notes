@@ -148,6 +148,7 @@ tartalom 16 (11)
     részben alakilag is annak egyedi mintáját követi
   * pl.  biolárium a szolárium újraelemzése:
 
+| +l            | l+              |
 |---------------|-----------------|
 |bio+lógia	    |`*`biol+ógia     |
 |`*`szo+lárium	|szol(ár)+árium   |
