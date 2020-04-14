@@ -175,6 +175,13 @@ tartalom 16 (11)
       * helynévi alapszavuk van, és földtörténeti korszakokat neveznek meg
       * némelyikében a képző -ium formában fordul elő
       * kevés példa és kevés előfordulás tartozik; a harmadik csoport szavai
+      * Fejes 
+        * idézi: „A pannon emeletben a Kárpát-medence faunája olyan mértékben
+          elkülönül a környező európai területektől, hogy a magyarországi
+          alemeletek beosztása csak Magyarországon használatos.  
+          Ezek: alsó pannon monacium bódvaium rhenohassium felső pannon
+          csákvárium sümegium hatvanium bérbaltavárium” 
+        * Szerinte ezek nem magyar képzések, hanem latin képzések átvételei 
   * jelentése csak relatíve stabil: az MNSZ2 adatai szerint a lekvárium szónak
     a ’lekvárbolt’ mellett ’lekvárgyűjtemény’ és ’lekvármúzeum’, a pálinkárium
     szónak a ’pálinkabolt’ mellett ’pálinkafőzőé’ jelentése is van
