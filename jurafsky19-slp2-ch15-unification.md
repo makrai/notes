@@ -529,12 +529,12 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
     * only minimal changes to the basic Earley algorithm
   * then ... briefly consider an approach that moves even further from CF
 
-### 13.4.2 The Earley Algorithm
+### 13.4.2 The Earley Algorithm 447/474
 
 * Earley algorithm (Earley, 1970) uses dynamic programming [and] top-down searc
   * In contrast with the bottom-up search implemented by the CKY algorithm
 * core of the Earley algorithm is a single left-to-right pass
-* fills a chart i.e. array that has N +_1 entries
+* fills a chart i.e. array that has N + 1 entries
   * For each word position in the sentence, the chart contains a
     list of states representing the partial parse trees
     * indexes represent the locations between the words in an input
@@ -864,7 +864,10 @@ NP → Det Nominal
 * feature geometry (phonology, Kornai 2008 Fig 3.1)
 * magyar NP (Kornai 1985, 1989), pl. _három kiló rohadt alma_
 * Prolog
-* HuMor, MetaForfo, Anagramma
+* Prószéky
+  * HuMor, 
+  * MetaForfo. _I save it to the shop._ `Lementem a boltba.`
+  * Anagramma
 
 # Summary
 
