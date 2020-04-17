@@ -23,7 +23,7 @@ Speech and Language Processing (2Nd Edition)
   * proliferation of primitive grammatical categories such as Non3sgVPto,
   * explosion in the number of grammar rules and ... loss of generality
 * other advantages [of constraints-based formalisms] that will not be covered
-  * model more complex phenomena than context-free grammars, and the ability
+  * model more complex phenomena than context-free grammars
   * compute semantics for syntactic representations
 * e.g. grammatical number
   * property called NUMBER that can have the value singular or plural
@@ -39,7 +39,7 @@ Speech and Language Processing (2Nd Edition)
   * features are unanalyzable atomic symbols drawn from some finite set, and
   * values are either atomic symbols or feature structures themselves
   * diagram, called an attribute-value matrix (AVM)
-* e.g. number property discussed above. To capture this property, we will use
+* e.g. number property discussed above
   * feature: the symbol NUMBER to designate this grammatical attribute, and the
   * values: symbols sg and pl (in English)
   * e.g. 3sgNP
@@ -51,7 +51,7 @@ Speech and Language Processing (2Nd Edition)
 ```
 
 * the use of feature structures allows us to both
-  * preserve the core set of grammatical categories and o
+  * preserve the core set of grammatical categories and
   * draw distinctions among members of a single category
 * features can also have other feature structures as their values
   * bundle a set of feature-value pairs together for similar treatment
@@ -120,10 +120,10 @@ Speech and Language Processing (2Nd Edition)
     * AGREEMENT features in these examples successfully match
     * SUBJECT features: the values found at the respective
       `<SUBJECT AGREEMENT NUMBER>` paths differ, causing a unification failure
-* representing partial information about some linguistic object or 
-  placing informational constraints on what the object can be. 
-  * Unification can be seen as a way of 
-    merging the information in each feature structure, or 
+* representing partial information about some linguistic object or
+  placing informational constraints on what the object can be
+  * Unification can be seen as a way of
+    merging the information in each feature structure, or
     describing objects which satisfy both sets of constraints.  Intuitively,
   * produces a new feature structure which is more specific (has more
     information) than, or is identical to, either of the input FSs
@@ -165,7 +165,7 @@ Speech and Language Processing (2Nd Edition)
 
 ## 15.3 Grammatical formalism 9
 
-* elegantly express syntactic constraints that would be difficult to express
+* elegantly express syntactic constraints
   * augmenting the rules of ordinary context-free grammars with attachments
     that specify feature structures for the constituents of the rules
   * unification operations that express constraints on those constituents
@@ -174,7 +174,7 @@ Speech and Language Processing (2Nd Edition)
     lexical items and instances of grammatical categories
   * guide the composition of feature structures for larger constituents
     based on the feature structures of their component parts
-  * enforce compatibility constraints between specified parts of constructions 
+  * enforce compatibility constraints between specified parts of constructions
 * notation ... based on the PATR-II system described in Shieber (1986):
 * [two styles of constraints]
   1. the value found at the end of the given path
@@ -371,7 +371,7 @@ Verb → leaves
 
 * encoding a list [with] types defined in Sec. 15.6
 
-VP → Verb NP5 
+VP → Verb NP5
 
 `<VP HEAD> = <Verb HEAD>`
 `<VP HEAD SUBCAT FIRST CAT> = <NP CAT>`
@@ -381,7 +381,7 @@ VP → Verb NP5
   * frames can be composed of many different phrasal types
 * Fig. 15.3.3 shows one short list of possible phrase types
   * from ... the FrameNet project (Johnson, 1999; Baker+ 1998)
-  * special subjects like _there_ and _it,_ as well as for objects and comps 
+  * special subjects like _there_ and _it,_ as well as for objects and comps
 * e.g. VPto, which is subcategorized for by _want_ might be expressed as:
 
 Verb → want
@@ -395,7 +395,7 @@ Verb → want
 * very large set of possible subcategorization frames
   * each verb allows many different subcategorization frames. Fig. 15.4
 * comprehensive subcategorization-frame tagsets exist, such as the
-  * COMLEX set (Macleod+ 1998), which includes 
+  * COMLEX set (Macleod+ 1998), which includes
     subcategorization frames for verbs, adjectives, and nouns, and the
   * ACQUILEX tagset of verb subcategorization frames (Sanfilippo, 1993)
   * other information about the complements, such as specifying the
@@ -471,7 +471,7 @@ S → Wh-NP Aux NP VP
 
 ### 15.4.1 Unification Data Structures
 
-* destructive nature of this algorithm necessitates [ extensions to the ] DAGs
+* destructive nature of this algorithm necessitates [extensions to the] DAGs
 * additional edges, or fields. Specifically,
   * each feature structure = two fields: a content field and a pointer field
     * content field may be null or contain an ordinary feature structure
@@ -479,9 +479,6 @@ S → Wh-NP Aux NP VP
   * If the pointer field of the DAG is null, then the content field of the DAG
     contains the actual feature structure to be processed.  If, on the other
     * [else] the destination of the pointer represents the actual FS
-
-To see how this works, let’s consider the extended DAG representation for the
-following familiar feature structure
 
 NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
                             PERSON 3rd ]
@@ -537,7 +534,7 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
 * Earley algorithm (Earley, 1970) uses dynamic programming [and] top-down searc
   * In contrast with the bottom-up search implemented by the CKY algorithm
 * core of the Earley algorithm is a single left-to-right pass
-* fills a chart i.e. array that has N + 1 entries
+* fills a chart i.e. array that has N +_1 entries
   * For each word position in the sentence, the chart contains a
     list of states representing the partial parse trees
     * indexes represent the locations between the words in an input
@@ -546,11 +543,11 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
 * individual states [in] each chart entry contain three kinds of information:
   * a subtree corresponding to a single grammar rule,
   * information about the progress made in completing this subtree, and the
-    * • within the right-hand side of a state’s grammar rule to indicate 
+    * • within the right-hand side of a state’s grammar rule to indicate
     * Structure is called a dotted rule
   * position of the subtree with respect to the input
 
-_0 Book 1 that 2 flight 3_
+_0 Book_1 that_2 flight 3_
 
 ```
 S → • VP, [0, 0]
@@ -558,16 +555,17 @@ NP → Det • Nominal, [1, 2]
 VP → V NP • , [0, 3]
 ```
 
-* (1) represents a top-down prediction for this particular kind of S
-* (2) created at a later stage in the processing of this sentence
-* (3) with its dot to the right of all its two constituents, represents the
-   successful discovery of a tree corresponding to a VP that spans the entire i
-* The basic operation of an Earley parser is to march through the N + 1 sets
+* e.g. above
+  * (1) represents a top-down prediction for this particular kind of S
+  * (2) created at a later stage in the processing of this sentence
+  * (3) with its dot to the right of all its two constituents, represents the
+     successful discovery of a tree corresponding to a VP that spans the entire i
+* The basic operation of an Earley parser is to march through the N +_1 sets
   * At each step, one of the three operators described below is applied to stts
-  * this results in the addition of new states to the end of either the current
-    or the next set of states in the chart
+  * this results in the addition of new states 
+    to the end of either the current or the next set of states in the chart
 * states are never removed and the algorithm
-  never backtracks to a previous chart entry once it has moved on. The presence
+  never backtracks to a previous chart entry once it has moved on
 
 #### Predictor
 
@@ -593,10 +591,11 @@ VP → V NP • , [0, 3]
 * New states are then created by copying the older state, advancing the dot
 * new state in the current chart entry
 * when the state NP → Det Nominal • , [1, 3] is processed,
-  COMPLETER looks for incomplete states ending at 1 and expecting an NP
+  COMPLETER looks for incomplete states ending at_1 and expecting an NP
   * finds the states `VP → Verb • NP, [0, 1]` and `VP → Verb • NP PP, [0, 1]`
-  * new complete state VP → Verb NP • , [0, 3], and the new
-    incomplete state VP → Verb NP • PP, [0, 3] to the chart
+  * new states to the chart: 
+    * VP → Verb NP • , [0, 3] /complete/ , and 
+    * VP → Verb NP • PP, [0, 3] /incomplete/ 
 
 #### Retrieving Parse Trees from a Chart
 
@@ -620,18 +619,17 @@ S → NP VP
 `<S HEAD> = <VP HEAD>`
 
 * Converting these constraints into a feature structure
-  * first creating top-level features for each of the parts of the CF rule, 
+  * first creating top-level features for each of the parts of the CF rule,
     S , NP , and VP in this case
   * then add further components by following the path equations in the constrns
-* feature structure can be passed directly to our unification algorithm
 * states used to represent partial parses in the Earley chart
-  * original states contain fields for 
+  * original states contain fields for
     * the context-free rule being used, the
     * position of the dot representing how much of the rule has been completed,
-    *  positions of the beginning and end of the state, and a 
-    * list of other states that represent the completed sub-parts of the state.
-  * add an additional field to contain the DAG representing the feature
-    structure corresponding to the state
+    *  positions of the beginning and end of the state, and a
+    * list of other states that represent the completed sub-parts of the state
+  * add a field to contain the DAG 
+    representing the feature structure corresponding to the state
     * PREDICTOR: DAG will simply [be] retrieved from the rule
       For example, when PREDICTOR uses the above S rule to enter a state
       * the feature structure given above
@@ -643,30 +641,30 @@ S → NP VP
     are looking for constituents that are compatible with the new one
 * To be more specific, COMPLETER adds a new state into the chart by
   * finding an existing state whose • can be advanced by the newly completed
-    state. A • can be advanced when the category of the constituent immediately
-    following it matches the category of the newly completed constituent
+    state [i.e.] when the category of the constituent immediately following •
+    matches the category of the newly completed constituent
     * now: unifying the feature structure associated with the newly completed
-      state with the appropriate part of the feature structure being advanced.
-      * If this unification succeeds, then the DAG of 
-        the new state receives the unified structure and is entered 
-      * [else] no new state is entered into the chart. The appropriate
+      state with the appropriate part of the feature structure being advanced
+      * If this unification succeeds, then the DAG of
+        the new state receives the unified structure and is entered
+      * [else] no new state is entered into the chart
 * The final change to the original algorithm: check for states already in chart
   * ENQUEUE function refused to enter into the chart any state that was
     identical to one already present in the chart
     * orig: “Identical” meant the same rule, with the same start and finish
-      positions, and the same position of the • . It is this check that allows
+      positions, and the same position of the •
     * avoid the infinite recursion problems associated with left-recursive ruls
-  * purpose is to prevent the wasteful addition of a state into the chart whose
-    effect on the parse would be accomplished by an already existing state
-    * prevent ... duplicat[ing] the work that will eventually be done by other
-    * = states in the chart that are more general than new
+  * prevent the wasteful addition of a state into the chart whose effect on the
+    parse would be accomplished by an already existing state
+    * i.e. prevent ... duplicat[ing] the work that will eventually be done by
+      [more general] states [already] in the chart
   * e.g.  chart contains the following state,
     where the Dag places no constraints on the Det
 
   NP → • Det NP, [i, i], [], Dag
 
   * parser wants to insert a new state into the chart that is identical to this
-    one, with the exception that its DAG restricts the Det to be singular. In
+    one, with the exception that its DAG restricts the Det to be singular
   * subsumption: check whether a newly created state is subsumed by any old
 
 #### The Need for Copying
@@ -694,118 +692,114 @@ S → NP VP
 `<NP HEAD AGREEMENT> = <VP HEAD AGREEMENT>`
 `<S HEAD> = <VP HEAD>`
 
-* change the way grammatical categories are specified. In particular, we can
+* change the way grammatical categories are specified
 * place the categorical information about the parts of the rule in FS
   (Shieber, 1986)
 
-X 0 → X 1 X 2
-`<X 0 CAT> = S`
-`<X 1 CAT> = NP`
-`<X 2 CAT> = VP` 
-`<X 1 HEAD AGREEMENT> = <X 2 HEAD AGREEMENT>`
-`<X 0 HEAD> = <X 2 HEAD>`
+`X_0 → X_1 X_2`
+`<X_0 CAT> = S`
+`<X_1 CAT> = NP`
+`<X_2 CAT> = VP`
+`<X_1 HEAD AGREEMENT> = <X_2 HEAD AGREEMENT>`
+`<X_0 HEAD> = <X_2 HEAD>`
 
 * Altering the Earley algorithm to deal with this notational change is trivial
-  * Instead of seeking the categories of constituents in the CF components, 
+  * Instead of seeking the categories of constituents in the CF components,
     it simply needs to look at the CAT feature in the DAG
 
-X 0 → X 1 X 2
-`<X 0 CAT> = < X 1 CAT>`
-`<X 2 CAT> = PP`
+`X_0 → X_1 X_2`
+`<X_0 CAT> = < X_1 CAT>`
+`<X_2 CAT> = PP`
 
-X 0 → X 1 and X 2
-`<X 1 CAT = < X 2 CAT>`
-`<X 0 CAT = < X 2 CAT>`
+X_0 → X_1 and X 2
+`<X_1 CAT = < X_2 CAT>`
+`<X_0 CAT = < X_2 CAT>`
 
 * (1) generalize over e.g. NP → NP PP and VP → VP PP
   * any category can be followed by a prepositional phrase, and that the
 * (2) generalize over e.g. `S → S and S`, `NP → NP and NP`, and so on
   * any constituent can be conjoined with a constituent of the same category
 * not ... correct, or complete, accounts of the phenomena in question
-* constituents with constrained, but unspecified, categories 
-* benefit?
-  * their effect
-    could be approximated [without CAT] by simply enumerating all the instnttns
-  * A more compelling case for the new approach is motivated by
-    * constituents that are not easily characterized using a synt cat 
-* e.g. English HOW-MANY construction from the WSJ (Jurafsky, 1992) 
-  * _How early does it open?_
-  * _How deep is her Greenness?_
-  * _How papery are your profits?_
-  * _How quickly we forget._
-  * _How many of you can name three famous sporting Blanchards?_ 
-* lexical item or phrase that is rather hard to characterize syntactically
-  * adjective, adverb, or some kind of quantified phrase (although not all)
-  * semantics: a scalar concept
+* constituents with constrained, but unspecified, categories
+* benefit: constituents that are not easily characterized using a synt cat
+  * e.g. English HOW-MANY construction from the WSJ (Jurafsky, 1992)
+    * _How early does it open?_
+    * _How deep is her Greenness?_
+    * _How papery are your profits?_
+    * _How quickly we forget._
+    * _How many of you can name three famous sporting Blanchards?_
+  * lexical item or phrase that is rather hard to characterize syntactically
+    * adjective, adverb, or some kind of quantified phrase (although not all)
+    * semantics: a scalar concept
 
-X 0 → X 1 X 2
-`<X 1 ORTH> = hhowi`
-`<X 2 SEM> = SCALAR>`
+  `X_0 → X_1 X_2`
+  `<X_1 ORTH> = <how>`
+  `<X_2 SEM> = SCALAR>`
 
 * A complete account of rules like this involves semantics, see Ch. 17
-  * not make any use of the notion of a syntactic category 
+  * not make any use of the notion of a syntactic category
 * COMPLETER [searches the chart based on] the category of the constituent
   following the • in the existing state
   * trouble when there are no such categories to consult
 * remedy: search the chart for states whose DAGs unify with the new DAG
   * PREDICTOR can be changed in a similar fashion by having it
-    add states to the chart states whose X 0 DAG component can unify with the
+    add states to the chart states whose X_0 DAG component can unify with the
     constituent following the • of the predicting state. Exercise 6
 
 ## 15.6 Types and Inheritance, and other extensions to constraint-based formlsm
 
 > I am surprised that ancient and modern writers have not attributed greater
-> importance to the laws of inheritance...
+> importance to the laws of inheritance..
                               Alexis de Tocqueville, Democracy in America, 1840
 
 * two problems that have led to extensions to the formalism
-1. place a constraint on what can be the value of a feature
-  * e.g. NUMBER attribute can take only sg and pl as values
-  * keep intransitive verb like _sneeze_ from unifying with a direct object
-  * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985)
-    * adding a special atom `none` which is not allowed to unify with anything
-  * Lexical Functional Grammar (LFG, Bresnan, 1982)
-    * adding coherence conditions, when a feature should not be filled
-  * Generalized Phrase Structure Grammar (GPSG, Gazdar+ 1985, 1988)
-    * feature co-occurrence restrictions, to
-      prevent, for example, nouns from having some verbal properties
-2. capture generalizations across feature structures
-  * subcategorization frames for verbs in English
-  * solution: types
-    1. Each feature structure is labeled by a type
-    2. each type has appropriateness conditions expressing
-      which features are appropriate for it and 
-      what types of values they take
-    3. type hierarchy, in which more specific types 
-      inherit properties of abstract ones
-    4. unification operation is modified to unify the types of FSs
-       in addition to unifying the attributes and values
+  1. place a constraint on what can be the value of a feature
+    * e.g. NUMBER attribute can take only sg and pl as values
+    * keep intransitive verb like _sneeze_ from unifying with a direct object
+    * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985)
+      * adding a special atom `none` which is not allowed to unify with anythng
+    * Lexical Functional Grammar (LFG, Bresnan, 1982)
+      * adding coherence conditions, when a feature should not be filled
+    * Generalized Phrase Structure Grammar (GPSG, Gazdar+ 1985, 1988)
+      * feature co-occurrence restrictions, to
+        prevent, for example, nouns from having some verbal properties
+  2. capture generalizations across feature structures
+    * subcategorization frames for verbs in English
+    * solution: types
+      1. Each feature structure is labeled by a type
+      2. each type has appropriateness conditions expressing
+        which features are appropriate for it and
+        what types of values they take
+      3. type hierarchy, in which more specific types
+        inherit properties of abstract ones
+      4. unification operation is modified to unify the types of FSs
+         in addition to unifying the attributes and values
 * Types come in two kinds: simple types (also called atomic), and complex
   * simple types: an atomic symbol like sg or pl
-    * hierarchy:  multiple-inheritance (a kind of partial order called a lattice)
+    * hierarchy:  multiple-inheritance (lattice. a kind of partial order)
     * Fig. 15.13 shows the type hierarchy for ... agreement
     * the type of the kind of atomic object that can be the value of AGREE
-    * the unification of any two types is 
-      the most-general type that is more specific than the two input types.
+    * the unification of any two types is
+      the most-general type that is more specific than the two input types
       * legnagyobb közös osztó
-    * The unification of two types which do not have a defined unifier 
+    * The unification of two types which do not have a defined unifier
       * e.g.  `3rd ⊔ 1st = undefined`
       * it is also possible to explicitly represent this fail type using ⊥
         (Aı̈t-Kaci, 1984)
-* complex types
-  * specify:
-    * a set of features that are appropriate for that type
-    * restrictions on the values of those features 
-      (expressed in terms of types)
-    * equality constraints between the values
-  * e.g. verb: just represents agreement and verbal morphology information
-    * two appropriate features, AGREE and VFORM
-    * type of the values of the two features
-      * AGREE feature takes values of type agr defined in Fig. 15.13 above, and
-      * VFORM feature takes values of type vform >= finite, infinitive, gerund,
-        base, presentparticiple, past-participle, and passive-participle
-  * indicate the type either at the top of the AVM or to the lower left of `[`
-  * noun might be defined with the the VFORM feature:
+  * complex types
+    * specify:
+      * a set of features that are appropriate for that type
+      * restrictions on the values of those features
+        (expressed in terms of types)
+      * equality constraints between the values
+    * e.g. verb: just represents agreement and verbal morphology information
+      * two appropriate features, AGREE and VFORM
+      * type of the values of the two features
+        * AGREE feature takes values of type agr defined in Fig. 15.13, and
+        * VFORM feature takes values of type vform >= finite, infinitive, gerund,
+          base, present-participle, past-participle, and passive-participle
+    * indicate the type at the top of the AVM or to the lower left of `[`
+    * noun might be defined with the the VFORM feature:
 
   ```
   [ noun
@@ -813,7 +807,7 @@ X 0 → X 1 X 2
   ```
 
 * Complex types are also part of the type hierarchy
-  * Subtypes inherit 
+  * Subtypes inherit
     all the features of their parents + the constraints on values
   * encode the hierarchical structure of the lexicon Sanfilippo (1993),
     Fig. 15.14 shows the subcategories of verbs which take sentential comp
@@ -826,12 +820,12 @@ X 0 → X 1 X 2
   * order-dependent?
     * In early versions of default unification the operation was order-dependent,
       * priority union operation (Kaplan, 1987)
-    * More recent architectures are orderindependent
+    * More recent architectures are order-independent
       (Lascarides and Copestake, 1997; Young and Rounds, 1993),
       * related to Reiter’s default logic (Reiter, 1980)
 * lexical rule (Jackendoff, 1975)
-  * e.g. HPSG (Pollard and Sag, 1987, 1994) and LFG (Bresnan, 1982) use an
-  * for capturing lexical generalizations: the lexical rule. Lexical rules
+  * e.g. HPSG (Pollard and Sag, 1987, 1994) and LFG (Bresnan, 1982)
+  * for capturing lexical generalizations
   * a reduced, hence more redundancy-free lexicon to be automatically expanded
   * See Pollard and Sag (1994) for examples,
     Carpenter (1991) on complexity issues, and
@@ -845,8 +839,8 @@ NP → Det Nominal
 `<NP AGREEMENT>   = <Nominal AGREEMENT>`
 ```
 
-* represent the whole phrase structure rule as a type. In order to do this, we
-* represent constituents as features. One way to do this, following , is to
+* represent the whole phrase structure rule as a type
+* represent constituents as features
   * feature called DTRS (“daughters”), whose value is a list of phrases
     (Sag and Wasow 1999)
 
@@ -855,7 +849,7 @@ NP → Det Nominal
 * path inequalities (Moshier, 1988; Carpenter, 1992; Carpenter & Penn, 1994)
 * negation (Johnson, 1988, 1990),
 * set-valued features (Pollard and Moshier, 1990), and
-* disjunction (Kay, 1979; Kasper and Rounds, 1986). In some unification systems
+* disjunction (Kay, 1979; Kasper and Rounds, 1986)
 * operation incorporated into feature structures OR in a separate metalanguage
   * descriptions may thus use negation and disjunction to describe a set of
     feature structures (i.e., a certain feature must not contain a certain
@@ -867,9 +861,10 @@ NP → Det Nominal
 
 # Végszó helyett
 
-* HuMor, MetaForfo, Anagramma
-* magyar NP, feature geometry
+* feature geometry (phonology, Kornai 2008 Fig 3.1)
+* magyar NP (Kornai 1985, 1989), pl. _három kiló rohadt alma_
 * Prolog
+* HuMor, MetaForfo, Anagramma
 
 # Summary
 
