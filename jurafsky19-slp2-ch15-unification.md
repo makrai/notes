@@ -547,7 +547,7 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
     * Structure is called a dotted rule
   * position of the subtree with respect to the input
 
-_0 Book_1 that_2 flight 3_
+0 Book 1 that 2 flight 3
 
 ```
 S → • VP, [0, 0]
@@ -560,7 +560,7 @@ VP → V NP • , [0, 3]
   * (2) created at a later stage in the processing of this sentence
   * (3) with its dot to the right of all its two constituents, represents the
      successful discovery of a tree corresponding to a VP that spans the entire i
-* The basic operation of an Earley parser is to march through the N +_1 sets
+* The basic operation of an Earley parser is to march through the N +1 sets
   * At each step, one of the three operators described below is applied to stts
   * this results in the addition of new states 
     to the end of either the current or the next set of states in the chart
@@ -711,7 +711,7 @@ S → NP VP
 `<X_0 CAT> = < X_1 CAT>`
 `<X_2 CAT> = PP`
 
-X_0 → X_1 and X 2
+`X_0 → X_1 and X 2`
 `<X_1 CAT = < X_2 CAT>`
 `<X_0 CAT = < X_2 CAT>`
 
@@ -765,15 +765,15 @@ X_0 → X_1 and X 2
         prevent, for example, nouns from having some verbal properties
   2. capture generalizations across feature structures
     * subcategorization frames for verbs in English
-    * solution: types
-      1. Each feature structure is labeled by a type
-      2. each type has appropriateness conditions expressing
-        which features are appropriate for it and
-        what types of values they take
-      3. type hierarchy, in which more specific types
-        inherit properties of abstract ones
-      4. unification operation is modified to unify the types of FSs
-         in addition to unifying the attributes and values
+* solution: types
+  1. Each feature structure is labeled by a type
+  2. each type has appropriateness conditions expressing
+    which features are appropriate for it and
+    what types of values they take
+  3. type hierarchy, in which more specific types
+    inherit properties of abstract ones
+  4. unification operation is modified to unify the types of FSs
+     in addition to unifying the attributes and values
 * Types come in two kinds: simple types (also called atomic), and complex
   * simple types: an atomic symbol like sg or pl
     * hierarchy:  multiple-inheritance (lattice. a kind of partial order)
