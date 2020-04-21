@@ -62,7 +62,7 @@ tartalom 16 (11)
 ### -gat/-get és -g
 
 * jelentés: tartós, gyakori vagy ismétlődő eseményeket [megragadó ige képzője]
-* erős sém
+* erős séma
 * több jelentés
   * tartósság (pl. varr-ogat, színez-get) és a
   * gyakoriság/ismétlődés (pl. kihagy-ogat, lefagy-ogat)
@@ -386,7 +386,7 @@ tartalom 16 (11)
   * nem alap: Neologizmusokat az -l képző[vel] általában [csak] bizonyos
     speciális feltételek megléte esetén  lehet létrehozni:
     egy szótagú, mássalhangzóra végződő főnevek és beillesztendő, mintegy
-    főnévként viselkedő idegen igetövek esetébe)
+    főnévként viselkedő idegen igetövek esetében
 * általános jelentése: ’foglalkozik valami­ vel’
   * [plusz] az alapfőnevek jelentésbeli csoport­ jaival összefüggő speciális
     változat[ok], amelyek a használatban metaforizálódhatnak
@@ -407,7 +407,6 @@ tartalom 16 (11)
   * Tipikusan szavak­ hoz, de egyes esetekben szerkezetekhez is járulhatnak
     * Szemben a -(j)ú /-(j)ű affixummal, amely csak szerkezetekhez járulhat.
   * erős produktivitást mutat[nak], a részletesebb adatokat lásd 5.2.1.
-    Példák neologizmusokra:
     * a. a Tom Kennedy-s ...  propagandát b.  trainspottingos humor (1 1 )
     * a.egyetlen, delejező, ingái lendületben b.kórháztrafiki őszök
 * -nyi: méretet vagy menynyiséget neveznek meg, pl. borsó-nyi ’borsó méretű’,
@@ -508,7 +507,7 @@ tartalom 16 (11)
 
 * A mai magyar nyelvben a beálló melléknévi igenév képzője tranzitív igéhez já­
   rulhat produktívan (pl. az elmentendő anyag, a kinyomtatandó dokumentum )
-* intranzitív alalszóval nem mai képzés:
+* intranzitív alapszóval nem mai képzés:
   lesz ~ leendő vagy az (el)jön~(el)jövendő
 * [ellenpéldák]:
   * a. Minden maradandó / végül korhadandó b. Kezdődik új abbamaradandó
@@ -542,9 +541,9 @@ tartalom 16 (11)
 
 ## 6.4.1. Egyedi mintázatok analógiás követése
 
-1. De hogy ezen mi a gunyorászni való (a dudorászni ige analógiájára)
-1. számos egyszerűbbség végett (a kisebbség szó analógiájára)
-1. Alighanem a legjobb, Tcsuszó Sándor terminusával, valódisítványnak nevezni
+* De hogy ezen mi a gunyorászni való (a dudorászni ige analógiájára)
+* számos egyszerűbbség végett (a kisebbség szó analógiájára)
+* Alighanem a legjobb, Tcsuszó Sándor terminusával, valódisítványnak nevezni
    (a hamisítvány szó analógiájára)
 
 ## 6.4.2. Egyedi mintázatok követése szerkezeti motivációval
@@ -572,7 +571,7 @@ tartalom 16 (11)
   * (pl. a hosszabb kiinduló szó szótagszámának megőrzése
 * fordítás­ ként keletkezett oroszgris («- oroszlán + tigris), az angol liger
   * tigroszlán (♦- tigris + oroszlán), az angol tigon magyar megfelelője
-  * a kiinduló szavak a magyarban nem mutatnak hasonlóságot vagy rímelést; nem
+  * a kiinduló szavak a magyarban nem mutatnak hasonlóságot vagy rímelést;
   * A birka és a kecske kereszteződéséből született állat m. neve _bir-kecs_
     * `*`bir-ke vagy `*`kecs-ka (valószínűleg azért, mert ezek kevéssé lennének
       felismerhetők)
