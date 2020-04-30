@@ -11,11 +11,10 @@ arXiv:1909.10724 [cs.CL]
 # 1 Introduction
 
 * evaluations for sentence embedders
-  * intrinsic (e.g., Conneau+ 2018) and
+  * intrinsic (e.g., Conneau+ ACL 2018)
     A Conneau, G Kruszewski, G Lample, L Barrault, and Marco Baroni
     What you can cram into a single vector: Probing sentence embeddings for lin
-    ACL 2018
-  * extrinsic (e.g., GLUE; Wang+ 2019) evaluations have emerged 
+  * extrinsic (e.g., GLUE; Wang+ 2019)
   * Our approach, nearest neighbor overlap (N2O), is something different
     * linguistics~ and task-agnostic manner, using only a large unannotated
     * By drawing a random sample of queries from the corpus itself
@@ -69,7 +68,7 @@ arXiv:1909.10724 [cs.CL]
 * average the word embeddings
 * surprisingly [good] on sentence similarity, NLI (Wieting+ 2016; Arora+ 2017)
 * contextual embeddings: special token or position in the sequence
-  * BERT, the [CLS] token (normally used as input for classification) is also
+  * BERT, the [CLS] token (normally used as input for classification)
   * last token’s representation may be used for GPT
 
 ## 3.3 Encoders
@@ -83,6 +82,12 @@ arXiv:1909.10724 [cs.CL]
   * Universal Sentence Encoder (USE; Cer+ 2018):
     multi-task training on several semantic tasks (including sem textual sim);
     * encode[r] either with a deep averaging network or a transformer
+
+# 4 Experimental Details 4
+
+* The results in §5 are with k set to 50, 
+  averaged across five samples of n = 100 queries
+  * We illustrate the effects of different k and N2O samples in §6
 
 # 5 Results
 
@@ -116,7 +121,7 @@ arXiv:1909.10724 [cs.CL]
 
 # 6 Robustness of N2O across different query samples and sample sizes
 
-## Varying k. How sensitive our procedure is
+## Varying k
 
 * changing [the number of nearest neighbors] does not significantly affect
 
@@ -126,14 +131,13 @@ arXiv:1909.10724 [cs.CL]
 
 * [see] approximate nearest neighbor methods in Appendix C
 
-# 7 Neighbors ... that are stable across embedders
+# 7 Neighbors ... that are stable across embedders 9
 
-* [consistent] neighbors across different embedders? We might expect
 * Table 2
   * an example query with a sentence that is in the 5-nearest neighborhood for
-    all sentence embedders. We also show 
-  * sentences that are highly ranked for some embedder but not in the [top 50]
-    for any other
+    all sentence embedders
+  * sentences that are highly ranked for some embedder but 
+    not in the [top 50] for any other
 
 # 8 Known paraphrase
 
