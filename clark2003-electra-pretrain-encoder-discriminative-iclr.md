@@ -2,6 +2,8 @@ Kevin Clark, Minh-Thang Luong, Quoc V. Le, Christopher D.  Manning
 ELECTRA: Pre-training Text Encoders as Discriminators Rather Than
 https://arxiv.org/abs/2003.10555 arXiv.orgarXiv.org
 
+https://github.com/google-research/electra
+
 # Abstract
 
 * we propose replaced token detection. Instead of masking the input, our

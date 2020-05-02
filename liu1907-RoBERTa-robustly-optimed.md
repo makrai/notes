@@ -6,10 +6,13 @@ Our models and code are available at: https://github.com/pytorch/fairseq
 
 # Abstract
 
-* We measure the impact of many key hyperparameters and training data size. We
+* We measure the impact of many key hyperparameters and training data size
 * BERT was significantly undertrained, and 
-  * can match or exceed the performance of every model published after it. Our
-* we achieves SOTA results on GLUE, RACE and SQuAD. These results highlight the
+  * can match or exceed the performance of every model published after it
+* we achieves SOTA results on GLUE, RACE and SQuAD
+  * 88.5 on the public GLUE leaderboard, matching the 88.4 reported by Yang+
+  * new SOTA on 4/9 of the GLUE tasks: MNLI, QNLI, RTE and STS-B. We also 
+  * match SOTA results on SQuAD and RACE
 
 # 1 Intro
 
@@ -21,19 +24,11 @@ Our models and code are available at: https://github.com/pytorch/fairseq
     1. training on longer sequences; and 
     1. dynamically changing the masking pattern applied to the training data.
   * new dataset (CC-NEWS) of comparable size to other privately used
-    datasets, to better control for training set size effects.
-
-When controlling for training data, our improved training procedure improves
-upon the published BERT results on both GLUE and SQuAD.  When trained for
-longer over additional data, our model achieves a score of 88.5 on the public
-GLUE leaderboard, matching the 88.4 reported by Yang+ (2019). Our model
-establishes a new SOTA on 4/9 of the GLUE tasks: MNLI, QNLI, RTE and STS-B. We
-also match SOTA results on SQuAD and RACE.  Overall, we re-establish that
-BERT’s masked language model training objective is competitive with other
-recently proposed training objectives such as perturbed autoregressive language
-modeling (Yang+ 2019).
-
-In summary, the contributions of this paper are: 
+    datasets, to better control for trai
+  * re-establish that BERT’s masked language model training objective is
+    competitive with other recently proposed training objectives such as
+    perturbed autoregressive language modeling (Yang+ 2019)
+* contributions of this paper are: 
   1. We present a set of important BERT design choices and training strategies
      and introduce alternatives that lead to better downstream task
      performance; 

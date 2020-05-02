@@ -149,13 +149,13 @@ arxiv.org/abs/2004.09095
 
 ## 2.4 Findings
 
-### On your marks As can be seen in Figure 3, the
+### On your marks. As can be seen in Figure 3, the
 
 * Winners take pole position in all rankings, and Class 0 [have] no resource
 * Wikipedia distribution seems to be more fair for classes 1, 2, and 3 vs 4 5
 * Web distribution has a clear disparity
 
-### Talk ain’t cheap Looking at Table 1, we see that
+### Talk ain’t cheap. Looking at Table 1, we see that
 
 * lack of technological inclusion for class 0 could draw native speakers to 5
 

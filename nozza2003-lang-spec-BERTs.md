@@ -30,7 +30,7 @@ arXiv:2003.02912 [cs.CL]
   * original BERT model was trained using the WordPiece tokenizer (Wu+ 2016),
   * Camem-BERT (Martin+ 2019)) used the SentencePiece tokenizer (available as
     OSS [Out of Specification] software) (Kudo and Richardson, 2018)
-* we identified 30 different pretrained languagespecific BERT models, covering
+* we identified 30 different pretrained language-specific BERT models, covering
   18 Languages and tested on 29 tasks,
   resulting in 177 different performance results
   (Le+ 2019; Antoun+ 2020; Martin+ 2019; Alabi+ 2019; Kuratov & Arkhipov, 2019;
@@ -88,7 +88,7 @@ arXiv:2003.02912 [cs.CL]
   * on average, language-specific BERT models obtain higher results with
   * huge variation in the individual performances
 
-### Languages Covered The language-specific BERT models proposed
+### Languages Covered. The language-specific BERT models proposed
 
 * range from [high-resourced] languages (e.g., French, Italian) to
 * low-resource languages, such as Yorb and Mongolian. At the current date,
@@ -166,7 +166,7 @@ arXiv:2003.02912 [cs.CL]
 
 * [which] languages are covered, which tasks tackled, and which domains consid
   * huge variability models and the difficulty ... to find the best model for a
-    specific task, language, and domain. To this end, we have introduced
+    specific task, language, and domain
 * In the future, we plan to provide
   * independent verification of reported results and
   * direct comparisons of language-specific BERT models on specific domains and

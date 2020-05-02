@@ -26,7 +26,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
 * Recently, new pre-trained models
   * XLM-RoBERTa (XLM-R; Conneau+ (2019)) outperform mBERT on XNLI and NER tasks
   * DistilmBERT (Sanh+ 2019) ... at a significantly lower computational cost
-* mBERT used cross-lingually for zero-shot transfer (Pires+ 2019)
+* mBERT is used cross-lingually for zero-shot transfer (Pires+ 2019)
   * morphological and syntactic tasks, at least for typologically similar langs
   * semantic task, sentence-retrieval, with promising initial results. Their
 * how good the cross-lingual mBERT representation is for lexical semantics,

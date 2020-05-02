@@ -3,6 +3,8 @@ XTREME: A Massively Multilingual Multi-task Benchmark
 Junjie Hu, Sebastian Ruder, A Siddhant, G Neubig, Orhan Firat, Melvin Johnson
 arXiv:2003.11080 [cs.CL]
 
+https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
+
 # Abstract
 
 * we introduce the Cross-lingual TRansfer Evaluation of Multilingual Encoders
@@ -194,6 +196,8 @@ arXiv:2003.11080 [cs.CL]
     * For the Austro-Asiatic, Kartvelian, and Kra-Dai families as well as for
       isolates, we only obtain one language
 * the following 40 languages (shown with their ISO 639-1 codes for brevity)
+  * af ar bg bn de el en es et eu fa fi fr he hi hu id it ja jv ka kk ko ml mr
+    ms my nl pt ru sw ta te th tl tr ur vi yo zh
   * 12 language families and two isolates
 * overview ... in terms of their number of Wikipedia articles,
   linguistic features, and coverage in XTREME in the appendix
@@ -388,7 +392,7 @@ available, we additionally compare against an
     different pretraining domain (see the appendix). This indicates that
 * similar correlations when using the number of tokens in Wikipedia instead
 
-## Language characteristics We analyze results based on different
+## Language characteristics
 
 * language families and writing scripts in Figure 3. For
 * mBERT, we observe the best transfer performance on branches of the
@@ -402,7 +406,7 @@ available, we additionally compare against an
     Chinese or Japanese ideograms.  This indicates that the current models
     * i.e. difficulty transferring word-level syntactic information
 
-## Errors across languages For
+## Errors across languages
 
 * XNLI and XQuAD where the other test sets are translations from English, we
 * whether approaches make the same type of errors in the source and target
