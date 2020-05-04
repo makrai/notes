@@ -306,9 +306,9 @@ arXiv:2003.08271 [cs.CL]
   * lexical overlap between languages plays a negligible role K+ [74] in the
   * MASS [147] pretrained on multiple languages
     * significant improvement for unsupervised NMT
-* XLM [25] improves M-BERT by incorporating a crosslingual task, translation
-  language modeling (TLM), which performs MLM on a concatenation of parallel
-  bilingual sentence pairs
+* XLM [25] improves M-BERT by incorporating a crosslingual task, 
+  translation language modeling (TLM)
+  i.e. MLM on a concatenation of parallel bilingual sentence pairs
 * Unicoder [63] further propose three new crosslingual (CL) pre-training tasks,
   * CL word recovery, CL paraphrase classification, and CL masked LM
 * PTMs trained on a single language significantly outperform the multilingual
