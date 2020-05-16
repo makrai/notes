@@ -22,7 +22,7 @@ arXiv:1906.02715 [cs.LG]
     * Inspirational work from Hewitt and Manning [7]
     * squared-distance tree embedding
 * Our work:
-  * how BERT represents syntax, we describe evidence that
+  * how BERT represents syntax
     * attention matrices contain grammatical representations
     * certain directions in space representing particular dependency relations
     * mathematical arguments that may
@@ -45,13 +45,13 @@ arXiv:1906.02715 [cs.LG]
       * two versions, a 12-layer BERT-base model and a 24-layer BERT-large
     * in each transformer layer is a set of attention matrices,
       one for each attention head,
-      each [head] contains a scalar value for each pair (token_i , token j)
+      each [head] contains a scalar value for each pair (token_i , token_j)
 
 ## 2.1 Language representation by neural networks
 
 * [related work on] the internal states of RNN-based models have shown that
-  [RNNs] represent information about soft hierarchical syntax in a form that
-  can be extracted by a one-hidden-layer network [11]
+  [RNNs] represent information about soft hierarchical syntax
+  * can be extracted by a one-hidden-layer network [11]
 * [from] full-sentence embeddings, a wide variety of syntactic properties could
   be extracted not just by an MLP, but by logistic regression [4]
 * context embeddings in BERT and related models
@@ -66,7 +66,7 @@ arXiv:1906.02715 [cs.LG]
     to tree distance in the dependency parse. They ask
     * why squaring distance is necessary; we address this question in sec 3
 * two motivating questions for our research
-  * other examples of intermediate representations? And, from a
+  * other examples of intermediate representations?
   * geometric perspective, how do all these [information coexist in a] vector?
 
 # 3 Geometry of syntax 2
@@ -78,7 +78,7 @@ arXiv:1906.02715 [cs.LG]
 ##  3.1 Attention probes and dependency representations
 
 * attention probe, an analog of edge probing [25]
-  * a pair of tokens, (token_i , token_j)
+  * a pair of tokens, `(token_i , token_j)`
   * input is a model-wide attention vector
     formed by [concating every attention matrix from every] head in every layer
   * goal is to classify a given relation between the two tokens with a linear m
@@ -106,8 +106,8 @@ arXiv:1906.02715 [cs.LG]
 
 ##    3.2.1 Mathematics of embedding trees in Euclidean space
 
-* Hewitt and Manning ask why parse tree distance seems to correspond
-  specifically to the _square_ of Euclidean distance, and
+* Hewitt and Manning ask 
+  * why parse tree distance [corresponds] specifically to the _square_ of Eucl
   * whether some other metric might do better [7]
   * We describe math reasons why squared Euclidean distance may be natural
     * one cannot generally embed a tree, with its tree metric d, isometrically
@@ -123,17 +123,17 @@ arXiv:1906.02715 [cs.LG]
 
 ###   3.2.2 Visualization of parse tree embeddings 4
 
-* compare [parse tree embeddings in BERT] to exact power-2 embeddings?  To
+* compare [parse tree embeddings in BERT] to exact power-2 embeddings?
   * layer 16 (following [7]),
     transformed by the Hewitt and Manning’s “structural probe” matrix B,
-    yielding a set of points in 1024-dimensional space. We
+    yielding a set of points in 1024-dimensional space
   * used PCA to project to two dimensions
     * t-SNE and UMAP [16], were harder to interpret
 * whether the difference between these projected trees and the canonical ones
   is merely noise, or a more interesting pattern. By looking at the
-  * average embedding distances of each dependency relation (see Figure 3) , we
+  * average embedding distances of each dependency relation (see Figure 3)
     * vary widely from around 1.2 (compound:prt, advcl)
-    to 2.5 (mwe, parataxis, auxpass). Such systematic differences suggest that
+    to 2.5 (mwe, parataxis, auxpass): systematic differences
 
 # 4 Geometry of word senses 5
 
@@ -147,54 +147,54 @@ arXiv:1906.02715 [cs.LG]
     * within one of these clusters there is a kind of
       quantitative scale, related to the number of people dying
 * two immediate questions. First, is it possible to find
-  * quantitative corroboration that word senses are well-represented? Second,
+  * quantitative corroboration that word senses are well-represented?
   * seeming contradiction: position represented syntax or semantics?
 
 ##  4.2 Measurement of word sense disambiguation capability
 
 * a simple classifier on these internal representations [for] WSD
-  * procedure described in [21]: a similar experiment with the ELMo model. For
-    ME Peters, M Neumann, M Iyyer, M Gardner, C Clark, K ton Lee, L Zettlemoyer
-    Deep contextualized word representations
-    arXiv preprint arXiv:1802.05365,
+  * procedure described in [21]: a similar experiment with the ELMo model
+    * ME Peters, M Neumann, M Iyyer, M Gardner, C Clark, K Lee, L Zettlemoyer
+      Deep contextualized word representations
+      arXiv preprint arXiv:1802.05365,
   * nearest-neighbor classifier: centroid[s] of a given word sense’s BERT-base
     embeddings in the training data
-  * data and evaluation from [22]: the
+  * data and evaluation from [22]:
     * training data was SemCor [18] (33,362 senses), and the
     * testing data was the suite described in [22] (3,669 senses)
-* achieves an F1 score of 71.1, higher than the current state of the art (Table
-  * accuracy monotonically increasing through the layers. This is a strong
+* achieves an F1 score of 71.1, higher than the current state of the art
+  * accuracy monotonically increasing through the layers
   * an even higher score of 71.5 was obtained using the technique in next sec
 
 ### 4.2.1 An embedding subspace for word senses? 7
 
 * hypothesized: a linear transformation under which distances between
-  embeddings would better reflect their semantic relationships–that is, words
+  embeddings would better reflect their semantic relationships
 * we trained a probe following Hewitt and Manning’s methodology
   * initialized a random matrix B ∈ R k×m , testing different values for m
   * Loss is,
     * roughly, defined as the difference between the average cosine similarity
       between embeddings of words with different senses, and that between
-      embeddings of the same sense. However,
+      embeddings of the same sense
     * we clamped the cosine similarity terms 
       to within ±0.1 of the pre-training averages for same and different senses
       * Without clamping, the trained matrix simply ended up taking
-        well-separated clusters and separating them further). We
+        well-separated clusters and separating them further)
       * [clamping values tested] between 0.05 and 0.2
   * corpus was the same dataset from 4.1.2., filtered to ambiguous words
-    each [senses] with at least two occurrences (for 8,542 out of the original
-    33,362 senses)
+    * each [sense] with at least two occurrences 
+      (for 8,542 out of the original 33,362 senses)
   * Embeddings came from BERT-base (12 layers, 768-dimensional embeddings)
-  * evaluat[ion on the] WSD task used in 4.1.2 (Table 1). As a
+  * evaluat[ion on the] WSD task used in 4.1.2 (Table 1)
   * control: random probe of the same shape. As mentioned in 4.1.2,
-  * untransformed BERT embeddings achieve a SOTA accuracy rate of 71.1%. We
+  * untransformed BERT embeddings achieve a SOTA accuracy rate of 71.1%
   * trained probes ... achieve slightly improved accuracy down to m = 128
   * layers
-    * only a modest improvement in accuracy for final-layer embeddings, we note
+    * only a modest improvement in accuracy for final-layer embeddings
     * more dramatically improve the performance of embeddings at earlier layers
       * there is [much] semantic information in the geometry of earlier-layers
-* word sense information may be contained in a lower-dimensional space. This
-  * a resolution to the seeming contradiction mentioned above: a vector encodes
+* word sense information may be contained in a lower-dimensional space
+  * a resolution to the seeming contradiction mentioned above
   * syntax and semantics ... in separate complementary subspaces
 
 ##  4.3 Embedding distance and context: a concatenation experiment
@@ -211,7 +211,7 @@ arXiv:1906.02715 [cs.LG]
   * cosine similarity between the keyword embeddings and matching/opposing cent
   * ratio between the two similarities the individual similarity ratio
     * Generally ... greater than one: closer to the matching centroid
-  * We joined each sentence pair with the word "and"
+  * We joined each sentence pair with the word _and_
   * concatenated similarity ratio
   * [contror: Concatenating a random sentence]
 
@@ -219,15 +219,14 @@ arXiv:1906.02715 [cs.LG]
 
 * projecting the final-layer keyword embeddings into the semantic subspace
   discussed in 4.1.3
-  * i.e. multiplying each embedding by our trained semantic probe, we obtained
+  * i.e. multiplying each embedding by our trained semantic probe
   * higher ratio, lower average misclassification rates
 
 # 5 Conclusion and future work
 
 * future research
-  * What other meaningful subspaces exist? After all, there
-  * what the internal geometry can tell us about the specifics of the
-    transformer architecture? ... Find areas for improvement, or refine
+  * What other meaningful subspaces exist?
+  * what the geometry can tell us about the specifics of the transformer
 
 # Appendix 10
 
