@@ -70,6 +70,13 @@ https://turkunlp.org/finbert
 
 # 3 Pretraining
 
+|.	        |Docs	|Sents	|Tokens	|Chars	|
+|-----------|-----|-------|-------|-------|
+|News	      |4M	  |68M	  |0.9B	  |6B	    |
+|Discussion	|83M	|351M	  |4.5B	  |28B	  |
+|Crawl	    |11M	|591M	  |8.1B	  |55B	  | 
+|Total	    |98M	|1~010M	|13.5B	|89B	  |
+
 * We next introduce the
   * sources of unlabeled data used to pretrain FinBERT and present the
   * data filtering and cleanup, vocabulary generation, and pretraining
