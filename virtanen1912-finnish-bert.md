@@ -10,36 +10,34 @@ https://turkunlp.org/finbert
 * multilingual models that can be
   fine-tuned to address tasks in a large number of different languages
 * [we compare] the multilingual BERT model on a range of [Finnish] tasks,
-  ... with a new Finnish BERT model trained from scratch. The new
+  ... with a new Finnish BERT model trained from scratch
 * language-specific model is shown to systematically and clearly outperform
-  the multilingual.  While the
+  the multilingual
 * multilingual model largely fails to reach the performance of previously
   proposed methods, the
-* custom Finnish BERT model establishes new state-of-the-art results on all
-  corpora for all reference tasks:
+* custom Finnish BERT model establishes new SOTA on all corpora for all tasks:
   * part-of-speech tagging, named entity recognition, and dependency parsing
 
 # 1 Introduction
 
-Transfer learning approaches using deep neural network architectures have
-recently achieved substantial advances in
+* Transfer learning approaches using deep neural network architectures have
+  recently achieved substantial advances in
   * sequence labeling tasks such POS tagging and NER (Peters+ 2018b) to
   * dependency parsing (Kondratyuk and Straka, 2019) and
   * natural language understanding (NLU) tasks (Devlin+ 2018). While the great
 * other languages, typically through multilingual models
-* BERT model of Devlin+ (2018) has been particularly influential, establishing
-  SOTA results for English for a range of NLU tasks and NER when it was
-  released. For most languages, the only currently available BERT model is the
-* multilingual model (M-BERT) trained on pooled data from 104 languages.  While
-  * remarkable ability to generalize across languages (Pires+ 2019), several
+* BERT model of Devlin+ (2018) establishing SOTA results for English for a
+  range of NLU tasks and NER when it was released
+* multilingual model (M-BERT) trained on pooled data from 104 languages
+  * remarkable ability to generalize across languages (Pires+ 2019)
   * monolingual BERT models, where available, can notably outperform M-BERT
     * French BERT model (Martin+ 2019), the
     * preliminary results accompanying the release of a German BERT model, and
     * comparing M-BERT with English and German monolingual (Rönnqvist+ 2019)
-* we [apply] language-specific and multilingual BERT models to Finnish NLP. We
+* we [apply] language-specific and multilingual BERT models to Finnish NLP
   * POS tagging, NER, and dependency parsing as well text classification tasks
   * on most tasks the multilingual model does not represent an advance over
-    previous state of the art, indicating that multilingual models may fail to
+    previous SOTA, indicating that multilingual models may fail
   * the custom Finnish BERT model systematically out-performs the multilingual
     as well as all previously proposed methods on all benchmark tasks
 
@@ -58,7 +56,7 @@ recently achieved substantial advances in
     * BERT and related models form the _de facto_ standard approach to
       embedding text segments as well as individual words in context
 
-  * computationally intensive task, requiring substantial resources. As of this
+  * computationally intensive task, requiring substantial resources
     * Unlike the previous generation of models, training BERT is a
   * Google has released
     * English and Chinese monolingual BERT models and the
@@ -86,13 +84,13 @@ recently achieved substantial advances in
   * determine the number of word pieces and unknown pieces per basic token
     * English, both BERT and M-BERT generate less than 1.2 WordPieces per token
       * model will represent the great majority of words as a single piece
-    * Finnish, this ratio is nearly 2 for M-BERT. While
+    * Finnish, this ratio is nearly 2 for M-BERT
       * some of this difference is explained by the morphological complexity
       * also reflects that only a small part of the M-BERT vocabulary is
         dedicated to Finnish:
-        using the language-specific FinBERT vocabularies, this ratio remains
-        notably lower even though the size of these vocabularies is only half
-        of the M-BERT vocabularies
+        * using the language-specific FinBERT vocabularies, this
+          ratio remains notably lower even though the size of these
+          vocabularies is only half of the M-BERT vocabularies
 
 # 4 Evaluation
 
@@ -100,13 +98,13 @@ recently achieved substantial advances in
 
 * probing tasks proposed by Conneau+ (2018)
 * Finnish data introduced for these tasks by Ravishankar+ (2019)
-  * [Ravishankar+] omit the TopConst task defined in the original paper. 
-  * We also left out the Semantic odd-manout (SOMO) task, as we found the 
-    data to have errors making the task impossible to perform correctly. All of
-* freezing the BERT layers and training a dense layer on top of it to function
+  * [Ravishankar+] omit the TopConst task defined in the original paper
+  * We also left out the Semantic odd-man-out (SOMO) task, as we found the
+    data to have errors making the task impossible to perform correctly
+* freezing the BERT layers and training a dense layer on top of it
   * The only information passed from BERT to the classifier is the [CLS] state
-* tasks can be roughly categorized into 3 different groups: surface, syntactic
-  * Surface tasks In the
+* tasks can be roughly categorized into 3 different groups: surface, synt, sem
+  * Surface tasks
     * sentence length (SentLen) task, sentences are classified into 6 classes
     * word content (WC) -- which of 1000 mid-frequency words occurs
   * Syntactic tasks The
@@ -114,7 +112,7 @@ recently achieved substantial advances in
       identify the depth of the syntax tree of a sentence. We used dependency
       trees to maintain comparability with the work of Ravishankar+ (2019),
       whereas the original task used constituency trees
-    * Bigram shift (BiShift) tests the model’s ability to 
+    * Bigram shift (BiShift) tests the model’s ability to
       recognize when two adjacent words have had their positions swapped
   * Semantic tasks In the
     * subject number (SubjNum) task the number of the subject, i.e. singular or
@@ -129,15 +127,15 @@ recently achieved substantial advances in
 * best performance is achieved by ... language-specific model for all tasks
   except TreeDepth, where M-BERT reaches the highest performance
 * differences between the results for the language-specific and multilingual
-  * modest for most tasks 
-    with the exception of the BiShift task, where the FinBERT models are 
+  * modest for most tasks
+    with the exception of the BiShift task, where the FinBERT models are
     markedly better at identifying sentences with inverted words
 
 # 5 Discussion
 
 * Finnish ranks 24th ... by Wikipedia article count, and
-  * 25th in Common Crawl by page count. 23 There are thus dozens of languages
-* methods ... have only few language dependencies, such as the 
-  use of UD parsing results for filtering
+  * 25th in Common Crawl by page count. There are thus dozens of languages
+* methods ... have only few language dependencies, such as the use of 
+  UD parsing results for filtering
 
 # Conclusions
