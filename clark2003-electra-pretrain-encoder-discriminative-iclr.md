@@ -48,16 +48,18 @@ https://github.com/google-research/electra
     * much faster than BERT. We also show ELECTRA achieves 
     * higher accuracy on downstream tasks when fully trained.  
 * we train ELECTRA models of various sizes and evaluate their 
-  downstream performance vs. their compute requirement. In particular, we run
-  * GLUE natural language understanding benchmark (Wang+ 2019) and 
-  * SQuAD question answering benchmark (Rajpurkar+ 2016).  
+  downstream performance vs. their compute requirement
+  * tasks
+    * GLUE natural language understanding benchmark (Wang+ 2019) and 
+    * SQuAD question answering benchmark (Rajpurkar+ 2016).  
   * ELECTRA substantially outperforms MLM-based methods such as BERT and XLNet
     given the same model size, data, and compute (see Figure 1). For example,
-    we build an ELECTRA-Small model that can be trained on 1 GPU in 4 days. 2
-    ELECTRA-Small outperforms a comparably small BERT model by 5 points on
-    GLUE, and even outperforms the much larger GPT model (Radford+ 2018). Our
-  * also works well at large scale, where we train an 
-    ELECTRA-Large model that performs comparably to RoBERTa (Liu+ 2019) and
-    XLNet (Yang+ 2019), despite having fewer parameters and using 1/4 of the
-    compute for training.
-  * outperforms ALBERT (Lan+ 2019) on GLUE and sets a new SOTA for SQuAD 2.0.
+    * ELECTRA-Small model that 
+      * can be trained on 1 GPU in 4 days. 2 ELECTRA-Small 
+      * outperforms 
+        * a comparably small BERT model by 5 points on GLUE, and even outperforms
+        * the much larger GPT model (Radford+ 2018)
+    * also works well at large scale, where we train an ELECTRA-Large model
+      * performs comparably to RoBERTa (Liu+ 2019) and XLNet (Yang+ 2019),
+        despite having fewer parameters and using 1/4 of the compute for traing
+  * outperforms ALBERT (Lan+ 2019) on GLUE and sets a new SOTA for SQuAD 2.0

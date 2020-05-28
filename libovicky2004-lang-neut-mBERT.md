@@ -8,7 +8,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   such as multilingual BERT (mBERT) and XLM-RoBERTa
   * Previous work probed the cross-linguality of the representations indirectly
     using zero-shot transfer learning on morphological and syntactic tasks
-* We focus on the language-neutrality of mBERT with respect to lexical semantcs
+* We focus on the language-neutrality of mBERT with respect to lexical sem
   * contextual embeddings are more language-neutral and informative
     than aligned static word-type embeddings
     which are explicitly trained for language neutrality

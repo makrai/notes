@@ -224,19 +224,19 @@ TACL Volume 7, 2019 p.49-72
 * challenge sets ... have been used in NLP for a long time (Lehmann+ 1996),
   especially for evaluating MT systems (King and Falkedal, 1990; Isahara, 1995;
   Koh+ 2001)
-* [desireable] properties of test suites (Lehmann+ 1996):
+* [desirable] properties of test suites (Lehmann+ 1996):
   systematicity, control over data, inclusion of negative data, and
   exhaustivity
   * echoed in more recent work (Wang+ 2018a). For instance,
   * e.g. semantic test suite (Cooper+ 1996) that targets phenomena as diverse
     as quantifiers, plurals, anaphora, ellipsis, adjectival properties
 * [then] a hiatus of a couple of decades, 9 challenge sets have
-  * can be attributed to the rise of large-scale quantitative evaluation of
+  * can be attributed to the rise of large-scale quantitative evaluation
 * recently gained renewed popularity in the NLP community
 * In this section, we include datasets ... that diverge from the common
   average-case evaluation. Many of them share some of the properties noted by
 * categorized along the following criteria
-  * Another typology of evaluation protocols (Burlot and Yvon 2017). Their
+  * Another typology of evaluation protocols (Burlot and Yvon 2017)
     * partially overlapping with ours, [not as comprehensive] like ours
 * Table SM2 categorizes many recent challenge sets along these criteria. Below
 

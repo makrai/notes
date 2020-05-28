@@ -53,9 +53,9 @@ EMNLP 2019
   * ELMo ... by concatenating the internal states of a 2-layer biLSTM trained
   * BERT and GPT-2 are bi-directional and uni-directional transformer-based LMs
     * transformer layer
-      * of 12layer BERT (base, cased) and 12-layer GPT-2 creates a
+      * of 12-layer BERT (base, cased) and 12-layer GPT-2
       * by attending to different parts of the input sentence
-        (Devlin+ 2018; Radford+ 2019). BERT – and subsequent iterations on
+        (Devlin+ 2018; Radford+ 2019)
     * BERT (Liu+ 2019b; Yang+ 2019) – have achieved SOTA on e.g. QA & sentiment
 
 ## Probing Tasks
