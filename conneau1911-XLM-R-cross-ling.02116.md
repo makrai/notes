@@ -8,12 +8,12 @@ arXiv:1911.02116
 * pretraining multilingual language models at scale leads to
   significant performance gains for a wide range of cross-lingual transfer task
 * a Transformer-based masked language model on one hundred languages, using
-  more than two terabytes of filtered CommonCrawl data. Our model, dubbed
-* significantly outperforms multilingual BERT (mBERT) on a variety of
-  cross-lingual benchmarks, including +13.8% average accuracy on XNLI, +12.3%
-  average F1 score on MLQA, and +2.1% average F1 score on NER.  XLM-R
-* performs particularly well on low-resource languages, improving 11.8% in XNLI
-  accuracy for Swahili and 9.2% for Urdu over the previous XLM model
+  more than two terabytes of filtered CommonCrawl data
+* significantly outperforms multilingual BERT (mBERT) on cross-lingual benchmks
+  * +13.8% average accuracy on XNLI, +12.3% average F1 score on MLQA, and 
+    +2.1% average F1 score on NER
+* performs particularly well on low-resource languages, 
+  improving 11.8% in XNLI accuracy for Swahili and 9.2% for Urdu
 * We [empirically evaluate] the key factors that are required to achieve this
   * trade-offs between
     * positive transfer and capacity dilution and
@@ -26,36 +26,36 @@ arXiv:1911.02116
 
 * goal of this paper is to improve cross-lingual language understanding (XLU),
   by carefully studying the effects of training
-  unsupervised crosslingual representations at a very large scale. We present
+  unsupervised crosslingual representations at a very large scale
 * XLM-R, a transformer-based multilingual masked language model pre-trained on
-  * 100 languages, which obtains SOTA performance on cross-lingual
-    classification, sequence labeling and QA
-* Multilingual masked language models (MLM, large Transformer models (Vaswani)
+  * 100 languages
+  * SOTA performance on cross-lingual classification, sequence labeling and QA
+* Multilingual masked language models (MLM), large Transformer models (Vaswani)
   * mBERT (Devlin+ 2018) and
   * XLM (Lample and Conneau, 2019) have pushed the SOTA on cross-lingual NLU
 * effective in cross-lingual
   * natural language inference (Bowman+ 2015; Williams+ 2017; Conneau+ 2018)
   * QA (Rajpurkar+ 2016; Lewis+ 2019)
-  * and named entity recognition (Pires+ 2019; Wu and Dredze, 2019)
-* limited scale: all of these studies pre-train on Wikipedia, which provides a
+  * named entity recognition (Pires+ 2019; Wu and Dredze, 2019)
+* limited scale: all of these studies pre-train on Wikipedia
   * especially for lower resource languages
 * we first present a comprehensive analysis of the
-  trade-offs and limitations of multilingual language models at scale,
+  trade-offs and limitations of multilingual language models at scale
   * inspired by recent monolingual scaling efforts (Liu+ 2019)
   * trade-off between high-resource and low-resource languages
-  * impact of language sampling and vocabulary size. The experiments expose a
-    trade-off as we scale the number of languages for a fixed model capacity:
+  * the curse of multilinguality
+    * impact of language sampling and vocabulary size
+    * trade-off as we scale the number of languages for a fixed model capacity
     * more languages leads to better cross-lingual performance on low-resource
       languages up until a point, after which the overall performance on
-      monolingual and cross-lingual benchmarks degrades. We refer to this
-  * the curse of multilinguality, and show that it
+      monolingual and cross-lingual benchmarks degrades
   * can be alleviated by simply increasing model capacity
 * Our best model XLM-RoBERTa (XLM-R) outperforms mBERT on cross-lingual
   * classification by up to 21% accuracy
     on low-resource languages like Swahili and Urdu
   * XNLI: It outperforms the previous SOTA by 3.9% average accuracy
   * 2.1%average F1-score on Named Entity Recognition, and
-  * 8.4% average F1-score on cross-lingual Question Answering. We also evaluate
+  * 8.4% average F1-score on cross-lingual Question Answering
 * monolingual fine tuning on the GLUE and XNLI benchmarks, where XLM-R obtains
   * competitive with SOTA monolingual models, including RoBERTa (Liu+ 2019)
 
@@ -88,12 +88,11 @@ arXiv:1911.02116
     word embeddings in multiple languages (Grave+ 2018)
 * massively multilingual machine translation models from large parallel corpora
   * high and low resource trade-off and the problem of capacity dilution
-    (Johnson+ 2017; Tan+ 2019). The work
-  * most similar to ours is Arivazhagan+ (2019), which trains a single model in
-    103 languages on over 25 billion parallel sentences
-  * Siddhant+ (2019) further analyze the representations obtained by the
-    encoder of a massively multilingual machine translation system and show
-    that it obtains similar results to mBERT on cross-lingual NLI
+    (Johnson+ 2017; Tan+ 2019)
+  * most similar to ours is Arivazhagan+ (2019),
+    a single model in 103 languages trained on over 25 billion parallel sentenc
+  * encoder of a massively multilingual machine translation system obtains
+    similar results to mBERT on cross-lingual NLI (Siddhant+ 2019)
 
 # 3 Model and Data
 
@@ -125,24 +124,23 @@ arXiv:1911.02116
   iso codes of 88 languages that are shared across XLM-R and XLM-100, the model
   from Lample and Conneau (2019) trained on Wikipedia text in 100 languages
 * we replace some languages with more commonly used ones such as
-  * romanized Hindi and traditional Chinese. In our
+  * romanized Hindi and traditional Chinese
   * ablation studies [on] the 7 languages for which we have classification and
     sequence labeling evaluation benchmarks: en fr de ru zh sw ur
     * a suitable range of language families and includes low-resource languages
-  * larger sets of 15, 30, 60 and all 100 languages.  When reporting results on
-    * high-resource = average of English and French results, and the
+  * larger sets of 15, 30, 60 and all 100 languages
+    * high-resource = average of English and French results
     * by low-resource, we refer to the average of Swahili and Urdu results
 
 ## Scaling the Amount of Training Data
 
-* Following Wenzek+ (2019), we build a clean CommonCrawl Corpus in 100
-  languages
+* Following Wenzek+ (2019), we build a clean CommonCrawl Corpus in 100 langs
 * internal language identification model in combination with the one from
   fastText (Joulin+ 2017)
-* one CommonCrawl dump for English and twelve dumps for all other languages,
+* one CommonCrawl dump for English and twelve dumps for all other languages
   * significantly increases dataset sizes, especially for e.g. Burmese and Swah
 * monolingual Wikipedia corpora are too small to enable unsupervised represent
-  * As we show in Section 5.3,
+  * As we show in Section 5.3
 * few hundred MiB of text data is usually a minimal size for learning a BERT
 
 # 4 Evaluation
@@ -204,57 +202,56 @@ arXiv:1911.02116
 ### Transfer-dilution trade-off and Curse of Multilinguality
 
 * Model capacity is constrained [by] memory and speed during training and inf
-* per-language capacity decreases as we increase the number of languages. While
+* per-language capacity decreases as we increase the number of languages
   * low-resource language performance can be improved by adding
-    similar higher-resource languages during pretraining, the
+    similar higher-resource languages
   * overall downstream performance suffers from this capacity dilution
     (Arivazhagan+ 2019)
-* Figure 2, which shows XNLI performance vs the number of languages the model
+* Figure 2, which shows XNLI performance vs the number of languages
   * from 7 to 15 ... improves performance, especially on low resource
   * Beyond this point ... degrades performance across all languages
-  * same trend can be observed for models trained on the larger CommonCrawl Cor
-* issue is even more prominent when the capacity of the model is small. To show
+  * same trend can be observed for models trained on the larger CommonCrawl
+* issue is even more prominent when the capacity of the model is small
   * we pretrain models on Wikipedia Data in 7, 30 and 100 languages
   * As we add more languages, we make the Transformer wider
-    by increasing the hidden size from 768 to 960 to 1152. In
+    by increasing the hidden size from 768 to 960 to 1152
   * Figure 4: added capacity allows XLM-30 to be on par with XLM-7, thus
   * The added capacity for XLM-100, however, is not enough and it still lags
     behind due to higher vocabulary dilution
     (recall from Sec 3 that we used a fixed vocab size of 150K for all models)
 
-### High-resource/Low-resource trade-off. The
+### High-resource/Low-resource trade-off
 
-* allocation of the model capacity across languages is controlled by several
+* allocation of the model capacity across languages is controlled by
   * training set size, the
   * size of the shared subword vocabulary, and the
   * rate at which we sample training examples from each language
-* We study the effect of sampling on the performance of high-resource (English
-  and French) and low-resource (Swahili and Urdu) languages for an XLM-100
-  model trained on Wikipedia
-  * similar trend for the construction of the subword vocab)
+* We study the effect of sampling on the performance of 
+  high-resource (English and French) and low-resource (Swahili and Urdu)
+  languages for an XLM-100 model trained on Wikipedia
+  * similar trend for the construction of the subword vocab
   * varying the α parameter which controls the exponential smoothing of the
-    language sampling rate. Similar to Lample and Conneau (2019),
-    * we use a sampling rate proportional to the number of sentences in each
-      corpus
+    language sampling rate. Similar to Lample and Conneau (2019), we use a 
+    * sampling rate proportional to the number of sentences in each corpus
     * higher values of α see batches of high-resource languages more often
-    * overall: performance, we found 0.3 to be an optimal value for α
+    * overall: in performance, we found 0.3 to be an optimal value for α
 
 ### Importance of Capacity and Vocabulary Size 5
 
 * scaling the size of the shared vocabulary (the vocabulary capacity) can
-  improve the performance of multilingual models on downstream tasks. To
+  improve the performance of multilingual models on downstream tasks
 * we train XLM-100 models on Wikipedia data with different vocabulary sizes
-  * We keep the overall number of parameters constant by adjusting the width of
+  * We keep the overall number of parameters constant by adjusting the width
 * Figure 6
   * fixed capacity, we observe a 2.8% increase in XNLI average accuracy as we
-    increase the vocabulary size from 32K to 256K.  This suggests that
+    increase the vocabulary size from 32K to 256K
 * i.e. multilingual models can benefit from allocating a higher proportion of
-  the total number of parameters to the embedding layer even though this
+  the parameters to the embedding layer
 * With bigger models, we believe that using a vocabulary of up to 2 million
   tokens with an adaptive softmax (Grave+ 2017; Baevski and Auli, 2018) should
   improve performance even further, but we leave this exploration to future
 * we use a vocabulary of 250k for XLM-R
-* same transformer architecture (BERT Base ) but with different vocabulary
+* same transformer architecture (BERT Base) but with different vocabulary
   * more than 3% gains in overall accuracy on XNLI
     by simply increasing the vocab size from 128k to 512k
 
@@ -273,10 +270,10 @@ arXiv:1911.02116
   on par with their supervised translation language modeling (TLM) objective
   * given our focus on unsupervised learning, we decided to not use the TLM obj
 
-### Simplifying multilingual tokenization with Sentence Piece. The
+### Simplifying multilingual tokenization with Sentence Piece
 
 * different language-specific tokenization tools used by mBERT and XLM-100
-  * make these models more difficult to use on raw text. Instead,
+  * make these models more difficult to use on raw text
   * we train a Sentence Piece model (SPM) and apply it directly on raw text
   * [no] loss in performance
     [compared to] language-specific preprocessing and byte-pair encoding (fg 7)
@@ -347,21 +344,21 @@ arXiv:1911.02116
 ### GLUE: XLM-R versus RoBERTa [i.e. monolingual]
 
 * Our goal ... both, cross-lingual understanding tasks as well as [monolingual]
-* Table 4, that XLM-R obtains better average dev performance than BERT Large by
-  * on par with XLNet Large . The
-  * RoBERTa model outperforms XLM-R by only 1.3% on average. We believe future
+* Table 4, that XLM-R obtains better average dev performance than BERT Large
+  * on par with XLNet Large
+  * RoBERTa model outperforms XLM-R by only 1.3% on average
 
-### XNLI: XLM versus BERT. A
+### XNLI: XLM versus BERT
 
 * recurrent criticism against multilingual model is that they obtain
-  worse performance than their monolingual counterparts. In addition to the
+  worse performance than their monolingual counterparts
 * we provide the first comprehensive study to assess this claim on XNLI
 * 7 languages and compare performance in Table 5
-* We train 14 monolingual BERT models on Wikipedia and CommonCrawl 2 , and two
-  XLM-7 models
+* We train 14 monolingual BERT models on Wikipedia and CommonCrawl, and 
+  two XLM-7 models
 * We add slightly more capacity in the vocabulary size of the multilingual
-  model for a better comparison. To our surprise and
-* backed by further study on internal benchmarks we found that
+  model for a better comparison
+* backed by further study on internal benchmarks
 * multilingual models can outperform their monolingual BERT counterparts
 * Table 5, we show that for cross-lingual transfer, monolingual baselines
   outperform XLM-7 for both Wikipedia and CC by 1.6% and 1.3% average accuracy
@@ -369,10 +366,7 @@ arXiv:1911.02116
   leveraging training sets coming from multiple languages, XLM-7 can outperform
   the BERT models: our XLM-7 trained on CC obtains 80.0% average accuracy on
   the 7 languages, while the average performance of monolingual BERT models
-  trained on CC is 77.5%. This is a surprising result that shows that the
-  capacity of multilingual models to leverage training data coming from
-  multiple languages for a particular task can overcome the capacity dilution
-  problem to obtain better overall performance
+  trained on CC is 77.5%
 
 ## 5.4 Representation Learning for Low-resource Languages
 

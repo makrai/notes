@@ -4,6 +4,8 @@ arXiv:2004.05160 [cs.CL]
 
 https://github.com/jlibovicky/assess-multilingual-bert 
 
+# Abstract
+
 * Multilingual contextual embeddings,
   such as multilingual BERT (mBERT) and XLM-RoBERTa
   * Previous work probed the cross-linguality of the representations indirectly
@@ -28,7 +30,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   * DistilmBERT (Sanh+ 2019) ... at a significantly lower computational cost
 * mBERT is used cross-lingually for zero-shot transfer (Pires+ 2019)
   * morphological and syntactic tasks, at least for typologically similar langs
-  * semantic task, sentence-retrieval, with promising initial results. Their
+  * semantic task, sentence-retrieval, with promising initial results
 * how good the cross-lingual mBERT representation is for lexical semantics,
 * Multilingual capabilities of representations are often evaluated by zero-shot
   transfer (Hu+ 2020)
@@ -41,7 +43,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
     machine translation quality estimation (MT QE)
   * explore how the language is represented in the embeddings
     by training language ID classifiers and by assessing
-    how the representation similarity corresponds to phylogenrlanguage families
+    how the representation similarity corresponds to phylogen language families
 * XLM-RoBERTa (XLM-R; Conneau+ (2019)
   outperforms mBERT in sentence retrieval and MT QE, while offering a
   similar performance for language identification and WA
@@ -52,18 +54,18 @@ https://github.com/jlibovicky/assess-multilingual-bert
 * zero-shot dependency parsing Wang+ (2019)
   * representation used for the parser was a bilingual projection of the
     contextual embeddings based on word alignment trained on parallel data
-* zero-shot NER and part-ofspeech (POS) tagging (Pires+ 2019) examined the
-  * [limited to] typologically similar the languages are.  Similarly, Wu and
-* multilingual models for POS tagging, NER, and XNLI (Dredze 2019) trained good
+* zero-shot NER and part-ofspeech (POS) tagging (Pires+ 2019)
+  * [limited to] typologically similar languages
+* multilingual models for POS tagging, NER, and XNLI (Dredze 2019)
   * [bad] results in the zero-shot setup
   * similar[ly bad] for language-generation tasks (Rönnqvist+ 2019)
 * cross-lingual sentence retrieval between three language pairs (Pires+ 2019)
   * if they subtract the average difference between the mBERT embeddings from
     the target language representation, the retrieval accuracy significantly
     increases.  We systematically study this idea in the later sections
-* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual
-  * a wider range of zero-short transfer tasks that include NLI (Conneau+ 2018)
-    and question answering (Artetxe+ 2019; Lewis+ 2019), their results show a
+* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual zero-shot 
+  * a wider range of zero-shot transfer tasks that include NLI (Conneau+ 2018)
+    and question answering (Artetxe+ 2019; Lewis+ 2019)
   * clearly superior performance of XLM-R compared to mBERT
 * sum: downstream task models can extract relevant features from the mling repr
   (Wu and Dredze, 2019; Kudugunta+ 2019; Kondratyuk and Straka, 2019a)
@@ -155,14 +157,14 @@ and of the MT output reflects the translation quality
 
 ## lng-free. In this experiment, we try to make the representations more
 
-* adversarial language ID classifiers (Elazar and Goldberg, 2018) using the
+* adversarial language ID classifiers (Elazar and Goldberg, 2018)
 
 ## DistillmBERT. This model was inferred from mBERT by
 
 * knowledge distillation (Sanh+ 2019)
 * only 6 layers instead of 12, the rest of the hyperparameters remain the same
 * initialized with a subset of the original mBERT parameters and
-  trained on similar training data. The model was
+  trained on similar training data
 * optimized towards cross-entropy of its output distribution with respect to
   output of the teacher mBERT model while keeping the MLM objective in the
   multitask learning setup

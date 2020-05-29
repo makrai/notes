@@ -429,14 +429,14 @@ multi-task learning and pre-training are complementary technologies
   * some improvement by using BERT as an initialization of the encoder
   * better performance on the out-of-domain dataset
 * Imamura and Sumita [65] proposed a two stages BERT fine-tuning method for NMT
-  1. encoder is initialized by a pre-trained BERT model and they only train the
-  decoder on the training set
-  2. whole NMT model is jointly fine-tuned on the training set. By experiment,
+  1. encoder is initialized by a pre-trained BERT model and 
+    they only train the decoder on the training set
+  2. whole NMT model is jointly fine-tuned on the training set
 * Zhu+ [204] suggested using pre-trained BERT as an extra memory in NMT models
-  * they first encode the input tokens by a pre-trained BERT and use the output
-    of the last layer as an extra memory
-  * NMT model can access the memory via an extra attention module in each layer
-    of both encoder and decoder
+  * they first encode the input tokens by a pre-trained BERT and 
+    use the output of the last layer as an extra memory
+  * NMT model can access the memory 
+    via an extra attention module in each layer of both encoder and decoder
   * noticeable improvement on supervised, semi-supervised and unsupervised MT
 * Song+ [147] proposed a masked sequence-to-sequence pre-training method (MASS)
   to pre-train the encoder and decoder jointly

@@ -32,7 +32,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
       * classification (Schwenk & Li, 2018; Conneau+ 2018b)— and
     * typologically similar languages (Conneau+ 2018a)
 * XTREME covers
-  * 40 typologically diverse languages spanning 12 families and includes
+  * 40 typologically diverse languages spanning 12 families
     * typologically diverse = wide set of linguistic phenomena such as
       compounding, inflection, derivation, etc. which occur in many languages
   * 9 tasks that require reasoning about different levels of syntax or sem
@@ -69,16 +69,16 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * heuristic initialisation (Artetxe+ 2018)
   * optimal transport (Zhang+ 2017)
 * monolingual transfer learning
-  (McCann+ 2017; Howard & Ruder, 2018; Peters+ 2018; Devlin+ 2019),
-* deep cross-lingual representations (Eriguchi+ 2018; Pires+ 2019; Wu & Dredze,
-  2019; Lample & Conneau, 2019; Siddhant+ 2019)
+  (McCann+ 2017; Howard & Ruder, 2018; Peters+ 2018; Devlin+ 2019)
+* deep cross-lingual representations 
+  (Eriguchi+ 18; Pires+ 19; Wu & Dredze 19; Lample & Conneau 19; Siddhant+ 19)
 
 ## Cross-lingual evaluation
 
 * translation, either on the
   * word level (bilingual lexicon induction) or on the
   * sentence level (machine translation)
-  * typologically related languages and similar domains; approaches have been
+  * typologically related languages and similar domains
   * fail in less favorable conditions (Glavaš+ 2019; Vulić+ 2019; Guzmán+ 2019)
   * issues with common datasets for bilingual lexicon induction
     (Czarnowska+ 2019; Kementchedjhieva+ 2019) and a
@@ -97,7 +97,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * MultiNLI, the dataset from which XNLI (Conneau+ 2018b) was derived,
     contains superficial cues that can be exploited (Gururangan+ 2018)
 * [monolingual] Benchmarks covering multiple tasks like
-  GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a) have spurred [sarkantyúz] rese
+  GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a) spurred [sarkantyúz] research
 
 # 3. XTREME
 
@@ -225,31 +225,31 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ## 4.1. Training and evaluation setup
 
-* XTREME focuses on the evaluation of multilingual representations. We do not
+* XTREME focuses on the evaluation of multilingual representations
 * [no] restriction on the amount or nature of the monolingual data used for
-  pretraining multilingual representations. However, we request authors to be
+  pretraining multilingual representations
 * For evaluation, we focus on zero-shot cross-lingual transfer [from] English
-  * many tasks only have training data available in English. Although
+  * many tasks only have training data available in English
   * English is not generally the best source language for cross-lingual
-    transfer for all target languages (Lin+ 2019), this is still the
+    transfer for all target languages (Lin+ 2019)
   * A single source language also facilitates evaluation as models only need to
-    be trained once and can be evaluated on all other languages. 10
+    be trained once and can be evaluated on all other languages
   * Future work may also consider multi-source transfer, which is interesting
     particularly for low-resource languages, and transfer to unknown languages
     or unknown language-task combinations
 * pretrained multilingual representations are finetuned on English labelled
-  data of an XTREME task. The model is then evaluated on the test data of the
+  data of an XTREME task. The model is then evaluated on the test data of tg
 
 ##4.2. Baselines
 
-* strong baselines and state-ofthe-art models. The approaches we consider learn
+* strong baselines and SOTA models
   * multilingual representations via
-    self-supervision or leverage translations—either for representation
-    learning or for training models in the source or target language. We focus
-* focus on models that learn a multilingual embedding space between all
+    self-supervision or translations—either for representation learning or for
+    training models in the source or target language
+* focus on models that learn a multilingual embedding space between all langs
   * future work to focus on these languages to capture as much language
-    diversity as possible. We report hyperparameters in the appendix. All
-  * hyper-parameter tuning is done on English validation data.  We encourage
+    diversity as possible. We report hyperparameters in the appendix
+  * hyper-parameter tuning is done on English validation data
 
 ### mBERT Multilingual BERT (Devlin+ 2019) is a transformer model (Vaswani+ 17)
 
@@ -322,7 +322,7 @@ available, we additionally compare against an
 
 ## 4.3. Results 5
 
-### Overall results We show the main results in Table 2
+### Overall results. We show the main results in Table 2
 
 * zero-shot: XLM-R is the best-performing zero-shot transfer model and
   generally improves upon mBERT significantly
@@ -347,20 +347,19 @@ available, we additionally compare against an
 
 ### Cross-lingual transfer gap
 
-* i.e. the difference between ... English test set and all other languages in
-* Table 3
+* i.e. the difference between English test set and all other languages in Tab 3
 * This comparison should be taken with a grain of salt, as
   scores across languages are not directly comparable
   for the tasks where test sets differ, i.e. POS, NER, MLQA, and TyDiQA-GoldP
   * differences in scores may not be linearly related
-* powerful models such as XLM-R reduce the gap significantly (< mBERT)
+* powerful models such as XLM-R reduce the gap significantly
 * XLM-R reduce the gap significantly compared to mBERT
   * for challenging tasks such as XQuAD and MLQA
   * not have the same impact on the syntactic structured prediction tasks
   * classification tasks, the transfer learning gap is lowest
 * MT reduces the gap across all tasks
 
-# 5. Analyses [of the limitations of state-of-the-art cross-lingual models] 6 
+# 5. Analyses [of the limitations of SOTA cross-lingual models] 6 
 
 ## Best zero-shot model analysis
 
@@ -376,12 +375,12 @@ available, we additionally compare against an
     include pseudo test sets
   * [English is lowest] For TyDiQA-GoldP, English performance is lowest in
     * high performance on Indonesian and Finnish may be due to less complex
-      Wikipedia context passages for these languages. Across tasks, we
+      Wikipedia context passages for these languages
   * lower performance for other language families, particularly for
-    Sino-Tibetan, Japonic, Koreanic, and Niger-Congo languages. Some of these
+    Sino-Tibetan, Japonic, Koreanic, and Niger-Congo languages
     * may be due to tokenisation and an
-      under-representation of ideograms in the joint sentencepiece vocabulary,
-      * important in a cross-lingual model’s (Artetxe+ 2019; Conneau+ 2019). We
+      under-representation of ideograms in the joint sentencepiece vocabulary
+      * important in a cross-lingual model’s (Artetxe+ 2019; Conneau+ 2019)
 * similar trends for mBERT, for which we show the same graph in the appendix
 
 ## Correlation with pretraining data size, Pearson ρ with the number of Wp art
@@ -394,27 +393,27 @@ available, we additionally compare against an
 
 ## Language characteristics
 
-* language families and writing scripts in Figure 3. For
+* language families and writing scripts in Figure 3
 * mBERT, we observe the best transfer performance on branches of the
   * family
     * Indo-European language family such as Germanic, Romance and Slavic
-    * e.g. Niger-Congo and Kra-Dai is still low. Looking at
+    * e.g. Niger-Congo and Kra-Dai is still low
 * scripts, we find that the
   performance on syntactic tasks differs among popular scripts such as Latin
   and ideogram scripts. For example in the
   * NER task, mBERT performs better on data in Latin script than that in
-    Chinese or Japanese ideograms.  This indicates that the current models
+    Chinese or Japanese ideograms
     * i.e. difficulty transferring word-level syntactic information
 
 ## Errors across languages
 
-* XNLI and XQuAD where the other test sets are translations from English, we
+* XNLI and XQuAD where the other test sets are translations from English
 * whether approaches make the same type of errors in the source and target
   * whether examples that are correctly and incorrectly predicted in English
-    are correctly predicted in other languages.  On the
+    are correctly predicted in other languages
 * XNLI dev set, mBERT
-  * en correct -> correctly predicts on average 71.8% of examples that were
-  * en misclass-> performance is about random. On average,
+  * en correct -> correctly predicts on average 71.8% of examples
+  * en misclass-> performance is about random
   * predictions ... consistent between English and another language for 68.3%
 * XQuAD test set, mBERT
   * en correct -> correctly predicts around 60% of examples
@@ -425,18 +424,18 @@ available, we additionally compare against an
 * possible reasons for the less successful transfer on structured prediction
 * Universal Dependencies dataset used for POS tagging uses a
   common set of 17 POS tags for all languages, so a
-  model is not required to generalize to unseen tags at test time. However, a
+  model is not required to generalize to unseen tags at test time
   * hE model may be required to generalize to unseen tag combinations at test
   * e.g. due to differences in word order between languages
 * We gauge [megmér] a model’s accuracy for [unseen] POS tag n-grams in the trgt
-  * n=3,4 mBERT in Table 4. We observe the
+  * n=3,4 mBERT in Table 4
   * largest differences in performance for unseen trigrams and 4-grams, which
     highlights that existing cross-lingual models struggle to transfer to the
-    syntactic characteristics of other languages. For
+    syntactic characteristics of other languages
 * NER, we estimate how well models generalize to unseen entities at test time
   * largest ... for Indonesian and Swahili
   * Isolating for e.g. entity length, frequency, and Latin script, we find the
-    largest differences in performance for Swahili and Basque. Together, this
+    largest differences in performance for Swahili and Basque
 * detailed results for both analyses in the appendix
 
 # 6. Conclusions
