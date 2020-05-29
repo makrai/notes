@@ -124,44 +124,44 @@ arXiv:2005.14165 [cs.CL]
 * preliminary analysis regarding bias, fairness, and broader societal impact
 
 
-#2 Approach and methods for training GPT-3 and evaluating it
+# 2 Approach and methods for training GPT-3 and evaluating it
 
-#2.1 Model and Architectures
-#2.2 Training Dataset
-#2.3 Training Process
-#2.4 Evaluation
+## 2.1 Model and Architectures
+## 2.2 Training Dataset
+## 2.3 Training Process
+## 2.4 Evaluation
 
-#3 Results on the full range of tasks in the zero-, one- and few-shot settings
+# 3 Results on the full range of tasks in the zero-, one- and few-shot settings
 
-#3.1 Language Modeling, Cloze, and Completion Tasks
-#3.2 Closed Book Question Answering
-#3.3 Translation
-#3.4 Winograd-Style Tasks
-#3.5 Common Sense Reasoning
-#3.6 Reading Comprehension
-#3.7 SuperGLUE
-#3.8 NLI
-#3.9 Synthetic and Qualitative Tasks
+## 3.1 Language Modeling, Cloze, and Completion Tasks
+## 3.2 Closed Book Question Answering
+## 3.3 Translation
+## 3.4 Winograd-Style Tasks
+## 3.5 Common Sense Reasoning
+## 3.6 Reading Comprehension
+## 3.7 SuperGLUE
+## 3.8 NLI
+## 3.9 Synthetic and Qualitative Tasks
 
-#4 Measuring and Preventing Memorization Of Benchmarks 30
+# 4 Measuring and Preventing Memorization Of Benchmarks 30
 
-#5 Limitations 33
+# 5 Limitations 33
 
-#6 Broader Impacts
+# 6 Broader Impacts
 
-#6.1 Misuse of Language Models
-#6.2 Fairness, Bias, and Representation
-#6.3 Energy Usage
+## 6.1 Misuse of Language Models
+## 6.2 Fairness, Bias, and Representation
+## 6.3 Energy Usage
 
-#7 Related Work 39
+# 7 Related Work 39
 
-#8 Conclusion 40
+# 8 Conclusion 40
 
-#A Details of Common Crawl Filtering 42
-#B Details of Model Training 42
-#C Details of Test Set Contamination Studies 42
-#D Total Compute Used to Train Language Models 45
-#E Human Quality Assessment of Synthetic News Articles 45
-#F Additional Samples from GPT-3 47
-#G Details of Task Phrasing and Specifications 49
-#H Results on All Tasks for All Model Sizes 61
+# A Details of Common Crawl Filtering 42
+# B Details of Model Training 42
+# C Details of Test Set Contamination Studies 42
+# D Total Compute Used to Train Language Models 45
+# E Human Quality Assessment of Synthetic News Articles 45
+# F Additional Samples from GPT-3 47
+# G Details of Task Phrasing and Specifications 49
+# H Results on All Tasks for All Model Sizes 61
