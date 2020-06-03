@@ -48,7 +48,7 @@ arXiv:2003.02912 [cs.CL]
 * Transformer learns global dependencies between input and output, using only
   attention mechanisms
 * Two key elements in the BERT pretraining process are the
-  masked language model and the next sentence prediction. In the former
+  masked language model and the next sentence prediction
 * vocabulary is defined in advance and it is based on WordPiece (Wu+ 2016), a
 
 ## 2.2 Multilingual BERT, ALBERT and RoBERTA

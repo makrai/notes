@@ -5,7 +5,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 # Abstract
 
 * we ... identify key contributions which the nature of language has made to
-  the development of neural network architectures. We focus on the importance
+  the development of neural network architectures
   * variable binding and its instantiation in attention-based models, and argue
   * Transformer is not a sequence model but an induced-structure model.  This
   * challenges facing research in deep learning architectures for NLU

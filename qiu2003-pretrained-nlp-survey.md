@@ -155,7 +155,7 @@ arXiv:2003.08271 [cs.CL]
 * ALBERT [86] replaces the NSP loss with a sentence order prediction (SOP)
   * conjectured in Lan+ [86], NSP conflates topic prediction and coherence
     prediction in a single task
-  * topic prediction is easier to learn compared to coherence prediction, which
+  * topic prediction is easier to learn compared to coherence prediction
   * SOP uses ... consecutive segments but with their order swapped as negative
   * consistently outperforms BERT on various downstream tasks
 * StructBERT [180] and BERTje [29] also take SOP as their self-supervised
@@ -193,7 +193,7 @@ arXiv:2003.08271 [cs.CL]
 * injecting knowledge during pre-training
   * joint learning knowledge graph embeds and word embeds [183, 202, 187, 190]
   * Since BERT, some auxiliary pre-training tasks are designed to incorporate
-    * LIBERT [87] (linguistically-informed BERT) incorporates linguistic
+    * linguistics: LIBERT [87] (linguistically-informed BERT)
     * sentiment
       * Ke+ [78] integrated sentiment polarity of each word to extend the MLM
         to Label-Aware MLM (LA-MLM)`:` SentiLR, achieves SOTA performance on
@@ -493,10 +493,9 @@ multi-task learning and pre-training are complementary technologies
   sentences instead of words, and then apply it on downstream tasks
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
-* Liu and Lapata [104] proposed BERTSUM [which] included a novel document-level
-  encoder, and a general framework for both extractive summarization and
-  abstractive summarization.  In the encoder frame, BERTSUM extends BERT by
-  inserting multiple [CLS] tokens to learn the sentence representations
+* BERTSUM Liu and Lapata [104] included a novel document-level encoder, and a
+  general framework for both extractive and abstractive summarization
+  * In the encoder frame, BERTSUM extends BERT by inserting multiple [CLS] toks
   * extractive: BERTSUM stacks several inter-sentence Transformer layers
   * abstractive: two-staged fine-tuning approach using a new fine-tuning schedl
 
