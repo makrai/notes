@@ -11,7 +11,7 @@ Our models and code are available at: https://github.com/pytorch/fairseq
   * can match or exceed the performance of every model published after it
 * we achieves SOTA results on GLUE, RACE and SQuAD
   * 88.5 on the public GLUE leaderboard, matching the 88.4 reported by Yang+
-  * new SOTA on 4/9 of the GLUE tasks: MNLI, QNLI, RTE and STS-B. We also 
+  * new SOTA on 4/9 of the GLUE tasks: MNLI, QNLI, RTE and STS-B
   * match SOTA results on SQuAD and RACE
 
 # 1 Intro
