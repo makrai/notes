@@ -127,7 +127,7 @@ arXiv:2003.08271 [cs.CL]
 
 * the same as NCE but predicts whether a token is replaced given its context
 * CBOW with negative sampling (CBOW-NS) [116] can be viewed as a simple version
-* ELECTRA [22] ... utilizing a generator to replacing some tokens of a sequence
+* ELECTRA [22] utilizing a generator to replacing some tokens of a sequence
   * generator G and a discriminator D are trained following a two-stage
     1. Train only the generator with MLM task for n 1 steps;
     1. Initialize the weights of the discriminator with the weights of the G
@@ -138,21 +138,19 @@ arXiv:2003.08271 [cs.CL]
 * Similarly, WKLM [188] replaces words on the entity-level instead of token-lev
   * replaces entity mentions with names of other entities of the same type and
 
-#### Next Sentence Prediction (NSP) Punctuations are the natural separators of
+#### Next Sentence Prediction (NSP). Punctuations are natural separators
 
 * distinguish whether two input sentences are continuous segments from the corp
 * benefit downstream tasks, such as Question Answering and NLI
 * necessity of the NSP task has been questioned [72, 194, 105, 86]
-  * Yang+ [194] found the impact of the NSP task unreliable, while
-  * Joshi+ [72] found that single-sentence training without the NSP loss is
-    superior to sentence-pair training with the NSP loss
-  * Liu+ [105] ... shows that when training with blocks of text from a single
-    document, removing the NSP loss matches or slightly improves performance on
-    downstream tasks
+  * Yang+ [194] found the impact of the NSP task unreliable
+  * Joshi+ [72]: single-sentence training without the NSP loss is superior
+  * Liu+ [105]: when training with blocks of text from a single document,
+    removing the NSP loss matches or slightly improves downstream performance
 
-#### Sentence Order Prediction (SOP) To better model intersentence coherence,
+#### Sentence Order Prediction (SOP). To better model intersentence coherence,
 
-* ALBERT [86] replaces the NSP loss with a sentence order prediction (SOP)
+* ALBERT [86] replaces the NSP loss with sentence order prediction (SOP)
   * conjectured in Lan+ [86], NSP conflates topic prediction and coherence
     prediction in a single task
   * topic prediction is easier to learn compared to coherence prediction

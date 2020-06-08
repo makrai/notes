@@ -29,50 +29,48 @@ Corpora and Processing Tools co-located with LREC 2020
 * Arabic word2vec was first attempted by (Soliman+ 2017), it was then followed
   by a Fasttext model (Bojanowski+ 2017) trained on wikipedia data, showing
 * dialectal variations in Arabic: Abu Farha and Magdy, (2019) provided the
-  largest Arabic word embeddings trained on 250M tweets.
+  largest Arabic word embeddings trained on 250M tweets
 
 ## 2.3. Contextualized Representations for Arabic
 
 * Walking in the footsteps of English language understanding models, same
   * hULMonA (ElJundi+ 2019) using the ULMfit structure. Google then released a
 
-# 3 AraBERT methodology that was used to develop A RA BERT
+# 3 AraBERT methodology that was used to develop AraBERT
 
-* We [ introduced ] preprocessing prior to the model’s pre-training, in order
-  to better fit the Arabic language. 
+* preprocessing prior to the model’s pre-training, in order to better fit Arab
 
 ## 3.1 pre-training setup
 
-* Masked Language Modeling (MLM) task by adding whole-word masking; 
+* Masked Language Modeling (MLM) task by adding whole-word masking;
   * 15% of the N input tokens were selected for replacement. Those tokens are
     replaced 80% of the times with the [MASK] token, 10% with a random token,
-    and 10% with the original token. 
+    and 10% with the original token
   * Whole-word masking improves the pre-training task by forcing the model to
     predict the whole word instead of getting hints from parts of the word. We
 * Next Sentence Prediction (NSP) task that helps the model understand the rel
-  * can be useful for many language understanding tasks such as Question
-    Answering.
+  * can be useful for many language understanding tasks such as Question Answer
 
 ## 3.2 pre-training dataset that we used to pre-train A RA BERT
 
 * complex concatenative system of Arabic (Al-Sallab+ 2017). For
   * e.g. the definite article “Al” is always prefixed to the word
 * To avoid this issue, we segmented the words using Farasa (Abdelali+ 2016)
-  into stems, prefixes and sufsuf fixes. 
+  into stems, prefixes and sufsuf fixes
   * Farasa: approach is based on SVM-rank using linear kernels.  We measure the
-  order of magnitude faster.
-  For instance, “Alloga” becomes Al+ log +a”. 
+  order of magnitude faster
+  For instance, “Alloga” becomes Al+ log +a”
   Then, we trained the SentencePiece (Kudo, 2018), in unigram mode, on the
-  segmented pre-training dataset to produce a vocabulary of ∼60K tokens. 
+  segmented pre-training dataset to produce a vocabulary of ∼60K tokens
 * To evaluate the impact of the proposed tokenization, we also trained
   SentencePiece on non-segmented text to create a second version of A RA BERT
   (AraBERTv0.1) that does not require any segmentation. The final size of vo-
   cabulary was 64k tokens, which included nearly 4K unused tokens to allow
-  further pre-training, if needed.  
-  
+  further pre-training, if needed
+
 ## 3.3 Arabic-specific preprocessing
 
-## 3.4 fine-tuning process.
+## 3.4 fine-tuning process
 
 # 4 downstream tasks and benchmark datasets that are used for evaluation
 
