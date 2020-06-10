@@ -61,7 +61,7 @@ arXiv:2003.08271 [cs.CL]
 * ELMo: Peters+ [122] pre-trained 2-layer LSTM encoder with a bidirectional
   language model (BiLM), consisting of a forward LM and a backward LM
   * contextual representations output by the pre-trained BiLM, ELMo (Embeddings
-  from Language Models), are shown to bring large improvements on a broad range
+  from Language Models) bring large improvements on a broad range
 * Akbik+ [1] captured word meaning with contextual string embeddings
   pre-trained with character-level LM
 * Ramachandran+ [134] found the seq2seq models can be significantly improved by
@@ -356,7 +356,7 @@ arXiv:2003.08271 [cs.CL]
   * distinct random seeds can lead to substantially different results [34]
 * Besides standard fine-tuning, there:
 
-### Two-stage fine-tuning An alternative solution is two-stage transfer, which
+### Two-stage fine-tuning
 
 * first stage [with] an intermediate task or corpus
 * second stage, the transferred model is fine-tuned to the target task
