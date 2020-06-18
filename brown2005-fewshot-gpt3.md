@@ -1,6 +1,6 @@
 Language Models are Few-Shot Learners
 Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry,
-  Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, M. Ziegler,
+  Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler,
   Wu, Winter, Hesse, Chen, Sigler,
   Litwin, Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, Amodei
 arXiv:2005.14165 [cs.CL]
@@ -19,7 +19,7 @@ arXiv:2005.14165 [cs.CL]
     * task-agnostic in architecture, this method still
     * requires datasets of thousands or tens of thousands of examples
 * humans can generally perform a new language task from only a
-  few examples or from simple instructions - something which current NLP
+  few examples or from simple instructions
 * we show that
   * scaling up language models greatly improves task-agnostic, few-shot
   * sometimes even reaching competitiveness with prior SOTA fine-tuning approac
@@ -31,15 +31,15 @@ arXiv:2005.14165 [cs.CL]
     * tasks that require on-the-fly reasoning or domain adaptation, such as
       unscrambling words, using a novel word in a sentence, or 3-digit arithm
   * datasets where GPT-3's few-shot learning still struggles
-  * methodological issues related to training on large web corpora.  Finally,
+  * methodological issues related to training on large web corpora
   * generate samples of news articles which human evaluators have difficulty
-    distinguishing from articles written by humans.  We
+    distinguishing from articles written by humans
   * discuss broader societal impacts of this finding and of GPT-3 in general
 
 #Introduction
 
 * pre-trained language representations in NLP systems, applied in increasingly
-  flexible and task-agnostic ways for downstream transfer. First,
+  flexible and task-agnostic ways for downstream transfer
   * single-layer representations using word vectors [MCCD13, PSM14] and fed to
   * RNNs with multiple layers of representations and contextual state
     [DL15, MBXS17, PNZtY18] (though still applied to task-specific archits)
@@ -50,8 +50,7 @@ arXiv:2005.14165 [cs.CL]
   * substantial progress on e.g. reading comprehension, question answering,
     textual entailment, and many others, and has
   * new architectures and algorithms [RSR + 19, LOG + 19, YDY + 19, LCG + 19]
-* removing the need for task-specific datasets and task-specific fine-tuning
-  would be desirable, for several reasons
+* removing the need for task-specific datasets and fine-tuning would be desirab
   * practical perspective, the need for a large dataset of labeled examples for
     * a very wide range of possible useful language tasks, e.g
       correcting grammar, to generating examples of an abstract concept, to
@@ -72,17 +71,19 @@ arXiv:2005.14165 [cs.CL]
     * model is conditioned on a natural language instruction and/or a few
       demonstrations of the task
     * results far inferior to fine-tuning – for example [RWC + 19] achieves
-      only 4% on Natural Questions, and even its 55 F1 CoQa result is now more
-      than 35 points behind the SOTA
+      only 4% on Natural Questions, and even its 
+      55 F1 CoQa result is now more than 35 points behind the SOTA
 * capacity of transformer language models has increased substantially,
+```
     100 million parameters [RNSS18], to
     300 million parameters [DCLT18], to
   1.5 billion parameters [RWC + 19], to
   8 billion parameters [SPP + 19],
  11 billion parameters [RSR + 19], and finally
  17 billion parameters [Tur20]
+```
   * log loss, which correlates well with many downstream tasks,
-    follows a smooth trend of improvement with scale [KMH + 20]. Since
+    follows a smooth trend of improvement with scale [KMH + 20]
   * it is plausible that in-context learning abilities might show similar gains
 * we test in-context learning abilities. Specifically, we evaluate GPT-3 on
   * two dozen NLP datasets, as well as several novel tasks designed to test
@@ -97,7 +98,7 @@ arXiv:2005.14165 [cs.CL]
     * could also in principle be evaluated in the traditional fine-tuning
       setting, but we leave this to future work
 * Figure 1.2: few-shot learning of a simple task
-  * task: remove extraneous symbols from a word.  Model
+  * task: remove extraneous symbols from a word
   * performance improves with the addition of a natural language task desc
 * Few-shot learning also improves dramatically with model size. Though the
   * no gradient updates or fine-tuning, just increasing numbers of demonstrat
@@ -107,10 +108,10 @@ arXiv:2005.14165 [cs.CL]
     occasionally surpasses SOTA (fine-tuned)
 * tasks on which few-shot performance struggles, even at the scale of GPT-3
   * natural language inference tasks like the ANLI dataset, and
-  * some reading comprehension datasets like RACE or QuAC. By presenting a
+  * some reading comprehension datasets like RACE or QuAC
 * Figure 1.3, aggregates performance for all 42 accuracy-denominated benchmarks
-  * few-shot performance increases more rapidly [than zero], demonstrating that
-    larger models are more proficient at in-context learning
+  * few-shot performance increases more rapidly [than zero~], demonstrating
+    that larger models are more proficient at in-context learning
   * See Figure 3.8 for a more detailed analysis on SuperGLUE, a standard benchm
 * systematic study of “data contamination” – a growing
   * problem when training models on datasets such as Common Crawl,
@@ -124,8 +125,7 @@ arXiv:2005.14165 [cs.CL]
   * relatively smooth scaling with model capacity in all three settings; one
   * the gap between zero-, one-, and few-shot performance often grows with capa
     * perhaps suggesting that larger models are more proficient meta-learners
-* preliminary analysis regarding bias, fairness, and broader societal impact
-
+* preliminary analysis regarding bias, fairness, and broader societal impact 
 
 # 2 Approach and methods for training GPT-3 and evaluating it
 
@@ -164,7 +164,7 @@ arXiv:2005.14165 [cs.CL]
 
 * GPT-3 samples still sometimes repeat themselves semantically at the doc level 
   * lose coherence over sufficiently long passages, contradict themselves, and
-    occasionally contain non-sequitur sentences or paragraphs. We will release
+    occasionally contain non-sequitur sentences or paragraphs
 * special difficulty with “common sense physics”, 
   despite doing well on some datasets (such as PIQA [BZB + 19]) that test this
   * e.g. questions like “If I put cheese into the fridge, will it melt?”.

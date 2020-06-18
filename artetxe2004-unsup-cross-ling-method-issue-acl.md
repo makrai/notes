@@ -108,13 +108,13 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 
 ## 3.2 A scientific motivation
 
-# 4 existing training signals and other signals that may be of interest for
+# 4 existing training signals and other signals that may be of interest
 
 ## 4.1 Monolingual training signals
 
-### Nature of atomic symbols. A more important
+### Nature of atomic symbols
 
-### Linguistic information. Finally, one can exploit
+### Linguistic information
 
 ## 4.2 Cross-lingual training signals
 
@@ -128,9 +128,9 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 
 ## 5.2 Evaluation practices
 
-### Over-reliance on translation tasks. Most work
+### Over-reliance on translation tasks
 
-### Lack of an established cross-lingual enchmark. At the same time, there is
+### Lack of an established cross-lingual benchmark. At the same time, there is
 
 # 6 unified outlook of established research areas and recommendations
 
