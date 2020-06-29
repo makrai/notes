@@ -15,7 +15,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 # 1. Introduction
 
-* a pressing urgency to ... serve all of the world’s approximately 6,900 langs
+* a pressing urgency to serve all of the world’s approximately 6,900 langs
   * overcome language barriers and enable universal information access for the
     world’s citizens (Ruder+ 2019; Aharoni+ 2019; Arivazhagan+ 2019b)
 * Early [multilingual work] focused on single tasks, such as
@@ -117,7 +117,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ### Multilinguality: We prefer tasks that cover many languages and families
 
-### Sufficient monolingual data ... for learning useful pre-trained reprs
+### Sufficient monolingual data for learning useful pre-trained representations
 
 ### Accessibility: permissive license
 

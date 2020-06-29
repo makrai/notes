@@ -412,8 +412,8 @@ multi-task learning and pre-training are complementary technologies
     * pairwise text classification tasks (MNLI, RTE, WNLI, QQP, and MRPC)
     * text similarity task (STSB)
     * and relevant ranking task (QNLI)
-* SuperGLUE [176]: more challenging tasks and more diverse task formats (e.g.,
-  coreference resolution and question answering)
+* SuperGLUE [176]: more challenging tasks and more diverse task formats
+  (coreference resolution and question answering)
 
 ## 7.2 Machine Translation
 
@@ -514,7 +514,7 @@ multi-task learning and pre-training are complementary technologies
 
 # 8 Challenges and future directions 17
 
-## Upper Bound of PTMs ... by more training steps and larger corpus
+## Upper Bound of PTMs by longer training and larger corpus
 
 * e.g. Megatron-LM [144]: 8.3 billion parameters, 72 Transformer layers with a
   hidden size of 3072 and 32 attention heads) and
@@ -534,7 +534,7 @@ multi-task learning and pre-training are complementary technologies
   extract partial task-specific knowledge from existing PTMs
 * [teach] task-oriented PTMs with general-purpose existing PTMs
 
-## Architecture of PTMs Transformer has been proved to be an effective
+## Architecture of PTMs
 
 * main limitation of Transformer is its computation complexity: quadratic to
 * cannot deal with the sequence longer than 512 tokens

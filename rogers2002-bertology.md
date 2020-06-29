@@ -496,7 +496,7 @@ arXiv:2002.12327 [cs.CL]
 
 ## 9.2 Directions for further research
 
-###Benchmarks that require verbal reasoning
+### Benchmarks that require verbal reasoning
 
 * [BERT's] verbal reasoning abilities are not as impressive as it seems
   * [BERT relies] on shallow heuristics in both
@@ -505,14 +505,14 @@ arXiv:2002.12327 [cs.CL]
   * needs to incentivize [=motvt] dataset development on par with modeling work
     which at present is often perceived as more prestigious
 
-###Developing methods to “teach” reasoning
+### Developing methods to “teach” reasoning
 
 * [when] reasoning needs to be performed on top of the facts they possess
   (see subsection 4.3)
 * Richardson+ (2019) propose a method to “teach” BERT
   quantification, conditionals, comparatives, and boolean coordination
 
-###Learning what happens at inference time
+### Learning what happens at inference time
 
 * what knowledge actually gets used
   * knowledge represented in BERT does not necessarily get used in downstream
