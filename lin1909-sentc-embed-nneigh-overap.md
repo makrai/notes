@@ -34,7 +34,7 @@ arXiv:1909.10724 [cs.CL]
 
 # 3 Apply it to 21 sentence embedders
 
-* [defering] implementation decisions in §4
+* [deferring] implementation decisions in §4
 
 ## 3.1 tf-idf
 
