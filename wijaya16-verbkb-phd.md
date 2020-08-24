@@ -28,8 +28,10 @@ VerbKB: A Knowledge Base of Verbs for Natural Language Understanding
 
 # 1 Intro
 
-* Some verbs express relationships among these entities in the world, some
-  express events that change these relationships, and some do both
+* Some verbs express 
+  * relationships among entities in the world,
+  * events that change these relationships, and some do 
+  * both
 * process
   * subject-verb-object (SVO) triples obtained from the high coverage Web-scale
     corpora of ClueWeb [Callan+ 2009a] (the semantic types of the verbs’

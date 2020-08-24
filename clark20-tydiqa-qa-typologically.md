@@ -1,4 +1,4 @@
-TyDiQA: ABenchmark for Information-Seeking QA in Typologically Diverse Langs
+TyDiQA: A Benchmark for Information-Seeking QA in Typologically Diverse Langs
 JH Clark, EChoi, MCollins, DGarrette, TKwiatkowski, VNikolaev, JPalomaki
 TACL 2020
 
@@ -73,7 +73,7 @@ TACL 2020
     the consonants k Brahmi and y Brahmi assembled vertically).[1] Conjuncts
 * often used with loan words. Native words typically use the basic consonant
 
-### Finnish: a Finno-Ugric language with rich inflectional and deriv
+### Finnish: a Finno-Ugric language with rich inflectional and derivational
 
 * Word stems often alter due to morphophonological alternations (Karlsson, 13)
 * A typical Finnish noun has approximately 140 forms and a verb about 260 forms
