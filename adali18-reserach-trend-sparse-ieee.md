@@ -26,7 +26,7 @@ The Dangers of Following Trends in Research:
   * we provide an overview on use of sparsity and then discuss
     a couple of specific problems
 
-# II.Sparsity in signal processing and machine learning
+# II. Sparsity in signal processing and machine learning
 
 * before the trend
 	* reasons to favor sparsity
@@ -48,11 +48,11 @@ The Dangers of Following Trends in Research:
       3.   S. S. Chen, D. L. Donoho, and M. A. Saunders,
         “Atomic decomposition by basis pursuit,”
         SIAM J. Sci. Comput., vol. 20, pp. 33–61, 1999.
-* dictionary learning (DL, Olshausen and Field 1996) [5], [6]
+* dictionary learning (dict learng, Olshausen and Field 1996) [5], [6]
   * Following the[ir] introduction[,] the field experienced an explosion
   * inspiration came from mammalian vision[: in] the neural code ... at a
     given point, only a few [objects are represented]
-  * Soon after, [DL and other matrix/tensor decompositions promoting sparsity]
+  * Soon after, [dict learng and other matrix/tensor decompositions promoting sparsity]
     for a wide array of applications,
     and in certain cases where sparsity is not beneficial nor appropriate
     * For example, Cardoso, in ... extraction of cosmic microwave background
@@ -78,14 +78,14 @@ The Dangers of Following Trends in Research:
   * Infomax algorithm [9] for achieving ICA,
     the first algorithm applied to the problem [10]
     uses a fixed non-linearity favoring sparse distributions in the estimation
-* DL, on the other hand, works by imposing sparsity on the source while
-  minimizing `‖ X − AS  ‖_F` problem
-  * In its introduction for fMRI [a number of incorrect statements are made,
-    which propagated through subsequent publications from multiple] groups
+* dict learng, on the other hand, works by imposing sparsity on the source while
+  minimizing `‖ X − AS  ‖_F`
+  * In its introduction for fMRI a number of incorrect statements are made,
+    which propagated through subsequent publications from multiple groups
     * the voxels [being] dependent, hence violat[e] the ...  assumption in ICA
     * ICA is highly sensitive to noise and artifacts
 * another dangerous habit is the propagation of references without [reading]
-  * [13] ... became a standard reference when promoting DL for fMRI analysis
+  * [13] ... became a standard reference when promoting dict learng for fMRI analysis
 
 ## B. Color Image Representation
 

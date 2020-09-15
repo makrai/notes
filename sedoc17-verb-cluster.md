@@ -21,12 +21,12 @@ arXiv preprint arXiv:1708.00416
   * strong indicators of verb diathesis alternations (McCarthy, 2001)
   * can be assigned to ... verb classes in VerbNet (Schuler, 2005). In this
 * we show that clustering verbs along with their subject and object types
-  yields better verb clusters. Verbs are ’disambiguated’, such that the
+  yields better verb clusters. Verbs are ’disambiguated’
 * categorization is not limited to verbs: arguments
-* [eval:] predicting attributes of Facebook messages and Tweets. Specifically,
-  * predicting sarcasm, sentiment, and locus of control: whether the author
-    feels in control or being controlled by the other people. While sarcasm and
-    * locus of control is a relatively novel task. Our clustering method in
+* [eval:] predicting attributes of Facebook messages and Tweets
+  * predicting sarcasm, sentiment, and 
+    * locus of control: whether the author feels in control or being controlled
+      * a relatively novel task
 * contributions
   * a novel method for learning the low-dimensional embeddings of verbs and
     their arguments
@@ -61,34 +61,34 @@ arXiv preprint arXiv:1708.00416
 ## Verb Embeddings
 
 * Schwartz+ (2016) has observed that verbs['s] distributional representation
-  can benefit from taking verb argument role into accounts
+  can benefit from taking verb argument role into account
   * roles or types can be provided by existing semantic resources
   * sense-aware embeddings that take into account information from existing
     semantic resources (Iacobacci+ 2015)
     * requires large amounts of sense-annotated corpora
 * Since we have only data in the form of (subject, verb, object) triples
-  extracted from ClueWeb, the limited context 1 also means that traditional
-  word embedding models or word sense disambiguation systems may not learn well
-  on the data (Melamud+ 2016)
-* verb selectional preferences to be useful for verb clustering
-  (Sun and Korhonen, 2009; Wijaya, 2016) and that verb distributional
+  extracted from ClueWeb, the limited context also means that 
+  traditional word embedding models or word sense disambiguation systems may not
+  learn well on the data (Melamud+ 2016)
+* verb selectional preferences are useful for verb clustering
+  (Sun and Korhonen, 2009; Wijaya, 2016)
 * we cluster VerbKB typed verbs by first learning novel, low-dimensional
   representations of the typed verbs, thus encoding information about the verb
   selectional preferences and distribution in the data
-* We learn embeddings of typed verbs ... in VerbKB. Unlike traditional
+* We learn embeddings of typed verbs ... in VerbKB
 * Using only triples in the form of (subject, verb, object) extracted from
   ClueWeb, we
   * learn verb embeddings by treating each verb as a relation between its
-    subject and object (Bordes+ 2013). Since verbs are predi cates that express
+    subject and object (Bordes+ 2013). Since verbs are predicates that express
     relations between the arguments and adjuncts in sentences, we believe this
     is a natural way for representing verbs.  We cluster typed verbs based on
-    their embeddings. Then,
+    their embeddings
 * at run time, given any text containing a verb and its arguments, we
-  * using NELL’s noun phrase to category mapping 2 to obtain the typed verb and
+  * using NELL’s noun phrase to category mapping to obtain the types
 
 # Results and Discussion
 
 * baselines: we use Levin classes, VerbNet, as well as
-  clusters of subject, verb, object GloVe embeddings. In order to evaluate the
+  clusters of subject, verb, object GloVe embeddings
 
 # 8 Conclusion

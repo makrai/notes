@@ -1,6 +1,6 @@
 Hamilton, W. L., Leskovec, J., & Jurafsky, D
-2016 ACL
 Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change
+2016 ACL
 
 http://nlp.stanford.edu/projects/histwords
 
@@ -36,10 +36,10 @@ We
   * relationship between semantic change and polysemy. 
     * Words gain senses over time as they semantically drift 
       (Bréal, 1897; Wilkins, 1993; Hopper and Traugott, 2003), and 
-    * diverse contexts [affect] lexical access speed (Adelman et al., 2006) and
-      rates of L2 learning (Crossley et al., 2010)
-    * more or less likely to undergo change (Geeraerts, 1997; Winter et al.,
-      2014; Xu et al., 2015). Furthermore, 
+    * diverse contexts [affect] lexical access speed (Adelman+ 2006) and
+      rates of L2 learning (Crossley+ 2010)
+    * more or less likely to undergo change (Geeraerts, 1997; Winter+
+      2014; Xu+ 2015). Furthermore, 
   * polysemy is strongly correlated with frequency 
     (Zipf, 1945; İlgen and Karaoglan, 2007)
     * understanding [the effect of polysemy] requires controling for [freq]
@@ -48,9 +48,9 @@ We
   according to their co-occurrence relationships (Bullinaria and Levy, 2007)
 * embeddings ... compared across time-periods
   * effectively demonstrated in a number of case-studies 
-    (Sagi et al., 2011; Wijaya and Yeniterzi, 2011; Gulordava and Baroni, 2011;
+    (Sagi+ 2011; Wijaya and Yeniterzi, 2011; Gulordava and Baroni, 2011;
     Jatowt and Duh, 2014) and 
-  * large-scale linguistic change-point detection (Kulkarni et al., 2014) as
+  * large-scale linguistic change-point detection (Kulkarni+ 2014) as
   * test a few specific hypotheses, such as whether 
     English synonyms ... change meaning in similar ways (Xu and Kemp, 2015)
   * widely different embedding approaches and test their approaches 
@@ -70,7 +70,7 @@ We
   * Previous work ... either 
     * avoiding low-dimensional embeddings 
       (e.g., Gulordava and Baroni, 2011; Jatowt and Duh, 2014)
-    * performing heuristic local alignments per word (Kulkarni et al., 2014).
+    * performing heuristic local alignments per word (Kulkarni+ 2014).
 * We use orthogonal Procrustes to align the learned low-dimensional embeddings.
   Defining W (t) ∈ R d×|V| as the matrix of word embeddings learned at year t,
   we align across time-periods while preserving cosine similarities by
@@ -148,7 +148,7 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
 # 5 Discu
 
 * recent work on detecting the emergence of novel word senses 
-  (Lau et al., 2012; Mitra et al., 2014; Cook et al., 2014; Mitra et al., 2015;
+  (Lau+ 2012; Mitra+ 2014; Cook+ 2014; Mitra+ 2015;
   Frermann and Lapata, 2016)
 * These ... statistical laws also lend themselves to various causal mechanisms.
   * The law of conformity might be a consequence of 
@@ -159,7 +159,7 @@ Diachronic word embeddings can be used in two ways to quantify semantic change:
     * sociocultural conformity bias makes people less likely to accept novel
       innovations of common words, a mechanism 
       * analogous to the biological process of purifying selection 
-        (Boyd and Richerson, 1988; Pagel et al., 2007).  Moreover, 
+        (Boyd and Richerson, 1988; Pagel+ 2007)
 * such mechanisms may also be partially responsible for the law of innovation.
   Highly polysemous words tend to have more rare senses (Kilgarriff, 2004), and
   rare senses may be unstable by the law of conformity

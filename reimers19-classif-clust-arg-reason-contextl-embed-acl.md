@@ -7,8 +7,8 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
 
 # Abstract
 
-* We experiment with ... ELMo and BERT)
-* of open-domain argument search. For the first time, we show how to leverage
+* We experiment with ... ELMo and BERT
+* open-domain argument search
 * classify and cluster, [impressive results on both tasks and] multiple dataset
   * classification, we improve the SOTA for the
     * UKP Sentential Argument Mining Corpus by 20.8 percentage points and for
@@ -39,10 +39,10 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
   2. If this does not happen, ... only users able to pay for privileged access
 * Contextualized word embeddings, especially
   * ELMo (Peters+ 2018) and BERT (Devlin+ 2018) could offer a viable solution
-* We thus analyze ELMo and BERT in a cross-topic scenario for the tasks of
-  argument classification and clustering
+* We thus analyze ELMo and BERT in a cross-topic scenario 
+  for the tasks of argument classification and clustering
 * We frame the problem of open-domain argument search as a combination of
-  topic-dependent argument classification and clustering and discuss
+  topic-dependent argument classification and clustering
 
 # 2 Related work
 
@@ -82,9 +82,9 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
     the “masked language model” and the “next sentence prediction” objectives
     * They [fine-tune] for sentence classification and sentence-pair classif
 
-# 3 the four different datasets used in this work in Section 3, before we
+# 3 the four different datasets used in this work
 
-# 4 classification and
+# 4 classification
 
 # 5 clustering 6
 
@@ -92,9 +92,9 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
 
 * We use agglomerative hierarchical clustering (Day and Edelsbrunner, 1984) to
   * average linkage criterion to compute the P similarity P between two
-  * stopping threshold which is determined on the train set
-* We also tested the k-means and the DBSCAN clustering algorithms, but we found
-  that agglomerative clustering generally yielded better performances in
+  * stopping threshold is determined on the train set
+* We also tested the k-means and the DBSCAN clustering algorithms, 
+  but agglomerative clustering generally yielded better performances in
   preliminary experiments
 * We propose and evaluate various similarity metrics in two setups
 

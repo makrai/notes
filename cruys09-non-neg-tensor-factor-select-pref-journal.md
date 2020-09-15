@@ -1,7 +1,7 @@
 A non-negative tensor factorization model for selectional preference induction
 Tim Van de Cruys
-ACL 2009 https://www.aclweb.org/anthology/W09-0211
-Natural Language Engineering 2010
+ACL 2009 https://www.aclweb.org/anthology/W09-0211, 8 pages
+Natural Language Engineering 2010, 21 pages
 
 # Abstract
 

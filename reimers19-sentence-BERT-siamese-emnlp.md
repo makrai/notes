@@ -48,7 +48,7 @@ EMNLP 2019
   * output is passed to a simple regression function to derive the final label
   * new SOTA on the Semantic Textual Semilarity (STS) benchmark (Cer+ 2017)
   * RoBERTa (Liu+ 2019) showed, that the performance of BERT can further
-    improved by small adaptations to the pre-training process. We also tested
+    improved by small adaptations to the pre-training process
   * XLNet (Yang+ 2019) led ... to worse results than BERT [in these tasks]
 * sentence embeddings from BERT
   * limitations of BERT
@@ -90,25 +90,24 @@ EMNLP 2019
 
 # 6 ablation study to test some design aspect of SBERT 7
 
-* pooling strategies (MEAN, MAX, and CLS). 
-* For the classification objective function, we evaluate different concat
-  10 different random seeds and average the performances.
-  * we only report scores with MEAN pooling strategy.  
-  * pooling strategy has a rather minor impact. 
-  * The impact of the concatenation mode is much larger. 
+* pooling strategies (MEAN, MAX, and CLS)
+* For the classification objective function, we evaluate different concat meths
+  * 10 different random seeds and average the performances
+  * we only report scores with MEAN pooling strategy
+  * pooling strategy has a rather minor impact
+  * The impact of the concatenation mode is much larger
     * InferSent (Conneauet+ 2017) and Universal Sentence Encoder (Cer+ 2018)
-      both use (u, v, |u − v|, u ∗ v) as input for a softmax classifier.
-    * However, in our architecture, adding the element-wise u ∗ v decreased the
-      performance.
-    * The most important component is the elementwise difference |u − v|. Note,
+      both use (u, v, |u − v|, u ∗ v) as input for a softmax classifier
+    * hE, in our architecture, adding the element-wise u ∗ v decreased the perf
+    * The most important component is the elementwise difference |u − v|
   * At inference, when predicting similarities for the STS benchmark dataset,
     only the sentence embeddings u and v are used in combination with
     cosine-similarity. The element-wise difference measures the distance
 * When trained with the regression objective function, we observe that the
-  pooling strategy has a large impact. There, the 
-  * MAX strategy perform significantly worse than MEAN or CLS-token strategy.
-  * in contrast to (Conneau+ 2017), who found it beneficial for the
-    BiLSTM-layer of InferSent to use MAX instead of MEAN pooling.
+  pooling strategy has a large impact. There, the
+  * MAX strategy perform significantly worse than MEAN or CLS-token strategy
+  * in contrast to Conneau+ (2017), who found it beneficial for the
+    BiLSTM-layer of InferSent to use MAX instead of MEAN pooling
 
 # 7 computational efficiency
 

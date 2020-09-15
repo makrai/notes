@@ -157,12 +157,12 @@ From frequency to meaning: vector space models of semantics
   * sparsity reduction
 * good C implementation
 * alternative matrix smoothing processes
-    * Nonnegative Matrix Factorization (NMF) (Lee & Seung, 1999),
-    * Probabilistic Latent Semantic Indexing (PLSI) (Hofmann, 1999),
-    * Iterative Scaling (IS) (Ando, 2000),
+    * Nonnegative Matrix Factorization (NMF, Lee & Seung, 1999),
+    * Probabilistic Latent Semantic Indexing (PLSI, Hofmann, 1999),
+    * Iterative Scaling (IS, Ando, 2000),
     * Kernel Principal Components Analysis (Scholkopf, Smola, Muller, 1997)
-    * Latent Dirichlet Allocation (LDA) (Blei et al., 2003), and
-    * Discrete Component Analysis (DCA) (Buntine & Jakulin, 2006)
+    * Latent Dirichlet Allocation (LDA, Blei et al., 2003), and
+    * Discrete Component Analysis (DCA, Buntine & Jakulin, 2006)
   * tend to be more computationally intensive than truncated SVD, but they
     attempt to model word frequencies better
   * Truncated SVD implicitly assumes that the elements in X have a Gaussian
@@ -228,7 +228,7 @@ if ... the matrix X can[not] fit into memory
       coordinate of r
   * shown to perform as well as LSA on a word synonym selection task
     (Karlgren & Sahlgren, 2001)
-* Locality sensitive hashing (LSH) (Broder, 1997) is another technique that
+* Locality sensitive hashing (LSH, Broder, 1997) is another technique that
   approximates the similarity matrix with complexity O(n 2 r δ 2 )
   * map vectors (rows or columns) into short signatures or fingerprints
   * LSH functions include the
