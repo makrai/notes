@@ -11,11 +11,10 @@ arXiv:1909.10724 [cs.CL]
 # 1 Introduction
 
 * evaluations for sentence embedders
-  * intrinsic (e.g., Conneau+ 2018) and
+  * intrinsic (e.g., Conneau+ ACL 2018)
     A Conneau, G Kruszewski, G Lample, L Barrault, and Marco Baroni
     What you can cram into a single vector: Probing sentence embeddings for lin
-    ACL 2018
-  * extrinsic (e.g., GLUE; Wang+ 2019) evaluations have emerged 
+  * extrinsic (e.g., GLUE; Wang+ 2019)
   * Our approach, nearest neighbor overlap (N2O), is something different
     * linguistics~ and task-agnostic manner, using only a large unannotated
     * By drawing a random sample of queries from the corpus itself
@@ -24,7 +23,7 @@ arXiv:1909.10724 [cs.CL]
   * information retrieval (Salton and Buckley, 1988), and
   * open-domain question answering (Seo+ 2018)
 
-# 2 the N2O method motivated and explained
+# 2 The N2O method motivated and explained
 
 ## 2.1 Desiderata
 
@@ -33,9 +32,9 @@ arXiv:1909.10724 [cs.CL]
 * we consider variants trained on different data or using different hyperparams
 * we use cosine similarity
 
-# 3 apply it to 21 sentence embedders
+# 3 Apply it to 21 sentence embedders
 
-* [defering] implementation decisions in §4
+* [deferring] implementation decisions in §4
 
 ## 3.1 tf-idf
 
@@ -69,7 +68,7 @@ arXiv:1909.10724 [cs.CL]
 * average the word embeddings
 * surprisingly [good] on sentence similarity, NLI (Wieting+ 2016; Arora+ 2017)
 * contextual embeddings: special token or position in the sequence
-  * BERT, the [CLS] token (normally used as input for classification) is also
+  * BERT, the [CLS] token (normally used as input for classification)
   * last token’s representation may be used for GPT
 
 ## 3.3 Encoders
@@ -84,11 +83,16 @@ arXiv:1909.10724 [cs.CL]
     multi-task training on several semantic tasks (including sem textual sim);
     * encode[r] either with a deep averaging network or a transformer
 
+# 4 Experimental Details 4
+
+* The results in §5 are with k set to 50, 
+  averaged across five samples of n = 100 queries
+  * We illustrate the effects of different k and N2O samples in §6
+
 # 5 Results
 
 * in the intro
-  * relatively high similarity among averaged static (i.e., noncontextual) word
-    type embeddings, a
+  * relatively high similarity among averaged static (i.e., non-contextual)
   * strong effect of the use of subword information, and that
   * BERT and GPT are distant outliers
 
@@ -99,13 +103,13 @@ arXiv:1909.10724 [cs.CL]
 ## BERT and GPT
 
 * specific-token representations for BERT or GPT are outliers
-  * as the training objectives for both (without finetuning) are not geared
+  * as the training objectives for both (without fine-tuning) are not geared
     towards semantic similarity the way other embedders may be
   * surprising is that this effect seems to hold even for the
     MultiNLI-finetuned version of BERT (bert-ft-cls)
     * this decreases N2O with other embedders further
     * In preliminary experiments, we also saw similar results with BERT
-      finetuned on the Microsoft Research Paraphrase Corpus (Dolan+ 2004)
+      fine-tuned on the Microsoft Research Paraphrase Corpus (Dolan+ 2004)
 * averaged BERT and GPT embeddings yields higher N2O with other embedders,
   especially ELMo-based ones
 
@@ -115,9 +119,9 @@ arXiv:1909.10724 [cs.CL]
   * not wholly surprising as the model was initialized using GloVe vectors
   * USE variants (DAN and Transformer) have fairly distinct [NNs than others]
 
-# 6 robustness of N2O across different query samples and sample sizes
+# 6 Robustness of N2O across different query samples and sample sizes
 
-## Varying k. How sensitive our procedure is to k
+## Varying k
 
 * changing [the number of nearest neighbors] does not significantly affect
 
@@ -127,14 +131,15 @@ arXiv:1909.10724 [cs.CL]
 
 * [see] approximate nearest neighbor methods in Appendix C
 
-# 7 neighbors ... that are stable across embedders
+# 7 Neighbors ... that are stable across embedders 9
 
-* [consistent] neighbors across different embedders? We might expect, for
-    Table 2 shows an example query with a sentence that is in the 5-nearest
-    neighborhood for all sentence embedders. We also show sentences that are
-    highly ranked for some embedder but not in the [top 50] for any other
+* Table 2
+  * an example query with a sentence that is in the 5-nearest neighborhood for
+    all sentence embedders
+  * sentences that are highly ranked for some embedder but 
+    not in the [top 50] for any other
 
-# 8 known paraphrase
+# 8 Known paraphrase
 
 * considerable variance across embedders’ ability
 * “needle-in-a-haystack” experiment
@@ -152,12 +157,12 @@ arXiv:1909.10724 [cs.CL]
 
 * comparisons of sentence embedders
 * Linguistic probing tasks test whether embeddings can distinguish
-  surface level properties, like sentence length;
-  syntactic properties, like tree depth; and
-  semantic properties, like coordination inversion
+  * surface level properties, like sentence length;
+  * syntactic properties, like tree depth; and
+  * semantic properties, like coordination inversion
   * Ettinger+ (2016), Adi+ (2017), Conneau+ (2018), and Zhu+ (2018)
-* Downstream evaluations are often classification tasks for which good sentence
-  representations are helpful (e.g., NLI)
+* Downstream evaluations are often classification tasks 
+  for which good sentence representations are helpful (e.g., NLI)
   * Evaluations like the RepEval 2017 shared task (Nangia+ 2017),
   * SentEval toolkit (Conneau and Kiela, 2018), and
   * GLUE benchmark (Wang+ 2019) seek to standardize comparisons

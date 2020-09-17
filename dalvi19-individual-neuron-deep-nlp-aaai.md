@@ -26,7 +26,7 @@ https://github.com/fdalvi/NeuroX
 
 # Intro
 
-* methods to facilitate neuron analysis. First, we perform an
+* methods to facilitate neuron analysis
   * Linguistic Correlation Analysis
     * extrinsic correlation analysis through supervised classification on a
       number of [important] linguistic properties
@@ -44,7 +44,7 @@ https://github.com/fdalvi/NeuroX
   1. the model recognizes a hierarchy of linguistic properties
     and distributes neurons based on it, and
   1. important neurons extracted from the [two methods] overlap
-   * e.g. position as salient. In summary, we make the following
+   * e.g. position as salient
 * contributions:
   * A general methodology for identifying linguistically meaningful neurons
   * An unsupervised method for finding important neurons in neural networks,
@@ -67,10 +67,10 @@ https://github.com/fdalvi/NeuroX
   * syntactic
     (Shi, Padhi, and Knight 16; Linzen, Dupoux, and Goldberg 16; Conneau+ 18)
 * Most of this work used an
-  extrinsic supervised task and target entire vector representations. We study
-* Some recent work on neural LM and MT analyzes specific neurons of
+  extrinsic supervised task and target entire vector representations
+* Some recent work on neural LM and MT analyzes specific neurons
   * length (Qian, Qiu, and Huang 2016a; Shi, Knight, and Yuret 2016) and
-  * sentiment (Radford, Jozefowicz, and Sutskever 2017). However, not much work
+  * sentiment (Radford, Jozefowicz, and Sutskever 2017)
 * In computer vision, ... visualizing and analyzing individual units such as
   * filters in CNNs (Zeiler and Fergus 2014; Zhou+ 2016)
   * doubts were cast on the importance of individual units (Morcos+ 2018),

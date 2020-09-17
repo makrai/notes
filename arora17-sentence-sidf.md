@@ -113,7 +113,7 @@ ICLR 2017
   * To estimate `c_s`, we estimate the direction `c_0`
     by computing the first principal component of `c̃_s`s for a set of sentences
     * without centralizing c̃ s
-    * [i.e.] the final sentence embedding is obtained by subtracting the
+    * the final sentence embedding is obtained by subtracting the
       projection of `c̃_s`s to their first principal component
 * summarized in Algorithm 1
 

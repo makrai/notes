@@ -18,7 +18,7 @@ https://github.com/ibalazevic/TuckER
 # 1 Intro
 
 * Knowledge graphs ... represented by a third-order binary tensor
-  * 1 indicating a true fact and 0 indicating the unknown (false or a missing)
+  * 1 indicating a true fact and 0 indicating the unknown (false or missing)
 * approaches to link prediction
   * linear, based [on] factorizing the third-order binary tensor 
     (Nickel+ 2011; Yang+ 2015; Trouillon+ 2016; Kazemi & Poole, 2018)
@@ -62,8 +62,7 @@ https://github.com/ibalazevic/TuckER
 
 * a special case of RESCAL with a diagonal matrix per relation, so the number
 * [the] tensor learned by DistMult is symmetric in the subject and object
-* a special case of CP, where subject and object entity embeddings are
-  equivalent
+* a special case of CP, where subject and object entity embeddings are equiv
 
 ### ComplEx (Trouillon+ 2016)
 
@@ -73,14 +72,15 @@ https://github.com/ibalazevic/TuckER
 
 ### SimplE (Kazemi & Poole, 2018) is a linear model
 
-* based on Canonical Polyadic (CP) decomposition (Hitchcock, 1927). In CP
-* subject and object entity embeddings for the same entity are independent
-  SimplE ... make subject and object entity embedding vectors dependent, i.e
-  it computes the average of two terms, first of which is a bilinear product of
-  the head embedding of the subject entity, relation embedding and tail
-  embedding of the object entity and the second is a bilinear product of the
-  head embedding of the object entity, inverse relation embedding and tail
-  embedding of the subject entity
+* based on Canonical Polyadic (CP) decomposition (Hitchcock, 1927)
+* subject and object entity embeddings for the same entity are 
+  * in CP, independent
+  * SimplE ... make subject and object entity embedding vectors dependent, i.e
+    it computes the average of two terms, 
+    1. a bilinear product of the head embedding of the subject entity, relation
+       embedding and tail embedding of the object entity and the 
+    2. bilinear product of the head embedding of the object entity, inverse
+       relation embedding and tail embedding of the subject entity
 
 ## Recent SOTA non-linear models
 
@@ -162,7 +162,7 @@ https://github.com/ibalazevic/TuckER
     (Feng+ 2016) and STransE (Nguyen+ 2016)
 * TuckER : `d_e = n_e` and `d_r = n r`
 
-## 5.2. ... Previous Tensor Factorization Approaches [as special cases] 5
+## 5.2. Previous Tensor Factorization Approaches [as special cases] 5
 
 ### RESCAL (Nickel+ 2011) Following the notation introduced in Section 3.2,
 
@@ -181,8 +181,8 @@ https://github.com/ibalazevic/TuckER
 ### ComplEx (Trouillon+ 2016)
 
 * Bilinear models are a family of models where subject and object entity
-  * embeddings are represented by vectors `e_s` , e o
-  * a relation is represented by a matrix W r ∈ R d_e ×d e and
+  * embeddings are represented by vectors `e_s`, `e o`
+  * a relation is represented by a matrix `W r ∈ R d_e × d_e` and
   * the scoring function takes the form of a bilinear product
 * It is trivial to show that both RESCAL and DistMult belong to the family
   * ComplEx can be considered a bilinear model (Kazemi & Poole 2018)
@@ -208,12 +208,12 @@ https://github.com/ibalazevic/TuckER
   factorization of the binary tensor of triples
 * so far
   * e.g. ComplEx and SimplE
-    * distinct (although possibly related) embeddings for subject and object es
+    * distinct (although possibly related) embeddings for subject and object
     * diagonal matrix (or equivalently a vector) for each relation
     * strict constraint on the relation matrix and
     * a hard limit on the type of transformation applied on entity embeddings
   * RESCAL
-    * subject and object entity embeddings to be equivalent, but representing a
+    * subject and object entity embeddings to be equivalent
     * relation as a full rank matrix
     * quadratic growth of parameter number with the number of relations
     * overfitting, especially for relations with [few] training triples

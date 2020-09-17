@@ -9,7 +9,7 @@ Robert Bamler, Stephan Mandt
   * tracks the semantic evolution of individual words over time
   * represents words and contexts by latent trajectories in an embedding space
     * At each moment in time, the embedding vectors are inferred from a
-      probabilistic version of word2vec [Mikolov et al., 2013]. These embedding
+      probabilistic version of word2vec [Mikolov+ 2013]. These embedding
     * vectors are connected in time through a latent diffusion process
   * two scalable variational inference algorithms
     skip-gram smoothing and skip-gram filtering
@@ -39,19 +39,19 @@ Robert Bamler, Stephan Mandt
     * streams of text in social media
 * Current approaches to [dynamic embeddings] rely on
   grouping the data into time bins and training the embeddings separately
-  (Kim et al., 2014; Kulkarni et al., 2015; Hamilton et al., 2016)
+  (Kim+ 2014; Kulkarni+ 2015; Hamilton+ 2016)
   * fundamental problems. First, since word
     1. embedding vectors at successive times can only be approximately related
        to each other,
-       and only if the embedding dimension is large (Hamilton et al., 2016)
+       and only if the embedding dimension is large (Hamilton+ 2016)
     2. time bins ... are too small
 * contributions
   * probabilistic state space model ... generalizes the skip-gram model
-    (Mikolov et al., 2013b; Barkan, 2017) to a dynamic setup, which allows
+    (Mikolov+ 2013b; Barkan, 2017) to a dynamic setup, which allows
     end-to-end training. This leads to continuous embedding trajectories,
     * allows us to share information across all times
   * two scalable black-box variational inference algorithms
-    (Ranganath et al., 2014; Rezende et al., 2014) for filtering and smoothing
+    (Ranganath+ 2014; Rezende+ 2014) for filtering and smoothing
     * for structured Gaussian variational distributions with tridiagonal
     precision matrices, and applies more broadly
   * We analyze three massive text corpora that span over long periods of time
@@ -64,21 +64,21 @@ Robert Bamler, Stephan Mandt
 * Probabilistic models that have been extended to latent time series models
   * none of them relate to word embeddings. The
   * closest of these models is the dynamic topic model
-    (Blei & Lafferty, 2006; Wang et al., 2008), which
+    (Blei & Lafferty, 2006; Wang+ 2008), which
     learns the evolution of latent topics over time
-  * other (Sahoo et al., 2012; Gultekin & Paisley, 2014; Charlin et al., 2015;
-    Ranganath et al., 2015; Jerfel et al., 2017)
+  * other (Sahoo+ 2012; Gultekin & Paisley, 2014; Charlin+ 2015;
+    Ranganath+ 2015; Jerfel+ 2017)
 * word2vec in Bayesian setup (Barkan, 2017 AAAI)
 * different statistics of text data to analyze semantic changes of words
-  (Mihalcea & Nastase, 2012; Sagi et al., 2011; Kulkarni et al., 2015)
+  (Mihalcea & Nastase, 2012; Sagi+ 2011; Kulkarni+ 2015)
   * they slice the data into different time bins, fit the model separately
   * can therefore not share statistical strength across time. This
   * limits the applicability of static models to very large corpora [miért
     nagyra?]
-* Kim et al. (2014) fit word2vec separately on different time bins, where the
+* Kim+ (2014) fit word2vec separately on different time bins, where the
   * vectors obtained for the previous bin are used to initialize the ... next
   * trajectories are not as smooth as ours, as we demonstrate in this paper
-* Hamilton et al. (2016) also trained word2vec separately on several large
+* Hamilton+ (2016) also trained word2vec separately on several large
   corpora from different decades
   * If the embedding dimension is large enough (and hence the optimization
     problem less non-convex), the authors argue that word embeddings at nearby
@@ -95,9 +95,9 @@ Robert Bamler, Stephan Mandt
 
 * SGI denotes the non-Bayesian skip-gram model with independent random init
   * nearby times are made comparable by approximate orthogonal transformations,
-  * corresponds to Hamilton et al. (2016)
+  * corresponds to Hamilton+ (2016)
 * SGP denotes the same approach as above [initialized with] the previous year,
-  as in Kim et al. (2014)
+  as in Kim+ (2014)
 * DSG-F: dynamic skip-gram filtering (proposed)
 * DSG-S: dynamic skip-gram smoothing (proposed)
 
@@ -105,9 +105,9 @@ Robert Bamler, Stephan Mandt
 
 * Our three corpora exemplify opposite limits
   both in the covered time span and in the amount of text per time step
-1. We used data from the Google books corpus 2 (Michel et al., 2011) from the
-last two centuries (T = 209).  This amounts to 5 million digitized books and
-approximately 10^10 observed words. The corpus consists of 5-gram tables
+1. We used data from the Google books corpus (Michel+ 2011) from the last two
+   centuries (T = 209).  This amounts to 5 million digitized books and
+   approximately 10^10 observed words. The corpus consists of 5-gram tables
 2. “State of the Union” (SoU) addresses of U.S. presidents, which spans more
    * two centuries, resulting in T = 230 different time steps and approx-
    * 10^6 observed words ... lower case[d] and ... a context window size of 4

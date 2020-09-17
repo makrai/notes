@@ -4,13 +4,13 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
 
 * Comparing the performance of UMAP with five other tools
   * UMAP provides the fastest run times, highest reproducibility and the 
-    most meaningful organization of cell clusters. The work highlights the use
+    most meaningful organization of cell clusters
 
 # Main
 
 * number of parameters analyzed in single-cell cytometry and transcriptome
-  * ∼20 for flow cytometry, ∼40 for mass cytometry and >20,000 in single-cell
-    RNA sequencing (scRNAseq)
+  * ∼20 for flow cytometry, ∼40 for mass cytometry and 
+    >20,000 in single-cell RNA sequencing (scRNAseq)
 * Dimensionality reduction techniques have been pivotal to visualize
 * Nonlinear dimensionality reduction techniques
   * avoid overcrowding of the representation, wherein distinct clusters are
@@ -27,15 +27,15 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
   * preserve as much of the local and more of the global data structure
   * shorter run time [than] Barnes–Hut t-SNE, much faster than scvis, and
     comparable to FIt-SNE
-* we test these claims on three well-characterized single-cell datasets [9],10,11
+* we test these claims on three well-characterized single-cell datasets 9,10,11
   * visually and quantitatively compare UMAP with
     * [t-SNE variants]
-      * the widely used Barnes–Hut implementation of t-SNE [12]; the
+      * the widely used Barnes–Hut implementation of t-SNE [12]
       * heavily optimized Fourier-interpolated t-SNE,
         with or without late exaggeration (FIt-SNE l.e. or FIt-SNE, resp)
     * autoencoder neural network scvis [14]
-      * currently offers the advantage of being able to append new data points
-        to an existing embedding
+      * currently offers the advantage of being 
+        able to append new data points to an existing embedding
 
 # Results
 
@@ -61,7 +61,7 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
     three data subsamples of size 200,000, as well as on the [full] embedding
     * (with k = 100 to obtain small clusters)
   * how informative the [clustering] of the subsamples were to predict the
-    [clustering] of the full datasets (Fig.  4b)
+    [clustering] of the full datasets (Fig. 4b)
   * normalized mutual information coefficients
     * UMAP nonetheless ranked first on two datasets and second on the third one
       * between 0.4 and 0.5

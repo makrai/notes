@@ -14,10 +14,10 @@ Learning Sense-specific Word Embeddings By Exploiting Bilingual Resources
 # 6 Related Work
 
 * language models based on feed-forward neural networks
-  * Schwenk and Gauvain (2002), Bengio et al.  (2003), Mnih and Hinton (2007)
-  * and Collobert et al.  (2011), Mikolov et al. (2010)
+  * Schwenk and Gauvain (2002), Bengio+  (2003), Mnih and Hinton (2007)
+  * and Collobert+  (2011), Mikolov+ (2010)
 * using bilingual resources for word sense disambiguation
-  * (Gale et al., 1992; Chan and Ng, 2005)
+  * (Gale+ 1992; Chan and Ng, 2005)
   * aligned bilingual data along with word sense inventories such as WordNet
   * We employ this idea
 * datasets for context-unaware polysemous word similarity evaluation:

@@ -98,7 +98,7 @@ naacl 2018
   * percent overlap between corpora vocabulary, as well as the
   * domain of each of the two corpora ...?
   * whether the two corpora are from the same domain
-  * the role of curriculum learning in stability. It has been posited that
+  * the role of curriculum learning in stability
     * the order of the training data affects the performance (Bengio+ 2009)
     * previously explored for word2vec (Tsvetkov+ 2016)
     * only affects word2vec ... Of the embedding algorithms we consider,

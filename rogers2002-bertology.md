@@ -419,7 +419,7 @@ arXiv:2002.12327 [cs.CL]
   * caveats [kifogások] for open-class parts of speech (Cao+ 2019)
   * Adding more languages does not seem to harm the quality of representations
     (Artetxe+ 2019)
-* across some scripts (Pires+ 2019), and can
+* across some scripts (Pires+ 2019)
 * retrieve parallel sentences, although Libovický+ (2019) note that this task
   could be solvable by simple lexical matches
 * representation space shows some systematicity in between-language mappings,
@@ -436,7 +436,7 @@ arXiv:2002.12327 [cs.CL]
 * cross-lingual transfer can be achieved (Artetxe+ 2019)
   by only retraining the input embeddings while keeping monolingual BERT weight
   * i.e. even monolingual models learn generalizable linguistic abstractions
-* compar with English BERT
+* compared with English BERT
   * At least some of the syntactic properties of English BERT hold for mBERT:
   * MLM is aware of 4 types of agreement in 26 langs (Bacon and Regier, 2019)
   * main auxiliary of the sentence can be detected in German and Nordic langs
@@ -496,7 +496,7 @@ arXiv:2002.12327 [cs.CL]
 
 ## 9.2 Directions for further research
 
-###Benchmarks that require verbal reasoning
+### Benchmarks that require verbal reasoning
 
 * [BERT's] verbal reasoning abilities are not as impressive as it seems
   * [BERT relies] on shallow heuristics in both
@@ -505,14 +505,14 @@ arXiv:2002.12327 [cs.CL]
   * needs to incentivize [=motvt] dataset development on par with modeling work
     which at present is often perceived as more prestigious
 
-###Developing methods to “teach” reasoning
+### Developing methods to “teach” reasoning
 
 * [when] reasoning needs to be performed on top of the facts they possess
   (see subsection 4.3)
 * Richardson+ (2019) propose a method to “teach” BERT
   quantification, conditionals, comparatives, and boolean coordination
 
-###Learning what happens at inference time
+### Learning what happens at inference time
 
 * what knowledge actually gets used
   * knowledge represented in BERT does not necessarily get used in downstream

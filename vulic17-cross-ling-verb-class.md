@@ -134,7 +134,7 @@ acl 2017
   * Again, following prior work (Sun+ 2010, 2013)
   * based on the eigenvector structure of the word similarity matrix
 
-# 3 Experimental Setup
+# 3 Experimental Setup 5
 
 * FR, PT, IT, PL, HR, and, FI
 
@@ -145,14 +145,14 @@ acl 2017
 * IT, PL, HR, and FI (Majewska+ 2017)
 * based on the EN gold standard of Sun+ (2008)
 
-# 4 Results
+# 4 Results 7
 
-## Starting Source Vector Space Fig. 2a
+### Starting Source Vector Space Fig. 2a
 
 * small but consistent gains with SGNS-DEPS, which utilises ... dependency
   * (Padó and Lapata, 2007; Levy and Goldberg, 2014)
 
-## Bilingual vs. Multilingual
+### Bilingual vs. Multilingual
 
 * The transfer model can operate with more than two languages, effectively
 * model relies on more constraints
@@ -163,13 +163,13 @@ acl 2017
   * additional languages do not lead to clear improvements
     * procedure becomes dominated by cross-lingual constraints
 
-## Clustering Algorithm
+### Clustering Algorithm
 
 * K-means clustering [results are] lower
 * hierarchical agglomerative clustering with Ward’s linkage (Ward, 1963),
   * on par with spectral clustering
 
-## Verb Classification vs. Semantic Similarity
+### Verb Classification vs. Semantic Similarity
 
 * correlation between verb classification and semantic similarity
   (Baker+ 2014)
@@ -193,5 +193,5 @@ acl 2017
   truly low-resource settings
 * other distributional spaces, e.g. (Melamud+ 2016)
   * Oren Melamud, Jacob Goldberger, and Ido Dagan
-  Context2vec: Learning generic context embedding with bidirectional LSTM
-  CoNLL 2016
+    Context2vec: Learning generic context embedding with bidirectional LSTM
+    CoNLL 2016

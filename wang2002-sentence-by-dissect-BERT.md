@@ -30,7 +30,7 @@ Our codes are publicly available at the Github
   * a common ... approach based on BERT-based models is to average the
     representations obtained from the last layer or using the CLS token
     * both are sub-optimal as shown in the experimental section of this paper
-  * sentence embedding using pre-trained BERT, called Sentence-BERT (Reimers&) 
+  * sentence embedding using pre-trained BERT, called Sentence-BERT (Reimers&)
     * leverages further training with high-quality labeled sentence pairs
   * unsupervised learning of sentence encoders, e.g., SkipThought [12] and
     FastSent [13], build self-supervision from a large unlabeled corpus
@@ -67,22 +67,28 @@ Our codes are publicly available at the Github
 
 ## B. Universal Sentence Embedding
 
-* Non-parameterized methods usually rely on high quality pretrained word embed
+* Non-parameterized methods usually rely on high quality pretrained word embeds
   * average word embedding results as the representation for a sentence
-  * weighted averaging methods were proposed, including tf-idf, SIF [27], uSIF
-    [28] and GEM [29]
+  * weighted averaging methods were proposed,
+    including tf-idf, SIF [27], uSIF [28] and GEM [29]
     * SIF uses the random walk to model the sentence generation process and
       derives word weights using the maximum likelihood estimation (MLE)
     * uSIF extends SIF by introducing an angular-distance-based random walk
-      model.  No hyper-parameter tuning is needed in uSIF
+      * No hyper-parameter tuning is needed in uSIF
+      * [28] K. Ethayarajh,
+        “Unsupervised random walk sentence embeddings: A strong but simple bl”
+        Representation Learning for NLP, 2018
     * GEM: weights from exploiting geometric analysis of the [word] space
       ... with several hand-crafted measurements
-      * p-mean [30] to concatenate the power means of word embeddings and 
-        fuses different word embedding models 
+      * p-mean [30] to concatenate the power means of word embeddings and
+        fuses different word embedding models
         to shorten the performance gap between non-parameterized and parameterd
+      * [29] Z. Yang, C. Zhu, and W. Chen,
+        “Parameter-free sentence embedding via orthogonal basis,”
+        EMNLP-IJCNLP 2019
 * Parameterized models are more complex, and they usualy perform better
-  * skipthought sentence encoder [12] 
-    * extends the unsupervised training of word2vec [1] to the sentence level.
+  * skipthought sentence encoder [12]
+    * extends the unsupervised training of word2vec [1] to the sentence level
     * adopts the encoder-decoder architecture
   * InferSent [14] employs bi-directional LSTM with supervised training. It
     trains the model to predict the entailment or contradiction of sentence
@@ -107,7 +113,7 @@ Our codes are publicly available at the Github
   * Independent Component Analysis (ICA) and
   * Canonical Correlation Analysis (CCA).  Subspace analysis has solid
   * to explain ... the internal states of Deep Neural Networks [32], [33], [34]
-* in post-processing and evaluation of word embeddings [37], [38], [39].  
+* in post-processing and evaluation of word embeddings [37], [38], [39]
 * subspace analysis in sentence embedding
   * SCDV [40] determines the sentence/document vector
     by splitting words into clusters and analyzing them accordingly
@@ -117,7 +123,7 @@ Our codes are publicly available at the Github
     and model the high-order dynamics of a sentence from a signal processing
     perspective
   * [so far] on static word embedding methods
-* [we:] subspace analysis to find generic sentence embeddings 
+* [we:] subspace analysis to find generic sentence embeddings
   based on deep contextualized word models
   * SBERT-WK can consistently outperform SOTA methods with low compute
     and good interpretability, which is attributed to
@@ -168,7 +174,7 @@ by examining [their] alignment and novelty properties
 
 # 6 Concluding remarks and future work directions
 
-* [future] research topics in the 
+* [future] research topics in the
   * subspace analysis in the deep contextualized models to regulate the
     training or fine-tuning process
   * understand deep contextualized neural models through subspace analysis

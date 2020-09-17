@@ -98,8 +98,7 @@ TODO
 * In this novel coherence task we assess
   whether groups of words in a small neighborhood in the embedding space are
   mutually related
-  * Previous[ly used] for qualitative evaluation using visualizations of 2D
-    projections (Turian+ 2010)
+  * Previous[ly used] for qualitative evaluation using 2d visu (Turian+ 2010)
   * Similar to Chang+ (2009), we presented Turkers with four words,
     three of which are close neighbors and one of which is an “intruder”
   * intruder word to be the first word that had a frequency of avg ± 500

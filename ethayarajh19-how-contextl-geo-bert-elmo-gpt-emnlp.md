@@ -53,34 +53,34 @@ EMNLP 2019
   * ELMo ... by concatenating the internal states of a 2-layer biLSTM trained
   * BERT and GPT-2 are bi-directional and uni-directional transformer-based LMs
     * transformer layer
-      * of 12layer BERT (base, cased) and 12-layer GPT-2 creates a
+      * of 12-layer BERT (base, cased) and 12-layer GPT-2
       * by attending to different parts of the input sentence
-        (Devlin+ 2018; Radford+ 2019). BERT – and subsequent iterations on
+        (Devlin+ 2018; Radford+ 2019)
     * BERT (Liu+ 2019b; Yang+ 2019) – have achieved SOTA on e.g. QA & sentiment
 
 ## Probing Tasks
 
-* Our work ... is more similar to Mimno and Thompson (2017), which studied the
-  geometry of static word embedding spaces
+* Our work ... is more similar to Mimno and Thompson (2017), which
+  studied the geometry of static word embedding spaces
 
 # 3 Approach 3
 
 ## 3.3 Measures of Contextuality
 
-* self-similarity, intra-sentence similarity, and maximum explainable variance.
+* self-similarity, intra-sentence similarity, and maximum explainable variance
   * self-similarity of a word w in layer l is the average cosine similarity
-    between its contextualized representations across its n unique contexts.
+    between its contextualized representations across its n unique contexts
   * intra-sentence similarity of a sentence is the average cosine similarity
     between its word representations and the sentence vector, which is just the
-    mean of those word vectors. This measure captures how context-specificity
+    mean of those word vectors
     * If IntraSim l (s) is high but SelfSim l (w) is low, this suggests a less
       nuanced contextualization, where words in a sentence are contextualized
-      simply by making their representations converge in vector space.  
+      simply by making their representations converge in vector space
   * the maximum explainable variance MEV l (w) is the proportion of variance in
     w’s contextualized representations for a given layer that can be explained
-    by their first principal component.  It gives us 
+    by their first principal component
     * an upper bound on how well a static embedding could replace a word’s
-      contextualized representations.  The closer MEV l (w) is to 0, the poorer
+      contextualized representations
 
 ## 3.4 Adjusting for Anisotropy 4
 
@@ -132,16 +132,39 @@ EMNLP 2019
     improvements on several downstream NLP tasks (Mu+ 2018)
 * anisotropy is inherent to, or ... a by-product of, the process of contextlztn
 
+## 4.2 Context-Specificity
+
+### Contextualized word representations are more context-specific in higher lay
+
+### Stopwords (e.g., ‘the’, ‘of’, ‘to’) have among the most context-specific rp
+
+### Context-specificity manifests very differently in ELMo, BERT, and GPT-2. As
+
+### In ELMo, words in the same sentence are more similar in upper layers
+
+### In BERT, words in the same sentence are more dissimilar in upper layers
+
+### In GPT-2, word representations in the same sentence are no more similar to
+each other than randomly sampled words
+
+## 4.3 Static vs. Contextualized
+
+### On average, less than 5% of the variance in a word’s contextualized
+representations can be explained by a static embedding
+
+### Principal components of contextualized representations in lower layers
+outperform GloVe and FastText on many benchmarks
+
 # 5 Future Work 9
 
 * isotropy
-  * Mu+ (2018) found that making static embeddings more isotropic 
+  * Mu+ (2018) found that making static embeddings more isotropic
     * – by subtracting their mean from each embedding –
-    * leads to surprisingly large improvements in performance on downstream
+    * leads to surprisingly large improvements in downstream performance
   * may also have benefits for contextualized word representations
     * anisotropy penalty to the language modelling objective
 * static word representations from contextualized ones
-  * challenges to deploying large models such as BERT in production, 
+  * challenges to deploying large models such as BERT in production,
     both with respect to memory and run-time
 
 # 6 Conclusion

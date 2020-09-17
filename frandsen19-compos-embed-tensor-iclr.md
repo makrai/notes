@@ -137,7 +137,7 @@ github.com/abefrandsen/compositional-embeddings (no documentation)
 
 ### Training
 
-* first train the word embeddings ... following Arora+ (2015)
+* first train the word embeddings ... following Arora+ (2014)
 * next train the composition tensor T via
   * [not] precisely targeting the Tucker decomposition of the PMI3 tensor,
   * analogous to the training criterion used in Arora+ (2015), and
