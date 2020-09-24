@@ -7,25 +7,25 @@ Passing Markers: A Theory of Contextual Influence in Language Comprehension
 Most Artificial Intelligence theories of language either
   * assume syntactic component
   * reject attempts at distinguishing modules
-* In this paper 
+* In this paper
   * keeping modularity
   * account for several puzzles for typical "syntax first" theories
   * marker passing (or spreading activation)
 
 # Intro
 
-* puzzles which arise given the above model. They will deal with: l l l
-  * determination of “context” in story comprehension, e.g., 
+* puzzles which arise given the above model. They will deal with:
+  * determination of “context” in story comprehension, e.g.,
     _Jack picked up a menu_ has a “restaurant” context
   * role of context in WSD
-  * relation between syntax and semantics.  
+  * relation between syntax and semantics
     * One routine, coroutines, separate but parallel?
 * refurbishing of an old [theory]: the spreading activation [SA] model
   * SA history
     * long and distinguished run in psychology (Anderson, 1976; Collins & Lof-
       tus, 1975; Collins & Quillian, 1969)
     * to a lesser degree in Artificial Intelligence (AI) (Quillian, 1966),
-    * since the early 70’s SA has mostly disappeared from the AI literature.
+    * since the early 70’s SA has mostly disappeared from the AI literature
   * or marker passing, as it is commonly referred to in AI circles
   * relate SA to common AI problems
     * context determination, WSD, and the semantic guidance of syntax
@@ -42,16 +42,16 @@ Most Artificial Intelligence theories of language either
 
 ## 2.2. Contextual Determination of Word Senses
 
-* and reaction time in word recognition 
+* and reaction time in word recognition
 
 ## 2.3. Finding Explanatory Actions 7
 
 * _Jack picked up a menu._ -> Jack intended to read the menu
   * postulated as a “explanation”
-* the program 
-  * has bidirectional pointers 
+* the program
+  * has bidirectional pointers
     * from an action to higher level actions in which it may play a role
-    * from objects to actions in which they typically play a role, and 
+    * from objects to actions in which they typically play a role, and
     * from objects to their superclasses (... the ubiquitous “isa” pointer)
   * depends crucially on a reasonably complete functional structure
 
@@ -59,9 +59,9 @@ Most Artificial Intelligence theories of language either
 
 ## 3.1 Finding Explanatory Actions
 
-* The problem is that we appear to have two kinds of phenomena. One requires
-  the use of functional relations in finding explanatory actions, the other
-  does not. Solution: postulate two separate capabilities.
+* The problem is that we appear to have two kinds of phenomena.  One requires
+  the use of functional relations in finding explanatory actions, the other does
+  not. Solution: postulate two separate capabilities
 
 ### Searching for connections
 
