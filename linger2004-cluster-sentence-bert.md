@@ -4,23 +4,24 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
 
 # Abstract
 
-* arrange high amount of multilingual news into stories. To this purpose, we
+* arrange high amount of multilingual news into stories
 * previous works on Topic Detection and Tracking, and propose a new system
 * we look for monolingual local topics
   which are then linked across time and languages.  Here, we introduce a novel
-  "replaying" strategy to link monolingual local topics into stories. Besides,
+  "replaying" strategy to link monolingual local topics into stories
 * new fine tuned multilingual embedding using SBERT to create crosslingual
-* monolingual SOTA results on dataset of Spanish and German news and
-* crosslingual SOTA results on English, Spanish and German news
+* SOTA results 
+  * monolingual on dataset of Spanish and German news and
+  * crosslingual on English, Spanish and German news
 
 # 1 Introduction
 
 * two-steps streaming system called newsLens [LH17]
-  to group articles into stories. However, this system does
-  * not support multilingual articles. Other works such as the one introduced
-* We show that multilingual documents are best represented through fine tuned
-  DistilBERT [SDCW19] multilingual model using SBERT [RG19] triplet network
-  structure
+  to group articles into stories
+  * not support multilingual articles
+* We show that multilingual documents are best represented through 
+  fine tuned DistilBERT [SDCW19] multilingual model 
+  using SBERT [RG19] triplet network structure
 
 ### 3.1.1 Article representation
 
@@ -35,5 +36,5 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
 
 # 5 Conclusion and Future Work
 
-In future work, we plan to challenge the TF-IDF based representation of
-monolingual articles using fine tuned SBERT [RG19] embeddings
+* In future work, we plan to challenge the TF-IDF based representation of
+  monolingual articles using fine tuned SBERT [RG19] embeddings
