@@ -131,7 +131,7 @@ The naive physics manifesto
 * if one could find an reductionist theory for common sense reasoning
   * i.e. all concepts could be defined in terms of these few. In fact, this
   * I feel confident in asserting that no such small theory exists. And yet,
-  * many approaches in the A1 literature, make such an assumption. These are the
+  * many approaches in the AI literature, make such an assumption. These are the
   * 'semantic primitive' approaches, exemplified by the work of
     Wilks (1975, for example) and Schank (1975, for example). Here, members of a
   * number of primitived: Wilks 90 or so, Schank 14+n for some n, as yet unknown
@@ -353,8 +353,141 @@ other concepts, but within the cluster there are a long of things to be said abo
 
 # 9. Why it needs to be done
 
+* there are those who believe [in] a simple uniform learning procedure 
+  * no need for naive physics 
+  * their pre-theoretical assumptions differ so much from those made by most AI
+  * essentially different field 
+* disagreement on methodology. The most 
+  * dominant view: construct a 'complete' program in order to demonstrate that
+  * The naive physics proposal avoids the construction of such a complete prog
+  * applyed too soon (typically, after 3 years work)
+* Our aim is to construct a formalisation: search space of possible inferences.
+  * deliberately ignored:
+    * implementational questions: how, exactly, to search this space;
+      controlling an interpreter; information retrieval and relevancy
+    * computational questions: data structures; how to implement fast searches;
+      the choice of programming language
+  * McCarthy (1977) makes some similar arguments.
+  * diverting resources, although this is an important issue. The more
+  * goal: tackle the essential representation problems.  
+* [the dominant way] happens in two ways.
+  * domain of the program must be restricted in some way, usually fairly
+    * a restricted subject-matter for a reasoning program, a restricted vocabulary
+    * It follows, then, that the representation is not particularly **thorough**, in
+    * techniques which work for small 'toy' worlds, but which are simply
+  * low density. There is a good reason for this
+    * a dense representation necessarily defines 
+      an explosively expanding search space of possible inferences.
+    * If the only heuristic devices available for controlling an inferential
+      search are weak and general (numerical) heuristics, depth-first search 
+  * These two pressures encourage sparse representations of limited scope
+* a closely related point concerned with adequacy. A popular view in AI is that
+  * a small step to accepting a sort of behaviourist criterion of adequacy 
+    i.e. the representation support an adequate behaviour in some perfor program
+  * it takes no account of scale effects
+  * One cannot make a program which behaves adequately in a large 'world' 
+    by adding together programs which perform adequately in smaller sub-worlds
+  * world just doesn't split up that neatly: one needs the interaction between
+  * e.g. representation of, say, the blocks world be less adequate for reasoning
+    about blocks in the context of liquids, rods, friction, pulleys, etc. And
+  * needed:upward compatibility of formalisations.  Thus, even accepting the
+    criterion as an ultimate test of an AI theory, which I do, I would still
+
 # 10. Why it can be done
 
+* my reasons for feeling optimistic. There are four.
+  1. success in individuation
+  * my recent experiences in tackling the 'liquids' problem, which 
+    * I have long believed was one of the most difficult problems in repr theo 
+  * The idea of quantifying over pieces of space rather than pieces of liquid,
+  * the correct procedure for individuating a liquid object: 
+    the criterion by which one could refer to such a thing. I believe 
+  * concern for individuating criteria may well lead to progress in other clus
+  * McCarthy (private communication) based on the individuation of 'concepts'
+2. the idea of histories outlined earlier.  I believe that formalisations of the
+3. the no-programming methodology already discussed. To put it bluntly: 
+  * hardly anybody has tned to build a large, heuristically adequate formalisat.
+  * when we are freed from the necessity to implement performance programs
+4. an obvious method for getting it done: very successful in a number of areas,
+
 # 11. How to get it done
+
+* getting knowledge out of people's heads and into a formalisation. 
+  * Within AI, it has been called 'knowledge engineering' by Feigenbaum (1977);
+    but essentially the same technique is used by linguists. It works as
+    follows. In consultation with an 'expert' (i.e. a human being whose head
+    contains knowledge: one knows it does because he is able to do the task one
+    is interested in), one. builds a preliminary formalisation, based upon his
+    introspective account of what the knowledge in his head is. This
+    formalisation then performs in a particular way, and its performance is
+    compared with that of the expert. Typically it performs rather badly. The
+    expert, observing this performance of the formalisation in detail, is
+    often able to pinpoint more exactly the inadequacies in his first
+    introspective account, and can offer a more detailed and corrected version.
+    This is formalised, criticised and corrected. and so on.
+
+* the expert, continually confronted with the formal consequencies of his
+  introspections, becomes better at detailed introspection, as time goes by.
+
+* formalisation is, typically, a collection of condition-action rules which can
+  be run on a suitable interpreter: a very modular program, in a sense. 
+* In linguistics, the 
+  * formalisation is a grammar of some sort which assigns syntactic structures
+  * expert is a native speaker: indeed, the expert is usually the linguist
+    himself. In both areas, the technique has proven extremely successful.
+
+I believe this process of formalisation, confrontation against intuition, and
+correction, can also be used to develop naive physics. Here is a domain in which
+we are all experts, in the required sense. The performance of a formalisation
+is,
+here, the pattern of inferences which it supports. Performance is adequate when
+the 'experts' agree that all and only the immediate, plausible consequences
+follow from the axioms of the formalisation. (In fact, this is a weak notion of
+adequacy: the stronger notion would be that the denvattons of the plausible
+consequences were also plausible. Attempting to use this stronger notion gives
+rise to severe methodological problems, since it requires one to have '2nd-order'
+introspections. Linguistics has an exactly analogous notion of strong adequacy
+for a grammatical theory, and suffers exactly similar methodological difficulties.)
+
+It seems to be sound to have several 'experts' involved, as it is easy to miss some
+obvious distinctions when working alone.
+
+The ideal way to make progress is to have a committee. Each member is
+assigned what seems to be a cluster, and has to try to formalise it. They tell one
+another what they require from the other clusters: thus the 'histories' cluster
+will need some 'shape' concepts, and the 'assemblies' cluster will need some 'his-
+tories' concepts, and so on. Fairly frequently, the fragmentary formalisations are
+put together at a group meeting, criticised by other members (in their common
+sense 'expert' role), and tested for adequacy. I will anticipate that some clusters
+will dissolve, and new ones will emerge, during these assembly meetings.
+
+Initially, the formalisations need be little more than carefully-worded English
+sen tences. One can make considerable progress on ontological issues, for example ,
+without actually formalising anything. Fairly soon, however, it will be necessary
+to expres the intuitions formally. Here, I think one should be liberal in allowing
+a free choice of formal language. Many people find frame-like notations agree-
+able: others like semantic networks, etc. There is no reason why such superficial
+variants of first-order logic, or even more exotic formalisms, should be banned:
+the only important requirement is that the inferential relationships between
+the various formalisms should be made explicit. In practice, this means that
+they should all be translatable into predicate calculus: but this is no problem,
+since they all are. A more serious point is that particular clusters may suggest
+special ad-hoc representations. Shapes may be represented diagrammatically,
+for example. One can imagine a cluster, represented in some idiosyncratic way,
+whose internal inferential relationships were inaccessible from outside, but
+which was interfaced to the rest of the formalisation by a defined translation
+of part of itself into the reference formalisation (first-order logic): say state-
+ments of relative position and orientation. It will be difficult to prevent such
+things happening, and maybe one should not try. But there are grave dangers,
+since this way of proceeding prejudges the possible interactions in the formali-
+sation as a whole, and this may encapsulate a serious mistake in a way which
+will be hard to detect and even harder to rectify.
+
+There are several other ways to find concept-clusters. For example: looking
+in a thesaurus; choosing a particular domain (cookery, volumetric measurements
+of various substances) and attempting to describe it; analysing some everyday
+act in detail (e.g. spreading a sheet over a bed by holding two corners and
+flicking: why does that work?). I expect these, and others, will be useful starting-
+points.
 
 # 12. Is this science?
