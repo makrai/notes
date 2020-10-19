@@ -31,10 +31,10 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * linguistic phenomena [only] in the early and middle 1970s
 * now ... a richer range of lexical items and syntactic constructions
 * parts
-  1. the basic parameters of the formalization of meaning and some general res
+  1. the basic parameters of the formalization of meaning
     * argument structure and thematic roles
-    * lexical structure, including how the various syntactic frames [of a
-      lexical item] are correlated with alternative meanings
+    * lexical structure, including how the syntactic frames [of a lexical item]
+      are correlated with alternative meanings
   2. extending the range of semantic fields encompassed
     * by adding features to existing conceptual primitives,
       rather than by introducing altogether new primitives
@@ -47,7 +47,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * alongside the canonical relations of syntactic to semantic arguments,
       [there are] numerous other strategies [for]  encoding thematic roles
     * simplify the argument structure[s]
-    * very general principles for the linking [are] topic of the final chapter
+    * final chapter: very general principles for the linking
 
 # Part I Basic Machinery
 
@@ -65,8 +65,8 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 ## 1.2 First Principles of I-Conceptual Knowledge 11
 
 * a finite set of
-  * mental primitives and a finite set of
-  * principles of mental combination that
+  * mental primitives and
+  * principles of mental combination
   * these two sets together
     * the grammar of sentential concepts
     * describe the set of possible I-concepts expressed by sentences
@@ -898,8 +898,20 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 ## 7.2 Varieties of Causation 133
 
-* hindering, overcoming, letting, helping, and resisting
-  * Talmy (1985)
+* hindering, overcoming, letting, helping, and resisting Talmy (1985)
+* The next few sections are devoted to incorporating Talmy's insights into CS
+* agonist-antagonist dyad
+* we introduce a general function CS that contains a ''success parameter"
+  * + to encode application of force with a successful outcome; this case
+  * u for application of force with an undetermined outcome. Thus force (17)
+  * Fail requires a third value of the success parameter
+    * not the same as CS+ ... NOT. The latter would mean that Harry's 
+    * latter is _avoid_: efforts are directed toward not going away, successful
+* push/pull is undetermined, but with Path, do of course have a positive outcome
+  such as Amy pushed/pulled Bill out the window, 
+  * Chapter 10 will treat them as resultative constructions with means modifiers
+* _miss_ (as in The arrow missed the target) = "fail (CS ) to hit," 
+  providing a third value for the success parameter in lexical causatives.
 
 ## 7.3 Varieties of Dyadic Interaction; the Role Beneficiary 138
 ## 7.4 Temporal Relations between the Cause and the Effect 139

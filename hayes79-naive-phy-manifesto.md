@@ -63,7 +63,7 @@ The naive physics manifesto
   * the top one might provide a shelter for the bottom one
   * if the bottom one B supports the top one, then B will be under some strain
 * the view of meaning espoused here differs profoundly from the view which holds
-  that tokéns in a formalisation are words in a natural language (Wilks 1977)
+  that tokens in a formalisation are words in a natural language (Wilks 1977)
   * latter view, the tokens do represent the concept intended, by fiat: they are
     'semantic primitives', out of which ail other meanings are composed
 * the axiom-concept (a-c) [hyper]graph

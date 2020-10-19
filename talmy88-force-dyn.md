@@ -78,7 +78,7 @@ Leonard Talmy
 * polite / civil
 * have (got) to VP / get to VP
 
-# 1. BASIC FORCE DYNAMIC
+# 1. BASIC FORCE DYNAMICS
 
 ## 1.1. Steady-State Force-Dynamic Patterns
 
