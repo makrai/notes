@@ -175,13 +175,13 @@ TACL Volume 7, 2019 p.49-72
 
 * Early work visualized hidden unit activations in RNNs trained on an
   artificial language modeling task, and observed how they correspond to
-  certain grammatical relations such as agreement (Elman, 1991). Much
+  certain grammatical relations such as agreement (Elman, 1991)
 * recent work: activations on specific examples in modern NNs for
   * language (Karpathy+ 2015; Kádár+ 2017; Qian+ 2016a; Liu+ 2018) and
-  * speech (Wu and King, 2016; Nagamine+ 2015; Wang+ 2017b). Figure 1 shows an
+  * speech (Wu and King, 2016; Nagamine+ 2015; Wang+ 2017b)
 * attention mechanism that originated in NMT (Bahdanau+ 2014) also lends itself
   * alignments
-  * tasks ranging from like
+  * tasks ranging
     * NLI (Rocktäschel+ 2016; Yin+ 2016)
     * summarization (Rush+ 2015)
     * MT post-editing (Jauregi Unanue+ 2018)

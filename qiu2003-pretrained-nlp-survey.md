@@ -5,17 +5,17 @@ arXiv:2003.08271 [cs.CL]
 # 1 Intro
 
 * contributions of this survey can be summarized as follows:
-  1. Comprehensive review. We provide a comprehensive review of PTMs for NLP,
-     * background knowledge, model architecture, pre-training tasks, various
-       extensions, adaption approaches, and applications. We provide detailed
-     * descriptions of representative models, make the necessary comparison,
-  2. New taxonomy. We propose a taxonomy of PTMs for NLP, which categorizes
+  1. Comprehensive review of PTMs for NLP,
+    * background knowledge, model architecture, pre-training tasks,
+      various extensions, adaption approaches, and applications. We provide
+    * descriptions of representative models, make the necessary comparison,
+  2. New taxonomy of PTMs for NLP, which categorizes
     1. type of word representation;
     1. architecture of PTMs;
     1. type of pre-training tasks;
-    1.  extensions for specific types of scenarios or inputs
+    1. extensions for specific types of scenarios or inputs
   3. We collect ... open-source systems, paper lists, etc
-  4. Future directions. We discuss and analyze the limitations of existing
+  4. Future directions. We discuss and analyze the limitations
 
 # 2 background concepts and commonly used notations of PTMs
 
@@ -32,7 +32,7 @@ arXiv:2003.08271 [cs.CL]
 ### Graph-based models
 
 * word[s] as nodes and learn the contextual representation with a
-* pre-defined linguistic structure between words, 
+* pre-defined linguistic structure between words,
   e.g. syntactic structure [146, 161] or semantic relation [111]
 * more straightforward [is] self-attention mechanism
 
@@ -64,8 +64,8 @@ arXiv:2003.08271 [cs.CL]
   from Language Models) bring large improvements on a broad range
 * Akbik+ [1] captured word meaning with contextual string embeddings
   pre-trained with character-level LM
-* Ramachandran+ [134] found the seq2seq models can be significantly improved by
-  unsupervised pre-training
+* seq2seq models significantly improved by unsupervised pre-training,
+  Ramachandran+ [134]
   * weights of both encoder and decoder are initialized with pretrained weights
     of two language models and then fine-tuned with labeled data
 * ULMFiT (Universal Language Model Finetuning) [62] attempted to fine-tune
@@ -74,18 +74,18 @@ arXiv:2003.08271 [cs.CL]
   * ULMFiT consists of 3 phases:
     1. pre-training LM on general-domain data;
     1. fine-tuning LM on target data;
-    1. fine-tuning on the target task. ULMFiT also investigates some effective
-  * fine-tuning strategies including discriminative fine-tuning, 
+    1. fine-tuning on the target task
+  * fine-tuning strategies including discriminative fine-tuning,
     slanted triangular learning rates, and gradual unfreezing
-  * Since ULMFiT, fine-tuning has become the mainstream approach to adapt PTMs
-    for the downstream tasks
+  * Since ULMFiT, fine-tuning has become the mainstream approach
+    to adapt PTMs for the downstream tasks
 * very deep PTMs have shown their powerful ability in learning universal
   * OpenAI GPT (Generative Pre-training) [130] and
   * BERT (Bidirectional Encoder Representation from Transformer) [32]
 * Besides LM, an increasing number of self-supervised tasks (see Section 3.1)
   are proposed to make the PTMs capturing more knowledge form large scale text
 
-# 3 overview of PTMs and categorization of PTMs
+# 3 overview and categorization of PTMs
 
 * differences between PTMs are the usages of contextual encoders (2.2),
   pre-training tasks, and purposes
@@ -101,7 +101,7 @@ arXiv:2003.08271 [cs.CL]
   [MASK], are absent when the model is applied on downstream tasks, leading to
   a gap between pretraining and fine-tuning. To overcome this issue,
 * Permuted Language Modeling (PLM) [194] is a pre-training objective to replace
-  * random permutation of input sequences. Given a sequence, a permutation is
+  * random permutation of input sequences
 * two-stream self-attention is introduced for target-aware representations
 
 ### 3.1.5 Contrastive Learning (CTL)
@@ -110,33 +110,33 @@ arXiv:2003.08271 [cs.CL]
 * assumes some observed pairs of text that are more semantically similar than
 * Compared to LM, CTL usually has less computational complexity, and therefore
 * Collobert+ [24] proposed pairwise ranking task to distinguish real and fake
-  phrases. The model need to predict a higher score for legal phrase than an
+  phrases. The model need to predict a higher score for legal phrase
 * Mnih and Kavukcuoglu [118] trained word embeddings efficiently with
-  Noise-Contrastive Estimation (NCE) [51], which trains a binary classifier to
+  Noise-Contrastive Estimation (NCE) [51], which trains a binary classifier
 * idea of NCE is also used in the well-known word2vec embedding [116]
 * recently proposed CTL tasks in the following paragraphs
 
 #### Deep InfoMax (DIM) [59]
 
 * original proposed for images
-* maximizing the mutual information between an image representation and 
+* maximizing the mutual information between an image representation and
   local regions of the image
 * Kong+ [83] applied DIM to language representation learning
 
-#### Replaced Token Detection (RTD) 
+#### Replaced Token Detection (RTD)
 
 * the same as NCE but predicts whether a token is replaced given its context
 * CBOW with negative sampling (CBOW-NS) [116] can be viewed as a simple version
 * ELECTRA [22] utilizing a generator to replacing some tokens of a sequence
   * generator G and a discriminator D are trained following a two-stage
     1. Train only the generator with MLM task for n 1 steps;
-    1. Initialize the weights of the discriminator with the weights of the G
+    1. Initialize the weights of the discriminator with the weights of G
   * Then train the discriminator with a discriminative task keeping G frozen
   * G is thrown after pre-training, and only D be fine-tuned on downstream
 * RTD is also an alternative solution for the mismatch problem the network sees
   [MASK] during pre-training but not when being fine-tuned in downstream tasks
 * Similarly, WKLM [188] replaces words on the entity-level instead of token-lev
-  * replaces entity mentions with names of other entities of the same type and
+  * replaces entity mentions with names of other entities of the same type
 
 #### Next Sentence Prediction (NSP). Punctuations are natural separators
 
@@ -151,8 +151,8 @@ arXiv:2003.08271 [cs.CL]
 #### Sentence Order Prediction (SOP). To better model intersentence coherence,
 
 * ALBERT [86] replaces the NSP loss with sentence order prediction (SOP)
-  * conjectured in Lan+ [86], NSP conflates topic prediction and coherence
-    prediction in a single task
+  * NSP conflates topic prediction and coherence prediction in a single task,
+    conjectured in Lan+ [86]
   * topic prediction is easier to learn compared to coherence prediction
   * SOP uses ... consecutive segments but with their order swapped as negative
   * consistently outperforms BERT on various downstream tasks
@@ -160,9 +160,12 @@ arXiv:2003.08271 [cs.CL]
 
 ### 3.1.6 Others
 
-* sentiment label-aware MLM for sentiment analysis [78], 
-  gap sentence generation (GSG) for text summarization [197], 
-  disfluency detection [179]
+*
+  * sentiment label-aware MLM for sentiment analysis [78],
+  * gap sentence generation (GSG) for text summarization [197],
+    197. Jingqing Zhang+ arXiv:1912.08777
+    PEGASUS: Pre-training with extracted gap-sentences for abstractive summari
+  * disfluency detection [179]
 * auxiliary pre-training tasks are designed to incorporate factual knowledge,
   * denoising entity auto-encoding (dEA) in ERNIE(THU) [199],
   * entity linking (EL) in KnowBERT [123]
@@ -173,9 +176,9 @@ arXiv:2003.08271 [cs.CL]
 ## 3.2 Taxonomy of PTMs 7
 
 * perspective:
-  1. the type of word representation used by PTMs,
-  1. the backbone network used by PTMs,
-  1. the type of pre-training tasks used by PTMs, and
+  1. the type of word representation
+  1. the backbone network
+  1. the type of pre-training tasks
   1. the PTMs designed for specific types of scenarios or inputs. Figure 3
 
 # 4 extensions of PTMs 10
@@ -196,7 +199,7 @@ arXiv:2003.08271 [cs.CL]
       * Ke+ [78] integrated sentiment polarity of each word to extend the MLM
         to Label-Aware MLM (LA-MLM)`:` SentiLR, achieves SOTA performance on
         several sentenceand aspect-level sentiment
-    * SenseBERT (Levine+ [92]) is pre-trained to predict MLM + supersenses in
+    * SenseBERT (Levine+ [92]) is pre-trained to predict MLM + supersenses
     * entity
       * ERNIE(THU) [199] integrates entity embeddings pre-trained on a
         knowledge graph with corresponding entity mentions in the text
@@ -220,7 +223,7 @@ arXiv:2003.08271 [cs.CL]
     linguistic and factual knowledge for machine reading comprehension
 * extended language model to prediction conditioned on knowledge graph
   * knowledge graph language model (KGLM, Logan IV+ [106]) and
-  * latent relation language model (LRLM, Hayashi+ [53]) respectively, both of
+  * latent relation language model (LRLM, Hayashi+ [53])
 
 ## 4.2 Multi-Modal PTMs
 
@@ -248,10 +251,10 @@ arXiv:2003.08271 [cs.CL]
 
 ### pruning, which removes less important parameters,
 
-* Gordon+ [47] explored [when to prune] (during pre-training, after downstream
-  fine-tuning) and the pruning regimes
-* Li and Eisner [96] compressed ELMo word token embeddings using variational
-  information bottleneck
+* Gordon+ [47] explored when to prune (during pre-training,
+  after downstream fine-tuning) and the pruning regimes
+* Li and Eisner [96] compressed ELMo word token embeddings
+  using variational information bottleneck
 * Michel+ [115] and Voita+ [174] tried to prune the entire self-attention heads
   in the transformer block
 
@@ -261,8 +264,8 @@ arXiv:2003.08271 [cs.CL]
 
 ### parameter sharing across similar model units
 
-* ALBERT [86] uses cross-layer parameter sharing and factorized embedding
-  parameterization to reduce the parameters of PTMs
+* ALBERT [86] uses cross-layer parameter sharing and
+  factorized embedding parameterization to reduce the parameters of PTMs
 
 ### knowledge distillation [57]: student model learns from outputs from the org
 
@@ -273,8 +276,8 @@ arXiv:2003.08271 [cs.CL]
 * Bucilua+ [15]
 * A common method is approximating the logits of the teacher model
 * DistilBERT [139]
-* can also be used in task-specific models, e.g. information retrieval [108],
-  and sequence labeling [168]
+* can also be used in task-specific models,
+  e.g. information retrieval [108], and sequence labeling [168]
 
 #### Distillation from other knowledge
 
@@ -283,7 +286,7 @@ arXiv:2003.08271 [cs.CL]
 #### Distillation to other structures
 
 * Generally, the structure of the student model is the same [just smaller]
-* simplifying model structures from Transformer to RNN [164] or CNN [18] can
+* simplifying model structures from Transformer to RNN [164] or CNN [18]
 
 ## 4.4 Domain-Specific PTMs
 
@@ -291,9 +294,9 @@ arXiv:2003.08271 [cs.CL]
   * BioBERT [91] for biomedical text
   * SciBERT [10] for scientific text
   * ClinicalBERT [64, 3] for clinical text
-* adapt available pre-trained models to target applications, such as biomedical
-  entity normalization [68], patent classification [90], progress notes
-  classification and keyword extraction [163]
+* adapt available pre-trained models to target applications,
+  e.g. biomedical entity normalization [68], patent classification [90],
+  progress notes classification and keyword extraction [163]
 
 ## 4.5 Multilingual and Language-Specific PTMs
 
@@ -301,28 +304,28 @@ arXiv:2003.08271 [cs.CL]
   and weights on Wikipedia text from the top 104 languages
   * no cross-ling (CL) objectives specifically designed nor any CL data
   * CL generalization surprisingly well [127]
-  * lexical overlap between languages plays a negligible role K+ [74] in the
+  * lexical overlap between languages plays a negligible role K+ [74]
   * MASS [147] pretrained on multiple languages
     * significant improvement for unsupervised NMT
-* XLM [25] improves M-BERT by incorporating a crosslingual task, 
+* XLM [25] improves M-BERT by incorporating a crosslingual task,
   translation language modeling (TLM)
   i.e. MLM on a concatenation of parallel bilingual sentence pairs
 * Unicoder [63] further propose three new crosslingual (CL) pre-training tasks,
   * CL word recovery, CL paraphrase classification, and CL masked LM
 * PTMs trained on a single language significantly outperform the multilingual
   [112, 88, 173]
-  * For Chinese, which does not have explicit word boundaries, modeling
+  * For Chinese, which does not have explicit word boundaries
   * larger granularity [26, 33, 184] and multigranularity [157, 158] word repr
   * Kuratov and Arkhipov [85] ... adapt a multilingual PTM to a [Russian] PTM
-  * monolingual PTMs pre-trained on language-specific corpus for French [112,
-    88], Finnish [173], Dutch [29, 31] have been released
+  * monolingual PTMs pre-trained on language-specific corpus
+    for French [112, 88], Finnish [173], Dutch [29, 31] have been released
 
 # 5 Adapting To downstream tasks 13
 
 ## 5.1 Transfer Learning
 
-* types of transfer learning in NLP, such as domain adaptation, cross-lingual
-  learning, multi-task learning, and so on
+* types of transfer learning in NLP, such as domain adaptation,
+  cross-lingual learning, multi-task learning, and so on
 
 ## 5.2 How to Transfer?
 
@@ -339,8 +342,8 @@ arXiv:2003.08271 [cs.CL]
 * three ways to select the representation:
   * Embedding Only: choose only the pre-trained static
   * Top Layer.  The most simple and effective way
-  * automatic choose the best layer in a soft version, like ELMo [122]: r t = γ
-    * where α l is the softmax-normalized weight for layer l and γ is a scalar
+  * automatic choose the best layer in a soft version, like ELMo [122]
+    * where α l is the softmax-normalized weight for layer l, and γ is a scalar
 
 ### 5.2.3 To tune or not to tune
 
@@ -417,7 +420,7 @@ multi-task learning and pre-training are complementary technologies
 
 ## 7.2 Machine Translation
 
-* Conneau and Lample [25] 
+* Conneau and Lample [25]
   * initialize the entire encoder and decoder by a multiling pre-trained BERT
   * signifcnt improvement on unsupervised MT and English-Romanian supervised MT
 * Edunov+ [37] used ELMo to set the word embedding layer in the NMT
@@ -427,13 +430,13 @@ multi-task learning and pre-training are complementary technologies
   * some improvement by using BERT as an initialization of the encoder
   * better performance on the out-of-domain dataset
 * Imamura and Sumita [65] proposed a two stages BERT fine-tuning method for NMT
-  1. encoder is initialized by a pre-trained BERT model and 
+  1. encoder is initialized by a pre-trained BERT model and
     they only train the decoder on the training set
   2. whole NMT model is jointly fine-tuned on the training set
 * Zhu+ [204] suggested using pre-trained BERT as an extra memory in NMT models
-  * they first encode the input tokens by a pre-trained BERT and 
+  * they first encode the input tokens by a pre-trained BERT and
     use the output of the last layer as an extra memory
-  * NMT model can access the memory 
+  * NMT model can access the memory
     via an extra attention module in each layer of both encoder and decoder
   * noticeable improvement on supervised, semi-supervised and unsupervised MT
 * Song+ [147] proposed a masked sequence-to-sequence pre-training method (MASS)
@@ -487,10 +490,19 @@ multi-task learning and pre-training are complementary technologies
 ## 7.5 Summarization
 
 * Zhong+ [203] introduced transferable knowledge (e.g., BERT) for summarization
+  * [203] Ming Zhong, Pengfei Liu, Danqing Wang, Xipeng Qiu, and Xuanjing Huang
+    Searching for effective neural extractive summarization: What works and
+    ACL, pages 1049–1058, 2019.
 * Zhang+ [198] tries to pre-trained a document-level model that predicts
   sentences instead of words, and then apply it on downstream tasks
+  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou. 
+    HIBERT: Document level pre-training of hierarchical bidirectional
+    ACL, pages 5059–5069, 2019.
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
+  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu. 
+    PEGASUS: Pre-training with extracted gap-sentences for abstractive summariz
+    arXiv:1912.08777, 2019.
 * BERTSUM Liu and Lapata [104] included a novel document-level encoder, and a
   general framework for both extractive and abstractive summarization
   * In the encoder frame, BERTSUM extends BERT by inserting multiple [CLS] toks

@@ -8,9 +8,9 @@ arXiv:2007.14062 [cs.LG]
 * BERT's limitations is the quadratic dependency (mainly in terms of memory) on
   the sequence length due to their full attention mechanism. To remedy this,
 * we propose, BigBird,
-  * a sparse attention mechanism that reduces this to linear We show that
+  * a sparse attention mechanism that reduces this to linear
   * universal approximator of sequence functions and is Turing complete,
-  * O(1) global tokens (such as CLS), that attend to the entire sequence as
+  * O(1) global tokens (such as CLS), that attend to the entire sequence
   * can handle sequences of length up to 8x of what was previously possible
   * drastically improves performance on [] question answering and summarization
   * novel applications to genomics data

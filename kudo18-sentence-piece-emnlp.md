@@ -23,7 +23,7 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
   * NMT (Bahdanau+ 2014; Luong+ 2015; Wu+ 2016; Vaswani+ 2017) ... has had a
     strong influence on other related NLP tasks such as 
   * dialog generation (Vinyals and Le, 2015) and 
-  * automatic summarization (Rush+ 2015).  Although NMT can potentially perform
+  * automatic summarization (Rush+ 2015)
 * many NMT systems are still relying on language-dependent pre~ and postproces-
   [from] traditional statistical machine translation (SMT) systems. 
   * Moses ... is built upon hand-crafted and language dependent rules whose
