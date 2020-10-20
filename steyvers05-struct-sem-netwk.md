@@ -53,10 +53,10 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * These statistical principles of semantic network structure are quite general
   * hold for semantic network representations constructed ... from
     * word associations of naive subjects (Nelson, McEvoy, & Schreiber, 1999)
-      the considered analyses of linguists (Miller, 1995; Roget, 1911). At
-    * not hold for many popular models of semantic structure, including both
-      * hierarchical or arbitrarily (unstructured) connected networks
-      * high-dimensional vector space models such as Latent Semantic Analysis
+    * the considered analyses of linguists (Miller, 1995; Roget, 1911). At
+  * not hold for many popular models of semantic structure, including both
+    * hierarchical or arbitrarily (unstructured) connected networks
+    * high-dimensional vector space models such as Latent Semantic Analysis
 * we show how simple models of network growth can produce close quantitative
   fits to the statistics of semantic networks
   * based only on plausible abstract principles with
