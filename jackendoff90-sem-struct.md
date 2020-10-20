@@ -99,7 +99,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 ## 1.3 Three Models for the Description of Meaning 16
 
 * a mentally encoded concept C
-  * draw inferences i.e.
+  * draw inferences i.e
     * construct further concepts that are logical entailments of C
   * compare C with
     * other concepts retrieved from memory
@@ -269,7 +269,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
       lexical decomposition into conceptual features
   * Each semantic field has its own particular inference patterns
     * e.g. in the spatial field, one fundamental principle stipulates that an
-      object cannot be in two disjoint places at once. 
+      object cannot be in two disjoint places at once
       From this principle plus rule (21), it follows that an object that
       travels from one place to another is not still in its original position
     * in the field of information transfer, this inference does not hold
@@ -322,7 +322,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 ## 1.8 Appendix: Lexical Composition versus Meaning Postulates
 
 * the solution Fodor advocates
-  * each lexical item [has] its own specific meaning postulates 
+  * each lexical item [has] its own specific meaning postulates
     * determine the entailments of sentences [the lexical item] occurs in
 * e.g. causative-noncausative pairs ... in (26)
 * each element in a lexical decomposition can be regarded as that item's access
@@ -400,9 +400,9 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * Subject is a syntactic relation, not a conceptual one
   2. not only NPs receive thematic roles. For instance,
     * _green_ is a Goal in _a. The light changed from red to green._
-    * proposition 
+    * proposition
       * e.g. _shut up_ is a Goal in _b. Bill talked Harry into shutting up._
-      * not the thematic role for a subordinate clause, 
+      * not the thematic role for a subordinate clause,
         as suggested by Bresnan (1982d, 293)
       * can occur in various thematic roles, just as Things can
   3. there cannot be a "default" thematic role in the sense that
@@ -444,10 +444,10 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
       * obviously an oversimplification, but sufficient for the present point
   * the reading of an NP argument as somehow fused or merged with the semantic
     information already present in the constituent
-    * If C1 and C2 contain incompatible information, 
+    * If C1 and C2 contain incompatible information,
       the fusion of C1 and C2 is anomalous
-      e.g. if the offending features are sisters in a taxonomy 
-      of mutually exclusive possibilities, 
+      e.g. if the offending features are sisters in a taxonomy
+      of mutually exclusive possibilities,
       such as Thing/Property/Place/Event/etc. or solid/liquid/gas
 * e.g. drink vs butter
   * Both ... mean "cause something to go someplace."
@@ -694,7 +694,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 * a partial taxonomy of functions that convert a State or Event into a
   restrictive modifier of another State or Event
-  * syntactically most transparent ... as subordinating conjunctions 
+  * syntactically most transparent ... as subordinating conjunctions
     * turn sentences into restrictive modifiers
 1. means, How?
   * John got into the room by coming through the window
@@ -738,7 +738,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * aggregate like people, which is organized in terms of minimal units
 * progressive aspect, which in a sense takes a
   snapshot of an event in progress whose temporal boundaries are not in view
-* similar determiner constraints appear in location sentences 
+* similar determiner constraints appear in location sentences
   [with] _over, all along_, and _throughout_:
   `*`Some water was all over the floor
   * acceptable determiners and the possibility of only plural or mass nouns
@@ -771,7 +771,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * nonspecific location function AT
 * secondary locative
   * a further location expression describing the point of contact,
-  * [permited by most] verbs of contact 
+  * [permited by most] verbs of contact
 * hit: GO( , TO) or INCH(BE( , AT))
   * GOc might [specify e.g. motion while in continuous contact with the object
     * _stroke_ and _scratch_ [mean] exactly this
@@ -846,15 +846,15 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 ## 6.5 Conclusion
 
 * Each of the semantic classes investigated here is realized with a
-  characteristic syntactic structure[, a 
+  characteristic syntactic structure[, a
   canonical mapping] to a standard syntactic argument structure + exceptions
   * contact typically are transitive
   * attachment typically appear with the preposition _to_
   * composition: _out of/from_ for Source and _into_ for Goal
-  * Cross-linguistic study is important here, of course: 
+  * Cross-linguistic study is important here, of course:
     * if the same apparently idiosyncratic fact appears in language after lang,
-      something is being missed. Conversely, 
-    * if an apparently principled fact is violated in other languages, 
+      something is being missed. Conversely,
+    * if an apparently principled fact is violated in other languages,
       the principle must be questioned
 
 # Chapter 7 The Action Tier and the Analysis of Causation 125
@@ -901,24 +901,129 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * hindering, overcoming, letting, helping, and resisting Talmy (1985)
 * The next few sections are devoted to incorporating Talmy's insights into CS
 * agonist-antagonist dyad
-* we introduce a general function CS that contains a ''success parameter"
+* we introduce a general function CS that contains a "success parameter"
   * + to encode application of force with a successful outcome; this case
   * u for application of force with an undetermined outcome. Thus force (17)
   * Fail requires a third value of the success parameter
-    * not the same as CS+ ... NOT. The latter would mean that Harry's 
+    * not the same as CS+ ... NOT. The latter would mean that Harry's
     * latter is _avoid_: efforts are directed toward not going away, successful
 * push/pull is undetermined, but with Path, do of course have a positive outcome
-  such as Amy pushed/pulled Bill out the window, 
+  such as Amy pushed/pulled Bill out the window,
   * Chapter 10 will treat them as resultative constructions with means modifiers
-* _miss_ (as in The arrow missed the target) = "fail (CS ) to hit," 
-  providing a third value for the success parameter in lexical causatives.
+* _miss_ (as in _The arrow missed the target_) = "fail (CS) to hit,"
+  providing a third value for the success parameter in lexical causatives
 
 ## 7.3 Varieties of Dyadic Interaction; the Role Beneficiary 138
+
+###7.3.1 Verbs of Helping and Letting
+
+* second parameter in force-dynamic theory is the character of the interaction
+* verbs like _help, assist, and aid_: two characters are striving for the same
+* another configuration appears in verbs like _let, allow, and permit_
+  * potential opposition between antagonist and agonist that is not realized
+* if someone is allowed to do something, there is a strong presumption but not a
+  logical inference that he or she did it
+* Guide: "help to go along a Path"; support, "help to stay up";
+  promote, "help to advance."; release: "let go out/away"; drop, "let fall";
+  admit, "let enter."
+
+###7.3.2 Verbs of [transfer of] Possession
+
+* the "dative shift" verbs have an alternation in the action tier not unlike
+  that of the locative alternation with _load_
+* direct object: canonical positions for action tier roles. The use of an
+  indirect object, then, is a means of canonically marking the Beneficiary role
+  (We return to this matter in chapter 11.)
+* light verb, e.g. _give X a kiss, give X a kick_
+  * preserved of the regular verb give is its action tier, in which X is the
+  * switch from Beneficiary in give X a kiss to Patient in give X a kick: neut
+
+###7.3.3 Verbs of Reaction
+
+* _Sam gave in to/withstood/resisted Harry('s pressure on him)._
+* the rhetoric of political and social resistance has stressed its active char
+
 ## 7.4 Temporal Relations between the Cause and the Effect 139
+
+* a. Bill dragged the car down the road.  b. Bill threw the ball into the field
+* Michotte (1954): principal variants in the perception of physical causation
+
 ## 7.5 Extensions of Force-Dynamics to Logical Verbs and Psych-Verbs 142
+
+* stative force-dynamic interactions: constrains the cattle. lets the water out
+  leads (you) to Tucson. blocks the light
+* don't actively do anythingthey are just there, and their presence inhibits or
+  facilitates movement of things that happen to come in contact with them
+* logical relation (suggested by Talmy and hinted at in Jackendoff 1976)
+  a. X entails/implies/leads to Y.  (cause)
+  b. X rules out/precludes Y.  (cause . . . not)
+  c. X permits/is consistent with Y.  (let)
+  d. X reinforces/supports Y.  (help)
+    * strictly speaking are not considered verbs of logical relation but which
+      in fact play a prominent role in argumentation
+* _must_ and _may_ pair up conceptually with the verbs _require_ and _permit_, which
+  * verbs of causing and letting respectively
+* The trick in the analysis is identifying the antagonist, always implicit arg
+  * epistemic use of the modal: logic, morality, the present situation
+  * some contextually understood authority (the root use of the modal)
+* Experiencer verbs. A well-known bifurcation of these verbs, going back in the
+  * Chomsky 1965, Postal 1971, and Lakoff 1970, concerns whether the Experiencer
+    (1) in object or oblique position, as with please, matter, and strike, or
+    (2) in subject position, as with like, admire, and regard. Another parameter
+  * whether the affect is positive, as in please and like,
+    negative, as in displease and hate, or neutral, as in strike and regard
+  * stative or eventive +  tense and aspect:
+    a. Thunder frightens Bill.  (stative)
+    b. Harry (deliberately) frightened Bill.  (eventive)
+* Suppose Experiencer as the person affected by the State or Event i.e. Patient
+* well beyond the physical domain: examples chosen freely from the fields of
+  physical force (push, roll) and social interaction (pressure, urge)
+  * ambiguous between the two fields (force, resist, let)
+  * logical relations, the modals, and the Experiencer verbs introduce new
+    fields of causation, sometimes using the very same lexical items
+    (e.g. lead to, permit, support, reinforce, strike)
+* force-dynamic domain yields a further application of the semantic field
+  * beyond the extensions of thematic roles
+* The observed generalizations, particularly in the logical domain, 
+  have little to do with the nature of the world out there
+* verbs of logical relation express an abstract form of force-dynamic
+  * related to verbs that express pushing things around in space. It is
+  * Piaget (1970) arrives at a similar hypothesis. He claims that concepts of
+    logical relation are abstractions of concepts involved in motor activity,
+  * logical concepts, often taken to be the core of rational thought -- the
+    thing a theory of concepts must explain first -- are really derivative. The
+  * demotes the logical vocabulary to a small and rather eccentric concern in
+    * physical world to a much more prominent status
+
 ## 7.6 The Role Instrument; Unifying the Uses of Hit 145
+
+* Instrument are:
+  * it plays a role in the means by which the Actor accomplishes the action
+  * the Actor acts on the Instrument;
+  * the Instrument acts on the Patient
+* This means expression is completely vague in terms of thematic roles; it
+  basically contains only action tier information
+* CS: embedded affect functions
+* _kick_, for example, selects the foot as default Instrument
+
 ## 7.7 Argument Binding in Force-Dynamic Verbs 150
+
+* syntax
+
 ## 7.8 Appendix: Lexical versus Periphrastic Causatives
+
+* A distinction has frequently been noted in the literature
+  (Fodor 1970; Shibatani 1976; McCawley 1978; Comrie 1985; Gergely and Bever
+  1986; Pinker 1989) between the
+  * "direct" causation of lexical causatives such as break Y and kill Y and the
+  * "indirect" causation in periphrastic causatives such as cause Y to break and
+    cause Y to die. The difference appears in contrasts like (68)
+* lexical causatives have idiosyncratic (stereotypical) manners
+  * causative _jump_ is applied primarily to horses being ridden by the Instig
+  * Intransitive _smoke_, "give off smoke," has a highly specialized causative,
+  * Fodor (1981): _paint_ is more specific than "cause to become covered with p"
+    * one is not painting the brush that one dips in the paint in order to paint
+      the wall, even though the brush does become covered with paint.  The
 
 # Part III Mostly on the Problem of Correspondence
 
