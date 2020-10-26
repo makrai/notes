@@ -121,7 +121,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 ## 1.3.2 Proto-Roles 7
 
-* Dowty (1991) took a[n] approach, borrowing from prototype theory
+* Dowty (1991) took an approach, borrowing from prototype theory
 * every Agent may not be a sentient being that volitionally causes a change of
   state in another participant, we can all recognize this as a prototypical
   Agent, and most Agents will participate in this set of characteristics to
@@ -159,12 +159,12 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 ## 1.3.4 Frame Semantics 18
 
-* Frame Semantics (Fillmore, 1985, 1982; Fillmore et al., 2002) and is embodied
+* Frame Semantics (Fillmore, 1985, 1982; Fillmore+ 2002) and is embodied
   in FrameNet, a lexical resource which currently has entries for 10,000
   lexical units (senses of a lemma) associated with at least 958 distinct
   frames and 2,500 Frame Elements. Annotated example sentences have been
-  provided for up to 6800 lexical units (Baker et al., 1998; Johnson et al.,
-  2001). FrameNet is described in more detail in the next chapter
+  provided for up to 6800 lexical units (Baker+ 1998; Johnson+ 2001). FrameNet
+  is described in more detail in the next chapter
 * This introduction to linguistic theories about semantic representations ends
   where it began, with Charles Fillmore. Having thought deeply about the
   limitations of case theory and building on the notion of Frames as used for
@@ -223,8 +223,8 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 ## 2.2 VerbNet 22
 
-* Dang et al., 1998; Kipper et al., 2000; Kipper Schuler, 2005;
-  Kipper et al., 2008
+* Dang+ 1998; Kipper+ 2000; Kipper Schuler, 2005;
+  Kipper+ 2008
 * between PropBank and FrameNet
   * midway [in] lexical specificity, and it is
   * closer to PropBank in its close ties to syntactic structure
@@ -277,13 +277,13 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * indicate that the semantic predicate is in force either at the START..
 * Version 3.0 of VerbNet has 94 distinct semantic predicates
 * effort is currently underway to
-  * link the verb classes to the Omega ontology (Philpot et al., 2005) and to
-  * create upper level nodes (Palmer et al., 2009)
+  * link the verb classes to the Omega ontology (Philpot+ 2005) and to
+  * create upper level nodes (Palmer+ 2009)
 
 ## 2.3 PropBank 24
 
 * NomBank, as a companion to PropBank, provides corresponding semantic role
-  labels for _noun_ predicates (Meyers et al., 2004)
+  labels for _noun_ predicates (Meyers+ 2004)
 * an annotated corpus to be used as training data
 * first PropBank release consists of 1M words of the Wall Street Journal
 * semantic role labels are purposely chosen to be quite
@@ -322,7 +322,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * Frame File ... the collection of Frameset entries for a verb
 * neutral, generic labels facilitate mapping between PropBank and other more
   fine-grained resources such VerbNet and FrameNet, as well as
-  Lexical-Conceptual Structure or Prague Tectogrammatics (Rambow et al., 2003)
+  Lexical-Conceptual Structure or Prague Tectogrammatics (Rambow+ 2003)
 * most role-sets have two to four numbered roles
   * six can appear, in particular for certain verbs of motion
 * lacks
@@ -425,15 +425,15 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * focused on Chinese,
 * semantically annotated resources already exist for
   * Chinese (Xue and Palmer, 2009)
-  * Czech (Böhmová et al., 2003)
-  * Japanese (Lida et al., 2007; Ohara, 2008)
-  * German (Burchardt et al., 2006)
-  * Catalan and Spanish (Taulé et al., 2008)
+  * Czech (Böhmová+ 2003)
+  * Japanese (Lida+ 2007; Ohara, 2008)
+  * German (Burchardt+ 2006)
+  * Catalan and Spanish (Taulé+ 2008)
   * pilot annotation has also been performed for
-    * Arabic (Palmer et al., 2008) and
-    * Korean (Palmer et al., 2006)
+    * Arabic (Palmer+ 2008) and
+    * Korean (Palmer+ 2006)
 * SRL systems are starting to be developed using these linguistic resources
-  (Xue, 2008; Surdeanu et al., 2008; Diab et al., 2008)
+  (Xue, 2008; Surdeanu+ 2008; Diab+ 2008)
 * labels ... vary from project to project, as discussed in Chapter 2
   * three broad categories:
     * Propbank-style roles,
@@ -441,15 +441,15 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * roles ... based on the linguistic traditions of a particular language
 * Propbank-type labels
   * Chinese Propbank (Xue and Palmer, 2009)
-  * Korean Propbank (Palmer et al., 2006)
-  * Pilot Arabic Propbank (Palmer et al., 2008)
-  * AnCora (Taulé et al., 2008) for Catalan and Spanish
+  * Korean Propbank (Palmer+ 2006)
+  * Pilot Arabic Propbank (Palmer+ 2008)
+  * AnCora (Taulé+ 2008) for Catalan and Spanish
 * FrameNet-style labels
   * languages
-    * SALSA Project for German (Burchardt et al., 2006), the
+    * SALSA Project for German (Burchardt+ 2006), the
     * Japanese FrameNet Project (Ohara, 2008), and the
     * Spanish FrameNet Project (Subirats and Petruck, 2003)
-* Prague Dependency Treebank (PDT) (Böhmová et al., 2003)
+* Prague Dependency Treebank (PDT) (Böhmová+ 2003)
   * inner participants and free modifications
     * Inner participants are roughly core arguments while
       * can modify a given verb only once (except for the case of coordination)
@@ -463,11 +463,11 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * free modifications are roughly adjunctive arguments
       * can modify any word (if it is not excluded for semantic reason)
       * can modify a particular verb (word) more than once
-        (Mikulová et al., 2006)
+        (Mikulová+ 2006)
       * temporal, locative/directional, manner, and other kinds of adverbials
 * Japanese linguistic traditions
-  * Kyoto University Text Corpus 1 (Kawahara et al., 2002) and the
-  * NAIST Text Corpus (Lida et al., 2007)
+  * Kyoto University Text Corpus 1 (Kawahara+ 2002) and the
+  * NAIST Text Corpus (Lida+ 2007)
   * the two corpora differ in the annotation of specific ...  constructions
   * [in Japanese,] close association between the grammatical cases and
     the semantic roles
@@ -549,7 +549,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 ### 4.3.1 The Chinese PropBank 62
 
 * developed in close association with the English Propbank
-  (Palmer et al., 2005)
+  (Palmer+ 2005)
 * core and adjunctive arguments. The
   * core arguments are marked with predicate-specific semantic roles Arg0
   * adjunctive semantic roles are
