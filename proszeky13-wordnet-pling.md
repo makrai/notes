@@ -38,7 +38,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
 * Sowa
 * Microsoft MindNet
   * csak részleges információk kerültek ki, a rendszer egészét a „külvilág”
-    egészében nemigen ismerhette meg (Dolan+  1998)
+    egészében nemigen ismerhette meg (Dolan+ 1998)
   * Recski: Én egy 2005-ös EMNLP-n megjelent Vanderwende+ cikket néztem
     most meg.  Fun fact: Vanderwende azóta az AMR-ben hisz, Denverben egy
     soknyelvű AMR parszert demózott, még mindig a Microsoft színeiben:
