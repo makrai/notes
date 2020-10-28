@@ -45,6 +45,41 @@ Abstract Meaning Representation for Sembanking
 
 # 3 AMR Content
 
+* In neo-Davidsonian fashion (Davidson, 1969), we introduce variables (or graph
+  nodes) for entities, events, properties, and states. 
+  * Leaves are labeled with concepts, so that “(b / boy)” refers to an in-
+    stance (called b) of the concept boy. 
+  * Relations link entities, so that “(d / die-01 :location (p / park))” means
+    there was a death (d) in the park (p).  
+  * When an entity plays multiple roles in a sentence, we employ 
+    * re-entrancy in graph notation (nodes with multiple parents) or 
+    * variable re-use in PENMAN notation.  
+* concepts are either 
+  English words (“boy”), PropBank framesets (“want-01”), or special keywords.
+  * Keywords include 
+    * special entity types (“date-entity”, “world-region”, etc.),
+    * quantities (“monetary-quantity”, “distance-quantity”, etc.), and 
+    * logical conjunctions (“and”, etc).  AMR uses 
+* approximately 100 relations:
+  * Frame arguments, following PropBank conventions. :arg0, :arg1, ..., :arg5
+  * General semantic relations. :accompanier, :age, :beneficiary, :cause,
+    :compared-to, :concession, :condition, :consist-of, :degree, :destination,
+    :direction, :domain, :duration, :employed-by, :example, :extent, :frequency,
+    :instrument, :li, :location, :manner, :medium, :mod, :mode, :name, :part,
+    :path, :polarity, :poss, :purpose, :source, :subevent, :subset, :time,
+    :topic, :value.
+  * Relations for quantities.  :scale.  :quant, :unit,
+  * Relations for date-entities. :day, :month, :year, :weekday, :time,
+    :timezone, :quarter, :dayperiod, :season, :year2, :decade, :century,
+    :calendar, :era.
+  * Relations for lists. :op1, :op2, :op3, :op4, :op5, :op6, :op7, ..., :op10
+  * also includes the inverses of all these relations, e.g., :arg0-of,
+  * every relation has an associated reification, which is 
+    * what we use when we want to modify the relation itself. For example, the
+      reification of :location is the concept “be-located-at-91”.  Our set of
+* rest of this section, we give examples of how AMR represents 
+  various kinds of words, phrases, and sentences. For full documentation, the
+
 ## Frame arguments. We make heavy use of PropBank framesets to abstract away
 
 ## Co-reference. AMR abstracts away from co-reference gadgets like pronouns,
