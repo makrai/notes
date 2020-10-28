@@ -25,7 +25,7 @@ AAAI 2017
 * 5.5: lexical and world knowledge from many different sources in many languages
 * ConceptNet represents relations between words such as:
   * A net is used for catching fish
-  * “Leaves” is a form of the word “leaf ”
+  * “Leaves” is a form of the word “leaf”
   * The word cold in English is studený in Czech
   * O alimento é usado para comer [Food is used for eating]
 * “ConceptNet Numberbatch”: a word embeddings that learns using a generalization
@@ -33,11 +33,12 @@ AAAI 2017
 * evaluations of word relatedness, and this increase in performance translates
   * analogies. On a corpus of
   * SAT-style analogy questions (Turney 2006), its accuracy of 56.1% outperforms
-    * ties the previous best overall system, Turney’s LRA. This level of
+    * ties the previous best overall system, Turney’s LRA
     * only slightly lower than the performance of the average human test-taker
 * organization:
-  * related work, we will begin by describing
-  * ConceptNet 5.5 and its features, show
+  * related work
+  * ConceptNet 5.5 and its features
   * how to use ConceptNet alone as a semantic space and a measure of word
-    relatedness, and then proceed to describe and evaluate
-  * the hybrid system ConceptNet Numberbatch on these various semantic tasks
+    relatedness
+  * the hybrid system ConceptNet Numberbatch described and evaluated on these
+    various semantic tasks

@@ -10,7 +10,7 @@ EMNLP 2005
   * toolkit which allows MindNets to be built from arbitrary text
   * web-based interface to MindNet lexicons (MNEX)
 * English and Japanese MindNets will be shown and will be
-* made available ... for research purposes
+* made available for research purposes
 
 # 1 MindNet
 
@@ -27,7 +27,7 @@ EMNLP 2005
   * parser NLPwin (Heidorn, 2000)
   * labeled dependency analysis with function words removed
   * quality varies according to the relation type, with
-    * Hypernym ... TypicalSubject and TypicalObj being reliable, while
+    * Hypernym TypicalSubject and TypicalObj being reliable, while
     * Part and Purpose are less reliable
     * we solicit feedback on the level of accuracy which is tolerable for
       specific applications
@@ -35,10 +35,10 @@ EMNLP 2005
 ## Semantic Relation Structures
 
 * semrel structure
-  * the hierarchical collection of semantic relations (semrels) ... extracted
+  * the hierarchical collection of semantic relations (semrels) extracted
     from a source sentence
 * inverted structures
-  * semrel structure ... viewed from the perspective of each unique word
+  * semrel structure viewed from the perspective of each unique word
   * a different word placed at the root of the structure
 
 # 2 MNEX
@@ -62,7 +62,7 @@ EMNLP 2005
 * FrameNet (Baker+ 1998) and OpenCyc
   * Their use is still being explored as they have been made available only
     recently
-* Japanese ... concept dictionaries
+* Japanese concept dictionaries
   * [EDR](http://www2.nict.go.jp/ipp/EDR/ENG/indexTop.html) and 
   * [Nihongo Goi-taikei (NTT)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.357.8460)
   * [fizetős/CD-s]

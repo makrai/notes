@@ -12,7 +12,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
 * The task involves 
   * grouping verbs that evoke the same frame ...  and 
   * clustering their syntactic arguments into latent semantic roles
-* [comparison to] FrameNet (Ruppenhofer et al., 2016) and PropBank (Palmer+ 05)
+* [comparison to] FrameNet (Ruppenhofer+ 2016) and PropBank (Palmer+ 05)
   * many-to-many relationship between verb types and frame types
     * Similar to FrameNet and in contrast to PropBank
   * general semantic roles instead of frame-specific slot 
@@ -24,9 +24,9 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
   * distinguishing between different senses of verbs, but also 
   * identifying [lexical relationships (e.g., synonymy, opposite], troponymy)
 * bib
-    * Modi et al., 2012; Green et al., 2004), our problem definition 
+    * Modi+ 2012; Green+ 2004), our problem definition 
     * differs from ... unsupervised fine-grained frame induction using verb WSD
-      (Kawahara et al., 2014; Peng et al., 2017)
+      (Kawahara+ 2014; Peng+ 2017)
       Similarly, forming role clusters yields generalization from several
       alternate linkings between semantic roles and their syntactic
       realization. Given, for instance, an occurrence of the verb 
@@ -36,7 +36,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
 * motivation for this work is twofold. On the one hand, the frame induction
   * can be useful in 
     text summarization (Cheung and Penn, 2013), 
-    question answering (Frank et al., 2007; Shen and Lapata, 2007), and so on,
+    question answering (Frank+ 2007; Shen and Lapata, 2007), and so on,
   * theoretical linguistic insights into frame structure. In this sense, our
 * L-PCFG (Johnson, 1998; Matsuzaki+ 2005; Petrov+ 2006; Cohen, 2017). As 
   * input [is] syntactic dependency trees and 
@@ -45,7 +45,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
     * dynamically adapting the number of frames and roles to the data, 
       * inside-outside (Expectation-Maximization)
         Dempster+ (1977); Do & Batzoglou, (2008) algorithm and a 
-      * split-merge procedure (Petrov et al., 2006) for 
+      * split-merge procedure (Petrov+ 2006) for 
       * we employ new heuristics
 * Our experiment shows that the method outperforms a number of 
   baselines, including 
@@ -71,7 +71,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
 * we report 
   * the harmonic mean of BCubed precision and recall (BCF) (Bagga & Baldwin 98), and 
     purity (P U ), inverse purity ( I P U ) and their harmonic mean ( F P U )
-    (Steinbach et al., 2000) as figures of merit
+    (Steinbach+ 2000) as figures of merit
   * reflect a notion of similarity between the distribution[s] 
   * alone may lack sufficient information for a fair understanding of the
   * P U and I P U are 
@@ -108,7 +108,7 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
 # 5 Related Work
 
 * differs from most work on word sense induction (WSI), e.g. 
-  (Goyal and Hovy, 2014; Lau et al., 2012; Manandhar et al., 2010; Van de Cruys
+  (Goyal and Hovy, 2014; Lau+ 2012; Manandhar+ 2010; Van de Cruys
   and Apidianaki, 2011), in that [we create] more general meaning categories
   * However, our method can be adapted to WSI, too.  
     * we can assume that word senses ...  necessarily evoke different frames;
@@ -122,16 +122,16 @@ Laura Kallmeyer, Behrang Q. Zadeh, and Jackie Chi Kit Cheung
   * build structured summaries of text
   * MUC-style frames in Chambers and Jurafsky (2009, 2011) and its 
   * later refinements such as 
-    (Chambers, 2013; Cheung et al., 2013; Balasubramanian et al., 2013)
-* ontology learning and population from text (Cimiano et al., 2005) 
+    (Chambers, 2013; Cheung+ 2013; Balasubramanian+ 2013)
+* ontology learning and population from text (Cimiano+ 2005) 
   * Our focus is on lexicalized elementary syntactic structures, 
     identifying lexical semantic relationships, and thereby 
     finding salient patterns in syntax–semantic interface 
-* Modi et al. (2012) propose the most similar work to ours.  
+* Modi+ (2012) propose the most similar work to ours.  
   * They adapt Titov and Klementiev, (2012) to 
-  * learn FrameNet-style head and role groupings. Modi et al. (2012) assume
+  * learn FrameNet-style head and role groupings. Modi+ (2012) assume
   * roles to be frame-specific
 * [research using] lexical resources such as WordNet 
-  (Pennacchiotti et al., 2008; Green et al., 2004) 
+  (Pennacchiotti+ 2008; Green+ 2004) 
   in supervised or unsupervised settings) to 
   refine and extend existing frame repositories such as FrameNet

@@ -72,7 +72,7 @@ Argument Realization
 ## The aspectual and causal approaches compared
 ## Conclusion
 
-# The mapping from lexical semantics to syntax 131
+# 5 The mapping from lexical semantics to syntax 131
 
 * two hypotheses about which facets of event structure are preserved
 * mapping ... preserves
