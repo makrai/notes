@@ -6,14 +6,15 @@ arXiv:1910.13461 [cs.CL]
 # Abstract
 
 * BART, a denoising autoencoder for pretraining sequence-to-sequence models
-  * trained by (1) corrupting text with an arbitrary noising function, and 
-    (2) learning a model to reconstruct the original text
+  * trained by corrupting text with an arbitrary noising function, and 
+    learning a model to reconstruct the original text
   * standard Tranformer-based neural machine translation architecture which,
     * can be seen as generalizing
       BERT (due to the bidirectional encoder),
       GPT (with the left-to-right decoder), and
       many other more recent pretraining schemes
-* We evaluate a number of noising approaches, finding the
+* noising approaches
+  * We evaluate many
   * best performance by both 
     * randomly shuffling the order of the sentences and
     * novel in-filling scheme: spans of text are replaced with a single mask tok
