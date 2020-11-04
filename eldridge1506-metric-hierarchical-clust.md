@@ -1,5 +1,5 @@
 Justin Eldridge, Mikhail Belkin, Yusu Wang
-Beyond Hartigan Consistency: Merge Distortion Metric for Hierarchical Clust
+Beyond Hartigan Consistency: Merge Distortion Metric for Hierarchical Clustering
 arXiv:1506.06422 [stat.ML]
 
 # hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html#transform-the-space
