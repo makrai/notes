@@ -15,18 +15,18 @@ acl 2014
 
 * [spectrum] of methods of deriving word representations
   * words ... clusters based on their contexts
-    (Brown et al., 1992; Uszkoreit and Brants, 2008)
+    (Brown+ 1992; Uszkoreit and Brants, 2008)
   * very high dimensional but sparse vectors in which
     each entry is a measure of the association between the word and a [context]
     * survey: Turney and Pantel, (2010); Baroni and Lenci, (2010)
     * In some works, the dimensionality of the sparse ... vectors is reduced,
       * SVD (Bullinaria and Levy, 2007) or
-      * LDA (Ritter et al., 2010; Séaghdha, 2010; Cohen et al., 2012)
+      * LDA (Ritter+ 2010; Séaghdha, 2010; Cohen+ 2012)
   * dense vectors that are derived by various training methods inspired from
-    neural-network LM (Bengio et al., 2003; Collobert and Weston, 2008;
-    Mnih and Hinton, 2008; Mikolov et al., 2011; Mikolov et al., 2013b)
-    * have been shown to perform well across a variety of tasks (Turian et al.,
-      2010; Collobert et al., 2011; Socher et al., 2011; Al-Rfou et al., 2013)
+    neural-network LM (Bengio+ 2003; Collobert and Weston, 2008;
+    Mnih and Hinton, 2008; Mikolov+ 2011; Mikolov+ 2013b)
+    * have been shown to perform well across a variety of tasks (Turian+ 
+      2010; Collobert+ 2011; Socher+ 2011; Al-Rfou+ 2013)
 * In this work, we generalize the SKIP-GRAM model [to arbitrary] contexts
   * syntactic contexts that are derived from ... dependency parse-trees
   * following work in sparse vector-space models
@@ -56,7 +56,7 @@ acl 2014
 # 4. Exper
 
 * For DEPS, the corpus was
-  * [POS] tagged ... using the Stanford tagger (Toutanova et al., 2003) and
+  * [POS] tagged ... using the Stanford tagger (Toutanova+ 2003) and
   * parsed into labeled Stanford dependencies (de Marneffe and Manning, 2008)
     using an implementation of the parser described in (Goldberg and Nivre,
     2012)
@@ -69,12 +69,12 @@ acl 2014
 
 # 4.2 Quant
 
-* WordSim353 dataset (Finkelstein et al., 2002; Agirre et al., 2009)
+* WordSim353 dataset (Finkelstein+ 2002; Agirre+ 2009)
   * pairs of similar words that reflect either relatedness (topical
     similarity) or similarity (functional similarity) relations
 * task is to rank the similar pairs in the dataset above the _related_ ones
 * DEPS perform dramatically worse than BOW contexts on analogy tasks as in
-  (Mikolov et al., 2013c; Levy and Goldberg, 2014)
+  (Mikolov+ 2013c; Levy and Goldberg, 2014)
 
 # 5 Model Introspection
 

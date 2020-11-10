@@ -20,9 +20,9 @@ LREC 2016
 
 # 1 Intro
 
-* Stanford Dependencies (SD) representation (de Marneffe+ 2006) has 
+* Stanford Dependencies (SD) representation (de Marneffe+ 2006) has
   both a syntactic and a shallow semantic representation
-* usage of SD ... fall into two categories
+* usage of SD fall into two categories
   * tasks that require a syntactic tree
     * such as
       * source-side reordering for machine translation (e.g., Genzel (2010))
@@ -36,7 +36,7 @@ LREC 2016
       * unsupervised semantic parsing (Poon and Domingos, 2009)
     * the relations between content words are more important
       than the overall tree structure
-* which one of the three SD representations is being used for the ... tasks
+* which one of the three SD representations is being used for the tasks
   * basic SD trees which are guaranteed to be a strict surface syntax tree
   * collapsed or CCprocessed SD representations
     * may be graphs instead of trees, and
@@ -46,9 +46,9 @@ LREC 2016
   * in the CCprocessed SD representation, this relation is made explicit
 * the majority of [UD] efforts so far have focused on the development of the
   basic UD representation and the annotation of treebanks
-  * Both de Marneffe+ (2014) and Nivre+ (2016) also 
+  * Both de Marneffe+ (2014) and Nivre+ (2016) also
     mention an enhanced UD representation and acknowledge its usefulness but
-    neither gives a detailed account of ... such a representation
+    neither gives a detailed account of such a representation
 * In this paper, we
   * revisit and extend the collapsed and CCprocessed SD representations
   * provide a detailed account of an enhanced English UD representation and
@@ -66,30 +66,30 @@ LREC 2016
   * there already exists a relation between the content word in the
     prepositional phrase and the word that is being modified by the PP in the
     basic UD representation, and there is no need for an additional relation
-  * the collapsed SD graphs ... also include the preposition in the relation
+  * the collapsed SD graphs also include the preposition in the relation
     name. This helps to disambiguate the type of modifier
-  * all nominal modifiers (nmod) ... also include the preposition in [the] name
+  * all nominal modifiers (nmod) also include the preposition in [the] name
   * The same is true for more complex PPs which are either analyzed as
     adverbial clause modifiers (advcl) or as adjectival clause modifiers (acl)
-  * conjunct relations ... augmented [e.g. conj:and]
+  * conjunct relations augmented [e.g. conj:and]
 * Propagated governors and dependents [to] clauses with conjoined phrases
 * Subjects of controlled verbs
 
 # 3 The enhanced++ UD representation
 
-* for many NLU systems that try to extract relationships between entities, e.g.
+* for many NLU systems that try to extract relationships between entities, e.g
   * open domain relation extraction (e.g., Mausam+ (2012)), or
   * relationships between objects in image descriptions (Schuster+ 2015)
 * partitive noun phrases such as _both of the girls_ in which
   _both of the_ acts semantically as a quantificational determiner
-  * In the basic UD representation, however, _both_ is the head ... while
+  * In the basic UD representation, however, _both_ is the head while
     _both girls_ is headed by girls:
   * in order to obtain a similar analysis for both phrases, we would have to
     change the structure of the basic dependency trees, which is not allowed
     according to the guidelines for enhanced dependency graphs
 * multiword prepositions such as _in front of_
   e.g. _a house in front of the hill_
-  contains a relation between house and front, and ... front and hill
+  contains a relation between house and front, and front and hill
   * the relation between house and hill is going to be more relevant
 * another representation which allows for the deletion of relations
 
@@ -106,8 +106,8 @@ LREC 2016
     (det:qmod)
 * Light noun constructions (Simone and Masini, 2014) such as
   _a panel of experts_ or _a bunch of people_ pose similar challenges
-  * the light nouns are the head of these phrases in the ... basic UD trees
-  * [We] analyze light noun constructions ... as a quantificational determiner
+  * the light nouns are the head of these phrases in the basic UD trees
+  * [We] analyze light noun constructions as a quantificational determiner
 
 ## 2/4 Multi-word prepositions
 
@@ -128,7 +128,7 @@ LREC 2016
   * should encode that [the two nmod:to] relations are conjoined by _or_. For
     these reasons, we also analyze such clauses with copy nodes
 
-# 4/4 Relative pronouns
+## 4/4 Relative pronouns
 
 * we attach
   * the referent of the pronoun [directly] to the governor of the pronoun
@@ -147,10 +147,10 @@ LREC 2016
   which we updated according to the English Universal Dependencies guidelines
 * semantic head finder which operates similarly to the Collins head finder
   (Collins, 1999)
-  * For each constituent type, we define a set of rules that determine from
-    which of its children the constituent inherits its head; terminal nodes
+  * For each constituent type, we define a set of rules that determine
+    from which of its children the constituent inherits its head
     * mostly conditions on the constituent type of the child [like Collins]
-    * some of them also take surface tokens into account ... main verbs and
+    * some of them also take surface tokens into account: main verbs and
       auxiliaries.  We traverse the constituency tree in depth-first order and
       use these rules to obtain and store the head of each constituent,
   * The head of each token is then simply
@@ -165,27 +165,27 @@ LREC 2016
   * wh-words in questions e.g. _What does Peter seem to have?_
     * [for manually annotated treebanks,] Choi and Palmer (2012) [proposed to]
       resolve these ambiguities [with] the indexed empty nodes
-    * the output of most constituency parsers does not contain these ... nodes
+    * the output of most constituency parsers does not contain these nodes
     * we try to solve this issue by considering the selectional restrictions
 
 ## 4.2 Converting to enhanced and enhanced++ dependencies
 
 * Currently, we don’t propagate object or nominal modifier relations in clauses
-  with conjoined verb phrases such as “the store buys and sells cameras”. 
-  [because of] many cases such as “she was reading or watching a movie” 
+  with conjoined verb phrases such as “the store buys and sells cameras”
+  [because of] many cases such as “she was reading or watching a movie”
   * Nyblom+ (2013) successfully used a machine learning approach to solve
     this problem for Finnish but as there currently exists no corpus annotated
 
 # 5 Comparison to AMR
 
-* Representing the meaning of sentences as directed graphs ... Shieber (1984)
+* Representing the meaning of sentences as directed graphs Shieber (1984)
 * Abstract Meaning Representation (AMR) (Banarescu+ 2013)
   * received significant attention in recent years
 * compared to UD graphs, [AMR] aims to abstract further away from the surface
 * [AMR] encodes sentences using PropBank framesets (Palmer+ 2005) and
-  approximately 100 fixed relations. This makes AMR a deeper
+  approximately 100 fixed relations. This makes AMR deeper
 * The expressivity of AMR [is constrained by the] set of PropBank framesets
-  * particularly problematic for neologisms such as to venmo
+  * particularly problematic for neologisms such as _to venmo_
 * our representation does not [distinguish between comitative] and instrumental
   * AMR requires SRL which is very hard
 
@@ -194,9 +194,9 @@ LREC 2016
 * generalized quantifiers and controlled verbs, such as the following sentence
   e.g. _Everybody wants to buy a house_
   `Everybody nsubj:xsubj buy`
-* this UD graph ... encodes approximately
+* this UD graph encodes approximately
   `Everybody wants that everybody buys a house`
-* [the graph for] “Everybody sleeps or is awake” ... approximately encodes
+* [the graph for] “Everybody sleeps or is awake” approximately encodes
   `Everybody sleeps or everybody is awake`
 * _Sue and Mary are carrying a piano_
   * whether a conjoined subject should be interpreted distributively or

@@ -36,7 +36,7 @@ NAACL 2013
     * psychology (Khrennikov, 2010; Pothos and Busemeyer, 2012)
     * cognitive science (Busemeyer and Bruza, 2012; Aerts, 2009; Bruza+ 2008)
 * features of quantum theory which make it a promising framework for [sem]
-  * Superposition is a way of modeling uncertainty, 
+  * Superposition is a way of modeling uncertainty,
     more so than in classical probability theory
     * An electron['s location as] a superposition of locations
     * words in natural language can have multiple meanings
@@ -52,8 +52,8 @@ NAACL 2013
   * Interference [can cause] the law of total probability to be violated
     * non-classical behavior, e.g., with regard to conjunction and disjunction
       (Aerts, 2009)
-    * e.g. guppy is an example of a pet-fish 
-      it is neither a very typical pet nor fish (Osherson and Smith, 1981) 
+    * e.g. guppy is an example of a pet-fish
+      it is neither a very typical pet nor fish (Osherson and Smith, 1981)
 * we show how word meanings can be expressed as quantum states
   * [word's subspace is] spanned by vectors representing its potential usages
 
@@ -66,29 +66,29 @@ NAACL 2013
 # 6 related work and conclusion
 
 * Within cognitive science the formal apparatus of quantum theory has been used
-  * conjunction fallacies 3 (Tversky and Kahneman, 1983) 
-    * ie. specific conditions are more probable than a single general one.
+  * conjunction fallacies 3 (Tversky and Kahneman, 1983)
+    * ie. specific conditions are more probable than a single general one
     * have been explained by making reference to quantum theory’s context
-      dependence of the probability assessment. 
-  * Violations of the sure-thing principle 4 (Tversky and Shafir, 1992) 
+      dependence of the probability assessment
+  * Violations of the sure-thing principle 4 (Tversky and Shafir, 1992)
     * human behavior ought to conform to the law of total probability
-    * modeled in terms of a quantum interference effect. And the 
-  * asymmetry of similarity relations has been 
+    * modeled in terms of a quantum interference effect. And the
+  * asymmetry of similarity relations has been
     * explained by postulating that different concepts correspond to subspaces
       of different dimensionality (Pothos and Busemeyer, 2012). Several
-  * concept combination (Bruza and Cole, 2005), the 
-  * emergence of new concepts (Aerts and Gabora, 2005), and the 
-  * human mental lexicon (Bruza+ 2009).  captures 
+  * concept combination (Bruza and Cole, 2005), the
+  * emergence of new concepts (Aerts and Gabora, 2005), and the
+  * human mental lexicon (Bruza+ 2009).  captures
   * syllogisms in a quantum theoretic framework (Chen 2002); the model takes
 * connect the mathematical basis of semantic space models with quantum theory
   * Aerts and Czachor (2004) and Bruza and Cole (2005). They respectively
     demonstrate that Latent Semantic Analysis (Landauer and Dumais, 1997) and
     the Hyperspace Analog to Language model (Lund and Burgess, 1996) are
-    essentially Hilbert space formalisms, without, however, providing [ a
-    fully-fledged semantic space rather ] a proof-of-concept. 
-at each inner node of the (dependency) parse of the structure in question.
+    essentially Hilbert space formalisms, without, however, providing [a
+    fully-fledged semantic space rather] a proof-of-concept
+at each inner node of the (dependency) parse of the structure in question
   * Grefenstette+ (2011) present a model for capturing semantic composition in
-    a quantum theoretical context, although it 
+    a quantum theoretical context, although it
     * appears to be reducible to the classical probabilistic paradigm. It does
 * Conclusion
   * We obtain quantum states (i.e., lexical representations) for each word by

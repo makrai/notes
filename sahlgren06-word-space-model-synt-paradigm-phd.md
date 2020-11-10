@@ -72,17 +72,17 @@ PhD 2006
 
 ## 4.5 Hyperspace Analogue to Language 49
 
-* the Hyperspace Analogue to Language (HAL) (Lund+ 1995), which, in
-  * developed specifically for word-space research, and was
+* the Hyperspace Analogue to Language (HAL) (Lund+ 1995)
+  * developed specifically for word-space research, and
   * explicitly influenced by Schütze’s paper from 1992
 * words-by-words co-occurrence matrix, which is populated [with] co-occurrences
   * directional context window 10 words wide. The co-occurrences are
   * weighted with the distance between the words, so that words that occur next
 * Each row–column pair (i.e. the left and right-context co-occurrences) is then
-  concatenated to produce a very-high-dimensional context vector, which has a
+  concatenated to produce a very-high-dimensional context vector
 * dimensionality reduction
   * [only] If such very-high-dimensional vectors prove to be too costly
-  (Burgess+ 1998)
+    (Burgess+ 1998)
   * discarding the elements with lowest variance, leaving only ... 100 to 200
 * normalization of the vectors to unit length;
 * a Minkowski metric to compute vector similarities

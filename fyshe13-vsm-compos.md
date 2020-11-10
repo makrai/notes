@@ -33,9 +33,9 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
   * Latent Semantic Analysis (Landauer and Dumais, 1997) and 
   * LDA Topic models (Blei et al., 2003). 
 * Local patterns based on word co-occurrence in a fixed width window
-  * Hyperspace Analogue to Language (Lund and Burgess, 1996). Subsequent
-  * increasing linguistic sophistication, up to full syntactic and dependency
-    parses (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010).
+  * Hyperspace Analogue to Language (Lund and Burgess, 1996)
+  * increasing linguistic sophistication, up to full syntactic and dep parses
+    (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010)
     
 ## In this paper we systematically explore the utility of a 
 

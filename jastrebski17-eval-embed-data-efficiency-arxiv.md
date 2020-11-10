@@ -158,14 +158,14 @@ TODO
 * standard deviation of both rank at the end and beginning is around 2.5, which
   further reinforces findings from (Schnabel and Labutov, 2015) that embeddings
   orderings are very task dependent.
-* data efficiency [ exemplified by differences between GloVe 100 and ] 300
+* data efficiency [exemplified by differences between GloVe 100 and] 300
   (elaborated on in the next section)
 
 ## 3.6 Linear vs non–linear models
 
 * there [are] embeddings especially fitted for use with linear models, Fig. 1.  
   * typically used evaluation does not answer [whether there is] information
-    about task X in the embedding Y” 
+    about task X in the embedding Y
   * e.g. difference in performance between two pretrained GloVe embeddings of
     different dimensionality (100 and 300)
     * shown previously that lower dimensional GloVe embeddings are better at
