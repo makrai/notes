@@ -27,8 +27,8 @@ https://github.com/codogogo/explirefit
   * Collobert+ 2011;
   * Chen and Manning, 2014; dependency
   * Melamud+ NAACL 2016, The role of context types and dimensionality
-* purely distributional knowledge ... fusing semantic similarity with other
-  types of semantic relatedness
+* purely distributional knowledge, fusing semantic similarity with other types
+  of semantic relatedness
   * Felix Hill, Roi Reichart, and Anna Korhonen
     SimLex-999: Evaluating semantic models with (genuine) similarity estimation
     Computational Linguistics 2015

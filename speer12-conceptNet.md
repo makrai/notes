@@ -4,9 +4,9 @@ Representing General Relational Knowledge in ConceptNet 5
 
 # Abstract
 
-* ConceptNet is a knowledge representation project, providing 
-* a large semantic graph that describes 
-  _general human knowledge_ and how it is expressed in _natural language_. 
+* ConceptNet is a knowledge representation project, providing
+* a large semantic graph that describes
+  _general human knowledge_ and how it is expressed in _natural language_
 * This paper presents the latest iteration, ConceptNet 5, including its
   fundamental design decisions, ways to use it, evaluations (coverage, accuracy)
 
@@ -30,15 +30,14 @@ Representing General Relational Knowledge in ConceptNet 5
   * create public information displays by reading text about people and
     projects from a knowledge base (Havasi+ 2011)
 * both specific facts and the messy, inconsistent world of common sense
-* fork: Should we make sure to distinguish the eating utensil from the
-  branching of a path?
+* polisemy, e.g. fork: eating utensil ?= branching of a path
 
 # 2.  Motivation for ConceptNet 5
 
 * goals
   * include knowledge from other crowd-sourced knowledge
     * particularly data mined from Wiktionary and Wikipedia
-  * add links to other resources such as DBPedia (Auer+ 2007), 
+  * add links to other resources such as DBPedia (Auer+ 2007),
     Freebase (Bollacker+ 2008), and WordNet (Fellbaum, 1998)
   * support machine-reading tools
     * such as ReVerb (Etzioni+ 2008),
@@ -49,7 +48,7 @@ Representing General Relational Knowledge in ConceptNet 5
     that computers should know in order to understand what people are talking
     about, which then grew into an international, multi-homed project called the
     _Common Sense Computing Initiative_
-  * The first publicly released version: ConceptNet 2 (Liu and Singh, 2004).
+  * The first publicly released version: ConceptNet 2 (Liu and Singh, 2004)
     * distributed as a packed Python data structure, along with code to read it
     * operations such as _spreading activation_ from a set of words
   * sister project
@@ -62,7 +61,7 @@ Representing General Relational Knowledge in ConceptNet 5
 * _concepts_, which are words and phrases that can be extracted from natural
   language text, and _assertions_ of the ways that these concepts relate to each
   other
-* ... [entities]
+* [entities]
 * sources that may be added
   * plan-oriented knowledge in Honda’s Open Mind Indoor Common Sense
     (Kochenderfer, 2004)
@@ -105,7 +104,7 @@ Representing General Relational Knowledge in ConceptNet 5
 
 ## 3.4.  Normalizing and aligning concepts
 
-* ConceptNet deals with natural-language data, but 
+* ConceptNet deals with natural-language data, but
   “a cat is an animal” = “cats are animals”
 * The normalization process
   * in English is an extension of WordNet’s Morphy, plus removal of a very
@@ -114,7 +113,7 @@ Representing General Relational Knowledge in ConceptNet 5
     and reducing the words to a dictionary form (Kudo+ 2004), and
   * in many European languages we use the Snowball stemmer (Porter, 2001) to
     remove stop words and reduce inflected words to a common stem
-* Concepts (normalized terms) are the fundamental unit of representation 
+* Concepts (normalized terms) are the fundamental unit of representation
   * concept is represented by a URI that
   * identifies that it is a concept, what language it is in, its normalized
     text, and possibly its part of speech and disambiguation
@@ -122,7 +121,7 @@ Representing General Relational Knowledge in ConceptNet 5
 * _multilingual relations_ such as `/r/IsA`
 * Processes that read _free text_, such as ReVerb, will produce relations that
   not aligned  with multilingual relations.  In this case, the relation is in
-  * specified language and a normalized form. In the text 
+  * specified language and a normalized form. In the text
   * e.g. “A bassist performs in a jazz trio”, the relation is `/c/en/perform_in`
 * namespace /s/ for data sources that justify an edge, e.g
   * information extraction rules such as /s/rule/reverb,
@@ -163,7 +162,7 @@ Representing General Relational Knowledge in ConceptNet 5
   * I don’t know
   * Unhelpful or vague
   * Generally false”, and “This is garbled nonsense”
-* ConceptNet rated better than WordNet data perhaps 
+* ConceptNet rated better than WordNet data perhaps
   * WordNet edges inherently form assertions that sound too unnatural, or
   * our English language glosses of them are at fault. The processes of
 * translations from Wiktionary and triples from DBPedia performed very well,

@@ -972,7 +972,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     (2) in subject position, as with like, admire, and regard. Another parameter
   * whether the affect is positive, as in please and like,
     negative, as in displease and hate, or neutral, as in strike and regard
-  * stative or eventive +  tense and aspect:
+  * stative or eventive + tense and aspect:
     a. Thunder frightens Bill.  (stative)
     b. Harry (deliberately) frightened Bill.  (eventive)
 * Suppose Experiencer as the person affected by the State or Event i.e. Patient
@@ -997,7 +997,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 ## 7.6 The Role Instrument; Unifying the Uses of Hit 145
 
-* Instrument are:
+* Instrument
   * it plays a role in the means by which the Actor accomplishes the action
   * the Actor acts on the Instrument;
   * the Instrument acts on the Patient
@@ -1014,7 +1014,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 * A distinction has frequently been noted in the literature
   (Fodor 1970; Shibatani 1976; McCawley 1978; Comrie 1985; Gergely and Bever
-  1986; Pinker 1989) between the
+  1986; Pinker 1989)
   * "direct" causation of lexical causatives such as break Y and kill Y and the
   * "indirect" causation in periphrastic causatives such as cause Y to break and
     cause Y to die. The difference appears in contrasts like (68)
@@ -1023,7 +1023,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * Intransitive _smoke_, "give off smoke," has a highly specialized causative,
   * Fodor (1981): _paint_ is more specific than "cause to become covered with p"
     * one is not painting the brush that one dips in the paint in order to paint
-      the wall, even though the brush does become covered with paint.  The
+      the wall, even though the brush does become covered with paint
 
 # Part III Mostly on the Problem of Correspondence
 

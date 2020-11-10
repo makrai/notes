@@ -7,37 +7,34 @@ John F. Sowa
 
 ## Exercises
 
-* The two basic notations used for logic are 
-  * predicate calculus and 
-  * conceptual graphs.
+* The two basic notations used for logic are
+  * predicate calculus and
+  * conceptual graphs
     * two-dimensional form of logic that is based on the semantic networks of
       AI and the logical graphs of C. S. Peirce
 
-## Organization. 
+## Organization
 
-* Chapter 1 introduces logic through a historical survey, ranging from
-  Aristodes syllogisms to the modern graphic and algebraic systems.  The
-  details of the predicate calculus and conceptual graph notations are
-  summarized in Appendix A.
-* Chapter 2, which is the most philosophical in the book, introduces ontology,
-  the study of existence. 
+1. logic, a historical survey, ranging from Aristodes syllogisms to the modern
+   graphic and algebraic systems.  The details of the predicate calculus and
+   conceptual graph notations are summarized in Appendix A
+2. philosophical: introduces ontology, the study of existence
   * Ontology defines the categories of things that are expressed in the
     predicates of predicate logic, the slots in frames, the tables of a
-    database, or the classes of an object-oriented system.
-* Chapter 3 introduces the principles of knowledge representation and their
-  role in adapting logic and ontology to the task of constructing computable
-  models
-* Chapter 4 presents methods for representing dynamically changing processes
-  and events. Petri nets and dataflow graphs
-* Chapter 5 shows how purpose and context affect knowledge representation and
-  the various theories of modal and intentional logic.
-* Chapter 6, on "knowledge soup," stresses the limitations of logic. It
-  discusses the vague, uncertain, unanalyzed, and often inconsistent mix of
-  facts, opinions, and rules of thumb that people have in their heads.
-* Chapter 7 discusses the problems of knowledge sharing and the ongoing efforts
-  related to the ANSI and ISO projects on ontology and conceptual schemes. It
-  illustrates critical issues in using logic-based techniques to facilitate
-  communication and interoperabiUty of heterogeneous computer systems.
+    database, or the classes of an object-oriented system
+3. principles of knowledge representation 
+  adapting logic and ontology to the task of constructing computable models
+4. methods for representing dynamically changing processes and events. 
+  * Petri nets and dataflow graphs
+5. how purpose and context affect knowledge representation and the 
+  * various theories of modal and intentional logic
+6. on "knowledge soup,": the limitations of logic
+  * the vague, uncertain, unanalyzed, and often inconsistent mix of facts,
+    opinions, and rules of thumb that people have in their heads
+7. knowledge sharing and the ongoing efforts related to the ANSI and ISO
+   projects on ontology and conceptual schemes
+   * critical issues in using logic-based techniques to facilitate communication
+     and interoperability of heterogeneous computer systems
 
 # ONE Logic i
 1.1 Historical Background
@@ -82,11 +79,11 @@ John F. Sowa
 5.7 Agents 330
 
 # SIX Knowledge Soup 348
-6.1 Vagueness, Uncertainty, Randomness, and Ignorance 348 
+6.1 Vagueness, Uncertainty, Randomness, and Ignorance 348
 6.2 Limitations of Logic 35^
 6.3 Fuzzy Logic 364
 6 A Nonmonotonic Logic 373
-6.5 Theories, Models, and the World 383.
+6.5 Theories, Models, and the World 383
 6.6 Semiotics 394
 
 # SEVEN Knowledge Acquisition and Sharing 408

@@ -1,4 +1,4 @@
-Claire Bonial, 1 David Tahmoush, 1 Susan Windisch Brown, 2 and Martha Palmer 2 
+Claire Bonial, David Tahmoush, Susan Windisch Brown, and Martha Palmer 
 Multimodal Use of an Upper-Level Event Ontology
 2016 acl workshop
 
@@ -13,7 +13,7 @@ Multimodal Use of an Upper-Level Event Ontology
 # Introduction & Background
 
 * efforts to use both text and visual data jointly to interpret complex scenes
-  (e.g., Karpathy et al., 2014). Furthermore, we have seen the promise of
+  (e.g., Karpathy+ 2014)
 * integrating ontological information into computer vision research 
-  * ImageNet (Deng et al., 2009), 
+  * ImageNet (Deng+ 2009), 
     a large-scale ontology of images built upon the structure of WordNet

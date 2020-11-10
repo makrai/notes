@@ -24,9 +24,9 @@ Gene Kim and Lenhart Schubert
   * OWL-DL
     * OWL Working Group, 2004; Allen+ 2011; Allen+ 2013; 
       Orfan and Allen, 2015; Mostafazadeh and Allen, 2015
-    * Allen+ (2013) ... integrates information from a high-level
-      ontology with glosses of semantically related clusters of words 
-      to concepts corresponding to these words
+    * Allen+ (2013) integrates information from a high-level ontology with
+      glosses of semantically related clusters of words to concepts
+      corresponding to these words
 
 ## Limitations of Logical Representations Used by Previous Approaches
 
@@ -81,7 +81,7 @@ frame using the mapping in Table 1
 * incorporate techniques from Allen+  (2011; 2013) and Mostafazadeh &
   Allen (2015) to integrate results from related sets of glosses. 
 * The high-level TRIPS ontology could be used to improve robustness in the face
-  of inconsistencies in WordNet and interpretation errors. Also,
+  of inconsistencies in WordNet and interpretation errors
 * more sophisticated WSD techniques, such as those from the SENSEVAL3 task on
   WSD (Litkowski, 2004)
 * argument coherence could be improved 
