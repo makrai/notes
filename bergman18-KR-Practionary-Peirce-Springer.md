@@ -237,19 +237,62 @@ Part V “conceivable practical effects” that may result from following these
 
 # 16 Three potential uses in depth. The three application areas
 
-* workflows and business process management (BPM), 
-  * involves people.  Semantic technologies are essential for shared communic
-* semantic parsing, and
-  * a lexical theory needs to handle word senses, sentences and semantics,
-    cross-language meanings, common-sense reasoning, and learning algorithms.
-    We can map the compositional and semantic aspects of our language to the
-    categorial perspectives of Peirce’s logic and semiosis, and then convert
-    those formalisms to distributions over broad examples provided by
-    KBpedia’s knowledge. 
-* robotics.  
-  * Cognitive robots embrace the ideas of learning and planning and
-  interacting with a dynamic world. 
-  * Kinesthetic robots may also be helpful to our attempts to refine NLU
+## 16.1 workflows and business process management (BPM), 
+
+* involves people.  Semantic technologies are essential for shared communic
+
+## 16.2 semantic parsing 349
+
+* a lexical theory needs to handle word senses, sentences and semantics,
+  cross-language meanings, common-sense reasoning, and learning algorithms.
+  We can map the compositional and semantic aspects of our language to the
+  categorial perspectives of Peirce’s logic and semiosis, and then convert
+  those formalisms to distributions over broad examples provided by
+  KBpedia’s knowledge. 
+
+### A Taxonomy of Grammars 350
+
+### Computational Semantics 353 
+
+### Three Possible Contributions Based on Peirce 354
+
+* principles
+  * Real. Peirce advocated empirical truth for describing and organizing the
+    * as opposed to based solely in the mind: psychological 
+    * what we retain should be true in relation to what we have already modeled,
+  * Organized according to the universal categories. Continuing to maintain rea-
+    soned splits into Firstness, Secondness, and Thirdness may offer some
+    surprising keys and insights for our knowledge representations going forward.
+  * Logical
+    * fits well with the ideal of formal grammars.
+  * Consistent with the logic of relations. Peirce has already provided us with
+    significant guidance in his identification of relations and his logical
+    treatments of them, including algebraic notions to inform modeling.
+  * A good entity-attribute distinction. We have already pointed to the importance
+    of separating out attributes (a Firstness) from entities (a Secondness).
+  * Capable of distinguishing generals from particulars. We want discrete 
+    class-level types (generals, a Thirdness) and item-level (particulars, a Seco)
+  * Attentive to the sign representativeness in Peircean semiosis. Peirce’s ten
+    sign classes (see Table 2.2), or even analysis of his later 28~ and 66-sign
+    classifications, are a rich target for applying mathematical or logical
+    analysis for teasing out rules for analyzing problems
+  * Reflective of the probabilistic nature of truth. We should favor learning
+    models that support inductive reasoning and allow the use of probability
+    distributions to characterize some nodes.
+  * Contextual. In that we capture both the intensionality and extensionality of
+    our lexemes and choose word senses based on the overlap with accompanying
+    text. The inclusion of inference and background world knowledge supports this
+    aim [13].  
+* below three approaches in relative order of complexity of implementation
+  * Peircean part-of-speech tagging
+  * machine learning, and then
+  * a dedicated Peircean grammar. We can also combine these three approaches
+
+## 16.3 robotics 361
+
+* Cognitive robots embrace the ideas of learning and planning and
+interacting with a dynamic world. 
+* Kinesthetic robots may also be helpful to our attempts to refine NLU
 
 # 17 Conclusions looking across the broad sweep of our completed practionary.
 
