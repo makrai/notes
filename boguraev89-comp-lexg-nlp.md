@@ -20,21 +20,21 @@ B. Boguraev, E. Briscoe
 Pages: 1-40
 
 * dictionaries (or lexicons, as linguists call them)
-* no consensus on the information wich the lexicon should contain or the
-  representation
+* no consensus on the information which the lexicon should contain 
+  or the representation
 * number of words
   * Oxford English Dictionary (OED) 250 K
   * considerable divergence between the vocab of
     * Merriam-Webster Seventh Collegiate Dictionary (W7)
     * New York Times newswire
-* machine leadable versions of published dictionaries
+* machine readable versions of published dictionaries
   * potential sources for NLP (Walker and Zampolli, 1988)
-* (dis)adventages to the use of MRDs in NLP research
+* (dis)advantages to the use of MRDs in NLP research
   * considerable tradition
   * much work has already been done
   * produced for human, make inconvenient assumptions
 * facets of research in this book
-  1. techiques to make information in MRDs accessible for machine use
+  1. techniques to make information in MRDs accessible for machine use
   2. with this information, evaluate and improve NLP systems and linguistic theories
   * based on the MRD version of Longman Dictionary of Contemporary English
     (LDOCE)
@@ -47,7 +47,7 @@ Pages: 1-40
   * one dictionary DB for both automated and human use (Byrd 1988)
 * rest of this chapter
   * background and motivation
-  * representative work in comp lexg wich is not discussed
+  * representative work in comp lexg which is not discussed
     * MRDs other than LDOCE
     * aims not central to NLP
 
@@ -64,31 +64,30 @@ Pages: 1-40
   * different representations
   * application-specific
 * next two sections
-  * problems inmodifing and converting MRDs to database
+  * problems in modifying and converting MRDs to database
     1. published dicts rely on the users' linguistic and common sense knowledge
     2. informal presentation, inappropriate linguistic models
 
 ### 1.2.1 The nature of a dictionary entry p13
 
-> The entries in most dictionaries distinct 'homographs' of a word form when is
-> servers as noun, verb or some other POS
-
+* The entries in most dictionaries distinct 'homographs' of a word form when it
+  servers as noun, verb or some other POS 
 * form
   * headword, spelling, hyphenation, phonetics variants,
-  * use (formal/slang), allomorphs, strees
+  * use (formal/slang), allomorphs, stress
 * function
-  * distributioal behaviour
+  * distributional behaviour
     * simple word class tag, e.g. The Collins English Dictionary (Hanks, 1979)
     * elaborate subcat, e.g.
       * The Oxford Advanced Learner's Dictionary of Current English
         * (Hornby, 1980, OALD)
       * LDOCE
-      * The Colins COBUILD English Language Dictionary
+      * The Collins COBUILD English Language Dictionary
         * (Sinclair, 1987, COBUILD)
       * described in chaps 3 and 4
 * meaning
   * definition(s), examples, cross references
-  * grammar and sylistics of usage
+  * grammar and stylistics of usage
   * synonyms, antonyms, related words
   * picture, etymology
   * derived words, compound terms, idiomatic or common phrases, expressions and
@@ -101,7 +100,7 @@ Pages: 1-40
         * e.g. _sandwich_ v 1 `__L_X___S` where `X` denotes the preference for
           an abstract or human subject
 * experiences with the exploitation of
-  * pronounciation, see chap 6
+  * pronunciation, see chap 6
   * grammatical coding system, chaps 3--5
     * the one in LDOCE derives from a specific ling model (chap 3) that is
     * not appropriate for parsing for some NLP systems (chap 4)
@@ -113,28 +112,28 @@ Pages: 1-40
 * definitions
   * language tends to be of a restricted form
     see chap 8 for an extensive analysis
-  * in LDOCE, the vocab is restricted to approximately 2200 words used mainly
-    in their most common sense
+  * in LDOCE, the vocab is restricted to approximately 2200 words 
+    * used mainly in their most common sense
     * cut down circularities
     * liberal use of derivational morphology chaps 7 and 8
     * see 1.4 for further discussion of issues of reliability in MRDs
 * none of the word reported here makes use of the box and subject codes
 * semantic theories p17
-  * there are underlyind similarities between KR schemes
-    * sec 1.3.6 and chaps 7 and 9 !
+  * there are underlying similarities between KR schemes
+    * sec 1.3.6 and chaps 7 and 9
   * division between syn, sem and prag
     * word expert parsing (Small, 1980)
   * contextual graph (Sowa and Way, 1986)
   * parallel architectures, connectionist parsing (Cottrell and Small, 1983;
-    Waltz and Pollack, 1985; McCelland, Rumelhart el al., 1986)
+    Waltz and Pollack, 1985; McCelland, Rumelhart+ 1986)
 * dictionaries are not encyclopedias
 
 ### 1.2.2 Dictionary organization and representation p18
 
 * reliability of the grammar coding system, chaps 3--5
 * sense definitions
-  * WSD, chap 9 !
-  * genus and differentiae spotting systems, chaps 7 and 8 !
+  * WSD, chap 9
+  * genus and differentiae spotting systems, chaps 7 and 8
 * a dictionary DB system developed at Cambridge, chap 2
 
 ## 1.3 Overview of work with MRDs in NLP p21
@@ -145,12 +144,12 @@ Pages: 1-40
 
 ### 1.3.2 Taxonomies
 
-* Cowie (1983) presents a system for analysing descriptive text into
+* Cowie (1983) presents a system for analyzing descriptive text into
   hierarchically structured knowledge fragments with the MRD source of LDOCE,
   handle fragments from the definitions
 * a ‘folk taxonomy’ of English plant and animal terms
 * Amsler (1980, 1981), semantic hierarchy of defining concepts
-* chaps 7--9, sec 1.3.6 !
+* chaps 7--9, sec 1.3.6
 
 ### 1.3.3 Access/browsing
 
@@ -172,7 +171,7 @@ Pages: 1-40
 * continuum between the minimal semantic knowledge implied by the use of a
   particular word (word sense) and the specialised (or expert) knowledge
   relevant to its use in a _domain_ context
-  * (Wilks, 1977; or more recently, Cater, 1987)
+  (Wilks, 1977; or more recently, Cater, 1987)
 * if most of [lexical sem] could be derived from a machine-readable source
   * possible representations of lexical semantics
     * decomposition into semantic markers (Katz and Fodor, 1963),
@@ -214,8 +213,8 @@ Pages: 1-40
     meaning “the whole of a person”. However, _parliament_ is defined as “a
     law-making body”, utilising the meaning of body(5) “a number of people who
     do something together”
-  * derivatives: `container` for the definition of of box2(1), even though only
-    the verb contain is considered to be primitive“
+  * derivatives: `container` for the definition of of box2(1), 
+    even though only the verb contain is considered to be primitive
   * circularity _container_ <=> _box_
   * phrasal verbs
     * made up from verbs and particles taken from the restricted vocabulary
@@ -225,8 +224,8 @@ Pages: 1-40
 2. construction of a dictionary DB system for LDOCE
 3. analysing and rationalising the grammar code system (by Amsterdam group)
   * comparison with OALD
-4. analysis and evaluation of the grammatical code system (by Cambridge and
-   Lancaster groups)
+4. analysis and evaluation of the grammatical code system 
+  (by Cambridge and Lancaster groups)
   * subcategorisation and semantic information for verbs
   * dative alternation
 5. derivation of a new subcategorisation
@@ -270,7 +269,7 @@ H. Alshawi
 Pages: 153-169
 
 * the [small vocabulary] problem does not disappear in limited domain because
-of synonyms and specialised words and the difficulty of delimiting domains
+  of synonyms and specialised words and the difficulty of delimiting domains
 * partial syntactic analysis
 
 ## Def anal
@@ -286,8 +285,8 @@ of synonyms and specialised words and the difficulty of delimiting domains
 P. Vossen, W. Meijs, M. den Broeder
 Pages: 171-192
 
-* syntactic typology is developed for the structures of the meaning de-
-  scriptions of each of the major parts of speech (POS),
+* syntactic typology is developed for the structures of the meaning
+  descriptions of each of the major parts of speech (POS)
 * hyponyms, adjectives involved
 * combine them with subject field, speech register, and sociolect codes
 
@@ -311,7 +310,7 @@ Pages: 193-228
   * Lehnert (1987) is a fusion of Preference Semantics and CD
 * comp sem is opposed to any claims as to the necessity or sufficiency of
   ... syntactic analysis, logical semantics, and expert systems
-  * substantial alogrithoms and the right level of analysis lie elsewhere
+  * substantial algorithms and the right level of analysis lie elsewhere
   * natural language interfaces, especially expert systems
     * a false claim: if the knowledge structure is adequate, practical problems
       of semantics (like lexical ambiguity) do not arise
@@ -327,7 +326,7 @@ Pages: 193-228
     * (for example, Cottrell and Small, 1983; Waltz and Pollack, 1985)
     * weighted symbolic representations
     * used in this chapter
-* the differece as they apply to issues of word sense for comp sem
+* the difference as they apply to issues of word sense for comp sem
   * set out in the next section of the chapter as
   * the key issue in computational semantics at the moment
   * discreteness of word senses vs continuity
@@ -344,7 +343,7 @@ Pages: 193-228
   compared to the underlying organisation of knowledge representations, and
   similarities have been observed, p106
   * genus and differentia, genus -> hierarchies
-* computational semantics convergs with 
+* computational semantics converges with 
   knowledge acquisition and computational lexicography
   1. whether it is right to assume word ‘sense’, 
     direct from traditional lexicography and MRDs (yes) p106
@@ -375,16 +374,17 @@ Pages: 193-228
   * description of LDOCE
   * the three approaches
 * LDOCE
-  * about 30 non-LDV words are used in definitions e.g. aircraft is used 267 times
+  * about 30 non-LDV words are used in definitions 
+    e.g. aircraft is used 267 times
   * senses of LDV words constitute 24k of the 74k senses in LDOCE
   * box codes CONCRETE, ABSTRACT, and ANIMATE, hierarchy
   * pragmatic (`subject`) codes 
 
-### 9.2.1 Az LDOCE -- együttes előfordulás statisztikája (Tony Plate)
+### 9.2.1 Az LDOCE -- cooccurrence stat (Tony Plate)
 
-### 9.2.2 Gépesített szótár építése az LDOCE alapján
+### 9.2.2 Building a MRD based on LDOCE
 
-1200 szavas key defining vocabulary (KDV)
+1200-word key defining vocabulary (KDV)
 
 ### 9.2.3 genus
 

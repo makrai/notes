@@ -70,8 +70,8 @@ Mathematical linguisitcs
   * the combinatorical properties of words and the grammatical descriptions of
     sentences are independent of their meaning
 * [summary of 5.3]
-  * conceptual primitives such as LIVE and MOVE, which are used in
-  * axioms connecting these to each other, e.g. that good things
+  * conceptual primitives such as LIVE and MOVE
+  * axioms connecting these to each other
   * dictionary definitions or meaning postulates that
     connect the vast majority of lexical items to [the few primitives]
   * inner syntax [of] conceptual representations, both primitive and derived
@@ -89,13 +89,16 @@ Mathematical linguisitcs
 
 # 6.1 The explanatory burden of semantics
 
-(A) characterizing the set of expressions and (B) characterizing the set of
-meanings (C) expressions that have similar form should receive analyses by the
-same apparatus.  (D) expressions occurring in fiction should receive analysis
-by the same apparatus as expressions used in nonfiction contexts.  (E) the
-system must be flexible about naming.  (F) the system must remain invariant
-under a change of facts.  (G) all expressions should receive analysis by the
-same apparatus as supposed statements of fact
+* characterizing the set of expressions and
+* characterizing the set of meanings
+* expressions that have similar form should receive analyses by the same
+  apparatus
+* expressions occurring in fiction should receive analysis by the same
+  apparatus as expressions used in nonfiction contexts
+* the system must be flexible about naming
+* the system must remain invariant under a change of facts
+* all expressions should receive analysis by the same apparatus as supposed
+  statements of fact
 
 ### 6.2.1 Montague grammar
 
@@ -122,13 +125,13 @@ same apparatus as supposed statements of fact
 
 ## 6.4 Further reading
 
-* generics is Carlson and Pelletier (1995). That generics admit exceptions
-  and thus require a mechanism greatly different from that of standard
-  quantification has long been noted (Jespersen 1924). For
+* generics is Carlson and Pelletier (1995)
+  * generics admit exceptions and thus require a mechanism greatly different
+    from that of standard quantification (Jespersen 1924)
 * nonmonotonic
   * a summary evaluation and quick dismissal of _nonmonotonic_ approaches to
     generics, see Pelletier and Asher (1997), and for a more
-  * sympathetic view, see Thomason (1997) in the same volume. The
+  * sympathetic view, see Thomason (1997) in the same volume
 * standard treatment of exceptions is Moltmann (1995), who takes the exception
   domain to be subtracted from each element in the set of properties that make
   up a generalized quantifier (see also Lappin 1996)
