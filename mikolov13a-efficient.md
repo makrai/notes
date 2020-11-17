@@ -12,30 +12,30 @@ International Conference on Learning Representations (2013)
 # 1.1 Goals of the paper
 
 * vector(”King”) - vector(”Man”) + vector(”Woman”) results in a vector that is
-  closest to the vector representation of the word Queen [14].
+  closest to the vector representation of the word Queen [14]
 
 # 2. Model Architectures
 
-* models for estimating continuous representations of words 
-  * Latent Semantic Analysis (LSA) and 
-  * Latent Dirichlet Allocation (LDA). In 
-* neural network architectures ... better than LSA for 
-  * preserving linear regularities among words [14]; 
-  * computational [cost] on large data sets.
+* models for estimating continuous representations of words
+  * Latent Semantic Analysis (LSA) and
+  * Latent Dirichlet Allocation (LDA). In
+* neural network architectures ... better than LSA for
+  * preserving linear regularities among words [14];
+  * computational [cost] on large data sets
 
 # 2.1 Feedforward Neural Net Language Model (NNLM)
 
 * The probabilistic feedforward neural network language model (Bengio+ 03)
-* A szónak veszi a feltételes valségét, tehát 
-  csak a kontextus szavak helyett van vektor.
+* A szónak veszi a feltételes valségét, tehát
+  csak a kontextus szavak helyett van vektor
 * solutions to reduce the number of parameters
-  * hierarchical softmax where 
+  * hierarchical softmax where
     the vocabulary is represented as a Huffman binary tree
-    
+
 # 2.2 Recurrent Neural Net Language Model (RNNLM)
 
-* recurrent matrix that connects hidden layer to itself, using 
-  time-delayed connections 
+* recurrent matrix that connects hidden layer to itself, using
+  time-delayed connections
 
 # 3 New Log-linear Models
 
@@ -58,10 +58,10 @@ International Conference on Learning Representations (2013)
 
 # 6 Conclusion
 
-* In the future, it would be interesting to 
+* In the future, it would be interesting to
   compare our techniques to Latent Relational Analysis [19]
 
 # References
 
-* [19] T. Mikolov. Statistical Language Models based on Neural Networks.
+* [19] T. Mikolov. Statistical Language Models based on Neural Networks
 * PhD thesis, Brno Univer-

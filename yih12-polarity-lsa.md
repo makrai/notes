@@ -21,10 +21,9 @@ W Yih, G Zweig, JC Platt
 # 1 Introduction
 
 * Cruse (1986) notes that numerous kinds of antonymy are possible, for example
-  antipodal pairs like “top-bottom” orgradable opposites like “light-heavy.”
-  Work in this area includes (Turney, 2001; Lin et al., 2003; Turney and
-  Littman, 2005; Turney, 2006; Curran and Moens, 2002; van der Plas and
-  Tiedemann, 2006; Mohammad et al., 2008; Mohammad et al., 2011)
+  antipodal pairs like “top-bottom” or gradable opposites like “light-heavy”
+  (Turney, 2001; Lin+ 2003; Turney and Littman, 2005; Turney, 2006; Curran and
+  Moens, 2002; van der Plas and Tiedemann, 2006; Mohammad+ 2008; Mohammad+ 2011)
   * [still] a difficult open problem in general (Poon and Domingos, 2009)
 * we present a novel method for assigning both negative and positive values
   to the TF-IDF weights used in latent semantic analysis

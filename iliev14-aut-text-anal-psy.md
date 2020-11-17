@@ -64,7 +64,7 @@ Language and Cognition, 2014
 * documents are represented as sets of features
 * [one domain of applications] is in the analysis of open-ended questions
 
-## 1.4 word co-oc currences
+## 1.4 word co-occurrences
 
 * application of LSA methods for studying differences between authors
   * distance between texts in the semantic space

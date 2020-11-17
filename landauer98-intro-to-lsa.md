@@ -1,10 +1,6 @@
-Landauer, T. K., Foltz, P. W., & Laham, D
+TK Landauer, PW Foltz, & D Laham
 Introduction to Latent Semantic Analysis
 (1998) Discourse Processes, 25, 259-284
-
-* azt gondolom, hogy LSA kapcsán a következőket érdemes hivatkozni
-  * seminal: Dumais+ 88, Furnas+ 88
-  * easy entry: Landauer+ 98 (ez); Deerwester+ 1990
 
 # [Intro]
 
@@ -27,7 +23,7 @@ Introduction to Latent Semantic Analysis
 
 * data preprocessing transformation, needs to be described more fully
   * subject the data in the raw word-by-context matrix to
-    1. frequency (+ 1) in each cell is converted to its log. Second,
+    1. frequency (+ 1) in each cell is converted to its log
     2. each cell entry then divided by the row entropy value
       * [the result is] an estimate of its importance in the passage and
         inversely with the degree to which knowing that a word occurs provides
