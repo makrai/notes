@@ -252,7 +252,7 @@ The naive physics manifesto
     * have to go into analogies to do with e.g. interpersonal status,
       (Judge's seats are raised: Heaven is high, Hell is low:
       to express submission, lower yourself, etc.)
-    * Imagrne a world in which the 'status' analogy was reversed
+    * Imagine a world in which the 'status' analogy was reversed
       * a possible model of naive physics, but not of common sense
   * formalisation cannot be deep without being broad, and
     must be deep to be dense: so a dense formalisation must be deep and broad
