@@ -15,8 +15,8 @@ Theories of Case
   * Arabic tradition [from] the formation of the Muslim Empire (about 700 CE)
 * modern: a straightforward comparison across theories is doomed to fail
   * ‘case’ means different things to different people
-  * this book focuses on a number of guiding themes which have been
-    consistently associated with an analysis of case phenomena
+  * this book focuses on some guiding themes which have been consistently
+    associated with an analysis of case phenomena
     * semantic or thematic roles and the role of grammatical relations
     * The book abstracts away from detailed considerations of the morphophon
     * overt realization, how well do [each syntactic theory] deal with
@@ -533,31 +533,30 @@ Theories of Case
   each nominal bears
 * A (simplified) correspondence is shown in (48)
 
-|Thematic Role |Grammatical Relation|
-|----------|------------------|
-|Agent	|Subject	|
-|Experiencer	|Subject	|
-|Patient	|Object	|
-|Theme	|Object	|
-|Goal/Beneficiary	|Indirect Object	|
-|Location	|Oblique	|
-|Instrument	|Oblique/Adjunct	|
+|Thematic Role  |Grammatical Relation |
+|---------------|---------------------|
+|Agent	        |Subject	            |
+|Experiencer	  |Subject	            |
+|Patient	      |Object	              |
+|Theme	        |Object	              |
+|Goal/Beneficiary	|Indirect Object	  |
+|Location	      |Oblique	            |
+|Instrument	    |Oblique/Adjunct	    |
 
 * the verbal semantic classification does not seem to hold crosslinguistically
-  (Rosen 1984). Examples such as the ones below from Choctaw and Italian show
+  (Rosen 1984). [Counter]Examples from Choctaw and Italian
 * or even within a language (see Legendre 1989, 1990 for a detailed study of fr)
-* two ways to account for these crosslinguistic differences. One explanation is
+* two ways to account for these crosslinguistic differences
   * the distinction is not based on exclusively semantic factors OR
-  * not all verbs can be assumed to have exactly the same lexical semantics in
-    all languages.  For example, one could interpret the above data as showing
-    e.g. in some languages ‘die’ is treated more like an ‘active’ verb, whereas
+  * not all verbs have exactly the same lexical semantics in all languages
+    * e.g. in some languages ‘die’ is treated more like an ‘active’ verb,
 * a closely related idea, namely Baker’s (1988) Uniformity of Theta Assignment
   Hypothesis (UTAH), see chapter 4, has established itself as a core part of syn
 
 ## 3.9 Summary 44
 
 * grammatical relations and other abstract syntactic concepts mediate between
-  the lexical semantics of a verb and the expression of case. In particular,
+  the lexical semantics of a verb and the expression of case
 
 ## 3.10 Exercises 44
 
@@ -588,7 +587,23 @@ Theories of Case
 4.6 Case and Agreement 55
 4.7 D-Structure, θ-Theory, and Structural Case
 4.8 Structural vs. Inherent or Quirky Case
+
+* so far: structural Case. This is defined as a property of a structural
+  configuration and generally assigns nominative and accusative case. However,
+* further cases. E.g. dative argument of ditransitive verbs in German. Marking
+  * goal/beneficiary argument of a ditransitive verb with the dative as in (41a)
+  * very common crosslinguistic option.  However, it just so happens that
+  * English, Italian and French, the languages which initially provided the bulk
+    of the data for transformational analyses, do not have a morphological dat
+
 4.9 Taking Stock 71
+
+* Widespread agreement on case is restricted to a small subset of the crosslin-
+  guistic patterns: genitive for possessors in NPs, accusative for objects,
+  nominative in subject position of a finite clause, and datives for secondary
+  objects of ditransitives. The case on spatial and temporal adjuncts or
+  arguments is connected to their semantics
+
 4.10 Minimalism 73
 4.11 English Double Objects
 4.12 Discussion 87
@@ -600,7 +615,7 @@ Theories of Case
 
 * Linking: generalizations in predicate-argument structures to a syntactic repr
   * relationship between lexical semantics, argument structure, case marking,
-    grammatical relations and syntactic structure. Linking theories differ
+    grammatical relations and syntactic structure
 * chapter begins with some
   * fundamental ideas about predicate-argument structure in relation to
     thematic relations, lexical decomposition and protoroles. These ideas
@@ -618,7 +633,15 @@ Theories of Case
 5.5. The Feature System 103
 5.5. Linking by Case, Position and Agreement 107
 5.5. Passives, Unaccusatives and Unergatives 109
-##5.6 Lexical Decomposition Grammar
+##5.6 Lexical Decomposition Grammar 111
+
+* Wunderlich (1997) to account for argument and case patterns and argument al-
+  ternations crosslinguistically. LDG is
+* primarily a theory of linking and was inspired by Kiparsky’s linking theory
+  * [later] it in turn informed the further development of Kiparsky’s theory. In
+  * Kiparsky adopted the Semantic Form (SF) representation for argument struc-
+    * ultimately based on Bierwisch’s 1983 ideas). Kiparsky worked with
+
 5.6. Basic Analyses 113
 5.6. Unergatives, Unaccusatives and Semantics
 5.6. Quirky Case 116
@@ -626,16 +649,54 @@ Theories of Case
 5.7. LFG Basics 117
 5.7. Argument Structure and Thematic Roles 122
 5.7. Quirky Case and Early Association Principles 123
+
+* Icelandic verb óska ‘to wish’ can be used either transitively or as a ditrans
+  * when the goal ‘her’ in (68) is present, it is realized as the direct object
+  * When it is not present, the theme is instead linked to the direct object
+
 5.7. The Introduction of Explicit Features 126
 5.7. Standard LFG Mapping Theory 127
 5.7. Argument Alternations 131
 5.7. Incorporation of Proto-Roles 135
 ##5.8 Case Stacking 138
-##5.9 An Interactive Model of Case
+##5.9 An Interactive Model of Case 142
+
+* Urdu alternations: subject alternation, or differential subject marking
+  * from: only difference is the case morphology on one of the noun phrases
+  * This morphological difference signals a difference in semantic interpret
+    * ergative subject indicates that the participant (‘Nadya’) has some control
+    * dative case in (107b) implies more of an obligation to perform the action
+    * [discussed] in the Optimality Theoretic literature (section 8.2)
+* Butt and King’s (1991) proposals for semantic case foreshadowed Nordlinger’s
+  ideas about _constructive case_ (section 5.8) in that the
+  * case markers themselves are active components which contribute to the
+    analysis of a clause
+  * The lexical entry for the accusative use of ko states that:
+    * the case is accusative;
+    * the relevant NP should be a direct object;
+    * the NP should be interpreted as specific at the level of s(emantic)-struc
+* Based on data mainly from Urdu, Georgian and Russian, Butt and King went on to
+  * both a diachronic and a synchronic perspective, Butt and King (2003) focuses
+* The next few sections briefly present the essential points of the theory
+  * Butt and King (2003) assume differing kinds of case:
+    structural or default case (section 5.9.2),
+    semantic case (section 5.9.4), and
+    quirky case (section 5.9.3)
+* The analysis makes full use of LFG’s projection architecture, including the
+  semantic projection, as seen in (109), and the argument projection (a-struct)
+
 5.9. Linking 144
 5.9. Structural Case 145
 5.9. Quirky Case 146
-5.9. Semantic Case 146
+### 5.9.4 Semantic Case 146
+
+* In Urdu and in most South Asian languages,
+* semantic case is the most general type
+* defining characteristics of semantic case in the sense of Butt and King are:
+  * semantic predictability;
+  * subjection to syntactic restrictions, such as being confined to certain
+    grammatical functions, most[ly] one or two
+
 ##5.10 Discussion 149
 ##5.11 Exercises 150
 
@@ -720,23 +781,168 @@ Theories of Case
 # 7 The Semantics of Case 188
 
 * some further well known semantically based case alternations, and a variety of
-  approaches, which contain a serious semantic component in their analysis of
-  case
+  approaches, which contain a serious semantic component in their anal of case
 
-7.1 Localist Theories 188
-7.2 Agency vs. Experience 189
-7.3 Object Alternations 191
-7.4 Subject Alternations 197
-7.5 Discussion 199
-7.6 Exercises 200
+## 7.1 Localist Theories 188
+
+* ground patterns of case marking in concrete spatial and locational uses
+* Abstract or temporal uses of case are argued to be derived from spatial uses
+* [both] abstract and structural case marking [are] connected to a spatial use
+* e.g. the Latin accusative marks objects, but [ also ] directional goals
+  Localist theories assume that such accusatives of direction are not aberrant:
+  * regular principles connect the abstract structural use in with the directnl
+* English dative to: (2) Kim donated books to the library/walked to her house
+  * Because the English to is a preposition and not a case morpheme, the
+    parallel between the concrete spatial and the abstract use is more obvious
+  * Recall that case morphology is often derived from former [ad]positions
+  * connection between concrete spatial uses and abstract case is not far-fetchd
+  * is the connection as direct as what is assumed in Localist theories?
+* long tradition. The first practitioner was the
+  * Byzantine Maximus Planudes, who lived and worked around 1300 CE. In more
+  * Hjelmslev (1935) and J. Anderson (1971)
+  * Jakobson’s (1936) effort to find coherent semantics for the Russian case
+    e.g. all of the individual uses of the Russian genitive, should be derivable
+    from one and the same overarching semantics
+  * Gruber (1965) have found their way into much of modern linguistic thought,
+    mostly by way of Jackendoff’s (1972, 1976, 1990) development and formalizatn
+  * modern generative approaches
+    * not explicitly adopt a localist theory. The
+    * fundamental ideas have nevertheless ‘leaked’ into linguistic consciousness
+    * assumed as basic generalizations about how language works (e.g., see the
+      * e.g. subjects of psych predicates are abstract goals)
+* Localist theories seek to formalize these basic generalizations
+  in order to drive linguistic explanations
+
+## 7.2 Agency vs. Experience 189
+
+* Wierzbicka (1981) ‘Case Marking and Human Nature’ takes a closer look
+* Silverstein’s (1976) person hierarchy (see section 6.6) that
+  * humans see themselves as a ‘quintessential agent’ and that therefore
+    1st and 2nd persons need to be less marked for agency than other things
+  * With respect to ergativity this view predicts that
+    1st and 2nd person pronouns will be marked less often with an overt
+    ergative case, than 3rd person pronouns and nouns
+  * This pattern is indeed confirmed by crosslinguistic comparison
+  * Ergative marks an unexpected agent, Accusative marks an unexpected patient
+* Wierzbicka rejects this view and instead argues ‘experiencerhood’ or ‘pathood’
+  * humans instead are more worried about what is happening to them. In support
+  * ratios of agents to patients in plays
+  * the speaker is more interested in what other people are doing to him than vv
+    * more sensitive to the ways in which other people’s actions affect him than
+    * regards himself as the quintessential ‘victim’ or experiencer
+  * many languages have a special construction for marking experiencers. We
+    * datives or genitives crosslinguistically. In some languages, the
+    * genitive subject for Bengali:
+      I.Gen tea.Nom good be.attached.Pres
+      ‘I like tea.’ (Klaiman 1980:276)
+  * German involves the so-called ‘free dative’
+    _Sei (mir) nur brav!_ ‘Be good!’
+    * an experiencer dative and is not subcategorized for the verb
+  * all cases must be seen as having a semantic connection and
+    there must be a basic meaning for each case + a range of meanings derived
+    * This echoes Jakobson’s (1936) ideas of how to analyse case In particular,
+    * e.g. even the structural accusative must be invested with semantic content
+      (beyond being used to mark patients or themes),
+  * semantically determined case alternations. One pertinent example in (6)
+    * Russian.  (6)
+      Ivan ždet tramvaj(a)
+      Ivan.Nom is-waiting-for tram.Acc/Gen
+      ‘Ivan is waiting for the/a tram.’ (Wierzbicka 1982:56)
+    * encountered for Urdu in section 5.9
+    * quite common crosslinguistically, indicating that this is a systematic
+* The next section explores several proposals with respect to such object alter
+* Wierzbicka also implicates topicality as playing a role in the appearance of
+  * particularly with respect to the ergative. It is clear that discourse
+  * there is little work on this and no ‘standard’ theory, see section 5.3
+
+## 7.3 Object Alternations 191
+## 7.4 Subject Alternations 197
+## 7.5 Discussion 199
+## 7.6 Exercises 200
 
 # 8 More Theories Great and Small
 
-8.1 Role and Reference Grammar
-8.1.1 Basic Linking 205
-8.1.2 Ditransitives and Dative Subjects
-8.1.3 Ergatives 211
-8.2 Optimality Theory
+## 8.1 Role and Reference Grammar
+
+* whether an approach that based itself on core data from Lakhota, Tagalog and
+  Dyirbal, rather than Western + Hebrew, would differ substantially from the
+  standard Chomskyan derivational/transformational tradition (Foley and Van
+  Valin 1977, Van Valin 1977a,b). The answer to his question is ‘yes’, as the
+* today is a theory with many active practitioners, international conferences,
+  and summer schools. Much of the data that is analysed is the result of primary
+  field work. As such, there are several languages for which only RRG analyses
+  exist.  Comprehensive discussions of the theory are presented in Van Valin
+  (1993) and Van Valin and LaPolla (1997)
+* inspired by Fillmore’s Case Grammar and rejects versions of X bar Theory
+  * phrase structure in terms of layers of clause structure. The
+    * nucleus is represented by the main predicate (e.g., the verb), the
+    * core represents the core predication (verb plus arguments), and this is
+    * syntactic structure. The syntactic representations in RRG are therefore
+* shares some characteristics with LFG in that it assumes a multidimensional
+  * constituent projection (the basic tree), an
+  * operator projection (tense, mood, aspect, etc.), and a
+  * focus structure projection for discourse phenomena. These projections
+* rejects the universal applicability of grammatical relations such as subject
+  * Instead, relationship between macroroles and the
+    Privileged Syntactic Argument (PSA)
+* The PSA functions as the syntactic pivot of the clause (cf. section 6.4). It
+  * generalizations about agreement, control, or the coordinate reduction are
+    stated with reference to the PSA and the macroroles. In languages like
+  * in the syntactically ergative language Dyirbal follows from the fact that
+    the Undergoer macrorole, rather than the Actor macrorole as in German, is
+    singled out as the PSA
+* macroroles: Actor and Undergoer. These two roles generalize over more detailed
+  * similar to Dowty’s Proto-Roles (which were inspired by the previously
+    existing idea of macroroles), see section 5.4
+  * owes much to Gruber’s (1965) and Jackendoff’s (1976) original work
+* detailed lexical semantic or Logical Structure (LS) representations as shown
+  * follow Vendler’s (1967) original aktionsart classification and are
+  * in line with general assumptions about lexical decomposition (sec 4.10.3)
+    * ingressive INGR denotes the beginning of a new event or state. BEC is short
+    * BECOME denotes the entry into a new state (change of state).  The
+    * difference between states and activities is a ‘do’ component, i.e.,
+      whether or not somebody is engaging in an activity, or whether they are
+      simply continuing a given state
+    * States and activities differ from achievements and accomplishments,
+      because the latter have result states (a change of state is achieved or
+      accomplished), and the former do not. The difference between achievements
+      and accomplishments is one of duration: accomplishments are non-punctual
+* As in Jackendoff’s (1990) approach, there is no direct representation of the-
+  matic roles in RRG: the information that is necessary for the mapping from
+  * mapping or linking of semantic arguments to syntactic representations is
+    mediated by the macroroles, as shown in (2).  (2) ACTOR
+* Actor-Undergoer Hierarchy. The semantic macroroles generalize over the more
+  * arguments of do are preferably interpreted as Actor,
+  * arguments of state predicates and second arguments of general predicates are
+    preferably interpreted as Undergoer
+* macroroles need to be linked to the PSA (which could be thought of as the
+  single grammatical relation in RRG). In syntactically accusative languages
+* consideration of case, agreement and word order. Recall that these are the
+* The next few sections examine how some of the basic clause types discussed in
+  this book are analysed within RRG
+
+### 8.1.1 Basic Linking 205
+
+transitives, passives, unaccusatives and unergatives
+
+### 8.1.2 Ditransitives and Dative Subjects 208
+
+* M-transitivity is defined in terms of the number of macroroles a verb can take
+  (Van Valin and LaPolla 1997:150,355; Narasimhan 1998). Verbs can lexically
+  carry information about their M-transitivity in cases when it deviates from
+  the semantic transitivity expected on the basis of their LS representations
+* In German and Icelandic, the verbs for ‘help’ are assumed to be semantically
+  transitive (two arguments in their LS), but M-intransitive. That is, although
+  there are two semantic arguments, which correspond to two syntactic arguments
+  (‘Gaby/I’ and ‘dog/he’), there is only one macrorole available for linking. In
+  _Gabi half dem Hund._, ‘Gaby’ correspond to the Actor macrorole and is
+  assigned nominative by (5a). It also triggers verb agreement by (6).  The
+  ‘dog’ and, in contrast, is left macroroleless and receive dative case by (5c)
+
+### 8.1.3 Ergatives 211
+
+## 8.2 Optimality Theory
+
 8.2.1 OT Basics 213
 8.2.2 Structural Case Revisited 216
 8.2.3 Harmonic Alignment 220
