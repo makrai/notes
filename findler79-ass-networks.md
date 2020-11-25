@@ -6,8 +6,7 @@ let fourteen flowers bloom
 
 # Foreword
 
-* Associative networks, on the other hand, could, but need not, be
- language-independent
+* Associative networks, could, but need not, be language-independent
 * three distinct levels:
   * an information structure in the computer;
   * a (corresponding) diagram on paper;
@@ -29,7 +28,7 @@ let fourteen flowers bloom
   * The SNePS semantic network processing system
   * A predicate calculus based semantic network for deductive searching
   * Making preferences more active
-  * Extensional semantic netw
+  * Extensional semantic networks
 * Part III: AREAS OF APPLICATION
   * A heuristic information retrieval system based on associative networks
   * RE: the gettysburg address: Representing Social and Political Acts

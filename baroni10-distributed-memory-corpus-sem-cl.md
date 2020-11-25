@@ -92,7 +92,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 # 2. Modeling Co-occurrence in Distributional Semantics 4
 
 * unstructured DSMs: not use the linguistic structure of texts
-* structured DSMs, co-occurrence statistics are  corpus-derived triples:
+* structured DSMs, co-occurrence statistics are corpus-derived triples:
     * word pairs and the
       * parser-extracted syntactic relation or
       * lexico-syntactic pattern that links them (..Rothenhäusler & Schütze 09)
@@ -129,8 +129,8 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 * weighted distributional tuples that
   * encode typed co-occurrence relations among words. Let W 1 and W 2 be
   * L is a set of strings representing syntagmatic co-occurrence links between
-    words in a text. T ⊆ W 1 × L × W 2 is a set of corpus-derived tuples t =  w
-  * e.g. `<marine, use, bomb>`  encodes a piece of distributional information
+    words in a text. T ⊆ W 1 × L × W 2 is a set of corpus-derived tuples
+  * e.g. `<marine, use, bomb>` encodes a piece of distributional information
   * _use_ specifies the type of the syntagmatic link between the two words
 * In this article, we make the further assumption that W 1 = W 2
 * we enforce an inverse link for any link l in L
@@ -164,7 +164,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   spaces correspond to the linguistic objects we want to study; that is, the
   * outcome of matricization must be labeled matrices. Therefore,
   * we must determine the labels of the fibre index
-  * use the tuple formed by the labels of the N-1 fixed index elements 
+  * use the tuple formed by the labels of the N-1 fixed index elements
 * Under the assumption that W 1 = W 2 and the inverse link constraint,
   matricizing the labeled third-order tensor X λ yields only the following
   four distinct semantic vector spaces:
@@ -200,7 +200,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 * other unified approaches
 * We will point out connections to related research specific to the various
   tasks in the sections devoted to describing their reinterpretation in DM
-* we briefly discuss two other studies that explicitly advocate a uniform
+* we briefly discuss two other studies that explicitly advocate uniformity
   + one article that, like us, proposes a tensor-based formalization of
     corpus-extracted triples. See Turney and Pantel (2010)
 * Padó and Lapata (2007), partly inspired by Lowe (2001), have proposed an
@@ -224,17 +224,17 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
     * Turney’s approach amounts to picking a source task and reinterpreting
       other tasks as its particular instances
     * i.e. attributional sim is a subtype of relational
-  * Turney’s focus is on dimensionality reduction applied to tensors, and the
+  * Turney’s focus is on dimensionality reduction applied to tensors
 * higher-order language tensor dimensionality reduction aka. decomposition
   * Turney (2007) and Van de Cruys (2009) can be applied to the DM tensors
-    before matricization We present a pilot study in this direction in Section
-    6.5
+    before matricization
+  * We present a pilot study in this direction in Section 6.5
 
 # 5 Implementations of the DM framework 14
 
 ## 5.1 Extraction of Weighted Tuple Structures from Corpora
 
-* we experiment with three different DM models, corresponding to different ways
+* we experiment with three different DM models
   * All models are based on word–link–word tuples from a dependency parse
 * corpus contains about 2.83 billion tokens <~ ukWaC, Wikipedia, etc
 * approximately the top 20,000 most frequent nouns and top 5,000 Vs and ADJs
@@ -242,16 +242,16 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 
 ### DepDM
 
-* only lexicalized links are prepositions)
+* only lexicalized links are prepositions
 * noun–verb, noun–noun, and adjective–noun links
 * For each link, we also extract its inverse (this holds for all our DM models)
-* weights i.e. scoring function is Local Mutual Information (LMI) computed on
+* weights i.e. scoring function is Local Mutual Information (LMI)
   * an approximation to the log-likelihood ratio measure that has been shown to
-    be a very effective weighting scheme for sparse frequency counts (Dunning
-    1993; Padó and Lapata 2007)
+    be a very effective weighting scheme for sparse frequency counts
+    (Dunning 1993; Padó and Lapata 2007)
   * can also be interpreted as the dominant term of average MI or as
   * a heuristic variant of pointwise MI to avoid its bias towards
-    overestimating the significance of low frequency events, and it is
+    overestimating the significance of low frequency events
   * nearly identical to the Poisson–Stirling measure (Evert 2005)
   * does not require keeping track of the full 2 × 2 × 2 contingency table,
     which is the case for the log-likelihood ratio
@@ -275,8 +275,8 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 
 ### TypeDM
 
-* idea, motivated and tested by Baroni+ (2010)— but
-  * see also Davidov and Rappoport (2008a, 2008b) for a related method—that
+* idea, motivated and tested by Baroni+ (2010)
+  * see also Davidov and Rappoport (2008a, 2008b) for a related method
   * what matters is the variety of surface forms that express a relation
   * e.g. fat, of^{-1}, land (a figurative expression) is much more common than
     the semantically more informative  fat, of^{-1}, animal
@@ -287,8 +287,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 
 ### To sum up, the three DM instance models
 
-* differ in the degree of lexicalization of the link set, and/or 
-  in the scoring function
+* diff in the degree of lexicalization of the link set, and/or the scoring func
 * LexDM is a heavily lexicalized model
 * DepDM has a minimum degree of lexicalization
 * TypeDM is middle level both for the kind and the number of links
@@ -296,7 +295,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   * LexDM suffixes: generate different links,
   * TypeDM: different counting scheme as part of a different scoring function
 
-## 5.2 Semantic Vector Manipulatio
+## 5.2 Semantic Vector Manipulation
 
 * Vector length and normalization
 * Cosine. We measure the similarity of two vectors x and y by the cosine
@@ -314,17 +313,17 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 * alternatives are conceivable with respect to space selection and operations
   * Turney (2008) models synonymy detection with a DSM that closely resembles
     our W 1 W 2 × L space, whereas we tackle this task under the more standard
-    W 1 × L W 2 view.  It is an open question whether there are principled ways
+    W 1 × L W 2 view
 * Most experiments report global (micro-averaged) test set accuracy (alone, or
   combined with other measures) to assess the performance of the algorithms
 
 ## 6.1 The W 1 ×LW 2 Space 20
 
-### 6.1.1 Similarity Judgments 
-### 6.1.2 Synonym Detection 
+### 6.1.1 Similarity Judgments
+### 6.1.2 Synonym Detection
 ### 6.1.3 Noun Categorization
 
-* prominent role in cognitive research on concepts and meaning, as a probe into
+* prominent role in cognitive research on concepts and meaning
 * semantic organization of the lexicon and the
 * hierarchical concept taxonomies (Murphy 2002). Research in corpus-based
 * computational point of view: assign a semantic class or type to words
@@ -338,31 +337,31 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 ### 6.1.4 Selectional Preferences
 
 * typical filler of an argument slot of a verb (such as the typical killer)
-* our method is generalizable to  tasks that require  assigning semantic
-  roles, logical metonymy, coercion ( Pustejovsky 1995)
+* our method is generalizable to tasks that require assigning semantic
+  roles, logical metonymy, coercion (Pustejovsky 1995)
 * human judgments on a seven-point scale about the plausibility of nouns as
 * algorithm
   * select a set of nouns that are highly associated with the verb via a
     subj/ob
   * we project the vectors onto the tr or intr subj of kill subspace where
   * measure the length of the noun vectors in this subspace, and pick the top n
-    longest ones as prototypical subjects of the verb.  The
-  * same operation is performed for the object relation.  In our experiments,
+    longest ones as prototypical subjects of the verb
+  * same operation is performed for the object relation
   * We normalize and sum the vectors (in the orig space) of the picked nouns,
-    to obtain a centroid that represents an abstract “subject prototype” for
-  * plausibility of is then measured by the cosine of the noun vector to
-    the subject (object) centroid in
+    to obtain a centroid that represents an abstract “subject prototype”
+  * plausibility is then measured by the cosine of the noun vector
+    to the subject (object) centroid
   * this provides plausibility scores for nouns that do not co-occur with V
     e.g.  The corpus may contain neither eat topinambur nor eat sympathy, but
     the topinambur vector will likely be closer to the prototypical eat object
-* method is essentially the same as the one proposed by Padó+ (2007), Erk (07)
+* method is essentially the same as the one proposed by Padó+ (07), Erk (07)
   * they treat the identification of typical fillers using different resources
-* we measure performance by the Spearman ρ correlation coefficient between
+* we measure performance by the Spearman ρ correlation coefficient
 * advantage resides in versatility
   * D M models perform very well in tasks involving attributional similarity
-  * The performance of unstructured D S Ms  is also high, sometimes even better
-  * D M model also  brilliant  in capturing selectional preferences, a task
-    * not directly addressable by unstructured D S Ms.  This fact suggests that
+  * The performance of unstructured D S Ms is also high, sometimes even better
+  * D M model also brilliant in capturing selectional preferences
+    * not directly addressable by unstructured D S Ms
 
 ## 6.2 The W 1 W 2 ×L Space 27
 
@@ -371,41 +370,43 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   * word pairs are compared based on the patterns that link them in the corpus,
   * similarity of their relations (Pantel and Pennacchiotti 2006)
 * features (`use`) associated with word pairs (`<soldier, gun>`).  Besides
-* we will also show how problems that have not been traditionally defined in
+* we will also [recast] problems
   * such as qualia harvesting with patterns or generating lists of
-    characteristic properties, can be elegantly recast in the W 1 W 2 × L space
-  * by measuring the length of  w 1 , w 2  vectors in a link (sub)space, thus
+    characteristic properties
+  * recast in the W 1 W 2 × L space
+    * not been traditionally defined there
+  * by measuring the length of  w 1 , w 2  vectors in a link (sub)space
 * When words do not co-occur frequently enough, attributional similarity can
   come to the rescue. Given a target pair, we can construct other, probably
   similar pairs by replacing one of the words with an attributional neighbor
   * Turney (2006b) relies on independently harvested attributional and rel
   * we derive both from the same tensor
-  * More precisely, we combine the averages of the top 20 nearest neighbors of
-* We reimplemented Turney’s Latent Relational Analysis (LRA) model, training it
+  * More precisely, we combine the averages of the top 20 nearest neighbors
+* We reimplemented Turney’s Latent Relational Analysis (LRA) model
   * Values in the matrix are log~ and entropy-transformed using Turney’s formul
 
-###6.2.1 Solving Analogy Problems. The SAT test set introduced by Turney 28
+### 6.2.1 Solving Analogy Problems. The SAT test set introduced by Turney 28
 
-###6.2.2 Relation Classification 29
+### 6.2.2 Relation Classification 29
 
-###6.2.3 Qualia Extraction. A popular alternative to the supervised approach to
+### 6.2.3 Qualia Extraction. A popular alternative to the supervised approach
 
-* lexico-syntactic patterns that should capture the relation of interest and to
+* lexico-syntactic patterns that should capture the relation of interest
   * famously illustrated by Hearst (1992) for the hyponymy relation
   * In the DM approach, information already available in the W 1 W 2 × L
-  * We select promising links as our equivalent of patterns and we
-  * measure the projection to the subspace defined by these links. We
+  * We select promising links as our equivalent of patterns
+  * measure the projection to the subspace defined by these links
   * data set of Cimiano and Wenderoth (2007), which contains qualia structures
     (Pustejovsky 1995) for 30 nominal concepts, both concrete (door) and
     abstract (imagination).  Cimiano and Wenderoth asked 30 subjects to produce
     * 1,487 word– quale pairs, instantiating the four roles by Pustejovsky:
-      Formal (the category of the object: door–barrier), Constitutive
-      (materials the object is made of: food–fat), Agentive (what brings the
-      object about: letter–write), and Telic (the function of the object:
-      novel–entertain)
+      * Formal (the category of the object: door–barrier)
+      * Constitutive (materials the object is made of: food–fat)
+      * Agentive (what brings the object about: letter–write)
+      * Telic (the function of the object: novel–entertain)
 * We approximate the patterns proposed by Cimiano and Wenderoth in Table 10
   * n and q indicate the linear position of the noun and the potential quale
-    with respect to the link)
+    with respect to the link
   * LexDM, we pick all links that begin with one of the strings in Table 10
   * DepDM model, the only attested links are n with q (Constitutive), n sbj
     intr q, n sbj tr q (Telic), and q obj n (Agentive).  Consequently, DepDM
@@ -413,50 +414,47 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
     evaluation
 * We project all vectors that contain a target noun onto each of the four spacs
 
-###6.2.4 Predicting Characteristic Properties. Recently, there has been some 33
+### 6.2.4 Predicting Characteristic Properties 33
 
-* dog is a mammal, it barks, it has a tail, and so forth (Almuhareb 2006;
-  Baroni and Lenci 2008; Baroni, Evert, and Lenci 2008; Baroni+ 2010). Similar
-  property lists, collected
+* property lists: dog is a mammal, it barks, it has a tail (Almuhareb 2006;
+  Baroni and Lenci 2008; Baroni, Evert, and Lenci 2008; Baroni+ 2010)
   * from subjects in elicitation tasks, are widely used in cognitive science
-    (Garrard+ 2001; McRae+ 2005; Vinson and Vigliocco 2008). Large-scale
-  * in AI, where they are important for commonsense reasoning (Liu and Singh
-    2004)
+    (Garrard+ 2001; McRae+ 2005; Vinson and Vigliocco 2008)
+  * in AI, they are important for commonsense reasoning (Liu and Singh 2004)
 * the most salient relations of a nominal concept might be in all sorts of
-  qualia relations with it (parts, typical behaviors, location, etc.). Still,
+  qualia relations with it (parts, typical behaviors, location, etc.)
 
 ## 6.3 The W 1 L×W 2 Space 34
 
 * discriminating verbs participating in different argument alternations
 * other uses: W 1 L × W 2 is the transpose of the W 1 × LW 2 space
   * use the former space for feature smoothing or selection in the latter for
-    example, by merging the features with cosine similarity over a thresh
-* e.g. read, sbj − 1  represents the subject slot of the verb read in terms of
+    example, by merging the features with cosine similarity over a threshold
+* e.g. read, sbj − 1  represents the subject slot of the verb read
   * extract generalizations of the sort formal semanticists have tradition
   * e.g. similarity between the object slot of kill and the subject slot of die
   * distributional correlate to the classic cause(subj,die(obj)) analysis of
-    (Dowty 1977)
+    Dowty (1977)
 * different syntactic slots of the same verb corresponds to estimating the
-  amount of fillers they share. Measures of “slot overlap” have been used by
-  Joanis, Stevenson, and James (2008) as features to classify verbs on the
-  basis of their argument alternations. Levin and Rappaport-Hovav (2005) define
-  argument alternations as the possibility for verbs to have multiple syntactic
-  realizations of their semantic argument structure. Alternations involve the
-  expression of the same semantic argument in two different syntactic slots. We
-  expect that, if a verb undergoes a particular alternation, then the set of
-  nouns that appear in the two alternating slots should overlap to a certain
-  degree
+  amount of fillers they share.  Measures of “slot overlap”
+  * Joanis, Stevenson, and James (2008) as features to classify verbs on the
+    basis of their argument alternations
+  * Levin and Rappaport-Hovav (2005) define argument alternations as the
+    possibility for verbs to have multiple syntactic realizations of their
+    semantic argument structure
+  * Alternations involve the expression of the same semantic argument in two
+    different syntactic slots
+  * We expect that, if a verb undergoes a particular alternation, then the set
+    of nouns that appear in the two alternating slots should overlap
 * Verbs differ with respect to the possible alternations they can undergo, and
   * strongly dependent on their semantic properties (semantic roles, event
-    type) Levin (1993) has in fact proposed a well-known classification of
-    verbs
+    type) Levin (1993) has proposed a well-known classification of verbs
 * We focus here on transitivity alternations, whose verbs allow both for a
   transitive NP V NP variant and an intransitive NP V (PP) variant (Levin 1993)
-  * use the W 1 L × W 2 space to carry out the automatic classification of
+  * use the W 1 L × W 2 space to carry out the automatic classification
   * causative/inchoative alternation, _John broke the vase/The vase broke_
     * non-alternating ones (_John minced the meat vs. *The meat minced_). The
-      C/I
-    * data set was introduced by Baroni and Lenci (2009), but not tested in a
+    * data set was introduced by Baroni and Lenci (2009), but not tested
   * ternary classification by different types of transitive alternation. We
     * MS data set (Merlo and Stevenson 2001), which includes
       * 19 unergative verbs undergoing the induced action alternation (race),
@@ -468,7 +466,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   raced futtat the horse past the barn) is an agt
 * We address these tasks by the similarities between the W 1 L × W 2 vectors of
   transitive subject, intransitive subject, and direct object slots of a verb,
-  * using these inter-slot similarities to classify the verb.  For instance,
+  * using these inter-slot similarities to classify the verb
   * e.g. with alternating verbs the intransitive subject slot should be similar
 * nearest centroid on the three-dimensional vectors, with leave-one-out CV
 
@@ -480,28 +478,28 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   selection and labeling” space for W 1 W 2 × L tasks
 * in the qualia extraction task, we started with manually identified links
   * start with examples of noun–quale pairs  n, q r  that instantiate a role r
-    We project all L × W 1 W 2 vectors in a subspace where only dimensions
-    corresponding to one of the example pairs are non-zero. We then
+    * We project all L × W 1 W 2 vectors in a subspace where only dimensions
+      corresponding to one of the example pairs are non-zero
   * most characteristic links in this subspace to represent the target role r,
     and look for new pairs  n, q r  in the W 1 W 2 × L subspace defined by
-    these automatically picked links, instead of the manual ones. Although we
+    these automatically picked links, instead of the manual ones
   * can be done as iterative bootstrapping algorithm
-* For each role r, we construct instead two L × W 1 W 2 subspaces, one
+* For each role r, we construct instead two L × W 1 W 2 subspaces
   * positive subspace with the example pairs  n, q r  as unique non-zero
   * negative subspace
 * examples for links found
   * Formal: n is q, n in q, and q such as n are a good sketch: taxonomic
-    * other Formal links are less conspicuous. However, note the presence of
+    * other Formal links are less conspicuous
     * coordination (n coord q and q coord n), consistently with the common
       * coordinated terms are related taxonomically (Widdows and Dorow 2002)
   * Constitutive is mostly a whole–part relation, and the harvested links good
   * Telic,
-    * q by n, q through n, and q via n capture: action–instrument relation to
-    * i.e. subtype of Telic role that Pustejovsky (1995) calls “indirect.”
+    * q by n, q through n, and q via n capture: action–instrument relation
+    * i.e. subtype of Telic role that Pustejovsky (1995) calls “indirect”
     * The two verb–noun links (q obj n and n sbj intr q) instead capture
-      “direct” Telic roles, theme, _read a book, the book reads well)_. The
+      “direct” Telic roles, theme, _read a book, the book reads well_
   * Agentive
-    * least convincing, only q obj n and perhaps q out n are plausible canonica
+    * least convincing, only q obj n and perhaps q out n are plausible
     * Interestingly, the manual selections also gave very poor results
     * problems might be due to links used to build the DM tensors
 * performance is even better than with the manually picked patterns
@@ -509,38 +507,38 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 ## 6.5 Smoothing by Tensor Decomposition 39
 
 * we present (very preliminary) evidence that tensor decomposition is at
-  least as good in this respect as matrix-based SVD.  This is the only
+  least as good in this respect as matrix-based SVD
 * (truncated) Tucker decomposition of a tensor
   * n-rank R n is the rank of the vector space spanned by its mode-n fibers
   * memory-efficient MET(1) algorithm of Kolda and Sun (2008) as implemented in
     the Matlab Tensor Toolbox
-* SVD is believed to exploit patterns of higher order co-occurrence 
-  (Manning and Schütze 1999; Turney and Pantel 2010), 
+* SVD is believed to exploit patterns of higher order co-occurrence
+  (Manning and Schütze 1999; Turney and Pantel 2010),
   * row elements that co-occur with two synonymic columns get more similar
-  * capture at the same time similarities between 
-    links such as use and hold and w 2 elements such as gun and knife
-* smooth the source tensor once, 
-  whereas with SVD each matricization must be smoothed separately. However,
-  * with our current computational resources, 
-    we are not able to decompose even the smallest DM tensor 
+  * capture at the same time similarities between
+    links such as _use_ and _hold_ and w 2 elements such as _gun_ and _knife_
+* smooth the source tensor once,
+  whereas with SVD each matricization must be smoothed separately
+  * with our current computational resources,
+    we are not able to decompose even the smallest DM tensor
   * similarly, we cannot apply SVD to a full matricization
-  * full tensor decomposition is nevertheless a realistic near future task.
+  * full tensor decomposition is nevertheless a realistic near future task
     * continuous growth in computational power and
-    * efficient tensor decomposition is a very active area of research 
-      (Turney 2007; Kolda and Sun 2008) 
+    * efficient tensor decomposition is a very active area of research
+      (Turney 2007; Kolda and Sun 2008)
 * we replicated the AP concept clustering experiment described in Section 6.1.3
-  * 402 × 100 × 1, 000 with 1,318,214 non-zero entries (density: 3%).
-* results confirm that smoothing by rank reduction is beneficial 
+  * 402 × 100 × 1, 000 with 1,318,214 non-zero entries (density: 3%)
+* results confirm that smoothing by rank reduction is beneficial
   although not spectacularly so, with an improvement of about 4% for the best
-* The present pilot study suggests an attitude of cautious optimism 
-  towards tensor decomposition as a smoothing technique. At least in the AP
-  * it helps as compared to no smoothing at all. The 
+* The present pilot study suggests an attitude of cautious optimism
+  towards tensor decomposition as a smoothing technique
+  * it helps as compared to no smoothing at all
   * same conclusion is reached by Turney (2007), who uses essentially the same
 * Another use for smoothing would be to propagate “link mass” across POSs
   * e.g. noun-link-noun tuples such as `city, obj, destruction`
   * In a smoothed tensor, by the influence of tuples such as city, obj, destroy
     these tuples will get some non-0 weight that, hopefully, will make the
-    object relation between city and destruction emerge.  This is at the moment
+    object relation between city and destruction emerge
 
 # 7 Conclusion 41
 
@@ -558,7 +556,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
       generating typical properties of concepts
 2. performance on a large battery of semantic experiments
   * in nearly all test sets our best implementation of DM (TypeDM) is \ge SOTA
-  * often towards (or at) the top of the state-ofthe-art ranking
+  * often towards (or at) the top of the SOTA ranking
   * Where other models outperform TypeDM by a large margin, there are reasons
     * rivals have been trained on much larger corpora, or they rely on
       special knowledge resources, or on sophisticated machine learning algos
@@ -602,15 +600,15 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 * split for the role of supervision in DSMs
   * DM tensor from the corpus is most naturally framed as an unsupervised task,
     because the model will serve many different purposes.  On the other hand,
-    supervision can be of great help in tuning the DM data to specific tasks,
+  * supervision can be of great help in tuning the DM data to specific tasks,
     as we did with the nearest centroid appr to most non-attributional tasks
   * topic continued in the last point of this note
 * compositionality construction of meaning for constituents > words
   * traditional domains of formal semantics
   * build new bridges between corpus-based semantics and symbolic models
     (Clark and Pulman 2007; Widdows 2008)
-  * representing symbolic operations with distributed, vector-based data
-    structures (Markman 1999)
+  * representing symbolic operations with distributed, vector-based data structs
+    (Markman 1999)
   * avenues in corpus-based semantics, and interesting synergies with areas
     * neural systems (Smolensky 1990; Smolensky and Legendre 2006),
     * quantum information (Widdows and Peters 03; Aerts and Czachor 04;
@@ -619,22 +617,21 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
     * distributional representations sensitive to syntax (Erk and Padó 2008)
 * A multi-purpose, distributional semantic resource like DM can
   allow researchers to focus on the next steps of semantic modeling
-  * modulating word meaning in context (Erk & Padó 2008; Mitchell & Lapata 2008) 
+  * modulating word meaning in context (Erk & Padó 2008; Mitchell & Lapata 2008)
   * embed the distributional memory in
     QA or textual entailment or even embodied agents and robots
 * DM-style triples in semantic representation models
   (e.g., semantic networks) and knowledge-exchange formalisms such as RDF
   * integration of corpus-based information with other knowledge sources
-  * dialogue with the computational neuro-cognitive community, where it is
-    common to adopt triple-based representations of knowledge, and to use the
-    same set of tuples to simulate various aspects of cognition
+  * computational neuro-cognitive community: triple-based representations of
+    knowledge; the same set of tuples to simulate various aspects of cognition
     * extended example of this approach, see Rogers and McClelland (2004). It
       would be relatively easy to use a DM model in lieu of their neural
       network, and use it to simulate the conceptual processes they reproduce
 * once more on the split
   * acquisition phase (corpus-based tuple extraction and weighting), the
-  * declarative structure at the core of semantic modeling (the DM), and the
-  * procedural problem-solving components (possibly supervised for each sem t)
+    * declarative structure at the core of semantic modeling (the DM), and the
+  * procedural problem-solving components, possibly supervised for each sem task
   * in line with what is commonly assumed in
     cognitive science and formal linguistics, and we hope it will contribute to
     make corpus-based modeling a core part of the ongoing study of

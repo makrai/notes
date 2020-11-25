@@ -17,7 +17,7 @@ From frequency to meaning: vector space models of semantics
 ## 1.1 Motivation for VSM
 
 * Most search engines use VSMs to
-  measure the similarity between a query and a document (Manning et al., 2008)
+  measure the similarity between a query and a document (Manning+ 2008)
 * we take it as a defining property of VSMs that the values of the elements in
   a VSM must be derived from event frequencies, such as the number of times
   that a given word appears in a given context (see Section 2.6)
@@ -59,7 +59,7 @@ From frequency to meaning: vector space models of semantics
    * pair–pattern VSMs the Latent Relational Analysis module in the S-Space
      package, which also builds on Lucene
 6. applications for semantic VSMs
-   * historical view of research with semantic VSMs, beginning
+   * historical view of research with semantic VSMs
    1. information retrieval
    2. applications for word–context matrices
    3. pair–pattern matrices
@@ -161,7 +161,7 @@ From frequency to meaning: vector space models of semantics
     * Probabilistic Latent Semantic Indexing (PLSI, Hofmann, 1999),
     * Iterative Scaling (IS, Ando, 2000),
     * Kernel Principal Components Analysis (Scholkopf, Smola, Muller, 1997)
-    * Latent Dirichlet Allocation (LDA, Blei et al., 2003), and
+    * Latent Dirichlet Allocation (LDA, Blei+ 2003), and
     * Discrete Component Analysis (DCA, Buntine & Jakulin, 2006)
   * tend to be more computationally intensive than truncated SVD, but they
     attempt to model word frequencies better
@@ -258,8 +258,6 @@ broad survey of applications
 # 7. Alternative Approaches to Semantics
 
 * The applications that we list in Section 6 do not necessarily require a VSM
-  approach. For each application, there are many other possible approaches.  In
-  this section, we briefly consider a few of the main alternatives
 * measuring the semantic similarity of
   * documents and queries. The main alternatives to VSMs are prob models, i.e
     * traditional probabilistic retrieval models in information retrieval
@@ -275,7 +273,7 @@ broad survey of applications
     * similarity between two words is [] proportional to the length of the path
   * relations. As with word–context matrices, the main alternatives are
     * lexicons (Rosario & Hearst, 2001; Rosario, Hearst, & Fillmore, 2002;
-      Nastase & Szpakowicz, 2003; Veale, 2003, 2004). The idea is to
+      Nastase & Szpakowicz, 2003; Veale, 2003, 2004)
     * reduce relational similarity to attributional similarity
 
 # 8. The Future of Vector Space Models of Semantics
