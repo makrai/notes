@@ -36,7 +36,7 @@ arXiv:2005.14165 [cs.CL]
     distinguishing from articles written by humans
   * discuss broader societal impacts of this finding and of GPT-3 in general
 
-#Introduction
+# Introduction
 
 * pre-trained language representations in NLP systems, applied in increasingly
   flexible and task-agnostic ways for downstream transfer
