@@ -11,6 +11,6 @@ ACL 2019
 * [network] Modularity
   * strength of clusters  
   * moderate to strong correlation with three downstream tasks, 
-  * does not require any external resources. We show through experiments that
-  * can serve as an intrinsic validation metric ..., particularly on distant
-    language pairs in low-resource settings
+  * does not require any external resources
+  * We show through experiments that this can serve as an intrinsic validation
+    metric ..., particularly on distant language pairs in low-resource settings

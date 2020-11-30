@@ -5,9 +5,8 @@ arXiv:1402.3722
 
 # [no title]
 
-* This note is an attempt to explain equation (4) (negative sampling) in “Dis-
-  tributed Representations of Words and Phrases and their Compositionality” by
-  Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean [2].
+* This note is an attempt to explain equation (4) (negative sampling) in Mikolov
+  (2013 Distributed)
 
 ## Remarks
 

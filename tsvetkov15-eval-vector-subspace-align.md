@@ -21,7 +21,7 @@ https://github.com/ytsvetko/qvec
 * manually constructed “linguistic” word vectors
   * whose components have well-defined linguistic properties (§2)
 * our measure favors recall since
-  * vectors are typically used to provide features to downstream
+  * vectors are typically used to provide downstream features
   * intuition:
     meaningless dimensions in induced vector representations are less harmful
     than important dimensions that are missing
@@ -37,9 +37,9 @@ https://github.com/ytsvetko/qvec
 
 # 2 Linguistic Dimension Word Vectors
 
-* we exploit an existing semantic resource—SemCor (Miller et al., 1993)
+* we exploit an existing semantic resource—SemCor (Miller+ 1993)
 * we construct a set of linguistic word vectors,
-* details are given in the rest of this section;
+* details are given in the rest of this section
 * table 1 shows an example of the vectors
 * WordNet (Fellbaum, 1998, WN)
   * partitions nouns and verbs into [supersenses i.e.] coarse semantic cats

@@ -2,7 +2,7 @@ P Nakov, A Ritter, S Rosenthal, F Sebastiani… -
 SemEval-2016 task 4: Sentiment analysis in Twitter
 2016 SemEval
 
-* Few trends stand out among the participating systems. In terms of the
+* Few trends stand out among the participating systems
   * supervised learning methods used, there is
     * a clear dominance of methods based on **deep learning**, including
       convolutional neural networks and recurrent neural networks (and, in
