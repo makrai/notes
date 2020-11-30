@@ -14,9 +14,9 @@ acl 2014
 
 * relational similarities
   * using vector arithmetic on RNN-embedded vectors
-    * Mikolov et al., 2013c Linguistic, Zhila et al., 2013
+    * Mikolov+ 2013c Linguistic, Zhila+ 2013
     * from embeddings trained with different architectures
-      (Mikolov et al., 2013a Efficient; Mikolov et al., 2013b Distributed)
+      (Mikolov+ 2013a Efficient; Mikolov+ 2013b Distributed)
 * alternative: bag of contexts, explicit
   * literature
   * the explicit vector space representation as a competitive baseline
@@ -34,7 +34,7 @@ acl 2014
 * PAIRDIRECTION:
   * alternative to 3COSADD is to require that the 
     direction of transformation be conserved
-* Though it was not mentioned in the paper, Mikolov et al. (2013c) used
+* Though it was not mentioned in the paper, Mikolov+ (2013c) used
   * PAIRDIRECTION for solving the semantic analogies of the SemEval task,
   * 3COSADD for solving the syntactic analogies
 
@@ -97,6 +97,6 @@ acl 2014
 
 # 11 Discussion
 
-* contrary to the recent findings of Baroni et al. (2014), 
+* contrary to the recent findings of Baroni+ (2014), 
   under certain conditions traditional word similarities induced by explicit
   representations can pergform just as well as neural embeddings

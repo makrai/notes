@@ -8,8 +8,7 @@ mindig csak igen-nem?
 
 * hypernymy and entailment
 
-# 1 Introduction
-
+# 1 Introduction 
 
 * inference relations between two words (x and y), such as
   * causality (flu → fever)
@@ -18,14 +17,13 @@ mindig csak igen-nem?
 * methods of recognizing lexical inference
   * unsup
     * replace cosine similarity with an asymmetric similarity function 
-      (Weeds and Weir, 2003; Clarke, 2009; Kotlerman et al., 2010; 
-      Santus et al., 2014)
+      (Weeds and Weir, 2003; Clarke, 2009; Kotlerman+ 2010; Santus+ 2014)
   * sup
     * perform better
     * learn the asymmetric operator
-    * Baroni et al. (2012) use concatenation ~x ⊕ ~y
+    * Baroni+ (2012) use concatenation ~x ⊕ ~y
     * the vectors’ difference
-      (Roller et al., 2014; Weeds et al., 2014; Fu et al., 2014)
+      (Roller+ 2014; Weeds+ 2014; Fu+ 2014)
     * based on contextual features
       (Turney and Mohammad, 2014; Rimell, 2014)
     * we argue that these supervised methods memorizing 
@@ -34,10 +32,10 @@ mindig csak igen-nem?
 # 2 Experiment Setup
 
 * previously reported results
-  * we
-    * implement some
-    * observe similar trends to previously published results, and
-    * make the dataset splits available for replication
+* we
+  * implement some
+  * observe similar trends to previously published results, and
+  * make the dataset splits available for replication
 
 # 2.1 Word Representations
 
@@ -46,40 +44,39 @@ mindig csak igen-nem?
 
 # 2.1.1 Context Types
 
-  * Bag-of-Words
-    * w = 5
-    * subsampling (Mikolov et al., 2013a)
-      * to increase the impact of content words
-  * Positional w = 2
-  * Dependency
-    * (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010)
-    * the same parsing apparatus as in (Levy and Goldberg, 2014)
+* Bag-of-Words
+  * w = 5
+  * subsampling (Mikolov+ 2013a), to increase the impact of content words
+* Positional w = 2
+* Dependency
+  * (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010)
+  * the same parsing apparatus as in (Levy and Goldberg, 2014)
 
 # 2.1.2 Representation Models
 
-  * PPMI (Niwa and Nitta, 1994)
-  * SVD to k = 500
-  * Skip-grams with negative sampling (Mikolov et al., 2013b) with
-    * 500 dimensions and 5 negative samples
-    * using a modified version of word2vec that allows different
-    * context types (Levy and Goldberg, 2014)
+* PPMI (Niwa and Nitta, 1994)
+* SVD to k = 500
+* Skip-grams with negative sampling (Mikolov+ 2013b) with
+  * 500 dimensions and 5 negative samples
+  * using a modified version of word2vec that allows different
+  * context types (Levy and Goldberg, 2014)
 
 # 2.2 Labeled Datasets
 
-* (Kotlerman et al., 2010)
+* (Kotlerman+ 2010)
   * Manually annotated lexical entailment of distributionally similar nouns
 * (Baroni and Lenci, 2011) a.k.a. BLESS
   * unambiguous word pairs and their semantic relations from WordNet
   * negative
-    * Following Roller et al. (2014)
+    * Following Roller+ (2014)
     * meronyms, noun cohyponyms, and random noun pairs as negative
-* (Baroni et al., 2012)
+* (Baroni+ 2012)
   * like BLESS
   * Hypernym ... permutated to generate negative examples
 * (Turney and Mohammad, 2014)
   * Based on a crowd-sourced dataset of 79 semantic relations
-    (Jurgens et al., 2012)
-* (Levy et al., 2014)
+    (Jurgens+ 2012)
+* (Levy+ 2014)
   * Based on manually annotated entailment graphs of
   * subject-verb-object tuples (propositions)
   * Noun entailments were extracted from entailing tuples that were
@@ -89,9 +86,9 @@ mindig csak igen-nem?
 # 2.3 Supervised Methods
 
 * 4 compositions for representing (x, y) as a feature vector:
-  * concat (~x ⊕~y ) (Baroni et al., 2012)
+  * concat (~x ⊕~y ) (Baroni+ 2012)
   * diff (~y − ~x )
-    * (Roller et al., 2014; Weeds et al., 2014; Fu et al., 2014)
+    * (Roller+ 2014; Weeds+ 2014; Fu+ 2014)
   * only x (~x ), and
   * only y (~y )
 * classifiers
@@ -107,7 +104,7 @@ mindig csak igen-nem?
 
 * Lexical Memorization
   * y = animal
-  * Similar findings ... by Roller et al. (2014) and Weeds et al. (2014)
+  * Similar findings ... by Roller+ (2014) and Weeds+ (2014)
   * Table 2
   * in our following experiments, we split each dataset into train and test
     ... with zero lexical overlap
@@ -117,7 +114,7 @@ mindig csak igen-nem?
     * outperforms all supervised methods in 2 out of 5 datasets
   * Ignoring x’s Information
     * difference in performance is less than 5 points
-    * Weeds et al. (2014) reported a similar result
+    * Weeds+ (2014) reported a similar result
   * Table 3
 
 # 4 Prototypical Hypernyms
