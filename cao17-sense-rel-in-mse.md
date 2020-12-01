@@ -25,8 +25,8 @@ licj17@mail.tsinghua.edu.cn
 # Introduction
 
 * Pervious work mostly focus on using clustering to induce word senses 
-  (Reisinger and Mooney, 2010; Huang et al., 2012; Tian et al., 2014;
-  Neelakantan et al., 2014; Li and Jurafsky, 2015)
+  (Reisinger and Mooney, 2010; Huang+ 2012; Tian+ 2014;
+  Neelakantan+ 2014; Li and Jurafsky, 2015)
   * limitations arise in the usage of hard clustering
   * data sparsity
 * we learn the embedding vectors of the word senses 
@@ -65,32 +65,32 @@ licj17@mail.tsinghua.edu.cn
 ## 3.3 Relationship with State-of-the-art Methods
 
 * FCSE-1 will degrade to hard assignment if we set upper = 0, which is 
-  similar with the NPMSSG model in (Neelakantan et al., 2014).
+  similar with the NPMSSG model in (Neelakantan+ 2014).
 * if we set e = 0, the second sample for the extended meanings has been turned
   off, and then FCSE-2 degrades to the SG+ model in (Li and Jurafsky, 2015),
 
 # 5 Related Work
 
 * Multi-prototype word embedding 
-  * Chen et al., 2014
+  * Chen+ 2014
     * Xinxiong Chen, Zhiyuan Liu, and Maosong Sun. 2014.  
       A unified model for word sense representation and disambiguation
       2014 EMNLP
-  * Cao et al., 2017 ACL
-  * Liu et al., 2015 AAAI Topical word embeddings 
+  * Cao+ 2017 ACL
+  * Liu+ 2015 AAAI Topical word embeddings 
   * Reisinger and Mooney, 2010
-  * Huang et al., 2012
-  * Tian et al., 2014
-  * Neelakantan et al., 2014
+  * Huang+ 2012
+  * Tian+ 2014
+  * Neelakantan+ 2014
   * Li and Jurafsky, 2015
 * They can be roughly divided into three groups
   * clustering based methods. As described in Section 1 
-  * topics to represent different word senses, such as (Liu et al., 2015)
+  * topics to represent different word senses, such as (Liu+ 2015)
     * it is difficult to determine the number of topics
   * external knowledge (i.e. knowledge bases) to induce word/phrase senses.
-    * Chen et al., (2014) jointly represents and disambiguates the word sense
+    * Chen+ (2014) jointly represents and disambiguates the word sense
       on the basis of the synsets in WordNet.  
-    * Cao et al., (2017) regards entities in KBs as word/phrase senses, and
+    * Cao+ (2017) regards entities in KBs as word/phrase senses, and
       first learn word/phrase and sense embeddings separately, then align them
       via Wikipedia anchors
       * fails to deal with the words that are not included in knowledge bases

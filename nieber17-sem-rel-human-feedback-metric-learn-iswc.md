@@ -12,7 +12,7 @@ such as word similarity
   or query expansion. To accomplish this in an automated fashion, many
 * we propose to utilize a metric learning approach 
   to improve existing semantic relatedness measures 
-  by learning from ... [WordSim-353]. For this, we argue to 
+  by learning from ... [WordSim-353]
 * use word embeddings instead of traditional high-dimensional vectors
 * test our approach on several domains including 
   tagging data, ?, and navigation

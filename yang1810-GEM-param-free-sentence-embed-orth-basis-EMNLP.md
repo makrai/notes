@@ -28,7 +28,7 @@ EMNLP-IJCNLP 2019
 * Sent2Vec, (Pagliardini+ 2018) unsupervised model:
   * n-gram feature in a sentence to predict the center word from the
     surrounding context
-* Quick thoughts (QT) (Logeswaran and Lee, 2018) replaces the encoder with
+* Quick thoughts (QT, Logeswaran and Lee, 2018) replaces the encoder with
   a classifier to predict context sentences from candidate sequences
 * à la carte Khodak+ (2018) proposes to learn a linear mapping to
   reconstruct the center word from its context
@@ -96,7 +96,7 @@ EMNLP-IJCNLP 2019
 
 ## 2.4 Corpus-wise Uniqueness
 
-* Similar to the idea of inverse document frequency (IDF) (Sparck Jones, 1972),
+* Similar to the idea of inverse document frequency (IDF, Sparck Jones, 1972),
 * we compute the principal directions of the corpus and then
   measure their alignment with the novel orthogonal basis vector q i
 
@@ -143,15 +143,15 @@ EMNLP-IJCNLP 2019
 
 * nine supervised tasks, including
   * seven classification tasks:
-    * movie review (MR) (Pang and Lee, 2005)
-    * Stanford Sentiment Treebank (SST) (Socher+ 2013)
-    * question-type classification (TREC) (Voorhees and Dang, 2003)
-    * opinion polarity (MPQA) (Wiebe+ 2005)
-    * product reviews (CR) (Hu and Liu, 2004)
-    * subjectivity/objectivity classification (SUBJ) (Pang and Lee, 2004) and
-    * paraphrase identification (MRPC) (Dolan+ 2004)
+    * movie review (MR, Pang and Lee, 2005)
+    * Stanford Sentiment Treebank (SST, Socher+ 2013)
+    * question-type classification (TREC, Voorhees and Dang, 2003)
+    * opinion polarity (MPQA, Wiebe+ 2005)
+    * product reviews (CR, Hu and Liu, 2004)
+    * subjectivity/objectivity classification (SUBJ, Pang and Lee, 2004) and
+    * paraphrase identification (MRPC, Dolan+ 2004)
   * two entailment and semantic relatedness tasks:
-    SICK similarity (SICK-R) and the SICK entailment (SICK-E) (Marelli+ 2014)
+    SICK similarity (SICK-R) and the SICK entailment (SICK-E, Marelli+ 2014)
 * The sentence embeddings generated are fixed and only the downstream
   task-specific neural structure is learned
   * classification tasks, a linear classifier is trained on top, following
@@ -161,7 +161,8 @@ EMNLP-IJCNLP 2019
 * compares favorably with most of parameterized models, including
   * à la carte (Khodak+ 2018)
   * FastSent (Hill+ 2016)
-  * InferSent, QT, Sent2Vec, SkipThought-LN (with layer normalization) (Kiros+ 2015)
+  * InferSent, QT, Sent2Vec, SkipThought-LN 
+    (with layer normalization, Kiros+ 2015)
   * SDAE (Hill+ 2016)
   * STN (Subramanian+ 2018) and
   * USE (Yang+ 2018)

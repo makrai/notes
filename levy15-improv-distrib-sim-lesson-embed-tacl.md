@@ -16,8 +16,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
 * hyperparameters
 * In this work, we make these hyperparameters explicit, and show how they can
   be adapted and transferred into the traditional count-based approach
-* changing the setting of a single hyperparameter yields a greater increase in
-  performance
+* changing the setting of a single hyperparameter yields more
   than switching to a better algorithm or training on a larger corpus
 
 # 2 Background
