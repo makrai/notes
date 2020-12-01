@@ -4,10 +4,10 @@ Manaal Faruqui, Yulia Tsvetkov, Pushpendre Rastogi, Chris Dyer
 # 1 Introduction
 
 * The origin of word similarity tasks
-  * Rubenstein and Goodenough (1965) who constructed a list of 65 word pairs
-    with annotations of human similarity judgment. They created this dataset to
-    validate the veracity of the distributional hypothesis (Harris, 1954)
-    * They found a positive correlation between contextual similarity and
+  * Rubenstein and Goodenough (1965) constructed a list of 65 word pairs with
+    annotations of human similarity judgment
+    to validate the veracity of the distributional hypothesis (Harris, 1954)
+  * They found a positive correlation between contextual similarity and
       human-annotated similarity of word pairs
 
 # 2 Problems
