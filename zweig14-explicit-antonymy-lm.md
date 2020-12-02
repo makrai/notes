@@ -7,18 +7,17 @@ Explicit Representation of Antonymy in Language Modeling
 # 1 Introduction
 
 * Continuous space word representations [for]  machine translation 
-  (Auli et al., 2013; Kalchbrenner and Blunsom, 2013; Son et al., 2012; 
-  Schwenk et al., 2006)
+  (Auli+ 2013; Kalchbrenner and Blunsom, 2013; Son+ 2012; Schwenk+ 2006)
 * Previous approaches cannot distinguish between words like “hot” and “cold”
   because they are distributionally similar
 
 # 2 Related Work
 
-* More recently [than Mikolov et al 2013 Efficient...], Lebret et al. (2013)
+* More recently [than Mikolov+ 2013 Efficient...], Lebret+ (2013)
   show that good representations can be learned with a fairly simple
   cooccurrence model
 * vector offset method: unit vectors
-* in learning antonyms, [...] the work of Yih et al. (2012) is closest to ours
+* in learning antonyms, [...] the work of Yih+ (2012) is closest to ours
 * utolsó két mondatothoz lás még 3.3 első bekezdését is
 
 # 3 Model
@@ -29,7 +28,7 @@ Explicit Representation of Antonymy in Language Modeling
 * jól le van írva a Log Bilinear Model
 * 3.2 Maximum Entropy Features
   * maximum entropy features [are] an effective addition to a continuous space
-    language model (Mikolov et al., 2011a)
+    language model (Mikolov+ 2011a)
 * 3.3 Modeling Antonymy
   * semantic regularization
 

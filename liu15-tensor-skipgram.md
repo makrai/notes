@@ -20,8 +20,7 @@ nem találtam kódot http://nlp.fudan.edu.cn/
 
 * distributed representations are widely used for NLP tasks, such as
   * syntax [Turian+ 2010; Collobert+ 2011; Mnih...]
-  * semantics [Socher+ 2012]
-    * Semantic compositionality through recursive matrix-vector spaces
+  * semantics [Socher+ 2012] Sem compos through recursive matrix-vector 
   * morphology [Luong+ 2013]
     * Better ... with recurive neural networks for morphology
 * adress ambig

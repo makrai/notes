@@ -10,7 +10,7 @@ ICLR 2017
 * improves performance by about 10% to 30% in textual similarity tasks, and
   beats sophisticated supervised methods
   including RNN’s and LSTM’s [and] Wieting+ (ICLR 16)
-* theoretical explanation ... using a latent variable generative model
+* theoretical explanation using a latent variable generative model
   * a simple extension of the model in Arora+ (TACL’16)
     with new “smoothing” terms that allow for words occurring out of context,
     as well as high probabilities for [function] words in all contexts
@@ -18,12 +18,12 @@ ICLR 2017
 # 1 Intro
 
 * embeddings that capture the semantics of word sequences
-  * Iyyer+ 2015 Deep unordered composition ...  for text classification
+  * Iyyer+ 2015 Deep unordered composition  for text classification
   * Le & Mikolov, 2014
   * Kiros+ NIPS 2015 Skip-thought vectors
-  * Socher+ 2011 ... recursive autoencoders for paraphrase detection
+  * Socher+ 2011: recursive autoencoders for paraphrase detection
   * Blunsom+ ACL 2014 A convolutional neural network for modelling sentences
-  * Tai+ 2015 ... from tree-structured long short-term memory networks
+  * Tai+ 2015 from tree-structured long short-term memory networks
   * Wang+ 2016 Conceptual sentence embeddings based on attention model
 * Wieting+ (2016) learned general-purpose, paraphrastic sentence embeds
   * starting with standard word embeddings and
@@ -43,25 +43,25 @@ ICLR 2017
   * well-suited for domain adaptation settings
 * highly reminiscent of TF-IDF (Sparck Jones, 1972; Robertson, 2004)
   if one treats a “sentence” as a “document” and make[s]
-  the ... assumption that the sentence doesn’t typically contain repeated words
+  the assumption that the sentence doesn’t typically contain repeated words
   * related idea [is] removing frequent words from the vocabulary
 * theoretical justification for the reweighting using a generative model
   * simple modification for the Random Walk on Discourses model (Arora+ 2016)
   * modif[ication] motivated by [that
     word embedding methods give] large vectors to frequent words
 * [anisotropy]
-  * most word embedding methods ... seek to capture word cooccurence probs
+  * most word embedding methods seek to capture word cooccurence probs
   * end up giving 
     * large vectors to frequent words, as well as giving 
     * unnecessarily large inner products to word pairs, 
-      to fit ... that words sometimes occur out of context in documents. These
+      to fit that words sometimes occur out of context in documents. These
     * word vectors to have huge components along semantically meaningless dir
 * better (by a few percent points) than traditional TF-IDF
 * similarity to CBOW 
   * CBOW also does not use simple average, as misleadingly suggested
   * implementation shows it implicitly uses a weighted average
     * different from TF-IDF
-    * quite similar ... to ours (See Section 3.1.)
+    * quite similar to ours (See Section 3.1.)
 
 # 2 Related work
 
@@ -86,14 +86,14 @@ ICLR 2017
   * with supervision (Socher+ 2011) or
   * without (Socher+ 2014)
 * RNNs [For example, the skip-gram model] is extended
-* In Le & Mikolov, (2014) each paragraph ... have a latent paragraph vector,
+* In Le & Mikolov, (2014) each paragraph have a latent paragraph vector,
   which influences the distribution of the words in the paragraph
 * Skip-thought (Kiros+ 2015) tries to reconstruct the surrounding sentences
   * treats the hidden parameters as their vector representations
-* LSTM ... for modeling sentences (Tai+ 2015)
+* LSTM for modeling sentences (Tai+ 2015)
 * convolution neural networks, such as (Blunsom+ 2014)
   * do well in sentiment prediction and classification tasks
-* The directed inspiration for our work is (Wieting+ 2016) which learned
+* The directed inspiration for our work is Wieting+ (2016) which learned
   paraphrastic sentence embeddings by using simple word averaging and also
   updating standard word embeddings based on supervision from paraphrase pairs;
   the supervision being used for both initialization and training
@@ -101,7 +101,7 @@ ICLR 2017
 # 3 A simple method for sentence embedding 3
 
 * We briefly recall the latent variable generative model (Arora+ 2016)
-  * sentence embedding as ... a MAP estimate of the discourse vectors
+  * sentence embedding as a MAP estimate of the discourse vectors
   * the MAP estimate of `c_s` is —up to multiplication by scalar—
     the average of the embeddings of the words in the sentence
 * we [add] two types of “smoothing term[s]”
@@ -136,7 +136,7 @@ ICLR 2017
 
 ### Datasets
 
-* 22 textual similarity datasets ... from SemEval
+* 22 textual similarity datasets from SemEval
   semantic textual similarity (STS) tasks (12-15) (Agirre+ 12; 13; 14; 15),
   SemEval 2015 Twitter task (Xu+ 2015), and the
   SemEval 2014 Semantic Relatedness task (Marelli+ 2014)
@@ -147,7 +147,7 @@ ICLR 2017
   * skip-thought vectors (Kiros+ 2015),
   * avg-GloVe denotes the unweighted average of the GloVe vectors, and
   * tfidf-GloVe denotes the weighted average of GloVe vectors
-2. Semi-supervised: avg-PSL ... uses the unweighted average of the
+2. Semi-supervised: avg-PSL uses the unweighted average of the
    PARAGRAM-SL999 (PSL) word vectors from (Wieting+ 2015)
   * word vectors are trained using labeled data, but the
     sentence embedding are computed by unweighted average without training
@@ -161,7 +161,7 @@ ICLR 2017
     iRNN denotes a variant with the activation being the identity, and the
     weight matrices initialized to identity. The
   * LSTM is the version from (Gers+ 2002),
-    either with output gates (denoted as LSTM(o.g.)) or without (... LSTM (no))
+    either with output gates (denoted as LSTM(o.g.)) or without (LSTM (no))
 
 * The weighting parameter a is fixed to 10^-3
 
@@ -212,7 +212,7 @@ ICLR 2017
 * We trained and tested RNN/LSTM on the supervised tasks where the
   words in each sentence are randomly shuffled
   * performance drops noticeably
-  * future direction is to explore ... some ensemble idea
+  * future direction is to explore some ensemble idea
 
 # Appendix A details of experimental setting 13
 
@@ -222,7 +222,7 @@ ICLR 2017
 
 ### Detailed experimental results
 
-### Effects of smooth inverse frequency and common component removal ... separat
+### Effects of smooth inverse frequency and common component removal separat
 
 ## Supervised tasks
 

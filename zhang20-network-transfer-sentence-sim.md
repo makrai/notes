@@ -1,4 +1,4 @@
-Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Sim
+Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Similarity
 Li Zhang, Steven R. Wilson, Rada Mihalcea
 arXiv:1804.07835 [cs.CL]
 
@@ -34,7 +34,7 @@ arXiv:1804.07835 [cs.CL]
 * class of competent sentence encoders is based on
   * transformers (Vaswani+ 2017).  While the transformer-based encoders have
     * currently claimed stateof-the-art performance on the semantic similarity
-  * LSTM (Hochreiter and Schmidhuber, 1997), while another is based on
+  * LSTM (Hochreiter and Schmidhuber, 1997)
     * we focus on [LSTM] due to the small size of their parameters and
       robustness to hyperparameter selection
     * usually consist of two components: a
@@ -60,7 +60,7 @@ arXiv:1804.07835 [cs.CL]
     * improved results on the STS Benchmark (Cer+ 2017) and the
       Human Activity Phrase dataset (Wilson and Mihalcea, 2017), outperforming
   2. we compare a range of settings for semantic similarity using some of the
-     best LSTM-based sentence encoders across an array of datasets, showing
+     best LSTM-based sentence encoders across an array of datasets
      * the choice of transfer learning settings generally greatly influences
   3. we release the pre-trained and fine-tuned LSTM models to the public, which
      can easily be used for downstream tasks related to semantic similarity
@@ -143,7 +143,7 @@ arXiv:1804.07835 [cs.CL]
   * Infersent (Conneau+ 2017): a
     bi-directional LSTM with max pooling
     trained on the Stanford Nat Lang Inference (SNLI) dataset (Bowman+ 2015)
-  * Gated Recurrent Averaging Network (GRAN) (Wieting and Gimpel, 2017b): a
+  * Gated Recurrent Averaging Network (GRAN, Wieting and Gimpel, 2017b): a
     paraphrastic compositional model that combines LSTM and averaging word
     embeddings,
     trained on sentence pairs obtained by aligning Simple English to standard
@@ -191,5 +191,5 @@ arXiv:1804.07835 [cs.CL]
   * Additionally, we systematically explored specific changes that can be made
     to the transfer settings and discussed how
 * this work only compares models based on LSTM, which has been a typical choice
-  * exploring if direct network transfer also performs well when transferring
-  to them and to new datasets and domains
+  * exploring if direct network transfer also performs well when transferring to
+    them and to new datasets and domains

@@ -1,5 +1,5 @@
 Massively Multilingual Word Embeddings
-W  Ammar, G  Mulcaire, Y Tsvetkov, Guillaume Lample, Chris Dyer, Noah A Smith 
+W Ammar, G Mulcaire, Y Tsvetkov, Guillaume Lample, Chris Dyer, Noah A Smith 
 acl 2016
 
 # Abstract
@@ -8,7 +8,7 @@ acl 2016
   multiCluster and multiCCA, 
 * data
   * pairwise parallel dictionaries,
-    * To do this, we align the corpus using fast align (Dyer et al., 2013) in
+    * To do this, we align the corpus using fast align (Dyer+ 2013) in
       both directions.  The estimated parameters of the word translation
       distributions are used to select pairs
       * threshold τ trades off dictionary recall and precision. We fixed τ =
@@ -24,16 +24,14 @@ acl 2016
 # Introduction
 
 * shared representation of words across languages offers intriguing
-  possibilities (Klementiev et al., 2012).  
+  possibilities (Klementiev+ 2012).  
 * For example, in machine translation, translating a word never seen in
   parallel data may be overcome by seeking its vector-space neighbors, 
 * transfer learning, in which models trained in one language can be deployed
   in other languages.  While 
   * hand-engineered features that are cross-linguistically stable as the basis
-    model transfer (Zeman and Resnik, 2008; McDonald et al., 2011; Tsvetkov et
-    al., 2014),
-  * embedding (Klementiev et al., 2012; Hermann and Blunsom, 2014; Guo et al.,
-    2016).  
+    model transfer (Zeman and Resnik, 2008; McDonald+ 2011; Tsvetkov+ 2014),
+  * embedding (Klementiev+ 2012; Hermann and Blunsom, 2014; Guo+ 2016).  
 * We ...  massively multilingual word embeddings (i.e., embeddings for words
   in a large number of languages)
  
@@ -43,9 +41,9 @@ acl 2016
   (i) semantically similar words in the same language are nearby, 
   (ii) translationally equivalent words in different languages are nearby, and 
   (iii) the domain of the function covers as many words in V as possible.
-* our baselines: a variant of Coulmance et al. (2015) and Guo et al. (2016)
+* our baselines: a variant of Coulmance+ (2015) and Guo+ (2016)
   (henceforth referred to as multiSkip), and the translation-invariance
-  matrix factorization method (Gardner et al., 2015).
+  matrix factorization method (Gardner+ 2015).
 
 ## MultiCluster
 
@@ -86,9 +84,9 @@ acl 2016
  
 ## 2.3 MultiSkip
 
-* Luong et al. (2015b) proposed a method for estimating bilingual embeddings
+* Luong+ (2015b) proposed a method for estimating bilingual embeddings
   * only makes use of parallel data;
-  * extends the skipgram model of Mikolov et al. (2013a)
+  * extends the skipgram model of Mikolov+ (2013a)
     * distribution can be estimated using ... noise contrastive estimation
       (Gutmann and Hyvärinen, 2012)
   * bilingual contexts come from aligned words.
@@ -97,7 +95,7 @@ acl 2016
 
 ## 2.4 Translation-invariance
 
-* Gardner et al. (2015) proposed that multilingual embeddings should be
+* Gardner+ (2015) proposed that multilingual embeddings should be
   translation invariant. Consider a 
 * mxs 
   * X ∈ R |V|×|V| which summarizes the pointwise mutual information statistics
@@ -105,13 +103,13 @@ acl 2016
     * UV ⊤ be a low-rank decomposition of X where U, V ∈ R |V|×d
   * A ∈ R |V|×|V| which summarizes bilingual alignment frequencies in a
     parallel corpus.  
-* Gardner et al. (2015) solves for a low-rank decomposition UV ⊤ which 
+* Gardner+ (2015) solves for a low-rank decomposition UV ⊤ which 
   approximates X as well as its transformations A ⊤ X, XA and A ⊤ XA
 * multilingual embeddings are then taken to be the rows of the matrix U.
 
 # 3 Evaluating Multilingual Embeddings
 
-* Multi QVEC-CCA extends QVEC (Tsvetkov et al., 2015), a recently proposed
+* Multi QVEC-CCA extends QVEC (Tsvetkov+ 2015), a recently proposed
   monolingual evaluation method, addressing fundamental flaws and extending it
   to multiple languages.
 
@@ -120,10 +118,9 @@ acl 2016
 * focuses on monolingual word similarity to evaluate embeddings (e.g., Faruqui
   and Dyer, 2014)
 * we report results on an 
-  * English word similarity task, the Stanford RW dataset (Luong et al.,
-    2013), as well as 
+  * English word similarity task, the Stanford RW dataset (Luong+ 2013)
   * a combination of several cross-lingual word similarity datasets
-    (Camacho-Collados et al., 2015).
+    (Camacho-Collados+ 2015).
 
 ## Word translation
 
@@ -131,7 +128,7 @@ acl 2016
 
 * an improvement of QVEC —a monolingual evaluation based on alignment of
   embeddings to a matrix of features extracted from a linguistic resource
-  (Tsvetkov et al., 2015).
+  (Tsvetkov+ 2015).
 * QVEC
   * linguistic matrix S ∈ R P×N is constructed from a semantic database, with
     a column vector for each word. Each word vector is a distribution of the
@@ -146,7 +143,7 @@ acl 2016
   * weaknesses. First, it is 
     * not invariant to linear transformations of the embeddings’ basis,
       whereas the bases in word embeddings are generally arbitrary (Szegedy
-      et al., 2014)
+     + 2014)
     * the more dimensions in the embedding matrix the higher the score
 * QVEC-CCA
   * CCA finds two sets of basis vectors, one for X ⊤ and the other for S ⊤ ,
@@ -157,17 +154,17 @@ acl 2016
         de ettől még előnyben részesítheti a nagyobb dimenziót
 * linguistic [mx for] multilingual evaluations
   * supersense tag annotations for 
-    * English (Miller et al., 1993)
-    * Danish (Martı́nez Alonso et al., 2015; Martínez Alonso et al., 2016) 
-    * Italian (Montemagni et al., 2003).
+    * English (Miller+ 1993)
+    * Danish (Martı́nez Alonso+ 2015; Martínez Alonso+ 2016) 
+    * Italian (Montemagni+ 2003).
 
 ## Extrinsic tasks
 
 * multilingual document classification and multilingual dependency parsing.
-  For document classification, we follow Klementiev et al. (2012) in using the
+  For document classification, we follow Klementiev+ (2012) in using the
   RCV corpus of newswire text, and train a classifier which differentiates
   between four topics.
-* dependency parsing, we train the stack-LSTM parser of Dyer et al. (2015) on
+* dependency parsing, we train the stack-LSTM parser of Dyer+ (2015) on
   a subset of the languages in the universal dependencies v1.1, 6 and test on
   the same languages, reporting unlabeled attachment scores. We remove all
   part-of-speech and morphology features from the data, and prevent the model
@@ -187,10 +184,9 @@ acl 2016
 # 6 Related Work
 
 * bilingual embeddings, including work on machine translation 
-  (Zou et al., 2013; Hermann and Blunsom, 2014; Cho et al., 2014; Luong et
-  al., 2015b; Luong et al., 2015a, inter alia)
-* crosslingual dependency parsing (Guo et al., 2015; Guo et al., 2016), and
+  (Zou+ 2013; Hermann and Blunsom, 2014; Cho+ 2014; Luong+ 2015b; Luong+ 2015a)
+* crosslingual dependency parsing (Guo+ 2015; Guo+ 2016), and
 * cross-lingual document classification 
-  (Klementiev et al., 2012; Gouws et al., 2014; Kociskỳ et al., 2014)
+  (Klementiev+ 2012; Gouws+ 2014; Kociskỳ+ 2014)
 
 # 7 Conclusion

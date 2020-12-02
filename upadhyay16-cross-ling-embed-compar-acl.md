@@ -103,10 +103,10 @@ in the matrices are translations of each other
 
 # 4 Evaluation
 
-* These tasks have been used in previous works (Klementiev+ 2012; Luong
- + 2015; Vulić and Moens, 2013a; Guo+ 2015) for evaluating
-  cross-lingual embeddings, but no comparison exists which uses them in
-  conjunction
+* These tasks have been used in previous works 
+  (Klementiev+ 2012; Luong+ 2015; Vulić and Moens, 2013a; Guo+ 2015) 
+  for evaluating cross-lingual embeddings, but 
+  no comparison exists which uses them in conjunction
 * all models are trained with embeddings of size 200. We provide all models
   with parallel corpora, irrespective of their requirements
 

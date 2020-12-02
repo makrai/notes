@@ -47,16 +47,15 @@ Computational Linguistics and Deep Learning
   sharing that occurs within deep representations
 * the system devel process
   * The researcher defines a model architecture and a top-level loss function
-  * and then both the parameters and the representations of the model
-  * self-organize so as to minimize this loss, in an end-to-end learning
-  * framework
+  * parameters and the representations of the model self-organize so as to
+    minimize this loss, in an end-to-end learning framework
   * We are starting to see the power of such deep systems in
     * recent work in neural machine translation
       * Sutskever, Vinyals, and Le 2014;
-      * Luong et al.  2015
-        * Luong, Minh-Thang, Ilya Sutskever, Quoc V.  Le, Oriol Vinyals,
-        * and Wojciech Zaremba.  2015
-        * Addressing the rare word problem in neural machine translation
+      * Luong+ 2015
+        MT Luong, I Sutskever, Quoc V Le, Oriol Vinyals, and Wojciech Zaremba.
+        Addressing the rare word problem in neural machine translation
+        2015
 * compositionality in models,
 
 # 5. Scientific Questions That Connect Computational Linguistics and Deep
@@ -71,8 +70,8 @@ Computational Linguistics and Deep Learning
   linguistic variation
 * and change
   * Sagi, Kaufmann, and Clark (2011)—actually
-  * Kulkarni et al. (2015)
-  * Kim et al. (2014)
+  * Kulkarni+ (2015)
+  * Kim+ (2014)
 * past tense debate
   * arguing against the adequacy of neural networks for rule-governed
     linguistic behavior was the foundation for the rise to fame of Steve

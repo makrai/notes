@@ -8,7 +8,7 @@ Submitted on 26 Sep 2016
 
 # Introduction
 
-* In practice ... NMT systems used to be worse in accuracy than phrase-based
+* In practice NMT systems used to be worse in accuracy than phrase-based
   translation systems, especially when training on very large-scale datasets
   as used for the very best publicly available translation systems
   * responsible for this gap:
@@ -38,9 +38,9 @@ Submitted on 26 Sep 2016
     comparing _hypotheses of different lengths_ during decoding, and a
   * _coverage penalty_ to encourage the model to translate all of the provided
     input
-* results comparable to or better than previous state-of-the-art systems on
-  standard benchmarks, while delivering great improvements over Google’s
-  phrase-based production translation system. Specifically, on
+* results comparable to or better than previous SOTA systems, while delivering
+  great improvements over Google’s phrase-based production translation system.
+  Specifically, on
   * WMT’14 English-to-French, our single model scores 38.95 BLEU, an
     * improvement of 7.5 BLEU from a single model without an external
       alignment model reported in [30] and an
@@ -75,16 +75,15 @@ Submitted on 26 Sep 2016
   * use of a joint language model to learn phrase representations [13]
   * Other proposed approaches for learning phrase representations [7] or
   * end-to-end translation with neural networks [23]
-* end-to-end learning for machine translation ... in the past (e.g., [8])
+* end-to-end learning for machine translation in the past (e.g., [8])
   * seminal papers in the area [39, 2]
-  * Perhaps the first ... surpassing phrase-based translation was ...  [30]
+  * Perhaps the first surpassing phrase-based translation was [30]
 * Since then, many novel techniques have been proposed
   * attention mechanism to deal with rare words [36]
   * coverage [40],
-  * multi-task and semi-supervised training to incorporate more data [14,
-    28], a
-  * character decoder [9], a character encoder [11], subword units
-    [37] also to deal with rare word outputs,
+  * multi-task and semi-supervised training to incorporate more data [14, 28], a
+  * character decoder [9], a character encoder [11], subword units [37] also 
+    to deal with rare word outputs,
   * different kinds of attention mechanisms [29], and
   * sentence-level loss minimization [38, 33]
     * [33] Ranzato, M., Chopra, S., Auli, M., and Zaremba, W
@@ -105,11 +104,11 @@ Submitted on 26 Sep 2016
   * an encoder network, a decoder network, and an
     * for NMT systems to achieve good accuracy, both the encoder and decoder
       RNNs have to be deep enough to capture subtle irregularities in the
-      source and target languages. This observation is similar to
-      * previous observations that _deep LSTMs_ significantly outperform shallow
-        LSTMs [39].  In that work, each additional layer reduced perplexity by
-        nearly 10%.  Similar to [30], we use a deep stacked Long Short Term
-        Memory (LSTM) [22] network
+      source and target languages
+      * similar previous observations: _deep LSTMs_ significantly outperform
+        shallow LSTMs [39].  In that work, each additional layer reduced
+        perplexity by nearly 10%.  Similar to [30], we use a deep stacked Long
+        Short Term Memory (LSTM) [22] network
   * attention network
 
 
@@ -117,7 +116,6 @@ Submitted on 26 Sep 2016
 
 * exploding and vanishing gradient problems [32, 21]
 * Motivated by [20], we introduce residual connections among the LSTM layers
-  in a stack
 
 ## Bi-directional Encoder for First Layer
 

@@ -25,8 +25,8 @@ acl 2014
   * dense vectors that are derived by various training methods inspired from
     neural-network LM (Bengio+ 2003; Collobert and Weston, 2008;
     Mnih and Hinton, 2008; Mikolov+ 2011; Mikolov+ 2013b)
-    * have been shown to perform well across a variety of tasks (Turian+ 
-      2010; Collobert+ 2011; Socher+ 2011; Al-Rfou+ 2013)
+    * have been shown to perform well across a variety of tasks 
+      (Turian+ 2010; Collobert+ 2011; Socher+ 2011; Al-Rfou+ 2013)
 * In this work, we generalize the SKIP-GRAM model [to arbitrary] contexts
   * syntactic contexts that are derived from ... dependency parse-trees
   * following work in sparse vector-space models

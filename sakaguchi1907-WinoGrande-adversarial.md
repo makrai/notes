@@ -81,21 +81,21 @@ arXiv:1907.10641 [cs.CL]
   Goldberg 2018). 
   * Belinkov+ (2019) propose an adversarial removal technique for NLI which
 
-## Assessment of AfLite We assess the impact of AfLite relative to 
+## Assessment of AfLite
 
-* two baselines: random data reduction and PMI-based filtering. In random data
+* two baselines: random data reduction and PMI-based filtering
   * Technically, we first pre-computed PMI between a word and the label y = 1
-    following a method proposed by Gururangan+ (2018). The 
-  * sum of PMI value of each token in a given sentence indicates the
+    following a method proposed by Gururangan+ (2018)
+  * sum of PMI value of each token in a given sentence
 
-## What bias has been actually detected by AfLite ? Is the bias really spurious
+## What bias has been actually detected by AfLite?
 
 * Table 2 presents examples that AfLite has detected as a dataset-specific bias.
 * first two twins, where the sentiment between the answer option and the target
   pronoun are highly correlated. In other words, these problems can be easily
   * structural rather than at the token level, 
     * unlike that identified in the literature (Gururangan+ 2018; Poliak+ 2018),
-    * hard to detect using heuristics such as lexical PMI-filtering.  Instead of
+    * hard to detect using heuristics such as lexical PMI-filtering
 * We also release 31k problems that are filtered out by AfLite for additional
   training set (§4) and resource (§5), resulting in a total number of problems
   in WinoGrande all to be 43,972

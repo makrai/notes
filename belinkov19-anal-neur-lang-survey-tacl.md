@@ -61,10 +61,10 @@ TACL Volume 7, 2019 p.49-72
     * word representations that reflect lexical and syntactic categories
 * (Harris, 1990; Niklasson and Linåker, 2000; Pollack, 1990; Frank+ 2013)
 * Elman introduced methods
-  * from visualizing network activations in time, through
-    clustering words by hidden state activations, to
-    projecting representations to dimensions that emerge as capturing
-    properties like sentence number or verb valency
+  * visualizing network activations in time, through
+  * clustering words by hidden state activations, to
+  * projecting representations to dimensions that emerge as capturing properties
+    like sentence number or verb valency
 
 # 2 What Linguistic Information Is Captured in Neural Networks?
 
@@ -126,8 +126,8 @@ TACL Volume 7, 2019 p.49-72
 
 * word embeddings, RNN hidden states or gate activations, sentence embeddings,
   and attention weights in sequence-to-sequence (seq2seq) models. Generally
-* less work has analyzed convolutional NNs in NLP, but see Jacovi+
-  (2018) for a recent exception
+* less work has analyzed convolutional NNs in NLP, 
+  but see Jacovi+ (2018) for a recent exception
 * speech processing, researchers have analyzed layers in deep NNs
   for speech recognition and different speaker embeddings. Some analysis has
 * joint language–vision or audio–vision models, or to similarities between word
@@ -136,7 +136,7 @@ TACL Volume 7, 2019 p.49-72
 ## limitations of current approaches
 
 * that a certain amount of linguistic information is captured in the NN, does
-  not necessarily mean that the information is used by the network. For
+  not necessarily mean that the information is used by the network
   * e.g. NTM
     * Vanmassenhove+ (2017) investigated [verb] aspect in NMT
       * [latent vectors] can accurately predict tense about 90% of the time
@@ -159,15 +159,16 @@ TACL Volume 7, 2019 p.49-72
     label. This improved agreement prediction accuracy, and the effect
     persisted over the course of the sentence, indicating that this information
     has an effect on the model. However, they did not report the effect on
-    overall model quality, for example by measuring perplexity. Methods from
+    overall model quality, for example by measuring perplexity
 * causal inference may shed new light on some of these questions
 * different classifiers
-  * usually a simple classifier, such as logistic regression. A few studies
-  * and found that deeper classifiers lead to overall better results, but do
-  * not alter the respective trends when comparing different models or
-    components (Qian+ 2016b; Belinkov, 2018)
-  * tasks requiring more nuanced linguistic knowledge gain the most from using
-    a deeper classifier (Conneau+ 2018).  However, the approach is
+  * usually a simple classifier, such as logistic regression
+  * deeper classifiers lead to 
+    * overall better results, but do
+    * not alter the respective trends when comparing models or components 
+      (Qian+ 2016b; Belinkov, 2018)
+    * tasks requiring more nuanced linguistic knowledge gain the most
+      (Conneau+ 2018)
     * usually taken for granted; given its prevalence, ... better theoretical
       or empirical foundations are in place
 
@@ -271,8 +272,8 @@ TACL Volume 7, 2019 p.49-72
   * [originally for] probabilistic topic models (Chang+ 2009)
   * a word embedding model [is] more interpretable if humans are better able to
     identify the intruding words
-* alternative automatic metrics were considered (Park+ 2017; Senel+ 2018)
-* ability to learn different formal languages 
+* alternative automatic metrics (Park+ 2017; Senel+ 2018)
+* ability to learn formal languages 
   * earlier (Das+ 1992; Casey, 1996; Gers and Schmidhuber, 2001; 
     Bodén and Wiles, 2002; Chalup and Blair, 2003)
   * today, with research into modern architectures and

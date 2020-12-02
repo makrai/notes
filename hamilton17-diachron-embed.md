@@ -6,9 +6,9 @@ http://nlp.stanford.edu/projects/histwords
 
 # Abstract
 
-We 
+* We 
   * develop a robust methodology for quantifying semantic change by evaluating
-    word embeddings (PPMI, SVD, word2vec) against known historical changes. We
+    word embeddings (PPMI, SVD, word2vec) against known historical changes
   * use this methodology to reveal statistical laws of semantic evolution.
     * Using six historical corpora spanning four languages and two centuries, we
       * (English, German, French, and Chinese)
@@ -65,7 +65,7 @@ We
 
 ## 2.3 Aligning historical embeddings
 
-* Explicit PPMI vectors are naturally aligned, as each column simply
+* Explicit PPMI vectors are naturally aligned
 * Low-dimensional embeddings will not be naturally aligned 
   * Previous work ... either 
     * avoiding low-dimensional embeddings 

@@ -9,7 +9,7 @@ Huadong Chen, Shujian Huang, David Chiang, Jiajun Chen
     learns both sequential and tree structured representations; 
   * a tree-coverage model that 
     lets the attention depend on the source-side syntax. 
-* on Chinese-English ... outperform the sequential attentional model as well as
+* on Chinese-English outperform the sequential attentional model as well as
   a stronger baseline with a bottom-up tree encoder and word coverage
 
 # 1 Intro
@@ -19,11 +19,11 @@ Huadong Chen, Shujian Huang, David Chiang, Jiajun Chen
   implicit structure it learns during training (Cho et al.,
 * to guide its reordering decisions better 
   * language pairs with significant reordering, like Chinese-English
-  * attention model (Bahdanau et al., 2015) and the 
-  * coverage model (Tu et al., 2016; Mi et al., 2016) 
+  * attention model (Bahdanau+ 2015) and the 
+  * coverage model (Tu+ 2016; Mi+ 2016) 
   * cannot capture phrasal cohesion between the two languages (Fox 02; Kim+ 17)
-* we improve the tree encoder of Eriguchi et al. (2016) by introducing a
+* we improve the tree encoder of Eriguchi+ (2016) by introducing a
   bidirectional tree encoder
-* In the decoder ..., we incorporate source syntactic tree structure into the
+* In the decoder, we incorporate source syntactic tree structure into the
   attention model via 
   an extension of the coverage model of Tu+ (2016)[,] tree-coverage model

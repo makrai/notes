@@ -97,7 +97,7 @@ https://github.com/ibalazevic/TuckER
 
 ### HypER (Balažević+ 2018)
 
-* simplified convolutional model, that uses
+* simplified convolutional model
 * a hypernetwork to generate 1D convolutional filters for each relation,
 * The authors show that
   * convolution is a way of introducing sparsity and parameter tying

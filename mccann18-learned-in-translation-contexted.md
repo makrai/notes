@@ -6,7 +6,7 @@ CoVe
 
 # Abstract
 
-* pretrained ... deep LSTM encoder 
+* pretrained deep LSTM encoder 
   from an attentional sequence-to-sequence model trained for MT to
 * context vectors (CoVe) improves performance over using only unsupervised word
 * tasks: sentiment analysis (SST, IMDb), question classification (TREC),

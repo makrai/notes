@@ -16,7 +16,7 @@ NAACL 2015
 # 1 Intro
 
 * Word representations [from] neural networks (Bengio+ 2003; Socher+ 2011a) or
-  specialized models (Mikolov+ 2013a) have been
+  specialized models (Mikolov+ 2013a)
 * used [in] various NLP tasks
   (Mnih+ 2009 LM; Huang+ 2014 weakly supervised; Bansal+ 2014 dependency) 
 * capture various syntactic and semantic properties (Mikolov+ 2013b). In many

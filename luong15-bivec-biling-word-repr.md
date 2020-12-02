@@ -34,9 +34,9 @@ http://stanford.edu/~lmthang/bivec
     * Bengio+ 2003; Morin, 2005; Mnih & Hinton, 2009; Mikolov+ 2010; 2011
   * margin-based ranking models
     * Collobert and Weston, 2008; Huang+ 2012; Luong+ 2013
-* we ... use the negative sampling
+* we use the negative sampling
   * noise contrastive estimation method (Gutmann and Hyvärinen, 2012)
-* In our evaluation, we consider ... the sum of [the] input and output vectors
+* In our evaluation, we consider the sum of [the] input and output vectors
 
 ## 2.2 Bilingual Models
 
@@ -51,7 +51,7 @@ http://stanford.edu/~lmthang/bivec
 * Bilingual Training,
   * Klementiev+ 2012; Hermann and Blunsom, 2014; Kočiský+ 2014; 
     Chandar A P+ 2014; Gouws+ 2014
-  * none of these work has [been] examined ... using monolingual metrics
+  * none of these work has [been] examined using monolingual metrics
 
 # 3 Our Approach
 

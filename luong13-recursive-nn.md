@@ -6,8 +6,8 @@ rare dataset
 
 # Abstract
 
-building representations for morphologically complex words 
-from their morphemes
+* building representations for morphologically complex words 
+  from their morphemes
 
 # 1 Introduction
 
@@ -20,7 +20,7 @@ from their morphemes
 * Clark (2003)
   * model [encourages] words ending with the same suffix to appear in the same
     class
-  * not capture the relationship between a word and its ... derived forms
+  * not capture the relationship between a word and its derived forms
 * we treat each morpheme as a basic unit in the RNNs
 * our models can blend well syntactic information, i.e., the word structure,
   and the semantics in grouping related words
@@ -38,21 +38,23 @@ from their morphemes
   * factored NLMs (Alexandrescu and Kirchhoff, 2006)
     * Our work combines [vectors of morphemes] using RNNs, which captures
       morphological compositionality
-  * compositional distributional semantic models (DSMs) (Lazaridou+ 2013)
+  * compositional distributional semantic models (DSMs, Lazaridou+ 2013)
     * their models [do] not support recursive morpheme composition
     * just stem + aff
     * és az ilyen egyszerűeken melyik a jobb?
   * Mikolov+ (2013) showed syntactic and semantic regularities
-    * We believe that these ... relationships will not hold for rare ... words
+    * We believe that these relationships will not hold for rare words
 
 # 3 Morphological RNNs
 
 * We assume access to a dictionary of morphemic analyses of words
 
-# 3.1 Context-insensitive Morphological RNN
+## 3.1 Context-insensitive Morphological RNN
+
 * squared Euclidean distance
 
-# 3.2 Context-sensitive Morphological RNN
+## 3.2 Context-sensitive Morphological RNN
+
 * itt már az embeddinget is kompozícionálisan tanulják
 * az előbbinél a ritka szavaknál rossz a tanulóadat
 * build representations for complex words from their morphemes
@@ -63,14 +65,16 @@ from their morphemes
 # 5 Experiments
 
 * we initialize our models with existing word representations
-  * [Collobert+ (2011) (denoted as C&W)](http://ronan.collobert.com/senna/)
+  * [Collobert+ (2011, denoted as C&W)](http://ronan.collobert.com/senna/)
     * 50-dimensional
-  * Huang+ (2012) (referred as HSMN)
+  * Huang+ (2012, referred as HSMN)
   * [multi-prototype approach](http://wwwnlp.stanford.edu/~ehhuang/)
 
-# 5.1 Word Similarity Task
-* 5.1.1 Rare Word Dataset
-  * Pair construction
+## 5.1 Word Similarity Task
+
+### 5.1.1 Rare Word Dataset
+
+* Pair construction
 
 # 6 Analysis
 

@@ -40,13 +40,13 @@ train word embeddings via a newly designed metric
 
 # 2 Quantify Context Overlap
 
-* overlap of Point-wise Mutual Information (PMI) (Church and Hanks, 1990)
+* overlap of Point-wise Mutual Information (PMI, Church and Hanks, 1990)
   reflects context overlap
   * As shown in Figure 1, two separate words may exhibit a particular aspect of
 * calculation of complete PMI-weighted context overlap may be time-consuming
   * only the context words that have strong lexical association ... are consded
   * threshold .. acts as a magnitude to shift PMI, and S i denotes the set that
-`\sum min f(PMI(i, k)), f(PMI(j, k)))
+`\sum min f(PMI(i, k)), f(PMI(j, k)))`
   * f is a monotonic mapping function to rectify the data characteristics for
     certain objective function in word embedding training
   * exponential function f (x) = exp(x) works much better in our experiments

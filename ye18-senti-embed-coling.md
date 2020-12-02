@@ -25,7 +25,7 @@ COLING 2018
   generally trained independently of the downstream task
 * we propose a novel method to combine
   a feedforward neural network (denoted “SentiNet”) with a CNN classifier
-  to encode sentiment knowledge into word vectors during training.  The method
+  to encode sentiment knowledge into word vectors during training
   * tunes word vectors through the CNN and SentiNet, based on
   * independent information from supervised training data and sentiment lex
 * we compare our method with competitor methods that use
@@ -33,7 +33,7 @@ COLING 2018
 * The major contributions of this paper are as follows:
   1. the sentiment lexicon is encoded into word vectors by a feedforward NN
   1. word vectors are fine-tuned based on supervised training data and the
-     sentiment lexicon during the training of the CNN sentiment classifier
+    sentiment lexicon during the training of the CNN sentiment classifier
   1. we achieve SOTA accuracy over a range of benchmark sentiment analysis DSs
 
 # 2 Related Work

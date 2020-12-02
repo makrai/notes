@@ -36,7 +36,7 @@ arXiv:2003.08271 [cs.CL]
   e.g. syntactic structure [146, 161] or semantic relation [111]
 * more straightforward [is] self-attention mechanism
 
-#### Analysis Both convolutional and sequential models learn the contextual
+#### Analysis. Both convolutional and sequential models learn the contextual
 
 * Transformer is easy to overfit on small or modestly-sized datasets [130, 49]
   49. Qipeng Guo, Xipeng Qiu, Pengfei Liu, Yunfan Shao, Xiangyang Xue, and

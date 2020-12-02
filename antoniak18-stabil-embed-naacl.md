@@ -93,7 +93,7 @@ naacl 2018
 * batch stochastic updates, in which the algorithm
   ... first collects a matrix [then] stochastic optimization
   * We select the GloVe algorithm (Pennington+ 2014)
-* matrix factorization ... we include PPMI (Levy and Goldberg, 2014). Finally,
+* matrix factorization ... we include PPMI (Levy and Goldberg, 2014)
 * to test whether word order is a significant factor we include a
   document-based LSA (Deerwester+ 1990; Landauer and Dumais, 1997)
 
@@ -106,7 +106,7 @@ naacl 2018
 * For each corpus, we
   * select a set of 20 relevant query words
     from high probability words from an LDA topic model (Blei+ 2003)
-    trained on that corpus with 200 topics.  We
+    trained on that corpus with 200 topics
   * creating a similarity ranking of all the words [to each query word ]
   * calculate the mean and standard deviation of the cosine similarities
   * select the 20 words most closely related to the set of query words and
@@ -126,6 +126,5 @@ naacl 2018
 * GloVe and LSA produce the least variable cosine similarities, while
   PPMI produces the most variable cosine similarities for all settings. The
   presence of specific documents has a significant effect on all four
-  algorithms (lesser for PPMI), consistently increasing the standard devia-
-  tions
+  algorithms (lesser for PPMI), consistently increasing the standard deviations
 * document segmentation size 11

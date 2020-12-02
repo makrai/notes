@@ -4,11 +4,11 @@ NAACL 2019
 
 # Abstract
 
-* we study ... variants of ELMo, the OpenAI transformer LM, and BERT
+* we study variants of ELMo, the OpenAI transformer LM, and BERT
 * seventeen diverse probing tasks
 * linear models trained on top of frozen contextual representations
   * competitive with SOTA task-specific models in many cases, but
-  * fail on ... e.g., conjunct identification
+  * fail on e.g., conjunct identification
 * transferability of
   * individual layers within contextualizers,
     * especially between recurrent neural networks (RNNs) and transformers
@@ -17,7 +17,7 @@ NAACL 2019
 * we compare language model pretraining with eleven supervised pretraining mods
   * when the pretraining dataset is fixed
     * closely related task yields better performance
-    * language model ... is better on average
+    * language model is better on average
   * language model pretraining on more data gives the best results
 
 # 1 Intro
@@ -26,7 +26,7 @@ NAACL 2019
   * hierarchical syntax (Blevins+ 2018) or
   * morphology (Belinkov+ 2017a)
   * we: seventeen probing tasks designed to assess a wide array
-    e.g. coreference, ... semantic relations, and entity information
+    e.g. coreference, semantic relations, and entity information
 * transferability, pretraining contextualizers on the language modeling task
   * how the pretraining task affects the linguistic knowledge learned,
     * [we consider] twelve pretraining tasks [to] nine target tasks

@@ -273,10 +273,10 @@ updated results and discussion in section 5
       * byte-pair encoding (Sennrich+ 2016) or
       * the word-piece model (Wu+ 2016)— or
     * learned during training using a character-based convolutional/recurrent
-      sub-network (Costa-jussà and Fonollosa, 2016; Luong and Manning, 2016;
-      Vylomova+ 2016). The latter approach has the advantage of
-      * keeping the original word boundaries without requiring preand
-        post-processing.  Here we focus on a
+      sub-network 
+      (Costa-jussà & Fonollosa, 2016; Luong & Manning, 2016; Vylomova+ 2016)
+      * advantage: keeping the original word boundaries without requiring pre~
+        and post-processing
 * character CNN which has been used in language modeling and MT
   (Kim+ 2015; Belinkov and Glass, 2016; Costa-jussà and Fonollosa, 2016;
   Jozefowicz+ 2016; Sajjad+ 2017)
