@@ -1,6 +1,5 @@
 S Buechel, U Hahn
-Word emotion induction for multiple languages
-  as a deep multi-task learning problem
+Word emotion induction for multiple languages as deep multi-task learning 
 naacl 2018
 
 code base + resulting experimental data is freely available
