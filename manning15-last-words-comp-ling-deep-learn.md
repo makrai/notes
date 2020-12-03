@@ -1,6 +1,5 @@
 Christopher D. Manning
-Last Words
-Computational Linguistics and Deep Learning
+Last Words.  Computational Linguistics and Deep Learning
 2015
 
 # 1. The Deep Learning Tsunami
@@ -58,17 +57,12 @@ Computational Linguistics and Deep Learning
         2015
 * compositionality in models,
 
-# 5. Scientific Questions That Connect Computational Linguistics and Deep
-* Learning
+# 5. Scientific Questions That Connect CL and Deep Learning
 
-* I would like to suggest that we might return ... to some of the interesting
-  linguistic and cognitive issues that motivated non-categorical
-  representations
-* and neural network approaches.  One example of noncategorical phenomena in
-  language is the POS of words in the
-* gerund V-ing form, distributed representations for modeling and explaining
-  linguistic variation
-* and change
+* we might return ... to some of the interesting linguistic and cognitive issues
+  * motivated non-categorical representations and neural network approaches.
+  * e.g. the POS of words in the gerund V-ing form, 
+* explaining linguistic variation and change with distributed representations
   * Sagi, Kaufmann, and Clark (2011)—actually
   * Kulkarni+ (2015)
   * Kim+ (2014)

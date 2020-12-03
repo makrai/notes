@@ -1,35 +1,35 @@
-What the [MASK]? Making Sense of Language-Specific BERT Models
+What the MASK? Making Sense of Language-Specific BERT Models
 Debora Nozza, Federico Bianchi, Dirk Hovy
-arXiv:2003.02912 [cs.CL]
+arXiv:2003.02912 cs.CL
 
-[Street](https://bertlang.unibocconi.it/)
+Street(https://bertlang.unibocconi.it/)
 
 * multilingual BERT (mBERT), a model
   * trained on a corpus of 104 languages, which can serve as a universal
   * impressive results on a zero-shot cross-lingual natural inference task
 * an abundant number of BERT models that are trained on a particular language,
   and tested on a specific data domain and task
-* [we compare mBERT] to the performance of these more specific models
+* we compare mBERT to the performance of these more specific models
   * presents the current SOTA in language-specific BERT models
-  * overall picture with respect to ... architectures, data domains, and tasks
-  * immediate and straightforward overview of the commonalities and differences
+  * overall picture with respect to architectures, data domains, and tasks
+  * overview of the commonalities and differences 
     between Language-Specific (language-specific) BERT models and mBERT
 * interactive and constantly updated website
 
 # 1 Intro
 
-* multilingual BERT model (mBERT) 1 has been proposed, supporting over 100 lang
+* multilingual BERT model (mBERT) has been proposed, supporting over 100 lang
   * including Arabic, Dutch, French, German, Italian, or Portuguese.  The model
   * trained on different domains, like social media posts or newspaper
   * great capabilities in zero-shot cross-lingual tasks (Pires+ 2019)
 * models are trained on a particular language and
-  tested on a specific domain and task, with the promise of maximizing
+  tested on a specific domain and task
 * not been clearly demonstrated whether the advantage of training a
-  languagespecific model is worth the expense in terms of computational
-* different configurations and architectural variants.  To give a concrete
+  language-specific model is worth the computational expense
+* different configurations and architectural variants
   * original BERT model was trained using the WordPiece tokenizer (Wu+ 2016),
   * Camem-BERT (Martin+ 2019)) used the SentencePiece tokenizer (available as
-    OSS [Out of Specification] software) (Kudo and Richardson, 2018)
+    OSS Out of Specification software, Kudo and Richardson, 2018)
 * we identified 30 different pretrained language-specific BERT models, covering
   18 Languages and tested on 29 tasks,
   resulting in 177 different performance results
@@ -37,9 +37,9 @@ arXiv:2003.02912 [cs.CL]
   Arkhipov+ 2019; Virtanen+ 2019; Polignano+ 2019; de Vries+ 2019; Cui+ 2019)
 * We outline some of the parameters here, and introduce the associated website
 * contributions of this paper are the following:
-  1. overall picture: architectural, task and domain
-  2. performance of language-specific BERT models [compared with the] the mBERT
-  3. website to interactively explore SOTA models.  We hope this
+  1. overall picture: architecture, task and domain
+  2. performance of language-specific BERT models compared with the the mBERT
+  3. website to interactively explore SOTA models
 
 # 2 Bidirectional Encoder Representations from Transformers 2
 
@@ -53,8 +53,8 @@ arXiv:2003.02912 [cs.CL]
 
 ## 2.2 Multilingual BERT, ALBERT and RoBERTA
 
-* Multilingual (mBERT) was part of the original paper (Devlin+ 2019), and is
-* Lan+ (2019) introduced A Lite BERT (ALBERT), to reduce the computational
+* Multilingual (mBERT) was part of the original paper (Devlin+ 2019)
+* Lan+ (2019) introduced A Lite BERT (ALBERT), to reduce the computation
   * two parameters reduction techniques, that reduce the number of parameters
   * another self-supervised loss, related to sentence order prediction that is
     meant to address the limits of next sentence prediction used in the BERT
@@ -85,55 +85,53 @@ arXiv:2003.02912 [cs.CL]
 |Text Classification Accuracy |88.96	|85.22|3.75	|
 
 * Table 1 shows a summary of the results for the most frequent NLP tasks
-  * on average, language-specific BERT models obtain higher results with
+  * on average, language-specific BERT models obtain higher results
   * huge variation in the individual performances
 
 ### Languages Covered. The language-specific BERT models proposed
 
-* range from [high-resourced] languages (e.g., French, Italian) to
-* low-resource languages, such as Yorb and Mongolian. At the current date,
+* range from high-resourced languages (e.g., French, Italian) to
+* low-resource languages, such as Yorb and Mongolian
 * we are covering 18 languages
-* low-resources languages (e.g., Yorb and Arabic) [show] the highest improv
-* developers ... are more likely to be experts on other resources for that lang
+* low-resources languages (e.g., Yorb and Arabic) show the highest improv
+* developers are more likely to be experts on other resources for that lang
   or to collect more data. This makes a greater difference for low-resource
 
 ### Architectures
 
-* most popular architecture is the standard BERT one, but lately, the
-* ALBERT and RoBERTA has made researchers consider those two latter models as
+* most popular architecture is the standard BERT one
+* ALBERT and RoBERTA has made considered
   * RoBERTA has been used as the base model for the
-    French CamemBERT (Martin+ 2019), [and] the Italian Gilberto and Umberto
+    French CamemBERT (Martin+ 2019), and the Italian Gilberto and Umberto
 * mBERT was used to initialize and fine-tune models for languages such as
   Russian (Kuratov and Arkhipov, 2019), Slavic languages (Arkhipov+ 2019) 7 and
   Yorb (Alabi+ 2019)
   * Here “Slavic” includes Russian, Bulgarian, Czech and Polish
-  * Yorb is a noteworthy example of how the scarcity of available data in low
-    * Fine-tuning mBERT instead of pretraining from scratch allowed the authors
+  * Yorb is a noteworthy example of cross-lingual transfer
+    * Fine-tuning mBERT instead of pretraining from scratch
 
 ### NLP tasks We currently index results for 29 NLP tasks. Table 1 reports the
 
 * Named Entity Recognition (NER) the most frequent task (22 entries)
-* there are some multilingual benchmark data: same NLP task [used] in diff lang
-  * Some of them ... released by research group publishing in well-known confs
+* there are some multilingual benchmark data: same NLP task used in diff lang
+  * Some of them released by research group publishing in well-known confs
   (Yang+ 2019; Sanguinetti and Bosco, 2015; Conneau+ 2018; Völker+ 2019)
-  * others [ released ] with shared tasks such as SemEval or CoNLL
+  * others released with shared tasks such as SemEval or CoNLL
     (Zeman+ 2018; Navigli+ 2013; Bosco+ 2016; Benikova+ 2014). The latter group
-* noun sense disambiguation task is the only task where
-  language-specific BERT performances are lower than the mBERT ones. As stated
-  by the authors (Le+ 2019), this
-  could be due to the fact that the training corpora have been machine-transled
-  from English to French, making mBERT probably better suited for the task than
-  a model trained on native French
+* noun sense disambiguation task is the only task where 
+  language-specific BERT (Le+ 2019) performances are lower than the mBERT ones.
+  * could be due to the fact that the training corpora have been
+    machine-transled from English to French
 * Sentiment analysis is the task where language-specific BERT models obtain the
   highest improvements with respect to mBERT. Following the previous intuition,
-  * for Arabic (Antoun+ 2020) this can be explained [that] language-specific
-    AraBERT model [handles] dialects
+  * for Arabic (Antoun+ 2020) this can be explained that language-specific
+    AraBERT model handles dialects
     — even if they were not explicitly included in the training set
 * language-specific tasks, e.g., the Die/Dat (gendered determiners)
   disambiguation task in Dutch (Delobelle+ 2020), obtaining
-  * impressive improvements with respect to SOTA (Allein+ 2020) (23% points ac)
+  * impressive improvements with respect to SOTA (Allein+ 2020, 23% points accu)
 
-### Domains There is a huge variety of domains considered in language-specific
+### Domains: a huge variety
 
 * data sets used to pretrain the models and data sets used to evaluate
 * training mainly varies across three source corpora:
@@ -143,19 +141,19 @@ arXiv:2003.02912 [cs.CL]
     * mBERT, for example, was trained over 100 language-specific Wikipedia vers
   * OPUS Corpora (Tiedemann, 2012) and
     * freely available collection of parallel corpora, covering over 90 languag
-    * largest domains ... are legislative and administrative texts, translated
+    * largest domains are legislative and administrative texts, translated
       movie subtitles and localization data from open-source software projects
       (Tiedemann, 2012)
   * OSCAR (Ortiz Suárez+ 2019)
     * obtained by filtering the Common Crawl corpus, which is a parallel
   * Several models concatenate more sources to have enough data to pretrain BERT,
-    * BERTje (Dutch BERT), which concatenates news, book data, and Wikipedia data
+    * BERTje (Dutch BERT), which concatenates news, book data, and Wikipedia
     * Italian BERT model ALBERTO (Polignano+ 2019), which is
       the only one that has been trained only on social media data
       (specifically, on 2 million Twitter posts in Italian language)
-* evaluate: different domain data sets ... to evaluate the models; range from
-  review data for sentiment analysis tasks to
-  transcripts and news for more traditional tasks, such as part of speech
+* evaluate: different domain data sets to evaluate the models; range from
+  * review data for sentiment analysis tasks to
+  * transcripts and news for more traditional tasks, such as POS
   * News data are the most common domain, presumably because they are
     easier to retrieve, and because their
     more formal register makes them more suited for e.g. POS, dependency, NER
@@ -164,11 +162,11 @@ arXiv:2003.02912 [cs.CL]
 
 # 4 Conclusions 6
 
-* [which] languages are covered, which tasks tackled, and which domains consid
-  * huge variability models and the difficulty ... to find the best model for a
+* which languages are covered, which tasks tackled, and which domains considered
+  * huge variability models and the difficulty to find the best model for a
     specific task, language, and domain
 * In the future, we plan to provide
   * independent verification of reported results and
   * direct comparisons of language-specific BERT models on specific domains and
-    tasks. We plan to
-    * use the same data to fine-tune the models [i.e.] comparable values for
+    tasks
+    * use the same data to fine-tune the models i.e. comparable values

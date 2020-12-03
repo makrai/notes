@@ -7,7 +7,7 @@ Understanding and Improving Morphological Learning in the NMT Decoder
 * little is known about
   * linguistic patterns of morphology, syntax and semantics learned
   * which parts of the architecture are responsible for learning each of these
-* In this paper we
+* In this paper
   * how much morphology an NMT decoder learns, and
   * whether injecting target morphology into the decoder helps
 * three methods:

@@ -1,45 +1,69 @@
+Y Wu, M Schuster, Z Chen, Q V. Le, M Norouzi, W Macherey, M Krikun, Y Cao,
+  Q Gao, K Macherey, J Klingner, A Shah, M Johnson, X Liu, Ł Kaiser, S Gouws,
+  Y Kato, T Kudo, H Kazawa, K Stevens, G Kurian, N Patil, W Wang, C Young, J
+  Smith, J Riesa, A Rudnick, O Vinyals, G Corrado, M Hughes, J Dean
 Google's Neural Machine Translation System:
   Bridging the Gap between Human and Machine Translation
-* Y Wu, M Schuster, Z Chen, Q V. Le, M Norouzi, W Macherey, M Krikun, Y Cao, 
-  Q Gao, K Macherey, J Klingner, A Shah, M Johnson, X Liu, Łukasz Kaiser, 
-  S Gouws, Y Kato, T Kudo, H Kazawa, K Stevens, G Kurian, N Patil, W Wang, 
-  C Young, J Smith, J Riesa, A Rudnick, O Vinyals, G Corrado, M Hughes, J Dean
-Submitted on 26 Sep 2016
+TACL 2017 Submitted on 26 Sep 2016
+
+# Abstract
+
+* Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers
+  * residual connections as well as
+  * attention connections from the decoder network to the encoder
+    * To improve parallelism and therefore decrease training time,
+      our attention mechanism connects the bottom layer of the decoder
+      to the top layer of the encoder
+  * low-precision arithmetic during inference computations. To improve handling
+  * wordpieces
+    * we divide words into a limited set of common sub-word units
+      for both input and output
+    * This method provides a good balance between the
+      * flexibility of “character”-delimited models and the
+      * efficiency of “word”-delimited models
+  * beam search technique employs a length-normalization procedure and uses a
+    * coverage penalty, which encourages [the output sentence] to cover all the
+      words in the source sentence. To directly optimize the translation BLEU
+  * we consider refining the models by using reinforcement learning,
+    but ... the improvement in the BLEU scores did not reflect in the human
+    evaluation. On the
+* WMT’14 English-to-French and English-to-German benchmarks, GNMT achieves
+  competitive results to state-of-the-art. Using a
+  * human side-by-side evaluation on a set of isolated simple sentences, it
+    reduces translation errors by an average of 60% compared to Google’s
+    phrase-based production system
 
 # Introduction
 
-* In practice NMT systems used to be worse in accuracy than phrase-based
-  translation systems, especially when training on very large-scale datasets
-  as used for the very best publicly available translation systems
-  * responsible for this gap:
-  1. its slower training and inference speed,
-    * large number of parameters
+* In practice, NMT systems used to be worse in accuracy than phrase-based MT sys
+* especially when training on very large-scale datasets as used for the very
+  best publicly available translation systems
+* responsible for this gap:
+  1. slower training and inference speed: large number of parameters
   2. ineffectiveness in dealing with rare words, and
-    * attention mechanism to copy rare words [36], these approaches are both
-      unreliable at scale, since the quality of the alignments varies across
-      languages, and the latent alignments produced by the attention mechanism
-      are unstable when the network is deep. Also, simple copying may not
-      always be the best strategy to cope with rare words, for example when a
-      transliteration is more appropriate
+    * attention to copy rare words [36], these approaches are unreliable:
+      * quality of the alignments varies across languages, and the
+      * latent alignments produced by the attention mechanism are unstable when
+        the network is deep
+      * may not always be the best strategy vs transliteration
   3. sometimes failure to translate all words in the source sentence
-* residual connections between layers to encourage gradient flow [20]
+* we: residual connections between layers to encourage gradient flow [20]
 * For parallelism, we connect the attention from the bottom layer of the
   decoder network to the top layer of the encoder network
 * To improve inference time, we employ _low-precision_ arithmetic for inference,
-  which is further accelerated by special hardware (Google’s Tensor Processing
-  Unit, or TPU).  To effectively deal with
+  * by special hardware (Google’s Tensor Processing Unit, or TPU)
 * rare words, we use sub-word units (also known as “wordpieces”) [34] for
-  inputs and outputs in our system.  Using wordpieces gives a good balance
-  between the flexibility of single characters and the efficiency of full
-  words for decoding, and also sidesteps the need for special treatment of
-  unknown words
+  inputs and outputs in our system.  Using wordpieces gives a
+  * good balance between the flexibility of single characters and the
+    efficiency of full words for decoding, and also
+  * sidesteps the need for special treatment of unknown words
 * beam search technique includes a
   * length normalization procedure to deal efficiently with the problem of
     comparing _hypotheses of different lengths_ during decoding, and a
   * _coverage penalty_ to encourage the model to translate all of the provided
     input
 * results comparable to or better than previous SOTA systems, while delivering
-  great improvements over Google’s phrase-based production translation system.
+  great improvements over Google’s phrase-based production translation system
   Specifically, on
   * WMT’14 English-to-French, our single model scores 38.95 BLEU, an
     * improvement of 7.5 BLEU from a single model without an external
@@ -82,7 +106,7 @@ Submitted on 26 Sep 2016
   * attention mechanism to deal with rare words [36]
   * coverage [40],
   * multi-task and semi-supervised training to incorporate more data [14, 28], a
-  * character decoder [9], a character encoder [11], subword units [37] also 
+  * character decoder [9], a character encoder [11], subword units [37] also
     to deal with rare word outputs,
   * different kinds of attention mechanisms [29], and
   * sentence-level loss minimization [38, 33]
@@ -122,6 +146,25 @@ Submitted on 26 Sep 2016
 ## Model Parallelism
 
 # 4 Segmentation Approaches
+
+* two broad categories of approaches to address the translation of OOV words
+  * simply copy rare words (as most rare words are names or numbers) based on the
+    * attention model [37]
+    * an external alignment model [31] or even
+    * a more complicated special purpose pointing network [18].  Another broad
+  * sub-word units, e.g.,
+    * chararacters [10]
+      [10] Chung, J., Cho, K., and Bengio, Y
+      A character-level decoder without explicit segmentation for NMT
+      2016
+    * mixed word/characters [28]
+      [28] Luong, M., and Manning, C. D
+      Achieving open vocabulary NMT with hybrid word-character models
+      2016
+    * more intelligent sub-words [38]
+      [38] Sennrich, R., Haddow, B., and Birch, A
+      Neural machine translation of rare words with subword units
+      ACL 2016
 
 ## Wordpiece Model
 

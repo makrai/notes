@@ -48,23 +48,23 @@ arXiv:2004.10151 [cs.CL]
 
 # WS2. Internet (our present), The Written World
 
-* unstructured, unlabeled, multi-domain, and multilingual data broadens our
-* in the limit, to everything humanity has ever written. We are no longer
-* (whether monoor multilingual) has led to substantial advances in
-* benchmarks (Wang+ 2019a). These advances have come due to the
+* unstructured, unlabeled, multi-domain, and multilingual data
+* in the limit, to everything humanity has ever written
+* (whether mono~ or multilingual) has led to substantial advances in
+* benchmarks (Wang+ 2019a)
 * transfer learning enabled by representations in deep models
-  * Traditionally, transfer learning relied on [classes i.e. symbols], such as
+  * Traditionally, transfer learning relied on [classes i.e. symbols]
   * Embeddings [encompass multiple] lexical senses,
     violating this structural assumption
 * [saturation] in terms of data and parameters.  Concretely, Mikolov+ (2013)
 * [Mikolov and contextual embeddings] have expanded the notion of
   local context to include multiple sentences
-* language modeling—the modern workhorse of neural NLP systems—provides a
+* language modeling—the modern workhorse of neural NLP systems
   * leader boards results make claims to super-human accuracy (Rajpurkar+ 2018)
-  * However, in the LAM-BADA dataset (Paperno+ 2016) (capture human intuition),
-    GPT2 (Radford+ 2019) (1.5B), Megatron-LM (Shoeybi+ 2019) (8.3B), and
-    TuringNLG (Rosset, 2020) (17B) perform within a few points of each other
-    * very far from perfect (<68%). We argue that continuing to
+  * However, in the LAM-BADA dataset (Paperno+ 2016) capture human intuition,
+    GPT2 (Radford+ 2019, 1.5B), Megatron-LM (Shoeybi+ 2019, 8.3B), and 
+    TuringNLG (Rosset, 2020, 17B) perform within a few points of each other
+    * very far from perfect (<68%)
   * expand hardware and data sizes by orders of magnitude is not the path
 * meaning, especially
   * semantic relations among words (Fu+ 2014) and

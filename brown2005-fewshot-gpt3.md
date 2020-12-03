@@ -55,7 +55,7 @@ arXiv:2005.14165 [cs.CL]
     * a very wide range of possible useful language tasks, e.g
       correcting grammar, to generating examples of an abstract concept, to
       critiquing a short story
-  * spurious [false] correlations in training data fundamentally
+  * spurious [false] correlations in training data
     * grows with the expressiveness of the model and the narrowness of the
       training distribution [HLW + 20, YdC + 19, MPL19, GSL + 18, NK19]
   * humans do not require large supervised datasets to learn most tasks – a
@@ -71,7 +71,7 @@ arXiv:2005.14165 [cs.CL]
     * model is conditioned on a natural language instruction and/or a few
       demonstrations of the task
     * results far inferior to fine-tuning – for example [RWC + 19] achieves
-      only 4% on Natural Questions, and even its 
+      only 4% on Natural Questions, and even its
       55 F1 CoQa result is now more than 35 points behind the SOTA
 * capacity of transformer language models has increased substantially,
 ```
@@ -125,20 +125,20 @@ arXiv:2005.14165 [cs.CL]
   * relatively smooth scaling with model capacity in all three settings; one
   * the gap between zero-, one-, and few-shot performance often grows with capa
     * perhaps suggesting that larger models are more proficient meta-learners
-* preliminary analysis regarding bias, fairness, and broader societal impact 
+* preliminary analysis regarding bias, fairness, and broader societal impact
 
 # 2 Approach and methods for training GPT-3 and evaluating it
 
 ## 2.1 Model and Architectures
 
-* same model and architecture as GPT-2 [RWC + 19], 
+* same model and architecture as GPT-2 [RWC + 19],
   * including the modified init, pre-normalization, and reversible tokenization
   * [but] alternating dense and locally banded sparse attention patterns in the
     layers of the transformer, similar to the Sparse Transformer [CGRS19]. To
 * 8 different sizes of model, ranging over three orders of magnitude from 125
   million parameters to 175 billion parameters, with the last being the model
   we call GPT-3
-* scaling of validation loss should be approximately 
+* scaling of validation loss should be approximately
   a smooth power law as a function of size [KMH + 20]; training models of many
 * [we] test this hypothesis both for validation loss and for downstream
 
@@ -162,66 +162,66 @@ arXiv:2005.14165 [cs.CL]
 
 # 5 Limitations 33
 
-* GPT-3 samples still sometimes repeat themselves semantically at the doc level 
+* GPT-3 samples still sometimes repeat themselves semantically at the doc level
   * lose coherence over sufficiently long passages, contradict themselves, and
     occasionally contain non-sequitur sentences or paragraphs
-* special difficulty with “common sense physics”, 
+* special difficulty with “common sense physics”,
   despite doing well on some datasets (such as PIQA [BZB + 19]) that test this
-  * e.g. questions like “If I put cheese into the fridge, will it melt?”.
+  * e.g. questions like “If I put cheese into the fridge, will it melt?”
   * little better than chance when evaluated one-shot or even few-shot on some
-    “comparison” tasks, such as determining if 
+    “comparison” tasks, such as determining if
     * two words are used the same way in a sentence, WIC
     * one sentence implies another (WIC and ANLI respectively), ANLI
   * on a subset of reading comprehension tasks (e.g. QuAC and RACE)
 * structural and algorithmic limitations, which could account for some of the
-  * We focused on autoregressive language models because 
+  * We focused on autoregressive language models because
     it is straightforward to both sample and compute likelihoods with this
   * [we]  not include any bidirectional architectures or e.g. denoising. This
-  * potentially worse performance on tasks which benefit from bidirectionality.
+  * potentially worse performance on tasks which benefit from bidirectionality
     * e.g. fill-in-the-blank tasks, tasks that involve looking back and
     * tasks that require re-reading or carefully considering a long passage and
-      then generating a very short answer. 
+      then generating a very short answer
   * We also conjecture, based on past literature, that a large bidirectional
     model would be stronger at fine-tuning than GPT-3
-* limits of the pretraining objective. Our 
-  * current objective weights every token equally and lacks a notion of what is
-  * [RRS20] customize prediction to entities of interest.  Also, with
+* limits of the pretraining objective
+  * current objective weights every token equally
+  * [RRS20] customize prediction to entities of interest
   * [problem with] forcing the desired task into a prediction problem, whereas
     ultimately, useful language systems might take goal-directed actions rather
-  * grounding in other domains, such as video or real-world phys [BHT + 20].
+  * grounding in other domains, such as video or real-world phys [BHT + 20]
   * augmentation [of self-supervised prediction] with a different approach is
-    * learning the objective function from humans [ZSW + 19a], 
-    * fine-tuning with reinforcement learning, or adding 
-    * additional modalities such as images [CLY+ 19].  
-* poor sample efficiency during pre-training. While 
+    * learning the objective function from humans [ZSW + 19a],
+    * fine-tuning with reinforcement learning, or adding
+    * additional modalities such as images [CLY+ 19]
+* poor sample efficiency during pre-training
   * GPT-3 takes test-time sample efficiency closer to that of humans (1/0-shot)
   * might come from grounding in the physical world to provide additional info,
-    or from algorithmic improvements.
-* whether few-shot learning actually learns new tasks “from scratch” at infer, 
+    or from algorithmic improvements
+* whether few-shot learning actually learns new tasks “from scratch” at infer,
   or if it recognizes tasks that it has learned during training. These
-  * possibilities exist on a spectrum, ranging from 
+  * possibilities exist on a spectrum, ranging from
     * demonstrations in the training set that are drawn from exactly the same
-    * the same task but in a different format, to 
-    * adapting to a specific style of a general task such as QA, to 
-    * learning a skill entirely de novo. Where GPT-3 is on this spectrum 
-  * may also vary from task to task. Synthetic tasks such as 
+    * the same task but in a different format, to
+    * adapting to a specific style of a general task such as QA, to
+    * learning a skill entirely de novo. Where GPT-3 is on this spectrum
+  * may also vary from task to task. Synthetic tasks such as
     * wordscrambling or defining nonsense words seem to be learned de novo,
-    * translation must be learned [ although ] from data that is very different 
+    * translation must be learned [ although ] from data that is very different
     * not even clear what humans learn from scratch vs from prior demonstration
 * expensive and inconvenient to perform inference on, which may present a
   * distillation [HVD15] for specific tasks. Large models such as GPT-3 contain
-  * Distillation is well-explored in general [LHCG19a] but 
+  * Distillation is well-explored in general [LHCG19a] but
     has not been tried at the scale of hundred of billions parameters; new
 * not easily interpretable, it is not necessarily well-calibrated in its
-  predictions on novel inputs as observed by the 
+  predictions on novel inputs as observed by the
   * much higher variance in performance than humans on standard benchmarks, and
   * biases of the data it has been trained on (stereotyped or prejudiced)
     * will be discussed along with other issues in the next section
 
 # 6 Broader Impacts
 
-## 6.1 Misuse of Language Models 
-## 6.2 Fairness, Bias, and Representation 
+## 6.1 Misuse of Language Models
+## 6.2 Fairness, Bias, and Representation
 ## 6.3 Energy Usage
 
 # 7 Related Work 39

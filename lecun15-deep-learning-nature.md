@@ -13,7 +13,7 @@ Deep learning
   * representation-learning methods with 
   * multiple levels of representation, obtained by 
     * composing simple but non-linear modules that
-    * each transform the representation ... into ... slightly more abstract level
+    * each transform the representation into slightly more abstract level
   * very complex functions can be learned
   * higher layers of representation 
     * amplify aspects of the input that are important for discrimination and
@@ -24,7 +24,7 @@ Deep learning
     * motifs by spotting particular arrangements of edges
     * parts of familiar objects, and
     * objects as combinations of these parts.
-  * features are ... learned ... using a general-purpose learning procedure.
+  * features are learned using a general-purpose learning procedure.
 * achievements
   * image recognition 1–4 and 
   * speech recognition 5–7 , 
@@ -33,7 +33,7 @@ Deep learning
       * Strategies for training large scale neural network language models. 
       * In Proc. Automatic Speech Recognition and Understanding 196–201 (2011).
     * 6.   
-      * Hinton, G. et al. 
+      * Hinton, G.+ 
       * Deep neural networks for acoustic modeling in speech recognition. 
       * IEEE Signal Processing Magazine 29, 82–97 (2012).  
       * This joint paper from the major speech recognition laboratories,
@@ -50,7 +50,7 @@ Deep learning
     * reconstructing brain circuits 11, and 
     * predicting the effects of mutations in non-coding DNA 
       * on gene expression and disease 12,13
-  * natural language understanding (Collobert et al 2011)., particularly 
+  * natural language understanding (Collobert+ 2011)., particularly 
     * topic classification,
     * sentiment analysis, 
     * question answering 15 and 
@@ -62,7 +62,7 @@ Deep learning
         Sequence to sequence learning with neural networks. 
         NIPS (2014).  
       * state-of-the-art machine translation results with the 
-        * architecture introduced in Cho et al (2014), with a 
+        * architecture introduced in Cho+ (2014), with a 
           * recurrent network
           * read a sentence in one language, 
           * produce a semantic representation of its meaning, and 
@@ -81,23 +81,24 @@ Deep learning
 # Recurrent neural networks
 
 # The future of deep learning
-  * Unsupervised learning
-  * vision
-    * Human vision is an active process that sequentially samples the optic
-      * array in an intelligent, task-specific way using 
-      * a small, high-resolution fovea with a 
-      * large, low-resolution surround
-    * Systems combining deep learning and reinforcement learning
-    * future
-      * traine end-to-end and combine ConvNets with RNNs that use
-      * reinforcement learning to decide where to look.
-    * present
-      * in their infancy, but they already
-      * outperform passive vision systems 99 at classification tasks and
-      * produce impressive results in learning to play ...  video games 100 .
-  * Natural language understanding 
-    * learn strategies for selectively attending to one part at a time
-  * artificial intelligence 
-    * will ... combine representation learning with complex reasoning.
-      * replace rule-based manipulation of symbolic expressions 
-        * by operations on large vectors
+
+* Unsupervised learning
+* vision
+  * Human vision is an active process that sequentially samples the optic
+    * array in an intelligent, task-specific way using 
+    * a small, high-resolution fovea with a 
+    * large, low-resolution surround
+  * Systems combining deep learning and reinforcement learning
+  * future
+    * traine end-to-end and combine ConvNets with RNNs that use
+    * reinforcement learning to decide where to look.
+  * present
+    * in their infancy, but they already
+    * outperform passive vision systems 99 at classification tasks and
+    * produce impressive results in learning to play  video games 100 .
+* Natural language understanding 
+  * learn strategies for selectively attending to one part at a time
+* artificial intelligence 
+  * will combine representation learning with complex reasoning.
+    * replace rule-based manipulation of symbolic expressions 
+      * by operations on large vectors

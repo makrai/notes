@@ -51,25 +51,14 @@ arXiv:2002.12327 [cs.CL]
 * base and large, varying in the
   number of layers, their hidden size, and number of attention heads
 
-# 3 BERT embeddings
-
-* BERT’s contextualized embeddings form distinct and clear clusters
-  corresponding to word senses (Wiedemann+ 2019)
-* representations of the same word varies depending on position of the sentence
-  * likely due to NSP objective (Mickus+ 2019)
-* how similar the embeddings for identical words are in every layer
-  * Ethayarajh (2019) find that later BERT layers produce more context-specific
-    * embeddings occupy a narrow cone in the vector space, and
-      this effect increases from lower to higher layers
-
-# 4 What knowledge does BERT have?
+# 3 What knowledge does BERT have?
 
 * approaches include
   * fill-in-the-gap probes of BERT’s MLM,
   * self-attention weights,
   * and probing classifiers using different BERT representations as inputs
 
-##4.1 Syntactic knowledge
+## 3.1 Syntactic knowledge
 
 * representations are hierarchical rather than linear
   * there is something akin to syntactic tree structure (Lin+ 2019)
@@ -103,7 +92,7 @@ arXiv:2002.12327 [cs.CL]
     * encoding of syntactic structure does
       not indicate that it actually relies on that knowledge
 
-##4.2 Semantic knowledge
+## 3.2 Semantic knowledge
 
 * more studies were devoted to BERT’s knowledge of synta[x] rather than sem
 * some knowledge for semantic roles (Ettinger, 2019)
@@ -117,8 +106,17 @@ arXiv:2002.12327 [cs.CL]
   * [no] good representations for floating point numbers (Wallace+ 2019b)
   * problem [with] wordpiece tokenization: numbers of similar values can be
     divided up into substantially different word chunks
+* surprisingly brittle tonamed entity in replacements: e.g. 
+  * replacing names in the coreference task changes 85% of predictions
+    (Balasubramanian+ 2020)
+    * This suggests that the model does not form a generic idea of named entitis
+    * although its F1 scores on NER probing tasks are high (Tenney+ 2019a)
+  * Broscheit (2019) find that fine-tuning BERT on Wikipedia entity linking
+    "teaches" it additional entity knowledge, which would 
+    * suggest that it did not absorb all the relevant entity information during
+      pre-training on Wikipedia
 
-##4.3 World knowledge
+## 3.3 World knowledge
 
 * MLM [adapted] for knowledge induction by filling in the blanks
   e.g. “Cats like to chase [ ]”)
@@ -140,9 +138,48 @@ arXiv:2002.12327 [cs.CL]
     learning stereotypical character combinations (Poerner+ 2019)
     e.g. a person with an Italian-sounding name is Italian
 
-# 5 Localizing linguistic knowledge
+## 3.4 Limitations
 
-##5.1 Self-attention heads
+* Tenney+ (2019a) remarks, “the fact that a linguistic pattern is not observed
+  by our probing classifier does not guarantee that it is not there, and the
+  observation of a pattern does not tell us how it is used." There is also the
+* how complex a probe should be allowed to be (Liu+ 2019a). 
+  * If a more complex probe recovers more information, to what extent are we
+    still relying on the original model?  
+* different probing methods may lead to complementary or even contradictory
+  (Warstadt+ 2019). A given method might also favor one model over another,
+  e.g., RoBERTa trails BERT with one tree extraction method, but leads with
+  another (Htut+ 2019).  The 
+* choice of linguistic formalism also matters (Kuznetsov and Gurevych, 2020).  
+* focus on identifying what BERT actually relies on at inference time. This
+  * architecture blocks (to be discussed in subsection 6.3), and at the level
+  * information encoded in model weights. 
+* Amnesic probing (Elazar+ 2020) aims to specifically remove certain information
+  * see how it changes performance, finding, for example, that 
+  * e.g. language modeling does rely on part-of-speech information.  
+* information-theoretic probing. 
+  * Pimentel+ (2020) operationalize probing as estimating mutual information
+    between the learned representation and a given linguistic property, which
+  * hE, focus should be not on the amount of information contained in a
+    representation, but rather on how easily it can be extracted from it. 
+* Voita and Titov (2020) quantify the amount of effort needed to extract info
+  * as minimum description length needed to communicate both the probe size and
+    the amount of data required for it to do well on a task
+
+# 4 Localizing linguistic knowledge 4
+
+## 4.1 BERT embeddings
+
+* BERT’s contextualized embeddings form distinct and clear clusters
+  corresponding to word senses (Wiedemann+ 2019)
+* representations of the same word varies depending on position of the sentence
+  * likely due to NSP objective (Mickus+ 2019)
+* how similar the embeddings for identical words are in every layer
+  * Ethayarajh (2019) find that later BERT layers produce more context-specific
+    * embeddings occupy a narrow cone in the vector space, and
+      this effect increases from lower to higher layers
+
+## 4.2 Self-attention heads
 
 * several studies proposed classification of attention head types:
   * attending to the word itself, to previous/next words and
@@ -151,11 +188,68 @@ arXiv:2002.12327 [cs.CL]
     “attending broadly” over the sequence (Clark+ 2019)
   * the 5 attention types shown in Figure 4 (Kovaleva+ 2019):
     Vertical, Diagonal, Vertical + diagonal, Block, Heterogeneous
+
+### 4.2.1 Heads with linguistic functions
+
+* The "heterogeneous" attention pattern shown in Figure 3 could potentially be
+  linguistically interpretable, and a number of studies focused on identifying
+  the functions of self-attention heads. In particular, some BERT heads seem to
+* syntactic relations
+  * Htut+ (2019) and Clark+ (2019) report that 
+    * there are BERT heads that attended significantly more than a random
+      baseline to words in certain syntactic positions. The 
+    * datasets and methods used in these studies differ, but they both find that
+    * heads that attend to words in obj role more than the positional baseline.
+    * evidence for nsubj, advmod, and amod varies between these two studies.
+    * overall conclusion is also supported by Voita+ (2019b)’s study of the base
+      Transformer in machine translation context.  
+    * Hoover+ (2019) hypothesize that even 
+      complex dependencies like dobj are encoded by a combination of heads
+      rather than a single head, but this work is limited to qualitative anal
+  * Zhao and Bethard (2020) looked for the heads encoding negation scope
+  * Both Clark+ (2019) and Htut+ (2019)
+    * no single head has the complete syntactic tree information, 
+      in line with evidence of partial knowledge of syntax (cf. subsection 3.1)
+  * However, Clark+ (2019) identify a BERT head that can be directly used as a
+    classifier to perform coreference resolution on par with a rule-based sys,
+    which by itself would seem to require quite a lot of syntactic knowledge
+  * Lin+ (2019) present evidence that attention weights are weak indicators of
+    subject-verb agreement and reflexive anaphora. Instead of serving as strong
+    pointers between tokens that should be related, BERT’s self-attention
+    weights were close to a uniform attention baseline, but there was some
+    sensitivity to different types of distractors coherent with psycholinguistic
+    data. This is consistent with conclusions by Ettinger (2019)
+* morphological information in BERT heads has not been addressed, but with the
+  sparse attention variant by Correia+ (2019) in the base Transformer, some
+  attention heads appear to merge BPE-tokenized words
+* semantic relations, there are reports of self-attention heads encoding core
+  frame-semantic relations (Kovaleva+ 2019), as well as 
+  lexicographic and commonsense relations (Cui+ 2020)
+* meaning of attention weights
+  * "attention weight has a clear meaning: how much a particular word will be
+    weighted when computing the next representation for the current word"
+    (Clark+ 2019)
+  * The overall popularity of self-attention as an interpretability mechanism is
+    due to this idea
+  * debated (Jain and Wallace, 2019; Serrano and Smith, 2019; Wiegreffe and
+    Pinter, 2019; Brunner+ 2020)
+  * in a multi-layer model where attention is followed by non-linear trafo, 
+    the patterns in individual heads do not provide a full picture
+* visualizations
+  * many current papers are accompanied by attention visualizations, and there
+  * tools (Vig, 2019; Hoover+ 2019), the visualization is typically
+  * limited to qualitative analysis (often with cherry-picked examples)
+    (Belinkov and Glass, 2019), and should not be interpreted as evidence
+
+### 4.2.2 Attention to special tokens
+
+### from earlier version of the now 4.2
+
 * meaning [of attention weight]: “how much a particular word will be weighted
   when computing the next representation for the current word” (Clark+ 2019)
-* However, most self-attention heads do
-  not directly encode any nontrivial linguistic information
-  * [more] than half of them had [not] the “heterogeneous” pattern [but] vertic
+* However, most self-attention heads do not directly encode any nontrivial
+  linguistic information
+  * more than their half had not the “heterogeneous” pattern but vertic
     (Kovaleva+ 2019; Clark+ 2019)
   * must be related to the overparametrization issue (see section 7)
 * Attention to [CLS] interpreted as attention to an aggregated sentence repr
@@ -193,10 +287,10 @@ arXiv:2002.12327 [cs.CL]
     with annotations of core frame semantic relations (Baker+ 1998)
   * Kovaleva+ (2019) identified
   * should have been instrumental to tasks such as inference, a
-    head ablation study showed that
+  * head ablation study showed that
     these heads were not essential for BERT’s success on GLUE tasks
 
-##5.2 BERT layers
+## 4.3 BERT layers
 
 * input [is] a combination of token, segment, and positional embeddings
 * lower layers have the most linear word order information
@@ -244,11 +338,39 @@ arXiv:2002.12327 [cs.CL]
   * only one SentEval semantic task in this study actually topped at the last
   * three others peaked around the middle and then degraded by the final layers
 
-# 6 Training BERT
+# 5 Training BERT 7
 
 * proposals to optimize the training and architecture of the original BERT
 
-## 6.1 Pre-training BERT
+## 5.1 Model architecture choices
+
+* the most systematic study of BERT architecture was performed by Wang+ (2019b)
+  * number of layers, heads, and model parameters,
+    varying one option and freezing the others
+  * number of heads was not as significant as the number of layers, which is
+    consistent with
+    * the findings of Voita+ (2019) and Michel+ (2019), discussed in section 7,
+    * middle layers were the most transferable (Liu+ 2019a)
+  * Larger hidden representation size was consistently better, but the
+    gains varied by setting
+* batchsize
+  * large-batch training (8k examples) improves both the language model
+    perplexity and downstream task performance (Liu+ 2019c)
+    * They also publish their recommendations for other model parameters
+  * with a batch size of 32k BERT’s training time can be significantly
+    reduced with no degradation in performance (You+ 2019)
+* embedding values of the trained [CLS] token are not centered around zero,
+  their normalization stabilizes the training (Zhou+ 2019)
+  * slight performance gain on text classification tasks
+* training ... in a recursive manner (Gong+ 2019), where the
+  shallower version is trained first and
+  then the trained parameters are copied to deeper layers, aka. “warm-start”
+  * 25% faster training speed while reaching
+    similar accuracy to the original BERT on GLUE tasks
+
+## 5.2 Improvements to the training regime
+
+## 5.3 Pre-training BERT
 
 * original BERT is a bidirectional Transformer pre-trained on two tasks:
   next sentence prediction (NSP) and masked language model (MLM)
@@ -301,33 +423,7 @@ arXiv:2002.12327 [cs.CL]
     obtains competitive or higher results
     than the pre-trained BERT with the task classifier and frozen weights
 
-## 6.2 Model architecture choices
-
-* the most systematic study of BERT architecture was performed by Wang+ (2019b)
-  * number of layers, heads, and model parameters,
-    varying one option and freezing the others
-  * number of heads was not as significant as the number of layers, which is
-    consistent with
-    * the findings of Voita+ (2019) and Michel+ (2019), discussed in section 7,
-    * middle layers were the most transferable (Liu+ 2019a)
-  * Larger hidden representation size was consistently better, but the
-    gains varied by setting
-* batchsize
-  * large-batch training (8k examples) improves both the language model
-    perplexity and downstream task performance (Liu+ 2019c)
-    * They also publish their recommendations for other model parameters
-  * with a batch size of 32k BERT’s training time can be significantly
-    reduced with no degradation in performance (You+ 2019)
-* embedding values of the trained [CLS] token are not centered around zero,
-  their normalization stabilizes the training (Zhou+ 2019)
-  * slight performance gain on text classification tasks
-* training ... in a recursive manner (Gong+ 2019), where the
-  shallower version is trained first and
-  then the trained parameters are copied to deeper layers, aka. “warm-start”
-  * 25% faster training speed while reaching
-    similar accuracy to the original BERT on GLUE tasks
-
-## 6.3 Fine-tuning BERT
+## 5.4 Fine-tuning BERT
 
 * Pre-training + fine-tuning workflow is a crucial part of BERT
   * pre-training is supposed to provide task-independent linguistic knowledge,
@@ -364,9 +460,9 @@ arXiv:2002.12327 [cs.CL]
     * propose an early-stopping technique to
       avoid full fine-tuning for the less-promising seeds
 
-# 7 How big should BERT be?
+# 6 How big should BERT be? 10
 
-## 7.1 Overparametrization
+## 6.1 Overparametrization
 
 * Transformer-based models keep increasing in size:
   e.g. T5 (Wu+ 2016a) is over 30 times larger than the base BERT. This raises
@@ -391,7 +487,7 @@ arXiv:2002.12327 [cs.CL]
   * not clear ... given the complexity of language, and amounts of pre-training
   * Clark+ (2019) suggest that [reason] is the use of attention dropouts
 
-## 7.2 BERT compression
+## 6.2 Compression
 
 * BERT can be efficiently compressed with minimal accuracy loss
 * knowledge distillation framework (Hinton+ 2015)
@@ -406,6 +502,43 @@ arXiv:2002.12327 [cs.CL]
 * Other techniques include
   * decomposing BERT’s embedding matrix into smaller matrices (Lan+ 2019) and
   * progressive model replacing (Xu+ 2020)
+
+## 6.3 Pruning and model analysis
+
+# 7 Directions for further research
+
+## Benchmarks that require verbal reasoning
+
+* BERT  was shown to rely on shallow heuristics in 
+  * natural language inference (McCoy+ 2019b; Zellers+ 2019; Jin+ 2020), 
+  * reading comprehension (Si+ 19a; Rogers+ ; Sugawara+ ; Si+ 19b; Yogatama+ 19)
+  * argument reasoning comprehension (Niven and Kao, 19), and 
+  * text classification (Jin+ 2020). 
+* Such heuristics can even be used to reconstruct a non-publicly-available model
+  (Krishna+ 2020): there is a shortcut in the data
+* devel of harder datasets should be as valued as modeling work
+
+## Benchmarks for the full range of linguistic competence
+
+* A step in this direction is the "Checklist" behavioral testing (Ribeiro+ 2020)
+  the best paper at ACL 2020. Ideally, such tests would 
+  * measure not only errors, but also sensitivity (Ettinger, 2019).
+
+## Developing methods to "teach" reasoning.
+
+* they often fail if any reasoning needs to be performed on top of the facts
+  (Talmor+ 2019, see also subsection 3.3). For instance, 
+* Richardson+ (2020) propose a method to "teach" BERT quantification,
+  conditionals, comparatives, and boolean coordination.
+
+## Learning what happens at inference time.
+
+* discovering what knowledge actually gets used. Several promising directions
+  * "amnesic probing" (Elazar+ 2020), 
+  * identifying features important for prediction for a given task
+    (Arkhangelskaia and Dutta, 2019), and 
+  * pruning the model to remove the nonimportant components 
+    (Voita+ 2019b; Michel+ 2019; Prasanna+ 2020)
 
 # 8 Multilingual BERT
 
@@ -494,7 +627,7 @@ arXiv:2002.12327 [cs.CL]
     Wiegreffe and Pinter, 2019; Brunner+ 2020)
   * limited to qualitative analysis (Belinkov and Glass, 2019)
 
-## 9.2 Directions for further research
+# 7 Directions for further research
 
 ### Benchmarks that require verbal reasoning
 
@@ -521,6 +654,6 @@ arXiv:2002.12327 [cs.CL]
     * other head ablation studies (Voita+ 2019; Michel+ 2019) and studies of
     * reading comprehension (van Aken+ 2019; Arkhangelskaia and Dutta, 2019)
 
-# 10 Conclusion
+# 8 Conclusion
 
 * The stream of papers seems to be accelerating rather than slowing down

@@ -13,7 +13,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 # 1 Intro
 
 * unbounded discrete structured representations !< vector-space representations
-  * the successful uses of neural networks in computational linguistics have
+  * the successful uses of neural networks in computational linguistics
     * replaced specific pieces of computational-linguistic models with new NN
     * bring together continuous vector spaces with structured representations
 * the process
@@ -93,7 +93,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 
 * neural network was used to model one component within a symbolic NLP model
 * first empirical success was on language modelling, Bengio+ (2001, 2003)
-  * improvements when interpolated with a statistical n-gram language model. A
+  * improvements when interpolated with a statistical n-gram language model
 * [distribution vector] in non-neural statistical models earlier
   (Deerwester+ 90; Schütze, 93; Burgess, 98; Padó and Lapata, 2007; Erk, 2010)
 * For syntactic parsing,
@@ -118,9 +118,9 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   rather than a derivation structure, makes it possible to define
   syntactic parsing as a sequence-to-sequence problem,
   mapping the sentence to its parse sequence
-  If seq2seq models) can perform well at this task, then
-  maybe the structured linguistic representations are not necessary 
-  (contrary to Fodor and Pylyshyn (1988)), not even to predict those structures
+  * If seq2seq models) can perform well at this task, then maybe the 
+    structured linguistic representations are not necessary 
+    (contrary to Fodor and Pylyshyn (1988))
 * Vinyals+ (2015) report
   * very poor results for seq2seq models when trained on the standard dataset
   * good results when trained on very large automatically-parsed corpora
@@ -170,8 +170,8 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 * sequential structure is
   * not hard-coded into the model structure, unlike
     LSTMs (Hochreiter and Schmidhuber, 1997) and CNNs (LeCun and Bengio, 1995)
-  * input in the form of position embeddings.  In our formulation, position
-    embeddings are just properties of individual entities (typically words or)
+  * input in the form of position embeddings
+    * just properties of individual entities (typically words)
     * facilitate learning about absolute positions [and] 
       allow calculating relative position
   * explicitly inputting relative position relations as embeddings into the
@@ -185,8 +185,8 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     embeddings, which higher levels of attention then extract
   * apparent from dependency parsing
     (Kondratyuk and Straka, 2019; Mohammadshahi and Henderson, 2019, 2020)
-  * Earlier models of dependency parsing successfully use BiLSTMs to embed
-    syntactic dependencies in pairs of token embeddings
+  * Earlier models of dependency parsing successfully use BiLSTMs to 
+    embed syntactic dependencies in pairs of token embeddings
     (e.g. (Kiperwasser and Goldberg, 2016; Dozat and Manning, 2016)), which are
     then extracted to predict the dependency tree
 * Graph-to-Graph Transformer (Mohammadshahi and Henderson 2019, 2020)

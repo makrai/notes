@@ -7,14 +7,14 @@ arXiv:2003.08271 [cs.CL]
 * contributions of this survey can be summarized as follows:
   1. Comprehensive review of PTMs for NLP,
     * background knowledge, model architecture, pre-training tasks,
-      various extensions, adaption approaches, and applications. We provide
-    * descriptions of representative models, make the necessary comparison,
-  2. New taxonomy of PTMs for NLP, which categorizes
+      extensions, adaption approaches, and applications
+    * descriptions of representative models + comparison,
+  2. New taxonomy of PTMs for NLP
     1. type of word representation;
     1. architecture of PTMs;
     1. type of pre-training tasks;
     1. extensions for specific types of scenarios or inputs
-  3. We collect ... open-source systems, paper lists, etc
+  3. We collect open-source systems, paper lists
   4. Future directions. We discuss and analyze the limitations
 
 # 2 background concepts and commonly used notations of PTMs
@@ -154,7 +154,7 @@ arXiv:2003.08271 [cs.CL]
   * NSP conflates topic prediction and coherence prediction in a single task,
     conjectured in Lan+ [86]
   * topic prediction is easier to learn compared to coherence prediction
-  * SOP uses ... consecutive segments but with their order swapped as negative
+  * SOP uses consecutive segments but with their order swapped as negative
   * consistently outperforms BERT on various downstream tasks
 * StructBERT [180] and BERTje [29] also take SOP as their self-supervised
 
@@ -211,7 +211,7 @@ arXiv:2003.08271 [cs.CL]
         the sentence to obtain an extended tree-form input for BERT
       * Xiong+ [188] adopted entity replacement identification to encourage the
         model to be more aware of factual knowledge
-  * these methods ... may suffer from catastrophic forgetting
+  * these methods may suffer from catastrophic forgetting
     * To address this, K-Adapter [178] injects multiple kinds of knowledge by
       training different adapters independently for different pre-training
       tasks, which allows continual knowledge infusion
@@ -316,7 +316,7 @@ arXiv:2003.08271 [cs.CL]
   [112, 88, 173]
   * For Chinese, which does not have explicit word boundaries
   * larger granularity [26, 33, 184] and multigranularity [157, 158] word repr
-  * Kuratov and Arkhipov [85] ... adapt a multilingual PTM to a [Russian] PTM
+  * Kuratov and Arkhipov [85] adapt a multilingual PTM to a [Russian] PTM
   * monolingual PTMs pre-trained on language-specific corpus
     for French [112, 88], Finnish [173], Dutch [29, 31] have been released
 
@@ -378,22 +378,22 @@ multi-task learning and pre-training are complementary technologies
 * solution is to inject some fine-tunable adaptation modules into PTMs while
   * original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
-  * PAL: small additional task-specific adaptation modules, shared BERT with
-  * matches separately fine-tuned models on the GLUE benchmark with roughly 7
-    times fewer parameters
+  * PAL: small additional task-specific adaptation modules
+  * matches separately fine-tuned models on the GLUE benchmark 
+    with roughly 7 times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
   * Adapter modules yield a compact and extensible model; they add only a few
     trainable parameters per task, and new tasks can be added without
     revisiting previous ones
 
-### Others Instead of fine-tuning all the layers simultaneously,
+### Others. Instead of fine-tuning all the layers simultaneously,
 
 * gradual unfreezing [62] layers of PTMs starting from the top layer
 * Chronopoulou+ [19] proposed [the simpler] sequential unfreezing, which
   * first fine-tunes only the randomly-initialized task specific layers, and
     then unfreezes the hidden layers of PTM, and finally unfreezes the
     embedding layer
-* Motivated by ... ensemble models, Xu+ [191]: self-ensemble and self-distill
+* Motivated by ensemble models, Xu+ [191]: self-ensemble and self-distill
 
 # 6 Related resources on PTMs: open-source systems, paper lists 15
 
@@ -401,7 +401,7 @@ multi-task learning and pre-training are complementary technologies
 
 |Table 6:         |Collections of Related Resources     |
 |-----------------|-------------------------------------|
-| ...             |                                     |
+| |                                     |
 |Bert Lang Street |https://bertlang.unibocconi.it/      |
 |BertViz [172]    |https://github.com/jessevig/bertviz  |
 
@@ -532,7 +532,7 @@ multi-task learning and pre-training are complementary technologies
   hidden size of 3072 and 32 attention heads) and
   Turing-NLG (17 billion parameters, 78 Transformer layers with a hidden size
   of 4256 and 28 attention heads)
-* needs ... techniques such as distributed training, mixed precision, gradient
+* needs techniques such as distributed training, mixed precision, gradient
   accumulation, etc. Therefore, a more practical
 * [other] direction is to design more efficient model architecture,
   self-supervised pre-training tasks, optimizers and training skills
@@ -561,7 +561,7 @@ multi-task learning and pre-training are complementary technologies
 
 * explainable artificial intelligence (XAI) [4] has become a hotspot in general
 * attention interpretability is still controversial [66, 142]
-* adversarial examples ... with imperceptible perturbations from the original
+* adversarial examples with imperceptible perturbations
   * Jin+ [71] successfully attacked the finetuned BERT on text classification
     and textual entailment with adversarial examples
   * universal adversarial triggers (Wallace+ [175])

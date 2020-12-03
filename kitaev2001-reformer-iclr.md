@@ -3,9 +3,9 @@ Nikita Kitaev, Łukasz Kaiser, Anselm Levskaya
 ICLR 2020 arXiv:2001.04451 [cs.LG]
 
 * training Transformers can be prohibitively costly, especially on long seqs
-* We introduce two techniques to improve the efficiency of Transformers. For
+* We introduce two techniques to improve the efficiency of Transformers
   * replace dot-product attention by one that uses locality-sensitive hashing,
-    changing its complexity from O(L2) to O(LlogL), where L is the length of the
+    changing its complexity from O(L2) to O(LlogL)
   * reversible residual layers instead of the standard residuals, which
     * allows storing activations only once in the training process
       instead of N times, where N is the number of layers
@@ -15,20 +15,17 @@ ICLR 2020 arXiv:2001.04451 [cs.LG]
 # 1 Intro
 
 * long sequences
-  * Up to 11 thousand tokens of text in a single example (Liu+ 2018) and when
-  * other modalities, like music (Huang+ 2018) and images (Parmar+ 2018), even
-    longer sequences are commonplace. These large-scale long-sequence models
-  * some argue that this trend is breaking NLP research 1 . Many large
-    https://hackingsemantics.xyz/2019/leaderboards/ 1
+  * Up to 11 thousand tokens of text in a single example (Liu+ 2018)
+  * in other modalities, like music (Huang+ 2018) and images (Parmar+ 2018),
+    even longer sequences are commonplace
+  * some argue that this trend is breaking NLP research
+    https://hackingsemantics.xyz/2019/leaderboards/
 * If our memory use was only per-layer, then we should fairly easily fit a large
-  Transformer even on sequences of length 64K on a single accelerator. Further,
-  the whole corpus used to train BERT only requires 17GB to store. Why is it
-  then that we cannot even fine-tune these models on single machines?
-
-The above estimate includes only per-layer memory and input activations cost and
-does not take into account the following major sources of memory use in the
-Transformer
-  * Memory in a model with N layers is N -times larger than in a single-layer
+  Transformer even on sequences of length 64K on a single accelerator
+  * whole corpus used to train BERT only requires 17GB to store
+  * Why is it then that we cannot even fine-tune these models on single machins?  
+* major sources of memory use in the Transformer:
+  Memory in a model with N layers is N times larger than in a single-layer
 * activations need to be stored for back-propagation
 * We introduce the Reformer model which solves these problems using
   * Reversible layers, first introduced in Gomez+ (2017), enable storing only a
@@ -42,9 +39,9 @@ Transformer
   * Splitting activations in fact only affects the implementation; it is
     numerically identical to the layers used in the Transformer. Applying
   * reversible residuals instead of the standard ones does change the model but
-    has a negligible effect on training in all configurations
-  * locality-sensitive hashing in attention is a more major change that can
-    influence the training dynamics, depending on the number of concurrent
+    * negligible effect on training in all configurations
+  * locality-sensitive hashing in attention is a more major change that 
+    can influence the training dynamics, depending on the number of concurrent
     hashes used. We study this parameter and find a value which is both
     efficient to use and yields results very close to full attention
 * We experiment

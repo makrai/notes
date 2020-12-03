@@ -8,7 +8,7 @@ EMNLP 2019
   However, it is still unclear which component dominates  disambiguation
 * In this paper
   * evaluating hidden states and
-  * investigating the distributions of self-attention. We
+  * investigating the distributions of self-attention
   * train a classifier to predict whether a translation is correct given the
     representation of an ambiguous noun
 * We find that encoder hidden states outperform word embeddings significantly

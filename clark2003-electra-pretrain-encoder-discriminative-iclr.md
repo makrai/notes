@@ -40,7 +40,7 @@ https://github.com/google-research/electra
 * Although our approach is reminiscent of training the discriminator of a GAN,
   * not adversarial in that the generator is trained with maximum likelihood
     due to the difficulty of applying GANs to text (Caccia+ 2018)
-* ELECTRA for “Efficiently Learning an Encoder that Classifies Token Replacem
+* ELECTRA for "Efficiently Learning an Encoder that Classifies Token Replacem"
   * we apply it to pre-train Transformer text encoders (Vaswani+ 2017)
   * ablations, we show that learning from all input positions causes ELECTRA to
     * much faster than BERT
@@ -204,7 +204,7 @@ https://github.com/google-research/electra
 * base-sized ELECTRA model substantially outperforms BERT-Base and even
   outperforms BERT-Large (which gets 84.0 GLUE score)
 
-## 3.4 LARGE MODELS
+## 3.4 Large models
 
 * big ELECTRA models to measure the effectiveness of the replaced token
   detection pre-training task at the large scale of current state-of-the-art
@@ -229,7 +229,7 @@ https://github.com/google-research/electra
     * Perhaps replaced token detection is particularly transferable to the
       answerability classification of SQuAD 2.0
 
-## 3.5 EFFICIENCY ANALYSIS
+## 3.5 Efficiency analysis
 
 * We have suggested that posing the training objective over a small subset of
   tokens makes masked language modeling inefficient. However, it isn’t entirely

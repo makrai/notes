@@ -158,7 +158,7 @@ TACL 2020
     * typically not found in English and
     * potentially problematic for NLP models
 * Figures
-  2.  interaction among three phenomena in a Finnish example,
+  2. interaction among three phenomena in a Finnish example,
   3. non-trivial word form changes due to inflection in Russian
   * Arabic also exemplifies many phenomena that are likely to challenge current
     * spelling variation of names (Figure 4),

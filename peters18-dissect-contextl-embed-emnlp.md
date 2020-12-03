@@ -10,8 +10,8 @@ EMNLP 2018
   * between LSTMs and the other alternatives,
     but the effect is relatively modest and all three networks work in practice
 * all architectures
-  * outperform word embeddings for four ... NLP tasks
-  * representations ... vary with network depth,
+  * outperform word embeddings for four NLP tasks
+  * representations vary with network depth,
     * exclusively morphological based at the word embedding layer through
     * local syntax based in the lower contextual layers to
     * longer range semantics such coreference at the upper layers
@@ -28,7 +28,7 @@ EMNLP 2018
 * relative error reductions range from 10–25%
 * architectures
   * Previous work on learning contextual representations: LSTM-based biLMs, but
-  * [there are] more computationally efficient networks ... for sequence modeln
+  * [there are] more computationally efficient networks for sequence modeln
     * including gated CNNs for language modeling (Dauphin+ 2017) and
     * feed forward self-attention based approaches for machine translation
       (Transformer; Vaswani+ 2017)
@@ -60,7 +60,7 @@ EMNLP 2018
 * biLM combines a forward and backward LM to jointly maximize the log likelihud
 * first produce a context-insensitive token representation or word embedding
   (with either an embedding lookup or in our case a character aware encoder)
-* Then ... L layers of context-dependent representations h k,i
+* Then L layers of context-dependent representations h k,i
   using a RNN, CNN or feed forward network (see Sec. 3)
 * top layer output h k,L is used to predict the next token using Softmax
 * concatenate the forward and backward states to form
@@ -88,7 +88,7 @@ EMNLP 2018
 
 ## 3.1 LSTM
 
-* Among the RNN variants, LSTMs ... provide SOTA performance 
+* Among the RNN variants, LSTMs provide SOTA performance 
   for several benchmark LM tasks (Józefowicz+ 2016; Merity+ 2018; Melis+ 2018)
 * LSTM with projection (Sak+ 2014)
   * use a large hidden state while reducing the total number of parameters
@@ -123,7 +123,7 @@ EMNLP 2018
 * first time that the Transformer [provides] competitive results for LM
 * our goal is to compare representations [of approximately equal] perplexity
 * The Transformer and CNN based models are 3--5x faster than the LSTM ones
-* While the CNN and Transformer implementations are ... well optimized, the
+* While the CNN and Transformer implementations are well optimized, the
   LSTM biLM [does not use an optimized CUDA kernel due to] the projection cell
 * the faster architectures will allow training to scale to large unlabeled txt
   * improve the quality of biLM [] for syntactic tasks (Zhang and Bowman, 2018)
@@ -131,7 +131,7 @@ EMNLP 2018
 # 4 Evaluation as word representations 4
 
 * four benchmark NLP tasks
-* we ... swapping out pre-trained GloVe vectors (Pennington+ 2014) 
+* we swapping out pre-trained GloVe vectors (Pennington+ 2014) 
   for contextualized word vectors from each biLM
   by applying the learned weighted average ELMo pooling from Peters+ (2018)
 * not fine tune the LM weights
@@ -191,7 +191,7 @@ EMNLP 2018
 
 * In this section, we examine the intrinsic properties of contextual vectors
   * focusing on those that are independent of the architecture details
-  * how ... linguistic information
+  * how linguistic information
     * morphology in the word embedding layer, to
     * local syntax in the lowest contextual layers, to
     * semantic relationships such as coreference in the upper layers
@@ -236,7 +236,7 @@ EMNLP 2018
   as in many cases it is possible to replace them with their referent. If true,
   we should be able to use [them for] unsupervised coreference resolution
 * experiment as follows
-  * to rule out trivial ... similarities due to lexical overlap, we
+  * to rule out trivial similarities due to lexical overlap, we
     restricted to pronominal coreference resolution
   * took all sentences from the development set of the OntoNotes annotations in
     the CoNLL 2012 shared task (Pradhan+ 2012) that had a third-person
@@ -244,7 +244,7 @@ EMNLP 2018
   * upper bound on performance, the [SOTA supervised] coreference model from
     Lee+ (2017) finds an antecedent span with the head word 64% of the time
   * lower bound
-    * closest noun ... before the pronoun has an accuracy of 27%, and
+    * closest noun before the pronoun has an accuracy of 27%, and
     * first noun in the sentence has an accuracy of 35%
     * If we [restrict to antecedent nouns to match] in number, the
       accuracies increase to 41% and 47% respectively
@@ -265,7 +265,7 @@ EMNLP 2018
 ## 5.2 Context independent word representation 8
 
 * word analogy task introduced in Mikolov+ (2013) are commonly used as
-* we ... compare the word embedding layer from the biLMs to word vectors
+* we compare the word embedding layer from the biLMs to word vectors
 * syntactic with examples such as “bird:birds :: goat:goats”, and semantic
 * the word embedding layer x k from the biLMs is markedly different
   * syntactic accuracies on par or better then GloVe, but with
@@ -276,7 +276,7 @@ EMNLP 2018
 
 ## 5.3 Probing contextual information
 
-* In this section, we quantify some of the ... observations made in Sec. 5.1
+* In this section, we quantify some of the observations made in Sec. 5.1
 * a series of linear probes (Belinkov+ 2017) with two NLP tasks
   to test the contextual representations in each model layer for each biLM
 * to what extent the span representations capture phrasal syntax
@@ -300,7 +300,7 @@ EMNLP 2018
   * valid tree is built with a greedy decoding step that 
     reconciles overlapping spans with an ILP, similar to Joshi+ (2018)
 * The third row in Fig. 3 shows the results
-  * independent ... alone has F1 of near 80% for the best layers from each arch
+  * independent alone has F1 of near 80% for the best layers from each arch
 
 ## 5.4 Learned layer weights
 
@@ -349,7 +349,7 @@ EMNLP 2018
 
 * future work
   * scaling up model size or data size?
-    * As ...  computationally efficient architectures also learn high quality
+    * As  computationally efficient architectures also learn high quality
   * Infusing models with explicit syntactic structure or other linguistically
-    motivated inductive biases ... in a multitask or semisupervised manner
+    motivated inductive biases in a multitask or semisupervised manner
   * computer vision style feature re-use and transfer

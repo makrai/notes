@@ -24,10 +24,10 @@ TACL Volume 7, 2019 p.49-72
 
 # Intro
 
-* [deep learning in NLP ...  improved] various tasks, including
+* [deep learning in NLP improved] various tasks, including
   * language modeling (Mikolov+ 2010; Jozefowicz+ 2016),
   * syntactic parsing (Kiperwasser and Goldberg, 2016),
-  * machine translation (MT) (Bahdanau+ 2014; Sutskever+ 2014), and
+  * machine translation (MT, Bahdanau+ 2014; Sutskever+ 2014), and
   * many other tasks; see Goldberg (2017) for example success stories
 * two trends
   * incorporating [linguistic knowledge] inside the networks
@@ -49,7 +49,7 @@ TACL Volume 7, 2019 p.49-72
 * English past tense (Rumelhart and McClelland 1986) built a feedforward NN for
   * analyzed its performance on a variety of examples and conditions. They were
   * performance over the course of training,
-    as their goal was to model ...  acquisition in children
+    as their goal was to model acquisition in children
     They also analyzed a scaled-down version
     having eight input units and eight output units, which
     allowed them to describe it exhaustively and examine
@@ -82,7 +82,7 @@ TACL Volume 7, 2019 p.49-72
   * logistic regression classifier that predicts different syntactic properties
   * The authors concluded that the NMT encoders learn significant syntactic
     * both word level and sentence level. They also
-    * compared ...  different encoding layers and found that
+    * compared different encoding layers and found that
       "local features are somehow preserved in the lower layer whereas
       more global, abstract information tends to be stored in the upper layer"
 * Other methods for finding correspondences between parts of the NN and props
@@ -115,9 +115,9 @@ TACL Volume 7, 2019 p.49-72
       direct supervision is required for solving harder cases.  (Linzen+ 2016)
 * hierarchical nature of the learned representations. We have already mentioned
   * NMT (Shi+ 2016b) and a visually grounded speech model (Alishahi+ 2017)
-  * syntax were also reported to emerge in other RNN models (Blevins+ 2018)
+  * syntax was also reported to emerge in other RNN models (Blevins+ 2018)
 * models trained with latent trees perform better on natural language inference
-  (NLI) (Williams+ 2018; Maillard and Clark, 2018) than ones trained with
+  (NLI, Williams+ 2018; Maillard and Clark, 2018) than ones trained with
   linguistically annotated trees
   * trees in these models do not resemble syntactic trees
     * casts doubts on the importance of syntax-learning in the underlying NN
@@ -125,7 +125,7 @@ TACL Volume 7, 2019 p.49-72
 ## components in the NN being investigated
 
 * word embeddings, RNN hidden states or gate activations, sentence embeddings,
-  and attention weights in sequence-to-sequence (seq2seq) models. Generally
+  and attention weights in sequence-to-sequence (seq2seq) models
 * less work has analyzed convolutional NNs in NLP, 
   but see Jacovi+ (2018) for a recent exception
 * speech processing, researchers have analyzed layers in deep NNs
@@ -140,7 +140,7 @@ TACL Volume 7, 2019 p.49-72
   * e.g. NTM
     * Vanmassenhove+ (2017) investigated [verb] aspect in NMT
       * [latent vectors] can accurately predict tense about 90% of the time
-      * output translations ... have the correct tense only 79% of the time
+      * output translations have the correct tense only 79% of the time
       * ‘‘part of the aspectual information is lost during decoding.’’
     * Cı́fka and Bojar (2018) compared the performance of various NMT models in
       * translation quality (BLEU) and representation quality (classification)
@@ -169,7 +169,7 @@ TACL Volume 7, 2019 p.49-72
       (Qian+ 2016b; Belinkov, 2018)
     * tasks requiring more nuanced linguistic knowledge gain the most
       (Conneau+ 2018)
-    * usually taken for granted; given its prevalence, ... better theoretical
+    * usually taken for granted; given its prevalence, better theoretical
       or empirical foundations are in place
 
 # 3 Visualization methods 5
@@ -222,7 +222,7 @@ TACL Volume 7, 2019 p.49-72
 
 # 4 Challenge sets, aka. test suites, for fine-grained eval 6
 
-* challenge sets ... have been used in NLP for a long time (Lehmann+ 1996),
+* challenge sets have been used in NLP for a long time (Lehmann+ 1996),
   especially for evaluating MT systems (King and Falkedal, 1990; Isahara, 1995;
   Koh+ 2001)
 * [desirable] properties of test suites (Lehmann+ 1996):
@@ -234,7 +234,7 @@ TACL Volume 7, 2019 p.49-72
 * [then] a hiatus of a couple of decades, 9 challenge sets have
   * can be attributed to the rise of large-scale quantitative evaluation
 * recently gained renewed popularity in the NLP community
-* In this section, we include datasets ... that diverge from the common
+* In this section, we include datasets that diverge from the common
   average-case evaluation. Many of them share some of the properties noted by
 * categorized along the following criteria
   * Another typology of evaluation protocols (Burlot and Yvon 2017)
@@ -280,4 +280,4 @@ TACL Volume 7, 2019 p.49-72
     * gen capacity (Weiss+ 2018; Bernardy, 2018; Suzgun+ 2019), or the
     * formal properties they possess (Chen+ 2018b)
 
-# 8 Conclusion ... and potential research directions 11
+# 8 Conclusion and potential research directions 11

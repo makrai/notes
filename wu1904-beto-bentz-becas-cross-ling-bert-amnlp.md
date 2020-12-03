@@ -4,7 +4,7 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 
 # Abstract
 
-* mBERT (Devlin, 2018) includes a model simultaneously pretrained on 104
+* mBERT (Devlin, 2018) includes a model simultaneously pretrained on 104 langs
   * impressive performance for zero-shot cross-lingual transfer on a NLI
 * This paper explores mBERT as a zero shot language transfer model on 5 NLP
   * 39 languages from various language families:
@@ -68,8 +68,8 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 * feature-based approach with LSTM under-performs fine-tuning approach. We
   hypothesize that initialization from pretraining with lots of languages
   provides a very good starting point that is hard to beat.  Additionally, the
-  LSTM could also be part of the problem. In Ahmad+ (2019) for dependency
-  parsing, an LSTM encoder
+  LSTM could also be part of the problem
+  * Ahmad+ (2019) an LSTM encoder for dependency parsing
 
 ## 5.3 Question #3: Does mBERT retain language specific information?
 

@@ -31,7 +31,7 @@ https://github.com/pdufter/minimult
     the model needs to be deep and languages need to share a similar “structure”
   * Artetxe+ (2020): neither a shared vocabulary nor joint pretraining is reqred
   * Conneau+ (2020b)
-    * models across languages can be easily aligned and that a
+    * models across languages can be easily aligned
     * necessary requirement is shared parameters in the top layers
 * We find indications that six elements influence the multilinguality of BERT
   Figure 1 summarizes our main findings
@@ -76,22 +76,23 @@ https://github.com/pdufter/minimult
 * All our evaluations are performed on development data,
   except for word translation and when indicated explicitly
 
-### Vocabulary. We create a vocabulary of size 2048 from the Easy-to-Read Bible
+### Vocabulary of size 2048 from the Easy-to-Read Bible
 
 * Using the same vocabulary for English and Fake-English yields a final
   vocabulary size of 4096
 
-### Model. We use the
+### Model
 
 * BERT-Base architecture (Devlin+ 2019), modified to achieve a smaller model:
-* BERT-small: we divide hidden size, intermediate size of the feed forward layer and number
-  of attention heads by 12; thus, hidden size is 64 and intermediate size 256
+* BERT-small: we divide hidden size, intermediate size of the feed forward layer
+  and number of attention heads by 12; thus, hidden size is 64 and intermediate
+  size 256
 * this leaves us with a single attention head,
   * K+ (2020) found that the number of attention heads is not important
   * neither for overall performance nor for multilinguality. We call this
 * untrained: consistency check for our experiments we consider random embeddings
 
-### Training Parameters. We mostly use the original training parameters as
+### Training Parameters. We mostly use the original training parameters
 
 ## 2.2 Evaluation
 
@@ -108,7 +109,7 @@ https://github.com/pdufter/minimult
   * layer 0 includes position and segment embeddings besides the token
     embeddings as well as layer normalization
 
-#### Word Alignment. Sabet+ (2020) find that mBERT performs well on word
+#### Word Alignment. Sabet+ (2020) find that mBERT performs well
 
 * By construction, we have a sentence-aligned corpus with English and Fake-En
 * To extract word alignments from BERT we use Sabet+ (2020)’s Argmax method
