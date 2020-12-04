@@ -24,13 +24,13 @@ TACL Volume 7, 2019 p.49-72
 
 # Intro
 
-* [deep learning in NLP improved] various tasks, including
+* deep learning in NLP improved various tasks, including
   * language modeling (Mikolov+ 2010; Jozefowicz+ 2016),
   * syntactic parsing (Kiperwasser and Goldberg, 2016),
   * machine translation (MT, Bahdanau+ 2014; Sutskever+ 2014), and
   * many other tasks; see Goldberg (2017) for example success stories
 * two trends
-  * incorporating [linguistic knowledge] inside the networks
+  * incorporating linguistic knowledge inside the networks
   * understand how NLP models work
 * interpretability in machine learning, along with [NLP-spec characteristics]
   * accountability, trust, fairness, safety, and reliability
@@ -55,7 +55,7 @@ TACL Volume 7, 2019 p.49-72
     allowed them to describe it exhaustively and examine
     how certain rules manifest in network weights
   * seminal work on RNNs, (Elman, 1989, 1990, 1991).Elman trained networks on
-    synthetic sentences in a [char-level] language prediction task
+    synthetic sentences in a char-level language prediction task
     extensive analyses, he showed how networks discover the notion of a word
     * syntactic structures like number agree-ment; and acquire
     * word representations that reflect lexical and syntactic categories
@@ -68,12 +68,12 @@ TACL Volume 7, 2019 p.49-72
 
 # 2 What Linguistic Information Is Captured in Neural Networks?
 
-* [analysis] work i.e. Identifying linguistic information
+* analysis work i.e. Identifying linguistic information
 * Table SM1 (in the supplementary materials) categorizes analysis work
 
 ## methods used for conducting the analysis, what kind of
 
-* predict [linguistic] properties from activations of the NN
+* predict linguistic properties from activations of the NN
   * various names: ‘‘auxiliary prediction tasks’’ (Adi+ 2017b), ‘‘diagnostic
     classifiers’’ (Veldhoen+ 2016), and ‘‘probing tasks’’ (Conneau+ 2018)
   * e.g. syntax in neural machine translation (NMT) by Shi+ (2016b). In this
@@ -99,7 +99,7 @@ TACL Volume 7, 2019 p.49-72
       representation for X is closer to A or B
     * lower layers generally encode more phonological information
 
-## linguistic information sought
+## 2.2 linguistic information sought
 
 * ranging from basic properties like sentence length, word position,
   word presence, or simple word order, to
@@ -110,7 +110,7 @@ TACL Volume 7, 2019 p.49-72
   * NNs learn a substantial amount of information on various linguistic phenoms
   * especially successful at capturing frequent properties, while
     * some rare properties are more difficult to learn.  5
-    * e.g.  LSTM language models are able to capture subject–verb agreement in
+    * e.g. LSTM language models are able to capture subject–verb agreement in
       many common cases, while
       direct supervision is required for solving harder cases.  (Linzen+ 2016)
 * hierarchical nature of the learned representations. We have already mentioned
@@ -138,8 +138,8 @@ TACL Volume 7, 2019 p.49-72
 * that a certain amount of linguistic information is captured in the NN, does
   not necessarily mean that the information is used by the network
   * e.g. NTM
-    * Vanmassenhove+ (2017) investigated [verb] aspect in NMT
-      * [latent vectors] can accurately predict tense about 90% of the time
+    * Vanmassenhove+ (2017) investigated verb aspect in NMT
+      * latent vectors can accurately predict tense about 90% of the time
       * output translations have the correct tense only 79% of the time
       * ‘‘part of the aspectual information is lost during decoding.’’
     * Cı́fka and Bojar (2018) compared the performance of various NMT models in
@@ -148,18 +148,19 @@ TACL Volume 7, 2019 p.49-72
       * high-quality systems may not be learning certain sentence meanings
     * Artetxe+ (2018) showed that word embeddings contain divergent linguistic
       * can be uncovered by applying a linear transformation on the embeddings
-      * embeddings "have limits on how [linguistic] information is surfaced"
-* concern[s] with correlation: a measure of causation is lacking
+      * embeddings "have limits on how linguistic information is surfaced"
+* concerns with correlation: a measure of causation is lacking
   * How does the encoding of linguistic properties affect the system output?
 * Giulianelli+ (2018)
   * predicted number agreement from RNN hidden states and gates at different
     time steps
-  * intervened in how the model processes the sentence by changing a hidden
-    activation based on the difference between the prediction and the correct
-    label. This improved agreement prediction accuracy, and the effect
-    persisted over the course of the sentence, indicating that this information
-    has an effect on the model. However, they did not report the effect on
-    overall model quality, for example by measuring perplexity
+  * intervened in how the model processes the sentence by 
+    changing a hidden activation based on the difference 
+    between the prediction and the correct label. 
+    * This improved agreement prediction accuracy, and 
+      the effect persisted over the course of the sentence, indicating that 
+      this information has an effect on the model.  
+    * hE, they did not report the effect on overall model quality, e.g. perplext
 * causal inference may shed new light on some of these questions
 * different classifiers
   * usually a simple classifier, such as logistic regression
@@ -192,7 +193,7 @@ TACL Volume 7, 2019 p.49-72
   important or salient features can then be visualized in selected examples
   (Li+ 2016a; Aubakirova and Bansal, 2016; Sundararajan+ 2017; Arras+ 2017a,b;
   Ding+ 2017; Murdoch+ 2018; Mudrakarta+ 2018; Montavon+ 2018; Godin+ 2018)
-  Saliency [of] intermediate values (Ghaeini+ 2018). 7
+  Saliency of intermediate values (Ghaeini+ 2018). 7
 * many of the visualization methods are adapted from the vision domain, where
   they have been extremely popular; see Zhang and Zhu (2018) for a survey
 * cluster NN activations and compare them to some linguistic property
@@ -225,20 +226,20 @@ TACL Volume 7, 2019 p.49-72
 * challenge sets have been used in NLP for a long time (Lehmann+ 1996),
   especially for evaluating MT systems (King and Falkedal, 1990; Isahara, 1995;
   Koh+ 2001)
-* [desirable] properties of test suites (Lehmann+ 1996):
+* desirable properties of test suites (Lehmann+ 1996):
   systematicity, control over data, inclusion of negative data, and
   exhaustivity
   * echoed in more recent work (Wang+ 2018a). For instance,
   * e.g. semantic test suite (Cooper+ 1996) that targets phenomena as diverse
     as quantifiers, plurals, anaphora, ellipsis, adjectival properties
-* [then] a hiatus of a couple of decades, 9 challenge sets have
+* then a hiatus of a couple of decades, 9 challenge sets have
   * can be attributed to the rise of large-scale quantitative evaluation
 * recently gained renewed popularity in the NLP community
 * In this section, we include datasets that diverge from the common
   average-case evaluation. Many of them share some of the properties noted by
 * categorized along the following criteria
   * Another typology of evaluation protocols (Burlot and Yvon 2017)
-    * partially overlapping with ours, [not as comprehensive] like ours
+    * partially overlapping with ours, not as comprehensive like ours
 * Table SM2 categorizes many recent challenge sets along these criteria. Below
 
 ## task they seek to evaluate
@@ -269,8 +270,8 @@ TACL Volume 7, 2019 p.49-72
 * intrusion tasks, where humans need to identify an intruder word, 
   chosen based on difference in word embedding dimensions 
   (Murphy+ 2012; Fyshe+ 2015; Faruqui+ 2015)
-  * [originally for] probabilistic topic models (Chang+ 2009)
-  * a word embedding model [is] more interpretable if humans are better able to
+  * originally for probabilistic topic models (Chang+ 2009)
+  * a word embedding model is more interpretable if humans are better able to
     identify the intruding words
 * alternative automatic metrics (Park+ 2017; Senel+ 2018)
 * ability to learn formal languages 

@@ -104,7 +104,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
     weights is used to hardly sample a single input as context vector c, in
     particular following a reinforcement learning strategy [16]
 
-#III Uses of attention in various NLP tasks 5
+# III Uses of attention in various NLP tasks 5
 
 * Attention enables us to
   * estimate the relevance of the input elements as well as to
@@ -139,10 +139,10 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * question answering, where the input consists of two textual sequences,
     the question and the document or the question and the possible answers
 
-#IV Taxonomy of attention models 6
+# IV Taxonomy of attention models 6
 
-#V Combined with knowledge about the task or the data 11
+# V Combined with knowledge about the task or the data 11
 
-#VI Open challenges, current trends, and future directions 13
+# VI Open challenges, current trends, and future directions 13
 
-#VII Concludes 15
+# VII Concludes 15
