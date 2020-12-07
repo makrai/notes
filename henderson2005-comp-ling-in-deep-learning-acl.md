@@ -218,7 +218,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     attention heads, but not by the model as a whole 
 * currently different token definitions for different tasks
   (e.g. character / word / sentence embeddings)
-* whether a specification of the set of entities at a given level can be learnd
+* whether a specification of the set of entities at a given level can be learned
 * models which induce the set of entities in an input text, 
   (but these not learned jointly with a downstream deep learning model)
   * BPE (Sennrich+ 2016) and unigram language model (Kudo, 2018)

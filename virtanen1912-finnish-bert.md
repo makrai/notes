@@ -10,7 +10,7 @@ https://turkunlp.org/finbert
 * multilingual models that can be
   fine-tuned to address tasks in a large number of different languages
 * [we compare] the multilingual BERT model on a range of [Finnish] tasks,
-  ... with a new Finnish BERT model trained from scratch
+  with a new Finnish BERT model trained from scratch
 * language-specific model is shown to systematically and clearly outperform
   the multilingual
 * multilingual model largely fails to reach the performance of previously
@@ -86,7 +86,7 @@ https://turkunlp.org/finbert
 * We then used the Sentence-Piece (Kudo and Richardson, 2018) implementation
   of byte-pair-encoding (BPE, Sennrich+ 2016) to generate cased and
   uncased vocabularies of 50,000 word pieces each
-* coverage of ... vocabularies and compare these to previously introduced
+* coverage of vocabularies and compare these to previously introduced
   * we sampled a random 1% of tokens extracted [from] Wikipedias and
   * determine the number of word pieces and unknown pieces per basic token
     * English, both BERT and M-BERT generate less than 1.2 WordPieces per token
@@ -125,13 +125,13 @@ https://turkunlp.org/finbert
     * subject number (SubjNum) task the number of the subject, i.e. singular or
     * Object number (ObjNum) is similar to the previous task but for objects of
     * Coordination inversion (CoordInv) has the order of two clauses joined by
-      a coordinating conjunction reversed in half the examples. The
+      a coordinating conjunction reversed in half the examples.
       * model then has to predict whether or not a given example was inverted
     * Tense task -- whether a main verb of a sentence is in the present or past
 
 ### Results
 
-* best performance is achieved by ... language-specific model for all tasks
+* best performance is achieved by language-specific model for all tasks
   except TreeDepth, where M-BERT reaches the highest performance
 * differences between the results for the language-specific and multilingual
   * modest for most tasks
@@ -140,9 +140,9 @@ https://turkunlp.org/finbert
 
 # 5 Discussion
 
-* Finnish ranks 24th ... by Wikipedia article count, and
+* Finnish ranks 24th by Wikipedia article count, and
   * 25th in Common Crawl by page count. There are thus dozens of languages
-* methods ... have only few language dependencies, such as the use of 
+* methods have only few language dependencies, such as the use of 
   UD parsing results for filtering
 
 # Conclusions

@@ -6,8 +6,8 @@ http://cogcomp.org/page/publication_view/900
 
 # Abstract
 
-* multilingual BERT (M-BERT) is trained without any cross-lingual objective and
-  with no aligned data
+* multilingual BERT (M-BERT) is trained without any 
+  cross-lingual objective and aligned data
 * We study the impact of linguistic properties of the languages, the
   architecture of the model, and the learning objectives
 * three typologically different languages: Spanish, Hindi, and Russian
@@ -52,7 +52,7 @@ http://cogcomp.org/page/publication_view/900
 
 * Hindi has a Subject-Object-Verb order
 * We study the effect of word-ordering similarity by randomly permuting some
-  percentage of words in sentences during pre-training. We permute both source
+  percentage of words in sentences during pre-training
 
 ### 3.2.3 WORD-FREQUENCY SIMILARITY
 
@@ -65,7 +65,7 @@ http://cogcomp.org/page/publication_view/900
 # 4 DISCUSSION AND FUTURE WORK 9
 
 * finding is that
-  * word-piece overlap and multihead attention are both not significant, whereas
+  * neither word-piece overlap nore multihead attention are significant
   * structural similarity and the depth of B-BERT are crucial for its cross-ling
 * B-BERT and M-BERT
   * in order to better control interference among languages, we studied B
@@ -78,5 +78,5 @@ http://cogcomp.org/page/publication_view/900
   when the premise and hypothesis are in different languages
   * (This data was created using XNLI where in the original form the languages
     contain the same premise and hypothesis pair)
-  * One of the possible explanations could be that BERT is learning to make
-    textual entailment decisions by matching words or phrases
+  * One of the possible explanations could be that 
+    BERT makes textual entailment decisions by matching words or phrases

@@ -50,13 +50,13 @@ arXiv:2004.10151 [cs.CL]
 
 * unstructured, unlabeled, multi-domain, and multilingual data
 * in the limit, to everything humanity has ever written
-* (whether mono~ or multilingual) has led to substantial advances in
+* (whether mono~ or multilingual) has led to substantial advances
 * benchmarks (Wang+ 2019a)
 * transfer learning enabled by representations in deep models
   * Traditionally, transfer learning relied on [classes i.e. symbols]
   * Embeddings [encompass multiple] lexical senses,
     violating this structural assumption
-* [saturation] in terms of data and parameters.  Concretely, Mikolov+ (2013)
+* [saturation] in terms of data and parameters
 * [Mikolov and contextual embeddings] have expanded the notion of
   local context to include multiple sentences
 * language modeling—the modern workhorse of neural NLP systems

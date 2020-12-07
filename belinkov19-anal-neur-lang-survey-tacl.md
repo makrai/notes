@@ -244,7 +244,7 @@ TACL Volume 7, 2019 p.49-72
 
 ## task they seek to evaluate
 
-## linguistic phenomena they aim to study
+## 4.2 linguistic phenomena they aim to study
 
 ## language(s) they target
 

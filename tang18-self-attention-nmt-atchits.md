@@ -1,5 +1,6 @@
 Why Self-Attention? A Targeted Evaluation of NMT Architectures
 Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
+2018
 
 # Abstract
 

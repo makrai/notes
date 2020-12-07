@@ -302,16 +302,16 @@ arXiv:2003.08271 [cs.CL]
 
 * Multilingual BERT (M-BERT) is pre-trained by MLM with the shared vocabulary
   and weights on Wikipedia text from the top 104 languages
-  * no cross-ling (CL) objectives specifically designed nor any CL data
-  * CL generalization surprisingly well [127]
+  * no cross-ling (CrL) objectives specifically designed nor any CrL data
+  * CrL generalization surprisingly well [127]
   * lexical overlap between languages plays a negligible role K+ [74]
   * MASS [147] pretrained on multiple languages
     * significant improvement for unsupervised NMT
 * XLM [25] improves M-BERT by incorporating a crosslingual task,
   translation language modeling (TLM)
   i.e. MLM on a concatenation of parallel bilingual sentence pairs
-* Unicoder [63] further propose three new crosslingual (CL) pre-training tasks,
-  * CL word recovery, CL paraphrase classification, and CL masked LM
+* Unicoder [63] further propose three new crosslingual (CrL) pre-training tasks,
+  * CrL word recovery, CrL paraphrase classification, and CrL masked LM
 * PTMs trained on a single language significantly outperform the multilingual
   [112, 88, 173]
   * For Chinese, which does not have explicit word boundaries
@@ -355,9 +355,9 @@ arXiv:2003.08271 [cs.CL]
 
 ## 5.3 Fine-Tuning Strategies
 
-* Since ULMFit and BERT, fine-tuning has become the main adaption method of
+* Since ULMFit and BERT, fine-tuning has become the main adaption method
   * distinct random seeds can lead to substantially different results [34]
-* Besides standard fine-tuning, there:
+* Besides standard fine-tuning:
 
 ### Two-stage fine-tuning
 
@@ -553,7 +553,7 @@ multi-task learning and pre-training are complementary technologies
 * Breaking this limit e.g.  Transformer-XL [27]
 * neural architecture search (NAS) [205]
 
-## Knowledge Transfer Beyond Fine-tuning Currently, fine-tuning is the dominant
+## Knowledge Transfer Beyond Fine-tuning
 
 * using PTMs as external knowledge [125]
 

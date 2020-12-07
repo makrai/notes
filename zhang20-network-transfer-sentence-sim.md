@@ -8,7 +8,7 @@ arXiv:1804.07835 [cs.CL]
 # Abstract
 
 * Semantic similarity ... SOTA approach is to transfer sentence embeddings
-  pre-trained on large corpora to small in-domain training datasets. Existing
+  pre-trained on large corpora to small in-domain training datasets
   * classifier [optimized] for the downstream task
 * We
   * propose a new setting called direct network transfer, which
@@ -55,10 +55,10 @@ arXiv:1804.07835 [cs.CL]
     sentence encoders and semantic similarity datasets, we show that in many
     cases direct network transfer performs better than learning an additional
     classifier, while also having fewer parameters to learn 
-* contributions. First, we propose a
-  1. new fine-tuning setting called direct network transfer, which directly
+* contributions
+  1. new fine-tuning setting called direct network transfer
     * improved results on the STS Benchmark (Cer+ 2017) and the
-      Human Activity Phrase dataset (Wilson and Mihalcea, 2017), outperforming
+      Human Activity Phrase dataset (Wilson and Mihalcea, 2017)
   2. we compare a range of settings for semantic similarity using some of the
      best LSTM-based sentence encoders across an array of datasets
      * the choice of transfer learning settings generally greatly influences
@@ -92,8 +92,7 @@ arXiv:1804.07835 [cs.CL]
 * both the classifer and the encoder are fine-tuned, end-to-end, before it is
 * Table 1 shows the inconsistent uses of those transfer learning setting of
   sentence encoders over the years, on two semantic similarity datasets (SICK
-  and STS Benchmark)
-
+  and STS Benchmark) 
 
 # 3. Direct Network Transfer 2
 
@@ -184,8 +183,8 @@ arXiv:1804.07835 [cs.CL]
 # 6. Conclusion and Future Work
 
 * novel fine-tuning setting – direct network transfer
-* significantly improved performance on five tasks and outperforms all other
-  settings in the majority of combinations
+* significantly improved performance on five tasks and 
+  outperforms all other settings in the majority of combinations
 * three sentence encoders, eight semantic similarity tasks, and
   nine transfer learning settings 
   * Additionally, we systematically explored specific changes that can be made

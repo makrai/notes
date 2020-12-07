@@ -29,7 +29,7 @@ Street(https://bertlang.unibocconi.it/)
 * different configurations and architectural variants
   * original BERT model was trained using the WordPiece tokenizer (Wu+ 2016),
   * Camem-BERT (Martin+ 2019)) used the SentencePiece tokenizer (available as
-    OSS Out of Specification software, Kudo and Richardson, 2018)
+    Out of Specification software, Kudo and Richardson, 2018)
 * we identified 30 different pretrained language-specific BERT models, covering
   18 Languages and tested on 29 tasks,
   resulting in 177 different performance results
@@ -38,7 +38,7 @@ Street(https://bertlang.unibocconi.it/)
 * We outline some of the parameters here, and introduce the associated website
 * contributions of this paper are the following:
   1. overall picture: architecture, task and domain
-  2. performance of language-specific BERT models compared with the the mBERT
+  2. performance of language-specific BERT models compared with the mBERT
   3. website to interactively explore SOTA models
 
 # 2 Bidirectional Encoder Representations from Transformers 2
@@ -88,7 +88,7 @@ Street(https://bertlang.unibocconi.it/)
   * on average, language-specific BERT models obtain higher results
   * huge variation in the individual performances
 
-### Languages Covered. The language-specific BERT models proposed
+### Languages Covered
 
 * range from high-resourced languages (e.g., French, Italian) to
 * low-resource languages, such as Yorb and Mongolian
@@ -110,14 +110,14 @@ Street(https://bertlang.unibocconi.it/)
   * Yorb is a noteworthy example of cross-lingual transfer
     * Fine-tuning mBERT instead of pretraining from scratch
 
-### NLP tasks We currently index results for 29 NLP tasks. Table 1 reports the
+### NLP tasks. We currently index results for 29 NLP tasks. Table 1
 
 * Named Entity Recognition (NER) the most frequent task (22 entries)
 * there are some multilingual benchmark data: same NLP task used in diff lang
   * Some of them released by research group publishing in well-known confs
   (Yang+ 2019; Sanguinetti and Bosco, 2015; Conneau+ 2018; Völker+ 2019)
   * others released with shared tasks such as SemEval or CoNLL
-    (Zeman+ 2018; Navigli+ 2013; Bosco+ 2016; Benikova+ 2014). The latter group
+    (Zeman+ 2018; Navigli+ 2013; Bosco+ 2016; Benikova+ 2014)
 * noun sense disambiguation task is the only task where 
   language-specific BERT (Le+ 2019) performances are lower than the mBERT ones.
   * could be due to the fact that the training corpora have been
