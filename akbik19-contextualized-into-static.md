@@ -1,4 +1,4 @@
-Pooled Contextualized Embeddings for Named Entity Recognition 
+Pooled Contextualized Embeddings for Named Entity Recognition
 Alan Akbik, Tanja Bergmann, Roland Vollgraf
 2019 NAACL
 
@@ -7,15 +7,42 @@ all code and pre-trained models available to the research community for use and
 # Abstract
 
 * Contextual string embeddings are a recent type of contextualized word embed
-  * SOTA results in a range of sequence labeling tasks. They are based on
-  * character-level language models which 
-    treat text as distributions over characters and are capable of generating
-    embeddings for any string of characters within any textual context.
+  * SOTA results in a range of sequence labeling tasks
+  * character-level language models which
+  * capable of generating embeddings for any string of characters within any
+    textual context
   * hE, struggle to produce meaningful embeddings if a rare string is used in a
-    underspecified context.  To address this drawback, 
-* we propose a method in which we 
-  * dynamically aggregate contextualized embeddings of each unique string that
-  * pooling operation to distill a ”global” word representation from all
-* evaluate these ”pooled contextualized embeddings” on common named entity
-  recognition (NER) tasks such as CoNLL-03 and WNUT and show that our approach
-  significantly improves the SOTA for NER. We make 
+    underspecified context
+* we propose a method in which we
+  * dynamically aggregate contextualized embeddings of each unique string
+  * pooling operation to distill a ”global” word representation
+  * global word representation used in combination with the current contextualzd
+  * i.e. evolving word representations:
+    * change as more instances of the same word are observed
+* evaluate these ”pooled contextualized embeddings” on NER
+  * significantly improves the SOTA for tasks such as CoNLL-03 and WNUT
+
+# 1 Intro
+
+* contextual string embeddings (Akbik+ 2018)
+  * a character-level contextualized embeddings approach
+  * leverage pre-trained character-level language models from which they extract
+    hidden states at the beginning and end character positions of each word to
+    produce embeddings for any string of characters in a sentential context
+  * SOTA results when utilized in sequence labeling tasks such as NER or PoS
+
+## Underspecified contexts. However, such contextualized character-level models
+suffer from an inherent weakness when encountering rare words in an
+underspecified context
+* e.g. “Fung Permadi (Taiwan) v Indra”, from the English CONLL-03 test data
+  * If we consider the word “Indra” to be OOV,
+    the underspecified context allows this word to be interpreted as either a
+    person or an organization
+  * causes an incorrect classification of “Indra” as an organization
+
+## Pooled Contextual Embeddings. In this paper, we present a simple but
+effective approach to address this issue. We intuit that
+* entities are normally only used in underspecified contexts if they are
+  expected to be known to the reader
+  * i.e. either more clearly introduced in an earlier sentence, or
+    part of general in-domain knowledge

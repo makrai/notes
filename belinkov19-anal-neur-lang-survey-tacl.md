@@ -126,7 +126,7 @@ TACL Volume 7, 2019 p.49-72
 
 * word embeddings, RNN hidden states or gate activations, sentence embeddings,
   and attention weights in sequence-to-sequence (seq2seq) models
-* less work has analyzed convolutional NNs in NLP, 
+* less work has analyzed convolutional NNs in NLP,
   but see Jacovi+ (2018) for a recent exception
 * speech processing, researchers have analyzed layers in deep NNs
   for speech recognition and different speaker embeddings. Some analysis has
@@ -154,19 +154,19 @@ TACL Volume 7, 2019 p.49-72
 * Giulianelli+ (2018)
   * predicted number agreement from RNN hidden states and gates at different
     time steps
-  * intervened in how the model processes the sentence by 
-    changing a hidden activation based on the difference 
-    between the prediction and the correct label. 
-    * This improved agreement prediction accuracy, and 
-      the effect persisted over the course of the sentence, indicating that 
-      this information has an effect on the model.  
+  * intervened in how the model processes the sentence by
+    changing a hidden activation based on the difference
+    between the prediction and the correct label
+    * This improved agreement prediction accuracy, and
+      the effect persisted over the course of the sentence, indicating that
+      this information has an effect on the model
     * hE, they did not report the effect on overall model quality, e.g. perplext
 * causal inference may shed new light on some of these questions
 * different classifiers
   * usually a simple classifier, such as logistic regression
-  * deeper classifiers lead to 
+  * deeper classifiers lead to
     * overall better results, but do
-    * not alter the respective trends when comparing models or components 
+    * not alter the respective trends when comparing models or components
       (Qian+ 2016b; Belinkov, 2018)
     * tasks requiring more nuanced linguistic knowledge gain the most
       (Conneau+ 2018)
@@ -242,9 +242,28 @@ TACL Volume 7, 2019 p.49-72
     * partially overlapping with ours, not as comprehensive like ours
 * Table SM2 categorizes many recent challenge sets along these criteria. Below
 
-## task they seek to evaluate
+## task they seek to evaluate 6
 
-## 4.2 linguistic phenomena they aim to study
+## 4.2 linguistic phenomena they aim to study 7
+
+* earlier studies emphasized exhaustivity (Cooper+ 1996; Lehmann+ 1996),
+* recent ones tend to focus on a few properties of interest. For example,
+  * Sennrich (2017), for MT, focusing on five properties:
+    subject–verb agreement, noun phrase agreement, verb–particle constructions,
+    polarity, and transliteration
+  * MT challenge set for morphology, including 14 morphological properties
+    (Burlot and Yvon, 2017)
+  * extending Cooper+ (1996), the
+    GLUE for NLI covers more than 30 phenomena in four coarse categories
+    (lexical semantics, predicate–argument structure, logic, and knowledge)
+  * In MT evaluation, Burchardt+ (2017) reported results using a large test
+    suite covering 120 phenomena, partly based on Lehmann+ (1996)
+  * Isabelle+ (2017) and Isabelle and Kuhn (2018) prepared challenge sets for MT
+    evaluation covering fine-grained phenomena at morpho-syntactic, syntactic,
+    and lexical levels
+  * Generally, datasets that are constructed
+    automatically tend to cover less fine-grained linguistic properties, while
+    manually constructed datasets represent more diverse phenomena
 
 ## language(s) they target
 
@@ -264,18 +283,18 @@ TACL Volume 7, 2019 p.49-72
 
 # 7 A few other methods
 
-* erasing or masking certain neural network components, 
-  such as word embedding dimensions, hidden units, or even full words 
+* erasing or masking certain neural network components,
+  such as word embedding dimensions, hidden units, or even full words
   (Li+ 2016b; Feng+ 2018; Khandelwal+ 2018; Bau+ 2018)
-* intrusion tasks, where humans need to identify an intruder word, 
-  chosen based on difference in word embedding dimensions 
+* intrusion tasks, where humans need to identify an intruder word,
+  chosen based on difference in word embedding dimensions
   (Murphy+ 2012; Fyshe+ 2015; Faruqui+ 2015)
   * originally for probabilistic topic models (Chang+ 2009)
   * a word embedding model is more interpretable if humans are better able to
     identify the intruding words
 * alternative automatic metrics (Park+ 2017; Senel+ 2018)
-* ability to learn formal languages 
-  * earlier (Das+ 1992; Casey, 1996; Gers and Schmidhuber, 2001; 
+* ability to learn formal languages
+  * earlier (Das+ 1992; Casey, 1996; Gers and Schmidhuber, 2001;
     Bodén and Wiles, 2002; Chalup and Blair, 2003)
   * today, with research into modern architectures and
     * gen capacity (Weiss+ 2018; Bernardy, 2018; Suzgun+ 2019), or the

@@ -12,3 +12,22 @@ arXiv preprint arXiv:1906.01502
   * transfer is possible even to languages in different scripts
   * monolingual corpora can train models for code-switching
   * systematic deficiencies affecting certain language pairs
+
+# 1 Intro
+
+* we empirically investigate the degree to which mBERT generalizes across langs.
+  * mBERT released by Devlin+ (2019) as a single language model pre-trained on
+    the concatenation of monolingual Wikipedia corpora from 104 languages. 1
+* mBERT enables a straightforward approach to zero-shot cross-lingual transfer:
+  we fine-tune the model using task-specific training data from one language,
+  and evaluate that task in a different language, thus allowing us to observe
+* Our results show that 
+  * mBERT is able to perform cross-lingual generalization surprisingly well.
+* probing experiments designed to test various hypotheses show that while 
+  * high lexical overlap between languages improves transfer, mBERT is also 
+  * able to transfer between languages written in different scripts— thus having
+  * transfer works best for typologically similar languages, 
+    * suggesting that while mBERT ’s multilingual representation 
+      * able to map learned structures onto new vocabularies, it does 
+      * not to learn systematic transformations of structures to
+        accommodate a target language with different word order

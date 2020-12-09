@@ -2,41 +2,373 @@ What BERT is not: Lessons from a new suite of psycholinguistic diagnostics LM
 Allyson Ettinger
 arXiv:1907.13528
 
+https://github.com/aetting/lm-diagnostics
+
 # Abstract
 
 * we introduce a suite of diagnostics drawn from human language experiments,
   * allow us to ask targeted questions about the information used by LMs
-* BERT can generally distinguish good from bad completions involving shared
-  category or role reversal, albeit with less sensitivity than humans, and it
-  * robustly retrieves noun hypernyms, but it 
-  * struggles with challenging inferences and role-based event prediction -and
-  * clear insensitivity to the contextual impacts of negation. 
+* BERT
+  * can generally distinguish good from bad completions
+    involving shared category or role reversal,
+    albeit with less sensitivity than humans,
+  * robustly retrieves noun hypernyms, but
+  * struggles with challenging inferences and role-based event prediction
+  * clear insensitivity to the contextual impacts of negation
+* from the conclusion
+  * Because these sets are small, we must also be conservative in the conclusion
+    * different formulations may yield different performance
 
 # 1 Intro
 
 * diagnostics targeting a range of linguistic capacities, drawn from psycholing
-  * advantages Because of their origin in psycholinguistics,
+  * advantages: because of their origin in psycholinguistics,
     * carefully controlled to ask targeted questions about linguistic capabilits
-    * ask these questions by examining word predictions in context, which 
-      * allows us to study LMs without any need for task-specific fine-tuning.  
+    * ask these questions by examining word predictions in context, which
+      * allows us to study LMs without any need for task-specific fine-tuning
 * distinctive properties of our diagnostics
-  * chosen specifically for their capacity to reveal insensitivities in
-    predictive models, as evidenced by patterns that they elicit in human brain
-    responses.  
-  * beyond the syntactic focus seen in existing LM diagnostics— we have tests
+  * chosen specifically to reveal insensitivities in predictive models, as
+    evidenced by patterns that they elicit in human brain responses
+  * beyond the syntactic focus seen in existing LM diagnostics— we test
     * commonsense/pragmatic inference, semantic roles and event knowledge,
-      category membership, and negation. 
-* Each of our diagnostics is set up to support tests of both 
-  * word prediction accuracy and 
-  * sensitivity to distinctions between good and bad context completions.
-* we focus on the BERT model here as an illustrative case study, these
-  diagnostics are applicable for testing of any language model.  
+      category membership, and negation
+* Each of our diagnostics is set up to support tests of
+  * word prediction accuracy and
+  * sensitivity to distinctions between good and bad context completions
+* we focus on the BERT model here as an illustrative case study
+  * the diagnostics are applicable for testing of any LM
 * two main contributions
-  * a new set of targeted diagnostics for assessing linguistic capacities in
-  * shed light on strengths and weaknesses of the popular BERT model. We find
-    * struggles with challenging commonsense/pragmatic inferences and 
-      role-based event prediction, that it is 
+  * a new set of targeted diagnostics for assessing linguistic capacities
+  * shed light on strengths and weaknesses of the popular BERT model. It
+    * struggles with challenging commonsense/pragmatic inferences and
+      role-based event prediction
     * generally robust on within-category distinctions and role reversals, but
-      with lower sensitivity than humans, and that it is 
-    * very strong at associating nouns with hypernyms.  Most strikingly,
-    * fails completely to show generalizable understanding of negation,
+      with lower sensitivity than humans, and
+    * very strong at associating nouns with hypernyms
+    * fails completely to show generalizable understanding of negation
+
+# 2 Motivation for use of psycholinguistic tests on LMs
+
+* we are not testing whether LMs are psycholinguistically plausible. We are
+* it is the pre-training that seemingly underlies the generalization power
+
+# 3 Related Work
+
+* fine-grained classification tasks to probe information in
+  * sentence embeddings (Adi+ 2016; Conneau+ 2018; Ettinger+ 2018), or
+  * token-level and other sub-sentence level information in contextual embeds
+    (Tenney+ 2019b; Peters+ 2018b). Some of this work has
+  * targeted specific linguistic phenomena such as
+    * function words (Kim+ 2019)
+  * overall level of “understanding”: semantic similarity and entailment
+    (Wang+ 2018; Bowman+ 2015; Agirre+ 2012; Dagan+ 2005; Bentivogli+ 2016), and
+  * curated versions of these tasks to test for specific linguistic capabilities
+    (Dasgupta+ 2018; Poliak+ 2018; McCoy+ 2019)
+  * Our diagnostics test LMs in their natural setting—via word predict in contxt
+* analyzing linguistic capacities of LMs specifically. This work is particularly
+  * dominated by testing of syntactic awareness in LMs, and often mirrors the
+  * employing targeted evaluations modeled after psycholinguistic tests
+    (Linzen+ 2016; Gulordava+ 2018; Marvin and Linzen, 2018; Wilcox+ 2018;
+    Chowdhury and Zamparelli, 2018; Futrell+ 2019). These analyses, like ours,
+    * typically draw conclusions based on LMs’ output probabilities
+* examined the internal dynamics underlying LMs’ capturing of syntactic info,
+  * in different components of the LM and at different timesteps within the sent
+    (Giulianelli+ 2018), or in
+  * individual units (Lakretz+ 2019)
+  * semantic phenomena like negative polarity items are tested in some studies
+    (Marvin and Linzen, 2018; Jumelet and Hupkes, 2018), but the tested
+    * still firmly rooted in the notion of detecting structural dependencies
+  * we including commonsense/pragmatic reasoning, semantic role and event
+    knowledge, category membership, and negation—while continuing to use
+    * Our tests are also distinct in eliciting a very specific response profile
+      in humans, creating unique predictive challenges for models, as described
+      below. We further deviate from previous work analyzing LMs in that
+* we not only compare word probabilities—we also examine word prediction
+  accuracies directly, for a richer picture of models’ specific strengths/weakns
+  * word prediction accuracy as a test of LMs’ language understanding—the
+  * LAMBADA dataset (Paperno+ 2016), tests models’ ability to predict the final
+    word of a passage, in cases where the final sentence alone is insufficient
+    * not controlled to isolate and test the use of specific types of info in
+* examining linguistic characteristics of the BERT model itself, to better
+  * Clark+ (2019) analyze the dynamics of BERT’s self-attention mechanism,
+    probing attention heads for syntactic sensitivity and finding that
+    individual heads specialize strongly for syntactic and coreference
+    relations
+  * Lin+ (2019) also examine syntactic awareness in BERT by
+    * syntactic probing at different layers, and by
+    * examination of syntactic sensitivity in the self-attention mechanism
+  * Tenney+ (2019a) test a variety of linguistic tasks at different layers of
+  * Goldberg (2019) tests BERT on several of the targeted syntactic evaluations
+    described above for LMs, finding BERT to exhibit very strong performance on
+    these measures
+    Our work: directly via the word prediction mechanism, and in expanding
+    beyond the syntactic tests
+
+# 4 Leveraging human studies. The power in our diagnostics stems from their ori-
+gin in psycholinguistic studies—the items have been carefully designed for
+studying specific aspects of language processing, and each test has been shown
+* In this section we provide relevant background on human language processing,
+  and explain how we use this information to choose the particular tests
+
+## 4.1 Background: prediction in humans To study language processing in humans,
+
+* human responses to words in context, in order to better understand the
+  information that our brains use to generate predictions.  In particular, there
+* two types of predictive human responses that are relevant to us here:
+
+### Cloze probability. The first measure of human expectation is a measure of
+the “cloze” response.  In a cloze task, humans are given an incomplete sentence
+and tasked with filling their expected word in the blank.  We will treat this as
+the best available gold standard for human prediction in context—humans
+* not under any time pressure, so they have the opportunity to use all available
+  information from the context to arrive at a prediction
+
+### N400 amplitude The second measure of human expectation is a brain response
+
+* detected by measuring electrical activity at the scalp (by EEG)
+* to gauge how expected a word w is in a context c—the amplitude of the N400
+  response appears to be sensitive to fit of a word in context, and has been
+  * correlate with cloze in many cases (Kutas and Hillyard, 1984). The N400 has
+  * predicted by LM probabilities (Frank+ 2013).  However, the N400 differs from
+  * expectations reflected in the N400 sometimes deviate from the more
+    fully-formed expectations reflected in the untimed cloze response
+
+## 4.2 Our diagnostic tests The test sets that we use here are
+
+* all drawn from human studies that have
+  * revealed divergences between cloze and N400 profiles—that is, for each of
+  * i.e. N400 response suggests a level of insensitivity to certain information
+    when computing expectations, causing a deviation from the fully-informed
+    cloze predictions. We choose these as our diagnostics because they provide
+  * present particularly challenging prediction tasks, tripping up models that
+    fail to use the full set of available information
+
+# 5 Datasets 4
+
+* Each of our diagnostics supports three types of testing:
+  word prediction accuracy, sensitivity testing, and qualitative prediction anal
+* constructed to constrain the information relevant for making word predictions
+* word prediction accuracy, we use the most expected items from human cloze
+  probabilities as the gold completions
+* sensitivity testing, we compare model probabilities for good versus bad
+  completions— specifically, comparisons on which the N400 showed reduced
+  sensitivity in experiments
+  * whether LMs will show similar insensitivities
+* qualitative predictions analysis: Finally,
+  because these items are constructed in such a controlled manner,
+  * qualitative analysis of models’ top predictions can be highly informative
+* In all tests, the target word to be predicted falls in the final position
+  * tests should function similarly for either left-to-right or bidirectional
+  * only token probabilities in context, they are
+    equally applicable to the masked LM setting of BERT as to a standard LM
+  * we filter out items for which the expected word is not in BERT’s single-word
+* small test sets, due to their origin in psycholinguistic studies. However,
+  * hand-designed by cognitive scientists to test predictive processing
+
+## 5.1 CPRAG-102: commonsense and pragmatic inference
+
+* tests sensitivity to differences within semantic category. The left column of
+  Table 1 shows examples of these items, each of which consists of two
+* Federmeier and Kutas (1999), which tested how brains would respond to
+  different types of context completions, shown in the right columns of Table 1
+* He complained that after she kissed him, he couldn’t get the red color off his
+  face. He finally just asked her to stop wearing that (lipstick/mascara)
+
+### Information needed for prediction Accurate prediction on this set requires
+
+* For instance, in Table 1,
+  * commonsense knowledge informs us that
+    red color left by kisses suggests lipstick, and
+  * pragmatic reasoning allows us to infer that
+    the thing to stop wearing is related to the complaint
+* As in LAMBADA, the final sentence is generic, not supporting prediction on its
+  own
+  * Unlike LAMBADA, the consistent structure of these items
+  * none of these items contain the target word in context, 4 forcing models to
+    * commonsense inference rather than coreference
+  * avg Human cloze probabilities for expected completions is .74
+
+### Sensitivity test The Federmeier and Kutas (1999) study found that while the
+
+* inappropriate completions (e.g., mascara, bracelet) had
+  * cloze probabilities of virtually zero (average cloze .004 and .001, resp),
+  * N400 showed some expectation for completions that shared a semantic category
+    with the expected completion (e.g., mascara, by relation to lipstick). Our
+* sensitivity test targets this distinction,
+  testing whether LMs will favor inappropriate completions
+
+### Data The authors of the original study make available 40 of their contexts
+
+* we filter out six to accommodate BERT’s single-word vocabulary
+
+## 5.2 ROLE-88: event knowledge and semantic role sensitivity
+
+* sensitivity to impact of role reversals. Table 2 shows an example item pair
+* items come from a human experiment by Chow+ (2016)
+* the restaurant owner forgot which customer/w the waitress/c had served
+
+### Information needed for prediction Accurate prediction on this set
+
+* requires event knowledge about typical interactions between types of entities
+  in the given roles. The set has reversals for each noun pair so models must
+
+### Sensitivity test The
+
+* Chow+ (2016) study found that although each completion (e.g., served) is
+  good for only one of the noun orders and not the reverse, the
+  * N400 shows a similar level of expectation for the target completions
+    regardless of noun order. Our sensitivity test targets this distinction,
+  * cloze probabilities show strong sensitivity to the role reversal, with
+    average cloze difference of .233 between good and bad contexts
+
+### Data The authors provide 120 sentences (60 pairs)—which
+
+* we filter to 88 final items
+
+## 5.3 NEG-136: negation Our third set targets understanding of the meaning of
+
+* negation, along with knowledge of category membership. Table 3 shows examples
+* e.g. A robin is (not) a bird/tree
+* test items come from a human study by Fischler+ (1983), which examined how
+
+### Information needed for prediction Because
+
+* the negative contexts in these items are highly unconstraining
+  (A robin is not a `____` ?), prediction accuracy is not a useful measure for
+  * We test prediction accuracy for affirmative contexts only, which
+* allows us to test models’ use of hypernym information (robin = bird)
+* Targeting of negation happens in the sensitivity test
+
+### Sensitivity test The Fischler+ (1983) study found that although the
+
+* N400 shows more expectation for true completions in affirmative sentences
+  * fails to adjust to negation: more expectation for false continuations in
+* testing whether LMs will show similar insensitivity to impacts of negation
+  * we use truth judgments rather than cloze probability
+
+### Data Fischler+ provide the list of 18 subject nouns and 9 category nouns
+
+* We refer to these 72 simple sentences as NEG-136-SIMP
+* All target words are in BERT’s single-word vocabulary
+
+### Supplementary items, designed to test effects of naturalness
+
+* Nieuwland and Kuperberg (2008) followed up on the Fischler+ (1983) experiment,
+* affirmative and negative sentences chosen to be more “natural”, and
+  contrasting these with affirmative and negative sentences chosen to be less
+  natural
+  * “Natural”: Most smokers find that quitting is (not) very (difficult/easy),
+  * less natural: Vitamins and proteins are (not) very (good/bad).  The authors
+* We refer to these supplementary 64 items as NEG-136-NAT
+
+# 6 Experiments 6
+
+* We test two versions of the pretrained model: BERT BASE and BERT LARGE (uncas)
+  * BASE has 110M parameters, and 7 BERT LARGE has 340M
+* Following Goldberg (2019), we also add a [CLS] token to the start of each
+  sentence to mimic BERT’s training conditions
+* because of BERT’s bidirectionality: we include a period and a [SEP] token
+* Logits produced by the language model for the target position are
+  softmax-transformed to obtain probabilities comparable to human cloze probs
+
+# 7 Results for CPRAG-102 6
+
+## 7.1
+
+* to what extent BERT can achieve this performance based on simpler cues like
+  * bow
+    * To test word order, we shuffle the words in each item’s first sentence,
+  * n-gram context. 
+    * To test adequacy of n-gram context, we truncate the second sentence,
+      removing all but the two words preceding the target word (“Trunc”)—
+    * leaving generally enough syntactic context to identify the part of speech,
+      as well as some sense of semantic category (on top of the thematic setup
+      of the first sentence), but removing other information from the second 
+* each of these individual perturbations causes a notable drop in accuracy
+
+## 7.3 Qualitative
+
+* in the first example that BERT has 
+  * correctly zeroed in on things that one might borrow, but it 
+  * fails to infer that the thing is to be used for cutting lumber.  Simi-
+* 2nd: failure to detect the snow-shoveling theme of the second item makes for an
+* third example shows that BERT has 
+  * identified an animal theme (unsurprising, given the words zoo and animal),
+  * not applying the phrase black and white stripes to identify the completion
+
+# 8 Results for ROLE-88 8
+
+## 8.1
+
+* perturbations of the contexts: replacing the ~ with a generic substitute
+  * object (which customer the waitress ...), replacing the noun with _one_ 
+  * subject (which customer the waitress...), replacing the noun with _other_
+* removing either the object (“-Obj”) or the subject (“-Sub”) has 
+  * relatively little effect on the accuracy of BERT BASE for either k = 1 or 5
+  * LARGE , the accuracy of which drops substantially 
+* i.e. BERT BASE is relying primarily upon one or the other of the
+* items in this set are overall less constraining than those in Section 7—
+  * humans converge less clearly on the same predictions, resulting in lower
+  * To investigate the effect of constraint level, we divide items into four
+    bins by top cloze value per sentence. Table 9 shows the results. With the
+    * highest cloze bin yields much higher model accuracies than the other three
+    
+# 9 Results for NEG-136 10
+
+* errors consist exclusively of cases in which BERT completes the sentence
+  with a repetition of the subject noun, e.g., A daisy is a daisy
+
+## 9.4 Increasing naturalness
+
+* in the natural sentences, BERT prefers true statements for both affirmative
+  and negative contexts—by contrast, the 
+* less natural sentences show the pattern exhibited on NEG-136-SIMP, in which
+  * BERT prefers true statements in a high proportion of affirmative sentences,
+  * and in 0% of negative sentences.  Table 15 contains BERT
+    LARGE predictions on two pairs of sentences from the “Natural” sentence set.
+* even when BERT’s first prediction is appropriate in the context, the top
+  candidates often contradict each other (e.g., difficult and easy). We also see
+* even with these natural items, sometimes the negation is not enough to reverse
+  * fast food dinner both is and isn’t a romantic first date.
+
+# 10 Discussion 11
+
+* CPRAG-102, we see that both models can predict the best completion
+  approximately half the time (at k = 5), and that both models rely
+  non-trivially on word order and full sentence context
+  However, successful predictions in the face of perturbations also suggest that
+  some of BERT’s success on these items may exploit loop-holes, and when we
+  examine predictions on challenging items, we see clear
+  * weaknesses in the commonsense and pragmatic inferences targeted by this set
+  * BERT can also prefer good completions to bad semantically-related
+    completions in a majority of items, but many of these probability
+    differences are very small, much less than that of humans
+* ROLE-88, BERT’s accuracy in matching top human predictions is much lower, with
+  BERT LARGE at only 37.5% accuracy
+  * BERT LARGE has more sensitivity than BERT BASE to the interaction between
+    subject and object nouns. Sensitivity tests show
+  * both models are typically able to use noun position to prefer good
+    completions to role reversals, but the differences are on average even
+    smaller than on CPRAG-102, indicating again
+  * ability to distinguish role reversals suggests that the low word prediction
+    accuracies are not due to insensitivity to word order per se, but rather to
+    weaknesses in event knowledge or understanding of semantic role implic
+* NEG-136 allows us to zero in with particular clarity on a divergence between
+  * simple sentences describing category membership, BERT shows a complete
+    inability to prefer true over false completions for negative sentences. The
+  * impressive ability to associate subject nouns with their hypernyms,
+    but when negation reverses the truth of those hypernyms, BERT continues to
+    predict them nonetheless. By contrast, when presented with sentences that
+    are more “natural”, BERT does reliably prefer true completions to false,
+    with or without negation. Although these
+  * latter sentences are designed to differ in naturalness, in all likelihood it
+    is not naturalness per se that drives the model’s relative success on
+    them—but rather a higher frequency of these types of statements in the
+    training data
+
+# 11 Conclusion
+
+* sensitivity to role reversal and same-category distinctions, albeit < humans,
+  and it succeeds with noun hypernyms, but it
+  * struggles with challenging inferences and role-based event prediction—and it
+  * clear failures with the meaning of negation

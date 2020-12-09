@@ -2,8 +2,8 @@ Attention in Natural Language Processing
 Andrea Galassi, Marco Lippi, Paolo Torroni
 IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
-* we define a unified model for attention architectures in natural NLP with a
-  focus on those designed [for] vector representations of the textual data
+* we define a unified model for attention architectures in NLP with a
+  focus on those designed for vector representations of the textual data
 * taxonomy of attention models according to four dimensions:
   * representation of the input
   * compatibility function
@@ -23,21 +23,20 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
       dynamic visual control problems such as object tracking
     * adaptively process a sequence of regions or locations at high resolution
       and use a progressively lower resolution for further pixels
-* interpretation, Besides offering a performance gain:
-  for interpreting the behavior of neural architectures [5]–[9], even if it
+* interpretation, Besides offering a performance gain [5]–[9]
   * cannot be considered a reliable means of explanation [10], [11]
 * visualization tools have been devised [12], [13]. Fig. 1
 * increasingly common ingredient of neural architectures for NLP [14], [15]
-* Table I presents a nonexhaustive list of neural architectures where the
-  introduction of an attention mechanism has brought about a significant gain
+  * Table I presents a nonexhaustive list of neural architectures where the
+    introduction of an attention mechanism has brought about a significant gain
 * adopted in many other fields besides NLP and
   * computer vision [16]–[18], speech recognition [18]–[21],
     recommendation [22], [23], time-series analysis [24], [25], games [26], and
     mathematical problems [27], [28]
-* In NLP, exploration by a number of seminal papers [2], [59], a fast-paced
+* In NLP, exploration by a number of seminal papers [2], [59]
   * new attention models and attentive architectures ensued, resulting in a
     highly diversified architectural landscape
-  * different authors [developing] almost identical attention models
+  * different authors developing almost identical attention models
     * e.g. inner attention [68] and word attention [41] are arguably the same
   * the same terms have been introduced by different authors to define
     different concepts, thus further adding to the ambiguity in the literature
@@ -46,7 +45,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 * not a comprehensive account of all the neural architectures for NLP that
   uses an attention mechanism. This would be impossible and would rapidly outdat
   * a synthesis and a critical outlook rather than a flat listing
-  * [no] quantitative evaluation of different types of attention mechanisms
+  * no quantitative evaluation of different types of attention mechanisms
     since such mechanisms are generally embedded in larger architectures
     devised to address specific tasks, and it would be pointless in many cases
 * experimental studies focused on particular NLP tasks, including
@@ -66,15 +65,15 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
 # II A general model of attention and its components 3
 
-* We use a well-known machine-translation architecture introduced by Bahdanau+
-  [2] as an illustration and an instance of the general model
+* We use a well-known MT architecture introduced by Bahdanau+ [2] as an
+  illustration and an instance of the general model
 * To illustrate, we briefly describe a classic attention architecture, called
-  RNNsearch [2]. We chose RNNsearch because of its
+  RNNsearch [2]
   * historical significance and for its simplicity
 
 ## A. Example for Machine Translation and Alignment
 
-* “relieve[s] the encoder from the burden of having to encode all information
+* “relieves the encoder from the burden of having to encode all information
   in the source sentence into a fixed-length vector.”
 
 ## B. Unified Attention Model
@@ -87,7 +86,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * additional components that, although not universally present, are still
     found in most literature models
 * The distinction between keys and values was introduced by Daniluk+ [61]
-* Other [architectural choices] will be explored in Section IV-D
+* Other architectural choices will be explored in Section IV-D
 
 ## C. Deterministic Versus Probabilistic Attention
 
@@ -108,13 +107,13 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
 * Attention enables us to
   * estimate the relevance of the input elements as well as to
-  * combine [input] elements into a compact representation: 
+  * combine input elements into a compact representation: 
     context vector condensed, smaller than the original input,
     it requires fewer computational resources to be processed at later stages,
 * Table III
 * For tasks such as document classification, where usually there is
   * only K in input and no query, the
-  * attention mechanism can be seen as an [encoding] into a compact form
+  * attention mechanism can be seen as an encoding into a compact form
     * a form of feature selection
     * This applies to cases where features come from different
       * domains as in multimodal tasks [78] or from different
@@ -141,8 +140,53 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
 # IV Taxonomy of attention models 6
 
+## A. Input Representation
+
+## B. Compatibility Functions
+
+## C. Distribution Functions
+
+## D. Multiplicity
+
 # V Combined with knowledge about the task or the data 11
+
+## A. Supervised Attention
+
+## B. Attention Tracking
+
+## C. Modeling the Distribution Function by Exploiting Prior Knowledge
 
 # VI Open challenges, current trends, and future directions 13
 
+## A. Attention for Deep Networks Investigation
+
+## B. Attention for Outlier Detection and Sample Weighing
+
+## C. Attention Analysis for Model Evaluation
+
+## D. Unsupervised Learning With Attention
+
+## E. Neural-Symbolic Learning and Reasoning
+
 # VII Concludes 15
+
+* Attention can be applied to different input parts, different representations
+  of the same data, or different features, 
+  to obtain a compact representation of the data as well as to highlight info
+* selection is performed through a distribution function, which 
+  * may consider locality in different dimensions, such as 
+    space, time, or even semantics.  Attention 
+* can be used to compare the input data with a query element 
+  based on measures of similarity or significance.  It can also autonomously
+* attention creats a representation encoding of what the important data should
+  be similar to 
+* possible role of attention in addressing fundamental AI challenges. In
+  * injecting knowledge into the neural model, so as to represent specific
+    features, or to exploit previously acquired knowledge, as in transfer
+    learning settings. We speculate that this could pave the way to new
+    challenging research avenues, where attention could be exploited to enforce
+    the combination of subsymbolic models with symbolic knowledge
+    representations to perform reasoning tasks or to address natural language
+    understanding
+  * unsupervised learning architectures, by guiding and focusing the training
+    process where no supervision is given in advance
