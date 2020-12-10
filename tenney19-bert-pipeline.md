@@ -46,15 +46,14 @@ ACL 2019
 
 # 4 Results 4
 
-### Linguistic Patterns. We observe a consistent trend across both of our
-metrics, with the tasks encoded in a natural progression: POS tags processed
-earliest, followed by constituents, dependencies, semantic roles, and
-coreference. That is, it appears that basic syntactic information appears
-earlier in the network, while high-level semantic information appears at higher
-layers. We note that this finding is consistent with initial observations by
-Peters+ (2018b), which found that constituents are represented earlier than
-coreference.
+### Linguistic Patterns. We observe a 
 
+* consistent trend across both of our metrics, with the 
+* tasks encoded in a natural progression: 
+  POS tags processed earliest, followed by constituents, dependencies, semantic
+  roles, and coreference. That is, it appears that basic syntactic information
+* consistent with initial observations by Peters+ (2018b), which found that
+  constituents are represented earlier than coreference.  
 * syntactic information is more localizable, with weights related to syntactic
   tasks tending to be concentrated on a few layers (high K(s) and K(∆)), while
 * information related to semantic tasks is generally spread across the entire

@@ -114,8 +114,8 @@ https://github.com/pdufter/minimult
 * By construction, we have a sentence-aligned corpus with English and Fake-En
 * To extract word alignments from BERT we use Sabet+ (2020)’s Argmax method
   * Two wordpieces i and j are aligned if
-    (i = arg max S l,j ) ∧ (j = arg max S i,l ).  l l
-* The alignments are evaluated using precision, recall and F 1 as follows
+    (i = arg max S l,j ) ∧ (j = arg max S i,l )
+* The alignments are evaluated using precision, recall and F 1
 
 #### Sentence Retrieval is popular for evaluating crosslingual representations
 

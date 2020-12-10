@@ -2,14 +2,14 @@ Attention in Natural Language Processing
 Andrea Galassi, Marco Lippi, Paolo Torroni
 IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
-* we define a unified model for attention architectures in NLP with a
-  focus on those designed for vector representations of the textual data
+* we define a unified model for attention architectures in NLP
+  * focus on those designed for vector representations of the textual data
 * taxonomy of attention models according to four dimensions:
   * representation of the input
   * compatibility function
   * distribution function
   * multiplicity of the input and/or output
-* ongoing research efforts and open challenges in
+* ongoing research efforts and open challenges
 * categorization of the vast body of literature in this exciting domain
 
 # Intro
@@ -129,9 +129,9 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * q represents an embedding of the previous state of the decoder
     * e.g. sentiment analysis and information extraction
 * sequence-to-sequence annotators,
-  without resorting to RNNs or convolutional neural networks (CNNs), as
-  suggested by Vaswani+ [36], who rely on an attention mechanism to obtain a
-  whole encoder/decoder architecture
+  * without resorting to RNNs or convolutional neural networks (CNNs), 
+  * as suggested by Vaswani+ [36], who rely on an attention mechanism to obtain
+    a whole encoder/decoder architecture
 * a tool for selecting specific words
   e.g. dependence parsing [97] and cloze question-answering tasks [66], [70]
 * when multiple interacting input sequences have to be considered in combination
@@ -150,23 +150,198 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
 # V Combined with knowledge about the task or the data 11
 
+* According to LeCun+ [146], a major open challenge in AI is 
+* combining connectionist (or subsymbolic) models, such as deep networks, 
+  with approaches based on symbolic knowledge representation, in order to
+  perform complex reasoning tasks. Throughout the last decade, filling the gap
+  between these two families of AI methodologies has represented a major
+* approaches include 
+  * statistical relational learning [147], 
+  * neural-symbolic learning [148], and the 
+  * application of various deep learning architectures [149], such as 
+    * memory networks [59], 
+    * neural Turing machines [142], and several others.  From this perspective,
+
 ## A. Supervised Attention
+
+* Whether supervision is
+present in the data as a label or it is obtained as additional
+information through external tools, it can be exploited to
+perform a supervised training of the attention model.
+
+### 1 Preliminary Training: 
+
+* use an external classifier.  The weights learned by such a classifier are
+  subsequently plugged into the attention model of a different architecture
+* Zhang+ [53] first trained an attention model to represent the probability that
+  a sentence contains relevant information. The relevance of a sentence is given
+  by rationales [150], which are snippets of text that supports the
+  corresponding document categorizations
+* Long+ [118], a model is preliminarily trained on eye-tracking data sets to
+  estimate the reading time of words.  Then, the reading time predicted by the
+  model is used as an energy score in a neural model for sentiment analysis.
+
+### 2 Auxiliary Training
+
+* attention learning as an auxiliary task, jointly with the main task. This
+* good results in many scenarios, including machine translation [30], [35],
+  visual question answering [137], and domain classification for NLU [138]
+* attention can be trained in a multitask setting 
+  * For example, since the linguistic information is useful for semantic role
+    labeling, represent the syntactic structure of a sentence. 
+  * in LISA [97], a multilayer multiheaded architecture for SRL, one of the
+    attention heads is trained to perform dependence parsing as an auxiliary
+
+### 3 Transfer Learning across different domains [1] or tasks [115]
 
 ## B. Attention Tracking
 
+* When attention is applied multiple times on the same data, 
+  as in sequence-to-sequence models, a useful piece of information could be 
+  how much relevance has been given to the input along different iterations.
+* e.g. in MT, it is desirable to ensure that all the words of the original
+  phrase are considered. 
+  * One possibility to maintain this information is to use a suitable structure
+    and provide it as an additional input to the attention model. 
+  * Tu+ [33] exploited a piece of symbolic information called coverage
+    * Every time attention is computed, such information is fed to the attention
+      model as a query element
+  * In [31], the representation is enhanced by making use of a subsymbolic
+    representation for the coverage.
+    [31] H. Mi, B. Sankaran, Z. Wang, and A. Ittycheriah, 
+    “Coverage embedding models for neural machine translation,” 
+    in Proc.  EMNLP, 2016, pp. 955–960.
+
 ## C. Modeling the Distribution Function by Exploiting Prior Knowledge
+
+* define or to infer a distance between the elements in the domain. Such
+* e.g. by the syntactical information. Chen+ [40] and He+ [109] used
 
 # VI Open challenges, current trends, and future directions 13
 
+* open challenges and possible applications 
+  in the analysis of neural networks, as a support of the training process and
+  as an enabling tool for the integration of symbolic representations
+
 ## A. Attention for Deep Networks Investigation
+
+* Whether attention may or may not be considered as a mean to explain neural
+  networks is currently an open debate.  Some recent studies
+  * [10], [11] suggest that attention cannot be considered a reliable mean to
+    explain or even interpret neural networks. Nonetheless, other works 
+  * [6]–[9] advocate the use of attention weights as an analytic tool.
+  * Jain and Wallace [10] proved that attention is not consistent with other
+    explainability metrics and that it is easy to create 
+    * local adversarial distributions (distributions that are similar to the
+      trained model but produce a different outcome). 
+  * Wiegreffe and Pinter [9] pushed the discussion further, providing
+    * creating an effective global adversarial attention model is much more
+      difficult than creating a local one and that attention weights may contain
+    * if by explanation, we mean a plausible, but not necessarily faithful,
+      reconstruction of the decision-making process, as suggested by Rudin [151]
+      and Riedl [152].  
+* deepest levels will compute the most abstract features [146], [153].
+  Therefore, the application of attention to deep networks could enable the
+  selection of higher level features, thus providing hints to understand which
+  complex features are relevant for a given task. Following this line of inquiry
+  in the computer vision domain, Zhang+ [18] showed that the application of
+  attention to middle-to-high level feature sets leads to better performance in
+  image generation.  
+  * higher weights are not attributed to proximate image regions, but rather to
+    those regions whose color or texture is most similar to that of the query
+    image point.  Moreover, the spatial distribution does not follow a specific
+    pattern, but instead, it changes, modeling a region that corresponds to the
+    object depicted in the image. Identifying abstract features in an input text
+    might be less immediate than in an image, where the analysis process is
+    greatly aided by visual intuition. Yet, it may be interesting to test the
+    effects of the application of attention at different levels and to assess
+    whether its weights correspond to specific high-level features. For example,
+* Vaswani+ [36] analyzed the relation between attention and syntactic preds,
+* Voita+ [49] did the same with anaphora resolutions, and 
+* Clark+ [6] investigated the correlation with many linguistic features.  
+* Voita+ [50] analyzed the behavior of the heads of a multihead model,
+  discovering that different heads develop different behaviors, which can be
+  related to specific position or specific syntactical element. Yang+ [39]
+  seemed to confirm that the deeper levels of neural architectures capture
+  nonlocal aspects of the textual input. They studied the application of
+  locality at different depths of an attentive deep architecture and showed that
+  its introduction is especially beneficial when it is applied to the layers
+  that are closer to the inputs. Moreover, when the application of locality is
+  based on a variable-size window, higher layers tend to have a broader window.
+
+A popular way of investigating whether an architecture has learned high-level
+features amounts to using the same architecture to perform other tasks, as it
+happens with transfer learning. This setting has been adopted outside the
+* Shi+ [154], who perform syntactic predictions by using the hidden
+  representations learned with machine translation. In a similar way, 
+* attention weights could be used as input features in a different model, so as
+  to assess whether they can select relevant information for a different
+  learning task.  This is what happens, for example, in 
+* attention distillation, where a student network is trained to penalize the
+  most confusing features according to a teacher network, producing an efficient
+  and robust model in the task of machine reading comprehension [155].
+* attentional heterogeneous transfer [156] has been exploited in heterolingual
+  text classification to selectively filter input features from heterogeneous
+  sources.
 
 ## B. Attention for Outlier Detection and Sample Weighing
 
 ## C. Attention Analysis for Model Evaluation
 
+* uniform distribution of the attention weights could be interpreted as a sign
+  that the attention model has been unable to identify the more useful elements.
+* distribution of the attention weights may, therefore, be a tool for measuring
+  an architecture’s confidence in performing a task on a given input
+* Heo+ [157] proposed to exploit the uncertainty of their stochastic predictive
+  model to avoid making risky predictions in healthcare tasks.
+
+* In a hybrid model that relies on both symbolic and subsymbolic information,
+  * uncertainty of the neural model can be used as a parameter in the merging
+  * Other example: multitask learning and reinforcement learning
+  * exploitation of the uncertainty of the model, other than attention and NLP,
+    * Poggi and Mattoccia [158], Kendall+ [159], and Blundell+ [160].
+
 ## D. Unsupervised Learning With Attention
 
+* exploit attention within purely unsupervised models. We believe this to be a
+* He+ [161], attention is exploited in a model for aspect extraction in
+  sentiment analysis, with the aim to remove words that are irrelevant for the
+  sentiment and to ensure more coherence of the predicted aspects. In work by
+* Zhang and Wu [162], attention is used within autoencoders in a
+  question-retrieval task. The main idea is to generate semantic representations
+  of questions, and self-attention is exploited during the encoding and decoding
+  phases, with the objective to reconstruct the input sequences, as in
+  traditional autoencoders. Following a 
+* similar idea, Zhang+ [163] exploited bidimensional attention-based recursive
+  autoencoders for bilingual phrase embeddings, whereas 
+* Tian and Fang [164] exploited attentive autoencoders to build sentence
+  representations and performed topic modeling on short texts. 
+* Yang+ [165] instead adopted an attention-driven approach to unsupervised
+  sentiment modification in order to explicitly separate sentiment words from
+  content words.
+* In computer vision, attention alignment has been proposed [166]
+  * align the attention patterns of networks trained on the source and target
+  * could be an interesting scenario also for NLP.
+
 ## E. Neural-Symbolic Learning and Reasoning
+
+* neural logic programming [167]: reasoning over knowledge graphs, in order to
+  combine parameter and structure learning of first-order logic rules. They have
+* logic attention networks [168] to aggregate information coming from graph
+  neighbors with both rule~ and network-based attention weights. Moreover, 
+* prior knowledge has also been exploited by Shen+ [169] to 
+  * enable the attention mechanism to learn the knowledge representation of
+    entities for ranking question–answer pairs.  
+* in reasoning tasks that are also addressed with symbolic approaches, such as
+  textual entailment [99]. For instance, 
+  * Hudson and Manning [170] recently proposed a new architecture for complex
+    reasoning problems, with NLP usually being one of the target sub-tasks, as
+    in the case of visual question answering. In such an architecture, attention
+    is used within several parts of the model, for example, over question words
+    or to capture long-range dependences with self-attention.  
+* introduce constraints in the form of logical statements within neural networks
+  has been proposed in [171] where rules governing attention are used to enforce
+  word alignment in tasks, such as machine comprehension and NLI
 
 # VII Concludes 15
 

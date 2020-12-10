@@ -4,7 +4,7 @@ arXiv:2003.02912 cs.CL
 
 Street(https://bertlang.unibocconi.it/)
 
-* multilingual BERT (mBERT), a model
+* multilingual BERT (mBERT)
   * trained on a corpus of 104 languages, which can serve as a universal
   * impressive results on a zero-shot cross-lingual natural inference task
 * an abundant number of BERT models that are trained on a particular language,
@@ -19,7 +19,7 @@ Street(https://bertlang.unibocconi.it/)
 # 1 Intro
 
 * multilingual BERT model (mBERT) has been proposed, supporting over 100 lang
-  * including Arabic, Dutch, French, German, Italian, or Portuguese.  The model
+  * including Arabic, Dutch, French, German, Italian, or Portuguese
   * trained on different domains, like social media posts or newspaper
   * great capabilities in zero-shot cross-lingual tasks (Pires+ 2019)
 * models are trained on a particular language and
@@ -115,15 +115,15 @@ Street(https://bertlang.unibocconi.it/)
 * Named Entity Recognition (NER) the most frequent task (22 entries)
 * there are some multilingual benchmark data: same NLP task used in diff lang
   * Some of them released by research group publishing in well-known confs
-  (Yang+ 2019; Sanguinetti and Bosco, 2015; Conneau+ 2018; Völker+ 2019)
+    (Yang+ 2019; Sanguinetti and Bosco, 2015; Conneau+ 2018; Völker+ 2019)
   * others released with shared tasks such as SemEval or CoNLL
     (Zeman+ 2018; Navigli+ 2013; Bosco+ 2016; Benikova+ 2014)
 * noun sense disambiguation task is the only task where 
-  language-specific BERT (Le+ 2019) performances are lower than the mBERT ones.
+  language-specific BERT (Le+ 2019) performances are lower than the mBERT ones
   * could be due to the fact that the training corpora have been
     machine-transled from English to French
 * Sentiment analysis is the task where language-specific BERT models obtain the
-  highest improvements with respect to mBERT. Following the previous intuition,
+  highest improvements with respect to mBERT
   * for Arabic (Antoun+ 2020) this can be explained that language-specific
     AraBERT model handles dialects
     — even if they were not explicitly included in the training set
@@ -133,7 +133,7 @@ Street(https://bertlang.unibocconi.it/)
 
 ### Domains: a huge variety
 
-* data sets used to pretrain the models and data sets used to evaluate
+* data sets used to pretrain the models and data sets used to evaluate them
 * training mainly varies across three source corpora:
   * Wikipedia,
     * 40 million articles created and maintained as an open collaboration
@@ -151,9 +151,9 @@ Street(https://bertlang.unibocconi.it/)
     * Italian BERT model ALBERTO (Polignano+ 2019), which is
       the only one that has been trained only on social media data
       (specifically, on 2 million Twitter posts in Italian language)
-* evaluate: different domain data sets to evaluate the models; range from
+* evaluate: different domain data sets to evaluate the models
   * review data for sentiment analysis tasks to
-  * transcripts and news for more traditional tasks, such as POS
+  * transcripts and news for e.g. POS
   * News data are the most common domain, presumably because they are
     easier to retrieve, and because their
     more formal register makes them more suited for e.g. POS, dependency, NER

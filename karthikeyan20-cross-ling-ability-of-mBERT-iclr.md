@@ -18,8 +18,8 @@ http://cogcomp.org/page/publication_view/900
 
 # 1 Intro
 
-* We analyze the two-languages version of M-BERT (B-BERT, for bilingual BERT,
-  from now on) in three orthogonal dimensions:
+* We analyze the two-languages version of M-BERT, bilingual BERT (B-BERT)
+  in three orthogonal dimensions:
   * linguistic properties and similarities of target and source languages;
   * network architecture, and
   * input and learning objective
@@ -69,9 +69,9 @@ http://cogcomp.org/page/publication_view/900
   * structural similarity and the depth of B-BERT are crucial for its cross-ling
 * B-BERT and M-BERT
   * in order to better control interference among languages, we studied B
-  * it would be interesting now to extend this study, allowing for more interac
-    * adding to M-BERT languages that are related to the target language, helps
-* We introduced the term Structural Similarity, despite its obscure definition,
+  * it would be interesting now to extend this study, allowing more interaction
+    * adding to M-BERT languages that are related to the target language helps
+* We introduced the term Structural Similarity
   * future work could be to develop a better definition and, consequently, a
     finer set of experiments, to better understand the Structural similarity
 * drastic drop in the entailment performance of B-BERT

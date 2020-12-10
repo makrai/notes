@@ -35,11 +35,11 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
       that the pre-trained encoder is storing readable tense information into the
       embeddings it creates. Note that:
   * asks a simple question, minimizing interpretability problems
-  * easier to control for biases ... than in downstream tasks
+  * easier to control for biases than in downstream tasks
   * [control for] lexical cues or sentence length
   * agnostic with respect to the encoder architecture
 * We greatly extend earlier work on probing tasks as follows
-  * a larger set of probing tasks (10 in total), organized by ... ling property
+  * a larger set of probing tasks (10 in total), organized by ling property
   * systematize the probing task methodology,
     * controlling for e.g. lexical cues or sentence length
   * explore a wide range of SOTA encoding architectures and training methods,
@@ -60,7 +60,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 * The sentences for all our tasks are extracted from the
   * Toronto Book Corpus (Zhu+ 2015), more specifically
   * from the random pre-processed portion made available by Paperno+ (2016)
-  * only ... sentences in the 5-to-28 word range
+  * only sentences in the 5-to-28 word range
 
 ## Surface information
 
@@ -74,7 +74,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * distinguish intact sentences sampled from the corpus
     from sentences where we inverted two random adjacent words
 * The tree depth (TreeDepth) task checks whether an encoder infers the
-  * Since ... correlated with sentence length, we de-correlate these variables
+  * Since correlated with sentence length, we de-correlate these variables
   * long but shallow sentence: “[ 1 [ 2 But right now, for the time being, my
     past, my fears, and my thoughts [ 3 were [ 4 my [ 5 business]]].]]”
   * the brain tracks something akin to tree depth (Nelson+ 2017)
@@ -89,7 +89,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 ### Semantic information
 
 * also rely on syntactic structure, but they further require some [denot]
-* grouped ... with the semantic tasks, since, at least for models ... without
+* grouped with the semantic tasks, since, at least for models without
   access to morphology), they must rely on what a sentence denotes (e.g.,
   * tense of the main-clause verb (VBP/VBZ forms are labeled as present, VBD as
     * No target form occurs across the train/dev/test split, so that classifiers
@@ -98,19 +98,20 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * object number
 * semantic odd man out (SOMO) task,
   * we modified sentences by replacing a random noun or verb o with another
-  * bigrams formed by the replacement ... have frequencies that are comparable
+  * bigrams formed by the replacement have frequencies that are comparable
   * No sentence is included in both original and modified format, and
   * no replacement is repeated across train/dev/test sets
   * [classification:] whether a sentence has been modified or not
   * semantic factors, ranging from selectional preference to topical coherence
 * coordination inversion (CoordInv) benchmark contains
   * sentences made of two coordinate clauses. In half of the sentences, we
+  * The task is to tell whether a sentence is intact or modified.
   * balanced in terms of clause length, and
     original “They might be only memories, but I can still feel each one”
     becomes: “I can still feel each one, but they might be only memories.”
-  * Often ... requires an understanding of broad discourse and pragmatics
+  * Often requires an understanding of broad discourse and pragmatics
 * Row Hum. Eval. of Table 2 reports human-validated “reasonable” upper bounds
-  * BShift, SOMO and CoordInv ... can accidentally generate acceptable sents
+  * BShift, SOMO and CoordInv can accidentally generate acceptable sents
     * For these tasks, we ran Amazon Mechanical Turk experiments
     * majority voting.  See Appendix for details
 
@@ -126,12 +127,12 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * performance is still far from the human bounds on TreeDepth, BShift, SOMO
     and CoordInv
   * last 3 tasks ask if a sentence is syntactically or semantically anomalous
-    * encoder ... has not been explicitly trained on acceptability, and it is
+    * encoder has not been explicitly trained on acceptability, and it is
     * the best models are, at least to a certain extent, able to [judge]
     * asymmetry between the difficult TreeDepth and easier TopConst is also
 * Figure 1 reports how probing task accuracy changes in function of encoder
   training epochs.  The figure shows that NMT probing performance is
-  * largely independent of target language ... across French, German and fi
+  * largely independent of target language across French, German and fi
   * WC performance keeps increasing with epochs
   * For the other tasks, we observe instead an
     * early flattening of the NMT probing curves, while
@@ -164,7 +165,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     * entailment requires deeper semantic analysis than modeling similarity
   * TopConst and the number tasks negatively correlate with various similarity
     and sentiment data sets (SST, STS, SICK-R)
-    * There might [be] biases in these tasks: SICK-R, for example, ... contains
+    * There might [be] biases in these tasks: SICK-R, for example, contains
       sentence pairs with opposite voice: different constituent structure but
       equal meaning (Marelli+ 2014)
     * two sentences differing only in object number are very similar)
