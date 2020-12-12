@@ -15,7 +15,7 @@ ACL 2020
 * social biases encoded in pretrained representations
   * Complementary to analyzing representational quality
   * with respect to gender, race/ethnicity, and religion
-  * bias is encoded disparately {different in kind} across pretrained models and
+  * bias is encoded differently across pretrained models and
     internal layers even for models with the same training data
     * dramatic inconsistencies between social bias estimators
 
@@ -90,13 +90,12 @@ ACL 2020
 
 # 3 Setup
 
-* We begin by verifying that the resulting static embeddings that we derive
-  retain their representational strength, to some extent. We take this step to
-  ensure that properties we observe of the static embeddings are consistent with
-  the original contextualized representations.  Inspired by
+* We begin by verifying that the resulting static embeddings retain repr strengt
+  * to ensure that properties we observe of the static embeddings are consistent
+    with the original contextualized representations
 * we employ an exceptionally simple parameter-free method for converting from
   contextualized to static representations to
-  * ensure that any properties observed in the latter are not introduced
+  * ensure that any properties observed in the latter are not introduced by cler
   * concerns with probing methods/diagnostic classifiers regarding
     whether learning can be attributed to the classifier and not the LM
     (Liu+ 2019a; Hewitt and Liang, 2019)
@@ -110,8 +109,8 @@ ACL 2020
 
 ## 4.1 Evaluation Details
 
-* we evaluate on several word similarity and word relatedness datasets. 3 We
-  RG65 (Rubenstein and Goodenough, 1965)
+* we evaluate on several word similarity and word relatedness datasets
+  * RG65 (Rubenstein and Goodenough, 1965)
   * WS353 (Agirre+ 2009)
   * SimLex999 (Hill+ 2015) and
   * SimVerb3500 (Gerz+ 2016, see §A.4 for more details)

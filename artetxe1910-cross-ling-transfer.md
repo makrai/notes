@@ -65,15 +65,14 @@ https://github.com/deepmind/xquad
 
 * method to transfer monolingual representations to new languages in an
   unsupervised fashion
-* This is particularly useful for low-resource languages, since many pre-trained
-  models are currently in English
+* This is particularly useful for low-resource languages
 
 # 3 Experiments
 
 # 4 XQuAD: a new cross-lingual question answering dataset (§4)
 
 # sum 3,4 : neither a shared subword vocabulary nor joint multilingual training
-is necessary for zero-shot transfer and find that the
+is necessary for zero-shot transfer and
 * effective vocabulary size per language is an important factor for learning
   multilingual models (§3 and §4);
 

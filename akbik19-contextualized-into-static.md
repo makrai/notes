@@ -2,8 +2,8 @@ Pooled Contextualized Embeddings for Named Entity Recognition
 Alan Akbik, Tanja Bergmann, Roland Vollgraf
 2019 NAACL
 
-all code and pre-trained models available to the research community for use and
-* in Flair framework
+* all code and pre-trained models available to the research community
+  * in Flair framework
 
 # Abstract
 
@@ -20,7 +20,7 @@ all code and pre-trained models available to the research community for use and
     * change as more instances of the same word are observed
   * fomr the conclusion:
     * continues to “learn” even after the training of the downstream NER model,
-      in prediction mode. We consider this idea of constantly evolving
+      in prediction mode
 * evaluate these ”pooled contextualized embeddings” on NER
   * significantly improves the SOTA for tasks such as CoNLL-03 and WNUT
 
@@ -54,11 +54,11 @@ all code and pre-trained models available to the research community for use and
 ## Evolving embeddings. Our dynamic aggrega-
 
 * Assuming that entity names are more often used in well-specified contexts,
-  their pooled embeddings will improve as more data is processed. The embedding
+  their pooled embeddings will improve as more data is processed
 
-## Future work. 
+## Future work
 
 * weighted poolings of previous mentions
-  * in our pooling, all previous instances of a word are equally important.
-  * more recent mentions of a word such as words within the same document or
-    news cycle may be more important for creating embeddings than mentions that
+  * in our pooling, all previous instances of a word are equally important
+  * more recent mentions of a word such as 
+    words within the same document or news cycle may be more important
