@@ -133,7 +133,7 @@ ACL 2020
 * we can fix a particular layer for all datasets and still outperform both
   Word2Vec and GloVe on all datasets
 
-### Relationship between N and model layer. In Figure 1, there is a
+### Relationship between N and model layer, Figure 1
 
 * clear preference towards the first quarter of the model’s layers (layers 0-3)
   with a sharp drop-off in performance immediately thereafter. A similar
@@ -142,12 +142,12 @@ ACL 2020
 * relationship between N and the best-performing layer. The best-performing
   layer monotonically (with a single exception) shifts to be later and later
   * later layers demonstrate greater variance with respect to the layer-wise
-    distributional mean and reducing this variance improves performance. 4 Since
+    distributional mean and reducing this variance improves performance
 * suggest that downstream performance could be further improved by variance redu
   * Ethayarajh (2019) also provides concrete evidence of the tremendous variance
     in the later layers of deep pretrained contextualized models
   * as later layers of the model are generally preferred by downstream
-    practitioners (Zhang+ 2020), our findings
+    practitioners (Zhang+ 2020)
 
 ### Cross-Model Results. Remarkably, we find that
 
@@ -216,13 +216,8 @@ In Table 2,
 
 ## 5.2 Results
 
-Inspired by the results of Nissim+ (2020), in this work we transparently report
-social bias in existing static embeddings as well as the embeddings we produce
-In particular, we exhaustively report the measured bias for all 3542 valid
-(pretrained model, layer, social attribute, bias definition, target word list)
-5-tuples — all possible combinations of static embeddings and bias measures
-considered.  The results for models beyond BERT appear in Figures 11–18
-
+* Inspired by the results of Nissim+ (2020), in this work we transparently
+  * results for models beyond BERT appear in Figures 11–18 
 * We specifically report results for
   * binary gender (male, female),
   * two-class religion (Christianity, Islam) and
@@ -232,10 +227,10 @@ considered.  The results for models beyond BERT appear in Figures 11–18
   * not include intersectional biases. The types of biases being evaluated for
   * definitions of bias are grounded in the norms of the United States. All word
 
-### Layer-wise Bias Trends. In Figure 2, we report layer-wise bias across all
+### Layer-wise Bias Trends, In Figure 2
 
 * different bias measures for the same social attribute and the same layer not
-  even agree in relative judgments. For
+  even agree in relative judgments
   * gender, we observe that the bias estimated by the definition of
     * Manzini+ (2019) steadily increases before peaking at the penultimate layer
       and slightly decreasing thereafter. In contrast, under bias
@@ -306,7 +301,7 @@ considered.  The results for models beyond BERT appear in Figures 11–18
 * Future research could explore weighting schema in the averaging process
   analogous to SIF (Arora+ 2017) for sentence representations computed via
   averaging (Wieting+ 2016)
-* dimensionality reduction may be particularly intriguing given that this is
+* dimensionality reduction may be particularly intriguing
   * often challenging within large multilayered networks like BERT (Sanh+ 2019)
   * successfully demonstrated for static embeddings
     (Nunes and Antunes, 2018; Mu and Viswanath, 2018; Raunak+ 2019)

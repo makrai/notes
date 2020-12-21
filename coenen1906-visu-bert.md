@@ -186,7 +186,7 @@ arXiv:1906.02715 [cs.LG]
       (for 8,542 out of the original 33,362 senses)
   * Embeddings came from BERT-base (12 layers, 768-dimensional embeddings)
   * evaluat[ion on the] WSD task used in 4.1.2 (Table 1)
-  * control: random probe of the same shape. As mentioned in 4.1.2,
+  * control: random probe of the same shape
   * untransformed BERT embeddings achieve a SOTA accuracy rate of 71.1%
   * trained probes ... achieve slightly improved accuracy down to m = 128
   * layers
