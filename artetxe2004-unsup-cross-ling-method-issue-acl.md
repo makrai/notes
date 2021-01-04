@@ -8,7 +8,7 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 * we call for a more rigorous position in each of them
 * the scenario that is most often used to motivate methods is unrealistic
   * i.e. no parallel data and abundant monolingual data
-* We also discuss different training signals that have been used in previous
+* We also discuss different training signals that have been used
   * depart from the pure unsupervised setting
 * issues in tuning and evaluation of unsupervised cross-lingual models and
 * best practices

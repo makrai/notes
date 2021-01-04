@@ -6,14 +6,14 @@ https://github.com/UKPLab/sentence-transformers
 
 # Abstract
 
-* [Our method extends] existing sentence embedding models to new languages. This
-  * create multilingual versions from previously monolingual models. The
-  * idea that a translated sentence should be mapped to the same location in the
+* [Our method extends] existing sentence embedding models to new languages
+  * create multilingual versions from previously monolingual models
+  * idea that a translated sentence should be mapped to the same location
     1. orig monoling model to generate sentence embeddings for the source lang
     2. train a new system on translated sentences to mimic the original model
 * advantages
-  * with relatively few samples to new languages, it is
-  * easier to ensure desired properties for the vector space, and the
+  * with relatively few samples to new languages
+  * easier to ensure desired properties for the vector space
     * e.g. design a vector space to work well for a specific clustering task
   * hardware requirements for training is lower
 * experiments in 10 languages from various language families

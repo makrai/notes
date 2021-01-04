@@ -24,7 +24,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * parsing (McDonald+ 2011)
   * text classification (Klementiev+ 2012). Over the last few years, there has
 * general-purpose multilingual representations
-  * word level (Mikolov+ 2013; Faruqui & Dyer, 2014; Artetxe+ 2017) or the
+  * word level (Mikolov+ 2013; Faruqui & Dyer, 2014; Artetxe+ 2017)
   * full-sentence level (Devlin+ 2019; Lample & Conneau, 2019)
   * evaluation [often] on a very
     * limited and disparate set of tasks
@@ -35,7 +35,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * 40 typologically diverse languages spanning 12 families
     * typologically diverse = wide set of linguistic phenomena such as
       compounding, inflection, derivation, etc. which occur in many languages
-  * 9 tasks that require reasoning about different levels of syntax or sem
+  * 9 tasks that require reasoning about different levels of syntax or semantics
   * pseudo test sets as diagnostics that cover all 40 languages
     by automatically translating the English test set of the NLI and QA dataset
   * focuses on the zero-shot cross-lingual transfer scenario, where

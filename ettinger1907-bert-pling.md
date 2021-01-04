@@ -24,8 +24,8 @@ https://github.com/aetting/lm-diagnostics
 * diagnostics targeting a range of linguistic capacities, drawn from psycholing
   * advantages: because of their origin in psycholinguistics,
     * carefully controlled to ask targeted questions about linguistic capabilits
-    * ask these questions by examining word predictions in context, which
-      * allows us to study LMs without any need for task-specific fine-tuning
+    * ask these questions by examining word predictions in context, 
+    * allows us to study LMs without any need for task-specific fine-tuning
 * distinctive properties of our diagnostics
   * chosen specifically to reveal insensitivities in predictive models, as
     evidenced by patterns that they elicit in human brain responses (N400)
@@ -49,7 +49,7 @@ https://github.com/aetting/lm-diagnostics
 
 # 2 Motivation for use of psycholinguistic tests on LMs
 
-* we are not testing whether LMs are psycholinguistically plausible. We are
+* we are not testing whether LMs are psycholinguistically plausible
 * it is the pre-training that seemingly underlies the generalization power
 
 # 3 Related Work
@@ -102,7 +102,7 @@ https://github.com/aetting/lm-diagnostics
       directly via the word prediction mechanism, and in 
       expanding beyond the syntactic tests
 
-# 4 Leveraging human studies. The power in our diagnostics stems from pling
+# 4 Leveraging pling studies. The power in our diagnostics
 
 * In this section we provide relevant background on human language processing,
   and explain how we use this information to choose the particular tests
@@ -326,9 +326,9 @@ https://github.com/aetting/lm-diagnostics
 
 * CPRAG-102, we see that both models 
   * can predict the best completion approximately half the time (at k = 5), and
-  * rely non-trivially on word order and full sentence context However,
-  * perturbations: successful predictions suggest that some of BERT’s success on
-    may exploit loop-holes
+  * rely non-trivially on word order and full sentence context
+  * hE, perturbations: successful predictions suggest that some of BERT’s
+    success may exploit loop-holes
     * we examine predictions on challenging items
   * weaknesses in the commonsense and pragmatic inferences targeted by this set
   * BERT can also prefer good completions to bad semantically-related

@@ -6,9 +6,9 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 
 * mBERT (Devlin, 2018) includes a model simultaneously pretrained on 104 langs
   * impressive performance for zero-shot cross-lingual transfer on a NLI
-* This paper explores mBERT as a zero shot language transfer model on 5 NLP
+* This paper explores mBERT as a zero shot language transfer model on 5 tasks
   * 39 languages from various language families:
-  * NLI, document classification, NER, POS tagging, and dependency parsing. We
+  * NLI, document classification, NER, POS tagging, and dependency parsing
   * compare mBERT with the best-published methods for zero-shot cross-lingual
     * mBERT competitive on each task
   * investigate the most effective strategy for utilizing mBERT in this manner,

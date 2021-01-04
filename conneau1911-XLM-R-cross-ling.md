@@ -20,7 +20,7 @@ arXiv:1911.02116
     * the performance of high and low resource languages at scale
 * very competitive with strong monolingual models on the GLUE and XNLI
 * code, data, and models publicly available
-* conclusion: and the importance of key hyperparameters [i.e. vocabulary size]
+* conclusion: importance of key hyperparameters [i.e. vocabulary size]
 
 # 1 Intro
 
