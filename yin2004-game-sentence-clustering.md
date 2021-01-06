@@ -65,10 +65,9 @@ arXiv:2004.02986 [cs.CL]
 
 ## 5.3 Clustering Evaluation
 
-Since DQN models cannot be evaluated for their SNN classification ability, we
-use the clustering method to compare the learned features among model all
-learned models. 
-The evaluation metric is Vmeasure (Rosenberg and Hirschberg, 2007). The
+* Since DQN models cannot be evaluated for their SNN classification ability, 
+  we use the clustering method to compare the learned features among models 
+* The evaluation metric is Vmeasure (Rosenberg and Hirschberg, 2007). The
   * a combination of homogeneity score and completeness score of clusters, and
     computationally similar to the F-score. 
     * Homogeneity means each cluster should contain only one-class of
