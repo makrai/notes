@@ -7,15 +7,15 @@ code is available at this https URL
 # Abstract
 
 * BERT represents the latest incarnation of pretrained language models
-* we showcase how BERT can be usefully applied in text summarization and
+* we showcase how BERT can be usefully applied in text summarization
 * a general framework for both extractive and abstractive models
 * document-level encoder based on BERT which is able to express the semantics
 * extractive model is built on top of this encoder by stacking several
   inter-sentence Transformer layers
-* abstractive summarization, we propose a new fine-tuning schedule which
+* abstractive summarization, we propose a new fine-tuning schedule
   * different optimizers for the encoder and the decoder
     as a means of alleviating the mismatch between the two
-    (the former is pretrained while the latter is not). We also demonstrate
+    (the former is pretrained while the latter is not)
   * two-staged fine-tuning approach can further boost the quality
     * motivated by that the combination of extractive and abstractive
       objectives can help generate better summaries (Gehrmann+ 2018)
@@ -25,8 +25,7 @@ code is available at this https URL
 # Introduction
 
 * extractive summarization is often defined as a binary classification task
-  with labels indicating whether a text span (typically a sentence) should be
-  included in the summary
+  with labels indicating whether a text span (typ sentence) should be included
 * Our
   * extractive model is built on top of this encoder by stacking several inter-
     sentence Transformer layers to capture document-level features
@@ -35,8 +34,7 @@ code is available at this https URL
     randomly-initialized Transformer decoder (Vaswani+ 2017)
     * We design a new training schedule which separates the optimizers of the
       encoder and the decoder
-      [because] the former is pretrained while the latter must be trained from
-      scratch. Finally,  we present a
+      because the encodr is pretrained while the decodr is trained from scratch
     * two-stage approach where the encoder is fine-tuned twice,
       first with an extractive objective and subsequently on the abstractive
 * We evaluate the proposed approach on three single-document news summarization
@@ -44,9 +42,9 @@ code is available at this https URL
   * writing conventions (e.g., important information is concentrated at the
     beginning of the document or distributed more evenly throughout) and
   * summary styles
-    (e.g., verbose vs. more telegraphic; extractive vs.  abstractive)
+    (e.g., verbose vs. more telegraphic; extractive vs. abstractive)
   * SOTA Across datasets, under both extractive and abstractive settings
-* document encoding for the summarization task; a variety of recently
+* document encoding for the summarization task
   * copying mechanisms (Gu+ 2016; See+ 2017; Nallapati+ 2017),
   * reinforcement learning (Narayan+ 2018b; Paulus+ 2018; Dong+ 2018), and
   * multiple communicating encoders (Celikyilmaz+ 2018)
