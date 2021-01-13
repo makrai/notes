@@ -284,7 +284,7 @@ https://github.com/Yale-LILY/SummEval
   function designed for summarization by which important sentences are removed
   from an input document and then generated from the remaining sentences
 
-# 4 Resources collected and released together with this manuscript 6
+# 4 Resources collected and released together with this work 6
 
 ## 4.1 Model Outputs
 
@@ -343,6 +343,9 @@ https://github.com/Yale-LILY/SummEval
 
 * The summary should include only important information from the source doc
 * Annotators were instructed to penalize too long or redundant summaries 
+
+### *
+
 * The data collection interface provided judges with the source article and
   associated summaries grouped in sets of 5. Each group of summaries contained
   the reference summary associated with the source article in order to establish
