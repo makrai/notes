@@ -44,7 +44,7 @@ https://github.com/Yale-LILY/SummEval
   * problems when used outside of its original setting
     (Liu and Liu, 2008; Cohan and Goharian, 2016)
   * many variants (Zhou+ 06; Ng and Abrecht 15; Ganesan 15; ShafieiBavani+ 18)
-  * other text generation metrics 
+  * other text generation metrics
     (Peyrard, 2019; Zhao+ 2019; Zhang+ 2020; Scialom+ 2019; Clark+ 2019)
   * remained the default automatic evaluation metric
 * lack of easy-to-use resources for evaluation, both in the form of simplified
@@ -53,7 +53,7 @@ https://github.com/Yale-LILY/SummEval
   * Many of the currently used metrics were developed and assessed using the
     Document Understanding Conference (DUC) and Text Analysis Conference (TAC)
     shared-tasks datasets (Dang and Owczarzak, 2008, 2009)
-  * hE, these datasets contain human judgments scoring on a lower scale 
+  * hE, these datasets contain human judgments scoring on a lower scale
     compared to current summarization systems (Peyrard, 2019)
     putting into question the true performance of those metrics in the new settn
 * We address these gaps in complementary ways:
@@ -61,10 +61,10 @@ https://github.com/Yale-LILY/SummEval
     consistent fashion using outputs from recent neural summarization models
     along with expert and crowd-sourced human annotations,
   * We consistently benchmark 23 recent summarization models
-  * We release 44 aligned summarization model outputs from 23 papers 
+  * We release 44 aligned summarization model outputs from 23 papers
     published between 2017 and 2019 trained on the CNN/DailyMail dataset
     * for large-scale comparisons of recent summarization models,
-  * We release a toolkit of 12 evaluation metrics with an 
+  * We release a toolkit of 12 evaluation metrics with an
     extensible and unified API to promote the reporting of additional metrics
   * We collect and release expert, as well crowd-sourced, human judgments for 16
     model outputs on 100 articles over 4 dimensions to further research into
@@ -95,10 +95,10 @@ https://github.com/Yale-LILY/SummEval
     achieved strong correlations with human judgements on model-generated summs
 * Chaganty+ (2018) investigated using an automatic metric to
   reduce the cost of human evaluation without introducing bias
-  * released a set of human judgments over several model outputs, 
+  * released a set of human judgments over several model outputs,
     limited to a small set of model types
 * Peyrard (2019) showed that
-  * standard metrics are in agreement 
+  * standard metrics are in agreement
     when dealing with summaries in the scoring range found in TAC summaries, but
   * vastly differ in the higher scoring range found in current models
   * additional human annotations on modern model outputs are necessary to
@@ -113,7 +113,7 @@ https://github.com/Yale-LILY/SummEval
 ## datasets,
 
 * Dernoncourt+ (2018) presented a detailed taxonomy of summ datasets
-  * differences in formats of available corpora and 
+  * differences in formats of available corpora and
   * call for creating a unified data standard
 * similarly, Grusky+ (2018) offered a thorough analysis of corpora,
   * focusing on news summarization datasets
@@ -155,7 +155,7 @@ https://github.com/Yale-LILY/SummEval
   * several recent metrics applied to both text generation and summarization,
   * standard machine translation metrics, and
   * other miscellaneous performance statistics
-* ROUGE (Lin, 2004b Recall-Oriented Understudy for Gisting Evaluation), 
+* ROUGE (Lin, 2004b Recall-Oriented Understudy for Gisting Evaluation),
   measures the number of overlapping textual units (n-grams, word sequences)
   between the generated summary and a set of gold reference summaries
 * ROUGE-WE (Ng and Abrecht, 2015) extends ROUGE by using soft lexical matching
@@ -165,14 +165,14 @@ https://github.com/Yale-LILY/SummEval
   features for predicting the evaluation score
   * trained on human judgment datasets from TAC conferences
 * Bert-Score (Zhang+ 2020) computes similarity scores
-  * by aligning generated and reference summaries on a token-level 
+  * by aligning generated and reference summaries on a token-level
   * Token alignments are computed greedily with the objective of maximizing the
     cosine similarity between contextualized token embeddings from BERT
 * MoverScore (Zhao+ 2019) measures semantic distance between a summary and
   reference text by making use of the Word Mover’s Distance (Kusner+ 2015)
   operating over n-gram embeddings pooled from BERT representations
 * Sentence Mover’s Similarity (SMS, Clark+ 2019) extends Word Mover’s Distance
-  to view documents as a bag of sentence embeddings as well as 
+  to view documents as a bag of sentence embeddings as well as
   a variation which represents docs as both a bag of sents and a bag of words
 * SummaQA (Scialom+ 2019) applies a BERT-based question-answering model to
   answer cloze-style questions using generated summaries
@@ -183,7 +183,7 @@ https://github.com/Yale-LILY/SummEval
   calculates n-gram overlap between a candidate and reference utterance and
   includes a brevity penalty
   * the primary evaluation metric for machine translation
-* CHRF (Popović, 2015) calculates character-based n-gram overlap 
+* CHRF (Popović, 2015) calculates character-based n-gram overlap
   between model outputs and reference documents
 * METEOR (Lavie and Agarwal, 2007) computes an alignment between candidate and
   reference sentences by mapping unigrams in the generated summary to 0 or 1
@@ -194,7 +194,7 @@ https://github.com/Yale-LILY/SummEval
   cosine similarity between the ngrams of the candidate and reference texts
 * Data Statistics: Grusky+ (2018) define three measures of the extractiveness of
   a dataset
-  * Extractive fragment coverage is 
+  * Extractive fragment coverage is
     * the percentage of words in the summary that are from the source article,
       measuring the extent to which a summary is a derivative of a text
   * Density is defined as the average length of the extractive fragment to which
@@ -212,7 +212,7 @@ https://github.com/Yale-LILY/SummEval
   first building a hierarchical representation of a document and
   considering the partially outputted summary at each time step
 * M2 BanditSum (Dong+ 2018) treats extractive summarization
-  as a contextual bandit problem where the document is the context and 
+  as a contextual bandit problem where the document is the context and
   the sequence of sentences to include in the summary is the action
 * M3 LATENT (Zhang+ 2018b) propose a latent variable extractive model which
   views relevance labels of sentences in a document as binary latent variables
@@ -233,16 +233,16 @@ https://github.com/Yale-LILY/SummEval
 
 * M8 Pointer Generator (See+ 2017) propose
   * a variation of encoder-decoder models, the Pointer Generator Network, where
-  * the decoder can choose to generate a word from the vocabulary or 
+  * the decoder can choose to generate a word from the vocabulary or
     copy a word from the input
-  * coverage mechanism is also proposed 
+  * coverage mechanism is also proposed
     to prevent from repeatedly attending to the same part of the source document
 * M9 Fast-abs-rl (Chen and Bansal, 2018) propose a model which
   first extracts salient sentences with a Pointer Network and
   rewrites these sentences with a Pointer Generator Network
   * In addition to maximum likelihood training a ROUGE-L reward is used to
     update the extractor via REIN-FORCE (Williams, 1992)
-* M10 Bottom-Up (Gehrmann+ 2018) introduce a bottom-up approach whereby 
+* M10 Bottom-Up (Gehrmann+ 2018) introduce a bottom-up approach whereby
   * a content selection model restricts the copy attention distribution of a
     pretrained Pointer Generator Network during inference
 * M11 Improve-abs (Kryściński+ 2018) extend the model of Paulus+ (2017) by
@@ -256,9 +256,9 @@ https://github.com/Yale-LILY/SummEval
   keyphrase-based salience reward as well as an entailment-based reward in
   addition to using a ROUGE-based reward in a REINFORCE setting,
   optimizing rewards simultaneously in alternate mini-batches
-* M14 Multi-task (Ent + QG, Guo+ 2018) propose 
+* M14 Multi-task (Ent + QG, Guo+ 2018) propose
   * a multi-task framework along with a corresponding multi-task architecture
-  * question generation and entailment generation as auxiliary tasks 
+  * question generation and entailment generation as auxiliary tasks
 * M15 Closed book decoder (Jiang and Bansal, 2018)
   build upon a Pointer Generator Network by adding an
   additional copy-less and attention-less decoder during training time
@@ -292,7 +292,7 @@ https://github.com/Yale-LILY/SummEval
   * 44 model outputs, as many papers include variations of the main model
   * All models were trained on the CNN/DailyMail news corpus
   * using the test split of the dataset
-  * unified format and IDs of the original CNN/DailyMail examples 
+  * unified format and IDs of the original CNN/DailyMail examples
     so that generated summaries can be matched with corresponding src articles
     * Pairing model outputs with original articles was done using a heuristic
       approach that relied on aligning reference summaries
@@ -303,11 +303,10 @@ https://github.com/Yale-LILY/SummEval
 
 ## 4.2 Evaluation Toolkit
 
-* 12 automatic evaluation metrics described in Section 3.1, a Python package.
+* 12 automatic evaluation metrics described in Section 3.1, a Python package
   * a high-level, easy-to-use interface
-  * evaluate_example and evaluate_batch functions that return the metric’s score
-  * standard configuration resembling the most popular settings for each of the
-    metrics to enable easy, out-of-the-box use
+  * evaluate_example and evaluate_batch functions
+  * standard configuration resembling the most popular settings for each metric
     * each metric can be further configured using external `gin` config files
   * command-line tool to eval a summ model with several metrics in parallel
 
@@ -318,7 +317,7 @@ https://github.com/Yale-LILY/SummEval
 * 100 articles randomly picked from the CNN/DailyMail test set
   * each summary was scored by 5 crowd-source and 3 expert workers, amounting to
     12800 summary-level annotations
-* Model outputs were evaluated along the following four dimensions, 
+* Model outputs were evaluated along the following four dimensions,
   as in Kryściński+ (2019a):
 
 ### Coherence: the collective quality of all sentences
@@ -342,123 +341,112 @@ https://github.com/Yale-LILY/SummEval
 ### Relevance: selection of important content from the source
 
 * The summary should include only important information from the source doc
-* Annotators were instructed to penalize too long or redundant summaries 
+* Annotators were instructed to penalize too long or redundant summaries
 
 ### *
 
-* The data collection interface provided judges with the source article and
-  associated summaries grouped in sets of 5. Each group of summaries contained
-  the reference summary associated with the source article in order to establish
-  a common point of reference between groups. Summary grouping and order within
-  groups was randomized for each annotator. Judges were asked to rate the
-  summaries on a Likert scale from 1 to 5 (higher better) along the four
-  mentioned dimensions
+* The data collection interface provided judges with the 
+  source article and associated summaries grouped in sets of 5
+  * Each group of summaries contained the reference summary associated with the
+    source article in order to establish a common point of reference 
+  * Summary grouping and order within groups was randomized for each annotator
+  * Judges were asked to rate the summaries on a Likert scale from 1 to 5
+    (higher better) along the four mentioned dimensions
 * Crowd-source annotators were hired through the Amazon Mechanical Turk platform
-  The hiring criteria were set to a minimum of 10000 approved HITs and an
-  approval rate of 97% or higher. Geographic constrains for workers were set to
-  United States, United Kingdom, and Australia to ensure that summaries were
-  evaluated by native English speakers. Compensation was carefully calculated to
-  ensure an average wage of 12 USD per hour
+  * hiring criteria: min 10000 approved HITs and an approval rate of 97%
+  * Geographic constrains: United States, United Kingdom, and Australia to
+    ensure that summaries were evaluated by native English speakers
+  * Compensation was calculated to ensure an average wage of 12 USD per hour
 * expert
   * Gillick and Liu (2010) showed that summary judgments obtained through
-    non-experts could exhibit worse inter-annotator agreement. As a result, in
+    non-experts could exhibit worse inter-annotator agreement
   * we enlisted three expert annotators who have written papers on summarization
-    either for academic conferences (2) or as part of a senior thesis (1). The
+    either for academic conferences (2) or as part of a senior thesis (1)
   * asked to evaluate the same set of summaries under the same instructions as
-    the hired crowd-source workers.  For expert judgments, we proceeded with 
-  * two rounds of annotation. 
+  * two rounds of annotation
   * In the second round, annotators were asked to check all examples for which
     their score of a dimension differed from another annotator by more than 2
-    points and where the other annotators were within 1 point of each other. In
-    cases where a score differed by more than 2 points for which such a pattern
-    did not exist, all annotators examined the annotation. The second round of
+    points and the other annotators were within 1 point of each other
+    * In cases where a score differed by more than 2 points for which such a
+      pattern did not exist, all annotators examined the annotation
     * to correct any obvious mistakes as well as to confirm judgments
 
 # 5 Metric Re-evaluation 8
 
-## 5.1 Human Annotations 
+## 5.1 Human Annotations
 
 * Gillick and Liu, (2010): quality differences between crowd-sourced and expert
-* we study this issue using the human annotations collected in this work.  
-* Krippendorff’s alpha coefficient (Krippendorff, 2011). We found the
-  * interannotator interval kappa to be below an acceptable range 
-    for the crowd-source workers and first round of expert annotations 
+* we study this issue using the human annotations collected in this work
+* Krippendorff’s alpha coefficient (Krippendorff, 2011)
+  * inter-annotator interval kappa to be below an acceptable range
+    for the crowd-source workers and first round of expert annotations
   * second round of expert annotations improved the inter-annotator agreement
-* similarity of annotations between the two groups of annotators we averaged the
+* similarity of annotations between the two groups of annotators
   * Pearson’s correlation coefficient close to 0, indicating no correlation
 * We also manually inspected the human annotations and present examples of
-  annotated summaries as well as the differences in human judgments in Table
-  * ambiguous pronoun usage and factual inconsistencies. The errors result in
-  * token and phrase repetitions. The errors were caught by the 
-    * expert annotators resulting in a low fluency score, while 
+  annotated summaries as well as the differences in human judgments
+  * ambiguous pronoun usage and factual inconsistencies
+  * token and phrase repetitions
+    * expert annotators resulting in a low fluency score, while
     * crowd-source annotators incorrectly classified them as issues with factual
 * difficulties of crowd-sourcing high quality annotations and the necessity
-  for protocols for improving human evaluation in text summarization.
+  for protocols for improving human evaluation in text summarization
 
 ## 5.2 Automatic Metrics
 
 * Many automatic metrics for eval summarization and other text generation models
-* lacks a comprehensive stud.
+* lacks a comprehensive study
 * In Table 2 we show the correlations between automatic metrics and human
   * computed using the available expert annotations to avoid crowd-sourced probl
-* multi-reference setting, us-ing the original reference summary included in the
-
-CNN/DailyMail dataset and 10 additional summaries coming from Kryściński+
-(2019a). We report correlations without differentiating between abstractive and
-extractive models, as most metrics did not exhibit large differences in
-correlation when reported separately. For completeness, we include correlation
-tables for a setting with 1 and 6 reference summaries with a separation by model
-type in the Appendix.
-
-* most metrics have highest correlation within the relevance dimension, although
-  the correlation strength can be classified as either weak or moderate. This
-  * follows intuition as most metrics explicitly/implicitly calculate token ovrl
-* measures of extractiveness 
-  * such as the percentage of novel n-grams in the summary and the extractive
-    coverage
-  * correlate moderately with consistency, which 
-  * abstraction may be at odds with faithfulness. 
-* The highest correlation for coherence is found in examining repeated n-grams,
-  as repetition displays a lack of coherence.
-However, most metric correlations are considerably worse along this dimension as
-well as along fluency, suggesting that developing metrics to measure these
-dimensions is a necessary area of future work.
-* highlight the evaluation dimensions that are not reliably covered by metrics
-
-* Pearson’s correlation coefficients, pairwise, between all metrics. Results are
+  * multi-reference setting, using the original reference in the CNN/DailyMail
+    and 10 additional summaries coming from Kryściński+ (2019a)
+    * without differentiating between abstractive and extractive models,
+      * most metrics did not exhibit large differences 
+      * correlation tables with a separation by model type in Appendix
+  * most metrics have highest correlation within the relevance dimension
+    * correlation strength can be classified as either weak or moderate
+    * follows intuition: most metrics explicitly/implicitly calculate token ovrl
+  * measures of extractiveness
+    * e.g. the percentage of novel n-grams in the summary and extractive coverag
+    * correlate moderately with consistency
+      * abstraction may be at odds with faithfulness
+  * The highest correlation for coherence is found in examining repeated n-grams
+    * repetition displays a lack of coherence
+  * most metric correlations are considerably worse along coherence and fluency,
+* Pearson’s correlation coefficients, pairwise, between all metrics
   * strong correlation between all metrics that compute, implicitly or
-    explicitly, the lexical overlap between generated and reference summaries.
+    explicitly, the lexical overlap
   * n-gram novelty and repetitiveness show weak negative correlation with all
-    ROUGE-related metrics. 
-  * Length non-weakly correlated with S^3 , which might suggest the 
-    mentioned metric is biased towards longer summaries. Worth noting is also
-  * weak correlation of SummaQA with all other evaluated metrics, which calls
-    for an additional investigation.
+    ROUGE-related metrics
+  * Length non-weakly correlated with S^3, which might suggest 
+    * S^3 is biased towards longer summaries
+  * weak correlation of SummaQA with all other evaluated metrics, which 
+    calls for an additional investigation
 
 # 6 Model Re-evaluation 9
 
-* model scores across human evaluations and automatic metrics. The evaluated
-  * models were released between 2017 and 2019, represent different approaches to
-  * abstractive, extractive and hybrid, and their 
-  * architectures reflect the trends in summarization research. 
-  * we focus on the versions with highest ROUGE-L scores.
-    * Although in many cases we obtained multiple variants of the same model 
+* model scores across human evaluations and automatic metrics
+  * models were released between 2017 and 2019, represent different approaches
+  * abstractive, extractive and hybrid
+  * architectures reflect the trends in summarization research
+  * we focus on the versions with highest ROUGE-L scores
+    * Although in many cases we obtained multiple variants of the same model
 * Table 3 contains the results of human evaluation across the four dimensions
-  * Scores for ground truth summaries are included as a point of reference. We
-  * pretrained models consistently performed best on most dimensions.
+  * Scores for ground truth summaries are included as a point of reference
+  * pretrained models consistently performed best on most dimensions
     * models such as Pegasus, BART, and T5
-    * scored highest on consistency and fluency while obtaining 
-      lower scores for relevance and coherence. Scores for 
+    * scored highest on consistency and fluency while obtaining
+      lower scores for relevance and coherence
   * extractive models: lack of coherence and issues with selecting relevant
-  * Abstractive model: increasing trend with respect to the date of publication.  
-  * reference summaries did not score well on consistency. Upon examination of
+  * Abstractive model: increasing trend with respect to the date of publication
+  * reference summaries did not score well on consistency
     * often contained extraneous information, such as hyperlinks and click-bait
       descriptions of other articles. As this information was not present in the
-      source document, the annotators interpreted it as a hallucination and gave
-* Table 4 show scores for model outputs across all automatic evaluation metrics.
-  * results align with insights coming from human evaluation of models. We found
-  * highest scores were assigned to large models pretrained on vast data.
-  * hE S 3, SummaQA, SMS, CHRF, and METEOR tended to favor extractive models,
+      source document, the annotators interpreted it as a hallucination
+* Table 4 show scores for model outputs across all automatic evaluation metrics
+  * results align with insights coming from human evaluation of models
+  * highest scores were assigned to large models pretrained on vast data
+  * hE S^3, SummaQA, SMS, CHRF, and METEOR tended to favor extractive models
 
 # 7 Conclusions
 
@@ -467,5 +455,5 @@ dimensions is a necessary area of future work.
     CNN/DailyMail dataset, an extensible and unified
   * toolkit for summarization model evaluation, and a
   * diverse collection of human annotations of model outputs collected from the
-    crowd-source and expert annotators.  Using the accumulated resources
-* we re-evaluated a broad selection of current models and evaluation metrics in
+    crowd-source and expert annotators
+* we re-evaluated a broad selection of current models and evaluation metrics
