@@ -14,13 +14,13 @@ arXiv:1911.02929 [cs.CL]
   * directly, to solve lexical semantics tasks, such as word sim and analogy
     * large interest to computational linguistic research
       (Faruqui+ 2015 Retrofitting; Kiela+ 2015a; Artetxe+ 2018)
-      * Douwe Kiela, Felix Hill, and Stephen Clark.
-        EMNLP 2015a.
+      * Douwe Kiela, Felix Hill, and Stephen Clark
+        EMNLP 2015a
         Specializing word embeddings for similarity or relatedness
-      * Mikel Artetxe, Gorka Labaka, Iñigo Lopez-Gazpio, and Eneko Agirre.
-        CoNLL 2018.
+      * Mikel Artetxe, Gorka Labaka, Iñigo Lopez-Gazpio, and Eneko Agirre
+        CoNLL 2018
         Uncovering divergent linguistic information in word embeddings
-          with lessons for intrinsic and extrinsic evaluation.
+          with lessons for intrinsic and extrinsic evaluation
   * as input representations to downstream tasks,
     * addressing sparsity issues of one-hot or indicator feature functions
 * contextualized word representation such as
@@ -49,69 +49,69 @@ arXiv:1911.02929 [cs.CL]
 
 # 2 Related Work
 
-## Static Word Embeddings. 
+## Static Word Embeddings
 
 * Skip-gram (SG) and continuous-bag-of-words (CBOW) are two models based on
   distributed word-context pair information (Mikolov+ 2013a). The former
   predicts the context words for a center word, while the latter predicts a
-  center word using its context words. 
-* Ling+ (2015) claims that not all the context are equal and considered 
-  word order in the skip-gram model.
+  center word using its context words
+* Ling+ (2015) claims that not all the context are equal and considered
+  word order in the skip-gram model
 * Hall+ (2014) and Levy and Goldberg (2014a) further inject syntactic informa-
-  tion by building word embeddings from the dependency parse trees over texts.
+  tion by building word embeddings from the dependency parse trees over texts
 * GloVe (Pennington+ 2014) learns word embeddings by factorizing global word
-  co-occurrence statistics.
+  co-occurrence statistics
 * sense embedding (Chen+ 2014; Li and Jurafsky, 2015; Jauhar+ 2015). However,
-  * Sujay Kumar Jauhar, Chris Dyer, and Eduard Hovy.
-    NAACL 2015. 
+  * Sujay Kumar Jauhar, Chris Dyer, and Eduard Hovy
+    NAACL 2015
     Ontologically grounded multi-sense representation learning for semantic
-    vector space models.
+    vector space models
 
 ## Dynamic Word Embeddings. Contextualized word representations have been shown
 
-* useful for NLP tasks (Choi+ 2018; Xu+ 2019; Lin+ 2019). 
+* useful for NLP tasks (Choi+ 2018; Xu+ 2019; Lin+ 2019)
 * ELMo (Peters+ 2018) provides deep word representations generated from LSTM
-  based language modeling, 
+  based language modeling,
 * GPT (Radford+ 2018, 2019) improves language model pretraining based on
-  Transformer (Vaswani+ 2017), 
+  Transformer (Vaswani+ 2017),
 * BERT (Devlin+ 2019) investigates selfattention-network for deep
-  bidirectional representations, 
+  bidirectional representations,
 * XLNet (Yang+ 2019) takes a generalized autoregressive pretraining model based
-  on Transformer-XL (Dai+ 2019).
+  on Transformer-XL (Dai+ 2019)
 * not model word co-occurrences directly, which has been shown important for
   distributed word embeddings. By integrating dynamic embeddings into the
-  training of static embeddings, we 
+  training of static embeddings, we
 
-## Dynamically Calculating Context Vectors for Word Embeddings. 
+## Dynamically Calculating Context Vectors for Word Embeddings
 
 * SynGCN (Vashishth+ 2019) use graph convolution network (GCN) to integrate
-  syntactic context for learning context embeddings.
+  syntactic context for learning context embeddings
 
 # 5 Experiments
 
 ## 5.4 Results
 
 * btw, can be that the syntax-based embedding encodes functional similarity
-  rather than topical similarity (Komninos and Manandhar, 2016), which is 
+  rather than topical similarity (Komninos and Manandhar, 2016)
   * more suitable for the relation similarity tasks, including relation classes
     * “part-whole” (e.g., `<car, engine>` is more similar to `<hand, finger>`
-      than `<bottle, water>`) and 
+      than `<bottle, water>`) and
     * “cause-purpose” (e.g., `<anesthetic, numbness>` is more similar to `<joke,
-      laughter>` than `<smile, friendship>`).
-* dynamic embedding models: the static token embeddings (e.g., BERT token ) and
-  the average of output representations (e.g., BERT avg ) perform relatively
-  close on word similarity tasks, giving 
-  * comparable results on some datasets such as WS353S and RW, and 
-  * better than traditional models on the SimLex-999 and SemEval-2012 datasets.
-  * underperform static baselines on datasets such as WS353, WS353R and MEN. Our
+      laughter>` than `<smile, friendship>`)
+* dynamic embedding models: the
+  static token embeddings (e.g., BERT token ) and the average of output
+  representations (e.g., BERT avg ) perform relatively close on word similarity
+  * comparable results on some datasets such as WS353S and RW, and
+  * better than traditional models on the SimLex-999 and SemEval-2012 datasets
+  * underperform static baselines on datasets such as WS353, WS353R and MEN
 
 # 6 Analysis
 
-Below we investigate the main reason behind the effectiveness of our method.
+Below we investigate the main reason behind the effectiveness of our method
 
-## Fine-grained Result. Table 2 shows the 
+## Fine-grained Result
 
-* word similarity results of some representative word pairs
+* word similarity results of some representative word pairs. Table 2
   * BERT token does not capture the relatedness of `<dividend, payment>` and
     `<murder, manslaughter>` due to lack of consideration of context
     * discrepancy between human judgement and model scoring
@@ -123,47 +123,47 @@ Below we investigate the main reason behind the effectiveness of our method.
   * In addition, the same neighboring words appearing in more sentences may have
     more similar averaged contextualized representations, thus leading BERT avg
     to give higher similarity scores compared with human judgement
-  * SynGCN tends to underestimate the relationship between word pairs 
+  * SynGCN tends to underestimate the relationship between word pairs
     * negative influence of differentiating syntactic contexts
-  * Overall, the results of our model are closer to human judgement 
+  * Overall, the results of our model are closer to human judgement
 * word analogy, we compare the performances of models according to different
   types of word pairs
   * Table 3 shows the results
   * BERT token performs relatively lower on “capital-country” and “city-state”
     compared to skip-gram because it does not model context information
-  * BERT avg improves the results by a large margin, giving comparable results
-    on grammatical related word analogy such as “plural” due to the use of
-    sentential information
-  * SynGCN performs relatively well on grammatical related word pairs by using
+  * BERT avg improves the results by a large margin, giving 
+    comparable results on grammatical related word analogy such as “plural” 
+    due to the use of sentential information
+  * SynGCN performs relatively well on grammatical related word pairs
     * However, it does not perform well on “capital-country” and
       “nationality-adjective” word pairs compared with the sequential context
       based skip-gram model
   * In contrast, our model takes the advantages of these methods and gives the
-    best overall performance.
+    best overall performance
 
-## Nearest Neighbors. 
+## Nearest Neighbors
 
 * Table 4 shows the nearest neighbors to the word “while” according to cosine
   * traditional methods yield words that tend to co-occur with the word “while”,
     such as “preparing”, “still”, “taking” and “instead”
   * SynGCN: words that are semantically similar, i.e. related to time
   * our method: multiple conjunctions that have similar meanings to “while”,
-    such as “whilst”, “whereas” and “although”, which better conforms to the
+    such as “whilst”, “whereas” and “although”
 
-## Word Pairs Visualization. 
+## Word Pairs Visualization
 
 * Figure 3 shows the t-SNE (van der Maaten and Hinton, 2008) visualization
   results for word pairs with the male-female relationship
   * For example, the pronoun pair `<he, she>`, the occupation pair `<policeman,
-    policewoman>` and the family relation pair `<grandpa, grandma>` 
+    policewoman>` and the family relation pair `<grandpa, grandma>`
 * Skip-gram, CBOW, GloVe, FASTTEXT and SynGCN baselines all capture the gender
   analogy through vector space topology to some extent, hE, inconsistency exists
 * In contrast, the outputs of our method are highly consistent, better
   demonstrating the algebraic motivation behind skip-gram embeddings
 
-## Attention Distribution Visualization. Figure 4 shows the attention weights 
+## Attention Distribution Visualization. Figure 4
 
 # 7 Conclusion
 
 * Future work includes the investigation of sense embeddings and syntactic
-  embeddings under our framework.
+  embeddings under our framework
