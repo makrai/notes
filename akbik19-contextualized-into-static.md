@@ -9,7 +9,7 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
 
 * Contextual string embeddings are a recent type of contextualized word embed
   * SOTA results in a range of sequence labeling tasks
-  * character-level language models which
+  * character-level language models
   * generating embeddings for any string of characters within any textual contxt
   * no meaningful embeddings if a rare string is used in a underspecified contxt
 * we propose a method in which we
@@ -18,7 +18,7 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
   * global word representation used in combination with the current contextualzd
   * i.e. evolving word representations:
     * change as more instances of the same word are observed
-  * fomr the conclusion:
+  * from the conclusion:
     * continues to “learn” even after the training of the downstream NER model,
       in prediction mode
 * evaluate these ”pooled contextualized embeddings” on NER
@@ -28,12 +28,12 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
 
 * contextual string embeddings (Akbik+ 2018)
   * a character-level contextualized embeddings approach
-  * leverage pre-trained character-level language models from which they extract
-    hidden states at the beginning and end character positions of each word to
+  * from pre-trained character-level language models, 
+    extract hidden states at the beginning and end character of each word to
     produce embeddings for any string of characters in a sentential context
   * SOTA results when utilized in sequence labeling tasks such as NER or PoS
 
-## Underspecified contexts. However, such contextualized character-level models
+## Underspecified contexts
 
 * weakness when encountering rare words in an underspecified context
 * e.g. “Fung Permadi (Taiwan) v Indra”, from the English CONLL-03 test data
@@ -42,16 +42,16 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
     person or an organization
   * causes an incorrect classification of “Indra” as an organization
 
-## Pooled Contextual Embeddings. In this paper, we present a simple but
+## Pooled Contextual Embeddings
 
-* entities are normally only used in underspecified contexts if they are
-  expected to be known to the reader
+* entities are normally only used in underspecified contexts if 
+  they are expected to be known to the reader
   * i.e. either more clearly introduced in an earlier sentence, or
     part of general in-domain knowledge
 
 # 4 Discussion and conclusion
 
-## Evolving embeddings. Our dynamic aggrega-
+## Evolving embeddings
 
 * Assuming that entity names are more often used in well-specified contexts,
   their pooled embeddings will improve as more data is processed

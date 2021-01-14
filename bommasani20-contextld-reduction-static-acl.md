@@ -21,13 +21,12 @@ ACL 2020
 
 # 1 Intro
 
-* parallel and complementary innovations of embedding methods
-  * in part have come from integrating additional information
-    * syntax (Levy and Goldberg, 2014a; Li+ 2017),
-    * morphology (Cotterell and Schütze, 2015),
-    * subwords (Bojanowski+ 2017),
-    * subcharacters (Stratos, 2017; Yu+ 2017) and,
-    * context (Peters+ 2018; Devlin+ 2019): tremendous representational power
+* innovations of embedding methods from integrating additional information
+  * syntax (Levy and Goldberg, 2014a; Li+ 2017),
+  * morphology (Cotterell and Schütze, 2015),
+  * subwords (Bojanowski+ 2017),
+  * subcharacters (Stratos, 2017; Yu+ 2017) and,
+  * context (Peters+ 2018; Devlin+ 2019): tremendous representational power
 * interpretability research:
   * Liu+ (2019a); Tenney+ (2019a): across the layers
   * Tenney+ (2019b); Ethayarajh (2019): from context,
@@ -38,7 +37,7 @@ ACL 2020
     security (adversarial robustness) and social bias
 * we trying to re-purpose methods developed for analyzing static word embeddings
   * proposing a simple strategy for converting from contextualized to static
-  * method is fully general and
+  * method is fully general
     * assumes only that the contextualized model maps word seqs to vector seqs
   * apply our method to 9 popular pretrained contextualized representations
   * examine the representational quality of these embeddings under intrinsic
@@ -73,14 +72,14 @@ ACL 2020
 * context combination to be the mapping from representations of w in different
   contexts to a single static embedding w that is agnostic of context
 
-## Subword Pooling. The tokenization procedure for BERT can be decomposed into
+## Subword Pooling
 
 * we consider four pooling mechanisms: f ∈ {min, max, mean, last}
 
 ## Context Combination
 
 * two approaches for specifying contexts and combining the associated reprs
-  * Decontextualized: For a word w, we use a single context c 1 = w. That is,
+  * Decontextualized: For a word w, we use a single context c 1 = w
     * we feed the single word w into the pretrained model and use the outputted
     * (applying subword pooling if the word is split into multiple subwords)
   * Aggregated: Since the
@@ -93,8 +92,8 @@ ACL 2020
 * We begin by verifying that the resulting static embeddings retain repr strengt
   * to ensure that properties we observe of the static embeddings are consistent
     with the original contextualized representations
-* we employ an exceptionally simple parameter-free method for converting from
-  contextualized to static representations to
+* we employ an exceptionally simple parameter-free method for 
+  converting from contextualized to static representations
   * ensure that any properties observed in the latter are not introduced by cler
   * concerns with probing methods/diagnostic classifiers regarding
     whether learning can be attributed to the classifier and not the LM
@@ -103,7 +102,7 @@ ACL 2020
   * the most prominent pretrained static embeddings for several years
 * as the contextualized model: BERT, GPT-2 (Radford+ 2019), XLNet (Yang+ 2019),
   RoBERTa (Liu+ 2019b), DistilBERT (Sanh+ 2019)) and, in total,
-  * 9 sets of pretrained weights. All models, weights, and naming conventions
+  * 9 sets of pretrained weights
 
 # 4 Representation Quality
 
@@ -117,28 +116,28 @@ ACL 2020
 
 ## 4.2 Results
 
-### Pooling Strategy. In Figure 1, we show the performance on all 4 datasets for
+### Pooling Strategy. In Figure 1
 
-* representations are aggregated over N = 100K sentences where N is the number
+* representations are aggregated over N = 100K sentences
 * g = mean is the best-performing pooling mechanism
-* Fixing g = mean, mean pooling at the subword level also performs best (the
+* Fixing g = mean, mean pooling at the subword level also performs best
 * consistently holds across pretrained models
 
-### Number of Contexts. In Table 1, we see that
+### Number of Contexts. In Table 1
 
 * performance for both BERT-12 and BERT-24 steadily increases across all
-  datasets with increasing N ; this trend holds for the other 7 pretrained
+  datasets with increasing N; this trend holds for the other 7 pretrained LMs
 * with N = 1M, the BERT-24 embeddings from the best layer for each dataset
-  drastically outperform both Word2Vec and GloVe.  However,
+  drastically outperform both Word2Vec and GloVe
 * we can fix a particular layer for all datasets and still outperform both
   Word2Vec and GloVe on all datasets
 
 ### Relationship between N and model layer, Figure 1
 
 * clear preference towards the first quarter of the model’s layers (layers 0-3)
-  with a sharp drop-off in performance immediately thereafter. A similar
+  with a sharp drop-off in performance immediately thereafter
 * consistent with the findings of Liu+ (2019a); Tenney+ (2019a) regarding where
-  lexical semantic information is best encoded in pretrained contextualized
+  lexical semantic information is best encoded
 * relationship between N and the best-performing layer. The best-performing
   layer monotonically (with a single exception) shifts to be later and later
   * later layers demonstrate greater variance with respect to the layer-wise
@@ -149,20 +148,20 @@ ACL 2020
   * as later layers of the model are generally preferred by downstream
     practitioners (Zhang+ 2020)
 
-### Cross-Model Results. Remarkably, we find that
+### Cross-Model Results. Remarkably
 
-* most tendencies we observe generalize well to all other pretrained models we
+* most tendencies we observe generalize well to all other pretrained models
 * noteworthy given that several works have found that different contextualized
   models pattern substantially differently (Liu+ 2019a; Ethayarajh, 2019)
-In Table 2,
+* Table 2,
 * All of the models considered were introduced during a similar time period
-  and have comparable properties in terms of downstream performance. In spite of
-* their static analogues perform radically differently.  For example,
-  * several do not reliably outperform Word2Vec and GloVe despite outperforming
+  and have comparable properties in terms of downstream performance
+* their static analogues perform radically differently
+  * several do not reliably outperform Word2Vec and GloVe
   * Future work may consider whether this is reflective of the quality of
     context-agnostic lexical semantics from other types of linguistic knowledge
     (e.g.  context modelling, syntactic understanding, and semantic
-    composition). In general, these results provide further evidence to suggest
+    composition)
   * linguistic understanding captured by different pretrained weights may be
     substantially different,
     * even for models with near-identical Transformer (Vaswani+ 2017) archit
