@@ -9,30 +9,29 @@ https://github.com/deepmind/xquad
   * attributed to the use of a shared subword vocabulary and joint training
     across multiple languages giving rise to deep multilingual abstractions
   * We evaluate this hypothesis
-* our approach transfers a monolingual model to new languages
-  at the lexical level
+* our approach transfers a monolingual model to new languages at the lex level
   * first train a transformer-based masked language model on one language, and
   * transfer it to a new language by learning a new embedding matrix with the
     same masked language modeling objective, freezing all other layer params
   * not rely on a shared vocabulary or joint training
   * competitive with multilingual BERT on standard cross-lingual classification
     benchmarks and on a new Cross-lingual Question Answering Dataset (XQuAD)
-* suggest that deep monolingual models learn 
+* suggest that deep monolingual models learn
   some abstractions that generalize across languages
-* We also release XQuAD as a more comprehensive cross-lingual benchmark, which
-  * 240 paragraphs and 1190 question-answer pairs from SQuAD v1.1 
+* We also release XQuAD as a more comprehensive cross-lingual benchmark
+  * 240 paragraphs and 1190 question-answer pairs from SQuAD v1.1
     translated into ten languages by professional translators
 
 # 1 Intro
 
-* mBERT, (Devlin+ 2019) have been 
+* mBERT, (Devlin+ 2019) have been
   * for zero-shot cross-lingual transfer (Pires+ 2019; Conneau and Lample, 2019)
-  * jointly trained transformer model (Vaswani+ 2017) to perform 
-    masked language modeling (MLM) in multiple languages, which is then 
+  * jointly trained transformer model (Vaswani+ 2017) to perform
+    masked language modeling (MLM) in multiple languages, which is then
     fine-tuned on a downstream task using labeled data in a single lang, typ En
-  * model is able to generalize to other languages, 
-    even if it has never seen labeled data in those languages Such 
-  * surprising, as there is no explicit cross-lingual term in the training obj.
+  * model is able to generalize to other languages,
+    even if it has never seen labeled data in those languages
+  * surprising, as there is no explicit cross-lingual term in the training obj
 * Pires+ (2019) hypothesized that: having word pieces used in all languages
   (numbers, URLs, etc) forces the
   co-occurring pieces to also be mapped to a shared space, thus spreading the
@@ -49,7 +48,7 @@ https://github.com/deepmind/xquad
   * starts with a monolingual transformer trained with MLM
   * transfer to a new language by learning a new embedding matrix through MLM in
     the new language while freezing parameters of all other layers
-  * competitive with joint multilingual pre-training 
+  * competitive with joint multilingual pre-training
     in standard zero-shot cross-lin transfer benchmarks (XNLI, MLDoc, PAWS-X)
 * We also experiment with a new Cross-lingual Question Answering Dataset (XQuAD)
   * 240 paragraphs and 1190 question-answer pairs from SQuAD v1.1 (Rajpurkar+16)
@@ -71,10 +70,10 @@ https://github.com/deepmind/xquad
 
 # 4 XQuAD: a new cross-lingual question answering dataset (§4)
 
-# sum 3,4 : neither a shared subword vocabulary nor joint multilingual training
+# sum 3,4: neither a shared subword vocabulary nor joint multilingual training
 is necessary for zero-shot transfer and
 * effective vocabulary size per language is an important factor for learning
-  multilingual models (§3 and §4);
+  multilingual models
 
 # 5 Discussion
 

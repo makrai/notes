@@ -30,10 +30,10 @@ ACL 2019
 * inspect the structure of the network directly, to assess
   whether there exist regions associated with distinct types of ling decisions
 * a range of syntactic and semantic information
-  (e.g. Shi+ 2016; Belinkov, 2018; Tenney+ 2019)
+  (Shi+ 2016; Belinkov, 2018; Tenney+ 2019)
 * more complex structures are represented hierarchically in the higher layers
   (Peters+ 2018b; Blevins+ 2018)
-  * (Peters+ 2018b): lower layers of a LM encode more local syntax while
+  * Peters+ (2018b): lower layers of a LM encode more local syntax while
     higher layers capture more complex semantics
 * contributions
   * analysis that spans the common components of a traditional NLP pipeline
@@ -48,7 +48,7 @@ ACL 2019
 
 ## 2.1 Edge probing
 
-* We use the code from https://github.com/ jsalt18-sentence-repl/jiant
+* We use the code from https://github.com/jsalt18-sentence-repl/jiant
   * Dependencies is the English Web Treebank (Silveira+ 2014),
   * SPR is the SPR1 dataset of (Teichert+ 2017), and
   * relations is SemEval 2010 Task 8 (Hendrickx+ 2009)
@@ -72,7 +72,7 @@ ACL 2019
     uniform, and that nontrivial examples for these tasks are resolved gradually
     across nearly all layers
   * entity labeling many examples are resolved in layer 1, but with a long tail
-    thereafter, and only a weak concentration of mixing weights in high layers
+    * only a weak concentration of mixing weights in high layers
 * Further study is needed to determine whether this is because
   * BERT has difficulty representing the correct abstraction for these tasks, or
   * semantic information is inherently harder to localize
@@ -84,7 +84,7 @@ ACL 2019
   * We attribute this to the availability of heuristic shortcuts: while
     challenging examples may not be resolved until much later,
     many cases can be guessed from shallow statistics
-* mixing weights are concentrated much later, layers 9-20 for BERT-large. We
+* mixing weights are concentrated much later, layers 9-20 for BERT-large
   * highest weights are found on or just after the highest layers which give an
     improvement ∆_τ in F1 score for that task
     * particularly when weights are highly concentrated
@@ -95,8 +95,8 @@ ACL 2019
   * Similarly for entity types, we see continued improvements in the higher lays
     * perhaps related to fine-grained semantic distinctions like ”Organization”
       (ORG) vs. ”Geopolitical Entity” (GPE) – while the
-    * low value for the expected layer reflects that many examples require only
-      limited context to resolve
+    * low value for the expected layer reflects that 
+      many examples require only limited context to resolve
 
 ### Comparison of Encoders. We observe the same general ordering on the 12-layer
 BERT-base model (Figure A.2)
@@ -116,7 +116,7 @@ BERT-base model (Figure A.2)
       thing getting “smoked” (ARG1) – the entity-typing decision is revised in
       favor of ORG (i.e. the sports team)
     2. the model initially tags “today” as a common noun, date, and temporal
-       modifier (ARGM-TMP).  However, this phrase is ambiguous, and it
+       modifier (ARGM-TMP)
       * later reinterprets “china today” as a proper noun (i.e.  the TV network)
         and updates its beliefs about the entity type (to ORG), followed by the
         semantic role (reinterpreting it as the agent ARG0)
