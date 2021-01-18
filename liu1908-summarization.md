@@ -32,16 +32,16 @@ code is available at this https URL
   * abstractive model adopts an encoder-decoder architecture,
     combining the same pretrained BERT encoder with a
     randomly-initialized Transformer decoder (Vaswani+ 2017)
-    * We design a new training schedule which separates the optimizers of the
-      encoder and the decoder
+    * We design a new training schedule which 
+      separates the optimizers of the encoder and the decoder
       because the encodr is pretrained while the decodr is trained from scratch
     * two-stage approach where the encoder is fine-tuned twice,
       first with an extractive objective and subsequently on the abstractive
-* We evaluate the proposed approach on three single-document news summarization
-  datasets representative of different
-  * writing conventions (e.g., important information is concentrated at the
-    beginning of the document or distributed more evenly throughout) and
-  * summary styles
+* We evaluate the proposed approach 
+  on three single-document news summarization datasets
+  * different writing conventions (e.g., important information is concentrated
+    at the beginning of the document or distributed more evenly throughout) and
+  * different summary styles
     (e.g., verbose vs. more telegraphic; extractive vs. abstractive)
   * SOTA Across datasets, under both extractive and abstractive settings
 * document encoding for the summarization task

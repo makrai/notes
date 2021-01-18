@@ -2,7 +2,7 @@ Get To The Point: Summarization with Pointer-Generator Networks
 Abigail See, Peter J. Liu, Christopher D. Manning
 arXiv:1704.04368 [cs.CL]
 
-* Neural seq2seq models: viable new approach for abstractive summ
+* Neural seq2seq models: viable new approach for abstractive summarization
   (i.e. not restricted to simply selecting and rearranging passages)
 * two shortcomings: factual details inaccurately, and they repeat themselves
 * we propose a novel architecture that
@@ -24,17 +24,18 @@ arXiv:1704.04368 [cs.CL]
       inaccurately reproducing factual details, an
       inability to deal with out-of-vocabulary (OOV) words, and
       repeating themselves (see Figure 1)
-  * headline generation tasks (reducing one or two sentences to a single headl),
+  * headline generation tasks (reducing one or two sentences to 1 headline),
   * longer-text summarization
-    * CNN/ Daily Mail dataset (Hermann+ 2015; Nallapati+ 2016), which contains
+    * CNN/Daily Mail dataset (Hermann+ 2015; Nallapati+ 2016), which contains
       news articles (39 sentences on average) paired with
       multi-sentence summaries
 * Our hybrid pointer-generator network facilitates copying words from the source
   * pointing (Vinyals+ 2015), which improves accuracy and handling of OOV words,
     while retaining the ability to generate new words
   * balance between extractive and abstractive approaches
-  * similar to Gu+’s (2016) CopyNet and Miao and Blunsom’s (2016)
-    Forced-Attention Sentence Compression, that were applied to short-text
+  * similar to Gu+’s (2016) CopyNet and 
+    Miao and Blunsom’s (2016) Forced-Attention Sentence Compression, that 
+    * were applied to short-text
   * coverage vector (Tu+ 2016) from Neural Machine Translation
 
 # 4 Dataset
