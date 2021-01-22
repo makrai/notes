@@ -30,7 +30,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * Markov random field (Kindermann and Snell, 1980)
 * Euclidean distance
 * convex, solving a system of linear equations
-* prior approach here ... will serve as a baseline
+* prior approach here will serve as a baseline
 * `\beta_{ij} = deg(i)^{-1}`
 
 # 3 Word Vector Representations
@@ -104,7 +104,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * German RG-65 (Gurevych, 2005),
 * French RG-65 (Joubarne and Inkpen, 2011) and
 * Spanish MC-30 (Hassan and Mihalcea, 2009)
-* Universal WordNet (de Melo and Weikum, 2009),
+* Universal WordNet (de Melo and Weikum, 2009)
 
 # 7 Further Analysis
 
@@ -118,9 +118,9 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
   * frame associations (Das and Smith, 2011)
   * Broadly, graph-based semi-supervised learning
     (Zhu, 2005; Talukdar and Pereira, 2010)
-    * machine translation (Alexandrescu and Kirchhoff, 2009),
-    * unsupervised semantic role induction (Lang and Lapata, 2011),
-    * semantic document modeling (Schuhmacher and Ponzetto, 2014),
+    * machine translation (Alexandrescu and Kirchhoff, 2009)
+    * unsupervised semantic role induction (Lang and Lapata, 2011)
+    * semantic document modeling (Schuhmacher and Ponzetto, 2014)
     * language generation (Krahmer+ 2003) and
     * sentiment analysis (Goldberg and Zhu, 2006)
 
