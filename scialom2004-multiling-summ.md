@@ -3,7 +3,7 @@ Th Scialom, P Dray, S Lamprier, B Piwowarski, J Staiano
 arXiv:2004.14900 [cs.CL]
 
 * Obtained from online newspapers, it contains 1.5M+ article/summary pairs
-  * 5 languages -namely, French, German, Spanish, Russian, Turkish
+  * 5 languages, namely, French, German, Spanish, Russian, Turkish
   * Together with English newspapers from the popular CNN/Daily mail dataset,
 * cross-lingual comparative analyses based on SOTA systems
 * highlight existing biases which motivate the use of a multi-lingual dataset
@@ -22,15 +22,15 @@ arXiv:2004.14900 [cs.CL]
   1. LM pre-trained on a large corpus of texts in multiple languages
   2. model fine-tuned in one or more pivot languages
     for which the task-specific data are available
-  3. inference: model applied to the different pre-training languages seen
+  3. inference: model applied to the different pre-training languages
 * significant performance gap between English and the target language, e.g. for
-  classification (Conneau+ 2018) and
-  * Question Answering (Lewis+ 2019) tasks. A similar
-  * summarization (Chi+ 2019) obtaining, again, a lower performance than for
+  * classification (Conneau+ 2018) and
+  * Question Answering (Lewis+ 2019) tasks
+  * summarization (Chi+ 2019) obtaining, again, a lower performance
 * For specific NLP tasks, evaluation datasets in several target languages,
   allowing to evaluate the progress of the field in zero-shot scenarios
 * future work, we plan to add
-  * other languages including Arabic and Hindi, and to
+  * other languages including Arabic and Hindi, and
   * adaptation of neural metrics to multilingual summarization
 
 # 2 Related Work 2
@@ -40,35 +40,35 @@ arXiv:2004.14900 [cs.CL]
 * Radev+ (2002) developed MEAD, a multi-document summarizer: English, Chinese
 * Litvak+ (2010): genetic algorithm
 * A community-driven initiative, MultiLing (Giannakopoulos+ 2015), benchmarked
-  summarization systems on multilingual data. While the
+  summarization systems on multilingual data
   * 40 languages, it provides relatively few examples (10k in the 2019 release)
-    Mostly extractive approach given the
+  * Mostly extractive approach
 * lack of a multilingual corpus to train abstractive models (Duan+ 2019)
 * recently, with the rapid progress in automatic translation and generation,
   abstractive methods for multilingual summarization have been developed
   * Ouyang+ (2019): three low-resource languages (Somali, Swahili, & Tagalog),
-    by using an automated translation of the New York Times dataset..  Although
+    by using an automated translation of the New York Times dataset
   * slight improvements over a baseline which considers translated outputs of an
     English summarizer, results remain still far from human performance
-  * Summarization models from translated data usually under-perform, as
-    translation biases add to the difficulty of summarization
-* multi-lingual pre-trained models for NLP tasks, such as Multilingual BERT
-  (M-BERT, Pires+ 2019) or XLM (Lample and Conneau, 2019), Chi+ (2019) proposed
-  to fine-tune the models for summarization on English training data.  The
-  assumption is that the summarization skills learned from English data can
-  transfer to other languages on which the model has been pre-trained. However a
-  * significant performance gap between English and the target language is
+  * Summarization models from translated data usually under-perform,
+    * translation biases add to the difficulty of summarization
+* multi-lingual pre-trained models for NLP tasks,
+  e.g. Multilingual BERT (M-BERT, Pires+ 19) or XLM (Lample and Conneau, 19),
+  * Chi+ (19) proposed to fine-tune the models for summarization on English data
+    The assumption is that the summarization skills learned from English data
+    can transfer to other languages on which the model has been pre-trained
+  * significant performance gap between English and the target language
   * need of multilingual training data for summarization
 
 ## 2.2 Existing Multilingual Datasets for other tasks
 
-* below both i) rely on human translations, and ii) only provide evaluation data
+* these rely on human translations, and only provide evaluation data
 
-### The Cross-Lingual NLI Corpus The
+### The Cross-Lingual NLI Corpus
 
-* SNLI corpus (Bowman+ 2015) is a large scale dataset for NLI. It is composed of
-  a collection of 570k human-written English sentence pairs, associated with
-  their label, entailment, contradiction, or neutral. The
+* SNLI corpus (Bowman+ 2015) is a large scale dataset for NLI
+  * a collection of 570k human-written English sentence pairs, associated with
+    their label: entailment, contradiction, or neutral
 * MultiGenre Natural Language Inference (MultiNLI) corpus is an extension of
   SNLI, comparable in size, but including a more diverse range of text
 * Conneau+ (2018) introduced the Cross-Lingual NLI Corpus (XNLI)
@@ -80,19 +80,19 @@ arXiv:2004.14900 [cs.CL]
 
 * Given a paragraph and a question, the Question Answering (QA) task
 * Large scale datasets such as (Rajpurkar+ 2016; Choi+ 2018; Trischler+ 2016)
-  have driven fast progress.  2 However, these datasets are only in English. To
+  have driven fast progress, hE, these datasets are only in English
 * other languages, Lewis+ (2019) recently proposed MLQA, an evaluation dataset
   for cross-lingual extractive QA composed of 5K QA instances in 7 languages
 
 ### XTREME The Cross-lingual TRansfer Evaluation of Multilingual Encoders
 
-* 40 languages over 9 tasks. The summarization task is not included
+* 40 languages over 9 tasks, summarization is not included
 
 ### XGLUE In order to train and evaluate their performance across
 
 * a diverse set of cross-lingual tasks, Liang+ (2020) recently released XGLUE,
-* both Natural Language Understanding and Generation scenarios. While
-  * no summarization task is included, it comprises
+* both Natural Language Understanding and Generation scenarios
+  * no summarization task is included
   * a News Title Generation task: data is crawled from a commercial news website
   * 5 languages (German, English, French, Spanish and Russian)
 
@@ -100,14 +100,14 @@ arXiv:2004.14900 [cs.CL]
 
 ### Document Understanding Conference
 
-* Several small and high-quality summarization datasets in English (Harman and
-  Over, 2004; Dang, 2006) have been produced in the context of the Document
-  Understanding Conference (DUC). 3 They are built by associating
-* newswire articles with corresponding human summaries.  A
-* multiple reference summaries, distinctive feature of the DUC datasets is the
+* Several small and high-quality summarization datasets in English
+  (Harman and Over, 2004; Dang, 2006)
+* produced in the context of the Document Understanding Conference (DUC)
+* newswire articles with corresponding human summaries
+* multiple reference summaries, distinctive feature of the DUC datasets
   * Rankel+ (2013), the correlation between qualitative and automatic metrics,
     such as ROUGE (Lin, 2004), decreases significantly when only a single
-    reference is given.  However, due to the
+    reference is given
 * small number of training data available, DUC datasets are
   often used in a domain adaptation setup for models first trained on larger
   datasets such as Gigaword, CNN/DM (Nallapati+ 2016; See+ 2017) or with
@@ -116,24 +116,24 @@ arXiv:2004.14900 [cs.CL]
 ### Gigaword
 
 * Again newswire, the english Gigaword (Napoles+ 2012; Rush+ 2015; Chopra+ 2016)
-* large size and the high diversity in terms of sources. Since the samples are
-  not associated with human summaries, prior works on summarization have
-  trained models to generate the headlines of an article, given its incipit,
-  which induces various biases for learning models
+* large size and the high diversity in terms of sources
+* no human summaries, so prior works on summarization have trained models to
+  generate the headlines of an article, given its incipit, which induces various
+  biases for learning models
 
 ### New York Times Corpus
 
 * This large corpus for summarization consists of hundreds of thousand of
-  articles from The New York Times (Sandhaus, 2008), spanning over 20 years. The
-* summaries written by library scientists.  Although (
+  articles from The New York Times (Sandhaus, 2008), spanning over 20 years
+* summaries written by library scientists
 * Grusky+ (2018) found indications of bias towards extractive approaches,
   used by several efforts (Hong and Nenkova, 2014; Durrett+ 2016; Paulus+ 2017)
 
 ### CNN / Daily Mail
 
 * One of the most commonly used dataset for summarization
-  (Nallapati+ 2016; See+ 2017; Paulus+ 2017; Dong+ 2019), although
-* originally built for Question Answering tasks (Hermann+ 2015a). It consists of
+  (Nallapati+ 2016; See+ 2017; Paulus+ 2017; Dong+ 2019)
+* originally built for Question Answering tasks (Hermann+ 2015a)
 * English articles from the CNN and The Daily Mail
   associated with bullet point highlights from the article
   * the bullet points are typically concatenated into a single summary
@@ -141,67 +141,65 @@ arXiv:2004.14900 [cs.CL]
 ### NEWSROOM Composed of
 
 * 1.3M news articles (Grusky+ 2018), and featuring high diversity of publishers
-* summaries were extracted from the Web pages metadata: they were
-  * originally written to be used in search engines and social media
+* summaries were extracted from the Web pages metadata
+  * summaries originally written to be used in search engines and social media
 
 ### BigPatent Sharma+ (2019) collected
 
 * 1.3 million U.S. patent documents, across several technological areas,
-  using the Google Patents Public Datasets.  The
+  using the Google Patents Public Datasets
 * patents abstracts are used as target summaries
 
-### LCSTS The Large Scale Chinese Short Text Summarization Dataset (Hu+ 2015) is
+### LCSTS The Large Scale Chinese Short Text Summarization Dataset (Hu+ 2015)
 
-* 2 million short texts from the Sina Weibo microblogging platform.  They are
-* summaries given by the author of each text. The dataset includes
+* 2 million short texts from the Sina Weibo microblogging platform
+* summaries given by the author of each text
 * 10k summaries which were manually scored by human for their relevance
 
 # 3 MLSUM 3
 
 * Arabic, there exist the
-  * Essex Arabic Summaries Corpus (EASC) (El-Haj+ 2010) and
-  * KALIMAT (El-Haj and Koulali, 2013); those comprise circa
-  * 1k and 20k samples, respectively
+  * Essex Arabic Summaries Corpus (EASC, El-Haj+ 2010), 1k samples
+  * KALIMAT (El-Haj and Koulali, 2013); 20k samples
 * Spanish, French
   * Pontes+ (2018) proposed a corpus of few hundred samples for Spanish,
-    Portuguese and French summaries. To our knowledge,
+    Portuguese and French summaries
 * the only large-scale non-English summarization dataset is the Chinese LCSTS
-  (Hu+ 2015).  With the increasing interest for cross-lingual models, the NLP
-  community have recently released
+  (Hu+ 2015)
 * multilingual evaluation datasets, targeting classification (XNLI) and QA
   (Lewis+ 2019) tasks, as described in 2.2, though still no large-scale dataset
-  is avaulable for document summarization.  To fill this gap we introduce
-* MLSUM, the first large scale multilingual summarization corpus. Our corpus
+  is avaulable for document summarization
+* MLSUM, the first large scale multilingual summarization corpus
   * 1.5 millions articles in French, German, Spanish, Turkish, and Russian
   * similarly built from news articles, and providing a similar amount of
     training samples per language (except for Russian), as the previously
-    mentioned CNN/Daily Mail, it can effectively serve as a multilingual
+    mentioned CNN/Daily Mail
 * In the following
-  * methodology used to build the corpus.  We then report the
-  * corpus statistics and finally interpret the
+  * methodology used to build the corpus
+  * corpus statistics
   * performances of baselines and state-of-the-art models
 
 # 4 Models 5
 
-* supervised and unsupervised methods, extractive and abstractive models. For
-* all the experiments, we train models on a per-language basis.  We used the
+* supervised and unsupervised methods, extractive and abstractive models
+* For all the experiments, we train models on a per-language basis.  We used the
   recommended hyperparameters for all languages, in order to facilitate
   assessing the robustness of the models
-* one model with all the languages mixed together, but we did
-  not see any significant difference of performance
+* one model with all the languages mixed together:
+  no significant difference of performance
 
 ## 4.1 Extractive summarization models
 
 ### Oracle
 
 * Extracts the sentences, within the input text, that maximise a given metric
-  (in our experiments, ROUGE-L) given the reference summary.  It is
+  (in our experiments, ROUGE-L) given the reference summary
 * an indication of the maximum one could achieve with extractive summarization
 * In this work, we rely on the implementation of Narayan+ (2018b)
 
 ### Random
 
-* an unbiased model as a point of reference. To that purpose, we define a simple
+* an unbiased model as a point of reference
 * randomly extracts N words from the source document, with
   N fixed as the average length of the summary
 
@@ -212,40 +210,40 @@ arXiv:2004.14900 [cs.CL]
 
 ### TextRank
 
-* unsupervised algorithm proposed by Mihalcea and Tarau (2004). It
+* unsupervised algorithm proposed by Mihalcea and Tarau (2004)
 * consists in computing the co-similarities between all the input sentences
 * most central to the document are extracted and considered as the summary
 * We used the implementation provided by Barrios+ (2016b)
 
 ## 4.2 Abstractive summarization models
 
-Most of the abstractive models are neural sequence to sequence models
-(Sutskever+ 2014), composed of
+* Most of the abstractive models are neural sequence to sequence models
+  (Sutskever+ 2014)
 * an encoder that encodes the input text and a decoder that generates the summ
 
 ### Pointer-Generator
 
 * See+ (2017) proposed the addition of the copy mechanism (Vinyals+ 2015) on top
-  of a sequence to sequence LSTM model.  This mechanism allows to
+  of a sequence to sequence LSTM model
   * efficiently copy out-of-vocabulary tokens,
-    leveraging attention (Bahdanau+ 2014) over the input. We used the
+    leveraging attention (Bahdanau+ 2014) over the input
 * publicly available OpenNMT implementation,
-  * we used it with the default hyper-parameters. However, to avoid biases,
+  * we used it with the default hyper-parameters
   * we limited the preprocessing as much as possible and did
     not use any sentence separators, as recommended for CNN/DM
   * This explains the relatively lower reported ROUGE
 
 ### M-BERT
 
-* Encoder-decoder Transformer architectures are a very popular choice for text
-  generation. Recent research efforts have adapted large pretrained
-  self-attention based models for text generation (Peters+ 2018; Radford+ 
-  2018; Devlin+ 2019).  In particular,
+* text generation
+  * Encoder-decoder Transformer architectures are a very popular
+  * Recent research efforts have adapted large pretrained self-attention models
+    (Peters+ 2018; Radford+ 2018; Devlin+ 2019)
 * Liu and Lapata (2019) added a randomly initialized decoder on top of BERT
 * Avoiding the use of a decoder, Dong+ (2019) proposed to instead
   add a decoder-like mask during the pre-training to
   unify the language models for both encoding and generating
-* Both these approaches achieved SOTA results for summarization. In this paper,
+* Both these approaches achieved SOTA results for summarization
 * we only report results obtained following Dong+ (2019), as
   * in preliminary experiments we observed that a
     simple multilingual BERT (MBERT), with no modification, obtained comparable
@@ -258,34 +256,33 @@ Most of the abstractive models are neural sequence to sequence models
   number of n-grams similar between the evaluated summary and the human ref
 
 ### METEOR The Metric for Evaluation of Translation with Explicit ORdering
-(Banerjee and Lavie, 2005) was designed for the evaluation of machine
-translation output. It is based on the 
-* harmonic mean of unigram precision and recall, with 
-  recall weighted higher than precision. METEOR is 
-* often reported in summarization papers (See+ 2017; Dong+ 2019) in addition to
-  ROUGE.
 
-### Novelty 
+* Banerjee and Lavie (2005) designed METEOR for the evaluation of MT
+* harmonic mean of unigram precision and recall, with
+  recall weighted higher than precision
+* often reported in summarization papers (See+ 2017; Dong+ 2019) in addition to
+  ROUGE
+
+### Novelty
 
 * Because of their use of copy mechanisms, some abstractive models have been
-  reported to rely too much on extraction (See+ 2017; Kryściński+ 2018).  Hence,
+  reported to rely too much on extraction (See+ 2017; Kryściński+ 2018)
 * common practice to report the percentage of novel n-grams produced
 
-### Neural Metrics 
+### Neural Metrics
 
 * Several approaches based on neural models have been recently proposed. Recent
-  works  have proposed to 
-  * evaluate summaries with QA based methods (Eyal+ 2019; Scialom+ 2019): the
-  * rationale is that a good summary should answer the most relevant questions
-* Kryściński+ (2019): a discriminator trained to measure the factualness of the
-* Böhm+ (2019) learned a metric from human annotation. 
+  * evaluate summaries with QA based methods (Eyal+ 2019; Scialom+ 2019)
+  * rationale: a good summary should answer the most relevant questions
+* Kryściński+ (2019): a discriminator trained to measure the factualness
+* Böhm+ (2019) learned a metric from human annotation
 * All these models were only trained on English datasets, preventing us to
-  report them in this paper.  The availability of 
+  report them in this paper
 * MLSUM will enable future works to build such metrics in a multilingual fashion
 
 # 6 Results and Discussion 7
 
-* The results presented below allow us to compare the models across languages,
+* compare the models across languages,
 * factors to explain differences in the results:
   1. data, independently from the language
     * structure of the article, the abstractiveness of the summaries, quantity
@@ -314,12 +311,12 @@ translation output. It is based on the
 
 ## 6.1 How abstractive are the models?
 
-* percentage of novel words in the summary) in Figure 2. As
+* percentage of novel words in the summary in Figure 2
   * previous works reported (See+ 2017),
     pointer-generator networks are poorly abstractive,
-    relying too much on their copy mechanism. It is
+    relying too much on their copy mechanism
     * particularly true for Russian: the lack of data probably makes it easier
-      to learn to copy than to cope with natural language generation. As
+      to learn to copy than to cope with natural language generation
   * pretrained language models such as M-BERT are consistently more abstractive,
     and by a large margin, since they are exposed to other texts during pretrain
 
@@ -333,41 +330,36 @@ translation output. It is based on the
     longest input documents (see Table 1)
 * Thus, in the following, for pair-wise language-based comparisons we focus only
   on scores obtained, by the different models, on French, German, Spanish, and
-  Turkish – since we cannot draw meaningful interpretations over Russian as
+  Turkish – since we cannot draw meaningful interpretations over Russian
 
-### Abstractiveness of the datasets The Oracle performance can be considered as
+### Abstractiveness of the datasets The Oracle performance can be considered
 
 * Oracle
-  * similar for English and German, and to some extent Turkish, the Oracle
+  * similar for English and German, and to some extent Turkish
   * lower for French or Spanish
 * figure 1, the percentage of novel words are
-  similar for German (14.96), French (15.21) and Spanish (15.34). This
+  similar for German (14.96), French (15.21) and Spanish (15.34)
   * may indicate that the relevant information to extract from the article is
-    more spread among sentences for Spanish and French than for German. This is
+    more spread among sentences for Spanish and French than for German
   * confirmed with the results of Lead-3:
     German and English have a much higher ROUGE-L – 35.20 and 33.09 – than
     French or Spanish – 19.69 and 13.70
 
-Table 3: Ratios of Rouge-L: T/P is the ratio of TextRank to Pointer-Generator
-and B/P is the ratio of MBERT to Pointer-Generator. The results for CNN/DMfull
-preprocessing, DUC and NEWSROOM datasets are those reported in Table 2 of
-Grusky+ (2018, Pointer-C in their paper is our Pointer-Generator)
-
 ### The case of TextRank
 
-* TextRank performance varies widely across the different languages, regardless
+* TextRank performance varies widely across the different languages
   * low performance on German
     whereas, for this language, Lead-3 has a comparatively higher performance
-  * performance on English is remarkably high: the ROUGE-L is 33% higher than
-    for Turkish, 126% higher than for French and 200% higher than for Spanish
+  * English is remarkably high: the ROUGE-L is 33% higher than for Turkish, 
+    126% higher than for French and 200% higher than for Spanish
   * TextRank parameters might actually overfit English
 * Table 3, we report the performance ratio between
   * TextRank and Pointer Generator on our corpus, as well as on CNN/DM and two
-    other English corpora (DUC and NewsRoom). TextRank has a performance close
-    to the Pointer Generator on English corpora (ratio between 0.85 to 1.21) but
-    not in other languages (ratio between 0.37 to 0.65).% (Pointer-Generator =>
-    BERT-M) This suggests that this model, despite its generic and unsupervised
-    nature, might be highly biased towards English
+    other English corpora (DUC and NewsRoom). 
+    * close to 1 on English corpora (ratio between 0.85 to 1.21) 
+      but not in other languages (ratio between 0.37 to 0.65)
+  * Pointer-Generator => BERT-M suggests that this model, despite its generic
+    and unsupervised nature, might be highly biased towards English
 
 ### The benefits of pretraining
 
@@ -382,22 +374,22 @@ Grusky+ (2018, Pointer-C in their paper is our Pointer-Generator)
   exception of English. This exception is
   * probably due to the aforementioned bias of TextRank towards the English
 
-### Pointer Generator and M-BERT Finally, we observe in our results that
+### Pointer Generator and M-BERT
 
-* M-BERT always outperforms the Pointer Generator. However, the
-  * ratio is not homogeneous across the different languages, Table 3. In
-  * improvement for German is much more important than the one for French
-  * is in line with the results reported for Machine Translation: the
+* M-BERT always outperforms the Pointer Generator
+  * ratio is not homogeneous across the different languages, Table 3
+  * improvement for German is much more important than for French
+  * in line with the results reported for Machine Translation: the
     Transformer (Vaswani+ 2017) ?> ConvS2S (Gehring+ 2017)
-    * outperforms significantly for English to German but obtains
+    * outperforms significantly for English to German but
     * comparable results for English to French – see Table 2 in Vaswani+ (2017)
 * Neither model is pretrained, nor based on LSTM (Hochreiter and Schmidhuber 97)
-  * both use BPE tokenization (Shibata+ 1999). Therefore, the
+  * both use BPE tokenization (Shibata+ 1999)
   * main difference is in attention:
     * self-attention mechanism introduced in the Transformer, while
     * ConvS2S used only source to target attention
 * We thus hypothesise that self-attention plays an
-  important role for German but has a limited impact for French. This
+  important role for German but has a limited impact for French
   * could find an explanation in the morphology of the two languages:
     in statistical parsing, Tsarfaty+ (2010) considered German to be very
     sensitive to word order, due to its rich morphology, as opposed to French
@@ -408,8 +400,8 @@ Grusky+ (2018, Pointer-C in their paper is our Pointer-Generator)
 
 * Multilingual Question Answering [dataset]
   * So far, no multilingual training dataset has been proposed for QA
-  * Originally, CNN/DM was a Question Answering dataset (Hermann+ 2015a). The
-  * information in the summary is also contained in the pair article. Hence,
+  * Originally, CNN/DM was a Question Answering dataset (Hermann+ 2015a)
+  * information in the summary is also contained in the pair article
   * questions can be generated from the summary sentences by masking the NEs
   * a masked question should be answerable given the source article
   * a crucial component to employ the neural summarization metrics mentioned in
@@ -418,8 +410,8 @@ Grusky+ (2018, Pointer-C in their paper is our Pointer-Generator)
   * the archived news articles also include the corresponding titles. The
     accompanying code for parsing the articles allows to easily retrieve the
     titles and thus use them for News Title Generation
-*  Topic detection A
+*  Topic detection
   * topic/category can be associated with each article/summary pair, by simply
-    parsing the corresponding URL. A natural application of this data for
+    parsing the corresponding URL
 * template based summarization (Perez-Beltrachini+ 2019), using it as additional
-  features
+  metadata
