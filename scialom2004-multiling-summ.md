@@ -26,7 +26,7 @@ arXiv:2004.14900 [cs.CL]
 * significant performance gap between English and the target language, e.g. for
   * classification (Conneau+ 2018) and
   * Question Answering (Lewis+ 2019) tasks
-  * summarization (Chi+ 2019) obtaining, again, a lower performance
+  * summarization (Chi+ 2019)
 * For specific NLP tasks, evaluation datasets in several target languages,
   allowing to evaluate the progress of the field in zero-shot scenarios
 * future work, we plan to add
@@ -55,8 +55,8 @@ arXiv:2004.14900 [cs.CL]
 * multi-lingual pre-trained models for NLP tasks,
   e.g. Multilingual BERT (M-BERT, Pires+ 19) or XLM (Lample and Conneau, 19),
   * Chi+ (19) proposed to fine-tune the models for summarization on English data
-    The assumption is that the summarization skills learned from English data
-    can transfer to other languages on which the model has been pre-trained
+    * The assumption is that the summarization skills learned from English data
+      can transfer to other languages on which the model has been pre-trained
   * significant performance gap between English and the target language
   * need of multilingual training data for summarization
 
@@ -293,9 +293,9 @@ arXiv:2004.14900 [cs.CL]
     * motivates further the development of multilingual datasets, since
       they are the only mean to study such phenomenon
 * Table 2 the ROUGE-L and METEOR scores by each model for all languages
-  * the overall order of systems (for each language) is preserved when using
-    either metric (modulo some swaps between Lead 3 and Pointer Generator, but
-    with relatively close scores)
+  * overall order of systems (for each language) is preserved with either metric
+    (modulo some swaps between Lead 3 and Pointer Generator, 
+    but with relatively close scores)
 
 ### Russian, the low-resource language in MLSUM
 
@@ -329,10 +329,11 @@ arXiv:2004.14900 [cs.CL]
   * Russian corpus characteristics: highest novelty, shortest summaries, and
     longest input documents (see Table 1)
 * Thus, in the following, for pair-wise language-based comparisons we focus only
-  on scores obtained, by the different models, on French, German, Spanish, and
-  Turkish – since we cannot draw meaningful interpretations over Russian
+  on scores obtained, by the different models, on 
+  French, German, Spanish, and Turkish – 
+  since we cannot draw meaningful interpretations over Russian
 
-### Abstractiveness of the datasets The Oracle performance can be considered
+### Abstractiveness of the datasets
 
 * Oracle
   * similar for English and German, and to some extent Turkish
@@ -379,7 +380,7 @@ arXiv:2004.14900 [cs.CL]
 * M-BERT always outperforms the Pointer Generator
   * ratio is not homogeneous across the different languages, Table 3
   * improvement for German is much more important than for French
-  * in line with the results reported for Machine Translation: the
+  * in line with the results reported for Machine Translation:
     Transformer (Vaswani+ 2017) ?> ConvS2S (Gehring+ 2017)
     * outperforms significantly for English to German but
     * comparable results for English to French – see Table 2 in Vaswani+ (2017)
@@ -407,10 +408,10 @@ arXiv:2004.14900 [cs.CL]
   * a crucial component to employ the neural summarization metrics mentioned in
     Section 5
 * News Title Generation
-  * the archived news articles also include the corresponding titles. The
-    accompanying code for parsing the articles allows to easily retrieve the
-    titles and thus use them for News Title Generation
-*  Topic detection
+  * the archived news articles also include the corresponding titles. 
+    * The accompanying code for parsing the articles allows to easily retrieve
+      the titles and thus use them for News Title Generation
+* Topic detection
   * topic/category can be associated with each article/summary pair, by simply
     parsing the corresponding URL
 * template based summarization (Perez-Beltrachini+ 2019), using it as additional

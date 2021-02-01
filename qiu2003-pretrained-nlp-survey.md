@@ -472,7 +472,7 @@ multi-task learning and pre-training are complementary technologies
   is a widely used dataset for sentiment analysis (SA) [32]
 * Bataa and Wu [8] utilized BERT with transfer learning, new SOTA in Japanese
 * aspect-based sentiment (ABSA) shows less significant improvement [153]
-  * Sun+ [153] [transforming ABSA] to a sentence pair classification task
+  * Sun+ [153] transforming ABSA to a sentence pair classification task
   * Xu+ [189] proposed post-training to adapt BERT to the ABSA domain and tasks
   * Rietzler+ [137] analyzing the behavior of cross-domain post-training with
     ABSA performance

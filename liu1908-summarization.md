@@ -49,3 +49,39 @@ code is available at this https URL
   * reinforcement learning (Narayan+ 2018b; Paulus+ 2018; Dong+ 2018), and
   * multiple communicating encoders (Celikyilmaz+ 2018)
   * We achieve better results without using any of these mechanisms;
+
+## Human Evaluation
+
+* questionanswering (QA) paradigm (Clarke and Lapata, 2010; Narayan+ 2018b)
+  which quantifies the degree to which summarization models retain key
+  information from the document. Under this paradigm, 
+  * a set of questions is created based on the gold summary under the 
+    assumption that it highlights the most important document content.
+  * Participants are then asked to answer these questions by reading system
+    summaries alone without access to the article. The more questions a system
+* overall quality of the summaries produced by abstractive systems which due to
+  their ability to rewrite content may produce disfluent or ungrammatical
+  output.
+* Best-Worst Scaling (Kiritchenko and Mohammad, 2017) method where participants
+  were presented with the output of two systems (and the original document) and
+  * according to the criteria of Informativeness, Fluency, and Succinctness.  
+* Both types of evaluation were conducted on the Amazon Mechanical Turk platform.
+  * CNN/DailyMail and NYT datasets: we used the same documents (20 in
+    total) and questions from previous work (Narayan+ 2018b; Liu+ 2019). For
+  * XSum: we randomly selected 20 documents (and their questions) from the
+    release of Narayan+ (2018a). We elicited 3 responses per HIT. With regard to
+    QA evaluation, we adopted the scoring mechanism from Clarke and Lapata
+    (2010); correct answers were marked with a score of one, partially correct
+    answers with 0.5, and zero otherwise. For quality-based evaluation, the
+    rating of each system was computed as the percentage of times it was chosen
+    as better minus the times it was selected as worse.  Ratings thus range from
+    -1 (worst) to 1 (best).
+* Tables 6 and 7: Results for extractive and abstractive systems respectively.
+  We compared the best performing B ERT S UM model in each setting (extractive
+  or abstractive) against various SOTA systems (whose output is publicly
+  available), the L EAD baseline, and the G OLD standard as an upper bound. As
+  shown in both tables participants overwhelmingly prefer the output of our
+  model against comparison systems across datasets and evaluation paradigms.
+  All differences between B ERT S UM and comparison models are statistically
+  significant (p < 0.05), with the exception of TC ONV S2S (see Table 7; XSum)
+  in the QA evaluation setting.

@@ -11,7 +11,7 @@ EMNLP 2019
     * automatically collected datasets leave the task underconstrained and
       may contain noise detrimental to training and evaluation
     * weakly correlated with human judgment and does 
-      not account for e.g.  factual correctness
+      not account for e.g. factual correctness
     * models overfit to layout biases of current datasets and offer
       limited diversity in their outputs
 
