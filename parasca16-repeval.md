@@ -1,7 +1,7 @@
-Defining Words with Words: Beyond the Distributional Hypothesis
 Iuliana-Elena Parasca, Andreas Lukas Rauter, Jack Roper, Aleksandar Rusinov,
   Guillaume Bouchard, Sebastian Riedel, Pontus Stenetorp
-repeval 2016
+Defining Words with Words: Beyond the Distributional Hypothesis
+RepEval 2016
 
 # Abstract
 
@@ -16,9 +16,9 @@ repeval 2016
 # 2 Word Sheriff
 
 * After receiving each clue, guessers are allowed to make one guess
-* game terminates when one of the guessers find the target word. 
-  To incentivise the narrator to use a minimal number of salient clues, 
-  the total number of allowed clues is decided beforehand by the narrator
+* game terminates when one of the guessers find the target word
+* To incentivise the narrator to use a minimal number of salient clues, the
+  total number of allowed clues is decided beforehand by the narrator
 
 # 3 Initial Limited Release
 

@@ -11,16 +11,16 @@ http://github.com/uwnlp/verb-attributes
 * e.g. _salute_ has several properties, such as being a
   light movement, a social act, and short in duration
 * We use these attributes as the internal mapping between visual and textual
-  * reason about a previously unseen action. In contrast to much prior work
+  * reason about a previously unseen action
   * learns to infer action attributes from
     * dictionary definitions and
     * distributed word representations
-* results [are reasonable]
+* results are reasonable
 
 # 1 Intro
 
-* We develop and use a corpus of verb attributes, [drawing inspiration from]
-  * linguistic theories on ... aspectual verb classes of Vendler (1957)) and
+* We develop and use a corpus of verb attributes, drawing inspiration from
+  * linguistic theories on aspectual verb classes of Vendler (1957)) and
   * studies on linguistic categorization of verbs and their properties
     (Friedrich and Palmer, 2014; Siegel and McKeown, 2000)
 
@@ -35,7 +35,7 @@ http://github.com/uwnlp/verb-attributes
 ### 1 Aspectual Classes
 
 We include the aspectual verb classes of Vendler (1957)
-* state: a verb that does not describe a chang[e] e.g. _have_, _be_
+* state: a verb that does not describe a change e.g. _have_, _be_
 * achievement: can be completed in a short period of time (_open_, _jump_)
 * accomplishment: completion over a longer period of time (e.g.  _climb_)
 * activity: without a clear sense of completion (e.g. _swim_, _walk_, _talk_)
@@ -59,9 +59,9 @@ We include the aspectual verb classes of Vendler (1957)
 
 * whether the verb can take an object, or be used without
 * implied action dynamics of the verb between the agent and the world
-* [object is] a person (_I hug her_ is natural), [or] a thing (_I eat it_), and
+* object is a person (_I hug her_ is natural), or a thing (_I eat it_), and
   whether the verb is intransitive (_I run_)
-* [subject is not] agent (_snow_)
+* subject is not agent (_snow_)
 
 ### 6 Effects on Arguments
 
@@ -78,14 +78,14 @@ We include the aspectual verb classes of Vendler (1957)
 ## Action Attributes and Contextual Variations
 
 * our work include
-  1. crowd-sourcing experiments to estimate the [aggreement] of human judgments
+  1. crowd-sourcing experiments to estimate the aggreement of human judgments
   2. estimating the feasibility of learning models
   3. estimating the predictive power in zeroshot action recognition
 
 ## Relevance to Linguistic Theories
 
 * relates to
-  * Frame theories of Baker et al. (1998a)
+  * Frame theories of Baker+ (1998a)
   * formal studies on verb categorization based on the characteristics of the
     actions or states that a verb typically associates with (Levin, 1993), and
   * cognitive linguistics literature (Croft, 2012) that focus on
@@ -105,12 +105,12 @@ We include the aspectual verb classes of Vendler (1957)
   * 300-dimensional GloVe vectors trained on 840B tokens of web data
   * logistic regression to predict each attribute
 * We additionally experiment with retrofitted embeddings, in which embeddings
-  * WordNet (Miller, 1995), Paraphrase-DB (Ganitkevitch et al., 2013), and
-    FrameNet (Baker et al., 1998b)
+  * WordNet (Miller, 1995), Paraphrase-DB (Ganitkevitch+ 2013), and
+    FrameNet (Baker+ 1998b)
 
 ## 3.2 Learning from Dictionary Definitions
 
-* using a dictionary to predict word embeddings (Hill et al., 2016)
+* using a dictionary to predict word embeddings (Hill+ 2016)
 
 ### Dealing with multiple definitions per verb
 
@@ -132,7 +132,7 @@ We include the aspectual verb classes of Vendler (1957)
 
 ### Overview 
 
-* zeroshot: labels [are] partitioned into `V_train` and `V_test`
+* zeroshot: labels are partitioned into `V_train` and `V_test`
 * see figures
 
 TODO

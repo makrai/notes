@@ -1,5 +1,5 @@
 Edoardo Maria Ponti, Ivan Vulić, Goran Glavaš, Nikola Mrkšić, Anna Korhonen
-Adversarial Propagation and Zero-Shot Cross-Lingual Transfer of Word Vector Specialization
+Adversarial Propagation and Zero-Shot Cross-Lingual Transfer of Word Vector Spec
 EMNLP 2018
 
 code is available at https://github.com/cambridgeltl/ adversarial-postspec
@@ -7,24 +7,24 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
 # Abstract
 
 * a novel approach to specializing the full distributional vocabulary
-  * [an] adversarial post-specialization method
+  * an adversarial post-specialization method
   * combining a standard L2-distance loss with an adversarial loss: the
     adversarial component produces more realistic output vectors
 * three languages (it, de) and on three tasks:
-  * word similarity, dialog state tracking, and lexical simplification. We
-  * consistent improvements over ... other state-of-the-art specialization
+  * word similarity, dialog state tracking, and lexical simplification
+  * consistent improvements over other SOTA specialization
 * we also propose a cross-lingual transfer method for zero-shot specialization
-  * without any lexical knowledge in the target language [or] bilingual data
+  * without any lexical knowledge in the target language or bilingual data
 
 # 1 Intro
 
 * specialize the distributional spaces for a particular relation, e.g.,
-  * synonymy (i.e., true similarity) (Faruqui+ 2015; Mrkšić+ 2017) or
+  * synonymy (i.e., true similarity; Faruqui+ 2015; Mrkšić+ 2017) or
   * hypernymy (Nickel and Kiela, 2017; Nguyen+ 2017; Vulić and Mrkšić, 2018)
-* this paper ...  addresses the following two research questions:
+* this paper addresses the following two research questions:
   1. more realistic specialized vectors for the full vocabulary?
   1. where resources are scarce or non-existent?
-* Our model ... casting the feed-forward specialization network as a generator
+* Our model casting the feed-forward specialization network as a generator
   * discriminator component learns to discern
     original specialized vectors (produced by any local specialization model)
     from vectors produced by transforming distributional vectors with the
@@ -34,19 +34,21 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
 * two downstream tasks: lexical text simplification and dialog state tracking
 * zero-shot language transfer of the specialization, §2.3
   * by coupling our adversarial specialization model with any unsupervised model
-  for inducing bilingual vector spaces, such as the algorithm proposed by
-  Conneau+ (2018), we can successfully perform
-  * [i.e. no] linguistic constraints in those languages, [or] bilingual data
+    for inducing bilingual vector spaces, such as the algorithm proposed by
+    Conneau+ (2018)
+  * i.e. no linguistic constraints in those languages, or bilingual data
 
 # 2 Methodology
 
-* The post-specialization procedure (Vulić+ 2018) is a two-step process.  First,
-  * words observed in external resources is fine-tuned using any off-the-shelf
-    specialization model, such as the original retrofitting model (Faruqui+
-    2015), counter-fitting (Mrkšić+ 2016), dLCE (Nguyen+ 2016), or
-    state-of-theart ATTRACT REPEL ( AR ) specialization (Mrkšić+ 2017;
-    Vulić+ 2017). We outline the initial specialization algorithms in §2.1. In
-  * specialization is propagated to the entire vocabulary
+* The post-specialization procedure (Vulić+ 2018) is a two-step process
+  1. words observed in external resources is fine-tuned using any off-the-shelf
+     specialization model, e,g,
+     original retrofitting model (Faruqui+ 2015), 
+     counter-fitting (Mrkšić+ 2016), 
+     dLCE (Nguyen+ 2016), or 
+     the SOTA ATTRACT REPEL  AR) specialization (Mrkšić+ 2017; Vulić+ 2017). 
+     * We outline the initial specialization algorithms in §2.1. In
+  2. specialization is propagated to the entire vocabulary
     * adversarial architecture, described in §2.2
 
 ## 2.2 Adversarial Post-Specialization 3
