@@ -12,7 +12,7 @@ Correlation-based Intrinsic Evaluation of Word Vector Representations
 
 # Intro
 
-* vector-space representations ... as features in downstream applications
+* vector-space representations as features in downstream applications
   * Turian+ 2010
     Joseph Turian, Lev Ratinov, and Yoshua Bengio. 2010 ACL
     Word representations:
