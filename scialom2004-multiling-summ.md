@@ -19,10 +19,10 @@ arXiv:2004.14900 [cs.CL]
 * transfer learning techniques
   enabled by the availability of pre-trained multilingual language models
   * the de-facto paradigm in NLP (Guzmán+ 2019)
-  1. LM pre-trained on a large corpus of texts in multiple languages
-  2. model fine-tuned in one or more pivot languages
-    for which the task-specific data are available
-  3. inference: model applied to the different pre-training languages
+    1. LM pre-trained on a large corpus of texts in multiple languages
+    2. model fine-tuned in one or more pivot languages
+      for which the task-specific data are available
+    3. inference: model applied to the different pre-training languages
 * significant performance gap between English and the target language, e.g. for
   * classification (Conneau+ 2018) and
   * Question Answering (Lewis+ 2019) tasks
@@ -39,8 +39,8 @@ arXiv:2004.14900 [cs.CL]
 
 * Radev+ (2002) developed MEAD, a multi-document summarizer: English, Chinese
 * Litvak+ (2010): genetic algorithm
-* A community-driven initiative, MultiLing (Giannakopoulos+ 2015), benchmarked
-  summarization systems on multilingual data
+* MultiLing (Giannakopoulos+ 2015), a community-driven initiative, 
+  benchmarked summarization systems on multilingual data
   * 40 languages, it provides relatively few examples (10k in the 2019 release)
   * Mostly extractive approach
 * lack of a multilingual corpus to train abstractive models (Duan+ 2019)
@@ -55,8 +55,8 @@ arXiv:2004.14900 [cs.CL]
 * multi-lingual pre-trained models for NLP tasks,
   e.g. Multilingual BERT (M-BERT, Pires+ 19) or XLM (Lample and Conneau, 19),
   * Chi+ (19) proposed to fine-tune the models for summarization on English data
-    * The assumption is that the summarization skills learned from English data
-      can transfer to other languages on which the model has been pre-trained
+    * assumption: summarization skills learned from English data can transfer to
+      other languages on which the model has been pre-trained
   * significant performance gap between English and the target language
   * need of multilingual training data for summarization
 
@@ -166,9 +166,9 @@ arXiv:2004.14900 [cs.CL]
     Portuguese and French summaries
 * the only large-scale non-English summarization dataset is the Chinese LCSTS
   (Hu+ 2015)
-* multilingual evaluation datasets, targeting classification (XNLI) and QA
-  (Lewis+ 2019) tasks, as described in 2.2, though still no large-scale dataset
-  is avaulable for document summarization
+* multilingual evaluation datasets, 
+  targeting classification (XNLI) and QA (Lewis+ 2019) tasks, see sec 2.2,
+  though still no large-scale dataset is avaulable for document summarization
 * MLSUM, the first large scale multilingual summarization corpus
   * 1.5 millions articles in French, German, Spanish, Turkish, and Russian
   * similarly built from news articles, and providing a similar amount of
@@ -177,7 +177,7 @@ arXiv:2004.14900 [cs.CL]
 * In the following
   * methodology used to build the corpus
   * corpus statistics
-  * performances of baselines and state-of-the-art models
+  * performances of baselines and SOTA models
 
 # 4 Models 5
 
