@@ -42,8 +42,8 @@ https://github.com/codogogo/explirefit
     Computing lexical contrast
     Computational Linguistics 2013
   * For example, it is difficult to discern synonyms from antonyms
-  * negative effect on NLP applications like text simplification and
-    statistical dialog modeling
+  * negative effect on NLP applications like 
+    text simplification and statistical dialog modeling
     * Glavaš and Štajner, ACL 2015 lexical simplification corpora?
     * Faruqui+ NAACL 2015 retrofitting
     * Sujay Kumar Jauhar, Chris Dyer, and Eduard H. Hovy

@@ -127,7 +127,7 @@ where
 # 6 Results
 
 * compared against the vanilla word embeddings, embeddings with counterfitting,
-  and embeddings with retrofitting.Table 4 summarizes the results of the
+  and embeddings with retrofitting. Table 4 summarizes the results
 * Intrinsic word–similarity tasks. For the pre–trained word embeddings,
   * Amongst AffectAPPEND and Affect-STRENGTH, Affect-APPEND out performs the
     rest in most cases for GloVe and Word2vec
@@ -135,7 +135,7 @@ where
   * FFP-Prediction, Affect-APPEND [is the best] for Frustration and Politeness
   * personality detection, Affect-APPEND variants for NEU, AGR, and OPEN
 * Sentiment Analysis(SA) task shows that Affect-APPEND variants report highest
-* WASSA-EmoInt task.  Affect-APPEND and retrofit variants out perform the
+* WASSA-EmoInt task.  Affect-APPEND and retrofit variants out perform
 * Qualitative Evaluation: Polarity-Noise@10 and Granular-Noise@10
   * Affect- APPEND report the lowest noise for both cases. This shows that the
   * rate of change of noise with varying k provides insights into (1) how

@@ -104,7 +104,7 @@ We include the aspectual verb classes of Vendler (1957)
 * we use 
   * 300-dimensional GloVe vectors trained on 840B tokens of web data
   * logistic regression to predict each attribute
-* We additionally experiment with retrofitted embeddings, in which embeddings
+* We additionally experiment with retrofitted embeddings
   * WordNet (Miller, 1995), Paraphrase-DB (Ganitkevitch+ 2013), and
     FrameNet (Baker+ 1998b)
 

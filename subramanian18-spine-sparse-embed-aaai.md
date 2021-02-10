@@ -10,7 +10,7 @@ https://github.com/harsh19/SPINE
 * neural models capture the underlying complexity and latent trends
 * We propose
   a novel variant of denoising k-sparse autoencoders
-  * generates highly efficient and interpretable (word embeddings),
+  * generates highly efficient and interpretable word embeddings,
   * beginning with existing word representations like GloVe and word2vec
 * large scale human evaluation shows that our embedddings are
   * much more interpretable than the original GloVe and word2vec embeddings
@@ -188,9 +188,9 @@ https://github.com/harsh19/SPINE
 ## Retroffiting vs joint learning
 
 * An alternate to retrofitting is to add various sparsity and non-negativity
-  inducing regularizers when training Word2Vec or GloVe.  One practical
+  inducing regularizers when training Word2Vec or GloVe
 * retrofitting
-  * does not need access to a giant corpus. Moreover, our
+  * does not need access to a giant corpus
   * agnostic to, and abstracted from, the underlying word embedding method
 
 ## Interpretability and downstream performance
