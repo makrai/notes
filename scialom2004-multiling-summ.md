@@ -108,9 +108,8 @@ https://github.com/recitalAI/MLSUM
 * newswire articles with corresponding human summaries
 * multiple reference summaries, distinctive feature of the DUC datasets
   * Rankel+ (2013), the correlation between qualitative and automatic metrics,
-    such as ROUGE (Lin, 2004), decreases significantly when only a single
-    reference is given
-* small number of training data available, DUC datasets are
+    such as ROUGE (Lin, 2004), decreases significantly when only 1 ref is given
+* small number of training data available ->
   often used in a domain adaptation setup for models first trained on larger
   datasets such as Gigaword, CNN/DM (Nallapati+ 2016; See+ 2017) or with
   unsupervised methods (Dorr+ 2003; Mihalcea and Tarau, 2004; Barrios+ 2016a)
@@ -119,9 +118,9 @@ https://github.com/recitalAI/MLSUM
 
 * Again newswire, the english Gigaword (Napoles+ 2012; Rush+ 2015; Chopra+ 2016)
 * large size and the high diversity in terms of sources
-* no human summaries, so prior works on summarization have trained models to
-  generate the headlines of an article, given its incipit, which induces various
-  biases for learning models
+* no human summaries, so 
+  * prior works have trained models to generate the headlines of an article,
+    given its incipit, which induces various biases for learning models
 
 ### New York Times Corpus
 
@@ -176,10 +175,32 @@ https://github.com/recitalAI/MLSUM
   * similarly built from news articles, and providing a similar amount of
     training samples per language (except for Russian), as the previously
     mentioned CNN/Daily Mail
-* In the following
-  * methodology used to build the corpus
-  * corpus statistics
-  * performances of baselines and SOTA models
+
+## 3.1 methodology used to build the corpus
+
+* The CNN/Daily Mail (CNN/DM) dataset (see Section 2.3) is arguably the most
+  used large-scale dataset for summarization. Following the same methodology, 
+  we consider news articles as the text input, and their paired
+  highlights/description as the summary. 
+* For each language, we selected an online newspaper which met the following
+  1. generalist: ensuring that a broad range of topics is represented for each
+    * minimize the risk of training topic-specific models, a fact which would
+  2. Having a large number of articles in their public online archive.
+  3. Providing human written highlights/summaries for the articles 
+    that can be extracted from the HTML code of the web page.  
+* filter: all the articles shorter than 50 words or summaries shorter than 10
+  * to avoid articles containing mostly audiovisual content. Each article was
+* we provide recommended train/validation/test splits following a chronological
+  * from 2010 to 2018, included, for training; data for 
+  * 2019 (~10% of the dataset) for validation (up to May 2019) and 
+  * test (May-December 2019). While this choice is arguably more 
+  * challeng[able], due to the possible emergence of new topics over time, we
+  * advantage of excluding most cases of leakage across languages: it 
+    * prevents a model, from seeing a training sample describing an important
+      event in one language, and then being submitted for inference a similar
+      article in another language, published around the same time
+  
+## 3.2 corpus statistics
 
 # 4 Models 5
 
