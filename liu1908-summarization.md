@@ -2,7 +2,7 @@ Text Summarization with Pretrained Encoders
 Yang Liu, Mirella Lapata
 arXiv:1908.08345 [cs.CL]
 
-code is available at this https URL
+code is available at https://github.com/nlpyang/PreSumm
 
 # Abstract
 

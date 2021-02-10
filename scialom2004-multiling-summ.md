@@ -2,6 +2,8 @@ MLSUM: The Multilingual Summarization Corpus
 Th Scialom, P Dray, S Lamprier, B Piwowarski, J Staiano
 arXiv:2004.14900 [cs.CL]
 
+https://github.com/recitalAI/MLSUM
+
 * Obtained from online newspapers, it contains 1.5M+ article/summary pairs
   * 5 languages, namely, French, German, Spanish, Russian, Turkish
   * Together with English newspapers from the popular CNN/Daily mail dataset,
@@ -39,7 +41,7 @@ arXiv:2004.14900 [cs.CL]
 
 * Radev+ (2002) developed MEAD, a multi-document summarizer: English, Chinese
 * Litvak+ (2010): genetic algorithm
-* MultiLing (Giannakopoulos+ 2015), a community-driven initiative, 
+* MultiLing (Giannakopoulos+ 2015), a community-driven initiative,
   benchmarked summarization systems on multilingual data
   * 40 languages, it provides relatively few examples (10k in the 2019 release)
   * Mostly extractive approach
@@ -48,10 +50,10 @@ arXiv:2004.14900 [cs.CL]
   abstractive methods for multilingual summarization have been developed
   * Ouyang+ (2019): three low-resource languages (Somali, Swahili, & Tagalog),
     by using an automated translation of the New York Times dataset
-  * slight improvements over a baseline which considers translated outputs of an
-    English summarizer, results remain still far from human performance
-  * Summarization models from translated data usually under-perform,
-    * translation biases add to the difficulty of summarization
+    * slight improvements over a baseline which considers translated outputs of
+      an English summarizer, results remain still far from human performance
+    * Summarization models from translated data usually under-perform,
+      * translation biases add to the difficulty of summarization
 * multi-lingual pre-trained models for NLP tasks,
   e.g. Multilingual BERT (M-BERT, Pires+ 19) or XLM (Lample and Conneau, 19),
   * Chi+ (19) proposed to fine-tune the models for summarization on English data
@@ -88,7 +90,7 @@ arXiv:2004.14900 [cs.CL]
 
 * 40 languages over 9 tasks, summarization is not included
 
-### XGLUE In order to train and evaluate their performance across
+### XGLUE
 
 * a diverse set of cross-lingual tasks, Liang+ (2020) recently released XGLUE,
 * both Natural Language Understanding and Generation scenarios
@@ -138,19 +140,19 @@ arXiv:2004.14900 [cs.CL]
   associated with bullet point highlights from the article
   * the bullet points are typically concatenated into a single summary
 
-### NEWSROOM Composed of
+### NEWSROOM
 
 * 1.3M news articles (Grusky+ 2018), and featuring high diversity of publishers
 * summaries were extracted from the Web pages metadata
   * summaries originally written to be used in search engines and social media
 
-### BigPatent Sharma+ (2019) collected
+### BigPatent (Sharma+ 2019)
 
 * 1.3 million U.S. patent documents, across several technological areas,
   using the Google Patents Public Datasets
 * patents abstracts are used as target summaries
 
-### LCSTS The Large Scale Chinese Short Text Summarization Dataset (Hu+ 2015)
+### LCSTS, The Large Scale Chinese Short Text Summarization Dataset (Hu+ 2015)
 
 * 2 million short texts from the Sina Weibo microblogging platform
 * summaries given by the author of each text
@@ -166,9 +168,9 @@ arXiv:2004.14900 [cs.CL]
     Portuguese and French summaries
 * the only large-scale non-English summarization dataset is the Chinese LCSTS
   (Hu+ 2015)
-* multilingual evaluation datasets, 
+* multilingual evaluation datasets,
   targeting classification (XNLI) and QA (Lewis+ 2019) tasks, see sec 2.2,
-  though still no large-scale dataset is avaulable for document summarization
+  * no large-scale dataset is avaulable for document summarization
 * MLSUM, the first large scale multilingual summarization corpus
   * 1.5 millions articles in French, German, Spanish, Turkish, and Russian
   * similarly built from news articles, and providing a similar amount of
@@ -294,8 +296,9 @@ arXiv:2004.14900 [cs.CL]
       they are the only mean to study such phenomenon
 * Table 2 the ROUGE-L and METEOR scores by each model for all languages
   * overall order of systems (for each language) is preserved with either metric
-    (modulo some swaps between Lead 3 and Pointer Generator, 
+    (modulo some swaps between Lead 3 and Pointer Generator,
     but with relatively close scores)
+  * Random < TextRank < Lead 3 < Pointer-Generator < M-BERT < Oracle
 
 ### Russian, the low-resource language in MLSUM
 
@@ -329,8 +332,8 @@ arXiv:2004.14900 [cs.CL]
   * Russian corpus characteristics: highest novelty, shortest summaries, and
     longest input documents (see Table 1)
 * Thus, in the following, for pair-wise language-based comparisons we focus only
-  on scores obtained, by the different models, on 
-  French, German, Spanish, and Turkish – 
+  on scores obtained, by the different models, on
+  French, German, Spanish, and Turkish –
   since we cannot draw meaningful interpretations over Russian
 
 ### Abstractiveness of the datasets
@@ -351,13 +354,13 @@ arXiv:2004.14900 [cs.CL]
 * TextRank performance varies widely across the different languages
   * low performance on German
     whereas, for this language, Lead-3 has a comparatively higher performance
-  * English is remarkably high: the ROUGE-L is 33% higher than for Turkish, 
+  * English is remarkably high: the ROUGE-L is 33% higher than for Turkish,
     126% higher than for French and 200% higher than for Spanish
   * TextRank parameters might actually overfit English
 * Table 3, we report the performance ratio between
   * TextRank and Pointer Generator on our corpus, as well as on CNN/DM and two
-    other English corpora (DUC and NewsRoom). 
-    * close to 1 on English corpora (ratio between 0.85 to 1.21) 
+    other English corpora (DUC and NewsRoom).
+    * close to 1 on English corpora (ratio between 0.85 to 1.21)
       but not in other languages (ratio between 0.37 to 0.65)
   * Pointer-Generator => BERT-M suggests that this model, despite its generic
     and unsupervised nature, might be highly biased towards English
@@ -408,7 +411,7 @@ arXiv:2004.14900 [cs.CL]
   * a crucial component to employ the neural summarization metrics mentioned in
     Section 5
 * News Title Generation
-  * the archived news articles also include the corresponding titles. 
+  * the archived news articles also include the corresponding titles.
     * The accompanying code for parsing the articles allows to easily retrieve
       the titles and thus use them for News Title Generation
 * Topic detection
