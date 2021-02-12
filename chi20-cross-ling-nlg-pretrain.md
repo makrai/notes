@@ -20,30 +20,30 @@ https://github.com/CZWin32768/xnlg
     * inputs are first translated to English, and fed into the NLG model that is
       trained by English data. Then the generated English texts are translated
       back to the target language
-  * generate pseudo training data for other language pairs that lack it
-    (Shen+ 2018; Duan+ 2019)
+    * generate pseudo training data for other language pairs that lack it
+      (Shen+ 2018; Duan+ 2019)
 * we propose a
-  * cross-lingual pre-trained model (named as XNLG) in order to transfer
-    monolingual NLG supervision to other pre-trained languages by fine-tuning
+  * cross-lingual pre-trained model (named as XNLG) in order to 
+  * transfer monolingual NLG supervision to other pre-trained languages 
+    by fine-tuning
     * shares the same sequence-to-sequence model across languages, and is
-    * pre-trained with both monolingual and cross-lingual objectives. The model
-    * not only learns to understand multilingual input, but also is
-    * able to generate specific languages by conditioning on the encoded sem
+    * pre-trained with both monolingual and cross-lingual objectives
+    * learns to understand multilingual input 
+    * can also generate specific languages by conditioning on the encoded sem
   * Figure 1 demonstrates how to use XNLG to perform cross-lingual transfer
     * enables us to fine-tune the pre-trained model on monolingual NLG data, and
       then evaluate it beyond a single language,
       including zero-shot crosslingual generation
   * explore several fine-tuning strategies to make a compromise between
     cross-lingual ability and task ability
-  * two crosslingual NLG datasets (i.e., question generation, and abstractive
-    summarization, AS) for evaluation, which includes
-    English, Chinese, and French
+  * eval in two crosslingual NLG datasets: QA, & abstractive summarization, AS
+    * English, Chinese, and French
 * Experiments: XNLG achieves competitive performance compared with the
   machine-translation based pipeline model in zero-shot cross-lingual settings
 
-# 2 Related Work
+# 2 Related Work 2
 
-## Cross-Lingual NLG Several previous methods have been proposed for
+## Cross-Lingual NLG
 
 * cross-lingual abstractive summarization
   * Shen+ (2018) and Duan+ (2019) use translated documents or summaries as
@@ -52,8 +52,8 @@ https://github.com/CZWin32768/xnlg
     to improve cross-lingual summarization
     * only generate summaries with different languages from the input language,
       rather than transferring supervision signals across all language pairs
-* Kumar+ (2019) use training data annotated in multiple languages to jointly
-  train a sequence-to-sequence model for question generation
+* Kumar+ (2019) use training data annotated in multiple languages to 
+  jointly train a sequence-to-sequence model for question generation
 
 ## Monolingual Pre-Training
 
@@ -74,44 +74,66 @@ https://github.com/CZWin32768/xnlg
 
 ## Cross-Lingual Pre-Training
 
-* mBERT shows a surprising ability (Wu and Dredze 2019). More recently,
+* mBERT shows a surprising ability (Wu and Dredze 2019)
 * Lample and Conneau (2019) extend mask language modeling pre-training to
-  cross-lingual settings, which shows significant improvements on cross-lingual
-  classification and unsupervised machine translation
+  cross-lingual settings, which shows 
+  significant improvements on cross-lingual classification and unsup MT
   * By comparison, we pretrain both encoder and decoder for cross-lingual
     generation tasks, rather than only focusing on encoder
 * Artetxe and Schwenk (2018) use the sequence encoder of the multilingual
-  translation model (Johnson+ 2017) to produce cross-lingual sentence
-  embeddings
-  * However, as shown in the experiments (Section 4), it is difficult to control
-    the target language by directly fine-tuning the pre-trained translation
-    model on downstream NLG tasks
+  translation model (Johnson+ 2017) to produce cross-lingual sentence embeds
+  * However, as shown in the experiments (Section 4), 
+    it is difficult to control the target language by directly fine-tuning the
+    pre-trained translation model on downstream NLG tasks
 
-# 3 Methods
+# 3 Methods 2
 
 * As shown in Figure 2, XNLG is a pre-trained sequence-to-sequence model,
   which is based on Transformer (Vaswani+ 2017)
   * Both the encoder and the decoder are supposed to support multiple languages
   * we use language tag embeddings to distinguish the source and target langs,
     following (Lample and Conneau 2019),
-  * Given a sentence and its corresponding language tag, XNLG
-    encodes the input into vector representations
+  * Given a sentence and its corresponding language tag, 
+    XNLG encodes the input into vector representations
   * By conditioning on the encoding vectors and a specific language tag, the
     decoder generates the output sequence in the target language
 
+## 3.1 Pre-Training Tasks
+
+### Monolingual MLM The masked language modeling
+
+### Denoising Auto-Encoding (DAE) We use the denoising
+
+### Cross-Lingual MLM (XMLM) Similar to monolingual
+
+### Cross-Lingual Auto-Encoding (XAE) If only DAE is
+
+## 3.2 Pre-Training Protocol
+
 ## 3.3 Fine-Tuning on Downstream NLG Tasks
+
+### Fine-Tuning for Any-to-Others NLG Ideally, the model
 
 * In practice, we found that the proposed fine-tuning method prevents the
   model from only decoding English words for the Any-to-Others setting
 
+### Fine-Tuning for Any-to-English NLG For the Any-to-
+
 # 4 Experiments
+
+## 4.3 Abstractive Summarization
+
+* we use English/French/Chinese Gigaword 2 to extract the first sentence and
+  the headline of each article, and regard them as input document and pre-
+  dicted summaries, respectively. For each language, we sample 500k/5k/5k
+  examples for training/validation/test.
 
 ## 4.4 Ablation Studies
 
 * we first fine-tune XNLG on the English AS data, and
-  then fine-tune it on the French or Chinese AS data. We
+  then fine-tune it on the French or Chinese AS data
   * compare with the monolingual supervised model that XNLG is
-    only fine-tuned on the dataset of the target language. As shown in
+    only fine-tuned on the dataset of the target language
   * Figure 3: cross-lingual supervision improves performance for few-shot AS
     * As the training data size becomes larger, the performances of the
       two models are getting closer

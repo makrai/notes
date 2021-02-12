@@ -118,7 +118,7 @@ https://github.com/recitalAI/MLSUM
 
 * Again newswire, the english Gigaword (Napoles+ 2012; Rush+ 2015; Chopra+ 2016)
 * large size and the high diversity in terms of sources
-* no human summaries, so 
+* no human summaries, so
   * prior works have trained models to generate the headlines of an article,
     given its incipit, which induces various biases for learning models
 
@@ -176,30 +176,30 @@ https://github.com/recitalAI/MLSUM
     training samples per language (except for Russian), as the previously
     mentioned CNN/Daily Mail
 
-## 3.1 methodology used to build the corpus
+## 3.1 methodology used to build the corpus 4
 
-* The CNN/Daily Mail (CNN/DM) dataset (see Section 2.3) is arguably the most
-  used large-scale dataset for summarization. Following the same methodology, 
-  we consider news articles as the text input, and their paired
-  highlights/description as the summary. 
+* The CNN/Daily Mail (CNN/DM) dataset (see Section 2.3) is
+  arguably the most used large-scale dataset for summarization. Following the
+  same methodology, we consider news articles as the text input, and their
+  paired highlights/description as the summary
 * For each language, we selected an online newspaper which met the following
-  1. generalist: ensuring that a broad range of topics is represented for each
-    * minimize the risk of training topic-specific models, a fact which would
-  2. Having a large number of articles in their public online archive.
-  3. Providing human written highlights/summaries for the articles 
-    that can be extracted from the HTML code of the web page.  
+  1. generalist: ensuring that a broad range of topics is represented
+    * minimize the risk of training topic-specific models
+  2. Having a large number of articles in their public online archive
+  3. Providing human written highlights/summaries for the articles
+    that can be extracted from the HTML code of the web page
 * filter: all the articles shorter than 50 words or summaries shorter than 10
-  * to avoid articles containing mostly audiovisual content. Each article was
+  * to avoid articles containing mostly audiovisual content
 * we provide recommended train/validation/test splits following a chronological
-  * from 2010 to 2018, included, for training; data for 
-  * 2019 (~10% of the dataset) for validation (up to May 2019) and 
-  * test (May-December 2019). While this choice is arguably more 
-  * challeng[able], due to the possible emergence of new topics over time, we
-  * advantage of excluding most cases of leakage across languages: it 
+  * from 2010 to 2018, included, for training; data for
+  * 2019 (~10% of the dataset) for validation (up to May 2019) and
+  * test (May-December 2019)
+  * challeng[able], due to the possible emergence of new topics over time
+  * advantage of excluding most cases of leakage across languages: it
     * prevents a model, from seeing a training sample describing an important
       event in one language, and then being submitted for inference a similar
       article in another language, published around the same time
-  
+
 ## 3.2 corpus statistics
 
 # 4 Models 5
@@ -380,7 +380,7 @@ https://github.com/recitalAI/MLSUM
   * TextRank parameters might actually overfit English
 * Table 3, we report the performance ratio between
   * TextRank and Pointer Generator on our corpus, as well as on CNN/DM and two
-    other English corpora (DUC and NewsRoom).
+    other English corpora (DUC and NewsRoom)
     * close to 1 on English corpora (ratio between 0.85 to 1.21)
       but not in other languages (ratio between 0.37 to 0.65)
   * Pointer-Generator => BERT-M suggests that this model, despite its generic
@@ -432,7 +432,7 @@ https://github.com/recitalAI/MLSUM
   * a crucial component to employ the neural summarization metrics mentioned in
     Section 5
 * News Title Generation
-  * the archived news articles also include the corresponding titles.
+  * the archived news articles also include the corresponding titles
     * The accompanying code for parsing the articles allows to easily retrieve
       the titles and thus use them for News Title Generation
 * Topic detection
