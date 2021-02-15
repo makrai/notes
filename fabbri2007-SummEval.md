@@ -47,8 +47,8 @@ https://github.com/Yale-LILY/SummEval
   * other text generation metrics
     (Peyrard, 2019; Zhao+ 2019; Zhang+ 2020; Scialom+ 2019; Clark+ 2019)
   * remained the default automatic evaluation metric
-* lack of easy-to-use resources for evaluation, both in the form of simplified
-  evaluation toolkits and large collections of model outputs
+* lack of easy-to-use resources for evaluation, both in the form of 
+  simplified evaluation toolkits and large collections of model outputs
 * how evaluation metrics are evaluated themselves
   * Many of the currently used metrics were developed and assessed using the
     Document Understanding Conference (DUC) and Text Analysis Conference (TAC)
@@ -127,7 +127,7 @@ https://github.com/Yale-LILY/SummEval
 
 ## models,
 
-* Zhang+ (2018a): level of abstraction of several recent abstractive summ mods
+* Zhang+ (2018a): level of abstraction of several recent abstractive summ models
   * word-level extractive models achieved a similar level of abstraction to
     fully abstractive models
 * Kedzie+ (2018) examined the influence of various model components in extractiv
@@ -358,11 +358,11 @@ https://github.com/Yale-LILY/SummEval
     ensure that summaries were evaluated by native English speakers
   * Compensation was calculated to ensure an average wage of 12 USD per hour
 * expert
-  * Gillick and Liu (2010) showed that summary judgments obtained through
-    non-experts could exhibit worse inter-annotator agreement
+  * non-expert summary judgments could exhibit worse inter-annotator agreement
+    (Gillick and Liu 2010)
   * we enlisted three expert annotators who have written papers on summarization
     either for academic conferences (2) or as part of a senior thesis (1)
-  * asked to evaluate the same set of summaries under the same instructions as
+  * asked to evaluate the same set of summaries under the same instructions
   * two rounds of annotation
   * In the second round, annotators were asked to check all examples for which
     their score of a dimension differed from another annotator by more than 2
