@@ -26,7 +26,7 @@ András Kornai
 * major ACR systems such as those of Schank, (1972), Sowa, (2000), Abstract
   Meaning Representations (AMR, see Banarescu et al., 2013)
 * (hyper)graphs
-  * Hyperedge Replacement Grammars (Drewes, Kreowski, and Habel, 1997) or 
+  * Hyperedge Replacement Grammars (Drewes, Kreowski, and Habel, 1997) or
   * s-graph grammars (Koller, 2015)
     * key examples furnished
     * operations rename, forget, and merge
@@ -42,14 +42,14 @@ András Kornai
 # Conclusion
 
 * this is the first ever theory that spells out in detail the9 form that
-  meaning postulates must take (for a survey in MG, see Zimmermann, 1999) 
-* difference between what we called the LF and ACR views of semantics 
+  meaning postulates must take (for a survey in MG, see Zimmermann, 1999)
+* difference between what we called the LF and ACR views of semantics
   * [sperficially] is about the choice of formal tools
-  * [really] negation. 
+  * [really] negation.
     * In theories of LF, we have full quantification, with Boolean duality
     * In ACR theories, there is only one kind of quantification, generic, and
       this has no obvious dual.
-* What makes horses and cows similar is that 
+* What makes horses and cows similar is that
   * they are both large four-legged farm animals
   * the set of essential properties H for horses and C for cows
     * Jaccard similarity |H∩C|/|H∪C|

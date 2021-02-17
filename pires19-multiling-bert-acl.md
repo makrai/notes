@@ -112,17 +112,17 @@ arXiv preprint arXiv:1906.01502
 
 # 5 Multilingual characterization of the feature space
 
-* If M-BERT ’s feature space is multilingual, then 
-  the transformation mapping between the same sentence in 2 languages 
+* If M-BERT ’s feature space is multilingual, then
+  the transformation mapping between the same sentence in 2 languages
   should not depend on the sentence itself, just on the language pair
 
 ## 5.1 Experimental Setup
 
 * nearest neighbor accuracy
-* sample 5000 pairs of sentences from WMT16 (Bojar+ 2016) and 
+* sample 5000 pairs of sentences from WMT16 (Bojar+ 2016) and
   feed each sentence (separately) to M-BERT with no fine-tuning
 * a vector for each sentence, at each layer l
-  * from hidden feature activations: 
+  * from hidden feature activations:
     average the representations for the non-spec input tokens
 * For each pair of sentences, eg (v EN i , v DE i ), we compute
   the vector pointing from one to the other and average it over all pairs: v̄

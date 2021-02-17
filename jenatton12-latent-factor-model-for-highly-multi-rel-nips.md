@@ -62,11 +62,11 @@ EVEREST: Learning high-level representations of sparse tensors
   via collective matrix factorization as proposed in RESCAL [15] and [18, 23]
 * latent class`:` the resulting model is
   * the classical stochastic blockmodel [26, 17]
-    * [17] K. Nowicki and T. A. B. Snijders. 
-      Estimation and prediction for stochastic blockstructures. 
+    * [17] K. Nowicki and T. A. B. Snijders.
+      Estimation and prediction for stochastic blockstructures.
       Journal of the American Statistical Association, 96(455):1077–1087, 2001.
-    * [26] Y. J. Wang and G. Y. Wong. 
-      Stochastic blockmodels for directed graphs. 
+    * [26] Y. J. Wang and G. Y. Wong.
+      Stochastic blockmodels for directed graphs.
       Journal of the American Statistical Association, 82(397), 1987.
   * clustering-based approaches ... for multi-relational learning
     * [9] a non-parametric Bayesian extension of the stochastic blockmodel
@@ -105,7 +105,7 @@ EVEREST: Learning high-level representations of sparse tensors
   24. Sutskever, R. Salakhutdinov, and J. Tenenbaum
       Modelling relational data using bayesian clustered tensor factorization
       2009 NIPS
-* matches the model considered in (Nickel+ 12) if 
+* matches the model considered in (Nickel+ 12) if
   the least-square loss is substituted to the logistic loss
   * [16] M. Nickel, V. Tresp, and H.-P. Kriegel
     Factorizing YAGO: scalable machine learning for linked data
@@ -199,7 +199,7 @@ EVEREST: Learning high-level representations of sparse tensors
       most of the information was contained in the bigram and unigram terms
 * future
   * exploring the similarities of the relations through an analysis of the
-    latent factors could provide some 
+    latent factors could provide some
     insight on the structures shared between different relation types
   * Performance might be improved by training on cleaner triplets, such as
     [11] A. Korhonen, Y. Krymolowski, and T. Briscoe

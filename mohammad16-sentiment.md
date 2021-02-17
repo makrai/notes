@@ -7,7 +7,7 @@ in Cambria, Das, Bandyopadhyay, and Feraco eds. A practical guide to sentm anal
   valence (positive and negative dimension) and
   arousal (degree of reactivity to stimulus)
 * large amounts of work in sentiment analysis is focused on ...  valence
-* some work on automatically detecting 
+* some work on automatically detecting
   arousal, and ... emotions such as anger, frustration, sadness, and optimism
 * organization
   2. challenges in sentiment analysis of text
@@ -25,5 +25,5 @@ in Cambria, Das, Bandyopadhyay, and Feraco eds. A practical guide to sentm anal
   7. metaphors, analogies, [sarcasm,] irony [aka] figurative language
   8. other languages
   9. emerging areas where sentiment analysis is ... applied
-* Throughout the chapter we highlight some of the best approaches 
+* Throughout the chapter we highlight some of the best approaches
   * including approaches that were most successful [at] SemEval

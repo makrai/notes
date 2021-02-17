@@ -215,7 +215,7 @@ ACL long 2018
   * high V, A, and D words in books and literature
 * hashtag words and emojis common in tweets, emotion denotating words,
   emotion associated words, neutral terms, words belonging to particular POS
-* demographic groups and specific groups of words, for example, e.g. whether 
+* demographic groups and specific groups of words, for example, e.g. whether
   * younger annotators have a higher shared understanding of tweet terms,
   * [women have] a higher shared understanding of adjectives
 * shared understanding [in] geographic and language groups

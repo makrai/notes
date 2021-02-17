@@ -35,7 +35,7 @@ Correlation-based Intrinsic Evaluation of Word Vector Representations
 * Tsvetkov+ (2015) QVEC
   * correlate distributional word vectors with linguistic word vectors
     constructed from rich linguistic resources, annotated by domain experts
-  * can easily be adjusted to specific downstream tasks (e.g., POStagging) 
+  * can easily be adjusted to specific downstream tasks (e.g., POStagging)
     by selecting task-specific linguistic resources (e.g., POS annotations).
   * two weaknesses
     * not invariant to linear transformations of the embeddings’ basis, whereas
@@ -70,7 +70,7 @@ Correlation-based Intrinsic Evaluation of Word Vector Representations
   instead, for example,
   * WordNet for semantic evaluation (Fellbaum, 1998), or
   * Penn Treebank (Marcus+ 1993, PTB) for syntactic evaluation
-* Since these properties are not an exact match to the task, the 
+* Since these properties are not an exact match to the task, the
   intrinsic evaluation tests for a necessary (but possibly not sufficient) set
   of generalizations
 

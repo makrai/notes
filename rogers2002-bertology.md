@@ -141,7 +141,7 @@ arXiv:2002.12327 cs.CL
 ## 3.4 Limitations
 
 * Tenney+ (2019a) remarks, "the fact that a linguistic pattern is not observed
-  by our probing classifier does not guarantee that it is not there, and 
+  by our probing classifier does not guarantee that it is not there, and
   the observation of a pattern does not tell us how it is used."
 * how complex a probe should be allowed to be (Liu+ 2019a)
   * If a more complex probe recovers more information, to what extent are we
@@ -223,8 +223,8 @@ arXiv:2002.12327 cs.CL
 
 ### 4.2.1 Heads with linguistic functions
 
-* The "heterogeneous" attention pattern shown in Figure 3 
-  could be linguistically interpretable, and a 
+* The "heterogeneous" attention pattern shown in Figure 3
+  could be linguistically interpretable, and a
   number of studies focused on identifying their functions
 * syntactic relations
   * Htut+ (2019) and Clark+ (2019) report that
@@ -265,7 +265,7 @@ arXiv:2002.12327 cs.CL
     weighted when computing the next representation for the current word"
     (Clark+ 2019)
   * The popularity of self-attention as interpretation is due to this idea
-  * debated (Jain and Wallace, 2019; Serrano and Smith, 2019; 
+  * debated (Jain and Wallace, 2019; Serrano and Smith, 2019;
     Wiegreffe and Pinter, 2019; Brunner+ 2020)
   * in a multi-layer model where attention is followed by non-linear trafo,
     the patterns in individual heads do not provide a full picture
@@ -395,10 +395,10 @@ arXiv:2002.12327 cs.CL
   next sentence prediction (NSP) and masked language model (MLM)
 * alternative training objectives
 * How to mask
-  * Raffel+ (2019) systematically experiment with 
+  * Raffel+ (2019) systematically experiment with
     corruption rate and corrupted span length
   * Liu+ (2019b): diverse masks for training examples within an epoch,
-  * Baevski+ (2019) mask every token in a sequence 
+  * Baevski+ (2019) mask every token in a sequence
     instead of a random selection
   * Clinchant+ (2019) replace the MASK token with [UNK] token, to
     help the model learn a representation for unknowns that
@@ -456,7 +456,7 @@ arXiv:2002.12327 cs.CL
 * pretraining data. Several studies explored the benefits of
   * increasing the corpus volume (Liu+ 2019b; Conneau+ 2019; Baevski+ 2019) and
   * longer training (Liu+ 2019b)
-  * explicit linguistic information, both 
+  * explicit linguistic information, both
     syntactic (Sundararaman+ 2019) and semantic (Zhang+ 2020)
   * Wu+ (2019b) and Kumar+ (2020) include the label for a given sequence from an
     annotated task dataset (e.g. sentiment analysis)
@@ -567,7 +567,7 @@ arXiv:2002.12327 cs.CL
   * loss functions (Sanh+ 2019; Jiao+ 2019),
   * mimicking the activation patterns of individual portions of the teacher
     (Sun+ 2019a), or
-  * knowledge transfer at different stages at the 
+  * knowledge transfer at different stages at the
     * pre-training (Turc+ 2019; Jiao+ 2019; Sun+ 2020)
     * fine-tuning stage (Jiao+ 2019)
 * quantization of weights (Shen+ 2019; Zafrir+ 2019)
@@ -711,7 +711,7 @@ arXiv:2002.12327 cs.CL
 
 * they often fail if any reasoning needs to be performed on top of the facts
   (Talmor+ 2019, see also subsection 3.3)
-* Richardson+ (2020) propose a method to "teach" BERT 
+* Richardson+ (2020) propose a method to "teach" BERT
   quantification, conditionals, comparatives, and boolean coordination
 
 ### Learning what happens at inference time

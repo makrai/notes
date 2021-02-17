@@ -7,7 +7,7 @@ Roger C. Schank and Lawrence G. Tesler
 * The grammar of the system [has two parts]
   1. universal grammar exemplified by the conceptual rules
   2. language-specific
-    * made up of realization rules 
+    * made up of realization rules
       * intended to map pieces of the conceptual network into linguistic items
       * may be used for both parsing and generating
 

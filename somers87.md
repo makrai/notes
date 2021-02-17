@@ -18,8 +18,8 @@ parts:
       * actants
         1. subjects         Nominative  performs
         2. object           Accusative  undergoes
-        3. indirect object  Dative      benefit or detriment (kárát vallja) 
-        _mir ist warm_ 
+        3. indirect object  Dative      benefit or detriment (kárát vallja)
+        _mir ist warm_
     * valency
   * Helbig and Schenkel 1968
     * the verb as the structural center
@@ -36,7 +36,7 @@ parts:
 3. Distinction of complements and adjuncts
   * semanteme constitutive
   * Zurückführungstest: reformulating as a relative clause
-  * substituting the verb (case government): 
+  * substituting the verb (case government):
     * I have been waiting for my friend for two hours.
     * `*`I have been expecting for my friend for two hours.
     * I have been expecting my friend for two hours.
@@ -128,11 +128,11 @@ parts:
   * universal, language-specific, word-specific
   * means by which different cases can be distinguished
     * ambiguity attributed to roles
-    * a single verb with two seemingly disparate classes of nominals 
-      * in a given grammatical relation but 
+    * a single verb with two seemingly disparate classes of nominals
+      * in a given grammatical relation but
       * different semantic roles
-    * sets of verbs that 
-      * express a similar predication, but 
+    * sets of verbs that
+      * express a similar predication, but
       * assign different grammatical relations (_buy_, _sell_) !
   * optionality of constituents
     * conceptually present
@@ -141,15 +141,15 @@ parts:
 ## 3 Anderson: Localist case
 
 * Case grammar by John Anderson, (1968 and) 1971
-  
-### 3.2 Localism 
-### 3.3 Formalism 
+
+### 3.2 Localism
+### 3.3 Formalism
 ### 3.4 Essential features of the theory
 
 * dependency rather than constituency
 * prepositions are surface realizations of the cases
 * cases
-  * nom (later abs) 
+  * nom (later abs)
     * ~ Obj or Pat
     * in a process with a single non-agentive participant
   * erg
@@ -187,7 +187,7 @@ parts:
   * comparable paraphrase relations
 * lack in any intuitive cognitive appeal
 * Fillmorean cases: bridge between
-  * the abstractions of the lexicon and 
+  * the abstractions of the lexicon and
   * the actualizations of the sentence containing the verb
 * Anderson
   * it is the features that are stored in the lexicon
@@ -257,7 +257,7 @@ parts:
 ### 4.4 verb types combined with either no or one relation, Figure 6
 
 * a locative-ról szólót nem értem
-* criticism: what is derivation?  
+* criticism: what is derivation?
 * covert roles
   * coreferential
   * lexicalised
@@ -325,7 +325,7 @@ parts:
 * reject names like Exp because their association with semantic features
   * primacy of syntactic criteria
   * but these criteria are not given
-* list (1982): 
+* list (1982):
   * conflate Ins + Man -> Means
   * Loc include Plc
   * Cor include Ref
@@ -333,12 +333,12 @@ parts:
 * Pat
   * obligatory in all frames
   * the case relation of the subject for all intrans verbs
-  * in the critique: 
-    * Fillmore's model allowed a unified treatment of 
+  * in the critique:
+    * Fillmore's model allowed a unified treatment of
       verbs with both transitive and intransitive forms
   * other CRs are defined relating to Pat
-* reminiscent of Panini: 
-  * there was an obligatory karaka, _karta_ which 
+* reminiscent of Panini:
+  * there was an obligatory karaka, _karta_ which
   * figured in the descriptions of the other karaka
   * but karta is Agt
 * matching case assignments in logically equiv sentences? p91 (+ buy sell)
@@ -423,7 +423,7 @@ parts:
 * how much the problems are artifacts of the theory
 * multilingual lang processing
 
-## 7: defining the cases / specificity and multiplicity (and hierarchies) 
+## 7: defining the cases / specificity and multiplicity (and hierarchies)
 
 ### 7.1 Introduction
 
@@ -431,7 +431,7 @@ parts:
   * different applications of Case theory should result in different case systems
 * all case sets are a mixture of specificity vs multiplicity
   * general case notion
-  * Object: 
+  * Object:
     * affected (disappears)
     * effected (come into being)
     * neutral
@@ -480,9 +480,9 @@ parts:
   * Oosten: mediopassive (patient-subject construction): (15) on p123
     * -> responsibility
   * Cruse
-  * Ins 
+  * Ins
     * ~ like Agt but inanimate
-    * chains of causality: 
+    * chains of causality:
       * only the original and the immediate cause can be expressed as a subject
       * -> Agt (precedence) and Ins
     * degrees of Agt
@@ -500,7 +500,7 @@ parts:
     * Object -
     * Goal - transfer, movement
 * Exp
-  * p129 
+  * p129
     * Sam EXP is happy
     * Sam EXP likes Jane.
     * `*`Graham EXP and his book PAT are sad.
@@ -564,7 +564,7 @@ parts:
 * effected vs affected p142
   * Fillmore: Objective and Factitive (the later -> Goal)
   * ambiguous: _van Gogh painted the canvas/Starry Night/his bedroom_
-  * What did Bev do to the dinner? 
+  * What did Bev do to the dinner?
   * What Bev did to the dinner was ruin (tönkretesz)/`*`make it.
   * multilingual:
     * Eng _paint_ = Ger _streichen/bemalen_ Obj vs _malen_ Fact, be- is productive
@@ -592,12 +592,12 @@ parts:
     * enter LOC
 * Temporal?
   * same expression used for location and time in many languages
-  * English verbs requiring temporal 
+  * English verbs requiring temporal
     * direct object: last, take
     * subject: none (Hungaian (el)telik valamivel)
   * inner, outer + stacking
   * where is the time or place distinction encoded in a sentence?
-  * Locatives and Temporals can co-occure but 
+  * Locatives and Temporals can co-occure but
     * without the possibility of coordination
     * `*`He walked from the top of the hill until sundown.
 * state and direction p153
@@ -639,7 +639,7 @@ parts:
   * temporal
 * metaphorical p159
   * Anderson: abstract uses of (surface) cases in general, location, *state* or time
-  * Fillmore 1971 
+  * Fillmore 1971
     * Factitive -> Goal
     * Dative -> Goal
     * blame, accuse, criticize
@@ -649,10 +649,10 @@ parts:
     * Goal vs Pat
       * I shot at Harry     I shot a bullet from the gun
       * I shot Harry        I shot the gun
-  * Anderson 
+  * Anderson
     * know, like, want (surface structure in many languages), methink, mich dünkt
     * subj is LOC
-  * transfer (and paraphrases): 
+  * transfer (and paraphrases):
     * buy, sell, lend, borrow, teach, learn
     * (give) thank, help (hefen DAT)
     * obey
@@ -678,7 +678,7 @@ parts:
 * Comitative, accompaniment
 * deep case or surface phenomenon related to coordination?
 * combine with Ins: the same surface form in almost all languages
-* arguments 
+* arguments
   * coordination does not imply joint participation
   * reciprocal verbs
     * ambiguity of fight with (against/alongside)
@@ -718,7 +718,7 @@ parts:
 * 1. Dual roles involving Source and Goal
   * locative + Agent
   * transfer, communication, propulsion (meghajtás), judging
-  * verb pairs 
+  * verb pairs
     * buy/sell, teach/learn
 * 2. Other instances of duality
   * Agt and Pat are sometimes coreferential
@@ -727,7 +727,7 @@ parts:
       * Agt is not optional
       * ~Daniele waschte sich EXP die Hände PAT.
     * causative (műveltetés)
-      * Hindi: the cause[r?] is marked dative or ins 
+      * Hindi: the cause[r?] is marked dative or ins
         * depending on whether it is affected by its own action
       * verbs of perception, motion, _drink_, _read_
       * French, Spanish: reflexive
@@ -781,7 +781,7 @@ parts:
   * semantic relations: bundles of features
   * basic roles: Theme, Goal, Source, Path (+/- Source, +/- Goal)
   * predicates: static (-Source)/dynamic
-  * further features: 
+  * further features:
     * positional, identification, possession, cognition
     * map onto +/- sentient and +/- abstract
   * + volition and action types eventive/agentive
@@ -792,9 +792,9 @@ parts:
     * standard Case: Agentive Objective Benefactive Locative & Temporal Ambient
     * verbal voice: Active Passive Dative
     * surface case: Nom Acc Dat
-    * verb types: Actional Processive Experiental 
+    * verb types: Actional Processive Experiental
   * Temporal Path: duration
-  * Active: 
+  * Active:
     * Src Agent/Causer (volitive, animate)
     * Gol result/goal/purpose, active recipient (buyer, getter)
     * Pth instrument
@@ -805,7 +805,7 @@ parts:
       * not intended as opposed to Active Gol
     * Loc element undergoing state-change of whose state is described
     * Pth enabler non-controlled, non tool-like instrument
-  * Dative: 
+  * Dative:
     * psych                       transfer
       * perception
       * cognition
@@ -877,11 +877,11 @@ parts:
 
 * systems in which case analysis is the central goal
 * PARSIFAL Marcus 1980
-  * the case-frame determiner is 
+  * the case-frame determiner is
     * indeterministic
     * parallel to syntactic parsing
-    * case frame representation in intended to 
-      * word sense disambig but 
+    * case frame representation in intended to
+      * word sense disambig but
       * no semantic generalization
       * capture the different behaviours present in English
       * taken from Levin 1977
@@ -898,7 +898,7 @@ parts:
     * Gol (inner, outer)
   * verb paradigms
     * transformations (alternations) p217
-* PTOSYS Somers 1979--82 
+* PTOSYS Somers 1979--82
   * inherent features
   * ...
 
@@ -920,7 +920,7 @@ parts:
     * templates
       * agt-action-obj
       * formulas for individual word senses
-    * paraplates 
+    * paraplates
     * inference rules
   * massage text to become as deep as is necessary
   * formula marker just specifies semantic preferences
@@ -928,7 +928,7 @@ parts:
     * reference to agenthood, it would
   * John fired at the stags -> John used a thing
 * Hendrix 1973 p226
-  * question-answering system 
+  * question-answering system
     * with natural language new information
     * ATN
     * no synt anal phase as such
@@ -943,7 +943,7 @@ parts:
     * verbs in a broad sense
       * _Flows_ of aqueous humor in the anterior chamber increases
     * cases as
-      * representation of input and 
+      * representation of input and
       * in the diagnosis model
   * PROLID Harbusch
 * slot names and their features differ from predicate to predicate
@@ -955,7 +955,7 @@ parts:
   * KRL Bobrow and Winograd 1977
     * conceptual entities with descriptions and procedures... p236
     * default assumption for case-slots p237
-    * the same slot name has different meaning 
+    * the same slot name has different meaning
       * with different predicates
     * Charniak: case-slot identity theory
       * semantic slot: e.g. buyer
@@ -1020,7 +1020,7 @@ parts:
 
 * lexicon entries
 * complement vs adjunct p265
-  * preposition in a valency-bound element 
+  * preposition in a valency-bound element
     * is semantically void
     * map many-to-many between languages
   * prepositions in adjunct
@@ -1034,7 +1034,7 @@ parts:
   * ...
 * systems p270
   * Nishida 1980 English-Japanese
-    * Japanese 
+    * Japanese
       * simple mapping between deep cases and postpositions
       * non-living subject problem
   * METAL, Texas, German to English, Lehmann 1980
@@ -1045,7 +1045,7 @@ parts:
       2.(semantic) type
       3.(syntactic) marker
       4.form
-      5.transitivity type 
+      5.transitivity type
     * list of RAs p274
       * central
         * Agt
@@ -1059,7 +1059,7 @@ parts:
           * talk about, discuss sg, subject of the copula
         * Commutative
           * ~traditional Comitative: co-agent, co-object
-          * each other 
+          * each other
           * The Johnsons are sitting with the Smiths
         * Body-part
       * peripheral p275

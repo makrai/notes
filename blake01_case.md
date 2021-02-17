@@ -24,20 +24,20 @@ Case
 
 * three characteristics of Localist Case Grammar that account for [how the
   larger number of semantic roles recognised by scholars] can be accommodated
-  1. Localism 
-  * syntactic case categories [are] extensions of local case categories 
+  1. Localism
+  * syntactic case categories [are] extensions of local case categories
     into an abstract domain
     e.g. the subject of [ _have_ ] in _She has it_ ... will be [locative].
-  1. Syntagmatic contrast 
-    The absolutive and the locative are interpreted as goal (destination) 
-    in the context of ergative and ablative respectively.  
-    For instance, the noun phrase the stick will be [abs] both in 
-    _The stick broke_ and in _The teacher broke the stick_, but 
+  1. Syntagmatic contrast
+    The absolutive and the locative are interpreted as goal (destination)
+    in the context of ergative and ablative respectively.
+    For instance, the noun phrase the stick will be [abs] both in
+    _The stick broke_ and in _The teacher broke the stick_, but
     will be interpreted as a ‘goal of action’ ( patient) only in the transitive
-  1. Multiple assignment 
+  1. Multiple assignment
     * an argument can bear more than one case relation
 * a desire to maintain a fixed mapping of extralinguistic roles to case[s]
-  e.g. ‘teacher’ as [abl] 
+  e.g. ‘teacher’ as [abl]
   since the ‘teacher’ is the abstract source of the knowledge
 * holds roles constant under paraphrase
   * capturing the objective properties of the arguments and at the same time

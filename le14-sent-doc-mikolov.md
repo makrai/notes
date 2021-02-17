@@ -40,5 +40,5 @@ Distributed Representations of Sentences and Documents
 * The paragraph vectors are also asked to contribute to the prediction task of
   the next word given many contexts sampled from the paragraph
 * In the experiments, we use concatenation as the method to combine the vectors
-* prediction time, one needs to perform an inference step to 
+* prediction time, one needs to perform an inference step to
   compute the paragraph vector for a new paragraph (never seen before)

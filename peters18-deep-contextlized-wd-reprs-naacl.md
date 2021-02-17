@@ -4,18 +4,18 @@ NAACL 2018 outstanding paper
 
 # Ruder
 
-* whether to use the pre-trained language model as a 
+* whether to use the pre-trained language model as a
   * fixed feature extractor and incorporate its representation as features into
-    a randomly initialized model as used in ELMo, or whether to 
+    a randomly initialized model as used in ELMo, or whether to
   * fine-tune the entire language model as done by ULMFiT. The latter
     * typically done in CV where either the top-most or several of the top
-* core components of transfer learning for NLP: 
+* core components of transfer learning for NLP:
   * expressive language model encoder such as a deep BiLSTM or the Transformer
 
 # Abstract
 
 * a new type of deep contextualized word representation that models both
-  * complex characteristics of word use (e.g., syntax and semantics), and 
+  * complex characteristics of word use (e.g., syntax and semantics), and
   * how these uses vary across linguistic contexts (i.e., to model polysemy)
 * Our word vectors are
   * learned functions of the internal states of a deep bidirectional language
@@ -71,7 +71,7 @@ NAACL 2018 outstanding paper
     * a supervised neural MT system (CoVe; McCann+ 2017) or
     * an unsupervised language model (Peters+ 2017)
   * we ... train our biLM on [the 1B word benchmark] corpus (Chelba+ 2014)
-    * approximately 30 million sentences 
+    * approximately 30 million sentences
 * different layers of deep biRNNs encode different types of information
   * introducing [POS tags] at the lower levels of a deep LSTM
     can improve overall performance of higher level tasks such as

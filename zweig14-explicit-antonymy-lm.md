@@ -6,7 +6,7 @@ Explicit Representation of Antonymy in Language Modeling
 
 # 1 Introduction
 
-* Continuous space word representations [for]  machine translation 
+* Continuous space word representations [for]  machine translation
   (Auli+ 2013; Kalchbrenner and Blunsom, 2013; Son+ 2012; Schwenk+ 2006)
 * Previous approaches cannot distinguish between words like “hot” and “cold”
   because they are distributionally similar

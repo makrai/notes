@@ -1,5 +1,5 @@
 Allyson Ettinger, Ahmed Elgohary, Philip Resnik
-Probing for semantic evidence of composition 
+Probing for semantic evidence of composition
   by means of simple classification tasks
 2016 repeval
 
@@ -12,7 +12,7 @@ Probing for semantic evidence of composition
 # 1 Introduction
 
 * effective composition as production of sentence representations that allow
-  for high performance _on a task of interest_ 
+  for high performance _on a task of interest_
   (Kiros+ 2015; Tai+ 2015; Wieting+ 2015; Iyyer+ 2015)
 * we propose here a linguistically-motivated but computationally
   straightforward diagnostic method,
@@ -51,11 +51,11 @@ Probing for semantic evidence of composition
 
 ## Dataset construction
 
-For our illustrations here, we _restrict our structural variation_ 
-* to that available from 
-  * active/passive alternations, use of 
-  * relative clauses at various syntactic locations, and use of 
-  * negation at various syntactic locations.  
+For our illustrations here, we _restrict our structural variation_
+* to that available from
+  * active/passive alternations, use of
+  * relative clauses at various syntactic locations, and use of
+  * negation at various syntactic locations.
 * This allows us to demonstrate decent structural variety without distracting
   from illustration of the semantic characteristics of interest.  Many more
   components can be added to increase complexity ... More detailed discussion
@@ -64,19 +64,19 @@ For our illustrations here, we _restrict our structural variation_
 
 ## Semantic characteristics
 
-* semantic role information is 
+* semantic role information is
   * in NLP ... in the form of tasks such as abstract meaning representation
-    (AMR) (Banarescu+ 2013). Similarly, the concept of 
+    (AMR) (Banarescu+ 2013). Similarly, the concept of
 * scope
  * including negation
- * in NLP, in particular for applications such as sentiment analysis 
+ * in NLP, in particular for applications such as sentiment analysis
   (Blunsom+ 2013; Iyyer+ 2015).
 
 ## Example classification tasks
 
 * semantic role
   * positive if they contain professor in the AGENT relation with the verb
-    recommend. 
+    recommend.
   * negative examples containing the relevant lexical items (professor,
     recommend) without the relation of interest,
 
@@ -84,7 +84,7 @@ For our illustrations here, we _restrict our structural variation_
 
 three sentence embedding methods:
   1. Averaging GloVe vectors (Pennington+ 2014),
-  1. Paraphrastic word averaging embeddings (Paragram) 
+  1. Paraphrastic word averaging embeddings (Paragram)
     trained with a compositional objective (Wieting+ 2015). and
   1. Skip-Thought embeddings (ST) (Kiros+ 2015).
 
@@ -97,13 +97,13 @@ three sentence embedding methods:
   generalization across the category, we ensured that no human nouns appearing
   in the test set were included in training sentences. All three models reach
   a high classification performance on this task, though Paragram lags behind
-  slightly.  
+  slightly.
 * preliminary experiment pertaining to an actual indicator of composition: _se-
   mantic role_
   * Note that with sentences of this level of simplicity, models can plausibly
     use fairly simple order heuristics to solve the classification task, so a
     model that retains order information (in this case, only ST) should have a
-    good chance of performing well. Indeed, 
+    good chance of performing well. Indeed,
   * we see that ST reaches a high level of performance, while the two
     averaging-based models never exceed chancelevel performance.
 

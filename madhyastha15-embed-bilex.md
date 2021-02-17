@@ -35,33 +35,33 @@ https://github.com/f00barin/bmaps/tree/master/pybmaps
 
 * Q: query words, C: context words
 * the log-linear models by Madhyastha+ (2014) that
-  * given a query word q 
+  * given a query word q
     compute a conditional distribution over candidate words c
 * semi-supervised learning
   * to learn φ from unlabeled data, ... we experiment with two approaches:
-    * a simple distributional approach 
+    * a simple distributional approach
       where we represent words with a bag-of-words of contextual words; and
     * the skip-gram model by Mikolov+ (2013)
   * To learn W we assume access to labeled data
 * low-rank
-  * With φ fixed, we 
+  * With φ fixed, we
     learn W by minimizing the negative log-likelihood of the labeled data
   * using a regularized objective,
     * regularizers that induce low-rank parameters W
-  * we can interpret U and V as 
+  * we can interpret U and V as
     task-specific compressions of the original embedding
   * minimizing the rank of a matrix is hard,
-    * we employ a convex relaxation 
+    * we employ a convex relaxation
       based on the nuclear norm of the matrix `l*`
       * the l1 norm of the singular values, see Srebro+ (2005)
         * N Srebro, J Rennie, TS Jaakkola
           Maximum-margin matrix factorization
           NIPS 2005
-      * i. e. the nuclear norm regularizer serves as 
+      * i. e. the nuclear norm regularizer serves as
         a convex relaxation to the rank function
   * we compare the low-rank approach to `l1` and `l2` regularization penalties,
   * For all settings we use the
-    * forward-backward splitting (FOBOS) optimization algorithm 
+    * forward-backward splitting (FOBOS) optimization algorithm
       by Duchi & Singer (2009)
       * John Duchi and Yoram Singer
         Efficient online and batch learning using forward backward splitting
@@ -77,7 +77,7 @@ https://github.com/f00barin/bmaps/tree/master/pybmaps
 * pairwise accuracy
   * percentage of compatible/non-compatible pairs of modifiers where the
   * former obtains higher probability
-* the bag-of-words is an uncompressed representation, while the 
+* the bag-of-words is an uncompressed representation, while the
   skip-gram embeddings are a neural-net-style compression
 * complexity [efficiency of computing predictions]
   * For [`l_2` and `l_1` it] is a function of the non-zero entries in W , while

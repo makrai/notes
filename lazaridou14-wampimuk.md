@@ -72,8 +72,8 @@ Is this a wampimuk?
     * similar to the one introduced by Mikolov+ (2013a) for estimating
     * a translation matrix
   * Canonical Correlation Analysis (CCA)
-    * have been successfully used in the past for annotation of 
-      regions (Socher and Fei-Fei, 2010) and 
+    * have been successfully used in the past for annotation of
+      regions (Socher and Fei-Fei, 2010) and
       complete images (Hardoon+ 2006; Hodosh+ 2013)
     * linear relationship
     * good approximation to human concept similarity judgments (Silberer and

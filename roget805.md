@@ -1,20 +1,20 @@
-This note is on Wikipedia articles 
+This note is on Wikipedia articles
   `Roget's_Thesaurus` and `Wikipedia:Outline_of_Roget's_Thesaurus`
 
 * See also
   * Kennedy (2008)
   * Barbara Ann Kipfer. 2009. Roget’s 21st Century Thesaurus
 
-* created in 1805 
+* created in 1805
   * by P M Roget, British physician, natural theologian and lexicographer. It
   * released to the public on 29 April 1852.[1] The original edition had
   * 15,000 words
-* composed of six primary _classes_.[6] Each class is composed of multiple 
+* composed of six primary _classes_.[6] Each class is composed of multiple
   * _divisions_ and then _sections_
   * One of the most general words is chosen ... as its headword, which labels
-* based on the philosophical work of 
+* based on the philosophical work of
   * Leibniz (see Leibniz—Symbolic thought), itself following a long tradition
-  * epistemological work starting with Aristotle. 
+  * epistemological work starting with Aristotle.
     * Some of Aristotle's Categories are included in Roget's first class
       _abstract relations_
 
@@ -77,4 +77,4 @@ This note is on Wikipedia articles
 * 6.2 Personal Affections
 * 6.3 Sympathetic Affections
 * 6.4 Moral Affections
-* 6.5 Religious Affections 
+* 6.5 Religious Affections

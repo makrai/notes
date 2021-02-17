@@ -4,7 +4,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 
 # Abstract
 
-* we identify key contributions which the nature of language has made 
+* we identify key contributions which the nature of language has made
   to the development of neural network architectures
   * variable binding and its instantiation in attention-based models
   * Transformer is not a sequence model but an induced-structure model
@@ -20,7 +20,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   * insights from grammar formalisms about the nature of language, with their
     multiple levels, structured representations and rules
   * rules were soon learned with statistical methods
-  * neural networks replace symbols with induced vectors, but 
+  * neural networks replace symbols with induced vectors, but
     * kept structured representations, such as syntactic trees
   * attention-based models have replaced hand-coded structures with induced str
     * multiple levels of structured representations, much as has always been
@@ -52,7 +52,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   * backpropagation learning (Rumelhart+ 1986a) in neural network models
   * Simple Recurrent Networks (SRNs, Elman, 1990)
   * many argued that the complex discrete structured representations were
-    neither necessary nor desirable 
+    neither necessary nor desirable
     (Smolensky (88, 90); Elman (91); Miikkulainen (93); Seidenberg (2007))
   * more recent (Collobert and Weston, 2008; Collobert+ 2011; Sutskever+ 2014)
 * problems with vector-space representations of cognitive phenomena
@@ -61,7 +61,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     * If we see a red square together with a blue triangle, how do we represent
     * vector elements for red, blue, square and triangle would all be active
     * in symbolic reprs: red(x) ∧ triangle(x) ∧ blue(y) ∧ square(y)
-    * Temporal Synchrony Variable Binding 
+    * Temporal Synchrony Variable Binding
       (von der Malsburg, 1981; Shastri and Ajjanagadde, 1993)
       * the precise timing of neuron activation spikes could be used
       * Neural spike trains have both a phase and a period, so the
@@ -75,7 +75,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
       * representing the structural relationships between these entities
   * significance of variable binding for solving the issues with systematicity
     (Henderson, 1994, 1996, 2000)
-    * relations were not stored explicitly, it was claimed that for NLU 
+    * relations were not stored explicitly, it was claimed that for NLU
       it is adequate to recover them from the features
     * arguments were largely theoretical, [not] incorporated in learning
 
@@ -118,8 +118,8 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   rather than a derivation structure, makes it possible to define
   syntactic parsing as a sequence-to-sequence problem,
   mapping the sentence to its parse sequence
-  * If seq2seq models) can perform well at this task, then maybe the 
-    structured linguistic representations are not necessary 
+  * If seq2seq models) can perform well at this task, then maybe the
+    structured linguistic representations are not necessary
     (contrary to Fodor and Pylyshyn (1988))
 * Vinyals+ (2015) report
   * very poor results for seq2seq models when trained on the standard dataset
@@ -172,7 +172,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     LSTMs (Hochreiter and Schmidhuber, 1997) and CNNs (LeCun and Bengio, 1995)
   * input in the form of position embeddings
     * just properties of individual entities (typically words)
-    * facilitate learning about absolute positions [and] 
+    * facilitate learning about absolute positions [and]
       allow calculating relative position
   * explicitly inputting relative position relations as embeddings into the
     attention functions works even better (Shaw+ 2018)
@@ -185,7 +185,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     embeddings, which higher levels of attention then extract
   * apparent from dependency parsing
     (Kondratyuk and Straka, 2019; Mohammadshahi and Henderson, 2019, 2020)
-  * Earlier models of dependency parsing successfully use BiLSTMs to 
+  * Earlier models of dependency parsing successfully use BiLSTMs to
     embed syntactic dependencies in pairs of token embeddings
     (e.g. (Kiperwasser and Goldberg, 2016; Dozat and Manning, 2016)), which are
     then extracted to predict the dependency tree
@@ -200,7 +200,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 * we analy[ze] Transformer in terms of Bayesian nonparametric learning
   (Jordan, 2010)
   * Transformer are the minimal nonparametric extension of a vector space
-* an example is a mixture model, where 
+* an example is a mixture model, where
   * each vector specifies the parameters of a multi-dimensional distribution,
   * total distribution is the weighted sum across the vectors of these
     distributions
@@ -212,14 +212,14 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
 
 * there is at least one more hand-coded aspect of these models
 * the set of entities is a predefined function of the text
-* learn how many vectors it should use to represent [a sentence] 
+* learn how many vectors it should use to represent [a sentence]
 * inducing sparsity in attention weights (Correia+ 2019)
   * effectively learns to reduce the number of entities used by individual
-    attention heads, but not by the model as a whole 
+    attention heads, but not by the model as a whole
 * currently different token definitions for different tasks
   (e.g. character / word / sentence embeddings)
 * whether a specification of the set of entities at a given level can be learned
-* models which induce the set of entities in an input text, 
+* models which induce the set of entities in an input text,
   (but these not learned jointly with a downstream deep learning model)
   * BPE (Sennrich+ 2016) and unigram language model (Kudo, 2018)
   * statistical models for morphology induction (Elsner+ 2013)
@@ -237,7 +237,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
     * only include representations at a lower level, both for input and output
     * they learned about different levels implicitly (Peters+ 18; Tenney+ 19)
 * no linguistic theory postulates different levels for different languages.
-  * levels minimally include phon, morph, syntax, pred-arg, discourse 
+  * levels minimally include phon, morph, syntax, pred-arg, discourse
   * suggests that in humans the levels of linguistic representation are innate
 
 # 6 Conclusion

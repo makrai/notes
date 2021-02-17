@@ -84,10 +84,10 @@ summarized in Buechel+ 2018
 * Our framework, SentProp, is designed to meet four key desiderata:
   1. Resource-light: without massive corpora or hand-curated resources.
   2. Interpretable: small seed sets [to] avoid ambiguity in sentiment values.
-  3. Robust: Bootstrap-sampled standard dev provide a measure of confidence.  
+  3. Robust: Bootstrap-sampled standard dev provide a measure of confidence.
   4. Out-of-the-box: Does not rely on domains specific signals
 * two steps
-  * lexical graph from unlabeled corpora and 
+  * lexical graph from unlabeled corpora and
   * propagating sentiment labels over this graph.
 
 ## 3.1 Constructing a lexical graph

@@ -7,9 +7,9 @@ The Role of Context Types and Dimensionality in Learning Word Embeddings
 * how using different types of context to learn skip-gram word embeddings
   affects performance on a wide range of intrinsic and extrinsic NLP tasks.
 * intrinsic tasks tend to exhibit a clear preference to particular types of
-  contexts and higher dimensionality, 
+  contexts and higher dimensionality,
 * more careful tuning is required for finding the optimal settings for most of
-  the extrinsic tasks that we considered. 
+  the extrinsic tasks that we considered.
 * for these extrinsic tasks, we find that once the benefit from increasing the
   embedding dimensionality is mostly exhausted, simple concatenation of word
   embeddings, learned with different context types, can yield further
@@ -31,20 +31,20 @@ The Role of Context Types and Dimensionality in Learning Word Embeddings
   lations between words, e.g., as in WordSim-353 (Finkelstein+ 2001),
 * extrinsic tasks include various ‘real’ downstream NLP tasks, such as
   coreference resolution and sentiment analysis.
-* correlation ... is not very reliable 
+* correlation ... is not very reliable
   * Schnabel+ 2015; Tsvetkov+ 2015
-* In this work, we provide 
+* In this work, we provide
   * the first extensive evaluation of word embeddings learned with different
-    types of context, on a wide range of 
-    * intrinsic similarity and relatedness tasks, and 
+    types of context, on a wide range of
+    * intrinsic similarity and relatedness tasks, and
     * extrinsic NLP tasks, namely dependency parsing, named entity
       recognition, coreference resolution, and sentiment analysis
   * contexts based of different word window sizes, syntactic dependencies, and
-    a lesser-known substitute words approach (Yatbaz+ 2012).  
+    a lesser-known substitute words approach (Yatbaz+ 2012).
   * experiment with combinations of the above word embeddings, comparing two
-    approaches: 
+    approaches:
     * (1) simple vector concatenation that offers a wider variety of features
-      for a classifier to choose and learn weighted combinations from, and 
+      for a classifier to choose and learn weighted combinations from, and
     * (2) dimensionality reduction via either Singular Value Decomposition or
       Canonical Correlation Analysis, which tries to find a smaller subset of
       features.

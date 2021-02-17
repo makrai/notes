@@ -2,7 +2,7 @@ Bernhard Ganter · Rudolf Wille
 Formal Concept Analysis -- Mathematical Foundations
 1999
 
-# 0. elements of mathematical order and lattice theory 
+# 0. elements of mathematical order and lattice theory
 
 * a reader who knows what [a lattice is] may skip this
 
@@ -11,7 +11,7 @@ Formal Concept Analysis -- Mathematical Foundations
 * "many-valued contexts").  These are then reduced to the basic type by a
   method of interpretation called "conceptual scaling"
 
-# 2. how all concepts of a data context can be determined and 
+# 2. how all concepts of a data context can be determined and
 represented in an easily readable diagram
 * implications and dependencies between attributes are dealt with.
 
@@ -25,7 +25,7 @@ part- and factor structures as well as tolerance relations
 * substitution
 * doubling parts of a concept lattice
 
-# 6. The structural properties examined in mathematical lattice theory, e.g. the 
+# 6. The structural properties examined in mathematical lattice theory, e.g. the
 
 * distributive law and its generalizations or notions of
 * dimension
@@ -33,7 +33,7 @@ part- and factor structures as well as tolerance relations
 # 7. Context Comparison and Conceptual Measurability 249
 
 * structure-comparing maps, examining various kinds of morphisms. Particular
-* scale measures, occuring in the context of conceptual scaling 
+* scale measures, occuring in the context of conceptual scaling
 
 ## 7.1 Automorphisms of Contexts
 ## 7.2 Morphisms and Bonds

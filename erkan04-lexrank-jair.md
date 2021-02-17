@@ -9,7 +9,7 @@ Güneş Erkan and Dragomir R. Radev
   * prepositional phrase attachment (Toutanova, Manning, & Ng, 2004)
 * We will discuss how random walks on sentence-based graphs can help in
   * text summarization
-  * named entity classification, prepositional phrase attachment, and 
+  * named entity classification, prepositional phrase attachment, and
     text classification (e.g., spam recognition)
 * approach in this paper is to assess the centrality of each sentence in a
   cluster and extract the most important ones to include in the summary

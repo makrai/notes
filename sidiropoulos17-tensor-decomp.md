@@ -57,9 +57,9 @@ IEEE Transactions on signal processing 2017
       because they are interested in separation
     * ML researchers often focus on the rows of A, B, C, because they
       think of them as parsimonious latent space representations
-      * For a user × item × context ratings tensor, for example, 
+      * For a user × item × context ratings tensor, for example,
         a row of A [represents] the corresponding user in latent space, and
-        a row of B (C) [representats] the corresponding item (context) 
+        a row of B (C) [representats] the corresponding item (context)
         in the same latent space
     * interested in model identifiability
       * SP ... because it guarantees separability;
@@ -86,7 +86,7 @@ matrix products and their properties
 
 ## A. Low-Rank Tensor Approximation 5
 
-* Alternating Least Squares (ALS) 
+* Alternating Least Squares (ALS)
 
 # 4 uniqueness of low-rank tensor decomposition 9
 
@@ -106,7 +106,7 @@ connections with rank decomposition
 * In addition to basic alternating optimization strategies
   * gradient descent, line search, Gauss-Newton, alternating direction method
     of multipliers, and stochastic gradient approaches. The next topic is
-* statistical performance analysis, focusing on the widely-used 
+* statistical performance analysis, focusing on the widely-used
   Cramér-Rao bound and its efficient numerical computation
 
 # 8 Cramér-Rao bound 21
@@ -142,7 +142,7 @@ connections with rank decomposition
     * includes a library of constraints and regularization penalties and offers
     * jointly factorize dense, sparse, structured and incomplete tensors.  It
       provides special routines for large-scale problems and visualization
-  4. SPLATT http://glaros.dtc.umn.edu/gkhome/splatt/ overview by Smith+ 
+  4. SPLATT http://glaros.dtc.umn.edu/gkhome/splatt/ overview by Smith+
     * a high-performance computing software toolkit for parallel sparse tensor
       factorization
     * memory and operation-efficient algorithms that allows it to compute
@@ -153,11 +153,11 @@ connections with rank decomposition
     Comon+ which includes various algorithms for CPD and employs enhanced
     line search [94]
   * supplementary material
-    * educational “plain-vanilla” programs 
-      (CPD-ALS, MLSVD, ⊥-Tucker-ALS, CPD-GD, CPD-SGD), and 
+    * educational “plain-vanilla” programs
+      (CPD-ALS, MLSVD, ⊥-Tucker-ALS, CPD-GD, CPD-SGD), and
     * demos (multichannel speech separation, and faces tensor compression)
 * opportunities and challenges ahead, we see the need for
-  * more effective and tractable tensor rank detection criteria, and 
+  * more effective and tractable tensor rank detection criteria, and
   * flexible and scalable algorithms that can handle very big datasets while
     offering identifiability, convergence, and parameter RMSE performance
     guarantees – at least under certain reasonable conditions

@@ -18,9 +18,9 @@ lexikai skálák!
 * A közösségiség az egyén / csoporttag más egyénekhez / csoporttagokhoz fűződő
   viszonyának minőségét jellemzi a társakkal való együttműködés és a
   csoportcéloknak való alárendelődés erkölcsi normái szerint (például
-  becsületes, hűséges, barátságos, tisztelettudó). Az 
+  becsületes, hűséges, barátságos, tisztelettudó). Az
 * ágencia a célkövető viselkedés hatékonysága szempontjából jellemzi az
-  egyént (például céltudatos, hozzáértő, önérvényesítő, sikeres; [2]). 
+  egyént (például céltudatos, hozzáértő, önérvényesítő, sikeres; [2]).
 * dimenziópárokat azonosítottak, amelyek a közösségiség és az ágencia
   dimenzióinak feleltethetők meg (barátságosság/erkölcsösség és kompetencia
   [3,7,27,28]; társas hatékonyság és intellektuális hatékonyság [20]; társas
@@ -46,7 +46,7 @@ lexikai skálák!
 # Bibliography
 
 13. László, J., Csertő, I., Fülöp, É., Ferenczhalmy, R., Hargitai, R., Lendvai,
-    P., Péley, B., Pólya, T., Szalai, K., Vincze, O., Ehmann, B.: 
-  Narrative Language as an Expression of Individual and Group Identity: 
-    The Narrative Categorical Content Analysis.  
+    P., Péley, B., Pólya, T., Szalai, K., Vincze, O., Ehmann, B.:
+  Narrative Language as an Expression of Individual and Group Identity:
+    The Narrative Categorical Content Analysis.
   SAGE Open 3/2 (2013) 1–12

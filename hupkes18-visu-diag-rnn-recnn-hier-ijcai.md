@@ -1,13 +1,13 @@
-Visualisation and 'Diagnostic Classifiers' Reveal 
+Visualisation and 'Diagnostic Classifiers' Reveal
   how Recurrent and Recursive Neural Networks Process Hierarchical Structure
 Dieuwke Hupkes, Willem Zuidema
 IJCAI 2018
 
 * we define the artificial task of processing nested arithmetic expressions, and
 * simple recurrent networks cannot find a generalising solution to this task,
-* gated recurrent neural networks perform surprisingly well: 
+* gated recurrent neural networks perform surprisingly well:
   predict the outcome of the arithmetic expressions with high accuracy, although
-  performance deteriorates somewhat with increasing length. 
+  performance deteriorates somewhat with increasing length.
 * diagnostic classification: simple neural classifiers are used to test
   sequences of predictions about features of the hidden state representations at
   each time step

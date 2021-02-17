@@ -11,8 +11,8 @@ Obituary Charles J. Fillmore
   * different ways of expressing the object and recipient of transfer in
     sentences like “He gave a book to me” and “He gave me a book” (Fillmore
     1962, 1965), a phenomenon that became known as dative movement.  He then
-    expanded to ... how the participants in an event are expressed
-    syntactically, as in [causative alternations] about an event of opening
+    expanded to how the participants in an event are expressed
+    syntactically, as in causative alternations about an event of opening
 * terminology
   * Following Tesnière’s terminology, Fillmore first referred to these argument
     roles as actants (Fillmore 1966) but
@@ -33,13 +33,13 @@ Obituary Charles J. Fillmore
   * a standard component of natural language understanding in the first edition
     of Winston’s (1977) textbook Artificial Intelligence
 * frames
-  * 1971 ... linguistics faculty at the University of California, Berkeley, and
+  * 1971 linguistics faculty at the University of California, Berkeley, and
   * by the mid-1970s
   * a more general model of semantic representation, one
-  * express[es] the background contexts or perspectives by which a word or a
+  * expresses the background contexts or perspectives by which a word or a
     case role could be defined
   * coming from
-    * [also called frames]
+    * also called frames
       * “the pre-transformationalist view of sentence structure as
       consisting of a frame and a substitution list,”
       * proposed at about the same time by
@@ -47,12 +47,12 @@ Obituary Charles J. Fillmore
     * with other names like
       * scripts (Schank and Abelson 1975) and
         schemata (Bobrow and Norman 1975)
-        (see Tannen [1979] for a comparison)
+        (see Tannen 1979 for a comparison)
       * semantic field theorists and
       * a visit to the Yale AI lab where he took notice of the
         lists of slots and fillers used by early _information extraction
         systems_ like DeJong (1982) and Schank and Abelson (1977)
-  * Fillmore’s version of this new idea [was] more linguistic
+  * Fillmore’s version of this new idea was more linguistic
   * expressed in a series of papers (Fillmore 1975a, 1976, 1977b, 1982, 1985)
   * motivating example was the Commercial Event frame
     (buy, sell, cost, pay, charge)
@@ -62,12 +62,12 @@ Obituary Charles J. Fillmore
   * influenced work
     * in artificial intelligence on knowledge representation like
       KRL (Bobrow and Winograd 1977), and the
-    * perspective-taking aspect of frames [influenced]
+    * perspective-taking aspect of frames influenced
       framing in linguistics and politics (Lakoff 2010)
 * FrameNet
   * when he officially retired from UC Berkeley in 1995 he moved to the
     International Computer Science Institute (ICSI) in Berkeley
-  * [a] project of computational corpus lexicography that
+  * a project of computational corpus lexicography that
   * combined his early ideas on semantic roles with his
     later work on frames and his recent interest in corpus lexicography
   * a large set of frames, each of which consisted of
@@ -78,7 +78,7 @@ Obituary Charles J. Fillmore
     * Corpora were annotated with the evoking words, frames, and frame elements
       (Baker, Fillmore, and Lowe 1998; Fillmore, Johnson, and Petruck 2003;
       Fillmore and Baker 2009)
-  * [in the] next 20 years until [Fillmore's] death, ... especially under the
+  * in the next 20 years until Fillmore's death, especially under the
     direction of Collin Baker
 * PropBank semantic-role-labeled corpus (Palmer, Kingsbury, and Gildea 2005)
   * revival of automatic approaches to semantic role labeling
@@ -86,7 +86,7 @@ Obituary Charles J. Fillmore
     * on PropBank data (Gildea and Palmer 2002, inter alia)
 * plethora of systems for SRL
   * surveys in Palmer, Gildea, and Xue (2010) and Màrquez+ (2008))
-  * appli[cations] to improve the state of the art in tasks across NLP such as
+  * applications to improve the SOTA in tasks across NLP such as
     * question answering
       (Shen and Lapata 2007; Surdeanu, Ciaramita, and Zaragoza 2011) and
     * machine translation (Liu and Gildea 2010; Lo+ 2013)
@@ -96,7 +96,7 @@ Obituary Charles J. Fillmore
     * induce semantic roles from corpora without role annotation (Swier and
       Stevenson 2004; Chambers and Jurafsky 2009, 2011; Lang and Lapata 2014)
 * contributions to syntax and pragmatics, including the influential
-  * Santa Cruz Lectures on _Deixis_ (Fillmore 1975b) and [the] long-standing
+  * Santa Cruz Lectures on _Deixis_ (Fillmore 1975b) and the long-standing
   * Construction Grammar (Fillmore, Kay, and O’Connor 1988)
 * application of linguistics to other disciplines including
   cognitive science, education, and law (Ackerman, Kay, and O’Connor 2014)

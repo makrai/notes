@@ -50,7 +50,7 @@ in Corpus linguistics. An international handbook, 2009
 * An alternative computational method for estimating the growth rate is based
   on the deleted estimation method of Jelinek/Mercer (1985) !
   * Nishimoto (2003) shows that [it obtains] similar productivity rankings
-  * Nishimoto, Eiji (2003), 
+  * Nishimoto, Eiji (2003),
     Measuring and Comparing the Productivity of Mandarin Chinese Suffixes.
     Computational Linguistics and Chinese Language Processing 8, 49⫺76
 * [in] All these productivity measures ... only those words in which a given
@@ -212,7 +212,7 @@ lexical, sublexical, and supralexical probabilities
     likelihood of serving as input for further word formation
     (Krott/Schreuder/Baayen 1999)
 * potential productivity is part of a correlational conspiracy of
-  * low-level perceptual factors 
+  * low-level perceptual factors
     (as evidenced by junctural phonotactics and relative frequency)
   * factors pertaining to morphological processing
     at the levels of form and meaning

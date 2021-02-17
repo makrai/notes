@@ -14,7 +14,7 @@ https://github.com/ymcui/Chinese-BERT-wwm
   * sentiment classification (ChnSentiCorp)
   * sentence pair matching (LCQMC, BQ Corpus)
   * document classification (THUCNews).
-* significant gain. Moreover, 
-* we also examine the effectiveness of the Chinese pre-trained models: 
+* significant gain. Moreover,
+* we also examine the effectiveness of the Chinese pre-trained models:
   BERT, ERNIE, BERT-wwm, BERT-wwm-ext, RoBERTa-wwm-ext, and
   RoBERTa-wwm-ext-large

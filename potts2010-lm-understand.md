@@ -4,7 +4,7 @@ https://chrisgpotts.medium.com/is-it-possible-for-language-models-to-achieve-lan
 
 # Objection: Language models lack semantics
 
-* “Semantics with no treatment of truth conditions is not semantics.” 
+* “Semantics with no treatment of truth conditions is not semantics.”
   * David Lewis: ‘General semantics’ (1970)
   * In saying this, he was criticizing the work of generative semanticists who
     treated semantic interpretation as the task of translating from natural

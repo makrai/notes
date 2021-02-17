@@ -89,13 +89,13 @@ ICML 2017
     (Anandkumar+ 2014b; Kolda and Mayo 2011; Comon+ 2009; Zhang and Golub 2001)
   * guaranteed recovery of non-orthogonal tensors using algorithms for
     orthogonal tensors requires converting the tensor into an orthogonal form
-    (known as whitening) which is 
+    (known as whitening) which is
     * ill conditioned in high dimensions (Le+ 2011; Souloumiac, 2009), and is
     * computationally the most expensive step (Huang+ 2013). Another very
-  * simultaneous diagonalization and higher order SVD 
+  * simultaneous diagonalization and higher order SVD
     (Colombo and Vlassis, 2016; Kuleshov+ 2015; De Lathauwer, 2006) but these
     * not as computationally efficient as alternating minimization
-  * sum-of-squares approach 
+  * sum-of-squares approach
     (Ma+ 2016; Hopkins+ 2016; Tang and Shah, 2015; Ge and Ma, 2015)
     * can decompose highly overcomplete random tensors of rank up to o(d^1.5)
     * these results ... are unfortunately not practical
@@ -111,34 +111,34 @@ ICML 2017
 
 # 3 Notation
 
-* Though all algorithms in the paper extend to asymmetric tensors, 
+* Though all algorithms in the paper extend to asymmetric tensors,
   we prove convergence results under the symmetric setting where A = B = C.
 
 # 4 The Algorithm: Orthogonalized Alternating Least Squares (OrthALS) 5
 
-* combines the 
-  * computational benefits of standard ALS and the 
-  * provable recovery of the tensor power method, while 
-  * avoiding the difficulties faced by both 
+* combines the
+  * computational benefits of standard ALS and the
+  * provable recovery of the tensor power method, while
+  * avoiding the difficulties faced by both
     when factors have different weights. Orth-ALS is a simple modification of
-* intuition for why the orthogonalization makes sense, let us 
-  * consider the more intuitive matrix factorization problem, where the 
-    goal is to compute the eigenvectors of a matrix.  
+* intuition for why the orthogonalization makes sense, let us
+  * consider the more intuitive matrix factorization problem, where the
+    goal is to compute the eigenvectors of a matrix.
   * Subspace iteration is a straightforward extension of the matrix power
-    method to recover all eigenvectors at once. In subspace iteration, 
-  * the matrix of eigenvector estimates is orthogonalized 
-    before each power method step ..., because 
-    otherwise all the vectors would converge to the dominant eigenvector. 
+    method to recover all eigenvectors at once. In subspace iteration,
+  * the matrix of eigenvector estimates is orthogonalized
+    before each power method step ..., because
+    otherwise all the vectors would converge to the dominant eigenvector.
 * For the case of tensors, the vectors would not all necessarily converge to
   the dominant factor if the initialization is good, but with high probability
   [many factors driven] towards the larger weight factors.  The
   orthogonalization step is a natural modification which forces the estimates
   to converge to different factors, even if some factors are much larger than
-  the others.  It is worth stressing that the orthogonalization step 
+  the others.  It is worth stressing that the orthogonalization step
 * does not force the final recovered factors to be orthogonal (because the ALS
   step follows the orthogonalization step) and in general the factors
   * essential for accurately recovering the factors
-* orthogonalization step does not add to the computational cost 
+* orthogonalization step does not add to the computational cost
   as the least squares updates in step 4-6 of Algorithm 1 involve an extra
   pseudoinverse term for standard ALS, which evaluates to identity for Orth-ALS
   and does not have to be computed. The cost of [both] is O(k 2 d),
@@ -146,13 +146,13 @@ ICML 2017
 ### Variants of Orthogonalized ALS
 
 * Hybrid-ALS
-  * Particularly for low-dimensional settings, in practice we found that 
+  * Particularly for low-dimensional settings, in practice we found that
     it is useful to carry out orthogonalization for a few steps and then
-    continue with standard ALS updates until convergence 
+    continue with standard ALS updates until convergence
   * Our advice to practitioners would be try Hybrid-ALS first before the fully
-    orthogonalized Orth-ALS, and then 
+    orthogonalized Orth-ALS, and then
     tune the number of steps for which orthogonalization takes place
-    
+
 ## 4.1 Performance Guarantees
 
 # 5 Experiments 7
@@ -213,7 +213,7 @@ ICML 2017
 
 # 7 Conclusion 18
 
-* future work would be 
+* future work would be
   * other tensor-related tasks, such as tensor completion
   * more application-specific domains, such as natural language processing
 

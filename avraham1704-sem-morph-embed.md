@@ -16,7 +16,7 @@ The Interplay of Semantics and Morphology in Word Embeddings
   * per-morpheme representations rather than just per-word ones, and compose
 * The works differ in
   * the way they acquire morphological knowledge (from using
-    * linguistically derived morphological analyzers on one end, to 
+    * linguistically derived morphological analyzers on one end, to
     * substrings ... concatenative ... morphology, on the other) and in the
   * model form
     * cDSMs (Lazaridou+ 2013)

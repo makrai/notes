@@ -7,8 +7,8 @@
   ...How Recurrent and Recursive Neural Networks Process Hierarchical Structure
   JAIR 2018
 * Allyson Ettinger, Ahmed Elgohary, Philip Resnik
-  Probing for semantic evidence of composition 
-    by means of simple classification tasks 
+  Probing for semantic evidence of composition
+    by means of simple classification tasks
   RepEval@ACL 2016
 * Yonatan Belinkov, James Glass
   Analyzing Hidden Representations in End-to-End … Speech
@@ -33,7 +33,7 @@
   2018
 * A Kuncoro
   LSTMs can learn syntax-sensitive dependencies well,
-  But Modeling Structure Makes Them Better 
+  But Modeling Structure Makes Them Better
   ACL 2018
 * Targeted Syntactic Evaluation of Language Models
   R Marvin
@@ -42,10 +42,10 @@
   RNNs as psycholinguistic subjects: Syntactic state and grammatical dependency
   2018
 * Can LSTM Learn to Capture Agreement? The Case of Basque
-  Shauli Ravfogel, Francis M. Tyers, Yoav Goldberg 
+  Shauli Ravfogel, Francis M. Tyers, Yoav Goldberg
   EMNLP 2018
 
-# Q3: how did a given model reach a decision?  
+# Q3: how did a given model reach a decision?
   how is the architecture capturing the phenomena?
 
 * Representation of linguistic form and function in recurrent neural networks
@@ -61,7 +61,7 @@
 # Q4: when do models fail? what can't they do? 56
 
 * Breaking NLI Systems with Sentences that Require Simple Lexical Inferences
-  Max Glockner, Vered Shwartz, Yoav Goldberg 
+  Max Glockner, Vered Shwartz, Yoav Goldberg
   2018 ACL
 
 # Q5: What is the representation power of RNNs? 78
@@ -72,7 +72,7 @@
 * Rational Recurrences
   H Peng
   2018
-* On the Practical Computational Power of Finite Precision RNNs for language rc 
+* On the Practical Computational Power of Finite Precision RNNs for language rc
   G Weiss, Goldberg, Yahav
   2018
 

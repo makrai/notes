@@ -147,7 +147,7 @@ https://github.com/pdufter/minimult
 
 * Given our small training corpus and the small number of languages, we argue
   that BERT-base is overparameterized
-* For the overparameterized model we use learning rate 1e-4 
+* For the overparameterized model we use learning rate 1e-4
   (following Devlin+ (2019))
 
 #### Shared Special Tokens: shift-special
@@ -298,9 +298,9 @@ https://github.com/pdufter/minimult
   the pretrained models on English XNLI. Then the model is evaluated on English.
   In addition, we do a zero-shot evaluation on German and Hindi
 * Table 3. en: accuracy is significantly lower but reasonable on English (.75)
-  * high multilinguality with 0-shot accuracies .57 and .45. 
+  * high multilinguality with 0-shot accuracies .57 and .45.
   * Inverting the order of German has little effect on HIN, but DEU drops
-    significantly. Our architectural modifications (8) harm both HIN and DEU 
+    significantly. Our architectural modifications (8) harm both HIN and DEU
   * knn-replace model exhibits the strongest degree of multilinguality, boosting
     the 0-shot accuracy in DEU / HIN by 4% / 9%. Note
 * to accommodate noise in the real world data, we randomly replace with one of
@@ -315,20 +315,20 @@ https://github.com/pdufter/minimult
     multilinguality
   * Artetxe+ (2020) show that neither a shared vocabulary nor joint pretraining is
     essential for multilinguality
-  * K et al. (2020) extensively study reasons for multilinguality 
+  * K et al. (2020) extensively study reasons for multilinguality
     (e.g., researching depth, number of parameters and attention heads). They
-    * depth is essential. They also investigate 
+    * depth is essential. They also investigate
     * language properties: "structural similarity" across languages is
       important, without further defining this term
-  * Conneau+ (2020b) find that a 
-    * shared vocabulary is not required. They find that 
+  * Conneau+ (2020b) find that a
+    * shared vocabulary is not required. They find that
     * shared parameters in the top layers are required for multilinguality.
     * different monolingual BERT models exhibit a similar structure and thus
-      * mBERT somehow aligns those isomorphic spaces. They 
-    * investigate having 
+      * mBERT somehow aligns those isomorphic spaces. They
+    * investigate having
       separate embedding look-ups per language (including position embeddings
-      and special tokens) and 
-      a variant of avoiding cross-language replacements.  
+      and special tokens) and
+      a variant of avoiding cross-language replacements.
     * Their method “extra anchors” yields a higher degree of multilinguality
 * creating better multilingual models
   * Mulcaire+ (2019) proposed a method to learn multilingual contextual

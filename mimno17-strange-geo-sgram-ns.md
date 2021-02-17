@@ -31,7 +31,7 @@ EMNLP 2017 (best paper honorable mention)
 * Previous work has analyzed what the algorithm might be doing in theory,
   * as an approximation to a matrix factorization (Levy and Goldberg, 2014)
   * empirical effects of ... arbitrary-seeming algorithmic choices (Levy+ 15)
-    * Omer Levy, Yoav Goldberg, and Ido Dagan. TACL 2015. 
+    * Omer Levy, Yoav Goldberg, and Ido Dagan. TACL 2015.
       Improving ... similarity with lessons learned from word embeddings
 * we find that the SGNS objective results in
   * vectors that are narrowly clustered in a single orthant
@@ -49,23 +49,23 @@ EMNLP 2017 (best paper honorable mention)
     both with K = 50 dim, a vocabulary of ≈ 70k ..., and context window 5
   * then evaluate sensitivity to negative samples, window size, and dimension
 * Embeddings are sensitive to word frequency (Hellrich and Hahn, 2016)
-* Interactions between infrequent terms are rare, 
+* Interactions between infrequent terms are rare,
   no matter how large the corpus
-* We define four categories of words by ranked frequency: the 
-  top 100 words (ultra-high frequency), the 
-  100–500th ranked words (high frequency), 
-  the 500–5000th ranked words (moderate frequency) and the 
+* We define four categories of words by ranked frequency: the
+  top 100 words (ultra-high frequency), the
+  100–500th ranked words (high frequency),
+  the 500–5000th ranked words (moderate frequency) and the
   remaining (low frequency) words
 
 ## SGNS vectors are arranged along a primary axis. Our first observation is
 
 * All vectors have a large, positive inner product with the mean, indicating
-  * with the exception of the rare words, 
+  * with the exception of the rare words,
     which have slightly less positive inner products
   * the vectors trained by GloVe show a clear relationship with word frequency,
     with low-frequency words opposing the frequency-balanced mean vector
-* After normalizing 
-  * SGNS vectors to length 1.0, 
+* After normalizing
+  * SGNS vectors to length 1.0,
   the lowest and highest frequency words are most similar to the mean vector,
   with the moderate-frequency words showing the greatest deviation.
   * Normalization does not change the relative order for GloVe vectors.
@@ -78,18 +78,18 @@ EMNLP 2017 (best paper honorable mention)
 
 ## Positive and negative weights come to equilibrium. Eq. 1 balances two
 
-## Effect of window size 
+## Effect of window size
 
 * Both SGNS and GloVe operate over word co-occurrences within a sliding window
 * window size parameter has an effect on the semantics of vectors, so it is
-* each pair is weighted 
-  * linearly by token distance in SGNS and 
+* each pair is weighted
+  * linearly by token distance in SGNS and
   * by 1/distance in GloVe. Figure 7 shows average inner products for each
     frequency with the global mean vector for 10 trials each at window size 5,
-    10, 15, 20 with K = 50. 
-* Increasing window size leads to 
+    10, 15, 20 with K = 50.
+* Increasing window size leads to
   * greater divergence between high~ and low-frequency words for word and
-    context vectors, but does not change their pattern. 
+    context vectors, but does not change their pattern.
   * GloVe results are similarly unchanged.
 
 ## Effect of vector [dimensionality]
@@ -105,5 +105,5 @@ EMNLP 2017 (best paper honorable mention)
     performance relative to algorithms that do not have this property
 * measuring the interplay between positive and negative objectives
   may provide insight into algorithmic choices that are now poorly understood,
-  * reducing the occurrence of frequent words in the corpus and the 
+  * reducing the occurrence of frequent words in the corpus and the
   * sampling distribution of negative examples

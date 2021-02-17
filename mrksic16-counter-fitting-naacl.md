@@ -20,12 +20,12 @@ tool and word vectors are available at github.com/nmrksic/counter-fitting
 * useful for MT (Zou+ 2013) and dependency parsing (Bansal+ 2014)
 * coalesce semantic similarity and conceptual association (Hill+ 2014b)
 * Furthermore, even methods that can distinguish similarity from association
-  (e.g., based on syntactic co-occurrences) will generally 
+  (e.g., based on syntactic co-occurrences) will generally
   fail to tell synonyms from antonyms (Mohammad+ 2008)
 * similarity and antonymy can be application or domain-specific
-  * e.g. for the dialogue state tracking task (DST), restaurant domain: 
+  * e.g. for the dialogue state tracking task (DST), restaurant domain:
     detect whether the user wants a cheap or expensive restaurant
-* counter-fitting, is a lightweight post-processing procedure 
+* counter-fitting, is a lightweight post-processing procedure
   in the spirit of retrofitting (Faruqui+ 2015)
 
 # 2 Related Work

@@ -148,11 +148,11 @@ Dmitrii Y. Manin
 
 # 4. Zipfian coverings and avoidance of excessive synonymy 12
 
-* narrowing is typically a result of competition between words 
+* narrowing is typically a result of competition between words
   (except for the relatively rare cases where [ the ] denoted disappears).
   e.g. _hlaf_ [OE `bread`] lost its generic sense only because it was supplanted
   by the expanding _bread_
-  * [like] the “blocking” effect (Briscoe, 2006) where a 
+  * [like] the “blocking” effect (Briscoe, 2006) where a
     * regular word derivation, such as _stealer_ from _steal_, is preempted
 * senses of a polysemous word as subsets of its entire meaning
 * polysemy

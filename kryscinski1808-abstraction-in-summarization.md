@@ -9,7 +9,7 @@ arXiv:1808.07913 [cs.CL]
   * we decompose the decoder into a
     * contextual network that retrieves relevant parts of the source document,
     * pretrained language model: language generation
-* we propose a novelty metric that is 
+* we propose a novelty metric that is
   optimized through policy learning to encourage the generation of novel phras
 * results comparable to SOTA models, as determined by ROUGE scores and human
   * while achieving a significantly higher level of abstraction

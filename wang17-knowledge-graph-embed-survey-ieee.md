@@ -30,11 +30,11 @@ IEEE Transactions on Knowledge and Data Engineering (Vol: 29, Issue: 12) 2017
   * leverage other types of information
     entity types [25, 26], relation paths [27, 28, 29],
     textual descriptions [30, 31, 32, 33], and even logical rules [23, 34, 35]
-* survey of statistical relational learning methods on KGs: Nickel+ [36] 
+* survey of statistical relational learning methods on KGs: Nickel+ [36]
   including embedding techniques, path ranking algorithms [37, 38, 39], and
   Markov logic networks [40, 41, 42]
   36. M. Nickel, K. Murphy, V. Tresp, and E. Gabrilovich
-    A review of relational machine learning for knowledge graphs,” 
+    A review of relational machine learning for knowledge graphs,”
     Proc. IEEE, vol. 104, no. 1, pp. 11–33, 2016.
   * In contrast to their work, we
     * focus specifically on KG embedding, and make a systematic review of

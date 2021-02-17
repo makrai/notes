@@ -4,10 +4,10 @@ repl4nlp 2016
 
 # Abstract
 
-* a joint model for performing 
+* a joint model for performing
   * unsupervised morphological analysis on words, and learning a
-  * character-level composition function from morphemes to word embeddings. 
-* Our model 
+  * character-level composition function from morphemes to word embeddings.
+* Our model
   * weights each segment according to its ability to predict context words. Our
   * comparable to dedicated morphological analyzers at the task of [segmentatn]
   * better than word-based embedding models at the task of syntactic analogy

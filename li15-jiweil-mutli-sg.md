@@ -91,7 +91,7 @@ Pr(t_w = t) ∝
   γP (w|d new ) if t is new
 ```
 
-where 
+where
   * `N_t` denotes the number of customers already sitting at table t
     * useful “rich get richer” property
   * `P(w|d_t )`: probability of assigning the current data point to cluster `d_t`
@@ -108,7 +108,7 @@ where
 # 4 Obtaining Word Representations for NLU tasks p4
 
 * decide sense labels for tokens in context
-  * inference procedure for sense labels where 
+  * inference procedure for sense labels where
     * all global word embeddings and sense-specific embeddings are kept fixed
 * Greedy Search
   * Assign each token the locally optimum sense label and represent the current

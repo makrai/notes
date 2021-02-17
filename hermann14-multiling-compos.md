@@ -15,8 +15,8 @@ sentence aligned text
   * maintaining sufficient distance between those of dissimilar sentences
 * do not rely on word alignments or any syntactic information
 * learn semantic representations at the document level, too
-* We 
-  * evaluate these models on 
+* We
+  * evaluate these models on
     two cross-lingual document classification tasks
     * outperforming the prior state of the art
   * capture semantic relationships across languages without parallel data
@@ -30,11 +30,11 @@ sentence aligned text
   * classification results on a massively multilingual corpus
     * which we derive from the TED corpus (Cettolo+ 2012)
     * [good] results on this task, in comparison with ... strong baselines,
-* multilingual objective function that uses a 
+* multilingual objective function that uses a
   noise-contrastive update between semantic representations of different langs
-* we use a compositional vector model (CVM, henceforth) to compute 
+* we use a compositional vector model (CVM, henceforth) to compute
   semantic representations of sentences and documents
-  (Clark and Pulman, 2007; Mitchell and Lapata, 2008; 
+  (Clark and Pulman, 2007; Mitchell and Lapata, 2008;
   Baroni and Zamparelli, 2010; Grefenstette and Sadrzadeh, 2011; Socher+ 2012;
   Hermann and Blunsom, 2013)
 * we only require sentence-aligned parallel data
@@ -55,7 +55,7 @@ sentence aligned text
 * bilingual (and trivially multilingual) energy
 * l2 between parallel sentences
 * noise-constrastive large-margin update
-  * ensures that the representations of non-aligned sentences 
+  * ensures that the representations of non-aligned sentences
     observe a certain margin from each other
 
 ## 3.1 Two Composition Models

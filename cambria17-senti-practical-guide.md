@@ -1,6 +1,6 @@
 E Cambria, D Das, S Bandyopadhyay, A Feraco
 A practical guide to sentiment analysis
-2017 Springer [BOOK] 
+2017 Springer [BOOK]
 
 # 1 state of the art of affective computing and sentiment analysis research
 

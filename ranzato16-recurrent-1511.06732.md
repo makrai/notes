@@ -8,14 +8,14 @@ Marc’Aurelio Ranzato, Sumit Chopra, Michael Auli, Wojciech Zaremba
 * It is essential that interactive AI systems are capable of generating text
   (Reiter & Dale, 2000)
 * RNNs (Mikolov+ 2010) when used to generate text suffer from two major drawbaks
-  1. trained to predict the next word given the previous ground truth words 
+  1. trained to predict the next word given the previous ground truth words
     * hE at test time, the resulting models are used to generate an entire
       sequence by predicting one word at a time, and by feeding the generated
       word back as input at the next time step
   2. training loss vs eval
     * the loss function is at the word level. A popular choice is cross-entropy
     * evaluated using discrete metrics, e.g. BLEU (Papineni+ 2002)
-    * Training these models to directly optimize metrics like BLEU 
+    * Training these models to directly optimize metrics like BLEU
       * hard because
         * these are not differentiable (Rosti+ 2011), and
         * combinatorial optimization is required

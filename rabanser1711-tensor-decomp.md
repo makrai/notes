@@ -112,7 +112,7 @@ az n-edik mód mentén való mxszorzat
   * might take several steps to converge and
   * might also not converge to a global optimum
 
-### 4.1.3 Tensor Power Method 
+### 4.1.3 Tensor Power Method
 * [for] the special case of all identical factor matrices and if the `a_r`s are
   all orthogonal
 
@@ -121,7 +121,7 @@ az n-edik mód mentén való mxszorzat
 * Kruskal rank [of a matrix M] corresponds to
   the maximum number k such that any k columns are linearly
 
-### 4.1.5 Tensor Rank Peculiarities 
+### 4.1.5 Tensor Rank Peculiarities
 * to determine the rank of a tensor ... the problem is NP-hard [12]
 * [there are tensors that] can be approximated arbitrarily well by a lower-rank
   factorization[,] called degenerate
@@ -132,7 +132,7 @@ az n-edik mód mentén való mxszorzat
 
 ## 5.1 Temporal Data
 
-* Whenever some kind of relationship can be represented as a matrix 
+* Whenever some kind of relationship can be represented as a matrix
   (e.g. user preferences in a recommender system, adjacency matrix of a graph),
   tensors provide a straightforward way to model the temporal component
 * patterns [40], predicting evolution [9] and ... anomalies [31]
@@ -196,8 +196,8 @@ az n-edik mód mentén való mxszorzat
 
 * explain words in a document through hidden topics (see Figure 11)
   in order to classify documents or to summarize them
-* The most general treatment ... is latent Dirichlet allocation (LDA), 
-  where the probability distribution over the latent variable h is 
+* The most general treatment ... is latent Dirichlet allocation (LDA),
+  where the probability distribution over the latent variable h is
   given by the Dirichlet distribution
 
 ## 6.3 Algorithm Overview
@@ -223,8 +223,8 @@ finding an eigendecomposition
 
 # 7 Available software libraries
 
-* a few popular tensor libraries ... provide a more optimized way of 
-  storing and treating tensors, as well as 
+* a few popular tensor libraries ... provide a more optimized way of
+  storing and treating tensors, as well as
   techniques for efficiently decomposing them using the algorithms ... in Sec 4
 * most libraries are still only available for [e.g.] Matlab
 * Table 1

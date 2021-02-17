@@ -28,7 +28,7 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
 
 * contextual string embeddings (Akbik+ 2018)
   * a character-level contextualized embeddings approach
-  * from pre-trained character-level language models, 
+  * from pre-trained character-level language models,
     extract hidden states at the beginning and end character of each word to
     produce embeddings for any string of characters in a sentential context
   * SOTA results when utilized in sequence labeling tasks such as NER or PoS
@@ -44,7 +44,7 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
 
 ## Pooled Contextual Embeddings
 
-* entities are normally only used in underspecified contexts if 
+* entities are normally only used in underspecified contexts if
   they are expected to be known to the reader
   * i.e. either more clearly introduced in an earlier sentence, or
     part of general in-domain knowledge
@@ -60,5 +60,5 @@ Alan Akbik, Tanja Bergmann, Roland Vollgraf
 
 * weighted poolings of previous mentions
   * in our pooling, all previous instances of a word are equally important
-  * more recent mentions of a word such as 
+  * more recent mentions of a word such as
     words within the same document or news cycle may be more important

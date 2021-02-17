@@ -1,4 +1,4 @@
-P Nakov, A Ritter, S Rosenthal, F Sebastiani… - 
+P Nakov, A Ritter, S Rosenthal, F Sebastiani… -
 SemEval-2016 task 4: Sentiment analysis in Twitter
 2016 SemEval
 

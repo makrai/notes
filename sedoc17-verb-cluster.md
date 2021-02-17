@@ -24,7 +24,7 @@ arXiv preprint arXiv:1708.00416
   yields better verb clusters. Verbs are ’disambiguated’
 * categorization is not limited to verbs: arguments
 * [eval:] predicting attributes of Facebook messages and Tweets
-  * predicting sarcasm, sentiment, and 
+  * predicting sarcasm, sentiment, and
     * locus of control: whether the author feels in control or being controlled
       * a relatively novel task
 * contributions
@@ -67,7 +67,7 @@ arXiv preprint arXiv:1708.00416
     semantic resources (Iacobacci+ 2015)
     * requires large amounts of sense-annotated corpora
 * Since we have only data in the form of (subject, verb, object) triples
-  extracted from ClueWeb, the limited context also means that 
+  extracted from ClueWeb, the limited context also means that
   traditional word embedding models or word sense disambiguation systems may not
   learn well on the data (Melamud+ 2016)
 * verb selectional preferences are useful for verb clustering

@@ -23,7 +23,7 @@ ICLR 2020 arXiv:2001.04451 [cs.LG]
 * If our memory use was only per-layer, then we should fairly easily fit a large
   Transformer even on sequences of length 64K on a single accelerator
   * whole corpus used to train BERT only requires 17GB to store
-  * Why is it then that we cannot even fine-tune these models on single machins?  
+  * Why is it then that we cannot even fine-tune these models on single machins?
 * major sources of memory use in the Transformer:
   Memory in a model with N layers is N times larger than in a single-layer
 * activations need to be stored for back-propagation
@@ -40,7 +40,7 @@ ICLR 2020 arXiv:2001.04451 [cs.LG]
     numerically identical to the layers used in the Transformer. Applying
   * reversible residuals instead of the standard ones does change the model but
     * negligible effect on training in all configurations
-  * locality-sensitive hashing in attention is a more major change that 
+  * locality-sensitive hashing in attention is a more major change that
     can influence the training dynamics, depending on the number of concurrent
     hashes used. We study this parameter and find a value which is both
     efficient to use and yields results very close to full attention

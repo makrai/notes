@@ -984,7 +984,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     (e.g. lead to, permit, support, reinforce, strike)
 * force-dynamic domain yields a further application of the semantic field
   * beyond the extensions of thematic roles
-* The observed generalizations, particularly in the logical domain, 
+* The observed generalizations, particularly in the logical domain,
   have little to do with the nature of the world out there
 * verbs of logical relation express an abstract form of force-dynamic
   * related to verbs that express pushing things around in space. It is

@@ -10,7 +10,7 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   ditranzitív szerkezeteinek elemzésére és tipológiai jellemzésére. A manysiban
   kétféle ditranzitív szerkezet alternálódása figyelhető meg. Az írás első
   részében definiálom a ditranzitív ige és a ditranzitív szerkezet fogalmát,
-  ezt követően kitérek a ditranzitív igék szemantikai csoportosítására.  
+  ezt követően kitérek a ditranzitív igék szemantikai csoportosítására.
 
 # 2. A ditranzitivitás
 ## 2.1. A ditranzitív ige és a ditranzitív szerkezet tipológiai megközelítésben
@@ -28,18 +28,18 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   construction), ahol a P és R jelölése egyezik (2b), valamint 3) neutrális
   típus (double object construction), ahol mind T, mind R azonos módon jelenik
   meg, mint a P (2c). 4 (Malchukov– Haspelmath–Comrie 2010: 2–8) Vö.: (2)
-  * Mari pénzt adott a lányának.  
+  * Mari pénzt adott a lányának.
     T = P ( ≠ R) (IOC: indirect object construction)
-  * Mari teával kínálta a vendégeket.  
+  * Mari teával kínálta a vendégeket.
     R = P (≠ T) (SOC: secondary object construction)
-  * Mary gave John a book.  
+  * Mary gave John a book.
     R = T = P (DOC: double object construction)
 * Az alternálódás jelenségét illetően meg kell különböztetnünk az ún.
   szerkezeti alternációt (alternation) és a lexikai hasadást (split). Az
   * előbbin azt értjük, hogy egy nyelvben ugyanaz az ige többféle ditranzitív
   szerkezetben is szerepelhet alapvetően ugyanolyan jelentéssel, bár
   pragmatikai, esetleg kisebb szemantikai eltérések lehetségesek a szerkezetek
-  között. A 
+  között. A
   * lexikai hasadás esetén pedig azt látjuk, hogy egy adott ige
   határozza meg a használandó szerkezetet, s a split oka általában az adott ige
   szemantikájában keresendő.
@@ -70,16 +70,16 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
     élet* telen, szemben a bemutat tárgyával, mely tipikusan élő).
 * szakirodalmak ismereteim szerint nem közölnek olyan szemantikai alapú
   csoportosítást, melyet kimerítőnek és egységesen alkalmazottnak
-  tekinthetnénk. Az irodalomban megjelenő legáltalánosabb csoportok a 
+  tekinthetnénk. Az irodalomban megjelenő legáltalánosabb csoportok a
   * [nálunk transzfer]
-    * tipikus transzfer igék (pl. ad, elad, visz), az 
-    * okozott mozgás igéi (pl.  küld, postáz), az ún. 
-    * ballisztikus igék (dob, gurít, hajít), a 
+    * tipikus transzfer igék (pl. ad, elad, visz), az
+    * okozott mozgás igéi (pl.  küld, postáz), az ún.
+    * ballisztikus igék (dob, gurít, hajít), a
   * létrehozás igéi jellemzően Beneficienssel (pl. épít, készít, főz), a
   * kommunikációs igék (pl. mond, mesél, énekel), és az általában
   * instrumentálisz „stratégiát” követő igék (pl. etet, ellát, felszerel).
-* Vannak nyelvek, melyekben a ditranzitív igék 
-  * zárt szóosztályt alkotnak kevés számú taggal, s megfigyelhető, hogy 
+* Vannak nyelvek, melyekben a ditranzitív igék
+  * zárt szóosztályt alkotnak kevés számú taggal, s megfigyelhető, hogy
     * e nyelvekben jellemzően ugyanazon jelentésű igék tartoznak a ditranzitív
       igék közé (Malchukov–Haspelmath–Comrie 2010: 50). És vannak nyelvek,
       amelyekben
@@ -94,21 +94,21 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
 
 ## 3.1. A transzfer igék
 
-* alcsoportokba sorolhatók. A transzfer ige kifejezheti a 
+* alcsoportokba sorolhatók. A transzfer ige kifejezheti a
   * birtoklásban történt változást (ad, elad), valamint kiemelheti csupán a T
     helyzetváltozását, nem egyértelműsítve a birtoklás változását (átnyújt,
-    visz). A transzfer igékhez sorolom az ún. 
+    visz). A transzfer igékhez sorolom az ún.
   * okozott mozgás igéit, melyekben a T az A által előidézett cselekvés
     következtében, de nem feltétlenül az A közvetlen cselekvésével (pl.
     adásával) kerül R-hez (küld, postáz, ajánl).  A transzfer igékhez
   * ballisztikus igék csoportját (dob, gurít), és további idetartozó csoportot
   * azok az igék, ahol a cselekvés nem pillanatnyi (dob), hanem folyamatos
-    (nyom). 
-  * A prototipikus ditranzitivitástól (ad ) távolodva 
+    (nyom).
+  * A prototipikus ditranzitivitástól (ad ) távolodva
     * a Recepiens argumentum egyre tágabban értelmezendő, akár Beneficiens,
       Goal, Lokatív thematikus szerepekhez közeli thematikus szerepek jelennek
-      meg, s 
-    * [– ÉLŐ ] jegy is jellemezheti. 
+      meg, s
+    * [– ÉLŐ ] jegy is jellemezheti.
     * ...milyen mértékben jelenik meg a ditranzitív szerkesztésmód.
   * [jelöltség]
   * Nem zárhatjuk ki, hogy a datívuszi R egyértelműsíti a tulajdonlásban
@@ -130,7 +130,7 @@ A manysi ditranzitív igék szintaxisa szemantikai megközelítésből
   ēriɣ ērɣi ’éneket énekel’, mōjt mōjti ’mesét mesél’, potər potərti
   ’történetet mond’, saŋkwəltəp sāŋkwəlti ’szankvaltapon 14 játszik’, jikw
   jikwi ’táncot táncol’, pojk pojki ’könyörgést könyörög, ľuńś ľuńśi ’sírást
-  sír’ stb. Az ilyen szintagmák főképpen a folklórés irodalmi szövegekben 
+  sír’ stb. Az ilyen szintagmák főképpen a folklórés irodalmi szövegekben
   gyakoriak,
 
 ## 3.4. Az instrumentálisz stratégia terjedése

@@ -29,7 +29,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
   * ConceptNet is optimised for making
     practical context-based inferences over real-world texts
     * its knowledge representation is itself semi-structured English
-    * further discussion of [natural semantic meta-language]: 
+    * further discussion of [natural semantic meta-language]:
       Liu and Singh (2004)
   * contextual reasoning
   * k-lines (Minsky 1987)

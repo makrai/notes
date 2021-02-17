@@ -10,7 +10,7 @@ Hervé Cardot (a) and David Degras (b)
   tasks like principal component analysis (PCA). Recursive algorithms that
   update the PCA with each new observation have been studied in various fields
   of research and found wide applications in industrial monitoring, computer
-  vision, astronomy, and latent semantic indexing, among others.  
+  vision, astronomy, and latent semantic indexing, among others.
 * This work provides guidance for selecting an online PCA algorithm in
   practice.  We present the main approaches to online PCA, namely, perturbation
   techniques, incremental methods, and stochastic optimization, and compare
@@ -21,6 +21,6 @@ Hervé Cardot (a) and David Degras (b)
 
 # Intro
 
-* [PCA] has found applications in fields [like] 
+* [PCA] has found applications in fields [like]
   * latent semantic indexing (Zha and Simon, 1999),
 * time complexity

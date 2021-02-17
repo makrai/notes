@@ -8,7 +8,7 @@ mindig csak igen-nem?
 
 * hypernymy and entailment
 
-# 1 Introduction 
+# 1 Introduction
 
 * inference relations between two words (x and y), such as
   * causality (flu → fever)
@@ -16,7 +16,7 @@ mindig csak igen-nem?
   * other notions of lexical entailment
 * methods of recognizing lexical inference
   * unsup
-    * replace cosine similarity with an asymmetric similarity function 
+    * replace cosine similarity with an asymmetric similarity function
       (Weeds and Weir, 2003; Clarke, 2009; Kotlerman+ 2010; Santus+ 2014)
   * sup
     * perform better
@@ -26,7 +26,7 @@ mindig csak igen-nem?
       (Roller+ 2014; Weeds+ 2014; Fu+ 2014)
     * based on contextual features
       (Turney and Mohammad, 2014; Rimell, 2014)
-    * we argue that these supervised methods memorizing 
+    * we argue that these supervised methods memorizing
       ... whether y is a “prototypical hypernym” (i.e. a category)
 
 # 2 Experiment Setup

@@ -7,7 +7,7 @@ Contents p6
 # 1 Introduction
 
 * goal
-  * [static] view: different word senses ... generally associated with 
+  * [static] view: different word senses ... generally associated with
     distinct lexical items
   * issues:
     * the creative use of words in novel contexts
@@ -393,7 +393,7 @@ Contents p6
 * contextual priming and discourse setting ... seems irrelevant [for their
   disambiguation]
 * relating the multiple complement types that verbs select for
-  * _begin_ [is] polysemous in that 
+  * _begin_ [is] polysemous in that
     [it must be able to select for] Verb Phrase, Gerundive Phrase, or NP
 * inchoative/causative alternation _open; break_
   * one sense is actually entailed by the other sense
@@ -1346,7 +1346,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * stage-level predicates as similar in some way to artifacts, and
     * individual predicates as similar to natural kinds
     * as an artifact is defined by virtue of its AGENTIVE quale making
-      reference to [how it comes into being,] 
+      reference to [how it comes into being,]
       a changeable state also makes reference to such an event
 * psych-stage-level predicates angry, nervous, and upset
 * resultatives
@@ -1405,7 +1405,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * Asher and Lascarides (1995) investigates
   * how discourse structure can affect the selection of lexical senses,
   * three components
-  * heuristics for lexical disambiguation: disambiguate words so that 
+  * heuristics for lexical disambiguation: disambiguate words so that
     * discourse incoherence is avoided; and
     * rhetorical connections are reinforced
 * types of sense extension

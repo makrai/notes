@@ -2,7 +2,7 @@ From Paraphrase Database to Compositional Paraphrase Model and Back
 arXiv:submit/1336299 [cs.CL] 26 Aug 2015
 John Wieting, Mohit Bansal, Kevin Gimpel, Karen Livescu, Dan Roth
 
-* We release the new datasets, complete with annotations, as well as our 
+* We release the new datasets, complete with annotations, as well as our
   code and the trained models
 
 # Nem tudom, honnan szedtem ebben a formában, de jó
@@ -88,7 +88,7 @@ John Wieting, Mohit Bansal, Kevin Gimpel, Karen Livescu, Dan Roth
   * When considering both positive and negative examples (“Both”), we see that
     * the RNN excels on the most difficult examples
     (large differences in phrase length and less lexical overlap)
-    * For easier examples, the two fare similarly overall ..., but the 
+    * For easier examples, the two fare similarly overall ..., but the
       RNN does much better on negative examples
     * [i.e.] addition perform[s] well when two paraphrastic phrases have
       high lexical overlap and similar length

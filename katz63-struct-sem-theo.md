@@ -66,7 +66,7 @@ Jerrold J. Katz & Jerry A. Fodor
   1. the full sociophysical environment of the utterance, or
   2. the written or spoken discourse
   * critique of full environment
-    * it would be required that the theory represent all the knowledge 
+    * it would be required that the theory represent all the knowledge
       speakers have about the world
     * Our store sells alligator/horse shoes
     * Joe jumped higher than the Empire State Building/you;
@@ -140,7 +140,7 @@ Jerrold J. Katz & Jerry A. Fodor
     * of women: chaste, virtuous, ...
     * `<...>`
 * (follow conventional dictionary procedure)
-* whether the items are to be words, morphemes, or other units 
+* whether the items are to be words, morphemes, or other units
   * we do not attempt to decide here;
 * no mechanical discovery/decision procedure
 

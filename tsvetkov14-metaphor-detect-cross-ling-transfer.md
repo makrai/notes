@@ -29,7 +29,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
 * approaches
   * manually created linguistic resources (Mason, 2004; Gedigian+ 2006;
     Krishnakumaran and Zhu, 2007; Turney+ 2011; Broadwell+ 2013) and
-  * corpus-based approaches (Birke and Sarkar, 2007; Shutova+ 2013; 
+  * corpus-based approaches (Birke and Sarkar, 2007; Shutova+ 2013;
     Neuman+ 2013; Shutova and Sun, 2013; Hovy+ 2013)
 * We
   * develop a new state-of-the-art English metaphor detection system that
@@ -109,10 +109,10 @@ Metaphor Detection with Cross-Lingual Model Transfer
 * The MRC psycholinguistic database is a large dictionary listing linguistic
   and psycholinguistic attributes obtained experimentally (Wilson, 1988)
   * among other data, [abstractness and] imageability
-* Similarly to Tsvetkov+ (2013), we use a logistic regression classifier 
-  to propagate abstractness and imageability scores from MRC ratings 
+* Similarly to Tsvetkov+ (2013), we use a logistic regression classifier
+  to propagate abstractness and imageability scores from MRC ratings
   to all words for which we have vector space representations
-* We binarize these posteriors into abstract-concrete (or (un)imageable) 
+* We binarize these posteriors into abstract-concrete (or (un)imageable)
   [using] thresholds .8 and .9
 * Supersenses of nouns and verbs
   * A lexical item can belong to several synsets, which are associated with
@@ -171,7 +171,7 @@ We employ 64-dimensional vector-space word representations
        relations with verbs which are not in the TroFi verb list
     * After filtering, there are 953 metaphorical and 656 literal SVO relations
 * In the case of AN relations, we construct and make publicly available a
-  training set containing 
+  training set containing
     * 884 metaphorical AN pairs and 884 pairs with literal meaning. It was
     * collected by two annotators using public resources (collections of
       metaphors on the web)

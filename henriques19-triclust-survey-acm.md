@@ -13,7 +13,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * there still lacks a structured view on the major requirements of triclust
   * desirable forms of homogeneity (including coherency, structure, quality,
     locality, and orthonormality criteria), and algorithmic approaches
-* This work 
+* This work
   * formalizes the triclustering task and its scope
   * taxonomy to categorize the contributions in the field
   * comparison of state-of-the-art triclustering algorithms
@@ -35,7 +35,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
     by decomposing the observed values against knowledge-driven annotations
     (such as gene-sample-term or gene-sample-regulator expression data)
 * social domains, understanding consumerism, web usage, work performance, and
-  social activity can be reliably done 
+  social activity can be reliably done
   using individual-feature-time behavioral data or node-node-time interaction d
 * financial: stock-ratio-time data or society-society-trade data
   (Sim+ 2010a; Mankad and Michailidis 2014; Guigourès+ 2015)
@@ -44,7 +44,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * _object_ is used to indistinctly denote an observation, attribute, or contx
 * Subspace clustering (Zhao and Zaki 2005)
   * groups of biological entities or individuals are often only meaningfully
-    correlated on a specific subset of conditions/records and time points 
+    correlated on a specific subset of conditions/records and time points
 * biclustering (Madeira and Oliveira 2004)
 * triclustering (Zhao and Zaki 2005), real-valued or symbolic
   * aims to discover ... triclusters
@@ -57,7 +57,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * challenges:
   1. Efficiency: triclustering, similar to biclustering, is an NP-hard problem
      (Zhao and Zaki 2005)
-  2. Homogeneity: coherence criteria 
+  2. Homogeneity: coherence criteria
     * in accordance with the target problem and desirable outputs
       (Gutiérrez-Avilés and Rubio-Escudero 2014b)
     * agreement ... has not yet been reached (Amar+ 2015)
@@ -79,7 +79,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
     * homogeneity criteria to capture coherent progression patterns and
     * accommodate meaningful time lags on observations (Xu+ 2009)
   8. Data specificities: the inherent aspects of 3D data
-    * heterogeneous 3D data (data combined from multiple sources) 
+    * heterogeneous 3D data (data combined from multiple sources)
       * source-specific forms of coherence and noise (Supper+ 2007),
     * spatial 3D data: meaningful contiguity and distance criteria
       (Guigourès+ 2015)
@@ -98,8 +98,8 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 # 2 The formal ground on triclustering and peer tasks for 3D data analysis 3
 
 * temporal 3D dataset (also referred as three-way time series)
-* each bicluster B i satisfies specific criteria of 
-  * homogeneity (Henriques+ 2015b) and 
+* each bicluster B i satisfies specific criteria of
+  * homogeneity (Henriques+ 2015b) and
     * constant, multiplicative, additive, and order-preserving homogeneities
   * statistical significance (Henriques and Madeira 2018).
   * In the presence of temporal two-dimensional data, contiguity can be assumed
@@ -108,10 +108,10 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * The homogeneity criterion determines the structure, coherence, and quality
   * the structure is described by the number, size, shape, and position of
     triclusters;
-  * the coherence of a tricluster is defined by the observed 
-    * correlation of values (coherence assumption) and the 
+  * the coherence of a tricluster is defined by the observed
+    * correlation of values (coherence assumption) and the
     * allowed deviation from expectations (coherence strength); and
-  * the quality of a tricluster is defined by the 
+  * the quality of a tricluster is defined by the
     type and amount of tolerated noise.
 * Flexible structures of triclusters are characterized by an arbitrary number
   of (possibly overlapping) triclusters
@@ -136,9 +136,9 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
     describing the target solution (Amar+ 2015)), for example;
   * their scope: whether they are used to assess a single tricluster or the
     overall triclustering solution (Mankad and Michailidis 2014); and
-  * the correlation extent: whether they 
-    1. jointly assess the three dimensions (Sim+ 2010a), 
-    1. concern two dimensions at a time followed by consensus (Greco+ 2010), or 
+  * the correlation extent: whether they
+    1. jointly assess the three dimensions (Sim+ 2010a),
+    1. concern two dimensions at a time followed by consensus (Greco+ 2010), or
     1. target maximal triclusters with (symbolic) patterns (Liu+ 2010).
     * pattern-based merit functions assess the maximality of triclusters with
       well-defined patterns.
@@ -152,28 +152,28 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * mean squared residue (MSR)
                     `a i j k = c + α i + β j + γ k + η i j k`
 * relationships between triclusters
-  * values a i j k can be seen as a sum of the contributions of triclusters 
+  * values a i j k can be seen as a sum of the contributions of triclusters
   * Mankad and Michailidis (2014)
   * real-valued 3D data can be described as a sum of q layers
-* multiple (possibly conflicting) merit funcs 
+* multiple (possibly conflicting) merit funcs
 * [handle] (Gutiérrez-Avilés and Rubio-Escudero 2014b)
-  * imbalance on the number of objects per dimension 
-    (e.g., thousands of genes for dozens of samples and time points 
-  * arbitrarily high overlapping areas (Xu+ 2009) 
+  * imbalance on the number of objects per dimension
+    (e.g., thousands of genes for dozens of samples and time points
+  * arbitrarily high overlapping areas (Xu+ 2009)
 * symbolic 3D data analysis, most 3D merit functions [for binary] (Ignatov+ 15)
-  * function : product of the fraction and number of ones in the tricluster 
+  * function : product of the fraction and number of ones in the tricluster
     to maximize both its density and size.
 * temporal 3D data analysis, a tricluster may show temporal lags on observs
 * similarity metrics to compare time series (Ding+ 08; Gonçalves & Madeira 14)
   * multivariate: Planar mean residue similarity (PMRS) was proposed in Ahmed+
     (2011) to compare two observations (each given by a multivariate time
   * A tricluster [is a subspace with pairs of observations] strongly correlated
-    on a subset of attributes, J, and time points, K: 
+    on a subset of attributes, J, and time points, K:
 * mutual information score to correlate real-valued matrices [with] time lags
-  (Sim+ 2010a). Unlike PRMS, this score 
-  * correlates time points (contexts) instead of observations. 
-* coherent variation of values within a tricluster 
-  
+  (Sim+ 2010a). Unlike PRMS, this score
+  * correlates time points (contexts) instead of observations.
+* coherent variation of values within a tricluster
+
 ### 2D Merit Functions with Consensus
 
 * find subspaces on each slice, then search for consensus across the third dim
@@ -189,31 +189,31 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * frequent closed cube (Ji+ 2006)
   * a pattern is a set of symbols on a subset of objects from one dimension and
     repeated across the subsets of objects from the remaining dimensions. In
-    
+
 ## 2.2 Related Tasks
 
-Variants of the triclustering task can be found in the literature, including 
+Variants of the triclustering task can be found in the literature, including
   1. handle deviant observations, specify alternative criteria of interest, or
   1. peer tasks, such as coclustering or motif discovery, or alternative tasks
   1. generalized formulations to identify subspaces within N -dimensional data
 * triclustering should not be confused with the peer clustering tasks for the
-  unsupervised analysis of 3D data, such as coclustering or motif discovery.  
+  unsupervised analysis of 3D data, such as coclustering or motif discovery.
   * coclustering 3D data aims to partition each dimension
     * the partitions on each dimension optimize some criteria of (dis)sim or
     * the I × J × K subspaces from the intersecting partitions optimize some
       homogeneity criteria
     * requires all data elements to belong to a subspace (exhaustive condition)
-      and to a single subspace only (exclusive condition), thus 
-      limiting the inherent flexibility of the triclustering task 
-      (Schepers+ 2006; Sim+ 2010b) 
+      and to a single subspace only (exclusive condition), thus
+      limiting the inherent flexibility of the triclustering task
+      (Schepers+ 2006; Sim+ 2010b)
   * motif discovery aims to find subspaces (where |J| ≈ |Y|) that are frequent
-    either within an observation or across observations.  
+    either within an observation or across observations.
     * motifs generally span all the attributes and most contributions are only
       able to handle multivariate time series with low m order .
-* Subspace clustering also can be applied on alternative data structures: 
-  1. relational data (Long+ 2006; Banerjee+ 2007; Bekkerman+ 2005; 
-    Gao+ 2006; Chiaravalloti+ 2006; Balasubramanian+ 2016), 
-  1. vertical partitioned data (Alqadah and Bhatnagar 2008), and 
+* Subspace clustering also can be applied on alternative data structures:
+  1. relational data (Long+ 2006; Banerjee+ 2007; Bekkerman+ 2005;
+    Gao+ 2006; Chiaravalloti+ 2006; Balasubramanian+ 2016),
+  1. vertical partitioned data (Alqadah and Bhatnagar 2008), and
   1. time-annotated graphs (Guigourès+ 2015).
 
 # 3 A taxonomy for comprehensive understanding and guided development of algos 3
@@ -230,21 +230,21 @@ Variants of the triclustering task can be found in the literature, including
 
 # 5 Algorithms 19
 
-triclustering algorithms ... can be divided according to 
-  * iterative searches (greedy; Section 5.1) or on 
-    distribution parameter identification (stochastic; Section 5.2) and 
+triclustering algorithms ... can be divided according to
+  * iterative searches (greedy; Section 5.1) or on
+    distribution parameter identification (stochastic; Section 5.2) and
   * whether they are able to offer guarantees of optimality (exhaustive;
-    Section 5.3) or not. Each approach can be 
-* further categorized according to whether the behavior relies on 
-  * biclustering algorithms (Section 5.4), 
-  * pattern mining procedures (Section 5.5), or 
+    Section 5.3) or not. Each approach can be
+* further categorized according to whether the behavior relies on
+  * biclustering algorithms (Section 5.4),
+  * pattern mining procedures (Section 5.5), or
   * evolutionary multiobjective optimization (Section 5.6), among other
 
-* [one] tricluster at a time (Ahmed+ 2011; Waltman+ 2010), a 
-  subset of all triclusters at a time (Amar+ 2015), or 
-  all triclusters at a time (common case). 
-* Finding one or a subset of triclusters at a time: the algorithm [can] either 
-  * shift the focus into new subspaces or 
+* [one] tricluster at a time (Ahmed+ 2011; Waltman+ 2010), a
+  subset of all triclusters at a time (Amar+ 2015), or
+  all triclusters at a time (common case).
+* Finding one or a subset of triclusters at a time: the algorithm [can] either
+  * shift the focus into new subspaces or
   * mask previous discoveries.
 
 * The way homogeneity criteria are pursued further determines the

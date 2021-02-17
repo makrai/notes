@@ -10,9 +10,9 @@ Stephan Oepen, Marco Kuhlmann, Yusuke Miyao, Daniel Zeman, Dan Flickinger, Jan
 * organization
   * we position the problem in comparison to other sub-tasks in computational
     language analysis
-  * target representations used, reflect on 
+  * target representations used, reflect on
     * high-level commonalities and differences between these representations,
-  * task setup, 
+  * task setup,
   * participating systems, and main results.
 
 # 1 Background and Motivation
@@ -52,6 +52,6 @@ Stephan Oepen, Marco Kuhlmann, Yusuke Miyao, Daniel Zeman, Dan Flickinger, Jan
 * ‘semantic parsing’
   * Kate and Wong (2010) define as “the task of mapping natural language
     sentences into complete formal meaning representations which a computer can
-    execute for some domain-specific application.” 
+    execute for some domain-specific application.”
   * In contrast ... SDP target representations aim to be task- and domain-
     independent,

@@ -20,7 +20,7 @@ ICLR, 2018
   * Bengio+ (2003); Mikolov+ (2010); Huang+ (2012) in a neural network LM
   * Mikolov+ (2013); Mnih & Hinton (2007) by log-linear models
   * low-dimensional representation of the cooccurrence statistics
-    * Dhillon+ (2012); Pennington+ (2014); Levy & Goldberg (2014); 
+    * Dhillon+ (2012); Pennington+ (2014); Levy & Goldberg (2014);
       Stratos+ (2015); Arora+ (2016)
 * performance of several of the recent methods is roughly
   similar on a variety of intrinsic and extrinsic evaluation testbeds

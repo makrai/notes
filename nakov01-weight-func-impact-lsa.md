@@ -35,7 +35,7 @@ RANLP, 2001
   * global weight function
     * the trivial G(i)=1
     * l2-normalisation of the rows
-* In the definition of the rest global weight functions the following 
+* In the definition of the rest global weight functions the following
   * notation: gf(i) for the global frequency of term i;
   * GfIdf, is the ratio of the global frequency of a term and the number of
     documents in which it appears:

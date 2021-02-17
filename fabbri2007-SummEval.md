@@ -47,7 +47,7 @@ https://github.com/Yale-LILY/SummEval
   * other text generation metrics
     (Peyrard, 2019; Zhao+ 2019; Zhang+ 2020; Scialom+ 2019; Clark+ 2019)
   * remained the default automatic evaluation metric
-* lack of easy-to-use resources for evaluation, both in the form of 
+* lack of easy-to-use resources for evaluation, both in the form of
   simplified evaluation toolkits and large collections of model outputs
 * how evaluation metrics are evaluated themselves
   * Many of the currently used metrics were developed and assessed using the
@@ -58,7 +58,7 @@ https://github.com/Yale-LILY/SummEval
     putting into question the true performance of those metrics in the new settn
 * We address these gaps in complementary ways:
   * We re-evaluate 12 automatic evaluation metrics
-    * outputs from recent neural summarization models along with 
+    * outputs from recent neural summarization models along with
       expert and crowd-sourced human annotations,
   * We consistently benchmark 23 recent summarization models
   * We release 44 aligned summarization model outputs from 23 papers
@@ -66,7 +66,7 @@ https://github.com/Yale-LILY/SummEval
     * for large-scale comparisons of recent summarization models,
   * We release a toolkit of 12 evaluation metrics with an
     extensible and unified API to promote the reporting of additional metrics
-  * We collect and release expert, as well crowd-sourced, human judgments 
+  * We collect and release expert, as well crowd-sourced, human judgments
     for 16 model outputs on 100 articles over 4 dimensions to further research
 
 # 2 Related Work
@@ -345,10 +345,10 @@ https://github.com/Yale-LILY/SummEval
 
 ### *
 
-* The data collection interface provided judges with the 
+* The data collection interface provided judges with the
   source article and associated summaries grouped in sets of 5
   * Each group of summaries contained the reference summary associated with the
-    source article in order to establish a common point of reference 
+    source article in order to establish a common point of reference
   * Summary grouping and order within groups was randomized for each annotator
   * Judges were asked to rate the summaries on a Likert scale from 1 to 5
     (higher better) along the four mentioned dimensions
@@ -401,7 +401,7 @@ https://github.com/Yale-LILY/SummEval
   * multi-reference setting, using the original reference in the CNN/DailyMail
     and 10 additional summaries coming from Kryściński+ (2019a)
     * without differentiating between abstractive and extractive models,
-      * most metrics did not exhibit large differences 
+      * most metrics did not exhibit large differences
       * correlation tables with a separation by model type in Appendix
   * most metrics have highest correlation within the relevance dimension
     * correlation strength can be classified as either weak or moderate
@@ -418,9 +418,9 @@ https://github.com/Yale-LILY/SummEval
     explicitly, the lexical overlap
   * n-gram novelty and repetitiveness show weak negative correlation with all
     ROUGE-related metrics
-  * Length non-weakly correlated with S^3, which might suggest 
+  * Length non-weakly correlated with S^3, which might suggest
     * S^3 may be biased towards longer summaries
-  * weak correlation of SummaQA with all other evaluated metrics, which 
+  * weak correlation of SummaQA with all other evaluated metrics, which
     calls for an additional investigation
 
 # 6 Model Re-evaluation 9

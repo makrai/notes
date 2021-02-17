@@ -14,7 +14,7 @@ Introduction to Latent Semantic Analysis
   * represents the meaning of a word as a[n] average of the meaning of all the
     passages in which it appears, and the meaning of a passage as`...`
   * assumes that the choice of dimensionality ... can be of great importance,
-  * the resulting dimensions ... are analogous to the semantic features 
+  * the resulting dimensions ... are analogous to the semantic features
     often postulated as the basis of word meaning,
   * [but] establishing concrete relations to mentalisticly interpretable
     features poses daunting technical and conceptual problems

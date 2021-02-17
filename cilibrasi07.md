@@ -48,7 +48,7 @@ The Google Similarity Distance
   * going back to at least (Lesk, 1969)
 * Cimiano (2004); Bagrow (2005) ... use the web and Google counts to identify
   lexicosyntactic patterns or other data
-  * theory, aim, feature analysis, and execution 
+  * theory, aim, feature analysis, and execution
     cannot meaningfully be compared [to ours]
 
 ## C. Outline
@@ -72,17 +72,17 @@ The Google Similarity Distance
 * the returned google counts are inaccurate (Bagrow 2005)
 * especially if one uses the boolean OR operator between search terms
 * AND operator we use is less problematic, and we do not use the OR operator
-* Google apparently estimates the number of hits based on samples, and 
+* Google apparently estimates the number of hits based on samples, and
   the number of indexed pages changes rapidly
-* To compensate for the latter effect, we have inserted a 
+* To compensate for the latter effect, we have inserted a
   normalizing mechanism in the CompLearn software
 * web searches for rare two-word phrases correlated well (Keller, 2003) with
   the frequency found in traditional corpora, as well as with human judgments
 
 # II. Technical preliminaries
 
-* Kolmogorov complexity K(x) 
-  * the length, in bits, of the ultimate compressed version 
+* Kolmogorov complexity K(x)
+  * the length, in bits, of the ultimate compressed version
     from which x can be recovered by a general decompression program
 
 ## A. Normalized Information Distance
@@ -134,7 +134,7 @@ The Google Similarity Distance
 * absolute probabilities ... allow us to define the associated prefix code-word
   lengths (information contents) for both the singletons and the doubletons
   * Google code of length `G` a `g`-ből számolt kódhossz
-  * the shortest expected prefix-code word length 
+  * the shortest expected prefix-code word length
     of the associated Google event x
 
 ## D. The Google Similarity Distance

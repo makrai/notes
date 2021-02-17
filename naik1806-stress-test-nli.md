@@ -51,4 +51,4 @@ stress tests (§4), and observe performance drops across stress tests. We view
 these results as a first step towards robust, fine-grained evaluation of NLI
 systems. To encourage development of models that perform true natural language
 understanding for NLI, we release our code and all stress tests for future
-evaluation 4 
+evaluation 4

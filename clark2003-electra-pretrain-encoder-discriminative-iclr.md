@@ -64,9 +64,9 @@ https://github.com/google-research/electra
 
 # 2 Method 2
 
-* two neural networks, a generator G and a discriminator D. 
+* two neural networks, a generator G and a discriminator D.
 * Each one primarily consists of an encoder (e.g., a Transformer network) that
-* For a given position t, (in our case only positions 
+* For a given position t, (in our case only positions
   * where x t = [MASK]), the generator outputs a probability for generating a
     particular token x t with a softmax layer: X
   * discriminator predicts whether the token x t is “real,” i.e., that it comes
@@ -75,9 +75,9 @@ https://github.com/google-research/electra
   * Typically k = d0.15ne, i.e., 15% of the tokens are masked out.
 * Although similar to the training objective of a GAN, there are several diffs.
   * if the generator happens to generate the correct token, that token is
-    considered “real” instead of “fake”; we found 
+    considered “real” instead of “fake”; we found
     * this formulation to moderately improve results on downstream tasks.  More
-  * generator is trained with maximum likelihood rather than adversarially 
+  * generator is trained with maximum likelihood rather than adversarially
     because it is impossible to backpropagate through sampling from the gen
     * we experimented circumventing this issue by using reinforcement learning
     * see Appendix F), this performed worse than maximum-likelihood training.
@@ -126,29 +126,29 @@ https://github.com/google-research/electra
 
 ## 3.2 Model Extensions
 
-* same model size and training data as BERT-Base.  
+* same model size and training data as BERT-Base.
 
-### Weight Sharing ... between the generator and discriminator. 
+### Weight Sharing ... between the generator and discriminator.
 
 * we only share the embeddings (both the token and positional embeddings) of
 * because the generator is smaller than the discriminator
 * The “input” and “output” token embeddings of the generator are always tied as
   in BERT
 * GLUE scores are 83.6 for no weight tying, 84.3 for tying token embeddings,
-  and 84.4 for tying all weights. 
+  and 84.4 for tying all weights.
 * We hypothesize that ELECTRA benefits from tied token embeddings because
   * discriminator only updates tokens that are present in the input or are
-    sampled by the generator, the 
+    sampled by the generator, the
   * generator’s softmax over the vocabulary densely updates all token embeds.
-* tying all encoder weights caused little improvement 
+* tying all encoder weights caused little improvement
   while [badly] requiring the generator and discriminator to be the same size
 
-### Smaller Generators 
+### Smaller Generators
 
 * If the generator and discriminator are the same size, training ELECTRA would
   take around twice as much compute per step as training only with MLM
-* we make models smaller by decreasing only the layer sizes 
-* We also explore using an extremely simple “unigram” generator 
+* we make models smaller by decreasing only the layer sizes
+* We also explore using an extremely simple “unigram” generator
 * models work best with generators 1/4-1/2 the size of the discriminator. We
   * too strong of a generator may pose a too-challenging task for the discrim,
     preventing it from learning as effectively. In particular, the
@@ -157,7 +157,7 @@ https://github.com/google-research/electra
 ### Training Algorithms
 
 * these did not end up improving results
-* The proposed training objective jointly trains the generator and discrim. 
+* The proposed training objective jointly trains the generator and discrim.
 * We experiment with instead using the following two-stage training procedure:
   1. Train only the generator with `L_MLM` for n steps.
   2. Initialize the weights of the discriminator with the weights of the
@@ -165,17 +165,17 @@ https://github.com/google-research/electra
   * requires having the same size for the generator and discriminator. We found
   * without the weight initialization the discriminator would sometimes fail
     to learn at all beyond the majority class, perhaps because the generator
-    started so far ahead of the discriminator. 
+    started so far ahead of the discriminator.
 * Joint training naturally provides a curriculum for the discriminator where
-  * generator starts off weak but gets better throughout training. 
+  * generator starts off weak but gets better throughout training.
 * We also explored training the generator adversarially as in a GAN, using
   reinforcement learning to accommodate the discrete operations of sampling
   from the generator
   * Although still outperforming BERT, we found adversarial training to
-    underperform maximum-likelihood training. 
+    underperform maximum-likelihood training.
   * Further analysis suggests the gap is caused by two problems with adversari
     1. adversarial generator is simply worse at masked language modeling
-       [compared to] MLE-trained one. We believe the worse accuracy is 
+       [compared to] MLE-trained one. We believe the worse accuracy is
       * mainly due to the poor sample efficiency of reinforcement learning when
         working in the large action space of generating text. Secondly, the
     2. adversarially trained generator produces a low-entropy output
@@ -184,20 +184,20 @@ https://github.com/google-research/electra
 
 ## 3.3 Small Models
 
-* single GPU. Starting with the BERT-Base hyperparameters, we reduced the 
-  * sequence length (from 512 to 128), 
+* single GPU. Starting with the BERT-Base hyperparameters, we reduced the
+  * sequence length (from 512 to 128),
   * batch size (from 256 to 128)
   * hidden dimension size (from 768 to 256)
-  * token embeddings (from 768 to 128). To provide a fair 
-* comparison, we also train a 
+  * token embeddings (from 768 to 128). To provide a fair
+* comparison, we also train a
   * BERT-Small model using the same hyperparameters We train BERT-Small for
-  * two less resource-intensive pre-training methods based on LM: 
+  * two less resource-intensive pre-training methods based on LM:
     ELMo (Peters+ 2018) and GPT (Radford et al., 2018)
-* We also show results for a base-sized ELECTRA model comparable to BERT-Base.  
+* We also show results for a base-sized ELECTRA model comparable to BERT-Base.
 * Appendix D for stronger small-sized and base-sized models trained with more
 * ELECTRA-Small performs remarkably well given its size, achieving a higher
   * GLUE, 5 points higher than a comparable BERT-Small model and even
-    outperforms the much larger GPT model.  ELECTRA-Small is 
+    outperforms the much larger GPT model.  ELECTRA-Small is
   * trained mostly to convergence, with models trained for even less time (as
     little as 6 hours) still achieving reasonable performance.  While small
 * distilled models can also achieve good GLUE scores (Sun+ 2019b; Jiao+ 2019),
@@ -212,20 +212,20 @@ https://github.com/google-research/electra
   * 400k steps (ELECTRA-400K; roughly 1/4 the pre-training compute of RoBERTa)
   * 1.75M steps (ELECTRA-1.75M; similar compute to RoBERTa).  We use a batch
     * comparison is not entirely direct. As a baseline, we trained our own
-* GLUE dev set are shown in Table 2. 
+* GLUE dev set are shown in Table 2.
   * ELECTRA-400K performs comparably to RoBERTa and XLNet. However, it took
     * less than 1/4 of the compute to train ELECTRA-400K as it did to train
   * ELECTRA-1.75M) results in a model that outscores them on most GLUE tasks
     while still requiring less pre-training compute. Surprisingly, our baseline
 * SQuAD are shown in Table 4. Consistent, with the GLUE results, ELECTRA scores
-  * ELECTRA-400K 
+  * ELECTRA-400K
     * outperforms RoBERTa-100k and our BERT baseline, which use similar amounts
     * performs comparably to RoBERTa-500K despite using less than 1/4th of the
   * ELECTRA-1.75M scores higher than previous models on the SQuAD 2.0
-  * ELECTRA-Base also yields strong results, scoring 
-    * substantially better than BERT-Base and XLNet-Base, and even 
-    * surpassing BERT-Large according to most metrics. 
-  * ELECTRA generally performs better at SQuAD 2.0 than 1.1.  
+  * ELECTRA-Base also yields strong results, scoring
+    * substantially better than BERT-Base and XLNet-Base, and even
+    * surpassing BERT-Large according to most metrics.
+  * ELECTRA generally performs better at SQuAD 2.0 than 1.1.
     * Perhaps replaced token detection is particularly transferable to the
       answerability classification of SQuAD 2.0
 

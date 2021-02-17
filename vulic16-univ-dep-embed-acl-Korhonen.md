@@ -4,8 +4,8 @@ ACL 2016
 
 # 1 Intro
 
-* DEPS-based embeddings outperform the less informed BOW-based embeddings 
-  in a variety of similarity tasks 
+* DEPS-based embeddings outperform the less informed BOW-based embeddings
+  in a variety of similarity tasks
   (Bansal+ 2014; Levy and Goldberg, 2014a; Hill+ 2015; Melamud+ 2016)
 * A comparison extending to additional languages is required before any
   cross-lingual generalisations can be drawn

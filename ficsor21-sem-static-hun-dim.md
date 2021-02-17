@@ -32,7 +32,7 @@ We published our work on GitHub for
     (Kenter and de Rijke, 2015)
     * Kenter, T de Rijke, M
       Short text similarity with word embeddings
-      CIKM 2015 ACM International on Conf on Information and Knowledge Managem 
+      CIKM 2015 ACM International on Conf on Information and Knowledge Managem
 * we propose a transformation where we map existing word representations into a
   more interpretable space, where each dimension is supposed to be responsible
   for encoding semantic information from a predefined set of semantic inventory
@@ -63,17 +63,17 @@ We published our work on GitHub for
   * sparse features (Kazama and Tsujii, 2003; Friedman+ 2008; Mairal+ 2009) has
   * useful in several areas of NLP, including POS tagging (Ganchev+ 2010), text
     classification (Yogatama and Smith, 2014) and dependency parsing (Martins+
-    2011).  
+    2011).
     * Berend (2017) also showed that sparse representations can outperform their
   * Murphy+ (2012) proposed Non-Negative Sparse Embedding to learn interpretable
-  * Park+ (2017) showed a rotation based method and 
+  * Park+ (2017) showed a rotation based method and
   * Subramanian+ (2017) suggested an approach using a denoising k-sparse
-    auto-encoder to generate interpretable sparse word representations. 
+    auto-encoder to generate interpretable sparse word representations.
   * Balogh+ (2019) made prior research about the semantic overlap of the
     generated vectors with a human commonsense knowledge-base and found that
     substantial semantic content is captured by the sparse bases
 * Şenel+ (2018): a method to measure the interpretability of the dense GloVe
-  * manipulate and improve the interpretability of a static w repr (Şenel+ 2020) 
+  * manipulate and improve the interpretability of a static w repr (Şenel+ 2020)
 * Hellinger distance: constructing word embeddings Lebret and Collobert (2014)
 
 # 3 Data
@@ -87,10 +87,10 @@ We published our work on GitHub for
   and "crankcase".
 * to extend it to the Hungarian language as well, we used the semantic category
   names from SemCat and defined relations on a category-by-category base
-  manually. We relied on a subset of relations from ConceptNet (Speer+ 2016). 
+  manually. We relied on a subset of relations from ConceptNet (Speer+ 2016).
   * triangulation: To obtain higher quality semantic categories, we introduced
     an intermediate language that works as a validation to reduce undesired
-    translations 
+    translations
   1. generate the semantic categories from the source language by the allowed
     relations and restricted the inclusion of words by the weight of the
     relation.  Semantic category names from SemCat were used as the input
@@ -104,11 +104,11 @@ We published our work on GitHub for
 ## 3.2 Word Embeddings
 
 * 3 embedding spaces trained using the Fasttext algorithm (Bojanowski+ 2017).
-  * Hungarian Fasttext (Fasttext HU) embeddings pre-trained on Wikipedia 3 , 
+  * Hungarian Fasttext (Fasttext HU) embeddings pre-trained on Wikipedia 3 ,
   * its aligned variant 4 (Fasttext Aligned) that was created using the RCSLS
     criteria (Joulin+ 2018) with the objective to bring Hungarian embeddings
-    closer to semantically similar English embeddings and the 
-  * Szeged Word Vectors (Szeged WV; Szántó+ 2017) which is 
+    closer to semantically similar English embeddings and the
+  * Szeged Word Vectors (Szeged WV; Szántó+ 2017) which is
     based on the concatenation of multiple Hungarian corpora.
 
 # 4 Our Approach

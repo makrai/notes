@@ -1,5 +1,5 @@
-MultiLing 2015: Multilingual Summarization 
-  of Single and Multi-Documents, On-line Fora, and Call-center Conversations 
+MultiLing 2015: Multilingual Summarization
+  of Single and Multi-Documents, On-line Fora, and Call-center Conversations
 Giannakopoulos, Kubina, Conroy, Steinberger, Favre, Kabadjov, Kruschwitz, Poesio
 SIGDIAL 2015
 
@@ -7,7 +7,7 @@ SIGDIAL 2015
 
 * MultiLing is a community-driven initiative that pushes the SOTA in Summ by
   * shared task with four tasks of MultiLing: MSS, MMS, OnForumS and CCCS. We
-* MultiLing, that involve many languages (not just English) and/or 
+* MultiLing, that involve many languages (not just English) and/or
   many topical domains (not just news)
 * The aim of MultiLing (Giannakopoulos+ 2015) at SIGdial 2015 is the same:
   provide tasks for single and multi-document multilingual summarization and

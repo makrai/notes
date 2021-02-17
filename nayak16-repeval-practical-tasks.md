@@ -44,7 +44,7 @@ http://www.wordvectors.org
       Li and Roth (2006).  Finally,
   * above the word level, phrase-level natural language inference, derived from
     a dataset presented in Ganitkevitch+ (2013)
-    * Juri Ganitkevitch, Benjamin Van Durme, and Chris Callison-Burch. 
+    * Juri Ganitkevitch, Benjamin Van Durme, and Chris Callison-Burch.
       PPDB: The paraphrase database
       HLT-NAACL 2013
 

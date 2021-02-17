@@ -12,7 +12,7 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
   * _possessive particles_ are postpositions elsewhere, they license a dative
     case marked associate
 
-# \dots a descriptive overview 
+# \dots a descriptive overview
 
 ## Inflecting postpositions and suffixes
 
@@ -63,7 +63,7 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
 \symb{\too}{}      \blank
 \symb{VP}{\ua=\da} \blank
 \begin{tabular}{c}
-\normalsize{{DP}} \\ 
+\normalsize{{DP}} \\
 \footnotesize{\ua OBL OBJ POSS = \da}\\
 \footnotesize{\da CASE $=_c$ DAT}
 \end{tabular}

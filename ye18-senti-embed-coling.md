@@ -63,9 +63,9 @@ COLING 2018
         the semantic graph
     * Antonyms are generally close in vector space, presenting a problem
       * antonym lexicons have been used to fine-tune pre-trained word vectors
-      * Mrkšić+ (2016) present a method called counter-fitting to 
+      * Mrkšić+ (2016) present a method called counter-fitting to
         * inject antonymy and synonymy constraints into word vectors trained
-          with GloVe (Pennington+ 2014) and PARAGRAM (Wieting+ 2015) 
+          with GloVe (Pennington+ 2014) and PARAGRAM (Wieting+ 2015)
         * The adapted word vectors trained with PARAGRAM achieve the
           second-highest SimLex-999 (Hill+ 2015) score
       * Mrkšić+ (2017) extend this work using negative sampling, to force

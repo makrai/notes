@@ -74,7 +74,7 @@ https://turkunlp.org/finbert
 |-----------|-----|-------|-------|-------|
 |News	      |4M	  |68M	  |0.9B	  |6B	    |
 |Discussion	|83M	|351M	  |4.5B	  |28B	  |
-|Crawl	    |11M	|591M	  |8.1B	  |55B	  | 
+|Crawl	    |11M	|591M	  |8.1B	  |55B	  |
 |Total	    |98M	|1~010M	|13.5B	|89B	  |
 
 * We next introduce the
@@ -142,7 +142,7 @@ https://turkunlp.org/finbert
 
 * Finnish ranks 24th by Wikipedia article count, and
   * 25th in Common Crawl by page count. There are thus dozens of languages
-* methods have only few language dependencies, such as the use of 
+* methods have only few language dependencies, such as the use of
   UD parsing results for filtering
 
 # Conclusions

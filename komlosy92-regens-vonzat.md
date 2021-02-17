@@ -1,5 +1,5 @@
-Komlósy András: 
-Régensek és vonzatok. 
+Komlósy András:
+Régensek és vonzatok.
 1992, in Kiefer Ferenc (szerk.) Strukturális magyar nyelvtan I. Mondattan.
 
 ## 5.2. A melléknévi igeneves szerkezetek sajátosságai
@@ -16,20 +16,20 @@ Régensek és vonzatok.
 
 * szintaktikai irányultság
   * csak a hozzájuk mint régensekhez kapcsolódó vonzatstruktúrák s az ahhoz
-    járuló szabad határozók szintaxisát érintő kérdéseket fogjuk vizsgálni. 
+    járuló szabad határozók szintaxisát érintő kérdéseket fogjuk vizsgálni.
   * Nem tartjuk [feladatunknak a] nagyszámú lexikalizálódott egység[et]
-  * szinkrón rendszer szempontjából ezek nem tekintendők igeneveknek, 
+  * szinkrón rendszer szempontjából ezek nem tekintendők igeneveknek,
     * valódi főneveknek és mellékneveknek
-* főnevekként lexikalizálódott igenevek 
-  * (pl. író, daráló, törülköző, dugó, halott, felvágott stb.) 
-* összetételekben elő- vagy utótagokként felfedezhető igenévi formákra 
+* főnevekként lexikalizálódott igenevek
+  * (pl. író, daráló, törülköző, dugó, halott, felvágott stb.)
+* összetételekben elő- vagy utótagokként felfedezhető igenévi formákra
   * (csavarhúzó, falrengető, tolóajtó stb)
-* lexikalizálódott szószerkezetek jelzői előtagjaitól 
-  * (vágott virág, bontott tégla, ünneplő ruha), illetve a 
+* lexikalizálódott szószerkezetek jelzői előtagjaitól
+  * (vágott virág, bontott tégla, ünneplő ruha), illetve a
 * szabadon kombinálható melléknevektől
-  * lexikalizálódottakat 
+  * lexikalizálódottakat
     * (pl. forró, hervadt, fáradt, repedt stb.)
-  * produktívan képezhetőeket 
+  * produktívan képezhetőeket
     * (megdöbbentő, megrázó, zománcozott, aranyozott, nyitott, festett,
       elvághatatlan, befesthetetlen, gyalulatlan, széthordatlan)
 * Az igenevek és a melléknevek közötti különbségek:
@@ -53,7 +53,7 @@ Régensek és vonzatok.
   (b) A jelzett szó elveszti élhangsúlyát
   (c) További jelzők csak a szerkezet egészére vonatkozhatnak, ezért egyrészt
   nem szakíthatják meg a szerkezetet, másrészt nem értelmezhetők kizárólag a
-  jelzett szóra vonatkoztatva: 
+  jelzett szóra vonatkoztatva:
     a. *bontott piszkos tégla
     b. *piszkos, bontott tégla
     c. piszkos bontott tégla
@@ -67,10 +67,10 @@ Régensek és vonzatok.
   a csak tárgyas igékhez járuló képzőket vagy egyáltalán nem veszik fel
   (*vanható, *volható, *vanhatatlan, *volhatatlan, *vanandó, *volandó), vagy az
   ilyen alakok lexikalizáltak, s nem funkcionálnak valódi igenevekként (lehető,
-  lehetetlen, leendő, volt). 
+  lehetetlen, leendő, volt).
 * Nincs -va/-ve képzős határozói igenevük sem (&ast;vanva, &ast;volva, &ast;léve).
 * való, lévő/levő. Ezek a formák (egyéb hasz- nálataik mellett) valódi
-  igenevekként is funkcionálnak ─ de 
+  igenevekként is funkcionálnak ─ de
   * csak olyan szerkeze- tekben, amelyek "tartalmas" (lokális vagy egyéb vonzattal rendelkező)
   * alapjában kopulás (19a), vagy a létezést (19b), birtoklást (19c) jelentő
     van-nal szerkesztett mondatot kellene feltételeznünk, nem léteznek:
@@ -94,7 +94,7 @@ váló -t-vel szembeállítják, az alábbiakban foglalhatjuk össze:
 2. Az igeneves szerkezet folyamatos aspektusú is lehet.
 3. Az igeneves szerkezetben ábrázolt esemény ennek megfelelően:
   (a) lehet egyidejű a főmondati eseménnyel:
-    (28) 
+    (28)
       a. A szomszéd asztalnál szeletelt hagyma Marit is megkönnyeztette.Komlósy
       b. A lázasan keresett szemüveg eközben a zsebemben lapult.
   (b) akkor is kifejezhet folyamatos cselekvést, amikor az általa jelölt
@@ -103,21 +103,21 @@ váló -t-vel szembeállítják, az alábbiakban foglalhatjuk össze:
 * rezultatív -t-t. Jellemzői az előbbivel szembeállítva a következőkben
 foglalhatók össze:
   1. A külső tag kizárólag az alapige alanyának felelhet meg:
-    (32) 
+    (32)
       a. János felemelte a felborult széket.
       b. A bepárásodott ablakon nem láttam át.
   2. Az igeneves szerkezet kötelezően befejezett aspektusú
   3. Ebből adódóan az igeneves szerkezet
     (a) mindig előidejűen értelmezendő:
-      (33) 
+      (33)
         a. *János elkapta a borult széket.
         b. *Az egyre jobban párásodott ablakon egyre nehezebben láttam át.
       (b) mindig befejezett aspektusú:
-        (34) 
+        (34)
           a. *Az imént még borult szék visszabillent a helyére.
           b. *Az órákon át párásodott ablak végre kitisztult.
   4. Mindig rezultatív értelmű, azaz az alany állapotváltozását fejezi ki
-    (35) 
+    (35)
       a. *A körülnézett őrszem visszajött a kapuhoz.
       b. *A megvillant kést betettem a fiókba.
 

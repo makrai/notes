@@ -15,12 +15,12 @@ Dirk Weissenborn, Tim Rocktäschel
     * language modeling [12], machine translation [17], sentiment analysis [18],
       document-level question answering [7] or recognizing textual entailm [14]
   * additional functionality like attention [1] or external memory [5, 16]
-* Though different extensions and variations to GRUs and LSTMs [6, 9], 
+* Though different extensions and variations to GRUs and LSTMs [6, 9],
   none of them outperform standard GRUs or LSTMs significantly
 * organization
   * existing commonly-used RNN architectures and
     the Multiple-Function RecurrentUnit (Sections 2 and 3),
   * we demonstrate that MuFuRUs can learn logical expressions
-  * we show that MuFuRU outperforms a standard GRU baseline 
+  * we show that MuFuRU outperforms a standard GRU baseline
     on language modeling and sentiment analysis (Sections 4.2 and 4.3) where it
     approaches SOTA results without hyper-parameter tuning

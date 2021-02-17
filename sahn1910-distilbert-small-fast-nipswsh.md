@@ -12,7 +12,7 @@ from HuggingFace [Wolf+ 2019].
 
 * operating [ large-scale pre-trained models ] in on-the-edge and/or under
   constrained computational training or inference budgets remains challenging.
-* we propose a method to 
+* we propose a method to
   * pre-train a smaller general-purpose language repr
   * can then be fine-tuned with good performances on a wide range of tasks like
 * most prior work investigated distillation for building task-specific models,
@@ -22,7 +22,7 @@ from HuggingFace [Wolf+ 2019].
   * ablation studies indicate that all the components of the triple loss are
     important for best performances.
 * we demonstrate its capabilities for on-device computations in a
-  proof-of-concept experiment and a comparative on-device study.  
+  proof-of-concept experiment and a comparative on-device study.
 
 # Intro
 
@@ -30,7 +30,7 @@ from HuggingFace [Wolf+ 2019].
   [Devlin+ 2018, Radford+ 2019, Liu+ 2019]
   * several hundred million parameters and current research 1 on pre-trained
   * even larger models still leads to better performances on downstream tasks.
-* concerns. First is the 
+* concerns. First is the
   * environmental cost of exponentially scal Schwartz+ [2019], Strubell+ [2019]
   * on-device in real-time has the potential to enable novel and interesting
 * we show that it is possible to reach similar performances on many downstream

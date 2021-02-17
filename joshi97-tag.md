@@ -13,10 +13,10 @@ Tree-Adjoining Grammars
 
 ## Definition
 
-* $(\Sigma,N,I,A,S)$ 
+* $(\Sigma,N,I,A,S)$
   * $I$ initial trees. Non-terminal symbols on the frontier of the trees in I
-    are marked for substitution; 
-  * $A$ auxiliary trees, the foot node 
+    are marked for substitution;
+  * $A$ auxiliary trees, the foot node
 * In \emph{lexicalized} TAG, at least one terminal symbol (the anchor) must
   appear at the frontier of all initial or auxiliary trees.
 * $I\cup A$: ($X$-type) elementary trees $\leftrightarrow$ derived trees
@@ -26,16 +26,16 @@ Tree-Adjoining Grammars
 ## Adjoining Constraints
 
 * for each node of an elementary tree (on which adjoining is allowed), specify
-  one of the following three constraints on adjunction: 
+  one of the following three constraints on adjunction:
   * Selective Adjunction: only members of a set $T_s\subseteq A$ of auxiliary
     trees can be adjoined on the given node.
   * Null Adjunction. $T_s=\emptyset$
   * Obligatory Adjunction: an auxiliary tree member of the set $T\subseteq A$
-    must be adjoined on the given node.  
+    must be adjoined on the given node.
 * Constraints on adjoining are also needed for formal reasons in order to
   obtain some closure properties.
 
-## Derivation in TAG 
+## Derivation in TAG
 
 ## Some properties of the string languages and tree sets !  %   * TALs are
 semilinear; %   * All closure properties of context-free languages also hold
@@ -54,11 +54,11 @@ CFLs.
 
 * the entire structure is the category structure of the anchor.
 * Lexicalized grammars are finitely ambiguous.
-* $w\in L$ is decidable. Undecidable problems for CF languages: 
+* $w\in L$ is decidable. Undecidable problems for CF languages:
   *  Universality
   *  Language equality
   *  Language inclusion
-  *  Being in a lower level of the Chomsky hierarchy 
+  *  Being in a lower level of the Chomsky hierarchy
 * lexicalization, strong capacity
 
 # Lexicalization of CFGs
@@ -132,6 +132,6 @@ CFLs.
 * integrating the lexical sensitivity of stochastic approaches and the
   hierarchical structure of grammatical systems
 
-## Using Description Trees in TAG 
+## Using Description Trees in TAG
 
-## Multi-component TAGs 
+## Multi-component TAGs

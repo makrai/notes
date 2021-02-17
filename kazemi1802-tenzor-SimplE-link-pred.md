@@ -6,7 +6,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 
 # Abstract
 
-* Knowledge graphs contain [structured] knowledge about the world 
+* Knowledge graphs contain [structured] knowledge about the world
 * Tensor factorization approaches [to link prediction] have proved promising
 * Canonical Polyadic (CP, 1927) ... performs poorly for link prediction
   as it learns two independent embedding vectors for each entity
@@ -36,15 +36,15 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
       An overview of embedding models of entities and relationships for knowl-
       edge base completion
       arXiv preprint arXiv:1703.08098, 2017.
-    43. Quan Wang, Zhendong Mao, Bin Wang, and Li Guo. 
-      Knowledge graph embedding: A survey of approaches and applications. 
-      IEEE Transactions on Knowledge and Data Engineering, 29(12) 2017 
+    43. Quan Wang, Zhendong Mao, Bin Wang, and Li Guo.
+      Knowledge graph embedding: A survey of approaches and applications.
+      IEEE Transactions on Knowledge and Data Engineering, 29(12) 2017
   * canonical Polyadic (CP) decomposition [15] ... learns one embedding vector
     for each relation and two embedding vectors for each entity
   * This independence has caused CP to perform poorly for KG completion [40]
 * In this paper tensor factorization approach [SimplE] based on CP that
   * addresses the independence among the two embedding vectors of the entities
-  * can be considered a bilinear model, 
+  * can be considered a bilinear model,
   * fully expressive
   * capable of encoding background knowledge
     * through parameter sharing (aka weight tying)
@@ -69,7 +69,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * relation `r` is a vector `v_r ∈ R_d` and two matrices `P_r ∈ R_d×d` and Q_r
   * The dissimilarity function for a triple (h, r , t) is defined as
   ||P_r v_h + v_r − Q_r v_t || i
-  (i.e.  encouraging `P_r v_h + v_r ≈ Q_r v_t`) 
+  (i.e.  encouraging `P_r v_h + v_r ≈ Q_r v_t`)
   where ||v|| i represents norm i of vector v
   * restrictions they impose on `P_r` and `Q_r`
     * TransE [4], d = d' , `P_r = Q_r = I_d`
@@ -78,8 +78,8 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * FTransE [11], slightly changes the dissimilarity function
       ||P_r v_h + v_r − α Q_r v_t || i for a value of
       * α that minimizes the norm for each triple
-      * In the rest of the paper, 
-        FTransE [has no restrictions] over `P_r` and `Q_r` 
+      * In the rest of the paper,
+        FTransE [has no restrictions] over `P_r` and `Q_r`
 * Multiplicative Approaches define product-based functions over embeddings
   * DistMult [46] [ defines ] `\langle v_h , v_r , v_t\rangle`
     * can only model symmetric relations
@@ -91,7 +91,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     * relation r to be a matrix `M_r ∈ R 2k×m` and a vector v_r ∈ R m
     * [v_h ; v_t] ∈ R 2d into a two-layer neural network whose weights for
       * the first layer are the matrix `M_r`
-      * the second layer are `v_r` 
+      * the second layer are `v_r`
   * ER-MLP [10], considers the embeddings for both entities and relations to be
     single vectors and feeds [v h ; `v_r` ; v_t] ∈ R 3d into a two layer NN
   * In [35], once the

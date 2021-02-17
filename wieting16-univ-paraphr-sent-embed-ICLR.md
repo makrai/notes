@@ -42,7 +42,7 @@ http://ttic.uchicago.edu/~wieting
     recurrent neural networks using long short-term memory (LSTM) (Tai+ 2015)
   * [but] little work on [simple sentence representations] across domains
 * We consider six compositional architectures based on neural networks and
-  train them on noisy phrase pairs from the Paraphrase Database 
+  train them on noisy phrase pairs from the Paraphrase Database
   (PPDB; Ganitkevitch+ 2013)
 * models spanning the range of complexity from word averaging to LSTMs
   * word averaging model, there are no additional compositional parameters
@@ -75,8 +75,8 @@ http://ttic.uchicago.edu/~wieting
   * convolutional neural networks
     (Kalchbrenner+ 14; Kim, 14; Hu+ 14; Yin & Schütze, 15; He+ 15)
   * LSTMs (Tai+ 2015; Ling+ 2015; Liu+ 2015)
-  * In this paper, we compare six architectures: word averaging, 
-    word averaging followed by a single linear projection, DANs, and 
+  * In this paper, we compare six architectures: word averaging,
+    word averaging followed by a single linear projection, DANs, and
     three variants of recurrent neural networks, including LSTMs
 * general purpose, domain independent embeddings for word sequences
   * autoencoder in an attempt to learn the latent structure of the sequence,
@@ -110,27 +110,27 @@ http://ttic.uchicago.edu/~wieting
 # 6 Qualitative analysis
 
 * To explore [differences between PARAGRAM-PHRASE and PARAGRAM-SL 999 vectors]
-  that were used for initialization, 
+  that were used for initialization,
   we inspected lists of nearest neighbors in each vector space.
 * [in] PARAGRAM-PHRASE embeddings, content words, such as _poverty,
   kidding, humanitarian, 18_, and _july_ have the largest `L_2` norms, while
-  words such as of, it, to, hereby and the have the smallest. 
+  words such as of, it, to, hereby and the have the smallest.
   Pham et al.  (2015) noted this same phenomenon in their closely-related
   compositional model
-  * this weighting explains much of the success of our model. 
+  * this weighting explains much of the success of our model.
   * In order to quantify exactly how much, we scaled PARAGRAM-SL 999 vecs,
-  * at least 64.76% of the improvement is due to weighting tokens 
+  * at least 64.76% of the improvement is due to weighting tokens
   * We also trained a model in which we only a learn a single multiplicative
     parameter for each word in our vocabulary, keeping the word embeddings
     fixed to the PARAGRAM - SL 999 embeddings
     * The resulting average Pearson’s r, is slightly lower than using the
       absolute value of each PARAGRAM - PHRASE vector as [the] weight
   * the connection between these multiplicative weights and word frequency. To
-    * we used the reciprocal of [the probability] scores 
+    * we used the reciprocal of [the probability] scores
     * indicating that learned weights are more sophisticated than inv freq
 
 # 7 Conclusion
 
-* Future work will focus on improving our embeddings by 
+* Future work will focus on improving our embeddings by
   * effectively handling undertrained words
   * generalize even better to the large suite of text similarity tasks

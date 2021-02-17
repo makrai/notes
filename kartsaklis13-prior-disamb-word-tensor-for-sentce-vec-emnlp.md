@@ -147,7 +147,7 @@ Specifically, this paper aims to:
       using the JCN metric of semantic similarity (Jiang and Conrath, 1997)
     * many verbs cannot be considered as genuinely ambiguous (e.g. ‘say’ with
       meanings state and allege or ‘write’ with meanings publish and spell)
-  * Kartsaklis+ (2013) 4 
+  * Kartsaklis+ (2013) 4
     * selection was based on human judgements
       from the work of Pickering and Frisson (2001). So, while 4
     * landmarks ... correspond to clearly separated senses (e.g. ‘file’ with

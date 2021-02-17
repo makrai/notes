@@ -24,7 +24,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
 * Embeddings are useful for ... sentiment analysis
   Kim (2014), Kalchbrenner+ (2014), Severyn and Moschitti (2015), Ebert+(2015)
 * Orthogonal transformations reorder the space without adding or removing info
-* [evaluation] in two text polarity classification tasks 
+* [evaluation] in two text polarity classification tasks
   (SemEval2015 Task 10B, Czech movie reviews)
 * we create high-coverage lexicons with up to 3 million words
   * sentiment, concreteness and frequency
@@ -32,7 +32,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
   * two domains, Twitter and News, in a domain adaptation setup
 * The main advantages of this method of lexicon creation are:
   * We need a training lexicon of only a few hundred words
-  * extensible to [phrase embeddings (Yu and Dredze, 2015) and] 
+  * extensible to [phrase embeddings (Yu and Dredze, 2015) and]
     sentence embeddings (Kiros+ 2015)
   * the output lexicon is continuous and ... potentially more informative
 * [we] beat the SOTA on SemEval2015 Task 10E (determining association strength)
@@ -55,7 +55,7 @@ Ultradense Word Embeddings by Orthogonal Transformation
     * and the sentiment lexicon of Pérez-Rosas+ (2012) for Spanish
   * concreteness, we use BWK, a lexicon of 40,000 English words (Brysbaert+ 14)
   * frequency, we exploit ... word2vec
-* we intersect the vocabulary of l with the top 80,000 words of E 
+* we intersect the vocabulary of l with the top 80,000 words of E
   to filter out noisy, infrequent words that tend to have low quality embeds
 
 abstract: fundamental, obvious, legitimate, reasonable, optimistic, satisfied
@@ -82,8 +82,8 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
 ## 5.1 Size of Subspace
 
 * sentiment
-  * for lexicon creation: a single dimension is sufficient 
-  * for other sentiment tasks more dimensions may be needed, 
+  * for lexicon creation: a single dimension is sufficient
+  * for other sentiment tasks more dimensions may be needed,
     e.g.,  different emotional dimensions of polarity: fear, sadness, anger etc
 * [directly] train low-dimensional word2vec embeddings?
   * does not work very well
@@ -106,10 +106,10 @@ concrete: tree, truck, kitchen, dog, bike, bat, garden, homer, bed, gallon
   (Turney, 2002; Kiritchenko+ 2014)
   * Heerschop+ (2011) used WordNet together with a PageRank-based algorithm
   * Scheible (2010): a semi-automatic approach based on machine translation
-  * The winning system of SemEval2015 10E (Amir+ 2015) was 
-    based on structured skipgram embeddings with 600 dimensions and 
+  * The winning system of SemEval2015 10E (Amir+ 2015) was
+    based on structured skipgram embeddings with 600 dimensions and
     support vector regression with RBF kernels
   * Hamdan+ (2015), the second ranked team, used the average of six sentiment
     lexicons as a final sentiment score
-* Tang+ (2014b) train sentiment specific embeddings 
+* Tang+ (2014b) train sentiment specific embeddings
   by extending Collobert & Weston’s model and Tang+ (2014a)’s skip-gram model

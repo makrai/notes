@@ -10,7 +10,7 @@ and PyTorch
 * Transformers
   * learning longer-term dependency, but are
   * limited by a fixed-length context in the setting of language modeling. We
-* Transformer-XL that enables learning dependency beyond a fixed length 
+* Transformer-XL that enables learning dependency beyond a fixed length
   * without? segment-level recurrence mechanism and a
   * novel positional encoding scheme.  Our method not only enables capturing
     longer-term dependency, but also resolves the context fragmentation
@@ -29,14 +29,14 @@ and PyTorch
   * Devlin+ 2018 Bert: Pre-training of deep bidirectional transformers for
 * Recurrent neural networks (RNNs), in particular LSTM (Hochreiter& 1997), have
   * a standard solution to language modeling and obtained strong results on
-  * difficult to optimize 
+  * difficult to optimize
     * gradient vanishing and explosion (Hochreiter+ 2001), and the introduction
-    * gating and the gradient clipping technique (Graves, 2013) 
-      might not be sufficient to fully address this issue.  
+    * gating and the gradient clipping technique (Graves, 2013)
+      might not be sufficient to fully address this issue.
   * Empirically use 200 context words on average (Khandelwal+ 2018),
 * direct connections between long-distance word pairs baked in attention
   (Bahdanau+ 2014; Vaswani+ 2017)
-  * Al-Rfou+ (2018) designed a set of auxiliary losses to train 
+  * Al-Rfou+ (2018) designed a set of auxiliary losses to train
     deep Transformer networks for character-level language modeling, which
     outperform LSTMs by a large margin
   * training on separated fixed-length segments of a few hundred characters

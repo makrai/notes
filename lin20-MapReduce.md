@@ -1,5 +1,5 @@
-Jimmy Lin and Chris Dyer 
-(2010) 
+Jimmy Lin and Chris Dyer
+(2010)
 Data-Intensive Text Processing with MapReduce
 
 * Introduction
@@ -21,48 +21,48 @@ Data-Intensive Text Processing with MapReduce
     * differences between the Hadoop implementation of MapReduce and Google’s implementation
     * for Hadoop programmin, we would recommend Tom White’s book [154].
     * Speculative execution
-    * skew in the distribution of values associated with intermediate keys 
+    * skew in the distribution of values associated with intermediate keys
   * Partitioners and Combiners
-    * Partitioners are responsible for dividing up the intermediate key space and assigning intermediate key-value pairs to reducers.  
-    * Combiners \dots allow for local aggregation before the shuffle and sort phase.  
+    * Partitioners are responsible for dividing up the intermediate key space and assigning intermediate key-value pairs to reducers.
+    * Combiners \dots allow for local aggregation before the shuffle and sort phase.
   * The distributed file system
-    * Google File System (GFS) [57], HDFS (Hadoop Distributed File System) 
+    * Google File System (GFS) [57], HDFS (Hadoop Distributed File System)
 * MapReduce algorithm design
   * Local aggregation
-    * reductions in the amount of intermediate data 
+    * reductions in the amount of intermediate data
     * Combiners and in-mapper combining
-      * “in-mapper combining”: accumulate partial term counts in the associative array across multiple documents, 
+      * “in-mapper combining”: accumulate partial term counts in the associative array across multiple documents,
       * memory limitation
   * Pairs and Stripes
-    * example: building word co-occurrence matrices from large corpora 
+    * example: building word co-occurrence matrices from large corpora
     * lexical semantics based on distributional profiles of words, dating back to Firth [55] % TODO read
-    * and Harris [69] in the 1950s and 1960s.  
+    * and Harris [69] in the 1950s and 1960s.
     * in the case where the matrix is too big to fit in memory
   * Computing relative frequencies
-    * Section 3.3 shows how co-occurrence counts can be converted into relative frequen- cies using a pattern known as “order inversion”.  
-    * custom partitioner 
+    * Section 3.3 shows how co-occurrence counts can be converted into relative frequen- cies using a pattern known as “order inversion”.
+    * custom partitioner
     * serialization, “order inversion”. It is so named because through proper co- ordination, we can access the result of a computation in the reducer before processing the data needed for that computation.
   * Secondary sorting
     * by value
-    * “value-to-key conversion” design pattern.  
-    * distributed sorting is a task that the MapReduce runtime excels at since it lies at the heart of the programming model.  
+    * “value-to-key conversion” design pattern.
+    * distributed sorting is a task that the MapReduce runtime excels at since it lies at the heart of the programming model.
   * Relational Joins
     * Map-Side Join az utolsó bekezdést nem értem
     * memory-backed joins based on random access probes
 * Inverted Indexing for Text Retrieval
-  * engine—query latencies longer than a few hundred mil- liseconds will try a user’s patience.  
-  * features such as 
-    * term matches, 
-    * term proximity, 
-    * attributes of the terms in the document (e.g., bold, appears in title, etc.), as well as the 
-    * hyperlink structure of the documents (e.g., PageRank [117], which we’ll discuss in Chapter 5, or related metrics such as HITS [84] and SALSA [88]).  
+  * engine—query latencies longer than a few hundred mil- liseconds will try a user’s patience.
+  * features such as
+    * term matches,
+    * term proximity,
+    * attributes of the terms in the document (e.g., bold, appears in title, etc.), as well as the
+    * hyperlink structure of the documents (e.g., PageRank [117], which we’ll discuss in Chapter 5, or related metrics such as HITS [84] and SALSA [88]).
   * The web search problem decomposes into
-    * gathering web content (crawling), 
+    * gathering web content (crawling),
       * even for rapidly changing sites, it is usually
       * tolerable to have a delay of a few minutes until content is searchable. Furthermore, since
       * the amount of content that changes rapidly is relatively small, running smaller-scale in-
       * dex updates at greater frequencies is usually an adequate solution.
-    * construction of the inverted index (indexing) and 
+    * construction of the inverted index (indexing) and
     * ranking documents given a query (retrieval).
     * WEB CRAWLING
       * we start by populating a queue with a “seed” list of pages.
@@ -74,14 +74,14 @@ Data-Intensive Text Processing with MapReduce
       * multilingual.
     * INVERTED INDEXES
       * postings lists, one associated with each term
-      * each posting consists of a 
-        * document id and a 
+      * each posting consists of a
+        * document id and a
         * payload—information about occurrences of the term in the document.
           * term frequency
           * positions for phrase queries and proximity
           * features
           * NER
-          * anchor text information (text associated with hyperlinks from other pages to the page in question) 
+          * anchor text information (text associated with hyperlinks from other pages to the page in question)
       * oreder of postings, semantics of ids
       * Partial document scores are stored in structures called accumulators.
       * optimization
@@ -107,15 +107,15 @@ Data-Intensive Text Processing with MapReduce
       * document partitioning is a better strategy
       * Along one dimension, it is desirable to partition by document quality
       * partition documents by content
-      * document server takes as 
-        * input a query and a document id, and 
+      * document server takes as
+        * input a query and a document id, and
         * computes an appropriate result entry, typically comprising the title and URL of the page, a snippet of the source document showing the user’s query terms in context, and additional metadata
         * caching, of
-          * individual postings (assuming that the index is not already in memory) and even 
+          * individual postings (assuming that the index is not already in memory) and even
           * results of entire queries
     * SUMMARY AND ADDITIONAL READINGS
 * Graph Algorithms
-  * Google recently published a short description of a system called Pregel [98], based on Valiant’s Bulk Synchronous Parallel model [148], for large-scale graph algorithms 
+  * Google recently published a short description of a system called Pregel [98], based on Valiant’s Bulk Synchronous Parallel model [148], for large-scale graph algorithms
   * encoding undirected graphs with adjacency list: order the nodes...
   * PARALLEL BREADTH-FIRST SEARCH
   * Dijkstra’s
@@ -127,7 +127,7 @@ Data-Intensive Text Processing with MapReduce
   * Graph algorithms in MapReduce are generally iterative,
   * PAGERANK
     * two other popula rapproaches to inferring the quality of a web page based on hyperlink structure, not covered here, are SALSA [88] and HITS [84] (also known as “hubs and authorities”). % TODO
-    * α is sometimes called the “teleportation” factor; alternatively, (1 − α) is referred to as the “damping” factor.  
+    * α is sometimes called the “teleportation” factor; alternatively, (1 − α) is referred to as the “damping” factor.
     * The proper treatment of PageRank mass “lost” at the dangling nodes is to redistribute it across all nodes in the graph evenly
   * ISSUES WITH GRAPH PROCESSING
     * communication can only occur from a node to the nodes it links to,

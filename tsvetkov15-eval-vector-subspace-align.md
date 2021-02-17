@@ -10,8 +10,8 @@ https://github.com/ytsvetko/qvec
 * correlation with similarity judgments [often correlate poorly with
   performance] as features in downstream evaluation tasks
 * We present QVEC
-  * evaluation measure of the quality of word embeddings 
-  * based on alignment to a matrix of features 
+  * evaluation measure of the quality of word embeddings
+  * based on alignment to a matrix of features
     extracted from manually crafted lexical resources
   * obtains strong correlation with performance of the vectors
     in a battery of downstream semantic evaluation tasks
@@ -45,10 +45,10 @@ https://github.com/ytsvetko/qvec
   * partitions nouns and verbs into [supersenses i.e.] coarse semantic cats
     (Ciaramita and Altun, 2006; Nastase, 2008)
   * 41 supersense types: 26 for nouns and 15 for verbs, for example,
-    * NOUN.BODY, NOUN.ANIMAL, VERB.CONSUMPTION, or VERB.MOTION 
+    * NOUN.BODY, NOUN.ANIMAL, VERB.CONSUMPTION, or VERB.MOTION
 * SemCor is a WordNet-annotated corpus that captures, among others,
   * supersense annotations of WordNet’s 13 K noun lemmas and 6 K verb lemmas
-* We construct term frequency vectors normalized to probabilities 
+* We construct term frequency vectors normalized to probabilities
   for all nouns and verbs that occur in SemCor at least 5 times
   The resulting ... 4,199 linguistic word vectors has 41 interpretable columns
 

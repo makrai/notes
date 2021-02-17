@@ -6,7 +6,7 @@ rare dataset
 
 # Abstract
 
-* building representations for morphologically complex words 
+* building representations for morphologically complex words
   from their morphemes
 
 # 1 Introduction
@@ -30,7 +30,7 @@ rare dataset
 
 * history
   * morphological inflections was a very central problem in early work in the
-    parallel distributed processing paradigm and criticisms of it 
+    parallel distributed processing paradigm and criticisms of it
     (Rumelhart and McClelland, 1986; Plunkett and Marchman, 1991)
   * later work developed more sophisticated models of morpholog[y]
     (Gasser and Lee, 1990; Gasser, 1994)
@@ -58,7 +58,7 @@ rare dataset
 * itt már az embeddinget is kompozícionálisan tanulják
 * az előbbinél a ritka szavaknál rossz a tanulóadat
 * build representations for complex words from their morphemes
-  * a kontextust csak úgy tudom érteni, hogy 
+  * a kontextust csak úgy tudom érteni, hogy
     a morfnak a szavakon felüli disztribúcióját is tükrözi az embedding
   * a Conclusion-ben "word context"
 

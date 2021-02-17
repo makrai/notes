@@ -51,13 +51,13 @@ ICLR 2017
     word embedding methods give] large vectors to frequent words
 * [anisotropy]
   * most word embedding methods seek to capture word cooccurence probs
-  * end up giving 
-    * large vectors to frequent words, as well as giving 
-    * unnecessarily large inner products to word pairs, 
+  * end up giving
+    * large vectors to frequent words, as well as giving
+    * unnecessarily large inner products to word pairs,
       to fit that words sometimes occur out of context in documents. These
     * word vectors to have huge components along semantically meaningless dir
 * better (by a few percent points) than traditional TF-IDF
-* similarity to CBOW 
+* similarity to CBOW
   * CBOW also does not use simple average, as misleadingly suggested
   * implementation shows it implicitly uses a weighted average
     * different from TF-IDF
@@ -167,14 +167,14 @@ ICLR 2017
 
 ### Effect of weighting parameter on performance
 
-* We study the sensitivity of our method to the 
+* We study the sensitivity of our method to the
   * weighting parameter `a`, the
   * method for computing word vectors, and the
   * estimated word probabilities p(w)
 * three types of word vectors (PSL, GloVe, and SN) on the STS 2012 tasks
   * SN vectors are trained on the enwiki dataset (Wikimedia, 2012) using the
     method in (Arora+ 2016), while
-* Best performance occurs from a = 10^-3 to a = 10^-4 
+* Best performance occurs from a = 10^-3 to a = 10^-4
 * performance is almost the same for all four settings [of p(w)]
 * our method can be applied on different types of word vectors
   trained on different corpora also suggests [the]

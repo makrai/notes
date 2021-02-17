@@ -6,7 +6,7 @@ IWCS 2019
 # Abstract
 
 * good performance on both intrinsic and extrinsic evaluation tasks
-* represent dependency chains as products of matrices 
+* represent dependency chains as products of matrices
   * provides a straightforward way of handling further contexts
 
 # 1 Introduction
@@ -38,7 +38,7 @@ IWCS 2019
 * All models were trained on the
   * WikiWoods corpus (Flickinger+ 2010), which contains a 2008 Wikipedia
   * Universal Dependencies (Nivre+ 2016; Schuster and Manning, 2016)
-  * We tuned the 
+  * We tuned the
     * dimensionality for all tasks and the
     * number of negative samples for RELPRON and word similarity
     * for word similarity we based the hyperparameter choice on the SimLex-999

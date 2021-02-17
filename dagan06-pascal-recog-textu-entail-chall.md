@@ -4,10 +4,10 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
 
 ## 1.1 Rational
 
-* applications, such as 
+* applications, such as
   * Question Answering (QA),
   * Information Extraction (IE),
-  * (multi-document) summarization, and 
+  * (multi-document) summarization, and
   * machine translation (MT) [evaluation]
 * related work
   * relation between Textual Entailment and some classical linguistic notions
@@ -36,16 +36,16 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
 
 ## 3.3 Submitted Systems and Results
 
-* degree of word overlap between T and H, 
+* degree of word overlap between T and H,
   * possibly including stemming, lemmatization, part of speech tagging, and
     applying a statistical word weighting such as idf.
 * relationships between words that may reflect entailment, based either on
   statistical methods or WordNet. Next, some systems measured the degree of
 * match between the syntactic structures of T and H, based on some distance
-  criteria. Finally, few systems incorporated some form of 
-* “world knowledge”, and a few more applied a 
+  criteria. Finally, few systems incorporated some form of
+* “world knowledge”, and a few more applied a
 * logical prover for making the entailment inference, typically over
-  semantically enriched representations.  Different 
+  semantically enriched representations.  Different
 * decision mechanisms
   * probabilistic models, probabilistic Machine Translation models, supervised
     learning methods, logical inference and various specific scoring
@@ -62,7 +62,7 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini
 # 5 Conclusions
 
 * further efforts can be made to create “natural” distributions of
-  Text-Hypothesis examples. For example, 
+  Text-Hypothesis examples. For example,
   * T -H pairs may be collected directly from the data processed by actual
     systems, considering their inputs and candidate outputs. An additional
   * collect a set of multiple candidate texts that might entail a given single

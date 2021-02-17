@@ -60,8 +60,8 @@ Tamara G. Kolda and Brett W. Bader
 
 ## 3.2. Uniqueness 13
 
-* De Lathauwer [55] has looked at 
-  * methods to determine the rank of a tensor and the 
+* De Lathauwer [55] has looked at
+  * methods to determine the rank of a tensor and the
   * when a given CP decomposition is unique
     deterministically or generically (i.e., with probability one)
 
@@ -97,13 +97,13 @@ Tamara G. Kolda and Brett W. Bader
   * Faber, Bro, and Hopke [78] compare ALS with six different methods
     * alternating slice-wise diagonalization (ASD) method [110] is [fast]
     * [ASD is superior]
-  * Tomasi and Bro [223] compare ALS and ASD to four [plus three] methods 
-    * apply Tucker-based compression (see section 4 and section 5.3) and 
-      then compute a CP decomposition of the reduced array; see [30].  
-    * damped Gauss–Newton (dGN) and a variant called PMF3 by Paatero [178] 
-    * Both dGN and PMF3 optimize all factor matrices simultaneously. 
+  * Tomasi and Bro [223] compare ALS and ASD to four [plus three] methods
+    * apply Tucker-based compression (see section 4 and section 5.3) and
+      then compute a CP decomposition of the reduced array; see [30].
+    * damped Gauss–Newton (dGN) and a variant called PMF3 by Paatero [178]
+    * Both dGN and PMF3 optimize all factor matrices simultaneously.
     * ASD is deemed to be inferior to other alternating-type methods
-  * Derivative-based methods (dGN and PMF3) are 
+  * Derivative-based methods (dGN and PMF3) are
     * generally superior to ALS in terms of their convergence properties but
     * more expensive in both memory and time
 
@@ -117,13 +117,13 @@ Tamara G. Kolda and Brett W. Bader
 * relationship to compression, the notion of n-rank, algorithms and
   computational issues, and applications
 * introduced by Tucker (1963) and refined in subsequent articles
-* the factor matrices (which are usually orthogonal) and 
+* the factor matrices (which are usually orthogonal) and
   can be thought of as the principal components in each mode
 * the core tensor[']s entries show the level of interaction between the
   different components
 * In some cases, the storage for the decomposed version of the tensor can be
   significantly smaller than for the original tensor; see Bader and Kolda [17]
-* CP can be viewed as a special case of Tucker 
+* CP can be viewed as a special case of Tucker
   where the core tensor is superdiagonal and P = Q = R
 * Two important variations of the decomposition are also worth noting here
   * Tucker2 ... sets one of the factor matrices to be the identity matrix
@@ -132,9 +132,9 @@ Tamara G. Kolda and Brett W. Bader
   * These concepts extend easily to the N-way case
     * we can set any subset of the factor matrices to the identity matrix
 * choosing between CP and the different Tucker models in the three-way case
-  * Ceulemans and Kiers (2006) discuss methods for 
+  * Ceulemans and Kiers (2006) discuss methods for
     choosing between CP and the different Tucker models in the three-way case
-    * [42] E. Ceulemans and H. A. L. Kiers, 
+    * [42] E. Ceulemans and H. A. L. Kiers,
       Selecting among three-mode principal component models of different types
       and complexities: A numerical convex hull based method,
       British J.  Math. Statist. Psych., 59 (2006), pp. 133–150.
@@ -147,24 +147,24 @@ Tamara G. Kolda and Brett W. Bader
 
 ## 4.4. Applications of Tucker
 
-* Kiers and Van Mechelen (2001) ... is a good introduction 
+* Kiers and Van Mechelen (2001) ... is a good introduction
   * when to use three-way techniques rather than two-way (based on an ANOVA)
   * how to preprocess the data
   * choosing the rank ... and an appropriate rotation
   * methods for presenting the results
-* Liu+ (2005) applied Tucker to create a tensor space model, 
-  * analogous to the well-known vector space model in text analysis. 
-  * N. Liu, B. Zhang, J. Yan, Z. Chen, W. Liu, F. Bai, and L. Chien, 
+* Liu+ (2005) applied Tucker to create a tensor space model,
+  * analogous to the well-known vector space model in text analysis.
+  * N. Liu, B. Zhang, J. Yan, Z. Chen, W. Liu, F. Bai, and L. Chien,
     Text representation: From vector to tensor
     ICDM 2005
 * J. Sun+  [209, 210]
-  * dynamically updating a Tucker approximation, with 
+  * dynamically updating a Tucker approximation, with
     applications ranging from text analysis to environmental and network model
-  * [209] J. Sun, S. Papadimitriou, and P. S. Yu, 
+  * [209] J. Sun, S. Papadimitriou, and P. S. Yu,
     Window-based tensor analysis on high-dimensional and multi-aspect streams, in
     ICDM 2006
-  * [210] J. Sun, D. Tao, and C. Faloutsos, 
-    Beyond streams and graphs: Dynamic tensor analysis, in 
+  * [210] J. Sun, D. Tao, and C. Faloutsos,
+    Beyond streams and graphs: Dynamic tensor analysis, in
     KDD 2006
 
 # 5 other decompositions 26

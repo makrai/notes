@@ -10,7 +10,7 @@ Guy Emerson and Ann Copestake
 * tensorial approach described by Coecke+ (2010) and Baroni+ (2014)
   * naturally captures argument structure
   * not allow an obvious account of context dependence, or logical inference
-* Garrette et al. (2011) incorporate distributional information in a 
+* Garrette et al. (2011) incorporate distributional information in a
   Markov Logic Network (Richardson and Domingos, 2006)
 
 # 2 Formal Framework of Functional Distributional Semantics

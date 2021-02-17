@@ -42,9 +42,9 @@ John F. Sowa
   * Knowledge engineering: knowledge acquisition, machine learning, extracting
     knowledge from texts, requirements analysis, systems analysis, database
     design, and semantic data models
-  * Hybrid systems: 
-    * conceptual programming, 
-    * logic programming with conceptual graphs, and 
+  * Hybrid systems:
+    * conceptual programming,
+    * logic programming with conceptual graphs, and
     * pattern recognizers that combine neural networks with conceptual graphs
   * Applications: expert systems, information retrieval, intelligent help,
     computer vision, robotics, computer-integrated manufacturing, and
@@ -55,7 +55,7 @@ John F. Sowa
     heuristic techniques of AI
 * organization
   2. sources of conceptual graphs in both the scruffy and the neat traditions
-  3. examples of the graphs and their 
+  3. examples of the graphs and their
     * relationship to frames, predicate calculus, and other systems
   4. applications of CGs that have been implemented in the last five years
 
@@ -97,15 +97,15 @@ John F. Sowa
   relations like part-whole or element-collection. Although Ceccato was
   * the first to implement a graph system with labeled relations, he
   * mixed the low-level linguistic relations with more complex relations such
-    as puller to thing pulled. 
-* linguists Fillmore [10] and Gruber [11] later 
+    as puller to thing pulled.
+* linguists Fillmore [10] and Gruber [11] later
   * analyzed the relations in greater depth
   * case roles or thematic relations
 * High-level relations are especially common in expert systems
-  * rules and frames tend to use complex relations 
+  * rules and frames tend to use complex relations
     * e.g. original-cost-in-US-dollars or number-of-loading-cycles
-* Alan Robinson's unification algorithm for theorem proving [16] 
-  * a general and elegant form of pattern matching that 
+* Alan Robinson's unification algorithm for theorem proving [16]
+  * a general and elegant form of pattern matching that
   * was adapted to graph unification as the maximal join algorithm [17]
 * Besides the ability to represent logic and language, a computational system
   requires links to other computer facilities and the _outside world_. Those are

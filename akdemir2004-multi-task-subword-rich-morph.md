@@ -7,7 +7,7 @@ https://anonymous.4open.science/r/1afb86c7-4340-4c2a-9f0b-f1145f67eb80/
 * Morphological information is important for sequence labeling tasks in Natural
   * existing approaches rely heavily on manual annotations or external software to
 * we propose using subword contextual embeddings to capture the morphological
-  * for languages with rich morphology. In addition, we 
+  * for languages with rich morphology. In addition, we
   * incorporate these embeddings in a hierarchical multi-task setting which is
   * Evaluated on Dependency Parsing (DEP) and Named Entity Recognition (NER)
     * are shown to benefit greatly from morphological information, our final
@@ -18,7 +18,7 @@ https://anonymous.4open.science/r/1afb86c7-4340-4c2a-9f0b-f1145f67eb80/
     settings show that incorporating subword contextual embeddings brings
     significant improvements for both tasks. In addition, we observed that
     multi-task learning consistently improves the performance of the DEP
-    component. 
+    component.
 
 # 5 Conclusion
 
@@ -27,7 +27,7 @@ https://anonymous.4open.science/r/1afb86c7-4340-4c2a-9f0b-f1145f67eb80/
   Dependency Parsing and Named Entity Recognition for the Turkish language. The
   results also show that incorporating multi-task learning brings further
   improvements.
-* future work: 
+* future work:
   * other languages with rich morphology. Further gains may be possible by
   * incorporating character-level embeddings and through extending the
     multi-task framework to include more tasks. To promote future research, we

@@ -14,7 +14,7 @@ Results and scripts will be posted online upon publication
 * evaluation should focus on data efficiency and simple supervised tasks,
   where the amount of available data is varied as common in transfer learning
 * comprehensive evaluation of selected word embeddings is presented
-* word similarity (WS) or analogy (WA) [cab be decoded by a non-linear 
+* word similarity (WS) or analogy (WA) [cab be decoded by a non-linear
   downstream model]
   * questions the cosine–based, unsupervised, evaluation methods
 
@@ -60,7 +60,7 @@ Results and scripts will be posted online upon publication
     * In certain applications, like tagging they are crucial
       (Sharp+ 2016a, Lample+ 2016)
       * R Sharp, M Surdeanu, P Jansen, P Clark, ... M Hammond
-        Creating causal embeddings for QA with minimal supervision. 
+        Creating causal embeddings for QA with minimal supervision.
         CoRR 2016b http://arxiv.org/abs/1609.08097
       * G Lample, M Ballesteros, K Kawakami, S Subramanian, C Dyer
         Neural architectures for named entity recognition.
@@ -101,7 +101,7 @@ Results and scripts will be posted online upon publication
     sets
 * Sentence: Stanford Sentiment Treebank (Socher+ 13) and
   News20 (3 binary datasets) (Tsvetkov+ 15a)
-* Single word: 
+* Single word:
   Datasets constructed from lexicons collected in (Faruqui and Dyer 15b):
   * POS tagging (3 datasets for verb, noun and adjective)
   * word sentiment (1 dataset)
@@ -113,7 +113,7 @@ Results and scripts will be posted online upon publication
   * Analogy 3CosAdd and 3CosMul
 * classifiers:
   * Similarity: cosine similarity, Random Forest (RF), Support Vector Regression
-    (SVR) with RBF kernel 6 
+    (SVR) with RBF kernel 6
   * Analogy: 3CosADD , 3CosMUL (Levy+ 2015) and
     regression neural network, see Appendix for further information
   * Sentence:
@@ -122,22 +122,22 @@ Results and scripts will be posted online upon publication
     * Convolutional Neural Network (CNN) (Kim, 2014) taking conc(`w_i`)
   * Single word: RF, SVM (with RBF kernel), Naive Bayes,
     k-Nearest Neighbor Classifier and Logistic Regression
-    
+
 ## Embeddings
 
-* “shallow” pretrained embeddings: 
-  * GloVe (100 and 300 dimensions) (Pennington+ 2014), 
-  * Hellinger PCA (HPCA) (Lebret and Collobert 2014), 
-  * PDC (100 and 300 dimensions) and 
+* “shallow” pretrained embeddings:
+  * GloVe (100 and 300 dimensions) (Pennington+ 2014),
+  * Hellinger PCA (HPCA) (Lebret and Collobert 2014),
+  * PDC (100 and 300 dimensions) and
   * HDC (300 dimensions) (Sun+ 2015)
 * pretrained “deep” embeddings
   * Neural Translation Machine (NMT, activations of the deep model are
-    extracted as word embeddings) (Hill+ 2014), 
-  * morphological embeddings (morph) (Luong+ 2013) and 
+    extracted as word embeddings) (Hill+ 2014),
+  * morphological embeddings (morph) (Luong+ 2013) and
   * HPCA variant trained using autoencoder architecture (Lebret & Collobert 15)
 * In some experiments we additionally include publicly available pretrained
-  skip-gram embeddings on 
-  * Google News corpora and  on 
+  skip-gram embeddings on
+  * Google News corpora and  on
   * Wikipedia corpora (Ling+ 2015) (used commonly in syntax demanding tasks,
     like tagging).
 
@@ -163,20 +163,20 @@ TODO
 
 ## 3.6 Linear vs non–linear models
 
-* there are embeddings especially fitted for use with linear models, Fig. 1.  
+* there are embeddings especially fitted for use with linear models, Fig. 1.
   * typically used evaluation does not answer whether there is information
     about task X in the embedding Y
   * e.g. difference in performance between two pretrained GloVe embeddings of
     different dimensionality (100 and 300)
     * shown previously that lower dimensional GloVe embeddings are better at
-      syntactic tasks (Lai+ IEEE 2016), but 
+      syntactic tasks (Lai+ IEEE 2016), but
       our evaluation reveals more complicated picture,
-    * significantly better rank of GloVe 100 at the beginning than at the end 
+    * significantly better rank of GloVe 100 at the beginning than at the end
 
 ## 3.7 Discussion
 
 * algebraic interpretation of word embeddings (Arora+ 2016)
-  * decompose word embedding space into a set of concepts 
+  * decompose word embedding space into a set of concepts
   * (so each word vector can be well approximated by a sum of few concepts) 9 .
   * can be obtained using standard methods like k-SVD.
   * Theoretically, tasks should test for existence of such concepts

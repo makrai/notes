@@ -88,7 +88,7 @@ EMNLP 2018
 
 ## 3.1 LSTM
 
-* Among the RNN variants, LSTMs provide SOTA performance 
+* Among the RNN variants, LSTMs provide SOTA performance
   for several benchmark LM tasks (Józefowicz+ 2016; Merity+ 2018; Melis+ 2018)
 * LSTM with projection (Sak+ 2014)
   * use a large hidden state while reducing the total number of parameters
@@ -111,7 +111,7 @@ EMNLP 2018
 
 * competitive results for sequence modeling
   * e.g.~sequence-to-sequence machine translation (Gehring+ 2017)
-  * Dauphin+ (2017): using Gated Linear Units (GLU), 
+  * Dauphin+ (2017): using Gated Linear Units (GLU),
     perplexities comparable to large LSTMs on large scale language modeling
 * To adapt the Gated CNN for bidirectional language modeling, we
   * closely followed the publicly available ConvSeq2Seq implementation,
@@ -131,7 +131,7 @@ EMNLP 2018
 # 4 Evaluation as word representations 4
 
 * four benchmark NLP tasks
-* we swapping out pre-trained GloVe vectors (Pennington+ 2014) 
+* we swapping out pre-trained GloVe vectors (Pennington+ 2014)
   for contextualized word vectors from each biLM
   by applying the learned weighted average ELMo pooling from Peters+ (2018)
 * not fine tune the LM weights
@@ -297,7 +297,7 @@ EMNLP 2018
 * Our linear model
   * independently predicts the constituent type for all possible spans in a
     sentence using a linear classifier
-  * valid tree is built with a greedy decoding step that 
+  * valid tree is built with a greedy decoding step that
     reconciles overlapping spans with an ILP, similar to Joshi+ (2018)
 * The third row in Fig. 3 shows the results
   * independent alone has F1 of near 80% for the best layers from each arch
@@ -329,7 +329,7 @@ EMNLP 2018
   * Kádár+ (2017)
     * attributed the activation patters of RNNs to input tokens
     * RNN language model is strongly sensitive to tokens with synt functions
-  * whether NMT systems learned morphology and POS tags (Belinkov+ 2017) 
+  * whether NMT systems learned morphology and POS tags (Belinkov+ 2017)
     * linear classifiers
   * Concurrent with our work,
     * Khandelwal+ (2018) studied the role of context in influencing LM preds,
@@ -337,7 +337,7 @@ EMNLP 2018
     * Blevins+ (2018): whether multi-task RNNs can learn hierarchical syntax,
     * Conneau+ (2018) examined linguistic features in sentence
       A Conneau, G Kruszewski, G Lample, L Barrault, and M Baroni. 2018.
-      What you can cram into a single vector: 
+      What you can cram into a single vector:
         Probing sentence embeddings for linguistic properties
       ACL 2018
 * attributing network predictions to words in the input sentence

@@ -18,7 +18,7 @@ Hobbs
 
 ## 4.3
 
-### 4.3.1 
+### 4.3.1
 
 * utolsó három sor
   * John is *not* an elephant

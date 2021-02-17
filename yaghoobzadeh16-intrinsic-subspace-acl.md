@@ -4,7 +4,7 @@ Yadollah Yaghoobzadeh and Hinrich Schütze
 
 # Abstract
 
-* we 
+* we
   * identify four fundamental criteria based on the characteristics of natural
   * develop tests that directly show whether or not representations contain the
     subspaces necessary to satisfy these criteria
@@ -12,7 +12,7 @@ Yadollah Yaghoobzadeh and Hinrich Schütze
       or full-space similarity of words and thus view vector representations as
     * We show the limits of these point-based intrinsic evaluations.  We apply
 
-## 4.3 
+## 4.3
 
 * [approaches to ambiguity]
   * Our results confirm that a single embedding can be robust against

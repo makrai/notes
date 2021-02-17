@@ -37,9 +37,9 @@ Polona Gantar and Iztok Kosem and Simon Krek
 # 3 Slovene Lexical Database
 
 * Slovene Lexical Database (SLD, Gantar and Krek 2011; Gantar et al. 2012). The
-  SLD had a twofold goal: it was intended as the 
+  SLD had a twofold goal: it was intended as the
   * basis for the future compilation of different dictionaries of Slovene, both
-    monolingual and bilingual, and as such 
+    monolingual and bilingual, and as such
     * its concept is biased towards lexicography
   * potential resource for the enhancement of NLP tools for Slovene.
 

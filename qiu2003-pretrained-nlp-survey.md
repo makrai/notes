@@ -379,7 +379,7 @@ multi-task learning and pre-training are complementary technologies
   * original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
   * PAL: small additional task-specific adaptation modules
-  * matches separately fine-tuned models on the GLUE benchmark 
+  * matches separately fine-tuned models on the GLUE benchmark
     with roughly 7 times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
   * Adapter modules yield a compact and extensible model; they add only a few
@@ -495,12 +495,12 @@ multi-task learning and pre-training are complementary technologies
     ACL, pages 1049–1058, 2019.
 * Zhang+ [198] tries to pre-trained a document-level model that predicts
   sentences instead of words, and then apply it on downstream tasks
-  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou. 
+  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou.
     HIBERT: Document level pre-training of hierarchical bidirectional
     ACL, pages 5059–5069, 2019.
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
-  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu. 
+  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu.
     PEGASUS: Pre-training with extracted gap-sentences for abstractive summariz
     arXiv:1912.08777, 2019.
 * BERTSUM Liu and Lapata [104] included a novel document-level encoder, and a

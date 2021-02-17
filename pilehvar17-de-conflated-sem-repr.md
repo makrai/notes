@@ -115,8 +115,8 @@ EMNLP 2016
   * Chen+ (2014), Jauhar+ (2015) and Rothe and Schütze (2015),
   * Chen+ (2014) uses the content words in the definition of a word sense & WSD
     * hE, the sole usage of glosses as sense-distinguishing contexts and the
-    non-optimal WSD make the approach inaccurate, 
-    particularly for highly polysemous words with similar senses 
+    non-optimal WSD make the approach inaccurate,
+    particularly for highly polysemous words with similar senses
     and for word senses with short definitions
   * Rothe and Schütze (2015) use synsets along with a small set of sem relations
     * This significantly hampers the reliability of the technique in
@@ -126,15 +126,15 @@ EMNLP 2016
   * ADW (Pilehvar and Navigli, 2015) is another WordNet-based approach which
     obtains interpretable sense representations
   * SensEmbed (Iacobacci+ 2015) first disambiguates words in a given corpus with
-    the help of a knowledge-based WSD system and 
+    the help of a knowledge-based WSD system and
     then uses the generated sense-annotated corpus as training data for Word2vec
   * Nasari (Camacho-Collados+ 2015; Camacho-Collados+ 2016)
     * based on the BabelNet sense inventory (Navigli and Ponzetto, 2012)
-    * combines structural knowledge from the semantic network of BabelNet 
+    * combines structural knowledge from the semantic network of BabelNet
       with corpus statistics derived from Wikipedia
     * only nouns
 * cluster the contexts in which a word appears
-  * the number of senses can range from monosemous to 
+  * the number of senses can range from monosemous to
     highly ambiguous with dozens of associated meanings (McCarthy+ 2016)
   * Diana McCarthy, Marianna Apidianaki, and Katrin Erk
     CL 2016

@@ -14,7 +14,7 @@ FUNDAMENTALS OF LANGUAGE
   several terms jointly present in an actual series," whereas [selection]
   "connects terms in absentia as members of a virtual mnemonic series".
 * relation
-  * constituents of a context are in a status of contiguity, while 
+  * constituents of a context are in a status of contiguity, while
   * in a substitution set signs are linked by various degrees of similarity
     which fluctuate between the equivalence of synonyms and the common core of
     antonyms.

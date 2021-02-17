@@ -1,4 +1,4 @@
-Tuning Multilingual Transformers for Language-Specific Named Entity Recognition 
+Tuning Multilingual Transformers for Language-Specific Named Entity Recognition
 Mikhail Arkhipov, Maria Trofimova, Yuri Kuratov, Alexey Sorokin
 7th Workshop on Balto-Slavic Natural Language Processing 2019
 
@@ -12,10 +12,10 @@ Mikhail Arkhipov, Maria Trofimova, Yuri Kuratov, Alexey Sorokin
 
 # Intro
 
-* contribution is three-fold: 
+* contribution is three-fold:
   * multilingual BERT embeddings with a dense layer on the top clearly beat
   * languagespecific BERT, trained only on the target languages from Wikipedia
-    and news dump, significantly outperforms the multilingual BERT. 
+    and news dump, significantly outperforms the multilingual BERT.
   * we adapt a CRF layer as a a top module over the outputs of the BERT-based
     model and demonstrate that it improves performance even further.
 * training BERT from scratch is extremely expensive computationally so we

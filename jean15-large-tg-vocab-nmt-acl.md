@@ -13,7 +13,7 @@ Sébastien Jean, Kyunghyun Cho, Roland Memisevic, Yoshua Bengio
 # 1 Introduction
 
 * A usual practice is to construct a target vocabulary of the K most freq words
-  * (a so-called shortlist), where 
+  * (a so-called shortlist), where
   * K is often in the range of
     * 30k (Bahdanau+ 2015) to
     * 80k (Sutskever+ 2014)

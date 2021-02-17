@@ -1,5 +1,5 @@
 S Buechel, U Hahn
-Word emotion induction for multiple languages as deep multi-task learning 
+Word emotion induction for multiple languages as deep multi-task learning
 naacl 2018
 
 code base + resulting experimental data is freely available
@@ -21,8 +21,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * more expressive ... models (such as Basic Emotions or Valence-Arousal-Dom)
   * heterogeneous formats and ... small-sized, non-interoperable resources
     (lexicons and corpus annotations, Buechel and Hahn, 2017)
-    Sven Buechel and Udo Hahn. 2017. 
-    EmoBank: Studying the impact of {annotation perspective 
+    Sven Buechel and Udo Hahn. 2017.
+    EmoBank: Studying the impact of {annotation perspective
       and representation format} on dimensional emotion analysis
     EACL 2017
     * limitations in size hampered the application of deep learning methods
@@ -97,7 +97,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   psychological/NLP research labs for diverse languages
   * listed in Table 1 and Buechel and Hahn (2018)
     Sven Buechel and Udo Hahn
-    Representation mapping: 
+    Representation mapping:
       A novel approach to generate high-quality multi-lingual emotion lexicons
     LREC 2018
 * regression, not as a classification problem (Buechel and Hahn 2016)
@@ -131,7 +131,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * introduced by Turney and Littman (2003)
     * still popular today (Köper and Schulte im Walde, 2016)
   * SemEval-2015 Task 10E: polarity induction on Twitter (Rosenthal+ 2015)
-    * best system relied on support vector regression (SVR) 
+    * best system relied on support vector regression (SVR)
       using a radial base function kernel (Amir+ 2015)
       * embedding vector of the target word as features
     * beaten by the Densifier algorithm (Rothe+ 2016)
@@ -213,7 +213,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * Du and Zhang (2016) propose simple FFNNs in combination with a boosting
 * Boosting: several weak estimators are combined to form a strong estimator
-* The authors used FFNNs with a single hidden layer of 100 units and 
+* The authors used FFNNs with a single hidden layer of 100 units and
   rectified linear unit (ReLU) activation
   * boosting algorithm AdaBoost.R2 (Drucker, 1997) was used to train the
   * Our re-implementation copies their[s] exactly using scikit-learn
@@ -261,7 +261,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * paired t-tests
   * the methods we compare ourselves against comprise the current SOTA in both
     polarity and emotion induction (as described in Section 2).  8
-* Valence and Arousal for ES+ and ZH, VAD for the others 
+* Valence and Arousal for ES+ and ZH, VAD for the others
 * our proposed MTLNN model outperforms all other approaches in each [condition]
 * improvements are especially pronounced on smaller data sets containing one up
   to two thousand entries (EN, ES, IT, PT, ID) with close to 10%-points

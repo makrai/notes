@@ -48,7 +48,7 @@ We include the aspectual verb classes of Vendler (1957)
 ### 3 Motion Dynamics
 
 * energy level of motion dynamics in four categories
-  no motion (_sleep_); low motion (_smile_); medium (_walk_); or high (_run_) 
+  no motion (_sleep_); low motion (_smile_); medium (_walk_); or high (_run_)
   + motion level depends highly on context, such as _finish_
 
 ### 4 Social Dynamics
@@ -95,13 +95,13 @@ We include the aspectual verb classes of Vendler (1957)
 
 # 3 Learning Verb Attributes from Language 3
 
-* Modeling options include using 
-  * pretrained word embeddings, as in Section 3.1, or using a 
+* Modeling options include using
+  * pretrained word embeddings, as in Section 3.1, or using a
   * sequential model to encode a _dictionary_, as in Section 3.2
 
 ## 3.1 Learning from Distributed Embeddings
 
-* we use 
+* we use
   * 300-dimensional GloVe vectors trained on 840B tokens of web data
   * logistic regression to predict each attribute
 * We additionally experiment with retrofitted embeddings
@@ -116,9 +116,9 @@ We include the aspectual verb classes of Vendler (1957)
 
 * creates a dataset bias since polysemic verbs are seen more often. Ad-
 * tend to be sorted by relevance, thus lowering the quality of the data if all
-  definitions are weighted equally during training. To counteract this, 
-* we randomly oversample the definitions at training time so that 
-  each verb has the same number of definitions. 4 
+  definitions are weighted equally during training. To counteract this,
+* we randomly oversample the definitions at training time so that
+  each verb has the same number of definitions. 4
 * At test time, we use the first-occurring definition per verb
 
 # 4 Zero-Shot Activity Recognition 5
@@ -130,7 +130,7 @@ We include the aspectual verb classes of Vendler (1957)
   images in a zero-shot setting. Thus, we consider several models that classify
   an image’s label by pivoting through an attribute representation.
 
-### Overview 
+### Overview
 
 * zeroshot: labels are partitioned into `V_train` and `V_test`
 * see figures

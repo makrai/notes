@@ -33,7 +33,7 @@ Don’t count, predict! A systematic comparison of
 * Concept categorization
 * Selectional preferences
 * Analogy
-  * two data sets that contain verb-noun pairs that were 
+  * two data sets that contain verb-noun pairs that were
     rated by subjects for the typicality of the noun as a subject or object of
     (e.g., _people_ received a high average score as subject of to _eat_, and a
     low score as object of the same verb)

@@ -37,7 +37,7 @@ hubness problem = default error
 * default error
   * The presence of [vectors known as hubs] is an intrinsic problem of
     high-dimensional spaces (Radovanović+ 2010b)
-  * `(*)` inverting the query: 
+  * `(*)` inverting the query:
     * a képvektor melyik szónak a legkevesebbedik legközelebbi szomszédja?
 
 # 2 Hubness in zero-shot mapping
@@ -70,7 +70,7 @@ hubness problem = default error
     The influence of hubness on nearest-neighbor methods in obj recog
     Intelligent Computer Communication and Processing (ICCP), 2011a
 * We adopt a much simpler approach
-  * pivot: more vectors in the source domain 
+  * pivot: more vectors in the source domain
     * We map these additional pivot elements and conjecture that we can use the
       topology of the subspace where the mapped pivot set lives to correct
       nearest neighbour retrieval
@@ -114,7 +114,7 @@ hubness problem = default error
       * robust against this effect: adding more training data does not help,
         but it does not harm
   * frequency bin show that
-    * most of the improvements are brought about for the all-important 
+    * most of the improvements are brought about for the all-important
       medium~ and low-frequency words
   * elements with the largest hub score
     * tend to be “garbage” low-frequency words
@@ -126,11 +126,11 @@ hubness problem = default error
 
 ## 3.2 Zero-shot image labeling and retrieving
 
-* Experimental setting 
+* Experimental setting
   * Images are represented by 4096-dimensional vectors extracted using the Caffe
     toolkit (Jia+ 2014) together with the pre-trained convolutional neural
     network of Krizhevsky+ (2012)
 * Results
-  * We consider both the 
+  * We consider both the
     * usual image labeling setting (Vision→Language) and the
     * image retrieval setting (Language→Vision)

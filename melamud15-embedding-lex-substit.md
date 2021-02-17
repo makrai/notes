@@ -45,6 +45,6 @@ A Simple Word Embedding Model for Lexical Substitution
 
 * Omer Levy and Yoav Goldberg. 2014a. Dependency-based word embeddings. ACL
 * Omer Levy and Yoav Goldberg. 2014b. CoNLL-2014
-  Linguistic regularities in sparse and explicit word representations. 
-* Omer Levy, Yoav Goldberg, and Ido Dagan. TACL 2015. 
+  Linguistic regularities in sparse and explicit word representations.
+* Omer Levy, Yoav Goldberg, and Ido Dagan. TACL 2015.
   Improving distributional similarity with lessons learned from word embeddings

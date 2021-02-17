@@ -22,7 +22,7 @@ Gene Kim and Lenhart Schubert
       * Harabagiu+ 1999; Moldovan and Rus, 2001; Hobbs, 2008
     * such as Hobbs Logical Form (HLF) (Hobbs, 1985)
   * OWL-DL
-    * OWL Working Group, 2004; Allen+ 2011; Allen+ 2013; 
+    * OWL Working Group, 2004; Allen+ 2011; Allen+ 2013;
       Orfan and Allen, 2015; Mostafazadeh and Allen, 2015
     * Allen+ (2013) integrates information from a high-level ontology with
       glosses of semantically related clusters of words to concepts
@@ -33,7 +33,7 @@ Gene Kim and Lenhart Schubert
 # 4 Gloss Axiomatization
 
 * In this section, we describe our approach to semantic parsing and
-  axiomatization of WordNet entries. Our approach consists of 
+  axiomatization of WordNet entries. Our approach consists of
 * three major steps:
   1. Argument structure inference (Section 4.1)
     * refines the WordNet sentence frames using the provided examples. Specific
@@ -48,7 +48,7 @@ Gene Kim and Lenhart Schubert
 * preprocessing of the glosses is necessary because glosses often omit
   arguments, resulting in an incomplete sentence
 * There are also some serious shortcomings to general semantic parsers,
-  particularly in handling coordinators and/ or. 
+  particularly in handling coordinators and/ or.
 * In this section, we describe the complete semantic parsing process of glosses
   and the details of each step. Throughout our semantic parsing implementation,
   we use the tree-to-tree transduction tool (TTT) (Purtee and Schubert, 2012)
@@ -77,12 +77,12 @@ frame using the mapping in Table 1
 
 * include nouns, adjectives, and adverbs
 * may be improved by looking through the hypernym graph and borrowing results
-  from parses of parents (generalizations) of words. We can also 
+  from parses of parents (generalizations) of words. We can also
 * incorporate techniques from Allen+  (2011; 2013) and Mostafazadeh &
-  Allen (2015) to integrate results from related sets of glosses. 
+  Allen (2015) to integrate results from related sets of glosses.
 * The high-level TRIPS ontology could be used to improve robustness in the face
   of inconsistencies in WordNet and interpretation errors
 * more sophisticated WSD techniques, such as those from the SENSEVAL3 task on
   WSD (Litkowski, 2004)
-* argument coherence could be improved 
+* argument coherence could be improved
   using techniques from Mostafazadeh & Allen (Mostafazadeh and Allen, 2015)

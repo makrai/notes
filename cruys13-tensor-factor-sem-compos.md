@@ -4,7 +4,7 @@ naacl 2013
 
 # Abstract
 
-* compositionality is modeled as a multi-way interaction 
+* compositionality is modeled as a multi-way interaction
   between latent factors, which are automatically constructed from corpus data
 * We ... model the composition of `subject verb object` triples
   1. compute a latent factor model for nouns from standard co-occurrence data
@@ -44,7 +44,7 @@ naacl 2013
   * Giesbrecht (2010) [a distributional model] sensitive to word order
   * Van de Cruys (2010)
     * a three-way selectional preference model of verbs, subjects, and objects
-  * Tucker decomposition[,] the same as Giesbrecht’s; and 
+  * Tucker decomposition[,] the same as Giesbrecht’s; and
     similar to Van de Cruys (2010)
     * former research does not use any syntactic information for the
       construction of the tensor
@@ -62,13 +62,13 @@ naacl 2013
 
 ## 3.3 Modeling multi-way interactions
 
-* inspired by ... Tucker decomposition (Tucker, 1966), although 
+* inspired by ... Tucker decomposition (Tucker, 1966), although
   our own model instantiation differs significantly
 
 ### 3.3.1 Tucker decomposition
 
-* also known as higher order singular value decomposition (HOSVD) 
-  (De Lathauwer+ 2000) 
+* also known as higher order singular value decomposition (HOSVD)
+  (De Lathauwer+ 2000)
 * a tensor is decomposed into a core tensor `G`,
   multiplied by matrices `A, B, C` along each mode
 * matrices `A, B`, and `C` represent the latent factors for each mode,

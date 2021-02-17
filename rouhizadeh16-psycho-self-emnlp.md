@@ -16,7 +16,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * organization
   * relationship between first person singular pronouns and
     age, gender, and depression
-  * syntactic position of the pronoun 
+  * syntactic position of the pronoun
     * occurrence in the subject and direct object position
   * self-referenced use of verbs compared to their general use
     across different semantic categories

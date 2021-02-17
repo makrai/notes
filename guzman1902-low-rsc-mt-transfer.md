@@ -8,7 +8,7 @@ Data and code: https://github.com/facebookresearch/flores
   * Besides learning, it is difficult to evaluate methods
 * we introduce the FLoRes evaluation datasets for
   Nepali-English and Sinhala-English, based on sentences translated from Wikiped
-  * morphology and syntax very different from English, for which 
+  * morphology and syntax very different from English, for which
     little out-of-domain parallel data is available and for which
     relatively large amounts of monolingual data are freely available
   * collect and cross-check the quality of translations, and we report

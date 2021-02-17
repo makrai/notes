@@ -61,23 +61,23 @@ components:
 * After reading the story, one is prepared to answer negatively the question of
   whether there was someone else besides Mr. Hug and the robbers present.
 * However, sentences describing such another person could be added to the story
-  without contradiction. 
-* Our basis for the negative answer is ... Occam’s razor 
-* the notion of the minimal completion of a story 
+  without contradiction.
+* Our basis for the negative answer is ... Occam’s razor
+* the notion of the minimal completion of a story
   * a process formalizing Occam’s razor
   * works from a set of sentences and is not logical deduction although it
   * might be accomplished by deduction in a meta-language that contained
     sentences about sets of sentences
-  * [not] deduction, because it generates sentences that contradict 
-* It has been suggested that probabilistic reasoning should be used 
+  * [not] deduction, because it generates sentences that contradict
+* It has been suggested that probabilistic reasoning should be used
 * it might make more sense to assign a probability to the correctness of the
-  minimal completion 
-* Another problem [is the isolation] from the rest of the world. 
-  * The members of the Police Emergency Squad all have mothers 
+  minimal completion
+* Another problem [is the isolation] from the rest of the world.
+  * The members of the Police Emergency Squad all have mothers
 
 # 5 CONCLUSION
 
 * [each] predicate calculus sentence ... is generated approximately from a
-  sentence of the story 
+  sentence of the story
 * The completion, however, will depend on the whole of the story.
-* what can be determined from [stopping] in the middle of a sentence 
+* what can be determined from [stopping] in the middle of a sentence

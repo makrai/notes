@@ -7,12 +7,12 @@ http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extractio
 
 # Intro
 
-* keyphrases 
-  * enabled fast and accurate searching for a given document 
-  * [have] potential in improving many NLP and IR tasks, such as 
-    * text summarization (Zhang et al., 2004), 
-    * text categorization (Hulth and Megyesi, 2006), 
-    * opinion mining (Berend, 2011), and 
+* keyphrases
+  * enabled fast and accurate searching for a given document
+  * [have] potential in improving many NLP and IR tasks, such as
+    * text summarization (Zhang et al., 2004),
+    * text categorization (Hulth and Megyesi, 2006),
+    * opinion mining (Berend, 2011), and
     * document indexing (Gutwin et al., 1999).
 
 # 2 [corpus-related issues]
@@ -32,12 +32,12 @@ http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extractio
 ## 3.1 extracting a list of words/phrases that serve as candidate keyphrases
 
 * heuristic rules
-  1.  using a stop word list to remove stop words (Liu et al., 2009b), 
+  1.  using a stop word list to remove stop words (Liu et al., 2009b),
   2.  allowing words with certain partof-speech tags (e.g., nouns, adjectives,
       verbs) to be candidate keywords (Mihalcea and Tarau, 2004; Wan and Xiao,
-      2008b; Liu et al., 2009a), 
+      2008b; Liu et al., 2009a),
   3. allowing n-grams that appear in Wikipedia article titles to be candidates
-     (Grineva et al., 2009), and 
+     (Grineva et al., 2009), and
   4. extracting n-grams (Witten et al., 1999; Hulth, 2003; Medelyan et al.,
      2009) or noun phrases (Barker and Cornacchia, 2000; Wu et al., 2005) that
      satisfy pre-defined lexico-syntactic pattern(s) (Nguyen and Phan, 2009).

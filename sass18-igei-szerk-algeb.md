@@ -1,4 +1,4 @@
-Sass Bálint: 
+Sass Bálint:
 Az igei szerkezetek algebrai struktúrája, avagy a duplakocka modell
 Argumentum 2018 Debreceni Egyetemi Kiadó
 
@@ -10,10 +10,10 @@ Argumentum 2018 Debreceni Egyetemi Kiadó
 
 * minden mondatvázból a gyakoriságot az illeszkedő, rövidebb (a rövidebbek
   között a lehető leghosszabb) szerkezetek közül egy véletlenszerűen
-  kiválasztott kapja ... a véletlenszerű örököltetés megjegyzős.) A módszer 
+  kiválasztott kapja ... a véletlenszerű örököltetés megjegyzős.) A módszer
 * A véletlenszerű örököltetés miatt szükség volt egy visszaellenőrzésnek
   nevezett trükkre, ami mondatvázanként a túl rövid szerkezetekhez tévedt
   gyakoriságokat hivatott utólag a helyükre terelni, a hosszabb, specifikusabb
-  szerkezetekhez. Az eljárás nagyon egyszerű 
+  szerkezetekhez. Az eljárás nagyon egyszerű
 * megállási feltételt alkalmaz: ha az összegyűlt gyakoriság a fix 5 értéknél
   * a v-isz feltételek mindkét pontját megszegi sok esetben

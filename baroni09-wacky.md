@@ -18,7 +18,7 @@
 * there are initiatives that cover
   * more languages (Sharoff, 2006), web corpora with
   * more in-depth linguistic annotation (Boleda+ 2006), and many
-  * larger web-derived resources 
+  * larger web-derived resources
     (Clarke+ 2005; Liu and Curran, 2006; Shaoul and Westbury, 2007)
 * the WaCky collection offers a compromise between
   * very large size

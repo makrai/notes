@@ -61,7 +61,7 @@ Last Words.  Computational Linguistics and Deep Learning
 
 * we might return ... to some of the interesting linguistic and cognitive issues
   * motivated non-categorical representations and neural network approaches.
-  * e.g. the POS of words in the gerund V-ing form, 
+  * e.g. the POS of words in the gerund V-ing form,
 * explaining linguistic variation and change with distributed representations
   * Sagi, Kaufmann, and Clark (2011)—actually
   * Kulkarni+ (2015)

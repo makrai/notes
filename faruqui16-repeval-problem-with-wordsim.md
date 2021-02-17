@@ -45,7 +45,7 @@ Manaal Faruqui, Yulia Tsvetkov, Pushpendre Rastogi, Chris Dyer
 
 ## 2.8 Inability to account for polysemy
 
-* there has been progress on obtaining multiple vectors per word-type 
+* there has been progress on obtaining multiple vectors per word-type
   to account for different word-senses
   * Reisinger and Mooney, 2010
   * Huang+ 2012

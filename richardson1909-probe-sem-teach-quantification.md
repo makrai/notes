@@ -147,7 +147,7 @@ Conditionals	|Francisco has visited Potsdam and if Francisco has visited
 ENTAILMENT    |Tyrone has visited Pampa
 Comparatives	|J is taller than G and Erik..., and Mitchell is as tall as J
 NEUTRAL	      |Erik is taller than G.
-Monotonicity	|All black mammals saw exactly 5 stallions who danced 
+Monotonicity	|All black mammals saw exactly 5 stallions who danced
 ENTAILMENT    |A brown or black poodle saw exactly 5 stallions who danced
 SNLI+MNLI	    |During calf roping a cowboy calls off his horse
 CONTRADICTION	|A man ropes a calf successfully
@@ -158,7 +158,7 @@ CONTRADICTION	|A man ropes a calf successfully
 * we experiment with two task-specific NLI models from the literature
   * ESIM model of Chen+ (2017) and the
   * decomposable-attention (Decomp-Attn) model of Parikh+ (2016) as implemented
-    in the AllenNLP toolkit (Gardner+ 2018), and the 
+    in the AllenNLP toolkit (Gardner+ 2018), and the
     pre-trained BERT architecture of Devlin+ (2019)
 * q1: whether fragments can be learned from scratch (Question 1),
   we train models on these fragments directly using standard training protocols
@@ -198,12 +198,12 @@ CONTRADICTION	|A man ropes a calf successfully
 * commonsense reasoning common in existing NLI tasks (LoBue and Yates 2011)
 * Benchmark NLI annotations and judgements are often imperfect and error-prone
   (Kalouli, de Paiva, and Real (2017), Pavlick and Kwiatkowski (2019)),
-  partly due to the loose way in which the task is traditionally defined 
+  partly due to the loose way in which the task is traditionally defined
   (Dagan, Glickman, and Magnini 2005)
   * probing the particular flavor of NLI that is captured in each benchmark
 
 ## What are Models Actually Learning?
 
 * correlate neural activation patterns and target symbolic patterns
-  (Chrupała and Alishahi 2019) 
+  (Chrupała and Alishahi 2019)
   might help determine the extent to which models are truly generalizing

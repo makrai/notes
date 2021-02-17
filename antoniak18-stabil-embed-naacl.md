@@ -21,7 +21,7 @@ naacl 2018
 * small corpora are common in digital humanities and computational social sci
 * We
   * examine four different algorithms and six datasets, and we
-  * manipulate the corpus by shuffling the order of the documents and 
+  * manipulate the corpus by shuffling the order of the documents and
     taking bootstrap samples of the documents
 * Smaller corpora and larger document sizes increase this variation
 
@@ -29,7 +29,7 @@ naacl 2018
 
 * [embed in digital humanities and computational social sci]
   * Hamilton+ (2016) ... measure semantic shifts, and
-  * Heuser (2016) uses embeddings to characterize discourse about 
+  * Heuser (2016) uses embeddings to characterize discourse about
     virtues in 18th Century English text
   * variation of language across
     * geographical areas (Kulkarni+ 2016; Phillips+ 2017) and

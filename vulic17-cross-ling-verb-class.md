@@ -5,9 +5,9 @@ acl 2017
 
 # Abstract
 
-* Existing approaches to automatic VerbNet-style verb classification are 
+* Existing approaches to automatic VerbNet-style verb classification are
   ... limited to languages with mature NLP pipelines
-* we propose a novel cross-lingual transfer method for 
+* we propose a novel cross-lingual transfer method for
   inducing VerbNets for multiple languages
   * the first study [on how] embeddings can be applied to this ... task
 * Our method uses
@@ -21,7 +21,7 @@ acl 2017
 
 # Intro
 
-* expressing ... relational information among [the participants of an event] 
+* expressing ... relational information among [the participants of an event]
   (Jackendoff, 1972; Gruber, 1976; Levin, 1993)
 * VerbNet has been used to support
   * SRL (Swier and Stevenson, 2004; Giuglea and Moschitti, 2006)
@@ -43,7 +43,7 @@ acl 2017
 * VerbNet-style classification has a strong cross-lingual element
 * English VerbNet has high [manual translatability across typologically]
   diverse languages (Majewska+ 2017)
-* [embedding] coalesces [egyesít] fine-grained syntactic-semantic relations 
+* [embedding] coalesces [egyesít] fine-grained syntactic-semantic relations
   into a broad relation of semantic relatedness (e.g., coffee:cup)
   (Hill+ 2015; Kiela+ 2015)
   * adverse effect when word embeddings are used in downstream tasks such as
@@ -189,7 +189,7 @@ acl 2017
 * other structured lexical resources available in English
   such as FrameNet (Baker+ 1998), PropBank (Palmer+ 2005), and
   VerbKB (Wijaya and Mitchell, 2016)
-* porting the approach to other typologically diverse languages and 
+* porting the approach to other typologically diverse languages and
   truly low-resource settings
 * other distributional spaces, e.g. (Melamud+ 2016)
   * Oren Melamud, Jacob Goldberger, and Ido Dagan

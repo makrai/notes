@@ -33,13 +33,13 @@ explicit semantic analysis (Gabrilovich and Markovitch, 2009)
   * WordNets low inter-annotator agreement shown by Juergens (2014),
     some inter-annotator disagreements are not random (errors), but reflect
     different, linguistically motivated choices
-    * David Juergens. 
-      LREC 2014 
+    * David Juergens.
+      LREC 2014
       An analysis of ambiguity in word sense annotations
 
 # Brain imaging, anyone? p3
 
-* correlation between distances in word embedding space and EEG/fMRI space; 
+* correlation between distances in word embedding space and EEG/fMRI space;
   * or, perhaps more robustly, the P@k predicting nearest neighbors
     EEG/fMRI/etc.  using embeddings
 * Evaluating the squared error of a regression model trained to associate the

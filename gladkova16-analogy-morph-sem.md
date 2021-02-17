@@ -170,8 +170,8 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
 
 * changing the power `a` for the Σ matrix of the SVD transformation can
   [change] the performance on individual categories by 40-50%
-  * Smaller value of `a` gives 
-    more weight to the dimensions which capture less variance 
+  * Smaller value of `a` gives
+    more weight to the dimensions which capture less variance
     * can correspond to subtle linguistic nuances
   * no setting yields the best result for all categories
 * word frequency,

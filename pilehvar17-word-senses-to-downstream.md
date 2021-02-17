@@ -18,13 +18,13 @@ https://github.com/pilehvar/sensecnn
 
 * sub-word or character-level information
   (Ballesteros+ 2015; Kim+ 2016)
-* We designing a pipeline that enables seamless 
+* We designing a pipeline that enables seamless
   integration of word senses into downstream NLP applications
   * benefiting from knowledge extracted from semantic networks
   * a quick graph-based Word Sense Disambiguation (WSD) algorithm
   * classification model based on Convolutional Neural Networks
     * shown to be very effective in various text classification tasks
-      (Kalchbrenner+ 2014; Kim, 2014; Johnson and Zhang, 2015; Tang+ 2015; 
+      (Kalchbrenner+ 2014; Kim, 2014; Johnson and Zhang, 2015; Tang+ 2015;
       Xiao and Cho, 2016)
 
 # 2 Motivation
@@ -41,7 +41,7 @@ https://github.com/pilehvar/sensecnn
   * take any arbitrary semantic network as input
   * speed and scalability
   * Conventional knowledge-based disambiguation systems
-    * Hoffart+ 2012; Agirre+ 2014; Moro+ 2014; 
+    * Hoffart+ 2012; Agirre+ 2014; Moro+ 2014;
       Ling+ 2015; Pilehvar and Navigli, 2014
     * often rely on computationally expensive graph algorithms
   * supervised WSD and entity linking techniques

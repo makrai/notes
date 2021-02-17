@@ -36,7 +36,7 @@ https://github.com/facebook/Conditional-character-based-RNN
 * Ad-hoc solutions based on larger sub-word units
   * reasonable accuracy and training speed (Mikolov+ 2012)
   * one has to specify how to create the sub-word units
-    * differ from language to language; and 
+    * differ from language to language; and
     * a word can have multiple segmentations
 * number of parameters the RNN has to access during the training and test
   * The smaller is the input and output layer of RNN, the larger needs to be
@@ -57,7 +57,7 @@ https://github.com/facebook/Conditional-character-based-RNN
   * subword units are either
     * characters (Mikolov+ 2011; Sutskever+ 2011; Graves, 2013)
     * syllables (Mikolov+ 2012)
-  * embedding of words to deal with OOV words 
+  * embedding of words to deal with OOV words
     (Bilmes & Kirchhoff, 2003; Alexandrescu & Kirchhoff, 2006; Luong+ 2013)
     * Luong+ (2013)
       * recursive neural network over morpheme embeddings, while

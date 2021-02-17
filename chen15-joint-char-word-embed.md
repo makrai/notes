@@ -24,7 +24,7 @@ Joint Learning of Character and Word Embeddings
   * knowledge extraction [Lin+ 2015]
 * difficulties
   * (1) Compared with words, Chinese characters are much more ambiguous
-  * (2) Not all Chinese words are semantically compositional, 
+  * (2) Not all Chinese words are semantically compositional,
     such as transliterated words
 * rise to these challenges
   * (1) several methods for multiple-prototype character embeddings:

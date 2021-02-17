@@ -19,9 +19,9 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 * representing the meaning of transitive verb phrases
   (Grefenstette and Sadrzadeh, 2011; Grefenstette+ 2013; Kartsaklis+ 2012)
 * The meaning of a transitive verb is often ... disambiguated by its arguments,
-* capturing the meanings of transitive verb phrases [is useful in]
+* capturing the meanings of transitive verb phrases is useful in
   * semantic retrieval (Miyao+ 2006) and
-  * question answering (Who did What to Whom?) (Srihari and Li, 2000)
+  * question answering (Who did What to Whom?; Srihari and Li, 2000)
 * approaches to representing transitive verb phrases in a vector space
   * tensor calculus
     (Grefenstette and Sadrzadeh, 2011; Kartsaklis+ 2012; Van de Cruys+ 2013)
@@ -47,11 +47,11 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 
 # 2 Method 2
 
-* adjuncts, e.g. _An importer [makes] payment in his own domestic currency_
+* adjuncts, e.g. _An importer makes payment in his own domestic currency_
   * If we further observe the verb phrase “pay money” with a similar adjunct
-  * In [disambiguation], strong interactions between transitive verbs and
+  * In disambiguation, strong interactions between transitive verbs and
     their arguments are desirable as with the method in Tsubaki+ (2013)
-* [p3] To model the co-occurrence statistics we follow Van de Cruys+ (2013)
+* p3 To model the co-occurrence statistics we follow Van de Cruys+ (2013)
   * our method can treat phrases as the arguments
 * plausibility judgment task
   * i.e. score of observed has to be greater than that of random
@@ -74,7 +74,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
     Tamara Polajnar, Laura Rimell, and Stephen Clark
     Using Sentence Plausibility to Learn the Semantics of Transitive Verbs
     Workshop on Learning Semantics at NIPS 2014
-* which [pre-trained] word embeddings are suitable for each method or task
+* which pre-trained word embeddings are suitable for each method or task
   (Milajevs+ 2014)
 
 # 3 Experimental Settings
@@ -112,7 +112,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
     (Kartsaklis and Sadrzadeh, 2013; Milajevs+ 2014; Polajnar+ 2014), GS’11
   * For example, the transitive verb “run” is known as polysemous: operate/move
     * “run” and “operate” are similar when subj = “people” and obj = “company”
-    * In the same [context, not similar to] “move”
+    * In the same context, not similar to “move”
 
 #### Transitive verb phrase similarity
 
@@ -147,8 +147,8 @@ The other datasets are
   (Grefenstette and Sadrzadeh, 2011; Hashimoto+ 2014; Kartsaklis+ 2012;
    Tsubaki+ 2013)
 * Grefenstette and Sadrzadeh (2011) presented a method for
-  calculating a verb matrix using [pre-trained word embeddings of its args]
-  * then [composition functions for] the verb matrices and the noun embeds
+  calculating a verb matrix using pre-trained word embeddings of its args
+  * then composition functions for the verb matrices and the noun embeds
   * Their approach has been followed by some recent studies
     * Kartsaklis+ 2012
     * Milajevs+ 2014

@@ -44,7 +44,7 @@ The meaning-frequency law in Zipfian optimization models of communication
   * for Eq 2 (Baayen & Moscoso del Prado Martín 2005; Crossley et al. 2010;
     Hernández-Fernández et al. 2016)
    * for Eq 1 (Ilgen & Karaoglan 2007)
-* weak version of the meaning-frequency law can be defined 
+* weak version of the meaning-frequency law can be defined
   * simply as a positive correlation between \mu and f
   * not assuming a Pearson correlation here, which is ... linear (Conover 1999)
   * non-linear ..., e.g., Spearman rank correlation (Conover 1999; Zhou+ 2003)
@@ -61,26 +61,26 @@ The meaning-frequency law in Zipfian optimization models of communication
       for meaning) ... in dolphin whistles (Ferrer-i-Cancho & McCowan 2009)
 * Here we investigate ... a family of Zipfian optimization models
   (Ferrer-i-Cancho & Solé 2003; Ferrer-i-Cancho 2005)
-  * yield Eq.  2 with \delta = 1 thus 
+  * yield Eq.  2 with \delta = 1 thus
     satisfying only the weak meaning-frequency relationship
 
 # 4. A weak meaning-frequency law is possible
 
-* tendency of different forms to _contrast_ in meaning 
+* tendency of different forms to _contrast_ in meaning
   * Clark (1987) The principle of contrast: a constraint on language acquisit
 * an inverse-factorial distribution ... in Model B (Prokopento et al. 2010)
   * differs from the traditional power-law
   * should be considered as a candidate for in empirical research on Zipf’s law
     * Li, W., Miramontes, P. & Cocho, G. (2010) [37]
-      Fitting ranked linguistic data with two-parameter functions 
+      Fitting ranked linguistic data with two-parameter functions
     * Font-Clos et al 2013 [43]
-      A scaling law beyond Zipf's law and its relation to Heaps' law 
+      A scaling law beyond Zipf's law and its relation to Heaps' law
     * Gerlach & Altmann 2013) [84]
       Stochastic model for the vocabulary growth in natural languages
 
 # 5. Discussion
 
-* There are many models of Zipf’s law for word frequencies 
+* There are many models of Zipf’s law for word frequencies
   * Piantadosi (2014) Zipf’s law in natural language: a critical revw... [136]
 * [gyanús a cikk, mindenesetre ezt állítja:]
   * but as far as we know the family of models reviewed here is the only that

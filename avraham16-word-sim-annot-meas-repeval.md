@@ -40,10 +40,10 @@ Oded Avraham and Yoav Goldberg
     rank each pair in comparison to 50 randomly selected pairs
     * daunting annotation task
 2. rating different relations on the same scale
-  * A difference of 1.8 similarity scores testifies to 
-    * same rel: sim(smart, dumb) = 0.55, sim(winter, summer) = 2.38. 
+  * A difference of 1.8 similarity scores testifies to
+    * same rel: sim(smart, dumb) = 0.55, sim(winter, summer) = 2.38.
     * true superiority of one pair: sim(cab, taxi) = 9.2, sim(cab, car) = 7.42
-3. The third problem is rating different target words on the same scale. 
+3. The third problem is rating different target words on the same scale.
   * Even within preferred relation pairs, there are ill-defined comparisons,
     e.g.: (cat, pet) vs. (winter, season). It’s quite unnatural to compare
   * in contrast to pairs which share the target, (cat, pet) vs. cat, animal).
@@ -56,14 +56,14 @@ Oded Avraham and Yoav Goldberg
 
 # 4 Proposed Improvements
 
-1. annotation task, an explicit ranking task. Similarly to Bruni+ (2012), 
+1. annotation task, an explicit ranking task. Similarly to Bruni+ (2012),
   * each pair will be directly compared with a subset of the other pairs.
-  * Unlike Bruni+, with only a few carefully selected pairs, 
+  * Unlike Bruni+, with only a few carefully selected pairs,
     following the principles in (2) and (3)
-2. a single preferred relation type, and 
+2. a single preferred relation type, and
   * only preferred-relation pairs will be presented to the annotators. We
   * spare the annotators the effort of considering the type of the similarity
-  * concentrate on the strength of the similarity 
+  * concentrate on the strength of the similarity
   * Word pairs following unpreferred-relations will still be a part of the
     dataset – we always add them to the bottom of the ranking
 3. Any pair will be compared only with pairs sharing the same target word
@@ -82,7 +82,7 @@ Oded Avraham and Yoav Goldberg
 # 5 Experiments
 
 * We created
-* two datasets following the proposal discussed above: 
+* two datasets following the proposal discussed above:
   one preferring the hyponymhypernym relation, and the other the cohyponym rel
 * Hebrew nouns
 * we used

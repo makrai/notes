@@ -160,7 +160,7 @@ Sent: The tall man
   man   New York
   dog   John
 Sent: The man in New York
-John’s dog . 
+John’s dog .
 6. ACT <-oPP
 Ex: hit <-oboy
 Sent: (He) hit the boy
@@ -195,8 +195,8 @@ Sent: (He) hit the boy
   * John grew the plants with fertilizer
   * We denote causality by <=
 * what appeared to be an _instrument_ syntactically ... then conceptually
-  turned out to be an object of an action 
-  * This ... is what always happens to a conceptual instrument: 
+  turned out to be an object of an action
+  * This ... is what always happens to a conceptual instrument:
     a single PP cannot be a conceptual instrument
 * actors can only be animate or some natural phenomenon
   * The stick hit the boy
@@ -319,7 +319,7 @@ Sent: (He) hit the boy
   * there exists a network of concepts and relations
     * one relation is the central core (G)
   * an action is made up of from zero to three principal dependents
-    * that these dependents are retrievable through the ACT and that 
+    * that these dependents are retrievable through the ACT and that
       it is probably not possible to think of an actor and a case dependent
       without somehow thinking of the action that links them
     * some dependents are retrievable through each other (object and recipient

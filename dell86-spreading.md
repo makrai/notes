@@ -35,7 +35,7 @@ Psychological Review 1986, Vol. 93, No. 3,283-321
     (Bock, 1983; Cooper & Paccia-Cooper, 1980; Fromkin, 1980;
     Sternberg, Monsell, Knoll, & Wright, 1978)
 * This article presents a new theory of production
-  * current theories have not been developed to the point that 
+  * current theories have not been developed to the point that
     * a large number of precise quantitative predictions can be made and tested
     * data can be fitted to models
   * The theory presented here is a step toward reaching this goal

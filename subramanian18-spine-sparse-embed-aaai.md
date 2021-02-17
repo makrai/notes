@@ -57,7 +57,7 @@ https://github.com/harsh19/SPINE
     word participates in a particular dimension
 * Park+ (2017) apply rotations to improve the interpretability
 * Our method, differently from these approaches, is
-  * based on neural models, and is hence 
+  * based on neural models, and is hence
     more expressive than linear matrix factor or simple trafos like rotation
 * Faruqui+ (2015, b) Sparse Overcomplete Word Vectors (SPOWV)
   * We direct interested readers to (Faruqui+ 2015; Lee+ 2007)

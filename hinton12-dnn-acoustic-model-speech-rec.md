@@ -26,11 +26,11 @@ Toronto, Microsoft, Google, IBM
 * GMMs ... are statistically inefficient for modeling data that lie on or near
   a non-linear manifold
 * the last few years... led to more efficient methods for training deep neural
-  networks (DNNs) that contain 
-  * many layers of non-linear hidden units and 
-  * a very large output layer 
-    * HMM states 
-    * when each phone is modelled by a number of different “triphone” 
+  networks (DNNs) that contain
+  * many layers of non-linear hidden units and
+  * a very large output layer
+    * HMM states
+    * when each phone is modelled by a number of different “triphone”
       * HMMs that take into account the phones on either side.
 
 # II. Training deep neural networks
@@ -40,7 +40,7 @@ two-stage
      fitting a stack of generative models, each of which has one layer of
      latent variables. These generative models are trained without using any
      information about the HMM states that the acoustic model will need to
-     discriminate. 
+     discriminate.
   2. each generative model in the stack is used to initialize one layer of
      hidden units in a DNN and the whole network is then discriminatively
      fine-tuned to predict the target HMM states. These targets are obtained

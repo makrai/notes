@@ -1,4 +1,4 @@
-Semantic Role Labeling in the Training Corpus for Slovene 
+Semantic Role Labeling in the Training Corpus for Slovene
 Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
 2016, Conference on Language Technologies & Digital Humanities Ljubljana
 
@@ -141,7 +141,7 @@ times).
 
 In the labeling of multi-word units are set PDT maintain a tag DPHR (Dependant
 part of phraseme), which was renamed the phrase. We denote phraseological
-Relationship Type: Phrase _go on the nerves_, _wrapped in silence_ Phrase etc. 
+Relationship Type: Phrase _go on the nerves_, _wrapped in silence_ Phrase etc.
 * We in the Slovenian range tag is stacked legends MWPRED (Multi-word
   predicate), which was used for the labeling of communications and the
   infinitive of the verb phase, for example. MWPRED _started to cry_, and to
@@ -297,4 +297,4 @@ system to marking semantic roles developed in the existing system JOS, transfer
 and check in system, UD, which is one of the tasks for the future. Transfer
 makes sense from the standpoint of compatibility between the Slovenian and
 Croatian labeling system in the framework of the bilateral project, because
-Croatia nursery uses tags UD 
+Croatia nursery uses tags UD

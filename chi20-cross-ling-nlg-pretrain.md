@@ -23,12 +23,12 @@ https://github.com/CZWin32768/xnlg
     * generate pseudo training data for other language pairs that lack it
       (Shen+ 2018; Duan+ 2019)
 * we propose a
-  * cross-lingual pre-trained model (named as XNLG) in order to 
-  * transfer monolingual NLG supervision to other pre-trained languages 
+  * cross-lingual pre-trained model (named as XNLG) in order to
+  * transfer monolingual NLG supervision to other pre-trained languages
     by fine-tuning
     * shares the same sequence-to-sequence model across languages, and is
     * pre-trained with both monolingual and cross-lingual objectives
-    * learns to understand multilingual input 
+    * learns to understand multilingual input
     * can also generate specific languages by conditioning on the encoded sem
   * Figure 1 demonstrates how to use XNLG to perform cross-lingual transfer
     * enables us to fine-tune the pre-trained model on monolingual NLG data, and
@@ -52,7 +52,7 @@ https://github.com/CZWin32768/xnlg
     to improve cross-lingual summarization
     * only generate summaries with different languages from the input language,
       rather than transferring supervision signals across all language pairs
-* Kumar+ (2019) use training data annotated in multiple languages to 
+* Kumar+ (2019) use training data annotated in multiple languages to
   jointly train a sequence-to-sequence model for question generation
 
 ## Monolingual Pre-Training
@@ -64,7 +64,7 @@ https://github.com/CZWin32768/xnlg
   * Apart from pre-training encoders,
     several pre-trained models (Dong+ 2019; Song+ 2019) are proposed for
     generation tasks
-    * Dong, L.; Yang, N.; Wang, W.; Wei, F.; Liu, X.; Wang, Y.; Gao, J.; 
+    * Dong, L.; Yang, N.; Wang, W.; Wei, F.; Liu, X.; Wang, Y.; Gao, J.;
       Zhou, M.; and Hon, H.-W
       Unified LM pre-training for natural language understanding and generation
       arXiv preprint arXiv:1905.03197
@@ -76,13 +76,13 @@ https://github.com/CZWin32768/xnlg
 
 * mBERT shows a surprising ability (Wu and Dredze 2019)
 * Lample and Conneau (2019) extend mask language modeling pre-training to
-  cross-lingual settings, which shows 
+  cross-lingual settings, which shows
   significant improvements on cross-lingual classification and unsup MT
   * By comparison, we pretrain both encoder and decoder for cross-lingual
     generation tasks, rather than only focusing on encoder
 * Artetxe and Schwenk (2018) use the sequence encoder of the multilingual
   translation model (Johnson+ 2017) to produce cross-lingual sentence embeds
-  * However, as shown in the experiments (Section 4), 
+  * However, as shown in the experiments (Section 4),
     it is difficult to control the target language by directly fine-tuning the
     pre-trained translation model on downstream NLG tasks
 
@@ -93,7 +93,7 @@ https://github.com/CZWin32768/xnlg
   * Both the encoder and the decoder are supposed to support multiple languages
   * we use language tag embeddings to distinguish the source and target langs,
     following (Lample and Conneau 2019),
-  * Given a sentence and its corresponding language tag, 
+  * Given a sentence and its corresponding language tag,
     XNLG encodes the input into vector representations
   * By conditioning on the encoding vectors and a specific language tag, the
     decoder generates the output sequence in the target language

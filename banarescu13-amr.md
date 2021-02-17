@@ -218,7 +218,7 @@ Abstract Meaning Representation for Sembanking
 :location (j / jar
 :polarity -)
 :time (y / yesterday))
-``` 
+```
 > yesterday’s marble in the non-jar
 
 * Some reifications are standard PropBank framesets

@@ -17,12 +17,12 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   * It is already used in many downstream NLP tasks, such as
     * splitting compounds (Daiber+ 2015)
     * semantic search (Cohen+ 2015)
-      Trevor Cohen, Dominic Widdows, and Thomas Rindflesch. 
+      Trevor Cohen, Dominic Widdows, and Thomas Rindflesch.
       Expansion-by-analogy: a vector symbolic approach to semantic search
       In Quantum Interaction, 2015 Springer, pages 54–66
     * cross-language relational search (Duc+ 2012)
 * One way to explain the current limitations is to attribute them to the
-  imperfections of the models and/or the corpora they are built on: 
+  imperfections of the models and/or the corpora they are built on:
   with this view, in a perfect VSM, any linguistic relation should work
 * The alternative to be explored in this of paper is that perhaps natural
   language semantics is more complex
@@ -51,7 +51,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * not all relations can be identified in this way, with ... synonymy and
   antonymy being particularly difficult (Köper+ 2015; Vylomova+ 2016)
 * The assumption of a single best-fitting [answer is also] targeted
-  (Newman-Griffis+ 2017) 
+  (Newman-Griffis+ 2017)
 * Drozd+ (2016): some relations missed by 3CosAdd could be recovered with a
   supervised method
 
@@ -65,7 +65,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   encyclopedic semantics (10 relations of each type)
 * The evaluation with 3CosAdd and LRCos methods was conducted with the Python
   script that accompanies BATS
-* 3CosMul, a multiplicative objective proposed by Levy and Goldberg (2014), 
+* 3CosMul, a multiplicative objective proposed by Levy and Goldberg (2014),
   now available in the same script
 
 ## 3.2 The “Honest” 3CosAdd
@@ -82,7 +82,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   close to each other and the target vector
 * could explain ... the overall lower performance on BATS derivational
   morphology questions [as opposed to inflectional] or encyclopedic semantics
-  * man [and woman are] reasonably similar distributionally, as 
+  * man [and woman are] reasonably similar distributionally, as
     they combine with many of the same verbs: both men and women sit, sleep
     the same could not be said of words derived with prefixes that change POS
 * snow: white :: sugar: ?white, the correct answer would a priori be excluded

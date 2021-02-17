@@ -62,7 +62,7 @@ arXiv:2004.10151 [cs.CL]
 * language modeling—the modern workhorse of neural NLP systems
   * leader boards results make claims to super-human accuracy (Rajpurkar+ 2018)
   * However, in the LAM-BADA dataset (Paperno+ 2016) capture human intuition,
-    GPT2 (Radford+ 2019, 1.5B), Megatron-LM (Shoeybi+ 2019, 8.3B), and 
+    GPT2 (Radford+ 2019, 1.5B), Megatron-LM (Shoeybi+ 2019, 8.3B), and
     TuringNLG (Rosset, 2020, 17B) perform within a few points of each other
     * very far from perfect (<68%)
   * expand hardware and data sizes by orders of magnitude is not the path
@@ -99,7 +99,7 @@ arXiv:2004.10151 [cs.CL]
     fundamental referents to ground symbols
 * models must be able to watch and recognize objects, people, and activities
   to understand the language describing them
-  (Li+ 2019b; Krishna+ 2017; Yatskar+ 2016; Perlis, 2016) 
+  (Li+ 2019b; Krishna+ 2017; Yatskar+ 2016; Perlis, 2016)
 * history of scripts and grounding (Mooney, 2008), recently
   * the NLP community has played an important role in the
 * Computer Vision community. In the last decade, CV researchers have
@@ -227,7 +227,7 @@ arXiv:2004.10151 [cs.CL]
     * visual disambig (Liu and Chai, 2015; Anderson+ 2018; Lazaridou+ 2017)
     * providing emotional support (Rashkin+ 2019)
   * all of which require inferring mental states and social outcomes—a key area
-    (Zadeh+ 2019) 
+    (Zadeh+ 2019)
 * As an example, what “hate” means (Bloom, 2002)
   * what it tells one about the processes operating in the environment
   * toddler’s social experimentation with “I hate you” that gives the word
@@ -248,7 +248,7 @@ arXiv:2004.10151 [cs.CL]
   * unlikely that models understand their listener any more than they
     understand the physical world in which they exist. This disconnect is
   * studies of bias (Gururangan+ 2018; Glockner+ 2018) and techniques like
-  * Adversarial Filtering (Zellers+ 2018, 2019b), which elucidate the biases 
+  * Adversarial Filtering (Zellers+ 2018, 2019b), which elucidate the biases
 * training data [should] offer the discriminatory signals that make the
   hypothesizing of consistent identity or mental states an efficient path
   * lack of inductive bias (Martin+ 2018): it is not clear that any learned
@@ -268,7 +268,7 @@ arXiv:2004.10151 [cs.CL]
 * social cognition (Fiske and Taylor, 1991; Carpenter+ 1998) present in the
   style of utterances and in the social script of the exchange
 * evaluation [ require ] situations where artificial agents ...  have enough
-  identity to be granted social standing for these interactions 
+  identity to be granted social standing for these interactions
 * Social interaction [signal in NLP]: persuasion related tasks where
   * interpersonal relationships are key (Wang+ 2019c; Tan+ 2016). These initial
   * strained [beszűkíti] by the training-validation-test set scenario, as
@@ -309,7 +309,7 @@ arXiv:2004.10151 [cs.CL]
 * syntax acquisition informed with visual information. Shi+ (2019) investigate
   * to learn headedness (e.g.  choosing the main verb vs the more common
     auxiliary as the root of a sentence, Bisk and Hockenmaier, 2015)
-* language modeling, Ororbia+ (2019) investigate the benefits of visual context 
+* language modeling, Ororbia+ (2019) investigate the benefits of visual context
 * Collaborative games have long served as a testbed (Werner and Dyer, 1991) for
   * shared goal, Suhr+ (2019a) introduced a testbed for evaluating NLU in
 * simpler visual paradigm for studying pragmatics (Andreas and Klein 2016). A
@@ -334,5 +334,5 @@ arXiv:2004.10151 [cs.CL]
   * trends (Church, 2007),
   * maturation toward a science (Steedman, 2008), and
   * major challenges (Hirschberg and Manning, 2015; McClelland+ 2019),
-  * [they and] we provide momentum for a direction many are already heading 
+  * [they and] we provide momentum for a direction many are already heading
 * What tasks, representations, and inductive-biases will fill the gaps?

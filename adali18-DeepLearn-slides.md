@@ -16,7 +16,7 @@ zoom, hogy lapozható legyen: 272%
     * More observational modes enable identification of more factors/sources
     * Each observational mode in an N-th order tensor provides diversity
     * Enables true fusion within a tensor structure
-  * When R is minimal, known as the canonical polyadic decomposition (CPD) 
+  * When R is minimal, known as the canonical polyadic decomposition (CPD)
     [Hitchcock, 1927; Carroll & Chang, 1970]
 
 * Examples in Matlab—Thanks to Evrim Acar, Simula Lab, Norway
@@ -33,7 +33,7 @@ zoom, hogy lapozható legyen: 272%
 
 ### CCA
 ### MCCA 59(28b)
-### IVA 61(29) 
+### IVA 61(29)
 
 * summary 72(34)
 

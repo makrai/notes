@@ -8,7 +8,7 @@ arxiv:16
 networks for image classification trained with stochastic gradient methods
 easily fit a ran- dom labeling of the training data. This phenomenon is
 qualitatively unaffected by explicit regularization, and occurs even if we
-replace the true images by com- pletely unstructured random noise. 
+replace the true images by com- pletely unstructured random noise.
 * We
 corroborate these experimental findings with a theoretical construction showing
 that simple depth two neural networks al- ready have perfect finite sample

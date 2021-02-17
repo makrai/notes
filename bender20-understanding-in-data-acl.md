@@ -15,7 +15,7 @@ ACL 2020 Best Theme Paper
     whether it operates over characters, words or sentences, and wh sequentially
   * (linguistic) meaning to be the relation between a linguistic form and
     communicative intent
-* progress depends on maintaining clarity around big picture notions 
+* progress depends on maintaining clarity around big picture notions
   in task design and reporting of experimental results
 * organization
 
@@ -28,8 +28,8 @@ ACL 2020 Best Theme Paper
   * intended as technical terms, they should be explicitly defined
 * imprudent use of terminology in our academic discourse feeds AI hype in the
   popular press
-  * As NLP gains public exposure and is more widely used in applied contexts, 
-    it is increasingly important that 
+  * As NLP gains public exposure and is more widely used in applied contexts,
+    it is increasingly important that
     the actual capabilities of our systems be accurately represented
   * NLP experts speaking with the media are being appropriately careful
   * popular press gets it wrong, such as (6) from the B2C website
@@ -43,17 +43,17 @@ ACL 2020 Best Theme Paper
       (again, all in English, Tenney+ 2019)
     * Hewitt and Manning (2019) find information analogous to unlabeled
       dependency structures in the word vectors provided by ELMo and BERT (en)
-    * word classes, both syntactic (POS, e.g. Lin+ 2015) and semantic 
+    * word classes, both syntactic (POS, e.g. Lin+ 2015) and semantic
       (lexical similarity, Rubenstein and Goodenough, 1965; Mikolov+ 2013)
 * success of the large LMs on apparently meaning sensitive tasks
   * they were instead simply more effective at leveraging artifacts in the data
   * Niven and Kao (2019): BERT’s unreasonably good performance on the English
-    Argument Reasoning Comprehension Task (Habernal+ 2018) 
+    Argument Reasoning Comprehension Task (Habernal+ 2018)
     falls back to chance if the dataset is modified by adding adversarial
-    examples that just negate one piece of the original, thus 
+    examples that just negate one piece of the original, thus
     mirroring the distribution of lexical cues for each label
   * McCoy+ (2019): BERT’s performance on the English Multi-genre NLI dataset
-    (Williams+ 2018) is predicated on its ability to leverage 
+    (Williams+ 2018) is predicated on its ability to leverage
     syntactic heuristics involving overlap (of full constituents, subsequences,
     or simply bags of words). In a dataset carefully designed to frustrate such
     heuristics, BERT’s performance falls to significantly below chance
@@ -69,7 +69,7 @@ ACL 2020 Best Theme Paper
 * Communicative intents are about something that is outside of language
   * _Open the window!_ or _When was Malala Yousafzai born?_, the communicative
     intent is grounded in the real world the speaker and listener inhabit
-  * Communicative intents can also be about abstract worlds, 
+  * Communicative intents can also be about abstract worlds,
     e.g.  bank accounts, computer file systems, or a purely hypothetical world
 * conventional (or standing) meaning (Quine, 1960; Grice, 1968)
   * distinguished from communicative intent
@@ -80,10 +80,10 @@ ACL 2020 Best Theme Paper
   * The speaker has a certain communicative intent i, and chooses an expression
     e with a standing meaning s which is fit to express i in the current
     communicative situation
-  * Upon hearing e, the listener then reconstructs s and 
+  * Upon hearing e, the listener then reconstructs s and
     uses their own knowledge of the communicative situation and their hypotheses
     about the speaker’s state of mind and intention in an attempt to deduce i
-    * This active participation of the listener is crucial to human comm 
+    * This active participation of the listener is crucial to human comm
       (Reddy, 1979; Clark, 1996)
     * humans are also willing to attribute communicative intent to a linguistic
       signals even if the originator of the signal is not an entity that could
@@ -163,7 +163,7 @@ ACL 2020 Best Theme Paper
 * system is also given access to a very large collection of unlabeled photos,
   but without any connection between the text and the photos
 * test time, we present the model with an utterance and a photograph,
-  like _How many dogs in the picture are jumping?_ or 
+  like _How many dogs in the picture are jumping?_ or
   _Kim saw this picture and said “What a cute dog!” What is cute?_
 * the appropriate answers are a number or a region of the photo, respectively
 
@@ -171,7 +171,7 @@ ACL 2020 Best Theme Paper
 
 # 6 human language acquisition: what information humans use to bootstrap
 
-> These three studies do not name the language that the children were 
+> These three studies do not name the language that the children were
 > learning. It appears to have been English
 
 * human language learning is not only grounded in the physical world around us,
@@ -206,7 +206,7 @@ ACL 2020 Best Theme Paper
     * photos (Hossain+ 2019) or
     * other modalities (Kiela and Clark, 2015; Kiela+ 2015)
   * interaction data, e.g. a dialogue corpus with success annotations,
-    * low-level success signals such as 
+    * low-level success signals such as
       emotional stress (McDuff and Kapoor, 2019) or eye gaze (Koller+ 2012),
       which contains a signal about the felicitous uses of forms
 * idea: as the learner gets access to more and more information in addition to
@@ -220,7 +220,7 @@ ACL 2020 Best Theme Paper
 
 # 8 On climbing the right hills. Reflections on progress and research effort 7
 
-* What about systems which are trained on a task that 
+* What about systems which are trained on a task that
   e.g. semantic parsing, or reading comprehension tests — and that use word
   * pretrained embeddings can boost the accuracy of the downstream system
     drastically, even for tasks that are clearly related to meaning
@@ -268,7 +268,7 @@ ACL 2020 Best Theme Paper
     * the somewhat unnatural communicative situation of crowdsourcing work
   * If a system does better on such a task than the inter-annotator agreement,
     the task probably has statistical artifacts that do not represent meaning
-* vision community, Barbu+ (2019) offer a novel dataset which explicitly 
+* vision community, Barbu+ (2019) offer a novel dataset which explicitly
   tries to achieve a more realistic distribution of task data
 * carefully creating new tasks (Heinzerling, 2019)
   * DROP reading comprehension benchmark (Dua+ 2019)

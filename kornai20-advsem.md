@@ -19,7 +19,7 @@ Direct predication
 Defaults
 Agents, patients
 Deep cases
-More complex notation 
+More complex notation
 
 # 3 Temporal and spatial semantics
 

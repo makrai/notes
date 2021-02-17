@@ -2,6 +2,12 @@ Handbook of Knowledge Representation
 Frank van Harmelen, Vladimir Lifschitz, and Bruce Porter
 2008
 
+* the book is divided into three sections:
+  1. general methods for representing knowledge in AI
+  2. core domains of knowledge, including time, space, causation and action
+  3. applications: question answering, the Semantic Web, planning, robotics and
+     multi-agent systems
+
 # Preface
 
 Fifty years later ...  Advances have been made on three fronts
@@ -14,7 +20,7 @@ Fifty years later ...  Advances have been made on three fronts
       systems.
   * the book is divided into three sections to cover these themes.
 * Organization
-  * Part I 
+  * Part I
     * background on classical logic and theorem proving
     * extend classical logic [to] qualitative or uncertain information
     * improve its computational tractability.
@@ -31,7 +37,7 @@ Fifty years later ...  Advances have been made on three fronts
         related to handling exceptions to general rules.
       7. builds on the previous one
       8. continues this theme
-      9. 
+      9.
         * qualitative models of continuous systems
         * reasoning with incomplete information
         * important for numerous tasks, such as diagnosis and tutoring.

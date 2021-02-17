@@ -18,15 +18,15 @@ NAACL 2015
 * Word representations [from] neural networks (Bengio+ 2003; Socher+ 2011a) or
   specialized models (Mikolov+ 2013a)
 * used [in] various NLP tasks
-  (Mnih+ 2009 LM; Huang+ 2014 weakly supervised; Bansal+ 2014 dependency) 
+  (Mnih+ 2009 LM; Huang+ 2014 weakly supervised; Bansal+ 2014 dependency)
 * capture various syntactic and semantic properties (Mikolov+ 2013b). In many
 * [supervised] approaches that combine morphology with word vectors
-  (Luong+ 2013; Botha and Blunsom, 2014), 
+  (Luong+ 2013; Botha and Blunsom, 2014),
   * we do not rely on an external morphological analyzer
 * our method is [based on] the Skip-Gram model described in (Mikolov+ 2013a)
-* observations made by Mikolov+ (2013b), and 
+* observations made by Mikolov+ (2013b), and
   further studied by (Levy and Goldberg, 2014; Pennington+ 2014)
-* we exploit these regularities to 
+* we exploit these regularities to
   model, in a principled way, prefix~ and suffix-based morphology
 * contributions of this paper are as follows:
 1. a method by which morphological rules are learned ... unsupervised

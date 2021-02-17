@@ -75,7 +75,7 @@ Our models and code are available at: https://github.com/pytorch/fairseq
   * sentence-pair+nsp
     * each input contains pair of natural sentences, either sampled from a
     * significantly shorter than 512 tokens, we increase the batch size so that
-      the total number of tokens remains similar to SEGMENT PAIR + NSP 
+      the total number of tokens remains similar to SEGMENT PAIR + NSP
     * We retain the NSP loss
   * FULL SENTENCES : Each input is packed with full sentences sampled contiguou
     * total length is at most 512 tokens

@@ -22,7 +22,7 @@ let fourteen flowers bloom
   * On the epistemological status of semantic networks
   * Encoding knowledge in partitioned networks
   * A procedural semantics for semantic networks
-  * The structure and organization of 
+  * The structure and organization of
     a semantic net for comprehension and inference
 * part II: THEORETICALLY ORIENTED EFFORTS
   * The SNePS semantic network processing system

@@ -28,7 +28,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
   * RNNs (Chung+ 2014; Hochreiter & Schmidhuber, 1997) and more recently
   * Transformers (Vaswani+ 2017)
 * relied on large-scale, high-quality datasets of supervised document-summary
-  pairs (Hermann+ 2015) and achieved 
+  pairs (Hermann+ 2015) and achieved
   * promising results (Rush+ 2015; Nallapati+ 2016; See+ 2017). In recent years,
 * new summarization datasets that have
   * more abstractive summaries (Narayan+ 2018), have
@@ -47,8 +47,8 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
     * patents (Sharma+ 2019), and
     * legislative bills (Kornilova & Eidelman, 2019). We find that
 * Gap Sentences Generation (GSG), a pre-training objective
-  * masking whole sentences from a document and 
-    generating these gap-sentences from the rest of the document 
+  * masking whole sentences from a document and
+    generating these gap-sentences from the rest of the document
   * In particular, choosing putatively important sentences outperforms lead or
     randomly selected ones
     * encouraging whole-document understanding and summary-like generation. We
@@ -68,7 +68,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
 * Qualitatively we observed high quality outputs from our best models and
   validated this in human evaluation studies
   * PEGASUS summaries >= reference summaries for the datasets we assessed –
-    XSum, CNN/DailyMail, and Reddit TIFU – 
+    XSum, CNN/DailyMail, and Reddit TIFU –
     even at low-levels of supervision
 * contributions:
   * GSG, new self-supervised pre-training objective for abstractive summ
@@ -77,7 +77,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
     * careful ablations to choose the best model settings, which
     * we train a 568M parameter PEGASUS model that
       surpasses or is on-par with the SOTA on all 12 downstream datasets
-  * domain adaptation by fine-tuning the PEGASUS model and 
+  * domain adaptation by fine-tuning the PEGASUS model and
     surpassing previous SOTA results on many tasks with only 1000 examples
   * human evaluation studies to validate our experimental design and demonstrate
     * human-level performance on XSum, CNN/DailyMail, and Reddit TIFU

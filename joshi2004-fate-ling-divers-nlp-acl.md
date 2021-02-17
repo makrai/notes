@@ -57,7 +57,7 @@ arxiv.org/abs/2004.09095
   2. Which typological features remain unexplored by systems because we
      have hardly created any resources and conducted data-driven research
   3. how inclusive has ACL been in conducting and publishing research
-    * was the linguistic diversity of ACL higher?  In 1980s and early 90s, 
+    * was the linguistic diversity of ACL higher?  In 1980s and early 90s,
       when large scale datasets were not the drivers
   4. amount of resource influence the research questions and the venue?
   5. role [of] an individual researcher, or a research community in bridging

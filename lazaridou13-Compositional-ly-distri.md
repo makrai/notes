@@ -16,7 +16,7 @@ Distributional Semantics
   Mitchell and Lapata, 2010; Socher+ 2012)
 * in linguistic morphology (Dowty, 1979; Lieber, 2004)
 * analogy: sentences
-  * Compositional distributional semantic models (cDSMs) of word units 
+  * Compositional distributional semantic models (cDSMs) of word units
     aim at handling, compositionally, the high productivity of phrases and
     consequent data sparseness
     * hypothesize that the same methods can be applied to morphology

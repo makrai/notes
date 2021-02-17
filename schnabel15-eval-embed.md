@@ -23,7 +23,7 @@ http://www.cs.cornell.edu/~schnabts/eval/
     poorly calibrated to corpus statistics
 * this paper
   * three [evaluation criteria]: word relatedness, coherence, downstream
-  * using different criteria results in different relative orderings 
+  * using different criteria results in different relative orderings
   * direct evaluation with real users [vs] pre-collected offline data
   * direct comparison of embeddings with respect to individual queries
     rather than overall summary scores

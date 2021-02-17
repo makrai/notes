@@ -12,7 +12,7 @@ experimental items, results, and analysis scripts available online at
   whether neural network LMs represent syntactic state
   * artificial sentences, syntactically complex
   * We test four models:
-    * two publicly available LSTM sequence models of English 
+    * two publicly available LSTM sequence models of English
       (Jozefowicz+ 2016; Gulordava+ 2018)
     * RNNG (Dyer+ 2016) trained on a small, parsed dataset
       * calculates Penn Treebank-style context-free syntactic reprs in LM
@@ -67,7 +67,7 @@ experimental items, results, and analysis scripts available online at
   indicating the beginnings and endings of such states: only the large LSTMs
   could sometimes reliably infer clause boundaries from verb argument structure
   (Section 4.1) and morphological verb-form (Section 4.2), and only GRNN and the
-  RNNG fully captured the proper behavior of subordinate clauses. 
+  RNNG fully captured the proper behavior of subordinate clauses.
 * The results are summarized in Table 2. We suggest that representation of
   course-grained syntactic structure requires either syntactic supervision or
   large data, while exploiting fine-grained lexical cues to structure requires

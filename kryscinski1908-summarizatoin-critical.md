@@ -10,7 +10,7 @@ EMNLP 2019
   * three primary shortcomings:
     * automatically collected datasets leave the task underconstrained and
       may contain noise detrimental to training and evaluation
-    * weakly correlated with human judgment and does 
+    * weakly correlated with human judgment and does
       not account for e.g. factual correctness
     * models overfit to layout biases of current datasets and offer
       limited diversity in their outputs
@@ -43,10 +43,10 @@ EMNLP 2019
 # 6 Conclusions
 
 * datasets require additional constraints to have well-formed summaries,
-  current SOTA methods learn to rely too heavily on 
-  layout bias associated with the particular domain of the text 
+  current SOTA methods learn to rely too heavily on
+  layout bias associated with the particular domain of the text
 * current evaluation protocol
   reflects human judgments only weakly while also
   failing to evaluate critical features (e.g. factual correctness)
-* future research directions 
+* future research directions
   * datasets, models less fit to a particular domain bias, and evaluation metrics

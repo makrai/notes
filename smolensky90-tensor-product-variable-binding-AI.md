@@ -136,13 +136,13 @@ Paul Smolensky
 ## 1.2 Connectionist representation of symbolic structures 7
 
 * I respond to the possible connectionist criticism that it is misguided to even
-  try to solve this problem 
+  try to solve this problem
 * the issue [of representation in connectionist systems of symbolic structures]
   figures prominently in the argument of Fodor and Pylyshyn (1988) that
   connectionist models are inadequate on fundamental representational grounds,
   and the work reported here began as a response to this attack; for responses
   to Fodor and Pylyshyn based in part on the work reported here, see [40, 42]
-* A more concrete motivation for pursuing this issue are the 
+* A more concrete motivation for pursuing this issue are the
   challenges facing connectionist modeling of higher cognitive processes such as
   language. Here our central question takes the form: What are computationally
   adequate connectionist representations of strings, trees, sentences?
@@ -162,14 +162,14 @@ Paul Smolensky
   * basis for connectionist models of conscious, serial, rule-guided behavior
   * modeled as explicit (connectionist) retrieval and interpretation of
     linguistically structured rules. Adequate connectionist models of such
-    behavior are important for connectionist models of higher thought processes 
+    behavior are important for connectionist models of higher thought processes
 * One line of thought: analyses of connectionist representations of symbolic
   structures are unnecessary. The argument goes something like this. Just as a
   child somehow learns to internally represent sentences with no explicit
   instruction on how to do so, so a connectionist system with the right
   learning rule will somehow learn the appropriate internal representations
   * The problem of linguistic representation is not to be solved by a
-    connectionist theorist but rather a connectionist network 
+    connectionist theorist but rather a connectionist network
 * In response to this argument I have five points
   1. In the short term, at least, our learning rules and network simulators do
      not seem powerful enough
@@ -183,11 +183,11 @@ Paul Smolensky
      * study the learning of the operations [without waiting] for the completion
        of the study of the learning of the linguistic representations
   5.
-    * Language is 
-      * more than just a domain for building models, it is 
+    * Language is
+      * more than just a domain for building models, it is
       * a foundation on which the entire traditional theory of computation rests.
     * crucial: how the basic concepts of symbolic computation and _formal_
-      language theory relate to connectionist computation 
+      language theory relate to connectionist computation
 * The semantic processing of a connectionist representation of a parse tree
   should not be performed by a connectionist implementation of serially
   applied symbolic rules that manipulate the tree

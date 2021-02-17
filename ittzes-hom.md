@@ -1,4 +1,4 @@
-Ittzés Nóra, az NSZ szerk. szab-ból 
+Ittzés Nóra, az NSZ szerk. szab-ból
 
 # Homonim címszavak
 
@@ -37,22 +37,22 @@ típusokat kezeljük homonimaként:
   indexessé válik);
 * két önálló szócikkbe kerülnek azok az azonos alakú vagy hangalakjukban nagyon
   közeli, etimológiailag is összetartozó jövevény- és idegen szavak, amelyek
-  közvetlen előzményként más átadó nyelvre vezethetők vissza 
+  közvetlen előzményként más átadó nyelvre vezethetők vissza
   (pl. annale fn – annales fn, butik1 fn – butik2 fn)
   * ugyanakkor egy címszó alatt maradnak azok a jelentések, amelyek külön
     átvétellel (más időben, más szaknyelv közvetítésével, tükörjelentésként
-    stb.) ugyanannak a nyelvnek ugyanarra a szavára vezethetők vissza 
+    stb.) ugyanannak a nyelvnek ugyanarra a szavára vezethetők vissza
     (pl. egér mint ’állat’ és mint ’számítógépes eszköz’, break mint zenei,
     mint tánc- és mint sportszakszó)
 * külön szócikket alkotnak a szóelvonás eredményeként létrejött alakváltozatok
-  akkor is, ha egyébként jelentésstruktúrájuk nem vált el egymástól 
+  akkor is, ha egyébként jelentésstruktúrájuk nem vált el egymástól
   (arc fn – orca fn; bék fn – béke fn)
 * a főnévi mutató névmás ragozott alakjait az eddigi szótári gyakorlattól
   eltérően nem vonjuk össze egy szócikkbe a belőlük származó határozószókkal.
   Az _az, ez_ névmás ragozott alakjait alaki utalók címszavaként, a velük azonos
   alakú határozószókat pedig önálló címszóként vesszük fel (annál1 mut hsz –
-  annál2 l. az).  
-  
+  annál2 l. az).
+
 A homonimák közül a szótári hagyománynak megfelelően az igei szófajú _megelőzi_ a
 névszót, a magyar szó az idegen eredetűt, a fogalomszó a formaszót, az önálló
 címszó az alaki utaló címszavát. A homonim címszavak sorrendjének

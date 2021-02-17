@@ -13,7 +13,7 @@ José Camacho-Collados, Mohammad Taher Pilehvar, Roberto Navigli
   * evaluation in 4 tasks, namely,
     * word similarity, sense clustering, domain labeling, and
       Word Sense Disambiguation
-    * for each of which we report state-of-the-art performance 
+    * for each of which we report state-of-the-art performance
       on several standard datasets across different languages
 
 # Intro
@@ -23,16 +23,16 @@ José Camacho-Collados, Mohammad Taher Pilehvar, Roberto Navigli
   * semantic similarity [13, 129, 106]
   * coarsening sense inventories [92, 124]
   * alignment of lexical resources [101, 98, 108]
-  * lexical substitution [75] and 
+  * lexical substitution [75] and
   * semantic priming [100]
-* In our recent work Nasari [16], we proposed a method that exploits the 
-  * structural knowledge derived from semantic networks, together with 
+* In our recent work Nasari [16], we proposed a method that exploits the
+  * structural knowledge derived from semantic networks, together with
   * distributional statistics from text corpora
-* In this article, we [extend Nasari to] 
+* In this article, we [extend Nasari to]
   * a wider range of tasks
     * Semantic Similarity (Section 6)
     * Sense Clustering (Section 7)
-    * Domain Labeling (Section 8) and 
+    * Domain Labeling (Section 8) and
     * Word Sense Disambiguation (Section 9)
   * summary of the experiments in Section 5
 

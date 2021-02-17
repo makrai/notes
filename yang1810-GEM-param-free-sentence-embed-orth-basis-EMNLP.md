@@ -134,7 +134,7 @@ EMNLP-IJCNLP 2019
 * Given an original question Q o and a set of the first ten related questions
   retrieved by a search engine, the model is expected to re-rank the related qs
 * Each retrieved question Q i is labelled
-  “PerfectMatch”, “Relevant” or “Irrelevant”, with respect to Q o 
+  “PerfectMatch”, “Relevant” or “Irrelevant”, with respect to Q o
   Mean average precision (MAP) is used as the evaluation measure
 * We encode each question text into a unit vector u
   * [but the hits are not normalized?]
@@ -161,7 +161,7 @@ EMNLP-IJCNLP 2019
 * compares favorably with most of parameterized models, including
   * à la carte (Khodak+ 2018)
   * FastSent (Hill+ 2016)
-  * InferSent, QT, Sent2Vec, SkipThought-LN 
+  * InferSent, QT, Sent2Vec, SkipThought-LN
     (with layer normalization, Kiros+ 2015)
   * SDAE (Hill+ 2016)
   * STN (Subramanian+ 2018) and

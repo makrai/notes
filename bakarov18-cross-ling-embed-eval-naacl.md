@@ -116,7 +116,7 @@ naacl 2018
 
 * Our research does not address some
   * evaluation methods (like MultiQVEC (Ammar+ 2016)) and
-  * word embeddings models (for instance, Bivec (Luong+ 2015)) 
+  * word embeddings models (for instance, Bivec (Luong+ 2015))
     since Russian do not have enough ... parallel corpora
 * In future we plan
   * other languages

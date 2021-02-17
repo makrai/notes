@@ -87,7 +87,7 @@ Language and Cognition, 2014
 * related to LSA is a generative method called Latent Dirichlet Allocation
   * (LDA; Blei, Ng, & Jordan, 2003)
   * each document ... is composed of a mixture of topics
-  * While the dimensions of LSA are abstract and meaningless, the 
+  * While the dimensions of LSA are abstract and meaningless, the
     dimensions in LDA are the latent topics that emerge from the corpus
   * LDA can also be used in a supervised, or semi-supervised, manner
 
@@ -104,7 +104,7 @@ Language and Cognition, 2014
 ### 1.5.2. Cohesion
 
 * Coh-Metrix 13 (Graesser, McNamara, Louwerse, & Cai, 2004)
-  * semantic overlap between different parts of the text, 
+  * semantic overlap between different parts of the text,
     connections between propositions, causal links, and syntactic complexity
   * initially ... focused on the readability, coherence, and complexity
   * author identification (McCarthy, Lewis, Dufty, & McNamara, 2006)
@@ -132,24 +132,24 @@ Language and Cognition, 2014
 
 # 3.Conclusions p20
 
-* Technological innovations [for data collection] have facilitated 
+* Technological innovations [for data collection] have facilitated
   theoretical advances in psychological science
   * precise reaction time (Helmholtz, 1850)
   * mechanical control of stimuli exposure (Mueller & Schumann, 1894)
   * measurement of Galvanic skin response (Vigouroux, 1879 ; Jung, 1906)
   * electro-encephalograms (Berger, 1929)
-  * fMRI (Ogawa, Lee, Kay, & Tank, 1990) and 
+  * fMRI (Ogawa, Lee, Kay, & Tank, 1990) and
   * optical brain imaging (Villringer & Chance, 1997)
 * Recently ... a quantitative change in technology
   * vast amounts of human-related data
-    * in analysis-friendly form, such as 
+    * in analysis-friendly form, such as
       * social network information (Lewis+ 2008; Lerman & Ghosh, 2010)
       * diurnal [napi] activity patterns (Krishnamurthy, Gill, & Arlitt, 2008)
       * reputation (Standifird, 2001)
       * or Facebook ‘likes’ (Kosinski, Stillwell, & Graepel, 2013)
     * human-generated text
       * companies offer specialized software for automated text analysis, and
-      * text analysis tools [in] standard statistical packages 
+      * text analysis tools [in] standard statistical packages
         (e.g., SAS Text Miner, SPSS Text Analytics, R)
 * measures of subjective properties [of authors]
   * from clinical psychology, personality and individual differences,

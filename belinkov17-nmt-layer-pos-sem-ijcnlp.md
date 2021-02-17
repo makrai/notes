@@ -30,7 +30,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
 * dataset recently introduced by Bjerva+ (2016) for lexical semantics
   * assign each word with a tag representing a semantic class
   * classes capture nuanced meanings that are ignored in most POS tag schemes
-  * e.g. 
+  * e.g.
     * proximal and distal demonstratives (e.g. this and that)
     * proper nouns type (geopolitical entity, organization, person, and loc)
     * reflexive or emphasizing functions of _myself, yourself, and herself_

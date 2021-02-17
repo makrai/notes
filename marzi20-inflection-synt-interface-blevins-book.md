@@ -25,21 +25,21 @@ Claudia Marzi, James P Blevins, Geert Booij, Vito Pirrelli
       syntactic or semantic role
   * Morphosemantic features are features that are not required by a syntactic
     * e.g. English have a tense property such as present or past. Their choice
-    * the choice is obligatory, as a specific tense property has to be chosen.  
+    * the choice is obligatory, as a specific tense property has to be chosen.
     * differs from derivation, which is not obligatory
     * context may play a role in the choice of morphosemantic features as well.
-      * e.g. presence of the adverb _yesterday_ 
-* inherent and contextual inflection (Booij 1993, 1996; Kibort 2010). 
+      * e.g. presence of the adverb _yesterday_
+* inherent and contextual inflection (Booij 1993, 1996; Kibort 2010).
   * Inherent inflection is determined by what the speaker wants to express, and
     * e.g. choice [of] tense and number (singular or plural) for nouns.
   * Contextual inflection: required by syntactic context. This is the case for
     * person and number values for finite verbs in English, which is a matter
-  * ‘number’ is inherent for nouns, but contextual for verbs. 
+  * ‘number’ is inherent for nouns, but contextual for verbs.
   * Case marking on nouns may function as contextual inflection in a language
     * inherent: structural cases. contextual: semantic case marking, which is a
-    * e.g. in Latin we can express the instrumental use of a knife by ablative 
+    * e.g. in Latin we can express the instrumental use of a knife by ablative
 * purely morphological features e.g. inflectional classes for nouns and verbs.
-  * In Latin, five different inflectional classes (declensions) for nouns.  
+  * In Latin, five different inflectional classes (declensions) for nouns.
   * inflectional classes for verbs, the conjugations. The patterns described
   * add substantially to the complexity of a
     language, and raise the question how children acquire such morphological

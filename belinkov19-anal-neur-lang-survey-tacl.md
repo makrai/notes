@@ -256,7 +256,7 @@ TACL Volume 7, 2019 p.49-72
   * extending Cooper+ (1996), the
     GLUE for NLI covers more than 30 phenomena in four coarse categories
     (lexical semantics, predicate–argument structure, logic, and knowledge)
-  * In MT evaluation, Burchardt+ (2017): large test suite covering 
+  * In MT evaluation, Burchardt+ (2017): large test suite covering
     120 phenomena, partly based on Lehmann+ (1996)
   * Isabelle+ (2017) and Isabelle and Kuhn (2018) prepared challenge sets for MT
     evaluation covering fine-grained phenomena at morpho-syntactic, syntactic,

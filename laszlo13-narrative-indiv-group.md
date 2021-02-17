@@ -35,7 +35,7 @@ SAGE Open April-June 2013: 1­–12
   * Stereotypic Explanatory Bias (Sekaquaptewa, Espinoza, Thompson, Vargas, &
     Von Hippel, 2003).  Although
   * lexical choice seems to be a powerful device in modulating
-    social-psychologically relevant information in communication 
+    social-psychologically relevant information in communication
     (Fiedler & Mata, 2013; Semin, 2000)
 * thematic structure of a sentence ... may shift responsibility
   * Turnbull (1994)
@@ -46,8 +46,8 @@ SAGE Open April-June 2013: 1­–12
     * active forms when speaking about bad deeds of outgroups
 * Pennebaker and his coworkers
   * Linguistic Inquiry and Word Count (LIWC) software
-  * (Chung & Pennebaker, 2007; Niederhoffer & Pennebaker, 2009; 
-    Pennebaker, 1990, 2012; Pennebaker, Mehl, & Niederhoffer, 2003; 
+  * (Chung & Pennebaker, 2007; Niederhoffer & Pennebaker, 2009;
+    Pennebaker, 1990, 2012; Pennebaker, Mehl, & Niederhoffer, 2003;
     Pennebaker, Paez, & Rime, 1997, and Tausczik & Pennebaker, 2010)
   * dozens of its—partly thematic and partly grammatical— word categories
 * The Secret Life of Pronouns: What Our Words Say About Us (2011), Pennebaker
@@ -77,14 +77,14 @@ SAGE Open April-June 2013: 1­–12
 
 # Conceptualization of Content Analysis in NarrCat
 
-* focus of NarrCat is 
+* focus of NarrCat is
   * not on psychological correlates of words, nor on function words (as
     contrasted to contentual words), or on grammatical markers (past tense).
   * the evaluational, emotional, and cognitive processes of the self and the
     other, and the ingroup and the outgroup, furthermore
-  * more complex principles of narrative composition, 
+  * more complex principles of narrative composition,
     such as spatio-temporal perspective
-* dictionaries 
+* dictionaries
   * complex morphology of the Hungarian language and ...  disambiguation,
 * tasks—anaphora resolution and Semantic Role Labeling (SRL)
   * A fully functional SRL analyzer requires ... anaphora resolution

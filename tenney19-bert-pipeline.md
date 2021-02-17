@@ -95,7 +95,7 @@ ACL 2019
   * Similarly for entity types, we see continued improvements in the higher lays
     * perhaps related to fine-grained semantic distinctions like ”Organization”
       (ORG) vs. ”Geopolitical Entity” (GPE) – while the
-    * low value for the expected layer reflects that 
+    * low value for the expected layer reflects that
       many examples require only limited context to resolve
 
 ### Comparison of Encoders. We observe the same general ordering on the 12-layer

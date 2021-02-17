@@ -1,5 +1,5 @@
-PPDB 2.0: Better paraphrase ranking, fine-grained entailment relations, 
-  word embeddings, and style classification 
+PPDB 2.0: Better paraphrase ranking, fine-grained entailment relations,
+  word embeddings, and style classification
 E Pavlick, P Rastogi, J Ganitkevitch, Benjamin Van Durme, Chris Callison-Burch
 ACL 15
 
@@ -13,8 +13,8 @@ ACL 15
 
 * two dimensions– complexity and formality. Table 2 shows some paraphrases of
   the end, sorted from most complex to most simple using these scores. These
-  * could be useful for natural language generation tasks like 
-    text simplification (Xu et al., 2015). 
+  * could be useful for natural language generation tasks like
+    text simplification (Xu et al., 2015).
   * evaluation of these scores is given in Pavlick and Nenkova (2015)
 
 # 4 Related Work

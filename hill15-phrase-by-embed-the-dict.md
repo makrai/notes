@@ -43,7 +43,7 @@ Learning to Understand Phrases by Embedding the Dictionary
 
 ## 2.1 Long Short Term Memory
 
-* A known limitation when training RNNs to read language using grad descent: 
+* A known limitation when training RNNs to read language using grad descent:
   the error signal (gradient) on the training examples either vanishes or
   explodes as the number of time steps (sentence length) increases
 
@@ -61,13 +61,13 @@ Learning to Understand Phrases by Embedding the Dictionary
   * question-like language,
   * richer world knowledge
     * integration of an external memory module
-      * promising approaches proposed in several recent papers on certain QA 
+      * promising approaches proposed in several recent papers on certain QA
     * entailment tasks
       * Graves+ 2014;
          Alex Graves, Greg Wayne, and Ivo Danihelka
          Neural turing machines. arXiv preprint
          2014.  arXiv:1410.5401
       * Weston+ 2015
-         Jason Weston, Antoine Bordes, Sumit Chopra, and Tomas Mikolov. 
+         Jason Weston, Antoine Bordes, Sumit Chopra, and Tomas Mikolov.
          Towards AI-complete question answering: A set of prerequisite toy tasks
          2015.  In arXiv preprint arXiv:1502.05698

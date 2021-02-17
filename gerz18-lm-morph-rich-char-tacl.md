@@ -8,4 +8,4 @@ TACL Volume 6, 2018 p.451-465
 * new LM benchmarks to the community, while considering subword-level
 * a novel method for injecting subword-level information into semantic vectors,
 
-code and data sets are publicly available 
+code and data sets are publicly available

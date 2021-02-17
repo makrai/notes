@@ -15,9 +15,9 @@ acl15
 * Stratos et al. (2014) uses CCA for learning the class of HMMs underlying
   Brown clustering
 * This paper
-  * a rigorous justification for CCA-based word embeddings, we also supply 
+  * a rigorous justification for CCA-based word embeddings, we also supply
   * a general template that encompasses a range of spectral methods (algorithms
-    employing SVD) for inducing word embeddings in the literature, 
+    employing SVD) for inducing word embeddings in the literature,
     including the method of Levy and Goldberg (2014b)
   * experiments:
     * CCA combined with the square-root transformation achieves the best

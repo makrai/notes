@@ -54,7 +54,7 @@ arXiv:1804.07835 [cs.CL]
     “cosine” in Figure 1). By experimenting with various combinations of
     sentence encoders and semantic similarity datasets, we show that in many
     cases direct network transfer performs better than learning an additional
-    classifier, while also having fewer parameters to learn 
+    classifier, while also having fewer parameters to learn
 * contributions
   1. new fine-tuning setting called direct network transfer
     * improved results on the STS Benchmark (Cer+ 2017) and the
@@ -92,7 +92,7 @@ arXiv:1804.07835 [cs.CL]
 * both the classifer and the encoder are fine-tuned, end-to-end, before it is
 * Table 1 shows the inconsistent uses of those transfer learning setting of
   sentence encoders over the years, on two semantic similarity datasets (SICK
-  and STS Benchmark) 
+  and STS Benchmark)
 
 # 3. Direct Network Transfer 2
 
@@ -183,10 +183,10 @@ arXiv:1804.07835 [cs.CL]
 # 6. Conclusion and Future Work
 
 * novel fine-tuning setting – direct network transfer
-* significantly improved performance on five tasks and 
+* significantly improved performance on five tasks and
   outperforms all other settings in the majority of combinations
 * three sentence encoders, eight semantic similarity tasks, and
-  nine transfer learning settings 
+  nine transfer learning settings
   * Additionally, we systematically explored specific changes that can be made
     to the transfer settings and discussed how
 * this work only compares models based on LSTM, which has been a typical choice

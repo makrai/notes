@@ -1,5 +1,5 @@
 Jianpeng Cheng and Dimitri Kartsaklis and Edward Grefenstette
-Investigating the Role of Prior Disambiguation 
+Investigating the Role of Prior Disambiguation
   in Deep-learning Compositional Models of Meaning
 2014
 
@@ -8,16 +8,16 @@ Investigating the Role of Prior Disambiguation
 * compositionality in distributed representations
   * Early attempts: fixed algebraic operations such as
     * vector addition and component-wise multiplication [11]
-  * relational words as tensors of various orders and 
+  * relational words as tensors of various orders and
     tensor contraction was adopted [1, 3, 4]
-    1. M. Baroni and R. Zamparelli. 
+    1. M. Baroni and R. Zamparelli.
       Nouns are vectors, adjectives are matrices: Representing adjective-noun
       EMNLP 2010.
-    3. B. Coecke, M. Sadrzadeh, and S. Clark. 
+    3. B. Coecke, M. Sadrzadeh, and S. Clark.
       Mathematical foundations for a compositional distributional ...  meaning.
       2010.
-    4. E. Grefenstette. 
-      Category-Theoretic Quantitative Compositional Distributional [sem] Models 
+    4. E. Grefenstette.
+      Category-Theoretic Quantitative Compositional Distributional [sem] Models
       PhD 2013
   * non-linear neural network-based compositional approaches
     * recursively applying neural networks [15, 16, 6]
@@ -52,9 +52,9 @@ Investigating the Role of Prior Disambiguation
       we calculate a context vector as the average of [the ambiguous vectors
       of] its neighbours
     * hierarchical agglomerative clustering to them
-      in order to discover sensible groupings 
+      in order to discover sensible groupings
       that hopefully correspond to different meanings of the word
-    * As a vectorial representation for each meaning cluster, 
+    * As a vectorial representation for each meaning cluster,
       we use its centroid
     * Up to this point, each target word w t is associated to
       * an ambiguous vector and

@@ -3,7 +3,7 @@ Probabilistic Model for Learning Multi-Prototype Word Embeddings
 2013
 
 * Some recent studies attempted to
-  * train multi-prototype word embeddings 
+  * train multi-prototype word embeddings
     through clustering context window features
   * limited scalability and are inefficient to be trained with big data
 * this paper, we

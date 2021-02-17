@@ -10,7 +10,7 @@ Statistical Methods for Speech Recognition +22
   * to maximize P(A)
   * What one would really wish is to maximize ...  P(W|A)
     where W is the spoken word string and A is the observed acoustic[s]
-    * This turns out to be a rather difficult problem 
+    * This turns out to be a rather difficult problem
       requiring in practice various assumptions and approximations
   * first attempts at solution can be found in [16] and [17]
 * Kanevsky and colleagues ... an adjustment to the Baum algorithm that allows
@@ -21,7 +21,7 @@ Statistical Methods for Speech Recognition +22
 
 * We will return ... to language modeling [and discuss considerably more
   sophisticated methods than those introduced here] in chapters
-  10. Application of Decision Trees to Language Modeling 
+  10. Application of Decision Trees to Language Modeling
     * 10.2 a basic class based technique
   13. Maximum Entropy Probability Estimation and Language Models
   14. Three Applications of Maximum Entropy Estimation to Language Modeling
@@ -53,14 +53,14 @@ P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
   * However Guyon and Pereira [15] ...  keeps complexity within ...  limits
   * slight improvement over this approach and some alternatives [16]
 * A generalization [of trigrams] by Lafferty and colleagues [17]
-  * Basing their technique on link grammars [18], they are able to 
+  * Basing their technique on link grammars [18], they are able to
     take into account nonlocal influences in the text
 * classes
   * As mentioned in sections 4.8 and 4.9
     * Based on (multiple) part-of-speech classification ... for Italian [19]
     * [11] is based on unique class assignment of words
   * Jardino improves on this method [21] [22]
-    * Using simulated annealing [20], 
+    * Using simulated annealing [20],
     * by allowing multiple classification of words ... (as seen in section 4.9)
   * classification ... based directly on semantics [23, WordNet]
 * collocations like New York or _nuclear magnetic resonance_
@@ -74,7 +74,7 @@ P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
   does Shannon's method described in section 8.2
   * upper bound on the entropy ... Nemetz method [4]
 * Mercer and colleagues (Brown+ 1992) tried to create the best (essentially)
-  trigram language model for unlimited vocabulary text, 
+  trigram language model for unlimited vocabulary text,
   measured its perplexity, and challenged the world to do better
 * Feretti, Maltese, and Scarci define a new concept, speech decoder entropy,
   which attempts to measure the quantity Hx defined in (5). They describe their
@@ -86,8 +86,8 @@ P(w3|w1,w2) = lambda_3 f(w3|wi, w2) + lambda_2 f(w3|w2) + lambda_1 f(w3) (10)
 
 * decision tree construction is equivalent to successive refinement of
   equivalence classes driven by answers to questions.  We will introduce
-*  We will ... describe 
+*  We will ... describe
   * Chou's method [3] of quasi-optimal question determination (section 10.7).
   * another decision tree construction method, due to [Brown+ 91]
-    specifically aimed at language modeling (section 10.11).  Throughout this 
+    specifically aimed at language modeling (section 10.11).  Throughout this
 * idea is due to Mercer and is presented in Brown et al. [4]

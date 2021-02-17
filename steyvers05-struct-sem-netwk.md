@@ -254,7 +254,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * Power laws in human language were
   * made famous by Zipf (1965)
   * discussed earlier by Skinner (1937)
-  * Zipf ... also found a power-law distribution for the 
+  * Zipf ... also found a power-law distribution for the
     number of word meanings (as given by the Thorndike-Century dictionary) 15
     * Zipf (1965) plotted the number of meanings of a word versus its rank of
       its word frequency in log–log coordinates and observed a slope b = .466.

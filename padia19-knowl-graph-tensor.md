@@ -13,12 +13,12 @@ Web Semantics: Science, Services and Agents on the World Wide Web 59 (2019) 1004
   * more robust methods for knowledge graph embedding, we provide a
   * provably-convergent, linear tensor factorization algorithm. We demonstrate
   * [experiments on] the task of predicting new facts across eight different
-    knowledge graphs, achieving 
+    knowledge graphs, achieving
     between 5% and 50% relative improvement over existing SOTA knowledge graph
     embedding techniques
 * all of the tensor decomposition models perform well when the average degree of
-  an entity in a graph is high, with 
-  * constraint-based models doing better on graphs 
-  with a small number of highly similar relations and 
-  * regularization-based models dominating for graphs 
+  an entity in a graph is high, with
+  * constraint-based models doing better on graphs
+  with a small number of highly similar relations and
+  * regularization-based models dominating for graphs
   with relations of varying degrees of similarity.

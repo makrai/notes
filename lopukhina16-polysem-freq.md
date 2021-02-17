@@ -1,4 +1,4 @@
-The Taming of the Polysemy: 
+The Taming of the Polysemy:
   Automated Word Sense Frequency Estimation for Lexicographic Purposes
 2016
 A Lopukhina, K Lopukhin, B Iomdin, G Nosyrev

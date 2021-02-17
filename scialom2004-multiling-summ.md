@@ -46,7 +46,7 @@ https://github.com/recitalAI/MLSUM
   * 40 languages, it provides relatively few examples (10k in the 2019 release)
     * af  ar  az  bg  bs  ca  cs  de  el  en  eo  es  eu  fa  fi  fr  he  hr  id
       it  ja  jv  ka  ko  li  lv  mr  ms  nl  nn  no  pl  pt  ro  ru  simple  sk
-      th  tr  tt  uk  zh 
+      th  tr  tt  uk  zh
   * Mostly extractive approach
 * lack of a multilingual corpus to train abstractive models (Duan+ 2019)
 * recently, with the rapid progress in automatic translation and generation,

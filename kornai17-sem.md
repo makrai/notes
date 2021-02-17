@@ -44,13 +44,13 @@
 
 ## 5.5 Representing knowledge and meaning
 
-* the autonomy of syntax thesis (Chomsky 1973), claiming that 
+* the autonomy of syntax thesis (Chomsky 1973), claiming that
   * the syntactic rules and principles of a language are formulated without
     reference to meaning, discourse, or language use (
-  * see 
+  * see
     * Fred Newmayer’s class notes for this particular formulation and much
-      relevant discussion, and see 
-    * Anderson (2005a) for a strongly opposed view). 
+      relevant discussion, and see
+    * Anderson (2005a) for a strongly opposed view).
   * In this book we assume syntax to be autonomous ... simply because it makes
     good engineering sense to maximally isolate our theory of semantics from
     the details of syntactic representation.
@@ -65,7 +65,7 @@ Here we will discuss three well known ranges of ‘pragmatic’ phenomena
 
 ## 7.1 Schematic inferences
 
-* In Chapter 3 we used McCarthy’s 1976 analysis of a simple newspaper story 
-* Here we use a more systematic test set, 
-  * based conceptually on Winograd’s 1972 schemas and specifically 
-  * designed by Levesque, Davis, and Morgenstein (2012) 
+* In Chapter 3 we used McCarthy’s 1976 analysis of a simple newspaper story
+* Here we use a more systematic test set,
+  * based conceptually on Winograd’s 1972 schemas and specifically
+  * designed by Levesque, Davis, and Morgenstein (2012)

@@ -30,7 +30,7 @@ TODO
 
 * process Wikipedia markup, we first extract the text using a modified version
   of the Bliki engine
-* OpenNLP probabilistic tokenizer whenever possible, and 
+* OpenNLP probabilistic tokenizer whenever possible, and
   default to the Unicode text segmentation2 algorithm offered by Lucene when no
 * normalization
   * 1999 becomes ####

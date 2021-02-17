@@ -70,11 +70,11 @@ arXiv:1910.05276 [cs.CL]
 
 ## 4.3 More than position
 
-* certain heads learn to attend to succeeding or preceding tokens. We 
+* certain heads learn to attend to succeeding or preceding tokens. We
   * call these heads positional heads: detect an offset [Clark+ 2019]
   * can encode important information about the attended-to word.  Searching by
     head can reveal how much information from the token embeddings is visible to
-  * 2-0 shows that the head is 
+  * 2-0 shows that the head is
     * truly positional, matching the following word 50/50 times as seen in the
     * match the POS belonging to the seed token (in this case, “of” is an ADP).
     * look for cases where the word following a preposition is possessive pronon

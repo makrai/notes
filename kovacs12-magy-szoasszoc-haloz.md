@@ -5,9 +5,9 @@ Kovács, László and Orosz, Katalin and Pollner, Péter
 * Parallel Distributed Processing  (Rogers és McClelland 2004)
   * Quillian, majd Collins és Loftus ... elképzelése[i]t viszik tovább
 * aktivációterjedéses modellek (W Levelt et al., 1999)
-  *  Levelt, Willem J. M. – Roelofs, A. – Meyer, A. S. (1999): 
+  *  Levelt, Willem J. M. – Roelofs, A. – Meyer, A. S. (1999):
     A Theory of Lexical Access in Speech Production
-  * Gary S. Dell inspirálta 
+  * Gary S. Dell inspirálta
 
 # Az Agykapocs-projekt
 

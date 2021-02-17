@@ -46,11 +46,11 @@ A Neural Probabilistic Language Model
 * neural networks for language modeling is
   * not new either (Miikkulainen and Dyer, 1991)
   * character-[level LM based neural] text compression (Schmidhuber, 1996)
-  * independently proposed by Xu and Rudnicky (2000), although 
+  * independently proposed by Xu and Rudnicky (2000), although
     experiments are with networks without hidden units and a single input word,
     which limit the model to essentially capturing unigram and bigram stat[s]
 * similarities between words to obtain generalization from training sequences
-  * clustering of the words 
+  * clustering of the words
     (Brown+ 1992, Pereira+ 1993, Niesler+ 1998, Baker and McCallum, 1998)
     * word[s] associated deterministically or probabilistically with [classes],
   * comparisons in this paper include results obtained with class-based n-grams
@@ -142,11 +142,11 @@ A Neural Probabilistic Language Model
   * takes in input a sub-sequence of words (mapped to their feature vectors)
   * outputs an energy function E which is
     * low when the words form a likely sub-sequence, high when it is unlikely
-* In the products-of-experts framework, 
+* In the products-of-experts framework,
   the hidden units can be seen as the experts
 * extensions of the ... Maximum Entropy models (Berger et al., 1996)
   but where the basis functions (or “features”, here the hidden activations)
-  are learned by penalized maximum likelihood 
+  are learned by penalized maximum likelihood
   at the same time as the parameters of the features linear combination,
   instead of ... in an outer loop, with greedy feature subset selection methods
 * [our experiments]
@@ -156,9 +156,9 @@ A Neural Probabilistic Language Model
     * yielding a 100-fold speed-up (Bengio and Senécal, 2003)
 * guess an initial feature vector for [OOV words], by taking
   * a weighted convex combination of the feature vectors of other words that
-    could have occurred in the same context, 
+    could have occurred in the same context,
     with weights proportional to their conditional probability
-  * This feature vector C(i) can then be used in the input context part 
+  * This feature vector C(i) can then be used in the input context part
     when we try to predict the probabilities of words that follow word i
 
 ## 5.2 Other Future Work

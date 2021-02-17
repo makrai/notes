@@ -4,7 +4,7 @@ The Semantics of Grammar Formalisms Seen as Computer Languages
 
 Abstract
 
-Using Dana Scott's domain theory, we elucidate [megmagyarázzuk] 
+Using Dana Scott's domain theory, we elucidate [megmagyarázzuk]
 the nature of the feature systems used in augmented phrase-structure grammar
 formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 
@@ -17,7 +17,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
   * PATR-II [ 18,17];
 * we find that the mathematical structures developed for this purpose
   contain an operation of feature generalization,
-* An abstract analysis [ formalisms ] that are based on 
+* An abstract analysis [ formalisms ] that are based on
   the simultaneous solution of sets of constraints [9,10]
   * requires a notion of partial information that is
   * precisely captured by the constructs of denotational semantics
@@ -25,7 +25,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 # 2. Denotational Semantics
 
 * In broad terms,
-  * DS is the study of the connection between programs and 
+  * DS is the study of the connection between programs and
     mathematical entities that represent their input-output relations
 * For the purposes of the present work,
   * the semantic domain theory initiated by Scott and Strachey [20]
@@ -62,7 +62,7 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 
 # 4. The Domain of Descriptions
 
-* The inclusion order K in D provides the notion of a description being 
+* The inclusion order K in D provides the notion of a description being
   _more or less specific_ than another
 * The least-upper-bound operation \sqsubseteq
   * combines two descriptions into the least instantiated description
@@ -80,8 +80,8 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
       * information in the described structures {monotonicity) and that
     * if a sequence of descriptions approximates another description, the
       * same condition holds for the described structures
-* we can think of elements of 
-  * D as directed rooted graphs and of elements of 
+* we can think of elements of
+  * D as directed rooted graphs and of elements of
   * F as their unfoldings as trees
 
 # 5.  Providing a Denotation for a Grammar
@@ -90,5 +90,5 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 
 # 7. Conclusion
 
-* We plan to develop the approach further to give accounts of 
+* We plan to develop the approach further to give accounts of
   negative and disjunctive constraints

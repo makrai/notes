@@ -5,7 +5,7 @@ The algebra of events
 * parallels between the mass-count distinction in nominal systems and the
   aspectual classification of verbal expressions (Allen, 1966; Taylor, 1977;
   Mourelatos, 1978; L.  Carlson, 1981; Hoepelman and Rohrer, 1980) that has
-* events: processes:: things: stuff. 
+* events: processes:: things: stuff.
 * The account draws heavily on [Link (1983)] on the count-mass-plural domain
 * organization
   1. I review briefly the classification

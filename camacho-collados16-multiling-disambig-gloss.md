@@ -43,7 +43,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
 * WordNet glosses have still been used successfully _in recent work_
   * Khan+ 2013;
     Khan, M. F., Khan, A., and Khan, K. (2013)
-    Efficient word sense disambiguation technique 
+    Efficient word sense disambiguation technique
       for sentence level sentiment classification of online reviews
   * Chen+ 2015
     Chen, T., Xu, R., He, Y., and Wang, X. (2015)
@@ -55,7 +55,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
     * coverage did not reach 6%
   * Moldovan and Novischi (2004)
     * model trained on the SemCor sense-annotated corpus (Miller+ 1993)
-    * [they normally require] vast amount of annotated data 
+    * [they normally require] vast amount of annotated data
   * part of the SensEval-3 workshop (Litkowski, 2004)
     * the best reported system obtained F-score below 70%
       * not enough for state-of-the-art NLP systems
@@ -123,7 +123,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
 
 # 4 Statistics p3
 
-* verbs, adjectives and adverbs [are] often harder to disambiguate 
+* verbs, adjectives and adverbs [are] often harder to disambiguate
   as they are not directly related to the definiendum
 
 # 5 Evaluation p4
@@ -143,7 +143,7 @@ A Large-Scale Multilingual Disambiguation of Glosses
       * relation instances [syntactic dependencies]
 * Open Information Extraction (OIE) system
 
-### 5.2.2. Sense Clustering 
+### 5.2.2. Sense Clustering
 
 * this experiment evaluates our refined high-precision corpus
   * Knowledge resources such as Wikipedia or WordNet

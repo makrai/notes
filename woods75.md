@@ -62,7 +62,7 @@ What's in a link
   * model the associative connections [by] humans
 ## Requirements for a Semantic Representation
 * precisely, formally, and unambiguously, logical adequacy
-* there must be an algorithm for analysys and 
+* there must be an algorithm for analysys and
   one for subsequent inferences and deductions
 ## The Canonical Form Myth
 * two
@@ -136,7 +136,7 @@ What's in a link
   * two difficult problems of KR
     * restrictive relative clauses and
     * quantified information
-  * illustrate 
+  * illustrate
     * additional possible uses of links and
     * different types of nodes and links
 ## Relative Clauses
@@ -158,8 +158,8 @@ What's in a link
         haven't heard about the dog before?
       * solution with EGO link
     2. something needs to be extracted from the input sentence which describes
-       the node to be searched for ... the process must know 
-       * when it finds an instance 
+       the node to be searched for ... the process must know
+       * when it finds an instance
        * that it is the dog that is of interest and not the man
     3. not an account at all, but merely a way of avoiding the problem
   * én _discourse dinamics_-nek mondanám. De talán az NP ''csoport''-hoz is

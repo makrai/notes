@@ -35,7 +35,7 @@ The code and pre-trained models https://github.com/microsoft/unilm
     right-to-left unidirectional LM, the context is the words on the right
     a bidirectional LM, the context consists of the words on both
   * sequence-to-sequence LM, the context of a word in the target sequence
-    consists of all the words in the source sequence and 
+    consists of all the words in the source sequence and
     the words on the left in the target sequence
 * can be fine-tuned (with additional task-specific layers if necessary) to adapt
   * can be configured, using different self-attention masks (Section 2), to
@@ -61,10 +61,10 @@ The code and pre-trained models https://github.com/microsoft/unilm
 
 ## 2.1 Input Representation
 
-* The input x is a word sequence, which is either a 
-  * text segment for unidirectional LMs or a 
-  * pair of segments packed together for bidirectional LM and sequence-to-sequence LM. 
-* We always add a special 
+* The input x is a word sequence, which is either a
+  * text segment for unidirectional LMs or a
+  * pair of segments packed together for bidirectional LM and sequence-to-sequence LM.
+* We always add a special
   * start-of-sequence ([SOS]) token, end-of-sequence ([EOS]) token
 
 ## 2.5 Fine-tuning on Downstream NLU and NLG Tasks

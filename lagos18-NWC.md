@@ -7,8 +7,8 @@
 
 * In his functional theory of parts of speech, Hengeveld delineates four
   cross-linguistically valid functional slots that words can occupy, based on
-  two binary parameters that encode the opposition between 
-  * predicative and referential phrases and between 
+  two binary parameters that encode the opposition between
+  * predicative and referential phrases and between
   * heads and modifiers within these phrases
 * criteria a/b
   for each function/word class there is exactly one word class/function [such
@@ -21,7 +21,7 @@
 * Rigid languages, on the other hand, obey (b) but not (a)
   * there are functional slots which cannot be filled by any unmarked [word]
   * Krongo, in which the “modifier in a referential phrase” function can only
-    be represented by a relative clause construction 
+    be represented by a relative clause construction
 
 # 6. Word class shift
 

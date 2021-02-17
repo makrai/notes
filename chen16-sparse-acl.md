@@ -18,7 +18,7 @@ Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
   * generat[ion in] tasks like machine translation, summarization, and dialogue
     systems (Devlin+ 2014; Rush+ 2015; Sordoni+ 2015; Mou+ 2015b)
   * [in] resource-restricted systems (Hinton+ 2015), such approach is
-    too memory-consuming and 
+    too memory-consuming and
     may fail to be deployed in mobile phones or embedded systems
 * we first represent infrequent words’ embeddings with frequent words’ by
   sparse linear combinations. This is inspired by the observation that, in a
@@ -27,8 +27,8 @@ Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
   infrequent words. The property of
   * sparseness (only 4–8 values for each word) ensures the efficiency
 * Based on the pre-computed sparse codes, we design our compressed language
-  model as follows.  
-  * A dense embedding is assigned to each common word; 
+  model as follows.
+  * A dense embedding is assigned to each common word;
   * infrequent word ... representation by a sparse combination of common words
   * LSTM-based recurrent neural network (RNN) as the hidden layer
 
@@ -49,7 +49,7 @@ Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, Zhi Jin
     * as in He+ (2012) due to psychological interpretation concerns
       Zhanying He, Chun Chen, Jiajun Bu, Can Wang, Lijun Zhang+
       Document summarization based on data reconstruction
-      AAAI 2012 
+      AAAI 2012
 * tricks
   * non-negativity
   * adaptive parameters that are resolved during training time

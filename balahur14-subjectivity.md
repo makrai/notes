@@ -1,5 +1,5 @@
-Balahur, A., Mihalcea, R., & Montoyo, A. 
-Computational approaches to subjectivity and sentiment analysis: 
+Balahur, A., Mihalcea, R., & Montoyo, A.
+Computational approaches to subjectivity and sentiment analysis:
   Present and envisaged methods and applications.
 Computer Speech and Language 2014
 
@@ -18,26 +18,26 @@ Computer Speech and Language 2014
 
 # 2 Recent trends in subjectivity and sentiment analysis (SSA)
 
-* further efforts are needed to expand the results to the 
+* further efforts are needed to expand the results to the
   multilingual and cross-lingual settings and new, informal types of texts
 
 ## 2.1. Multilingual subjectivity and sentiment analysis
 
 * methods to adapt [English] resources and tools for sentiment analysis ... to
   build resources in other languages
-  * lexicons, annotation schemes and annotated corpora were transferred 
-* subjectivity and sentiment lexicons were transferred into 
-  * Chinese (Ku+ 2006), 
-  * Romanian (Mihalcea+ 2007), and 
+  * lexicons, annotation schemes and annotated corpora were transferred
+* subjectivity and sentiment lexicons were transferred into
+  * Chinese (Ku+ 2006),
+  * Romanian (Mihalcea+ 2007), and
   * Italian (Esuli and Sebastiani, 2011). In an
-  * Kim and Hovy (2006) use a machine translation system 
+  * Kim and Hovy (2006) use a machine translation system
   * Ahmad+ (2007) [ detect ] sentiment phrases in a multilingual setting
-  * Inui and Yamamoto (2011) employ machine translation + sentence filtering 
+  * Inui and Yamamoto (2011) employ machine translation + sentence filtering
   * Mihalcea+ (2007) [translate sentiment lexicon to  multiple langs]
   * Banea+ (2008) translat[e to] Romanian
-  * mapping subjectivity lexicons to [Chinese, Xiaojun (2009)] 
+  * mapping subjectivity lexicons to [Chinese, Xiaojun (2009)]
   * Kim+ (2010)
-  * Banea+ (2010) translate the MPQA corpus into five other languages 
+  * Banea+ (2010) translate the MPQA corpus into five other languages
   * Another type of approach was proposed by Bader+ (2011), with LSI
   * Steinberger+ (2011a,b) [use a variant of] “triangulation”
 

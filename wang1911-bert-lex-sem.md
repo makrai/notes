@@ -131,8 +131,8 @@ Below we investigate the main reason behind the effectiveness of our method
   * Table 3 shows the results
   * BERT token performs relatively lower on “capital-country” and “city-state”
     compared to skip-gram because it does not model context information
-  * BERT avg improves the results by a large margin, giving 
-    comparable results on grammatical related word analogy such as “plural” 
+  * BERT avg improves the results by a large margin, giving
+    comparable results on grammatical related word analogy such as “plural”
     due to the use of sentential information
   * SynGCN performs relatively well on grammatical related word pairs
     * However, it does not perform well on “capital-country” and

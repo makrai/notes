@@ -1,6 +1,6 @@
 Antoine Bordes and Xavier Glorot  and Jason Weston and Yoshua Bengio
 2012
-Joint Learning of Words and Meaning Representations 
+Joint Learning of Words and Meaning Representations
   for Open-Text Semantic Parsing
 
 # 1 Introduction

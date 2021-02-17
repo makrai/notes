@@ -16,7 +16,7 @@ https://github.com/aetting/lm-diagnostics
   * struggles with challenging inferences and role-based event prediction
   * clear insensitivity to the contextual impacts of negation
 * from the conclusion: we must be conservative in the conclusion
-  * Because these sets are small, 
+  * Because these sets are small,
   * different formulations may yield different performance
 
 # 1 Intro
@@ -24,7 +24,7 @@ https://github.com/aetting/lm-diagnostics
 * diagnostics targeting a range of linguistic capacities, drawn from psycholing
   * advantages: because of their origin in psycholinguistics,
     * carefully controlled to ask targeted questions about linguistic capabilits
-    * ask these questions by examining word predictions in context, 
+    * ask these questions by examining word predictions in context,
     * allows us to study LMs without any need for task-specific fine-tuning
 * distinctive properties of our diagnostics
   * chosen specifically to reveal insensitivities in predictive models, as
@@ -96,10 +96,10 @@ https://github.com/aetting/lm-diagnostics
     * examination of syntactic sensitivity in the self-attention mechanism
   * Tenney+ (2019a) test a variety of linguistic tasks at different layers
   * Goldberg (2019) tests BERT on several of the targeted syntactic evaluations
-    described above for LMs, finding 
+    described above for LMs, finding
     BERT to exhibit very strong performance on these measures
-    * Our work: 
-      directly via the word prediction mechanism, and in 
+    * Our work:
+      directly via the word prediction mechanism, and in
       expanding beyond the syntactic tests
 
 # 4 Leveraging pling studies. The power in our diagnostics
@@ -115,10 +115,10 @@ https://github.com/aetting/lm-diagnostics
 
 ### Cloze probability
 
-* humans are given an incomplete sentence and tasked with 
+* humans are given an incomplete sentence and tasked with
   filling their expected word in the blank
   * gold standard for best human prediction in context
-  * not under any time pressure, so they have the 
+  * not under any time pressure, so they have the
   * opportunity to use all available information from the context to predict
 
 ### N400 amplitude
@@ -148,7 +148,7 @@ https://github.com/aetting/lm-diagnostics
 * constructed to constrain the information relevant for making word predictions
 * word prediction accuracy, we use the most expected items from human cloze
   probabilities as the gold completions
-* sensitivity testing, we 
+* sensitivity testing, we
   * compare model probabilities for good versus bad completions— specifically,
   * on which the N400 showed reduced sensitivity in experiments
   * whether LMs will show similar insensitivities
@@ -203,7 +203,7 @@ https://github.com/aetting/lm-diagnostics
 
 ### Information needed for prediction
 
-* requires event knowledge about 
+* requires event knowledge about
   typical interactions between types of entities in the given roles
 
 ### Sensitivity test
@@ -270,21 +270,21 @@ https://github.com/aetting/lm-diagnostics
 * to what extent BERT can achieve this performance based on simpler cues like
   * bow
     * To test word order, we shuffle the words in each item’s first sentence,
-  * n-gram context. 
+  * n-gram context.
     * To test adequacy of n-gram context, we truncate the second sentence,
       removing all but the two words preceding the target word (“Trunc”)—
     * leaving generally enough syntactic context to identify the part of speech,
       as well as some sense of semantic category (on top of the thematic setup
-      of the first sentence), but removing other information from the second 
+      of the first sentence), but removing other information from the second
 * each of these individual perturbations causes a notable drop in accuracy
 
 ## 7.3 Qualitative
 
 * in the first example
-  * BERT has correctly zeroed in on things that one might borrow, but it 
+  * BERT has correctly zeroed in on things that one might borrow, but it
   * fails to infer that the thing is to be used for cutting lumber
 * 2nd: failure to detect the snow-shoveling theme of the second item
-* third example shows that BERT has 
+* third example shows that BERT has
   * identified an animal theme (unsurprising, given the words zoo and animal),
   * not applying the phrase black and white stripes to identify the completion
 
@@ -296,14 +296,14 @@ https://github.com/aetting/lm-diagnostics
   * replacing the obj/subj with a generic substitute _one/other_
 * removing either the object (“-Obj”) or the subject (“-Sub”)
   * relatively little effect on the accuracy of BERT BASE for either k = 1 or 5
-  * the accuracy of LARGE drops substantially 
+  * the accuracy of LARGE drops substantially
   * i.e. BERT BASE is relying primarily upon one or the other
 * items in this set are overall less constraining than those in Section 7
   * humans converge less clearly on the same predictions
-  * To investigate the effect of constraint level, 
+  * To investigate the effect of constraint level,
     we divide items into four bins by top cloze value per sentence
     * highest cloze bin yields much higher model accuracies than the other three
-    
+
 # 9 Results for NEG-136 10
 
 * errors consist exclusively of cases in which BERT completes the sentence
@@ -317,14 +317,14 @@ https://github.com/aetting/lm-diagnostics
   * BERT prefers true statements in a high proportion of affirmative sentences,
   * and in 0% of negative sentences.  Table 15 contains BERT
     LARGE predictions on two pairs of sentences from the “Natural” sentence set.
-* even when BERT’s first prediction is appropriate in the context, 
+* even when BERT’s first prediction is appropriate in the context,
   the top candidates often contradict each other (e.g., difficult and easy)
 * even with these natural items, sometimes the negation is not enough to reverse
   * _A fast food dinner on a first date is(n't) very good/nice/romantic_
 
 # 10 Discussion 11
 
-* CPRAG-102, we see that both models 
+* CPRAG-102, we see that both models
   * can predict the best completion approximately half the time (at k = 5), and
   * rely non-trivially on word order and full sentence context
   * hE, perturbations: successful predictions suggest that some of BERT’s
@@ -339,7 +339,7 @@ https://github.com/aetting/lm-diagnostics
   * BERT LARGE has more sensitivity than BERT BASE to the interaction between
     subject and object nouns
   * both models are typically able to use noun position to prefer good
-    completions to role reversals, but the 
+    completions to role reversals, but the
     * differences are on average even smaller than on CPRAG-102, indicating
   * ability to distinguish role reversals suggests that the low word prediction
     accuracies are not due to insensitivity to word order per se, but rather to

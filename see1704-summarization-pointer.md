@@ -7,12 +7,12 @@ arXiv:1704.04368 [cs.CL]
 * two shortcomings: factual details inaccurately, and they repeat themselves
 * we propose a novel architecture that
   * augments the standard seq2seq attentional model in two orthogonal ways
-  1. hybrid pointer-generator network that can 
-    copy words from the source text via pointing, which 
-    aids accurate reproduction of information, while 
+  1. hybrid pointer-generator network that can
+    copy words from the source text via pointing, which
+    aids accurate reproduction of information, while
     retaining the ability to produce novel words through the generator
   2. coverage to keep track of what has been summarized: discourages repetitions
-* CNN / Daily Mail summarization task, 
+* CNN / Daily Mail summarization task,
   outperforming the current abstractive SOTA by at least 2 ROUGE points
 
 # 1 Intro
@@ -33,8 +33,8 @@ arXiv:1704.04368 [cs.CL]
   * pointing (Vinyals+ 2015), which improves accuracy and handling of OOV words,
     while retaining the ability to generate new words
   * balance between extractive and abstractive approaches
-  * similar to Gu+’s (2016) CopyNet and 
-    Miao and Blunsom’s (2016) Forced-Attention Sentence Compression, that 
+  * similar to Gu+’s (2016) CopyNet and
+    Miao and Blunsom’s (2016) Forced-Attention Sentence Compression, that
     * were applied to short-text
   * coverage vector (Tu+ 2016) from Neural Machine Translation
 

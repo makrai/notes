@@ -29,7 +29,7 @@ arXiv:1906.02715 [cs.LG]
       explain the particular form of the parse tree embeddings described in [7]
   * semantics: BERT distinguishes word senses at a very fine level
     * much of this [information] encoded in a relatively low-dim subspace
-    * mistakes in word sense disambiguation may correspond to 
+    * mistakes in word sense disambiguation may correspond to
       changes in internal geometric representation of word meaning
 
 # 2 Context and related work 2
@@ -106,7 +106,7 @@ arXiv:1906.02715 [cs.LG]
 
 ##    3.2.1 Mathematics of embedding trees in Euclidean space
 
-* Hewitt and Manning ask 
+* Hewitt and Manning ask
   * why parse tree distance [corresponds] specifically to the _square_ of Eucl
   * whether some other metric might do better [7]
   * We describe math reasons why squared Euclidean distance may be natural
@@ -176,13 +176,13 @@ arXiv:1906.02715 [cs.LG]
     * roughly, defined as the difference between the average cosine similarity
       between embeddings of words with different senses, and that between
       embeddings of the same sense
-    * we clamped the cosine similarity terms 
+    * we clamped the cosine similarity terms
       to within ±0.1 of the pre-training averages for same and different senses
       * Without clamping, the trained matrix simply ended up taking
         well-separated clusters and separating them further)
       * [clamping values tested] between 0.05 and 0.2
   * corpus was the same dataset from 4.1.2., filtered to ambiguous words
-    * each [sense] with at least two occurrences 
+    * each [sense] with at least two occurrences
       (for 8,542 out of the original 33,362 senses)
   * Embeddings came from BERT-base (12 layers, 768-dimensional embeddings)
   * evaluat[ion on the] WSD task used in 4.1.2 (Table 1)

@@ -61,7 +61,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * paraphrase database (Ganitkevitch+ 2013)
   * more than 220 million paraphrase pairs of English
   * 8 million are lexical (single word to single word) paraphrases
-  * acquisition: two words in one language should be synonymous 
+  * acquisition: two words in one language should be synonymous
     if they align, in parallel text, to the same word in a different lang
 * WordNet
 * FrameNet
@@ -95,9 +95,9 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
    ACL 2014
 * Xu+ (2014)
    Chang Xu, Yalong Bai, Jiang Bian, Bin Gao, Gang Wang ... Tie-Yan Liu
-   Rc-net: 
+   Rc-net:
     A general framework for incorporating knowledge into word representations
-   CIKM 2014 
+   CIKM 2014
 
 ## 6.4 Multilingual Evaluation
 

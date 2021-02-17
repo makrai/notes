@@ -27,17 +27,17 @@ Deep Lexical Semantics
   * This includes domain-dependent knowledge, of course, but 70-80% of the
     words in most texts, even technical texts, are words in _ordinary_ English
 * a core theory of _scales_ will provide axioms involving predicates such as
-  `scale`, `<`, `subscale`, `top`, `bottom`, and `at`. These are 
-  * abstract notions that apply to partial orderings 
+  `scale`, `<`, `subscale`, `top`, `bottom`, and `at`. These are
+  * abstract notions that apply to partial orderings
     as diverse as heights, money, and degrees of happiness
 * automatic acquisition of relevant lexical and world knowledge Pantel [8]
   * e.g. the correlation between “married” and “divorced”, and maybe we can even
-  * the corresponding predicate-argument structures and 
-  * which way the implication goes and with what 
-  * temporal constraints. 
+  * the corresponding predicate-argument structures and
+  * which way the implication goes and with what
+  * temporal constraints.
   * But this is a too simple relation to axiomatize in comparison to the “range”
 * If we construct the core theories and the linking axioms _manually_, we can
-  achieve the desired complexity and reliability. 
+  achieve the desired complexity and reliability.
   * how many words would It be feasible to axiomatize the meanings of manually?
     * 100,000 not, several thousand yes
 * organization
@@ -52,7 +52,7 @@ Deep Lexical Semantics
     * linking WordNet and FrameNet word senses to each other [and] to the core
       theories
     * Not only are the words “decomposed” into what were once called primitives,
-      * the primitives are explicated in axiomatic theories, 
+      * the primitives are explicated in axiomatic theories,
         enabling one to reason
 
 # 2 Identifying the Core Event Words
@@ -89,14 +89,14 @@ Deep Lexical Semantics
       covering among other relations the componentOf relation
     * the figure-ground relation `at`
   * Scales
-    * partial orderings, monotone functions, the construction of 
-      composite scales, the characterization of qualitatively 
+    * partial orderings, monotone functions, the construction of
+      composite scales, the characterization of qualitatively
       high and low regions of a scale (related to distributions and
       functionality), and constraints on vague scales
   * Change of State
   * Cause
     * We characterize a causal complex for an effect by two strict properties:
-      * If every eventuality in a causal complex happens, the effect happens, 
+      * If every eventuality in a causal complex happens, the effect happens,
       * everything in the causal complex is _relevent_ to the effect in a way
         that can be made precise
     * enable, prevent, help, and obstruct

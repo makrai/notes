@@ -15,4 +15,4 @@ in both commercial and state-of-art models. In a user study, a team responsible
 for a commercial sentiment analysis model found new and actionable bugs in an
 extensively tested model. In another user study, NLP practitioners with
 CheckList created twice as many tests, and found almost three times as many bugs
-as users without it. 
+as users without it.

@@ -3,13 +3,13 @@ Dimensionality reduction for visualizing single-cell data using UMAP
 Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
 
 * Comparing the performance of UMAP with five other tools
-  * UMAP provides the fastest run times, highest reproducibility and the 
+  * UMAP provides the fastest run times, highest reproducibility and the
     most meaningful organization of cell clusters
 
 # Main
 
 * number of parameters analyzed in single-cell cytometry and transcriptome
-  * ∼20 for flow cytometry, ∼40 for mass cytometry and 
+  * ∼20 for flow cytometry, ∼40 for mass cytometry and
     >20,000 in single-cell RNA sequencing (scRNAseq)
 * Dimensionality reduction techniques have been pivotal to visualize
 * Nonlinear dimensionality reduction techniques
@@ -34,7 +34,7 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
       * heavily optimized Fourier-interpolated t-SNE,
         with or without late exaggeration (FIt-SNE l.e. or FIt-SNE, resp)
     * autoencoder neural network scvis [14]
-      * currently offers the advantage of being 
+      * currently offers the advantage of being
         able to append new data points to an existing embedding
 
 # Results
@@ -44,7 +44,7 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
 * alternatives to UMAP
   * Linderman+ recently optimized t-SNE to decrease its run time by using
     Fourier interpolation to speed up the convolution step (FIt-SNE)
-    * late-exaggeration parameter that 
+    * late-exaggeration parameter that
       magnifies gaps between distinct clusters (FIt-SNE l.e.)
   * Ding+ recently published the autoencoder neural network scvis algorithm
 * [we] quantitatively benchmark computational aspects of UMAP
@@ -74,7 +74,7 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
     * scvis and UMAP both appeared to better preserve large-scale distances
     * scvis appeared marginally better than UMAP in that regard
   * quantifying the reproducibility of embeddings
-    * we measured the correlation of coordinates 
+    * we measured the correlation of coordinates
       on random subsamples of varying sizes versus embeddings of the full dtset
       up to symmetries across the axes
     * t-SNE-based methods appeared poorly reproducible across datasets and

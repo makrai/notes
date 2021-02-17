@@ -38,7 +38,7 @@ https://github.com/facebook/Conditional-character-based-RNN
     * do not share parameters among features and classes
     * limitation when there are many classes
   * solutions to this problem are to
-    * factorize the linear classifier into low rank matrices 
+    * factorize the linear classifier into low rank matrices
       (Schutze, 1992; Mikolov+ 2013) or
     * multilayer neural networks (Collobert and Weston, 2008; Zhang+ 2015)
 * model with rank constraint
@@ -78,6 +78,6 @@ https://github.com/facebook/Conditional-character-based-RNN
 
 # Discussion and conclusion
 
-* Although deep neural networks have in theory much higher repr power, 
+* Although deep neural networks have in theory much higher repr power,
   it is not clear if simple text classification problems such as sentiment
   analysis are the right ones to evaluate them

@@ -1,6 +1,6 @@
 Roberto Navigli and Simone Paolo Ponzetto
 2012
-BabelNetXplorer: A Platform for Multilingual Lexical Knowledge Base 
+BabelNetXplorer: A Platform for Multilingual Lexical Knowledge Base
   Access and Exploration
 
 # 1 INTRODUCTION

@@ -49,7 +49,7 @@ EMNLP 2005
   * within either a single semrel structure or by combining fragments
   * weighted for comparison (Richardson, 1997)
   * Currently, either one or two words can be specified
-  * restrictions to refine the path search. A user can restrict 
+  * restrictions to refine the path search. A user can restrict
     * part of speech of the words entered, and/or the user can
     * the paths to include only the specified relation
   * When only one word is given, then all paths from that word are ranked
@@ -63,6 +63,6 @@ EMNLP 2005
   * Their use is still being explored as they have been made available only
     recently
 * Japanese concept dictionaries
-  * [EDR](http://www2.nict.go.jp/ipp/EDR/ENG/indexTop.html) and 
+  * [EDR](http://www2.nict.go.jp/ipp/EDR/ENG/indexTop.html) and
   * [Nihongo Goi-taikei (NTT)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.357.8460)
   * [fizetős/CD-s]

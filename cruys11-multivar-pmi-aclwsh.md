@@ -14,11 +14,11 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
 
 * Mutual information (Shannon and Weaver, 1949) is a measure of mutual dep
   * instantiation for specific outcomes called pointwise mutual information
-* in the NLP community 
+* in the NLP community
   * collocation extraction (Church and Hanks, 1990)
   * word space models (Pantel and Lin, 2002)
 * [multivariate]
-  * tensor decomposition [in] the NLP community (Turney, 2007; 
+  * tensor decomposition [in] the NLP community (Turney, 2007;
     Baroni and Lenci, 2010; Giesbrecht, 2010; Van de Cruys, 2010)
 * little attention has been devoted to the weighting of ...  cooccurrences
 
@@ -83,7 +83,7 @@ ACL-Workshop on Distributional Semantics and Compositionality 2011
       ‘play a role’ and salient subjects that go with the expression
 * we performed a small-scale manual evaluation of the 100 [high] triples
   * A triple is considered salient when it is
-    made up of a fixed (multi-word) expression, or when it 
+    made up of a fixed (multi-word) expression, or when it
     consists of a fixed expression combined with a salient subject or object
     (e.g. ‘argument cut wood’)
   * bare frequency tensor was used as a baseline, precision = 0 %

@@ -18,7 +18,7 @@ Walter Daelemans
     * personality, mental health, and being a native speaker or not;
   * sociological aspects of the author of the text will be
     * age, gender, education level, and region of language acquisition
-* different linguistic levels 
+* different linguistic levels
   * lexical choice, syntactic structures, discourse coherence
 * It remains to be seen whether
   * [the correlations are] consistent over time and whether
@@ -51,13 +51,13 @@ Walter Daelemans
     (unsupervised and semi-supervised learning methods will not be discussed
     here)
 * A good example of [reinterpretation in ML terms]
-  * reinterpretation [of Burrow’s delta] as memory-based learning [11] 
+  * reinterpretation [of Burrow’s delta] as memory-based learning [11]
     leads to increased understanding of the method and to new useful variations
   * unmasking [12] and variants would be framed as instances of
     * stacked classifiers and ensemble learning, which they are
 * In a supervised machine learning approach to computational stylometry we have
   * features ..., feature selection, weighting and construction methods,
-    machine learning algorithm optimization, 
+    machine learning algorithm optimization,
   * ensemble methods, active learning, joint learning, structured learning,
     one-class learning etc.
   * evaluation methods
@@ -122,14 +122,14 @@ Walter Daelemans
 
 # 3 Detecting Harmful Content in Social Media
 
-* identify possibly threatening situations in social networks sites (SNS) 
+* identify possibly threatening situations in social networks sites (SNS)
   by ... text and image analysis
   * (especially for children and adolescents)
   * cyberbullying, sexually transgressive behavior, and
     depression and suicidal behavior
 * as instances of computational stylometry
   * e.g. for the detection of transgressive behavior by pedophiles,
-    detect age and gender of the text in order 
+    detect age and gender of the text in order
     to check the information provided in the [profile]
 * challenging because the utterances are short and written in chat language
 * show[n] how much different chat language is from standard language

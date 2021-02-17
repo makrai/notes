@@ -6,7 +6,7 @@ http://cogcomp.org/page/publication_view/900
 
 # Abstract
 
-* multilingual BERT (M-BERT) is trained without any 
+* multilingual BERT (M-BERT) is trained without any
   cross-lingual objective and aligned data
 * We study the impact of linguistic properties of the languages, the
   architecture of the model, and the learning objectives
@@ -78,5 +78,5 @@ http://cogcomp.org/page/publication_view/900
   when the premise and hypothesis are in different languages
   * (This data was created using XNLI where in the original form the languages
     contain the same premise and hypothesis pair)
-  * One of the possible explanations could be that 
+  * One of the possible explanations could be that
     BERT makes textual entailment decisions by matching words or phrases

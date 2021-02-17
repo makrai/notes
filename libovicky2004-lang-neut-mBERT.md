@@ -2,7 +2,7 @@ On the Language Neutrality of Pre-trained Multilingual Representations
 Jindřich Libovický, Rudolf Rosa, Alexander Fraser
 arXiv:2004.05160 [cs.CL]
 
-https://github.com/jlibovicky/assess-multilingual-bert 
+https://github.com/jlibovicky/assess-multilingual-bert
 
 # Abstract
 
@@ -63,7 +63,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   * if they subtract the average difference between the mBERT embeddings from
     the target language representation, the retrieval accuracy significantly
     increases.  We systematically study this idea in the later sections
-* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual zero-shot 
+* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual zero-shot
   * a wider range of zero-shot transfer tasks that include NLI (Conneau+ 2018)
     and question answering (Artetxe+ 2019; Lewis+ 2019)
   * clearly superior performance of XLM-R compared to mBERT
@@ -205,7 +205,7 @@ and of the MT output reflects the translation quality
   mostly corresponds to the language families
 
 * XLM-R not only has a slightly worse performance in language ID, but also has
-  worse performance in capturing language similarity.  
+  worse performance in capturing language similarity.
   * We hypothesize that next-sentence prediction [in] mBERT leads lang-spec
   * lang is helpful in determining if two sentences are adjacent
 
@@ -222,7 +222,7 @@ and of the MT output reflects the translation quality
 * XLM-R significantly outperforms all models.  The
 * UDify model that was finetuned for syntax seems to significantly lose sem
 * Adversarial finetuning did not improve the performance
-* Representation centering drastically improves accuracy.  
+* Representation centering drastically improves accuracy.
 * An additional 50% error reduction is achievable via learning a projection on
 
 ## Word Alignment.  Table 5 shows that WA based on mBERT and XLM-R
@@ -230,7 +230,7 @@ and of the MT output reflects the translation quality
 * distortion penalty does
   not seem to influence the alignment quality when using the contextual embeds,
   whereas for the static word embeddings, it can make a difference of 3–6 F 1
-  * ie. contextual embeddings encode relative word positon across languages.  
+  * ie. contextual embeddings encode relative word positon across languages.
 * However, the main advantage [of contextual embeddings]:
   allows accurate alignment of function words
 

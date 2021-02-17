@@ -30,12 +30,12 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
 * we
   * Sufficient Dimensionality Reduction model of Globerson and Tishby (2003)
   * word vectors learned by Skip-Gram are information-theoretically optimal
-  * the context word c in the Skip-Gram model = 
+  * the context word c in the Skip-Gram model =
     discourse vector in the PMI model of Arora+ (2016)
   * exact non-linear composition operator when no assumptions are made on the
     context word
   * When an analogous assumption to that of Arora+ (2016) is made, that
-    the context words are uniformly distributed, we prove that the 
+    the context words are uniformly distributed, we prove that the
     composition operator reduces to vector addition
   * the learned context embeddings and target embeddings preserve the maximal
     amount of mutual information between any pair of random variables X and Y

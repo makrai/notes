@@ -62,9 +62,9 @@ Ian Niles, Adam Pease
   1. partial overlap in meaning between the new content and existing concepts or
      axioms in the merged ontology
     * for example, the overlap between the concepts of ‘Class’ and ‘Set’
-      * ‘Class’ occurs in John Sowa’s ontology, where it refers to 
+      * ‘Class’ occurs in John Sowa’s ontology, where it refers to
         * a set of items that form something like a natural kind
-    * ‘Set’, on the other hand, occurs in the set theory ontology 
+    * ‘Set’, on the other hand, occurs in the set theory ontology
       available on the Ontolingua server
     * To a large extent, these two concepts behave in the same way
       * Things can be elements of classes and sets, subclasses and subsets are
@@ -126,5 +126,5 @@ Abstract
   * The Austin-based company Cycorp has devoted fifteen years to creating
   * has been used in a wide range of applications
   * Cycorp has released only a small part of its ontology to the public
-  * SUMO was constructed with reference to very pragmatic principles 
+  * SUMO was constructed with reference to very pragmatic principles
     * Any distinctions of strictly philosophical interest have been removed

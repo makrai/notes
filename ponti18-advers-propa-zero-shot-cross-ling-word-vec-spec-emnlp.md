@@ -43,10 +43,10 @@ code is available at https://github.com/cambridgeltl/ adversarial-postspec
 * The post-specialization procedure (Vulić+ 2018) is a two-step process
   1. words observed in external resources is fine-tuned using any off-the-shelf
      specialization model, e,g,
-     original retrofitting model (Faruqui+ 2015), 
-     counter-fitting (Mrkšić+ 2016), 
-     dLCE (Nguyen+ 2016), or 
-     the SOTA ATTRACT REPEL  AR) specialization (Mrkšić+ 2017; Vulić+ 2017). 
+     original retrofitting model (Faruqui+ 2015),
+     counter-fitting (Mrkšić+ 2016),
+     dLCE (Nguyen+ 2016), or
+     the SOTA ATTRACT REPEL  AR) specialization (Mrkšić+ 2017; Vulić+ 2017).
      * We outline the initial specialization algorithms in §2.1. In
   2. specialization is propagated to the entire vocabulary
     * adversarial architecture, described in §2.2

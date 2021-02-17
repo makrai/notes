@@ -89,7 +89,7 @@ https://github.com/fdalvi/NeuroX
 * e.g. word-structure (morphology) or semantic information in an NMT model
 * we have supervision for the task in the form of labeled examples {x i , l i }
 * logistic regression classifier on the {z i , l i } pairs using the
-  cross-entropy loss. 
+  cross-entropy loss.
   * We opt for linear model because of its explanability; the learned weights
     * non-linear models present similar trends
       (Qian, Qiu, and Huang 2016b; Belinkov+ 2017a)

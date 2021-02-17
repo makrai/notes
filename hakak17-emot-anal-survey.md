@@ -12,26 +12,26 @@ gépi tanulás szempontjából szar cikk
 
 ## 1. lexicon based approach
 
-* two sub types: 
-  * dictionary based and 
-    *  Most statistical approaches use Latent Semantic Analysis (LSA) 
+* two sub types:
+  * dictionary based and
+    *  Most statistical approaches use Latent Semantic Analysis (LSA)
   * corpus based
-    * Keyword based approaches define a set of predefined terms 
-      * Strapparava used WordNet-Affect [34] 
-  
+    * Keyword based approaches define a set of predefined terms
+      * Strapparava used WordNet-Affect [34]
+
 ## 2. machine learning approach
 
 * Supervised machine learning
   * SVM is a tradition approach in this regard. Few researchers [40] [41] have
-  * CRF [42] The supervised learning models are further of following; 
-  * Decision tree classifiers: use the hierarchical recursive decomposition 
+  * CRF [42] The supervised learning models are further of following;
+  * Decision tree classifiers: use the hierarchical recursive decomposition
   * Rule based classifier: conditions in disjunctive normal form
   * Linear Classifiers
   * Neural Networks [46]
   * Probabilistic Classifier: assumes each class to be a component of the
-    mixture which provides the probability of sampling a particular term 
+    mixture which provides the probability of sampling a particular term
     * Naïve Bayes classifier, which computes posterior probability based on
-      distribution of words in a document [47]: 
+      distribution of words in a document [47]:
       * Bayesian network, is an acyclic graph whose nodes represent random
         variable and edges represent conditional dependencies
     * Maximum entropy

@@ -7,8 +7,8 @@ From frequency to meaning: vector space models of semantics
 * history
   * The VSM was developed for the SMART information retrieval system
     (Salton, 1971; Salton, Wong, & Yang, 1975)
-  * Rapp (2003) used a vector-based representation of word meaning to 
-    achieve a score of 92.5\% on multiple-choice synonym questions 
+  * Rapp (2003) used a vector-based representation of word meaning to
+    achieve a score of 92.5\% on multiple-choice synonym questions
     from the Test of English as a Foreign Language (TOEFL)
 * We believe that the choice of a particular matrix type is more fundamental
   than other choices, such as the particular linguistic processing or
@@ -22,7 +22,7 @@ From frequency to meaning: vector space models of semantics
   a VSM must be derived from event frequencies, such as the number of times
   that a given word appears in a given context (see Section 2.6)
   * a lexicon or a knowledge base may be viewed as a graph, and a graph may be
-    represented using an adjacency matrix, but this does 
+    represented using an adjacency matrix, but this does
     not imply that a lexicon is a VSM
 
 ## 1.2 Vectors in AI and Cognitive Science
@@ -169,7 +169,7 @@ From frequency to meaning: vector space models of semantics
     _distribution_
     * Minimizing the the Frobenius norm `|X \hat{X}|_F` will minimize the
       noise, if the noise has a Gaussian distribution
-    * word frequencies do not have Gaussian distributions. 
+    * word frequencies do not have Gaussian distributions.
     * More recent algorithms are based on more realistic models of the
       distribution for word frequencies [no reference]
 
@@ -267,7 +267,7 @@ broad survey of applications
       * by creating [an LM] of the given document and then measuring the
         probability of the given query according to the language model
   * words
-    * lexicons, such as WordNet (Resnik, 1995; Jiang & Conrath, 1997; 
+    * lexicons, such as WordNet (Resnik, 1995; Jiang & Conrath, 1997;
       Hirst & St-Onge, 1998; Leacock & Chodrow, 1998; Budanitsky & Hirst, 2001)
     * view the lexicon as a graph, in which nodes correspond to word senses and
     * similarity between two words is [] proportional to the length of the path

@@ -22,7 +22,7 @@ M. Ross QUILLIAN
 * richness of a given comprehension of a piece of text
   as the number of related memory items that the comprehender finds
 * relation to other work
-  * the TEMPO project (Thoraoson et al, 1965) or 
+  * the TEMPO project (Thoraoson et al, 1965) or
     the SDC project (Simmons, Burger and Schwartz, 1968.)
     * share with TLC the aim of reasoning applied to English input by using very
       large, very general stores of information

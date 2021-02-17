@@ -35,7 +35,7 @@
 * puszta névszói igemódosítók[nak]
   * nem lehet önálló vonatkozásuk (nem referenciálisak)
     mivel kategóriájuk N^0
-    nem módosíthatók, és 
+    nem módosíthatók, és
     az igével együtt lexikalizálódhatnak (vö. (1)–(3), Kiefer – Ladányi 2000a)
 * Az igekötő ezzel szemben [bizonyos produktív esetekben] még áttételesen sem
   hozható kapcsolatba az alapige valamelyik vonzatával
@@ -92,8 +92,8 @@
 * kétfajta igemódosító, a puszta névszói igemódosító és az igekötő különbségei
 * vonzatosság: a puszta névszói igemódosító mindig vonzata az alapigének,
   az igekötő pedig sohasem lehet vonzat
-* továbbképezhetőséggel: az igekötős igék ... mindig továbbképezhetők, 
+* továbbképezhetőséggel: az igekötős igék ... mindig továbbképezhetők,
   a puszta névszói igemódosítót tartalmazó igei szerkezetek azonban általában
-  nem teszik lehetővé a továbbképzést, 
+  nem teszik lehetővé a továbbképzést,
   a frekventatív akcióminőség képzését pedig mindig kizárják
 * lokatív határozószók ... nem lehetnek sem igemódosítók, sem pedig igekötők

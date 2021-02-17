@@ -105,7 +105,7 @@ Strukturális magyar nyelvtan 1. kötet Mondattan
   * mindkét egység függvényként értelmezendő, s egyikük argumentuma a másiknak
   * az igekötő a metafüggvény, és ő veszi fel argmnentumként az igét
   * Az igekötő [módosítottja] csakis szintaktikailag felbonthatatlan szótári
-    egység (`X^0_lex`) 
+    egység (`X^0_lex`)
 * endocentrikus, akár egzocentrikus (... vonzatstruktúrája azonos-e)
   * az igekötő gyakorta egzocentrikus szerkezetet alkot az igével (áttáncolja)
 

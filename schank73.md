@@ -106,7 +106,7 @@ Roger C. Schank and Charles J. Rieger 111
 
 # III. THE FOURTEEN PRIMITIVE ACTIONS 9
 
-* a syntax of possible conceptual relationships and 
+* a syntax of possible conceptual relationships and
   a set of conceptual categories that these relate
 * six conceptual categories
 

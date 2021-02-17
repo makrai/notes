@@ -144,7 +144,7 @@ https://github.com/facebookresearch/InferSent
 * increased embedding sizes lead to increased performance for almost all models
   * Since it is easier to linearly separate in high dimension,
     * especially with logistic regression
-  * particularly true for some models (BiLSTM-Max, HConvNet, inner-att), 
+  * particularly true for some models (BiLSTM-Max, HConvNet, inner-att),
     *  unequal abilities to incorporate more information as the size grows
 
 ## Comparison with SkipThought

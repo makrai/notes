@@ -27,12 +27,12 @@ Robert Östling and Jörg Tiedemann
 
 * Multilingual language models is not a new idea (Fugen et al., 2003)
 * Ammar et al. (2016)
-  * Waleed Ammar, George Mulcaire, Miguel Ballesteros, Chris Dyer, Noah Smith. 
-    Many languages, one parser. 
+  * Waleed Ammar, George Mulcaire, Miguel Ballesteros, Chris Dyer, Noah Smith.
+    Many languages, one parser.
     2016 TACL
   * one-hot language identifiers as input to a multilingual word-based
     dependency parser, based on multilingual word embeddings
-  * higher accuracy than using features from a typological database, 
+  * higher accuracy than using features from a typological database,
   * it is a reasonable guess that their system learned language vectors which
     were able to encode syntactic properties relevant to the task
   * Universal Dependencies treebanks
@@ -46,10 +46,10 @@ Robert Östling and Jörg Tiedemann
   * from various sources and periods of times
   * same genre and roughly the same coverage for each language involved
   * easy to divide the data into training and test
-* alphabet size is below 1000 symbols, which was satisfied by choosing 
+* alphabet size is below 1000 symbols, which was satisfied by choosing
   only translations in Latin, Cyrillic or Greek script
 * size
-  * 500 million tokens in total, with 
+  * 500 million tokens in total, with
   * most languages having only one translation of the New Testament each, with
     roughly 200 thousand tokens
   * around ten contain only portions of the New Testament
@@ -61,19 +61,19 @@ Robert Östling and Jörg Tiedemann
 
 # 4 Methods
 
-* Our model is based on a standard stacked character-based LSTM 
+* Our model is based on a standard stacked character-based LSTM
   (Hochreiter and Schmidhuber, 1997) with two layers, followed by a hidden
   layer and a final output layer with softmax activations
 * language embedding vectors are concatenated to the inputs of the LSTMs at
-  each time step and the hidden layer before the softmax. We used 
-  * three separate embeddings for these levels, in an 
+  each time step and the hidden layer before the softmax. We used
+  * three separate embeddings for these levels, in an
     * attempt to capture different types of information about languages
     * using the same embedding everywhere gives similar results
 
 # 5 Results
 
-* hierarchical agglomerative clustering [of the language vector space] 
-  for visualization. 
+* hierarchical agglomerative clustering [of the language vector space]
+  for visualization.
 * For measuring performance, we use cross-entropy on held-out data. For this,
   we use a set of the 128 most commonly translated Bible verses
 

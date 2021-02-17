@@ -562,7 +562,7 @@ VP → V NP • , [0, 3]
      successful discovery of a tree corresponding to a VP that spans the entire i
 * The basic operation of an Earley parser is to march through the N +1 sets
   * At each step, one of the three operators described below is applied to stts
-  * this results in the addition of new states 
+  * this results in the addition of new states
     to the end of either the current or the next set of states in the chart
 * states are never removed and the algorithm
   never backtracks to a previous chart entry once it has moved on
@@ -593,9 +593,9 @@ VP → V NP • , [0, 3]
 * when the state NP → Det Nominal • , [1, 3] is processed,
   COMPLETER looks for incomplete states ending at_1 and expecting an NP
   * finds the states `VP → Verb • NP, [0, 1]` and `VP → Verb • NP PP, [0, 1]`
-  * new states to the chart: 
-    * VP → Verb NP • , [0, 3] /complete/ , and 
-    * VP → Verb NP • PP, [0, 3] /incomplete/ 
+  * new states to the chart:
+    * VP → Verb NP • , [0, 3] /complete/ , and
+    * VP → Verb NP • PP, [0, 3] /incomplete/
 
 #### Retrieving Parse Trees from a Chart
 
@@ -628,7 +628,7 @@ S → NP VP
     * position of the dot representing how much of the rule has been completed,
     *  positions of the beginning and end of the state, and a
     * list of other states that represent the completed sub-parts of the state
-  * add a field to contain the DAG 
+  * add a field to contain the DAG
     representing the feature structure corresponding to the state
     * PREDICTOR: DAG will simply [be] retrieved from the rule
       For example, when PREDICTOR uses the above S rule to enter a state
@@ -865,7 +865,7 @@ NP → Det Nominal
 * magyar NP (Kornai 1985, 1989), pl. _három kiló rohadt alma_
 * Prolog
 * Prószéky
-  * HuMor, 
+  * HuMor,
   * MetaForfo. _I save it to the shop._ `Lementem a boltba.`
   * Anagramma
 

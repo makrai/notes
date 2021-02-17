@@ -3,6 +3,8 @@ Zhuosheng Zhang, Yuwei Wu, Hai Zhao, Zuchao Li, Shuailiang Zhang, Xi Zhou,
   Xiang Zhou
 AAAI-2020 arXiv:1909.02209v3 [cs.CL]
 
+# Abstract
+
 * incorporating structured semantic information can provide rich semantics
 * we
   * propose to incorporate explicit contextual semantics
@@ -26,9 +28,9 @@ AAAI-2020 arXiv:1909.02209v3 [cs.CL]
 * deep learning models might not really understand texts (Mudrakarta+ 2018)
   * vulnerably suffer from adversarial attacks (Jia and Liang 2017)
   * great attention to non-significant words and ignore important ones
-  * question answering challenge (Rajpurkar+ 2016), we observe a number of
-    answers produced by previous models are semantically incomplete (As shown in
-    Section 6.3), which suggests that the current NLU models suffers
+  * question answering challenge (Rajpurkar+ 2016)
+    * a number of answers produced by previous models are sem incomplete 
+      (as shown in Section 6.3)
 * semantic role labeling (SRL) naturally matches e.g. question answering tasks,
   * who did what to whom, when and why with respect to the central meaning
   * questions are usually formed with who, what, how, when and why

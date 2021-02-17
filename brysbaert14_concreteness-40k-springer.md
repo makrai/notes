@@ -49,7 +49,7 @@ Behav Res (2014) 46:904–911
   * existing concreteness ratings ... tend to focus too much on visual
     (Connell & Lynott, 2012; Lynott & Connell, 2009, in press)
     at the expense of the other senses and ... action-related experiences
-  * to what extent adjectives were experienced 
+  * to what extent adjectives were experienced
     by touch, hearing, seeing, smelling, and tasting (Lynott and Connell 2009)
     * perceptual strength ratings were correlated only with ... vision, touch,
       and, to a lesser extent, smell

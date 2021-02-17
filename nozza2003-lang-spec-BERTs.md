@@ -12,7 +12,7 @@ Street(https://bertlang.unibocconi.it/)
 * we compare mBERT to the performance of these more specific models
   * presents the current SOTA in language-specific BERT models
   * overall picture with respect to architectures, data domains, and tasks
-  * overview of the commonalities and differences 
+  * overview of the commonalities and differences
     between Language-Specific (language-specific) BERT models and mBERT
 * interactive and constantly updated website
 
@@ -118,7 +118,7 @@ Street(https://bertlang.unibocconi.it/)
     (Yang+ 2019; Sanguinetti and Bosco, 2015; Conneau+ 2018; Völker+ 2019)
   * others released with shared tasks such as SemEval or CoNLL
     (Zeman+ 2018; Navigli+ 2013; Bosco+ 2016; Benikova+ 2014)
-* noun sense disambiguation task is the only task where 
+* noun sense disambiguation task is the only task where
   language-specific BERT (Le+ 2019) performances are lower than the mBERT ones
   * could be due to the fact that the training corpora have been
     machine-transled from English to French

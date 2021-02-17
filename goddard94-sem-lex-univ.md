@@ -115,7 +115,7 @@ Semantic and Lexical Universals
     for reasons we will consider in section 1.2
   * their most persistent advocate has been Anna Wierzbicka
 
-### 4. The ... metalanguage of semantic representation 
+### 4. The ... metalanguage of semantic representation
 
 * a minimal subset of ordinary natural language (Natural Semantic Metalanguage
   (NSM) approach)
@@ -142,7 +142,7 @@ Semantic and Lexical Universals
     * criticised (Kempson 1977:92-96; Wierzbicka 1980; cf. Lyons 1977)
  3. semi-technical nature
   * Katz (1987:186-187) uses labels like these to identify the 'conceptual
-    components' of the English word chase: 
+    components' of the English word chase:
     * Activity, Physical, Movement, Fast, Direction, Toward location of,
       Purpose, Catching
   * As argued by Allan (1986:265-270), such semi-technical notations are
@@ -314,10 +314,10 @@ Semantic and Lexical Universals
   * In Wierzbicka's (1980) book Lingua mentalis this list was slightly modified
     * KNOW and BE IN A PLACE were tentatively added, and
     * FEEL discarded (though the latter has since made a comeback)
-* studies of diverse areas of the lexicon, 
-  e.g. speech act verbs, emotion terms, simple and complex artefacts, 
+* studies of diverse areas of the lexicon,
+  e.g. speech act verbs, emotion terms, simple and complex artefacts,
   mass nouns, natural kinds, superordinate functional categories, and
-  ideological and value terms, among others 
+  ideological and value terms, among others
   (see references at end of this chapter)
 * languages
   * Wierzbicka herself did work on English, Polish, Russian and Japanese

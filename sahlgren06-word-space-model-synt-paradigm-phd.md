@@ -49,7 +49,7 @@ PhD 2006
       1. A context vector is initialized for each word as a normalized random v
       2. in several passes through the corpus, the context vectors are changed
          to be more like the context vectors of the surrounding words
-         * method resembling Kohonen’s Self-Organizing Maps (Kohonen, 1995) 
+         * method resembling Kohonen’s Self-Organizing Maps (Kohonen, 1995)
     * used for
       * word-sense disambiguation, by comparing them to the manually defined
         ones (Gallant, 1991b), and for
@@ -164,7 +164,7 @@ PhD 2006
     * LSA uses a words-by-documents matrix,
     * HAL uses a directional words-by-words matrix, and
     * RI can be used to approximate both of these representations
-  * Despite their difference, most wordspace implementations 
+  * Despite their difference, most wordspace implementations
     arrive at the same kind of meaning representations
 * syntagmatic and paradigmatic relations between words should be discoverable
   by using co-occurrence information and
@@ -190,8 +190,8 @@ can be characterized by the size of the context region
     could be expressed with a few index terms must have seemed strange
   * In the “real” world, content is something we reason about, associate to,
     and compare
-  * In the world beyond information-retrieval, 
-    text is a continuous flow where topics intertwine and overlap and 
+  * In the world beyond information-retrieval,
+    text is a continuous flow where topics intertwine and overlap and
     the notion of a “document” is at best an arbitrary choice
   * In a whole document nearly every term can co-occur with every other
 * a better context would be a clause or a sentence,
@@ -237,7 +237,7 @@ can be characterized by the size of the context region
   * They were almost always able to do so when shown a 2+2-sized context
     * replicated with the same result by Choueka & Lusignan (1985)
   * Karlgren & Sahlgren (2001) use a narrow context window for semantics
-* a példában látszik: 
+* a példában látszik:
   * syntagmatic: context = sentence
   * paradigmatic: context = word
 
@@ -248,8 +248,8 @@ can be characterized by the size of the context region
 * Picard (1999) observes that a syntagmatic use of context can only be used for
   very frequent words, while a paradigmatic use may be applied for all words
 * syntagmatic use of context favor statistical dimensionality-reduction
-  * smooths the original co-occurrence counts. As we saw in Section 4.4, 
-  * alleviates the problem with data sparseness. Furthermore, it 
+  * smooths the original co-occurrence counts. As we saw in Section 4.4,
+  * alleviates the problem with data sparseness. Furthermore, it
   * grouping together words that occur in similar contexts —
     i.e. it approximates paradigmatic relations
   * “poor man’s” paradigmatic relations. This is a very useful tactic

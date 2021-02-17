@@ -92,7 +92,7 @@ ACL 2020
 * We begin by verifying that the resulting static embeddings retain repr strengt
   * to ensure that properties we observe of the static embeddings are consistent
     with the original contextualized representations
-* we employ an exceptionally simple parameter-free method for 
+* we employ an exceptionally simple parameter-free method for
   converting from contextualized to static representations
   * ensure that any properties observed in the latter are not introduced by cler
   * concerns with probing methods/diagnostic classifiers regarding
@@ -206,7 +206,7 @@ ACL 2020
 * if N = {‘programmer’, ‘homemaker’} and ‘programmer’ was equally male-biased as
   ‘homemaker’ was female-biased, then under the definition of Garg+ (2018),
   there would be no bias in aggregate). To permit comparison, we insert absolute
-  values around each term in the mean over N 
+  values around each term in the mean over N
 
 ### Manzini+ (2019) introduced a definition for quantifying multi-class bias
 
@@ -216,13 +216,13 @@ ACL 2020
 ## 5.2 Results
 
 * Inspired by the results of Nissim+ (2020), in this work we transparently
-  * results for models beyond BERT appear in Figures 11–18 
+  * results for models beyond BERT appear in Figures 11–18
 * We specifically report results for
   * binary gender (male, female),
   * two-class religion (Christianity, Islam) and
   * three-class race (white, Hispanic, and Asian),
   * directly following Garg+ (2018). We study bias
-* with respect to target word lists of professions N prof and adjectives N adj 
+* with respect to target word lists of professions N prof and adjectives N adj
   * not include intersectional biases. The types of biases being evaluated for
   * definitions of bias are grounded in the norms of the United States. All word
 

@@ -8,13 +8,13 @@ Janara Christensen , Mausam , Stephen Soderland and Oren Etzioni
   pre-specified domain or vocabulary
 * we investigate the use of semantic role labeling techniques for the task of
   Open IE
-* We compare 
+* We compare
   * SRL-based open extractors, which perform computationally expensive, deep
-    syntactic analysis, with 
+    syntactic analysis, with
   * TextRunner, an open extractor, which uses shallow syntactic analysis but is
     able to analyze many more sentences in a fixed amount of time and thus
     exploit corpus-level statistics.  Our evaluation answers questions
-    regarding these systems, including, 
+    regarding these systems, including,
 * binary, n-ary and nested relations?
 * This paper reports that, contrary to our beliefs, SRL is robust to noisy Web
   text, and achieves a much larger recall; whereas TextRunner obtains a much

@@ -21,7 +21,7 @@ http://stanford.edu/~lmthang/bivec
 
 # 1 Introduction
 
-* representations where similar-meaning words in two languages are 
+* representations where similar-meaning words in two languages are
   embedded close together in the same high-dimensional space
 
 # 2 Background
@@ -49,15 +49,15 @@ http://stanford.edu/~lmthang/bivec
     * Zou+ (2013) considers the unsupervised alignment information
     * derived over a parallel corpus
 * Bilingual Training,
-  * Klementiev+ 2012; Hermann and Blunsom, 2014; Kočiský+ 2014; 
+  * Klementiev+ 2012; Hermann and Blunsom, 2014; Kočiský+ 2014;
     Chandar A P+ 2014; Gouws+ 2014
   * none of these work has [been] examined using monolingual metrics
 
 # 3 Our Approach
 
-* joint objective similar to (Klementiev+ 2012; Gouws+ 2014): 
-  `α(Mono_1 + Mono_2 ) + βBi` 
-* In contrast to the existing approaches, we use 
+* joint objective similar to (Klementiev+ 2012; Gouws+ 2014):
+  `α(Mono_1 + Mono_2 ) + βBi`
+* In contrast to the existing approaches, we use
   the same type of models for both of our monolingual and bilingual constraints
   * skipgram model with negative sampling
 
@@ -100,12 +100,12 @@ http://stanford.edu/~lmthang/bivec
 * follow Klementiev+ (2012)
 * train with 1000 and test on 5000 RCV-labeled documents
 * averaged perceptron algorithm
-* The feature vector for each document is the 
+* The feature vector for each document is the
   averaged vector of words in the document weighted by their idf values
 * A classification model trained on one language is then applied directly to
   classify new documents in another language
   * word vectors in these languages are embedded in the same space,
-* transfer learning of models 
+* transfer learning of models
   from a resource-rich language into a resource-poor one
 
 # 5 Results
@@ -155,11 +155,11 @@ http://stanford.edu/~lmthang/bivec
       (Zhao and Xing, 2007; Ni+ 2009; Mimno+ 2009; Vulic+ 2011)
   * those that only require unaligned or monolingual text
     * generally requires a small _initial lexicon_
-      extracted either manually or 
+      extracted either manually or
       automatically (cognates, string edit distances)
     * e.g
       * work that extends CCA (Haghighi+ 2008; Boyd-Graber and Blei, 2009),
-        * mapping representations of words in different languages 
+        * mapping representations of words in different languages
           into the same space
       * bootstrapping style to iteratively enlarge the initial lexicon
         (Peirsman and Padó, 2010; Vulić and Moens, 2013)
@@ -173,5 +173,5 @@ http://stanford.edu/~lmthang/bivec
     * similar to BilBOWA (Gouws+ 2014)
       * Stephan Gouws, Yoshua Bengio, and Greg Corrado
       * 2014 NIPS Deep Learning Workshop
-      * Bilbowa: Fast bilingual distributed representations 
+      * Bilbowa: Fast bilingual distributed representations
         without word alignments

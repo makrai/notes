@@ -6,7 +6,7 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
 
 * párhuzamosan jelen lévő szálak (morfológiai elemző, különböző grammatikai
   jelenségeket azonosító szálak, korpuszgyakorisági szálak, anaforafeloldó
-  szálak, fókuszazonosító szál stb.) 
+  szálak, fókuszazonosító szál stb.)
 
 # 2. A performancia-alapú közelítés
 
@@ -19,7 +19,7 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   (például adott esetben a elhangzás helyszínére vonatkozó) környezetét nem
   veszik figyelembe. (1. példa) Kiinduló hipotézisünk ugyanis az, hogy a
   nyelvhasználó fejében mindkét – a korábban megtanult szerkezetekre építő és
-  az aktuális helyzet alapján döntéseket hozó – rendszer egyaránt él. 
+  az aktuális helyzet alapján döntéseket hozó – rendszer egyaránt él.
 
 # 3. Pszicholingvisztikai és nyelvészeti motiváció
 
@@ -37,22 +37,22 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   számítógépes elemzési stratégiát foglalt össze hét pszicholingvisztikai elv
   segítségével. Az ő közelítése természetesen nem volt független az akkor
   egyeduralkodó generatív grammatika gondolataitól és az emberi nyelv
-  szinonimájaként használt angol nyelvtől. 
+  szinonimájaként használt angol nyelvtől.
 * Frazier és Fodor (1978) aztán a nehezen elemezhető mondatok és a szerkezeti
   többértelműségek vizsgálata közben mondatelemzéshez olyan stratégiai
   közelítést javasolt, melyben az egyes nyelvi elemek mondatbeli szerepének
   meghatározásához nem mindig elegendő az aktuálisan rendelkezésre álló
   információ, ezért a végleges döntést olykor a bemenet _továbbolvasásával_, azaz
-  bizonyos késleltetéssel lehet csak meghozni. 
+  bizonyos késleltetéssel lehet csak meghozni.
 * A nyolcvanas évekre kialakuló interakciós megértései modellek (bemutatja:
   Pléh, 1998) hoznak az eddigi eredményekhez képest új gondolatokat is. Az
   egyik, hogy figyelnek a feldolgozás sebességére, másrészt észreveszik, hogy a
   _világismeret_ olykor az elemzés alsó szintjeinél is jelen van,
 * nyelvi jelenségek is, melyek feldolgozását az imént bemutatott szintaktikai
   szerepek kialakításával egyidejűleg végzi a rendszer. Ilyenek például az
-  * aktuális mondattagolás vagy a visszautalást tartalmazó, ún. 
+  * aktuális mondattagolás vagy a visszautalást tartalmazó, ún.
     * információnak ismertként és újként való megkülönböztetése
-  * anaforikus elemek kezelése. Az előbbi 
+  * anaforikus elemek kezelése. Az előbbi
     * névmásfeloldásról, akár szinonim megjelölésről
 
 # 4. Az pszicholingvisztikai motivációjú számítógépes elemzés alapjai
@@ -64,15 +64,15 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
 # 5. Az egyes nyelvi jelenségek kezelése az AnaGramma-rendszerben
 
 * nemcsak a bemutatott „tisztán” morfológiai és szintaktikai relációkat leíró
-  szálak, hanem akár 
+  szálak, hanem akár
     * statisztikai információk, korpuszgyakoriságok
       * a gyakori szerkezetek sokszor elemzés nélkül, kész belső szerkezettel
-        jelennek meg a feldolgozásban. 
+        jelennek meg a feldolgozásban.
         * Informatikai szakszóval ezt gyorsítótárazásnak (angol
           szóhasználattal: cache- elésnek) mondanánk, ám a jelenség a
         * pszicholingvisztikában (idegen szakkifejezéssel „Gestalt” néven) jól
           ismert (Pléh & Lukács, 2001). Az emberi nyelvértelmezés esetében ezt
-          egészleges feldolgozásnak nevezik. Így tároljuk az akár 
+          egészleges feldolgozásnak nevezik. Így tároljuk az akár
         * több szóból álló tulajdonneveket, az idiómákat, de sokszor a nagyon
           gyakori tipikus nyelvi fordulatok szószerkezeteit is.
     * ontológiák, világismeretek is párhuzamosan tudnak működni külön-külön.
@@ -80,13 +80,13 @@ Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
   nyelvre gyakorolt hatásától (v.ö. Frazier & Fodor, 1978 és Pléh, 1998), ezért
   az első elemzési lépéstől kezdve az AnaGramma-módszer a nyelvi, és a
   modell kidolgozottságától függően bizonyos nyelven kívüli modulok
-  (világismeret, hangulat stb.) 
+  (világismeret, hangulat stb.)
 * A szerkezeti reprezentációk irányított élei – mint az illusztrációkból is
   látható – a függőségi nyelvtanokéra emlékeztetnek (Tesniére, 1957), a
   rendszer működése pedig azok inkrementális elemzéssel működtetett
   változataira (Menzel, 2013). Mivel a mondathatáron nem feltétlenül záródik
   le minden elemzési lépés, a részszerkezetek teljes összekapcsolása nem
-  feltétlen egyetlen mondaton belül valósul meg. 
+  feltétlen egyetlen mondaton belül valósul meg.
 
 # 6. Az AnaGramma-elemzés kialakítását célzó kutatási alprojektek
 

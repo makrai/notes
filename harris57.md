@@ -7,8 +7,8 @@ Zellig S. Harris
 # 1. The method of analysis
 
 1.1. Individual co-occurrence
-1.2. Constructional status 
-  * head 
+1.2. Constructional status
+  * head
 1.3. Transformations defined
 1.4. Determining the evidence
 
@@ -46,7 +46,7 @@ Zellig S. Harris
 
 # 5. The place of transformations in linguistic structure p51
 
-5.1. Elementary transformations 
+5.1. Elementary transformations
 5.2. The algebra of transformations !
 5.3. Addition (concatenation) of transformed sentences p53
 5.4. The kernel p53

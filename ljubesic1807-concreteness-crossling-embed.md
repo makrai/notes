@@ -20,14 +20,14 @@ http://hdl.handle.net/11356/1187
 
 * theory (Paivio, 1975, 2010)
   * double, verbal and non-verbal, modality of representation ... in the mental
-    lexicon, contrasted to single verbal representation of abstract words 
+    lexicon, contrasted to single verbal representation of abstract words
 * often correlated with concreteness, imageability is not a redundant property.
   * e.g. _torture_ calls up an emotional and even visual image. There are
   * _abbey_ is harder to visualize than _banana_ (Tsvetkov+ 2014).
 * Both notions have proven to be useful in computational linguistics as well.
   * Turney+ (2011) present a supervised model that [classifies] adjective-noun
-    pairs as having literal or non-literal meaning. 
-  * Tsvetkov+ (2014) ... perform metaphor detection 
+    pairs as having literal or non-literal meaning.
+  * Tsvetkov+ (2014) ... perform metaphor detection
     on subject-verb-object and adjective-noun relations, correctly classifying
 
 # Related work
@@ -42,8 +42,8 @@ http://hdl.handle.net/11356/1187
 ## 3.2 Embeddings
 
 * aligned [collection]
-* fastText embeddings (Bojanowski+ 2016) 
-  * trained on Wikipedia dumps, with embedding spaces 
+* fastText embeddings (Bojanowski+ 2016)
+  * trained on Wikipedia dumps, with embedding spaces
   * aligned ... with a linear transformation learned via SVD (Smith+ 2017) on a
     bilingual dictionary of 500 out of the 1000 most frequent English words,
     obtained via the Google Translate API 3 .
@@ -56,8 +56,8 @@ http://hdl.handle.net/11356/1187
 ## 4.1 Setup
 
 * [our] in-language experiments are always based on supervised learning, in
-* cross-lingual experiments we compare two transfer approaches: 
-  * based on a simple dictionary transfer, and another on 
+* cross-lingual experiments we compare two transfer approaches:
+  * based on a simple dictionary transfer, and another on
   * supervised learning on the word embeddings in the source language, and
     performing predictions on word embeddings in the target language, with the
 

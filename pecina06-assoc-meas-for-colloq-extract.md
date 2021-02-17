@@ -28,7 +28,7 @@ Combining Association Measures for Collocation Extraction
 * estimation of joint and conditional bigram probabilities (Table 1, 1–3),
 * mutual information and derived measures (4–9),
 * statistical tests of independence (10–14),
-* likelihood measures (15– 16), and various 
+* likelihood measures (15– 16), and various
   other heuristic association measures and coefficients (17–55)
 * information theory background (61–74)
 * from information retrieval (75–82)

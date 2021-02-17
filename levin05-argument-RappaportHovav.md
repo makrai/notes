@@ -100,7 +100,7 @@ Argument Realization
 # 7 Multiple argument realization 186
 
 * alternations ... as illustrated with the causative alternation
-* some alternations appear to be meaning driven 
+* some alternations appear to be meaning driven
   (i.e., are a by-product of verbal polysemy)
 * information status and heaviness of a verb’s arguments
 

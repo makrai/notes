@@ -15,7 +15,7 @@ Chadi Helwe 1 , Ghassan Dib 2 , Mohsen Shamas 2 , Shady Elbassuoni 2
   * output is then used to train a student model with the same architecture as
   * then the student model is fine-tuned using the small labeled dataset used to
     train the teacher model
-  * from the conclusion: The 
+  * from the conclusion: The
     * first dataset was fully labeled, while the second dataset was partially
 * evaluate our approach, we used three different Arabic NER benchmarks, namely
   AQMAR (Mohit+ 2012), NEWS (Darwish, 2013) and TWEETS (Darwish, 2013)
@@ -35,6 +35,6 @@ Chadi Helwe 1 , Ghassan Dib 2 , Mohsen Shamas 2 , Shady Elbassuoni 2
 
 # 5 conclude and present future directions
 
-* future work, we plan to pre-train the BERT model on tweets 
+* future work, we plan to pre-train the BERT model on tweets
   * contain misspellings and mistakes and not necessarily written in MSA
   * apply our approach to part-of-speech tagging and dependency parsing

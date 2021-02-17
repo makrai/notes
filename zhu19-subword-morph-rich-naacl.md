@@ -8,7 +8,7 @@ https://github.com/cambridgeltl/sw_study
 
 * subword-level information (e.g., characters, character n-grams, morphemes)
 * especially for morphologically rich languages
-* [we deliver a] systematic comparative analysis across 
+* [we deliver a] systematic comparative analysis across
   typologically diverse languages and different tasks
   * focusing on the variation of two crucial components
     * segmentation of words into subword units, and
@@ -23,7 +23,7 @@ https://github.com/cambridgeltl/sw_study
     * selected as they require different degrees of syntactic and semantic
   * 5 languages representing fusional, introflexive (Hebrew), and agglutinative
 * results
-  * performance is both language~ and task-dependent 
+  * performance is both language~ and task-dependent
   * unsupervised segmentation (e.g., BPE, Morfessor) are sometimes comparable
     to or even outperform the ones based on supervised word segmentation
     in parsing or fine-grained entity typing
@@ -119,7 +119,7 @@ We consider three well-known segmentation methods for the function δ
 * We use CHIPMUNK (Cotterell+ 2015) as a representative supervised segmentation
   system, proven to provide a good trade-off between accuracy and speed
   * based on semi-Markov conditional random fields (Sarawagi and Cohen, 2005)
-* For each word, it also outputs the corresponding morphotactic tags T w 
+* For each word, it also outputs the corresponding morphotactic tags T w
   In §2.3 we discuss how to incorporate information from T w
 
 ### Morfessor
@@ -134,7 +134,7 @@ We consider three well-known segmentation methods for the function δ
 * iteratively replaces the most common pair of consecutive bytes
   with a new byte that does not occur within the data, and the
   number of iterations can be set in advance to control the granularity of the
-  byte combinations 
+  byte combinations
 
 ### [summarized]
 
@@ -156,7 +156,7 @@ We consider three well-known segmentation methods for the function δ
   * for Morfessor and BPE, we use the absolute positions of subwords in S w ,
   * for CHIPMUNK morphotactic tags are encoded directly as positions
   * addition [or] element-wise multiplication between each subword and position
-    * following prior work 
+    * following prior work
       * Gehring+ ICML 2017 Convolutional sequence to sequence learning
       * Mikolov+ 2018
 
@@ -185,7 +185,7 @@ inspired by Lin+ (2017)
 
 * We use pretrained CHIPMUNK models for all test languages except for Hebrew,
   as Hebrew lacks gold segmentation data
-* subword-agnostic SGNS (Mikolov+ 2013) and fastText (FT) (Bojanowski+ 17) 
+* subword-agnostic SGNS (Mikolov+ 2013) and fastText (FT) (Bojanowski+ 17)
   * can also be described by the general framework
   * used as insightful baselines
   * FT [generates all character n-grams of length 3 to 6] along with the full w
@@ -193,7 +193,7 @@ inspired by Lin+ (2017)
 ### Training Setup
 
 * grid search of learning rate and batch size for each δ on the German
-  WordSim-353 data set (WS; Leviant and Reichart (2015)).   
+  WordSim-353 data set (WS; Leviant and Reichart (2015)).
 * hyperparameters are then fixed for all other languages and evaluation runs
 
 ## 3.1 Evaluation Tasks
@@ -201,7 +201,7 @@ inspired by Lin+ (2017)
 ### Word Similarity and Relatedness
 
 * Multilingual SimLex-999  for English, German and Hebrew, each containing 999
-  (SIMLEX; Hill+ (2015); Leviant and Reichart (2015); Mrkšić+ (2017)) 
+  (SIMLEX; Hill+ (2015); Leviant and Reichart (2015); Mrkšić+ (2017))
 * FinnSim-300 (FS 300) produced by Venekoski and Vankka (2017) for Finnish and
 * AnlamVer (AN; Ercan and Yıldız (2018)) for Turkish
 * We also run experiments on the WordSim-353 test set (WS; Finkelstein+ (2002))
@@ -213,8 +213,8 @@ inspired by Lin+ (2017)
 ### Dependency Parsing
 
 * Universal Dependencies treebanks (UD v2.2; Nivre+ (2016))
-* subword-informed word embeddings from different configurations 
-  to initialize the deep biaffine parser of Dozat and Manning (2017) 
+* subword-informed word embeddings from different configurations
+  to initialize the deep biaffine parser of Dozat and Manning (2017)
   which has shown competitive performance in shared tasks (Dozat+ 2017) and
   among other parsing models (Ma and Hovy, 2017; Shi+ 2017; Ma+ 2018)
 

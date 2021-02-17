@@ -20,7 +20,7 @@ https://github.com/ibalazevic/TuckER
 * Knowledge graphs ... represented by a third-order binary tensor
   * 1 indicating a true fact and 0 indicating the unknown (false or missing)
 * approaches to link prediction
-  * linear, based [on] factorizing the third-order binary tensor 
+  * linear, based [on] factorizing the third-order binary tensor
     (Nickel+ 2011; Yang+ 2015; Trouillon+ 2016; Kazemi & Poole, 2018)
   * convolutional models, SOTA (Dettmers+ 2018; Balažević+ 2018)
 * In this paper, we introduce TuckER (E stands for entities, R for relations),
@@ -29,7 +29,7 @@ https://github.com/ibalazevic/TuckER
       a matrix along each mode
     * a form of higher-order singular value decomposition (HOSVD) in the
       special case where matrices are orthogonal and the core tensor is
-      “all-orthogonal” 
+      “all-orthogonal”
       (Kapteyn+ 1986; Kroonenberg & De Leeuw, 1980; Kolda & Bader, 2009)
   * In our case,
     * rows of the three matrices contain entity and relation embedding vectors,
@@ -38,7 +38,7 @@ https://github.com/ibalazevic/TuckER
 * relation types (symmetric, asymmetric, transitive, etc.),
   * TuckER is fully expressive
 * [the] bound on the entity and relation embedding dimensionality
-  * several orders of magnitude lower than the previous SOTA 
+  * several orders of magnitude lower than the previous SOTA
     ComplEx (Trouillon+ 2016) and SimplE (Kazemi & Poole, 2018)
 * several previous SOTA linear models are special cases of TuckER
   * RESCAL (Nickel+ 2011), DistMult (Yang+ 2015), ComplEx (Trouillon+ 2016) and
@@ -73,12 +73,12 @@ https://github.com/ibalazevic/TuckER
 ### SimplE (Kazemi & Poole, 2018) is a linear model
 
 * based on Canonical Polyadic (CP) decomposition (Hitchcock, 1927)
-* subject and object entity embeddings for the same entity are 
+* subject and object entity embeddings for the same entity are
   * in CP, independent
   * SimplE ... make subject and object entity embedding vectors dependent, i.e
-    it computes the average of two terms, 
+    it computes the average of two terms,
     1. a bilinear product of the head embedding of the subject entity, relation
-       embedding and tail embedding of the object entity and the 
+       embedding and tail embedding of the object entity and the
     2. bilinear product of the head embedding of the object entity, inverse
        relation embedding and tail embedding of the subject entity
 
@@ -134,11 +134,11 @@ https://github.com/ibalazevic/TuckER
 
 ## 4.1. Training 4
 
-* the tensor being factorized is comprised of ∞ and −∞ 
+* the tensor being factorized is comprised of ∞ and −∞
   (after applying the inverse of logistic sigmoid)
 * we use numerical methods to train TuckER
 * Following the training procedure introduced by Dettmers+ (2018)
-  * 1-N scoring, i.e. we simultaneously score a pair `e_s` and r 
+  * 1-N scoring, i.e. we simultaneously score a pair `e_s` and r
     with all entities `e_o` ∈ E,
     * in contrast to 1-1 scoring, where individual triples (e s , r, `e_o` ) are
       trained one at a time
@@ -154,7 +154,7 @@ https://github.com/ibalazevic/TuckER
 
 * ComplEx and SimplE are fully expressive with [the following dimensions]
   * ComplEx: d_e = `d_r` = n_e · n_r (Trouillon+ 2017)
-  * SimplE: d_e = `d_r` = min(n e · n_r , γ + 1) (Kazemi & Poole 2018) with 
+  * SimplE: d_e = `d_r` = min(n e · n_r , γ + 1) (Kazemi & Poole 2018) with
     γ representing the number of true facts
 * other models are not fully expressive:
   * DistMult, because it cannot model asymmetric relations; and
@@ -247,7 +247,7 @@ https://github.com/ibalazevic/TuckER
       * relations compared to FB15k and FB15k-237,
     * we set d_e = 200 and `d_r` = 30
 * batch normalization (Ioffe & Szegedy, 2015) and dropout (Srivastava+ 2014)
-* We evaluate each triple from the test set as in (Bordes+ 2013): 
+* We evaluate each triple from the test set as in (Bordes+ 2013):
   for a given triple, we generate 2n e test triples
   * by keeping the subject entity `e_s` and relation r fixed and
     replacing the object entity `e_o` with all possible entities E and

@@ -25,7 +25,7 @@ http://lcl.uniroma1.it/nasari/
 
 # 2 Semantic representation of concepts
 
-## Semantic representation NASARI 
+## Semantic representation NASARI
 
 Our concept modeling approach consists of two phases. First, for a given
 concept, we collect a set of relevant Wikipedia pages by leveraging the

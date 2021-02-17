@@ -39,7 +39,7 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
   2. If this does not happen, ... only users able to pay for privileged access
 * Contextualized word embeddings, especially
   * ELMo (Peters+ 2018) and BERT (Devlin+ 2018) could offer a viable solution
-* We thus analyze ELMo and BERT in a cross-topic scenario 
+* We thus analyze ELMo and BERT in a cross-topic scenario
   for the tasks of argument classification and clustering
 * We frame the problem of open-domain argument search as a combination of
   topic-dependent argument classification and clustering
@@ -93,7 +93,7 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
 * We use agglomerative hierarchical clustering (Day and Edelsbrunner, 1984) to
   * average linkage criterion to compute the P similarity P between two
   * stopping threshold is determined on the train set
-* We also tested the k-means and the DBSCAN clustering algorithms, 
+* We also tested the k-means and the DBSCAN clustering algorithms,
   but agglomerative clustering generally yielded better performances in
   preliminary experiments
 * We propose and evaluate various similarity metrics in two setups

@@ -76,13 +76,13 @@ The dataset and word vectors can be downloaded at http://www.socher.org
 # 4.3 New Dataset: Word Similarity in Context
 
 1. human judgments on pairs of words presented in sentential context,
-2. word pairs and their contexts are chosen to 
+2. word pairs and their contexts are chosen to
   reflect interesting variations in meanings of homonymous and polysemous words
 3. verbs and adjectives are present in addition to nouns
 
 # 5 Related Work
 
-* Andriy Mnih and Geoffrey Hinton. 2007. 
+* Andriy Mnih and Geoffrey Hinton. 2007.
   Three new graphical models for statistical language modelling
 * ranking-loss training objective proposed by Collobert and Weston (2008),
 * The multi-prototype approach has been widely studied in models of
@@ -90,7 +90,7 @@ The dataset and word vectors can be downloaded at http://www.socher.org
   * Yves Rosseel. 2002. Mixture models of categorization
     * matematikai jellegű. a pszichóra csak hivatkozik
   * Thomas L Griffiths, Kevin R Canini, Adam N Sanborn, Daniel J Navarro
-     2009.  Unifying rational models of categorization 
+     2009.  Unifying rational models of categorization
        via the hierarchical Dirichlet process
     * tiszta matematika
 * Schütze (1998) used clustering of contexts to perform

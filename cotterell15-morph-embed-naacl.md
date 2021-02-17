@@ -11,7 +11,7 @@ NAACL 2015
 
 # 1 Intro
 
-* We augment the log-bilinear model (LBL) of Mnih and Hinton (2007) 
+* We augment the log-bilinear model (LBL) of Mnih and Hinton (2007)
   with a multi-task objective
   * In addition to raw text, our model is trained on a morphological tags
 * task is
@@ -75,13 +75,13 @@ NAACL 2015
 * We first investigated whether the embeddings learned by Morph-LBL do indeed
   encode morphological information
 * For each word, we selected the most frequently occurring morphological tag
-* labeling a word-embedding with its most frequent morphological tag 
+* labeling a word-embedding with its most frequent morphological tag
   as a multiway classification problem. We trained a
   * k nearest neighbors classifier where k was optimized on development data
 
 ## 6.2 Experiment 2: MorphoDist
 
-* We also evaluated the three types of embeddings 
+* We also evaluated the three types of embeddings
   using the MorphoDist metric introduced in section 5.1
 
 ## 6.3 Discussion

@@ -9,7 +9,7 @@ CoNLL 2016
   * incorporates distributed latent representations of entire sentences
   * explicitly model holistic properties of sentences such as
     style, topic, and high-level syntactic features
-* Samples from the prior over these sentence representations produce remarkably 
+* Samples from the prior over these sentence representations produce remarkably
   diverse and well-formed sentences through simple deterministic decoding
 * paths through this latent space generate coherent novel sentences
 * negative results on the use of the model in language modeling
@@ -34,7 +34,7 @@ CoNLL 2016
   * on a standard language modeling evaluation similar performance to
     existing rnnlms.  We also evaluate our model using a larger corpus
   * imputing missing words. For this task, we introduce a
-    * novel evaluation strategy using anadversarial classifier, 
+    * novel evaluation strategy using anadversarial classifier,
       * sidestepping the issue of intractable likelihood computations by
         inspiration from work on non-parametric two-sample tests and adversarial
         training

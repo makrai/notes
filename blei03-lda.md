@@ -12,9 +12,9 @@ Journal of Machine Learning Research 3 (2003) 993-1022
       as a finite mixture over an underlying set of topics
     * Each topic is, in turn, modeled
       as an infinite mixture over an underlying set of topic probabilities
-  * In the context of text modeling, the 
+  * In the context of text modeling, the
     topic probabilities provide an explicit representation of a document
-  * efficient approximate _inference_ techniques 
+  * efficient approximate _inference_ techniques
     * based on variational methods and an EM algorithm for empirical Bayes
       parameter estimation
 * results in

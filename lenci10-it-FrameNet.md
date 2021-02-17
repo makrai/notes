@@ -16,7 +16,7 @@ LREC, 2010
 
 # 1 Goals and Method
 
-* semantic frames (Fillmore, 1982; Fillmore, 1985) – 
+* semantic frames (Fillmore, 1982; Fillmore, 1985) –
   * schematic representations of the situations [of] human experience, each
   * participants in the situation, or Frame Elements (FEs) – and to describe
   * possible syntactic realizations of the FEs for every word (Fillmore+ 1992+)

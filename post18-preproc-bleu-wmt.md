@@ -70,8 +70,8 @@ A second problem, that of preprocessing, exists in practice
     preprocessing were inadvertently applied to the reference
   * metric. Only the metric-internal tokenization of the official WMT script,
 * changes ... as high as 1.8 for one arc, and averaging around 1.0
-  * The biggest is the treatment of case, which is well known, 
-    yet many papers are not clear about whether they report cased 
+  * The biggest is the treatment of case, which is well known,
+    yet many papers are not clear about whether they report cased
 * particularly before sub-word splitting (Sennrich+ 2016) was proposed,
   many systems  limited the vocabulary in their attempt to deal with unknown
   * It’s possible that these papers applied this same masking to the references

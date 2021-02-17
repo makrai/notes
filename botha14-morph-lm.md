@@ -22,9 +22,9 @@ Jan A. Botha and Phil Blunsom
 # 2 Additive
 
 * languages types
-  * more fusional languages (e.g. Czech, Russian) to 
+  * more fusional languages (e.g. Czech, Russian) to
   * more agglutinative languages (e.g. Turkish)
-* Unlike the recursive neural-network method of Luong+ (2013), 
+* Unlike the recursive neural-network method of Luong+ (2013),
   we do not impose a single tree structure over a word, which would ignore the
   ambiguity inherent in words like `un[[lock]able]` vs. `[un[lock]]able`. In
 
@@ -32,7 +32,7 @@ Jan A. Botha and Phil Blunsom
 
 ## 4.1 Data & Methods
 
-### Word Factorisation μ. 
+### Word Factorisation μ.
 
 * We obtain labelled morphological segmentations from ... Morfessor Cat-MAP
   (Creutz & Lagus, 2007). The mapping μ of a word is taken as its surface form

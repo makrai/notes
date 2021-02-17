@@ -26,12 +26,12 @@ nips 15
   * Le & Mikolov, 2014
   * Mikolov+ 2013a
   * Pennington+ 2014
-* with little structural engineering 
+* with little structural engineering
   (Collobert+ 2011b, Kim, 2014, Johnson & Zhang, 2014, dos Santos & Gatti, 2014)
 * In this article ... without artificially imbedding knowledge about words,
   phrases, sentences or any other syntactic or semantic structures
   1. working with characters
-  2. not require knowledge of syntax or semantic structures – 
+  2. not require knowledge of syntax or semantic structures –
     inference directly to high-level targets
 * inspired by ConvNet’s success in computer vision
   * outstanding performance in various image recognition tasks

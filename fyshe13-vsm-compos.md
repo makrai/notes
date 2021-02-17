@@ -1,4 +1,4 @@
-Alona Fyshe, Partha Talukdar, Brian Murphy and Tom Mitchell 
+Alona Fyshe, Partha Talukdar, Brian Murphy and Tom Mitchell
 2013
 Documents and Dependencies:
   an Exploration of Vector Space Models for Semantic Composition
@@ -29,21 +29,21 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
     linked together in dependency parsed sentences)
 * can be compared with the paradigmatic/syntagmatic distinction
   (Sahlgren, 2006)
-* Global patterns have been used in 
-  * Latent Semantic Analysis (Landauer and Dumais, 1997) and 
-  * LDA Topic models (Blei et al., 2003). 
+* Global patterns have been used in
+  * Latent Semantic Analysis (Landauer and Dumais, 1997) and
+  * LDA Topic models (Blei et al., 2003).
 * Local patterns based on word co-occurrence in a fixed width window
   * Hyperspace Analogue to Language (Lund and Burgess, 1996)
   * increasing linguistic sophistication, up to full syntactic and dep parses
     (Lin, 1998; Padó and Lapata, 2007; Baroni and Lenci, 2010)
-    
-## In this paper we systematically explore the utility of a 
+
+## In this paper we systematically explore the utility of a
 
 * global, topic-based VSM built from what we call Document features, and a
 * local, type-based VSM built from Dependency features
-* third Combined VSM in which the word vector is the 
-  concatenation of its Document and Dependency features. 
-* All three models subsequently 
+* third Combined VSM in which the word vector is the
+  concatenation of its Document and Dependency features.
+* All three models subsequently
   * normalize frequencies using positive pointwise mutual-information (PPMI) +
   * dimensionality reduc[tion] using singular value decomposition (SVD)
 * To our knowledge, [ours] is the first freely available VSM that includes
@@ -68,17 +68,17 @@ http://www.cs.cmu.edu/~afyshe/papers/conll2013/
 # 3 Creating a Vector-Space
 
 * A series of three additional filtering steps selected [phrases and features]
-  1. co-occurrence frequency cut-off ... of 
-    * 20 ... to the dependency counts, and of 2 to document counts.  
+  1. co-occurrence frequency cut-off ... of
+    * 20 ... to the dependency counts, and of 2 to document counts.
     * Positive pointwise-mutual-information (PPMI) was used as an association
       measure to normalize the observed co-occurrence frequency for the varying
       frequency of the target word and its features, and to discard negative
-      associations.  
+      associations.
   2. filtered to the 57 thousand words and phrases which had at least 20
      non-“stop word” Dependency co-occurrence types, where a “stop word” was
      one of the 100 most frequent Dependency features observed (so named be-
-     cause the dependencies were largely incident on function words). 
-  3. features observed for no more than one target were removed, as were 
+     cause the dependencies were largely incident on function words).
+  3. features observed for no more than one target were removed, as were
     empty target entries
 
 # 4 Experiments

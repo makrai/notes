@@ -251,7 +251,7 @@ the literature, and our Transformer baseline
   * in both settings participants overwhelmingly prefer the output of our model
     against comparison systems across datasets and evaluation paradigms.
   * All differences between BertSum and comparison models are statistically
-    significant (p < 0.05), 
+    significant (p < 0.05),
     with the exception of TC ONV S2S (see Table 7; XSum) in QA
 
 # 6 Conclusion 9

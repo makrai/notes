@@ -35,7 +35,7 @@ Kornai ajánlásával
     * analysis was limited to symmetric tensors
       which are then necessarily cubic in shape
 * tensors that occur naturally
-  * very different numbers of dimensions across modes, yielding 
+  * very different numbers of dimensions across modes, yielding
     highly irregularly shaped, non-cubic tensors with no symmetry properties
   * For example in
     * EEG studies ...  time, spatial scale, and electrodes [23].  In
@@ -58,16 +58,16 @@ Kornai ajánlásával
     1. the impossible regime at high noise where
       it is believed no algorithm can recover the ground-truth low rank tensor
 * theoretical perspective [to] symmetric cubic tensors in [21]
-  * symmetric tensors, it was shown that 
-    the easy inference regime cannot exist, 
+  * symmetric tensors, it was shown that
+    the easy inference regime cannot exist,
     unless the prior over the low rank factor has non-zero mean
-  * non-symmetric tensors, one tensor mode can have zero mean 
-    without destroying the existence of the easy regime, 
+  * non-symmetric tensors, one tensor mode can have zero mean
+    without destroying the existence of the easy regime,
     as long as the other modes have non-zero mean
   * the space of all possible tensor shapes, the hard regime has the largest
-    width along the noise axis when the shape is cubic, thereby indicating that 
-    * tensor shape can have a strong effect on inference performance, and that 
-    * cubic tensors have highly non-generic properties 
+    width along the noise axis when the shape is cubic, thereby indicating that
+    * tensor shape can have a strong effect on inference performance, and that
+    * cubic tensors have highly non-generic properties
       in the space of all possible tensor shapes
 * connections to the statistical mechanics literature
   * In practice, ... the prior or underlying rank of the tensors are not known

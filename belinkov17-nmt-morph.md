@@ -9,7 +9,7 @@ updated results and discussion in section 5
 
 * Transfer learning is another popular post-hoc analysis technique
   * representations learned for (typically high-level) task A are applied to
-    (typically lower-level) task B 
+    (typically lower-level) task B
 * ACL 2017, researchers asked what
   * NMT models know about morphology
     * Belinkov+ (2017)
@@ -201,7 +201,7 @@ updated results and discussion in section 5
 * a modest drop in representation quality with the decoder
   * may be correlated with lower BLEU scores when translating English to Arabic
     vs. Arabic to English
-  * simmilar small drops with higher quality translation directions 
+  * simmilar small drops with higher quality translation directions
     (Table 7, Appendix A.3)
 * The gap between encoder and decoder representations may [be] surprising,
   * encoder’s task is to create a generic, close to language-indep repr
@@ -273,7 +273,7 @@ updated results and discussion in section 5
       * byte-pair encoding (Sennrich+ 2016) or
       * the word-piece model (Wu+ 2016)— or
     * learned during training using a character-based convolutional/recurrent
-      sub-network 
+      sub-network
       (Costa-jussà & Fonollosa, 2016; Luong & Manning, 2016; Vylomova+ 2016)
       * advantage: keeping the original word boundaries without requiring pre~
         and post-processing
