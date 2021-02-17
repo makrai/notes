@@ -20,7 +20,7 @@ Beyond bilingual: Multi-sense word embeddings using multilingual context
 # 1 Introduction
 
 * infer multi-sense word representations by modeling the sense as a latent
-  variable in a Bayesian non-parametric framework 
+  variable in a Bayesian non-parametric framework
   (Reisinger and Mooney, 2010; Neelakantan+ 2014; Li and Jurafsky, 2015)
 * learn multi-sense embeddings by exploiting the fact that different senses of
   the same word may be translated into different words in a foreign language
@@ -42,13 +42,13 @@ Beyond bilingual: Multi-sense word embeddings using multilingual context
     * induce multi-sense embeddings by first clustering the contexts and then
       using the clustering to obtain the sense vectors
     * contexts can be
-      * topics induced using latent topic models 
+      * topics induced using latent topic models
         (Liu, Qiu, and Huang, 2015; Liu+ 2015)
-      * Wikipedia (Wu and Giles, 2015) or 
+      * Wikipedia (Wu and Giles, 2015) or
       * coarse part-of-speech tags (Qiu+ 2014)
     * retrofitting (Faruqui+ 2015; Jauhar, Dyer, and Hovy, 2015), which
       * infuse semantic ontologies from resources like WordNet (Miller, 1995)
-        and Framenet (Baker, Fillmore, and Lowe, 1998) 
+        and Framenet (Baker, Fillmore, and Lowe, 1998)
         into embeddings during a post-processing step
       * ontologies list (albeit not exhaustively) the senses of a word, and
         by retro-fitting it is possible to tease apart the different senses of
@@ -65,7 +65,7 @@ Beyond bilingual: Multi-sense word embeddings using multilingual context
       * Our work can be viewed as the multi-view extension of their model
       * we compare our model to monolingually trained version of their model
 * crosslingual distributional information ... for learning word embeddings,
-  * improves performance on several downstream tasks 
+  * improves performance on several downstream tasks
     (Faruqui and Dyer, 2014; Guo+ 2016; Upadhyay+ 2016)
   * multi-sense embeddings using crosslingual signals (Bansal, DeNero, and Lin,
     2012; Guo+ 2014a; Šuster, Titov, and van Noord, 2016)
