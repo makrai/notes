@@ -70,7 +70,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * optimal transport (Zhang+ 2017)
 * monolingual transfer learning
   (McCann+ 2017; Howard & Ruder, 2018; Peters+ 2018; Devlin+ 2019)
-* deep cross-lingual representations 
+* deep cross-lingual representations
   (Eriguchi+ 18; Pires+ 19; Wu & Dredze 19; Lample & Conneau 19; Siddhant+ 19)
 
 ## Cross-lingual evaluation
@@ -151,7 +151,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   crosslingual and anchor links, self-training, and data selection
 * We use the balanced train, dev, and test splits from Rahimi+ (2019)
 
-### XQuAD The Cross-lingual Question Answering Dataset (Artetxe+ 2019)
+### XQuAD, the Cross-lingual Question Answering Dataset (Artetxe+ 2019)
 
 * answer to a question as a span in the corresponding paragraph
 * subset of the English SQuAD v1.1 (Rajpurkar+ 2016) dev set was translated
@@ -215,7 +215,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 * We first verify that performance on the translated test sets is a good proxy
   * detailed results in the appendix
   * XQuAD: automatically translated test sets underestimate mBERT
-    * similar[ly to that] reported by Agić & Schluter (2018)
+    * similarly to that reported by Agić & Schluter (2018)
   * XNLI, the automatically translated test sets overestimate mBERT
   * Note that even human translated test sets may underestimate a model
     * as such translationese has been shown to be less lexically diverse than
@@ -288,7 +288,7 @@ training data of all languages jointly
 * test data translated from the target language to English
   using our in-house MT system
 
-### In-language model For the POS, NER, and TyDiQA GoldP tasks where
+### In-language model. For the POS, NER, and TyDiQA GoldP tasks where
 
 * target-language training data is available, we
 * fine-tune mBERT on monolingual data in the target language
@@ -306,11 +306,11 @@ training data of all languages jointly
 available, we additionally compare against an
 * mBERT model that is jointly trained on the combined training data of all lang
 
-### Human performance For XNLI, PAWS-X, and XQuAD, we obtain human performance
+### Human performance. For XNLI, PAWS-X, and XQuAD, we obtain human performance
 
 * from the English datasets they are derived from, MNLI, PAWS-X, and SQuAD
-  respectively (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016). 12 For
-* TyDiQA-GoldP, we use the performance estimate of Clark+ (2020). For
+  respectively (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016)
+* TyDiQA-GoldP, we use the performance estimate of Clark+ (2020)
 * MLQA, as answers are annotated using the same format as SQuAD, we employ the
   same human performance estimate.  For
 * POS tagging, we adopt 97% as a canonical estimate of human performance
@@ -348,8 +348,8 @@ available, we additionally compare against an
 ### Cross-lingual transfer gap
 
 * i.e. the difference between English test set and all other languages in Tab 3
-* This comparison should be taken with a grain of salt, as
-  scores across languages are not directly comparable
+* should be taken with a grain of salt, as 
+  scores across languages are not directly comparable 
   for the tasks where test sets differ, i.e. POS, NER, MLQA, and TyDiQA-GoldP
   * differences in scores may not be linearly related
 * powerful models such as XLM-R reduce the gap significantly
@@ -359,7 +359,7 @@ available, we additionally compare against an
   * classification tasks, the transfer learning gap is lowest
 * MT reduces the gap across all tasks
 
-# 5. Analyses [of the limitations of SOTA cross-lingual models] 6 
+# 5. Analyses [of the limitations of SOTA cross-lingual models] 6
 
 ## Best zero-shot model analysis
 
@@ -373,7 +373,7 @@ available, we additionally compare against an
     PAWS-X, scores cluster in a relatively small range—even considering pseudo
   * the remaining tasks have significantly wider spread, particularly as we
     include pseudo test sets
-  * [English is lowest] For TyDiQA-GoldP, English performance is lowest in
+  * [English is lowest] For TyDiQA-GoldP
     * high performance on Indonesian and Finnish may be due to less complex
       Wikipedia context passages for these languages
   * lower performance for other language families, particularly for

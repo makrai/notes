@@ -32,19 +32,19 @@ https://github.com/deepmind/xquad
   * model is able to generalize to other languages,
     even if it has never seen labeled data in those languages
   * surprising, as there is no explicit cross-lingual term in the training obj
-* Pires+ (2019) hypothesized that: having word pieces used in all languages
-  (numbers, URLs, etc) forces the
-  co-occurring pieces to also be mapped to a shared space, thus spreading the
+* Pires+ (2019) hypothesized that having word pieces used in all languages
+  (numbers, URLs, etc) 
+  forces the co-occurring pieces to also be mapped to a shared space
 * Cao+ (2020) echoed this sentiment, and
-* Wu and Dredze (2019) further observed that mBERT performs better in languages
-  that share many subwords
-* current consensus of the crosslingual generalization ability of mBERT is based
-  on a combination of three factors:
+* Wu and Dredze (2019) further observed that 
+  mBERT performs better in languages that share many subwords
+* current consensus of the crosslingual generalization ability of mBERT 
+  is based on a combination of three factors:
   * shared vocabulary items that act as anchor points;
   * joint training across multiple languages that spreads this effect; which
   * deep cross-lingual reprs that generalize across languages and tasks
-* In this paper, we empirically test this hypothesis by designing an alternative
-  approach that violates all of these assumptions
+* In this paper, we empirically test this hypothesis by 
+  designing an alternative approach that violates all of these assumptions
   * starts with a monolingual transformer trained with MLM
   * transfer to a new language by learning a new embedding matrix through MLM in
     the new language while freezing parameters of all other layers
@@ -56,14 +56,14 @@ https://github.com/deepmind/xquad
   * classic probe for language understanding
   * less susceptible to annotation artifacts commonly found in other benchmarks
     (Kaushik and Lipton, 2018; Gururangan+ 2018)
-* Our results on XQuAD show that the monolingual transfer approach can be made
-  competitive with mBERT by learning second language-specific transformations
-  via adapter modules (Rebuffi+ 2017)
+* Our results on XQuAD show that the 
+  monolingual transfer approach can be made competitive with mBERT by learning
+  second language-specific transformations via adapter modules (Rebuffi+ 2017)
 
 # 2 Cross-lingual Transfer of Monolingual Representations
 
-* method to transfer monolingual representations to new languages in an
-  unsupervised fashion
+* method to transfer monolingual representations to new languages 
+  in an unsupervised fashion
 * This is particularly useful for low-resource languages
 
 # 3 Experiments
@@ -72,8 +72,7 @@ https://github.com/deepmind/xquad
 
 # sum 3,4: neither a shared subword vocabulary nor joint multilingual training
 is necessary for zero-shot transfer and
-* effective vocabulary size per language is an important factor for learning
-  multilingual models
+* effective vocabulary size per language is an important facto 
 
 # 5 Discussion
 

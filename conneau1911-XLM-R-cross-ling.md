@@ -1,6 +1,6 @@
-XLM-R: Unsupervised Cross-lingual Representation Learning at Scale
-Alexis Conneau, K Khandelwal, N Goyal, V Chaudhary, G Wenzek, F Guzmán, E Grave,
-  Myle Ott, Luke Zettlemoyer, Veselin Stoyanov
+XLM-RoBERTa: Unsupervised Cross-lingual Representation Learning at Scale
+Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary,
+  G Wenzek, F Guzmán, E Grave, M Ott, L Zettlemoyer, V Stoyanov
 arXiv:1911.02116
 
 # Abstract
@@ -10,17 +10,17 @@ arXiv:1911.02116
 * a Transformer-based masked language model on one hundred languages, using
   more than two terabytes of filtered CommonCrawl data
 * significantly outperforms multilingual BERT (mBERT) on cross-lingual benchmks
-  * +13.8% average accuracy on XNLI, +12.3% average F1 score on MLQA, and 
+  * +13.8% average accuracy on XNLI, +12.3% average F1 score on MLQA, and
     +2.1% average F1 score on NER
-* performs particularly well on low-resource languages, 
+* performs particularly well on low-resource languages,
   improving 11.8% in XNLI accuracy for Swahili and 9.2% for Urdu
-* We [empirically evaluate] the key factors that are required to achieve this
+* We empirically evaluate the key factors that are required to achieve this
   * trade-offs between
     * positive transfer and capacity dilution and
     * the performance of high and low resource languages at scale
 * very competitive with strong monolingual models on the GLUE and XNLI
 * code, data, and models publicly available
-* conclusion: importance of key hyperparameters [i.e. vocabulary size]
+* conclusion: importance of key hyperparameters i.e. vocabulary size
 
 # 1 Intro
 
@@ -63,13 +63,13 @@ arXiv:1911.02116
 
 * transformer based language models (Radford+ 2018; Devlin+ 2018), unsupervised
   * cross-lingual understanding
-    (Mikolov+ 2013a; Schuster+ 2019; Lample and Conneau, 2019) extends these
-  * mBERT (Devlin+ 2018) and XLM (Lample and Conneau 2019) introduced mBERT and
+    (Mikolov+ 2013a; Schuster+ 2019; Lample and Conneau, 2019)
+  * mBERT (Devlin+ 2018) and XLM (Lample and Conneau 2019)
     * masked language models trained on multiple languages,
       without any cross-lingual supervision
-  * Lample and Conneau (2019) propose translation language modeling (TLM) as a
-    way to leverage parallel data and obtain a new SOTA on XNLI benchmark
-    (Conneau+ 2018).  They further show strong improvements on
+  * Lample and Conneau (2019):
+    * translation language modeling (TLM) as a way to leverage parallel data and
+    * a new SOTA on XNLI benchmark (Conneau+ 2018)
   * unsupervised machine translation and pretraining for sequence generation
   * effectiveness of mBERT on sequence labeling tasks (Pires+ 2019)
   * cross-lingual multi-task learning: Huang+ (2019) showed gains over XLM
@@ -77,11 +77,11 @@ arXiv:1911.02116
     * Singh+ (2019) demonstrated the efficiency of
   * relatively modest scale, in terms of the amount of training data
 * scaling language model pretraining (size of the model and the training data)
-  * monolingual case, Jozefowicz+ (2016) show how large-scale LSTM models can
-    * language modeling benchmarks when trained on billions of tokens
+  * monolingual case, Jozefowicz+ (2016) show large-scale LSTM models
+    * trained on billions of tokens
   * GPT (Radford+ 2018) also highlights the importance of scaling the data and
-  * RoBERTa (Liu+ 2019) shows that training BERT longer on more data leads to
-  * we show that mBERT and XLM are undertuned, and that simple improvements in
+  * RoBERTa (Liu+ 2019) trains BERT longer on more data
+  * we show that mBERT and XLM are undertuned
     * cleaned CommonCrawls (Wenzek+ 2019), which
       increase the amount of data for low-resource languages by two orders of m
   * Similar data has also been shown to be effective for learning high quality
@@ -125,7 +125,7 @@ arXiv:1911.02116
   from Lample and Conneau (2019) trained on Wikipedia text in 100 languages
 * we replace some languages with more commonly used ones such as
   * romanized Hindi and traditional Chinese
-  * ablation studies [on] the 7 languages for which we have classification and
+  * ablation studies on the 7 languages for which we have classification and
     sequence labeling evaluation benchmarks: en fr de ru zh sw ur
     * a suitable range of language families and includes low-resource languages
   * larger sets of 15, 30, 60 and all 100 languages
@@ -201,7 +201,7 @@ arXiv:1911.02116
 
 ### Transfer-dilution trade-off and Curse of Multilinguality
 
-* Model capacity is constrained [by] memory and speed during training and inf
+* Model capacity is constrained by memory and speed during training and inf
 * per-language capacity decreases as we increase the number of languages
   * low-resource language performance can be improved by adding
     similar higher-resource languages
@@ -226,12 +226,12 @@ arXiv:1911.02116
   * training set size, the
   * size of the shared subword vocabulary, and the
   * rate at which we sample training examples from each language
-* We study the effect of sampling on the performance of 
+* We study the effect of sampling on the performance of
   high-resource (English and French) and low-resource (Swahili and Urdu)
   languages for an XLM-100 model trained on Wikipedia
   * similar trend for the construction of the subword vocab
   * varying the α parameter which controls the exponential smoothing of the
-    language sampling rate. Similar to Lample and Conneau (2019), we use a 
+    language sampling rate. Similar to Lample and Conneau (2019), we use a
     * sampling rate proportional to the number of sentences in each corpus
     * higher values of α see batches of high-resource languages more often
     * overall: in performance, we found 0.3 to be an optimal value for α
@@ -259,11 +259,11 @@ arXiv:1911.02116
 
 * Figure 1, the Common-Crawl Corpus that we collected has significantly more
   monolingual data than the previously used Wikipedia corpora
-* Figure 3 shows [significantly better performance] for the same BERT Base
+* Figure 3 shows significantly better performance for the same BERT Base
 * training MLMs longer: Liu+ (2019) also showed the benefits of
   * we observed similar effects of large-scale training, such as increasing
     batch size (see Figure 7) and training time, on model performance
-  * multilingual MLM in Lample and Conneau (2019) undertuned [because of]
+  * multilingual MLM in Lample and Conneau (2019) undertuned because of
     * validation perplexity as a stopping criterion for pretraining caused the
 * we were able to improve the performance of Lample and Conneau (2019)
   from 71.3% to more than 75% average accuracy on XNLI, which was
@@ -275,10 +275,10 @@ arXiv:1911.02116
 * different language-specific tokenization tools used by mBERT and XLM-100
   * make these models more difficult to use on raw text
   * we train a Sentence Piece model (SPM) and apply it directly on raw text
-  * [no] loss in performance
-    [compared to] language-specific preprocessing and byte-pair encoding (fg 7)
+  * no loss in performance
+    compared to language-specific preprocessing and byte-pair encoding (fg 7)
 
-## 5.2 Cross-lingual Understanding Results
+## 5.2 Cross-lingual Understanding Results 6
 
 ### XNLI
 
@@ -305,7 +305,7 @@ arXiv:1911.02116
 * Using the multilingual training of translate-train-all,
   XLM-R further improves performance and reaches 82.4% accuracy, a
   new overall SOTA for XNLI, outperforming Unicoder by 3.9%. Multilingual
-  * similar to [having] training sets in various languages for the same task
+  * similar to having training sets in various languages for the same task
   * can be seen as some form of cross-lingual data augmentation (Singh+ 2019),
     similar to back-translation (Xie+ 2019)
 
@@ -337,13 +337,13 @@ arXiv:1911.02116
   outperforms mBERT by 12.3% F1-score and 10.6% accuracy.  It even
   outperforms BERT-Large on English, confirming its strong monolingual perform
 
-## 5.3 Multilingual versus Monolingual
+## 5.3 Multilingual versus Monolingual 7
 
 * we present results of multilingual XLM models against monolingual BERT models
 
-### GLUE: XLM-R versus RoBERTa [i.e. monolingual]
+### GLUE: XLM-R versus RoBERTa i.e. monolingual
 
-* Our goal ... both, cross-lingual understanding tasks as well as [monolingual]
+* Our goal ... both, cross-lingual understanding tasks as well as monolingual
 * Table 4, that XLM-R obtains better average dev performance than BERT Large
   * on par with XLNet Large
   * RoBERTa model outperforms XLM-R by only 1.3% on average
@@ -354,7 +354,7 @@ arXiv:1911.02116
   worse performance than their monolingual counterparts
 * we provide the first comprehensive study to assess this claim on XNLI
 * 7 languages and compare performance in Table 5
-* We train 14 monolingual BERT models on Wikipedia and CommonCrawl, and 
+* We train 14 monolingual BERT models on Wikipedia and CommonCrawl, and
   two XLM-7 models
 * We add slightly more capacity in the vocabulary size of the multilingual
   model for a better comparison
@@ -368,6 +368,15 @@ arXiv:1911.02116
   the 7 languages, while the average performance of monolingual BERT models
   trained on CC is 77.5%
 
-## 5.4 Representation Learning for Low-resource Languages
+## 5.4 Representation Learning for Low-resource Languages 8
+
+* Table 5: pretraining on Wikipedia for Swahili and Urdu performed similarly to
+  a randomly initialized model; most likely due to the small size of the data
+* pretraining on CC improved performance by up to 10 points
+  * confirms our assumption that mBERT and XLM-100 rely heavily on cross-lingual
+    transfer but do not model the low-resource languages as well as XLM-R
+  * in the translate-train-all setting: the biggest gains for XLM models trained
+    on CC, compared to their Wikipedia counterparts, are on low-resource
+    languages; 7% and 4.8% improvement on Swahili and Urdu respectively
 
 # 6 Conclusion 9
