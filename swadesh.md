@@ -1,8 +1,10 @@
+see swadesh50.md and swadesh55.md
+
 # Versions and authors
 
-* Swadesh himself created several versions of his list. He o
+* Swadesh himself created several versions of his list
  * started (1950) with a list of 225 meanings, which he
- * reduced to 165 words for the Salish-Spokane-Kalispel language. In
+ * reduced to 165 words for the Salish-Spokane-Kalispel language
  * 1952 he published a list of 215 meanings,[2] of which he
  * suggested the removal of 16 for being unclear or not universal, with one
    added to arrive at 200 words.  In 1955[3] he wrote, "The only solution
