@@ -1,13 +1,14 @@
 Introduction to Tensor Decompositions
   and their Applications in Machine Learning
 Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
+2017
 
 # Abstract
 
 * tensors first emerged in the psychometrics community in the 20th century
-* we are going to ...  discuss
-  * why tensors [are] more rigid than matrices with respect to the uniqueness
-    of their decomposition
+* we are going to discuss
+  * why tensors are more rigid than matrices 
+    with respect to the uniqueness of their decomposition
   * most important factorization algorithms and their properties
   * examples of tensor decomposition applications in machine learning
   * a case study on tensor-based estimation of mixture models
@@ -15,8 +16,8 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 
 # 1 Introduction
 
-* Fueled by increasing computing capacity and a better understanding of
-  multilinear algebra especially during the last decade
+* Fueled by increasing computing capacity and a 
+  better understanding of multilinear algebra especially during the last decade
 * we will turn to some of the most widely used tensor decompositions,
   CP and Tucker, and the theory behind them
 * uncovering underlying hidden low-dimensional structure in the tensor
@@ -25,7 +26,7 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
   spherical Gaussian mixture models (GMMs) and single topic models
   * can extract all needed information from low-order moments
     to learn simple GMMs and topic models in an efficient way
-* organiz
+* organization
   4. a rather theoretical treatment
   5., 6. practical applicability
 
@@ -37,9 +38,9 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 
 ### 3.1.5 Tensor Rank
 
-* factor matrices ... hold the combination of the vectors from the rank-one
+* factor matrices hold the combination of the vectors from the rank-one
   components as columns
-* `λ_r` ... is often used to absorb the respective weights during normalization
+* `λ_r` is often used to absorb the respective weights during normalization
   of the factor matrices’ columns. This usually means normalizing the sum of
   the squares of the elements in each column to one
   * useful once turn to
@@ -55,7 +56,7 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 ## 3.3 Important Matrix/Tensor Products
 
 ### 3.3.1 Kronecker product between two arbitrarily-sized matrices is a
-generalization of the outer product [of] vectors
+generalization of the outer product of vectors
 ### 3.3.2 Khatri-Rao product between two matrices corresponds to the
 column-wise Kronecker product
 ### 3.3.3 Hadamard product between two same-sized matrices
@@ -69,34 +70,34 @@ az n-edik mód mentén való mxszorzat
     * Hitting a tensor X with a matrix M i on the i-th dimension
       corresponds to a matrix-vector multiplication between M i and the vector
       on the i-th dimension, M i T a (i)
-    * valuable [in the] tensor-based estimation of mixture models in Section 6
+    * valuable in the tensor-based estimation of mixture models in Section 6
     * hitting a tensor X with a vector v i on the i-th dimension corresponds to
       an inner product between v i and the vector on the i-th dimension, hv i ,
 
 ## 3.4 Tensor Uniqueness and Rigidness
 
-* A low-rank tensor is ...  not just a collection of low-rank [planes], but
+* A low-rank tensor is not just a collection of low-rank planes, but
   there exist interrelations between these slices
 
 # 4 Tensor decomposition algorithms 4
 
 * there is no single generalization of the SVD concept, but we will discuss
   two decompositions that feature different generalized properties
-* Both are outer product decompositions, but ... very different structur[e]
+* Both are outer product decompositions, but very different structure
 * rule of thumb it is usually advised to use
   * CPD for latent parameter estimation and
   * Tucker for subspace estimation, compression, and dimensionality reduction
 * Just like in Section 3, we will introduce these decompositions from
-  Sidiropoulos+ (2016) and Kolda+ (2009), which also provide deeper theor[y]
+  Sidiropoulos+ (2016) and Kolda+ (2009), which also provide deeper theory
 
 ## 4.1 Canonical Polyadic Decomposition (CPD) 5
 
 * The most prominent rank decompositions are the
   CANonical DECOMPosition (CANDECOMP) and the
   PARAllel FACtors (PARAFAC) decomposition
-* independently discovered many times, but ... same principles
-* we will [refer to this type of decomposition as] CPD
-* two of the most popular algorithms to compute CPD of a ... tensor
+* independently discovered many times, but same principles
+* we will refer to this type of decomposition as CPD
+* two of the most popular algorithms to compute CPD of a tensor
 
 ### 4.1.1 Jennrich’s Algorithm
 * If A, B, and C are all linearly independent (i.e. have full rank) [23, 24]
@@ -105,26 +106,26 @@ az n-edik mód mentén való mxszorzat
 
 ### 4.1.2 Alternating Least Squares (ALS) Algorithm. An other way
 * the work-horse of modern tensor decomposition approaches
-* idea ... is to fix all factor matrices except for one in order to optimize
+* idea is to fix all factor matrices except for one in order to optimize
 * stopping criterion
-* requires the rank ... as an argument [38]
+* requires the rank as an argument [38]
 * cons
   * might take several steps to converge and
   * might also not converge to a global optimum
 
 ### 4.1.3 Tensor Power Method
-* [for] the special case of all identical factor matrices and if the `a_r`s are
+* for the special case of all identical factor matrices and if the `a_r`s are
   all orthogonal
 
 ### 4.1.4 Uniqueness
 
-* Kruskal rank [of a matrix M] corresponds to
+* Kruskal rank of a matrix M corresponds to
   the maximum number k such that any k columns are linearly
 
 ### 4.1.5 Tensor Rank Peculiarities
-* to determine the rank of a tensor ... the problem is NP-hard [12]
-* [there are tensors that] can be approximated arbitrarily well by a lower-rank
-  factorization[,] called degenerate
+* to determine the rank of a tensor the problem is NP-hard [12]
+* there are tensors that can be approximated arbitrarily well by a lower-rank
+  factorization, called degenerate
 
 ## 4.2 Tucker Decomposition
 
@@ -135,7 +136,7 @@ az n-edik mód mentén való mxszorzat
 * Whenever some kind of relationship can be represented as a matrix
   (e.g. user preferences in a recommender system, adjacency matrix of a graph),
   tensors provide a straightforward way to model the temporal component
-* patterns [40], predicting evolution [9] and ... anomalies [31]
+* patterns [40], predicting evolution [9] and anomalies [31]
 * temporal communities, that come into existence and subsequently disappear [4]
 * in a never-ending continuous stream [37]
 * structural constraint to the tensor, restricting arbitrary permutations
@@ -151,28 +152,28 @@ az n-edik mód mentén való mxszorzat
     * store facts about relationships between real-world entities
     * inferring new relations between objects given the existing data
     * tensor decomposition approaches provide state-of-the art performance
-      in terms of both quality and ... efficiency (Nickel+ 2012; Padia+ 2016)
+      in terms of both quality and efficiency (Nickel+ 2012; Padia+ 2016)
     * applications such as question answering and entity resolution [36]
 
 ## 5.3 Latent Variable Modeling
 
-* significant traction over the last decade is inference in latent [space]
+* significant traction over the last decade is inference in latent space
 * successfully applied to hidden Markov models [14],
   independent component analysis [5] and topic models [3]
-* we are given a (generative) probabilistic model [with]  hidden variables
-  * inference problem [lies in determining] the hidden variables
+* we are given a (generative) probabilistic model with hidden variables
+  * inference problem lies in determining the hidden variables
 * Classic algorithms such as maximum likelihood estimation are
   asymptotically consistent, but usually do
   not perform well in very high dimensions
-* Tensor decomposition methods [are based on the] method of moments [33]. The
-  main idea lies in [finding the] latent variables that would give rise to
-  similar [moments] under the given model
-  * recent work that in many popular probabilistic models,
+* Tensor decomposition methods are based on the method of moments [33]
+  * main idea lies in finding the latent variables 
+    that would give rise to similar moments under the given model
+  * in many popular probabilistic models, 
     the low-order moment tensors exhibit a specific structure [1]
   * effective and efficient algorithms for solving such problems
   * scale well to larger problems and in general do
     not suffer much from the curse of dimensionality [28]
-* We will [show how the method of moments] can be used to perform
+* We will show how the method of moments can be used to perform
   inference in Gaussian mixture model and topic model
 
 # 6 Case study: estimation of mixture models 8
@@ -187,16 +188,16 @@ az n-edik mód mentén való mxszorzat
       * nice properties such as asymptotic optimality and consistency
       * NP-hard in its derivation for a variety of different problem settings
       * iterative algorithms like expectation maximization (EM) are often used
-      * slow convergence and local optima[, no] consistency guarantees [34]
-    * the presented way to learn GMMs and topic models is efficient [in]
-      computational complexity and ... the number of data points needed
-* two different mixture models, ... a Gaussian mixture model and a topic model
+      * slow convergence and local optima, no consistency guarantees [34]
+    * the presented way to learn GMMs and topic models is efficient in
+      computational complexity and the number of data points needed
+* two different mixture models, a Gaussian mixture model and a topic model
 
 ## 6.2 Topic model
 
 * explain words in a document through hidden topics (see Figure 11)
   in order to classify documents or to summarize them
-* The most general treatment ... is latent Dirichlet allocation (LDA),
+* The most general treatment is latent Dirichlet allocation (LDA),
   where the probability distribution over the latent variable h is
   given by the Dirichlet distribution
 
@@ -223,10 +224,10 @@ finding an eigendecomposition
 
 # 7 Available software libraries
 
-* a few popular tensor libraries ... provide a more optimized way of
+* a few popular tensor libraries provide a more optimized way of
   storing and treating tensors, as well as
-  techniques for efficiently decomposing them using the algorithms ... in Sec 4
-* most libraries are still only available for [e.g.] Matlab
+  techniques for efficiently decomposing them using the algorithms in Sec 4
+* most libraries are still only available for e.g. Matlab
 * Table 1
 
 # 8 Current research
@@ -235,8 +236,8 @@ finding an eigendecomposition
   * formulate other machine learning problems as tensor decompositions?
     * like neural networks [15]
   * tensor decompositions under weaker assumptions
-    * usually ... weak conditions for uniqueness, [but
-      strong] for effectively using them in machine learning settings
+    * usually weak conditions for uniqueness, but
+      strong for effectively using them in machine learning settings
     * for example that the GMM estimation in Section 6 requires k ≤ d, which is
       a rather strong limitation
 
@@ -244,7 +245,7 @@ finding an eigendecomposition
 
 * we introduced two of the most widely used tensor decomposition approaches,
   the CP decomposition and the Tucker decomposition
-  * computed [often through an ALS algorithm]
+  * computed often through an ALS algorithm
   * uniqueness conditions
-  * [ML] example of estimating Gaussian mixture models and simple topic models
+  * ML example of estimating Gaussian mixture models and simple topic models
     by using the method of moments and the tensor power method
