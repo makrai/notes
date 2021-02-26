@@ -197,13 +197,13 @@ the literature, and our Transformer baseline
   * B ERT -based models outperform previously proposed approaches. On this
   * abstractive B ERT models generally perform better compared to BertSum E XT ,
     almost approaching O RACLE performance
-* Table 4 summarizes our results on the XSum dataset. Recall that summaries in
-  * highly abstractive (see Table 1) consisting of a single sentence conveying
+* Table 4 summarizes our results on the XSum dataset
+  * highly abstractive (see Table 1) consisting of a single sentence
   * Extractive models here perform poorly as corroborated by the
   * low performance of the
-    L EAD baseline (which simply selects the leading sentence )
-    O RACLE (which selects a single-best sentence in each document) in
-  * we do not report results for extractive models on this dataset. The second
+    LEAD baseline (which simply selects the leading sentence )
+    ORACLE (which selects a single-best sentence in each document)
+  * we do not report results for extractive models on this dataset
 
 ## 5.2 Model Analysis
 
@@ -244,12 +244,12 @@ the literature, and our Transformer baseline
     rating of each system was computed as the percentage of times it was chosen
     as better minus the times it was selected as worse.  Ratings thus range from
     -1 (worst) to 1 (best)
-* Tables 6 and 7: Results for extractive and abstractive systems respectively.
-  We compared the best performing BertSum model in each setting (extractive
-  or abstractive) against various SOTA systems (whose output is publicly
-  available), the L EAD baseline, and the G OLD standard as an upper bound. As
+* Tables 6 and 7: Results for extractive and abstractive systems respectively
+  * We compared the best performing BertSum model in each setting (extractive or
+    abstractive) against various SOTA systems (whose output is publicly
+    available), the L EAD baseline, and the G OLD standard as an upper bound
   * in both settings participants overwhelmingly prefer the output of our model
-    against comparison systems across datasets and evaluation paradigms.
+    against comparison systems across datasets and evaluation paradigms
   * All differences between BertSum and comparison models are statistically
     significant (p < 0.05),
     with the exception of TC ONV S2S (see Table 7; XSum) in QA
@@ -258,7 +258,5 @@ the literature, and our Transformer baseline
 
 * We introduced a novel
   * document-level encoder and proposed a
-  * general framework for both abstractive and extractive summarization.
-    Experimental results across three datasets show that our model achieves
-    evaluation protocols.  Although we mainly focused on document encoding
-* in the future: BERT for language generation.
+  * general framework for both abstractive and extractive summarization
+* in the future: BERT for language generation
