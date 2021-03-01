@@ -6,9 +6,9 @@ ACL 2020
 
 * we extend recent work on finding syntactic trees in internal representations
   to the multilingual setting
-* syntactic tree distances in languages other than English, and that these
-  subspaces are approximately shared across languages. Motivated by these
-  results, we present an unsupervised analysis method that provides evidence
+* syntactic tree distances in languages other than English, and that 
+* these subspaces are approximately shared across languages. Motivated by these
+* we present an unsupervised analysis method that provides evidence 
   mBERT learns representations of syntactic dependency labels:
 * clusters which largely agree with the Universal Dependencies taxonomy
 
@@ -26,7 +26,7 @@ ACL 2020
   that largely agrees with UD dependency labels
 * In this paper, we examine the extent to which Multilingual BERT learns a
   cross-lingual representation of syntactic structure
-  * probe trained on recreating dependency tree structure), but also
+  * probe trained on recreating dependency tree structure
   * use the probe as a window into understanding the repr of dependency labels
   * method of Hewitt and Manning (2019), which probes for syntactic trees:
     * distance in dependency parse is approximated by the squared-distance
@@ -39,24 +39,38 @@ ACL 2020
   * some syntactic features in syntactic subspaces that overlap between langs
     * probes trained on one language can recover syntax in other languages
       (zeroshot)
-  * clusters that largely overlap with the dependency taxonomy of UD (Nivre+20)
+  * clusters that largely overlap with the dependency taxonomy of UD (Nivre+ 20)
     * allows for fine-grained analysis of the distinctions made by mBERT that
       disagree with UD
     * detecting linguistic properties we have no training data for
 * Our analysis sheds light on the cross-lingual properties of Multilingual BERT
-  * zeroshot cross-lingual structural probe experiments and
+  * zeroshot cross-lingual structural probe experiments
   * novel unsupervised dependency label discovery experiments which
     * treat the probe’s syntactic subspace as an object of study
   * mBERT induces universal grammatical relations, which
     largely agree with the dependency labels of Universal Dependencies
 
-# 4
+# 3 Does mBERT Build a Syntactic Subspace for Each Language?
+
+# 4 Cross-Lingual Probing
+
+## 4.1 Transfer Experiments
 
 ## 4.2 Joint Syntactic Subspace
 
+## 4.3 Results
+
 ## 4.4 Subspace Similarity
 
+## 4.5 Extrapolation Testing
+
 # 5 mBERT Dependency Clusters Capture Universal Grammatical Relations
+
+## 5.1 Methodology
+
+## 5.2 Experiments
+
+## 5.3 Results
 
 ## 5.4 Finer-Grained Analysis
 
@@ -119,3 +133,13 @@ ACL 2020
   others appear to be more influenced by word order,
   separating relations that most linguists would group together
 * Still others are valid linguistic distinctions not dis-
+
+## 5.5 Discussion
+
+## 5.6 Probing as a window into representations
+
+# 6 Related work
+
+# 7 Discussion
+
+# A Additional Syntactic Difference Visualizations

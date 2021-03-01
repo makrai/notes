@@ -7,7 +7,7 @@ Contents p6
 # 1 Introduction
 
 * goal
-  * [static] view: different word senses ... generally associated with
+  * static view: different word senses ... generally associated with
     distinct lexical items
   * issues:
     * the creative use of words in novel contexts
@@ -40,9 +40,9 @@ Contents p6
     * I will refer to such an organization as a generative lexicon
     * generative devices
       * operations which generate these "extended senses"
-      * [e.g.] type coercion and co-composition
-  * natural languages [are] weakly polymorphic [enyhén típusos]
-    * rich enough to capture ... logical polysemy [and] co-compositionality
+      * e.g. type coercion and co-composition
+  * natural languages are weakly polymorphic enyhén típusos
+    * rich enough to capture ... logical polysemy and co-compositionality
   * chapter 5: the type system
     * multiple levels of representation
       for the different types of lexical information needed
@@ -61,7 +61,7 @@ Contents p6
   * Chapter 7: generative devices
     * coercion
     * selective binding and co-composition
-  * Chapter 8: consequences of qualia structure [for] nominals
+  * Chapter 8: consequences of qualia structure for nominals
     * three dimensions: argument structure, event type, and qualia structure
     * An analysis of nominal polysemy is presented, making use of the type system
   * chapter 8: argument selection as driven by semantic types,
@@ -101,8 +101,8 @@ Contents p6
 * principles for computational lexical semantics
   1. a clear notion of _semantic well-formedness_ will be necessary in order to
      characterize a theory of possible word meaning. This may entail
-    * abstracting [lexical meaning away from] discourse and pragmatic factors
-    * [although this assumption may] be wrong, it will help narrow our focus
+    * abstracting lexical meaning away from discourse and pragmatic factors
+    * although this assumption may be wrong, it will help narrow our focus
   2. representations that are richer than
     thematic role descriptions (cf Gruber, 1965, Fillmore, 1968)
     * needed ... is a principled method of lexical decomposition. This presupposes,
@@ -111,7 +111,7 @@ Contents p6
       3. several levels of interpretation in the semantics (Scha, 1983)
   3. lexical semantics must study all syntactic categories
     * categories other than verbs
-    * _verb classes_ and the[ir] syntactic constructions (Levin 1985, 1993)
+    * _verb classes_ and their syntactic constructions (Levin 1985, 1993)
     * semantic nature of _adjectival predication_, and ... _nominals_
     * a balanced understanding of the lexicon and the methods of composition
 * the position of lexical research ... within the larger semantic picture
@@ -130,9 +130,9 @@ Contents p6
     * what the certainty of its value is
   * Such an approach allows the reasoning process to be both tractable and
     computationally efficient
-* methods used [to] classify the lexical items of a language into classes
+* methods used to classify the lexical items of a language into classes
   predictive of their syntactic and semantic expression
-* Within [formal semantics, the most fundamental] is perhaps ... semantic type
+* Within formal semantics, the most fundamental is perhaps ... semantic type
   * Logical operators such as _the_ and _or_ might be viewed as
     * set-theoretic operations over sets of individuals in the world
       * (cf.  Montague, 1974, for example) or as
@@ -165,7 +165,7 @@ Contents p6
   * interaction of the verbal semantics
     with semantic information from the complement itself
 * why these and just these grammatical forms are part of a certain alternation
-  * [see] chapter 9
+  * see chapter 9
 * aspectual class or Aktionsarten
   * verbs ... differ in the kinds of eventualities ... they denote
   * state,
@@ -177,7 +177,7 @@ Contents p6
     * achievements: instantaneous change
 * sentence ... does not convey information regarding the temporal extent
 * Performance-verbs
-* can be affected by [non-lexical] factors: bare plural object or mass term,
+* can be affected by non-lexical factors: bare plural object or mass term,
 * second test: as complements of _begin_ and _finish_
 * kinds of stative predicates
   * individual-level and
@@ -193,7 +193,7 @@ Contents p6
     then either the verb or the predicate is an activity
   * A theory of lexical semantics should be able to account for this behavior,
 * typeshifting
-  * aspect ... may change as the result of [syntax]
+  * aspect ... may change as the result of syntax
   * e.g. adverbial modification, the structure of the NP in an argument
     position, or the presence of a prepositional phrase
   * problems in compositional semantics
@@ -264,7 +264,7 @@ Contents p6
     * no alternating construction, while
   * tough-Movement adjectives
     * such as _easy, tough, and difficult_
-    * enter into the [medio-passive] alternation
+    * enter into the medio-passive alternation
 * Dixon (1982)
   1. DIMENSION: big, little, large, small, long, short
   2. PHYSICAL PROPERTY: hard, soft, heavy, light
@@ -277,8 +277,8 @@ Contents p6
   9. SIMILARITY: alike, similar
   10. QUALIFICATION: possible, probable, likely
   * classes for adjectives from cross-linguistic study
-  * reveal little about the [syntactic] properties of the predicate
-  * What is needed, I believe, is a semantic classification that
+  * reveal little about the syntactic properties of the predicate
+  * What is needed is a semantic classification that
     * captures the intuitions listed by Dixon but
     * based on the relational and logical behavior of the predicates and
       not on their folk-epistemology
@@ -292,7 +292,7 @@ Contents p6
     * substituting one for the other in all contexts does not change the truth
   * weaker definition
     * substitution relative to a specific context
-      * [e.g. in] carpentry, plank and board might be considered synonyms
+      * e.g. in carpentry, plank and board might be considered synonyms
   * if synonymy is defined by substitutability of expressions, then it is an
     intra-category relation, e.g., nouns for nouns, verbs for verbs, and so on
 2. Antonymy
@@ -372,7 +372,7 @@ Contents p6
 * disambiguation does not occur independently for one lexical item, but rather,
   once the _context_ or domain for one item has been chosen or identified, the
   ambiguity of the other items is also constrained
-  * this is a property of contrastive ambiguity, [not] logical polysemy
+  * this is a property of contrastive ambiguity, not logical polysemy
 * involve issues of discourse inferencing
 * sortally constrained disambiguation
   * not require context and pragmatic information for disambiguation
@@ -390,11 +390,11 @@ Contents p6
   20. Plant/Food alternations; fig, apple
   21. Process/Result alternation; examination, merger
   22. Place/People alternation; city, New York
-* contextual priming and discourse setting ... seems irrelevant [for their
+* contextual priming and discourse setting ... seems irrelevant for thei
   disambiguation]
 * relating the multiple complement types that verbs select for
-  * _begin_ [is] polysemous in that
-    [it must be able to select for] Verb Phrase, Gerundive Phrase, or NP
+  * _begin_ is polysemous in that
+    it must be able to select for Verb Phrase, Gerundive Phrase, or NP
 * inchoative/causative alternation _open; break_
   * one sense is actually entailed by the other sense
 
@@ -423,7 +423,7 @@ Contents p6
 
 # 4 Limitations of Sense Enumerative Lexicons 39
 
-* the goal of a semantic theory [repeated from chapter 1]
+* the goal of a semantic theory repeated from chapter 1
 * three basic arguments showing the inadequacies of SELs
   1. The Creative Use of Words: Words assume new senses in novel contexts
   2. The Permeability of Word Senses: Word senses are not atomic definitions
@@ -437,10 +437,10 @@ Contents p6
   * describe adequately the data
   * the system must be learnable is an obvious way and
   * polymorphisms must be adequately addressed
-  * computational tools and descriptions [are] an important part of the
+  * computational tools and descriptions are an important part of the
     machinery for the analysis of linguistic theories
   * we must be cautious with what inferences we draw from corpus data
-    * criticism of Chomsky (1955, 1957) is [still] relevant
+    * criticism of Chomsky (1955, 1957) is still relevant
     * corpus
       * can be used for data mining and a general notion of empirical
         verifiability for patterns and cooccurrences
@@ -504,7 +504,7 @@ Contents p6
   can participate in distinct lexical realizations
 * e.g. verbs such as _believe_ and _forget_
 * the syntactic realization of the verb's complement determines interpretation
-  * The tensed-S complement [exhibits] "factivity" (cf. Kiparsky and Kiparsky, 1971)
+  * The tensed-S complement exhibits "factivity" (cf. Kiparsky and Kiparsky, 1971)
   * forget to: a "concealed question"
 * The proper approach, in our view, is to have one definition for _forget_
   which could, by suitable composition with the different complement types,
@@ -519,7 +519,7 @@ Contents p6
 * in terms of the type system
 * SELs in terms of its generative capacity, we have ... a monomorphic language
   (cf.  Strachey, 1967) i.e. lexical items are given a single meaning
-* leads us to a complex typing for [the _door_] class of nominals, rather than
+* leads us to a complex typing for the _door_ class of nominals, rather than
   as a simple set of individuals
 * enumerative listing of word senses has been the predominate view, and
   adherents include Montague (1974), Levin (1985), Levin and Rappaport (1988)
@@ -577,7 +577,7 @@ Contents p6
   * four levels of semantic representations
     * argument structure, which specifies the number and type of arguments
     * event structure
-      * basic event type [and] subeventual structure
+      * basic event type and subeventual structure
     * qualia structure, representing the different modes of predication
       possible with a lexical item; and, a
     * lexical inheritance structure, which identifies how a lexical structure
@@ -592,16 +592,16 @@ Contents p6
     * Lexical items are strongly typed yet are provided with mechanisms for
       fitting to novel typed environments by means of type coercion over a
       richer notion of types
-    * each lexical item has [a set of allowed] type shifting operators
+    * each lexical item has a set of allowed type shifting operators
 
 ## 4.7 Strong vs. Weak Compositionality 59
 
 * space (and possibly time) considerations
 * two parameters are important for characterizing semantic devices:
   1. how much unilateral or bilateral function application occurs
-    * In most [approaches, only one element for each phrase is] a function
-    * I have argued elsewhere [for] a high degree of cocomposition
-  2. How many [senses are necessary for] a unique interpretation of the phrase
+    * In most approaches, only one element for each phrase is a function
+    * I have argued elsewhere for a high degree of cocomposition
+  2. How many senses are necessary for a unique interpretation of the phrase
 
 # 5 The Semantic Type System 61
 
@@ -612,7 +612,7 @@ Contents p6
 
 * four levels of representations
   1. Argument Structure
-    * number and type of logical arguments, and [syntactic category]
+    * number and type of logical arguments, and syntactic category
   2. Event Structure
     * event type of a lexical item and a phrase
       * Sorts include state, process, and transition, and
@@ -642,7 +642,7 @@ Contents p6
 
 ## 5.2 Argument Structure 62
 
-* by far the best understood of [the four levels]
+* by far the best understood of the four levels
 * the way arguments are mapped onto syntactic expressions. For example,
   * Chomsky's (1981) Theta-Criterion and
   * Bresnan's (1982) functional completeness and coherence conditions
@@ -668,7 +668,7 @@ Contents p6
       not tied to any particular lexical item's semantic representation
     * include ... temporal or spatial modification
     * associated with verb classes and not individual verbs
-      * e.g. individuated event [can] be modified by the temporal expression
+      * e.g. individuated event can be modified by the temporal expression
 * Verbal alternations ...  should be distinguished
   * which result in the expression of true arguments
     * e.g. inchoative/causative alternation in (2), while the latter include
@@ -677,7 +677,7 @@ Contents p6
     * e.g. material/product alternation,  e.g. _(ki)farag (vmit) (vmiből)_
     * the material is optional, ... different from the created object
 * Compositional operations may create an argument or shadow an argument
-  * [similarly,] a true argument is defaulted by ... a complement's semantics
+  * similarly, a true argument is defaulted by ... a complement's semantics
   * show (sy) sg
 * default arguments can be satisfied ... as a phrase incorporated into a true
   argument
@@ -716,7 +716,7 @@ Contents p6
   * event tree structure
 * event headedness (cf. Pustejovsky, 1988)
   * foregrounding and backgrounding of event arguments
-  * events are [ordered] by relative prominence
+  * events are ordered by relative prominence
   * HEAD marker, annotated as `e*`
     * Rules of agreement, government,
     * what part of the matrix event is being focused by the lexical item
@@ -737,7 +737,7 @@ Contents p6
     * e.g. text in a novel is characteristically a narrative or story, while a
       dictionary is by definition a listing of words
   * FORMAL: that which distinguishes it within a larger domain
-    * novel [FORMAL book]
+    * novel FORMAL book
   * TELIC: its purpose and function
     * what we do with something, i.e., how we use it
   * agentive
@@ -841,7 +841,7 @@ Contents p6
   * cf. Briscoe et al, 1993
 * both to 2-dimensional objects such as window and door, as well as to
   3-dimensional objects, such as room, fireplace, and pipe
-* Lexical Conceptual Paradigm (lcp) allows us [to treat these] as logical
+* Lexical Conceptual Paradigm (lcp) allows us to treat these as logical
   expressions of different aspects to the meta-entry for newspaper
 * typing judgments with respect to a grammar (cf. Gunter, 1992)
   * rules
@@ -885,7 +885,7 @@ Contents p6
     * objects that are used in the performance of an activity, such as with
       tools, such as the noun _knife_
 ```
-[ book
+ boo
   ARGSTR = [
     ARGl = x: information
     ARG2 = y:phys_obj
@@ -903,9 +903,9 @@ Contents p6
 
 * consequences of qualia-based representations
   for how arguments are mapped to syntax
-* Our strategy ... would overgenerate [without] constraints
+* Our strategy ... would overgenerate without constraints
 * event-headedness acts to foreground or "focus" a single quale of the verb
-  * the [focused]  quale ... must be saturated at s-structure
+  * the focused  quale ... must be saturated at s-structure
 * kill, (37) előtti bekezdéstől
 * build,
   * discussed in chapter 9
@@ -927,14 +927,14 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
       specification
     * well-formedness conditions on type combinations in the grammar
 * syntactic phrase cannot be interpreted outside of ...  context
-  * [but There are] canonical syntactic expressions for ... semantic types,
+  * but There are canonical syntactic expressions for ... semantic types,
     * presented in 7.4 below
 * organization
   * type shifting in the literature, and
-    * how this tradition relates to [my] view of type coercion
+    * how this tradition relates to my view of type coercion
   * selective binding and co-composition are discussed in 7.2 and 7.3
   * section 7.4
-    * the notion of lexical conceptual paradigm [and] canonical syntactic forms
+    * the notion of lexical conceptual paradigm and canonical syntactic forms
     * how syntactic categories relate to semantic types
 
 ## 7.1 Coertion and Type Shifting 106 p121
@@ -969,7 +969,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   shifting its event type. Here we will make this proposal more explicit
 * applications are illustrative to this point; namely,
   * manner co-composition, feature transcription, and light verb specification
-  * [see] one phenomenon related to the semantics of light verbs in chapter 10
+  * see one phenomenon related to the semantics of light verbs in chapter 10
 
 ## 7.3 Selective Binding 127
 
@@ -997,7 +997,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
 ### 7.4.1 Canonical Syntactic Forms p147
 
-* canonical syntactic form [of] a semantic type
+* canonical syntactic form of a semantic type
 * two lexical items are truly distinguished in their semantic types
   * the residual difference ... is attributable to syntactic distinctions
 * an elaboration and extension of the ideas discussed in Chomsky (1986)
@@ -1036,7 +1036,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * how argument and event parameters interact in the qualia expressions
     * 8.1 and 8.2
     * unified types and dotted types
-  4. [how] coercion and co-composition rules makes use of qualia-based info
+  4. how coercion and co-composition rules makes use of qualia-based info
 
 ## 8.2 Nominals with Unified Types 142
 
@@ -1050,7 +1050,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * "car" is.a both "vehicle" and an "artifact,"
 * lexical relations between lexical items in terms of _links between only
   certain aspects_ of their respective lexical structures
-  * approach presented here [has] several distinct levels of semantic description
+  * approach presented here has several distinct levels of semantic description
 * separate lattice per role in the qualia structure
 
 ```
@@ -1072,7 +1072,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * to represent artifacts that are physical objects, we would like a type which
   combines both the FORMAL value of a physobj and the AGENTIVE value of an
   artifact
-  * [but there are] naturally occurring object being used as a tool, or to a
+  * but there are naturally occurring object being used as a tool, or to a
     rhetorical device used as a tool of persuasion
 
 ## 8.3 Nominals with Complex Types 149
@@ -1086,9 +1086,9 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * expressed in the FORMAL quale,
     * as outlined in 6.2
     * book: containment relation  between an individual physical object and
-      information is [in the] FORMAL role
+      information is in the FORMAL role
 * head or predicative qualia role in this structure,
-  * `[formal = x.y : R(x,y)]`
+  * `formal = x.y : R(x,y)`
 * _likes the book_
   * _enjoy_ semantically selects for an event function
 * nominals denoting dot objects
@@ -1097,17 +1097,17 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * simple natural kind terms such as rock and man, as well as
     * simple typed artifacts, such as knife, and
     * complex typed nominals such as book and record
-  * how [they] are different from relational nominals, such as father and sister
-    * denotes a set of individuals standing in relation to ... other[s] in a
+  * how they are different from relational nominals, such as father and sister
+    * denotes a set of individuals standing in relation to ... others in a
       specific way
     * discussed above in chapter 2
-    * [whether the argument corresponding to the other sibling] is
+    * whether the argument corresponding to the other sibling is
       existentially closed or bound to a constant
       (Eschenbach 1993; Bierwisch 1983)
 * linguistic motivation ... for the existence of dot objects
   1. Semantic Motivations
     * doors, windows, books, computer programs
-    * predicates and relations for [such items] are characteristic of [the dot
+    * predicates and relations for such items are characteristic of the do
       object of e.g. printed material] alone
       * "reading" and "writing" are not conceivable without ... the dot object
     * not ...  the conjunction of simple types (or properties)
@@ -1126,8 +1126,8 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * partially event-denoting nouns such as _lunch_ and _sonata_, the
     * relation is more complex (cf. 8.5 below)
     * "event" and "food"
-* In addition to [the senses of _book_], represented by the dot object shown
-  above, the noun _newspaper_ refers logically also to the [publisher]
+* In addition to the senses of _book_, represented by the dot object shown
+  above, the noun _newspaper_ refers logically also to the publisher
   * specialization of the lcp known as product-producer ... AGENTIVE quale
 * dot objects are constructed in a pair-wise recursive fashion
 * distinction is between nominals such as book and novel: narrative
@@ -1184,7 +1184,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     perfect construction for the verbal; and
   3. the dot object reading in the nominal is the
     simple construction for the verbal form
-* _examination_ [and] _exam_
+* _examination_ and _exam_
   * Grimshaw (1990)
   * like the event nominals sonata and symphony
     * event and the music are related by performing
@@ -1192,20 +1192,20 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * examination is purely an event with no physical object denotation
   * sonata appears to make reference to both an event and an information type
   * lecture, class, and lunch. These have the
-    * same type of [polysemy] as that exhibited above with exam
+    * same type of polysemy as that exhibited above with exam
   * event type and a proposition
     * belief and regret
     * state of believing something as well as the proposition of belief itself
 * factive nominalizations. Asher (1993) claims
   * _John informed Sue of Mary's departure._
   * NPs themselves are not factive
-  * factive interpretation [is due to] factive predicates such as inform
+  * factive interpretation is due to factive predicates such as inform
 
 ## 8.6 Lexicalisation of LCPs 177
 
 * _sale, purchase,_ and _transaction_
   * `give`, `take`
-  * [_transaction_] is unable to refer to the individual types, each
+  * _transaction_ is unable to refer to the individual types, each
     representing a unilateral event of transfer, but only to the dot object
   * purchase and sale ... do refer to the individual events, while
     still requiring reference to the entire type cluster
@@ -1217,7 +1217,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
 * distinctions made in the way that NPs refer
   * pronouns, proper names, and descriptions
-  * important both for anaphoric binding [and] interpretive differences
+  * important both for anaphoric binding and interpretive differences
 
 # 9 The Lexical Semantics of Causation 183
 
@@ -1226,12 +1226,12 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * the Default Causative Paradigm
 * sections
   1. causative and unaccusative forms for verbs such as _sink_ and _break_
-    * same underlying semantic representation, but [distinct] event headedness
+    * same underlying semantic representation, but distinct event headedness
   2. aspectual verbs such as _begin_ and _start_
     * raising and control readings
   3. event structures associated with _non-lexical (synthetic)_ causatives
     * comparison to the lexicalization phenomena discussed in previous sections
-  4. _experiencer predicates_ [are] based on an underlying causal relation
+  4. _experiencer predicates_ are based on an underlying causal relation
     * responsible for the syntactic binding violations
   5. modal causative, such as _risk_ and _gamble_
 
@@ -1240,11 +1240,11 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * causal reasoning has been elucidated in the AI and computational linguistics
   * Wilks (1978) develops a taxonomy of causal relations
   * Allen (1984), Eberle (1988), and Kowalski and Sergot (1986)
-    * explore ... temporal connections [between] events,
+    * explore ... temporal connections between events,
       * in order to structure an event-based logic for planning or reasoning
   * Kamp (1979) and van Benthem (1983): philosophical logic
   * Hobbs et al. (1987) presents an extremely rich language
-    * causal connections [and] constraints on ... temporal binding
+    * causal connections and constraints on ... temporal binding
   * Discourse Representation Theory (DRT)
     * Kamp and Reyle, 1993, and Asher, 1993
     * concentrated on event quantification in discourse,
@@ -1300,7 +1300,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
 ## 9.5 Modal Causatives 215
 
-* the uncertainty of the resulting state [is encoded into] the lexical item
+* the uncertainty of the resulting state is encoded into the lexical item
   * _John *risks* killing the tree by watering it so much_
 * complementarity to the expression of the internal argument
   * _risk_ as motivation for constructions within a construction grammar
@@ -1316,7 +1316,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
 ## 9.6 Conclusion 218
 
-* have been ignored [in this chapter]
+* have been ignored in this chapter
   * the semantics of resultative constructions, morphologically derived
     causatives, as well as the relation to syntactic causatives
 * causative constructions involving the verbs _make_, and _have_, and the
@@ -1326,16 +1326,16 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 
 ## 10.1 Co-composition and Verbal Semantics 221
 
-* [differently from] _sink, kill_, and the other verb classes [the
+* differently from _sink, kill_, and the other verb classes th
   representation for _open_] makes reference to a predicate with the same name
 * open: `the function or purpose associated with the object of the predicate is
   available for use`
-  * For a noun such as letter, the TELIC [specifies] `read`
+  * For a noun such as letter, the TELIC specifies `read`
 * break and close ... both make reference to the TELIC role of the complement
   as well, but in different ways
 * when is it appropriate to "pack" many meanings into a single lexical
   representation?
-* Some cases of nominal polysemy [are not] straightforward
+* Some cases of nominal polysemy are not straightforward
   * lamb and haddock (tőkehal)
 
 ## 10.2 Stage-Level Predication 225
@@ -1346,7 +1346,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * stage-level predicates as similar in some way to artifacts, and
     * individual predicates as similar to natural kinds
     * as an artifact is defined by virtue of its AGENTIVE quale making
-      reference to [how it comes into being,]
+      reference to how it comes into being,
       a changeable state also makes reference to such an event
 * psych-stage-level predicates angry, nervous, and upset
 * resultatives
@@ -1391,7 +1391,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 ### WordNet (Note 7) p282
 
 * the way that it structures these three categories
-  * Nouns are organized into topical hierarchies [along] hyponymy
+  * Nouns are organized into topical hierarchies along hyponymy
   * verbs are organized by means of various entailment relations
     * according to a set of lexical entailment relations
   * Adjectives, on the other hand, are structured as n-dimensional hyperspaces
@@ -1411,8 +1411,8 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * types of sense extension
   * displaced reference, studied in
     * Nunberg (1979,1995), Fauconnier (1985), and Jackendoff (1992b)
-    * [opposed to] logical polysemy
-    * lexically idiosyncratic [and] semi-productive
+    * opposed to logical polysemy
+    * lexically idiosyncratic and semi-productive
 * polysemy is ... the result of both
   * compositional operations in the semantics, e.g. coercion and co-composition
   * contextual effects, such as the structure of
@@ -1449,5 +1449,5 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
       * applied computational research at Brandeis as well as
       * lexical acquisition and induction from corpora
   * quantification and genericity are only touched on briefly, if at all
-  * details of several of the mechanisms of composition are to be found [in]
+  * details of several of the mechanisms of composition are to be found in
     Pustejovsky (1995b)
