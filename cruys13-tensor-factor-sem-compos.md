@@ -21,7 +21,7 @@ naacl 2013
     * a sentence vector is a function of the Kronecker product of its word vecs
     * greater interaction between the different word features
     * tested experimentally in Grefenstette and Sadrzadeh (2011a,b)
-    * relational words (e.g.  adjectives or verbs) have a rich
+    * relational words (e.g. adjectives or verbs) have a rich
       (multidimensional) structure that acts as a filter on their arguments
   * Socher+ emnlp 2012 through recursive matrix-vector spaces
     * Each node in a parse tree is assigned both a vector and a matrix;
@@ -29,7 +29,7 @@ naacl 2013
       the matrix models the way it changes the meaning of neighbouring phrases
 * multiplication often seems to produce the best results (Blacoe & Lapata 2012)
 
-# 2. previous distributional work for computing compositionality
+# 2. Related distributional work for computing compositionality
 
 * Closely related to compositionality is word meaning in context
   * Erk and Padó (2008, 2009) make use of selectional preferences

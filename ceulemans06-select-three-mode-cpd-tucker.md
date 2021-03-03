@@ -24,7 +24,7 @@ British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
   * generalizations of standard two-mode principal component analysis (PCA),
   * summarize the main information in the data by reducing up to three modes
     to a few components and defining a linking structure between the components
-    * formal relations among (most of) these models
+  * formal relations among (most of) these models
     (Kiers 1991, and Kroonenberg 1983)
 * model selection problem has almost always been addressed by
   * first choosing a model type on the basis of substantive arguments and

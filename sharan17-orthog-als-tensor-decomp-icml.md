@@ -1,6 +1,6 @@
 Vatsal Sharan, Gregory Valiant
 Guaranteed Tensor Decomposition via Orthogonalized Alternating Least Squares
-[aka Orthogonalized ALS:
+aka Orthogonalized ALS
   A Theoretically Principled Tensor Decomposition Algorithm for Practical Use]
 ICML 2017
 
@@ -32,48 +32,48 @@ ICML 2017
 
 # Introduction
 
-* tensor methods have become ... incredibly useful
+* tensor methods have become incredibly useful
   * topic modeling (Anandkumar+ 2012),
   * mixtures of Gaussians (Ge+ 2015),
   * community detection (Anandkumar+ 2014a),
   * graphical models with guarantees via the method of moments
     (Anandkumar+ 2014b; Chaganty and Liang, 2014) and
   * reinforcement learning (Azizzadenesheli+ 2016)
-* [what] enables these applications is ... uniqueness (Kruskal, 1977)
+* what enables these applications is uniqueness (Kruskal, 1977)
   * decomposition here refers to the most commonly used CANDECOMP/PARAFAC or CP
-* high order dependencies [e.g.] in natural language processing or genomic[s]
-* we require ... efficient algorithms
+* high order dependencies e.g. in natural language processing or genomics
+* we require efficient algorithms
   * scaling to large (and possibly sparse) tensors, and
   * robust to noise and deviations from the idealized “low-rank” assumptions
-* Early [algorithms] from the 1970’s (Leurgans+ 1993; Harshman, 1970)
+* Early algorithms from the 1970’s (Leurgans+ 1993; Harshman, 1970)
   * provided that the factor matrices are full rank
   * very sensitive to noise in the tensor, not scale well for sparse
-* [other] algorithms
-  * have strong ... guarantees but are computationally expensive [or]
-  * efficient to implement, but [fail] in many natural settings
+* other algorithms
+  * have strong guarantees but are computationally expensive or
+  * efficient to implement, but fail in many natural settings
     * Alternating Least Squares (ALS) algorithm
-* we propose ... Orthogonalized Alternating Least Squares (Orth-ALS) which
+* we propose Orthogonalized Alternating Least Squares (Orth-ALS) which
   * periodically “orthogonalize” the estimates of the factors
-  * prevents multiple recovered factors from “chasing after” the same [factors]
+  * prevents multiple recovered factors from “chasing after” the same factors
 * We also applied Orth-ALS to a large 3-tensor of word co-occurrences to
   compute “word embeddings”
   * significantly better than that produced by standard ALS, as we quantify via
     * analogy tasks (i.e. “puppy is to dog as kitten is to ?”) and
     * semantic word-similarity tasks
-* [theoretical guarantees]
-  * [under the] incoherence property
-    [i.e.] the factors ... having small correlation with each other), which is
+* theoretical guarantees
+  * under the incoherence property
+    i.e. the factors having small correlation with each other), which is
     * satisfied by random tensors with rank k = o(d^0.25)
-    * significantly worse than [that] for polynomial-time algorithms (Ma+ 2016)
-    * [enough for NLP, where] the rank of the recovered tensor is typically
+    * significantly worse than that for polynomial-time algorithms (Ma+ 2016)
+    * enough for NLP, where the rank of the recovered tensor is typically
       significantly sublinear in the dimensionality of the space
-  * we also improve the known guarantees for ... the tensor power method
+  * we also improve the known guarantees for the tensor power method
 * organized as follows
   2. related work, the ALS algorithm and tensor power
     * the shortcomings of both algorithms,
       particularly for tensors with non-uniform factor weights
   3. notation
-  4. Orth-ALS, and ... the convergence guarantees
+  4. Orth-ALS, and the convergence guarantees
     4.2 convergence results for the tensor power method
   5. experimental results, on both synthetic data and the NLP tasks
   6. we illustrate our proof techniques for the special case of orthogonal
@@ -83,7 +83,7 @@ ICML 2017
 
 # 2.1. tensor decomposition
 
-* three families of algorithms [distinct from alternating minimization
+* three families of algorithms distinct from alternating minimizatio
   approaches] and the tensor power method
   * guaranteed decomposition of orthogonal tensors
     (Anandkumar+ 2014b; Kolda and Mayo 2011; Comon+ 2009; Zhang and Golub 2001)
@@ -98,7 +98,7 @@ ICML 2017
   * sum-of-squares approach
     (Ma+ 2016; Hopkins+ 2016; Tang and Shah, 2015; Ge and Ma, 2015)
     * can decompose highly overcomplete random tensors of rank up to o(d^1.5)
-    * these results ... are unfortunately not practical
+    * these results are unfortunately not practical
 * ideas such as
   * sketching (Song+ 2016; Wang+ 2015b) and
   * contraction of tensor problems to matrix problems (Shah+ 2015)
@@ -131,7 +131,7 @@ ICML 2017
     otherwise all the vectors would converge to the dominant eigenvector.
 * For the case of tensors, the vectors would not all necessarily converge to
   the dominant factor if the initialization is good, but with high probability
-  [many factors driven] towards the larger weight factors.  The
+  many factors driven towards the larger weight factors.  The
   orthogonalization step is a natural modification which forces the estimates
   to converge to different factors, even if some factors are much larger than
   the others.  It is worth stressing that the orthogonalization step
@@ -141,7 +141,7 @@ ICML 2017
 * orthogonalization step does not add to the computational cost
   as the least squares updates in step 4-6 of Algorithm 1 involve an extra
   pseudoinverse term for standard ALS, which evaluates to identity for Orth-ALS
-  and does not have to be computed. The cost of [both] is O(k 2 d),
+  and does not have to be computed. The cost of both is O(k 2 d),
 
 ### Variants of Orthogonalized ALS
 
@@ -163,7 +163,7 @@ ICML 2017
   * on low rank tensor recovery in a few different parameter regimes,
     on an overcomplete tensor decomposition task and
     a tensor completion task
-* factorization of Orth-ALS [vs] standard ALS on a large real-world tensor of
+* factorization of Orth-ALS vs standard ALS on a large real-world tensor of
   word tri-occurrence based on the 1.5 billion word English Wikipedia corpus
 
 ## 5.2 Learning Word Embeddings via Tensor Factorization 11
@@ -172,7 +172,7 @@ ICML 2017
 
 * English Wikipedia as our corpus, with 1.5 billion words
 * word co-occurrence tensor T of the 10,000 most frequent words, where the
-  entry `T_ijk` denotes the number of [co-occurrences]
+  entry `T_ijk` denotes the number of co-occurrences
   * window lengths, w = 3 and w = 5. Before factoring the tensor,
 * we apply the non-linear element-wise scaling f (x) = log(1 + x)
   * perform well in practice for co-occurrence matrices (Pennington+ 2014)
@@ -180,13 +180,13 @@ ICML 2017
 * We concatenate the (three) recovered factor matrices into one matrix and
   normalize the rows
 * We also evaluated the performance of matrix SVD based methods on the task
-  * same [window size and] non-linear element-wise scaling and
+  * same window size and non-linear element-wise scaling and
   * rank 100 SVD, and set the word embeddings to be the singular vectors after
     row normalization
 * implementation details
   * run on a cluster with 8 cores and 48 GB of RAM memory per core
   * Most of the run-time was spent in reading the tensor, the
-  * runtime for Orth-ALS was around 80 minutes, with 60 minutes [for reading]
+  * runtime for Orth-ALS was around 80 minutes, with 60 minutes for reading
   * we use an optimized ALS solver for sparse tensors (Smith and Karypis; 2015)
     which also has an efficient parallel implementation
 
@@ -200,14 +200,14 @@ ICML 2017
 
 * The use of Orth-ALS rather than standard ALS leads to significant improvement
 * matrix SVD method still outperforms the tensor based methods
-* We believe [in improvements]
+* We believe in improvements
   * better renormalization, additional data, or
     some other tensor rather than the symmetric tri-occurrence tensor or
   * a combination of tensor and matrix based methods
 * Alternatively, it is possible that natural language does not contain
   sufficiently rich higher-order dependencies among words that appear close
-  together, beyond the [2-mode] structure
-* Or [the two tasks we evaluated on] do not require this higher order
+  together, beyond the 2-mode structure
+* Or the two tasks we evaluated on do not require this higher order
 
 # 6 Proof Overview: the Orthogonal Tensor Case 12
 

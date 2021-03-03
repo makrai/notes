@@ -41,8 +41,8 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 * factor matrices hold the combination of the vectors from the rank-one
   components as columns
 * `λ_r` is often used to absorb the respective weights during normalization
-  of the factor matrices’ columns. This usually means normalizing the sum of
-  the squares of the elements in each column to one
+  of the factor matrices’ columns. 
+  * usually normalizing the sum of the squares of the elements in each column
   * useful once turn to
     * machine learning applications of tensor decompositions in Section 5 and
     * the Tucker decomposition in Section 4.2

@@ -117,10 +117,10 @@ https://github.com/ibalazevic/TuckER
   * Factor matrices A, B and C, when orthogonal, can be thought of as the
     principal components in each mode
   * Elements of the core tensor Z show the level of interaction
-  * not unique, i.e. we can transform Z without affecting the fit if we apply
-    the inverse of that transformation to the factor matrices
-  * improved uniqueness (Kolda & Bader, 2009) by imposing e.g sparsity, making
-    its elements small or making the core “all-orthogonal”
+  * not unique, i.e. we can transform Z without affecting the fit 
+    if we apply the inverse of that transformation to the factor matrices
+  * improved uniqueness (Kolda & Bader, 2009) by imposing e.g 
+    sparsity, making its elements small or making the core “all-orthogonal”
 
 # 4. Tucker Decomposition for Link Prediction
 
