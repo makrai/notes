@@ -31,10 +31,9 @@ https://github.com/facebookresearch/InferSent
 GitHub
 facebookresearch/InferSent
 Sentence embeddings (InferSent) and training code for NLI.
-8:59
-illetve [Socher](socher.org)től ezek közül, csak nem tudom, hogy pontosan
-melyiket
 
+illetve [Socher](socher.org)től ezek közül, csak nem tudom, hogy pontosan
+melyiket 
 
 A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks,
 Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka, Richard Socher
@@ -55,8 +54,6 @@ Quasi-Recurrent Neural Networks, James Bradbury, Stephen Merity, Caiming Xiong,
 Richard Socher
 International Conference on Learning Representations (ICLR 2017). [ pdf, blog
 post ] (edited)
-9:00
-(az első listáért a kerditek @gyuri nak járnak)
 
 # Kornai
 

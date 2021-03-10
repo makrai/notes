@@ -23,7 +23,7 @@ code is available at https://github.com/nlpyang/PreSumm
   across the board in both extractive and abstractive settings
   * under automatic and human-based
 
-# Introduction
+# 1 Introduction
 
 * extractive summarization is often defined as a binary classification task
   with labels indicating whether a text span (typ sentence) should be included
@@ -40,35 +40,35 @@ code is available at https://github.com/nlpyang/PreSumm
       first with an extractive objective and subsequently on the abstractive
 * We evaluate the proposed approach
   on three single-document news summarization datasets
-  * different writing conventions (e.g., important information is concentrated
-    at the beginning of the document or distributed more evenly throughout) and
+  * different writing conventions: important information is concentrated at the
+    beginning of the document or distributed more evenly throughout
   * different summary styles
-    (e.g., verbose vs. more telegraphic; extractive vs. abstractive)
-  * SOTA Across datasets, under both extractive and abstractive settings
+    * verbose vs. more telegraphic; extractive vs. abstractive
+  * SOTA across datasets, under both extractive and abstractive settings
 * document encoding for the summarization task
   * copying mechanisms (Gu+ 2016; See+ 2017; Nallapati+ 2017),
   * reinforcement learning (Narayan+ 2018b; Paulus+ 2018; Dong+ 2018), and
   * multiple communicating encoders (Celikyilmaz+ 2018)
-  * We achieve better results without using any of these mechanisms;
+  * We achieve better results without using any of these mechanisms
 
 # 2 Background 2
 
 ## 2.1 Pretrained Language Models
 
 * apply pretrained models to generation problems (Edunov+ 2019; Rothe+ 2019)
-* When fine-tuning for a specific task, parameters in B ERT are jointly
+* When fine-tuning for a specific task, parameters in Bert are jointly
   fine-tuned with additional task-specific parameters
 
 ## 2.2 Extractive Summarization
 
 * SummaRunner (Nallapati+ 2017) is one of the earliest neural approaches
   adopting an encoder based on Recurrent Neural Networks
-* Refresh (Narayan+ 2018b) is a reinforcement learning-based system trained by
-  globally optimizing the ROUGE metric
+* Refresh (Narayan+ 2018b) is a reinforcement learning-based system
+  trained by globally optimizing the ROUGE metric
 * LAtent (Zhang+ 2018): extractive summarization as a latent variable inference
   * instead of maximizing the likelihood of “gold” standard labels, their
-    latent model directly maximizes the likelihood of human summaries given
-    selected sentences
+    latent model directly maximizes the likelihood of human summaries 
+    given selected sentences
 * Sumo (Liu+ 2019) capitalizes on the notion of structured attention to
   induce a multi-root dependency tree representation of the document
   while predicting the output summary
@@ -76,13 +76,12 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 2.3 Abstractive Summarization
 
-* Neural approaches to abstractive summarization conceptualize the task as a
-  sequence-to-sequence problem,
+* Neural approaches conceptualize the task as a sequence-to-sequence problem,
 * Rush+ (2015) and Nallapati+ (2016) were among the first to apply the neural
   encoder-decoder architecture to text summarization
 * See+ (2017):
-  * pointer-generator network (PT GEN ) which allows it to copy words
-  * coverage mechanism (C OV ) which keeps track of words that have been summed
+  * pointer-generator network (PT GEN) which allows it to copy words
+  * coverage mechanism (COV) which keeps track of words that have been summed
 * Celikyilmaz+ (2018):
   * Deep Communicating Agents (DCA) model
   * multiple agents (encoders) represent the document together with a
@@ -91,7 +90,7 @@ code is available at https://github.com/nlpyang/PreSumm
 * Paulus+ (2018) also present a deep reinforced model (DRM) for abstractive
   * handles the coverage problem with an intra-attention mechanism where the
     decoder attends over previously generated words
-* Gehrmann+ (2018) follow a bottom-up approach (B OTTOM U P );
+* Gehrmann+ (2018) follow a bottom-up approach (BottomUp);
   * a content selector first determines which phrases should be in the summary,
     and a copy mechanism is applied only to preselected phrases during decoding
 * Narayan+ (2018a)
@@ -99,9 +98,20 @@ code is available at https://github.com/nlpyang/PreSumm
   * based on convolutional neural networks and
     additionally conditioned on topic distributions (TC ONV S2S)
 
-# 3 Fine-tuning B ERT for Summarization
+# 3 Fine-tuning Bert for Summarization
 
 ## 3.1 Summarization Encoder
+
+* interval segment embeddings to distinguish multiple sentences within a doc. 
+* For sent i we assign segment embedding E A or E B depending on whether i is
+  odd or even
+* This way, document representations are learned hierarchically where 
+  * lower Transformer layers represent adjacent sentences, while 
+  * higher layers, in combination with self-attention, represent multi-sentence
+    discourse.  
+* Position embeddings in the original B ERT model have a maximum length of 512;
+  we overcome this limitation by adding more position embeddings that are
+  initialized randomly and finetuned with other parameters in the encoder.
 
 ## 3.2 Extractive Summarization
 
@@ -168,40 +178,39 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 4.2 Implementation Details
 
-* PyTorch, OpenNMT (Klein+ 2017) and the ‘bert-base-uncased’ 2 version of B ERT
+* PyTorch, OpenNMT (Klein+ 2017) and the ‘bert-base-uncased’ 2 version of Bert
 
 # 5 Results 6
 
 ## 5.1 Automatic Evaluation
 
 * Table 2 summarizes our results on the CNN/DailyMail dataset. The first block
-  * B ERT -based models outperform the L EAD -3 baseline which is not a
-  * B ERT models collectively outperform
+  * Bert -based models outperform the Lead -3 baseline which is not a * Bert models collectively outperform
     all previously proposed extractive and abstractive systems, only falling
-  * BertSum E XT performs best which is not entirely surprising;
+  * BertSum Ext performs best which is not entirely surprising;
     CNN/DailyMail summaries are somewhat extractive and even abstractive models
     are prone to copying sentences from the source document when trained on this
     dataset (See+ 2017). Perhaps unsurprisingly we observe that
-  * larger versions of B ERT lead to performance improvements and that interval
+  * larger versions of Bert lead to performance improvements and that interval
     embeddings bring only slight gains
 * Table 3 presents results on the NYT dataset
   * Following the evaluation protocol in Durrett+ (2016), we use limited-length
     ROUGE Recall, where predicted summaries are truncated to the length of the
-    gold summaries. Again, we report the performance of the O RACLE upper bound
+    gold summaries. Again, we report the performance of the Oracle upper bound
     and
-L EAD -3 baseline. The second block in the table contains previously proposed
+Lead -3 baseline. The second block in the table contains previously proposed
 extractive models as well as our own Transformer baseline. C OM
 PRESS (Durrett+ 2016) is an ILP-based model which combines compression
 and anaphoricity constraints. The third block includes abstractive models from
 the literature, and our Transformer baseline
-  * B ERT -based models outperform previously proposed approaches. On this
-  * abstractive B ERT models generally perform better compared to BertSum E XT ,
-    almost approaching O RACLE performance
+  * Bert -based models outperform previously proposed approaches. On this
+  * abstractive Bert models generally perform better compared to BertSum Ext ,
+    almost approaching Oracle performance
 * Table 4 summarizes our results on the XSum dataset
   * highly abstractive (see Table 1) consisting of a single sentence
   * Extractive models here perform poorly as corroborated by the
   * low performance of the
-    LEAD baseline (which simply selects the leading sentence )
+    LEAD baseline (which simply selects the leading sentence)
     ORACLE (which selects a single-best sentence in each document)
   * we do not report results for extractive models on this dataset
 
@@ -209,7 +218,7 @@ the literature, and our Transformer baseline
 
 ### Position of Extracted Sentences
 
-* BertSum E XT relies less on shallow position features, and learns deeper
+* BertSum Ext relies less on shallow position features, and learns deeper
 
 ### Novel N-grams
 
@@ -247,7 +256,7 @@ the literature, and our Transformer baseline
 * Tables 6 and 7: Results for extractive and abstractive systems respectively
   * We compared the best performing BertSum model in each setting (extractive or
     abstractive) against various SOTA systems (whose output is publicly
-    available), the L EAD baseline, and the G OLD standard as an upper bound
+    available), the Lead baseline, and the G OLD standard as an upper bound
   * in both settings participants overwhelmingly prefer the output of our model
     against comparison systems across datasets and evaluation paradigms
   * All differences between BertSum and comparison models are statistically

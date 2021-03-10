@@ -10,7 +10,7 @@ EMNLP 2018
   * real-world, large-scale dataset by
     online articles from the British Broadcasting Corporation (BBC)
 * novel abstractive model which is conditioned on the article’s topics and
-  based entirely on convolutional neural networks. We demonstrate experimentally
+  based entirely on convolutional neural networks
 * captures long-range dependencies in a document and recognizes pertinent
   content,
 * outperforming an oracle extractive system and SOTA abstractive approaches when

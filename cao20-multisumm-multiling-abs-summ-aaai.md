@@ -8,7 +8,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
 * multi-lingual text summarization, where the goal is to process texts in
   multiple languages and output summaries in the corresponding languages with a
-  single model, has been rarely studied. In this paper,
+  single model, has been rarely studied
 * we present MultiSumm, a novel multi-lingual model for abstractive summ. The
   * training regime i.e. two stages
     * multi-lingual learning that contains
