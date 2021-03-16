@@ -463,7 +463,7 @@ multi-task learning and pre-training are complementary technologies
   * “PTM + Adversarial Training + Rationale Tagging + Knowledge Distillation”
     (Ju+  [73])
 * multi-hop QA,
-  * “Select, Answer, and Explain” (SAE) system, Tu+  [169] proposed, interpretb
+  * “Select, Answer, and Explain” (SAE) system, Tu+  [169] proposed, interpretab
   * PTM acts as the encoder in the selection module
 
 ## 7.4 Sentiment Analysis
