@@ -46,6 +46,6 @@
 * kryscinski1908-summarizatoin-critical.md
     * models overfit to layout biases
 * zaheer2007-big-bird-transformer-long.md
-* liu2001-multiling-denoising-ae.md
+* liu2001-multiling-denoising-ae.md, mBART
 * lewis1910-bart-denoising-s2s-pretrain.md
 * kryscinski1808-abstraction-in-summarization.md
