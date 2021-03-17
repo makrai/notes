@@ -1,26 +1,25 @@
 mBART: Multilingual Denoising Pre-training for Neural Machine Translation
 Yinhan Liu, Jiatao Gu, N Goyal, X Li, Edunov, Ghazvininejad, Lewis, Zettlemoyer
 arXiv:2001.08210 [cs.CL]
-Comments: 	Work in progress
 
 # Abstract
 
 * we: multilingual denoising pre-training produces significant performance gains
   across a wide variety of MT tasks
-  * mBART -a sequence-to-sequence denoising auto-encoder pre-trained on
+  * mBART, a sequence-to-sequence denoising auto-encoder pre-trained on
     large-scale monolingual corpora in many languages using the BART objective
   * one of the first methods for pre-training a complete sequence-to-sequence
     model by denoising full texts in multiple languages, while
     * previous approaches have focused only on the encoder, decoder, or
       reconstructing parts of the text
-  * can be directly fine tuned for supervised (both sentence-level and
-    document-level) and unsupervised machine translation, with no task-specific
-    modifications
+  * can be directly fine tuned for MT
+    * both supervised (both sentence-level and document-level) and unsupervised
+    * without task-specific modifications
 * mBART initialization produces performance gains in all but the
   highest-resource settings, including up to 12 BLEU points for low resource MT
   and over 5 BLEU points for many document-level and unsupervised models
 * transfer to language pairs with no bi-text or that were
-  not in the pre-training corpus, and present
+  not in the pre-training corpus
 * extensive analysis of which factors contribute the most to effective pre-train
 
 # 1 Introduction
@@ -29,48 +28,67 @@ Comments: 	Work in progress
   * Existing MT approaches only pre-train parts of the model, including the
     encoder (Lample and Conneau, 2019) and the decoder (Edunov+ 2019), or use
     pretraining objectives that only reconstruct parts of text (Song+ 2019), or
-    only focus on English corpora (Lewis+ 2019; Raffel+ 2019). In this paper,
-* we: by pre-training a complete autoregressive model with an objective that
-  noises and reconstructs full texts across many languages.
+    only focus on English corpora (Lewis+ 2019; Raffel+ 2019)
+* we: by pre-training a complete autoregressive model
+  * objective that noises and reconstructs full texts across many languages
   * mBART – a multilingual sequence-to-sequence (Seq2Seq) denoising auto-encoder
     * applying the BART (Lewis+ 2019) to large-scale monolingual corpora across
-      many languages.  The input texts are noised by masking phrases and
-      permuting sentences, and a single Transformer (Vaswani+ 2017) model is
-      learned to recover the texts.
+      many languages
+    * texts are noised by masking phrases and permuting sentences, and
+      a single Transformer (Vaswani+ 2017) model is learned to recover the texts
     * trained once for all languages, providing a set of parameters that can be
       fine-tuned for any of the language pairs in both supervised and
       unsupervised settings, without any task-specific or language-specific
-      modifications or initialization schemes.
-* experiments demonstrate that this simple approach works remarkably well. We
+      modifications or initialization schemes
+* experiments demonstrate that this simple approach works remarkably well
   * supervised sentence-level MT, mBART initialization leads to significant
     gains (up to 12 BLEU points) across low/medium-resource pairs (<10M bi-text
-    pairs), without sacrificing performance in high-resource settings.
+    pairs), without sacrificing performance in high-resource settings
     * further improve with backtranslation (BT), setting a new SOTA on WMT16
-      English-Romanian and the FloRes test sets. For
-  * document-level MT, our document-level pre-training improves results by up to
-    5.5. For the
+      English-Romanian and the FloRes test sets
+  * document-level MT, our document-level pre-training improves results
+    by up to 5.5
   * unsupervised case, we see consistent gains and produce the
-    first non-degenerate results for less related language pairs (e.g., 9.5 BLEU
-    gain on Nepali-English).
+    first non-degenerate results for less related language pairs
+    (e.g., 9.5 BLEU gain on Nepali-English)
   * Previous pre-training schemes have only considered subsets of these tasks,
     but we compare performance where possible and demonstrate that mBART
-    consistently performs the best. We also show that mBART enables
-* new types of transfer across language pairs.  For example,
+    consistently performs the best
+* new types of transfer across language pairs
   * fine-tuning on bi-text in one language pair (e.g., Korean-English) creates a
     model that can translate from all other languages in the monolingual
-    pre-training set (e.g., Italian-English), with no further training. We also
+    pre-training set (e.g., Italian-English), with no further training
   * languages not in pre-training corpora can benefit from mBART, strongly
-    suggesting that the initialization is at least partially language universal.
-* detailed analysis of which factors contribute the most to effective pre-train,
-  * number of languages and their overall similarity.
+    suggesting that the initialization is at least partially language universal
+* detailed analysis of which factors contribute the most to effective pre-traing
+  * number of languages and their overall similarity
 
 # 2 Multilingual Denoising Pre-training
+
+## 2.1 Data: CC25 corpus
+
+### Datasets
+
+* We pre-train on a subset of 25 languages – CC25 – extracted from CC
+  (Wenzek+ 2019; Conneau+ 2019)
+  * CC25 includes languages from different families and with varied amounts of
+    text (Table 1).  Following Lample and Conneau (2019), we rebalanced the
+    corpus by up/down-sampling text from each language i with a ratio p_i^0.7,,,
+    where p i is the percentage of each language in CC25
 
 # 3 Sentence-level Machine Translation
 
 ## 3.3 Analysis
 
 ### How many languages should you pre-train on?
+
+* when it is helpful for pre-training to include languages other than the tg par
+  * helps most when the target language monolingual data is limited
+    (e.g.  En-My, the size of My is around 0.5% of En)
+    * when monolingual data is plentiful (De, Ro), it slightly hurts the final
+      * may reduce the capacity available for each test language.  Additionally,
+  * pre-training with similar languages is particularly helpful
+    * the fact that mBART06 performs similar to mBART02 on Ro-En suggests
 
 ### How many pre-training steps are needed? We
 
@@ -90,17 +108,17 @@ from pre-training? Tables 2 and 3 show that
      back-translation (BT; Artetxe+ 2017; Lample+ 2018c). We show that
      * mBART provides a simple and effective initialize scheme for these methods
   2. No bi-text for the pair is available, but the languages both appear in
-     bi-text corpora for other language pairs.
+     bi-text corpora for other language pairs
     * Previous work has shown that zero-shot transfer is possible via
       * massively multi-lingual MT (Johnson+ 2017; Gu+ 2019) or
-      * distillation through pivoting (Chen+ 2017).
+      * distillation through pivoting (Chen+ 2017)
       * We limit our focus to building MT models for single language pairs, and
-        leave multi-lingual pre-training for multi-lingual MT to future work.
+        leave multi-lingual pre-training for multi-lingual MT to future work
   3. No bi-text for the pair is available, but
     there is bi-text for translating from some other language into the target
     * a new evaluation regime, where we will show that
       mBART supports effective transfer,
-      even if the source language has no bi-text of any form.
+      even if the source language has no bi-text of any form
 * we focus on applications to the first and the third kinds
 
 ## 5.1 back-translation ( §5.1) and
@@ -113,8 +131,8 @@ from pre-training? Tables 2 and 3 show that
 
 ## Pre-training for Text Generation
 
-* selfsupervised pre-training for NLP applications (Pe-ters+ 2018; Radford+
-  2018; Devlin+ 2019; Yang+ 2019; Liu+ 2019), especially
+* selfsupervised pre-training for NLP applications
+  (Peters+ 2018; Radford+ 2018; Devlin+ 2019; Yang+ 2019; Liu+ 2019)
   * for text generation tasks (Radford+ 2019; Song+ 2019; Dong+ 2019; Raffel+
     2019; Lewis+ 2019) where different self-supervised objectives are designed
 * fine-tuning varous downstream tasks such as
@@ -127,24 +145,24 @@ from pre-training? Tables 2 and 3 show that
 
 * multilingual language learning, including
   * aligning multilingual word embeddings (Mikolov+ 2013; Chen and Cardie, 2018;
-    Lample+ 2018b) into universal space, and learning
+    Lample+ 2018b) into universal space
   * cross-lingual models (Wada and Iwata, 2018; Lample and Conneau, 2019;
-    Conneau+ 2019) to exploit shared representations across languages.
-* multilingual translation (Firat+ 2016; Viégas+ 2016; Aharoni+ 2019;
-  Arivazhagan+ 2019) where the ultimate goal is to
+    Conneau+ 2019) to exploit shared representations across languages
+* multilingual translation
+  (Firat+ 2016; Viégas+ 2016; Aharoni+ 2019; Arivazhagan+ 2019)
   * jointly train one translation model that translates multiple language
     directions at the same time, and shares representations to improve the
-    translation performance on low-resource languages (Gu+ 2018). In this paper,
+    translation performance on low-resource languages (Gu+ 2018)
   * we focus on multilingualism in the pre-training stage and
-    fine-tune the learned model in the standard bi-lingual scenario.
+    fine-tune the learned model in the standard bi-lingual scenario
   * interference problems between dissimilar languages is typical for regular
-    multilingual translation models.
+    multilingual translation models
 
 ## Document Translation
 
-* incorporating document-level contexts into neural machine translation (Wang+
-  2017; Jean+ 2017; Tiedemann and Scherrer, 2017; Miculicich+ 2018; Tu+ 2018).
-* Li+ (2019) utilized pre-trained encoder (BERT) for handling longer context.
+* incorporating document-level contexts into neural machine translation
+  (Wang+ 17; Jean+ 17; Tiedemann and Scherrer, 17; Miculicich+ 18; Tu+ 18)
+* Li+ (2019) utilized pre-trained encoder (BERT) for handling longer context
 * no positive results on pure Seq2Seq models at document-level, which involved
   task-specific techniques, and usually only worked on sentence-level
   translation with a constrained range of context. To the extent of our
@@ -156,23 +174,23 @@ from pre-training? Tables 2 and 3 show that
 * When no parallel corpus of any kind is available,
   * Artetxe+ (2017); Lample+ (2018a,c) proposed to jointly learn denoising
     auto-encoder and back-translation from both directions, which, however,
-    required good initial- ization and only worked well on similar language
+    required good initialization and only worked well on similar language
     pairs;
     * Similarly, we follow this approach and treat our pretrained model as the
       initialization step
   * Wu+ (2019a) replaced back-translation with retrieved similar sentences from
     target monolingual data;
   * Wu+ (2019b) solves the problem by mining sentences from Wikipedia and use
-    them as weakly supervised translation pairs.
+    them as weakly supervised translation pairs
 * unsupervised translation using language transfer, which is similar to
   * Pourdamghani+ (2019) generate translationese of the source language and
     train a system on high-resource languages to correct these intermediate
     utterances. It is also closely related to
-  * Conneau+ (2018); Artetxe+ (2019): cross-lingual representation learning.
+  * Conneau+ (2018); Artetxe+ (2019): cross-lingual representation learning
 
 # 7 Conclusion
 
 * future work, we will scale-up the current pre-training to
   * more languages, e.g., an mBART100 model. The
-  * more size-efficient models: size of our model makes it expensive to deploy
-    in production
+  * more size-efficient models
+    the size of our model makes it expensive to deploy in production

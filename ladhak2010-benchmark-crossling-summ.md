@@ -10,7 +10,7 @@ https://github.com/esdurmus/Wikilingua
 * gold-standard article-summary alignments across languages by aligning the
   images that are used to describe each how-to step in an article. As a set of
 * baselines for further studies, we evaluate the performance of existing
-  cross-lingual abstractive summarization methods on our dataset. We further
+  cross-lingual abstractive summarization methods on our dataset
 * method for direct crosslingual summarization (=without translation at infer)
   by leveraging synthetic data and Neural Machine Translation as a pre-training
   * significantly outperforms the baseline approaches, while being
@@ -19,9 +19,9 @@ https://github.com/esdurmus/Wikilingua
 # 1 Intro
 
 * abstractive summarization, mostly monolingual (Lewis+ 2019a; Song+ 2020)
-* resources for cross-lingual summarization (Giannakopoulos, 2013; Li+ 2013;
-  Elhadad+ 2013; Nguyen and Daumé III, 2019), the datasets employed are
-  * very limited in size.  Scarcity in the availability of data for cross-
+* resources for cross-lingual summarization
+  (Giannakopoulos, 2013; Li+ 2013; Elhadad+ 2013; Nguyen and Daumé III, 2019),
+  * very limited in size
 * difficulty of collecting high-quality, large-scale datasets via crowd-sourcing
   * costly endeavor: humans must condense, and paraphrase entire articles
   * subjectivity in content selection (Nguyen and Daumé III, 2019)
@@ -36,18 +36,18 @@ https://github.com/esdurmus/Wikilingua
     * the ordering of steps may differ for the same article across languages,
       * we align each step using the corresponding illustrative image, as shown
 * WikiLingua
-  * 141,457 unique English articles. Each of the
+  * 141,457 unique English articles
   * other 17 languages has, on average, 42,783 articles that align with an en
   * the largest dataset with parallel articles and summaries for cross-lingual
-    abstractive summarization to date. This further opens up avenues 3 to
+    abstractive summarization to date
 * for cross-lingual and multilingual summarization
 
-## 4.1 baselines. We then propose a
+## 4.1 baselines
 
 ## 4.2 Direct Cross-lingual Summarization
 
 * method for direct crosslingual abstractive summarization, leveraging synthetic
-  data and machine translation as a pre-training step. We show that
+  data and machine translation as a pre-training step
 
 # 5 Results and Analysis
 
@@ -69,27 +69,28 @@ https://github.com/esdurmus/Wikilingua
     to address the problem of repetitions in the generated summary
   * Chen and Bansal (2018) takes a two stage approach to abstractive summ by
     * extractor to select salient sentences from the articles, and an
-    * abstractor to rewrite the sentences selected by the extractor. They
+    * abstractor to rewrite the sentences selected by the extractor
     * further train the extractor and abstractor end-to-end with a
-      policy-gradient method, using ROUGE-L F1 as the reward function. Recently,
+      policy-gradient method, using ROUGE-L F1 as the reward function
   * pre-trained language models have achieved the SOTA results in abstractv summ
-    (Lewis+ 2019b; Liu and Lapata, 2019; Song+ 2020). Therefore,
+    (Lewis+ 2019b; Liu and Lapata, 2019; Song+ 2020)
     * we use mBART (Liu+ 2020) for all the baselines and our direct
       cross-lingual models
 
 ## Cross-lingual Abstractive Summarization
 
 * Wan+ (2010) proposes summarize-then-translate and translate-then-summarize as
-  * summarize-then-translate is preferable because it is
+  * summarize-then-translate is
     * computationally less expensive since it translates the summary rather than
-    * less prone to error propagation from translation systems.  As we show in
-    * hE, requires a large amount of training data in the source language to
-      build an effective summarization system.  On the other hand,
+    * less prone to error propagation from translation systems
+    * hE, requires a large amount of training data in the low-rsc language to
+      build an effective summarization system
   * translate-then-summarize approach relies on having an accurate translation
     system and a large amount of summarization training data in the target
-* both widely used
-  * translate-then-summarize (Leuski+ 2003) and
-  * summarize-then-translate (Lim+ 2004; Orăsan and Chiorean, 2008; Wan+ 2010)
+* both
+  * widely used
+    * translate-then-summarize (Leuski+ 2003) and
+    * summarize-then-translate (Lim+ 2004; Orăsan and Chiorean, 2008; Wan+ 2010)
   * prone to error propagation
 * Ouyang+ (2019): a variant of translate-then-summarize to cross-lingual summ
   * doing a round-trip translation of English articles through the source lang
@@ -103,17 +104,16 @@ https://github.com/esdurmus/Wikilingua
     * our approach is much simpler and also focuses on a different kind of
       summarization task
 * Zhu+ (2019) use round-trip translation of large scale monolingual datasets
-  (Hermann+ 2015; Zhu+ 2018; Hu+ 2015) to generate synthetic training data for
-  their models, and train a
-  multi-task model to learn both translation and cross-lingual summ
-  * We tried their approach on our data, using the code provided, 11 but the
-    results were worse than all baselines except lead.  12 We suspect that this
-    may be due to the amount of training data, as their synthetic dataset was
-    much larger than ours (1.69M pairs for Zh-En)
+  (Hermann+ 2015; Zhu+ 2018; Hu+ 2015) to generate synthetic training data
+  * multi-task model to learn both translation and cross-lingual summ
+  * We tried their approach on our data, using the code provided, but the
+    results were worse than all baselines except lead
+    * this may be due to the amount of training data, as
+      their synthetic dataset was much larger than ours (1.69M pairs for Zh-En)
   * An extension of their approach would be to
-    incorporate multi-task training for pre-trained mBART, which we leave for
+    incorporate multi-task training for pre-trained mBART, which we leave for fu
 * prior work limited to a few languages, and mostly in the news domain
-  (Wan+ 2010; Wan, 2011; Yao+ 2015; Zhang+ 2016; Wan+ 2019). 
+  (Wan+ 2010; Wan, 2011; Yao+ 2015; Zhang+ 2016; Wan+ 2019)
   * Nguyen and Daumé III, (2019) address this, but the proposed dataset is still
     limited in size, and contains summaries only in English. We address this
     limitation by proposing a new benchmark dataset

@@ -119,7 +119,7 @@ https://github.com/pdufter/minimult
 
 #### Sentence Retrieval is popular for evaluating crosslingual representations
 
-* (Artetxe and Schwenk, 2019; Libovickỳ+ 2019)
+* Artetxe and Schwenk, (2019); Libovickỳ+ (2019)
 * sentence embedding e s simply by averaging vectors across all tokens
   (ignoring CLS and SEP tokens). Computing cosine similarities sentences
 * Given an English query sentence s i , we obtain the retrieved sentences in
