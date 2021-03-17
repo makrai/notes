@@ -43,7 +43,7 @@ https://github.com/recitalAI/MLSUM
 * Litvak+ (2010): genetic algorithm
 * MultiLing (Giannakopoulos+ 2015), a community-driven initiative,
   benchmarked summarization systems on multilingual data
-  * 40 languages, it provides relatively few examples (10k in the 2019 release)
+  * 40 languages, relatively few examples (10k in the 2019 release)
     * af  ar  az  bg  bs  ca  cs  de  el  en  eo  es  eu  fa  fi  fr  he  hr  id
       it  ja  jv  ka  ko  li  lv  mr  ms  nl  nn  no  pl  pt  ro  ru  simple  sk
       th  tr  tt  uk  zh
@@ -113,7 +113,7 @@ https://github.com/recitalAI/MLSUM
   * Rankel+ (2013), the correlation between qualitative and automatic metrics,
     such as ROUGE (Lin, 2004), decreases significantly when only 1 ref is given
 * small number of training data available ->
-  often used in a domain adaptation setup for models first trained on larger
+  often used in a domain adaptation setup: models first trained on larger
   datasets such as Gigaword, CNN/DM (Nallapati+ 2016; See+ 2017) or with
   unsupervised methods (Dorr+ 2003; Mihalcea and Tarau, 2004; Barrios+ 2016a)
 
@@ -208,9 +208,9 @@ https://github.com/recitalAI/MLSUM
 # 4 Models 5
 
 * supervised and unsupervised methods, extractive and abstractive models
-* For all the experiments, we train models on a per-language basis.  We used the
-  recommended hyperparameters for all languages, in order to facilitate
-  assessing the robustness of the models
+* For all the experiments, we train models on a per-language basis
+  * hyperparameters: we used the recommended ones for all languages, in order to
+    facilitate assessing the robustness of the models
 * one model with all the languages mixed together:
   no significant difference of performance
 
@@ -276,12 +276,12 @@ https://github.com/recitalAI/MLSUM
 
 # 5 Evaluation Metrics 6
 
-### ROUGE Arguably the most often reported set of metrics in summarization
+### ROUGE. Arguably the most often reported set of metrics in summarization
 
 * Recall-Oriented Understudy for Gisting Evaluation (Lin, 2004) computes the
-  number of n-grams similar between the evaluated summary and the human ref
+  number of n-grams similar between the evaluated summary and the human referenc
 
-### METEOR The Metric for Evaluation of Translation with Explicit ORdering
+### METEOR. The Metric for Evaluation of Translation with Explicit ORdering
 
 * Banerjee and Lavie (2005) designed METEOR for the evaluation of MT
 * harmonic mean of unigram precision and recall, with
@@ -297,7 +297,7 @@ https://github.com/recitalAI/MLSUM
 
 ### Neural Metrics
 
-* Several approaches based on neural models have been recently proposed. Recent
+* Several approaches based on neural models have been recently proposed
   * evaluate summaries with QA based methods (Eyal+ 2019; Scialom+ 2019)
   * rationale: a good summary should answer the most relevant questions
 * Kryściński+ (2019): a discriminator trained to measure the factualness
@@ -317,7 +317,7 @@ https://github.com/recitalAI/MLSUM
     * metric biases (e.g. due to a different morphological type) or
     * biases inherent to the model
     * motivates further the development of multilingual datasets, since
-      they are the only mean to study such phenomenon
+      they are the only means to study such phenomenon
 * Table 2 the ROUGE-L and METEOR scores by each model for all languages
   * overall order of systems (for each language) is preserved with either metric
     (modulo some swaps between Lead 3 and Pointer Generator,
@@ -355,10 +355,7 @@ https://github.com/recitalAI/MLSUM
   except for Russian. This can be explained by the aforementioned
   * Russian corpus characteristics: highest novelty, shortest summaries, and
     longest input documents (see Table 1)
-* Thus, in the following, for pair-wise language-based comparisons we focus only
-  on scores obtained, by the different models, on
-  French, German, Spanish, and Turkish –
-  since we cannot draw meaningful interpretations over Russian
+* Thus, in the following, for pair-wise language-based comparisons we ignore ru
 
 ### Abstractiveness of the datasets
 

@@ -36,7 +36,7 @@ https://github.com/CZWin32768/xnlg
       including zero-shot crosslingual generation
   * explore several fine-tuning strategies to make a compromise between
     cross-lingual ability and task ability
-  * eval in two crosslingual NLG datasets: QA, & abstractive summarization, AS
+  * eval in two crosslingual NLG datasets: QA & abstractive summarization (AS)
     * English, Chinese, and French
 * Experiments: XNLG achieves competitive performance compared with the
   machine-translation based pipeline model in zero-shot cross-lingual settings
@@ -64,11 +64,10 @@ https://github.com/CZWin32768/xnlg
   * Apart from pre-training encoders,
     several pre-trained models (Dong+ 2019; Song+ 2019) are proposed for
     generation tasks
-    * Dong, L.; Yang, N.; Wang, W.; Wei, F.; Liu, X.; Wang, Y.; Gao, J.;
-      Zhou, M.; and Hon, H.-W
+    * Dong L, Yang N, Wang W, Wei F, Liu X, Wang Y, Gao J, Zhou M, and Hon H-W
       Unified LM pre-training for natural language understanding and generation
       arXiv preprint arXiv:1905.03197
-    * Song, K.; Tan, X.; Qin, T.; Lu, J.; and Liu, T.-Y
+    * Song K, Tan X, Qin T, Lu J, and Liu T-Y
       arXiv preprint arXiv:1905.02450
       Mass: Masked sequence to sequence pre-training for language generation
 
@@ -100,24 +99,24 @@ https://github.com/CZWin32768/xnlg
 
 ## 3.1 Pre-Training Tasks
 
-### Monolingual MLM The masked language modeling
+### Monolingual MLM
 
-### Denoising Auto-Encoding (DAE) We use the denoising
+### Denoising Auto-Encoding (DAE)
 
-### Cross-Lingual MLM (XMLM) Similar to monolingual
+### Cross-Lingual MLM (XMLM)
 
-### Cross-Lingual Auto-Encoding (XAE) If only DAE is
+### Cross-Lingual Auto-Encoding (XAE)
 
 ## 3.2 Pre-Training Protocol
 
 ## 3.3 Fine-Tuning on Downstream NLG Tasks
 
-### Fine-Tuning for Any-to-Others NLG Ideally, the model
+### Fine-Tuning for Any-to-Others NLG
 
 * In practice, we found that the proposed fine-tuning method prevents the
   model from only decoding English words for the Any-to-Others setting
 
-### Fine-Tuning for Any-to-English NLG For the Any-to-
+### Fine-Tuning for Any-to-English NLG
 
 # 4 Experiments
 

@@ -3,7 +3,9 @@ Li Dong, Nan Yang, Wenhui Wang, Furu Wei, Xiaodong Liu, Yu Wang, Jianfeng Gao,
   Ming Zhou, Hsiao-Wuen Hon
 NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
-The code and pre-trained models https://github.com/microsoft/unilm
+[overview](https://github.com/microsoft/unilm) 
+[The code and pre-trained models](https://github.com/microsoft/unilm/tree/master/unilm-v1)
+
 
 # Abstract
 
@@ -96,7 +98,7 @@ The code and pre-trained models https://github.com/microsoft/unilm
     * all previous abstractive systems,
       creating a new SOTA abstractive summarization result on the dataset
     * the best extractive model [27] by 0.88 point in ROUGE-L
-* Table 4, we evaluate on Gigaword with different scales (10K and 3.8M). Both
+* Table 4, we evaluate on Gigaword with different scales (10K and 3.8M)
   * Transformer [43] and OpenNMT [23] implement standard attentional seq-to-seq
   * Re3Sum [4] retrieves summaries as candidate templates, and then use an
     extended sequence-to-sequence model to generate summaries

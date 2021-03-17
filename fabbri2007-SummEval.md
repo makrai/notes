@@ -6,7 +6,7 @@ https://github.com/Yale-LILY/SummEval
 
 * scarcity of comprehensive up-to-date studies on evaluation metrics for summ
 * lack of consensus regarding evaluation protocols
-* We address the shortcomings of summarization evaluation methods along 5 dims:
+* We address these shortcomings along 5 dims:
   * we re-evaluate 12 automatic evaluation metrics
     * using neural summarization model outputs along with
       expert and crowd-sourced human annotations,
@@ -37,7 +37,7 @@ https://github.com/Yale-LILY/SummEval
 * ROUGE (Lin, 2004b) metric, which measures lexical overlap
   * typically used together with crowd-sourced human annotations for eval
 * the current setup has become standardized, hE
-* Hardy+ (2019): papers vastly differ in their evaluation protocol
+* papers vastly differ in their evaluation protocol (Hardy+ 2019)
   * often limited to a few baselines
   * human evaluations which are largely inconsistent with prior work
 * ROUGE
@@ -47,8 +47,8 @@ https://github.com/Yale-LILY/SummEval
   * other text generation metrics
     (Peyrard, 2019; Zhao+ 2019; Zhang+ 2020; Scialom+ 2019; Clark+ 2019)
   * remained the default automatic evaluation metric
-* lack of easy-to-use resources for evaluation, both in the form of
-  simplified evaluation toolkits and large collections of model outputs
+* lack of easy-to-use resources for evaluation:
+  no simplified evaluation toolkits and no large collections of model outputs
 * how evaluation metrics are evaluated themselves
   * Many of the currently used metrics were developed and assessed using the
     Document Understanding Conference (DUC) and Text Analysis Conference (TAC)
@@ -109,7 +109,7 @@ https://github.com/Yale-LILY/SummEval
   * meeting summarization (Liu and Liu, 2008) and summarization of
   * scientific articles (Cohan and Goharian, 2016)
 
-## datasets,
+## datasets
 
 * Dernoncourt+ (2018) presented a detailed taxonomy of summ datasets
   * differences in formats of available corpora and
@@ -125,7 +125,7 @@ https://github.com/Yale-LILY/SummEval
     * where each news article is associated with a single reference summary,
   * noisy, low quality data in automatically collected news datasets
 
-## models,
+## models
 
 * Zhang+ (2018a): level of abstraction of several recent abstractive summ models
   * word-level extractive models achieved a similar level of abstraction to
@@ -140,7 +140,7 @@ https://github.com/Yale-LILY/SummEval
   * Maynez+ (2020) conducted a
     * large-scale study of abstractive summarizers' faithfulness
     * improving factual faithfulness is a critical issue in summarization
-    * ROUGE and BertScore, are not sufficient to study the problem at hand
+    * ROUGE and BertScore are not sufficient to study the problem at hand
   * Durmus+ (2020) and Wang+ (2020) similarly examine faithfulness evaluation,
     * proposing question answering frameworks as a means of evaluation
 
@@ -155,7 +155,7 @@ https://github.com/Yale-LILY/SummEval
   * several recent metrics applied to both text generation and summarization,
   * standard machine translation metrics, and
   * other miscellaneous performance statistics
-* ROUGE (Lin, 2004b Recall-Oriented Understudy for Gisting Evaluation),
+* ROUGE (Lin, 2004b, Recall-Oriented Understudy for Gisting Evaluation),
   measures the number of overlapping textual units (n-grams, word sequences)
   between the generated summary and a set of gold reference summaries
 * ROUGE-WE (Ng and Abrecht, 2015) extends ROUGE by using soft lexical matching
@@ -414,8 +414,7 @@ https://github.com/Yale-LILY/SummEval
     * repetition displays a lack of coherence
   * most metric correlations are considerably worse along coherence and fluency,
 * Pearson’s correlation coefficients, pairwise, between all metrics
-  * strong correlation between all metrics that compute, implicitly or
-    explicitly, the lexical overlap
+  * strong correlation between all metrics that compute imply/exply lex overlap
   * n-gram novelty and repetitiveness show weak negative correlation with all
     ROUGE-related metrics
   * Length non-weakly correlated with S^3, which might suggest

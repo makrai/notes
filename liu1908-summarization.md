@@ -19,8 +19,8 @@ code is available at https://github.com/nlpyang/PreSumm
   * two-staged fine-tuning approach can further boost the quality
     * motivated by that the combination of extractive and abstractive
       objectives can help generate better summaries (Gehrmann+ 2018)
-* Experiments on three datasets show that our model achieves SOTA results
-  across the board in both extractive and abstractive settings
+* Experiments on three datasets
+  * SOTA results across the board in both extractive and abstractive settings
   * under automatic and human-based
 
 # 1 Introduction
@@ -67,7 +67,7 @@ code is available at https://github.com/nlpyang/PreSumm
   trained by globally optimizing the ROUGE metric
 * LAtent (Zhang+ 2018): extractive summarization as a latent variable inference
   * instead of maximizing the likelihood of “gold” standard labels, their
-    latent model directly maximizes the likelihood of human summaries 
+    latent model directly maximizes the likelihood of human summaries
     given selected sentences
 * Sumo (Liu+ 2019) capitalizes on the notion of structured attention to
   induce a multi-root dependency tree representation of the document
@@ -102,16 +102,16 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 3.1 Summarization Encoder
 
-* interval segment embeddings to distinguish multiple sentences within a doc. 
-* For sent i we assign segment embedding E A or E B depending on whether i is
-  odd or even
-* This way, document representations are learned hierarchically where 
-  * lower Transformer layers represent adjacent sentences, while 
+* interval segment embeddings to distinguish multiple sentences within a doc
+* For sent i we assign segment embedding `E_A` or `E_B` depending on whether i
+  is odd or even
+* This way, document representations are learned hierarchically where
+  * lower Transformer layers represent adjacent sentences, while
   * higher layers, in combination with self-attention, represent multi-sentence
-    discourse.  
-* Position embeddings in the original B ERT model have a maximum length of 512;
+    discourse
+* Position embeddings in the original Bert model have a maximum length of 512;
   we overcome this limitation by adding more position embeddings that are
-  initialized randomly and finetuned with other parameters in the encoder.
+  initialized randomly and finetuned with other parameters in the encoder
 
 ## 3.2 Extractive Summarization
 
@@ -124,8 +124,8 @@ code is available at https://github.com/nlpyang/PreSumm
   * can make fine-tuning unstable;
     for example, the encoder might overfit the data while the decoder underfits,
     or vice versa.  To circumvent this,
-* we design a new fine-tuning schedule which separates the optimizers of the
-  encoder and the decoder
+* we design a new fine-tuning schedule which 
+  separates the optimizers of the encoder and the decoder
   * the pretrained encoder should be fine-tuned with a smaller learning rate and
     smoother decay (so that the encoder can be trained with more accurate
     gradients when the decoder is becoming stable)
@@ -149,11 +149,10 @@ code is available at https://github.com/nlpyang/PreSumm
   * New York Times Annotated Corpus (NYT; Sandhaus 2008), and
   * XSum (Narayan+ 2018a)
   * These datasets represent different summary
-    * styles ranging from highlights to very brief one sentence summaries.  The
-    * rewriting operations they exemplify (e.g., some showcase more cut and
-      paste operations while others are genuinely abstractive)
-  * Table 1 presents statistics on these datasets (test set); example
-    (gold-standard) summaries are provided in the supplementary material
+    * styles ranging from highlights to very brief one sentence summaries
+    * rewriting operations: cut and paste operations vs genuinely abstractive
+  * Table 1 presents statistics on these datasets (test set); 
+    * example (gold-standard) summaries are provided in the supplementary materl
 * CNN/DailyMail contains news articles and associated highlights, i.e., a few
   bullet points giving a brief overview of the article
   * Input documents were truncated to 512 tokens
@@ -162,15 +161,15 @@ code is available at https://github.com/nlpyang/PreSumm
     * split these into 100,834/9,706 training/test examples, based on the date
       of publication (test from January 1, 2007) We used 4,000 examples from the
       training as validation set.  We also followed their
-    * filtering procedure, documents with summaries less than 50 words were
-    * filtered test set (NYT50) includes 3,452 examples.  Sentences were split
+    * filtering documents with summaries less than 50 words
+    * filtered test set (NYT50) includes 3,452 examples
     * Input documents were truncated to 800 tokens
 * XSum contains 226,711 news articles accompanied with a one-sentence summary,
   * splits of Narayan+ (2018a) for training, validation, and testing and
     followed the pre-processing introduced in their work
     * Input documents were truncated to 512 tokens
 * Table 1
-  * statistics on the three datasets, Table 1 also reports the
+  * statistics on the three datasets
   * proportion of novel bi-grams in gold summaries as a measure of their abstrac
 * We would expect models with extractive biases to perform better on datasets
   with (mostly) extractive summaries, and abstractive models to perform more
@@ -184,34 +183,35 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 5.1 Automatic Evaluation
 
-* Table 2 summarizes our results on the CNN/DailyMail dataset. The first block
-  * Bert -based models outperform the Lead -3 baseline which is not a * Bert models collectively outperform
-    all previously proposed extractive and abstractive systems, only falling
-  * BertSum Ext performs best which is not entirely surprising;
+* Table 2 summarizes our results on the CNN/DailyMail dataset
+  * Bert-based models outperform the Lead-3 baseline which is not a 
+  * Bert models collectively outperform all previously proposed extractive and
+    abstractive systems, only falling
+  * BertSumExt performs best which is not entirely surprising;
     CNN/DailyMail summaries are somewhat extractive and even abstractive models
     are prone to copying sentences from the source document when trained on this
-    dataset (See+ 2017). Perhaps unsurprisingly we observe that
-  * larger versions of Bert lead to performance improvements and that interval
-    embeddings bring only slight gains
+    dataset (See+ 2017)
+  * larger versions of Bert lead to performance improvements and that 
+    * interval embeddings bring only slight gains
 * Table 3 presents results on the NYT dataset
-  * Following the evaluation protocol in Durrett+ (2016), we use limited-length
-    ROUGE Recall, where predicted summaries are truncated to the length of the
-    gold summaries. Again, we report the performance of the Oracle upper bound
-    and
-Lead -3 baseline. The second block in the table contains previously proposed
-extractive models as well as our own Transformer baseline. C OM
-PRESS (Durrett+ 2016) is an ILP-based model which combines compression
-and anaphoricity constraints. The third block includes abstractive models from
-the literature, and our Transformer baseline
-  * Bert -based models outperform previously proposed approaches. On this
+  * we use limited-length ROUGE Recall
+    * Following the evaluation protocol in Durrett+ (2016), 
+    * predicted summaries are truncated to the length of the gold summaries.
+      Again, we report the performance of the Oracle upper bound and
+  * second block in the table contains 
+    previously proposed extractive models as well as our own Transformer baselin
+    * ComPress (Durrett+ 2016) is an ILP-based model which 
+      combines compression and anaphoricity constraints.  The 
+  * third block includes abstractive models from the literature, and our
+    Transformer baseline
+  * Bert-based models outperform previously proposed approaches. On this
   * abstractive Bert models generally perform better compared to BertSum Ext ,
     almost approaching Oracle performance
 * Table 4 summarizes our results on the XSum dataset
   * highly abstractive (see Table 1) consisting of a single sentence
-  * Extractive models here perform poorly as corroborated by the
-  * low performance of the
-    LEAD baseline (which simply selects the leading sentence)
-    ORACLE (which selects a single-best sentence in each document)
+  * Extractive models here perform poorly as corroborated by the low perf of the
+    * LEAD baseline (which simply selects the leading sentence)
+    * ORACLE (which selects a single-best sentence in each document)
   * we do not report results for extractive models on this dataset
 
 ## 5.2 Model Analysis
@@ -222,37 +222,36 @@ the literature, and our Transformer baseline
 
 ### Novel N-grams
 
-* Figure 3. In the
+* Figure 3
   * CNN/DailyMail dataset, the proportion of novel n-grams in automatically
     generated summaries is much lower compared to reference summaries, but in
   * XSum, this gap is much smaller
-* The supplementary material includes examples of system output and additional
-  ablation studies
+* The supplementary material includes 
+  examples of system output and additional ablation studies
 
 ## 5.3 Human Evaluation 8
 
 * question answering (QA) paradigm (Clarke and Lapata, 2010; Narayan+ 2018b)
-  which quantifies the degree to which summarization models retain key
-  information from the document. Under this paradigm,
+  * quantifies the degree to which summarization models retain key information
+    from the document
   * a set of questions is created based on the gold summary under the
     assumption that it highlights the most important document content
   * Participants are then asked to answer these questions by reading system
-    summaries alone without access to the article. The more questions a system
+    summaries alone without access to the article
 * overall quality of the summaries produced by abstractive systems
-* Best-Worst Scaling (Kiritchenko and Mohammad, 2017) method where participants
-  were presented with the output of two systems (and the original document)
-  * according to the criteria of Informativeness, Fluency, and Succinctness
+* Best-Worst Scaling (Kiritchenko and Mohammad, 2017) method 
+  * participants presented with the output of two systems (and the original doc)
+  * criteria of Informativeness, Fluency, and Succinctness
 * Both types of evaluation were conducted on the Amazon Mechanical Turk platform
   * CNN/DailyMail and NYT datasets: we used the same documents (20 in
     total) and questions from previous work (Narayan+ 2018b; Liu+ 2019)
   * XSum: we randomly selected 20 documents (and their questions) from the
-    release of Narayan+ (2018a). We elicited 3 responses per HIT. With regard to
-    QA evaluation, we adopted the scoring mechanism from Clarke and Lapata
-    (2010); correct answers were marked with a score of one, partially correct
-    answers with 0.5, and zero otherwise. For quality-based evaluation, the
-    rating of each system was computed as the percentage of times it was chosen
-    as better minus the times it was selected as worse.  Ratings thus range from
-    -1 (worst) to 1 (best)
+    release of Narayan+ (2018a). We elicited 3 responses per HIT
+  * QA evaluation, we adopted the scoring mechanism from Clarke & Lapata (2010);
+    correct/partially correct/other answers were marked with a score of 1/0.5/0
+  * quality-based evaluation, the rating of each system was computed as the
+    percentage of times it was chosen as better minus the times it was selected
+    as worse.  Ratings thus range from -1 (worst) to 1 (best)
 * Tables 6 and 7: Results for extractive and abstractive systems respectively
   * We compared the best performing BertSum model in each setting (extractive or
     abstractive) against various SOTA systems (whose output is publicly
