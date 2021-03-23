@@ -29,12 +29,12 @@ a vízszintes illeve függőleges írás szerepe nincs explicite kifejtve
   * out of which such structures are created during generation
 * the first subgoal that the theory presented here attempts to achieve is the
   representation
-  * conceptual content is ... mapped into linguistic units via realization
+  * conceptual content is mapped into linguistic units via realization
     rules. We will not discuss realization rules in any detail in this paper
 * elements are concepts and not words
-* two linguistic structures ... have the same conceptual representation if
+* two linguistic structures have the same conceptual representation if
   they are translations or paraphrases of each other
-  * another subgoal ... explicit procedures for formally realizing two such
+  * another subgoal explicit procedures for formally realizing two such
     linguistic structures as the one conceptual structure
 * Linguists
   * transformational-generative grammar proposed by Chomsky (1957, 1965) is
@@ -44,16 +44,16 @@ a vízszintes illeve függőleges írás szerepe nincs explicite kifejtve
     Lakoff (1969) and Chafe (197O)]
   * primarily interested in generation of random sentences
   * word-based
-  * Chafe, fail to recognize the distinction between the ...  conceptual
-    content and the intention of that content within a given situation
+  * Chafe, fail to recognize the distinction between the conceptual content and
+    the intention of that content within a given situation
 * syntax is not a relevant object of study in its own right, but should be
   studied only as a tool for understanding of meaning
-  * syntactic analysis of a sentence ... for programs which use natural
-    language ... may not even be necessary
+  * syntactic analysis of a sentence for programs which use natural
+    language may not even be necessary
 * humans certainly do not regularly engage in the process of understanding
   isolated sentences[, but sentences in] linguistic and situational contexts
 * an important part of the understanding process is in the realm of prediction
-  ... of the elements of communication that lie outside the conceptual content
+  of the elements of communication that lie outside the conceptual content
   of an utterance
 
 ## 2.2 Conceptual Dependency p5
@@ -83,7 +83,7 @@ a vízszintes illeve függőleges írás szerepe nincs explicite kifejtve
   * An action is that which a nominal can be said to be doing
     * There are certain basic actions (henceforth referred to as ACT’s) the
       core of most verbs in a language, but this will be explained in section~4
-  * A modifier ... is a descriptor of the nominal or action to which it
+  * A modifier is a descriptor of the nominal or action to which it
     relates and serves to specify an attribute of that nominal or action
     * modifiers of nominals as PA’s (picture aiders) and
     * modifiers of actions as AA’s (action aiders)
@@ -194,9 +194,9 @@ Sent: (He) hit the boy
 * transitive alternation
   * John grew the plants with fertilizer
   * We denote causality by <=
-* what appeared to be an _instrument_ syntactically ... then conceptually
+* what appeared to be an _instrument_ syntactically then conceptually
   turned out to be an object of an action
-  * This ... is what always happens to a conceptual instrument:
+  * This is what always happens to a conceptual instrument:
     a single PP cannot be a conceptual instrument
 * actors can only be animate or some natural phenomenon
   * The stick hit the boy
@@ -258,7 +258,7 @@ Sent: (He) hit the boy
 
 * input the triple consisting of the main noun, main verb, and the verb
   category, and the direct object(s) of the verb
-* must decide upon a conceptual configuration ... by using the verb-ACT
+* must decide upon a conceptual configuration by using the verb-ACT
   dictionary, the conceptual rules, and the conceptual semantics
 * must make predictions as to what information is required by the conceptual
   construction and proceed to search the unprocessed part of the sentence
@@ -324,7 +324,7 @@ Sent: (He) hit the boy
       without somehow thinking of the action that links them
     * some dependents are retrievable through each other (object and recipient
       for example)
-      * this is because of ... their simultaneous existence
+      * this is because of their simultaneous existence
       * an item retrieved from memory that is derived from the
         conceptualization
   * while the case dependents are retrievable through the ACT, many things are
