@@ -256,7 +256,7 @@ https://github.com/Yale-LILY/SummEval
   keyphrase-based salience reward as well as an entailment-based reward in
   addition to using a ROUGE-based reward in a REINFORCE setting,
   optimizing rewards simultaneously in alternate mini-batches
-* M14 Multi-task (Ent + QG, Guo+ 2018) propose
+* M14 Multi-task (Entl + QG, Guo+ 2018) propose
   * a multi-task framework along with a corresponding multi-task architecture
   * question generation and entailment generation as auxiliary tasks
 * M15 Closed book decoder (Jiang and Bansal, 2018)

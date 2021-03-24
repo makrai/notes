@@ -6,7 +6,7 @@ EMNLP 2018
 
 * We introduce “extreme summarization”, a new single-document summarization task
   * not favor extractive strategies and calls for an abstractive modeling
-  * one-sentence news summary: “What is the article about?”. We collect a
+  * one-sentence news summary: “What is the article about?”
   * real-world, large-scale dataset by
     online articles from the British Broadcasting Corporation (BBC)
 * novel abstractive model which is conditioned on the article’s topics and

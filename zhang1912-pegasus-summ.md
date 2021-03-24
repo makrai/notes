@@ -5,7 +5,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
 # Abstract
 
 * Recent work on pre-training Transformers with self-supervised objectives
-  * great success when fine-tuned on downstream NLP tasks including summarizatio
+  * great success when fine-tuned on downstream NLP tasks including summ
   * hE, no pre-training objectives for abstractive text summarization
   * lack of systematic evaluation across diverse domains
 * PEGASUS: we pre-train large Transformer-based encoder-decoder models on
@@ -29,7 +29,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
   * Transformers (Vaswani+ 2017)
 * relied on large-scale, high-quality datasets of supervised document-summary
   pairs (Hermann+ 2015) and achieved
-  * promising results (Rush+ 2015; Nallapati+ 2016; See+ 2017). In recent years,
+  * promising results (Rush+ 2015; Nallapati+ 2016; See+ 2017)
 * new summarization datasets that have
   * more abstractive summaries (Narayan+ 2018), have
   * longer documents, (Cohan+ 2018; Sharma+ 2019), utilize
@@ -45,17 +45,17 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
     * instructions (Koupaee & Wang, 2018),
     * emails (Zhang & Tetreault, 2019),
     * patents (Sharma+ 2019), and
-    * legislative bills (Kornilova & Eidelman, 2019). We find that
+    * legislative bills (Kornilova & Eidelman, 2019)
 * Gap Sentences Generation (GSG), a pre-training objective
   * masking whole sentences from a document and
     generating these gap-sentences from the rest of the document
   * In particular, choosing putatively important sentences outperforms lead or
     randomly selected ones
-    * encouraging whole-document understanding and summary-like generation. We
+    * encouraging whole-document understanding and summary-like generation
   * PEGASUS = Extracted Gap-sentences for Abstractive SUmmarization seq2seq
 * With our best 568M parameter model trained on the recently introduced C4
   (Raffel+ 2019) corpus we
-* equal or exceed SOTA on the 12 summarization tasks we consider. We further
+* equal or exceed SOTA on the 12 summarization tasks we consider
 * we: newly collected text corpus HugeNews comprised of news-like articles we
   * including the highly competitive XSum and CNN/DailyMail summarization
     datasets
@@ -74,10 +74,10 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
   * GSG, new self-supervised pre-training objective for abstractive summ
     * we study strategies for selecting the gap sentences
   * evaluation on a broad range of downstream summarization tasks, with
-    * careful ablations to choose the best model settings, which
+    * careful ablations to choose the best model settings
     * we train a 568M parameter PEGASUS model that
       surpasses or is on-par with the SOTA on all 12 downstream datasets
   * domain adaptation by fine-tuning the PEGASUS model and
     surpassing previous SOTA results on many tasks with only 1000 examples
-  * human evaluation studies to validate our experimental design and demonstrate
+  * human evaluation studies to validate our experimental design and
     * human-level performance on XSum, CNN/DailyMail, and Reddit TIFU

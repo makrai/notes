@@ -6,9 +6,8 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
 # Abstract
 
-* multi-lingual text summarization, where the goal is to process texts in
-  multiple languages and output summaries in the corresponding languages with a
-  single model, has been rarely studied
+* multi-lingual text summarization: input in multiple languages and 
+  summaries in the corresponding languages with a single model
 * we present MultiSumm, a novel multi-lingual model for abstractive summarizaton
   * training regime i.e. two stages
     * multi-lingual learning that contains
@@ -40,7 +39,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
     can only handle a small number of training samples
     * As the number of training samples increases, the time cost of these models
       becomes unbearable. To the best of our knowledge, there are no deep
-* parallel corpora for English, Chinese, French, Spanish, and German already
+* parallel corpora for English, Chinese, French, Spanish, and German
   (Graff+ 03; Hu, Chen, and Zhu 15; Mendonça, Graff, and DiPersio 09a; 09b),
   * millions of text-summary pairs
   * no published summarization dataset available for Bosnian and Croatian
@@ -78,7 +77,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 ### Dataset Construction for Bosnian and Croatian
 
 * The process of constructing our summarization dataset is similar to the
-  process of building datasets such as Gigaword and LCSTS. We
+  process of building datasets such as Gigaword and LCSTS
   * crawl the news from a Bosnian news web-site 4 and a Croatian news website 5
   * news description as the original text and use the title as the summary
   * text-summary pair will be filtered out if its title contains dates in the
@@ -92,7 +91,6 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
 * We consider the following three competitive models for comparison
   * Individual. For each language, we train a monolingual transformer model for
-    text summarization
   * Individual + pretraining. We train an individual transformer model for text
     summarization on each language, while the encoder and decoder are first
     pretrained (i.e., using language model training and auto-encoder training)

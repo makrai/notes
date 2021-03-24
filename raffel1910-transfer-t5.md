@@ -12,7 +12,7 @@ JMLR arXiv:1910.10683 [cs.LG]
     * converts all text-based language problems into a text-to-text format
   * compares pre-training objectives, architectures, unlabeled data sets,
     transfer approaches, and other factors on dozens of tasks
-  * new ``Colossal Clean Crawled Corpus''
+  * new Colossal Clean Crawled Corpus
   * SOTA results on summarization, question answering, text classification, etc
 * see the Takeaways
 
@@ -77,7 +77,7 @@ processing problem as a text-to-text task, and the suite of tasks we consider
 ## 3.7 combine insights from our systematic study to obtain SOTA results on a
 wide variety of benchmarks
 
-# 4 summary of our results and wrap up with a look towards the future
+# 4 summary of our results and a look towards the future
 
 ## 4.1 Takeaways
 
@@ -129,7 +129,7 @@ wide variety of benchmarks
   * We pre-trained on a multi-task mixture before fine-tuning on individual
     tasks. Overall, our models were trained on over 1 trillion tokens
 
-## 4.2 4.2 Outlook
+## 4.2 Outlook
 
 ### The inconvenience of large models. An unsurprising but important result
 

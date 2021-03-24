@@ -96,7 +96,7 @@ code is available at https://github.com/nlpyang/PreSumm
 * Narayan+ (2018a)
   * particularly suited to extreme summarization (i.e., single sentence)
   * based on convolutional neural networks and
-    additionally conditioned on topic distributions (TC ONV S2S)
+    additionally conditioned on topic distributions (TConvS2S)
 
 # 3 Fine-tuning Bert for Summarization
 
@@ -188,10 +188,10 @@ code is available at https://github.com/nlpyang/PreSumm
   * Bert models collectively outperform all previously proposed extractive and
     abstractive systems, only falling
   * BertSumExt performs best which is not entirely surprising;
-    CNN/DailyMail summaries are somewhat extractive and even abstractive models
-    are prone to copying sentences from the source document when trained on this
-    dataset (See+ 2017)
-  * larger versions of Bert lead to performance improvements and that 
+    CNN/DailyMail summaries are somewhat extractive and 
+    even abstractive models are prone to copying sentences 
+    when trained on this dataset (See+ 2017)
+  * larger versions of Bert lead to performance improvements and
     * interval embeddings bring only slight gains
 * Table 3 presents results on the NYT dataset
   * we use limited-length ROUGE Recall
@@ -204,8 +204,8 @@ code is available at https://github.com/nlpyang/PreSumm
       combines compression and anaphoricity constraints.  The 
   * third block includes abstractive models from the literature, and our
     Transformer baseline
-  * Bert-based models outperform previously proposed approaches. On this
-  * abstractive Bert models generally perform better compared to BertSum Ext ,
+  * Bert-based models outperform previously proposed approaches
+  * abstractive Bert models generally perform better compared to BertSum Ext,
     almost approaching Oracle performance
 * Table 4 summarizes our results on the XSum dataset
   * highly abstractive (see Table 1) consisting of a single sentence
@@ -255,12 +255,12 @@ code is available at https://github.com/nlpyang/PreSumm
 * Tables 6 and 7: Results for extractive and abstractive systems respectively
   * We compared the best performing BertSum model in each setting (extractive or
     abstractive) against various SOTA systems (whose output is publicly
-    available), the Lead baseline, and the G OLD standard as an upper bound
+    available), the Lead baseline, and the GOLD standard as an upper bound
   * in both settings participants overwhelmingly prefer the output of our model
     against comparison systems across datasets and evaluation paradigms
   * All differences between BertSum and comparison models are statistically
     significant (p < 0.05),
-    with the exception of TC ONV S2S (see Table 7; XSum) in QA
+    with the exception of TConvS2S (see Table 7; XSum) in QA
 
 # 6 Conclusion 9
 

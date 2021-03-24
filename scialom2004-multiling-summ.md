@@ -262,7 +262,7 @@ https://github.com/recitalAI/MLSUM
 ### M-BERT
 
 * text generation
-  * Encoder-decoder Transformer architectures are a very popular
+  * Encoder-decoder Transformer architectures are very popular
   * Recent research efforts have adapted large pretrained self-attention models
     (Peters+ 2018; Radford+ 2018; Devlin+ 2019)
 * Liu and Lapata (2019) added a randomly initialized decoder on top of BERT

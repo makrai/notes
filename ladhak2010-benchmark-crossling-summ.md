@@ -5,6 +5,7 @@ Findings of EMNLP 2020 arXiv:2010.03093 [cs.CL]
 https://github.com/esdurmus/Wikilingua
 
 * article and summary pairs in 18 languages from WikiHow,
+  * Eng Spa Por Fre Ger Rus Ita Ind Dut Ara Chi Vie Tha Jap Kor Hin Cze Tur
 * WikiHow: a high quality, collaborative resource of how-to guides on a diverse
   set of topics written by human authors
 * gold-standard article-summary alignments across languages by aligning the
@@ -56,35 +57,34 @@ https://github.com/esdurmus/Wikilingua
 
 # 6 Related Work
 
-## Abstractive Summarization
+## Abstractive Summarization in English
 
 * monolingual summarization in English (Gehrmann+ 18; Song+ 20; Narayan+ 18)
-  * Rush+ (2015) proposes the first neural abstractive summarization model using
-    an attention-based CNN encoder and a feed-forward decoder
-  * Chopra+ (2016) shows improvements using a RNN for the decoder
-  * Nallapati+ (2016) shows further improvements by incorporating
-    * embeddings for linguistic features such as POS tags and named-entity tags
-    * a pointer network (Vinyals+ 2015) to enable copying words from the source
-  * See+ (2017) extends this model by further incorporating a coverage penalty
-    to address the problem of repetitions in the generated summary
-  * Chen and Bansal (2018) takes a two stage approach to abstractive summ by
-    * extractor to select salient sentences from the articles, and an
-    * abstractor to rewrite the sentences selected by the extractor
-    * further train the extractor and abstractor end-to-end with a
-      policy-gradient method, using ROUGE-L F1 as the reward function
-  * pre-trained language models have achieved the SOTA results in abstractv summ
-    (Lewis+ 2019b; Liu and Lapata, 2019; Song+ 2020)
-    * we use mBART (Liu+ 2020) for all the baselines and our direct
-      cross-lingual models
+* Rush+ (2015) proposes the first neural abstractive summarization model using
+  an attention-based CNN encoder and a feed-forward decoder
+* Chopra+ (2016) shows improvements using a RNN for the decoder
+* Nallapati+ (2016) shows further improvements by incorporating
+  * embeddings for linguistic features such as POS tags and named-entity tags
+  * a pointer network (Vinyals+ 2015) to enable copying words from the source
+* See+ (2017) extends this model by further incorporating a coverage penalty
+  to address the problem of repetitions in the generated summary
+* Chen and Bansal (2018) takes a two stage approach to abstractive summ by
+  * extractor to select salient sentences from the articles, and an
+  * abstractor to rewrite the sentences selected by the extractor
+  * further train the extractor and abstractor end-to-end with a
+    policy-gradient method, using ROUGE-L F1 as the reward function
+* pre-trained language models have achieved the SOTA results in abstractv summ
+  (Lewis+ 2019b; Liu and Lapata, 2019; Song+ 2020)
+  * we use mBART (Liu+ 2020) for all the baselines and our direct
+    cross-lingual models
 
 ## Cross-lingual Abstractive Summarization
 
-* Wan+ (2010) proposes summarize-then-translate and translate-then-summarize as
+* Wan+ (2010) proposes summarize-then-translate and translate-then-summarize
   * summarize-then-translate is
-    * computationally less expensive since it translates the summary rather than
+    * computationally less expensive since it translates only the summary
     * less prone to error propagation from translation systems
     * hE, requires a large amount of training data in the low-rsc language to
-      build an effective summarization system
   * translate-then-summarize approach relies on having an accurate translation
     system and a large amount of summarization training data in the target
 * both
@@ -92,7 +92,7 @@ https://github.com/esdurmus/Wikilingua
     * translate-then-summarize (Leuski+ 2003) and
     * summarize-then-translate (Lim+ 2004; Orăsan and Chiorean, 2008; Wan+ 2010)
   * prone to error propagation
-* Ouyang+ (2019): a variant of translate-then-summarize to cross-lingual summ
+* Ouyang+ (2019): a variant of translate-then-summarize
   * doing a round-trip translation of English articles through the source lang
   * train on noisy English article and clean summary pairs, which allows them
     to account for potential translation noise
@@ -105,7 +105,7 @@ https://github.com/esdurmus/Wikilingua
       summarization task
 * Zhu+ (2019) use round-trip translation of large scale monolingual datasets
   (Hermann+ 2015; Zhu+ 2018; Hu+ 2015) to generate synthetic training data
-  * multi-task model to learn both translation and cross-lingual summ
+  * multi-task model to learn both translation and cross-lingual summarization
   * We tried their approach on our data, using the code provided, but the
     results were worse than all baselines except lead
     * this may be due to the amount of training data, as

@@ -83,11 +83,11 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
 * We fine-tune UniLM as a sequence-to-sequence model following the procedure
   described in Section 2.5 by concatenating document (the first segment) and
-  summary (the second segment) as input which is truncated according to a
-  pre-defined maximum length
+  summary (the second segment) as input which is truncated to a pre-defined
+  maximum length
 * We use the F1 version of ROUGE [25] as the evaluation metric for both datasets
   * Table 3: UniLM against the baseline and several SOTA models on CNN/DailyMail
-  * LEAD-3 is a baseline model that extracts the first three sentences in a
+  * LEAD-3 is a baseline model that extracts the first three sentences
   * PGNet [37] is a sequence-to-sequence model based on the pointer-generator
   * S2S-ELMo [13] uses a seq-to-seq model augmented with pre-trained ELMo
     * termed as SRC-ELMO+SHDEMB in [13]
@@ -111,9 +111,9 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
 * future work
   * more epochs and larger models on web-scale text corpora. At the same time,
-    we will also conduct more experiments on end applications as well as
-    ablation experiments to investigate the model capability and the benefits of
-    pre-training multiple language modeling tasks with the same network
+  * more experiments on end applications as well as ablation experiments to
+    investigate the model capability and the benefits of pre-training multiple
+    language modeling tasks with the same network
   * extending UniLM to support cross-lingual tasks
     (Zewen Chi+ ArXiv, abs/1909.10481)
   * multi-task fine-tuning on both NLU and NLG tasks, which is

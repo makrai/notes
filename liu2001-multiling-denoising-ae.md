@@ -25,10 +25,12 @@ arXiv:2001.08210 [cs.CL]
 # 1 Introduction
 
 * self-supervised pretraining is not yet common practice in machine translation
-  * Existing MT approaches only pre-train parts of the model, including the
-    encoder (Lample and Conneau, 2019) and the decoder (Edunov+ 2019), or use
-    pretraining objectives that only reconstruct parts of text (Song+ 2019), or
-    only focus on English corpora (Lewis+ 2019; Raffel+ 2019)
+  * Existing MT approaches only 
+    * pre-train parts of the model, including 
+      the encoder (Lample and Conneau, 2019) and the decoder (Edunov+ 2019), or
+    * use pretraining objectives that only 
+      * reconstruct parts of text (Song+ 2019), or only 
+      * focus on English corpora (Lewis+ 2019; Raffel+ 2019)
 * we: by pre-training a complete autoregressive model
   * objective that noises and reconstructs full texts across many languages
   * mBART – a multilingual sequence-to-sequence (Seq2Seq) denoising auto-encoder
