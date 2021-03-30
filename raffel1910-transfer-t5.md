@@ -131,7 +131,7 @@ wide variety of benchmarks
 
 ## 4.2 Outlook
 
-### The inconvenience of large models. An unsurprising but important result
+### The inconvenience of large models, unsurprising but important
 
 * larger models tend to perform better
   * hardware is continually getting cheaper and more powerful

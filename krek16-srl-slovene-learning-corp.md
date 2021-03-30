@@ -4,7 +4,7 @@ Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
 
 # 1 Introduction
 
-* srl (Shen and Lapata, 2007; Christensen et al., 2011)
+* srl (Shen and Lapata, 2007; Christensen+ 2011)
 * lack of consensus on the various _categories_ and the criteria for determining
   which today are already available for many languages, causing difficulties in
   čezjezikovnem model semantic labeling should in our view, an effective system
@@ -27,18 +27,18 @@ Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
   for other languages,
   * for example.
     * for English
-      * PropBank (Palmer et al., 2005)
-      * Verbnet (Kipper et al., 2006) and
-      * FrameNet (Backer et al., 1998) ,
-    * Ancor (Taul et al., 2011) for the Spanish,
-    * Sonar (Schuurman et al. , 2010) for the Dutch. In addition, a
-    * set of codes for Croatian (Filko et al., 2012) and the
+      * PropBank (Palmer+ 2005)
+      * Verbnet (Kipper+ 2006) and
+      * FrameNet (Backer+ 1998),
+    * Ancor (Taul+ 2011) for the Spanish,
+    * Sonar (Schuurman+ 2010) for the Dutch. In addition, a
+    * set of codes for Croatian (Filko+ 2012) and the
     * Czech valence lexicon Vallex. We focused on
   * comparing formal descriptions (ie. Sets of semantic tags) for each
     participatory role and the criteria for their determination
   * range of participatory roles and their formal descriptions are derived from
     the functional generative approach of the Prague Dependency Treebank (PDT,
-    Mikulov et al., 2006)
+    Mikulov+ 2006)
   * our tag set is a simplification of PDT with ideas from FrameNet
 
 # 3 Set of labels and the criteria for their determination
