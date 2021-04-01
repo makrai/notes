@@ -12,8 +12,8 @@ ACL 2020
       of the lack of case/control matching in the most widely-used evaluation
       set of transcripts (DementiaBank), it is unclear if these approaches are
       truly diagnostic, or are sensitive to other variables
-* In this paper, we interrogate neural LMs trained on participants with and
-  without dementia
+* In this paper, we interrogate neural LMs 
+  trained on participants with and without dementia
   using synthetic narratives previously developed to simulate progressive
   semantic dementia by manipulating lexical frequency
 * We find that

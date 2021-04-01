@@ -15,22 +15,22 @@ Language and Cognition, 2014
 
 ## 1.1 the gold standard in natural language processing: human coders
 
-* language ... to make inferences about properties of the human mind
+* language to make inferences about properties of the human mind
   (Freud, 1901; Rorschach, 1964 [1921]; Murray, 1943; Van Dijk & Kintsch, 1977;
   Weber, Hsee, & Sokolowska, 1998; Braun & Clarke, 2006)
 * Based on what someone says, we make judgments about his or her
-  * personality, general knowledge, past, and ... about the value of future
+  * personality, general knowledge, past, and about the value of future
     interactions with the speaker
   * happy or sad, polite or rude, expert or novice
-  * sometimes ... even infer gender, religion, or political orientation
+  * sometimes even infer gender, religion, or political orientation
 
 ## 1.2 user-defined dictionaries
 
-* The most popular example ... in recent years is LIWC (Pennebaker, 2011)
-* categories ... such as leisure, religion, money, or psych processes
+* The most popular example in recent years is LIWC (Pennebaker, 2011)
+* categories such as leisure, religion, money, or psych processes
 * e.g. when people write about
-  * pleasant events ... the positivity category (Kahn+ 2007)
-  * depressed individuals ... negative emotions (Rude+ 2004)
+  * pleasant events the positivity category (Kahn+ 2007)
+  * depressed individuals negative emotions (Rude+ 2004)
   * more surprising associations
     * deceptive texts use words from the motion category (Newman+ 2003)
     * extroverted subjects [use less] causality related words (P & King, 1999)
@@ -38,9 +38,9 @@ Language and Cognition, 2014
   * word count, long words, tense, and function words
   * first person singular pronouns have been associated with negative
     experiences (Rude+ 2004)
-  * extroverted authors ... write longer texts but prefer shorter words and
+  * extroverted authors write longer texts but prefer shorter words and
     less complex language (Pennebaker & King, 1999; Mehl+ 2006)
-* scientists ... to build their own dictionaries
+* scientists to build their own dictionaries
   * Graham, Haidt, and Nosek (2009) [on] the Moral Foundation Theory
     * liberals and conservatives differ in
       what they consider to be part of the moral domain
@@ -76,8 +76,8 @@ Language and Cognition, 2014
     * In naive physics (McCloskey, 1983; DiSessa, 1993)
     * while there is one normatively correct model, there are several
       categories of non-normative models
-* LSA ... for studying change over time
-  * Campbell and Pennebaker (2003) ... were interested in the relationship
+* LSA for studying change over time
+  * Campbell and Pennebaker (2003) were interested in the relationship
     between writing and health
   * they adjusted the LSA procedure to account for [function words]
   * people who showed less diversity in their writing styles were more likely
@@ -86,7 +86,7 @@ Language and Cognition, 2014
   * can reflect flexibility in perspective taking and thus re-evaluation
 * related to LSA is a generative method called Latent Dirichlet Allocation
   * (LDA; Blei, Ng, & Jordan, 2003)
-  * each document ... is composed of a mixture of topics
+  * each document is composed of a mixture of topics
   * While the dimensions of LSA are abstract and meaningless, the
     dimensions in LDA are the latent topics that emerge from the corpus
   * LDA can also be used in a supervised, or semi-supervised, manner
@@ -95,7 +95,7 @@ Language and Cognition, 2014
 
 ### 1.5.1. Semantic role labeling
 
-* it might be ... important to know what this person thinks the particular
+* it might be important to know what this person thinks the particular
   causes behind the process are
 * information about the author of a text separately from the semantic agents
   and patients in the text
@@ -106,7 +106,7 @@ Language and Cognition, 2014
 * Coh-Metrix 13 (Graesser, McNamara, Louwerse, & Cai, 2004)
   * semantic overlap between different parts of the text,
     connections between propositions, causal links, and syntactic complexity
-  * initially ... focused on the readability, coherence, and complexity
+  * initially focused on the readability, coherence, and complexity
   * author identification (McCarthy, Lewis, Dufty, & McNamara, 2006)
   * analysis of political speeches (Venegas, 2012)
   * affective states from transcripts
@@ -115,7 +115,7 @@ Language and Cognition, 2014
 
 ### 1.5.3. Hybrid methods
 
-* For example, Gill+ (2008) studied ... emotional content in blogs
+* For example, Gill+ (2008) studied emotional content in blogs
   * UDD categories correlate well with joy and anger, but
   * word co-occurrence methods were also able to detect fear
 * automated algorithms for building dictionaries
@@ -140,7 +140,7 @@ Language and Cognition, 2014
   * electro-encephalograms (Berger, 1929)
   * fMRI (Ogawa, Lee, Kay, & Tank, 1990) and
   * optical brain imaging (Villringer & Chance, 1997)
-* Recently ... a quantitative change in technology
+* Recently a quantitative change in technology
   * vast amounts of human-related data
     * in analysis-friendly form, such as
       * social network information (Lewis+ 2008; Lerman & Ghosh, 2010)
