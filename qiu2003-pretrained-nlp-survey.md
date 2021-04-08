@@ -198,7 +198,7 @@ arXiv:2003.08271 [cs.CL]
     * sentiment
       * Ke+ [78] integrated sentiment polarity of each word to extend the MLM
         to Label-Aware MLM (LA-MLM)`:` SentiLR, achieves SOTA performance on
-        several sentenceand aspect-level sentiment
+        several sentence~ and aspect-level sentiment tasks
     * SenseBERT (Levine+ [92]) is pre-trained to predict MLM + supersenses
     * entity
       * ERNIE(THU) [199] integrates entity embeddings pre-trained on a

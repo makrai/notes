@@ -18,18 +18,18 @@ ACM Comput Surv 2016
   * s i jkl is the sentiment on aspect a i j of entity e i
   * h k is the opinion holder
   * and t l is the time
-* researchers ... analyzed Twitter data for
+* researchers analyzed Twitter data for
   * making predictions [Bollen+ 2011], sentiment [Go+ 2009],
     emotions [Mohammad 2012], and irony [Reyes+ 2013]
 * challenges
-  * length limitation ... to 140 characters
+  * length limitation to 140 characters
     * recently Twitter announced that it may remove the length limitation
   * textual informalities that are extensively encountered in Twitter
 * oragnization
-  5.2 how tweets can be collected and annotated ... Section 5.2
+  5.2 how tweets can be collected and annotated Section 5.2
   2.3 presents more details for feature selection
   3. presents the various TSA approaches. In the last step, the classifier
-  2.4 evaluation metrics are described on Section
+  2.4 evaluation metrics
 * related work vs we
   * Two long and detailed surveys on SA were presented some time ago
     Pang and Lee [2008] and Liu and Zhang [2012]
@@ -37,18 +37,16 @@ ACM Comput Surv 2016
   * we [include] deep-learning methods based on word embeddings
     [Maas+ 2011; Irsoy and Cardie 2014; Tang+ 2014a]
     * sentence structure
-* Tsytsarau and Palpanas [2012] have also presented a very informative survey on
-  * we
-    * summarize ... the construction of sentiment lexicons for Twitter
-    * present and briefly describe the available evaluation datasets
-    * describe the process of creating own Twitter datasets using Twitter API
-* survey focused on research performed on Twitter ( Martı́nez-Cámara+ 2012)
-  * Martı́nez-Cámara+ discuss a number of different tasks applied on Twitter
-  * only a brief overview of TSA. Also, only a small subset of the described
-* we also summarize the different processes applied to annotate the ... dsets
-* Finally, this survey identifies and discusses some open issues and directions
-
-The rest of the article is organized as follows. Section
+  * Tsytsarau and Palpanas [2012] have also presented a very informative survey
+    * we
+      * summarize the construction of sentiment lexicons for Twitter
+      * present and briefly describe the available evaluation datasets
+      * describe the process of creating own Twitter datasets using Twitter API
+  * survey focused on research performed on Twitter (Martı́nez-Cámara+ 2012)
+    * Martı́nez-Cámara+ discuss a number of different tasks applied on Twitter
+    * only a brief overview of TSA
+  * we also summarize the different processes applied to annotate the dsets
+  * Finally, this survey identifies and discusses some open issues and directons
 
 # 2 Twitter, TSA challenges, and feature selection methods
 
@@ -56,7 +54,7 @@ The rest of the article is organized as follows. Section
 
 ### textual features: semantic, syntactic, stylistic, and Twitter-specific
 
-* Semantic features include ... sentiment lexicons or the semantic concept
+* Semantic features include sentiment lexicons or the semantic concept
   * classif
     * opinion words i.e
        words or phrases that are characterized as indicative of opinion,
@@ -67,11 +65,11 @@ The rest of the article is organized as follows. Section
   * lexicons e.g. SentiWordNet [Esuli and Sebastiani 2006] and
     Multi-perspective Question Answering (MPQA) Opinion Corpus [Wilson+ 2005]
     * usually extended with words that are used in Twitter
-* Syntactic features that ... include n-grams and part-of-speech tags
+* Syntactic features that include n-grams and part-of-speech tags
 * Stylistic features refer to the writing style used in Twitter, whereas
 * unique characteristics of tweets such as retweets or hashtags
 
-### TSA feature selection is based on approaches ...  effective in other domains
+### TSA feature selection is based on approaches  effective in other domains
   * An+ [2014] used the chi-squared measure, which is a common statistical test
   * Kiritchenko+ [2014] used a Pointwise Mutual Information (PMI) measure
     to identify terms that reveal sentiment. Also, a number of researchers
@@ -92,7 +90,7 @@ The rest of the article is organized as follows. Section
 
 ### 3.1.3. Deep Learning 17
 
-* Tang+ [2015a] ... learn semantic representations of user and products,
+* Tang+ [2015a] learn semantic representations of user and products,
 * Tang+ [2015b] used deep learning for review prediction.  Deep learning has
 * for TSA. Tang+ [2014b] proposed to learn sentiment specific word embeddings
   (SSWE) from tweets that were collected using distant supervision
@@ -109,13 +107,13 @@ The rest of the article is organized as follows. Section
 
 * Distant supervision is one alternative to get a large amount of annotated tws
 * Label propagation is another alternative that can reduce the demand
-  * works ... graph-based that leveraged the Twitter social graph
+  * works graph-based that leveraged the Twitter social graph
   * assumption that people influence one another
 * the set of selected features [ is not able to capture ] negation
   [Bengio+ 2013].  To this end, researchers have started recently
 * word embedding methods that allow sentence structure and semantics understand
   [Maas+ 2011; Irsoy and Cardie 2014; Tang+ 2014a]
-* graph-based method ... that exploit the Twitter social graph
+* graph-based method that exploit the Twitter social graph
   and its attributes (i.e., followers, replies, and past tweets of a user)
 
 # 4 fields related to TSA
@@ -127,10 +125,10 @@ The rest of the article is organized as follows. Section
   * created an emotion lexicon that could be used as available source
 * Roberts+ [2012] used the list of the six Ekman’s basic emotions
   (joy, anger, fear, sadness, surprise, disgust) proposed in Ekman [1992]
-  * extended the original list with ... love
+  * extended the original list with love
   * a series of binary SVM emotion classifiers
 * Based on a general purpose emotion lexicon,
-  Sintsova+ [2014] ... detect domain-specific emotional tweets
+  Sintsova+ [2014] detect domain-specific emotional tweets
 * weak labels compared to strong labels on emotion recognition Janssens+ [2014]
 
 # 5 resources

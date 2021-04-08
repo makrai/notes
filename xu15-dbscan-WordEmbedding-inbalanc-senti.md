@@ -37,12 +37,12 @@ Cogn Comput (2015) 7:226–240
     * The sentence vectors are
       * lower in dimension, and thus dense
       * used as the input for oversampling using the SMOTE algorithm
-* evaluated on two datasets. The first dataset is
-  * generated from the Stanford sentiment treebank
+* evaluated on two datasets
+  * one generated from the Stanford sentiment treebank
     containing only polarity labels at the sentence level
-    * We purposely selected an imbalanced subset to evaluate our proposed
+    * We purposely selected an imbalanced subset to evaluate our method
   * the NLPCC2013 Chinese micro-blog data with
-    seven discrete emotion labels at the sentence level.  The
+    seven discrete emotion labels at the sentence level
 * machine learning algorithms we experimented with are the
   Naive Bayes method and the support vector machine (SVM) method. The
   * baseline system uses BOW as features with no sampling. We also test

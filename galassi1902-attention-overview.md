@@ -303,10 +303,10 @@ happens with transfer learning. This setting has been adopted outside the
 
 ## D. Unsupervised Learning With Attention
 
-* exploit attention within purely unsupervised models. We believe this to be a
+* exploit attention within purely unsupervised models
 * He+ [161], attention is exploited in a model for aspect extraction in
   sentiment analysis, with the aim to remove words that are irrelevant for the
-  sentiment and to ensure more coherence of the predicted aspects. In work by
+  sentiment and to ensure more coherence of the predicted aspects
 * Zhang and Wu [162]
   * attention is used within autoencoders in a question-retrieval task
   * main idea is to generate semantic representations of questions, and

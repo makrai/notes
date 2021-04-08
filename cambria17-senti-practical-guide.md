@@ -2,7 +2,7 @@ E Cambria, D Das, S Bandyopadhyay, A Feraco
 A practical guide to sentiment analysis
 2017 Springer [BOOK]
 
-# 1 state of the art of affective computing and sentiment analysis research
+# 1 SOTA of affective computing and sentiment analysis research
 
 * deep learning techniques and linguistic patterns
 * different modalities, e.g., text and video
@@ -29,6 +29,8 @@ A practical guide to sentiment analysis
 
 # 8 deception detection and opinion spam detection (P Rosso and L Cagnina)
 
-# 9 integration of commonsense reasoning resources (Federica Bisio et al.)
+* Opinion Spam refers to fake reviews
+
+# 9 integration of commonsense reasoning resources (Bisio, Meda, Gastaldo+)
 
 * e.g., by embedding a concept-level knowledge base for sentiment analysis

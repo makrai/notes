@@ -1,6 +1,6 @@
 Minglei Li, Qin Lu, Yunfei Long, and Lin Gui
 Inferring Affective Meanings of Words from Word Embedding
-Journal of IEEE transactions on affective computing (under review)
+Journal of IEEE transactions on affective computing 2017 (under review)
 
 extended lexicons are publicly available for access
 
@@ -26,9 +26,10 @@ extended lexicons are publicly available for access
   * analysis of consumer opinions on a company’s products [2],
   * recommendation systems for movies, books, music or pictures
     based on user’s emotions [3],
-  * detection of ... suicide risks based on social media [4],
+  * detection of suicide risks based on social media [4],
   * stock market prediction based on public opinions [5],
-  * product aspect extraction [6], sarcasm detection [7],
+  * product aspect extraction [6],
+  * sarcasm detection [7],
   * personality detection [8],
   * intelligent human-computer interaction systems
     that can express and detect the affective states of human beings [9], etc
@@ -42,11 +43,11 @@ extended lexicons are publicly available for access
       Emotions in text: dimensional and categorical models,”
       Computational Intelligence 2013
 * Affective Control Theory (ACT),
-  * affective meaning [of each concept in an event is] context dependent
+  * affective meaning of each concept in an event is context dependent
     (in addition to cultural, behavior and other background information [16])
-  * Multi-dimensional models allow for more interaction [in] a sequence
+  * Multi-dimensional models allow for more interaction in a sequence
     * more context information can be included in affective computing of text
-* resources are limited because [they] are based on manual annotation, such as
+* resources are limited because they are based on manual annotation, such as
   * ANEW lexicon of VAD based on manual annotation [17],
   * extended ANEW lexicon based on crowdsourcing [18],
   * Chinese valence-arousal lexicon based on manual annotation [19],
@@ -59,15 +60,15 @@ extended lexicons are publicly available for access
   2. the linear regression weighted on the the semantic similarity between a
      target word and the seed words [23], which is
      limited by the accuracy of the semantic similarity
-* We [infer] sentiment, valence, arousal, dominance, evaluation, potency,
+* We infer sentiment, valence, arousal, dominance, evaluation, potency,
   activity, imagery, and also
   other meanings including perceptual sense of words, concreteness of words
 * Evaluations show that
   1. SOTA on several affective lexicons
   1. rating scale insensitive, i.e. not require the rating range to be bipolar
-  1. computationally more efficient than ... propagation based methods
+  1. computationally more efficient than propagation based methods
   1. Several affective lexicons with about million of words are built and
-    * lexicons based on word embedding perform better than previous [ones]
+    * lexicons based on word embedding perform better than previous ones
 
 # 2 Related works 2
 
@@ -122,7 +123,7 @@ extended lexicons are publicly available for access
       * text corpus based on the cosine similarity of words [48], Word embedding
         * PageRank algorithm is employed to infer VA [20]
         * to infer sentiment polarities [43]
-* map [word] vector to some sentiment value or categories based on a regression
+* map word vector to some sentiment value or categories based on a regression
   model or a classifier
   1. representing words by manual defined features based on some knowledge base
      and performing linear regression on the features [22]

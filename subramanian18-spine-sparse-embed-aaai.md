@@ -149,8 +149,8 @@ https://github.com/harsh19/SPINE
 
 * tasks
   * sentiment analysis
-    * This task tests the semantic properties of word embeddings. It is a
-    * sentence-level binary classification task on the
+    * This task tests the semantic properties of word embeddings
+    * sentence-level binary classification
     * Stanford Sentiment Treebank dataset (Socher+ 2013)
     * only the non-neutral labels
   * news classification each task: categorizing a document to two categories

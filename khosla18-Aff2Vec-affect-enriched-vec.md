@@ -1,18 +1,18 @@
-Sopan Khosla, Niyati Chhaya and Kushal Chawla
+Sopan Khosla, Niyati Chhaya, and Kushal Chawla
 Aff2Vec: Affect–Enriched Distributional Word Representations
-arXiv:1805.07966v1 [cs.CL] 21 May 2018
+arXiv:1805.07966v1 cs.CL 21 May 2018
 
 # Abstract
 
 * affective word distributions in not well studied
 * Aff2Vec outperforms
   * the SOTA in intrinsic word-similarity tasks
-  * baseline embeddings [and, in some sub-tasks, the SOTA]
+  * baseline embeddings and, in some sub-tasks, the SOTA
     in sentiment analysis, personality detection, and frustration prediction
 
 # 1 Intro
 
-* Historically, affective computing [used] multi-modal data gathered through
+* Historically, affective computing used multi-modal data gathered through
   various sensors
 * Word correlation with social and psychological processes
   * Pennebaker (2011)
@@ -47,7 +47,7 @@ arXiv:1805.07966v1 [cs.CL] 21 May 2018
   1. Normalize word vector W and affect vector A using their L2-Norms
   2. Concatenate the regularized word vectors x i with regularized affect
   3. Standardize (1 variance, 0 mean) the D + F dimensional embeddings
-  4. The enriched space W A is then [PCA-ed] to original D dimensional vector
+  4. The enriched space W A is then PCA-ed to original D dimensional vector
 
 ## 3.2 Affect-STRENGTH
 
@@ -64,7 +64,7 @@ where
   max dist f is defined as the maximum possible distance between two vectors in
   f th dimension (= 9.0 − 1.0 = 8.0 for VAD dimensions)
 
-### Affect-iStrength:
+### Affect-iStrength
 
 * Here, each dimension is treated individually
 * For every dimension f in A, we add an edge between neighbors in the Ontology Ω
@@ -81,7 +81,7 @@ where
 
 ## 5.2 Extrinsic Evaluation
 
-* performance of word embeddings on [intrinsic] benchmarks does not reflect
+* performance of word embeddings on intrinsic benchmarks does not reflect
   directly into the downstream tasks
   (Chiu+ 2016, Gladkova and Drozd, 2016; Batchkarov+ 2016) suggest that
 
@@ -101,28 +101,28 @@ where
     results as baseline and report the performance of Aff2Vec on their default
     implementation 9
 
-### Sentiment Analysis: The Stanford Sentiment Treebank (SST) (Socher+ 2013)
+### Sentiment Analysis: The Stanford Sentiment Treebank (SST, Socher+ 2013)
 
-* We report the performance on a Deep Averaging Network (DAN) 10 (Iyyer+ 2015)
+* We report the performance on a Deep Averaging Network (DAN, Iyyer+ 2015)
   with default parameters on the SST dataset and compare against refined
 * Implementation by Yu+ (2017) is used for the refined embeddings
 
-### Emotion Intensity Task (WASSA):
+### Emotion Intensity Task (WASSA)
 
 * WASSA shared task on emotion intensity (Mohammad and Bravo-Marquez, 2017)
   (anger, fear, joy, or sadness) in a tweet
-* intensity score can be seen as [that] of the author or as felt by the reader
+* intensity score can be seen as that of the author or as felt by the reader
 * We train a BiLSTM-CNN–based model for this regression task with embedding
 
 ## 5.3 Qualitative Evaluation: Noise@k
 
 * measures that capture noise in the neighborhood of a word
-* Polarity-Noise@k (PN@k) (Yu+ 2017) calculates the number of top k nearest
+* Polarity-Noise@k (PN@k, Yu+ 2017) calculates the number of top k nearest
   neighbors of a word with opposite polarity for the affect dimension under
   consideration
 * Granular-Noise@k (GN@k) captures the average difference between a word and
   its top k nearest neighbors for a particular affect dimension (f)
-  This is done for each word in the affect lexicon
+  * This is done for each word in the affect lexicon
 
 # 6 Results
 
@@ -132,12 +132,12 @@ where
   * Amongst AffectAPPEND and Affect-STRENGTH, Affect-APPEND out performs the
     rest in most cases for GloVe and Word2vec
 * Extrinsic tasks are reported in Table 5. We report the performance for GloVe
-  * FFP-Prediction, Affect-APPEND [is the best] for Frustration and Politeness
+  * FFP-Prediction, Affect-APPEND is the best for Frustration and Politeness
   * personality detection, Affect-APPEND variants for NEU, AGR, and OPEN
-* Sentiment Analysis(SA) task shows that Affect-APPEND variants report highest
-* WASSA-EmoInt task.  Affect-APPEND and retrofit variants out perform
+* Sentiment Analysis (SA) task shows that Affect-APPEND variants report highest
+* WASSA-EmoInt task.  Affect-APPEND and retrofit variants outperform
 * Qualitative Evaluation: Polarity-Noise@10 and Granular-Noise@10
-  * Affect- APPEND report the lowest noise for both cases. This shows that the
+  * Affect-APPEND report the lowest noise for both cases
   * rate of change of noise with varying k provides insights into (1) how
 
 # 7 Discussion on the distributional word representations

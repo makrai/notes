@@ -27,7 +27,7 @@ https://github.com/facebook/Conditional-character-based-RNN
     * scale to very large corpus (Agarwal+ 2014)
 * we
   * linear models with a rank constraint and a fast loss approximation
-  * evaluate the quality of our approach fastText 1 on two different tasks,
+  * evaluate the quality of our approach fastText on two different tasks,
     * tag prediction and sentiment analysis
 
 # 2 Model architecture

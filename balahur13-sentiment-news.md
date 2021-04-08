@@ -1,20 +1,21 @@
 Sentiment Analysis in the News
 A Balahur, R Steinberger, M Kabadjov, V Zavarella, E van der Goot, M Halkia, B
   Pouliquen, J Belyaeva
+2013
 
 # Abstract
 
 * difference
   * highly subjective text types (movie or product reviews)
     * target is clearly defined and unique across the text
-  * news opinion mining is different from that of other text types.  We
+  * news opinion mining is different from that of other text types
     * three subtasks that need to be addressed:
       * definition of the target;
       * separation of the good and bad news content from the good and bad
         sentiment expressed on the target; and
       * analysis of clearly marked opinion that is expressed explicitly, not
         needing interpretation or the use of world knowledge
-  * three ... views on newspaper articles –
+  * three views on newspaper articles
     * author, reader and text, which have to be addressed differently at the
       time of analysing sentiment.  Given these definitions, we present work on
       mining opinions about entities in English language news, in which (a)

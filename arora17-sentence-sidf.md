@@ -9,11 +9,11 @@ ICLR 2017
   then modify them a bit using PCA/SVD
 * improves performance by about 10% to 30% in textual similarity tasks, and
   beats sophisticated supervised methods
-  including RNN’s and LSTM’s [and] Wieting+ (ICLR 16)
+  including RNN’s and LSTM’s and Wieting+ (ICLR 16)
 * theoretical explanation using a latent variable generative model
   * a simple extension of the model in Arora+ (TACL’16)
     with new “smoothing” terms that allow for words occurring out of context,
-    as well as high probabilities for [function] words in all contexts
+    as well as high probabilities for function words in all contexts
 
 # 1 Intro
 
@@ -42,14 +42,14 @@ ICLR 2017
     including some RNN and LSTM models
   * well-suited for domain adaptation settings
 * highly reminiscent of TF-IDF (Sparck Jones, 1972; Robertson, 2004)
-  if one treats a “sentence” as a “document” and make[s]
+  if one treats a “sentence” as a “document” and makes
   the assumption that the sentence doesn’t typically contain repeated words
-  * related idea [is] removing frequent words from the vocabulary
+  * related idea is removing frequent words from the vocabulary
 * theoretical justification for the reweighting using a generative model
   * simple modification for the Random Walk on Discourses model (Arora+ 2016)
-  * modif[ication] motivated by [that
+  * modification motivated by [that
     word embedding methods give] large vectors to frequent words
-* [anisotropy]
+* anisotropy
   * most word embedding methods seek to capture word cooccurence probs
   * end up giving
     * large vectors to frequent words, as well as giving
@@ -68,12 +68,12 @@ ICLR 2017
 ## Word embeddings
 
 * two approaches
-  * from neural network[s] or by low rank approximation of co-occurrence stats
+  * from neural networks or by low rank approximation of co-occurrence stats
   * closely related
     * Levy & Goldberg, 2014
     * Hashimoto+ 2016 Word embeddings as metric recovery in semantic spaces
     * Arora+ 2016 A latent variable model approach to PMI-based word embeddings
-      * [the sentence vector in this paper] can be seen as approximate
+      * the sentence vector in this paper can be seen as approximate
         inference of the latent variables in their generative model
 
 ## Phrase/Sentence/Paragraph embeddings
@@ -85,7 +85,7 @@ ICLR 2017
 * recursive neural networks (RNNs) defined on the parse tree
   * with supervision (Socher+ 2011) or
   * without (Socher+ 2014)
-* RNNs [For example, the skip-gram model] is extended
+* RNNs For example, the skip-gram model is extended
 * In Le & Mikolov, (2014) each paragraph have a latent paragraph vector,
   which influences the distribution of the words in the paragraph
 * Skip-thought (Kiros+ 2015) tries to reconstruct the surrounding sentences
@@ -104,12 +104,12 @@ ICLR 2017
   * sentence embedding as a MAP estimate of the discourse vectors
   * the MAP estimate of `c_s` is —up to multiplication by scalar—
     the average of the embeddings of the words in the sentence
-* we [add] two types of “smoothing term[s]”
-  * [to account for that some frequent] words occur out of context
+* we add two types of “smoothing terms”
+  * to account for that some frequent words occur out of context
   * an additive term αp(w) in the log-linear model
-  * a common discourse vector `c_0 ∈ R^d` [for function words]
-* The sentence embedding will be [the max likelihood estimate for] `c_s`
-  * [which] is approximately a weighted average of the vectors of the words
+  * a common discourse vector `c_0 ∈ R^d` for function words
+* The sentence embedding will be the max likelihood estimate for `c_s`
+  * which is approximately a weighted average of the vectors of the words
   * To estimate `c_s`, we estimate the direction `c_0`
     by computing the first principal component of `c̃_s`s for a set of sentences
     * without centralizing c̃ s
@@ -125,7 +125,7 @@ ICLR 2017
   * learns more regular word representations.  Here we explain that this
   * corresponds to an implicit reweighting of the word vectors in the model and
     therefore the statistical benefit should be of no surprise
-* without the sub-sampling trick, the update direction is [a] (very) biased
+* without the sub-sampling trick, the update direction is a (very) biased
   estimator of the gradient
 * the weighting q(w_i) closely tracks our weighting scheme a/(a + p(w)) when
   using parameter a = 10 −4 ; see Figure 1 for an illustration
@@ -175,11 +175,11 @@ ICLR 2017
   * SN vectors are trained on the enwiki dataset (Wikimedia, 2012) using the
     method in (Arora+ 2016), while
 * Best performance occurs from a = 10^-3 to a = 10^-4
-* performance is almost the same for all four settings [of p(w)]
+* performance is almost the same for all four settings of p(w)
 * our method can be applied on different types of word vectors
-  trained on different corpora also suggests [the]
-  [method] should be useful across different domains
-  * important for [semi-]supervised methods
+  trained on different corpora also suggests the
+  method should be useful across different domains
+  * important for semi-supervised methods
     * the unlabeled data available may be collected in a different domain
 
 ## 4.2 Supervised tasks
@@ -200,10 +200,10 @@ ICLR 2017
 
 * The advantage is not as significant as in the textual similarity tasks
 * our method doesn’t outperform RNN’s and LSTM’s for sentiment tasks because
-  1. the distributional hypothesis [has] limitations for capturing sentiment
+  1. the distributional hypothesis has limitations for capturing sentiment
     * the “antonym problem”,
     * better word embeddings for sentiment analysis (Maas+ 2011)
-  2. [we downweight] words like “not” that may be important for sentiment
+  2. we downweight words like “not” that may be important for sentiment
     * design weighting scheme (or learn weights) for this specific task
 
 ## 4.3 The effect of the order of words in sentences
