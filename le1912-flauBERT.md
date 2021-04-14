@@ -74,10 +74,40 @@ are shared to the research community for further reproducible experiments
 * Amazon reviews for three product categories: books, DVD, and music in
 * four languages: English, French, German, and Japanese. Each sample contains a
 * rating from 1 to 5 stars
-  * Following Blitzer+ (2006) and Prettenhofer and Stein (2010), ratings with 3
-    stars are removed.  Positive reviews have ratings higher than 3 and negative
-    reviews are those rated lower than 3. There is one train and test set for
-    each product category.  The
+  * Following Blitzer+ (2006) and Prettenhofer and Stein (2010), 
+  * ratings with 3 stars are removed.  
+    Positive reviews: ratings higher than 3 and negative reviews are those < 3
+  * train and test set for each product category
   * train and test sets are balanced, including around 1 000 positive and 1 000
-* We take the French portion to create the binary text classification task in
+* We take the French portion to create the binary text classification task
   * report the accuracy on the test set
+
+# 5. Experiments and Results
+
+* We compare the performance of FlauBERT with 
+  * Multilingual BERT (Devlin+ 2019, mBERT) and 
+  * CamemBERT (Martin+ 2019) on all tasks. In addition, for each task we also
+  * the best non-BERT model for comparison. We made use of the open source
+
+## 5.1. Text Classification
+
+### Model description We followed the standard fine-tuning process of BERT
+
+* input is a degenerate text-∅ pair. The 
+* classification head is composed of the following layers, in order: dropout,
+  linear, tanh ac- tivation, dropout, and linear. The output dimensions of the
+  linear layers are respectively equal to the hidden size of the Transformer and
+  the number of classes (which is 2 in this case as the task is binary classif).
+  The dropout rate was set to 0.1.  
+* 30 epochs using a batch size of 16 while performing a 
+  grid search over 4 different learning rates: 1e−5, 5e−5, 1e−6, and 5e−6. 
+  * A random split of 20% of the training data was used as validation set, and
+
+### Results 
+
+* both CamemBERT and FlauBERT outperform mBERT by a large margin. 
+* FlauBERT 
+  * BASE performs moderately better than CamemBERT in the books dataset, while
+    its results on the two remaining datasets of DVD and music are lower than
+    those of CamemBERT. FlauBERT 
+  * LARGE achieves the best results in all categories.

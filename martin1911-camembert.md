@@ -1,5 +1,5 @@
 CamemBERT: a Tasty French Language Model
-Louis Martin, Benjamin Muller, Pedro Javier Ortiz Suárez, Yoann Dupont, Laurent Romary, Éric Villemonte de la Clergerie, Djamé Seddah, Benoît Sagot
+L Martin, B Muller, P Suárez, Y Dupont, L Romary, É Clergerie, D Seddah, B Sagot
 ACL 2020 arXiv:1911.03894 [cs.CL]
 
 freely available and distributed with the MIT license via popular NLP libraries
