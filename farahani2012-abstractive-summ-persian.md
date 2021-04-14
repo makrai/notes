@@ -1,4 +1,4 @@
-Leveraging ParsBERT and Pretrained mT5 for Persian Abstractive Text Summarization
+Leveraging ParsBERT and Pretrained mT5 for Persian Abstractive Text Summarizaton
 Mehrdad Farahani, Mohammad Gharachorloo, Mohammad Manthouri
 CSICC 2021 arXiv:2012.11204 [cs.CL]
 
@@ -20,10 +20,10 @@ CSICC 2021 arXiv:2012.11204 [cs.CL]
       * sentence scores are determined by computing certain features such as the
         ordinal position of sentences concerning one another, length of the
         sentence, a ratio of nouns, etc. After sentences are ranked, the top n
-    * Abstractive summarization by generating new sentences with words that are
-      not necessarily found in the original text
-    * Persian language: almost all works are extractive. This is partly due to
-      the lack of proper Persian text datasets available for this task
+    * Abstractive summarization by generating new sentences
+      with words that are not necessarily found in the original text
+    * Persian language: almost all works are extractive. This is
+      * partly due to the lack of proper Persian text datasets for this task
 * based on Sequence-to-Sequence (Seq2Seq) structures as text summarization can
   * [9] Piji Li, Wai Lam, Lidong Bing, and Z Wang
     Deep recurrent generative decoder for abstractive text summarization
@@ -38,7 +38,7 @@ CSICC 2021 arXiv:2012.11204 [cs.CL]
   * [12] A See, Peter J Liu, and Christopher D Manning
     Get to the point: Summarization with pointer-generator networks
     ArXiv, abs/1704.04368, 2017
-   * [13] Wei Li, X Xiao, Yajuan Lyu, and Yuanzhuo Wang
+  * [13] Wei Li, X Xiao, Yajuan Lyu, and Yuanzhuo Wang
     Improving neural abstractive document summarization
       with explicit information selection modeling
     In EMNLP, 2018
@@ -48,15 +48,15 @@ CSICC 2021 arXiv:2012.11204 [cs.CL]
     * lightweight fine-tuning phase by employing transfer learning benefits
 * BERT [14], and T5 [15] are amongst widely used pre-trained language models
   * BERT uses a Masked Language Model (MLM) and an encoder-decoder stack to
-    perform joint conditioning on the left and right context
+    * joint conditioning on the left and right context
 * T5, is a unified Seq2Seq framework that employs Text-to-Text format to
   address NLP text-based problems
   * multilingual variation of the T5 model is called mT5 [16] that covers
     * 101 different languages and is trained on a Common Crawl-based dataset
-* BERT model also has a 
-  * multilingual version. However, there are 
+* BERT model also has a
+  * multilingual version
   * numerous monolingual variations of this model [17,18] that have shown to
-    outperform the multilingual version on various NLP tasks. 
+    outperform the multilingual version on various NLP tasks
   * For Persian, the ParsBERT model [19] has shown SOTA on many Persian NLP
     tasks such as Named Entity Recognition (NER) and Sentiment Analysis
 * contributions:

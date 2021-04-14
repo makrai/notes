@@ -82,9 +82,8 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 ## 3.1 Abstractive Summarization
 
 * We fine-tune UniLM as a sequence-to-sequence model following the procedure
-  described in Section 2.5 by concatenating document (the first segment) and
-  summary (the second segment) as input which is truncated to a pre-defined
-  maximum length
+  described in Section 2.5 by concatenating document and summary as input
+  * truncated to a pre-defined maximum length
 * We use the F1 version of ROUGE [25] as the evaluation metric for both datasets
   * Table 3: UniLM against the baseline and several SOTA models on CNN/DailyMail
   * LEAD-3 is a baseline model that extracts the first three sentences

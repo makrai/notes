@@ -9,7 +9,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 * multi-lingual text summarization: input in multiple languages and 
   summaries in the corresponding languages with a single model
 * we present MultiSumm, a novel multi-lingual model for abstractive summarizaton
-  * training regime i.e. two stages
+  * training: two stages
     * multi-lingual learning that contains
       LM training, auto-encoder training, translation and back-translation
     * joint summary generation training
@@ -26,14 +26,14 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 * sequence-to-sequence model for abstractive summarization
   * single, resource-rich language such as
     * English (Tan, Wan, and Xiao 2017; Lin+ 2018) and
-    * Chinese (Wang+ 2018; Wei+ 2019). However, training a monolingual model for
+    * Chinese (Wang+ 2018; Wei+ 2019)
 * building a unified multi-lingual model
   to leverage existing large-scale monolingual summarization corpora in rich-rsc
-* Previous work on multi-lingual text summarization mainly focus on directly
-  mixing training data from different languages, and training with a 
-  unified model that does not include modules handling multilingualism
-  (Litvak, Last, and Friedman 2010; Vanetik and Litvak 2015; Litvak+ 2016;
-  Litvak and Vanetik 2019)
+* Previous work on multi-lingual text summarization mainly focus on 
+  * directly mixing training data from different languages, and training with a
+    unified model that does not include modules handling multilingualism
+    (Litvak, Last, and Friedman 2010; Vanetik and Litvak 2015; Litvak+ 2016;
+    Litvak and Vanetik 2019)
   * mostly based on
     traditional machine learning techniques or integer linear programming, which
     can only handle a small number of training samples

@@ -192,8 +192,7 @@ https://github.com/Yale-LILY/SummEval
 * CIDEr (Vedantam+ 2015) computes {1-4}gram co-occurrences between the candidate
   and reference texts, down-weighting common n-grams and calculating
   cosine similarity between the ngrams of the candidate and reference texts
-* Data Statistics: Grusky+ (2018) define three measures of the extractiveness of
-  a dataset
+* Data Statistics: Grusky+ (2018) define three measures of the extractiveness
   * Extractive fragment coverage is
     * the percentage of words in the summary that are from the source article,
       measuring the extent to which a summary is a derivative of a text
@@ -343,7 +342,7 @@ https://github.com/Yale-LILY/SummEval
 * The summary should include only important information from the source doc
 * Annotators were instructed to penalize too long or redundant summaries
 
-### *
+### Annotation protocol
 
 * The data collection interface provided judges with the
   source article and associated summaries grouped in sets of 5

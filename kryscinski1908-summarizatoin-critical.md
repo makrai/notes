@@ -49,4 +49,4 @@ EMNLP 2019
   reflects human judgments only weakly while also
   failing to evaluate critical features (e.g. factual correctness)
 * future research directions
-  * datasets, models less fit to a particular domain bias, and evaluation metrics
+  * datasets, models less fit to a particular domain bias, & evaluation metrics

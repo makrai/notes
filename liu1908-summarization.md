@@ -27,7 +27,7 @@ code is available at https://github.com/nlpyang/PreSumm
 
 * extractive summarization is often defined as a binary classification task
   with labels indicating whether a text span (typ sentence) should be included
-* Our
+* Our models
   * extractive model is built on top of this encoder by stacking several inter-
     sentence Transformer layers to capture document-level features
   * abstractive model adopts an encoder-decoder architecture,
@@ -124,7 +124,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * can make fine-tuning unstable;
     for example, the encoder might overfit the data while the decoder underfits,
     or vice versa.  To circumvent this,
-* we design a new fine-tuning schedule which 
+* we design a new fine-tuning schedule which
   separates the optimizers of the encoder and the decoder
   * the pretrained encoder should be fine-tuned with a smaller learning rate and
     smoother decay (so that the encoder can be trained with more accurate
@@ -143,24 +143,24 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 4.1 Summarization Datasets
 
-* We evaluated our model on three benchmark datasets, namely the
+* We evaluated our model on three benchmark datasets
   * CNN/DailyMail and NYT are somewhat extractive, while XSum is highly abstract
   * CNN/DailyMail news highlights dataset (Hermann+ 2015), the
   * New York Times Annotated Corpus (NYT; Sandhaus 2008), and
   * XSum (Narayan+ 2018a)
-  * These datasets represent different summary
+  * These datasets represent different
     * styles ranging from highlights to very brief one sentence summaries
     * rewriting operations: cut and paste operations vs genuinely abstractive
-  * Table 1 presents statistics on these datasets (test set); 
+  * Table 1 presents statistics on these datasets (test set);
     * example (gold-standard) summaries are provided in the supplementary materl
 * CNN/DailyMail contains news articles and associated highlights, i.e., a few
   bullet points giving a brief overview of the article
   * Input documents were truncated to 512 tokens
 * NYT contains 110,540 articles with abstractive summaries
   * Following Durrett+ (2016), we
-    * split these into 100,834/9,706 training/test examples, based on the date
-      of publication (test from January 1, 2007) We used 4,000 examples from the
-      training as validation set.  We also followed their
+    * split these into 100,834/9,706 training/test examples,
+      based on the date of publication (test from January 1, 2007) We used
+      * 4,000 examples from the training as validation set.  We also followed
     * filtering documents with summaries less than 50 words
     * filtered test set (NYT50) includes 3,452 examples
     * Input documents were truncated to 800 tokens
@@ -177,31 +177,31 @@ code is available at https://github.com/nlpyang/PreSumm
 
 ## 4.2 Implementation Details
 
-* PyTorch, OpenNMT (Klein+ 2017) and the ‘bert-base-uncased’ 2 version of Bert
+* PyTorch, OpenNMT (Klein+ 2017) and the ‘bert-base-uncased’
 
 # 5 Results 6
 
 ## 5.1 Automatic Evaluation
 
 * Table 2 summarizes our results on the CNN/DailyMail dataset
-  * Bert-based models outperform the Lead-3 baseline which is not a 
+  * Bert-based models outperform the Lead-3 baseline
   * Bert models collectively outperform all previously proposed extractive and
-    abstractive systems, only falling
+    abstractive systems
   * BertSumExt performs best which is not entirely surprising;
-    CNN/DailyMail summaries are somewhat extractive and 
-    even abstractive models are prone to copying sentences 
+    CNN/DailyMail summaries are somewhat extractive and
+    even abstractive models are prone to copying sentences
     when trained on this dataset (See+ 2017)
   * larger versions of Bert lead to performance improvements and
     * interval embeddings bring only slight gains
 * Table 3 presents results on the NYT dataset
   * we use limited-length ROUGE Recall
-    * Following the evaluation protocol in Durrett+ (2016), 
-    * predicted summaries are truncated to the length of the gold summaries.
-      Again, we report the performance of the Oracle upper bound and
-  * second block in the table contains 
+    * Following the evaluation protocol in Durrett+ (2016),
+    * predicted summaries are truncated to the length of the gold summaries
+      Again, we report the performance of the Oracle upper bound
+  * second block in the table contains
     previously proposed extractive models as well as our own Transformer baselin
-    * ComPress (Durrett+ 2016) is an ILP-based model which 
-      combines compression and anaphoricity constraints.  The 
+    * ComPress (Durrett+ 2016) is an ILP-based model which
+      combines compression and anaphoricity constraints
   * third block includes abstractive models from the literature, and our
     Transformer baseline
   * Bert-based models outperform previously proposed approaches
@@ -226,7 +226,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * CNN/DailyMail dataset, the proportion of novel n-grams in automatically
     generated summaries is much lower compared to reference summaries, but in
   * XSum, this gap is much smaller
-* The supplementary material includes 
+* The supplementary material includes
   examples of system output and additional ablation studies
 
 ## 5.3 Human Evaluation 8
@@ -239,7 +239,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * Participants are then asked to answer these questions by reading system
     summaries alone without access to the article
 * overall quality of the summaries produced by abstractive systems
-* Best-Worst Scaling (Kiritchenko and Mohammad, 2017) method 
+* Best-Worst Scaling (Kiritchenko and Mohammad, 2017) method
   * participants presented with the output of two systems (and the original doc)
   * criteria of Informativeness, Fluency, and Succinctness
 * Both types of evaluation were conducted on the Amazon Mechanical Turk platform

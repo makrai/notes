@@ -9,7 +9,7 @@ https://github.com/recitalAI/MLSUM
   * Together with English newspapers from the popular CNN/Daily mail dataset,
 * cross-lingual comparative analyses based on SOTA systems
 * highlight existing biases which motivate the use of a multi-lingual dataset
-* strong baselines from multilingual abstractive text generation models;
+* strong baselines from multilingual abstractive text generation models
 * cross-lingual analysis of the results obtained by different approaches
 
 # 1 Intro
@@ -188,13 +188,13 @@ https://github.com/recitalAI/MLSUM
 * For each language, we selected an online newspaper which met the following
   1. generalist: ensuring that a broad range of topics is represented
     * minimize the risk of training topic-specific models
-  2. Having a large number of articles in their public online archive
+  2. a large number of articles in their public online archive
   3. Providing human written highlights/summaries for the articles
     that can be extracted from the HTML code of the web page
 * filter: all the articles shorter than 50 words or summaries shorter than 10
   * to avoid articles containing mostly audiovisual content
 * we provide recommended train/validation/test splits following a chronological
-  * from 2010 to 2018, included, for training; data for
+  * from 2010 to 2018, included, for training
   * 2019 (~10% of the dataset) for validation (up to May 2019) and
   * test (May-December 2019)
   * challeng[able], due to the possible emergence of new topics over time
@@ -289,7 +289,7 @@ https://github.com/recitalAI/MLSUM
 * often reported in summarization papers (See+ 2017; Dong+ 2019) in addition to
   ROUGE
 
-### Novelty
+### Novelt n-grams
 
 * Because of their use of copy mechanisms, some abstractive models have been
   reported to rely too much on extraction (See+ 2017; Kryściński+ 2018)
@@ -394,10 +394,10 @@ https://github.com/recitalAI/MLSUM
 * In Figure 3, we plot the improvement rate
   from TextRank to Oracle, against that of Pointer-Generator to M-BERT
 * correlation emerging from the plot, the hypothesis appears to hold true
-  for all languages, including Russian – not plotted for scaling reasons (x =
-  808; y = 40), with the
-  exception of English. This exception is
-  * probably due to the aforementioned bias of TextRank towards the English
+  for all languages, 
+  * including Russian – not plotted for scaling reasons (x = 808; y = 40), with
+  * exception of English
+    * probably due to the aforementioned bias of TextRank towards the English
 
 ### Pointer Generator and M-BERT
 
