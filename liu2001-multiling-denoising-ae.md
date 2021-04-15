@@ -190,6 +190,8 @@ from pre-training? Tables 2 and 3 show that
     utterances. It is also closely related to
   * Conneau+ (2018); Artetxe+ (2019): cross-lingual representation learning
 
+## 2.1 Data: CC25 corpus
+
 # 7 Conclusion
 
 * future work, we will scale-up the current pre-training to
