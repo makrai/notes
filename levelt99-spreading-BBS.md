@@ -1,6 +1,6 @@
-BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 A theory of lexical access in speech production
 Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
+BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
 #Abstract
 
@@ -230,8 +230,8 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 
 ##3.2.4. Relations to the speech perception network
 
-* traditionally been an important issue in speech and language processing (see
-  Liberman 1996): Are words produced and perceived by the same mechanism?
+* traditionally an important issue in speech and language processing
+  (Liberman 1996): Are words produced and perceived by the same mechanism?
 * feedforward assumption for our form stratum implies that form perception and
   production cannot be achieved by the same network
 * some technical, though realistic, assumptions about the way in which
