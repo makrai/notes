@@ -18,9 +18,9 @@ The dataset is available at http://github.com/ivri/DiffVec
 
 # 1 Intro
 
-* lexical relations is a fundamental task in ... many NLP applications
-  including paraphrasing and generation, machine translation, and ontology
-  building (Banko+ 2007; Hendrickx+ 2010)
+* lexical relations is a fundamental task in many NLP applications including
+  paraphrasing and generation, machine translation, and ontology building
+  (Banko+ 2007; Hendrickx+ 2010)
 * relational similarity prediction (Turney, 2006),
 * we introduce a new, larger _dataset_ covering many well-known lexical
   relation types from the linguistics and cognitive science literature
@@ -33,7 +33,7 @@ The dataset is available at http://github.com/ivri/DiffVec
     * remarkably high accuracy in a closed-world setting (over a predefined
       set of word pairs, each of which corresponds to a lexical relation in
       the training data). When we move to an
-    * open-world setting including random word pairs ... the results are poor
+    * open-world setting including random word pairs the results are poor
       We then investigate methods for better attuning the learned class
       representation to the lexical relations, focusing on methods for
       automatically synthesising _negative instances_. We find that this
@@ -48,8 +48,7 @@ The dataset is available at http://github.com/ivri/DiffVec
   * also known as unsupervised relation extraction,
   * the relations themselves are also learned from the text (e.g. in the form
     of text labels)
-* shared tasks
-  (Girju+ 2007; Hendrickx+ 2010; Jurgens+ 2012)
+* shared tasks (Girju+ 2007; Hendrickx+ 2010; Jurgens+ 2012)
 * Distributional word vectors have been used for detection of relations
   * hypernymy (Geffet and Dagan, 2005; Kotlerman+ 2010; Lenci and
     Benotto, 2012; Weeds+ 2014; Rimell, 2014; Santus+ 2014) and
