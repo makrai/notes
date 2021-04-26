@@ -16,6 +16,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * different optimizers for the encoder and the decoder
     as a means of alleviating the mismatch between the two
     (the former is pretrained while the latter is not)
+    * the encoder fine-tuned with a smaller learning rate and smoother decay
   * two-staged fine-tuning approach can further boost the quality
     * motivated by that the combination of extractive and abstractive
       objectives can help generate better summaries (Gehrmann+ 2018)
@@ -160,7 +161,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * Following Durrett+ (2016), we
     * split these into 100,834/9,706 training/test examples,
       based on the date of publication (test from January 1, 2007) We used
-      * 4,000 examples from the training as validation set.  We also followed
+      * 4,000 examples from the training as validation set
     * filtering documents with summaries less than 50 words
     * filtered test set (NYT50) includes 3,452 examples
     * Input documents were truncated to 800 tokens
@@ -233,7 +234,6 @@ code is available at https://github.com/nlpyang/PreSumm
 
 * question answering (QA) paradigm (Clarke and Lapata, 2010; Narayan+ 2018b)
   * quantifies the degree to which summarization models retain key information
-    from the document
   * a set of questions is created based on the gold summary under the
     assumption that it highlights the most important document content
   * Participants are then asked to answer these questions by reading system
@@ -243,8 +243,8 @@ code is available at https://github.com/nlpyang/PreSumm
   * participants presented with the output of two systems (and the original doc)
   * criteria of Informativeness, Fluency, and Succinctness
 * Both types of evaluation were conducted on the Amazon Mechanical Turk platform
-  * CNN/DailyMail and NYT datasets: we used the same documents (20 in
-    total) and questions from previous work (Narayan+ 2018b; Liu+ 2019)
+  * CNN/DailyMail and NYT datasets: we used the same documents 
+    (20 in total) and questions from previous work (Narayan+ 2018b; Liu+ 2019)
   * XSum: we randomly selected 20 documents (and their questions) from the
     release of Narayan+ (2018a). We elicited 3 responses per HIT
   * QA evaluation, we adopted the scoring mechanism from Clarke & Lapata (2010);

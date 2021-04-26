@@ -209,8 +209,8 @@ https://github.com/recitalAI/MLSUM
 
 * supervised and unsupervised methods, extractive and abstractive models
 * For all the experiments, we train models on a per-language basis
-  * hyperparameters: we used the recommended ones for all languages, in order to
-    facilitate assessing the robustness of the models
+  * hyperparameters: we used the recommended ones for all languages, 
+    in order to facilitate assessing the robustness of the models
 * one model with all the languages mixed together:
   no significant difference of performance
 

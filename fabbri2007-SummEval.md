@@ -66,7 +66,7 @@ https://github.com/Yale-LILY/SummEval
     * for large-scale comparisons of recent summarization models,
   * We release a toolkit of 12 evaluation metrics with an
     extensible and unified API to promote the reporting of additional metrics
-  * We collect and release expert, as well crowd-sourced, human judgments
+  * We collect and release expert, as well as crowd-sourced, human judgments
     for 16 model outputs on 100 articles over 4 dimensions to further research
 
 # 2 Related Work
@@ -132,7 +132,7 @@ https://github.com/Yale-LILY/SummEval
     fully abstractive models
 * Kedzie+ (2018) examined the influence of various model components in extractiv
   * in the current setting the training signal is dominated by biases present in
-    summarization datasets preventing models from learning accurate selection
+    summarization datasets preventing models
 * factual correctness, faithfulness
   * Kryściński+ (2019b)
     * hallucinating facts touches up to 30% of generated summaries
@@ -241,7 +241,7 @@ https://github.com/Yale-LILY/SummEval
   rewrites these sentences with a Pointer Generator Network
   * In addition to maximum likelihood training a ROUGE-L reward is used to
     update the extractor via REIN-FORCE (Williams, 1992)
-* M10 Bottom-Up (Gehrmann+ 2018) introduce a bottom-up approach whereby
+* M10 Bottom-Up: (Gehrmann+ 2018) introduce a bottom-up approach whereby
   * a content selection model restricts the copy attention distribution of a
     pretrained Pointer Generator Network during inference
 * M11 Improve-abs (Kryściński+ 2018) extend the model of Paulus+ (2017) by
@@ -279,9 +279,10 @@ https://github.com/Yale-LILY/SummEval
   * applicable to NLU tasks and generation tasks such as abstractive summariz
 * M22 BART (Lewis+ 2019): denoising autoencoder for pretraining seq to seq tasks
   * applicable to both NLU and generation tasks
-* M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a novel objective
-  function designed for summarization by which important sentences are removed
-  from an input document and then generated from the remaining sentences
+* M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a 
+  * novel objective function designed for summarization:
+    important sentences are removed from an input document and 
+    then generated from the remaining sentences
 
 # 4 Resources collected and released together with this work 6
 

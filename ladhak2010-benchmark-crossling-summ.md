@@ -23,7 +23,7 @@ https://github.com/esdurmus/Wikilingua
 * resources for cross-lingual summarization
   (Giannakopoulos, 2013; Li+ 2013; Elhadad+ 2013; Nguyen and Daumé III, 2019),
   * very limited in size
-* difficulty of collecting high-quality, large-scale datasets via crowd-sourcing
+* difficult to collect high-quality, large-scale datasets via crowd-sourcing
   * costly endeavor: humans must condense, and paraphrase entire articles
   * subjectivity in content selection (Nguyen and Daumé III, 2019)
 * WikiHow: collaboratively written how-to guides with summaries across 18
@@ -45,28 +45,28 @@ https://github.com/esdurmus/Wikilingua
 
 # 3 Existing Multilingual Abstractive Summarization Datasets
 
-## MultiLing’13 and ’15. Multiple versions of the MultiLing dataset have been
+## MultiLing’13 and ’15
 
-* MultiLing Workshops (Giannakopoulos, 2013; Elhadad+ 2013; Kubina+ 2013).  The
+* MultiLing Workshops (Giannakopoulos, 2013; Elhadad+ 2013; Kubina+ 2013)
 * MultiLing’13 dataset includes summaries of 30 Wikipedia articles per language,
-  describing a given topic.
+  describing a given topic
 * For MultiLing’15, an additional 30 documents were collected for evaluation
-  (Giannakopoulos+ 2015). We note that while this dataset contains article and
+  (Giannakopoulos+ 2015)
 * no parallel articles or summaries: difficult to use for cross-lingual eval
 
-## Global Voices. Nguyen and Daumé III (2019) collected
+## Global Voices (Nguyen and Daumé III 2019)
 
-* social network descriptions of news articles provided by Global Voices. 6
+* social network descriptions of news articles provided by Global Voices
 * not written with the purpose of summarizing the article content but rather to
   draw user clicks on social media; therefore, they have a lower coverage of the
-* the authors crowd-source a small set of summaries, to English, for 15 langs.
+* the authors crowd-source a small set of summaries, to English, for 15 langs
 
 * WikiLingua is similar to Global Voices in terms of article and summary length
-  * MultiLing articles and summaries are longer.
-  * All three existing datasets are limited in size in comparison to WikiLingua.
-  * Furthermore, our dataset includes articles on a wide-range of topics and the
+  * MultiLing articles and summaries are longer
+  * All three existing datasets are limited in size in comparison to WikiLingua
+  * Furthermore, our dataset includes articles on a wide range of topics
   * number of articles per language is two orders of magnitude larger than
-    Global Voices, which is the largest dataset to date for cross-lingual eval.
+    Global Voices, which is the largest dataset to date for cross-lingual eval
 
 # 4 Cross-lingual Experiments
 
@@ -74,13 +74,13 @@ https://github.com/esdurmus/Wikilingua
 
 ## 4.2 Direct Cross-lingual Summarization
 
-* method for direct crosslingual abstractive summarization, leveraging synthetic
-  data and machine translation as a pre-training step
+* method for direct crosslingual abstractive summarization, 
+  leveraging synthetic data and machine translation as a pre-training step
 
 # 5 Results and Analysis
 
-* our method outperforms existing baselines, without relying on translation at
-  inference time
+* our method outperforms existing baselines, 
+  without relying on translation at inference time
 
 # 6 Related Work
 
@@ -95,7 +95,7 @@ https://github.com/esdurmus/Wikilingua
   * a pointer network (Vinyals+ 2015) to enable copying words from the source
 * See+ (2017) extends this model by further incorporating a coverage penalty
   to address the problem of repetitions in the generated summary
-* Chen and Bansal (2018) takes a two stage approach to abstractive summ by
+* Chen and Bansal (2018) takes a two stage approach to abstractive summarization
   * extractor to select salient sentences from the articles, and an
   * abstractor to rewrite the sentences selected by the extractor
   * further train the extractor and abstractor end-to-end with a
