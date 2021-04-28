@@ -17,9 +17,9 @@ https://github.com/CZWin32768/xnlg
   * prediction space is much larger than classification
 * Previous work mainly relies on machine translation (MT)
   * in a pipeline manner (Wan, Li, and Xiao 2010)
-    * inputs are first translated to English, and fed into the NLG model that is
-      trained by English data. Then the generated English texts are translated
-      back to the target language
+    * inputs are first translated to English, and fed into the 
+      NLG model that is trained by English data. Then the generated 
+      English texts are translated back to the target language
     * generate pseudo training data for other language pairs that lack it
       (Shen+ 2018; Duan+ 2019)
 * we propose a
@@ -61,9 +61,8 @@ https://github.com/CZWin32768/xnlg
   * LM (Peters+ 2018; Radford+ 2018; Devlin+ 2019; Joshi+ 2019; Yang+ 2019),
   * auto-encoding (Liang+ 2019), and
   * machine translation (McCann+ 2017)
-  * Apart from pre-training encoders,
-    several pre-trained models (Dong+ 2019; Song+ 2019) are proposed for
-    generation tasks
+  * generation: Apart from pre-training encoders, several pre-trained models
+    (Dong+ 2019; Song+ 2019) are proposed for generation tasks
     * Dong L, Yang N, Wang W, Wei F, Liu X, Wang Y, Gao J, Zhou M, and Hon H-W
       Unified LM pre-training for natural language understanding and generation
       arXiv preprint arXiv:1905.03197
@@ -81,7 +80,7 @@ https://github.com/CZWin32768/xnlg
     generation tasks, rather than only focusing on encoder
 * Artetxe and Schwenk (2018) use the sequence encoder of the multilingual
   translation model (Johnson+ 2017) to produce cross-lingual sentence embeds
-  * However, as shown in the experiments (Section 4),
+  * hE, as shown in the experiments (Section 4),
     it is difficult to control the target language by directly fine-tuning the
     pre-trained translation model on downstream NLG tasks
 
@@ -89,7 +88,7 @@ https://github.com/CZWin32768/xnlg
 
 * As shown in Figure 2, XNLG is a pre-trained sequence-to-sequence model,
   which is based on Transformer (Vaswani+ 2017)
-  * Both the encoder and the decoder are supposed to support multiple languages
+  * Both the encoder and the decoder support multiple languages
   * we use language tag embeddings to distinguish the source and target langs,
     following (Lample and Conneau 2019),
   * Given a sentence and its corresponding language tag,
@@ -122,10 +121,9 @@ https://github.com/CZWin32768/xnlg
 
 ## 4.3 Abstractive Summarization
 
-* we use English/French/Chinese Gigaword 2 to extract the first sentence and
-  the headline of each article, and regard them as input document and pre-
-  dicted summaries, respectively. For each language, we sample 500k/5k/5k
-  examples for training/validation/test.
+* we use English/French/Chinese Gigaword
+  * first sentence and the headline of each article regarded as doc and summary
+  * For each language, we sample 500k/5k/5k examples for training/valid/tes.
 
 ## 4.4 Ablation Studies
 

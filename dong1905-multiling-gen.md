@@ -3,7 +3,7 @@ Li Dong, Nan Yang, Wenhui Wang, Furu Wei, Xiaodong Liu, Yu Wang, Jianfeng Gao,
   Ming Zhou, Hsiao-Wuen Hon
 NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
-[overview](https://github.com/microsoft/unilm) 
+[overview](https://github.com/microsoft/unilm)
 [The code and pre-trained models](https://github.com/microsoft/unilm/tree/master/unilm-v1)
 
 
@@ -15,8 +15,8 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
     unidirectional, bidirectional, and sequence-to-sequence prediction
   * unified by employing a shared Transformer network and utilizing specific
     self-attention masks to control what context the prediction conditions on
-* compares favorably with BERT on the GLUE benchmark, and the SQuAD 2.0 and CoQA
-* new SOTA results on five natural language generation datasets, including
+* compares favorably with BERT on the GLUE, SQuAD 2.0, and CoQA
+* new SOTA results on five natural language generation datasets
   * CNN/DailyMail abstractive summarization ROUGE-L to 40.51 (2.04 absolute)
   * Gigaword abstractive summarization ROUGE-L to 35.75 (0.86 absolute improvem)
   * CoQA generative question answering F1 score to 82.5 (37.1 absolute improvem)
@@ -65,24 +65,23 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
 * The input x is a word sequence, which is either a
   * text segment for unidirectional LMs or a
-  * pair of segments packed together for bidirectional LM and sequence-to-sequence LM.
+  * pair of segments packed together for bidirectional LM and sequence-to-seq LM
 * We always add a special
   * start-of-sequence ([SOS]) token, end-of-sequence ([EOS]) token
 
 ## 2.5 Fine-tuning on Downstream NLU and NLG Tasks
 
-* For NLU tasks, we fine-tune UniLM as a bidir Transformer encoder, like BERT.
-* For NLG tasks, we take the sequence-to-sequence task as an example. The
-  * [EOS], can also be masked during fine-tuning, thus when this happens, the
-    model learns when to emit [EOS] to terminate the generation process of the
-    target sequence.
+* For NLU tasks, we fine-tune UniLM as a bidir Transformer encoder, like BERT
+* For NLG tasks, we take the sequence-to-sequence task as an example
+  * [EOS], can also be masked during fine-tuning, thus 
+    when this happens, the model learns when to emit [EOS] to terminate gen
 
 # 3 Experiments 5
 
 ## 3.1 Abstractive Summarization
 
-* We fine-tune UniLM as a sequence-to-sequence model following the procedure
-  described in Section 2.5 by concatenating document and summary as input
+* We fine-tune UniLM as a sequence-to-sequence model following the 
+  * procedure described in Sec 2.5 by concatenating document and summary as inp
   * truncated to a pre-defined maximum length
 * We use the F1 version of ROUGE [25] as the evaluation metric for both datasets
   * Table 3: UniLM against the baseline and several SOTA models on CNN/DailyMail
@@ -102,17 +101,17 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
   * Re3Sum [4] retrieves summaries as candidate templates, and then use an
     extended sequence-to-sequence model to generate summaries
   * MASS [39] is a pre-trained sequence-to-sequence model based on Transformer
-* UniLM achieves better performance than previous work. Besides, in the
-  low-resource setting (i.e., only 10,000 examples are used as training data),
+* UniLM achieves better performance than previous work
+* low-resource setting (i.e., only 10,000 examples are used as training data),
   our model outperforms MASS by 7.08 point in ROUGE-L
 
 # 4 Conclusion and Future Work
 
 * future work
-  * more epochs and larger models on web-scale text corpora. At the same time,
-  * more experiments on end applications as well as ablation experiments to
-    investigate the model capability and the benefits of pre-training multiple
-    language modeling tasks with the same network
+  * more epochs and larger models on web-scale text corpora
+  * more experiments on end applications as well as 
+    ablation experiments to investigate the 
+    model capability and the benefits of multi-task pre-training
   * extending UniLM to support cross-lingual tasks
     (Zewen Chi+ ArXiv, abs/1909.10481)
   * multi-task fine-tuning on both NLU and NLG tasks, which is
