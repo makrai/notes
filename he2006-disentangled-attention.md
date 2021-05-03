@@ -38,8 +38,8 @@ arXiv:2006.03654 [cs.CL]
   * ALUM (Liu+ 2020)
     * Adversarial training for large neural language models. arXiv:2004.08994
   * StructBERT (Wang+ 2019c) and ERINE (Sun+ 2019)
-    * Structbert: Incorporating language structures into pre-training for deep
-      language understanding. arXiv preprint arXiv:1908.04577, 2019c
+    * Structbert: Incorporating language structures into pre-training 
+      for deep language understanding. arXiv preprint arXiv:1908.04577, 2019c
 * fine-tuned using task-specific labels and created new SOTA in many downstream
   (Liu+ 2019b; Minaee+ 2020; Jiang+ 2020; He+ 2019a;b; Shen+ 2020)
 * disentangled self-attention mechanism

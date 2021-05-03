@@ -97,18 +97,18 @@ arXiv:2003.08271 [cs.CL]
 
 ### 3.1.3 Permuted Language Modeling (PLM)
 
-* Yang+ [194] claimed that some special tokens used in [masked LM], like
-  [MASK], are absent when the model is applied on downstream tasks, leading to
-  a gap between pretraining and fine-tuning. To overcome this issue,
-* Permuted Language Modeling (PLM) [194] is a pre-training objective to replace
+* Yang+ [194] claimed a gap between pretraining and fine-tuning:
+  * some special tokens used in [masked LM], like [MASK], are absent when the
+    model is applied on downstream tasks
+* solution: Permuted Language Modeling (PLM)
   * random permutation of input sequences
 * two-stream self-attention is introduced for target-aware representations
 
 ### 3.1.5 Contrastive Learning (CTL)
 
 * Contrastive learning [140]
-* assumes some observed pairs of text that are more semantically similar than
-* Compared to LM, CTL usually has less computational complexity, and therefore
+* assumes some observed pairs of text that are more semantically similar
+* Compared to LM, CTL usually has less computational complexity
 * Collobert+ [24] proposed pairwise ranking task to distinguish real and fake
   phrases. The model need to predict a higher score for legal phrase
 * Mnih and Kavukcuoglu [118] trained word embeddings efficiently with
@@ -128,7 +128,7 @@ arXiv:2003.08271 [cs.CL]
 * the same as NCE but predicts whether a token is replaced given its context
 * CBOW with negative sampling (CBOW-NS) [116] can be viewed as a simple version
 * ELECTRA [22] utilizing a generator to replacing some tokens of a sequence
-  * generator G and a discriminator D are trained following a two-stage
+  * generator G and a discriminator D are trained in two-stages
     1. Train only the generator with MLM task for n 1 steps;
     1. Initialize the weights of the discriminator with the weights of G
   * Then train the discriminator with a discriminative task keeping G frozen
@@ -241,7 +241,7 @@ arXiv:2003.08271 [cs.CL]
   * images are converted into sequences of regions by applying RoI or bounding
     box retrieval techniques before encoded by pre-trained Transformers
 * audio-text pairs, such as SpeechBERT [20]
-  * end-to-end Speech Question Answering(SQA) model by
+  * end-to-end Speech Question Answering (SQA) model
   * encoding audio and text with a single Transformer encoder, which is
     pre-trained with MLM on speech and text corpus and fine-tuned on QA
 
@@ -348,7 +348,7 @@ arXiv:2003.08271 [cs.CL]
 ### 5.2.3 To tune or not to tune
 
 * two common ways of model transfer:
-  * feature extraction (where the pre-trained parameters are frozen), and
+  * feature extraction (where the pre-trained parameters are frozen)
     * it is important to expose the internal [most transferable] layers [124]
   * fine-tuning (where the pre-trained parameters are unfrozen and fine-tuned)
     * usually more general and convenient for many different downstream tasks
@@ -363,37 +363,38 @@ arXiv:2003.08271 [cs.CL]
 
 * first stage [with] an intermediate task or corpus
 * second stage, the transferred model is fine-tuned to the target task
-* Sun+ [154]: “further pretraining” on the related-domain corpus (BERT) and
+* Sun+ [154]: “further pretraining” on a related-domain corpus (BERT)
   * SOTA performance on eight widely-studied text classification datasets
-* Phang+ [126] and Garg+ [44]: intermediate supervised task related to the tg
+* Phang+ [126] and Garg+ [44]: intermediate supervised task related to the targt
   * large improvement for BERT, GPT, and ELMo
 
-### Multi-task fine-tuning: Liu+ [103] fine-tuned BERT [demonstrating that]
-multi-task learning and pre-training are complementary technologies
+### Multi-task fine-tuning
+
+* Liu+ [103]: on BERT, multi-task learning and pre-training are complementary
 
 ### Fine-tuning with extra adaptation modules
 
-* main drawback of fine-tuning is its parameter inefficiency: every downstream
-  task has its own fine-tuned parameters
-* solution is to inject some fine-tunable adaptation modules into PTMs while
-  * original parameters are fixed
+* main drawback of fine-tuning is its parameter inefficiency: 
+  every downstream task has its own fine-tuned parameters
+* solution is to inject some fine-tunable adaptation modules into PTMs 
+  while original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
   * PAL: small additional task-specific adaptation modules
   * matches separately fine-tuned models on the GLUE benchmark
     with roughly 7 times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
-  * Adapter modules yield a compact and extensible model; they add only a few
-    trainable parameters per task, and new tasks can be added without
-    revisiting previous ones
+  * Adapter modules yield a compact and extensible model
+  * they add only a few trainable parameters per task, and 
+    new tasks can be added without revisiting previous ones
 
 ### Others. Instead of fine-tuning all the layers simultaneously,
 
 * gradual unfreezing [62] layers of PTMs starting from the top layer
 * Chronopoulou+ [19] proposed [the simpler] sequential unfreezing, which
   * first fine-tunes only the randomly-initialized task specific layers, and
-    then unfreezes the hidden layers of PTM, and finally unfreezes the
-    embedding layer
-* Motivated by ensemble models, Xu+ [191]: self-ensemble and self-distill
+    then unfreezes the hidden layers of PTM, and 
+    finally unfreezes the embedding layer
+* Motivated by ensemble models, Xu+ [191]: self-ensemble and self-distillation
 
 # 6 Related resources on PTMs: open-source systems, paper lists 15
 
@@ -478,14 +479,14 @@ multi-task learning and pre-training are complementary technologies
     ABSA performance
   * Karimi+ [76] showed that the performance of post-trained BERT can be
     further improved via adversarial training
-  * Song+ [148] added an additional pooling module, which can be implemented as
-    either LSTM or attention mechanism, to leverage BERT intermediate layers
-    for ABSA
+  * Song+ [148] added an additional pooling module, which can be 
+    implemented as either LSTM or attention mechanism, 
+    to leverage BERT intermediate layers for ABSA
   * Li+ [97] jointly learned aspect detection and sentiment classification
     towards end-to-end ABSA
 * “Mask and Infill” (Wu+ [186]) based on BERT, for sentiment transfer
   * mask step: disentangle sentiment from content by masking sentiment tokens
-  * infill step uses BERT + target sentiment embed to infill the masked positns
+  * infill step uses BERT + target sentiment embed to infill the masked positons
 
 ## 7.5 Summarization
 
@@ -507,7 +508,7 @@ multi-task learning and pre-training are complementary technologies
   general framework for both extractive and abstractive summarization
   * In the encoder frame, BERTSUM extends BERT by inserting multiple [CLS] toks
   * extractive: BERTSUM stacks several inter-sentence Transformer layers
-  * abstractive: two-staged fine-tuning approach using a new fine-tuning schedl
+  * abstractive: two-staged fine-tuning approach using a new fine-tuning schedul
 
 ## 7.6 Named Entity Recgonition
 
@@ -562,10 +563,10 @@ multi-task learning and pre-training are complementary technologies
 * explainable artificial intelligence (XAI) [4] has become a hotspot in general
 * attention interpretability is still controversial [66, 142]
 * adversarial examples with imperceptible perturbations
-  * Jin+ [71] successfully attacked the finetuned BERT on text classification
-    and textual entailment with adversarial examples
+  * Jin+ [71] successfully attacked the finetuned BERT 
+    on text classification and textual entailment with adversarial examples
   * universal adversarial triggers (Wallace+ [175])
-    [mislead model] when concatenated to any input
+    [mislead models] when concatenated to any input
   * Sun+ [155] showed BERT is not robust on misspellings
 
 # 9 Conclusion 18

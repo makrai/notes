@@ -1,6 +1,5 @@
 J Ács
 Multilingual Morphological Probes for Contextual Word Representations
-rejected from emnlp 19
 
     We will publicly release our code and data
 

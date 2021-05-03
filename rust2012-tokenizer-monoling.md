@@ -29,7 +29,7 @@ arXiv:2012.15613 [cs.CL]
 # 1 Introduction
 
 * large Transformer-based language models (LMs; Vaswani+ 2017) pretrained for
-  * English (e.g., BERT, RoBERTa, T5; Devlin+ 2019; Liu+ 2019; Raffel+ 2020) on
+  * English (e.g., BERT, RoBERTa, T5; Devlin+ 2019; Liu+ 2019; Raffel+ 2020)
   * monolingual language models have been introduced for other languages
     (Virtanen+ 2019; Antoun+ 2020; Martin+ 2020, inter alia), offering
     previously unmatched performance on virtually all NLP tasks.  ∗ 
@@ -92,7 +92,7 @@ arXiv:2012.15613 [cs.CL]
     languages, the goal is to counteract the imbalance of pretraining data
   * mBERT vocabulary comprises a total of 119,547 subword tokens.
 * XLM-R (Conneau+ 2020) based on the monolingual RoBERTa model (which is also a
-  variant of the original BERT model; Liu+ 2019). Concurrently, many 
+  variant of the original BERT model; Liu+ 2019)
 * studies started analyzing mBERT’s and XLM-R’s capabilities and limitations,
   * work surprisingly well for cross-lingual tasks, despite the fact that they
     do not rely on any direct cross-lingual supervision (e.g., parallel or

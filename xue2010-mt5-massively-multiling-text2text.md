@@ -1,5 +1,5 @@
 mT5: A massively multilingual pre-trained text-to-text transformer
-Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, Colin Raffel
+L Xue, N Constant, A Roberts, M Kale, R Al-Rfou, A Siddhant, A Barua, C Raffel
 arXiv:2010.11934 [cs.CL]
 
 * The recent "Text-to-Text Transfer Transformer" (T5) leveraged a unified text2t

@@ -342,7 +342,7 @@ https://github.com/pdufter/minimult
     multilingual embedding spaces
   * Huang+ (2019) extend mBERT pre-training with three additional tasks and
     show an improved overall performance
-  * Pfeiffer+ (2020) (adapters) and Chi+ (2020) (parallel data)
+  * Pfeiffer+ (2020): adapters; Chi+ (2020): parallel data
 * mBERT across a range of languages and zero-shot tasks (not the reasons for it)
   * parsing and NER (Pires+ 2019; Wu and Dredze, 2019),
   * word alignment and sentence retrieval (Libovickỳ+ 2019) and

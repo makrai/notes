@@ -276,7 +276,7 @@ https://github.com/Yale-LILY/SummEval
     the best to direct fine-tuning in a reinforcement learning framework
 * M21 UniLM (Dong+ 2019): a model pretrained on three language modeling tasks:
   unidirectional, bidirectional, and sequence-to-sequence prediction
-  * applicable to NLU tasks and generation tasks such as abstractive summariz
+  * applicable to NLU tasks and generation tasks such as abstractive summarizaton
 * M22 BART (Lewis+ 2019): denoising autoencoder for pretraining seq to seq tasks
   * applicable to both NLU and generation tasks
 * M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a 

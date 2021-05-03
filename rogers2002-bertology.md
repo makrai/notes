@@ -304,7 +304,7 @@ arXiv:2002.12327 cs.CL
     if its pattern is not applicable to the current case
     * increased attention, but its importance for prediction drops
 * after fine-tuning both [SEP] and [CLS] get a lot of attention,
-  depending on the task (Kovaleva+ 2019). Interestingly, BERT also pays
+  depending on the task (Kovaleva+ 2019)
 * a lot of attention to punctuation, which Clark+ (2019) explain by the fact
   * periods and commas are simply almost as frequent as the special tokens, and
 
@@ -477,11 +477,11 @@ arXiv:2002.12327 cs.CL
   * On some tasks, a randomly initialized and fine-tuned BERT obtains
     competitive or higher results than the pre-trained BERT (Kovaleva+ 2019)
   * Prasanna+ (2020): most weights of pre-trained BERT are useful in
-    fine-tuning, although there are "better" and "worse" subnetworks. One
-    explanation is that pre-trained weights
-    * help the fine-tuned BERT find wider and flatter areas
-      with smaller generalization error, which
-      makes the model more robust to overfitting (see Figure 5 from Hao+ (2019))
+    fine-tuning, although there are "better" and "worse" subnetworks. 
+    * One explanation: pre-trained weights 
+      help to find wider and flatter areas with smaller generalization error,
+      which makes the model more robust to overfitting 
+      (see Figure 5 from Hao+ (2019))
   * Most new models' gains are often marginal, and estimates of
     model stability and significance testing are very rare
 * Continual learning (Sun+ 2019b)
@@ -509,8 +509,8 @@ arXiv:2002.12327 cs.CL
   * Two-stage fine-tuning
     * intermediate supervised training stage (Phang+ 2019; Garg+ 2020)
   * Adversarial token perturbations improve robustness of the model (Zhu+ 2019)
-  * Mixout regularization improves the stability of BERT fine-tuning even for a
-    small number of training examples (Lee+ 2019)
+  * Mixout regularization improves the stability of BERT fine-tuning 
+    even for a small number of training examples (Lee+ 2019)
 * With larger and larger models even fine-tuning becomes expensive, but
   * approximated by inserting adapter modules (Houlsby+ 2019)
   * 26 classification tasks, achieving competitive performance at a

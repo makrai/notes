@@ -98,8 +98,8 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
 * pre-training with much larger external text corpora (such as Wikipedia, books,
   or Web-pages) and Transformer-based sequence models has led to a dramatic
   improvement in performance when fine-tuned for both NLU and text gen tasks
-  (Radford+ 2018a; Devlin+ 2019; Rothe+ 2019; Yang+ 2019; Joshi+ 2019; Song+
-  2019; Dong+ 2019; Lewis+ 2019)
+  (Radford+ 2018a; Devlin+ 2019; Rothe+ 2019; Yang+ 2019; Joshi+ 2019; 
+  Song+ 2019; Dong+ 2019; Lewis+ 2019)
 * Most similar to our approach are Transformer encoder-decoder models
   pre-trained on some masked input pre-training objective
 
