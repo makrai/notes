@@ -167,7 +167,7 @@ ACL 2020 Best Theme Paper
   _Kim saw this picture and said “What a cute dog!” What is cute?_
 * the appropriate answers are a number or a region of the photo, respectively
 
-## Reflections In both cases, the tests are ridiculous.  It seems patently
+## Reflections In both cases, the tests are ridiculous
 
 # 6 human language acquisition: what information humans use to bootstrap
 
