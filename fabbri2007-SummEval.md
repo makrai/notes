@@ -196,8 +196,8 @@ https://github.com/Yale-LILY/SummEval
   * Extractive fragment coverage is
     * the percentage of words in the summary that are from the source article,
       measuring the extent to which a summary is a derivative of a text
-  * Density is defined as the average length of the extractive fragment to which
-    each summary word belongs
+  * Density: the average length of the extractive fragment
+    to which each summary word belongs
   * Compression ratio is defined as the word ratio between the articles and summ
   * we also include: the percentage of
     * n-grams in the summary not found in the input document: novelty score
@@ -279,9 +279,9 @@ https://github.com/Yale-LILY/SummEval
   * applicable to NLU tasks and generation tasks such as abstractive summarizaton
 * M22 BART (Lewis+ 2019): denoising autoencoder for pretraining seq to seq tasks
   * applicable to both NLU and generation tasks
-* M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a 
+* M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a
   * novel objective function designed for summarization:
-    important sentences are removed from an input document and 
+    important sentences are removed from an input document and
     then generated from the remaining sentences
 
 # 4 Resources collected and released together with this work 6
@@ -324,13 +324,12 @@ https://github.com/Yale-LILY/SummEval
 
 * aligned with the DUC quality question (Dang, 2005) of structure and coherence
   whereby "the summary should be well-structured and well-organized.  The
-  summary should not just be a heap of related information, but should build
-  from sentence to sentence to a coherent body of information about a topic."
+* not just a heap of related information, but should
+  build from sentence to sentence to a coherent body of information
 
 ### Consistency [precision]: the factual alignment between the summary and the source
 
-* A factually consistent summary contains only statements that are entailed by
-  the source document
+* contains only statements that are entailed by the source document
 
 ### Fluency: the quality of individual sentences
 

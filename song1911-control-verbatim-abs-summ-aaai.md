@@ -13,9 +13,7 @@ implementation and models https://github.com/ucfnlp/control-over-copying
   * frame the task of summarization as language modeling and exploit
     alternative mechanisms to generate summary hypotheses
 * extensive experiments: we illustrate the significance of our proposed method
-  on controlling the amount of verbatim copying and
-  achieve competitive results over strong baselines. Our analysis further
-  reveals interesting and unobvious facts
+  * competitive results over strong baselines. Our analysis further reveals
 * conclusion
   * Transformer-based, decoder-only framework to generate summaries
   * multiple strategies at training and decoding stages to generate diverse

@@ -87,8 +87,8 @@ https://github.com/esdurmus/Wikilingua
 ## Abstractive Summarization in English
 
 * monolingual summarization in English (Gehrmann+ 18; Song+ 20; Narayan+ 18)
-* Rush+ (2015) proposes the first neural abstractive summarization model using
-  an attention-based CNN encoder and a feed-forward decoder
+* Rush+ (2015) proposes the first neural abstractive summarization model 
+  * an attention-based CNN encoder and a feed-forward decoder
 * Chopra+ (2016) shows improvements using a RNN for the decoder
 * Nallapati+ (2016) shows further improvements by incorporating
   * embeddings for linguistic features such as POS tags and named-entity tags
