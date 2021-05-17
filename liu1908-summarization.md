@@ -123,8 +123,7 @@ code is available at https://github.com/nlpyang/PreSumm
 * mismatch between the encoder and the decoder,
   * since the former is pretrained while the latter must be trained from scratch
   * can make fine-tuning unstable;
-    for example, the encoder might overfit the data while the decoder underfits,
-    or vice versa.  To circumvent this,
+    e.g. the encoder might overfit the data while the decoder underfits, or vice
 * we design a new fine-tuning schedule which
   separates the optimizers of the encoder and the decoder
   * the pretrained encoder should be fine-tuned with a smaller learning rate and
@@ -243,7 +242,7 @@ code is available at https://github.com/nlpyang/PreSumm
   * participants presented with the output of two systems (and the original doc)
   * criteria of Informativeness, Fluency, and Succinctness
 * Both types of evaluation were conducted on the Amazon Mechanical Turk platform
-  * CNN/DailyMail and NYT datasets: we used the same documents 
+  * CNN/DailyMail and NYT datasets: we used the same documents
     (20 in total) and questions from previous work (Narayan+ 2018b; Liu+ 2019)
   * XSum: we randomly selected 20 documents (and their questions) from the
     release of Narayan+ (2018a). We elicited 3 responses per HIT
@@ -253,9 +252,9 @@ code is available at https://github.com/nlpyang/PreSumm
     percentage of times it was chosen as better minus the times it was selected
     as worse.  Ratings thus range from -1 (worst) to 1 (best)
 * Tables 6 and 7: Results for extractive and abstractive systems respectively
-  * We compared the best performing BertSum model in each setting (extractive or
-    abstractive) against various SOTA systems (whose output is publicly
-    available), the Lead baseline, and the GOLD standard as an upper bound
+  * We compared the best performing BertSum model in each setting (extractv/abs)
+    against various SOTA systems (whose output is publicly available), Lead, and
+    the GOLD standard as an upper bound
   * in both settings participants overwhelmingly prefer the output of our model
     against comparison systems across datasets and evaluation paradigms
   * All differences between BertSum and comparison models are statistically

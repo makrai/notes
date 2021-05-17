@@ -389,7 +389,7 @@ https://github.com/recitalAI/MLSUM
 ### The benefits of pretraining
 
 * We hypothesize that
-  the closer an unsupervised model performance to its maximum limit,
+  the closer an unsupervised model performance to the maximum limit,
   the less improvement would come from pretraining
 * In Figure 3, we plot the improvement rate
   from TextRank to Oracle, against that of Pointer-Generator to M-BERT

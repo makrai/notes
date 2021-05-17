@@ -86,8 +86,8 @@ wide variety of benchmarks
   SOTA results when combined with scale
 * Architectures
   * original encoder-decoder form worked best in our text-to-text framework
-  * twice as many parameters as “encoder-only” (e.g. BERT) or “decoder-only”
-    (language model) architectures, but similar computational cost
+  * twice as many parameters as “encoder-only” (e.g. BERT) or 
+    “decoder-only” (language model) architectures, but similar computational cst
   * sharing the parameters in the encoder and decoder:
     no substantial performance drop while halving the total parameter count
 * Unsupervised objectives
@@ -126,8 +126,8 @@ wide variety of benchmarks
   SOTA results across many of the benchmarks we considered
   * pre-training: we extracted text from our C4 data set and applied a 
     denoising objective that corrupts contiguous spans of tokens
-  * We pre-trained on a multi-task mixture before fine-tuning on individual
-    tasks. Overall, our models were trained on over 1 trillion tokens
+  * We pre-trained on a multi-task mixture before fine-tuning on indiv tasks.
+    Overall, our models were trained on over 1 trillion tokens
 
 ## 4.2 Outlook
 

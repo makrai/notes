@@ -1,6 +1,6 @@
 MultiSumm: Towards a Unified Model for Multi-Lingual Abstractive Summarization
 Yue Cao, Xiaojun Wan, Jinge Yao, Dian Yu
-AAAI-20 Technical Tracks 1 / AAAI Technical Track: AI and the Web Vol. 34 No. 01
+AAAI-20 Technical Tracks 1: AI and the Web Vol. 34 No. 01
 
 Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
@@ -78,7 +78,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
 * The process of constructing our summarization dataset is similar to the
   process of building datasets such as Gigaword and LCSTS
-  * crawl the news from a Bosnian news web-site 4 and a Croatian news website 5
+  * crawl the news from a Bosnian news web-site and a Croatian news website
   * news description as the original text and use the title as the summary
   * text-summary pair will be filtered out if its title contains dates in the
     format of “xx.xx.xxxx” because we find these titles only contain useless
@@ -90,11 +90,12 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 ## Competitive Models
 
 * We consider the following three competitive models for comparison
-  * Individual. For each language, we train a monolingual transformer model for
-  * Individual + pretraining. We train an individual transformer model for text
-    summarization on each language, while the encoder and decoder are first
-    pretrained (i.e., using language model training and auto-encoder training)
-    on monolingual texts in the corresponding language
+  * Individual. For each language, we train a monolingual transformer model
+  * Individual + pretraining. We train an individual transformer model for summ
+    on each language, while 
+    * the encoder and decoder are first pretrained 
+      (i.e., using language model training and auto-encoder training)
+      on monolingual texts in the corresponding language
   * Multi-baseline. The multi-baseline simply trains summarization generation
     model for all languages using one model without any pretraining process
 
@@ -103,7 +104,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 ## Multi-Lingual Summarization Results
 
 * the multi-lingual baseline ?< individual model
-  * worse on rich-resource languages (En, Es, Fr, and Zh), with an average
-    drop of about 1-2 points in Rouge-l
+  * worse on rich-resource languages (En, Es, Fr, and Zh), with an 
+    average drop of about 1-2 points in Rouge-l
   * better on languages with small training data, which may benefit from the
     shared BPE tokens across languages

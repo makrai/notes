@@ -123,7 +123,7 @@ https://github.com/CZWin32768/xnlg
 
 * we use English/French/Chinese Gigaword
   * first sentence and the headline of each article regarded as doc and summary
-  * For each language, we sample 500k/5k/5k examples for training/valid/tes.
+  * For each language, we sample 500k/5k/5k examples for training/valid/tes
 
 ## 4.4 Ablation Studies
 

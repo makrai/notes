@@ -29,6 +29,6 @@ arXiv:2007.14062 [cs.LG]
 * we warm start from 
   * our general purpose MLM pretraining on base-sized models as well as
   * SOTA summarization specific pretraining from Pegasus [107] on large-sized
-* significant improvement.  Along with hyperparameters, we also present 
+* significant improvement
 * results on shorter but more widespread datasets in App. E.5, which show that
   using sparse attention does not hamper performance either
