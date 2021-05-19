@@ -4,6 +4,40 @@ Mathematical linguisitcs
 
 # 5 Syntax
 
+## 5.2 Grammatical theories
+
+### 5.2.2 Linking
+
+* ‘direct’: proceed from the arguments of the verb, defined semantically, to the
+  linkers, which are visible on the surface, using only one intermediary, the
+  deep cases. In contrast, 
+* indirect theories invoke two sets of intermediaries, deep cases and
+  grammatical functions (subject, object, etc.), as well.  
+* Relational grammar does not use a separate apparatus for these two
+  * but does permit derivational strata, which make the overall theory indirect.
+* same is true of case grammar, which in its 
+  * original form (Fillmore 1968) was clearly intended as a direct theory but
+    used transformations, which brought strata with them
+* there is little to recommend the traditional notion of grammatical function.
+* phenomena that point at differences not easily explained without reference to
+  subjects and objects.  Consider first the behavior of 
+  * reflexives: John shaved himself is obviously grammatical and `*`Himself shav
+* a third set of primitives, called thematic roles or theta roles, that are
+  regularly invoked in classifying verbal arguments. These are 
+  * intended as fully semantical, expressing generalizations that follow from
+    the meaning of verbs
+  * e.g. if V is an action and NP refers to the Agent of this action, then NP
+    intends V to happen. Comparing John accidentally killed the pedestrian to
+    * _kill_ does not require an Agent but _murder_ does. The theories of
+      linking discussed so far distinguish between deep and surface cases and
+      keep both of these distinct from both grammatical functions (subject,
+      object, indirect object) and thematic roles to the extent they admit
+* Direct theories that refer to thematic roles use them purely as abbreviatory
+  devices to distinguish different classes of verbs with different lexical
+  entailments, while 
+* indirect theories, to which we now turn, permit combinatorical statements that
+  refer to more than one set of primitives.
+
 ## Semantics-driven theories
 
 * [e.g. split ergativity] gives rise to the suspicion, shared by many in the
@@ -84,6 +118,19 @@ Mathematical linguisitcs
   * tagmemics, being the standard theory at the Summer Institute of Linguistics
     is in wide use, and covers an immense variety of languages, many of which
     have no analyses in any other framework
+* The first proposal within generative linguistics to use case as the driving
+  mechanism for syntax was by Fillmore (1968, 1977). The standard introduction
+* ergativity is Dixon (1994). 
+* Dependency grammars are due to Tesnière (1959).  Other modern formulations
+  include Sgall+ (1986), Mel’cuk (1988), Hudson (1990), and McCord (1990).
+  * Again, 
+    * an important early result that served to deflect interest from the area
+      was by Gaifman (1965), who proved the equivalence of one formulation of
+      dependency grammar to CFGs, and again the area 
+    * revived largely because of its strong connections to key notions of grammr
+* A variety of dependency and valency models are 
+  surveyed in Somers (1987) and Tapanainen and Järvinen (1997). 
+* A modern survey of argument linking theories is Levin and Rappaport (2005).
 
 # 6 Semantics
 
@@ -119,8 +166,8 @@ Mathematical linguisitcs
 
 * a range of syntactic theories we called grammatical because they rely on
   notions such as (deep) case, valence, dependency, and linking, which are
-  _expressed only indirectly in the manner in which words are combined_. Our
-  goal here is to develop a formal theory of semantics that fits these theories
+  _expressed only indirectly in the manner in which words are combined_: sec 5.2
+* here: develop a formal theory of semantics that fits these theories 
   as well as standard MG fits combinatorial theories of syntax
 
 ## 6.4 Further reading
