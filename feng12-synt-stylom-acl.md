@@ -4,8 +4,7 @@ acl 2012
 
 # Abstract
 
-* Over four different datasets spanning
-  from the product review to the essay domain, we demonstrate that
+* Over four datasets spanning from the product review to the essay domain
 * features driven from Context Free Grammar (CFG) parse trees
-* improve the best published result on the hotel review data (Ott et al.,
-  2011) reaching 91.2% accuracy with 14% error reduction.
+* improve the best published result on the hotel review data (Ott+ 2011)
+  reaching 91.2% accuracy with 14% error reduction

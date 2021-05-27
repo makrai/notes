@@ -6,19 +6,19 @@ in Corpus linguistics. An international handbook, 2009
 
 # 2. Theoretical frameworks
 
-* [in] probabilistic paradigmatic morphology
-  productivity [not] crucially depends on regularity
+* in probabilistic paradigmatic morphology
+  productivity not crucially depends on regularity
 * schemas, constructions, and local generalizations
   (Albright/Hayes 2003; Baayen 2003; Bybee 2001; Dabrowska 2004)
-* morphological productivity ... resulting from a great many factors
-  e.g. experience with the words of her language, ... memory capacities, her
-  conversational skills, her command of the stylistic registers[,]
+* morphological productivity resulting from a great many factors
+  e.g. experience with the words of her language, memory capacities, her
+  conversational skills, her command of the stylistic registers,
   knowledge of other languages, her communicative needs,
   personal language habits and those of the people with which she interacts
-* Corpora ... to explore how productivity varies across
+* Corpora to explore how productivity varies across
   * registers, written versus spoken language, social and geographical space,
     and even time
-  * Corpus-derived measures [and] lexical processing in the mental lexicon
+  * Corpus-derived measures and lexical processing in the mental lexicon
 
 # 3. Measuring productivity 6
 
@@ -31,9 +31,9 @@ in Corpus linguistics. An international handbook, 2009
 * expanding productivity
   * the rate at which a morphological category is expanding,
   * oriented to what is expected for the near future
-  * estimated by [the number of hapax legomena in the category divided by] the
+  * estimated by the number of hapax legomena in the category divided by the
     total number of hapax legomena
-  * an estimate of the contribution [to the growth rate of the] vocabulary
+  * an estimate of the contribution to the growth rate of the vocabulary
   * refered to as the hapax-conditioned degree of productivity (Baayen 1993)
 * potential productivity
   * the extent to which the market for a category is saturated
@@ -42,22 +42,22 @@ in Corpus linguistics. An international handbook, 2009
   * Figure 1. The dynamics of vocabulary growth. The
     * horizontal axis displays corpus size in tokens (N), the
     * vertical axis displays the number of types observed
-    * Potential productivity is defined as the [asympt] slope
+    * Potential productivity is defined as the asympt slope
   * diachrony
-  * A corpus ... as a (simplified) model of diachrony
-  * In psycholinguistics[,] estimates of age of acquisition often have superior
+  * A corpus as a (simplified) model of diachrony
+  * In psycholinguistics, estimates of age of acquisition often have superior
     predictivity for lexical processing compared to synchronic frequency counts
 * An alternative computational method for estimating the growth rate is based
   on the deleted estimation method of Jelinek/Mercer (1985) !
-  * Nishimoto (2003) shows that [it obtains] similar productivity rankings
+  * Nishimoto (2003) shows that it obtains similar productivity rankings
   * Nishimoto, Eiji (2003),
     Measuring and Comparing the Productivity of Mandarin Chinese Suffixes.
     Computational Linguistics and Chinese Language Processing 8, 49⫺76
-* [in] All these productivity measures ... only those words in which a given
-  [morpheme was the last] are taken into account
-  e.g. _helpfulness_ ... is not counted as a member of ... -ful
+* in All these productivity measures only those words in which a given
+  morpheme was the last are taken into account
+  e.g. _helpfulness_ is not counted as a member of -ful
   * Gaeta/Ricca (2005) have shown that similar rankings are obtained for counts
-    excluding [or] including words that have undergone further word formation
+    excluding or including words that have undergone further word formation
 
 ## 3.2. Interpretation and validation 10
 
@@ -69,14 +69,14 @@ in Corpus linguistics. An international handbook, 2009
 
 * e.g. suffix for creating agent nouns in Dutch
   * unmarked is ER (GEEF-ER, ’giver’),
-    * greater realized [and expanding] productivity
-  * [female] is STER (GEEF-STER, ’female giver’)
+    * greater realized and expanding productivity
+  * female is STER (GEEF-STER, ’female giver’)
     * the greater potential productivity
   * experimental study validating the potential productivity
     * Baayen (1994b)
-      * subjects were asked to generate ... many words with a specified affix
-      * [they] produced many more neologisms in STER than in ER or VER
-    * correlated with ... parseability (Hay 2003)
+      * subjects were asked to generate many words with a specified affix
+      * they produced many more neologisms in STER than in ER or VER
+    * correlated with parseability (Hay 2003)
     * visual lexical decision latencies (Wurm/Aycock/Baayen 2006)
 * A closely related measure for potential productivity is
   * the ratio `I = S/V(N)` of
@@ -86,7 +86,7 @@ in Corpus linguistics. An international handbook, 2009
 
 # 4. Forces shaping productivity 18
 
-* two .. factors: societal factors [and] processing constraints
+* two factors: societal factors and processing constraints
 
 ## 4.1. Productivity in the speech community
 
@@ -94,7 +94,7 @@ in Corpus linguistics. An international handbook, 2009
 * stylometry (Burrows 1992)
   * individual writers develop their own characteristic speech habits
 * morphological categories might be more productive in some registers
-* needs of speech communities and groups of specialists [therin] (Clark, 1998)
+* needs of speech communities and groups of specialists therin (Clark, 1998)
   change over time
   * a domain with rapid innovation or with slow or little innovation
 
@@ -102,7 +102,7 @@ in Corpus linguistics. An international handbook, 2009
 
 ### 4.1.2. Productivity through time 23
 
-from the perspective of the [changing needs of society]
+from the perspective of the changing needs of society
 
 ## 4.2. Productivity and processing constraints in the mental lexicon 26 911
 
@@ -112,13 +112,13 @@ lexical, sublexical, and supralexical probabilities
 
 ### 4.2.2. Processing constraints 29
 
-* exemplar-driven analogical generalization ... underlie[s] both unproductive
+* exemplar-driven analogical generalization underlies both unproductive
   and productive rules
 * frequency of the base relative to that of the derived word
-  * there are ... complex words that are more frequent than their bases
+  * there are complex words that are more frequent than their bases
     (_illegible_)
-  * the greater [the ratio], the greater the likelihood [of]
-    own memory trace [and] simplified phonotactics
+  * the greater the ratio, the greater the likelihood of
+    own memory trace and simplified phonotactics
   * rule-driven processing will be more important for formations [that are
     much less frequent than] their constituents
   * the proportion of types in a morphological category
@@ -127,11 +127,11 @@ lexical, sublexical, and supralexical probabilities
     the logarithmic transform of its potential productivity (P)
 * junctural phonotactics:
   * the probability of the sequence of sounds
-    spanning the juncture between its parts ... such as NH in INHUMANE
+    spanning the juncture between its parts such as NH in INHUMANE
   * an affix is more likely to be an independent unit in speech production
     if it tends to create low-probability junctural phonotactics
-  * In comprehension, the[se] constituents are easier to parse out, [so]
-    affixes that [create such words are] more productive (Hay 2003...)
+  * In comprehension, these constituents are easier to parse out, so
+    affixes that create such words are more productive (Hay 2003...)
 
 ### 4.2.3. Conspiracies 33 914
 
@@ -145,8 +145,8 @@ lexical, sublexical, and supralexical probabilities
   measures for junctural phonotactics,
   measures for relative frequency and parsing, and
   lexical statistical measures such as Shannon’s Entropy
-* this correlational structure has two [PCA] dimensions (Hay/Baayen 2003)
-  1. measures that guage [mér] how affixes are used against the backdrop of
+* this correlational structure has two PCA dimensions (Hay/Baayen 2003)
+  1. measures that guage mér how affixes are used against the backdrop of
      the corpus as anchor point for normalisation
     * Realized productivity, expanding productivity,
       entropy (information load),
@@ -166,9 +166,9 @@ lexical, sublexical, and supralexical probabilities
     * strong negative correlations with the
       * frequency of the derivative (averaged over the types in the category)
       * probability of the juncture (similarly averaged)
-    * This dimension guages the strength of the [morpheme] in terms of
+    * This dimension guages the strength of the morpheme in terms of
       * the proportion of words in the corresponding morphological category
-        [to which the morpheme attaches]
+        to which the morpheme attaches
       * rather than through the memory traces of the derivatives
 
 #### conspiracy 2
@@ -176,38 +176,38 @@ lexical, sublexical, and supralexical probabilities
 * processing constraints, grammatical constraints, and memory constraints
 * English suffixes can be arranged in a hierarchy
   predictive for the order in which these suffixes can occur (Hay/Plag 2004)
-* predictable from measures ... such as potential productivity and the
+* predictable from measures such as potential productivity and the
   proportion of types in the morphological category that are parsed (the
   second dimension identified above for the first conspiracy)
-* illustrated in Figure 4 ... for potential productivity
+* illustrated in Figure 4 for potential productivity
   As the log-transformed potential productivity increases,
   the word’s rank increases as well
 * the hypothesis of complexity-based ordering (Hay 2003, 2004)
   * suffixes that are more productive,
     and that function more as processing units
-    ... must follow less productive suffixes
+    must follow less productive suffixes
 * two questions
   * the goal of word-formation: the creation of new words
-  * why comprehension would benefit from [this]
-* step[s] towards an answer [to question 2]
+  * why comprehension would benefit from this
+* steps towards an answer to question 2
   * reminiscent of Bybee (1985) for inflection
     * more inherent inflection (tense and aspect marking, for instance)
       tends to be realized closer to the stem or root than
       more contextual inflection (person and number marking, for instance)
-    * more (formally and semantically) predictable formatives are []
+    * more (formally and semantically) predictable formatives are 
       peripheral to the less predictable and more fusional exponents,
       just as in derivation the less productive and often semantically less
       predictable suffixes are closer to the stem
     * semantic transparency is also at issue (Hay/Plag 2004)
-  * a more careful consideration of the role of frequency in [morph proc]
+  * a more careful consideration of the role of frequency in morph proc
     * relative frequency primarily affects low-level processes
       at the level of form (Hay/Baayen 2002, Hay 2003)
     * word frequency is more strongly correlated with measures of a word’s
-      meaning than with measures of ... form (Baayen/Feldman/Schreuder 2006),
+      meaning than with measures of form (Baayen/Feldman/Schreuder 2006),
     * relative frequency (and derived measures such as parsing ratios) also
       reflects the relative complexities of compositional processes at the
       level of semantics
-    * This [explains the conspiracy of processing] and grammatical constraints
+    * This explains the conspiracy of processing and grammatical constraints
   * productivity is inversely proportional to the
     likelihood of serving as input for further word formation
     (Krott/Schreuder/Baayen 1999)
@@ -221,9 +221,9 @@ lexical, sublexical, and supralexical probabilities
 
 # 5. Concluding remarks 38 917
 
-* new insights have been obtained ... by combining
+* new insights have been obtained by combining
   historical, stylistic, onomasiological, and cognitive factors
-* fields [that] await exploration
+* fields that await exploration
   * sociolinguistic variables or
     the role of word formation in communal lexicons (Clark 1998)
 
