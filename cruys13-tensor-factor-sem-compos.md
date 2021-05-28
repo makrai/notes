@@ -16,14 +16,14 @@ naacl 2013
 
 * reconcile distributional semantics with the principle of compositionality
   * Mitchell and Lapata, 2008
-  * Baroni and Zamparelli, emnlp 2010 Nouns are vectors, adjectives are mxs
+  * Baroni and Zamparelli, EMNLP 2010 Nouns are vectors, adjectives are mxs
   * Coecke+ Lambek 2010 Mathematical foundations for compos distri meang
     * a sentence vector is a function of the Kronecker product of its word vecs
     * greater interaction between the different word features
     * tested experimentally in Grefenstette and Sadrzadeh (2011a,b)
     * relational words (e.g. adjectives or verbs) have a rich
       (multidimensional) structure that acts as a filter on their arguments
-  * Socher+ emnlp 2012 through recursive matrix-vector spaces
+  * Socher+ EMNLP 2012 through recursive matrix-vector spaces
     * Each node in a parse tree is assigned both a vector and a matrix;
       the vector captures the actual meaning of the constituent, while
       the matrix models the way it changes the meaning of neighbouring phrases
@@ -52,6 +52,8 @@ naacl 2013
 
 # 3. method and mathematical machinery 3
 
+## 3.1 Mathematical preliminaries
+
 ## 3.2 The construction of latent noun factors
 
 * Non-negative matrix factorization (NMF) from standard co-occurrence data
@@ -79,7 +81,9 @@ naacl 2013
 * Computing the Tucker decomposition is rather costly in time and memory
   * not unique
 * we consider the factor matrices as given from our first step,
+  and proceed to compute the core tensor G.
 * the first mode is represented by its original instances
+  * no latent representation
 
 ## 3.4 The composition of SVO triples
 
