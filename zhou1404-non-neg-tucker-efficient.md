@@ -97,7 +97,7 @@ IEEE Transactions on Image Processing, 2015
 * P (n) is a permutation matrix, and D (n) is a nonnegative diagonal matrix 
 * the uniqueness of NTD has a very close relation with the uniqueness of NMF
   * results on the uniqueness of NMF (see [38]– [40] for a comprehensive review)
-    most of which are based on the sparsity of factor matrices. Among them,
+    most of which are based on the sparsity of factor matrices
 * the most popular uniqueness conditions for NMF [11], [41]–[43] is the
   pure-source-dominant condition [11], [41], which means
   * for each signal there exists at least one instant

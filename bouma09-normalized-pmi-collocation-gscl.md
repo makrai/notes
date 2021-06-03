@@ -40,7 +40,7 @@ GSCL, 2009
 * test statistic for the log-likelihood ratio G 2
   * as a collocation extraction measure in Dunning (1993)
   * equivalent to MI in collocation extraction (e.g., Evert, 2005)
-* _Pointwise_ MI is also one of the standard association measures in colloc
+* _Pointwise_ MI is also one of the standard association measures in colloc ext
   * lexicography by Church and Hanks (1990)
 * The statistical measure of effect size relative risk [similarly lacks a max]
   upper bound]. Figuratively, there is a ‘probability roof’
