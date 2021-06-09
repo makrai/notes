@@ -5,7 +5,7 @@ From meaning to message in two theories:
 
 # Intro
 
-Cognitive Grammar 
+Cognitive Grammar
   bleaching (fehérítő) + metaphorical use
   the hearer ignores irrelevant parts of the meaning
   Langachker
@@ -20,5 +20,5 @@ Comlumbia Scholl (Saussurean)
 Saussurean
   * the linguistic unit is less informative then usually assumed
   * meanings defined relationally
-  * meanings are instructions on the degree or kind of problem-solving needed to find the message 
+  * meanings are instructions on the degree or kind of problem-solving needed to find the message
 

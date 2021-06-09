@@ -2,32 +2,31 @@ Gözde Gül Şahin, Clara Vania, Ilia Kuznetsov, Iryna Gurevych
 LINSPECTOR: Multilingual Probing Tasks for Word Representations
 arXiv:1903.09442 cs.CL (Gurevych's page calls this a _Report_)
 
-probing datasets and the evaluation suite LINSPECTOR with
-https://github.com/UKPLab/linspectoi
-
+probing datasets and the evaluation suite LINSPECTOR
+https://github.com/UKPLab/linspector
 
 # Abstract
 
-* ever growing number of word representation models [for many] languages,
+* ever growing number of word representation models for many languages,
 * lack of a standardized technique to provide insights into what is captured
 * Such insights would help the community to
-  * estimate ... the downstream task performance
-  * design more informed neural architectures [with less] experimentation
-* recent development [is] simple classification tasks, also called probing
+  * estimate the downstream task performance
+  * design more informed neural architectures with less experimentation
+* recent development is simple classification tasks, also called probing
   * test for a single linguistic feature such as part-of-speech
-  * Existing studies mostly focus on ... English text.  However,
-    * from a typological perspective the [morph poor English is] an outlier:
+  * Existing studies mostly focus on English text.  However,
+    * from a typological perspective the morph poor English is an outlier:
     * information encoded by the word order and function words in English is
       often stored on a **morphological** level in other languages
       e.g. Turkish word katılamayanlardan, that means
-      “he/she is one of the folks who can not participate” [távolmaradó(k)]
+      “he/she is one of the folks who can not participate” távolmaradó(k)
 * we introduce
   * 15 type-level probing tasks such as
     case marking, possession, word length, morph tag count and pseudo-word id
     * 24 languages; reusable methodology
 * experiments
   * several diverse multilingual word embedding models
-  * we relate the probing task performance [to] five classic NLP tasks:
+  * we relate the probing task performance to five classic NLP tasks:
     POS-tagging, dep parsing, sem role labeling, NER, and nat lang infer
 * a number of probing tests have significantly high positive correlation
   especially for morphologically rich languages
@@ -35,7 +34,7 @@ https://github.com/UKPLab/linspectoi
 
 # 1 Introduction
 
-* embedding models ... differ in terms of
+* embedding models differ in terms of
   * design objective
     * monolingual (Mikolov+ 2013b)
     * cross-lingual (Ruder, Vulić, and Søgaard 2017)
@@ -49,15 +48,15 @@ https://github.com/UKPLab/linspectoi
     * linear vector operations (Bojanowski+ 2017)
     * bidirectional LSTM (Ling+ 2015)
   * units: words, characters, character n-grams, morphemes, phonemes
-* performance of unsupervised embeddings may differ [by] language and task
+* performance of unsupervised embeddings may differ by language and task
   * word2vec (Mikolov+ 2013b) and GloVe (Pennington, Socher, and Manning 2014)
-    [suffer on] agglutinative languages like Turkish and Finnish
-* representation well-suited for some task[, but bad] at other tasks
+    suffer on agglutinative languages like Turkish and Finnish
+* representation well-suited for some task, but bad at other tasks
   (Rogers, Ananthakrishna, and Rumshisky 2018)
-* word vectors [tested] directly in downstream tasks, such as
-  * machine translation (MT) (Ataman and Federico 2018),
-  * semantic role labeling (SRL) (Şahin and Steedman 2018) or
-  * language modeling (LM) (Vania and Lopez 2017)
+* word vectors tested directly in downstream tasks, such as
+  * machine translation (MT, Ataman and Federico 2018),
+  * semantic role labeling (SRL, Şahin and Steedman 2018) or
+  * language modeling (LM, Vania and Lopez 2017)
 * probing tasks (Köhn 2016; Shi, Padhi, and Knight 2016; Adi+ 2017;
   Veldhoen, Hupkes, and Zuidema 2016; Conneau+ 2018a)
   * multi-class classification problems that probe a learned word vector
@@ -68,16 +67,16 @@ https://github.com/UKPLab/linspectoi
     * mostly designed for English language only, and
     * sentence-level
       (e.g. tree depth, word count, top constituent by Conneau+ (2018a))
-  * not [equally] beneficial in a multilingual setup for several reasons
+  * not equally beneficial in a multilingual setup for several reasons
     1. information encoded by the word order and function words in English is
-       encoded at the morphological, subword level information in [other langs]
+       encoded at the morphological, subword level information in other langs
     2. confusion of the signals: as pointed out by Tenney+ (2019), sometimes
-       “operating on full sentence encodings [confounds] the analysis
-      * such tests would carry ... undesired biases
+       “operating on full sentence encodings confounds the analysis
+      * such tests would carry undesired biases
         such as domain and majority bias
 * we
   * introduce context independent, dictionary-based type-level probing tasks
-  * [compare to a] set of similar, but context dependent, treebank-based and
+  * compare to a set of similar, but context dependent, treebank-based and
     thereby potentially biased token-level tests
   * extend the line of work by Conneau+ (2018a) and Tenney+ (2019)
     * Our probing tasks cover a range of features: from
@@ -88,7 +87,7 @@ https://github.com/UKPLab/linspectoi
       each has a list of its own
       * e.g. Russian and Spanish are probed for gender, while
       * Turkish is probed for polarity and possession;
-  * introduce a reusable, systematic methodology for [test] creation
+  * introduce a reusable, systematic methodology for test creation
     by utilizing the existing resources such as
     UniMorph (SylakGlassman+ 2015; Sylak-Glassman 2016; Kirov+ 2018),
     Wikipedia and Wuggy (Keuleers and Brysbaert 2010);
@@ -104,13 +103,13 @@ https://github.com/UKPLab/linspectoi
       * type-level tasks may suffer in case of lack of lexical diversity
         and high ambiguity ratios;
   * provide comprehensive discussions for the intrinsic and extrinsic result
-    * numerous factors [other than] the neural architectures play role
+    * numerous factors other than the neural architectures play role
       e.g. out-of-vocabulary rates, domain similarity,
       statistics of both datasets (e.g., ambiguity, size),
       training corpora for the embeddings;
       typology, language family, paradigm size and morphological irregularity
-* We believe our evaluation suite ... and probing datasets are useful for
-  * comparing [multilingual word representations such as] cross-lingual embeds
+* We believe our evaluation suite and probing datasets are useful for
+  * comparing multilingual word representations such as cross-lingual embeds
   * exploring the linguistic features captured by word encoding layers
   * systematic searching of model or architecture parameters, or
   * comparing transfer learning techniques
@@ -120,20 +119,20 @@ https://github.com/UKPLab/linspectoi
 
 ## 2.1 Intrinsic evaluation 4
 
-* word similarity datasets ... in other languages
+* word similarity datasets in other languages
   * Leviant and Reichart (2015) collected human-assessed translations of
     WordSim-353 and SimLex-999 on three languages, Italian, German and Russian
   * SemEval 2017 shared task, Camacho-Collados+ (2017) introduced manually
     curated word-sim datasets for English, Farsi, German, Italian, and Spanish
-* word analogy test ... introduced by Mikolov+ (2013a)
+* word analogy test introduced by Mikolov+ (2013a)
 * Tsvetkov+ (2015) introduced QVEC, an intrinsic word evaluation method which
   aligns word vector representations with hand-crafted features extracted from
   lexical resources, focusing on the semantic content. They showed that their
   evaluation score correlates strongly with performance in downstream tasks
 * linguistic diagnostics factors (Rogers, Ananthakrishna, and Rumshisky 2018)
   * a comprehensive list of scores
-  * [their] relation to a set of downstream tasks such as
-    chunking, named entity recognition (NER), sentiment classification [analed]
+  * their relation to a set of downstream tasks such as
+    chunking, named entity recognition (NER), sentiment classification analed
   * high correlation between morphology-level intrinsic tests with such
     downstream tasks even for English
   * rely on nearest neighbor relation as a proxy to predict the performance
@@ -151,7 +150,7 @@ https://github.com/UKPLab/linspectoi
 ## 2.3 Evaluation via probing task 6
 
 * workshops
-  * Representation Evaluation (RepEval) (Nangia+ 2017) and
+  * Representation Evaluation (RepEval, Nangia+ 2017) and
   * BlackBoxNLP Workshop series (Tal Linzen, Chrupała, and Alishahi 2018)
 * associate some linguistic properties such as POS, morphological, or semantic
   with representations from a trained model (hidden states or activation layer)
@@ -160,15 +159,15 @@ https://github.com/UKPLab/linspectoi
   uses representations generated from a fully-trained model with frozen weights
   to train a classifier predicting a particular linguistic property. The
   performance of this classifier is then used to measure how well the model has
-* similar study [for] syntactic features such as gender and tense (Köhn 2015)
-  * [features] extracted from annotated dependency treebanks. Due to
+* similar study for syntactic features such as gender and tense (Köhn 2015)
+  * features extracted from annotated dependency treebanks. Due to
   * that time, static word-level embeddings (word2vec, GloVe, and embeddings
     derived from Brown clusters) and find that they
-  * [embeddings] are suprisingly able to capture linguistic properties, e.g POS
+  * embeddings are suprisingly able to capture linguistic properties, e.g POS
     particular for POS information
-* syntactic parsers [probed] for ... tense and number (Köhn 2016)
+* syntactic parsers probed for tense and number (Köhn 2016)
 * differences between Köhn and us
-  * treebank ... may introduce domain, annotator and majority class bias unlike
+  * treebank may introduce domain, annotator and majority class bias unlike
   * unresolved ambiguity.  In addition, the study is
   * Köhn limited case, gender, tense and number; and to syntactic parsing as
     the downstream task
@@ -180,8 +179,8 @@ https://github.com/UKPLab/linspectoi
     linguistic information is encoded in the representations
   * They also compare a character-level autoencoder model to a Skip-Gram) and
     * characterlevel models are better at capturing morphosyntactic information
-    * highlights the importance of utilizing word form information [with] typ
-* probing [representations learned] for specific downstream tasks, such as
+    * highlights the importance of utilizing word form information with typ
+* probing representations learned for specific downstream tasks, such as
   * MT (Shi, Padhi, and Knight 2016; Belinkov+ 2017; Bisazza and Tump 2018) or
   * dependency parsing (Vania, Grivas, and Lopez 2018). While this approach
 * more general evaluation, Conneau+ (2018a) and Tenney+ (2019) each introduced
@@ -216,7 +215,7 @@ https://github.com/UKPLab/linspectoi
   * inspired by cognitive linguistics, we assess the ability of the embedding
   * detect pseudowords, i.e., words that are phonetically OK but lack meaning
 
-## 3.1 Task Definitions [conceptual]
+## 3.1 Task Definitions conceptual
 
 ## 3.2 Dataset Creation 13
 
@@ -237,14 +236,14 @@ https://github.com/UKPLab/linspectoi
 
 ## 3.4 Token-Level Probing Tasks 16
 
-* Type-level probing [is] compact and less prone to majority and domain shift
+* Type-level probing is compact and less prone to majority and domain shift
   * less realistic, since downstream NLP tasks mostly operate on full-text data
   * limits the evaluation of contextualized word representations and black-box
 * token-level probing tasks using the modified Universal Dependency Treebanks
   * MSDs have been converted to the UniMorph schema (McCarthy+ 2018). Contrary
   * not filter out any infrequent or ambiguous surface forms; and we do
   * not introduce a “None" class for convenience.  Since the dataset is
-* example ... from the Person-English test-language pair:
+* example from the Person-English test-language pair:
   “Looks good", 0, Third person Singular; meaning that
   the word at index 0 in the given sentence (“Looks") has the THIRD PERSON SING
 
@@ -279,15 +278,15 @@ https://github.com/UKPLab/linspectoi
 
 # 7. Conclusion 39
 
-* the [set] of correlated probing tests
+* the set of correlated probing tests
   * greater for agglutinative langs, especially for syntactic tasks
-  * [depend] on the type of the downstream task, e.g
+  * depend on the type of the downstream task, e.g
     * XNLI performance is strongly correlated with the SameFeat probing
     * SRL is correlated well with the Case
     * Case, POS, Person, Tense and TagCount to have significantly high
       correlations for majority of the analyzed languages and tasks; in
     * Possession was found to correlate well in cases when they were applicable
-* the proposed probing tests can be used to [understand] how the performance
+* the proposed probing tests can be used to understand how the performance
   on probing tests changes after increasing the model size
   * how?
 

@@ -2,7 +2,7 @@ On the Language Neutrality of Pre-trained Multilingual Representations
 Jindřich Libovický, Rudolf Rosa, Alexander Fraser
 arXiv:2004.05160 [cs.CL]
 
-https://github.com/jlibovicky/assess-multilingual-bert 
+https://github.com/jlibovicky/assess-multilingual-bert
 
 # Abstract
 
@@ -10,24 +10,24 @@ https://github.com/jlibovicky/assess-multilingual-bert
   such as multilingual BERT (mBERT) and XLM-RoBERTa
   * Previous work probed the cross-linguality of the representations indirectly
     using zero-shot transfer learning on morphological and syntactic tasks
-* We focus on the language-neutrality of mBERT with respect to lexical sem
+* We focus on the language-neutrality of mBERT with respect to lexical semantics
   * contextual embeddings are more language-neutral and informative
     than aligned static word-type embeddings
     which are explicitly trained for language neutrality
   * two simple methods for achieving stronger language neutrality
-    1. centering of the representation for languages, and second by
-    2. fitting an explicit projection on small parallel data. In addition, we
-* SOTA on language identification and word alignment in parallel sentences
+    1. centering of the representation for languages, and
+    2. fitting an explicit projection on small parallel data
+* we: SOTA on language identification and word alignment in parallel sentences
 
 # 1 Introduction
 
-* Multilingual BERT (mBERT; Devlin+ (2019)) gained popularity as a contextual
+* Multilingual BERT (mBERT; Devlin+ (2019)) gained popularity
   * dependency parsing (Kondratyuk and Straka, 2019a; Wang+ 2019),
   * cross-lingual natural language inference (XNLI) or
   * named-entity recognition (NER) (Pires+ 19; Wu & Dredze, 19; Kudugunta+ 19)
 * Recently, new pre-trained models
   * XLM-RoBERTa (XLM-R; Conneau+ (2019)) outperform mBERT on XNLI and NER tasks
-  * DistilmBERT (Sanh+ 2019) ... at a significantly lower computational cost
+  * DistilmBERT (Sanh+ 2019) at a significantly lower computational cost
 * mBERT is used cross-lingually for zero-shot transfer (Pires+ 2019)
   * morphological and syntactic tasks, at least for typologically similar langs
   * semantic task, sentence-retrieval, with promising initial results
@@ -36,7 +36,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   transfer (Hu+ 2020)
   * we can never be sure if the probing model did not overfit for the [src lng]
   * validation set [usually] from the same language as the training set
-    (otherwise it would not be zero-shot), even when it would have been better
+    (otherwise it would not be zero-shot)
 * we
   * tasks that only involve a direct comparison of the reprs:
     cross-lingual sentence retrieval, word alignment (WA), and
@@ -44,7 +44,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   * explore how the language is represented in the embeddings
     by training language ID classifiers and by assessing
     how the representation similarity corresponds to phylogen language families
-* XLM-RoBERTa (XLM-R; Conneau+ (2019)
+* XLM-RoBERTa (XLM-R; Conneau+ (2019))
   outperforms mBERT in sentence retrieval and MT QE, while offering a
   similar performance for language identification and WA
 
@@ -63,7 +63,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   * if they subtract the average difference between the mBERT embeddings from
     the target language representation, the retrieval accuracy significantly
     increases.  We systematically study this idea in the later sections
-* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual zero-shot 
+* XTREME (Hu+ 2020), a recently introduced benchmark for multilingual zero-shot
   * a wider range of zero-shot transfer tasks that include NLI (Conneau+ 2018)
     and question answering (Artetxe+ 2019; Lewis+ 2019)
   * clearly superior performance of XLM-R compared to mBERT
@@ -89,12 +89,12 @@ https://github.com/jlibovicky/assess-multilingual-bert
 # 4 Probing Tasks
 
 * The first two tasks analyze the contextual embeddings
-* The other three tasks are cross-lingual ... word or sentence similarities
+* The other three tasks are cross-lingual word or sentence similarities
   * we can estimate these similarities using the cosine distance
-* supervised approach ... does not tell us much more about the reprs, but
+* supervised approach does not tell us much more about the reprs, but
   leads to a nice by-product of reaching SOTA accuracies for two of the tasks
 
-## Language Identification. With a representation that captures all phenomena
+## Language Identification
 
 * We train a linear classifier on top of a sentence representation
 
@@ -113,14 +113,14 @@ https://github.com/jlibovicky/assess-multilingual-bert
 * projection of the representations into the “English space”
   * fitted by minimizing the element-wise mean square error
 
-## Word Alignment ... in parallel sentences
+## Word Alignment in parallel sentences
 
 * a minimum weighted edge cover of a bipartite graph. We create an edge for
 * not require parallel data for training
 * To make the algorithm prefer monotonic alignment,
   we add distortion penalty of 1/d to each edge where d is the difference in
   the absolute positions of the respective tokens in the sentence. We add the
-  * weight ... estimated on a devset
+  * weight estimated on a devset
 * invariant to representation centering. Centering the representation would
 
 ## MT Quality Estimation
@@ -137,7 +137,7 @@ and of the MT output reflects the translation quality
 
 # 5 Probed Models
 
-## Static word embeddings [aligned]. As one of the baselines in all our
+## Static word embeddings [aligned]. As one of the baselines in all experiments
 
 * they were explicitly trained to be language-neutral with respect to lex sem
 * We represent sentences as an average of the embeddings of the words
@@ -155,11 +155,11 @@ and of the MT output reflects the translation quality
   single mBERT for dependency parsing and morphological analysis of 75 langs
 * better language neutrality with respect to morphology and syntax
 
-## lng-free. In this experiment, we try to make the representations more
+## lng-free. In this experiment, we try to make the representations lng-free
 
 * adversarial language ID classifiers (Elazar and Goldberg, 2018)
 
-## DistillmBERT. This model was inferred from mBERT by
+## DistillmBERT. This model was inferred from mBERT
 
 * knowledge distillation (Sanh+ 2019)
 * only 6 layers instead of 12, the rest of the hyperparameters remain the same
@@ -205,8 +205,8 @@ and of the MT output reflects the translation quality
   mostly corresponds to the language families
 
 * XLM-R not only has a slightly worse performance in language ID, but also has
-  worse performance in capturing language similarity.  
-  * We hypothesize that ... next-sentence prediction [in] mBERT leads lang-spec
+  worse performance in capturing language similarity.
+  * We hypothesize that next-sentence prediction [in] mBERT leads lang-spec
   * lang is helpful in determining if two sentences are adjacent
 
 ## Parallel Sentence Retrieval. Results in Table 3 reveal that the
@@ -222,7 +222,7 @@ and of the MT output reflects the translation quality
 * XLM-R significantly outperforms all models.  The
 * UDify model that was finetuned for syntax seems to significantly lose sem
 * Adversarial finetuning did not improve the performance
-* Representation centering drastically improves accuracy.  
+* Representation centering drastically improves accuracy.
 * An additional 50% error reduction is achievable via learning a projection on
 
 ## Word Alignment.  Table 5 shows that WA based on mBERT and XLM-R
@@ -230,7 +230,7 @@ and of the MT output reflects the translation quality
 * distortion penalty does
   not seem to influence the alignment quality when using the contextual embeds,
   whereas for the static word embeddings, it can make a difference of 3–6 F 1
-  * ie. contextual embeddings encode relative word positon across languages.  
+  * ie. contextual embeddings encode relative word positon across languages.
 * However, the main advantage [of contextual embeddings]:
   allows accurate alignment of function words
 
@@ -251,7 +251,7 @@ and of the MT output reflects the translation quality
 
 * Supervised regression using either only the source or only MT output also
   * source sentence complexity is already a strong indicator of the MT quality
-  * target sentence embedding alone ... suggests that the structure of the
+  * target sentence embedding alone suggests that the structure of the
     translation hypothesis is what plays the important role. We must interpret
 * ie. QE not being a suitable task for probing semantic
   * semantic adequacy is only a marginally important aspect of MT QE

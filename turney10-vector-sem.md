@@ -7,8 +7,8 @@ From frequency to meaning: vector space models of semantics
 * history
   * The VSM was developed for the SMART information retrieval system
     (Salton, 1971; Salton, Wong, & Yang, 1975)
-  * Rapp (2003) used a vector-based representation of word meaning to 
-    achieve a score of 92.5\% on multiple-choice synonym questions 
+  * Rapp (2003) used a vector-based representation of word meaning to
+    achieve a score of 92.5\% on multiple-choice synonym questions
     from the Test of English as a Foreign Language (TOEFL)
 * We believe that the choice of a particular matrix type is more fundamental
   than other choices, such as the particular linguistic processing or
@@ -17,12 +17,12 @@ From frequency to meaning: vector space models of semantics
 ## 1.1 Motivation for VSM
 
 * Most search engines use VSMs to
-  measure the similarity between a query and a document (Manning et al., 2008)
+  measure the similarity between a query and a document (Manning+ 2008)
 * we take it as a defining property of VSMs that the values of the elements in
   a VSM must be derived from event frequencies, such as the number of times
   that a given word appears in a given context (see Section 2.6)
   * a lexicon or a knowledge base may be viewed as a graph, and a graph may be
-    represented using an adjacency matrix, but this does 
+    represented using an adjacency matrix, but this does
     not imply that a lexicon is a VSM
 
 ## 1.2 Vectors in AI and Cognitive Science
@@ -59,7 +59,7 @@ From frequency to meaning: vector space models of semantics
    * pair–pattern VSMs the Latent Relational Analysis module in the S-Space
      package, which also builds on Lucene
 6. applications for semantic VSMs
-   * historical view of research with semantic VSMs, beginning
+   * historical view of research with semantic VSMs
    1. information retrieval
    2. applications for word–context matrices
    3. pair–pattern matrices
@@ -161,7 +161,7 @@ From frequency to meaning: vector space models of semantics
     * Probabilistic Latent Semantic Indexing (PLSI, Hofmann, 1999),
     * Iterative Scaling (IS, Ando, 2000),
     * Kernel Principal Components Analysis (Scholkopf, Smola, Muller, 1997)
-    * Latent Dirichlet Allocation (LDA, Blei et al., 2003), and
+    * Latent Dirichlet Allocation (LDA, Blei+ 2003), and
     * Discrete Component Analysis (DCA, Buntine & Jakulin, 2006)
   * tend to be more computationally intensive than truncated SVD, but they
     attempt to model word frequencies better
@@ -169,7 +169,7 @@ From frequency to meaning: vector space models of semantics
     _distribution_
     * Minimizing the the Frobenius norm `|X \hat{X}|_F` will minimize the
       noise, if the noise has a Gaussian distribution
-    * word frequencies do not have Gaussian distributions. 
+    * word frequencies do not have Gaussian distributions.
     * More recent algorithms are based on more realistic models of the
       distribution for word frequencies [no reference]
 
@@ -258,8 +258,6 @@ broad survey of applications
 # 7. Alternative Approaches to Semantics
 
 * The applications that we list in Section 6 do not necessarily require a VSM
-  approach. For each application, there are many other possible approaches.  In
-  this section, we briefly consider a few of the main alternatives
 * measuring the semantic similarity of
   * documents and queries. The main alternatives to VSMs are prob models, i.e
     * traditional probabilistic retrieval models in information retrieval
@@ -269,13 +267,13 @@ broad survey of applications
       * by creating [an LM] of the given document and then measuring the
         probability of the given query according to the language model
   * words
-    * lexicons, such as WordNet (Resnik, 1995; Jiang & Conrath, 1997; 
+    * lexicons, such as WordNet (Resnik, 1995; Jiang & Conrath, 1997;
       Hirst & St-Onge, 1998; Leacock & Chodrow, 1998; Budanitsky & Hirst, 2001)
     * view the lexicon as a graph, in which nodes correspond to word senses and
     * similarity between two words is [] proportional to the length of the path
   * relations. As with word–context matrices, the main alternatives are
     * lexicons (Rosario & Hearst, 2001; Rosario, Hearst, & Fillmore, 2002;
-      Nastase & Szpakowicz, 2003; Veale, 2003, 2004). The idea is to
+      Nastase & Szpakowicz, 2003; Veale, 2003, 2004)
     * reduce relational similarity to attributional similarity
 
 # 8. The Future of Vector Space Models of Semantics

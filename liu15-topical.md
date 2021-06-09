@@ -25,7 +25,7 @@ https://github.com/largelymfs/topical_word_embeddings
 
 * problem with Huang+ (2012)
     * ignore complicated correlations among ... contexts
-    * contexts of a word are divided into clusters with no overlaps. 
+    * contexts of a word are divided into clusters with no overlaps.
       * In reality, a word’s several senses may correlate with each other, and
         there is not clear semantic boundary between them
 * this paper: _topical word_ = a word taking a specific topic as context
@@ -71,7 +71,7 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
 
 * similar optimization scheme as that of Skip-Gram used in (Mikolov+ 13)
   SGD + back-propagation
-* Initialization is important for learning TWE models. 
+* Initialization is important for learning TWE models.
   * In TWE-1, we first learn word embeddings using Skip-Gram.  Afterwards, we
     initialize each topic vector with the average over all words assigned to
     this topics, and learn topic embed- dings while keeping word embeddings
@@ -85,9 +85,9 @@ L(D) = 1/M \sum_{i=1}^M \sum_{c=-k..-1,1..k}
   * topic assignments with LDA
     * # topics T = 400 (gibbsLDA default is 100)
     * # iterations I = 50
-* Skip-Gram and TWE models, we set 
-  * window size as 5 and the 
-  * dimensions of both word embeddings and topic embeddings as K = 400. 
+* Skip-Gram and TWE models, we set
+  * window size as 5 and the
+  * dimensions of both word embeddings and topic embeddings as K = 400.
   * For TWE-1 and TWE-3, we obtain topical word embeddings via concatenation
     over corresponding word embeddings and topic embeddings
 

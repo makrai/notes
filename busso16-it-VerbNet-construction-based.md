@@ -4,7 +4,7 @@ LREC 2016
 
 # Abstract
 
-* inspired by 
+* inspired by
   * Levin (1993) and VerbNet (Kipper-Schuler, 2005)
   * constructionist framework (Goldberg, 1995; 2006) and is
   * distribution-based. It is also semantically characterized by a link to
@@ -27,9 +27,9 @@ LREC 2016
 * [extensions to Levin (1993),] especially Korhonen and Briscoe (2004)
 * translate or adapt [VerbNet] in other languages
   * Merlo+ (2002) ... convert 20 Levin classes to Italian, obtaining
-  * Recent ... are the ones of Estonian VerbNet (Jentson, 2014) and 
+  * Recent ... are the ones of Estonian VerbNet (Jentson, 2014) and
     Brazilian Portuguese (Scarton & Aluısio, 2012)
-  * comparable to VerbNet were also done for Spanish (Ferrer, 2004), 
+  * comparable to VerbNet were also done for Spanish (Ferrer, 2004),
     German (Schulte im Walde, 2006), and Japanese (Suzuki &Fukumoto, 2009)
   * French, several studies and researches have been done
     * Saint-Dizier (1996) first produced a resource rather similar to VerbNet
@@ -48,14 +48,14 @@ LREC 2016
   * there are generally more numerous, broad and powerful generalizations
     surrounding particular surface forms than the ones that come from
     transformational and derivational accounts
-  * each argument structure construction specifies its 
+  * each argument structure construction specifies its
     semantic and information‐structure properties
-  * in striking contrast with earlier derivational accounts 
+  * in striking contrast with earlier derivational accounts
     * deriving one variant of an alternation from another
 * we also described each class associating it to the corresponding FrameNet
   conceptual frame (Baker+ 1998)
-  * integrate characteristics of the so-called ontological taxonomies 
-    in an otherwise distributional one. 
+  * integrate characteristics of the so-called ontological taxonomies
+    in an otherwise distributional one.
   * FrameNet’s roles (aka Frame Elements)
 * classes [here have] a prototype-like structure (Rosch, 1973)
 
@@ -63,12 +63,12 @@ LREC 2016
 
 * bootstrapped from ... the 1000 most frequent Italian verbs (Lebani+ 2014)
 * monolingual Italian dictionary (Sabatini & Coletti, 2012, henceforth: S&C)
-  * the only Italian dictionary that indicates the verb valency 
+  * the only Italian dictionary that indicates the verb valency
 * matched with ... the La Repubblica corpus (Baroni+ 2004)
 * _..._
-* corpus-based lexical resource on Italian argument structure 
+* corpus-based lexical resource on Italian argument structure
   LexIt (Lenci+ 2012)
-* the Italian section (Cennamo& Fabrizio, 2013) 
+* the Italian section (Cennamo& Fabrizio, 2013)
   of the typological database ValPal (Hartmann+ 2013)
   * part of the Leipzig Valency Classes Project, which aims to follow up
     the works by Levin (1993) for English and by Apresjan (1967) for Russian;
@@ -80,9 +80,9 @@ LREC 2016
 
 * [verbs that all refer to] the movement of a Theme performed by an Agent or a
   Cause + verbs of KILLING [were] used to “tune” our method
-* We 
+* We
   * maintained the original L/V English name for the general description of the
-    classes  
+    classes
   * named each subclass with its most prototypical Italian member
   * [subclasses do] not precisely correspond to a VerbNet _class_
 
@@ -97,4 +97,4 @@ LREC 2016
      classes have been excluded
   3. subclasses in the original model were transformed into classes in our
      system, or independent classes were reduced to subclasses
-  4. new Italian subclasses e.g. Under the CHANGE OF POSSESSION class 
+  4. new Italian subclasses e.g. Under the CHANGE OF POSSESSION class

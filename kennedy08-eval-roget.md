@@ -33,11 +33,11 @@ https://sites.google.com/site/openrogets/
     relatedness between pairs of terms.  Terms that appear closer together in
     the Thesaurus get higher weights than those farther apart
 * Kennedy and Szpakowicz (2007) disambiguates hypernymy
-* interface to Roget’s Thesaurus implemented in Java 5.0 2 .  It is 
+* interface to Roget’s Thesaurus implemented in Java 5.0 2 .  It is
   * built around a large index which stores the location in the thesaurus of
     each word or phrase; the system individually indexes all words within each
     phrase, as well as the phrase itself
-  * improves results in a few applications, which we will discuss later 
+  * improves results in a few applications, which we will discuss later
 
 # 2 Content comparison of the 1911 and 1987 Thesauri
 
@@ -89,7 +89,7 @@ https://sites.google.com/site/openrogets/
   * H&SO (Hirst and St-Onge, 1998)
   * Path (counts edges between synsets)
 * large vectors of cooccurring terms from a corpus, so WordNet is only part of
-  the system. We used Pedersen’s Semantic Distance software package 
+  the system. We used Pedersen’s Semantic Distance software package
   (Pedersen+ 2004)
   * Lesk (Banerjee and Pedersen, 2002)
   * and finally Vector and Vector Pair (Patwardhan, 2003)
@@ -115,9 +115,9 @@ https://sites.google.com/site/openrogets/
   * the sentences are definitions from the Collins Cobuild dictionary
     (Sinclair, 2001)
   * Thirty people were then asked to assign relatedness scores
-* method of sentence representation that 
+* method of sentence representation that
   * involves mapping the sentence into weighted concepts in Roget’s or WordNet
- * concept 
+ * concept
     * in Roget’s to be either a Class, Section, ..., Semicolon Group, while a
     * in WordNet: any synset
  * Concepts are weighted by two criteria

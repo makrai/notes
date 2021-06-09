@@ -21,17 +21,17 @@ discussed.
 * the lower bound issue (and a further set of concerns regarding the upper
   bound) continue to cast a shadow over much WSD activity and its evaluation
   [9,7,4].
-  4. 
-    * Philip Edmonds and Adam Kilgarriff. Guest editors, 
-    * special issue on evaluating word sense disambiguation systems. 
+  4.
+    * Philip Edmonds and Adam Kilgarriff. Guest editors,
+    * special issue on evaluating word sense disambiguation systems.
     * 2002 J. Natural Language Engineering, 8(4).
-  7. 
-    * Adam Kilgarriff and Martha Palmer. Introduction, 
-    * Special Issue on S ENSEVAL : Evaluating Word Sense Disambiguation Programs. 
+  7.
+    * Adam Kilgarriff and Martha Palmer. Introduction,
+    * Special Issue on S ENSEVAL : Evaluating Word Sense Disambiguation Programs.
     * 2000 Computers and the Humanities, 34(1–2):1–13.
-  9. 
+  9.
     * Adam Kilgarriff
-    * Gold standard datasets for evaluating word sense disambiguation programs.  
+    * Gold standard datasets for evaluating word sense disambiguation programs.
     * 1998 Computer Speech and Language, Special Issue on Evaluation of Spee...
 
 # 2 The Model
@@ -44,8 +44,8 @@ discussed.
   word.  We assume any instance of a word can be assigned to !1 sense
   * assumptions are patently untrue [11,6,8]
     6. Patrick Hanks. 1996. Contextual dependency and lexical sets.
-    8. Adam Kilgarriff. 1997. ‘I don’t believe in word senses’. 
-    11. George Lakoff. 1987. Women, Fire and Dangerous Things.  
+    8. Adam Kilgarriff. 1997. ‘I don’t believe in word senses’.
+    11. George Lakoff. 1987. Women, Fire and Dangerous Things.
 * in the absence of much empirical evidence about the distribution of the whole
   population of words senses, we assume their distribution is as for words. We
   expect word senses to be power-law-distributed. We assume that the population
@@ -60,7 +60,7 @@ discussed.
   of the examples are in the same area of meaning, it becomes tempting to
   allocate the word more column inches and more meanings.
 
-## 4.3 
+## 4.3
 
 * A system that concentrates on identifying the commonest sense could well
 outperform one that concentrates on disambiguation.
@@ -72,7 +72,7 @@ outperform one that concentrates on disambiguation.
 > very little context.  We have taken a different approach. Since we have been
 > able to find useful information out to 100 words (and measurable information
 > out to 10,000 words), we feel we might as well make use of much larger
-> contexts.  
+> contexts.
 
   * In looking at a very large window, they approximate an approach which
     identifies a domain.

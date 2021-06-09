@@ -4,15 +4,15 @@ Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, Larry Heck
 # ABSTRACT
 
 * Latent semantic models, such as LSA, intend to map a query to its relevant
-  documents at the semantic level where keyword-based matching often fails. 
-* In this study 
-  * a series of new latent semantic models with a deep structure that 
+  documents at the semantic level where keyword-based matching often fails.
+* In this study
+  * a series of new latent semantic models with a deep structure that
   * project queries and documents into a common low-dimensional space where the
     relevance of a document given a query is readily computed as the distance
     between them. The proposed deep structured semantic models are
 * discriminatively trained by maximizing the conditional likelihood of the
   clicked documents given a query using the clickthrough data. To make our
-  models applicable to 
+  models applicable to
 * large-scale Web search applications, we also use a technique called word
   hashing, which is shown to effectively scale up our semantic models to handle
   large vocabularies which are common in such tasks.  The new models are

@@ -175,8 +175,8 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 # 2 Available Lexical Resources 21
 
-* differing goals, and yet are surprisingly compatible. They 
-* differ primarily in the granularity of the semantic role labels. 
+* differing goals, and yet are surprisingly compatible. They
+* differ primarily in the granularity of the semantic role labels.
 * PropBank uses very generic labels such as Arg0,
 * VerbNet
   * several alternative syntactic frames and a set of semantic predicates,

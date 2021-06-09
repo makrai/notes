@@ -1,6 +1,6 @@
-Ablak által világosan – 
+Ablak által világosan –
   Vonzatkeret-egyértelműsítés az igekötők és az infinitívuszi vonzatok segítségével
-Vadász Noémi, Kalivoda Ágnes, Indig Balázs 
+Vadász Noémi, Kalivoda Ágnes, Indig Balázs
 
 ## 1.1. Az ablak és a tározó
 

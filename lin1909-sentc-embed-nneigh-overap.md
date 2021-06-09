@@ -85,7 +85,7 @@ arXiv:1909.10724 [cs.CL]
 
 # 4 Experimental Details 4
 
-* The results in §5 are with k set to 50, 
+* The results in §5 are with k set to 50,
   averaged across five samples of n = 100 queries
   * We illustrate the effects of different k and N2O samples in §6
 
@@ -136,7 +136,7 @@ arXiv:1909.10724 [cs.CL]
 * Table 2
   * an example query with a sentence that is in the 5-nearest neighborhood for
     all sentence embedders
-  * sentences that are highly ranked for some embedder but 
+  * sentences that are highly ranked for some embedder but
     not in the [top 50] for any other
 
 # 8 Known paraphrase
@@ -161,7 +161,7 @@ arXiv:1909.10724 [cs.CL]
   * syntactic properties, like tree depth; and
   * semantic properties, like coordination inversion
   * Ettinger+ (2016), Adi+ (2017), Conneau+ (2018), and Zhu+ (2018)
-* Downstream evaluations are often classification tasks 
+* Downstream evaluations are often classification tasks
   for which good sentence representations are helpful (e.g., NLI)
   * Evaluations like the RepEval 2017 shared task (Nangia+ 2017),
   * SentEval toolkit (Conneau and Kiela, 2018), and

@@ -25,11 +25,11 @@ Noun Sense Induction and Disambiguation
         Bartunov+ 2016; Li and Jurafsky, 2015)
     * AI-KU system (Baskaya+ 2013)
     * Unimelb system by Lau+ (2013)
-  * word (ego-network) clustering (Lin, 1998; Pantel and Lin, 2002; 
+  * word (ego-network) clustering (Lin, 1998; Pantel and Lin, 2002;
     Widdows and Dorow, 2002; Biemann, 2006; Hope and Keller, 2013a)
-      * Nodes of an ego-network can be 
+      * Nodes of an ego-network can be
         * words semantically similar to the target word, as in our approach, or
-        * context words relevant to the target, as in the UoS system 
+        * context words relevant to the target, as in the UoS system
           (Hope and Keller, 2013a)
 
 # 4 Results

@@ -48,7 +48,7 @@ Area Paper April 2016
 ### 4.3.1 Experimental Setup and baselines p29
 
 * we build two systems:
-  * SE-WSI-fix which adopts Multi-Sense Skip-gram model (Neelakantan+ 
+  * SE-WSI-fix which adopts Multi-Sense Skip-gram model (Neelakantan+
     2014) and assigns 3 senses for each word type, and
   * SE-WSI-CRP (Li and Jurafsky, 2015) which dynamically decides the number of
     senses using a Chinese restaurant process

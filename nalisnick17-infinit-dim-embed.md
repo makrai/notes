@@ -117,7 +117,7 @@ https://github.com/enalisnick/infiniteWordEmbeddings
         * after training a traditional Skip-Gram model
     * senses and vectors are learned jointly
       * Neelakantan+ (2015),
-        * estimate an input word’s cluster membership 
+        * estimate an input word’s cluster membership
           from the current value of the context representations
         * also describe a nonparametric variant (NP-MSSG) that
           * creates a new cluster if an observed context is sufficiently
@@ -175,25 +175,25 @@ https://github.com/enalisnick/infiniteWordEmbeddings
 
 [new version of the paper]
 
-## Quantitative Evaluation. 
+## Quantitative Evaluation.
 
 * We test each model’s ability to rank word pairs according to ...  similarity
   * WordSim353 (Finkelstein+ 2001) and MEN (Bruni+ 2014). As is
 * SD-SG and SDCBOW perform better than their 50 dimensional counterparts but
-  worse than their 200 dimensional counterparts. 
+  worse than their 200 dimensional counterparts.
   All scores are ... separated by no more than 0.1.
 
-## Qualitative Evaluation. 
+## Qualitative Evaluation.
 
 * distributions over vector dimensionalities. Subfigure (b) of Figure 1 shows
   * the distribution is long-tailed, and vague words occupy the tail while
-  * e.g. _photon_ has an expected dimensionality of 19 while the homograph 
-    _race_ has 150. Note that 
+  * e.g. _photon_ has an expected dimensionality of 19 while the homograph
+    _race_ has 150. Note that
   * expected dimensionality correlates with word frequency ... but does not
     follow it strictly. For instance, the word _william_
 * we plot the quantity p(z|w) for two homographs, race (c) and player (d), as
-  * the distribution does indeed have at least two modes: 
-  * [semantic field] determined by computing nearest neighbors 
+  * the distribution does indeed have at least two modes:
+  * [semantic field] determined by computing nearest neighbors
     with that dimension as a cutoff
-    1. at around 70 dimensions represents car racing, as 
+    1. at around 70 dimensions represents car racing, as
     2. at around 100 dimensions encodes the anthropological meaning

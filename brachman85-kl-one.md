@@ -10,31 +10,31 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   number of places in the AI community.  Here we present the kernel ideas of
   KL-ONE, emphasizing its ability to form complex structured descriptions
 * we discuss
-  * description-forming structures, 
-  * the philosophy underlying the system, highlight notions of 
+  * description-forming structures,
+  * the philosophy underlying the system, highlight notions of
     * taxonomy and classification that ore central to it
   * use of KL-ONE and its classifier in a recognition task
 
 # 1. INTRODUCTION
 
-* KL-ONE 
-  * a system for representing knowledge in Artificial Intelligence 
+* KL-ONE
+  * a system for representing knowledge in Artificial Intelligence
     * more or less in the tradition of semantic networks and frames
-  * a computational incarnation of ... sfrucfured inheritance networks 
+  * a computational incarnation of ... sfrucfured inheritance networks
     (Brachman, 1978)
 * first appeared in 1977 as ... the first author’s Ph.D. dissertation (Brachman, 1978)
-  * whose primitives were rather [geared to] AI knowledge representation 
+  * whose primitives were rather [geared to] AI knowledge representation
     * than those of predicate logic
   * the “epistemological level”
   * to deal carefully with ideas of “description,” “attribute,” “concept,”
-    “role,” “inheritance,” and “instantiation,” which were 
+    “role,” “inheritance,” and “instantiation,” which were
     * treated in a somewhat informal manner in previous representation systems
     * In that regard, the work owes much to Woods (1975) and Brachman (1977),
       which criticized various inconsistencies and ambiguities in semantic
       network systems.’
 * used in/for
-  * two systems at Bolt Beranek and Newman Inc.: 
-    * a system for intelligent information presentation and 
+  * two systems at Bolt Beranek and Newman Inc.:
+    * a system for intelligent information presentation and
     * a large prototype natural language understanding system
       * Appendix: an example of KL-ONE’s utility in the natural language system
   * understanding and generating natural language, interactive information
@@ -49,7 +49,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 # 2. LANGUAGE STRUCTURE AND PHILSOPHY
 
-* representation of conceptual information based on the idea of 
+* representation of conceptual information based on the idea of
   * strucfured inheritance networks (Brachman, 1978, 1979)
 * represent general conceptual information and is typically used in the
   construction of the knowledge base of a single reasoning entity
@@ -60,14 +60,14 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * descriptional part of KL-ONE allows one to form a variety of descriptive
   terms out of other descriptive terms using a small set of description-forming
   operators.
-* assertional part 
-  * use terms from the description language to 
+* assertional part
+  * use terms from the description language to
   * make statements about the world
   * ! somewhat impoverished as _compared to a first order language_ with
     equality; they include only statements of existence, of coreference of
     description, and of identity of individual constants (all in a particular
     context)
-* two new experimental representation systems, 
+* two new experimental representation systems,
   * Krypton (Brachman et al., 1983)
   * KL-TWO (Moser, 1983).
 
@@ -79,13 +79,13 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   * links ... being used to represent implementational pointers, logical
     relations, semantic relations (e.g., “cases”), and arbitrary conceptual and
     linguistic relations
-  * “levels” 
+  * “levels”
     * implementational, logical, conceptual, linguistic
     * (Brachman, 1979)
 * set of underlying object and relation types for knowledge structuring
   * what might be called an “epistemology.”
   * “epistemologically primitive” structure types (e.g., “Concept ,” “Role”)
-  * structure-forming operations 
+  * structure-forming operations
     * e.g., “specialization,” “restriction,” “differentiation”
 
 ## 2.2 Primitive and Defined Concepts
@@ -102,7 +102,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 # 3. NETWORKS AND THE NOTION OF A CLASSIFIER p7
 
-* KL-ONE is based on the idea of sfructured inheritance 
+* KL-ONE is based on the idea of sfructured inheritance
   * it is convenient to think of a KL-ONE knowledge base as a type of semantic
     network with a roughly hierarchical organization of general types (called
     Generic Concepts)
@@ -115,11 +115,11 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
   KL-ONE description and putting it where it belongs in the hierarchy.
 * KL-ONE knowledge bases have a network flavor, with the links standing for
   what we have called the “epistemologically primitive” relations
-  
+
 # 4. GENERIC CONCEPTS AND BASIC TAXONOMY p8
 
 * types of Concepts
-  * The most important type is the Generic Concept, 
+  * The most important type is the Generic Concept,
     * the KL-ONE equivalent of a “general term” (Quine, 1960)
 * components of a Concept are
   * its subsuming Concepts (its superconcepts)
@@ -129,14 +129,14 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
       properties, parts, etc.), and
     * Structural Descriptions, which express the interrelations among the
       Roles
-* Concept must 
+* Concept must
   * have more than one superConcept (if there are no local restrictions),
-  * differ from its superconcept in at least one restriction, OR 
+  * differ from its superconcept in at least one restriction, OR
   * be primitive.
   * A Concept with no local restrictions is defined as the conjunction of its
     superconcepts.
-* superconcept serves as a proximate genus, whereas the 
-  * local internal structure expresses _essential differences_, 
+* superconcept serves as a proximate genus, whereas the
+  * local internal structure expresses _essential differences_,
   * as in classical classificatory definition (Sellars, 1917)
 * the network structure formed by the subsumption relationships between
   Concepts as a “taxonomy.”
@@ -212,10 +212,10 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 # 9. STRUCTURAL DESCRIPTIONS p22
 
 * form Concepts by constraining the relation between more than one Role of the
-  same Concept.  
+  same Concept.
 * e.g.
   * the vertical clearance of an arch is a function of the location of its
-    lintel and the surface the arch is standing on; or, 
+    lintel and the surface the arch is standing on; or,
   * we might characterize an “important-message” as one whose sender is the
     supervisor of the recipient
 * these relations among Roles are specified with Structural Descriptions.
@@ -247,8 +247,8 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 # 10. ASSERTIONAL LANGUAGE p27
 
-* We have tried carefully to distinguish between 
-  * purely descriptional structure and 
+* We have tried carefully to distinguish between
+  * purely descriptional structure and
   * assertions about coreference, existence, etc.
     * relative to a Confexf
     * not affect the (descriptive) taxomony of generic knowledge
@@ -276,7 +276,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 * KL-ONE has pioneered the idea of constructing a representation out of
   “epistemological” primitives and has provided a first set of such primitives
-  for examination and experimentation.  It has also instigated 
+  for examination and experimentation.  It has also instigated
 * first-class status for Roles (a k a slots) in frame-based knowledge
   representation systems, including the potential for multiple fillers and ex-
   plicit differentiation into subRoles

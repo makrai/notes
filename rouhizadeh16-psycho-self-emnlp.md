@@ -5,7 +5,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 
 # Abstract
 
-* rate of [1sg pronouns predicts] demographic and psychological factors
+* rate of 1sg pronouns predicts demographic and psychological factors
 * We find that pronouns are overall more predictive when taking
   * dependency relations and
   * verb semantic categories into account, and,
@@ -16,7 +16,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * organization
   * relationship between first person singular pronouns and
     age, gender, and depression
-  * syntactic position of the pronoun 
+  * syntactic position of the pronoun
     * occurrence in the subject and direct object position
   * self-referenced use of verbs compared to their general use
     across different semantic categories
@@ -73,7 +73,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
         observation or data point differs from the mean value
 * Both Levin’s and CCA-based verb classes are derived from syntactic
   * not distinguish antonyms
-  * we integrate [sentiment] information in our verb clustering
+  * we integrate sentiment information in our verb clustering
     * positive and negative sentiment scores
       from EmoLex word-emotion association lexicon (Mohammad and Turney, 2013),
     * dividing each of our clusters into positive, negative, and neutral
@@ -82,7 +82,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 
 * encoded as the mean from maximum likelihood estimation over the probability
   of mentioning a first person singular pronoun in a given context
-* The overall usage [of a] first person singular pronoun: P (1p) = P (P N = 1p)
+* The overall usage of a first person singular pronoun: P (1p) = P (P N = 1p)
 * The probability ... in the nsubj, and the dobj positions: P (1p|r)
 * The probability ... in the nsubj[/dobj] positions of a given verb category
 
@@ -91,7 +91,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * first replicating known general relationships of 1st-person singular
   pronouns with gender, age, and depression
 
-## Replication [of the gender, age, and depression effects]
+## Replication of the gender, age, and depression effects
 
 * linear and logistic regression to correlate gender, age, and depression
   with P (1p) (first-person singular pronoun use)
@@ -101,7 +101,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
     coefficient for the variable in question
   * Logistic regression is used for gender, since it is binary, while
   * linear regression is used for the continuous age and depression variables
-* we found significant relationships [with] gender (β = .11, p < .001),
+* we found significant relationships with gender (β = .11, p < .001),
   age (r = −0.17, p < .001), and depression score (r = −0.06, p < .01)
 
 ## Syntactic Context
@@ -113,7 +113,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * Table 1 reports
   * the area under the ROC curve (AUC) for gender prediction and the
   * Mean Square Error (MSE) for predicting age and depression
-* AUC [evaluates] the class probabilities of test instances
+* AUC evaluates the class probabilities of test instances
 * classifier
   * linear-SVM in the case of gender, and
   * ridge-regression in the case of depression
@@ -129,4 +129,4 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
     (Meyer et al., 2001)
 * Tables 2, 3, and 4 show the most predictive features,
   using the best performing clustering method (i.e. Levin & Sentiment)
-  * in the case of age and gender ...  the direction completely change[s]
+  * in the case of age and gender ...  the direction completely changes

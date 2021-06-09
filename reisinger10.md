@@ -47,7 +47,7 @@ Multi-Prototype Vector-Space Models of Word Meaning
 
 * clusters correspond to _..._
   * we do not assume that clusters correspond to traditional word senses
-  * Rather, we only rely on clusters to capture meaningful 
+  * Rather, we only rely on clusters to capture meaningful
     variation in word usage
 * clustering
   * method
@@ -59,7 +59,7 @@ Multi-Prototype Vector-Space Models of Word Meaning
   * movMF compared to spherical k-means (Dhillon and Modha, 2001)
     * both [use] cosine similarity
     * movMF introduces an additional per-cluster concentration parameter
-      * controlling its semantic breadth, allowing it to more accurately 
+      * controlling its semantic breadth, allowing it to more accurately
         model non-uniformities in the distribution of cluster sizes
     * preliminary experiments comparing various clustering methods
       * movMF gave the best results
@@ -76,7 +76,7 @@ Multi-Prototype Vector-Space Models of Word Meaning
   * Nonparametric clustering
   * Cluster similarity metrics
   * Comparing to traditional senses
-    * Compared to WordNet, 
+    * Compared to WordNet,
       our best-performing clusterings are significantly more fine-grained
   * Joint model
 

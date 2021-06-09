@@ -42,7 +42,7 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
 * more recent, updated reference is [28]
 * manifolds, a good starting point is [11]
 * high-dimensional application of directional statistics was [5],
-  * key application was clustering of text and gene expression data 
+  * key application was clustering of text and gene expression data
     using mixtures of vMFs
 * other applications and settings where hyperspherical or manifold data arise
   * feature extraction based on correlation in [19]
@@ -66,7 +66,7 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
 * Mixtures of vMFs have been ... used in text clustering; see overview [6]
 * TODO
 * The key characteristic of text data is its high dimensionality
-  * for modeling clusters ..., the approximate computation of the 
+  * for modeling clusters ..., the approximate computation of the
     concentration parameter κ as discussed in Sec. 4.1 is of great importance
     ... due to floating point difficulties
 
@@ -85,5 +85,5 @@ Book Chapter 2016 in [Directional Statistics]  (eds. C. Ley and T. Verdebout)
 # Conclusion
 
 * we hope to see more exploration of directional models in
-  Bayesian models, Hidden Markov Models using directional models, and 
+  Bayesian models, Hidden Markov Models using directional models, and
   deep generative models

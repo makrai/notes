@@ -46,7 +46,7 @@
 
 * A Quorára való hivatkozás hasznos, de nem sztenderd, ezért a szövegben
   jelezni kéne az abból származó fenntartásokat, hogy ez a vélemény nem esett
-  át a hagyományos publikációknál szokásos bírálaton. 
+  át a hagyományos publikációknál szokásos bírálaton.
 
 2.3 Karakter n-gram 16
 

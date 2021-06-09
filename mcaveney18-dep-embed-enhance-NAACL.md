@@ -19,8 +19,8 @@ naacl 2018
   * for sentence classification (Komninos and Manandhar, 2016)
   * Li+ (2017) ... model type (e.g., CBOW, Skip-Gram, GloVe)
   * Abnar+ (2018) ... predicting brain activation patterns
-  * The best model to date 
-    for distinguishing between similarity and relatedness 
+  * The best model to date
+    for distinguishing between similarity and relatedness
     combines word embeddings, WordNet, and dictionaries (Recski+ 2016)
 * existing work is [limited to] Stanford Dependencies (De Marneffe& 2008)
 * We

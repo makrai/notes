@@ -103,10 +103,10 @@ in the matrices are translations of each other
 
 # 4 Evaluation
 
-* These tasks have been used in previous works (Klementiev+ 2012; Luong
- + 2015; Vulić and Moens, 2013a; Guo+ 2015) for evaluating
-  cross-lingual embeddings, but no comparison exists which uses them in
-  conjunction
+* These tasks have been used in previous works
+  (Klementiev+ 2012; Luong+ 2015; Vulić and Moens, 2013a; Guo+ 2015)
+  for evaluating cross-lingual embeddings, but
+  no comparison exists which uses them in conjunction
 * all models are trained with embeddings of size 200. We provide all models
   with parallel corpora, irrespective of their requirements
 
@@ -231,7 +231,7 @@ in the matrices are translations of each other
 
 ## 4.5 Cross-lingual Dependency Parsing
 
-* direct-transfer of dependency parsers was first shown in Täckström+ 
+* direct-transfer of dependency parsers was first shown in Täckström+
   (2012)
 * we use the cross lingual transfer setup of Guo+ (2015). 10 Their
   framework trains a transition-based dependency parser using nonlinear
@@ -294,7 +294,7 @@ context, which helps in pulling apart the synonyms and antonyms
   models relying on cheaper forms of supervision (such as BiVCD) perform al-
   most on par with models requiring expensive supervision
 * cross-lingual semantic tasks, like cross-lingual document classification
-  and dictionary induction, 
+  and dictionary induction,
   the model with the most informative supervision performs best overall
-* syntactic task of dependency parsing, 
+* syntactic task of dependency parsing,
   models that are supervised at a word alignment level perform slightly better

@@ -5,13 +5,13 @@ EMNLP 2018
 # Abstract
 
 * the choice of neural architecture (e.g. LSTM, CNN, or self attention)
-* both end task accuracy and qualitative [intrinsic] properties
+* both end task accuracy and qualitative intrinsic properties
 * there is a tradeoff between speed and accuracy
   * between LSTMs and the other alternatives,
     but the effect is relatively modest and all three networks work in practice
 * all architectures
-  * outperform word embeddings for four ... NLP tasks
-  * representations ... vary with network depth,
+  * outperform word embeddings for four NLP tasks
+  * representations vary with network depth,
     * exclusively morphological based at the word embedding layer through
     * local syntax based in the lower contextual layers to
     * longer range semantics such coreference at the upper layers
@@ -28,19 +28,19 @@ EMNLP 2018
 * relative error reductions range from 10–25%
 * architectures
   * Previous work on learning contextual representations: LSTM-based biLMs, but
-  * [there are] more computationally efficient networks ... for sequence modeln
+  * there are more computationally efficient networks for sequence modeln
     * including gated CNNs for language modeling (Dauphin+ 2017) and
     * feed forward self-attention based approaches for machine translation
       (Transformer; Vaswani+ 2017)
     * RNNs are forced to compress the entire history into a hidden state vector
   * each architecture will represent information in a different manner
-  * we study whether more efficient architectures can [achieve] high quality
+  * we study whether more efficient architectures can achieve high quality
 * what the different networks learn
   * detailed quantitative evaluation
   * a rich hierarchy of contextual information throughout the layers
-  * analogous [to] deep CNNs trained for image classification
+  * analogous to deep CNNs trained for image classification
     (Zeiler and Fergus, 2014)
-    * constituent structure [is] more local than coreference (Kuncoro+ 2017)
+    * constituent structure is more local than coreference (Kuncoro+ 2017)
   * the word embedding layer of deep biLMs focuses exclusively on morphology
     * in contrast to traditional word vectors which encode some semantics
   * the lowest contextual layers of biLMs focus on local syntax, while the
@@ -60,7 +60,7 @@ EMNLP 2018
 * biLM combines a forward and backward LM to jointly maximize the log likelihud
 * first produce a context-insensitive token representation or word embedding
   (with either an embedding lookup or in our case a character aware encoder)
-* Then ... L layers of context-dependent representations h k,i
+* Then L layers of context-dependent representations h k,i
   using a RNN, CNN or feed forward network (see Sec. 3)
 * top layer output h k,L is used to predict the next token using Softmax
 * concatenate the forward and backward states to form
@@ -88,7 +88,7 @@ EMNLP 2018
 
 ## 3.1 LSTM
 
-* Among the RNN variants, LSTMs ... provide SOTA performance 
+* Among the RNN variants, LSTMs provide SOTA performance
   for several benchmark LM tasks (Józefowicz+ 2016; Merity+ 2018; Melis+ 2018)
 * LSTM with projection (Sak+ 2014)
   * use a large hidden state while reducing the total number of parameters
@@ -97,13 +97,13 @@ EMNLP 2018
 ## 3.2 Transformer
 
 * Transformer (Vaswani+ 2017)
-* a feed forward self-attention based architecture [originally for MT]
+* a feed forward self-attention based architecture originally for MT
 * constituency parsing (Kitaev and Klein, 2018) and SRL (Tan+ 2018)
 * Each identical layer in the encoder
-  * multi-headed attention between a given token and all other [history] tokens
+  * multi-headed attention between a given token and all other history tokens
   * position wise feed forward network
 * To adapt the Transformer for bidirectional language modeling, we
-  * mask out future tokens for the forward language model and [vice versa]
+  * mask out future tokens for the forward language model and vice versa
 * Concurrent with, Radford+ (2018) trained a large forward Transformer LM and
   fine tuned it for a variety of NLP tasks
 
@@ -111,7 +111,7 @@ EMNLP 2018
 
 * competitive results for sequence modeling
   * e.g.~sequence-to-sequence machine translation (Gehring+ 2017)
-  * Dauphin+ (2017): using Gated Linear Units (GLU), 
+  * Dauphin+ (2017): using Gated Linear Units (GLU),
     perplexities comparable to large LSTMs on large scale language modeling
 * To adapt the Gated CNN for bidirectional language modeling, we
   * closely followed the publicly available ConvSeq2Seq implementation,
@@ -120,18 +120,18 @@ EMNLP 2018
 
 ## 3.4 Pre-trained biLMs
 
-* first time that the Transformer [provides] competitive results for LM
-* our goal is to compare representations [of approximately equal] perplexity
+* first time that the Transformer provides competitive results for LM
+* our goal is to compare representations of approximately equal perplexity
 * The Transformer and CNN based models are 3--5x faster than the LSTM ones
-* While the CNN and Transformer implementations are ... well optimized, the
-  LSTM biLM [does not use an optimized CUDA kernel due to] the projection cell
+* While the CNN and Transformer implementations are well optimized, the
+  LSTM biLM does not use an optimized CUDA kernel due to the projection cell
 * the faster architectures will allow training to scale to large unlabeled txt
   * improve the quality of biLM [] for syntactic tasks (Zhang and Bowman, 2018)
 
 # 4 Evaluation as word representations 4
 
 * four benchmark NLP tasks
-* we ... swapping out pre-trained GloVe vectors (Pennington+ 2014) 
+* we swapping out pre-trained GloVe vectors (Pennington+ 2014)
   for contextualized word vectors from each biLM
   by applying the learned weighted average ELMo pooling from Peters+ (2018)
 * not fine tune the LM weights
@@ -153,8 +153,8 @@ EMNLP 2018
   * another biLSTM inference composition layer, and
   * finally a pooling operation before the output layer
   * With the 2-layer LSTM ELMo, it is SOTA for SNLI (Peters+ 2018)
-  * [now] Transformer accuracies 0.2% / 0.6% (matched/mismatched) less
-  * reduce the matched/mismatched performance differences [between] domains
+  * now Transformer accuracies 0.2% / 0.6% (matched/mismatched) less
+  * reduce the matched/mismatched performance differences between domains
   * 4-layer LSTM ELMo-like embeddings sets a new SOTA
 
 ## 4.2 Semantic Role Labeling
@@ -175,7 +175,7 @@ EMNLP 2018
 * LSTM based models demonstrate the best performance with a
   0.2% and 1.0% improvement over the Transformer and CNN models, respectively
 * the explicit recurrence structure modeled with the biLSTM in the RSP
-  is [not] important for parsing, see Sec.~5.3
+  is not important for parsing, see Sec.~5.3
 
 ## 4.4 Named entity recognition
 
@@ -191,7 +191,7 @@ EMNLP 2018
 
 * In this section, we examine the intrinsic properties of contextual vectors
   * focusing on those that are independent of the architecture details
-  * how ... linguistic information
+  * how linguistic information
     * morphology in the word embedding layer, to
     * local syntax in the lowest contextual layers, to
     * semantic relationships such as coreference in the upper layers
@@ -199,7 +199,7 @@ EMNLP 2018
   1. inter-sentence contextual similarity of words and phrases (Sec. 5.1)
   2. in contrast to traditional word vectors, the biLM word embeddings capture
      little semantic information (Sec. 5.2)
-  3. [semantics] is instead represented in the contextual layers (Sec. 5.3)
+  3. semantics is instead represented in the contextual layers (Sec. 5.3)
   * beyond single tokens: a simple span representation based on the context
     vectors captures elements of phrasal syntax
 
@@ -213,30 +213,30 @@ EMNLP 2018
 * e.g. the words in the noun phrase “the new international space station” are
   clustered together
 * all of the verbs (“says”, “can”, “afford”, “maintain”, “meet”) have high
-  similarity suggesting the biLM is capturing partof-speech information
+  similarity suggesting the biLM is capturing part-of-speech information
 * coreference resolution: high contextual similarity of “it” to “government”,
 * Section 5.3 provides empirical support for these observations
 
 ### Span representations
 
-* use [the biLM’s context vectors] to form representations of spans
+* use the biLM’s context vectors to form representations of spans
 * we compute a span representation s(s_0, s_1),i at layer i by concatenating
   the first and last context vectors with
   the element wise product and difference of the first and last vectors
 * Figure 2 shows a t-SNE (Maaten and Hinton, 2008) visualization of span reprs
   * 3,000 labeled chunks and 500 spans not labeled as chunks
     from the CoNLL 2000 chunking dataset (Sang and Buchholz, 2000),
-    from the first layer of the 4-layer LSTM. As we can see, the
+    from the first layer of the 4-layer LSTM
   * spans are clustered by chunk type confirming our intuition
 * Sec. 5.3 evaluates whether we can use these span reprs for constituency pars
 
 ### Unsupervised pronominal coref
 
-* contextual [repr] of coreferential mentions should be similar,
+* contextual repr of coreferential mentions should be similar,
   as in many cases it is possible to replace them with their referent. If true,
-  we should be able to use [them for] unsupervised coreference resolution
+  we should be able to use them for unsupervised coreference resolution
 * experiment as follows
-  * to rule out trivial ... similarities due to lexical overlap, we
+  * to rule out trivial similarities due to lexical overlap, we
     restricted to pronominal coreference resolution
   * took all sentences from the development set of the OntoNotes annotations in
     the CoNLL 2012 shared task (Pradhan+ 2012) that had a third-person
@@ -244,9 +244,9 @@ EMNLP 2018
   * upper bound on performance, the [SOTA supervised] coreference model from
     Lee+ (2017) finds an antecedent span with the head word 64% of the time
   * lower bound
-    * closest noun ... before the pronoun has an accuracy of 27%, and
+    * closest noun before the pronoun has an accuracy of 27%, and
     * first noun in the sentence has an accuracy of 35%
-    * If we [restrict to antecedent nouns to match] in number, the
+    * If we restrict to antecedent nouns to match in number, the
       accuracies increase to 41% and 47% respectively
 * To use contextual representations to solve this task, we
   * compute the mean context vector of the smallest constituent with more
@@ -259,24 +259,24 @@ EMNLP 2018
     context vector that occurs before the pronoun and matches it in number
 * Accuracies for the models peak between 52% and 57%, well above the baseline,
   with the Transformer overall having the highest accuracy
-  * accuracies only drop 2-3% [if we don't filter by number agreement] and
+  * accuracies only drop 2-3% if we don't filter by number agreement and
   * highest at layers near the top of each model
 
 ## 5.2 Context independent word representation 8
 
 * word analogy task introduced in Mikolov+ (2013) are commonly used as
-* we ... compare the word embedding layer from the biLMs to word vectors
+* we compare the word embedding layer from the biLMs to word vectors
 * syntactic with examples such as “bird:birds :: goat:goats”, and semantic
 * the word embedding layer x k from the biLMs is markedly different
   * syntactic accuracies on par or better then GloVe, but with
-  * very low semantic accuracies. To further highlight this distinction, we
+  * very low semantic accuracies
 * purely orthographically based word vector by hashing all character `3-`-grams
   * near zero accuracy in the semantic portion, but
   * scored well on the syntactic portion
 
 ## 5.3 Probing contextual information
 
-* In this section, we quantify some of the ... observations made in Sec. 5.1
+* In this section, we quantify some of the observations made in Sec. 5.1
 * a series of linear probes (Belinkov+ 2017) with two NLP tasks
   to test the contextual representations in each model layer for each biLM
 * to what extent the span representations capture phrasal syntax
@@ -290,25 +290,25 @@ EMNLP 2018
   2-layer LSTM plus a linear classifier was near SOTA for POS tagging
 * Here, we test whether this result holds for the other architectures
 * Accuracies for all of the models are high, ranging from 97.2 to 97.4, and
-* similar trend with [resp to which layer is best]
+* similar trend with resp to which layer is best
 
 ### Constituency parsing
 
 * Our linear model
   * independently predicts the constituent type for all possible spans in a
     sentence using a linear classifier
-  * valid tree is built with a greedy decoding step that 
+  * valid tree is built with a greedy decoding step that
     reconciles overlapping spans with an ILP, similar to Joshi+ (2018)
 * The third row in Fig. 3 shows the results
-  * independent ... alone has F1 of near 80% for the best layers from each arch
+  * independent alone has F1 of near 80% for the best layers from each arch
 
 ## 5.4 Learned layer weights
 
 * Fig. 4 plots the softmax-normalized layer weights s / arch / task
 * SRL model weights are omitted as they close to constant
-  since we had to regularize them to stabilize training. For
+  since we had to regularize them to stabilize training
 * constituency parsing, s mirrors the layer wise linear parsing results
-  * largest weights near [to] as maximum linear parsing
+  * largest weights near to as maximum linear parsing
 * For both NER and MultiNLI, the
   * Transformer focuses heavily on the word embedding layer and the first contl
 * the maximum layer weights occur below the top layers as the most transferable
@@ -329,15 +329,15 @@ EMNLP 2018
   * Kádár+ (2017)
     * attributed the activation patters of RNNs to input tokens
     * RNN language model is strongly sensitive to tokens with synt functions
-  * whether NMT systems learned morphology and POS tags (Belinkov+ 2017) 
+  * whether NMT systems learned morphology and POS tags (Belinkov+ 2017)
     * linear classifiers
   * Concurrent with our work,
     * Khandelwal+ (2018) studied the role of context in influencing LM preds,
     * Gaddy+ (2018) analyzed neural constituency parsers,
     * Blevins+ (2018): whether multi-task RNNs can learn hierarchical syntax,
-    * Conneau+ (2018) examined [linguistic features] in sentence
+    * Conneau+ (2018) examined linguistic features in sentence
       A Conneau, G Kruszewski, G Lample, L Barrault, and M Baroni. 2018.
-      What you can cram into a single vector: 
+      What you can cram into a single vector:
         Probing sentence embeddings for linguistic properties
       ACL 2018
 * attributing network predictions to words in the input sentence
@@ -349,7 +349,7 @@ EMNLP 2018
 
 * future work
   * scaling up model size or data size?
-    * As ...  computationally efficient architectures also learn high quality
+    * As  computationally efficient architectures also learn high quality
   * Infusing models with explicit syntactic structure or other linguistically
-    motivated inductive biases ... in a multitask or semisupervised manner
+    motivated inductive biases in a multitask or semisupervised manner
   * computer vision style feature re-use and transfer

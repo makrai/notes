@@ -119,20 +119,20 @@ them
 ## Multilingual models
 
 * [multilingual] multi-sense embedding models
-  * Guo et al. (2014) perform a 
+  * Guo et al. (2014) perform a
     1. clustering translations prior to learning word embeddings
     2. sense induction step
       * translations ... are mapped to a source corpus using WSD heuristics
-    3. a recurrent neural network is trained 
+    3. a recurrent neural network is trained
       to obtain sense-specific representations
     * sense induction and embedding learning components are entirely separated
   * Bansal et al. (2012) use bilingual corpora to perform soft word clustering
-* Single-sense representations in the multilingual context (Lu+ 15; 
+* Single-sense representations in the multilingual context (Lu+ 15;
   Faruqui and Dyer, 14b; Hill+ 14a; Zhang+ 14; Faruqui and Dyer, 13; Zou+ 13)
   * goal of bringing the representations in the same semantic space
   * related: crosslingual setting
-    * leverage training data in one language 
-      to build models for typically lower-resource languages 
+    * leverage training data in one language
+      to build models for typically lower-resource languages
       (Hermann and Blunsom, 2014; Gouws et al., 2014; Chandar A P et al., 2014;
       Soyer et al., 2014; Klementiev et al., 2012; Täckström et al., 2012)
 * Nalisnick and Ravi (2015)

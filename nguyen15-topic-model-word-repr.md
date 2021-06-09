@@ -46,8 +46,8 @@ https://github.com/datquocnguyen/LFTM
     * Salakhutdinov and Hinton, 2009
     * Srivastava et al., 2013
     * Cao et al., 2015)
-      * Ziqiang Cao, Sujian Li, Yang Liu, Wenjie Li, and Heng Ji. 
-      * 2015 AAAI 
+      * Ziqiang Cao, Sujian Li, Yang Liu, Wenjie Li, and Heng Ji.
+      * 2015 AAAI
       * A Novel Neural Topic Model and Its Supervised Extension
 * we explore how to
   * take advantage of both

@@ -19,10 +19,10 @@ https://github.com/facebookresearch/InferSent
 
 # Intro
 
-* existing work on ... learning sentence encoders [is] unsupervised
+* existing work on learning sentence encoders [is] unsupervised
   * like SkipThought (Kiros+ 2015) or FastSent (Hill+ 2016)
 * We compare sentence embeddings trained on various supervised tasks
-* we ... compare convolutional, recurrent and even simpler word composition
+* we compare convolutional, recurrent and even simpler word composition
   * encoder based on a bi-directional LSTM architecture with max pooling,
   * trained on the Stanford Natural Language Inference (SNLI) dataset
     (Bowman+ 2015)
@@ -44,10 +44,10 @@ https://github.com/facebookresearch/InferSent
         International Conference on Learning Representations
   * complex neural network architectures
     * SkipThought vectors (Kiros+ 2015) propose an objective function
-      * adapts the skip-gram model ... to the sentence level. By
+      * adapts the skip-gram model to the sentence level. By
       * encoding a sentence to predict the sentences around it, and using the
       * good performance on 8 transfer tasks. They
-      * further ... results using layer-norm regularization (Ba+ 2016)
+      * further results using layer-norm regularization (Ba+ 2016)
     * Hill+ (2016)
       * unsupervised + supervised training in
         * machine translation data (using the WMT’14 ...),
@@ -70,7 +70,7 @@ https://github.com/facebookresearch/InferSent
 
 * SNLI dataset consists of 570k human-generated English sentence pairs,
   * entailment, contradiction and neutral. It captures
-  * natural language inference, also known ... as Recognizing Textual
+  * natural language inference, also known as Recognizing Textual
     Entailment
 * Models can be trained on SNLI in two different ways:
   1. separate the encoding of the [two] sentences and
@@ -81,7 +81,7 @@ https://github.com/facebookresearch/InferSent
     1. concatenation of the two representations (u, v);
     1. element-wise product u ∗ v; and
     1. absolute element-wise difference |u − v|
-  * The resulting vector ... is fed into a 3-class classifier consisting of
+  * The resulting vector is fed into a 3-class classifier consisting of
     multiple fully-connected layers culminating in a softmax layer
 
 ## 3.2 Sentence encoder architectures
@@ -97,7 +97,7 @@ https://github.com/facebookresearch/InferSent
 
 * One of the currently best performing models on classification tasks is a
   convolutional architecture termed AdaSent (Zhao+ 2015), which
-* concatenates ... representations of the sentences at different level
+* concatenates representations of the sentences at different level
   of abstractions
 * we introduce a faster version consisting of 4 convolutional layers
 
@@ -121,10 +121,10 @@ https://github.com/facebookresearch/InferSent
     * news articles, forum discussions, image descriptions and headlines
 * Paraphrase detection
   * Microsoft Research Paraphrase Corpus is composed of pairs of
-    * sentences ... extracted from news sources on the Web
+    * sentences extracted from news sources on the Web
 * Caption-Image retrieval
   * The goal is either to rank a large collection of
-    * images by their relevance with respect to a ... caption (Image Retrieval),
+    * images by their relevance with respect to a caption (Image Retrieval),
     * captions by their relevance for a given query image (Caption Retrieval). We
   * pairwise rankingloss L cir (x, y):
 
@@ -144,7 +144,7 @@ https://github.com/facebookresearch/InferSent
 * increased embedding sizes lead to increased performance for almost all models
   * Since it is easier to linearly separate in high dimension,
     * especially with logistic regression
-  * particularly true for some models (BiLSTM-Max, HConvNet, inner-att), 
+  * particularly true for some models (BiLSTM-Max, HConvNet, inner-att),
     *  unequal abilities to incorporate more information as the size grows
 
 ## Comparison with SkipThought

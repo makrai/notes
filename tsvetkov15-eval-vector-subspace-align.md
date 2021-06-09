@@ -10,8 +10,8 @@ https://github.com/ytsvetko/qvec
 * correlation with similarity judgments [often correlate poorly with
   performance] as features in downstream evaluation tasks
 * We present QVEC
-  * evaluation measure of the quality of word embeddings 
-  * based on alignment to a matrix of features 
+  * evaluation measure of the quality of word embeddings
+  * based on alignment to a matrix of features
     extracted from manually crafted lexical resources
   * obtains strong correlation with performance of the vectors
     in a battery of downstream semantic evaluation tasks
@@ -21,7 +21,7 @@ https://github.com/ytsvetko/qvec
 * manually constructed “linguistic” word vectors
   * whose components have well-defined linguistic properties (§2)
 * our measure favors recall since
-  * vectors are typically used to provide features to downstream
+  * vectors are typically used to provide downstream features
   * intuition:
     meaningless dimensions in induced vector representations are less harmful
     than important dimensions that are missing
@@ -37,18 +37,18 @@ https://github.com/ytsvetko/qvec
 
 # 2 Linguistic Dimension Word Vectors
 
-* we exploit an existing semantic resource—SemCor (Miller et al., 1993)
+* we exploit an existing semantic resource—SemCor (Miller+ 1993)
 * we construct a set of linguistic word vectors,
-* details are given in the rest of this section;
+* details are given in the rest of this section
 * table 1 shows an example of the vectors
 * WordNet (Fellbaum, 1998, WN)
   * partitions nouns and verbs into [supersenses i.e.] coarse semantic cats
     (Ciaramita and Altun, 2006; Nastase, 2008)
   * 41 supersense types: 26 for nouns and 15 for verbs, for example,
-    * NOUN.BODY, NOUN.ANIMAL, VERB.CONSUMPTION, or VERB.MOTION 
+    * NOUN.BODY, NOUN.ANIMAL, VERB.CONSUMPTION, or VERB.MOTION
 * SemCor is a WordNet-annotated corpus that captures, among others,
   * supersense annotations of WordNet’s 13 K noun lemmas and 6 K verb lemmas
-* We construct term frequency vectors normalized to probabilities 
+* We construct term frequency vectors normalized to probabilities
   for all nouns and verbs that occur in SemCor at least 5 times
   The resulting ... 4,199 linguistic word vectors has 41 interpretable columns
 

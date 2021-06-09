@@ -16,7 +16,7 @@ application.
 
 * several network minimization schemes have been implemented using
   * non-proportional weight decay (Rumelhart, 1988; Chauvin, 1989; Hanson and
-  Pratt, 1989), or 
+  Pratt, 1989), or
   * "gating coefficients" (Mozer and Smolensky, 1989).
 * this paper is to move beyond the approximation that "magnitude equals
   saliency" , and propose a theoretically justified saliency measure.  599600

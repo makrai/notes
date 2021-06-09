@@ -22,12 +22,12 @@ Our codes are publicly available at the Github
   * higher layers are more expressive in high-level semantic information
   * information fusion across layers has its potential
 * we: experiments on patterns of the isolated word representation across layers
-  * Words of richer information ... have higher variation in their repr, while
+  * Words of richer information have higher variation in their repr, while
   * the token representation changes gradually, across layers
   * This finding helps define
     “salient” word representations and informative words [for] sentence embed
 * sentence embedding method, which transforms a sentence to a vector
-  * a common ... approach based on BERT-based models is to average the
+  * a common approach based on BERT-based models is to average the
     representations obtained from the last layer or using the CLS token
     * both are sub-optimal as shown in the experimental section of this paper
   * sentence embedding using pre-trained BERT, called Sentence-BERT (Reimers&)
@@ -45,7 +45,7 @@ Our codes are publicly available at the Github
 * we investigate sentence embedding by studying the geometric structure of deep
   * new method by dissecting BERT-based word models
   * inherits the strength of deep contextualized models
-  * compatible with ... BERT [5] and SBERT [11]
+  * compatible with BERT [5] and SBERT [11]
 * contributions
   * evolution of isolated word representation patterns across layers
     * highly correlated with word’s content
@@ -59,7 +59,7 @@ Our codes are publicly available at the Github
 * ELMo [4], GPT1 [7], GPT2 [17] and BERT [5] are pre-trained deep neural LMs
   * BERT-based models are dominating in leaderboards of language understanding
     tasks such as SQuAD2.0 [18] and GLUE benchmarks [10]
-  * ELMo is one of the earlier work ... to downstream tasks [4]. It employs
+  * ELMo is one of the earlier work to downstream tasks [4]. It employs
     * two layer bi-directional LSTM and
       fuses features from all LSTM outputs using task-specific weights
   * OpenAI GPT [7] incorporates a fine-tuning process when it is applied to
@@ -79,7 +79,7 @@ Our codes are publicly available at the Github
         “Unsupervised random walk sentence embeddings: A strong but simple bl”
         Representation Learning for NLP, 2018
     * GEM: weights from exploiting geometric analysis of the [word] space
-      ... with several hand-crafted measurements
+      with several hand-crafted measurements
       * p-mean [30] to concatenate the power means of word embeddings and
         fuses different word embedding models
         to shorten the performance gap between non-parameterized and parameterd
@@ -112,7 +112,7 @@ Our codes are publicly available at the Github
   * Singular Spectrum Analysis (SSA)
   * Independent Component Analysis (ICA) and
   * Canonical Correlation Analysis (CCA).  Subspace analysis has solid
-  * to explain ... the internal states of Deep Neural Networks [32], [33], [34]
+  * to explain the internal states of Deep Neural Networks [32], [33], [34]
 * in post-processing and evaluation of word embeddings [37], [38], [39]
 * subspace analysis in sentence embedding
   * SCDV [40] determines the sentence/document vector
@@ -152,7 +152,7 @@ by examining [their] alignment and novelty properties
     * including entailment and sentiment classification
   * Probing tasks [to measure the linguistic features] and provide fine-grained
 * SentEval toolkit [44] is used in all experiments
-* SBERTWK method can be built upon ... BERT, SBERT, RoBERTa and XLNET
+* SBERTWK method can be built upon BERT, SBERT, RoBERTa and XLNET
   * Here, we evaluate it on top of two models: SBERT and XLNET
   * XLNET pre-trained model obtained from the Transformer Repo
   * We adopt their base models that contain 12 self-attention layers
@@ -178,4 +178,4 @@ by examining [their] alignment and novelty properties
   * subspace analysis in the deep contextualized models to regulate the
     training or fine-tuning process
   * understand deep contextualized neural models through subspace analysis
-    * Theoretical analysis ... could be the key in revealing the myth
+    * Theoretical analysis could be the key in revealing the myth

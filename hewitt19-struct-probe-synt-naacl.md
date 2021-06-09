@@ -2,8 +2,8 @@ John Hewitt and Christopher D. Manning
 A Structural Probe for Finding Syntax in Word Representations
 NAACL 2019
 
-geometry of English parse trees is approximately discoverable in the geometry
-of deep models of language
+* geometry of English parse trees is approximately discoverable
+  in the geometry of deep models of language
 
 # Abstract
 

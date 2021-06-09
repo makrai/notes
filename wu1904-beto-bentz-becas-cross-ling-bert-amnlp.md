@@ -4,11 +4,11 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 
 # Abstract
 
-* mBERT (Devlin, 2018) includes a model simultaneously pretrained on 104
+* mBERT (Devlin, 2018) includes a model simultaneously pretrained on 104 langs
   * impressive performance for zero-shot cross-lingual transfer on a NLI
-* This paper explores mBERT as a zero shot language transfer model on 5 NLP
+* This paper explores mBERT as a zero shot language transfer model on 5 tasks
   * 39 languages from various language families:
-  * NLI, document classification, NER, POS tagging, and dependency parsing. We
+  * NLI, document classification, NER, POS tagging, and dependency parsing
   * compare mBERT with the best-published methods for zero-shot cross-lingual
     * mBERT competitive on each task
   * investigate the most effective strategy for utilizing mBERT in this manner,
@@ -64,12 +64,12 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
     inference, we observe the largest improvement with n = 6.  For
   * word-level tasks like NER, POS tagging, and parsing, we observe the largest
     improvement with n = 3
-  * More improvement in under-performing languages is observed 
+  * More improvement in under-performing languages is observed
 * feature-based approach with LSTM under-performs fine-tuning approach. We
   hypothesize that initialization from pretraining with lots of languages
   provides a very good starting point that is hard to beat.  Additionally, the
-  LSTM could also be part of the problem. In Ahmad+ (2019) for dependency
-  parsing, an LSTM encoder
+  LSTM could also be part of the problem
+  * Ahmad+ (2019) an LSTM encoder for dependency parsing
 
 ## 5.3 Question #3: Does mBERT retain language specific information?
 
@@ -101,7 +101,7 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
     * weak supervision to produce a better cross-lingual mBERT, or
     * adapt an already trained model for cross-lingual use
 * With POS tagging in §5.1, we show mBERT, in general, under-performs models
-  with a small amount of supervision 
+  with a small amount of supervision
   while Devlin+ (2019) show that in English NLP tasks, fine-tuning BERT only
   needs a small amount of data
 * Future work could investigate

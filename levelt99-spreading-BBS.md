@@ -1,6 +1,6 @@
-BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 A theory of lexical access in speech production
 Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
+BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
 #Abstract
 
@@ -19,7 +19,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 * developed in interaction with reaction time experiments, particularly in
   picture naming or related word production paradigms, with the aim of
 * handle some of the main observations in the domain of speech errors
-* the theory opens new ways of approaching the cerebral organization of 
+* the theory opens new ways of approaching the cerebral organization of
   speech production by way of high-temporal-resolution imaging
 
 # 1. An [aquisitional] introduction
@@ -32,7 +32,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
     * around the seventh month
     * The child carefully attends to their acoustic manifestations
       * exercises in the repetition and concatenation of these syllabic patterns
-      * more tuned to the mother tongue 
+      * more tuned to the mother tongue
         (De Boysson-Bardies & Vihman 1991; Elbers 1982)
       * protosyllabary, a core repository of speech motor patterns, meaningless
 * connecting some particular babble to some particular lexical concept. The
@@ -126,7 +126,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 * activation is also measurably sensitive to the auditory or visual word input
   * exploited in many of our experiments with a visual or auditory distractor
 * Finally, Dennett (1991) suggested a pandemonium-like spontaneous activation of
-  words in the speaker’s mind. 
+  words in the speaker’s mind.
   * Although not modeled yet, there are three ways to implement such a mechanism
     * add spontaneous, statistical activation to lexical concepts
     * do the same at the level of lemmas, whose activation can be spread back to
@@ -208,7 +208,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 ##3.2.3. Binding
 
 * [i.e. melyik hova?]
-* e.g. 
+* e.g.
   * _Pages escort kings_, at some time the lemmas page and king will be
     * prevent the speaker from erroneously producing Kings escort pages? The
   * Similarly the segments of the word forms ⬍king⬎ and ⬍page⬎ are spelled out
@@ -224,14 +224,14 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
   * A major reason for implementing binding-by-checking is the recurrent finding
     * during picture naming, distractor stimuli hardly ever induce speech errors
       When the speaker names the picture of a king, and simultaneously hears the
-      distractor word page, he or she will produce 
+      distractor word page, he or she will produce
       neither the semantic error page, nor the phonological error ping, although
       * more easily handled by binding-by-checking than binding-by-timing
 
 ##3.2.4. Relations to the speech perception network
 
-* traditionally been an important issue in speech and language processing (see
-  Liberman 1996): Are words produced and perceived by the same mechanism?
+* traditionally an important issue in speech and language processing
+  (Liberman 1996): Are words produced and perceived by the same mechanism?
 * feedforward assumption for our form stratum implies that form perception and
   production cannot be achieved by the same network
 * some technical, though realistic, assumptions about the way in which
@@ -264,7 +264,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 * theoretical and empirical arguments for this assumption of chunked retrieval
   * reviewed extensively (Roelofs 1992b; 1993; 1996a; and, especially, 1997a)
   * Any representation makes some information explicit at the expense of
-    information that is left in the background.  
+    information that is left in the background.
   * chunks prevent the hyperonym problem from arising (see Roelofs 1996a; 1997a)
 
 ## 4.2. Perspective taking
@@ -293,7 +293,7 @@ Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 * Activation then spreads through the network, each node sending a proportion of
 * The most highly activated lemma node is selected when verification allows
 * e.g. `escort` and `accompany` will be activated.  The escort node will be the
-  most highly activated node, because it receives a full proportion of 
+  most highly activated node, because it receives a full proportion of
   `escort(x, y)`’s activation, whereas accompany and other lemma nodes receive
   only a proportion of a proportion. Upon verification of the link between the
   lemma node of escort and escort(x, y), this lemma node will be selected. The

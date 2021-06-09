@@ -24,19 +24,19 @@ chapter in Mining text data, 2012 - Springer
   * For subjectivity classification, they highlighted ... similarity dependent,
     NB classifier, Multiple NB classifier, and cut-based classifier
 * O'Leary+ (2011) presented a survey on blog mining, which includes
-  introduction on blog search and mining, type of blogs to be analyzed, 
+  introduction on blog search and mining, type of blogs to be analyzed,
   unit and type of opinions to be extracted from blogs, and their applications
 * Montoyo+ (2012) listed some open issues along with achievements obtained thus
   far in the area of subjectivity analysis and sentiment analysis
-* Tsytsarau and Palpanas (2012) presented a survey on SA by 
+* Tsytsarau and Palpanas (2012) presented a survey on SA by
   * focusing on opinion mining, opinion aggregation including spam detection
-    and contradiction analysis. They 
+    and contradiction analysis. They
   * compared opinion mining methods, which were employed on some common dataset
-* Liu (2012) presented different 
-  * tasks 
-    * subjectivity and sentiment classification, aspect-based SA, 
-      sentiment lexicon generation, opinion summarization, 
-      analysis of comparative opinions, opinion search and retrieval, 
+* Liu (2012) presented different
+  * tasks
+    * subjectivity and sentiment classification, aspect-based SA,
+      sentiment lexicon generation, opinion summarization,
+      analysis of comparative opinions, opinion search and retrieval,
       opinion spam detection and quality of reviews
   * works published in SA and opinion mining
 * Cambria+ (2015) pointed out complexities involved in SA with respect to
@@ -47,41 +47,41 @@ chapter in Mining text data, 2012 - Springer
   * open issues like SA of composition statement, automatic entity recognition,
     discussion on multi-entity in same review, sarcasm detection and
     subjectivity classification at finer level
-* Most recently, Medhat+ (2014) presented a survey on 
-  * feature selection and 
-    * brief description is presented about feature selection methods 
+* Most recently, Medhat+ (2014) presented a survey on
+  * feature selection and
+    * brief description is presented about feature selection methods
       (mainly pointwise mutual information and Chi-square)
   * sentiment classification methods
-    * detailed discussion is presented on sentiment classification methods 
-    * fifty-four articles listing out task accomplished, domain, 
+    * detailed discussion is presented on sentiment classification methods
+    * fifty-four articles listing out task accomplished, domain,
       algorithm utilized, polarity, data scope, data source, and ...  language.
   * major concern is to discuss the techniques applied in surveyed papers
 * Along with these surveyed papers, a considerable amount of work has been
-  reported in this area and a number of lexica have been created 
-  * micro-blogs, which have been 
-    * especially in the last four years, 
+  reported in this area and a number of lexica have been created
+  * micro-blogs, which have been
+    * especially in the last four years,
     * successfully applied for market prediction [18], social advertising [43],
-      and box-office prediction [51]. 
+      and box-office prediction [51].
     * Tsytsarau and Palpanas [137] presented very limited discussion
-* urgent need to focus on several other issues 
+* urgent need to focus on several other issues
   raised in currently published papers, ... not the part of the extant surveys
 * This survey work differs from existing literature surveys in various ways
   1. we classified ... studies on the basis of ... tasks, approaches and
      applications as presented in Figure 1,
   1. this paper presents articles related to tasks and major issues pointed out
-     by existing articles like 
-     subjectivity classification, 
-     sentiment classification from coarse-grained to fine-grained level, 
+     by existing articles like
+     subjectivity classification,
+     sentiment classification from coarse-grained to fine-grained level,
      review usefulness measurement, opinion spam detection, lexicon creation,
      and opinion word and product aspect extraction
-  1. we summarized each of surveyed articles in four aspects viz. 
-    problem addressed, exploited dataset details, 
-    feature representation and selection method (if applied), 
-    techniques applied, obtained results, and 
+  1. we summarized each of surveyed articles in four aspects viz.
+    problem addressed, exploited dataset details,
+    feature representation and selection method (if applied),
+    techniques applied, obtained results, and
     indicated future directions along with our views,
   1. we included some recently proposed feature selection techniques for SA,
   1. we provided a detailed list of online available datasets,
-  1. classification of articles on the basis of SA performed at 
+  1. classification of articles on the basis of SA performed at
     various granular levels as presented in Table 1,
   1. the exploited lexica are listed in Table 10, and
   1. summary of one hundred and sixty one articles is presented in Table 10
@@ -90,14 +90,14 @@ chapter in Mining text data, 2012 - Springer
 
 # 3. SOTA discussion on SA covering common issues listed in previous paragraph
 
-* subsection 3.1--subsection 3.5 discuss different tasks and sub-tasks 
+* subsection 3.1--subsection 3.5 discuss different tasks and sub-tasks
   along with applied approaches and techniques
-  * approaches are broadly classified into three categories viz.  
-    machine learning, lexicon based, and hybrid approaches 
-    for subjectivity classification, sentiment classification, 
+  * approaches are broadly classified into three categories viz.
+    machine learning, lexicon based, and hybrid approaches
+    for subjectivity classification, sentiment classification,
     review helpfulness measurement, and opinion spam detection as presented in
-    Figure 1.  Further, 
-* ontology and non-ontology based approaches are considered 
+    Figure 1.  Further,
+* ontology and non-ontology based approaches are considered
   for lexicon creation and aspect extraction
 
 ### 3.2.1.1 Machine learning based approaches [to Polarity determination]

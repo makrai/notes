@@ -6,10 +6,10 @@ acl 2012
 
 * how ... the choice of words and sentence structure [can affect achieve
   widespread public awareness]
-* we develop an analysis framework and 
-  * build a corpus of movie quotes, annotated with memorability information, in 
-  * find that memorable quotes use 
-    * less common word choices, but at the same time are 
+* we develop an analysis framework and
+  * build a corpus of movie quotes, annotated with memorability information, in
+  * find that memorable quotes use
+    * less common word choices, but at the same time are
     * built upon a scaffolding of common syntactic patterns . Another is that
       * make them easy to apply in new contexts — that is, more portable.  We
     * the concept of “memorable language” can be extended across domains.
@@ -26,6 +26,6 @@ acl 2012
 # 4 A long time ago, in a galaxy far, far away [Realted work]
 
 * computational humor recognition [25].
-  * [25] Rada Mihalcea and Carlo Strapparava. 
+  * [25] Rada Mihalcea and Carlo Strapparava.
     Learning to laugh (automatically): Computational models for humor recog
     Computational Intelligence, 22(2):126–142, 2006.

@@ -21,7 +21,7 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
     * The Encarta thesaurus [is] used [which] is not publicly available
     so we did not use it in our experiments.
   * Zhang+ (2014) proposed a tensor factorization approach
-    * multidimensional semantic information, relations, 
+    * multidimensional semantic information, relations,
       unsupervised data structure information in tensor factorization, and
       F-score of 82% on the GRE questions
   * These methods employed both lexical resources and corpora statistics
@@ -67,7 +67,7 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
   * We hypothesize that such information should help reconstruct contrasting
     meaning
   * The General Inquirer lexicon (Stone1966) represents these three factors but
-    has a limited coverage. 
+    has a limited coverage.
   * We used the algorithm of Turney and Littman (2003) to extend the labels to
     more words with Google one billion words corpus
     * to obtain the evaluative score for a candidate word w, the point-wise

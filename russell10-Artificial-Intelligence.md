@@ -37,7 +37,7 @@ Artificial-Intelligence
   * documented by the Handbook on Ontologies (Staab, 2004)
   * Open CYC project (Lenat and Guha, 1990; Matuszek+ 2006) has
   * DBpedia project extracts structured data from Wikipedia
-* Suggested Upper Merged Ontology 
+* Suggested Upper Merged Ontology
   (SUMO, Niles and Pease, 2001; Pease and Niles, 2002)
 * representation languages are emerging
   * RDF (Brickley and Guha, 2004) [uses] relational triples, and provides some
@@ -50,8 +50,8 @@ Artificial-Intelligence
   * Doctorow (2001), Gruber (2004), Halevy+ (2009), and Smith (2004)
   * largely ... abandoned
 * event calculus was
-  * introduced by Kowalski and Sergot (1986) to handle 
-    continuous time, and variations (Sadri and Kowalski, 1995; Shanahan, 1997) 
+  * introduced by Kowalski and Sergot (1986) to handle
+    continuous time, and variations (Sadri and Kowalski, 1995; Shanahan, 1997)
   * overviews (Shanahan, 1999; Mueller, 2006)
   * maps onto the language (van Lambalgen and Hamm 2005)
   * fluent calculus (Thielscher, 1999).  James Allen introduced
@@ -61,7 +61,7 @@ Artificial-Intelligence
   * studies (Allen 1991)
   * algorithms for temporal reasoning (van Beek and Manchak 1996)
   * analysis of events due to the philosopher Donald Davidson (1980)
-  * histories in Pat Hayes’s (1985a) ontology of liquids 
+  * histories in Pat Hayes’s (1985a) ontology of liquids
   * chronicles in McDermott’s (1985) theory of plans
 * A more readable exposition of [Leśniewski (1916)'s mereology] is given by
   Leonard and Goodman (1940), and Goodman’s The Structure of Appearance (1977)
@@ -77,7 +77,7 @@ Artificial-Intelligence
   * Marvin Minsky (1975) presented a version of semantic networks called
     frames; a frame was a representation of an object or category, with
     attributes and relations to other objects or categories
-  * Woods’s (1975) famous article “What’s In a Link?” 
+  * Woods’s (1975) famous article “What’s In a Link?”
     drew the attention of AI researchers to the need for precise semantics in
     knowledge representation formalisms
   * Brachman (1979) elaborated on this point and proposed solutions

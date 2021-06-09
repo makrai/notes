@@ -4,15 +4,15 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
 
 # Abstract
 
-* exercise proposed in RTE-6, consisting of a 
+* exercise proposed in RTE-6, consisting of a
   * Main Task, in which Textual Entailment is performed on a real corpus in the
-    Update Summarization scenario; a 
+    Update Summarization scenario; a
     * 13 teams participated (33 runs)
-  * Novelty Detection Subtask 
+  * Novelty Detection Subtask
     * 5 teams (submitting 13 runs)
   * KBP Validation Task, in which RTE systems had to validate the output of
-    * 2 participants which submitted 5 runs.  The 
-* ablation [leoperálás] test experiment ... to evaluate the impact of 
+    * 2 participants which submitted 5 runs.  The
+* ablation [leoperálás] test experiment ... to evaluate the impact of
     * knowledge resources used by the systems participating in the Main Task
     * tools
 
@@ -21,7 +21,7 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
 [értelmesebben van leírva a követkető szakaszban]
 
 * RTE-6 challenge
-  * aims, namely 
+  * aims, namely
     1. to propose data sets which reflect the natural distribution of
     entailment in a corpus and present all the typical problems ... in a
     natural setting;
@@ -32,25 +32,25 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
         retrieved by the Lucene search engine from that corpus for H, RTE
         systems are required to identify all the sentences that entail the H
         among the candidate sentences.
-    * Novelty Detection Subtask aimed at specifically 
+    * Novelty Detection Subtask aimed at specifically
       * addressing the needs of the Summarization Update scenario was also
       * judge whether the information contained in each hypothesis H is novel
         with respect to (i.e. not entailed by) the information contained in the
-        corpus. Another major innovation in RTE-6 was represented by the 
-    * Knowledge Base Population (KBP) Validation Pilot Task, in which 
+        corpus. Another major innovation in RTE-6 was represented by the
+    * Knowledge Base Population (KBP) Validation Pilot Task, in which
       * validate the output of systems participating in the KBP Slot Filling
         Task (an advanced Information Extraction task)
 * the same tasks were used in RTE-7 [as  in RTE-6] without significant changes
   following the well-established practice of not significantly changing the
   task every year.
 * organization
-  * Section 2 the Main Task is presented, describing the 
+  * Section 2 the Main Task is presented, describing the
     * data sets, the evaluation methodology, and an analysis of the results
-      achieved by the participating systems. 
-  * Section 3: Novelty Detection Subtask, and the 
-  * KBP Validation Task is described in Section 4.  In 
+      achieved by the participating systems.
+  * Section 3: Novelty Detection Subtask, and the
+  * KBP Validation Task is described in Section 4.  In
   * Section 5 the RTE-7 ablation tests, together with the RTE Knowledge
-    Resources initiative, are presented.  
+    Resources initiative, are presented.
   * Conclusions and perspectives on future work are outlined in Section 6.
 
 # 2 The RTE-7 Main Task: Recognizing Textual Entailment within a Corpus
@@ -60,9 +60,9 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
 * finding all the sentences in a set of documents that entail a given
   Hypothesis.
 * situated in the Summarization application setting,
-  * As in RTE-6 which means that 
+  * As in RTE-6 which means that
   1. the RTE corpus is taken from the 2009 and 2010 Summarization Task data set
-  and 
+  and
   1. the Hs are standalone versions of sentences in that data set, partly
      selected among the sentences incorporated into some of the automatic
      summaries created by the systems participating in the Update Summarization
@@ -80,19 +80,19 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
 * BIU proposes a new version of its transformation-based approach using
   entailment rules and syntactic motivated operations to perform a sequence of
   inference steps from T to H, which is finally validated by a confidence
-  model. 
+  model.
 * A large number of systems exploit similarity measures and matching algorithms
-  applied at different levels – lexical, syntactic or semantic.  
+  applied at different levels – lexical, syntactic or semantic.
 * FBK attempts an approach which moves from token-level to phrase-level
   overlap, also using paraphrases from parallel data as the main source of
-  lexical knowledge for mapping. 
+  lexical knowledge for mapping.
 * DFKI approaches lexical similarity by treating T and H as translation of the
   same source sentence and using the METEOR score to define feature templates
-  to capture similarity between T and H. 
+  to capture similarity between T and H.
 * IKOMA system combines entailment scores calculated by lexical matching with
   machine learning, using a filtering mechanism aimed at discarding T-H pairs
   which are not entailing, despite high entailment scores based on lexical
-  similarity.  
+  similarity.
 * SJTU-CIT uses machine learning algorithms combined with knowledge drawn from
   different resources, such as WordNet, VerbOcean and Wikipedia, and features
   that quantify lexical, syntactic and semantic level matching between T and H.
@@ -104,12 +104,12 @@ Luisa Bentivogli, Peter Clark, Ido Dagan, Danilo Giampiccolo
   mimics natural evolution. Also SINAI uses EDITS, integrating Personalized
   Page Rank Vectors (PPVs) by means of rules to provide knowledge about the
   probability of entailment or contradiction between T and H.  Among the
-  systems which do 
+  systems which do
 * not use machine learning techniques, two systems adopt a rule-based approach,
   * ICL -which built an inference model based on entailment rules, using also
-    syntactic analysis tools and lexical and semantic resources-, and 
+    syntactic analysis tools and lexical and semantic resources-, and
   * UAIC –which additionally exploits the notion of predication driven entity
-    matching.  The remaining systems are 
+    matching.  The remaining systems are
 * based on similarity measures or matching algorithm: BUPTT measures the word
   overlap between T and H; and JU_CSE_TAC system is made up by four modules
   that perform lexical word matching and measure syntactic similarity over

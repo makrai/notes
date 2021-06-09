@@ -13,7 +13,7 @@ TACL 2020
 # 1 Intro
 
 * World Atlas of Language Structures (Comrie & Gil, 05; Dryer & Haspelmath, 13)
-  * 2600 languages by 192 typological features including phenomena such as 
+  * 2600 languages by 192 typological features including phenomena such as
     word order, reduplication, grammatical meanings encoded in morphosyntax,
     case markings, plurality systems, question marking, relativization
 * differences in the availability of monolingual and parallel translation data,
@@ -158,7 +158,7 @@ TACL 2020
     * typically not found in English and
     * potentially problematic for NLP models
 * Figures
-  2.  interaction among three phenomena in a Finnish example,
+  2. interaction among three phenomena in a Finnish example,
   3. non-trivial word form changes due to inflection in Russian
   * Arabic also exemplifies many phenomena that are likely to challenge current
     * spelling variation of names (Figure 4),

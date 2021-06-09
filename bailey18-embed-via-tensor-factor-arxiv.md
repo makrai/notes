@@ -7,7 +7,7 @@ https://openreview.net/forum?id=B1kIr-WRb
 
 https://github.com/popcorncolonel/tensor_decomp_embedding
 * A generic framework for online CP decomposition implemented in TensorFlow can
-  be found in `tensor_decomp.py`. 
+  be found in `tensor_decomp.py`.
   Included is also Joint Symmetric CP Decomposition, described in the paper
 
 # Abstract
@@ -24,7 +24,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     different types of information, and thus should be used where they shine
 * embeddings are given by a low-rank factor of [the co-occurrence] matrix
   * non-negative sparse embedding (Murphy, Talukdar, and Mitchell 2012)
-  * LexVec [Salle, Villavicencio, and Idiart ACL 2016] 
+  * LexVec [Salle, Villavicencio, and Idiart ACL 2016]
     Matrix factorization using window sampling and negative sampling for [word]
 * tensors containing [co-occurrences of more than two words]
 
@@ -68,24 +68,24 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   * gives rise to a meaningful interpretation of the element-wise product be-
     tween vectors in our word embeddings
 * symmetric CP decomposition of nonnegative tensors
-  * a szuperszimmetria nem a PPMI tulajdonsága, ahogy írja, hanem 
+  * a szuperszimmetria nem a PPMI tulajdonsága, ahogy írja, hanem
     azért van, mert náluk minden tengely a szókincs
 * leaving the study of other tensor decompositions to future
-  e.g. Tensor Train or HOSVD (aka Tucker. Oseledets 2011; Kolda and Bader 2009) 
+  e.g. Tensor Train or HOSVD (aka Tucker. Oseledets 2011; Kolda and Bader 2009)
 
 # Why factorize the third moment [i.e. third order co-occurrences]?
 
 1. how embedding vectors cluster
   * For identifying the clusters of a planted partition model
     * such as the Stochastic Block Model (SBM),
-    * the spectral factorization of node interactions 
-      completely derived from pair-wise interactions 
-      is sufficient for discovering the disjoint clusters 
-      * Mikhail Belkin and Partha Niyogi. 
+    * the spectral factorization of node interactions
+      completely derived from pair-wise interactions
+      is sufficient for discovering the disjoint clusters
+      * Mikhail Belkin and Partha Niyogi.
         Laplacian eigenmaps and spectral techniques for embedding and clust
         NIPS 2001
       * F Krzakala+ 2013 Spectral redemption: clustering sparse networks
-      * Spielman FOCS 2007 Spectral Graph Theory and its Applications 
+      * Spielman FOCS 2007 Spectral Graph Theory and its Applications
   * polysemous words belong to multiple ... clusters (Foulds arXiv 17)
     James R. Foulds. Mixed membership word embeddings for comp soc science
     * necessitate the assumption of a Mixed Membership (MM) model
@@ -94,7 +94,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
       in a way that [pair-wise interactions] cannot
   * Gaussian mixture models for capturing polysemy in word embeddings
     (Athiwaratkun & Wilson 2017)
-    * factorizing the third moments can provably 
+    * factorizing the third moments can provably
       identify the isotropic Gaussian mixture models (Anandkumar+ 2014)
 2. further contextualizes the co-occurrence matrix
 
@@ -108,13 +108,13 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
     * alternating least-squares (Kolda and Bader 2009)
 * we will consider a stochastic online formulation
   similar to that of Maehara, Hayashi, and Kawarabayashi (2016)
-  * [mini-batch setting] ... using small random subsets `M^t` 
+  * [mini-batch setting] ... using small random subsets `M^t`
     of the nonzero tensor entries to update the decomposition at time `t`
   * Adam (Kingma and Ba 2014)
   * minibatch around 1,000 sentences
   * 1 epoch
   * negative samples
-    * we also include a certain proportion of elements with zero PPMI 
+    * we also include a certain proportion of elements with zero PPMI
       similar to that of Salle, Villavicencio, and Idiart (2016)
 
 ## Joint Symmetric Rank-R CP Decomposition
@@ -160,7 +160,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
   * As our tensor-based embeddings encode higher order relationships
     [we] compute c(w) based on groups of 3 words
 * Simple supervised tasks
-  * observe the performance ... as training set size increases 
+  * observe the performance ... as training set size increases
     (Jastrzebski, Lesniak, and Czarnecki 2017)
     * commonly done in transfer learning evaluation
   1. [POS tagging] based solely on [the] word vector
@@ -171,7 +171,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
 
 # Multiplicative compositionality
 
-* [our] embeddings capture polysemy information 
+* [our] embeddings capture polysemy information
   ... through multiplicative compositionality [in unsup fashion]
 * We demonstrate this property qualitatively and provide proper motivation
   * leaving automated utilization to future work
@@ -183,7 +183,7 @@ https://github.com/popcorncolonel/tensor_decomp_embedding
 # Conclusion
 
 * Our key contributions
-  1. Two novel tensor factorization based word embeddings [CP-S and JCP-S,] 
+  1. Two novel tensor factorization based word embeddings [CP-S and JCP-S,]
     based on symmetric CP decomposition
   2. A novel joint symmetric tensor factorization problem
     * using a single rank-R factor matrix

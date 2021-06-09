@@ -17,12 +17,12 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   * It is already used in many downstream NLP tasks, such as
     * splitting compounds (Daiber+ 2015)
     * semantic search (Cohen+ 2015)
-      Trevor Cohen, Dominic Widdows, and Thomas Rindflesch. 
+      Trevor Cohen, Dominic Widdows, and Thomas Rindflesch.
       Expansion-by-analogy: a vector symbolic approach to semantic search
       In Quantum Interaction, 2015 Springer, pages 54–66
     * cross-language relational search (Duc+ 2012)
 * One way to explain the current limitations is to attribute them to the
-  imperfections of the current models and/or the corpora they are built on:
+  imperfections of the models and/or the corpora they are built on:
   with this view, in a perfect VSM, any linguistic relation should work
 * The alternative to be explored in this of paper is that perhaps natural
   language semantics is more complex
@@ -38,7 +38,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   * similarity rather than identity:
     “instances of a single relation may still have significant variability in
     how characteristic they are of that class” (Jurgens+ Semeval 2012)
-* Analogy [ in philosophy and logic is ] quite different
+* Analogy [in philosophy and logic is] quite different
   * “classical” analogical reasoning follows roughly this template:
     objects X and Y share properties a, b, and c; therefore, they may also
     share the property d
@@ -47,11 +47,11 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
     life, so could Mars (Bartha, 2016)
 * The NLP move from relational similarity to analogy follows the use of the
   term by Turney (2006)
-* Bigger Analogy Test Set (BATS) (Gladkova+ 2016)
+* Bigger Analogy Test Set (BATS, Gladkova+ 2016)
 * not all relations can be identified in this way, with ... synonymy and
   antonymy being particularly difficult (Köper+ 2015; Vylomova+ 2016)
-* The assumption of a single best-fitting [ answer is also ] targeted
-  (Newman-Griffis+ 2017) 
+* The assumption of a single best-fitting [answer is also] targeted
+  (Newman-Griffis+ 2017)
 * Drozd+ (2016): some relations missed by 3CosAdd could be recovered with a
   supervised method
 
@@ -65,8 +65,8 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
   encyclopedic semantics (10 relations of each type)
 * The evaluation with 3CosAdd and LRCos methods was conducted with the Python
   script that accompanies BATS
-* 3CosMul, a multiplicative objective proposed by Levy and Goldberg (2014), now
-  available in the same script
+* 3CosMul, a multiplicative objective proposed by Levy and Goldberg (2014),
+  now available in the same script
 
 ## 3.2 The “Honest” 3CosAdd
 
@@ -81,8 +81,8 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * 3CosAdd is the most successful when all three source vectors are relatively
   close to each other and the target vector
 * could explain ... the overall lower performance on BATS derivational
-  morphology questions [ as opposed to inflectional ] or encyclopedic semantics
-  * man [and woman are] reasonably similar distributionally, as 
+  morphology questions [as opposed to inflectional] or encyclopedic semantics
+  * man [and woman are] reasonably similar distributionally, as
     they combine with many of the same verbs: both men and women sit, sleep
     the same could not be said of words derived with prefixes that change POS
 * snow: white :: sugar: ?white, the correct answer would a priori be excluded
@@ -102,13 +102,13 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 
 * 3CosAdd, has much higher chances of success where target vectors are close
 * We also consider LRCos, a method based on supervised learning from a set of
-  word pairs (Drozd+ 2016). LRCos reinterprets the analogy task as follows:
-  given a set of word pairs, the available examples of the [female class] and
-  randomly selected negative examples are used to learn a representation of the
-  target class with a supervised classifier. The question is this: what word is
-  the closest to king, but belongs to the “women” class?
+  word pairs (Drozd+ 2016)
+  * given a set of word pairs, the available examples of the [female class] and
+    randomly selected negative examples are used to learn a representation of
+    the target class with a supervised classifier. The question is this: what
+    word is the closest to king, but belongs to the “women” class?
 * With LRCos ..., we see the same trend: closer targets are easier to hit
-* accuracy of LRCos is much higher than the top-1 3CosAdd or 3CosMul. Moreover,
+* accuracy of LRCos is much higher than the top-1 3CosAdd or 3CosMul
 * [the “honest” version of LRCos] performs just as well as the “dishonest” one
   * consistent with the results reported by Drozd+ (2016). As for 3CosMul,
 * Levy+ (2015) show that 3CosMul outperforms 3CosAdd in PPMI, SGNS, GloVe and

@@ -1,6 +1,5 @@
 Máté **Ákos** Tündik and György Szaszák
-Joint Wordand Character-level Embedding CNN-RNN Models
-  for Punctuation Restoration
+Joint Word~ and Character-level Embedding CNN-RNN Models for Punctuation Restort
 Coginfocom 2018
 
 # Abstract

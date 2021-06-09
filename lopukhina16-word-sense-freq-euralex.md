@@ -11,6 +11,6 @@ Anastasiya Lopukhina, Konstantin Lopukhin, Boris Iomdin, Grigory Nosyrev
   performed on RuTenTen11 web-corpus
 * we reach a frequency estimation error of 11% without any additional labelled
   data. We compared sense frequencies obtained automatically with sense
-  ordering in different dictionaries for several words. 
+  ordering in different dictionaries for several words.
 * method ... can be applied to any language with a sufficiently large corpus
   and a good dictionary that provides examples for each sense

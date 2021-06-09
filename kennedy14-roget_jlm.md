@@ -8,7 +8,7 @@ JLM 2014
   pseudo-word-sense disambiguation and SAT-style analogy problems
 * related work
   * construct or enhance a thesaurus by clustering related words goes back over
-    two decades (Tsurumaru+ 1986; Crouch 1988; Crouch and Yang 1992). 
+    two decades (Tsurumaru+ 1986; Crouch 1988; Crouch and Yang 1992).
     * Few methods use an existing resource in the process of updating that same
     resource
 * We employ Roget’s Thesaurus in two ways when creating its updated versions
@@ -41,7 +41,7 @@ JLM 2014
 * attempts to expand the lexicon of Roget’s Thesaurus
 * mapping word senses between Roget’s, WordNet and LDOCE (Procter 1978). The
 * contexts: words in the same Paragraph, WordNet synset or an LDOCE definition
-* contexts are used to deduce which words are likely to be related 
+* contexts are used to deduce which words are likely to be related
   (Kwong 1998a,b; Nastase and Szpakowicz 2001)
 * Sagot and Fišer (2011) present an automatic, language-independent method
   (tested on Slovene and French) of extending a wordnet by “recycling” freely
@@ -55,7 +55,7 @@ JLM 2014
 
 # 6 automatic evaluation
 
-1. one is given a term q and seeks its best synonym s in a set of words C 
+1. one is given a term q and seeks its best synonym s in a set of words C
 2. take two words and merge them into a pseudo-word. A WSD system, then, has the
    goal of identifying which of the two words actually belongs in a given contxt
 3. Scholastic Aptitude Tests (SAT)

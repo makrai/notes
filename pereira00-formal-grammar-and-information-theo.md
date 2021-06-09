@@ -1,4 +1,4 @@
-Fernando Pereira 
+Fernando Pereira
 (2000)
 Formal grammar and information theory: together again?}
 

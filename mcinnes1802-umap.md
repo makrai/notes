@@ -177,8 +177,8 @@ arXiv:1802.03426 [stat.ML]
 # 7 potential extensions of UMAP 39
 
 * made possible by its construction upon solid mathematical foundations
-* (semi-)supervised dimension reduction, 
-  metric learning, and 
+* (semi-)supervised dimension reduction,
+  metric learning, and
   dimension reduction for datasets with heterogeneous data types
   * Each data type (or prediction variables in the supervised case) can
     * be seen as an alternative view of the underlying structure,

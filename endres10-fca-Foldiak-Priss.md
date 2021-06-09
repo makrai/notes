@@ -28,7 +28,7 @@ organization
     of the environment (e.g. a “grandmother cell”)
 * other extreme (approximate average activity ratio of 0.5) corresponds to
   rense, or holographic coding
-  * For N binary neurons this implies a representational capacity of 2^N 
+  * For N binary neurons this implies a representational capacity of 2^N
   * the representational capacity of a dense code in the brain is much
     greater than what we can experience in a lifetime
 * Sparse codes (small average activity ratio) appear to be a favourable

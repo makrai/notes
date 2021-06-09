@@ -24,13 +24,13 @@ TACL Volume 7, 2019 p.49-72
 
 # Intro
 
-* [deep learning in NLP ...  improved] various tasks, including
+* deep learning in NLP improved various tasks, including
   * language modeling (Mikolov+ 2010; Jozefowicz+ 2016),
   * syntactic parsing (Kiperwasser and Goldberg, 2016),
-  * machine translation (MT) (Bahdanau+ 2014; Sutskever+ 2014), and
+  * machine translation (MT, Bahdanau+ 2014; Sutskever+ 2014), and
   * many other tasks; see Goldberg (2017) for example success stories
 * two trends
-  * incorporating [linguistic knowledge] inside the networks
+  * incorporating linguistic knowledge inside the networks
   * understand how NLP models work
 * interpretability in machine learning, along with [NLP-spec characteristics]
   * accountability, trust, fairness, safety, and reliability
@@ -49,31 +49,31 @@ TACL Volume 7, 2019 p.49-72
 * English past tense (Rumelhart and McClelland 1986) built a feedforward NN for
   * analyzed its performance on a variety of examples and conditions. They were
   * performance over the course of training,
-    as their goal was to model ...  acquisition in children
+    as their goal was to model acquisition in children
     They also analyzed a scaled-down version
     having eight input units and eight output units, which
     allowed them to describe it exhaustively and examine
     how certain rules manifest in network weights
   * seminal work on RNNs, (Elman, 1989, 1990, 1991).Elman trained networks on
-    synthetic sentences in a [char-level] language prediction task
+    synthetic sentences in a char-level language prediction task
     extensive analyses, he showed how networks discover the notion of a word
     * syntactic structures like number agree-ment; and acquire
     * word representations that reflect lexical and syntactic categories
 * (Harris, 1990; Niklasson and Linåker, 2000; Pollack, 1990; Frank+ 2013)
 * Elman introduced methods
-  * from visualizing network activations in time, through
-    clustering words by hidden state activations, to
-    projecting representations to dimensions that emerge as capturing
-    properties like sentence number or verb valency
+  * visualizing network activations in time, through
+  * clustering words by hidden state activations, to
+  * projecting representations to dimensions that emerge as capturing properties
+    like sentence number or verb valency
 
 # 2 What Linguistic Information Is Captured in Neural Networks?
 
-* [analysis] work i.e. Identifying linguistic information
+* analysis work i.e. Identifying linguistic information
 * Table SM1 (in the supplementary materials) categorizes analysis work
 
 ## methods used for conducting the analysis, what kind of
 
-* predict [linguistic] properties from activations of the NN
+* predict linguistic properties from activations of the NN
   * various names: ‘‘auxiliary prediction tasks’’ (Adi+ 2017b), ‘‘diagnostic
     classifiers’’ (Veldhoen+ 2016), and ‘‘probing tasks’’ (Conneau+ 2018)
   * e.g. syntax in neural machine translation (NMT) by Shi+ (2016b). In this
@@ -82,7 +82,7 @@ TACL Volume 7, 2019 p.49-72
   * logistic regression classifier that predicts different syntactic properties
   * The authors concluded that the NMT encoders learn significant syntactic
     * both word level and sentence level. They also
-    * compared ...  different encoding layers and found that
+    * compared different encoding layers and found that
       "local features are somehow preserved in the lower layer whereas
       more global, abstract information tends to be stored in the upper layer"
 * Other methods for finding correspondences between parts of the NN and props
@@ -99,7 +99,7 @@ TACL Volume 7, 2019 p.49-72
       representation for X is closer to A or B
     * lower layers generally encode more phonological information
 
-## linguistic information sought
+## 2.2 linguistic information sought
 
 * ranging from basic properties like sentence length, word position,
   word presence, or simple word order, to
@@ -110,14 +110,14 @@ TACL Volume 7, 2019 p.49-72
   * NNs learn a substantial amount of information on various linguistic phenoms
   * especially successful at capturing frequent properties, while
     * some rare properties are more difficult to learn.  5
-    * e.g.  LSTM language models are able to capture subject–verb agreement in
+    * e.g. LSTM language models are able to capture subject–verb agreement in
       many common cases, while
       direct supervision is required for solving harder cases.  (Linzen+ 2016)
 * hierarchical nature of the learned representations. We have already mentioned
   * NMT (Shi+ 2016b) and a visually grounded speech model (Alishahi+ 2017)
-  * syntax were also reported to emerge in other RNN models (Blevins+ 2018)
+  * syntax was also reported to emerge in other RNN models (Blevins+ 2018)
 * models trained with latent trees perform better on natural language inference
-  (NLI) (Williams+ 2018; Maillard and Clark, 2018) than ones trained with
+  (NLI, Williams+ 2018; Maillard and Clark, 2018) than ones trained with
   linguistically annotated trees
   * trees in these models do not resemble syntactic trees
     * casts doubts on the importance of syntax-learning in the underlying NN
@@ -125,9 +125,9 @@ TACL Volume 7, 2019 p.49-72
 ## components in the NN being investigated
 
 * word embeddings, RNN hidden states or gate activations, sentence embeddings,
-  and attention weights in sequence-to-sequence (seq2seq) models. Generally
-* less work has analyzed convolutional NNs in NLP, but see Jacovi+
-  (2018) for a recent exception
+  and attention weights in sequence-to-sequence (seq2seq) models
+* less work has analyzed convolutional NNs in NLP,
+  but see Jacovi+ (2018) for a recent exception
 * speech processing, researchers have analyzed layers in deep NNs
   for speech recognition and different speaker embeddings. Some analysis has
 * joint language–vision or audio–vision models, or to similarities between word
@@ -136,11 +136,11 @@ TACL Volume 7, 2019 p.49-72
 ## limitations of current approaches
 
 * that a certain amount of linguistic information is captured in the NN, does
-  not necessarily mean that the information is used by the network. For
+  not necessarily mean that the information is used by the network
   * e.g. NTM
-    * Vanmassenhove+ (2017) investigated [verb] aspect in NMT
-      * [latent vectors] can accurately predict tense about 90% of the time
-      * output translations ... have the correct tense only 79% of the time
+    * Vanmassenhove+ (2017) investigated verb aspect in NMT
+      * latent vectors can accurately predict tense about 90% of the time
+      * output translations have the correct tense only 79% of the time
       * ‘‘part of the aspectual information is lost during decoding.’’
     * Cı́fka and Bojar (2018) compared the performance of various NMT models in
       * translation quality (BLEU) and representation quality (classification)
@@ -148,27 +148,29 @@ TACL Volume 7, 2019 p.49-72
       * high-quality systems may not be learning certain sentence meanings
     * Artetxe+ (2018) showed that word embeddings contain divergent linguistic
       * can be uncovered by applying a linear transformation on the embeddings
-      * embeddings "have limits on how [linguistic] information is surfaced"
-* concern[s] with correlation: a measure of causation is lacking
+      * embeddings "have limits on how linguistic information is surfaced"
+* concerns with correlation: a measure of causation is lacking
   * How does the encoding of linguistic properties affect the system output?
 * Giulianelli+ (2018)
   * predicted number agreement from RNN hidden states and gates at different
     time steps
-  * intervened in how the model processes the sentence by changing a hidden
-    activation based on the difference between the prediction and the correct
-    label. This improved agreement prediction accuracy, and the effect
-    persisted over the course of the sentence, indicating that this information
-    has an effect on the model. However, they did not report the effect on
-    overall model quality, for example by measuring perplexity. Methods from
+  * intervened in how the model processes the sentence by
+    changing a hidden activation based on the difference
+    between the prediction and the correct label
+    * This improved agreement prediction accuracy, and
+      the effect persisted over the course of the sentence, indicating that
+      this information has an effect on the model
+    * hE, they did not report the effect on overall model quality, e.g. perplext
 * causal inference may shed new light on some of these questions
 * different classifiers
-  * usually a simple classifier, such as logistic regression. A few studies
-  * and found that deeper classifiers lead to overall better results, but do
-  * not alter the respective trends when comparing different models or
-    components (Qian+ 2016b; Belinkov, 2018)
-  * tasks requiring more nuanced linguistic knowledge gain the most from using
-    a deeper classifier (Conneau+ 2018).  However, the approach is
-    * usually taken for granted; given its prevalence, ... better theoretical
+  * usually a simple classifier, such as logistic regression
+  * deeper classifiers lead to
+    * overall better results, but do
+    * not alter the respective trends when comparing models or components
+      (Qian+ 2016b; Belinkov, 2018)
+    * tasks requiring more nuanced linguistic knowledge gain the most
+      (Conneau+ 2018)
+    * usually taken for granted; given its prevalence, better theoretical
       or empirical foundations are in place
 
 # 3 Visualization methods 5
@@ -191,7 +193,7 @@ TACL Volume 7, 2019 p.49-72
   important or salient features can then be visualized in selected examples
   (Li+ 2016a; Aubakirova and Bansal, 2016; Sundararajan+ 2017; Arras+ 2017a,b;
   Ding+ 2017; Murdoch+ 2018; Mudrakarta+ 2018; Montavon+ 2018; Godin+ 2018)
-  Saliency [of] intermediate values (Ghaeini+ 2018). 7
+  Saliency of intermediate values (Ghaeini+ 2018). 7
 * many of the visualization methods are adapted from the vision domain, where
   they have been extremely popular; see Zhang and Zhu (2018) for a survey
 * cluster NN activations and compare them to some linguistic property
@@ -221,28 +223,47 @@ TACL Volume 7, 2019 p.49-72
 
 # 4 Challenge sets, aka. test suites, for fine-grained eval 6
 
-* challenge sets ... have been used in NLP for a long time (Lehmann+ 1996),
+* challenge sets have been used in NLP for a long time (Lehmann+ 1996),
   especially for evaluating MT systems (King and Falkedal, 1990; Isahara, 1995;
   Koh+ 2001)
-* [desirable] properties of test suites (Lehmann+ 1996):
+* desirable properties of test suites (Lehmann+ 1996):
   systematicity, control over data, inclusion of negative data, and
   exhaustivity
   * echoed in more recent work (Wang+ 2018a). For instance,
   * e.g. semantic test suite (Cooper+ 1996) that targets phenomena as diverse
     as quantifiers, plurals, anaphora, ellipsis, adjectival properties
-* [then] a hiatus of a couple of decades, 9 challenge sets have
+* then a hiatus of a couple of decades, 9 challenge sets have
   * can be attributed to the rise of large-scale quantitative evaluation
 * recently gained renewed popularity in the NLP community
-* In this section, we include datasets ... that diverge from the common
+* In this section, we include datasets that diverge from the common
   average-case evaluation. Many of them share some of the properties noted by
 * categorized along the following criteria
   * Another typology of evaluation protocols (Burlot and Yvon 2017)
-    * partially overlapping with ours, [not as comprehensive] like ours
+    * partially overlapping with ours, not as comprehensive like ours
 * Table SM2 categorizes many recent challenge sets along these criteria. Below
 
-## task they seek to evaluate
+## task they seek to evaluate 6
 
-## linguistic phenomena they aim to study
+## 4.2 linguistic phenomena they aim to study 7
+
+* earlier studies emphasized exhaustivity (Cooper+ 1996; Lehmann+ 1996),
+* recent ones tend to focus on a few properties of interest. For example,
+  * Sennrich (2017), for MT, focusing on five properties:
+    subject–verb agreement, noun phrase agreement, verb–particle constructions,
+    polarity, and transliteration
+  * MT challenge set for morphology, including 14 morphological properties
+    (Burlot and Yvon, 2017)
+  * extending Cooper+ (1996), the
+    GLUE for NLI covers more than 30 phenomena in four coarse categories
+    (lexical semantics, predicate–argument structure, logic, and knowledge)
+  * In MT evaluation, Burchardt+ (2017): large test suite covering
+    120 phenomena, partly based on Lehmann+ (1996)
+  * Isabelle+ (2017) and Isabelle and Kuhn (2018) prepared challenge sets for MT
+    evaluation covering fine-grained phenomena at morpho-syntactic, syntactic,
+    and lexical levels
+  * Generally, datasets that are constructed
+    automatically tend to cover less fine-grained linguistic properties, while
+    manually constructed datasets represent more diverse phenomena
 
 ## language(s) they target
 
@@ -262,21 +283,21 @@ TACL Volume 7, 2019 p.49-72
 
 # 7 A few other methods
 
-* erasing or masking certain neural network components, 
-  such as word embedding dimensions, hidden units, or even full words 
+* erasing or masking certain neural network components,
+  such as word embedding dimensions, hidden units, or even full words
   (Li+ 2016b; Feng+ 2018; Khandelwal+ 2018; Bau+ 2018)
-* intrusion tasks, where humans need to identify an intruder word, 
-  chosen based on difference in word embedding dimensions 
+* intrusion tasks, where humans need to identify an intruder word,
+  chosen based on difference in word embedding dimensions
   (Murphy+ 2012; Fyshe+ 2015; Faruqui+ 2015)
-  * [originally for] probabilistic topic models (Chang+ 2009)
-  * a word embedding model [is] more interpretable if humans are better able to
+  * originally for probabilistic topic models (Chang+ 2009)
+  * a word embedding model is more interpretable if humans are better able to
     identify the intruding words
-* alternative automatic metrics were considered (Park+ 2017; Senel+ 2018)
-* ability to learn different formal languages 
-  * earlier (Das+ 1992; Casey, 1996; Gers and Schmidhuber, 2001; 
+* alternative automatic metrics (Park+ 2017; Senel+ 2018)
+* ability to learn formal languages
+  * earlier (Das+ 1992; Casey, 1996; Gers and Schmidhuber, 2001;
     Bodén and Wiles, 2002; Chalup and Blair, 2003)
   * today, with research into modern architectures and
     * gen capacity (Weiss+ 2018; Bernardy, 2018; Suzgun+ 2019), or the
     * formal properties they possess (Chen+ 2018b)
 
-# 8 Conclusion ... and potential research directions 11
+# 8 Conclusion and potential research directions 11

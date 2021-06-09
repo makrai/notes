@@ -25,14 +25,14 @@ http://cs.brown.edu/~dc65/
 
 * Bayesian WSI systems have been developed by several authors
   * Brody and Lapata (2009)
-    * apply Latent Dirichlet Allocation (LDA) (Blei et al., 2003) to WSI
+    * apply Latent Dirichlet Allocation (LDA) (Blei+ 2003) to WSI
     * They run a topic modeling algorithm on texts
       * with some fixed number of topics that correspond to senses and
       * a cluster: target words assigned to the same topic
       * evaluated on SemEval-2007 noun data (Agirre and Soroa, 2007)
-  * Lau et al. (2012)
+  * Lau+ (2012)
     * apply a nonparametric model, Hierarchical Dirichlet Processes (HDP),
-    * to SemEval-2010 data (Manandhar et al., 2010)
+    * to SemEval-2010 data (Manandhar+ 2010)
     * their system assigns many senses (about 10) to each word,
 
 # 3 Model
@@ -54,10 +54,9 @@ http://cs.brown.edu/~dc65/
   * (Korkontzelos and Manandhar, 2010)
 * Hermit
   * approximates co-occurrence space with Random Indexing and
-  * applies a hybrid of k-means and Hierarchical Agglomerate Clustering
-    * to co-occurrence space
-  * (Jurgens and Stevens, 2010)
+  * applies a hybrid of k-means and Hierarchical Agglomerate Clustering to
+    co-occurrence space (Jurgens and Stevens, 2010)
 * NMF_lib
   * factors a matrix using nonnegative matrix factorization and
   * runs a clustering algorithm on test instances represented by factors
-  * (Van de Cruys et al., 2011)
+  * (Van de Cruys+ 2011)

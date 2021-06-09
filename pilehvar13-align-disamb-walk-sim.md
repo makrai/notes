@@ -1,5 +1,5 @@
 Mohammad Taher Pilehvar, David Jurgens and Roberto Navigli
-Align, Disambiguate and Walk: 
+Align, Disambiguate and Walk:
     A Unified Approach for Measuring Semantic Similarity
 acl 2013
 
@@ -12,12 +12,12 @@ acl 2013
 
 * The contributions of this paper are threefold.
 * unified representation of ... an arbitrarily-sized piece of text,
-* novel alignment-based method for 
+* novel alignment-based method for
   * word sense disambiguation during semantic comparison
 * state-of-the-art performance on three similarity tasks
   * SemEval-2012
   * word pair similarity
-    * TOEFL 
+    * TOEFL
     * Rubenstein and Goodenough, 1965
   * sense-coarsening
 
@@ -26,8 +26,8 @@ acl 2013
 * 2.1 Semantic Signatures
   * random walks: nem lehetne expliciten?
 * 2.2 Alignment-Based Disambiguation
-  * leverages the content of the paired item 
+  * leverages the content of the paired item
     in order to disambiguate each element
 * 2.3 Semantic Signature Similarity
 
-# 3 Experiment 1: Textual Similarity 
+# 3 Experiment 1: Textual Similarity

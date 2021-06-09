@@ -1,5 +1,5 @@
-Rothe, S. and Schütze, H. (2015). 
-Autoextend: Extending word embeddings to embeddings for synsets and lexemes. 
+Rothe, S. and Schütze, H. (2015).
+Autoextend: Extending word embeddings to embeddings for synsets and lexemes.
 2015 ACL IJCNLP
 
 * A lexeme pairs a particular spelling or pronunciation with a particular

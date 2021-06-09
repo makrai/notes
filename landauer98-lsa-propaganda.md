@@ -4,8 +4,12 @@ A Solution to Plato's Problem:
   Acquisition, Induction, and Representation of Knowledge
 Psychological Review 1997
 
+* azt gondolom, hogy LSA kapcsán a következőket érdemes hivatkozni
+  * seminal: Dumais+ 88, Furnas+ 88
+  * easy entry: Landauer+ 98 (ez); Deerwester+ 1990
+
 címek hierarchiája:
-középen álló > középen dőlt > balra zárt (dőlt) 
+középen álló > középen dőlt > balra zárt (dőlt)
 
 # Abstract
 
@@ -82,10 +86,10 @@ experience
 
 ## The Singular Value Decomposition (SVD) Realization of LSA p8 TODO
 
-* Singular Value Decomposition (SVD) [is] 
+* Singular Value Decomposition (SVD) [is]
   * kind of inductive mechanisms that we want to explore
-  * a convenient way to vary dimensionality, and that it 
-  * can fairly easily be applied to data of the amount and kind 
+  * a convenient way to vary dimensionality, and that it
+  * can fairly easily be applied to data of the amount and kind
     that a human learner encounters over many years of experience
   * complicating the model appropriately might allow it to simulate ... aspects
     of grammar and syntax that involve ordered and hierarchical relations
@@ -96,27 +100,27 @@ experience
   independent principal components of which factor analysis is the special case
   for square matrices
 * Factor analysis finds a parsimonious representation of all the
-  intercorrelations between a set of variables 
-  in terms of a new set of abstract variables, 
-    * each of which is unrelated to any other but 
-    * which can be combined to regenerate the original data. 
-* SVD does the same thing for an arbitrarily shaped rectangular matrix 
-  * columns stands for words, and rows for contexts in which the words appear.
-* processedure
-  * cells in the matrix contained the frequency 
-  * The raw cell entries were first transformed to 
-  `(ln 1 + frequency) / entropy of the word over all contexts`. 
-  * This matrix was then submitted to SVD and 
-  * the—for example—300 most important dimensions were retained 
-  * (those with the highest singular values, i.e., 
+  intercorrelations between a set of variables
+  in terms of a new set of abstract variables,
+    * each of which is unrelated to any other but
+    * which can be combined to regenerate the original data
+* SVD does the same thing for an arbitrarily shaped rectangular matrix
+  * columns stands for words, and rows for contexts in which the words appear
+* process
+  * cells in the matrix contained the frequency
+  * The raw cell entries were first transformed to
+  `(ln 1 + frequency) / entropy of the word over all contexts`
+  * This matrix was then submitted to SVD and
+  * the—for example—300 most important dimensions were retained
+  * (those with the highest singular values, i.e.,
     the ones that captured the greatest variance in the original matrix)
-  * solution then generates a vector of 300 real values 
-    to represent each word and each context. See Figure 2.  
+  * solution then generates a vector of 300 real values
+    to represent each word and each context. See Figure 2
 * Similarity was usually measured by the cosine between vectors
 
 ### Brief Note on Neurocognitive and Psychological Plausibility
 
-* semantic network-represented theories, such as Kintsch (1988), 
+* semantic network-represented theories, such as Kintsch (1988),
   could easily be recast in vector algebra
 
 # Evaluating the Model p9
@@ -134,9 +138,9 @@ experience
 ## Conditioning, Perceptual Learning, and Chunking p18
 ## A New Light on Classical Association Theory
 ## Analogy to Episodic and Semantic Memories !
-## Analogy to Explicit and Implicit Memories p19 
-## Expertise 
-## Contextual Disambiguation 
+## Analogy to Explicit and Implicit Memories p19
+## Expertise
+## Contextual Disambiguation
 ### Text Comprehension: An LSA Interpret of Construction-Integration Theory p20
 
 # Summary p24

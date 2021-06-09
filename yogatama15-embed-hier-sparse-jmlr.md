@@ -4,9 +4,9 @@ Word Representations withe Hierarchical Sparse Coding
 
 # Abstract
 
-* algorithm based on stochastic proximal methods that is 
-  significantly faster than previous approaches, 
-  making it possible to perform hierarchical sparse coding 
+* algorithm based on stochastic proximal methods that is
+  significantly faster than previous approaches,
+  making it possible to perform hierarchical sparse coding
   on a corpus of billions of word tokens
 * Experiments on ... word similarity ranking, syntactic and semantic analogies,
   sentence completion, and sentiment analysis
@@ -19,7 +19,7 @@ Word Representations withe Hierarchical Sparse Coding
 * govern the relationships among dimensions of the learned word vectors,
   * hierarchical organization imposed through a structured penalty known as the
     group lasso (Yuan & Lin, 2006). The idea of
-  * regulating the order in which variables enter a model was 
+  * regulating the order in which variables enter a model was
     first proposed by Zhao et al. (2009), and it has since been shown useful
   * for other applications (Jenatton et al., 2011)
   * coarse-to-fine organization of words’ meanings often found in the field of
@@ -52,14 +52,14 @@ Word Representations withe Hierarchical Sparse Coding
     * other loss functions could also be used (Lee et al., 2009). Note that
 * it is ... typical, for M to be less than C
   * when M > C, it is often called an overcomplete representation
-* The most common regularizer is the `l_1` penalty, 
+* The most common regularizer is the `l_1` penalty,
   which results in sparse codes
 * our motivation is to use Ω to encourage a coarse-to-fine organization
 
 ## 2.2 Structured Regularization for Word Representations
 
 * For Ω(A), we design a forest-structured regularizer that
-  * encourages the model to use some dimensions in the code space 
+  * encourages the model to use some dimensions in the code space
     before using other dimensions
   * trees describe the order in which variables “enter the model” (i.e., take
     nonzero values). In general, a node may take a nonzero value only if its
@@ -67,8 +67,8 @@ Word Representations withe Hierarchical Sparse Coding
     `\Omega (a_v) = \sum_node |a_{v,i} a_{v, descendants(i)}|_2`
     * Jenatton et al.  (2011) proposed a related penalty with only one tree for
       learning image and document representations
-* [thus] we encode [a] constraint that 
-  the dimensions of a v that correspond to top level nodes 
+* [thus] we encode [a] constraint that
+  the dimensions of a v that correspond to top level nodes
   should focus on “general” contexts that are present in most words
   * this corresponds to contexts with extreme PMI values for many words, since
     they are the ones that incur the largest losses
@@ -77,7 +77,7 @@ Word Representations withe Hierarchical Sparse Coding
 
 ## 2.3. Learning
 
-* The function is not convex with respect to D and A, but 
+* The function is not convex with respect to D and A, but
   it is convex with respect to each when the other is fixed
   * Alternating minimization routines
     * shown to work reasonably well in practice for such problems (Lee+ 2007),
@@ -87,7 +87,7 @@ Word Representations withe Hierarchical Sparse Coding
   For T iterations, we:
   * Sample a mini-batch of words and (in parallel) solve for each one’s `a`
     using proximal methods or alternating directions method of multipliers,
-    shown to work well for overlapping group lasso problems 
+    shown to work well for overlapping group lasso problems
     (Jenatton et al., 2011; Qin & Goldfarb, 2012; Yogatama & Smith, 2014)
   * Update `D` using the block coordinate descent algorithm
   * [once D is fixed,] we parallelize solving for all columns of A
@@ -97,11 +97,11 @@ Word Representations withe Hierarchical Sparse Coding
 
 ## 3.3. Results
 
-* similarity ranking and sentiment analysis tasks, 
+* similarity ranking and sentiment analysis tasks,
   our method performed the best in both low and high dimensional embeddings
-* sentence completion challenge, 
-  our method performed best in the high-dimensional case and 
-  secondbest in the low-dimensional case 
+* sentence completion challenge,
+  our method performed best in the high-dimensional case and
+  secondbest in the low-dimensional case
   * FOREST outperforms PCA and unstructured sparse coding (SC) on every task
 
 ### Analogies
@@ -110,7 +110,7 @@ Word Representations withe Hierarchical Sparse Coding
   below state-of-the-art performance
 * [on a] bigger corpus, and the performance levels are ... comparable with
   previous work. On the
-  * syntactic analogies task, FOREST is competitive with GV and 
+  * syntactic analogies task, FOREST is competitive with GV and
     both models outperformed SG and CBOW. On the
   * semantic analogies task, GV outperformed SG, FOREST , and CBOW
 

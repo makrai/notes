@@ -6,7 +6,7 @@ COLING 2018
 
 * methods have been proposed to encode external knowledge into word embeddings
 * this paper is to encode sentiment knowledge into pre-trained word vectors
-* Our ... method is based on a CNN and an external sentiment lexicon
+* Our method is based on a CNN and an external sentiment lexicon
 * Experiments on four popular sentiment analysis datasets show that
   this method improves the accuracy of sentiment analysis
   compared to a number of benchmark methods
@@ -17,7 +17,7 @@ COLING 2018
 * A simple CNN trained over pre-trained word vectors
   achieves highly competitive results (Kim, 2014)
 * task-specific vectors through fine-tuning may offer further gains
-* Separately, ... learning word embeddings based [on] external knowledge bases
+* Separately, learning word embeddings based [on] external knowledge bases
   (Wieting+ 2015; Yu and Dredze, 2014; Xu+ 2014; Bian+ 2014;
   Faruqui+ 2015; Mrkšić+ 2016; Mrkšić+ 2017; Vulić+ 2017)
   * applied to sentiment classification (Rouvier and Favre, 2016; Yu+ 2017)
@@ -25,7 +25,7 @@ COLING 2018
   generally trained independently of the downstream task
 * we propose a novel method to combine
   a feedforward neural network (denoted “SentiNet”) with a CNN classifier
-  to encode sentiment knowledge into word vectors during training.  The method
+  to encode sentiment knowledge into word vectors during training
   * tunes word vectors through the CNN and SentiNet, based on
   * independent information from supervised training data and sentiment lex
 * we compare our method with competitor methods that use
@@ -33,7 +33,7 @@ COLING 2018
 * The major contributions of this paper are as follows:
   1. the sentiment lexicon is encoded into word vectors by a feedforward NN
   1. word vectors are fine-tuned based on supervised training data and the
-     sentiment lexicon during the training of the CNN sentiment classifier
+    sentiment lexicon during the training of the CNN sentiment classifier
   1. we achieve SOTA accuracy over a range of benchmark sentiment analysis DSs
 
 # 2 Related Work
@@ -63,9 +63,9 @@ COLING 2018
         the semantic graph
     * Antonyms are generally close in vector space, presenting a problem
       * antonym lexicons have been used to fine-tune pre-trained word vectors
-      * Mrkšić+ (2016) present a method called counter-fitting to 
+      * Mrkšić+ (2016) present a method called counter-fitting to
         * inject antonymy and synonymy constraints into word vectors trained
-          with GloVe (Pennington+ 2014) and PARAGRAM (Wieting+ 2015) 
+          with GloVe (Pennington+ 2014) and PARAGRAM (Wieting+ 2015)
         * The adapted word vectors trained with PARAGRAM achieve the
           second-highest SimLex-999 (Hill+ 2015) score
       * Mrkšić+ (2017) extend this work using negative sampling, to force
@@ -81,12 +81,12 @@ COLING 2018
     * sentiment analysis (Faruqui+ 2015; Wieting+ 2015; Yu+ 2017)
     * document classification (Kiela+ 2015), and
     * word sense disambiguation (Rothe and Schütze, 2015)
-* [The two method above] both ... before applying word vectors in downstream
+* [The two method above] both before applying word vectors in downstream
   Our method [during] fine-tuning the word vectors in a downstream task
 
 ## 2.2 Adapting Word Vectors for Sentiment Analysis
 
-* Maas+ (2011) combine ... a probabilistic document model and a sentiment
+* Maas+ (2011) combine a probabilistic document model and a sentiment
   component to learn word vectors
   * The probabilistic document model does not require labelled data
   * The sentiment component uses document-level sentiment annotations to

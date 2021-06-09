@@ -9,8 +9,8 @@ David M. Blei
   modeling_, and describe two kinds of algorithms for topic discovery. We then
   survey the growing body of research that extends and applies topic models in
   interesting ways
-* extensions have been developed by 
-  * relaxing some of the statistical assumptions of LDA, 
+* extensions have been developed by
+  * relaxing some of the statistical assumptions of LDA,
   * incorporating meta-data into the analysis of the documents, and using
   * diversity of data types such as social networks, images and genetics
 
@@ -28,32 +28,32 @@ David M. Blei
   different words that are used in the article.  Words about data analysis,
   such as “computer” and “prediction,” are highlighted in blue; words about
   evolutionary biology,
-* formally 
+* formally
   * define a topic to be a distribution over a fixed vocabulary
   * for each document in the collection, we generate the words in a two-stage
     process
     1. Randomly choose a distribution over topics
-    2. For each word in the document 
-      *  Randomly choose a topic from the distribution over topics in step #1.  
+    2. For each word in the document
+      *  Randomly choose a topic from the distribution over topics in step #1.
       *  Randomly choose a word from the corresponding distribution over the
          vocabulary
 
 ## 2.1 LDA and probabilistic models
 
-* dependencies define LDA. They are encoded in 
-  * the statistical assumptions behind the generative process, in 
+* dependencies define LDA. They are encoded in
+  * the statistical assumptions behind the generative process, in
   * the particular mathematical form of the joint distribution, and
   * the probabilistic graphical model for LDA
   * These three representations are equivalent ways of describing the
     probabilistic assumptions behind LDA
-* history of these ideas. LDA was developed to fix an issue with 
+* history of these ideas. LDA was developed to fix an issue with
   _probabilistic latent semantic analysis_ (pLSI, Hofmann 1999)
   * [pLSI] was a probabilistic version of the seminal work on LSA [14]
 
 ## 2.2 Posterior computation for LDA p7
 
 * Topic modeling algorithms generally fall into two categories
-  * sampling-based algorithms 
+  * sampling-based algorithms
     * The most commonly used sampling algorithm for topic modeling is Gibbs
       sampling, where we construct a Markov chain—a sequence of random
       variables, each dependent on the previous—whose limiting distribution is
@@ -64,7 +64,7 @@ David M. Blei
       implementation
   * variational algorithms
     * parameterized family of distributions over the hidden structure and
-      then find the member of that family that is closest to the posterior. 
+      then find the member of that family that is closest to the posterior.
       * Closeness is measured with Kullback-Leibler divergence ... between two
         probability distributions
     * Thus, the inference problem is transformed to an optimization problem

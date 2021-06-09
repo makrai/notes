@@ -7,11 +7,11 @@ The lexicons are made freely available www.purl.com/net/sentimentoftweets
 # Abstract
 
 * In this paper, we describe how we created
-  * two state-of-the-art SVM classifiers,
+  * two SOTA SVM classifiers,
     * one to detect the sentiment of messages such as tweets and SMS (msg lev)
     * one to detect the sentiment of a term within a a message (term-level)
 * features: surface-form, semantic, and sentiment features, sentiment-word
-  hashtags [or] emoticons
+  hashtags or emoticons
   * The sentiment lexicon features
     (both manually created and automatically generated)
     along with ngram features (both word and character ngrams)
@@ -44,7 +44,7 @@ The lexicons are made freely available www.purl.com/net/sentimentoftweets
 * Mohammad (2012) showed that hashtagged emotion words such as joy, sadness,
   angry, and surprised are good indicators that the tweet as a whole (even
   without the hashtagged emotion word) is expressing the same emotion. We
-* [seed] terms were chosen from entries for positive and negative in the
+* seed terms were chosen from entries for positive and negative in the
   Roget’s Thesaurus
 * The final lexicon, i.e. the NRC Hashtag Sentiment Lexicon has entries for
   54,129 unigrams and 316,531 bigrams.  Entries were also generated for

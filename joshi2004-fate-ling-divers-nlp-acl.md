@@ -23,10 +23,10 @@ arxiv.org/abs/2004.09095
     phrases are head-initial.  It also features full and partial reduplication
   * 69 items on LDC and ELRA contain data in X, whereas for
     Y there are only 2 items
-    X boasts of some of the best online machine translation systems, whereas
-    Y is supported by very few online MT systems and that too with far inferior
+    * X boasts of some of the best online machine translation systems, whereas
+    * Y is supported by very few online MT systems and that too inferior
   * number of papers in conferences (ACL, NAACL, EACL, EMNLP, LREC, WS) that
-    mention X and Y in the paper, across the years.  ∗ As you can see, while
+    mention X and Y in the paper, across the years
     * X has a steady and growing trend of research, our
       community has been mostly oblivious to Y, until recently when some of the
       zero-shot learning papers have started mentioning it
@@ -41,30 +41,30 @@ arxiv.org/abs/2004.09095
     are not truly so (Bender, 2011)
   * The handful of languages on which NLP systems are trained and tested are
     * related and from the same geography, drawn from a few dominant families,
-    * typological echo-chamber. As a result,
+    * typological echo-chamber
   * majority of typologically diverse phenomena never seen by sys (Ponti+ 2018)
-    Nevertheless, it would be prudent to re-examine these issues in the light of
+    Nevertheless, it would be prudent to re-examine these issues
 * Neural systems
   * require a lot more data for training than rule-based or traditional ML
   * zero-shot learning of massively multilingual systems (Devlin+ 2018;
-    Conneau+ 2018) bridge this gap by obliterating the need for large labeled
+    Conneau+ 2018) bridge this gap
     * need only large unlabeled corpora across languages
     * how does [this change] the fate of different languages?
 * tractable and quantifiable questions on Linguistic Diversity and Inclusion:
   1. How many resources, labeled and unlabeled, are available
     * How does this distribution correlate to their number of native speakers?
     * What can we expect to achieve today and in the near future?
-  2. Which typological features ... remain unexplored by systems because we
+  2. Which typological features remain unexplored by systems because we
      have hardly created any resources and conducted data-driven research
   3. how inclusive has ACL been in conducting and publishing research
-    * was the linguistic diversity of ACL higher?  In 1980s and early 90s, 
+    * was the linguistic diversity of ACL higher?  In 1980s and early 90s,
       when large scale datasets were not the drivers
-  4. amount of resource ... influence the research questions and the venue?
+  4. amount of resource influence the research questions and the venue?
   5. role [of] an individual researcher, or a research community in bridging
 * languages of the World can be broadly classified into 6 classes based on
   * how much and what kind of resources they have
   * distinct and different trajectory in the history of ACL
-  * [different] hope of coming to the forefront ... with zero-shot learning
+  * [different] hope of coming to the forefront with zero-shot learning
 
 # 2 The Six Kinds of Languages
 
@@ -100,7 +100,7 @@ arxiv.org/abs/2004.09095
 ### 0 The Left-Behinds: have been and are still ignored [by] NLP
 
 * probably impossible effort to lift them up in the digital space
-* Unsupervised pre-training methods only make the ‘poor poorer’, since there is
+* Unsupervised pre-training methods only make the ‘poor poorer’
   * no unlabeled data to use
 
 ### 1 The Scraping-Bys
@@ -113,7 +113,7 @@ arxiv.org/abs/2004.09095
 ### 2 The Hopefuls
 
 * A small set of labeled datasets has been collected for these languages,
-* there are [digital] researchers and language support communities which strive
+* there are [digital] researchers and language support communities
 * Promising NLP tools can be created for these languages [in] a few years
 
 ### 3 The Rising Stars
@@ -125,7 +125,7 @@ arxiv.org/abs/2004.09095
 
 ### 4 The Underdogs [a nyugodt? esélytelenek]
 
-* Powerful and capable, ... serious amounts of resource ‘firepower’
+* Powerful and capable, serious amounts of resource ‘firepower’
 * unlabeled data, comparable to those possessed by the winners, [but]
 * lesser amount of labeled data
 * With dedicated NLP communities conducting research on these languages, they
@@ -193,27 +193,27 @@ arxiv.org/abs/2004.09095
 ### Does it run in the family? e.g. Semitic
 
 * Amharic is the second most spoken language after Arabic (which has 300M)
-  * Arabic has 9 ‘ignored’ typological features, whereas Arabic has none. This
+  * Arabic has 9 ‘ignored’ typological features, whereas Arabic has none
   * reflects in the error rate of English to Amharic 60.71 vs 7.8
 
 # 4 Conference-Language Inclusion 5
 
 * ACL, EMNLP, LREC have the ability to turn heads in both industry and governmn
-  * attract funds to a particular technology. Has the usage of a small set of
+  * attract funds to a particular technology
 
 ## 4.1 Dataset
 
-* ACL Anthology Corpus (ACL-ARC) (Bird+ 2008) ... is till 2015 which makes it
+* ACL Anthology Corpus (ACL-ARC, Bird+ 2008) is till 2015
 * non-ACL conferences such as LREC, COLING, we augment this dataset by
-* using Semantic Scholar’s API and scraping ACL Anthology itself. Thus,
-* we gather ... 11 conferences: ACL, NAACL, EMNLP, EACL, COLING, LREC, CONLL,
-  Workshops (WS) (all since 1990), SEMEVAL, TACL and CL Journals
+* using Semantic Scholar’s API and scraping ACL Anthology itself
+* we gather 11 conferences: ACL, NAACL, EMNLP, EACL, COLING, LREC, CONLL,
+  Workshops (WS, all since 1990), SEMEVAL, TACL and CL Journals
 
 ## 4.2 Analysis
 
 ### 4.2.1 Language Occurrence Entropy
 
-* entropy as our metric to measure language inclusivity of each conference. It
+* entropy as our metric to measure language inclusivity of each conference
 
 ### 4.2.2.Class-wise Mean Reciprocal Rank
 
@@ -230,11 +230,11 @@ arxiv.org/abs/2004.09095
 ### A ray of hope
 
 * ACL, EMNLP, NAACL, LREC, we note a marked spike in entropy in the 2010s,
-* absent inother conferences. This might be due to cross-lingual techniques
+* absent in other conferences. This might be due to cross-lingual techniques
 
 ### The later the merrier
 
-* conferences which started later have taken lessons from past in matters of
+* conferences which started later have taken lessons from past
 * COLING, ACL, EACL, EMNLP (order of their start dates)
 
 ### Falling off the radar
@@ -244,17 +244,17 @@ arxiv.org/abs/2004.09095
 # 5 Entity Embedding Analysis
 
 * jointly learn the representations of conferences (year), authors, languages
-  * collectively term as entities. The proposed embedding method allows us to
+  * collectively term as entities
   * project these entities in the same space
 
 ## 5.1 Model
 
-* task of the model is to predict K words from the title and the abstract of
-* parallels to the Skipgram model of Word2Vec (Mikolov+ 2013), where given an
+* task of the model is to predict K words from the title and the abstract
+* parallels to the Skipgram model of Word2Vec (Mikolov+ 2013)
 
 ## 5.2 Analysis
 
-* Table 5: Language-Author-Language MRR on Taxon- omy Classes. MRR(K) considers
+* Table 5: Language-Author-Language MRR on Taxonomy Classes. MRR(K)
 * A higher value of this measure indicates a more focused community working on
   that particular language, rather than a diverse range of authors
 
@@ -262,28 +262,28 @@ arxiv.org/abs/2004.09095
 
 ### Time waits for no conference
 
-* the [horizontal t-SNE] axis represents the progression of time to a certain
-  * Alternatively ... a shift in the focus of NLP research, moving
+* the [horizontal t-SNE] axis represents the progression of time
+  * Alternatively a shift in the focus of NLP research, moving
     from theoretical research focused on grammar and formalisms on the left to
-    a data-driven, more ML-oriented approach on the right. This can be observed
+    a data-driven, more ML-oriented approach on the right
 
-### Long distance relationships? From Figure 6, we can note that
+### Long distance relationships? Figure 6
 
 * less-resourced language classes are farther away from the trend-line of ACL
 
 ### Not all heroes wear capes
 
 * Table 5 shows the MRR for each class of languages in the taxonomy
-  * class 0 has the highest MRR across different K values.  This shows that
-    * low resource languages have some research groups solely focused on the
+  * class 0 has the highest MRR across different K values
+    * low resource languages have some focused research groups
   * decreasing trend of MRR from class 0 to class 5,
   * except for class 2, thereby indicating that more popular languages are
     addressed by more authors
   * Japanese, Mandarin, Turkish and Hindi (MRR(10) > 0.75) are in class 5 or 4
     but their MRR is higher even compared to low resource languages
-  * low resource languages like Burmese, Javanese  and Igbo  which have
+  * low resource languages like Burmese, Javanese  and Igbo which have
     millions of speakers but significantly low MRR values, potentially
-    indicating that not a lot of attention is being given to them in the
+    indicating that not a lot of attention is being given to them
 
 # 6 Conclusion 9
 

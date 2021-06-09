@@ -2,6 +2,8 @@ Morris Swadesh
 Towards Greater Accuracy in Lexicostatistic Dating
 1955 International Journal of American Linguistics, Vol. 21, No. 2 pp. 121137
 
+for versions, see swadesh.md
+
 # 1. Introduction
 
 * estimating time depth by counting cognates in test vocabularies

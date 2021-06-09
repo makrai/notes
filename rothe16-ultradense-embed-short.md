@@ -164,7 +164,7 @@ Word Embedding Calculus in Meaningful Ultradense Subspaces
     * can [be though of] as learning specialized metrics for particular
       subtypes of linguistic information or particular tasks
   * Using the[ir method], one could
-    * learn k metrics for k subtypes of information and then simply 
+    * learn k metrics for k subtypes of information and then simply
       represent a word w as the concatenation of (i) the original embedding and
       (ii) k representations corresponding to the k metrics
     * In case of a simple one-dimensional type of information, the

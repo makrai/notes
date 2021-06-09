@@ -9,6 +9,6 @@ Intrinsic Evaluation of Word Vectors Fails to Predict Extrinsic Performance
   * a variety of word vectors induced from an
     * unannotated corpus of 3.8 billion words, and demonstrate that
 * most intrinsic evaluations are poor predictors of downstream performance
-* this issue can be traced in part to a 
+* this issue can be traced in part to a
   failure to distinguish specific similarity from relatedness
 * We make our evaluation tools openly available

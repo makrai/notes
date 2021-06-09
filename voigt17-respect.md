@@ -15,7 +15,7 @@ Rob Voigt , Nicholas P. Camp , Vinodkumar Prabhakaran at al
 # Study 2: Linguistic Correlates of Respect
 
 * In this study, we ... develop [NLP] models of respect and formality and tune
-  them on the 414 individual utterances; 
+  them on the 414 individual utterances;
   * in study 3, we apply these models to our full dataset of 36,738 utterances.
 
 # Study 3: Racial Disparities in Respect. p3
@@ -34,7 +34,7 @@ Rob Voigt , Nicholas P. Camp , Vinodkumar Prabhakaran at al
   titles, we used an augmented version of a word list from ref. 34. We also
   used regular expressions, such as for detecting tag questions (“do that for
   me, will you?”), and syntactic parse features, such as a feature that detects
-  when “just” is used in constructions as an adverbial modifier.  
+  when “just” is used in constructions as an adverbial modifier.
 * Features were modeled as log-transformed counts in each utterance, and were
   used as independent variables in two linear regression models predicting
   the human perceptual ratings of respect and formality obtained in study 1.

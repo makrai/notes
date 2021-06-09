@@ -40,14 +40,14 @@ A quick tour of word sense disambiguation, induction and related approaches
   dimensions to distinguish between different senses of a target word, and then
   proceeds to disambiguate each given instance of that word.
   * 11
-    * de Cruys, T.V., Apidianaki, M.: 
+    * de Cruys, T.V., Apidianaki, M.:
     * Latent semantic word sense induction and disambiguation
     * ACL 11
 
 ## 3.2 Evaluation
 * a specific instance of clustering
 * Unsupervised evaluation
-* Supervised evaluation: 
+* Supervised evaluation:
   * the output of WSI is evaluated in a WSD task
 * Within an application:
 

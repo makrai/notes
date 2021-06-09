@@ -8,9 +8,9 @@ demo: http://jobimtext.org/wsd
 
 # Intro
 
-* Unsupervised knowledge-free approaches, e.g. 
-  (Di Marco and Navigli, 2013; Bartunov et al., 2016), 
-* this paper is the first system for word sense induction ... interpretable 
+* Unsupervised knowledge-free approaches, e.g.
+  (Di Marco and Navigli, 2013; Bartunov et al., 2016),
+* this paper is the first system for word sense induction ... interpretable
 * based on the WSD approach of Panchenko et al. (2017)
 
 # 2 Related Work
@@ -28,7 +28,7 @@ demo: http://jobimtext.org/wsd
   provides an interface to evaluation datasets. PyWSD 3 project also provides
   implementations of popular WSD methods, but these are implemented in the
   Python language.
-* Babelfy (Moro et al., 2014) is a system based on the BabelNet that 
+* Babelfy (Moro et al., 2014) is a system based on the BabelNet that
   * implements a multilingual graph-based approach to entity linking and WSD
     * based on ... the densest subgraph heuristic
     * interpretable visualization of the disambiguation results.

@@ -4,11 +4,11 @@ Learning Bilingual Word Representations by Marginalizing Alignments
 
 # Abstract
 
-* We present a probabilistic model that 
-  * simultaneously learns alignments and distributed representations 
-    for bilingual data.  
-  * By marginalizing over word alignments the model 
-    captures a larger semantic context than 
+* We present a probabilistic model that
+  * simultaneously learns alignments and distributed representations
+    for bilingual data.
+  * By marginalizing over word alignments the model
+    captures a larger semantic context than
     prior work relying on hard alignments
 * demonstrated in a cross-lingual classification task, where we
   * outperform the prior published state of the art
@@ -42,5 +42,5 @@ Learning Bilingual Word Representations by Marginalizing Alignments
 * FastAlign (FA) (Dyer+ 2013),
   * a log-linear reparametrization of IBM model 2
   * uses an alignment distribution
-    * defined by a single parameter that measures 
+    * defined by a single parameter that measures
       how close the alignment is to the diagonal

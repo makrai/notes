@@ -5,9 +5,9 @@ https://arxiv.org/abs/1705.08039
 # Abstract
 
 * we introduce a new approach for learning hierarchical representations of
-  symbolic data by embedding them into hyperbolic space – or 
+  symbolic data by embedding them into hyperbolic space – or
   * more precisely into an n-dimensional Poincaré ball
-* parsimonious representations 
+* parsimonious representations
   * simultaneously capturing hierarchy and similarity
 * efficient algorithm to learn the embeddings based on Riemannian optimization
 
@@ -25,7 +25,7 @@ https://arxiv.org/abs/1705.08039
     * RESCAL [19], TransE[6], and Universal Schema [27] are being
       [27] Sebastian Riedel, Limin Yao, Andrew McCallum, and Benjamin M Marlin.
       Relation extraction with matrix factorization and universal schemas
-      NAACL-HLT 2013 
+      NAACL-HLT 2013
     * used for knowledge graph completion and information extraction
 * power-law distributions in datasets can often be traced back to hierarchical
   structures [25]

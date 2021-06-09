@@ -16,7 +16,7 @@ The Interplay of Semantics and Morphology in Word Embeddings
   * per-morpheme representations rather than just per-word ones, and compose
 * The works differ in
   * the way they acquire morphological knowledge (from using
-    * linguistically derived morphological analyzers on one end, to 
+    * linguistically derived morphological analyzers on one end, to
     * substrings ... concatenative ... morphology, on the other) and in the
   * model form
     * cDSMs (Lazaridou+ 2013)
@@ -42,10 +42,10 @@ The Interplay of Semantics and Morphology in Word Embeddings
   * compare different configurations of morphology-driven models, while
     controlling for the components
   * separately evaluate the semantic and morphological performance
-    on rare and on common words. We
-  * focus on inflectional (rather than derivational) morphology. This is due to
+    on rare and on common words
+  * focus on inflectional (rather than derivational) morphology
     * derivations (e.g.  un-) often drastically change the meaning of the word,
-    * benefit of [ similar repr for words with the same ] base is questionable,
+    * benefit of [similar repr for words with the same] base is questionable,
       (Lazaridou+ 2013; and Luong+ 2013)
 * experiments are performed on Modern Hebrew, a language with rich
   * recently introduced evaluation dataset for semantic similarity in M Heb
@@ -63,8 +63,8 @@ The Interplay of Semantics and Morphology in Word Embeddings
   * mostly just (base + affixes) or (surface + base + affixes)
   * Lazaridou+ (2013) and Luong+ (2013) trained models which
     represent a word by its base only, and showed that these models performs
-    worse than the compositional ones (base + affixes).  However, the
-    * poor results for the base-only models were mainly attributed to
+    worse than the compositional ones (base + affixes)
+    * hE, poor results for the base-only models were mainly attributed to
       [over-anal] e.g. (affected, unaffected).  Working with a more
     * [we] tease apart inflectional from derivational processes, leading to
   * Most of the works [evaluate eighter the semantics or morphology]

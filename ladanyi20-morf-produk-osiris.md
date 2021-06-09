@@ -175,13 +175,13 @@ tartalom 16 (11)
       * helynévi alapszavuk van, és földtörténeti korszakokat neveznek meg
       * némelyikében a képző -ium formában fordul elő
       * kevés példa és kevés előfordulás tartozik; a harmadik csoport szavai
-      * Fejes 
+      * Fejes
         * idézi: „A pannon emeletben a Kárpát-medence faunája olyan mértékben
           elkülönül a környező európai területektől, hogy a magyarországi
-          alemeletek beosztása csak Magyarországon használatos.  
+          alemeletek beosztása csak Magyarországon használatos.
           Ezek: alsó pannon monacium bódvaium rhenohassium felső pannon
-          csákvárium sümegium hatvanium bérbaltavárium” 
-        * Szerinte ezek nem magyar képzések, hanem latin képzések átvételei 
+          csákvárium sümegium hatvanium bérbaltavárium”
+        * Szerinte ezek nem magyar képzések, hanem latin képzések átvételei
   * jelentése csak relatíve stabil: az MNSZ2 adatai szerint a lekvárium szónak
     a ’lekvárbolt’ mellett ’lekvárgyűjtemény’ és ’lekvármúzeum’, a pálinkárium
     szónak a ’pálinkabolt’ mellett ’pálinkafőzőé’ jelentése is van
@@ -283,7 +283,7 @@ tartalom 16 (11)
     nagyobb részben a második jelentésben. Példák ez utóbbi típusra:
     kádár-izmus, antall-izmus, horn-izmus, csurk-izmus, lukács-izmus,
     tandor-izmus, döbrög-izmus, lakitelk-izmus, vasgárd-izmus
-  * a második jelentésre épülő új, harmadik jelentésben: 
+  * a második jelentésre épülő új, harmadik jelentésben:
     ’egyfajta mentalitás: valamilyen felfogáshoz vagy életformához való erős
     kötődés (ironikus konnotációval)’. Ebben a jelen­ tésben köznevekhez járul
     * (7) hord-izmus («horda), család-izmus, kutatóprogram-izmus, pógár-izmus
@@ -381,7 +381,7 @@ tartalom 16 (11)
 ### -z és -l
 
 * versengő képzők, amelyek főnévi alapszavakból hoznak létre igéket.
-  * а -z képzőre épül az alapséma 
+  * а -z képzőre épül az alapséma
     (i.e.alkalmazási tartománya és produktivitása is nagyobb)
   * nem alap: Neologizmusokat az -l képző[vel] általában [csak] bizonyos
     speciális feltételek megléte esetén  lehet létrehozni:
@@ -410,11 +410,11 @@ tartalom 16 (11)
     * a. a Tom Kennedy-s ...  propagandát b.  trainspottingos humor (1 1 )
     * a.egyetlen, delejező, ingái lendületben b.kórháztrafiki őszök
 * -nyi: méretet vagy menynyiséget neveznek meg, pl. borsó-nyi ’borsó méretű’,
-  (egy) kanál-nyi ’(egy) kanál mennyiségű’, 
+  (egy) kanál-nyi ’(egy) kanál mennyiségű’,
   * így minden mérceként felfogható főnévhez járul­ hat
   * (Az MNSZ2-ben többezer-féle alapszóból képzett ilyen típusú derivátum van)
   * ’kb.  olyan méretű vagy mennyiségű, mint az alapszóban megnevezett dolog’.
-    * a. egy képernyőnyi bús szünetjel 
+    * a. egy képernyőnyi bús szünetjel
       b. ... csupán egy g y u fa h eg y n y i / tüzet ha tartanak ...
 
 ### -ód(ik)/-őd(ik)
@@ -528,7 +528,7 @@ tartalom 16 (11)
 * igei alap­ szóból hoztak létre főneveket, az
   * -at/-et tárgyas igékből (pl. ad-at, tárl-at, ir-at, őrl-et, süt-et, néz-et)
   * -mány/-mény tárgyas és nem tárgyas igékből is (pl.  szállít-mány,
-    alkot-mány, keres-mény, süt-emény; illetve áll-omány, szerződ-mény) 
+    alkot-mány, keres-mény, süt-emény; illetve áll-omány, szerződ-mény)
 * Az alábbi példákban ezek a képzők elevenednek fel egy-egy új derivátumban.
   * -At: a. e rakpart-szerte zizgő hussanat b. istennők büfésnők zörgő lengetek
     * alapszó nem tárgyas ige (leng, hussan)

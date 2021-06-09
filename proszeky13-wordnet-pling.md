@@ -215,7 +215,7 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
       * a synset maga, vagy hiponíma reláció szerinti alárendeltjei
     2. A ... hipernima-algráfok ... minél kevesebb egyéb szót tartalmazzanak
     3. szemantikai általánosítás
-    4. ha [a bővítmény] többértelmű, a 
+    4. ha [a bővítmény] többértelmű, a
       [csak a] vonzatpozíciónak megfelelő jelentéshez kapcsolódjanak
     5. idiomatikus vonzatoknak megfelelő synseteket is megtalálni,
       * pl. `{iszik} − [case = ACC; p = . . . ] → {szó}, {fény}, {áldomás}`

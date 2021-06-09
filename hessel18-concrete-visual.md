@@ -8,7 +8,7 @@ http://www.cs.cornell.edu/~jhessel/concreteness/concreteness.html
 # Abstract
 
 * concepts with concrete visual manifestations may be easier to learn
-* We apply the approach in four [img retrieval] settings, 
+* We apply the approach in four [img retrieval] settings,
   ranging from image captions to images/text scraped from historical books
 * We find that
   1. concrete concepts are indeed easier to learn;
@@ -26,7 +26,7 @@ http://www.cs.cornell.edu/~jhessel/concreteness/concreteness.html
 * But Hill and Korhonen (2014b) observe that for their multimodal architecture
   * concreteness of a concept ... affects whether multimodal or single-channel
     representations are more effective
-  * concreteness was derived for 766 nouns and verbs 
+  * concreteness was derived for 766 nouns and verbs
     from a fixed psycholinguistic database of human ratings
 * we introduce an ... algorithm for
   characterizing the visual concreteness of all the concepts indexed textually
@@ -45,10 +45,10 @@ http://www.cs.cornell.edu/~jhessel/concreteness/concreteness.html
   vision, and retrieval algorithms
   * 4 datasets × 2 image-representation algorithms × 5 textualrepresentation
     algorithms × 4 text/image alignment algorithms × 2 feature pre-processing
-    schemes), we find that 
+    schemes), we find that
   * more concrete instances are easier to retrieve, and
   * different algorithms have similar failure cases.  Interestingly, the
-  * some datasets appear to have a linear relationship between [conc & retriev] 
+  * some datasets appear to have a linear relationship between [conc & retriev]
     * others: beyond [a concreteness threshold] retrieval becomes much easier
 * our work can have a positive impact on future multimodal research
   * evaluation — more credit should ... be assigned to performance on non-concr

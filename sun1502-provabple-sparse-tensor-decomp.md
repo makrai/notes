@@ -80,7 +80,7 @@ arXiv:1502.01425v3 [stat.ML] 2 May 2016
   problem
 * sparse tensor decomposition,
   * Morup+ (2008) develops a sparse non-negative Tucker decomposition approach
-    by matricizing the tensor and 
+    by matricizing the tensor and
     employing the `l_1` norm penalty as the sparsity constraint
   * to reduce computationally intensivity and memory requirement,
     Allen (2012) directly adds an `l_1` penalty on the decomposition vectors in

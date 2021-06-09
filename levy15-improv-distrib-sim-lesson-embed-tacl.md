@@ -16,8 +16,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
 * hyperparameters
 * In this work, we make these hyperparameters explicit, and show how they can
   be adapted and transferred into the traditional count-based approach
-* changing the setting of a single hyperparameter yields a greater increase in
-  performance
+* changing the setting of a single hyperparameter yields more
   than switching to a better algorithm or training on a larger corpus
 
 # 2 Background
@@ -36,7 +35,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
 
 # 2.1 Explicit Representations (PPMI Matrix)
 
-* pointwise mutual information (PMI) (Church and Hanks, 1990)
+* pointwise mutual information (PMI, Church and Hanks, 1990)
   * log 0 = ? -> positive PMI
 * bias towards infrequent events (Turney and Pantel, 2010)
 * widely regarded as state-ofthe-art
@@ -47,8 +46,7 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   truncated Singular Value Decomposition (SVD), which
   * finds the optimal rank d factorization with respect to `L_2` loss
     (Eckart and Young, 1936)
-  * popularized in NLP via Latent Semantic Analysis (LSA)
-    (Deerwester+ 1990).  SVD
+  * popularized in NLP via Latent Semantic Analysis (LSA, Deerwester+ 1990)
 * M = U · Σ · V
   * where U and V are orthonormal and Σ is a diagonal matrix of eigenvalues
 * representations,
@@ -90,8 +88,8 @@ Improving Distributional Similarity with Lessons Learned from Word Embeddings
   * words can be weighted according to their distance from the focus word
   * in traditional count-based methods less common,
     [but] also explored, e.g. (Sahlgren, 2006)
-  * GloVe 1, 1/2, 1/3,.
-  * word2vec w/w, w-1/w,.
+  * GloVe 1, 1/2, 1/3,
+  * word2vec w/w, w-1/w,
   * dynamic
     * word2vec implements its weighting scheme
       by uniformly sampling the actual window size between 1 and L

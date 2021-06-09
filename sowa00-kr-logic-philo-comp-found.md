@@ -22,11 +22,11 @@ John F. Sowa
   * Ontology defines the categories of things that are expressed in the
     predicates of predicate logic, the slots in frames, the tables of a
     database, or the classes of an object-oriented system
-3. principles of knowledge representation 
+3. principles of knowledge representation
   adapting logic and ontology to the task of constructing computable models
-4. methods for representing dynamically changing processes and events. 
+4. methods for representing dynamically changing processes and events.
   * Petri nets and dataflow graphs
-5. how purpose and context affect knowledge representation and the 
+5. how purpose and context affect knowledge representation and the
   * various theories of modal and intentional logic
 6. on "knowledge soup,": the limitations of logic
   * the vague, uncertain, unanalyzed, and often inconsistent mix of facts,

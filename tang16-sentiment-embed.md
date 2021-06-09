@@ -5,7 +5,7 @@ IEEE 2016
 # Abstract
 
 * words with similar contexts but opposite sentiment polarity, such as good/bad
-* We [encoding sentiment information of] sentences and words together
+* We encoding sentiment information of sentences and words together
 * sentiment signals like emoticons as the training data
 * We apply sentiment embeddings to
   * word-level sentiment analysis,

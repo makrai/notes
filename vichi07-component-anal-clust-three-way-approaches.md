@@ -42,7 +42,7 @@ Maurizio Vichi, Roberto Rocci, and Henk A.L. Kiers
 
 # 3 two different sequential procedures (also called ‘tandem analyses’) to
 obtain clustering and dimensionality reduction of variables and occasions by
-means of k-means and Tucker2. Section 4 is devoted to presenting
+means of k-means and Tucker2
 
 # 4 T3Clus and 3Fk-means for simultaneous classification and reduction, and
 provides algorithms for these methods. A

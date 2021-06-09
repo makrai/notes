@@ -12,4 +12,4 @@ ICLR 2020 arXiv:1910.12366 [cs.CL]
 * for a query budget of a few hundred dollars, an attacker can extract a model
   that performs only slightly worse than the victim model. Finally, we study
 * two defense strategies against [naive] model extraction
-  * membership classification and API watermarking 
+  * membership classification and API watermarking

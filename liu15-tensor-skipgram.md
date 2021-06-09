@@ -20,8 +20,7 @@ nem találtam kódot http://nlp.fudan.edu.cn/
 
 * distributed representations are widely used for NLP tasks, such as
   * syntax [Turian+ 2010; Collobert+ 2011; Mnih...]
-  * semantics [Socher+ 2012]
-    * Semantic compositionality through recursive matrix-vector spaces
+  * semantics [Socher+ 2012] Sem compos through recursive matrix-vector
   * morphology [Luong+ 2013]
     * Better ... with recurive neural networks for morphology
 * adress ambig
@@ -64,7 +63,7 @@ nem találtam kódot http://nlp.fudan.edu.cn/
     * In Advances in Neural Information Processing Systems, 2013
     [Socher+ 2013b]
     * R Socher, A Perelygin, J Wu, J Chuang, Ch D Manning, A Ng, Ch Potts
-    * Recursive deep models 
+    * Recursive deep models
       for semantic compositionality over a sentiment treebank
     * In EMNLP, 2013
 * energy-based function

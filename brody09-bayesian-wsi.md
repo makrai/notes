@@ -20,15 +20,15 @@ Bayesian Word Sense Induction
   * LDA models each document using a mixture over K topics, which are in turn
     characterized as distributions over words
 * local topic
-  * Whereas LDA generates words from 
-    global topics corresponding to the whole document, 
-    our model generates words from 
+  * Whereas LDA generates words from
+    global topics corresponding to the whole document,
+    our model generates words from
     local topics chosen based on a context window around the ambiguous word
 * multiple information sources [with the same] underlying probabilistic model
   * (besides) lexical information
   * parts of speech or
   * dependencies
-* We evaluate our model 
+* We evaluate our model
   * on a recently released benchmark dataset (Agirre and Soroa, 2007)
   * improvements over the state-of-the-art
 

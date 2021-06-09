@@ -1,4 +1,4 @@
-Covid-Transformer: Detecting Trending Topics on Twitter 
+Covid-Transformer: Detecting Trending Topics on Twitter
   Using Universal Sentence Encoder
 Meysam Asgari-Chenaghlu, Narjes Nikzad-Khasmakhi, Shervin Minaee
 arXiv:2009.03947 [cs.CL]
@@ -41,9 +41,9 @@ arXiv:2009.03947 [cs.CL]
 
 # 3 dataset used in our experiments
 
-# 4 experimental analysis of the proposed algorithm 
+# 4 experimental analysis of the proposed algorithm
 
-in terms of detected topics, trending words in each topic cluster, and 
+in terms of detected topics, trending words in each topic cluster, and
 sentence representation similarity
 
 # 5 concluded

@@ -26,17 +26,17 @@ interaction between sem and synt rules
 * Katz and Fodor
   * taken for granted is a single hier struct into which the sem content of the
     lex items in the sent is arranged
-* we: 
+* we:
   * different anal for different groups of phenomena
   * four parts of sem repr
     1. func struct induced by the verb (agent, motion, direction). Hier
-    2. modal struct, hier ch7 
+    2. modal struct, hier ch7
       * scope of negation and quantifiers
-      * reference in sem representations 
+      * reference in sem representations
         * indef NPs
         * genericity
         * ref opacity
-      * illocutory force of a sent 
+      * illocutory force of a sent
         * declarative, imperative, interrogative
         * in func struct (Ross 1970a, Lakoff 1968)
     3. table of coref for pairs of NPs
@@ -46,7 +46,7 @@ interaction between sem and synt rules
   * the only synt info used in determin sem interpret is the underlying (deep)
     struct
   * <- motivation, objection, consequences in sec 1.3
-  * func struct 
+  * func struct
     * the sole source of sem info
     * preserved by trafo
   * diagram 1.1
@@ -59,16 +59,16 @@ interaction between sem and synt rules
 
 * sem interp is performed by projection rules
   * adds those parts not due to lex items but synt
-  * for each phrase struct rule and trafo rule, an assoced proj rule, 
+  * for each phrase struct rule and trafo rule, an assoced proj rule,
     * type P1 and P2 resp
-    * P1 e.g. 
+    * P1 e.g.
       * attribution, modifier--head
       * S V O
-    * P2 
+    * P2
       * become innecessary since Katz and Fodor, KP1
       * Katz and Postal: no change of meaning are induced by trafos
       * insertion rules insert meaningless particles like _do_ or inflectional
-        markers 
+        markers
 * much of the book is devoted to arease where KP1 cannot be justified
   * error in Katz and Postal: discuss of negation (scope)
 * we interpret derived structs rather than derivations
@@ -128,7 +128,7 @@ interaction between sem and synt rules
   * lexical insertion will be simpler, unrestricted
   * synt nodes as distinctive feature matrices
 * transformational cycle
-* internal struct of the lexicon, 
+* internal struct of the lexicon,
   * Extended Lex Hyp
     * derivations do not perform deriv morph e.g. nominalization
   * since than: Lakoff (1971), Chapin (1967) vs Gruber (1967b)
@@ -138,7 +138,7 @@ interaction between sem and synt rules
 
 # 2 Gramm rels and the func struct p19
 
-## 2.1 Sem insuff of func rels 
+## 2.1 Sem insuff of func rels
 
 ## 2.2 Thematic rels p21
 
@@ -187,4 +187,4 @@ interaction between sem and synt rules
 
 # 8 Negation
 
-# 9 Conclusion and hypotheses 
+# 9 Conclusion and hypotheses

@@ -241,7 +241,7 @@ In the next few sections (6--8) we will review the major developments in
 
 # 8 Representation learning as manifold learning
 
-* manifold hypothesis, according to which 
+* manifold hypothesis, according to which
   * real-world data presented in high dimensional spaces are expected to con-
     centrate in the vicinity of a manifold M of much lower dimensionality
   * considering the variations in input space, which are captured by or
@@ -253,21 +253,21 @@ In the next few sections (6--8) we will review the major developments in
 * real world domains are however expected to be strongly nonlinear.  Their
 * patchworks of locally linear tangent spaces (Vincent & Bengio, 03; Brand, 03)
 * a non-parametric approach, based on a training set nearest neighbor graph
-  (Schölkopf+ 1998; Roweis & Saul 2000; Tenenbaum+ 2000; Brand 2003; 
-  Belkin & Niyogi 2003; Donoho & Grimes 2003; Weinberger & Saul 2004; 
+  (Schölkopf+ 1998; Roweis & Saul 2000; Tenenbaum+ 2000; Brand 2003;
+  Belkin & Niyogi 2003; Donoho & Grimes 2003; Weinberger & Saul 2004;
   Hinton & Roweis 2003; van der Maaten & Hinton 2008)
-  * each high-dimensional training point has 
+  * each high-dimensional training point has
     its own set of free low-dimensional embedding coordinates, which are
     optimized so that certain properties of the neighborhood graph computed in
     original high dimensional input space are best preserved
   * do not directly learn a parametrized feature extraction function `f_θ(x)`
-    applicable to new test points 
+    applicable to new test points
 * we will focus on [non-linear manifold learning methods] that learn a
   parametric map that can directly compute a representation for new points
 
 ## 8.1 Learning a parametric mapping based on a neighborhood graph
 
-* as with the parametric variant (van der Maaten, 2009) 
+* as with the parametric variant (van der Maaten, 2009)
   of t-SNE (van der Maaten and Hinton, 2008).
 * Semi-Supervised Embedding (Weston+ 2008) learns a direct encoding while
   taking into account the manifold hypothesis through a neighborhood graph

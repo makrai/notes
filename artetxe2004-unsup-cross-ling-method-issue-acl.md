@@ -8,7 +8,7 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 * we call for a more rigorous position in each of them
 * the scenario that is most often used to motivate methods is unrealistic
   * i.e. no parallel data and abundant monolingual data
-* We also discuss different training signals that have been used in previous
+* We also discuss different training signals that have been used
   * depart from the pure unsupervised setting
 * issues in tuning and evaluation of unsupervised cross-lingual models and
 * best practices
@@ -81,20 +81,20 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 
 ## 2.3 Unsupervised machine translation
 
-* MT using monolingual data alone go back to statistical decipherment 
+* MT using monolingual data alone go back to statistical decipherment
   (Ravi and Knight, 2011; Dou and Knight, 2012, 2013). However, this approach
 * first convincing results on standard benchmarks
   * Artetxe+ (2018c) and Lample+ (2018a) on unsupervised Neural MT
   * Both approaches rely on cross-lingual word embeddings to initialize a
-  * combination of denoising autoencoding, backtranslation, and 
+  * combination of denoising autoencoding, backtranslation, and
     optionally adversarial learning
 * principles adapted to unsupervised phrase-based Statistical MT
-  * large improvements over the original NMT-based systems 
+  * large improvements over the original NMT-based systems
     (Lample+ 2018b; Artetxe+ 2018b)
   * uses cross-lingual n-gram embeddings to build an initial phrase table,
     which is combined with an n-gram language model and a distortion model, and
     further refined through iterative backtranslation
-* follow-up attempts to combine NMT and SMT based approaches 
+* follow-up attempts to combine NMT and SMT based approaches
   (Marie and Fujita, 2018; Ren+ 2019; Artetxe+ 2019b)
 * deep multilingual pretraining rather than cross-lingual word embeddings to
   initialize unsupervised NMT systems

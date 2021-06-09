@@ -11,32 +11,32 @@ naacl 2018
 
 * Word embeddings are ... used by researchers in unexpected ways
   in fields such as digital humanities and computational social science
-  (Hamilton et al., 2016; Heuser, 2016; Phillips et al., 2017)
+  (Hamilton+ 2016; Heuser, 2016; Phillips+ 2017)
 * factors such as the presence of specific documents, the size of the documents
 * simply averaging over multiple bootstrap samples is sufficient
   to produce stable, reliable results in all cases tested
 * embeddings as direct evidence about the language and culture of the authors
-  (Bolukbasi et al., 2016; Hamilton et al., 2016; Heuser, 2016)
+  (Bolukbasi+ 2016; Hamilton+ 2016; Heuser, 2016)
   * used as if they were simulations of a survey
 * small corpora are common in digital humanities and computational social sci
 * We
   * examine four different algorithms and six datasets, and we
-  * manipulate the corpus by shuffling the order of the documents and 
+  * manipulate the corpus by shuffling the order of the documents and
     taking bootstrap samples of the documents
 * Smaller corpora and larger document sizes increase this variation
 
 # 2 Related Work
 
 * [embed in digital humanities and computational social sci]
-  * Hamilton et al. (2016) ... measure semantic shifts, and
-  * Heuser (2016) uses embeddings to characterize discourse about 
+  * Hamilton+ (2016) ... measure semantic shifts, and
+  * Heuser (2016) uses embeddings to characterize discourse about
     virtues in 18th Century English text
   * variation of language across
-    * geographical areas (Kulkarni et al., 2016; Phillips et al., 2017) and
-      time (Kim et al., 2014)
+    * geographical areas (Kulkarni+ 2016; Phillips+ 2017) and
+      time (Kim+ 2014)
   * Each of these studies seeks to reconstruct the mental model
 * implicit bias in word embeddings
-  * e.g. associations between occupations and genders (Bolukbasi et al., 2016)
+  * e.g. associations between occupations and genders (Bolukbasi+ 2016)
   * From a downstream-centered perspective, [ bias ] should be filtered out
   * from a corpus-centered perspective, [ bias is] a means of measurement,
 * BTW
@@ -44,10 +44,10 @@ naacl 2018
     2016
     Swivel: Improving Embeddings by Noticing What’s Missing
 * evaluating the stability of word embeddings
-  * Levy et al. (2015) focus on the hyperparameter settings
+  * Levy+ (2015) focus on the hyperparameter settings
   * Hellrich and Hahn (2016) examine the effects of word
     frequency, word ambiguity, and the number of training epochs on [skip-gram]
-  * Tian et al. (2016) explore the robustness of SGNS and GloVe
+  * Tian+ (2016) explore the robustness of SGNS and GloVe
 
 # 3 Corpora
 
@@ -81,7 +81,7 @@ naacl 2018
  2. each training instance is a single sentence
   * [for] the BOOTSTRAP setting
   * Documents are often characterized by “bursty” words that are
-    locally frequent but globally rare (Madsen et al., 2005)
+    locally frequent but globally rare (Madsen+ 2005)
   * Sampling whole documents with replacement should magnify the[ir] effect
   * Sampling sentences with replacement should have less [such] effect
 
@@ -92,10 +92,10 @@ naacl 2018
   * We focus on SGNS as a popular and representative example
 * batch stochastic updates, in which the algorithm
   ... first collects a matrix [then] stochastic optimization
-  * We select the GloVe algorithm (Pennington et al., 2014)
-* matrix factorization ... we include PPMI (Levy and Goldberg, 2014). Finally,
+  * We select the GloVe algorithm (Pennington+ 2014)
+* matrix factorization ... we include PPMI (Levy and Goldberg, 2014)
 * to test whether word order is a significant factor we include a
-  document-based ... LSA (Deerwester et al., 1990; Landauer and Dumais, 1997)
+  document-based LSA (Deerwester+ 1990; Landauer and Dumais, 1997)
 
 # 6 Methods
 
@@ -105,8 +105,8 @@ naacl 2018
   for each document segmentation size, for each corpus
 * For each corpus, we
   * select a set of 20 relevant query words
-    from high probability words from an LDA topic model (Blei et al., 2003)
-    trained on that corpus with 200 topics.  We
+    from high probability words from an LDA topic model (Blei+ 2003)
+    trained on that corpus with 200 topics
   * creating a similarity ranking of all the words [to each query word ]
   * calculate the mean and standard deviation of the cosine similarities
   * select the 20 words most closely related to the set of query words and
@@ -126,6 +126,5 @@ naacl 2018
 * GloVe and LSA produce the least variable cosine similarities, while
   PPMI produces the most variable cosine similarities for all settings. The
   presence of specific documents has a significant effect on all four
-  algorithms (lesser for PPMI), consistently increasing the standard devia-
-  tions
+  algorithms (lesser for PPMI), consistently increasing the standard deviations
 * document segmentation size 11

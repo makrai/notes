@@ -14,7 +14,7 @@ AAAI 2017
     that they would not acquire from distributional semantics alone, nor from
     narrower resources such as WordNet or DBPedia. We demonstrate this with
 * SOTA results on
-  * intrinsic evaluations of word relatedness that translate into improvements
+  * intrinsic evaluations of word relatedness
   * applications of word vectors, including solving SAT-style analogies
 
 # 1 Introduction
@@ -30,8 +30,8 @@ AAAI 2017
   * O alimento é usado para comer [Food is used for eating]
 * “ConceptNet Numberbatch”: a word embeddings that learns using a generalization
   of the “retrofitting” method (Faruqui+ 2015)
-* evaluations of word relatedness, and this increase in performance translates
-  * analogies. On a corpus of
+* evaluations of word relatedness
+  * analogies
   * SAT-style analogy questions (Turney 2006), its accuracy of 56.1% outperforms
     * ties the previous best overall system, Turney’s LRA
     * only slightly lower than the performance of the average human test-taker

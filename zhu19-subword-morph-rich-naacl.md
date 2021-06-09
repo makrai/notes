@@ -8,25 +8,25 @@ https://github.com/cambridgeltl/sw_study
 
 * subword-level information (e.g., characters, character n-grams, morphemes)
 * especially for morphologically rich languages
-* [we deliver a] systematic comparative analysis across 
+* [we deliver a] systematic comparative analysis across
   typologically diverse languages and different tasks
   * focusing on the variation of two crucial components
     * segmentation of words into subword units, and
     * subword composition functions
   * a general framework for learning subword-informed word representations
-  * also including ... position embeddings and self-attention
+  * also including position embeddings and self-attention
   * [60] subword-informed word representation configurations
   * 3 tasks
     * general and rare word similarity and relatedness
     * dependency parsing
     * fine-grained entity typing
-    * selected ... as they require different degrees of syntactic and semantic
+    * selected as they require different degrees of syntactic and semantic
   * 5 languages representing fusional, introflexive (Hebrew), and agglutinative
 * results
-  * performance is both language~ and task-dependent 
+  * performance is both language~ and task-dependent
   * unsupervised segmentation (e.g., BPE, Morfessor) are sometimes comparable
     to or even outperform the ones based on supervised word segmentation
-    in ... parsing or fine-grained entity typing
+    in parsing or fine-grained entity typing
   * We also show that more sophisticated configurations are particularly useful
     for representing rare words
 
@@ -57,7 +57,7 @@ https://github.com/cambridgeltl/sw_study
       On the relation between linguistic typology and (limitations of)
       multilingual language modeling
       EMNLP 2018
-  * subword-agnostic word representation models ... are effectively unable to
+  * subword-agnostic word representation models are effectively unable to
     represent rare words accurately, or unseen words at all
 * subword-informed word representation architectures aiming to address these
   * large number of architectures has been proposed in related research, and
@@ -73,7 +73,7 @@ https://github.com/cambridgeltl/sw_study
   * they can be clustered over the two main axes
     * method for segmenting words into subwords. The methods range
       * from fully supervised approaches (Cotterell and Schütze, 2015)
-      * to e.g. unsupervised ... based on BPE (Heinzerling and Strube 2018)
+      * to e.g. unsupervised based on BPE (Heinzerling and Strube 2018)
     * the subword composition function used to obtain word embeddings
       (e.g., addition, self-attention)
 * Following a similar work on subword-agnostic word embedding learning
@@ -96,10 +96,10 @@ https://github.com/cambridgeltl/sw_study
 
 `w = f Θ (δ(w), W s , W p)`
 * δ(w) is a deterministic function that segments w into an ordered sequence
-  `S_w` of its constituent subword units ... from the subword vocabulary
+  `S_w` of its constituent subword units from the subword vocabulary
 * Optionally, [ methods can also generate a sequence of the ] morphotactic tags
 * Alone or together with T w , S w is embedded into a sequence of subword reprs
-* optional ... sequence of position embeddings P w
+* optional sequence of position embeddings P w
   taken from the position embedding matrix W p ∈ R p×d ,
   where p is the maximum number of the unique positions
 * P w can interact with S w to compute the final representations for subwords
@@ -119,7 +119,7 @@ We consider three well-known segmentation methods for the function δ
 * We use CHIPMUNK (Cotterell+ 2015) as a representative supervised segmentation
   system, proven to provide a good trade-off between accuracy and speed
   * based on semi-Markov conditional random fields (Sarawagi and Cohen, 2005)
-* For each word, ... it also outputs the corresponding morphotactic tags T w 
+* For each word, it also outputs the corresponding morphotactic tags T w
   In §2.3 we discuss how to incorporate information from T w
 
 ### Morfessor
@@ -134,7 +134,7 @@ We consider three well-known segmentation methods for the function δ
 * iteratively replaces the most common pair of consecutive bytes
   with a new byte that does not occur within the data, and the
   number of iterations can be set in advance to control the granularity of the
-  byte combinations 
+  byte combinations
 
 ### [summarized]
 
@@ -149,14 +149,14 @@ We consider three well-known segmentation methods for the function δ
 ## 2.3 subword and position embeddings
 
 * For CHIPMUNK,
-  * we define each row in W s as the concatenation of the subword s and ... tag
-  * For instance, the subword _post_ in _postwar_ and noun _post_ are ... diff
-  * We also test ... without the use of T w
+  * we define each row in W s as the concatenation of the subword s and tag
+  * For instance, the subword _post_ in _postwar_ and noun _post_ are diff
+  * We also test without the use of T w
 * optional position embedding sequence P w further operate on S w
   * for Morfessor and BPE, we use the absolute positions of subwords in S w ,
   * for CHIPMUNK morphotactic tags are encoded directly as positions
   * addition [or] element-wise multiplication between each subword and position
-    * following prior work 
+    * following prior work
       * Gehring+ ICML 2017 Convolutional sequence to sequence learning
       * Mikolov+ 2018
 
@@ -185,7 +185,7 @@ inspired by Lin+ (2017)
 
 * We use pretrained CHIPMUNK models for all test languages except for Hebrew,
   as Hebrew lacks gold segmentation data
-* subword-agnostic SGNS (Mikolov+ 2013) and fastText (FT) (Bojanowski+ 17) 
+* subword-agnostic SGNS (Mikolov+ 2013) and fastText (FT) (Bojanowski+ 17)
   * can also be described by the general framework
   * used as insightful baselines
   * FT [generates all character n-grams of length 3 to 6] along with the full w
@@ -193,7 +193,7 @@ inspired by Lin+ (2017)
 ### Training Setup
 
 * grid search of learning rate and batch size for each δ on the German
-  WordSim-353 data set (WS; Leviant and Reichart (2015)).   
+  WordSim-353 data set (WS; Leviant and Reichart (2015)).
 * hyperparameters are then fixed for all other languages and evaluation runs
 
 ## 3.1 Evaluation Tasks
@@ -201,11 +201,11 @@ inspired by Lin+ (2017)
 ### Word Similarity and Relatedness
 
 * Multilingual SimLex-999  for English, German and Hebrew, each containing 999
-  (SIMLEX; Hill+ (2015); Leviant and Reichart (2015); Mrkšić+ (2017)) 
+  (SIMLEX; Hill+ (2015); Leviant and Reichart (2015); Mrkšić+ (2017))
 * FinnSim-300 (FS 300) produced by Venekoski and Vankka (2017) for Finnish and
 * AnlamVer (AN; Ercan and Yıldız (2018)) for Turkish
 * We also run experiments on the WordSim-353 test set (WS; Finkelstein+ (2002))
-  and its portions oriented towards true similarity ... and broader relatedness
+  and its portions oriented towards true similarity and broader relatedness
   for English and German
 * rare words, we evaluate on the recently released CARD-660 dataset (CARD;
   Pilehvar+ (2018)) for English, annotated for true semantic similarity
@@ -213,15 +213,15 @@ inspired by Lin+ (2017)
 ### Dependency Parsing
 
 * Universal Dependencies treebanks (UD v2.2; Nivre+ (2016))
-* subword-informed word embeddings from different configurations 
-  to initialize the deep biaffine parser of Dozat and Manning (2017) 
+* subword-informed word embeddings from different configurations
+  to initialize the deep biaffine parser of Dozat and Manning (2017)
   which has shown competitive performance in shared tasks (Dozat+ 2017) and
   among other parsing models (Ma and Hovy, 2017; Shi+ 2017; Ma+ 2018)
 
 ### Fine-Grained Entity Typing (Yaghoobzadeh and Schütze, 2015)
 
 * a suitable semi-semantic task to test our subword models, as
-  * the subwords ... usually carry some ... information [on] entity types
+  * the subwords usually carry some information [on] entity types
     e.g. _Lincolnshire_ will belong to /location/county as _-shire_ is a suffix
 * dataset of Heinzerling and Strube (2018) built for over 250 languages
 * we extend the RNNbased model of Heinzerling and Strube (2018),
@@ -236,7 +236,7 @@ inspired by Lin+ (2017)
 
 ### Further Discussion
 
-* our best configuration ... surpasses all the SOTA models on the rare word
+* our best configuration surpasses all the SOTA models on the rare word
 * accurate representations for rare and unseen words
   * Bhatia+ 2016 Morphological priors for probabilistic neural word embeddings
   * Herbelot and Baroni, 2017

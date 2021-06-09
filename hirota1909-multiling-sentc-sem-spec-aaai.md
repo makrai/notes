@@ -7,7 +7,7 @@ Code is coming soon at https://github.com/megagonlabs/emu
 * fine-tunes pre-trained multilingual sentence embeddings using two main compons
   * semantic classifier improves the semantic similarity of related sentences,
   * language discriminator enhances the multilinguality via multilingual advers
-* experimental results based on several language pairs show that our specialized
+* experimental results based on several language pairs show that
   * outperform the SOTA multilingual sentence embedding model
   * on the task of cross-lingual intent classification
     using only monolingual labeled data

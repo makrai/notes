@@ -16,9 +16,9 @@ emnlp 2015
   a variety of tasks (Socher+ 2012; Kalchbrenner+ 2014)
 * lexical ambiguity affects the compositional process
   * recent work [by the authors] has shown that
-    shallow multi-linear compositional models 
-      that explicitly handle extreme cases of lexical ambiguity 
-      in a step prior to composition 
+    shallow multi-linear compositional models
+      that explicitly handle extreme cases of lexical ambiguity
+      in a step prior to composition
     present consistently better performance than their “ambiguous” counterparts
     (Kartsaklis and Sadrzadeh, 2013; Kartsaklis+ 2014)
   * in a deep compositional setting ... Cheng+ (2014)

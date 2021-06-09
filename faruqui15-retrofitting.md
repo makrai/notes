@@ -30,7 +30,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * Markov random field (Kindermann and Snell, 1980)
 * Euclidean distance
 * convex, solving a system of linear equations
-* prior approach here ... will serve as a baseline
+* prior approach here will serve as a baseline
 * `\beta_{ij} = deg(i)^{-1}`
 
 # 3 Word Vector Representations
@@ -61,7 +61,7 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
 * paraphrase database (Ganitkevitch+ 2013)
   * more than 220 million paraphrase pairs of English
   * 8 million are lexical (single word to single word) paraphrases
-  * acquisition: two words in one language should be synonymous 
+  * acquisition: two words in one language should be synonymous
     if they align, in parallel text, to the same word in a different lang
 * WordNet
 * FrameNet
@@ -95,16 +95,16 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
    ACL 2014
 * Xu+ (2014)
    Chang Xu, Yalong Bai, Jiang Bian, Bin Gao, Gang Wang ... Tie-Yan Liu
-   Rc-net: 
+   Rc-net:
     A general framework for incorporating knowledge into word representations
-   CIKM 2014 
+   CIKM 2014
 
 ## 6.4 Multilingual Evaluation
 
 * German RG-65 (Gurevych, 2005),
 * French RG-65 (Joubarne and Inkpen, 2011) and
 * Spanish MC-30 (Hassan and Mihalcea, 2009)
-* Universal WordNet (de Melo and Weikum, 2009),
+* Universal WordNet (de Melo and Weikum, 2009)
 
 # 7 Further Analysis
 
@@ -118,9 +118,9 @@ semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database
   * frame associations (Das and Smith, 2011)
   * Broadly, graph-based semi-supervised learning
     (Zhu, 2005; Talukdar and Pereira, 2010)
-    * machine translation (Alexandrescu and Kirchhoff, 2009),
-    * unsupervised semantic role induction (Lang and Lapata, 2011),
-    * semantic document modeling (Schuhmacher and Ponzetto, 2014),
+    * machine translation (Alexandrescu and Kirchhoff, 2009)
+    * unsupervised semantic role induction (Lang and Lapata, 2011)
+    * semantic document modeling (Schuhmacher and Ponzetto, 2014)
     * language generation (Krahmer+ 2003) and
     * sentiment analysis (Goldberg and Zhu, 2006)
 

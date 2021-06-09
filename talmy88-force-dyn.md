@@ -43,7 +43,7 @@ Leonard Talmy
 * The method I adopt here
   * ‘cognitive semantics’ or ‘cognitive linguistics’
   * language uses certain fundamental notional categories to structure and
-    organize meaning, but 
+    organize meaning, but
     it excludes other notional categories from this role
   * categories are
     * most evident as ... expressed by closed-class forms across languages
@@ -311,56 +311,56 @@ Leonard Talmy
     * e.g. in our untutored “common sense” conceptions, ... sophisticated
       reasoning about phenomena ... that underlies the scientific tradition
   * striking similarity
-* Research [in] 
-  * linguistics, 
+* Research [in]
+  * linguistics,
     * Whorf’s (1956) work was among the earlier contributions
     * Talmy (1978c, 1987), Jackendoff (1983), Langacker (1987), and Lakoff (1987)
-      * Lakoff: linguistic ‘ICM’s’: integrated cognitive models. Within 
+      * Lakoff: linguistic ‘ICM’s’: integrated cognitive models. Within
   * other disciplines of cognitive science, recent work includes that of
     * Gentner and Stevens (1982) asked subjects about their conceptions of
     everyday phenomena, protocols
-    * Hayes (1985), with a formal approach to ‘naive physics,’ and 
+    * Hayes (1985), with a formal approach to ‘naive physics,’ and
     * Hobbs and Moore (1985) ... a theory of common sense in an AI approach.
     * intuitive physics (diSessa 1986)
-      * using protocols 
+      * using protocols
       * abstracting the ‘phenomenological primitives’ that individuals use in
-        understanding physical situations, has shown 
+        understanding physical situations, has shown
       * striking parallels with the analyses of the present paper.
 * physics
   * asymmetry between the privileged Agonist and the Antagonist
-    * so natural in language-based conceptualizing, it has 
+    * so natural in language-based conceptualizing, it has
     * no counterpart in physical theory
   * objects’ impetus in motion or tendency to come to rest.
     * in language,
     * historically earlier scientific theories
-    * at considerable variance with modern physics. 
-      * Objects ... continue at their current velocity 
+    * at considerable variance with modern physics.
+      * Objects ... continue at their current velocity
       unless externally affected
       * stationariness is not a distinct state ... but is simply zero velocity.
   * greater relative strength
     * physics: two interacting objects ... must be exerting equal force
   * linguistic expression of causation is schematic
-    * breaking caused by 
+    * breaking caused by
       * heat ... would involve slow and gradual warping, spread of ...  cracks,
       * a falling heavy object ... would involve sudden localized disruption.
-    * the [schema] is 
+    * the [schema] is
       * a tripartite structure: a static prior state, a discrete
-        state-transition, and a static subsequent state.  
-      * ‘chunk’ the complexities and continuities of occurrence 
+        state-transition, and a static subsequent state.
+      * ‘chunk’ the complexities and continuities of occurrence
       * parallel conceptual patterns of naive physics
     * an ‘event’
       * a portion conceptually partitioned out of the continuum of occurrence
       * autonomous, without causal percursor or consequence, and without causal
-        process during its occurrence. 
+        process during its occurrence.
       * _b. My cufflink finally turned up at the bottom of the clothes hamper._
         * may be inferred: agent has physically searched through objects
         * missing item ... depicted as emerging into visibility on its own
-    * partitioning, isolating, and decausativizing 
+    * partitioning, isolating, and decausativizing
   * blocking and letting, resistance and overcoming
     * some of the most basic force-dynamic concepts
     * no principled counterpart in physics
-    * For their viability, these concepts depend on the 
-      * ascription of entityhood to a conceptually delimited portion of [space] 
+    * For their viability, these concepts depend on the
+      * ascription of entityhood to a conceptually delimited portion of [space]
       * entity’s ... intrinsic tendency toward motion or rest
 * psychology
 

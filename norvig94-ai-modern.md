@@ -6,12 +6,12 @@ Stuart J. Russell and Peter Norvig
 
 * principal features of the book
 1. Unified presentation of the field.
-  * [instead of] historical perspective 
+  * [instead of] historical perspective
   * reinterpretation of past research
   * include material not normally covered in AI texts.
 2. Intelligent agent design.
   * The unifying theme of the book is the concept of an _intelligent agent_
-  * different ways to represent [agents], such as 
+  * different ways to represent [agents], such as
     * production systems, reactive agents, logical planners, neural networks,
       and decision-theoretic systems
   * learning as extending the reach of the designer into unknown environments,

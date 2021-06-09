@@ -18,7 +18,7 @@ ACL arXiv:2005.02982 [cs.CL]
   * top-down approach begins with an overarching goal, and tries to build a
   * bottom-up approach begins with existing models, and tries to extend them
     * intrinsically unfalsifiable...  We won’t know where distributional
-* linguistic perspective: the top-down goal is to 
+* linguistic perspective: the top-down goal is to
   characterise the meanings of all utterances in a language
 * I will elaborate on several crucial aspects of meaning
   * For each aspect: plausible goal; possible models; existing work; evaluate

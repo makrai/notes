@@ -1,21 +1,23 @@
 Georgiana Dinu, Angeliki Lazaridou, Marco Baroni
 Improving zero-shot learning by mitigating the hubness problem
+2015
 
 http://clic.cimec.unitn.it/~georgiana.dinu/down/
 
 # Abstact
-    hubness problem = default error
+
+hubness problem = default error
 
 # 1 Introduction
 
 * unsupervised vector-based representations of meaning
   * Collobert+ 2011;
   * Clark, 2015;
-    * Clark, Stephen
-    * Vector space models of lexical meaning
-    * In Lappin, Shalom and Fox, Chris (eds.),
-    * Handbook of Contemporary Semantics, 2nd ed. Blackwell, Malden, MA, 2015
-    * http: //www.cl.cam.ac.uk/~sc609/pubs/sem_handbook.pdf
+    Clark, Stephen
+    Vector space models of lexical meaning
+    In Lappin, Shalom and Fox, Chris (eds.),
+    Handbook of Contemporary Semantics, 2nd ed. Blackwell, Malden, MA, 2015
+    http: //www.cl.cam.ac.uk/~sc609/pubs/sem_handbook.pdf
   * Turney & Pantel, 2010)
 * zero-shot learning
   * address the manual annotation bottleneck
@@ -35,7 +37,7 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
 * default error
   * The presence of [vectors known as hubs] is an intrinsic problem of
     high-dimensional spaces (Radovanović+ 2010b)
-  * `(*)` inverting the query: 
+  * `(*)` inverting the query:
     * a képvektor melyik szónak a legkevesebbedik legközelebbi szomszédja?
 
 # 2 Hubness in zero-shot mapping
@@ -52,10 +54,10 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
   score] have been proposed and evaluated, for example, by
   * Radovanovic+ (2010a) and
     * bib
-      * Radovanović, Milos, Nanopoulos, Alexandros, and Ivanović, Mirjana
-      * On the existence of obstinate results in vector space models
-        * obstinate: makacs, csökönyös, önfejű
-      * In Proceedings of SIGIR, pp.  186–193, 2010a
+      Radovanović, Milos, Nanopoulos, Alexandros, and Ivanović, Mirjana
+      On the existence of obstinate results in vector space models
+      * obstinate: makacs, csökönyös, önfejű
+      In Proceedings of SIGIR, pp.  186–193, 2010a
     * cited by
       * M Radovanović, A Nanopoulos… - The Journal of Machine …, 2010
         * Hubs in space: Popular nearest neighbors in high-dim data
@@ -64,11 +66,11 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
       * Hubness-based fuzzy measures for high-dimensional k-NN classif
         * N Tomašev, M Radovanović, D Mladenić… - …, 2014
   * Tomasev+ (2011a)
-    * Tomasev, Nenad, Brehar, Raluca, Mladenic, Dunja, and N Sergiu
-    * The influence of hubness on nearest-neighbor methods in obj recog
-    * Intelligent Computer Communication and Processing (ICCP), 2011a
+    Tomasev, Nenad, Brehar, Raluca, Mladenic, Dunja, and N Sergiu
+    The influence of hubness on nearest-neighbor methods in obj recog
+    Intelligent Computer Communication and Processing (ICCP), 2011a
 * We adopt a much simpler approach
-  * pivot: more vectors in the source domain 
+  * pivot: more vectors in the source domain
     * We map these additional pivot elements and conjecture that we can use the
       topology of the subspace where the mapped pivot set lives to correct
       nearest neighbour retrieval
@@ -94,9 +96,9 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
   * negative sampling method, drawing 10 samples
 * Training and testing
   * 5 frequency bins
-  * We actually observed improvements also when using solely the 1,500 mapped
-    test elements as pivots, but increasing the size with arbitrary additional
-    data (that can simply be sampled from the source space without any need for
+  * We observed improvements also when using solely the 1,500 mapped test
+    elements as pivots, but increasing the size with arbitrary additional data
+    (that can simply be sampled from the source space without any need for
     supervision) helps performance
 * Results
   * regularization
@@ -112,8 +114,8 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
       * robust against this effect: adding more training data does not help,
         but it does not harm
   * frequency bin show that
-    * most of the improvements are brought about for the all-important 
-      medium- and low-frequency words
+    * most of the improvements are brought about for the all-important
+      medium~ and low-frequency words
   * elements with the largest hub score
     * tend to be “garbage” low-frequency words
     * in any realistic setting such low-frequency terms should not be filtered
@@ -124,11 +126,11 @@ http://clic.cimec.unitn.it/~georgiana.dinu/down/
 
 ## 3.2 Zero-shot image labeling and retrieving
 
-* Experimental setting 
-  * Images are represented by 4096-dimensional vectors extracted using the
-    Caffe toolkit (Jia+ 2014) together with the pre-trained
-    convolutional neural network of Krizhevsky+ (2012)
+* Experimental setting
+  * Images are represented by 4096-dimensional vectors extracted using the Caffe
+    toolkit (Jia+ 2014) together with the pre-trained convolutional neural
+    network of Krizhevsky+ (2012)
 * Results
-  * We consider both the 
+  * We consider both the
     * usual image labeling setting (Vision→Language) and the
     * image retrieval setting (Language→Vision)

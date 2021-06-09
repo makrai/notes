@@ -8,17 +8,17 @@ the measurement of meaning
 
 ### Linguistic Meaning
 
-American linguists have a split tradition 
-  * Bloomfield (1933) 
+American linguists have a split tradition
+  * Bloomfield (1933)
     * defined the meaning of a linguistic form as "the situation in which the
       speaker utters it and the response which it calls forth in the hearer,"
-    * relegating the task to other sciences. 
+    * relegating the task to other sciences.
     * The only judgment about meaning the linguist was required to make ... was
       that of "same or different."
   * Joos (1950); Harris (1951) ... defining it in terms of the total linguistic
     context within which a given sign appears. "Now the linguist's 'meaning' of
     a morpheme ... is by definition the set of conditional probabilities of its
-    occurrence in context with all other morphemes (Joos, 1950)." 
+    occurrence in context with all other morphemes (Joos, 1950)."
   * in connection with the concept of "structure" of [syntax]
 
 ### Psychological Meaning

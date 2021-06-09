@@ -1,4 +1,4 @@
-D. E. RUMELHART and 1. L. McCLELLAND
+DE Rumelhart and JL McClelland
 1986
 On Learning the Past Tenses of English Verbs
 
@@ -7,15 +7,15 @@ On Learning the Past Tenses of English Verbs
 * the exact characterization of implicit knowledge [about linguistic rules]
   * explicit
     * language acquisition is thought of as the process of inducing rules
-    * innate linguistic universals.
+    * innate linguistic universals
     * Pinker (1984)
   * we
-    * illustration: The regular structure of the honeycomb arises...
+    * illustration: how the regular structure of the honeycomb arises
     * work with the interactive activation model of word perception
 * parallel distributed processing (PDP) models ... provide an alternative to
   the explicit but inaccessible rules account of implicit knowledge of rules
 * two kinds of arguments against PDP
-  * lack the computational power -> Chapter 4.
+  * lack the computational power -> Chapter 4
   * language acquisition
 
 # THE PHENOMENON

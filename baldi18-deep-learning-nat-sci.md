@@ -4,7 +4,7 @@
   * axioms of Bayesian Statistics 1.61
 4. Two-layers networks (universal approx./autoencoders) 1.75
 5. Backpropagation 2.2
-6. Learning in the machine: local Learning 2.6 
+6. Learning in the machine: local Learning 2.6
   * Example 1: Learn to Classify Connected Bit Vectors: not linearry separable
   * local learning rule 2.19
   * deep 2.28

@@ -1,19 +1,19 @@
-John M. Anderson 
+John M. Anderson
 2006
 Modern Grammars of Case
 
 # Prologue
 
-* creativity in language 
+* creativity in language
   * [involves] the capacity to formulate representations for newly perceived
-    ‘scenes’ and to decode them, possibly in novel situations; and it 
-  * includes [more lexical than] syntactic capacities. This capacity 
-  * depends on an understanding of figurativeness, which, 
+    ‘scenes’ and to decode them, possibly in novel situations; and it
+  * includes [more lexical than] syntactic capacities. This capacity
+  * depends on an understanding of figurativeness, which,
     * despite the relative routinization, or institutionalization, involved in
-      lexicalization and grammaticalization, is 
+      lexicalization and grammaticalization, is
     * basic to the structure and development of both lexical and gramma[r]
-* organization: three parts, followed by an Epilogue. Part I, 
-  1. ‘The Tradition’, discusses ... the evolution of grammars of case 
+* organization: three parts, followed by an Epilogue. Part I,
+  1. ‘The Tradition’, discusses ... the evolution of grammars of case
     * terminating in the chapter on the identity of semantic relations.
     * The boundary between Parts I and II cuts across [localism]:
       * both the latter part of Chapter 5 and Chapter 6 are concerned with it
@@ -21,7 +21,7 @@ Modern Grammars of Case
       * proposed incorporation of the ‘localist hypothesis’ into ‘case grammar’
   2. ‘The Implementation of the Category of Case’
     * there is also an attempt [to give attention to] studies that do not
-      [regard itself as ‘case grammar’] e.g. ‘macro-roles’ and ‘abstract syntax’ 
+      [regard itself as ‘case grammar’] e.g. ‘macro-roles’ and ‘abstract syntax’
     * the categorial character of ‘case’ in the wide sense
     * divided from Part III [by] a difference in focus ... within the grammar
   3. ‘Case Grammar as a Notional Grammar’
@@ -30,7 +30,7 @@ Modern Grammars of Case
       and other syntactic paraphernalia, in favour of simple projections from a
       richly structured but formally parsimonious lexicon
   * Epilogue which tries to draw together the main results, as I see them
-    * some extensions and further consequences of the main traditions 
+    * some extensions and further consequences of the main traditions
     * novel analyses  [ also] in the discussion of localism in Chapter 6
     * ideas whose development is as informative as the [snap-shots]
     * e.g. the treatment of passives or causatives is recurrently modified in
@@ -42,10 +42,10 @@ Modern Grammars of Case
   1. distribution of individual semantic relations
   1. contrast and complementarity [or criterial approaches]
     * appeals to the distribution of ‘cases’ in general with respect to
-      * the items which are subcategorized for them and 
-      * their role in ‘case frames’ and to 
+      * the items which are subcategorized for them and
+      * their role in ‘case frames’ and to
       * restrictions on their syntax
-  1. the content of case 
+  1. the content of case
     * the atomistic approach to the semantics of ‘cases’
     * define what characterizes the category of ‘case’ itself substantively,
     * the distribution of the category and its members, the ‘cases’
@@ -57,26 +57,26 @@ Modern Grammars of Case
 
 ## 5.2 General criteria: principles of ‘complementarity’ and ‘contrast’ 95
 
-* largely originates in Fillmore’s (1971) proposal 
-* determined by ... the relationships 
-  * between ‘case’ and its accompanying argument and 
+* largely originates in Fillmore’s (1971) proposal
+* determined by ... the relationships
+  * between ‘case’ and its accompanying argument and
   * between ‘case’ and its head (to put it in dependency terms)
-* principle of ‘contrast’ that is 
-  * particularly easily exemplified by subjects.  In terms of the principle, 
+* principle of ‘contrast’ that is
+  * particularly easily exemplified by subjects.  In terms of the principle,
   * if the subject of a ... class of predicators shows systematic ambiguity
-    ... and only one of the readings is available with a different set ..., 
+    ... and only one of the readings is available with a different set ...,
     a contrast [ can be posited ] with the first class of predicators
-* ‘complementarity’ (Fillmore 1971 
-  * [controls] The proliferation of ... distinctions in ‘case’ 
-  * where ... distinctions in semantic relation 
+* ‘complementarity’ (Fillmore 1971
+  * [controls] The proliferation of ... distinctions in ‘case’
+  * where ... distinctions in semantic relation
     can rather be ascribed to other elements in the structures
 
 ## 5.3 The ineluctability of ‘case’ 103
 
 * The mainstream of modern linguistics inherited [the view] that there were two
   kinds of case, the grammatical and the local or notional
-* Anderson['s] articulation of localism differs from Hjelmslev’s. 
-  * Some of the differences are contingent [esetleges], 
+* Anderson['s] articulation of localism differs from Hjelmslev’s.
+  * Some of the differences are contingent [esetleges],
     depending on the syntactic-derivationalist orientation of Anderson
   * Others are more fundamental, as we shall see.
 
@@ -95,13 +95,13 @@ Modern Grammars of Case
 
 # Epilogue
 
-* the main tenets of the ‘case grammar’ hypothesis, especially the 
-  * fundamental syntactic status of ‘case relations’, and the 
+* the main tenets of the ‘case grammar’ hypothesis, especially the
+  * fundamental syntactic status of ‘case relations’, and the
   * irrelevance of a syntactic ‘deep structure’
   * the (at best) derivative status of grammatical relations
 * earlier history [of the ‘localist hypothesis’] is charted by Hjelmslev
   (1935/7)
-* Chapter 6[:] motivations for an inventory of localist semantic relations 
+* Chapter 6[:] motivations for an inventory of localist semantic relations
   abs source loc loc{source}
-  * expanded to introduce the second-degree feature {goal}, 
+  * expanded to introduce the second-degree feature {goal},
     also clearly localist, in relation to absolutive and the simple locative

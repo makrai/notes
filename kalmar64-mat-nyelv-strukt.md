@@ -1,11 +1,11 @@
 Kalmár László: Matematikai és nyelvi struktúrák
 ÁLTALANOS NYELVÉSZETI TANULMÁNYOK 1964 Budapest, , 11-74
 
-# Credit 
+# Credit
 
 Ezek a jegyzetek részben Sass Bálinttól vannak.
 
-# 3. rész: 
+# 3. rész:
 
 * a matematikai nyelvészet definíciója
 
@@ -17,7 +17,7 @@ Ezek a jegyzetek részben Sass Bálinttól vannak.
 # 18.
 
 * amikor különbséget tesz kifejezés és formula között ..., akkor ... a szófajok
-  kérdését tisztázta a maga formulanyelvei számára. Először 
+  kérdését tisztázta a maga formulanyelvei számára. Először
 * Carnap osztrák matematikai logikus és neopozitivista filozófus ...
   terjesztette el a szintaktikus és szemantikai jelzők használatát
 * a szintaktikus és szemantikai tulajdonságok közötti különbségtétel régebbi:
@@ -35,8 +35,8 @@ Ezek a jegyzetek részben Sass Bálinttól vannak.
   bonyolult rendszerek szerkezetének vizsgálata terén
 * különösen a nem mennyiség jellegű elemekből álló rendszerek
 * Bár ... leginkább a szinkronikus ...  alkalmazásra van ...  felkékészülve, és
-  a gépi fordítás is elsősorban ilyen kérdések vizsgálatát kívánja, ...  
-  a módszerek természete elvileg nem zárja ki a 
+  a gépi fordítás is elsősorban ilyen kérdések vizsgálatát kívánja, ...
+  a módszerek természete elvileg nem zárja ki a
   * diakronikus vizsgálatokra való alkalmazásuk lehetőségét sem. Még kevésbé
   * szemantikai kérdésekre való alkalmazás
     * szintaktikus és morfológiai fogalmakra való visszavezetés[sel]

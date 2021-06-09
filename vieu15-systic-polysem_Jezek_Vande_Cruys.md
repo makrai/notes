@@ -4,7 +4,7 @@ Quantitative methods for identifying systematic polysemy classes
 
 # Abstract
 
-* four experiments [to extract lists of nouns with] inherent polysemy 
+* four experiments [to extract lists of nouns with] inherent polysemy
   with semiautomatic and automatic procedures
 * quantitative methods ... to distinguish different classes of polysemous nouns
   on the basis of the variability of copredication contexts

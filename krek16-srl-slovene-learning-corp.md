@@ -1,44 +1,44 @@
 Označevanje udeleženskih vlog v učnem korpusu za slovenščino
 Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec
-2016 Conference on Language Technologies & Digital Humanities Ljubljana, 
+2016 Conference on Language Technologies & Digital Humanities Ljubljana,
 
 # 1 Introduction
 
-* srl (Shen and Lapata, 2007; Christensen et al., 2011)
+* srl (Shen and Lapata, 2007; Christensen+ 2011)
 * lack of consensus on the various _categories_ and the criteria for determining
   which today are already available for many languages, causing difficulties in
   čezjezikovnem model semantic labeling should in our view, an effective system
 * criteria and indications for marking participatory roles or, more precisely
-  predikatno- argumentnih relationships 
+  predikatno- argumentnih relationships
   * to provide a set of categories, which is the most optimal, ie. cover all
-    (in our case Slovene) key participatory roles and at the same time 
+    (in our case Slovene) key participatory roles and at the same time
   * does not contain categories that are excessively detailed or mutual
-    overlays, 
+    overlays,
   * be based primarily on semantic rather than on morphological, lexical or
-    syntactic properties, 
+    syntactic properties,
   * allow for formal description or usefulness of language technology
-    applications, and 
+    applications, and
   * to be as compatible with the categories and criteria applicable to other
     languages (cf.. Petukhov and Bunt, 2008: 39)
 
 # 2 Theoretical and methodological background
 
 * We first analyzed the individual approaches that have been developed and used
-  for other languages, 
-  * for example. 
+  for other languages,
+  * for example.
     * for English
-      * PropBank (Palmer et al., 2005)
-      * Verbnet (Kipper et al., 2006) and 
-      * FrameNet (Backer et al., 1998) , 
-    * Ancor (Taul et al., 2011) for the Spanish, 
-    * Sonar (Schuurman et al. , 2010) for the Dutch. In addition, a 
-    * set of codes for Croatian (Filko et al., 2012) and the 
-    * Czech valence lexicon Vallex. We focused on 
+      * PropBank (Palmer+ 2005)
+      * Verbnet (Kipper+ 2006) and
+      * FrameNet (Backer+ 1998),
+    * Ancor (Taul+ 2011) for the Spanish,
+    * Sonar (Schuurman+ 2010) for the Dutch. In addition, a
+    * set of codes for Croatian (Filko+ 2012) and the
+    * Czech valence lexicon Vallex. We focused on
   * comparing formal descriptions (ie. Sets of semantic tags) for each
     participatory role and the criteria for their determination
   * range of participatory roles and their formal descriptions are derived from
     the functional generative approach of the Prague Dependency Treebank (PDT,
-    Mikulov et al., 2006)
+    Mikulov+ 2006)
   * our tag set is a simplification of PDT with ideas from FrameNet
 
 # 3 Set of labels and the criteria for their determination

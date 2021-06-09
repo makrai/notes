@@ -34,7 +34,7 @@ arXiv:1506.06422 [stat.ML]
     * We propose a topological split tree algorithm for hierarchical clustering
       (based on the algorithm introduced by Chazal+ (2013) for flat clustering)
       and demonstrate its convergence on Riemannian manifolds
-    * despite well-known impossibility results 
+    * despite well-known impossibility results
       [related to desirable properties of clustng] (Kleinberg 2003)
 
 # 1 Introduction

@@ -32,7 +32,7 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
 ## 3 The Components of Lexical Meaning 27
   1. designation
     * denotatum and designatum
-    * criteriality and negative criteriality. 
+    * criteriality and negative criteriality.
       * asztal, table/desk (étkező-, író-)
       * morning
       * limbs
@@ -45,14 +45,14 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
       * fiction, abstract nouns p35
       * hello, please, this, not 36
   2. connotation 38
-    * vulgar, emotive, geo dial, recently coined/obsolete, 
+    * vulgar, emotive, geo dial, recently coined/obsolete,
     * info about the speaker, evaluation of the subject
     * humorous, ironic
   3. range of applic 41
     * stipend (teacher, clergyman) vs salary (official)
     * corned: only beef
 ## 4 The Actual Designation in the Context 47
-* general and concrete meaning 
+* general and concrete meaning
 ### divergences from systematic meaning
 * borderline between figurative (metaphorical) and lexical
 ### occasional use and figurative sense 53
@@ -68,8 +68,8 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
 * the sense from which other senses can, in the semantic analysys be derived by
   ... some added connotation/figurative, special restricted language/style
 * specialized sense
-* crane: the source is already scientific, 
-  * not necessarily more frequent than the machine: 
+* crane: the source is already scientific,
+  * not necessarily more frequent than the machine:
   * two direct senses
   * history
 ### transferred senses
@@ -119,9 +119,9 @@ same spelling, differenc pronunciation -- treated in the dictionary like homonym
 * lexicographic tradition
 ## 6.4. Criteria of homonymy 85
 * difference in derived forms
-* polysemy if relation has other instances in the language 86 
+* polysemy if relation has other instances in the language 86
   * crane, cat
-  * causative-effect 
+  * causative-effect
 ## The presentation of homonyms 88
 
 # Chapter ii: formal variation of words 119-137 115
@@ -132,4 +132,4 @@ same spelling, differenc pronunciation -- treated in the dictionary like homonym
 # Chapter vii: the bilingual dictionary 294-344
 # Chapter viii: planning and organization of lexicographic work 345-357
 # Abbreviations 358-358
-# Addenda to the bibliography 359-360 
+# Addenda to the bibliography 359-360

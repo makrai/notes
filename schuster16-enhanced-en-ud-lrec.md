@@ -26,7 +26,7 @@ LREC 2016
   * tasks that require a syntactic tree
     * such as
       * source-side reordering for machine translation (e.g., Genzel (2010))
-      * sentence compression (Galanis and Androutsopoulos, 2010).  For
+      * sentence compression (Galanis and Androutsopoulos, 2010)
     * a sound syntactic representation is more important
       than the relations between individual words
   * shallow natural language understanding (NLU) tasks
@@ -36,15 +36,15 @@ LREC 2016
       * unsupervised semantic parsing (Poon and Domingos, 2009)
     * the relations between content words are more important
       than the overall tree structure
-* which one of the three SD representations is being used for the tasks
+* which one of the three SD representations is being used for the tasks?
   * basic SD trees which are guaranteed to be a strict surface syntax tree
   * collapsed or CCprocessed SD representations
     * may be graphs instead of trees, and
     * may contain additional and augmented relations
 * e.g. “Fred started to laugh”
-  * relation between the controlled verb laugh and its controller, Fred
+  * relation between the controlled verb _laugh_ and its controller, _Fred_
   * in the CCprocessed SD representation, this relation is made explicit
-* the majority of [UD] efforts so far have focused on the development of the
+* the majority of UD efforts so far have focused on the development of the
   basic UD representation and the annotation of treebanks
   * Both de Marneffe+ (2014) and Nivre+ (2016) also
     mention an enhanced UD representation and acknowledge its usefulness but
@@ -56,7 +56,7 @@ LREC 2016
   * implementation of a converter
     * from phrase-structure trees to basic UD trees
     * from basic to enhanced and enhanced++ English UD graphs
-    * release[d] both tools as part of Stanford CoreNLP and the Stanford Parser
+    * released both tools as part of Stanford CoreNLP and the Stanford Parser
 
 # 2 The enhanced UD representation 2
 
@@ -68,16 +68,16 @@ LREC 2016
     basic UD representation, and there is no need for an additional relation
   * the collapsed SD graphs also include the preposition in the relation
     name. This helps to disambiguate the type of modifier
-  * all nominal modifiers (nmod) also include the preposition in [the] name
+  * all nominal modifiers (nmod) also include the preposition in the name
   * The same is true for more complex PPs which are either analyzed as
     adverbial clause modifiers (advcl) or as adjectival clause modifiers (acl)
-  * conjunct relations augmented [e.g. conj:and]
-* Propagated governors and dependents [to] clauses with conjoined phrases
+  * conjunct relations augmented e.g. conj:and
+* Propagated governors and dependents to clauses with conjoined phrases
 * Subjects of controlled verbs
 
 # 3 The enhanced++ UD representation
 
-* for many NLU systems that try to extract relationships between entities, e.g
+* for many NLU systems that try to extract relationships between entities, e.g,
   * open domain relation extraction (e.g., Mausam+ (2012)), or
   * relationships between objects in image descriptions (Schuster+ 2015)
 * partitive noun phrases such as _both of the girls_ in which
@@ -89,6 +89,7 @@ LREC 2016
     according to the guidelines for enhanced dependency graphs
 * multiword prepositions such as _in front of_
   e.g. _a house in front of the hill_
+  `house -- front -- hill`
   contains a relation between house and front, and front and hill
   * the relation between house and hill is going to be more relevant
 * another representation which allows for the deletion of relations
@@ -99,15 +100,15 @@ LREC 2016
 * we
   * follow Barwise and Cooper (1981) and Keenan and Stavi (1986) and
   * treat the first part of the phrase as a quantificational determiner
-  * promote the semantically salient [NP] to be the head of the partitive and
+  * promote the semantically salient NP to be the head of the partitive and
   * analyze the quantificational determiner as a flat multi-word expression
     that is headed by its first word
-  * we attach them using the special relation quantificational modifier
+  * we attach them using the special relation _quantificational modifier_
     (det:qmod)
 * Light noun constructions (Simone and Masini, 2014) such as
   _a panel of experts_ or _a bunch of people_ pose similar challenges
   * the light nouns are the head of these phrases in the basic UD trees
-  * [We] analyze light noun constructions as a quantificational determiner
+  * We analyze light noun constructions as a quantificational determiner
 
 ## 2/4 Multi-word prepositions
 
@@ -125,17 +126,17 @@ LREC 2016
   * CCprocessed SD representation introduced copy nodes which we adapt _I bike
     and bike 0 to and from work_
 * conjoined prepositional phrase such as “She flew to Bali or to Turkey”
-  * should encode that [the two nmod:to] relations are conjoined by _or_. For
+  * should encode that the two nmod:to relations are conjoined by _or_. For
     these reasons, we also analyze such clauses with copy nodes
 
 ## 4/4 Relative pronouns
 
 * we attach
-  * the referent of the pronoun [directly] to the governor of the pronoun
+  * the referent of the pronoun directly to the governor of the pronoun
   * the relative pronoun to its referent with a referent (ref) relation
   e.g. _The boy who lived_
   ```
-  ++boy ref lived
+  ++boy ref who
   ++boy nsubj lived
   ```
 
@@ -149,7 +150,7 @@ LREC 2016
   (Collins, 1999)
   * For each constituent type, we define a set of rules that determine
     from which of its children the constituent inherits its head
-    * mostly conditions on the constituent type of the child [like Collins]
+    * mostly conditions on the constituent type of the child like Collins
     * some of them also take surface tokens into account: main verbs and
       auxiliaries.  We traverse the constituency tree in depth-first order and
       use these rules to obtain and store the head of each constituent,
@@ -159,12 +160,12 @@ LREC 2016
   set of tree patterns in the form of tregexes (Levy and Galen, 2006)
   * we try to find a pattern that matches the subtree rooted at the lowest
     common ancestor of the head and the dependent
-* Two [problems that need preprocessing]
-  * many [MWEs with function words] are not a constituent according to the Penn
-    Treebank annotation guidelines (Marcus+ 1993)
+* Two problems that need preprocessing
+  * many MWEs with function words are not a constituent 
+    according to the Penn Treebank annotation guidelines (Marcus+ 1993)
   * wh-words in questions e.g. _What does Peter seem to have?_
-    * [for manually annotated treebanks,] Choi and Palmer (2012) [proposed to]
-      resolve these ambiguities [with] the indexed empty nodes
+    * for manually annotated treebanks, Choi and Palmer (2012) proposed to
+      resolve these ambiguities with the indexed empty nodes
     * the output of most constituency parsers does not contain these nodes
     * we try to solve this issue by considering the selectional restrictions
 
@@ -172,21 +173,21 @@ LREC 2016
 
 * Currently, we don’t propagate object or nominal modifier relations in clauses
   with conjoined verb phrases such as “the store buys and sells cameras”
-  [because of] many cases such as “she was reading or watching a movie”
+  because of many cases such as “she was reading or watching a movie”
   * Nyblom+ (2013) successfully used a machine learning approach to solve
     this problem for Finnish but as there currently exists no corpus annotated
 
 # 5 Comparison to AMR
 
 * Representing the meaning of sentences as directed graphs Shieber (1984)
-* Abstract Meaning Representation (AMR) (Banarescu+ 2013)
+* Abstract Meaning Representation (AMR; Banarescu+ 2013)
   * received significant attention in recent years
-* compared to UD graphs, [AMR] aims to abstract further away from the surface
-* [AMR] encodes sentences using PropBank framesets (Palmer+ 2005) and
+* compared to UD graphs, AMR aims to abstract further away from the surface
+* AMR encodes sentences using PropBank framesets (Palmer+ 2005) and
   approximately 100 fixed relations. This makes AMR deeper
-* The expressivity of AMR [is constrained by the] set of PropBank framesets
+* The expressivity of AMR is constrained by the set of PropBank framesets
   * particularly problematic for neologisms such as _to venmo_
-* our representation does not [distinguish between comitative] and instrumental
+* our representation does not distinguish between comitative and instrumental
   * AMR requires SRL which is very hard
 
 # 6 Limitations
@@ -196,7 +197,7 @@ LREC 2016
   `Everybody nsubj:xsubj buy`
 * this UD graph encodes approximately
   `Everybody wants that everybody buys a house`
-* [the graph for] “Everybody sleeps or is awake” approximately encodes
+* the graph for “Everybody sleeps or is awake” approximately encodes
   `Everybody sleeps or everybody is awake`
 * _Sue and Mary are carrying a piano_
   * whether a conjoined subject should be interpreted distributively or

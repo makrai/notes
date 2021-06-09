@@ -4,7 +4,7 @@ A Compositional and Interpretable Semantic Space
 
 # Abstract
 
-phrasal meaning ... in an interpretable way
+phrasal meaning in an interpretable way
 
 # 1 Introduction
 
@@ -34,7 +34,7 @@ phrasal meaning ... in an interpretable way
   * maintains the convexity of the loss function,
   * In contrast, an element-wise multiplication, dilation or higher-order
     matrix composition function will lead to a non-convex optimization
-* alternating direction method of multipliers (ADMM) (Boyd, 2010)
+* alternating direction method of multipliers (ADMM; Boyd, 2010)
 
 # 3 Data and experiments
 
@@ -55,7 +55,7 @@ phrasal meaning ... in an interpretable way
   * two other previously studied composition methods:
     * weighted addition (w.add SVD ), and
     * lexfunc (Baroni and Zamparelli, 2010)
-      * We solved ... with Matlab’s partial least squares implementation ...
+      * We solved with Matlab’s partial least squares implementation ...
         SIMPLS algorithm (Dejong, 1993)
       * Dinu+ (2013) used simple unregularized regression to estimate M
         We also replicated, worse

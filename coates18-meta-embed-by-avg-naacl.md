@@ -51,9 +51,9 @@ arXiv:1804.05262 NAACL-HLT 2018
 
 * To evaluate semantic similarity between word embeddings we consider ... the
   Euclidean distances of pairs of words in the source embedding sets and their
-  corresponding Euclidean distances in the meta-embedding space 
+  corresponding Euclidean distances in the meta-embedding space
 * we can obtain a view as to how the meta-embedding procedure is combining
   semantic information. We begin by examining concatenation through this lens,
-  before moving on to averaging.  
-  
+  before moving on to averaging.
+
 ## 2.1 Concatenation

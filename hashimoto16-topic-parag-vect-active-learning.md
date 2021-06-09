@@ -1,4 +1,4 @@
-Topic detection using paragraph vectors 
+Topic detection using paragraph vectors
   to support active learning in systematic reviews
 Kazuma Hashimoto, Georgios Kontonatsios, Makoto Miwa, Sophia Ananiadou
 Journal of Biomedical Informatics 62 (2016) 59–65
@@ -8,7 +8,7 @@ https://nactem.ac.uk/pvtopic/
 # Abstract
 
 * _Systematic reviews_ require expert reviewers to manually screen thousands of
-  citations in order to identify all relevant articles to the review.  
+  citations in order to identify all relevant articles to the review.
 * [Wikipedia: _Active learning_ is a special case of semi-supervised machine
   learning in which a learning algorithm is able to interactively query the
   user (or some other information source) to obtain the desired outputs at new

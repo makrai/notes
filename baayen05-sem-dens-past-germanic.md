@@ -91,13 +91,13 @@ Language 2005
 
 * [organization of the section]
   * synonym sets and regularity. We th
-  * distribution of auxiliaries for regular and irregular verbs in 
+  * distribution of auxiliaries for regular and irregular verbs in
     * German and Dutch
     * Levin's argument-structure alternation classes (Levin 1993). Finally, we
   * probabilistic asymmetries in the frequencies of use of regular and irregular
-  * Throughout our discussion, we address the 
+  * Throughout our discussion, we address the
     relation of our semantic vari[ables] to frequency of occurrence. It is well
-  * irregular verbs tend to have hig[h] frequencies than do regular verbs. 
+  * irregular verbs tend to have hig[h] frequencies than do regular verbs.
   * Most of [our] semantic variables ... are correlated with frequency.
   * our variables capture aspects of regularity ...  even after frequency is
     partialled out

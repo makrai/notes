@@ -36,7 +36,7 @@ nincs kód
         the linear projection method in (Mikolov et al., 2013b)
       * Faruqui and Dyer (2014)
         * linear transforms that project word vectors of all languages to a
-          common low-dimensional space, where 
+          common low-dimensional space, where
           the correlation of the multilingual word pairs is maximized with the
           canonical correlation analysis (CCA)
   * regularization-based approaches

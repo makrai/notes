@@ -7,7 +7,7 @@ Understanding and Improving Morphological Learning in the NMT Decoder
 * little is known about
   * linguistic patterns of morphology, syntax and semantics learned
   * which parts of the architecture are responsible for learning each of these
-* In this paper we
+* In this paper
   * how much morphology an NMT decoder learns, and
   * whether injecting target morphology into the decoder helps
 * three methods:
@@ -34,7 +34,7 @@ Understanding and Improving Morphological Learning in the NMT Decoder
   * encoder are rich in morphological information, while representations
   * decoder are significantly poorer.  However, the paper does not present a
   * [no] convincing explanation for this finding. Our first contribution in
-* this work: 
+* this work:
   a more comprehensive analysis of morphological learning on the decoder side
   * hypothesi[s]: other components of the NMT architecture
     * specifically the encoder and the attention mechanism,
@@ -74,9 +74,9 @@ Understanding and Improving Morphological Learning in the NMT Decoder
 ## Morphological Annotations
 
 * We used the following tools recommended on the Moses website 1 to annotate
-  * LoPar (Schmid, 2000) for German, 
-  * Tree-tagger (Schmid, 1994) for Czech and 
-  * MXPOST (Ratnaparkhi, 1998) for English.  The 
+  * LoPar (Schmid, 2000) for German,
+  * Tree-tagger (Schmid, 1994) for Czech and
+  * MXPOST (Ratnaparkhi, 1998) for English.  The
   * number of tags produced by these taggers is 214 for German and 368 for Cz
 
 # 3 Analysis of the decoder

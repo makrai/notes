@@ -6,7 +6,7 @@ implementation of subword LexVec ... at https://github.com/alexandres/lexvec
 
 # Abstract
 
-* We evaluate the impact of different types of subwords 
+* We evaluate the impact of different types of subwords
   (n-grams and un- supervised morphemes), with
 * results confirming the importance of subword information
 

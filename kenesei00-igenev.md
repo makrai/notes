@@ -1,6 +1,6 @@
-* az infinitivusz 
-  * NP-vel helyettesitheto 
-  * vagy azzal se 
+* az infinitivusz
+  * NP-vel helyettesitheto
+  * vagy azzal se
   * nincs testes alany. Szerintem van
   * nem kepzes, mert tovabbra is ige
 * osszetorve V alanya melyik szo alanya

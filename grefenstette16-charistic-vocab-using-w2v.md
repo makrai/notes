@@ -1,18 +1,18 @@
 Gregory Grefenstette and Lawrence Muchemi
-Determining the Characteristic Vocabulary for a Specialized Dictionary 
+Determining the Characteristic Vocabulary for a Specialized Dictionary
   using Word2vec and a Directed Crawler
 2016 LREC
 
 # Abstract
 
 * Specialized dictionaries are used to understand concepts in specific domains,
-  * concepts 
-    * not part of the general vocabulary, or 
+  * concepts
+    * not part of the general vocabulary, or
     * having meanings that differ from ordinary languages
 * first step [is] detecting the characteristic vocabulary of the domain
-  * methods ... involve 
-    * gathering a domain corpus, 
-    * calculating statistics [frequency of] the terms found there, and then 
+  * methods ... involve
+    * gathering a domain corpus,
+    * calculating statistics [frequency of] the terms found there, and then
     * comparing these statistics to a background or general language corpus.
 * Here we present two tools, a directed crawler, and a distributional semantics
   package, that can be used together, circumventing the need of a background

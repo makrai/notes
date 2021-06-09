@@ -176,7 +176,7 @@ Beth Levin
   classes identified in Part II of this book
   * e.g. _fill_ expresses its arguments in a frame resembling one of the
     variants of the locative alternation, and it is similar in meaning to
-    locative alternation verbs like spray and load, 
+    locative alternation verbs like spray and load,
     * it makes sense to include among the properties of fill's verb class that
       its members do not undergo the locative alternation
     * Similarly, in Part I of the book only some classes of verbs that do not
@@ -184,7 +184,7 @@ Beth Levin
 
 ## The Layout of the Book
 
-* The alternations are subdivided into groups 
+* The alternations are subdivided into groups
   on the basis of the syntactic frames involved
   1. transitivity alternations, while
   2. alternate expressions of arguments (mostly within the verb phrase)

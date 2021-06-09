@@ -2,18 +2,19 @@ Collobert+
 NLP (Almost) from Scratch
 2011
 
-# Abstract
-
-* embedding SENNA
 * lehetséges feladat: kerssünk egyre nagyobb dimenziós `T_1,T_2,\dots`
   szintaktikai és `M_1,M_2\dots` szemantikai altereket, amelyek, ha minden jól
   megy, direktösszeadandók
 
+# Abstract
+
+* embedding SENNA
+
 # 1 Introduction
 
-* we reach good performance levels in most of the tasks by transferring
-  intermediate representations discovered on large unlabeled data sets to
-  task-specific features
+* good performance levels in most of the tasks by transferring intermediate
+  representations discovered on large unlabeled data sets to task-specific
+  features
 
 # 2 The Benchmark Tasks
 
@@ -26,8 +27,8 @@ NLP (Almost) from Scratch
 * describes the unified model and reports benchmark results obtained with
   supervised training
 * architecture: a neural network takes the input sentence words are fed to our
-  architecture as indices taken from a finite dictionary `D` lookup table: for
-  each word `w \in D`, an internal `d_{wrd}`-dimensional feature vector
+  architecture as indices taken from a finite dictionary `D` lookup table:
+  for each word `w \in D`, an internal `d_{wrd}`-dimensional feature vector
   `LT_W (w) =\langle W\rangle_w^1`
 
 ### extending to any discrete features
@@ -36,19 +37,49 @@ NLP (Almost) from Scratch
 `W^(k)}`
 (2)-ben `[w_i]_j` helyett esetleg simán `[w_j]`?
 
-## Extracting Higher Level Features from Word Feature Vectors
+## 3.3 Extracting Higher Level Features from Word Feature Vectors
 
-* We consider two common approaches which tag one word at the time: a window
-  approach, and a (convolutional) sentence approach
+* We consider two common approaches which tag one word at the time:
+  a window approach, and a (convolutional) sentence approach
 * Each output can be then interpreted as a score of the corresponding tag
   (given the input of the network), _thanks to a carefully chosen cost
   function_ that we will describe later in this section
 
-### sentence approach
+### 3.3.2 sentence approach
 
-* window approach fails with SRL, where the tag of a word depends on a verb
-* solution: convolutional approach, first introduced by Waibel+ (1989) and also
-  called Time Delay Neural Networks
+* window approach
+  * performs well for most NLP tasks we are interested in. However this approach
+  * fails with SRL, where the tag of a word depends on a predicate
+  * If the verb falls outside the window
+  * requires the consideration of the whole sentence. When using
+  * neural networks, the natural choice to tackle this problem in a convolution
+  * convolutional approach,
+    * first introduced by Waibel+ (1989) and
+    * also called Time Delay Neural Networks (TDNNs) in the literature.
+* It is thus necessary to encode in the network architecture which verb we are
+  considering in the sentence, and which word we want to tag. For that purpose,
+  * features encode the relative distances i − pos v and i − pos w with respect
+    to the chosen verb at position pos v , and the word to tag at position pos w
+* Convolutional Layer
+  * a generalization of a window ap- proach:
+  * given a sequence represented by columns in a matrix f θ l−1,
+    a matrix-vector operation is applied to each window of successive windows in
+    the sequence.  where the weight matrix W l is the same across all windows t
+  * Convolutional layers extract local features around each window
+  * convolutional layers are often stacked to extract higher level features. In
+* Max Layer. The size of the output (6) depends on the number of words
+  * Local feature vectors extracted by the convolutional layers have to be
+    combined to obtain a global feature vector, with a fixed size,
+    in order to apply subsequent standard affine layers.
+  * Traditional convolutional networks often apply an
+    average (possibly weighted) or a max operation over the “time” t
+  * average operation does not make much sense in our case, as in general
+    most words in the sentence do not have any influence on the semantic role of
+    a given word to tag
+  * Instead, we used a max approach
+This fixed sized global feature vector can be then fed to standard affine
+* we then finally produce one score per possible tag for the given task.
+  * As in the window approach
 
 ## 3.4
 

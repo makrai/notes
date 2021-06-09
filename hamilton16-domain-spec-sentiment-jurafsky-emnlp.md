@@ -9,8 +9,8 @@ summarized in Buechel+ 2018
 
 # Abstract
 
-* label propagation framework ... using small sets of seed words
-* our approach achieves state-of-the-art performance
+* label propagation framework using small sets of seed words
+* our approach achieves SOTA performance
 * our purely corpus-based approach outperforms methods that rely on WordNet
 * we induce and release
   * historical sentiment lexicons for 150 years of English
@@ -22,24 +22,23 @@ summarized in Buechel+ 2018
 # 1 Intro
 
 * e.g
-  * _soft_ varies drastically between [sports] and [toy animals] (Figure 1)
+  * _soft_ varies drastically between sports and toy animals (Figure 1)
   * _Terrific_: once was highly negative ; now synonomous with good (Figure 2)
 * SentProp is designed to
   * maintain accurate performance when using modestly-sized domain-specific
-    corpora (~ 10^7 tokens), and it
+    corpora (~10^7 tokens), and it
   * provides confidence scores along with the learned lexicons
 * contributions of this work are:
-  1. A state-of-the-art sentiment induction algorithm, combining high-quality
+  1. A SOTA sentiment induction algorithm, combining high-quality
      word vector embeddings with an intuitive label propagation approach
   2. A novel bootstrap-sampling framework for inferring confidence scores
-  3. Two large-scale studies: how sentiment depends on ... social and historicl
+  3. Two large-scale studies: how sentiment depends on social and historical
     1. We induce community-specific sentiment lexicons for the largest 250
-       “subreddit” communities on the social-media forum Reddit, revealing
+       “subreddit” communities on the social-media forum Reddit
     2. We induce historical sentiment lexicons for 150 years of English,
        revealing that > 5% of words switched polarity during this time.  To the
-       years and hundreds of user-defined online communities.  All of the
 
-# 2 Related work ... on inducing sentiment lexicons
+# 2 Related work on inducing sentiment lexicons
 
 * Corpus-based approaches use seed words and patterns in unlabeled corpora
   * patterns may rely on
@@ -50,11 +49,11 @@ summarized in Buechel+ 2018
     * general co-occurrence
       (Turney and Littman, 2003; Riloff and Shepherd, 1997;
       Igo and Riloff, 2009)
-  * Often ... exploit distant-supervision signals (review scores, emoticons)
+  * Often exploit distant-supervision signals (review scores, emoticons)
     specific to certain domains
     (Asghar+ 2015; Blair-Goldensohn+ 2008; Bravo-Marquez+ 2015; Choi and
     Cardie, 2009; Severyn and Moschitti, 2015; Speriosu+ 2011; Tang+ 2014)
-  * [unsupervised] is to construct lexical graphs using word co-occurrences and
+  * unsupervised is to construct lexical graphs using word co-occurrences and
     then to perform some form of label propagation over these graphs
     (Huang+ 2014; Velikovich+ 2010)
   * transformations of word-vector representations in order to induce
@@ -65,13 +64,13 @@ summarized in Buechel+ 2018
   WordNet (Fellbaum, 1998)—in order to propagate sentiment from seed labels
   (Esuli and Sebastiani, 2006; Hu and Liu, 2004; Kamps+ 2004; Rao and
   Ravichandran, 2009; San Vicente+ 2014; Takamura+ 2005; Tai and Kao, 2013)
-  There is an implicit consensus that dictionary-based approaches [are] clean,
+  There is an implicit consensus that dictionary-based approaches are clean,
   * not applicable in domains lacking such a resource (e.g., historical)
 * Most previous work seeks to enrich or enlarge existing lexicons, emphasizing
   recall over precision (San Vicente+ 2014; Velikovich+ 2010; Qiu+ 2009)
-  * motivated by [e.g.] web-advertising (Velikovich+ 2010)
+  * motivated by e.g. web-advertising (Velikovich+ 2010)
 * this work
-  * goal [is to induce high-quality lexicons that are] specific social[ly]
+  * goal is to induce high-quality lexicons that are specific socially
   * Algorithmically, our approach is inspired by Velikovich+ (2010)
     * We extend this work by
       * incorporating high-quality word vector embeddings,
@@ -83,11 +82,11 @@ summarized in Buechel+ 2018
 
 * Our framework, SentProp, is designed to meet four key desiderata:
   1. Resource-light: without massive corpora or hand-curated resources.
-  2. Interpretable: small seed sets [to] avoid ambiguity in sentiment values.
-  3. Robust: Bootstrap-sampled standard dev provide a measure of confidence.  
+  2. Interpretable: small seed sets to avoid ambiguity in sentiment values.
+  3. Robust: Bootstrap-sampled standard dev provide a measure of confidence.
   4. Out-of-the-box: Does not rely on domains specific signals
 * two steps
-  * lexical graph from unlabeled corpora and 
+  * lexical graph from unlabeled corpora and
   * propagating sentiment labels over this graph.
 
 ## 3.1 Constructing a lexical graph

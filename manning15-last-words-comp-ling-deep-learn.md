@@ -1,6 +1,5 @@
 Christopher D. Manning
-Last Words
-Computational Linguistics and Deep Learning
+Last Words.  Computational Linguistics and Deep Learning
 2015
 
 # 1. The Deep Learning Tsunami
@@ -47,32 +46,26 @@ Computational Linguistics and Deep Learning
   sharing that occurs within deep representations
 * the system devel process
   * The researcher defines a model architecture and a top-level loss function
-  * and then both the parameters and the representations of the model
-  * self-organize so as to minimize this loss, in an end-to-end learning
-  * framework
+  * parameters and the representations of the model self-organize so as to
+    minimize this loss, in an end-to-end learning framework
   * We are starting to see the power of such deep systems in
     * recent work in neural machine translation
       * Sutskever, Vinyals, and Le 2014;
-      * Luong et al.  2015
-        * Luong, Minh-Thang, Ilya Sutskever, Quoc V.  Le, Oriol Vinyals,
-        * and Wojciech Zaremba.  2015
-        * Addressing the rare word problem in neural machine translation
+      * Luong+ 2015
+        MT Luong, I Sutskever, Quoc V Le, Oriol Vinyals, and Wojciech Zaremba.
+        Addressing the rare word problem in neural machine translation
+        2015
 * compositionality in models,
 
-# 5. Scientific Questions That Connect Computational Linguistics and Deep
-* Learning
+# 5. Scientific Questions That Connect CL and Deep Learning
 
-* I would like to suggest that we might return ... to some of the interesting
-  linguistic and cognitive issues that motivated non-categorical
-  representations
-* and neural network approaches.  One example of noncategorical phenomena in
-  language is the POS of words in the
-* gerund V-ing form, distributed representations for modeling and explaining
-  linguistic variation
-* and change
+* we might return ... to some of the interesting linguistic and cognitive issues
+  * motivated non-categorical representations and neural network approaches.
+  * e.g. the POS of words in the gerund V-ing form,
+* explaining linguistic variation and change with distributed representations
   * Sagi, Kaufmann, and Clark (2011)—actually
-  * Kulkarni et al. (2015)
-  * Kim et al. (2014)
+  * Kulkarni+ (2015)
+  * Kim+ (2014)
 * past tense debate
   * arguing against the adequacy of neural networks for rule-governed
     linguistic behavior was the foundation for the rise to fame of Steve

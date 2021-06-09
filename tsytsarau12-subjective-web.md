@@ -4,7 +4,7 @@ Data Min Knowl Disc (2012)
 
 # Abstract
 
-* In the past years ... Sentiment Analysis and Opinion Mining ... in
+* In the past years Sentiment Analysis and Opinion Mining in
   Information Retrieval and Web data analysis
   * Ratings, opinion trends and representative opinions enrich the search
   * Opinion aggregation over product reviews
@@ -23,14 +23,14 @@ Data Min Knowl Disc (2012)
 * opinions aggregated at a large scale may reflect political preferences
   (Tumasjan+ 2010) and even improve stock market prediction
 * we will use the term Subjectivity Analysis to refer to all three of
-  ... Opinion Mining and Opinion Aggregation + Contradiction Analysis
+  Opinion Mining and Opinion Aggregation + Contradiction Analysis
 
 ## 1.1 Relation to previous work
 
 * [our] classification of the papers into four different approaches
   * machine learning, dictionary-based, statistical, and semantic. We provide
 * topics that have emerged only recently:
-  * opinion mining in microblogs and streaming data ... 6 studies
+  * opinion mining in microblogs and streaming data 6 studies
   * opinion quality and spam, where we present 5 techniques that try to
     * detect artificially-constructed opinionated data
   * and contradiction analysis, where we report on 17 approaches
@@ -39,7 +39,7 @@ Data Min Knowl Disc (2012)
 
 * confluence of different approaches
   * Opinion Mining originates from the IR community
-  * Sentiment Analysis ... was initially formulated as [an] NLP task
+  * Sentiment Analysis was initially formulated as [an] NLP task
 
 # 3 Opinion mining 5
 

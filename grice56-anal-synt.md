@@ -73,6 +73,6 @@ The Philosophical Review, Vol. 65, No. 2 (Apr., 1956), pp. 141-158
     appropriate
   * in the first case to say that we did not believe him and
   * in the second case to say that we did not understand him
-  * incredulity yielding to conviction vs 
+  * incredulity yielding to conviction vs
     incomprehension yielding to comprehension
 * sections 5 and 6, in which diagnosis and positive theory are offered p13

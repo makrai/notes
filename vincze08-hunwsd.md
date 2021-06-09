@@ -7,16 +7,16 @@ LREC 2008
 
 ### 1.1.2. Word sense disambiguation research on Hungarian language
 
-* WSD in Hungarian have been carried out for a long time 
+* WSD in Hungarian have been carried out for a long time
   (Miháltz, 2005, Miháltz & Póhl, 2006)
   * In relation to the development of Hungarian-English and English-Hungarian
     machine translation systems
 
 ### 1.2. The task of word sense disambiguation
 
-* two major groups on the basis of the 
-  * scope, limits of their applicability and the 
-    * “all-words” (applied to overall vocabulary) and 
+* two major groups on the basis of the
+  * scope, limits of their applicability and the
+    * “all-words” (applied to overall vocabulary) and
     * “lexical sample” (applied to selected word forms only)
   * degree of granularity
     * fine-grained and coarse-grained levels can be distinguished

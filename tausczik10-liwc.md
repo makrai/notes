@@ -23,12 +23,12 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * patients to talk in a _stream of consciousness_ way into a tape recorder
   * anxiety (e.g., death, castration), hostility toward self or others, and
     various interpersonal and psychological topics
-  * later used in the psychiatric diagnoses of cognitive impairments, 
+  * later used in the psychiatric diagnoses of cognitive impairments,
     alcohol abuse, brain damage, and mental disorders
   * Attempts [to a computer program have] modest correlations to the
     judge-based “gold standard” (e.g., Gottschalk & Bechtel, 1993)
 * first general purpose computerized text analysis program in psychology was
-  developed by Philip Stone and his colleagues 
+  developed by Philip Stone and his colleagues
   * Rosenberg & Tucker, 1978; Stone, Dunphy, Smith, & Ogilvie, 1966
   * adapted McClelland’s need-based coding schemes to any openended text
   * General Inquirer
@@ -108,16 +108,16 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * recall an event that they had discussed with someone else [vs]
       undisclosed event
       * significant differences in the verb tense used ... (Pasupathi, 2007)
-      * greater past tense in discussing a disclosed event and 
+      * greater past tense in discussing a disclosed event and
         greater present tense in discussing an undisclosed event
-      * could indicate increased psychological distance and 
+      * could indicate increased psychological distance and
         a higher degree of resolution for disclosed events
 
 ## Emotionality: Positive and Negative Emotions
 
 * Use of emotion words [as a measure] of immersion [belemerülés]
   * higher use of emotion words showed more immersion in the traumatic event,
-    which led to increased experience of physical pain (Holmes+ 2007) 
+    which led to increased experience of physical pain (Holmes+ 2007)
 * cognitive complexity [thinking styles], and social awareness
   * emotion words were correlated
     * negatively with articles[, prepositions,] and relativity words
@@ -152,7 +152,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   group performance
 * type of
   * first-person plural pronouns may be important, if “we” is being used
-    * promote interdependence as in “we can do this;” it may 
+    * promote interdependence as in “we can do this;” it may
     * increase group cohesion if ... it is being used to indirectly assign
       tasks as it may lead to resentment
   * assents (e.g., agree, OK, yes) could signal increased group consensus

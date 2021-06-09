@@ -11,10 +11,10 @@ Manócska : A Unified Verb Frame Database for Hungarian
     constraints like animate or bodypart)
   * two optional subentries based on whether there is a verbal particle (Prev)
     * subdivided depending on the possibility of an infinitival argument (Inf)
-      * frames are collected within the Frames tag. Each frame can have 
+      * frames are collected within the Frames tag. Each frame can have
         * meta attributes, e.g. a reference to its ID in the original resource.
         * lists of arguments (subject, object, obliquus) and adjuncts
-          * grammatical case or a postposition. Beside that, they 
+          * grammatical case or a postposition. Beside that, they
           * may have extra constraints, e.g.  some features which help to
             * each feature as a key–value pair chosen from a predefined domain,
         * frame frequencies coming from the different resources are attributes

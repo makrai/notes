@@ -8,18 +8,18 @@ Levels of lexical representation
      relations between predicators and their arguments
    * we can make extremely subtle judgements about the grammaticality of novel
      combinations and their possible interpretations. It is implausible
-  2. many aspects of the syntax of a clause are determined by the semantics 
+  2. many aspects of the syntax of a clause are determined by the semantics
    * e.g. Projection Principle of Chomsky (1981). The result has been a shift
 * In section 1 we briefly introduce our conception of the syntactically
-  relevant predicate-argument representation 
+  relevant predicate-argument representation
    * the kinds of generalizations which are best stated over this
-   * does not contain theta-role labels and 
-   * distinguishes among the arguments of a predicator 
-     only according to how they combine with the predicator in a sentence 
+   * does not contain theta-role labels and
+   * distinguishes among the arguments of a predicator
+     only according to how they combine with the predicator in a sentence
    * is ... a projection of a more fully elaborated lexical semantic
-     representation. An adequate lexical semantic representation 
+     representation. An adequate lexical semantic representation
    * must allow for the identification of natural classes of arguments relevant
-     both to 
+     both to
       * linking rules (Carter, 1976; Ostler, 1979) and to the description of
       * diathesis alternations (Hale and Keyser, 1986, 1987)
 * [theta-role label] lists obscure the complex cross-classification of verbs

@@ -16,9 +16,9 @@ Bilingual Word Embeddings for Phrase-Based Machine Translation
 * semantic similarities of phrase-pairs
 * curriculum training (Bengio+ ICML 2009)
   * Y. Bengio, J. Louradour, R. Collobert and J. Weston
-    Curriculum Learning 
+    Curriculum Learning
 * bilingual distributed representations which lie in the same feature space
-* semantic relationships across bilingual embeddings were 
+* semantic relationships across bilingual embeddings were
   further improved through unsupervised learning on a large unlabeled corpus
 
 # 2 Review of [Distributed word representations]
@@ -60,5 +60,5 @@ Bilingual Word Embeddings for Phrase-Based Machine Translation
 # 5 Conclusion
 
 * initialization and optimization constraint using MT alignments
-* improve NIST08 end-to-end machine translation results 
+* improve NIST08 end-to-end machine translation results
   by just below half a BLEU point

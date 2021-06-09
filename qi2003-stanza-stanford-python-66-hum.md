@@ -1,6 +1,4 @@
-
 Peng Qi, Yuhao Zhang, Yuhui Zhang, Jason Bolton, Christopher D. Manning
-
 Stanza: A Python Natural Language Processing Toolkit for Many Human Languages
 arXiv:2003.07082 [cs.CL]
 

@@ -7,14 +7,14 @@ arXiv:2003.08271 [cs.CL]
 * contributions of this survey can be summarized as follows:
   1. Comprehensive review of PTMs for NLP,
     * background knowledge, model architecture, pre-training tasks,
-      various extensions, adaption approaches, and applications. We provide
-    * descriptions of representative models, make the necessary comparison,
-  2. New taxonomy of PTMs for NLP, which categorizes
+      extensions, adaption approaches, and applications
+    * descriptions of representative models + comparison,
+  2. New taxonomy of PTMs for NLP
     1. type of word representation;
     1. architecture of PTMs;
     1. type of pre-training tasks;
     1. extensions for specific types of scenarios or inputs
-  3. We collect ... open-source systems, paper lists, etc
+  3. We collect open-source systems, paper lists
   4. Future directions. We discuss and analyze the limitations
 
 # 2 background concepts and commonly used notations of PTMs
@@ -36,7 +36,7 @@ arXiv:2003.08271 [cs.CL]
   e.g. syntactic structure [146, 161] or semantic relation [111]
 * more straightforward [is] self-attention mechanism
 
-#### Analysis Both convolutional and sequential models learn the contextual
+#### Analysis. Both convolutional and sequential models learn the contextual
 
 * Transformer is easy to overfit on small or modestly-sized datasets [130, 49]
   49. Qipeng Guo, Xipeng Qiu, Pengfei Liu, Yunfan Shao, Xiangyang Xue, and
@@ -97,18 +97,18 @@ arXiv:2003.08271 [cs.CL]
 
 ### 3.1.3 Permuted Language Modeling (PLM)
 
-* Yang+ [194] claimed that some special tokens used in [masked LM], like
-  [MASK], are absent when the model is applied on downstream tasks, leading to
-  a gap between pretraining and fine-tuning. To overcome this issue,
-* Permuted Language Modeling (PLM) [194] is a pre-training objective to replace
+* Yang+ [194] claimed a gap between pretraining and fine-tuning:
+  * some special tokens used in [masked LM], like [MASK], are absent when the
+    model is applied on downstream tasks
+* solution: Permuted Language Modeling (PLM)
   * random permutation of input sequences
 * two-stream self-attention is introduced for target-aware representations
 
 ### 3.1.5 Contrastive Learning (CTL)
 
 * Contrastive learning [140]
-* assumes some observed pairs of text that are more semantically similar than
-* Compared to LM, CTL usually has less computational complexity, and therefore
+* assumes some observed pairs of text that are more semantically similar
+* Compared to LM, CTL usually has less computational complexity
 * Collobert+ [24] proposed pairwise ranking task to distinguish real and fake
   phrases. The model need to predict a higher score for legal phrase
 * Mnih and Kavukcuoglu [118] trained word embeddings efficiently with
@@ -128,7 +128,7 @@ arXiv:2003.08271 [cs.CL]
 * the same as NCE but predicts whether a token is replaced given its context
 * CBOW with negative sampling (CBOW-NS) [116] can be viewed as a simple version
 * ELECTRA [22] utilizing a generator to replacing some tokens of a sequence
-  * generator G and a discriminator D are trained following a two-stage
+  * generator G and a discriminator D are trained in two-stages
     1. Train only the generator with MLM task for n 1 steps;
     1. Initialize the weights of the discriminator with the weights of G
   * Then train the discriminator with a discriminative task keeping G frozen
@@ -154,7 +154,7 @@ arXiv:2003.08271 [cs.CL]
   * NSP conflates topic prediction and coherence prediction in a single task,
     conjectured in Lan+ [86]
   * topic prediction is easier to learn compared to coherence prediction
-  * SOP uses ... consecutive segments but with their order swapped as negative
+  * SOP uses consecutive segments but with their order swapped as negative
   * consistently outperforms BERT on various downstream tasks
 * StructBERT [180] and BERTje [29] also take SOP as their self-supervised
 
@@ -198,7 +198,7 @@ arXiv:2003.08271 [cs.CL]
     * sentiment
       * Ke+ [78] integrated sentiment polarity of each word to extend the MLM
         to Label-Aware MLM (LA-MLM)`:` SentiLR, achieves SOTA performance on
-        several sentenceand aspect-level sentiment
+        several sentence~ and aspect-level sentiment tasks
     * SenseBERT (Levine+ [92]) is pre-trained to predict MLM + supersenses
     * entity
       * ERNIE(THU) [199] integrates entity embeddings pre-trained on a
@@ -211,7 +211,7 @@ arXiv:2003.08271 [cs.CL]
         the sentence to obtain an extended tree-form input for BERT
       * Xiong+ [188] adopted entity replacement identification to encourage the
         model to be more aware of factual knowledge
-  * these methods ... may suffer from catastrophic forgetting
+  * these methods may suffer from catastrophic forgetting
     * To address this, K-Adapter [178] injects multiple kinds of knowledge by
       training different adapters independently for different pre-training
       tasks, which allows continual knowledge infusion
@@ -241,7 +241,7 @@ arXiv:2003.08271 [cs.CL]
   * images are converted into sequences of regions by applying RoI or bounding
     box retrieval techniques before encoded by pre-trained Transformers
 * audio-text pairs, such as SpeechBERT [20]
-  * end-to-end Speech Question Answering(SQA) model by
+  * end-to-end Speech Question Answering (SQA) model
   * encoding audio and text with a single Transformer encoder, which is
     pre-trained with MLM on speech and text corpus and fine-tuned on QA
 
@@ -302,21 +302,21 @@ arXiv:2003.08271 [cs.CL]
 
 * Multilingual BERT (M-BERT) is pre-trained by MLM with the shared vocabulary
   and weights on Wikipedia text from the top 104 languages
-  * no cross-ling (CL) objectives specifically designed nor any CL data
-  * CL generalization surprisingly well [127]
+  * no cross-ling (CrL) objectives specifically designed nor any CrL data
+  * CrL generalization surprisingly well [127]
   * lexical overlap between languages plays a negligible role K+ [74]
   * MASS [147] pretrained on multiple languages
     * significant improvement for unsupervised NMT
 * XLM [25] improves M-BERT by incorporating a crosslingual task,
   translation language modeling (TLM)
   i.e. MLM on a concatenation of parallel bilingual sentence pairs
-* Unicoder [63] further propose three new crosslingual (CL) pre-training tasks,
-  * CL word recovery, CL paraphrase classification, and CL masked LM
+* Unicoder [63] further propose three new crosslingual (CrL) pre-training tasks,
+  * CrL word recovery, CrL paraphrase classification, and CrL masked LM
 * PTMs trained on a single language significantly outperform the multilingual
   [112, 88, 173]
   * For Chinese, which does not have explicit word boundaries
   * larger granularity [26, 33, 184] and multigranularity [157, 158] word repr
-  * Kuratov and Arkhipov [85] ... adapt a multilingual PTM to a [Russian] PTM
+  * Kuratov and Arkhipov [85] adapt a multilingual PTM to a [Russian] PTM
   * monolingual PTMs pre-trained on language-specific corpus
     for French [112, 88], Finnish [173], Dutch [29, 31] have been released
 
@@ -348,52 +348,53 @@ arXiv:2003.08271 [cs.CL]
 ### 5.2.3 To tune or not to tune
 
 * two common ways of model transfer:
-  * feature extraction (where the pre-trained parameters are frozen), and
+  * feature extraction (where the pre-trained parameters are frozen)
     * it is important to expose the internal [most transferable] layers [124]
   * fine-tuning (where the pre-trained parameters are unfrozen and fine-tuned)
     * usually more general and convenient for many different downstream tasks
 
 ## 5.3 Fine-Tuning Strategies
 
-* Since ULMFit and BERT, fine-tuning has become the main adaption method of
+* Since ULMFit and BERT, fine-tuning has become the main adaption method
   * distinct random seeds can lead to substantially different results [34]
-* Besides standard fine-tuning, there:
+* Besides standard fine-tuning:
 
 ### Two-stage fine-tuning
 
 * first stage [with] an intermediate task or corpus
 * second stage, the transferred model is fine-tuned to the target task
-* Sun+ [154]: “further pretraining” on the related-domain corpus (BERT) and
+* Sun+ [154]: “further pretraining” on a related-domain corpus (BERT)
   * SOTA performance on eight widely-studied text classification datasets
-* Phang+ [126] and Garg+ [44]: intermediate supervised task related to the tg
+* Phang+ [126] and Garg+ [44]: intermediate supervised task related to the targt
   * large improvement for BERT, GPT, and ELMo
 
-### Multi-task fine-tuning: Liu+ [103] fine-tuned BERT [demonstrating that]
-multi-task learning and pre-training are complementary technologies
+### Multi-task fine-tuning
+
+* Liu+ [103]: on BERT, multi-task learning and pre-training are complementary
 
 ### Fine-tuning with extra adaptation modules
 
-* main drawback of fine-tuning is its parameter inefficiency: every downstream
-  task has its own fine-tuned parameters
-* solution is to inject some fine-tunable adaptation modules into PTMs while
-  * original parameters are fixed
+* main drawback of fine-tuning is its parameter inefficiency: 
+  every downstream task has its own fine-tuned parameters
+* solution is to inject some fine-tunable adaptation modules into PTMs 
+  while original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
-  * PAL: small additional task-specific adaptation modules, shared BERT with
-  * matches separately fine-tuned models on the GLUE benchmark with roughly 7
-    times fewer parameters
+  * PAL: small additional task-specific adaptation modules
+  * matches separately fine-tuned models on the GLUE benchmark
+    with roughly 7 times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
-  * Adapter modules yield a compact and extensible model; they add only a few
-    trainable parameters per task, and new tasks can be added without
-    revisiting previous ones
+  * Adapter modules yield a compact and extensible model
+  * they add only a few trainable parameters per task, and 
+    new tasks can be added without revisiting previous ones
 
-### Others Instead of fine-tuning all the layers simultaneously,
+### Others. Instead of fine-tuning all the layers simultaneously,
 
 * gradual unfreezing [62] layers of PTMs starting from the top layer
 * Chronopoulou+ [19] proposed [the simpler] sequential unfreezing, which
   * first fine-tunes only the randomly-initialized task specific layers, and
-    then unfreezes the hidden layers of PTM, and finally unfreezes the
-    embedding layer
-* Motivated by ... ensemble models, Xu+ [191]: self-ensemble and self-distill
+    then unfreezes the hidden layers of PTM, and 
+    finally unfreezes the embedding layer
+* Motivated by ensemble models, Xu+ [191]: self-ensemble and self-distillation
 
 # 6 Related resources on PTMs: open-source systems, paper lists 15
 
@@ -401,7 +402,7 @@ multi-task learning and pre-training are complementary technologies
 
 |Table 6:         |Collections of Related Resources     |
 |-----------------|-------------------------------------|
-| ...             |                                     |
+| |                                     |
 |Bert Lang Street |https://bertlang.unibocconi.it/      |
 |BertViz [172]    |https://github.com/jessevig/bertviz  |
 
@@ -463,7 +464,7 @@ multi-task learning and pre-training are complementary technologies
   * “PTM + Adversarial Training + Rationale Tagging + Knowledge Distillation”
     (Ju+  [73])
 * multi-hop QA,
-  * “Select, Answer, and Explain” (SAE) system, Tu+  [169] proposed, interpretb
+  * “Select, Answer, and Explain” (SAE) system, Tu+  [169] proposed, interpretab
   * PTM acts as the encoder in the selection module
 
 ## 7.4 Sentiment Analysis
@@ -472,20 +473,20 @@ multi-task learning and pre-training are complementary technologies
   is a widely used dataset for sentiment analysis (SA) [32]
 * Bataa and Wu [8] utilized BERT with transfer learning, new SOTA in Japanese
 * aspect-based sentiment (ABSA) shows less significant improvement [153]
-  * Sun+ [153] [transforming ABSA] to a sentence pair classification task
+  * Sun+ [153] transforming ABSA to a sentence pair classification task
   * Xu+ [189] proposed post-training to adapt BERT to the ABSA domain and tasks
   * Rietzler+ [137] analyzing the behavior of cross-domain post-training with
     ABSA performance
   * Karimi+ [76] showed that the performance of post-trained BERT can be
     further improved via adversarial training
-  * Song+ [148] added an additional pooling module, which can be implemented as
-    either LSTM or attention mechanism, to leverage BERT intermediate layers
-    for ABSA
+  * Song+ [148] added an additional pooling module, which can be 
+    implemented as either LSTM or attention mechanism, 
+    to leverage BERT intermediate layers for ABSA
   * Li+ [97] jointly learned aspect detection and sentiment classification
     towards end-to-end ABSA
 * “Mask and Infill” (Wu+ [186]) based on BERT, for sentiment transfer
   * mask step: disentangle sentiment from content by masking sentiment tokens
-  * infill step uses BERT + target sentiment embed to infill the masked positns
+  * infill step uses BERT + target sentiment embed to infill the masked positons
 
 ## 7.5 Summarization
 
@@ -495,19 +496,19 @@ multi-task learning and pre-training are complementary technologies
     ACL, pages 1049–1058, 2019.
 * Zhang+ [198] tries to pre-trained a document-level model that predicts
   sentences instead of words, and then apply it on downstream tasks
-  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou. 
+  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou.
     HIBERT: Document level pre-training of hierarchical bidirectional
     ACL, pages 5059–5069, 2019.
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
-  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu. 
+  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu.
     PEGASUS: Pre-training with extracted gap-sentences for abstractive summariz
     arXiv:1912.08777, 2019.
 * BERTSUM Liu and Lapata [104] included a novel document-level encoder, and a
   general framework for both extractive and abstractive summarization
   * In the encoder frame, BERTSUM extends BERT by inserting multiple [CLS] toks
   * extractive: BERTSUM stacks several inter-sentence Transformer layers
-  * abstractive: two-staged fine-tuning approach using a new fine-tuning schedl
+  * abstractive: two-staged fine-tuning approach using a new fine-tuning schedul
 
 ## 7.6 Named Entity Recgonition
 
@@ -532,7 +533,7 @@ multi-task learning and pre-training are complementary technologies
   hidden size of 3072 and 32 attention heads) and
   Turing-NLG (17 billion parameters, 78 Transformer layers with a hidden size
   of 4256 and 28 attention heads)
-* needs ... techniques such as distributed training, mixed precision, gradient
+* needs techniques such as distributed training, mixed precision, gradient
   accumulation, etc. Therefore, a more practical
 * [other] direction is to design more efficient model architecture,
   self-supervised pre-training tasks, optimizers and training skills
@@ -553,7 +554,7 @@ multi-task learning and pre-training are complementary technologies
 * Breaking this limit e.g.  Transformer-XL [27]
 * neural architecture search (NAS) [205]
 
-## Knowledge Transfer Beyond Fine-tuning Currently, fine-tuning is the dominant
+## Knowledge Transfer Beyond Fine-tuning
 
 * using PTMs as external knowledge [125]
 
@@ -561,11 +562,11 @@ multi-task learning and pre-training are complementary technologies
 
 * explainable artificial intelligence (XAI) [4] has become a hotspot in general
 * attention interpretability is still controversial [66, 142]
-* adversarial examples ... with imperceptible perturbations from the original
-  * Jin+ [71] successfully attacked the finetuned BERT on text classification
-    and textual entailment with adversarial examples
+* adversarial examples with imperceptible perturbations
+  * Jin+ [71] successfully attacked the finetuned BERT 
+    on text classification and textual entailment with adversarial examples
   * universal adversarial triggers (Wallace+ [175])
-    [mislead model] when concatenated to any input
+    [mislead models] when concatenated to any input
   * Sun+ [155] showed BERT is not robust on misspellings
 
 # 9 Conclusion 18

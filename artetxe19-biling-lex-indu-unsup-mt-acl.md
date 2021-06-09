@@ -4,8 +4,8 @@ Bilingual Lexicon Induction through Unsupervised Machine Translation
 # Abstract
 
 * A recent research line ... by aligning independently trained word embeddings
-  + nearest neighbor or related retrieval methods.  
-* In this paper, we propose an alternative approach to this problem that 
+  + nearest neighbor or related retrieval methods.
+* In this paper, we propose an alternative approach to this problem that
   * builds on the recent work on unsupervised machine translation. This way,
   * we use [cross-lingual embeddings] to build a phrase-table, combine it with
     a language model, and use the resulting machine translation system to
@@ -13,7 +13,7 @@ Bilingual Lexicon Induction through Unsupervised Machine Translation
     lexicon using statistical word alignment techniques
   * not require any additional resource besides the monolingual corpus used to
     train the embeddings. When evaluated on the exact same cross-lingual
-    embeddings, our proposed method obtains an average improvement of 
-    * 6 accuracy points over nearest neighbor and 
+    embeddings, our proposed method obtains an average improvement of
+    * 6 accuracy points over nearest neighbor and
     * 4 points over Cross-domain Similarity Local Scaling (CSLS) (Conneau+ 18)
     * new state-of-the-art in the standard MUSE dataset.

@@ -142,7 +142,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * Small-world structures have since been found in many other networks
   * the World Wide Web (WWW; Adamic, 1999; Albert, Jeong, & Barabási, 1999),
   * networks of scientific collaborators (Newman, 2001), and
-  * metabolic networks in biology (Jeong et al 2000)
+  * metabolic networks in biology (Jeong+ 2000)
 * model for the formation of small-world structures (Watts and Strogatz 1998)
   * a small number of the connections in a low-dimensional regular lattice are
     replaced with connections between random pairs of nodes. The local
@@ -262,7 +262,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
 * In our analysis of the in-degree distribution for the directed associative
   network, the best fitting power-law exponent was somewhat lower than 2
   * anticipated by Skinner (1937), who measured a much smaller set of cues
-    than did Nelson et al. (1999)
+    than did Nelson+ (1999)
 
 # 5. Growing network model
 

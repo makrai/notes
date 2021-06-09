@@ -4,10 +4,10 @@ Sara Rosenthal and Kathleen McKeown
 
 # Abstract
 
-* features such as 
-  * sentiment and ...  a system that determines committed belief. 
+* features such as
+  * sentiment and ...  a system that determines committed belief.
 * We train and test our approach on social media
-  * experiment with two different types of data, drawn from 
+  * experiment with two different types of data, drawn from
     * LiveJournal weblogs and Wikipedia discussion forums. Our experiments show
 * n-grams and part-of-speech features also account for ... better accuracy
 
@@ -18,5 +18,5 @@ Sara Rosenthal and Kathleen McKeown
     Highlighting disputed claims on the web.” in WWW ACM, 2010
   * [2] B. T. Adler, L. de Alfaro, and I. Pye, “
     Detecting wikipedia vandalism using wikitrust,” 2010.
-* [annotating] discourse for social acts such as argumentation: 
+* [annotating] discourse for social acts such as argumentation:
   * claim followed by justification, agreements ..., and disagreements [3-6]

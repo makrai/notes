@@ -5,15 +5,14 @@ Jan A. Botha and Phil Blunsom
 # Abstract
 
 * evaluated in the context of log-bilinear language models, rendered suitably
-* efficient for implementation inside a machine translation decoder by
+* efficient for implementation inside a MT decoder by
   factoring the vocabulary
 * intrinsic and extrinsic evaluations, ... on a range of languages
   * word similarity tasks and ... perplexity
   * used for translation into morphologically rich languages
 * compositional vector-space modelling has recently been applied to
   morphology to good effect (Lazaridou+ 2013; Luong+ 2013), but
-  lacked the probabilistic basis necessary for use with a machine translation
-  decoder
+  lacked the probabilistic basis necessary for use with a MT decoder
 
 # 1 Intro
 
@@ -23,9 +22,9 @@ Jan A. Botha and Phil Blunsom
 # 2 Additive
 
 * languages types
-  * more fusional languages (e.g. Czech, Russian) to 
+  * more fusional languages (e.g. Czech, Russian) to
   * more agglutinative languages (e.g. Turkish)
-* Unlike the recursive neural-network method of Luong+ (2013), 
+* Unlike the recursive neural-network method of Luong+ (2013),
   we do not impose a single tree structure over a word, which would ignore the
   ambiguity inherent in words like `un[[lock]able]` vs. `[un[lock]]able`. In
 
@@ -33,7 +32,7 @@ Jan A. Botha and Phil Blunsom
 
 ## 4.1 Data & Methods
 
-### Word Factorisation μ. 
+### Word Factorisation μ.
 
 * We obtain labelled morphological segmentations from ... Morfessor Cat-MAP
   (Creutz & Lagus, 2007). The mapping μ of a word is taken as its surface form
@@ -64,4 +63,3 @@ Jan A. Botha and Phil Blunsom
   * syntax (Hermann & Blunsom, 2013) CCG
   * Our contribution is to create morphological awareness in a _probabilistic_
     language model
-

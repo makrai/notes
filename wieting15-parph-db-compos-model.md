@@ -2,14 +2,14 @@ From Paraphrase Database to Compositional Paraphrase Model and Back
 arXiv:submit/1336299 [cs.CL] 26 Aug 2015
 John Wieting, Mohit Bansal, Kevin Gimpel, Karen Livescu, Dan Roth
 
-We release the new datasets, complete with ... annotations, as well as
-our code and the trained models
+* We release the new datasets, complete with annotations, as well as our
+  code and the trained models
 
 # Nem tudom, honnan szedtem ebben a formában, de jó
 
 * We find
   * skip-gram word vectors (Mikolov+ 2013a) can be fine-tuned for the
-    paraphrase task by training on word pairs from PPDB ... PARA-word vectors
+    paraphrase task by training on word pairs from PPDB PARA-word vectors
   * additive composition of PARAGRAM vectors to be a simple but effective way
     to embed phrases for short-phrase paraphrase tasks
   * improved performance by training a[n] RNN (Socher+ 2010) directly
@@ -45,19 +45,19 @@ our code and the trained models
 
 # 2 Related work
 
-* embeddings ... tailored to specific downstream tasks (Bansal+ 2014)
-* Phrase representation[ vectors]
+* embeddings tailored to specific downstream tasks (Bansal+ 2014)
+* Phrase representation [vectors]
   * Mitchell and Lapata (2008; 2010) and Blacoe and Lapata (2012)
   * Zanzotto+ (2010) and Baroni and Zamparelli (2010)
-    also ... based on operations of vectors and matrices
+    also based on operations of vectors and matrices
   * adding the word vectors (Mikolov+ 2013b)
-  * Hashimoto+ (2014) ... an alternative word embedding and compositional model
+  * Hashimoto+ (2014) an alternative word embedding and compositional model
     based on predicate-argument structures
-  *  Socher+ (2011) ... train a recursive neural network (RNN)
+  * Socher+ (2011) train a recursive neural network (RNN)
     * trained their RNN as an unsupervised autoencoder
-    * struggles in ... compositionality (Blacoe and Lapata, 12; Hashimoto+ 14)
-    * in a supervised setting (Socher+ 2014) ... for image descriptions
-    * The objective function we use ... was motivated by their multimodal
+    * struggles in compositionality (Blacoe and Lapata, 12; Hashimoto+ 14)
+    * in a supervised setting (Socher+ 2014) for image descriptions
+    * The objective function we use was motivated by their multimodal
       objective function for learning joint image-sentence representations
 * PPDB has been used [to learn word embeddings for] semantic similarity,
   language modeling, predicting human judgments, and classification
@@ -65,7 +65,7 @@ our code and the trained models
 * Concurrently with our work Yu and Dredze (2015)
   construct paraphrase models for short phrases [using PPDB]
 
-# 3 3 New Paraphrase Datasets
+# 3 New Paraphrase Datasets
 
 # 4 Paraphrase Models
 
@@ -75,22 +75,22 @@ our code and the trained models
 
 # 7 Qualitative Analysis
 
-* RNN performs better ... for less similar pairs
+* RNN performs better for less similar pairs
   * Vector addition only does better on the most similar pairs
   * presumably because the most positive pairs have high word overlap
 * two factors that distinguished the performance between the two models:
   length ratio and the amount of lexical overlap
   * [the denominator of] Overlap ratio is [ the length of the shorter phrase]
-  * as ... the phrase pairs are closer in length,
+  * as the phrase pairs are closer in length,
     addition surpasses the RNN for positive examples
     For negative examples, the trend is reversed. The
     same trend appears for overlap ratio
   * When considering both positive and negative examples (“Both”), we see that
     * the RNN excels on the most difficult examples
     (large differences in phrase length and less lexical overlap)
-    * For easier examples, the two fare similarly overall ..., but the 
+    * For easier examples, the two fare similarly overall ..., but the
       RNN does much better on negative examples
-    * [i.e.] addition ... perform[s] well when two paraphrastic phrases have
+    * [i.e.] addition perform[s] well when two paraphrastic phrases have
       high lexical overlap and similar length
 
 # 8 Conclusion

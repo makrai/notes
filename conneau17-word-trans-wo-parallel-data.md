@@ -2,12 +2,12 @@ Word translation without parallel data
 Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
 
 * we show that we can build a bilingual dictionary between two languages
-  * without using any parallel corpora, by 
-  * aligning monolingual word embedding spaces in an unsupervised way. 
+  * without using any parallel corpora, by
+  * aligning monolingual word embedding spaces in an unsupervised way.
   * Without using any character information, our
 * outperforms existing supervised methods on cross-lingual tasks for some
   language pairs
-  * works very well [for] distant language pairs, like 
+  * works very well [for] distant language pairs, like
     English-Russian or English-Chinese
   * experiments on the English-Esperanto language pair
     * limited amount of parallel data
@@ -44,12 +44,12 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
        seen as a generator) is jointly trained to fool the discriminator
     2. extract a synthetic dictionary from the resulting shared embedding space
        and fine-tune the mapping with the closed-form Procrustes solution from
-       Schönemann (1966).  
+       Schönemann (1966).
       * unsupervised selection metric
-        * cross-lingual data can not be used ... Since the method is unsupervised, 
+        * cross-lingual data can not be used ... Since the method is unsupervised,
         * introduce a ... metric that is highly correlated with the mapping
-          quality and 
-        * that we use both as a stopping criterion and 
+          quality and
+        * that we use both as a stopping criterion and
         * to select the best hyper-parameters
 * main contributions:
   * an unsupervised approach that reaches or outperforms state-of-the-art
@@ -96,26 +96,26 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * Ganin, Ustinova, Ajakan, Germain, Larochelle, Laviolette, Marchand, Lempitsky
     Domain-adversarial training of neural networks.
     Journal of Machine Learning Research, 17(59):1–35, 2016.
-* we follow the standard training procedure of 
+* we follow the standard training procedure of
   deep adversarial networks (Goodfellow+ 2014)
   * The details of training are given in the next section
 
 ## 2.2 Refinement procedure
 
-* The matrix W obtained with adversarial training 
+* The matrix W obtained with adversarial training
   * good performance [but] still not on par with the supervised approach
-  * tries to align all words irrespective of their frequencies. 
-    * However, rare words have embeddings that are 
-      * less updated and are 
+  * tries to align all words irrespective of their frequencies.
+    * However, rare words have embeddings that are
+      * less updated and are
       * more likely to appear in different contexts in each corpus
 * accuracy on the most frequent word pairs is high after adversarial training
 * we build a synthetic parallel vocabulary using the W just learned with
-  adversarial training. Specifically, we 
+  adversarial training. Specifically, we
   * consider the most frequent words and
   * retain only mutual nearest neighbors to ensure a high-quality dictionary.
 * Subsequently, we apply the Procrustes solution ... on this ...  dictionary
   * it is possible to generate a more accurate dictionary and apply this method
-    iteratively, similarly to Artetxe+ (2017). 
+    iteratively, similarly to Artetxe+ (2017).
   * However [one iteration] is already strong
     * improvements [in more iterations] are usually below 1%.
 
@@ -131,13 +131,13 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   estimation is noisy in an unsupervised setting where we do not have a direct
   cross-validation criterion.
 * we consider a bi-partite neighborhood graph
-* mean similarity `r` of [an] embedding x [or y] s to its target neighborhood as 
-  * computed for all source and target word vectors [efficiently] (Johnson+ 2017).  
+* mean similarity `r` of [an] embedding x [or y] s to its target neighborhood as
+  * computed for all source and target word vectors [efficiently] (Johnson+ 2017).
   * similarity measure CSLS(., .) between mapped source words and target words,
 
   `CSLS(W x_s , y_t) = 2 cos(W x_s , y_t) − r_T(W x_s) − r_S(y_t)`
-* Intuitively, this 
-  * increases the similarity associated with isolated word vectors. 
+* Intuitively, this
+  * increases the similarity associated with isolated word vectors.
   * decreases the ones of vectors lying in dense areas.  Our experiments show
   * significantly increases the accuracy for word translation retrieval, while
   * not requiring any parameter tuning.
@@ -146,8 +146,8 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 ## 3.2 Discriminator inputs
 
-* we only feed the discriminator with the 50,000 most frequent words. 
-  * At each training step ...  sampled uniformly.  
+* we only feed the discriminator with the 50,000 most frequent words.
+  * At each training step ...  sampled uniformly.
   * Sampling [according to the] frequency did not have any noticeable impact
 
 ## 3.3 Orthogonality
@@ -176,13 +176,13 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 # 4 Experiments 6
 
 * organization
-  * We first present the cross-lingual evaluation tasks 
-  * our baseline model. Last, 
+  * We first present the cross-lingual evaluation tasks
+  * our baseline model. Last,
   * [comparison] to our baseline and to previous methods
   * appendix, we offer a complementary analysis on the alignment of several
     sets of English embeddings trained with different methods and corpora.
 
-### 4.1.3 Sentence translation retrieval 
+### 4.1.3 Sentence translation retrieval
 
 * bag-of-words aggregation methods to perform sentence retrieval on the
   Europarl corpus

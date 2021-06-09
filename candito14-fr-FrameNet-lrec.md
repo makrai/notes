@@ -18,33 +18,33 @@ lrec 2014
 
 # 1 Introduction
 
-* resources built within ASFALDA will consist in a French 
-  * lexicon in which lexical units are associated to FrameNet frames, and a 
-  * semantic annotation [of] French treebanks (the 
-    * French Treebank (Abeillé and Barrier, 2004) and the 
+* resources built within ASFALDA will consist in a French
+  * lexicon in which lexical units are associated to FrameNet frames, and a
+  * semantic annotation [of] French treebanks (the
+    * French Treebank (Abeillé and Barrier, 2004) and the
     * Sequoia treebank (Candito and Seddah, 2012))
 * project also aims at investigating new models for frame-based semantic anal
-* original FrameNet project 2 provides a 
+* original FrameNet project 2 provides a
   * structured set of prototypical situations, called frames, along with a
   * semantic characterization of the participants (called frame elements, FEs).
   * development was carried along annotation of [examples] from the BNC. While
-* [compared to] other English semantic resources 
-  * (such as PropBank (Palmer et al., 2005) or VerbNet (Schuler, 2005)) 
+* [compared to] other English semantic resources
+  * (such as PropBank (Palmer et al., 2005) or VerbNet (Schuler, 2005))
     * also provide semantic classes and/or semantic roles for predicate arguments,
   * FrameNet [has] more semantic orientation, which is crucial for portability
     to other languages
-    * generalization both over 
-      * syntactic variation (e.g. diathesis alternation) but also 
-      * lexical variation (like VerbNet but unlike PropBank), 
+    * generalization both over
+      * syntactic variation (e.g. diathesis alternation) but also
+      * lexical variation (like VerbNet but unlike PropBank),
         grouping together lexical units of various categories, on the basis of
-        criteria that are not primarily syntactic (unlike VerbNet).  
-* FrameNet structure [ported] to other languages (Boas, 2009) such as 
+        criteria that are not primarily syntactic (unlike VerbNet).
+* FrameNet structure [ported] to other languages (Boas, 2009) such as
   * Spanish (Subirats-Rüggeberg and Petruck, 2003)
   * Japanese (Ohara et al., 2004)
-  * German (Aljoscha et al., 2009) or 
-  * Swedish (Friberg Heppin and Toporowska Gronostaj, 2012) (among others).  
-* corpus annotations have also proved largely portable: 
-  * Padó (2007) found a high degree of parallelism of the annotations 
+  * German (Aljoscha et al., 2009) or
+  * Swedish (Friberg Heppin and Toporowska Gronostaj, 2012) (among others).
+* corpus annotations have also proved largely portable:
+  * Padó (2007) found a high degree of parallelism of the annotations
     for the English/German and the English/French pairs
 * building on previous work that automatically projects [FrameNet] to French
   (Padó, 2007; Mouton et al., 2010)
@@ -52,13 +52,13 @@ lrec 2014
 # 2 General Strategy
 
 * Two main strategies have been proposed in the past for FrameNet developments:
-  * frame-by-frame strategy, that 
-    enforces coherence of annotations within a frame, and a 
-    * prevalent within FrameNetrelated projects, 
+  * frame-by-frame strategy, that
+    enforces coherence of annotations within a frame, and a
+    * prevalent within FrameNetrelated projects,
     * account for the full lexical diversity available to a frame
-  * lemma-by-lemma strategy that provides annotations 
+  * lemma-by-lemma strategy that provides annotations
     reflecting the full ambiguity of a given lemma within the target corpus, a
-    * key aspect for the usability of the resource as training data 
+    * key aspect for the usability of the resource as training data
     * characteristic of the German FrameNet, and also partly adopted by the
       Japanese FrameNet.
 * senses ...  with no existing frame in the English FrameNet database,

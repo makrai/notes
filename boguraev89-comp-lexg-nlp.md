@@ -20,7 +20,7 @@ B. Boguraev, E. Briscoe
 Pages: 1-40
 
 * dictionaries (or lexicons, as linguists call them)
-* no consensus on the information which the lexicon should contain 
+* no consensus on the information which the lexicon should contain
   or the representation
 * number of words
   * Oxford English Dictionary (OED) 250 K
@@ -71,7 +71,7 @@ Pages: 1-40
 ### 1.2.1 The nature of a dictionary entry p13
 
 * The entries in most dictionaries distinct 'homographs' of a word form when it
-  servers as noun, verb or some other POS 
+  servers as noun, verb or some other POS
 * form
   * headword, spelling, hyphenation, phonetics variants,
   * use (formal/slang), allomorphs, stress
@@ -112,7 +112,7 @@ Pages: 1-40
 * definitions
   * language tends to be of a restricted form
     see chap 8 for an extensive analysis
-  * in LDOCE, the vocab is restricted to approximately 2200 words 
+  * in LDOCE, the vocab is restricted to approximately 2200 words
     * used mainly in their most common sense
     * cut down circularities
     * liberal use of derivational morphology chaps 7 and 8
@@ -213,7 +213,7 @@ Pages: 1-40
     meaning “the whole of a person”. However, _parliament_ is defined as “a
     law-making body”, utilising the meaning of body(5) “a number of people who
     do something together”
-  * derivatives: `container` for the definition of of box2(1), 
+  * derivatives: `container` for the definition of of box2(1),
     even though only the verb contain is considered to be primitive
   * circularity _container_ <=> _box_
   * phrasal verbs
@@ -224,7 +224,7 @@ Pages: 1-40
 2. construction of a dictionary DB system for LDOCE
 3. analysing and rationalising the grammar code system (by Amsterdam group)
   * comparison with OALD
-4. analysis and evaluation of the grammatical code system 
+4. analysis and evaluation of the grammatical code system
   (by Cambridge and Lancaster groups)
   * subcategorisation and semantic information for verbs
   * dative alternation
@@ -330,7 +330,7 @@ Pages: 193-228
   * set out in the next section of the chapter as
   * the key issue in computational semantics at the moment
   * discreteness of word senses vs continuity
-  * how distinction can be made at the appropriate time, 
+  * how distinction can be made at the appropriate time,
     as information enters the systems
     * Mellish (1985), Hirst (1987), and Small and Rieger (1982),
 * Small, Cottrell and Tanenhaus (forthcoming)
@@ -339,13 +339,13 @@ Pages: 193-228
 * position in this chapter
   * inseparability of knowledge and language goes [far]
   * knowledge for certain purposes should be stored in text-like forms
-* semantic structure of dictionaries has been analysed, 
+* semantic structure of dictionaries has been analysed,
   compared to the underlying organisation of knowledge representations, and
   similarities have been observed, p106
   * genus and differentia, genus -> hierarchies
-* computational semantics converges with 
+* computational semantics converges with
   knowledge acquisition and computational lexicography
-  1. whether it is right to assume word ‘sense’, 
+  1. whether it is right to assume word ‘sense’,
     direct from traditional lexicography and MRDs (yes) p106
     * MT
     * arbitrary number of senses
@@ -365,7 +365,7 @@ Pages: 193-228
     * syntax and case
 * organization
   2. three approaches that extract information from LDOCE
-  3. how such information can be used in 
+  3. how such information can be used in
     Preference Semantics, and Collative Semantics
 
 ## 9.2 The extraction of semantic information from LDOCE
@@ -374,11 +374,11 @@ Pages: 193-228
   * description of LDOCE
   * the three approaches
 * LDOCE
-  * about 30 non-LDV words are used in definitions 
+  * about 30 non-LDV words are used in definitions
     e.g. aircraft is used 267 times
   * senses of LDV words constitute 24k of the 74k senses in LDOCE
   * box codes CONCRETE, ABSTRACT, and ANIMATE, hierarchy
-  * pragmatic (`subject`) codes 
+  * pragmatic (`subject`) codes
 
 ### 9.2.1 Az LDOCE -- cooccurrence stat (Tony Plate)
 

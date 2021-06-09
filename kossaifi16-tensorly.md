@@ -29,7 +29,7 @@ NIPS Tensor-Learn Workshop. 2016
   * deep learning libraries e.g., Tensorflow and Torch can only suboptimally
     handle tensors
 * Python is emerging as a language of choice for machine learning, as witnessed
-  * exisiting [libraries] (e.g., scikit-tensor) offer only limited algorithms
+  * exisiting libraries (e.g., scikit-tensor) offer only limited algorithms
     (e.g., decomposition only) and/or have restrictive licenses. For
 * TensorLy 1 introduces several contributions over the existing libraries:
   *  state of the art tensor learning including core tensor operations,

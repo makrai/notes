@@ -11,7 +11,7 @@ https://blog.einstein.ai/introducing-a-conditional-transformer-language-model-fo
 
 
 * two models are available for download - with a sequence length of 256 and 512
-  * word-level vocabularies and through a sliding window approach can 
+  * word-level vocabularies and through a sliding window approach can
   * generate well beyond their trained sequence lengths.
 * Source attribution - given a prompt, prints the perplexity of the prompt
   conditional on each domain control code (see Section 5 of the paper)

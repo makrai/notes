@@ -11,7 +11,7 @@ IEEE Transactions on Neural Networks 2005 doi.org/10.1109/TNN.2005.845141
 * A family of fuzzy-shells algorithms has also appeared to detect different
   * especially for contours in a two-dimensional data space. They use the
     “shells” (curved surfaces [70]) as the cluster prototypes instead of points
-    or surfaces in traditional fuzzy clustering algorithms. In the case of 
+    or surfaces in traditional fuzzy clustering algorithms. In the case of
   * FCS [36], [70], the proposed cluster prototype is represented as a -di-
     mensional hyperspherical shell ( for circles), is the center, and is the
 * Fuzzy set theories can also be used to create hierarchical cluster structure.

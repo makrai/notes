@@ -5,20 +5,20 @@ Oscar Cabrera, Xavier Franch, and Jordi Marco
 
 * gaps related to the reusability of the models themselves and the lack of
   consolidated and standardized ontological resources. To tackle this problem,
-* we adopt a three-layered context ontology perspective and 
-* we focus on this paper in the middle layer, which is 
+* we adopt a three-layered context ontology perspective and
+* we focus on this paper in the middle layer, which is
   defined following a prescriptive process and structured in a modular way
 
 # 1 Introduction
 
-* Context is a term widely used in many areas of conceptual modelling. 
+* Context is a term widely used in many areas of conceptual modelling.
   * Dey defines it as “any information that can be used to characterize the
     situation of an entity. An entity is a person, place, or object that is
     considered relevant to the interaction between a user and an application”
-* context information affects positively or negatively an entity.  
+* context information affects positively or negatively an entity.
 * One of its major applications is concentrated on context-aware
   infrastructures, i.e.  areas such as Smart Cities, Pervasive Computing and
-  Internet of Things [2].  
+  Internet of Things [2].
 * In a previous work, we analyzed the state of the art on context modelling [3]
   * One of the most important issues is the difficulty of reusing the context
     * lack of homogeneity among their elements, as well as the shortage of their
@@ -32,25 +32,25 @@ Oscar Cabrera, Xavier Franch, and Jordi Marco
     perspective.
   * The lower-level includes a set of detailed classes highly dependent on the
     domain.
-  The rest of the paper is organized as follows. 
+  The rest of the paper is organized as follows.
 
 # 2 Background
 
 ## 2.1 Classification of Ontologies
 
 * Different designs and structures of ontologies have been proposed so far
-* Two usual criteria are: generality and expressiveness. 
+* Two usual criteria are: generality and expressiveness.
   * Generality: specifying general classes towards top levels and more specific
-    classes towards lower levels [7].  This criterion 
-    * supports the adoption of a layered view of ontologies [8, 9]. 
+    classes towards lower levels [7].  This criterion
+    * supports the adoption of a layered view of ontologies [8, 9].
   * Expressiveness indicates the level of detail of an ontology. Usually they
     * lightweight and heavyweight [10]. In this paper we adopt a 3-level view of
-      * express axioms and constraints more than 
+      * express axioms and constraints more than
       * only concepts, taxonomies and relationships
 
 ## 2.3 Reuse in Methodologies for Developing Ontologies
 
-* two different reuse processes: merge and integration. In a 
+* two different reuse processes: merge and integration. In a
   * merge process, it is usually difficult to identify regions in the resulting
     ontology that were taken from the merged ontologies more or less unchanged.
   * integration process source ontologies are aggregated, combined and assembled
@@ -64,12 +64,12 @@ Oscar Cabrera, Xavier Franch, and Jordi Marco
   1. compiled different gaps reported by researchers in context modelling (CM)
   1. identified gaps
   1. established a basic taxonomy of high level classes intended to serve as
-    * abstract level of a context model consolidating all these proposals. 
-    * The consolidated resources encompass all the perspectives 
+    * abstract level of a context model consolidating all these proposals.
+    * The consolidated resources encompass all the perspectives
     * especially, resources regarding context information vocabulary, properties
-      and terminology definitions.  
-* next step was a systematic mapping study 
-  according to the guidelines proposed by Kitchenham and Charters [15].  
+      and terminology definitions.
+* next step was a systematic mapping study
+  according to the guidelines proposed by Kitchenham and Charters [15].
 
 # 4 the proposed model focused on the middle-level ontology.
 
@@ -98,19 +98,19 @@ Oscar Cabrera, Xavier Franch, and Jordi Marco
 ## Identify and get candidate ontologies. According to [14], this task first
 
 * identifies candidate ontologies that could be used as modules of our
-*  we selected those ones more referenced by existing proposals of CM: 
+*  we selected those ones more referenced by existing proposals of CM:
   CONON [9], SOUPA [6], SUMO [8], OpenCyc [22], FOAF, CCPP, OWL-Time and OWL-S .
 
 ## Study and analysis of candidate ontologies. In this task the candidate
 
-* identify possible problems in the integration process. We applied the 
-* SEQUAL evaluation framework formulated by Hella and Krogstie [23]. There are 
+* identify possible problems in the integration process. We applied the
+* SEQUAL evaluation framework formulated by Hella and Krogstie [23]. There are
 * 7 quality categories used to evaluate the reusability of the ontologies. For
   * Physical (Phy). The ontology should be physically available and it should be
   * Empirical (Emp). If a visual representation of the ontology is provided it
   * Syntactic (Syn). The ontology should be represented according to the syntax
     of a preferred machine readable language. OWL full (); partial OWL (-); RDF
-  * Semantic (Sem). The ontology should cover the area of interest. 
+  * Semantic (Sem). The ontology should cover the area of interest.
   * Pragmatic (Prag). It should be possible to understand what the ontology
     contains, and being able to use it for our purpose. Satisfactory (); not
   * Social (Soc). The ontology should have a relatively large group of users.

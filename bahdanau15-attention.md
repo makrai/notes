@@ -22,7 +22,7 @@ Dzmitry Bahdanau and KyungHyun Cho and Yoshua Bengio
 * neural networks to directly learn this conditional distribution
   * Kalchbrenner and Blunsom, 2013; Cho+ 2014a;
   * Sutskever+ 2014;
-    * RNNs with long shortterm memory (LSTM) units achieves 
+    * RNNs with long shortterm memory (LSTM) units achieves
       close to the state-of-the-art performance
       * of the conventional phrase-based machine translation system
       * without using any neural network-based component

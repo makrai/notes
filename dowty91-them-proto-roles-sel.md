@@ -26,15 +26,15 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
 * hierarchy of thematic roles
   * as Nishigauchi 1984 does in stating control principles
 * 1:1? Jackendoff
-  * some verbs assign more than one role to the same argument, 
-  * others assign the same role to two different arguments, and 
-  * some verbs 'have' thematic roles that they do not assign to any NP; 
+  * some verbs assign more than one role to the same argument,
+  * others assign the same role to two different arguments, and
+  * some verbs 'have' thematic roles that they do not assign to any NP;
     for instance, to butter has both a Theme and a Goal role, but the Theme is
     'completely expressed by the verb'
 * goals [of this paper] are more modest:
   1. to
-    * lay some methodological groundwork for studying thematic roles 
-      with the tools of _model-theoretic semantics_, and to 
+    * lay some methodological groundwork for studying thematic roles
+      with the tools of _model-theoretic semantics_, and to
      * propose some new strategies for attacking the area one step at a time;
   * (3) make syntacticians ...  recognize the dangers of continuing to take
     this notion for granted and of assuming that thematic roles are as well
@@ -56,7 +56,7 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
       * psychological predicates (sec 9.2), and the
       * spray/load alternations (sec 9.3)
   10. Comparisons ... with related proposals in the literature
-  11. psycholinguistic implications suggested by this account for 
+  11. psycholinguistic implications suggested by this account for
     the place of thematic roles in the _acquisition_ of grammar and [lex]
   12. 'unaccusative' phenomenon
   13. summary
@@ -84,8 +84,8 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
   * the generalization in question is
   * 3.3.1. purely syntactic
   * 3.3.2. semantic
-  * 3.3.3. pragmatic 
-  * 3.3.4. a consequence of 
+  * 3.3.3. pragmatic
+  * 3.3.4. a consequence of
     general constraints between syntax and discourse structure
 
 # 4 A proposed strategy for research on the semantics of thematic roles p14

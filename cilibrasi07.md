@@ -25,42 +25,39 @@ The Google Similarity Distance
   universal similarity metric among objects given as finite binary strings
   * e.g. genomes, music pieces in MIDI format, computer programs in Ruby or C,
     pictures in simple bitmap formats, or time sequences such as heart rhythm
-  * feature-free in the sense that it
-    * [not] looking for particular features; rather it
-      analyzes all features simultaneously and
-      determines the similarity between every pair of objects
-      according to the most dominant shared feature
+  * feature-free in the sense that it [does not] looking for particular feats;
+    * analyzes all features simultaneously and determines the similarity between
+      every pair of objects according to the most dominant shared feature
 * the Google semantics of a word or phrase consists of
   the set of web pages returned by the query concerned
 
 ## A. An example 2
 
 * Normalized Google Distance NGD(horse, rider) ≈ 0.443
-  * usually  in between 0 (identical) and 1 (unrelated)
-    * (but not always, see below)
+  * usually between 0 (identical) and 1 (unrelated), but not always, see below
 * We did the same calculation when Google indexed only one-half of the number
   of pages ... The NGD(horse, rider) we computed in that situation was ≈ 0.460
 * probabilities of search terms and the computed NGD’s should stabilize
 
-## B. Related Work:
+## B. Related Work
 
 * cognitive psychology (Landauer and Dumais 2003)
 * linguistics, and computer science, about using word (phrases) frequencies in
   text corpora to develop measures for word similarity or word association,
   * partially surveyed in (Terra and Clarke 2003; Tan+ 2002),
   * going back to at least (Lesk, 1969)
-* Cimiano (2004); Bagrow (2005) ...  use the web and Google counts to identify
+* Cimiano (2004); Bagrow (2005) ... use the web and Google counts to identify
   lexicosyntactic patterns or other data
-  * theory, aim, feature analysis, and execution 
+  * theory, aim, feature analysis, and execution
     cannot meaningfully be compared [to ours]
 
 ## C. Outline
 
-* terms with different meaning have the same semantics, and that
+* terms with different meaning have the same semantics, and
 * opposites like ”true” and ”false” often have a similar semantics
 * theoretical underpinning is based on the theory of Kolmogorov complexity
   [27], and is in terms of coding and compression
-* NGD formula [is] not equivalent to any earlier ...  formula in this area
+* NGD formula [is] not equivalent to any earlier ... formula in this area
 * a decade of cumulative research in this area, of which the main thread is
   [27], [2], [28], [26], [7], [8]
   with [25], [3] using the related approach of [29]
@@ -75,20 +72,20 @@ The Google Similarity Distance
 * the returned google counts are inaccurate (Bagrow 2005)
 * especially if one uses the boolean OR operator between search terms
 * AND operator we use is less problematic, and we do not use the OR operator
-* Google apparently estimates the number of hits based on samples, and 
+* Google apparently estimates the number of hits based on samples, and
   the number of indexed pages changes rapidly
-* To compensate for the latter effect, we have inserted a 
+* To compensate for the latter effect, we have inserted a
   normalizing mechanism in the CompLearn software
 * web searches for rare two-word phrases correlated well (Keller, 2003) with
   the frequency found in traditional corpora, as well as with human judgments
 
 # II. Technical preliminaries
 
-* Kolmogorov complexity K(x) 
-  * the length, in bits, of the ultimate compressed version 
+* Kolmogorov complexity K(x)
+  * the length, in bits, of the ultimate compressed version
     from which x can be recovered by a general decompression program
 
-## A. Normalized Information Distance:
+## A. Normalized Information Distance
 
 * In Bennett+ (1998), we considered the following [information distance E(x,y)]
 * given two strings x and y, what is the length of the shortest binary
@@ -127,7 +124,7 @@ The Google Similarity Distance
 * In the sequel, we show ... that the Google distribution is
   universal for all the individual web users distributions
 
-## C. The Google Code:
+## C. The Google Code
 
 * we cannot use the probability of the events directly to determine a prefix
   code, or, rather the underlying information content implied by the
@@ -135,12 +132,12 @@ The Google Similarity Distance
 * events overlap and hence the summed probability exceeds 1
 * `g`: a találati oldalak relatív gyakorisága
 * absolute probabilities ... allow us to define the associated prefix code-word
-  lengths (information contents) for both the singletons and the doubletons:
+  lengths (information contents) for both the singletons and the doubletons
   * Google code of length `G` a `g`-ből számolt kódhossz
-  * the shortest expected prefix-code word length 
+  * the shortest expected prefix-code word length
     of the associated Google event x
 
-## D. The Google Similarity Distance:
+## D. The Google Similarity Distance
 
 * properties of the NGD (as long as we choose parameter N ≥ M )
   * range of the NGD is in between 0 and ∞

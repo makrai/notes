@@ -1,4 +1,4 @@
-Sergey Bartunov and Dmitry Kondrashkin and Anton Osokin and Dmitry Vetrov
+Sergey Bartunov, Dmitry Kondrashkin, Anton Osokin, Dmitry Vetrov
 Breaking Sticks and Ambiguities with Adaptive Skip-gram
 2015
 
@@ -10,7 +10,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 
 # Abstract
 
-* Skip-gram ... does not take into account word ambiguity
+* Skip-gram does not take into account word ambiguity
 * a number of Skip-gram modifications were proposed
   * either require a known number of word meanings or
   * using greedy heuristic approaches
@@ -26,12 +26,12 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * automatic identification of the meanings of a word
 * NLP applications that benefit from
   * WSD
-    * Navigli & Crisafulli, 2010; ... web search result clustering
-    * Vickrey et al., 200:5 WSD for machine translation
+    * Navigli & Crisafulli, 2010; web search result clustering
+    * Vickrey+ 200:5 WSD for machine translation
   * VSM
     * dependency parsing (Chen & Manning, 2014),
-    * named-entity recognition (Turian et al., 2010) and
-    * sentiment analysis (Maas et al., 2011)
+    * named-entity recognition (Turian+ 2010) and
+    * sentiment analysis (Maas+ 2011)
 
 # 2. Skip-gram model
 
@@ -41,17 +41,17 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 * we refer to the input representations as prototypes
   * following (Reisinger & Mooney, 2010b)
 
-    *  p(v|w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_w out_n ) (3)
+    *  p(v|w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_w out_n , 3)
 
 # 3. Adaptive Skip-gram
 
 * variable z encodes the index of active meaning
 
-  * p(v|z = k, w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_{wk} out_n ) (4)
+  * p(v|z = k, w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_{wk} out_n , 4)
 
-* Note that ... only [input vectors] depend on the particular word meaning
+* Note that only input vectors depend on the particular word meaning
 
-* We ... employing Bayesian nonparametrics into Skip-gram
+* We employing Bayesian nonparametrics into Skip-gram
   * we use the constructive definition of Dirichlet process (Ferguson, 1973)
   * stick-breaking representation (Sethuraman, 1994) to define a prior
   * for automatic determination of the required number of prototypes
@@ -60,14 +60,14 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
       structure components (e.g.  clusters, latent factors, etc.) is not known
       a priori
       * (Shahbaba & Neal, 2009; Rasmussen, 2000)
-  * stick-breaking ... to define a prior over meanings of a word
+  * stick-breaking to define a prior over meanings of a word
     * The hyperparameter alpha, resolution paramater
       * controls the number of prototypes for a word allocated a priori
     * n_w: number of occurrences of w in the text
     * Asymptotically, the expected number of prototypes of word w is
       * proportional to alpha log(n_w)
       * jó ez nekünk, hogy a gyakoribb szavaknak több van?
-    * Similarly to Mikolov et al. (2013a)
+    * Similarly to Mikolov+ (2013a)
       * we do not consider any regularization (and so the informative prior)
         for representations and seek for point estimate of θ
 
@@ -84,13 +84,13 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
     * Variational inference for Dirichlet process mixtures
   * max \mathcal L is equivalent to
     * the minimization of Kullback-Leibler divergence
-      * between q(Z, β) and the true posterior (Jordan et al., 1999)
+      * between q(Z, β) and the true posterior (Jordan+ 1999)
 * Stochastic variational inference
   * why SVI?
-    * Although variational updates ... are tractable, they require the full
+    * Although variational updates are tractable, they require the full
       pass over training data. In order to keep the efficiency of Skip-gram
       training procedure, we employ stochastic variational inference approach
-      (Hoffman et al., 2013) and derive online optimization algorithm for the
+      (Hoffman+ 2013) and derive online optimization algorithm for the
       maximization of \mathcal L
   * conservative initialization strategy for q(β)
     * starting with only one allocated meaning for each word,
@@ -100,19 +100,19 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 # 4. Related work
 
 * modifications of Skip-gram proposed to learn multi-prototype representations
-  * Qiu et al.  (2014) developed
+  * Qiu+ (2014) developed
     * Proximity-Ambiguity Sensitive Skipgram which maintains individual
       representations for different parts of speech (POS)
-  * Tian et al. (2014) can be considered as a parametric form of our model
+  * Tian+ (2014) can be considered as a parametric form of our model
     * with number of meanings for each word fixed
-    * Our approach ... is able also to gradually increase the number of
+    * Our approach is able also to gradually increase the number of
       meanings when more data becomes available
-  * Chen et al. (2014)
+  * Chen+ (2014)
     * incorporate external knowledge about word meanings into Skip-gram
       * in the form of sense inventory
     * First, single-prototype representations are pre-trained with sgram
     * Afterwards, meanings provided by WordNet
-  * Neelakantan et al. (2014) proposing
+  * Neelakantan+ (2014) proposing
     * Multisense Skip-gram (MSSG) and
     * its non-parameteric  version (NP MSSG)
       * NP not in the sense of Bayesian nonparametrics
@@ -122,7 +122,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
     * in our model the number of prototypes may not only increase
       * decrease if this leads to a better model
         * in terms of variational lower bound
-    * we use models of Neelakantan et al. (2014) as baselines
+    * we use models of Neelakantan+ (2014) as baselines
 
 # 5. Experiments
 
@@ -162,7 +162,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 ### 5.4.1. SemEval-2010 dataset
 
 * SemEval-2010 Word Sense Induction & Disambiguation competition
-  * (Manandhar et al., 2010)
+  * (Manandhar+ 2010)
   * consists of 100 target words and 8915 contexts in total
   * only single-term target words
 * SemEval-2013
@@ -170,18 +170,17 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * we do not consider for evaluation as it contains many MWEs
   * consists only of 6400 contexts in total
 * metrics for evaluation:
-  * Manandhar et al. (2010) suggested
+  * Manandhar+ (2010) suggested
     * V-Measure (VM) and
       * favours large number of clusters and
-      * attains large values on [all-singleton] clustering
+      * attains large values on all-singleton clustering
     * F-Score (FS)
-      * biased towards ... small number of clusters
+      * biased towards small number of clusters
       * e.g. assigning each instance to the same single cluster
-  * we consider
-    * adjusted Rand index (Hubert & Arabie, 1985) (ARI) which
-      * does not suffer from such drawbacks
-      * undesirable clusterings ... above will get ARI of nearly zero
-      * We still report VM and FS values
+  * we consider adjusted Rand index (Hubert & Arabie, 1985, ARI)
+    * does not suffer from such drawbacks
+    * undesirable clusterings above will get ARI of nearly zero
+    * We still report VM and FS values
 
 ### 5.4.2. SemEval-2007 dataset
 
@@ -191,9 +190,9 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 * domain
   * Since WSJ corpus differs from general-domain Wikipedia corpus,
   * we retrained all considered models on
-    * «One billion word benchmark» dataset (Chelba et al., 2014)
+    * «One billion word benchmark» dataset (Chelba+ 2014)
       * news articles
-  * difference ... affect the performance
+  * difference affect the performance
 * Each model was supplied with contexts of the size that maximizes ARI
 
 ### 5.4.3. New Wikipedia Word-sense Induction (WWSI) dataset
@@ -206,15 +205,15 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
   * We use adjusted Rand index averaged over test words
   * compare
     * AdaGram models trained with different values of α and
-    * the models of Neelakantan et al. (2014)
+    * the models of Neelakantan+ (2014)
   * Our model significantly outperforms both MSSG and NP-MSSG
-  * This demonstrates that [AdaGram  meanings] are
+  * This demonstrates that AdaGram  meanings are
     * well aligned with Wikipedia sense inventory
   * interpretability
-    * [a] higher number of learned prototypes ... may become less interpretable
+    * a higher number of learned prototypes may become less interpretable
       * contradicting quantitative evaluation results
   * Such phenomenon is also common for topic modeling, see e.g
-    * Boyd-Graber et al., (2014)
+    * Boyd-Graber+ (2014)
 
 # 6. Conclusion
 

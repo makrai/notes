@@ -1,12 +1,12 @@
 Ittzés Nóra
-A magyar nyelv nagyszótárának lexikográfiai koncepciója, 
+A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   különös tekintettel a szemantika és a grammatika összefüggésére a szótárírásban
 2011 DOKTORI DISSZERTÁCIÓ Témavezető: Dr. Kenesei István Szeged
 
 # Bevezetés
 
 * [a szótrá címe]
-  * többféle címmel is jelölték 
+  * többféle címmel is jelölték
   * A magyar irodalmi és köznyelv nagyszótára, Akadémiai nagyszótár
   * mai címváltozat [a] 2006-os megjelenésekor vált véglegesséu
 * korpuszalapú nagyszótárt
@@ -17,31 +17,31 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   korlátozottsága és az etimológiai elemzés hiánya ellenére is különlegessé
   teszik.
 * szerkesztési elveit és azok szótári megvalósulásá
-  * rendszerszemlélet és a szemantikai megközelítés. 
+  * rendszerszemlélet és a szemantikai megközelítés.
 * A teljes szótár és ezen belül az egyes szócikkek felépítésé
-  * a szótári címszó kérdése, valamint a lexéma fogalma és a 
-  * lexéma értékű, szókapcsolatok 
+  * a szótári címszó kérdése, valamint a lexéma fogalma és a
+  * lexéma értékű, szókapcsolatok
     * címszavasításának lehetősége
     * lexikalizálódás
     * grammatikai és lexikai jellemzők
       * morfológiai és szintaktikai viselkedés
       * használati körét és stílusértékét
-      * amelyeket 
-        * a szótári elemzés során vizsgálni, illetve 
+      * amelyeket
+        * a szótári elemzés során vizsgálni, illetve
         * a szótárban tükrözni
 * szófaji minősítés
   * a magyar lexikográfiában eddig még nem használt új szófaji kategóriákat
 * a magyar értelmező szótári irodalomban egyedülálló
   * korpuszalapúság
-  * új szócikktípusokkal, a 
-  * frazeológia kérdésével és a szótár 
+  * új szócikktípusokkal, a
+  * frazeológia kérdésével és a szótár
   * utalózási rendszerével.
 * külön fejezetet szentel néhány olyan szócikk részletes elemzésének, amelyek
   példaértékűen mutatják a szótárban megvalósuló grammatikai-szófaji leírás[t]
-* Disszertációm [összefoglalja] a szótár lexikográfiai koncepcióját kibontó 
-   szerkesztési szabályzat[ot] 
+* Disszertációm [összefoglalja] a szótár lexikográfiai koncepcióját kibontó
+   szerkesztési szabályzat[ot]
 
-# 1. A magyar nyelv nagyszótárának helye a magyar lexikográfiában, valamint a nemzetközi nagyszótári irodalomban 7 
+# 1. A magyar nyelv nagyszótárának helye a magyar lexikográfiában, valamint a nemzetközi nagyszótári irodalomban 7
 
 ## 1.1. A nagyszótár mint értelmező szótári műfaj 8
 
@@ -52,13 +52,13 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   értelmét kifejezik. (CzF. 1862: 6)
 * nyelvi, enciklopédikus és ún. fogalmi szótárt különböztet meg
   * nyelvi: az értelmezésben rövid információt ad, amely segít kódolni és
-    dekódolni az üzeneteket. Az 
+    dekódolni az üzeneteket. Az
   * enciklopédikus szótár ... a fogalmaknak, sőt maguknak a dolgoknak a meg-
     ismerését
   * nyelvi szótár szemantikai nézőpontú: a szótól a jelentésig, a jelölőtől a
-    jelöltig halad; a 
+    jelöltig halad; a
   * [a française szótár szerkesztője szerint a] fogalmi szótár fordítva: a
-    jelentéstől, az értelemtől a jelölőig, a jelentés anyagi hordozójáig 
+    jelentéstől, az értelemtől a jelölőig, a jelentés anyagi hordozójáig
     (Imbs 1971)
 * kéziszótár, középszótár, nagyszótár.
   * A címszavak száma ... meghatározhatja azt is, hogy a szótár leszűkíthető-e
@@ -73,19 +73,19 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 
 ## 1.2. Értelmező szótári elzmények a magyar lexikográfiában
 
-* négy jelentősebb szótárt lehet említeni, 
-  * két középés két kéziszótár jellegű munkát: 
+* négy jelentősebb szótárt lehet említeni,
+  * két középés két kéziszótár jellegű munkát:
   * Czuczor Gergely és Fogarasi János A magyar nyelv szótára (CzF.), illetve
     * közép-
   * Ballagi Mór A magyar nyelv teljes szótára (Ball.) cím, művét
     * kéziszótár
-  * Országh László és Bárczi Géza: 
-    * A magyar nyelv értelmező szótárát (ÉrtSz.), illetve a 
-    * Magyar értelmező kéziszótárt (ÉKsz.).  
+  * Országh László és Bárczi Géza:
+    * A magyar nyelv értelmező szótárát (ÉrtSz.), illetve a
+    * Magyar értelmező kéziszótárt (ÉKsz.).
   * A két csomópont között jelentős szótárak is születtek, de értelmező
-    szótárként csak 
-    * Balassa József A magyar nyelv szótára (Balassa) cím, könyve, amely 
-      * sem terjedelmében, sem minőségében nem közelíti meg a korábbi[akat], 
+    szótárként csak
+    * Balassa József A magyar nyelv szótára (Balassa) cím, könyve, amely
+      * sem terjedelmében, sem minőségében nem közelíti meg a korábbi[akat],
       * érdeme az a törekvés, hogy pótolja a műfaji hiányt.
 * a CzF. és az ÉrtSz. egyfajta történeti kapcsolatban is van az Nszt.vel, s
   valamilyen módon mindkettő a nagyszótári elképzelésekhez mérte magát. Ez a
@@ -111,12 +111,12 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 
 * szovjet lexikográfi[a] műfaji tekintetben mintát adott
 * Országh _A magyar szókészlet szótári feldolgozásának kérdései_
-  * [a leendő] Nagyszótárt elsősorban mint 
+  * [a leendő] Nagyszótárt elsősorban mint
     * tudományos igények kielégítésére hivatott szótárt tartja számon, amely
     * „[t]örténeti fejlődésében szándékozik ábrázolni
     * 300 000
-  * Kéziszótár [a leendő NSz-szel szemben] hangsúlyozza a 
-    * mai nyelvállapot, szókészlet 
+  * Kéziszótár [a leendő NSz-szel szemben] hangsúlyozza a
+    * mai nyelvállapot, szókészlet
     * normatív célú feldolgozásának szükségességét
     * stilisztikai sokrétűségének jelzését, a szójelentések mai nyelvi életének
       irodalmi dokumentációs anyaggal való ábrázolását
@@ -126,8 +126,8 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 * Az utolsó kötet megjelenése után a szótári munkaközösség Országh László
   szerkesztésében _A szótárírás elmélete és gyakorlata A magyar nyelv
   értelmezszótárában_ címmel (Országh szerk. 1962: 3) külön kiadvány
-  * eredeti, teljes terjedelmű előszavát, kiegészítve az 
-  * elméleti és gyakorlati tapasztalatokkal, valamint a szótár 
+  * eredeti, teljes terjedelmű előszavát, kiegészítve az
+  * elméleti és gyakorlati tapasztalatokkal, valamint a szótár
   * szerkesztésének történetével
   * a címszóválasztástól az utalásokig végiggondolt lexikográfiai koncepció
   * alapvetően értelmező szótári szempont
@@ -143,15 +143,15 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 * értelmezés elveit Kelemen József dolgozta ki (Kelemen 1951– 1952)
   * szófajonként, azon belül a fogalmi tartalom, illetve a használati kör
     eltérései szerint veszi számba a _jelentésváltozatok_ típusait
-  * homonimák kérdését 
+  * homonimák kérdését
   * megvizsgálja néhány szó jelentését idegen nyelv, szótárakban.
 
 ## 1.3. Néhány idegen nyelv nagyszótárról
 
-* két korszakot és két típust képviselnek. Az első csoportba a 
+* két korszakot és két típust képviselnek. Az első csoportba a
   * korai reprezentatív, sok vonatkozásban máig mintaadó két szótár, a
     Deutsches Wörterbuch (GDW) és az Oxford English Dictionary (OED) tartozik.
-    * Ezek a szótárak teremtették meg a műfajt, a 
+    * Ezek a szótárak teremtették meg a műfajt, a
     * viszonylagos teljességre törekvő, a szókészlet minél szélesebb sávját
       átfogó, történeti távlatú, az etimológiát is feltáró, adatokra épülő
       nagyszótár műfaját
@@ -186,7 +186,7 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 
 ### 1.3.5. Trésor de la langue française 1789–1960
 
-### 1.3.6. Nagyszótár-e A magyar nyelv nagyszótára? 16 
+### 1.3.6. Nagyszótár-e A magyar nyelv nagyszótára? 16
 
 * példaértékűnek mondható. A rendszerszemlélet, a szerkesztési koncepció
   átgondoltsága, a világos szócikkstruktúra, az azonos típusú információk
@@ -204,7 +204,7 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   szólásokon át a közmondásokig, szitkozódásokig terjedő teljes frazeológia,
   mondat érték, állandósult szókapcsolatok
 * a melléknévi igenevek alcímszóvá válása
-* jelentések sorrendjét: 
+* jelentések sorrendjét:
   * a jelentések első példáinak időrendje vagy az ún.
   * jelentésszerkezet: tartalmi – szemantikai-logikai – mozzanatok
 * „érdekes”, ritkább szavakra, jelentésekre figyelő cédulázást
@@ -227,8 +227,8 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 ## 2.2. A szócikktípusok 35
 
 * funkciójában, szerkezetében, illetve a lexikográfiai elemzés módját és
-  mélységét tekintve többféle szócikket tartalmaz: 
-  * önálló, 
+  mélységét tekintve többféle szócikket tartalmaz:
+  * önálló,
     * jelentés(ek)re tagolódnak, és ezeket a jelentéseket adatolják. Szükség
       esetén lexikai minősítést, grammatikai kiegészítést adnak, földolgozzák
       az értelmezett szókapcsolatokat. Ezeknek a szócikkeknek a végén gyakran
@@ -241,12 +241,12 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   * különböző típusú utaló
     * alaki utaló hangalakváltozattól, ritkábban írásvagy grammatikai
       változattól
-    * szócikkfejes utaló 
+    * szócikkfejes utaló
       * a címszót és a szófaji minősítést feltüntető szócikkfejjel
       * összetételi és frazeológiai utalások tartoznak.
       * Utalások az önálló szócikkek végén
 
-## 2.3. A szócikkfej 
+## 2.3. A szócikkfej
 
 * Azok az információk, amelyek nem az egész szócikkre, csak annak kisebb egy-
   ségére – szófaji blokkra, jelentésre, értelmezett szókapcsolatra –
@@ -288,7 +288,7 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
   * toldalékos alakokból elvont címszó
     * egyes számban veszi föl azokat a sok szótárban vagy lexikonban többes
       számban címszavasult szavakat, amelyeknek kizárólag vagy rendszerint
-      többes számú használata van (alkálifém, alkália stb.), és 
+      többes számú használata van (alkálifém, alkália stb.), és
   * nem teszi címszóvá a toldalékmorfémákat
   * idegen szavak egy viszonylag szűk, pontosan meghatározott csoportjá...
   * független szónak, félszónak és függőszónak nevezett típusok, a félszók
@@ -303,7 +303,7 @@ A magyar nyelv nagyszótárának lexikográfiai koncepciója,
 Az Nszt. a poliszémia és homonímia kérdésében
 * nem fogadja el az Antal László-féle meglehetősen szélsőséges gondolatmenetet
   (Antal 1978)
-  
+
 > a jelet az teszi jellé, hogy van egy rajta kívül álló, belőle le nem
 > vezethető szabálya, azaz jelentése, aminek alapján használjuk. Ebből viszont
 > elkerülhetetlenül következik, hogy ha egy látszólag azonos (ti. azonos alakú)
@@ -314,17 +314,17 @@ Az Nszt. a poliszémia és homonímia kérdésében
 
 * a komoly lexikográfiai tapasztalatokkal is rendelkező, a történeti szempontú
   meghatározást egyetlen szilárd alapnak tekintő Bárczi (1958)
-  
+
 > fontos azonban, hogy egy szóban a nyelvtörténet során végbement
 > jelentéstagozódás nem lehet alapja homonímia föltevésének, azaz ha egy szónak
 > több, esetleg igen eltérő jelentései a szó eredeti alapjelentésének
 > megváltozása útján jöttek létre, nem beszélhetünk homonímiáról
 
 * [Bárczi] megengedi, hogy a szótár bizonyos eseteket az etimológiai összefüggés
-  ellenére is homonímiaként kezeljen: 
-  * jövevényszavaknál az egymástól független átvételeket, a 
+  ellenére is homonímiaként kezeljen:
+  * jövevényszavaknál az egymástól független átvételeket, a
   * közös tőből ugyanazzal a képzővel egymástól függetlenül létrehozott vagy
-    az alapszó más jelentéséből származtatható alakulásokat, illetve 
+    az alapszó más jelentéséből származtatható alakulásokat, illetve
   * a szó különböző összetételeire visszavezethető szóelvonásokat
   * Ezeket az ÉrtSz. _álhomonimáknak_ nevezi, indexszámukat kerek zárójelben
     tünteti fel, megkülönböztetve
@@ -336,12 +336,12 @@ Az Nszt. a poliszémia és homonímia kérdésében
   * ahol az ÉrtSz. a szófaji különbségek alapján határoz meg álhomonimákat, az
     Nszt. rendszerint kevésbé tagol,
 * nem különbözteti meg a valódi, illetve a poliszémia és a homonímia
-  határmezsgyéjén mozgó álhomonimákat, 
+  határmezsgyéjén mozgó álhomonimákat,
   * mindegyik típust puszta indexszámmal jelöli
   * homonimaként kezeljük nemcsak a hangalakilag megegyező és az etimológiai
     kutatások eredményei alapján eltérő eredetűnek tartott szavakat, hanem az
     azonos eredetű, de nyelvünkbe egymástól függetlenül, illetve más-más
-    _közvetítéssel_ került jövevényszavakat is, 
+    _közvetítéssel_ került jövevényszavakat is,
     * bizonyos szótípusokat pedig a lexikográfiai hagyomány alapján indexelünk
   * toldalékos alakjainak eltérő jelentésekhez kapcsolódó különbségei
     (vö. Elekfi 1998: 305– 317 és Elekfi 2000: 146–163)
@@ -363,21 +363,21 @@ Az Nszt. a poliszémia és homonímia kérdésében
       esetben külön mérlegelést kíván;
   * jövevény~ és idegen szavak, amelyek közvetlen előzményként más átadó
     nyelvre vezethetők vissza
-    * egy címszó alatt maradnak azok a jelentések, amelyek 
+    * egy címszó alatt maradnak azok a jelentések, amelyek
       * ugyan külön átvétellel (más időben, más szaknyelv közvetítésével stb.)
         kerültek a nyelvbe, de ugyanannak a nyelvnek ugyanarra a szavára
         vezethetők vissza (pl. a break mint zenei, mint táncés mint
         sportszakszó), illetve amelyeknek újabb jelentése tükörjelentésként
         alakult ki
-        * pl. az egér mint ’számítógépes eszköz’ vagy az 
-        * alsó mint ’kártyafigura’) azok az alakváltozatok is, amelyek 
+        * pl. az egér mint ’számítógépes eszköz’ vagy az
+        * alsó mint ’kártyafigura’) azok az alakváltozatok is, amelyek
       * belső nyelvi fejlődéssel jöttek létre, illetve a többszörös átvételre
         utaló sokféle és bizonytalan eredet, hangalaki változatot
         mutató nemzetközi szavak
   * külön szócikkbe kerülnek a[z átadó nyelvben] \pm összetételre viszszave...
     * pl.  blatt 1 fn ’kártyalap’ és a cifferblattból elvont blatt 2 fn
   * főnévi mutató névmás ragozott alakjai
-  * arc fn – orca fn, bék fn – béke fn 
+  * arc fn – orca fn, bék fn – béke fn
     * külön szócikket alkotnak [bár] jelentésstruktúrájuk nem vált el
 * néhány példa a korábbi értelmező szótári gyakorlattól való eltérésre
   * adat 1 ige és adat 2 fn → Nszt. adat fn);
@@ -394,10 +394,10 @@ Az Nszt. a poliszémia és homonímia kérdésében
   főneveket, bizonyos szótárak a melléknévi igenevet. Hasonló módon jár el az
   Nszt. is.
 
-* 2.3.1.3. Ragos és jelezett alakok címszóvá válása p53 
-* 2.3.1.4. Szókapcsolatokból elvont címszavak p55 
-  * [vérszem] ... vezérszava lenne a szókapcsolatnak 
-* 2.3.1.5. Tulajdonnévi címszavak 
+* 2.3.1.3. Ragos és jelezett alakok címszóvá válása p53
+* 2.3.1.4. Szókapcsolatokból elvont címszavak p55
+  * [vérszem] ... vezérszava lenne a szókapcsolatnak
+* 2.3.1.5. Tulajdonnévi címszavak
 * 2.3.1.7. Igekötő
 * 2.3.1.8. A címszó, valamint a hangalaki és grammatikai változatok viszonya
 
@@ -415,8 +415,8 @@ Az Nszt. a poliszémia és homonímia kérdésében
 ## 2.4. A jelentés p85
 
 * egy-egy szófajon belül jelentésekbe rendezve jelennek meg. Ehhez a
-  munkafázishoz két mozzanat tartozik: egyrészt a 
-  * jelentések elkülönítése, másrészt 
+  munkafázishoz két mozzanat tartozik: egyrészt a
+  * jelentések elkülönítése, másrészt
   * alá-fölé rendeltségük és sorrendjük megállapítása
   * szófaji csoportokon belül kétszintű, főjelentésekre és jelentésárnyalatokra
     * XML formátumú jelentésstruktúrájában az értelmezést, példamondatokat és
@@ -436,7 +436,7 @@ Az Nszt. a poliszémia és homonímia kérdésében
   stílusréteg hatását tükröző jelentést, a szélesebb társadalmi elterjedtségűt
   a sajátos rétegnyelvi jelentéstől. Az átvitt jelentést természetesen nem
   jelöli külön lexikai minősítés kezelése
-* Meg kell különböztetni 
+* Meg kell különböztetni
   * az egészt és részét jelentő adatokat, a közösséget vagy a közösség tagját,
     a fajta szerinti csoportokat, az anyagot, növényt, állatot és a belőle
     készült tárgyat, dolgot, a növény termését és a belőle készült ételt
@@ -466,13 +466,13 @@ Az Nszt. a poliszémia és homonímia kérdésében
 
 ### 2.4.2. A jelentések sorrendje 94
 
-* alá-fölé rendeltségi viszonyait, a 
+* alá-fölé rendeltségi viszonyait, a
 * jellemző, gyakori jelentés rendszerint _megelőzi_ a kevésbé jellemző
-* konkréttól haladunk az elvont felé, az 
-* általánosan elterjedttől a rétegnyelvi felé, a 
+* konkréttól haladunk az elvont felé, az
+* általánosan elterjedttől a rétegnyelvi felé, a
 * semlegestől a stiláris minősítésre szoruló felé
 * [de] pl. a rosszaság elvont fogalomként – ’vminek a rossz volta’ – megelőzi a
-  konkrét ’csintalan gyermek’ jelentést.  
+  konkrét ’csintalan gyermek’ jelentést.
 * a jelentésstruktúra a meghatározó, a feldolgozott anyag történeti jellege
   azonban előidézheti, hogy a jelentések első adatuk időrendje szerint
   kerüljenek a szócikkbe, s előfordulhat olyan eset is, hogy ez a kétféle
@@ -503,18 +503,18 @@ Az Nszt. a poliszémia és homonímia kérdésében
   * tudatosan figyel arra, hogy elkerülje a szótári körbeértelmezéseket
   * nem címszavasított szavak, valamint bokrosított szócikkek alcímszavai nem
   * lexikális ismeretet hordozó szavak értelmezésekor
-* motivált szavak esetében ... feltárja az elnevezés motivációját 
+* motivált szavak esetében ... feltárja az elnevezés motivációját
 
 #### 2.4.4.2. Körülírás, helyettesítés, kiegészítés az értelmezésben
 
 * a szófaji jelleg tükrözéséhez szükséges,
-  * kutya fn 7. ’veszedelmes, kiszámíthatatlan 〈tárgy, dolog〉’, 
+  * kutya fn 7. ’veszedelmes, kiszámíthatatlan 〈tárgy, dolog〉’,
   * ágaskodik tn ige 1. ’〈ember〉 lábujjhegyre állva felfelé nyújtózik’
   * aszal ts ige 1a.  ’〈gyümölcsöt, zöldséget, ritk. húst〉 szárítással
-    tartósít’, 
+    tartósít’,
   * avas I. mn 1b.  ’megecetesedett, megpimpósodott 〈bor〉’
 * másik szóval szembeállító vagy összekapcsoló
-  * akció fn 1c. ’〈sportban:〉 támadás, előretörés’ 
+  * akció fn 1c. ’〈sportban:〉 támadás, előretörés’
   * csonka I. mn 5. ’〈a csúcsossal, hegyessel szembeállítva:〉 lapos, tompa’,
   * amoda hsz 2. '〈az ide hsz-val együtt:〉 a szóban forgó dolog ellenéreű...
 
@@ -542,11 +542,11 @@ Az Nszt. a poliszémia és homonímia kérdésében
   akrobata 1. jelentése ’a közönséget erőés tornamutatványokkal
   szórakoztató (cirkuszi) artista’; adatszer pcs. (számszerű) adatokat (is)
   tartalmazó, ill. adatként megjelenő v. így rögzített 〈tény, megállapítás,
-  bizonyíték, jellemzés stb.〉’.  
+  bizonyíték, jellemzés stb.〉’.
 * (es. = esetleg, v. = vagy, kül. = különösen, illetve = illetve stb.)
-  * alapkő fn 1.  ’vmely építmény alapja, ill, az ehhez haszn. kő’, 
+  * alapkő fn 1.  ’vmely építmény alapja, ill, az ehhez haszn. kő’,
   * akció fn 3.  ’irodalmi, kül. színpadi m, cselekménye, eseménysora’.
-  
+
 ## 2.5. A példamondat
 
 * legfőbb szerepe ugyan a jelentés illusztrálása, de nem helyettesítheti a
@@ -588,10 +588,10 @@ Az Nszt. a poliszémia és homonímia kérdésében
   amelynek elemei – de legalábbis egyik elemük – még őrzik eredeti konkrét
   jelentésüket.
 1. a jelzős szintagmákat, pl. babilóniai fűz, birtoktöbbesítjel, bordói
-2. két határozószó...  pl. balra át, a-tól z-ig ~ ától cettig), illetve 
+2. két határozószó...  pl. balra át, a-tól z-ig ~ ától cettig), illetve
 3. az igéből és bővítményből, pl.  _bolonddá tart vkit, van benne vmi_
 * Jóllehet nem szintagmák, értelmezett szókapcsolatként kerülnek a szócikkbe
-  4. névszók önálló jelentéssel bíró állandósult névutós szerkezetei, pl. 
+  4. névszók önálló jelentéssel bíró állandósult névutós szerkezetei, pl.
     * _a föld alól is, baj(u)sza alatt_
   5. azokat a több szóból álló idegen kifejezéseket is, amelyeknek első eleme
      olyan prepozíció, amely vagy több frazémában, vagy
@@ -606,7 +606,7 @@ Az Nszt. a poliszémia és homonímia kérdésében
 * csak egy helyen találhatók meg a szótárban, „mégpedig a szókapcsolat
   legfontosabb szavának (vezérszavának) szócikkében” (ÉKsz.  1972)
 * A Nszt. formalizálja a vezérszó megválasztását
-  1. a jelzős szerkezet a jelző , 
+  1. a jelzős szerkezet a jelző ,
   2. a két névszóból álló határozós szerkezetek ...  első névszói lelemük
   3. az igéből és névszóból ... a névszói elem lesz
   4. _abban maradnak_; _kitesz magáért_  de természetesen a ... _magának való_
@@ -663,4 +663,4 @@ Az Nszt. a poliszémia és homonímia kérdésében
 
 # Összegzés 235
 
-# Irodalom 237 
+# Irodalom 237

@@ -5,8 +5,8 @@ Loss in Translation: Learning Bilingual Word Mapping with a Retrieval Criterion
 # Abstract
 
 * word representations learned separately on distinct languages can be aligned
-* Existing works typically solve a 
+* Existing works typically solve a
   * least-square regression problem to learn a rotation aligning a small lex
-  * retrieval criterion for inference. 
+  * retrieval criterion for inference.
 * In this paper, we propose an unified formulation that directly optimizes a
   * biggest improvements observed for distant language pairs such as en-Chinese
