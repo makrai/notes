@@ -6,21 +6,21 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 
 * more nuanced information [than sentiment]: is the post negative because the
   user is angry or sad? An abundance of
-* approaches for these tasks treat only one of the tasks. We introduce
+* approaches for these tasks treat only one of the tasks
 * FEEL-IT, a novel benchmark corpus of Italian Twitter posts annotated with
-  * four basic emotions: anger, fear, joy, sadness (Ekman, 1992
-  * By collapsing them, we can also do sentiment analysis. We
+  * four basic emotions: anger, fear, joy, sadness (Ekman, 1992)
+  * By collapsing them, we can also do sentiment analysis
   * first Italian dataset with a broad topic and domain coverage for emotion and
     sentiment classification. Beyond releasing benchmark results on FEEL-IT, we
 * evaluate our corpus on benchmark datasets for
-  * both emotion and sentiment classification, obtaining competitive results. We
-  * recent neural models trained on our corpus for emotion recognition on the
+  * both emotion and sentiment classification, obtaining competitive results
+  * recent neural models trained on our corpus for emotion recognition
   * MultiEmotions-It dataset (Sprugnoli, 2020).  It contains
     * comments on music videos and advertisements posted on YouTube and Facebook
   * sentiment classification
     * by collapsing emotions
-    * on the SENTIPOLC16 benchmark dataset (Barbieri+ 2016). It comprises
-      * both general and political topics.  The best-performing models are
+    * on the SENTIPOLC16 benchmark dataset (Barbieri+ 2016)
+      * both general and political topics
     * we obtain SOTA performances on the current benchmark for Italian sentiment
 
 # Intro
@@ -35,7 +35,7 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
   * other languages, such as
     German (Troiano+ 2019), Chinese (Wang+ 2018), Spanish (Navas-Loro and
     Rodrı́guezDoncel, 2019), Italian (Barbieri+ 2016; Sprugnoli, 2020), and
-    multiple languages in shared tasks (Mohammad+ 2018; Pontiki+ 2016).a
+    multiple languages in shared tasks (Mohammad+ 2018; Pontiki+ 2016)
 * shotcomings
   * usually collected via hashtags and emojis for distant supervision
     (AbdulMageed and Ungar, 2017; Mohammad, 2012; Pak and Paroubek, 2010;
@@ -56,7 +56,7 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
     * anger and joy account for the majority of tweets, and
       fear is the least frequent emotion. 3 In FEEL-IT,
 * vary both with respect to topic domains and time
-  * Topic domains ranges from
+  * Topic domains ranges 
     health (#covid19, #mascherina/mask), sports (#F1, #Juventus), social issues
     (#scuola/school), TV shows (#GFvip, #pomeriggio5), individuals (#DiMaio,
     #Suarez), generic targets (#negazionisti/negationists)
