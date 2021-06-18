@@ -2,8 +2,14 @@ Comparing ML Learning and Deep Learning Approaches on NLP Tasks for Italian
 Bernardo Magnini, Alberto Lavelli, Simone Magnolini
 LREC 2020, pages 2110–2119 Marseille, 11–16 May 2020
 
+pretrained deep: only mBERT?
+
 # Abstract
 
+* datasets (e.g., from the Evalita shared tasks) on two sequence tagging tasks
+  (i.e., named entities recognition and nominal entities recognition) and four
+  classification tasks (i.e., lexical relations among words, semantic relations
+  among sentences, sentiment analysis and text classification). We show that
 * a single model for all the other languages, including Italian
 * We: experiments using available datasets (e.g., from the Evalita shared tasks)
   * two sequence tagging tasks (i.e., NER and nominal entity recognition) and
