@@ -11,22 +11,22 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * Releasing the orthogonal constraint means we now can touch the norm of $Q$
     so probably we need to regularize the $l2$ norm of $PQ$ such that the loss
     does not go to $-\infty$. Again, no improvements are observed in this case
-  * The orthorgonal constraint ... probably is not significantly helpful when
+  * The orthorgonal constraint probably is not significantly helpful when
     the evaluation metric is ranking based
 
 # Abstract
 
 * Predicting the emotional value of lexical items is a well-known problem
   * research has focused on polarity for quite a long time
-  * more expressive ... models (such as Basic Emotions or Valence-Arousal-Dom)
-  * heterogeneous formats and ... small-sized, non-interoperable resources
+  * more expressive models (such as Basic Emotions or Valence-Arousal-Dominance)
+  * heterogeneous formats and small-sized, non-interoperable resources
     (lexicons and corpus annotations, Buechel and Hahn, 2017)
     Sven Buechel and Udo Hahn. 2017.
     EmoBank: Studying the impact of {annotation perspective
       and representation format} on dimensional emotion analysis
     EACL 2017
     * limitations in size hampered the application of deep learning methods
-* We here ... word emotion induction as a multi-task learning (MTL) problem
+* We here: word emotion induction as a multi-task learning (MTL) problem
   * each independent emotion dimension is considered as an individual task
   * hidden layers are shared between these dimensions
   * comparing our model against alternative emotion and polarity induction meth
@@ -39,8 +39,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * large-scale evaluation of our model featuring
     9 typologically diverse languages and multiple publicly available embedding
   * 15 conditions
-  * Our MTL model surpasses the current state-of-the-art for each of them, and
-    even performs competitive relative to human reliability
+  * Our MTL model surpasses the current SOTA for each of them, and even 
+    performs competitive relative to human reliability
   * largest benefit on the smallest data sets, comprising merely one thousand
   * competitive to human annotation reliability
     in terms of inter-study as well as split-half reliability
@@ -91,7 +91,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
         * Valence (a positive–negative scale),
         * Arousal (a calm–excited scale), and
         * Dominance (perceived degree of control over a (social) situation)
-      * Many contributions though omit Dominance (the VA model) (Russell, 1980)
+      * Many contributions though omit Dominance (the VA model, Russell, 1980)
       * we will still use the term “VAD” to jointly refer to both variants
 * resources (also called “emotion lexicons”) have emerged from
   psychological/NLP research labs for diverse languages
@@ -102,9 +102,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     LREC 2018
 * regression, not as a classification problem (Buechel and Hahn 2016)
 * In this paper, we focus on the VAD format for the following reasons:
-  1.  Valence ... exactly corresponds to polarity (Turney and Littman, 2003)
+  1.  Valence exactly corresponds to polarity (Turney and Littman, 2003)
     * emotion prediction can be seen as a generalization over classical
-  2. diversity of available emotion lexicons with VAD encodings is large[st]
+  2. diversity of available emotion lexicons with VAD encodings is largest
 
 ## Word Embeddings
 
@@ -112,7 +112,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * FastText is a derivative of Word2vec, also incorporating sub-word
 * GloVe trains word vectors directly on a word co-occurrence matrix
 * Somewhat similar, SVD-PPMI (Levy+ 2015)
-* we rely on [embedding models pre]trained on very large corpora
+* we rely on embedding models pretrained on very large corpora
   * SGNS model trained on the Google News corpus 2 (Google), the
   * FastText model trained on Common Crawl 3 (Common), as well as the
   * FastText models for a wide range of languages trained on the Wikipedias
@@ -120,7 +120,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       Edouard Grave, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, T Mikolov
       Learning word vectors for 157 languages
       LREC 2018
-  * Additionally, the English embedding model from Sedoc+ (2017) (Giga), a
+  * Additionally, the English embedding model from Sedoc+ (2017, Giga), a
     strongly related contribution (see below)
     Their embeddings were trained on the English Gigaword corpus (Parker+ 2011)
 
@@ -145,8 +145,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * graph-based
     * very similar approach to SentProp has been proposed by Wang+ (2016a)
     * Sedoc+ (2017) approach based on signed spectral clustering
-      * word graph is constructed [based on word similarity +] affective info
-      * emotion value ... computed based on the seed words in its cluster
+      * word graph is constructed based on word similarity + affective info
+      * emotion value computed based on the seed words in its cluster
       * outperform the results from Wang+ (2016a)
 * the best system of the IALP 2016 Shared Task on Chinese word emotion
   induction (Yu+ 2016b) employed a simple feed-forward neural network (FFNN)
@@ -162,22 +162,22 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * cannot easily be transferred to solve word emotion
 * either adapted to ~ input data
   * sequential (typical for RNN, LSTM, GRNN and related architectures) or
-  * spatially arranged (as with CNN architectures).  However,
-  * for word embeddings (the default input for word emotion induction),
+  * spatially arranged (as with CNN architectures)
+  * hE, for word embeddings (the default input for word emotion induction),
     there does not seem to be any meaningful order of their components
 
 # 3 reference methods and our proposed deep MTL model
 
 ## 3.1 Reference Methods
 
-(two originally polarity-based [which adaptat] for VAD prediction)
+(two originally polarity-based which adaptat for VAD prediction)
 
 ### Linear Regression Baseline (LinReg)
 
 ### Ridge Regression (RidgReg),
 
-* Li+ (2017) propose [it] for word emotion
-* identical[] to linear regression during prediction, but introduces L 2 regu
+* Li+ (2017) propose it for word emotion
+* identical to linear regression during prediction, but introduces L 2 regu
 
 ### Turney-Littman Algorithm (TL)
 
@@ -185,8 +185,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * a simple PMI-based approach to determine the semantic polarity of a word w
 `SP T L (w) = \sum pmi(w, s) − \sum pmi(w, s) `
 * still popular today (Köper and Schulte im Walde, 2016),
-* we here provide a novel modification for adapting [to] vectors
-  1. we replace PMI-based association ... by their cos similarity `sim`
+* we here provide a novel modification for adapting to vectors
+  1. we replace PMI-based association by their cos similarity `sim`
   2. adapted to an n-dimensional emotion format
   3. introduce a normalization term
     such that emo(w) T L lies within the range of the seed lexicon
@@ -195,7 +195,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * Rothe+ (2016) train an orthogonal matrix Q ∈ R n×n
 * To adapt this algorithm to dimensional emotion formats,
-  we construct a positive ... and a negative seed set,
+  we construct a positive and a negative seed set,
   * M v be the mean, SD v be the standard deviation and β ∈ R, β ≥ 0
   * all entries greater than M v + βSD v are assigned to seeds + v
   * Q is fitted individually for each emotion dimension v
@@ -204,7 +204,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     William L. Hamilton, Kevin Clark, Jure Leskovec, and Daniel Jurafsky
     Inducing domain-specific sentiment lexicons from unlabeled corpora
     EMNLP 2016
-    since we did not find any evidence that this [improves performance]
+    since we did not find any evidence that this improves performance
   * α and β were set to .7 and .5 (respectively) for all experiments
     based on a pilot study. Since the original
   * implementation is not accessible, we devised our own using tensorflow.org
@@ -216,7 +216,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * The authors used FFNNs with a single hidden layer of 100 units and
   rectified linear unit (ReLU) activation
   * boosting algorithm AdaBoost.R2 (Drucker, 1997) was used to train the
-  * Our re-implementation copies their[s] exactly using scikit-learn
+  * Our re-implementation copies theirs exactly using scikit-learn
 
 ## 3.2 Multi-Task Learning Neural Network
 
@@ -241,19 +241,19 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * each combination of model and data set displays a satisfactory performance of
   at least r ≈ .75 after 15,000 steps compared to previous work (see below)
 * Overall, performance is higher for the smaller EN lexicon
-  * counterintuitive [but] consistent with prior work (Sedoc+ 2017; Li+ 2017)
-  * smaller lexicons ... comprise a larger portion of strongly emotion-bearing
+  * counterintuitive but consistent with prior work (Sedoc+ 2017; Li+ 2017)
+  * smaller lexicons comprise a larger portion of strongly emotion-bearing
 * the MTLNN model does indeed outperform the single task model on both dsets
-  * gain ... is larger on smaller data sets
-  * regularizing effect ..., since the SepNN model shows signs of overfitting
+  * gain is larger on smaller data sets
+  * regularizing effect, since the SepNN model shows signs of overfitting
     * SepNN needs fewer training steps before convergence, the
   * Yet, even when the separate model does not overfit (EN+), MTLNN better
-  * MTLNN model [converging in] about a minute on a middle-class GPU). This is
+  * MTLNN model converging in about a minute on a middle-class GPU). This is
     * only about a third as many parameters as the separate model SepNN
 
 ## 4.2 Comparison against Reference Methods
 
-* We combined each [lexicon with each] applicable publicly available embedding
+* We combined each lexicon with each applicable publicly available embedding
   * the embedding model provided by Sedoc+ (2017) will be used separately
 * For each of these conditions, we performed a 10-fold cross-validation (CV)
   for each of the 6 methods presented in Section 3
@@ -262,7 +262,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * the methods we compare ourselves against comprise the current SOTA in both
     polarity and emotion induction (as described in Section 2).  8
 * Valence and Arousal for ES+ and ZH, VAD for the others
-* our proposed MTLNN model outperforms all other approaches in each [condition]
+* our proposed MTLNN model outperforms all other approaches in each condition
 * improvements are especially pronounced on smaller data sets containing one up
   to two thousand entries (EN, ES, IT, PT, ID) with close to 10%-points
   improvement over the respective second-best system
@@ -274,8 +274,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * e.g., PL, NL and ID, less clear though Valence still stands out
     * We observe the same general pattern for the reference methods
 * comparison to Sedoc+ (2017), arguably one of most related contributions, they
-  * MTLNN using the Common model achieves ... about 10%points better on VA
-  * using their [smaller] embedding model, MTLNN still clearly outperforms
+  * MTLNN using the Common model achieves about 10%points better on VA
+  * using their smaller embedding model, MTLNN still clearly outperforms
 * comparison to human performance, MTLNN achieves also very strong results
   * inter-study reliability
     * Warriner+ (2013) (who created EN+) report ~ between the EN and the EN+
@@ -288,4 +288,4 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 # 5 Conclusion 9
 
 * future work
-  * other format of emotion representation [than VAD]
+  * other format of emotion representation than VAD
