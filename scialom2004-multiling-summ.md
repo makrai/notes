@@ -289,7 +289,7 @@ https://github.com/recitalAI/MLSUM
 * often reported in summarization papers (See+ 2017; Dong+ 2019) in addition to
   ROUGE
 
-### Novelt n-grams
+### Novel n-grams
 
 * Because of their use of copy mechanisms, some abstractive models have been
   reported to rely too much on extraction (See+ 2017; Kryściński+ 2018)
