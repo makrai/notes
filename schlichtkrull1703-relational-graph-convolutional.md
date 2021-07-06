@@ -6,9 +6,9 @@ arXiv:1703.06103 [stat.ML]
 * apply them to two standard knowledge base completion tasks:
   * Link prediction (recovery of missing facts, i.e. subject-predicate-object)
   * entity classification (recovery of missing entity attributes).  R-GCNs are
-* factorization models for link prediction such as DistMult can be significantly
-  improved by enriching them with an encoder model to accumulate evidence over
-  multiple inference steps in the relational graph
+* factorization models for link prediction such as DistMult 
+  can be significantly improved by enriching them with an encoder model to
+  accumulate evidence over multiple inference steps in the relational graph
   * improvement of 29.8% on FB15k-237 over a decoder-only baseline
 
 # 7 Conclusion
