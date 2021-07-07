@@ -8,7 +8,7 @@ https://www.github.com/salesforce/xnli_extension
 
 * Multilingual transfer learning can benefit both high~ and low-resource langs,
 * hE, source of these improvements is not well understood
-* Cananical Correlation Analysis (CCA) of the internal representations of a
+* Cananical Correlation Analysis (CCA) of the internal representations
 * model partitions representations for each language
   rather than using a common, shared, interlingual space
   * magnified at deeper layers, suggesting that the model does

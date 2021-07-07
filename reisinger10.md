@@ -17,12 +17,12 @@ Multi-Prototype Vector-Space Models of Word Meaning
     * prototype (K = 1) and
     * exemplar (K = N , the total number of instances)
   * widely studied in the Psychology literature
-    * Griffiths et al., 2007;
+    * Griffiths+ 2007;
       * TL Griffiths, KR Canini, AN Sanborn, and Daniel.  J.  Navarro
       * Unifying rational models of categorization
         * via the hierarchical Dirichlet process
       * 2007 In Proc. of CogSci-07
-    * Love et al., 2004;
+    * Love+ 2004;
       * Bradley C. Love, Douglas L. Medin, and Todd M.  Gureckis
       * 2004. Psych. Review, 111(2):309–332
       * SUSTAIN: A network model of category learning
@@ -52,7 +52,7 @@ Multi-Prototype Vector-Space Models of Word Meaning
 * clustering
   * method
     * a mixture of von Mises-Fisher distributions (movMF) clustering method
-      with first-order unigram contexts (Banerjee et al., 2005)
+      with first-order unigram contexts (Banerjee+ 2005)
   * Feature vectors v(c) are
     * composed of individual features I(c, f ), taken as all unigrams occurring
       f ∈ F in a 10-word window around w

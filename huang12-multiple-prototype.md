@@ -86,7 +86,7 @@ The dataset and word vectors can be downloaded at http://www.socher.org
   Three new graphical models for statistical language modelling
 * ranking-loss training objective proposed by Collobert and Weston (2008),
 * The multi-prototype approach has been widely studied in models of
-  categorization in psychology (Rosseel, 2002; Griffiths et al., 2009),
+  categorization in psychology (Rosseel, 2002; Griffiths+ 2009),
   * Yves Rosseel. 2002. Mixture models of categorization
     * matematikai jellegű. a pszichóra csak hivatkozik
   * Thomas L Griffiths, Kevin R Canini, Adam N Sanborn, Daniel J Navarro
