@@ -1,3 +1,7 @@
+Kornai
+Semantics
+2019 
+
 ## 1.4
 
 * First there is the Frege-Russell-Tarski-Montague-Kamp tradition, what we call
@@ -101,3 +105,16 @@ Here we will discuss three well known ranges of ‘pragmatic’ phenomena
 * Here we use a more systematic test set,
   * based conceptually on Winograd’s 1972 schemas and specifically
   * designed by Levesque, Davis, and Morgenstein (2012)
+
+# 9 The meaning of life
+
+## 9.4 A formal model
+
+* In 
+  * the proto-logic described here there is only one rule of deduction, called 
+    _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition. In
+  * standard systems of formal logic the main deductive rule is modus ponens,
+    but in our model modus ponens comes built into the set-theoretical underpinn
+  * if some x is wrong, say kicking your opponent when he is down, surely 2x is
+    also wrong, and we begin to see why we want the set W that corresponds to
+    the predicate wrong to be a cone.

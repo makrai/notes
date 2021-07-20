@@ -17,14 +17,14 @@ András Kornai
   it by phrase-structure or by transformational means.  For a summary of the
   early work see Findler, 1979, for later developments see Brachman and
   Levesque, 1985
-* Copestake et al., (2005) lists among their desiderata underspecifiability,
+* Copestake+ (2005) lists among their desiderata underspecifiability,
   that “Semantic representations should allow underspecification (leaving
   semantic distinctions unresolved), in such a way as to allow flexible,
   monotonic resolution of such partial semantic representations”. Whether
   monotonic resolution is always feasible is a complex issue we cannot delve
   into here,
 * major ACR systems such as those of Schank, (1972), Sowa, (2000), Abstract
-  Meaning Representations (AMR, see Banarescu et al., 2013)
+  Meaning Representations (AMR, see Banarescu+ 2013)
 * (hyper)graphs
   * Hyperedge Replacement Grammars (Drewes, Kreowski, and Habel, 1997) or
   * s-graph grammars (Koller, 2015)
