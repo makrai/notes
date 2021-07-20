@@ -3,7 +3,13 @@ Analogy-based Detection of Morphological and Semantic Relations
 Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
 2016
 
-# Analogy datasets in other languages :
+# Newer papers
+
+* Inducing relational knowledge from BERT
+  Z Bouraoui, J Camacho-Collados… - 
+  AAAI 2020
+
+## Analogy datasets in other languages :
 
 * https://aclanthology.org/L18-1320.pdf
   MGAD: Multilingual Generation of Analogy Datasets 
@@ -11,9 +17,6 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
 * https://aclanthology.org/2020.lrec-1.501.pdf
   Multilingual Culture-Independent Word Analogy Datasets 
   Matej Ulčar, Kristiina Vaik, J Lindström, M Dailidėnaitė, M Robnik-Šikonja
-* Inducing relational knowledge from BERT
-  Z Bouraoui, J Camacho-Collados… - 
-  AAAI 2020
 
 # Abstract
 
