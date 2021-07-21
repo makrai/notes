@@ -10,8 +10,8 @@ Varsha D. Badal, SA Graham, Depp, Shinkawa, Yamada, Palinkas, Kim, Cheol, Jeste
   * interviews
     * qualitative (e.g., open-ended or semi-structured interviews) and
     * quantitative (e.g., based on the University of California Loneliness Scal)
-* nuanced features such as word choice, expressed emotions, and sentence
-  structure are not easily assessed by the human eye. Unstructured speech data
+* nuanced features are not easily assessed by the human eye
+  * such as word choice, expressed emotions, and sentence structure
 * NLP e.g. parts-of-speech tagging, named entity recognition and parsing
   * NLU is a subset of NLP which is more aligned with comprehension
     * tasks such as reasoning, translation, summarization, question-answering,

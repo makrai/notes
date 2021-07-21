@@ -4,7 +4,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 # Abstract
 
-* Empirical results ... including to show attentional focus, emotionality,
+* Empirical results including to show attentional focus, emotionality,
   social relationships, thinking styles, and individual differences
 
 # Computerized Text Analysis: A Brief History
@@ -25,7 +25,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     various interpersonal and psychological topics
   * later used in the psychiatric diagnoses of cognitive impairments,
     alcohol abuse, brain damage, and mental disorders
-  * Attempts [to a computer program have] modest correlations to the
+  * Attempts to a computer program have modest correlations to the
     judge-based “gold standard” (e.g., Gottschalk & Bechtel, 1993)
 * first general purpose computerized text analysis program in psychology was
   developed by Philip Stone and his colleagues
@@ -37,7 +37,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     personality dimensions, and evaluating speeches
 * the physician Walter Weintraub (1981, 1989)
   * pronouns and articles
-  * first-person singular pronouns [were] linked to ... depression
+  * first-person singular pronouns were linked to depression
 
 # The Development of LIWC and the Psychometrics of Words
 
@@ -48,33 +48,33 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * even with in-depth training, judges do not agree with each other
     * rating essays by multiple judges is extremely slow and expensive; and
     * judges tend to get depressed when reading depressing stories
-* Martha Francis and [Pennebaker began developing a] text analysis program
+* Martha Francis and Pennebaker began developing a text analysis program
 
 ## The Logic and Development of LIWC
 
-* LIWC program has [a] processing component and the dictionaries
+* LIWC program has a processing component and the dictionaries
 * calculate the percentage of each LIWC category
 * categories
   * positive and negative emotion
-  * thinking styles ... self-reflection, and causal thinking
+  * thinking styles self-reflection, and causal thinking
   * more than 80
 * For all subjective categories, an initial selection of word candidates was
   gleaned from dictionaries, thesauruses, questionnaires, and lists made by
   research assistants. two rounds of ratings
   * initial LIWC judging took place between 1992 and 1994
-  * significant [revision] in 1997 and again in 2007
-  * For details ... see Pennebaker, Chung, Ireland, Gonzales, and Booth (2007)
+  * significant revision in 1997 and again in 2007
+  * For details see Pennebaker, Chung, Ireland, Gonzales, and Booth (2007)
 
 ## The Psychometrics of Word Usage
 
 ## Content Versus Style Words [function words]
 
-* goal was to ... tap
-  * both psychological processes and the [topic]
-* content and [function] words [are] processed in the brain very
-  differently (Miller, 1995)
-* style words are [linked to] people’s social and psychological worlds
-  * the reader [needs to know] who “I” and “you” refer to.  Where is “here”
+* goal was to tap
+  * both psychological processes and the topic
+* content and function words are processed in the brain very differently
+  (Miller, 1995)
+* style words are linked to people’s social and psychological worlds
+  * the reader needs to know who “I” and “you” refer to.  Where is “here”
   * referents that are shared by two people in a particular conversation
   * (cf. Chung & Pennebaker, 2007)
   * detect emotional and biological states, status, honesty
@@ -88,26 +88,26 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 ## Attentional Focus: Pronouns and Verb Tense
 
-* language use ... can tell us where they are attending
+* language use can tell us where they are attending
   * such as tracking people’s gaze
-* content word categories ... death, sex, money, or friends will refer to them
+* content word categories death, sex, money, or friends will refer to them
 * Function words, such as
   * personal pronouns
-    * People who are experiencing physical or emotional pain ... use more
+    * People who are experiencing physical or emotional pain use more
       first-person singular pronouns (e.g., Rude, Gortner, & Pennebaker, 2004)
-    * teasing, interaction with sex ... men may focus more on the perpetrator
+    * teasing, interaction with sex men may focus more on the perpetrator
       of the event when they are the victim
     * first-person plural pronouns—“we,” “us,” and “our.”
       * can signal a sense of group identity, such as when couples
-      * Royal We, such as when the [boss says] that "we need to analyze that"
-        * by political figures ... in Pennebaker & Lay (2002)
+      * Royal We, such as when the boss says that "we need to analyze that"
+        * by political figures in Pennebaker & Lay (2002)
     Rudoph Guiliani in Pennebaker & Lay, 2002)
   * tense of common verbs can tell us about the temporal focus of attention
-    * positive [political] ads used more present and future tense verbs, and
+    * positive political ads used more present and future tense verbs, and
       negative ads used more past tense verbs (Gunsch+ 2000)
-    * recall an event that they had discussed with someone else [vs]
+    * recall an event that they had discussed with someone else vs
       undisclosed event
-      * significant differences in the verb tense used ... (Pasupathi, 2007)
+      * significant differences in the verb tense used (Pasupathi, 2007)
       * greater past tense in discussing a disclosed event and
         greater present tense in discussing an undisclosed event
       * could indicate increased psychological distance and
@@ -115,13 +115,13 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 ## Emotionality: Positive and Negative Emotions
 
-* Use of emotion words [as a measure] of immersion [belemerülés]
+* Use of emotion words as a measure of immersion belemerülés
   * higher use of emotion words showed more immersion in the traumatic event,
     which led to increased experience of physical pain (Holmes+ 2007)
-* cognitive complexity [thinking styles], and social awareness
+* cognitive complexity thinking styles, and social awareness
   * emotion words were correlated
-    * negatively with articles[, prepositions,] and relativity words
-    * positively with pronoun use[, auxiliary verb use,] and negation use
+    * negatively with articles, prepositions, and relativity words
+    * positively with pronoun use, auxiliary verb use, and negation use
       * All correlations are highly significant, p < .001
 
 ## Social Relationships
@@ -153,7 +153,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * type of
   * first-person plural pronouns may be important, if “we” is being used
     * promote interdependence as in “we can do this;” it may
-    * increase group cohesion if ... it is being used to indirectly assign
+    * increase group cohesion if it is being used to indirectly assign
       tasks as it may lead to resentment
   * assents (e.g., agree, OK, yes) could signal increased group consensus
     * Later in a group task, assents may signal consensus,
@@ -165,7 +165,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * Deceptive statements
   * moderately descriptive, distanced from self, and more negative. Newman+
   * more motion words (e.g., arrive, car, go), fewer exclusion words
-* the people being deceived ... also changed their language
+* the people being deceived also changed their language
   * both used a higher total word count, less first-person singular, and more
     sense words
 * complexity
@@ -174,7 +174,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * Deceptive statements are balanced in descriptiveness because
     * enough description is required to convince the other person
     * too much information might reveal inaccuracies
-  * non-naïve individuals assigned to be deceptive ... showed less diversity
+  * non-naïve individuals assigned to be deceptive showed less diversity
   * Complexity may be reduced in deceptive speech because of the cognitive load
 
 ## Close Relationships
@@ -182,8 +182,8 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * first-person plural (“we”) has not been found to be related to higher
   relationship quality
 * second-person pronouns was negatively related to relationship quality
-  * more second person ... scored higher on measures of criticism and having an
-    overinvolved emotional reaction ... hostility
+  * more second person scored higher on measures of criticism and having an
+    overinvolved emotional reaction hostility
   * heterosexual romantic partners
 
 ## Thinking Styles: Conjunctions, Nouns, Verbs, and Cognitive Mechanisms
@@ -198,16 +198,16 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * complexity
   * Prepositions (e.g., to, with, above), cognitive mechanisms (e.g., cause,
     know, ought), and words greater than six letters are all also indicative
-    * [in] journal articles, authors use more prepositions in the discussion
+    * in journal articles, authors use more prepositions in the discussion
       than the introduction or abstract
-* active process of reappraisal [újraértékelés] ... in describing a past event
+* active process of reappraisal újraértékelés in describing a past event
   * two subcategories of cognitive mechanisms,
     * causal words (e.g., because, effect, hence) and
     * insight words (e.g., think, know, consider),
   * led to greater health improvements
 * in recounting a personal story younger participants used more filler words
   compared with older participants
-  * no difference [when] story based on a picture
+  * no difference when story based on a picture
 
 ## Individual Differences
 
@@ -215,7 +215,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * become less self-focused, refer more to the moment, and
   * do not decline in verbal complexity
   * insight words, future tense verbs, and exclusive words increased
-  * both in studies of different individuals ... and of authors over time
+  * both in studies of different individuals and of authors over time
   * counter to expectations,
     * attention to time is more present and future oriented, and
     * verbal complexity may increase or at least stay the same
@@ -223,13 +223,13 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * Sex differences in language use show that
   * women use more social words and references to others, and
   * men use more complex language
-  * effect [of] use of swear words, feeling words, and present tense verbs
+  * effect of use of swear words, feeling words, and present tense verbs
 * big-five personality traits, extraversion
   * higher word count and fewer large words predicted extraversion
-  * categories of complexity [were less frequent in] extraversion
+  * categories of complexity were less frequent in extraversion
   * Social and emotional language also differed with respect to extraversion;
     * more positive emotion, and less negative emotion. The
-  * findings ... support traditional personality models
+  * findings support traditional personality models
 
 # Conclusion
 

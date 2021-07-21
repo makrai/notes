@@ -22,26 +22,26 @@ lexikai skálák!
 
 * A közösségiség az egyén/csoporttag más egyénekhez/csoporttagokhoz fűződő
   viszonyának minőségét jellemzi a társakkal való együttműködés és a
-  csoportcéloknak való alárendelődés erkölcsi normái szerint 
+  csoportcéloknak való alárendelődés erkölcsi normái szerint
   (például becsületes, hűséges, barátságos, tisztelettudó)
 * ágencia a célkövető viselkedés hatékonysága szempontjából jellemzi az
-  egyént (például céltudatos, hozzáértő, önérvényesítő, sikeres; [2]).
+  egyént (például céltudatos, hozzáértő, önérvényesítő, sikeres; [2])
 * dimenziópárokat azonosítottak, amelyek a közösségiség és az ágencia
-  dimenzióinak feleltethetők meg 
-  * barátságosság/erkölcsösség és kompetencia [3,7,27,28]; 
-  * társas hatékonyság és intellektuális hatékonyság [20]; 
-  * társas haszon és egyéni haszon [17]; 
+  dimenzióinak feleltethetők meg
+  * barátságosság/erkölcsösség és kompetencia [3,7,27,28];
+  * társas hatékonyság és intellektuális hatékonyság [20];
+  * társas haszon és egyéni haszon [17];
   * társas kívánatosság és társas haszon [5])
-* ágencia modul a történet szereplőinek tulajdonított cselekvőképességet méri , 
-  * aktív és passzív igékben, valamint a szándék és a kényszer intencionális
-    állapotaiban kifejeződő [6]. 
+* ágencia modul a történet szereplőinek tulajdonított cselekvőképességet méri
+  * aktív és passzív igékben, valamint 
+    a szándék és a kényszer intencionális állapotaiban kifejeződő [6]
   * Az értékelés modulhoz képest újdonsága, hogy a nyelvi értékeléseket a
     valencia (pozitív/negatív) mellett
-  * Szófajilag lehetnek a személy vagy viselkedés minőségét leíró 
-    * melléknevek (tisztességes/gerinctelen; intelligens/buta), viselkedést leíró 
+  * Szófajilag lehetnek a személy vagy viselkedés minőségét leíró
+    * melléknevek (tisztességes/gerinctelen; intelligens/buta), viselkedést leíró
     * igék (összefog/átver; győz/megbukik), vagy a viselkedés minőségét leíró,
     * melléknevekből és igékből képzett határozószók, ítélet részei pedig ezek
-    főnévi alakjai vagy absztrakt fogalmi kategóriák.
+      főnévi alakjai vagy absztrakt fogalmi kategóriák
 
 ## 1.4 Érzelmi polaritás modul
 
@@ -55,5 +55,5 @@ lexikai skálák!
 13. László, J., Csertő, I., Fülöp, É., Ferenczhalmy, R., Hargitai, R., Lendvai,
     P., Péley, B., Pólya, T., Szalai, K., Vincze, O., Ehmann, B.:
   Narrative Language as an Expression of Individual and Group Identity:
-    The Narrative Categorical Content Analysis.
+    The Narrative Categorical Content Analysis
   SAGE Open 3/2 (2013) 1–12
