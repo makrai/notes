@@ -1,6 +1,6 @@
-Richard Futrell, E Wilcox, TMorita, Peng Qian, Miguel Ballesteros, Roger Levy
 Neural Language Models as Psycholinguistic Subjects:
   Representations of Syntactic State
+Richard Futrell, E Wilcox, TMorita, Peng Qian, Miguel Ballesteros, Roger Levy
 arXiv preprint arXiv:1903.03260
 
 experimental items, results, and analysis scripts available online at

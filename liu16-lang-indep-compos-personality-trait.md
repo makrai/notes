@@ -7,9 +7,9 @@ Fei Liu, Julien Perez, Scott Nowson
 
 * Many methods have been used to recognise author personality
   * e.g. linear regression or Support Vector Machines
-* This work uses deep-learning based models [on]
-  * characters to build hierarchical ... word and sentence representations
-  * applied to a corpus of tweets, shows state-of-the-art performance across
+* This work uses deep-learning based models on
+  * characters to build hierarchical word and sentence representations
+  * applied to a corpus of tweets, shows SOTA performance across
     five traits and three languages (English, Spanish and Italian)
   * preliminary visualisation work, are encouraging for the ability to detect
     complex human traits
@@ -19,8 +19,8 @@ Fei Liu, Julien Perez, Scott Nowson
 * modelling people from their language
   * language use is known to be influenced by sociodemographic characteristics
     such as gender and personality (Tannen, 1990; Pennebaker+ 2003)
-  * personality traits ... are considered temporally stable (Matthews+ 2003),
-    * thus our model ... is enriched by the acquisition of more data over time
+  * personality traits are considered temporally stable (Matthews+ 2003),
+    * thus our model is enriched by the acquisition of more data over time
     * Extroversion, emotional Stability, Agreeableness, Conscientiousness and
       Openness
 * Computational personality recognition
@@ -28,13 +28,13 @@ Fei Liu, Julien Perez, Scott Nowson
   * in the PAN Author Profiling challenge at CLEF in 2015 (Rangel+ 2015)
   * Much prior literature in this field has used some variation of enriched
     bag-of-words; e.g. the Open vocabulary approach (Schwartz+ 2013)
-  * relationship between word use and traits ... (Pennebaker+ 2003)
-  * levels of representation [such as syntactic, semantic, and] the
+  * relationship between word use and traits (Pennebaker+ 2003)
+  * levels of representation such as syntactic, semantic, and the
     psychologically-derived lexica of LIWC (Pennebaker+ 2015)
-* the relationship between language and personality is not consistent across
-  all forms of communication (Nowson and Gill 2014)
+* the relationship between language and personality is
+  not consistent across all forms of communication (Nowson and Gill 2014)
 * task is framed as supervised sequence regression
-  * classification of [short] texts ... state-of-the-art BoW based approaches
+  * classification of short texts SOTA BoW based approaches
     * Han and Baldwin, 2011
 * we propose a novel recurrent and compositional neural network architecture,
   capable of constructing representations at character, word and sentence level
@@ -42,7 +42,7 @@ Fei Liu, Julien Perez, Scott Nowson
   1. inferring personality for users
     * user-level evaluation is the common practice
   2. short text level analysis
-  * state-of-the-art performance across five personality traits and three langs
+  * SOTA performance across five personality traits and three langs
 
 # Related work
 
@@ -57,8 +57,8 @@ Fei Liu, Julien Perez, Scott Nowson
   * latent semantic analysis for topic modelling
   * external resources such as LIWC (Pennebaker+ 2015)
     * represents over 20 years of psychology-based feature engineering
-    * When [tweets, however, LIWC requires] cleaning (Kreindler, 2016)
-* small data `=>` few Deep-learning based approaches
+    * When tweets, however, LIWC requires cleaning (Kreindler, 2016)
+* small data `=>` few deep-learning based approaches
   * Kalghatgi+ (2015) personality prediction of users
     * hand-crafted grammatical and social behavioral features from each user
     * 5 personality traits
@@ -68,15 +68,15 @@ Fei Liu, Julien Perez, Scott Nowson
     * LIWC-based and grammatical features
     * focus is on the prediction of trait scores on the user level
   * this paper: trait scores from a single short text
-* [our] model
+* our model
   * inspired by
     * Ling+ (2015) c2w
       * character-level LSTM
       * Topped by a softmax layer at each word
       * applied to LM, POS tagging
     * Yang+ (2016) introduced Hierarchical Attention Networks where the
-      * representation of a sentence [from] words using a bi-directional GRU
-      * documents from sentences ... by another bi-directional GRU at the
+      * representation of a sentence from words using a bi-directional GRU
+      * documents from sentences by another bi-directional GRU at the
       * Word to Sentence to Document, W2S2D
   * Character to Word to Sentence for Personality Trait, C2W2S4PT
 

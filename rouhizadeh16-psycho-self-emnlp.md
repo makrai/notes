@@ -29,6 +29,19 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
   1. exploring the integration of verbal semantic categories
     in the analysis of pronouns
 
+# 2 Background
+
+* pronoun use with regard to age, gender, and personality types. In fact, a
+  * “The Secret Life of Pronouns” summarizing such studies (Pennebaker, 2011)
+  * Pennebaker+ (2003) and Chung & Pennebaker (2007) found that the use of
+    self-references (i.e. ‘I’, ‘me’) decreases over age. 
+  * Pennebaker+ (2003), and Argamon+ (2007) showed that females use
+    significantly more first-person singular personal pronouns
+  * Bucci and Freedman (1981), Weintraub (1981), and Zimmermann+  (2013) found
+    that first-person singular pronouns are positively correlated with
+    depressive symptoms. These analyses do 
+  * not take the role of syntactic and semantic context into consideration
+
 # 3 Method
 
 ## Data Set: Facebook Status Updates
@@ -43,8 +56,8 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * Canonical Correlation Analysis (CCA)
   * a multiview dimensionality reduction technique
   * previously ... used in word clustering methods such as
-    * word embeddings (Dhillon et al., 2011), or
-    * multilingual word embeddings (Ammar et al., 2016)
+    * word embeddings (Dhillon+ 2011), or
+    * multilingual word embeddings (Ammar+ 2016)
     * advantage[:] we can leverage both the subject and object context
     * we performed sparse CCA on
   * input matrices
@@ -126,7 +139,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
   coefficients
   * above .1 are considered noteworthy and
   * above .3 are considered approaching a “correlational upper-bound"
-    (Meyer et al., 2001)
+    (Meyer+ 2001)
 * Tables 2, 3, and 4 show the most predictive features,
   using the best performing clustering method (i.e. Levin & Sentiment)
   * in the case of age and gender ...  the direction completely changes
