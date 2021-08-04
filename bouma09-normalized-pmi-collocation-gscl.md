@@ -5,7 +5,7 @@ GSCL, 2009
 # Abstract
 
 * more easily interpretable and less sensitive to occurrence frequency
-* small empirical study ... in a collocation extraction setup
+* small empirical study in a collocation extraction setup
 
 # Introduction
 
@@ -26,7 +26,7 @@ GSCL, 2009
     techniques for collocation extraction
   * different target collocations may be found most effectively with different
     methods and measures. It is therefore useful to have access to a wide array
-* In this paper, we introducing two ... normalized variants of (P)MI
+* In this paper, we introducing two normalized variants of (P)MI
   * motivated by the desire to
     * values have a fixed interpretation; and
     * in the case of PMI, reduce a known sensitivity for low frequency data
@@ -49,7 +49,7 @@ GSCL, 2009
 # 3 normalized variants
 
 * several ways of normalizing MI and PMI, as
-  in both cases the maximum value ... coincides with several other measures
+  in both cases the maximum value coincides with several other measures
 
 ## 3.1 Normalized PMI: /= ln p(x, y)
 

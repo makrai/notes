@@ -6,4 +6,4 @@ ACM SIGIR Forum, 2021 dl.acm.org
 # 1 Background
 
 * past two workshops [Jorge+ 2018, 2019a] and on the 
-* Text2Story Special Issue at IPM Journal [Jorge+ 2019b], this year, we
+* Text2Story Special Issue at IPM Journal [Jorge+ 2019b]

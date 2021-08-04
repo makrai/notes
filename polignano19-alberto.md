@@ -1,4 +1,4 @@
-AlBERTo: Italian BERT language understanding model for NLP challenging tasks based on tweets
+AlBERTo: Italian BERT LM for NLP challenging tasks based on tweets
 Polignano M.; Basile P.; de Gemmis M.; Semeraro G.; Basile V
 CLiC-it 2019
 
@@ -6,7 +6,7 @@ Model repository: https://github.com/ marcopoli/AlBERTo-it
 
 # Abstract: 	
 
-* AlBERTo is focused on the language used in Twitter. To demonstrate its
+* AlBERTo is focused on the language used in Twitter
 * evaluated AlBERTo on the EVALITA 2016 task SENTIPOLC (SENTIment POLarity
   Classification) obtaining SOTA results in subjectivity, polarity and irony
   detection on Italian tweets
@@ -18,41 +18,40 @@ Model repository: https://github.com/ marcopoli/AlBERTo-it
 
 # 3 AlBERTo
 
-* language used on social networks is different from the formal one, also as a
-  * mentions, uncommon terms, links, and hashtags that are not present
+* language used on social networks is different from the formal one
+  * mentions, uncommon terms, links, and hashtags
 * we excluding the step based on “next following sentence”. This is a crucial
   * in the case of tweets, we do not have cognition of a flow of tweets as it
-    happens in a dialog. For this reason, we are aware that
-  * AlBERTo is not suitable for the task of question answering, where this
+    happens in a dialog
+  * AlBERTo is not suitable for the task of question answering for this reason
 * we are considering the possibility to learn an Italian ELMo model and to
   compare it with the here proposed model
 
 # 4 Evaluation and Discussion of Results
 
-* a task of sentiment analysis for the Italian language. In particular, we
+* a task of sentiment analysis for the Italian language
 * data released for the SENTIPOLC (SENTIment Polarity Classification) shared
   task (Barbieri+ 2016) carried out at EVALITA 2016 (Basile+ 2016) whose tweets
-  comes from a distribution different from them used for training AlBERTo. It
+  comes from a distribution different from them used for training AlBERTo
 * three subtasks:
-  * Subjectivity Classification: “a system must decide whether a given message
-    is subjective or objective”;
-  * Polarity Classification: “a system must decide whether a given message is
-    of positive, negative, neutral or mixed sentiment”;
-  * Irony Detection: “a system must decide whether a given message is ironic or
-    not”
+  * Subjectivity Classification: a system must decide whether a given message
+    is subjective or objective
+  * Polarity Classification: a system must decide whether a given message is
+    of positive, negative, neutral or mixed sentiment
+  * Irony Detection: a system must decide whether a given message is ironic
 * tagged with six fields containing values related to manual annotation:
   subj, opos, oneg, iro, lpos, lneg
   * subjective, positive, negative, ironical, literal positive, literal negative
   * 1 where the sentence satisfy the label, a 0 instead
-  * “lpos” and “lneg” not been considered in the official and the current eval 
+  * “lpos” and “lneg” not been considered in the official and the current eval
   * 7410 tweets have been released for training and 2000 for testing
-    * We do not used any validation set because we do not performed any phase of
-  * precision (p), recall (r) and F1-score (F1) for each class and for each
+    * We do not used any validation set
+  * precision (p), recall (r) and F1-score (F1) for each class
 
 ## AlBERTo fine-tuning
 
 * We fine-tuned AlBERTo four different times, in order to obtain one classifier
-  for each task except for the polarity where we have two of them. In
+  for each task except for the polarity where we have two of them
   * one classifier for the Subjectivity Classification, Polarity Positive,
     Polarity Negative and Irony Detection each
   * each time we have re-trained the model for three epochs, using a learning
@@ -63,9 +62,9 @@ Model repository: https://github.com/ marcopoli/AlBERTo-it
     three epochs as for the other classification tasks. The fine-tuning process
     lasted ∼ 4 minutes every time
 
-## Discussion of the results. The results reported in
+## Discussion of the results
 
 * Comparing AlBERTo with the best system of each subtask, we observe an increase
-  in results between 7% and 11%. The results obtained are exciting, from our
+  in results between 7% and 11%. The results obtained are exciting
 
 # 5 Conclusion

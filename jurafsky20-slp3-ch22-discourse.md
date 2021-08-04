@@ -2,10 +2,11 @@ Discourse Coherence
 from Daniel Jurafsky & James H. Martin: Speech and Language Processing ch22
 Draft of December 30, 2020
 
-* coherent groups of sentences: discourse, and we use the word coherence to
+* coherent groups of sentences: discourse, and we use the word coherence
 * local coherence and global coherence. Let’s consider
   * between adjacent or nearby sentences
-  * three ways in which real discourses are locally coherent;
+
+* three ways in which real discourses are locally coherent;
 1. related to nearby sentences in systematic ways. Consider this example from
   * Hobbs (1979). John took a train from Paris to Istanbul. He likes spinach./He
     had to attend a conference
@@ -14,8 +15,7 @@ Draft of December 30, 2020
 2. by virtue of being “about” someone or something
   * some entities are salient, and the discourse focuses on them
   * entity-based coherence
-  *
-g. incoherent: John wanted to buy a piano for his living room.  Jenny also
+  * incoherent: John wanted to buy a piano for his living room.  Jenny also
     wanted to buy a piano.  He went to the piano store.  It was nearby.  The
     living room was on the second floor.  She didn’t find anything she liked
     The piano he bought was hard to get up to that floor
@@ -29,6 +29,7 @@ g. incoherent: John wanted to buy a piano for his living room.  Jenny also
   * from a single semantic field or topic, they tend to exhibit the surface
   * lexical cohesion (Halliday and Hasan, 1976):
     * identical or semantically related words in nearby sentences.  For example,
+
 * global coherence. Many
   * genres of text are associated with particular conventional discourse structs
   * Academic articles might have sections describing the Methodology or Results
@@ -37,10 +38,10 @@ g. incoherent: John wanted to buy a piano for his living room.  Jenny also
     * a structured set of premises that support the argument and demolish count
 * coherence detection plays a part in any task that requires
   * measuring the quality of a text. For example coherence can help in
-    * essay grading or essay quality measurement that are trying to grade how
+    * essay grading or essay quality measurement
       (Somasundaran+ 2014, Feng+ 2014, Lai and Tetreault 2018). Coherence can
   * summarization; knowing the coherence relationship between sentences can help
-    know how to select information from them. Finally,
+    know how to select information from them
   * mental health tasks like measuring symptoms of schizophrenia or other kinds
     * detecting incoherent text may even play a role
     * Ditman and Kuperberg 2010
@@ -69,39 +70,39 @@ g. incoherent: John wanted to buy a piano for his living room.  Jenny also
 ### Rhetorical Structure Theory (RST)
 
 * Mann and Thompson, (1987). In RST
-* relations between two spans of text, generally a nucleus and a satellite. The
+* relations between two spans of text, generally a nucleus and a satellite
   * nucleus is the unit that is more central to the writer’s purpose and that is
     interpretable independently; the satellite is less central and generally is
     only interpretable with respect to the nucleus
 * Some symmetric relations, however, hold between two nuclei
-* examples of RST coherence relations, with definitions adapted from the RST
-  Treebank Manual (Carlson and Marcu, 2001)
+* examples of RST coherence relations, with 
+  definitions adapted from the RST Treebank Manual (Carlson and Marcu, 2001)
   * Reason: The nucleus is an action carried out by an animate agent and the
-    * [ NUC__Jane took a train from Paris to Istanbul._]
+    * [ NUC _Jane took a train from Paris to Istanbul._]
       [ SAT _She had to attend a conference._]
   * Elaboration: The satellite gives additional information or detail about the
-    * [ NUC__Dorothy was from Kansas._]
+    * [ NUC _Dorothy was from Kansas._]
       [ SAT _She lived in the midst of the great Kansas prairies._]
   * Evidence:
     * Elaboration, where the additional information is to convince the reader to
       accept the information presented in the nucleus
-    * [ NUC__Kevin must be here._] `[` SAT _His car is parked outside._`]`
+    * [ NUC _Kevin must be here._] `[` SAT _His car is parked outside._`]`
   * Attribution:
     * The satellite gives the source of attribution for an instance of reported
       speech in the nucleus
     * [ SAT _Analysts estimated_]
-      [ NUC__that sales at U.S. stores declined in the quarter, too]
+      [ NUC _that sales at U.S. stores declined in the quarter, too_]
   * List:
     * In this multinuclear relation, a series of nuclei is given, without
       contrast or explicit comparison: (22.11)
-    * [ NUC__Billy Bones was the mate;_ ]
-      [ NUC__Long John, he was quartermaster_]
+    * [ NUC _Billy Bones was the mate;_ ]
+      [ NUC _Long John, he was quartermaster_]
 * represented graphically, with an arrow from the satellite to the nucleus:
 * hierarchical structure between coherence relations. Figure 22.1 shows the
   * leaves in the Fig. 22.1 tree correspond to text spans of a sentence
   * elementary discourse units or EDUs in RST; these
   * also be referred to as discourse segments. Because these units may
-  * determining the boundaries of an EDU_is an important task for extracting
+  * determining the boundaries of an EDU is an important task for extracting
   * we generally draw on parsing algorithms to infer discourse structure
     * as we’ll see in Section 22.2
 * corpora for many discourse coherence models; the
@@ -112,17 +113,15 @@ g. incoherent: John wanted to buy a piano for his living room.  Jenny also
   * RST treebanks exist also for Spanish, German, Basque, Dutch and Brazilian Pt
     (Braud+ 2017)
 * in summarization or information extraction
-  *
-g. the nuclei of a text presumably express more important information than
-    the satellites, which might be dropped in a summary
+  * the nuclei of a text presumably express more important information 
+    than the satellites, which might be dropped in a summary
 
 ### Penn Discourse TreeBank (PDTB)
 
 * another model of coherence relations (Miltsakaki+ 04, Prasad+ 08, Prasad+ 14)
-  * lexically grounded. Instead of asking
-  * annotators were given a list of discourse connectives, words that signal
-
-g. _because, although, when, since_, or _as a result_. In a part of a text
+  * lexically grounded
+  * annotators were given a list of discourse connectives, words that signal 
+* _because, although, when, since_, or _as a result_
     * where these words marked a coherence relation between two text spans, the
       connective and the spans were then annotated, as in Fig.  22.13, where the
     * causal relationship between what PDTB calls Arg1 (the first two sentences,
@@ -131,8 +130,7 @@ g. _because, although, when, since_, or _as a result_. In a part of a text
     * annotator first insterts the word or phrase that could have been its
       signal (in this case _as a result_), and then labels its sense
     * ambiguous discourse connective
-g. _since_ are marked whether it is used
-      in a CAUSAL or a TEMPORAL sense
+* _since_ are marked whether it is used in a CAUSAL or a TEMPORAL sense
 * dataset contains roughly 18,000 explicit relations and 16,000 implicit
   * nothing above the span-pair level,
     no commitment with respect to higher-level discourse structure
@@ -144,16 +142,16 @@ g. _since_ are marked whether it is used
 
 ## 22.2 Discourse Structure Parsing
 
-### 22.2.1 EDU_segmentation for RST parsing
+### 22.2.1 EDU segmentation for RST parsing
 
 * RST parsing is generally done in two stages. The first stage,
-  * EDU_segmentation, extracts the start and end of each EDU. The output of this
+  * EDU segmentation, extracts the start and end of each EDU. The output of this
   * EDUs roughly correspond to clauses,
     * early models first ran a syntactic parser, and then post-processed
     * Modern systems generally use neural sequence models supervised by the gold
     * Wang+ (2018) and Muller+ (2019) use the biLSTM-CRF architecture we saw for
       named entity tagging and semantic role labeling.  Here the input sentence
-    * 1 indicates the start of an EDU_(except at the start of sentence)
+    * 1 indicates the start of an EDU (except at the start of sentence)
 
 ### 22.2.2 RST parsing
 
@@ -166,7 +164,7 @@ g. _since_ are marked whether it is used
 * We’ll describe the shift-reduce parser of Yu+ (2018). The parser
   * state consists of a stack and a queue, and produces this structure by taking
   * Actions include:
-    * shift: pushes the first EDU_in the queue onto the stack creating a
+    * shift: pushes the first EDU in the queue onto the stack creating a
       single-node subtree
     * reduce(l,d): merges the top two subtrees on the stack, where l is the
       coherence relation label, and d is the nuclearity direction, d ∈ {NN, NS,
@@ -200,7 +198,7 @@ g. _since_ are marked whether it is used
     for sense classification (Nie+ 2019)
 * Task 1 is to disambiguating discourse connectives from their non-discourse
   *
-g. as Pitler and Nenkova (2009) point out, the word _and_ is a
+* as Pitler and Nenkova (2009) point out, the word _and_ is a
     * discourse connective linking the two clauses by an elaboration/expansion
     * non-discourse NP conjunction in (22.25): (22.24) Selling picked up as
   * _once_ is a
@@ -274,11 +272,11 @@ g. as Pitler and Nenkova (2009) point out, the word _and_ is a
 
 ### 22.3.2 Entity Grid model
 
-* The entity grid model of Barzilay and Lapata (2008) is an alternative way to
+* The entity grid model of Barzilay and Lapata (2008) is an alternative way
   * using machine learning to induce the patterns of entity mentioning that make
     a discourse more coherent
 * entity grid, a two-dimensional array that represents the distribution of
-  entity mentions across sentences. The
+  entity mentions across sentences
   * rows represent sentences, and the columns represent discourse entities
     (most versions of the entity grid model focus just on nominal mentions)
   * values represent whether the entity appears and its grammatical role
