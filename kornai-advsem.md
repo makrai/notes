@@ -23,6 +23,11 @@ More complex notation
 
 # 2 
 
+## 2.1 Lexical categories and subcategories
+
+* we have much to say about events, actions, and event structure
+in 3.2 and 6.1,
+
 ## 2.4 Linking
 
 * more abstract, notional binaries 
@@ -46,6 +51,9 @@ More complex notation
 * Since our goals are remarkably close, and our motivations are nearly
   identical, readers of Jackendoff and Audring (2020) may find a direct
   comparison between the two formalisms helpful
+  * Turning to the semantic component, 
+    we avoid the system of linking and coindexation that J&A 4.13.1 rely on 
+    (the equalizers introduced in 3.3 will to some extent make up for this loss)
 
 # 3 Temporal and spatial semantics
 
