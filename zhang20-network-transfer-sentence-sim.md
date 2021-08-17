@@ -1,20 +1,19 @@
 Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Similarity
 Li Zhang, Steven R. Wilson, Rada Mihalcea
-arXiv:1804.07835 [cs.CL]
+arXiv:1804.07835 cs.CL
 
 * comput cost of fine tuning the embed?
 * Human Activity Phrase and SAG different from the rest
 
 # Abstract
 
-* Semantic similarity ... SOTA approach is to transfer sentence embeddings
+* Semantic similarity: SOTA approach is to transfer sentence embeddings
   pre-trained on large corpora to small in-domain training datasets
-  * classifier [optimized] for the downstream task
+  * classifier optimized for the downstream task
 * We
   * propose a new setting called direct network transfer, which
     * omits the classifier but
     * directly optimizes cosine similarity between embedding vectors
-  * various LSTM-based encoders, we show that this simple change can lead to
   * significantly better performance for several semantic similarity datasets
   * the choice of exactly how to perform transfer learning can
     greatly influence the performance in many cases,
@@ -24,26 +23,25 @@ arXiv:1804.07835 [cs.CL]
 
 * SemEval Semantic Textual Similarity (STS)
   (Agirre+ 2012; Agirre+ 2013; Agirre+ 2014; Agirre+ 2016; Cer+ 2017),
-* Two primary methods ... to compute the semantic similarity
+* Two primary methods to compute the semantic similarity
   * transfer learning to pre-trained sentence embeddings, by
     encoding each sentence into a fixed-length vector representation, and
-    fine-tune these representations with a separate classifier to predict [sim]
+    fine-tune these representations with a separate classifier to predict sim
     * In this paper, we focus on the first method which has demonstrated better
   * classical approach is to use interactions
     e.g. alignments, attention or other features like word overlap (Shao, 2017)
 * class of competent sentence encoders is based on
-  * transformers (Vaswani+ 2017).  While the transformer-based encoders have
-    * currently claimed stateof-the-art performance on the semantic similarity
+  * transformers (Vaswani+ 2017), SOTA performance on semantic similarity
   * LSTM (Hochreiter and Schmidhuber, 1997)
-    * we focus on [LSTM] due to the small size of their parameters and
+    * we focus on LSTM due to the small size of their parameters and
       robustness to hyperparameter selection
     * usually consist of two components: a
       * word embedding matrix, which maps words into fixed-length vectors, and
         * usually initialized with pre-trained word embeddings
       * encoder LSTM: maps a sequence of word embeds to a single sentence embed
-        * learned via a large corpus. The sentence embeddings produced by the
+        * learned via a large corpus
 * classifier (e.g., logistic regression) is often added on top of the encoding
-  * set of parameters [for] each of the three components: wem, enc and cla
+  * set of parameters for each of the three components: wem, enc and cla
   * A subset of them are updated during transfer training,
     depending on the setting
 * We propose direct network transfer, an effective
@@ -51,10 +49,10 @@ arXiv:1804.07835 [cs.CL]
   * directly optimizes cosine similarity between sentence embeddings, no clasfr
   * all other parameters are updated. Without a classifier, direct network
     transfer omits all parameters in the output layer (changing “classifier” to
-    “cosine” in Figure 1). By experimenting with various combinations of
-    sentence encoders and semantic similarity datasets, we show that in many
-    cases direct network transfer performs better than learning an additional
-    classifier, while also having fewer parameters to learn
+    “cosine” in Figure 1)
+  * we experiment with various combinations of sentence encoders and semantic
+    similarity datasets, we show that in many cases direct network transfer
+    performs better than learning an additional classifier, with fewer params
 * contributions
   1. new fine-tuning setting called direct network transfer
     * improved results on the STS Benchmark (Cer+ 2017) and the
@@ -62,8 +60,8 @@ arXiv:1804.07835 [cs.CL]
   2. we compare a range of settings for semantic similarity using some of the
      best LSTM-based sentence encoders across an array of datasets
      * the choice of transfer learning settings generally greatly influences
-  3. we release the pre-trained and fine-tuned LSTM models to the public, which
-     can easily be used for downstream tasks related to semantic similarity
+  3. we release the pre-trained and fine-tuned LSTM models to the public
+    * can easily be used for downstream tasks related to semantic similarity
 
 # 2 Related Work
 
@@ -71,12 +69,12 @@ arXiv:1804.07835 [cs.CL]
 
 * sentence encoders or contexutalized word representations
   (Kiros+ 2015; Arora+ 2016; Wieting+ 2015b; Wieting and Gimpel, 2017a;
-  Conneau+ 2017; Pagliardini+ 2017; Subramanian+ 2018; Cer+ 2018; Logeswaran
-  and Lee, 2018; Peters+ 2018; Devlin+ 2018), which have demonstrated
-  * impressive performance on the semantic similarity task. These sentence
+  Conneau+ 2017; Pagliardini+ 2017; Subramanian+ 2018; Cer+ 2018; 
+  Logeswaran and Lee, 2018; Peters+ 2018; Devlin+ 2018)
+  * impressive performance on the semantic similarity task
   * pre-trained on large corpora, usually obtained with minimal supervision
-  * different architectures and training objectives, but they all produce
-  * sentence embeddings ... are later used to transfer to downstream tasks
+  * different architectures and training objectives
+  * sentence embeddings are later used to transfer to downstream tasks
 
 # 2.2 Fine-Tuning Settings
 
@@ -98,14 +96,14 @@ arXiv:1804.07835 [cs.CL]
 
 ## 3.1 Motivation
 
-* semantic similar-ity [objective] boosts the performance of domain adaptation
-  of general-purpose sentence embeddings, with little cost of modifying the
-  model and the benefit of faster fine-tuning
+* semantic similarity objective boosts the performance of domain adaptation
+  of general-purpose sentence embeddings, 
+  with little cost of modifying the model and the benefit of faster fine-tuning
 
 ## 3.2.  Definition
 
-* cosine ... should be close to the normalized annotated score. We normalize
-* more discussion on normalization below. With sentence embeddings h L and h R
+* cosine should be close to the normalized annotated score
+* more discussion on normalization below
 
 # 4.  Experimental Setup 3
 
@@ -116,9 +114,9 @@ arXiv:1804.07835 [cs.CL]
     * a selection of the English datasets used in SemEval 2012--2017, designed to
   * SICK relatedness (Marelli+ 2014)
     * Sentences Involving Compositional Knowledge benchmark, which includes a large
-    * rich in the lexical, syntactic and semantic [compositionality] phenomena
+    * rich in the lexical, syntactic and semantic compositionality phenomena
   * STS 2012 (Agirre+ 2012): the first Semantic Textual Similarity (STS) shared
-    * this [year] has both training and testing data
+    * this year has both training and testing data
       ideal for transfer learning evaluation. The annotated scores range from 0 to
   * Human Activity Phrase (Wilson and Mihalcea, 2017): a collection of
     * pairs of phrases describing human activities, annotated in four dimensions:
@@ -138,7 +136,7 @@ arXiv:1804.07835 [cs.CL]
 ## 4.2. Models
 
 * We experiment on the following pre-trained sentence encoders, which have
-  * state-of-the-art results on various downstream tasks, including sem sim
+  * SOTA results on various downstream tasks, including sem sim
   * Infersent (Conneau+ 2017): a
     bi-directional LSTM with max pooling
     trained on the Stanford Nat Lang Inference (SNLI) dataset (Bowman+ 2015)
@@ -157,14 +155,14 @@ arXiv:1804.07835 [cs.CL]
 * As discussed in Related Work, there are typically three transfer settings:
   * The implementation details are as follows
 * Unsupervised evaluation: the pre-trained sentence encoder is directly applied
-* Feature transfer: we use the code from SentEval 4 which follows Tai+ (2015)
-  * sentence embeddings ... as fixed input features to a
+* Feature transfer: 
+  * we use the code from SentEval 4 which follows Tai+ (2015)
+  * sentence embeddings as fixed input features to a
     classifier consisting of a dense layer and a softmax layer
 * Network transfer:
-  word embedding matrix and encoder ... alongside the classifier, constitute an
-  end-to-end model. In this model,
-  all three sets of parameters (wem, enc, cla) can be updated (receiving
-  gradients) or frozen (not receiving gradients)
+  word embedding matrix and encoder alongside the classifier, constitute an
+  end-to-end model
+  * all three sets of parameters (wem, enc, cla) can be updated or frozen
   * We compare two scenarios: 1.  all three are updated, 2. only wem is frozen
 
 # 5. Experiments 4
@@ -172,13 +170,13 @@ arXiv:1804.07835 [cs.CL]
 ## 5.3 Annotated Score Normalization
 
 * we want to optimize the cosine similarity between embeddings to be close to
-  [normalized annotated scores] that value
-* Though cosine [falls] in [−1, 1],  embedding vectors are mostly non-negative
+  normalized annotated scores
+* Though cosine falls in [−1, 1],  embedding vectors are mostly non-negative
 * normalizing to [0, 1] is almost always superior
-  * except [for] perceived actor congruence (PAC) of the Human Activity Phrase
+  * except for perceived actor congruence (PAC) of the Human Activity Phrase
   * PAC score of −2 suggests that two activities are very unlikely to be done
-    often by the same type of person (e.g., “have dinner with friends” and “eat
-  * these pairs may actually exhibit a degree of semantic relatedness. If the
+    often by the same type of person (e.g. have dinner with friends/by oneself)
+  * these pairs may actually exhibit a degree of semantic relatedness
 
 # 6. Conclusion and Future Work
 

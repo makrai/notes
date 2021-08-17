@@ -4,13 +4,13 @@ Appl. Sci. 2020, 10(3), 958; https://doi.org/10.3390/app10030958
 
 # Abstract
 
-* bidirectional encoder representations from transformers (BERT) has attracted
+* bidirectional encoder representations from transformers (BERT)
 * different sentence components serve diverse roles in the meaning of a sent
   * subject, predicate, and object serve the most crucial roles
 * [our] representation consists of a
   * basic part which refers to the complete sentence, and a
   * component-enhanced part: subject, predicate, object, and their relations
-  * weight factor ... to adjust the ratio of the two parts to obtain the
+  * weight factor to adjust the ratio of the two parts to obtain the
 * evaluate [on] semantic textual similarity and entailment classification
   * significant performance gain compared to other methods
 
