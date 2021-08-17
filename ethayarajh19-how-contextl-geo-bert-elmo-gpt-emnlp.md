@@ -2,7 +2,7 @@ Kawin Ethayarajh
 How Contextual are ...? Comparing the Geometry of BERT, ELMo, and GPT-2
 EMNLP 2019
 
-                                extracting some use from contextualizing models
+> extracting some use from contextualizing models
 
 #Abstract
 
