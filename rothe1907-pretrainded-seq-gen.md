@@ -7,7 +7,7 @@ TACL arXiv:1907.12461 [cs.CL]
 
 # Abstract
 
-* We developed a Transformer-based sequence-to-sequence model that is
+* We developed a Transformer-based sequence-to-sequence model
   * compatible with publicly available pre-trained BERT, GPT-2 and RoBERTa chpts
   * initializing our model, both encoder and decoder, with these checkpoints
 * extensive empirical study on its utility
@@ -19,15 +19,14 @@ TACL arXiv:1907.12461 [cs.CL]
 * Unsupervised and self-supervised pre-training methods have established a
   qualitatively new level of baseline performance for many benchmarks
 * argued that the pre-training objective used by BERT is not well suited for
-  tasks that require decoding texts, e.g., conditional text generation in
-  machine translation and summarization (Yang+ 2019)
+  conditional text generation in machine translation and summarization (Yang+ 19)
 * remains unclear, how beneficial for sequence-to-sequence generation models
 * what is the best way to leverage publicly available pre-trained checkpoints
   for warm-starting sequence generation models?
   * e.g. BERT checkpoint to initialize the encoder and GPT-2 model as the decodr
-  * we rigorously experiment with a large number of different settings to
-    combine BERT, GPT and RoBERTa pre-trained checkpoints to initialize our
-    Transformer-based model. We report results on
+  * we rigorously experiment with a large number of settings to 
+    combine BERT, GPT and RoBERTa pre-trained checkpoints 
+    to initialize our Transformer-based model. We report results on
     * three canonical conditional text generation tasks of increasing complexity
     * sentence-level fusion (DiscoFuse, Geva+ 2019) and
     * splitting (WikiSplit, Botha+ 2018)),
@@ -41,7 +40,7 @@ TACL arXiv:1907.12461 [cs.CL]
 * new SOTA results
 * a pre-trained encoder is an essential component for sequence generation tasks
 * often these tasks benefit from sharing the weights between the encoder/decoder
-* over 300 experiments spending thousands of TPU v3 hours to better accommodate
+* over 300 experiments spending thousands of TPU v3 hours
 * Training a language specific BERT model also improves performance over multiln
 
 # 2 Models and Pre-trained Checkpoints
@@ -54,7 +53,7 @@ TACL arXiv:1907.12461 [cs.CL]
 
 # 3 Investigated Model Variants
 
-* GPT A decoder-only architecture
+* GPT, a decoder-only architecture
   * We treat the input as a conditioning prefix of a language model
   * the memory footprint of this model is smaller compared to an encoder-decoder
 
@@ -63,17 +62,17 @@ TACL arXiv:1907.12461 [cs.CL]
 ## 4.4 Abstractive Summarization 6
 
 * BERT SHARE and ROBERTA SHARE summaries are unequivocally better 
-  than RND 2 GPT summaries in terms of both automatic evaluations (assessing
-  ROUGE) and human evaluations (assessing summary quality)
+  than RND 2 GPT summaries in terms of both automatic evaluations (ROUGE) and
+  human evaluation
 * truncation
   * input documents: to 512 tokens for CNN/DailyMail and BBC, and to 128 tokens
   * summaries was limited to 128 tokens for CNN/DailyMail, 64 for BBC, and 32
 * global batch size of 128 document-summary pairs for CNN/DailyMail and BBC, and
 * number of training steps depending on the training data sizes. Models were
-  trained for 500k, 300k and 200k steps for the Gigaword, CNN/DailyMail and BBC
-* standard publicly available test sets; these consists of 1951 instances for
-  Gigaword, 11490 for CNN/DailyMail and 11334 for BBC
-* We report on the ROUGE F 1 scores (Lin and Hovy, 2003); in particular, we
+  * 500k, 300k and 200k steps for the Gigaword, CNN/DailyMail and BBC
+* standard publicly available test sets; these consists of 
+  * 1951 instances for Gigaword, 11490 for CNN/DailyMail and 11334 for BBC
+* We report on the ROUGE F 1 scores (Lin and Hovy, 2003); in particular
   * ROUGE-1 and ROUGE-2 for informativeness and ROUGE-L for fluency in Table 5
 
 ### Document understanding 7
@@ -102,14 +101,14 @@ TACL arXiv:1907.12461 [cs.CL]
 * Gigaword: ROBERTA SHARE performs the best
   * on par with the current SOTA MASS model (Song+ 2019)
 * BBC extreme: The ROBERTA SHARE setup sets a new SOTA,
-  outperforming all existing baselines by a large margin on summarization
+  outperforming all existing baselines by a large margin
 * CNN/DailyMail dataset: The best model
   * outperforms the Pointer Generator network (See+ 2017) and
     the pre-trained single-decoder model with TransformerLM (Khandelwal+ 2019)
   * lags behind the
     * Bottom-Up system (Gehrmann+ 2018)
-      with a taskspecific module for content selection along with the copy
-      mechanism (Gu+ 2016) and the
+      with a taskspecific module for content selection 
+      along with the copy mechanism (Gu+ 2016)
     * UniLM model (Dong+ 2019)
       * BERT-Large pre-trained for Bidirectional, unidirectional and seq2seq LM
       * also fine-tuned with an additional extractive summarization objective to
@@ -137,8 +136,8 @@ TACL arXiv:1907.12461 [cs.CL]
 * sometimes the vocabulary given from a public checkpoint might not be optimal
   for a certain task
 * the BERT vocabulary was already optimal for DiscoFuse
-* GPT: still behind the fully initialized setup. Finally, we experimented with
-* a more sensitive way of training the model, meaning that
+* GPT: still behind the fully initialized setup. 
+* Finally, we tried a more sensitive way of training the model
   * for 100k steps, we only train the new word embeddings
   * then we fine-tune the entire model for another 300k steps
   * still way behind the fully initialized setup
