@@ -76,7 +76,7 @@ https://github.com/BinWang28/SBERT-WK-Sentence-Embedding
     * SIF uses the random walk to model the sentence generation process and
       derives word weights using the maximum likelihood estimation (MLE)
     * uSIF extends SIF by introducing an angular-distance-based random walk
-      * No hyper-parameter tuning is needed in uSIF
+      * No hyper-parameter tuning is needed
       * [28] K. Ethayarajh,
         “Unsupervised random walk sentence embeddings: A strong but simple bl”
         Representation Learning for NLP, 2018

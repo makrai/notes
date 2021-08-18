@@ -52,9 +52,8 @@ https://github.com/Jun-jie-Huang/WhiteningBERT
     (Li+ 2020; Zhang+ 2020; Mu and Viswanath, 2018)
   * not: some works propose weighted average word embeddings based on word
     features (Arora+ 2017; Ethayarajh, 2018; Yang+ 2019; Wang and Kuo, 2020)
-    hE, these approaches need further training or additional features, which
-    limits the direct applications of sentence embeddings in real-world
-    scenarios
+    * hE, these approaches need further training or additional features, which
+      limits the direct applications of sentence embeddings in real-world scens
 * concurrent to this work, Su+ (2021) also explored whitening sentence embed,
   released to arXiv one week before our paper
   * Jianlin Su, Jiarun Cao, Weijie Liu, and Yangyiwen Ou

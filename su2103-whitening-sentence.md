@@ -25,7 +25,8 @@ The source code is available at https://github.com/bojone/BERT-whitening
   * they occupy a narrow cone in the vector space, and are therefore
   * Ethayarajh, (2019) has proved that
     * in contextual word embeddings two word embeddings have, on average, a
-      cosine similarity of 0.99. Further investigation from (Li+ 2020) found
+      cosine similarity of 0.99
+  * Li+ (2020) found
     * word frequency biases the embedding space
     * low-frequency words disperse sparsely, which lead to cause the difficulty
 * To address the problem aforementioned,

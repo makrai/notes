@@ -21,7 +21,7 @@ EMNLP-IJCNLP 2019
 
 * hierarchical nature of human language
 
-##Parameterized sentence embeddings
+## Parameterized sentence embeddings
 
 * SkipThought (Kiros+ 2015) is an encoder-decoder model that
   predicts adjacent sentences
@@ -44,7 +44,7 @@ EMNLP-IJCNLP 2019
 * paraphrastic sentence representations (Wieting+ 2015a)
   * simple average of updated word embeddings
 
-##Non-parameterized sentence embedding
+## Non-parameterized sentence embedding
 
 * weighted sum or transformation of word representations (Arora+ 2017) can
   outperform many sophisticated neural network structures in sentence embedding
