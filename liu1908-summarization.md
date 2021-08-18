@@ -179,6 +179,26 @@ code is available at https://github.com/nlpyang/PreSumm
 
 * PyTorch, OpenNMT (Klein+ 2017) and the ‘bert-base-uncased’
 
+### Abstractive Summarization
+
+* dropout (with probability 0.1) before all linear layers; 
+* label smoothing (Szegedy+ 2016) with smoothing factor 0.1 was also used. Our
+* Transformer decoder has 768 hidden units and the hidden size for all
+  feed-forward layers is 2,048. All models were 
+* trained for 200,000 steps on 4 GPUs (GTX 1080 Ti) with 
+* gradient accumulation every five steps. Model 
+* checkpoints were saved and evaluated on the validation set every 2,500 steps.
+* We selected the top-3 checkpoints based on their evaluation loss on the
+  validation set, and report the averaged results on the test set.  During
+* decoding: beam search (size 5), and tuned the α for the length penalty (Wu+
+  2016) between 0.6 and 1 on the validation set; we 
+  decode until an end-of-sequence token is emitted and 
+  repeated trigrams are blocked (Paulus+ 2018). It is worth noting that our
+  * neither a copy nor a coverage mechanism (See+ 2017)
+    because we focus on building a minimum-requirements model and 
+    these mechanisms may introduce additional hyper-parameters to tune. Thanks
+* we also rarely observe issues with out-of-vocabulary words in the output;
+
 # 5 Results 6
 
 ## 5.1 Automatic Evaluation

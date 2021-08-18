@@ -24,18 +24,18 @@ TACL arXiv:1907.12461 [cs.CL]
 * what is the best way to leverage publicly available pre-trained checkpoints
   for warm-starting sequence generation models?
   * e.g. BERT checkpoint to initialize the encoder and GPT-2 model as the decodr
-  * we rigorously experiment with a large number of settings to 
-    combine BERT, GPT and RoBERTa pre-trained checkpoints 
-    to initialize our Transformer-based model. We report results on
-    * three canonical conditional text generation tasks of increasing complexity
-    * sentence-level fusion (DiscoFuse, Geva+ 2019) and
-    * splitting (WikiSplit, Botha+ 2018)),
-    * WMT14 En↔De machine translation
-      using most common eval sets: newstest2014 and newstest2016, and
-    * abstractive summarization using three datasets:
-      * Gigaword (Napoles+ 2012),
-      * CNN and DailyMail (Hermann+ 2015) and
-      * BBC extreme (Narayan+ 2018a)
+  * we rigorously experiment with a large number of settings to
+    combine BERT, GPT and RoBERTa pre-trained checkpoints
+    to initialize our Transformer-based model.
+* three canonical conditional text generation tasks of increasing complexity
+  * sentence-level fusion (DiscoFuse, Geva+ 2019) and
+  * splitting (WikiSplit, Botha+ 2018)),
+  * WMT14 En↔De machine translation
+    using most common eval sets: newstest2014 and newstest2016, and
+  * abstractive summarization using three datasets:
+    * Gigaword (Napoles+ 2012),
+    * CNN and DailyMail (Hermann+ 2015) and
+    * BBC extreme (Narayan+ 2018a)
 * significant improvements over randomly initialized models
 * new SOTA results
 * a pre-trained encoder is an essential component for sequence generation tasks
@@ -50,6 +50,13 @@ TACL arXiv:1907.12461 [cs.CL]
   with two adjustments
   * the self-attention mechanism is masked to look only at the left context
   * we add an encoder-decoder attention mechanism
+* All models were fine-tuned on the target task using
+  * Adam with a learning rate of 0.05. We used a
+  * linear learning rate warmup with 40k steps,
+    normalization by the square root of the hidden size, and a
+    square root decay
+  * no tuning of these hyperparameters (except for §5).  The
+* batch size and the number of training steps will be reported for each task
 
 # 3 Investigated Model Variants
 
@@ -61,16 +68,29 @@ TACL arXiv:1907.12461 [cs.CL]
 
 ## 4.4 Abstractive Summarization 6
 
-* BERT SHARE and ROBERTA SHARE summaries are unequivocally better 
-  than RND 2 GPT summaries in terms of both automatic evaluations (ROUGE) and
-  human evaluation
+* We evaluate our setups on three summarization datasets of varying characterist
+  * Gigaword (Napoles+ 2012), 
+    * 3.8M _sentence_-summary training pairs.  
+  * CNN and DailyMail (Hermann+ 2015), and 
+    * 287k document-summary pairs
+    * bullet-point story highlights with a high degree of extraction, 
+    * requiring the models to learn to copy from the source documents
+  * BBC extreme (Narayan+ 2018a). The Gigaword dataset 
+    * 204k document-summary pairs
+    * extreme, in that the documents are summarized into single-sentence summs.
+    * high level of abstractiveness, and generating them automatically 
+    * requires document-level inference, abstraction, and paraphrasing.  
+* not anonymize entities
+* casing
+  * original cased versions of CNN/DailyMail and BBC datasets. For 
+  * Gigaword: lowercased version to match the publicly available lowercased test
 * truncation
   * input documents: to 512 tokens for CNN/DailyMail and BBC, and to 128 tokens
   * summaries was limited to 128 tokens for CNN/DailyMail, 64 for BBC, and 32
 * global batch size of 128 document-summary pairs for CNN/DailyMail and BBC, and
 * number of training steps depending on the training data sizes. Models were
   * 500k, 300k and 200k steps for the Gigaword, CNN/DailyMail and BBC
-* standard publicly available test sets; these consists of 
+* standard publicly available test sets; these consists of
   * 1951 instances for Gigaword, 11490 for CNN/DailyMail and 11334 for BBC
 * We report on the ROUGE F 1 scores (Lin and Hovy, 2003); in particular
   * ROUGE-1 and ROUGE-2 for informativeness and ROUGE-L for fluency in Table 5
@@ -94,8 +114,8 @@ TACL arXiv:1907.12461 [cs.CL]
   * better by a large margin for generating CNN/DailyMail extracts, but
   * poorer for generating BBC abstracts
   * encoder-decoder architecture where the input document is modeled separately
-    is better equipped for document-level abstraction 
-    than the decoder-only architectures 
+    is better equipped for document-level abstraction
+    than the decoder-only architectures
     where the input document is a conditioning prefix of a language model
 * Initialization with different checkpoints, e.g. BERT 2 GPT
 * Gigaword: ROBERTA SHARE performs the best
@@ -107,7 +127,7 @@ TACL arXiv:1907.12461 [cs.CL]
     the pre-trained single-decoder model with TransformerLM (Khandelwal+ 2019)
   * lags behind the
     * Bottom-Up system (Gehrmann+ 2018)
-      with a taskspecific module for content selection 
+      with a taskspecific module for content selection
       along with the copy mechanism (Gu+ 2016)
     * UniLM model (Dong+ 2019)
       * BERT-Large pre-trained for Bidirectional, unidirectional and seq2seq LM
@@ -129,14 +149,14 @@ TACL arXiv:1907.12461 [cs.CL]
 
 ## Initializing only Embeddings. We want to in-
 
-* almost no improvement over the fully randomly initialized model RND 2 RND 
+* almost no improvement over the fully randomly initialized model RND 2 RND
 
 ## Initializing only Layers
 
 * sometimes the vocabulary given from a public checkpoint might not be optimal
   for a certain task
 * the BERT vocabulary was already optimal for DiscoFuse
-* GPT: still behind the fully initialized setup. 
+* GPT: still behind the fully initialized setup.
 * Finally, we tried a more sensitive way of training the model
   * for 100k steps, we only train the new word embeddings
   * then we fine-tune the entire model for another 300k steps
@@ -165,6 +185,8 @@ TACL arXiv:1907.12461 [cs.CL]
   * ROBERTA SHARE produced summaries were closest to the GOLD summaries in lengt
 * we estimated the percentage of summaries with at least one repetition of rare
   or content words. We discarded the 500 most common words from the model
-  generated and reference summaries, the rests were considered as rare or contnt
+  generated and reference summaries, the rests were considered as rare or contnt 
+* BERT SHARE and ROBERTA SHARE summaries are unequivocally better than RND 2 GPT
+  summaries in terms of both automatic evaluations (ROUGE) and human evaluation
 
 # 7 Related Work 12
