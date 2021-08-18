@@ -192,7 +192,7 @@ arXiv:2002.12327 cs.CL
     which gets recreated in later layers
   * Ethayarajh conted: BERT embeddings occupy a narrow cone in the vector space,
     * this effect increases from the earlier to later layers
-    * two random words will on average have a much higher cosine similarity than
+    * two random words will on average have a very high cosine similarity
     * isotropy is beneficial for static word embeddings (Mu and Viswanath, 2018)
 * to what extent they capture phenomena like polysemy and homonymy
   * BERT embeddings form distinct clusters corresponding to word senses

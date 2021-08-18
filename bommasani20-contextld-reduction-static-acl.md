@@ -148,7 +148,7 @@ ACL 2020
   * as later layers of the model are generally preferred by downstream
     practitioners (Zhang+ 2020)
 
-### Cross-Model Results. Remarkably
+### Cross-Model Results
 
 * most tendencies we observe generalize well to all other pretrained models
 * noteworthy given that several works have found that different contextualized
@@ -285,7 +285,7 @@ ACL 2020
     * bleached constructions are not representative of this distribution
     * deictic expressions which are difficult to adapt for e.g. verbs (as
 * Ethayarajh (2019) considers a similar method to ours where
-  * pooling is replaced by PCA. While this work
+  * pooling is replaced by PCA
   * demonstrated contextualized representations are highly contextual,
   * our work naturally explores the complementary problem of
     what value can be extracted from the static analogue of these reprs
@@ -329,7 +329,7 @@ ACL 2020
     initialized using the static embeddings and the original contextualized)
   * relationship between the role of context in human vs comp language
     processing and remains unclear
-* Theoretical explanation needed for the behavior we observe in two settings is
+* Theoretical explanation needed for the behavior we observe in two settings
   * why learning contextualized representations and then reducing them to static
     embeddings drastically outperforms directly learning static embeddings. In
     * GloVe embeddings we use are learned using 6 billion tokens whereas the
