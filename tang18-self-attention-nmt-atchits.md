@@ -25,7 +25,7 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
   * convolutional (Kalchbrenner and Blunsom, 2013; Gehring+ 2017) and, most
   * fully self-attentional (Transformer) models (Vaswani+ 2017). Since
 * comparisons (Gehring+ 2017; Vaswani+ 2017; Hieber+ 2017)
-  * mainly carried out via BLEU (Papineni+ 2002), it is
+  * mainly carried out via BLEU (Papineni+ 2002)
   * BLEU metric is quite coarse-grained, and offers no insight as to which
     aspects of translation are improved by different architectures
 * Recurrent neural networks (RNNs, Elman, 1990)
@@ -34,8 +34,8 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
   * GRUs (Cho+ 2014) and LSTMs (Hochreiter and Schmidhuber, 1997), address the
     difficulty of training recurrent networks with long-range deps
 * Gehring+ (2017) introduce a neural architecture where
-  * both the encoder and decoder are based on CNNs, and report
-  * better BLEU scores than RNN-based NMT models. Moreover, the
+  * both the encoder and decoder are based on CNNs
+  * better BLEU scores than RNN-based NMT models
   * computation over all tokens can be fully parallelized during training, which
 * Vaswani+ (2017) propose Transformer models, which are
   * built entirely with attention layers, without convolution or recurrence
@@ -80,9 +80,9 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 
 * e.g. where the English _line_ is the correct trans of the German _Schlange_,
   ContraWSD replaces _line_ with the other translations of _Schlange_, such as
-  _snake, serpent_, to generate contrastive translations.
+  _snake, serpent_, to generate contrastive translations
 * In, ContraWSD all the ambiguous words are nouns
-  * disambiguation is not possible simply based on syntactic context.
+  * disambiguation is not possible simply based on syntactic context
 
 # 4 Subject-verb Agreement 4
 
@@ -90,9 +90,9 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 
 * Our experimental results on the subject-verb agreement task demonstrate that
   CNNs and Transformer are not better at capturing long-range dependencies
-  compared to RNNs, even though the paths in CNNs and Transformers are shorter.
-  * not in accord with the argument in Gehring+ (2017) and Vaswani+ (2017).
-  * these architectures perform well empirically according to BLEU.
+  compared to RNNs, even though the paths in CNNs and Transformers are shorter
+  * not in accord with the argument in Gehring+ (2017) and Vaswani+ (2017)
+  * these architectures perform well empirically according to BLEU
   * Thus, we further evaluate these architectures on WSD, to test our
   * hypothesis: non-recurrent architectures are better at extracting sem feats
 
@@ -101,16 +101,16 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 * We here present a number of further experiments with different configurations
   and implementations, to test the robustness of our claims
 
-## Pre-trained Fairseq CNN Model The
+## Pre-trained Fairseq CNN Model
 
 * ConvS2S models underperform RNNS2S and Transformer on the subject-verb agreem
 * question whether these results can be attributed to a misconfiguration or
   implementation difference in Sockeye, we also obtained results with a
-  pre-trained model released by (Gehring+ 2017) and trained with Fairseq 6 .
+  pre-trained model released by (Gehring+ 2017) and trained with Fairseq 6 
 * Fairseq model has 15 layers, which is much deeper than the Sockeye models
   * higher BLEU score on newstest2014, and higher accuracy on long-range deps,
-    than the 8-layer Sockeye models that we trained.  However, it
-  * still lags behind RNNS2S and Transformer on the subject-verb agreement task.
+    than the 8-layer Sockeye models that we trained
+  * still lags behind RNNS2S and Transformer on the subject-verb agreement task
 
 ## Reducing Model Differences
 
@@ -128,7 +128,7 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 * performance gap between Transformerd and the other models is getting smaller
   * implies that _some_ of the strong performance of the Transformer for WSD is
     attributable to architecture choices such as multi-head attention,
-    layer normalization, and upscaling feed-forward layers in each block.
+    layer normalization, and upscaling feed-forward layers in each block
 
 # 7 Conclusion 9
 
@@ -141,8 +141,8 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
   * Transformer models excel at another task, WSD, compared to the CNN and RNN
 * suggest that assessing the performance of NMT architectures means
   * finding their inherent trade-offs,
-    rather than simply computing their overall BLEU score. A clear understanding
+    rather than simply computing their overall BLEU score
   * given the idiosyncratic limitations of recurrent and selfattentional models,
-    combining them is an exciting line of research. The apparent
+    combining them is an exciting line of research
   * weakness of CNN architectures on long-distance phenomena also worth tackling
     * find inspiration from related work in computer vision (Xu+ 2014)

@@ -32,7 +32,7 @@ updated results and discussion in section 5
 
 # 1 Introduction
 
-* NMT systems have become [SOTA especially since]
+* NMT systems have become SOTA especially since
   sequence-to-sequence models and attention
   (Bahdanau+ 2014; Sutskever+ 2014)
 * better handling of non-local dependencies and morphology generation
@@ -88,7 +88,7 @@ updated results and discussion in section 5
   use ENC as a feature extractor to generate vectors representing words
 * analyzing representation learning in DEC
   * classifier itself can be modeled in different ways
-  * [could] be an LSTM over outputs of the encoder. However, as we are inter-
+  * could be an LSTM over outputs of the encoder. However, as we are inter-
     ested in assessing the quality of the representations learned by the MT
   * we choose [ a ] feed-forward network with one hidden layer and a ReLU
     * cross-entropy loss; more details in the supplementary material
@@ -111,7 +111,7 @@ updated results and discussion in section 5
 
 * the WIT 3 corpus of TED talks (Cettolo+ 2012; Cettolo, 2016) made available
 
-## Annotated data [for] POS and morphological classifiers:
+## Annotated data for POS and morphological classifiers:
 
 * goldstandard and predicted tags
 * train and test our classifiers on predicted annotations, and similarly on
@@ -125,7 +125,7 @@ updated results and discussion in section 5
   * word-based model uses a word embedding matrix which is learned in NMT
   * character-based CNN model (Kim+ 2015; Costajussà and Fonollosa, 2016)
 * Table 2 shows POS tagging accuracy using features from different encoders
-  * Char-based models always generate better representations for [both tasks]
+  * Char-based models always generate better representations for both tasks
     especially in the case of morphologically-richer languages like ar and cz
   * also manifests in better translation quality (BLEU), as shown in Table 2
 
@@ -134,14 +134,14 @@ updated results and discussion in section 5
 * e.g. Arabic POS and morphological tagging. Figure 3 shows the effect
 * word-based vs. char-based reprs, obtained from the encoder of the Arabic-He
   (other language pairs are similar)
-* char-based model is superior [especially] on OOV words (+37.6% POS, +32.7%)
+* char-based model is superior especially on OOV words (+37.6% POS, +32.7%)
 
 ### Analyzing specific tags
 
 * Figure 5 we plot confusion matrices for POS tagging
 * word-based and char-based representations share similar misclassifications
   * Much of the confusion comes from wrongly predicting nouns (NN, NNP)
-    * word-based case, [many tags with determiner] are predicted as non-deted
+    * word-based case, many tags with determiner are predicted as non-deted
     * char-based case, this hardly happens
     * determiner in Arabic is expressed as the prefix “Al-” (definite art)
 * difference in POS accuracy when moving to char-based per POS tag frequency
@@ -158,9 +158,9 @@ updated results and discussion in section 5
 * predict POS or morphological tags
 * Figure 6 shows POS tagging results using different encoding layers
 * across five language pairs
-* [depth]
-  * improves POS tagging [because of] contextual information
-  * [impair representation of word structure]
+* depth
+  * improves POS tagging because of contextual information
+  * impair representation of word structure
   * for both word-based and char-based representations,
     on Arabic POS and morphological tagging
 * similar pattern was recently observed in a joint language-vision deep RNN
@@ -172,7 +172,7 @@ updated results and discussion in section 5
   translating into such languages is even harder
   * e.g. BLEU of 24.69/23.2 on Arabic/Czech to English, but only 13.37/13.9 on
 * How does the target language affect the learned source language reprs?
-  * a morphologically-rich tg require [less] sr morph knowledge
+  * a morphologically-rich tg require less sr morph knowledge
 * we fix the source language (Arabic) and train NMT models on different target
   * to English/Hebrew/German systems
     * rich with similar morphology to the source language (Hebrew), and a
@@ -187,7 +187,7 @@ updated results and discussion in section 5
   * as hinted by the BLEU scores in Table 2
   * inherent difficulty in translating Arabic to Hebrew/German may affect repr
   * To probe this more, we trained an Arabic-Arabic autoencoder
-  * very high BLEU scores [but] inferior for POS/morphology
+  * very high BLEU scores but inferior for POS/morphology
 * a translation model learns more informative representations, but only
   when it is actually learning to translate rather than merely memorizing
 * consistently true also for char-based experiments, and in other lang pairs
@@ -203,7 +203,7 @@ updated results and discussion in section 5
     vs. Arabic to English
   * simmilar small drops with higher quality translation directions
     (Table 7, Appendix A.3)
-* The gap between encoder and decoder representations may [be] surprising,
+* The gap between encoder and decoder representations may be surprising,
   * encoder’s task is to create a generic, close to language-indep repr
     * shown by multilingual NMT (Johnson+ 2016)
   * One might conjecture that it would be sufficient
@@ -219,7 +219,7 @@ updated results and discussion in section 5
 * during decoding, the attention weights are combined with the decoder’s hidden
   states to generate the current translation
 * mapping back to the source sentence may come at the expense of obtaining
-  a meaningful [dec side] representation of the current word
+  a meaningful dec side representation of the current word
 * To test this hypothesis, we train NMT models with and without attention
   * Table 3 shows (compare 1st and 2nd rows),
   * removing the attention mechanism
@@ -237,7 +237,7 @@ updated results and discussion in section 5
   * POS both end and dec, char-based representations perform better
   * BLEU scores behave differently:
     * char-based model leads to better translations in Arabic-to-English, but
-      not in English-to-Arabic.  A
+      not in English-to-Arabic
     * possible explanation: decoder’s predictions are still done at word level
 
 # 6 Related Work 8
@@ -287,7 +287,7 @@ updated results and discussion in section 5
   morphology, especially in rare and unseen words
 * Lower layers of the neural network are better at capturing morphology, while
   deeper networks improve translation performance
-  * layers are more focused on word structure [vs] word meaning
+  * layers are more focused on word structure vs word meaning
 * Translating into morphologically-poorer languages leads to better
   source-side representations
   * partly, but not completely, correlated with BLEU scores
@@ -295,8 +295,8 @@ updated results and discussion in section 5
   * attention mechanism
     * not seem to significantly affect the quality of the decoder
     * important for the encoder representations
-* [future work in] neural MT
-  * jointly learning translation and morphology can possibly [help]
+* future work in neural MT
+  * jointly learning translation and morphology can possibly help
     * take into account e.g. the encoding layer and the type of word repr
   * extend the analysis to
     * other representations (e.g.  byte-pair encoding), deeper networks, and

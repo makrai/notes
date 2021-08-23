@@ -1,9 +1,8 @@
+Google's Neural Machine Translation System: Bridging the Gap between Human & MT
 Y Wu, M Schuster, Z Chen, Q V. Le, M Norouzi, W Macherey, M Krikun, Y Cao,
   Q Gao, K Macherey, J Klingner, A Shah, M Johnson, X Liu, Ł Kaiser, S Gouws,
   Y Kato, T Kudo, H Kazawa, K Stevens, G Kurian, N Patil, W Wang, C Young, J
   Smith, J Riesa, A Rudnick, O Vinyals, G Corrado, M Hughes, J Dean
-Google's Neural Machine Translation System:
-  Bridging the Gap between Human and Machine Translation
 TACL 2017 Submitted on 26 Sep 2016
 
 # Abstract
@@ -22,13 +21,12 @@ TACL 2017 Submitted on 26 Sep 2016
       * flexibility of “character”-delimited models and the
       * efficiency of “word”-delimited models
   * beam search technique employs a length-normalization procedure and uses a
-    * coverage penalty, which encourages [the output sentence] to cover all the
-      words in the source sentence. To directly optimize the translation BLEU
+    * coverage penalty, which encourages the output sentence to cover all the
+      words in the source sentence
   * we consider refining the models by using reinforcement learning,
-    but ... the improvement in the BLEU scores did not reflect in the human
+    but the improvement in the BLEU scores did not reflect in the human
     evaluation. On the
-* WMT’14 English-to-French and English-to-German benchmarks, GNMT achieves
-  competitive results to state-of-the-art. Using a
+* WMT’14 English-to-French and English-to-German: competitive results to SOTA
   * human side-by-side evaluation on a set of isolated simple sentences, it
     reduces translation errors by an average of 60% compared to Google’s
     phrase-based production system

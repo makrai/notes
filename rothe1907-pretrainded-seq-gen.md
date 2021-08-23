@@ -187,6 +187,6 @@ TACL arXiv:1907.12461 [cs.CL]
   or content words. We discarded the 500 most common words from the model
   generated and reference summaries, the rests were considered as rare or contnt 
 * BERT SHARE and ROBERTA SHARE summaries are unequivocally better than RND 2 GPT
-  summaries in terms of both automatic evaluations (ROUGE) and human evaluation
+  * in terms of both automatic evaluations (ROUGE) and human evaluation
 
 # 7 Related Work 12

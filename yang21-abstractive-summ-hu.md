@@ -61,7 +61,7 @@ Date Deposited: 	25 May 2021 10:13
 # 7. Results an evaluation
 
 * In the case of HILBERT, we did not achieve the theoretical optimum, because
-  the rouge values are increasing continuously
+  the ROUGE values are increasing continuously
 * abstractive samples in Table 7–10 (see Appendix)
   * When the article is long, all of our models extract phrases from the
     original article, then combine them to generate new sentences. It is similar

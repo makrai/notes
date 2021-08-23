@@ -137,7 +137,7 @@ https://github.com/Yale-LILY/SummEval
   * Kryściński+ (2019b)
     * hallucinating facts touches up to 30% of generated summaries
     * common types of errors made by generative models
-  * Maynez+ (2020) conducted a
+  * Maynez+ (2020)
     * large-scale study of abstractive summarizers' faithfulness
     * improving factual faithfulness is a critical issue in summarization
     * ROUGE and BertScore are not sufficient to study the problem at hand

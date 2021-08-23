@@ -16,8 +16,8 @@ XVI. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2020. január 23�
   * egyik legkorábbi neurális hálózaton alapuló extraktív rendszer a SummaRuNNer
     (Nallapati+ 2017), amely egy RNN enkóder segítségével oldja meg a
     problémát. A
-  * Refresh (Narayan+ 2018) Rouge metrikán alapul, melynek segítségével
-    megerősítéses tanulásos módszerrel rangsorolják a mondatokat a szövegben. A
+  * Refresh (Narayan+ 2018) ROUGE metrikán alapul, melynek segítségével
+    megerősítéses tanulásos módszerrel rangsorolják a mondatokat a szövegben
   * Latent (Zhang+ 2018) célja  az emberi munkával készült absztraktokhoz való
     minél közelebbi hasonlóság elérése volt. A
   * Sumo (Liu+ 2019) olyan módszert alkalmaz, amely a dokumentumból kinyerhető

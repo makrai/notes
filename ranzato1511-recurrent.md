@@ -1,7 +1,7 @@
 Sequence level training with recurrent neural networks
-ICLR 2016
 Marc’Aurelio Ranzato, Sumit Chopra, Michael Auli, Wojciech Zaremba
   Facebook AI Research
+ICLR 2016
 
 # Intro
 
@@ -15,13 +15,12 @@ Marc’Aurelio Ranzato, Sumit Chopra, Michael Auli, Wojciech Zaremba
   2. training loss vs eval
     * the loss function is at the word level. A popular choice is cross-entropy
     * evaluated using discrete metrics, e.g. BLEU (Papineni+ 2002)
-    * Training these models to directly optimize metrics like BLEU
-      * hard because
-        * these are not differentiable (Rosti+ 2011), and
-        * combinatorial optimization is required
+    * Training to directly optimize metrics like BLEU is hard because
+      * these are not differentiable (Rosti+ 2011), and
+      * combinatorial optimization is required
 * Prior attempts (McAllester+ 2010; He & Deng, 2012) at optimizing test metrics
   * restricted to linear models, or
   * required a large number of samples to work well (Auli & Gao, 2014)
     Auli, M. and Gao, J
-    Decoder integration and expected bleu training for RNN LM
+    Decoder integration and expected BLEU training for RNN LM
     ACL 2014

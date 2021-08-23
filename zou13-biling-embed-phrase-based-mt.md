@@ -1,6 +1,6 @@
+Bilingual Word Embeddings for Phrase-Based Machine Translation
 Will Y. Zou, Richard Socher, Daniel Cer, Christopher D. Manning
 2013
-Bilingual Word Embeddings for Phrase-Based Machine Translation
 
 # Abstract
 

@@ -124,7 +124,7 @@ implementation and models https://github.com/ucfnlp/control-over-copying
     Newsroom is slightly more extractive than Gigaword
   * it is important to maintain a similar ratio during training in order to
     achieve high ROUGE scores. Pure extracts do not attain high ROUGE scores, as
-    ground-truth summaries themselves are abstracts. Our analysis further
+    ground-truth summaries themselves are abstracts
 * training on source words has little impact on the copying behavior, but it
   improves representation learning and has lead to 
   consistently improved ROUGE-2 F-scores
