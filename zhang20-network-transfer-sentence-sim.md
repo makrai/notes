@@ -80,7 +80,7 @@ arXiv:1804.07835 cs.CL
 
 * how exactly do the encoders transfer to a task such as semantic similarity?
 * categorize the transfer settings into follows (Pan and Yang 2010):
-  * Unsupervised evaluation (UE), aka. zero-shot transfer. The
+  * Unsupervised evaluation (UE), aka. zero-shot transfer
     * pre-trained model is directly evaluated on the downstream task
     * In the case semantic similarity, vector similarity is directly calculated
   * Feature transfer (FT): A classifier takes the fixed sentence embeddings as
@@ -150,7 +150,7 @@ arXiv:1804.07835 cs.CL
     sentence embedding which has a large dimension of 4096,
     trained on a backtranslated corpus (PARANMT-50M)
 
-##4.3.  Other Transfer Settings
+##4.3. Other Transfer Settings
 
 * As discussed in Related Work, there are typically three transfer settings:
   * The implementation details are as follows

@@ -7,7 +7,7 @@ EMNLP 2019
 #Abstract
 
 * Are there infinitely many context-specific representations for each word,
-  * or are words essentially assigned one of a finite number of word-sense[s]
+  * or are words essentially assigned one of a finite number of word-senses
 * In all layers of ELMo, BERT, and GPT-2, on average,
   less than 5% of the variance in a word's contextualized representations can
   be explained by a static embedding
@@ -17,7 +17,7 @@ EMNLP 2019
 * linear probing models trained on frozen contextualized representations can
   predict linguistic properties of words almost as well as SOTA models
   (Liu+ 2019a; Hewitt and Manning, 2019)
-* [our] findings:
+* our findings:
   * In all layers of all three models, the contextualized word representations
     of all words are not isotropic: they are
     * not uniformly distributed with respect to direction. Instead, they
@@ -28,7 +28,7 @@ EMNLP 2019
       embeddings (Mu+ 2018)
   * upper layers of contextualizing models produce more context-specific
     * Occurrences of the same word in different contexts are more dissimilar
-      [in cosine similarity] to each other in upper layers
+      in cosine similarity to each other in upper layers
     * like how upper layers of LSTMs produce more task-specific (Liu+ 2019a)
   * Context-specificity manifests very differently in ELMo, BERT, and GPT-2
     * ELMo, representations of words in the same sentence grow more similar to
@@ -50,7 +50,7 @@ EMNLP 2019
 ## Contextualized Word Representations
 
 * ELMo (Peters+ 2018), BERT (Devlin+ 2018), and GPT-2 (Radford+ 2019) are deep
-  * ELMo ... by concatenating the internal states of a 2-layer biLSTM trained
+  * ELMo by concatenating the internal states of a 2-layer biLSTM trained
   * BERT and GPT-2 are bi-directional and uni-directional transformer-based LMs
     * transformer layer
       * of 12-layer BERT (base, cased) and 12-layer GPT-2
@@ -60,7 +60,7 @@ EMNLP 2019
 
 ## Probing Tasks
 
-* Our work ... is more similar to Mimno and Thompson (2017), which
+* Our work is more similar to Mimno and Thompson (2017), which
   studied the geometry of static word embedding spaces
 
 # 3 Approach 3
@@ -84,7 +84,7 @@ EMNLP 2019
 
 ## 3.4 Adjusting for Anisotropy 4
 
-* isotropy [is important] when discussing contextuality
+* isotropy is important when discussing contextuality
   * SelfSim l (w) = 0.95 would suggest that w’s representations were poorly
 * To adjust for the effect of anisotropy, we use three anisotropic baselines,
   one for each of our contextuality measures
@@ -103,7 +103,7 @@ EMNLP 2019
 
 # 4 Findings 4
 
-## [From the Conclusion]
+## From the Conclusion
 
 * increased context-specificity is always accompanied by increased anisotropy
   * anisotropy-adjusted similarity between words in the same sentence is
@@ -114,10 +114,10 @@ EMNLP 2019
 * Contextualized representations are anisotropic in all non-input layers
 * the greater the anisotropy, the narrower this cone (Mimno and Thompson, 2017)
 * almost all layers of BERT, ELMo and GPT-2
-  * The only exception is ELMo’s input layer, which [consists of]
+  * The only exception is ELMo’s input layer, which consists of
     static character-level embeddings
     without using contextual or even positional information (Peters+ 2018)
-* Contextualized representations are generally more anisotropic in higher lays
+* Contextualized representations are generally more anisotropic in higher layers
   * average cosine similarity between uniformly randomly words is
     * roughly 0.6 in layers 2 through 8 but
     * increases exponentially from layers 8 through 12
@@ -125,20 +125,20 @@ EMNLP 2019
     have on average an almost perfect cosine similarity!
   * pattern holds for BERT and ELMo as well, though there are exceptions:
     e.g., the anisotropy in BERT’s penultimate layer is much higher than last
-* theoretical and empirical benefits for [isotropy in] static word embeddings
+* theoretical and empirical benefits for isotropy in static word embeddings
   * in theory, it allows for stronger “self-normalization” during training
     (Arora+ 2017)
   * in practice, subtracting the mean vector from static embeddings leads to
     improvements on several downstream NLP tasks (Mu+ 2018)
-* anisotropy is inherent to, or ... a by-product of, the process of contextlztn
+* anisotropy is inherent to, or a by-product of, the process of contextualizaton
 
 ## 4.2 Context-Specificity
 
 ### Contextualized word representations are more context-specific in higher lay
 
-### Stopwords (e.g., ‘the’, ‘of’, ‘to’) have among the most context-specific rp
+### Stopwords (‘the’, ‘of’, ‘to’..) have among the most context-specific repr
 
-### Context-specificity manifests very differently in ELMo, BERT, and GPT-2. As
+### Context-specificity manifests very differently in ELMo, BERT, and GPT-2
 
 ### In ELMo, words in the same sentence are more similar in upper layers
 
@@ -149,8 +149,8 @@ each other than randomly sampled words
 
 ## 4.3 Static vs. Contextualized
 
-### On average, less than 5% of the variance in a word’s contextualized
-representations can be explained by a static embedding
+### On average, less than 5% of the variance in a word’s contextualized repr can
+be explained by a static embedding
 
 ### Principal components of contextualized representations in lower layers
 outperform GloVe and FastText on many benchmarks

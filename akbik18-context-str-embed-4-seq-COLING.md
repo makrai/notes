@@ -15,7 +15,7 @@ https://github.com/zalandoresearch/flair
   contextual string embeddings
   * trained without any explicit notion of words
   * contextualized by their surrounding text
-* evaluation against previous embeddings [in] downstream tasks:
-  * [new SOTA] across four classic sequence labeling tasks
+* evaluation against previous embeddings in downstream tasks:
+  * new SOTA across four classic sequence labeling tasks
     * we significantly outperform previous work on
     * English and German NER, on the CONLL03 shared task

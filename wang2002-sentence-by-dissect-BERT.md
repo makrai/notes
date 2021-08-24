@@ -112,10 +112,10 @@ https://github.com/BinWang28/SBERT-WK-Sentence-Embedding
   * Principal Component Analysis (PCA)
   * Singular Spectrum Analysis (SSA)
   * Independent Component Analysis (ICA) and
-  * Canonical Correlation Analysis (CCA).  Subspace analysis has solid
+  * Canonical Correlation Analysis (CCA)
   * to explain the internal states of Deep Neural Networks [32], [33], [34]
 * in post-processing and evaluation of word embeddings [37], [38], [39]
-* subspace analysis in sentence embedding
+* in sentence embedding
   * SCDV [40] determines the sentence/document vector
     by splitting words into clusters and analyzing them accordingly
   * GEM [29] models the sentence generation process as a Gram-Schmidt procedure

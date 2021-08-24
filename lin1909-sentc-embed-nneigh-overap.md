@@ -1,12 +1,12 @@
 Lucy H. Lin, Noah A. Smith
 Situating Sentence Embedders with Nearest Neighbor Overlap
-arXiv:1909.10724 [cs.CL]
+arXiv:1909.10724 cs.CL
 
 * To date e.g. GLUE and linguistic probes
 * We propose a comparative approach, nearest neighbor overlap (N2O), that
   * requires only a collection of examples and is simple to understand:
-  * [count the] overlap between the inputs' nearest neighbors
-* we [use N2O to show the effects of different] architectures
+  * count the overlap between the inputs' nearest neighbors
+* we use N2O to show the effects of different architectures
 
 # 1 Introduction
 
@@ -16,7 +16,7 @@ arXiv:1909.10724 [cs.CL]
     What you can cram into a single vector: Probing sentence embeddings for lin
   * extrinsic (e.g., GLUE; Wang+ 2019)
   * Our approach, nearest neighbor overlap (N2O), is something different
-    * linguistics~ and task-agnostic manner, using only a large unannotated
+    * linguistics~ and task-agnostic manner, using only a large unannotated corp
     * By drawing a random sample of queries from the corpus itself
 * applications such as
   * text clustering (Cutting+ 1992),
@@ -34,7 +34,7 @@ arXiv:1909.10724 [cs.CL]
 
 # 3 Apply it to 21 sentence embedders
 
-* [deferring] implementation decisions in §4
+* deferring implementation decisions in §4
 
 ## 3.1 tf-idf
 
@@ -50,14 +50,14 @@ arXiv:1909.10724 [cs.CL]
     word given its context (continuous bag of words) or
     vice versa (skipgram);
   * GloVe (Pennington+ 2014) embeddings learned based on global cooccurrence
-  * FastText (Conneau+ 2017), an extension of word2vec [with] n-grams
+  * FastText (Conneau+ 2017), an extension of word2vec with n-grams
 
 ### Contextual embeddings
 
 * ELMo (Peters+ 2018): multi-layer, bidirectional recurrent LM + char
 * GPT (Radford+ 2018)
   * unidirectional language model with multi-layer transformer decoder;
-  * subword information ... via byte-pair encoding (BPE; Sennrich+ 2016)
+  * subword information via byte-pair encoding (BPE; Sennrich+ 2016)
 * BERT (Devlin+ 2019): transformer-based model trained to predict
   * a word given both left and right context, and
   * whether a sentence is the “next sentence” given a previous sentence
@@ -66,9 +66,9 @@ arXiv:1909.10724 [cs.CL]
 ### Composition of word embeddings
 
 * average the word embeddings
-* surprisingly [good] on sentence similarity, NLI (Wieting+ 2016; Arora+ 2017)
+* surprisingly good on sentence similarity, NLI (Wieting+ 2016; Arora+ 2017)
 * contextual embeddings: special token or position in the sequence
-  * BERT, the [CLS] token (normally used as input for classification)
+  * BERT, the CLS token (normally used as input for classification)
   * last token’s representation may be used for GPT
 
 ## 3.3 Encoders
@@ -81,7 +81,7 @@ arXiv:1909.10724 [cs.CL]
       which are then fed into a clasifier
   * Universal Sentence Encoder (USE; Cer+ 2018):
     multi-task training on several semantic tasks (including sem textual sim);
-    * encode[r] either with a deep averaging network or a transformer
+    * encoder either with a deep averaging network or a transformer
 
 # 4 Experimental Details 4
 
@@ -98,7 +98,7 @@ arXiv:1909.10724 [cs.CL]
 
 ## Averages of static word embeddings
 
-* subword information ... has a large effect on N2O (0.52)
+* subword information has a large effect on N2O (0.52)
 
 ## BERT and GPT
 
@@ -117,27 +117,27 @@ arXiv:1909.10724 [cs.CL]
 
 * InferSent has highest N2O (∼0.2–0.3) with the embeddings based on averaging,
   * not wholly surprising as the model was initialized using GloVe vectors
-  * USE variants (DAN and Transformer) have fairly distinct [NNs than others]
+  * USE variants (DAN and Transformer) have fairly distinct NNs than others
 
 # 6 Robustness of N2O across different query samples and sample sizes
 
 ## Varying k
 
-* changing [the number of nearest neighbors] does not significantly affect
+* changing the number of nearest neighbors does not significantly affect
 
 ## Query sampling
 
 ## Runtime
 
-* [see] approximate nearest neighbor methods in Appendix C
+* see approximate nearest neighbor methods in Appendix C
 
-# 7 Neighbors ... that are stable across embedders 9
+# 7 Neighbors that are stable across embedders 9
 
 * Table 2
   * an example query with a sentence that is in the 5-nearest neighborhood for
     all sentence embedders
   * sentences that are highly ranked for some embedder but
-    not in the [top 50] for any other
+    not in the top 50 for any other
 
 # 8 Known paraphrase
 
@@ -149,7 +149,7 @@ arXiv:1909.10724 [cs.CL]
 * second sentence is (temporarily) added to our Gigaword corpus
 * results
   * larger ELMo models do particularly well
-  * averaged BERT and GPT embeddings perform better than the [CLS]/final token
+  * averaged BERT and GPT embeddings perform better than the CLS/final token
     * consistent with our earlier observation (§5) that their training
       objectives may not yield specific-token embeddings that directly encode
 
@@ -166,4 +166,4 @@ arXiv:1909.10724 [cs.CL]
   * Evaluations like the RepEval 2017 shared task (Nangia+ 2017),
   * SentEval toolkit (Conneau and Kiela, 2018), and
   * GLUE benchmark (Wang+ 2019) seek to standardize comparisons
-* N2O is ... task-agnostic way to compare embedders’ functionality
+* N2O is task-agnostic way to compare embedders’ functionality

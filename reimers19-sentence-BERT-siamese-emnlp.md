@@ -8,11 +8,11 @@ EMNLP 2019
   on sentence-pair regression tasks like semantic textual similarity (STS)
   * requires that both sentences are fed into the network, which causes a
     massive computational overhead: Finding the most similar pair in a
-  * unsuitable for semantic similarity search as well as for ... clustering
+  * unsuitable for semantic similarity search as well as for clustering
 * we present Sentence-BERT (SBERT), a modification of the pretrained BERT
   * use siamese and triplet network structures
   * sentence embeddings that can be compared using cosine-similarity
-  * time complexity [of] finding the most similar pair
+  * time complexity of finding the most similar pair
     from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT
   * evaluate SBERT and SRoBERTa on common STS tasks and transfer learning
     * outperforms other SOTA sentence embeddings methods
@@ -23,7 +23,7 @@ EMNLP 2019
   network and the target value is predicted
 * derive fixed-size sentence embeddings
   * average the BERT output layer (known as BERT embeddings) or by using the
-  * first token (the [CLS] token)
+  * first token (the CLS token)
   * often worse than averaging GloVe embeddings (Pennington+ 2014)
 * similarity measure like cosine-similarity or Manhatten / Euclidean distance,
 * We fine-tune SBERT on NLI data, which creates sentence embeddings that
@@ -43,13 +43,13 @@ EMNLP 2019
   * new SOTA results, including question answering, sentence classification,
     and sentence-pair regression
   * input for BERT for sentence-pair regression consists of the two sentences,
-    separated by a special [SEP] token. Multi-head attention over 12
+    separated by a special SEP token. Multi-head attention over 12
     (base-model) or 24 layers (large-model) is applied and the
   * output is passed to a simple regression function to derive the final label
   * new SOTA on the Semantic Textual Semilarity (STS) benchmark (Cer+ 2017)
   * RoBERTa (Liu+ 2019) showed, that the performance of BERT can further
     improved by small adaptations to the pre-training process
-  * XLNet (Yang+ 2019) led ... to worse results than BERT [in these tasks]
+  * XLNet (Yang+ 2019) led to worse results than BERT in these tasks
 * sentence embeddings from BERT
   * limitations of BERT
     * averaging the outputs (similar to average word embeddings)
@@ -71,12 +71,12 @@ EMNLP 2019
       their quality (Hill+ 2016)
     * the SNLI datasets are suitable for training sentence embeddings
       (Conneau+ 2017; Cer+ 2018)
-    * Yang+ (2018) ... train on conversations from Reddit
+    * Yang+ (2018) train on conversations from Reddit
       using siamese DAN and siamese transformer networks, which yielded
       good results on the STS benchmark dataset
-    * Humeau+ (2019) addresses the run-time overhead of the cross-encoder from
-      BERT and present a method (poly-encoders) to compute a score between m
-      context vectors and precomputed candidate embeddings using attention
+    * Humeau+ (2019) addresses the run-time overhead of the cross-encoder 
+      * present a method (poly-encoders) to compute a score between m context
+        vectors and precomputed candidate embeddings using attention
       * the score function is not symmetric and the
       * computational overhead is too large for use-cases like clustering
 * we use the pre-trained BERT and RoBERTa network and only fine-tune it

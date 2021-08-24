@@ -5,11 +5,11 @@ EMNLP-IJCNLP 2019
 # Abstract
 
 * Inspired by the Gram-Schmidt Process we build an orthogonal basis
-  of the subspace spanned by a word and its [sentence] context
+  of the subspace spanned by a word and its sentence context
 * We model the meaning of a word in a sentence based on two aspects
   * relatedness to the word vector subspace already spanned by its context wrds
-  * novel semantic meaning ... introduced as a new basis vector perpendic
-* method  to combine pre-trained word embeddings into sentence representations
+  * novel semantic meaning introduced as a new basis vector perpendic
+* method to combine pre-trained word embeddings into sentence representations
   * based on orthogonal basis
   * zero parameters, along with efficient inference performance
 * evaluate our approach on 11 downstream NLP tasks
@@ -33,14 +33,14 @@ EMNLP-IJCNLP 2019
 * à la carte Khodak+ (2018) proposes to learn a linear mapping to
   reconstruct the center word from its context
 * sentence encoder InferSent (Conneau+ 2017)
-  [trained on the] Natural Language Inference (NLI) dataset
+  trained on the Natural Language Inference (NLI) dataset
 * Universal Sentence Encoder (Yang+ 2018; Cer+ 2018)
-  utilizes [transformer] (Vaswani+ 2017; Devlin+ 2018)
-  * first trained on ... unsupervised data from Wikipedia & forums, and
+  utilizes transformer (Vaswani+ 2017; Devlin+ 2018)
+  * first trained on unsupervised data from Wikipedia & forums, and
     then trained on the Stanford Natural Language Inference (SNLI) dataset
 * gated recurrent averaging network (GRAN, Wieting and Gimpel 2017b)
   * trained on Paraphrase Database (PPDB) and English Wikipedia
-* multi-task learning framework (Subramanian+ 2018) to ... sentence embeds
+* multi-task learning framework (Subramanian+ 2018) to sentence embeds
 * paraphrastic sentence representations (Wieting+ 2015a)
   * simple average of updated word embeddings
 
@@ -54,22 +54,22 @@ EMNLP-IJCNLP 2019
     between the word and sentence embeddings
 * Rücklé+ (2018) concatenates different power mean word embeddings as a
   sentence vector in p-mean
-* In this paper, we propose ... Geometric Embedding (GEM), based entirely on
+* In this paper, we propose Geometric Embedding (GEM), based entirely on
   * linear combination of the sentence’s word embeddings lies in the subspace
   * each word may bring in a novel orthogonal basis to the existing subspace
   * new basis can be considered as the new semantic meaning brought in by this
-    * [orthogonal part] can indicate the intensity of this new meaning
+    * orthogonal part can indicate the intensity of this new meaning
 * QR factorization of the word embedding matrix A
   * QR decomposition: decomposition of a matrix A into a
     product A = QR of an orthogonal matrix Q and an upper triangular matrix R
   * we propose the sliding-window QR factorization method
-    to capture the context of a word and characterize its significance [ther]in
-  * last step [ similar ] as Arora+ (2017) to remove top principal vectors
-    * to ensure ... e.g. stop words, do not bias sentence similarity
+    to capture the context of a word and characterize its significance therin
+  * last step similar as Arora+ (2017) to remove top principal vectors
+    * to ensure e.g. stop words, do not bias sentence similarity
     * sentence-specific principal vector removal method, leading to better
       * As we build a new orthogonal basis for each sentence, we propose to
 
-# 2 [our sentence embedding algorithm GEM], Approach 2
+# 2 our sentence embedding algorithm GEM, Approach 2
 
 * We introduce three scores to quantify the importance of a word, as will be
   * novelty score α n measures the portion of the new semantic meaning in a w
@@ -84,7 +84,7 @@ EMNLP-IJCNLP 2019
 
 ## 2.3 Significance
 
-* how semantically aligned [a word] is to the meaning of its context
+* how semantically aligned a word is to the meaning of its context
 * principal meanings in the contextual window = Singular Value Decomposition
 * singular values {σ j } nj=1 , denoted by σ(A), represent the importance
 * Although α s and α n look alike in mathematics form,
@@ -105,9 +105,9 @@ EMNLP-IJCNLP 2019
 ### 2.4.2 Uniqueness Score
 
 * we select different principal vectors of X c for each sentence, as different
-* [the princ comps]  are re-ranked in descending order of their correlation
+* the princ comps  are re-ranked in descending order of their correlation
   with sentence matrix S
-* Next, the top h principal vectors ... are selected
+* Next, the top h principal vectors are selected
 * corpus-wise uniqueness score: `α u = exp (−|σ d o* (q i T D)|_2  / h)`
 
 ## 2.5 Sentence Vector
@@ -119,7 +119,7 @@ EMNLP-IJCNLP 2019
 
 ## 2.6 OOV
 
-* we [map] OOVs to pretrained in-vocabulary words, based on a hash func-
+* we map OOVs to pretrained in-vocabulary words, based on a hash func-
   tion SHA-256 of its characters
 
 # 3 Experiments 5
@@ -137,7 +137,7 @@ EMNLP-IJCNLP 2019
   “PerfectMatch”, “Relevant” or “Irrelevant”, with respect to Q o
   Mean average precision (MAP) is used as the evaluation measure
 * We encode each question text into a unit vector u
-  * [but the hits are not normalized?]
+  * but the hits are not normalized?
 
 ## 3.3 Supervised tasks
 
@@ -171,26 +171,26 @@ EMNLP-IJCNLP 2019
 
 ## Comparison with Arora+ (2017)
 
-* the weights in GEM are directly computed from the sentences themselves along
+* the weights in GEM are directly computed from the sentences themselves
 
 ## Robustness and Effectiveness
 
 ## Ablation Study
 
-## Sensitivity [to the] four hyper-parameters in our model
+## Sensitivity to the four hyper-parameters in our model
 
 * window size m in the contextual window matrix, the
 * number of candidate principal components K, the
 * number of principal components to remove h, and the
 * power of the singular value in coarse sentence embedding,
-  i.e. the power t in f (σ j ) = σ j t in Equation (7)
+  i.e. the power `t` in `f (σ_j ) = σ_j^t` in Equation (7)
   We sweep the hyper-parameters and test on STSB dev set, SUBJ, and MPQA
-  Unspecified parameters are fixed at m = 7, K = 45, h = 17 and t = 3
-  Figure 2, our model is quite robust with respect to hyperparameters
+  * Unspecified parameters are fixed at m = 7, K = 45, h = 17 and t = 3
+  * Figure 2, our model is quite robust with respect to hyperparameters
 
 ## Inference speed
 
 # 5 Conclusions
 
-* future work: subwords into the model and explore
-  more geometric structures in sentences
+* future work: subwords into the model
+* more geometric structures in sentences

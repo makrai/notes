@@ -1,7 +1,7 @@
 Supervised Learning of Universal Sentence Representations
   from Natural Language Inference Data
 Alexis Conneau, Douwe Kiela, Loı̈c Barrault, Holger Schwenk, Antoine Bordes
-EMNLP 2017, Outstanding Paper Award arXiv:1705.02364v4 [cs.CL] 21 Jul 2017
+EMNLP 2017, Outstanding Paper Award arXiv:1705.02364v4 cs.CL 21 Jul 2017
 
 https://github.com/facebookresearch/InferSent
 
@@ -13,27 +13,27 @@ https://github.com/facebookresearch/InferSent
       Stanford Natural Language Inference datasets
     * outperform unsupervised methods like SkipThought vectors (Kiros+ 2015)
       on a wide range of transfer tasks
-  * like how computer vision uses ImageNet [for] transfer
-    * suitability of natural language inference for transfer learning [in] NLP
+  * like how computer vision uses ImageNet for transfer
+    * suitability of natural language inference for transfer learning in NLP
 * encoder is publicly available
 
 # Intro
 
-* existing work on learning sentence encoders [is] unsupervised
+* existing work on learning sentence encoders is unsupervised
   * like SkipThought (Kiros+ 2015) or FastSent (Hill+ 2016)
 * We compare sentence embeddings trained on various supervised tasks
 * we compare convolutional, recurrent and even simpler word composition
   * encoder based on a bi-directional LSTM architecture with max pooling,
   * trained on the Stanford Natural Language Inference (SNLI) dataset
     (Bowman+ 2015)
-  * state-of-the-art sentence embeddings
+  * SOTA sentence embeddings
     compared to all existing approaches like SkipThought or FastSent,
     * much faster to train
 
 # 2 Related work
 
 * Recent work on generating sentence embeddings
-  * [non-neural]
+  * non-neural
     * Le and Mikolov, 2014
     * Arora+ 2017
       * A simple but tough-to-beat baseline for sentence embeddings
@@ -60,7 +60,7 @@ https://github.com/facebookresearch/InferSent
 1. how the NLI task can be used to train universal sentence encoding models
 2. architectures that we investigated for the sentence encoder
   * standard recurrent models such as LSTMs and GRUs
-    * mean and maxpooling over the [biLSTM] hidden representations
+    * mean and maxpooling over the biLSTM hidden representations
   * self-attentive network that incorporates different views of the sentence;
     Lin+ (2017)
   * hierarchical convolutional network that can be seen as
@@ -73,7 +73,7 @@ https://github.com/facebookresearch/InferSent
   * natural language inference, also known as Recognizing Textual
     Entailment
 * Models can be trained on SNLI in two different ways:
-  1. separate the encoding of the [two] sentences and
+  1. separate the encoding of the two sentences and
   2. joint methods that allow to use encoding of both sentences (to use
      * cross-features or attention from one sentence to the other)
 * Since our goal is to train a generic sentence encoder, we adopt the first
@@ -112,7 +112,7 @@ https://github.com/facebookresearch/InferSent
     * product reviews (CR)
     * subjectivity/objectivity (SUBJ) and
     * opinion polarity (MPQA)
-  * linear classifier [is] suitable for small datasets,
+  * linear classifier is suitable for small datasets,
     where transfer learning is especially well-suited
 * Entailment and semantic relatedness
   * SICK dataset for both entailment (SICK-E) and semantic relatedness (SICK-R)
@@ -133,7 +133,7 @@ https://github.com/facebookresearch/InferSent
 * The BiLSTM-4096 with the max-pooling operation performs best
   on both SNLI and transfer tasks
   * better performance on the training task does not necessarily translate in
-    better results on the transfer tasks [e.g.] inner-attention and BiLSTM-Mean
+    better results on the transfer tasks e.g. inner-attention and BiLSTM-Mean
 * optimization algorithm:
   * when training with Adam instead of SGD, we observed that the BiLSTM-max
     * converged faster on SNLI (5 epochs instead of 10), but obtained

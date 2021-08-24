@@ -2,6 +2,8 @@ Towards universal paraphrastic sentence embeddings
 John Wieting Mohit Bansal Kevin Gimpel Karen Livescu
 ICLR 2016
 
+http://ttic.uchicago.edu/~wieting
+
 # Abstract
 
 * general-purpose, paraphrastic sentence embeddings
@@ -19,12 +21,11 @@ ICLR 2016
   * word averaging outperforms LSTMs for sentence similarity and entailment,
   * on sentiment classification, LSTM performs very strongly
     * new SOTA performance on the Stanford Sentiment Treebank
-* We combine our pretrained sentence embeddings with these supervised
-  tasks, using them both as a prior and as a black box feature extractor
+* We combine our pretrained sentence embeddings with these supervised tasks,
+  using them both as a prior and as a black box feature extractor
 * performance rivaling the SOTA
   on the SICK similarity and entailment tasks
 
-http://ttic.uchicago.edu/~wieting
 
 # 1 Intro
 

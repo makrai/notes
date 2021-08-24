@@ -177,8 +177,8 @@ ACL 2020
 
 # 5 Bias 5
 
-* existing NLP literature has primarily prioritized gender (which may be a
-* different computational specifications of bias yield markedly different res
+* existing NLP literature has primarily prioritized gender
+* different computational specifications of bias yield markedly different reslts
 * an embedding with low bias scores cannot be assumed to be (nearly) unbiased
 
 ## 5.1 Definitions
@@ -250,7 +250,7 @@ ACL 2020
 * current intrinsic measures of social bias may not handle geometric behavior
   such as clustering (Gonen and Goldberg, 2019)
 
-### Cross-Model Bias Trends. In light of the above, next we compare bias
+### Cross-Model Bias Trends
 
 * only consider target words given by N prof due to the aforementioned stability
   (and for visual clarity) with results for N adj appearing in Table 8. Since we
@@ -313,25 +313,25 @@ ACL 2020
 
 * While contextualized representations retain substantial representational power
   even when reduced to be noncontextual,
-  * it is unclear what information is lost.  After all,
+  * it is unclear what information is lost
 * contextualized representations have been so effective precisely because they
-  are tremendously contextual (Ethayarajh, 2019). As such,
+  are tremendously contextual (Ethayarajh, 2019)
 * the validity of treating the resulting static embeddings as reliable proxies
   for the original contextualized model still remains open
 * human language processing has often been conjectured to have
   both context-dependent and context-independent properties
-  (Barsalou, 1982; Rubio-Fernández, 2008; Depraetere, 2014, 2019). Given this
+  (Barsalou, 1982; Rubio-Fernández, 2008; Depraetere, 2014, 2019)
   * our approach may provide an alternative mechanism for clarifying how these
-    two properties interact in the computational setting from both an
+    two properties interact in the computational setting
   * interpretability standpoint (i.e. comparing results for analyses on the
     static embeddings and the original contextualized representations) and a
   * downstream standpoint (i.e.  comparing downstream performance for models
     initialized using the static embeddings and the original contextualized)
   * relationship between the role of context in human vs comp language
-    processing and remains unclear
+    processing
 * Theoretical explanation needed for the behavior we observe in two settings
   * why learning contextualized representations and then reducing them to static
-    embeddings drastically outperforms directly learning static embeddings. In
+    embeddings drastically outperforms directly learning static embeddings
     * GloVe embeddings we use are learned using 6 billion tokens whereas the
       BERT representations were trained on roughly half as much data (3.3 B)
     * reminiscent of the benefits of modelling in higher dimensional settings

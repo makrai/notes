@@ -90,8 +90,8 @@ ICML 2017
   * guaranteed recovery of non-orthogonal tensors using algorithms for
     orthogonal tensors requires converting the tensor into an orthogonal form
     (known as whitening) which is
-    * ill conditioned in high dimensions (Le+ 2011; Souloumiac, 2009), and is
-    * computationally the most expensive step (Huang+ 2013). Another very
+    * ill conditioned in high dimensions (Le+ 2011; Souloumiac, 2009), and
+    * computationally the most expensive step (Huang+ 2013)
   * simultaneous diagonalization and higher order SVD
     (Colombo and Vlassis, 2016; Kuleshov+ 2015; De Lathauwer, 2006) but these
     * not as computationally efficient as alternating minimization

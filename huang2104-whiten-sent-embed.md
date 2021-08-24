@@ -7,7 +7,7 @@ https://github.com/Jun-jie-Huang/WhiteningBERT
 
 * we conduct a thorough examination of pretrained model based unsupervised
   sentence embeddings
-* We study four pretrained models and seven datasets regarding
+* We study four pretrained models and seven datasets
 * findings
   * averaging all tokens is better than only using [CLS] vector
   * combining the embeddings of the bottom layer and the top layer is better
@@ -59,3 +59,15 @@ https://github.com/Jun-jie-Huang/WhiteningBERT
   * Jianlin Su, Jiarun Cao, Weijie Liu, and Yangyiwen Ou
     2021
     Whitening sentence representations for better semantics and faster retrieval
+
+# Appendix A.3
+
+```python
+def whitening_torch(embeddings):
+  mu = torch.mean(embeddings, dim=0, keepdim=True)
+  cov = torch.mm((embeddings - mu).t(), embeddings - mu)
+  u, s, vt = torch.svd(cov)
+  W = torch.mm(u, torch.diag(1/torch.sqrt(s)))
+  embeddings = torch.mm(embeddings - mu, W)
+  return embeddings
+```

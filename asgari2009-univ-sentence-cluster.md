@@ -1,7 +1,9 @@
 Covid-Transformer: Detecting Trending Topics on Twitter
   Using Universal Sentence Encoder
 Meysam Asgari-Chenaghlu, Narjes Nikzad-Khasmakhi, Shervin Minaee
-arXiv:2009.03947 [cs.CL]
+arXiv:2009.03947
+
+# Abstract
 
 * detect the trending topics and major concerns of people on Twitter
 * We used universal sentence encoder in order to derive the semantic repr & sim
@@ -17,7 +19,7 @@ arXiv:2009.03947 [cs.CL]
 
 * Ideally different clusters contain different semantic topics
 * Compared to the classical models for topic modeling (such latent Dirichlet a)
-  * this work better ... by first representing a sentence-level embedding
+  * this work better by first representing a sentence-level embedding
     rather than considering words similarity (as used in LDA)
 
 # 2 details of the proposed algorithm

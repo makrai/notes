@@ -33,11 +33,11 @@ NAACL 2019
   * e.g. Caliskan+ ’s tests rely on
     * given names associated with European American and African American people
     * terms referring to women and men as groups (such as “woman” and “man”)
-    * We explore the effect of using given names versus group terms by creating
-      alternate versions of several bias tests that swap the two
+    * We explore the effect of using given names versus group terms 
+      by creating alternate versions of several bias tests that swap the two
     * not generally feasible with WEAT, as categories like African Americans
       lack common single-word group terms
-* Sentence-to-vector encoders largely exhibit the angry black woman stereotype
+* Sentence-to-vector encoders largely exhibit the _angry black woman_ stereotype
   and Caliskan biases, and to a lesser degree the double bind biases
 * BERT (Devlin+ 2018) display limited evidence of the tested biases
 * cosine similarity may not be suitable in recent models

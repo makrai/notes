@@ -5,13 +5,13 @@ Appl. Sci. 2020, 10(3), 958; https://doi.org/10.3390/app10030958
 # Abstract
 
 * bidirectional encoder representations from transformers (BERT)
-* different sentence components serve diverse roles in the meaning of a sent
+* different sentence components serve diverse roles in the meaning of a sentence
   * subject, predicate, and object serve the most crucial roles
-* [our] representation consists of a
+* our representation consists of a
   * basic part which refers to the complete sentence, and a
   * component-enhanced part: subject, predicate, object, and their relations
   * weight factor to adjust the ratio of the two parts to obtain the
-* evaluate [on] semantic textual similarity and entailment classification
+* evaluate on semantic textual similarity and entailment classification
   * significant performance gain compared to other methods
 
 # 1 Introduction
@@ -42,7 +42,7 @@ Appl. Sci. 2020, 10(3), 958; https://doi.org/10.3390/app10030958
   * Sentences Involving Compositional Knowledge Semantic Relatedness (SICK-R)
   * Semantic Texture Similarity Benchmark (STS-B)), and then the
   * sentence representations obtained by training the similarity task SICK-R
-    are directly used for the [entailment] task (SICK-E)
+    are directly used for the entailment task (SICK-E)
 
 # 3 design of the method and training details
 
