@@ -135,13 +135,26 @@ https://github.com/Yale-LILY/SummEval
     summarization datasets preventing models
 * factual correctness, faithfulness
   * Kryściński+ (2019b)
+    Wojciech Kryściński, Bryan McCann, Caiming Xiong, and Richard Socher 
+    Evaluating the factual consistency of abstractive text summarization
+    CoRR, abs/1910.12840
     * hallucinating facts touches up to 30% of generated summaries
     * common types of errors made by generative models
   * Maynez+ (2020)
+    Joshua Maynez, Shashi Narayan, Bernd Bohnet, and Ryan T. McDonald
+    On faithfulness and factuality in abstractive summarization
+    ACL 2020
     * large-scale study of abstractive summarizers' faithfulness
     * improving factual faithfulness is a critical issue in summarization
     * ROUGE and BertScore are not sufficient to study the problem at hand
   * Durmus+ (2020) and Wang+ (2020) similarly examine faithfulness evaluation,
+    * Esin Durmus, He He, and Mona Diab. 2020.
+      FEQA: A question answering evaluation framework 
+        for faithfulness assessment in abstractive summarization. In Proceedings
+      ACL 2020
+    * Alex Wang, Kyunghyun Cho, and Mike Lewis.
+      Asking and answering questions to evaluate the factual consistency of summ
+      ACL 2020
     * proposing question answering frameworks as a means of evaluation
 
 * library for developing summarization metrics (Deutsch and Roth 2020)
