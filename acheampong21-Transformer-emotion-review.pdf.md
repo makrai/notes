@@ -1,36 +1,36 @@
-Transformer models for text-based emotion detection: a review of BERT-based approaches
-Francisca Adoma Acheampong, Henry Nunoo-Mensah & Wenyu Chen
+Transformer models for text-based emotion detection: a review of BERT-based appr
+Francisca Adoma Acheampong, Henry Nunoo-Mensah, and Wenyu Chen
 Artificial Intelligence Review (2021)
 
 # Abstract
 
-* The models discussed include the Generative Pre-training (GPT) and its
-  variants, Transformer-XL, Cross-lingual Language Models (XLM), and the
-  Bidirectional Encoder Representations from Transformers (BERT). Considering
-  * recent works in which researchers proposed various BERT-based models. The
+* models discussed: the Generative Pre-training (GPT) and its variants,
+  Transformer-XL, Cross-lingual Language Models (XLM), and 
+  the Bidirectional Encoder Representations from Transformers (BERT).
+  * recent works in which researchers proposed various BERT-based models
 
 # Introduction
 
-* in Akhtar+ (2020), where the intensities of emotions were detected using a
-  stacked ensemble of convolutional neural network (CNN), LSTM, and gated
-  recurrent unit (GRU). However, this approach required a ground-up
+* in Akhtar+ (2020), the intensities of emotions were detected 
+  using a stacked ensemble of convolutional neural network (CNN), LSTM, and
+  gated recurrent unit (GRU)
 * Emotion Detection (ED) is a branch of sentiment analysis (SA) that seeks to
   extract fine-grained emotions from either speech/voice, image, or text data
-  * issue has been partly due to the
-    * absence of voice modulation, facial expressions, etc., which may present
+  * issues
+    * absence of voice modulation, facial expressions, etc
     * unavailability of a practical context extraction approach for texts
-    * some texts convey multiple emotional expressions. Recently,
+    * some texts convey multiple emotional expressions
 * pre-trained transformer-based models
-* this paper is to review some of these transformer-based models that are being
+* this paper is to review some of these transformer-based models
   * datasets used, model architecture, results obtained, and limitations
 
-# 2 the models of emotions and the concept of text-based emotion detection
+# 2 Models of emotions and the concept of text-based emotion detection
 
-# 3 a brief introduction to the concept of transformers
+# 3 The concept of transformers
 
-# 4 some transformer-based models, their pros and cons 7
+# 4 Some transformer-based models, their pros and cons 7
 
-# 5 text-based emotion detection works with transformer-based pre-train 15
+# 5 Text-based emotion detection works with transformer-based pre-train 15
 
 * Yang+ [32], proposed a contextual emotion classifier, EmotionX-KU, which was
   applied to the EmotionX 2019 challenge shared task for detecting
@@ -61,14 +61,14 @@ Artificial Intelligence Review (2021)
 * Fadel+’s JUSTers model evaluated the performance of five pre-trained
   transformer models against commonsense validation and explanation at the Se-
 
-# 6 concludes the paper and points out some recommendations to improve research
+# 6 Conclusion and recommendations to improve research
 
 * BERT is the most explored transformer-based model for text-based emotion
-  * BERT variants present to resolve BERT’s associated weaknesses, the paper
+  * BERT variants present to resolve BERT’s associated weaknesses
   * An ensemble of these variants using various ensemble techniques is recommend
-* XLNet significantly outperforms other BERT variants in related NLP tasks, but
+* XLNet significantly outperforms other BERT variants in related NLP tasks
 * a robust semi-supervised learning architecture could be efficient for an
-  in-depth exploration of this available data [107].  The use of the
+  in-depth exploration of this available data [107]
   * 107. A. Hussain and E. Cambria,
     Semi-supervised learning for big social data analysis
     Neurocomputing, vol. 275, pp. 1662–1673, 2018
