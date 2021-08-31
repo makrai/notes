@@ -19,13 +19,13 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
 # Introduction
 
 * Deep neural networks are demonstrating a large impact on NLP
-  * NMT (Bahdanau+ 2014; Luong+ 2015; Wu+ 2016; Vaswani+ 2017) ... has had a
+  * NMT (Bahdanau+ 2014; Luong+ 2015; Wu+ 2016; Vaswani+ 2017) has had a
     strong influence on other related NLP tasks such as
   * dialog generation (Vinyals and Le, 2015) and
   * automatic summarization (Rush+ 2015)
 * many NMT systems are still relying on language-dependent pre~ and postproces-
   [from] traditional statistical machine translation (SMT) systems
-  * Moses ... is built upon hand-crafted and language dependent rules whose
+  * Moses is built upon hand-crafted and language dependent rules whose
     effectiveness for NMT has not been proven. In addition, these tools are
   * mainly designed for European languages where words are segmented with space
   * for non-segmented languages such as Chinese, Korean and Japanese, we need
@@ -49,16 +49,16 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
   * Trainer trains the subword segmentation model from the normalized corpus
   * Encoder correspond to preprocessing (tokenization)
   * Decoder converts the subword sequence into the normalized text
-* Encoder and Decoder ... manages the vocabulary to id mapping
+* Encoder and Decoder manages the vocabulary to id mapping
   * useful for most of NMT systems as their input and output are id sequences
 
 # 3 Library Design
 
-## 3.1 3.1 Lossless Tokenization
+## 3.1 Lossless Tokenization
 
 * The information that no space exists between “world” and “.” is not kept in
-  the tokenized sequence.  Detokenization ... has to be language-dependent
-  * e.g. while the detokenizer usually puts whitespaces between the ...  tokens
+  the tokenized sequence.  Detokenization has to be language-dependent
+  * e.g. while the detokenizer usually puts whitespaces between the tokens
     in most European languages, no spaces are required in Japanese and Chinese
 
 ## 3.4 Customizable character normalization
@@ -74,8 +74,8 @@ available under the Apache 2 license at https://github.com/google/sentencepiece
   * However, it is not always stated how the data was preprocessed
   * Post, (2018) reported that subtle differences in preprocessing schemes can
     widely change BLEU scores
-  * Even using the Moses toolkit, ... version and command line flags
-  * Strictly speaking, NFKC normalization ... depending on the Unicode version
+  * Even using the Moses toolkit, version and command line flags
+  * Strictly speaking, NFKC normalization depending on the Unicode version
 
 # 4 Experiments
 
