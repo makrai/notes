@@ -5,20 +5,20 @@ First NLPL Workshop on Deep Learning for NLP 2019
 # Abstract
 
 * from a typological perspective amongst others – multilingual variants of
-  existing encoders on probing datasets constructed for 6 non-English languages.
+  existing encoders on probing datasets constructed for 6 non-English languages
 * we probe each layer of a multiple monolingual RNN-based ELMo models, the
   transformer-based BERT’s cased and uncased multilingual variants, and a
-  variant of BERT that uses a cross-lingual modelling scheme (XLM).
-* English, as well as French, German, Spanish, Russian, Turkish and Finnish.
+  variant of BERT that uses a cross-lingual modelling scheme (XLM)
+* English, as well as French, German, Spanish, Russian, Turkish and Finnish
 
 # 1 Intro
 
 * Detailed evaluations have naturally followed: these have either been
   * follow-up works to papers describing contextl repr sys e.g. Peters+ (2018b)
-  * evaluating a broad class of encoders on a variety of tasks (Perone+ 2018).
+  * evaluating a broad class of encoders on a variety of tasks (Perone+ 2018)
 * quantify what sort of linguistic information our encoders retain, and
   * how this information varies across language, across encoder, and across task
-  * quantify differences between settings rather than absolute results.
+  * quantify differences between settings rather than absolute results
 
 # 2 prior work
 
@@ -41,37 +41,38 @@ First NLPL Workshop on Deep Learning for NLP 2019
     * downstream performance on a variety of NLP tasks.  Along similar lines,
 * Liu+ (2019) probe similar deep pre-trained to the ones we do, on a set of
   ‘sixteen diverse probing tasks’. (
-* Tenney+ (2018) probe deep pre-trained encoders for sentence structure.
+* Tenney+ (2018) probe deep pre-trained encoders for sentence structure
 * Saphra and Lopez (2018) present a CCA-based method to compare representation
   learning dynamics across time and models, without explicitly requiring
-  annotated corpora.
+  annotated corpora
 * multilingual sentence representations, Conneau+ (2018b) describe the XNLI
   dataset, a set of translations of the development and test portions of the
   multi-genre MultiNLI inference dataset (Williams+ 2018). This, in a sense, is
   * the authors evaluate sentence representations derived by mapping non-English
-    representations to an English representation space.
+    representations to an English representation space
 
 ##2.4 BERTology
 
 * BERT’s attentions heads, such as Michel+ (2019), where the authors prune
   heads, often reducing certain layers to single heads, without a significant
-  drop in performance in certain scenarios.
+  drop in performance in certain scenarios
 * Clark+ (2019) provide a per-head analysis and attempt to quantify what
-  information each head retains; they discover that specific aspects of syntax
-  are well-encoded per head, and find heads that correspond to certain
-  linguistic properties, such as heads that attend to direct objects of verbs.
+  information each head retains; they discover that 
+  * specific aspects of syntax are well-encoded per head, and 
+  * they find heads that correspond to certain linguistic properties
+    * e.g.  heads that attend to direct objects of verbs
 * BERT’s layers, such as
   * Tenney+ (2019), who discover that BERT’s layers roughly correspond to the
     notion of the classical ‘NLP pipeline’, with lower level tasks such as
-    tagging lower down the layer hierarchy.
+    tagging lower down the layer hierarchy
   * Hewitt and Manning (2019) define a structural probe over BERT
     representations, that extracts notions of syntax that correspond strongly
-    to linguistic notions of dependency syntax.
+    to linguistic notions of dependency syntax
 
-# 3 Corpora.
+# 3 Corpora
 
 * The linguistic features we probe, and how we generated our probing corpus
-* our tasks can broadly be grouped into surface, syntactic and semantic tasks.
+* our tasks can broadly be grouped into surface, syntactic and semantic tasks
 * the same as the ones described in Conneau+ (2018a), with minor modif
   * Due to the differences in corpus domain (Wikipedia)
     * we alter some of their word-frequency parameters. We also
@@ -87,12 +88,12 @@ First NLPL Workshop on Deep Learning for NLP 2019
 7. Coordination inversion: In CoordInv, two main clauses joined by a
    coordinating conjunction have their orders reversed, with a probability of
    one in two. Only sentences with exactly two top-level conjuncts are con-
-   sidered.
+   sidered
 8. (Semantic) odd man out: SOMO, one of the more difficult tasks in the
    collection, replaces a randomly sampled word with another word with
-   comparable corpus bigram frequencies.
+   comparable corpus bigram frequencies
 9. Tense prediction: The Tense prediction asks the classifier to predict the
-   tense of the main verb: we compare the past and present tenses.
+   tense of the main verb: we compare the past and present tenses
 
 ## 3.2 Data
 
@@ -104,10 +105,10 @@ First NLPL Workshop on Deep Learning for NLP 2019
   * typological diversity. The former, in particular, was a bit of a
     restriction, since not all sentences were valid candidates for extraction
     per task. Our final set of languages include an additional corpus for
-* English, as well as French, German, Spanish, Russian, Turkish and Finnish.
+* English, as well as French, German, Spanish, Russian, Turkish and Finnish
   * includes morphologically agglutinative, fusional and (relatively) isolating
-  * two scripts, Latin and Cyrillic.
-  * three families (Indo-European, Turkic and Uralic).
+  * two scripts, Latin and Cyrillic
+  * three families (Indo-European, Turkic and Uralic)
 
 ### Preprocessing
 
@@ -123,41 +124,41 @@ First NLPL Workshop on Deep Learning for NLP 2019
   * drop in informativity for Russian and Turkish. While this is perhaps
     * Turkish – which has smaller probing corpora, and a less reliable Wikipedia
     * Russian’s opaqueness cannot be as easily explained away, particularly when
-      contrasted with Finnish, which tends to have fewer resources.
+      contrasted with Finnish, which tends to have fewer resources
 * Figure 6, which displays the averaged results of three systems
-  * Most linguistic differences appear to be clustered in the semantic part of
+  * Most linguistic differences appear to be clustered in the semantic part
   * not the least of possible factors is the actual probing corpus itself:
-  * however, we attempt to provide a justification, from a typological
-  * Tense task stands out as fairly easy to probe for all languages.  It thus
+  * we attempt to provide a justification, from a typological
+  * Tense task stands out as fairly easy to probe for all languages
   * subject and object number,
     * French and Spanish appear to be somewhat easier to probe than other
     * both languages marking nominal number, not just with verb agreement, but
-      also with plural articles, resulting in representations that are more
-    * English and German, which either do not have plural articles, or have plural
-      articles that morphologically overlap with non-plural forms, or with
-    * Russian, that tends to avoid articles in general.
+      also with plural articles
+    * English and German, which either do not have plural articles, or have
+      plural articles that morphologically overlap with non-plural forms
+    * Russian, that tends to avoid articles in general
   * German’s relative ability at retaining information on CoordInv and Tense, as
   * Finnish’s extraordinarily high performance on Tense. Further,
   * SentLen appears to be retained better, counter-intuitively, in Russian,
     Turkish and Finnish; a brief look at Figure 1 shows that, interestingly,
-    this is likely due to BERT.
+    this is likely due to BERT
 * not seem to indicate that English is somehow better represented in our
   multilingual systems, nor does it appear to perform significantly better than
   other languages in general, indicating that none of our models are ‘learning’
-  English first and then adapting to other languages.
+  English first and then adapting to other languages
 
 # 6 conclude with a discussion of the implications and future work
 
 ## Implications Having elaborated our results, it becomes crucial to
 contextualise their importance. ‘Probing’ an encoder, or more correctly, using
 diagnostic classifiers to attempt to quantify what information an encoder
-stores, appears to be a reasonable approach to qualifying this information.
+stores, appears to be a reasonable approach to qualifying this information
 * critique of encoder probing approach. To paraphrase
   * Saphra and Lopez (2018), the architecture of a diagnostic classifier does
     affect the performance of a probing task; further,
   * lower layers of encoders may represent information in ways designed to be
     picked up on by their own higher layers; this might prove difficult for
-    simple classifiers to truly probe.
+    simple classifiers to truly probe
 
 ## 6.2 Future work One potential strand of research relates directly to the
 
@@ -169,9 +170,9 @@ stores, appears to be a reasonable approach to qualifying this information.
   the tasks proposed by Liu+ (2019) and Tenney+ (2018) are
   not strictly easy to motivate cross-linguistically: the burden of annotation
 * more semantic-level probing by means of existing cross-lingual semantic resrc,
-  such as the Parallel Meaning Bank (Abzianidze+ 2017).
-  Lasha Abzianidze, Johannes Bjerva, Kilian Evang, Hessel Haagsma, Rik van
-  Noord, Pierre Ludmann, Duc-Duy Nguyen, and Johan Bos.
-  arXiv:1702.03964 [cs].  ArXiv: 1702.03964.  2017.
-  The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations
-  Annotated with Compositional Meaning Representations.
+  such as the Parallel Meaning Bank (Abzianidze+ 2017)
+  * The Parallel Meaning Bank: Towards a Multilingual Corpus of 
+      Translations Annotated with Compositional Meaning Representations
+    Lasha Abzianidze, Johannes Bjerva, Kilian Evang, Hessel Haagsma, 
+      Rik van Noord, Pierre Ludmann, Duc-Duy Nguyen, and Johan Bos
+    arXiv:1702.03964 [cs].  ArXiv: 1702.03964.  2017

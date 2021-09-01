@@ -60,24 +60,24 @@ EMNLP-IJCNLP 2019
 
 # 2 Related Work
 
-## Evaluating Sentence Encoders The success of
+## Evaluating Sentence Encoders
 
 * Boolean classification tasks of English sentences to evaluate the
-  grammatical knowledge encoded in these models. The objective of this task is
-  to predict whether a single input sentence is acceptable or not,
+  grammatical knowledge encoded in these models
+  * objective is to predict whether a single input sentence is acceptable
   * abstracting away from gradience in acceptability judgments.
-  * Linzen+ (2016) train classifiers on this task using data with manipulated
-    verbal inflection to investigate whether LSTMs can identify subject-verb
-    agreement violations, and therefore a (potentially long distance) syntactic
-    dependency.
+  * Linzen+ (2016) train classifiers on this task
+    using data with manipulated verbal inflection to
+    investigate whether LSTMs can identify subject-verb agreement violations,
+    and therefore a (potentially long distance) syntactic dependency
   * Warstadt+ (2018) train models on this task using the CoLA corpus of
     acceptability judgments as a method for evaluating domain general
     grammatical knowledge, and Warstadt and Bowman (2019) analyze how these
     domain general classifiers perform on specific linguistic phenomena.
   * Kann+ (2019): verbal argument structure classes
-* method of minimal pairs, consisting of two sentences that differ minimally in
-  * Marvin and Linzen (2018) and Wilcox+ (2019) apply this method to phenomena
-    such as subject-verb agreement, NPI licensing, and reflexive licensing.
+* method of minimal pairs, consisting of two sentences that differ minimally
+  * Marvin and Linzen (2018) and Wilcox+ (2019) apply this method to
+    e.g. subject-verb agreement, NPI licensing, and reflexive licensing
 * probing tasks to predict the value of a particular linguistic feature given an
   * syntactic and surface features such as tense and voice (Shi+ 2016),
     sentence length and word content (Adi+ 2016), or

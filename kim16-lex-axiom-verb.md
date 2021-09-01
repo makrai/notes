@@ -4,8 +4,8 @@ Gene Kim and Lenhart Schubert
 
 # 1 Introduction
 
-* attempts to transduce informal lexical knowledge from machine readable
-  dictionaries into a formally structured form
+* attempts to transduce informal lexical knowledge from machine readable dicts
+  into a formally structured form
   (Calzolari, 1984; Chodorow+ 1985; Harabagiu+ 1999;
   Moldovan and Rus, 2001; Hobbs, 2008; Allen+ 2013)
 
@@ -20,7 +20,7 @@ Gene Kim and Lenhart Schubert
   * variants of
     * first-order logic (FOL)
       * Harabagiu+ 1999; Moldovan and Rus, 2001; Hobbs, 2008
-    * such as Hobbs Logical Form (HLF) (Hobbs, 1985)
+    * such as Hobbs Logical Form (HLF, Hobbs, 1985)
   * OWL-DL
     * OWL Working Group, 2004; Allen+ 2011; Allen+ 2013;
       Orfan and Allen, 2015; Mostafazadeh and Allen, 2015
@@ -33,7 +33,7 @@ Gene Kim and Lenhart Schubert
 # 4 Gloss Axiomatization
 
 * In this section, we describe our approach to semantic parsing and
-  axiomatization of WordNet entries. Our approach consists of
+  axiomatization of WordNet entries
 * three major steps:
   1. Argument structure inference (Section 4.1)
     * refines the WordNet sentence frames using the provided examples. Specific
@@ -45,13 +45,13 @@ Gene Kim and Lenhart Schubert
 
 ## Semantic Parsing of Glosses
 
-* preprocessing of the glosses is necessary because glosses often omit
-  arguments, resulting in an incomplete sentence
+* preprocessing of the glosses is necessary because glosses often omit args,
+  resulting in an incomplete sentence
 * There are also some serious shortcomings to general semantic parsers,
   particularly in handling coordinators and/ or.
 * In this section, we describe the complete semantic parsing process of glosses
   and the details of each step. Throughout our semantic parsing implementation,
-  we use the tree-to-tree transduction tool (TTT) (Purtee and Schubert, 2012)
+  we use the tree-to-tree transduction tool (TTT, Purtee and Schubert, 2012)
 
 ## Axiom Construction
 

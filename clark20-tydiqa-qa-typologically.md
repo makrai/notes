@@ -73,7 +73,7 @@ TACL 2020
     the consonants k Brahmi and y Brahmi assembled vertically).[1] Conjuncts
 * often used with loan words. Native words typically use the basic consonant
 
-### Finnish: a Finno-Ugric language with rich inflectional and derivational
+### Finnish: a Finno-Ugric language with rich inflectional and derivational mrph
 
 * Word stems often alter due to morphophonological alternations (Karlsson, 13)
 * A typical Finnish noun has approximately 140 forms and a verb about 260 forms
@@ -83,7 +83,7 @@ TACL 2020
 
 * mostly non-configurational language in which
   * particles are used to indicate grammatical roles though the
-  * verb typically occurs in the last position (Kaiser+ 2013). Japanese uses
+  * verb typically occurs in the last position (Kaiser+ 2013)
 * 4 alphabets: all of these are in common usage and can be found in TyDiQA
   * kanji (ideograms shared with Chinese),
   * hiragana (a phonetic alphabet for morphology and spelling),
@@ -92,19 +92,19 @@ TACL 2020
 
 ### Indonesian: an Austronesian language characterized by
 
-* reduplication of nouns, pronouns, adjectives, verbs, and numbers (Sneddon+
-  2012; Vania and Lopez, 2017), as well as
+* reduplication of nouns, pronouns, adjectives, verbs, and numbers 
+  (Sneddon+ 2012; Vania and Lopez, 2017)
 * prefixes, suffixes, infixes, and circumfixes
 
-### Kiswahili: a Bantu language with complex inflectional morphology.  Unlike
+### Kiswahili: a Bantu language with complex inflectional morphology
 
 * inflections, like number and person, are encoded in the prefix (Ashton, 1947)
 * Noun modifiers show extensive agreement with the noun class (Mohamed, 2001)
-* pro-drop language (Seidl and Dimitriadis, 1997; Wald, 1987).  Most semantic
-* English as prepositions are expressed in verbal morphology or by nouns (Wald,
-  1987)
+* pro-drop language (Seidl and Dimitriadis, 1997; Wald, 1987)
+* English as prepositions are expressed in verbal morphology or by nouns 
+  (Wald, 1987)
 
-### Korean: an agglutinative, predicate final language with a
+### Korean: an agglutinative, predicate final language
 
 * rich set of nominal and verbal suffixes and postpositions
 * cases
@@ -112,13 +112,14 @@ TACL 2020
   * including the connective ‘and’/‘or’—and
   * can be stacked in order of dominance from right to left
 * Verbal particles express a wide range of tense-aspect-mood, and
-  * ‘sentence-ender’ for declarative, interrogative, imperative, etc.  Korean
+  * ‘sentence-ender’ for declarative, interrogative, imperative, etc
 * rich system of honorifics. There is
 * extensive discourse-level pro-drop (Sohn, 2001)
 * script is non-Latin featural alphabet arranged in syllabic blocks
-  * White space is used in writing, but prescriptive conventions for spacing
-    predicate-auxiliary compounds and semantically close noun-verb phrases are
-    commonly flouted (Han and Ryu, 2005)
+  * White space is used in writing, but 
+    prescriptive conventions 
+    for spacing predicate-auxiliary compounds and semantically close noun-verb
+    phrases are commonly flouted [sérülnek] (Han and Ryu 2005)
 
 ### Russian: an Eastern Slavic language using the Cyrillic alphabet. An
 

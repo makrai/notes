@@ -247,7 +247,7 @@ TACL Volume 7, 2019 p.49-72
 ## 4.2 linguistic phenomena they aim to study 7
 
 * earlier studies emphasized exhaustivity (Cooper+ 1996; Lehmann+ 1996),
-* recent ones tend to focus on a few properties of interest. For example,
+* recent ones tend to focus on a few properties of interest
   * Sennrich (2017), for MT, focusing on five properties:
     subject–verb agreement, noun phrase agreement, verb–particle constructions,
     polarity, and transliteration

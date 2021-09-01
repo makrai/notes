@@ -93,7 +93,7 @@ The dataset is available at http://github.com/ivri/DiffVec
 
 * We ran a series of experiments on _normalised_ and unnormalised w2v models,
   and found that normalisation tends to boost results over most of our
-  relations (with the exception of L EX S EM Event and N OUN Coll ). We leave
+  relations (with the exception of L EX S EM Event and Noun Coll ). We leave
   a more detailed investigation of normalisation to future work
 
 ## Lexical Relations
@@ -114,14 +114,14 @@ The dataset is available at http://github.com/ivri/DiffVec
 
 # 4 Clustering
 
-* the morphosyntactic paradigm relations (NOUN SP and the three VERB
-  relations) are by far the easiest to capture. The lexical semantic rela-
-  tions, on the other hand, are the hardest to capture for all embeddings
-  * VERB 3 there was a single cluster consisting of around 90% of V ERB 3 word
+* the morphosyntactic paradigm relations (NOUN SP and the three VERB relations)
+  are by far the easiest to capture. 
+* lexical semantic relations, on the other hand, are the hardest for all embeds
+  * VERB 3 there was a single cluster consisting of around 90% of Verb 3 word
     pairs. Most errors resulted from POS ambiguity, leading to confusion with
-    V ERB N OUN in particular. Example V ERB 3 pairs incorrectly clustered
+    Verb Noun in particular. Example Verb 3 pairs incorrectly clustered
     are: (study, studies), (run, runs), and (like, likes)
-  * V ERB Past , a single relatively pure cluster was generated, with minor
+  * Verb Past , a single relatively pure cluster was generated, with minor
     contamination due to pairs such as (hurt, saw), (utensil, saw), and (wipe,
     saw). Here, the noun saw is ambiguous with a high-frequency past-tense
     verb
@@ -151,9 +151,8 @@ The dataset is available at http://github.com/ivri/DiffVec
 
 * test set including word pairs drawn at random
 * random pairs (have, works), (turn, took), and (works, started) were
-  incorrectly classified as V ERB 3 , V ERB Past and V ERB 3Past, re-
-  spectively. That is, the model captures syntax, but lacks the ability to
-  capture lexical paradigms,
+  incorrectly classified as Verb 3 , Verb Past and Verb 3Past, respectively.
+  That is, the model captures syntax, but not lexical paradigms,
 
 ## OPEN-WORLD Training with Negative Sampling
 

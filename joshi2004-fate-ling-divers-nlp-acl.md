@@ -4,7 +4,7 @@ arxiv.org/abs/2004.09095
 
 # Abstract
 
-* over 7000 languages of the world are [not] represented in the rapidly evolvng
+* over 7000 languages of the world are [not] represented in the rapidly evolving
 * we look at the relation between the
   types of languages, resources, and their representation in NLP conferences
   * trajectory that different languages have followed over time
@@ -18,9 +18,9 @@ arxiv.org/abs/2004.09095
   * 29M and 18M native speakers, and 2M and 5.5K Wikipedia articles,
   * X is syntactically quite similar to English,
     though uses dimunitives and has grammatical gender
-    Y, on the other hand, has a different word order from English, and has a
-    rare typological feature generally it is a head-final language, but noun
-    phrases are head-initial.  It also features full and partial reduplication
+    * Y, on the other hand, has a different word order from English, and has a
+      rare typological feature: generally it is a head-final language, but noun
+      phrases are head-initial.  It also features full and partial reduplication
   * 69 items on LDC and ELRA contain data in X, whereas for
     Y there are only 2 items
     * X boasts of some of the best online machine translation systems, whereas
@@ -28,9 +28,9 @@ arxiv.org/abs/2004.09095
   * number of papers in conferences (ACL, NAACL, EACL, EMNLP, LREC, WS) that
     mention X and Y in the paper, across the years
     * X has a steady and growing trend of research, our
-      community has been mostly oblivious to Y, until recently when some of the
+    * community has been mostly oblivious to Y, until recently when some of the
       zero-shot learning papers have started mentioning it
-      Can you guess what X and Y are?
+  * Can you guess what X and Y are?
 * NLP researchers surely know
   * of (and might even speak) several languages which
     * in the same boat as X; languages which
@@ -73,7 +73,7 @@ arxiv.org/abs/2004.09095
 ## 2.1 Features
 
 * two feature axes: number of unlabeled vs.labeled resources
-* each data resource as a fundamental unit, based on the assumption that the
+* each data resource as a fundamental unit
 * Other units such as the total number of datapoints across datasets can be
   misleading because
   * different NLP tasks have different data requirements
@@ -86,14 +86,13 @@ arxiv.org/abs/2004.09095
 
 ## 2.2 Repositories
 
-* the LDC catalog 1 and the ELRA Map 2 for labeled datasets. Although there are
+* the LDC catalog and the ELRA Map for labeled datasets
   * keeping within the purview of NLP datasets used in `*`CL conferences, we
   * not e.g
-    * PanLex (Kamholz+ 2014), which is a large lexical database of a wide range of
+    * PanLex (Kamholz+ 2014), which is a large lexical database of a wide range
     * OLAC (Simons and Bird, 2003), which contains a range of information for
-      different languages (e.g.  text collections, audio recordings, and
-      dictionaries)
-* Wikipedia pages as a measure for unlabeled data resources. With regards to
+      different languages (e.g. text collections, audio recordings, and dicts)
+* Wikipedia pages as a measure for unlabeled data resources
 
 ## 2.3 Language Classes
 
@@ -193,7 +192,7 @@ arxiv.org/abs/2004.09095
 ### Does it run in the family? e.g. Semitic
 
 * Amharic is the second most spoken language after Arabic (which has 300M)
-  * Arabic has 9 ‘ignored’ typological features, whereas Arabic has none
+  * Amharic has 9 ‘ignored’ typological features, whereas Arabic has none
   * reflects in the error rate of English to Amharic 60.71 vs 7.8
 
 # 4 Conference-Language Inclusion 5
