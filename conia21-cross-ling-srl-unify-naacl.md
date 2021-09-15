@@ -251,7 +251,7 @@ https://github.com/SapienzaNLP/unify-srl
   * share weights across 7 languages and varying formalisms
 * evaluated on the gold multilingual benchmark of CoNLL-2009,
   * outperforms previous SOTA multilingual systems over 6 diverse languages,
-  ranging from Catalan to Czech, from German to Chinese, and, at the same time,
+    ranging from Catalan to Czech, from German to Chinese
   * considerably reduces the amount of trainable parameters required
 * our model can be used on languages that were never seen at training time,
   opening the door to alignment-free cross-lingual SRL on languages where a

@@ -53,7 +53,7 @@ arXiv preprint arXiv:1906.01502
 ## 3.2 Generalization across scripts
 
 * Table 4 shows a sample of POS results for transfer across scripts
-* an M-BERT model that has been fine-tuned using only POS labeled Urdu (ar scr)
+* an M-BERT model that has been fine-tuned using only POS labeled Urdu (ar scrp)
   91% accuracy on Hindi (written in Devanagari script), even though it has never
 * less accurate for other pairs, such as English and Japanese, indicating that
   * possible explanation for this, as we will see in section 4.2, is typ sim

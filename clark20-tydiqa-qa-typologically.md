@@ -64,13 +64,13 @@ TACL 2020
 * inflection, affixation, compounding, reduplication, and the idiosyncrasies of
   the writing system including non-decomposable consonant conjuncts. (Thompson,
   2010)
-* letters used to write consonant clusters such as /pr/ or /rv/. Although
+* letters used to write consonant clusters such as /pr/ or /rv/
 * letters are formed by
   * using a simple consonant with the inherent value vowel "a" (as with "k"
-    Brahmi, pronounced "ka" in) Brahmi), or by
-  * combining a consonant with an vowel in the form of a diacritic (as with
+    Brahmi, pronounced "ka")
+  * combining a consonant with an vowel in the form of a diacritic
   * creation of more sophisticated sounds (as with "kya" Brahmi, formed with
-    the consonants k Brahmi and y Brahmi assembled vertically).[1] Conjuncts
+    the consonants k Brahmi and y Brahmi assembled vertically)
 * often used with loan words. Native words typically use the basic consonant
 
 ### Finnish: a Finno-Ugric language with rich inflectional and derivational mrph
@@ -90,7 +90,7 @@ TACL 2020
   * katakana (a phonetic alphabet for foreign words), and the
   * Latin alphabet (for many new Western terms);
 
-### Indonesian: an Austronesian language characterized by
+### Indonesian: an Austronesian language
 
 * reduplication of nouns, pronouns, adjectives, verbs, and numbers 
   (Sneddon+ 2012; Vania and Lopez, 2017)

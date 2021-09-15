@@ -187,7 +187,7 @@ arxiv.org/abs/2004.09095
 
 * The most ‘ignored’ feature in Table 2, 144E (Multiple Negative Constructions
   in SVO Languages), is a rare feature, existing in only 38 languages
-  * languages are from various regions (e.g.  Wolof, Icelandic, and Kilivila)
+  * languages are from various regions (e.g. Wolof, Icelandic, and Kilivila)
 
 ### Does it run in the family? e.g. Semitic
 
