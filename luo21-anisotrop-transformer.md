@@ -1,0 +1,300 @@
+Analyzing the Anisotropy Phenomenon in Transformer-based Masked Language Models
+Luo, Ziyang
+MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
+  Dept of Ling and Philo
+
+# Abstract
+
+* anisotropy phenomenon in popular masked language models, BERT and RoBERTa , in
+* We propose a possible explanation for this unreasonable phenomenon.  First, we
+  * contextualized word vectors derived from pretrained MLM-based encoders share
+    a common, perhaps undesirable pattern across layers
+  * persistent outlier neurons within BERT and RoBERTa's hidden state vectors
+    * consistently bear the smallest or largest values in said vectors. 
+  * LayerNorm is one of the reasons for the position artefacts propagating
+* In an attempt to investigate the source of this information, 
+  * we introduce a neuron-level analysis method, which reveals that 
+    the outliers are closely related to information captured by positional
+    embeddings
+* a simple normalization method, whitening can make the vector space isotropic.
+* ''clipping'' the outliers or whitening can 
+  more accurately distinguish word senses, as well as lead to 
+  better sentence embeddings when mean pooling.
+
+# 1 Introduction
+
+* interpreting neural NLP models (Alishahi+ 2020; Linzen+ 2018, 2019). A key
+* linear probes to investigate the linguistic properties 
+  (Hewitt and Manning, 2019; Tenney+ 2019). Though these works have shed some
+  * hE, most of them only analyze the linearly-transformed vectors
+  * untransformed vector spaces are not studied widely. In addition, 
+* the vector spaces are explicitly anisotropic (Ethayarajh 2019, and Li+ 2020b) 
+
+# 2 Background
+
+## 2.2 Whitening Transformation
+
+* Whitening is a method to transform vectors into the standard normal distributn
+  (the mean vector is 0 and the covariance matrix is the identity matrix):
+
+## 2.5 Related Work
+
+### Interpreting NLP Recently, an explosion of work focused on understanding the
+
+* investigates the self-attention mechanism of Transformer-based models, aiming
+  to e.g. characterize its patterns or decode syntactic structure 
+  (Clark+ 2019; Kobayashi+ 2020; Mareček and Rosa, 2018; 
+  Raganato and Tiedemann, 2018; Vig, 2019; Voita+ 2019). Another line of work
+* analyzes models’ internal representations using probes. These are 
+  * often linear classifiers that 
+    take representations as input and are trained with supervised tasks in mind,
+    e.g. POS-tagging, dependency parsing 
+    (Hewitt & Manning, 2019; Lin+ 2019; NF Liu+ 2019; Tenney+ 2019; Zhao+ 2020)
+
+### Contextualized Representations Space Analysis 
+
+* Most similar to our work, Ethayarajh (2019) measure how contextual a word
+  representation is in models like BERT, ELMo and GPT-2 (Radford+ 2019)
+  * the vector space is anisotropic, revealing that all vectors are occupying a
+  * the same word’s different representations are dissimilar to each other in
+    upper layers, suggesting that 
+    upper layers of models produce more context-specific representations.
+
+### LayerNorm Analysis
+
+* Xu+ (2019): LayerNorm’s learnable parameters increase the risk of over-fitting
+  and dropping them does not affect the model’s performance on several tasks.
+* Kovaleva+ (2021) draws attention to BERT’s outlier neurons. They offer an
+  * exhaustive analysis of LayerNorm parameterization and find that 
+  * the high-magnitude normalization parameters emerge early in pre-training and
+    show up consistently in the same dimensional position throughout the model.
+  * Removing them significantly degrades the downstream task performance. However,
+  * not analyze the reason behind such phenomenon
+
+### Neuron-level Analysis
+
+* Dalvi+ (2018) introduce a neuron-level analysis method, 
+* Durrani+ (2020) use this method to analyze individual neurons in contxtled vcs
+  * a linear probe to predict linguistic information stored in a vector.  They
+  * weights of the classifier as a proxy to select the most relevant neurons to
+  * finds small subsets of neurons to predict linguistic tasks and lower-level
+    tasks localize in fewer neurons. In a similar vein, 
+* Coenen+ (2019) demonstrate the existence of syntactic and semantic subspaces
+  in BERT representations.
+
+### Positional Information Analysis
+
+* the self-attention mechanism of Transformer Encoder is order-invariant, so it
+  needs to use extra methods to trace the word order (Lee+ 2019)
+  * Otherwise, it becomes a bag-of-word model. 
+  * The commonplace method is 
+    adding the positional embeddings (PE) to the input static word embeddings,
+    * learnable method (Devlin+ 2019) or the sinusoidal one (Vaswani+ 2017)
+* Ke+ (2020) 
+  * adding position embeddings to the word embeddings brings information mixed
+    correlations, so they 
+  * propose a complicated method to untie these two embeddings. In our thesis,
+  * we find the positional artefacts exist in the contextualized
+    representations, which corroborates their points.
+
+# 3 Anisotropy Phenomenon and Positional Artefacts
+
+## 3.1 Anisotropy Phenomenon
+
+* contextualized representations of BERT and RoBERTa are more anisotropic in
+  * especially true for RoBERTa, where the average cosine similarity between
+
+## 3.2 Positional Artefacts
+
+### 3.2.1 Finding Outliers
+
+* to find neurons, we average all subword vectors for each layer of each model.
+* In examining BERT, we find that the minimum element of 96.60% vectors is the
+  557 th dimension. Figure 3.3 displays the averaged subword vectors for each
+  * these patterns exist across all layers. 
+* For RoBERTa, we likewise find that the 
+  * maximum element of all vectors is the 588 th element. Interestingly, the
+  * minimum element of 88.19% vectors in RoBERTa is the 77 th element, implying
+
+### 3.2.2 Where Do Outliers Come From?
+
+* same outliers also exist in positional embeddings
+* similar patterns in the Layer Normalization (LN, JL Ba+ (2016)) parameters of
+  both models
+  * LN has two learnable parameters, gain (γ) and bias (β) — both of which are
+  * For BERT, the 557 th element of the γ vector is always among the top-6
+  * For RoBERTa, one element of the first LN’s β vector is always in top-2
+  * It is reasonable to conclude that, after the vector normalization performed
+    by LN, the outliers observed in the raw embeddings are lost. We hypothesize
+    * they retained after scaling the normalized vectors by the affine trafo
+    * LayerNorm happens to rescale every vector such that the positional
+      information is retained
+* propagated upward by means of the Transformer’s residual connection 
+  (K He+ 2015). Also, it is important to note that, 
+* in the case of BERT, the first position’s embedding is directly tied to the
+  requisite [CLS] token, which is prepended to all sequences as part of the MLM
+  * This has been recently noted to affect e.g. attention patterns, where 
+    much of the probability mass is distributed to this particular token alone,
+    despite it bearing the smallest norm among all other vectors in a given
+    layer and head (Kobayashi+ 2020).
+
+#### Neuron-level analysis
+
+* we employ a probing technique inspired by Durrani+ (2020)
+* a linear probe W ∈ R M×N without bias to predict the position of a
+  contextualized vector in a sentence
+* In Durrani+ (2020), the weights of the classifier are employed as a proxy for
+  selecting the most relevant neurons to the prediction
+  * this assumes that, the larger the absolute value of the weight, the more
+    important the corresponding neuron
+  * hE, this method disregards the magnitudes of the values of neurons, as a
+    large weights do not necessarily imply that the neuron has high contribution
+    to the final classification result
+  * we define the contribution of the i th neuron as c (i) = abs (w i ∗ v i )
+    * w i represents the i th weight and v i represents the i th neuron in the 
+* it is possible to decode positional information from the lowest three layers
+  with almost perfect accuracy, 
+  * much of this information is gradually lost higher up in the model.
+  * the higher layers of RoBERTa contain more positional information than BERT.
+  * BERT’s outlier neuron has a higher contribution in position prediction than
+    the average contribution of all neurons. We also find that the contribution
+    values of the same neuron are the highest in all layers
+  * we can conclude that the 557 th neuron stores positional information.
+  * Likewise, for RoBERTa, two neurons have very high contribution for position
+    * the contribution values of the 588 th neurons are largest for all layers,
+
+#### Removing positional embeddings 
+
+* In order to isolate the relation between outlier neurons and positional info,
+  we pre-train two RoBERTa-base models (with and without positional embeddings)
+  from scratch using Fairseq (Ott+ 2019) 
+* without the help of positional embeddings, the 
+  * validation perplexity of RoBERTa-base is very high at 354.0
+  * in line with (Lee+ 2019)’s observation that 
+    the self-attention mechanism of Transformer Encoder is order-invariant. In
+    i.e. the removal of PEs from RoBERTa-base makes it a bag-of-word model,
+* In contrast, the perplexity of RoBERTa equipped with standard positional
+  embeddings is much lower at 4.3, which is likewise expected.  
+* we do not observe the presence of such outlier neurons in the RoBERTa-base
+  model without PEs, which 
+  * indicates that the outlier neurons are tied directly to positional info
+
+#### Relations with the Anisotropy Phenomenon 
+
+* we clip BERT and RoBERTa’s outliers by setting their value to zero.  Figure
+* after clipping the outliers, their vector spaces become significantly more
+  isotropic. The average cosine similarity values of RoBERTa decrease more than
+  0.5 after the first non-input layer. Therefore, we can conclude that the
+
+### 3.2.3 Whitening Transformation
+
+* Su+ (2021) find that the whitening operation can improve the performance of
+  _sentence_ embeddings. We believe that this can be generalized to the subword
+* we use all the token embeddings vectors in the same layer to learn the
+  specific transformation matrix.  
+* after whitening, the average cosine similarity values of all non-input layers
+  decrease by a large margin. Especially, the values of BERT are close to zero
+  for all non-input layers
+
+# 4 Anisotropy Phenomenon and Semantic Information
+
+## 4.1 Word-level Task
+
+## 4.2 Sentence-level Task
+
+# 5 Discussion 25
+
+* the common information in vectors (e.g. position artefacts) will inevitably
+  make them similar to each other
+  * To remove such correlations, one needs to use some normalization strategies.
+  * we introduced two effective methods to alleviate the anisotropy phenomenon,
+  * Both of them help the contextualized vectors perform better
+* Similar points also have been addressed in regards to 
+  * static word embeddings (Mimno and Thompson, 2017) as well as 
+  * contextualized ones (Li+ 2020a; Su+ 2021). In addition, we also find that
+* whitening operation outperforms “clipping” on most tasks. We can consider
+  * two learnable parameters of whitening the mean vector μ and the trafo mx W .
+  * “clipping” assumes that the mean values of all non-outlier neurons are zero
+    and the transformation matrix is the identity matrix I . This leads to a
+* the outlier dimension observed 
+  * for BERT is tied directly to the [CLS] token, always at the first position.
+  * RoBERTa (which also employs [CLS]) retains outliers originating from
+    different positions’ embeddings 
+  * implies that the issue of artefact propagation is not simply a relic of task
+    design. The position information which contributes to a task’s loss function
+    may be retained in the embeddings vectors. For BERT, the outlier dimension
+    may be used to differentiate the 1st position from all others.  It is worthy
+  * position information is reconstructed by the gain parameter of LayerNorm and
+    then propagates through the network.
+* new MLM models: T5 (Raffel+ 2020) and DeBERTa (P. He+ 2021)) choose to
+  directly use the positional information to adjust the attention matrix. For
+  * DeBERTa uses the disentangled attention mechanism, where 
+    * each word is represented using two vectors that encode its content and
+      position, resp, and 
+    * the attention weights among words are computed using disentangled matrices
+      on their contents and relative positions, respectively.  All of
+  * better performance than BERT and RoBERTa on the well-known NLU benchmarks
+    GLUE (Wang+ 2018) and SuperGLUE (Wang+ 2019).  
+* hE, these models still require extra positional encodings to encode word order 
+  * can we modify the structure of Transformer Encoder to make it sensitive to
+    word order like LSTM (Hochreiter and Schmidhuber, 1997)? If so, then we
+    would be able to avoid the positional artefacts problem. In the work of
+* Tsai+ (2019) proved that the self-attention of Transformer Decoder is not
+  order-invariant. With the help of auto-regressive attention masks, Transformer
+  is no longer a bag-of-word model. In the work of 
+* Irie+ (2019) show that Transformer Decoder w/o PE has lower perplexity on the
+  speech dataset. 
+* future: use such masks to modify Transformer Encoder to help it model word
+  order implicitly 
+* LayerNorm is one of the reasons for the position artefacts propagating through
+  the model’s representations
+* Kovaleva+ (2021) find outlier neurons in the learnable parameters of BERT’s
+  LayerNorm
+  * indicate that removing the outlier neurons of LayerNorm will degenerate the
+    model’s performance on downstream tasks.  
+  * suggest that LayerNorm plays a much more important role than usually assumed
+  * The two learnable parameters gain γ and bias β have great influence
+  * Xu+ (2019) find that these parameters increase the risk of over-fitting and
+    dropping them does not decrease the performance on most tasks, including
+    Machine Translation, Language modeling, Text classification and Parsing
+  * In the computer vision area, researchers usually use LayerNorm’s
+    counterpart, BatchNorm (Ioffe and Szegedy, 2015), which is 
+    * similar to LayerNorm and performs the normalization for each mini-batch
+* de Vries+ (2017) propose a model called conditional BatchNorm, which 
+  * only uses these two learnable parameters [the batch size? and?] to fuse
+    vision and text information in a model.  Due to the similarity, we can
+  * LayerNorm may be able to do similar things.  These results call people’s
+
+# 6 Conclusion 27
+
+* future research questions as follows:
+  1. in autoregressive models like GPT-2 (Radford+ 2019) or XLNet (Yang+ 2019)
+  2. the relation between the positional information and the LayerNorm
+    * both Kovaleva+ (2021) and we find that the outlier neurons phenomenon is
+      highly related to the LayerNorm, especially the output LayerNorm 
+    * we show that the outlier neurons are the positional artefacts
+  3. the outlier neurons of LayerNorm gradually emerge after 50k pre-train steps 
+    (Kovaleva+ 2021)
+    * not exist in the early training stage. 
+    * Why does the model need to “grow” such neurons during training?
+  4. In Chapter 3, we show the first positional embeddings of BERT, which has
+     two outlier neurons. However, there is only one outlier neuron in the
+     contextualized token embeddings. Why does the other outlier disappear?
+  5. how the outlier neurons affect the attention distribution.
+    * Since the self-attention mechanism also relies on the dot-product
+
+# 7 Appendix [mainly figures and tables]
+
+## 7.1 Anisotropy Phenomenon of Distilled and Large Models
+
+## 7.2 Positional Artefacts of Distilled and Large Models
+
+### 7.2.1 Outliers of Distilled and Large Models
+
+### 7.2.2 Neuron-level Analysis of Distilled and Large Models
+
+## 7.3 Alleviating the Anisotropy Phenomenon of Distilled and Large Models
+
+### 7.3.1 Word-level Task of Distilled and Large Models
+
+### 7.3.2 Sentence-level Task of Distilled and Large Models
