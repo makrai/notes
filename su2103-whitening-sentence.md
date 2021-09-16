@@ -7,7 +7,7 @@ The source code is available at https://github.com/bojone/BERT-whitening
 # Abstract
 
 * attempts of boosting the isotropy of sentence distribution,
-  such as flow-based model
+  e.g. flow-based model
 * we find that the traditional whitening operation can similarly enhance the
   isotropy of sentence representations and achieve competitive results
   * also capable of reducing the dimensionality of the sentence representation
@@ -18,7 +18,7 @@ The source code is available at https://github.com/bojone/BERT-whitening
 * sentence embeddings poorly capture the semantics (Li+ 2020)
   * Bohan Li, Hao Zhou, Junxian He, Mingxuan Wang, Yiming Yang, and Lei Li
     EMNLP 2020
-    On the sentence embeddings from pre-trained language models. In Proceedings
+    On the sentence embeddings from pre-trained language models
 * word representations of all words are not isotropic:
   they are not uniformly distributed with respect to direction
   (Gao+ 2019; Ethayarajh, 2019; Li+ 2020)
@@ -28,7 +28,7 @@ The source code is available at https://github.com/bojone/BERT-whitening
       cosine similarity of 0.99
   * Li+ (2020) found
     * word frequency biases the embedding space
-    * low-frequency words disperse sparsely, which lead to cause the difficulty
+    * low-frequency words disperse sparsely, which leads to the difficulty
 * To address the problem aforementioned,
   * Ethayarajh, (2019) elaborates on the theoretical reason that leads to the
     anisotropy problem, as observed in pre-trained models
@@ -36,8 +36,8 @@ The source code is available at https://github.com/bojone/BERT-whitening
     regularizing the word embedding matrix
   * BERT-flow (Li+ 2020): transform the BERT sentence embedding distribution
     into a smooth and isotropic Gaussian distribution through normalizing flow
-    (Dinh+ 2014), which is an invertible function parameterized by neural netwrk
-* we find that a simple and effective post-processing technique – whitening – is
+    (Dinh+ 2014), which is an invertible function parameterized by neu network
+* we find that a simple and effective post-processing technique, whitening, is
   capable enough of tackling the anisotropic problem of sentence embeddings
   (Reimers and Gurevych, 2019). Specifically, we transform the
   * mean value of the sentence vectors to 0 and the
@@ -46,4 +46,4 @@ The source code is available at https://github.com/bojone/BERT-whitening
     further improvement the effect of our approach (truncated SVD)
 * The experimental results on 7 standard semantic textual similarity benchmark
   * our method can generally improve the model performance and achieve the SOTA
-    results on most of datasets.  Meanwhile, by adding the dimensionality
+    results on most of datasets

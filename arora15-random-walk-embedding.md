@@ -19,16 +19,17 @@ TACL 2016
 
 # Abstract
 
-* Semantic word embeddings ... are created by diverse methods such as
+* Semantic word embeddings are created by diverse methods such as
   * Latent Semantic Analysis (LSA),
   * generative text models such as topic models,
-  * matrix factorization, neural nets, and
+  * matrix factorization, 
+  * neural nets, and
   * energy-based models
 * Many methods use nonlinear operations on co-occurrence statistics
   * such as Pairwise Mutual Information
 * Often a generative model can help provide theoretical insight
   * there appears to be no such model to “explain” the above nonlinear models
-  * [e.g.] no generative model for [the] usual (dimension-restricted) PMI model
+  * e.g. no generative model for the usual (dimension-restricted) PMI model
 * This paper gives a new generative model,
   * a dynamic version of the loglinear topic model of Mnih and Hinton (2007)
   * use the prior to compute closed form expressions for word statistics
@@ -41,9 +42,9 @@ TACL 2016
 
 # 1 Introduction
 
-* co-occurrence statistics. Reweighting heuristics ... is dimension reduction
+* co-occurrence statistics. Reweighting heuristics is dimension reduction
   (Deerwester+ 1990)
-  * Some ... are nonlinear; e.g., taking the
+  * Some are nonlinear; e.g., taking the
     * square root of co-occurrence counts (Rohde+ 2006), or the
     * logarithm, or
     * the related pairwise mutual information (PMI, Church and Hanks, 1990)
@@ -52,7 +53,7 @@ TACL 2016
   (Hinton, 1986; Rumelhart+ 1988; Bengio+ 2006; Collobert and Weston, 2008)
   * —nonlinear and nonconvex—
   * word2vec, a family of energy based models in (Mikolov+ 2013b;c)
-  * linear structure ... despite being produced via nonlinear methods
+  * linear structure despite being produced via nonlinear methods
 * Another approach to word embeddings uses latent variable probabilistic models
   * Latent Dirichlet Allocation (LDA) and
     * evolved out of efforts in the 1990s to provide a generative model that
@@ -75,14 +76,14 @@ TACL 2016
     * `\langle v_w , v_{w'} \rangle ≈ PMI(w, w')`                         (1.1)
   * Levy and Goldberg (2014b) argue that
     * if there were no dimension constraint
-    * [solutions of] skip-gram with negative sampling ... would satisfy (1.1)
+    * solutions of skip-gram with negative sampling would satisfy (1.1)
     * provided the right hand side were replaced by PMI(w, w_0 ) − β
       for some scalar β
     * However,
       * skip-gram is a discriminative model (due to use of negative sampling),
         not generative
       * their argument only applies to very high dimensions
-      * [but] low-dimensional embedding [are] used in analogy solving
+      * but low-dimensional embedding are used in analogy solving
 * The current paper
   * a probabilistic model of text generation that
     * augments the loglinear topic model of Mnih and Hinton (2007) with
@@ -110,17 +111,17 @@ TACL 2016
     * agnostic about the dimension of the embeddings, and the
     * superiority of low-dimensional embeddings is an empirical finding
       (starting with (Deerwester+ 1990))
-  * our theoretical analysis makes the
+  * our theoretical analysis
     * key assumption that the set of all word vectors
       (which are latent variables of the generative model) are
-      spatially isotropic [i.e.] have no preferred direction in space
+      spatially isotropic i.e. have no preferred direction in space
     * Having n vectors be isotropic in d dimensions requires d << n
   * to explain the emergence of the `relations = lines` phenomenon
-    * [earlier explanations have larger error] than the difference between the
+    * earlier explanations have larger error than the difference between the
       best solution, and the second-best (Section 4)
-    * “purification” effect [of] isotropy of low-dimensional word vectors
+    * “purification” effect of isotropy of low-dimensional word vectors
       mitigates the effect of the above approximation error
-      * a theoretical explanation of ...  that dimension reduction improves
+      * a theoretical explanation of  that dimension reduction improves
 
 # 2 The generative model p3
 
@@ -129,7 +130,7 @@ TACL 2016
     * The discourse vector `c_t` does a slow random walk
       * c_{t+1} is obtained from c_t by adding a small random vector
       * occasional big jumps in the random walk are allowed
-  `Pr[w emitted at time t | c_t ] ∝ exp(c_t , w)`                       (2.1)
+  `Prw emitted at time t | c_t  ∝ exp(c_t , w)`                       (2.1)
 * related
   * Mnih and Hinton (2007)
     * loglinear model, but without the random walk
@@ -142,9 +143,9 @@ TACL 2016
   * in the method of moments tradition (Hsu+ 2012; Cohen+ 2012)
 * Inspecting (2.1) suggests word vectors need to have varying lengths,
   * to fit the empirical finding that word probabilities satisfy a power law
-* Furthermore, we will assume ... isotropy
+* Furthermore, we will assume isotropy
   * can be quantified in two ways
-    * as a prior in the bayesian tradition, which says that [the]
+    * as a prior in the bayesian tradition, which says that the
       ensemble of word vectors consists of i.i.d draws generated by s · v̂,
       * v̂ is from the spherical Gaussian distribution, and
       * s is a scalar random variable explained below
@@ -160,7 +161,7 @@ TACL 2016
       * is concentrated around a single value Z
     * phenomenon called self-normalization in loglinear models, that has been
       * empirically observed and studied before (Andreas and Klein, 2014)
-      * allows the normalization ... to be ignored, leading to speedups
+      * allows the normalization to be ignored, leading to speedups
 
 # 3 Training objective and relationship to other models p7
 
@@ -179,17 +180,17 @@ TACL 2016
 
 * we tested two counter-intuitive properties:
   * the concentration of the partition function Z c for different c
-    * Concentration is also observed for [especially] GloVe and CBOW
+    * Concentration is also observed for especially GloVe and CBOW
   * the random-like behavior of the matrix of word embeddings
     * in terms of its singular values (see Theorem 4.1)
-    * for GloVe, CBOW ... also
+    * for GloVe, CBOW also
   * linear relation
     * between
       * the squared norms of our word vectors and
       * the logarithm of the word frequencies
     * Figure 2: nem tűnik lineárisnak
     * This correlation is much weaker for other types of word embeddings
-      * [word2vec and GloVe]
+      * word2vec and GloVe
 
 # 5.2 Performance on analogy tasks
 
@@ -202,7 +203,7 @@ TACL 2016
 
 * csak a sajátjával hasonlítja őket
 * Cheating solver for analogy testbeds
-  * k-means clustering on all vectors ... presented among the questions
+  * k-means clustering on all vectors presented among the questions
   * for each (a, b), estimate the relation direction by
     * taking the first singular vector of its cluster, and
     * substitute that for a − b in (5.1) when solving the analogy

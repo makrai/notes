@@ -54,7 +54,7 @@ ICLR, 2018
   * text classification task using
     a well established CNN classifier (Kim, 2014) and
     RNN classifiers: with vanilla RNN, GRU (Chung+ 2015) and LSTM Greff+ (2016)
-  * two different pre-trained word vectors, five datasets and four archits
+  * two pre-trained word vectors, five datasets and four archits
     * performance improves on a majority of instances (34 out of 40) by a
       good margin (2.85% on average)
 
@@ -87,7 +87,7 @@ ICLR, 2018
   * PMI-based
     word2vec (Mikolov+ 10; Levy & Goldberg, 14) and GloVe (Pennington+ 14)
     * probabilistic i.e. generative: Arora+ 2016
-  * CCA-based 
+  * CCA-based
     * have long been understood from a probabilistic (i.e., generative) view
       (Browne, 1979; Hotelling, 1936) and
     * recently in the NLP context (Stratos+ 2015)
@@ -134,10 +134,10 @@ ICLR, 2018
 
 ## Empirical Validation of that the enlarged conditions are met by embeds
 
-* u 1 . . . u D are the singular vectors associated with the top D singular
+* u 1 . . . u D are the singular vectors associated with the top D singul vals
   * D = 20 for WORD2VEC and D = 10 for GLOVE, and the corresponding value of
-    DA^2 for WORD2VEC and GLOVE vectors are both roughly 40, respectively; both
-    values are small compared to d = 300.  0.008 0.007 0.006 0.005 0.004 0.003
+    DA^2 for WORD2VEC and GLOVE vectors are both roughly 40
+    * both values are small compared to d = 300
 * statistical isotropy of the “remaining" vectors ṽ(w) for words w
   * plotting the remaining spectrum (i.e. the (D + 1)-th, ..., 300th singular..)
 
@@ -152,6 +152,6 @@ ICLR, 2018
 
 ### C.2 Multilingual generalization
 
-* word similarity task with the original and the processed TSCCA word
-  representations in German and Spanish on three German similarity datasets
+* word similarity task with the original and the processed TSCCA word reprs in
+  German and Spanish on three German similarity datasets
   *  D = 2 for both German and Spanish

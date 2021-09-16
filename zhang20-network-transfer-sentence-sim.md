@@ -1,4 +1,4 @@
-Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Similarity
+Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Sim
 Li Zhang, Steven R. Wilson, Rada Mihalcea
 arXiv:1804.07835 cs.CL
 

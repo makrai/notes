@@ -5,8 +5,10 @@ arXiv:2104.01767 [cs.CL]
 
 https://github.com/Jun-jie-Huang/WhiteningBERT
 
-* we conduct a thorough examination of pretrained model based unsupervised
-  sentence embeddings
+# Abstract
+
+* we conduct a thorough examination of
+  pretrained model based unsupervised sentence embeddings
 * We study four pretrained models and seven datasets
 * findings
   * averaging all tokens is better than only using [CLS] vector
@@ -37,21 +39,26 @@ https://github.com/Jun-jie-Huang/WhiteningBERT
 ## 3.3 Whitening
 
 * Whitening is a linear transformation that transforms a vector of random
-  variables into a new vector whose covariance is an identity matrix, and has
+  variables into a new vector whose covariance is an identity matrix & 0 mean
 * effective to improve the text representations in
   * bilingual word embedding mapping (Artetxe+ 2018) and
-  * image retrieval (Jégou and Chum, 2012).  In our work, we explore to address
+  * image retrieval (Jégou and Chum, 2012)
 * problem of non-smooth anisotropic distribution (Li+ 2020) by a simple linear
 
 # 5 Related works
 
 * Unsupervised sentence embeddings are mainly composed with pre-trained
 * whether the pre-trained embeddings are further trained or not
-  * yes: some works leverage unlabelled natural language inference datasets to
-    train a sentence encoder without direct supervision 
+  * yes: some works leverage unlabelled natural language inference datasets
     (Li+ 2020; Zhang+ 2020; Mu and Viswanath, 2018)
   * not: some works propose weighted average word embeddings based on word
     features (Arora+ 2017; Ethayarajh, 2018; Yang+ 2019; Wang and Kuo, 2020)
+    * Ziyi Yang, Chenguang Zhu, and Weizhu Chen
+      Parameter-free sentence embedding via orthogonal basis
+      EMNLP/IJCNLP 2019
+    * Bin Wang and C.-C. Jay Kuo. . 
+      SBERT-WK: A sentence embedding method by dissecting bert-based word models
+      2020 IEEE/ACM Transactions on Audio, Speech, and Language Processing
     * hE, these approaches need further training or additional features, which
       limits the direct applications of sentence embeddings in real-world scens
 * concurrent to this work, Su+ (2021) also explored whitening sentence embed,

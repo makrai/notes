@@ -117,7 +117,7 @@ EMNLP 2019
   * The only exception is ELMo’s input layer, which consists of
     static character-level embeddings
     without using contextual or even positional information (Peters+ 2018)
-* Contextualized representations are generally more anisotropic in higher layers
+* Contexted representations are generally more anisotropic in higher layers
   * average cosine similarity between uniformly randomly words is
     * roughly 0.6 in layers 2 through 8 but
     * increases exponentially from layers 8 through 12
@@ -130,7 +130,7 @@ EMNLP 2019
     (Arora+ 2017)
   * in practice, subtracting the mean vector from static embeddings leads to
     improvements on several downstream NLP tasks (Mu+ 2018)
-* anisotropy is inherent to, or a by-product of, the process of contextualizaton
+* anisotropy is inherent to, or a by-product of, the process of contextualizatn
 
 ## 4.2 Context-Specificity
 
@@ -142,15 +142,15 @@ EMNLP 2019
 
 ### In ELMo, words in the same sentence are more similar in upper layers
 
-### In BERT, words in the same sentence are more dissimilar in upper layers
+### In BERT, words in the same sentence are less similar in upper layers
 
 ### In GPT-2, word representations in the same sentence are no more similar to
 each other than randomly sampled words
 
 ## 4.3 Static vs. Contextualized
 
-### On average, less than 5% of the variance in a word’s contextualized repr can
-be explained by a static embedding
+### On average, less than 5% of the variance in a word’s contextualized repr
+can be explained by a static embedding
 
 ### Principal components of contextualized representations in lower layers
 outperform GloVe and FastText on many benchmarks
