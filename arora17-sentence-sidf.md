@@ -50,12 +50,12 @@ ICLR 2017
   * modification motivated by [that
     word embedding methods give] large vectors to frequent words
 * anisotropy
-  * most word embedding methods seek to capture word cooccurence probs
+  * most word embedding methods seek to capture word cooccurence probabilities
   * end up giving
-    * large vectors to frequent words, as well as giving
+    * large vectors to frequent words, as well as 
     * unnecessarily large inner products to word pairs,
-      to fit that words sometimes occur out of context in documents. These
-    * word vectors to have huge components along semantically meaningless dir
+      to fit that words sometimes occur out of context in documents
+    * word vectors to have huge components along semantically meaningless dirs
 * better (by a few percent points) than traditional TF-IDF
 * similarity to CBOW
   * CBOW also does not use simple average, as misleadingly suggested

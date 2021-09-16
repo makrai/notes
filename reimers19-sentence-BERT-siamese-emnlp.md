@@ -88,7 +88,7 @@ EMNLP 2019
 
 # 5 evaluates SBERT on SentEval 6
 
-# 6 ablation study to test some design aspect of SBERT 7
+# 6 ablation study 7
 
 * pooling strategies (MEAN, MAX, and CLS)
 * For the classification objective function, we evaluate different concat meths
@@ -102,9 +102,9 @@ EMNLP 2019
     * The most important component is the elementwise difference |u − v|
   * At inference, when predicting similarities for the STS benchmark dataset,
     only the sentence embeddings u and v are used in combination with
-    cosine-similarity. The element-wise difference measures the distance
+    cosine-similarity
 * When trained with the regression objective function, we observe that the
-  pooling strategy has a large impact. There, the
+  pooling strategy has a large impact
   * MAX strategy perform significantly worse than MEAN or CLS-token strategy
   * in contrast to Conneau+ (2017), who found it beneficial for the
     BiLSTM-layer of InferSent to use MAX instead of MEAN pooling
