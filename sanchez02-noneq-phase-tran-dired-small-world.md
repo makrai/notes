@@ -17,7 +17,7 @@ AD Sánchez, JM López, MA Rodriguez
     food webs, cultural influences
   * Asymmetric synaptic strengths have already been shown to be very important
     in trying to describe the process of learning in realistic neural network
-    model approaches to brain function [19,20].
+    model approaches to brain function [19,20]
 * we
   * [introduce directed small world]
     * In case only undirected links are used, our model becomes identical to
@@ -30,11 +30,11 @@ AD Sánchez, JM López, MA Rodriguez
         networks
 * numerical simulations we find that,
   * for rewiring probabilities in the range 0 < p < p c
-    line of continuous phase transitions from an ordered to a disordered state.
-    * phase transitions occur at a critical value of the temperature T_c(p),
-      which depends on p. However,
-  * for higher disorder densities p c < p ≤ 1, the phase transition becomes
-    first-order.
+    line of continuous phase transitions from an ordered to a disordered state
+    * phase transitions occur at a critical value of the temperature `T_c(p)`,
+      which depends on p
+  * hE, for higher disorder densities p c < p ≤ 1, the phase transition becomes
+    first-order
 * Our results show that, in order to model biological, social or economic
   processes on complex networks, it is crucial to take into account the
-  character, directed or undirected, of the corresponding relational links.
+  character, directed or undirected, of the corresponding relational links
