@@ -190,13 +190,14 @@ code is available at https://github.com/nlpyang/PreSumm
 * checkpoints were saved and evaluated on the validation set every 2,500 steps.
 * We selected the top-3 checkpoints based on their evaluation loss on the
   validation set, and report the averaged results on the test set.  During
-* decoding: beam search (size 5), and tuned the α for the length penalty (Wu+
-  2016) between 0.6 and 1 on the validation set; we 
-  decode until an end-of-sequence token is emitted and 
-  repeated trigrams are blocked (Paulus+ 2018). It is worth noting that our
+* decoding: 
+  * beam search (size 5), and 
+  * tuned the α for the length penalty (Wu+ 2016) between 0.6 and 1 on the valid
+  * we decode until an end-of-sequence token is emitted and 
+  * repeated trigrams are blocked (Paulus+ 2018)
   * neither a copy nor a coverage mechanism (See+ 2017)
     because we focus on building a minimum-requirements model and 
-    these mechanisms may introduce additional hyper-parameters to tune. Thanks
+    these mechanisms may introduce additional hyper-parameters to tune
 * we also rarely observe issues with out-of-vocabulary words in the output;
 
 # 5 Results 6

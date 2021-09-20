@@ -8,7 +8,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
   * their format is closer to human-edited summaries and output is more readable
 * hE, distortion or fabrication of factual information in the article
   * previous evaluation methods of text summarization are not suitable for this
-* the current research In response is predominantly divided into two
+* the current research in response is predominantly divided into two
   * fact-aware evaluation metrics to select outputs without factual inconsistenc
   * new summarization systems towards factual consistency
 * we presenting a comprehensive review of these
@@ -65,7 +65,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
       * Triple-based, Textual entailment-based, QA-based, and Others
   * Weakly supervised metrics need to train on the factual consistency data,
     * documents, model-generated summaries, and factual consistency scores
-* Metaevaluations To compare factual consistency metrics with each other, for
+* Metaevaluations to compare factual consistency metrics with each other
   * We introduce 2 meta-evaluation works about factual consistency
 * existing metrics in Table 1. There is code for
   QAGS [Wang+ 2020] FEQA [Durmus+ 2020] FactCC [Kryscinski+ 2020]
@@ -102,12 +102,12 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 * Inspired by other question answering (QA) based automatic metrics in text summ
 * Wang+ 2020 and Durmus+ [2020] propose metrics QAGS and FEQA separately
   * based on the intuition that if we ask questions about a summary and its src,
-    we will receive similar answers if the summary is factually consistent 
+    we will receive similar answers if the summary is factually consistent
   * three steps:
     * question generation (QG) model generates a set of questions about the summ
       * standard answers are named entities and key phrases in the summary
     * question answering (QA) model to answers these questions given the src doc
-    * A factual consistency score is computed 
+    * A factual consistency score is computed
       based on the similarity of corresponding answers
   * Because evaluating factual consistency at entity-level, these methods are
     more interpretable than textual-entailment-based methods
@@ -126,9 +126,9 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
       taking the average score or maximum score across all the source sentences
   * semantic similarity-based metric is similar to word overlap-based methods
     * Instead of using ROUGE or BLEU, this method uses BERTScore [Zhang+ 2020a]
-  * word overlap-based methods work better in 
+  * word overlap-based methods work better in
     lowly abstractive summarization datasets like CNN/DM [Hermann+ 2015],
-    semantic similarity-based method works better in 
+    semantic similarity-based method works better in
     highly abstractive summarization datasets like XSum [Narayan+ 2018]
 
 ## 3.2 Weakly Supervised Metrics
@@ -154,9 +154,9 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 * Zhao+ [2020] propose HERMAN, which focuses on evaluating factual consistency
   of quantity entities (e.g. numbers, dates, etc)
 * sequence labeling architecture, in which input is the source doc and summary,
-  the output is a sequence of labels indicating 
+  the output is a sequence of labels indicating
   which tokens consist of factual inconsistent quantity entities
-* training data for HERMAN is automatically generated 
+* training data for HERMAN is automatically generated
   from the summarization dataset XSum [Narayan+ 2018]
   * reference summary as claims. And these claims are directly labeled as positv
   * negative summaries are obtained by replacing the quantity entities in
@@ -173,8 +173,8 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 ## 3.3 Meta Evaluation
 
-* most related works usually report the correlation
-  between their own metric and human-annotated factual consistency score
+* most related works usually report the correlation between their own metric and
+  human-annotated factual consistency score
 * hE, it is still hard to compare each metric by the correlations as the
   * diversity of annotating settings in different works and the
   * disagreement among different annotator groups
@@ -193,14 +193,14 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 ## fact encode-based
 
-* In the earliest research about factual consistency, 
+* In the earliest research about factual consistency,
   most works mainly focus on intrinsic factual inconsistency errors, i.e., the
   * usually as cross-combinations of the semantic units in different facts. For
     e.g. “Jenny likes dancing. Bob likes playing football.”
     ⇒ “Jenny likes playing football”.  It is the root cause for intrinsic errors
 * explicitly model the facts in the source document, to augment the
-  representation of facts. Following this idea, fact encode-based methods 
-  * first extract facts in the source document, which are 
+  representation of facts. Following this idea, fact encode-based methods
+  * first extract facts in the source document, which are
     usually represented by relation triples consisting of (subject; rel; obj)
 * encode the extracted facts into summarization models
 * According to the ways to encoding facts, these methods are divided into two:
@@ -211,7 +211,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
   two RNN encoders and one RNN decoder
 * concatenates the facts in the source document into a fact description
 * One encoder encodes the source document and another encodes the fact descript
-  The decoder attends the outputs from these two encoders when generating 
+  The decoder attends the outputs from these two encoders when generating
   * experimental results show that FTSum reduces significantly factual incons er
 
 ### graph-based fact encode
@@ -229,17 +229,17 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
     commonsense knowledge graph
   * TransE [Bordes+ 2013] is used to learn entity embeddings
     * TransE is a popular multi-relational data modeling method
-  * the encoder attends to the embedding of related entities 
+  * the encoder attends to the embedding of related entities
     * In this way, commonsense knowledge is incorporated
 
 ## textual entailment-based
 
 * [Li+ 2018] aim at incorporating entailment knowledge into the summ model
   * a pair of entailment-aware encoder and decoder
-  * encoder is used to learn simultaneously 
+  * encoder is used to learn simultaneously
     summary generation and textual entailment prediction. And the
   * decoder is implemented by entailment Reward Augmented Maximum Likelihood
-    (RAML) training [Norouzi+ 2016] 
+    (RAML) training [Norouzi+ 2016]
     * a computationally efficient approach to optimizing task-specific reward
       (loss) directly
     * In summarization, the reward is the entailment score of generated summary
@@ -274,19 +274,19 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
   model-generated summaries, which is
   * the same as weakly supervised factual consistency metrics (§3.2)
 
-## other methods. simple but useful methods and domain-specific methods
+## other methods: simple but useful methods and domain-specific methods
 
-* Matsumaru+ [2020] conjecture that one of the causes of factually inconsistent
-  summaries lies in unfaithful document-summary pairs, which are used for
-  training the model. To mitigate this issue, they further propose to filter
-  inconsistent training examples with a textual entailment classifier
+* Matsumaru+ [2020] conjecture that one of the causes of factually inconsistency
+  lies in unfaithful document-summary pairs, which are used for training
+  * they propose to filter inconsistent training examples
+    with a textual entailment classifier
 * Mao+ [2020] apply constraints during the inference (i.e., beam search) stage
   * end decoding only when all the constraints are met
   * constraints are important entities and keyphrases
   * hE, how much improvement of factual consistency could be achieved by this
     method and how to design more useful constraints are still questions
-* summarization in special field are more different for their field characters.
-  * As opposed to relatively open domain news 
+* summarization in special fields
+  * As opposed to relatively open domain news
   * medical field, Zhang+ [2020b] optimize radiology reports summarization
   * Shah+ [2021] optimizes the factual consistency of health and nutrition
   * Yuan+ [2020]: e-commerce product

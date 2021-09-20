@@ -42,7 +42,7 @@ implementation and models https://github.com/ucfnlp/control-over-copying
   * “mix-and-match” strategy, we enable an abstractive summarizer to generate
     summaries with more, or less, copying
 * We frame abstractive summarization as a language modeling task and present a
-  decoder-only framework for it. It uses the 
+  decoder-only framework for it
   * same Transformer architecture (Vaswani+ 2017) to both encoding and decoding
   * All network parameters are warm-started using pretrained deep repr
     * In contrast, in a typical encoder-decoder architecture, only parameters of

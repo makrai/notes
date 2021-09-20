@@ -2,16 +2,17 @@ On Faithfulness and Factuality in Abstractive Summarization
 Joshua Maynez, Shashi Narayan, Bernd Bohnet, Ryan McDonald
 ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 
+# Abstract
+
 * limit of the standard likelihood training and approximate beam-search decoding
   * less human-like responses for open-ended tasks such as LM and story generat
     (Holtzman+ 2020; Welleck+ 2020; See+ 2019)
   * for abstractive document summarization: highly prone to hallucinate content
 * We conducted a large scale human evaluation of several neural extreme abs summ
-  * types of hallucinations they produce. Our human annotators found
+  * types of hallucinations they produce
   * substantial amounts of hallucinated content in all model generated summs
   * pretrained models are better summarizers not only in terms of raw metrics,
-    i.e., ROUGE, but also in generating faithful and factual summaries as
-    evaluated by humans. Furthermore, we show that
+    i.e., ROUGE, but also in generating faithful and factual summaries
   * textual entailment measures better correlate with faithfulness than standard
     metrics, potentially leading the way to automatic evaluation metrics as well
     as training and decoding criteria
@@ -32,8 +33,8 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     * Convolutional Neural Network (CNN, Narayan+ 2018a), and
     * Transformers (Radford+ 2019; Rothe+ 2020), as well as
     * human written summaries
-  * for the recently introduced eXtreme S UM marization task (XS UM , Narayan+
-    2018a). We seek to answer the following
+  * for the recently introduced eXtreme SUMmarization task 
+    (XSum , Narayan+ 2018a)
 * questions:
   * How frequently do abstractive summarizers hallucinate content?;
   * Do models hallucinate by
@@ -41,17 +42,17 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     * adding information not directly inferable from the input document (extrin)
   * How much hallucinated content is factual, even when unfaithful?; and
   * Are there automatic means of measuring these hallucinations?
-* conclusions are as follows:
-  * intrinsic and extrinsic hallucinations happen frequently – in more than 70%
-    of single-sentence summaries
+* conclusions:
+  * intrinsic and extrinsic hallucinations happen in more than 70% of
+    single-sentence summaries
   * the majority of hallucinations are extrinsic, which
     * potentially could be valid abstractions that use background knowledge
     * hE, we found that over 90% of extrinsic hallucinations were erroneous
   * models initialized with pretrained parameters perform best
     both on automatic metrics and human judgments of faithfulness/factuality
     * they have the highest percentage of factual within extrinsic hallucinatons
-    * in contrast to while Niven and Kao, (2019) who argue that large-scale
-      pretrained models are merely better at learning data-specific regularities
+    * in contrast to Niven and Kao, (2019) who argue that large-scale pretrained
+      models are merely better at learning data-specific regularities
     * at least on in-domain summarization
   * ROUGE (Lin and Hovy, 2003) and BERTScore (Zhang+ 2020) correlates less with
     faithfulness/factuality
@@ -67,11 +68,11 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     (Holtzman+ 2020; Welleck+ 2020; See+ 2019)
 * In contrast, tasks
   * document summarization (Nenkova and McKeown, 2011; See+ 2017; Paulus+ 2018)
-  * data-to-text generation (Lebret+ 2016; Wiseman+ 2017) which are not
-* noises or artifacts of the training data, such as reference divergence, making
-  (Kryscinski+ 2019a; Wiseman+ 2017; Dhingra+ 2019). Thus, models can generate
-  texts that are not consistent with the input,
-  yet would likely have reasonable model log-likelihood
+  * data-to-text generation (Lebret+ 2016; Wiseman+ 2017)
+* noises or artifacts of the training data, such as reference divergence
+  (Kryscinski+ 2019a; Wiseman+ 2017; Dhingra+ 2019)
+  * Thus, models can generate texts that are not consistent with the input, 
+    yet would likely have reasonable model log-likelihood
 
 ## 2.1 Intrinsic and Extrinsic Hallucinations
 
@@ -167,7 +168,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * TranS2S showed similar performance to PtGen and ranked second worst
 * BertS2S showed the least number of intrinsic hallucination (16.9%) among all
 
-### Pretraining Improves Faithfulness. Hallucinations do not result from the
+### Pretraining Improves Faithfulness
 
 * BertS2S reported the highest number of faithful summaries. It appears that
   * overall most conservative among all four abstractive systems while
@@ -181,7 +182,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     * The source document can be particularly important for generic summaries to
     * External resources assisted the evaluators to validate grounded facts in
 
-### Pretraining Helps Generating Factual Summaries. In total, 34.7% of the
+### Pretraining Helps Generating Factual Summaries
 
 * Gold is significantly different from all other systems. For
 * extrinsic hallucinations, there were significant differences between PtGen and

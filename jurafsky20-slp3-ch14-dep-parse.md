@@ -276,99 +276,99 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
 
 #### Beam Search
 
-* overwhelming evidence arriving later in a sentence. Another approach is to
+* overwhelming evidence arriving later in a sentence
 * Beam search: combining a breadth-first search strategy with a heuristic filter
-  that prunes the search frontier to stay within a fixed-size beam width.
-* score the resulting configurations. We then add each of these new configura-
-* base the score for a configuration on its entire history.
+  that prunes the search frontier to stay within a fixed-size beam width
+* score the resulting configurations
+* base the score for a configuration on its entire history
 * we can define the score for a new configuration as the score of its
-  predecessor plus the score of the operator used to produce it.
+  predecessor plus the score of the operator used to produce it
 
 ## 14.5 Graph-Based Dependency Parsing
 
 * search through the space of possible trees to maximize some score
   . These methods encode the search space as
-  * methods drawn from graph theory to search the space for optimal solutions.
-    More formally, given a sentence S we’re looking for the best dependency tree
-    in G s , the space of all possible trees for that sentence, that maximizes
-    some score.  
+  * methods drawn from graph theory to search the space for optimal solutions
+    * More formally, given a sentence S we’re looking for the best dependency
+      tree in G s , the space of all possible trees for that sentence, that
+      maximizes some score
 * score for a tree can be viewed as a function of the scores of the parts of the
-  * this section is on edge-factored approaches where the 
-    score for a tree is based on the scores of the edges that comprise the tree.
+  * this section is on edge-factored approaches where the
+    score for a tree is based on the scores of the edges that comprise the tree
 * motivations for the use of graph-based methods. First, unlike transition-based
-  * non-projective trees.  Although projectivity is 
-    * not significant for English, but definitely a problem for many languages.
+  * non-projective trees.  Although projectivity is
+    * not significant for English, but definitely a problem for many languages
   * accuracy, particularly with respect to longer dependencies.  Empirically,
     * accuracy of transition-based methods declines significantly with the dist
-      (McDonald and Nivre, 2011). 
+      (McDonald and Nivre, 2011)
     * Graph-based methods avoid this difficulty by scoring entire trees, rather
 * organization
   * a widely-studied approach based on the use of a maximum spanning tree (MST)
-    algorithm for weighted, directed graphs. We then discuss 
-  * features that are typically used to score trees, as well as the 
-  * methods used to train the scoring models.  
+    algorithm for weighted, directed graphs. We then discuss
+  * features that are typically used to score trees, as well as the
+  * methods used to train the scoring models
 
 ### 14.5.1 Parsing
 
 * The approach described here uses an efficient greedy algorithm to search for
-  optimal spanning trees in directed graphs. Given an input sentence, it 
+  optimal spanning trees in directed graphs. Given an input sentence, it
 * begins with a fully-connected, weighted, directed graph where the vertices are
   * additional ROOT node is included with outgoing edges directed at all of the
   * weights provided by a model generated from training data
   * maximum spanning tree represents the preferred dependency parse for the
   * we’ll focus here on unlabeled dependency parsing. Graph-based approaches to
-    labeled parsing are discussed in Section 14.5.3.  
+    labeled parsing are discussed in Section 14.5.3
 * two intuitions about directed graphs and their spanning trees. The first
-  * every connected component of a spanning tree will also have one incoming edge.  
-  * it is the relative weights of the edges entering each vertex that matters.  
+  * every connected component of a spanning tree will also have one incoming edge
+  * it is the relative weights of the edges entering each vertex that matters
 * Chu and Liu (1965) and Edmonds (1967) independently developed an approach
-  * begins with greedy selection and 
-    follows with an elegant recursive cleanup phase that eliminates cycles.  
+  * begins with greedy selection and
+    follows with an elegant recursive cleanup phase that eliminates cycles
   * The first step: For each vertex in the graph, an incoming edge (representing
     a possible head assignment) with the highest score is chosen. If the
-  * cleanup phase begins by 
+  * cleanup phase begins by
     * adjusting all the weights in the graph by subtracting the score of the
       maximum edge entering each vertex from the score of all the edges entering
-      that vertex.  
+      that vertex
     * so that the weight of the edges in the cycle have no bearing on the weight
       of any of the possible spanning trees: a weight of zero for all of the
-      edges selected during the greedy selection phase, 
-      including all of the edges involved in the cycle.  
-* selecting a cycle and collapsing it into a single new node. 
+      edges selected during the greedy selection phase,
+      including all of the edges involved in the cycle
+* selecting a cycle and collapsing it into a single new node
 * Now, if we knew recursively the maximum spanning tree of this new graph, we
 * The edge of the maximum spanning tree directed towards the vertex representing
   the collapsed cycle tells us which edge to delete to eliminate the cycle
 * When each recursion completes we expand the collapsed vertex, restoring all
   the vertices and edges from the cycle with the exception of the single edge to
-  be deleted.  
-* this version of the CLE algorithm runs in O(mn) time, where 
+  be deleted
+* this version of the CLE algorithm runs in O(mn) time, where
   m is the number of edges and n is the number of nodes. Since this particular
   * algorithm begins by constructing a fully connected graph m = n^2 yielding a
-  running time of O(n^3). 
-  * Gabow+ (1986): a more efficient imp  with a running time of O(m + nlogn).
+  running time of O(n^3)
+  * Gabow+ (1986): a more efficient imp  with a running time of O(m + nlogn)
 
 ### 14.5.2 Features and Training
 
 * score for the tree = sum of the scores of the edges that comprise the tree.  X
-* edge score can, in turn, = weighted sum of features extracted from it.
+* edge score can, in turn, = weighted sum of features extracted from it
 * features used to train edge-factored models mirror those used in transition-b
   * both capture information about the relationship between heads and their deps
-  * Wordforms, lemmas, and parts of speech of the headword and its dependent.
+  * Wordforms, lemmas, and parts of speech of the headword and its dependent
   * Corresponding features derived from the contexts before, after and between
-  * Word embeddings.
-  * The dependency relation itself.
-  * The direction of the relation (to the right or left).
+  * Word embeddings
+  * The dependency relation itself
+  * The direction of the relation (to the right or left)
   * The distance from the head to the dependent.  As with transition-based
-  * pre-selected combinations of these features are often used as well.
+  * pre-selected combinations of these features are often used as well
 * weights
   * we seek to train a model that assigns higher scores to correct trees
   * inference-based learning combined with the perceptron learning rule. In this
     * parse a sentence (i.e, perform inference) from the training set using some
       initially random set of initial weights. If the resulting parse matches
-    * we find those features in the incorrect parse 
-      that are not present in the reference parse and we 
+    * we find those features in the incorrect parse
+      that are not present in the reference parse and we
       lower their weights by a small amount based on the learning rate. We do
-    * incrementally for each training sentence until the weights converge.  
+    * incrementally for each training sentence until the weights converge
 * SOTA in multilingual parsing is based on RNNs (Zeman+ 2017, Dozat+ 2017)
 
 ### 14.5.3 Advanced Issues in Graph-Based Parsing
@@ -380,7 +380,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   the correct relation
 * label accuracy score (LS), the percentage of tokens with correct labels,
   ignoring where the relations are coming from.  As an example, consider the
-  reference parse and system parse for the following example shown in Fig.
+  reference parse and system parse for the following example shown in Fig
 * how well a system is performing on a particular kind of dependency relation,
   for example NSUBJ , across a development corpus. Here we can make use of the
   notions of precision and recall introduced in Chapter 8, measuring the
@@ -391,60 +391,60 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
 ## Bibliographical and Historical Notes
 
 * dependency-based approach to grammar is much older than phrase~ or constituent
-* ancient Greek and Indian linguistic traditions. Contemporary 
+* ancient Greek and Indian linguistic traditions. Contemporary
 * theories draw heavily on the work of Tesnière (1959). The most influential
-* frameworks include 
-  Meaning-Text Theory (MTT; Mel’c̆uk, 1988), 
+* frameworks include
+  Meaning-Text Theory (MTT; Mel’c̆uk, 1988),
   Word Grammar (Hudson, 1984),
-  Functional Generative Description (FDG; Sgall+ 1986). These frameworks 
+  Functional Generative Description (FDG; Sgall+ 1986). These frameworks
 * differ along a number of dimensions including the degree and manner in which
   they deal with morphological, syntactic, semantic and pragmatic factors, their
-  use of multiple layers of representation, and the 
-  set of relations used to categorize dependency relations.  
+  use of multiple layers of representation, and the
+  set of relations used to categorize dependency relations
 * Automatic parsing using dependency grammars was first introduced into compu-
-  * early work on machine translation at the RAND Corporation led by David Hays.
+  * early work on machine translation at the RAND Corporation led by David Hays
   * closely paralleled work on constituent parsing and made explicit use of
-    grammars to guide the parsing process.  
-* intermittent [időszakos] over the following decades. 
-  * Notable implementations for English include 
-    Link Grammar (Sleator and Temperley, 1993), 
-    Constraint Grammar (Karlsson+ 1995), and MINIPAR (Lin, 2003).
-* major resurgence in the late 1990’s with the appearance of 
-  large dependency-based treebanks and the associated 
-  advent of data driven approaches described in this chapter. 
-  * Eisner (1996) developed an efficient dynamic programming approach 
-    based on bilexical grammars derived from the Penn Treebank. 
+    grammars to guide the parsing process
+* intermittent [időszakos] over the following decades
+  * Notable implementations for English include
+    Link Grammar (Sleator and Temperley, 1993),
+    Constraint Grammar (Karlsson+ 1995), and MINIPAR (Lin, 2003)
+* major resurgence in the late 1990’s with the appearance of
+  large dependency-based treebanks and the associated
+  advent of data driven approaches described in this chapter
+  * Eisner (1996) developed an efficient dynamic programming approach
+    based on bilexical grammars derived from the Penn Treebank
   * Covington (2001): deterministic word by word approach underlying current
-    transition-based approaches. 
+    transition-based approaches
   * Yamada and Matsumoto (2003) and Kudo and Matsumoto (2002) introduced both
     the shift-reduce paradigm and the use of supervised machine learning in the
-    form of support vector machines to dependency parsing.  
+    form of support vector machines to dependency parsing
 * Nivre (2003) defined the modern, deterministic, transition-based approach to
   * with his colleagues formalized and analyzed the performance of numerous
     transition systems, training methods, and methods for dealing with
     non-projective language Nivre and Scholz 2004, Nivre 2006, Nivre and Nilsson
-    2005, Nivre+ 2007, Nivre 2007.  
-* The graph-based maximum spanning tree approach McDonald+ 2005, McDonald+ 2005) 
+    2005, Nivre+ 2007, Nivre 2007
+* The graph-based maximum spanning tree approach McDonald+ 2005, McDonald+ 2005)
 * data for training and evaluating dependency English parsers came from the WSJ
-  Penn Treebank (Marcus+ 1993) described in Chapter 12.
+  Penn Treebank (Marcus+ 1993) described in Chapter 12
 * head-finding rules developed for use with probabilistic parsing facilitated
   * extraction of dependency parses from phrase-based ones (Xia and Palmer 2001)
 * long-running Prague Dependency Treebank project (Hajič, 1998) is the most
   * directly annotate a corpus with multiple layers of morphological, syntactic
-    and semantic information. 
-  * The current PDT 3.0 now contains over 1.5 M tokens (Bejček+ 2013).  
+    and semantic information
+  * The current PDT 3.0 now contains over 1.5 M tokens (Bejček+ 2013)
 * Universal Dependencies (UD; Nivre+ 2016) is a project directed at creating a
   consistent framework for dependency treebank annotation across languages with
-  * advancing parser development across the world’s languages. The UD 
-  * out of several distinct efforts including 
-    Stanford dependencies (de Marneffe+ 2006 2008 2014), 
-  * Google’s universal part-of-speech tags (Petrov+ 2012), and the 
+  * advancing parser development across the world’s languages. The UD
+  * out of several distinct efforts including
+    Stanford dependencies (de Marneffe+ 2006 2008 2014),
+  * Google’s universal part-of-speech tags (Petrov+ 2012), and the
   * Interset interlingua for morphosyntactic tagsets (Zeman, 2008). Under the
   * treebanks for over 90 languages have been annotated and made available in a
-    single consistent format (Nivre+ 2016).
+    single consistent format (Nivre+ 2016)
 * CoNLL series of shared tasks related to dependency parsing over the years
-  (Buchholz and Marsi 2006, Nilsson+ 2007, Surdeanu+ 2008, Hajič+ 2009).  
+  (Buchholz and Marsi 2006, Nilsson+ 2007, Surdeanu+ 2008, Hajič+ 2009)
 * parser robustness with respect to morphologically rich langs (Seddah+ 2013)
   and social media, texts, and spoken language (Petrov and McDonald, 2012).E
 * Choi+ (2015) presents a performance analysis of 10 dependency parsers across a
-  range of metrics, as well as DependAble, a robust parser evaluation tool.
+  range of metrics, as well as DependAble, a robust parser evaluation tool

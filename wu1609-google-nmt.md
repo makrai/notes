@@ -13,7 +13,7 @@ TACL 2017 Submitted on 26 Sep 2016
     * To improve parallelism and therefore decrease training time,
       our attention mechanism connects the bottom layer of the decoder
       to the top layer of the encoder
-  * low-precision arithmetic during inference computations. To improve handling
+  * low-precision arithmetic during inference computations
   * wordpieces
     * we divide words into a limited set of common sub-word units
       for both input and output
@@ -34,8 +34,8 @@ TACL 2017 Submitted on 26 Sep 2016
 # Introduction
 
 * In practice, NMT systems used to be worse in accuracy than phrase-based MT sys
-* especially when training on very large-scale datasets as used for the very
-  best publicly available translation systems
+* especially when training on very large-scale datasets as used for the best
+  publicly available translation systems
 * responsible for this gap:
   1. slower training and inference speed: large number of parameters
   2. ineffectiveness in dealing with rare words, and
@@ -58,8 +58,7 @@ TACL 2017 Submitted on 26 Sep 2016
 * beam search technique includes a
   * length normalization procedure to deal efficiently with the problem of
     comparing _hypotheses of different lengths_ during decoding, and a
-  * _coverage penalty_ to encourage the model to translate all of the provided
-    input
+  * _coverage penalty_ to encourage the model to translate all of the input
 * results comparable to or better than previous SOTA systems, while delivering
   great improvements over Google’s phrase-based production translation system
   Specifically, on
