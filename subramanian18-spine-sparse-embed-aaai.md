@@ -100,8 +100,8 @@ https://github.com/harsh19/SPINE
 
 ## Hyperparameter tuning
 
-* We tune our hyperparameters using the automatic metric to evaluate topic
-  coherence discussed in Lau+ (2014). The metric
+* We tune our hyperparameters using the automatic metric 
+  to evaluate topic coherence discussed in Lau+ (2014)
   * aims to maximize coherence among different dimensions
   * correlate positively with human evaluation
   * Faruqui+ (2015) select hyperparameters based on word similarity
@@ -203,8 +203,8 @@ https://github.com/harsh19/SPINE
 * e.g. if a dimension in the sparse embedding signifies a location name,
 * interpretability vs downstream as a func of dim
   * choosing 2000 or more hidden dimensions, we found
-    * both topic coherence and interpretability to improve, though at a
-    * severe cost of performance on downstream tasks.  On
+    * both topic coherence and interpretability to improve
+    * severe cost of performance on downstream tasks
   * choosing 500 dimensions, topic coherence and interpretability deteriorated
   * extreme case, one-hot vectors
     * highly interpretable, but perform significantly worse on downstream

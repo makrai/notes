@@ -22,7 +22,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * grammar induction (Snyder+ 2009)
   * part-of-speech (POS) tagging (Täckström+ 2013)
   * parsing (McDonald+ 2011)
-  * text classification (Klementiev+ 2012). Over the last few years, there has
+  * text classification (Klementiev+ 2012)
 * general-purpose multilingual representations
   * word level (Mikolov+ 2013; Faruqui & Dyer, 2014; Artetxe+ 2017)
   * full-sentence level (Devlin+ 2019; Lample & Conneau, 2019)
@@ -107,9 +107,9 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ### Task diversity
 
-* transfer ... at different levels, e.g. words, phrases and sentences
+* transfer at different levels, e.g. words, phrases and sentences
   * classification tasks require sentence-level transfer of meaning,
-  * sequence labeling tasks like POS and NER test ... the word level
+  * sequence labeling tasks like POS and NER test the word level
 
 ### Training efficiency
 
@@ -192,14 +192,14 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * all languages that appear in at least three of our benchmark datasets
   * This leaves us with 19 languages, most[ly] Indo-European or world languages
   * 21 additional languages that appear in at least one dataset and come
-    from [other] families.  Wherever possible, ... at least two languages per f
+    from [other] families.  Wherever possible, at least two languages per f
     * For the Austro-Asiatic, Kartvelian, and Kra-Dai families as well as for
       isolates, we only obtain one language
 * the following 40 languages (shown with their ISO 639-1 codes for brevity)
   * af ar bg bn de el en es et eu fa fi fr he hi hu id it ja jv ka kk ko ml mr
     ms my nl pt ru sw ta te th tl tr ur vi yo zh
   * 12 language families and two isolates
-* overview ... in terms of their number of Wikipedia articles,
+* overview in terms of their number of Wikipedia articles,
   linguistic features, and coverage in XTREME in the appendix
 * does not mean that [XTREME] covers all aspects of each language that are
   necessary for transfer. Languages may reveal different characteristics
@@ -209,7 +209,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 * we automatically translate the English portions of a representative
   classification and QA task to the remaining languages
-  using an in-house translation system, details ... in the appendix
+  using an in-house translation system, details in the appendix
 * We choose XNLI and XQuAD as both have test sets that are translations of the
   English data by professional translators
 * We first verify that performance on the translated test sets is a good proxy
@@ -273,7 +273,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 ### Translate-train
 
 * For many language pairs, an MT model may be available, which can be used to
-* we translate the English training data ... using our in-house MT system. We
+* we translate the English training data using our in-house MT system. We
 * then fine-tune mBERT on the translated data
 * answer spans in the source and target language for the QA tasks in the append
 * [not] for structured prediction tasks due to an abundance of in-language
@@ -363,7 +363,7 @@ available, we additionally compare against an
 
 ## Best zero-shot model analysis
 
-* i.e. XLM-R Large ... by task and language in Figure 1
+* i.e. XLM-R Large by task and language in Figure 1
 * Figure 1. An overview of XLM-R’s performance on the XTREME tasks across all
   * an estimate of human performance, performance on the English test set,
     the average of all languages excluding English, and the family of each lang
@@ -414,7 +414,7 @@ available, we additionally compare against an
 * XNLI dev set, mBERT
   * en correct -> correctly predicts on average 71.8% of examples
   * en misclass-> performance is about random
-  * predictions ... consistent between English and another language for 68.3%
+  * predictions consistent between English and another language for 68.3%
 * XQuAD test set, mBERT
   * en correct -> correctly predicts around 60% of examples
   * en incorr  -> 20%
@@ -433,7 +433,7 @@ available, we additionally compare against an
     highlights that existing cross-lingual models struggle to transfer to the
     syntactic characteristics of other languages
 * NER, we estimate how well models generalize to unseen entities at test time
-  * largest ... for Indonesian and Swahili
+  * largest for Indonesian and Swahili
   * Isolating for e.g. entity length, frequency, and Latin script, we find the
     largest differences in performance for Swahili and Basque
 * detailed results for both analyses in the appendix
