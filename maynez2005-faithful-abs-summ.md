@@ -134,8 +134,8 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 ## 5.1 Automatic Evaluation of Summaries
 
 * BERTScore (Zhang+ 2020) computes a similarity score for each token in the
-  candidate summary with each token in the reference summary.  However, instead
-  * computes token similarity using contextual embeddings.  Results are
+  candidate summary with each token in the reference summary
+  * computes token similarity using contextual embeddings
 * BertS2S performed far superior to any other randomly initialized models,
 
 ## 5.2 Assessment of Hallucinations
@@ -223,7 +223,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 ### Spearman’s Correlation of different metrics with the human scores
 
 * textual entailment scores are best correlated with both faithful and factual
-  * ROUGE -based metrics and BERTScore have very weak correlation, our findings
+  * ROUGE -based metrics and BERTScore have very weak correlation
   * consistent with the recent studies (Goodrich+ 19; Kryscinski+ 19a; Wang+ 20)
 * question answering scores showed a very weak correlation with f & f human
   * We hypothesize that this is due to a compounding of errors where
