@@ -1,7 +1,7 @@
 XTREME: A Massively Multilingual Multi-task Benchmark
   for Evaluating Cross-lingual Generalization
 Junjie Hu, Sebastian Ruder, A Siddhant, G Neubig, Orhan Firat, Melvin Johnson
-arXiv:2003.11080 [cs.CL]
+arXiv:2003.11080 cs.CL
 
 https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
@@ -11,14 +11,14 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * multi-task benchmark for evaluating the cross-lingual generalization
 * 40 languages and 9 tasks
   * models tested on English reach human performance on many tasks
-  * sizable gap [cross-lingually] particularly on syntactic and sentence retriv
+  * sizable gap cross-lingually particularly on syntactic and sentence retrival
 
 # 1. Introduction
 
 * a pressing urgency to serve all of the world’s approximately 6,900 langs
   * overcome language barriers and enable universal information access for the
     world’s citizens (Ruder+ 2019; Aharoni+ 2019; Arivazhagan+ 2019b)
-* Early [multilingual work] focused on single tasks, such as
+* Early multilingual work focused on single tasks, such as
   * grammar induction (Snyder+ 2009)
   * part-of-speech (POS) tagging (Täckström+ 2013)
   * parsing (McDonald+ 2011)
@@ -26,7 +26,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 * general-purpose multilingual representations
   * word level (Mikolov+ 2013; Faruqui & Dyer, 2014; Artetxe+ 2017)
   * full-sentence level (Devlin+ 2019; Lample & Conneau, 2019)
-  * evaluation [often] on a very
+  * evaluation often on a very
     * limited and disparate set of tasks
       * translation (Glavaš+ 2019; Lample & Conneau, 2019) and
       * classification (Schwenk & Li, 2018; Conneau+ 2018b)— and
@@ -44,11 +44,11 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
       * efficiency purposes (as it only requires testing, not training)
       * practical considerations (as annotated training data is not available)
 * We evaluate a range of SOTA approaches to performing this transfer
-  * machine translation (MT) and multilingual representation-based
+  * machine translation (MT) and multilingual representations
 * SOTA models come close to human performance in English on many of the tasks
   * performance drops significantly when evaluated on other languages
   * differences are highest for syntactic and sentence retrieval tasks
-  * reasonably [good] in most languages in the Indo-European family
+  * reasonably good in most languages in the Indo-European family
     * lower particularly for Sino-Tibetan, Japonic, Koreanic, and Niger-Congo
 * contributions:
   * 9 cross-lingual benchmark tasks covering 40 typologically diverse languages
@@ -92,11 +92,11 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * natural language inference (Conneau+ 2018b)
   * document classification (Schwenk & Li, 2018)
   * question answering (Artetxe+ 2019; Lewis+ 2019)
-* Evaluation on a single task is problematic: issues with standard datasets:
+* Evaluation on a single task is problematic, issues with standard datasets
   * MLDoc (Schwenk & Li, 18) can be solved by matching keywords (Artetxe+ 19)
   * MultiNLI, the dataset from which XNLI (Conneau+ 2018b) was derived,
     contains superficial cues that can be exploited (Gururangan+ 2018)
-* [monolingual] Benchmarks covering multiple tasks like
+* monolingual Benchmarks covering multiple tasks like
   GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a) spurred [sarkantyúz] research
 
 # 3. XTREME
@@ -125,8 +125,8 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ## 3.2. Tasks
 
-* nine tasks that fall into
-* four different categories requiring reasoning on different levels of meaning
+* nine tasks
+* four categories requiring reasoning on different levels of meaning
 
 ### XNLI
 
@@ -185,14 +185,14 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ## 3.3. Languages
 
-* choose[n] based on availability of monolingual data, and typological diversit
+* choosen based on availability of monolingual data, and typological diversity
 * number of articles in Wikipedia as a proxy for the amount of monolingual data
 * all languages out of the top 100 Wikipedias with the most articles
   * they are covered by SOTA methods such as mBERT and XLM
   * all languages that appear in at least three of our benchmark datasets
-  * This leaves us with 19 languages, most[ly] Indo-European or world languages
-  * 21 additional languages that appear in at least one dataset and come
-    from [other] families.  Wherever possible, at least two languages per f
+  * This leaves us with 19 languages, mostly Indo-European or world languages
+  * 21 additional languages from other families that appear in at least one data
+    * Wherever possible, at least two languages per family
     * For the Austro-Asiatic, Kartvelian, and Kra-Dai families as well as for
       isolates, we only obtain one language
 * the following 40 languages (shown with their ISO 639-1 codes for brevity)
@@ -226,19 +226,23 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 ## 4.1. Training and evaluation setup
 
 * XTREME focuses on the evaluation of multilingual representations
-* [no] restriction on the amount or nature of the monolingual data used for
+* no restriction on the amount or nature of the monolingual data used for
   pretraining multilingual representations
-* For evaluation, we focus on zero-shot cross-lingual transfer [from] English
+* For evaluation, we focus on zero-shot cross-lingual transfer from English
   * many tasks only have training data available in English
   * English is not generally the best source language for cross-lingual
     transfer for all target languages (Lin+ 2019)
+    * Lin Y-H; Chen C-Y; Lee J; Li Z; Zhang Y; Xia M; Rijhwani S; He J; Zhang
+        Z; Ma X; Anastasopoulos A; Littell P; and Neubig G 
+      Choosing Transfer Languages for Cross-Lingual Learning
+      ACL 2019
   * A single source language also facilitates evaluation as models only need to
     be trained once and can be evaluated on all other languages
-  * Future work may also consider multi-source transfer, which is interesting
-    particularly for low-resource languages, and transfer to unknown languages
-    or unknown language-task combinations
+  * Future work may also consider 
+    * multi-source transfer, which is interesting particularly for low-resource
+    * transfer to unknown languages or unknown language-task combinations
 * pretrained multilingual representations are finetuned on English labelled
-  data of an XTREME task. The model is then evaluated on the test data of tg
+  data of an XTREME task. The model is then evaluated on the test data of tgt
 
 ##4.2. Baselines
 
@@ -267,16 +271,16 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 ### MMTE The massively multilingual translation encoder
 
 * part of an NMT model that has been trained on in-house parallel data of 103
-  languages extracted from the web (Arivazhagan+ 2019a). For transfer, we
-  fine-tune the encoder of the model (Siddhant+ 2019)
+  languages extracted from the web (Arivazhagan+ 2019a)
+* For transfer, we fine-tune the encoder of the model (Siddhant+ 2019)
 
 ### Translate-train
 
-* For many language pairs, an MT model may be available, which can be used to
-* we translate the English training data using our in-house MT system. We
+* For many language pairs, an MT model may be available
+* we translate the English training data using our in-house MT system
 * then fine-tune mBERT on the translated data
 * answer spans in the source and target language for the QA tasks in the append
-* [not] for structured prediction tasks due to an abundance of in-language
+* not for structured prediction tasks due to an abundance of in-language
   data and a requirement for annotation projection
 
 ### Translate-train multi-task: fine-tune mBERT on the combined translated
@@ -288,9 +292,9 @@ training data of all languages jointly
 * test data translated from the target language to English
   using our in-house MT system
 
-### In-language model. For the POS, NER, and TyDiQA GoldP tasks where
+### In-language model. For the POS, NER, and TyDiQA GoldP tasks
 
-* target-language training data is available, we
+* target-language training data is available
 * fine-tune mBERT on monolingual data in the target language
   to estimate how useful target language labelled data is
   compared to labelled sr
@@ -298,24 +302,26 @@ training data of all languages jointly
 ### In-language few-shot
 
 * In many cases, it may be possible to procure a small number of labelled
-  examples in the target language (Eisenschlos+ 2019).  To evaluate the
+  examples in the target language (Eisenschlos+ 2019)
 * mBERT model fine-tuned on 1,000 target language examples for the tasks where
   monolingual training data is available in the target languages
 
-### In-language multi-task For the tasks where monolingual training data is
-available, we additionally compare against an
-* mBERT model that is jointly trained on the combined training data of all lang
+### In-language multi-task
+
+* For the tasks where monolingual training data is available, we additionally
+  compare against an
+  mBERT model that is jointly trained on the combined training data of all langs
 
 ### Human performance. For XNLI, PAWS-X, and XQuAD, we obtain human performance
 
-* from the English datasets they are derived from, MNLI, PAWS-X, and SQuAD
-  respectively (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016)
+* from the English datasets they are derived from, MNLI, PAWS-X, and SQuAD resp
+  (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016)
 * TyDiQA-GoldP, we use the performance estimate of Clark+ (2020)
 * MLQA, as answers are annotated using the same format as SQuAD, we employ the
-  same human performance estimate.  For
+  same human performance estimate
 * POS tagging, we adopt 97% as a canonical estimate of human performance
-  based on Manning (2011). We are not able to obtain human performance
-* [no] for
+  based on Manning (2011)
+* no for
   * NER as annotations have been automatically generated and for
   * sentence retrieval as identifying a translation among a large number of
     documents is too time-consuming
@@ -359,7 +365,7 @@ available, we additionally compare against an
   * classification tasks, the transfer learning gap is lowest
 * MT reduces the gap across all tasks
 
-# 5. Analyses [of the limitations of SOTA cross-lingual models] 6
+# 5. Analyses of the limitations of SOTA cross-lingual models 6
 
 ## Best zero-shot model analysis
 
@@ -383,7 +389,7 @@ available, we additionally compare against an
       * important in a cross-lingual model’s (Artetxe+ 2019; Conneau+ 2019)
 * similar trends for mBERT, for which we show the same graph in the appendix
 
-## Correlation with pretraining data size, Pearson ρ with the number of Wp art
+## Correlation with pretraining data size, Pearson ρ with the number of Wp arts
 
 * mBERT, which was pretrained on Wikipedia, we observe a
   * high correlation for most tasks (ρ ≈ 0.8) except for the structured
@@ -417,7 +423,7 @@ available, we additionally compare against an
   * predictions consistent between English and another language for 68.3%
 * XQuAD test set, mBERT
   * en correct -> correctly predicts around 60% of examples
-  * en incorr  -> 20%
+  * en incorr -> 20%
 
 ## Generalization to unseen tag combinations and entities
 
@@ -425,9 +431,9 @@ available, we additionally compare against an
 * Universal Dependencies dataset used for POS tagging uses a
   common set of 17 POS tags for all languages, so a
   model is not required to generalize to unseen tags at test time
-  * hE model may be required to generalize to unseen tag combinations at test
+  * hE, model may be required to generalize to unseen tag combinations at test
   * e.g. due to differences in word order between languages
-* We gauge [megmér] a model’s accuracy for [unseen] POS tag n-grams in the trgt
+* We gauge [megmér] a model’s accuracy for unseen POS tag n-grams in the target
   * n=3,4 mBERT in Table 4
   * largest differences in performance for unseen trigrams and 4-grams, which
     highlights that existing cross-lingual models struggle to transfer to the
@@ -440,7 +446,7 @@ available, we additionally compare against an
 
 # 6. Conclusions
 
-* varies significantly both between tasks and languages. XTREME is a first step
+* varies significantly both between tasks and languages
 * Our future work is to package the demonstration codes for fine-tuning models
   on tasks in XTREME and provide analysis tools, and these will be released
   upon publication
