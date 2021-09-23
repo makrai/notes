@@ -148,6 +148,15 @@ ICLR, 2018
 
 ## B Neural networks learn to postprocess 14
 
+* our approach involves adding an extra layer interposed in between the inputs
+  (which are word vectors) and the rest of the neural network
+  * extra layer involves only linear processing
+  * we compare the results of the final parameters of the extra layer (trained
+    jointly with the rest of tne neural network parameters, using the end-to-end
+    training examples) with and without preprocessing of the word vectors
+  * allows us to separate the effect of the postprocessing operation on the word
+    vectors from the complicated “semantics” of the neural network parameters
+
 ## C Experiments on various representations 16
 
 ### C.2 Multilingual generalization

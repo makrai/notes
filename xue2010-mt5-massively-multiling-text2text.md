@@ -117,7 +117,7 @@ arXiv:2010.11934 [cs.CL]
     * TyDi QA (Clark+ 2020) 11 languages
   * the Named Entity Recognition (NER) dataset of WikiAnn (Pan+ 2017) restricted
     to the 40 languages from XTREME (Hu+ 2020), and the
-  * PAWS-X (Yang+ 2019) paraphrase identification dataset with 7 languages. We
+  * PAWS-X (Yang+ 2019) paraphrase identification dataset with 7 languages
 * all tasks into the text-to-text format, i.e. generating the
   * label text (XNLI and PAWS-X), entity tags and labels (WikiAnn NER), or
     answer (XQuAD, MLQA, and TyDi QA) directly in a generative fashion. For

@@ -23,9 +23,8 @@ The source code is available at https://github.com/bojone/BERT-whitening
   they are not uniformly distributed with respect to direction
   (Gao+ 2019; Ethayarajh, 2019; Li+ 2020)
   * they occupy a narrow cone in the vector space
-  * Ethayarajh, (2019) has proved that
-    * in contextual word embeddings two word embeddings have, on average, a
-      cosine similarity of 0.99
+  * in contextual word embeddings two word embeddings have, on average, a cosine
+    similarity of 0.99 (Ethayarajh 2019)
   * Li+ (2020) found
     * word frequency biases the embedding space
     * low-frequency words disperse sparsely, which leads to the difficulty
@@ -39,9 +38,9 @@ The source code is available at https://github.com/bojone/BERT-whitening
     (Dinh+ 2014), which is an invertible function parameterized by neu network
 * we find that a simple and effective post-processing technique, whitening, is
   capable enough of tackling the anisotropic problem of sentence embeddings
-  (Reimers and Gurevych, 2019). Specifically, we transform the
+  (Reimers and Gurevych, 2019)
   * mean value of the sentence vectors to 0 and the
-  * covariance matrix to the identity matrix. In addition, we also introduce a
+  * covariance matrix to the identity matrix
   * dimensionality reduction strategy to facilitate the whitening operation for
     further improvement the effect of our approach (truncated SVD)
 * The experimental results on 7 standard semantic textual similarity benchmark
@@ -51,14 +50,14 @@ The source code is available at https://github.com/bojone/BERT-whitening
 # 2 Related Work
 
 * anisotropy
-  * Arora+ (2017) first computed the sentence representation for the entire
-  * Mu and Viswanath, (2018) proposed a postprocessing operation is on dense
+  * Arora+ (2017) first computed the sentence representation for the entire corp
+  * Mu and Viswanath, (2018) proposed a postprocessing operation
   * Gao+ (2019) proposed a novel regularization method to address the anisotropy
     problem in training natural language generation models
-    * by regularizing the word embedding matrix. As observe that the word
-    * directly increase the size of the aperture of the cone, which can be
-  * Ethayarajh, (2019) investigated the inner mechanism of contextual
-  * Li+ (2020) proposed BERT-flow, in which it transforms the anisotropic
+    * by regularizing the word embedding matrix
+    * directly increase the size of the aperture of the cone
+  * Ethayarajh, (2019) investigated the inner mechanism of contextual embeds
+  * Li+ (2020) proposed BERT-flow, in which it transforms the anisotropic vecs
 * sentence embedding methods
   * SNLI datasets are suitable for training sentence embeddings
     (Conneau+ 2017; Cer+ 2017)
@@ -70,8 +69,8 @@ The source code is available at https://github.com/bojone/BERT-whitening
     * augments unsupervised learning with training on SNLI dataset
   * pre-trained methods
     * Humeau+ (2019) addressed the run-time overhead of the cross-encoder from
-      BERT and presented a method (poly-encoders) to compute a score between
-      context vectors and pre-computed candidate embeddings using attention
+      BERT and presented poly-encoders to compute a score between context
+      vectors and pre-computed candidate embeddings using attention
     * Reimers and Gurevych, (2019) is a modification of the pretrained BERT
       * use siamese and triplet network structures to derive semantically
         meaningful sentence embeddings that can be compared using cosine
@@ -80,8 +79,8 @@ The source code is available at https://github.com/bojone/BERT-whitening
 
 ## 3.1 Our Approach
 
-* The cosine depends on the selected coordinate basis. Therefore, the coordinate
-* each basis vector is supposed to be independent and uniform when we choose the
+* The cosine depends on the selected coordinate basis
+* each basis vector is supposed to be independent and uniform
 * we need to transform the original sentence embedding in a way to enforce it
   being isotropic, and then use the equation 1 to calculate the cosine sim
 
@@ -92,7 +91,7 @@ The source code is available at https://github.com/bojone/BERT-whitening
 * each diagonal element of the diagonal matrix Λ measures the variation of the
   one-dimensional data in which it is located. If its value is small, it
   represents that the variation of this dimensional feature is also small
-  * sentence vector may only be embedded into a lower dimensional space, and we
+  * sentence vector may only be embedded into a lower dimensional space
 * We refer the entire transformation workflow as Whitening-k
   * implementation is shown in Algorithm 1
 
@@ -100,18 +99,18 @@ The source code is available at https://github.com/bojone/BERT-whitening
 
 # 4 Experiment
 
-## 4.1 the bench-mark datasets
+## 4.1 the benchmark datasets
 
 ## 4.2 detailed experiment settings
 
 ### Experimental details
 
 * Since the BERT-flow(NLI/target) is the primary baseline we are compared to, we
-  basically align to their experimental settings and symbols. Concretely, we
-  * both BERT base and BERT large in our experiments. We choose
+  basically align to their experimental settings and symbols
+  * both BERT base and BERT large in our experiments
   * first-last-avg as our default configuration as
     * averaging the first and the last layers of BERT can stably achieve better
-      performance compared to only averaging the last one layer. Similar to (Li
+      performance compared to only averaging the last one layer
 * we leverage the full target dataset (train, development, and test sets) to
   calculate the whitening parameters W and μ through the unsupervised approach
 * -whitening(NLI) denotes the whitening parameters are obtained on the NLI corp

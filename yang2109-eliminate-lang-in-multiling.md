@@ -1,8 +1,10 @@
-A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations
+A Simple ... Method To Eliminate the Self Language Bias in Multiling Reprs
 Ziyi Yang, Yinfei Yang, Daniel Cer, Eric Darve
 EMLNLP 2021 arXiv:2109.04727 [cs.CL]
 
 Implementation for LIR is available at https://github.com/ziyi-yang/LIR
+
+# Abstract
 
 * our "Language Information Removal (LIR)" factors out language identity info
   from semantic related components in multilingual representations pre-trained
@@ -10,30 +12,29 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
     e.g. matrix factorization and orthogonal projection
 * reveals that for weak-alignment multilingual systems,
   the principal components of semantic spaces primarily encodes language id
-* We evaluate the LIR on
-  * a cross-lingual question answer retrieval task (LAReQA), which requires the
-    * almost 100% relative improvement in MAP for weak-alignment models.  We
-  * Amazon Reviews and XEVAL dataset, with the observation that removing
-    language information is able to improve the cross-lingual transfer perform
+* We evaluate the LIR on a cross-lingual 
+  * question answer retrieval task (LAReQA)
+    * almost 100% relative improvement in MAP for weak-alignment models
+  * Amazon Reviews and XEVAL dataset, with the observation that
 
 # 1 Introduction
 
 * large-scale language modeling has expanded to the multilingual setting
   (Devlin+ (2019); Conneau and Lample (2019); Conneau+ (2020))
   * Alexis Conneau, K Khandelwal, N Goyal, V Chaudhary, G Wenzek, F Guzmán,
-    Édouard Grave, Myle Ott, Luke Zettlemoyer, Veselin Stoyanov
-    Unsupervised cross-lingual representation learning at scale. In Proceedings
+      Édouard Grave, Myle Ott, Luke Zettlemoyer, Veselin Stoyanov
+    Unsupervised cross-lingual representation learning at scale
     ACL 2020
 * impressive zero-shot cross-lingual ability (Hu+ 2020b)
   * Junjie Hu, S Ruder, A Siddhant, Graham Neubig, Orhan Firat, Melvin Johnson
     Xtreme: A massively multilingual multitask benchmark for eval cross-lingual
     arXiv preprint arXiv:2003.11080.  These observations raise many
 * questions
-  * how is the language identity info and the semantic info expressed in the
-    * underlying geometric structure is crucial for insights into designing
+  * how is the language identity info and the semantic info expressed
+    * underlying geometric structure is crucial for insights into design
   * factor out the language identity information from the semantic components
     * many applications, e.g. cross-lingual semantic retrieval
-  * geometric relation between different languages? Efforts have been made to
+  * geometric relation between different languages?
     * Artetxe+  (2020); Chung+ (2020); Lauscher+ (2020)
     * Mikel Artetxe, Sebastian Ruder, and Dani Yogatama
       On the cross-lingual transferability of monolingual representations. In
@@ -45,16 +46,16 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
       EMLNLP 2020
       From zero to hero: On the limitations of zero-shot language transfer with
       multilingual transformers. In Proceedings of the 2020 Conference on
-* prior work has addressed the problem at training time. In this work,
-  * we systematically explore a post-training method that can be readily
+* prior work has addressed the problem at training time
+  * we systematically explore a post-training method
 * Roy+ (2020) proposed weak vs strong alignment for language agnostic models:
-  * weak alignment, for any item in language L 1 , the nearest neighbor in
-    language L 2 is the most semantically “relevant” item. In the case of
+  * weak alignment, for any item in language L 1, the nearest neighbor in
+    language L 2 is the most semantically “relevant” item
   * strong alignment, for any representation, all semantically relevant items
-    are closer than all irrelevant items, regardless of their language. Roy+
+    are closer than all irrelevant items, regardless of their language
   * weak
     * sentence representations from the same language
-    * mBERT, XLM-R (Conneau+ 2020) and CMLM (Yang+ 2020). Roy+ (2020)
+    * mBERT, XLM-R (Conneau+ 2020) and CMLM (Yang+ 2020)
   * provides carefully-designed training strategies for retrieval-like model to
     mitigate this issue in order to obtain language agnostic multilingual sys
 * We systematically explore a simple post-training method we refer to as
@@ -62,8 +63,8 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   agnosticism in multilingual embedding systems
 * our method
   * First introduced in Yang+ (2020) to reduce same language bias for retrieval
-  * only linear algebra factorization and posttraining operation. LIR
-  * can be conveniently applied to any multilingual model. We
+  * only linear algebra factorization and posttraining operation
+  * can be conveniently applied to any multilingual model
   * surprisingly large improvements in several downstream tasks, including
     * LAReQA, a crosslingual QA retrieval dataset (Roy+ 2020)
     * Amazon Reviews, a zero-shot cross lingual evaluation dataset
@@ -71,7 +72,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   * suggest that the principal components of a multilingual system with
     self-language bias primarily encodes language identification information
 * whether principal components contain language information
-  * yes for weak-alignment models (Section 3.1). However,
+  * yes for weak-alignment models (Section 3.1)
   * for strong-alignment systems, not quite (Table 4)
 
 # 2 Language Information Removal for Self Language Bias Elimination

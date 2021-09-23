@@ -34,7 +34,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 ## 2.2 Whitening Transformation
 
 * Whitening is a method to transform vectors into the standard normal distributn
-  (the mean vector is 0 and the covariance matrix is the identity matrix):
+  (the mean vector is 0 and the covariance matrix is the identity matrix)
 
 ## 2.5 Related Work
 
@@ -255,7 +255,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 * whitening operation outperforms “clipping” on most tasks
   * two learnable parameters of whitening the mean vector μ and the trafo mx W
   * “clipping” assumes that the mean values of all non-outlier neurons are zero
-    and the transformation matrix is the identity matrix I . This leads to a
+    and the transformation matrix is the identity matrix I
 * the outlier dimension observed
   * for BERT is tied directly to the [CLS] token, always at the first position
   * RoBERTa (which also employs [CLS]) retains outliers originating from
@@ -314,12 +314,12 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
       highly related to the LayerNorm, especially the output LayerNorm
     * we show that the outlier neurons are the positional artefacts
   3. the outlier neurons of LayerNorm gradually emerge after 50k pre-train steps
-    (Kovaleva+ 2021)
+     (Kovaleva+ 2021)
     * not exist in the early training stage
     * Why does the model need to “grow” such neurons during training?
-  4. In Chapter 3, we show the first positional embeddings of BERT, which has
-     two outlier neurons. However, there is only one outlier neuron in the
-     contextualized token embeddings. Why does the other outlier disappear?
+  4. the first positional embeddings of BERT has two outlier neurons.
+    * hE, there is only one outlier neuron in the contextualized token embeds.
+      Why does the other outlier disappear?
   5. how the outlier neurons affect the attention distribution
     * Since the self-attention mechanism also relies on the dot-product
 

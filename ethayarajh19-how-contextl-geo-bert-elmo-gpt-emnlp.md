@@ -19,11 +19,11 @@ EMNLP 2019
   (Liu+ 2019a; Hewitt and Manning, 2019)
 * our findings:
   * In all layers of all three models, the contextualized word representations
-    of all words are not isotropic: they are
-    * not uniformly distributed with respect to direction. Instead, they
+    of all words are not isotropic
+    * not uniformly distributed with respect to direction
     * occupying a narrow cone in the vector space
     * in GPT-2’s last layer, two random words will on average have almost
-      perfect cosine similarity!
+      perfect cosine similarity
     * isotropy has both theoretical and empirical benefits for static
       embeddings (Mu+ 2018)
   * upper layers of contextualizing models produce more context-specific

@@ -121,7 +121,7 @@ TACL 2016
       best solution, and the second-best (Section 4)
     * “purification” effect of isotropy of low-dimensional word vectors
       mitigates the effect of the above approximation error
-      * a theoretical explanation of  that dimension reduction improves
+      * a theoretical explanation of that dimension reduction improves
 
 # 2 The generative model p3
 

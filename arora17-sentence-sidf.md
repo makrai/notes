@@ -47,8 +47,7 @@ ICLR 2017
   * related idea is removing frequent words from the vocabulary
 * theoretical justification for the reweighting using a generative model
   * simple modification for the Random Walk on Discourses model (Arora+ 2016)
-  * modification motivated by [that
-    word embedding methods give] large vectors to frequent words
+  * modification motivated by that vecs of frequent words are large
 * anisotropy
   * most word embedding methods seek to capture word cooccurence probabilities
   * end up giving
