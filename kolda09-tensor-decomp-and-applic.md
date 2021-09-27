@@ -172,6 +172,15 @@ Tamara G. Kolda and Brett W. Bader
 * including INDSCAL [38], PARAFAC2 [92], CANDELINC [39], DEDICOM [93], and
   PARATUCK2 [100], and their applications
 
+## 5.6 5.6. Nonnegative Tensor Factorizations
+
+* Paatero and Tapper [181] and Lee and Seung [151]: nonnegative matrix factor
+  * for non-negative data, such as environmental models and grayscale images,
+  * it is desirable for the decompositions to retain the nonnegative char 
+  * easier interpretation. It is also natural to impose 
+* nonnegativity constraints on tensor factorizations. Many papers refer to
+  * we use the terminology NNCP (nonnegative CP) and NNT (nonnegative Tucker)
+
 # 6 software for tensor computations
 
 # 7 Discussion 36
