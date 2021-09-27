@@ -340,7 +340,7 @@ https://github.com/Yale-LILY/SummEval
 * not just a heap of related information, but should
   build from sentence to sentence to a coherent body of information
 
-### Consistency [precision]: the factual alignment between the summary and the source
+### Consistency [precision]: the factual alignment
 
 * contains only statements that are entailed by the source document
 

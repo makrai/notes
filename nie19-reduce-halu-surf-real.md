@@ -7,7 +7,7 @@ Feng Nie, Jin-Ge Yao, Jinpeng Wang, Rong Pan, Chin-Yew Lin
 * Recent neural language generation systems often hallucinate contents
   (irrelevant or contradicted facts),
   especially when trained on loosely corresponding pairs of the input structure
-  and text. To mitigate this issue,
+  and text
 * we propose to integrate a language understanding module for data refinement
   * self-training iterations to effectively induce strong input output equiv
 * Experiments on the E2E challenge dataset show that our proposed framework can

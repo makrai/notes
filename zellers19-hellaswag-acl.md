@@ -29,3 +29,16 @@ ACL 2019
 * Only once this cycle becomes impossible can we say that the underlying task –
   as opposed an individual dataset – is solved.
 
+# Appendix
+
+## B GPT Setup
+
+* We generate our dataset examples from OpenAI GPT
+* We finetune the model for two epochs on WikiHow, and 5 epochs on ActivityNet,
+* default learning rate of (Radford+ 2018)
+* Importantly, we generate randomly according to the language model
+  distribution, rather than performing beam search – this would bias the
+  generations towards common words
+* For the WikiHow endings, we used Nucleus Sampling with p = 0.98 (Holtzman+ 19)
+  * i.e. the probability weights for the tail (those tokens with cumulative
+    probability mass < .02) are zeroed out 

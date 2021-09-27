@@ -7,13 +7,13 @@ EMNLP 2019
 * progress on benchmark datasets has stagnated
 * We critically evaluate key ingredients of the current research setup:
   * datasets, evaluation metrics, and models
-  * three primary shortcomings:
-    * automatically collected datasets leave the task underconstrained and
-      may contain noise detrimental to training and evaluation
-    * weakly correlated with human judgment and does
-      not account for e.g. factual correctness
-    * models overfit to layout biases of current datasets and offer
-      limited diversity in their outputs
+* three primary shortcomings:
+  * automatically collected datasets leave the task underconstrained and
+    may contain noise detrimental to training and evaluation
+  * weakly correlated with human judgment and does
+    not account for e.g. factual correctness
+  * models overfit to layout biases of current datasets and offer
+    limited diversity in their outputs
 
 # 1 Intro
 

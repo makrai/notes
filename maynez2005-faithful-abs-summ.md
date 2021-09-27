@@ -261,18 +261,18 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * saliency: Chen and Bansal (2018) asked human annotators to assess the summary
   relevance measuring both the saliency and the presence of
   contradictory/unrelated information
-* Dhingra+ (2019) proposed a new automatic metric, PARENT, for data-to-text
-  generation (Lebret+ 2016; Wiseman+ 2017) which
+* Dhingra+ (2019) proposed a new automatic metric, PARENT, for data-to-text gen
+  (Lebret+ 2016; Wiseman+ 2017)
   * aligns n-grams from the reference and generated texts to the source table to
     measure the accuracy of n-grams that are entailed from the source table
 * Goodrich+ (2019) proposed a model-based automatic metric to assess the
-  faithfulness of Wikipedia summaries; they trained an
+  faithfulness of Wikipedia summaries
   * end-to-end model to extract a complete set of OpenIE-style (Banko+ 2007)
     facts from both the source text and the generated summary. The summary is
     faithful if it is precise in generating facts from the source text
-  * In our experiments with OpenIEbased measures, we found that they are not
-    suited for evaluating extreme summarization models; all models perform
-    poorly on these metrics without any significant differences. Like ours, few
+  * we found that OpenIE-based measures are not suited for eval extreme summ
+    * all models perform poorly on these metrics without any significant
+      differences
 * recent works (some concurrent) have explored NLI and question answering models
   to detect factual consistency in generated text
   (Welleck+ 2019; Falke+ 2019; Kryscinski+ 2019b; Wang+ 2020). In line with our

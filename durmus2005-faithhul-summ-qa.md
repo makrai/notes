@@ -1,4 +1,4 @@
-FEQA: A Question Answering Evaluation Framework for Faithfulness Assessment in Abstractive Summarization
+FEQA: A QA Evaluation Framework for Faithfulness Assessment in Abs Summ
 Esin Durmus, He He, Mona Diab
 Accepted to ACL 2020 arXiv:2005.03754 [cs.CL]
 

@@ -61,11 +61,11 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 * We divide factual consistency metrics into unsupervised and weakly supervised,
   * Unsupervised metrics use existing tools to evaluate factual consistency
-    * According to tools that unsupervised metrics base on, we further divide to 4
+    * According to tools that unsupervised metrics base on, we further divide to
       * Triple-based, Textual entailment-based, QA-based, and Others
   * Weakly supervised metrics need to train on the factual consistency data,
     * documents, model-generated summaries, and factual consistency scores
-* Metaevaluations to compare factual consistency metrics with each other
+* Meta-evaluations to compare factual consistency metrics with each other
   * We introduce 2 meta-evaluation works about factual consistency
 * existing metrics in Table 1. There is code for
   QAGS [Wang+ 2020] FEQA [Durmus+ 2020] FactCC [Kryscinski+ 2020]
@@ -117,19 +117,16 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 ### Others [Baselines]
 
-* simple but effective methods to evaluate factual consistency, which are
-  usually used as baselines
+* simple but effective methods, usually used as baselines
 * Durmus+ [2020]: word overlap or semantic similarity between the summary
   * word overlap-based metrics
     * compute ROUGE [Lin, 2004], BLEU [Papineni+ 2002],
       between the output summary sentence and each source sentence. And then
       taking the average score or maximum score across all the source sentences
+    * work better in lowly abstractive summarization datasets like CNN/DM 
   * semantic similarity-based metric is similar to word overlap-based methods
     * Instead of using ROUGE or BLEU, this method uses BERTScore [Zhang+ 2020a]
-  * word overlap-based methods work better in
-    lowly abstractive summarization datasets like CNN/DM [Hermann+ 2015],
-    semantic similarity-based method works better in
-    highly abstractive summarization datasets like XSum [Narayan+ 2018]
+    * works better in highly abstractive summarization datasets like XSum
 
 ## 3.2 Weakly Supervised Metrics
 
@@ -164,7 +161,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 ### Token-level
 
-* Zhou+ [2020] propose to evaluate factual consistency on token-level, which is
+* Zhou+ [2020] propose to evaluate factual consistency on token-level
 * more fine-grained and more explainable than sentence-level and entity-level
 * implemented by fine-tuning pre-trained language model. Like Zhao+ [2020],
 * reference summaries are also directly labeled as positive examples, and the
@@ -256,12 +253,12 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
   * Then SpanFact selects spans in the source document to replace corresponding
     mask tokens based on the understanding of the source document
   * successfully corrects about 26% factually inconsistent summaries and
-    wrongly corrupts less than 1% factually consistent summaries. However,
+    wrongly corrupts less than 1% factually consistent summaries
 * Simpler than SpanFact, Cao+ [2020] propose an End-to-End fact corrector, which
   * can correct more types of errors
   * by fine-tuning pre-trained language model BART [Lewis+ 2020] with artificial
     data
-    * corrupted summary as input. The output is the corrected summary. Even
+    * corrupted summary as input. The output is the corrected summary
   * though conceptually this method could correct more errors than Span-Fact,
     not outperform SpanFact in human evaluation result
 * Both of Dong+ [2020] and Cao+ [2020] construct artificial training data
@@ -269,9 +266,9 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 * hE, gap between the
   * training stage (which learns to correct the corrupted reference summaries)
   * testing stage (which aims to correct the model-generated summaries)
-  limits the performance of post-editing-based methods for the reason that
-  corrupted reference summaries have a different data distribution with the
-  model-generated summaries, which is
+  limits the performance of post-editing-based methods 
+  because corrupted reference summaries have a different data distribution with
+  the model-generated summaries
   * the same as weakly supervised factual consistency metrics (§3.2)
 
 ## other methods: simple but useful methods and domain-specific methods
