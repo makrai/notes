@@ -97,7 +97,7 @@ The source code is available at https://github.com/bojone/BERT-whitening
 
 ## 3.4 [computational] Complexity Analysis
 
-# 4 Experiment
+# 4 Experiment 4
 
 ## 4.1 the benchmark datasets
 

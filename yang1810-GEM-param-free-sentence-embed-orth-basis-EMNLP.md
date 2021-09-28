@@ -105,8 +105,8 @@ EMNLP-IJCNLP 2019
 ### 2.4.2 Uniqueness Score
 
 * we select different principal vectors of X c for each sentence
-* the princ comps are re-ranked in descending order of their correlation
-  with sentence matrix S
+* the principal components are re-ranked 
+  in descending order of their correlation with sentence matrix S
 * Next, the top h principal vectors are selected
 * corpus-wise uniqueness score: `α u = exp (−|σ d o* (q i T D)|_2  / h)`
 
@@ -180,7 +180,7 @@ EMNLP-IJCNLP 2019
 ## Sensitivity to the four hyper-parameters in our model
 
 * window size m in the contextual window matrix, the
-* number of candidate principal components K, the
+* number of candidate principal components K
 * number of principal components to remove h, and the
 * power of the singular value in coarse sentence embedding,
   i.e. the power `t` in `f (σ_j ) = σ_j^t` in Equation (7)

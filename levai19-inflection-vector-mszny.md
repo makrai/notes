@@ -16,12 +16,12 @@ MSZNY 2019
 * derivation does not concern us in this paper, and we used the <> sign
 * The model was generated using the surface forms only and
   morphological analyses were assigned to the words subsequently. In the
-* we can project the vectors to ... the unit sphere without great loss of info
+* we can project the vectors to the unit sphere without great loss of info
   * strong correlation (ρ = 0.939) between the log-frequency and the length of
     [as] in Arora (2016) (Fig. 2)
 * we use a set of 200000 uniformly distributed random vectors as a baseline
   for comparing to the actual word vectors
-* skip-gram model ... prefers placing the words in a specific part of ... space
+* skip-gram model prefers placing the words in a specific part of space
   (Mimno EMNLP 2017)
   * [we] count the relative frequency of each coordinate being positive, then
     plotting these numbers in an ascending order
@@ -31,14 +31,14 @@ MSZNY 2019
 # 3 The statistics of grammatically defined clusters 251
 
 * Visualizing high-dimensional data is a difficult exercise [13]
-  Grinstein, G., Trutschl, M., Cvek, U.: High-dimensional visualizations
+  Grinstein, G., Trutschl, M., Cvek, U.: 
+  High-dimensional visualizations
   Visual Data Mining Workshop, KDD 2, 120. (2002)
-* We ... use principal component analysis
-  * Plotting a sample of 1000 vectors from the spherical projection of the
-    first 3 principal components of some clusters of word vectors yielded Fig
-    4, which makes clear we have 3 clusters each restricted to a dominant
-    orthant.  What we need to verify is that this phenomenon persists in the
-    whole 200-dimensional space
+* We use principal component analysis
+  * fig 4: Plotting a sample of 1000 vectors from the spherical projection of the
+    first 3 principal components of some clusters of word vectors 
+    * we have 3 clusters each restricted to a dominant orthant.  What we need to
+      verify is that this phenomenon persists in the whole 200-dimensional space
 * comparing the standard deviations and the entropy of the clusters. If a
   * mit ért egy klaszter std-je és entrópiája alatt?
 
@@ -48,10 +48,10 @@ MSZNY 2019
 * we begin with the definition of a cap (vectors at a small angle to an axis):
 * To measure the compactness of clusters, we use an
   * increasing cap [jobbról]
-    * [/Num|Digit][Nom] ... shows the strongest coherence, which seems intuitive,
+    * [/Num|Digit][Nom] shows the strongest coherence, which seems intuitive,
     * UNKNOWN cluster shows high coherence, as it is dominated by nouns
-    * The [/V][Prs.NDef.3Sg] cluster ... show the same coherence as the [/N][Acc]
-    * [/Adj][Nom] cluster ... shows lower coherence than any non-random cluster
+    * The [/V][Prs.NDef.3Sg] cluster show the same coherence as the [/N][Acc]
+    * [/Adj][Nom] cluster shows lower coherence than any non-random cluster
   * ratio of the [in and out-cluster] words in a cap α with fixed α
     * [choosing alpha;] on Fig. 8, we show the ratios with that corresponding
       to RANDOM subtracted
@@ -101,7 +101,7 @@ In the following sections [we symmetrize] the similarity measure
   [/Adj][.], while
   [/Adj|Pro][.] (pronominal adjectives) and especially the
   [/Adj|Pro|Rel] (relative pronouns) show significantly less similarity. As we
-  * treating [/Adj|Pro|Rel] as a subcategory of [/Adj] ... shows to be mistake
+  * treating [/Adj|Pro|Rel] as a subcategory of [/Adj] shows to be mistake
 * [for] plural adjectives, the similarities are significantly higher than their
   singular counterparts’ similarities
 

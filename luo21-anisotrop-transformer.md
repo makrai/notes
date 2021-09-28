@@ -33,7 +33,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 ## 2.2 Whitening Transformation
 
-* Whitening is a method to transform vectors into the standard normal distributn
+* Whitening is a method to transform vectors into the standard normal distri
   (the mean vector is 0 and the covariance matrix is the identity matrix)
 
 ## 2.5 Related Work
@@ -212,7 +212,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 * after alleviating the anisotropy phenomenon, the best accuracy scores of BERT
   and RoBERTa increase, which proves our belief
 ### Clipping vs. Whitening
-* whitening method is more effective than clipping method. Whitening is
+* whitening method is more effective than clipping method
 
 ## 4.2 Sentence-level Task
 

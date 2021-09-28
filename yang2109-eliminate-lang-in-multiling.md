@@ -10,8 +10,8 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   from semantic related components in multilingual representations pre-trained
   * only uses simple linear operations,
     e.g. matrix factorization and orthogonal projection
-* reveals that for weak-alignment multilingual systems,
-  the principal components of semantic spaces primarily encodes language id
+* for weak-alignment multilingual systems, the 
+  principal components of semantic spaces primarily encodes language id
 * We evaluate the LIR on a cross-lingual 
   * question answer retrieval task (LAReQA)
     * almost 100% relative improvement in MAP for weak-alignment models
@@ -37,7 +37,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   * geometric relation between different languages?
     * Artetxe+  (2020); Chung+ (2020); Lauscher+ (2020)
     * Mikel Artetxe, Sebastian Ruder, and Dani Yogatama
-      On the cross-lingual transferability of monolingual representations. In
+      On the cross-lingual transferability of monolingual representations
       ACL 2020
     * Hyung Won Chung, Thibault Févry, Henry Tsai, Melvin Johnson, S Ruder
       Rethinking embedding coupling in pre-trained language models
@@ -83,12 +83,12 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 # 3 Experiments
 
 * our sentences for extracting principle components are sampled from Wiki-40B
-  (Guo+ 2020). We use 10,000 sentences per language. We notice performance
-  initially increases as more sentences are used but then is almost unchanged
-  after n > 10, 000. We tried different samplings of {t iL } and text resources
-  other than Wiki-40B, e.g., Tatoeba (Artetxe and Schwenk, 2019). The minimal
-  differences in performance suggest language components are stable over
-  different domains
+  (Guo+ 2020)
+  * 10,000 sentences per language. We notice 
+  * performance initially increases as more sentences are used but then is
+    almost unchanged after n > 10, 000. We tried 
+  * different samplings of {t iL } and text resources other than Wiki-40B, e.g.,
+    Tatoeba (Artetxe and Schwenk, 2019); minimal differences in performance
 
 ## 3.2 Amazon Reviews
 
@@ -143,15 +143,13 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
     supervised data: cross-lingual synonyms and antonyms
 * Libovickỳ+ (2019) propose that the language-specific information of mBERT is
   the centroid of each language space (the mean of embeddings)
-* Zhao+ (2021) propose several training techniques to obtain language-agnostic
-  representations, including segmenting orthographic tokens in training data and
-  aligning monolingual spaces by training
+* Zhao+ (2021) propose several training techniques to obtain lang-agnostic reprs
+  * segmenting orthographic tokens in training data and aligning monolingual
+    spaces by training
 * principal components of the semantic space for sentence embeddings include
   * Arora+ (2017) and Yang+ (2019b)
-    * principal component removal is investigated for monolingual models and the
-      evaluation is only conducted on semantic similarity benchmarks. In
+    * principal component removal is investigated for monolingual models
+    * evaluation is only conducted on semantic similarity benchmarks
   * Mu and Viswanath (2018) explore removing top components from English
     * unclear prior to our work what purpose is served by removing principal
-      components within multilingual and cross-lingual settings. We demonstrate
-      these principal components represent language information for
-      weak-alignment multilingual models
+      components within multilingual and cross-lingual settings

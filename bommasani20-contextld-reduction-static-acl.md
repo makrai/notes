@@ -183,25 +183,24 @@ ACL 2020
 
 ## 5.1 Definitions
 
-### Bolukbasi+ (2016) introduced a measure of gender bias which assumes access
+### Bolukbasi+ (2016) introduced a measure of gender bias
 
 * set P of (male, female) word pairs where m i and f i only differ in gender
-  (e.g.  ‘men’ and ‘women’). They compute a
+  (e.g.  ‘men’ and ‘women’)
 * gender direction g: g = PCA [m 1 − f 1 , . . . , m n − f n ] [0] where [0]
-  indicates the first principal component.  Then, given a set N of target words
-  that we are interested in evaluating the bias with respect to, Bolukbasi+
-* bias (N ) = mean | cos (w, g) | w∈N BOLUKBASI This definition is
+  indicates the first principal component
+* bias (N ) = mean | cos (w, g) | w∈N BOLUKBASI
 * only applicable to binary bias settings
 * assumes the first principal component explains a large fraction of the
   observed variance
 
-### Garg+ (2018) introduced a different definition that is not restricted to
+### Garg+ (2018) introduced a different definition
 
 * sets A 1 and A 2 of representative words for each of the two classes
 * For each class, μ i = mean w is computed. Garg+ (2018) w∈A i computes the bias
 * two ways: dist = Euc or cos
   bias (N ) = mean_w dist(w, μ 1) dist(w, μ 2)
-* not rely on the first principal component explaining a large fraction of the
+* not rely on the first principal component explaining a large fraction of var
 * originally in favor of/against a specific class
 * if N = {‘programmer’, ‘homemaker’} and ‘programmer’ was equally male-biased as
   ‘homemaker’ was female-biased, then under the definition of Garg+ (2018),
@@ -256,7 +255,7 @@ ACL 2020
   (and for visual clarity) with results for N adj appearing in Table 8. Since we
 * BOLUKBASI not be a reliable indicator since the first principal component
   explains less than 35% of the variance for the majority of distilled embedding
-  (Zhao+ (2019a) show similar findings for ELMo). For bias and bias , we find
+  (Zhao+ (2019a) show similar findings for ELMo)
 * MANZINI : RoBERTa embeddings consistently get high scores when
   compared to other distilled embeddings but
 * GARG-COS: they are deemed the least biased
