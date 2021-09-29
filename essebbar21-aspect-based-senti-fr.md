@@ -12,9 +12,9 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
 * We focus on aspect target sentiment analysis and we propose an ABSA using
   French PTM like multilingual BERT (mBERT), CamemBERT and FlauBERT
   * Three different fine-tuning methods:
-    Fully-Connected, Sentences Pair Classification, and Attention Encoder Network
-    * The PTM-SPC model shows generally great performances and is less complex
-      compare to the PTM-AEN model
+    Fully-Connected, Sentences Pair Classification, & Attention Encoder Network
+    * The PTM-SPC model shows generally great performances and is 
+      less complex compared to the PTM-AEN model
 * SemEval2016 French reviews datasets for ABSA, our fine-tuning models
   * outperforms the SOTA French ABSA methods
   * robust for the Out-Of-Domain dataset
@@ -24,15 +24,17 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
 # 1 Intro
 
 * work in SA continues to rapidly grow in new directions (Lin and Luo, 2020)
+  * Lin, P. and Luo, X.
+    A survey of sentiment analysis based on machine learning
+    NLP and Chinese Computing 9th CCF International Conference, NLPCC 2020,
 * ABSA aims to split the text into Aspects (attributes or components of a
   product or service) and then give to each aspect a Sentiment level: positive,
   negative or neutral
 * ABSA tasks:
-  * The Opinion Target Extraction which aims at extracting the target
-    (i.e the words reflecting the aspect)
-  * The Aspect-Category Detection which aims at detecting the different types of
-    aspects that are evoked in a text
-  * The Aspect Sentiment Classification (ASC) for which the objective is to
+  * Opinion Target Extraction: extracting the words reflecting the aspect
+  * Aspect-Category Detection
+    * detecting the different types of aspects that are evoked in a text
+  * Aspect Sentiment Classification (ASC): 
     associate a sentiment polarity to each identified aspect
     * In this paper, we focus on ASC
     * Pre-Trained Models (PTM) appear to be very promising solutions but
