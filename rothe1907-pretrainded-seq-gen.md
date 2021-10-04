@@ -26,7 +26,7 @@ TACL arXiv:1907.12461 [cs.CL]
   * e.g. BERT checkpoint to initialize the encoder and GPT-2 model as the decodr
   * we rigorously experiment with a large number of settings to
     combine BERT, GPT and RoBERTa pre-trained checkpoints
-    to initialize our Transformer-based model.
+    to initialize our Transformer-based model
 * three canonical conditional text generation tasks of increasing complexity
   * sentence-level fusion (DiscoFuse, Geva+ 2019) and
   * splitting (WikiSplit, Botha+ 2018)),
@@ -69,20 +69,20 @@ TACL arXiv:1907.12461 [cs.CL]
 ## 4.4 Abstractive Summarization 6
 
 * We evaluate our setups on three summarization datasets of varying characterist
-  * Gigaword (Napoles+ 2012), 
-    * 3.8M _sentence_-summary training pairs.  
-  * CNN and DailyMail (Hermann+ 2015), and 
+  * Gigaword (Napoles+ 2012),
+    * 3.8M _sentence_-summary training pairs
+  * CNN and DailyMail (Hermann+ 2015), and
     * 287k document-summary pairs
-    * bullet-point story highlights with a high degree of extraction, 
+    * bullet-point story highlights with a high degree of extraction,
     * requiring the models to learn to copy from the source documents
-  * BBC extreme (Narayan+ 2018a). The Gigaword dataset 
+  * BBC extreme (Narayan+ 2018a)
     * 204k document-summary pairs
-    * extreme, in that the documents are summarized into single-sentence summs.
-    * high level of abstractiveness, and generating them automatically 
-    * requires document-level inference, abstraction, and paraphrasing.  
+    * extreme, in that the documents are summarized into single-sentence summs
+    * high level of abstractiveness
+    * requires document-level inference, abstraction, and paraphrasing
 * not anonymize entities
 * casing
-  * original cased versions of CNN/DailyMail and BBC datasets. For 
+  * original cased versions of CNN/DailyMail and BBC datasets. For
   * Gigaword: lowercased version to match the publicly available lowercased test
 * truncation
   * input documents: to 512 tokens for CNN/DailyMail and BBC, and to 128 tokens
@@ -156,7 +156,7 @@ TACL arXiv:1907.12461 [cs.CL]
 * sometimes the vocabulary given from a public checkpoint might not be optimal
   for a certain task
 * the BERT vocabulary was already optimal for DiscoFuse
-* GPT: still behind the fully initialized setup.
+* GPT: still behind the fully initialized setup
 * Finally, we tried a more sensitive way of training the model
   * for 100k steps, we only train the new word embeddings
   * then we fine-tune the entire model for another 300k steps
@@ -185,7 +185,7 @@ TACL arXiv:1907.12461 [cs.CL]
   * ROBERTA SHARE produced summaries were closest to the GOLD summaries in lengt
 * we estimated the percentage of summaries with at least one repetition of rare
   or content words. We discarded the 500 most common words from the model
-  generated and reference summaries, the rests were considered as rare or contnt 
+  generated and reference summaries, the rests were considered as rare or contnt
 * BERT SHARE and ROBERTA SHARE summaries are unequivocally better than RND 2 GPT
   * in terms of both automatic evaluations (ROUGE) and human evaluation
 

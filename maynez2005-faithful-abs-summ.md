@@ -13,9 +13,9 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   * substantial amounts of hallucinated content in all model generated summs
   * pretrained models are better summarizers not only in terms of raw metrics,
     i.e., ROUGE, but also in generating faithful and factual summaries
-  * textual entailment measures better correlate with faithfulness than standard
-    metrics, potentially leading the way to automatic evaluation metrics as well
-    as training and decoding criteria
+  * textual entailment measures better correlate with faithfulness than std ones
+    * potentially leading the way to automatic evaluation metrics as well as
+      training and decoding criteria
 
 # 1 Intro
 
@@ -24,27 +24,26 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   information (e.g., “UKIP leader Nigel Goldsmith”, “Nigel Goldsmith winning the
   mayoral election”, “Sadiq Khan being the former London mayor” or “Zac Goldwin
   being the Labour’s candidate”) that are not supported by the document or are
-  factually wrong. Interestingly,
+  factually wrong
   * all summaries are topical and fluent, and
     perform well in terms of ROUGE scores (Lin and Hovy, 2003)
 * We conducted a large-scale human evaluation of hallucinated content
-  * in
+  * archit
     * Recurrent Neural Network (RNN, See+ 2017),
     * Convolutional Neural Network (CNN, Narayan+ 2018a), and
     * Transformers (Radford+ 2019; Rothe+ 2020), as well as
     * human written summaries
   * for the recently introduced eXtreme SUMmarization task 
-    (XSum , Narayan+ 2018a)
+    (XSum, Narayan+ 2018a)
 * questions:
-  * How frequently do abstractive summarizers hallucinate content?;
+  * How frequently do abstractive summarizers hallucinate content?
   * Do models hallucinate by
     * manipulating the information present in the input document (intrinsic) or
     * adding information not directly inferable from the input document (extrin)
   * How much hallucinated content is factual, even when unfaithful?; and
   * Are there automatic means of measuring these hallucinations?
 * conclusions:
-  * intrinsic and extrinsic hallucinations happen in more than 70% of
-    single-sentence summaries
+  * intrinsic and extrinsic hallucinations happen in more than 70% of 1-sent sum
   * the majority of hallucinations are extrinsic, which
     * potentially could be valid abstractions that use background knowledge
     * hE, we found that over 90% of extrinsic hallucinations were erroneous
@@ -64,8 +63,8 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * Open-ended generation
   * the task of generating text that forms a natural continuation from the input
   * focus has been text that is more human-like
-    (i.e., less repetitive or dull with more content-related words)
-    (Holtzman+ 2020; Welleck+ 2020; See+ 2019)
+    * i.e., less repetitive or dull with more content-related words
+    * Holtzman+ 2020; Welleck+ 2020; See+ 2019
 * In contrast, tasks
   * document summarization (Nenkova and McKeown, 2011; See+ 2017; Paulus+ 2018)
   * data-to-text generation (Lebret+ 2016; Wiseman+ 2017)
@@ -104,19 +103,18 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 # 3 Extreme Document Summarization
 
 * We focus our study on extreme summarization for the following reasons:
-  * easier to annotate and analyze than longer summaries such as story
-    highlights from the CNN/Dailymail dataset (Hermann+ 2015) or abstracts from
-    the NY Times (Sandhaus, 2008) or the WikiSum (Liu+ 2018) dataset
+  * easier to annotate and analyze than longer summaries such as 
+    * story highlights from the CNN/Dailymail dataset (Hermann+ 2015) or
+    * abstracts from the NY Times (Sandhaus, 2008) or WikiSum (Liu+ 2018)
   * the gold summary in the extreme summarization dataset is an introductory
-    sentence prefacing each article. By virtue of this property, the extreme
-    summarization task is not amenable to extractive strategies and requires an
-    abstractive modeling approach. Hence, it provides us a better benchmark to
-    assess abstractive models’ abilities to produce abstractions which are
-    faithful and factual
-  * since we conclude that hallucination is a problem on this dataset, then we
-    can safely conclude it is a problem for summarization datasets with longer
-    summaries, as modeling longer-distance dependencies and discourse struc-
-    tures make the task harder
+    sentence prefacing each article. By virtue of this property, 
+    * the extreme summarization task is not amenable to extractive strategies
+    * a better benchmark to assess abstractive models’ abilities to produce
+      abstractions which are faithful and factual
+  * since we conclude that hallucination is a problem on this dataset, then 
+    we can safely conclude it is a problem for summarization datasets with
+    longer summaries, as modeling longer-distance dependencies and discourse
+    structures make the task harder
 
 # 4 Abstractive Summaries
 
@@ -177,10 +175,10 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 ## 5.3 Assessment of Factual Hallucinations
 
 * annotators were presented a single-sentence summary with hallucinations and
-  * asked to assess whether it is true or false. To better explain the context
-  * made available the source document as well as the external resources such as
-    * The source document can be particularly important for generic summaries to
-    * External resources assisted the evaluators to validate grounded facts in
+* asked to assess whether it is true or false. To better explain the context
+* made available the source document as well as the external resources such as
+  * The source document can be particularly important for generic summaries
+  * External resources assisted the evaluators to validate grounded facts
 
 ### Pretraining Helps Generating Factual Summaries
 
@@ -265,28 +263,27 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   (Lebret+ 2016; Wiseman+ 2017)
   * aligns n-grams from the reference and generated texts to the source table to
     measure the accuracy of n-grams that are entailed from the source table
-* Goodrich+ (2019) proposed a model-based automatic metric to assess the
-  faithfulness of Wikipedia summaries
+* Goodrich+ (2019) proposed a model-based automatic metric 
+  to assess the faithfulness of Wikipedia summaries
   * end-to-end model to extract a complete set of OpenIE-style (Banko+ 2007)
     facts from both the source text and the generated summary. The summary is
     faithful if it is precise in generating facts from the source text
   * we found that OpenIE-based measures are not suited for eval extreme summ
-    * all models perform poorly on these metrics without any significant
-      differences
+    * all models perform poorly on these metrics without any significant diffs
 * recent works (some concurrent) have explored NLI and question answering models
   to detect factual consistency in generated text
-  (Welleck+ 2019; Falke+ 2019; Kryscinski+ 2019b; Wang+ 2020). In line with our
+  (Welleck+ 2019; Falke+ 2019; Kryscinski+ 2019b; Wang+ 2020)
   * Falke+ (2019) observed that the BERT-based NLI models substantially improved
     summaries reranking in terms of their correctness
   * Kryscinski+ (2019b) proposed an NLI-based fact checking model that is
     trained on a dataset tailored for detecting factual inconsistencies in gen-
     erated text
-    * Wang+ (2020) proposed a question answering and generation based automatic
-      evaluation protocol that is designed to identify factual inconsistencies
-* Future work will likely investigate better ways of generating questions and
-  measuring factual consistency to address poor correlation with faithfulness
-  and factuality annotations
+  * Wang+ (2020) proposed a question answering and generation based automatic
+    evaluation protocol that is designed to identify factual inconsistencies
+* Future work will likely investigate 
+  * better ways of generating questions and measuring factual consistency to
+    address poor correlation with faithfulness and factuality annotations
 * reinforcement learning to improve informativeness and reduce contradiction
-  * Pasunuru and Bansal (2018) used a textual entailment-based reward and
-  * Arumae and Liu (2019), a question-answering based reward. However, these
+  * Pasunuru and Bansal (2018) used a textual entailment-based reward
+  * Arumae and Liu (2019), a question-answering based reward
   * don’t evaluate if these rewards improve faithfulness of summaries
