@@ -6,14 +6,14 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
 
 * Aspect Based Sentiment Analysis (ABSA) is a fine-grained task
   * detect each aspect evoked in a text and the sentiment associated to each
-  * English language, many works using Pre-Trained Models (PTM) exits and
+  * English: many works using Pre-Trained Models (PTM) exits and
     many annotated open datasets are also available
-  * French Language, many works exits in SA and few ones for ABSA
+  * French: many works exits in SA and few ones for ABSA
 * We focus on aspect target sentiment analysis and we propose an ABSA using
   French PTM like multilingual BERT (mBERT), CamemBERT and FlauBERT
-  * Three different fine-tuning methods:
+  * Three fine-tuning methods:
     Fully-Connected, Sentences Pair Classification, & Attention Encoder Network
-    * The PTM-SPC model shows generally great performances and is 
+    * The PTM-SPC model shows generally great performances and is
       less complex compared to the PTM-AEN model
 * SemEval2016 French reviews datasets for ABSA, our fine-tuning models
   * outperforms the SOTA French ABSA methods
@@ -28,13 +28,12 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
     A survey of sentiment analysis based on machine learning
     NLP and Chinese Computing 9th CCF International Conference, NLPCC 2020,
 * ABSA aims to split the text into Aspects (attributes or components of a
-  product or service) and then give to each aspect a Sentiment level: positive,
-  negative or neutral
+  product or service) and then give to each aspect a Sentiment level +/-/0
 * ABSA tasks:
   * Opinion Target Extraction: extracting the words reflecting the aspect
   * Aspect-Category Detection
     * detecting the different types of aspects that are evoked in a text
-  * Aspect Sentiment Classification (ASC): 
+  * Aspect Sentiment Classification (ASC):
     associate a sentiment polarity to each identified aspect
     * In this paper, we focus on ASC
     * Pre-Trained Models (PTM) appear to be very promising solutions but
@@ -53,40 +52,40 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
     * the winner for French language SemEval2016 Challenge (slot 1 and slot 3)
       (Pontiki+ 2016)
   * Kumar+ (2016) used information extracted from dependency graphs
-    * very efficient results on different languages including French language 
+    * very efficient results on different languages including French language
   * Macháček, (2016) focused only on aspect categories and modeled the task as
     a multi-label classification with binary relevance transformation, where
     labels correspond to the aspects
   * Ruder+ (2016) proposed a method using multiple CNN filters for sentiment
     and aspect detection
   * Tang+ (2016b) applied a deep Memory Network (MemNet) which uses multiple
-    attention to compute the importance of each context word 
-  * Target-Dependent LSTM (TD-LSTM): Tang+ (2016a) used LSTM networks to
-    model both the left context and the right context with the respect to target 
+    attention to compute the importance of each context word
+  * Target-Dependent LSTM (TD-LSTM, Tang+ 2016a) model both the left context and
+    the right context with the respect to target
     * Then the left and right target-dependent representations are concatenated
       to predict the sentiment polarity of the target
-  * Target-Connection LSTM (TC-LSTM): method uses a LSTM for which semantic
-    relatedness of target with its context words are incorporated (Tang+ 2016a)
+  * Target-Connection LSTM (TC-LSTM, Tang+ 2016a)
+    * semantic relatedness of target with its context words are incorporated
     * A target vector is calculated by averaging the vectors of the words that
       compose the target
-  * Kooli and Pigeul, (2018) propose the CNN-LSTM-CRF model for aspects
-    detection and the MEMNet model for detecting the sentiment associated with
-    the aspects; these separate methods are applied on French SemEval2016 data
+  * Kooli and Pigeul, (2018) propose the
+    * CNN-LSTM-CRF model for aspects detection and the
+    * MEMNet model for detecting the sentiment associated with the aspects;
+    * these separate methods are applied on French SemEval2016 data
 * attention
   * without attention, LSTM models cannot detect which is the important part for
     ASC, given the aspect
   * attention mechanism can extract the association of important words for an
     aspect (Wang+ 2016), and can capture the key part of sentences in response
-  * Attention-based LSTM with Aspect Embedding (ATAE-LSTM): model appends the
-    target embeddings with each word embeddings and uses BiLSTM with attention
-    to get the aspect and the associated sentiment (Wang+ 2016)
-  * Interactive Attention Network (IAN): model aims to learn the representations
-    of the target and context with LSTM and attentions interactively, which
-    generates the representations for targets and contexts with respect to each
-    other (Ma+ 2017)
-  * Attentional Encoder Network (AEN): model proposed by Song+ (2019) avoids
-    recurrence and employs attention based encoders for modeling context and
-    aspect
+  * Attention-based LSTM with Aspect Embedding (ATAE-LSTM)
+    * appends the target embeddings with each word embeddings and uses BiLSTM
+      with attention to get the aspect and the associated sentiment (Wang+ 2016)
+  * Interactive Attention Network (IAN)
+    * learn the representations of the target and context with LSTM and
+      attentions interactively, which generates the representations for targets
+      and contexts with respect to each other (Ma+ 2017)
+  * Attentional Encoder Network (AEN, Song+ 2019) avoids recurrence and
+    employs attention based encoders for modeling context and aspect
 
 ## 2.2 PTM Methods
 
@@ -111,7 +110,7 @@ International Conference on Agents and Artificial Intelligence (ICAART 2021)
   * movie reviews scraped from the website www.allocine.fr
   * accuracy is improved for about three points compared to SOTA methods
   * reduces the training dataset size
-* Le+ (2019) applied FlauBERT model for SA on books, DVD and music reviews 
+* Le+ (2019) applied FlauBERT model for SA on books, DVD and music reviews
   * Their results show good performance even with small dataset
 * other tasks
   * monolingual French PTM CamemBERT and FlauBERT improved the SOTA performances

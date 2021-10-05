@@ -8,7 +8,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
 # Abstract
 
 * Much work in cross-lingual transfer learning explored
-  * how to select better transfer languages for multilingual tasks, primarily
+  * how to select better transfer languages for multilingual tasks,
     focusing on typological and genealogical similarities between languages
 * these measures of linguistic proximity are not enough when working with
   pragmatically-motivated tasks, such as sentiment analysis
@@ -18,7 +18,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
     lexification of emotion concepts. Our
   * capture cross-cultural similarities and align well with existing work in
     sociolinguistics and linguistic anthropology
-* downstream task of choosing transfer languages for cross-lingual sentiment ana
+* downstream task of choosing transfer languages for cross-lingual sentiment
   * corroborate [alátámaszt] the effectiveness of pragmatically-driven transfer
 
 # 1 Introduction
@@ -29,8 +29,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
   largely unexplored in NLP, with the exception of studies that focused on
   * differences in word usage (Garimella+ 2016; Lin+ 2018)
 * we focusing on semantic and pragmatic differences across languages
-  * new distance measure between languages based on linguistic proxies of
-    culture
+  * new distance measure between langs based on linguistic proxies of culture
   * can be used to select transfer languages and improve cross-lingual transfer,
     specifically in pragmatically-motivated tasks such as sentiment analysis,
     * expressions of subtle sentiment or emotion vary significantly by culture

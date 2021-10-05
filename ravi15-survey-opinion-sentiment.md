@@ -2,7 +2,7 @@ A survey of opinion mining and sentiment analysis
 B Liu, L Zhang
 chapter in Mining text data, 2012 - Springer
 
-# Abs 415
+# Abstract 415
 
 * This survey covering published literature during 2002-2015, is
 * organized on the basis of
@@ -17,11 +17,11 @@ chapter in Mining text data, 2012 - Springer
 * Pang+ (2008) performed an extensive survey of more than three hundred
   papers by covering applications, common challenges for sentiment analysis,
   major tasks of opinion mining viz., opinion extraction, sentiment
-  classification, polarity determination, and summarization. Then,
+  classification, polarity determination, and summarization
 * Tang+ (2009) discussed four problems related to opinion mining, i.e.,
   subjectivity classification, word sentiment classification,
   document sentiment classification and opinion extraction
-  * For subjectivity classification, they highlighted ... similarity dependent,
+  * For subjectivity classification, they highlighted similarity dependent,
     NB classifier, Multiple NB classifier, and cut-based classifier
 * O'Leary+ (2011) presented a survey on blog mining, which includes
   introduction on blog search and mining, type of blogs to be analyzed,
@@ -54,7 +54,7 @@ chapter in Mining text data, 2012 - Springer
   * sentiment classification methods
     * detailed discussion is presented on sentiment classification methods
     * fifty-four articles listing out task accomplished, domain,
-      algorithm utilized, polarity, data scope, data source, and ...  language.
+      algorithm utilized, polarity, data scope, data source, and  language.
   * major concern is to discuss the techniques applied in surveyed papers
 * Along with these surveyed papers, a considerable amount of work has been
   reported in this area and a number of lexica have been created
@@ -64,12 +64,11 @@ chapter in Mining text data, 2012 - Springer
       and box-office prediction [51].
     * Tsytsarau and Palpanas [137] presented very limited discussion
 * urgent need to focus on several other issues
-  raised in currently published papers, ... not the part of the extant surveys
+  raised in currently published papers, not the part of the extant surveys
 * This survey work differs from existing literature surveys in various ways
-  1. we classified ... studies on the basis of ... tasks, approaches and
+  1. we classified studies on the basis of tasks, approaches and
      applications as presented in Figure 1,
-  1. this paper presents articles related to tasks and major issues pointed out
-     by existing articles like
+  1. presents articles related to tasks and major issues
      subjectivity classification,
      sentiment classification from coarse-grained to fine-grained level,
      review usefulness measurement, opinion spam detection, lexicon creation,
@@ -102,7 +101,7 @@ chapter in Mining text data, 2012 - Springer
 
 ### 3.2.1.1 Machine learning based approaches [to Polarity determination]
 
-* subsection 3.6 presents ... applications of SA
+* subsection 3.6 presents applications of SA
 
 # 4. discussion..., open issues, and possible applications of sentiment analysis
 

@@ -1,5 +1,5 @@
-L Zhang, S Wang, B Liu
 Deep learning for sentiment analysis: A survey
+L Zhang, S Wang, B Liu
 Wiley Interdisciplinary Reviews 2018
 
 # Deep learning
@@ -29,8 +29,8 @@ Wiley Interdisciplinary Reviews 2018
     * each sentence cannot be assumed to be opinionated
     * subjectivity classification
   * aspect level sentiment analysis or aspect-based sentiment analysis
-    * summarize people’s opinions on entities and [their] aspects/features
-    * [entities] also called targets
+    * summarize people’s opinions on entities and their aspects/features
+    * entities also called targets
     * subtasks such as aspect extraction, entity extraction, and
       aspect sentiment classification
 * Apart from these core tasks, sentiment analysis also studies
@@ -214,7 +214,7 @@ Wiley Interdisciplinary Reviews 2018
   A question answering approach to emotion cause extraction
   (EMNLP 2017), 2017
 
-# OTHER RELATED TASKS [with deep learning] 25
+# OTHER RELATED TASKS with deep learning 25
 
 * Sentiment Intersubjectivity: Gui+ (IJCAI, 2016) tackled intersubjectivity
   * gap between the surface form and the corresponding abstract concepts,
