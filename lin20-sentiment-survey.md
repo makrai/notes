@@ -1,6 +1,8 @@
 NLPCC 2020: Natural Language Processing and Chinese Computing pp 372-387 | Cite as
-A Survey of Sentiment Analysis Based on Machine Learning 
+A Survey of Sentiment Analysis Based on Machine Learning
 Pingping Lin, Xudong Luo, Email author
+
+paper: https://link.springer.com/chapter/10.1007%2F978-3-030-60450-9_30
 
 # Abstract
 
@@ -18,23 +20,23 @@ Pingping Lin, Xudong Luo, Email author
 * Liu [20] defines an emotional expression as a 4-tuple: of (Holder, Target,
   Polarity, Time)
   * Target refers to the object to be evaluated, Polarity stands for expressed
-* four kinds of methods for sentiment analysis. The first kind is 
+* four kinds of methods for sentiment analysis. The first kind is
   * sentiment lexicon. The rules can be artificially formulated
     according to specific needs. The kinds of methods are very dependent on the
   * machine learning method: dig out the word features, and then chooses
     * In this paper, we focus on machine learning-based methods for sentiment
   * deep learning methods, i.e., using different neural network models to map a
-  * transfer learning method. 
+  * transfer learning method
 * surveys on sentiment analysis, ours in this paper is different from them. For
   * Sasikala and Sukumaran [2019] surveyed machine learning-based methods for
   * Nazir+ [2020] conduct a survey of aspect-based sentiment analysis, and
   * Yadav+ [47] survey deep learning based sentiment analysis. However, their
 
-# 2 linear classifiers based methods. 
+# 2 linear classifiers based methods
 
-# 3 probabilistic classifiers based methods. 
+# 3 probabilistic classifiers based methods
 
-# 4 other methods based on machine learning. 
+# 4 other methods based on machine learning
 
 # 5 challenges of machine learning-based methods
 
