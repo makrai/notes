@@ -36,16 +36,16 @@ arXiv:2107.00676 [cs.CL]
     Virtanen+ 2019; Wang+ 2020a; Wu and Dredze, 2020) which show that 
   * depends on model capacity, amount of pretraining data, 
     fine-tuning mechanism and amount of task-specific training data.  
-* zero shot crosslingual transfer (K+ 2020) from a resource rich language to a
-  * benchmarks, e.g. XGLUE (Liang+20), XTREME (Hu+20), XTREME-R (Ruder+21) have
+* zero shot crosslingual transfer (K+ 2020) from a resource rich language
+  * benchmarks, e.g. XGLUE (Liang+20), XTREME (Hu+20), XTREME-R (Ruder+21)
   * a wide variety of tasks such as classification, structure prediction,
-    Question Answering, and crosslingual retrieval. Using these benchmarks
-  * studies (Pires+ 2019; Wu and Dredze, 2019; K+ 2020; Artetxe+ 2020a; 
-    K+ 2020; Dufter and Schütze, 2020; Liu+ 2020a; Lauscher+ 2020; Liu+ 2020c;
-    Conneau and Lample, 2019; Wang+ 2019; Liu+ 2019a; Cao+ 2020; Wang+ 2020d;
-    Zhao+ 2020; Wang+ 2020b; Chi+ 2020b) have studied the crosslingual
+    Question Answering, and crosslingual retrieval
+  * studies of crosslinguality (Pires+ 2019; Wu and Dredze, 2019; K+ 2020;
+    Artetxe+ 2020a; K+ 2020; Dufter and Schütze, 2020; Liu+ 2020a; 
+    Lauscher+ 2020; Liu+ 2020c; Conneau and Lample, 2019; Wang+ 2019; 
+    Liu+ 2019a; Cao+ 2020; Wang+ 2020d; Zhao+ 2020; Wang+ 2020b; Chi+ 2020b) 
   * transfer depends on the amount of shared vocabulary, explicit alignment of
-    representations across languages, size of pretraining corpora, etc. We 
+    representations across languages, size of pretraining corpora
 * bilingual tasks.  For example
   * could the shared representations learnt by MLLMs improve MT between two
     resource rich languages?  We survey 

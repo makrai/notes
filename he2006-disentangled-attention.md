@@ -19,10 +19,10 @@ arXiv:2006.03654 [cs.CL]
       * RACE by     +3.6% (83.2% vs. 86.8%)
     * NLG tasks, DeBERTa improves the perplexity
       from 21.6 to 19.5 on the Wikitext-103 dataset
-  * scale up DeBERTa to 1.5 billion parameters and it substantially outperforms
-    Google's T5 with 11 billion parameters on the SuperGLUE benchmark (Wang+ 19)
-    0.6%(89.3% vs. 89.9%)
-  * surpasses the human performance (89.9 vs. 89.8)
+  * scale up DeBERTa to 1.5 billion parameters and it 
+    * outperforms Google's T5 with 11 billion parameters 0.6% (89.3% vs. 89.9%)
+    * on the SuperGLUE benchmark (Wang+ 19)
+    * surpasses the human performance (89.9 vs. 89.8)
 
 # 1 Introduction
 
