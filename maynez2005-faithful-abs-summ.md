@@ -8,7 +8,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   * less human-like responses for open-ended tasks such as LM and story generat
     (Holtzman+ 2020; Welleck+ 2020; See+ 2019)
   * for abstractive document summarization: highly prone to hallucinate content
-* We conducted a large scale human evaluation of several neural extreme abs summ
+* We conducted a large scale human evaluation of neural extreme abs summ models
   * types of hallucinations they produce
   * substantial amounts of hallucinated content in all model generated summs
   * pretrained models are better summarizers not only in terms of raw metrics,
