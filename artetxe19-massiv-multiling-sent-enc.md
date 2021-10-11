@@ -7,7 +7,7 @@ https://github.com/facebookresearch/LASER
 
 # Abstract
 
-* We introduce an architecture to learn joint multilingual sentence reprs for
+* We introduce an architecture to learn joint multilingual sentence reprs
 * 93 languages, belonging to more than 30 families and written in 28 scripts
 * a single BiLSTM encoder with a
   * shared byte-pair encoding vocabulary for all languages, which is

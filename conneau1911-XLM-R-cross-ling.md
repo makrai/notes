@@ -1,7 +1,7 @@
 XLM-RoBERTa: Unsupervised Cross-lingual Representation Learning at Scale
 Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary,
   G Wenzek, F Guzmán, E Grave, M Ott, L Zettlemoyer, V Stoyanov
-arXiv:1911.02116
+ACL 2020 arXiv:1911.02116
 
 # Abstract
 
