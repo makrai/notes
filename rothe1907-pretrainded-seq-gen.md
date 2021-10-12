@@ -82,13 +82,13 @@ TACL arXiv:1907.12461 [cs.CL]
     * requires document-level inference, abstraction, and paraphrasing
 * not anonymize entities
 * casing
-  * original cased versions of CNN/DailyMail and BBC datasets. For
+  * original cased versions of CNN/DailyMail and BBC datasets
   * Gigaword: lowercased version to match the publicly available lowercased test
 * truncation
   * input documents: to 512 tokens for CNN/DailyMail and BBC, and to 128 tokens
   * summaries was limited to 128 tokens for CNN/DailyMail, 64 for BBC, and 32
 * global batch size of 128 document-summary pairs for CNN/DailyMail and BBC, and
-* number of training steps depending on the training data sizes. Models were
+* number of training steps depending on the training data sizes
   * 500k, 300k and 200k steps for the Gigaword, CNN/DailyMail and BBC
 * standard publicly available test sets; these consists of
   * 1951 instances for Gigaword, 11490 for CNN/DailyMail and 11334 for BBC

@@ -11,8 +11,8 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * We conducted a large scale human evaluation of neural extreme abs summ models
   * types of hallucinations they produce
   * substantial amounts of hallucinated content in all model generated summs
-  * pretrained models are better summarizers not only in terms of raw metrics,
-    i.e., ROUGE, but also in generating faithful and factual summaries
+  * pretrained models are better summarizers not only in terms of ROUGE, but
+    also in generating faithful and factual summaries
   * textual entailment measures better correlate with faithfulness than std ones
     * potentially leading the way to automatic evaluation metrics as well as
       training and decoding criteria
@@ -23,8 +23,8 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * summaries often forge entities (e.g., “Nigel Goldsmith” or “Zac Goldwin”) or
   information (e.g., “UKIP leader Nigel Goldsmith”, “Nigel Goldsmith winning the
   mayoral election”, “Sadiq Khan being the former London mayor” or “Zac Goldwin
-  being the Labour’s candidate”) that are not supported by the document or are
-  factually wrong
+  being the Labour’s candidate”)
+  * not supported by the document or are factually wrong
   * all summaries are topical and fluent, and
     perform well in terms of ROUGE scores (Lin and Hovy, 2003)
 * We conducted a large-scale human evaluation of hallucinated content
@@ -33,7 +33,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     * Convolutional Neural Network (CNN, Narayan+ 2018a), and
     * Transformers (Radford+ 2019; Rothe+ 2020), as well as
     * human written summaries
-  * for the recently introduced eXtreme SUMmarization task 
+  * for the recently introduced eXtreme SUMmarization task
     (XSum, Narayan+ 2018a)
 * questions:
   * How frequently do abstractive summarizers hallucinate content?
@@ -69,8 +69,14 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   * document summarization (Nenkova and McKeown, 2011; See+ 2017; Paulus+ 2018)
   * data-to-text generation (Lebret+ 2016; Wiseman+ 2017)
 * noises or artifacts of the training data, such as reference divergence
-  (Kryscinski+ 2019a; Wiseman+ 2017; Dhingra+ 2019)
-  * Thus, models can generate texts that are not consistent with the input, 
+  * (Kryscinski+ 2019a; Wiseman+ 2017; Dhingra+ 2019)
+    * Sam Wiseman, Stuart Shieber, and Alexander Rush.
+      Challenges in data-to-document generation
+      EMNLP 2017 pages 2253–2263, Copenhagen, Denmark
+    * Bhuwan Dhingra, M Faruqui, A Parikh, M Chang, D Das, William Cohen
+      Handling divergent reference texts when evaluating table-to-text generaton
+      ACL 2019
+  * Thus, models can generate texts that are not consistent with the input,
     yet would likely have reasonable model log-likelihood
 
 ## 2.1 Intrinsic and Extrinsic Hallucinations
@@ -103,15 +109,15 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 # 3 Extreme Document Summarization
 
 * We focus our study on extreme summarization for the following reasons:
-  * easier to annotate and analyze than longer summaries such as 
+  * easier to annotate and analyze than longer summaries such as
     * story highlights from the CNN/Dailymail dataset (Hermann+ 2015) or
     * abstracts from the NY Times (Sandhaus, 2008) or WikiSum (Liu+ 2018)
   * the gold summary in the extreme summarization dataset is an introductory
-    sentence prefacing each article. By virtue of this property, 
+    sentence prefacing each article. By virtue of this property,
     * the extreme summarization task is not amenable to extractive strategies
     * a better benchmark to assess abstractive models’ abilities to produce
       abstractions which are faithful and factual
-  * since we conclude that hallucination is a problem on this dataset, then 
+  * since we conclude that hallucination is a problem on this dataset, then
     we can safely conclude it is a problem for summarization datasets with
     longer summaries, as modeling longer-distance dependencies and discourse
     structures make the task harder
@@ -223,18 +229,18 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 * textual entailment scores are best correlated with both faithful and factual
   * ROUGE -based metrics and BERTScore have very weak correlation
   * consistent with the recent studies (Goodrich+ 19; Kryscinski+ 19a; Wang+ 20)
-* question answering scores showed a very weak correlation with f & f human
+* question answering scores showed a very weak correlation with fth & fct human
   * We hypothesize that this is due to a compounding of errors where
     * the question generator is used to generate questions from the systems’
-      generated abstracts, instead of human-written text on which they were
+      generated abstracts, instead of human-written text
     * the question generator is susceptible to generate questions with
       hallucinated content when fed in with hallucinated summaries, and
     * our assumption that a summary is faithful if the answers from the source
       and the summary match, is rather poor for extreme summarization
   * We demonstrate these issues in Figure 3
-* Better ways of
-  generating questions (Narayan+ 2020) and
-  measuring factual consistency may alleviate some of these issues (Wang+ 2020)
+* Better ways of ~ may alleviate some of these issues (Wang+ 2020)
+  * generating questions (Narayan+ 2020) and
+  * measuring factual consistency 
 
 ## 5.5 Model Selection with Entailment
 
@@ -263,7 +269,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   (Lebret+ 2016; Wiseman+ 2017)
   * aligns n-grams from the reference and generated texts to the source table to
     measure the accuracy of n-grams that are entailed from the source table
-* Goodrich+ (2019) proposed a model-based automatic metric 
+* Goodrich+ (2019) proposed a model-based automatic metric
   to assess the faithfulness of Wikipedia summaries
   * end-to-end model to extract a complete set of OpenIE-style (Banko+ 2007)
     facts from both the source text and the generated summary. The summary is
@@ -280,7 +286,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     erated text
   * Wang+ (2020) proposed a question answering and generation based automatic
     evaluation protocol that is designed to identify factual inconsistencies
-* Future work will likely investigate 
+* Future work will likely investigate
   * better ways of generating questions and measuring factual consistency to
     address poor correlation with faithfulness and factuality annotations
 * reinforcement learning to improve informativeness and reduce contradiction
