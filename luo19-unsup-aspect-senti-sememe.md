@@ -8,7 +8,7 @@ ijcai 2019 Main track
   * challenging when word meanings are diversified and processing on short
     texts.  To enhance the performance on aspect extraction, leveraging
   * lexical semantic resources is a possible solution to such challenge. In this
-* we present an unsupervised neural framework that leverages sememes to
+* we present an unsupervised neural framework that leverages sememes
 * The overall framework is analogous to an autoenoder which reconstructs
   sentence representations and learns aspects by latent variables
 * Two models that form sentence representations by exploiting sememes via

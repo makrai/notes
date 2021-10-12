@@ -14,8 +14,8 @@ chapter in Mining text data, 2012 - Springer
 
 ## 1.1 Earlier reviews
 
-* Pang+ (2008) performed an extensive survey of more than three hundred
-  papers by covering applications, common challenges for sentiment analysis,
+* Pang+ (2008) performed an extensive survey of 300+ papers by covering
+  applications, common challenges for sentiment analysis, 
   major tasks of opinion mining viz., opinion extraction, sentiment
   classification, polarity determination, and summarization
 * Tang+ (2009) discussed four problems related to opinion mining, i.e.,
