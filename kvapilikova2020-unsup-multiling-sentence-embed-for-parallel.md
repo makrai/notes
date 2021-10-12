@@ -6,7 +6,7 @@ ACL 2020
 
 * Existing models of multilingual sentence embeddings require large parallel data
 * We propose an unsupervised method to derive multilingual sentence embeddings
-  relying only on monolingual data. We
+  relying only on monolingual data
   * first produce a synthetic parallel corpus using unsupervised machine
     translation, and use it to
   * fine-tune a pretrained cross-lingual masked language model (XLM) to derive
