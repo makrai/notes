@@ -5,7 +5,7 @@ arXiv:2108.08877 [cs.CL]
 * We investigate three methods for extracting T5 sentence embeddings: 
   * two utilize only the T5 encoder and one uses the full T5 encoder-decoder
 * encoder-only models outperforms BERT-based sentence embeddings on both
-  transfer tasks and semantic textual similarity (STS). Our 
+  transfer tasks and semantic textual similarity (STS)
 * encoder-decoder method achieves further improvement on STS
 * Scaling up T5 from millions to billions of parameters is found to produce
   consistent improvements on downstream tasks

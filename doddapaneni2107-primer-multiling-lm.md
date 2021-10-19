@@ -5,10 +5,10 @@ arXiv:2107.00676 [cs.CL]
 * Multilingual Language Models (MLLMs) such as mBERT, XLM, XLM-R
 * success in zero shot transfer learning
 * a large body of work in
-  * building bigger MLLMs covering a large number of languages
-  * creating exhaustive benchmarks covering a wider variety of tasks and langs
-  * analysing their performance on monolingual, zero shot crosslingual, & biling
-  * understanding the universal language patterns (if any) learnt by MLLMs and
+  * bigger MLLMs covering a large number of languages
+  * benchmarks covering a wide variety of tasks and langs
+  * performance on monolingual, zero shot crosslingual, & biling
+  * universal language patterns (if any) learnt by MLLMs and
   * augmenting the (often) limited capacity of MLLMs to improve their
     performance on seen or even unseen languages. In this survey, we review them
 
@@ -136,8 +136,8 @@ arXiv:2107.00676 [cs.CL]
     
 ## classification, 
 
-* input comprising of a single sentence or a pair of sentences
-* e.g. Natural Language Inference (NLI) classes: entails, neutral, contradicts
+* input: a single sentence or a pair of sentences
+* e.g. Natural Language Inference (NLI)
 * datasets used for evaluating MLLMs are 
   * XNLI (Conneau+ 2018)
   * PAWS-X (Yang+ 2019) 
@@ -146,20 +146,18 @@ arXiv:2107.00676 [cs.CL]
       XCOPA: A multilingual dataset for causal commonsense reasoning
   * News Classification (Liang+ 2020)
     * in XGLUE
-  * QADSM (Liang+ 2020)
-    * Query-Ad Matching (QADSM)
+  * Query-Ad Matching (QADSM, Liang+ 2020)
     * predict whether an advertisement (ad) is relevant to an input query
     * 3 languages, English, French and German. 
     * Each instance is a 4-tuple: `<query, ad title, ad description, label>`
-  * WPR (Liang+ 2020) 
-    * Web Page Ranking (WPR 
+  * Web Page Ranking (WPR, Liang+ 2020)
     * predict how relevant (0--4) a web page is to an input query
     * 7 langs, English, German, French, Spanish, Italian, Portuguese, Chinese.
     * Each instance: `<query, web page title, web page snippet, label>`
     * based on Bing.
     * Normalize Discounted Cumulative Gain (nDCG) is used as the metric.
   * QAM (Liang+ 2020)
-    * QA Matching (QAM) This task aims to 
+    * QA Matching (QAM)
     * predict whether a `<question, passage>` pair is a QA pair
     * 3 languages, English, French and German
     * based on Bing. 
@@ -212,8 +210,7 @@ arXiv:2107.00676 [cs.CL]
   * can be probed to accurately perform supervised NLU tasks such as POS
     tagging, dependency parsing, in some cases with zero-shot transfer
 * more complex tasks such as MT quality evaluation (Libovickỳ+ 2019) or
-  language generation (Rönnqvist+ 2019) remain outside the realm of these
-  models currently, keeping the debate on universal patterns incomplete
+  language generation (Rönnqvist+ 2019) remain outside the current realm
 
 # 8 How to extend MLMs to new languages
 
@@ -232,7 +229,7 @@ arXiv:2107.00676 [cs.CL]
 
 ## Zero-Shot Evaluation
 
-* The primary promise of MLLMs remains crosslingual performance, especially 0sh
+* The primary promise of MLLMs remains cross-lingual performance, especially 0sh
 * results have a wide variance across tasks and languages (Keung+ 2020)
 * controlling for the design parameters discussed above and the training and
   test sets is required
@@ -249,7 +246,7 @@ arXiv:2107.00676 [cs.CL]
     Analyzing multi-head self-attention:
       Specialized heads do the heavy lifting, the rest can be pruned
     ACL 2019, pages 5797–5808, Florence, Italy
-* clues on the emergence of crosslinguality
+* clues on the emergence of cross-linguality
 
 ## Language inclusivity. MLLMs hold promise as an ‘infrastructure’ resource
 
@@ -263,9 +260,9 @@ arXiv:2107.00676 [cs.CL]
 
 * running inference on such large models is often not possible on edge devices
   and increasingly expensive on cloud devices
-* downsize these large models without affecting accuracy. Standard:
+* downsize these large models without affecting accuracy
   * pruning, quantization, factorization, distillation, and architecture search
-    have been used on monolingual models (Tay+ 2020)
+    have been standardly used on monolingual models (Tay+ 2020)
 
 ## Robust models
 

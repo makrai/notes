@@ -8,24 +8,24 @@ data and code for our experiments publicly available
 
 * cross-lingual LMs, reprs for many different languages in the same space
 * we investigate the linguistic and non-linguistic factors affecting
-  sentence-level alignment in cross-lingual pretrained language models for 101
-  languages and 5,050 language pairs
+  sentence-level alignment in cross-lingual pretrained LMs for 101 languages
+  and 5,050 language pairs
   * BERT-based LaBSE and BiLSTM-based LASER as our models, and
   * the Bible as our corpus
   * measures
     * task-based measure of cross-lingual alignment in the form of
       bitext retrieval performance, as well as
-    * four intrinsic measures of vector space alignment and isomorphism.
+    * four intrinsic measures of vector space alignment and isomorphism
 * We then examine a range of linguistic, quasi-linguistic, and training-related
   features as potential predictors of these alignment metrics
   * word order agreement and agreement in morphological complexity are two of
     the strongest linguistic predictors of cross-linguality
     * similarly to Pires+ (2019)
   * in-family training data as a stronger predictor than language-specific
-    training data across the board.
+    training data across the board
   * moderate effects of other typological measures on crosslinguality
 * We verify some of our linguistic findings by looking at the effect of
-  * morphological segmentation on English-Inuktitut alignment, in addition to
+  * morphological segmentation on English-Inuktitut alignment
   * word order agreement on isomorphism for 66 zero-shot language pairs from a
     different corpus
 
@@ -37,9 +37,9 @@ data and code for our experiments publicly available
 
 ## 6.2 Feature Search and Ablation
 
-### Exhaustive Feature Selection. We look at the optimal set of lang-pair-spec
+### Exhaustive Feature Selection
 
-### Single-step Regression. To appraise the marginal contribution of each feature
+### Single-step Regression. To appraise the marginal contribution of each feat
 
 ## 6.3 Controlling for Training Data
 
@@ -53,7 +53,7 @@ data and code for our experiments publicly available
 
 * low-resource, Indigenous, and endangered
   * challenges facing these sorts of langs (Mager+ 2018; Joshi+ 2020)
-  * broad solutions and guidelines (e.g. Kann+ 2019; Bender 2019).
+  * broad solutions and guidelines (e.g. Kann+ 2019; Bender 2019)
 * The Bible corpus (Christodouloupoulos and Steedman, 2014)
   * includes 35 and 45 languages that are zero-shot for LaBSE and LASER resp
     * all of which could be classified as low-resource or extremely low-resource

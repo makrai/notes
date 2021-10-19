@@ -3,42 +3,42 @@ L Xue, N Constant, A Roberts, M Kale, R Al-Rfou, A Siddhant, A Barua, C Raffel
 arXiv:2010.11934 [cs.CL]
 
 * The recent "Text-to-Text Transfer Transformer" (T5) leveraged a unified text2t
-  * SOTA results on a wide variety of English-language NLP tasks. In this paper,
-* we introduce mT5, a multilingual variant of T5 that was
-  * pre-trained on a new Common Crawl-based dataset covering 101 languages. We
-  * SOTA performance on many multilingual benchmarks. We also describe
+  * SOTA results on a wide variety of English-language NLP tasks
+* we introduce mT5, a multilingual variant of T5
+  * pre-trained on a new Common Crawl-based dataset covering 101 languages
+  * SOTA performance on many multilingual benchmarks
   * a simple technique to prevent "accidental translation" in the zero-shot setn
     * a generative model chooses to (partially) translate its prediction into
-      the wrong language. All of the code and model checkpoints used in this
+      the wrong language
 
 # Introduction
 
 * T5 model (Raffel+ 2020) have been used to achieve SOTA results on many benchms
   (Khashabi+ 2020; Roberts+ 2020; Kale, 2020; Izacard and Grave, 2020;
   Nogueira+ 2020; Narang+ 2020)
-* 80% of the world population does not speak English (Crystal, 2008). One way
+* 80% of the world population does not speak English (Crystal, 2008)
   * dozens of models, each pre-trained on a single non-English language
     (Carmo+ 2020; de Vries+ 2019; Le+ 2020; Martin+ 2020; Delobelle+ 2020;
-    Malmsten+ 2020; Nguyen and Tuan Nguyen, 2020; Polignano+ 2019, etc.). A more
+    Malmsten+ 2020; Nguyen and Tuan Nguyen, 2020; Polignano+ 2019)
   * multilingual models that have been pre-trained on a mixture of many
-    * mBERT (Devlin, 2018), mBART (Liu+ 2020a), and XLM-R (Conneau+ 2020), which
+    * mBERT (Devlin, 2018), mBART (Liu+ 2020a), and XLM-R (Conneau+ 2020)
       * multilingual variants of BERT (Devlin+ 2019), BART (Lewis+ 2020b), and
         RoBERTa (Liu+ 2019), respectively
-* mT5, a multilingual variant of T5. Our goal with mT5 is to produce a massively
-  * deviates as little as possible from the recipe used to create T5. As such,
-  * inherits all of the benefits of T5 (described in section 2), such as its
-    * general-purpose text-to-text format, its
-    * insights from a large-scale empirical study, and its scale. To train mT5,
+* mT5, a multilingual variant of T5
+  * deviates as little as possible from the recipe used to create T5
+  * inherits all of the benefits of T5 (described in section 2)
+    * general-purpose text-to-text format,
+    * insights from a large-scale empirical study, and its scale
 * we
-  * introduce a multilingual variant of the C4 dataset called mC4. mC4
-    * 101 languages drawn from the public Common Crawl web scrape. To validate the
+  * introduce a multilingual variant of the C4 dataset called mC4
+    * 101 languages drawn from the public Common Crawl web scrape
   * results on several benchmark datasets, showing SOTA results in many cases
 * accidental translation
   * problematic behavior of pre-trained gen multiling LMs in the zero-shot settn
   * they erroneously translate part of their prediction into the wrong language
   * we describe a simple procedure that involves
     mixing in unlabeled pre-training data during fine-tuning and
-  * it dramatically alleviates this issue. We release our pre-trained models and
+  * it dramatically alleviates this issue
 
 # 2 Background on T5 and C4
 
@@ -75,8 +75,8 @@ arXiv:2010.11934 [cs.CL]
   * If low-resource languages are sampled too often, the model may overfit;
   * if high-resource langs are not trained on enough, the model will underfit
 * We therefore take the approach from (Devlin, 18; Conneau+ 20; Arivazhagan+ 19)
-  p(L) ∝ |L|^α , where |L| is the number of examples in the language. The
-  * hyperparameter α (typically with α < 1) allows us to control how much to
+  p(L) ∝ |L|^α , where |L| is the number of examples in the language
+  * hyperparameter α (typically with α < 1)
     * prior work include α = 0.7 for mBERT (Devlin, 2018), α = 0.3 for XLM-R
       (Conneau+ 2020), and α = 0.2 for MMNMT (Arivazhagan+ 2019)
     * We tried all three of these values (ablation results in section 4.2) and
@@ -84,7 +84,7 @@ arXiv:2010.11934 [cs.CL]
       high~ and low-resource languages
 * over 100 languages necessitates a larger vocabulary
   * Following XLM-R (Conneau+ 2018), we increase the vocabulary size to 250,000
-  * we use SentencePiece (Kudo and Richardson, 2018; Kudo, 2018) models trained
+  * we use SentencePiece (Kudo and Richardson, 2018; Kudo, 2018) models
   * To accommodate languages with large character sets like Chinese, we use a
     character coverage of 0.99999 and enable SentencePiece’s “byte-fallback”
     feature to ensure that any string can be uniquely encoded
@@ -94,12 +94,12 @@ arXiv:2010.11934 [cs.CL]
 * we focus on models that support more than a few dozen languages
 * Table 1 gives a high-level comparison of mT5 to the most similar models
 * XLM (Conneau and Lample, 2019) is also based on BERT but applies improved
-  * including explicitly cross-lingual pre-training objectives. Many pre-trained
-    was trained on 100 languages from Wikipedia
+  * including explicitly cross-lingual pre-training objectives
+  * trained on 100 languages from Wikipedia
 * XLM-R (Conneau+ 20)
   * pages from Common Crawl were filtered by an n-gram language model trained on
     Wikipedia (Wenzek+ 2020)
-* mBART (Liu+ 2020a) is a multilingual encoder-decoder model that is based on
+* mBART (Liu+ 2020a) is a multilingual encoder-decoder model
   * trained with a combination of span masking and sentence shuffling objectives
   * subset of 25 languages from the same data as XLM-R
 * MARGE (Lewis+ 2020a) is a multilingual encoder-decoder model
@@ -125,7 +125,7 @@ arXiv:2010.11934 [cs.CL]
 * three variants of these tasks:
   * “zero-shot”, where the model is fine-tuned only on English data,
   * “translate-train”, adding machine translations from English into each target
-  * “inlanguage multitask”, training on gold data in all target languages. For
+  * “inlanguage multitask”, training on gold data in all target languages
   * refer to Hu+ (2020) for further details on these benchmarks
 * five model sizes:
   * Small (≈ 300M params), Base (580M), Large (1.2B), XL (3.7B), and XXL (13B)
@@ -136,13 +136,14 @@ arXiv:2010.11934 [cs.CL]
   to roughly 1 trillion input tokens total. This is the same amount of
   pretraining as T5 and about 16 as much as XLM-R
   * inverse square-root learning rate schedule used by T5 during pre-training,
-  * not apply dropout during pre-training.  We use the
+  * not apply dropout during pre-training
   * same self-supervised objective as T5, with 15% of tokens masked and an
     average noise span length of 3
   * We ablate some of these experimental details in section 4.2
-* For fine-tuning, we use a constant learning rate of 0.001 and dropout rate of
-  0.1 for all tasks. We use batch size 2 17 for most tasks but increased this up
-  to 2 20 in a few cases based on performance on the validation set. For
+* For fine-tuning, we use a constant learning rate of 0.001 and 
+  dropout rate of 0.1 for all tasks
+  * batch size 2 17 for most tasks but increased this up to 2 20 in a few cases
+    based on performance on the validation set
   * early stopping, we save checkpoints every 200 steps and choose the
     checkpoint with the highest validation performance
 
@@ -235,17 +236,17 @@ arXiv:2010.11934 [cs.CL]
 ## Accidental translation
 
 * the model translating part or all of a contextual span into English. On the
-  one hand, it is remarkable that mT5 performs “spontaneous” translation despite
-* we would ideally be able to control this behavior.  We observe accidental
-* across all model sizes and all XQuAD languages. The problem is
+  one hand, it is remarkable that mT5 performs “spontaneous” translation
+* we would ideally be able to control this behavior
+* across all model sizes and all XQuAD languages
 * most prevalent in mT5-Small and mT5-Base, where from manual inspection,
   * half or more of the illegal predictions within each language exhibit
-  * many of the illegal predictions coming from Greek and Russian, as shown in
+  * many of the illegal predictions coming from Greek and Russian
 * While we do observe full phrase translations, a more common occurrence is
   partial translation, where the model outputs a token or two of English before
-  reverting to the correct target language. The
+  reverting to the correct target language
 * may even occur mid-word, as in the prediction “chlorопласт”, where the first
-  half of the target “хлоропласт” (Russian: chloroplast) has been translated to
+  half of the target “хлоропласт” (Russian: chloroplast) has been translated
 
 ## 5.2 Preventing accidental translation
 
@@ -259,17 +260,17 @@ arXiv:2010.11934 [cs.CL]
 * strategy inspired by domain/task-adaptive pre-training
   (Howard and Ruder, 2018; Gururangan+ 2020): We simply
 * mix in our unsupervised multilingual pre-training task during fine-tuning. A
-  * similar approach was explored by Liu+ (2020b). We use
+  * similar approach was explored by Liu+ (2020b)
   * the same mC4 task definition as in pre-training, with two adjustments:
     * remove all “sentinel” tokens (corresponding to non-masked spans in the
       input text) from the target sequence, as otherwise we observe occasional
-      sentinels in downstream predictions.  Second, we
+      sentinels in downstream predictions
     * reduce the language sampling parameter α from 0.3 to 0.1. This produces a
       * near-uniform distribution of languages,
-        encouraging the model to treat all languages as equally likely. 8
+        encouraging the model to treat all languages as equally likely
   * we mix a small amount of our unsupervised task (covering 101 languages) into
     XQuAD fine-tuning, at a ratio of just 1:100
-* Figure 4 shows the results on XQuAD zero-shot error rates. The addition of
-  * marked effect on the mT5-Small and mT5-Base models (where accidental
-    translation was most rampant), reducing the illegal prediction rates by more
-    than 70% (relative), and contributing to an overall reduction in errors
+* Figure 4 shows the results on XQuAD zero-shot error rates
+  * marked effect on the mT5-Small and mT5-Base models 
+    (where accidental translation was most rampant),
+    reducing the illegal prediction rates by more than 70% (relative)

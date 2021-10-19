@@ -18,7 +18,7 @@ arXiv:2009.03947
 # 1 Introduction
 
 * Ideally different clusters contain different semantic topics
-* Compared to the classical models for topic modeling (such latent Dirichlet a)
+* Compared to the classical models for topic modeling (such LDA)
   * this work better by first representing a sentence-level embedding
     rather than considering words similarity (as used in LDA)
 
@@ -38,14 +38,13 @@ arXiv:2009.03947
   * should contain the average embedding (therefore the average topic/concept)
   * not necessarily capture all topics of that cluster. But it could serve as a
     simple baseline
-  * we use a text summarization technique to provide a meaningful and sensible
-    * TextRank summarization framework
+  * we use a text summarization technique, the TextRank summarization framework
 
 # 3 dataset used in our experiments
 
 # 4 experimental analysis of the proposed algorithm
 
-in terms of detected topics, trending words in each topic cluster, and
-sentence representation similarity
+* in terms of detected topics, trending words in each topic cluster, and
+  sentence representation similarity
 
 # 5 concluded
