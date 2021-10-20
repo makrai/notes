@@ -47,9 +47,9 @@ arXiv:1804.07835 cs.CL
 * We propose direct network transfer, an effective
   transfer learning or fine-tuning setting with a simpler training objective,
   * directly optimizes cosine similarity between sentence embeddings, no clasfr
-  * all other parameters are updated. Without a classifier, direct network
-    transfer omits all parameters in the output layer (changing “classifier” to
-    “cosine” in Figure 1)
+  * all other parameters are updated
+    * Without a classifier, direct network transfer omits all parameters in
+      the output layer (changing “classifier” to “cosine” in Figure 1)
   * we experiment with various combinations of sentence encoders and semantic
     similarity datasets, we show that in many cases direct network transfer
     performs better than learning an additional classifier, with fewer params

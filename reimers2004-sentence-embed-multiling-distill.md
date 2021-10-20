@@ -1,4 +1,4 @@
-Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation
+Making Monolingual Sentence Embeddings Multilingual using Knowledge Distill
 Nils Reimers, Iryna Gurevych
 arXiv:2004.09813 cs.CL
 
@@ -35,7 +35,7 @@ https://github.com/UKPLab/sentence-transformers
   * Multilingual Universal Sentence Encoder (mUSE)
     (Chidambaram+ 2018; Yang+ 2019) 
     * trained in a multi-task setup on SNLI (Bowman+ 2015) and
-      on over a billion question-answer pairs from online forums and QA websites
+      on >1B question-answer pairs from online forums and QA websites
     * training obj: translation ranking. Given a translation pair (s i , t i )
       and various alternative (incorrect) translations, identify the correct one
     * multi-task learning can suffer from catastrophic forgetting
@@ -53,6 +53,6 @@ https://github.com/UKPLab/sentence-transformers
       * SOTA performance for various sentence embeddings task
       * based on transformer models like BERT (Devlin+ 2018)
       * mean pooling on the output to derive a fixed sized sentence embedding
-    * XML-RoBERTa (XLM- R, Conneau+ 2019), a transformer network pre-trained on
+    * XML-RoBERTa (XLM-R, Conneau+ 2019), a transformer network pre-trained on
       100 languages, as student model
   * approach is not limited to be used with transformer models

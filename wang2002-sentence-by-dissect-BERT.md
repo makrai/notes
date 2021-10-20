@@ -1,5 +1,5 @@
-Bin Wang, C.-C. Jay Kuo
 SBERT-WK: A Sentence Embedding Method by Dissecting BERT-based Word Models
+Bin Wang, C.-C. Jay Kuo
 arXiv:2002.06652 cs.CL
 
 https://github.com/BinWang28/SBERT-WK-Sentence-Embedding

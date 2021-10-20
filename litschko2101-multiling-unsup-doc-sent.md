@@ -122,3 +122,33 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
   student M initialized with different multilingual transformers.
 
 ## 5.2 Sentence-Level Cross-Lingual Retrieval 10
+
+* Multilingual encoders specialized with parallel data excel in sent-level
+  * all of them substantially outperforming the competitive MT-IR baseline.
+* best is LASER, which was also trained on parallel data from Europarl,
+  * We note that at the same time LASER was the weakest model from this group
+    on average in the document-level CLIR task.
+
+## 5.3 Further Analysis
+
+### Layer Selection. All multilingual encoders have multiple layers and one
+
+* For AOC and SEMB, where both models obtain representations by
+  contextualizing (sub)words in a sentence, we get the best performance for
+  higher layers 
+* for document-level retrieval (L9/L12 for mBERT, and L15 for XLM) seem to be
+* sentence-level retrieval (L9 for mBERT and L12/L11 for XLM)
+
+### Number of Contexts in AOC
+
+* We construct AOC term embeddings by averaging contextualized representations
+  of the same term obtained from different Wikipedia contexts
+* plateau rather early – at around 30 and 40 contexts for mBERT and XLM, resp.
+
+### Input Sequence Length in document-level CLIR
+
+* Multilingual encoders have a limited input length and they, unlike static
+  * effectively truncate long documents
+  * In our main experiments we truncated the documents to first 128 word pieces 
+* Somewhat counterintuitively, encoding a longer chunk of documents (256 word
+  pieces) yields a minor performance deterioration (compared to the length of

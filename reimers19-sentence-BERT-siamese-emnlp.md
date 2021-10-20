@@ -2,6 +2,8 @@ Nils Reimers, Iryna Gurevych
 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
 EMNLP 2019
 
+https://github.com/UKPLab/sentence-transformers
+
 # Abstract
 
 * BERT (Devlin+ 2018) and RoBERTa (Liu+ 2019) has set a new SOTA performance
