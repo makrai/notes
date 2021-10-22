@@ -5,7 +5,7 @@ ACL 2020 arXiv:2004.08795 [cs.CL]
 * This paper creates a paradigm shift in neural extractive summarization
   * Instead of extracting sentences individually and modeling the relationship
     between sentences,
-  * we formulate the task as a semantic text matching problem, in which a
+  * we formulate the task as a semantic text matching problem
   * source document and candidate summaries matched in a semantic space
   * grounded in our comprehensive analysis of the
     gap between sentence-level and summary-level extractors

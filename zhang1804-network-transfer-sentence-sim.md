@@ -1,4 +1,5 @@
 Direct Network Transfer: Fine-Tuning Sentence Embeddings for Semantic Sim
+                         ^ Transfer Learning of?
 Li Zhang, Steven R. Wilson, Rada Mihalcea
 arXiv:1804.07835 cs.CL
 

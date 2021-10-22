@@ -374,9 +374,9 @@ arXiv:2003.08271 [cs.CL]
 
 ### Fine-tuning with extra adaptation modules
 
-* main drawback of fine-tuning is its parameter inefficiency: 
+* main drawback of fine-tuning is its parameter inefficiency:
   every downstream task has its own fine-tuned parameters
-* solution is to inject some fine-tunable adaptation modules into PTMs 
+* solution is to inject some fine-tunable adaptation modules into PTMs
   while original parameters are fixed
 * shared BERT projected attention layers (PALs, Stickland and Murray [149])
   * PAL: small additional task-specific adaptation modules
@@ -384,7 +384,7 @@ arXiv:2003.08271 [cs.CL]
     with roughly 7 times fewer parameters
 * adapter modules to the pre-trained BERT (Houlsby+ [61])
   * Adapter modules yield a compact and extensible model
-  * they add only a few trainable parameters per task, and 
+  * they add only a few trainable parameters per task, and
     new tasks can be added without revisiting previous ones
 
 ### Others. Instead of fine-tuning all the layers simultaneously,
@@ -392,7 +392,7 @@ arXiv:2003.08271 [cs.CL]
 * gradual unfreezing [62] layers of PTMs starting from the top layer
 * Chronopoulou+ [19] proposed [the simpler] sequential unfreezing, which
   * first fine-tunes only the randomly-initialized task specific layers, and
-    then unfreezes the hidden layers of PTM, and 
+    then unfreezes the hidden layers of PTM, and
     finally unfreezes the embedding layer
 * Motivated by ensemble models, Xu+ [191]: self-ensemble and self-distillation
 
@@ -479,8 +479,8 @@ arXiv:2003.08271 [cs.CL]
     ABSA performance
   * Karimi+ [76] showed that the performance of post-trained BERT can be
     further improved via adversarial training
-  * Song+ [148] added an additional pooling module, which can be 
-    implemented as either LSTM or attention mechanism, 
+  * Song+ [148] added an additional pooling module, which can be
+    implemented as either LSTM or attention mechanism,
     to leverage BERT intermediate layers for ABSA
   * Li+ [97] jointly learned aspect detection and sentiment classification
     towards end-to-end ABSA
@@ -493,17 +493,17 @@ arXiv:2003.08271 [cs.CL]
 * Zhong+ [203] introduced transferable knowledge (e.g., BERT) for summarization
   * [203] Ming Zhong, Pengfei Liu, Danqing Wang, Xipeng Qiu, and Xuanjing Huang
     Searching for effective neural extractive summarization: What works and
-    ACL, pages 1049–1058, 2019.
+    ACL, pages 1049–1058, 2019
 * Zhang+ [198] tries to pre-trained a document-level model that predicts
   sentences instead of words, and then apply it on downstream tasks
-  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou.
+  * [198] Xingxing Zhang, Furu Wei, and Ming Zhou
     HIBERT: Document level pre-training of hierarchical bidirectional
-    ACL, pages 5059–5069, 2019.
+    ACL, pages 5059–5069, 2019
 * Zhang+ [197] designed a Gap Sentence Generation (GSG) task for pre-training,
   whose objective involves generating summary-like text from the input
-  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu.
+  * [197] Jingqing Zhang, Yao Zhao, Mohammad Saleh, and Peter J Liu
     PEGASUS: Pre-training with extracted gap-sentences for abstractive summariz
-    arXiv:1912.08777, 2019.
+    arXiv:1912.08777, 2019
 * BERTSUM Liu and Lapata [104] included a novel document-level encoder, and a
   general framework for both extractive and abstractive summarization
   * In the encoder frame, BERTSUM extends BERT by inserting multiple [CLS] toks
@@ -563,7 +563,7 @@ arXiv:2003.08271 [cs.CL]
 * explainable artificial intelligence (XAI) [4] has become a hotspot in general
 * attention interpretability is still controversial [66, 142]
 * adversarial examples with imperceptible perturbations
-  * Jin+ [71] successfully attacked the finetuned BERT 
+  * Jin+ [71] successfully attacked the finetuned BERT
     on text classification and textual entailment with adversarial examples
   * universal adversarial triggers (Wallace+ [175])
     [mislead models] when concatenated to any input

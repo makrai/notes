@@ -244,9 +244,9 @@ code is available at https://github.com/nlpyang/PreSumm
 ### Novel N-grams
 
 * Figure 3
-  * CNN/DailyMail dataset, the proportion of novel n-grams in automatically
-    generated summaries is much lower compared to reference summaries, but in
-  * XSum, this gap is much smaller
+  * in CNN/DailyMail dataset, the proportion of novel n-grams in automatically
+    generated summaries is much lower compared to reference summaries, but
+  * in XSum, this gap is much smaller
 * The supplementary material includes
   examples of system output and additional ablation studies
 

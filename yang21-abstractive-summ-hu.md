@@ -1,7 +1,7 @@
 Abstractive text summarization for Hungarian
-Yang, Zijian Győző and Agócs, Ádám and Kusper, Gábor and Váradi, Tamás
+Yang Zijian Győző, Agócs Ádám, Kusper Gábor, Váradi Tamás
 Annales Mathematicae et Informaticae, 53. (2021) pp. 299-316
-Selected papers of the 2020 Conference on Information Technology... Debrecen
+  Selected papers of the 2020 Conference on Information Technology... Debrecen
 Date Deposited: 	25 May 2021 10:13
 
 # Abstract
