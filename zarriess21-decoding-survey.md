@@ -44,8 +44,8 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * since the development neural NLG in 2015, i.e., papers that introduce
     particular decoding methods, that present analyses of decoding, or that
     report relevant experiments on decoding as part of a particular NLG system
-  * also includes papers published before the advent of neural NLG, 
-    * introducing foundational work on decoding methods that are 
+  * also includes papers published before the advent of neural NLG,
+    * introducing foundational work on decoding methods that are
       still widely used in neural NLG
 * We have compiled a list of papers on well-known NLG systems spanning the
   different NLG tasks just discussed and report their decoding method, even if
@@ -97,7 +97,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       is pre-trained using cross-entropy loss and used as the initial policy
       which is then fine-tuned with sequence-level training
     * Section 5.3 discusses further connections between decoding and RL-based
-* no built-in mechanism that defines the reconstruction of the sequence 
+* no built-in mechanism that defines the reconstruction of the sequence
   from the given word probabilities
   * Regardless of the choice of
     * architecture (e.g., recurrent or transformer models) and
@@ -111,7 +111,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 * the WaveNex?t architecture for text-to-speech synthesis by Oord+ [48]
 * Gu+ [49] proposed a model for non-autoregressive machine translation, with the
   aim of fully leveraging the performance advantage of the Transformer
-  during decoding and 
+  during decoding and
   avoid slow, potentially error-prone decoding mechanisms, such as beam search
 * The main idea of non-autoregressive modeling is that, at inference time, the
   model does not have to take into account dependencies
@@ -133,7 +133,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     variable in sequence generation
     * predict the next word and, based on the next word, the next position in a
       given partial sequence
-    * Since likelihood marginalized over generation orders is intractable, 
+    * Since likelihood marginalized over generation orders is intractable,
       they approximate the latent generation orders using beam search to explore
       the space of all permutations of the target sequence. In a similar vein,
   * Stern+ [52] develop the Insertion Transfomer which is trained to predict
@@ -205,7 +205,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     experiments with varying beam width and show that a reduction of the beam
     size to k = 3 greatly improves performances compared to k = 20
   * Karpathy and Fei-Fei [68] find that a larger beam size (k = 7)
-    * improves the quality of generated image descriptions but also 
+    * improves the quality of generated image descriptions but also
       leads to less novel descriptions being generated
 * The most comprehensive study of performance degradation caused by larger beam
   * Cohen and Beck [66], who investigated this effect
@@ -250,7 +250,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     * not directly relate their observations to Holtzman+ [71]’s observations
 * Holtzman+ [71] state that “natural language rarely remains in a high
   probability zone for multiple consecutive time steps, instead veering into
-  lower-probability but more informative tokens”, which 
+  lower-probability but more informative tokens”, which
   * seems to contradict the UID hypothesis
   * Section 6 comes back to this general issue
 
@@ -303,12 +303,12 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   who argues that MT systems should aim at producing a diverse set of candidates
   * in order to help users inspect and interact with the system in the case of
     * post-editing study where human participants are asked to correct the
-      output of an MT system and find that 
+      output of an MT system and find that
       editors benefit from diverse n-best list when the quality of the top
       translation is low
   * taken up in Vijayakumar+ [147] and Li+ [54] (see Section 4.2)
   * assessed straightforwardly by means of automatic evaluation metrics
-  * Ippolito+ [116]: a systematic comparison of different decoding methods 
+  * Ippolito+ [116]: a systematic comparison of different decoding methods
     in open-ended dialog generation and image captioning and
     * perplexity over the top 10 generation candidates for an input and the
     * Dist-k measure by Li+ [54], which is the total number of distinct k-grams
@@ -327,7 +327,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * most image captioning systems from the year 2018 or earlier achieved a low
     global diversity
 * BLEU can also be used to score the overlap between a set of model outputs,
-  either for a single input or an entire test set [130,149–151], where a 
+  either for a single input or an entire test set [130,149–151], where a
   lower self-BLEU or mBLEU would signal higher diversity
 * in open-ended or creative text generation task (see Section 4.4)
   * Zhang+ [148] aim at building a system that generates informative and diverse
@@ -342,54 +342,54 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 
 ## 4.2 methods that diversify beam search
 
-* candidates are often similar to each other, i.e., are expansions of the same
-  candidate from the previous step of beam search.
-* diverse beam search versions incorporate an additional method that 
-  scores similarities of candidates or groups beam histories to make sure that
-  future steps of beam search expand different, diverse histories.
-
-* A simple but well-known method for diverse beam search has been proposed by
-  Li+ [54]. They aim at generating diverse n-best lists using beam search. They
+* candidates are often similar to each other, i.e.,
+  expansions of the same candidate from the previous step of beam search
+* diverse beam search
+  scores similarities of candidates or groups beam histories
+  to make sure that future steps expand different, diverse histories
+* A simple but well-known method for diverse beam search is by Li+ [54]
+  * aim at generating diverse n-best lists using beam search
   * penalty that downranks candidates which have a sibling on the beam with a
     higher score, where a sibling is a candidate that is obtained by expanding
     the same hypothesis from the previous step of the search:
-* A similar heuristic is proposed for MT by Freitag and Al-Onaizan [63]: they
-  * threshold for the maximum number of sibling candidates that can enter the
-  * independently proposed and dubbed top-g capping in Ippolito+ [116], g
-    is the threshold for candidates that can enter the beam with the same hist
-* Vijayakumar+ [147] for image captioning: they 
+* A similar heuristic is proposed for MT by Freitag and Al-Onaizan [63]
+  * threshold for the maximum number of sibling candidates that can enter
+  * independently proposed and dubbed top-g capping in Ippolito+ [116]
+    * g: the threshold for candidates that can enter the beam with the same hist
+* Vijayakumar+ [147] for image captioning (hugginf `generate.diversity_penalty`)
   * Vijayakumar AK, Cogswell M, Selvaraju RR, Sun Q, Lee S, Crandall D, Batra D
     Diverse beam search: Decoding diverse solutions from neural sequence models
     arXiv 2016, arXiv:1610.02424
-  * partition the candidates on the beam into groups. When expanding a candidate
-    in a certain group, the scores (i.e., log probabilities) of each word are
-    augmented with a dissimilarity term. The dissimilarity measure that is found
-    to perform best empirically is hamming diversity which 
-    penalizes the selection of a token proportionally to the number of times it
-    was selected in previous groups.
+  * partition the candidates on the beam into groups
+    * When expanding a candidate in a certain group,
+      the scores (i.e., log probabilities) of each word are augmented with a
+      dissimilarity term
+    * The best dissimilarity measure is hamming diversity which
+      penalizes the selection of a token
+      proportionally to the number of times it was selected in previous groups
 * Kulikov+ [73] implement iterative beam search for neural conversation
-  * run beam search multiple times (with a fixed beam width k) and, for each
-    iteration, score each hypothesis for its dissimilarity to hypotheses found
-    in previous iterations.
-* Tam [155] goes one step further and introduces clustered beam search. Here,
+  * run beam search multiple times (with a fixed beam width k) and,
+    for each iteration, score each hypothesis
+    for its dissimilarity to hypotheses found in previous iterations
+* Tam [155] goes one step further and introduces clustered beam search
   * similarity between candidates is determined by K-means clustering of
     hypothesis embeddings. These clusters are then used as groups in [54,63],
     * only the top candidates from each cluster are selected for the next step
       of the search. This method is designed for generation in chatbots, where
-      standard neural generators often produce very short and generic responses.
+      standard neural generators often produce very short and generic responses
   * a further language model threshold during decoding, filtering responses
-    which have a language model score above a certain threshold. A similar idea
+    which have a language model score above a certain threshold
     * introduced independently for sentence simplification by Kriz+ [154], but
-      they cluster candidates post decoding and select the candidates nearest to
-      the cluster centroids
-* Ippolito+ [116] also experiment with post-decoding clustering (PDC) but select
-  candidates with the highest language model score from each cluster.
+      they cluster candidates post decoding and
+      select the candidates nearest to the cluster centroids
+* Ippolito+ [116] also experiment with post-decoding clustering (PDC) but
+  select candidates with the highest language model score from each cluster
 * generating longer texts, such as, e.g., image paragraphs faces the problem
-  * output texts tend to contain repetitions [120]. 
-  * Melas-Kyriazi+ [122] present a model that uses 
+  * output texts tend to contain repetitions [120]
+  * Melas-Kyriazi+ [122] present a model that uses
     self-critical sequence training to generate more diverse image paragraphs,
     * combined with a simple repetition penalty during decoding
-* Hotate+ [156]: diverse local beam search for grammatical error correction.
+* Hotate+ [156]: diverse local beam search for grammatical error correction
 
 ## 4.3 sampling-based methods
 
@@ -397,12 +397,12 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 * temperature sampling [157] that shapes the probability distribution with a
   temperature t and can be seen as a parameter of the softmax calculation [71]
   * often used with low temperatures, i.e., α < 1, as this skews the
-    distribution to the high probability events. A 
+    distribution to the high probability events. A
   * detailed evaluation of the effect of temperature on quality and diversity is
-    reported by Caccia+ [103]: they find the 
+    reported by Caccia+ [103]: they find the
     neural language models trained with a standard MLE objective outperform GANs
     in terms of the quality-diversity trade-off, and temperature can be used to
-    systematically balance this trade-off.
+    systematically balance this trade-off
 * nucleus [71] and top-k sampling [99] are well-known decoding diversity methods
   * sample from truncated language model distributions: In each decoding step, a
     set of most probable next tokens is determined, from which one item is then
@@ -410,21 +410,21 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * Top-k sampling always samples from a fixed number of k items
     * The sum of the probabilities of the top k items, p 0 is then used as a
       rescaling factor to calculate the probability of a word in the top-k
-    * at a given time step, p 0 can vary widely, as noticed by Holtzman+ [71].
+    * at a given time step, p 0 can vary widely, as noticed by Holtzman+ [71]
     * difficult to select a value for k that performs consistently for different
-      distribution shapes throughout a generation process.  
+      distribution shapes throughout a generation process
   * [71]’s nucleus sampling method: here, the decoding samples from the top-p
     portion of the accumulative probability mass, where p is a parameter that
-* In practice, top-k and nucleus in combination with temperature sampling.
+* In practice, top-k and nucleus in combination with temperature sampling
   * e.g. Holtzman width 10, top-k sampling (temp. 1.8)
 * sampling can be integrated with beam search and replace the typical likelihood
-  scoring. 
+  scoring
   * Caccia+ [103] call this procedure stochastic beam search: the width of the
     beam defines the number of words that are sampled for each hypothesis at
     each time step
   * Massarelli+ [158] propose a similar method, called delayed beam search,
     where the first L tokens of a sentence are generated via sampling, and the
-    rest of the sentence is continued via beam search.
+    rest of the sentence is continued via beam search
 
 ## 4.4 trade-off between quality (search) and diversity
 
@@ -436,50 +436,50 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * suggests that diversity-oriented decoding is used in practice, but is most
     widespread in “open” generation task, such as story generation or dialog,
     and in tasks where output longer than a single sentences needs to be
-    generated. Even the first neural papers mentioned the need 
+    generated. Even the first neural papers mentioned the need
   * In the case of story generation or paragraph generation, sampling is further
     combined with additional constraints aimed at avoiding repetitions in long
-    texts, such as, e.g., trigram blocking in Melas-Kyriazi+ [122].
+    texts, such as, e.g., trigram blocking in Melas-Kyriazi+ [122]
 * in MT systems in Table 2, there is not a single paper that uses
-  diversity-oriented decoding, and the same holds for data-to-text generation.
+  diversity-oriented decoding, and the same holds for data-to-text generation
 * In summarization, Radford+ [11]’s system uses top-k sampling, but their work
-  does not primarily aim at improving the SOTA in summarization. In 
+  does not primarily aim at improving the SOTA in summarization. In
 * image captioning and referring expression generation, two studies explicitly
   aim at understanding the impact of diversity-oriented decoding in these tasks
   [116,118], whereas other systems do not seem to generally adopt them. For
 * AMR-to-text generation, Mager+ [128] compare search-based decoding & sampling,
-  and find that the latter clearly decreases the performance of the system.
+  and find that the latter clearly decreases the performance of the system
 * One of the most exhaustive studies on diverse decoding is Ippolito+ [116]:
-  they compare 10 decoding methods, both searchand sampling-based, 
+  they compare 10 decoding methods, both searchand sampling-based,
   for the tasks of image captioning and dialog response generation. They propose
   * automatic measures for computing local diversity (in terms of entropy and
-    distinct n-grams, see Section 4.1) and 
+    distinct n-grams, see Section 4.1) and
     correlating them with human judgements of adequacy, fluency & interestingnss
   * trade-off between quality and diversity, i.e., decoding methods that
   * Using a sum-of-ranks score over different evaluation metrics, they establish
     * dialog: clustered beam search and standard beam search with a relatively
-      large beam width (k = 100) perform best for dialog generation. In 
+      large beam width (k = 100) perform best for dialog generation. In
     * image captioning, the sum-of-rank score favors random sampling with top-k
       sampling and PDC
     * referring expression generation: The same trade-off is observed and
-      analyzed by Panagiaris+ [118] 
+      analyzed by Panagiaris+ [118]
 * Another trade-off of sampling-based diversity-oriented decoding is discussed
   by Massarelli+ [158]: they investigate open text generation, where a large
   language models is tasked to continue a given textual prompt. They evaluate
   the verifiability of these freely generated texts against Wikipedia, with the
-  help of an automatic fact-checking system. They show that 
+  help of an automatic fact-checking system. They show that
   * sampling-based decoding decreases the repetitiveness of texts at the expense
     of verifiability, whereas beam search leads to more repetitive text that
     does, however, contain more facts that can be supported in automatic fact
-    checking.  
+    checking
 * most of the decoding methods discussed in this section are designed to
-  increase the local diversity of generation output. 
+  increase the local diversity of generation output
   * van Miltenburg+ [132] present a study that evaluates the global diversity of
     image captioning systems using available generated image descriptions. They
-  * not take into account possible effects of the systems’ decoding methods.
+  * not take into account possible effects of the systems’ decoding methods
   * Schüz+ [159] compare the global diversity of beam and greedy search, nucleus
     decoding, and further task-specific, pragmatically-motivated decoding
-    methods in discriminative image captioning; see Section 5.3.  
+    methods in discriminative image captioning; see Section 5.3
 
 ## 4.5 Summary
 
@@ -494,18 +494,18 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 * controlling and constraining the linguistic properties of neural NLG output
 * An overview of the different methods is shown in Table 5
 
-## 5.1 lexical constraints 
+## 5.1 lexical constraints
 
 * lexical constraints at the end of search
   * Kiddon+ [104] present a neural checklist model for long text generation,
     where a list of agenda items is given in the input
     * beam search and select the most probable candidate which mentions most
-      items from a given agenda. A similar “trick” is used 
+      items from a given agenda. A similar “trick” is used
   * in the data-to-text generation system by Puzikov and Gurevych [106], where
     * the candidate that mentions most attributes from the input representation
-      is selected from the beam .
-  * hE, not a convincing solution when 
-    lexical constraints are complex and span several words or when 
+      is selected from the beam
+  * hE, not a convincing solution when
+    lexical constraints are complex and span several words or when
     the corresponding words are assigned low probabilities by the LM
 * constrained beam search
   * Anderson+ [161] make such a case for image captioning and use lexical
@@ -514,18 +514,18 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       concepts and scenes that are not covered in the training data, whereas
     * constrained beam search, illustrated in Figure 2a, which guides the search
       to include members from given sets of words (external image labels, in their
-      case) during decoding. The main idea of the algorithm is that 
+      case) during decoding. The main idea of the algorithm is that
       * the set of constraints is represented as a finite-state machine, where
-        each state maintains its own beam of generation candidates.  
+        each state maintains its own beam of generation candidates
     * outperforms a competing system that uses similar knowledge to extend the
-      training data of the system.  
-    * MT is addressed in Hokamp and Liu [163], where 
+      training data of the system
+    * MT is addressed in Hokamp and Liu [163], where
       * lexical constraints are provided by users that post-edit the output of a
 * Hokamp and Liu [163]’s grid beam search is illustrated in Figure 2b and, in
   * also targets phrasal lexical constraints that span multiple words and
-    multi-token constraints where spans might be disconnected.  
-  * 3 operations for expanding a candidate on the beam: 
-    * open in a new hypothesis (add a word from the model’s distribution), 
+    multi-token constraints where spans might be disconnected
+  * 3 operations for expanding a candidate on the beam:
+    * open in a new hypothesis (add a word from the model’s distribution),
     * start a new constraint, and
     * continue a constraint
   * For each constraint, the algorithm allocates a separate beam B 0 B 1 ...B C
@@ -533,8 +533,8 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     algorithm returns the highest scoring candidate from B C , i.e., the
     sub-beam with hypotheses that meet all constraints. Their experiments show
   * useful for interactive post-editing and for modeling terminology in domain
-    adaptation.
-* Post and Vilar [164] note that 
+    adaptation
+* Post and Vilar [164] note that
   * both constrained beam search and grid beam search have a high complexity
     * grows linearly resp exponentially with the number of constraints.  They
   * a faster variant of grid beam search that has a global, fixed beam width and
@@ -542,18 +542,18 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     meeting a different number of constraints and being available at a given
   * prevents the model from generating the EOS symbol unless all constraints
     have been met in a given candidate.  In their analysis, Post and Vilar [164]
-  * “aversion to references”. They show that, 
+  * “aversion to references”. They show that,
     by increasing the beam width and including partial references (i.e.,
     constraints) during decoding, the model scores decrease, but the BLEU scores
-    increase, which is 
+    increase, which is
 * Baheti+ [97] propose a distributional approach to extend the decoding
-  * conversational responses in open chit-chat dialog.  They use an 
+  * conversational responses in open chit-chat dialog.  They use an
   * external topic model and an external embedding to extend the objective of
     standard beam search with two additional terms, scoring the topical and the
     semantic similarity of the source and response sentence.  Furthermore, they
     combine this objective with the diverse-decoding method by Li+ [54] and find
     that this combinations produces rich-in-content responses, according to
-    human evaluation.
+    human evaluation
 
 ## 5.2 constraints on the level of structure and form
 
@@ -561,21 +561,21 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * rhythmic patterns, rhyme patterns, or tonal patterns [165,167].  Compared to
     the rather local, lexical constraints discussed in Section 5.1, these
   * need to be consistent on multiple levels (e.g., rhyme and rhythm), and need
-    span the entire text. Nevertheless, the decoding 
+    span the entire text. Nevertheless, the decoding
   * techniques used in poetry generation systems are surprisingly similar to the
-    one already discussed in this survey. 
-* Zhang and Lapata [165] present a RNN approach for generating Chinese poetry.
-  * Their work focuses mostly on the neural model but mentions that 
+    one already discussed in this survey
+* Zhang and Lapata [165] present a RNN approach for generating Chinese poetry
+  * Their work focuses mostly on the neural model but mentions that
     the tonal constraints are incorporated at the decoding stage. In their
     decoder, the first line generated by the RNN determines the subsequent tonal
-    pattern, and the following lines that do not adhere to it are discarded.
+    pattern, and the following lines that do not adhere to it are discarded
 * Ghazvininejad+  [166] propose a similar framework for generating sonnets but
   focus more on the decoding stage: they construct a sophisticated finite-state
   automaton that represents the various formal constraints of sonnets and use
   the state of this FSA as additional information during beam search. Their beam
   search algorithm has a fixed width of 50, and they encounter the problem that
   this width is sometimes too narrow and does not contain words that adhere to
-  the required rhyme patterns. 
+  the required rhyme patterns
   * generate the sonnet in reverse, starting from the last rhymed word
 * Hopkins and Kiela [167] generalize this method and compare a neural model for
   poetry generation, that is trained on content and formed jointly, with a model
@@ -584,9 +584,9 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   form of the poem. They find that the model which incorporates formal
   constraints in a separate discriminative model generates more formulaic poetry
   (e.g., makes less formal errors) and also generates poems that are rated as
-  very human-like in a distinguishability experiment with users.  
+  very human-like in a distinguishability experiment with users
 * Balakrishnan+ [162] presenting an approach for constrained decoding for
-  generation in task-oriented dialog 
+  generation in task-oriented dialog
   (not to be confused with the constrained beam search by [161])
   * They tackle the often discussed issue of semantic errors or hallucinating
     such as the E2E challenge [7], that require the accurate linguistic
@@ -598,48 +598,48 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     representation and whether the phrase has already been included in the
     subtree in preceding timesteps
   * outputs are more grammatical and semantically correct as compared to
-    systems that do not incorporate these structural constraints.
+    systems that do not incorporate these structural constraints
 
 ## 5.3 pragmatic reasoning, Conversational Goals
 
-* e.g., neural image captioning systems. 
+* e.g., neural image captioning systems
   * While standard image captioning targets (more or less) neutral descriptions
-  * pragmatically informative captioning in 
+  * pragmatically informative captioning in
     * Andreas and Klein [168], Vedantam+ [170], and Cohn-Gordon+ [169]. These
-  * train a neural NLG on standard image description datasets and 
+  * train a neural NLG on standard image description datasets and
     decode this system, at testing time, to produce captions that discriminate
     target images from a given set of distractor images
   * evaluated primarily in terms of their pragmatic informativeness, i.e., using
     a “listener” model that resolves a generated caption to an image in the
     context of distractor images
   * setting is very similar to the well-known Referring Expression Generation
-    (REG) task [117,175,176], 
+    (REG) task [117,175,176],
     but the neural generation model is trained on context-agnostic data
 * RSA framework [177] models informativity at the semantics-pragmatics
   * how pragmatically informative utterances can be derived from from literal
-    semantics using Bayesian inference. 
+    semantics using Bayesian inference
   * Andreas and Klein [168] and Cohn-Gordon+ [169] have implemented RSA as a
     decoding strategy which integrates pragmatic factors into the iterative
     unrolling of recurrent generation models
   * rational speaker reasons about how an utterance would be understood by a
     listener, in order to assess whether the utterance allows the identification
-  * The speaker and listener are given a set of images W, out of which 
-    one image w ∗ ∈ W is known to the speaker as the target image.
+  * The speaker and listener are given a set of images W, out of which
+    one image w ∗ ∈ W is known to the speaker as the target image
   * rational speaker in RSA is based on a literal speaker, who produces initial
     utterance candidates
   * In the simplest case, the literal speaker assigns equal probability to all
     true utterances u ∈ U and zero probability to false utterances
   * The pragmatic listener L 0 then assesses the discriminative information of
-    these candidates, according to Cohn-Gordon+ [169]: 
+    these candidates, according to Cohn-Gordon+ [169]:
 * The Emitter-Suppressor method (henceforth ES) proposed by Vedantam+ [170]
 * Schüz+ [159] directly compared RSA and ES decoding and showed that both
 * Zarrieß and Schlangen [171] extend RSA-based reasoning to a zero-shot setting,
   where the speaker’s task is to refer to target object of an “unknown” category
-  that the literal speaker has not encountered during training. This 
+  that the literal speaker has not encountered during training. This
   * resembles the set-up described in Anderson+ [161], where the decoding
   * not widen the model’s vocabulary but aims at leveraging the training
-    vocabulary in efficient way for referring to unknown objects.
-* non-visual tasks have been explored: 
+    vocabulary in efficient way for referring to unknown objects
+* non-visual tasks have been explored:
   * Shen+ [172] implement a model for pragmatically informative text generation,
     comparing so-called reconstructor-based and distractor-based reasoning
     * reconstructor-based set-up, the listener predicts a distribution over all
@@ -647,10 +647,10 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       output
     * distractor-based reasoning scores distinguishes an input from a set of
       alternate, distractor inputs.  Shen+ [172]’s outperforms competitive
-    * without pragmatic decoding on the E2E dataset [178].  
+    * without pragmatic decoding on the E2E dataset [178]
   * Kim+ [173] implement pragmatic reasoning for decoding a neural dialog
-    response generator that 
-    aims at achieving so-called public self-consciousness: 
+    response generator that
+    aims at achieving so-called public self-consciousness:
     the literal speaker is trained to generate responses on the PersonaChat data
     * the listener models the identification of the speaker’s underlying persona
     * improves the consistency of the generated responses, i.e., the response
@@ -673,7 +673,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     model, Gu+ [174] combine the trainable decoder with the beam search
   * Zarrieß and Schlangen [70] test Chen+ [179]’s supervised approach in an REG
     experiment and combine it with greedy search to avoid the already discussed
-    deficiencies of beam search, while 
+    deficiencies of beam search, while
   * Gu+ [174] and Zarrieß and Schlangen [70] rely on BLEU as a reward for the
     decoder, other metrics and rewards might constitute more interesting options
     to optimize decoding for, e.g., conversational goals. For instance,
@@ -681,11 +681,11 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     rates RL and various decoding methods to balance the diversity and
     informativeness of referring expressions. Their approach suggests that
     * different objectives during generation might be achieved through a
-      combination of modeling and decoding techniques.
+      combination of modeling and decoding techniques
 
 # 6. Research Gaps and Future Directions
 
-* general themes and questions around neural NLG closely connected to decoding 
+* general themes and questions around neural NLG closely connected to decoding
 * decoding methods show important differences
   with respect to their objectives and underlying assumptions of the generation
 * challenges and open questions that are brought up by decoding, but concern
@@ -697,20 +697,20 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 * e.g. the end of sentence penalty in Klein+ [55]’s beam search implementation
   assumes that the length of the output text can be estimated from the length of
   the input text. Missing exploration and analysis of these and further
-* e.g. data-to-text generation, where there is much less structural similarity 
+* e.g. data-to-text generation, where there is much less structural similarity
 
 ## 6.2. The Status of Language Modeling in Neural Generation
 
 ## 6.3. Diversity, Effectiveness, and other Objectives in NLG
 
 * principles of intentional and goal-oriented language use in human interaction,
-  e.g., Grice [184] or Clark [185].
+  e.g., Grice [184] or Clark [185]
 * Gkatzia+ [186] formulate a multi-objective approach to generating summaries
-  that aims at fulfilling the needs of different user groups of generated text.
+  that aims at fulfilling the needs of different user groups of generated text
 
 ## 6.4. What to Model and How to Decode?
 
 * future work is to arrive at a more systematic understanding of the conceptual
-  division of labor between modeling and decoding in neural NLG, i.e., 
+  division of labor between modeling and decoding in neural NLG, i.e.,
   * which aspects of language generation should be taken care of in the model
     and which aspects should be handled in the decoding algorithm
