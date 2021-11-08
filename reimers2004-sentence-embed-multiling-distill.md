@@ -3,6 +3,8 @@ Nils Reimers, Iryna Gurevych
 arXiv:2004.09813 cs.CL
 
 https://github.com/UKPLab/sentence-transformers
+* While v1 model supports 15 languages, v2 supports 50+ languages
+  * hE, performance on the 15 languages are reported to be a bit lower in v2
 
 # Abstract
 
@@ -21,9 +23,9 @@ https://github.com/UKPLab/sentence-transformers
 
 # Introduction
 
-* Mapping sentences or short text paragraphs to a dense vector space, such that
+* Mapping sentences or short text paragraphs to a dense vector space
   * applications: information retrieval, clustering, automatic essay scoring,
-    and for semantic textual similarity
+    and semantic textual similarity
   * training data for other languages is scarce
 * We call this approach multilingual knowledge distillation learning
   * works for various language combinations as well as for multilingual setups
@@ -36,7 +38,7 @@ https://github.com/UKPLab/sentence-transformers
     (Chidambaram+ 2018; Yang+ 2019) 
     * trained in a multi-task setup on SNLI (Bowman+ 2015) and
       on >1B question-answer pairs from online forums and QA websites
-    * training obj: translation ranking. Given a translation pair (s i , t i )
+    * training obj: translation ranking. Given a translation pair
       and various alternative (incorrect) translations, identify the correct one
     * multi-task learning can suffer from catastrophic forgetting
       * balancing multiple tasks is not straight forward

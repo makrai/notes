@@ -10,7 +10,7 @@ ICLR 2021
 * no well-established consensus on how to evaluate these models
   * inconsistent benchmarking on a wide spectrum of tasks and datasets
 * This paper proposes a systematic and unified benchmark, Long Range Arena,
-  * ranging from 1K to 16K tokens, encompassing a 
+  * ranging from 1K to 16K tokens
   * wide range of data types and 
     modalities such as text, natural, synthetic images, and mathematical exprs
     * requiring similarity, structural, and visual-spatial reasoning
@@ -25,9 +25,9 @@ ICLR 2021
   * images (Tan & Bansal, 2019; Lu+ 2019) to
   * protein sequences (Rives+ 2019)
 * An overview of efficient Transformer models (‘xformers’): Tay+ (2020c)
-  Comparing the evaluation and experimental setup of many of these papers, we
+  Comparing the evaluation and experimental setup of many of these papers
   * no consensus on what makes an acceptable test bed for benchmarking
-    * large diversity in the types of tasks adopted— every single model is
+    * large diversity in the types of tasks adopted
   * the benchmarks used for evaluation are often arbitrarily chosen
     * little consideration to whether the task is suitable 
   * many papers tend to conflate the effectiveness of the inductive bias with
@@ -46,12 +46,12 @@ ICLR 2021
     * Performers (Choromanski+ 2020)
     * Synthesizers (Tay+ 2020a)
     * Linear Transformers (Katharopoulos+ 2020)
-    * BigBird (Zaheer+ 2020).  This is the most comprehensive and extensive
+    * BigBird (Zaheer+ 2020)
 * different types of data and conditions
   * e.g. sequences that are intrinsically hierarchical; spatial structure
 * extensive efficiency and memory usage analysis of these models
 
-# 2 LONG -R ANGE ARENA (LRA)
+# 2 LONG-RANGE ARENA (LRA)
 
 ## 2.1 DESIDERATA For creating the Long-Range Arena benchmark
 
@@ -76,15 +76,15 @@ ICLR 2021
 
 ## 2.2.1 LONG LIST OPS
 
-* hierarchically structured data in a long-context scenario. This benchmark
-* a longer variation of the standard ListOps task (Nangia & Bowman, 2018), which
-  was designed to investigate the parsing ability of neural models
-* operators MAX , MEAN , MEDIAN and SUM MOD that are enclosed by delimiters
+* hierarchically structured data in a long-context scenario
+* a longer variation of the standard ListOps task (Nangia & Bowman, 2018), 
+  * ListOps was designed to investigate the parsing ability of neural models
+* operators MAX, MEAN, MEDIAN, and SUM MOD that are enclosed by delimiters
   (brackets)
   * example (much shorter) sequence is as follows:
     INPUT: [MAX 4 3 [MIN 2 3 ] 1 0 [MEDIAN 1 5 8 9, 2]]
     OUTPUT: 5
-* In our task we use a version of ListOps of sequence lengths of up to 2K to
+* In our task we use a version of ListOps of sequence lengths of up to 2K
 * a ten-way classification task and is considerably challenging
 
 ## 2.2.2 BYTE LEVEL TEXT CLASSIFICATION
@@ -138,7 +138,7 @@ ICLR 2021
 * a single gray-scale channel where each pixel is represented in 8 bits
 * we use the CIFAR-10 dataset (Krizhevsky, 2009) for the image classification
 
-## 2.2.5 PATHFINDER (L ONG -R ANGE SPATIAL DEPENDENCY)
+## 2.2.5 PATHFINDER (LONG-RANGE SPATIAL DEPENDENCY)
 
 * The Pathfinder challenge (Linsley+ 2018; Kim+ 2020) was first introduced
   for learning long-range spatial dependencies
@@ -177,7 +177,7 @@ ICLR 2021
 
 ### Results on Memory Consumption
 
-## 3.5 OVERALL RESULTS : NO ONE - SIZE - FITS - ALL
+## 3.5 OVERALL RESULTS : NO ONE-SIZE-FITS-ALL
 
 * integrated across all five tasks, the best is the BigBird model
   * not extremely good on any individual task compared to other models
