@@ -2,7 +2,7 @@ The Curious Case of Neural Text Degeneration
 Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, Yejin Choi
 ICLR 2020 arXiv:1904.09751 [cs.CL]
 
-* counter-intuitive empirical observation is that even though
+* counter-intuitive empirical observation
   * the use of likelihood as training objective leads to high quality models for
     a broad range of language understanding tasks,
   * using likelihood as a decoding objective leads to text that is bland and
@@ -10,7 +10,7 @@ ICLR 2020 arXiv:1904.09751 [cs.CL]
 * we reveal
   * surprising distributional differences between human and machine text
   * decoding strategies alone can dramatically effect the quality
-  * Nucleus Sampling i.e. `top_p`, a simple but effective method to draw the
+  * Nucleus Sampling i.e. `top_p`, a simple but effective method
 
 # 1 Intro
 

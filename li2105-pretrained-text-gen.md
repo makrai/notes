@@ -2,25 +2,42 @@ Pretrained Language Models for Text Generation: A Survey
 Junyi Li, Tianyi Tang, Wayne Xin Zhao, Ji-Rong Wen
 IJCAI 2021 Survey Track arXiv:2105.10311 [cs.CL]
 
-* how to adapt existing PLMs to model different input data and 
-  satisfy special properties in the generated text. We further summarize
-* fine-tuning strategies for text generation. Finally, we present several
+* how to adapt existing PLMs to model different input data and
+  satisfy special properties in the generated text
+* fine-tuning strategies for text generation
 
 # 1 Introduction
 
 * Existing surveys in this area have only partially reviewed some related topics
-  * Zaib+ [2020] and Guan+ [2020]: dialogue systems and summarization, but did
+  * Zaib+ [2020] and Guan+ [2020]: dialogue systems and summarization
 
-# 2 general task definition and different text generation tasks
+# 2 General task definition and different text generation tasks
 
-# 3 mainstream architectures of PLMs that are used in text generation
+# 3 Architectures of PLMs that are used in text generation
 
 # 4 Modeling Different Data Types from Input
 
+## 4.1 Unstructured Input
+
+* Thus, Liu and Lapata [2019] and Zheng and Lapata [2019] employed PLMs (e.g.,
+* long document consisting of several sentences and paragraphs
+  * PLMs trained on sentences or short paragraphs are less capable of accurately
+    modeling long-range dependencies in a document. Considering this
+  * Zhang+ [2019b] and Xu+ [2020b] proposed hierarchical BERT to learn
+    interactions between sentences with self-attention for document encoding.
+  * for capturing inter-sentential relations, DiscoBERT [Xu+ 2020a] stacked
+    graph convolutional network (GCN) on top of BERT to model structural
+    discourse graphs. By directly operating on the discourse units, DiscoBERT
+    retains capacities to include more concepts or contexts, leading to more
+* multilingual text generation tasks.  Therefore,
+  * Conneau and Lample [2019] proposed to learn cross-lingual language models
+    (XLMs) for multilingual language understanding. Based on crosslingual PLMs,
+  * effective even in a low-resource language [Wada and Iwata, 2018]
+
 # 5 Satisfying Special Properties for Output Text
 
-# 6 fine-tuning strategies for text generation 4
+# 6 Fine-tuning strategies for text generation 4
 
 * we review several commonly-used fine-tuning strategies from different views
 
-# 7 future directions and conclusion
+# 7 Future directions and conclusion
