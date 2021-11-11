@@ -7,7 +7,7 @@ EMNLP 2020 arXiv:2010.07100 [cs.CL]
 * we re-evaluate the evaluation method for text summarization: assessing the
   reliability of automatic metrics using top-scoring system outputs, both
   abstractive and extractive, on recently popular datasets
-  for both system-level and summary-level evaluation settings. We find that
+  for both system-level and summary-level evaluation settings
 * conclusions about evaluation metrics on older datasets do not necessarily
   hold on modern datasets and systems
 

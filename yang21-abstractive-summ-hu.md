@@ -17,7 +17,8 @@ Date Deposited: 	25 May 2021 10:13
     * the Hungarian monolingual models outperformed the multilingual BERT model
     * ELECTRA small models achieved higher results than some of the BERT models
       * much fewer parameters and trained on only 1 GPU within a couple of days
-* the first [extractive and abstractive summarization] systems for Hungarian
+* the and extractive and the first abstractive summarization systems for
+  Hungarian
 
 # 2 Related work
 
@@ -65,7 +66,7 @@ Date Deposited: 	25 May 2021 10:13
 * abstractive samples in Table 7–10 (see Appendix)
   * When the article is long, all of our models extract phrases from the
     original article, then combine them to generate new sentences. It is similar
-    to extractive models, [just no] full sentences
+    to extractive models, [just not] full sentences
     * mostly grammatically correct. All the models generate several sentences,
       but by the end they “run out” and may leave sentence fragments
   * When the article is short, the models show their real abstractive feature,

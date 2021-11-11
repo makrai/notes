@@ -26,7 +26,7 @@ dataset, curation tool, and summarization model checkpoints
 
 # 1 Intro
 
-* Automatic text summarization (Nenkova and McKeown, 2011) is fundamental in NLP
+* Automatic text summarization (Nenkova and McKeown, 2011) is fundamental
   * Ani Nenkova and Kathleen McKeown
     Automatic summarization
     2011 Foundations and Trends® in Information Retrieval, 5(2–3):103–233
@@ -40,10 +40,10 @@ dataset, curation tool, and summarization model checkpoints
   * more coherent and concise than extractive summaries (Cohn and Lapata, 2008)
   * sequence-to-sequence (seq2seq) models and Transformer-based models have
     rejuvenated abs summ (Rush+ 2015; See+ 2017; Zhang+ 2020)
-* seq2seq models are heavily data-driven
-* multilingual abstractive summarization datasets (Giannakopoulos+ 2015; Cao+
-  2020; Scialom+ 2020), are limited in terms of the number of languages,
-  training samples, or both
+  * seq2seq models are heavily data-driven
+  * multilingual abstractive summarization datasets (Giannakopoulos+ 2015; Cao+
+    2020; Scialom+ 2020), are limited in terms of the number of languages,
+    training samples, or both
 * we introduce XL-Sum, a large-scale abstractive summarization dataset of news
   articles crawled from the British Broadcasting Corporation (BBC) website
   * Using a custom crawler, we collect 1 million professionally annotated
@@ -67,7 +67,7 @@ dataset, curation tool, and summarization model checkpoints
 
 * Pretrained language models applied to abstractive summarization
   * initialized the ~ of a seq2seq model
-    * Liu and Lapata (2019) initialized the encoder and with the pretrained BERT
+    * Liu and Lapata (2019) initialized the encoder with the pretrained BERT
     * Rothe+ (2020) initialized both the encoder and the decoder
   * Raffel+ (2020); Qi+ (2020) used fully pre-trained seq2seq models, while
   * Zhang+ (2020) introduced a summarization-specific pretraining objective to

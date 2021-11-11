@@ -336,7 +336,7 @@ https://github.com/recitalAI/MLSUM
       (+66% in terms of ROUGE-L, see Table 2)
       between a not pretrained (Pointer Gen) and a pretrained model (M-BERT)
 
-## 6.1 How abstractive are the models?
+j# 6.1 How abstractive are the models?
 
 * percentage of novel words in the summary in Figure 2
   * previous works reported (See+ 2017),
