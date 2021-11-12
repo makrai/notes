@@ -171,7 +171,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   symbol, whereas Algorithm 1 does not account for this case
 * Algorithm 1 includes a length normalization in the final selection step (last
   line), Algorithm 2 uses a generic scoring function which might include
-  normalization or not, Algorithm 3 does not consider length normalization, etc.
+  normalization or not, Algorithm 3 does not consider length normalization, etc
 
 ## 3.4 debate about strengths and weaknesses of beam search
 
@@ -190,7 +190,7 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     penalty, i.e., a scalar that is substracted from the log probability of the
     end token
 * Newman+ [59] compare two settings: models that are trained on sequences ending
-  in EOS (+EOS) and models trained on sequences without EOS (-EOS). They find
+  in EOS (+EOS) and models trained on sequences without EOS (-EOS)
   * -EOS models achieve better length generalization on synthetic datasets,
     i.e., these models are able to generate longer sequences than observed in
     the training set
