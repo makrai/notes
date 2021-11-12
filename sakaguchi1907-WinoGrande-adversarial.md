@@ -37,7 +37,7 @@ arXiv:1907.10641 [cs.CL]
 
 ## Enhancing Crowd Creativity Creating twin sentences
 
-* creativity from constraints (Stokes 2005) – a psychological notion which
+* creativity from constraints (Stokes 2005) – a psychological notion
 * crowd workers are primed by a randomly chosen topic as a suggestive context,
   while they are asked to follow precise guidelines on the structure
 
@@ -103,15 +103,15 @@ arXiv:1907.10641 [cs.CL]
 ## 3.1 WinoGrande V.S. the Original WSC
 
 * a few design choices that deviate from the original design guidelines of WSC
-  in order to scale up the dataset considerably while ensuring the hardness of
+  in order to scale up the dataset considerably while ensuring hardness
   * fill-in-the-blank problem where the blank corresponds to the mention of one
     of the two names in the context,
-    * following other recent WSC variants such as Trinh and Le (2018). 8 In
+    * following other recent WSC variants such as Trinh and Le (2018)
   * Second, while we originally collected all problems in twins,
     the final questions in the filtered WinoGrande debiased are not always twins
     because it is possible that AfLite filters out only one of the twin
     * about 1/3 of questions are not twins. We also release WinoGrande all
-  * crowdworkers. Thus, the language used in WinoGrande is more diverse and
+  * crowdworkers. Thus, the language used in WinoGrande is more diverse
 
 # 4 Experimental Results 5
 

@@ -4,15 +4,15 @@ AAAI 2017
 
 # Abstract
 
-* [ConceptNet]
-  * knowledge graph i.e. connects words and phrases with labeled edges. Its
+* ConceptNet
+  * knowledge graph i.e. connects words and phrases with labeled edges
   * collected from many sources that include expert created resources,
-    crowd-sourcing, and games with a purpose. It is
+    crowd-sourcing, and games with a purpose
   * designed to represent the general knowledge involved in understanding
     language, improving natural language
   * When ConceptNet is combined with word embeddings, it provides understanding
     that they would not acquire from distributional semantics alone, nor from
-    narrower resources such as WordNet or DBPedia. We demonstrate this with
+    narrower resources such as WordNet or DBPedia
 * SOTA results on
   * intrinsic evaluations of word relatedness
   * applications of word vectors, including solving SAT-style analogies
@@ -21,7 +21,7 @@ AAAI 2017
 
 * original release of ConceptNet (Liu and Singh 2004) was intended as
   * a parsed representation of Open Mind Common Sense (Singh 2002), a
-    crowd-sourced knowledge project. This paper describes the release of Con-
+    crowd-sourced knowledge project
 * 5.5: lexical and world knowledge from many different sources in many languages
 * ConceptNet represents relations between words such as:
   * A net is used for catching fish

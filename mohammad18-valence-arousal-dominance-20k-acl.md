@@ -50,7 +50,7 @@ ACL long 2018
   * use a comparative annotation technique called Best-Worst Scaling (BWS)
     (Louviere, 1991; Cohen, 2003; Louviere+ 2015)
   * The scores are fine-grained real-valued numbers in the interval 0 to 1
-  * the NRC Valence, Arousal, and Dominance (VAD) Lexicon. 2
+  * the NRC Valence, Arousal, and Dominance (VAD) Lexicon
 * Correlations (r) between repeated annotations, e.g.  split-half reliability
   * r = 0.95 for valence, r = 0.90 for arousal, and r = 0.91 for dominance
   * well above the SHR scores obtained by Warriner+ (2013)
@@ -132,7 +132,7 @@ ACL long 2018
 * All 1,061 terms listed in ANEW (Bradley and Lang, 1999)
 * All 13,915 terms listed in the Warriner+ (2013) lexicon
 * Roget’s Thesaurus categories corresponding to the eight basic Plutchik emos
-* Hashtag Emotion Corpus (HEC) (Mohammad, 2012)
+* Hashtag Emotion Corpus (HEC, Mohammad, 2012)
   * About 1000 high-frequency content terms, including emoticons
 
 # 4 Demographic Survey

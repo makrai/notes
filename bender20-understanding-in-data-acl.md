@@ -34,7 +34,7 @@ ACL 2020 Best Theme Paper
   * NLP experts speaking with the media are being appropriately careful
   * popular press gets it wrong, such as (6) from the B2C website
 
-> pattern recognition [is used] to better understand how human beings communicat
+> pattern recognition [is used] to better understand how human beings communicate
 
 * BERTology: what exactly it is about language that the large LMs implic repr
   * probing tasks (e.g. Adi+ 2017; Ettinger+ 2018) has been used to show that
@@ -70,7 +70,7 @@ ACL 2020 Best Theme Paper
   * _Open the window!_ or _When was Malala Yousafzai born?_, the communicative
     intent is grounded in the real world the speaker and listener inhabit
   * Communicative intents can also be about abstract worlds,
-    e.g.  bank accounts, computer file systems, or a purely hypothetical world
+    e.g. bank accounts, computer file systems, or a purely hypothetical world
 * conventional (or standing) meaning (Quine, 1960; Grice, 1968)
   * distinguished from communicative intent
   * what is constant across all of its possible contexts of use
@@ -83,11 +83,11 @@ ACL 2020 Best Theme Paper
   * Upon hearing e, the listener then reconstructs s and
     uses their own knowledge of the communicative situation and their hypotheses
     about the speaker’s state of mind and intention in an attempt to deduce i
-    * This active participation of the listener is crucial to human comm
+    * This active participation of the listener is crucial to human communicatn
       (Reddy, 1979; Clark, 1996)
     * humans are also willing to attribute communicative intent to a linguistic
-      signals even if the originator of the signal is not an entity that could
-      have intent
+      signals even if the originator of the signal is 
+      not an entity that could have intent
 * To summarize, as we strive to understand how tasks relate to human
   * distinguish cleanly between form, conventional meaning, and comm intent
   * not to confuse communicative intent with ground truth about the world
@@ -220,8 +220,8 @@ ACL 2020 Best Theme Paper
 
 # 8 On climbing the right hills. Reflections on progress and research effort 7
 
-* What about systems which are trained on a task that
-  e.g. semantic parsing, or reading comprehension tests — and that use word
+* What about systems which are trained on a task
+  e.g. semantic parsing, or reading comprehension tests
   * pretrained embeddings can boost the accuracy of the downstream system
     drastically, even for tasks that are clearly related to meaning
 * Our arguments do not apply to such scenarios:

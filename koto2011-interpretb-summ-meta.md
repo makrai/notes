@@ -146,16 +146,18 @@ Data and code can be accessed at https://github.com/fajri91/ffci
   * summaries evaluated via crowd-sourcing (Amazon MTurk) and expert (in-house)
     * ultimately base all of their findings on the expert annotations, as they
       found the crowd-sourced annotations to be highly inconsistent
-  * their annotation scheme is difficult for crowd-workers, as they are asked to
-    judge all four dimensions after reading an article and a system-generated
-    summary. Consistency (faithfulness) is found to be particularly difficult
-    (and subjective)
+  * their annotation scheme is difficult for crowd-workers, as 
+    they are asked to judge all four dimensions
+    after reading an article and a system-generated summary
+    * Consistency (faithfulness) is found to be particularly difficult 
+      (and subjective)
   * Maynez+ (2020) have attempted to ease the annotation burden by asking
     crowd-workers to highlight unfaithful spans in the summary
   * Assessing relevance without a ground-truth summary is also hard, as it
-    requires crowd-workers to implicitly construct their own summary of the
-    article. The second reason is that there is no quality control to verify the
-    quality of the annotations, which means they may be potentially unreliable
+    requires crowd-workers to implicitly construct their own summary 
+    * The second reason is that there is no quality control to verify the
+      quality of the annotations, which means they may be potentially
+      unreliable
 * we use
   * resource released by Maynez+ (2020) to study faithfulness, and use
   * the customized Direct Assessment framework (Graham+ 2015) to collect judgmnt

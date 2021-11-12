@@ -64,8 +64,8 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 * ConceptNet is generated automatically
   from the English sentences of the Open Mind Common Sense (OMCS) corpus
 * OMCS is [crowd sourced]
-  * 14 000 Web contributors who logged in to enter sentences in a
-  * fill-in-the-blank fashion
+  * 14 000 Web contributors who logged in to enter sentences
+  * fill-in-the-blank
     e.g. ‘The effect of eating food is ...’; ‘A knife is used for ...’
   * 700 000 English sentences
 

@@ -328,7 +328,7 @@ https://github.com/Yale-LILY/SummEval
 * summary evaluations of 16 recent neural summarization models solicited from
   crowd-source and expert judges
 * 100 articles randomly picked from the CNN/DailyMail test set
-  * each summary was scored by 5 crowd-source and 3 expert workers, amounting to
+  * each summary was scored by 5 crowd-source and 3 expert workers:
     12800 summary-level annotations
 * Model outputs were evaluated along the following four dimensions,
   as in Kryściński+ (2019a):

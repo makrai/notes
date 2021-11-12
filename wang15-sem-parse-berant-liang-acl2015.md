@@ -12,7 +12,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
       operators, and the canonical utterances are meant to capture the meaning
       of the logical forms (although clumsily). We then use
     * crowdsourcing to paraphrase these canonical utterances into natural
-      utterances. The
+      utterances
     * resulting data is used to train the semantic parser
   * We further study the role of compositionality in the resulting paraphrases
   * we test our methodology on seven domains and show that
@@ -45,7 +45,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
     that the utterances are understandable by a human?
   * In Section 3, we show how to choose appropriate canonical utterances to
     maximize alignment with the logical forms
-* sublexical compositionality—when a short
+* sublexical compositionality
   * lexical unit (“came after”) maps onto a multi-predicate logical form
     * we only need to crowdsource a small number of canonical utterances to
       learn about most of the language variability in the given domain

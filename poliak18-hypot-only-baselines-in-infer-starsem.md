@@ -4,7 +4,7 @@ naacl 2018
 
 # Abstract
 
-* [is] inference [a] relationship between a context and a hypothesis?
+* is inference a relationship between a context and a hypothesis?
 *  experiments on ten distinct NLI datasets
 * hypothesisonly model, significantly outperform a majorityclass baseline
 
@@ -23,7 +23,7 @@ naacl 2018
 
 # 2 Motivation
 
-* [further related work]
+* further related work
   * In the Story Cloze task (Mostafazadeh+ 2016, 2017)
     * a model is presented with a short four-sentence narrative and
       asked to complete it by choosing one of two suggested  sentences
@@ -41,7 +41,7 @@ naacl 2018
   EMNLP 2017
   Supervised learning of universal sentence representations
   from natural language inference data
-  * performed competitively with the bestscoring systems on [SNLI] while being
+  * performed competitively with the bestscoring systems on SNLI while being
     representative of the types of neural architectures commonly used for NLI
   * uses a BiLSTM encoder, and constructs a
     sentence representation by maxpooling over its hidden states
@@ -50,7 +50,7 @@ naacl 2018
 # 5 Datasets
 
 * ten NLI datasets and
-  categorize[d] into three distinct groups based [how] they were constructed
+  categorized into three distinct groups based how they were constructed
 
 ## Human elicited
 
@@ -73,7 +73,7 @@ naacl 2018
 * hypotheses and premises were automatically paired but labeled by a human,
 * datasets
   * Sentences Involving Compositional Knowledge (SICK) Marelli+ (2014)
-    * rules to expand or normalize premises to [make them]  more difficult
+    * rules to expand or normalize premises to make them  more difficult
   * Addone RTE
     * mixedgenre dataset
     * tests whether NLI systems can understand adjectivenoun compounds
@@ -108,8 +108,8 @@ naacl 2018
     * Using paraphrases from PPDB (Ganitkevitch+ 2013),
       Rastogi and Van Durme (2014) automatically replaced words with their PPs
       * Subsequently, Pavlick+ (2015) asked crowdsource workers to judge
-      how well a sentence with a paraphrase preserved the  meaning
-      * we [suppose that] notentailed examples
+        how well a sentence with a paraphrase preserved the meaning
+      * we suppose that not-entailed examples
         might not keep in the spirit of NLI
 
 # 5 Results
@@ -121,7 +121,7 @@ naacl 2018
   * outperforming the best reported results on one dataset, recast SPR
 * it is unclear whether the construction method is responsible
   * largest relative gains are on humanelicited models
-  * baseline performances of [other datasets] are noticeably larger
+  * baseline performances of other datasets are noticeably larger
   * by including multiple genres, an NLI dataset may contain less biases
 * On three of the five human judged datasets, the hypothesisonly model defaults
   to labeling each instance with the majority class tag. We find the same
@@ -134,13 +134,13 @@ naacl 2018
 ## Can Labels be Inferred from Single Words?
 
 * conditional probability of a label l given the word w
-* if P(l|w) is highly skewed across labels, there exists the [a] bias
+* if P(l|w) is highly skewed across labels, there exists the a bias
 * Figure 2
 * In DPR, a weaker effect
 
 ## What are “Give-away” Words?
 
-* instrument -> entailment, tall -> neural, sleeping, asleep, sleeps -> contrad
+* instrument -> entailment, tall -> neutral, sleeping, asleep, sleeps -> contrad
 
 ### Qualitative Examples
 
@@ -148,10 +148,10 @@ naacl 2018
   * three words refer to the act of sleeping
     * many contexts, which are sourced from Flickr, naturally deal with activities
     * crowdsource workers often do not generate contradictory hypotheses that
-    require fine grained semantic reasoning
+      require fine grained semantic reasoning
   * universal negation constitutes four
 * eliciting norming data are prone to repeated responses across subjects
-  (McRae+ 2005) (see discussion in §2 of (Zhang+ 2017))
+  (McRae+ 2005) (see discussion in §2 of Zhang+ (2017))
 
 ## 6.3 On the Role of Grammaticality
 
@@ -165,7 +165,7 @@ naacl 2018
 
 ## NLI’s resurgence
 
-* NLI, [in the mid-2000’s] commonly referred to as RTE
+* NLI, in the mid-2000’s commonly referred to as RTE
 * Bowman+ (2015) sparked a renewed interested in NLI,
   particularly among deep-learning researchers
 
