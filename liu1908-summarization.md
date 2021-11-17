@@ -170,7 +170,8 @@ code is available at https://github.com/nlpyang/PreSumm
     * Input documents were truncated to 512 tokens
 * Table 1
   * statistics on the three datasets
-  * proportion of novel bi-grams in gold summaries as a measure of their abstrac
+  * proportion of novel bi-grams in gold summaries 
+    as a measure of their abstractiveness
 * We would expect models with extractive biases to perform better on datasets
   with (mostly) extractive summaries, and abstractive models to perform more
   rewrite operations on datasets with abstractive summaries

@@ -17,7 +17,7 @@ arXiv:1910.13461 [cs.CL]
   * We evaluate many
   * best performance by both
     * randomly shuffling the order of the sentences and
-    * novel in-filling scheme: spans of text are replaced with a single mask tok
+    * novel in-filling scheme: spans of text replaced with a single mask token
 * particularly effective when fine tuned for text generation but also
   * works well for comprehension tasks
   * matches the performance of RoBERTa on GLUE and SQuAD

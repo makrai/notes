@@ -61,7 +61,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 # 2 Hallucinations in Summarization
 
 * Open-ended generation
-  * the task of generating text that forms a natural continuation from the input
+  * task: generating text that forms a natural continuation from the input
   * focus has been text that is more human-like
     * i.e., less repetitive or dull with more content-related words
     * Holtzman+ 2020; Welleck+ 2020; See+ 2019
@@ -94,11 +94,11 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 
 ## 2.2 Factual Hallucinations in Summarization
 
-* Factual hallucinations may be composed of intrinsic or extrinsic hallucination
+* Factual hallucinations may be composed of intrinsic or extrinsic hallucinaton
   * it is natural to construct summaries that integrate with the author’s
     background knowledge (van Dijk and Kintsch, 1978; Brown and Day, 1983)
-  * example is audience-targeted summarization where a good summary will reflect
-    understanding of both the article domain and the desired audience
+  * example is audience-targeted summarization where a good summary will
+    understand both the article domain and the desired audience
 * advanced pretrained text generators (Radford+ 2018, 2019; Dong+ 2019; Song+
   2019; Khandelwal+ 2019; Rothe+ 2020) are even better at capturing world knowl
   * e.g. the input document does not mention
@@ -244,9 +244,9 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
 
 ## 5.5 Model Selection with Entailment
 
-* Our study suggests that entailment could be used as a measure for faithfulness
+* Our study suggests that entailment could be used as a measure for faithfulnss
   * hE, we should point out that this measure is referenceless. Thus,
-    it can easily be gamed e.g. the first sentence is always entailed by the doc
+    it can easily be gamed e.g. the first sentence is always entailed
   * need to be coupled with ref-based measures like ROUGE
 * we can use it as a model selection objective or during decoding. We tested the
   * Specifically, we used entailment probability to select a summary between
@@ -254,10 +254,10 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   * indeed this is a strong metric to optimize towards if we want faithful summs
 * A further experiment is to train a model explicitly to predict faithfulness
   * we further fine-tuned the entailment model
-    using the ‘faithful’ annotations generated during our evaluation. For all
-  * indeed this slightly improves the ability to select faithful summaries from
-    * We expect to see larger gains with more training data.  However,
-    * this model is significantly better than ENTAILon ROUGE -based metrics and
+    using the ‘faithful’ annotations generated during our evaluation
+  * indeed this slightly improves the ability to select faithful summaries
+    * We expect to see larger gains with more training data
+    * this model is significantly better than ENTAILon ROUGE-based metrics and
       * a good balance between ROUGE and better faithfulness
 
 # 6 Related Work
@@ -276,7 +276,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
     faithful if it is precise in generating facts from the source text
   * we found that OpenIE-based measures are not suited for eval extreme summ
     * all models perform poorly on these metrics without any significant diffs
-* recent works (some concurrent) have explored NLI and question answering models
+* recent works (some concurrent) explored NLI and question answering models
   to detect factual consistency in generated text
   (Welleck+ 2019; Falke+ 2019; Kryscinski+ 2019b; Wang+ 2020)
   * Falke+ (2019) observed that the BERT-based NLI models substantially improved

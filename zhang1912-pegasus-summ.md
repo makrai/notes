@@ -1,11 +1,11 @@
-PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization
+PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarizaton
 Jingqing Zhang, Yao Zhao, Mohammad Saleh, Peter J. Liu
 ICML 2020 arXiv:1912.08777 [cs.CL]
 
 # Abstract
 
 * Recent work on pre-training Transformers with self-supervised objectives
-  * great success when fine-tuned on downstream NLP tasks including summarizaton
+  * great success when fine-tuned on downstream NLP tasks including summization
   * hE, no pre-training objectives for abstractive text summarization
   * lack of systematic evaluation across diverse domains
 * PEGASUS: we pre-train large Transformer-based encoder-decoder models on
@@ -13,8 +13,8 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
   * important sentences are removed/masked from an input document and are
     generated together as one output sequence from the remaining sentences,
     similar to an extractive summary
-* evaluated our best PEGASUS model on 12 downstream summarization tasks spanning
-  news, science, stories, instructions, emails, patents, and legislative bills
+* evaluated our best PEGASUS model on 12 downstream summarization tasks
+  * news, science, stories, instructions, emails, patents, & legislative bills
   * SOTA performance on all 12 downstream datasets measured by ROUGE scores
   * surprising performance on low-resource summarization,
     * surpassing previous SOTA results on 6 datasets with only 1000 examples
@@ -285,10 +285,11 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 
 ## 6.2 Larger Model Results 6
 
-* larger hidden size (H : 768 → 1024, F : 3072 → 4096, A : 12 → 16), number of
-  layers (L : 12 → 16) and traversed much more data, due to larger batch size (B
-  : 256 → 8192, same number of pre-training steps, 500k)
-* We adopted the best practices found in the PEGASUS BASE ablation studies using
+* larger hidden size (H: 768 → 1024, F: 3072 → 4096, A: 12 → 16), number of
+  layers (L: 12 → 16) and traversed much more data, due to larger batch size
+  (B: 256 → 8192, same number of pre-training steps, 500k)
+* We adopted the best practices found in the PEGASUS BASE ablation studies
+  using
   * GSG (Ind-Orig) pre-training objective without MLM and Unigram vocabulary
     size of 96k. In total, PEGASUS LARGE had 568M parameters
 * To encourage the model to copy

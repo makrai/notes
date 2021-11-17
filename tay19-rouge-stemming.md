@@ -65,11 +65,11 @@ ALTA 2019
 
 # 5 Discussion
 
-* suggestions for future studies for automatic evaluation in opinion summarisatn
+* suggestions for future studies for automatic evaluation in opinion summzation
   1. The configurations for ROUGE can change or reverse the order of scores
-    * F1 scores appear to compare summaries better than Recall. Also,
-    * “StopWordRemoval” seems to reduce the ability of ROUGE scores for
-    * “Stemming” often improve the ability to compare candidate summaries for
+    * F1 scores appear to compare summaries better than Recall
+    * “StopWordRemoval” seems to reduce the ability of ROUGE scores
+    * “Stemming” often improve the ability to compare candidate summaries
     * we recommend reporting the configurations under which ROUGE was computed
   2. ROUGE scores will be low when candidate summary is of a different aspect
      * in opinion summary evaluation, we recommend checking for a match of the

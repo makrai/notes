@@ -9,7 +9,7 @@ LREC 2020
 * single-document summarization has seen significant interest in the past few ys
 * ROUGE metric assumes its input to be written in English
 * we aim to address issues by introducing
-  * a summarization dataset of articles from a popular Slovak news site and
+  * a summarization dataset of articles from a popular Slovak news site
   * proposing small adaptation to the ROUGE metric that make it better suited
   * Several baselines are evaluated on the dataset, including an
     * extractive approach based on the Multilingual version of BERT
@@ -20,7 +20,7 @@ LREC 2020
 * evaluation metrics depend on English stemmers stop-words, and synonyms
 * we
   * document summarization dataset which consists of Slovak news stories
-    obtained from a prominent Slovak news website. To evaluate performance,
+    obtained from a prominent Slovak news website
   * a slightly altered version of the ROUGE metric (Lin and Hovy, 2003)
     * more realistic comparison by utilizing a Slovak stemmer
 * SME dataset is rather extractive and we therefore focus on extractive models
@@ -38,7 +38,7 @@ LREC 2020
 
 ## 2.1.  Neural Summarization Methods
 
-* extractive summarization as a sentence classification problem. One of the
+* extractive summarization as a sentence classification problem
   * SummaRuNNer (Nallapati+ 2017) which encoded the input document with a
     recurrent neural network.  Several other approaches within this paradigm
   * Refresh that is trained to globally optimize the ROUGE scores with
@@ -58,13 +58,13 @@ LREC 2020
 
 ## 2.2 Datasets
 
-* CNN/DailyMail (Hermann+15), NY Times (Durrett+16) and XSum (Narayan+18)
+* CNN/DailyMail (Hermann+ 15), NY Times (Durrett+ 16) and XSum (Narayan+ 18)
   contain tens of thousands of documents, they are well poised for neural
-* overview of document summarization corpora can be found in (Dernoncourt+ 2018)
+* overview of document summarization corpora (Dernoncourt+ 2018)
 * non-English text summarization, the most notable corpora are the MultiLing
   datasets which aim to assist in efforts to improve multilingual summarization
   * MultiLing 2015 dataset (Giannakopoulos+ 2015) contains documents in Arabic,
-    Chinese, Czech, English, French, Greek, Hebrew, Hindi, Romanian and Spanish,
+    Chinese, Czech, English, French, Greek, Hebrew, Hindi, Romanian and Spanish
   * MultiLing 2017 dataset (Giannakopoulos+ 2017) consists of documents written
     in 41 languages, including Slovak
   * small size which makes them impractical for use in combination with neural
@@ -99,8 +99,8 @@ LREC 2020
   * short one or two sentence abstract,
   * its actual text, the
   * news category (e.g. Home News, World News, Sport, Travel, Health, Tech, Bsn)
-  * Wayback URL that uniquely identifies it.  Based on the unique URL the
-* train/valid/test set in the 80%/10%/10% ratio.  Since the
+  * Wayback URL that uniquely identifies it
+* train/valid/test set in the 80%/10%/10% ratio
 * abstract follows the headline, we concatenated the two together --> summ
 * source document and the target summary tokenized using the BlingFire library
 * A comparison of this dataset with standard English summarization datasets
@@ -112,11 +112,11 @@ LREC 2020
     * hE, summary averages to two sentences, direct application is problematic
   * rich vocabulary which is most probably due to morphological richness
 * novel ngrams found in the gold (target) summary
-  * high number of novel unigrams in the dataset (about 32%) would suggest that
+  * high number of novel unigrams in the dataset (about 32%)
   * most probably caused by Slovak morphology as when stemming gets applied, the
     fraction of novel n-grams gets considerably lower (to about 27%)
-* two baseline extractive methods: Lead and Ext-Oracle . The Lead method
-  (Nenkova, 2005), which selects a couple of sentences from the beginning
+* two baseline extractive methods: Lead and Ext-Oracle. The Lead method
+  (Nenkova, 2005) selects a couple of sentences from the beginning
   * metrics for the English datasets from (Narayan+ 2018), in which the
     CNN, DailyMail, NY Times and XSum have had their Lead baseline created by
     extracting the first 3 sentences, first 4 sentences, first 100 words and the
@@ -136,14 +136,14 @@ LREC 2020
     while the last metric can be taken to represent fluency
 * issues with ROUGE applied to non-English texts: English-specific components,
 * Straka+ (2018) ditch the stemming part altogether, resulting in a
-  language-agnostic approach called ROU GE RAW 
+  language-agnostic approach called ROUGE RAW 
 * hE, In our experiments, this approach proved to be problematic
   * automatic evaluation reported zero score,
     even if the summary was in fact of high quality. The authors also note this
 * we: both the system and ref summaries are passed through a Slovak stemmer
   before the ROGUE score is computed
 * we update a Python implementation of the ROUGE score evaluation package
-  py-rouge 9 to work with a custom Python-based stemmer
+  py-rouge to work with a custom Python-based stemmer
 * Slovak stemming with the stemmsk package
   * adapts the Czech stemmer described in Dolamic and Savoy, (2009) and
   * we use the ”light” version throughout this study
@@ -154,5 +154,5 @@ LREC 2020
 * M-BERT better than the Lead baseline but the differences seem negligible –
 * Considering the values reported for the Ext-Oracle baseline, it is clear
   that the presented models leave a substantial room for improvement
-* the dataset may suffer from some of the issues described in (Kryściński+ 2019)
+* the dataset may suffer from some of the issues described in Kryściński+ (2019)
   * task under-constrained and too ambiguous to be solved with end-to-end models

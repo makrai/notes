@@ -275,7 +275,7 @@ https://github.com/Yale-LILY/SummEval
   build upon a Pointer Generator Network by adding an
   additional copy-less and attention-less decoder during training time
   to force the encoder to be more selective in encoding salient content
-* M16 SENECA (Sharma+ 2019) propose to use entity-aware content selection module
+* M16 SENECA (Sharma+ 2019) propose entity-aware content selection module
   and an abstractive generation module to generate the final summary
 * M17 T5 (Raffel+ 2019) perform a systematic study of transfer learning techs
   and apply their insights to a set of tasks all framed as text-input text-outpt
@@ -289,7 +289,7 @@ https://github.com/Yale-LILY/SummEval
     the best to direct fine-tuning in a reinforcement learning framework
 * M21 UniLM (Dong+ 2019): a model pretrained on three language modeling tasks:
   unidirectional, bidirectional, and sequence-to-sequence prediction
-  * applicable to NLU tasks and generation tasks such as abstractive summarizaton
+  * applicable to NLU tasks and generation tasks such as abstractive summzation
 * M22 BART (Lewis+ 2019): denoising autoencoder for pretraining seq to seq tasks
   * applicable to both NLU and generation tasks
 * M23 Pegasus (Zhang+ 2019a) introduce a model pretrained with a

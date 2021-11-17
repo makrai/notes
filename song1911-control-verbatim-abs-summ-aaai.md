@@ -115,7 +115,7 @@ implementation and models https://github.com/ucfnlp/control-over-copying
 * Our findings suggest that,
   the factor that makes the most impact on the copying behavior of a summarizer
   is the proportion of seen and unseen summary words used for training
-  * The 1-gram copy rate for case a.  is about 99% for both datasets, with the
+  * The 1-gram copy rate for case `a` is about 99% for both datasets, with the
     minor gap due to tokenization discrepancies. As more unseen words are used
     for training, the summarizer gradually transforms from copying only to both
     copying and generating new words not present in the source text
