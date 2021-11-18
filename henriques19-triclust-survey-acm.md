@@ -26,7 +26,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * periodic profiling of biological entities and clinical monitoring of indivs
   * multivariate time series (Amar+ 2015). Here, the analysis of
     gene-sample-time expression data, compound-sample-time concentration data,
-    and patient-record-time data (as well as ... residues-position-time protein
+    and patient-record-time data (as well as residues-position-time protein
     data, entity-entity-time interaction data, and drug-gene-dose expression)
   * underlying disease progression, development, and responses to stimuli,
     drugs, or therapy (Tchagang+ 2012; Bhar+ 2015; Heylen+ 2016)
@@ -47,7 +47,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
     correlated on a specific subset of conditions/records and time points
 * biclustering (Madeira and Oliveira 2004)
 * triclustering (Zhao and Zaki 2005), real-valued or symbolic
-  * aims to discover ... triclusters
+  * aims to discover triclusters
     * satisfying certain homogeneity and statistical significance criteria
   * applied to unravel putative regulatory modules, disease patterns,
     communities with shared behavior, or profitable financial profiles
@@ -60,9 +60,9 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   2. Homogeneity: coherence criteria
     * in accordance with the target problem and desirable outputs
       (Gutiérrez-Avilés and Rubio-Escudero 2014b)
-    * agreement ... has not yet been reached (Amar+ 2015)
+    * agreement has not yet been reached (Amar+ 2015)
   3. Avoidance of biases: triclustering should
-    * prevent ... dimension dominance (biases toward one or more dimensions)
+    * prevent dimension dominance (biases toward one or more dimensions)
     * guarantee coherence between objects from each pair of dimensions
       (Mahanta+ 2011)
   4. Robustness [to] varying types (and degrees) of
@@ -90,8 +90,8 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * contributions:
   * Formalization of the triclustering task and its major properties
   * Comparison of triclustering against peer tasks for multidimensional data
-  * Taxonomy (for a structured and critical assessment of ... contributions)
-  * Principles to support the design and unbiased evaluation of ... algorithms
+  * Taxonomy (for a structured and critical assessment of contributions)
+  * Principles to support the design and unbiased evaluation of algorithms
   * Comparison of the state-of-the-art triclustering algorithms
   * Overview of real-world applications, [with insights to their] potential
 
@@ -126,7 +126,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 
 ## 2.1 Merit Functions
 
-* [The homogeneity, statistical significance and] dissimilarity criteria ...
+* [The homogeneity, statistical significance and] dissimilarity criteria
   are essentially defined by the selected merit functions and how they are
   applied
 * e.g. variance of values in a tricluster is an illustrative merit function,
@@ -195,7 +195,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 Variants of the triclustering task can be found in the literature, including
   1. handle deviant observations, specify alternative criteria of interest, or
   1. peer tasks, such as coclustering or motif discovery, or alternative tasks
-  1. generalized formulations to identify subspaces within N -dimensional data
+  1. generalized formulations to identify subspaces within N-dimensional data
 * triclustering should not be confused with the peer clustering tasks for the
   unsupervised analysis of 3D data, such as coclustering or motif discovery.
   * coclustering 3D data aims to partition each dimension
@@ -230,7 +230,7 @@ Variants of the triclustering task can be found in the literature, including
 
 # 5 Algorithms 19
 
-triclustering algorithms ... can be divided according to
+triclustering algorithms can be divided according to
   * iterative searches (greedy; Section 5.1) or on
     distribution parameter identification (stochastic; Section 5.2) and
   * whether they are able to offer guarantees of optimality (exhaustive;
