@@ -6,7 +6,7 @@ LREC 2020
 
 # Abstract
 
-* single-document summarization has seen significant interest in the past few ys
+* single-document summarization: significant interest in the past few years
 * ROUGE metric assumes its input to be written in English
 * we aim to address issues by introducing
   * a summarization dataset of articles from a popular Slovak news site
@@ -17,7 +17,7 @@ LREC 2020
 # 1 Intro
 
 * neural networks require training corpora on the order of thousands of docs
-* evaluation metrics depend on English stemmers stop-words, and synonyms
+* evaluation metrics depend on English stemmers, stop-words, and synonyms
 * we
   * document summarization dataset which consists of Slovak news stories
     obtained from a prominent Slovak news website
@@ -26,7 +26,7 @@ LREC 2020
 * SME dataset is rather extractive and we therefore focus on extractive models
 * We evaluate various baselines as well as supervised and unsupervised extracton
 
-# Related Work
+# 2 Related Work
 
 * Luhn, (1958) attempting to create an ”auto-abstract” of technical papers and
   magazine articles by extracting the sentences with highest significance
@@ -36,7 +36,7 @@ LREC 2020
   * TextRank which utilizes PageRank to identify sentences of importance
     (Mihalcea and Tarau, 2004)
 
-## 2.1.  Neural Summarization Methods
+## 2.1. Neural Summarization Methods
 
 * extractive summarization as a sentence classification problem
   * SummaRuNNer (Nallapati+ 2017) which encoded the input document with a
@@ -87,7 +87,7 @@ LREC 2020
 
 * news articles from the web version of a prominent Slovak newspaper SME,
   * at the time of writing, the second most popular news website in Slovakia
-* Following the methodology suggested in (Hermann+ 2015),
+* Following the methodology suggested in Hermann+ (2015),
   * Hermann KM; Kocisky T; Grefenstette E; Espeholt L; Kay W; Suleyman M;
       Blunsom P (2015)
     Teaching machines to read and comprehend
@@ -113,10 +113,10 @@ LREC 2020
   * rich vocabulary which is most probably due to morphological richness
 * novel ngrams found in the gold (target) summary
   * high number of novel unigrams in the dataset (about 32%)
-  * most probably caused by Slovak morphology as when stemming gets applied, the
-    fraction of novel n-grams gets considerably lower (to about 27%)
-* two baseline extractive methods: Lead and Ext-Oracle. The Lead method
-  (Nenkova, 2005) selects a couple of sentences from the beginning
+  * most probably caused by Slovak morphology as when stemming gets applied,
+    the fraction of novel n-grams gets considerably lower (to about 27%)
+* two baseline extractive methods: Lead and Ext-Oracle
+  * `Lead` (Nenkova, 2005) selects a couple of sentences from the beginning
   * metrics for the English datasets from (Narayan+ 2018), in which the
     CNN, DailyMail, NY Times and XSum have had their Lead baseline created by
     extracting the first 3 sentences, first 4 sentences, first 100 words and the

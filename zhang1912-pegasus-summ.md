@@ -151,14 +151,15 @@ single sentence fragment was randomly selected
 * Gap sentences ratio, or GSR, refers to the number of selected gap sentences to
   the total number of sentences in the document, which is
   * similar to mask rate in other works
-* 3 primary strategies for selecting m gap sentences without replacement from a
-  * Random: Uniformly select m sentences at random
-  * Lead: Select the first m sentences
-  * Principal: Select top-m scored sentences according to importance
+* 3 primary strategies for selecting `m` gap sentences 
+  without replacement from a
+  * Random: Uniformly select `m` sentences at random
+  * Lead: Select the first `m` sentences
+  * Principal: Select top-`m` scored sentences according to importance
     * As a proxy for importance we compute ROUGE1-F1 (Lin, 2004) between the
       sentence and the rest of the document, s i = rouge(x i , D \ {x i }), ∀i
     * sentences are scored
-      * independently (Ind) and the top m selected OR
+      * independently (Ind) and the top `m` selected OR
       * sequentially (Seq) as in Nallapati+ (2017) by 
         greedily maximizing the ROUGE1-F1 between selected and remaining sents
     * When calculating ROUGE1-F1, we also consider n-grams
@@ -367,7 +368,7 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 ## 6.5 Test-set Overlap with Pre-training Corpus 9
 
 * we calculated similarities between all pairs of downstream test set targets
-  and pre-training documents. We use the 
+  and pre-training documents
   * ROUGE-2 recall as a similarity measure 
     (common 2-grams / test set targets 2-grams): necessarily exact match
   * XSum has significant amount of overlap 15% to 20%, and

@@ -10,7 +10,7 @@ Coginfocom 2018
     Convolutional Neural Network (CNN). CNNs are known to be useful as
   * hybrid solution when the punctuation marks are jointly determined based on
     character~ and on word-level features, and demonstrate significant
-  * evaluation ... on a Hungarian Broadcast Dataset and on the IWSLT English ds
+  * evaluation on a Hungarian Broadcast Dataset and on the IWSLT English ds
 
 # INTRODUCTION
 
@@ -21,7 +21,7 @@ Coginfocom 2018
 * character-level sequential information is
   * motivated mostly by the idea to
     * data sparsity problems often met at the word-level, or to
-    * model phenomena at a deeper level to better understand the ...  factors
+    * model phenomena at a deeper level to better understand the  factors
     * light-weight models. As explained in earlier work, punctuation is
   * successfully used in several Natural Language Processing (NLP) tasks
     * distinguishing between similar languages or dialects [5]
@@ -32,7 +32,7 @@ Coginfocom 2018
     * [9] for NER
     * [10] for text classification, [11] for neural machine translation
     * [12] for sentiment analysis
-  * neural network models has been shown to outperform ... CRF or MaxEnt [1]
+  * neural network models has been shown to outperform CRF or MaxEnt [1]
   * Whether human cognition also exploits [character-level] features in
     * humans start from higher levels – such as situational context [14], but,
     * rely on very basic low-level features in cognitive tasks [15].  The
@@ -42,7 +42,7 @@ Coginfocom 2018
 
 ## A. The Hungarian Broadcast Dataset
 
-* punctuation marks ... in- clude commas, periods, question marks and exclamat
+* punctuation marks in- clude commas, periods, question marks and exclamat
 
 # III word-level, character-level, and hybrid punctuation restoration models
 
