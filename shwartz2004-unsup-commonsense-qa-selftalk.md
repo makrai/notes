@@ -2,27 +2,29 @@ Unsupervised Commonsense Question Answering with Self-Talk
 Vered Shwartz, Peter West, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
 EMNLP 2020 arXiv:2004.05483 [cs.CL]
 
-* Natural language understanding involves reading with implicit background knowl
+# Abstract
+
+* NLU involves reading with implicit background knowledge
 * Current systems either rely on
   * pre-trained language models as the sole implicit source of world knowledge,
   * external knowledge bases (KBs) to incorporate additional relevant knowledge
-* We propose an unsupervised framework based on self-talk as a novel alternative
-  to multiple-choice commonsense tasks
+* We propose an unsupervised framework based on self-talk
+  as a novel alternative to multiple-choice commonsense tasks
 * Inspired by inquiry-based discovery learning (Bruner, 1961),
 * our approach inquires language models with a number of information seeking qs
-  e.g. "what is the definition of ..." to discover additional background knowl
+  * e.g. "what is the definition of ..." to discover additional backg knowledge
 * Empirical results demonstrate that the self-talk procedure
-  * substantially improves the performance of zero-shot language model baselines
+  * substantially improves the performance of zero-shot LM baselines
     on four out of six commonsense benchmarks, and
   * competes with models that obtain knowledge from external KBs
-  * hE, the self-talk induced knowledge even when leading to correct answers is
+  * hE, the self-talk induced knowledge, even when leading to correct answers,
     not always seen as useful by human judges
-    * raising interesting questions about the inner-workings of pre-trained
-      language models for commonsense reasoning
+    * raising interesting questions about the inner-workings of pre-trained LMs
+      commonsense reasoning
 
 # 1 Intro
 
-* relying on implicit background knowledge is ubiquitous across NLU tasks such
+* relying on implicit background knowledge is ubiquitous across NLU tasks e,g,
   * reading comprehension (Hirschman+ 1999) and
   * recognizing textual entailment (Dagan+ 2013), and even more so in
   * tasks dedicated to commonsense reasoning
@@ -43,71 +45,72 @@ EMNLP 2020 arXiv:2004.05483 [cs.CL]
       (“birds cannot fly”; Kassner and Schütze, 2019)
     * excel in predicting the semantic category of a missing word, but might
       predict the wrong instance in that category
-      (e.g., depending on the phrasing, BERT sometimes predicts red as the color
-      of a dove)
+      (e.g., depending on the phrasing, BERT sometimes predicts
+      red as the color of a dove)
   * limited reasoning capabilities: it is unclear that LMs are capable of
     performing multiple reasoning steps involving implicit knowledge
-* To increase the coverage of high-precision world knowledge and facilitate
-  multi-hop reasoning by making intermediate reasoning steps explicit,
+* To increase the coverage of high-precision world knowledge and
+  facilitate multi-hop reasoning by making intermed  reasoning steps explicit,
   prior work incorporated
   * KBs (e.g. ConceptNet; Speer and Havasi, 2012) and
   * knowledge-informed models (Xia+ 2019; Bosselut and Choi, 2019; Chen+ 2019)
-* we study pre-trained LMs as an alternative to external KBs
-  in providing knowledge to commonsense question answering tasks. We propose
+* we
+  * study pre-trained LMs as an alternative to external KBs
+    in providing knowledge to commonsense question answering tasks
   * an unsupervised model that uses an LM as the answer scorer, and
-  * a (possibly different) LM as a knowledge source. We formulate the
-  * process of obtaining relevant knowledge as a self-talk, inquirybased
+  * a (possibly different) LM as a knowledge source
+  * process of obtaining relevant knowledge as a self-talk, inquiry-based
 * steps:
-  * generating natural-language “clarification questions” conditioned on context
-  * generating their corresponding answers (“clarifications”), and
-  * incorporating the clarifications as additional context
-* no additional supervision. Yet, we show that
+  * generate natural-language “clarification questions” conditioned on context
+  * generate their corresponding answers (“clarifications”), and
+  * incorporate the clarifications as additional context
+* no additional supervision
 * on 4 out of 6 tasks it substantially improves upon a zero-shot baseline that
   relies on LM score alone and
-* performs on par, and sometimes better than, models that use external knowl scr
+* on par, and sometimes better than, models that use external knowledge source
 * even among the clarifications that helped the prediction, humans perceived
-  many as unhelpful or even incorrect, demonstrating that LM-based models often
-  solve problems correctly for seemingly incorrect reasons. Our results call for
-  future research on robust and correct knowledge integration to LM-based QA
+  many as unhelpful or even incorrect, demonstrating that
+  LM-based models often solve problems correctly for seemingly incorrect reason
 
 ## 5.1 Useful Clarifications
 
-We define a clarification as useful if
+* We define a clarification as useful if
   * it is the clarification with the best LM score in its instance (i.e., the
     clarification used in practice); and
   * the instance was incorrectly predicted by the zero-shot baseline but
     correctly predicted by the self-talk model
-* mwthod
-  * we sampled up to 50 useful clarifications for each combination of task and
-    knowledge source, using the best performing LM (See Table 3 in the appendix
-    for examples)
+* method
+  * we sampled up to 50 useful clarifications
+    for each combination of task and knowledge source,
+    using the best performing LM (See Table 3 in the appendix for examples)
   * We showed crowd-sourcing workers an instance along with a clarif Q & A and
     asked them:
-    * whether the question is grammatical, not entirely grammatical but
-      understandable, or completely not understandable; and if the answer was
-      anything but “completely not understandable”,
-    * whether the question is relevant, i.e.  on topic with the instance.  We
-      asked the same questions about the answer, in addition to:
+    * whether the
+      * question is grammatical, not entirely grammatical but understandable,
+        or completely not understandable; and if the
+      * answer was anything but “completely not understandable”,
+    * whether the question is relevant, i.e. on topic with the instance
+    * the same questions about the answer
     * whether the answer is factually correct or likely true; and
     * whether the answer adds helpful information to solve the instance
 * Fleiss Kappa κ = 0.43 (Landis and Koch, 1977)
 * across tasks and resources, most clarifications are grammatical or at least
   understandable
-  * Among the clarifications considered grammatical or understandable, the right
+  * Among the clarifications considered grammatical or understandable
   * Most clarifications were considered relevant to the context and correct, but
-    only 40% on average were considered helpful. Considering that
-  * these are all clarifications that indeed helped the model, this is an
+    only 40% on average were considered helpful
+  * these are all clarifications that indeed helped the model
   * not completely unexpected finding: the model utilizes knowledge that humans
     wouldn’t consider as helpful
 * Breaking down by knowledge source, the ratio of clarifications
   * XLNet performs worse on all measures
   * ConceptNet’s clarifications are often judged as irrelevant likely because
-    * limited to a very specific type of clarification (the relationship between
-      a pair of terms)
+    * limited to a very specific type of clarification
+      (the relationship between a pair of terms)
   * It’s not too surprising that clarifications generated by LMs were sometimes
-    judged as factually incorrect. We also note that
-  * COMeT generated factually correct clarifications for Social IQa (which is
-    based on ATOMIC, on which COMeT was trained), and
+    judged as factually incorrect
+  * COMeT generated factually correct clarifications for Social IQa
+    (which is based on ATOMIC, on which COMeT was trained), and
   * ConceptNet generated factually correct clarifications for Common-SenseQA
     (which is based on ConceptNet)
   * pre-trained LMs do particularly well in definitions
@@ -123,10 +126,10 @@ We define a clarification as useful if
   * e.g. “Dante was born in [MASK]” assigns the highest probability to Rome
 * Davison+ (2019) similarly showed that BERT assigns higher scores to natural
   language fragments of true rather than fictitious ConceptNet triplets, and
-  semi-automated the template creation by using GPT2 to score hand-crafted
-  templates.  While both works have shown somewhat promising results,
+  semi-automated the template creation
+  by using GPT2 to score hand-crafted templates
 * hE
   * Kassner and Schütze (2019) showed that negated facts are also considered
     likely by the LM, while
-  * Logan+ (2019) pointed out that LMs may over-generalize and produce incorrect
-    facts such as “Barack Obama’s wife is Hillary”
+  * Logan+ (2019) pointed out that LMs may over-generalize and produce
+    incorrect facts such as “Barack Obama’s wife is Hillary”

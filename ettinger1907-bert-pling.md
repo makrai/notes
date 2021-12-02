@@ -71,8 +71,9 @@ https://github.com/aetting/lm-diagnostics
     (Linzen+ 2016; Gulordava+ 2018; Marvin and Linzen, 2018; Wilcox+ 2018;
     Chowdhury and Zamparelli, 2018; Futrell+ 2019)
     * typically draw conclusions based on LMs’ output probabilities
-* examined the internal dynamics underlying LMs’ capturing of syntactic info,
-  * in different components of the LM and at different timesteps within the sent
+* internal dynamics underlying LMs’ capturing of syntactic info,
+  * in different components of the LM and 
+    at different timesteps within the sentence
     (Giulianelli+ 2018)
   * individual units (Lakretz+ 2019)
   * semantic phenomena like negative polarity items are tested in some studies
@@ -166,8 +167,8 @@ https://github.com/aetting/lm-diagnostics
 ## 5.1 CPRAG-102: commonsense and pragmatic inference
 
 * tests sensitivity to differences within semantic category
-> He complained that after she kissed him, he couldn’t get the red color off his
-> face. He finally just asked her to stop wearing that (lipstick/mascara)
+> He complained that after she kissed him, he couldn’t get the red color off
+> his face. He finally just asked her to stop wearing that (lipstick/mascara)
 * Federmeier and Kutas (1999) tested how brains would respond to different types
   of context completions
 
@@ -184,7 +185,7 @@ https://github.com/aetting/lm-diagnostics
     * commonsense inference rather than coreference
   * avg Human cloze probabilities for expected completions is .74
 
-### Sensitivity test The Federmeier and Kutas (1999) study found that
+### Sensitivity test. The Federmeier and Kutas (1999) study found that
 
 * inappropriate completions (e.g., mascara, bracelet) had
   * cloze probabilities of virtually zero (average cloze .004 and .001, resp),

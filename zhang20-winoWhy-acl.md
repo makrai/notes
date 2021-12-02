@@ -1,4 +1,4 @@
-WinoWhy: A Deep Diagnosis of Essential Commonsense Knowledge for Answering Winog
+WinoWhy: A Deep Diagnosis of Essential Commonsense Knowledge for Answering Wino
 Hongming Zhang, Xinran Zhao, Yangqiu Song
 ACL 2020
 
@@ -21,17 +21,17 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 * new task called WinoWhy, which
   * requires models to distinguish very similar plausible/wrong reasons
   * pre-trained language representation models are still struggling at WinoWhy
-  * Further experiments show that even though supervised models can achieve
-    better performance, the performance of these models can be sensitive to the
+  * Further experiments show that even though supervised models achieve better
+    performance, the performance of these models can be sensitive to things
 
 # 1 Introduction
 
 * Commonsense reasoning has attracted much attention in the NLP community
   (Levesque+ 2012; Zhou+ 2018; Ostermann+ 2018; Talmor+ 2019)
-* Winograd Schema Challenge (WSC, Levesque+ 2012), which is a hard pronoun coref
+* Winograd Schema Challenge (WSC, Levesque+ 2012) is a hard pronoun coref task
   * commonly used features (e.g., gender, plurality, and co-occurrence freq) do
     not have any effect
-  * Humans can solve these questions because of their shared commonsense knowled
+  * Humans can solve these questions because of their shared commonsense knowl
   * e.g. because
     ‘hungry’ is a common property of something eating things while
     ‘tasty’ is a common property of something being eaten
@@ -40,7 +40,7 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
   * search engines (Emami+ 2018) to solve the WSC task
   * pretrained language repr models (Kocijan+ 2019; Radford+ 2019; Liu+ 2019)
   * hE, not clear about why they can do better and how to further improve them
-* we present the first deep diagnosis of essential commonsense knowledge for WSC
+* we present the first deep diagnosis of essential commonsense knowl for WSC
   * though SOTA models can achieve about 90% accuracy on the original WSC task,
     they are still struggling on WinoWhy questions
   * though supervised models can achieve better performance,
@@ -48,21 +48,21 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
     indicates that the improvement is probably coming from better capturing the
     statistical bias of the dataset
 
-# 2 diagnosis of essential commonsense knowledge for answering WSC questions,
+# 2 diagnosis of essential commonsense knowledge for answering WSC questions
 
 ## 2.1 Reason collection
 
 * a two-phase annotation procedure to collect the knowledge
-  * first phase, we ask annotators to provide reasons for all WSC questions
-  * evaluate the quality of collected reasons
+  1. we ask annotators to provide reasons for all WSC questions
+  2. evaluate the quality of collected reasons
 
 ## 2.2 knowledge categorization
 
 ### 2.2.1 Knowledge Types
 
 * A good categorization standard should have two properties:
-  * Broad Coverage: it should cover most cases;
-  * Exclusive: there should be clear boundaries between different categories
+  * Broad Coverage
+  * Exclusive: clear boundaries between different categories
 * two categorization methods of commonsense knowledge:
   1. Conceptual Semantic Theory
     * According to Jackendoff’s original theory (Jackendoff, 1990),
@@ -79,21 +79,21 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
      Spatial, Causal, Functional, and Affective)
      * In the latest version of ConceptNet (Speer+ 2017), more relations
        (e.g., ‘RelatedTo’) from other resources are merged into ConceptNet
-* As they are relatively vague, we still follow the definition in ConceptNet 1.0
-  for the commonsense knowledge categorization
+* As the 2017 relations are relatively vague,
+  we still follow the definition in ConceptNet 1.0 for the categorization
   * some overlaps between semantic primitives and categories in ConceptNet
     (e.g., ‘Agents’ and ‘Functional’ both describe certain properties of some
-    objects), we
-  * first adopt all the commonly observed primitives in (Jackendoff, 1990) as
-    the base knowledge types and
+    objects)
+  * we first adopt all the commonly observed primitives in (Jackendoff, 1990)
+    as the base knowledge types and
   * then modify them based on the definition of categories from ConceptNet
   * For example, three primitives (activity, state, and event) and Events from
-    ConceptNet can all be covered by the definition of Eventuality
-    (Mourelatos, 1978). For the simplicity of the categorization and the quality
-    of the annotation, we merge them
-  * we remove ‘K-lines’ because it contains relations like
-    ‘ConceptuallyRelatedTo’, which is relatively
-    vague and difficult to be distinguished from other categories
+    ConceptNet can all be covered by the definition of Eventuality (Mourelatos,
+    1978). For the simplicity of the categorization and the quality of the
+    annotation, we merge them
+  * we remove ‘K-lines’ because it
+    * contains relations like ‘ConceptuallyRelatedTo’, which is relatively
+      vague and difficult to be distinguished from other categories
   * we remove ‘Causal’
     because we found out that annotators had difficulty understanding
     * tended to annotate all reasons as ‘Causal’
@@ -101,28 +101,27 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
   * an additional type ‘Others’ is provided
   * Names, definitions, and examples of selected knowledge types are shown:
 
-|Name      | Definition                          |Example                              |
-|----------|-------------------------------------|-------------------------------------|
-|Property  | Knowledge about property of objects | ice is cold                         |
-|Object    | Knowledge about objects             | cats have ears                      |
-|Eventuality|Knowledge about eventualities       | ‘wake up’ happens before ‘open eyes’|
-|Spatial   | Knowledge about spatial position    | object at the back can be blocked   |
-|Quantity  | Knowledge about numbers             | 2 is smaller than 10                |
-|Others    | All other knowledge                 | NA                                  |
+|Name       | Definition:         | Examples                            |
+|           | Knowledge about...  |                                     |
+|-----------|---------------------|-------------------------------------|
+|Property   | property of objects | ice is cold                         |
+|Object     | objects             | cats have ears                      |
+|Eventuality| eventualities       | ‘wake up’ happens before ‘open eyes’|
+|Spatial    | spatial position    | object at the back can be blocked   |
+|Quantity   | numbers             | 2 is smaller than 10                |
+|Others     | All other knowledge | NA                                  |
 
 ### 2.2.2 Annotation
 
 * each reason may contain inference over multiple knowledge types
-* distribution of annotation results in Figure 4. From the distribution, we can
+* distribution of annotation results in Figure 4
   * objects (e.g., ‘cats have ears’) and eventualities (e.g., ‘people who give
     help often receive thanks later’)
-* 17% of all reason annotations (839) are ‘Others’, which indicates that the
-  selected five categories can effectively cover 83% of the cases and thus the
-  selected knowledge types fulfill the broad coverage requirement
+* only 17% of all reason annotations (839) are ‘Others’
 * inner annotator agreement (IAA) and kappa coefficient (McHugh, 2012)
   * IAA pair-wisely among all annotators
   * The average IAA is 78.72%
-  * kappa coefficient based on the five raters and five categories setting: 0.80
+  * kappa coef based on the five raters and five categories setting: 0.80
 * For each WSC question, we select the most popular knowledge type
   * 222/51 questions have single/multiple knowledge type(s)
 
@@ -132,9 +131,9 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 
 * For each question, three kinds of candidate reasons are selected for annotion
   * The first reason resource is human annotation
-  * as some very similar but wrong reasons as negative examples, we consider the
-    reasons provided by humans for the reverse question
-  * generation model (i.e., GPT-2 (Radford+ 2019)) to generate reasons
+  * negative examples: we consider the reasons provided by humans for the
+    reverse question as some very similar but wrong reasons as
+  * generation model (i.e., GPT-2 Radford+ (2019)) to generate reasons
     * (e.g., ‘The fish ate the worm.  it was hungry.  It refers to fish
       because’) to the generation model and ask it to finish the sentences
     * beam search to find the top five generated reasons
@@ -145,12 +144,13 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 
 ## 3.4 Dataset Analysis
 
-* even though the majority of reverse reasons are not plausible, some of them do
-  make sense.  One scenario is that when the reason is comparing some property
-  of both candidates, it can be used for both questions. For example, for the
-  e.g “The trophy doesn’t fit into the brown suitcase because it is too small/l”
-  explanations like “Only small objects can fit into large
-  objects” are plausible for both questions
+* even though the majority of reverse reasons are not plausible, some of them
+  do make sense
+  * when the reason is comparing some property of both candidates, it can be
+    used for both questions
+  * “The trophy doesn’t fit into the brown suitcase because it is too small/l”
+    explanations like “Only small objects can fit into large objects” are
+    plausible for both questions
 * most of the reasons generated by GPT-2 have relatively low quality
   * GPT could generate some meaningless words (e.g., ‘-C.B.’)
   * some of the answers are related and complete sentences by themselves, but
@@ -161,7 +161,7 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
     * it was Charlie who started the discussion and who encouraged Charlie to
       take up the challenge
 * In total, WinoWhy contains 1,270 positive and 1,595 negative examples
-  * positive: at least four out of five annotators regard one reason as plausibl
+  * positive: at least four out of five annotators regard one reason as plausbl
   * negative: at most one annotator thinks it is plausible
   * All others are discarded from WinoWhy, To ensure the clear boundary
 
@@ -183,7 +183,7 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 * as indicated by (Kocijan+ 2019), fine-tuning BERT with a similar pronoun
   resolution dataset WSCR (Rahman and Ng, 2012) can help boost the performance
   * Sakaguchi+ (2019) has further enhanced the performance by fine-tuning
-    RoBERTa with a larger and more balanced dataset WinoGrande.  Statistics of
+    RoBERTa with a larger and more balanced dataset WinoGrande
   * we evaluate the combination of different pre-trained models and fine-tuning
   * BERT (base/large) + WSCR/Grande and RoBERTa (base/large) + WSCR/Grande
 
@@ -191,30 +191,30 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 
 * observations
   * Larger models perform better on all knowledge types
-  * The partial version of GPT-2 significantly outperforms the full version, which
-    * consistent with the observation in (Trinh and Le, 2018) and is mainly
-      because the influence of imbalanced distribution of candidate words are
-      relieved by only considering the sentence probability after the pronouns
+  * The partial version of GPT-2 significantly outperforms the full version
+    * consistent with the observation in Trinh and Le, (2018)
+    * mainly because the influence of imbalanced distribution of candidate wrds
+      is relieved by only considering the sentence prob after the pronouns
     * Such observation also explains why GPT-2 can outperform unsupervised BERT
       on WSC because models based on BERT, which rely on predicting the
       probability of candidate words, cannot get rid of such noise;
   * For most models, spatial knowledge is the most challenging
     * One possible explanation is that the inference over spatial knowledge is
       often triggered by a preposition (e.g., ‘in’ or ‘behind’), which is
-      challenging for language representation models to remember without enough
-  * Questions belonging to ‘Others’ involve more complex inference, even over
-    multiple types of knowledge and thus most models perform poorly on that. The
-    only exception is RoBERTa
+      challenging for language representation models to remember
+  * Questions belonging to ‘Others’ involve more complex inference,
+    even over multiple types of knowledge and thus
+    most models perform poorly on that. The only exception is RoBERTa
   * Fine-tuning over WinoGrande significantly boosts the performance
-* complex reasoning: how different models perform on questions
+* complex reasoning: how different models perform in it
   * we divide all WSC questions based on how many knowledge types are required
   * small models (e.g., BERT (base) and RoBERTa (base)) perform better on
-    questions that require single knowledge types rather than multiple knowledge
+    questions that require single knowledge types rather than multiple types
   * However, for large models (e.g., BERT (large) and RoBERTa (large)), as long
-    as the suitable fine-tuning dataset is provided, they can achieve similar
-    and even better performance on the complicated questions
-    * consistent with our previous observations that large models are capable of
-      solving complex questions from the ‘Others’ category with suitable fine-tu
+    as the suitable fine-tuning dataset is provided, they can achieve
+    similar and even better performance on the complicated questions
+    * consistent with our previous observations that large models can solve
+      complex questions from the ‘Others’ category with suitable fine-tuning
 
 # 5 experiments on WinoWhy 7
 
@@ -231,12 +231,11 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 * downstream tasks like question answering (Lin+ 2019),
   dialogue system (Zhou+ 2018), reading comprehension (Wang+ 2018), and
   pronoun coreference resolution (Levesque+ 2012)
-* solve WSC questions in an
-  * unsupervised way by leveraging either search engines (Emami+ 2018),
-    linguistic knowledge (Zhang+ 2019, 2020), or
-    language representation models (Kocijan+ 2019)
-    * still cannot fully solve the problem but we are not clear about how to
-      further improve them
+* solve WSC questions in an unsupervised way by leveraging either 
+  * search engines (Emami+ 2018),
+  * linguistic knowledge (Zhang+ 2019, 2020), or
+  * language representation models (Kocijan+ 2019)
+  * still cannot fully solve the problem, but not clear how to improve them
 * the conventional definition of commonsense knowledge is too vague
   * what kinds of knowledge are still challenging for current models
 

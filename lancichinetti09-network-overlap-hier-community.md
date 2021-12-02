@@ -1,6 +1,6 @@
+Detecting the overlapping and hierarchical community
 Andrea Lancichinetti, Santo Fortunato, Janos Kertesz
-Publication date
-2009 New journal of physics Volume 11 Issue 3
+2009 New journal of physics Volume 11 Issue 3 https://arxiv.org/abs/0802.1218
 
 # Abstract
 
