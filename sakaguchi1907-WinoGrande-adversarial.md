@@ -2,14 +2,14 @@ WinoGrande: An Adversarial Winograd Schema Challenge at Scale
 Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
 arXiv:1907.10641 [cs.CL]
 
-* Yejin Choiról Turán György mondja, hogy hisz a deep learning szimbolikus
-  dolgokkal való hibridizálásában
+* Yejin Choiról hisz a deep learning szimbolikus dolgokkal való hibridizálásá-
+  ban, mondja Turán György
 
 # Abstract
 
 * The Winograd Schema Challenge (WSC, Levesque, Davis, and Morgenstern 2011),
-  a benchmark for commonsense reasoning, is a set of
-  * 273 expert-crafted pronoun resolution problems originally
+  a benchmark for commonsense reasoning, a set of
+  * 273 expert-crafted pronoun resolution problems
   * designed to be unsolvable for statistical models that rely on
     selectional preferences or word associations
 * recent advances in neural language models have already reached around 90%
@@ -35,18 +35,18 @@ arXiv:1907.10641 [cs.CL]
 
 # 2 Crowdsourcing WinoGrande at Scale
 
-## Enhancing Crowd Creativity Creating twin sentences
+## Enhancing Crowd Creativity. Creating twin sentences
 
 * creativity from constraints (Stokes 2005) – a psychological notion
 * crowd workers are primed by a randomly chosen topic as a suggestive context,
   while they are asked to follow precise guidelines on the structure
 
-## Crowdsourcing Task We collect WinoGrande problems
+## Crowdsourcing Task. We collect WinoGrande problems
 
 * write twins sentences that meet the requirements for WSC problems
   (e.g., avoiding word association, non-zero but small edit distance)
 * To avoid repeating the same topics, workers were instructed to randomly pick
-  an anchor word(s) from a randomly assigned WikiHow article 3 and to ensure
+  an anchor word(s) from a randomly assigned WikiHow article
 * Following the original WSC problems, we aimed to collect twins in
   * social commonsense: a situation involving two same gender people with
     contrasting attributes, emotions, social roles, etc., and
@@ -59,27 +59,27 @@ arXiv:1907.10641 [cs.CL]
 * annotation artifacts in large-scale datasets (Gururangan+ 2018; Poliak+ 2018;
   Tsuchiya 2018; Niven and Kao 2019; Geva, Goldberg, and Berant 2019)
 * AfLite: reduce biases using SOTA contextual representation of words
-* adversarial filtering (AF) algorithm proposed by Zellers+ (2018), but makes
+* adversarial filtering (AF) algorithm proposed by Zellers+ (2018)
 * our two key improvements
   * much more broadly applicable (by not requiring overgeneration)
-    * Overgenerating machine text from a language model to use in test instances
-      runs the risk of distributional bias where a discriminator can learn to
-      distinguish between machine generated instances and human-generated ones
+    * Overgenerating machine text from a language model to use in test
+      instances runs the risk of distributional bias where 
+      a discriminator can learn to distinguish between machine generated
+      instances and human-generated ones
   * more lightweight (not requiring re-training a model at each iteration)
-    AF)
 * Instead of manually identified lexical features, we adopt a dense
   representation of instances using their precomputed neural network embeddings
   * we use RoBERTa (Liu+ 2019) fine-tuned on a small subset of the dataset
-    (referred to as RoBERTa embed )
+    (referred to as RoBERTa embed)
   * We use RoBERTa embed to pre-compute the embeddings for the rest of the
     instances (47k) as the input for AfLite
   * ensemble of linear classifiers (logistic regressions) trained on random
     subsets of the data to determine whether the representation used in RoBERTa
-    embed is strongly indicative of the correct answer option. If so, we discard
-    the corresponding instances and proceed iteratively
-* reminiscent of (Chen and Cardie 2018; Belinkov+ 2019; Elazar and
-  Goldberg 2018)
-  * Belinkov+ (2019) propose an adversarial removal technique for NLI which
+    embed is strongly indicative of the correct answer option
+    * If so, we discard the corresponding instances and proceed iteratively
+* reminiscent of
+  Chen and Cardie (2018); Belinkov+ (2019); Elazar and Goldberg (2018)
+  * Belinkov+ (2019) propose an adversarial removal technique for NLI
 
 ## Assessment of AfLite
 
@@ -92,7 +92,7 @@ arXiv:1907.10641 [cs.CL]
 
 * Table 2 presents examples that AfLite has detected as a dataset-specific bias
 * first two twins, where the sentiment between the answer option and the target
-  pronoun are highly correlated. In other words, these problems can be easily
+  pronoun are highly correlated
   * structural rather than at the token level,
     * unlike that identified in the literature (Gururangan+ 2018; Poliak+ 2018),
     * hard to detect using heuristics such as lexical PMI-filtering
@@ -100,12 +100,12 @@ arXiv:1907.10641 [cs.CL]
   training set (§4) and resource (§5), resulting in a total number of problems
   in WinoGrande all to be 43,972
 
-## 3.1 WinoGrande V.S. the Original WSC
+## 3.1 WinoGrande vs the Original WSC
 
 * a few design choices that deviate from the original design guidelines of WSC
   in order to scale up the dataset considerably while ensuring hardness
-  * fill-in-the-blank problem where the blank corresponds to the mention of one
-    of the two names in the context,
+  * fill-in-the-blank problem where the
+    blank corresponds to the mention of one of the two names in the context,
     * following other recent WSC variants such as Trinh and Le (2018)
   * Second, while we originally collected all problems in twins,
     the final questions in the filtered WinoGrande debiased are not always twins
@@ -117,10 +117,10 @@ arXiv:1907.10641 [cs.CL]
 
 ## 4.2
 
-### Learning Curve In order to see the effect of training size,
+### Learning Curve. In order to see the effect of training size,
 
 * Table 4 shows the performance by RoBERTa trained on different training sizes
-  * the best model, RoBERTa, on the WinoGrande debiased dev set. RoBERTa’s
+  * the best model, RoBERTa, on the WinoGrande debiased dev set
   * ranges from 59% to 79% <800 (2% of the training data) to 41K instances
   * To achieve human-level performance, current SOTA models would
     need over 118K training instances
@@ -134,7 +134,7 @@ arXiv:1907.10641 [cs.CL]
 # 5 Transfer Learning from WinoGrande 6
 
 * WinoGrande contains a large number of WSC style questions
-* In addition to serving as a benchmark dataset, we use WinoGrande as a resource
+* In addition to serving as a benchmark dataset, we use WG as a resource
 * evaluating its performance on related datasets
   * WSC, PDP, SuperGLUE-WSC, DPR, KnowRef, KnowRef, and Winogender
 * SOTA results across several of these existing benchmark datasets
@@ -143,14 +143,14 @@ arXiv:1907.10641 [cs.CL]
 
 ### WSC (Levesque, Davis, and Morgenstern 2011) This is
 
-* the original Winograd Schema Challenge dataset, which consists of 273 problems
+* the original Winograd Schema Challenge dataset, 273 problems
 * Trichelair+ (2018) report that 13.5% may still have word-association bias
 
 ### PDP (Morgenstern, Davis, and Ortiz 2016, Pronoun Disambiguation Problems)
 
-* used in the 2016 running of the Winograd Schema Challenge. The dataset
-* as a multiple choice task, in which a pronoun must be resolved to one of up to
-  5 (but mostly binary) possible antecedents
+* used in the 2016 running of the Winograd Schema Challenge
+* as a multiple choice task, in which a pronoun must be resolved to one of up
+  to 5 (but mostly binary) possible antecedents
 
 ### SuperGLUE-WSC (Wang+ 2019) SuperGLUE contains multiple datasets
 
@@ -159,12 +159,11 @@ arXiv:1907.10641 [cs.CL]
   recasts them into True/False binary problems (804 in total)
 * We converted WinoGrande to the True/False binary problems
 
-### DPR (Rahman and Ng 2012, Definite Pronoun Resolution Dataset) introduces
+### DPR (Rahman and Ng 2012, Definite Pronoun Resolution Dataset)
 
 * 1,886 additional WSC problems authored by 30 undergraduate students
-
 * overall less challenging than the original WSC (Trichelair+ 2018) due to an
-  increased level of language-based or dataset-specific biases. We split the
+  increased level of language-based or dataset-specific biases
 
 ### KnowRef (Emami+ 2019) KnowRef provides over 8k WSC-style coreference
 
@@ -178,9 +177,9 @@ arXiv:1907.10641 [cs.CL]
   effects of given premises
 * split:  Since COPA does not provide a training set, we split the original
   development set (500) into training (400) and development (100) sets in the
-  same way as SuperGLUECOPA (Wang+ 2019)
+  same way as SuperGlueCopa (Wang+ 2019)
 
-### Winogender (Rudinger+ 2018) This dataset introduces 720 problems focusing
+### Winogender (Rudinger+ 2018) This dataset introduces 720 problems
 
 ## 5.4 Diagnostics for Gender Bias
 
@@ -191,7 +190,7 @@ arXiv:1907.10641 [cs.CL]
 
 # 6 Conclusions 8
 
-* Unlike past decades where the community constructed a static benchmark dataset
-  to work on for many years to come, we now need AI algorithms to compose
-  challenges that are hard enough for AI, which requires dynamic datasets that
-  evolve together with the evolving SOTA
+* Unlike past decades where the community constructed a static benchmarks
+  to work on for many years to come, we now need AI algorithms to
+  compose challenges that are hard enough for AI, which requires
+  dynamic datasets that evolve together with the evolving SOTA

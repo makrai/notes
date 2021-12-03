@@ -3,7 +3,7 @@ Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry,
   Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler,
   Wu, Winter, Hesse, Chen, Sigler,
   Litwin, Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, Amodei
-arXiv:2005.14165 [cs.CL]
+arXiv:2005.14165 cs.CL
 
                                   here are two examples of people acting brave;
                                   please give a third example of bravery
@@ -25,7 +25,7 @@ arXiv:2005.14165 [cs.CL]
   * sometimes even reaching competitiveness with prior SOTA fine-tuning approac
   * GPT-3, an autoregressive language model with
   * 175 billion parameters, 10x more than any previous non-sparse LM
-  * few-shot setting [i.e. no] gradient updates or fine-tuning, with tasks and
+  * few-shot setting i.e. no gradient updates or fine-tuning, with tasks and
   * strong performance on many NLP datasets, including
     * translation, question-answering, and cloze tasks, as well as several
     * tasks that require on-the-fly reasoning or domain adaptation, such as
@@ -40,24 +40,24 @@ arXiv:2005.14165 [cs.CL]
 
 * pre-trained language representations in NLP systems, applied in increasingly
   flexible and task-agnostic ways for downstream transfer
-  * single-layer representations using word vectors [MCCD13, PSM14] and fed to
+  * single-layer representations using word vectors MCCD13, PSM14 and fed to
   * RNNs with multiple layers of representations and contextual state
-    [DL15, MBXS17, PNZtY18] (though still applied to task-specific archits)
-  * pre-trained recurrent or transformer language models [VSP + 17] have been
+    DL15, MBXS17, PNZtY18 (though still applied to task-specific archits)
+  * pre-trained recurrent or transformer language models VSP + 17 have been
     directly fine-tuned
-    [no] need for task-specific architectures [RNSS18, DCLT18, HR18]
+    no need for task-specific architectures RNSS18, DCLT18, HR18
 * This last paradigm has led to
   * substantial progress on e.g. reading comprehension, question answering,
     textual entailment, and many others, and has
-  * new architectures and algorithms [RSR + 19, LOG + 19, YDY + 19, LCG + 19]
+  * new architectures and algorithms RSR + 19, LOG + 19, YDY + 19, LCG + 19
 * removing the need for task-specific datasets and fine-tuning would be desirab
   * practical perspective, the need for a large dataset of labeled examples for
     * a very wide range of possible useful language tasks, e.g
       correcting grammar, to generating examples of an abstract concept, to
       critiquing a short story
-  * spurious [false] correlations in training data
+  * spurious false correlations in training data
     * grows with the expressiveness of the model and the narrowness of the
-      training distribution [HLW + 20, YdC + 19, MPL19, GSL + 18, NK19]
+      training distribution HLW + 20, YdC + 19, MPL19, GSL + 18, NK19
   * humans do not require large supervised datasets to learn most tasks – a
     * e.g. “please tell me if this sentence describes something happy or sad”
     * allows humans to seamlessly mix together or switch between many tasks and
@@ -66,29 +66,29 @@ arXiv:2005.14165 [cs.CL]
   * model develops a broad set of skills and pattern recognition abilities at
     training time, and then uses those abilities at inference time to rapidly
     adapt to or recognize the desired task (illustrated in Figure 1.1)
-  * [RWC + 19] attempts to do this via what we call “in-context learning”,
+  * RWC + 19 attempts to do this via what we call “in-context learning”,
     using the text input of a pretrained language model as a form of task specf
     * model is conditioned on a natural language instruction and/or a few
       demonstrations of the task
-    * results far inferior to fine-tuning – for example [RWC + 19] achieves
+    * results far inferior to fine-tuning – for example RWC + 19 achieves
       only 4% on Natural Questions, and even its
       55 F1 CoQa result is now more than 35 points behind the SOTA
 * capacity of transformer language models has increased substantially,
 ```
-    100 million parameters [RNSS18], to
-    300 million parameters [DCLT18], to
-  1.5 billion parameters [RWC + 19], to
-  8 billion parameters [SPP + 19],
- 11 billion parameters [RSR + 19], and finally
- 17 billion parameters [Tur20]
+    100 million parameters RNSS18, to
+    300 million parameters DCLT18, to
+  1.5 billion parameters RWC + 19, to
+  8 billion parameters SPP + 19,
+ 11 billion parameters RSR + 19, and finally
+ 17 billion parameters Tur20
 ```
   * log loss, which correlates well with many downstream tasks,
-    follows a smooth trend of improvement with scale [KMH + 20]
+    follows a smooth trend of improvement with scale KMH + 20
   * it is plausible that in-context learning abilities might show similar gains
 * we test in-context learning abilities. Specifically, we evaluate GPT-3 on
   * two dozen NLP datasets, as well as several novel tasks designed to test
     rapid adaptation to tasks unlikely to be directly contained in the training
-  * evaluate GPT-3 under 3 conditions:
+  * 3 conditions:
     * “few-shot learning”, or in-context learning where we allow
       as many demonstrations as will fit into the model’s context window
       (typically 10 to 100),
@@ -110,13 +110,13 @@ arXiv:2005.14165 [cs.CL]
   * natural language inference tasks like the ANLI dataset, and
   * some reading comprehension datasets like RACE or QuAC
 * Figure 1.3, aggregates performance for all 42 accuracy-denominated benchmarks
-  * few-shot performance increases more rapidly [than zero~], demonstrating
+  * few-shot performance increases more rapidly than zero~, demonstrating
     that larger models are more proficient at in-context learning
   * See Figure 3.8 for a more detailed analysis on SuperGLUE, a standard benchm
-* systematic study of “data contamination” – a growing
-  * problem when training models on datasets such as Common Crawl,
+* systematic study of “data contamination”
+  * a growing problem when training models on datasets such as Common Crawl,
     which can potentially include content from test datasets . In this paper we
-  * minimal effect on most datasets, [but on a few datasets] it could inflate
+  * minimal effect on most datasets, but on a few datasets it could inflate
     * we either do not report results on these datasets or we
       note them with an asterisk, depending on the severity
 * we also train a series of smaller models
@@ -131,16 +131,16 @@ arXiv:2005.14165 [cs.CL]
 
 ## 2.1 Model and Architectures
 
-* same model and architecture as GPT-2 [RWC + 19],
+* same model and architecture as GPT-2 RWC + 19,
   * including the modified init, pre-normalization, and reversible tokenization
-  * [but] alternating dense and locally banded sparse attention patterns in the
-    layers of the transformer, similar to the Sparse Transformer [CGRS19]. To
+  * but alternating dense and locally banded sparse attention patterns in the
+    layers of the transformer, similar to the Sparse Transformer CGRS19. To
 * 8 different sizes of model, ranging over three orders of magnitude from 125
   million parameters to 175 billion parameters, with the last being the model
   we call GPT-3
 * scaling of validation loss should be approximately
-  a smooth power law as a function of size [KMH + 20]; training models of many
-* [we] test this hypothesis both for validation loss and for downstream
+  a smooth power law as a function of size KMH + 20; training models of many
+* we test this hypothesis both for validation loss and for downstream
 
 ## 2.2 Training Dataset
 ## 2.3 Training Process
@@ -166,17 +166,17 @@ arXiv:2005.14165 [cs.CL]
   * lose coherence over sufficiently long passages, contradict themselves, and
     occasionally contain non-sequitur sentences or paragraphs
 * special difficulty with “common sense physics”,
-  despite doing well on some datasets (such as PIQA [BZB + 19]) that test this
+  despite doing well on some datasets (such as PIQA BZB + 19) that test this
   * e.g. questions like “If I put cheese into the fridge, will it melt?”
-  * little better than chance when evaluated one-shot or even few-shot on some
-    “comparison” tasks, such as determining if
+  * little better than chance when evaluated one-shot or even few-shot
+    on some “comparison” tasks, such as determining if
     * two words are used the same way in a sentence, WIC
     * one sentence implies another (WIC and ANLI respectively), ANLI
   * on a subset of reading comprehension tasks (e.g. QuAC and RACE)
-* structural and algorithmic limitations, which could account for some of the
+* structural and algorithmic limitations
   * We focused on autoregressive language models because
     it is straightforward to both sample and compute likelihoods with this
-  * [we]  not include any bidirectional architectures or e.g. denoising. This
+  * we  not include any bidirectional architectures or e.g. denoising. This
   * potentially worse performance on tasks which benefit from bidirectionality
     * e.g. fill-in-the-blank tasks, tasks that involve looking back and
     * tasks that require re-reading or carefully considering a long passage and
@@ -185,20 +185,20 @@ arXiv:2005.14165 [cs.CL]
     model would be stronger at fine-tuning than GPT-3
 * limits of the pretraining objective
   * current objective weights every token equally
-  * [RRS20] customize prediction to entities of interest
-  * [problem with] forcing the desired task into a prediction problem, whereas
+  * RRS20 customize prediction to entities of interest
+  * problem with forcing the desired task into a prediction problem, whereas
     ultimately, useful language systems might take goal-directed actions rather
-  * grounding in other domains, such as video or real-world phys [BHT + 20]
-  * augmentation [of self-supervised prediction] with a different approach is
-    * learning the objective function from humans [ZSW + 19a],
+  * grounding in other domains, such as video or real-world phys BHT + 20
+  * augmentation of self-supervised prediction with a different approach is
+    * learning the objective function from humans ZSW + 19a,
     * fine-tuning with reinforcement learning, or adding
-    * additional modalities such as images [CLY+ 19]
+    * additional modalities such as images CLY+ 19
 * poor sample efficiency during pre-training
   * GPT-3 takes test-time sample efficiency closer to that of humans (1/0-shot)
   * might come from grounding in the physical world to provide additional info,
     or from algorithmic improvements
 * whether few-shot learning actually learns new tasks “from scratch” at infer,
-  or if it recognizes tasks that it has learned during training. These
+  or if it recognizes tasks that it has learned during training
   * possibilities exist on a spectrum, ranging from
     * demonstrations in the training set that are drawn from exactly the same
     * the same task but in a different format, to
@@ -206,11 +206,11 @@ arXiv:2005.14165 [cs.CL]
     * learning a skill entirely de novo. Where GPT-3 is on this spectrum
   * may also vary from task to task. Synthetic tasks such as
     * wordscrambling or defining nonsense words seem to be learned de novo,
-    * translation must be learned [ although ] from data that is very different
+    * translation must be learned  although  from data that is very different
     * not even clear what humans learn from scratch vs from prior demonstration
 * expensive and inconvenient to perform inference on, which may present a
-  * distillation [HVD15] for specific tasks. Large models such as GPT-3 contain
-  * Distillation is well-explored in general [LHCG19a] but
+  * distillation HVD15 for specific tasks. Large models such as GPT-3 contain
+  * Distillation is well-explored in general LHCG19a but
     has not been tried at the scale of hundred of billions parameters; new
 * not easily interpretable, it is not necessarily well-calibrated in its
   predictions on novel inputs as observed by the

@@ -6,7 +6,7 @@ SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference
   * e.g. "she opened the hood of the car," humans
   * what might come next ("then, she examined the engine"). In this paper, we
 * grounded commonsense inference,
-  * unifying natural language inference and commonsense reasoning.  We present
+  * unifying natural language inference and commonsense reasoning
   * 113k multiple choice questions about a rich spectrum of grounded situations
 * To address the ... challenges of the annotation artifacts and human biases
   * Adversarial Filtering (AF), a novel procedure that constructs a de-biased

@@ -2,9 +2,9 @@ Semantic Structures
 Jackendoff, Ray S
 1990
 
-az itteni elemzés szintaxisalapúbb, mint a 4lang
-minden példát összevetni
-különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
+* az itteni elemzés szintaxisalapúbb, mint a 4lang
+* minden példát összevetni
+* különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 # Introduction
 
@@ -18,7 +18,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * relate [ling forms] to their understanding of the nonlinguistic world, so
       that they can make judgments of reference and truth
   * The Problem of Correspondence is to characterize the relationship between
-    the formal treatment of meaning and ... syntax
+    the formal treatment of meaning and syntax
     * choice of semantic formalism has an immediate effect on [its] solutions
 * my research over the past fifteen years
   * Conceptual Semantics [CS]
@@ -29,7 +29,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * situate the study of meaning in an overall psychological framework,
     * perception, cognition, and conscious experience
   * linguistic phenomena [only] in the early and middle 1970s
-* now ... a richer range of lexical items and syntactic constructions
+* now a richer range of lexical items and syntactic constructions
 * parts
   1. the basic parameters of the formalization of meaning
     * argument structure and thematic roles
@@ -38,7 +38,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   2. extending the range of semantic fields encompassed
     * by adding features to existing conceptual primitives,
       rather than by introducing altogether new primitives
-    * meaning ... is organized into independent but interacting _tiers_,
+    * meaning is organized into independent but interacting _tiers_,
       each of which contributes a different class of conceptual distinctions
   3. Correspondence
     * first three chapters
@@ -111,13 +111,13 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * Frege's _On Sense and Reference_ (1892)
     * disassociates the
       * _sense_ of an expression, an objective, publicly available entity
-        * underpins ... truth-conditional semantics
+        * underpins truth-conditional semantics
           (including model-theoretic semantics and Situation Semantics)
       * _ideas_ that users of the expression carry in their heads, which are
         subjective and variable
 * the purposes of truth-conditional semantics are different from those of
   generative linguistics
-  * Truth, a relation between language and reality, independent of ... users
+  * Truth, a relation between language and reality, independent of users
     * both reality and the language that describes it are speaker-independent
     * Tarski, Davidson
   * generative grammar [concerns] the principles internalized in speakers that
@@ -127,7 +127,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * This is the basis of the approach of Conceptual Semantics
     * conceptual structure
       * in which speakers encode their construal of the world
-  * sometimes suggested that ... model-theoretic semantics is neutral between
+  * sometimes suggested that model-theoretic semantics is neutral between
     E-semantics and I-semantics
 * CS vs Fodor's (1975) _Language of Thought_ Hypothesis
   * Fodor's position is that we grasp the world the way we do precisely because
@@ -172,7 +172,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * This is argued in detail in S&C, chapters 5 and 6
 * conceptual structure is not completely language-dependent
 * lexical item establishes a correspondence
-  between ...  phonological, syntactic, and conceptual structure
+  between  phonological, syntactic, and conceptual structure
   * Similarly, rules of morphology
     may have phonological parts, syntactic parts, and conceptual parts
   * each component in figure (1) as divided into
@@ -191,7 +191,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 * What counts as a lexical item?
   * homonymous items such as the river bank and the savings bank as separate
-  * inflectional suffix ... alternate forms of the same lexical item
+  * inflectional suffix alternate forms of the same lexical item
   * uses of a verb in different syntactic frames
     3. systematic relation
     6
@@ -227,9 +227,9 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * conceptual constituents [belong] to one of a small set of major ontological
   categories (or conceptual _parts of speech_)
   * Thing, Event, State, Action, Place, Path, Property, and Amount
-* These are ... quite different in the kind of reference they pick out, but
+* These are quite different in the kind of reference they pick out, but
   formally (algebraically) they have [6 points] in common
-  1. Each major syntactic constituent ... maps into a conceptual constituent
+  1. Each major syntactic constituent maps into a conceptual constituent
     * NN correspond to Thing-constituents, the
       PP [to a Path-constituent, and the entire sentence] to an Event-cns
     * the converse of this correlation does not hold
@@ -251,15 +251,15 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * the _localistic_ theory of Gruber (1965)
 * the formalism for encoding concepts of spatial location and motion
   can be abstracted/generalized to many other semantic fields
-* many verbs and prepositions appear in ... more semantic fields
+* many verbs and prepositions appear in more semantic fields
 * intuitively related paradigms
-* generalization ... is by no means totally free
+* generalization is by no means totally free
   * `*`The meeting went from Tuesday to Monday
 * they are each realizations of the [same] basic conceptual functions
 * the precise values of the field feature
   that a particular verb or preposition may carry is a lexical fact
 * inference rule (21)
-  * A variety of such inference rules appear ... in Jackendoff 1976
+  * A variety of such inference rules appear in Jackendoff 1976
   * many so-called implicative properties of verbs
     follow from generalized forms of inference rules
     developed to account for verbs of spatial motion and location
@@ -283,7 +283,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * bounded/unbounded (event/process, telic/atelic) ~ count/mass
 * (23)
 * To sum up the discussion of (22): these examples show that
-  * a common feature system ... cutting across Things, Events, and Paths
+  * a common feature system cutting across Things, Events, and Paths
   * the system is expressed by a heterogeneous collection of syntactic factors,
     including lexical choice, aspect, determiner, and perhaps case
   * there is a set of algebraic principles over conceptual structure that
@@ -299,7 +299,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * different appearance
   * how is a chair to be distinguished from a stool? [± has-a-back]?
 * the 3D model structure of Marr 1982
-  * extension ... to encode action patterns such as throwing and saluting
+  * extension to encode action patterns such as throwing and saluting
 
 ### 1.7.2 Focal Values in a Continuous Domain
 
@@ -309,7 +309,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 ### 1.7.3 Preference Rule Systems
 
 * which satisfies both conditions at once, is more _stereotypical_
-  * that satisfy only one of the conditions ... are somewhat more marginal but
+  * that satisfy only one of the conditions are somewhat more marginal but
     still perfectly legitimate
 * climb = move up & grasp, see = gaze & ralize
 * nouns that denote functional categories: form and function
@@ -317,14 +317,14 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   are invariably assumed to be satisfied as default values
 * The formalism was in fact developed originally [for] musical cognition
   (Lerdahl and Jackendoff 1983)
-* comparison with ... prototype theory, and fuzzy set theory
+* comparison with prototype theory, and fuzzy set theory
 
 ## 1.8 Appendix: Lexical Composition versus Meaning Postulates
 
 * the solution Fodor advocates
   * each lexical item [has] its own specific meaning postulates
     * determine the entailments of sentences [the lexical item] occurs in
-* e.g. causative-noncausative pairs ... in (26)
+* e.g. causative-noncausative pairs in (26)
 * each element in a lexical decomposition can be regarded as that item's access
   to more general-purpose rules of inference
 * studies of language acquisition have benefited from decompositional theories
@@ -342,13 +342,13 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * functions in (1) are [not] primitives
   * STAY is likely composite, perhaps some sort of durational form of BE
   * EXT is clearly related to GO
-  * CAUSE too turns out to be composite ... as will be seen in chapter 7
+  * CAUSE too turns out to be composite as will be seen in chapter 7
   * various Place- and Path-functions have feature decompositions as well
 * correspondence between syntax and conceptual structure
   * was stated in section 1.6.1
   * example in (3)
   * implicit argument
-    * the well-formedness conditions ... require the Path argument to be
+    * the well-formedness conditions require the Path argument to be
       present in CS even if it is not expressed syntactically
 
 ## 2.2 The Status of Thematic Roles 50
@@ -383,7 +383,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   relative depth of embedding of the indices in conceptual structure
     * see chapter 11 for amplification
 * independent motivation of thematic analyses
-  * determine the thematic roles in a sentence ... has to begin with semantic
+  * determine the thematic roles in a sentence has to begin with semantic
     intuitions like those that motivated Gruber
   * the present account embeds the theory of thematic roles in a rich system
     governed by its own combinatorial properties
@@ -415,7 +415,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
       * Patient
         * traditionally the "object affected by the action"
         * not a role in Gruber's system
-        * CS: neither can serve as a default case ... see chapter 7
+        * CS: neither can serve as a default case see chapter 7
 
 ## 2.3 Argument Fusion and Selectional Restrictions 55
 
@@ -424,8 +424,8 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * (7) [assumes that all linkings] are stipulated in the head's lexical item
 * [yet] there are regularities of linking,
   * e.g. Agents invariably appear in subject position
-  * One can ... express such regularities
-    and thereby ... leave predictable indices out of lexical entries
+  * One can express such regularities
+    and thereby leave predictable indices out of lexical entries
   * redundancy rules. I defer discussing it until chapter 11
 * argument fusion and selectional restrictions
   * _enter_, where the position indexed `i` is specified as a Thing
@@ -435,7 +435,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * e.g. the object of _drink_, the direct object of _pay_,
       the subject of German _fressen_, which is predicated only of animals
   * where an argument is not even syntactically expressed:
-    * selectional restrictions are ... explicit information that the verb
+    * selectional restrictions are explicit information that the verb
       supplies about its arguments
     * selectional restriction = conceptual structure that occurs within an
       indexed conceptual constituent
@@ -450,9 +450,9 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
       of mutually exclusive possibilities,
       such as Thing/Property/Place/Event/etc. or solid/liquid/gas
 * e.g. drink vs butter
-  * Both ... mean "cause something to go someplace."
+  * Both mean "cause something to go someplace."
   * They differ
-    * semantically in what ... they stipulate about the Theme and the Path
+    * semantically in what they stipulate about the Theme and the Path
     * syntactically only in [being] obligatorily resp. optionally transitive
     * in the syntactic-semantic correspondence they stipulate
       * direct object of _butter_ is the Goal, and the
@@ -487,20 +487,20 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 ## 3.1 The Status of the q-Criterion
 
-* q-Criterion ... says, in our terms,
+* q-Criterion says, in our terms,
   * that each subcategorized NP (plus the subject) corresponds to exactly one
     argument position in conceptual structure, and
   * that each open argument position in conceptual structure is expressed by
     exactly one NP
-  * central ... to GB Theory, and
+  * central to GB Theory, and
     [there are] parallel notions in other theories (e.g. biuniqueness in LFG)
   * important [for]
     * q-roles as annotations to syntactic structure
-    * q-marking and case-marking ... are comparable phenomena (Dowty 1988)
+    * q-marking and case-marking are comparable phenomena (Dowty 1988)
 * examples that collectively suggest that the q-Criterion must be weakened
   * 3.1.1 Cases Where an NP Has More Than One q-Role
     * transaction verbs such as _buy, sell, exchange, and trade_,
-      * there are two actions ...  Thus X and Z have two semantic roles apiece
+      * there are two actions  Thus X and Z have two semantic roles apiece
       * See chapter 9 for a more thorough treatment
     * chase: PAT also moves (Weinreich 1966 and Katz 1972)
   * 3.1.2 Cases Where Multiple NPs Hold a Single q-Role
@@ -510,8 +510,8 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 * there is nothing to prevent two indexed positions in {conceptual structure,
   syntax} from bearing the same index
-* indicate that ... the Source of the main transfer and the Goal of the
-  countertransfer are ... the same unmentioned character/funny old man
+* indicate that the Source of the main transfer and the Goal of the
+  countertransfer are the same unmentioned character/funny old man
 * two kinds of coindexing:
   * one that links a syntactic constituent to a conceptual constituent
     * the type we have used so far
@@ -539,7 +539,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * _promise_ that the issuer (or Source) of a promise undertakes an
       obligation to perform the action described by the complement
       * passive?:  *Bill was promised to be allowed to leave
-* important ... especially in nominals
+* important especially in nominals
 
 # Chapter 4 Unifying Lexical Entries 71
 
@@ -548,9 +548,9 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     permit certain alternations to be expressed within single lexical entries
   * Further alternations will be taken up in part III
 * already two mechanisms in place for unifying the syntactic frames
-  * potential modifiers ... are not encoded anywhere in [the] lexical entry
+  * potential modifiers are not encoded anywhere in [the] lexical entry
     * place, time, and manner
-  * in argument structure ... optional expression of an argument
+  * in argument structure optional expression of an argument
   * We have encoded such alternations in more or less traditional terms
     * verb's subcategorization feature contains an optional position;
     * if filled, it is coindexed to a conceptual argument;
@@ -569,18 +569,18 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * inchoative verbs
   * alternate between a State reading and an Event reading
   * _point, surround, stand, cover, hide, shelter, block, support, face, sit_
-  * the Event reading describes a change ... whose final state is the State
+  * the Event reading describes a change whose final state is the State
   * formaliz[ation]: the inchoative as an elaboration of Event into the
     function INCH, whose sole argument is a State
     * more detailed argumentation in section 5.3
 * causative
   * {The box slid/Bill slid the box} down the stairs
   * external argument: _the_ in the noncausative [but] Agent in the causative
-  * solution ... Unaccusative Hypothesis (Perlmutter 1978; Burzio 1986)
+  * solution Unaccusative Hypothesis (Perlmutter 1978; Burzio 1986)
     * Agent is coindexed with subject position
     * in both causative and non-causative versions the Theme is coindexed
       with the object position
-    * Chapter 11 will propose ... a more flexible linking convention
+    * Chapter 11 will propose a more flexible linking convention
 
 ## 4.2 Multiple Argument Structures 81
 
@@ -593,7 +593,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * [some] nouns such as _way_ and _route_ map into Paths instead of Things
   * much like _climb_ is _jump_
 * _pass_
-  * Syntactically ... the same as climb
+  * Syntactically the same as climb
   * PP-complement [restricted to Route] Paths whose Path-function is VIA
 * similar: _cross_
   * subcat similar to _pass_
@@ -602,7 +602,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * put
   * PP [must express either a Place or] a Path whose function is TO
 * return to transitive-intransitive
-  * eat: a single entry ... NP argument optional
+  * eat: a single entry NP argument optional
   * verb _dress_
     * discussed in section 3.3
     * [the intransitive] binds the Theme to the Agent
@@ -618,7 +618,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 # A last remark to close part I
 
 * one important thread of these chapters has been to compare a fine-grained
-  theory of argument structure ... with a coarse-grained [one]
+  theory of argument structure with a coarse-grained [one]
 * In order for a sentence to be understood, of course, the [fine CS] must exist
 * the issue is whether a coarse-grained argument structure is necessary
   * as a temporary shortcut
@@ -658,7 +658,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * laugh + emission of sound
 * stay, sit + locative adjunct
   * the distinctions among various CONF-verbs [are]
-    not ... expressed in CS [but in an external] representation
+    not expressed in CS [but in an external] representation
   * CONF + BE
 
 ## 5.3 Inchoative 95
@@ -669,11 +669,11 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * For the present, we will regard the function INCH as a primitive;
   will be composed into a bundle of more general features
 * redundancy: GO(X, TO(Y)) ~ INCH(BE(X, Y))
-  * The ... possibility, that GO can be reduced to INCH (BE)
+  * The possibility, that GO can be reduced to INCH (BE)
   * appeared in its essence many times in the literature
     * Schank 1973; Dowty 1979; Hinrichs 1985
     * arguments against such a reduction:
-      * GO can occur ... also
+      * GO can occur also
         * with a wide variety of Path-functions:
         * as expressions of extent (_reach_ and _go_ itself)
       * motion must be a primitive in spatial cognition anyway
@@ -682,7 +682,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
         * visual system contains specialized motion detectors (Marr 1982)
           * independent of the channels that individuate and localize objects
 * My conclusion is that GO and INCH are two independent functions of CS
-  * three criteria ... to determine which function is being encoded
+  * three criteria to determine which function is being encoded
     1. If the verb in question appears with a range of Path-prepositions --> GO
     2. If the verb in question appears in an Extent sense  --> GO
        (Recall that EXT is a featural variant of GO)
@@ -694,7 +694,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 
 * a partial taxonomy of functions that convert a State or Event into a
   restrictive modifier of another State or Event
-  * syntactically most transparent ... as subordinating conjunctions
+  * syntactically most transparent as subordinating conjunctions
     * turn sentences into restrictive modifiers
 1. means, How?
   * John got into the room by coming through the window
@@ -706,7 +706,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
     * normally encoded as an infinitival, _in order to_-phrase, or _for_-phrase
     * differ from causes in their entailments
     * conceptualized by the speaker as the intended result
-    * the intention may be the speaker's [or] attributed to the ... Agent
+    * the intention may be the speaker's [or] attributed to the Agent
     * `FOR`, a variety of TO or TOWARD
 3. accompaniment
   * mutual dependence between Bill's coming and Harry's,
@@ -715,10 +715,10 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * [more] than [conjunction but less than] causation
   * `WITH`, a variety of the spatial WITH
 4. exchange, jutalom/büntetés
-  * a voluntary act of social cognition, based on ... assessment
+  * a voluntary act of social cognition, based on assessment
     * legal and economic systems
   * EXCH
-* similarities of the first four subordinators ... to spatial functions
+* similarities of the first four subordinators to spatial functions
   * inferences associated with these [are] parallel
   * more than morphological similarity
   * I have not found a spatial counterpart for EXCH
@@ -766,7 +766,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * a new feature opposition [in] spatial location, say Location versus Contact
   (or [±contact])
 * also in the prepositional system
-  * _on_ and _against_ ... contrast with _in, next to, alongside, above_
+  * _on_ and _against_ contrast with _in, next to, alongside, above_
 * IN ±contact
 * nonspecific location function AT
 * secondary locative
@@ -775,7 +775,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * hit: GO( , TO) or INCH(BE( , AT))
   * GOc might [specify e.g. motion while in continuous contact with the object
     * _stroke_ and _scratch_ [mean] exactly this
-* _rub_ and _brush_ ... specifying a Path of contact
+* _rub_ and _brush_ specifying a Path of contact
 * _bounce_ specifies travel that is interrupted by an impact and that continues
   in a new direction
 * _slide_, which also expresses
@@ -785,7 +785,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * exactly the same structure as inchoatives of verbs of pure contact (22a)
     * the standard test for the Patient role
       * _What happened to the tree? The car hit/*touched it_
-    * This feature of exerting force is also found in ... _push_ and _pull_
+    * This feature of exerting force is also found in _push_ and _pull_
 * The secondary locative
   * is a Place, not a Path
   * must be a part of the object being contacted
@@ -815,7 +815,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * reciprocal
   * Harry and Sue touched/kissed/hit/collided/rubbed/bumped/`*`struck/contacted
   * The hoses stuck/connected/joined/`*`attached/glued
-  * _mix_ and _combine_ ... contact throughout a volume instead of on a surface
+  * _mix_ and _combine_ contact throughout a volume instead of on a surface
 
 ## 6.4 Verbs of Material Composition 122
 
@@ -830,11 +830,11 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * resemblance [to] the Identificational field
   * change into, turn into, become
   * [but here] the Theme is referential
-  * syntactic patterns ... are in part the same
+  * syntactic patterns are in part the same
     * especially the use of into as the standard preposition of Goal
-* [Composition is] with Identification under a supercategory ... Character
+* [Composition is] with Identification under a supercategory Character
   * Character [is in contrast with] Location [and] Possession
-* statives must be analyzed as ... BE(-comp),
+* statives must be analyzed as BE(-comp),
   with a Theme and a reference object
 * there happens to be the verb _consist of_ with the proper argument structure
 * mapping from [the whole and its parts] to thematic relations
@@ -878,10 +878,10 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
 * [CS] that has Actor and Patient as argument positions,
   parallel to the treatment of Theme, Source, and Goal
   * a new formal elaboration of Events in the action tier
-  * `EVENT -> [ ... AFF(<THING>,<THING>)]`
+  * `EVENT -> [ AFF(<THING>,<THING>)]`
 * Up until now, all conceptual functions have had a fixed number of arguments
   * implicit arguments
-  * AFF has ... two optional arguments
+  * AFF has two optional arguments
     * there is no sense of an "implicit Patient"
     * [evidence for] the optionality of the Actor role
       * intransitive verbs such as _roll_
@@ -892,7 +892,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * suggested by Dowty (1988)
   * "extrinsic instigator of action," -- "first argument of CAUSE,"
   * "volitional actor."
-    * selects for a volitional Agent ... for instance, buy and look
+    * selects for a volitional Agent for instance, buy and look
     * permit the function AFF a feature elaboration [± volitional]
 * a general linking rule that correlates agentivity with subject position
 
@@ -905,7 +905,7 @@ különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
   * + to encode application of force with a successful outcome; this case
   * u for application of force with an undetermined outcome. Thus force (17)
   * Fail requires a third value of the success parameter
-    * not the same as CS+ ... NOT. The latter would mean that Harry's
+    * not the same as CS+ NOT. The latter would mean that Harry's
     * latter is _avoid_: efforts are directed toward not going away, successful
 * push/pull is undetermined, but with Path, do of course have a positive outcome
   such as Amy pushed/pulled Bill out the window,

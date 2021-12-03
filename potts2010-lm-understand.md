@@ -9,12 +9,13 @@ https://chrisgpotts.medium.com/is-it-possible-for-language-models-to-achieve-lan
   * In saying this, he was criticizing the work of generative semanticists who
     treated semantic interpretation as the task of translating from natural
     languages into a separate meaning language. For Lewis, this just raised the
-    question of what the meaning language meant.
-* natural logic (van Benthem 2008), in which meanings are entirely defined by
-  relationships between linguistic forms. Bill MacCartney and Chris Manning
-  showed the value of these approaches for commonsense reasoning tasks, and
-  Thomas Icard, Larry Moss, and colleagues achieved rich formal results for
-  these systems.
+    question of what the meaning language meant
+* natural logic (van Benthem 2008)
+  * meanings are entirely defined by relationships between linguistic forms
+  * Bill MacCartney and Chris Manning showed the value of these approaches for
+    commonsense reasoning tasks
+  * Thomas Icard, Larry Moss, and colleagues achieved rich formal results for
+    these systems
 
 # Objection: Symbols streams lack crucial information
 
@@ -27,4 +28,4 @@ https://chrisgpotts.medium.com/is-it-possible-for-language-models-to-achieve-lan
 * ascribing intentions to other humans is incredibly difficult and inherently
 * we don’t know what cognitive primitives are necessary or sufficient for
   intentionality, so it is generally unclear what properties an AI system has to
-  have in order to pass this bar; singling out language models seems unfair.
+  have in order to pass this bar; singling out language models seems unfair

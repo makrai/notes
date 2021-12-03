@@ -119,7 +119,7 @@ arXiv:2004.10151 [cs.CL]
     * reasoning to cause and effect Bakhtin+ (2019) extends this physical
     * scripts and actions Sun+ (2019b,a) model
     * unsupervised concept formation (Bachman+ 2019) also open up research
-* CV ... incorporate language signals. Advances in computer vision
+* CV incorporate language signals. Advances in computer vision
   * descendant from image captioning (Farhadi+ 2010; Mitchell+ 2012), a myriad
   * question answering (Antol+ 2015; Das+ 2018)
   * natural language and visual reasoning (Suhr+ 2019b)
