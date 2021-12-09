@@ -34,6 +34,19 @@ https://github.com/xerevity/mappability
     (Arora+ 2020)
 * multilingual mappings still extremely dependent on the mapping scenario
   (Søgaard+ 2018; Vulić+ 2019, 2020)
+  * Anders Søgaard, Sebastian Ruder, and Ivan Vulić
+    On the limitations of unsupervised bilingual dictionary induction. In
+    ACL 2018 (Volume 1: Long Papers), pages 778– 788, Melbourne, Australia
+  * Ivan Vulić, Goran Glavaš, Roi Reichart, and Anna Korhonen
+    Do we really need fully unsupervised cross-lingual embeddings? In
+    EMNLP-IJCNLP 2019, pages 4407–4418, Hong Kong, China
+  * Ivan Vulić, Sebastian Ruder, and Anders Søgaard
+    Are all good word vector spaces isomorphic?
+    EMNLP 2020, pages 3178–3192, Online
+    * variance in performance across language pairs is not only due to
+      typological differences, but can mostly be attributed to the size of the
+      monolingual resources available, and to the properties and duration of
+      monolingual training (e.g. “under-training”)
   * attributed to typological differences, domain differences in the corpora,
     insufficient resources, and under-training
     (Doval+ 2020; Søgaard+ 2018; Vulić+ 2020)
@@ -76,6 +89,10 @@ https://github.com/xerevity/mappability
     * The first really successful solution
   * Artetxe+ (2018b) proposed an iterative self-learning method
     initialized by sorting embedding values
+    * Mikel Artetxe, Gorka Labaka, and Eneko Agirre
+      A robust self-learning method
+        for fully unsupervised cross-lingual mappings of word embeddings
+      ACL 2018b (Volume 1: Long Papers), pages 789–798
   * and Non-adversarial Translation by Hoshen and Wolf (2018) also uses
     self-learning, but a different method, initialized using PCA
 
@@ -84,7 +101,7 @@ https://github.com/xerevity/mappability
 * Kementchedjhieva+ 2019; Glavaš+ 2019; Vulić+ 2019
 * why some settings do not work well (also investigated)
   * Søgaard+ (2018)
-    * the isomorphic assumption does not hold in many cases, and report
+    * the isomorphic assumption does not hold in many cases
       * shown with eigenvector similarity of nearest neighbor graphs
     * negative effect of language and domain dissimilarity
       on the unsupervised embedding alignment method of Conneau+ (2018)
@@ -92,8 +109,8 @@ https://github.com/xerevity/mappability
   in non-isomorphism of word embeddings
 * Dubossarsky+ (2020): suggest some new measures to quantify transferability of
   embedding spaces based on their spectral statistics
-  * how similar their singular values are on the one hand, and
-  * their individual robustness measured by condition numbers, on the other hand
+  1. how similar their singular values are
+  2. their individual robustness measured by condition numbers
     * the condition number of a function measures how much f(x) can change for
       a small change in the input argument. This is used to measure how
       sensitive a function is to changes or errors in the input, and how much
@@ -110,11 +127,10 @@ https://github.com/xerevity/mappability
       Norwegian, Romanian and Turkish. These all come from the
     * same domain (encyclopedia articles), which condition was reported to be
       necessary for sufficient unsupervised mappings by Søgaard+ (2018)
-    * sizes may be very dissimilar for different languages, but these are the
-      largest among our experiments. We call this type of corpora
-      loosely-comparable Wikipedia, or L-Wiki for short
+    * sizes may be very dissimilar for different languages,
+      but these are the largest among our experiments
   * M, mildly-comparable (M-Wiki) corpus,
-    * separately for all of our 55 language pairs, by
+    * separately for all of our 55 language pairs
     * filtering articles with bidirectional cross-language links between the
       two Wikipedias
     * also expected to make sizes comparable within a language pair, but the
@@ -142,7 +158,7 @@ https://github.com/xerevity/mappability
 ## 3.3. Word Embedding Models
 
 * We train FastText (Bojanowski+ 2017) word vectors on all of the above corpora
-  using Gensim (Řehůřek and Sojka, 2010), with the following
+  using Gensim (Řehůřek and Sojka, 2010)
   * hyperparameters: dimensions: 300, negative samples: 5, context window: 5,
     minimum word count: 5, maximum vocabulary size: 200 000
 * To create the cross-lingual models we use three mapping methods:
@@ -169,9 +185,9 @@ https://github.com/xerevity/mappability
 ## 4.2 Languages
 
 * widely studied (Vulić+ 2019; Dubossarsky+ 2020; Doval+ 2020)
-* our evaluation on 110 pairs of 11 languages shows interesting and instructive
+* our evaluation on 110 pairs of 11 languages are interesting and instructive
 * mappings of loosely comparable Wikipedia embeddings involving Spanish perform
-  substantially better than English (Figure 2a )
+  substantially better than English (Figure 2a)
   * English Wikipedia probably covers too diverse and deep articles that none
     of the other Wikipedias do, which makes Spanish Wikipedia a better corpus
     for embedding mappings
@@ -187,14 +203,14 @@ https://github.com/xerevity/mappability
       style, editing, etc
   * only very close language relatedness is really beneficial,
     e.g. between Germanic and Romance languages, but
-    * Germanic to Finno-Ugrian >= Germanic to non-Germanic Indo-European
-      * might also be a useful observation for future work
+    * Germanic to Finno-Ugrian !< Germanic to non-Germanic Indo-European
+    * might also be a useful observation for future work
 
 ## 4.3 Corpus Size and Similarity
 
 * Our key observation is that
   one of the most required condition for good embedding mappings is corpus sim,
-  more precisely the amount of common contexts the words appear in, as a
+  more precisely the amount of common contexts the words appear in
   * complement to previous claims pointing to lang similarity and corpus size
     (Dubossarsky+ 2020; Vulić+ 2020)
 * We introduce two measures to quantify corpus similarity:
@@ -209,7 +225,7 @@ https://github.com/xerevity/mappability
 * Vulić+ (2020): mapping scores are greatly influenced by the size of the corp,
   * we include this information to our corpus data as well
   * We examined correlations using the token numbers
-    of the source and the target corpus, the arithmetic and harmonic mean, min
+    of the source and the target corpus, the arithmetic and harmonic mean, & min
   * min proved to be the most powerful indicator of mapping scores
 * Figure 4 shows the connection of the mapping scores to the measures above
   * All of these corpus properties seem to indicate performance well
@@ -226,17 +242,17 @@ https://github.com/xerevity/mappability
 
 * controlled experiments, in which we align embeddings of the same language,
   * training corpora from subsets of a single Wikipedia
-  * For 3 languages (English, Spanish and Hungarian) we create
-  * corpora in different sizes, and for all of these we select subsets that are
+  * For 3 languages (English, Spanish and Hungarian)
+  * corpora in different sizes, and for all of these we select subsets
   * second corpus to contain 0%, 33%, 66%, or 100% of the text in the first one
-* examine the effects of size and content overlap explicitly (and
-  * exclude the effects of typological differences between languages). These
+* examine the effects of size and content overlap explicitly
+  * exclude the effects of typological differences between languages
   * parts, hE, may contain very similar articles in the same field, which are
-    * small size and zero overlap still yield very high P@1 scores, as shown in
+    * small size and zero overlap still yield very high P@1 scores
     * Still, the trends are convincing that
-      content overlap is at least as important as corpus size. We show the
+      content overlap is at least as important as corpus size
 * These results also imply that
-  word embeddings represent word usage of a specific corpus, rather than a
+  word embeddings represent word usage of a specific corpus
 
 ## 4.5 Embedding Isomorphism
 
@@ -276,7 +292,7 @@ https://github.com/xerevity/mappability
     dependent on isomorphism
   * Often it even happens that the correlation to embedding sim/dissimilarity
     turns into negative/positive in the strictly-comparable case
-  * This raises the question if it is possible that
+  * This raises the question if ~ or ~
     * two models, in which the same word has different neighbors, are
       transformed so that the appropriate words still become nearest neighbors,
     * or above a certain score, isomorphism remains a requirement for perform
@@ -288,7 +304,7 @@ https://github.com/xerevity/mappability
 
 ## 4.6 Predicting BLI Scores
 
-* from the above studied corpus and isomorphism measures. We make predictions
+* from the above studied corpus and isomorphism measures
 * our three corpus properties, six isomorphism measures, and all of these
   combined, using random forest regression with the default parameters in
   Scikit-learn (Pedregosa+ 2011), evaluating the model with the
@@ -299,7 +315,7 @@ https://github.com/xerevity/mappability
     * only exception is Non-adversarial Translation of loosely comparable Wiki
 * Combining corpus and isomorphism measures usually does not improve either,
   * could mean that isomorphism depends on corpus properties as well
-    * [quality depend on isomorphism only through these corpus properties]
+    * [quality depends on isomorphism only through these corpus properties]
   * To check this, we make predictions of all isomorphism measures
     from our three corpus properties, and show the results in Table 5
   * although isomorphism is greatly influenced by corpus similarity
@@ -318,8 +334,8 @@ https://github.com/xerevity/mappability
     between Germanic or Romance
   * Mapping scores are well predictable even without any information about the
     languages, based on three properties of the corpora: corpus size,
-    proportion of common tokens, and distance of the word distributions. These
-    data also surpass existing embedding isomorphism measures as predictors
+    proportion of common tokens, and distance of the word distributions
+    * These predictors surpass existing embedding isomorphism measures
 * hE, this paper focuses on BLI scores only
   * BLI not correlate perfectly with downstream bilingual perf (Glavaš+ 2019)
   * The main difference between downstream and BLI evaluation scores is
