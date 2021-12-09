@@ -1,4 +1,4 @@
-Identifying the Importance of Content Overlap for Better Cross-ling Embed Mappn
+Identifying the Importance of Content Overlap for Better Cross-ling Embed Mappin
 Réka Cserháti, Gábor Berend
 1st Workshop on Multilingual Representation Learning EMNLP | MRL 2021
 
@@ -10,7 +10,7 @@ https://github.com/xerevity/mappability
 * we analyze cross-lingual word embedding models created by mapping-based align
 * We use several measures of corpus and embedding similarity to
   predict Bilingual Lexicon Induction (BLI) scores of cross-lingual embedding
-  * over three types of corpora, three embedding methods and 55 language pairs
+  * three types of corpora, three embedding methods and 55 language pairs
 * results corroborate that instead of mere size, the amount of common content
   in the training corpora is essential. This phenomenon manifests in that
   * despite of the smaller corpus sizes, using only the comparable parts of
