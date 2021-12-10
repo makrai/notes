@@ -11,7 +11,7 @@ ACL 2018
 * This work
   * fully unsupervised initialization that explicitly
     exploits the structural similarity of the embeddings, and a robust
-  * self-learning algorithm that iteratively improves this solution. Our method
-  * surpassing previous supervised systems. Our
+  * self-learning algorithm that iteratively improves this solution
+  * surpassing previous supervised systems
 * implementation is released as an open source project
 
