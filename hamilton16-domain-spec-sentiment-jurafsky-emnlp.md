@@ -51,8 +51,8 @@ summarized in Buechel+ 2018
       Igo and Riloff, 2009)
   * Often exploit distant-supervision signals (review scores, emoticons)
     specific to certain domains
-    (Asghar+ 2015; Blair-Goldensohn+ 2008; Bravo-Marquez+ 2015; Choi and
-    Cardie, 2009; Severyn and Moschitti, 2015; Speriosu+ 2011; Tang+ 2014)
+    (Asghar+ 2015; Blair-Goldensohn+ 2008; Bravo-Marquez+ 2015;
+    Choi & Cardie, 2009; Severyn & Moschitti, 2015; Speriosu+ 2011; Tang+ 2014)
   * unsupervised is to construct lexical graphs using word co-occurrences and
     then to perform some form of label propagation over these graphs
     (Huang+ 2014; Velikovich+ 2010)

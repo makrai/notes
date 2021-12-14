@@ -1,5 +1,6 @@
 COMET-ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs
-Jena D. Hwang, Chandra Bhagavatula, Ronan Le Bras, Jeff Da, Keisuke Sakaguchi, Antoine Bosselut, Yejin Choi
+Jena D. Hwang, Chandra Bhagavatula, Ronan Le Bras, Jeff Da, Keisuke Sakaguchi,
+  Antoine Bosselut, Yejin Choi
 AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 
 # Abstract

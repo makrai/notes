@@ -6,7 +6,7 @@ John McCarthy
 
 * real event
   * a question as what does the “J” in “John J. Hug” stand for has an answer
-  * In a made-up story, [such] questions ... do not necessarily have an answer,
+  * In a made-up story, such questions do not necessarily have an answer,
     and an intelligent person or program would know that
 
 # 2 Artificial natural language
@@ -14,7 +14,7 @@ John McCarthy
 components:
 1. formalism capable of expressing the assertions of the sentences
   * free from dependence on the grammar of the English language
-  * A good test ... would be to produce a program for translating ... into any
+  * A good test would be to produce a program for translating into any
     of several natural languages
   * artificial natural language—ANL for short.  The
   * grammar of ANL should be trivial and mathematical in character.  There
@@ -22,7 +22,7 @@ components:
     * given in English, German, Japanese and so on
     * a glossary that gives the precise meaning of the identifiers
     * some resemblance to the idea of “deep structure
-      * [n]idea is well enough defined
+      * nidea is well enough defined
 2. A data structure for expressing the facts
   * In such a data structure, it would be definite which robber pushed Mr. Hug
     first, and what the robbers said even though it is not stated in the story
@@ -38,22 +38,22 @@ components:
   1. Expression of the “general information” about the world
   1. A “problem solver” that could answer the above questions
     on the basis of the “facts”
-    * questions [and answers] expressed in the “fact” language
-      [to] avoid grammar problems
+    * questions and answers expressed in the “fact” language
+      to avoid grammar problems
 
 # 3 The use of logical formulas
 
 * individual constants 5representing people, groups of people, the main event
   and its sub-events, places, organizations, etc
-* representing [groups of agents by one individual constant each] or
+* representing groups of agents by one individual constant each or
   by using a single symbol G1 to represent the group of robbers
   * A good system will probably use both
   * If the number of robbers were not specified
   * Suppose it had further been stated that as the robbers left one of them
     threatened to return and kill Mr. Hug later but that it was not stated
-    whether this robber was the same one who operated the elevator ... R4
+    whether this robber was the same one who operated the elevator R4
   * we may want to give the group some properties
-    * the group robbed the store, [not] each member robbed the store
+    * the group robbed the store, not each member robbed the store
   * We don’t want to assert how many there were
 
 # 4 The need for nonmonotonic reasoning
@@ -62,22 +62,22 @@ components:
   whether there was someone else besides Mr. Hug and the robbers present.
 * However, sentences describing such another person could be added to the story
   without contradiction.
-* Our basis for the negative answer is ... Occam’s razor
+* Our basis for the negative answer is Occam’s razor
 * the notion of the minimal completion of a story
   * a process formalizing Occam’s razor
   * works from a set of sentences and is not logical deduction although it
   * might be accomplished by deduction in a meta-language that contained
     sentences about sets of sentences
-  * [not] deduction, because it generates sentences that contradict
+  * not deduction, because it generates sentences that contradict
 * It has been suggested that probabilistic reasoning should be used
 * it might make more sense to assign a probability to the correctness of the
   minimal completion
-* Another problem [is the isolation] from the rest of the world.
+* Another problem is the isolation from the rest of the world.
   * The members of the Police Emergency Squad all have mothers
 
 # 5 CONCLUSION
 
-* [each] predicate calculus sentence ... is generated approximately from a
+* each predicate calculus sentence is generated approximately from a
   sentence of the story
 * The completion, however, will depend on the whole of the story.
-* what can be determined from [stopping] in the middle of a sentence
+* what can be determined from stopping in the middle of a sentence
