@@ -21,11 +21,11 @@ https://chrisgpotts.medium.com/is-it-possible-for-language-models-to-achieve-lan
 
 * regularity, within sentences, across sentences, and potentially across
   documents and collections of documents. Present-day models might not benefit
-  from all this latent structure, but future models surely will. A very rich
+  from all this latent structure, but future models surely will
 
 # Objection: Language models lack communicative intent
 
-* ascribing intentions to other humans is incredibly difficult and inherently
+* ascribing intentions to other humans is incredibly difficult
 * we don’t know what cognitive primitives are necessary or sufficient for
   intentionality, so it is generally unclear what properties an AI system has to
   have in order to pass this bar; singling out language models seems unfair
