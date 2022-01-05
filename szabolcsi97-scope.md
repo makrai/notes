@@ -787,9 +787,103 @@ ok destruction: "it took n"-collective
 
 ## 8.1 Grab a witness and predicate distributively
 
+* sharp intuitive difference between Hungarian sentences that have HDistP or
+  PredOp filled, even when there is no truth conditional difference.  
+* DPs that occur in both positions are especially instructive in this regard.
+  (58) Tegnap sok diákunk meg-betegedett.  HDistP
+  (59) Tegnap sok diákunk betegedett meg.  PredOp
+* due to the possessive construction, they are both "presuppositional" and
+* the `many' phrases are interpretable as proportional in both cases. If this is
+* no standardly known reason for the sentences in (58) and (59) to be perceived
+  as not meaning the same. But that is the perception no native speaker would be
+  tempted to say otherwise, even though they might not be able to explicate the
+  difference. This is something to account for.
+* My account is that
+  * in (58) we take a set of students and claim that each of them fell ill. In
+  * (59), we take those who fell ill, and count our students among them.
+* The semantic analysis of HDistP that I am advocating is a generalization of
+  Ben-Shalom's (1993) proposal for inverse scope and
+  Chierchia's (1993) proposal for pair-list readings, which is
+  * based on Groenendijk and Stokhof's (1984). As was reviewed above,
+* Ben-Shalom assumes that inverse scope is effected by a binary quantier whose
+  working can be illustrated as follows: (60) a. Three referees read every/two
+  * `A` is a witness set of the quantier every/two abstract(s)
+* Chierchia assumes that pair-list readings are effected by a binary quantier
+* in both cases the quantier that takes inverse scope or induces a pair-list
+  * contribute a set to the interpretation of the sentence,
+    associated with a separate distributive operation "every x 2 A ."
+  * These authors assume that this behavior of the quantier is "unusual:" it
+  * I am assuming that offering up a witness to distributive predication is how
+    quantiers in HDistP always operate.  
+* English example: _Every referee read three abstracts_, on its direct S > O
+  reading is also calculated in the manner of (62b), rather than (62c) 
+  * `A` is a (=the) witness set of the quantier every referee c.
+* "every" in (62b) stands for the distributive operator and
+  in (62c) for the actual determiner. Thus the following
+* Hungarian example makes the contrast more transparent, perhaps:
+  (63) a. Több, mint hat fiú el-ment.  HDistP
+
 ## 8.2 The increasingness constraint
 
+* Both HRefP and HDistP accommodate only increasing quantiers.
+  * All decreasing and non-monotonic quantiers are conned to PredOp.
+* explanation. What kind of an explanation shall it be?
+  * Recall the heuristic formulated in (9) and used in various chapters of this
+    * (65) What range of quantiers actually participates in a given process is
+      suggestive of exactly what that process consists in.  
+* DPs in both HRefP and HDistP are interpreted in a way that is only available
+  to increasing quantiers. My analysis above has exactly this property. DPs in
+  * put up a witness as a logical subject of predication, and this is possible
+  * (66) If Det is increasing, but not if it is decreasing or non-monotonic,
+    det(N)(P) = \exists A, A a witness of det (N) \forall x \in A Px
+* The left hand side is the standard (GC theoretic, or "tripartite")
+  specication of the truth conditions
+  * The right hand side is the analysis I am proposing. (66) says that
+  * the proposed analysis yields the correct truth conditions if and only if the
+    quantier is increasing
+* the standard GQ theoretic or "tripartite" analysis of the inhabitants of
+  HDistP would yield logically correct results for all quantiers.  
+
 ## 8.3 Witnesses and minimal witnesses
+
+* Recall from (38) and (40) that referents in
+  * (H)RefP are claimed to be based on minimal witnesses, but referents in
+    (H)DistP on plain, not necessarily minimal, witnesses
+* This choice has to do with two factors: collective readings and anaphora. 28
+* (H)RefP
+  * (43a), 'Two boys lifted up the table.'
+  * A witness set of [[two boys]] is a set that contains >=2 boys and 0 non-boys
+  * But if the table was lifted up by a collective of four boys, then (43a) is
+    not true.
+  * Similarly, 'John or Bill lifted up the table,'
+    * a witness set of [[John or Bill]] would be {j, b} but the sentence would
+    * false in a situation where the collective comprising both John and Bill
+      did the lifting
+  * for collective readings we need plural individuals based on minimal
+    witnesses: just two boys in the 1st case, just John or just Bill in the 2nd
+* When the same DPs participate in distributive readings, the choice between
+  minimal and non-minimal witnesses does not make a truth-conditional diff,
+  because the quantiers in (H)RefP are all monotonically increasing: 'there is a
+  * But anaphora facts conrm that the referent introduced by two boys is one
+    with just two boys.  (67) Two boys came in. They were tired.
+  * While the first sentence is compatible with four boys coming in, the pronoun
+    in the second appears to refer to just those two boys that we singled out.
+  * i.e. referents introduced in (H)RefP are plural individuals based on minimal
+    witnesses of the quantier, irrespective of whether they are subjects of
+    distributive or collective predication.
+* in HDistP. Here the anaphora facts alone are decisive.
+  * Quantiers in HDistP are always subjects of distributive predication and they
+    are all monotonically increasing. Hence it makes no truth-conditional
+    difference whether we operate with minimal or non-minimal witnesses. But
+    consider anaphora. The critical example is (54a)
+* (54)a. Több, mint hat diákunk félreértette a kérdést.  
+         Lehet, hogy még másokat is találsz.
+  * Recall: mások: students who fall outside a particular set. Now, a minimal
+    witness of more than six students ] has exactly seven students. The question
+    is, are we forced to construe the first sentence to be about exactly seven
+    students? No. This discourse is just as fine if the actual number of the
+  * the referent introduced in HDistP must be any witness, not a minimal
+    witness, of the quantier.
 
 ## 8.4 Essential quantication, again
 

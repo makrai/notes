@@ -25,9 +25,9 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * most inappropriate of all for free word-order languages
 * grammatical relations have consistent properties across all these languages
   * rules like Passive, Dative Shift and the Raising rules behave in the same
-    way in most languages with respect to their effect on these grammatical
-    relations, though the word orders that result from these processes are quite
-    different
+    way in most languages
+    with respect to their effect on these grammatical relations,
+    though the word orders that result from these processes are quite different
 * Relational Grammar approaches this problem by
   * Subject, Object and Indirect Object (the term relations) to be primitives
   * language-universal rules that 'change' grammatical relations (Passive, Rais)
@@ -99,8 +99,10 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * the sequence of categories that are the inputs to the rule, the third member
   * the category of the output of the rule
 
-``` S_1: <F_1, <IV, T>, t>   (Subject-Predicate Rule) S_2: <F_2, <TV, T>, IV>
-(Verb-Direct Object Rule) ```
+```
+  S_1: <F_1, <IV, T>, t>   (Subject-Predicate Rule)
+  S_2: <F_2, <TV, T>, IV> (Verb-Direct Object Rule)
+```
 
 * it is merely how the operations F 1 and F 2 are defined that the langs differ
   * In English, an SVO language, the operations F 1 and F 2 concatenate
@@ -147,11 +149,15 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * phenogrammatical structure of the sentence is the way the English operations
     fill in these non-terminal nodes
   * universal grammatical relations are an aspect of tectogrammatics, not pheno
+
 * a few more grammatical relations
 * Indirect Object
   * three-place verb can be given the same relationship to a transitive verb as
 
-``` S_3: <F_3, <TV/T, T>, TV> (Verb-Indirect Object Rule) ```
+```
+  S_3: <F_3, <TV/T, T>, TV> (Verb-Indirect Object Rule)
+```
+
 * `F_3`
   * English: F 3 (a, b) = a to b', where b' is the accusative form of b
     * This simple description is only illustrative. Ways of remedying this:
@@ -240,7 +246,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 * Dative Shift
   * takes a 3-place verb, such as give, and converts it into a new 3-place verb
   * hE, the rule combining verbs in TV/T with their object inserts the _to_ and
-  * The semantic operation for Dative Shift (S8) maps (x, y, z) to (x, z, y) 
+  * The semantic operation for Dative Shift (S8) maps (x, y, z) to (x, z, y)
   * _Mary gives John a book_ will be produced as the analysis tree in (24)
     shows,
 * Raising to Object Position. This rule, given in (27), will take as
@@ -258,20 +264,20 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 * Semantic Operation: \l y \l x \exists P P(x) CAUSE a'(y)
 * Other languages also have a causative rule for turning a
   * transitive verb into a ditransitive causative verb this is S12 in (33) and
-  * ditransitive verb into a four-place causative (cf. Dowty 1979).
+  * ditransitive verb into a four-place causative (cf. Dowty 1979)
 * There is a construction in a number of Bantu languages in which a noun phrase
   with locative, benefactive, or instrumental meaning appears in the syntactic
   position of the direct object and behaves, with respect to other syntactic
   rules, as if it were a direct object;
   * a case of a relation-expanding rule in which the added NP appears as the DO
-  * adds a suffix to the verb stem (called an applied affix by Bantuists), e.g.
-    the suffix _-r-_ in Chichewa.
+  * adds a suffix to the verb stem (called an _applied affix_ by Bantuists),
+    e.g. the suffix _-r-_ in Chichewa
 
 # 5 ARGUMENTS FOR THIS TREATMENT OF GRAMMATICAL RELS AND REL CHANGING RULES 19
 
 * why this approach might be preferable to either the TG or RG accounts of the
 * §5.1 and §5.2 provide reasons for preferring the definitions of gramm rels,
-  the remaining arguments pertain to relation-changing rules.
+  the remaining arguments pertain to relation-changing rules
 
 ## 5.1. Universal Tendencies in Word Order 19
 
@@ -282,14 +288,14 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     and argument relations is of course not new (cf. Vennemann 1973), but what
   * Montague's semantic framework explicates which constituent is "functor" and
     * such independent justification is of course necessary if alleged
-      explanations of word order have any true explanatory power.
+      explanations of word order have any true explanatory power
 
 ## 5.2. Discontinuous Constituents
 
 * superior to the PS grammar-plus-transformational component theory; this
 * arises from the use of operations like Right Wrap in the structure building
 * Anderson and Chung (1977): in Breton, there is no evidence that the VSO word
-  order arises either from an underlying SVO order or an underlying VOS order.
+  order arises either from an underlying SVO order or an underlying VOS order
 * from the point of view of several syntactic rules, the combination of verb and
   object seems to behave as a constituent that is, like a VP constituent in
 * paradoxical under the transformational theory, since if VSO were the
@@ -299,7 +305,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 
 ## 5.3. "Structure-Preserving" Rules
 
-* relation-changing rules are rules applying to verbs or VPs, not to sentences.
+* relation-changing rules are rules applying to verbs or VPs, not to sentences
 * the category-changing analysis predicts three commonplace observations about
   * TG and RG have certainly described adequately but in no way predict; these
   * discussed in this and the two following sections.  Because these
@@ -312,7 +318,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 ## 5.4. "Relation-Changing" Morphology is Marked on Verbs 21
 
 * when the application of a relation-changing rule is signified morphologically,
-  that marking appears on the verb of the sentence, not e.g. on the NP changed 
+  that marking appears on the verb of the sentence, not e.g. on the NP changed
 * here: since the only constituent the relation-changing rules have to operate
   on at the time they apply is the verb, hence there is nothing else that a
   * e.g. the passive morphology, the _applied suffixes_ in Bantu, causative
@@ -330,7 +336,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 * these operations are lexically governed in many languages, and that
 * the lexical item which governs them is invariably the verb of the sentence. As
   (rather than, say, the NP to be moved)
-* nothing in the TG analysis of these constructions nor in RG predicts that 
+* nothing in the TG analysis of these constructions nor in RG predicts that
 * why re1ation-changing rules should be governed lexically while other rules,
   such as Relativization, Question formation and other unbounded rules, are
   never lexically governed in any language. Under the category-changing
@@ -339,19 +345,19 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 
 * Dowty (1975, 1978) proposed a theory of lexical rules for a Montague Grammar
   * Dative Shift, Raising and other such alleged "lexically governed" transform-
-    ations are lexical rules. According to this proposal,
+    ations are lexical rules
 * lexical rules are in general exactly the same as that of true syntactic rules,
   * difference being in the status of the outputs of the rule in the grammar:
-    * syntactic rules, the outputs are all grammatically derived expressions of
-    * lexical rules, the outputs are: merely possible derived lexical items of
+    * syntactic rules, the outputs are all grammatically derived expressions
+    * lexical rules, the outputs are: merely possible derived lexical items
       * meanings: some conform exactly to that produced by the lexical rule,
         other words do not
 * It also follows, that a putative syntactic rule can be treated as a lexical
-  rule instead only if the expressions to which the rule applies are finite in
+  rule instead only if the expressions to which the rule applies are finite in #
   * this will be the case for Dative Shift and some of the other rel chang rules
     as I have formulated them because they in effect apply only to single verbs,
     * unlike under the TG or RG accounts, because the rules in these frameworks
-      apply to an infinite number of sentences, not to a finite list of verbs.
+      apply to an infinite number of sentences, not to a finite list of verbs
 * it would not be possible to reanalyze rules such as Relative Clause Formation
   (in English, at least) as category-changing rules applying to a finite number
 * Bresnan has recently proposed a view of a grammar in which rules such as
@@ -359,25 +365,24 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * she regards all function-dependent rules as lexical rules in principle, I am
   * Bresnan would consider the English passive rule to be a lexical rule, but I
     do not. Under the present framework,
-  * two sets of arguments can be given for treating Passive as a syntactic rule.
+  * two sets of arguments can be given for treating Passive as a syntactic rule
     * there are cases in which the TV expression that undergoes Passive is a
-      syntactically derived phrase instead.
+      syntactically derived phrase instead
       * e.g. all of the italicized phrases in (36) are synt complex TV phrases
       * the basic verb occurring within them would be put in some other category
     * Bach (this volume) has argued: under the assumptions of the approach taken
       by this paper, purpose clauses such as _to deliver groceries in_ in (37)
       must be analyzed as modifiers of transitive verbs, not as modifiers of
-      verb phrases.
+      verb phrases
       * the TV expressions that are passivized in (39) must be _buy for Bill to
         deliver groceries in_ and _bring in for us to talk to_ respectively;
       * syntactically complex expressions which have a potentially infinite
         variety offorms, so the Passive rule I have given cannot apply to them
 * The view of category changing rules as potentially either lexical or syntactic
   * we can recognize a single language-universal characterization of these
-  * they can be lexical rules in some languages and syntactic rules in others.
-    (Causative, for example, is clearly a lexical rule in English, but I
-    consider it a syntactic rule in Turkish). Since the rules have the same form
-    in either case, it also makes it plausible that
+  * they can be lexical rules in some languages and syntactic rules in others
+    * Causative, for example, is clearly a lexical rule in English, but I
+      consider it a syntactic rule in Turkish). Since the rules have the same
   * a language might have one of these rules as a lexical rule at one historical
     stage of its development and easily reanalyze it as a syntactic rule at a
     later stage (or vice versa) without any significant change in the form or
@@ -395,7 +400,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   can take advantage of the possibility of the novel way of treating
   discontinuous constituents I mentioned earlier to
   * systematically exclude on syntactic grounds what had been thought to be
-    lexical exceptions to the passive rule.
+    lexical exceptions to the passive rule
   * we want maintain the claim that Passive is a syntactic rule
 * Bach suggests that it is a systematic principle that when an infinitive
   complement of a verb is syntactically controlled by a NP outside the
@@ -436,10 +441,10 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   prohibited from applying in the lower clause before causative formation
   converts the two-clause structure to one clause
 * if causative rules are relation-expanding rules applying to verbs, as sugges-
-  * there is no lower clause involved in the derivation of causative sentences.
+  * there is no lower clause involved in the derivation of causative sentences
   * arguments for the presence of the underlying two-clause-structure are sem
   * hypo: causative formation (or "Verb Raising") is pre-cyclic (Aissen 1974)
-* If causative formation is treated as a 
+* If causative formation is treated as a
   * lexical rule in a given language while Passive, Reflexivization, etc. are
     handled by syntactic rules in
     * the effect of a "lower clause" application of any such syntactic rule is
@@ -450,7 +455,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
       "embedded subject" can be observed (e.g.  subject-verb agreement), but
     * Passive and Reflexivization will give as output expressions of category
       IV,
-    * it is now possible for such rules to "feed" causative formation.
+    * it is now possible for such rules to "feed" causative formation
 * causatives of passives do appear in some languages, ones which have synt cau
   * (cf. Newmeyer (1976, note 10) on Eskimo; Zimmer (1976) on Turkish). And
   * reflexive pronouns sometimes appear in complements of causatives in various
@@ -466,7 +471,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * causative can perhaps be excluded from applying to certain motivated
     subcategories of verb phrases; conditions on Reflexivization will vary from
     language to language, causing Reflexivization to interact differently with
-    causativization in different languages.
+    causativization in different languages
 
 ## 5.9 "Wanna" Contraction 29
 
@@ -478,7 +483,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * can apply across the gap left by Passive, Raising, or Equi (on mov/del
     * in my anal, no deletion or movement of a NP is involved in these latter
 * my assumption that gaps uniformly block contraction
-* Jacobson (in this volume) surveys the accounts that have been proposed 
+* Jacobson (in this volume) surveys the accounts that have been proposed
 
 ## 5.10 Theoretical Simplicity
 
@@ -489,7 +494,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
 * my approach is much less detailed, but all results from
   * Montague's general approach to syntax and semantics, plus only two
   * 'single argument' principle in (6) and the assumption that
-  * relation-changing rules are operations on verbs, not on full sentences.
+  * relation-changing rules are operations on verbs, not on full sentences
   * All the rest follows as a consequence of these assumptions.  Thus it is
     * e.g. Stratal Uniqueness law, the Oblique Law, the Final 1 Law in RG
     * cannot be rescinded except on pain of causing the whole analysis to collap
@@ -514,8 +519,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * man + [be certain to be `*there` here]
     * `*there i`s a special "non-surfacing" abstract NP that is replaced with a
   * by Lauri Karttunen as the "ugly object" analysis. Here one
-    * treats _there_ syntactically as a NP like any other and assigns it a
-      denot.
+    * treats _there_ syntactically as a NP like any other and assigns it a denot
     * denotation is an abstract and unique semantical object (the "U gly
       object")
     * A particularly clever version of an "ugly object" analysis is given by Sag
@@ -523,33 +527,32 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
       by Montague to effect the semantic coherence/incoherence of the
       interpretations
   * by Gazdar in unpublished work
-    * also given a denotation which has (virtually) no effect on the meaning, 
+    * also given a denotation which has (virtually) no effect on the meaning,
     * the filtering of inappropriate sentences with _there_ is handled by
       syntactic features rather as verb agreement is treated, and not by
       "semantic filtering
-  * See Cooper (ms., 1979) for yet another kind of solution.  
+  * See Cooper (ms., 1979) for yet another kind of solution
 * cases where RG makes reference to the underlying grammatical status of a NP,
   rather than its "derived" status, to describe some other grammatical facts
   * Perlmutter (this volume) certain cases of control of reflexivization by an
-    NP in Russian depend on whether that NP was an underlying subject ("initial
-    1") or not.
+    NP in Russian depend on whether that NP was an underlying subject (init 1)
   * in my anal, the class of "chomeurs" of RG would be divided up into several
-    distinct kinds of grammatical relations.
+    distinct kinds of grammatical relations
 * in Icelandic (Andrews, this volume), the case-marking on "Raised" NPs may be
   one of several cases but seems to depend systematically on the "underlying"
-  grammatical role of the NP (from the
+  grammatical role of the NP
 * a striking asymmetry in the data that argues for/against the categ chang methd
   * the pro evidence appears in all (or most, in the case of lexical government)
     of the sentences of the language in which a relation-changing rule has
     applied
-  * the evidence that argues against it appears in relatively few sentences (at
-    least in English-like languages)
-  * This asymmetry is all the more striking from language acquisition.
-    * Sentences with raised or passivized dummy NPs are relatively rare and no
+  * the evidence against it appears in relatively few sentences
+    (at least in English-like languages)
+  * This asymmetry is all the more striking from language acquisition
+    * Sentences with raised or passivized dummy NPs are relatively rare
       * confined primarily to learned discourse, hence
       * children learning their native language would be exposed to thes late,
       * a child should in any case acquire a non-movement analysis long before
-        the data supporting a movement analysis is encountered.
+        the data supporting a movement analysis is encountered
 
 # 7 ERGATIVE LANGUAGES
 
@@ -557,67 +560,65 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   characteristics to the extent that the "notional [English]
   * object" of a transitive verb is treated syntactically in the same way as the
     subject of an intransitive IV, while the "notional
-  * subject" of a transitive verb is treated differently. 
-* (The most frequent manifestation of ergativity is case marking: here
+  * subject" of a transitive verb is treated differently
+* (The most frequent manifestation of ergativity is case marking
   * the case marking of the notional object of a TV is the same as the subject
     of an IV, in which instance this marking is known as absolutive case,
   * the case marking of the notional subject of a TV is called the ergative
   * The terms nominative and accusative are then reserved for the more familiar
-* I will sketch how some ergative languages can be treated in my approach to
 * divide my discussion among three (idealized) types of ergative languages:
-  * deep ergative languages 
+  * deep ergative languages
     * not only case marking but also all other syntactic properties that
       distinguish subjects from objects follow an ergative pattern
     * endnote 14: there are those who are skeptical of Dixon's claim that there
       are "deep ergative" languages
       * nothing in the general account of grammatical relations presented in
         this paper hinges on the existence of "deep ergative" languages
-  * surface ergative languages (in which relatively few erg characteristics) 
-  * split ergative languages 
+  * surface ergative languages (in which relatively few erg characteristics)
+  * split ergative languages
     * ergative patterning consistently in some tenses but never in others
 * I have not even mentioned semantic notions like "agent" and "patient" in my
-  * we: a referential theory of semantics and our compositional principles for
+  * in a referential theory of semantics and compositional principles
   * it suffices to identify, e.g., a transitive verb's meaning with a relation
   * it is only in the domain of lexical semantics that notions like agentivity
-    * what enable one to determine whether an arbitrary pair is a member thereof 
-    * Dowty 1979 for extensive discussion of lexical semantics).
+    * what enable one to determine whether an arbitrary pair is a member thereof
+    * Dowty (1979) for extensive discussion of lexical semantics)
 * for any relation R denoted by a transitive verb, a verb denoting the converse
-  of R (denoted R -1) would indicate the same "information" as the original verb
+  of R (denoted R^-1) would indicate the same "information" as the original verb
   * any English-like language is unlikely to have such a verb, and I believe
   * languages seem to follow a set of systematic principles that determine, for
     any relation R, which of R and R^-1 is denoted by a verb. These principles
-    * If x causes something to happen to y, R is "lexicalized", not R^-1 (cf.
+    * If x causes something to happen to y, R is "lexicalized", not R^-1 (cf
     * If x is a sentient being that perceives something about y or has an
       emotion or attitude toward y, R is lexicalized not R^-1 (see, hear, love)
-    * If x is moving and y is stationary, R is lexicalized, not R^-1 
-      (enter, overtake, pierce, collide with) 
+    * If x is moving and y is stationary, R is lexicalized, not R^-1
+      (enter, overtake, pierce, collide with)
     * perhaps others are necessary as well, and perhaps a different formulation
 * it would be a mistake conflate all three into a single definition of "agency",
-  * there is a class of verbs for which principles (i) and (ii) give conflicting
-    results, and
+* there is a class of verbs for which principles (i) and (ii) are conflicting
   * it is in this class and only in this class that one finds both a relation
-    and its converse lexicalized. This is the infamous class of
-  * "psychological" verbs, the class including verbs 
-  * e.g. _seem, surprise, disappoint, frighten, anger, please,_ etc.  
-  * x causing some emotion in y, y perceives an emotion toward x. Here one finds
-* Here one finds 
-  * pairs of independent lexemes, one the converse ofthe other
+    and its converse lexicalized
+  * "psychological" verbs
+  * e.g. _seem, surprise, disappoint, frighten, anger, please,_ etc
+  * x causing some emotion in y, y perceives an emotion toward x
+* Here one finds
+  * pairs of independent lexemes, one the converse of the other
     * I like it vs. It pleases me, German mögen vs. gefallen,
-    * _I suppose it is true_ vs. _it seems true to me_), and 
+    * _I suppose it is true_ vs. _it seems true to me_), and
   * various constructions systematically related to their converses by
     operations other than the usual passive rules, e.g. the
     * "Psych Movement" in English (I am surprised at it, it surprise me),
     * "reflexive verbs" or "middle verbs" in other languages.  Here also
   * a verb may "reverse" its subject and object historically over time, as was
-    * e.g. English think.  
-* principles (i)--{iii) are essentially independent of the system of gramm rels
+    * e.g. English think
+* principles (i)--(iii) are essentially independent of the system of gramm rels
 * "deep ergative" language 14 like Dyirbal (Dixon 1972, 1979)
   * conforms to the same universal principles of grammatical rels as non-erg
-  * the converses of principles (i)-(iii) are employed in its lexical semantics.
+  * the converses of principles (i)-(iii) are employed in its lexical semantics
   * the absolutive/erg NPs are actually its grammatical subjects/obj
   * the relation-changing rules of Dyribal are on this view essentially the same
   * the so-called "antipassive" rule of Dyirbal is simply the Passive in (18)
-    and its semantic interpretation is the same as is given in (18).
+    and its semantic interpretation is the same as is given in (18)
   * A complete Montague fragment of this kind for Dyirbal: Schmerling (1978),
 * A "surface ergative language" i.e. less ergative characteristics than non-erg
   * a less elegant syntax than a consistently ergative or consistently non-erg
@@ -628,15 +629,16 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * if the IV is intransitive, the subject will be marked with absolutive
 * when a language is analyzed as "deep ergative" but still has a few non-erg
   * the non-ergative characteristics will have to be treated in a way parallel
-    to the ergative characteristics of a "surface ergative" language. 
+    to the ergative characteristics of a "surface ergative" language
   * e.g. Dyirbal is a fairly consistently ergative language, but
-    the case marking on first and second person pronouns follows a nom/acc patt.
+    the case marking on first and second person pronouns follows a nom/acc patt
   * the subject-predicate rule for Dyirbal will specify that
-    the subject is marked absolutive when it is not a first or second person
-    pronoun, nominative when it is such a pronoun and the IV is intransitive,
-    and accusative when the subject is such a pronoun and the IV is transitive.
-    The verb-object operation marks the object ergative when it is not such a
-    pronoun but nominative when it is.
+    * the subject is marked 
+      absolutive when it is not a first or second person pronoun,
+      nominative when it is such a pronoun and the IV is intransitive, and
+      accusative when the subject is such a pronoun and the IV is transitive
+  * The verb-object operation marks the object ergative when it is not such a
+    pronoun but nominative when it is
 * the choice of whether to analyze a language as deep ergative or surface erg
   * in Eskimo, the ergative and non-ergative characteristics seem about equal
   * how the language treats coordination: when an intransitive IV is conjoined
@@ -647,21 +649,21 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * follows straightforwardly from Montague's treatment of IV -conjunction in
 * split ergativity by tense where the ergative pattern appears consistently
   (i.e. as deep ergativity) in some tenses
-  * I will sketch a theoretical option that presents itself in this approach for
+  * I will sketch a theoretical option that presents itself in this approach
   * a number of languages follow an ergative pattern in past tense but a
-    non-ergative pattern elsewhere (Dixon 1980). 
-  * (This method would only he helpful if the past tense ergativity is "deep",
-    though I do not know if any such cases actually exist.) 
-  * Bach (ms.) points out, assigning the syntactic cat IV to the sem cat t/T
+    non-ergative pattern elsewhere (Dixon 1980)
+  * (This method would only be helpful if the past tense ergativity is "deep",
+    though I do not know if any such cases actually exist.)
+  * Bach (ms.) points out (assigning the syntactic cat IV to the sem cat t/T)
   * treat tenses as functors that combine with verbs, rather than as operations
     on full sentences, yet still permit the semantics of tense to be treated
-    adequately. If one adopts this approach and also treats
-  * tenses as always combining with a lexical verb (i.e. a verb that has not yet
-    been combined with its objects, if any), it would be possible to give
+    adequately
+  * tenses as always combining with a lexical verb
+    (i.e. a verb that has not yet been combined with its objects, if any), it
   * the semantics of the tensing operation to
     * "reverse" the interpret of subject and object, in effect turning a
     * place the verbs in a new syntactic subcategory, which would trigger
-      ergative/absolutive case marking.
+      ergative/absolutive case marking
 
 # 8 RELATION-CHANGING VERSUS VARIABLE-BINDING RULES
 
@@ -672,35 +674,34 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * follows from
     * a general constraint in Montague's theory that each syntactic rule must
       have a unique interpretation, and from the fact that
-    * these rules are operations on verbs. For
+    * these rules are operations on verbs
 * rules like relativization that seem to extract NPs from various positions, a
   * like variable binding in logic: a noun phrase within the relative clause
     (perhaps an "empty" one) plays the semantic role of a variable in logic, and
     the semantic interpretation of the relative clause is that the variable
-    within the clause is bound. For this kind of rule it does
+    within the clause is bound
   * not matter where the variable occurs within the clause, it may even be
-    embedded in a subordinate clause within the relative clause. Thus
+    embedded in a subordinate clause within the relative clause
   * the hierarchy Subject/Direct Object/Indirect Object plays no role whatsoever
-* relativization, across languages, seemed to be governed by this hierarchy -
+* relativization, across languages, seemed to be governed by this hierarchy
   * i.e. there are some languages in which only subjects may be relativized,
   * (Keenan and Comrie 1977)
   * our analysis thus offers no explanation at all for this observation
   * my speculation
-    * languages that only allow relativization on subjects actually do
-      not use variable binding at all in forming relative clauses but rather
-      combine an IV i.e. a sentence lacking a subject with the head noun to form
-      a relative clause; for example, man who walks would come from man plus the
-      IV walks.  It would certainly be possible to write such a rule in
-      Montague's system in such a way as to get the meaning right.
+    * languages that only allow relativization on subjects
+      do not use variable binding at all in forming relative clauses but rather
+      combine an IV i.e. a sentence lacking a subject with the head noun
+      to form a relative clause; 
+      e.g. _man who walks_ <- _man_ plus the IV _walks_
     * A language which allows relativization on both subjects and objects (but
       no other positions) would then have a second relative clause: rule that
       forms a relative clause out of a TV phrase (along with another NP to serve
       as its subject), and so on
     * At some point a language would switch to a variable binding strategy in
-      order to form all kinds of relative clauses by a single rule. Under this
-    * i.e. two kinds of strategies for forming relative clauses, with a discrete
-    * categorial rules and variable-binding processes. The converse may obtain
-* e.g. variable- binding strategies for what in English are category-changing
+      order to form all kinds of relative clauses by a single rule
+    * i.e. two kinds of strategies for forming relative clauses
+    * categorial rules and variable-binding processes
+* e.g. variable-binding strategies for what in English are category-changing
   * a dialect of Shona studied by Kathryn Hodges of the University of Illinois
   * one can passivize not only the DO, the IO and objects of prepositions within
     the verb phrase, but even, in some circumstances, a NP from a lower clause
@@ -709,8 +710,101 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     _That man is believed by John that Mary loves (him)_. The only way I can
   * by a rule that "passivizes" an IV by binding a variable within the IV and
     interpreting the IV in such a way as to let the variable be identified with
-    the eventual subject of the IV. If this is correct, the distinction between
+    the eventual subject of the IV
 
 # 9 THE ELUSIVE BOUNDARY BETWEEN ARGUMENTS AND MODIFIERS
+
+* three cases where the roles of arguments/modifiers of a verb overlap
+* benefactive NPs versus Indirect Objects
+  * In a great many languages the case marking is the same
+  * the most common three-place verbs in various languages
+    e.g. give, sell, show, take, promise, award, offer, say
+  * the indirect object in almost all cases names a person who also benefits, 
+  * some languages might conceivably get by without three-place relations but
+    rather make do with only two-place verbs plus benefactive modifiers (of
+    category IV/IV)
+    * Perhaps such languages later change and distinguish between datives (arg)
+      and mere benefactives, and thus
+    * the earlier stage explains the converg of case marking between ben & dat
+  * children, when they really understand three-place verbs, may have a grammar
+    with only twoplace verbs plus benefactives, but
+    * the concurrence between benefactive and indirect object case forms in
+      their parents' speech allows them to understand roughly what is being said
+* the genitive case, this convergence being one that occurs very widely in
+  * nouns, rather than verbs
+  * many nouns are inherently relational that is they denote two-place relations
+    * e.g. father or a mother, or a friend
+  * the genitive case serves to mark the second argument place of the noun;
+  * _John's father_ denotes the individual that stands in the father relation
+  * the genitive serves much the same role for relational nouns as the
+    accusative case does for transitive verbs
+  * genitive case can play another role as well, in all or almost all languages
+    * a highly context-dependent modifier,
+      indicating that there is some very salient relation
+      that the genitive NP bears to the individual denoted by the head noun, but
+    * _John's chair_ might mean the chair that John owns, the chair that John
+      built, the chair that John is sitting in or standing near, and so on
+      depending on the context in which it is used. Rich
+  * Plato was aware of this double role that genitives play, for Plato is said
+    * "That dog is John's dog; that dog is a mother, therefore, that dog is
+      John's mother."
+  * question whether in some languages, or at some stages of language acquisit
+    * the genitive is interpreted as indicating a context-determined relation,
+      rather than sometimes as denoting the argument of a relational noun
+    * e.g. _mother_ might be analyzed as merely denoting a set, and the phrase
+      _John's mother_ might be analyzed as denoting an individual that is a mother
+      and stands in some important relation to John
+* the agent phrase of a passive
+  * in many languages there is no agentive passive, only an agentless passive,
+  * children acquire agentless passives before agentive passives; these
+  * the agentless passive is more basic
+  * in a great many languages, the agent of a passive is marked by the inst
+    * or a preposition that elsewhere expresses instrumentality
+  * e.g. the history of English, not only with the preposition _by_ but also by
+    the prepositions _from, with, through_, and the dative case alone,
+    * all devices elsewhere used to express instrumentality (cf. Visser 1963)
+  * I suggest that some languages with apparent full passives really have only
+    agentless passives as category-changing rules and that the agent phrase in
+    such a passive is really functioning as an instrumental
+  * e.g. John was kissed by Mary might really be analyzed as saying that
+    John was kissed (by someone or other) and that this came about by means of M
+* problem of finding a criterion for determining whether a dative etc is an arg
+  of a verb (or noun) or the role of a modifier
+  * both kinds of roles are taken by these cases in languages at one time or ano
+  * the number of grammatical roles played by noun phrases may greatly exceed
+    the number of distinct morphological case forms employed by the language;
+    * postulating two or more distinct rules which use the same case marking for
+    * attempt in Montague's theory to determine "the meaning" of the dative, or
+      genitive, or instrumental case
+* this convergence may have its explanation in the stepwise nature of lang acqui
+  * at an early stage, there are certain graspable relations
+    e.g. "x is the agent of an event y", "x is the instrument of event y",
+    "x is an object connected with y in some salient way" and that these
+    * learning of relational verbs may come later than that of non-rel verbs
+  * the case marking of the arguments of verbs and nouns corresponds with that
+    for these graspable relations between events and participants, the child is
+    able to understand roughly what the adult says
+  * Later a more sophisticated grammar  having the same overt syntactic form,
+    but a different semantics
+* parallel to that lexical rules are first acquired as syntactic rules
+  * lexically derived words need not be limited in meaning to exactly what a
+    lexical rule predicts for them, but can range over a variety of more
+  * a three-place relation can have a greater variety of meanings than can the
+    combination of a two-place verb with a benefactive (instrumental, etc.)
+  * evidence from language acquisition studie:s that children do at first use
+    lexical rules as if they were syntactic rules
+    * e.g. causative (Bowerman 1974) and noun compounding (Clark and Clark 1979)
+* the choice of analyzing certain NPs as modifiers versus args in the rivalry of
+  * case grammar analyses
+    * relations like "agent", "experiencer", "goal", etc. are primitives of the
+      semantic interpretation of a sentence, apart from the meaning of its verb
+    * a kind of "modifier" analysis
+  * Generative Semantics and other theories 
+    * the correspondings NPs have these semantic associations in virtue of the
+      meaning of the verb of the sentence
+* In the philosophy of language, this same question has arisen (with diff exmps)
+  as the choice between treating adverbials as
+  * predicates of events (Davidson's 1967 analysis of _with a knife_ as a pred)
+  * additional argument places of verbs
 
 # NOTES 42
