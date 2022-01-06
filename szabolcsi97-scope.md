@@ -891,4 +891,11 @@ ok destruction: "it took n"-collective
 
 # 10 APPENDIX ON HUNGARIAN 37
 
+* two issues pertaining to Hungarian that may be necessary for the reader to
+  * the presentation of (29), the global structure of a Hungarian sentence, in
+    current syntactic terms
+  * (72) What positions do postverbal DPs occupy and
+    what are their scope options?
+    * with which I start
+
 # REFERENCES 43
