@@ -102,7 +102,7 @@ Beth Levin, Malka Rappaport Hovav
   * requiring that the arguments are appropriately represented in the syntactic
     representation of its clause. 2 Such principles include the
     * Principles and Parameters framework’s Projection Principle (Chomsky 1981)
-    * Lexical-Functional Grammar’s Completeness and Coherence Conditions
+    * LFG’s Completeness and Coherence Conditions
       (Kaplan and Bresnan 1982), and
     * Role and Reference Grammar’s (RRG’s) Completeness Constraint
       (Foley and Van Valin 1984; Van Valin 1993b; Van Valin and LaPolla 1997). 3
@@ -557,6 +557,246 @@ Beth Levin, Malka Rappaport Hovav
       associated with certain verbs
 
 ## 1.6 When subjects are not agents and objects are not patients 24
+
+* agent–patient verbs constitute a significant part of the class of transitive
+  * so uniform in their argument realization,
+  * many theories of argument realization make direct reference to the semantic
+    roles agent and patient – or its relative theme (see section 2.4) – and have
+  * misleading for two reasons. 
+    * “agent” and “patient” are not the only semantic notions associated with SO
+    * subject and object often have multiple morphosyntactic realizations, and a
+      * deviations from the agent and patient prototypes are
+        sometimes, but not always, associated with
+        deviations from the prototypical morphosyntactic realizations of S and O
+* Although agents of two-argument verbs are always subjects,
+  * some languages also allow a range of nonagents as subjects. These include
+    * nonagentive causes, experiencers, and emitters (Fillmore 1968; Hawkins
+      1985; B. Levin and Rappaport Hovav 1995; Schlesinger 1995), as we
+  (24) storm destroyed the crop.
+       bulldozer flattened the hovels.
+       child hated the spinach.
+       old machine spews smoke.
+* location and measure subjects, though
+  * Hawkins (1985), citing Rohdenburg (1974), and Perlmutter and Postal (1984).
+  * the natural Hebrew translations of these sentences do not maintain the same
+    subjects.
+  (26) a. This room sleeps five people.
+       b. This edition of the text book had added a new chapter.
+       c. A dollar won’t buy a cup of coffee any more.
+  * the preverbal NPs in the sentences in (26) are subjects by virtue of
+    determining verbal agreement, these sentences do
+    not have corresponding verbal passives.) Furthermore, these
+* languages to differ as to what nonagent arguments may be subjects
+  (DeLancey 1985; Dixon 1979; Guilfoyle 1995, 2000; Hawkins 1981, 1982, 1985,
+  1995; van Voorst 1996). Across languages, these nonagent arguments
+  * those that are semantically “close” to agents, including
+    natural forces, experiencers, instruments, and even emitters, as in (24)
+  * many fewer languages allowing the types of subjects that are further (26)
+  * Irish (Guilfoyle 1995, 2000) and Jacaltec (Craig 1976), do not allow even
+    the semantically “closer” arguments to be subjects. In fact, many languages
+* In English the nonpatient arguments that are not prototypical agents need not
+  be expressed as subjects; for example, they may be obliques, as in (27)–(30),
+  an alternative usually not open to true agent arguments, as shown in (31) and
+  b. His uncle died from/of pneumonia.
+  b. The chocolate melted in the sun.
+  b. Smoke spews from that old machine.26 
+  b. Five people can sleep in this room.
+  b. ∗ Caesar died from/of Brutus.
+  b. ∗ The chocolate melted in/from me.
+* the factors that determine subjecthood are quite different from those that
+  determine expression as an oblique; the latter involve much finer-grained sem
+* Two additional challenge for the algorithm determining the subject. First,
+  * patients which are expressible as direct objects of transitive verbs can
+    sometimes be expressed as subjects of
+    * the intransitive uses of the same V (open, crack)
+    * semantically related intransitive verbs (fell/fall, kill/die)
+  * languages often have one or more morphosyntactic processes which create
+    subjects from objects, with passive being the most widely cited.
+* The analysis of patient subjects depends on the basic assumptions adopted
+  concerning the nature of the mapping between lexical semantics and syntax.
+  * A theory that adopts Baker’s (1988) Uniformity of Theta Assignment Hypoth-
+    * maps the patient argument to direct object in passive as well as active
+      * its realization as subject in passive sentences is accomplished by a
+        syntactic “promotion” – most often, movement. Such analyses are
+    * typical of multistratal theories of syntax, including 
+      Principles and Parameters and its descendants and Relational Grammar.
+  * Monostratal theories deal with such phenomena in other ways. They may impose
+    * a more sophisticated organization over the semantic roles themselves, as
+      in Role and Reference Grammar (Foley and Van Valin 1984; Van Valin and
+      LaPolla 1997), or they may introduce
+    * another level of analysis which is not necessarily syntactic in nature, as
+      in LFG’s Lexical Mapping Theory (Bresnan 2001;
+      Bresnan and Kanerva 1989). The ways in which theories deal with these
+      * briefly discussed in section 5.1; see also Sadler and Spencer (1998).
+* implications for the design of a lexical semantic representation. Data such as
+  * Fillmore (1970), break to represent a verb which selects an agent argument;
+  * break is not necessarily agentive, even when it takes an animate subject, as
+    * DeLancey (1984), Van Valin and D. Wilkins (1996), and even Fillmore (1970)
+  * (38) The boy broke the window (accidentally).  (Van Valin and Wilkins 1996) 
+  * kill, another verb commonly taken to be agentive, does not require an agent
+    * contrasting with the verb murder, which does require one.  (39) a.
+    * intentionally/accidentally
+    * verbs which _require_ agents as subjects such as murder are much rarer
+* patient
+  * The same issues arise with the notion of agent/pat and the semantic under-
+    pinnings of subjecthood/DO
+  * All languages realize patients as objects, but 
+    * and themes, if these are distinguished from patients
+    * some languages allow various types of nonpatients as objects as well.
+    * English is particularly liberal in this regard, as the following examples 
+      * The engineer ~ the bridge (B. Levin 1999, (1))
+      cracked (patient)
+      destroyed (patient/consumed object)
+      painted (incremental theme; Dowty 1991)
+      moved (theme)
+      built (effected object/factitive; Fillmore 1968)
+      washed (location/surface)
+      hit (location; Fillmore 1970)
+      crossed (path)
+      reached (goal)
+      left (source)
+      saw (stimulus/object of perception)
+      hated (stimulus/target or object of emotion)
+* frighten psych-verbs have been characterized as taking experiencer objects.
+* The objects of transitive verbs of authority, ruling, and disposition in
+  English 
+  * not fit neatly under any of the traditional semantic roles, though as noted
+  * not necessarily transitive in all languages.
+* interaction verbs (Blume 1998) documents several languages in which what she
+  * two animate arguments – take a subject and an oblique; these include
+  * German, Hungarian, Maori, Rumanian, Samoan, and Tongan. Yet, these same
+  * almost all transitive in English
+  * English also permits various path, goal, and source arguments as objects, as
+* obliques that are said to be “advanced” to object
+  * just as there are objects said to be “advanced” to subject, so there are .
+  * sentence pairs with the same verb have a particular argument expressed as an
+  * expression as an object is accompanied by the affixation of an “applicative”
+    morpheme on the verb. This phenomenon is particularly well represented
+  * in Bantu languages and illustrated in (42) with an example from Chicheŵa;
+  * theo
+    * As with passives, a theory adopting the Uniformity of Theta Assignment
+      Hypot will have a rule “promoting” an oblique to object in applicative
+    * otherwise, deals with the relation between these two in other ways.
+      * LFG’s Lexical Mapping Theory associates semantic roles with
+        partially specified characterizations of argument realization options
+        that give rise to one realization when a morphological rule operates, as
+        in (42b), and another otherwise, as in (42a)
+        (Alsina and Mchombo 1993; Bresnan and Moshi 1990) 
+* indirect object
+  * the first or “inner” object in a double object construction
+    in English and other languages that have such a construction and by the
+  * dative case-marked argument in languages that have such a case marker; the
+  * has The special status as the subject and the object
+  * semantically 
+    * best characterized as a recipient,
+      the animate goal in an event that involves a physical or abstract transfer
+      of possession (Goldberg 1995; Shibatani 1996),
+    * can also realize a beneficiary, as in (43c), and
+    * in a few instances a source, as in (43d), or
+      a possessor that is not construable as a recipient, as in (43e).
+  * different semantic characterizations -> distinct paraphrases available to
+    * “dative alternation,” My cousin sold me this car <~  sold this car to me.)
+      “benefactive alternation,” Our grandmother baked us a pie <~ a pie for us
+* d. The police fined him $50.
+* e. Kelly envied Kerry her good fortune.  
+* _take_ French, German, and Korean, though not English
+  * the indirect object in a broad sense – that is,
+    the first of two objects or a dative NP with a three-argument verb – can
+  * the animate “source” in negative transfer of possession events of the type
+    denoted by the verb take (Maling 2001, 433). Furthermore, as Shibatani
+  * a wider range of verbs may have benefactive IO than in English.
+* same The issues as for subjects and direct objects
+  * The distinct paraphrases in (43) suggest that 
+    other partially overlapping semantic notions must be identified
+  * the mapping process needs to make reference to overlapping semantic notions
+    at different levels of specificity.
+* 1:n
+  * many semantic roles can be associated with a given grammatical relation,
+  * each grammatical relation can have one or more morphosyntactic realizations.
+  * Every language has
+    * a prototypical morphosyntactic realization for its subjects and objects,
+      * through word order, morphological case, verb agreement, or their combi
+    * often have subjects or objects whose morphosyntactic expression deviates
+  * nominative–accusative case system, for example, subjects are typically nom
+    * “dative subjects” – dative case NPs that share certain properties with the
+    * “subjects” marked for other oblique cases are found as well
+    * As discussed in section 1.5, some languages express the experiencer of
+      some psych-verbs in the dative case and the stimulus in the nom/abs
+      * it is the dative experiencer which shows “essential” properties of subj.
+      * controls the subject of the gerund clause.  (44) Ayant étudié toute sa
+        _having studied all his life, ignorance.NOM him.DAT displeases_ 
+    * “oblique objects” are also sometimes found in these languages; these are
+      * The instrumental second argument of Russian verbs of authority, ruling,
+        and disposition mentioned in section 1.5, for example, may qualify as an
+      * = the nominative subject of the corresponding passive verb (Fowler 1996)
+      Borisov.NOM manage.PRES3s factory.INST
+      factory.NOM manage.PRES3s-REFL/PASS Borisov.INST
+* question <~ oblique case marking on what might otherwise be subj or obj
+  * the status of the oblique case-marked argument as a “true” subject or object
+    must be established.  
+  * longstanding debate about the subjecthood of oblique case-marked experiencer
+    * first clearly articulated in the Relational Grammar literature, but their
+      investigation continues
+      (Harris 1984a, 1984b; Moore and Perlmutter 2000; Perlmutter 1984;
+      Shibatani 1999; Sridhar 1979; Ura 2000; Verma and K. P.  Mohanan 1990)
+  * what it means for an NP to be a subject 
+    * in Keenan’s paper “Towards a Universal Definition of ‘Subject’” (1976),
+    * distinction between “behavioral” properties and “coding” properties of sbj. 
+    * coding properties involve the most surface manifestation of subjects,
+      * morphosyntactic expression, via word order, agreement, and case markin
+    * behavioral properties are grammatical properties, such as the ability to
+      * antecedent of a reflexive pronoun, the ability to
+      * control the nonexpressed subject of various types of adjunct clauses and
+      * be controlled when in an infinitival complement to a verb like try.
+    * In most instances arguments that show the behavioral properties -> coding
+      * hE, in some instances, the behavioral a subject does not show the coding
+* coding behavioral mismatch
+  * oblique coding, subj/obj behavior
+    * dative experiencers of psych-verbs or
+    * instrumental arguments of Russian verbs of authority, ruling, and disposit,
+    * pattern like subjects or objects with respect to behavioral properties.
+  * subj/obj code, obl behavior
+    * a class of psych-verbs whose
+      * stimulus is typically in the nominative case – the typical subject case
+      * experiencer, which is marked for dative case, shows subj behavor
+    * German bitten ‘ask,’ bedienen ‘serve,’ and unterrichten ‘instruct’
+      * (Maling 2001)
+      * accusative case-marked arguments pattern like dative case-marked NPs in
+        not becoming the subjects of middle verbs or hosts of depictive
+        predicates, rather than like typical accusative objects; these problem-
+      * semantically closer to goals than to patients.  Comparable issues arise
+  * double object construction in English and other languages.
+    * Some theories
+    * LFG (Alsina and Mchombo 1993; Bresnan 2001; Bresnan and Moshi 1990) and
+      Relational Grammar (Perlmutter and Postal 1983a, 1983b), take
+    * the first object to be a direct object on a par with that of a transitive
+      * shares certain properties with direct objects of transitives; most
+        * appear postverbally and correspond to the subject of a related passive
+    * not all (Baker 1997; Hudson 1992; B. Levin and Rappaport Hovav 2002;
+      Maling 2001; Polinsky 1996; Ziv and Sheintuch 1979). Some
+    * a more apt comparison is with
+      the dative case-marked argument of a three-argument verb in langs with dat
+      (B Levin and Rappaport Hovav 2002; Siewierska 1998),
+      * supporting the identification of a broad notion of indirect object.
+* other question 
+  * what semantic properties of arguments govern these deviations? 10 In some
+  * In some/other instances
+    * belonging to a particular semantic class of verbs is a necessary cond
+      * e.g. the Russian verbs of authority, ruling, and disposition
+    * depend on properties of the NP bearing a particular grammatical relation.
+      e.g. accusative/partitive case alternations in Finnish or Estonian
+      (Kiparsky 1998; Ackerman and Moore 2001), depend on
+      the case-marked NP in determining the time course of the event. In still
+    * animacy or the specificity of the NP bearing a particular gramm relation
+      * case-marking splits (Silverstein 1976),
+      * inverse agreement (Aissen 1999), and
+      * differential object marking (Aissen 2003; Bossong 1991, 1998)
+* different semantic notions may be involved in some of these deviations than in
+  the basic choice of subject and object.
+  * as we discuss in sections 4.2.3 and 6.4.2
+* Despite the pervasiveness of the agent–subject and patient–object assoc, the
+  * there are also many other rich empirical generalizations underlying linking
+
 ## 1.7 Conclusion 32
 
 # 2 Semantic role lists 35
