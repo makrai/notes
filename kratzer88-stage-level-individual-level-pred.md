@@ -111,7 +111,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
      (dancing (Manon, 1) & this morntng (1) J
 (14) Manon i s a dancer
      danc£r (Manon)
-* _Is dancing_ is a stage-level predicate. consequently, it has � Dllvidsoni�n
+* _Is dancing_ is a stage-level predicate. consequently, it has a Dllvidsonian
   llrgument that appears In the form of a variable 
   * The locatives _on the lawn_ and _this morning_ relate to the verb
 * _Js a dancer_ I s a fairly typical Individual-level predicate.  It normally
@@ -199,7 +199,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
   * For every quantifier Q, there must be a variable x such that Q binds an
     occurrence o f x In both i t s restrictive clause and Its nuclear scope.
   * In 15(a), the main predicate in the antecedent and in the consequent Is
-    lndlvidu�l-leve1. Hence there i s no Davidsonian argument Introducing a
+    lndlvidual-leve1. Hence there i s no Davidsonian argument Introducing a
     variable . No other expression In 1 5(a) Introduces variables. The sentence,
     then, Is excluded by the prohibition against vacuous quant i f ication.
   * 15(e) and 15(f) that lack a blndable variable In the consequent and In the
@@ -218,15 +218,15 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
   * 1 5(a), (e), and (f) all turn Into epistemic conditionals after the
     replacement
 * 17(a), (b) and (c) correspond to 1 5(e), (e), and (f) respectively.
-  If 11ary knows French, �he knows i t well
-  If M�ry speaks French, she knows it well
+  If 11ary knows French, ahe knows i t well
+  If Mary speaks French, she knows it well
   If Mary knows French, she speaks it well
 * If 17(a) to (c) are eplstemic conditionals, the _if_-clause restricts an
   epfstemic modal
   * While some modals can act as quant ifi ers and bind variables as argued i n
     Heim (19B2), it seems that
     epistemtc modals cannot. Consider the following example:
-(18) A car must be i n the g�r�ge
+(18) A car must be i n the garage
   * When _must_ Is Int erpreted deontlcally,
     the indertnlte noun phrase in (18) can have an existential or a universal
     (generic) Interpretation.
@@ -249,254 +249,106 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
 
 # 3. A synt argument for the extra argument position in stage-level preds 12
 
-(a) Extraction facts from German
-Recent work by a variety of scholars suggests that configurational
-sentence structures with VPs seem to be plausible for many
-l anguages including Japanese (Saito 1985) , German (Webelhuth1985
-tmd dissert�tion In progress), Breton, Niue�n, Ch�morro, J21c21itec,
-
-Papago, and Warlptrt (Wool ford 1966). Most of this work also
-converges on the conclusion that VPs may contain deep-structure
-subjects even if their �eads are not unaccusatlve verbs (Koopman &
-Spbrtiche 1985, Kuroda 1985, Kitagawa 1986, Tatetshi I 988, Olestng
-forthcoming). These subjects are claimed to appear in the specifier
-position of VP. They may stay there In surface-structure provided
-that they can get case i n this position. The specifier position of VP
-Is the highest position within the VP. It ts distinct from the
-customary object posttton, which Is the posttton adjacent to v.
-Neglecting any variation concerning the position of heads, the
-structure of simple sentences I s usually assumed to be as shown I n
-(19).
-
-(19)
-
-IP (=S)
-
-�
-
-"
-
-N
-(Spectfler of IP)
-1
-
-I
-
-I'
-
-/
-
-�
-/
-
-V'
-
-v
-
-Published by ScholarWorks@UMass Amherst, 1989
-
-VP
-
-/ '\
-
-__
-
-NP
-(Specifier of VP)
-NP
-
-11
-
-University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
-In a recent paper (Oleslr.g 1988), t1o 1 1 y Diesing argues that certain
-extraction facts from German (Kratzer, lecture notes spring 1988)
-can be explained I f we assume that at the relevant level of
-representation, subjects of stage-level predicates are within VP,
-while subjects o f individual - l evel predicates are I n the specifier of
-lP positi on. Whi l e Diesing is very careful i n not making unwarranted
-claims as to the level of representation Involved, we w i 1 1 adopt the
-common essumption thet the level for genen�l izDtions Dbout the
-re�liz�tion of �rguments is deep-s tructure (r�ther th�n logic�l form,
-for example). The exploration of alternatives might be worthwhile,
-but w i l l be left for another occasion. Here are two examples
-i l l ustrating the kind of facts relevant for what we might call
-_Diesing's conjecture_.
-20(a)
-
-well uns viele llebe Nachbarn hal fen
-•
-
-'
-
-Jf,
-
--�
-
-... -·
-
------
-
-...-
-
-s i nce us m�ny de21r neighbors helped
-since m�ny de�r neighbors helped us
-(b)
-
-Liebe Nachbarn hatren uns
-
-vlele
-
-dear neighbors helped us
-
-many
-
-As for dear neighbors, many or them helped us
-
-2 I (a)
-
-weil
-
-das viele
-
-since this m�ny
-
-Hebe N&chbarn verstehen
-de�r neighbors underst&nd
-
-since many dear neighbors understand this
-(b) *Liebe Nachbarn
-dear
-
-verstehen
-
-das vtele
-
-neighbors understand this ma�y
-
-As for dear neighbors, many or them understand this
-The &bove examples I l lustrate the so-called _quantifier spl i t _
-construction i n Germ�n. The (�) -sentences give examples or
-
-https://scholarworks.umass.edu/umop/vol12/iss1/10
-
-12
-
-Kratzer: Stage-Level and Individual-Level Predicates
-
-subordinate c l auses w i t h unsp l i t quanti fier phrases. In the
-
-(b) -sentences, verb second hlls tllken plllce lind the
-quanttfler phrase I s sp1 t t. (20) Involves a stage-level predicate, (2 1)
-corresponding
-
-has an Individual-level predicate. Quan t t f l er spl i t ts possible with
-
-subjects of stage-level predicates, but Impossible with subjects of
-individual-level predicates.
-Diesing proposes an ECP explanation for those facts, and we w i l l
-follow her in this respect. Let us assume tha.t the quantifier split
-
-construction i s the resuit of movtng ll common noun phrllse out or its
-
-NP li S argued by vlln Rfemsdi jk (t 967). Suppose now thllt subjects of
-lndtvtelual-level predicates are base-generated tn the spec1fter of IP
-
-positi on. They w l 1 1 then have several opttons at surface-structure.
-They may stay in their original posttton, or else may scramble, that
-is, adJoin to IP. In either case, they are ungoverned . Hence movement
-from subjects of individual-level predicates will alwayi lead to an
-ECP violation. (Subjects of individual-l evel predicates can also
-llppellr in the specifier of CP position. We mlly ftssume that t�ey m8y
-optionally be bllse-genenlted there.) As for subjects of stllge-level
-predicates, suppose that they are base-generated withtn VP. They,
-too, w 1 1 1 then have several opttons at surface-structure. They may
-stay i n their original position. In this case, they are in a governed
-position and movement from such subjects wfll not lead to an ECP
-violation. If they move on to the specifier of IP position. or
-scramble, they w i l l occupy an ungoverned position. Movement from
-such subjects, then, will 8gain violate the ECP. Uttle i s known 8bout
-the fac tors that mllke a subject move in German. At this point, all we
-can say Is that assuming that subjects or stage-level predicates are
-base-generated withtn VP and that they can stay there at
-surface-structure, we expect to find cases where movement from
-those subjects is possible. 20(b) is such a case. We also expect that,
-sometimes, movement from subjects of stage-level predi cates might
-not be possible. This expectation is borne out as illustrated by the
-following p8ir of sentences.
-
-Published by ScholarWorks@UMass Amherst, 1989
-
-13
-
-University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
-
-22(a)
-
-weil viele Hebe Nachbarn e i nem alten Ehepaar half en
-old couple helped
-sl nee many dear neighbors an
-since many dear neighbors helped an old couple
-
-(b) * Liebe Nachbarn ha1fen viele einem alten Ehepaar
-dear neighbors helped many an
-old couple
-As for dear neighbors, many of them helped an old couple
-
-A simlJar explanation mtght be given for the following data
-1 1 1 ustniting extraction posstb1 1 t t i es for relat1ve clauses. (23)
-involves a stage-level pred1cate, (24) an individual-level predicate.
-Subjects of stage-level predicates permit the extraposfUon or a
-relative clause, but subjects of individual-level predicates don't.
-
-(23)
-
-weil zwei Kinder- J �·i ir waren, mit 1enen niemen((since two chl ldren here were, with whom nobody
-spielen wollte
-play
-wanted
-since two children were here with whom nobody wanted to
-
-.. .,....._
-
-..
-
-..
-
-play
-
-(24) * well zwe18ucher teuer waren, die niemand lesen wollte
-
-sfnce two books expensive were that nobody read wanted
-since two books were expensive that nobody wanted to
-read
-
-In the following section, I am going to show that our assumptions
-concerning the argument structure of the two types of predicates
-plus some plausible additional premises will allow us to derive a
-result that i s almost Diesing's conjecture (as modffjed above). In
-perticular, we will be able to derive that subjects of stage-level
-predicates are always base-generated within the maximal proj ection
-
-https://scholarworks.umass.edu/umop/vol12/iss1/10
-
-14
-
-_�_
-
-Kratzer: Stage-Level and Individual-Level Predicates
-of
-
-their predicates. And that subjects of individual-level predicates
-are base -ge ner ll ted outside of the m�Jximlll projection of their
-predicates, unless the predicates are unaccusatlves (tn the sense or
-Perlmutter I 976) . We will also see that this slight deviation from
-Diesing's original proposal has the right consequences.
-
-(b) Deriving_(almost) Diesing's conjecture
+## (a) Extraction facts from German
+
+* configurational sentence structures with VPs are plausible for many languages
+  including Japanese (Saito 1985) , German (Webelhuth1985 tmd dissertation In
+  progress), Breton, Niuean, Chamorro, J21c21itec, Papago, and Warlptrt
+  (Wool ford 1966). Most of this work also converges on the conclusion that
+  * VPs may contain deep-structure subjects
+    even if their aeads are not unaccusatlve verbs
+    (Koopman & Spbrtiche 1985, Kuroda 1985, Kitagawa 1986, Tatetshi I988, Olest)
+  * These subjects are claimed to appear in the specifier position of VP
+    * They may stay there In surface-structure if they can get case there
+  * The specifier position of VP Is the highest position within the VP. It ts
+    * the customary object posttton, which Is the posttton adjacent to v.
+  * the structure of simple sentences Is usually assumed to be as shown I n
+    (19). IP -> NP I'   (IP = S, NP = spec IP)
+          I' -> I VP    
+          VP -> V' NP   (NP = spec VP)
+          V' -> V NP
+* Diesing (1988)
+  * certain extraction facts from German (Kratzer, 1988) can be explained I f we
+    assume that at the relevant level of representation, subjects of
+    * stage-level predicates are within VP, while subjects o f
+    * individual - l evel predicates are I n the specifier of lP position. Whi l
+  * common essumption
+    * thet the level for genenal izDtions Dbout the realization of arguments is
+      deep-s tructure (rather than logical form, for example). The
+* two examples i l l ustrating the kind of facts relevant for what we might call
+20(a) weil uns viele llebe Nachbarn hal fen
+      s i nce us many de21r neighbors helped
+      since many dear neighbors helped us
+(b) Liebe Nachbarn halfen uns vlele
+    dear neighbors helped us many 
+    As for dear neighbors, many or them helped us
+2 I (a) weil das viele liebe N&chbarn verstehen
+        since this many dear neighbors underst&nd 
+        since many dear neighbors understand this
+    (b) *Liebe Nachbarn dear verstehen das vtele 
+         neighbors understand this maay 
+         As for dear neighbors, many or them understand this
+* called _quantifier spl i t _ construction i n German. The
+  * (a) subordinate c l auses w i t h unsp l i t quanti fier phrases. In the 
+  * (b) verb second has taken place and the quanttfler phrase I s sp1 t t
+  * (20) Involves a stage-level predicate,
+    (2 1) corresponding has an Individual-level predicate
+* Quan t t f l er spl i t ts
+  possible/impossible with subjects of stage/individual-level predicates, but
+* Diesing proposes an ECP explanation for those facts, and we w i l l follow her
+  * the quantifier split construction i s the resuit of
+    movtng a common noun phrllse out or its NP as argued by Riemsdijk (1967)
+  * subjects of lndtvtelual-level predicates are base-generated tn spec IP
+    * They w l 1 1 then have several opttons at surface-structure.
+    * stay in their original posttton, or else may
+    * scramble, that is, adJoin to IP
+    * In either case, they are ungoverned 
+    => movement from subjects of individual-level predicates will alwayi lead to
+    an ECP violation. (Subjects of individual-l evel predicates can also appear
+    in the specifier of CP position. We may assume that taey may optionally be
+    balse-genenlted there.)
+  * subjects of stllge-level predicates, suppose that
+    they are base-generated withtn VP. They,
+    * several opttons at surface-structure. They may
+    * stay i n their original position. In this case, they are
+      * in a governed position and movement from such subjects wfll not lead to
+        an ECP violation
+    * move on to the specifier of IP position. or scramble, they w i l l occupy
+      an ungoverned position. Movement from such subjects, then, will 8gain
+      violate the ECP
+      * we expect to find cases where movement from those subjects is
+        * possible.  20(b) is such a case. We also expect that, sometimes,
+        * impossible. This expectation is borne out as illustrated by the
+22(a) weil viele liebe Nachbarn einem alten Ehepaar halfen
+      since many dear neighbors an old couple helped
+      since many dear neighbors helped an old couple
+(b) `*`Liebe Nachbarn ha1fen viele einem alten Ehepaar
+      dear neighbors helped many an old couple
+      As for dear neighbors, many of them helped an old couple
+* extraction posstb1 1 t t i es for relat1ve clauses.
+  (23) involves a stage-level pred1cate, (24) an individual-level predicate.
+  Subjects of stage/individual-level predicates permit/not the extraposfUon of a
+  relative clause 
+(23) weil zwei Kinder hier waren, mit denen niemen spielen wollte
+     since two chl ldren here were, with whom nobody play wanted
+     since two children were here with whom nobody wanted to play 
+(24) `*`well zwei Bücher teuer waren, die niemand lesen wollte
+      sfnce two books expensive were that nobody read wanted
+      since two books were expensive that nobody wanted to read
+* In the following section, I am going to show that
+  our assumptions concerning the argument structure of the two types of preds
+  plus some plausible additional premises will allow us to derive a result that
+  is almost Diesing's conjecture (as modffjed above). In perticular, we will be
+  * subjects of stage/individual-level predicates are always base-generated
+    * within/outside the maximal proj ection of their predicates.
+    * outside of the maJximlll projection of their predicates,
+  * unless the predicates are unaccusatlves (tn the sense or Perlmutter I 976) .
+
+## (b) Deriving_(almost) Diesing's conjecture
 
 The reasoning in this section will closely follow the structure of an
-Z�rgument given in Wl11 i�Jms (1961). Willillms llrgues thllt i n
-nomin<JliZ�Jtlons lllce _cae s ar' s destruction of the city_, the agent
+Zargument given in Wl11 iaJms (1961). Willillms llrgues thllt i n
+nomin<JliZaJtlons lllce _cae s ar' s destruction of the city_, the agent
 argument _caesar_ may be realized within the maximal projection of
 _destruction_, since nomlnall zatlons_ like "destruction_ have an
 event argument. C onsequent l y, the event argument, and not the agent
@@ -514,7 +366,7 @@ a predicate may be underlined. The underlined label corresponds to
 the external argument of the predicate. All other arguments are
 
 Internal. There may be some general izations a s to which argument of
-a lexical item wtJJ wind up as its external argument. Her� are some
+a lexical item wtJJ wind up as its external argument. Hera are some
 candidates: If a predicate has a Davldsonian argument, It w i l l always
 
 be its externlll argument. If ll predicate has no DliYidsontlln argument,
@@ -536,7 +388,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
 arguments. Maybe Internal agent arguments have to occupy the
-specifier position, while intern�! theme �rguments h�ve to occupy
+specifier position, while interna! theme arguments have to occupy
 the obJect position, for example. This may lead to a more
 hierarchical view of argument structure as proposed In Grtmsht5W
 (1987), among others. There w i l l also be principles regulating case
@@ -603,7 +455,7 @@ location. In languages 11ke Engltsh or German, this argument seems to
 be implicit, that ts it has no realization at deep- or
 surface-structure. As a COf'!Sequence, spattal and temporal
 expressions are adjuncts. They don't ftll argument positions. All but
-the event nrgument of stnge-level predlcntes t�re interm.l, hence they
+the event nrgument of stnge-level predlcntes tare interm.l, hence they
 have to be rel!ltzed within the mllximal projection of the predicate tn
 deep-structure. Subjects of stage-level verbs, then, are always
 base-generated tnside of their VP, subjects or stage-level adjecttves
@@ -611,7 +463,7 @@ are always base-generated withtn their AP and so on. This gtves us
 one part of Diesing's conjecture . Let us now turn to individual-level
 predicates. Those predicates don't have a Davidsonian argument.
 Hence some other argument may be external. If there ts such an
-t�rgument, it hDs to be bDse-genernted extemD11y, Dnd the usut�l
+targument, it hDs to be bDse-genernted extemD11y, Dnd the usutal
 option i s the specifier of IP position. If the predicDte ts
 unaccusattve, tts subject will be base-generated withtn tts maxtmal
 projectton . Indtvtdual-level predicates. then. may come in two
@@ -627,9 +479,9 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 Individual-level P-redicates that are not unaccusatives
 
-29(�)
+29(a)
 
-well d�s fast
+well das fast
 aile Burger In dieser Stadt wissen
 since this almost all cttlzens In this town know
 since almost all of the cttlzens In this town know this
@@ -642,7 +494,7 @@ wissen das viele
 
 citizens know this many
 
-As for nosy ci ttzens, m�ny of them know this
+As for nosy ci ttzens, many of them know this
 30(a)
 
 well fast
@@ -657,7 +509,7 @@ are
 
 since almost all of the citizens in this city are altruistic
 (b) *When Ann Is altruistic, she will give us a hand
-(c) *S�nitiiter sind viele Zlltruistlsch
+(c) *Sanitiiter sind viele Zlltruistlsch
 paramedics are many altruistic
 As for paramedics, many or them are altruistic
 Individual-level predicates that are unaccusatlves
@@ -708,7 +560,7 @@ counterexamples are to me more than enough known
 As for nllsty counterexamples, there are more th3n enough
 that are known to me
 
-The (a) and (b) senten�es above establlsh that we are Indeed dealing
+The (a) and (b) sentenaes above establlsh that we are Indeed dealing
 with tndtvtdual-level predicates. The main predicate of the sentence .
 has no Davidsonian argument that a locative could relate to. And
 there is no extra variable that a non-overt quantifier could bind. The
@@ -738,7 +590,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-# 4. The dif ferent rel!dings of bl!re pl urllls
+# 4. The dif ferent rel!dings of bl!re pl urllls 20
 
 The work of Gregory Carlson has shown convincingly thllt the
 distinction between stage-level and Individual-level predicates plays
@@ -754,7 +606,7 @@ various alternatives. In what follows, 1 will briefly sketch Carl son's
 analysis as well as the most promising alternative proposal
 developed Independently
 
-by Karina Wilkinson (1966) and Claudie:�
+by Karina Wilkinson (1966) and Claudie:a
 
 Gerstner and Manfred Krl fka
 
@@ -762,23 +614,23 @@ Gerstner and Manfred Krl fka
 
 apparent d i f f i culties with Wilkinson's and Gerstner and Krlfka's
 approach and argue that a Davtdsonlan treatment of the
-stage-levellindividual�level distinction might help us to overcome
+stage-levellindividualalevel distinction might help us to overcome
 those difficulties.
-(a).Car:lson's+�ma lysiS--�----
+(a).Car:lson's+ama lysiS--a----
 
 ---
 
 .. ----
 
-�-
+a-
 
-�
+a
 
 ..
 
-�
+a
 
--�
+-a
 
 ----·
 
@@ -786,7 +638,7 @@ those difficulties.
 
 .
 
-�-
+a-
 
 .
 
@@ -806,7 +658,7 @@ stage-level properties has to be mediated by a _realization relation_.
 
 The counterparts of English individual-level predicates are
 predicates of Individuals. IndivtduC!lls may be kinds or objects, a s
-mentioned above. Individual-level properties, then, mc:�y c:�pply to
+mentioned above. Individual-level properties, then, mc:ay c:apply to
 kinds directly and no 'mediation; i s necessary. To Illustrate the
 details
 
@@ -936,7 +788,7 @@ existential reading.
 
 •
 
-(c) Toomanyreadings? Dtestnnll.al�
+(c) Toomanyreadings? Dtestnnll.ala
 Wilkinson (I 986) i s well aware that while her approach to bare
 plurals I s successful i n predicting certain plausible readings of bare
 plural sentences that carlson's analysts excludes, i t also runs the
@@ -955,7 +807,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 22
 
 understood as yet Kratzer:
-Z�nother
+Zanother
 piece ofand
 evidence
 for our Predicates
@@ -1102,7 +954,7 @@ that are anaphortcally related to quantifier phrases that don't
 c-command them. They 3re interpreted lJS def1ntte descriptions ("the
 sheep that John owns_). But 1f we treat pronouns ltlce •them_ above
 as E-type pronouns, we can dispense with the exlstenttal closure
-operation for texts altogether. This means that the only �vail able
+operation for texts altogether. This means that the only avail able
 existential closure operation Is existential closure of the nuclear
 scope. And it also means that a bare plural noun phrase that i s
 base-generated outside o r the nuclear scope can never get an
@@ -1214,13 +1066,13 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-44(�)
+44(a)
 
 •
 
-Wir h�ben nicht Kurbtsse
+Wir haben nicht Kurbtsse
 
-gek�uft
+gekauft
 
 not
 
@@ -1250,9 +1102,9 @@ We bought no pumpkins
 
 Kurbl sse
 
-h�ben wir ni cht
+haben wir ni cht
 
-gek�uft
+gekauft
 
 Pumpkins
 
@@ -1266,24 +1118,24 @@ As for pumpkins, we didn't buy any
 44(a) shows that the negation adverb _nicht_ cannot appear adjacent
 to a plural indefinite noun phrase. One way of accounting for this
 fact is to assume that _nicht_ and the zero determiner have to
-'merge�-so es to yield_-l!keine• es-shown- tn 44(b) (Bech's term_ for this
-phenomenon i s _Kohaston_). In 44(c), the indefinite noun-phr�se h�s
+'mergea-so es to yield_-l!keine• es-shown- tn 44(b) (Bech's term_ for this
+phenomenon i s _Kohaston_). In 44(c), the indefinite noun-phrase has
 been moved away from tts deep-structure position. It 1s not adjacent
 to _nicht_ anymore. The unmerged rorm can appear here, suggesting
 that it Is indeed the unmerged forms that are Inserted
 at deep-structure. The merging of _nicht_ with a zero determiner,
 then, may be a rather superficial phenomenon, perhaps taking place at
 the level of phonetic form.
-There 1 s another argument showing that plural neget1ve qu�nttf ter
-phrases In Germ�n origin�te from _nicht_ plus a bare plur�l NP.
+There 1 s another argument showing that plural neget1ve quanttf ter
+phrases In German originate from _nicht_ plus a bare plural NP.
 Suppose that just ltke its Engltsh counterpart _not_, _nicht_ i s
 base-generated somewhere between the subJect and the VP, the
 usual position for sentence adverbs (an assumption l i ke this seems
 justified in the light of Webelhuth (in progress)).
 If _nicht_ is to merge with the zero detenntner of an adjacent bare
 plural NP to its right, this NP has to be within VP. We now expect
-that plural negettve quentlfter phr�ses in German must be
-VP-intern�l, and this i s exactly wh�t we find. Consider the foll owing
+that plural negettve quentlfter phrases in German must be
+VP-internal, and this i s exactly what we find. Consider the foll owing
 data.
 
 https://scholarworks.umass.edu/umop/vol12/iss1/10
@@ -1346,7 +1198,7 @@ since here no
 
 grow
 
-since no Hl�cs �re growing here
+since no Hlacs are growing here
 
 IDmJectsofunaccusattyetodtvtdual-JeyeJ oredlcates
 well ihr
@@ -1409,7 +1261,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 29
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
-Tlu�se d2ita show 21gain the by now f21mlll21r behavior or subjects.
+Tluase d2ita show 21gain the by now f21mlll21r behavior or subjects.
 
 Subjects or Stllge-level predicates zmd subjects or UnZICCUsatl't'e
 Individual-level predicates can b e VP-Internat, but subjects or
@@ -1418,7 +1270,7 @@ we close this section, we should add a few rem21rks on singular
 negative quantifier phrases. In German, singular and pl ural negative
 quantifier phrases have quite different properties. (This doesn't
 concern phrases like •no golda, where the noun is a mass noun. Mass
-nouns p�ttern with b21re plur21ls In t�ll lmportt�nt respects. See
+nouns pattern with b21re plur21ls In tall lmporttant respects. See
 Carlson 1977, chapter VII.) Consider the following examples
 
 111ustratlng the scope possibilities o f a singular negative quanttrler
@@ -1432,7 +1284,7 @@ weil
 kein Beispiel
 
 since no
-(�)
+(a)
 (b)
 53'(a)
 (b)
@@ -1444,7 +1296,7 @@ known be
 
 must
 
-Since there Is no eKample tht�t must be known
+Since there Is no eKample thtat must be known
 Since I t is not necessary that an example be known
 
 - --
@@ -1462,7 +1314,7 @@ Un11ke (43) above, sentence (53) has two readings. The first reading
 is expected H _Jcein Beispiel_ is a 'true' quantifier phrase that i s
 raised at logical form. For reasons that don't have t o concern u s
 here, this quantifier phrase can only have wider scope than the modal
-_muss_. The second re�dtng of (53) ts the reading that we
+_muss_. The second readtng of (53) ts the reading that we
 encountered with plural negative quantifiers. It requires "keln
 Beispiel_ to be analyzed as consisting of the negatton adverb •nicht_
 and the lndertntte noun phrase _eln Beispiel_ . This reading Is given I n
@@ -1483,7 +1335,7 @@ Kratzer: Stage-Level and Individual-Level Predicates
 
 54(21) * W i r h ll b en nicht einen Kurbts
 
-gek�uft
+gekauft
 We hllve not
 ll
 pumpkin bought
@@ -1505,7 +1357,7 @@ pumpkin have we not
 bought
 As for a pumpkin, we didn't buy one
 
-If singular negative q�antifier phrases can optiona11y be 'true'
+If singular negative qaantifier phrases can optiona11y be 'true'
 quantifiers, they should be able to appear as subjects of
 individual-level predicates that are not unaccusatives. They can
 indeed, as shown by the fo11owing examples.
@@ -1542,7 +1394,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-whether the genitive of neg�tion phenomenon is amenable to an
+whether the genitive of negation phenomenon is amenable to an
 analysts where an existential closure operation l i nked to VPs (rather
 than quant1fter raising and the ECP as proposed by Pesetsky) carries
 tile main burden of explanation.
@@ -1556,7 +1408,7 @@ This is where the variable they Introduce can be bound by existential
 closure. We have also s·een that Dtestng assumes that qutte general ly,
 VPs are mapped Into nuclear scopes. In a language l t k e English,
 obJ.ects always appear within VP (we may neglect topica11zation).
-We expect, then, that whenever a vari�ble i s introduced by an
+We expect, then, that whenever a variable i s introduced by an
 indefinite object in English, it w i l l be bound by existential closure
 (Heim's Novelty Condition prevents it from being bound by any other
 quantifier). As lt consequence, ltll indefinite objects should be
@@ -1567,7 +1419,7 @@ maintained, provided we allow objects to be scrambled at logical
 form.
 
 (a) Well-behaved Indefinite objects
-let us start this section with ltnother set of _when_condttton�ls. The conditionals �11 cont21in an lndtvidu�l-level
+let us start this section with ltnother set of _when_condtttonals. The conditionals a11 cont21in an lndtvidual-level
 predicate tn the _when_-clause. Thts Insures that they can only
 satisfy the prohtbition against vacuous quanttftcatton 1r a variable t s
 I ntroduced by an indertnlte noun phrase. A l l conditionals considered
@@ -1639,7 +1491,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
 material inside of the VP goes Into the nuclear scope'. This
-procedure (properly form�lized) splits a sentence tnto two p�rts
+procedure (properly formalized) splits a sentence tnto two parts
 when it Is mapped Into a logical representation. In the examples
 discussed In earlier secttons, the two parts always ended up as the
 restrictive clause and the nuclear scope of a tripartite quantifier
@@ -1663,7 +1515,7 @@ like (6 1 ').
 
 In (6 1 '), _Pedro_ (with a suitable predicate, see section 7) appears in
 the restrictive clause, since it ts realtzed outside of VP at
-surface-structure. The VP it��lt is mapped Into the nuclear scope.
+surface-structure. The VP itaalt is mapped Into the nuclear scope.
 (Recall that there are insecurities concerning the treatment of
 proper names and referential pronouns throughout this paper. In
 (6 1 '), we use Indices to Indicate coreference between directly
@@ -1678,8 +1530,8 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 
 Kratzer: Stage-Level and Individual-Level Predicates
 
-(6 1). At the level of logic� I form, (61 ') is the restrictive cl�use of
-the whole sentence. But this restrictive cl �use contains another
+(6 1). At the level of logica I form, (61 ') is the restrictive clause of
+the whole sentence. But this restrictive cl ause contains another
 restrictive clause and a nuclear scope as parts. The consequent of
 60(D) Is mapped Into the nuclear scope or the whole sentence. This
 nuclear scope is complex again, since the consequent of 60(b) Is split
@@ -1718,8 +1570,8 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-th8t is restricted by the _when_-clt�use . The resulting represent8tlon
-Is well- formed I f no v�cuous qu�n tiflc�tion occurs. V�cuous
+th8t is restricted by the _when_-cltause . The resulting represent8tlon
+Is well- formed I f no vacuous quan tiflcation occurs. Vacuous
 quantHtcatton occurs In the (b)-examples, but not tn the
 (a)-examples.
 We have already discussed a (b)-example. A representative
@@ -1738,7 +1590,7 @@ l beat (x, \ y (donkey(y) & have (x,y)l, I) I I
 6 1 ' (a) i s well- formed since the quantifier _always_ binds an
 occurrence of _x_ in its restrictive clause and in tts nuclear scope.
 As before, the pronoun _ t t _ is interpreted 8S 8n E-type pronoun.
-Simply Interpreting _it_ �s �n E-type pronoun doesn't give us the
+Simply Interpreting _it_ as an E-type pronoun doesn't give us the
 
 desired I nterpretation for 6 1 (a), however. 6 I (a) doesn't Imply that
 whenever a farmer has a donkey, he has only one. Helm proposes to
@@ -1752,7 +1604,7 @@ restrictive clause (nice examples are Schubert and Pelletier's
 cats
 
 8lways hmd on their feet_ or "Robin Hood never misses_ , Schubert &
-Pelletier 1967). After �ccommod�tlng the uniqueness presupposition
+Pelletier 1967). After accommodatlng the uniqueness presupposition
 Introduced by the E-type pronoun In 6 l (a), we have the following:
 6 1 "(a)
 
@@ -1837,7 +1689,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 18412 [1989], Art. 10
 
 If all predicates in the antecedents of the conditionals 70(a) to (d)
-llre indlvldulll-level prediclltes, the prohlbi tion �glSinst v�cuous
+llre indlvldulll-level prediclltes, the prohlbi tion aglSinst vacuous
 quantification can only be satisfied If their Indefinite objects can
 move Into the embedded restr1ctlve clause (of the main restr1 cttve
 clause) when logical forms are constructed.
@@ -1846,7 +1698,7 @@ leave their VPs at the level of logical form. Transformations that
 move objects out of their VPs have been studied for a number of
 hmguages. These are the scrambling transformations that play a
 crucial role tn configurational analyses of so-called
-Mnon-co�ftgurattonal· languages like Japanese (Satta 1965) or
+Mnon-coaftgurattonal· languages like Japanese (Satta 1965) or
 German (Webelhuth 1985, Webelhuth (In progress), von 5techow and
 Sternefeld 1966). Scrambltng is a transformation that adjoins a
 constituent to IP (and maybe to other mal<imal projections). It is an
@@ -1860,7 +1712,7 @@ would have to be caught by el<lstentlal closure. Scrambling, then,
 must dfscr1mfnate between 'well-behaved' and 'ill-behaved'
 fndeftntte objects. If this is so, we expect that surface-structure
 scrambling tn German and Japanese should be sensitive to this
-distinction . Th� following examples with scrambled Indefinite
+distinction . Tha following examples with scrambled Indefinite
 objects confirm this expectation for German. In sentences 64(a) to
 (d) ·well-behaved' Indefinite objects have been scrambled to the left
 or the negation _nicht_. The result Is ungrammatical. In 65(a) to (f)
@@ -2030,7 +1882,7 @@ Scrambling o f '111 -behaved' Indefinite objects ts permitted, but
 scrambling of 'well-behaved' indefinite objects Is not.
 We don't know yet what makes an indefinite object 'well -behaved' or
 'ill-behaved' with respect to scrambling. And we will make no
-attempt et t�n exphmetion. There are probebly several f8ctors
+attempt et tan exphmetion. There are probebly several f8ctors
 involved. Apart from the type of verb, the type of noun phrase seems
 
 Published by ScholarWorks@UMass Amherst, 1989
@@ -2040,7 +1892,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
 to play a role. For our present purposes, it is sufficient that we
-found � relevzmt correlation. Whenever an indefinite object can
+found a relevzmt correlation. Whenever an indefinite object can
 scramble at surface-structure In German, I t can scramble at logical
 form In English (and the other way round). The 'tH-behaved' Indefinite
 objects, then, present no real challenge to Diesing's way of
@@ -2058,7 +1910,7 @@ following examples confirm this expectation.
 66 (a) wei1 Anton meistens einen Anzug tr6gt
 since Anton usually a
 sutt wears
-(b)* wetl Anton elnen A�zug melstens tr8gt
+(b)* wetl Anton elnen Aazug melstens tr8gt
 since Anton a
 suit usually wears
 (c) since Anton usua11y wears a suit
@@ -2111,7 +1963,7 @@ since we a good project always sponsor
 well etn Pianist tmmer elne 5onate auswendtg kann
 since a ptantst always a sonata by heart knows
 ' there is always a sonata that a pianist knows by heart'
-well eln Pianist eine Senate lmmer �uswendig kann
+well eln Pianist eine Senate lmmer auswendig kann
 since a pianist a
 sonata always by heart knQws
 'a pianist knows any sonata (he plays) by heart'
@@ -2133,7 +1985,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 grammatical, the indefinite object can only have a g en eric
 
-E ngl ish equlv�lent
+E ngl ish equlvalent
 to the German (a) and (b) sentences. The objects of all (c) sentences
 
 interpretlltlon. The (c) sentences give the closest
@@ -2149,8 +2001,8 @@ the
 c orresponding German (b) sentences are grammatical. And this shows
 
 again that the English ind e ftnite objects can be scrambl e d at logi cal
-form In precisely the c�ses where the German indefinite objects can
-be scrambled at surface-structure. Indefinite objects that c�nnot
+form In precisely the cases where the German indefinite objects can
+be scrambled at surface-structure. Indefinite objects that cannot
 scramble must stay In their VPs. They are then mapped Into nuclear
 scopes and are caught by existential closure.
 
@@ -2159,7 +2011,7 @@ scopes and are caught by existential closure.
 In the preceding sections, we investigated how surface-structure
 subjects and obje c ts are mapped Into logi cal representations. This
 section will present some thoughts about the logical form
-representation of Davidsonian �rguments.
+representation of Davidsonian arguments.
 We assumed above that Oavidsonlan arguments are Implicit
 arguments In languages l i ke Engl i sh or German. Otestng·s proposal,
 then, does no affect it. At surface structure, Davidsonian arguments
@@ -2206,7 +2058,7 @@ _Past_ i s the tense predicate of
 (72') . It introduces an occurrence of
 
 the variable _1 _ into the restrictive clause. Being introduced in the
-restrictive clause, the variable "I'' cannot be bound by existenti�l
+restrictive clause, the variable "I'' cannot be bound by existential
 closure
 
 •
@@ -2223,9 +2075,9 @@ do
 not mean that there was some time i n the past when firemen were
 available. We are talking about a particular occasion here, and this i s
 just what our proposal implies. Note that something has to preYent
-the second occurrence of the Ytlrlt�ble _1_ in
+the second occurrence of the Ytlrltable _1_ in
 
-(72') from being ct�ught
+(72') from being ctaught
 
 by existential closure. It seems reasonable to stipulate that
 whenever one occurrence of a variable is suppl ied with a value by the
@@ -2258,7 +2110,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 stage-level predicates. In this case, the tense predicate is a
-predic�te for �J D�Jvldsonian argument as expected. On the second
+predicate for aJ DaJvldsonian argument as expected. On the second
 Interpretation, _be French_ stays an lndtvtdual-Jevel predicate. The
 tense predicate now applies to the unique argument o r _be French_.
 (73') gives a suitable logical rorm.
@@ -2271,10 +2123,10 @@ In (73'), the property or being before now is not predicated of a
 spatiotemporal location, but of the individual denoted by the subject.
 (73') says that the individual Henry is located In the past and has the
 property or being French. We may conjecture that the tense predicate
-always rellltes to the external �Jrgument or the main predic�Jte. This
+always rellltes to the external aJrgument or the main predicaJte. This
 gives us an Interesting prediction. Take my aunt Theresa, for
 example. She Is an almost perfect clone or my grandmother. Vet
-unllke my poor grandmother, aunll_heresa Is still alive. In !tli�
+unllke my poor grandmother, aunll_heresa Is still alive. In !tlia
 situation, 74(b) and (c) are true. 74(a) and (d), however, are either
 false or are cases of presupposition failure. (There is a close
 connection between restrictive clauses and presuppositions , a topic
@@ -2334,7 +2186,7 @@ If the tense predicate always relates to the external argument of the
 main predicate of the sentence, it follows that a variable ranging
 over spatiotemporal locations must appear in the res trictive clause
 of every tensed sentence whose mafn predicate is stage-level. This
-ft�ct ts importt�nt for our discussion of _when_-clt�uses throughout
+ftact ts importtant for our discussion of _when_-cltauses throughout
 this paper. Take the fo11owing example from sectton 2.
 (76)
 
@@ -2354,7 +2206,7 @@ JJ
 (76') i s well-formed, since the quant i fier _always_ binds
 
 the variable
-_1 _ in bot h Us restrictive cit�use t�nd fts nuclet�r scope. The tense of
+_1 _ in bot h Us restrictive citause tand fts nucletar scope. The tense of
 (76) is what we may call _generic tense_. One way of thinking about
 generic tense Is that it Introduces predicates of the most general
 kind. In (76') the tense predicate expresses no th f ng but the sortal
@@ -2366,7 +2218,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
 property 'is a spatiotemporal location'. 11 there weren't a tense
-predlcl!te in (7 6), the v�Srt!lblewl" would only appear in the nuclear
+predlcl!te in (7 6), the vaSrt!lblewl" would only appear in the nuclear
 scope. I t would then be bound by existential closure, and the whole
 structure would be ruled out as a violation of the prohibition against
 vacuous quantification.
@@ -2396,11 +2248,11 @@ Usua11Y x y [house(x)
 ,
 (old (x) I
 
-�
+a
 
 fire place (y)
 
-�
+a
 
 have (x,y))
 
@@ -2442,7 +2294,7 @@ y
 
 (x) I
 
-I fin�place
+I finaplace
 
 I
 
@@ -2516,7 +2368,7 @@ have
 y
 
 (bam
-2 �
+2 a
 
 (y) &
 
@@ -2553,7 +2405,7 @@ why. _A bam_ Is an object that cannot be scrambled, hence Is caught
 by existential closure.The phrase _a second one_ is best analyzed as
 •
 
-<�
+<a
 
 oarn different from i t " . The Implicit pronoun _n_ here (as well as
 
@@ -2581,7 +2433,7 @@ proportion problem. Here It is. Suppose we have
 
 e
 
-totr�t of thirty
+totrat of thirty
 
 houses. Ten of those houses have f1ve barns each, nicety placed next
 to each other. The remaining twenty houses have only one barn.
@@ -2626,7 +2478,7 @@ simple examples
 Harry vaccinated a sheep. He owns it.
 Harry vaccinated a sheep. He owns the sheep he vaccinated.
 
-BO (a) Nary always wears a dress. Usually, It has polka �ots.
+BO (a) Nary always wears a dress. Usually, It has polka aots.
 (b)
 
 Nary always wears a dress. Usually, the dress she wears has
@@ -2679,7 +2531,7 @@ vaccinated, then, wlt1 be the value for _y_. If a free variable receives
 a referent from the context of use, the referent has to be familiar. in
 that context. Definiteness In English Indicates famtl larlty.
 Indefiniteness Indicates lack of familiarity. It follows that
-variables Introduced by definite noun phrases can, but varlabl�s
+variables Introduced by definite noun phrases can, but varlablas
 Introduced by Indefinite noun phrases can not receive a value from
 the context of use. (Thi s is important. _Fi remen are altrulsttc_
 can not mean that some contextually specHied firemen are
@@ -2699,7 +2551,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 Kratzer: Stage-Level and Individual-Level Predicates
 
 world knowledge sugg e st that 11 ary w e ars ex ac tl y one dress at each
-occ�sion.
+occasion.
 Combining Evans and Cooper's analysis of E-tupe pronouns with
 Helm's the ory of definite descriptions , then, seems to yield the
 appropriate ana lys i s for sentences like (79) or (80).
@@ -2708,7 +2560,7 @@ Let us now r et urn to example (78). After some simpli fications
 form will be (78"') .
 (78"') Oflen x (house (x) & 3y (barn (y) & have (x,y) 1 I
 32, yl barn(z) & have(x,z) & barn(y) & have (l(, y). &
-z � y & next to (z,y)J
+z a y & next to (z,y)J
 
 (78"') correctly captures the meaning of (78). The important part is
 _ bam(y) & have (x,y)_ in the nuclear scope. This part constitutes the
@@ -2719,7 +2571,7 @@ closure. Th e lo gi c a l representation (78"') correspond s to the
 _Indefinite Lazy Reading_ of donkey pronouns In the terminology of
 Schubert and Pelletier (forthcoming). On our approach, such a reading
 ca n only arise under very special conditions. The donkey pronoun has
-to be �n E-type pronoun and the variable it Introduces must be caught
+to be an E-type pronoun and the variable it Introduces must be caught
 by existential cl o sure .
 Helm's the or y of definite descriptions, then, 1s a very promising
 candfdate for solving traditional problems with uniqueness In donkey
@@ -2767,8 +2619,8 @@ __•••__
 
 1
 
-Quant�fl �ation Is over _pairs �a,b> s�ch !hat a s�ttsfl�s the
-�
+Quantafl aation Is over _pairs aa,b> sach !hat a sattsflas the
+a
 .
 subject predicate and b satisfies the object predicate
 
@@ -2818,7 +2670,7 @@ reading. the subject Is part of the embedded restrictive clause, and
 the object is part of the embedded nuclear scope. On the object
 asymmetric reading, it i s the other way round. Note that these three
 poss ibilities are the only poss18iti ties, given just one object. The
-fourth concelvt�ble possibility (64) is e)(cluded by the prohibition
+fourth concelvtable possibility (64) is e)(cluded by the prohibition
 against vacuous quantification (recall that we are only considering
 Individual-level predicates).
 
@@ -2853,7 +2705,7 @@ concerning the possible i nterpretations of English donkey sentences
 
 of the sort considered here. If the main predicate in the antecedent Is
 
-not unaccust�tive, its subject i s bt�se-genert�ted outside of VP t�nd ht�s
+not unaccustative, its subject i s btase-genertated outside of VP tand htas
 
 to be mapped Into the embedded restrictive clliUse at logical form
 (recall again that we are only talking about tndlvtdual-level
@@ -2863,7 +2715,7 @@ asymmetric interpretation. If the object Is scrambled, we have the
 symmetric Interpretation. If the predicate i s unaccusative, its
 subject appears outside of VP at surface structure. But it binds a
 trace within VP, hence it can optionally appear in the embedded
-restrictive clause or in the embedded nuclet�r scope at logical form.
+restrictive clause or in the embedded nucletar scope at logical form.
 If t t appears In the restrictive chmse and the object is not
 
 scrambled, we arrive at the subject asymmetric Interpretation. If the
@@ -2911,7 +2763,7 @@ tied to nuclear scopes. Here i s an overview.
 (a)
 
 FavorableIntonationconditions
-�ymmetdc
+aymmetdc
 
 (b)
 
@@ -2946,7 +2798,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 Kratzer: Stage-Level and Individual-Level Predicates
 
 pronoun configurations faci litate certain Interpretations. likewise,
-we don't have to know why certain Intonation conditions bl�s us
+we don't have to know why certain Intonation conditions blas us
 towards certain readings. At this point, we only have to know that
 there are additional factors Influencing Interpretations. This will
 help us to design appropriate proportion experiments. The following
@@ -2959,10 +2811,10 @@ configurations.
 (c)
 
 Most fliYorllble donkey_oronoun conrtgurlltlons
-�ymmetrlc
+aymmetrlc
 Two donkey pronouns. One related to antecedent subject, the
 other one related to antecedent object
-�ject asymmetric
+aject asymmetric
 One donkey pronoun. Related to antecedent subject
 Object asymmetric
 One donkey pronoun. Related to antecedent object
@@ -2978,7 +2830,7 @@ conditions, we may conclude that it is not available.
 let us first examine the verb _adore_. _Adore_ Is individual-level, it
 Is not unaccusattve, and Its object can be scrambled. All of those
 properties can be established with the help of the tests discussed
-earlier in th� paper. We expect, then, that the symmetr1c and the
+earlier in tha paper. We expect, then, that the symmetr1c and the
 subject-asymmetric Interpretation should be possible for a donkey
 sentence Involving this verb In the antecedent, but the object
 asymmetric interpretation should be excluded. let us check this last
@@ -2998,8 +2850,8 @@ In
 
 2 01...
 
-When a SICILIAN �dores a piece of mustc, it t s rarely �
-Belitni oper�.
+When a SICILIAN adores a piece of mustc, it t s rarely a
+Belitni opera.
 the Intonation and anaphora condittons are s e t up as to be
 
 most favorable to the object asymmetric reading. Does
@@ -3008,7 +2860,7 @@ most favorable to the object asymmetric reading. Does
 
 this
 
-reading? Suppose we h�ve 300 Stct Hans. The following l i s t gives an
+reading? Suppose we have 300 Stct Hans. The following l i s t gives an
 overview o f their favorite pieces of music.
 
 (89)
@@ -3167,7 +3019,7 @@ professional organization, she usually Identifies with
 its political stand.
 In
 
-(92), th� stretch within brackets i s meant to evoke a context for
+(92), tha stretch within brackets i s meant to evoke a context for
 
 the conditional we are Interested ln. The intomstion and anaphora
 condlttons bias us towards a symmetric Interpretation. Imagine now
@@ -3175,8 +3027,8 @@ the following scenario.
 We have twenty l i nguists. They are all members of the Ungulsttc
 Society or America, of GLOW, and the Deutsche Gesellschaft fur
 
-Sprachwtssensc �aft. They don't care about the politics of any o f
-those organizations, however� Each of the linguists ts
+Sprachwtssensc aaft. They don't care about the politics of any o f
+those organizations, howevera Each of the linguists ts
 
 8
 
@@ -3216,13 +3068,13 @@ IS
 20
 
 Acoustical Society of America
-American Anthropolooi�l Societv
+American Anthropolooial Societv
 American A'*ietion of Applted llngui3tiC3
 American Dialect Society
-Amert�n Soctotootcaf Association
+Amertan Soctotootcaf Association
 A3ociecion Venezolena de lf ngutstica
 Msociatton for Dlmputatiooal U ll9Uistic3
-A�tatton for S1Jmbo11c logic
+Aatatton for S1Jmbo11c logic
 Australian ltnguietfc Society
 Berkelev linguistic Societv
 Cenodian ltngutstfc Association
@@ -3233,7 +3085,7 @@ li nguistic Societv of India
 Ltnqulst1c Soctetv of the Phttlpptnes
 U nguistic Association of Great Britai n
 Modern Lanouaqe Association of America
-Societn Ce�JC$sologica Europee
+Societn CeaJC$sologica Europee
 
 https://scholarworks.umass.edu/umop/vol12/iss1/10
 
@@ -3247,7 +3099,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 
 The only Interpretation that predicts it to be false is the symmetric
 interpretation. We have eighty li nguist-organization pairs such that
-the linguist is � member of the org�nization. But we only h�ve
+the linguist is a member of the organization. But we only have
 twenty ltngutst-organization pairs such that the linguist identifies
 with the politics of the organization. The subject asymmetric
 Interpretation predicts the sentence to be true, since each linguist Is
@@ -3268,7 +3120,7 @@ she is usually not affiliated with a university
 
 Imagine that we have forty linguists. Twenty of them are the
 linguists from the previous example, so we know about their
-involvement In professional organizations. None of them I� aff111ated
+involvement In professional organizations. None of them Ia aff111ated
 with a university. The remaining twenty linguists are members of the
 Linguistic Society of America, and belong to no other professional
 organization. They are all affiliated with some university. In this
@@ -3276,7 +3128,7 @@ situation, (94) Is Intuitively false, and the subject asymmetric
 interpretation is the only interpretation that predicts it to
 be f else.
 An unaccusattve verb like _belong to_, then, can indeed give rise to
-three Interpretations, where�s the readings for a verb 11ke _adore _
+three Interpretations, whereas the readings for a verb 11ke _adore _
 are more constrained. Whtle we dldn·t check all possible pred1cl1ons,
 of course, the results obtained so far are encouraging and lend further
 support to our conception of the Hnk between surfece-structure end
@@ -3288,7 +3140,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-(c) �ge-level predicat es and ru:Qport ions
+(c) age-level predicat es and ru:Qport ions
 In this section, we will continue our investigation or donkey
 sentences and proportions. This lime, we will only consider
 condittonols with stage-level predicates in the antecedent. As
@@ -3381,7 +3233,7 @@ spot (x,y,l)l l
 
 All four representations 95'(a) to (d) Involve quantification over
 spatlotemporal locations. While quantification over spatiotemporal
-locations i s a topic that we cannot seriously pursue here,�we should
+locations i s a topic that we cannot seriously pursue here,awe should
 at least add a few remarks as to I t s main properties. 5pattotemporal
 locations are related to each other by part-whole relationships, and
 this means that we must be careful with quantification. Quite
@@ -3402,7 +3254,7 @@ Published by ScholarWorks@UMass Amherst, 1989
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
 manage to quantify over spatiotemporal locations here? Well, we
-have to ma k £ sure that the m�in restrictive clauses of those
+have to ma k £ sure that the main restrictive clauses of those
 conditionals specify appropriate domains. One way of guaranteeing
 this quite generally is through the Interpretation mechanism for
 sentences with a free Davidsonian variable. We expect the Impact of
@@ -3411,7 +3263,7 @@ another occasion. As an illustration take (97), which contains the
 achievement verb _spot_.
 (97)
 
--�
+-a
 
 ..
 
@@ -3420,7 +3272,7 @@ spot (Megan, Bubo, 1)
 We are looking for an Interpretation of (97) that makes sure that the
 set of spatiotemporal tocattons s8tisfying (97) constitutes an
 appropriate domain of quantification. A requirement of this kind is
-- needed In Y.i�W OL JJe.nt�.JJ�� l�� :��n Megan_spots Bubo, it is
+- needed In Y.iaW OL JJe.nta.JJaa laa :aan Megan_spots Bubo, it is
 usually night_ or _Megan has spotted Bubo twtce-. w_e k_now ttief 8 domain of quzmttftcation ts never appropriate If there ere part-whole
 relationships holding among its members. There are two part-whole
 relationships to watch out for tn our case. The rtrst one Is spatial In
@@ -3429,7 +3281,7 @@ spots Bubo In los'" Angeles. The second one Is temporal. If Megan
 spotted Bubo yesterday, she also spotted Bubo In t 988. If the set of
 entitles satisfying (97) has to consist of dtsttnct members, then we
 should say that (97) Is satisfied by any spatt otemporal location 1
-such thet l is e mtnlmel l ocatton where e spotting of Bubo by Meg�n
+such thet l is e mtnlmel l ocatton where e spotting of Bubo by Megan
 takes place.
 A representation like 95'(a) will now be true If and only If most
 mtnlmal spatlotemporal locations 1 such that a spotting or an owl by
@@ -3449,7 +3301,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 
 Kratzer: Stage-Level and Individual-Level Predicates
 
-these four represen tat i on s all mean the s�me, given some plausible
+these four represen tat i on s all mean the same, given some plausible
 assumptions. Compare 95'(a) and (c), for example, which are repeated
 here.
 95'(a)
@@ -3466,7 +3318,7 @@ Usually 1
 (spot (x,y,l)J J
 I n1 ght(l) I
 In 95'(c), quant1fication is over triples. The set of triples satisfying
-the main restrictive c�ause of 95'(c) has very special properties,
+the main restrictive caause of 95'(c) has very special properties,
 however. Whenever two triples < 1 , a, b> and <1, c, d> are In the set,
 then a = c and b = d. Why is this? The main restrictive clause of
 95'(c) ts sattsfted by any triple < 1 ,a, b> such that 8 Is 8 birder and b
@@ -3480,7 +3332,7 @@ triples satisfying the main restrictive clause of 95'(c). Whenever a
 location I satisfies the main restrictive cl e!! use of 95'(a), then there
 i s i!l unique pi!! i r <a,b>, such that <l,a,b> satifles the restrictive
 clause of 95'(c). And whenever a trtpel <l,a,b> satisfies the matn
-restri�ttve clause of 95'(c), then 1 satlsftes the matn restrictive
+restriattve clause of 95'(c), then 1 satlsftes the matn restrictive
 clause of 95'(a). It can now be shown that a location satisfies the
 main restrictive clause and the main nuclear scope of 95'(a) If and
 only i f the corresponding triple satisfies the main restrictive clause
@@ -3499,14 +3351,14 @@ Published by ScholarWorks@UMass Amherst, 1989
 2fo
 
 should always amount to something that looks like the symmetric
-interpret�tion we discussed for individu�l-level predic�tes. It isn't,
+interpretation we discussed for individual-level predicates. It isn't,
 or course. We only get a slmtlar er rect by quanttrytng over
 l ocations.
 The d i scussion in Bouerle & Egli (198S) suggests that this last
 e><pectation mtght not be qufte right. Suppose we have a hundred
 birders. They go bird watching on Muthatland drive. One half of the
 bird watchers goes in groups of ten. The other fifty birders go o n
-indivtdu�l outings . Each party hkes off on � different day and spots
+indivtdual outings . Each party hkes off on a different day and spots
 exactly one owl. The five groups of ten spot their owl during the
 day. The fHty Individual bird watchers spot their owl at night. on
 this scenario, (95) ts Intuitively true. Yet it seems that our analysts
@@ -3515,21 +3367,21 @@ locations 1 such that a birder spots an owl at 1 and I is a day ttme
 location. And there i s not more than an equal number of minimal
 spattotemporal locations 1 such that a birder spots an owl at 1 and I
 
-is. a night location Using_e_xamples"of�this-kind, Berman (t 987)'
+is. a night location Using_e_xamples"ofathis-kind, Berman (t 987)'
 •.
 
 - ­
 
 ..._.
 
-argues that there t s a certain leeway as to wh�t a minimal locatfon
+argues that there t s a certain leeway as to what a minimal locatfon
 (situation I n hts framework) Is. I n our case, he would reason that I f a
 birder I s part of a group, the mlntmal location I n which she spots an
 owl mtght sometimes be taken to be identical with the minimal
 location in which the whole group spots the owl. This is what i t
 means t o spot a n o w l together. likewise, should a birder spot
 several owls a t the same time, we would sometimes want to
-treat those owls as a group. The minimal spatiotemporal loc�tton
+treat those owls as a group. The minimal spatiotemporal locatton
 where the birder spots one owl would then be Identical with the
 mtntmal spatl otemporal location where he spots the whole
 group .
@@ -3542,7 +3394,7 @@ been misinterpreted as group effects
 
 Within a Davldsonian
 
-fr�mework, the latter proposal would require that Individual-level
+framework, the latter proposal would require that Individual-level
 predicates have a Davtdsonian argument (an eventuality argument),
 
 https://scholarworks.umass.edu/umop/vol12/iss1/10
@@ -3554,7 +3406,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 Kratzer: Stage-Level and Individual-Level Predicates
 
 too. While this approach I s attractive and i s found i n the donkey
-sentence l l ter�ture , the evidence �ccumulated in this p�per argues
+sentence l l terature , the evidence accumulated in this paper argues
 against such a move.
 For the sake or argument, suppose that , contrary to what we have
 argued before, Individual-level predicates have a Davidsontan
@@ -3562,9 +3414,9 @@ argument after all. Would it then be plausible to analyze all
 asymmetric readings as group effects as proposed by Berman?
 
 1 think not. A major difficulty for such a proposal would be to
-�ccount for missing asymmetric reGdlngs with lndividuGl-level
-predtc�tes, for ex�mple. Recall the c�se or the Stcl1fans adoring
-Bellini oper�s. There I s no conceptual reason that could prevent us
+account for missing asymmetric reGdlngs with lndividuGl-level
+predtcates, for example. Recall the case or the Stcl1fans adoring
+Bellini operas. There I s no conceptual reason that could prevent us
 from regarding the fans of a particUlar piece of music as a group.
 Otherwise, we couldn't have sentences like
 
@@ -3574,7 +3426,7 @@ Otherwise, we couldn't have sentences like
 
 They adore the same piece or music
 
-Properties like 'adoring the same piece of music' c�m only apply to
+Properties like 'adoring the same piece of music' cam only apply to
 plural Individuals or groups. But then It should be conceptually
 possible to consider all the Sicilians who adore a piece of music as a
 group. And we should get the effect of an object asymmetr1c reading
@@ -3587,7 +3439,7 @@ for sentence
 When a SICILIAN adores a piece or music, It Is rarely a Be11ini
 opera
 
-We have seen that an object asymmetric reading is not possible f�r
+We have seen that an object asymmetric reading is not possible far
 
 (99).
 
@@ -3624,7 +3476,7 @@ implausible readings for sentences like the following (almost
 Schubert & Pe 11 e tf er's sentence)
 (t OO)
 
-If I find a q�art_er in my pocket, I'll put it in the parking
+If I find a qaart_er in my pocket, I'll put it in the parking
 meter
 
 Schubert & Pelletier argue that on i t s most plausible reading, a
@@ -3648,7 +3500,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 
 66
 
-21�
+21a
 
 Kratzer: Stage-Level and Individual-Level Predicates
 
@@ -3668,7 +3520,7 @@ For most minimal eventualities e such that there ts a
 stubborn donkey in e there ts an eventualtty e' such that the
 unique donkey that Is stubborn In e is from Andorra In e'.
 
-�YI!LDronoynsosIndefinitedescdottons
+aYI!LDronoynsosIndefinitedescdottons
 
 For most minimal eventualities e such that there Is a
 stubborn donkey tn e there ts an eventuality e' such that a
@@ -3678,7 +3530,7 @@ Assuming that quantification in (I 0 I) Is over minimal eventual Hies
 where a donkey is stubborn (as It has to be, given the arguments
 above), the two analyses yield the same truth-con.dittons for (I 0 1).
 Every mtntmal eventuality where a donkey i!. stubborn i s an
-event�oiHy where exactly one donkey is stubborn. There are other
+eventaoiHy where exactly one donkey is stubborn. There are other
 sentences, however, where the two types of analyses make difrerent
 predictions. The following type or example Is an Individual-level
 version of a paraJJel stage-level e>eample ascribed to Hans Kamp
@@ -3691,18 +3543,18 @@ Published by ScholarWorks@UMass Amherst, 1989
 
 University of Massachusetts Occasional Papers in Linguistics, Vol. 12 [1989], Art. 10
 
-21 �
+21 a
 
 (I 02)
 
-When ZJ m�n resembles �not her mZJn , he tries to ZJVoid him
-(:ly�pronounsas def initedescrtotlons
+When ZJ man resembles anot her mZJn , he tries to ZJVoid him
+(:lyapronounsas def initedescrtotlons
 For every minimal eventuality e such that a man resembl e s
 
 another man i n e, there i s an eventuality e' such that , I n e',
 the unique man who resembles another man In e tries to avoid
 the unique man who resembles another man In e.
-E -tyP-e pronouns as indertnite descrj�ttons
+E -tyP-e pronouns as indertnite descrjattons
 For every mtntmal eventualt ty e such that a man resembles
 another man t n e, there Is an eventuality e' such that
 in e', a man who resembles another man I n e tries to avoid a
@@ -3713,7 +3565,7 @@ Nett her 'E-type only' analysis gets the truth-conditions for
 
 right. Given that 'resemble' Is a symmetric relation, the first
 
-ZJnalysts mllkes (1 02) trw� in an worlds I n which no man resembles
+ZJnalysts mllkes (1 02) trwa in an worlds I n which no man resembles
 another man and false In all other worlds. There stmply cannot be a
 
 unique man who resembles another man. The second analysts doesn't
@@ -3731,7 +3583,7 @@ antecedent of
 
 (1 02)
 
-Is scrambled or not, our approach �dmt ts the
+Is scrambled or not, our approach admt ts the
 
 following two logical representations .
 
@@ -3751,7 +3603,7 @@ l yl m a n (y) & X3tY
 
 (\ 02")
 
-& l yl man (y) & x � y & r e s e m ble (x ,y)IJ
+& l yl man (y) & x a y & r e s e m ble (x ,y)IJ
 & resemble(x,y) & (try to a v o t d (x y)J I
 ,
 
@@ -3763,7 +3615,7 @@ Both representations predict that whenever two men resemble each
 other they both try to avoid the other.
 Example (I 02) shows that 'E-type only' analyses or donkey sentences
 face serious emptrtcal problems that our verst on of the
-lewts-Kamp-Heim analysts avoids . let us now turn to some of �he
+lewts-Kamp-Heim analysts avoids . let us now turn to some of ahe
 problems with the classical Lewls-Kamp-Heim approach that 'E-type
 only' analyses are designed to overcome. We have already discussed
 the proportion problem. One important point to keep tn mind is that
@@ -3772,7 +3624,7 @@ analysts has to be a bl e to actually predict the subtle proportton
 
 fDcts we encountered above. An- approach that treats all Indefinite
 
-noun phrases un\formly as existential quantlfie�s and �11 donkey
+noun phrases un\formly as existential quantlfieas and a11 donkey
 
 pronouns untformty as E-type pronouns Is unlikely to achieve this.
 
@@ -3827,7 +3679,7 @@ closure. If it were mapped into the embedded restrictive clause of
 the matn restrictive clause, the vartable could not be bound. Nor
 could it receive a value from the context of use (due to the
 i ndeftnl teness of _8 quarter_). The donkey pronoun _u _ must be
-interpreted as- an E-type pronoun (_the quarter i n m�f pocket_). It is
+interpreted as- an E-type pronoun (_the quarter i n maf pocket_). It is
 analyzed as a Helmtan description, and the variable It Introduces Is
 caught by existential closure. The result Is precisely the reading
 
@@ -3847,7 +3699,7 @@ https://scholarworks.umass.edu/umop/vol12/iss1/10
 
 70
 
-21�
+21a
 
 Kratzer: Stage-Level and Individual-Level Predicates
 
