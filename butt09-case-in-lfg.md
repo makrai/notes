@@ -266,11 +266,11 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
     the only difference between two clauses is the case morphology on 1 NP
   * difference in semantic interpretation
   * subject alternation aka differential subject marking
-    * as it has come to be called in the Optimality Theoretic literature (ch 6)
+    * as it is called in the Optimality Theoretic literature (ch 6)
     * eg in (19) and (20)
-    * want: In (19a), the ergative subject indicates that the participant (‘Nadya’)
-      has some control over the action, whereas the
-    * has to: dative case in (19b) implies more of an obligation to perform the
+    * want: In (19a), the ergative subject indicates that
+      Nadya has some control over the action, whereas the
+    * has to: dative case in (19b) implies more of an obligation
     * (see Bashir 1999 for a more differentiated analysis)
     (19) a. nadya=ne       zu           ja-na       hE
             Nadya.F.Sg=Erg zoo.M.Sg.Obl go-Inf.M.Sg be.Pres.3.Sg
@@ -278,8 +278,7 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
     b. nadya=ko       zu           ja-na       hE
        Nadya.F.Sg=Dat zoo.M.Sg.Obl go-Inf.M.Sg be.Pres.3.Sg
        ‘Nadya has to go to the zoo.’
-  * object
-    * (20) involves an object alternation, or differential object marking in
+  * (20) involves an __object__ alternation, or differential object marking in
     * the only difference between the two sentences is the case marker on obj
     * _ko_
       * In addition to marking dative case, as in (19b), the ko
@@ -289,7 +288,7 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
         => can be analysed as an accusative
     * The effect of ko in (20b) is that
       Nadya must have a particular giraffe in mind that she wants to go to see
-    * In (20a), in contrast, it could be some generic giraffe or giraffes that
+    * In (20a), in contrast, it could be some generic giraffe or giraffes
       * glossed as nominative
         * This case has no overt morphophonological realization in Urdu,
           something which is crosslinguistically quite common.  
@@ -299,154 +298,96 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
 b.  nadya=ne       jiraf=ko         dekh -na     hE
     Nadya.F.Sg=Erg giraffe.M.Sg=Acc see-Inf.M.Sg be.Pres.3.Sg
     ‘Nadya wants to see the giraffe.’
-Parallels to this alternation between nominative and accusative can be
-found in __Turkish__ (Enç 1991) and other South Asian languages. In this
-example, as in (19), the only difference between the a and b versions is
-the case marking. This, and the clear connection to a semantic difference
-prompted Butt and King (1991) to begin formulating an approach to case
-that included a notion of semantic case. This term has generally been
-used to refer to the case marking of adjuncts such as locatives or temporal
-expressions. Butt and King used this term to apply to those case markers
-of core arguments which also contribute information that is relevant for the
-final semantic interpretation of the clause. In order to allow the semantic
-information contributed by the case markers to flow directly into the analysis
-of the clause, Butt and King (1991), exactly like Nordlinger (1998), proposed
-explicit lexical entries for case markers. An example taken from later work
-(Butt and King 2003), is shown in (21) for the use of accusative ko in (20b).
-(21)
+* alternation between nominative and accusative in __Turkish__ (Enç 1991)
+  and other South Asian languages. In this example, as in (19),
+  * the only difference between the a and b versions is the case marking. This,
+  * semantic difference prompted [késztette] Butt and King (1991) to begin
+    formulating an approach to case that included a notion of __semantic case__
+  * term has generally been used to refer to the case marking of adjuncts such
+    as locatives or temporal expressions
+    * Butt and King used this term to apply to
+      those case markers of core arguments which also contribute information
+      that is relevant for the final semantic interpretation of the clause
+  * semantic information contributed by the case markers to flow directly into
+    the analysis of the clause, Butt and King (1991), exactly like Nordlinger
+  * explicit lexical entries for case markers
+  * An example taken from Butt and King (2003), is shown in (21) for the use of
+(21) ko (↑ case) = acc
+                   (obj ↑)
+                   (↑_{sem−str} specificity) = +
+* Butt and King’s (1991) proposals for semantic case foreshadowed Nordlinger’s
+  ideas about constructive case in that the\
+  * case markers themselves are active components which contribute to the anal
+* (21 iii) the NP should be interpreted as specific in semantic-structure.
+* part of a more complex system that accounts for
+  differential case marking patterns
+  * the version of linking theory proposed in Butt (1998). In this version of
+    * no explicit thematic hierarchy is assumed and the
+      thematic roles are restricted to a very basic set: agt, goal, theme, loc
+      * Beneficiaries, recipients, experiencers, etc. are all assumed to be an
+        instance of a goal, more or less abstract.  
+    * case is not integrated directly into the linking between GFs and a-stru
+      * As in standard linking theory
+    * case marking becomes relevant for linking
+      when different linking possibilities exist,
+      just as was the case for Zaenen+
+      * The information provided by the case morphology can be used to select
+        just one of the possibilities.
 
-ko
-
-(↑ case) = acc
-(obj ↑)
-(↑sem−str specificity) = +
-
-Butt and King’s (1991) proposals for semantic case foreshadowed Nordlinger’s
-ideas about constructive case in that the case markers themselves are considered
-to be active components which contribute to the analysis of a clause. The
-lexical entry for the accusative use of ko states that: i) the
-case is accusative; ii) the relevant NP should be a direct object; iii) the NP
-should be interpreted as specific at the level of s(emantic)-structure.
-
-But the information carried by case markers is only part of a more complex
-system that accounts for differential case marking patterns. Butt and 
-King (2003, 2005) assume the version of linking theory proposed in Butt
-(1998). In this version of linking theory, no explicit thematic hierarchy is
-assumed and the thematic roles are restricted to a very basic set: agent, goal,
-theme, locative. Beneficiaries, recipients, experiencers, etc. are all assumed
-to be an instance of a goal, more or less abstract.
-
-As in standard linking theory, case as such is not integrated directly into
-the linking between GFs and a-structure. However, case marking becomes
-relevant for linking when different linking possibilities exist, just as was the
-case for Zaenen+. The information provided by the case morphology can be
-used to select just one of the possibilities.
-
-But, as the examples in (19) and (20) show, the function of case marking
-must go beyond just the determination of grammatical functions. In fact,
-under Butt and King’s Differential Case Theory (DCT), most instances of
-case work out to be instances of semantic case, which is defined as being
-simultaneously: i) semantically predictable; ii) subject to syntactic restrictions, such as being confined to certain grammatical functions. Indeed, the
-bulk of the crosslinguistic case marking phenomena involve an interaction
-between syntactic and semantic constraints.
-
-Take the ergative case in Urdu, for example. This case marker can
-only appear on subjects and so must obey a particular syntactic restriction.  
-Because it is an agentive case, the ergative does not just play a structural
-role, it also gives rise to some semantic effects. As is well known from a
-host of studies on Hindi/Urdu, the ergative alternates with the unmarked
-nominative on unergative intransitives (the most comprehensive study to
-date of the distribution of the ergative is Davison 1999). As shown in (22),
-this alternation correlates with an expression of control/volitionality.
-
-(22) a. yassin
-kh ãs-a
-
-Yassin.M.Sg.Nom cough-Perf.M.Sg
-‘Yassin coughed.’
-
-
-Urdu
-
-b. yassin=ne
-kh ãs-a
-
-Yassin.M.Sg=Erg cough-Perf.M.Sg
-‘Yassin coughed (purposefully).’
-
-
-Urdu
-
-
-Another example is the accusative/dative ko in Urdu. As was seen in
-connection with example (20), when it appears on direct objects, it signals
-specificity. Again, there is a combination of syntactic (direct objects only)
-and semantic factors (specificity). The ko can also appear on subjects (19b)
-and on indirect objects, as in (23).
-
-(23) nadya=ne
-bılli=ko
-dud
-di-ya
-hE
-
-Nadya.F=Erg cat.F.Sg=Dat milk.M.Nom give-Perf.M.Sg be.Pres.3.Sg
-‘Nadya has given milk to the cat.’
-
-Urdu
-
-In both cases, the dative is associated with a more or less abstract goal.  
-In (23) the ‘cat’ is the goal of the giving. In experiencer constructions as in
-(19b) or (24a–c), the experiencer of the event can be thought of as a kind
-of abstract goal (cf. Landau 2002).
-(24) a. nadya=ko
-skul
-ja-na
-pAr.-a
-
-Nadya.F.Sg=Dat school.F.Sg.Obl go-Inf.M.Sg fall-Perf.M.Sg
-‘Nadya had to go to school.’
-
-Urdu
-b. nadya=ko
-d.Ar
-lAg-a
-
-Nadya.F.Sg=Dat fear.M.Sg.Nom be attached-Perf.M.Sg
-‘Nadya was afraid.’
-
-
-Urdu
-
-c. nadya=ko
-kAhani
-yad
-a-yi
-
-Nadya.F.Sg=Dat story.F.Sg.Nom memory come-Perf.F.Sg
-‘Nadya remembered the story.’
-
-
-Urdu
-
-d. nadya=ne
-kAhani
-yad
-k-i
-
-Nadya.F.Sg=Erg story.F.Sg.Nom memory do-Perf.F.Sg
-‘Nadya remembered the story (actively).’
-
-
-Urdu
-
-
-With psych predicates as in (24c) there is again an alternation with the
-ergative, though in this case it correlates with the use of the agentive ‘do’
-in (24d) vs. the non-agentive ‘come’ in (24c). The dative use of ko is also
-governed by a combination of syntactic and semantic factors. It is restricted
-to indirect objects and subjects, but is subject to a coherent goal semantics
-in Urdu.
+    * the function of case marking must go beyond just the determination of GFs
+      * as the examples in (19) and (20) show,
+      In fact,
+    * Differential Case Theory (DCT)
+    * most instances of case work out to be instances of semantic case, which is
+      := being simultaneously: 
+        * semantically predictable; 
+        * subject to syntactic restrictions, 
+          eg being confined to certain grammatical functions. Indeed,
+    * the bulk of the crosslinguistic case marking phenomena involve an
+      interaction between syntactic and semantic constraints.
+* eg ergative case in Urdu, for example
+  * can only appear on subjects and ie syntactic restriction
+  * it is an agentive case, it also gives rise to some semantic effects
+  * As is well known from a host of studies on Hindi/Urdu, the ergative
+  * alternates with the unmarked nominative on unergative intransitives (the
+    * most comprehensive study of the distri of the ergative is Davison 1999) As
+    * alternation correlates with an expression of control/volitionality.  
+(22) a. yassin          kh ãs-a 
+        Yassin.M.Sg.Nom cough-Perf.M.Sg
+        ‘Yassin coughed.’
+  b.  yassin=ne       kh ãs-a 
+      Yassin.M.Sg=Erg cough-Perf.M.Sg
+      ‘Yassin coughed (purposefully).’
+* Another example is the accusative/dative ko in Urdu
+  * As was seen in connection with example (20),
+    when it appears on direct objects, it signals specificity
+    * Again, there is a combination of syntactic (direct objects only) and
+      semantic factors (specificity)
+    * can also appear on subjects (19b) and on indirect objects, as in (23).
+      (23) nadya=ne bılli=ko dud di-ya hE
+           Nadya.F=Erg cat.F.Sg=Dat milk.M.Nom give-Perf.M.Sg be.Pres.3.Sg
+           ‘Nadya has given milk to the cat.’
+      * dative is associated with a more or less abstract goal.  
+      * In experiencer constructions as in (19b) or (24a–c),
+        the experiencer can be thought of as an abstract goal (Landau 2002).
+(24) a. nadya=ko skul ja-na pAr.-a 
+     Nadya.F.Sg=Dat school.F.Sg.Obl go-Inf.M.Sg fall-Perf.M.Sg
+     ‘Nadya had to go to school.’
+  b. nadya=ko d.Ar lAg-a
+     Nadya.F.Sg=Dat fear.M.Sg.Nom be attached-Perf.M.Sg
+     ‘Nadya was afraid.’
+  c. nadya=ko kAhani yad a-yi 
+     Nadya.F.Sg=Dat story.F.Sg.Nom memory come-Perf.F.Sg
+     ‘Nadya remembered the story.’ 
+  d. nadya=ne kAhani yad k-i
+     Nadya.F.Sg=Erg story.F.Sg.Nom memory do-Perf.F.Sg
+     ‘Nadya remembered the story (actively).’
+* psych predicates as in (24c) there is again an alternation with the ergative,
+  * correlates with the use of the
+    agentive ‘do’ in (24d) vs. the non-agentive ‘come’ in (24c)
+  * The dative use of ko is also governed by a combination of synt and sem factr
+    It is restricted to indirect objects and subjects, but is subject to a
+    coherent goal semantics in Urdu.
 
 In DCT, there is thus explicit reference to a-structure concepts such as
 goal (datives) or agent (ergative) in addition to further semantic concepts
