@@ -4,21 +4,21 @@ Case in Lexical-Functional Grammar
 
 # Introduction
 
-* The treatment of case has been one of the central concerns within LFG
-  since its inception in the late 1970s. Several of the papers collected in the
+* The treatment of case  within LFG
+  * has been one of the central concerns since its inception in the late 1970s.
   * seminal book marking the emergence of LFG (Bresnan 1982) deal with case
-    * Neidle on Russian, KP Mohanan with respect to Malayalam)
-  * he a sophisticated analysis of crosslinguistic case patterns only 
-    as LFG’s Linking Theory (known as Lexical Mapping Theory) evolved.
+    * Neidle on Russian, KP Mohanan with respect to Malayalam
+  * Linking Theory (known as Lexical Mapping Theory) evolved.
+    * a sophisticated analysis of crosslinguistic case patterns
 * argument structure needed to be posited as an indep level of representation
   * recognized on the basis of argumentation by Rappaport (1983) that
-  * very much unlike the assumptions of GB/MP, see Chapter 3), the way was paved
+  * very much unlike the assumptions of GB/MP (see Chapter 3)
   * analyses of case to be stated in terms of generalizations over argument-stru
   * ie take both semantic and syntactic factors into account.
 organizatoin
-  * some LFG basics in section 2, then briefly charts
+  2. some LFG basics
   3. the development of Linking Theory in section 3 and presents
-  4. current theories of case in section 4. The
+  4. current theories of case in section 4
   5. LFG-based analyses that are couched within Optimality-Theory (see Ch 6)
 
 # 2 LFG Basics
@@ -278,7 +278,7 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
     b. nadya=ko       zu           ja-na       hE
        Nadya.F.Sg=Dat zoo.M.Sg.Obl go-Inf.M.Sg be.Pres.3.Sg
        ‘Nadya has to go to the zoo.’
-  * (20) involves an __object__ alternation, or differential object marking in
+  * (20) involves an __object__ alternation, or differential object marking
     * the only difference between the two sentences is the case marker on obj
     * _ko_
       * In addition to marking dative case, as in (19b), the ko
@@ -290,8 +290,8 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
       Nadya must have a particular giraffe in mind that she wants to go to see
     * In (20a), in contrast, it could be some generic giraffe or giraffes
       * glossed as nominative
-        * This case has no overt morphophonological realization in Urdu,
-          something which is crosslinguistically quite common.  
+    * This case has no overt morphophonological realization in Urdu, something
+      which is crosslinguistically quite common.  
 (20) a. nadya=ne        jiraf            dekh -na     hE
         Nadya.F.Sg=Erg  giraffe.M.Sg.Nom see-Inf.M.Sg be.Pres.3.Sg
         ‘Nadya wants to see a giraffe/giraffes.’
@@ -300,7 +300,7 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
     ‘Nadya wants to see the giraffe.’
 * alternation between nominative and accusative in __Turkish__ (Enç 1991)
   and other South Asian languages. In this example, as in (19),
-  * the only difference between the a and b versions is the case marking. This,
+* the only difference between the a and b versions is the case marking. This,
   * semantic difference prompted [késztette] Butt and King (1991) to begin
     formulating an approach to case that included a notion of __semantic case__
   * term has generally been used to refer to the case marking of adjuncts such
@@ -316,7 +316,7 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
                    (obj ↑)
                    (↑_{sem−str} specificity) = +
 * Butt and King’s (1991) proposals for semantic case foreshadowed Nordlinger’s
-  ideas about constructive case in that the\
+  ideas about constructive case in that the
   * case markers themselves are active components which contribute to the anal
 * (21 iii) the NP should be interpreted as specific in semantic-structure.
 * part of a more complex system that accounts for
@@ -326,31 +326,29 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
       thematic roles are restricted to a very basic set: agt, goal, theme, loc
       * Beneficiaries, recipients, experiencers, etc. are all assumed to be an
         instance of a goal, more or less abstract.  
-    * case is not integrated directly into the linking between GFs and a-stru
+    * case is not integrated directly into the linking between GFs and a-struct
       * As in standard linking theory
     * case marking becomes relevant for linking
       when different linking possibilities exist,
       just as was the case for Zaenen+
       * The information provided by the case morphology can be used to select
-        just one of the possibilities.
-
+        just one of the possibilities.  
     * the function of case marking must go beyond just the determination of GFs
       * as the examples in (19) and (20) show,
-      In fact,
     * Differential Case Theory (DCT)
-    * most instances of case work out to be instances of semantic case, which is
+    * most instances of case work out to be instances of semantic case
       := being simultaneously: 
         * semantically predictable; 
         * subject to syntactic restrictions, 
-          eg being confined to certain grammatical functions. Indeed,
+          eg being confined to certain grammatical functions
     * the bulk of the crosslinguistic case marking phenomena involve an
       interaction between syntactic and semantic constraints.
-* eg ergative case in Urdu, for example
-  * can only appear on subjects and ie syntactic restriction
+* eg ergative case in Urdu
+  * can only appear on subjects (syntactic restriction)
   * it is an agentive case, it also gives rise to some semantic effects
-  * As is well known from a host of studies on Hindi/Urdu, the ergative
+  * As is well known from a host of studies on Hindi/Urdu
   * alternates with the unmarked nominative on unergative intransitives (the
-    * most comprehensive study of the distri of the ergative is Davison 1999) As
+    * most comprehensive study of the distri of the ergative is Davison 1999)
     * alternation correlates with an expression of control/volitionality.  
 (22) a. yassin          kh ãs-a 
         Yassin.M.Sg.Nom cough-Perf.M.Sg
@@ -386,265 +384,85 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
   * correlates with the use of the
     agentive ‘do’ in (24d) vs. the non-agentive ‘come’ in (24c)
   * The dative use of ko is also governed by a combination of synt and sem factr
-    It is restricted to indirect objects and subjects, but is subject to a
-    coherent goal semantics in Urdu.
-
-In DCT, there is thus explicit reference to a-structure concepts such as
-goal (datives) or agent (ergative) in addition to further semantic concepts
-such as specificity as part of the analysis of case. DCT recognizes case as an
-extremely complicated and complex part of the morphosyntactic and semantic interface, particularly as there are also some instances of case marking
-which appear to be tied to purely positional/structural or idiosyncractic factors. In DCT, therefore, examples such as the English adnominal genitive
-(e.g., John’s hat) are analyzed as purely positional/structural case.
-
-DCT also assumes a notion of default case. Indeed, it can be observed
-that structural/positional case is often an instance of default case (the Elsewhere Case, Kiparsky 1973). There are some languages which require that
-all NPs have case. For these languages default case satisfies something that
-has become known as the Case Filter (Rouveret and Vergnaud 1980). That 
-is, if a given NP is not already associated with case due to some specification in some other part of the grammar, then default case assignment
-principles can apply. Typical crosslinguistic default cases are nominative or
-genitive. Default case only applies to the core grammatical relations subject
-and object. The other grammatical relations tend to involve some kind of
-specialized semantics and therefore do not involve defaults. Note that this is
-essentially the insight behind GB/Minimalism’s postulation of exactly two
-structurally Case marked arguments, which are associated with nominative
-and accusative case.
-
-Finally, DCT also acknowledges that some instances of case marking are
-due to truly coincidental historical developments: no generalization can be
-made and the case marking has to be stated as an exception to the system.  
-These instances of case marking are labeled quirky.
-
-An example of truly idiosyncratic marking is shown in (25). Urdu requires that subjects of agentive transitive perfect verbs be marked with the
-ergative case. However, the verb ‘bring’ in (25) is a transitive verb with
-perfect morphology and the bringer can be unproblematically classified as
-an agent. But the subject ‘Nadya’ in (25) is nominative and not ergative.
-(25) nadya
-kıtab
-la-yi
-
-Nadya.F.Sg.Nom book.F.Sg.Nom bring-Perf.F.Sg
-‘Nadya brought a book.’
-
-The reasons for this aberrant case marking are not clear. Also, there
-are no other agentive transitive verbs which behave like this. Therefore this
-bizarre nominative case marking must be stipulated as part of the lexical
-entry of ‘bring’ (the nominative on objects is regular in Urdu).
-
-On the whole, however, DCT assumes that such instances of quirky case
-are relatively rare. Rather, most case marking phenomena should fall under
-the rubrik of semantic case, i.e., as being constrained simultaneously by both
-syntactic and semantic conditions. This stands in marked contrast to many
-theories of case, but does seem to reflect the rather unique crosslinguistic
-positioning of case at the interface between lexical and clausal semantics,
-syntax and morphophonology.
+    * It is restricted to indirect objects and subjects, but is
+    * subject to a coherent goal semantics in Urdu.
+* In DCT, there is thus explicit reference to
+  a-structure concepts such as goal (datives) or agent (ergative) in addition to
+  further semantic concepts such as specificity as part of the analysis of case.
+  * case as an extremely complicated and complex part of the morphosyntactic and
+    semantic interface, particularly as
+    there are also some instances of case marking which appear to be
+    tied to purely positional/structural or idiosyncractic factors. In DCT,
+    => eg the English adnominal genitive (e.g., John’s hat) are
+    analyzed as purely positional/structural case.
+  * default case. Indeed, it can be observed that
+    structural/positional case is often an instance of default case
+    (the Elsewhere Case, Kiparsky 1973)
+    * There are some languages which require that all NPs have case
+    * For these languages default case satisfies the so called the Case Filter
+      (Rouveret and Vergnaud 1980)
+    * That is, if a given NP is
+      not already associated with case by some other part of the grammar,
+      then default case assignment principles can apply.
+    * Typical crosslinguistic default cases are nominative or genitive. Default
+    * only applies to the core grammatical relations subject and object. The
+      * other grammatical relations tend to involve some kind of specialized sem
+    * this is essentially the insight behind GB/Minimalism’s postulation of
+      exactly two structurally Case marked arguments, which are associated with
+      nominative and accusative case.
+  * some instances of case marking are due to coincidental historical devel
+    * no generalization can be made; has to be stated as an exception to the sys
+    * "quirky"
+    * eg Urdu requires that
+      subjects of agentive transitive perfect verbs be marked with the ergative
+      * the verb ‘bring’ in (25) is a tr verb with perfect morphology
+      * the bringer can be unproblematically classified as an agent
+      * hE the subject ‘Nadya’ in (25) is nominative and not ergative.
+(25)  nadya kıtab la-yi 
+      Nadya.F.Sg.Nom book.F.Sg.Nom bring-Perf.F.Sg
+      ‘Nadya brought a book.’
+    * reasons for this aberrant case marking are not clear. Also, there are
+    * no other agentive transitive verbs which behave like this. Therefore this
+    * must be stipulated as part of the lexical entry of ‘bring’
+    * (the nominative on objects is regular in Urdu)
+    * instances of quirky case are relatively rare. 
+  * most case marking phenomena should fall under the rubrik of semantic case,
+    i.e., being constrained simultaneously by both syntactic and semantic cond.
+    * in marked contrast to many theories of case, but does seem to
+    * reflect the rather unique crosslinguistic positioning of case at the
+      interface between lexical and clausal semantics, syntax and morphophono
 
 # 5 Incorporating Optimality Theory
 
-
-The advent of Optimality Theory (OT, see Chapter 6) was observed with
-a great deal of interest in LFG and adopted into the theory very quickly
-(Bresnan 2000). The input to an evaluation by OT constraints is assumed
-14
-
-to be f-structure and c-structure pairings. The task of the OT constraints
-is to pick the most optimal pairing.
-
-Several OT-LFG analyses exist with respect to case and they tend to
-fall in line with OT analyses of case in general. I.e., they adopt the insights with respect to differential case marking advanced by Aissen (1999,
-2003). Some examples are Sharma’s (2001) analysis of Kashmiri case clitics,
-
-Deo and Sharma’s (2005) analysis of typological and diachronic variation
-in Indo-Aryan ergative patterns, Asudeh’s (2001) analysis of optional case
-patterns in Marathi. These analyses have all the advantages and disadvantages of the general OT analyses that are discussed in Chapter 6 of this
-volume. Asudeh’s analysis, however, proposed an interesting extension to
-
-OT, namely, the availability of optionality in the evaluation of the most optimal candidate. In addition, Lee’s (2001a,b; 2003) work on bidirectional OT
-and output-output correspondences provides a new perspective on Hindi
-and Korean case as well as word order freezing effects, which are due to
-identically case marke arguments in a clause.
-
-6
-
-
-Summary
-
-
-In sum, LFG contains a range of differing approaches to case marking. No
-account would claim to have developed a complete theory of case marking
-crosslinguistically. Rather, new ideas are continually being developed and
-tried out in light of new empirical evidence. This does not mean, however, that each account discards already established insights. Rather, each
-new account builds on the strong points of previous insights within LFG,
-but is simultaneously not willing to let itself be blinded by the previously
-established ideas.
-
-
-References
-
-Aissen, Judith. 1999. Markedness and Subject Choice in Optimality Theory.
-
-Natural Language and Linguistic Theory 17(4):673–711.
-
-Aissen, Judith. 2003. Differential Object Marking: Iconicity vs. Economy.
-
-Natural Language and Linguistic Theory 21:435–483.
-
-Alsina, Alex. 1996. The Role of Argument Structure in Grammar: Evidence
-from Romance. Stanford: CSLI Publications.
-
-15
-
-Andrews, Avery. 1996. Semantic Case-Stacking and Inside-Out Unification.
-
-Australian Journal of Linguistics 16:1–54.
-
-Asudeh, Ash. 2001. Linking, Optionality, and Ambiguity in Marathi: An
-
-Optimality Theory Analysis. In Formal and Empirical Issues in Optimality Theoretic Syntax, ed. Peter Sells. 257–312. Stanford: CSLI
-
-Publications.
-
-Bashir, Elena. 1999. The Urdu and Hindi Ergative Postposition ne: Its
-changing role in the Grammar. In The Yearbook of South Asian Languages and Linguistics, ed. Rajendra Singh. 11–36. New Delhi: Sage
-
-Publications.
-
-Bresnan, Joan. 1977. Transformations and Categories in Syntax. In Basic
-
-Problems in Methodology and Linguistics. Part Three of the Proceedings
-of the Fifth International Congress of Logic, Methodology and Philosophy of Science, London, Ontario, Canada, 1975, ed. R.E. Butts and
-
-J. Hintikka. 261–282. Dordrecht: Reidel.
-
-Bresnan, Joan (ed.). 1982. The Mental Representation of Grammatical Relations. Cambridge: MIT Press.
-
-Bresnan, Joan. 2000. Optimal Syntax. In Optimality Theory: Phonology,
-
-Syntax and Acquisition, ed. Joost Dekkers, Frank van der Leeuw, and
-
-Jeroen van de Weijer. 334–385. Oxford: Oxford University Press.
-
-Bresnan, Joan. 2001. Lexical-Functional Syntax. Oxford: Blackwell.
-
-Bresnan, Joan, and Jonni Kanerva. 1989. Locative Inversion in Chicheŵa:
-
-A Case Study of Factorization in Grammar. Linguistic Inquiry 20:1–50.
-
-Butt, Miriam. 1998. Constraining Argument Merger through Aspect. In
-
-Complex Predicates in Nonderivational Syntax, ed. Erhard Hinrichs, Andreas Kathol, and Tsuneko Nakazawa. 73–113. New York: Academic
-
-Press. Syntax and Semantics Volume 30.
-
-Butt, Miriam. 2006. Theories of Case. Cambridge: Cambridge University
-
-Press.
-
-Butt, Miriam, and Tracy Holloway King. 1991. Semantic Case in Urdu. In
-
-Papers from the 27th Regional Meeting of the Chicago Linguistic Society,
-31–45.
-
-16
-
-Butt, Miriam, and Tracy Holloway King. 2003. Case Systems: Beyond
-
-Structural Distinctions. In New Perspectives on Case Theory, ed. Ellen
-
-Brandner and Heike Zinsmeister. 53–87. Stanford: CSLI Publications.
-
-Butt, Miriam, and Tracy Holloway King. 2005. The Status of Case. In Clause
-
-Structure in South Asian Languages, ed. Veneeta Dayal and Anoop Mahajan. Berlin: Springer Verlag.
-
-Dalrymple, Mary. 1993. The Syntax of Anaphoric Binding. Stanford: CSLI
-
-Publications.
-
-Dalrymple, Mary (ed.). 1999. Semantics and Syntax in Lexical Functional
-
-Grammar. Cambridge: The MIT Press.
-
-Dalrymple, Mary. 2001. Lexical Functional Grammar. New York: Academic
-
-Press.
-
-Davison, Alice. 1999. Ergativity: Functional and Formal Issues. In Functionalism and Formalism in Linguistics, Volume I: General Papers, ed.
-
-Michael Darnell, Edith Moravcsik, Frederick Newmeyer, Michael Noonan, and Kathleen Wheatley. 177–208. Amsterdam: John Benjamins.
-
-Deo, Ashwini, and Devyani Sharma. 2005. Typological Variation in the
-
-Ergative Morphology of Indo-Aryan Languages. To appear in Linguistic
-
-Typology.
-
-Enç, Mürvet. 1991. The Semantics of Specificity. Linguistic Inquiry 22(1):1–
-25.
-
-Halvorsen, Per-Kristian, and Ronald M. Kaplan. 1988. Projections and
-
-Semantic Description in Lexical-Functional Grammar. In Proceedings of
-the International Conference on Fifth Generation Computer Technology,
-1116–1122. Reprinted 1995 in Dalrymple et al. (eds) Formal Issues in
-
-Lexical-Functional Grammar .
-
-Kiparsky, Paul. 1973. ‘Elsewhere’ in phonology. In A Festschrift for Morris
-
-Halle, ed. Stephen R. Anderson and Paul Kiparsky. 93–106. New York:
-
-Holt, Rinehart and Winston.
-
-Landau, Idan. 2002. The Locative Syntax of Experiencers. ms.
-
-Lee, Hanjung. 2001a. Markedness and Word Order Freezing. In Formal
-and Empirical Issues in Optimality Theoretic Syntax, ed. Peter Sells.
-
-Stanford: CSLI Publications.
-17
-
-Lee, Hanjung. 2001b. Optimization in Argument Expression and Interpretation: A Unified Approach. Doctoral dissertation, Stanford University.
-
-Lee, Hanjung. 2003. Parallel Optimization in Case Systems. In Nominals:
-
-Inside and Out, ed. Miriam Butt and Tracy Holloway King. 15–58.
-
-Stanford: CSLI Publications.
-
-Nordlinger, Rachel. 1998. Constructive Case: Evidence from Australian
-
-Languages. Stanford: CSLI Publications.
-
-Nordlinger, Rachel. 2000. Australian Case Systems: Towards a Constructive
-
-Solution. In Argument Realization, ed. Miriam Butt and Tracy Holloway
-
-King. 41–72. Stanford: CSLI Publications.
-
-Rappaport, Malka. 1983. On the Nature of Derived Nominals. In Papers in
-
-Lexical-Functional Grammar, ed. L. Levin, M. Rappaport, and A. Zaenen. Indiana University Linguistics Club. Reprinted in M. Butt and
-
-T.H. King (eds.) Lexical Semantics in LFG, CSLI Publications, 2006.
-
-Rouveret, Alain, and Jean Roger Vergnaud. 1980. Specifying Reference
-to the Subject: French causatives and conditions on representations.
-
-Linguistic Inquiry 11:97–202.
-
-Sharma, Devyani. 2001. Kashmiri Case Clitics and Person Hierarchy Effects.
-
-In Formal and Empirical Issues in Optimality Theoretic Syntax, ed. Peter
-
-Sells. 225–256. Stanford: CSLI Publications.
-
-Zaenen, Annie, Joan Maling, and Höskuldur Thráinsson. 1985. Case and
-grammatical functions: The Icelandic passive. Natural Language and
-
-Linguistic Theory 3:441–483. Reprinted in Joan Maling and Annie Zaenen (Eds.) Syntax and Semantics 24: Modern Icelandic Syntax, 95–164.
-
-New York: Academic Press. 1990.
-
-18
-
-
+* Optimality Theory (OT, see Chapter 6) was observed with great interest by LFG
+  * adopted into the theory very quickly (Bresnan 2000)
+  * The input to an evaluation by OT constraints is assumed to be
+    f-structure and c-structure pairings
+  * The task of the OT constraints is to pick the most optimal pairing.
+* Several OT-LFG analyses exist with respect to case and they tend to fall
+  * in line with OT analyses of case in general. I.e., they
+  * adopt the insights on differential case marking by Aissen (1999, 2003)
+  * eg
+    * Sharma’s (2001) analysis of Kashmiri case clitics,
+    * Deo and Sharma’s (2005) analysis of
+      typological and diachronic variation in Indo-Aryan ergative patterns,
+    * Asudeh’s (2001) analysis of optional case patterns in Marathi
+  * have all the advantages and disadvantages of the general OT analyses (ch 6)
+  * Asudeh’s analysis, however, proposed an interesting extension to OT, namely,
+    the availability of optiONality in the evaluation of the most optimal candid
+  * Lee’s (2001a,b; 2003) ; bidirectional OT and output-output correspondences
+    * a new perspective on
+      * Hindi and Korean case as well as
+      * word order freezing effects, which are
+        * due to identically case marked arguments in a clause.
+
+# 6 Summary 
+
+* In sum, LFG contains a range of differing approaches to case marking
+  * No account developed a complete theory of case marking crosslinguistically.
+  * new ideas are continually being developed and tried out in light of new data
+  * not mean that accounts discard already established insights. 
+  * each new account builds on the strong points of previous LFG insights, but
+    is simultaneously not willing to let itself be blinded by them
+
+# References
