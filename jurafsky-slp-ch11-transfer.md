@@ -43,26 +43,26 @@ Draft of December 29, 2021
   * can be learned from text and
   * employed for eg measuring word similarity or studying meaning change
 * In this chapter, we expand on static word embeddings in two large ways
-  * contextual embeddings: representations for words in context. The methods eg
-    those learned by popular methods like BERT (Devlin+ 2019) or GPT (Radford+
-    2019) or their descendants, each word w will be represented by a different
-    vector each time it appears
+  * contextual embeddings: representations for words in context. 
+    eg those learned by popular methods like BERT (Devlin+ 2019) or GPT
+    (Radford+ 2019) or their descendants,
+    each word w will be represented by a different vector each time it appears
   * pretraining and fine-tuning.  
     * pretraining the process of learning some sort of representation of meaning
       for words or sentences by processing very large amounts of text
     * We’ll call these pretrained models pretrained language models, since they
       can take the form of the transformer language models we introduced in
       Chapter 9
-  * fine-tuning the process of taking the representations from these pretrained
-    models, and further training the model, often via an added neural net
-    classifier, to perform some downstream task like NER or question answering
-    or coreference. The intuition
-  * the pretraining phase learns a language model that instantiates a rich
-    representations of word meaning, that thus enables the model to more easily
-    learn (‘be fine-tuned to’) the requirements of a downstream NLU task.
-  * The pretrain-finetune paradigm is an instance of what is called transfer
-    learning in machine learning: the method of acquiring knowledge from one
-    task or domain, and then applying it (transferring it) to solve a new task
+    * fine-tuning the process of taking the representations from these pretrained
+      models, and further training the model, often via an added neural net
+      classifier, to perform some downstream task like NER or question answering
+      or coreference. The intuition
+    * the pretraining phase learns a language model that instantiates a rich
+      representations of word meaning, that thus enables the model to more easily
+      learn (‘be fine-tuned to’) the requirements of a downstream NLU task.
+    * The pretrain-finetune paradigm is an instance of what is called transfer
+      learning in machine learning: the method of acquiring knowledge from one
+      task or domain, and then applying it (transferring it) to solve a new task
     * adding grounding from vision or from real-world interaction into
       pretrained models can help build even more powerful models, but even text
       alone is remarkably useful, and we will limit our attention here to purely
