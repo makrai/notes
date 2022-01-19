@@ -383,8 +383,8 @@ Jackendoff, Ray S
   relative depth of embedding of the indices in conceptual structure
     * see chapter 11 for amplification
 * independent motivation of thematic analyses
-  * determine the thematic roles in a sentence has to begin with semantic
-    intuitions like those that motivated Gruber
+  * determine the thematic roles in a sentence has to begin with
+    semantic intuitions like those that motivated Gruber
   * the present account embeds the theory of thematic roles in a rich system
     governed by its own combinatorial properties
 * how they behave in rules of inference

@@ -122,7 +122,7 @@ interaction between sem and synt rules
 3. Thematic Hier Cond, chaps 2 and 4
 * constraints on the selection of corefs of complement subjects
 
-## 1.7 Assumptions about the synt amd the lex p17
+## 1.7 Assumptions about the synt and the lex p17
 
 * differences from Aspects
   * lexical insertion will be simpler, unrestricted
