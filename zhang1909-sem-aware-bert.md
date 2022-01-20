@@ -29,7 +29,7 @@ AAAI-2020 arXiv:1909.02209v3 [cs.CL]
   * vulnerably suffer from adversarial attacks (Jia and Liang 2017)
   * great attention to non-significant words and ignore important ones
   * question answering challenge (Rajpurkar+ 2016)
-    * a number of answers produced by previous models are sem incomplete 
+    * a number of answers produced by previous models are sem incomplete
       (as shown in Section 6.3)
 * semantic role labeling (SRL) naturally matches e.g. question answering tasks,
   * who did what to whom, when and why with respect to the central meaning

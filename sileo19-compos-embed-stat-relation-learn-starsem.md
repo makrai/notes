@@ -74,18 +74,18 @@ Composition of Sentence Embeddings:
   * word level would fit in our framework, and could be tested in future studies
 * inference relations between sentences
   (Chen+ 2017b; Seok+ 2016; Gong+ 2018; Joshi+ 2019)
-  * but don’t explicitely use sentence embeddings. Instead, they 
-    encode sentences jointly, 
-    possibly with previously cited word compositions, therefore 
+  * but don’t explicitely use sentence embeddings. Instead, they
+    encode sentences jointly,
+    possibly with previously cited word compositions, therefore
     it would be interesting to apply our techniques within their framework
 
 # 8 Conclusion 8
 
 * these more expressive compositions
   * Larger scale data might leverage them, as well as more compositional,
-    asymmetric, and arguably more realistic datasets 
+    asymmetric, and arguably more realistic datasets
     (Dasgupta+ 2018; Gururangan+ 2018)
-  * can also be helpful to improve interpretability of embeddings, 
+  * can also be helpful to improve interpretability of embeddings,
     since they can help measure relation prediction asymmetry
     * Analogies through translations helped interpreting word embeddings, and
     * anlyzing our learned translation could help interpreting sentence embeds

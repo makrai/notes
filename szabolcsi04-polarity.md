@@ -145,9 +145,9 @@ Part One: PPIs as double NPIs 4
   * decreasing iff, given A≤B, f(B)≤f(A).
   * antiadditive iff f(a ∨ b) = fa ∧ fb.
   * antimorphic iff antiadditive and additionally f(a ∧ b)=fa ∨ fb, i.e. iff f
-    is classical negation.  
+    is classical negation.
 * e.g. _no one_ but not _at most five boys_ exhibits the antiadditive _ At most
-  five boys walk or talk != At most five boys walk and =<5 boys talk 
+  five boys walk or talk != At most five boys walk and =<5 boys talk
 * _some_ can scope below an antiadditive (ie not) if it is not in its immed
   scope (Kroch 1979), Nem azért (19) John didn’t offend someone because he was
   malicious (but because he was stupid).  √ not > because ... > some
@@ -159,7 +159,7 @@ Part One: PPIs as double NPIs 4
     lacks the “widening plus strengthening” flavor
 * In the intervention cases, _some_ cannot be replaced by _any_ because
   * ~ is blocked by the interveners (Kroch 1979, Linebarger 1987)
-    * the licensing of any 
+    * the licensing of any
     * negation prohibition some csJohn doesn’t always call anyone.  not > always
       > any
 * All the parallel observations hold in Hungarian for indef pronouns formed with
@@ -176,7 +176,7 @@ Part One: PPIs as double NPIs 4
 
 ## 2.3 ... unless [AA-Op > PPI] itself is in an NPI-licensing context
 
-* i.e. PPIs within the immediate scope of a clausemate antiadditive operator 
+* i.e. PPIs within the immediate scope of a clausemate antiadditive operator
 * Baker 1970, who discussed matrix negation, _no one_ and adversative
   predicates, pointed out that data like (33) were already noted by Jespersen:
   (33) I don't think that John didn't call someone. √ not > not > some (34) No
@@ -207,7 +207,7 @@ Part One: PPIs as double NPIs 4
 # 4. Are PPIs forced to scope above clausemate negation?
 
 * 47? Because PPIs are for independent reasons forced to scope above clama AA-Op
-* Serbo-Croatian PPI ne(t)ko 'someone' , Progovac proposes 
+* Serbo-Croatian PPI ne(t)ko 'someone' , Progovac proposes
 * a PPI has a syntactic feature [-neg] to be checked in a compatible PolarityP
   * there are two polarity phrases, the
     * lower one typically associated with sentential negation particles ie NegP,
@@ -215,17 +215,17 @@ Part One: PPIs as double NPIs 4
   * Since the PPI in [John did not see someone] cannot check in the lower neg,
     it is forced to raise to the higher PolP" (Progovac 2000)
   * various elegant consequences
-* reasons to look further for an explanation.  
+* reasons to look further for an explanation.
   * as seen above, these PPIs happily scope below even clausemate negation if
     * another operator scopally intervenes between negation and the PPI, or (49)
       John didn’t offend someone because he was malicious (but because he was
       stupid).  √ not > because ... > some (50) John didn’t say something at
       every party. √ not > every > some (51) I regret that John didn’t call
       someone. √ regret > not > some (52) If we don' t call someone, we are
-      doomed. √ if (not > some) 
+      doomed. √ if (not > some)
       * Neither of these possibilities should be available if the PPI was forced
         to scope above NegP, the locus of negation.
-    * the [negation > PPI] unit is in an NPI-licensing context 
+    * the [negation > PPI] unit is in an NPI-licensing context
       * Progovac discusses cases like type (ii), but evaluates them differently.
       * the PPI scopes above the clausemate negation though below the
         extraclausal one: (53) Ne tvrdim da Milan nekoga ne voli.  _I don' t
@@ -252,7 +252,7 @@ Part One: PPIs as double NPIs 4
     John doesn’t appreciate this somewhat...  '... to any extent’ (58) I regret
     that John didn’t take some time off.  If John didn’t take some time off...
     '... any time’ (59) I regret that John didn’t come up with something.  If
-    John didn’t come up with something...  '... anything’ 
+    John didn’t come up with something...  '... anything’
 * similar contrasts with verbal disjunctions in Hungarian, which
   * never scope above their own negation, hence they cannot scope between the
     two negations: 14 (60) János nem evett vagy aludt.  *'John didn' t eat or
@@ -277,7 +277,7 @@ Part One: PPIs as double NPIs 4
 * whether Jespersen’s suggestion might extend to the rescuing effect of the full
   set of NPI-licensors.
 * Von Fintel 1999: NPI-licensors can all be analyzed as (at least) Strawson-decr
-* Strawson-decreasingness 
+* Strawson-decreasingness
   * characterizes the entailment relations between sentences when their
     presuppositions are fulfilled (62/63) I regret that John ate a
     vegetable/spinach
@@ -305,7 +305,7 @@ Part One: PPIs as double NPIs 4
   * hE, PPIs are only allergic to clausemate negation
   * if we add a further negation on top of the rescuer and thereby switch the
     polarity of the context, the PPI remains happy: (70) I don’t regret that
-    John didn’t come up with something.  √ not > some 
+    John didn’t come up with something.  √ not > some
   * the above account makes incorrect predictions concerning the range of
     possible rescuers
     * one of the basic facts about the PPIs at hand: they
@@ -316,7 +316,7 @@ Part One: PPIs as double NPIs 4
     * ie while the PPI is OK in an increasing local context, it does not require
       one
     * What if we eliminate the antiadditive property of the local context and
-    * if the local context is simply _decreasing_ the PPI will still be rescued?  
+    * if the local context is simply _decreasing_ the PPI will still be rescued?
     * Szabolcsi and Zwarts 1990 observe that given two functions f and g, where
       g is antiadditive, their composition f ° g i.e. λx[f(gx)] is antiadditive
       iff f is multiplicative, viz.  f(a∧b)=fa∧fb
@@ -331,8 +331,8 @@ Part One: PPIs as double NPIs 4
       above the offending antiadditive rescues the PPI as much as adding an
       NPI-licensor does.
     * This prediction is just wrong: (73) ?* More than two men didn’t come up
-      with something.  cannot mean `More than two men came up with nothing’ 
-* In sum: the rescuing effect cannot be due to context extension.  
+      with something.  cannot mean `More than two men came up with nothing’
+* In sum: the rescuing effect cannot be due to context extension.
 
 ## 5.2 [AA-Op > PPI] is a non-lexical NPI 18
 
@@ -341,9 +341,9 @@ Part One: PPIs as double NPIs 4
     immediately below a clausemate antiadditive op is rendered fully acceptable
     if an item that licenses weak (ever-type) NPIs is added scopally immediately
     above it
-  * the rescuing effect is nothing but NPI-licensing.  
-* three similarities between rescuing and NPI-licensing 
-1. the set of NPI-licensors is not a simple and natural set.  
+  * the rescuing effect is nothing but NPI-licensing.
+* three similarities between rescuing and NPI-licensing
+1. the set of NPI-licensors is not a simple and natural set.
   * the exact same set is relevant in connection with a new phenomenon,
   * it cannot easily be taken to be pure coincidence. While
   * von Fintel argues that Strawson-entailment is a reasonable and useful rel
@@ -381,17 +381,17 @@ does not hurt
       didn’t know anything’ (84) No one knows squat. can mean `No one knows
       anything’ (85) At most five people knew squat. cannot mean `=<5 people
       knew anything’ (86) I regret that he knew squat. cannot mean `I regret
-      that he knew anythng’ 
+      that he knew anythng’
 * As Postal: _squat_ has another use where it means 'nothing’: (87) He knows
   squat.  `He knows nothing’
   * We are not concerned with the latter, it must be carefully ignored.
   * For each vulgar minimizer, some speakers of English have both usages, some
-    only one of the two.  
+    only one of the two.
 * some of the NPIs that need an anti-additive licenser require the licenser to
   be clausemate.
   * In Dutch such are (Marcel den Dikken, p.c.)
     * een hand voor ogen (zien) `(to see) a hand before (one’s) eyes’ and
-    * met een vinger (aanraken) ‘(touch) with a finger’ 
+    * met een vinger (aanraken) ‘(touch) with a finger’
     * not ook maar `even’
 * In English squat and, for some speakers, yet need clausemate licensors. This
   * compare didn’t think, where think is an optional neg-raiser, with didn’t
@@ -422,7 +422,7 @@ understand squat.
   * A context that can license the strong-NPI feature "activates" and licenses
     that feature. What we have seen indicates, however,
   * the other, weak-NPI feature gets activated but not licensed.  Therefore, the
-    * illegitimate, unless a licensor for the weak-NPI feature is provided.  
+    * illegitimate, unless a licensor for the weak-NPI feature is provided.
   * i.e. the satisfaction of this craving for antiadditives activates another,
     which needs to be satisfied independently. Schematically:
 * one aspect of the descriptive claim. The essence of the proposal is that
@@ -430,7 +430,7 @@ understand squat.
   * the PPI phenomenon reduces to the NPI phenomenon. Exactly what NPI features
   * the features of someone / something type PPIs match quite closely the
     combined properties of yet and ever, we know that
-  * there are many other kinds of NPIs. 
+  * there are many other kinds of NPIs.
   * Even the ones roughly classed together above are not entirely identical,
     e.g. squat seems to care more about the locality of its licensor than yet.
   * It would be equally possible for a PPI to have a combination of two other
@@ -465,14 +465,14 @@ quantification 24
   * indefinite pronouns that are formed with two negations (see the Oxford Lat)
     (102) a. non nemo `some persons, a few’ b. non nullus `a certain amount of,
     not a little; a number of, not a few; some men’ c. non numquam `on various
-    occasions, sometimes’ 
+    occasions, sometimes’
 * The following text shows that non nemo is indeed comparable to someone: 20
   (103) video de istis qui se popularis haberi volunt abesse *non neminem* [...]
   *is* et nudius tertius in custodiam civis Romanos dedit.  `I see that of those
   men who wish to be considered attached to the people *one man* is absent [...]
   *He* only three days ago gave Roman citizens into custody.’ (Cicero, In
   Catilinam, 4.10)
-* _non nemo_ can antecede non-c-commanded anaphora 
+* _non nemo_ can antecede non-c-commanded anaphora
   * one of the basic tenets of Dynamic Semantics, one negation “freezes” an
     existential (eliminates its dynamic potential to bind a non-c-commanded
     pronoun) and another negation does not “defrost” it.
@@ -590,14 +590,14 @@ quantification 24
       trucks
 * that resumptive quantification factors out the shared operator of two or more
   operator--restriction units.  (In Pesetsky’s 2000 terms, it might be a case of
-  feature movement.) 
+  feature movement.)
 * Without the intervener, _I didn’t say anything_ might be represented as below,
   variable-binding          no<x,y>[at event (y) I say thing(x)] generalized
   quantifier    no[event,thing][said-by-me-at]
 * _Always_ in (109) will separate the operator no at least from the
   thing-portion of its binary restriction. In this way,
 * the present proposal naturally predicts the sensitivity of NPI-licensing to
-  Linebarger’s 1987 intervention effects.  
+  Linebarger’s 1987 intervention effects.
 * Honcoop 1998 sought to subsume the intervention effects in NPI-licensing under
   his general theory, but he did so with reference to the mechanics of the
   computation of scalar implicatures. I
@@ -621,7 +621,7 @@ quantification 24
       personne.  'I don’t demand követel that they arrest anyone’
 * I tentively adopt de Swart and Sag' s 2002 theory
 * Treating negative polarity and negative concord with the same semantic device
-  seems quite natural. After all, they are variations on the same meaning. 
+  seems quite natural. After all, they are variations on the same meaning.
 * Resumption will play a role in the proposed grammar in both its binary and its
   arbitrarily n-ary versions
   * Licensing is always binary resumption
@@ -638,10 +638,10 @@ quantification 24
 
 ## 8.4 Interim summary 31
 
-* the semantics that my PPI proposal entails for standard NPIs is viable. 
+* the semantics that my PPI proposal entails for standard NPIs is viable.
   * It squares with Postal's conclusion that NPIs contain silent negations
   * Postal's negation-deletion can be recast as binary resumptive quant
-* needed 
+* needed
   10. an account of the full distribution of PPIs
   9. introducing some further crucial aspects of Postal's proposal
 
@@ -669,10 +669,10 @@ quantification 24
     negative fronting, e.g.  (120) a. I didn’t think that any gorilla (but Kong)
     would they try to train.  b. * At most five people think that any gorilla
     would they try to trai
-* the negative and the existential version occur in different contexts 
+* the negative and the existential version occur in different contexts
 * the underlying representation of those instances of no and any that can host
   exceptives involves ¬∃, which is equivalent to a negative universal (∀¬), as
-  desired.  
+  desired.
   * morphology may spell it out in more than one way
   * If the negation
     * stays in place, the det is spelled out as no, eg I saw no one (but Bill).
@@ -730,16 +730,16 @@ quantification 24
   λpλq¬¬(p∨q)
 * Some—any—no just constitute a particularly nice paradigm: no accidental gaps.
 * _would rather_ may be regarded as elements of a paradigm that has accidental
-  gaps in both the “no-slot” and in the “any-slot”.  
+  gaps in both the “no-slot” and in the “any-slot”.
 * the two negations that Postal postulates
-  can be identified with the two NPI-features 
+  can be identified with the two NPI-features
   * One of Postal’s negs wants a local anti-additive deleter, like one of mine
   * The other negation in Postal’s existentials is happy with any
     Strawson-decreasing deleter – just like the other NPI-feature in PPIs.
 * consider the logical possibilities of Postal’s system
 * I will use the neutral term “license”, which
   for Postal means deletion and
-  in my terms, the formation of a resumptive quantifier. 
+  in my terms, the formation of a resumptive quantifier.
   (121) Spelling out underlying ¬¬∃:
     a.  one ¬ licensed DP-internally, NO    (I didn’t say NOthing)
         other ¬ stays in place
@@ -770,8 +770,8 @@ quantification 24
   `*`No one said something or
   `*`He didn’t say something do not arise:
 (122) a.  `*`AA-Op licenses one NPI-feature of the PPI; the other is left in plc
-      b. `*`The same AA-Op licenses both NPI-features of the PPI. 
-      c. `*`Both NPI-features of the PPI are left in place 
+      b. `*`The same AA-Op licenses both NPI-features of the PPI.
+      c. `*`Both NPI-features of the PPI are left in place
             in the context of AA-Op.
 * (122a) immediately follows from the spell-out rule. If one negation is
   licensed by the anti-additive and, crucially, the other is left in place, the
@@ -867,7 +867,7 @@ generalization, if correct, supports this implementation of the observations mad
 * This paper has argued that certain expressions are endowed with
   “NPI-features”, embodied by negations in their lexical semantics.
   * NPI-hood and PPI-hood are not shown to follow from other lexical semantic
-    properties of these items. 
+    properties of these items.
   * question arises whether this agnostic position misses some empirical generaliz
   * two candidates:
 * grounding NPI-hood in scalarity and PPI-hood in referentiality.

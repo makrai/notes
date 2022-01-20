@@ -33,7 +33,7 @@ facebookresearch/InferSent
 Sentence embeddings (InferSent) and training code for NLI.
 
 illetve [Socher](socher.org)től ezek közül, csak nem tudom, hogy pontosan
-melyiket 
+melyiket
 
 A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks,
 Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka, Richard Socher

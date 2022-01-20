@@ -1,4 +1,4 @@
-Towards Understanding Linear Word Analogies 
+Towards Understanding Linear Word Analogies
 Kawin Ethayarajh, David Duvenaud, Graeme Hirst
 ACL 2019 Florence, Italy
 

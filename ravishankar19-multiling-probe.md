@@ -57,8 +57,8 @@ First NLPL Workshop on Deep Learning for NLP 2019
   heads, often reducing certain layers to single heads, without a significant
   drop in performance in certain scenarios
 * Clark+ (2019) provide a per-head analysis and attempt to quantify what
-  information each head retains; they discover that 
-  * specific aspects of syntax are well-encoded per head, and 
+  information each head retains; they discover that
+  * specific aspects of syntax are well-encoded per head, and
   * they find heads that correspond to certain linguistic properties
     * e.g.  heads that attend to direct objects of verbs
 * BERT’s layers, such as
@@ -171,8 +171,8 @@ stores, appears to be a reasonable approach to qualifying this information
   not strictly easy to motivate cross-linguistically: the burden of annotation
 * more semantic-level probing by means of existing cross-lingual semantic resrc,
   such as the Parallel Meaning Bank (Abzianidze+ 2017)
-  * The Parallel Meaning Bank: Towards a Multilingual Corpus of 
+  * The Parallel Meaning Bank: Towards a Multilingual Corpus of
       Translations Annotated with Compositional Meaning Representations
-    Lasha Abzianidze, Johannes Bjerva, Kilian Evang, Hessel Haagsma, 
+    Lasha Abzianidze, Johannes Bjerva, Kilian Evang, Hessel Haagsma,
       Rik van Noord, Pierre Ludmann, Duc-Duy Nguyen, and Johan Bos
     arXiv:1702.03964 [cs].  ArXiv: 1702.03964.  2017

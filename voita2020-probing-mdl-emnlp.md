@@ -1,37 +1,37 @@
-Information-Theoretic Probing with Minimum Description Length 
+Information-Theoretic Probing with Minimum Description Length
 Elena Voita, Ivan Titov
 EMNLP 2020
 
 # Abstract
 
 * probes do not substantially favour pretrained representations over randomly
-  initialized ones. Analogously, their 
+  initialized ones. Analogously, their
 * accuracy can be similar when probing for genuine linguistic labels and probing
-  for random synthetic tasks. 
+  for random synthetic tasks.
 * To see reasonable differences in accuracy with respect to these random
   baselines, previous work had to constrain either the amount of probe training
-  data or its model size. Instead, 
+  data or its model size. Instead,
 * we propose information-theoretic probing with minimum description length (MDL)
   * training a probe to predict labels is recast as teaching it to effectively
-    transmit the data. Therefore, 
-  * the measure of interest changes from probe accuracy to the 
+    transmit the data. Therefore,
+  * the measure of interest changes from probe accuracy to the
     description length of labels given representations.  In addition to probe
     * evaluates “the amount of effort” needed to achieve the quality. This
     * characterizes either (i) size of a probing model, or (ii) the amount of
-      data needed to achieve the high quality.  We consider 
+      data needed to achieve the high quality.  We consider
 * two methods for estimating MDL which can be easily implemented on top of the
   standard probing pipelines: variational coding and online coding.  We show
-  * these methods agree in results and are 
+  * these methods agree in results and are
   * more informative and stable than the standard probes.
 
 # 1 Introduction
 
 * compare pretrained reprs with randomly initialized ones (Zhang & Bowman, 2018)
-* probing for tags randomly associated to word types 
-  (‘control tasks’, Hewitt and Liang (2019)). 
+* probing for tags randomly associated to word types
+  (‘control tasks’, Hewitt and Liang (2019)).
 * To see differences in the accuracy with respect to these random baselines, prv
   * reduce the amount of a probe training data (Zhang and Bowman, 2018) or use
-    smaller models for probes (Hewitt and Liang, 2019).  
+    smaller models for probes (Hewitt and Liang, 2019).
 * information-theoretic view
   * Any regularity in representations with respect to labels can be exploited
     both to make predictions and to compress these labels, i.e., reduce length
@@ -65,7 +65,7 @@ Valpola, 2004). As we will see in the experiments, close probe accuracies often
 come at a very different model cost: the ‘rule’ (the probing model) explaining
 regularity in the data can be either simple (i.e., easy to communicate) or
 complicated (i.e., hard to communicate) depending on the strength of this
-regularity.  
+regularity.
 * Online code provides a way to transmit data without directly transmitting
   the model. Intuitively, it measures the ability to learn from different
   amounts of data. In this setting, the data is transmitted in a sequence of
@@ -73,9 +73,9 @@ regularity.
   the regularity in this data and compress the following portion. If the
   regularity in the data is strong, it can be revealed using a small subset of
   the data, i.e., early in the transmission process, and can be exploited to
-  efficiently transmit the rest of the dataset. The online code is 
+  efficiently transmit the rest of the dataset. The online code is
   * related to the area under the learning curve, which plots quality as a
-    function of the number of training examples.  
+    function of the number of training examples.
 * previous work manually tuned (i) model size and/or (ii) the amount of data, we
   * these were indirect ways of accounting for the ‘amount of effort’ component
     of (i) variational and (ii) online codes, respectively.  Interestingly,

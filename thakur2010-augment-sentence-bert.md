@@ -9,7 +9,7 @@ arXiv:2010.08240 [cs.CL]
   * Bi-encoders, which map each input independently to a dense vector space
     * require substantial training data and fine-tuning over the target task
 * We present a simple yet efficient data augmentation strategy
-  * we use the cross-encoder to label a larger set of input pairs 
+  * we use the cross-encoder to label a larger set of input pairs
     to augment the training data for the bi-encoder
   * selecting the sentence pairs is non-trivial and crucial for the success
   * evaluate our approach compared to the original bi-encoder performance

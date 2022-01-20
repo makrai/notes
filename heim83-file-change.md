@@ -295,7 +295,7 @@ Irene Heim
   * an example with an indefinite, such as the sentence "A cat arrived", one of
   * logical forms is (12b), from above, this time with the definiteness filled
   * To determine the file change that (12b) induces, we will have to consider
-    two questions: 
+    two questions:
     1. since (12b) is a molecular proposition, we have to ask ourselves
       how its overall effect on the file may be calculated on the basis of the
       file changes that each of its two parts would induce
@@ -305,8 +305,8 @@ Irene Heim
   subsequently to the file change that the right constituent dictates. The
   * successive left-to-right mode of file change is this:
 (18) Let F be a file, and let p be an atomic proposition that consists of an n-place
-predicate R and an n-tuple of variables whose indices are i 1 , ... , i n respectively.  
-  Then: 
+predicate R and an n-tuple of variables whose indices are i 1 , ... , i n respectively.
+  Then:
 `Sat(F + p) = {a N \cup b M \in A N\cupM : a N \in Sat(F), M = {i 1 , ... , i n}, and <b i 1 , ... , b i n > \in Ext(R)}`
   * \cup in unification of sequences
     * the union of two sequences is itself a sequence just in case they coincide
@@ -351,7 +351,7 @@ predicate R and an n-tuple of variables whose indices are i 1 , ... , i n respec
 * But first let me clarify to what extent the two analyses agree in their predic
 * my theory predicts existential truth-conditions for such sentences. Consider
   * By the truth criterion (21) for logical forms, we know that (12b) is true
-    * Dom(F) must not contain 1, for F  (12b) to be defined. 
+    * Dom(F) must not contain 1, for F  (12b) to be defined.
     * Sat(F (12b)) must be non-empty
     Rules (16) and (18) determine that Sat(F + (12b)) = {a N \cup b {1} \in
     A^N\cup{1} : a N \in Sat(F), b 1 is a cat, and b 1 arrived}. Given that

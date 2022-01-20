@@ -6,7 +6,7 @@ arXiv preprint arXiv:2108.05857
 
 * this approach does not ensure that the answer is a span in the given passage,
   nor does it guarantee that it is the most probable one
-* we present exact-extract, a decoding algorithm that 
+* we present exact-extract, a decoding algorithm that
   * finds the most probable answer span in the context
   * We compare the performance of T5 with both decoding algorithms on zero-shot
     and few-shot extractive question answering

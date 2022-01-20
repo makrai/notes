@@ -9,7 +9,7 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 * fine-tuning is an unstable process: training the same model with
   * multiple random seeds can result in a large variance of the task perf
-* Devlin+ (2019); Lee+ (2020); and Dodge+ (2020) identified two poten reasons 
+* Devlin+ (2019); Lee+ (2020); and Dodge+ (2020) identified two poten reasons
   * catastrophic forgetting and small size of the fine-tuning datasets
 * we show that both hypotheses fail to explain the fine-tuning instability
   * we analyze BERT, RoBERTa, and ALBERT,

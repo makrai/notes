@@ -51,7 +51,7 @@ ICLR 2017
 * anisotropy
   * most word embedding methods seek to capture word cooccurence probabilities
   * end up giving
-    * large vectors to frequent words, as well as 
+    * large vectors to frequent words, as well as
     * unnecessarily large inner products to word pairs,
       to fit that words sometimes occur out of context in documents
     * word vectors to have huge components along semantically meaningless dirs

@@ -233,12 +233,12 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * English is not generally the best source language for cross-lingual
     transfer for all target languages (Lin+ 2019)
     * Lin Y-H; Chen C-Y; Lee J; Li Z; Zhang Y; Xia M; Rijhwani S; He J; Zhang
-        Z; Ma X; Anastasopoulos A; Littell P; and Neubig G 
+        Z; Ma X; Anastasopoulos A; Littell P; and Neubig G
       Choosing Transfer Languages for Cross-Lingual Learning
       ACL 2019
   * A single source language also facilitates evaluation as models only need to
     be trained once and can be evaluated on all other languages
-  * Future work may also consider 
+  * Future work may also consider
     * multi-source transfer, which is interesting particularly for low-resource
     * transfer to unknown languages or unknown language-task combinations
 * pretrained multilingual representations are finetuned on English labelled
@@ -354,8 +354,8 @@ training data of all languages jointly
 ### Cross-lingual transfer gap
 
 * i.e. the difference between English test set and all other languages in Tab 3
-* should be taken with a grain of salt, as 
-  scores across languages are not directly comparable 
+* should be taken with a grain of salt, as
+  scores across languages are not directly comparable
   for the tasks where test sets differ, i.e. POS, NER, MLQA, and TyDiQA-GoldP
   * differences in scores may not be linearly related
 * powerful models such as XLM-R reduce the gap significantly

@@ -6,9 +6,9 @@ ACL 2020
 
 * we extend recent work on finding syntactic trees in internal representations
   to the multilingual setting
-* syntactic tree distances in languages other than English, and that 
+* syntactic tree distances in languages other than English, and that
 * these subspaces are approximately shared across languages. Motivated by these
-* we present an unsupervised analysis method that provides evidence 
+* we present an unsupervised analysis method that provides evidence
   mBERT learns representations of syntactic dependency labels:
 * clusters which largely agree with the Universal Dependencies taxonomy
 

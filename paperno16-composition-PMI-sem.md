@@ -49,7 +49,7 @@ Computational Linguistics Volume 42 | Issue 2 | June 2016 p.345-350
 * In our sample, average PMI(AN, c) was 0.80, and
   average PMI(A, c) and PMI(N, c) were 0.55 and 0.63, respectively
 * Over 70% of positive PMI values in our sample are lower than additive (PMI(AN,
-* reason comes from the information-theoretic nature of PMI. Recall that 
+* reason comes from the information-theoretic nature of PMI. Recall that
   * PMI(ab) measures how informative phrase components a, b are about each other
   * context diminishes the mutual information of a and b. And indeed it is only
     * the context itself is usually informative in multiple ways. In one typical
@@ -73,7 +73,7 @@ Computational Linguistics Volume 42 | Issue 2 | June 2016 p.345-350
   * PMI(AN,c) is typically just above PMI(A,c) and PMI(N,c) for each of the
   * Adding PMI(A,c) and PMI(N,c) makes the prediction further above the observed
   * product is below it. As one could expect,
-  * shifted addition is on average closer to actual PMI values than plain add.  
+  * shifted addition is on average closer to actual PMI values than plain add.
   * Weighted addition, on the other hand, brings about large improvements in
     approximating precisely the negative subset. Weighted addition is
     * the best model overall, outperforming the parameter-rich full additive and

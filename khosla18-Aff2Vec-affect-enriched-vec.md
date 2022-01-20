@@ -12,7 +12,7 @@ arXiv:1805.07966v1 cs.CL 21 May 2018
 
 # 1 Intro
 
-* Historically, affective computing used multi-modal data 
+* Historically, affective computing used multi-modal data
   * gathered through various sensors
 * Word correlation with social and psychological processes
   * Pennebaker (2011)
@@ -27,7 +27,7 @@ arXiv:1805.07966v1 cs.CL 21 May 2018
   emotive text generation (Ghosh+ 2017)
 * Aff2Vec can be trained using any affect space,
 * we focus on the Valence–Arousal–Dominance dimensions
-* We introduce the ENRON-FFP Email dataset with 
+* We introduce the ENRON-FFP Email dataset with
   * Frustration, Formality, and Politeness tags gathered using a crowd-sourced
 
 # 2 Prior art for enriched word distributions

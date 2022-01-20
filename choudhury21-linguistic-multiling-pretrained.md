@@ -35,7 +35,7 @@ AAAI 2021
   languages, and on the remaining two, the models perform equally well. Should
 * The problem has great practical significance for two reasons. First, before
   * average performance over the set of tested languages has been adopted by
-    * important factors such as 
+    * important factors such as
     * the set of languages and tasks the model is expected to work well on, and
       the amount of data across languages that the MultiLM was pre-trained and
       fine-tuned on (Hu+ 2020; Wu and Dredze 2020; Lauscher+  2020). More
@@ -49,14 +49,14 @@ AAAI 2021
     * If this is the central tenet behind the conception and construction of
       MultiLMs, then selection problem (MMSP) must be resolved in a manner that
       conforms to this normative principle of “fairness” or “distributive
-      justice” across languages 
+      justice” across languages
 * discourse on fairness in machine learning, ethics, social choice theory,
   economics and decision theory, we provide several possible resolution of the
 * principles of distributive justice entailed by the choices made by the
   researchers while resolving the MMSP, but not stated as such. As we shall see,
   * most of the work, whenever possible, follow the Pareto-efficiency principle,
     i.e., choose the model which does as good or better than all others on all
-    languages that were tested for; 
+    languages that were tested for;
   * otherwise, a utilitarian approach is adopted, where a simple unweighted
     average performance across languages is used as the selection criterion. We
 * a practical trade-off between the egalitarian and utilitarian ideologies could
@@ -66,9 +66,9 @@ AAAI 2021
   * based on the principle of least difference, and proposes to narrow the gap
     between unequal accuracies or utilities, instead of equalizing them
   * Rawlsian fairness based resolution of MMSP is also the robust utilitarian
-    choice under an adversarial assumption, and it 
+    choice under an adversarial assumption, and it
   * also ensures a progressively more egalitarian distribution under the
-    assumption that language resources for all languages will grow over time, 
+    assumption that language resources for all languages will grow over time,
 * researchers have critiqued the utilitarian approach to MMSP
   (Wu and Dredze 2020; Hu+ 2020); the objective of those studies have been to
   * in most cases a single Pareto-efficient model does not exist. These
@@ -76,7 +76,7 @@ AAAI 2021
   * they suggest that the resolution of MMSP should be deferred till we have a
     clearer understanding of the model performances
 * it is unlikely that in the near future we will have a MultiLM that is
-  Pareto-efficient across languages and tasks. 
+  Pareto-efficient across languages and tasks.
   * it is useful and important to resolve the MMSP under partial knowledge in
 * discourse on fairness in
   * ML (Mehrabi+ 2019; Barocas, Hardt, and Narayanan 2017; Leben 2020), and more

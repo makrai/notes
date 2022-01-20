@@ -86,7 +86,7 @@ ACL 2020 Best Theme Paper
     * This active participation of the listener is crucial to human communicatn
       (Reddy, 1979; Clark, 1996)
     * humans are also willing to attribute communicative intent to a linguistic
-      signals even if the originator of the signal is 
+      signals even if the originator of the signal is
       not an entity that could have intent
 * To summarize, as we strive to understand how tasks relate to human
   * distinguish cleanly between form, conventional meaning, and comm intent

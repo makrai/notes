@@ -560,10 +560,10 @@ can argue that there is a shift in verb sense
 correlated with the shift in the interpretation of the object.
 So part of the hypothesis should be that
 the verb selects for the type of its object.
-(32) a. On ždet podrugu.  (Neidle 1988, p.31) 
+(32) a. On ždet podrugu.  (Neidle 1988, p.31)
         He waits girlfriend- ACC . F . SG
         ‘He’s waiting for his girlfriend.’
-  b. On ždet otveta na vopros.  
+  b. On ždet otveta na vopros.
      He waits answer- GEN . M . SG to question
      ‘He’s waiting for an answer to the question.’
 
@@ -633,7 +633,7 @@ existential sentences, in the past we had trouble seeing how we could extend a
 comparable treatment to Object Gen Neg, since only in a small subset of cases
 does Object Gen Neg involve anything like “existential meanings”: it seems to in
 (32a), but not in (33a), for instance. But if we study the arguments of McNally
-(1992, 1997, 1998) and recent work of Landman (2002), and ongoing work by 
+(1992, 1997, 1998) and recent work of Landman (2002), and ongoing work by
 Kamp and Bende Farkas, they all have argued that
 the NP in an existential sentence does not have normal type e (nor generalized
 quantifier) meaning, but rather a property type meaning (<e,t> or <s,<e,t>>).
@@ -643,7 +643,7 @@ sentences. But we could be wrong. Or this distinction in semantic types could be
 too rough to capture all the semantic distinctions that really need to be made.
 
 If we could find more support for the arguments that
-the NP in an existential sentence is interpreted as property type <e,t> whereas 
+the NP in an existential sentence is interpreted as property type <e,t> whereas
   * We will say <e,t> for simplicity even though it may really be <s,<e,t>>.
 the subject position of a predicative or other ordinary sentence is type e,
 then the parallel between Subject Gen Neg and Object Gen Neg would be at a
@@ -684,7 +684,7 @@ structural level: in each case the relevant argument is “demoted” from e-typ
   for a number of the semantic correlates of the Gen Neg rule, and may help to
   link this investigation with other investigations of ‘weak’ objects
   (de Hoop 1995, Van Geenhoven 1998a, Zimmermann 1993)
-* This construction is interesting 
+* This construction is interesting
   * only in its own right for the many puzzles it presents; it is also a good
   * for the interactions among lexical semantics of verbs, argument structures
     and their “rearrangements”, the notion of existential constructions, and the

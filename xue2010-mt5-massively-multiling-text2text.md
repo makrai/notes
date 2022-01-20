@@ -140,7 +140,7 @@ arXiv:2010.11934 [cs.CL]
   * same self-supervised objective as T5, with 15% of tokens masked and an
     average noise span length of 3
   * We ablate some of these experimental details in section 4.2
-* For fine-tuning, we use a constant learning rate of 0.001 and 
+* For fine-tuning, we use a constant learning rate of 0.001 and
   dropout rate of 0.1 for all tasks
   * batch size 2 17 for most tasks but increased this up to 2 20 in a few cases
     based on performance on the validation set
@@ -271,6 +271,6 @@ arXiv:2010.11934 [cs.CL]
   * we mix a small amount of our unsupervised task (covering 101 languages) into
     XQuAD fine-tuning, at a ratio of just 1:100
 * Figure 4 shows the results on XQuAD zero-shot error rates
-  * marked effect on the mT5-Small and mT5-Base models 
+  * marked effect on the mT5-Small and mT5-Base models
     (where accidental translation was most rampant),
     reducing the illegal prediction rates by more than 70% (relative)

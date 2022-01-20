@@ -31,12 +31,12 @@ MSZNY 2019
 # 3 The statistics of grammatically defined clusters 251
 
 * Visualizing high-dimensional data is a difficult exercise [13]
-  Grinstein, G., Trutschl, M., Cvek, U.: 
+  Grinstein, G., Trutschl, M., Cvek, U.:
   High-dimensional visualizations
   Visual Data Mining Workshop, KDD 2, 120. (2002)
 * We use principal component analysis
   * fig 4: Plotting a sample of 1000 vectors from the spherical projection of the
-    first 3 principal components of some clusters of word vectors 
+    first 3 principal components of some clusters of word vectors
     * we have 3 clusters each restricted to a dominant orthant.  What we need to
       verify is that this phenomenon persists in the whole 200-dimensional space
 * comparing the standard deviations and the entropy of the clusters. If a

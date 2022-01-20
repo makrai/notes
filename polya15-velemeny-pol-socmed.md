@@ -33,7 +33,7 @@ lexikai skálák!
   * társas haszon és egyéni haszon [17];
   * társas kívánatosság és társas haszon [5])
 * ágencia modul a történet szereplőinek tulajdonított cselekvőképességet méri
-  * aktív és passzív igékben, valamint 
+  * aktív és passzív igékben, valamint
     a szándék és a kényszer intencionális állapotaiban kifejeződő [6]
   * Az értékelés modulhoz képest újdonsága, hogy a nyelvi értékeléseket a
     valencia (pozitív/negatív) mellett

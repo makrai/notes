@@ -65,7 +65,7 @@ implementation and models https://github.com/ucfnlp/control-over-copying
   * our method emphasizes on in-depth analysis of the copy behavior in
     * frames abstractive summarization as a language modeling task and exploits
       multiple strategies at training and decoding stages to generate diverse
-      summary hypotheses. We show 
+      summary hypotheses. We show
   * competitive results demonstrate the effectiveness of the proposed method
 
 # Related Work
@@ -108,9 +108,9 @@ implementation and models https://github.com/ucfnlp/control-over-copying
 # Experiments 5
 
 * We experiment with selecting varying amounts of seen and unseen summary tokens
-  and source tokens for training, where the 
+  and source tokens for training, where the
   * number of circles is proportional to the number of tokens used in computing
-    the loss term. 
+    the loss term.
   * All summaries in Table 3 are decoded using beam search (k=5) without rerank
 * Our findings suggest that,
   the factor that makes the most impact on the copying behavior of a summarizer
@@ -119,12 +119,12 @@ implementation and models https://github.com/ucfnlp/control-over-copying
     minor gap due to tokenization discrepancies. As more unseen words are used
     for training, the summarizer gradually transforms from copying only to both
     copying and generating new words not present in the source text
-  * the ratio of seen vs. unseen words in ground-truth summaries is 
-    about 2:1 in both datasets, and 
+  * the ratio of seen vs. unseen words in ground-truth summaries is
+    about 2:1 in both datasets, and
     Newsroom is slightly more extractive than Gigaword
   * it is important to maintain a similar ratio during training in order to
     achieve high ROUGE scores. Pure extracts do not attain high ROUGE scores, as
     ground-truth summaries themselves are abstracts
 * training on source words has little impact on the copying behavior, but it
-  improves representation learning and has lead to 
+  improves representation learning and has lead to
   consistently improved ROUGE-2 F-scores

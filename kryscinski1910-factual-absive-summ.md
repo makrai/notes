@@ -17,7 +17,7 @@ arXiv preprint arXiv …, 2019 arxiv.org
   * substantially outperforms previous models,
     including those trained with strong supervision
     using standard datasets for natural language inference and fact checking
-* the auxiliary span extraction tasks provide useful assistance 
+* the auxiliary span extraction tasks provide useful assistance
   in the process of verifying factual consistency
 
 # 1 Introduction

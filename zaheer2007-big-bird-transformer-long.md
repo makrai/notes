@@ -20,13 +20,13 @@ arXiv:2007.14062 [cs.LG]
 ### Summarization
 
 * We used Arxiv [20] PubMed [20] BigPatent datasets for testing our model
-* we focus on abstractive summarization of long documents 
+* we focus on abstractive summarization of long documents
   where using a longer contextual encoder should improve performance. The
   reasons are two fold:
   * salient content can be evenly distributed in the long document
     * by design in the BigPatents dataset [78]
   * a richer discourse structure and summaries are considerably more abstractive
-* we warm start from 
+* we warm start from
   * our general purpose MLM pretraining on base-sized models as well as
   * SOTA summarization specific pretraining from Pegasus [107] on large-sized
 * significant improvement

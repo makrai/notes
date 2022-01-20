@@ -92,7 +92,7 @@ TACL 2020
 
 ### Indonesian: an Austronesian language
 
-* reduplication of nouns, pronouns, adjectives, verbs, and numbers 
+* reduplication of nouns, pronouns, adjectives, verbs, and numbers
   (Sneddon+ 2012; Vania and Lopez, 2017)
 * prefixes, suffixes, infixes, and circumfixes
 
@@ -101,7 +101,7 @@ TACL 2020
 * inflections, like number and person, are encoded in the prefix (Ashton, 1947)
 * Noun modifiers show extensive agreement with the noun class (Mohamed, 2001)
 * pro-drop language (Seidl and Dimitriadis, 1997; Wald, 1987)
-* English as prepositions are expressed in verbal morphology or by nouns 
+* English as prepositions are expressed in verbal morphology or by nouns
   (Wald, 1987)
 
 ### Korean: an agglutinative, predicate final language
@@ -116,8 +116,8 @@ TACL 2020
 * rich system of honorifics. There is
 * extensive discourse-level pro-drop (Sohn, 2001)
 * script is non-Latin featural alphabet arranged in syllabic blocks
-  * White space is used in writing, but 
-    prescriptive conventions 
+  * White space is used in writing, but
+    prescriptive conventions
     for spacing predicate-auxiliary compounds and semantically close noun-verb
     phrases are commonly flouted [sérülnek] (Han and Ryu 2005)
 

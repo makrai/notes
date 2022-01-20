@@ -39,13 +39,13 @@ Chin-Yew Lin
       by the author in (Lin, 2004)
     * multi-document summarization tasks is still an open research topic
 
-# 2 ROUGE-N 
+# 2 ROUGE-N
 
-# 3 ROUGE-L 
+# 3 ROUGE-L
 
-# 4 ROUGE-W 
+# 4 ROUGE-W
 
-# 5 ROUGE-S 
+# 5 ROUGE-S
 
 # 6 how these measures correlate with human judgments
 

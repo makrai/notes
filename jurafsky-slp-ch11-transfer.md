@@ -1,4 +1,4 @@
-in Speech and Language Processing. Daniel Jurafsky & James H. Martin.  
+in Speech and Language Processing. Daniel Jurafsky & James H. Martin.
 Draft of December 29, 2021
 
 # 11 Transfer Learning with Pretrained Language Models and Contextual Embeddings
@@ -35,7 +35,7 @@ Draft of December 29, 2021
     distributional hypothesis,
     * something about what we’re loosely calling word meanings can be learned
       even without any grounding in the real world, solely based on the content
-    * based on the complex association of words with the co-occuring words 
+    * based on the complex association of words with the co-occuring words
     * the knowledge that we acquire through this process can be used during
       language processing long after its initial acquisition in novel contexts.
 * static word embeddings
@@ -43,11 +43,11 @@ Draft of December 29, 2021
   * can be learned from text and
   * employed for eg measuring word similarity or studying meaning change
 * In this chapter, we expand on static word embeddings in two large ways
-  * contextual embeddings: representations for words in context. 
+  * contextual embeddings: representations for words in context.
     eg those learned by popular methods like BERT (Devlin+ 2019) or GPT
     (Radford+ 2019) or their descendants,
     each word w will be represented by a different vector each time it appears
-  * pretraining and fine-tuning.  
+  * pretraining and fine-tuning.
     * pretraining the process of learning some sort of representation of meaning
       for words or sentences by processing very large amounts of text
     * We’ll call these pretrained models pretrained language models, since they
@@ -88,7 +88,7 @@ Draft of December 29, 2021
   the basis for powerful language models LMs that can easily be applied to
   autoregressive generation problems such as contextual generation,
   summarization and machine translation
-  * hE, when applied to sequence classification and labeling problems 
+  * hE, when applied to sequence classification and labeling problems
     * obvious shortcomings since they are based on an incremental, left-to-right
     * eg NER we’ll want to be able to use information from the right context as
   * the hidden state computation at each point in time is based solely on the
@@ -117,7 +117,7 @@ Draft of December 29, 2021
     j
   * Since each output vector, y_i , is computed independently, the processing of
     an entire sequence can be parallelized via matrix operas
-    * pack the input embeddings x_i into a matrix X ∈ R N×d h 
+    * pack the input embeddings x_i into a matrix X ∈ R N×d h
     * ie, each row of X is the embedding of one token of the input
     * We then multiply X by the key, query, and value weight matrices (d × d) to
       produce matrices Q ∈ R N×d , K ∈ R N×d , and V ∈ R N×d , containing Q = X
@@ -209,7 +209,7 @@ Draft of December 29, 2021
     set of tokenized inputs
   * Word embeddings for all of the tokens in the input are retrieved from the
     word embedding matrix and then combined with positional embeddings to form
-    the input to the transformer.  
+    the input to the transformer.
 * To produce a probability distribution over the vocabulary for the masked toks,
   the output vector from the final transformer layer for each masked token is
   multiplied by a learned set of classification weights W V ∈ R |V |×d h and
@@ -241,7 +241,7 @@ Draft of December 29, 2021
       used in BERT: 80% [MASK], 10% rand, 10% orig
       * all the tokens in a given span are substituted using the same method
     * As with BERT, the total token substitution is limited to 15% of the
-      training sequence input 
+      training sequence input
     * the input is passed through the standard transformer architecture to
       generate contextualized representations of the input tokens.
 * Downstream span-based applications rely on
@@ -362,7 +362,7 @@ Draft of December 29, 2021
     a set of scores over the possible sentiment classes.
   * eg three-way sentiment classification task (positive, negative, neutral) and
     dimensionality d h for the size of the language model hidden layers gives W
-    C ∈ R 3×d h 
+    C ∈ R 3×d h
   * Classification of unseen documents proceeds by passing the input text
     through the pretrained language model to generate y CLS , multiplying it by
     W C , and finally passing the resulting vector through a softmax.  y =
@@ -380,7 +380,7 @@ Draft of December 29, 2021
 
 ### 11.3.2 Pair-Wise Sequence Classification
 
-* eg logical entailment, paraphrase detection and discourse analysis 
+* eg logical entailment, paraphrase detection and discourse analysis
 * Fine-tuning an application for one of these tasks proceeds just as with
   pretraining using the NSP objective
   * fine-tuning, pairs of labeled sentences from the supervised training data
@@ -419,7 +419,7 @@ Draft of December 29, 2021
     * As with RNNs, a greedy approach, where ie the argmax tag for each token is
       taken as a likely answer, can be used
     * Alternatively, the distribution over labels provided by the softmax can be
-      passed to a conditional random field (CRF) layer 
+      passed to a conditional random field (CRF) layer
       * CRF layer can take global tag-level transitions into account.
 * complication with this approach arises from the use of subword tokenization
   * Supervised training data for tasks like named entity recognition (NER) is
@@ -428,7 +428,7 @@ Draft of December 29, 2021
   * we need a way to assign BIO tags to subword tokens during training and a
     corresponding way to recover word-level tags from subwords during decoding.
     * For training, we can just assign the gold-standard tag associated with
-      each word to all of the subword tokens derived from it.  
+      each word to all of the subword tokens derived from it.
     * For decoding, the simplest approach is to use the argmax BIO tag
       associated with the first subword token of a word
       * More complex approaches combine the distribution of tag probabilities
@@ -468,7 +468,7 @@ Draft of December 29, 2021
   * Given a scheme for representing spans and
     * set of named entity types, a span-based approach to NER is a
       straightforward classification problem
-  * assign a label y, from the set of valid NER labels, to span in S(x).  
+  * assign a label y, from the set of valid NER labels, to span in S(x).
     * we’ll add the label NULL to the set of types in Y .
   * fine-tuning entails using supervised training data to learn the parameters
     of the final classifier, as well as the weights used to generate the
@@ -485,7 +485,7 @@ Draft of December 29, 2021
 * two significant advantages to a span-based approach to NER over a BIO-based
   per-word labeling approach. The first advantage is that
   * BIO-based approaches are prone to a labeling mis-match problem. That is,
-    * every label in a longer named entity must be correct 
+    * every label in a longer named entity must be correct
     * I-ORG instead of B-ORG is an error
     * Span-based approaches only have to make one classification for each span.
   * naturally accommodate embedded named entities. For example, in this

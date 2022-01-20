@@ -1,5 +1,5 @@
 Partitive case and aspect
-P Kiparsky 
+P Kiparsky
 The projection of arguments: Lexical and compositional …, 1998
 
 * organization:
@@ -69,7 +69,7 @@ The projection of arguments: Lexical and compositional …, 1998
 # 2 The semantics of partitive case 2
 
 * The Finnish partitive has two functions, which can be termed
-  ASPECTUAL and NPRELATED 
+  ASPECTUAL and NPRELATED
 * aspectual function, which Finnish linguists have
   * characterized in terms of
     resultativity (Itkonen 1976, Hakulinen and Karlsson 1979, Larjavaara 1991)
@@ -105,7 +105,7 @@ The projection of arguments: Lexical and compositional …, 1998
     (3) a.  seek-1Sg  bear-Part / two-Part bear-Part / bear-Pl-Part keresem/k medvére
         b.  seek-1Sg #bear-Acc / #two-Acc bear-Part / #bear-PlAcc   keresem/k medvét
 * verbs such as ampua “shoot, shoot at” they share both of these patterns. With
-  * a partitive bare plural object therefore yields a threeway ambiguity: 
+  * a partitive bare plural object therefore yields a threeway ambiguity:
     irresu-unbound V def N, resu-bound V indef, irresu-unbound V indef N
 * so far, boundedness coincides with resultativity
   * One might be led to the conclusion that
@@ -115,10 +115,10 @@ The projection of arguments: Lexical and compositional …, 1998
   * bounded irresultative verbs, such as omistaa “own”, nähdä “see”,
   * assign case like resultative verbs: 6
     * though “own” is non-resultative like “seek”, it assigns case like
-      achievement/accomplishment predicates such as “get”.  
+      achievement/accomplishment predicates such as “get”.
     (4) a.  own-1Sg #bear-Part / #two-Part bear-Part / bear-Pl-Part
                                                            birtoklom/k medvékből
-        b.  own-1Sg bear-Acc / two-Acc bear-Part / bear-PlAcc 
+        b.  own-1Sg bear-Acc / two-Acc bear-Part / bear-PlAcc
 * building an intuition about the category of boundedness which determines the
   case marking of the object in Finnish
   * A predicate is intrinsically unbounded if it
@@ -129,7 +129,7 @@ The projection of arguments: Lexical and compositional …, 1998
     * can still receive an unbounded interpretation as a result of a
       durative/iterative reading induced by adverbs or other means
     * Such readings can also induce partitive case (e.g.  reading (3) of (11b)
-      below, and section 6). 
+      below, and section 6).
 (5/6) * Un/bounded verbal predicates:
   a. The sportsman shot at/killed a bear some more.
   b. I looked for/found the key a lot.
@@ -139,7 +139,7 @@ The projection of arguments: Lexical and compositional …, 1998
   f. How much did you study/prove the theorem?
   g. Mary loved/married Bill up to a point.
   h. Fred used/finished the book somewhat.
-  i. I expected/got this present less than Alice did. 
+  i. I expected/got this present less than Alice did.
   j. The box protects/contains the necklace considerably.
 * The same diagnostic also picks out
   the class of unbounded quantitative indeterminate NPs
@@ -173,7 +173,7 @@ The projection of arguments: Lexical and compositional …, 1998
   about part of the baby’s own hair, or about an indeterminate number of loose
   strands it has in its possession.
 * Conversely, a singular or definite NP gets the NP-related partitive if it is
-  generic.  
+  generic.
   * In (9), ‘this rose’ is partitive <~ it means “roses of this particular kind”
 (9) Puutarhuri istutt-i gardener kaikkialle tätä ruusu-a.
     plant-Past3Sg everywhere this-Part rose-Part
@@ -181,7 +181,7 @@ The projection of arguments: Lexical and compositional …, 1998
 * Summarizing, we can say that an object is partitive either if it is
   * governed by one of a class of unbounded verbal predicates (aspect cond), or
   * quantitatively indeterminate (the NP-related condition). There has been
-  * whether it is possible to unify these conditions.  
+  * whether it is possible to unify these conditions.
     * fundamentally distinct (Itkonen 1976, Larjavaara 1991).
     * unboundedness is the common denominator (Heinämäki 1984, Leino 1991)
 * two weaknesses of unified
@@ -212,7 +212,7 @@ The projection of arguments: Lexical and compositional …, 1998
   * eg “He opened the window” in (11).
     The atelic imperfective/partitive version in (11b) can have, in addition to
     * progressive-type meaning “He was opening the window (. . . as John walked)
-    * several other senses of temporal delimitation or incompleteness: 
+    * several other senses of temporal delimitation or incompleteness:
       (was -ing as John entered) (for a while) (partly) (again and again)
 * What ties these aspectual functions of partitive case and imperfective aspect
   * how do they jointly relate to the NP-related function? Before attempting to
@@ -252,7 +252,7 @@ The projection of arguments: Lexical and compositional …, 1998
       in Finnish partitive objects can scramble exactly like accusative objects.
 (12) Matti shoot-3Sg [(the) bears] [often] [in Lapland] [with the/a shotgun])
   * can be in any of the 4! possible mutual orders,
-    regardless of definiteness and telicity 
+    regardless of definiteness and telicity
 * Even the basic distribution of the partitive seems to be a problem for de Ho
   * partitive is assigned by
     * any transitive verb to quantitatively indeterminate objects (NP-rel prt)
@@ -359,7 +359,7 @@ The projection of arguments: Lexical and compositional …, 1998
     analogy is structural optimization, including in particular
     the projection of a grammatical regularity to new cases, would be that
     the innovations are systematic usages within a new grammar of Finnish that
-    has arisen by a generalization in the rules of case assignment.  
+    has arisen by a generalization in the rules of case assignment.
     * the cases in [21] and the cases in (10) are equally regular usages, which
     * => Krifka’s analysis is not correct for the current state of the language
       (although it might have been for an earlier stage)

@@ -477,10 +477,10 @@ arXiv:2002.12327 cs.CL
   * On some tasks, a randomly initialized and fine-tuned BERT obtains
     competitive or higher results than the pre-trained BERT (Kovaleva+ 2019)
   * Prasanna+ (2020): most weights of pre-trained BERT are useful in
-    fine-tuning, although there are "better" and "worse" subnetworks. 
-    * One explanation: pre-trained weights 
+    fine-tuning, although there are "better" and "worse" subnetworks.
+    * One explanation: pre-trained weights
       help to find wider and flatter areas with smaller generalization error,
-      which makes the model more robust to overfitting 
+      which makes the model more robust to overfitting
       (see Figure 5 from Hao+ (2019))
   * Most new models' gains are often marginal, and estimates of
     model stability and significance testing are very rare
@@ -509,7 +509,7 @@ arXiv:2002.12327 cs.CL
   * Two-stage fine-tuning
     * intermediate supervised training stage (Phang+ 2019; Garg+ 2020)
   * Adversarial token perturbations improve robustness of the model (Zhu+ 2019)
-  * Mixout regularization improves the stability of BERT fine-tuning 
+  * Mixout regularization improves the stability of BERT fine-tuning
     even for a small number of training examples (Lee+ 2019)
 * With larger and larger models even fine-tuning becomes expensive, but
   * approximated by inserting adapter modules (Houlsby+ 2019)

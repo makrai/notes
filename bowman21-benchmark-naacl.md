@@ -1,4 +1,4 @@
-What Will it Take to Fix Benchmarking in Natural Language Understanding?  
+What Will it Take to Fix Benchmarking in Natural Language Understanding?
 Samuel R. Bowman, George Dahl
 NAACL 2021
 
@@ -11,7 +11,7 @@ NAACL 2021
   out-of-distribution test sets ensures that current models will perform poorly,
   but ultimately only obscures the abilities that we want to measure
 * In this position paper, we lay out four criteria that we argue NLU benchmarks
-* most current benchmarks fail at these criteria, and that 
+* most current benchmarks fail at these criteria, and that
   * adversarial data collection does not meaningfully address the causes of
     these failures
 * restoring a healthy evaluation ecosystem will require significant progress in

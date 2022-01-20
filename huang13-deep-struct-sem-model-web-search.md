@@ -11,8 +11,8 @@ ACM international conference on Information & Knowledge Management 2013
     relevance of a document given a query is readily computed as the distance
 * discriminatively trained by maximizing the conditional likelihood of the
   clicked documents given a query using the clickthrough data. To make our
-* large-scale Web search applications, we also use a technique called 
-  word hashing, which is shown to effectively 
+* large-scale Web search applications, we also use a technique called
+  word hashing, which is shown to effectively
   scale up our semantic models to handle large vocabularies which are common in
 * evaluated on a Web document ranking task using a real-world data set. Results
   * significantly outperforms other latent semantic models, which were

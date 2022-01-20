@@ -43,7 +43,7 @@ ieee 17
 * We consider the trade-off between intruder detection time and detection error
   as measured by false accept rate (FAR) and false reject rate (FRR)
 
-# II. Related work 
+# II. Related work
 
 ## A. Multimodal Biometric Systems
 

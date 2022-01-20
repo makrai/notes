@@ -1,4 +1,4 @@
-An Effective BERT-Based Pipeline for Twitter Sentiment Analysis: 
+An Effective BERT-Based Pipeline for Twitter Sentiment Analysis:
   A Case Study in Italian
 Marco Pota, Mirko Ventura, Rosario Catelli
 Sensors 2021, 21, 133. https://doi.org/10.3390/s21010133
@@ -13,7 +13,7 @@ Sensors 2021, 21, 133. https://doi.org/10.3390/s21010133
       text, exploiting procedures that are language-independent or easily
       applicable to different languages
     * tweets are classified using the language model BERT
-* we use BERT pre-trained on plain text, instead of tweets, for two reasons: 
+* we use BERT pre-trained on plain text, instead of tweets, for two reasons:
   * pre-trained models on plain text are easily available in many languages,
     avoiding resource~ and time-consuming model training directly on tweets
   * available plain text corpora are larger than tweetonly ones

@@ -39,7 +39,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * large-scale evaluation of our model featuring
     9 typologically diverse languages and multiple publicly available embedding
   * 15 conditions
-  * Our MTL model surpasses the current SOTA for each of them, and even 
+  * Our MTL model surpasses the current SOTA for each of them, and even
     performs competitive relative to human reliability
   * largest benefit on the smallest data sets, comprising merely one thousand
   * competitive to human annotation reliability

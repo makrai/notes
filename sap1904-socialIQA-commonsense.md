@@ -9,7 +9,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   along with correct and incorrect answers about social interactions, using a
   * new framework that mitigates stylistic artifacts in incorrect answers by
     asking workers to provide the right answer to a different but related
-    question 
+    question
 * results show that our benchmark is
   challenging for existing question-answering models based on pretrained LMs
   * compared to human performance (>20% gap).  Notably, we further establish
@@ -23,7 +23,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * Theory of Mind (Baron-Cohen+ 1985)
     * the ability to reason about the implied emotions and behavior of others,
     * social situations ranging from simple conversations with friends to
-      complex negotiations in courtrooms (Apperly, 2010).  
+      complex negotiations in courtrooms (Apperly, 2010).
     * a longstanding but elusive goal of AI (Gunning, 2018)
 * lack of large-scale resources to train and evaluate modern AI systems’ social
 * pretraining large language models have yielded
@@ -31,14 +31,14 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
     still struggle to reason about social situations, as shown by us and Davis
     and Marcus, (2015); Nematzadeh+ (2018); Talmor+ (2019) . This
 * in written text corpora, bias of knowledge limits the scope of commonsense kn
-  (Gordon and Van Durme, 2013; Lucy and Gauthier, 2017) 
+  (Gordon and Van Durme, 2013; Lucy and Gauthier, 2017)
 * In this work, we introduce Social Intelligence QA (SocialIQa ),
   * the first large-scale resource to learn and measure social and emotional
   * 38k multiple choice questions regarding the pragmatic implications of
   * crowdsourcing framework to gather contexts and questions that explicitly
   * combining handwritten negative answers with adversarial question-switched
     answers (Section 3.3), we minimize annotation artifacts that can arise from
-    crowdsourcing incorrect answers (Schwartz+ 2017; Gururangan+ 2018).  
+    crowdsourcing incorrect answers (Schwartz+ 2017; Gururangan+ 2018).
 * challenging for AI systems, with
   * our best performing baseline reaching 64.5% (BERT-large), significantly
 * transfer learning for other commonsense challenges,
@@ -47,11 +47,11 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * new SOTA on three commonsense challenge datasets:
   * COPA (Roemmele+ 2011) (83.4%), the
   * original Winograd (Levesque, 2011) (72.5%), and the
-  * extended Winograd dataset from Rahman and Ng (2012) (84.0%).  
-* contributions are as follows: 
+  * extended Winograd dataset from Rahman and Ng (2012) (84.0%).
+* contributions are as follows:
   * SocialIQa, the first large-scale QA dataset aimed at testing soc & emo
   * question-switching, a technique to collect incorrect answers that
-    * minimizes stylistic artifacts due to annotator cognitive biases. 
+    * minimizes stylistic artifacts due to annotator cognitive biases.
   * We establish baseline performance on our dataset, with BERT-large performing
     * well below human performance, close to 90%
   * We achieve new SOTA accuracies on COPA and Winograd
@@ -75,7 +75,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
       * causes of an event (e.g., “X needs money”)
       * its effects on the agent (e.g., “X will get thanked”) and
       * its effect on other participants (e.g., “Y will want to see X again”);
-    * an inference object .  The nine inference dimensions in ATOMIC cover 
+    * an inference object .  The nine inference dimensions in ATOMIC cover
 * Given this base, we generate natural language contexts that represent
   specific instantiations of the event phrases found in the knowledge graph.
 
@@ -83,7 +83,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 ## 3.3 Negative Answers
 
-* Handwritten Incorrect Answers (HIA) The 
+* Handwritten Incorrect Answers (HIA) The
   * to be similar to the correct answers in terms of topic, length, and style but
 * Question-Switching Answers (QSA) We col-
   * switching the questions asked about the context, as shown in Figure 2. We
@@ -98,7 +98,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   Figure 4 shows effect sizes (Cohen’s d) of the differences in VAD means,
   where the magnitude of effect size indicates how different the answer types
   are stylistically. Indeed, QSA and correct answers differ substantially less
-  than HIA answers (|d|≤.1). 7 
+  than HIA answers (|d|≤.1). 7
 
 # 4 Methods
 
@@ -123,13 +123,13 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * pre-conditions of the context (people’s motivations, actions needed before
     the context) are less challenging for the model. Conversely, the model
   * struggle more with questions relating to (potentially involuntary) effects,
-    stative descriptions, and what people will want to do next.  
+    stative descriptions, and what people will want to do next.
 * Examples of errors in Table 3 further indicate that, instead of doing
   * models may only be learning lexical associations between the context, q & a
   * as hinted at by Marcus (2018) and Zellers+ (2019b Hellaswag). This
   * leads to incorrect timing (examples 3 and 4) or
     answers pertaining to the wrong participants (examples 5 and 6), despite
-* We expect that this task would benefit from models 
+* We expect that this task would benefit from models
   * capable of more complex reasoning about entity state, or models that are
   * more explicitly endowed with commonsense (e.g. from KGs like ATOMIC)
 
@@ -182,7 +182,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * José H. Espinosa and Henry Lieberman
     Eventnet: Inferring temporal relations between commonsense events
     MICAI 2005.
-  * Andrew S Gordon and Jerry R Hobbs. 
+  * Andrew S Gordon and Jerry R Hobbs.
     A Formal Theory of Commonsense Psychology: How People Think People Think.
     Cambridge University Press 2017
 * format: natural language QA benchmark vs a taxonomic knowledge base

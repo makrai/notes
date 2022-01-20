@@ -83,9 +83,9 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
 * from the conclusion
   * We studied several gap-sentence selection methods and identified
     principle sentence selection as the optimal strategy
-  * We demonstrated the effects of the 
-    pre-training corpora, gap-sentences ratios, vocabulary sizes and 
-    * scaled up the best configuration to 
+  * We demonstrated the effects of the
+    pre-training corpora, gap-sentences ratios, vocabulary sizes and
+    * scaled up the best configuration to
       achieve SOTA results on all 12 diverse downstream datasets considered
   * adapt to unseen summarization datasets very quickly, achieving strong
     results in 1000 examples
@@ -98,7 +98,7 @@ ICML 2020 arXiv:1912.08777 [cs.CL]
 * pre-training with much larger external text corpora (such as Wikipedia, books,
   or Web-pages) and Transformer-based sequence models has led to a dramatic
   improvement in performance when fine-tuned for both NLU and text gen tasks
-  (Radford+ 2018a; Devlin+ 2019; Rothe+ 2019; Yang+ 2019; Joshi+ 2019; 
+  (Radford+ 2018a; Devlin+ 2019; Rothe+ 2019; Yang+ 2019; Joshi+ 2019;
   Song+ 2019; Dong+ 2019; Lewis+ 2019)
 * Most similar to our approach are Transformer encoder-decoder models
   pre-trained on some masked input pre-training objective
@@ -115,7 +115,7 @@ single sentence fragment was randomly selected
 
 ## T5 (Raffel+ 2019) generalized text-to-text to a variety of NLP tasks
 
-* scaling up model size (to 11 billion parameters) and 
+* scaling up model size (to 11 billion parameters) and
   pre-training corpus, introducing C4, a massive text corpus
   * which we also use in some of our models
 * pre-trained with randomly corrupted text spans of varying mask ratios and
@@ -127,7 +127,7 @@ single sentence fragment was randomly selected
   the original text. For generation tasks, the noising function was text
   infilling which used single mask tokens to mask random sampled spans of text
 
-## In contrast to MASS, UniLM, BART and T5, the proposed PEGASUS 
+## In contrast to MASS, UniLM, BART and T5, the proposed PEGASUS
 
 * masks multiple whole sentences rather than smaller continuous text spans. In
 * we deterministically choose sentences based on importance
@@ -151,7 +151,7 @@ single sentence fragment was randomly selected
 * Gap sentences ratio, or GSR, refers to the number of selected gap sentences to
   the total number of sentences in the document, which is
   * similar to mask rate in other works
-* 3 primary strategies for selecting `m` gap sentences 
+* 3 primary strategies for selecting `m` gap sentences
   without replacement from a
   * Random: Uniformly select `m` sentences at random
   * Lead: Select the first `m` sentences
@@ -160,7 +160,7 @@ single sentence fragment was randomly selected
       sentence and the rest of the document, s i = rouge(x i , D \ {x i }), ∀i
     * sentences are scored
       * independently (Ind) and the top `m` selected OR
-      * sequentially (Seq) as in Nallapati+ (2017) by 
+      * sequentially (Seq) as in Nallapati+ (2017) by
         greedily maximizing the ROUGE1-F1 between selected and remaining sents
     * When calculating ROUGE1-F1, we also consider n-grams
       as a set (Uniq) instead of
@@ -245,8 +245,8 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 
 * six variants of GSG (Lead, Random, Ind-Orig, Ind-Uniq, Seq-Orig, Seq-Uniq)
   * Ind-Orig achieved the best performance followed by Seq-Uniq
-  * Lead had 
-    * decent performance on the two news datasets but was 
+  * Lead had
+    * decent performance on the two news datasets but was
     * significantly worse on the two non-news datasets, which
     * agrees findings of lead bias in news datasets (See+ 2017; Zhong+ 2019)
 * gap-sentences ratio (GSR)
@@ -277,7 +277,7 @@ human-written reference summaries from the 1993-2018 sessions of Congress
   * Byte-pair encoding algorithm (BPE, Wu+ 2016; Sennrich+ 2016), and
   * SentencePiece Unigram algorithm (Unigram) proposed in Kudo (2018)
     * with different vocabulary sizes ranging from 32k to 256k
-* BPE and Unigram were 
+* BPE and Unigram were
   * comparable on news datasets while
   * Unigram outperformed BPE on non-news datasets, especially WikiHow
   * XSum and CNN/DailyMail, Unigram 96k achieved the highest ROUGE scores
@@ -313,7 +313,7 @@ human-written reference summaries from the 1993-2018 sessions of Congress
   * further scaling up L input or applying a two-stage approach (Liu+ 2018) may
     improve performance even more, although this is outside the present scope
     * since average input length in BIGPATENT, arXiv, PubMed and Multi-News are
-      well beyond 1024 tokens, 
+      well beyond 1024 tokens,
 * The improvement from a Transformer model without pretraining (Transformer
   BASE) to PEGASUS LARGE was more significant on smaller datasets
   * We further investigate low resource summarization in Section 6.3
@@ -323,16 +323,16 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 * we picked the first 10 `k` (`k = 1, 2, 3, 4`) training examples from each
   dataset to fine-tune PEGASUS LARGE (HugeNews).  We fine-tuned the models up
   to 2000 steps with batch size 256, learning rate 0.0005
-* in 8 out of 12 datasets, 
+* in 8 out of 12 datasets,
   with just 100 examples PEGASUS LARGE could be fine-tuned to generate summaries
-  at comparable quality to 
+  at comparable quality to
   Transformer BASE trained on the full supervised datasets i.e. 20k--200k examps
 * PEGASUS LARGE also beat previous SOTA results on 6 out of 12 datasets with
   only 1000 fine-tuning examples
 * On CNN/DailyMail, with half the number of parameters PEGASUS LARGE
   demonstrated much better zero-shot (ROUGE2-F=13.28) performance than GPT-2
   (ROUGE2-F=8.27)
-* Using only 1000 examples, PEGASUS LARGE achieved ROUGE2-F of 19.35, 
+* Using only 1000 examples, PEGASUS LARGE achieved ROUGE2-F of 19.35,
   * much higher than the 13.1 obtained in Khandelwal+ (2019) with 3000 examples
 
 ## 6.4 Qualitative Observations and Human Evaluation 8
@@ -369,7 +369,7 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 
 * we calculated similarities between all pairs of downstream test set targets
   and pre-training documents
-  * ROUGE-2 recall as a similarity measure 
+  * ROUGE-2 recall as a similarity measure
     (common 2-grams / test set targets 2-grams): necessarily exact match
   * XSum has significant amount of overlap 15% to 20%, and
     filtering those examples does not change ROUGE scores more than 1%
@@ -378,15 +378,15 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 
 ## 6.6 Additional PEGASUS LARGE Improvements 9
 
-* we pre-trained a PEGASUS LARGE model on both corpora and 
+* we pre-trained a PEGASUS LARGE model on both corpora and
   stochastically sampled important sentences
-  * The model was pre-trained on the mixture of C4 and HugeNews 
+  * The model was pre-trained on the mixture of C4 and HugeNews
     weighted by their number of examples
   * The model dynamically chose gap sentences ratio uniformly between 15%-45%
-  * Importance sentences were stochastically sampled 
+  * Importance sentences were stochastically sampled
     with 20% uniform noise on their scores
   * The model was pre-trained for 1.5M steps instead of 500k steps,
     as we observed slower convergence of pre-training perplexity
   * The SentencePiece tokenizer was updated to encode the newline character
-* PEGASUS LARGE (mixed, stochastic) model achieved best results 
+* PEGASUS LARGE (mixed, stochastic) model achieved best results
   on almost all downstream tasks, as shown in Table 4

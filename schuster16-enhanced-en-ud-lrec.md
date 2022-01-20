@@ -161,7 +161,7 @@ LREC 2016
   * we try to find a pattern that matches the subtree rooted at the lowest
     common ancestor of the head and the dependent
 * Two problems that need preprocessing
-  * many MWEs with function words are not a constituent 
+  * many MWEs with function words are not a constituent
     according to the Penn Treebank annotation guidelines (Marcus+ 1993)
   * wh-words in questions e.g. _What does Peter seem to have?_
     * for manually annotated treebanks, Choi and Palmer (2012) proposed to

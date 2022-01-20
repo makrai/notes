@@ -83,7 +83,7 @@ IEEE Transactions on Image Processing, 2015
 * the minimal number of R such that Y = AB^T, where A ∈ R × M and B ∈ N × R
 * Obviously, `rank(Y) ≤ rank_+ (Y)`
 
-### Multilinear rank and nonnegative multilinear rank: 
+### Multilinear rank and nonnegative multilinear rank:
 
 * The vector r = (R 1, R 2, ..., R N ) is called the multilinear .  rank of Y,
   where R n = rank(Y (n)), ∀n
@@ -94,7 +94,7 @@ IEEE Transactions on Image Processing, 2015
 
 * We call the NTD Y = G × n∈I N A (n) essentially unique, if A (n) = ÂP (n) D
   (n), ∀n, holds for any other NTD Y = Ĝ × n∈I N Â (n), where
-* P (n) is a permutation matrix, and D (n) is a nonnegative diagonal matrix 
+* P (n) is a permutation matrix, and D (n) is a nonnegative diagonal matrix
 * the uniqueness of NTD has a very close relation with the uniqueness of NMF
   * results on the uniqueness of NMF (see [38]– [40] for a comprehensive review)
     most of which are based on the sparsity of factor matrices
@@ -104,15 +104,15 @@ IEEE Transactions on Image Processing, 2015
     at which only this signal is active or strongly dominant
 * separable NMF, which gained popularity very recently, as it proved to be
   * highly scalable and
-  * applications include 
+  * applications include
     * topic discovery and the
     * clustering analysis of large-scale datasets [42], [43]
 * the pure-source-dominant condition essentially requires that
   at least one factor matrix of NMF should be sufficiently sparse
   * In NTD, it requires that the core tensor or all component matrices are
-    sufficiently sparse. 
-  * sparsity is not only a key factor of the uniqueness of NTD, 
-    it also reflects the learning-parts ability of NTD, as 
+    sufficiently sparse.
+  * sparsity is not only a key factor of the uniqueness of NTD,
+    it also reflects the learning-parts ability of NTD, as
     many zeros often exist in the factors
 
 ## B. NTD with Sparse Core Tensors

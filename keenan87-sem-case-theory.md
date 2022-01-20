@@ -79,7 +79,7 @@ Edward L. Keenan
   * Specifically this extended function must
     send KISS to the set of objects a which are such that the basic function
     SOME TEACHER holds of the set of things a bears the KISS relation to
-  (5) 
+  (5)
   * For F basic, `F_acc` or the accusative case extension of F is
     that extension of F which sends each binary relation R
     to {a: F ( R_a ) = 1}
@@ -137,7 +137,7 @@ Edward L. Keenan
 * One statement of these constraints is given by:
 (10) English Case Constraint (ECC)
   In a batS of the form `[NP_1, [V NP_2 ]]`, interpret NP 1/2 nom/accusatively
-  * a claim about English and thus naturally refers its structural properties  
+  * a claim about English and thus naturally refers its structural properties
     eg linear order and constituency with the verb. But the ECC
 * several quite general properties concerning the ways in which languages
   constrain the interpretations of simple Ss
@@ -165,7 +165,7 @@ Edward L. Keenan
   2. ( 12) Case Distinctness (CS)
     The independent NPs in a batS are interpreted by distinct case extensions
     * if both NPs in a batS like John kissed David were interpreted nominatively
-      the S would be argument ambiguous, depending on which NP had narrow scope 
+      the S would be argument ambiguous, depending on which NP had narrow scope
     * CE and CD jointly claim than
       * an interpretation of a batS determines a bijection from the independent
         NPs into the set {NOM, ACC} of semantic cases. They do
@@ -203,8 +203,8 @@ Edward L. Keenan
     presented, is interpreted nominatively follows from this statement plus CE
 (16) Japanese Case Constraint (JCC) 2
   In a batS,
-  * if there is an independent NP suffixed -o, interpret it accusatively 
-  * otherwise interpret some -ga suffixed NP accusatively 
+  * if there is an independent NP suffixed -o, interpret it accusatively
+  * otherwise interpret some -ga suffixed NP accusatively
   * simplifications
     * in certain cases -mo is used instead of -ga. Second,
     * normally in main clauses one of the NPs will be topicalized, i.e. fronted
@@ -213,7 +213,7 @@ Edward L. Keenan
       argument ambiguity.
     The two Ss only differ with regard to which NP is "topic".
   * entails, correctly, that (17a) is not argument ambiguous and that (17b) is.
-(17) a.   Tarroo-ga Hanako-o nagutta 
+(17) a.   Tarroo-ga Hanako-o nagutta
           Taroo Hanako hit
           "Taroo hit Hanako" *"Hanako hit Taroo"
   b.  Taroo-ga Hanako-ga suki da

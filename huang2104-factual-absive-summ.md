@@ -123,7 +123,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
     * compute ROUGE [Lin, 2004], BLEU [Papineni+ 2002],
       between the output summary sentence and each source sentence. And then
       taking the average score or maximum score across all the source sentences
-    * work better in lowly abstractive summarization datasets like CNN/DM 
+    * work better in lowly abstractive summarization datasets like CNN/DM
   * semantic similarity-based metric is similar to word overlap-based methods
     * Instead of using ROUGE or BLEU, this method uses BERTScore [Zhang+ 2020a]
     * works better in highly abstractive summarization datasets like XSum
@@ -266,7 +266,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 * hE, gap between the
   * training stage (which learns to correct the corrupted reference summaries)
   * testing stage (which aims to correct the model-generated summaries)
-  limits the performance of post-editing-based methods 
+  limits the performance of post-editing-based methods
   because corrupted reference summaries have a different data distribution with
   the model-generated summaries
   * the same as weakly supervised factual consistency metrics (§3.2)

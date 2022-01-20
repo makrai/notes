@@ -4,14 +4,14 @@ Science Research and Methods, 2020 8(4), 614-629. doi:10.1017/psrm.2020.6
 
 # Abstract
 
-* Amazon's Mechanical Turk is widely used for data collection; however, 
-* data quality may be declining due to the use of 
+* Amazon's Mechanical Turk is widely used for data collection; however,
+* data quality may be declining due to the use of
   * virtual private servers to fraudulently gain access to studies.
   * we know little about the scale and consequence of this fraud, and tools for
-* We first analyze 38 studies and show that this 
+* We first analyze 38 studies and show that this
   * fraud is not new, but has increased recently. We then show that these
   * fraudulent respondents provide particularly low-quality data and can weaken
-    treatment effects. Finally, we provide 
+    treatment effects. Finally, we provide
 * two solutions
   * an easy-to-use application for identifying fraud in the existing datasets
   * a method for blocking fraudulent respondents in Qualtrics surveys.
@@ -19,14 +19,14 @@ Science Research and Methods, 2020 8(4), 614-629. doi:10.1017/psrm.2020.6
 # 1 Intro
 
 * The advent of crowdsourcing platforms, such as Amazon's Mechanical Turk
-  * quickly collect data at a substantially lower cost 
-    than professional survey providers. The samples are 
+  * quickly collect data at a substantially lower cost
+    than professional survey providers. The samples are
   * not representative of any particular population, but they tend to be 9
-    far more diverse than most common convenience samples and tend to 
+    far more diverse than most common convenience samples and tend to
   * replicate a variety of experimental and observational results (Berinsky+
     2012; Weinberg+ 2014; Clifford+ 2015; Mullinix+ 2015).Footnote 1 Though met
   * yield high-quality data when respondents are screened on reputation (Peer+
-    2014). In fact, MTurk samples generally provide 
+    2014). In fact, MTurk samples generally provide
   * higher quality data than student samples, community samples, and even some
     high-quality national samples (Hauser and Schwarz, 2015; Mullinix+ 2015;
     Thomas and Clifford, 2017; Anson, 2018).  For these reasons, the use
@@ -45,7 +45,7 @@ Science Research and Methods, 2020 8(4), 614-629. doi:10.1017/psrm.2020.6
     networks or proxies) in order to take surveys designed for US participants
   * substantially lower-quality responses, including nonsensical answers to
   * tactics to deceive the survey research system suggest they are less
-  * still little idea about the scale and duration of the problem 
+  * still little idea about the scale and duration of the problem
     or why it has spiked recently, nor have these studies provided solutions
 * we outline the scale of the quality crisis—its sources and its impact—and
   assess new methods and tools for ameliorating it
@@ -56,7 +56,7 @@ Science Research and Methods, 2020 8(4), 614-629. doi:10.1017/psrm.2020.6
       thousands of studies at risk
   * we detail the impacts of these VPS and non-US respondents on survey quality
     using two original studies (n = 2010) with extensive quality checks
-  * little evidence that bots are completing surveys in any notable number 
+  * little evidence that bots are completing surveys in any notable number
   * VPS users provide substantially worse quality data than other respondents,
     in terms of responses to explicit quality checks, answers to open-ended
     questions, and responsiveness to experimental treatments

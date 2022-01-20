@@ -7,7 +7,7 @@ Will E. Hipson, Svetlana Kiritchenko, Saif M. Mohammad, and Robert J. Coplan
 * People have widely different experiences of being alone. Sometimes being alone
   * relaxing and restorative vs feelings of loneliness.
   * solitude tends to be viewed more positively, and loneliness is more negative
-* unclear whether these terms are used differently in everyday language.  
+* unclear whether these terms are used differently in everyday language.
 * We sought to compare the emotional content of over 19 million tweets
   containing the terms solitude and lonely/loneliness. Using a computational
   * solitude tends to be used in more positive and less emotionally activated

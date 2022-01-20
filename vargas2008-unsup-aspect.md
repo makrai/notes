@@ -22,14 +22,14 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   * e.g. in _The decor of the restaurant is amazing and the food was incredible_
     * _decor_ and _food_ are the aspects of the entity (or categ) _restaurant_
 * SOTA approaches [4–7] require significant computational power, such as deep NN
-* SUAEx relies on vector similarity to emulate the attention mechanism 
+* SUAEx relies on vector similarity to emulate the attention mechanism
   * allows us to focus on the relevant information
   * perform as well as the neural attention mechanisms
   * tested on datasets from different domains
   * outperform the SOTA in ABSA in many cases in terms of quality
     and in all cases in terms of time
   * limited to dealing with aspects represented as single words
-* future work, we will extend SUAEx to treat 
+* future work, we will extend SUAEx to treat
   * compound aspects e.g. “wine list”,
   * improve the selection of reference words by using hierarchical data such as
     subject taxonomies
@@ -56,14 +56,14 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
 
 # 4 SUAEx
 
-* six modules depicted in Fig. 1: 
-  * Filtering, 
-  * Selection of Reference Words, 
-  * Preprocessing, 
-  * Word-Embeddings Representation, 
-  * Similarity, and 
+* six modules depicted in Fig. 1:
+  * Filtering,
+  * Selection of Reference Words,
+  * Preprocessing,
+  * Word-Embeddings Representation,
+  * Similarity, and
   * Category Attribution. SUAEx requires three inputs and
-* inputs 
+* inputs
   * text from a given domain (which is used to build the domain-spec word embed)
   * test data with the reviews for which the aspects and categories will be
     extracted
@@ -84,16 +84,16 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
 * optional but it is particularly useful when we want to delve into a category
   and we only have raw data for the general topic. For example, if we just
 * as a binary text classifier for the domain of interest, or simply by choosing
-  reviews that mention the category name.  
+  reviews that mention the category name.
 
 ## The Preprocessing module normalizes the input data and reduces the amount of
 
 * The amount of data needed to train word-embeddings is directly proportional to
   the size of the vocabulary of the raw data. Since preprocessing reduces the
   * typical preprocessing tasks such as tokenization, sentence splitting,
-    lemmatization, and stemming.  
+    lemmatization, and stemming.
 
-## The Word-Embedding Representation module 
+## The Word-Embedding Representation module
 
 * vector representation of words will be used to measure word similarity in the
 * can be generated using well-known tools such as Word2vec [9], Glove [10], or
@@ -113,22 +113,22 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   obtained from the direct comparison of two words (direct similarity) and the
   similarity obtained from the comparison of two words in relation to some
   contextual words (contextual similarity)
-* attention values are obtained by applying the softmax function to the sim 
+* attention values are obtained by applying the softmax function to the sim
 * Output1 is the test data together with the values for attention and similarity
   assigned by SUAEx. For example, if we consider three groups of reference words
   in the input, ”food”, ”staff”, and ”ambience”, Output1 consists in three
   attention-valued and similarity-valued versions of the test data (one set of
-  values for each category).  
+  values for each category).
 
 ## The Category Attribution module uses the output of the Similarity module to
 
 * assign one of the desired categories to each sentence in the test data. In
-* we can test different ways to aggregate the similarity values 
+* we can test different ways to aggregate the similarity values
   * average for each sentence or only consider the maximum value [22]. If the
     22. Vargas, D.S., Moreira, V.P.: Identifying sentiment-based contradictions.
         JIDM 8 (2017) 242–254
     * average: there are more than one relevant word to receive attention in the
-    * maximum: the word with the highest score will get all the attention.  
+    * maximum: the word with the highest score will get all the attention.
 * Output2 is the main output which contains all the sentences of the test data
   with the categories assigned by the Category Attribution module.
 
@@ -138,18 +138,18 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   1. compare SUAEx to our baseline ABAE [19].We hope to answer the following
     * questions: Can a simple approach like SUAEx achieve results that are close
       to the SOTA in aspect extraction? and How does SUAEx behave in different
-      domains? 
+      domains?
   2. runtime analysis of the two approaches
 * we describe the datasets, the tools and resources used
 
 ## Tools and Parametrization
 
 * NLTK 3 was used in the preprocessing module to remove stopwords, perform
-  tokenization, sentence splitting, and for lemmatization. The 
+  tokenization, sentence splitting, and for lemmatization. The
 * domain-specific word-embeddings were created with Word2Vec 4 using the
-  * CBOW module, window size of 5 words, and 200 dimensions 
+  * CBOW module, window size of 5 words, and 200 dimensions
   * The remaining parameters were used with the default values (negative
-    sampling = 5, number of iterations = 15). The 
+    sampling = 5, number of iterations = 15). The
 * similarity between word vectors was measured with the cosine similarity in
   Gensim [24] which reads the model created by the Word2vec
 * for the laptop domain, the training file provided by SemEval is too small and
@@ -160,7 +160,7 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
 
 * ABAE tends to have a better precision in most cases (three out of four datast)
   * can be attributed to the contrast in the way the two solutions use the
-    attention mechanism. While 
+    attention mechanism. While
     * ABAE only considers the highest attention-valued word in the sentence,
       SUAEx uses all the attention values in the sentences.  This difference can
 * On the SemEval datasets, SUAEx outperformed the baseline in nearly all cases.
@@ -168,18 +168,18 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   * SUAEx only uses the training data to generate the word-embeddings
   * ABAE also uses it in the evaluation module because it clusters the training
     data.
-* per aspect category are shown in Table 2. 
+* per aspect category are shown in Table 2.
   * SUAEx scored lower in recall for Ambience, Smell, and Look because the
     reference words (i.e., the names of the categories themselves) are not as
     expressive as the reference words for the other categories
     * We can find more similar words for general terms like food or staff than
-      for specific terms like smell.  
+      for specific terms like smell.
 * Other works have also used the CitySearch and BeerAdvocate datasets. Thus we
   * techniques such as LDA [25], biterm topic-models [26], a statistical model
     over seed words [27], or restricted Boltzmann machines [28]. The same
 * our method can assign high attention values to adjectives (which typically are
   not aspects).  This happens with the word _higher_ in our example, which is an
-  * could be mitigated with a post-filter based on part-of-speech tagging.  
+  * could be mitigated with a post-filter based on part-of-speech tagging.
 * Table 3's extraction was performed by selecting the highest attention-valued
   words of each sentence and by considering the category classification results.
   * This extraction can be used as an additional module in our framework

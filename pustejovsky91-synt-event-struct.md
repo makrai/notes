@@ -29,13 +29,13 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
       states, processes, and transitions, where
       a predicate in the language by default denotes one particular event type.
     * we assume a more complex subeventual structure of event types, where
-      event types make reference to other embedded types.  
+      event types make reference to other embedded types.
   2. By examining the substructure of events, one can
     describe much of the behavior of adverbial modification
     in terms of scope assignment within an event structure.
   3. The semantic arguments within an event structure expression
     can be mapped onto argument structure in systematic and predictable ways.
-    * The event structure proposed here 
+    * The event structure proposed here
       a further refinement of the semantic responsibilities within an LCS
       (Jackendoff, 1983; Rappaport & Levin, 1988).
 * one caveat about the analysis presented below. This paper is not the proper
@@ -49,7 +49,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
 # 2 Event types 1
 
 * Temporal aspect
-  * sets of periods 
+  * sets of periods
   * initial, internal, and final temporal subperiods,
     as they relate to the semantic roles associated with the arguments of
     (1) a. Mary walked.
@@ -65,7 +65,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     * the process has a logical culmination or duration, such that the activity
   * bounded process, (1c)
     * no explicit mention of a logical culmination to the activity, but rather
-      a durative adverbial is used to impose a temporal specification 
+      a durative adverbial is used to impose a temporal specification
 * These examples illustrate the same verb being used for three different aspects
   * process, accomplishment, and bounded process
   * When _walk_ appears alone structurally, it assumes a process interpretation
@@ -91,8 +91,8 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
 * states, such as those sentences in (7):
   (7) a. Mary is sick.
       b. Mary believes that John loves her.
-  * no change, no initial or final periods: homogeneity 
-  * diagnostics. 
+  * no change, no initial or final periods: homogeneity
+  * diagnostics.
     * allow modification by durative adverbials (8a), and secondly, they do
     * not appear as imperatives (8b) (Dowty, 1979):
       b. `*`Be sick!
@@ -107,7 +107,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
       either the verb or the predicate is a process
     * A theory of aspect should be able to account for this behavior, and
       not just use it to classify propositions into aspectual types.
-  * accomplishments vs non-accomplishments based on scalar adverbs eg _almost_ 
+  * accomplishments vs non-accomplishments based on scalar adverbs eg _almost_
     (10) John almost swam/painted a picture/arrived/left
     a: almost performed an activity of swimming, but did not even begin it.
     b allows for two interpretations. One is similar to (10a), where John
@@ -116,9 +116,9 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     d permits two readings along the same lines as (10b). Why should there be
   * Dowty (1979) claims that an ambiguity <=> accomplishment
 * Summ: the following categorization of aspectual types for verbs and VPs
-  * Processes: walk, run 
-  * Accomplishments: build, destroy 
-  * Achievements: die, find, arrive 
+  * Processes: walk, run
+  * Accomplishments: build, destroy
+  * Achievements: die, find, arrive
   * States: sick, know, love, resemble
 * If aspectual type is viewed as a projection of the lexical properties of the V
   * how is it that the aspectual properties of a sentence may change
@@ -144,7 +144,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     defining the well-formedness conditions for semantic expressions in a
 * two distinct approaches to the study of word meaning:
   * primitive-based theories and relation-based theories. Those advocating
-* primitives 
+* primitives
   * word meaning can be exhaustively defined in terms of a fixed set of primitiv
     (Jackendoff, 1972; Katz, 1972; Lakoff, 1971; Schank, 1975; Wilks, 1975).
   * Inferences are made through the primitives into which a word is decomposed. In
@@ -178,7 +178,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
 * lex decomp why in a generative fashion
   rather than the traditional exhaustive approach, let me take as a classic
   * eg _closed_ as used in (12) (see Lakoff, 1970):
-    (12) a. The door is closed. 
+    (12) a. The door is closed.
          b. The door closed.      (inchoative)
          c. John closed the door. (causative)
 * Lakoff (1970), Jackendoff (1972), and others have suggested that
@@ -189,7 +189,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     with a fixed number of primitives complete definitions of lexical meaning
 * lexical (and conceptual) decomposition generatively. Rather than assuming a
   * let us assume a fixed number of generative devices constructing sem exprs.
-  * Just as a formal language is described in terms of the productions 
+  * Just as a formal language is described in terms of the productions
     rather than its accompanying vocabulary, a semantic language should be
   * in computational linguistics. Different people have distinct primitives for
     their own domains
@@ -211,7 +211,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
   formal: that which distinguishes it within a larger domain;
   telic: its purpose and function; eg book: read
   agentive: whatever brings it about eg book: write
-* The minimal semantic distinctions of the qualia structure 
+* The minimal semantic distinctions of the qualia structure
   get expressive force when combined with a theory of aspectual (or event) types
   * (12a) denotes the state of the door being closed. No opposition is expressed
   * In (12b) and (12c), however,
@@ -235,8 +235,8 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
 # 4 A level of event structure 7
 
 * one level of semantic description involves an event-based interpretation
-  * other levels: subcategorization, argument structure, and qualia structure.  
-* event structure is recursively defined in the syntax 
+  * other levels: subcategorization, argument structure, and qualia structure.
+* event structure is recursively defined in the syntax
   => phrases and sentences also have ~
 * three primary components to event structure:
  the primitive event type of the lexical item;
@@ -253,12 +253,12 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     * e is an event containing two subevents, e 1 and e 2 , where
       the first temporally precedes the second, and
       there are no other events locally contained in event e. We will
-* these event types as follows (where E is a variable for any event type): 
-  a. State (S), a single event, which is evaluated relative to no other event 
+* these event types as follows (where E is a variable for any event type):
+  a. State (S), a single event, which is evaluated relative to no other event
     Examples, be sick, love, know
     Structural representation:.  S -> e
-  b. Process (P), a sequence of events identifying the same semantic expression 
-    Examples: run, push, drag 
+  b. Process (P), a sequence of events identifying the same semantic expression
+    Examples: run, push, drag
     Structural representation: P -> e 1 . . . e n
 * Following Dowty (1979) and others, we will assume that
   when P is a process verb, then if the semantic expression P 0 identified with
@@ -266,8 +266,8 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
   than a moment
   c. Transition (T ): an event identifying a semantic expression, which is eva-
   luated relative to its opposition
-  (Jackendoff, 1972; Lakoff, 1970; von Wright, 1963) 
-  Examples, give, open, build, destroy 
+  (Jackendoff, 1972; Lakoff, 1970; von Wright, 1963)
+  Examples, give, open, build, destroy
   Structural representation (where E is a variable for any event type):
   T -> E 1 ¬ E 2
 (12)  a. The door is closed.
@@ -299,7 +299,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
   a.  [closed(the-door)]
   b.  become([closed(the-door)])
   c.  cause([act( j, the-door)], become([closed(the-door)]))
-* b and c are transitions from one state to its opposition.  
+* b and c are transitions from one state to its opposition.
   * footnote: Hale and Keyser (1986) provide independent motivations for
     treating the inchoative and causative forms of a verb as essentially
     identical at some level of representation
@@ -320,7 +320,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier.
     terms of an agentive/non-agentive distinction.
   * accomplishments: verb makes reference
     both to a predicate opposition and the activity bringing about this change,
-  * achievement: the verb makes no explicit reference to the activity 
+  * achievement: the verb makes no explicit reference to the activity
 * The role of agentivity for distinguishing event types (Dowty 1979),
   replaces the notion of ‘‘event headedness’’ introduced in Pustejovsky (1989b).
   * differ in their event structures eg

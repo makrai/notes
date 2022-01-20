@@ -29,7 +29,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     * [19] SC Guntuku, DB Yaden, ML Kern, LH Ungar, and JC Eichstaedt
       Detecting depression and mental illness on social media: integrativ review
       Current Opinion in Behavioral Sciences 18 (2017), 43–49
-    * [30] Michelle Morales, Stefan Scherer, and Rivka Levitan. 
+    * [30] Michelle Morales, Stefan Scherer, and Rivka Levitan.
       A cross-modal review of indicators for depression detection systems
       Workshop on computational linguistics and clinical psychology 2017
 * two major approaches
@@ -63,7 +63,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 * [19] reviewed classifying mental health disorders
   * Support Vector Machine, Regression, and Random Forest can identify patterns
 * labelled mental health related data
-  * manual labelling by clinical mental health experts, 
+  * manual labelling by clinical mental health experts,
     getting consent to access patient health records, having individuals
     complete psychometric surveys, and self-declaration by users
 * [12] distinguished between ‘diagnosed’ and ’non-diagnosed’ participants, but
@@ -79,7 +79,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     n-grams, proportion of posts with reply, and number of followers
   * depressed users had significantly less Twitter engagement, more emotional
     word related n-grams, negative affect, and less followers
-  * These features were then included in a classification model and achieved 
+  * These features were then included in a classification model and achieved
     82% precision with 72% accuracy
 * identify depression and other mental health conditions from Twitter posts
   * [12] provided a technique to gather open data
@@ -112,7 +112,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 
 # 5 Discussion
 
-* promising transfer learning approaches based on deep learning 
+* promising transfer learning approaches based on deep learning
   * may be well-suited to this problem [1, 4, 15]
 * This research extended upon the work from [16] and [12–14]
   * signals of psychological distress for tweets related to a specific hashtag

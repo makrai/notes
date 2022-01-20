@@ -20,7 +20,7 @@ arXiv:2010.12637 [cs.CL
 
 * on the STS benchmark dataset [14] and the SICK dataset [15], the BERT models
   have achieved near-perfect results [11]
-* readability of the sentences 
+* readability of the sentences
   * in these datasets, low readability index
   * a measure of complexity of sentences [16]
   * hE, various real world applications of semantic similarity involves more
@@ -33,13 +33,13 @@ arXiv:2010.12637 [cs.CL
 # IV  methodology
 
 * methodology adopted to construct the new benchmark dataset
-  * three steps in the construction of the dataset namely, 
-    * Selection of terms, 
-    * Selection of sentences 
+  * three steps in the construction of the dataset namely,
+    * Selection of terms,
+    * Selection of sentences
     * Annotation of similarity values
   * The dataset comprises 52 unique sentences, which are definitions of widely
     known topics in the field of computer science
-* the readability analysis that compares the complexity of sentences 
+* the readability analysis that compares the complexity of sentences
 
 # V performance of various word embeddings
 

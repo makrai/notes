@@ -5,11 +5,11 @@ Findings of EMNLP, 2020 arXiv:1911.03064 [cs.CL]
 # Abstract
 
 * text generation models internalize social biases present in the training
-* we quantify and reduce bias in the sentiment of generated text.  
+* we quantify and reduce bias in the sentiment of generated text.
 * Given a conditioning context (e.g., a writing prompt) and a language model,
   * changes in values of sensitive attributes (e.g., country names,
-    occupations, genders) in the conditioning context 
-  * counterfactual evaluation. We quantify sentiment bias by adopting 
+    occupations, genders) in the conditioning context
+  * counterfactual evaluation. We quantify sentiment bias by adopting
 * individual and group fairness metrics from the fair machine learning literat,
 * large-scale models trained on two different corpora (news articles, and
   Wikipedia) exhibit considerable levels of bias.

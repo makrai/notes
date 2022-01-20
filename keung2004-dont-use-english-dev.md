@@ -26,7 +26,7 @@ EMNLP 2020 arXiv:2004.15001 [cs.CL]
 * hE, zero-shot mBERT results can vary greatly. We present 4 published baselines
   for zero-shot cross-lingual document classification on MLDoc (Schwenk and Li,
   2018) in Table 1:
-  * while English accuracies which are basically identical, their 
-    target language performances are very different. Given that 
+  * while English accuracies which are basically identical, their
+    target language performances are very different. Given that
   * each experiment starts with the same pre-trained mBERT model and MLDoc data
   * it is clear that these cross-lingual results are not reproducible.

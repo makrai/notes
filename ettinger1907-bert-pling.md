@@ -72,7 +72,7 @@ https://github.com/aetting/lm-diagnostics
     Chowdhury and Zamparelli, 2018; Futrell+ 2019)
     * typically draw conclusions based on LMs’ output probabilities
 * internal dynamics underlying LMs’ capturing of syntactic info,
-  * in different components of the LM and 
+  * in different components of the LM and
     at different timesteps within the sentence
     (Giulianelli+ 2018)
   * individual units (Lakretz+ 2019)

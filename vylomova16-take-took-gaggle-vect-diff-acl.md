@@ -115,7 +115,7 @@ The dataset is available at http://github.com/ivri/DiffVec
 # 4 Clustering
 
 * the morphosyntactic paradigm relations (NOUN SP and the three VERB relations)
-  are by far the easiest to capture. 
+  are by far the easiest to capture.
 * lexical semantic relations, on the other hand, are the hardest for all embeds
   * VERB 3 there was a single cluster consisting of around 90% of Verb 3 word
     pairs. Most errors resulted from POS ambiguity, leading to confusion with

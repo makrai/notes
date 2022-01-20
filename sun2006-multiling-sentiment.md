@@ -25,7 +25,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
 
 * qualitative case studies how
   cultural differences are manifested as linguistic variations (Siegel, 1977)
-* Quantifying cross-cultural similarities from linguistic patterns 
+* Quantifying cross-cultural similarities from linguistic patterns
   largely unexplored in NLP, with the exception of studies that focused on
   * differences in word usage (Garimella+ 2016; Lin+ 2018)
 * we focusing on semantic and pragmatic differences across languages

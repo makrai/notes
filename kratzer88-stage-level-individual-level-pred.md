@@ -64,7 +64,7 @@ M. Krifka (ed.). Genericity in Natural Language. Proceedings of the 1988 Tübing
   expressions in Germon.
 * Stage-level pred i c oles
 a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
-  since almost o11 refugees i n this ctty perished ore 
+  since almost o11 refugees i n this ctty perished ore
   Since almost o11 of the refugees In this ctty perished
   Since almost o11 of the refugees perished in this ctty
 (5) weil fhn fost o11e FJohe in diesem Bell gebissen hoben
@@ -76,12 +76,12 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
     since almost o11 of the petitioners i n lhts woiling room were sitting
     since almost o11 the petitioners were sitting i n this wailing room
 (7) weil uns heute fast a 1 1 e Kandtdaten beei ndruckt haben
-    since us today almost all candidates I mpressed have 
+    since us today almost all candidates I mpressed have
     since almost all of today·s candidates i mpressed us
     since almost all the candidates impressed us today
 * lndividuttl - l e vel predicates
-(8) wei I fast a11e Schwane in Australien schworz sind 
-    since almost all swans in Australia block 
+(8) wei I fast a11e Schwane in Australien schworz sind
+    since almost all swans in Australia block
     since almost all swans in Austra l i a are black
 (9) weil fast alle Lebewesen auf dtesem Planet von der Amöbe abstammen
     since almost a11 living beings are this planet from the amoeba descend
@@ -89,7 +89,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
 (10) wei1 fast alle Schuler in dleser Schute Fronzoslsch konnen
      since almost al1 students in this school French know
      since almost a 1 1 of the students in this school know French
-(11) weil heute fast aile Kendldaten _Hans_ h1essen 
+(11) weil heute fast aile Kendldaten _Hans_ h1essen
      since today almost all candidates _Htms_ were named
      since almost all of today's candidates were nomed ·Hans..
 * I n the above exomples, all the sentences with
@@ -112,7 +112,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
 (14) Manon i s a dancer
      danc£r (Manon)
 * _Is dancing_ is a stage-level predicate. consequently, it has a Dllvidsonian
-  llrgument that appears In the form of a variable 
+  llrgument that appears In the form of a variable
   * The locatives _on the lawn_ and _this morning_ relate to the verb
 * _Js a dancer_ I s a fairly typical Individual-level predicate.  It normally
   * lacks a Oavidsonlan argument, hence cannot be modified by locatives
@@ -122,9 +122,9 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
   * mey not be on event argument. It
   * moy simply be on argument for spotlotemporal locotlon
     * an argument for spottotemporal locotion was first mode by (Lemmon 1967)
-      * comments on Davidson's paper The Logical Form of Action Sentences· 
+      * comments on Davidson's paper The Logical Form of Action Sentences·
       * Lemmon meant to identify events with their spoliotemporal locations,
-  * This is the minimal assumption necessary to explain the dote presented 
+  * This is the minimal assumption necessary to explain the dote presented
 * ossume, then, that in the logical representations given obove
   * I is a variable ranging over spatiotemporal locations
   * A spatfotemporal location Is a sp.ace-tlme chunk li ke the space
@@ -231,7 +231,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
     the indertnlte noun phrase in (18) can have an existential or a universal
     (generic) Interpretation.
     * On Helm's account, the uni versal reading or _a car_ Is due to the modal
-      _must_ that can function as a universal quantifier just like _always_. 
+      _must_ that can function as a universal quantifier just like _always_.
       On this readrng, (18) woUld be represented as follows.
       (18') `Must_{x,l} (car(x) & be (x,l)) (in the garage (l))`
     * If _a car_ i s understood existentially, the logical representation would be
@@ -264,7 +264,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
     * the customary object posttton, which Is the posttton adjacent to v.
   * the structure of simple sentences Is usually assumed to be as shown I n
     (19). IP -> NP I'   (IP = S, NP = spec IP)
-          I' -> I VP    
+          I' -> I VP
           VP -> V' NP   (NP = spec VP)
           V' -> V NP
 * Diesing (1988)
@@ -280,16 +280,16 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
       s i nce us many de21r neighbors helped
       since many dear neighbors helped us
 (b) Liebe Nachbarn halfen uns vlele
-    dear neighbors helped us many 
+    dear neighbors helped us many
     As for dear neighbors, many or them helped us
 2 I (a) weil das viele liebe N&chbarn verstehen
-        since this many dear neighbors underst&nd 
+        since this many dear neighbors underst&nd
         since many dear neighbors understand this
-    (b) *Liebe Nachbarn dear verstehen das vtele 
-         neighbors understand this maay 
+    (b) *Liebe Nachbarn dear verstehen das vtele
+         neighbors understand this maay
          As for dear neighbors, many or them understand this
 * called _quantifier spl i t _ construction i n German. The
-  * (a) subordinate c l auses w i t h unsp l i t quanti fier phrases. In the 
+  * (a) subordinate c l auses w i t h unsp l i t quanti fier phrases. In the
   * (b) verb second has taken place and the quanttfler phrase I s sp1 t t
   * (20) Involves a stage-level predicate,
     (2 1) corresponding has an Individual-level predicate
@@ -302,7 +302,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
     * They w l 1 1 then have several opttons at surface-structure.
     * stay in their original posttton, or else may
     * scramble, that is, adJoin to IP
-    * In either case, they are ungoverned 
+    * In either case, they are ungoverned
     => movement from subjects of individual-level predicates will alwayi lead to
     an ECP violation. (Subjects of individual-l evel predicates can also appear
     in the specifier of CP position. We may assume that taey may optionally be
@@ -328,10 +328,10 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
 * extraction posstb1 1 t t i es for relat1ve clauses.
   (23) involves a stage-level pred1cate, (24) an individual-level predicate.
   Subjects of stage/individual-level predicates permit/not the extraposfUon of a
-  relative clause 
+  relative clause
 (23) weil zwei Kinder hier waren, mit denen niemen spielen wollte
      since two chl ldren here were, with whom nobody play wanted
-     since two children were here with whom nobody wanted to play 
+     since two children were here with whom nobody wanted to play
 (24) `*`well zwei Bücher teuer waren, die niemand lesen wollte
       sfnce two books expensive were that nobody read wanted
       since two books were expensive that nobody wanted to read

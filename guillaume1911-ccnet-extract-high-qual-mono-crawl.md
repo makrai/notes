@@ -2,10 +2,10 @@ CCNet: Extracting High Quality Monolingual Datasets from Web Crawl Data
 Guillaume Wenzek, Marie-Anne Lachaux, Alexis Conneau, Vishrav Chaudhary, Francisco Guzmán, Armand Joulin, Edouard Grave
 arXiv:1911.00359 [cs.CL]
 
-* Our pipeline follows the data processing introduced in fastText 
+* Our pipeline follows the data processing introduced in fastText
   (Mikolov+ 2017; Grave+ 2018), that deduplicates documents and lang id
 * We augment this pipeline with a filtering step to select documents that are
-  close to high quality corpora like Wikipedia. 
+  close to high quality corpora like Wikipedia.
 
 # 1 Intro
 

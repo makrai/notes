@@ -47,8 +47,8 @@ code to reproduce the experiments https://github.com/clips/cat
   * outperforms more complex methods, e.g., attention neu (He+ 2017; Luo+ 2019)
   * automatically assigns aspect labels, while in previous work, labels are
     manually assigned to aspect clusters
-* our model uses 
-  * frequency threshold for candidate selection 
+* our model uses
+  * frequency threshold for candidate selection
   * novel attention mechanism based on RBF kernels
   * automated aspect assignment method
 * for the task of assigning aspects to sentences in the restaurant domain, the

@@ -25,14 +25,14 @@ SAGE Open April-June 2013: 1­–12
 * several intrinsically related new attributional paradigms
   * Linguistic Intergroup Bias (LIB)
     (Maass, Salvi, Arcuri, & Semin, 1989; Sutton & Douglas, 2008)
-  * Actor-Observer Bias 
+  * Actor-Observer Bias
     (Fiedler, Semin, & Koppetsch, 1991; see Fiedler, 2008, for a review)
   * interpersonal transmission of stereotypes
     * linguistic categories play a subtle, but crucial role
     * Linguistic Expectancy Bias (LEB)
       (Maass, Milesi, Zabbini & 1995; Wigboldus, Semin, & Spears, 2000)
   * Negation Bias (Beukeboom, Finkenauer, & Wigboldus, 2010) and the
-  * Stereotypic Explanatory Bias 
+  * Stereotypic Explanatory Bias
     (Sekaquaptewa, Espinoza, Thompson, Vargas, & Von Hippel, 2003)
   * lexical choice seems to be a powerful device in modulating
     social-psychologically relevant information in communication

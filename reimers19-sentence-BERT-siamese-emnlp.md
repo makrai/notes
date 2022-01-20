@@ -76,7 +76,7 @@ https://github.com/UKPLab/sentence-transformers
     * Yang+ (2018) train on conversations from Reddit
       using siamese DAN and siamese transformer networks, which yielded
       good results on the STS benchmark dataset
-    * Humeau+ (2019) addresses the run-time overhead of the cross-encoder 
+    * Humeau+ (2019) addresses the run-time overhead of the cross-encoder
       * present a method (poly-encoders) to compute a score between m context
         vectors and precomputed candidate embeddings using attention
       * the score function is not symmetric and the

@@ -1,5 +1,5 @@
 Butt, Miriam
-Case in Lexical-Functional Grammar 
+Case in Lexical-Functional Grammar
 2009 in The Oxford Handbook of Case, 59-71
 
 # Introduction
@@ -60,7 +60,7 @@ organizatoin
     a difference between
     * endocentricity (all heads project maximally) and
     * exocentricity (heads do not necessarily maximally project)
-    * See Bresnan (2001, Ch. 7) and Dalrymple (2001, Ch. 3) for further discuss 
+    * See Bresnan (2001, Ch. 7) and Dalrymple (2001, Ch. 3) for further discuss
 
 ## 2.1 Grammatical Functions
 
@@ -156,7 +156,7 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
   relates GFs to thematic roles via two abstract linking features,
   [±objective] and [±restrictive], by which
   * both thematic roles and GFs can be classified by these
-  * Additionally, a number of principles govern the association 
+  * Additionally, a number of principles govern the association
   * Furthermore, argument changing operations such as
     passives (argument deletion) or
     applicatives (argument addition) are taken into account (see Butt 2006)
@@ -291,7 +291,7 @@ agt > beneficiary > recip/experiencer > instrumental > theme/patient > location
     * In (20a), in contrast, it could be some generic giraffe or giraffes
       * glossed as nominative
     * This case has no overt morphophonological realization in Urdu, something
-      which is crosslinguistically quite common.  
+      which is crosslinguistically quite common.
 (20) a. nadya=ne        jiraf            dekh -na     hE
         Nadya.F.Sg=Erg  giraffe.M.Sg.Nom see-Inf.M.Sg be.Pres.3.Sg
         ‘Nadya wants to see a giraffe/giraffes.’
@@ -325,21 +325,21 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
     * no explicit thematic hierarchy is assumed and the
       thematic roles are restricted to a very basic set: agt, goal, theme, loc
       * Beneficiaries, recipients, experiencers, etc. are all assumed to be an
-        instance of a goal, more or less abstract.  
+        instance of a goal, more or less abstract.
     * case is not integrated directly into the linking between GFs and a-struct
       * As in standard linking theory
     * case marking becomes relevant for linking
       when different linking possibilities exist,
       just as was the case for Zaenen+
       * The information provided by the case morphology can be used to select
-        just one of the possibilities.  
+        just one of the possibilities.
     * the function of case marking must go beyond just the determination of GFs
       * as the examples in (19) and (20) show,
     * Differential Case Theory (DCT)
     * most instances of case work out to be instances of semantic case
-      := being simultaneously: 
-        * semantically predictable; 
-        * subject to syntactic restrictions, 
+      := being simultaneously:
+        * semantically predictable;
+        * subject to syntactic restrictions,
           eg being confined to certain grammatical functions
     * the bulk of the crosslinguistic case marking phenomena involve an
       interaction between syntactic and semantic constraints.
@@ -349,11 +349,11 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
   * As is well known from a host of studies on Hindi/Urdu
   * alternates with the unmarked nominative on unergative intransitives (the
     * most comprehensive study of the distri of the ergative is Davison 1999)
-    * alternation correlates with an expression of control/volitionality.  
-(22) a. yassin          kh ãs-a 
+    * alternation correlates with an expression of control/volitionality.
+(22) a. yassin          kh ãs-a
         Yassin.M.Sg.Nom cough-Perf.M.Sg
         ‘Yassin coughed.’
-  b.  yassin=ne       kh ãs-a 
+  b.  yassin=ne       kh ãs-a
       Yassin.M.Sg=Erg cough-Perf.M.Sg
       ‘Yassin coughed (purposefully).’
 * Another example is the accusative/dative ko in Urdu
@@ -365,18 +365,18 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
       (23) nadya=ne bılli=ko dud di-ya hE
            Nadya.F=Erg cat.F.Sg=Dat milk.M.Nom give-Perf.M.Sg be.Pres.3.Sg
            ‘Nadya has given milk to the cat.’
-      * dative is associated with a more or less abstract goal.  
+      * dative is associated with a more or less abstract goal.
       * In experiencer constructions as in (19b) or (24a–c),
         the experiencer can be thought of as an abstract goal (Landau 2002).
-(24) a. nadya=ko skul ja-na pAr.-a 
+(24) a. nadya=ko skul ja-na pAr.-a
      Nadya.F.Sg=Dat school.F.Sg.Obl go-Inf.M.Sg fall-Perf.M.Sg
      ‘Nadya had to go to school.’
   b. nadya=ko d.Ar lAg-a
      Nadya.F.Sg=Dat fear.M.Sg.Nom be attached-Perf.M.Sg
      ‘Nadya was afraid.’
-  c. nadya=ko kAhani yad a-yi 
+  c. nadya=ko kAhani yad a-yi
      Nadya.F.Sg=Dat story.F.Sg.Nom memory come-Perf.F.Sg
-     ‘Nadya remembered the story.’ 
+     ‘Nadya remembered the story.’
   d. nadya=ne kAhani yad k-i
      Nadya.F.Sg=Erg story.F.Sg.Nom memory do-Perf.F.Sg
      ‘Nadya remembered the story (actively).’
@@ -418,14 +418,14 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
       * the verb ‘bring’ in (25) is a tr verb with perfect morphology
       * the bringer can be unproblematically classified as an agent
       * hE the subject ‘Nadya’ in (25) is nominative and not ergative.
-(25)  nadya kıtab la-yi 
+(25)  nadya kıtab la-yi
       Nadya.F.Sg.Nom book.F.Sg.Nom bring-Perf.F.Sg
       ‘Nadya brought a book.’
     * reasons for this aberrant case marking are not clear. Also, there are
     * no other agentive transitive verbs which behave like this. Therefore this
     * must be stipulated as part of the lexical entry of ‘bring’
     * (the nominative on objects is regular in Urdu)
-    * instances of quirky case are relatively rare. 
+    * instances of quirky case are relatively rare.
   * most case marking phenomena should fall under the rubrik of semantic case,
     i.e., being constrained simultaneously by both syntactic and semantic cond.
     * in marked contrast to many theories of case, but does seem to
@@ -456,12 +456,12 @@ b.  nadya=ne       jiraf=ko         dekh -na     hE
       * word order freezing effects, which are
         * due to identically case marked arguments in a clause.
 
-# 6 Summary 
+# 6 Summary
 
 * In sum, LFG contains a range of differing approaches to case marking
   * No account developed a complete theory of case marking crosslinguistically.
   * new ideas are continually being developed and tried out in light of new data
-  * not mean that accounts discard already established insights. 
+  * not mean that accounts discard already established insights.
   * each new account builds on the strong points of previous LFG insights, but
     is simultaneously not willing to let itself be blinded by them
 

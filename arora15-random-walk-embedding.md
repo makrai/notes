@@ -22,7 +22,7 @@ TACL 2016
 * Semantic word embeddings are created by diverse methods such as
   * Latent Semantic Analysis (LSA),
   * generative text models such as topic models,
-  * matrix factorization, 
+  * matrix factorization,
   * neural nets, and
   * energy-based models
 * Many methods use nonlinear operations on co-occurrence statistics

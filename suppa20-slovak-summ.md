@@ -136,7 +136,7 @@ LREC 2020
     while the last metric can be taken to represent fluency
 * issues with ROUGE applied to non-English texts: English-specific components,
 * Straka+ (2018) ditch the stemming part altogether, resulting in a
-  language-agnostic approach called ROUGE RAW 
+  language-agnostic approach called ROUGE RAW
 * hE, In our experiments, this approach proved to be problematic
   * automatic evaluation reported zero score,
     even if the summary was in fact of high quality. The authors also note this

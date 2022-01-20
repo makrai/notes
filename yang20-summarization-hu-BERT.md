@@ -82,7 +82,7 @@ XVI. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2020. január 23�
       azokat a cikkeket, amelyek háromnál kevesebb mondattal rendelkeztek)
     * Validálás: 2000 cikk
     * Forrásszöveg (cikkek) átlagos bekezdéshossza: 317,37 szó; 15,36 mondat
-    * Célszöveg (lead) átlagos bekezdéshossza: 26,21 szó; 1,56 mondat 
+    * Célszöveg (lead) átlagos bekezdéshossza: 26,21 szó; 1,56 mondat
 * Mivel nem mindegyik cikkhez tartozott lead, ezért miután a nyomtatott és az
   online cikkeket összetettük, kivettük azokat a cikkeket, amelyekhez nem
   tartozott lead (ezért látható eltérés a tulajdonságban az Összesen résznél)
@@ -110,9 +110,9 @@ XVI. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2020. január 23�
 
 * előfeldolgozást végeztünk az eredeti szövegeken
   * mondatokra bontottuk, majd tokenizáltuk. Ezekhez az e-magyar tokenizálóját,
-    a quntoken (Mittelholcz, 2017) eszközt használtuk. Ezt követően 
+    a quntoken (Mittelholcz, 2017) eszközt használtuk. Ezt követően
   * az összefoglaló rendszer számára JSON formátumra alakítottuk a szöveget
-  * két speciális elemet illesztettünk be, 
+  * két speciális elemet illesztettünk be,
     az egyik a szöveg elejét jelzi, a másik a mondathatárokat. Ezután az
     előfeldolgozott fájlokkal különböző neurális modelleket tanítottunk be
 * baseline: amely a cikk első három mondatát veszi összefoglalóként
@@ -148,7 +148,7 @@ XVI. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2020. január 23�
 * A kiértékeléshez a ROUGE (Lin, 2004) módszert használtuk
   * ROUGE: Recall-Oriented Understudy for Gisting Evaluation
   * a gépi fordítás során használt BLEU metrikán alapszik
-  * több almetódust is tartalmaz, melyek közül a méréseinkhez 
+  * több almetódust is tartalmaz, melyek közül a méréseinkhez
     a ROUGE-1, ROUGE-2 és a ROUGE-L módszereket használtuk
   * A ROUGE-1 egy unigram, míg a ROUGE-2 egy bigram fedést számoló algoritmus
   * ROUGE-L: leghosszabb közös szósorozatot vizsgálja bekezdés és mondat szinten

@@ -16,7 +16,7 @@ Sentiment analysis algorithms and applications: A survey
     * sentences are just short documents [3]
   * This survey tackles the first two kinds of SA
 * data sets
-  * product reviews, stock markets [4,5], news articles [6], 
+  * product reviews, stock markets [4,5], news articles [6],
     political debates [7]
 * applications and enhancements on SA algorithms from the last few years
 * papers categorized according to

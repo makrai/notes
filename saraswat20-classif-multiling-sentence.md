@@ -1,6 +1,6 @@
 Text Classification Using Multilingual Sentence Embeddings
 Anant Saraswat, Email author, Kumar Abhishek, Sheshank Kumar
-Springer Evolution in Computational Intelligence pp 527-536 
+Springer Evolution in Computational Intelligence pp 527-536
 
 paper hidden
 

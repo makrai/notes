@@ -7,7 +7,7 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 
 * tensors first emerged in the psychometrics community in the 20th century
 * we are going to discuss
-  * why tensors are more rigid than matrices 
+  * why tensors are more rigid than matrices
     with respect to the uniqueness of their decomposition
   * most important factorization algorithms and their properties
   * examples of tensor decomposition applications in machine learning
@@ -16,7 +16,7 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 
 # 1 Introduction
 
-* Fueled by increasing computing capacity and a 
+* Fueled by increasing computing capacity and a
   better understanding of multilinear algebra especially during the last decade
 * we will turn to some of the most widely used tensor decompositions,
   CP and Tucker, and the theory behind them
@@ -41,7 +41,7 @@ Stephan Rabanser, Oleksandr Shchur, and Stephan Günnemann
 * factor matrices hold the combination of the vectors from the rank-one
   components as columns
 * `λ_r` is often used to absorb the respective weights during normalization
-  of the factor matrices’ columns. 
+  of the factor matrices’ columns.
   * usually normalizing the sum of the squares of the elements in each column
   * useful once turn to
     * machine learning applications of tensor decompositions in Section 5 and
@@ -166,9 +166,9 @@ az n-edik mód mentén való mxszorzat
   asymptotically consistent, but usually do
   not perform well in very high dimensions
 * Tensor decomposition methods are based on the method of moments [33]
-  * main idea lies in finding the latent variables 
+  * main idea lies in finding the latent variables
     that would give rise to similar moments under the given model
-  * in many popular probabilistic models, 
+  * in many popular probabilistic models,
     the low-order moment tensors exhibit a specific structure [1]
   * effective and efficient algorithms for solving such problems
   * scale well to larger problems and in general do

@@ -27,7 +27,7 @@ Nature Communications volume 12, Article number: 4122 (2021)
 
 * training/testing curves give very limited insight into the overall properties
   * not take into account the (often large human and CPU/GPU) time for
-    hyperparameter ﬁddling; they typically do 
+    hyperparameter ﬁddling; they typically do
   * not correlate with robustness or fairness or interpretability; and so on. A
   * when the model user is not the model developer.  Then, one may not have
     * no access to the training data or the testing data.  Instead, one may
@@ -57,12 +57,12 @@ Nature Communications volume 12, Article number: 4122 (2021)
   e.g., hundreds of pretrained models in CV (≥500) and NLP (≈100). (When we
   began this work in 2018, there were fewer than tens of such models; then in
   * in a year or two there will be an order of magnitude or more models.) For
-* main results. 
+* main results.
   * norm-based metrics do a reasonably good job at predicting quality trends in
-    welltrained CV/NLP models. 
+    welltrained CV/NLP models.
   * norm-based metrics may give spurious results when applied to poorly trained
-    models (e.g., models trained without enough data, etc.). 
-    * e.g. they may exhibit what we call Scale Collapse for these models. 
+    models (e.g., models trained without enough data, etc.).
+    * e.g. they may exhibit what we call Scale Collapse for these models.
   * PLbased metrics can do much better at predicting quality trends in
     pretrained CV/NLP models.  In particular,
     * a weighted PL exponent (weighted by the log of the spectral norm of the
@@ -70,7 +70,7 @@ Nature Communications volume 12, Article number: 4122 (2021)
       series of well-trained versus very-well-trained models within a given
       architecture series; and
     * the (unweighted) average PL exponent is qualitatively better at
-      discriminating well-trained versus poorly-trained models. 
+      discriminating well-trained versus poorly-trained models.
   * PL-based metrics can also be used to
     * characterize ﬁne-scale model properties, including what we call
       layer-wise Correlation Flow, in well-trained and poorly-trained models;

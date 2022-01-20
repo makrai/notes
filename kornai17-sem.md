@@ -1,6 +1,6 @@
 Kornai
 Semantics
-2019 
+2019
 
 ## 1.4
 
@@ -48,7 +48,7 @@ Semantics
 
 ## 4.2
 
-* our labels are called 
+* our labels are called
   * NOM and ACC in case grammar (Fillmore, 1977)
   * 1 and 2 in relational grammar (Perlmutter, 1983)
   * AGENT and PATIENT in linking theory (Ostler, 1979)
@@ -58,8 +58,8 @@ Semantics
 
 * What does NOM mean? The key semantic contribution is the sense of agency, that
 * three components of the system that implements inner syntax: the actual
-  * mechanism used for implementing deep cases, the precise 
-  * inventory of deep cases, and the 
+  * mechanism used for implementing deep cases, the precise
+  * inventory of deep cases, and the
   * linguistic patterns that link deep cases to surface cases 119
     * dative shows aspects of both having (possession) and getting to (directon)
     * patterns where the dative is an experiencer, as in Marinak tetszik/fáj
@@ -72,7 +72,7 @@ Semantics
         in universal cognitive patterns or in etymological relatedness or
         cultural borrowing remains to be seen.  Be that as it may, we need a
 * mechanism for expressing such patterns on a per-language basis, and 4lang keys
-  * _appear_, which in Hungarian governs a double dative: 
+  * _appear_, which in Hungarian governs a double dative:
   * Marinak Péter betegnek tűnik, Mary.DAT Peter.NOM sick.DAT appear.3SG
   * We analyze appear as give impression of or, more precisely, as agent cause
     recipient to have impression of condition
@@ -110,8 +110,8 @@ Here we will discuss three well known ranges of ‘pragmatic’ phenomena
 
 ## 9.4 A formal model
 
-* In 
-  * the proto-logic described here there is only one rule of deduction, called 
+* In
+  * the proto-logic described here there is only one rule of deduction, called
     _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition. In
   * standard systems of formal logic the main deductive rule is modus ponens,
     but in our model modus ponens comes built into the set-theoretical underpinn

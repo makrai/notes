@@ -20,13 +20,13 @@ https://github.com/allenai/rainbow
   * transfer almost always leads to better or equivalent performance if
     following a particular recipe, that
   * QA-based commonsense datasets transfer well with each other, while
-    commonsense knowledge graphs do not, and that 
+    commonsense knowledge graphs do not, and that
   * larger models benefit more from transfer than smaller ones
     * perhaps counter-intuitively,
 * a new universal commonsense reasoning model, UNICORN, that establishes
   * new SOTA performance across 8 popular commonsense benchmarks,
   * aNLI (87.3%), CosmosQA (91.8%), HellaSWAG (93.9%), PIQA (90.1%), SocialIQa
-    (83.2%), WinoGrande (86.6%), CycIC (94.0%) and CommonsenseQA (79.3%). 
+    (83.2%), WinoGrande (86.6%), CycIC (94.0%) and CommonsenseQA (79.3%).
 
 # 1 Intro
 
@@ -46,22 +46,22 @@ https://github.com/allenai/rainbow
   * novel evaluation, the cost equivalent curve, that sheds new insight on
     * choices of source datasets, pretrained language models, and
       transfer learning methods affect performance and data efficiency in the
-* cost equivalent curves 
+* cost equivalent curves
   * The primary motivation is data efficiency. The necessary condition for
     SOTA neural models to maintain top performance on any dataset is a
-    sufficiently large amount of training data for fine-tuning.  
+    sufficiently large amount of training data for fine-tuning.
   * building a dataset for a new task or a domain is an expensive feat, easily
     costing tens of thousands of dollars (Zellers+ 2018). Therefore, we want
   * aims to answer the following intuitive question:
     * how much data does a transfer learning approach save over the baseline
     * more detailed walk-through of this chart in §2. As will be seen, cost
-    * advantages over 
-      * simple evaluations at the full dataset size or classical 
+    * advantages over
+      * simple evaluations at the full dataset size or classical
       * learning curves drawn for each method and dataset separately, as they
 * We leverage these new tools to reevaluate common approaches for
   intermediate-task transfer (Pruksachatkun+ 2020). Through extensive
   * intermediate-task transfer can always lead to better or equivalent
-    performance if following a particular recipe, that 
+    performance if following a particular recipe, that
   * QA-based commonsense datasets transfer well to each other, while
     commonsense knowledge graphs do not, and that perhaps counter-intuitively,
   * larger models benefit much more from transfer learning compared to smaller
@@ -75,7 +75,7 @@ https://github.com/allenai/rainbow
     * WINO GRANDE (86.6%, Sakaguchi+ 2020)
     * CYCIC (94.0%)
     * COMMONSENSE QA dataset (79.3%, Talmor+ 2019).  Beyond setting records
-* ablations 
+* ablations
   * UNICORN also improves data efficiency for all training dataset sizes.
 
 # 2 Cost Equivalent Curves
@@ -85,7 +85,7 @@ https://github.com/allenai/rainbow
 * Figure 1 illustrates cost equivalent curves with COMMON SENSE QA as the
   * x-axis shows the number of examples used by the single-task baseline, while
   * y-axis shows the examples from the target dataset used by the multitask met
-  * curve is where they achieve the same performance. The 
+  * curve is where they achieve the same performance. The
   * numbers on top of the figure show the performance corresponding to the
   * curves below the diagonal (y = x) indicating that the new method improves
 * assumption: rel between performance and cost is continuous and strictly monot
@@ -96,7 +96,7 @@ https://github.com/allenai/rainbow
       non-decreasing (or non-increasing) everywhere, and lies as close to the
       observations as possible
   * mapping each dataset size to the baseline performance, finding the matching
-    performance on the new method’s curve, and seeing how many examples requird 
+    performance on the new method’s curve, and seeing how many examples requird
 * reframes the goal from pushing up performance on a fixed-size benchmark to
   * can be applied to other definitions of cost as well (e.g., GPU compute).
 
@@ -109,7 +109,7 @@ https://github.com/allenai/rainbow
       connecting a beginning and ending.
   * COSMOS QA (Huang+ 2019) asks commonsense reading comprehension questions
     about everyday narratives.
-  * HELLA SWAG (Zellers+ 2019) 
+  * HELLA SWAG (Zellers+ 2019)
     choose the most plausible ending to a short context.
   * PIQA (Bisk+ 2020) is a multiple-choice question answering benchmark for
     physical commonsense reasoning.
@@ -126,13 +126,13 @@ https://github.com/allenai/rainbow
 ## 4.1 What’s the Best Approach for Transfer?
 
 * multitask training (Caruana 1995): training on multiple datasets (including
-  the target dataset) all at once, 
+  the target dataset) all at once,
 * sequential training (Pratt, Mostow, and Kamm 1991): first training on
   multiple datasets (excluding the target dataset) through multitask training,
   and then continuing to train on the target dataset alone,
 * multitask fine-tuning (Liu+ 2019a): first training on all datasets
   (including the target dataset) through multitask training, and then
-  continuing to fine-tune on the target dataset alone. 
+  continuing to fine-tune on the target dataset alone.
 * Figure 2 compares these three methods on each of the six RAINBOW tasks,
   using the other five datasets for transfer
 
@@ -148,7 +148,7 @@ https://github.com/allenai/rainbow
 
 ### Finding 3: Multitask training helps most often in the lowdata regime
 
-* One mystery researchers currently face is the inconsistent effect of multitsk 
+* One mystery researchers currently face is the inconsistent effect of multitsk
 * Cost equivalent curves reveal one potential explanation: multitask learning
   tends to help when data is scarce, but may hurt performance if plentiful. In
 
@@ -211,9 +211,9 @@ https://github.com/allenai/rainbow
   language (Trinh and Le 2018),
   crowdsourced and expert curated knowledge might provide complementary info.
 * we investigate two popular common sense knowledge graphs,
-  * CONCEPT NET (Speer, Chin, and Havasi 2017) and 
-  * ATOMIC (Sap+ 2019a), to create 
-  * knowledge graph generation tasks (Bosselut+ 2019) In the 
+  * CONCEPT NET (Speer, Chin, and Havasi 2017) and
+  * ATOMIC (Sap+ 2019a), to create
+  * knowledge graph generation tasks (Bosselut+ 2019) In the
     * forward direction, the model predicts the object given the subject and
       relation concatenated in XML tags. In the
     * backward direction, the model predicts the subject given the object and
@@ -269,7 +269,7 @@ https://github.com/allenai/rainbow
 * contextualized representations from neural language models (Peters+ 2018).
 * Radford+ (2018): language models could be fine-tuned directly to solve a
   wide-variety of tasks by providing the inputs encoded as text, while
-* Devlin+ (2019) and others improved upon the technique 
+* Devlin+ (2019) and others improved upon the technique
   (Yang+ 2019; Liu+ 2019b; Lan+ 2019)
   * Yang Z; Dai Z; Yang Y; Carbonell J; Salakhutdinov R R; and Le Q V
     Xlnet: Generalized autoregressive pretraining for language understanding.

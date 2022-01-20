@@ -240,7 +240,7 @@ ACL 2020, 14 pages arXiv:2005.00661 [cs.CL]
   * We demonstrate these issues in Figure 3
 * Better ways of ~ may alleviate some of these issues (Wang+ 2020)
   * generating questions (Narayan+ 2020) and
-  * measuring factual consistency 
+  * measuring factual consistency
 
 ## 5.5 Model Selection with Entailment
 

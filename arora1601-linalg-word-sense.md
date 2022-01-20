@@ -8,8 +8,8 @@ TACL vol. 6, pp. 483–495, 2018
   * reside in linear superposition within the word embedding and
   * can be recovered by simple sparse coding
 * random walk on discourses model (Arora+ 2015)
-* in our technique each word sense is also accompanied by one of 
-  about 2000 “discourse atoms” that give 
+* in our technique each word sense is also accompanied by one of
+  about 2000 “discourse atoms” that give
   a succinct description of which other words co-occur with that word sense
 
 # 1 Intro
@@ -74,7 +74,7 @@ TACL vol. 6, pp. 483–495, 2018
 * Experimentation showed that
   * k = 5
   * `α_{ij}`’s in (2) are almost always positive
-  * the nonzero coefficients correspond to basis vectors 
+  * the nonzero coefficients correspond to basis vectors
     with low pairwise inner product, as is usual in sparse coding
   * m = 2000
   * re-running the sparse coding (k-SVD) algorithm multiple times with different
@@ -126,7 +126,7 @@ TACL vol. 6, pp. 483–495, 2018
   * 200 polysemous words and
   * their 704 senses according to WordNet
     * Each “sense” is represented by a set of 8 related words; these were
-      * collected from WordNet and online dictionaries by 
+      * collected from WordNet and online dictionaries by
         college students who were told to identify most relevant other words
         occurring in the online definitions of this word sense
 * the algorithm is given
@@ -142,12 +142,12 @@ TACL vol. 6, pp. 483–495, 2018
       * an atom `a` of the word w
       * is
         * the quadratic mean of the inner products between `a` and vectors in L plus
-        * the root mean square of the inner products between w and vectors in L 
+        * the root mean square of the inner products between w and vectors in L
   * 3) return the top k senses among all those found
 
 # 6 The mathematical explanation
 
-* Since w_1 and w_2 are unrelated, 
+* Since w_1 and w_2 are unrelated,
   their vectors v_1 and v_2 will be considered orthogonal
 
 # 7 Conclusions p9

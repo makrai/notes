@@ -21,7 +21,7 @@ Agents, patients
 Deep cases
 More complex notation
 
-# 2 
+# 2
 
 ## 2.1 Lexical categories and subcategories
 
@@ -30,16 +30,16 @@ in 3.2 and 6.1,
 
 ## 2.4 Linking
 
-* more abstract, notional binaries 
+* more abstract, notional binaries
   e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
-  * defer MARK to 2.5, and devote the entire 
-  * Chapter 4 to our negation operator LACK. 
+  * defer MARK to 2.5, and devote the entire
+  * Chapter 4 to our negation operator LACK.
 * We begin with purposives: FOR, INSTRUMENT
 * CAUSE
 * `PART_OF`, HAS
-* We also explained how 
+* We also explained how
   the mainstays of case/valency systems, such as datives, locatives, and ins,
-  can be reconstructed without assuming link types beyond ‘1’ and ‘2’, 
+  can be reconstructed without assuming link types beyond ‘1’ and ‘2’,
   by taking these as relationals that typecast their arguments
 * we compare 4lang to UD 48
 * In earlier versions of 4lang, Makrai (2014) used several thematic role-like
@@ -51,8 +51,8 @@ in 3.2 and 6.1,
 * Since our goals are remarkably close, and our motivations are nearly
   identical, readers of Jackendoff and Audring (2020) may find a direct
   comparison between the two formalisms helpful
-  * Turning to the semantic component, 
-    we avoid the system of linking and coindexation that J&A 4.13.1 rely on 
+  * Turning to the semantic component,
+    we avoid the system of linking and coindexation that J&A 4.13.1 rely on
     (the equalizers introduced in 3.3 will to some extent make up for this loss)
 
 # 3 Temporal and spatial semantics

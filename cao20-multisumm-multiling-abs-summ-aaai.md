@@ -6,7 +6,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 
 # Abstract
 
-* multi-lingual text summarization: input in multiple languages and 
+* multi-lingual text summarization: input in multiple languages and
   summaries in the corresponding languages with a single model
 * we present MultiSumm, a novel multi-lingual model for abstractive summarizaton
   * training: two stages
@@ -29,7 +29,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
     * Chinese (Wang+ 2018; Wei+ 2019)
 * building a unified multi-lingual model
   to leverage existing large-scale monolingual summarization corpora in rich-rsc
-* Previous work on multi-lingual text summarization mainly focus on 
+* Previous work on multi-lingual text summarization mainly focus on
   * directly mixing training data from different languages, and training with a
     unified model that does not include modules handling multilingualism
     (Litvak, Last, and Friedman 2010; Vanetik and Litvak 2015; Litvak+ 2016;
@@ -67,7 +67,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
   * experiments on summarization datasets in seven languages
     * our model outperforms the multi-lingual baseline model and achieves
       comparable or better performance than monolingual models
-  * new summarization dataset for Bosnian and Croatian, consisting of 
+  * new summarization dataset for Bosnian and Croatian, consisting of
     177,406 samples and 204,748 samples, respectively
 
 # Experiments 5
@@ -92,8 +92,8 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 * We consider the following three competitive models for comparison
   * Individual. For each language, we train a monolingual transformer model
   * Individual + pretraining. We train an individual transformer model for summ
-    on each language, while 
-    * the encoder and decoder are first pretrained 
+    on each language, while
+    * the encoder and decoder are first pretrained
       (i.e., using language model training and auto-encoder training)
       on monolingual texts in the corresponding language
   * Multi-baseline. The multi-baseline simply trains summarization generation
@@ -104,7 +104,7 @@ Codes will come up soon! https://github.com/ycao1996/Multi-Lingual-Summarization
 ## Multi-Lingual Summarization Results
 
 * the multi-lingual baseline ?< individual model
-  * worse on rich-resource languages (En, Es, Fr, and Zh), with an 
+  * worse on rich-resource languages (En, Es, Fr, and Zh), with an
     average drop of about 1-2 points in Rouge-l
   * better on languages with small training data, which may benefit from the
     shared BPE tokens across languages

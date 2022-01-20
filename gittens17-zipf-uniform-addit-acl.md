@@ -36,14 +36,14 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
   * word vectors learned by Skip-Gram are information-theoretically optimal
   * the context word c in the Skip-Gram model =
     discourse vector in the PMI model of Arora+ (2016)
-  * exact non-linear composition operator 
+  * exact non-linear composition operator
     when no assumptions are made on the context word
   * When an analogous assumption to that of Arora+ (2016) is made, that
     the context words are uniformly distributed, we prove that the
     composition operator reduces to vector addition
-  * the learned context embeddings and target embeddings 
+  * the learned context embeddings and target embeddings
     preserve the maximal amount of mutual information between any pair of random
-    variables X and Y consistent with the observed co-occurence matrix 
+    variables X and Y consistent with the observed co-occurence matrix
     (in a min-max sense, since there are many ways of coupling X and Y, each of
     which may have different amounts of mutual information)
 
@@ -52,9 +52,9 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
 * Minimizing the angle has been empirically successful at capturing composition
   in multiple loglinear word models
 * explanation:
-  * recall that each word c is characterized by 
+  * recall that each word c is characterized by
     a categorical distribution over all other words w, as stated in (1)
-  * peaks of this categorical distribution are 
+  * peaks of this categorical distribution are
     the words with which c co-occurs most often
 
 # 3 Skip-Gram learns a Sufficient Dimensionality Reduction Model
@@ -69,6 +69,6 @@ Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney
     to obtain the parameters of an SDR model
   * the original algorithm of (Globerson and Tishby, 2003) for learning SDR
     embeddings is expensive, as it involves information projections
-  * applications in network science (Grover and Leskovec, 2016), 
+  * applications in network science (Grover and Leskovec, 2016),
     proteinomics (Asgari and Mofrad, 2015), and other fields
 * Lemma 2: Skip-Gram optimizes a KL Divergence

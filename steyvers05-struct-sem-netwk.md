@@ -88,7 +88,7 @@ M Steyvers, JB Tenenbaum Cognitive science, 2005 Wiley Online Library
   * diameter D, the
     * maximum of distances over all pairs of nodes 6
     * sample for computing L and D
-      * For the word associative networks, 
+      * For the word associative networks,
         on the basis of the large (strongly) connected component
       * For the much larger WordNet and Roget’s thesaurus, based on a
         sample of 10,000 words from the large connected component

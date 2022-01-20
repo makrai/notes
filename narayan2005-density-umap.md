@@ -159,7 +159,7 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
       Intl Symposium on Graph Drawing, 183–196 (Springer, Heidelberg, 2000)
 * further research for analyzing single-cell datasets
   * local density measures for noise reduction, as
-  * they often reveal fine-grain structure within a cell type, 
+  * they often reveal fine-grain structure within a cell type,
     * typically a dense “core” surrounded by a sparse cloud of cells with more
       divergent expression patterns
     * By focusing on only this core, one could obtain crisper canonical reprs
@@ -178,20 +178,20 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 
 * dense region if its nearest neighbors are very close to it, and in a sparse
 * we use average distance to nearest neighbors as a measure of density
-* we require two components: 
-  * a pairwise distance function d(x i , x j ), and 
+* we require two components:
+  * a pairwise distance function d(x i , x j ), and
   * a probability distribution ρ j|i that weighs each x j based on its distance
-    from x i , with faraway points having lower weights. We define the 
+    from x i , with faraway points having lower weights. We define the
 * local radius `R_o` at an original x i , denoted R ρ (x i ),
   as the expectation of the distance function over x j with respect to ρ j|i ,
-  thus capturing the average distance from x i to nearby points: 
+  thus capturing the average distance from x i to nearby points:
 * In the following, we let the distance function be the squared Euclidean dist,
 * In den-SNE and densMAP, we take advantage of the probability distributions P
   t-SNE and P UMAP which already capture local relationships; for the local
-* this representation of 
+* this representation of
   * density (inversely- related) scales with the variance of a range of
-    data-generating distributions and 
-    increases when the length-scale term σ i increases (Supplementary Note 3).  
+    data-generating distributions and
+    increases when the length-scale term σ i increases (Supplementary Note 3).
 * local radius `R_e` in the embedding. Let y i be the embedding coordinates of
   * We need a distribution analogous to P for calculating the expected distance
   * adaptive length-scales like P would present a major hurdle for optimization

@@ -106,7 +106,7 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 * ConvS2S models underperform RNNS2S and Transformer on the subject-verb agreem
 * question whether these results can be attributed to a misconfiguration or
   implementation difference in Sockeye, we also obtained results with a
-  pre-trained model released by (Gehring+ 2017) and trained with Fairseq 6 
+  pre-trained model released by (Gehring+ 2017) and trained with Fairseq 6
 * Fairseq model has 15 layers, which is much deeper than the Sockeye models
   * higher BLEU score on newstest2014, and higher accuracy on long-range deps,
     than the 8-layer Sockeye models that we trained

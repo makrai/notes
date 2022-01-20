@@ -231,7 +231,7 @@ WinoWhy and all codes: https://github.com/HKUST-KnowComp/WinoWhy
 * downstream tasks like question answering (Lin+ 2019),
   dialogue system (Zhou+ 2018), reading comprehension (Wang+ 2018), and
   pronoun coreference resolution (Levesque+ 2012)
-* solve WSC questions in an unsupervised way by leveraging either 
+* solve WSC questions in an unsupervised way by leveraging either
   * search engines (Emami+ 2018),
   * linguistic knowledge (Zhang+ 2019, 2020), or
   * language representation models (Kocijan+ 2019)

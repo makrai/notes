@@ -11,7 +11,7 @@ Journal of Sem 1993
   that allows for a cogent expression of
   anaphoric relations and presuppositions
   * in particular on the semantics of the focusing particle _only_ and
-    discuss several phenomena that have gone unnoticed or unsolved so far. 
+    discuss several phenomena that have gone unnoticed or unsolved so far.
     eg introduction of discourse markers in the scope of only and alternatives
     that are anaphorically related to quantifiers. In particular, 1 will show
   * the proposed representation format can handle sentences with
@@ -41,7 +41,7 @@ Journal of Sem 1993
   * capitalization symbolizes phonological stress.
 In both cases the phrase structure is arguably the same; only form a
 constituent with the verb phrase hissed Mary. However, the meaning of the
-sentences, and hence die meanings of the complex verb phrases containing 
+sentences, and hence die meanings of the complex verb phrases containing
 only, clearly differ: (a) has a reading (i) saying that the only person John kissed
 was Mary, and a reading (ii) saying that the only thing John did was kiss Mary.
 (b), in contrast, has a reading saying that the only thing John did to Mary was

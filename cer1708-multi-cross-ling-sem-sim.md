@@ -1,4 +1,4 @@
-SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation 
+SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation
 Daniel Cer, Mona Diab, Eneko Agirre, Iñigo Lopez-Gazpio, Lucia Specia
 SemEval 2017
 

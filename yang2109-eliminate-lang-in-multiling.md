@@ -10,9 +10,9 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   from semantic related components in multilingual representations pre-trained
   * only uses simple linear operations,
     e.g. matrix factorization and orthogonal projection
-* for weak-alignment multilingual systems, the 
+* for weak-alignment multilingual systems, the
   principal components of semantic spaces primarily encodes language id
-* We evaluate the LIR on a cross-lingual 
+* We evaluate the LIR on a cross-lingual
   * question answer retrieval task (LAReQA)
     * almost 100% relative improvement in MAP for weak-alignment models
   * Amazon Reviews and XEVAL dataset, with the observation that
@@ -84,9 +84,9 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 
 * our sentences for extracting principle components are sampled from Wiki-40B
   (Guo+ 2020)
-  * 10,000 sentences per language. We notice 
+  * 10,000 sentences per language. We notice
   * performance initially increases as more sentences are used but then is
-    almost unchanged after n > 10, 000. We tried 
+    almost unchanged after n > 10, 000. We tried
   * different samplings of {t iL } and text resources other than Wiki-40B, e.g.,
     Tatoeba (Artetxe and Schwenk, 2019); minimal differences in performance
 

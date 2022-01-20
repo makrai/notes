@@ -1,5 +1,5 @@
 An ML for Sentiment Analysis for Italian Reviews in Healthcare
-Luca Bacco, Andrea Cimino , Luca Paulon , Mario Merone , Felice Dell’Orletta 
+Luca Bacco, Andrea Cimino , Luca Paulon , Mario Merone , Felice Dell’Orletta
 Endocrinology, 2020
 
 # Abstract

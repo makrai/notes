@@ -50,7 +50,7 @@ John M. Anderson
     * define what characterizes the category of ‘case’ itself substantively,
     * the distribution of the category and its members, the ‘cases’
     * a link to the chapter that follows
-* The first two approaches attempt to 
+* The first two approaches attempt to
   complement the semantic definitions of ‘cases’ with distributional
 
 ## 5.1 Distributional criteria for particular ‘cases’ 92

@@ -29,10 +29,10 @@ https://tfhub.dev/google/LaBSE
   * trained on translation pairs
     * directly (Artetxe and Schwenk, 2019b; Guo+ 2018; Yang+ 2019a), or
       * require large amounts of parallel training data
-    * combined with monolingual input-response prediction 
+    * combined with monolingual input-response prediction
       (Chidambaram+ 2019; Yang+ 2019b)
 * multilingual universal sentence encoder (m-USE) is trained on multiple langs
-  * often perform worse than 
+  * often perform worse than
     similar models only targeting a single language pair (Yang+ 2019a)
 * multilingual BERT has demonstrated surprisingly good cross-lingual performance
   without training on parallel translation data (K+ 2020)
@@ -41,17 +41,17 @@ https://tfhub.dev/google/LaBSE
     MLM and translation language model (TLM, Conneau and Lample, 2019)
     pretrained encoders
   * dual-encoder framework which consist of paired encoders feeding a
-    combination function.  Such models are 
+    combination function.  Such models are
     * well suited for learning effective cross-lingual sentence embeddings
       using an additive margin softmax loss (Yang+ 2019a)
-    * Source and target sentences are encoded separately using a 
+    * Source and target sentences are encoded separately using a
       shared BERT based encoder (Devlin+ 2019)
     * The final layer [CLS] representations are taken as the sentence
       embeddings for each input
     * The similarity between the source and target sentences is scored using
       cosine over the sentence embeddings produced by the BERT encoders
-* outperforms the previous SOTA, which are mostly bilingual models, 
-  on large bitext mining tasks e.g. 
+* outperforms the previous SOTA, which are mostly bilingual models,
+  on large bitext mining tasks e.g.
   the United Nations corpus (Ziemski+ 2016) and BUCC (Zweigenbaum+ 2018),
   containing pools with 10Ms and 100,000s of translation candidates, resp
 * Both tasks cover fr, de, es, ru, and zh, languages all having plenty of
@@ -67,10 +67,10 @@ https://tfhub.dev/google/LaBSE
     * 109 training languages cover language families containing the unseen langs
     * as long as the text can be segment to the wordpiece tokens reasonably
 * contributions
-  * A combination of pre-training and finetuning strategies 
+  * A combination of pre-training and finetuning strategies
     * boost the performance of a dual encoder translation ranking model to the
       SOTA performance on bi-text mining;
-  * A single massively multilingual model spanning 109 languages 
+  * A single massively multilingual model spanning 109 languages
     * cross-lingual transfer even to zeroshot cases
   * A thorough analysis and ablation study to understand the impact of
     data quality, data quantity, pre-training and negative sampling strategies

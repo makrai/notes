@@ -1,4 +1,4 @@
-The Word Analogy Testing Caveat 
+The Word Analogy Testing Caveat
 Natalie Schluter
 NAACL 2018 New Orleans, Louisiana
 

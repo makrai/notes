@@ -6,16 +6,16 @@ Anna Gladkova, Satoshi Matsuoka, Aleksandr Drozd
 # Newer papers
 
 * Inducing relational knowledge from BERT
-  Z Bouraoui, J Camacho-Collados… - 
+  Z Bouraoui, J Camacho-Collados… -
   AAAI 2020
 
 ## Analogy datasets in other languages :
 
 * https://aclanthology.org/L18-1320.pdf
-  MGAD: Multilingual Generation of Analogy Datasets 
+  MGAD: Multilingual Generation of Analogy Datasets
   Mostafa Abdou, Artur Kulmizev, Vinit Ravishankar
 * https://aclanthology.org/2020.lrec-1.501.pdf
-  Multilingual Culture-Independent Word Analogy Datasets 
+  Multilingual Culture-Independent Word Analogy Datasets
   Matej Ulčar, Kristiina Vaik, J Lindström, M Dailidėnaitė, M Robnik-Šikonja
 
 # Abstract

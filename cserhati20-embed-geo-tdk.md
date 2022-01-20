@@ -246,7 +246,7 @@ tdk 2020
   * átlagos átfedés arányát minden lehetséges modell-párra;
   * Ha tehát egy algoritmust önmagával összehasonlítva sem kapunk nagy számot,
     az azt jelenti, hogy a hiperparaméterek változtatása megváltoztatja a
-    szavak szomszédságát az adott hasonlóság szerint 
+    szavak szomszédságát az adott hasonlóság szerint
     * ez az eredmények szerint a GloVe-ra a legjellemzőbb. (...)
   * a szomszédok halmazának mérete nincs nagy hatással az eredményekre
   * A legstabilabb hasonlósági mérték a koszinusz

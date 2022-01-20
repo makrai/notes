@@ -11,7 +11,7 @@ ICLR 2021
   * inconsistent benchmarking on a wide spectrum of tasks and datasets
 * This paper proposes a systematic and unified benchmark, Long Range Arena,
   * ranging from 1K to 16K tokens
-  * wide range of data types and 
+  * wide range of data types and
     modalities such as text, natural, synthetic images, and mathematical exprs
     * requiring similarity, structural, and visual-spatial reasoning
 * We systematically evaluate ten well-established long-range Transformer models
@@ -29,11 +29,11 @@ ICLR 2021
   * no consensus on what makes an acceptable test bed for benchmarking
     * large diversity in the types of tasks adopted
   * the benchmarks used for evaluation are often arbitrarily chosen
-    * little consideration to whether the task is suitable 
+    * little consideration to whether the task is suitable
   * many papers tend to conflate the effectiveness of the inductive bias with
     the benefits of pretraining (Ainslie+ 2020; Zaheer+ 2020; Wang+ 2020)
-  * Pretraining itself is a computationally expensive endeavour and 
-    de-coupling inductive bias research from pretraining would 
+  * Pretraining itself is a computationally expensive endeavour and
+    de-coupling inductive bias research from pretraining would
     make xformer research more accessible
 * we propose a new benchmark, Long-Range Arena (LRA)
   * both synthetic probing tasks and real-world tasks
@@ -77,7 +77,7 @@ ICLR 2021
 ## 2.2.1 LONG LIST OPS
 
 * hierarchically structured data in a long-context scenario
-* a longer variation of the standard ListOps task (Nangia & Bowman, 2018), 
+* a longer variation of the standard ListOps task (Nangia & Bowman, 2018),
   * ListOps was designed to investigate the parsing ability of neural models
 * operators MAX, MEAN, MEDIAN, and SUM MOD that are enclosed by delimiters
   (brackets)
@@ -111,14 +111,14 @@ ICLR 2021
 ## 2.2.3 BYTE LEVEL DOCUMENT RETRIEVAL
 
 * compressed representations that are useful for matching and retrieval
-* Learning the similarity score between two vectors is a common problem 
+* Learning the similarity score between two vectors is a common problem
   * wide array of applications (Guo+ 2016)
 * Hence, this task is mainly about modeling a similarity score between two docs
   * ‘two tower setup’: compressed representations are concatenated and passed
     into a linear classifier
 * we deliberately prevent models from using cross attention
   * test of how well models are able to compress long sequences
-* We use the ACL Anthology Network (AAN; Radev+ 2013) dataset, 
+* We use the ACL Anthology Network (AAN; Radev+ 2013) dataset,
   * identifies if two papers have a citation link,
   * a common setup in long-form document matching (Jiang+ 2019; Yang+ 2020)
   * we use a byte/character level setup, which challenges the model to
@@ -161,7 +161,7 @@ ICLR 2021
 ## 2.3 REQUIRED ATTENTION SPAN OF LRA TASKS
 
 * the required attention span of an attention module is computed as
-  the mean distance between the query token and the attended tokens, 
+  the mean distance between the query token and the attended tokens,
   scaled by attention weights
 * we compute the mean required attention span over all attention modules in our
   best vanilla Transformer model for each task, averaged over 1K random samples
@@ -181,7 +181,7 @@ ICLR 2021
 
 * integrated across all five tasks, the best is the BigBird model
   * not extremely good on any individual task compared to other models
-  * consistently good performance across all tasks. 
+  * consistently good performance across all tasks.
   * Performers and Linear Transformers have strong performance on some tasks but
     their average is lowered by the ListOps task
 * Figure 3 shows the trade-off between qualitative performance (y-axis), model
@@ -199,7 +199,7 @@ ICLR 2021
 * combinations of fixed patterns (Child+ 19; Ho+ 19; Beltagy+ 20; Zaheer+ 20)
   that learn sparse attention by considering combinations of fixed strides or
   local windows
-* learn these patterns (Kitaev+ 2020; Roy+ 2020) 
+* learn these patterns (Kitaev+ 2020; Roy+ 2020)
   using LSH hashing, clustering (Roy+ 2020) and/or sorting (Tay+ 2020b)
 * kernels (Katharopoulos+ 2020; Choromanski+ 2020) or
 * low-rank approximations (Wang+ 2020) which either

@@ -1,5 +1,5 @@
 Eva Ceulemans, and Henk A. L. Kiers
-Selecting among three-mode principal component models 
+Selecting among three-mode principal component models
   of different types and complexities: A numerical convex hull based method
 British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
 
@@ -35,7 +35,7 @@ British Journal of Mathematical and Statistical Psychology (2006), 59, 133–150
     * DIFFIT method for solving the T3 model selection problem
       (Kiers & der Kinderen, 2003; Timmerman & Kiers, 2000)
 * A more systematic approach may be the visual inspection based method
-  * proposed by Kroonenberg and Van der Voort (1987), 
+  * proposed by Kroonenberg and Van der Voort (1987),
     Kroonenberg and Oort (2003), and Murakami and Kroonenberg (2003)
   * plots with a measure of the
     * badness of fit (e.g. residual sum of squares) on the y-axis and a

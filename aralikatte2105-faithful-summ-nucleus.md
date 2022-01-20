@@ -48,7 +48,7 @@ ACL 2021 arXiv:2105.11921 [cs.CL]
       train a scorer which serves as an efficient proxy for expensive human
       evaluations. We call this metric BERTFaithful
   * FAMe enables diverse summaries
-    * FAMe, by design, supports Focus Sampling – a technique that is 
+    * FAMe, by design, supports Focus Sampling – a technique that is
       more effective in sampling topically relevant tokens to generate diverse,
       yet topically consistent and faithful outputs, than other sampling methds
       (Fan+ 2018; Holtzman+ 2020)
@@ -101,8 +101,8 @@ ACL 2021 arXiv:2105.11921 [cs.CL]
 
 ## Diverse Generation Models, human-like outputs
 
-* Vijayakumar+ (2018) and Kulikov+ (2019) 
-  diversify beam search, using a task-specific scoring function, or 
+* Vijayakumar+ (2018) and Kulikov+ (2019)
+  diversify beam search, using a task-specific scoring function, or
   constrain beam hypotheses to be sufficiently different
 * avoid text degeneration by truncating the unreliable tail of the probability
   distribution at each decoding step, either by sampling from

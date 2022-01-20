@@ -9,9 +9,9 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 * new commonsense knowledge graphs (CSKG) has been central to these advances as
 * we posit that manually constructed CSKGs will never achieve the coverage
   necessary to be applicable in all situations encountered by NLP agents.
-  * new evaluation framework for testing the utility of KGs based on 
+  * new evaluation framework for testing the utility of KGs based on
     how effectively implicit knowledge representations can be learned from them
-  * ATOMIC 2020, a new CSKG of general-purpose commonsense knowledge 
+  * ATOMIC 2020, a new CSKG of general-purpose commonsense knowledge
     * containing knowledge that is not readily available in pretrained LMs. We
 * evaluate its properties in comparison with other leading CSKGs, performing
   the first large-scale pairwise study of commonsense knowledge resources.
@@ -20,18 +20,18 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 * human evaluation, we show that
   the few-shot performance of GPT-3 (175B parameters), while impressive,
   remains ~12 absolute points lower than a BART-based knowledge model trained
-  on ATOMIC 2020 despite using over 430x fewer parameters. 
+  on ATOMIC 2020 despite using over 430x fewer parameters.
 
 # 1 Intro
 
 * large-scale language models (Radford+ 2018; Devlin+ 2019; Brown+ 2020)
-  trained on extreme-scale data have been shown to 
+  trained on extreme-scale data have been shown to
   effectively adapt to diverse downstream tasks, achieving signif (Wang+ 2019)
   * as these models have grown larger (and trained on larger amounts of data),
     their benchmark performance has continued to improve (Raffel+ 2019) despite
     limited conceptual improvements, leaving
     open questions regarding the source of these remarkable generalization
-* many of these performance gains could be a result of 
+* many of these performance gains could be a result of
   LM memorizing facts in their parameters during training (Roberts+ 2020) that
 * language models as knowledge bases has emerged (Petroni+ 2019).  In this
   * language models are prompted with natural language prefixes or questions,
@@ -44,7 +44,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   prioritize ontological relations and whose examples resemble language-like
   assertions (e.g., mango IsA fruit). 2 Consequently, the types of knowledge
   that can be directly accessed through the language model’s interface remains
-  limited.  
+  limited.
 * training language models on knowledge graph tuples leads them to learn to
   express their implicit knowledge directly (Bosselut+  2019), allowing them to
   provide commonsense knowledge on-demand. These adapted knowledge models have
@@ -82,7 +82,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   over commonsense knowledge to make predictions (Lin+ 2019; Feng+  2020).  In
 * we evaluate three existing knowledge graphs, C ON CEPT N ET , A TOMIC , and
   T RANS OMCS on their coverage 3 and precision relative to our new resource A
-  TOMIC 20 20 .  
+  TOMIC 20 20 .
 * The ConceptNet (v5.7) knowledge graph (Speer, Chin, and Havasi 2017)
   * 36 relations focusing mostly on
     * 90% taxonomic and lexical knowledge (e.g., RelatedTo, Synonym, IsA) and
@@ -100,7 +100,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
     maintain the car),
     including dynamic aspects of events such as causes and effects, if-then
     conditional statements, and mental states.  The A TOMIC dataset is
-  * collected and validated completely through crowdsourcing.  
+  * collected and validated completely through crowdsourcing.
 * The T RANS OMCS (Zhang+ 2020a) knowledge graph consists of
   * 18.48M tuples that were automatically converted from syntactic parses of
     sentences from various web sources including Wikipedia, Yelp, and Reddit.
@@ -120,7 +120,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   However, commonsense facts are often implied (Gordon and Van Durme 2013),
   and as will be seen in our studies (cf. §4),
   * SOTA neural models struggle to express implicit commonsense knowledge that
-    involves complex relationships.  3 
+    involves complex relationships.  3
 * Bosselut+ (2019) take the best of both worlds between commonsense knowledge
   graphs and pretrained language models. The
   * commonsense transformer, or COMET, adapts pretrained neural language models
@@ -128,7 +128,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
     head/source phrase and a relation (e.g., take a nap Causes) and generates
     the tail/target phrase (e.g., have energy). Bosselut+ (2019) show that
     COMET trained on the ConceptNet and A TOMIC knowledge graphs is able to
-    adapt to generate novel (and valid) commonsense knowledge tuples.  
+    adapt to generate novel (and valid) commonsense knowledge tuples.
   * produce commonsense knowledge on-demand for any head entity that can be
     expressed through language. This flexibility allows them to be used
   * applied to new, previously unexplored tasks, such as
@@ -147,7 +147,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   * 7 physical-entity commonsense relations, and
   * 7 event-centered commonsense relations concerning
     situations surrounding a given event of interest. The full inventory of A
-    TOMIC 20 20 relations is listed in Table 1.  
+    TOMIC 20 20 relations is listed in Table 1.
   * by far, the two largest new relations are ObjectUse and HinderedBy. For
 * ObjectUse e.g. “popcorn bucket” that may be used for “holding popocorn”
   * 130K everyday object-use pairs
@@ -180,7 +180,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 # 4 Comparison of Atomic^20_20 to other prominent CSKBs
 
 * our new symbolic knowledge graph is more accurate than any current CSKB (see
-  
+
 # 5 our new neural knowledge model COMET-Atomic^20_20
 
 * successfully transfers Atomic^20_20 ’s declarative knowledge to beat GPT-3,

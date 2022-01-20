@@ -70,7 +70,7 @@ arXiv:1804.07835 cs.CL
 
 * sentence encoders or contexutalized word representations
   (Kiros+ 2015; Arora+ 2016; Wieting+ 2015b; Wieting and Gimpel, 2017a;
-  Conneau+ 2017; Pagliardini+ 2017; Subramanian+ 2018; Cer+ 2018; 
+  Conneau+ 2017; Pagliardini+ 2017; Subramanian+ 2018; Cer+ 2018;
   Logeswaran and Lee, 2018; Peters+ 2018; Devlin+ 2018)
   * impressive performance on the semantic similarity task
   * pre-trained on large corpora, usually obtained with minimal supervision
@@ -98,7 +98,7 @@ arXiv:1804.07835 cs.CL
 ## 3.1 Motivation
 
 * semantic similarity objective boosts the performance of domain adaptation
-  of general-purpose sentence embeddings, 
+  of general-purpose sentence embeddings,
   with little cost of modifying the model and the benefit of faster fine-tuning
 
 ## 3.2.  Definition
@@ -156,7 +156,7 @@ arXiv:1804.07835 cs.CL
 * As discussed in Related Work, there are typically three transfer settings:
   * The implementation details are as follows
 * Unsupervised evaluation: the pre-trained sentence encoder is directly applied
-* Feature transfer: 
+* Feature transfer:
   * we use the code from SentEval 4 which follows Tai+ (2015)
   * sentence embeddings as fixed input features to a
     classifier consisting of a dense layer and a softmax layer

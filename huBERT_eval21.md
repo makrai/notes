@@ -8,7 +8,7 @@ MSYNY 2021
   * Shi+ (2016): syntactic knowledge of neural machine translation models.
   * Belinkov+ (2017) probed NMT models for morphology. This work was followed by
   * similar probing papers
-    (Belinkov+ 2017; Adi+ 2017; Hewitt and Manning, 2019; Liu+ 2019a; 
+    (Belinkov+ 2017; Adi+ 2017; Hewitt and Manning, 2019; Liu+ 2019a;
     Tenney+ 2019b; Warstadt+ 2019; Conneau+ 2018a; Hupkes and Zuidema, 2018)
     * Warstadt Cao Grosu Peng Blix Nie Alsop Bordia Liu Parrish Wang Phang et al
       Investigating BERT’s knowledge of language: Five anal methods with NPIs

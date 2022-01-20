@@ -74,12 +74,12 @@ https://github.com/esdurmus/Wikilingua
 
 ## 4.2 Direct Cross-lingual Summarization
 
-* method for direct crosslingual abstractive summarization, 
+* method for direct crosslingual abstractive summarization,
   leveraging synthetic data and machine translation as a pre-training step
 
 # 5 Results and Analysis
 
-* our method outperforms existing baselines, 
+* our method outperforms existing baselines,
   without relying on translation at inference time
 
 # 6 Related Work
@@ -87,7 +87,7 @@ https://github.com/esdurmus/Wikilingua
 ## Abstractive Summarization in English
 
 * monolingual summarization in English (Gehrmann+ 18; Song+ 20; Narayan+ 18)
-* Rush+ (2015) proposes the first neural abstractive summarization model 
+* Rush+ (2015) proposes the first neural abstractive summarization model
   * an attention-based CNN encoder and a feed-forward decoder
 * Chopra+ (2016) shows improvements using a RNN for the decoder
 * Nallapati+ (2016) shows further improvements by incorporating

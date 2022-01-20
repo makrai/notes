@@ -100,7 +100,7 @@ https://github.com/harsh19/SPINE
 
 ## Hyperparameter tuning
 
-* We tune our hyperparameters using the automatic metric 
+* We tune our hyperparameters using the automatic metric
   to evaluate topic coherence discussed in Lau+ (2014)
   * aims to maximize coherence among different dimensions
   * correlate positively with human evaluation

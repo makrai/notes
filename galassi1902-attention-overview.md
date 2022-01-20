@@ -332,11 +332,11 @@ happens with transfer learning. This setting has been adopted outside the
 * prior knowledge has also been exploited by Shen+ [169] to
   * enable the attention mechanism to learn the knowledge representation of
     entities for ranking question–answer pairs
-* in reasoning tasks that are also addressed with symbolic approaches, 
+* in reasoning tasks that are also addressed with symbolic approaches,
   such as textual entailment [99]
   * Hudson and Manning [170] recently proposed a new architecture for complex
     reasoning problems, with NLP usually being one of the target sub-tasks, as
-    in the case of visual question answering. In such an architecture, 
+    in the case of visual question answering. In such an architecture,
     * attention is used within several parts of the model, for example, over
       question words or to capture long-range dependences with self-attention
 * introduce constraints in the form of logical statements within neural networks

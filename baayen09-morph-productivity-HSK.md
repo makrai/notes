@@ -194,7 +194,7 @@ lexical, sublexical, and supralexical probabilities
     * more inherent inflection (tense and aspect marking, for instance)
       tends to be realized closer to the stem or root than
       more contextual inflection (person and number marking, for instance)
-    * more (formally and semantically) predictable formatives are 
+    * more (formally and semantically) predictable formatives are
       peripheral to the less predictable and more fusional exponents,
       just as in derivation the less productive and often semantically less
       predictable suffixes are closer to the stem

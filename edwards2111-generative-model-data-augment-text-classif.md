@@ -80,25 +80,25 @@ Cite as: 	arXiv:2111.09064 [cs.CL]
 
 # Data Augmentation: Related Work
 
-* we describe 
+* we describe
   * standard text augmentation methods which we use as baselines. We also
   * recent DA methods based on text generation models.
 
 ## Text Generation (TG). Recent language models such as GPT-2 (Radford+ 2019)
 
 * GPT-2 was trained with a causal language modeling (CLM) objective which makes
-  * suitable for predicting the next token in a sequence.  
+  * suitable for predicting the next token in a sequence.
   * used successfully in text generation tasks such as
-    * summarising (Xiao+ 2020; Kieuvongngam+ 2020; Alambo+ 2020) and 
+    * summarising (Xiao+ 2020; Kieuvongngam+ 2020; Alambo+ 2020) and
     * question answering (Liu & Huang, 2019; Baheti+ 2020; Klein & Nabi, 2019).
-* text generation techniques for DA for text classification 
+* text generation techniques for DA for text classification
   * focused on the creation of label-preservation techniques for the generated
-    synthetic data samples and comparing different TG techniques 
-    (Anaby-Tavor+ 2020; Wang and Lillis, 2019; Zhang+ 2020; Kumar+ 2020) 
-  * limited in scale and solutions for improving quality of generated data.  
+    synthetic data samples and comparing different TG techniques
+    (Anaby-Tavor+ 2020; Wang and Lillis, 2019; Zhang+ 2020; Kumar+ 2020)
+  * limited in scale and solutions for improving quality of generated data.
 * no study on the importance of fine-tuning text generation models to ensure
-  label preservation.  
-* The most similar study to ours is probably that of Yang+ (2020), 
+  label preservation.
+* The most similar study to ours is probably that of Yang+ (2020),
   * in the context of commonsense reasoning. They proposed an approach based on
   * influence functions and heuristics for selecting the most diverse and
     informative artificial samples from an already-generated artificial dataset
@@ -107,7 +107,7 @@ Cite as: 	arXiv:2111.09064 [cs.CL]
 
 # 3 Methodology
 
-* Our DA methodology consists of three main steps. In the first step, 
+* Our DA methodology consists of three main steps. In the first step,
   * Seed Selection, we select samples (i.e., seeds) from the original labeled
     data based on four different strategies (Section 3.1)
   * Text Generation, we generate additional artificial training data using a

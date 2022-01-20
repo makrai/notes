@@ -117,9 +117,9 @@ https://github.com/ibalazevic/TuckER
   * Factor matrices A, B and C, when orthogonal, can be thought of as the
     principal components in each mode
   * Elements of the core tensor Z show the level of interaction
-  * not unique, i.e. we can transform Z without affecting the fit 
+  * not unique, i.e. we can transform Z without affecting the fit
     if we apply the inverse of that transformation to the factor matrices
-  * improved uniqueness (Kolda & Bader, 2009) by imposing e.g 
+  * improved uniqueness (Kolda & Bader, 2009) by imposing e.g
     sparsity, making its elements small or making the core “all-orthogonal”
 
 # 4. Tucker Decomposition for Link Prediction
@@ -142,7 +142,7 @@ https://github.com/ibalazevic/TuckER
     with all entities `e_o` ∈ E,
     * in contrast to 1-1 scoring, where individual triples (e s , r, `e_o` ) are
       trained one at a time
-    * local-closed world assumption (Nickel+ 2016) i.e. we include 
+    * local-closed world assumption (Nickel+ 2016) i.e. we include
       * only the non-existing triples (e s , r, ·) and (·, r, `e_o` ) of the
         observed pairs `e_s` , r and r, `e_o` respectively as negative samples
       * and all observed triples as positive samples
@@ -158,7 +158,7 @@ https://github.com/ibalazevic/TuckER
     γ representing the number of true facts
 * other models are not fully expressive:
   * DistMult, because it cannot model asymmetric relations
-  * transitive models such as TransE (Bordes+ 2013) 
+  * transitive models such as TransE (Bordes+ 2013)
     and its variants FTransE (Feng+ 2016) and STransE (Nguyen+ 2016)
 * TuckER : `d_e = n_e` and `d_r = n r`
 

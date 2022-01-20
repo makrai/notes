@@ -69,7 +69,7 @@ Draft of December 29, 2021.
   * byte-pair encoding (Sennrich+ 2016),
   * unigram language modeling (Kudo, 2018), and
   * WordPiece (Schuster and Nakajima, 2012)
-  * SentencePiece library 
+  * SentencePiece library
     * implementations of the first two of the three (Kudo and Richardson, 2018)
 * In this section we introduce the simplest of the three, the byte-pair encoding
   or BPE algorithm (Sennrich+ 2016); see Fig. 2.13

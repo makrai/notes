@@ -7,8 +7,8 @@ Jiun-Hung Chen and Linda G. Shapiro
 
 We empirically compare ~ with PCA in terms of the reconstruction errors
   * two-dimensional principal component analysis
-  * parallel factor model and 
-  * Tucker decomposition 
+  * parallel factor model and
+  * Tucker decomposition
 
 # Intro
 

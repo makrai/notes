@@ -16,7 +16,7 @@ Beth Levin, Malka Rappaport Hovav
 * last chapter
   * semantic roles are not unanalyzable notions. We reviewed
   * two approaches to overcoming this problem: unpackaging the content of
-    * bundles of binary features and 
+    * bundles of binary features and
     * arguments to be assigned more than one semantic role
 * In this chapter, we survey two other widely adopted solutions. The first
   * Van Valin (1999); “generalized semantic roles.” On this approach
@@ -36,7 +36,7 @@ Beth Levin, Malka Rappaport Hovav
   * not simply more coarsely defined roles, but rather are
     defined in terms of relatively specific semantic criteria
   * termin
-    * Van Valin (1999); “generalized semantic roles,” 
+    * Van Valin (1999); “generalized semantic roles,”
     * Croft (1998) characterizes them as “super-roles.”
 * subject and object are different from other morphosyntactic exps of args
   * As discussed in section 1.6, the notions of
@@ -49,7 +49,7 @@ Beth Levin, Malka Rappaport Hovav
     associated with the first object in a double object construction. Her
     * based on parallels between the first object and
       the grammatical relations, subject and direct object (see section 1.6).
-* history for generalized semantic roles 
+* history for generalized semantic roles
   * seeds most likely sown in Dixon’s (1972, 1979, 1994) work on ergativity,
   * labels “A” and “O” to refer to the semantic classes of subjs/objs of tr Vs
     in a language like English with a nominative–accusative case system. Dixon
@@ -66,11 +66,11 @@ Beth Levin, Malka Rappaport Hovav
   terms of morphosyntactic realization, and there may be no semantic property
   common to the whole set of arguments.
   =: generalized semantic role label, allowing
-  rules of argument realization to make direct reference to just these 
+  rules of argument realization to make direct reference to just these
 * patient doesn't have to be so vague that covers all possible direct objects –
   * a “wastebasket” role.
 * In this section we review two approaches to generalized semantic roles. The
-  * Both approaches 
+  * Both approaches
     generalized semantic roles not to be defined by a set of jointly necessary
     and sufficient conditions, and both appeal to
     many of the same semantic ingredients in defining these roles, but,
@@ -137,7 +137,7 @@ Beth Levin, Malka Rappaport Hovav
       Proto-role entailment (Dowty 1991)). Thus, any given argument
   * there are pairs of subject NPs or object NPs with no shared proto-rol entail
   * prototypical – example of agt: Brutus assassinated Caesar.
-  * args agt/pat-like to a degrees ~ the number of Proto-role entailments 
+  * args agt/pat-like to a degrees ~ the number of Proto-role entailments
 * The existence of more and less central exemplars of a category is
   a defining characteristic of a prototype category (Rosch 1973).
 * A single NP may even have both Agent and Patient Proto-role entailments. For
@@ -145,7 +145,7 @@ Beth Levin, Malka Rappaport Hovav
     obj has sentience but undergoing a change of state (Dowty 1991).
 * an argument of a verb need not be associated with any of these entailments.
   * Although presumably every argument of a verb is associated with some
-    entailment or presupposition imposed by its verb, 
+    entailment or presupposition imposed by its verb,
     Dowty: no evidence that each such semantic restriction be associated with a
     recognized semantic role with generalizations concerning argument real
 * The proto-role approach to semantic roles is consistent with that
@@ -181,7 +181,7 @@ Beth Levin, Malka Rappaport Hovav
     (Gleitman 1965; Gleitman+ 1996; Lakoff and Peters 1969). To illustrate how
 * psych-verbs and partially symmetric interactive predicates.
   * discussed in section 1.2, psych-verbs fall into
-  * two classes: 
+  * two classes:
     * experiencer–subject fear verbs and the experiencer–object frighten verbs.
   * both types have an Agent Proto-role entailment associated with both their
     stimulus and their experi-encer arguments: the
@@ -248,8 +248,8 @@ Beth Levin, Malka Rappaport Hovav
     <= some of the Agent and Patient Proto-role entailments being
     grammaticalized in some languages. 3
 * Baker (1997)
-  takes advantage of the basic properties of proto-roles 
-  to handle variation in subject choice with a given verb. 
+  takes advantage of the basic properties of proto-roles
+  to handle variation in subject choice with a given verb.
   * eg inst cannot be subj, if there of there is agt
   * we discuss more extensively in section 6.2,
   * often an argument bearing a particular semantic role
@@ -291,7 +291,7 @@ Beth Levin, Malka Rappaport Hovav
 
 (5) The knife cut the cake. (Schlesinger 1995))
 
-* Arguments bearing the A-case are associated with one or more of 
+* Arguments bearing the A-case are associated with one or more of
   cause, control, and change
   * These features are reminiscent of entailments in Dowty’s Agent Proto-role
   * hE, the relationship between Dowty’s movement and Schlesinger’s change needs
@@ -328,7 +328,7 @@ Beth Levin, Malka Rappaport Hovav
     variety of ways – are input to argument selection
 * We now present ways in which Dowty’s theory has been extended to widen its
   scope and discuss some of its most serious limitations – limitations which
-  often reflect its very nature. 
+  often reflect its very nature.
   * further discussion; Croft (1998), Davis (2001), Davis and Koenig (2000),
     Koenig and Davis (2001), Newmeyer (2002), Primus (1999), Tenny (1992, 1994),
     Van Valin (1999).
@@ -357,11 +357,11 @@ Beth Levin, Malka Rappaport Hovav
     movement is an Agent Proto-role entailment only when it is not caused by
     another participant.
   * Schlesinger; “cause has more weight than change when these compete” (1995).
-    * proposes that “assignment to the A-case is determined by three factors: 
-      * the relative strength of the features; 
-      * their number; and 
+    * proposes that “assignment to the A-case is determined by three factors:
+      * the relative strength of the features;
+      * their number; and
       * their differential weights” (1995), while
-  * Dowty; “I also would not rule out the desirability of ‘weighting’ 
+  * Dowty; “I also would not rule out the desirability of ‘weighting’
   * Ackerman and Moore (2001), Davis (2001), and Davis and Koenig (2000)
     * primacy of the cause entailment.
 * When an agentive verb is causativized
@@ -375,14 +375,14 @@ Beth Levin, Malka Rappaport Hovav
 * Koenig and Davis (2001) suggest a ranking of certain Proto-Agent entailments
   * for all verbs that denote causal events, the only proto-agent entailment
     that we need to consider is whether the participant causally affects another
-    participant 
+    participant
   * Similarly, among non-causative verbs,
-    * sentience is sufficient to ensure mapping to subject 
+    * sentience is sufficient to ensure mapping to subject
     * Volitional involvement in the event is also sufficient to ensure mapping
-      to subject position in noncausative verbs. 
+      to subject position in noncausative verbs.
   * for all verbs for which being in motion counts as a proto-agent entailment,
     the NP denoting the moving object is mapped onto subject position.
-* the relative importance of the Patient Protorole entailments 
+* the relative importance of the Patient Protorole entailments
   * Jackendoff (1996b); the incremental theme Patient Proto-role entailment
     does not have a part to play
   * We defer a full discussion of this notion until the larger discussion of
@@ -397,7 +397,7 @@ Beth Levin, Malka Rappaport Hovav
 * the components of prototype concepts have been shown to be differentially
   ranked; see Murphy (2002) for recent discussion and references
 * what is the source of the ranking? if there is one
-  * organization to a lexical semantic representation 
+  * organization to a lexical semantic representation
   * grounded at least partially in a theory of event types.
 * Dowty’s approach suggests that all the semantic determinants of argument real
   derive from the lexical entailments which verbs impose on their arguments and
@@ -417,7 +417,7 @@ Beth Levin, Malka Rappaport Hovav
     * can be realized as the first object in a double object construction
       only if
       * animate, as in The factory sent the contractor the goods, or,
-      * at least, interpretable as a potential possessor, metonymically 
+      * at least, interpretable as a potential possessor, metonymically
   * possible to argue that there are two verbs send, each with a distinct
     realization of arguments and set of entailments on the goal.
     * widespread (see chapter 7)
@@ -425,7 +425,7 @@ Beth Levin, Malka Rappaport Hovav
         differences in lexical entailments
     * see B. Levin and Rappaport Hovav [2002] for arguments against the polysemy
   * some semantic determinants of argument realization are derived from the
-    properties of the fillers of argument positions (Evans 1997) 
+    properties of the fillers of argument positions (Evans 1997)
   * Ackerman and Moore (2001) argue that the proto-role entailments associated
     with a particular argument can influence
     not only its grammatical relation, but also
@@ -489,7 +489,7 @@ Beth Levin, Malka Rappaport Hovav
       * Patient Proto-role entailments can be reduced to her aspectual notion of
         measure (see section 4.2.1)
   * Proto-roles include entailments relevant to both causal and aspectual
-    * may explain why the proto-role approach has the attractive wide coverage 
+    * may explain why the proto-role approach has the attractive wide coverage
 * an important property of Dowty’s proto-roles which distinguishes them both
   from traditional semantic roles and from other types of generalized semantic
   roles
@@ -509,7 +509,7 @@ Beth Levin, Malka Rappaport Hovav
     * differs crucially both in assuming that the components are not jointly
       necessary and sufficient and components not binary and discrete, dividing
 
-### 3.1.2 Role and Reference Grammar (RRG) 65 
+### 3.1.2 Role and Reference Grammar (RRG) 65
 
 * Van Valin (1990, 1993b; Foley and Van Valin 1984; Van Valin and LaPolla 1997).
 
@@ -528,7 +528,7 @@ Beth Levin, Malka Rappaport Hovav
 
 1. prototype concepts in the psychological studies on human categorization by
    Rosch (1973; Rosch and Mervis 1975). The
-  * bringing prototype concepts into this area of linguistic description 
+  * bringing prototype concepts into this area of linguistic description
   * originated in Lakoff (1977). Lakoff
     * specifies properties of prototypical sentences with agent–patient verbs,
   * many of the prototypical entailments of agents and patients adopted by

@@ -12,7 +12,7 @@ https://github.com/awslabs/sockeye/ tree/master/contrib/sacrebleu
 # 1 Introduction
 
 * BLEU (Papineni+ 2002)
-  * relative language independence, ease of computation, and 
+  * relative language independence, ease of computation, and
     reasonable correlation with human judgments
   * has shepherded the field through a decade and a half (Graham+ 2014)
   * weaknesses (CallisonBurch+ (2006); Reiter (2018))

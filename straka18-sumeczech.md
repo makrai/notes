@@ -169,7 +169,7 @@ http://hdl.handle.net/11234/1-2615
       ated by the t2t method consist of 7.7 words on average
   * On the out-of-domain test set, the results of the t2t method are lower
     relative to the performance of other algorithms
-    * `first` baseline is 
+    * `first` baseline is
       * the highest for ROUGE RAW-1 and ROUGE RAW-2 metrics,
       * only slightly behind the best ROUGE RAW-L F-score, which was achieved
         by t2t

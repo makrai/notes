@@ -75,7 +75,7 @@ Draft of December 30, 2020
     interpretable independently; the satellite is less central and generally is
     only interpretable with respect to the nucleus
 * Some symmetric relations, however, hold between two nuclei
-* examples of RST coherence relations, with 
+* examples of RST coherence relations, with
   definitions adapted from the RST Treebank Manual (Carlson and Marcu, 2001)
   * Reason: The nucleus is an action carried out by an animate agent and the
     * [ NUC _Jane took a train from Paris to Istanbul._]
@@ -113,14 +113,14 @@ Draft of December 30, 2020
   * RST treebanks exist also for Spanish, German, Basque, Dutch and Brazilian Pt
     (Braud+ 2017)
 * in summarization or information extraction
-  * the nuclei of a text presumably express more important information 
+  * the nuclei of a text presumably express more important information
     than the satellites, which might be dropped in a summary
 
 ### Penn Discourse TreeBank (PDTB)
 
 * another model of coherence relations (Miltsakaki+ 04, Prasad+ 08, Prasad+ 14)
   * lexically grounded
-  * annotators were given a list of discourse connectives, words that signal 
+  * annotators were given a list of discourse connectives, words that signal
 * _because, although, when, since_, or _as a result_
     * where these words marked a coherence relation between two text spans, the
       connective and the spans were then annotated, as in Fig.  22.13, where the
@@ -410,7 +410,7 @@ Draft of December 30, 2020
       needs support) and
     * premises (the reasons given by the author to persuade the reader by
       supporting or attacking the claim or other premises), as well as the
-    * argumentative relations between them like SUPPORT and ATTACK 
+    * argumentative relations between them like SUPPORT and ATTACK
 * arguments tend to be much less local;
   than rhetorical structure and other kinds of coherence relations,
   * often a persuasive essay will have only a single main claim, with

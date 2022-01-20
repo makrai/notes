@@ -168,7 +168,7 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
     (Sprugnoli, 2020)
   * for sentiment analysis SENTIPOLC16 (Barbieri+ 2016)
 * English: Abdul-Mageed and Ungar (2017) proposes EmoNet, an English emotion
-  * collected using a keyword-based approach 
+  * collected using a keyword-based approach
     (e.g., tweets are retrieved using #happy as a marker for joy)
   * we approach the problem annotating manually and without distant supervision
   * EmoTxt (Calefato+ 2017) is an open-source toolkit for emotion prediction

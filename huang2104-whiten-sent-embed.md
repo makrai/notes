@@ -56,7 +56,7 @@ https://github.com/Jun-jie-Huang/WhiteningBERT
     * Ziyi Yang, Chenguang Zhu, and Weizhu Chen
       Parameter-free sentence embedding via orthogonal basis
       EMNLP/IJCNLP 2019
-    * Bin Wang and C.-C. Jay Kuo. . 
+    * Bin Wang and C.-C. Jay Kuo. .
       SBERT-WK: A sentence embedding method by dissecting bert-based word models
       2020 IEEE/ACM Transactions on Audio, Speech, and Language Processing
     * hE, these approaches need further training or additional features, which

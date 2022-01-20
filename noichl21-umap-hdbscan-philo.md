@@ -26,7 +26,7 @@ https://link.springer.com/article/10.1007/s11229-019-02390-8#
   * The standard technique that lies at the heart of this approach is
     bibliographic coupling, which tries to grasp the relation between two texts
     by assessing how many sources they have in common. It
-    * has been considered the best method for this purposes for a while 
+    * has been considered the best method for this purposes for a while
       (Boyack and Klavans 2010)
     * Recent evidence has called into question (Boyack and Klavans 2017), but
     * clearly remains among the best methods for the clustering of scientific
@@ -37,7 +37,7 @@ https://link.springer.com/article/10.1007/s11229-019-02390-8#
 ## Processing
 
 * all records were removed which shared less then three citations with any of
-  the other records in the dataset, a step which was necessary 
+  the other records in the dataset, a step which was necessary
   to ensure the connectedness of the manifold, which was to be estimated with
 * preliminary dimensionality-reduction has been shown to be beneficial to
   text-classification-tasks (Shafiei+ 2007; Underhill+ 2007),

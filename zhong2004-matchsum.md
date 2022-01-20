@@ -19,7 +19,7 @@ ACL 2020 arXiv:2004.08795 [cs.CL]
   * score and extract sentences (or smaller semantic unit (Xu+ 2019)) one by one
   * model the relationship between the sentences, and then select sentences
   * Cheng and Lapata (2016); Nallapati+ (2017)
-    * extractive summarization as a sequence labeling problem 
+    * extractive summarization as a sequence labeling problem
       * solved with an encoder-decoder framework
     * independent binary decisions for each sentence, resulting in high redundan
   * A natural way to address the above problem is to introduce an
@@ -45,12 +45,12 @@ ACL 2020 arXiv:2004.08795 [cs.CL]
     * applied in many fields, such as information retrieval (Mitra+ 2017),
       question answering (Yih+ 2013; Severyn and Moschitti, 2015),
       natural language inference (Wang and Jiang, 2016; Wang+ 2017) and so on
-  * Siamese-BERT architecture to compute the similarity 
+  * Siamese-BERT architecture to compute the similarity
     between the source document and the candidate summary.  Siamese BERT
     leverages the pre-trained BERT (Devlin+ 2019)
     * Siamese network structure (Bromley+ 1994; Hoffer and Ailon, 2015; Reimers
       and Gurevych, 2019) to derive semantically meaningful text embeddings
-* Our model outperforms strong baselines significantly in all cases and 
+* Our model outperforms strong baselines significantly in all cases and
   improve the SOTA extractive result on CNN/DailyMail
 
 # 4 Summarization as Matching
@@ -60,5 +60,5 @@ ACL 2020 arXiv:2004.08795 [cs.CL]
   * our content selection module is a parameterized neural network
   * we use BertSum (Liu and Lapata, 2019) without trigram blocking for scoring
 * Then generating all combinations of `sel` darab sentences subject to the
-  pruned document, and 
+  pruned document, and
   reorganize the order of sentences according to the original position

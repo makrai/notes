@@ -137,7 +137,7 @@ arXiv:2001.08210 [cs.CL]
   1. No bi-text of any kind is given. A common solution is to learn from
      back-translation (BT; Artetxe+ 2017; Lample+ 2018c)
      * mBART provides a simple and effective initialize scheme for these methods
-  2. No bi-text for the pair is available, but the 
+  2. No bi-text for the pair is available, but the
     languages both appear in bi-text corpora for other language pairs
     * Previous work has shown that zero-shot transfer is possible via
       * massively multi-lingual MT (Johnson+ 2017; Gu+ 2019) or

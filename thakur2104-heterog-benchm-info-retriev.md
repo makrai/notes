@@ -106,10 +106,10 @@ https://github.com/UKPLab/beir datasets and code
   * skewed length distribution of relevant documents as shown in Figure 4
     * All neural approaches have limitations with document lengths as they
       have limit of 512 word pieces
-      * On the other hand BM25 greatly profits from longer documents as 
+      * On the other hand BM25 greatly profits from longer documents as
         more keywords occur in them thereby increasing the chances of overlap
     * for Tóuche-2020 (Bondarenko+ 2020), majority of the highly relevant
-      documents are greater than 300-350 words 
+      documents are greater than 300-350 words
 
 ## Domain Shift The MSMARCO (Nguyen+ 2016)
 

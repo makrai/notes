@@ -35,7 +35,7 @@ https://github.com/UKPLab/sentence-transformers
     * works well for identifying exact translations in different languages
     * works less well for accessing the similarity of sentences that are !=
   * Multilingual Universal Sentence Encoder (mUSE)
-    (Chidambaram+ 2018; Yang+ 2019) 
+    (Chidambaram+ 2018; Yang+ 2019)
     * trained in a multi-task setup on SNLI (Bowman+ 2015) and
       on >1B question-answer pairs from online forums and QA websites
     * training obj: translation ranking. Given a translation pair

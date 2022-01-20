@@ -23,7 +23,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   * not that different from a tradition in philosophy
     * just spelling the word with small capital letters;
       representing the meaning of “dog” as DOG, or by using an apostrophe (DOG’)
-* lexical semantics 
+* lexical semantics
   * we’ll want a model of word meaning to do all sorts of things for us. It
   * some words have similar meanings (cat is similar to dog), others are
     antonyms (cold is the opposite of hot), some have
@@ -34,7 +34,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     dialogue.
 * In this section we summarize some of these desiderata
   * drawing on results in lexical semantics, the linguistic study of word meanin
-  * we’ll return to and expand on this list in Chapter 18 and Chapter 10.  
+  * we’ll return to and expand on this list in Chapter 18 and Chapter 10.
 
 #### Lemmas and Senses
 
@@ -86,7 +86,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 
 * related in ways other than similarity. One such class of connections is called
 * word relatedness (Budanitsky and Hirst, 2006), also traditionally called word
-  association in psychology.  
+  association in psychology.
 * eg coffee and cup
   * not similar to cup; they share practically no features (coffee is a plant)
   * associated by co-participating in an everyday event (the event of drinking)
@@ -168,7 +168,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 * In this chapter we’ll introduce the two most commonly used models. In the
   * tf-idf model, an important baseline, the meaning of a word is defined by a
     simple function of the counts of nearby words. We will see that this
-    * very long vectors that are sparse, i.e. mostly zeros 
+    * very long vectors that are sparse, i.e. mostly zeros
   * word2vec model family for constructing short, dense vectors that have useful
     semantic properties.  We’ll also
   * cosine, the standard way to use embeddings to compute semantic similarity,
@@ -198,7 +198,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   * we can compare each dimension, noting for example that the vectors for As
   * vector for a document as a point in |V |-dimensional space; thus the
     * vocabulary sizes are generally in the tens of thousands, and the number of
-    * # documents can be enormous (think about all the pages on the web).  
+    * # documents can be enormous (think about all the pages on the web).
   * hard to visualize, Fig. 6.4 shows a visualization in two dimensions; we’ve
   * D columns (one for each document in the collec
 * originally for finding similar documents for the task of document info retriev
@@ -242,9 +242,9 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   words as dimensions, hence of length |V |, or both with documents as
   dimensions as documents, of length |D|) and gives a measure of their
   similarity
-* By far the most common similarity metric is the cosine of the angle 
+* By far the most common similarity metric is the cosine of the angle
   * based on the dot product operator from linear algebra, aka the inner
-    product: 
+    product:
   * like most measures for vector similarity used in NLP
   * dot product `(v, w) = v · w = \sum_{i=1}^N v i w i`
   * similarity metric because it will tend to be high just when the two vectors
@@ -260,7 +260,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     a · b = |a||b| cos θ a · b / |a||b| = cos θ
 * For some applications we pre-normalize each vector, by dividing it by its
   * For unit vectors, the dot product is the same as the cosine.
-* The cosine value ranges 
+* The cosine value ranges
   * 1 for vectors pointing in the same direction, through 0 for orthogonal
     vectors, -1 for vectors pointing in opposite directions.
   * But since raw frequency values are non-negative, the cosine for these
@@ -300,7 +300,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   * log(), Because of the large number of documents in many collections, this
     The resulting definition for inverse document frequency (idf) is thus
 * `w_{t, d} = tf_{t, d} × idf_t`
-* applications of The tf-idf weighting of co-occurrence matrices 
+* applications of The tf-idf weighting of co-occurrence matrices
   * information retrieval, but also plays a role in many other aspects of NLP
   * It’s also a great baseline, the simple thing to try first
 * We’ll look at other weightings like PPMI in Section 6.6.
@@ -324,7 +324,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   log 2 P(w, c) / P(w)P(c)
 * we compute probability by using the MLE). The denominator tells us how often
 * PMI values range from negative to positive infinity
-  * hE negative PMI values tend to be unreliable 
+  * hE negative PMI values tend to be unreliable
   * To distinguish whether two words whose individual probability is each 10 −6
     occur together less often than chance, we would need to be certain that the
   *  not clear whether it’s even possible to evaluate such scores of
@@ -360,7 +360,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     * the counts of words in some neighboring window (the term-term matrix)
   * The values in each dimension are counts, weighted by tf-idf (for
     term-document matrices) or PPMI (for term-term mxs)
-  * the vectors are sparse (since most values are zero).  
+  * the vectors are sparse (since most values are zero).
   * computes the similarity between two words x and y by taking the cosine of
     * high cosine, high similarity. This entire
 * often used for document functions like deciding if two documents are similar.
@@ -394,7 +394,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   * static embeddings: one fixed embedding for each word in the vocabulary.
   * In Chapter 11 we’ll introduce methods for learning dynamic contextual
     embeddings like the popular family of BERT representations, in which
-    * the vector is different in different contexts.  
+    * the vector is different in different contexts.
   * intuition of word2vec is that instead of counting how often each word w
     occurs near, say, apricot, we’ll train a classifier on a binary prediction
     task: “Is word w likely to show up near apricot?” We don’t actually care
@@ -417,22 +417,22 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     multi-layer neural network with hidden layers that demand more sophisticated
     training algorithms)
 * The intuition of skip-gram is:
-  1. Treat the target word and a neighboring context word as positive examples.  
-  1. Randomly sample other words in the lexicon to get negative samples.  
+  1. Treat the target word and a neighboring context word as positive examples.
+  1. Randomly sample other words in the lexicon to get negative samples.
   1. Use logistic regression to train a classifier to distinguish those two
   1. Use the learned weights as the embeddings.
 
 ### 6.8.1 The classifier
 
 * classifier such that, given a tuple (w, c) of a target word w paired with a
-  candidate context word c return the probability that c is a real context word 
+  candidate context word c return the probability that c is a real context word
 * P(−|w, c) = 1 − P(+|w, c)
 * How does the classifier compute the probability P? The intuition of the skip-
   * base this probability on embedding similarity: a word is likely to occur
     near the target if its embedding vector is similar to the
   * if they have a high dot product (after all, cosine is just a normalized dot)
   * Similarity(w, c) ≈ c · w
-  * not a probability, it’s just a number ranging from −∞ to ∞ 
+  * not a probability, it’s just a number ranging from −∞ to ∞
   * To turn the dot product into a probability logistic or sigmoid function σ
     (x), the fundamental core of logistic regression: σ (x) = 1 / 1 + exp (−x)
   * P(+|w, c) = σ (c · w) =
@@ -457,7 +457,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
   that don’t occur nearby. Let’s start
 * negative examples. In fact skipgram with negative sampling (SGNS) uses
   * k negative examples for 1 positive examples (ratio set by a parameter k)
-  * each consisting of the target w plus a ‘noise word’ c_neg 
+  * each consisting of the target w plus a ‘noise word’ c_neg
   * A noise word is a random word from the lexicon, constrained to != w
   * chosen according to their weighted unigram frequency p α (w)
   * But in practice it is common to set α = .75 P α (w) = count(w)^α / \sum_w'
@@ -474,7 +474,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     c_{neg_i}
   * loss function L to be minimized (hence the −); here the first term expresses
 * We minimize this loss function using stochastic gradient descent. Fig. 6.14
-  shows the intuition of one step of learning.  
+  shows the intuition of one step of learning.
   * take the derivative of Eq. 6.34 with respect to the different embeddings
   * It turns out the derivatives are the following (we leave the proof as an
     exercise at the end of the chapter) ∂ L CE / ∂ c_pos = [σ(c_pos · w) − 1] w
@@ -491,7 +491,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 
 * fasttext (Bojanowski+ 2017), addresses a problem with word2vec as we have
   * problems
-    * deal with unknown words—words that appear in a test corpus 
+    * deal with unknown words—words that appear in a test corpus
     * A related problem is word sparsity, such as in languages with rich
       morphology, where some of the many forms for each noun and verb may
   * subword models, representing each word as itself plus a bag of constituent
@@ -522,7 +522,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 
 * size of the context window used to collect counts. This is
   * relevant to both sparse tf-idf vectors and dense word2vec vectors is the
-  * generally between 1 and 10 words on each side of the target word 
+  * generally between 1 and 10 words on each side of the target word
   * The choice depends on the goals of the representation.
     * Shorter context windows tend to lead to more syntactic representations
       * the most similar words to a target word w tend to be semantically
@@ -586,7 +586,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     the Corpus of Historical American English (Davies, 2012).
 * A t-SNE visualization of the semantic change of 3 words in English using
   * The modern sense of each word, and the grey context words, are computed
-    from most recent (modern) time-point embedding space. 
+    from most recent (modern) time-point embedding space.
   * Earlier points are computed from earlier historical embedding spaces.
   * gay, broadcast, awesome
 
@@ -613,7 +613,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     associations between concepts (like ‘flowers’ or ‘insects’) and attributes
     (like ‘pleasantness’ and ‘unpleasantness’)
     by measuring differences in the latency with which they label words in the
-    various categories. 
+    various categories.
   * footnote. push a
     green button for ‘flowers’ (daisy, iris, lilac) and
     ‘pleasant words’ (love, laughter, pleasure) and a
@@ -661,10 +661,10 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 
 * The most important evaluation metric for vector models is extrinsic evaluation
   * whether using vectors improves performance over some other model.
-* useful to have intrinsic evaluations. 
+* useful to have intrinsic evaluations.
   * most common metric is to test their performance on similarity, computing the
     correlation between an algorithm’s word similarity scores and
-    word similarity ratings assigned by humans.  
+    word similarity ratings assigned by humans.
   * WordSim-353 (Finkelstein+ 2002) is a commonly used set of
     ratings from 0 to 10 for 353 noun pairs; for example (plane, car) had an
   * SimLex-999 (Hill+ 2015) is a more difficult dataset that quantifies
@@ -698,7 +698,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 * variability: All embedding algorithms suffer from inherent variability. For
   * randomness in the initialization and the random negative sampling,
   * individual documents in a collection may strongly impact the result
-    (Tian+ 2016, Hellrich and Hahn 2016, Antoniak and Mimno 2018). 
+    (Tian+ 2016, Hellrich and Hahn 2016, Antoniak and Mimno 2018).
   * best practice to train multiple embeddings with bootstrap sampling over
     documents and average the results (Antoniak and Mimno, 2018).
     * When embeddings are used to study word associations in particular corpora,
@@ -707,29 +707,29 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
 
 * In vector semantics, a word is modeled as a vector—a point in high-dim space,
   * static embeddings, in each each word is mapped to a fixed embedding.
-* Vector semantic models fall into two classes: sparse and dense. 
+* Vector semantic models fall into two classes: sparse and dense.
   * sparse models each dimension corresponds to a word in the vocabulary V and
-    cells are functions of co-occurrence counts. 
+    cells are functions of co-occurrence counts.
   * term-document matrix has a row for each word (term) in the vocabulary and a
-    column for each document.  
+    column for each document.
   * word-context or term-term matrix has a row for each (target) word in the
     vocabulary and a column for each context term in the vocabulary
-  * Two sparse weightings are common: 
+  * Two sparse weightings are common:
     * tf-idf weighting which weights each cell by its term frequency and inverse
-      document frequency, 
+      document frequency,
     * PPMI (pointwise positive mutual information), which is most common for for
-      word-context matrices.  
+      word-context matrices.
 * Dense vector models have dimensionality 50–1000
   * Word2vec algorithms like skip-gram are a popular way to compute dense
   * a logistic regression classifier to compute the probability that two words
     are ‘likely to occur nearby in text’
   * probability is computed from
-    the dot product between the embeddings for the two words.  
+    the dot product between the embeddings for the two words.
 * Skip-gram uses stochastic gradient descent to train the classifier, by
   learning embeddings that have a high dot product with embeddings of words that
-  occur nearby and a low dot product with noise words.  
+  occur nearby and a low dot product with noise words.
 * Other important embedding algorithms include
-  GloVe, a method based on ratios of word co-occurrence probabilities.  
+  GloVe, a method based on ratios of word co-occurrence probabilities.
 * similarities are computed by some function of the dot product between vectors.
   The cosine of two vectors—a normalized dot product—is the most popular
 
@@ -750,7 +750,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
       * meaning of a word could be modeled as a point in a multidim Euclidea spa
       * similarity of meaning between two words could be modeled as the distance
   * mechanical indexing
-    * in the 1950s and early 1960s was the field then 
+    * in the 1950s and early 1960s was the field then
     * now known as information retrieval. In what became known as
     * the vector space model for info retrieval (Salton 1971, Sparck Jones 1986)
     * new ways to define the meaning of words in terms of vectors (Switzer 1965)
@@ -778,7 +778,7 @@ from Speech and Language Processing. Daniel Jurafsky & James H. Martin.  2021.
     * Hjelmslev, (1943/1969) and fleshed out in
     * early models of generative grammar (Katz and Fodor, 1963), the idea arose
     * representing meaning with semantic features,
-      symbols that represent some sort of primitive meaning.  
+      symbols that represent some sort of primitive meaning.
     * eg hen, rooster, or chick
     ```
     hen +female, +chicken, +adult

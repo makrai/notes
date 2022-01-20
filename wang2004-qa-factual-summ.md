@@ -33,7 +33,7 @@ ACL 2020 arXiv:2004.04228 [cs.CL]
   * Pearson correlation coefficient of 54.52 on the CNN/DailyMail
 * new SOTA results on evaluating the factuality of summaries,
   outperforming recently proposed NLI models for this task (Kryscinski+ 2019b)
-* robustness of QAGS through an ablation study shows robustness to the 
+* robustness of QAGS through an ablation study shows robustness to the
   * quality of the underlying QG and QA models, the
   * domain of the models, and the
   * number of questions asked

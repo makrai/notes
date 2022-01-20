@@ -104,7 +104,7 @@ Data and code can be accessed at https://github.com/fajri91/ffci
     * hE, (Bhandari+ 2020) applied Pyramid in the single-reference setting
 * most recent work has used the source article as the basis in assessing
   faithfulness, precision, and recall, rather than reference summaries or SCUs
-  * good practice, especially for faithfulness, as 
+  * good practice, especially for faithfulness, as
     * generated summaries can technically contain details not found in reference
   * hE, for precision and recall, it leads to poor inter-annotator agreement
     as a result of the complication in the annotation scheme
@@ -136,25 +136,25 @@ Data and code can be accessed at https://github.com/fajri91/ffci
 * Bhandari+ (2020) and Peyrard (2019b) both found that
   evaluation metrics developed based on older datasets do not necessarily
   perform well on modern datasets with more modern summarization systems
-* Fabbri+ (2020) 
+* Fabbri+ (2020)
   * four dimensions of summaries: relevance, consistency, fluency, and coherence
     by annotating 100 CNN/DailyMail samples.  Our FFCI framework further
-  * we 
+  * we
     * decompose relevance into focus and coverage to provide a more fine-grained
     * replace fluency — which measures quality of individual sentences — with
       inter-sentential coherence, which measures the quality of multi-sentence
   * summaries evaluated via crowd-sourcing (Amazon MTurk) and expert (in-house)
     * ultimately base all of their findings on the expert annotations, as they
       found the crowd-sourced annotations to be highly inconsistent
-  * their annotation scheme is difficult for crowd-workers, as 
+  * their annotation scheme is difficult for crowd-workers, as
     they are asked to judge all four dimensions
     after reading an article and a system-generated summary
-    * Consistency (faithfulness) is found to be particularly difficult 
+    * Consistency (faithfulness) is found to be particularly difficult
       (and subjective)
   * Maynez+ (2020) have attempted to ease the annotation burden by asking
     crowd-workers to highlight unfaithful spans in the summary
   * Assessing relevance without a ground-truth summary is also hard, as it
-    requires crowd-workers to implicitly construct their own summary 
+    requires crowd-workers to implicitly construct their own summary
     * The second reason is that there is no quality control to verify the
       quality of the annotations, which means they may be potentially
       unreliable

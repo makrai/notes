@@ -5,13 +5,13 @@ Artificial Intelligence Review (2021)
 # Abstract
 
 * models discussed: the Generative Pre-training (GPT) and its variants,
-  Transformer-XL, Cross-lingual Language Models (XLM), and 
+  Transformer-XL, Cross-lingual Language Models (XLM), and
   the Bidirectional Encoder Representations from Transformers (BERT).
   * recent works in which researchers proposed various BERT-based models
 
 # Introduction
 
-* in Akhtar+ (2020), the intensities of emotions were detected 
+* in Akhtar+ (2020), the intensities of emotions were detected
   using a stacked ensemble of convolutional neural network (CNN), LSTM, and
   gated recurrent unit (GRU)
 * Emotion Detection (ED) is a branch of sentiment analysis (SA) that seeks to

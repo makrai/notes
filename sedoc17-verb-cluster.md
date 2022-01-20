@@ -24,7 +24,7 @@ arXiv preprint arXiv:1708.00416
   yields better verb clusters. Verbs are ’disambiguated’
 * categorization is not limited to verbs: arguments
 * eval: predicting attributes of Facebook messages and Tweets
-  * predicting sarcasm, sentiment, and locus of control: 
+  * predicting sarcasm, sentiment, and locus of control:
     * locus of control: whether the author feels in control or being controlled
       * a relatively novel task
 * contributions

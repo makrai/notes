@@ -1,10 +1,10 @@
-OpusFilter: A Configurable Parallel Corpus Filtering Toolbox 
+OpusFilter: A Configurable Parallel Corpus Filtering Toolbox
 Mikko Aulamo, Sami Virpioja, Jörg Tiedemann
 ACL 2020
 
 # Abstract
 
-* components based on 
+* components based on
   heuristic filters, language identification libraries, character-based language
   models, and word alignment tools, and it can easily be extended with custom
 * Bitext segments can be ranked according to their quality or domain match using
@@ -22,7 +22,7 @@ ACL 2020
 * Khayrallah and Koehn (2018) show that noisy training data is often more
   harmful for neural translation models than statistical translation models.
 * WMT now feature shared tasks on data cleaning and ranking (Koehn+ 2018, 2019).
-* In contrast to tools 
+* In contrast to tools
   such as bicleaner (Sánchez-Cartagena+ 2018) and Zipporah (Xu and Koehn, 2017),
   that implement a single method for parallel corpus filtering, OpusFilter is
 

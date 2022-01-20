@@ -1,4 +1,4 @@
-OPUS-MT – Building open translation services for the World 
+OPUS-MT – Building open translation services for the World
 Jörg Tiedemann, Santhosh Thottingal
 EAMT 2020
 
@@ -15,5 +15,5 @@ EAMT 2020
 * based on SOTA transformer-based neural machine translation (NMT). We apply
   Marian-NMT in our framework, a stable production-ready NMT toolbox with
   efficient training and decoding capabilities (Junczys-Dowmunt+ 2018). Our
-* trained on freely available parallel corpora 
+* trained on freely available parallel corpora
   collected in the large bitext repository OPUS 3 (Tiedemann, 2012).

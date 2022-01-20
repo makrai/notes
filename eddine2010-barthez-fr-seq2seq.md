@@ -23,12 +23,12 @@ arXiv:2010.12321 [cs.CL]
 * BART (Lewis+ 2019) combined a BERT-like bidirectional encoder with a
   GPT-like forward decoder, and pretrained this seq2seq architecture as a
   denoising autoencoder with a more general formulation of the MLM objectives
-  * Since not only BART’s encoder but also its decoder is pretrained, 
+  * Since not only BART’s encoder but also its decoder is pretrained,
     BART excels on tasks involving text generation
 * already existing BERT-based French language models such as
   CamemBERT (Martin+ 2019) and FlauBERT (Le+ 2019),
 * We evaluate BARThez on
-  * five sentiment analysis, paraphrase identification, and NLI tasks 
+  * five sentiment analysis, paraphrase identification, and NLI tasks
     from the recent FLUE benchmark, and
   * two generative tasks from a novel French summarization dataset, OrangeSum,
     that we created for this research

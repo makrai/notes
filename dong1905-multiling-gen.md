@@ -73,14 +73,14 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
 * For NLU tasks, we fine-tune UniLM as a bidir Transformer encoder, like BERT
 * For NLG tasks, we take the sequence-to-sequence task as an example
-  * [EOS], can also be masked during fine-tuning, thus 
+  * [EOS], can also be masked during fine-tuning, thus
     when this happens, the model learns when to emit [EOS] to terminate gen
 
 # 3 Experiments 5
 
 ## 3.1 Abstractive Summarization
 
-* We fine-tune UniLM as a sequence-to-sequence model following the 
+* We fine-tune UniLM as a sequence-to-sequence model following the
   * procedure described in Sec 2.5 by concatenating document and summary as inp
   * truncated to a pre-defined maximum length
 * We use the F1 version of ROUGE [25] as the evaluation metric for both datasets
@@ -109,8 +109,8 @@ NeurIPS-19 arXiv:1905.03197 [cs.CL]
 
 * future work
   * more epochs and larger models on web-scale text corpora
-  * more experiments on end applications as well as 
-    ablation experiments to investigate the 
+  * more experiments on end applications as well as
+    ablation experiments to investigate the
     model capability and the benefits of multi-task pre-training
   * extending UniLM to support cross-lingual tasks
     (Zewen Chi+ ArXiv, abs/1909.10481)

@@ -33,7 +33,7 @@ NAACL 2019
   * e.g. Caliskan+ ’s tests rely on
     * given names associated with European American and African American people
     * terms referring to women and men as groups (such as “woman” and “man”)
-    * We explore the effect of using given names versus group terms 
+    * We explore the effect of using given names versus group terms
       by creating alternate versions of several bias tests that swap the two
     * not generally feasible with WEAT, as categories like African Americans
       lack common single-word group terms

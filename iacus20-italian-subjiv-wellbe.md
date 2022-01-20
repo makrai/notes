@@ -15,7 +15,7 @@ Social Indicators Research, 2020 Springer
 * Italian subjective well-being index (SWBI ITA), that we display here, audits
   * tweets in Italian and posted from Italy from January 2012 to December 2017
   * 1–5% of the data includes geo-referenced information
-  * human supervised sentiment analysis method, 
+  * human supervised sentiment analysis method,
     the Integrated Sentiment Analysis (iSA) algorithm
 * In this work
   * weighting procedure adopted to partially overcome the selection bias caused

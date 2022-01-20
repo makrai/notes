@@ -1,11 +1,11 @@
 On Sense and Reference
 Gottlob Frege
 
-* Equality gives rise to challenging questions 
-  * in the sense of identity, 
+* Equality gives rise to challenging questions
+  * in the sense of identity,
   * I understand `a = b` to have the sense of
-    `a is the same as b` or `a and b coincide.` 
-  * Is it a relation? 
+    `a is the same as b` or `a and b coincide.`
+  * Is it a relation?
     * between objects, or between [names or signs of objects]?
     * In my Begriffsschrift1 I assumed the latter. The
     * reasons which seem to favour this are the following:
@@ -14,7 +14,7 @@ Gottlob Frege
       * a = b often contain very valuable extensions of our knowledge and cannot
         eg
           * The discovery that the rising sun is not new every morning, but
-      * if we were to regard equality as a relation between the designations, 
+      * if we were to regard equality as a relation between the designations,
         a = b could not differ from a = a
         * A relation would thereby be expressed of a thing to itself, and indeed
           one in which each thing stands to itself but to no other thing.
@@ -36,21 +36,21 @@ Gottlob Frege
       the point of intersection of b and c
       So we have different designations for the same point, and
       these names [the descriptions] likewise indicate the mode of presentation;
-      and hence the statement contains actual knowledge.  
+      and hence the statement contains actual knowledge.
 * for every sign (name, combination of words, letter), there is connected
-  * that to which the sign refers, which may be called the reference 
+  * that to which the sign refers, which may be called the reference
   * what I should like to call the sense of the sign,
     wherein the mode of presentation is contained.
   * footnote
   * the reference/not the sense of the expressionss
     `the point of intersection of a and b` and `the point of intersection of..`
-     `evening star` vs `morning star,` 
+     `evening star` vs `morning star,`
 * by `sign` and `name` I have here understood
   any designation representing a proper name, which thus
   has as its reference a definite object (this word taken in the widest range),
   but not a concept or a relation, which shall be discussed in another article
   * can also consist of several words or other signs. For brevity,
-  * let every such designation be called a proper name.  
+  * let every such designation be called a proper name.
 * The sense of a proper name is grasped by everybody who is sufficiently
   familiar with the language (= totality of designations) to which it belongs;
   * footnote; In the case of an actual proper name such as `Aristotle`
@@ -63,7 +63,7 @@ Gottlob Frege
     supposing it to have one
     * Comprehensive knowledge of the reference would require us to be able to
       say immediately whether any given sense belongs to it.
-      To such knowledge we never attain.  
+      To such knowledge we never attain.
 * The regular connexion between a sign, its sense, and its reference is of such a
   * to the sign there corresponds a definite sense and
     to that in turn a definite reference, while
@@ -86,7 +86,7 @@ Gottlob Frege
 * In reported speech one talks about the sense eg of another person's remarks.
   * words do not have their customary reference but
     designate what is usually their sense. In order to have a short expression,
-  * we will say indirect use/reference. We distinguish accordingly the customary 
+  * we will say indirect use/reference. We distinguish accordingly the customary
 * The reference and sense of a sign != the associated idea
   * the reference of a sign is an object perceivable by the senses,
     my idea of it is an internal image,`*`
@@ -108,7 +108,7 @@ Gottlob Frege
     ideas together in the same consciousness.
 * The reference of a proper name is the object itself which we designate by its
   * the idea, which we have in that case, is wholly subjective;
-  * in between lies the sense, which is indeed no longer subjective 
+  * in between lies the sense, which is indeed no longer subjective
   * analogy: Somebody observes the Moon through a telescope. I
     * the Moon itself to the reference; it is the object of the observation,
     * sense: the real image projected by the object glass in the interior of the
@@ -134,14 +134,14 @@ Gottlob Frege
 * Idealists or sceptics will perhaps long since have objected: `You talk,
   * how do you know that the name `the Moon`/anything has any reference? How do
   * when we say `the Moon,` we do not intend to speak of our idea or the sense
-  * we presuppose a reference. To assume that in the sentence `The Moon is 
+  * we presuppose a reference. To assume that in the sentence `The Moon is
   * the speakers can of course be mistaken in the presupposition, and
     * perhaps always mistaken
   * need not be answered here;
     in order to justify mention of the reference of a sign it is enough, at
     first, to point out our intention in speaking or thinking. (We must then add
     the reservation: provided such reference exists.)
-* sense and reference for an entire declarative sentence.  
+* sense and reference for an entire declarative sentence.
   * a sentence contains a thought
     * not the subjective performance of thinking but its objective content,
       which is capable of being the common property of several thinkers.
@@ -158,14 +158,14 @@ Gottlob Frege
     * just as there are parts of sentences having sense but no reference. And
     * yes, sentences which contain proper names without reference will be of
       The sentence `Odysseus was set ashore at Ithaca while sound asleep'
-      obviously has a sense.  
+      obviously has a sense.
     * But since it is doubtful whether the name `Odysseus`, has reference, it is
       also doubtful whether the whole sentence has one. ret
     * anyone who seriously took the sentence to be true or false
       would ascribe to the name `Odysseus` a reference, not merely a sense; for
       it is of the reference of the name that the predicate is affirmed or
       denied. Whoever
-      does not admit the name has reference can 
+      does not admit the name has reference can
 neither apply nor withhold the predicate. But in that case it would be
 superfluous to advance to the reference of the name; one could be satisfied with
 the sense, if one wanted to go no further than the thought. If it
@@ -198,12 +198,12 @@ and in inquiring also as to its reference
   * the truth value of a sentence = whether it is true or false.
 For brevity I call the one the True, the other the False. Every declarative
 sentence concerned with the reference of its words is therefore to be
-regarded as a proper name, and its reference, if it has one, is either the 
+regarded as a proper name, and its reference, if it has one, is either the
 True or the False. These two objects are recognized, if only implicitly, by
-everybody who judges something to be true -and so even by a sceptic.  
+everybody who judges something to be true -and so even by a sceptic.
 The designation of the truth values as objects may appear to be an
 arbitrary fancy or perhaps a mere play upon words, from which no
-profound consequences could be drawn. What I mean by an object can 
+profound consequences could be drawn. What I mean by an object can
 be more exactly discussed only in connexion with concept and relation. I
 will reserve this for another article. But so much should already be clear,
 that in every judgment, no matter how trivial, the step from the level of
@@ -212,11 +212,11 @@ thoughts to the level of reference (the objective) has already been taken.
 * One might be tempted to regard the relation of the
   thought to the True not as that of
   sense to reference, but rather as that of
-  subject to predicate.  
+  subject to predicate.
 * Subject and predicate (in the logical sense) are indeed elements of thought;
   they stand on the same level for knowledge
   * By combining subject and predicate, one reaches only a thought,
-    never passes from sense to reference, never from a thought to its truth val 
+    never passes from sense to reference, never from a thought to its truth val
 * the reference of a sentence is its truth value is correct
   => truth must remain unchanged when a part of the sentence is replaced by an
     expression having the same reference. And this is in fact the case. Leibniz
@@ -231,7 +231,7 @@ thoughts to the level of reference (the objective) has already been taken.
     * I have transferred the relation between the parts and the whole of the sent
       to its reference, by calling
       the reference of a word part of the reference of the sentence,
-      if the word itself is a part of the sentence.  
+      if the word itself is a part of the sentence.
   * shall now be put to further test
     * the truth value of a sentence remains unchanged when an expression is
       replaced by another having the same reference: but we have not yet
@@ -253,13 +253,13 @@ thoughts to the level of reference (the objective) has already been taken.
   * the case of indirect quotation, in which we have seen the
     words to have their indirect reference coinciding with what is customarily sen
     * the subordinate clause has for its
-      reference a thought, not a truth value; 
+      reference a thought, not a truth value;
       sense not a thought, but the sense of the words `the thought, that ...
       * only a part of the thought in the entire complex sentence
   * after `say,` `hear,` `be of the opinion,` `be convinced,` `conclude,` and
     similar words: above
   * after words like `perceive,` `know,` `fancy,`: considered later.
-  * say: 
+  * say:
     the reference of the subordinate clause is in fact the thought
     can also be recognized by seeing that it is indifferent to the truth of the
     whole whether the subordinate clause is true or false.
@@ -287,7 +287,7 @@ clause just considered which has a thought as its reference.
 If one says `It seems that ...` one means `It seems to me that ...` or `I
 think that ...' We therefore have the same case again. The situation is
 similar in the case of expressions such as `to be pleased,` `to regret,` `to
-approve,' `to blame,` `to hope,` `to fear.` If, toward the end of the battle of 
+approve,' `to blame,` `to hope,` `to fear.` If, toward the end of the battle of
 Waterloo, Wellington was glad that the Prussians were coming, the basis
 for his joy was a conviction. Had he been deceived, he would have
 been no less pleased so long as his illusion lasted; and before he became
@@ -300,7 +300,7 @@ inferred from the roundness of the Earth that he could reach India by
 travelling towards the west,' we have as the reference of the parts two
 thoughts, that the Earth is round, and that Columbus by travelling to the
 west could reach India. All that is relevant here is that Columbus was
-convinced of both, and that the one conviction was a ground for the other.  
+convinced of both, and that the one conviction was a ground for the other.
 Whether the Earth is really round and Columbus could really reach India
 by travelling west, as he thought, is immaterial to the truth of our sentence;
 but it is not immaterial whether we replace `the Earth` by `the planet which

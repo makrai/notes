@@ -115,7 +115,7 @@ Tamara G. Kolda and Brett W. Bader
 
 # 4 Tucker decomposition aka. HOSVD 20
 
-* relationship to compression, the notion of n-rank, 
+* relationship to compression, the notion of n-rank,
   algorithms and computational issues, and applications
 * introduced by Tucker (1963) and refined in subsequent articles
 * the factor matrices (which are usually orthogonal) and
@@ -176,8 +176,8 @@ Tamara G. Kolda and Brett W. Bader
 
 * Paatero and Tapper [181] and Lee and Seung [151]: nonnegative matrix factor
   * for non-negative data, such as environmental models and grayscale images,
-  * it is desirable for the decompositions to retain the nonnegative char 
-  * easier interpretation. It is also natural to impose 
+  * it is desirable for the decompositions to retain the nonnegative char
+  * easier interpretation. It is also natural to impose
 * nonnegativity constraints on tensor factorizations. Many papers refer to
   * we use the terminology NNCP (nonnegative CP) and NNT (nonnegative Tucker)
 

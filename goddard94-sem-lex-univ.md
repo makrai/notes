@@ -259,8 +259,8 @@ Semantic and Lexical Universals
     elements. Where a few samples have been offered, such as those referred to
     above, it was on the basis of a handful of sketched analyses, with no
     detailed consideration of methodology
-* most important contemporary sources of substantive semantic universals 
-  (again excepting the work of Wierzbicka and associates) 
+* most important contemporary sources of substantive semantic universals
+  (again excepting the work of Wierzbicka and associates)
   to be found in John Lyons, RMW Dixon, and the linguists of the Moscow School:
 * Lyons
   * associated with the term 'structural semantics'
@@ -272,16 +272,16 @@ Semantic and Lexical Universals
   * "the syntactic properties of a lexical item can be largely predicted from
     its semantic description" (1982:8)
   * long association with Wierzbicka but their semantics differ
-  * the lexicon as consisting of two natural groups — 
+  * the lexicon as consisting of two natural groups —
     nuclear words and non-nuclear words
     * suggested by certain Australian languages
     * Componential descriptions of nuclear verbs are generated from systems of
-      primitive semantic features; 
+      primitive semantic features;
       non-nuclear verbs are defined in terms of the nuclear verbs (or of already
       defined non-nuclear verbs) utilising the full grammatical possibilities of
       the language in the formulation of these definitions
     * universal semantic 'types',
-      * not the ultimate elements of semantic theory, but 
+      * not the ultimate elements of semantic theory, but
         about the mechanism of semantic-syntactic correspondence
 * Moscow School
   * Russian scholars like Jurij Apresjan, Lidija Iordanskaja, Igor Mel'cuk

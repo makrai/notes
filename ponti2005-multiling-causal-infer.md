@@ -28,7 +28,7 @@ arXiv:2005.00333 [cs.CL]
   * Such world knowledge encompasses temporal and spatial relations, causality,
     laws of nature, social conventions, politeness, emotional responses, and
     multiple modalities
-    * shapes the individuals’ expectations about typical situations 
+    * shapes the individuals’ expectations about typical situations
       (Shoham, 1990)
 * benchmarks
   * seminal: Choice Of Plausible Alternatives dataset (COPA; Roemmele+ 2011)

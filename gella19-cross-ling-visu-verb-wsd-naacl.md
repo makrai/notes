@@ -35,7 +35,7 @@ NAACL 2019; fix typo in author name
   * mainly targeted nouns and perform poorly for verbs
 * Gella+ (2017) and Kádár+ (2018) has shown using image as pivot between
   languages can lead to better multilingual multimodal representations and can
-  * successful applications in 
+  * successful applications in
     crosslingual retrieval and multilingual image retrieval
 * MultiSense dataset of 9,504 images
   annotated with English verbs and their translations in German and Spanish
@@ -55,5 +55,5 @@ NAACL 2019; fix typo in author name
 * humans use visual context to resolve ambiguities for nouns and gender-neutral
   words (Frank+ 2018)
 * Here, we use the verbs predicted by our visual sense disambiguation model to
-  constrain the output of a neural translation system and demonstrate a 
+  constrain the output of a neural translation system and demonstrate a
   * clear improvement in Meteor, BLEU, and verb accuracy over a text-only baseln

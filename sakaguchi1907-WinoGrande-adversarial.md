@@ -63,7 +63,7 @@ arXiv:1907.10641 [cs.CL]
 * our two key improvements
   * much more broadly applicable (by not requiring overgeneration)
     * Overgenerating machine text from a language model to use in test
-      instances runs the risk of distributional bias where 
+      instances runs the risk of distributional bias where
       a discriminator can learn to distinguish between machine generated
       instances and human-generated ones
   * more lightweight (not requiring re-training a model at each iteration)

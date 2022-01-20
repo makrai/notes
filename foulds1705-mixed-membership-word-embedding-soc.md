@@ -52,9 +52,9 @@ arXiv:1705.07368 cs.CL
 
 # Background on word embeddings, topic models, and mixed membership models
 
-* Topic models such as latent Dirichlet allocation (LDA, Blei+ 2003) 
-  * a class of probabilistic language models that 
-    have been used for semantic representation (Griffiths+ 2007). 
+* Topic models such as latent Dirichlet allocation (LDA, Blei+ 2003)
+  * a class of probabilistic language models that
+    have been used for semantic representation (Griffiths+ 2007).
   * unsupervised multinomial naive Bayes, in which
     a latent cluster assignment for each document selects a multinomial
     distribution over words, referred to as a topic
@@ -63,7 +63,7 @@ arXiv:1705.07368 cs.CL
     * the assumption that all words in a document d belong to the same topic is
       relaxed, and replaced with a distribution over topics θ (d)
     * generative process, for each word i in document d, a topic assignment z i
-      is drawn via θ (d), then the word is drawn from the chosen topic φ (z i) 
+      is drawn via θ (d), then the word is drawn from the chosen topic φ (z i)
     * a useful compromise between model flexibility and statistical efficiency:
       the K topics φ (k) are shared across all documents, thereby sharing
       statistical strength, but each document is free to use the topics to its

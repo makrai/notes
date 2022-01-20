@@ -67,7 +67,7 @@ Data and code to reproduce https://github.com/neubig/globalutility
     linguistically diverse NLP? and
   * is economic centrality or sheer demographic demand the best predictor of
 * considering science production
-  * papers in major international NLP conferences as the basic units of 
+  * papers in major international NLP conferences as the basic units of
 * This is a simplificationl
   * some widely used language technologies are developed outside of the
     traditional scientific circuit based on proprietary technology, or they are

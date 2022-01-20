@@ -41,5 +41,5 @@ McCullumsmith, Jeffry T. Gee, Louis‐Philippe Morency, Stefan Scherer, L Rohlfs
 * acoustic features such as pauses and vowel spacing yielded similar results
   (Scherer, Morency, Gratch, Pestian, & Playa Vista, 2015; Venek, Scherer,
   Morency, Rizzo, & Pestian, 2014)
-* acoustic characteristics is most helpful 
+* acoustic characteristics is most helpful
   when classifying between suicidal and mentally ill subjects

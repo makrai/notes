@@ -1,7 +1,7 @@
-Two theories about adjectives:
+Two theories about adjectives
 JAW Kamp
 
-# 1 predicative, privative, affirmative, and extensional adjectives
+# 1 Predicative, privative, affirmative, and extensional adjectives
 
 * the first theo
   * dates from the late 1960s
@@ -26,21 +26,21 @@ JAW Kamp
     * assumptions about the comprehensive semantical theory: Montague (1970)
       * possible world semantics that
       * the distinctions drawn by the definitions below do not depend on these
-      * Each possible interpretation (for the language in question) is based upon 
+      * Each possible interpretation (for the language in question) is based upon
         * a certain non-empty set W of possible worlds/situations/contexts
         * a set U of individuals.
-      * A property is a function which assigns to each weW a subset of U 
+      * A property is a function which assigns to each weW a subset of U
       * The meaning of a noun phrase is always a property.
     * Thus the meanings of adjectives will be functions from properties to props
 * We may call an adjective
-  * predicative in a given interpretation if 
+  * predicative in a given interpretation if
     (4) there is a property QO such that for each property P and each w e W,
     F(P)(w) = P(w) \cap Q(w)
-    * given a class K of admissible interpretations, 
+    * given a class K of admissible interpretations,
       an adjective is predicative (with respect to K) if only if
       it is predicative in each interpretation (belonging to K).
     * Predicative adjectives behave essentially as independent predicates. If
-      * eg four-legged is treated as predicative then any sentence 
+      * eg four-legged is treated as predicative then any sentence
       * _If every N1 is an N: then every four-legged N11 a four-legged N_, where
     * Predicative adjectives <=> extensions are not affected by the nouns
     * Typical examples scientific adjectives eg endocrine, diferentiable,
@@ -55,7 +55,7 @@ JAW Kamp
       * doubt that there is any English adjective which is privative in all of
         its possible uses.
   * affirmative in a given interpretation if its meaning satisfies
-    (6) for each P and w, F(P)(w) \subseteq P(w) 
+    (6) for each P and w, F(P)(w) \subseteq P(w)
     * affirmative if (6) holds in all admissible interpretations.
     * all predicative adjectives are affirmative. But there are many more. In
     * the vast majority of adjectives are affirmative. Typical examples of
@@ -64,7 +64,7 @@ JAW Kamp
     (7) there is a function F' from sets of individuals to sets of individuals
       such that for every P and w
       (F(P))(w) = F'(P(w)) and
-    extensional if (7) holds in all admissible interpretations.  
+    extensional if (7) holds in all admissible interpretations.
   * ie a predicative adjective is in essence
     an operation on extensions of properties:
     if two properties have the same extension in w then the properties obtained
@@ -78,7 +78,7 @@ JAW Kamp
     * suggested: small, tall, heavy, and hot belong to this category.
       * not predicative, whereas their
       * extensionality follows from a certain proposal according to which
-        they derive from their comparatives 
+        they derive from their comparatives
         Let A be an adjective of this kind, and let
         R be the binary relation represented by the phrase _is more A than_
         The function `\cal A` from properties to properties which is associated
@@ -93,7 +93,7 @@ JAW Kamp
       * We might have a clear concept of
         the normal size of objects satisfying a certain property,
         even if objects of that size do not or only rarely occur. It is
-        * eg we would then call almost all members of a species S small 
+        * eg we would then call almost all members of a species S small
           if there was strong biological evidence that
           only circumstances C’ prevent the majority from growing into a height
           which most members of the species would reach under normal conditions
@@ -134,7 +134,7 @@ JAW Kamp
   * for every property P such that w, and u, both belong to P(w) if belongs to
     s/(P)(w) then so does u,
   * there is a property P such that u,,u, € P(w), u, € (P)(w), and u, ¢ S(P)(w).
-* I doubt whether (b) is a necessary condition. Take 
+* I doubt whether (b) is a necessary condition. Take
   * eg tall, for
   * adjectives can apply to things in various degrees. It is my strong
   * when we learn the meaning of an adjective we learn, as part of it, to
@@ -186,7 +186,7 @@ JAW Kamp
   or,...given a particular interpretation of what the truth values in TV
   really represent.
 * Let us consider TV = i / n-1 for i in 1..n-1, degrees of truth
-* What F would adequately reflect our intuitions 
+* What F would adequately reflect our intuitions
   * I think there are no such functions. The
   * because the connectives not, and, or,...are not functions of degrees of trut
   * eg F(neg). The natural suggestion here is that F(k) = 1-k i.e. that the

@@ -20,9 +20,9 @@ Remko J.H. Scha
       Kroch (1979), Cushing (1977), Van Lehn (1978), Barwise & Cooper (1981).1
     * this is not adequate, if we consider the
       combination of two plural noun phrases with "the" with transitive
-1a The squares contain the circles 
-1b Every circle is contained in some square.  
-2a The sides of rectangle 1 run parallel to the sides of rectangle 2.  
+1a The squares contain the circles
+1b Every circle is contained in some square.
+2a The sides of rectangle 1 run parallel to the sides of rectangle 2.
 2b Every side of rectangle 1 runs parallel to some side of rectangle 2
     and every side of retangle 2 runs parallel to some side of retangle 1.
 3a The sides of rectangle 1 cross the sides of rectangle 2.
@@ -55,6 +55,6 @@ Remko J.H. Scha
   * an extensional logical language to represent the truth conditions of the
   * involves some semantic notions which are not incorporated in the predicate
     calculus, the λ-calculus, or in languages such as Montague's Intensional
-    Logic. 
+    Logic.
   * has a rather rich type system
     * It allows variables ranging over η-tuples or sets, for example.

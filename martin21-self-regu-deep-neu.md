@@ -183,13 +183,13 @@ consists
 
 #2 Simple Capacity Metrics and Transitions during Backprop
 
-2.1 Simple capacity control metrics 
+2.1 Simple capacity control metrics
 2.2 Empirical results: Capacity transitions while training . 9
 
 #3 Basic Random Matrix Theory (RMT)
 
-3.1 Marchenko-Pastur (MP) theory for rectangular matrices 
-3.2 Heavy-Tailed extensions of MP theory 
+3.1 Marchenko-Pastur (MP) theory for rectangular matrices
+3.2 Heavy-Tailed extensions of MP theory
 3.3 Eigenvector localization . 13
 
 #4 Empirical Results: ESDs for Existing, Pretrained

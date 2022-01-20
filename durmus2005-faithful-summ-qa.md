@@ -19,10 +19,10 @@ Accepted to ACL 2020 arXiv:2005.03754 [cs.CL]
 * Recent studies have shown that around 30% of generated summaries contain
   unfaithful information (Cao+ 2018; Falke+ 2019a; Kryściński+ 2019),
   * especially when the sentence combines content from multiple source sentences
-    (Lebanoff+ 2019).  
+    (Lebanoff+ 2019).
 * we investigate a diverse set of existing automatic evaluation metrics such as
   ROUGE, BERTScore (Zhang+ 2019a), and learned entailment models. We find that
-  * their correlations with human scores of faithfulness drop significantly 
+  * their correlations with human scores of faithfulness drop significantly
     on highly abstractive summaries, where deeper text understanding is needed.
 * question answering (QA) based automatic metrics have been proposed
   (Eyal+ 2019; Scialom+ 2019; Chen+ 2018).

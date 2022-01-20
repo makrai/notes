@@ -12,8 +12,8 @@ Pertanika J. Sci. & Technol. 29 (1): 445 - 470 (2021)
 * most of the models supported two languages, and English is seen as the most
 * common pre-processing techniques for the multilingual domain are
   tokenization, normalization, capitalization, N-gram, and machine
-  translation. Meanwhile, the sentiment analysis 
+  translation. Meanwhile, the sentiment analysis
 * classification techniques for multilingual sentiment are hybrid sentiment
   * includes localized language analysis, unsupervised topic clustering, and
-    then followed by multilingual sentiment analysis. In terms of 
+    then followed by multilingual sentiment analysis. In terms of
 * evaluation, most of the studies used precision, recall, and accuracy as the

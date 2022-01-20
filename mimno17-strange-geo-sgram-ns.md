@@ -84,7 +84,7 @@ EMNLP 2017 (best paper honorable mention)
 * window size parameter has an effect on the semantics of vectors
 * each pair is weighted
   * linearly by token distance in SGNS and
-  * by 1/distance in GloVe. 
+  * by 1/distance in GloVe.
 * Figure 7 shows average inner products for each frequency with the global mean
   for 10 trials each at window size 5, 10, 15, 20 with K = 50
 * Increasing window size leads to

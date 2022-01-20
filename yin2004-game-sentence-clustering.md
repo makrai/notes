@@ -13,7 +13,7 @@ arXiv:2004.02986 [cs.CL]
   * a novel refactoring of the Q-value function in order to better represent
   system state given its approximation over a language channel
 * evaluate the model in the context of zero-shot text-based adventure game learn
-  * our model reaches 
+  * our model reaches
     * the baseline's convergence performance point needing only 15% of its iters
     * a convergence performance point 15% higher than the baseline's
 * we probe our new model's representation space
@@ -42,11 +42,11 @@ arXiv:2004.02986 [cs.CL]
       sequences of text provided by game state and player input (Narasimhan+
       2015; Yuan+ 2018)
     * cannot easily transfer their learning between games of different genres
-* We explicitly learning a text-to-state transformation 
-  with the Siamese Neural Network (SNN, Bromley+ 1994), which was 
-  * previously applied to object recognition in images (Koch+ 2015) and 
+* We explicitly learning a text-to-state transformation
+  with the Siamese Neural Network (SNN, Bromley+ 1994), which was
+  * previously applied to object recognition in images (Koch+ 2015) and
   * used for data augmentation when the label space is large but training data
-    scarce for some classes. The approach is 
+    scarce for some classes. The approach is
   * helpful in one-shot evaluations, as it learns the general and easily
     transferable property of abstracting away unimportant details from signal.
   * Our novel model integrates SNNs into a Deep Q-learning framework which

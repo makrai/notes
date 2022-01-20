@@ -36,7 +36,7 @@ Draft of December 29, 2021.
 ## 19.1 Semantic Roles
 
 * neo-Davidsonian event representation of these two sentences would be
-  * how in Chapter 15 we represented the meaning of arguments for sentences 
+  * how in Chapter 15 we represented the meaning of arguments for sentences
   (19.1) Sasha broke the window.
   (19.2) Pat opened the door.
 
@@ -77,41 +77,41 @@ Draft of December 29, 2021.
 * Semantic roles thus help generalize over different surface realizations of
   eg AGENT is often realized as the subject of the sentence, in other cases the
   THEME can be the subject. Consider these possible realizations of the thematic
-  arguments of the verb break: 
+  arguments of the verb break:
 (19.3) John broke the window.
-  AGENT THEME 
+  AGENT THEME
 (19.4)   John broke the window with a rock.
-  AGENT THEME INSTRUMENT 
-(19.5)   The rock broke the window.  
-  INSTRUMENT THEME 
-(19.6)   The window broke.  
-  THEME 
-(19.7)   The window was broken by John.  
+  AGENT THEME INSTRUMENT
+(19.5)   The rock broke the window.
+  INSTRUMENT THEME
+(19.6)   The window broke.
+  THEME
+(19.7)   The window was broken by John.
   THEME AGENT
 * break has (at least) the possible arguments AGENT , and INSTRUMENT .
 * thematic grid, θ -grid, or case frame
-  * The set of thematic role arguments taken by a verb 
+  * The set of thematic role arguments taken by a verb
     . We can see that there are (among others) the following possibilities for
     the realization of these arguments of break:
   AGENT /Subject, THEME /Object
   AGENT /Subject, THEME /Object, INSTRUMENT /PPwith
   INSTRUMENT /Subject, THEME /Object
   THEME /Subject
-* many verbs allow their thematic roles to be realized in various syntactic posz 
-  eg verbs like give can realize the THEME and GOAL arguments in two ways: 
-  a.  Doris gave the book to Cary.  
+* many verbs allow their thematic roles to be realized in various syntactic posz
+  eg verbs like give can realize the THEME and GOAL arguments in two ways:
+  a.  Doris gave the book to Cary.
       AGENT THEME GOAL
-  b.  Doris gave Cary the book.  
-      AGENT GOAL THEME 
+  b.  Doris gave Cary the book.
+      AGENT GOAL THEME
 * verb alternations or diathesis alternations
-  * multiple argument structure realizations 
+  * multiple argument structure realizations
   * eg break can take AGENT , or THEME as subject, and
   * give can realize its THEME and GOAL in either order): the dative alternation
-  * occur with particular semantic classes of verbs, 
+  * occur with particular semantic classes of verbs,
   * eg dat alter
     “verbs of future having” (advance, allocate, offer, owe),
     “send verbs” (forward, hand, mail),
-    “verbs of throwing” (kick, pass, throw), and so on. 
+    “verbs of throwing” (kick, pass, throw), and so on.
 * Levin (1993) lists for
   * 3100 English verbs
   * the semantic classes (47 high-level classes, divided into 193 more specific)
@@ -126,7 +126,7 @@ Draft of December 29, 2021.
     Levin and Rappaport Hovav (2005) summarize a number of such cases, such as
     * two kinds of INSTRUMENTS ,
       * intermediary instruments that can appear as subjects and
-      * enabling instruments that cannot: 
+      * enabling instruments that cannot:
         (19.9)  a. The cook opened the jar with the new gadget.
                 b. The new gadget opened the jar.
         (19.10) a. Shelly ate the sliced banana with a fork.
@@ -151,11 +151,11 @@ Draft of December 29, 2021.
       affected by another participant, stationary relative to other
       participants, etc.), the greater the likelihood that the argument can
   * semantic roles that are specific to a particular verb or a particular
-    group of semantically related verbs or nouns.  
+    group of semantically related verbs or nouns.
 * In the next two sections; two commonly used lexical resources that make use of
   these alternative versions of semantic roles
   * PropBank uses both proto-roles and verb-specific semantic roles
-  * FrameNet 
+  * FrameNet
     * semantic roles that are specific to a general semantic idea called a frame
 
 ## 19.4 The Proposition Bank
@@ -176,13 +176,13 @@ Draft of December 29, 2021.
   * PropBank entries are called frame files; note that the
   * definitions in the frame file for each role (“Other entity agreeing”)
     (“Extent, amount fallen”) are informal glosses intended to be read by humans,
-  (19.11) agree.01 
-        Arg0: Agreer 
-        Arg1: Proposition 
-        Arg2: Other entity agreeing 
+  (19.11) agree.01
+        Arg0: Agreer
+        Arg1: Proposition
+        Arg2: Other entity agreeing
         Ex1: [ Arg0 The group] agreed [ Arg1 it wouldn’t make an offer].
         Ex2: [ ArgM-TMP Usually] [ Arg0 John] agrees [ Arg2 with Mary] [ Arg1 o]
-  (19.12) fall.01 
+  (19.12) fall.01
         Arg1: Logical subject, patient, thing falling
         Arg2: Extent, amount fallen
         Arg3: start point
@@ -193,11 +193,11 @@ Draft of December 29, 2021.
       because the normal subject of fall is a proto-pat
 * The PropBank semantic roles can be useful in recovering shallow semantic info
   * eg _increase_
-  (19.13) increase.01 “go up incrementally” 
-        Arg0: causer of increase 
-        Arg1: thing increasing 
-        Arg2: amount increased by, EXT, or MNR 
-        Arg3: start point 
+  (19.13) increase.01 “go up incrementally”
+        Arg0: causer of increase
+        Arg1: thing increasing
+        Arg2: amount increased by, EXT, or MNR
+        Arg3: start point
         Arg4: end point
 * A PropBank semantic role labeling would allow us to
   infer the commonality in the event structures of the following three examples,
@@ -234,7 +234,7 @@ Draft of December 29, 2021.
 * The FrameNet project is another semantic-role-labeling project that attempts
   (Baker+ 1998, Fillmore+ 2003, Fillmore and Baker 2009, Ruppenhofer+ 2016).
   * roles in the FrameNet project are specific (not to invid V but) to a frame.
-  * frame? 
+  * frame?
     eg set of words:
     reservation, flight, travel, buy, price, cost, fare, rates, meal, plane
   * There are many individual lexical relations of hyponymy, synonymy, and so on
@@ -255,7 +255,7 @@ Draft of December 29, 2021.
   * Each word evokes a frame and profiles some aspect of the frame and its FEs
   * The FrameNet dataset includes a set of
     frames and frame elements, the lexical units associated with each frame, and
-    a set of labeled example sentences. 
+    a set of labeled example sentences.
     eg `change position on a scale` frame is defined as follows:
 > This frame consists of words that indicate the change of an Item’s position
 > on a scale (the Attribute) from a starting point (Initial value) to an end
@@ -263,7 +263,7 @@ Draft of December 29, 2021.
 * semantic roles (frame elements) in the frame are defined as in Fig. 19.3. Note
   * core roles, which are frame specific, and
   * non-core roles, which are more like the Arg-M arguments in PropBank
-    (time, location, etc) 
+    (time, location, etc)
 (19.20) `[_ITEM Oil] rose [_ATTRIBUTE in price] [_DIFFERENCE by 2%].`
 (19.21) `[_ITEM It] has increased [_FINAL STATE to having them 1 day a month].`
 (19.22) `[_ITEM Microsoft shares] fell [_FINAL VALUE to 7 5/8].`
@@ -272,7 +272,7 @@ Draft of December 29, 2021.
                                                            [_ITEM in dividends]`
 (19.25) `a [_DIFFERENCE 5%] [_ITEM dividend] increase...`
 
-* Core Roles 
+* Core Roles
   ATTRIBUTE     The ATTRIBUTE is a scalar property that the ITEM possesses.
   DIFFERENCE    The distance by which an ITEM changes its position on the scale.
   FINAL STATE   A description that presents the ITEM ’s state after the change in
@@ -280,15 +280,15 @@ Draft of December 29, 2021.
   FINAL VALUE   The position on the scale where the ITEM ends up.
   INITIAL STATE A description that presents the ITEM ’s state before the change in
                 the ATTRIBUTE ’s value as an independent predication.
-  INITIAL VALUE The initial position on the scale from which the ITEM moves away.  
-  ITEM          The entity that has a position on the scale.  
+  INITIAL VALUE The initial position on the scale from which the ITEM moves away.
+  ITEM          The entity that has a position on the scale.
   VALUE RANGE   A portion of the scale, typically identified by its end points,
                 along which the values of the ATTRIBUTE fluctuate.
 * Some Non-Core Roles
-  DURATION The length of time over which the change takes place.  
+  DURATION The length of time over which the change takes place.
   SPEED The rate of change of the VALUE .
   GROUP The GROUP in which an ITEM changes the value of an ATTRIBUTE in a specified way.
-* words 
+* words
   VERBS: advance climb decline decrease diminish dip double drop dwindle edge..
   NOUNS: decline decrease escalation explosion fall fluctuation gain growth hike..
   ADVERBS: increasingly
@@ -381,7 +381,7 @@ Draft of December 29, 2021.
     either before or after.
   * The subcategorization of the predicate,
     the set of expected arguments that appear in the verb phrase
-    * We can extract this information 
+    * We can extract this information
       from the phrasestructure rule that expands the immediate parent of pred;
       VP → VBD NP PP for the predicate in Fig. 19.5.
   * The named entity type of the constituent.
@@ -390,7 +390,7 @@ Draft of December 29, 2021.
   sets of n-grams inside the constituent, or
   more complex versions of the path features (the upward or downward halves, or
   whether particular nodes occur in the path).
-* dependency parses instead of constituency parses as the basis of features, 
+* dependency parses instead of constituency parses as the basis of features,
   eg using dependency parse paths instead of constituency paths.
 
 ### 19.6.2 A Neural Algorithm for Semantic Role Labeling
@@ -410,9 +410,9 @@ Draft of December 29, 2021.
   * each input word is mapped to pretrained embeddings, and then
   * each token is concatenated with the predicate embedding and then
     passed through a feedforward network with a softmax which
-    outputs a distribution over each SRL label. 
+    outputs a distribution over each SRL label.
   * decoding, a CRF layer __can__ be used instead of the MLP layer
-    on top of the biLSTM output to do global inference, 
+    on top of the biLSTM output to do global inference,
     * hE, in practice this doesn’t seem to provide much benefit
 
 ### 19.6.3 Evaluation of Semantic Role Labeling
@@ -432,16 +432,16 @@ Draft of December 29, 2021.
   are allowed to fill its argument roles. Consider the two meanings associated
   (19.29) I want to eat someplace nearby.
   * two possible parses and semantic interpretations for this sentence. In the
-    * sensible interpretation, eat is intransitive and 
+    * sensible interpretation, eat is intransitive and
       _someplace nearby_ is an adjunct that gives the location of the eating
-    * speaker-as-Godzilla interpretation, eat is transitive and 
+    * speaker-as-Godzilla interpretation, eat is transitive and
       _someplace nearby_ is the direct object and the THEME of the eating, like
 * Selectional restrictions are associated with senses, not entire lexemes. We
   (19.31) The restaurant serves green-lipped mussels.
     `szolgálnak fel` offer food
   (19.32) Which airlines serve Denver?
     `kínál járatokat -bAn`, provides a commercial service (somewhere)
-* Selectional restrictions vary widely in their specificity. The verb 
+* Selectional restrictions vary widely in their specificity. The verb
   eg _imagine_:
     * strict requirements on its AGENT role (animate)
     * very few semantic requirements on its THEME role. A verb like
@@ -450,7 +450,7 @@ Draft of December 29, 2021.
   * _odorless_ are restricted to concepts that could possess an odor: (19.33) In
 * the set of concepts we need to represent selectional restrictions (being a
   matrix, being able to possess an odor, etc) is quite open ended.
-* This distinguishes selectional restrictions from other lexical features 
+* This distinguishes selectional restrictions from other lexical features
   like parts-of-speech, which are quite limited in number
 
 ### 19.7.1 Representing Selectional Restrictions
@@ -474,9 +474,9 @@ Draft of December 29, 2021.
 * two problems with its direct use. First, using
   * FOL to perform the simple task of enforcing selectional restrictions is
     overkill (computational cost) The second problem is that this approach
-  * presupposes a large, logical knowledge base of facts about the concepts  
+  * presupposes a large, logical knowledge base of facts about the concepts
     * such common-sense knowledge bases are being developed,
-      none currently have the kind of coverage necessary to the task 
+      none currently have the kind of coverage necessary to the task
 * Evidence from WordNet that hamburgers are edible.
   Sense 1 hamburger, beefburger --
   (a fried cake of minced beef served on a bun)
@@ -502,7 +502,7 @@ Draft of December 29, 2021.
   * Early word sense disambiguation systems used this idea to rule out senses
     that violated the selectional restrictions of their governing predicates.
 * Very quickly, however, it became clear that these
-  selectional restrictions were better represented as preferences 
+  selectional restrictions were better represented as preferences
   (Wilks 1975b, Wilks 1975a)
   * selectional restriction violations  often occur in well-formed sentences,
     eg because
@@ -612,7 +612,7 @@ Draft of December 29, 2021.
 * verbal predicate decomposition that
   * played a role in early natural language systems is
   * conceptual dependency (CD), a set of
-  * ten primitive predicates, shown in Fig. 19.8.  
+  * ten primitive predicates, shown in Fig. 19.8.
   A TRANS The abstract transfer of possession or control from one entity to anot
   P TRANS The physical transfer of an object from one location to another
   M TRANS The transfer of mental concepts between entities or within an entity
@@ -625,7 +625,7 @@ Draft of December 29, 2021.
   ATTEND  The action of focusing a sense organ
 * eg _brought_ is translated into the two primitives ATRANS and PTRANS to
   (19.47) The waiter brought Mary the check.18
-  * the waiter 
+  * the waiter
     physically conveyed the check to Mary and passed control of it to her
   * also associates a fixed set of thematic roles with each primitive to
     represent the various participants in the action.
@@ -660,7 +660,7 @@ Draft of December 29, 2021.
     * dialogue systems (Bobrow+ 1977)
 * General-purpose semantic role labelers were developed
   * The earliest ones (Simmons, 1973)
-    first parsed a sentence by means of an Augmented Transition Network parser.  
+    first parsed a sentence by means of an Augmented Transition Network parser.
     * Each verb then had a set of rules specifying
       how the parse should be mapped to semantic roles
     * mainly made reference to grammatical functions (subject, object,
@@ -688,9 +688,9 @@ Draft of December 29, 2021.
   * lists of slots and fillers used by early information extraction systems like
     DeJong (1982) and Schank and Abelson (1977)
   * In the 1990s Fillmore drew on these insights to begin the FrameNet corpus
-    annotation project.  
+    annotation project.
   At the same time
-* Beth Levin drew on her early case frame dictionaries (Levin, 1977) to 
+* Beth Levin drew on her early case frame dictionaries (Levin, 1977) to
   * her book summarized sets of verb classes defined by shared argument real
     (Levin, 1993)
   * The VerbNet project built on this work (Kipper+ 2000), leading to the
@@ -717,7 +717,7 @@ Draft of December 29, 2021.
 * verbal or nominal predicate may have an implicit argument: one that
   appears only in a contextual sentence, or perhaps not at all and must be
   inferred
-  eg _This house has a new owner. The __sale__ was finalized 10 days ago_ 
+  eg _This house has a new owner. The __sale__ was finalized 10 days ago_
            ARG1
   * implicit argument detection (sometimes shortened as iSRL) was
   * introduced by Gerber and Chai (2010) and Ruppenhofer+ (2010)
@@ -727,7 +727,7 @@ Draft of December 29, 2021.
   * pioneered by Riloff and Schmelzenbach (1998) and Swier and Stevenson (2004);
   * Grenager and Manning (2006), Titov and Klementiev (2012),
     Lang & Lapata (2014), Woodsend & Lapata (2015), & Titov & Khoddam (2014).
-* connotation frames, which mark richer information about the argument 
+* connotation frames, which mark richer information about the argument
   * mark the sentiment of the writer or reader toward the arguments (for example
   * eg survive: sympathy toward the subject he and negative sentiment to bombing
     * See Chapter 20 for more details.

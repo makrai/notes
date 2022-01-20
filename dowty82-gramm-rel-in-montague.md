@@ -633,7 +633,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * e.g. Dyirbal is a fairly consistently ergative language, but
     the case marking on first and second person pronouns follows a nom/acc patt
   * the subject-predicate rule for Dyirbal will specify that
-    * the subject is marked 
+    * the subject is marked
       absolutive when it is not a first or second person pronoun,
       nominative when it is such a pronoun and the IV is intransitive, and
       accusative when the subject is such a pronoun and the IV is transitive
@@ -691,7 +691,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * languages that only allow relativization on subjects
       do not use variable binding at all in forming relative clauses but rather
       combine an IV i.e. a sentence lacking a subject with the head noun
-      to form a relative clause; 
+      to form a relative clause;
       e.g. _man who walks_ <- _man_ plus the IV _walks_
     * A language which allows relativization on both subjects and objects (but
       no other positions) would then have a second relative clause: rule that
@@ -719,7 +719,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
   * In a great many languages the case marking is the same
   * the most common three-place verbs in various languages
     e.g. give, sell, show, take, promise, award, offer, say
-  * the indirect object in almost all cases names a person who also benefits, 
+  * the indirect object in almost all cases names a person who also benefits,
   * some languages might conceivably get by without three-place relations but
     rather make do with only two-place verbs plus benefactive modifiers (of
     category IV/IV)
@@ -799,7 +799,7 @@ The Nature of Syntactic Representation pp 79-130 | Cite as
     * relations like "agent", "experiencer", "goal", etc. are primitives of the
       semantic interpretation of a sentence, apart from the meaning of its verb
     * a kind of "modifier" analysis
-  * Generative Semantics and other theories 
+  * Generative Semantics and other theories
     * the correspondings NPs have these semantic associations in virtue of the
       meaning of the verb of the sentence
 * In the philosophy of language, this same question has arisen (with diff exmps)

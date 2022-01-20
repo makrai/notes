@@ -5,7 +5,7 @@ Draft of December 29, 2021.
 
 * meaning representations: In this chapter we introduce the idea that
   the meaning of linguistic expressions can be captured in formal structures
-  * human tasks that require some form of semantic processing, 
+  * human tasks that require some form of semantic processing,
     eg learning to use a new piece of software by reading the manual,
     deciding what to order at a restaurant by reading a menu, or
     following a recipe.
@@ -27,8 +27,8 @@ arg1
 arg0: (i / i)
 arg1: (c / car))
 
-Having: 
-Haver: Speaker 
+Having:
+Haver: Speaker
 HadThing: Car
 ```
 
@@ -41,7 +41,7 @@ HadThing: Car
 * they all share the notion that a meaning representation consists of
   structures composed from a set of symbols, or representational vocabulary.
   * all four representations make use of
-    symbols corresponding to the speaker, a car, and a relation denoting possess 
+    symbols corresponding to the speaker, a car, and a relation denoting possess
 * representations can be viewed from at least two distinct perspectives in all
   * as representations of the meaning of the particular linguistic input I have
   * as representations of the state of affairs in some world. It is
@@ -58,5 +58,5 @@ HadThing: Car
 
 * historically the primary technique for investigating natural language sem
 
-## 15.4 how FOL can be used to capture the semantics of events and states 
+## 15.4 how FOL can be used to capture the semantics of events and states
 

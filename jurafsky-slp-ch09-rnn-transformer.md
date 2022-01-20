@@ -1,4 +1,4 @@
-in Speech and Language Processing. Daniel Jurafsky & James H. Martin.  
+in Speech and Language Processing. Daniel Jurafsky & James H. Martin.
 Draft of January 12, 2022.
 
 # 9 Deep Learning Architectures for Sequence Processing
@@ -36,13 +36,13 @@ Draft of January 12, 2022.
       and in the next window in the first and second positions, forcing the
       network to learn two separate patterns for what should be the same item.
 * This chapter introduces two important deep learning architectures designed to
-  * recurrent neural networks and transformer networks. 
+  * recurrent neural networks and transformer networks.
   * Both have mechanisms to deal directly with the sequential nature of language
     * capture and exploit the temporal nature of language.  The
   * recurrent network offers a new way to represent the prior context,
     allowing the model’s decision to depend on information from hundreds of
     words in the past
-  * The transformer offers 
+  * The transformer offers
     self-attention and positional encodings
     that help represent time and help focus on how words relate to each other
     over long distances

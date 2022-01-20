@@ -84,7 +84,7 @@ AAAI Conference on Artificial Intelligence, 2020 34(05), 7399-7406
   * develops the tool for the other evaluation approach: using ConceptNet to
   * measure coherence or semantic relatedness of a set of words by spreading
     activation
-  * experiments evaluating words corresponding to bases in the sparse embeddings 
+  * experiments evaluating words corresponding to bases in the sparse embeddings
 * main tools used in various such applications are
   * seminal
     * label propagation (Quillian 1969) and
@@ -104,7 +104,7 @@ AAAI Conference on Artificial Intelligence, 2020 34(05), 7399-7406
   * 10 words with the largest nonzero coefficients are selected from each base
     * 10 words with zero coordinates are randomly chosen.  We call these two
     * both come from the 50k most popular embedded words (having the highest
-      total degree) that appear in ConceptNet.  
+      total degree) that appear in ConceptNet.
 * Table 3 presents findings from our experiments. For the paths found, the
   average path length among pairs of top words (AP L t ) is less than the
   * the network activated while searching for a path is typically smaller for

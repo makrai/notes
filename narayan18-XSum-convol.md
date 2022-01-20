@@ -40,7 +40,7 @@ EMNLP 2018
     (Rush+ 2015; Chen+ 2016; Nallapati+ 2016; See+ 2017; Tan and Wan, 2017;
     Paulus+ 2018; Pasunuru and Bansal, 2018; Celikyilmaz+ 2018)
     * rely on an encoder-decoder architecture modeled by RNNs
-  * a topic-conditioned neural mode 
+  * a topic-conditioned neural mode
     * based entirely on convolutional neural networks (Gehring+ 2017b)
     * capture long-range dependencies between words in the document better
     * allowing document-level inference, abstraction, and paraphrasing

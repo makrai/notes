@@ -78,7 +78,7 @@ arXiv:2107.00676 [cs.CL]
       Cross-lingual BERT transformation for zero-shot dependency parsing
       EMNLP-IJCNLP 2019, Hong Kong, China, November 3-7, 2019, pages 5720–5726
     * Qianchu Liu, Diana McCarthy, Ivan Vulić, and Anna Korhonen. 2019a
-      Investigating cross-lingual alignment methods 
+      Investigating cross-lingual alignment methods
         for contextualized embeddings with token-level evaluation
       CoNLL, pages 33–43, Hong Kong, China. ACL
     * Steven Cao, Nikita Kitaev, and Dan Klein. 2020
@@ -129,18 +129,18 @@ arXiv:2107.00676 [cs.CL]
 # 3 What are the benchmarks used for evaluating MLLMs? 7
 
 * The most common evaluation for MLLMs is crosslingual performance on downstream
-* common crosslingual benchmarks are 
+* common crosslingual benchmarks are
   XGLUE (Liang+ 2020), XTREME (Hu+ 2020), XTREME-R (Ruder+ 2021)
   * a wide variety of tasks and languages as shown in Table 2
   * tasks can be broadly classified into the categories as discussed below
-    
-## classification, 
+
+## classification,
 
 * input: a single sentence or a pair of sentences
 * e.g. Natural Language Inference (NLI)
-* datasets used for evaluating MLLMs are 
+* datasets used for evaluating MLLMs are
   * XNLI (Conneau+ 2018)
-  * PAWS-X (Yang+ 2019) 
+  * PAWS-X (Yang+ 2019)
   * XCOPA (Ponti+ EMNLP 2020)
     * Edoardo M. Ponti, G Glavaš, O Majewska, Q Liu, I Vulić, and Anna Korhonen.
       XCOPA: A multilingual dataset for causal commonsense reasoning
@@ -148,7 +148,7 @@ arXiv:2107.00676 [cs.CL]
     * in XGLUE
   * Query-Ad Matching (QADSM, Liang+ 2020)
     * predict whether an advertisement (ad) is relevant to an input query
-    * 3 languages, English, French and German. 
+    * 3 languages, English, French and German.
     * Each instance is a 4-tuple: `<query, ad title, ad description, label>`
   * Web Page Ranking (WPR, Liang+ 2020)
     * predict how relevant (0--4) a web page is to an input query
@@ -160,10 +160,10 @@ arXiv:2107.00676 [cs.CL]
     * QA Matching (QAM)
     * predict whether a `<question, passage>` pair is a QA pair
     * 3 languages, English, French and German
-    * based on Bing. 
+    * based on Bing.
     * Accuracy (ACC) of the binary classification is used as the metric
 
-## structure prediction, 
+## structure prediction,
 
 ## question answering
 
@@ -204,7 +204,7 @@ arXiv:2107.00676 [cs.CL]
 * In summary, there is no consensus yet on MLLMs learning universal patterns
 * MLLMs learn embeddings which have high overlap across languages,
   primarily between those of the same family
-* common representations 
+* common representations
   * seem to be clearest in the middle layers, after which the network
     specialises for different languages as modelled in the pretraining objective
   * can be probed to accurately perform supervised NLU tasks such as POS
@@ -233,7 +233,7 @@ arXiv:2107.00676 [cs.CL]
 * results have a wide variance across tasks and languages (Keung+ 2020)
 * controlling for the design parameters discussed above and the training and
   test sets is required
-  * need for careful comparisons against translation-based baselines 
+  * need for careful comparisons against translation-based baselines
     e.g. translate-test, translate-train, translate-train-all (Conneau+ 2019)
     across tasks and languages
 
@@ -267,7 +267,7 @@ arXiv:2107.00676 [cs.CL]
 ## Robust models
 
 * extensive evaluation for any encoded biases and the ability to generalize
-* extensive diagnostic and evaluation suites 
+* extensive diagnostic and evaluation suites
   such as MultiChecklist proposed in Ruder+ (2021)
 * Evaluation framework such as Explainaboard (Liu+ 2021; Fu+ 2020)
   * needed for a range of tasks and languages to identify the nature of errors

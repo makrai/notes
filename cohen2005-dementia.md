@@ -12,7 +12,7 @@ ACL 2020
       of the lack of case/control matching in the most widely-used evaluation
       set of transcripts (DementiaBank), it is unclear if these approaches are
       truly diagnostic, or are sensitive to other variables
-* In this paper, we interrogate neural LMs 
+* In this paper, we interrogate neural LMs
   trained on participants with and without dementia
   using synthetic narratives previously developed to simulate progressive
   semantic dementia by manipulating lexical frequency
@@ -50,16 +50,16 @@ ACL 2020
     picture in an unforeseen way and their speech frequently diverts from the
     content of the picture, contains repetitions, incomplete utterances, and
     refers to objects in the picture using words like “thing” or “something”
-  * conflicts with the findings by Klumpp+ (2018) that demonstrate 
-    * similarly high classification accuracy (AUC: 0.91) 
-      with a single hidden layer non-recurrent neural network and 
-      bag-of-words input features, suggesting that while 
+  * conflicts with the findings by Klumpp+ (2018) that demonstrate
+    * similarly high classification accuracy (AUC: 0.91)
+      with a single hidden layer non-recurrent neural network and
+      bag-of-words input features, suggesting that while
       word sequences play a role, it may not be as large as believed by Fritsch+
   * “local” with “global language properties” of the picture descriptions being
     captured by recurrent neural LMs vs. the non-recurrent bag-of-words neural
     network classifier, respectively
   * both explanations fail to explain that it is the difference between the
-    control and dementia LMs that is able to discriminate 
+    control and dementia LMs that is able to discriminate
   The individual LMs are not nearly as good at this categorization task
 * The objective of the current study is to quantify the extent to which the
   differences between neural LMs reflect known deficits in language use in this
@@ -71,10 +71,10 @@ ACL 2020
     that has been deliberately perturbed to simulate AD progression; and
   * interpolation between neural LMs modeling language use with and without deme
 * We find neural LMs are progressively more perplexed by text simulating disease
-  of greater severity, and 
-  * that this perplexity 
+  of greater severity, and
+  * that this perplexity
     decreases with increasing contributions of a LM trained on transcripts from
-    patients with AD, but 
+    patients with AD, but
     increases again when only this LM is considered.  Motivated by these
 * we modify the approach of Fritsch+ (2019) by incorporating an interpolated
   model and pre-trained word embeddings, with improvements in performance over

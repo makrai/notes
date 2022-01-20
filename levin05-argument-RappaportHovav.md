@@ -562,7 +562,7 @@ Beth Levin, Malka Rappaport Hovav
   * so uniform in their argument realization,
   * many theories of argument realization make direct reference to the semantic
     roles agent and patient – or its relative theme (see section 2.4) – and have
-  * misleading for two reasons. 
+  * misleading for two reasons.
     * “agent” and “patient” are not the only semantic notions associated with SO
     * subject and object often have multiple morphosyntactic realizations, and a
       * deviations from the agent and patient prototypes are
@@ -599,7 +599,7 @@ Beth Levin, Malka Rappaport Hovav
   an alternative usually not open to true agent arguments, as shown in (31) and
   b. His uncle died from/of pneumonia.
   b. The chocolate melted in the sun.
-  b. Smoke spews from that old machine.26 
+  b. Smoke spews from that old machine.26
   b. Five people can sleep in this room.
   b. ∗ Caesar died from/of Brutus.
   b. ∗ The chocolate melted in/from me.
@@ -618,7 +618,7 @@ Beth Levin, Malka Rappaport Hovav
     * maps the patient argument to direct object in passive as well as active
       * its realization as subject in passive sentences is accomplished by a
         syntactic “promotion” – most often, movement. Such analyses are
-    * typical of multistratal theories of syntax, including 
+    * typical of multistratal theories of syntax, including
       Principles and Parameters and its descendants and Relational Grammar.
   * Monostratal theories deal with such phenomena in other ways. They may impose
     * a more sophisticated organization over the semantic roles themselves, as
@@ -632,7 +632,7 @@ Beth Levin, Malka Rappaport Hovav
   * Fillmore (1970), break to represent a verb which selects an agent argument;
   * break is not necessarily agentive, even when it takes an animate subject, as
     * DeLancey (1984), Van Valin and D. Wilkins (1996), and even Fillmore (1970)
-  * (38) The boy broke the window (accidentally).  (Van Valin and Wilkins 1996) 
+  * (38) The boy broke the window (accidentally).  (Van Valin and Wilkins 1996)
   * kill, another verb commonly taken to be agentive, does not require an agent
     * contrasting with the verb murder, which does require one.  (39) a.
     * intentionally/accidentally
@@ -640,10 +640,10 @@ Beth Levin, Malka Rappaport Hovav
 * patient
   * The same issues arise with the notion of agent/pat and the semantic under-
     pinnings of subjecthood/DO
-  * All languages realize patients as objects, but 
+  * All languages realize patients as objects, but
     * and themes, if these are distinguished from patients
     * some languages allow various types of nonpatients as objects as well.
-    * English is particularly liberal in this regard, as the following examples 
+    * English is particularly liberal in this regard, as the following examples
       * The engineer ~ the bridge (B. Levin 1999, (1))
       cracked (patient)
       destroyed (patient/consumed object)
@@ -659,7 +659,7 @@ Beth Levin, Malka Rappaport Hovav
       hated (stimulus/target or object of emotion)
 * frighten psych-verbs have been characterized as taking experiencer objects.
 * The objects of transitive verbs of authority, ruling, and disposition in
-  English 
+  English
   * not fit neatly under any of the traditional semantic roles, though as noted
   * not necessarily transitive in all languages.
 * interaction verbs (Blume 1998) documents several languages in which what she
@@ -681,13 +681,13 @@ Beth Levin, Malka Rappaport Hovav
         partially specified characterizations of argument realization options
         that give rise to one realization when a morphological rule operates, as
         in (42b), and another otherwise, as in (42a)
-        (Alsina and Mchombo 1993; Bresnan and Moshi 1990) 
+        (Alsina and Mchombo 1993; Bresnan and Moshi 1990)
 * indirect object
   * the first or “inner” object in a double object construction
     in English and other languages that have such a construction and by the
   * dative case-marked argument in languages that have such a case marker; the
   * has The special status as the subject and the object
-  * semantically 
+  * semantically
     * best characterized as a recipient,
       the animate goal in an event that involves a physical or abstract transfer
       of possession (Goldberg 1995; Shibatani 1996),
@@ -698,7 +698,7 @@ Beth Levin, Malka Rappaport Hovav
     * “dative alternation,” My cousin sold me this car <~  sold this car to me.)
       “benefactive alternation,” Our grandmother baked us a pie <~ a pie for us
 * d. The police fined him $50.
-* e. Kelly envied Kerry her good fortune.  
+* e. Kelly envied Kerry her good fortune.
 * _take_ French, German, and Korean, though not English
   * the indirect object in a broad sense – that is,
     the first of two objects or a dative NP with a three-argument verb – can
@@ -706,7 +706,7 @@ Beth Levin, Malka Rappaport Hovav
     denoted by the verb take (Maling 2001, 433). Furthermore, as Shibatani
   * a wider range of verbs may have benefactive IO than in English.
 * same The issues as for subjects and direct objects
-  * The distinct paraphrases in (43) suggest that 
+  * The distinct paraphrases in (43) suggest that
     other partially overlapping semantic notions must be identified
   * the mapping process needs to make reference to overlapping semantic notions
     at different levels of specificity.
@@ -724,7 +724,7 @@ Beth Levin, Malka Rappaport Hovav
       some psych-verbs in the dative case and the stimulus in the nom/abs
       * it is the dative experiencer which shows “essential” properties of subj.
       * controls the subject of the gerund clause.  (44) Ayant étudié toute sa
-        _having studied all his life, ignorance.NOM him.DAT displeases_ 
+        _having studied all his life, ignorance.NOM him.DAT displeases_
     * “oblique objects” are also sometimes found in these languages; these are
       * The instrumental second argument of Russian verbs of authority, ruling,
         and disposition mentioned in section 1.5, for example, may qualify as an
@@ -733,15 +733,15 @@ Beth Levin, Malka Rappaport Hovav
       factory.NOM manage.PRES3s-REFL/PASS Borisov.INST
 * question <~ oblique case marking on what might otherwise be subj or obj
   * the status of the oblique case-marked argument as a “true” subject or object
-    must be established.  
+    must be established.
   * longstanding debate about the subjecthood of oblique case-marked experiencer
     * first clearly articulated in the Relational Grammar literature, but their
       investigation continues
       (Harris 1984a, 1984b; Moore and Perlmutter 2000; Perlmutter 1984;
       Shibatani 1999; Sridhar 1979; Ura 2000; Verma and K. P.  Mohanan 1990)
-  * what it means for an NP to be a subject 
+  * what it means for an NP to be a subject
     * in Keenan’s paper “Towards a Universal Definition of ‘Subject’” (1976),
-    * distinction between “behavioral” properties and “coding” properties of sbj. 
+    * distinction between “behavioral” properties and “coding” properties of sbj.
     * coding properties involve the most surface manifestation of subjects,
       * morphosyntactic expression, via word order, agreement, and case markin
     * behavioral properties are grammatical properties, such as the ability to
@@ -778,7 +778,7 @@ Beth Levin, Malka Rappaport Hovav
       the dative case-marked argument of a three-argument verb in langs with dat
       (B Levin and Rappaport Hovav 2002; Siewierska 1998),
       * supporting the identification of a broad notion of indirect object.
-* other question 
+* other question
   * what semantic properties of arguments govern these deviations? 10 In some
   * In some/other instances
     * belonging to a particular semantic class of verbs is a necessary cond

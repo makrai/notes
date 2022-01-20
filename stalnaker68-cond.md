@@ -14,7 +14,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     "Willie Mays hit four hundred"
     without knowing whether or not
     Mays would have hit four hundred if he had played in the American League.
-* This fact has given rise to a number of philosophical problems; I discuss 3 
+* This fact has given rise to a number of philosophical problems; I discuss 3
   * the logical problem of conditionals, a problem that frequently is ignored or
     * describing the formal properties of the conditional function: a function,
     * represented in English by the words "if ... then", taking ordered pairs of
@@ -51,22 +51,22 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
         * the mood tends to indicate something about the attitude of the
           speaker, but in no way effects the propositional content
       * My approach, however, will be to accept the appearance as reality, and
-        * one can sometimes have evidence about nonactual situations.  
+        * one can sometimes have evidence about nonactual situations.
 * organization
   * In Sections II and III of this paper, I shall present and defend
     a theory of conditionals which has two parts,
     * a formal system with a primitive conditional connective, and
     * a semantical apparatus which provides general truth conditions for
       statements involving that connective
-  * Sections IV, V, and VI, I shall discuss in a general way the relation 
-    to the three problems outlined above.  
+  * Sections IV, V, and VI, I shall discuss in a general way the relation
+    to the three problems outlined above.
 
 # II. The interpretation 2
 
 * my hypothesis about the truth conditions for conditional statements
 * begin by asking a more practical question: how does one evaluate a conditional
   * An answer to this question will not be a set of truth conditions, but it
-    will serve as a heuristic aid in the search for such a set.  
+    will serve as a heuristic aid in the search for such a set.
 * eg situation: you are faced with a true-false political opinion survey. The
   * "If the Chinese enter the Vietnam conflict,
     the United States will use nuclear weapons
@@ -94,7 +94,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
         * the opinion survey statement to be true even though you believe the
         * antecedent and consequent to be logically and causually independent of
     * the presence of a 'connection' is not a necessary condition for the truth
-  3. based on a suggestion made some time ago by Ramsey (1950) 
+  3. based on a suggestion made some time ago by Ramsey (1950)
     * Consider first/2nd/3dr the case where
       * you have no opinion about the statement, "The Chinese will enter"
         * your deliberation about the survey statement should be a thought exper:
@@ -185,7 +185,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * A conditional is true in the actual world when its consequent is true in the
     selected world.
 * `>` as the conditional connective
-  A > B is true in a  if B is true in f(A, a); 
+  A > B is true in a  if B is true in f(A, a);
   A > B is false in a if B is false in f(A, a)
 * conditional logic to be an extension of modal logic
   * Modal logic provides a way of talking about what is true in the actual
@@ -199,7 +199,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     worlds.
 * The s-function must meet at least the following conditions. I shall use the
   * terminology for talking about the arguments and values of s-functions: where
-    f(A, a) = \beta, 
+    f(A, a) = \beta,
   A is the antecedent, a is the base world, and \beta is the selected world.
   For all antecedents A and base worlds a,
   (1) A must be true in f(A, a).
@@ -217,7 +217,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     B is true in f(B', a) and
     B' is true inf(B, a),
     then f(B, a) = f(B', a)
-    * ensures that the ordering among possible worlds is consistent 
+    * ensures that the ordering among possible worlds is consistent
       ie if any selection established \beta as prior to \beta' in the ordering,
       then no other selection (relative to that a) may establish \beta' as prior
       to \beta
@@ -256,11 +256,11 @@ A ≷ B = (A > B) & (B > A)
   (al) Any tautologous well-formed formula is an axiom.
   (a2) □(A \supset B) \supset (□A \supset □B)
   (a3) □(A \supset B)\supset (A > B)
-  (a4) ⋄A \supset* (A > B)\supset~(A >~B) 
+  (a4) ⋄A \supset* (A > B)\supset~(A >~B)
   (a5) A > (B v C) \supset (A > B) v (A > C)
   (a6) (A > B) \supset (A \supset B)
   (a7) A ≷ B \supset* (A > C) \supset (B > C)
-* The conditional connective, as characterized by this formal system, 
+* The conditional connective, as characterized by this formal system,
   * inter mediate between strict implication and the material conditional,
     in the sense that
     □(A \supset B) entails A > B by (a3) and
@@ -290,7 +290,7 @@ A ≷ B = (A > B) & (B > A)
       the following rule follows from the transitivity rule:
       From A > B to infer (A & C) > B.
       But the former rule is invalid; we cannot always strengthen the ante-
-      cedent of a true conditional and have it remain true. 
+      cedent of a true conditional and have it remain true.
       eg "If this match were struck, it would light," and
           "If this match had been soaked in water overnight and it were struck,
           it would light
@@ -321,12 +321,12 @@ A ≷ B = (A > B) & (B > A)
       North Vietnamese were determined to press for a complete withdrawal of
       U.S. troops.
       But he would surely deny the contrapositive, "If North Vietnam agrees to
-      negotiate, then the U.s. will not have halted the bombing." 
+      negotiate, then the U.s. will not have halted the bombing."
       He would believe that halt in the bombing, and much more, is required to
       bring the North Vietnamese to the negotiating table
     * endnote; modus tolens is valid for the conditional:
       from A > B and ~B, one can infer ~A.
-* Examples of these anomalies have been noted by philosophers in the past.  
+* Examples of these anomalies have been noted by philosophers in the past.
   * Goodman pointed out (2) and (3). He accounted for these facts by arguing
   * semifactuals ~~ conditionals with false antecedents and true consequents ~~
     are for the most part not to be taken literally

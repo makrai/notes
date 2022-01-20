@@ -1,14 +1,14 @@
 FEEL: a French Expanded Emotion Lexicon
-Amine Abdaoui, Jérôme Azé, Sandra Bringay & Pascal Poncelet 
+Amine Abdaoui, Jérôme Azé, Sandra Bringay & Pascal Poncelet
 Language Resources and Evaluation volume 51, pages 833–855 (2017)
 
 http://www.lirmm.fr/lirmm_eng/research/teams/advanse/prototypes/fee
 
 # Abstract
 
-* considering both polarity and emotion. The elaboration method is 
+* considering both polarity and emotion. The elaboration method is
 * based on the semi-automatic translation and expansion to synonyms of the
-  English NRC Word Emotion Association Lexicon (NRC-EmoLex). 
+  English NRC Word Emotion Association Lexicon (NRC-EmoLex).
   * First, 6 online translators have been automatically queried in order to create
   * Then, a human professional translator manually validated the entries and the
     * agreed with more than 94 % of the pre-validated entries (those found by a
@@ -23,22 +23,22 @@ http://www.lirmm.fr/lirmm_eng/research/teams/advanse/prototypes/fee
 # 1 Introduction
 
 * Sentiment lexicons organize lists of words, phrases or idioms into classes
-  (Devitt and Ahmad 2013; Turney 2002). For example, in 
+  (Devitt and Ahmad 2013; Turney 2002). For example, in
   * NRC-EmoLex (Mohammad and Turney 2013), starting point of this study, terms
 * emotion typologies (Ekman 1992; Francisco and Gervás 2006; Pearl and
-    Steyvers 2010; Plutchik 1980). The 
+    Steyvers 2010; Plutchik 1980). The
   * most famous and at the same time the simplest typology is by Ekman
     * considered in much of emotion classification studies (Mohammad and
       Kiritchenko 2015; Roberts+ 2012; Strapparava and Valitutti 2004).
 * we describe the elaboration of a new French lexicon containing more than
-  * 14,000 terms according to their 
+  * 14,000 terms according to their
     * polarities (positive and negative) and their expressed emotions
     * Ekman basic emotions).  The applied method is based on the automatic
-* NRC-EmoLex, a publically available emotion lexicon which has 
+* NRC-EmoLex, a publically available emotion lexicon which has
   * proven its performance in several sentiment and emotion classification tasks
     (Kiritchenko+  2014; Mohammad 2012; Rosenthal+ 2015). The translations have
 
-# 2 existing sentiment and emotion lexicons for both English and French. 
+# 2 existing sentiment and emotion lexicons for both English and French.
 
 # 3 our approach for automatically building a French lexicon and the manual vald
 

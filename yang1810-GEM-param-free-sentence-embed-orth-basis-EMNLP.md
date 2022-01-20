@@ -8,7 +8,7 @@ EMNLP-IJCNLP 2019
   of the subspace spanned by a word and its sentence context
 * We model the meaning of a word in a sentence based on two aspects
   * relatedness to the word vector subspace already spanned by its context wrds
-  * novel semantic meaning introduced as a new perpendicular basis vector 
+  * novel semantic meaning introduced as a new perpendicular basis vector
 * method to combine pre-trained word embeddings into sentence representations
   * based on orthogonal basis
   * zero parameters, along with efficient inference performance
@@ -105,7 +105,7 @@ EMNLP-IJCNLP 2019
 ### 2.4.2 Uniqueness Score
 
 * we select different principal vectors of X c for each sentence
-* the principal components are re-ranked 
+* the principal components are re-ranked
   in descending order of their correlation with sentence matrix S
 * Next, the top h principal vectors are selected
 * corpus-wise uniqueness score: `α u = exp (−|σ d o* (q i T D)|_2  / h)`

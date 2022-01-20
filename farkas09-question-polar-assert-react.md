@@ -45,7 +45,7 @@ Donka F. Farkas, Kim B. Bruce
   public individual commitments in discourse. According to Gunlogson (2001),
   * the main effect of uttering a declarative sentence with falling intonation
     is to add its propositional content to the speaker’s list of public commitms
-  * This view neglecting that such speech acts also 
+  * This view neglecting that such speech acts also
     turning the content of the declarative sentence into a shared commitment.
 * The context components we adopt here allow us to capture
   both the commitment publicizing and the proposal nature of default assertions.
@@ -58,7 +58,7 @@ Donka F. Farkas, Kim B. Bruce
 (2/3) Anne: Sam is home/Is Sam home?
     Ben: Yes/Yeah, he’s home./No, he isn’t home.
 * differences side, we argue that Ben’s negative reaction to
-  assertions/questions creates/not a conversational crisis 
+  assertions/questions creates/not a conversational crisis
   * Anne’s contributions in (2) and (3) raise the issue of Sam’s whereabouts;
   * in (2), but not (3), she also adds the proposition denoted by Sam is home to
     her public commitments.
@@ -105,7 +105,7 @@ Donka F. Farkas, Kim B. Bruce
       associated with each participant in the conversation
     * Our canonical Table-emptying operations correspond to Ginzburg’s
       operations that downgrade QUD and upgrade the FACTS once a resolution of
-      the issue on the Table has been agreed upon.  
+      the issue on the Table has been agreed upon.
   * Asher & Lascarides (2003), each participant is associater with a
     Segmented Discourse Representation Structure (SDRS) that
     represents their cognitive state
@@ -126,7 +126,7 @@ Donka F. Farkas, Kim B. Bruce
   what Stalnaker takes the crucial effect of assertions to be, namely
   * proposing to add the propositional content of the asserted sentence to the cg
   * allows us to explain
-    * that assertion acceptance is a default move rather than contradict/denial 
+    * that assertion acceptance is a default move rather than contradict/denial
     * the existence of conversational pressure in the direction of
       increasing the cg by turning publicized commitments into joint commitments
       * Without such pressure the Collaborative Principle of Walker (1996) would
@@ -149,7 +149,7 @@ Donka F. Farkas, Kim B. Bruce
     X has publicly committed to during the conversation up to the relevant time,
     * not shared by all the other participants. In addition, K contains
   * a set of propositions, the cg, whose elements are
-    those propositions that have been confirmed by all participants 
+    those propositions that have been confirmed by all participants
     as well as a set of background propositions.
 * The total discourse commitments of a discourse participant X is DC X ∪ cg. By
   * taken to be a subset of her doxastic base (cf. Grice’s Quality Maxim).
@@ -171,7 +171,7 @@ Donka F. Farkas, Kim B. Bruce
     infelicitous for A to say Since Sam is home, the children are not alone
     even if A has previously committed to Sam being home.
 * Ginzburg (1996), Roberts (1996), and Büring (2003), in having
-  a discourse component that records the questions under discussion 
+  a discourse component that records the questions under discussion
   * We rechristen it the Table and assume that
     the items on it are syntactic objects paired with their denotations. Having
   * syntactic objects on the Table is needed because a grammar of
@@ -222,7 +222,7 @@ Donka F. Farkas, Kim B. Bruce
   * When the Table is empty, the ps contains the current cg as its only element.
   * otherwie, the elements of the ps are computed based on what is on the Table.
 * The ps assumes a central role in our view because it is
-  * the anticipatory nature of certain conversat moves is captured at this level 
+  * the anticipatory nature of certain conversat moves is captured at this level
   * moves may steer conversations towards particular privileged futures
     is not directly represented in the conversational state
   * in Asher and Lascarides’s work, only this:
@@ -241,13 +241,13 @@ Donka F. Farkas, Kim B. Bruce
 * ps allows us to import the insights of earlier work on the
   context change of assertions and questions
   * we perform these changes at the level of the ps.
-    * instead of performing at the level of the cg 
+    * instead of performing at the level of the cg
       (or its intersection, the context set)
 * a conversation is in crisis if its cg is inconsistent or if
-  all the sets in its ps are inconsistent.  
+  all the sets in its ps are inconsistent.
   * Having at least one consistent set in the ps means that
     there are canonical moves that lead to emptying the Table
-    while at the same time reaching a consistent cg.  
+    while at the same time reaching a consistent cg.
 * For the matters we discuss here, no need for further additions to context stru
   * such as the agendas of participants or representations of their private
     doxastic states
@@ -265,7 +265,7 @@ Donka F. Farkas, Kim B. Bruce
   * cg is the set of propositions that are joint commitments of the participants
   * The contents of the Table, S, are items that are still under discussion,
   * ps is a set of common grounds that reflects canonical ways of settling the
-    issues on the Table.  
+    issues on the Table.
 * notation we use throughout the rest of the paper. The table T in a context
   * to represent traditional stack operations on T :
   1. push(e, T ) represents the new stack obtained by adding item e to the top
@@ -302,7 +302,7 @@ Donka F. Farkas, Kim B. Bruce
     a declarative sentence S with falling intonation that not place specific
     demands on the input context
   * not addressed here, are
-    ‘rising declaratives’ as well as assertions followed by interrogative tags.  
+    ‘rising declaratives’ as well as assertions followed by interrogative tags.
 * declarative and interrogative sentences are distinguished by
   the sentential features [D] and [I] respectively. We treat these features as
   * sentential markers because it is crucial to what follows for the sentence
@@ -346,12 +346,12 @@ Donka F. Farkas, Kim B. Bruce
       the actual intentions of speakers.
 * We follow here Stalnaker’s suggestion that
   a side-effect of any speech act is to register in the common ground the fact
-  that the speech act in question has occurred. We will ignore this effect 
+  that the speech act in question has occurred. We will ignore this effect
 * For Stalnaker, the essential context change associated with assertions is the
   addition of p to the common ground
   * The parallel change for us is the addition of p to the elements of the ps.
     Not changing the current common ground directl
-    leaves room for moves that react to assertions 
+    leaves room for moves that react to assertions
 * earlier proposals that Our view (assertions put issue on the Table) follows
   * closest to Ginzburg’s
   * For us, just as for Ginzburg, asserting a sent raises the issue of whether p
@@ -364,7 +364,7 @@ Donka F. Farkas, Kim B. Bruce
 * default assertions may
   initiate a discourse but they may also
   connect to previous discourse by a variety of rhetorical relations of the type
-  eg Elaboration or Counterevidence, focus of Asher & Lascarides (2003), 
+  eg Elaboration or Counterevidence, focus of Asher & Lascarides (2003),
   * the veridicality of assertions, follows from the 1. and 3. change in (9)
     * veridicality is crucial in Asher & Reese (2007)
 * assertions, as well as questions and other speech acts, are
@@ -380,7 +380,7 @@ Donka F. Farkas, Kim B. Bruce
 
 * how the context changes when a polar question speech act is performed, i.e.
   * Syntactically, we represent polar interrogatives as S[I] and assume that S
-  * The denotation of S[I] is {p, ¬p} 
+  * The denotation of S[I] is {p, ¬p}
 * raises the issue whether p by placing on the conversational Table the
   interrogative sentence and its denotation, namely {p, ¬p}. Placing
   * steers the conversation towards a state in which the question is resolved.
@@ -430,7 +430,7 @@ Donka F. Farkas, Kim B. Bruce
     project a non/inquisitive ps
   * Non-default assertions and non-default polar questions can depart from their
     default counterparts in either property. In order to characterize the many
-* non-default questions 
+* non-default questions
   * The most often discussed are those involving some bias.
   * indicates that
     settling the issue is not necessarily a projected conversational future, and
@@ -456,9 +456,9 @@ Donka F. Farkas, Kim B. Bruce
 * To sum up, the major
   * differences between default assertions vs (polar) questis
     * default assertions upgrade their author’s commitment list while default
-      (polar) questions do not; 
+      (polar) questions do not;
     * default assertions enter a declarative sentence on the Table, while
-      polar questions enter an interrogative sentence; 
+      polar questions enter an interrogative sentence;
     * at the level of the ps, default
       assertions result in a non-inquisitive context whereas default
       questions result in an inquisitive one. The major

@@ -1,13 +1,13 @@
 M. J. Cresswell
 The semantics of degree
 
-* This paper 
+* This paper
   * possible-worlds semantics for comparative constructions in English. In
   * unified treatment of comparatives involving adjectives, mass nouns, and
     numerical comparisons.
   * not expounding or developing Montague's own work, but it shares
-  * two Montagovian features : 
-    * based on possible-worlds semantics, and 
+  * two Montagovian features :
+    * based on possible-worlds semantics, and
     * aim: underlying formal language as close as possible to the surface. 1 It
   * procedure and terminology I adopted in Cresswell (1973), thou self-contained
   * at certain points I reject analyses I once favored and present alternative
@@ -18,7 +18,7 @@ The semantics of degree
   * rather than as sets of "heavens," and I avoid any explicit
   * no reference to contexts of use. 2
   * this is inadequate because of
-    * context dependence (discussed later), and 
+    * context dependence (discussed later), and
     * functors that represent propositional attitudes to logically equivalent
       propositions.  This area is very obscure to me and, to Partee (1973) also
 * two *syntactic categories*: 0 of *sentence* and 1 of *name*.
@@ -27,7 +27,7 @@ The semantics of degree
   category σ_1 ..., σ_n, respectively.
 * We can now define a *\lambda-categorial language* \cal L as follows:
   * Where σ is a syntactic category
-    * `F_σ` a is the (finite) set of *symbols* of category σ.  
+    * `F_σ` a is the (finite) set of *symbols* of category σ.
     * there is a denumerably infinite set `X_σ` a of variables (in the
       logician's sense) 3 of category σ and
   * a "logical" symbol λ (called the *abstraction operator*) not in any category
@@ -42,11 +42,11 @@ The semantics of degree
   * In a well-formed functorial expression, there is only one expression that
     can be the functor, and we could write, eg, `<a 1 ..., α_n, δ>` or
     `<\alpha_1, \delta,..,\alpha_n>`.
-  * From time to time it is convenient (Cresswell, 1973) 
+  * From time to time it is convenient (Cresswell, 1973)
 * For semantics we have a function D that associates with each syntactic
   category the things that can be the values of expressions in that category.
   * D 0 is the domain of *propositions*, and in this paper a proposition is *a
-    set of possible worlds*. 
+    set of possible worlds*.
     * motivation for treating propositions as sets of possible worlds Cresswell
       (1973), see also Montague (1969) and Stalnaker (1972). We are,
   * D 1 is the domain of "things" and should be as inclusive as possible
@@ -107,9 +107,9 @@ The semantics of degree
         degree at least u'
       * Seuren makes the object language look like quantification theory
         * rather than as close to the surface as possible
-      * there is an underlying negative in comparisons 
+      * there is an underlying negative in comparisons
       * (I find myself agreeing with about half of Seuren's data.)
-    * Bresnan (1973) has guided much of my analysis, and that is 
+    * Bresnan (1973) has guided much of my analysis, and that is
     * In Section 5 of this study, I discuss the relation between my \lambda-deep
       structures and her underlying structures.
 * Beginning with names (category 1) and sentences (category 0), we can produce
@@ -117,12 +117,12 @@ The semantics of degree
   speech. For instance,
   * intransitive verb expressions (whether simple or complex) look as though
     they should be treated as one-place predicates.
-    * ie make sentences out of names = in category <0, 1>. 
+    * ie make sentences out of names = in category <0, 1>.
   * Transitive verb expressions are in category <0, 1, 1>, and so on). Another
   * also in category <0, 1> is the class of common count [megszámlálható] nouns,
     whether simple or complex Because they must be distinguished from
     intransitive verb expressions, Montague (1973) has assigned them a different
-    category <<0, 1>> 
+    category <<0, 1>>
     * However, in this study we shall not make such a distinction.
 * In Cresswell (1973) the category 2 was introduced, with D 2 = D <0, 1 >; but I
   * now I think that this was a mistake. I now believe that
@@ -140,8 +140,8 @@ The semantics of degree
       * there is Another index, the utterer [beszélő] index
     * the semantics we go on to present ought to refe to contextual indices, but
       it is in every case clear how it should be done, and we shall forget
-    * in the analysis of tenses and pronouns, context dependence becomes vital ; 
-  * Another simplification is to treat names as expressions of category 1.  
+    * in the analysis of tenses and pronouns, context dependence becomes vital ;
+  * Another simplification is to treat names as expressions of category 1.
     * Cresswell (1973); an important syntactic category is that of *nominal*.
     * Nominals are in category <0, <0, 1 >> and
     * contain, as well as names, expressions that underlie phrases like: at
@@ -153,7 +153,7 @@ The semantics of degree
   to their predicative use.
 * In this we differ both from almost all linguists and most philosophers.
 * a great many philosophical puzzles have been generated by the taking of
-  expressions like (5) _is red_ as paradigmatic instances of predicates. 
+  expressions like (5) _is red_ as paradigmatic instances of predicates.
 * adjectives are here treated as noun modifiers. In Cresswell (1973) they are
 * of category <<0, 1>, <0, 1 >> . One of the main tasks of this study is to
 * now refine the analysis to give a semantically coherent account of compars In
@@ -228,7 +228,7 @@ The semantics of degree
   iff there is an `a` and a b such that ω \in ω(a) and w \in \omega'(b), and for
   any such a and b there is some relation `>` and some u_1 and u 2 in F(>) , and a = <u_1, > > and
   `b = <u 2, > >` and u l > u 2 .
-* The generality of the analysis proposed here may be seen from 
+* The generality of the analysis proposed here may be seen from
 * (15) Bill is a taller man than Ophidia is a long snake.
   * tall and long both involve the same scale.
   * A plausible \lambda-deep structure for (15) would seem to be:
@@ -247,7 +247,7 @@ The semantics of degree
 * the > involved in both tall and long is the same relation.
 * Our underlying semantic concept for tall was in fact "x-much tall." But of
   course we have sentences like :
-  (24) Bill is a tall man.  
+  (24) Bill is a tall man.
   meaning:
   (25) BUI is taller than the average man.
 * I propose to treat the 'tall' in (24) as composed of two symbols, pos and tall
@@ -261,7 +261,7 @@ The semantics of degree
   * Perhaps the meaning of << p o s , tall>, a> is better captured by
   "tall enough to make it sensible to distinguish it from other a's." A meaning
   * very context dependent, but perhaps it
-    gives some clue to why pos has a null surface realization.  
+    gives some clue to why pos has a null surface realization.
 * Wheeler (1972) takes as the semantic primitive
   a relation between an individual and a set
   * tall means "x is tall by comparison with the set a." He is then able to
@@ -291,7 +291,7 @@ The semantics of degree
 
 # 3 discusses mass nouns and plurals 14
 
-# 4 looks at the metaphysics that underlie comparisons; 
+# 4 looks at the metaphysics that underlie comparisons;
 
 # 5 the relation between the formal language of comparatives and their surface
 

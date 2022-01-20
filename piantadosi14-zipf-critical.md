@@ -10,13 +10,13 @@ Psychon Bull Rev (2014) 21:1112–1130
   “shifting” the rank by an amount β (Mandelbrot, 1953, 1962): 𝑓(𝑟)∝1(𝑟+𝛽)𝛼 (2)
   for α ≈ 1 and β ≈ 2.7 (Mandelbrot, 1953, 1962; Zipf, 1936, 1949). This paper
 * observed universally in languages, even in extinct and yet-untranslated
-  languages like Meroitic (R. D. Smith, 2008).  
+  languages like Meroitic (R. D. Smith, 2008).
 * the peculiarity of this law. It is certainly a
   * rule does not reference any aspect of each word’s meaning. Speakers generate
     speech by needing
   * the intricate processes of normal human language production conspire to
     result in a frequency distribution that is so mathematically simple—perhaps
-    “unreasonably” so (Wigner, 1960) 
+    “unreasonably” so (Wigner, 1960)
 * Derivations of Zipf’s law from more basic assumptions are numerous, both in
   language and in the many other areas of science where this law occurs (for
   overviews, see Farmer & Geanakoplos, 2006; Mitzenmacher, 2004; Newman, 2005;

@@ -1,4 +1,4 @@
-XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization 
+XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization
 Alessandro Raganato, Tommaso Pasini, Jose Camacho-Collados, Mohammad Taher Pilehvar
 EMNLP 2020
 
@@ -11,9 +11,9 @@ EMNLP 2020
   (usually WordNet), restricting their usage to a small subset of
   knowledge-based representation techniques
 * The Word-in-Context dataset (WiC) addresses the dependence on sense
-  inventories by 
+  inventories by
   * reformulating the standard disambiguation task as a binary classification
-    problem; but, it is limited to the English language. 
+    problem; but, it is limited to the English language.
 * We put forward a large multilingual benchmark, XL-WiC, featuring gold
   * 12 new languages from varied language families and with different degrees
     of resource availability, opening room for evaluation scenarios such as

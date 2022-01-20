@@ -49,10 +49,10 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
   * whether a given text fragment is subjective or objective, and
   * in the case of subjectivity, classifies the text as either positive/negative
 * for mental health polarity
-  * besides positivity and negativity, we introduce two additional classes: 
+  * besides positivity and negativity, we introduce two additional classes:
     both positive and negative, and neither positive nor negative
   * psychological research suggests emotions cannot be represented on a single
-    axis of valence 24–28 
+    axis of valence 24–28
   * text classified as neutral using traditional frameworks would, using our new
     annotation scheme, fall into either of the two augmented classes
 * few publicly-available mental health datasets suitable for ML-based internal
@@ -78,8 +78,8 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 
 ## Transfer learning
 
-* Our target domain: text-based emotional self-expressions and reflections 
-  from a cognitive-behavioral perspective, 
+* Our target domain: text-based emotional self-expressions and reflections
+  from a cognitive-behavioral perspective,
   obtained through an online mental health therapy service
 * source: public tweets from Twitter, would be similar enough to transfer
 * we explore the application of recurrent neural networks
@@ -118,7 +118,7 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 * patients might be skeptical of the accuracy of therapist feedback or reactive
   to the fact that a healthcare provider is providing feedback
   * might place their trust in the more objective feedback from the ML tool
-  * ostensibly objective personality assessment feedback is widely accepted, 
+  * ostensibly objective personality assessment feedback is widely accepted,
     especially if it is worded somewhat positively and somewhat generally
     36. Snyder, C. R., Shenkel, R. J. & Lowery, C. R
     Acceptance of Personality Interpretations: The ”Barnum Effect” and Beyond

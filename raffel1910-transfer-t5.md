@@ -59,8 +59,8 @@ processing problem as a text-to-text task, and the suite of tasks we consider
 * CNN/Daily Mail (Hermann+ 2015) data set was introduced as a QA task but was
   adapted for text summarization by Nallapati+ (2016); we use the non-anonymized
   version from See+ (2017) as an abstractive summarization task
-* SQuAD (Rajpurkar+ 2016) is a common question-answering benchmark. 
-  * In our experiments, the model is fed the question and its context and 
+* SQuAD (Rajpurkar+ 2016) is a common question-answering benchmark.
+  * In our experiments, the model is fed the question and its context and
     asked to generate the answer token-by-token
 * WMT English
   * to German, we use the same training data as (Vaswani+ 2017) and
@@ -81,18 +81,18 @@ wide variety of benchmarks
 
 ## 4.1 Takeaways
 
-* text-to-text framework obtained 
-  comparable performance to task-specific architectures and 
+* text-to-text framework obtained
+  comparable performance to task-specific architectures and
   SOTA results when combined with scale
 * Architectures
   * original encoder-decoder form worked best in our text-to-text framework
-  * twice as many parameters as “encoder-only” (e.g. BERT) or 
+  * twice as many parameters as “encoder-only” (e.g. BERT) or
     “decoder-only” (language model) architectures, but similar computational cst
   * sharing the parameters in the encoder and decoder:
     no substantial performance drop while halving the total parameter count
 * Unsupervised objectives
   * most “denoising” objectives performed similarly in the text-to-text setup
-  * we suggest using objectives that produce short target sequences 
+  * we suggest using objectives that produce short target sequences
     so that unsupervised pre-training is more computationally efficient
 * Data sets. We introduced the
   * “Colossal Clean Crawled Corpus” (C4), which comprises
@@ -124,7 +124,7 @@ wide variety of benchmarks
 * We combined our above insights and trained
   substantially larger models (up to 11 billion parameters) to achieve
   SOTA results across many of the benchmarks we considered
-  * pre-training: we extracted text from our C4 data set and applied a 
+  * pre-training: we extracted text from our C4 data set and applied a
     denoising objective that corrupts contiguous spans of tokens
   * We pre-trained on a multi-task mixture before fine-tuning on indiv tasks.
     Overall, our models were trained on over 1 trillion tokens

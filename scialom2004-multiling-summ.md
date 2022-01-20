@@ -209,7 +209,7 @@ https://github.com/recitalAI/MLSUM
 
 * supervised and unsupervised methods, extractive and abstractive models
 * For all the experiments, we train models on a per-language basis
-  * hyperparameters: we used the recommended ones for all languages, 
+  * hyperparameters: we used the recommended ones for all languages,
     in order to facilitate assessing the robustness of the models
 * one model with all the languages mixed together:
   no significant difference of performance
@@ -394,7 +394,7 @@ j# 6.1 How abstractive are the models?
 * In Figure 3, we plot the improvement rate
   from TextRank to Oracle, against that of Pointer-Generator to M-BERT
 * correlation emerging from the plot, the hypothesis appears to hold true
-  for all languages, 
+  for all languages,
   * including Russian – not plotted for scaling reasons (x = 808; y = 40), with
   * exception of English
     * probably due to the aforementioned bias of TextRank towards the English

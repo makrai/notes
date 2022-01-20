@@ -17,8 +17,8 @@ https://github.com/CZWin32768/xnlg
   * prediction space is much larger than classification
 * Previous work mainly relies on machine translation (MT)
   * in a pipeline manner (Wan, Li, and Xiao 2010)
-    * inputs are first translated to English, and fed into the 
-      NLG model that is trained by English data. Then the generated 
+    * inputs are first translated to English, and fed into the
+      NLG model that is trained by English data. Then the generated
       English texts are translated back to the target language
     * generate pseudo training data for other language pairs that lack it
       (Shen+ 2018; Duan+ 2019)
