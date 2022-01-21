@@ -14,7 +14,7 @@ Komlósy András
   * lexikon vizsgálata átveszi azt a központi szerepet, amelyet
     a megelőző évtizedekben a szintaxis töltött be.
     * Az LFG az egyik úttörője volt azoknak a nyelvelméleti törekvéseknek,
-    * napjaink grammatikai kutatásaiban már egyre inkább 
+    * napjaink grammatikai kutatásaiban már egyre inkább
 * A tankönyv célja inkább a szolid alapok lefektetése,
   mint az elmélet keretében felmerült legújabb, gyakran sokak által vitatott, s
   * az utóbbi öt-hat évben felmerült javaslatok egy részét a könyv nem tárgyalja
@@ -38,7 +38,7 @@ Komlósy András
   * a névmások kötésének és a grammatikai viszonyok kontrollálásának (l. 3.)
   * az egyeztetés elméletei (l. 2.5.2.) stb.
 * Ez a könyv csak a mondattani jelenségekre vonatkozó alelméleteket ismerteti.
-  
+
 
 ### 1.1.1. Az LFG mint formális keretmodell
 
@@ -48,7 +48,7 @@ Komlósy András
   * ne rekedjen meg a funkcionális modellek szintjén (azaz ne csak külső
     működésében szimulálja a modellált tárgy működését), hanem minél inkább
   * realista modellek ideálját: belső felépítése is hasonlítson
-  * Az explicit és formális jellegnek biztos garanciája az, ha 
+  * Az explicit és formális jellegnek biztos garanciája az, ha
     számítógépen futtatható programmá írható át
   * A pszichológiai realitás közvetlen tesztelésére nincs eszközünk, de a
     * társtudományai (elsősorban a nyelvhasználat és az agytevékenység
@@ -73,7 +73,7 @@ Komlósy András
 
 ##### 1.1.1.1.1. Variabilitás
 
-* A külső szerkezet [external structure, expression structure] nyelvenként más 
+* A külső szerkezet [external structure, expression structure] nyelvenként más
 * a mondatokat felépítő jelentéselemek az egyes nyelvekben eltérő módokon,
   eltérő nyalábokba rendezve "vannak kiosztva" a formai elemek (morfok, szavak)
   között, s a nyelvek különböznek egymástól abban is, hogy ezeknek a formai
@@ -93,7 +93,7 @@ vonatkoztatja.
 
 * A külső és a belső szerkezet közötti viszonynak (pl. a nyelvelsajátítás miatt)
 
-#### 1.1.1.2. A kivitelezés alapötlete 
+#### 1.1.1.2. A kivitelezés alapötlete
 
 * a mondat különböző szerkezeti szintjei ugyanazon funkcionális információkat
   hordozzák (=functional stability under structural reformation)
@@ -103,7 +103,7 @@ vonatkoztatja.
 * a mondatrészviszonyokra (=grammatikai funkciókra) vonatkozó információk
   párhuzamosan jelen vannak mindegyik reprezentációs szinten
 * A különböző reprezentációk így egyazon funkcionális szerkezetnek (az adott
-  mondat belső szerkezetének) a darabjait tartalmazzák 
+  mondat belső szerkezetének) a darabjait tartalmazzák
 * egyszerre variabilitás és az univerzalitás
 * Az átláthatóságot az garantálja, hogy
   a külső szerkezetekből a belső szerkezetekbe vivő leképezés monoton jellegű.
@@ -114,7 +114,7 @@ vonatkoztatja.
 correspondance]
 * módot adnak arra is, hogy a belső szerkezetre vonatkozó információ a külső
   szerkezetben "szét legyen szórva"
-  * nem kényszerülünk rá arra, hogy egy-egy mondatrész 
+  * nem kényszerülünk rá arra, hogy egy-egy mondatrész
     egyetlen megszakítatlan szintaktikai frázis alkotóelemei révén fejezzük ki
     * arra, hogy bizonyos információk hordozóiként "testetlen" elemeket vagy
       elemmásolatokat, netán elmozdított egységek által hátrahagyott nyomokat
@@ -142,20 +142,20 @@ correspondance]
   * mondatrészviszonyoknak (azaz a mondat összetevői által betöltött grammatikai
     funkcióknak) a kezelésében
     * A konfigurációs modellek (amilyenek pl. a chomskyánus modellek) a
-      csak az összetevők elrendezésével ─ egymáshoz viszonyított
+      csak az összetevők elrendezésével -egymáshoz viszonyított
       lineáris (sorrendi) és hierarchikus (= bennfoglalási viszonyokat tükröző)
-      pozícióik révén ─ tudják kódolni. Ennek megfelelő-
+      pozícióik révén -tudják kódolni. Ennek megfelelő-
       * a mondatrészviszonyokat egy univerzálisnak feltételezett
         frázisszerkezeten, annak keretei között definiálják
   * A természetes nyelvekben gyakran pusztán morfológiai eszközök jelenítik meg
     * pl az az összetevő az alany, amely nominatívuszban áll, s amellyel az ige
       számban és személyben egyeztetést mutat.)
-  * a repr semleges a lehetséges megjelenítési módok tekintetében ─ így tehát
+  * a repr semleges a lehetséges megjelenítési módok tekintetében -így tehát
     absztraktabb is a konfigurációs megjelenítésnél. Ez teszi
-  * a funkcionális szerkezetet ─ az LFG a belső szerkezet modelljének tekintse.
+  * a funkcionális szerkezetet -az LFG a belső szerkezet modelljének tekintse.
   *  Magukat a mondatrészszerepeket (=grammatikai funkciókat) az LFG
      az argumentumszerkezet és a mondat "külső" szerkezete [=expression
-     structure] ─ közötti kapcsolóelemeknek ["relators" v. "links"] tekinti ─ l.
+     structure] -közötti kapcsolóelemeknek ["relators" v. "links"] tekinti -l.
 * Az egyes nyelvtanok e keretek között "fogalmazandók meg" az alábbi értelemben:
   * Minden nyelvtan részleges szerkezetekre vonatkozó, azokat együttesen leíró
     lokális megszorításoknak egy-egy halmaza. A nyelvtanokban
@@ -164,10 +164,10 @@ correspondance]
 ### 1.1.2. A mondattani komponensről
 
 * a mondatok minden lényeges szerkezeti eleme legalább 3, viszonylag fütlen rsz
-  * az elemek lehetséges elrendezéseinek a rendszerébe; 
-  * az elemek közötti grammatikai viszonyoknak a hálózatába; 
+  * az elemek lehetséges elrendezéseinek a rendszerébe;
+  * az elemek közötti grammatikai viszonyoknak a hálózatába;
   * az elemsor jelentésének közvetlen alapjául szolgáló
-    predikátum─argumentum-viszonyoknak a rendszerébe.
+    predikátum--argumentum-viszonyoknak a rendszerébe.
 
 #### 1.1.2.1. Az alapötlet megvalósítása a szintaxisban
 
@@ -175,7 +175,7 @@ correspondance]
 
 Az 1.1.2-beli szinteknek az LFG-ben radikálisan különböző reprezentációs szintek
 felelnek meg:
-  * a predikátum─argumentum-viszonyoknak a lexikai szerkezet (vagy argumentumszerkezet: a-struktúra),
+  * a predikátum--argumentum-viszonyoknak a lexikai szerkezet (vagy argumentumszerkezet: a-struktúra),
   * az elemek elrendezésének az összetevős vagy kategoriális szerkezet: c-struk)
   * az elemek közötti grammatikai viszonyoknak a funkcionális szerkezet (f-stru)
 
@@ -209,7 +209,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
   * annotációk gyanánt olyan formulákat is, amelyek az adott összetevő alakjából
     vagy szerkezeten belüli pozíciójából kiolvasható funkcionális
     "információmorzsákat" (a belső szerkezet modelljére, az f-struktúrára
-    vonatkozó elemi állításokat) kódolják 
+    vonatkozó elemi állításokat) kódolják
 * univerzális és nyelvspecifikus megszorításoknak a működéséből következik. A
 * általánosabb érvényű annotációs sémák konkrét megvalósulásaiként kezelhetjük.
 * az egyes részleges fstruktúrákat megnevező ([Fi] formájú) utalások helyén az
@@ -225,7 +225,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 
               összetevős szerkezetek     a tételek lexikai szerkezetei
             funkcionális annotációkkal     funkcionális annotációkkal
-             
+
                               lexikai behelyettesítés
                                        ↓
                               felszíni szerkezetek ( → a FONOLÓGIAI KOMPONENSbe)
@@ -235,7 +235,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 #### 1.1.2.3. Tudnivalók a lexikon szerkezetéről
 
 * funkcionális
-* Amint erre a neve is utal, a lexikai─funkcionális grammatikát
+* Amint erre a neve is utal, a lexikai--funkcionális grammatikát
 * a létrejötte idején ismert egyéb elméletektől ~ különböztette meg
   * a grammatikai funkciók szintaktikai primitivumokként való felhasználása
   * a grammatika egészén belül kitüntetett szerepet tulajdonított a lexikonnak
@@ -246,7 +246,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * a máshol megszokottnál összetettebb felépítésű lexikai komponenst igényel,
 * lexikai integritás. Az LFG elvei szerint a mondattan szerkezetei és szabályai
   a szavak belső felépítésére semmilyen módon nem hivatkozhatnak és azon nem
-  változtathatnak, nyilvánvaló, hogy ─ az izoláló nyelvektől eltekintve ─a
+  változtathatnak, nyilvánvaló, hogy -az izoláló nyelvektől eltekintve --a
 * kimenetét teljesen inflektált szóalakoknak kell képezniük
 * az inflexiós toldalékolás jelentős részben produktív szabályok alapján megy
   => a lexikon nem "egészben" tárolja az alakokat
@@ -257,7 +257,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * más modellek sem puszta elemlistaként képzelik el: valamilyen módon
   (redundanciaszabályok, öröklési mechanizmusok stb. segítségével) minden modell
 * nL az LFG szótári komponense generáló szabályokat is tartalmaz, vagyis
-* jól értelmezhetők a klasszikus morfológia szemléletében is 
+* jól értelmezhetők a klasszikus morfológia szemléletében is
   * a többmorfémás egységek a bennük található morfémákból állnak. Ebben a
   * a tőmorfémák (pl.: ül, ver, ad) nem létrehozandó egységek, és csakis
     "egyben" és "készen" tárolhatjuk őket;
@@ -271,8 +271,8 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * lehetővé teszi egyrészt a szóanyag takarékos tárolását, másrészt az elemek
   nagyobb csoportjaiban megfigyelhető viselkedésbeli hasonlóságoknak közös
   tulajdonságokra való visszavezetését (magyarázatát)
-* kivétel (nincs mögöttes): a toldalékolhatatlan elemek egyes fajtáitól ─ pl.
-  kötőszavaktól, határozószóktól ─ eltekintve sohasem kerül be a mondatokba. A
+* kivétel (nincs mögöttes): a toldalékolhatatlan elemek egyes fajtáitól -pl.
+  kötőszavaktól, határozószóktól -eltekintve sohasem kerül be a mondatokba. A
 
 ### 1.1.3. A mondattani reprezentációk függetlenségének a bemutatása
 
@@ -292,15 +292,15 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * A mondatok grammatikus voltának egyik alapvető feltétele az, hogy a bennük
   található régensek vonzatigénye kielégüljön: tárgyas ige tárgy nélkül,
   * a teljesség követelménye, l 1.3.3.) azonban
-  * egyedül a mondatrészviszonyok vonatkozásában ─ vagyis az f-struktúrában ─
+  * egyedül a mondatrészviszonyok vonatkozásában -vagyis az f-struktúrában --
     kell teljesülnie
   * az összetevős szerkezetre vonatkozóan semmiféle megkötést sem ír elő (vö.
     funkcióra hivatkozó vonzatválasztás 1.3.1.1)
   * ie az igének tárgyra szüksége van ugyan, de arra nem feltétlenül, hogy ezt
     egy mellette (vagy a mondatban bárhol) megtalálható frázis fejtse ki. Jól
 * 'pro'
-  * A számban és személyben eltérő névmások közös szemantikai értékét ─ mint a
-    szemantikai leírást helyettesítő betűsorokat általában ─ az LFG-ben gyakran
+  * A számban és személyben eltérő névmások közös szemantikai értékét -mint a
+    szemantikai leírást helyettesítő betűsorokat általában -az LFG-ben gyakran
     nagy betűkkel írják, így: PRO
   * Mivel azonban más, közismert elméletekben a PRO és a pro betűsor két
     gyökeresen különböző elemre utal,
@@ -339,14 +339,14 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
   (↑SUBJ PER)=1
   (↑OBJ PER)=2
 
-## 1.2. A mondattani reprezentációs szintek általános jellemzői 
+## 1.2. A mondattani reprezentációs szintek általános jellemzői
 
 ### 1.2.1. A kategoriális vagy összetevős szerkezet (c-struktúra)
   [categorial structure, constituent structure, c-structure]
 
-* három, egymástól egyébként megkülönböztetendő objektumtípusra utal velük:  
+* három, egymástól egyébként megkülönböztetendő objektumtípusra utal velük:
   * lexikai elemeket nem tartalmazó, pusztán kategórianevekkel címkézett
-    csomópontokból (és őket összekötő élekből) álló kontextusfüggetlen ágrajz ─
+    csomópontokból (és őket összekötő élekből) álló kontextusfüggetlen ágrajz --
     vö. 1.2.1.1.
   * annotációs formulákkal kiegészített változatait is. (1.2.1.2.)
   * szóanyaggal is "feltöltött" (annotálatlan vagy annotált) kategoriális szerk
@@ -366,7 +366,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
   * kontextusfüggetlen újraírószabályokkal (azaz CF-PSG által) meghatározott
   * frázisstruktúra-fák,
   * amelyek címkekészletét a szintaktikai kategóriákra utaló szimbólumok Σ hal-
-    mazának egy-egy alhalmaza képezi.  
+    mazának egy-egy alhalmaza képezi.
 * Mivel a csupasz c-struktúra kizárólag a külső szerkezetet kívánja repr,
   * minden mondat minden adott elemzéséhez egyetlen c-struktúra tartozik
   * az ágrajz csak
@@ -381,7 +381,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * ágrajzrészletek annotálását alkalmazzuk.  Ennek megfelelően
 * a c-struktúra minden egyes csomópontjához olyan formulákat társítunk, amelyek
   szűkítik az adott összetevő lehetséges leképezéseinek a körét a mondat többi
-  reprezentációjára ─ f-struktúrára, szemantikai struktúrára stb.
+  reprezentációjára -f-struktúrára, szemantikai struktúrára stb.
   (Részletesebben l. 2.4.)
 * A példában szereplő PP összetevőhöz például olyan kifejezést rendelünk, amely
   csak ADJ (=adjunktum, azaz szabad határozó) szerepet engedélyez a számára, az
@@ -400,21 +400,21 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * a szótári egység "logiko-szintaktikai" szerkezetének a modellje.  Olyan
   * jelentésleírását, valamint arra vonatkozó információkat is, hogy mondatbeli
   * milyen típusú vonzatoknak a jelenlétét várja el.  Ezt a jelleget emeli ki az
-* argument: terminológiai problémára kell felhívnunk a figyelmet ─ arra, hogy a
+* argument: terminológiai problémára kell felhívnunk a figyelmet -arra, hogy a
   * Éppúgy/mint utalhat
     a predikátum által jelölt jelentésfüggvénynek az argumentumára (szemantikai)
     a vonzatokat kívánó szavaknak (régenseknek) a vonzataira (szintaktikai obj)
 * Szemantikai argumentumaik természetesen csak (log/szem) predikátumoknak vannak
 * az Argumentumstruktúra azonban a szótári tétel használatának a
-  szintaktikai feltételeit, azaz a tétel vonzatigényét rögzítik ─
+  szintaktikai feltételeit, azaz a tétel vonzatigényét rögzítik --
   beleértve azokat az eseteket is, amikor a tétel
   * egyetlen szemantikai argumentumot sem igényel, azaz nem predikátum
   * vonzatot sem kíván, azaz nem is régens.
-  * az angol időjárásigék alanyt kívánnak, tehát régensek ─ bár nem predikátumok
-* elnevezést használják mind a még annotálatlan, mind pedig az annotált szerkre 
+  * az angol időjárásigék alanyt kívánnak, tehát régensek -bár nem predikátumok
+* elnevezést használják mind a még annotálatlan, mind pedig az annotált szerkre
 * Vonzatoknak azokat a nyelvi formákat (frázisokat, mondatszerkezeti összetevő)
   és egyéb módon azonosítható nyelvi értékeket nevezzük, amelyek
-  a mondatban megtalálható valamely szótári egységnek ─ a régensnek ─ a
+  a mondatban megtalálható valamely szótári egységnek -a régensnek -a
   grammatikai igényeit elégítik ki abban az értelemben, hogy
   az általa bevezetett grammatikai funkciók valamelyikét látják el. Ennek a
   * az angolban nincs pontos megfelelője.
@@ -423,24 +423,24 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
     * mások pedig a "grammatical argument" kifejezést, amely alatt viszont
       általában csak a thematikus vonzatokat értik (vö. 2.3.2.2. és 2.6.2.2.).
 
-#### 1.2.2.1. A "csupasz" lexikai szerkezet 
+#### 1.2.2.1. A "csupasz" lexikai szerkezet
 
 * nagyjából a hagyományos nyelvészetben "logikai alany, logikai tárgy" stb.,
   valamint "az esemény cselekvője, elszenvedője" stb. terminusokkal jelölt
-  fogalmakat, illetve viszonyokat rögzíti ─ azokat, amelyek értelmében pl. a
+  fogalmakat, illetve viszonyokat rögzíti -azokat, amelyek értelmében pl. a
   passzív mondat grammatikai alanya "az esemény elszenvedőjét" fejezi ki, és az
-* kétfajta tényre utalnak: 
+* kétfajta tényre utalnak:
   * az adott argumentum mondatbeli megjelenítései a szemantikai argumentumok
     melyik fajtájának a tipikus szintaktikai lehetőségeivel rendelkeznek.
     (Pl.: A fest ige mellett a festő személyt azonosító frázisok olyan
     * pl cselekvő szereplőit megnevező frázisok
-      vagy alanyként, vagy pedig ─ pl. a -t/-tt képzős melléknévi igenév mellett
-      ─ által névutós frázison belül jelenhet meg.) Az e szempontból egyforma
-    * thematikus szerepek hordozóinak tekintjük ─ l. alább.
+      vagy alanyként, vagy pedig -pl. a -t/-tt képzős melléknévi igenév mellett
+      -által névutós frázison belül jelenhet meg.) Az e szempontból egyforma
+    * thematikus szerepek hordozóinak tekintjük -l. alább.
   * a thematikus szerepek egy feltételezett rangsorában milyen magasan áll ez a
     * ugyanazon predikátumnak a többi argumentumához viszonyítva
-    * (leg)magasabb rangú ─ a "logikai alany", az utóbbi ─ mint
-      (leg)alacsonyabb rangú ─ a "logikai tárgy". Ilyen jellegű intuíciók
+    * (leg)magasabb rangú -a "logikai alany", az utóbbi -mint
+      (leg)alacsonyabb rangú -a "logikai tárgy". Ilyen jellegű intuíciók
       * pl "logikai tárgynak" az aktív mondatok nem-alanyi argumentuma olyankor
         is, amikor grammatikailag nem tárgyként jelenik meg, pl.: A vonatra vár.
 * formai felépítése erősen emlékeztet a tétel által képviselt
@@ -449,7 +449,7 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
 * az argumentumhelyeket a thematikus szerepek nevei azonosítják, hanem olyan
   * szintaktikai alapbesorolást tükröznek, s amelyeknek
   * egymás közötti rendezettsége minden régensre vonatkozóan megszabja az
-    argumentumok említési sorrendjét. Az argumentumok említési sorrendje tehát ─
+    argumentumok említési sorrendjét. Az argumentumok említési sorrendje tehát --
   * pl HAVAZIK, FORGOLÓDIK (AG), VÁG (AG,PAT), SZERET (EXP,TH), AD (AG,PAT,GOAL)
   * A rangsorolás alapja a thematikus szerepek feltételezett univerzális hier,
     AG > BEN > RECIP/EXP > INST > TH/PAT > LOC
@@ -462,21 +462,21 @@ funk                [ PRED 'üt'     kb. a mondatrészek szerinti elemzés
     * Elszenvedő (Patiens: PAT)
     * Hely (Lokális: LOC) az alábbi sorrendben követ.
     (A hierarchiát alátámasztó érveket l. a 2.7.1. pontban.)
-* legmagasabb rangú (s ezért elsőként álló) tag a főszereplő [top role] ─ jele a
+* legmagasabb rangú (s ezért elsőként álló) tag a főszereplő [top role] -jele a
   "kalapos" théta: θ ɵ . Ez nagyjából a hagyományos "logikai alany" megfelelője.
-* Ezáltal 
+* Ezáltal
   * az argumentumokat megjelenítő nyelvi egységek elsődleges szintaktikai
-    minősítést nyernek (mint AG, PAT stb.); 
+    minősítést nyernek (mint AG, PAT stb.);
   * e minősítések révén általánosíthatóvá, s így megmagyarázhatóvá válnak azok a
     szintaktikai viselkedésbeli hasonlóságok, amelyek különböző régensek egyes
-    argumentumait kifejező nyelvi formák között fedezhetők fel; 
+    argumentumait kifejező nyelvi formák között fedezhetők fel;
   * ugyanezen minősítésekből kiindulva módot találhatunk arra, hogy az
     argumentumokat megjelenítő nyelvi formáknak (ugyanazon régens különböző
     vonzatainak) az eltérő szintaktikai lehetőségeit meghatározzuk.
 * A csupasz lexikai szerkezet a predikátumok "tárolási formája" (vö. 1.1.2.3.),
 * mondatbeli, szintaktikai kezelhető viselkedése a vonzatok grammatikai
   funkciójától függ (közvetlenül)
-  * nem szemantikai argumentumaiknak a thematikus szerepétől függ, 
+  * nem szemantikai argumentumaiknak a thematikus szerepétől függ,
 
 #### 1.2.2.2. Az annotált lexikai szerkezet (vonzatkeret vagy lexikai forma)
 
@@ -505,14 +505,14 @@ FORGOLÓDIK (AG),   SZERET ( EXP ,  TH ),  AD ( AG ,   PAT ,   GOAL )
   [functional structure, f-structure]
 
 * A belső struktúra formális modellje
-* Nagyjából egy mondatrészek szerinti elemzés eredményeit rögzíti, de 
+* Nagyjából egy mondatrészek szerinti elemzés eredményeit rögzíti, de
   tartalmazza a mondatrészviszonyok kódolásában (egyeztetés, rekció stb.)
   szerepet játszó morfoszintaktikai információkat is
 * A SUBJ, OBJ, PRED stb.  fogalmak ezen a szinten játszanak szerepet. Mivel ezek
 * nem tartalmaz sem az elemek kategoriális jellegére, sem lineáris elhelyezkedés
-* Az f-struktúrákat attribútum─érték-párok véges halmazaival reprezentáljuk:
-  * az attribútum lehet: ─ szimbólum: SUBJ, TENSE, NUM, PRED
-  * az érték lehet 
+* Az f-struktúrákat attribútum--érték-párok véges halmazaival reprezentáljuk:
+  * az attribútum lehet: -szimbólum: SUBJ, TENSE, NUM, PRED
+  * az érték lehet
     * szimbólum: PL, 3, PAST, ACC
     * szemantikai forma: 'TIGRIS'
     * f-struktúra
@@ -525,16 +525,16 @@ FORGOLÓDIK (AG),   SZERET ( EXP ,  TH ),  AD ( AG ,   PAT ,   GOAL )
 * összetevők és lexikai egységek __annotálása__
   * a c-struktúra csomópontjait vagy a lexikai egységeket összetársítjuk a
     megfelelő funkcionális egyenlőségekkel (pontosabban a náluk általánosabb
-    formájú funkcionális sémákkal ─ l. 2.4.3.), az adott
-  * a csatolt formulákat pedig az adott egységek __annotációinak__ 
+    formájú funkcionális sémákkal -l. 2.4.3.), az adott
+  * a csatolt formulákat pedig az adott egységek __annotációinak__
 * az f-struktúrája nem tartalmaz semmi mást, mint az összetevős szerkezetben
-  és a lexikai tételekben rejlő funkcionális adatokat, s így ─ a grammatika
-* a mondat funkcionális leírásának 
+  és a lexikai tételekben rejlő funkcionális adatokat, s így -a grammatika
+* a mondat funkcionális leírásának
   * mind a kategoriális szerkezet egyes csomópontjaihoz, mind pedig a lexikai
     tételekhez annotációkként csatolt összes funkcionális egyenlőség
 * kiértékelő algoritmus segítségével kialakíthatjuk a hierarchikusan
-  szerkesztett f-struktúrát.  
-* az f-struktúra függvényjellegéről l. alább, 1.2.5. -ben), azaz 
+  szerkesztett f-struktúrát.
+* az f-struktúra függvényjellegéről l. alább, 1.2.5. -ben), azaz
   * szűkebb értelemben: egy adott mondat funkcionális szerkezete (l. az 1.2.4.)
   * tágabb értelemben: a mondat funkcionális szerkezetének minden "kerek"
     részlete is, így:
@@ -543,8 +543,8 @@ FORGOLÓDIK (AG),   SZERET ( EXP ,  TH ),  AD ( AG ,   PAT ,   GOAL )
       mellett szereplő [Fi]-k utalnak), valamint határesetként
     * az egyes funkcionális egyenlőségekkel megadott "szerkezetdarabok" is.
       * Pl.: Az 1.2.4. -ben szereplő (F4NUM)=SG a mondat f-struktúrájában
-        található [ NUM SG ] f-struktúrát adja meg 
-* a szemantikai komponens természetes bemenetét képezi.  
+        található [ NUM SG ] f-struktúrát adja meg
+* a szemantikai komponens természetes bemenetét képezi.
 
 ### 1.2.4. A reprezentációk formája és a közöttük fennálló leképezések
 
@@ -555,7 +555,7 @@ FORGOLÓDIK (AG),   SZERET ( EXP ,  TH ),  AD ( AG ,   PAT ,   GOAL )
 * Az f-struktúra terminus "funkcionális" szava kétfelől is értelmezhető:
   * a. functional = 'grammatikai funkciókra vonatkozó'
   * b. functional = 'matematikai függvényt megtestesítő/megadó'
-* Matematikailag: rendezett ketteseknek (attribútum─érték-pároknak) az
+* Matematikailag: rendezett ketteseknek (attribútum--érték-pároknak) az
   értékunicitási feltételt (l. alább és az 1.3.3.1. pontban) kielégítő véges
   hierarchiája, amely értékeket rendel a mondat primitív grammatikai relációihoz
 * Értékunicitási feltétel [Uniqueness Condition]:
@@ -580,783 +580,424 @@ E függvények sajátosságai:
 
 #### 1.2.5.1. Függvénykifejezések [functional application expression]
 
-Az LFG függvénykifejezéseinek általános formája alapesetben tehát a következő:
-(fs)=v, ahol
-
-és
-
-f valamilyen f-struktúra
-s valamilyen szimbólum
-v valamilyen value
-<s,v> eleme f-nek
-
-
-Az értékként függvényt adó kifejezések léte és fent ismertetett kezelése a függvénykifejezés fogalmának első kiterjesztését igényli. Ennek célja az, hogy szimbólumsorok is előfordulhassanak az argumentumpozícióban. A kiterjesztés ezért a következő alakú formulákat is engedélyezi:
-(fsx)=((fs)x) ahol x szimbolumok (esetleg üres) sorozata
-(fe)=f
-ahol e az üres sor
-
-
-Az f-struktúra (a c-struktúrától eltérően) semmiféle utalást nem tartalmaz a szófaji
-(kategoriális) címkékre, és nem tükrözi a mondat időbeli (lineáris) szerkezetét sem.
-
-Megengedi ugyanakkor azt, hogy a hierarchiában lefelé haladva ugyanahhoz az
-"objektumhoz" több különböző úton is eljuthassunk (ez azt jelenti, hogy ha mátrix
-helyett ágrajzzal adnánk meg az f-struktúrát, akkor egyes csomópontoknak több
-"anyjuk" lehetne), pl.:
-
-
-38
-
-
-
-f1  PRED
-...
-f2
- SUBJ
-
- XCOMP f3 =  PRED ...
-
- SUBJ f2
-
-
-
-
- 
- 
-
-ágrajzban:
-f1
-
-│ PRED
-
-XCO│MP
-
-SUBJ │
-...
-f3
-│
-
-│
-│ PRED
-
-...
-f2
-
+* Az LFG függvénykifejezéseinek általános formája alapesetben tehát a következő:
+  (fs)=v, ahol
+  * f valamilyen f-struktúra
+  * s valamilyen szimbólum
+  * v valamilyen value, és
+  * <s,v> eleme f-nek
+* elsp kiterjesztése
+  * Az értékként függvényt adó kifejezések léte és fent ismertetett kezelése a
+  * hogy szimbólumsorok is előfordulhassanak az argumentumpozícióban. A
+  * a következő alakú formulákat is engedélyezi:
+  (fsx)=((fs)x) ahol x szimbolumok (esetleg üres) sorozata
+  (fe)=f ahol e az üres sor
+* Az f-struktúra
+  * (a c-struktúrától eltérően) semmiféle utalást nem tartalmaz a szófaji
+    (kategoriális) címkékre, és nem tükrözi a mondat időbeli (lineáris) szerk se
+  * Megengedi ugyanakkor azt, hogy a hierarchiában lefelé haladva ugyanahhoz az
+    "objektumhoz" több különböző úton is eljuthassunk, pl.:
 
 ## 1.3. Elvek és megszorítások [principles and constraints]
 
-
-
-felsoroljuk az LFG mondattani komponensére vonatkozó legáltalánosabb elveket és
-megszorításokat. Ezekre a továbbiakban ugyanis rendszeresen hivatkoznunk kell
-majd, s jobb megoldásnak tűnik, ha az olvasó ilyenkor egy talán még nem teljesen
-megértett, de mégis már ismert tételre emlékezhet vissza, mintha állandóan előre
-lapozva kellene keresgélnie.
+* itt  tételszerűen, mindössze egy-két kiegészítő megjegyzéssel ellátva
+  felsoroljuk az LFG mondattani komponensére vonatkozó legáltalánosabb elveket
+  és megszorításokat
+* az előforduló fogalmak egy részének tisztázására csak később kerül sor --
+* Ezekre a továbbiakban ugyanis rendszeresen hivatkoznunk kell majd, s jobb
 
 ### 1.3.1. Az argumentumszerkezet és a grammatikai funkciók viszonyára
 
-
 #### 1.3.1.1. Funkcióra hivatkozó vonzatválasztás [selection for function]
 
+* A régensek szintaktikai alkategorizálása vonzataiknak a grammatikai funkciója
+  (nem pedig a kategóriája) alapján történik.
+* pl. a ver igét tartalmazó régenscsoportot (igei alkategóriát)
+  nem az definiálja, hogy az összetevős szerkezetben NP kategóriájú testvérük
+  * hanem az, hogy az f-struktúrájukban alany és tárgy van jelen. Az elv
+  * TILOS a vonzatkeretben szerepeltetni, hogy a funkciók mely kategóriákkal
+* Az elv mellett szóló érvek:
+  * Az alkategorizálási tulajdonságok nem függenek a tételnek a fában való helyé
+  * Invariáns megoldást nyújt a konfigurációs és a nem-konfigurációs nyelvekre.
+    * A kategóriára hivatkozó alkategorizálás a "testetlen" névmásoknak (vagyis
+      a prodrop jelenségnek, l. 1.1.3.2.) a kezeléséhez szükségszerűen üres NP-k
+      (DP-k) szerepeltetését kívánja meg (pl. a GB-ben).
 
-A régensek szintaktikai alkategorizálása vonzataiknak a grammatikai funkciója
-(nem pedig a kategóriája) alapján történik.
-Így pl. a ver igét tartalmazó régenscsoportot (igei alkategóriát) nem az definiálja, hogy
-az összetevős szerkezetben NP kategóriájú testvérük van, hanem az, hogy az f-struktúrájukban alany és tárgy van jelen. Az elv alapján TILOS a vonzatkeretben szerepeltetni
-azt az információt, hogy az egyes funkciók mely kategóriákkal fejezhetők ki az adott
-nyelvben. Az elv mellett szóló érvek:
+#### 1.3.1.2. A funkciók és az argumentumok közötti biunicitás
+  (=funkcionális unicitás) [function-argument biuniqueness, functional uniqueness]
 
-# 1. Az alkategorizálási tulajdonságok nem függenek a tételnek a fában elfoglalt
-
-helyétől.
-
-# 2. Invariáns megoldást nyújt a konfigurációs és a nem-konfigurációs nyelvekre.
-
-
-A kategóriára hivatkozó alkategorizálás a "testetlen" névmásoknak (vagyis a prodrop jelenségnek, l. 1.1.3.2.) a kezeléséhez szükségszerűen üres NP-k (DP-k) szerepeltetését kívánja meg (pl. a GB-ben).
-
-#### 1.3.1.2. A funkciók és az argumentumok közötti biunicitás (=funkcionális
-
-unicitás) [function-argument biuniqueness, functional uniqueness]
-
-A szemantikai argumentumok és a hozzájuk rendelt grammatikai funkciók
-(=funkciótípusok!) között minden lexikai formában egy-egy megfelelésnek kell
-fennállnia.
-
-Feladata megközelítőleg ugyanaz, mint a GB-ben a θ-kritériumé (amely szerint minden argumentumnak (=vonzatnak) van θ-szerepe, és minden θ-szerepnek argumentumhoz (=vonzatpozícióhoz) kell rendelődnie).
-
-
-
-
-39
-
-
-Az értelmezéshez:
-
-# 1. A "szemantikai argumentum" kifejezés argumentum-POZÍCIÓra utal és NEM
-
-szemantikai (thematikus) szerepre. (Az egyes szemantikai argumentumok ugyanis
-egyidejűleg több szemantikai szereppel is rendelkezhetnek, de ezekhez a
-pozíciókhoz is csak egyetlen funkció kapcsolódhat.)
-
-# 2. Az elv NEM TILTJA azt, hogy:
-
-a. grammatikai funkció szemantikailag üres elemmel (pl. FORM-ként bevezetett it
-stb.) legyen kifejezve, tehát ne is legyen argumentumpozícióval társítva
-b. szemantikai argumentumhoz a Ø funkciószimbólum (l. 2.6.2.6.1.) kapcsolódjon
+* A szemantikai argumentumok és a hozzájuk rendelt grammatikai funkciók
+  (=funkciótípusok!) között minden lexikai formában egy-egy megfelelésnek kell
+  fennállnia.
+* Feladata megközelítőleg ugyanaz, mint a GB-ben a θ-kritériumé
+  (amely szerint minden argumentumnak (=vonzatnak) van θ-szerepe, és minden
+  θ-szerepnek argumentumhoz (=vonzatpozícióhoz) kell rendelődnie).
+* Az értelmezéshez:
+  1. A "szemantikai argumentum" kifejezés argumentum-POZÍCIÓra utal és
+    NEM szemantikai (thematikus) szerepre. (Az egyes szemantikai argumentumok
+    ugyanis egyidejűleg több szemantikai szereppel is rendelkezhetnek, de
+    ezekhez a pozíciókhoz is csak egyetlen funkció kapcsolódhat.)
+  2. Az elv NEM TILTJA azt, hogy:
+    * a. grammatikai funkció szemantikailag üres elemmel (pl. FORM-ként
+      bevezetett it stb.) legyen kifejezve,
+      tehát ne is legyen argumentumpozícióval társítva
+    * b. szemantikai argumentumhoz a Ø funkciószimbólum (2.6.2.6.1) kapcsolódjon
 
 ### 1.3.2. A morfológia és a szintaxis viszonyára
 
+#### 1.3.2.1. A szintaktikai kódolás direkt volta
+  [principle of direct syntactic encoding]
 
-#### 1.3.2.1. A szintaktikai kódolás direkt volta [principle of direct syntactic encoding]
+* Minden nem-lexikai szabálynak változatlanul kell hagynia
+  a grammatikai funkciók és az argumentumok közötti kapcsolatokat -azaz
+  CSAK lexikai szabályok változtathatják meg a grammatikai funkcióknak a
+  predikátum--argumentum-struktúrához való hozzárendelését.
+=> a szintaxisban legfeljebb kétféle struktúrafüggő (transzformációs) viszony
+maradhatna:
+  1. A korlátlan távolságú mozgatások és törlések szabályai [unbounded movement
+     or deletion rules]. A transzformációk elkerülését itt a
+     funkcionális bizonytalanság (l. 3.4.) kezelése teszi lehetővé.
+  2. A korlátolt távolságú szabályoknak [bounded rules] az az osztálya, amely
+     nem változtatja meg a konstituensek grammatikai funkcióját:
+     a cserebere-szabályok [scrambling]
+    * Ezt a c-struktúrán működő műveletek kezelik.
 
+#### 1.3.2.2. A lexikai integritás hipotézise
+  [lexical integrity hypothesis, structural integrity of words]
 
-Minden nem-lexikai szabálynak változatlanul kell hagynia a grammatikai
-
-
-
-Az elvből következően a szintaxisban legfeljebb kétféle struktúrafüggő (transzformációs) viszony maradhatna:
-
-# 1. A korlátlan távolságú mozgatások és törlések szabályai [unbounded movement or
-
-deletion rules]. A transzformációk elkerülését itt a funkcionális bizonytalanság
-(l. 3.4.) kezelése teszi lehetővé.
-
-# 2. A korlátolt távolságú szabályoknak [bounded rules] az az osztálya, amely nem
-
-változtatja meg a konstituensek grammatikai funkcióját: a cserebere-szabályok
-[scrambling]. Ezt a c-struktúrán működő műveletek kezelik.
-
-#### 1.3.2.2. A lexikai integritás hipotézise.[lexical integrity hypothesis, structural
-
-integrity of words]
-
-A c-struktúrán belüli folyamatok (a funkcionális információ annotálása és az
-anaforikus információk indexelése) nem látják a szavak belső felépítését.
-
-Következményei:
-
-# 1. "Törlő" eljárások (azaz hiányrekonstrukciók pl.: gapping) nem érinthetnek szórészeket.
-
-
-# 2. A szavak anaforikus szigetek (nem mehet beléjük pronominalizáció).
-
-
-# 3. A szintaktikai szabályok nem változtathatnak meg és nem mozgathatnak inflexiós
-
-jelölőket (olyanokat, mint pl. TENSE, CASE, NUMBER). Ennek értelmében pl.
-
-
-
-40
-
-
+* A c-struktúrán belüli folyamatok (a funkcionális információ annotálása és az
+  anaforikus információk indexelése) nem látják a szavak belső felépítését.
+* Következményei:
+  1. "Törlő" eljárások (azaz hiányrekonstrukciók pl.: gapping)
+    nem érinthetnek szórészeket.
+  2. A szavak anaforikus szigetek (nem mehet beléjük pronominalizáció).
+  3. A szintaktikai szabályok
+    nem változtathatnak meg és nem mozgathatnak inflexiós jelölőket (olyanokat,
+    mint pl. TENSE, CASE, NUMBER)
+  * Ennek értelmében pl.  az orosz tárgyak akkuzatívusz─genitívusz váltakozása
+    nem szintaxis.
 
 #### 1.3.2.3. "Üres" elemek tilalma [the null-element constraint]
 
-
-Nem-terminális kategória által dominált string nem lehet azonos az üres
-
-3.4.)
+* Nem-terminális kategória által dominált string nem lehet üres string (e),
+  kivéve a konstituenskontrollálás eseteit. (Konstituens-kontrollálás:
+  wh-mozgatásra és hasonló szerkezetekre jellemző távolsági függések ─ l.  3.4.)
 
 ### 1.3.3. A funkcionális struktúrák jólformáltságát biztosító megszorítások
 
+#### 1.3.3.1. Konzisztencia (=értékunicitási feltétel)
+  [consistency, uniqueness condition]
 
-#### 1.3.3.1. Konzisztencia (=értékunicitási feltétel) [consistency, uniqueness condition]
-
-
-Minden grammatikai funkciónak és minden funkcionális jegynek csak egyetlenegy értéke lehet. (Az érték ugyanakkor lehet halmaz is.)
+* Minden grammatikai funkciónak és minden funkcionális jegynek csak egyetlenegy
+  értéke lehet. (Az érték ugyanakkor lehet halmaz is.)
 
 #### 1.3.3.2. Teljesség [completeness]
 
-(1) A régens vonzatigényeit az f-struktúrának ki kell elégítenie (azaz a megkívánt grammatikai funkcióknak értéket kell kapniuk az adott PRED
-f-struktúrájában).
-(2) A szemantikai argumentumhelyekhez társított grammatikai funkciók
-mindegyikének szemantikai jeggyel (azaz PRED attribútummal) is kell
-rendelkeznie.
+* A régens vonzatigényeit az f-struktúrának ki kell elégítenie (azaz a megkívánt
+  grammatikai funkcióknak értéket kell kapniuk az adott PRED f-struktúrájában).
+* A szemantikai argumentumhelyekhez társított grammatikai funkciók mindegyikének
+  szemantikai jeggyel (azaz PRED attribútummal) is kell rendelkeznie.
 
 #### 1.3.3.3. Koherencia [coherence]
 
-(1) Vonzatfunkció csak olyan f-struktúrában szerepelhet attribútumként,
-amelynek PRED-je az adott funkciót (is) igénylő régens.
-(2) Mindazokat a vonzatfunkciókat, amelyeknek van PRED attribútumuk,
-régensüknek szemantikai argumentumszereppel kell társítania (tehát nem
-veheti fel őket nem-thematikus vonzatként).
-
-A koherenciakövetelmény kiterjesztése:
-
-A nem vonzatszerepű funkcióknak is integrálódniuk kell az f-struktúrába, azaz
-megfelelő viszonyban kell állniuk egy PRED-del. Az ADJ integrálódásának az
-a feltétele, hogy PRED-del bíró f-struktúrában álljon. A TOP-ot és a FOC-t
-vagy azonosítani kell egy integrált funkcióval, vagy anaforikusan kapcsolni
-kell egy ilyenhez.
+* Vonzatfunkció csak olyan f-struktúrában szerepelhet attribútumként,
+  amelynek PRED-je az adott funkciót (is) igénylő régens.
+* Mindazokat a vonzatfunkciókat, amelyeknek van PRED attribútumuk,
+  régensüknek szemantikai argumentumszereppel kell társítania
+  (tehát nem veheti fel őket nem-thematikus vonzatként).
+* A koherenciakövetelmény kiterjesztése:
+  * A nem vonzatszerepű funkcióknak is integrálódniuk kell az f-struktúrába,
+    azaz megfelelő viszonyban kell állniuk egy PRED-del
+    * Az ADJ integrálódásának az a feltétele, hogy PRED-del bíró f-struktúrában
+      álljon. A TOP-ot és a
+    * FOC-t vagy azonosítani kell egy integrált funkcióval, vagy anaforikusan
+      kapcsolni kell egy ilyenhez.
 
 ### 1.3.4. A funkcionális azonosságok formájára
 
+#### 1.3.4.1. A funkcionális kapcsolatok lokális jellegének az elve
+  (=funkcionális lokalitás) [principle of functional locality]
 
-#### 1.3.4.1. A funkcionális kapcsolatok lokális jellegének az elve (=funkcionális
-
-lokalitás) [principle of functional locality]
-
-A lexikai és grammatikai sémák jelölői (azaz az attribútum és az érték "megnevezése") nem tartalmazhatnak kettőnél több függvényalkalmazást, azaz kizárólag:
-
-
-
-
-41
-
-"egyszerű" funkciókra
-saját jegyekre
-közvetlen alárendelten belüli funkciókra
-közvetlen alárendelten belüli jegyekre
+* A lexikai és grammatikai sémák jelölői (= az attribútum és az érték "megneve")
+  nem tartalmazhatnak kettőnél több függvényalkalmazást, azaz kizárólag:
+  "egyszerű" funkciókra
+  saját jegyekre
+  közvetlen alárendelten belüli funkciókra
+  közvetlen alárendelten belüli jegyekre
 utalhatnak.
-
-Az elv a funkciókra és funkcionális jegyekre vonatkozó mindenfajta (akár lexikonbeli, akár szintaktikai szabályok vagy reprezentációk formájában való) hivatkozásra
-vonatkozik.
-
-
-42
-
-
+* a funkciókra és funkcionális jegyekre vonatkozó mindenfajta hivatkozásra vonat
+  (akár lexikonbeli, akár szintaktikai szabályok vagy reprezentációk formájában)
 
 # 2. A mondattani reprezentációk formája
 
-
 ## 2.1. A kategoriális struktúra univerzális elvei
 
-
-A matematikai értelemben elvben felépíthető ágrajzok összességén belül a nyelvileg
-is lehetséges c-struktúrák körét (mind univerzálisan, mind pedig egy-egy nyelven
-belül) az alábbi jelenségekre vonatkozó általánosítások jelölik ki:
-
-
-
-
-Frázisok: olyan összefüggő szósorok, amelyek
-
-
-
-
-
-Az általánosításokra támaszkodva megfogalmazhatóak a kategoriális struktúra univerzális elvei, s ezekből megszorítások vezethetők le arra vonatkozóan, hogy milyen
-c-struktúrák lehetségesek a természetes nyelvekben. Ezek tehát a nyelvek leírására
-alkalmas CFG-k körét lehatároló megszorítások. Az univerzális elvek:
-
-# 1. az endocentricitás elve
-
-
-
-
-
-
-keverékmegoldások. Alább az elveket megvalósító rendszerek lényegi jellemzőit
-tárgyaljuk.
+* a nyelvileg is lehetséges c-struktúrák körét (mind univerzálisan, mind pedig
+  egy-egy nyelven belül) az alábbiakra vonatkozó általánosítások jelölik ki:
+  ─ szórend
+  * kiejtés
+  * a szavak, frázisok, mondatok formája
+* Frázisok: olyan összefüggő szósorok, amelyek
+  * helyettesítési egységek,
+  * egyben maradnak a mondat stiláris változataiban és parafrázisaiban
+  * korlátozzák a mondat kiejtési mintáit
+  * más frázisokkal való viszonyukban elrendezési korlátokat mutatnak.
+* Az általánosításokra támaszkodva megfogalmazhatóak
+  a kategoriális struktúra univerzális elvei,
+  s ezekből megszorítások vezethetők le arra vonatkozóan,
+  hogy milyen c-struktúrák lehetségesek a természetes nyelvekben 
+* Az univerzális elvek:
+  1. 1. az endocentricitás elve
+  2. a predikátum─argumentum-viszony lokális jellegének az elve
+* A c-struktúrák változatosságának az a fő forrása, hogy
+* ez a két elv ütközésben áll egymással
+  * Az endocentricitás következetesen bináris hierarchiákat igényel,
+  * a vonzatviszonyok lokalitása viszont lapos struktúrákat (amelyekben minden
+    argumentum ─ köztük az alany is ─ testvére a predikátumnak)
+* Sok nyelvben találhatóak ezért eltérő keverékmegoldások.
 
 ### 2.1.1. Az endocentricitás és az X' struktúrák
 
-
-A c-struktúra-elméletek célja az, hogy (az újraíró szabályok formájára vonatkozó
-általános megszorítások révén) a létrehozható fák körét leszűkítsék azokra a típusokra, amelyek ténylegesen szükségesek a természetes nyelvi mondatok c-struktúráinak a leírásához. Ezek közül az elméletek közül a lexikális és funkcionális kategóriák
-projekcióit leíró X'-elméletek (ejtsd: iksz-vonás elmélet, angolul: eks-bar theory) a
-legelterjedtebbek.
-
-Az X'-elmélet minden változata magában foglalja az endocentricitás elvét: minden
-
-
-mindenekelőtt kategoriális típusát. Az X' elméletek lényegi állításai:
-
-
-
-
-43
-
-(1) A kategoriális struktúrában minden szerkezet feje azonos kategóriájú, de kisebb
-vonásszámú (komplexitású), mint a szerkezet maga. (Az összetevők közötti vessző
-a sorrend tetszőlegességére utal):
-o
-
-o
-
-
-komplementumpozíciónak nevezzük
-
-specifikáló [specifier] pozíciónak nevezzük
-
-Többvonzatos fejek kezelésére vagy a rekurzív (aa)-t vagy a nem-bináris (ab)-t
+* A c-struktúra-elméletek célja az, hogy (az újraíró szabályok formájára
+  vonatkozó általános megszorítások révén) a létrehozható fák körét leszűkítsék
+  azokra a típusokra, amelyek ténylegesen szükségesek a természetes nyelvi
+* Ezek közül az legelterjedtebbek:
+  * a lexikális és funkcionális kategóriák projekcióit leíró X'-elméletek
+* Az X'-elmélet minden változata magában foglalja az endocentricitás elvét:
+  * minden frázis összetevői között feltételez egy kategoriális fej
+  * megszabja a frázis lényegi szintaktikai tulajdonságait, mindenekelőtt kateg 
+1. A kategoriális struktúrában minden szerkezet feje azonos kategóriájú, de
+   kisebb vonásszámú (komplexitású), mint a szerkezet maga. (Az összetevők
+   közötti vessző a sorrend tetszőlegességére utal):
+   a. X' → X , YP ─ ahol
+    X az összetevő kategoriális feje,
+    az YP által elfoglalt szerkezeti helyet pedig (vagyis a zéró vonásszámú
+    fejek maximális kategóriákkal betölthető testvércsomópontját)
+    komplementum pozíciónak nevezzük
+   b. XP → YP, X' ─ ahol
+    X' az összetevő kategoriális feje,
+    az YP által elfoglalt szerkezeti helyet pedig (vagyis az egyvonásos
+    fejek maximális kategóriákkal betölthető testvércsomópontját)
+    specifikáló [specifier] pozíciónak nevezzük
+* Többvonzatos fejek kezelésére vagy a rekurzív (aa)-t vagy a nem-bináris (ab)-t
 szokták még felvenni:
-aa. X'
-ab. X'
-
-→ X', YP
-o
-→ X , YP*
-
-(2) A szabad határozókat (adjunktumokat) általában XP által dominált XP testvéreiként vagy X' által dominált X' testvéreiként kezelik:
-
-XP
-
-
-XP
-
-YP
-[ADJUNCT]
-
-
-X'
-
-
-X'
-
-YP
-[ADJUNCT]
-
-(3) Az X' elmélet későbbi fejleménye az endocentricitás elvének a kiterjesztése a zárt
-elemszámú grammatikai kategóriáknak, az ún. funkcionális kategóriáknak az
-
-kategóriacímkét viselő alárendelő kötőszók, a D kategóricímkével ellátott névelők
-stb. (A terminus nem az LFG-n belül jött létre, így a benne szereplő "funkcionális"
-
-
-
-A kiterjesztés azt a felismerést tükrözi, hogy a frázisok szintaktikai viselkedését
-összetevőik közül sokkal inkább meghatározzák ezek a korábban némiképp lenézett
-
-
-összetevő kapcsolatában tehát a formaszót kell kategoriális fejnek tekinteni, ennek
-megfelelően pedig a frázis egésze is a formaszónak, és nem a "tartalmas" összetevőnek a projekciója. A "tartalmas" szók és a "formaszók" szintaktikai tulajdonságai
-között mindazonáltal lényeges különbségek is vannak (l. pl. az 2.5.1. pontot), így
-egy általánosabb szinten meg kell különböztetnünk egymástól a funkcionális kategóriák bármelyikébe tartozó és a főbb lexikai kategóriák valamelyikébe sorolható
-elemek csoportjait. Ezen az általános szinten a tetszőleges funkcionális kategóriá-
-
-
-44
-
-
-o
-
-o
-
-hoz tartozó elemekre F , a főbb lexikai kategóriákba tartozókra L kategóriájúakként hivatkozhatunk.
-o
-
-A projekciókkal rendelkező X kategóriák készlete így tehát:
-o
-
-o
-
-o
-
-o
-
-a. funkcionális kategóriák (F ): C , I , D
-o
-o
-o
-o o
-b. lexikai kategóriák
-(L ): N , V , A , P
-(4) A két típussal alkotott maximális projekciók (FP-k, ill. LP-k) lehetséges kombinációi meglehetősen korlátozottak.
-
-Az LFG sajátosságai az X' elmélet vonatkozásában:
-(1) Az angolhoz hasonló nyelvek alapvetően valóban az X' elveit követik, de ez
-nem minden nyelvben szükségszerű.
-
-Az X' elmélet szerint építkező nyelvekre is állnak azonban az alábbiak:
-(2) Minden c-struktúrabeli összetevő jelenléte (a fejeké is!) opcionális. (Jelenlétük nem a c-struktúrákra, hanem az f-stukturákra vonatkozó jólformáltsági
-
-
-o
-(3) Betartandó a lexikai integritás tétele (l. 1.3.2.2.): minden egyes X -t csak
-
-rálhatóak a frázisstruktúrában. Ez az F -okra is követelmény. Az angolban pl.
-o
-o
-
-C kategóriájú elem a that, if, I kategóriájúak az idő-mód segédigék, minden
-o
-más ige pedig V . Az oroszban (legalábbis az egyik lehetséges elemzés
-o
-o
-szerint) C a что 'hogy' és a kérdő ли '-e, vajon', I az összes finit igealak, míg
-o
-
-V -ba az infinitívuszok tartoznak. Más szóval: az LFG-ben a funkcionális
-kategóriák a lexikai kategóriáknak egy speciális alosztályát képviselik.
-(4) Indokolt feltételezés, hogy az I' vagy VP-t vagy S-t dominálhat közvetlenül.
-
-A c-struktúrákra vonatkozó konkrét megszorítások levezethetőek ezekből az
-absztraktabb, univerzális c-struktúra-megszorításokból: a c-struktúra-minták közül
-azok a jelöletlenek, amelyek megfelelnek ezeknek az univerzális endocentrikus
-megszorításoknak.
-
-### 2.1.2. A predikátum és az argumentumok összetartozásának az elve és az S
-
-kategória
-
-
-malayalam, warlpiri, dzsivarli, dzsakaltek stb.). Ez az elv mindenekelőtt a
-mondatszerkezet legmagasabb szintjén keresztezi az endocentricitást, mivel azt
-igényli, hogy az ige az összes argumentumával egy szinten kapcsolódjék össze mon-
-
-
-
-
-45
-
-
-alkotna.
-
-Ennek kezelésére azt feltételezzük, hogy az univerzális grammatika módot ad egy
-nem projektív, egzocentrikus, az IP-vel nem egybeeső S kategória használatára is.
-o
-(Nem projektív: nincs kategoriális (=strukturális) feje, kategóriája egyetlen X -éval
-
-lehet V, N, A, VP, NP, AP stb.) Ennek kapcsán bevezetjük a következő terminusokat:
-a. belső alanyú nyelvek: ahol az I testvére S kategóriájú egység. Az alany ezekben a
-nyelvekben (amilyen pl. az ír és a velszi) S-en, azaz I komplementumán belül
-jelenik meg.
-b. külső alanyú nyelvek: ahol nincs S; az I testvére itt VP, az alany pedig ezen kívül,
-azaz nem I komplementumán belül, hanem IP SPEC-jeként jelenik meg. Ilyen
-nyelv pl. az angol.
-belső alany
-
-I'
-
-
-I
-
-S
-
-... XP ...
-subj
-
-külső alany
-
-IP
-
-
-XP
-
-I'
-subj
-
-
-I
-
-VP
-
-...
-...
-
-
-S kategóriájú összetevő a fentiek értelmében csakis belső alanyú nyelvekben létezik
-és S mindig egzocentrikus. Ez nem zárja ki azt, hogy S belső felépítése akár konfigurációs, akár nemkonfigurációs lehessen.
-
-Konfigurációsaknak azokat a szerkezeteket nevezzük, amelyekben az összetevők
-szintaktikai funkcióját a szerkezetben elfoglalt pozíciójuk jeleníti meg. Az X'
-elvek alapján felépülő frázisok konfigurációs szerkezetek. Nem-konfigurációs
-szerkezetről akkor beszélünk, ha a funkciót nem az összetevő pozíciója, hanem
-egyéb eszközök (tipikusan a morfológia) jeleníti meg.
+   aa. X' → X', YP
+   ab. `X' → X , YP*`
+2. A szabad határozókat (adjunktumokat) általában
+  XP által dominált XP testvéreiként vagy X' által dominált X' testvéreiként 
+  XP -> XP   YP
+          [ADJUNCT]
+  X' -> X'   YP
+          [ADJUNCT]
+3. Az X' elmélet későbbi fejleménye az endocentricitás elvének a kiterjesztése
+   a zárt elemszámú grammatikai kategóriáknak, az ún. funkcionális
+   kategóriáknak az elemeire ─
+   olyanokra, mint pl. az I kategóriacímke alá sorolt segédigék,
+   a C kategóriacímkét viselő alárendelő kötőszók,
+   a D kategóricímkével ellátott névelők stb.
+   (A terminus nem az LFG-n belül jött létre, így a benne szereplő
+   "funkcionális" szó nem az LFG-n belül megszokott értelemben értendő.)
+* A kiterjesztés azt a felismerést tükrözi, hogy
+  a frázisok szintaktikai viselkedését összetevőik közül
+  sokkal inkább meghatározzák ezek a korábban némiképp lenézett "formaszók",
+  mint a testvércsomópontjaikban álló ─ és szemantikailag tartalmasabb ─
+  főnevekkel, igékkel, melléknevekkel alkotott szerkezetek.
+  => a formaszót kell kategoriális fejnek tekinteni, ennek megfelelően pedig
+  a frázis egésze is a formaszónak, és nem a "tartalmas" összetevőnek a
+  projekciója
+* A "tartalmas" szók és a "formaszók" szintaktikai tulajdonságai között
+  mindazonáltal lényeges különbségek is vannak (l. pl.  az 2.5.1. pontot),
+  => egy általánosabb szinten meg kell különböztetnünk egymástól a
+  funkcionális kategóriák bármelyikébe tartozó és
+  a főbb lexikai kategóriák valamelyikébe sorolható elemek csoportjait. Ezen
+  az általános szinten a tetszőleges funkcionális kategóriához tartozó
+  elemekre F^0 , a főbb lexikai kategóriákba tartozókra L^0 kategóriájúakként
+  hivatkozhatunk.
+* A projekciókkal rendelkező X kategóriák készlete így tehát:
+    a. funkcionális kategóriák (F ): C^0, I^0, D^0
+    b. lexikai kategóriák (L ): N^0, V^0, A^0, P^0
+4. A két típussal alkotott maximális projekciók (FP-k, ill. LP-k) lehetséges
+   kombinációi meglehetősen korlátozottak.  Az LFG sajátosságai az X' elmélet
+   vonatkozásában:
+  1. Az angolhoz hasonló nyelvek alapvetően valóban az X' elveit követik, de ez
+     nem minden nyelvben szükségszerű.  
+* Az X' elmélet szerint építkező nyelvekre is állnak azonban az alábbiak:
+  2. Minden c-struktúrabeli összetevő jelenléte (a fejeké is!) opcionális.
+     (Jelenlétük nem a c-struktúrákra, hanem az f-stukturákra vonatkozó
+     jólformáltsági követelmények, megszorítások és elvek ─ mint pl. a
+     teljesség, koherencia, konzisztencia, l. 1.3.3. ─ interakciójából
+     következik.) 
+  3. Betartandó a lexikai integritás tétele (l. 1.3.2.2.)
+    * minden egyes X^0-t csak morfológiailag teljes szó képviselhet ─
+      puszta affixumok vagy különálló morfológiai jegyek (bár mindkettő
+      információt adhat az f-struktúrának) nem generálhatóak a
+      frázisstruktúrában. Ez az F^0-okra is követelmény
+    * Az angolban pl.  C kategóriájú elem a that, if,
+      I kategóriájúak az idő-mód segédigék, minden más ige pedig V 
+    * Az oroszban (legalábbis az egyik lehetséges elemzés szerint)
+      C a что 'hogy' és a kérdő ли '-e, vajon', I az összes finit igealak, míg
+      V^0-ba az infinitívuszok tartoznak
+    * Más szóval: az LFG-ben a funkcionális kategóriák a lexikai kategóriáknak
+      egy speciális alosztályát képviselik.
+  4. Indokolt feltételezés, hogy az I' vagy VP-t vagy S-t dominálhat közvetlenül.
+* A c-struktúrákra vonatkozó konkrét megszorítások
+  levezethetőek ezekből az absztraktabb, univerzális
+  c-struktúra-megszorításokból:
+  a c-struktúra-minták közül azok a jelöletlenek, amelyek megfelelnek ezeknek az
+  univerzális endocentrikus megszorításoknak.
+
+### 2.1.2. A predikátum és az argumentumok összetartozásának az elve és az S kat
+
+* a predikátum─argumentum-lokalitás elve: az, hogy
+  a predikátumok igyekeznek minél közelebb állni argumentumaikhoz ─ az alany is
+  (tagalog, magyar, malayalam, warlpiri, dzsivarli, dzsakaltek stb.).  Ez az elv
+* mindenekelőtt a mondatszerkezet legmagasabb szintjén keresztezi az endocentet,
+  mivel azt igényli, hogy az ige az összes argumentumával egy szinten
+  kapcsolódjék össze mondattá ─
+  anélkül, hogy előbb ezek egy részével igei típusú projekciókat (V', VP) alkotn
+* Ennek kezelésére azt feltételezzük, hogy
+  az univerzális grammatika módot ad egy
+  nem projektív, egzocentrikus, az IP-vel nem egybeeső S kategóriára is. 
+  * Nem projektív: nincs kategoriális (=strukturális) feje,
+  kategóriája egyetlen X^0-éval sem azonosítható.
+  * Egzocentrikus: funkcionális fejének kategóriája nincs megkötve ─
+    lehet V, N, A, VP, NP, AP stb.)
+* Ennek kapcsán bevezetjük a következő terminusokat:
+  a. belső alanyú nyelvek: ahol az I testvére S kategóriájú egység.
+    * Az alany ezekben a nyelvekben (amilyen pl. az ír és a velszi) S-en, azaz I
+      komplementumán belül jelenik meg.
+                                       I'
+                                   I      S
+                                       ...XP...
+c                                        subj
+  b. külső alanyú nyelvek: ahol nincs S; az I testvére itt VP,
+    az alany pedig ezen kívül, azaz nem I komplementumán belül, hanem
+    IP SPEC-jeként jelenik meg.  Ilyen nyelv pl. az angol.
+                                       IP
+                                   X'      I'
+                                 subj    I   VP
+* S kategóriájú összetevő a fentiek értelmében csakis belső alanyú nyelvekben
+* S mindig egzocentrikus. Ez nem zárja ki azt, hogy
+* S belső felépítése akár konfigurációs, akár nemkonfigurációs lehessen.
+* Konfigurációsaknak azokat a szerkezeteket nevezzük, amelyekben
+  az összetevők szintaktikai funkciója <= a szerkezetben elfoglalt pozíciójuk
+* Az X' elvek alapján felépülő frázisok konfigurációs szerkezetek.
+* Nem-konfigurációs szerkezetről akkor beszélünk, ha
+  a funkció <= nem az összetevő pozíciója, hanem tipikusan a morfológia
 
 ### 2.1.3. Belső alanyú nyelvek [internal subject languages]
 
-
 #### 2.1.3.1. A nem-konfigurációs S
 
-
-sok különböző kategóriájú közvetlen összetevője is:
-
-S → X*
-
-
-
-
-Ha S ilyen felépítésű, akkor az egyes szintaktikai funkciókat viselő összetevők helye
-általában nem rögzített, azaz a szerkezet nem konfigurációs.
-
-
-46
-
-
+* A projektivitás hiánya miatt S nem köteles binárisan ágazni ─
+  * lehet több, akár nagyon sok különböző kategóriájú közvetlen összetevője is:
+  * `S → X*` ─ ahol az X-ek tetszőleges fajtájú és vonásszámú kategóriák 
+  * ilyenkor az egyes szintaktikai funkciókat viselő összetevők helye általában
+    nem rögzített, azaz a szerkezet nem konfigurációs.
 
 #### 2.1.3.2. A konfigurációs S
 
+* Nem projektív, egzocentrikus szerkezet is lehet azonban konfigurációs.
+  * például ha S úgy bomlik binárisan két maximális főkategóriára, hogy ezek
+    funkciója (pl.  lineárisan) rögzített, úgy a szerkezet egzocentrikus, de kon
+                                      IP/I'
+                                     I    S
+                                     NP   XP
+* Amennyiben XP is endocentrikus,
+  S pedig predikátumvégű [predicate-final],
+  azaz funkcionális feje mindig a záró összetevő, úgy
+  a fenti struktúra megfelel az írben és a velsziben megtalálható konfig VSO-nak
+* A velsziben a
+  * finit ige mondatkezdő: Vfin-Subj-Obj. Ha azonban az igei tartalmat a
+  * infinit
+    * az infinit igealakot hagyományosan deverbális főnévnek [verbal noun] tekin
+    * `AUX_fin  S [V_nonfin  O]`
+    * a mondat kezdő eleme a finit AUX lesz,
+    * az infinit igei szerkezet pedig ennek a komplementuma
+* Elterjedt elemzés, hogy
+  a finit alakok az I,
+  a deverbális névszók az S mögötti VP-ben, V pozícióban vannak. Ha ebből
+  indulunk ki, akkor a fenti két mondatnak az LFG-ben a következő szerkezetet
+  tulajdoníthatjuk:
+a.  IP/I' b.  IP/I' I S I S gwelodd gwnaeth
 
-Nem projektív, egzocentrikus szerkezet is lehet azonban konfigurációs. Amennyiben
-például S úgy bomlik binárisan két maximális főkategóriára, hogy ezek funkciója (pl.
-lineárisan) rögzített, úgy a szerkezet (bár egzocentrikus, de) konfigurációs. Ilyen lehet
-pl. az alábbi szerkezet, ha csak az XP minősülhet benne funkcionális fejnek:
+        -------IP/I'-------                   -------IP/I'-------
+        I                 S                   I                 S
+        |            ------------             |            ------------
+      látott        NP        VP/V'        csinált        NP        VP/V'
+                  János        NP                       János    VP      NP
+                            sárkány                             látás sárkány
 
-IP/I'
+## 2.2. Attribútumok és értékek 
 
+### 2.2.1. A funkcionális attribútumok/jegyek [functional attributes/features]
 
-I
-
-S
-
-
-NP
-
-XP
-
-Amennyiben XP is endocentrikus, S pedig predikátumvégű [predicate-final], azaz
-funkcionális feje mindig a záró összetevő, úgy a fenti struktúra megfelel az írben és a
-velsziben megtalálható konfigurációs VSO strukturális típusnak.
-
-A velsziben a finit ige mondatkezdő: Vfin-Subj-Obj. Ha azonban az igei tartalmat
-a hagyományosan deverbális főnévnek [verbal noun] tekintett infinit alak fejezi ki,
-akkor a mondat kezdő eleme a finit AUX lesz, az infinit igei szerkezet pedig ennek a
-
-a. Gwelodd
-
-Siôn ddraig.
-lát-3SG.PAST János sárkány
-
-
-
-b. Gwnaeth
-
-Siôn weld ddraig.
-do-3SG.PAST János lát sárkány
-
-
-
-
-Elterjedt elemzés, hogy a finit alakok az I, a deverbális névszók az S mögötti VP-ben,
-
-V pozícióban vannak. Ha ebből indulunk ki, akkor a fenti két mondatnak az LFG-ben
-a következő szerkezetet tulajdoníthatjuk:
-a.
-
-
-IP/I'
-b.
-
-IP/I'
-
-
-
-I
-
-S
-
-I
-
-S
-gwelodd
-
-gwnaeth
-
-látott
-
-NP
-
-VP/V'
-csinált
-
-NP
-
-VP/V'
-
-Siôn
-│
-
-Siôn
-
-
-János
-
-NP
-
-János
-
-V
-
-NP
-ddraig
-weld
-ddraig
-sárkány
-látás
-sárkány
-
-
-
-
-47
-
-
-## 2.2. Attribútumok és értékek
-
-
-### 2.2.1. A funkcionális attribútumok vagy funkcionális jegyek functional attributes =
-
-functional features]
-
-Az f-struktúrákban attribútumokként a lexikai egységeknek és a szintaktikai összetevőknek a funkcionális jegyei szerepelnek. Funkcionális jegyeknek tekintjük azokat a
-grammatikailag releváns tulajdonságokat, amelyek nem kategoriális természetűek.
-
-Ilyenek: a mondatrészszerep (más néven: grammatikai funkció: SUBJ, OBJ, ADJ
-stb.), a különböző morfoszintaktikai jellemzők (szám, személy, idő, mód, eset, grammatikai nem stb., valamint a lexikai egységek PRED nevű jegye, amelynek értéke
-mindig az adott egységnek a (vonzatkeretet is tartalmazó) szemantikai formája. Ezek
-a jegyek képezik tehát az f-struktúrákkal megadott függvényeknek az értelmezési
-tartományát.
-
-A funkcionális attribútumoknak három fő típusuk van: a grammatikai jegy, a
-grammatikai viszony és a szemantikai jegy. Formális szempontból ezeket a hozzájuk
-rendelhető értékek típusa különbözteti meg egymástól (részletezve l. 2.2.3.)
+* Az f-struktúrákban attribútumokként a lexikai egységeknek és a szintaktikai
+  összetevőknek a funkcionális jegyei szerepelnek.
+* Funkcionális jegyeknek tekintjük azokat a grammatikailag releváns
+  tulajdonságokat, amelyek nem kategoriális természetűek.
+* Ilyenek: a
+  * mondatrészszerep (más néven: grammatikai funkció: SUBJ, OBJ, ADJ stb.), a
+  * morfoszintaktikai jellemzők (szám, személy, idő, mód, eset, grammatikai nem)
+  * a lexikai egységek PRED nevű jegye, amelynek értéke mindig az adott
+    egységnek a (vonzatkeretet is tartalmazó) szemantikai formája. Ezek a jegyek
+* A funkcionális attribútumoknak három fő típusuk van:
+  a grammatikai jegy, a grammatikai viszony és a szemantikai jegy.
+  * Formálisan a hozzájuk rendelhető értékek típusa különbözteti meg őket
+    (részletezve l.  2.2.3.)
 
 ### 2.2.2. Értéktípusok [value-types of attributes]
 
-
 Az érték lehet:
+  1. egyszerű szimbólum: ACC, SG, PAST, +, -, 1, 2, ...
+  2. szemantikai forma: 'BOY', 'LOVE<(↑SUBJ),(↑OBJ)>' (l. 2.6.2.)
+  3. alárendelt f-struktúra
+  4. fonológiai forma: it, there (angol); fittyet [hány vmire], [bedobja] a
+     törülközőt 
+1. Az egyszerű szimbólumok [simple symbols] a nyelvleírásnak (az univerzális
+   grammatikának) primitív általános terminusai, számuk korlátozott (azaz véges) 
+2. A szemantikai formák [semantic forms] ─ részletes jellemzésüket l. az 2.6.2.
+  * a nyelvi egységeknek egyrészt a jelentését, másrészt pedig
+    a jelentésükből magyarázható egyedi szintaktikai tulajdonságaikat kódolják.
+  * Döntő többségükben tehát nyelvspecifikus objektumok, s nem az univerzális
+  * Számuk egy-egy nyelvi rendszeren belül azonban szintén véges (még ha nem
+    alkotnak is zárt osztályt).
+  * Forrásuk a lexikon: egy/más részük ott őrződik/ keletkezik, tehát a
+  * Felépítésüket azonban mindig teljes mértékben a szótári komponensben nyerik
+    * A lexikai integritás értelmében nincs a szintaxis számára látható szerkjük
+  * felső vesszők között jelenítjük meg őket.  
+  * teljes grammatika a tételek jelentését a belső jelentésszerkezetet is
+    feltüntető formulák képében rögzíti
+    * A szintaxis számára azonban az elemek belső jelentésszerkezete érdektelen.
+      Ezért (de azért is, mert a szójelentések leírásában még távolról sincsenek
+      általánosan elfogadott formalizmusok) a szintaktikai munkákban a PRED jegy
+      értékében nem szerepeltetünk jelentésleírásokat, s
+    * ezek helyén a tétel betűképét tüntetjük fel (általában nagy betűkkel
+      kiírva) ─ pl.: (↑PRED)='LÁNY', (↑PRED)='AGGLEGÉNY' stb.
+  * A régensek szemantikai formája a tétel vonzatkeretének a leírását is
+    tartalmazza (részletesebben l. 2.6.2.7.), pl.: 'LOVE (x,y) <(↑SUBJ),(↑OBJ)>'
 
+3. Az f-struktúrák mibenlétét 1.2.3. és 1.2.5. alatt már tárgyaltuk. Az ott
+  * A lehetséges f-struktúrák száma elvileg egy-egy nyelven belül is végtelen.
 
-# 1. egyszerű szimbólum: ACC, SG, PAST, +, -, 1, 2, ...
-
-
-# 2. szemantikai forma: 'BOY', 'LOVE<(↑SUBJ),(↑OBJ)>' (l. 2.6.2.)
-
-
-# 3. alárendelt f-struktúra
-
-
-# 4. fonológiai forma: it, there (angol); fittyet [hány vmire],
-
-[bedobja] a törülközőt stb.,
-
-
-
-# 1. Az egyszerű szimbólumok [simple symbols] a nyelvleírásnak (az univerzális
-
-grammatikának) primitív általános terminusai, számuk korlátozott (azaz véges).
-
-
-
-
-másrészt pedig a jelentésükből magyarázható egyedi szintaktikai tulajdonságaikat
-kódolják. Döntő többségükben tehát nyelvspecifikus objektumok, s nem az univerzális grammatika rögzített elemei. Számuk egy-egy nyelvi rendszeren belül
-azonban szintén véges (még ha nem alkotnak is zárt osztályt).
-
-Forrásuk a lexikon: egy részük ott őrződik, más részük azonban a lexikonban
-keletkezik, tehát a grammatika egészét tekintve nem feltétlenül primitívumok.
-
-Felépítésüket azonban mindig teljes mértékben a szótári komponensben nyerik el,
-s a szintaxisba már készen, atomi elemekként kerülnek, ugyanúgy, mint a szimpla
-szimbólumok. A lexikai integritás értelmében nincs a szintaxis számára látható
-szerkezetük, a szintaxis számára tehát primitívumok. Részben erre, részben szemantikai természetükre utal az, hogy mindig felső vesszők között jelenítjük meg
-őket.
-
-
-48
-
-
-
-A szemantikai formákban egy teljes grammatika a tételek jelentését a belső jelentésszerkezetet is feltüntető formulák képében rögzíti. A szintaxis számára azonban az elemek belső jelentésszerkezete érdektelen. Ezért (de azért is, mert a szójelentések leírásában még távolról sincsenek általánosan elfogadott formalizmusok) a szintaktikai munkákban a PRED jegy értékében nem szerepeltetünk
-jelentésleírásokat, s ezek helyén a tétel betűképét tüntetjük fel (általában nagy
-
-
-A régensek szemantikai formája a tétel vonzatkeretének a leírását is tartalmazza (részletesebben l. 2.6.2.7.), pl.:
-'LOVE (x,y) <(↑SUBJ),(↑OBJ)>'
-
-jelentés
-vonzatkeret
-
-# 3. Az f-struktúrák mibenlétét 1.2.3. és 1.2.5. alatt már tárgyaltuk. Az ott elmondottak természetesen az f-struktúrákon belüli attribútumok értékeként megtalálható alsóbb rangú f-struktúrákra [subsidiary f-structure] is állnak. A lehetséges
-
-f-struktúrák száma elvileg egy-egy nyelven belül is végtelen.
-
-# 4. Fonológiai formák [phonological forms]: a jólformáltsághoz elengedhetetlen, de
-
-önálló jelentés nélkül használt alakok (részletesebben l. 2.2.3.3. és 4.2.1.). Lényeges szerepet játszanak az idiómák kezelésében.
+4. Fonológiai formák [phonological forms]: a jólformáltsághoz elengedhetetlen,
+   de önálló jelentés nélkül használt alakok (részletesebben l. 2.2.3.3. és
+   4.2.1.). Lényeges szerepet játszanak az idiómák kezelésében.
 
 A különböző típusú értékek előfordulási helyei:
-előfordulási hely
+előfordulási hely     értéktípus
 
-értéktípus
+a. f-struktúrában                       CASE DATIVE
+ lexikai tételben  egyszerű szimbólum   PRED 'pro' 
+    annotációkban  szemantikai forma    PRED 'LOVE<(↑SUBJ), (↑OBJ)>'
 
-a. f-struktúrában 
-lexikai tételben  egyszerű szimbólum
-annotációkban  szemantikai forma
-
-b. f-struktúrában
-
-példák
-attribútum
-érték
-
-CASE
-
-PRED
-
-'pro'
-
-
-DATIVE
-
-
-PRED
-
-'LOVE<(↑SUBJ), (↑OBJ)>'
-
-alárendelt f-struktúra
-
-
-SUBJ
-
-szimbólumok halmaza
-szemantikai formák halmaza
-f-struktúrák halmaza
-
-
-PER
-
- PRED 'GIRL' 
- NUM SG 
-{1, 2}
-
-
-PRED
-
-ADJ
-
-{'MARY','JOHN','PAUL','KATE'}
- [ PRED 'YESTERDAY' ] ,
-
-
-
-
-
-
-
-
- PRED 'WITH<(↑OBJ)>' 
- OBJ 'PLEASURE'
-,
- PRED 'IN<(↑OBJ)>'
-
- OBJ 'THE GARDEN' 
-
-
-
-
-
-
-
-
-
-
-A halmazok felírásánal általában véve is, az f-struktúrahalmazok felírásában pedig
-különösen vigyáznunk kell arra, hogy a halmazelemek közé vesszőt tegyünk. Csakis
-ebből látható, hogy a kapcsos zárójelek ilyenkor egy halmaz elemeit fogják közre
-
-
-
-
-49
-
-(amelyek között konjunktív kapcsolat áll fenn). A kapcsos zárójeleket ugyanis
+b. f-struktúrában   alárendelt f-struktúra      SUBJ [ ]
+                    szimbólumok halmazaq        PER {1, 2}
+                    szemantikai formák halmaza  PRED {'MARY','JOHN','PAUL'}
+                    f-struktúrák halmaza        ADJ
+* kapcsos zárójel
+  * a halmazelemek közé vesszőt tegyünk
+  * egyébként vagylagos (diszjunktív) kapcsolat jelölésére használjuk
 
 
 ### 2.2.3. A funkcionális attribútumok típusai
