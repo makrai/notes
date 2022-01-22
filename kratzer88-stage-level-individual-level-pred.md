@@ -92,7 +92,7 @@ a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
 (11) weil heute fast aile Kendldaten _Hans_ h1essen
      since today almost all candidates _Htms_ were named
      since almost all of today's candidates were nomed ·Hans..
-* I n the above exomples, all the sentences with
+* In the above exomples, all the sentences with
   * stage-level predicates have two reodfngs
     (sometimes corresponding to a d i f ference fn intonation) , while the
   * Individual-level predicates have only one . The readings
