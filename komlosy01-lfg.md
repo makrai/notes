@@ -82,11 +82,16 @@ Komlósy András
 
 ##### 1.1.1.1.2. Univerzalitás
 
-* A belső szerkezet [internal structure] ennek ellenére lényegében minden nyelvben azonos. Ez azt jelenti, hogy az információtartalmukban egymásnak megfeleltethető mondatszakaszok között azonos típusú függési viszonyok (szintaktikai alá-, föléés mellérendeltségek) állnak fenn, tehát az ilyen mondatdarabok grammatikai funkciói a
-különböző nyelvekben azonosaknak tekinthetők. Pl. a fenti mondatok mindegyikében
-egy 'lát' jelentésű egység az állítmány, a beszélő az alany, a hallgató a tárgy, és mindegyik mondat tartalmaz egy határozói szerepű kifejezést is, amely a szintén
-mindegyikükben megtalálható tagadást a beszédidőt megelőző hosszabb időtartamra
-vonatkoztatja.
+* A belső szerkezet [internal structure] ennek ellenére lényegében minden
+  nyelvben azonos. Ez azt jelenti, hogy az információtartalmukban egymásnak
+  megfeleltethető mondatszakaszok között azonos típusú függési viszonyok
+  (szintaktikai alá-, föléés mellérendeltségek) állnak fenn, tehát az ilyen
+  mondatdarabok grammatikai funkciói a különböző nyelvekben azonosaknak
+  tekinthetők. Pl. a fenti mondatok mindegyikében egy 'lát' jelentésű egység az
+  állítmány, a beszélő az alany, a hallgató a tárgy, és mindegyik mondat
+  tartalmaz egy határozói szerepű kifejezést is, amely a szintén mindegyikükben
+  megtalálható tagadást a beszédidőt megelőző hosszabb időtartamra
+  vonatkoztatja.
 * A mondat belső szerkezetének LFG-beli modellje az ún. funkcionális szerkezet
 
 ##### 1.1.1.1.3. Transzparencia
@@ -921,9 +926,9 @@ c                                        subj
   tulajdoníthatjuk:
 a.  IP/I' b.  IP/I' I S I S gwelodd gwnaeth
 
-        -------IP/I'-------                   -------IP/I'-------
+        ~~~~~~~IP/I'~~~~~~~                   ~~~~~~~IP/I'~~~~~~~
         I                 S                   I                 S
-        |            ------------             |            ------------
+        |            ~~~~~~~~~~~~             |            ~~~~~~~~~~~~
       látott        NP        VP/V'        csinált        NP        VP/V'
                   János        NP                       János    VP      NP
                             sárkány                             látás sárkány
@@ -1002,668 +1007,396 @@ b. f-struktúrában   alárendelt f-struktúra      SUBJ [ ]
 
 ### 2.2.3. A funkcionális attribútumok típusai
 
-
-A funkcionális attribútum típusa:
-
-
-(3) szemantikai jegy
-
+(1) grammatikai funkció ─ ha az érték ALÁRENDELT F-STR. (vagy ezek halmaza)
+(2) grammatikai jegy ─ ha az érték EGYSZERŰ SZIMBÓLUM (vagy ezek halmaza)
+(3) szemantikai jegy ─ ha az érték SZEMANTIKAI FORMA vagy FONOLÓGIAI FORMA
 
 #### 2.2.3.1. A grammatikai viszonyok (=grammatikai vagy szintaktikai funkciók)
-
 [grammatical/syntactic relations, grammatical/syntactic functions]
 
-
-A grammatikai funkciók egy véges univerzális halmaznak az elemei. Ilyenek:
-
-
-Formális szempontból:
-
-olyan attribútumok, amelyekhez értékként f-struktúrák
-(vagy f-struktúrák halmazai) tartoznak.
-
-
-Grammatikai tartalmuk: jelentés nélküli (tehát szemantikailag interpretálhatatlan)
-kapcsolatok
-a felszíni szintaktikai összetevők és
-a lexikai szerkezetek (argumentumstruktúrák) között.
-
-Szerepük mindenekelőtt az ezek közötti leképezések biztosítása.
-
-Képletesen: olyan csatlakozózsinórok szerepét töltik be, amelyek egyik végükkel a
-szótári tételek argumentumhelyeihez, a másikkal a c-struktúra csomópontjaihoz csatlakoznak. Az LFG formalizmusában egy-egy ilyen "zsinórt" a
-"csatlakozási pontok" (egyfelől egy lexikonbeli argumentumhely, másfelől egy
-c-struktúra-pozíció) azonos megjelölése ad meg:
-
-
-50
-
-
-c-struktúra:
-
-
-S [f1]
-
-
-NP [f2]
-
-VP [f3]
-
-f1=f3
-│
-
-│
-│
-│
-│
-│
-
-N [f4]
-
-V [f5]
-
-NP [f6]
-│
-f2=f4 • • •> f3=f5
-(f3OBJ)=f6 <══════════╗
-│
-•
-(f6CASE)=ACC
-║
-│
-•
-
-║
-│
-•
-
-Det [f7]
-
-N [f8]
-║
-│
-•
-f6=f7
-f6=f8
-║
-│
-•
-║
-│ f1=f3=f5
-•
-f1=f3=f5 ║
-
-╔══════════════════╝
-•
-│
-║
-•
-│
-║
-↓
-⇓
-lexikai struktúra: •
-•
-<(f5SUBJ), (f5OBJ)>
-killed: V, (f5PRED)='KILL ( AG , PAT )'
-(f5TENSE)=PAST
-
-A megfelelő grammatikai funkcióknak az argumentumhelyekhez és a c-struktúrabeli
-összetevőkhöz való hozzárendelését a grammatikai funkciók kódolásának nevezzük.
-
-Mivel ez két különböző komponensben és különböző mechanizmusokkal történik,
-meg kell különböztetnünk egymástól a szintaktikai kódolást és a lexikai kódolást
-(részletesebben l. 2.5. és 2.7.).
-
-Bár a grammatikai funkciók univerzálisak, az összetevőkre való leképezésük
-lehetőségei nyelvspecifikusak (különböző mértékben és módon hivatkozhatnak cstruktúrabeli pozíciókra, ill. bizonyos morfémák jelenlétére).
-
-A grammatikai funkciók másik fontos szerepe az, hogy mintegy különböző szintaktikai "rangokat" adnak azoknak az összetevőknek, amelyekhez járulnak: az összetevők mondattani lehetőségei alapvetően attól függenek, hogy milyen grammatikai
-funkciót viselnek. A kontrollhatóságuk, kontrollálási képességük, anaforikus
-viszonyaik, egyeztetési lehetőségeik stb. terén tapasztalható aszimmetriákban a
-köztük levő "rangkülönbségek" jelennek meg.
+* A hagyományos nyelvtanok mondatrészviszonyainak  a megfelelői,
+  * alanyi, tárgyi és egyéb vonzatfunkcióknak, szabad határozói szerepeknek stb
+  vagyis a mondat alkotórészei között lehetséges szintaktikai kapcsolattípusok.
+* egy véges univerzális halmaznak az elemei. Ilyenek:
+* SUBJ(ect), OBJ(ect), ADJ(unct), stb. ─ részletesebben l. 2.3.
+* Formális szempontból: olyan attribútumok, amelyekhez értékként f-struktúrák
+  (vagy f-struktúrák halmazai) tartoznak.
+* Grammatikai tartalmuk:
+  jelentés nélküli (tehát szemantikailag interpretálhatatlan) kapcsolatok a
+  felszíni szintaktikai összetevők és a lexikai (arg) szerkezetek között.
+  * Szerepük mindenekelőtt az ezek közötti leképezések biztosítása.
+  * Képletesen: olyan csatlakozózsinórok szerepét töltik be, amelyek
+    egyik végükkel a szótári tételek argumentumhelyeihez,
+    a másikkal a c-struktúra csomópontjaihoz csatlakoznak
+    * egy-egy ilyen "zsinórt" a "csatlakozási pontok" azonos megjelölése ad meg
+* A grammatikai funkcióknak az argumentumhelyekhez és a c-struktúrabeli
+  összetevőkhöz való hozzárendelését
+  a grammatikai funkciók __kódolásának__ nevezzük.
+  * két különböző komponensben és különböző mechanizmusokkal történik, meg kell
+  * a szintaktikai kódolást és a lexikai kódolást
+    (részletesebben l. 2.5. és 2.7.)
+* a grammatikai funkcióknak az összetevőkre való leképezése nyelvspecifikus
+  (különböző mértékben és módon hivatkozhatnak c-struktúrabeli pozíciókra, ill.
+  bizonyos morfémák jelenlétére).
+* különböző szintaktikai "rangokat" adnak az az összetevőknek, amelyekhez
+  * az összetevők mondattani lehetőségei ettől függenek
+    * A kontrollhatóságuk, kontrollálási képességük, anaforikus viszonyaik,
+      egyeztetési lehetőségeik stb. terén aszimmetriák
 
 #### 2.2.3.2. A grammatikai jegyek [grammatical features]
 
-
-vagy ilyenekből álló halmazok tartoznak.
-
-Grammatikai tartalmuk: az összetevők (mindenekelőtt a lexikai egységek) szintaktikailag releváns, nem viszonyjellegű tulajdonságai, morfoszintaktikai jellemzői.
-
-
-
-
-51
-
-
-Feltételezzük, hogy az összes lehetséges emberi nyelv leírásához elégséges a
-grammatikai jegyeknek egy korlátozott (véges) univerzális halmazával számolnunk
-(amelynek természetesen minden egyes nyelv csak egy valódi részhalmazát használja). Ilyen jegyek: CASE, GENDER, NUMBER, PERSON, TENSE, PRED,
-
-FINITE stb.
-
-Többségük tehát a hagyományos leírásokból is ismert grammatikai tulajdonságoknak felel meg. Mivel e tulajdonságokat a szóalakok hordozzák, a grammatikai
-jegyeket a lexikai kódolás (l. 2.7.) vezeti be.
+* Formális szempontból: olyan attribútumok, amelyekhez értékként egyszerű
+  szimbólumok (pl.: ACC, DAT, MASC, SG, PL, PAST, +, ─, 1, 3 stb.) vagy
+  ilyenekből álló halmazok tartoznak.
+* Grammatikai tartalmuk: az összetevők (mindenekelőtt a lexikai egységek)
+  szintaktikailag releváns, nem viszonyjellegű tulajdonságai, morfoszintaktikai
+* az összes lehetséges emberi nyelv leírásához elégséges a grammatikai
+  jegyeknek egy korlátozott (véges) univerzális halmazával számolnunk 
+  * eg CASE, GENDER, NUMBER, PERSON, TENSE, PRED, FINITE stb.
+* Többségük tehát a hagyományos leírásokból is ismert grammatikai tulajdonságok
+* e tulajdonságokat a szóalakok hordozzák => a lexikai kódolás (2.7.) vezeti be
 
 #### 2.2.3.3. Szemantikai jegy: a PRED és a FORM attribútum [semantic feature]
 
-
-Formális szempontból: olyan attribútum, amelyhez értékként szemantikai forma
-(részletesebben l. 2.6.2.) vagy fonológiai forma tartozik.
-
-Tartalmilag: valamely lexikai egység szemantikai tartalma és a szemantikai
-tartalomban gyökerező szintaktikai elvárásai.
-
-Az attribútumok közül ténylegesen csak a PRED minősül szemantikai jegynek (csak
-ehhez rendelhető értékként szemantikai forma). Ide kell azonban sorolnunk a FORM
-attribútumot is, amely tekinthető a PRED egy sajátos, "degenerált" változatának is. A
-
-FORM attribútum értéke mindig jelentés nélküli fonológiai forma.
-
-Egy adott lexikai tétel jellemzése e két jegy közül csak az egyiket tartalmazhatja.
-
-Ennek magyarázata: a szerkezetek tagjai egy másik tagra vonatkozóan vagy csak szemantikai elvárásokat állítanak fel (s ekkor az elvárást kielégítő egységnek az alakja
-
-úgy értendő, hogy a formához tartozó jelentés ilyenkor közömbös (tehát jelen lehet,
-csak éppen mindegy, hogy mi), hanem úgy, hogy a forma csakis mindenféle
-jelentéstől megfosztva léphet be a szerkezetbe.
-
-Más szóval: ha az egység jelentést hordoz, akkor a formája a grammatika számára
-sohasem releváns; ha viszont nem hordoz önálló jelentést, akkor a forma grammatikai
-relevanciát kap (részletesebben l. 4.2.1.).
-
-E két jegy további sajátossága, hogy értékeiket objektumoknak (nem pedig
-objektumokra vonatkozó információknak) tekintjük, így ezek a jegyek azonos értékek
-esetén is unifikálhatatlanok (részletesebben l. 2.6.2.).
-
-Szokásos konvenció, hogy a lexikai elemek jellemzésében és az f-struktúrákban
-első elemként mindig a PRED vagy FORM attribútumot szerepeltetjük.
-
-
-52
-
-
+* Formális szempontból: olyan attribútum, amelyhez értékként szemantikai forma
+  (részletesebben l. 2.6.2.) vagy fonológiai forma tartozik.
+* Tartalmilag: valamely lexikai egység szemantikai tartalma és a szemantikai
+  tartalomban gyökerező szintaktikai elvárásai.
+* csak a PRED minősül szemantikai jegynek (csak ehhez rendelhető értékként
+  szemantikai forma). Ide kell azonban sorolnunk
+* a FORM attribútum tekinthető a PRED egy sajátos, "degenerált" változatának
+  * értéke mindig jelentés nélküli fonológiai forma.
+  * Egy adott lexikai tétel jellemzése e két jegy közül csak az egyiket
+    tartalmazhatja.
+  * mert a szerkezetek tagjai egy másik tagra vonatkozóan vagy csak/vagy csak
+    * szemantikai elvárásokat állítanak fel (s ekkor az alak mindig közömbös),
+    * annak a formáját igénylik ─ a jelentése nélkül
+      * nem úgy értendő, hogy a formához tartozó jelentés ilyenkor közömbös
+        (tehát jelen lehet, csak éppen mindegy, hogy mi), hanem úgy, hogy
+      * a forma csakis mindenféle jelentéstől megfosztva léphet be
+  * ie ha az egység jelentést hordoz, akkor a formája a grammatika számára
+    sohasem releváns
+    ha viszont nem hordoz önálló jelentést, akkor a forma grammatikai
+    relevanciát kap (részletesebben l. 4.2.1.).
+* értékeik objektumok (nem pedig objektumokra vonatkozó információk)
+  => azonos értékek esetén is unifikálhatatlanok (részletesebben l. 2.6.2.).
+* Szokásos konvenció, hogy a lexikai elemek jellemzésében és az f-struktúrákban
+  első elemként mindig a PRED vagy FORM attribútumot szerepeltetjük.
 
 ## 2.3. A grammatikai viszonyok (grammatikai funkciók) csoportjai
 
-
 ### 2.3.1. A grammatikai feltételezettség típusa szerint
-
 
 #### 2.3.1.1. Vonzatfunkciók és szabad határozói funkciók
 
+1. Vonzatfunkciók
+  [subcategorizable functions, governable functions, a[rgument]functions]: azok
+  * mindig és csakis egy-egy régens grammatikai igényének a kielégítésére
+    lehetnek jelen a mondatokban;
+    régensek által a vonzataik számára előírható grammatikai funkciók.
+    Lexikai tételek a funkciók közül csak ezeket említhetik.
+    Egy vonzatkeretben fajtánként csak egy szerepelhet belőlük
+* SUBJ[ect]: alany (Részletesebben l. 2.3.2.1.1.)
+* OBJ[ect]: tárgy (Részletesebben l. 2.3.2.1.1.)
+* {OBLθ}: a thematikusan kötött oblikvuszi vonzatok halmaza. (Részl 2.3.2.1.2.)
+* {OBLFORM}: a címkézett vonzatok halmaza. (Részletesebben l. 2.3.2.1.3.)
+* OBJ2 vagy {OBJθ}: (Részletesebben l. 2.3.2.1.2.)
+  * az LFG korábbi változataiban második tárgynak (OBJ2) nevezett viszony,
+  * az újabb változatokban a thematikusan kötött tárgyi viszonyok {OBJθ}
+* COMP[lement] vagy COMPL[ement]: mondatvonzat
+  * szerepét "csupasz" (a főmondatba mindössze kötőszóval bevezetett)
+    alárendelt tagmondat tölti be.
+* XCOMP: predikatív vonzat. (Részletesebben l. 3.2.1.1.)
+* POSS[essor]: birtokos vonzat
+  * A hagyományosan birtokosnak (birtokos jelzőnek) elemzett frázisok csak
+    akkor POSS funkciójúak, ha vonzatai a birtoknak
+  * nyelvtől (1 nyelven belül esetleg még szerkezettől) függően is változhat,
+    hogy az ún. birtok(os jelző) vonzat-e, vagy csak szabad határozó.
+* Megjegyzések
+  1. Az indexek értelmezését l. 2.3.2.1.2.  
+  2. Az OBJ2 és az OBJθ viszonyáról l. 2.3.2.1.1.
+* azokat, amelyek az X' elvek szerint felépülő endocentrikus szerkezetekben
+  komplementumpozícióban (azaz X' projekción belül) jelennek meg,
+  komplementumfunkcióknak nevezzük
+  * Az alany kivételével az összes vonzatfunkció egyben komplementumfunkció is
 
-# 1. Vonzatfunkciók [subcategorizable functions, governable functions, a[rgument]functions]: azok a funkciók, amelyek mindig és csakis egy-egy régens grammatikai
+# 2. Szabad határozói funkciók [nonsubcategorizable functions]:
 
-igényének a kielégítésére lehetnek jelen a mondatokban; régensek által a vonzataik számára előírható grammatikai funkciók. Lexikai tételek a funkciók közül
-csak ezeket említhetik. Egy vonzatkeretben fajtánként csak egy szerepelhet belőlük. Listájuk:
+* azok a diskurzusszervezéstől független (vö. 2.3.1.2.) alárendelt grammatikai
+  funkciók, amelyek nem valamely régens grammatikai igényét elégítik ki.
+* ADJ[unct]: nem predikatív szabad határozók és jelzők
+* XADJ[unct]: predikatív szabad határozók. (Részletesebben l. 3.2.2.1.)
+* lexikai tételek jellemzése nem igényelheti őket
+  => csak a szintaxisban lehetnek kódolva
+* Ezekből egy mondatban egynél több is lehet.
 
-SUBJ[ect]:
-
-OBJ[ect]:
-{OBLθ}:
-
-alany (Részletesebben l. 2.3.2.1.1.)
-tárgy (Részletesebben l. 2.3.2.1.1.)
-a thematikusan kötött oblikvuszi vonzatok halmaza. (Részletesebben
-l. 2.3.2.1.2.)
-{OBLFORM}: a címkézett vonzatok halmaza. (Részletesebben l. 2.3.2.1.3.)
-
-OBJ2 vagy {OBJθ}: az LFG korábbi változataiban második tárgynak (OBJ2)
-nevezett viszony, amelyet az újabb változatokban a thematikusan
-kötött tárgyi viszonyok {OBJθ} halmaza váltott fel. (Részletesebben
-l. 2.3.2.1.2.)
-
-COMP[lement] vagy COMPL[ement]: mondatvonzat. Olyan vonzat, amely
-szerepét "csupasz" (a főmondatba mindössze kötőszóval bevezetett)
-alárendelt tagmondat tölti be.
-
-XCOMP:
-predikatív vonzat. (Részletesebben l. 3.2.1.1.)
-
-POSS[essor]: birtokos vonzat. A hagyományosan birtokosnak (birtokos jelzőnek)
-elemzett frázisok csak akkor POSS funkciójúak, ha vonzatai a birtoknak. Az azonban nyelvtől (sőt ugyanazon nyelven belül esetleg
-még szerkezettől) függően is változhat, hogy az ún. birtok(os jelző)
-vonzat-e, vagy csak szabad határozó.
-
-Megjegyzések: 1. Az indexek értelmezését l. 2.3.2.1.2.
-
-# 2. Az OBJ2 és az OBJθ viszonyáról l. 2.3.2.1.1.
-
-
-Közülük azokat, amelyek az X' elvek szerint felépülő endocentrikus szerkezetekben komplementumpozícióban (azaz X' projekción belül) jelennek meg,
-komplementumfunkcióknak nevezzük. Az alany kivételével az összes vonzatfunkció egyben komplementumfunkció is.
-
-# 2. Szabad határozói funkciók [nonsubcategorizable functions]: azok a diskurzusszervezéstől független (vö. 2.3.1.2.) alárendelt grammatikai funkciók, amelyek
-
-nem valamely régens grammatikai igényét elégítik ki. Vonzatok tehát nem
-vehetnek fel ilyen funkciókat. A csoportba az alábbi két funkciótípus tartozik:
-
-ADJ[unct]: nem predikatív szabad határozók és jelzők
-
-XADJ[unct]: predikatív szabad határozók. (Részletesebben l. 3.2.2.1.)
-
-
-
-
-53
-
-
-Mivel lexikai tételek jellemzése nem igényelheti őket, csak a szintaxisban lehetnek
-kódolva. Ezekből egy mondatban egynél több is lehet.
-
-A fenti meghatározások értelmében vonzatfunkcióval vagy szabad határozói funkcióval minden egyes alárendelt frázisnak rendelkeznie kell.
+* A fenti meghatározások értelmében vonzatfunkcióval vagy szabad határozói
+  funkcióval minden egyes alárendelt frázisnak rendelkeznie kell.
 
 #### 2.3.1.2. Diskurzusfunkciók [discourse functions, d-functions]
 
-
-Olyan funkciók, amelyeket a frázisok (a vonzatok vagy adjunktumok közé való besorolásuktól függetlenül, vagyis e mellett) a mondatnak a kommunikációs szituációhoz való illesztése céljából kaphatnak. A diskurzusfunkciók tehát mintegy az
-előbbi besorolásra merőleges tengely mentén minősítenek. Diskurzusfunkcióval nem
-minden frázisnak kell rendelkeznie. Az előző pontban mondottakból következően
-azonban a diskurzusfunkciót hordozó frázisnak mindig rendelkeznie kell fej-, vonzatvagy szabad határozói funkcióval is. A "tiszta" diskurzusfunkciók:
-
-FOC(us), TOP(ic)
-
-Ezeken kívül a SUBJ vonzatfunkció egyben sajátos diskurzusfunkciót is betölt
-azokban a mondatokban, amelyekben nincs sem TOP-, sem FOCfunkciót hordozó
-
-körülhatárolható esetektől eltekintve) a mondat topikjaként is értelmezzük a
-grammatikai alanyt.
+* amelyeket a frázisok (a vonzatok vagy adjunktumok közé való besorolásuktól
+  függetlenül, vagyis e mellett) a mondatnak a kommunikációs szituációhoz való
+  illesztése céljából kaphatnak
+* Diskurzusfunkcióval nem minden frázisnak kell rendelkeznie
+* A "tiszta" diskurzusfunkciók: FOC(us), TOP(ic)
+* Ezeken kívül a SUBJ vonzatfunkció egyben sajátos diskurzusfunkciót is betölt
+  azokban a mondatokban, amelyekben nincs sem TOP-, sem FOC funkciót hordozó
+  összetevő
+  * semleges mondatok
+  * alapesetként (azaz jól körülhatárolható esetektől eltekintve) a mondat
+    topikjaként is értelmezzük a grammatikai alanyt.
 
 #### 2.3.1.3. A funkciók prominencia-hierarchiája
 
-
 A feltételezett univerzális szintaktikai funkciók prominenciahierarchiáját és a
 funkciók lényegi csoportjait az alábbi ábrában foglaljuk össze:
-a(rgument)-functions
-non-a-fns
 
-non-a-fn
+non-a-fns ~~~~a(rgument)-functions~~~~  non-a-fn
+                ~complement functions~
+TOP  FOC  SUBJ  OBJ  OBJθ  OBLθ  COMPL  ADJUNCT
+discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
 
-complement functions
-
-│
-│ │
-
-│
-
-TOP FOC
-
-SUBJ OBJ
-
-OBJθ OBLθ
-
-COMPL
-
-ADJUNCT
-
-d(iscourse)-functions
-non-d-functions
-a-fns
-(=vonzatfunkciók): Régensek lexikai vonzatai. A funkcionális unicitás
-(l. 1.3.1.2.) értelmében egy f-struktúrán belül minden vonzatfunkció legfeljebb
-egyszer fordulhat elő. Primitív jegyekkel jellemezhetők, amelyek a lexikai
-leképezés elméletében (l. 2.7.) játszanak szerepet.
-non-a-fns: Lexikailag nem megköveteltek. Nem vonatkozik rájuk a funkcionális unicitás (l. 1.3.1.2.) követelménye. Az anaforikus kötések elmélete (l. 3.3.) szempontjából is más státusúak, mint az a-funkciók.
-d-fns: szintaktizált diskurzus-funkciók: a diskurzus szempontjából leginkább kiemelkedő egységek funkciói. A bővítményhierarchiának ők a legprominensebb tagjai.
-
-Ez gyakran ikonikus módon is kifejeződik c-struktúrabeli tulajdonságaikban (pl.
-
-
-54
-
-
-mondatkezdő, k-vezérlő pozíció). A SUBJ univerzálisan fakultatív kifejezője a
-default TOP-nak. Ő az egyetlen a-funkció, amely egyben d-funkciót is betölt.
+* a-fns (=vonzatfunkciók): Régensek lexikai vonzatai
+  * A funkcionális unicitás (l. 1.3.1.2.) értelmében
+    egy f-struktúrán belül minden vonzatfunkció max egyszer fordulhat elő.
+  * Primitív jegyekkel jellemezhetők, amelyek a lexikai leképezés elméletében
+    (l. 2.7.) játszanak szerepet.
+* non-a-fns: Lexikailag nem megköveteltek
+  * Nem vonatkozik rájuk a funkcionális unicitás (l. 1.3.1.2.) követelménye
+  * Az anaforikus kötések elmélete (l. 3.3.) szempontjából is más státusúak,
+    mint az a-funkciók.
+* d-fns: szintaktizált diskurzus-funkciók
+  * a diskurzus szempontjából leginkább kiemelkedő egységek funkciói
+  * A bővítményhierarchiának ők a legprominensebb tagjai.
+  * Ez gyakran ikonikus módon is kifejeződik c-struktúrabeli tulajdonságaikban
+    (pl. mondatkezdő, k-vezérlő pozíció)
+    * A SUBJ univerzálisan fakultatív kifejezője a default TOP-nak
+    * Ő az egyetlen a-funkció, amely egyben d-funkciót is betölt.
 
 ### 2.3.2. A thematikus szerepekhez való viszonyuk alapján
 
-
 #### 2.3.2.1. A funkció által kifejezhető szerepkör szerint
 
-
-
-
-
-##### 2.3.2.1.1. Szemantikailag/thematikusan korlátozatlan funkciók [semantically /
-
-thematically unrestricted functions]
-
-Azok a funkciók, amelyek különböző thematikus szerepeket viselő argumentumokhoz
-is társulhatnak, ill. társítatlanok is maradhatnak (s ezáltal nem-thematikus vonzatot
-
-
-SUBJ, OBJ, POSS
-
-
-helyébe később a thematikusan korlátozott tárgyak
-{OBJθ} halmaza lépett.
-
-
-
-és it, amelyek közül az utóbbi többek között az időjárásigék szemantikai argumentumhoz nem társuló alanyaként is használatos, pl.: It is snowing.
-
-Alább megemlítjük az egyes szemantikailag korlátozatlan funkciók néhány jellemző tulajdonságát. (Mivel a funkciók primitívumok, ezek nem definíciók. Az elkülönítésükre (=extenziójuk körülírására) megadott alábbi kritériumok mindegyike
-"lefelé" határolja el az adott funkciót a bővítményhierarchián lejjebb lévőktől):
-
-(ellenpéldák vannak), viszont szeret antecedens lenni: még ha van is más
-megengedett olvasat, szinte mindig jó az az olvasat is, amelyben az alany
-kontrollál. Hasonló a helyzet a kölcsönös névmásokkal is:
-pl.: *Maguk/egymás megmutatták a fiúkat Palinak a fényképen.
-
-
-A fiúk megmutatták magukat/egymást Palinak a képen.
-
-
-# 2. Fonológiailag realizálatlan marad, ha referenciálisan függ egy másik régens
-
-valamely vonzatától (tehát ha az kontrollálja őt). Példa az alábbi, 3.
-pontban látható.
-
-
-
-
-55
-
-
-# 3. Egyéb feltételek teljesülése esetén ő maga kontrollálhat ilyen realizálatlan
-
-alanyt, pl.:
-
-János elment Ø vásárolni.
-
-
-
-
-nyelvekben OBLθ-ként, másokban ADJ funkcióban jelenik meg.
-(Nyelvfüggő tulajdonság.)
-5. Mellérendelésbeli azonosság esetén törölhető. (Nyelvfüggő tulajdonság.) Pl.:
-
-I came and got the book.
-
-Nem kötelező minden nyelv minden igéjének alannyal rendelkeznie. Az angol időjárás-igék alanyaként álló it szemantikailag talán nem üres, mivel kontrollálhat
-
-XADJ-ot, de az oroszban ez nem megy:
-
-While snowing, it never rains.
-*Темнея, стало очень холодно.
-
-'Miközben havazik, sohasem esik.'
-*'Sötétedve nagyon hideg lett.'
-
-
-A magyar időjárás-igéknek az oroszhoz hasonlóan nincs kontrollálható alanyi
-viszonyuk. Ezt jól illusztrálja az, hogy az orosz példa magyar megfelelője szintén
-8
-agrammatikus.
-
-OBJ: 1. Passziválásnál alannyá lép elő. (Nyelvfüggő tulajdonság.)
-
-# 2. Kontrollálhat bizonyos másodlagos predikátumokat, pl. a rezultatíumvokat.
-
-(Nyelvfüggő tulajdonság.)
-
-Pl.: János Pétert elküldte Ø vásárolni.
-
-
-OBJ2: nem könnyű elkülöníteni az OBJ-től. Külön funkcióként való felvételét
-tulajdonképpen annak köszönhette, hogy a ditranzitív igék kezelése egyébként
-ütközött volna a funkcionális unicitás (l. 1.3.1.2.) követelményével. Szintén
-kontrollálhatott realizálatlan alanyt.
-
-8
-
-
-Természetesen az angol példa fordításának is agrammatikusnak kellene lennie, ha a
-fordítás megtartaná az angol mondat szerkezetét. A magyarban azonban nincs a while
-snowing típusú frázisoknak szerkezeti megfelelőjük. A fordításaként adotthoz hasonló,
-miközben kötőszóval bevezetett magyar tagmondatok sohasem tölthetnek be nyitott
-grammatikai funkciót, azaz nem lehet XADJ funkciójuk.
-
-
-56
-
-
-
-Megjegyzés: a korábban OBJ2-nek tekintett vonzatokat újabban thematikusan
-kötött tárgyaknak tekintik és OBJθ-nak jelölik (l. alább).
-
-##### 2.3.2.1.2. Szemantikailag/thematikusan korlátozott funkciók [semantically / thematically restricted functions]
-
-
-Olyan funkciók, amelyek csak egy-egy konkrét thematikus szerepet (vagy körülhatárolt szereposztályba tartozó szerepek valamelyikét) hordozó argumentummal
-társíthatók. Társíthatók azonban olyan argumentummal is, amely több thematikus
-szerepet hordoz, amennyiben ezek között szerepel a megfelelő szerep (vagy a
-megfelelő szereposztály valamely képviselője). Ilyen funkciók:
-
-korlátozódnak
-
-OBLθ típusú funkciók: a PROP-tól különböző konkrét thematikus szerepek vagy
-szereposztályok kifejezésére korlátozott oblikvuszi funkciók:
-
-OBLAG, OBLLOC, OBLDIR stb.
-
-OBJθ típusú funkciók: a PROP-tól különböző konkrét thematikus szerepek vagy
-szereposztályok kifejezésére korlátozott tárgyi funkciók: OBJTH,
-
-OBJBEN stb.
-
-Az {OBLθ} halmaz a thematikusan kötött oblikvuszi vonzatok halmaza. Ezek olyan,
-
-viszonyítóelemek valamelyikével (határozóraggal, névutóval, prepozícióval stb.) jelölt,
-
-általuk kifejezhető egyetlen thematikus szerep definiál. A halmaz minden tagját az általa
-megjeleníthető thematikus szerep különbözteti meg a többitől. Az egyes viszonyokra
-utaló szimbólumokat ezért a thematikus szerepek neveivel különböztetjük meg
-
-
-OBLBEN stb. Ezekben a vonzatviszonyokban a régens csak a thematikus szerepet és a
-kifejezés oblikvuszi módját írja elő, de ezen túlmenően a frázis formáját nem korlátozza.
-
-A befér ige OBLDIR funkciójú vonzataként tehát a következő frázisok bármelyike
-előfordulhat: a ház-ba, a szekrény mögé, a pad alá, ide, mindenhova.
-
-A címkézett funkcióktól (l. 2.3.2.1.3.) való eltérésüket jól illusztrálja a lakik ige
-
-OBLLOC funkciójú helyhatározói vonzata, amelynek szerepében bármilyen lokális tartalmú viszonyítóelemmel ellátott főnévi frázis és bármely lokális tartalmú határozószó
-felléphet: ól-ban, egy hajó-n, a torony-nál, a híd alatt, a hegyen túl, itt, valahol stb.
-
-A thematikusan kötött tárgyi viszonyok {OBJθ} halmaza az LFG korábbi változataiban még második tárgynak (OBJ2) nevezett és thematikusan korlátozatlannak feltételezett egyetlen viszonyt váltotta fel. Az {OBLθ} halmaz elemeihez hasonlóan ezek is
-csak egy-egy thematikus szerepet képesek megjeleníteni. Az előbbiektől eltérően
-azonban nem viselnek szemantikailag tartalmas viszonyítóelemeket (funkciójukat vagy
-csak a pozíciójuk, vagy szemantikai tartalom nélküli, tisztán grammatikai szerepű
-formatívumok kódolják), és viselkedésük közelebb áll a tárgyakéhoz (pl. nem egy
-
-
-
-
-57
-
-nyelvben passzív mondat alanyává válhatnak). Ezek a viszonyok csak kéttárgyas és ilyenekkel derivációs kapcsolatban álló szerkezetekben fordulnak elő, így a magyarban nem
-találkozunk velük. Példa az angolból: John (SUBJ) gave Mary (OBJ) a book
-
-
+─ szemantikailag/thematikusan nem korlátozott funkciók
+─ szemantikailag/thematikusan korlátozott funkciók
+─ címkézett (idioszinkratikus) funkciók
+
+##### 2.3.2.1.1. Szemantikailag/thematikusan korlátozatlan funkciók
+[semantically / thematically unrestricted functions]
+
+* különböző thematikus szerepeket viselő argumentumokhoz is társulhatnak, ill.
+  társítatlanok is maradhatnak (s ezáltal nem-thematikus vonzatot ─ l. 2.3.2.2.
+  ─ eredményeznek):
+* SUBJ, OBJ, POSS ─ valamint a korábbi írásokban szereplő OBJ2, amelynek a
+  helyébe később a thematikusan korlátozott tárgyak {OBJ θ } halmaza lépett.
+* amikor nincsenek szemantikai argumentumhellyel társítva ─ szemantikailag
+  (teljesen v. részlegesen) üres, pleonasztikus elemek is hordozhatják. Ilyen
+  * pl. az angol there és it, amelyek közül az utóbbi többek között az
+  időjárásigék szemantikai argumentumhoz nem társuló alanyaként is használatos,
+* alábbi kritériumok "lefelé" határolják el az adott funkciót a
+  bővítményhierarchián lejjebb lévőktől):
+  * SUBJ
+    1. Reflexiválásnál ─ legalábbis finit mondatokban ─ nem lehet kontrollált
+       (ellenpéldák vannak), viszont szeret antecedens lenni: még ha van is más
+       megengedett olvasat, szinte mindig jó az az olvasat is, amelyben az
+       alany kontrollál
+       Hasonló a helyzet a kölcsönös névmásokkal is: pl.:
+       *Maguk/egymás megmutatták a fiúkat Palinak a fényképen.
+    2. Fonológiailag realizálatlan marad, ha referenciálisan függ egy másik
+       régens valamely vonzatától (tehát ha az kontrollálja őt). Példa az
+       alábbi, 3.  pontban látható.  
+    3. Egyéb feltételek teljesülése esetén
+      ő maga kontrollálhat ilyen realizálatlan alanyt
+      pl.: János elment Ø vásárolni.
+    4. Passzívumban ─ ha egyáltalán megjelenik ─ "visszalép" a ranglétrán:
+       egyes nyelvekben OBLθ-ként, másokban ADJ funkcióban jelenik meg.
+    5. Mellérendelésbeli azonosság esetén törölhető. (Nyelvfüggő tulajdonság.) Pl.:
+      I came and got the book.  
+      * Nem kötelező minden nyelv minden igéjének alannyal rendelkeznie. 
+        * angol időjárás-igék alanyaként álló it szemantikailag talán nem üres,
+          mivel kontrollálhat XADJ-ot, de az oroszban ez nem megy: 
+      While snowing, it never rains.
+      'Miközben havazik, sohasem esik.'
+      `*`Темнея, стало очень холодно.
+      `*`Sötétedve nagyon hideg lett.'
+      * A magyar időjárás-igéknek az oroszhoz hasonlóan nincs kontrollálható
+        alanyi viszonyuk. Ezt jól illusztrálja az, hogy az orosz példa magyar
+        megfelelője szintén agrammatikus.
+  * OBJ
+    1. Passziválásnál alannyá lép elő. (Nyelvfüggő tulajdonság.) 
+    2. Kontrollálhat bizonyos másodlagos predikátumokat, pl. a rezultatíumvokat.  
+      (Nyelvfüggő tulajdonság.)
+      Pl.: János Pétert elküldte Ø vásárolni.
+  * OBJ2: nem könnyű elkülöníteni az OBJ-től.
+    * Külön funkcióként való felvételét tulajdonképpen annak köszönhette, hogy
+      a ditranzitív igék kezelése egyébként ütközött volna a funkcionális
+      unicitás (l. 1.3.1.2.) követelményével.
+    * Szintén kontrollálhatott realizálatlan alanyt.  
+    * a korábban OBJ2-nek tekintett vonzatokat újabban thematikusan kötött
+      tárgyaknak tekintik és OBJθ-nak jelölik (l. alább).
+
+##### 2.3.2.1.2. Szemantikailag/thematikusan korlátozott funkciók
+  [semantically / thematically restricted functions]
+
+* csak egy-egy konkrét thematikus szerepet (vagy szereposztályba tartozó
+  szerepek valamelyikét) hordozó argumentummal társíthatók. Társíthatók
+  * olyan argumentummal is, amely több thematikus szerepet hordoz, amennyiben
+    ezek között szerepel a megfelelő szerep (vagy a megfelelő szereposztály
+    valamely képviselője).
+* Ilyen funkciók:
+  * COMP, XCOMP, ADJ, XADJ ─ a PROP[osition] (=Állítás) thematikus szerepre
+    korlátozódnak 
+  * OBLθ típusú funkciók: a PROP-tól különböző konkrét thematikus szerepek vagy
+    szereposztályok kifejezésére korlátozott oblikvuszi funkciók:
+    OBL_AG, OBL_LOC, OBL_DIR stb.
+  * OBJθ típusú funkciók: a PROP-tól különböző konkrét thematikus szerepek vagy
+    szereposztályok kifejezésére korlátozott tárgyi funkciók:
+    OBJ_TH, OBJ_BEN stb.
+* Az {OBLθ} halmaz a thematikusan kötött oblikvuszi vonzatok halmaza
+  * csak oblikvuszi formák révén ─ vagyis az alaphasználatukban szemantikailag
+    tartalmas viszonyítóelemek valamelyikével (határozóraggal, névutóval,
+    prepozícióval stb.) jelölt, esetleg határozószós frázisok révén
+    ─ megjeleníthető vonzatviszonyok,
+    amelyeket az általuk kifejezhető egyetlen thematikus szerep definiál
+  * A halmaz minden tagját az általa megjeleníthető thematikus szerep
+    különbözteti meg a többitől
+    * Az egyes viszonyokra utaló szimbólumokat ezért a thematikus szerepek
+      neveivel különböztetjük meg egymástól ─ ezeket a θ változó helyén alsó
+      indexként tüntetjük fel: OBL AG , OBL LOC , OBLBEN stb. Ezekben a
+  * a régens csak a thematikus szerepet és a kifejezés oblikvuszi módját írja
+    elő, de ezen túlmenően a frázis formáját nem korlátozza.
+  * pl _befér_ OBL_DIR funkciójú vonzataként tehát a következő frázisok bármely
+    * a ház-ba, a szekrény mögé, a pad alá, ide, mindenhova.
+  * A címkézett funkcióktól (l. 2.3.2.1.3.) való eltérésüket jól illusztrálja a
+    _lakik_ ige OBLLOC funkciójú helyhatározói vonzata,
+    * bármilyen lokális tartalmú viszonyítóelemmel ellátott főnévi frázis és
+      bármely lokális tartalmú határozószó felléphet: ól-ban, egy hajó-n, a
+      torony-nál, a híd alatt, a hegyen túl, itt, valahol stb.
+* az LFG korábbi változataiban még második tárgynak (OBJ2) nevezett és
+  thematikusan korlátozatlannak feltételezett egyetlen viszonyt váltotta fel.
+  * OBJ2 is csak egy-egy thematikus szerepet képesek megjeleníteni. Az
+  * nem viselnek szemantikailag tartalmas viszonyítóelemeket (funkciójukat
+    vagy csak a pozíciójuk, vagy szemantikai tartalom nélküli, tisztán
+    grammatikai szerepű formatívumok kódolják), és
+  * viselkedésük közelebb áll a tárgyakéhoz (pl. nem egy nyelvben passzív
+    mondat alanyává válhatnak). Ezek a viszonyok
+  * csak kéttárgyas és ilyenekkel derivációs kapcsolatban álló szerkezetekben
+    fordulnak elő, így a magyarban nem találkozunk velük
+    eg John (SUBJ) gave Mary (OBJ) a book (OBJ2/OBJ TH )
+  * Az ige mögött másodikként álló tárgy kizárólag Téma szerepű argumentumot
+    nevezhet meg, és 
+    * szemben az igét közvetlenül követő, OBJ funkciójú tárggyal ─
+      sohasem fejezheti ki pl. az esemény BEN[eficiens] szerepű résztvevőjét. 
 
 ##### 2.3.2.1.3. Címkézett funkciók [idiosyncratically marked oblique objects]
 
-
-Olyan oblikvuszi formájú vonzatoknak a grammatikai funkciója, amelyektől a régens
-konkrétan és közvetlenül egy viszonyítóelem FORMÁJÁNAK a viselését követeli
-meg (gyakran a vonzatviszony thematikus tartalmától teljesen függetlenül); s azt
-
-viszonyítóelemet: hisz vmi-ben, belefárad vmi-be, ért vmit vmi alatt vagy vmi-n. A
-címkézett vonzatokat a megkövetelt viszonyítóelem különbözteti meg egymástól, így
-
-vagy az alakját, vagy a grammatikai elnevezését szerepeltetve ebben a minőségben,
-mint pl.:
-
-OBLnak (vagy: OBLdativus)
-
-OBLba (vagy: OBLillativus) stb.
-
-Ilyenkor tehát a grammatikai funkció azonosítása OBLFORM értelmű.
+* oblikvuszi formájú vonzatok
+* régens konkrétan és közvetlenül egy viszonyítóelem FORMÁJÁNAK a viselését
+  követeli meg (gyakran a vonzatviszony thematikus tartalmától teljesen
+  függetlenül); s azt mintegy címkeként rendeli hozzájuk ─ mint a következő
+* eg hisz vmi-ben, belefárad vmi-be, ért vmit vmi alatt vagy vmi-n. A címkézett
+* a megkövetelt viszonyítóelem különbözteti meg egymástól, így a rájuk utaló
+  szimbólumokban magát a viszonyítóelemet tüntetjük fel alsó indexként ─
+  * vagy az alakját, vagy a grammatikai elnevezését szerepeltetve ebben a
+  * OBLnak (vagy: OBLdativus)
 
 #### 2.3.2.2. A konkrét előfordulás thematikus értéke szerint
 
+* thematikus vonzatok ←→ nem-thematikus vonzatok
+* Ez a kritérium nem funkciótípusokat különít el, hanem
+  azt fejezi ki, hogy egy adott régens mellett az adott funkció hordozója
+  régensének valamely argumentumát fejezi-e ki vagy sem:
+* 1. Logikai/thematikus vonzat [logical/thematic argument]:
+  * saját régensének valamely szemantikai argumentumával párosított (azt kifej)
+  * Thematikus szerepe van és régense szemantikai szelekciót gyakorol rá.
+  * Minden szubkategorizáló funkció alkalmas (a megfelelő típusú) thematikus
+    vonzatok kifejezésére.  
+* 2. Nem-logikai/nem-thematikus vonzat [nonlogical/nonthematic argument]: olyan
+  * nincs párosítva saját régensének egyetlen szemantikai argumentumával sem,
+  * nincs jelentése, vagy
+    egy másik régensnek az argumentumát jeleníti meg (l.  3.2.1.2.: Raising).
+  * Thematikus szereppel nem rendelkezik, és
+    saját régense szemantikai szelekciót sem gyakorolhat rá.
+  * Csak szemantikailag nem korlátozott funkciót (SUBJ, OBJ, OBJ2) viselhet.
+* Fajtái: felemelt alany [raised subject]
+          expletív alany [expletive subject]
+          idimatikus tárgy [idiomatic object]
 
-Ez a kritérium nem funkciótípusokat különít el, hanem azt fejezi ki, hogy egy adott
-régens mellett az adott funkció hordozója régensének valamely argumentumát fejezi-e
-ki vagy sem:
-thematikus vonzatok ←→ nem-thematikus vonzatok
+#### 2.3.2.3. Propozicionális vagy komplex jelentésű funkciók
+  [semantically complex arguments]
 
-# 1. Logikai/thematikus vonzat [logical/thematic argument]: saját régensének valamely
-
-szemantikai argumentumával párosított (vagyis: azt kifejező) vonzat. Thematikus
-szereppel rendelkezik és régense szemantikai szelekciót gyakorol rá. Minden
-szubkategorizáló funkció alkalmas (a megfelelő típusú) thematikus vonzatok
-kifejezésére.
-
-# 2. Nem-logikai/nem-thematikus vonzat [nonlogical/nonthematic argument]: olyan
-
-vonzat, amely nincs párosítva saját régensének egyetlen szemantikai argumentumával sem, azaz nem annak valamely argumentumát fejezi ki: vagy nincs jelentése, vagy egy másik régensnek az argumentumát jeleníti meg (l. 3.2.1.2.: Raising).
-
-Thematikus szereppel nem rendelkezik, és saját régense szemantikai szelekciót
-sem gyakorolhat rá. Csak szemantikailag nem korlátozott funkciót (SUBJ, OBJ,
-
-OBJ2) viselhet.
-
-
-58
-
-
-
-Fajtái: felemelt alany [raised subject]
-expletív alany [expletive subject]
-idimatikus tárgy [idiomatic object]
-
-#### 2.3.2.3. Propozicionális vagy komplex jelentésű funkciók [semantically complex
-
-arguments]
-
-Ez a csoport a PROP (=Propozíció, azaz Állítás) thematikus szerepre korlátozott
-funkciókat tartalmazza. Szemantikailag komplex vonzatoknak azért nevezik őket, mert
-felépítésük olyan, mint a szokásos mondatoké: egy predikátumot az argumentumaival és
-esetleges szabad határozóival együtt tartalmaznak. Szintaktikai kategóriájuk lehet:
-
-
-Pl.: Péter tudja, [COMP hogy Mari tegnap elment.]
-[ADJ Mivel Mari tegnap elment], Péter szomorú.
-
-
-Pl.: János utál [XCOMP hagymát pucolni].
-
-János [XADJ verseket skandálva] pucolta a hagymát.
+* a PROP (=Propozíció, azaz Állítás) thematikus szerepre korlátozott funkciók
+* Szemantikailag komplex vonzatoknak azért nevezik őket, mert
+  felépítésük olyan, mint a szokásos mondatoké: egy predikátumot az
+  argumentumaival és esetleges szabad határozóival együtt tartalmaznak.
+  Szintaktikai kategóriájuk lehet:
+  * CP (a COMP és ADJ funkciót viselőké, azaz a zárt funkciójúaké ─ l. 2.3.3.) 
+    Pl.: Péter tudja, [COMP hogy Mari tegnap elment.]
+    [ADJ Mivel Mari tegnap elment], Péter szomorú.
+  * XP (az XCOMP és XADJ funkciót viselőké, azaz nyitott funkciójúaké ─ 2.3.3.) 
+    Pl.: János utál [XCOMP hagymát pucolni].  
+    János [XADJ verseket skandálva] pucolta a hagymát.
 
 ### 2.3.3. Teljesség (logikai zártság) szerint
 
-
 zárt ←→ nyitott (=predikatív)
+1. Zárt funkciók [closed functions]: olyan funkciók, amelyeknek az
+  értéke mindig csak önmagában is teljes és konzisztens (l. 1.3.3.) f-struktúra
+  lehet ─ ahol tehát az adott f-struktúrába információkat küldő c-struktúrabeli
+  összetevők egyesített jelentése önmagában véve (az adott f-struktúrán kívüli
+  információkra való hivatkozás nélkül) is logikai-szemantikai értelemben zárt
+  formulát képvisel. Az XCOMP és XADJ kivételével mindegyik funkció ilyen.
 
+2. Nyitott v. predikatív funkciók [open/predicative functions]: 
+  * Nyitott grammatikai funkciót hordoznak mindazok (és csak azok) a
+    szintaktikai szerkezetek, amelyekben
+    a fejükként szereplő régens valamelyik vonzatviszonyának a referense a
+    szerkezeten belül sohasem nyerhet önálló lexikai megjelenítést egyetlen
+    mondatban sem, valamint nem azonosítja őt a régens lexikai reprezentációja
+    és a szerkezet belső összefüggései sem. Pl.: részegen: 'miközben
+    ..[SUBJ=?].. részeg'
+  * A nyitott funkciót betöltő egység tehát önmagában véve logikai értelemben
+    mindig predikátum: nyitott formulát képvisel, amely
+    csak úgy zárható le, ha a fej önálló formával nem realizálható vonzata egy
+    kontrollviszony révén a szerkezeten kívül álló kontrollálótól kap értéket
+    (referenciát)
+    * Funkcionális struktúrájuk csak a kontrolláló bővítmény "adataival"
+      kitöltve lesz teljes (csak így tehet eleget a teljesség követelményének)
+  * eg Pali részegen táncolt: 'Pali táncolt, miközben [SUBJ=Pali] részeg volt'
+  * sohasem lehetnek teljes ("matrix") mondatok állítmányai
+    * másodlagos predikátumoknak vagy predikatív bővítményeknek nevezik.
+      Kifejezhetők NP-vel, AP-vel, PP-vel, VP-vel.
+  * A másodlagos predikátumok nem realizálható vonzata tényszerűen mindig SUBJ.
+  * A nyitott funkciók tételesen: XCOMP, XADJ
+    * Az XCOMP a nyitott vonzatok, az XADJ a nyitott szabad határozók
 
-# 1. Zárt funkciók [closed functions]: olyan funkciók, amelyeknek az értéke mindig
+  Propozicionális funkciók:
 
+    │ szubkategorizáló-e │            Lexikálisan ki nem fejezett
+    |     (vonzat-e)     |            alanyuk értelmezésének az
+    │  +      |  -       |            eszköze:
+  + │ COMP    │ ADJ      │ → zártak   ─ anaforikus kontroll ─ l. 3.3.2
+  - │ XCOMP   │ XADJ     │ → zártak   ─ funkcionális kontroll ─l. 3.2
 
-adott f-struktúrába információkat küldő c-struktúrabeli összetevők egyesített jelentése önmagában véve (az adott f-struktúrán kívüli információkra való hivatkozás
-nélkül) is logikai-szemantikai értelemben zárt formulát képvisel. Az XCOMP és
+  A nyitott funkciókat hordozó frázisok (a másodlagos predikátumok) mindig
+  valamilyen "járulékos" állítást tesznek a kontrollálóról: annak valamilyen
+  attribútumát fejezik ki. A zárt propozicionális funkciók hordozói nem
+  predikatívok, mivel nem valamely argumentum attribútumát fejezik ki, hanem:
 
-XADJ kivételével mindegyik funkció ilyen.
+  ADJ: valamely esemény leírását módosítják azáltal, hogy térben és időben
+  elhelyezik
 
-# 2. Nyitott v. predikatív funkciók [open/predicative functions]:
+  COMP: PROP thematikus funkciójú argumentumot fejeznek ki.
 
-
-Nyitott grammatikai funkciót hordoznak mindazok (és csak azok) a szintaktikai
-szerkezetek, amelyekben a fejükként szereplő régens valamelyik vonzatviszonyának
-a referense a szerkezeten belül sohasem nyerhet önálló lexikai megjelenítést egyetlen
-mondatban sem, valamint nem azonosítja őt a régens lexikai reprezentációja és a
-szerkezet belső összefüggései sem. Pl.:
-részegen: 'miközben ..[SUBJ=?].. részeg'
-
-A nyitott funkciót betöltő egység tehát önmagában véve logikai értelemben mindig
-predikátum: nyitott formulát képvisel, amely csak úgy zárható le, ha a fej önálló
-formával nem realizálható vonzata egy kontrollviszony révén a szerkezeten kívül
-álló kontrollálótól kap értéket (referenciát). Funkcionális struktúrájuk csak a kontrolláló bővítmény "adataival" kitöltve lesz teljes (azaz csak így tehet eleget a
-teljesség 1.3.3.2. -ben leírt követelményének):
-
-
-
-
-59
-
-
-Pali részegen táncolt: 'Pali táncolt, miközben [SUBJ=Pali] részeg volt'
-
-
-teljes ("matrix") mondatok állítmányai. (Realizálhatatlan vonzatuk kontrollálóját
-ugyanis kizárólag egy, az egész szerkezethez képest fölöttes predikátum tartományában találhatják meg.) Erre utalva az ilyen egységeket másodlagos predikátumoknak vagy predikatív bővítményeknek nevezik. Kifejezhetők NP-vel, AP-vel,
-
-PP-vel, VP-vel.
-
-A másodlagos predikátumok nem realizálható vonzata tényszerűen mindig SUBJ.
-
-A nyitott funkciók tételesen:
-
-
-XCOMP,
-
-
-XADJ
-
-
-Az XCOMP a nyitott vonzatok, az XADJ a nyitott szabad határozók (adjunktumok)
-funkciója. Egymástól és a zárt propozicionális funkcióktól való elhatárolásuk
-táblázatban:
-
-Propozicionális funkciók:
-│ szubkategorizáló-e │
-
-Lexikálisan ki nem fejezett
-│
-(vonzat-e)
-│
-alanyuk értelmezésének az
-│
-+
-│
-−
-│
-eszköze:
-
-+ │ COMP │ ADJ │ → zártak
-
-
-
-
-
-A nyitott funkciókat hordozó frázisok (a másodlagos predikátumok) mindig valamilyen "járulékos" állítást tesznek a kontrollálóról: annak valamilyen attribútumát
-fejezik ki. A zárt propozicionális funkciók hordozói nem predikatívok, mivel nem
-valamely argumentum attribútumát fejezik ki, hanem:
-
-ADJ: valamely esemény leírását módosítják azáltal, hogy térben és időben
-9
-elhelyezik
-
-COMP: PROP thematikus funkciójú argumentumot fejeznek ki.
-
-A zártak alanya is lehet lexikailag ki nem fejezett, de akkor az f-struktúrában egy
-névmási szerepű testetlen értéket (a "null pronominal"-ként is emlegetett pro
-9
-
-
-Az állítás csak a hagyományosan szabad határozónak minősített ADJ funkciójú
-
-
-
-
-60
-
-
-
+A zártak alanya is lehet lexikailag ki nem fejezett, de akkor az f-struktúrában
+egy névmási szerepű testetlen értéket (a "null pronominal"-ként is emlegetett
+pro elemet ─ vö. 1.1.3.2.) feltételezünk, így f-struktúrájuk e pro érték révén
 önmagában is mindig teljes:
 
 MARI beteg. [Mivel pro alszik]ADJ, Pali csendben van. ⇒ pro: Mari v. Pali
 
 ### 2.3.4. Alanyszerű funkciók [subjective functions]: SUBJ és POSS
-
 
 Bizonyos közös szintaktikai tulajdonságaik (így pl. az anaforikus kötésekben
 mutatott viselkedésük, l. 3.3.1.1. pont) alapján ez a két funkció kitüntetett
@@ -1671,82 +1404,24 @@ alcsoportot alkot.
 
 ### 2.3.5. A funkciók főbb csoportjai táblázatban
 
+                        szubkategorizálók   nem szubkategorizálók
+                        zárt      nyitott   zárt          nyitott
+ |    diskurzus                                   TOPIC
+ |    funkciók                                    FOCUS
+them  |          |      SUBJ                              OBJ2
+korl             |
+tlan      vonzat-       OBJ, 
+ |        funkciók      OBJ2
+                 |
+ |               |      OBLθ
+them             |      OBJθ
+korlt propozi-   |      COMP      XCOMP
+ |    cionális                              ADJ           XADJ
+      funkciók
 
-$$
-
-
-
-diskurzus 
- funkciók  
-$ $
-
-
-
-
-vonzat 
-
-themati funkciók 
-kusan 
-
-korláto
-$ $
-zottak  propozi 
- cionális 
- funkciók 
-
-$$
-thematikusan
-korlátozatlanok
-
-szubkategorizálók
-zárt
-nyitott
-
-
-SUBJ
-$$$$$$$
-
-OBJ
-
-OBJ2
-
-OBLθ
-
-OBJθ
-$$$$$$$
-
-COMP(L)
-
-$$$$$$
-
-$$$$$$
-
-XCOMP
-
-nem szubkategorizálók
-zárt
-nyitott
-
-TOPIC
-
-FOCUS
-
-OBJ2
-$$$$$$$$ $$$$
-
-$$$$$$$$
-
-$$$$
-
-
-ADJ(UNCT)
-
-
-XADJ
-
-
-Továbbá: POSS(essor), ami valószínűleg korlátozatlan
-és: Ø funkciószimbólum (l. 2.6.2.6.1.).
+* Továbbá
+  * POSS(essor), ami valószínűleg korlátozatlan 
+  * Ø funkciószimbólum (l. 2.6.2.6.1.).
 
 ## 2.4. A szintaktikai információkat kódoló formulák
 
