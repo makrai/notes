@@ -1375,9 +1375,9 @@ zárt ←→ nyitott (=predikatív)
 
     │ szubkategorizáló-e │            Lexikálisan ki nem fejezett
     |     (vonzat-e)     |            alanyuk értelmezésének az
-    │  +      |  -       |            eszköze:
+    │  +      |  ~       |            eszköze:
   + │ COMP    │ ADJ      │ → zártak   ─ anaforikus kontroll ─ l. 3.3.2
-  - │ XCOMP   │ XADJ     │ → zártak   ─ funkcionális kontroll ─l. 3.2
+  ~ │ XCOMP   │ XADJ     │ → zártak   ─ funkcionális kontroll ─l. 3.2
 
   A nyitott funkciókat hordozó frázisok (a másodlagos predikátumok) mindig
   valamilyen "járulékos" állítást tesznek a kontrollálóról: annak valamilyen
@@ -1410,12 +1410,12 @@ alcsoportot alkot.
  |    funkciók                                    FOCUS
 them  |          |      SUBJ                              OBJ2
 korl             |
-tlan      vonzat-       OBJ, 
+tlan      vonzat~       OBJ, 
  |        funkciók      OBJ2
                  |
  |               |      OBLθ
 them             |      OBJθ
-korlt propozi-   |      COMP      XCOMP
+korlt propozi~   |      COMP      XCOMP
  |    cionális                              ADJ           XADJ
       funkciók
 
@@ -1425,1068 +1425,371 @@ korlt propozi-   |      COMP      XCOMP
 
 ## 2.4. A szintaktikai információkat kódoló formulák
 
-
-Tartalmát tekintve a mondat f-struktúrája nem más, mint a szintaktikai szerkezet
-egyes pontjaihoz (összetevő-pozíciókhoz, tehát a c-struktúra csomópontjaihoz) és a
-mondatban szereplő lexikai egységekhez (lexikai struktúrákhoz) tartozó, s azokban
-kódolt funkcionális (=nem kategoriális) szintaktikai információk "összegzése" (unifikációja) egyetlen függvényben. Az f-struktúra ezért teljes egészében "kinyerhető" a
-felszíni szerkezetből, amely minden funkcionális információt magában hordoz. A
-funkcionális információ azonban a felszíni szerkezetben nem közvetlenül adott (mivel
-a morfémáknak és szerkezeti pozícióknak a "tartalmi oldalához" tartozik); továbbá a
-felszíni szerkezetben az f-struktúra kódolt darabjai is egyrészt "szétszórtan" találhatók
-meg, másrészt gyakran ugyanaz az információdarab több helyen is felbukkan. A
-felszíni szerkezet → f-struktúra megfelelés tehát many-to-one jellegű, és nem más,
-mint egy szakaszonként monoton függvény [piecewise monotonic function].
-
-
-
-
-61
-
-
-A leképezést megvalósító eszközrendszer: a lexikai egységek reprezentációihoz és a
-c-struktúra pozícióihoz a grammatika explicit formában hozzárendel olyan
-formulákat, amelyek az előbbiekben rejlő, az f-struktúrára vonatkozó információdarabokat kódolják. A szerkezethez csatolt formulák együttesét az adott
-szerkezet annotációjának, a hozzárendelési folyamatot a szerkezet annotálásának
-nevezzük. Az annotációt alkotó formulák tartalmát egy unifikációs műveletekre épülő
-kiértékelő algoritmus [solution algorithm] egyesíti. Egy-egy adott mondatra
-korlátozódva ezeket a részinformációkat funkcionális egyenlőségek (l. 2.4.1.)
-formájában rögzíthetjük (mind a c-struktúra pozícióiban, mind a lexikai struktúrákban). A funkcionális egyenlőségek a grammatika általánosabb formuláinak, a
-funkcionális sémáknak (l. 2.4.3.) az adott helyre illeszkedő kiértékelt megfelelői.
+* a mondat f-struktúrája ~ "összegzése" (unifikációja) egyetlen függvényben
+  * a szintaktikai szerkezet egyes pontjaihoz (összetevő-pozíciókhoz, csomópon)
+    és a mondatban szereplő lexikai egységekhez (lexikai struktúrákhoz)
+    tartozó, s azokban kódolt funkcionális (=nem kategoriális) szint információ
+  * "kinyerhető" a felszíni szerkezetből, amely minden funkcionális információt
+  * A funkcionális információ azonban a felszíni szerkezetben nem közvetlenül
+    * a morfémáknak és szerkezeti pozícióknak a "tartalmi oldalához"
+    * a felszíni szerkezetben az f-struktúra kódolt darabjai is egyrészt
+      "szétszórtan" találhatók meg, másrészt
+      gyakran ugyanaz az információdarab több helyen is felbukkan.
+* A felszíni szerkezet → f-struktúra megfelelés tehát many-to-one jellegű, és
+  * egy szakaszonként monoton függvény [piecewise monotonic function].
+* A leképezést megvalósító eszközrendszer:
+  a lexikai egységek reprezentációihoz és a c-struktúra pozícióihoz a
+  explicit formában hozzárendel olyan formulákat, amelyek
+  az előbbiekben rejlő, az f-struktúrára vonatkozó információdarabokat kódolják
+  * a formulák együttesét az adott szerkezet annotációjának,
+  * a hozzárendelési folyamatot a szerkezet annotálásának nevezzük. Az
+  * unifikációs műveletekre épülő kiértékelő algoritmus [solution algorithm]
+  * a részinformációkat funkcionális egyenlőségek (l. 2.4.1.) formájában
+    (mind a c-struktúra pozícióiban, mind a lexikai struktúrákban)
+    * a grammatika általánosabb formuláinak, a funkcionális sémáknak (l.
+      2.4.3.) az adott helyre illeszkedő kiértékelt megfelelői.
 
 ### 2.4.1. Funkcionális egyenlőségek
 
+* egy-egy adott mondat konkrét nyelvi egységein belül és között fennálló
+  szintaktikai viszonyokat kódoló konkrét formulák
+* az f-struktúrákra Fi formájú változónevekkel utalunk.
+* Általános forma:  attribútumjelölő/attribútumnév  típusjelölő   értékjelölő
+                    [attribute marker]              [type marker] [value marker]
 
-A funkcionális egyenlőségek egy-egy adott mondat konkrét nyelvi egységein belül és
-konkrét nyelvi egységei között fennálló szintaktikai viszonyokat kódoló konkrét
-formulák. Az összefüggések által érintett f-struktúrákra mindazonáltal nem
-alkalmanként változó, egyedileg rögzített "tulajdonnevekkel", hanem Fi formájú
-változónevekkel utalunk.
-Általános forma: attribútumjelölő/attribútumnév típusjelölő
-értékjelölő
-[attribute marker]
-[type marker] [value marker]
-a rész tartalma: ( funkcionális jegy/attribútum )
+* a rész tartalma:  (funkcionális jegy/attribútum)  az egyenlőség értéke
+                                                    típusa 
 
-Példa:
+                    (f5 XCOMP SUBJ)                 =             (f5 OBJ)
+                    (f4 PRED)                       =             'pro'
 
-(f5 XCOMP SUBJ)
-(f4 PRED)
+* Konvenciók:
+  * az attribútumnév zárójelben áll
+  * a PRED jegy értéke ─ amit szemantikai formának [semantic form] nevezünk ─
+    mindig felső vesszők között szerepel.
+* A funkcionális egyenlőségek nem mondhatnak ellent a funkcionális lokalitás
+  elvének (l. 1.3.4.1.), amely szerint
+  ie a jelölők (sem az attribútum, sem az érték megnevezésében) nem
+  tartalmazhatnak kettőnél több függvényalkalmazást, vagyis kizárólag ~ utalhat
+  * egyszerű grammatikai funkciókra (f5 SUBJ)
+  * saját grammatikai jegyekre (f5 NUM)
+  * közvetlen alárendelten belüli funkcióra (f5 XCOMP SUBJ)
+  * közvetlen alárendeltnek a jegyeire (f5 SUBJ NUM)
+* ism
+  * A funkcionális egyenlőségek tartalmazzák azokat az információkat,
+    amelyekből a mondatok f-struktúrái felépülnek
+  * A mondat f-struktúráját kizárólag a felszíni szerkezetben (l. 1.1.2.2.)
+    megtalálható funkcionális egyenlőségeknek a halmazából építjük fel
+  * Ezt a halmazt a mondat funkcionális leírásának nevezzük (l. az 1.2.4.) 
+  * A funkcionális leírásból a megfelelő f-struktúra az ún. kiértékelő algoval
 
-az egyenlőség
-típusa
-=
-=
+### 2.4.2. A funkcionális egyenlőségek alaptípusai és típusjelölőik
+[type markers]
 
-az attribútum
-értéke
-(f5 OBJ)
-'pro'
-
-
-Konvenciók: (i) az attribútumnév zárójelben áll
-
-
-
-A funkcionális egyenlőségek nem mondhatnak ellent a funkcionális lokalitás elvének
-(l. 1.3.4.1.), amely szerint a jelölők (sem az attribútum, sem az érték megnevezésében) nem tartalmazhatnak kettőnél több függvényalkalmazást, vagyis kizárólag:
-egyszerű grammatikai funkciókra
-saját grammatikai jegyekre
-közvetlen alárendelten belüli funkcióra
-közvetlen alárendeltnek a jegyeire
-
-pl.:
-pl.:
-pl.:
-pl.:
-
-(f5 SUBJ)
-(f5 NUM)
-(f5 XCOMP SUBJ)
-(f5 SUBJ NUM)
-utalhatnak.
-
-
-A funkcionális egyenlőségek tartalmazzák azokat az információkat, amelyekből a mondatok f-struktúrái felépülnek. A mondat f-struktúráját kizárólag a felszíni szerkezetben
-(l. 1.1.2.2.) megtalálható funkcionális egyenlőségeknek a halmazából építjük fel. Ezt a
-
-
-62
-
-
-halmazt a mondat funkcionális leírásának nevezzük (l. az 1.2.4. alatti illusztrációban).
-
-A funkcionális leírásból a megfelelő f-struktúra az ún. kiértékelő algoritmus alkalmazásával áll elő.
-
-### 2.4.2. A funkcionális egyenlőségek alaptípusai és típusjelölőik [type markers]
-
-
-A funkcionális egyenlőségek különböző típusai eltérő feladatokat látnak el. Egy-egy
-konkrét egyenlőség ugyanis
-vagy
-
-
-# 1. maga is egy minimális f-struktúrát képvisel, amelyet bevezet a mondat fstruktúrájába (ilyenek a definiáló funkcionális egyenlőségek, részletesebben l. 2.4.5.1. ;
-
-
-vagy
-
-
-# 2. olyan követelményt ad meg, amelyet
-
-
-a. valamely szótári tétel
-vagy b. valamely összetevőnek a grammatikai szerepe
-állít fel az őt befogadó f-struktúrákkal szemben (ilyenek a megszorító
-egyenlőségek és az egzisztenciális megszorítások, részletesebben l.
-
-#### 2.4.5.2. és 2.4.5.3.).
-
+* A funkcionális egyenlőségek különböző típusai eltérő feladatokat látnak el.
+  Egy-egy konkrét egyenlőség ugyanis vagy/vagy
+  1. maga is egy minimális f-struktúrát képvisel, amelyet bevezet 
+     (ilyenek a definiáló funkcionális egyenlőségek, részletesebben l. 2.4.5.1)
+  2. olyan követelményt ad meg, amelyet ~ állít fel az őt befogadó f-struval sz
+    a. valamely szótári tétel vagy
+    b. valamely összetevőnek a grammatikai szerepe 
+      (ilyenek a megszorító egyenlőségek és az egzisztenciális megszorítások,
+      részletesebben l.  2.4.5.2. és 2.4.5.3.)
 
 Ezekre a tartalmi különbségekre eltérő típusjelölők utalnak:
 
-A típus neve:
-definiáló azonosság [defining equation]
-megszorító azonosság [constraint equation]
-egzisztenciális megszorítás [existential constraint]
+A típus neve:                                         Típusjelölő:      Példa:
+definiáló azonosság [defining equation]               =           (f3NUM) = SG
+megszorító azonosság [constraint equation]            =_C         (f3NUM) =_C SG
+egzisztenciális megszorítás [existential constraint]  nincs jelölő     (f3NUM)
 
-
-Típusjelölő:
-=
-=C
-nincs jelölő
-
-
-Példa:
-(f3NUM) = SG
-(f3NUM) =C SG
-(f3NUM)
-
-
-Ezeken az alaptípusokon kívül használatosak a belőlük Boole-algebrai eszközökkel
-felépíthető komplexebb formulák, valamint a halmazelméleti 'eleme' viszonyt kifejező
-0 típusjelölőt tartalmazó "egyenlőségek" is. Az egyes típusokat az 2.4.4. és az 2.4.5.
-pontban ismertetjük részletesebben.
+* az alaptípusokon kívül használatosak
+  * a belőlük Boole-algebrai eszközökkel felépíthető komplexebb formulák,
+  * a halmazelméleti 'eleme' viszonyt kifejező 0 típusjelölőt tartalmazó
+    "egyenlőségek" is
+* Az egyes típusokat az 2.4.4. és az 2.4.5.  pontban ismertetjük részletesebben
 
 ### 2.4.3. A funkcionális sémák
 
+A szintaktikai viszonyokat kódoló funkcionális egyenlőségek ~ vannak mellékelve
+a c-struktúrához és a lexikai elemekhez, s nem is véletlenszerűen vannak
+* A funkcionális leírásban szereplő konkrét funkcionális egyenlőségek
+  absztraktabb formuláknak, az úgynevezett funkcionális sémáknak a
+  kiértékelésével jönnek létre, amelyeket túlnyomórészt univerzális vagy
+  nyelvspecifikusan általános elvek (l. 2.5. és 2.7. pont) rendelnek a
+  megfelelő egységekhez
+* A sémák formája: az f-struktúrákra utaló változók (f i -k) helyén két metavá
+  * ─ egy felfelé és egy lefelé mutató nyíl ─ valamelyike áll.
+  * A két metaváltozó: ↑ ─ neve: up vagy mother ↓ ─ neve: down vagy ego
+* eg ↑=↓
+  (↑PRED) = 'Mary'
+  (↑SUBJ) = ↓
+* A metaváltozók mindig f-struktúrákra utalnak, de (az fi típusú utalással
+  * az annotáció helyéről történő "rámutatással"
+  * ↑ : = az annotáció helyét domináló csomópont ("anya") f-struktúrájára utal
+  * ↓ : = az annotációval ellátott csomópont ("ego") f-struktúrájára utal.
 
-A szintaktikai viszonyokat kódoló funkcionális egyenlőségek nem független listaként
-vannak mellékelve a c-struktúrához és a lexikai elemekhez, s nem is véletlenszerűen
-vannak ezekhez hozzárendelve. A funkcionális leírásban szereplő konkrét
-funkcionális egyenlőségek absztraktabb formuláknak, az úgynevezett funkcionális
-sémáknak a kiértékelésével jönnek létre, amelyeket túlnyomórészt univerzális vagy
-nyelvspecifikusan általános elvek (l. 2.5. és 2.7. pont) rendelnek a megfelelő egységekhez. A sémák formája mindössze annyiban tér el az egyenlőségekétől, hogy az f-
+S ->   NP           VP
+    (↑SUBJ)=↓       ↑=↓
+    (↓CASE)=_C NOM
 
-
-
-
-63
-
-
-
-
-
-funkcionális egyenlőségek
-f1=f3
-f3=f5
-f2=f4
-(f4 PRED) = 'Mary'
-(f1 SUBJ) = f2
-
-funkcionális sémák
-
-
-
-
-↑=↓
-(↑PRED) = 'Mary'
-(↑SUBJ) = ↓
-
-stb.
-
-
-A metaváltozók mindig f-struktúrákra utalnak, de (az fi típusú utalással szemben) nem
-a "tulajdonnevével" (mint pl. f5), hanem az annotáció helyéről történő "rámutatással"
-
-↑ : = az annotáció helyét domináló csomópont ("anya") f-struktúrájára utal
-↓ : = az annotációval ellátott csomópont ("ego") f-struktúrájára utal.
-
-A metaváltozókként használt nyilak szemléletessége a struktúrákban elhelyezett annotációknál érzékelhető:
-
-S
-
-
-NP
-
-VP
-(↑SUBJ)=↓
-↑=↓
-(↓CASE)=C NOM
-
-│
-
-V
-
-NP
-
-N
-↑=↓
-(↑OBJ)=↓
-↑=↓
-│
-(↓CASE)=C ACC
-│
-saw, V
-
-
-Mary, N
-(↑PRED)='SEE
-
-Det
-
-N
-(↑PRED)='Mary'
-<(↑SUBJ),(↑OBJ)>'
-↑=↓
-↑=↓
-(↑NUM)=SG
-(↑TENSE)=PAST
-│
-│
-(↑PER)= 3
-a, Det
-dog, N
-(↑DEF)= (↑PRED)='DOG'
-(↑NUM)=SG (↑NUM)=SG
-(↑PER)= 3
-(↑PER)= 3
-
-Az annotációk "egymásra mutogatása" tulajdonképpen a c-struktúra közvetítésével történő információáramlást reprezentál. A konkrét fi-ket tartalmazó konkrét kifejezésekhez
-(funkcionális egyenlőségekhez) a metaváltozók kiértékelésével jutunk el azt követően,
-
-
-64
-
-
-hogy az ágrajz egyes kategóriacímkéihez tetszőleges módon eltérő indexű neveket (fiket) rendelünk. A kiértékelés úgy történik, hogy a metaváltozókat kicseréljük azokra az
-fi-re, amelyekre mutatnak. A fenti példa esetében ennek elvégzésével a funkcionális
-egyenlőségeknek azt a listáját kapjuk meg, amely az 1.2.4. alatti illusztrációban
-szerepelt.
-
-A funkcionális egyenlőségek és a funkcionális sémák közötti viszonyról mondottakból közvetlenül következik, hogy a funkcionális lokalitás követelményét az utóbbiaknak is ki kell elégíteniük.
-
-A mondaton belüli egyes lexikai tételekhez és csomópontokhoz tartozó (funkcionális
-séma formájú) annotációknak a kiértékelésével mindig funkcionális egyenlőségeknek
-egy-egy véges halmazához jutunk, amely az adott egységet vagy összetevőt jellemzi.
-
-Minden ilyen formulahalmaz egy-egy (részleges) f-struktúrát határoz meg.
-
-A grammatikának természetesen gondoskodnia kell arról is, hogy a struktúra minden
-pontjára odaillő, megfelelő tartalmú annotációk kerüljenek. A funkcionális sémák egy
-részét a lexikonban, a lexikai egységekhez, más részüket a szintaxisban, a c-struktúra
-csomópontjaihoz rendeljük. A két komponensben nem azonosak az annotálás elvei és
-mechanizmusai, ezért külön kell tárgyalnunk a szintaktikai viszonyok lexikai, ill.
-szintaktikai kódolását (l. az 2.7., ill. az 2.5. pontban).
+  * a c-struktúra közvetítésével történő információáramlást reprezentál
+  * A konkrét fi-ket tartalmazó konkrét kifejezésekhez (funkcionális
+    egyenlőségekhez) a metaváltozók kiértékelésével jutunk el azt követően,
+    hogy az ágrajz egyes kategóriacímkéihez tetszőleges módon eltérő indexű
+    neveket (fiket) rendelünk
+* mindig funkcionális egyenlőségeknek egy-egy véges halmazához jutunk, amely az
+  adott egységet vagy összetevőt jellemzi.
+  * egy-egy (részleges) f-struktúrát határoz meg.
+* A grammatikának természetesen gondoskodnia kell arról is, hogy a struktúra
+  minden pontjára odaillő, megfelelő tartalmú annotációk kerüljenek
+  * egy részét a lexikonban, a lexikai egységekhez,
+  * más részüket a szintaxisban, a c-struktúra csomópontjaihoz rendeljük
+  * A két komponensben nem azonosak az annotálás elvei és mechanizmusai, ezért
+  * lexikai, ill.  szintaktikai kódolását (l. az 2.7., ill. az 2.5. pontban).
 
 ### 2.4.4. A ↑=↓ séma: a funkcionális fej fogalma
 
-
-A kategoriális szerkezet (c-struktúra) szempontjából minden frázisban csak azt az
-összetevőt tekintjük fejnek, amelynek a projekciója az adott frázis. Ezt az összetevőt
-a frázis kategoriális, strukturális vagy X' fejének nevezzük:
-
-Kategoriális fej:
-
-i+1
-
-
-X
-
-i
-... X ...
-
-
-Az f-struktúra szempontjából a frázis összetevőinek kategoriális tulajdonságai közömbösek. A testvércsomópontok között funkcionális szempontból az jelent rangkülönbséget, hogy tartalmuk az anyacsomópont hierarchikus f-struktúrájának melyik szintjét
-építi, azaz saját attribútumaikat annak melyik szintjére küldik:
-
-X -> fX
-
-=fY
-│
-│
-
-Y
-
-Z
-fY  attrY val 
-fZ  attrZ val 
- ...
-
- ...
-
-
-
-
-
-
-
-
-
-...
-attrX
-attrY
-...
-attrX
-
-val
-
-val
-
- attrZ
- ...
-
-
-
-
-
-val  
- 
-
-
-
-
-A ↑=↓ séma azt fejezi ki, hogy az adott összetevőhöz tartozó f-struktúra ugyanaz,
-
-
-
-
-65
-
-mint az anyacsomópontjához tartozó, tartalma tehát az anyacsomópontéval unifikálandó.
-
-A strukturális fej (más elnevezései: kategoriális fej, X' fej) fogalmától tehát meg
-kell különböztetnünk a funkcionális fej fogalmát:
-
-tartalmaz (sem típus, sem vonásszám tekintetében), azaz minor
-kategóriájú egységek és maximális projekciók (XP-k) is lehetnek
-funkcionális fejek. Ugyanazon anya alatt lehet egynél több funkcionális fej is [=f-structure co-heads]. Közülük azonban csak egyetlen
-egy lehet strukturális fej [c-structure head].
-
-A strukturális fej (az az összetevő, amelyiknek a szerkezet a projekciója) szükségszerűen mindig egyben funkcionális fej is (tehát mindig ↑=↓ annotációt kap). Mivel projektálhatónak kell lennie, nyilvánvalóan csak főkategória típusú, de nem maximális
-projekciót képviselő egység lehet.
-
-Ugyanabban a szerkezetben több testvércsomópont is kaphat ↑=↓ annotációt. Az
-így annotált szerkezetek jelentős része elvben rosszul formált f-struktúrát eredményez, mivel a PRED jegyek unifikálhatatlanok. Semmi nem írja azonban kötelezően elő azt, hogy minden összetevő bevezessen egy PRED jegyet, sem pedig azt,
-hogy a ↑=↓ annotációval ellátott testvércsomópontok csak az anyacsomópont fstruktúrájának legfelső szintjére vihessenek be értékeket. Az alábbi példában mindkét
-összetevő jegyei az anyacsomópont f-struktúrájának legfelső szintjén összegződnek,
-de mivel csak egyiküknek van PRED jegye, s a többi jegy sem tartalmaz ellentmondó
-információkat, az f-struktúra jól formált:
-
-NP [f1]
-
-↑=↓
-↑=↓
-
-Det [f2]
-
-N [f3]
-│
-│
-a, Det
-fiú, N
-(↑DEF)= +
-(↑PRED)='FIÚ'
-(↑NUM)= SG
-stb.
-
-┌
-f1=f2=f3 │ PRED 'FIÚ'
-│ NUM
-
-SG
-│ DEF
-+
-│
-stb.
-└
-
-┐
-│
-│
-│
-│
-┘
-
-
-A következő példában mindkét összetevő bevisz egy PRED jegyet, de ezt az f-struktúra különböző szintjeire küldik, így ismét jól formált f-struktúrát kapunk:
-
-
-66
-
-
-
-NP [f1]
-
-↑=↓
-↑=↓
-
-A [f2]
-
-N [f3]
-│
-│
-8D"F4&J`, A
-*,&JT8J, N
-(↑ADJ PRED)='szép'
-(↑PRED)='lány'
-(↑NUM)=SG
-(↑NUM)= SG
-(↑CASE)=ACC
-(↑CASE)=ACC
-(↑GEND)=FEM
-(↑GEND)=FEM
-
-┌
-┐
-f1=f2=f3 │ PRED 'lány'
-│
-│ NUM
-
-SG
-│
-│ CASE
-
-ACC
-│
-│ GEND FEM
-│
-│
-┌
-┐│
-│ ADJ
-│PRED 'szép' ││
-└
-└
-┘┘
-
-
-A szerkezetekben ezért elvben akárhány testvércsomópont lehet ↑=↓ annotációjú,
-ameddig tartalmuk egymáséval és az anyacsomópontnak megfelelő f-struktúrával
-unifikálható.
-
-A PRED jegyek unifikálhatatlanságából és a konzisztencia (=értékunicitás) követelményéből (l. 1.3.3.1.) következik, hogy
-
-# 1. ha ugyanabban a szerkezetben több funkcionális fej (↑=↓ sémával annotált tag)
-
-van jelen, akkor közülük csak egynek lehet saját (nem alárendelt szintre
-küldött) PRED jegye.
-
-Az X-vonás elméletből következik, hogy
-
-# 2. egy szerkezetben csak egyetlen összetevő minősülhet strukturális fejnek. (Ez
-
-nem zárja ki azt, hogy további főkategóriák is hordozhassanak ↑=↓ annotációt
-
+* A kategoriális szerkezet (c-struktúra) szempontjából minden frázisban csak
+  azt az összetevőt tekintjük fejnek,
+  amelynek a projekciója az adott frázis.
+  * a frázis kategoriális, strukturális vagy X' fejének nevezzük: 
+  X^{i+1} -> ... X^i ...
+  (más elnevezései: kategoriális fej, X' fej)
+* Az f-struktúra szempontjából
+  * a frázis összetevőinek kategoriális tulajdonságai közömbösek
+  * egy-egy testvércsomópont tartalma az anyacsomópont hierarchikus
+    f-struktúrájának melyik szintjét építi
+  * ha az anyacsomópontjukhoz tartozó f-struktúra szintjére kerül, ─
+    Funkcionális értelemben az előbbieket nevezzük fejeknek, ↑=↓ annotációval
+  * semmilyen kategoriális megkötést nem tartalmaz (sem típus, sem vonásszám
+    tekintetében), azaz minor kategóriájú egységek és maximális projekciók is
+  * Ugyanazon anya alatt lehet egynél több funkcionális fej is
+    [=f-structure co-heads]
+  * Közülük azonban csak egyetlen egy lehet strukturális fej [c-structure head]
+* A strukturális fej szükségszerűen mindig egyben funkcionális fej is
+  * Mivel projektálhatónak kell lennie, nyilvánvalóan csak főkategória típusú,
+    de nem maximális projekciót képviselő egység lehet.
+* Ugyanabban a szerkezetben több testvércsomópont is kaphat ↑=↓ annotációt
+  * Az így annotált szerkezetek jelentős része elvben rosszul formált f-strukt
+    mivel a PRED jegyek unifikálhatatlanok
+  * nem kell, hogy minden összetevő bevezessen egy PRED jegyet,
+    * sem pedig az, hogy a ↑=↓ annotációval ellátott testvércsomópontok csak az
+      anyacsomópont fstruktúrájának legfelső szintjére vihessenek be értékeket.
+* A PRED jegyek unifikálhatatlanságából és a konzisztencia (=értékunicitás)
+  követelményéből (l. 1.3.3.1.) következik, hogy 
+  1. ha ugyanabban a szerkezetben több funkcionális fej van jelen, akkor
+     közülük csak egynek lehet saját (nem alárendelt szintre küldött) PRED jegy
+* Az X-vonás elméletből következik, hogy 
+  2. egy szerkezetben csak egyetlen összetevő minősülhet strukturális fejnek.
+    * Ez nem zárja ki azt, hogy további főkategóriák is hordozhassanak ↑=↓ anno
 
 ### 2.4.5. A funkcionális egyenlőségek és sémák (=annotációs formulák) típusai
 
-
 #### 2.4.5.1. Definiáló azonosság [defining equation]
 
-
-Ezek (szemben a megszorító azonosságokkal, l. 2.4.5.2.) részt vesznek az f-struktúra
-megkonstruálásában.
-
-Típusjelölőjük: =
-
-Formájuk: funkcionális attribútum = érték
-
-Példák:
-
-(↑PRED)
-(↑CASE)
-(↑NUM)
-(↑PER)
-(↑TENSE)
-(↑SUBJ)
-↑
-
-=
-=
-=
-=
-=
-=
-=
-
-'pro',
-
-ACC,
-
-SG,
-3,
-
-PRESENT,
-↓,
-↓
-
-
-
-
-67
-
-
-A legtöbb lexikai tétel első sémája
-vagy
-vagy
-
-(↑PRED) = 'az egység szemantikai formája'
-(↑FORM) = az egység fonológiai formája
-formájú.
-
-
-Az affixumok nagy részének azonban nincs se (↑PRED), se (↑FORM) jegye. (A
-
-FORM jegy szerepét l. 2.2.3.3. alatt.)
+* Ezek (szemben a megszorító azonosságokkal, l. 2.4.5.2.) részt vesznek az
+  f-struktúra megkonstruálásában.
+* Típusjelölőjük: =
+  (↑PRED) = 'pro'
+  (↑CASE) = ACC
+  (↑NUM) = sg
+  (↑PER) = 3
+  (↑TENSE) = present
+  (↑SUBJ) =  ↓
+  ↑ = ↓
+* A legtöbb lexikai tétel első sémája vagy vagy
+  * (↑PRED) = 'az egység szemantikai formája'
+  * (↑FORM) = az egység fonológiai formája formájú.
+* Az affixumok nagy részének azonban nincs se (↑PRED), se (↑FORM) jegye. (A
+  FORM jegy szerepét l. 2.2.3.3. alatt.)
 
 #### 2.4.5.2. Megszorító azonosság [constraint equation]
 
-
-Ez az f-struktúrákra vonatkozó nyelvspecifikus megszorítások felírási módja. Előfordulhatnak lexikai tételekben, c-struktúra-pozíciókban vagy kiterjedhetnek teljes
-frázisstruktúra szabályokra is. NEM VESZNEK RÉSZT az f-struktúra megkonstruálásában; tkp. szűrő szerepük van.
-
-Típusjelölőjük: =C
-
-Formájuk: funkcionális attribútum =C érték
-
-Példák: (↑REFL)
-=C +
-(↑OBJ FORM)
-=C TABS
-(↑XCOMP PARTICIPLE) =C PRESENT
-
-Feltételt adnak meg, amelyet az adott elemet tartalmazó f-struktúrának (valamely más
-elem vagy szerkezet révén) ki kell elégítenie. Csak olyan elemeknek a lexikai jellemzésében szerepelnek, amelyek kizárólag a megfelelő jegyet tartalmazó mondatokban
-fordulhatnak elő. Szerepelhetnek kiinduló tételekben is, de lexikai szabályok is bevezethetik őket. A feltétel tartalmazhat negációt is.
-
-A redundancia-követelmények érdekében érdemes feltételezni, hogy tkp. minden
-tétel tartalmazza a legalább egy szócikktől megkívánt tulajdonságok jelöletlen
-értékét. Ellenkező esetben ugyanis ezeket az értékeket minden olyan tételben
-explicite (azaz egyedileg) fel kellene venni, amely nem fordulhat elő megszorítást
-tartalmazó tétellel közös szerkezetben.
-
-Az utolsó fenti példához tartozó redundancia-szabály: a (↑PARTICIPLE) minden igealaknak jegye, de a jegy értéke jelöletlen esetben: NONE
-
-Nem kell redundancia-szabállyal ellentételezni a FORM-okra vonatkozó megszorításokat. (A FORM-azonosságok mindig megszorító azonosságok.) Ugyanis
-
-# 1. ahol ilyen megkötés nincs, ott bármilyen NP szerepelhet argumentumként
-
-(olyan is, amelyet más tétel FORM-os megszorítással követel magának),
-
-# 2. maguknak a megkövetelt formáknak a szócikkeiben is fel kell tüntetni
-
-(külön tételként megadni), hogy ők így (jelentés nélküli formaként) is előfordulnak. Így pl. a keep tabs on sg 'szemmel tart vkit' idióma létezése
-
-
-68
-
-
-miatt a 'hajtóka, címke stb.' alapjelentésekkel bíró tab szócikkében egy
-ilyen tételnek is szerepelnie kell:
-tabs: N, (↑FORM)=TABS
-(↑NUM) =PL
+* Előfordulhatnak lexikai tételekben, c-struktúra-pozíciókban vagy
+  kiterjedhetnek teljes frázisstruktúra szabályokra is
+* Típusjelölőjük: =C
+  (↑REFL) =C +
+  (↑OBJ FORM) =C TABS
+  (↑XCOMP PARTICIPLE) =C PRESENT
+* olyan elemeknek a lexikai jellemzésében szerepelnek, amelyek kizárólag a
+  megfelelő jegyet tartalmazó mondatokban fordulhatnak elő. Szerepelhetnek
+* lexikai szabályok is bevezethetik őket
+* A feltétel tartalmazhat negációt is.
+* A redundancia-követelmények érdekében érdemes feltételezni, hogy tkp. minden
+  tétel tartalmazza a legalább egy szócikktől megkívánt tulajdonságok
+  jelöletlen értékét. Ellenkező esetben ugyanis ezeket az értékeket minden
+  olyan tételben explicite (azaz egyedileg) fel kellene venni, amely nem
+  fordulhat elő megszorítást tartalmazó tétellel közös szerkezetben.
+* Az utolsó fenti példához tartozó redundancia-szabály: a (↑PARTICIPLE) minden
+  igealaknak jegye, de a jegy értéke jelöletlen esetben: NONE
+* Nem kell redundancia-szabállyal ellentételezni a FORM-okra vonatkozó
+  megszorításokat. (A FORM-azonosságok mindig megszorító azonosságok.) Ugyanis 
+  1. ahol ilyen megkötés nincs, ott bármilyen NP szerepelhet argumentumként
+     (olyan is, amelyet más tétel FORM-os megszorítással követel magának), 
+  2. maguknak a megkövetelt formáknak a szócikkeiben is fel kell tüntetni
+     (külön tételként megadni), hogy ők így (jelentés nélküli formaként) is
+     előfordulnak
+* pl. a keep tabs on sg 'szemmel tart vkit' idióma létezése miatt
+  a 'hajtóka, címke' alapjelentésekkel bíró tab szócikkében egy ilyen tételnek
+  is szerepelnie kell:
+  tabs: N, (↑FORM)=TABS (↑NUM) =PL
 
 #### 2.4.5.3. Egzisztenciális megszorítás [existential constraint]
 
-
-Az egzisztenciális megszorítás olyan megszorítás, amely csak azt követeli meg, hogy
-egy jegy (attribútum) AKÁRMILYEN értéket (de valamilyent feltétlenül) felvegyen
-(pl. finit mondatokban a TENSE jelen legyen). Ez is negálható. Mivel az érték
-közömbös, felírásukban csak az attribútumot jelenítjük meg, pl.:
-
-Formájuk: funkcionális attribútum
-
-Példa:
-
-to: ...
-¬(↑TENSE)
-...
-
-
-A to lexikai jellemzésének a fenti példában kiemelt sora azt az információt rögzíti,
-hogy a to-t tartalmazó f-struktúrákban a TENSE attribútumnak semmilyen értékkel
-nem szabad megjelennie.
-
-Vegyük észre, hogy a régensek szemantikai formájában szereplő vonzatkeret nem
-más, mint a tétel által igényelt vonzatokra vonatkozó egzisztenciális megszorításoknak a listája, pl.:
-'SZERET <(↑SUBJ)(↑OBJ)>'
-
-Tartalmilag ez a vonzatkeret azt rögzíti, hogy a 'szeret' jelentésű ige mind egy alanyi,
-mind pedig egy tárgyi funkcióval rendelkező érték jelenlétét igényli, tehát ilyenek hiányában nem képes grammatikus szerkezetet alkotni.
-
-Szűrő szerepüknek megfelelően a megszorító azonosságoknak és az egzisztenciális megszorításoknak a teljesülését az f-struktúrát alkotó definiáló azonosságok
-összességének az ismeretében ellenőrizni kell.
+* azt követeli meg, hogy egy jegy (attribútum) AKÁRMILYEN értéket (de
+  valamilyent feltétlenül) felvegyen
+  (pl. finit mondatokban a legyen TENSE)
+* Ez is negálható. Mivel az érték közömbös, felírásukban csak az attribútumot
+* eg to:  ...
+          ¬(↑TENSE)
+          ...
+* a régensek szemantikai formájában szereplő vonzatkeret nem más, mint a tétel
+  pl.: 'SZERET <(↑SUBJ)(↑OBJ)>'
 
 #### 2.4.5.4. Feltételes azonosság [conditional equation]
 
-
-A boole-algebrai eszközök megengedik komplexebb kifejezések használatát is. Ezek
-közül itt csak a gyakran szükséges feltételes azonosságot definiáljuk:
-pl.: (↓ CASE) = NOM ⇒ (↑ SUBJ) = ↓
-[(↓ CASE) = ACC & (↓ ANIM) = +] ⇒ (↑ OBJ) = ↓
-[(↓ CASE) = NOM & (↓ ANIM) = −] ⇒ (↑ OBJ) = ↓
-
-
-
-
-69
-
-
-A feltételes azonosságokkal azt szeretnénk kifejezni, hogy amennyiben a bal oldal
-fennáll, akkor a jobb oldalt bevisszük az f-struktúrába. Kondicionálisként ezért nem
-értelmezhetjük, mert azt (lévén [¬A ∨ B] értelmű) az utótag igazsága az előtagétól
-függetlenül teszi igazzá. A feltételes azonosságot tehát a következő interpretációban
-értelmezzük:
-
-
-azaz a B-t tartalmazó minimális f-struktúrában
-
-A-nak megszorító azonosságként kell teljesülnie.
-
-
-Ez azt jelenti, hogy: (↓ CASE) = NOM ⟹ (↑ SUBJ) = ↓
-ekvivalens ezzel: ¬[(↓CASE) = NOM] ∨ [(↓CASE) =C NOM ∧ (↑SUBJ) = ↓],
-valamint ezzel:  (↓CASE) ≠ NOM
-
-  (↑SUBJ) = ↓
-  konjunkció jele.
-2.5.
-
-
-A szintaktikai információk kódolása a szintaxisban [syntactic encoding of
-syntactic relations]
-
-
-Ez alatt a c-struktúra pozícióinak (a csomópontoknak) az annotálását értjük, amelynek
-révén összetevőket (szintaktikai realizációkat) és grammatikai viszonyokat rendelünk
-egymáshoz. Konkrét funkcionális egyenlőségek használatával az annotáció a
-következőképpen nézhetne ki:
-
-S → NP VP
-│
-│
-│
-f1
-f2 f3
-
-
-NP
-│
-f4
-
-→ N
-│
-f5
-
-(f1 SUBJ)=f2
-f1 = f3
-
-f4 = f5
-
-
-VP
-│
-f3
-
-→ V NP AP
-│ │ │
-f6 f7 f8
-
-f3=f6
-(f7CASE)=CACC
-(f3OBJ)=f7 (f3XCOMP)=f8
-
-
-A csomópontokhoz tartozó részleges f-struktúrákat az annotációban szereplő azonosságok határozzák meg. Ezeket részben a PS-szabályok, részben pedig további kódoló
-szabályok vezetik be és rendelik a csomópontokban álló kategóriákhoz. Az annotáció
-révén gyakorlatilag részleges (azaz a mondat f-struktúrájának darabjait képviselő) fstruktúrákat rendelünk a kategóriacímkékkel megnevezett összetevőkhöz [=local codescription of functional structures]. Ebből következően a mondat c-struktúrája és
-f-struktúrája közötti leképezések részenkénti megfeleléseket [piecewise correspondence] is biztosítanak. A fenti utolsó szabály és a hozzá társított egyenlőségek pl. ezeket a részenkénti leképezéseket definiálják:
-
-
-70
-
-
-╔═════════╗
-┌
-┐
-║
-
-VP ╠═══════════> f3 │
-╔═══╗ │
-║
-╔═══
-╪══╝
-f6 │ OBJ
-f7 [ „ ] ║ │
-
-
-│ XCOMP f8 [
-]║ │
-║ V ║ ╔══╗ ╔════╗
-└
-ƒ ║┘
-╚═══╝ ║NP║ ║ AP ╠═════════════════════╝ ║
-╚╦═╝ ╚════╝
-║
-╚══════════════════════════════════╝
-
-A felírást rövidítik, általánosítják és teszik áttekinthetőbbé az 2.4.3. -ban megismert ↑
-és ↓ metaváltozók. A fenti annotálás általánosított megfelelője a metaváltozók használatával így néz ki:
-(↑OBJ)=↓
-(↑SUBJ)=↓ ↑=↓
-↑=↓
-↑=↓ (↓CASE)=CACC (↑XCOMP)=↓
-
-S → NP
-
-VP
-
-NP → N
-
-VP → V
-
-NP
-
-AP
-
-Ugyanahhoz a csomóponthoz (kategóriához) több azonosság is rendelhető, amennyiben közöttük Boole-algebrai viszonyok állnak fenn, pl.:
- (↑OBJ) =↓
-
-
- (↑ADJ) =↓
-(↓CASE) =C DAT
-
-NP
-
-Szintaktikai kódolásnál a FUNKCIÓK azonosságai mindig (↑...)=↓ formájúak, mert
-az ego funkcióját adják meg (az anyához való viszonyában).
-
-A grammatikai JEGYEKRE vonatkozó azonosságok viszont mindig
-(↓...)=C... formájúak, mivel mindig megkötést jelentenek: azt, hogy
-a csomópont alá csak ilyen jegyű egységek jöhetnek.
-
-A szintaktikai kódolás fő rendszerei: KONFIGURÁCIÓS KÓDOLÁS (l. 2.5.1.) és
-
-NEM-KONFIGURÁCIÓS KÓDOLÁS (l. 2.5.2.)
-
-Konfigurációs kódolás van jelen ott, ahol az összetevők szintaktikai funkcióját (vagy
-legalábbis funkciójuk típusát, l. 2.3.1.3., 2.3.5.) a szerkezetben elfoglalt pozíciójuk
-jeleníti meg. Ez a helyzet az X' elvek alapján felépülő szerkezetekben. Nemkonfigurációs kódolásról beszélünk, ha a funkciót nem az összetevő pozíciója, hanem
-egyéb eszközök (tipikusan a morfológia) jeleníti meg.
-
-A kódolás konfigurációs vagy nem-konfigurációs jellegét itt nem nyelvek egészére
-vonatkozó besorolási szempontnak, hanem az egyes nyelvek egyes kategóriatípusaira
-egyenként feltárandó empirikus ténynek kell tekinteni. Még az is előfordul, hogy ugyanazon szerkezetben csak egyes összetevőknek a funkciója van konfigurációsan
-rögzítve, másoké viszont nem konfigurációs alapon azonosul, pl.:
-
-
-
-
-71
-
-
-# 1. Az angolban csak a mondat "magja" konfigurációs, a PP-k többnyire nem konfigurációsak:
-
-
-V'
-
-→
-
-
-V
-↑=↓
-
-
-NP
-
-
- (↑OBJ)=↓ 
-
-
-NP
-
-
- (↑OBJ2)=↓ 
-
-*
-
-
-PP
-(↑OBLθ)=↓
-
-
-# 2. A walpiriben konfigurációs elem az AUX kötelező második pozíciója:
-
-
-S
-
-→ X AUX X
-↑=↓
-
-*
-
-
-Annak ellenére azonban, hogy a konkrét szerkezetek konfigurációs vagy nem-konfigurációs jellege egyedileg feltárandó empirikus tény, a bennük szereplő összetevők funkciójának kifejezését mindkét szerkezettípusban általános elvek korlátozzák.
+* A boole-algebrai eszközök megengedik komplexebb kifejezések használatát is.
+  eg a gyakran szükséges feltételes azonosság
+                             pl.: (↓ CASE) = NOM ⇒ (↑ SUBJ) = ↓
+                 [(↓ CASE) = ACC & (↓ ANIM) = +] ⇒ (↑ OBJ) = ↓
+                 [(↓ CASE) = NOM & (↓ ANIM) = −] ⇒ (↑ OBJ) = ↓
+* azt szeretnénk kifejezni, hogy amennyiben a bal oldal fennáll, akkor a jobb
+  oldalt bevisszük az f-struktúrába
+* Kondicionálisként ezért nem értelmezhetjük, mert azt (lévén [¬A ∨ B] értelmű)
+  az utótag igazsága az előtagétól függetlenül teszi igazzá
+* a következő interpretációban értelmezzük:
+  A ⇒ B = df ¬A ∨ (A c ∧ B) ─ 
+  azaz a B-t tartalmazó minimális f-struktúrában A-nak megszorító azonosságként
+
+## 2.5.  A szintaktikai információk kódolása a szintaxisban
+  [syntactic encoding of syntactic relations]
+
+* Ez alatt a c-struktúra pozícióinak (a csomópontoknak) az annotálását értjük,
+  => összetevőket (szintaktikai realizációkat) és grammatikai viszonyokat
+  rendelünk egymáshoz
+* Az annotáció révén gyakorlatilag részleges (azaz a mondat f-struktúrájának
+  darabjait képviselő) fstruktúrákat rendelünk a kategóriacímkékkel megnevezett
+  összetevőkhöz [=local codescription of functional structures]. Ebből
+=> a mondat c-struktúrája és f-struktúrája közötti leképezések
+  részenkénti megfeleléseket [piecewise correspondence] is biztosítanak. A
+* A felírást rövidítik, általánosítják és teszik áttekinthetőbbé az 2.4.3. -ban
+  megismert ↑ és ↓ metaváltozók. A fenti annotálás általánosított megfelelője a
+* Ugyanahhoz a csomóponthoz (kategóriához) több azonosság is rendelhető,
+  amennyiben közöttük Boole-algebrai viszonyok állnak fenn
+* Szintaktikai kódolásnál
+  * a FUNKCIÓK azonosságai mindig (↑...)=↓ formájúak,
+    mert az ego funkcióját adják meg (az anyához való viszonyában).
+  * A grammatikai JEGYEKRE vonatkozó azonosságok viszont mindig (↓...)=C...
+    mivel mindig megkötést jelentenek:
+    azt, hogy a csomópont alá csak ilyen jegyű egységek jöhetnek.
+* A szintaktikai kódolás fő rendszerei:
+  KONFIGURÁCIÓS KÓDOLÁS (l. 2.5.1.) és NEM-KONFIGURÁCIÓS KÓDOLÁS (l. 2.5.2.)
+* Konfigurációs kódolás van jelen ott, ahol az összetevők szintaktikai
+  funkcióját (vagy legalábbis funkciójuk típusát, l. 2.3.1.3., 2.3.5.) a
+  szerkezetben elfoglalt pozíciójuk jeleníti meg
+  * Ez a helyzet az X' elvek alapján felépülő szerkezetekben
+* Nemkonfigurációs kódolásról beszélünk, ha a funkciót nem az összetevő
+  pozíciója, hanem egyéb eszközök (tipikusan a morfológia) jeleníti meg.
+* nem nyelvek egészére vonatkozó besorolási szempontnak, hanem
+  az egyes nyelvek egyes kategóriatípusaira egyenként feltárandó empirikus tény
+  * Még az is előfordul, hogy ugyanazon szerkezetben csak egyes összetevőknek a
+    funkciója van konfigurációsan rögzítve, másoké viszont nem konfigurációs
+    pl 
+    1. Az angolban csak a mondat "magja" konfigurációs,
+      a PP-k többnyire nem konfigurációsak: 
+      V' → V_{↑=↓} (NP_{(↑OBJ)=↓}) (NP_{(↑OBJ2)=↓}) PP_{(↑OBLθ)=↓}^* 
+    2. A walpiriben konfigurációs elem az AUX kötelező második pozíciója:
+      S → X AUX X*
+            ↑=↓ 
+* a bennük szereplő összetevők funkciójának kifejezését mindkét
+  szerkezettípusban általános elvek korlátozzák.
 
 ### 2.5.1. A konfigurációs kódolás [configurational encoding]
 
-
-#### 2.5.1.1. Funkciótársítás az endocentrikus szerkezetekben
-
-
-Az X'-elveknek megfelelően felépülő frázisok funkcionális jellemzése (vagyis az, hogy
-összetevői milyen funkciókat hordozhatnak, tehát hogyan annotálandók) levezethető az
-
-n
-
-a. A c-strukturális fej mindig egyben f-strukturális fej is (azaz X f-struktúrája mindig
-n+1
-unifikálódik X -ével). A kategoriális fejhez járuló ↑=↓ annotáció tehát endocentrikus rendszerben implicite mindig adott, ezért nem kell külön kifejezni:
-i+1
-
-
-X
-
-i
-
-YP
-
-X
-
-→ ↑=↓
-
-b. A funkcionális kategóriák specifikálói (vagyis az FP-k által dominált SPEC-ek) a
-szintaktizálódott diskurzusfunkciókkal (TOP, FOC, SUBJ) azonosak, vagy pedig
-nincsenek jelen:
-
-FP
-
-
-YP
-
-F'
-(↑d-fn)=↓
-
-
-SPEC-je SUBJ, míg más nyelvekben ez TOP v. FOC funkciójú is lehet vagy hiányozhat.
-c. A funkcionális kategóriák komplementumai f-strukturális társfejei a szerkezetnek:
-
-
-72
-
-
-
-F'
-
-Példák:
-
-D'
-
-
-↑=↓
-↑=↓
-↑=↓
-↑=↓
-o
-
-F
-
-XP
-
-D
-
-NP
-│
-│
-(↑DEF)=+
-
-
-I'
-
-↑=↓
-↑=↓
-
-I
-
-VP/S
-│
-│
-(↑TNS)=...
-
-
-C'
-
-↑=↓
-↑=↓
-
-C
-
-IP
-│
-│
-
-o
-
-
-F F'-nak kategoriális feje, s egyben funkcionális fej is; XP szintén funkcionális fej,
-de nem kategoriális feje F'-nek. A fenti megállapítás kifejezi azt az intuíciót, hogy az
-o
-
-F -ok viszonya a komplementumukhoz nem egy predikátum és argumentuma közötti
-o
-viszony: F vagy "fogalmi" tartalom nélküli funkciószó, vagy pedig inflexiós
-
-révén kifejezett argumentumaival az f-struktúrában áll kapcsolatban.
-d. A lexikai kategóriák SPECifierjei az ADJunctok egy osztályával azonosak vagy
-nincsenek jelen:
-
-LP
-
-
-YP
-
-L'
-(↑ADJ)=↓
-e. A lexikai kategóriák komplementumai a nem-diskurzus funkciójú vonzatfunkciókat
-(=komplementumfunkciókat: OBJ, OBJθ, OBLθ, COMPL) hordozzák. Az ezek közötti választás lexikailag determinált:
-
-L'
-
-
-L
-
-YP
-(↑c-fn)=↓
-f. A maximális projekciókhoz adjungált összetevők nem-komplementum funkciókat
-hordoznak (azaz: TOP, FOC, SUBJ, ADJ):
-
-XP
-
-
-YP
-
-XP
-(↑non-c-fn)=↓
-
-Ahol egy adott nyelv szerkezetei megfelelnek az endocentricitási követelményeknek,
-ott a részleges c-struktúrák és f-struktúrák együtteseinek a megszorításai ezekből az
-
-ennek arányában pedig ki lehet küszöbölni az annotált c-struktúrákat.
-
-
-
-
-73
-
-
-Illusztráció az angol topikalizált CP példáján:
-
-Az (A) alatti kategoriális szerkezethez az általános elvek a (B) alatti funkcionális
-sémákat rendelik:
-(A)
-
-(B)
-
-
-IP
-
-
-CP
-
-IP
-
-│
-that languages are learnable
-
-I'
-
-
-I
-
-VP
-│
-
-is
-
-V
-
-PP
-
-
-captured
-by this theory
-
-
-IP
-
-(f. elv) →
-(↑DF)=↓
-↑=↓
-
-CP
-
-IP
-
-│
-that languages are learnable
-↑=↓
-← (a. elv)
-
-I'
-
-(a. elv) →
-↑=↓
-↑=↓
-← (c. elv)
-
-I
-
-VP
-│
-
-is
-↑=↓
-(↑CF)=↓
-← (e. elv)
-
-V
-
-PP
-
-captured by this theory
+#### 2.5.1.1. Funkciótársítás az endocentrikus szerkezetekben 
+
+Az X'-elveknek megfelelően felépülő frázisok funkcionális jellemzése (vagyis
+az, hogy összetevői milyen funkciókat hordozhatnak, tehát hogyan annotálandók)
+levezethető az endocentrikus jellegű szerkezet─funkció-társítás alább javasolt
+univerzális elveiből:
+  1. A c-strukturális fej mindig egyben f-strukturális fej is (azaz X
+     f-struktúrája mindig n+1 unifikálódik X -ével). A kategoriális fejhez
+     járuló ↑=↓ annotáció tehát endocentrikus rendszerben implicite mindig
+     adott, ezért nem kell külön kifejezni: i+1
+
+  X^{i+1} -> YP X^i
+                ↑=↓
+
+  1. A funkcionális kategóriák specifikálói (vagyis az FP-k által dominált
+     SPEC-ek) a szintaktizálódott diskurzusfunkciókkal (TOP, FOC, SUBJ)
+     azonosak, vagy pedig nincsenek jelen:
+
+  FP ->     YP    F'
+        (↑d-fn)=↓
+
+    Az egyes FP-típusokhoz tartozó d-funkciók nyelvenként eltérőek ─ pl. az
+    angol IP SPEC-je SUBJ, míg
+    más nyelvekben ez TOP v. FOC funkciójú is lehet vagy hiányozhat.
+  1. A funkcionális kategóriák komplementumai f-strukturális társfejei a
+     szerkezetnek:
+  F' -> F^0 XP
+        ↑=↓ ↑=↓
+  D' ->     D     NP      diskurzusfunkciók
+        (↑DEF)=+
+  I' ->       I     VP/S
+        (↑TNS)=...
+  C' -> C IP              komplementum
+* az F^0-ok viszonya a komplementumukhoz nem egy predikátum és argumentuma
+  közötti viszony: F vagy "fogalmi" tartalom nélküli funkciószó, vagy pedig
+  inflexiós tulajdonságok alapján definiált lexikai elem ─ mint pl. a finit ige
+  ─, amely az XP-k révén kifejezett argumentumaival az f-struktúrában áll
+  kapcsolatban.
+  1. A lexikai kategóriák SPECifierjei az ADJunctok egy osztályával azonosak
+     vagy nincsenek jelen:
+
+  LP ->    YP    L'
+        (↑ADJ)=↓
+
+  1. A lexikai kategóriák komplementumai a nem-diskurzus funkciójú
+     vonzatfunkciókat (=komplementumfunkciókat: OBJ, OBJθ, OBLθ, COMPL)
+     hordozzák. Az ezek közötti választás lexikailag determinált: 
+
+  L' -> L     YP
+          (↑c-fn)=↓
+
+  1. A maximális projekciókhoz adjungált összetevők nem-komplementum funkciókat
+     hordoznak (azaz: TOP, FOC, SUBJ, ADJ):
+
+  XP ->       YP      XP
+        (↑non-c-fn)=↓
+
+* Ahol egy adott nyelv szerkezetei megfelelnek az endocentricitási
+  követelményeknek, ott a részleges c-struktúrák és f-struktúrák együtteseinek
+  a megszorításai ezekből az elvekből az univerzális megszorítások konkrét
+  megvalósulásaiként levezethetők ─ ennek arányában pedig ki lehet küszöbölni
+  az annotált c-struktúrákat.
+* Illusztráció az angol topikalizált CP példáján:
+  * Az (A) alatti kategoriális szerkezethez az általános elvek a (B) alatti
+    funkcionális sémákat rendelik:
 
 Kommentárok:
 
-# 1. A fenti annotációkban DF a diskurzusfunkciók csoportjára, CF a komplementumfunkciók csoportjára utaló rövidítés.
-
-
-
-
-funkcionális jelölőkre vonatkozó korlátozásnak); [2] nem lehet ADJ, mert hiányos fstruktúrát adna. Az f. elv által megengedett c-funkciók közül ezért a CP kategóriájú
-összetevők csak a d-funkciókat kaphatják meg.
-
-# 3. A teljesség és a koherencia követelményének (l. 1.3.3.) a kielégítése megkívánja,
-
-hogy a c-struktúra annotálásából származó TOP (vagy FOC) és az ige lexikai annotálásától megkívánt SUBJ funkciót azonosítsuk egymással. TOP felvétele esetén a
-kapcsolódás abból az "univerzális default"-ból ered, amely opcionálisan azonosítja a
-
-TOP és a SUBJ funkciót (l. 2.3.1.2.).
-
-
-74
-
-
+1. A fenti annotációkban
+  * DF a diskurzusfunkciók csoportjára,
+  * CF a komplementumfunkciók csoportjára utaló rövidítés.
+2. A CP
+  * az angolban ─ kanonikusan ─ nem viselhet SUBJ funkciót, mert nem főnévi
+    jellegű (nem NP, DP). (Ez tekinhető a c-struktúra megszorításaival
+    társított, a funkcionális jelölőkre vonatkozó korlátozásnak);
+  * nem lehet ADJ, mert hiányos f-struktúrát adna. Az f. elv által megengedett
+    c-funkciók közül ezért a CP kategóriájú összetevők csak a d-funkciókat
+    kaphatják meg.
+3. A teljesség és a koherencia követelményének (l. 1.3.3.) a kielégítése
+   megkívánja, hogy a c-struktúra annotálásából származó TOP (vagy FOC) és az
+   ige lexikai annotálásától megkívánt SUBJ funkciót azonosítsuk egymással.
+   TOP felvétele esetén a kapcsolódás abból az "univerzális default"-ból ered,
+   amely opcionálisan azonosítja a TOP és a SUBJ funkciót (l. 2.3.1.2.).
 
 #### 2.5.1.2. Funkciótársítás az egzocentrikus szerkezetekben (konfigurációs S)
 
