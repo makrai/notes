@@ -7,7 +7,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
 # 1 Intro
 
 * a conditional sentence expresses a proposition which
-  * is a function of two other propositions, yet
+  * a function of two other propositions, yet
   * not a truth function of those propositions
   * eg I may know the truth values of
     "Willie Mays played in the American League" and
@@ -15,26 +15,25 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     without knowing whether or not
     Mays would have hit four hundred if he had played in the American League
 * This fact has given rise to a number of philosophical problems; I discuss 3
-  * the logical problem of conditionals, a problem that is frequently ignored
+  1. the logical problem of conditionals, a problem that is frequently ignored
     * describing the formal properties of the conditional function
     * represented in English by the words "if ... then", taking ordered pairs
     * I explain informally and defend a solution, presented more rigor elsewhere
-  * the pragmatic problem of counterfactuals
+  1. the pragmatic problem of counterfactuals
     * dominated recent discussions of contrary-to-fact conditionals
     * the formal properties of the conditional function, together with all of
       the facts, may not be sufficient for determining the truth value
     * ie different truth values of conditional statements may be consistent
       with a single valuation of all nonconditional statements
     * find and defend criteria for choosing among these valuations
-    * pragmatic, and not semantic
-      * The distinction hE depends on the construction of a semantic theory
-      * The semantic theory that I shall defend will thus help by charting the
-        boundary between the semantic and pragmatic components of the concept
-      * Rescher (1964) avoids this boundary line by couching his
-        whole discussion in terms of conditions for belief, or justified belief,
-        rather than truth
-      * Conditions for justified belief are pragmatic for any concept
-  * an epistemological problem that has bothered empiricist philosophers
+  * pragmatic, and not semantic
+    * The distinction hE depends on the construction of a semantic theory
+    * The semantic theory that I shall defend will thus help by charting the
+      boundary between the semantic and pragmatic components of the concept
+    * Rescher (1964) avoids this boundary line by couching his whole discussion
+      in terms of conditions for belief, or justified belief, rather than truth
+    * Conditions for justified belief are pragmatic for any concept
+  1. an epistemological problem that has bothered empiricist philosophers
     * many counterfactuals are synthetic and contingent statements about
       unrealized possibilities
     * contingent statements must be capable of confirmation by empirical evid,
@@ -58,8 +57,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
       * a formal system with a primitive conditional connective, and
       * a semantical apparatus which provides general truth conditions for
         statements involving that connective
-  * Sections IV, V, and VI, I shall discuss in a general way the relation
-    to the three problems outlined above
+  * Sections IV, V, and VI discuss the relation to the three problems above
 
 # II. The interpretation 2
 
@@ -72,7 +70,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     the United States will use nuclear weapons
   * How do you deliberate in choosing your response? What logical considerations
   * two familiar answers to this question, and then defend a third answer
-  1. based on the simplest account of the conditional, the truth functional anal
+  1. the simplest account of the conditional, the truth functional analysis
     * first, will the Chinese enter the conflict?  and
       second, will the United States use nuclear weapons?
     * If the answer to the first question is no,
@@ -91,9 +89,9 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
       * no opinion about future Chinese actions, but you do not think they will
       => you believe
         * the opinion survey statement to be true even though you believe the
-          antecedent and consequent to be logically and causually independent 
+          antecedent and consequent to be logically and causually independent
     * the presence of a 'connection' is not a necessary condition for the truth
-  3. based on a suggestion made some time ago by Ramsey (1950)
+  3. based on a suggestion made by Ramsey (1950)
     * Consider first/2nd/3dr the case where
     * you have no opinion about the statement, "The Chinese will enter"
       * your deliberation about the survey statement should be a thought exper:
@@ -115,22 +113,22 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
         * this answer accounts for the relevance of 'connection' when it is
           relevant
           without making it a necessary condition of the truth of a conditional
-  * you believe or know the antecedent to be true; in this case,
-    * no changes need be made in your stock of beliefs
-    * your belief about the conditional := your belief about the consequent
-  * you know or believe the antecedent to be false? In this situation,
-    * you cannot simply add it to your stock of beliefs
-      without introducing a contradiction
-    * You must make adjustments by
-      deleting or changing those beliefs which conflict with the antecedent
-    * difficulties; there will be more than one way to make the adjustments
-      * Rescher calls this the problem of
-        the ambiguity of belief-contravening hypotheses
-        * the resolution of this ambiguity depends on pragmatic consideration
-        * Cf, also Goodman's problem of relevant conditions in Goodman (1955)
-      * These difficulties point to the pragmatic problem of counterfactuals,
-        but if we set them aside for a moment, we shall see a rough but
-        general answer to the question we are asking
+    * you believe or know the antecedent to be true; in this case,
+      * no changes need be made in your stock of beliefs
+      * your belief about the conditional := your belief about the consequent
+    * you know or believe the antecedent to be false? In this situation,
+      * you cannot simply add it to your stock of beliefs
+        without introducing a contradiction
+      * You must make adjustments by
+        deleting or changing those beliefs which conflict with the antecedent
+      * difficulties; there will be more than one way to make the adjustments
+        * Rescher calls this the problem of
+          the ambiguity of belief-contravening hypotheses
+          * the resolution of this ambiguity depends on pragmatic consideration
+          * Cf, also Goodman's problem of relevant conditions in Goodman (1955)
+        * These difficulties point to the pragmatic problem of counterfactuals,
+          but if we set them aside for a moment, we shall see a rough but
+          general answer to the question we are asking
 * It is crucial, however, that the answer may not be restricted to some
   particular context of belief
   if it is to be helpful in finding a definition of the conditional
@@ -227,8 +225,8 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * There may be further formal constraints that can plausibly be imposed
   * don't expect to find semantic conditions sufficient to guarantee uniqueness
   * The questions ~ are reformulations of the pragmatic problem of counterfactls
-    * "On what basis do we select a selection function
-    * "What are the criteria for ordering possible worlds?"
+    * On what basis do we select a selection function
+    * What are the criteria for ordering possible worlds?
     * a problem in the application of conditional logic
   * The conditions that I have mentioned above are sufficient, however, to
     define the semantical notions of validity and consequence for cond logic
@@ -241,7 +239,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * primitive connectives of C2 are
     * the usual \supset and ~ (with v, &, and ≡ defined as usual), as well as
     * a conditional connective, > (called the corner)
-  * Other modal and conditional concepts can be defined in terms of the corner 
+  * Other modal and conditional concepts can be defined in terms of the corner
   □A = ~A > A     [necessary]
   ⋄A = ~(A > ~A)  [possible]
   A ≷ B = (A > B) & (B > A)
@@ -249,7 +247,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * modus ponens (if A and A \supset B are theorems, then B is a theorem)
   * the Gödel rule of necessitation (If A is a theorem, then □A is a theorem)
   * axiom schemata:
-  (al) Any tautologous well-formed formula is an axiom
+  (a1) Any tautologous well-formed formula is an axiom
   (a2) □(A \supset B) \supset (□A \supset □B)
   (a3) □(A \supset B) \supset (A > B)
   (a4) ⋄A \supset \cdot (A > B) \supset ~(A >~B)
@@ -257,7 +255,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   (a6) (A > B) \supset (A \supset B)
   (a7) A ≷ B \supset \cdot (A > C) \supset (B > C)
 * The conditional connective, as characterized by this formal system,
-  * inter mediate between __strict implication__ & the __material conditional__
+  * intermediate between __strict implication__ & the __material conditional__
     in the sense that
     □(A \supset B) entails A > B by (a3) and
     A > B entails A \supset B by (a6)
@@ -281,7 +279,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
         communist."
       Conclusion
         "If J. Edgar Hoover had been born a Russian, he would be a traitor."
-    * reasonable to affirm these premisses and deny the conclusion
+      * reasonable to affirm these premisses and deny the conclusion
     * If this example is not sufficiently compelling, note that
       the following rule follows from the transitivity rule:
       From A > B to infer (A & C) > B
@@ -301,7 +299,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     the denial of a conditional is equivalent to
     a conditional with the same antecedent and opposite consequent
     (provide that the antecedent is not impossible)
-    ie \diam A ~(A > B) := (A > ~B)
+    ie ⋄A -- ~(A > B) ≡ (A > ~B)
     * explains the fact, noted by both Goodman and Chisholm that
       the normal way to contradict a counterfactual is to contradict the
       consequent, keeping the same antecedent
@@ -316,10 +314,10 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
       A person would believe that this statement is true if he thought that the
       North Vietnamese were determined to press for a complete withdrawal of
       U.S. troops
-      * ie the consequent is determined 
+      * ie the consequent is determined
       * But he would surely deny the contrapositive, "If North Vietnam agrees to
-      negotiate, then the U.s. will not have halted the bombing."
-      He would believe that halt in the bombing, and much more, is required to
+      negotiate, then the U.S. will not have halted the bombing."
+    * He would believe that halt in the bombing, and much more, is required to
       bring the North Vietnamese to the negotiating table
     * endnote; modus tolens is valid for the conditional:
       from A > B and ~B, one can infer ~A
@@ -332,7 +330,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * Chisholm also suggested paraphrasing semifactuals before analyzing them
     * "Even if you were to sleep all morning, you would be tired" is to be read
     * "It is false that if you were to sleep all morning, you would not be
-      tired
+      tired"
   * A separate and nonconditional analysis for semifactuals is necessary to save
     the 'connection' theory of counterfactuals in the face of the anomalies
 * summ
@@ -347,66 +345,66 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
 
 # IV. The logical problem: general considerations 10
 
-* The traditional strategy for a problem like the logical problem of conditionls
-  * show that the unclear or objectionable phrase was dispensable, or
-    replaceable by something clear and harmless.  
-  * Analysis 
-    * unpacking making manifest of what was latent in the concept or
-    * replacement of a vague idea by a precise one,
-      adequate to the same purposes as the old expression, but problem-free 
-  * The semantic theory of conditionals can also be viewed either as ~ or ~
+* The traditional strategy for a problem like the logical problem of conditional
+* show that the unclear or objectionable phrase was dispensable, or
+  replaceable by something clear and harmless
+* Analysis
+  * unpacking making manifest of what was latent in the concept or
+  * replacement of a vague idea by a precise one,
+    adequate to the same purposes as the old expression, but problem-free
+* The semantic theory of conditionals can also be viewed either as ~ or ~
   * construction of a concept to replace an unclear notion of ordinary language,
   * explanation of a commonly used concept
-    * I see the theory in the latter way: no recommendation or stipulation is
-  * hE the theory is not a description of linguistic usage
-  * explaine the structure of a concept
-  * Linguistic facts what we would say in this or that context, and what
-    sounds odd to the native speaker are relevant as evidence, since one may
-    * concepts are to some extent mirrored in language.
-  * The 'facts', taken singly, need not be decisive [döntő]
-  * A recalcitrant [makacs] counter-example may be judged
-    a deviant use or a different sense of the word. We can claim that
-    * a paraphrase is necessary,
-    * or even that ordinary language is systematically mistaken about the
-      concept we are explaining
-   * such ad hoc hypotheses and qualifications diminish both the plausibility
-     and the explanatory force of a theory
-  * While we are not irrevocably bound to the linguistic facts, there are no
-    'don't cares' contexts of use with which we are not concerned, since any
-    context can be relevant as evidence for or against an analysis
-  * A general interpretation which
-      avoids dividing senses and
-      accounts for the behavior of a concept in many contexts
-      fits the familiar pattern of scientific explanation in which
-      diverse, seemingly unlike surface phenomena are seen as
-      deriving from some common source
-  => I take it as a strong point in favor of the semantic theory that
-    it treats the conditional as a univocal concept
+  * I see the theory in the latter way (no recommendation or stipulation)
+* hE the theory is not a description of linguistic usage
+* explain the structure of a concept
+* Linguistic facts what we would say in this or that context, and what
+  sounds odd to the native speaker are relevant as evidence
+* concepts are to some extent mirrored in language
+* The 'facts', taken singly, need not be decisive [döntő]
+* A recalcitrant [makacs] counter-example may be judged
+  a deviant use or a different sense of the word
+  * a paraphrase is necessary,
+* or even that ordinary language is systematically mistaken about the
+    concept we are explaining
+* such ad hoc hypotheses and qualifications diminish both the plausibility
+   and the explanatory force of a theory
+* While we are not irrevocably bound to the linguistic facts, there are no
+  'don't cares' contexts of use with which we are not concerned, since any
+  context can be relevant as evidence for or against an analysis
+* A general interpretation which
+    avoids dividing senses and
+    accounts for the behavior of a concept in many contexts
+    fits the familiar pattern of scientific explanation in which
+    diverse, seemingly unlike surface phenomena are seen as
+    deriving from some common source
+=> I take it as a strong point in favor of the semantic theory that
+  it treats the conditional as a univocal concept
 
 # V. Pragmatic ambiguity 11
 
-* I have argued that the conditional connective is semantically unambiguous.  
+* I have argued that the conditional connective is semantically unambiguous
 * It is obvious, however, that the context of utterance, the
   purpose of the assertion, and the beliefs of the speaker or his community may
-  make a difference to the interpretation of a counterfactual. How do we
-* the notion of ambiguity.
+  make a difference to the interpretation of a counterfactual
+* the notion of ambiguity
   * A sentence is ambiguous if there is more than one proposition which it may
     properly be interpreted to express
   * Ambiguity may be
-    * syntactic (more than one grammatical structure,
+    * syntactic (more than one grammatical structure)
     * semantic (if one of the words has more than one meaning), or
-    * pragmatic (if the interpretation depends directly on the context of use).
+    * pragmatic (if the interpretation depends directly on the context of use)
       * probably the most common in natural languages
       * Any sentence involving pronouns, tensed verbs, articles or quantifiers
-        is pragmatically ambiguous. For example, the proposition
-      * the truth conditions for "All's well that ends well" depends on the
-        domain of discourse. If the theory presented above is correct, then
-      * we may add conditional sentences to this list. The truth conditions for
+        is pragmatically ambiguous
+        * eg the truth conditions for "All's well that ends well" depends on the
+          domain of discourse
+      * we may add conditional sentences to this list
         * depend on the specification of an s-function
 * The grounds for treating the ambiguity of conditional sentences as pragmatic
   rather than semantic are
-  * the same as the grounds for treating the ambiguity of quantified sentences as
-  pragmatic
+  * the same as the grounds for treating the ambiguity of quantified sentences
+    as pragmatic
   * simplicity and systematic coherence
   * The truth conditions for quantified statements vary with a change in the
     domain of discourse, but
@@ -418,38 +416,37 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
   * In a similar fashion, the semantics for conditional logic brings out the
     common structure of the truth conditions for conditional statements by
     giving the connective a single meaning and making
-    the selection function a parameter of the interpretation.
+    the selection function a parameter of the interpretation
 * Just as we can communicate effectively using quantified sentences without
   explicitly specifying a domain,
   so we can communicate effectively using conditional sentences without
   explicitly specifying an s-function
   * This suggests that there are further rules beyond those in semantics,
     governing the use of conditional sentences
-    * the subject matter of a pragmatics of conditionals
-    * Very little can be said, at this point, about pragmatic rules for the use
-      of conditionals
-      since the logic has not advanced beyond the propositional stage, but
+  * the subject matter of a pragmatics of conditionals
+  * Very little can be said about pragmatic rules for the use of conditionals
+    since the logic has not advanced beyond the propositional stage
 * a few speculative remarks
-  about the kinds of research which may provide a framework for treatment of
-  * and related pragmatic problems in the philosophy of science.
-1. If we had a functional logic with a conditional connective, it is likely that
-  * (\forall x)(Fx > Gx) is the form of a law of nature.
+  about the kinds of research which may provide a framework for treatment
+  (of conditionals and related pragmatic problems in the philosophy of science)
+1. If we had a functional logic with a conditional connective
+  * (\forall x)(Fx > Gx) is the form of a law of nature
   * says, not just that every actual F is a G, but further
-    that for every possible F, if it were an F, it would be a G. If this is
+    that for every possible F, if it were an F, it would be a G
   => Hempel's confirmation paradox does not arise,
      since "All ravens are black" is not logically equivalent to
      "All non-black things are non-ravens."
   * Also, the relation between counterfactuals and laws
-    * laws support counterfactuals because they entail them.
+    * laws support counterfactuals because they entail them
     "If this dove were a raven, it would be black" is simply an instantiation of
     "All ravens are black."
 2. Goodman; the pragmatic problem of counterfactuals is one of
-  a cluster of closely related problems concerning induction and confirmation.
+  a cluster of closely related problems concerning induction and confirmation
   * the source of these difficulties: the general problem of projectability,
     = when can a predicate be validly projected from one set of cases to others?
     or when is a hypothesis confirmed by its positive instances?
-  * Some way of distinguishing between natural predicates and those which are
-    artificially constructed is needed.
+  * Some way is needed to distinguish between natural predicates and those which
+    are artificially constructed
   * Pragmatic criteria for measuring the inductive properties of predicates
     might provide pragmatic criteria for ordering possible worlds
 3. striking structural parallels between
@@ -460,64 +457,53 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     describe the inductive relations among propositions
   * drawing a connection between them might be illuminating for both
 
-
 # VI. Conclusion: empiricism and possible worlds 12
 
-Writers of fiction and fantasy sometimes suggest that imaginary worlds have a
-life of their own beyond the control of their creators. Pirandello's six
-characters, for example, rebelled against their author and took the story out of
-his hands. The skeptic may be inclined to suspect that this suggestion is itself
-fantasy. He believes that nothing goes into a fictional world, or a possible
-world, unless it is put there by decision or convention; it is a creature of
-invention and not discovery. Even the fabulist Tolkien (1966) admits that Faerie
-is a land "full of wonder, but not of information
-
-For similar reasons, the empiricist may be uncomfortable about a theory which
-treats counterfactuals as literal statements about non-actual situations.
-Counterfactuals are often contingent, and contingent statements must be
-supported by evidence. But evidence can be gathered, by us at least, only in
-this universe. To satisfy the empiricist, I must show
+* Writers of fiction and fantasy sometimes suggest that
+  imaginary worlds have a life of their own beyond the control of the creators
+* The skeptic believes that nothing goes into a fictional world, or a possible
+  world, unless it is put there by decision or convention; it is a
+  * creature of invention and not discovery
+  * Tolkien (1966) admits that Faerie is a land "full of wonder, but not of
+    information"
+* the empiricist may be uncomfortable about a theory which
+  treats counterfactuals as literal statements about non-actual situations
+  * Counterfactuals are often contingent, and contingent statements must be
+    supported by evidence
+  * But evidence can be gathered, by us at least, only in this universe
 * how possible worlds, even if the product of convention, can be subjects of
-  empirical investigation.
-
-There is no mystery to the fact that I can partially define a possible world in
-such a way that I am ignorant of some of the determinate truths in that world.
-One way I can do this is to attribute to it features of the actual world which
-are unknown to me. Thus I can say, "I am thinking of a possible world in which
-the population of China is just the same, on each day, as it is in the actual
-world." I am making up this world it is a pure product of my intentions but
-there are already things true in it which I shall never know.
-
-Conditionals do implicitly, and by convention, what is done explicitly by
-stipulation in this example
+  empirical investigation 
+* I can partially define a possible world in such a way
+  that I am ignorant of some of the determinate truths in that world
+  * eg attribute to it features of the actual world which are unknown to me.
+  * eg "I am thinking of a possible world in which the population of China is
+    just the same, on each day, as it is in the actual world
+  * there are already things true in it which I shall never know
+* Conditionals do implicitly, and by convention,
+  what is done explicitly by stipulation in this example
 * counterfactuals are generally about possible worlds which are very much like
-  the actual one, and defined in terms of it
-  => evidence is so often relevant to their truth. When I wonder, for example,
+  the actual one, and defined in terms of it => evidence is so often relevant to
+  their truth
 * eg what would have happened if I had asked my boss for a raise yesterday, I am
-  wondering about a possible world that I have already roughly picked out
   * this world has the same history, up to yesterday, as the actual world, the
-    same boss with the same dispositions and habits. The main difference is that
+    same boss with the same dispositions and habits
   * I do not know everything about the boss's habits and dispositions in the
     actual world => there is a lot that I do not know about how he acts in the
-    possible world that I have chosen, although
+    possible world that I have chosen
   * I might find out by watching him respond to a similar request from another,
-    or by asking his sectetary about his mood yesterday.  
-  * These bits of information about the actual world would not be decisive, of
-    * nT they would be relevant, since they tell me more about the non-actual
-      situation that I have selected.
-
+    or by asking his sectetary about his mood yesterday
+  * These bits of information about the actual world would not be decisive
+  * nT they would be relevant, since they tell me more about the non-actual
+    situation that I have selected
 * If I make a conditional statement subjunctive or otherwise
   and the antecedent turns out to be true,
   then whether I know it or not, I have said something about the actual world,
-  namely that the consequent is true in it.  If the
-  antecedent
-is false, then I have said something about a particular counterfactual world,
-even if I believe the antencedent to be true
+  namely that the consequent is true in it
 * The conditional provides
   a set of conventions for selecting possible situations
   which have a specified relation to what actually happens
 => it is possible for statements about unrealized possibilities to tell us about
-  the world.
+  the world
   * not just about the speaker's imagination
 
 # Notes 14
