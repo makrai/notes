@@ -14,68 +14,68 @@ Beth Levin, Malka Rappaport Hovav
 # 3 Current approaches to lexical semantic representation 51
 
 * last chapter
-  * semantic roles are not unanalyzable notions. We reviewed
-  * two approaches to overcoming this problem: unpackaging the content of
+  * semantic roles are not unanalyzable notions
+  * two approaches to overcoming this problem
     * bundles of binary features and
     * arguments to be assigned more than one semantic role
-* In this chapter, we survey two other widely adopted solutions. The first
-  * Van Valin (1999); “generalized semantic roles.” On this approach
+* In this chapter, we survey two other widely adopted solutions
+  * Van Valin (1999); “generalized semantic roles”
     * the content of traditional semantic roles is unpackaged into more basic
       components, as in the feature decomposition approach, but
       these components do not constitute a set of jointly necessary and
       sufficient conditions on any given role
   * predicate decomposition
-    * a more structured lexical semantic representation known as a predicate
+    * a more structured lexical semantic representation
 * The current theories of argument realization build on one/other/both
 
 ## 3.1 generalized semantic roles 51
 
 * semantic roles that lump together arguments that
   * same morphosyntactic pattern
-  * no common semantic ingredient. Consequently, they can
+  * no common semantic ingredient
   * not simply more coarsely defined roles, but rather are
     defined in terms of relatively specific semantic criteria
   * termin
     * Van Valin (1999); “generalized semantic roles,”
-    * Croft (1998) characterizes them as “super-roles.”
+    * Croft (1998) characterizes them as “super-roles”
 * subject and object are different from other morphosyntactic exps of args
-  * As discussed in section 1.6, the notions of
+  * As discussed in section 1.6
   * both can be associated with a particularly wide range of semantic roles, and
     there are morphosyntactic processes which alter the assignment of arguments
-  => difficult to associate semantic roles with these grammatical relations, and
+  => difficult to associate semantic roles with these grammatical relations
 * generalized semantic role approaches usually posit only two such roles:
   one associated with subject and a second with object
-  * hE Primus (1999) posits a third on
-    associated with the first object in a double object construction. Her
+  * hE Primus (1999) posits a third one
+    associated with the first object in a double object construction
     * based on parallels between the first object and
-      the grammatical relations, subject and direct object (see section 1.6).
+      the grammatical relations, subject and direct object (see section 1.6)
 * history for generalized semantic roles
   * seeds most likely sown in Dixon’s (1972, 1979, 1994) work on ergativity,
   * labels “A” and “O” to refer to the semantic classes of subjs/objs of tr Vs
-    in a language like English with a nominative–accusative case system. Dixon
-    * “syntactic-semantic primitives” (1979; 1994) in the sense that
+    in a language like English with a nominative–accusative case system
+    * “syntactic-semantic primitives” (1979; 1994)
     * have a semantic basis, but are used in the definition of grammatical
-      relations such as “subject” and “object.” These labels have been
+      relations such as “subject” and “object”
   * widely adopted for use in statements about the morphosyntactic realization
-    * on a broad range of languages, particularly work with a typological cast.
+    * on a broad range of languages, particularly work with a typological cast
     * The core exemplars of A and O are prototypical agents and patients,
     * labels are intended to encompass other arguments that share the
       morphosyntactic realization of agents and patients
-    * A += perceiver for verbs of perception (Dixon 1994). This
+    * A += perceiver for verbs of perception (Dixon 1994)
 * classes of arguments with a range of semantic properties pattern together in
   terms of morphosyntactic realization, and there may be no semantic property
-  common to the whole set of arguments.
+  common to the whole set of arguments
   =: generalized semantic role label, allowing
   rules of argument realization to make direct reference to just these
 * patient doesn't have to be so vague that covers all possible direct objects –
-  * a “wastebasket” role.
-* In this section we review two approaches to generalized semantic roles. The
+  * a “wastebasket” role
+* In this section we review two approaches to generalized semantic roles
   * Both approaches
-    generalized semantic roles not to be defined by a set of jointly necessary
-    and sufficient conditions, and both appeal to
-    many of the same semantic ingredients in defining these roles, but,
-  * the part they play in the overall theory of grammar is quite different. as
-    * comparison in section 3.1.2 shows,
+    * generalized semantic roles
+      not to be defined by a set of jointly necessary and sufficient conditions
+    * appeal to many of the same semantic ingredients in defining these roles,
+  * the part they play in the overall theory of grammar is quite different
+    * comparison in section 3.1.2 shows
 
 ### 3.1.1 Dowty’s (1991) proto-role approach 53
 
@@ -90,8 +90,8 @@ Beth Levin, Malka Rappaport Hovav
   * arguments are associated with lexical entailments (or presuppositions)
     imposed on them by their verbs, and that
     semantic roles = recurring clusters of lexical entailments imposed by groups
-    of predicates on one of their arguments.
-  * ie Semantic roles are secondorder properties – properties of predicates.
+    of predicates on one of their arguments
+  * ie Semantic roles are secondorder properties – properties of predicates
   * Such clusters of entailments deserve a semantic role label only to the
     extent that they enter into significant linguistic generalizations – they
   * with respect to argument selection, only two such roles need be recognized,
@@ -116,7 +116,7 @@ Beth Levin, Malka Rappaport Hovav
     recipient and theme arguments of dative verbs
   * She associates it with the semantic characterization of certain arguments,
     * it is important to establishing a link between the semantic and discourse
-      characterizations of the arguments of dative verbs.
+      characterizations of the arguments of dative verbs
 * the components of meaning that enter into the proto-roles
   overlap significantly with those proposed in previous discussions of agent/pat
   * also figure in the more structured lexical semantic representations that are
@@ -136,14 +136,14 @@ Beth Levin, Malka Rappaport Hovav
       object of John erased the error only possesses the change-of-state Patient
       Proto-role entailment (Dowty 1991)). Thus, any given argument
   * there are pairs of subject NPs or object NPs with no shared proto-rol entail
-  * prototypical – example of agt: Brutus assassinated Caesar.
+  * prototypical – example of agt: Brutus assassinated Caesar
   * args agt/pat-like to a degrees ~ the number of Proto-role entailments
 * The existence of more and less central exemplars of a category is
-  a defining characteristic of a prototype category (Rosch 1973).
+  a defining characteristic of a prototype category (Rosch 1973)
 * A single NP may even have both Agent and Patient Proto-role entailments. For
   * frighten psych-verbs have a change-of-state interpretation, their
-    obj has sentience but undergoing a change of state (Dowty 1991).
-* an argument of a verb need not be associated with any of these entailments.
+    obj has sentience but undergoing a change of state (Dowty 1991)
+* an argument of a verb need not be associated with any of these entailments
   * Although presumably every argument of a verb is associated with some
     entailment or presupposition imposed by its verb,
     Dowty: no evidence that each such semantic restriction be associated with a
@@ -151,38 +151,38 @@ Beth Levin, Malka Rappaport Hovav
 * The proto-role approach to semantic roles is consistent with that
   * most recognized roles have what Dowty has termed “unclear boundaries.” This
   * solves the problem of generalizations that need to be stated over semantic
-    roles of different grain-size (see section 2.2.1).
+    roles of different grain-size (see section 2.2.1)
   * Natural classes of arguments by making reference to shared entailments;
     depending on the number of shared entailments, broader or nar-
-    rower sets of arguments are picked out.
+    rower sets of arguments are picked out
     Although for the purposes of subject and object selection, Dowty argues that
     only the broad categories he labels the Agent and Patient Proto-roles need
     be recognized, languages have other generalizations involving argument
-    realization which refer to narrower semantic categories.
+    realization which refer to narrower semantic categories
 * goal: subject and object selection rules that have wide coverage and that
   overcome some of the problems facing rules formulated in terms of regular
   semantic roles. Dowty
   * the argument with the most Agent/Pat Proto-role entailments is subj/obj
     (his Argument Selection Principle). Thus,
   => arguments which meet all the criteria for agenthood are always, in all
-  languages, expressed as subjects in nonpassive sentences.
+  languages, expressed as subjects in nonpassive sentences
 * three-place predicates, the non-subject argument with the more/fewer Patient
   Proto-role entailments is the direct object/oblique or prepositional object
 * these rules represent
   not a step in a derivation, but rather
   constraints “on what kind of lexical predicates may exist in natural language,
   * A verb may “lexicalize” a partic pairing of sem arg typ & gramm rel,
-    but these pairings must conform to the “constraints” defined by the rules.
+    but these pairings must conform to the “constraints” defined by the rules
 * these rules can handle many widely discussed examples, such as
   * fear/frighten verb pairs, the
   * locative alternation, and several other less familiar instances of
   * hit and kick: verbs of surface contact and motion such as and so-called
   * hug and kiss: “partially symmetric interactive” predicates
     (Gleitman 1965; Gleitman+ 1996; Lakoff and Peters 1969). To illustrate how
-* psych-verbs and partially symmetric interactive predicates.
+* psych-verbs and partially symmetric interactive predicates
   * discussed in section 1.2, psych-verbs fall into
   * two classes:
-    * experiencer–subject fear verbs and the experiencer–object frighten verbs.
+    * experiencer–subject fear verbs and the experiencer–object frighten verbs
   * both types have an Agent Proto-role entailment associated with both their
     stimulus and their experi-encer arguments: the
     sentience entailment for the experiencer and the
@@ -198,7 +198,7 @@ Beth Levin, Malka Rappaport Hovav
   * nonstative change-of-state reading (e.g., The loud noise frightened me), as
     well as the previously discussed stative meaning (e.g., Ghosts frighten me);
     * found with the comparable class of psych-verbs in other languages,
-      an observation Dowty attributes to Croft (1986) (see also Croft [1993]).
+      an observation Dowty attributes to Croft (1986) (see also Croft [1993])
     * when the experiencer is entailed to undergo a change of state, it is
       associated with a Patient Proto-role entailment, creating an asymmetry
     * fear verbs are consistently stative and never show this ambiguity.) As
@@ -249,7 +249,7 @@ Beth Levin, Malka Rappaport Hovav
     grammaticalized in some languages. 3
 * Baker (1997)
   takes advantage of the basic properties of proto-roles
-  to handle variation in subject choice with a given verb.
+  to handle variation in subject choice with a given verb
   * eg inst cannot be subj, if there of there is agt
   * we discuss more extensively in section 6.2,
   * often an argument bearing a particular semantic role
@@ -257,36 +257,36 @@ Beth Levin, Malka Rappaport Hovav
     other role
   * eg
     * instrument is never the subject in the presence of an agent Fillmore (68)
-    * nor is a recipient ever the subject in the presence of an agent.
+    * nor is a recipient ever the subject in the presence of an agent
   * Baker (1997); due to variability in the proto-role associated with an arg
   * In the presence of an agent, a recipient will not be analyzed as having the
-    Agent Proto-role, but in the absence of an agent it can be.
+    Agent Proto-role, but in the absence of an agent it can be
     * certain participants in an event are less prone to being seen as agents
       than others are, but the one seen as an agent is always the subject”
-    * such an approach would be impossible with traditional semantic roles.
+    * such an approach would be impossible with traditional semantic roles
 * Schlesinger (1995) presents another approach to using prototype notions in the
   * a wider range of semantic relations of arguments to verbs than Dowty does,
   * only gives prototype characterizations to some of them; again, one of his
-  * motivations; express argument realization generalizations concisely.
+  * motivations; express argument realization generalizations concisely
   * he introduces what he calls the A-case, which
     subsumes agents, as well as certain instruments, and certain patients
   * The subsumption of patients under the A-case
     reflects its association with subject position, and Schlesinger’s desire
     to subsume under it the subjects of the following examples, which
     * would be characterized variously as
-      agents, as in (3), patients, as in (4), and instruments, as in (5).
+      agents, as in (3), patients, as in (4), and instruments, as in (5)
       (Since Dowty’s concern is subject selection for transitive verbs this
       * his discussion of unaccusativity suggests that
         he still characterizes the subjects of verbs such as those in (4) as
         having Patient Proto-role entailments.)
 
-(3) a. The little boy threw the ball.
-    b. They pushed the chair to the table.
-    c. The girl drank her coffee.
+(3) a. The little boy threw the ball
+    b. They pushed the chair to the table
+    c. The girl drank her coffee
 (Schlesinger 1995))3.1
 
-(4) a. The butter melted in the sun.
-    b. My little dog remained indoors all day long.
+(4) a. The butter melted in the sun
+    b. My little dog remained indoors all day long
     c. The guard is standing near the entrance. (Schlesinger 1995))
 
 (5) The knife cut the cake. (Schlesinger 1995))
@@ -304,7 +304,7 @@ Beth Levin, Malka Rappaport Hovav
   * no single semantic characterization of object selection is possible, and
   * the statement of a unified object selection rule is even more difficult
     because some patients need to come under his subject selection rule, rather
-    than an object selection rule.
+    than an object selection rule
 
 #### 3.1.1.2 Extensions and limitations 59
 
@@ -313,12 +313,12 @@ Beth Levin, Malka Rappaport Hovav
   1993; Singh 1992; Zaenen 1993), including some who have
   * refined and extended it (Ackerman and Moore 1999, 2001; Blume 1998; Davis
     2001; Davis and Koenig 2000; Primus 1999)
-  * to nominals (Barker and Dowty 1993).
+  * to nominals (Barker and Dowty 1993)
 * However, Dowty’s (1991) paper itself is rather modest in scope. It does
   * not integrate the proto-role approach into a larger theory of grammar, and
     so hardly deals with any issues relating to syntax. It provides
   * no analysis of verbs that are the output of morphosyntactic rules which
-    change valence, voice, or grammatical relations.
+    change valence, voice, or grammatical relations
   * mainly English data and so does not deal with argument realization in
     languages with richer morphosyntax, which raise additional questions about
     argument realization (see section 1.6). It does not even present a specific
@@ -328,10 +328,10 @@ Beth Levin, Malka Rappaport Hovav
     variety of ways – are input to argument selection
 * We now present ways in which Dowty’s theory has been extended to widen its
   scope and discuss some of its most serious limitations – limitations which
-  often reflect its very nature.
+  often reflect its very nature
   * further discussion; Croft (1998), Davis (2001), Davis and Koenig (2000),
     Koenig and Davis (2001), Newmeyer (2002), Primus (1999), Tenny (1992, 1994),
-    Van Valin (1999).
+    Van Valin (1999)
 * only apply to verbs that are _known to be_ transitive; they simply determine
   which argument is the subject and which the object, as
   * also noted by Davis (2001), Davis and Koenig (2000), and Primus (1999). Yet,
@@ -355,20 +355,20 @@ Beth Levin, Malka Rappaport Hovav
 * all the entailments entering into each proto-role carry equal weight, yet, as
   * Dowty; “causation has priority over movement, since
     movement is an Agent Proto-role entailment only when it is not caused by
-    another participant.
-  * Schlesinger; “cause has more weight than change when these compete” (1995).
+    another participant
+  * Schlesinger; “cause has more weight than change when these compete” (1995)
     * proposes that “assignment to the A-case is determined by three factors:
       * the relative strength of the features;
       * their number; and
       * their differential weights” (1995), while
   * Dowty; “I also would not rule out the desirability of ‘weighting’
   * Ackerman and Moore (2001), Davis (2001), and Davis and Koenig (2000)
-    * primacy of the cause entailment.
+    * primacy of the cause entailment
 * When an agentive verb is causativized
   in languages which allow productive morphological causativization,
   the new cause argument invariably becomes the subject of the derived pred,
   regardless of the number of Agent Proto-role entailments carried by the
-  subject argument of the base verb.
+  subject argument of the base verb
   * eg even if the base verb requires that its subject be
     * sentient, as in _The frosty weather made her cough_ or, even
     * sentient and volitional, as in _The cold weather made her run faster_
@@ -379,47 +379,47 @@ Beth Levin, Malka Rappaport Hovav
   * Similarly, among non-causative verbs,
     * sentience is sufficient to ensure mapping to subject
     * Volitional involvement in the event is also sufficient to ensure mapping
-      to subject position in noncausative verbs.
+      to subject position in noncausative verbs
   * for all verbs for which being in motion counts as a proto-agent entailment,
-    the NP denoting the moving object is mapped onto subject position.
+    the NP denoting the moving object is mapped onto subject position
 * the relative importance of the Patient Protorole entailments
   * Jackendoff (1996b); the incremental theme Patient Proto-role entailment
     does not have a part to play
   * We defer a full discussion of this notion until the larger discussion of
-    aspectual determinants of argument realization in section 4.2.
+    aspectual determinants of argument realization in section 4.2
 * relative priority of various semantic features in subject and object selection
   * Tsunoda (1985) criticizes
     Hopper and Thompson’s (1980) prototype approach to transitivity. He points
   * the semantic components of transitivity they propose do
     not all count equally, with
     “affectedness” of the object being crucial, while
-    “volitionality” of the subject apparently being irrelevant.
+    “volitionality” of the subject apparently being irrelevant
 * the components of prototype concepts have been shown to be differentially
   ranked; see Murphy (2002) for recent discussion and references
 * what is the source of the ranking? if there is one
   * organization to a lexical semantic representation
-  * grounded at least partially in a theory of event types.
+  * grounded at least partially in a theory of event types
 * Dowty’s approach suggests that all the semantic determinants of argument real
   derive from the lexical entailments which verbs impose on their arguments and
   only these entailments enter into assignment of grammatical relations to arg
-  * However, the picture is more complicated.
+  * However, the picture is more complicated
   * semantic properties relevant to argument realization which derive
     from sources other than the lexical entailments of verbs. Second,
   * some semantic properties may affect the
     morphosyntactic realization of a grammatical relation, rather than the
     choice of grammatical relation
-  * We discuss these complications in turn.
+  * We discuss these complications in turn
 * Some of Dowty’s proto-role entailments come from the choice of “filler” for
   * eg the dative verb send and dat shift;
   * three arguments: the sender, the thing sent, and the goal of transfer
   * The goal
-    * need not be animate eg _The factory sent the goods to the warehouse_.
+    * need not be animate eg _The factory sent the goods to the warehouse_
     * can be realized as the first object in a double object construction
       only if
       * animate, as in The factory sent the contractor the goods, or,
       * at least, interpretable as a potential possessor, metonymically
   * possible to argue that there are two verbs send, each with a distinct
-    realization of arguments and set of entailments on the goal.
+    realization of arguments and set of entailments on the goal
     * widespread (see chapter 7)
       * Ackerman and Moore (2001); all such alternations are taken to reflect
         differences in lexical entailments
@@ -431,10 +431,10 @@ Beth Levin, Malka Rappaport Hovav
     not only its grammatical relation, but also
     the morphosyntactic expression of this grammatical relation. They
     * languages in which proto-role entailments determine the assignment of an
-      oblique case to an argument which is clearly a syntactic object.
+      oblique case to an argument which is clearly a syntactic object
   * Evans (1997); the animacy of an NP bearing a particular semantic role –
     influences the morphosyntactic encoding of the associated grammatical rel,
-    rather than the choice of this grammatical relation.
+    rather than the choice of this grammatical relation
 * the inventory of ~s and the definitions of particular ones have been debated
   * just as sem roles, so Dowty’s Agent and Patient Proto-roles
   * attempts both to refine and to enlarge the sets of Agent and Pat entailments
@@ -452,7 +452,7 @@ Beth Levin, Malka Rappaport Hovav
       * “has a notion or perception of other participant(s) in event”; this
         * inspired by the work of Wechsler (1995: 35–40), apparently
         * replaces Dowty’s sentience entailment. They also propose
-      * an additional Agent Proto-role entailment “possesses an entity” (2000).
+      * an additional Agent Proto-role entailment “possesses an entity” (2000)
         * possession plays a part in Primus’ (1999) suggestion that
           an additional, Recipient Proto-role is necessary to deal with
           object selection with dative verbs. This proto-role, which
@@ -473,16 +473,16 @@ Beth Levin, Malka Rappaport Hovav
     * there is nothing that would predict such coocurrences, let alone enforce
       * there could, in principle, be an argument that causes a change of state
         without there being one that undergoes a change of state, contrary to
-    * Primus (1999); “Proto-Agents and Proto-Patients are ... distinguished ...
+    * Primus (1999); “Proto-Agents and Proto-Patients are ... distinguished ..
       only by their dependency relative to each other” (1999) and argues that
       * in each pai, the Patient Proto-role entailment is dependent on the Agent
 * Many of the proto-role entailments pick up on notions that figure in
-  two major perspectives on event conceptualization reviewed in the next chapte.
+  two major perspectives on event conceptualization reviewed in the next chapte
   * Some/other approaches to lexical semantic representations are based on
   * “causal chain” representations of events, an approach
     reflected in the entailments involving causation, volition, and affectedness
     (see section 4.3). Others are
-  * temporal representations, as reflected in the incremental theme entailment.
+  * temporal representations, as reflected in the incremental theme entailment
     * Tenny (1992); the clusters of proto-role entailments
       follow from her Aspectual Interface Hypothesis,
       which builds on an aspectual model of event conceptualization. She argues
@@ -496,12 +496,12 @@ Beth Levin, Malka Rappaport Hovav
   * As Davis (2001), Davis and Koenig (2000), and Van Valin (1999) point out,
   * Dowty’s proto-roles are not “reified”; that is, they are
     not present in the grammatical representation of a sentence,
-    nor does any grammatical process refer to them.
+    nor does any grammatical process refer to them
   * figure only in the mapping from lexical semantics to syntax, and,
   * no semantic roles to arguments as an intermediate stage in the mapping. In
     * traditional view; the entailments a verb imposes on an argument are used
       to determine that argument’s semantic role, and then
-      mapping rules determine its realization on the basis of this role.
+      mapping rules determine its realization on the basis of this role
 * proto-roles to instantiate important conceptual categories,
   prominent in cognitive development, but lacking an explicit role in grammar
   * compared to feature decomposition
@@ -511,7 +511,7 @@ Beth Levin, Malka Rappaport Hovav
 
 ### 3.1.2 Role and Reference Grammar (RRG) 65
 
-* Van Valin (1990, 1993b; Foley and Van Valin 1984; Van Valin and LaPolla 1997).
+* Van Valin (1990, 1993b; Foley and Van Valin 1984; Van Valin and LaPolla 1997)
 
 ## 3.2 predicate decomposition 68
 
@@ -550,7 +550,7 @@ Beth Levin, Malka Rappaport Hovav
     semantic role borne by an argument
 3. whether unaccusativity should be treated semantically, as Dowty does, or synt
   * see Dowty (1991), as well as B. Levin and Rappaport Hovav (1995),
-    C. Rosen (1984), and Van Valin (1990) for extensive discussion.
+    C. Rosen (1984), and Van Valin (1990) for extensive discussion
 4. Besides the A-case, Schlesinger (1989, 1995) introduces the C-case, a proto-
   *  has no analogue in Dowty (1991). This role subsumes
   * NPs that would traditionally bear the instrument, comitative, or manner
@@ -561,12 +561,12 @@ Beth Levin, Malka Rappaport Hovav
     * wide range of semantic notions expressed as objects of _with_
     * use of _with_ to indicate noncanonically realized or “displaced” themes
       (Rappaport and B. Levin 1988), as in _spray the wall with paint_,
-      => _with_ objects not unlike subjects and objects.
+      => _with_ objects not unlike subjects and objects
 5. Dowty (1991) only briefly mentions the dative alternation, suggesting that
   * animacy of the recipient may be implicated in the availability of
     two possible argument realizations for dative verbs. There is
   * no indication that he would handle this alternation by introducing a
-    Recipient Proto-role, as Primus does.
+    Recipient Proto-role, as Primus does
 6. In RRG, there are no grammatical relations corresponding to the traditional notions
 of “subject” and “object.” The traditional properties of a subject are split between
 the argument analyzed as a “syntactic pivot” and a “syntactic controller,” selected
@@ -577,7 +577,7 @@ which will be the pivot or controller in most constructions. Voice modulations c
 alter the choice of pivot and controller, as when the passive forces the choice of
 
 
-Undergoer as pivot or controller.
+Undergoer as pivot or controller
 7. In our event structure for an activity verb, a primitive predicate act is modified
 by a manner root, as in (11), an analysis which contrasts with Hale and Keyser’s
 (1993, 2002) analysis of comparable verbs, which treats the root as the argument
@@ -585,7 +585,7 @@ of a predicate do, roughly comparable to act, as in [ x do <JOG>]. This other
 approach receives apparent support from Basque and some other languages, where
 the counterparts of activity verbs are expressed periphrastically using the verb
 meaning ‘do’ plus a noun (B. Levin 1989). We do not choose between approaches
-here, since additional investigation into the representation of such verbs is needed.
+here, since additional investigation into the representation of such verbs is needed
 8. Predicate decompositions allow a solution to a problem raised in section 2.2.2: uni-
 fying the various instantiations of path found with motion verbs (e.g., to the library,
 from the cafeteria, through the woods), which are assigned distinct “traditional”
@@ -593,11 +593,11 @@ semantic roles. In his predicate decompositions, Jackendoff (1983) recognizes a
 conceptual category of path, which consists of a path function and a reference
 object; since the path function has internal structure it provides a unified represen-
 tation of all types of paths. Jackendoff then analyzes verbs of motion as based on
-a two-place primitive predicate go, which takes theme and path arguments.
+a two-place primitive predicate go, which takes theme and path arguments
 9. Much of the work which takes a mereological approach to aspectual classification
 (Hinrichs 1985; Krifka 1992, 1998) also assumes that verbs can denote events with
 subeventual structure (see section 4.2.1); however, this work is concerned with the
-analysis of the aspectual notion of telicity, rather than with argument realization.
+analysis of the aspectual notion of telicity, rather than with argument realization
 
 # 4 Three conceptualizations of events 78
 
