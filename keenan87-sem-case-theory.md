@@ -3,10 +3,10 @@ Edward L. Keenan
 1987
 
 * semantic case as a way of extending the interpretation of NPs in simple
-  contexts to more complex ones. The
+  contexts to more complex ones
 * idea is developed from the treatment of scope in van Benthem (1986) and
   contrasts in interesting ways with the treatment of the same phenomena in
-  Montague (1973) and Keenan & Faltz (1985).
+  Montague (1973) and Keenan & Faltz (1985)
 
 # 1. NOTATION AND LIMITATIONS OF THE PRESENT STUDY
 
@@ -22,20 +22,20 @@ Edward L. Keenan
   properly including those denoting generalized quantifiers
   * An NP is called initial if it combines with a simple `P_1` to form a nuclear
     (unary) S
-  * The initial NPs in a language are partitioned into basic NPs and deictic NPs.
+  * The initial NPs in a language are partitioned into basic NPs and deictic NPs
   * Basic NPs are ones which may be adequately interpreted by functions from
-    the set P of properties of the model into {0,1}, the set of truth values.
+    the set P of properties of the model into {0,1}, the set of truth values
     * Such functions are also called basic
     * basic S = a nuclear S whose independent NP occurrences are occurrences of
       basic NPs
     * eg every student, some teacher, every boy but not every girl, no boy's
       cat, all but two boys, every boy but Tom, more male than female students,
-      Bob's friends, most of the students, fewer boys than girls, John.
+      Bob's friends, most of the students, fewer boys than girls, John
     * For example, every boy denotes that function EVERY BOY from properties
       into {0,1} which sends q to 1 (true)
       iff the property BOY is a subset of q
       * More generally, EVERY denotes that function from properties into basic
-        functions given in (2).
+        functions given in (2)
         * For other definitions in this format see
           Barwise & Cooper (1981) and Keenan & Stavi (1986)
     (2) a.  EVERY (p) (q) = 1 iff p \subseteq q
@@ -58,14 +58,14 @@ Edward L. Keenan
 
 * A basic unary S differs in a crucial way from a basic transitive (=binary)
   * unary: its interpretation is uniquely determined by the denotation of its
-    basic NP and its `P_1` it is just the value of the former at the latter.
+    basic NP and its `P_1` it is just the value of the former at the latter
   * But interpretations for basic transitive Ss (henceforth batSs) are un-
     derdetermined in two ways merely given the two basic functions and the relat
     * We must state in addition
     * which NP is "logical subject" and which "logical object", and given this,
       we must state their relative semantic scopes
     * I make no committment as to how a lang syntactically presents its batSs
-      * So e.g.  "scope" is independent of syntactic relations like C-command.
+      * So e.g. "scope" is independent of syntactic relations like C-command
     * two readings of (4):
       (4) Every student kissed some teacher
 * On the "object narrow scope" reading (4) is true iff
@@ -77,8 +77,8 @@ Edward L. Keenan
     so that it sends binary relations to properties
     (in addition to sending properties to truth values)
   * Specifically this extended function must
-    send KISS to the set of objects a which are such that the basic function
-    SOME TEACHER holds of the set of things a bears the KISS relation to
+    send KISS to the set of objects `a` which are such that the basic function
+    SOME TEACHER holds of the set of things `a` bears the KISS relation to
   (5)
   * For F basic, `F_acc` or the accusative case extension of F is
     that extension of F which sends each binary relation R
@@ -86,7 +86,7 @@ Edward L. Keenan
     where R_a =_def {b : ( a , b ) \in R }
   * ACC is that function sending each basic F to F acc
   * the object narrow scope reading of (4) is given by
-    (EVERY STUDENT) [ (SOME TEACHER)_acc (KISS)].
+    (EVERY STUDENT) [ (SOME TEACHER)_acc (KISS)]
 * To get the object wide scope reading of (4) we want to say that
   some teacher has the property that _every student kissed him_
   * we extend the domain of EVERY STUDENT :
@@ -95,20 +95,20 @@ Edward L. Keenan
     KISS relation to a them
   (6)
   * For F basic, `F_nom` or the nominative case extension of F is
-    that extension of F which sends each binary relation R to {b: F(R^b) = 1}.
+    that extension of F which sends each binary relation R to {b: F(R^b) = 1}
     (R^b = « {a: (a,b) e R})
-  * NOM is that function sending each basic F to F nom .
+  * NOM is that function sending each basic F to F nom 
   The object wide scope reading of (4) then is given by
-  (SOME TEACHER) [(EVERY STUDENT) nom (KISS)].
-* NOM and ACC are called semantic cases.
+  (SOME TEACHER) [(EVERY STUDENT) nom (KISS)]
+* NOM and ACC are called semantic cases
 * Informally, note that the nom. ext. of David sends KISS to the set of objects
   which David kissed. Formally,
 (7)
 `(I_d )_nom (KISS) = {b: I_d (KISS^b ) = 1} = {b: (d,b) \in KISS}`
 * Similarly the accusative extension of David sends KISS to the set of objects
-  which kissed David.
+  which kissed David
 * given two basic NPs and a simple P 2 , denoting say F, G, and R respectively,
-  there are four 1 ways we may build a sentence interpretation, illustrated in
+  there are four ways we may build a sentence interpretation, illustrated in
 (8)
   F(G acc (R)) "G is logical object and has narrow scope"
   G(F nom (R)) "G is logical object and has wide scope"
@@ -119,17 +119,17 @@ Edward L. Keenan
   which case extensions are used to interpret the NPs, and
   "scope" is determined by which of these extensions takes the binary relation
   as argument that one having narrow scope
-  * purely semantic notions are expressed in purely semantic terms.
+  * purely semantic notions are expressed in purely semantic terms
 * extend in the obvious way to deictic NPs. E.g. NOM(THIS CAT) sends a context
   c to NOM[(THIS CAT)(c)]
-  * Thus we may in general refer to case extensions of initial functions.
+  * Thus we may in general refer to case extensions of initial functions
 
 # 3. SEMANTIC CASE THEORY 4
 
 * From (8) we have seen that given an arbitrary batS in an arbitrary L
   there are at least four ways it might be semantically interpreted
-  Usually however batSs in a language are not four ways ambiguous (or vague).
-* (9a/b) from English has only two/one truth conditionally distinct readings and
+  * Usually however batSs in a language are not four ways ambiguous (or vague)
+* (9a/b) from English has only two/one truth conditionally distinct readings
 (9) a.  Every student kissed some teacher
     b.  John kissed David
 * Neither of these Ss is argument ambiguous. E.g. (9b) is not ambiguous
@@ -138,42 +138,43 @@ Edward L. Keenan
 (10) English Case Constraint (ECC)
   In a batS of the form `[NP_1, [V NP_2 ]]`, interpret NP 1/2 nom/accusatively
   * a claim about English and thus naturally refers its structural properties
-    eg linear order and constituency with the verb. But the ECC
+    eg linear order and constituency with the verb
 * several quite general properties concerning the ways in which languages
   constrain the interpretations of simple Ss
   * the axioms of Semantic Case Theory in the sense that
-    all natural languages are held to satisfy them.
+    all natural languages are held to satisfy them
   1. (11) Case Existence (CE)
     The independent NPs in a batS are interpreted by case extensions of the
     basic functions they denote
-    * motivation for this axiom: the Argument Structure Theorem in section 5.
+    * motivation for this axiom: the Argument Structure Theorem in section 5
     * the theorem says that NOM and ACC are the only ways
       a basic function may be extended to binary relations so that
       basic NPs in transitive contexts preserve, in a uniformly retreivable way,
       the meaning they have in intransitive contexts
     * If CE failed generally we would not be able to determine the truth
       conditions of batSs (up to scope and subject/object ambiguities) given the
-      denotations of the basic NPs and the P 2 . So CE
-    * rules out e.g. that every student might mean not a single student when in
-      collocation with a transitive verb
+      denotations of the basic NPs and the P 2
+    * CE rules out e.g. that every student might mean not a single student when
+      in collocation with a transitive verb
     * we interpret familiar items in complex contexts in the same way as in
       simple ones,
       the only differences being induced by the complex context itself
       (i.e. does the NP function as logical subject or object, does it have wide
       or narrow scope)
-      which cannot arise in intransitive contexts.
-  2. ( 12) Case Distinctness (CS)
+      which cannot arise in intransitive contexts
+  2. (12) Case Distinctness (CS)
     The independent NPs in a batS are interpreted by distinct case extensions
     * if both NPs in a batS like John kissed David were interpreted nominatively
       the S would be argument ambiguous, depending on which NP had narrow scope
     * CE and CD jointly claim than
       * an interpretation of a batS determines a bijection from the independent
-        NPs into the set {NOM, ACC} of semantic cases. They do
-      * not preclude however that a given batS have two such interpretations. So
-* ECC satisfies CD and CE (with respect to the batSs it quantifies over).
+        NPs into the set {NOM, ACC} of semantic cases
+      * not preclude however that a given batS have two such interpretations
+* ECC satisfies CD and CE (with respect to the batSs it quantifies over)
   3. that case interpretations of the NPs in a batS are determined as a function
-     of the structure of the S ie Ss with the same structure have their
-     corresponding NPs assigned the same case.
+     of the structure of the S
+     ie Ss with the same structure have their corresponding NPs assigned the
+     same case
     (13) Case Structure (CS)
     Let T and T' be nuclear transitive Ss such that
     T is derived from (NP_1, NP 2 , V) in the same way that
@@ -181,67 +182,69 @@ Edward L. Keenan
     if an interpretation f interprets NP i and NP i ' by case extensions of
     initial functions
     then these case extensions are identical (i.e. both nom or both acc)
-* E.G. given that (14a) is derived from (John, David, Kiss) in the same way that
+* E.g. given that (14a) is derived from (John, David, Kiss) in the same way that
   (14b) is derived from (David, John, Kiss), CS tells us that
   there is no interpretation f of English which interprets these Ss with the
-  case extensions indicated.
+  case extensions indicated
 `*`(14) a.  John kissed David
             nom acc
         b.  David kissed John
             acc nom
-* CS applys to all nuclear Ss/NPs, not just basic ones, whence the NP variables
-  * or even deictic ones, see section 4.3)
+* CS applys to all nuclear Ss/NPs
+  * even deictic ones, see section 4.3
   * The if clause in CS is needed since
     some non-basic NPs are interpreted by functions which are not case
     extensions of any initial function
   * CS may be further refined by requiring that
-    the corresponding NPs match in syntactic and semantic subclass.
+    the corresponding NPs match in syntactic and semantic subclass
 * Japanese CC belowl
 * having adopted the axioms, we may use them in stating CCs
-  * For example, the ECC can be given by: "In a batS containing a VP of the form
-    [V NP] interpret that NP accusatively". That the other NP, however
-    presented, is interpreted nominatively follows from this statement plus CE
+  * For example, the ECC can be given by:
+    "In a batS containing a VP of the form [V NP] interpret that NP
+    accusatively"
+    * That the other NP, however presented, is interpreted nominatively
+      follows from this statement plus CE
 (16) Japanese Case Constraint (JCC) 2
   In a batS,
   * if there is an independent NP suffixed -o, interpret it accusatively
   * otherwise interpret some -ga suffixed NP accusatively
   * simplifications
-    * in certain cases -mo is used instead of -ga. Second,
+    * in certain cases -mo is used instead of -ga
     * normally in main clauses one of the NPs will be topicalized, i.e. fronted
-    with its -ga or -o replaced by -wa
+      with its -ga or -o replaced by -wa
     * the result of topicalizing either NP in double -ga Ss preserves the
-      argument ambiguity.
-    The two Ss only differ with regard to which NP is "topic".
-  * entails, correctly, that (17a) is not argument ambiguous and that (17b) is.
+      argument ambiguity
+      The two Ss only differ with regard to which NP is "topic"
+  * entails, correctly, that (17a) is not argument ambiguous and that (17b) is
 (17) a.   Tarroo-ga Hanako-o nagutta
           Taroo Hanako hit
           "Taroo hit Hanako" *"Hanako hit Taroo"
   b.  Taroo-ga Hanako-ga suki da
       Taroo Hanako likes
       "Taroo likes Hanako" or "Hanako likes Taroo"
-* The JCC differs in several respects from the ECC. First it does
-  * not refer to linear order or VP constituency 3 but rather
-    to the system of NP morphological markings. Second, in distinction to the
-  * permits argument ambiguities in the class of batSs it quantifies over. The
+* The JCC differs in several respects from the ECC
+  1. not refer to linear order or VP constituency but rather
+    to the system of NP morphological markings
+  3. permits argument ambiguities in the class of batSs it quantifies over
   * consequences in terms of translation equivalences
     * not derivable from the CC for any given L
     * a structurally identified NP in one L is interpreted by the same case
-      extension as that of some differently identified NP in the other L. And
+      extension as that of some differently identified NP in the other L
     * in a situation in which
       the Japanese expressions in (17a) have the same denotations as their
       English glosses and in which
       the equivalently denoting NPs are interpreted in the same case extensions,
-      it follows that the Japanese S and the English have the same truth value.
-      That is, the one is judged a translation of the other.
+      it follows that the Japanese S and the English have the same truth value
+      * That is, the one is judged a translation of the other
     * it is to a significant extent these translation equivalences on which we
       rely in determing which NP is "subject" and which "object" in a language
-      we are studying.
+      we are studying
 * on the basis of English/Japanese alone it is quite arbitrary that we assigned
   NP_i nominative case and NP 2 accusative. The opposite is just as good
   * But once the CC for one of these Ls is given
-    that for the other ceases to be arbitrary in this respect. Had we
+    that for the other ceases to be arbitrary in this respect
 * the use of morphological markings on NPs to code semantic case interpretation
-  * in Ls as diverse as Latin, Warlpiri (Australia), and Tagalog (Philippines).
+  * in Ls as diverse as Latin, Warlpiri (Australia), and Tagalog (Philippines)
   * batSs in Warlpiri present all six relative orders of the two NPs and P 2
     with about equal freedom
 (18)  Ngarrka-ngku karli-0 jarntu-run
@@ -252,37 +255,36 @@ Edward L. Keenan
     otherwise interpret a -0 marked one nominatively
   * (correctly) interpret batSs formed from P 2 s translating "wait for",
     "accompany", in which one NP is marked -0 and the other -ku (called "dative"
-    in Warlpiri grammars).
+    in Warlpiri grammars)
 * both Warlpiri and Japanese show that there is
   no one to one relation between morphological markings and semantic case
-  * markings on both NPs must be checked to determine semantic case.
-* Linear order of elements will be crucially referred to in "VSO" languages like
-  * languages eg Maori (Polynesian), Nandi (Nilo-Saharan), Welsh (Celtic), and
-    Jacaltec (Mayan)
-    * batSs have the form [V NP 1 NP 2 ] with `NP_1` interpreted nominatively
-      and NP 2 accusatively. By
-  *  Tzeltal (Mayan), Malagasy and Fijian (Malayo- Polynesian) interpret NP_1
-     accusatively and NP 2 nominatively.
-* Keenan (1979); verbal morphology is also an indicator of semantic case.
-  * Schachter (1984); an example from Toba Batak (Malayo-Polynesian; Sumatra).
+  * markings on both NPs must be checked to determine semantic case
+* Linear order of elements will be crucially referred to in "VSO" languages
+  * eg Maori (Polynesian), Nandi (Nilo-Saharan), Welsh (Celtic), Jacaltec (Mayan)
+  * batSs have the form [V NP 1 NP 2 ] with
+    `NP_1` interpreted nominatively and NP 2 accusatively
+  * Tzeltal (Mayan), Malagasy and Fijian (Malayo-Polynesian) interpret
+    NP_1 accusatively and NP 2 nominatively
+* Keenan (1979); verbal morphology is also an indicator of semantic case
+  * Schachter (1984); an example from Toba Batak (Malayo-Polynesian; Sumatra)
 (20) a. Mang-ida si Ria si Torus
-        see art Ria art Torus
+        M-see art Ria art Torus
         "Torus sees Ria" *"Ria sees Torus"
     b. Di-ida si Torus si Ria
-       see art Torus art Ria
+       D-see art Torus art Ria
        "Torus saw Ria" *"Ria saw Torus"
   * P 2 s in Toba are presented with one of two prefixes,
-    an M-prefix and a D- one
+    an M-prefix and a D-one
   * Main clause Ss with
     * M-verbs are interpreted "imperfectively",
       e.g. the action is presented as continuous or habitual
     * D-verbs are by contrast interpreted "perfectively"
-      the action is presented as a single undivided whole. So
-  *  the immediately postverbal NP forms a syntactic constituent with the verb.
-     Thus the Toba CC can be given:
+      the action is presented as a single undivided whole
+  * the immediately postverbal NP forms a syntactic constituent with the verb
+    Thus the Toba CC can be given:
   (21) Toba Batak Case Constraint (TBCC)
   In batS including a constituent of the form [x-V NP] interpret NP accusatively
-  if x = M and nominatively if x = D-
+  if x = M and nominatively if x = D
 * CCs may also refer to verb agreement paradigms and NP subclass (def, animacy)
 
 # 4. CONSEQUENCES OF THE THEORY 9
