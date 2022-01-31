@@ -4,118 +4,120 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 
 # Abstract
 
-* Model-theoretic semantics is a special form of truth-conditional semantics.
-  * the truth-values of sentences depend on certain abstract objects, models.
-  * models are mathematical structures that provide the interpretations of the
+* Model-theoretic semantics is a special form of truth-conditional semantics
+  * the truth-values of sentences depend on certain abstract objects, models
+  * models are mathematical structures that provide the interpretations 
   * Originally designed for the semantic analysis of mathematical logic,
   * standard in linguistic semantics, mostly through the impact of R Montague
 * frequently (and loosely) identified with possible worlds semantics, which
   rests on an identification of sentence meanings with regions in Logical
-  Space, the class of all possible worlds. In fact, the two approaches have much
-  in common and are not always easy to keep apart. In a sense,
+  Space, the class of all possible worlds
+  * the two approaches have much in common and are not always easy to keep apart
   * model-theoretic semantics can be thought of as a restricted form/gen of
     possible worlds semantics
     * restricted: where models represent possible worlds; in
-    * generalization: treating Logical Space as variable rather than given.
+    * generalization: treating Logical Space as variable
 * we: an introductory exposition of model-theoretic semantics
   also covers possible worlds semantics – hopefully helping to disentangle the
-  relationship between the two approaches.
+  relationship between the two approaches
 
 # 1. Truth-conditional semantics
 
-* motivation and background.
+* motivation and background
 * tight connection between meaning and truth
 * From a pre-theoretic point of view, linguistic meaning may appear a
   multi-faceted blend of phenomena, partly subjective and private, partly social
   and inter-subjective, mostly vague, slippery, and apparently hard to define
-  * there are a few unshakable, yet substantial (non-tautological) insights into
+  * there are a few unshakable, yet substantial (non-tautological) insights
   * differences in truth-value necessitate differences in meaning:
 * meaning is primarily sentence meaning; for sentences are the bearers of truth,
-* truth-conditional semantics, anything beyond this most marked trait of
-  sentence meanings ought to be left out of consideration (or to pragmatics),
+* truth-conditional semantics,
+  anything beyond this most marked trait of sentence meanings
+  ought to be left out of consideration (or to pragmatics),
   * Wittgenstein (1922)
   * much of its flavour, as well as some of its problems, to this immediate
-    consequence of the BP, to which we will return in section 2.
+    consequence of the BP, to which we will return in section 2
 * The – common – identification of sentence meanings with truth conditions
   requires further motivation, which may be in functionalist considerations:
-  * truth conditions suffice to explain the extralinguistic rôles attributed to
-    sentence meaning in social interaction and cognitive processes. Though we
+  * truth conditions suffice to explain the extralinguistic roles attributed to
+    sentence meaning in social interaction and cognitive processes
   * we will later see examples of covarying entities – the material models
     introduced in Section 2.3 – that are less likely to be identified with sen-
-    tence meanings than truth conditions in the sense envisaged here. Bearing
+    tence meanings than truth conditions in the sense envisaged here
 * most radical form Frege (1884: 71)
   * derive the meanings of non-sentential expressions from sentence meanings
   * Without any further specification and constraints, this characterisation of
-    nonsentential meaning is bound to be incomplete. To begin with,
-  * the contribution an expression obviously depends on the position in which it occurs:
+    nonsentential meaning is bound to be incomplete
+  * the contribution of an expression obviously depends on the position in which
+    it occurs:
   * positions p can be identified with (certain) partial, injective functions
     on the domain of expressions, inserting occupants into hosts, so that an
     (occupant) expression A occurs in position p of a (host) expression B just
-    in case p(A) = B. Positions in sentences are
+    in case p(A) = B
   * these are structural positions that need not coincide with surface pos
   * in structurally ambiguous (surface) sentences depend on the latters’
     readings
-  * can hardly be determined by looking at one sentence in isolation. Otherwise
-  (1/2) Someone is buying/selling a car.
+  * can hardly be determined by looking at one sentence in isolation
+  (1/2) Someone is buying/selling a car
   * (1) and (2) have the same truth conditions and the same overall structure,
-    * the verbs occupy the same position. Since the two sentences are otherwise
-    * it would seem that the two verbs make the same contribution. If so, this
+    * the verbs occupy the same position
+    * it would seem that the two verbs make the same contribution
     * these verbs do differ in their truth-conditional contributions, as in:
       (3/4) Mary is buying/selling a car
-* V's meanings can only be identified taking into account all positions in which
-  * ie sameness of meaning among any non-sentential expressions A and B (of the
-    same category) requires sameness of truth-conditional contribution
-    throughout the structural positions of all sentences. Since A and B occupy
+* V's meanings can only be identified taking into account all its positions
+  * ie same meaning among any non-sentential expressions A & B (of the same cat)
+    requires
+    same truth-conditional contribution
+    throughout the structural positions of all sentences
   * of the same category: not rule out the possibility that two expressions make
-    the same truth-conditional contribution without being grammatically equiv.
+    the same truth-conditional contribution without being grammatically equiv
     * Gazdar+ (1985: 32), _likely_ and _probable_ may be cases in point – given
 * Subst leaves open what kinds of entities the meanings of non-sentential
-  expressions are. Keeping the ‘minimalist’ spirit behind the passage from the
+  expressions are. Keeping the ‘minimalist’ spirit behind the passage
   * tempting to identify them by strengthening Subst to a bi-conditional,
   * hE, we will depart from radical truth-conditional semantics and not take it
-    * counterexamples will be addressed in due course.
-* various synonymous (non-sentential) expressions may be replaced simultaneously.
+    * counterexamples will be addressed in due course
+* various synonymous (non-sentential) expressions may be replaced simultaneously
   * the meaning of any complex expression can be construed as only depending of
-    the meanings of its immediate parts – thus giving rise to a famous
+    the meanings of its immediate parts
   * Principle of Compositionality [Compo]
   * may be A'=a, B'b, A''=b, B''=a, where '' is an alternative truth-conditional
     account
-  * We will take a closer look at this argument in section 3.
+  * We will take a closer look at this argument in section 3
 * a particular concept of non-sentential meaning,
-  some choices might be more natural than others. Indeed, Subst falls out
+  some choices might be more natural than others
   * if the meaning of an expressions A is identified with
     the set of all expressions with which A can be replaced without any change
-    in truth conditions, then Subst trivially holds. However,
-  * hE, there is a serious problem with this strategy: if (non-sentential)
+    in truth conditions, then Subst trivially holds
+  * hE, there is a serious problem with this strategy
     * language-dependent. But if meanings were just substitution classes, then
     * change their meanings each time a new word is added to it!
     * This speaks against a construal of meanings in terms of abstraction,
     * even though synonymy classes have proved useful as representatives of
-      meanings in the algebraic study of compositionality; cf.  Hodges (2001).
+      meanings in the algebraic study of compositionality; cf.  Hodges (2001)
 * criteria for deciding whether two expressions of different languages have
   the same meaning. Hence a substantial theory of nonsentential meaning cannot
-  * finding a natural analogue to the MCP that goes beyond sentences. The most
+  * finding a natural analogue to the MCP that goes beyond sentences
   * If T 1 and T 2 are terms such that, under given circumstances, T 1 refers to
-    something to which T 2 does not refer, then T 1 and T 2 differ in meaning.
-  * term: an expression that may be said to refer to something.
-  * Proper names, definite descriptions, and pronouns are cases in point. Thus,
-    * in an email to Manfred Kupffer, I can use (iii) the _you_ to refer to him.
+    something to which T 2 does not refer, then T 1 and T 2 differ in meaning
+  * term: an expression that may be said to refer to something
+  * Proper names, definite descriptions, and pronouns are cases in point
+    * in an email to Manfred Kupffer, I can use _you_ to refer to him
     * the two terms mentioned in the RPP must be understood as being used in the
       same context. Under different (past or counterfactual) circumstances, (ii)
-      may refer to another person, or to no one at all; the RPP only mentions
+      may refer to another person, or to no one at all
   * For the purpose of this survey we will also assume that names with more than
-    one bearer, like (i), are lexically ambiguous;
+    one bearer, like Manfred, are lexically ambiguous;
   * the terms in the RPP must therefore be taken as disambiguated expressions
 * Why should the RPP be less certain than the MCP? One possible reason comes
   * ontology: referring terms is not necessarily clearly defined (Williams 2005)
   * whatever _terms_ may be, they must somehow determine their ref conditions,
     as depending on the circumstances.  According to a certain brand of truth-
     conditional semantics, anything beyond this most marked trait of term
-    meanings ought to be left out of consideration (or to pragmatics), thus
+    meanings ought to be left out of consideration (or to pragmatics)
 * stronger version of our ‘minimalist’ semantic axiom:
-  * any two terms agree in meaning => they agree in their reference
-    conditions.
-  * The common <= (called EBP) also requires further ‘external’ evidence.
+  * any two terms agree in meaning => they agree in their reference conditions
+  * The common <= (called EBP) also requires further ‘external’ evidence
   * Subst, the EBP may then be used to determine the meanings of at least some
     non-sentential expressions
     in a non-arbitrary and at the same time language-independent way, employing
@@ -123,51 +125,55 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 * Frege’s Functional Principle [FFP]
   * If not specified by the EBP,
     the meaning of an expression A is the meaning of (certain) expressions in
-    which A occurs as functionally depending on A’s occurrence.
+    which A occurs as functionally depending on A’s occurrence
   * ie the meaning of an expression A that is not a sentence or a term,
-    is a function assigning meanings of host expressions (in which A occurs) to
-    meanings of positions (in which A occurs) – where the latter can be made out
-    in case the positions coincide with adjacent expressions whose meanings have
-    been independently identified – either by the EBP, or by previous
-    applications of the same strategy
+    is a function:
+    meanings of positions (in which A occurs)
+    -> meanings of host expressions (in which A occurs)
+    where
+    * the meanings of the positions can be made out in case
+      the positions coincide with adjacent expressions whose meanings have been
+      independently identified – either by the EBP, or by previous applications
+      of the same strategy
   * e.g. the meanings of (coordinating) conjunctions C (like and and or) may be
     determined from their occurrences in unembedded coordinations of sentences A
-    and B, i.e.  sentences of the form A C B; these occurrences are completely
+    and B, i.e.  sentences of the form A C B
   * simple predications of the form T P (where T is a term),
     the meanings of predicates P come out as functions
   * the result may in turn be used to obtain the meanings of transitive verbs V,
   * a large variety of expressions can be assigned meanings whose function is to
     contribute to truth and reference conditions without depending on any
     particular language
-* Nevertheless, for a variety of reasons, following FFP this way does not settle
-  the issue of determining meaning in a fully principled, non-arbitrary way: –
-  * which of a given number of grammatical constructions ought to serve defi
-    purpose above; and the choice may influence the meanings obtained by applying
-  * Quantifier phrases – expressions like nobody; most linguists; every atom in
+* hE, for a variety of reasons, following FFP this way does 
+  determine meaning in a fully principled, non-arbitrary way
+  * which of a given number of grammatical constructions ought to serve def
+    * the choice may influence the meanings obtained
+  * Quantifier phrases – expressions like nobody; most linguists; every atom
     * Customarily they are analyzed by putting them in subject position and thus
       * functions from predicate meanings (determined in the way above) to
-        sentence meanings (determined by the EBP).
-    * hW, they also occur in a host of other environments, e.g. as DOs. If the
+        sentence meanings (determined by the EBP)
+    * hE, they also occur in many other environments, e.g. as DOs
       * would come out as functions from transitive verb meanings (determined in
         the way above) to predicate meanings (determined in the way above); and
     * if both environments were taken together, they would be
-      functions defined on both predicate and verb meanings, etc.
+      functions defined on both predicate and verb meanings, etc
     * Although there are one-one correspondences between these different constru
-      * none of them can lay claim to being more natural than the others.  –
+      * none of them can lay claim to being more natural than the others
   * no guarantee that the meaning of an expression will behave compositionally
-    beyond the primary occurrences chosen. For instance, it is well known that
+    beyond the primary occurrences chosen
     * eg the meaning of _and_ determined along the above lines, can be put to
-      work in predicate coordinations such as sing and dance – basically due to
-      the existence of corresponding clausal paraphrases of the form x sings and
+      work in predicate coordinations such as _sing and dance_ – basically due
+      to the existence of corresponding clausal paraphrases of the form x sings
+      and dances
       * not (or not so easily) adapted to cover ‘collective’ readings of
-        coordinate proper names as in John and Mary are performing a duet.  –
+        coordinate proper names as in _John and Mary are performing a duet_
   * the range of meanings covered by the primary occurrences of an expression
     may be restricted in various ways, sometimes by accidental gaps in the lex
-    * eg the predicate meanings will depend on what terms there are, and what
+    * eg the predicate meanings will depend on what terms there are
   * in order to make the meanings thus determined general enough, their
-    construction often crucially involves a certain amount of idealisation.
-    * idealisations frequently go far beyond the inclusion of hard-to-describe
-      objects as referents. As a result, the synonymy criterion mentioned above
+    construction often crucially involves a certain amount of idealisation
+    * idealisations frequently go far beyond the inclusion of
+      hard-to-describe objects as referents
 * before FFP, trying to proceed in a bottom-up fashion, had encountered
   serious difficulties when it came to distinguishing the various modes of
   composing phrasal from lexical meanings. By changing the direction of
@@ -175,103 +181,103 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 * FFP offers a much more differentiated picture of the varieties of meaning:
   combination mostly proceeds by functional application, and
   * make all expressions amenable to semantic analysis,
-    including functional ones such as determiners and conjunctions.
+    including functional ones such as determiners and conjunctions
 
 # 2 Possible worlds semantics 7
 
 ## 2.1. Logical Space
 
 * extension: the object that the meaning of an expression determines (for given
-  circumstances, Carnap 1947). In other words, the extension
-  * of a sentence is its truth value; and the extension
-  * of a term is its referent. It is a remarkable fact that
+  circumstances, Carnap 1947)
+  * of a sentence is its truth value
+  * of a term is its referent
   * the above strategy for determining meanings may be used to generalize the
     notion of extension to a wide range of expressions
   * the extension of an expression A as a function assigning
     extensions of host expressions ->
-    extensions of positions in which A occurs.  We thus have what may be called
-  * the Extensional Version of Frege’s Functional Principle
-  * the extensions of coordinating conjunctions may be determined from their
-  * the extensions of predicates come out as functions assigning truth values
-    * characteristic functions of sets of individuals, i.e. functions from
+    extensions of positions in which A occurs
+  * ie the Extensional Version of Frege’s Functional Principle
+  * the extensions of coordinating conjunctions may be determined
+  * the extensions of predicates come out as
+    * characteristic functions of sets of individuals
   * in turn, transitive verbs come out as curried binary relations,
-    i.e.  functions assigning characteristic functions to individuals (= the
-    * the curried version of R assigns the characteristic
-      function of {y∈U | (y, x)∈R} to any individual x∈U. It is not hard to see
+    i.e. functions assigning characteristic functions to individuals
+    * the curried version of R: individual x \in U ->
+      the characteristic function of {y ∈ U | (y, x) ∈ R} 
   * the extensions of quantifier phrases can be identified as (character-
     istic functions of) sets of predicate extensions; and
     * once nouns are regarded as synonymous with predicates,
-    the extensions of determiners: (curried) relations among predicate exts.
+    the extensions of determiners: (curried) relations among predicate exts
   * extension of
-    everybody = supersets of the set of all persons; the extension of
-    no = the relation of disjointness among sets of individuals; etc. Since
+    everybody = supersets of the set of all persons
+    no = the relation of disjointness among sets of individuals
   * 1 is crucial because 2
-    * this generalisation of predicate extensions to functions operating on
-      arbitrary individuals
+    * this generalisation of predicate extensions
+      to functions operating on arbitrary individuals
     * the truth value of a sentence with a quantifier in subject position may
       depend on the value of the predicate extension for nameless individuals,
 * this extensional adaptation is much more limited in its application than FFP
-  * it only works as long as extensions behave compositionally; otherwise it is
-  * and there are a number of environments that cannot be analyzed by
-    compositionally combining extensions. Still, a considerable portion of the
-* truth conditions and reference conditions (in the sense intended here): since
+  * it only works as long as extensions behave compositionally
+  * there are a number of environments that cannot be analyzed by
+    compositionally combining extensions
+* truth conditions and reference conditions (in the sense intended here)
   * functions assigning truth values to referents as depending on circumstances
   * presupposes that, whatever circumstances form a set that may serve as dom
   * the set of circumstances is
-    * vast, and that Circumstances may be as hypothetical as can be.
-    * its members do not miss a detail: Circumstances are as specific as can be.
+    * vast, and that Circumstances may be as hypothetical as can be
+    * its members do not miss a detail: Circumstances are as specific as can be
 * Vastness reflects the raison d’être of circumstances in semantic theory:
   * circumstances serve to differentiate the meanings of non-synonymous
     sentences and terms by providing them with distinct truth values and
-    referents, respectively. In order to fulfill this task in an adequate way,
+    referents, respectively
   * actual circumstances – those met in the actual world – obviously do not
     suffice, as a random example shows:
-    (5) The physicist who discovered the X-rays died in Munich.
-    (6) The first Nobel laureate in physics died in Munich.
-    * it so happens that the German physicist Wilhelm Conrad Röntgen discovered a
-      phenomenon known as X-rays in 1895, was subsequently awarded the first
-      Nobel prize in physics in 1901, and died in Munich in 1923. Hence the
+    (5) The physicist who discovered the X-rays died in Munich
+    (6) The first Nobel laureate in physics died in Munich
+    * it so happens that the German physicist Wilhelm Conrad Röntgen discovered
+      a phenomenon known as X-rays in 1895, was subsequently awarded the first
+      Nobel prize in physics in 1901, and died in Munich in 1923
     * subjects refer to the same person, and both are true
-    * hE, not synonymous, and neither are the definite descriptions in their
-      subject position. In order to reflect these semantic differences in their
-    * circumstances are called for under which (5) and (6) differ in truth
-      value and, consequently, their subjects do not corefer. Such
+    * hE, sentences not synonymous, and
+      * neither are the definite descriptions in their subject position synonymous
+    * In order to reflect these semantic differences 
+      * circumstances are called for under which (5) and (6) differ in truth
+        and, consequently, their subjects do not corefer
   * it is hardly foreseeable what kinds of differences are needed in order to
     separate two non-synonymous sentences or terms by circumstances under which
     their extensions do not coincide, we will assume that
     any conceivable circumstances count as evidence for non-synonymy,
-    however far-fetched or bizarre they may be. The following pair, inspired by
-* Macbeath (1982), is a case in point:
-  (7) Dr Who ate himself.
-  (8) Dr Who is his own father.
-  * there better be circumstances that contradict current science, thereby
-* The point of Detail is that counterfactual (= non-actual) circumstances are
-  just as specific. Hence if I had been on a space shuttle instead of riding a
+    however far-fetched or bizarre they may be
+* Macbeath (1982)
+  (7) Dr Who ate himself
+  (8) Dr Who is his own father
+  * there better be circumstances that contradict current science
+* Detail: counterfactual (= non-actual) circumstances are just as specific.
 * ordinary conception of worlds of imagination or fiction: stories and novels
-  usually, nay always, leave open a lot of details – like the exact number of
-  * correspond to sets of circumstances; for instance, ‘the world of Sherlock'
+  usually, nay always, leave open a lot of details – 
+  * correspond to sets of circumstances; for instance
 * Logical Space: the set of all actual and counterfactual circumstances
   (Wittgenstein 1922)
   * elements of Logical Space as possible worlds rather than circumstances,
-  * it will be left open here whether possible worlds are all-inclusive
-    agglomerations of facts, or whether they could also correspond to more
-    mundane, medium-sized situations. What is important is that Logical Space
+  * it will be left open here whether
+    possible worlds are all-inclusive agglomerations of facts, or whether
+    they could also correspond to more mundane, medium-sized situations. What is
 * cannot guarantee that any two sentences that appear to differ in meaning also
-  differ in their truth conditions. Thus, e.g., (9)–(10) are true of precisely
-  (9) General Beauregard Lee is a woodchuck.
-  (10) General Beauregard Lee is a groundhog, and either he lives in Georgia,
-       or he does not live in Georgia.
-* intension of an expression A as the function that assigns to each possible
-  world the extension of A at (i.e.: for) that world. Since the intensions
-  * of sentences are functions characterising sets of possible worlds, they may
-    * refer to the these subsets of Logical Space, as propositions and say that
+  differ in their truth conditions
+  (9)   General Beauregard Lee is a woodchuck
+  (10)  General Beauregard Lee is a groundhog, and either he lives in Georgia,
+    or he does not live in Georgia
+* intension of an expression A as the function:
+  possible world -> the extension of A at (i.e.: for) that world
+  * of sentences are functions characterising sets of possible worlds
+    * refer to the these subsets of Logical Space, as propositions
     * straightforward algebraic structure induced by the familiar Boolean ops
-      and the concomitant [associated] subset relation; this is why the power
-    * the algebra of propositions.  As far as sentences and terms are
-    * synonymy may be equated with sameness of intension. A straightforward,
+      and the concomitant [associated] subset relation
+    * the algebra of propositions
+    * synonymy may be equated with sameness of intension
     * inductive argument shows that
       this equation generalises to arbitrary expressions A with extensions that
-      have been constructed by applying (the extensional version of) FFP; for
+      have been constructed by applying (the extensional version of) FFP
 * a typical analysis of a simple example
   within the framework of possible worlds semantics:
   (11) Every boy fancies Mary and Jane pouts [duzzog]
@@ -281,60 +287,60 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   ||Mary|| w = Mary; ||Jane|| w = Jane
   e. ||and|| w = λu. λv. u × v
   ||pouts|| w = λx. ⊢x pouts in w⊣
-* notation used in the equations (12) are in order:
+* notation used in the equations (12)
   * As usual in formal semantics, ‘λx. ...x...’ denotes the function assigning
-  * If ‘…’ is a statement, then ‘⊢...⊣’ is its truth value, i.e. ‘⊢...⊣’ is
+  * If ‘…’ is a statement, then ‘⊢...⊣’ is its truth value
   * In (12a), relations are identified with characteristic functions and,
-    * the succession order of arguments follows the surface bracketing of
+    * the succession order of arguments follows the surface bracketing
   * (12e) exploits that truth values are numbers with arithmetical operations,
   * the obvious temporal dependence of the right-hand sides of the equations
-    (12b) and (12c) have been suppressed and may be thought of as being
+    (12b) and (12c) have been suppressed
 * their extensions can be derived by functional application
 
 ## 2.2. Material models 12
 
 * in order to specify the extensions of arbitrary (extensional) expressions,spc
   a. the extensions of all (extensional) lexical expressions and
-  b. the way the (extensional) grammatical constructions combine them.
+  b. the way the (extensional) grammatical constructions combine them
 * If these constructions constitute the primary contexts of expressions
   analyzed in terms of (the extensional version of FFP),
   (b) is always a matter of functional application
 * Other (extensional) constructions may require some ingenuity
-  to determine the precise way in which extensions combine.
+  to determine the precise way in which extensions combine
   * Quantified objects are an infamous case in point
   * the extension of a predicate of the form V Q, where V is transitive verb
     and Q is a quantifier phrase (in direct object position), can be given by
     the following equation: (15) ‖V Q‖^w = λx. ‖Q‖^w (λy. ‖V‖^w (y)(x))
   * extensional constructions = the extensions of the expressions they combine
-    determine the extensions of the resulting phrases, thus giving rise to
+    determine the extensions of the resulting phrases
 * (b) does not depend on the particular circumstances envisaged
 * ie the world dependence of extensions is just a matter of lexical spec (a)
-  * the rôle worlds play in the determination of extensions restricted to the
+  * the role worlds play in the determination of extensions restricted to the
     extensions of lexical expressions – the rest is compositionality, captured
     by general equations like (14) and (15)]
   * possible worlds could be identifi ed with functions assigning extensions to
-    lexical expressions.
+    lexical expressions
   If A is a lexical expression, we would thus have:
 * (16) ‖A‖^w = F w (A)
   * F w is a function assigning to any expression in its domain the extension
     of that expression at world w
-  * What is the domain of F w ? It has just been noted that
-    * it only contains lexical expressions – but does it include all of them? A
+  * What is the domain of F w ?
+    * it only contains lexical expressions – but does it include all of them?
     * eg the extension of a (sentence-) coordinating conjunction _and_ is
     (17) a. ‖and‖^w = λu. λv. u × v b. ‖or‖^w = λu. λv. (u + v) – (u × v) c not
   * the specifications of the world-dependent extensions of lexical expressions
-    may safely skip such logical words. A similar case can be made for
-  * quantificational determiners and the _is_ of identity: (18) a. ‖every‖^w = λP.
+    may safely skip such logical words
+  * similarly: quantificational determiners and the _is_ of identity: (18) a.
     (18)  a. ‖every‖^w = λP. λQ. ⊢P ⊆ Q⊣
           b. ‖no‖^w = λP. λQ. ⊢P ∩ Q = ∅⊣
           c. ‖is‖^w = λx. λy. ⊢x = y⊣
-* in (18) ‘x’ and ‘y’ stand for individuals and ‘P’ and ‘Q’ for
-* which, and how many, individuals there are, depends on the particular world w.
+    *  ‘x’ and ‘y’ stand for individuals and ‘P’ and ‘Q’ for
+* which, and how many, individuals there are, depends on the particular world w
   so do the equations in (18)
-  * only depend on what the set of all individuals in the world w is.  In other
+  * only depend on what the set of all individuals in the world w is
   * not depend on the particularities of the world but (at most) on the domain
-    of individuals. In this respect, logical words as analyzed
-* the extensions of the vast majority of lexical expressions do vary across
+    of individuals
+* the extensions of the vast majority of lexical expressions do vary across LS
   (19) ‖boy‖^w = λx. ⊢x is a boy in w⊣ [= (12b)]
 * thus three kinds of lexical expressions:
   * truth-functional ones, whose extension remains the very same across worlds
@@ -343,43 +349,43 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 * the material model (for L based on w) is the pair M w = (U w ,F w )
   * the domain of individuals U w in w and
   * the lexical interpretation function F w which assigns to every non-logical
-    lexical expression A of L the extension of A at w.
+    lexical expression A of L the extension of A at w
 * presupposing a prior and independent specification of the non-logical
-  vocabulary N L of the language L under
+  vocabulary N L of the language L
   * implies that the interpretation functions of any two material models share
-    their domain, which is precisely the set N L . It should then be clear how
+    their domain, which is precisely the set N L 
 * the extensions of arbitrary expressions A of a language L can be characterised
   in the form of an inductive definition, which
   starts out with the lexical material and then
   moves on step by step, following the grammatical construction principles of L,
   which derive (analysed and disambiguated) complex expressions from their
-  (immediate) parts, thereby creating an increase in syntactic complexity. The
+  (immediate) parts, thereby creating an increase in syntactic complexity
 * semantic characterisation of logical words
   * We have already seen that one characteristic feature of logical words is
     that their extension is largely world-independent
   * hE the intensions of proper names as constant functions over Logical Space
     * Kripke (1972): terms with constant intensions are called rigid designator
-  * intuition that the extension of a logical word can be described in purely
-    structural terms
-  * functions as configurations of arrows leading from arguments
+  * intuition that
+    the extension of a logical word can be described in purely structural terms
+  * functions as configurations of arrows from arguments to values
   * the extension of a logical word can be described solely in terms of the
     abstract arrangement of these arrows,
     without mentioning any particular individuals or other extensions – apart
     from the truth values
-  * not depend on the identity of the individuals, which may be replaced by othe
+  * not depend on the identity of the individuals, which may be replaced
   * logical words as having extensions that are stable under any replacement of
     individuals
   * type notation
     * classify the extensions of expressions according to whether they derive
       (i) from the EBP, or
-      * the extensions of sentences/terms are said to be of type t and e
+        * the extensions of sentences/terms are said to be of type t and e
       (ii) by application of FFP:
-      * if the extension of an expression
-        operates on extensions of some type `a`
-        resulting in extensions of some type b, it is said to be of type (a,b).
+        * if the extension of an expression
+          operates on extensions of some type `a`
+          resulting in extensions of some type b, it is said to be of type (a,b)
 * expressions' types remain the same throughout Logical Space
-  * the type assignment of L: τ L assigning to each expression of a language L
-    the unique type of its extensions
+  * the type assignment of:
+    τ L assigning to each expression of a L the unique type of its extensions
   * part of the specification of the language L
 * replacement
   * Given (not necessarily distinct) possible worlds w and w',
@@ -393,97 +399,100 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * ρ (a,b) = λf. {(ρ a (x), ρ b (y)| f(x) = y}
       [where ‘f’ ranges over functions of type (a,b)]
 * ρ a is the identical mapping on the extensions of type `a` if (and only if) ρ
-  is the identical mapping on the domain of individuals.
+  is the identical mapping on the domain of individuals
 * a logical word A can be defined as one
-  whose extensions cannot be affected by replacements.
-  More precisely, if ƒ is an intension of type a (i.e. a function from W to
-  extensions of type a),
-  then ƒ is (replacement-)invariant just in case for any replacements ρ and ρ'
-  of w by some world w', it holds that ρ α (f (w)) = ρ' α (f (w))
+  whose extensions cannot be affected by replacements
+  * More precisely, if ƒ is an intension of type a
+    (i.e. a function from W to extensions of type a),
+    then ƒ is (replacement-)invariant just in case for any replacements ρ and ρ'
+    of w by some world w', it holds that ρ α (f (w)) = ρ' α (f (w))
 * logical words may then be characterised as lexical expressions A with
   invariant intensions: ρ τ(A) (‖A‖^w ) = ρ' τ(A) (‖A‖^w ),
-  for any worlds w and replacements ρ and ρ' of w by some world w'.
-* implies that `ρ_{τ(A)} (‖A‖^w ) = ‖A‖^w`, whenever A is a logical word and ρ
-  is a replacement from a world w to itself (or any world with the same domain
-  of individuals) – which is
+  for any worlds w and replacements ρ and ρ' of w by some world w'
+* implies that `ρ_{τ(A)} (‖A‖^w ) = ‖A‖^w`,
+  whenever A is a logical word and ρ is a replacement from a world w to itself
+  (or any world with the same domain of individuals)
   * a classical criterion of logicality (Lindenbaum & Tarski 1935)
 * Extensive treatments of replacements in (models of) Logical Space can be found
-  in Fine (1977) and Rabinowicz (1979).
+  in Fine (1977) and Rabinowicz (1979)
 * we will also call extensions of types `a` invariant if they happen to be the
   values of invariant intensions of type `a`
-* Invariant extensions are always of a peculiar, combinatorial kind. In
+* Invariant extensions are always of a peculiar, combinatorial kind
   * ignoring all too small universes (of cardinalities 1 and 2),
   * extensions of type e are never invariant;
-  * only two invariant extensions of type (e,t), viz. the empty one and the
-  * four of type (e,(e,t)), viz.  identity, distinctness, and the two trivial
+  * only two invariant extensions of type (e,t), viz. the empty one and the univ
+  * four of type (e,(e,t)), viz. identity, distinctness, and the two trivial
     (empty and universal) binary relations;
   * extensions of type ((e,t),t) are invariant just in case they classify sets
-    of individuals according to their cardinalities; etc. As a consequence,
-* it takes more for an intension to be invariant than just having invar ext; in
+    of individuals according to their cardinalities; etc
+* it takes more for an intension to be invariant than just having invar ext
   * a function that assigns different invariant extensions to worlds with the
      same domain cannot be invariant
   * if the domains U and U' of two material models M and M' have the same
      cardinality, the invariance condition on logical words of the second kind
-     (ii eg every) ensure that, intuitively speaking, they have analogous extensions.
-     Thus, e.g., a determiner whose extension relative to M is the
-     subset-relation on U will denote the subset on U' in M'.
+     (ii eg every) ensure that they have analogous extensions
+     * Thus, e.g., a determiner whose extension relative to M is the
+       subset-relation on U will denote the subset on U' in M'
 * hE, if U and U' have different cardinalities, logicality does not exclude that
   the extension varies (eg, subsethood on U and disjointness on U')
   * no generally agreed identification procedure of extensions across varying
     domains to exclude such cardinality-sensitive shift
     (Machover (1994); Casanovas (2007))
-  * We will briefly return to this point in Section 3.1.
-* all extensions specified in clauses (i) and (ii) of (20) are indeed invariant.
+  * We will briefly return to this point in Section 3.1
+* all extensions specified in clauses (i) and (ii) of (20) are indeed invariant
   * the combinations specified in clause (iv) are invariant once they are
     themselves construed as extensions: the compositional combination of
     extensions generally proceeds by way of purely structural operations,
     corresponding to invariant functional extensions. The reader is reminded
     that we restrict attention to extensional constructions;
-    * non-extensional compositionality will be addressed in the following section.
+    * non-extensional compositionality will be addressed in the following section
 * The gaps in (20), then, are meant to be filled in as follows
   * The extensions of truth-functional logical words, i.e. those whose type
-    consists of ts, commas, and brackets only, are specified in clause (i); and
-    * independent of any particular world. The extensions of
-  * all other logical words (which, for lack of a better term, we continue to
-    call combinatorial) are specified in clause (ii); their
-    * intensions are invariant, and their extensions in general depend on the
-      domain of individuals
+    consists of ts, commas, and brackets only, are specified in clause (i)
+    * independent of any particular world
+  * all other logical words (which we continue to call combinatorial) are
+    specified in clause (ii)
+    * their intensions are invariant, and
+      their extensions in general depend on the domain of individuals
   * the ways in which the extensions of complex expressions depend on the
     extensions of their immediate parts, correspond to invariant (and
     generally domain-dependent) functional extensions and are specified in
-    clause (iv), according to the syntactic constructions involved.
+    clause (iv), according to the syntactic constructions involved
 * (20) may then be completed to recapitulate the above analysis of (11),
   replacing possible worlds w with corresponding material models M w and
   (21) |every boy fancies Mary and Jane pouts| M w = ⊢Jane pouts in w⊣ ×
         ⊢{x | x is a boy in w} ⊆ {y | y fancies Mary in w}⊣
-(22)  a. |A| M w = ‖A‖^w
-      b. ‖A‖^w = ‖B‖^w iff |A| M w = |B| M w
+  (22)  a. |A| M w = ‖A‖^w
+        b. ‖A‖^w = ‖B‖^w iff |A| M w = |B| M w
 * ie two expressions are synonymous just in case their extensions coincide
   across all material models
   * material models can also be used to characterise sense relations in quite
-    the same way as possible worlds were above.
+    the same way as possible worlds were above
   * eg a sentence S implies a sentence S' in the sense of the above definition
-    just in case the intension of the former is a subset of the latter, i.e. {w
+    just in case the intension of the former is a subset of the latter
 * define the L-intension |A| of an expression A (of a language L) as the
   function that assigns A’s extension (according to M w ) to each material
-  model: |A|(M w ) = |A| M w , i.e. |A| = λM w . |A| M w . Observation (22)
-  shows that L-intensions are as good as intensions when it comes to determining
-  extensions; and we have seen that they may also be used to reconstruct sense
-  relations defined via intensions, basically on account of (22b). Moreover, the
-  Boolean structure of the set of propositions expressible in L (= those that
-  happen to be the intensions of a sentence of L) turns out to be isomorphic to
-  the Boolean structure of L-propositions (= the L-intensions of the sentences
-  of L): as the patient reader may want to verify, the mapping from ‖S‖^w to |S|
-  M w is one-one (injective) and preserves algebraic (Boolean) structure in
-  that ‖S‖^w ⊆ ‖S'‖^w iff |S| M w ⊆ |S'| M w , ‖S‖^w ∩ ‖S'‖^w = |S| M w ∩ |S'| M
-  w , etc. The tight relation between Logical Space and the set of material
-  models can also be gleaned from considering worlds that cannot be distin-
-  guished by the expressions of a given language L:
+  model: |A|(M w ) = |A| M w , i.e. |A| = λM w . |A| M w 
+  * Observation (22) shows that L-intensions are as good as intensions when it
+    comes to determining extensions; and we have seen that they may also be used
+    to reconstruct sense relations defined via intensions, basically on account
+    of (22b)
+  * Moreover, the Boolean structure of the set of propositions expressible in L
+    (= those that happen to be the intensions of a sentence of L) turns out to
+    be isomorphic to the Boolean structure of L-propositions (= the L-intensions
+    of the sentences of L):
+    as the patient reader may want to verify,
+    the mapping from ‖S‖^w to |S| M w is one-one (injective) and preserves
+    algebraic (Boolean) structure in that ‖S‖^w ⊆ ‖S'‖^w iff |S| M w ⊆ |S'| M w
+    , ‖S‖^w ∩ ‖S'‖^w = |S| M w ∩ |S'| M w , etc
+  * The tight relation between Logical Space and the set of material models can
+    also be gleaned from considering worlds that cannot be distinguished by
+    the expressions of a given language L:
 * def L-indistinguishable w ≡ L w'
   * If w and w' are possible worlds and L is a language, then
-    w is L-indistinguishable from w iff ‖A‖^w = ‖A‖^w', for any expression A of L.
+    w is L-indistinguishable from w iff ‖A‖^w = ‖A‖^w', for any exp A of L
 * L is discriminative iff no two distinct possible worlds w and w' are
-  L-indistinguishable.
+  L-indistinguishable
   * in this case the material models stand in a one-one correspondence with
     Logical Space
   * In particular, if L contains a term the referent of which at a given world
@@ -491,10 +500,10 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * arguably, the definite description _the world_ is such a term, thus
     rendering English discriminative
   * for almost all languages L, any two L-indistinguishable worlds give rise to
-    the same material model: (23) If w ≡ L w', then M w = M w' .
+    the same material model: (23) If w ≡ L w', then M w = M w' 
 * material models stand in a one-one correspondence to the
   equivalence classes induced by L-indistinguishability
-* whether they could replace worlds and intensions in general. In other words,
+* ?whether could they replace worlds and intensions in general
   * could meaning be defined in terms of material models instead of possible ws?
   * hE, material models have been defined in terms of Logical Space
   * if the very notion of a material model is going to be defined independently
@@ -504,25 +513,25 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     like the infamous inclusion relation between the extensions of bachelor
     and unmarried
   * Arguably, at the end of the day the restrictions to be imposed on the
-    material models amount to a theory of Logical Space; cf.  Etchemendy (1990)
-  * material models are language-dependent. In particular (and
+    material models amount to a theory of Logical Space; cf. Etchemendy (1990)
+  * material models are language-dependent
   * disregarding neurotic cases, for any two distinct languages L and L', the
-    sets of material models of L and of L' will not overlap.
-    * languages would always have different intensions. In particular, sentences
-    * translating material models across languages would be called for. For
+    sets of material models of L and of L' will not overlap
+    * languages would always have different intensions
+    * translating material models across languages would be called for
       * a material model for English assigning a certain set of individuals to
         the noun groundhog would have to be translated into a material model for
-        German assigning the
+        German
     * then, circumstances would correspond to equivalence classes of material
       models of different languages
-    * a oneone correspondence between material models and possible worlds
+    * a one-one correspondence between material models and possible worlds
       requires an ideal ‘language’ of Logical Space, as envisaged by
-      Wittgenstein (1922).
+      Wittgenstein (1922)
   * sum: neither ontological objectionability nor theoretical economy are
     sufficient motives for
     reversing the conceptual priority of Logical Space over the set of mater mod
   * material models may be seen as compressions of possible worlds, reducing
-    them to the barest necessities of semantic analysis.
+    them to the barest necessities of semantic analysis
 
 ## 2.3. Intensionality 20
 
@@ -530,13 +539,13 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   sentences and terms
   only works in so-called __extensional contexts__,
   i.e.  (syntactic) constructions in which extensionally equivalent parts may
-  replace each other without affecting the extension of the host expression.
-  However, a number of environments prove to be non-extensional.
+  replace each other without affecting the extension of the host expression
+  However, a number of environments prove to be non-extensional
 * Clausal complements to attitude verbs like think and know are classical cases
   * their contribution to the extension of the predicate cannot be their own
     extension which is merely a truth value; if it were, materially equivalent
-    (24) John thinks Mary is home.
-    (25) John thinks Ann is pregnant.
+    (24) John thinks Mary is home
+    (25) John thinks Ann is pregnant
 * blocks the derivation of the extension of _think_ via the extensional version
   of FFP: if it were a function ƒ assigning the predicate extension to the
   * not show that attitude verbs do not have extensions,
@@ -557,7 +566,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     * think of the intensions of the embedded clauses as the contributions they
       make to the extension of the predicate and thus take the
       extension of the attitude verb to be the function that assigns the
-      extension of the host predicate to this contribution.
+      extension of the host predicate to this contribution
 * the extension of _thinks_ comes out as a function that assigns sets of
   individuals to sets of possible worlds such that the following equation holds:
   (27) ‖thinks‖^w (‖S‖)(‖T‖^w ) = ‖T thinks S‖^w
@@ -571,7 +580,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
       resulting in extensions of some type `b`, it is of type (a,b)
     * it is of type ((s,a), b)
       if it operates on intensions of expressions whose extensions are of type
-      `a`, resulting in extensions of type `b`.
+      `a`, resulting in extensions of type `b`
 * Hence
   * t is the type of truth values
   * e is the type of individuals (or entities)
@@ -579,27 +588,27 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * and (s,a) is the type of (total) functions from Logical Space to a. The
 * notation from Montague (1970)
   * ‘s’ is reminiscent of sense, Frege’s (1892) term for intension. In this
-* the extension of an attitude verb like think is of type ((s,t),(e,t)).
+* the extension of an attitude verb like think is of type ((s,t),(e,t))
 * Compositional derivations can again be simulated with material models in lieu
   of worlds, as in the case of extensional constructions
   * this only requires models to
     * also assign extensions of intensional types containing ‘s’ to certain
       lexical expressions (like attitude verbs) and to
     * allow the extensions of complex operations to be obtained by combining the
-      extensions and/or intensions of their immediate parts.
+      extensions and/or intensions of their immediate parts
 * the recursive procedure for determining extensions relative to material models
   of Ê may also contain clauses like the following,
   * where Ê is a more inclusive fragment of English than E:
   (iv-c) |V S| M w = |V| M w (λw'. |S| M w' ) if V S is a predicate,
   where V is an attitude verb and S is a clausal complement
 * the programme of eliminating Logical Space in favour of the set of material
-  models cannot be upheld beyond the realm of extensional constructions.
+  models cannot be upheld beyond the realm of extensional constructions
   * For, unlike the intension of the embedded clause, λw'. |S| M w |S| M w',
     the corresponding L-intension, λM w'. |S| M w' , cannot serve as an
     argument to the extension |V| M w of the attitude verb: the latter is the
     value of a lexical extension assignment F w , which itself is a component of
     M w , which in turn is a member of the domain of λ M w '. |S| M w' – which
-    cannot be, for set-theoretic reasons.
+    cannot be, for set-theoretic reasons
 * the intension of the embedded clause is defined in terms of its extensions
   relative to all other material models. While this does not present any
   * this makes the material models less self-contained than their extensional
@@ -613,7 +622,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     individuals U w ;
   * the world `w*` itself; and
   * the lexical interpretation function F̂  which assigns to every non-logical
-    lexical expression A of L the intension of A at w.
+    lexical expression A of L the intension of A at w
 * Two complications arising from this definition are worth noting:
   * Universal and existential quantification over possible worlds are prime
     candidates for logical operations of type ((s,t),t), the former yielding the
@@ -622,22 +631,22 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     lexical expressions need not be of extensional types, the logicality border
     needs some adjustment. For the time being we will leave this matter open,
     returning to it in Section 3.2 with a natural extension of the replacement
-    approach to logicality.
+    approach to logicality
   * Lest clauses like (iv-c) should make reference to anything outside the
     intensional model, the lexical interpretation function is defined for all
     worlds w. As a consequence, two distinct intensional material models only
     differ in their 3rd component, and each determines the extensions of all
     expressions at all possible worlds. Hence the procedure for determining the
     extensions is more general than expected; its precise format will also be
-    given in Section 3.2.
+    given in Section 3.2
 * Intensional material models are rather redundant objects, which is why they
   * not used in real-life semantics; we have mainly defined them here for future
   * set theory precludes Logical Space as it appears in them, from being
     replaced by the set of all intensional material models. On the other hand,
-    its rôle might be played by the set of extensional material models, i.e.
+    its role might be played by the set of extensional material models, i.e
     those that only cover the extensional part of L – containing only its
     lexical expressions with extensions of extensional types, and its
-    extensional syntactic constructions.
+    extensional syntactic constructions
 
 # 3 Model-theoretic semantics 23
 
@@ -653,14 +662,14 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 * Given any non-empty set U, the U-extensions of type e are the elements of U;
   the U-extensions of type t are the truth values; and
   if a and b are extensional types, then the U-extensions of type (a,b) are the
-  (total) functions from U-extensions of type `a` to U-extensions of type b.
+  (total) functions from U-extensions of type `a` to U-extensions of type b
 * U-extensions (of extensional types) : the elements of U ::
   ordinary extensions : the individuals of a given possible world
   * ordinary extensions = `U_w`-extensions, where `U_w` is the domain of indivs
 * Given a language L, a __formal model__ (for L) is a pair M = (U, F)
   * non-empty set U (= the universe of M) and a
   * function F which assigns to every non-logical lexical expression A of L a
-    U-extension of type τ L (A).
+    U-extension of type τ L (A)
 * Using the recursive procedure applied earlier,
   we can extend any bijection ρ between any (not necessarily distinct)
   non-empty sets U and Ũ of the same cardinality,
@@ -686,9 +695,9 @@ cardinality. Then:
 `(*)` ρ' a (X) = ρ" a (ρ a (X)), for any bijections ρ' and ρ" from U w and U to some set
 
 U' of the same cardinality, respectively;
-(**) ρ a (X) = ρ' a (X), for any bijection ρ' from U w to U.
+(**) ρ a (X) = ρ' a (X), for any bijection ρ' from U w to U
 
-The proofs of (*) and (**) are rather straightforward and thus left to the readers.
+The proofs of (*) and (**) are rather straightforward and thus left to the readers
 
 
 
@@ -698,7 +707,7 @@ The proofs of (*) and (**) are rather straightforward and thus left to the reade
 785
 
 * Generalised replacements may now be put to use to
-  substitute material models by structurally identical set-theoretic objects.
+  substitute material models by structurally identical set-theoretic objects
   If M = (U, F) and M̃ = ( U % , F % ) are formal models, a bijection ρ from U
   to Ũ is called a model-isomorphism (from M to M̃ ) just in case F̃ (A) = ρ τ(A)
   (F(A)), whenever A∈N L . If there exists a model-isomorphism from M to M̃, M
@@ -706,7 +715,7 @@ The proofs of (*) and (**) are rather straightforward and thus left to the reade
   concept is reflexive as well as symmetric and transitive. Clearly, even if
   two models are isomorphic, not every bijection between their domains is an
   isomorphism; but in general there exists more than one isomorphism between
-  them.
+  them
 
 Given a formal model M = (U,F) and any bijection ρ from U to a set U* of the
 same cardinality, there exists a formal model M* = (U*, F*) such that ρ is a model-
@@ -719,7 +728,7 @@ said to represent M w . It should be noted that, if U = U w , the resulting form
 not be a material model, because the structure imposed on its individuals may go against
 their very nature. For example, if U happens to contain the world w itself, then replacing it
 with Tom, Dick or Harry could put w in the extension of bachelor, which may be not be a
-genuine possibility for a world to be.
+genuine possibility for a world to be
 
 If a material model for a language L is represented by a formal model, the recursive
 procedure for determining extensions of arbitrary expressions relative to the former
@@ -737,7 +746,7 @@ determined by the following induction on A’s complexity:
 [[A]] M = F(A) [= ρ τ(A) (F w (A))], if A ∈ N L ;
 [[A]] M = ρ τ(A) (G(ρ – τ 1 (B ) ([[B 1 ]] M ),..., ρ – τ 1 (B n ) ([[B n ]] M ))), if A is a complex expression
 1
-with immediate constituents B 1 ,..., B n such that |A| M w = G(|B 1 | M w ,...,|B n | M w ).
+with immediate constituents B 1 ,..., B n such that |A| M w = G(|B 1 | M w ,...,|B n | M w )
 
 The fi nal clause relates to the compositional interpretation of L in terms of invariant
 functions that combine the extensions of the parts of complex expressions. In general,
@@ -745,12 +754,12 @@ these semantic operations cannot be gleaned from the material models M w or the 
 sions |A| M w determined relative to them; rather, they must be specified independently, as
 was done above for an extensional fragment of English. Given such a specification, the
 extensions defined in (30) turn out to be independent of ρ; the verification of this fact –
-which essentially turns on the above observation (**) on invariance – is left to the reader.
+which essentially turns on the above observation (**) on invariance – is left to the reader
 
 The following observation about isomorphic formal models M and M̃ (for any
 language L) is fundamental to model-theoretic semantics:
 (31) Let ρ be a model isomorphism from M to M̃. Then
-for all expressions A of L, ρ τ(A) ([[A]] M ) = [[A]] M̃. .
+for all expressions A of L, ρ τ(A) ([[A]] M ) = [[A]] M̃. 
 (31) follows from (30) by a straightforward inductive argument; clause (iv) makes use of
 the above observation (**) on invariance. The special case of (31) where M = M̃ = M w
 
@@ -766,13 +775,13 @@ rial models are concerned, the extensions defined in (30) are the familiar ones 
 independent of ρ):
 (32) If M w is a material model for a language L and A is an expression of L, then
 cf. Section 2.2, (22a)
-[[A]] M w = |A| M w = ||A|| w .
+[[A]] M w = |A| M w = ||A|| w 
 
 Another immediate consequence of (31) concerns (declarative) sentences S (of a given
 language L), for which τ L (S) = t and hence ρ τ(S) ([[S]] M ) = [[S]] M :
 (33) If the formal model M (for a language L) represents the material model M w , then
 [[S]] M = [[S]] M w ,
-for all sentences S of L.
+for all sentences S of L
 
 * the set-theoretic reconstruction of Logical Space, to which we now turn. As
   * we will refer to
@@ -786,9 +795,9 @@ for all sentences S of L.
 Definition
 
 If L is a language, then (L’s) Ersatz Space is the class of all formal models M
-= (U, F) of L such that U is a pure set and M represents a material model.
+= (U, F) of L such that U is a pure set and M represents a material model
 
-* the elements of L’s Ersatz Space = ersatz models (for L).
+* the elements of L’s Ersatz Space = ersatz models (for L)
 
 Since the inventory of Logical Space consists of urelements, no material model is an
 ersatz model. On the other hand, every material model is represented by some ersatz
@@ -796,7 +805,7 @@ model and thus makes a vicarious appearance in Ersatz Space, which is why the la
 a whole may be seen as a representation of Logical Space. It should also be noted that,
 according to our definitions, the material models and the ersatz models do not exhaust
 the class of all formal models for a language; and that merely having a pure set as its
-universe does not make a formal model an ersatz model.
+universe does not make a formal model an ersatz model
 
 * Ersatz Space is far too big to form a set and therefore
   calls for a background theory that includes proper classes alongside ordinary
@@ -821,30 +830,30 @@ universe does not make a formal model an ersatz model.
   models M w and M w'
   the analogous implication (36) about the latter and their representations in
   Ersatz Space need not be true:
-(35) If w ≠ w', then M w ≠ M w .
+(35) If w ≠ w', then M w ≠ M w 
 (36) If M w ≠ M w' then |M w | ≅ ≠ |M w' | ≅
 
 * ie distinct material models may be represented by the same ersatz models
-  iff L allows for distinct, but isomorphic material models in the first place.
+  iff L allows for distinct, but isomorphic material models in the first place
   Discriminativity does not exclude this possibility: it only implies some
 extensional differences between any two material models; but these differences could be
-made up for by the replacements used in representing material models in Ersatz Space.
+made up for by the replacements used in representing material models in Ersatz Space
 * In order to guarantee a perfect match between Logical Space and Ersatz Space,
   a stronger condition on L is needed than discriminativity. The natural
 * completeness, w ≈ L w', which is defined like discriminativity, except
   * If w and w' are possible worlds and L is a language, then
     w is L-equivalent to w' iff ‖S‖ w = ‖S‖ w' , for any declarative sentence S
-  * iff no two distinct possible worlds w and w' are L-equivalent.
+  * iff no two distinct possible worlds w and w' are L-equivalent
   * not affected by replacements in that it
     only concerns the truth values of sentences
-    rather than the extensions of arbitrary expressions.
-(37) a. If w ≡ L w', then w ≈ L w'.
-  b. If L is complete, then L is discriminative.
+    rather than the extensions of arbitrary expressions
+(37) a. If w ≡ L w', then w ≈ L w'
+  b. If L is complete, then L is discriminative
   c. If L is complete and w ≠ w', then |M w | ≅ ≠ |M w' | ≅
     * ie via the isomorphicity classes, the Ersatz Space of a complete language
-      matches Logical Space.
-* => completeness plays a similar rôle for the adequacy of ersatz models as
-  does discriminativity in the case of material models.
+      matches Logical Space
+* => completeness plays a similar role for the adequacy of ersatz models as
+  does discriminativity in the case of material models
   * However, whereas discriminative languages are easy to find,
     completeness seems a much rarer property. Of course, if a language is
     incomplete, its
@@ -860,7 +869,7 @@ descriptive semantics goes, then, Ersatz Space does seem to earn its name. Howev
 as the reader will have noticed, its very definition still appears to be of no avail when
 it comes to soothing ontological worries: by employing the concept of representation,
 it depends on material models – and thus presupposes Logical Space. To overcome this
-* a definition of Ersatz Space is needed that does not rely on Logical Space.
+* a definition of Ersatz Space is needed that does not rely on Logical Space
   The usual strategy is one of approximation,
   starting out from a maximally wide model space and
   gradually restricting it by eliminating those formal models that do not
@@ -872,7 +881,7 @@ it depends on material models – and thus presupposes Logical Space. To overcom
 and identify it with the class of all pure models (for a given language L), i.e. all formal
 models whose universe is a pure set. It should be noted that
 * the concept of a pure model only depends on L’s syntax and type assignment,
-  both of which in principle may be given in terms of pure set theory.
+  both of which in principle may be given in terms of pure set theory
 
 In order to exploit Model Space for semantic purposes, the procedure for determining
 the extensions of expressions must be generalised from ersatz models to arbitrary pure
@@ -889,7 +898,7 @@ determiner _every_ as characterising the subset relation on a given universe U, 
 the latter is larger than any of the universes U w encountered in Logical Space; similarly,
 the extension of a quantifier phrase D N, where D is a determiner and N a count noun,
 can be determined by functional application – which, suitably restricted, is an invariant
-U-extension of type ((e,t),t),(e,t); etc.
+U-extension of type ((e,t),t),(e,t); etc
 
 At the end of the day, then, the formal models resemble their material and ersatz
 counterparts. In particular, the specification of extensions is strikingly similar:
@@ -897,18 +906,18 @@ counterparts. In particular, the specification of extensions is strikingly simil
   the extension of A relative to M – [[A]] M – is determined by the following
   induction (on the grammatical complexity of A):
 (i-a) [[and]] M = λu. λv. u × v
-...
-...
+..
+..
 ... where u∈{0, 1} and v∈{0, 1}
 (ii-a) [[every]] M = λP. λQ. ⊢P ⊆ Q⊣
-...
-...
+..
+..
 where P⊆U and Q⊆U
 (iii) [[A]] M = F w (A), if A∈N E
 (iv-a) [[D N ]] M = [[D]] M ([[N]] M )
   if D N is a quantifier phrase, where D is a quantificational determiner and N
   is a count noun;
-... ...
+... ..
 
 Given specifications of extensions in the style (38), one may start approximating the
 Ersatz Space of a language L by restricting its Model Space. A common strategy to this
@@ -918,16 +927,16 @@ Ersatz Space of a language L by restricting its Model Space. A common strategy t
 appropriate models for English that the extension of (39) be the truth value 1. For the
 sake of the example it may be assumed that the extension of a predicative adjective is a
 set of individuals and that it is passed on to the predicate (Copula + Adjective); cf. Heim
-& Kratzer (1998: 61ff).
-(39) No bachelor is married.
+& Kratzer (1998: 61ff)
+(39) No bachelor is married
 
 More generally, a set Σ of sentences of L may be used to characterise the class of all pure
 models M (for L) such that [[S]] M = 1, for all S∈Σ
 * Carnap (1952): sentences of a language L that are used to characterise the
   appropriateness of formal models L are called meaning postulates; and we will
-  * a set of sentences used for this purpose as as a postulate system.
+  * a set of sentences used for this purpose as as a postulate system
 * the truth of a meaning postulate like (39) may guarantee the truth or falsity
-  of certain other sentences: (40) Every bachelor is not married.
+  of certain other sentences: (40) Every bachelor is not married
   * Once (39) is adopted as a meaning postulate, there is no need to also take
   * need not be a general criterion for preferring one postulate system
 * the effect of a meaning postulate, or a postulate system, may be achieved by
@@ -937,7 +946,7 @@ models M (for L) such that [[S]] M = 1, for all S∈Σ
 * relation between the noun bachelor and the participle married (which we take
   * The relation is known as incompatibility and
     holds between any two expressions just in case
-    their extensions of some type (a,t) cannot overlap.
+    their extensions of some type (a,t) cannot overlap
 * any meaning postulate S can be replaced by a corresponding constraint on
   formal models to the effect that S come out true; and given a procedure for
   * this constraint can be given directly in terms of the extensions of the
@@ -947,20 +956,20 @@ models M (for L) such that [[S]] M = 1, for all S∈Σ
 * more global constraints may rule out pure models that do not belong to Ersatz
   Space for cardinality reasons. In general, then, the set-theoretic
   reconstruction of Logical Space consists in formulating suitable constraints
-  on the members of Model Space, i.e. the pure models.
+  on the members of Model Space, i.e. the pure models
 
 Taken together, these constraints define a class K of appropriate models (according to the
 constraints). Ideally, this class should coincide with Ersatz Space. The closer K gets to this
 ideal, and the more it coincides with Ersatz Space in semantically relevant aspects, the
 more descriptively adequate will K be. Thus, e.g., the set of K-valid sentences – those that
 are true according to all M∈K – should be the same as the set of sentences that are true
-throughout Logical Space.
+throughout Logical Space
 
 If two formal models are isomorphic, both represent precisely the same material
-models, and hence there is no reason for ruling out (or counting in) one but not the other.
+models, and hence there is no reason for ruling out (or counting in) one but not the other
 
 * meta-constraint on classes K of appropriate models:
-  (43) If M ≅ M', then M∈K iff M'∈K.
+  (43) If M ≅ M', then M∈K iff M'∈K
   * ie the class K of appropriate models is closed under isomorphism: if M and
   * as a consequence of (31), constraints formulated in terms of meaning
     postulates (or postulate systems) always satisfy (43): any two isomorphic
@@ -971,7 +980,7 @@ models, and hence there is no reason for ruling out (or counting in) one but not
     cardinality as U,
     there is an isomorphic model of the form M' = (U ', F ') – and hence
     any pure set whatsoever will be a member of some universe of an appropriate
-    formal model.
+    formal model
   * => no matter how closely a given system of constraints and/or meaning
     postulates may approximate Logical Space, it will never be able to pin down
     a specific model, let alone specific extensions of all expressions. In
@@ -982,14 +991,14 @@ models, and hence there is no reason for ruling out (or counting in) one but not
       by replacing [[A]] M with x (and simultaneously x with U, in case x∈U)
       – thereby preserving appropriateness, by (43). This only reflects the
       strategy of having inhabitants of Logical Space represented by arbitrary
-      set-theoretic objects and is thus hardly surprising.
+      set-theoretic objects and is thus hardly surprising
     * a similar line of thought does give rise to
-      interesting consequences for the relation between reference and truth.
+      interesting consequences for the relation between reference and truth
       This is the gist of the following permutation argument,
       * made famous by Putnam (1977, 1980) with predecessors including Newman
         (1928), Jeffrey (1964), Field (1975), and Wallace (1977);
         * see Devitt (1983), Lewis (1984), Abbott (1997), Williams (2005), and
-          Button (2011) for critical discussion of its impact.
+          Button (2011) for critical discussion of its impact
 Given a model M for a language L, the extensions according to any isomorphic
 model `M*` may be characterised directly by an inductive specification in terms of M, without
 mention of `M*`. For the present purposes, it suffices to consider the special case in which
@@ -1001,11 +1010,11 @@ extensions relative to `M*` entirely in terms of M:
   the permuted extension of A relative to M – //A// M – is determined by the
   following induction (on the grammatical complexity of A):
   (i-a) //and // M = λu. λv. u × v
-  ...
-  ...
+  ..
+  ..
   (ii-a) //every// M = λP. λQ. ⊢P ⊆ Q⊣
-  ...
-  ...
+  ..
+  ..
   (iii)
   ... where u∈{0,1} and v∈{0,1}
   where P⊆U and Q⊆U
@@ -1013,13 +1022,13 @@ extensions relative to `M*` entirely in terms of M:
   (iv-a) //D N// M = //D// M (//A// M )
   if D N is a quantifier phrase, where D is a quantificational determiner and N
   is a count noun;
-  ...
-  ...
+  ..
+  ..
 
 Obviously, `//A// M = π τ(A) ([[A]] M ) = [[A]] M*` , for any expression A of E. Moreover, there
 is a striking similariy between (44) and the specification (38) of the extensions relative
 to M. In fact, the only difference lies in clause (iii): according to (44), non-logical
-words are assigned the π-image of the U-extension they are assigned according to (38).
+words are assigned the π-image of the U-extension they are assigned according to (38)
 
 The formulation of (44iii) may suggest that the values //A// M somehow depend on the
 permutation π when of course, they are perfectly independent U-extensions in their
@@ -1027,26 +1036,26 @@ own right – just like the values [[A]] M : any instantiation of either (38iii)
 assign some specific U-extension to some specific expression. In particular, then, (44)
 is no more complicated or roundabout than (38); it is just different. Yet, as far as the
 specification of the truth values of sentences S of L is concerned, the two agree, since
-//S// M = π τ ([[S]] M ) = [[S]] M .
+//S// M = π τ ([[S]] M ) = [[S]] M 
 
 The construction (44) can also be carried out if M = M w is a material model. Of
 course, in this case the permutation model `M*` cannot be expected to be a material
-model too, but then again it is not needed for the definition of the //A// M -values anyway.
+model too, but then again it is not needed for the definition of the //A// M -values anyway
 
 All that is needed is a permutation π of the domain of w. (44) will then deliver exactly
 the same truth valuation of L as (38). The comparison between (44) and (38) thus illus-
 trates that truth is independent of reference in that the latter is not determined by the
 former. In particular, then, although the extensions of terms help determining the truth
-values of the sentences in which they occur, this rôle hopelessly underdetermines them:
+values of the sentences in which they occur, this role hopelessly underdetermines them:
 if reference is merely contribution to truth, then reference is arbitrary;
-else, reference has to be grounded independently.
+else, reference has to be grounded independently
 
 ## 3.2. Intensional Model Space 31
 
 * A formal ontology is a pair (W, Û), where
   * W is a non-empty set (the worlds according to (W, Û) and
   * Û is a function with domain W such that Û(w) is a non-empty set whenever
-    w∈W [= the individuals of w, according to (W, Û)].
+    w∈W [= the individuals of w, according to (W, Û)]
 * an intensional formal model (for L) is a quadruple M̂ = (W,Û, w*, F̂ ), where
   * (W, Û) is a formal ontology;
   * a member w* of W (= the actual world according to M̂); and
@@ -1055,19 +1064,19 @@ else, reference has to be grounded independently.
     (= the lexical interpretation function according to M̂)
 * intensional formal models : intensional material models :
   (extensional) formal models : (extensional) material models,
-  * replacing any dubious entities by arbitrary set-theoretic constructions.
+  * replacing any dubious entities by arbitrary set-theoretic constructions
   * And like the extensional ones, intensional formal models can be used to
     determine the extensions of arbitrary expressions. To see this, we may
     * adapt procedure (38) to intensional formal models M̂ for a more inclusive
-* necessarily expresses universal quantifi cation over possible worlds.
+* necessarily expresses universal quantifi cation over possible worlds
   * calling for a generalisation of the notion of logicality (as already sec 2)
   * characterisation in terms of replacements. Since extensions of
   * replacements also have to act simultaneously on all worlds and domains of a
 * the same lexical item may be interpreted as conjunction in one model and as
   disjunction in another one – and still count as logical
   * To rule out this possibility, a global notion of logicality is needed, and
-    can be defined in terms of (intensional) model isomorphisms.
-* logical words are assigned invariant intensions in the earlier, local sense.
+    can be defined in terms of (intensional) model isomorphisms
+* logical words are assigned invariant intensions in the earlier, local sense
 * Intensional Model Space. It is readily verifi ed that
   * each pure intensional model interprets the extensional part of the language
     in exactly the same way as a corresponding extensional model. It would thus
@@ -1090,7 +1099,7 @@ else, reference has to be grounded independently.
     expressions of non-extensional types, for which additional postulates may
     be formulated
   * eg it has been argued that, due to the intensionality of their subject
-    positions, certain verbs of change have extensions of type ((s,e),t); cf.
+    positions, certain verbs of change have extensions of type ((s,e),t); cf
     Montague (1973), Löbner (1979), Lasersohn (2005). The analyses try to
     explain
   * Partee’s Paradox, i.e. the failure of the inference from
@@ -1100,9 +1109,9 @@ else, reference has to be grounded independently.
     captured by adopting the following sentence as a meaning postulate – or by
     a corresponding meta-linguistic constraint:
 * logically independent of each other. Certainly logical independence is a
-  sense relation, holding between the expressions in virtue of their meaning.
+  sense relation, holding between the expressions in virtue of their meaning
   And even though it might not be particularly thrilling one, if semantic
-  theory strives for completeness, it should not miss it.
+  theory strives for completeness, it should not miss it
 
 ## 3.3. Variants 38
 
@@ -1117,11 +1126,11 @@ else, reference has to be grounded independently.
   * Janssen (1983) for technical details. At the same time,
   * these languages tend to be more expressive than the natural language
   * formulate more powerful restrictions on model space than the directly
-    expressible meaning postulates considered above.
+    expressible meaning postulates considered above
   * illustration of this technique may be found in Dowty (1979)
   * eg the property of being a referentially transparent (or first-order
     reducible) transitive verb can be expressed in type logic but not in
-    pertinent fragments of English; cf. Zimmermann (1985) for details.
+    pertinent fragments of English; cf. Zimmermann (1985) for details
 * Another respect in which traditional model-theoretic approaches to natural
   language semantics may diverge, concerns
   the location of logical material
@@ -1139,7 +1148,7 @@ An even more radical assimilation between (i) logical words and (ii) logical
 operations is obtained when the latter are represented by underlying
 ‘functional’ morphemes, which opens the possibility of keeping the logical
 combinations proper to a minimum. This approach is taken in LF-based
-type-driven interpretation, as made popular by Heim & Kratzer (1998).
+type-driven interpretation, as made popular by Heim & Kratzer (1998)
 
 ## 3.4. Mathematical Model Theory 39
 
@@ -1157,12 +1166,12 @@ type-driven interpretation, as made popular by Heim & Kratzer (1998).
     * => no first-order formula can express that the universe is infinite
       (though it may imply this) because such a formula would be implied by the
       set of (first-order expressible) sentences that say that there are at
-      least n objects, but not by any of its finite subsets.
+      least n objects, but not by any of its finite subsets
   * Löwenheim-Skolem Theorem, a set Σ of (closed) first order formulae that
     is true in a model with an infinite universe, is true in models with
     universes of arbitrary infinite cardinalities. In particular,
     * no collection of first-order formulae can express that the universe has a
-      particular infinite cardinality.
+      particular infinite cardinality
 * a fundamental result of abstract model theory due to Lindström (1969),
   the above two theorems characterise first-order logic in that
   any language exceeding its expressive power is bound to fail at least one of
@@ -1177,6 +1186,6 @@ type-driven interpretation, as made popular by Heim & Kratzer (1998).
   of losing the kinds of idealisations in the set-theoretic construction of
   denotations mentioned and motivated in Section 2;
   * a survey of the most fundamental results of higher-order model theory can
-    be found in van Benthem & Doets (1983).
+    be found in van Benthem & Doets (1983)
 
 # 4 Ref 39

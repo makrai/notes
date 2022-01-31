@@ -10,11 +10,12 @@ In Ways of Scope Taking. Springer (1997)
   * "prefixes" an expression `a` to a domain D and thereby assigns scope to it
     over D, irrespective of what `a` means, and irrespective of what operator
     may occur in D
-* two problems: the resulting interpretation may be incoherent, or
-  * coherent but not available for the string it is assigned to
-* Szabolcsi and Zwarts (1993) focus on the 1st case. Take a version of (1) that
+* two problems: the resulting interpretation may be
+  1. incoherent, or
+  2. coherent but not available for the string it is assigned to
+* Szabolcsi and Zwarts (1993) focus on the 1st case
   * wh-fronting
-  * weak island violations," this rule yields unacceptable results.  For
+  * weak island violations, this rule yields unacceptable results
   * the violation is semantic in nature
   * _How_ in (3b, c) and _who_ in (4b, c) ought to scope over domains D that
     they are unable to
@@ -22,11 +23,11 @@ In Ways of Scope Taking. Springer (1997)
   * the computation of the denotation of a factive context (resp negative contx)
     requires taking meets (resp complements)
   * these operations are not defined in join semi-lattices
-  * => manners and collectives cannot scope over such contexts. For the moment,
+  * => manners and collectives cannot scope over such contexts
 * the second case, which the present paper is concerned with
   * quantifiers in English often scope over operators that are
     higher in the surface syntactic hierarchy
-  * old account predicts that all quantifiers interact uniformly with all operators
+  * old account predicts that all quantifiers interact uniformly with all ops
   * hE, some but not all direct objects can scope over
     the subject (5), and over negation (6)
   * (5) Three referees read every/few abstract(s)
@@ -40,7 +41,7 @@ In Ways of Scope Taking. Springer (1997)
     the given form cannot carry the intended meaning
   * because the same `a`s are able to scope over the same `b`s in English when
     * they are originally higher in syntactic structure (7) or when
-    * they acquire such a higher position via overt fronting (8): (7) a. Few
+    * they acquire such a higher position via overt fronting
       (8) Few men did no one/every woman/two women like
 * Examples comparable to (8) are in fact standard in Hungarian
   * Hungarian disambiguates scope in surface structure (see below)
@@ -62,7 +63,7 @@ In Ways of Scope Taking. Springer (1997)
   * data from Hungarian, a language that "wears its LF on its sleeve,"
     * provide specific empirical support for Beghelli & Stowell
   * I propose that Beghelli and Stowell's LF, can be quite directly mapped onto
-    somewhat modifified Kamp and Reyle (1993) style Discourse Representations
+    somewhat modified Kamp and Reyle (1993) style Discourse Representations
     * The main concrete modification to be proposed pertains to
       widening the class of discourse referents
   * the Hungarian data will be shown to provide evidence that
@@ -81,22 +82,22 @@ In Ways of Scope Taking. Springer (1997)
 * The standard way to calculate the object wide scope, O > S reading of (10) is
   * form the set of things read by three referees and
     check whether every abstract is in that set
-  * this set is not the denotation of a surface syntactic constituent of the
+  * this set is not the denotation of a surface syntactic constituent
   * the analogous set can be used in calculating an O > S reading for (11), too
-    * hE, (11) does not readily admit an O > S reading. This suggests that
+    * hE, (11) does not readily admit an O > S reading =>
 * the O > S reading of (10) must be calculated in some alternative way
   that is available when the intended wide scope quantifier is, say, _every_
   but not when it is, say, _fewer than five abstracts_
-* Ben-Shalom proposes that inverse scope is effected by a specic binary quantifier
-  [O > S]
-  * (12) If S and O are generalized quantifiers and R is the relation denoted by a
+* Ben-Shalom proposes that inverse scope is effected by a specic
+  binary quantifier [O > S]
+  (12) If S and O are generalized quantifiers and R is the relation denoted by a
     transitive verb, the binary quantifier [O > S] is defined to operate as
     follows: For every a \in A S(R(a)), where A is some set determined by O
-  * Grab a set A determined by the quantifier denoted by the object and check, for
-    every element a of this set, whether it has the property that three
+  * Grab a set A determined by the quantifier denoted by the object and check,
+    for every element a of this set, whether it has the property that three
     referees read it
-  * The fact that Ben-Shalom formulates her proposal using a binary quantifier is
-    immaterial for our present concerns, so it will not be dwelt on
+  * The fact that Ben-Shalom formulates her proposal using a binary quantifier
+    is immaterial for our present concerns, so it will not be dwelt on
 * twofold procedural difference between the standard calculation of scope and
   the one encoded by [ O > S ]
   * On the standard account, we construct the set denoted by \lambda a S(R(a))
@@ -120,8 +121,8 @@ In Ways of Scope Taking. Springer (1997)
       that each a \in A walks."
 * According to Ben-Shalom, [O > S] captures the empirical facts correctly
   because the best inverse scope takers in English are indeed principal filters
-  * I will consider a wider range of quantifiers in a wider range of contexts, and
-    propose a somewhat similar account of them,
+  * I will consider a wider range of quantifiers in a wider range of contexts,
+    and propose a somewhat similar account of them,
     exploiting the fact that the strategy "Grab a witness set and check its
     elements for property P" generalizes exactly to the increasing quantifiers
 * Beghelli and Stowell: the overall picture of scope interaction is more complex
@@ -154,41 +155,46 @@ In Ways of Scope Taking. Springer (1997)
   * Indefinites may alternatively move to the specier of RefP
 * Modied numerals (more/fewer than/exactly six men) and
   indefinites whose noun is destressed)
-  * not move to either RefP, DistP, or ShareP. They
+  * not move to either RefP, DistP, or ShareP
   * just move to the appropriate agreement specier positions to receive Case
   * they easily take widest scope
     because AgrSP in English is higher than DistP and ShareP
 * indirect and direct object modified numerals happen to have their agreement
   positions quite low in the structure, and they scope accordingly
 * Scope relations arise in two ways
-  * simply follow from the hierarchy specied in (13). For instance, an
-    indefinite direct object may scope above a universal subject by moving into
-    RefP, which happens to be above DistP: (14) a. Every man read two of the
-  * the inverse reading of _Two of the men read every book_ comes about by
-    moving every book to DistP and two of the men to ShareP
+  * simply follow from the hierarchy specied in (13)
+    * eg an indefinite direct object may scope above a universal subject by
+      moving into RefP, which happens to be above DistP
+      (14) a. [Every man] read [two of the books]
+  * the inverse reading (<) of _Two of the men read every book_ comes about by
+    moving _every book_ to DistP and _two of the men_ to ShareP
   * Inverse scope may also be due to reconstruction: a phrase can be lowered
     into the position(s) of its trace, typically, into its VP-internal position
     * lowering is restricted to undoing semantically insignificant movement,
-      i.e. an expression can be lowered from its Case position but not from
-  * The converse is not possible: _Every man read more than three books_ does not
-    receive an inverse scope interpretation. Every man cannot undo its presence
-* There is a slight difference between (16) and _More than three men read more
-  than six books_
-  * Here inverse scope is very difficult but, in contrast to (16), can be forced
-    by context. Since more than three men as a subject can in general
-    reconstruct into its VP-internal position, this is predicted
+      i.e. an expression can be lowered from its Case position
+      but not from RefP, DistP, or ShareP.
+  * The converse is not possible: _Every man read more than three books_ does
+    not receive an inverse scope interpretation. Every man cannot undo
+* slight difference between (16) and _More than three men read more than six bs_
+  * Here inverse scope is
+    very difficult but, in contrast to (16), can be forced by context
+    Since more than three men as a subject can in general reconstruct into its
+    VP-internal position
 * Definites and bare indefinites do not move to DistP even when they are distri
   * their distributive interpretation is due to a silent operator comparable to
     floated _each_
   * Beghelli and Stowell call this "pseudo-distributivity."
 * Silent _each_ can apparently occur below AgrSP, ShareP, AgrIOP, and AgrOP, but
-  not below RefP. This captures the fact that even when direct object _three
-  books_ moves to RefP and is therefore referentially independent of subject
-  _two of the men_, it cannot make the latter referentially dependent, since
-  there is no distributive operator between the two positions
-* On the other hand, in _Two men read three of the books_ the property of having
-  read three of the books can be distributed over two men, because the latter
-  has a trace in AgrSP associated with silent each :
+  not below RefP
+  * This captures the fact that
+    even when direct object _three books_ moves to RefP and is therefore
+    referentially independent of subject _two of the men_,
+    it cannot make the latter referentially dependent,
+    since there is no distributive operator between the two positions
+* On the other hand, in _Two men read three of the books_
+  the property of having read three of the books
+  can be distributed over two men,
+  because the latter has a trace in AgrSP associated with silent each
 * Similarly, the direct object in RefP can distribute over a subject that recon-
   structs into VP, because it has a trace in AgrOP, and AgrOP may have silent
   _each_ associated with it
@@ -197,15 +203,15 @@ In Ways of Scope Taking. Springer (1997)
   * definites and bare indefinites is due to a separate distributive operator
     (silent _each_)
   * Once the distributive key and the distributive operator are separated, they
-    can move separately. This possibility is made crucial use of
+    can move separately
     * _Every man_ and _(the) two men_ are allowed to move upward unboundedly to
       a higher RefP,
       but the corresponding distributive operators, being heads or adverbs, stay
   * it is predicted that (20) has a de re reading,
     every/two woman < more than six men
     * as this property does not distribute
-    (20) More than six men imagine that every woman/two women will fall in love
-    with them
+    (20) More than six men imagine that
+      every woman/two women will fall in love with them
 * two facts underlie the traditional observation that "QR is clause-bounded"
   * Dist and _each_ do not move up
   * the QP's landing site in the higher clause, RefP, is itself not associated

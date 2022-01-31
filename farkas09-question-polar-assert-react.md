@@ -12,9 +12,9 @@ Donka F. Farkas, Kim B. Bruce
     confirming and reversing reactions
     * The common characteristics of assertions and polar questions are
       responsible for the fact that both allow these reactions;
-    * the differences between the two speech acts explain the different
-      contextual effects confirming and reversing moves have depending on
-      whether they react to an assertion or a polar question
+    * the differences between the two speech acts explain
+      the different contextual effects confirming and reversing moves have
+      depending on whether they react to an assertion or a polar question
   * distribution of a set of ‘polarity’ particles in Romanian
     in terms of the notions defined
   * a series of predictions concerning polarity particles across languages
@@ -24,11 +24,11 @@ Donka F. Farkas, Kim B. Bruce
 * organization
   2. the context structure we use
   3. a characterization of assertions and polar questions
-  4. a special type of reactions to assertions and polar questions that exhibits
-     the partial overlap we are interested in capturing
+  4. a special type of reactions to assertions and polar questions
+    that exhibits the partial overlap we are interested in capturing
   5. the distribution of a set of particles occuring in a subtype of such reacts
-* discourse structure is Stalnaker (1978), where it is suggested that
-  * common grounding (cd)
+* discourse structure is Stalnaker (1978)
+  * common ground (cd)
     * an ever changing background made up of a set of
       propositions already confirmed by the discourse participants
       * whose intersection is the context set (cs)
@@ -68,9 +68,9 @@ Donka F. Farkas, Kim B. Bruce
 * In (2) after Ben’s negative reaction can be settled only after either Ben or
   Anne retracts a commitment
 * formal properties <= The difference between the contextual effect of
-  contradicting an assertion and giving the ‘opposite’ answer to a polar
+  contradicting an assertion and giving the ‘opposite’ answer to a polar questi
   * eg Romanian, where the particle _ba_ is possible when contradicting a
-    positive assertion but not in a negative answer to a positive question:
+    positive assertion but not in a negative answer to a positive question
 * significant parallelisms and div between reactions to assert vs to polar qs
   * Our main goal in this paper is to capture this partial overlap
   * we also have to differentiate between
@@ -119,7 +119,7 @@ Donka F. Farkas, Kim B. Bruce
     * A has publicly committed to in the course of c up to t and which have
     * not (yet) become mutual commitments
   * The cg on the other hand, is that set of propositions that
-    * have been agreed upon by all participants in c at t together with those th
+    * have been agreed upon by all participants in c at t and those that
     * represent the shared background knowledge of the discourse participants
 * Having the cg as a separate component allows us to capture
   * proposing to add the propositionl content of the asserted sentence to the cg
@@ -162,12 +162,12 @@ Donka F. Farkas, Kim B. Bruce
     neither p nor ¬p should be in the cg
   * In our model, p \in `DC_A`, ¬p \in `DC_B` and p, ¬p !\in cg
   * consistent cg and coherent particips even though `DC_A ∪ DC_B` is not consi
-  * the level that counts for purposes of presupposition satisfaction in such
-    cases is the cg rather than either of the participant’s commitment set
+  * the level that counts for purposes of presupposition satisfaction 
+    is the cg rather than either of the participant’s commitment set
     * eg, after having agreed to disagree on whether Sam is home, it would be
       infelicitous for A to say _Since Sam is home, the children are not alone_
       even if A has previously committed to Sam being home
-* Ginzburg (1996), Roberts (1996), and Büring (2003), in having
+* Ginzburg (1996), Roberts (1996), and Büring (2003): there is
   a discourse component that records the questions under discussion
   * We re-christen it the Table and assume that
     the items on it are syntactic objects paired with their denotations
@@ -190,8 +190,8 @@ Donka F. Farkas, Kim B. Bruce
   context states that can/not serve as natural endpoints of a discourse
   * As long as there are items on the Table, there are issues
 * two fundamental engines that drive conversations are the need to
-  * increase the cg. drives participants to place items on the Table;
-  * reach a stable state. drives them to take the necessary steps to remove these
+  * increase the cg: drives participants to place items on the Table;
+  * reach a stable state: drives them to take steps to remove these
     * in such a way as to increase the cg
   * novelty: we attempt to capture these twin goals by assuming that
     every conversational move that places an item on the Table is associated
@@ -205,7 +205,7 @@ Donka F. Farkas, Kim B. Bruce
     simultaneously projects a set of future common grounds
     relative to which the issue on the Table is decided
   * These projected sets are supersets of the current cg
-  * the projected set (ps) is represent in a separate component
+  * the projected set (ps) is a separate component
   * an assertion projects confirmation in that
     it projects a future common ground that includes the asserted proposition
   * A question projects resolution in the sense that
@@ -244,7 +244,7 @@ Donka F. Farkas, Kim B. Bruce
 * a conversation is in crisis if its cg is inconsistent or if
   all the sets in its ps are inconsistent
   * Having at least one consistent set in the ps means that
-    there are canonical moves that lead to emptying the Table
+    there are __canonical__ moves that lead to emptying the Table
     while at the same time reaching a consistent cg
 * For the matters we discuss here, no need for further additions to context stru
   * such as the agendas of participants or
@@ -276,7 +276,7 @@ Donka F. Farkas, Kim B. Bruce
   possible common grounds) and let
   P = {p 1,..., p m} be a set of propositions
   Then define ps ∪ P = {cg i ∪ {p j} | 1 ≤ i ≤ n, 1 ≤ j ≤ m} − {cg' | cg' is
-  inconsistent}. Thus
+  inconsistent}
   * each new set is formed by adding one of the elements of P to an existing
     `cg_i`. At the end, any new sets that are inconsistent are discarded
   * assume an operator that rebuilds the projected set ps from the current cg
@@ -295,7 +295,7 @@ Donka F. Farkas, Kim B. Bruce
 ## 3.1 Default Assertions
 
 * include assertions in the repertory of speech acts
-  * many subtypes of assertions, and the complex issue of drawing their typology
+  * many subtypes of assertions, and their complex typology
   * default assertion is performed when a participant X utters
     a declarative sentence S with falling intonation that not place specific
     demands on the input context
@@ -303,8 +303,8 @@ Donka F. Farkas, Kim B. Bruce
     ‘rising declaratives’ as well as assertions followed by interrogative tags
 * declarative and interrogative sentences are distinguished by
   the sentential features [D] and [I] respectively
-  * sentential markers because it is crucial to what follows for the sentence
-    radical to which they attach to be accessible in subsequent discourse
+  * sentential markers because it is crucial to what follows for [the sentence
+    radical to which they attach to be accessible in subsequent discourse]
   * Hamblin (1971): the denotation of a declarative sentence S[D] is the
     singleton set containing the proposition denoted by its sentence radical
 * Krifka (2001) (see also Ginzburg (forthcoming)) in assuming that
@@ -313,9 +313,9 @@ Donka F. Farkas, Kim B. Bruce
   * the default assertion operator A is a function from an input context `K_i`
     to an output context `K_o`, as in (9), where `a` is the author of the assert
   * `DC_a,o` and `DC_a,i` are a’s output and input context discourse commitments,
-  *  `T_o`, `T_i` are the output and input Table, respectively:
+  * `T_o`, `T_i` are the output and input Table, respectively:
 (9) `A(S[D], a, K_i) = K_o` such that
-  * `DC_a,o = DC_a,i` ∪ {p}  (common to all types of assertions, default or not)
+  * `DC_a,o = DC_a,i ∪ {p}`  (common to all types of assertions, default or not)
   * `T_o = push(<S[D]; {p}>, T_i)`
   * `ps_o = ps_i ∪ {p}`
 * A default assertion then
@@ -328,10 +328,10 @@ Donka F. Farkas, Kim B. Bruce
 * yields an output context that is biased in favor of confirmation
 * The changes A brings about echo those in Poesio & Traum (1998), where an
   assertion is defined as committing the speaker to the belief in its
-  propositional content, while simultaneously attempting to get the addressee to
-  believe that content as well
+  propositional content, while simultaneously
+  attempting to get the addressee to believe that content as well
   * The main difference is that we are considering here changes triggered by
-    particular linguistic forms with target particular conversational components
+    particular linguistic forms that target particular conversational components
     * independent of participants’ actual beliefs and intentions
   * the participant may in fact aim at provoking her interlocutor to contradict,
     misleading an eavesdropper or have other complex agendas
@@ -355,7 +355,7 @@ Donka F. Farkas, Kim B. Bruce
   * In our approach hE it diffs how the issue is raised by an assert/polar quest
   * similarly: addition of the asserted proposition to the author’s discourse
     commitment list is the essential feature of declarative updates
-* separating confirm from all other possible moves that follow a default assert
+* separating confirmatn vs all other possible moves that follow a default assert
   * a feature we exploit below in capturing differences between reactions to
     assertions and reactions to polar questions
 * default assertions may
@@ -366,11 +366,11 @@ Donka F. Farkas, Kim B. Bruce
     * veridicality is crucial in Asher & Reese (2007)
 * assertions, as well as questions and other speech acts, are
   associated not only with literal content but with implicated content as well
-  * implicated content is added on the Table conjoined with but separated from
-    the literal content
+  * implicated content is added on the Table
+    conjoined with but separated from the literal content
     making it possible for further moves to react to both implicated and literal
   * One difference between the two types of content is that
-    only literal content is associated with syntactic material on the Table, and
+    only literal content is associated with syntactic material on the Table
     => we predict differences between them in discourse ellipsis
 
 ## 3.2 Default Polar Questions 10
@@ -399,11 +399,11 @@ Donka F. Farkas, Kim B. Bruce
   * `T_o = push(<S[I]; {p, ¬p}>, T_i)`
   * `ps_o = ps_i ∪{p, ¬p}`
 * The context state after a default polar question is inquisitive [kíváncsi]
-  with respect to the denotation of the sentence radical the move has placed on
-  the Table
+  with respect to
+  the denotation of the sentence radical the move has placed on the Table
   because the ps contains both future common grounds to which p/\neg p was added
 * The most immediate way in which such a context is returned to a stable state
-  * the addressee providing a complete direct answer to the question followed by
+  * the addressee providing a complete direct answer to the question
   * a confirmation of this answer by the participants in the conversation
   * leads to the addition of the answer to the cg
   * getting the question removed from the Table
@@ -415,9 +415,9 @@ Donka F. Farkas, Kim B. Bruce
       (13) Isn’t Sam home?
     * have been treated as involving some sort of pre-existing bias
     * footnote: questions that introduce strong bias are non-default
-      * We come back to weak bias involved in positive and in inner negation
-        polar questions in Section 4.2
-    * in favor of the proposition in the scope of the negative operator, i.e.,
+      * We come back to weak bias in positive and in inner negation polar quests
+        in Section 4.2
+    * in favor of the proposition in the scope of the negative operator
     * issue is much debated (van Rooy & Safarova (2003), Romero & Han (2004))
 * the two speech acts we are concerned with in this paper contrast in
   both whether they affect author commitment and in how they affect the ps
@@ -426,8 +426,8 @@ Donka F. Farkas, Kim B. Bruce
   * Non-default assertions and non-default polar questions can depart from their
     default counterparts in either property
 * non-default questions
-  * The most often discussed are those involving some bias
-  * indicates that
+  1. The most often discussed are those involving some bias
+  2. indicates that
     settling the issue is not necessarily a projected conversational future, and
     therefore that answering the question is optional
     * In Romanian, such questions are signaled by the particle _oare_
@@ -474,38 +474,38 @@ Donka F. Farkas, Kim B. Bruce
   commitment list of each participant
 * auxiliary move M 0
   * adds the proposition that is present on each commitment list to the cg and
-  * removes it from individual commitment lists. We assume that if any of the
-    propositions in the denotation of an item on the Table are
+  * removes it from individual commitment lists
 * Assertion confirmation can be signaled in a variety of linguistic and
-  non-linguistic ways. One can nod, say uh huh, sure, right, you bet, yup, etc.
+  non-linguistic ways. One can nod, say uh huh, sure, right, you bet, yup, etc
   * also by reasserting the asserted proposition, as in (18),
-    using a more or less truncated form.
-    * responding assertion and we discuss it in detail in the next section.
-  * some other ways of indicating assertion confirmation involve implicature.
-    (For discussion, see Walker (1996).) Note that assertion
-  * may be left unsignaled altogether. This is, we claim
+    using a more or less truncated form
+    * we discuss responding assertion in detail in the next section
+  * some other ways of indicating assertion confirmation involve implicature
+    (For discussion, see Walker (1996))
+  * may be left unsignaled altogether
     * unsurprising given the default nature of the move, under the natural
     * Silence can be seen as implicating confirmation
-      based on Walker’s Collaborative Principle.
-    * In what follows we only deal with overt assertion confirmation moves.
+      based on Walker’s Collaborative Principle
+    * In what follows we only deal with overt assertion confirmation moves
 * Another way of deciding the issue for the author of the reactive move is to
-  reverse the asserted proposition in toto or partially. We call assertion
+  reverse the asserted proposition in toto or partially
   * total or partial denial
-  (20)  Anne: Mary ordered chicken yesterday.
-        Ben: No, she didn’t./No, it was beef.
+  (20)  Anne: Mary ordered chicken yesterday
+        Ben: No, she didn’t./No, it was beef
   * highly marked and therefore they must be explicit and must be signaled,
-    * Walker (1996) argues, as early as possible. As already mentioned in Section
+    * Walker (1996) argues, as early as possible
     * marked because the proposition the author of a denial commits to cannot
-      become a joint commitment in a coherent discourse without retraction on
+      become a joint commitment in a coherent discourse without retraction
       => therefore the issue placed on the Table by the initial assertion
-      cannot be removed in a canonical way.
-  * We restrict our attention here to denials expressed by an assertion, as in
+      cannot be removed in a canonical way
+  * We restrict our attention here to denials expressed by an assertion
   * We narrow our focus further to total denials
-    * The starkest form of total denial is to assert the opposite of the
-    * may be performed by assertions, as was the case in our example, or by
+    * The starkest form of total denial is to assert the opposite
+    * may be performed by
+      * assertions, as was the case in our example, or by
       * reversing markers such as no way, definitely not, etc
       * Denying responding assertions, exemplified by Ben’s assertion above will
-        be examined in detail in the next subsection.
+        be examined in detail in the next subsection
   * one can eventually reach a stable state in one of two ways: 
     * one of the participants retracts their assertion; or 
     * the participants ‘agree to disagree’
@@ -513,26 +513,26 @@ Donka F. Farkas, Kim B. Bruce
       * it underscores the need to separate participant commitments from the cg,
       * the complexities raised by retractions go beyond the scope of this paper
   * ‘agreeing to disagree’ involves
-    removing hS[D]; {p}i and hS 0 [D]; {¬p}i from the Table
-    without removing either p or ¬p from the relevant commitment lists. Each
-    * neither p nor ¬p is added to the cg.
+    removing <S[D]; {p}> and <S 0 [D]; {¬p}> from the Table
+    without removing either p or ¬p from the relevant commitment lists
+    * neither p nor ¬p is added to the cg
     * The common ground in K 5 is identical to the common ground in K 4 , K 3 ,
-      and even K 1 , the context state that served as input to the move in which
+      and even K 1 , the context state that served as input to the D move
       * Under the assumption that that common ground, s 4 , was consistent and
         that it was consistent with both p and ¬p, the context state K 5 is
         consistent at every level and therefore the conversation is no longer in
-        crisis, even though the commitment lists of the two participants in K 5
+        crisis
     * usually proposed by one of the participants by uttering an imperative such
-      as Let’s agree to disagree/Let’s not pursue this further. It is carried
+      as Let’s agree to disagree/Let’s not pursue this further
       * after the other participant(s) agree to comply with the imperative
       * The imperative in this case is special in that compliance with it
-        involves a change in the context state of the conversation.
+        involves a change in the context state of the conversation
 
 ## 4.2 Confirming and reversing a polar question 15
 
 * polar question confirmation
   * the move that reacts to a polar question by committing the author to the
-    propositional content of the sentence radical S on the Table.
+    propositional content of the sentence radical S on the Table
   * similar to assertion confirmation in that
     the author of such a move commits to the propositional content of the
     sentence radical on the Table
@@ -559,14 +559,14 @@ Donka F. Farkas, Kim B. Bruce
   * Generalizing over what is reversals of assertions and polar questions we
     define a move type we call __reversing__ as in (29):
     * simpler than reversing moves
-      because the relation they involve is identity rather than complementation.
+      because the relation they involve is identity rather than complementation
       ie, the answers polar questions project are not identical even in non-bias
       since confirming answers are less marked 
     => further distinguish positive and negative polar questions
     * polar questions involve a weak bias towards the least marked answer we
     * weak bias of positive polar questions towards a positive answer, and
     * the weak bias of negative polar questions towards the negative answer
-    * noticed in Rooy & Safarova (2003).
+    * noticed in Rooy & Safarova (2003)
 * agree not to pursue a question if there is no agreement on an answer,
   * a non-canonical way of removing an assertion from the Table, one can
   * removing it from the Table without having resolved it. Such a move is
@@ -577,7 +577,7 @@ Donka F. Farkas, Kim B. Bruce
 ## 4.3 Responses to assertions vs. responses to polar questions 18
 
 * responding assertions those assertions that perform a responding move, and
-  initiating assertions those subtypes of assertions that are not responding.
+  initiating assertions those subtypes of assertions that are not responding
 * Since initiating assertions and polar questions place an issue on the Table in
   the form of a proposition-denoting sentence radical, moves that react to them
   can be responding and therefore confirming or reversing. Since
@@ -592,7 +592,7 @@ Donka F. Farkas, Kim B. Bruce
   * confirmation in the case of assertions/polar qs amounts to agreement/not
   * reversing in the case of assertion/polar questions, amounts to denial/not
   => partial overlap in the form of responding moves reacting to either
-  * We expect overlap as far as the responding nature of the move is concerned.
+  * We expect overlap as far as the responding nature of the move is concerned
   * diffs should be connected to the diffs in the state of the input context to
   * We discuss these predictions in more detail in the next section
 
