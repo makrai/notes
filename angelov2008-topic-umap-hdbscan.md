@@ -4,27 +4,28 @@ Cite as: 	arXiv:2008.09470 [cs.CL]
 
 https://github.com/ddangelov/Top2Vec
 
+# Abstract
+
 * Topic modeling is used for discovering latent semantic structure in a large
   collection of documents
 * The most widely used methods are probabilistic generative models
   * Latent Dirichlet Allocation and Probabilistic Latent Semantic Analysis
-  * weaknesses. In order to achieve optimal results they
+  * weaknesses
     * often require the number of topics to be known,
     * custom stop-word lists, stemming, and lemmatization. Additionally these
-    * bag-of-words representation of documents which ignore the ordering and
-* Distributed representations of documents and words have gained popularity due
-* 𝚝𝚘𝚙𝟸𝚟𝚎𝚌, which leverages joint document and word semantic embedding to find
-  topic vectors. This model does not require stop-word lists, stemming or
-  lemmatization, and it automatically finds the number of topics. The resulting
-  topic vectors are jointly embedded with the document and word vectors with
-  distance between them representing semantic similarity. Our experiments
-  demonstrate that 𝚝𝚘𝚙𝟸𝚟𝚎𝚌 finds topics which are significantly more
-  informative and representative of the corpus trained on than probabilistic
-  generative models
+    * bag-of-words representation of documents which ignore the ordering
+* Distributed representations of documents and words have gained popularity
+* 𝚝𝚘𝚙𝟸𝚟𝚎𝚌 leverages joint document and word semantic embedding, find topic vec
+  * not require stop-word lists, stemming or lemmatization, and it
+    automatically finds the number of topics
+  * topic vectors are jointly embedded with the document and word vectors with
+* experiments demonstrate that 𝚝𝚘𝚙𝟸𝚟𝚎𝚌 finds topics which are significantly
+  more informative and representative of the corpus trained on than
+  probabilistic generative models
 
 # 2 Model Description
 
-## Find Number of Topics
+## 2.2 Find Number of Topics
 
 * In order find the dense areas of documents in the semantic space,
   density based clustering is used on the document vectors, specificall HDBSCAN
@@ -36,7 +37,7 @@ https://github.com/ddangelov/Top2Vec
 
 ### 2.2.1 Low Dimensional Document Embedding
 
-* UMAP has several hyper-parameters that determine how it performs dimension
+* UMAP has several hyper-parameters
   * Perhaps the most important parameter is the number of nearest neighbours,
     which controls the balance between preserving global structure versus local
     * Larger values put more emphasis on global over local structure
@@ -47,27 +48,27 @@ https://github.com/ddangelov/Top2Vec
   * Another related parameter is the distance metric, which is used to measure
     the distance between points in the high dimensional space. The often used
     distance metric for the document vectors is cosine similarity [8, 9],
-  * embedding dimension must be chosen; we find
-    * 5 dimensions to give the best results for density based clustering
+  * embedding dimension must be chosen
+    * 5 dimensions give the best results for density based clustering
 
 ### 2.2.2 Find Dense Clusters of Documents
 
 * The main hyper-parameter that needs be chosen for HDBSCAN is
-  minimum cluster size; this parameter is at the core of how the algorithm
-  finds clusters of varying density [26]. This parameter represents the
-  smallest size that should be considered a cluster by the algorithm
-  * 15 gives the best results in our experiments, as larger
-  * values have a higher chance of merging unrelated document clusters
+  minimum cluster size
+  * at the core of how the algorithm finds clusters of varying density [26]
+  * represents the smallest size that should be considered a cluster
+  * 15 gives the best results in our experiments
+  * larger values have a higher chance of merging unrelated document clusters
 
 ## 2.3 Calculate Topic Vectors
 
 ### 2.3.1 Calculate Centroids in Original Dimensional Space
 
-* There are a number of ways that the topic vector can be calculated from the
+* There are a number of ways that the topic vector can be calculated
   * The simplest method is to calculate the centroid, i.e. the arithmetic mean
   * other reasonable options such as the
     * geometric mean or
     * using probabilities from the confidence of clusters created by HDBSCAN
-* these techniques and found that they resulted in very similar topic vectors,
-  with almost identical nearest-neighbour word vectors.  We speculate that this
-  * may be due to the sparsity of the high dimensional space. Therefore, we
+* these techniques resulted in very similar topic vectors, 
+  * almost identical nearest-neighbour word vectors
+  * may be due to the sparsity of the high dimensional space
