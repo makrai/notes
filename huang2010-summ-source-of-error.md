@@ -15,9 +15,8 @@ We release the
     * under similar settings, extractive summarizers are in general better than
       their abstractive counterparts thanks to strength in faithfulness and
       factual-consistency;
-    * milestone techniques such as copy, coverage and hybrid
-      extractive/abstractive methods do bring specific improvements but also
-      demonstrate limitations;
+    * milestone techniques such as copy, coverage and hybrid extractive/abstive
+      methods do bring specific improvements but also demonstrate limitations;
     * pre-training techniques, and in particular sequence-to-sequence
       pre-training, are highly effective for improving text summarization, with
       BART giving the best results
