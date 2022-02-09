@@ -180,3 +180,29 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   if its accuracy at the end of training is
   less or equal to that of a majority classifier on the respective dataset
 * The majority baselines for all tasks are found in Section 7.2 in the Appendix
+
+# 4 Investigating previous hypotheses for fine-tuning instability 3
+
+# 5 Disentangling optimization and generalization in fine-tuning instability 5
+
+# 6 A simple but hard-to-beat baseline for fine-tuning bert
+
+# Conclusions
+
+# APPENDIX
+
+## 7.1 Alternative notions of stability
+
+## 7.2 Task statistics
+
+## 7.3 Hyperparameters
+
+## 7.4 Ablation studies
+
+## 7.5 Additional gradient norm visualizations
+
+## 7.6 Loss surfaces
+
+## 7.7 Training curves
+
+## 7.8 Additional fine-tuning results
