@@ -13,7 +13,7 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * catastrophic forgetting and small size of the fine-tuning datasets
 * we show that both hypotheses fail to explain the fine-tuning instability
   * we analyze BERT, RoBERTa, and ALBERT,
-    fine-tuned on commonly used datasets from the GLUE benchmark, and show that
+    fine-tuned on commonly used datasets from the GLUE benchmark
   * instability is caused by
     optimization difficulties that lead to vanishing gradients
   * the remaining variance of the downstream task performance can be attributed
@@ -28,7 +28,7 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * Pre-trained transformer-based masked language models
   * such as BERT (Devlin+ 2019), RoBERTa (Liu+ 2019), and ALBERT (Lan+ 2020)
   * fine-tuning
-    * the standard recipe for using such models typically
+    * the standard recipe for using such models:
     * training a pre-trained model for a few epochs on a supervised downstream
     * impressive empirical results, dominating a large variety of English NLP
       benchmarks such as GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a)
@@ -43,11 +43,11 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * Few methods have been proposed to solve the observed instability
   (Phang+ 2018; Lee+ 2020)
   * no sufficient understanding of why fine-tuning is prone to such failure
-  * The goal of this work is to address this shortcoming. More specifically
+  * The goal of this work is to address this shortcoming
   * Why is fine-tuning prone to failures and how can we improve its stability?
 * We start by investigating two common hypotheses for fine-tuning instability:
   * catastrophic forgetting and small size of the fine-tuning datasets
-  * demonstrate that both hypotheses fail to explain fine-tuning instability
+  * both hypotheses fail to explain fine-tuning instability
   * investigate fine-tuning failures on datasets from GLUE
     * fine-tuning instability can be decomposed into two separate aspects:
       * optimization difficulties early in training,
@@ -55,33 +55,32 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
       * differences in generalization late in training,
         characterized by a large variance of development set accuracy for runs
         with almost equivalent training loss
-  * a simple but strong baseline for fine-tuning pre-trained language models
-    * significantly improves the fine-tuning stability compared to previous wor
-    * Figure 1:
-      * very stable results with very concentrated development set performance
-        over 25 different random seeds across all three datasets on BERT
-      * significantly outperform the recently proposed approach of Lee+ (2020)
-        in terms of fine-tuning stability
-  * our findings apply also to more recent pre-trained models
-    such as RoBERTa and ALBERT
+* a simple but strong baseline for fine-tuning pre-trained language models
+  * significantly improves the fine-tuning stability compared to previous work
+  * Figure 1:
+    * very stable results with very concentrated development set performance
+      over 25 different random seeds across all three datasets on BERT
+    * significantly outperform the recently proposed approach of Lee+ (2020)
+      in terms of fine-tuning stability
+* our findings apply also to more recent pre-trained models
+  such as RoBERTa and ALBERT
 
 # 2 Related work
 
-* The fine-tuning instability of BERT has been pointed out in various studies
+* fine-tuning instability of BERT pointed out
   * Devlin+ (2019)
     * instabilities when fine-tuning BERT LARGE on small datasets and
-    * resort to performing multiple restarts of fine-tuning and selecting the
-      model that performs best on the development set
+    * resort to performing multiple restarts of fine-tuning and
+      selecting the model that performs best on the development set
   * Dodge+ (2020)
     * a large-scale empirical investig of the fine-tuning instability of BERT
     * dramatic variations in fine-tuning accuracy across multiple restarts
     * it may be related to the choice of random seed and the dataset size
-* Few approaches have been proposed to directly address the fine-tuning instab
-  * Phang+ (2018) study intermediate task training (STILTS) before fine-tuning
+* directly address the fine-tuning instab, few approaches have been proposed
+  * Phang+ (2018) intermediate task training (STILTS) before fine-tuning
     * goal: improving performance on the GLUE benchmark
     * their proposed method leads to improved fine-tuning stability
-    * hE, due to the intermediate task training, their work is
-      not directly comparable to ours
+    * not directly comparable to our work
   * Lee+ (2020) propose a new regularization technique termed Mixout
     * improves stability during fine-tuning
     * they attribute it to the prevention of catastrophic forgetting
@@ -146,7 +145,7 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
           strongly-featured observations, your model's initial training can
           skew badly toward those features -- or worse, toward incidental
           features that aren't truly related to the topic at all
-        * Warm-up is a way to reduce the primacy effect of the early examples.
+        * Warm-up is a way to reduce the primacy effect of the early examples
         * Without it, you may need to run a few extra epochs to get the
           convergence desired, as the model un-trains those early superstitions
     * linearly decreased to 0 afterward
@@ -154,12 +153,12 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * 3 epochs on all datasets and global gradient clipping
   * the AdamW optimizer (Loshchilov and Hutter, 2019) without bias correction
 * We not show results for BERT BASE
-  since previous works observed no instability when fine-tuning BERT BASE
-  which we also confirmed in our experiments
+  since no instability when fine-tuning BERT BASE
+  (both previous works and we observed this)
 * we show additional results on
   RoBERTa LARGE (Liu+ 2019) and ALBERT LARGE-V2 (Lan+ 2020)
   using the same fine-tuning strategy
-  * compared to BERT, both RoBERTa and ALBERT have slightly diff hyperparams.
+  * compared to BERT, both RoBERTa and ALBERT have slightly diff hyperparams
     * RoBERTa uses weight decay with λ = 0.1 and no gradient clipping, and
       ALBERT does not use dropout
     * A detailed list of all default hyperparameters for all models: sec 7.3
@@ -171,7 +170,7 @@ Code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   standard deviation of the fine-tuning performance (measured, e.g., in terms
   of accuracy, MCC or F 1 score) over the randomness of an algorithm
 * we measure fine-tuning stability using the development sets from GLUE
-  * following previous works (Phang+ 2018; Dodge+ 2020; Lee+ 2020) 
+  * following previous works (Phang+ 2018; Dodge+ 2020; Lee+ 2020)
 * We discuss alternative notions of stability in Section 7.1 in the Appendix
 
 ### Failed runs
