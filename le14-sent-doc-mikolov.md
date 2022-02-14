@@ -1,10 +1,12 @@
-Quoc Le and Tomas Mikolov
 Distributed Representations of Sentences and Documents
+Quoc Le and Tomas Mikolov
 31 st International Conference on Machine Learning, 2014
+
+[in gensim](https://radimrehurek.com/gensim/models/doc2vec.html)
 
 # Abstract
 
-* we achieve new SOTA on several text classification and sentiment analysis ts
+* we achieve new SOTA on several text classification and sentiment analysis task
 
 # Introduction
 
