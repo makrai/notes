@@ -4,13 +4,14 @@ Charles H. Martin, Tongsu (Serena) Peng, & Michael W. Mahoney
 Nature Communications volume 12, Article number: 4122 (2021)
 
 https://github.com/CalculatedContent/ww-trends-2020
+
 # Abstract
 
 * neural network models (pre)trained by someone else
   * no access to training data or test data
   * one may not know details about the model, e.g., the specifics of the
     training data, the loss function, the hyperparameter values, how reguled
-* say anything about the expected performance or quality of the models
+* say something about the expected performance or quality of the models
 * we: a detailed meta-anal of hundreds of publicly available pretrained models
   * norm-based capacity control metrics as well as power law based metrics from
     the recently-developed Theory of Heavy-Tailed Self Regularization

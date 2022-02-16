@@ -4,7 +4,7 @@ EMNLP 2021 arXiv:2108.12284 [cs.LG]
 
 https://github.com/robertcsordas/ transformer_generalization
 
-* Recently, many datasets have been proposed
+* Recently, many datasets proposed
   to test the systematic generalization ability of neural networks
   * The companion baseline Transformers,
     typically trained with default hyper-parameters from standard tasks, are
@@ -12,7 +12,7 @@ https://github.com/robertcsordas/ transformer_generalization
 * we demonstrate that by revisiting
   model configurations as basic as scaling of embeddings, early stopping,
   relative positional embedding, and Universal Transformer variants,
-  we can drastically improve the performance of Transformers on systematic gene
+  we can drastically improve the performance of Transformers on systematic genl
   * improvements on five popular datasets:
     SCAN, CFQ, PCFG, COGS, and Mathematics dataset
   * improve accuracy from 50% to 85% on the PCFG productivity split, and from

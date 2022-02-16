@@ -1,4 +1,5 @@
-Pruning Redundant Mappings in Transformer Models via Spectral-Normalized Identity Prior
+Pruning Redundant Mappings in Transformer Models
+  via Spectral-Normalized Identity Prior
 Zi Lin, Jeremiah Zhe Liu, Zi Yang, Nan Hua, Dan Roth
 Findings of EMNLP 2020
 

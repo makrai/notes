@@ -8,7 +8,7 @@ William L. Hamilton
 * graph representation learning, including techniques for
   * deep graph embeddings,
   * generalizations of convolutional neural networks to graph-structured data,
-  * neural message-passing approaches inspired by belief propagation. These
+  * neural message-passing approaches inspired by belief propagation
 * led to new SOTA results in chemical synthesis, 3D-vision,
   recommender systems, question answering, and social network analysis
 * this book: a synthesis and overview of graph representation learning

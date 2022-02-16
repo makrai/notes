@@ -6,16 +6,16 @@ AAAI 2021 arXiv:1910.04209 [cs.LG]
 
 * Adaptive optimization algorithms such as Adam: widely used in deep learning
   * stability often improved with a warmup schedule for the learning rate
-  * difficulty of choosing and tuning warmup schedules, recent work proposes
+  * difficulty of choosing and tuning warmup schedules
   * automatic variance rectification of Adam's adaptive learning rate RAdam
     * surpasses the vanilla Adam algorithm and reduces the need for expensive
-      tuning of Adam with warmup. In this work,
+      tuning of Adam with warmup
 * we refute [disprove] this analysis and provide an
   * alternative explanation for the necessity of warmup based on the magnitude
     of the update term, which is of greater relevance to training stability
-* We then provide some "rule-of-thumb" warmup schedules, and we demonstrate
+* We then provide some "rule-of-thumb" warmup schedules
   * simple untuned warmup of Adam performs more-or-less identically to RAdam in
-    typical practical settings. We
+    typical practical settings
   * suggesting that practitioners stick to linear warmup with Adam, with a
     sensible default being linear warmup over 2/(1−β_2) training iterations
 
