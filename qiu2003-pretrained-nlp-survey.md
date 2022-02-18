@@ -529,12 +529,13 @@ arXiv:2003.08271 [cs.CL]
 
 ## Upper Bound of PTMs by longer training and larger corpus
 
-* e.g. Megatron-LM [144]: 8.3 billion parameters, 72 Transformer layers with a
-  hidden size of 3072 and 32 attention heads) and
-  Turing-NLG (17 billion parameters, 78 Transformer layers with a hidden size
-  of 4256 and 28 attention heads)
-* needs techniques such as distributed training, mixed precision, gradient
-  accumulation, etc. Therefore, a more practical
+* e.g.
+  * Megatron-LM [144]: 8.3 billion parameters, 72 Transformer layers with a
+    hidden size of 3072 and 32 attention heads) and
+  * Turing-NLG (17 billion parameters, 78 Transformer layers with a
+    hidden size of 4256 and 28 attention heads)
+* needs techniques such as distributed training, mixed precision,
+  gradient accumulation, etc
 * [other] direction is to design more efficient model architecture,
   self-supervised pre-training tasks, optimizers and training skills
   * ELECTRA [22] is a good solution towards this direction

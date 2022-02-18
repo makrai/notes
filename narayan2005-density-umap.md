@@ -8,10 +8,11 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 * Nonlinear data-visualization methods, such as t-SNE and UMAP
   * staple tools for summarizing the complex transcriptomic landscape of single
     cells in 2D or 3D
-  * hE, neglect the local density of data points in the original space, often
-    resulting in misleading visualizations where densely populated
-    subpopulations of cells are given more visual space even if they account
-    for only a small fraction of transcriptional diversity within the dataset
+  * hE, neglect the local density of data points in the original space,
+    often resulting in misleading visualizations where
+    densely populated subpopulations of cells are given more visual space
+    even if they account for only a small fraction of transcriptional diversity
+    within the dataset
 * We
   * present den-SNE and densMAP, our density-preserving visualization tools
   * demonstration: visual interpretation of single-cell RNA-seq data

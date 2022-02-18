@@ -1,5 +1,5 @@
-Holger Schwenk, Fethi Bougares, Loïc Barrault
 Efficient Training Strategies for Deep Neural Network Language Models
+Holger Schwenk, Fethi Bougares, Loïc Barrault
 NIPS workshop on Deep Learning and Representation Learning 2014
 
 # 1 Introduction

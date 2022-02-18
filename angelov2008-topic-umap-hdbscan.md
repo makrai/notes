@@ -23,26 +23,26 @@ https://github.com/ddangelov/Top2Vec
   more informative and representative of the corpus trained on than
   probabilistic generative models
 * hierarchical topic reduction, see the Discussion
-  
+
 # 1 Intro
 
 * organize, search and summarize a large volume of text is a ubiquitous problem
-  * Topic modeling is often used 
-  * discover the latent semantic structure, or topics, present in the documents.
+  * Topic modeling is often used
+  * discover the latent semantic structure, or topics, present in the documents
   * Topics can then be used to find
     high level summaries of a large collection of documents,
-    search for documents of interest, and group similar documents together.
-* Topics are often thought of as discrete values, such as politics, science, and
+    search for documents of interest, and group similar documents together
+* Topics are often thought of as discrete values, such as politics, science
   * hE, any of these topics can be further subdivided into many other sub-topics
-  * a topic like politics can overlap with other topics, such as health, as they
-    * both share the sub-topic of health care.
+  * a topic like politics can overlap with other topics, such as health
+    * both share the sub-topic of health care
   * topics, their combinations or variations can be
     described by a weighted set of words
   => topics are continuous, as there are infinitely many combinations of
-  weighted words which can be used to represent a topic.
-  * each document has its own topic with a value in that continuum. In this
-  * topic is the set of weighted words that are most informative 
-    * can be a combination of the colloquial discrete topics.
+  weighted words which can be used to represent a topic
+  * each document has its own topic with a value in that continuum
+  * topic is the set of weighted words that are most informative
+    * can be a combination of the colloquial discrete topics
 
 * the remainder of this sectoin:
   related work and distributed representations of topics
@@ -53,91 +53,91 @@ https://github.com/ddangelov/Top2Vec
 
 * distributed representation means each concept learned by the network is
   represented by many neurons
-  * Each neuron therefore participates in the representation of many concepts.
-  * generalization of the concepts learned. Distributed representations are
-  * central to learning vector representations of words and documents.
-* distributional hypothesis. The essence of the idea is captured by JR Firth who
-* skip-gram and continuous BOW models [8, 9] known as word2vec, introduced
-* word2vec embraces the idea of distributional semantics, as it learns similar
+  * Each neuron therefore participates in the representation of many concepts
+  * generalization of the concepts learned
+  * central to learning vector representations of words and documents
+* distributional hypothesis, JR Firth
+* skip-gram and continuous BOW models [8, 9] known as word2vec
+* word2vec embraces the idea of distributional semantics
 * skip-gram version of word2vec is implicitly factorizing a word-context PMI mx
   * Shifted Positive PMI word-context representation of words.  This has
   * GloVe [13], which learn context and word vectors by factorizing a global
   * word2vec explicitly maximizes the dot product between word vectors for words
   * non-neural methods achieve results on certain tasks that are on-par with neu
-    by replicating hyper-parameters of neural methods like word2vec. These
-    * hE cannot scale to large corpora.
-* distributed paragraph vector was proposed with doc2vec [17]. This model
-  * extends word2vec by adding a paragraph vector to the learning task of the
+    by replicating hyper-parameters of neural methods like word2vec
+    * hE cannot scale to large corpora
+* distributed paragraph vector was proposed with doc2vec [17]
+  * extends word2vec by adding a paragraph vector to the learning task
   * can learn distributed representations of varying lengths of text, from
-    sentences to documents. The doc2vec model outperforms BOW models and
-  * many works on general language models [19, 20, 21].
+    sentences to documents. The doc2vec model outperforms BOW models
+  * many works on general language models [19, 20, 21]
     * Devlin+ 2018 Bert: Pre-training of deep bidirectional transformers for NLU
-    * Kevin+ 2020 Electra: Pre-training text encoders as discriminators 
+    * Kevin+ 2020 Electra: Pre-training text encoders as discriminators
     * Radford+ 2018 Improving language understanding by generative pre-training
 
 ## 1.3 Distributed Representations of Topics
 
-* doc2vec model can learn document and word vectors that are jointly embedded in
-  the same space
-  * improves the quality of the learned document vectors [18]. These jointly
-  * This property can be used for information retrieval as
-    * word vectors can be used to query for similar documents. It can also be
-    * find which words are most similar to a document, or most representative of
+* doc2vec model can learn document and word vectors that are
+  jointly embedded in the same space
+  * improves the quality of the learned document vectors [18]
+  * This property can be used for information retrieval
+    * word vectors can be used to query for similar documents
+    * find which words are most similar to a document, or most representative
 * We argue that
   the semantic space itself is a continuous representation of topics, in which
-  each point is a different topic best summarized by its nearest words. In the
-  * a dense area of documents can be interpreted as many documents that have a
+  each point is a different topic best summarized by its nearest words
+  * a dense area of documents can be interpreted as many similar documents
 * The top2vec model produces jointly embedded topic, document, and word vectors
   * vector algebra demonstrated with word2vec [8, 9] can be used between the
-    word, document and topic vectors. The topic vectors allow for topic sizes to
+    word, document and topic vectors
 
 # 2 top2vec: Model Description
 
 ## 2.1 Create Semantic Embedding
 
-* To learn jointly embedded document and word vectors we use doc2vec [17, 24].
+* To learn jointly embedded document and word vectors we use doc2vec [17, 24]
   * two versions of the model: the Paragraph Vector with Distributed Memory (DM)
     and Distributed Bag of Words (DBOW)
   * DM model uses context words and a document vector to predict the target word
   * DBOW model uses the document vector to predict words within a context window
     in the document
     * a simpler model but it performs better [18]. Our experiments confirm these
-* DBOW architecture is very similar to the word2vec skip-gram model which uses
+* DBOW architecture is very similar to the word2vec skip-gram
   * This similarity allows for the training of the two to be interleaved, thus
     simultaneously learning document and word vectors which are jointly embedded
-* hyper-parameters that have a large impact on the performance of doc2vec [18].
+* hyper-parameters that have a large impact on the performance of doc2vec [18]
   * window size is the number of words left and right of the context word. A
     * 15 has been found to produce the best results [18]
     * [18] Jey Han Lau and Timothy Baldwin
-      An empirical eval of doc2vec with practical insights into doc embed gen.
+      An empirical eval of doc2vec with practical insights into doc embed gen
       2016 1st Workshop on Representation Learning for NLP, pages 78–86, Berlin,
     * our experiments support. The doc2vec model can use
   * negative sampling or hierarchical softmax as its output layer. These are
     * efficient approximations of the full softmax [9]. We found that
-    * in our experiments the hierarchical softmax produces better document vecs.
-  * [18]: the most important hyper-parameter is the sub-sampling threshold,
+    * in our experiments the hierarchical softmax produces better document vecs
+  * sub-sampling threshold, the most important hyper-parameter [18]
     * the probability of high frequency words being discarded from a context win
-    * suggested value is 10 5 
+    * suggested value is 10 5
     * The smaller this number is, the more likely it is for a high frequency
       word to be discarded from the context window [9, 18]
-  * A related hyper-parameter is minimum count, which
-    * discards all words that have a total frequency that is less 
+  * minimum count, related to the sub-sampling threshold
+    * discards all words that have a total frequency that is less
     * we found 50 to work best, however this value
     * hE largely depends on corpus size and its vocabulary
-  * The vector size is the size of the document and word vectors that will be
+  * The vector size is the size of the document and word vectors
     * suggested vector size is 300 [18], with larger data sets larger values
-  * The number of training epochs suggested by [18] is 20 to 400, with the
-    higher values for smaller data sets
-    * We found 40 to 400 training epochs to be a good range.
+  * The number of training epochs suggested by [18] is 20 to 400
+    * higher values for smaller data sets
+    * We found 40 to 400 training epochs to be a good range
 
 ## 2.2 Find Number of Topics
 
-* In order find the dense areas of documents in the semantic space,
+* In order to find the dense areas of documents in the semantic space,
   density based clustering is used on the document vectors, specificall HDBSCAN
 * hE, the "curse of dimensionality" introduces two main problems
-  * In the high-dimensional semantic embedding space is very sparse
+  * the high-dimensional semantic embedding space is very sparse
   * difficult to find dense clusters
-  * high computational cost [28]. In order to alleviate these two problems,
+  * high computational cost [28]
   * we perform dimension reduction on the document vectors with UMAP [29, 30]
 
 ### 2.2.1 Low Dimensional Document Embedding
@@ -153,7 +153,7 @@ https://github.com/ddangelov/Top2Vec
 * Another related parameter is the distance metric, which is
   used to measure the distance between points in the high dimensional space
   * often used for the document vectors: cosine similarity [8, 9]
-* embedding dimension must be chosen
+* embedding dimension
   * 5 dimensions give the best results for density based clustering
 
 ### 2.2.2 Find Dense Clusters of Documents
@@ -174,7 +174,7 @@ https://github.com/ddangelov/Top2Vec
   * other reasonable options such as the
     * geometric mean or
     * using probabilities from the confidence of clusters created by HDBSCAN
-* these techniques resulted in very similar topic vectors, 
+* these techniques resulted in very similar topic vectors,
   * almost identical nearest-neighbour word vectors
   * may be due to the sparsity of the high dimensional space
 
@@ -184,10 +184,9 @@ https://github.com/ddangelov/Top2Vec
 
 ## 3.1 Topic information gain and our experiments
 
-* how well the topics describe the documents. This evaluation measures how
+* how well the topics describe the documents
 * We propose using mutual information [31] to measure the information gained
 * topics correspond to words
-TODO
 
 ## 3.2 LDA, PLSA and Top2Vec Topic Information Gain
 
@@ -201,7 +200,7 @@ TODO
   allows for the calculation of
   * topic vectors from dense areas of highly similar documents,
   * topic size, and for
-  * hierarchical topic reduction. The top2vec model also allows for
+  * hierarchical topic reduction
   * comparing similarity between words, documents and topics based on distance
 * We have proposed a novel method for evaluating topics that
   * uses mutual information to calculate how informative topics are of documents
@@ -211,23 +210,23 @@ TODO
   * measures both the quality of topic words and the assignment of topics to doc
 * Our results show that top2vec consistently finds topics that are
   more informative and representative of the corpus than LDA and PLSA,
-  for varying sizes of topics and number of top topic words.
-* advantages of top2vec over traditional topic modeling methods . The primary
+  for varying sizes of topics and number of top topic words
+* advantages of top2vec over traditional topic modeling methods
   * automatically finds the number of topics and finds
-  * topics that are more informative and representative of the corpus. As
+  * topics that are more informative and representative of the corpus
   * stop-word lists are not required to find informative topic words, making it
   * alleviates several challenges of traditional methods that use BOW
 * Traditional topic modeling techniques like LDA and PLSA are
   * generative models
   * topics that recreate the original documents word distri with minimal loss
   * This necessitates these models to place uninformative words in topics with
-    high probability, as they make up a large proportion of all documents.
+    high probability, as they make up a large proportion of all documents
   * no guarantee that they will find topics that are representative of the corp
-  * they can find topics that are extremely specific or overly broad.
+  * they can find topics that are extremely specific or overly broad
 * the words closest to top2vec topic vectors are the words that are most infoive
   * learning task generates joint document and word vectors, which
-  * predicts the document a word came from. This learning task necessitates
-  * document vectors to be placed close to the words that are most informative
-    of the documents
-  * topic vectors to be calculated from dense areas of those documents.  Thus
-  * topics are the words that are most informative of a document, rather than
+  * predicts the document a word came from
+  * document vectors are placed
+    close to the words that are most informative of the documents
+  * topic vectors to be calculated from dense areas of those documents
+  * topics are the words that are most informative of a document
