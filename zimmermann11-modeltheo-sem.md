@@ -983,20 +983,20 @@ models, and hence there is no reason for ruling out (or counting in) one but not
     formal model
   * => no matter how closely a given system of constraints and/or meaning
     postulates may approximate Logical Space, it will never be able to pin down
-    a specific model, let alone specific extensions of all expressions. In
+    a specific model, let alone specific extensions of all expressions
     * given any term A (of some language L) and any pure set x,
       there will be an appropriate model M x = (U x , F) (for L), according to
       which [[A]] M x = x;
     * M x may be constructed from any given appropriate model M = (U, F)
-      by replacing [[A]] M with x (and simultaneously x with U, in case x∈U)
+      by replacing [[A]] M with x (and simultaneously x with U, in case x ∈ U)
       – thereby preserving appropriateness, by (43). This only reflects the
       strategy of having inhabitants of Logical Space represented by arbitrary
       set-theoretic objects and is thus hardly surprising
     * a similar line of thought does give rise to
       interesting consequences for the relation between reference and truth
-      This is the gist of the following permutation argument,
-      * made famous by Putnam (1977, 1980) with predecessors including Newman
-        (1928), Jeffrey (1964), Field (1975), and Wallace (1977);
+      * This is the gist of the following permutation argument,
+      * made famous by Putnam (1977, 1980) with predecessors including
+        Newman (1928), Jeffrey (1964), Field (1975), and Wallace (1977);
         * see Devitt (1983), Lewis (1984), Abbott (1997), Williams (2005), and
           Button (2011) for critical discussion of its impact
 Given a model M for a language L, the extensions according to any isomorphic
