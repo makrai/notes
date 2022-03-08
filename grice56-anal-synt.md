@@ -5,19 +5,19 @@ The Philosophical Review, Vol. 65, No. 2 (Apr., 1956), pp. 141-158
 # In his
 
 * ways in which a distinction can be criticized, and
-  more than one in which it can be rejected. It can be criticized
-  * for not being a sharp distinction (for admitting of cases which do not fall
-    clearly on either side of it)
+  more than one in which it can be rejected
+  * for not being a sharp distinction
+    (for admitting of cases which do not fall clearly on either side of it)
   * terms in which it is customarily drawn are ambiguous
-  * confused (the different meanings being habitually conflated)
-    * Such criticisms alone would scarcely amount to a rejection of the
-      distinction.  They would, rather, be a prelude to clarification
+    * confused (the different meanings being habitually conflated)
+  * Such criticisms alone would scarcely amount to a rejection of the
+    distinction.  They would, rather, be a prelude to clarification
     * It is not this sort of criticism which Quine makes
   * not useful
     * useless for certain purposes, or useless altogether, and ...  pedantic
   * the way or ways in which a distinction is customarily expounded or
     explained
-    * explanations did not make it really clear. And
+    * explanations did not make it really clear
     * Quine certainly makes such criticisms
 * presumption in favor of the distinction
   * distinction which they are supposed to express, and which at different
@@ -51,15 +51,14 @@ The Philosophical Review, Vol. 65, No. 2 (Apr., 1956), pp. 141-158
     * "necessary",
     * "synonymous",
     * "semantical rule", and perhaps
-    * in a broad sense, "definition."
+    * in a broad sense, "definition"
 * group of expressions which includes
-  * "morally wrong", "blameworthy", "breach of moral rules", etc.; or of the
+  * "morally wrong", "blameworthy", "breach of moral rules", etc
   * propositional connectives and the words "true" and "false,' "statement",
-    "fact,' "denial,' 'assertion."
-  * they have not been formally defined except in terms of members of the same
-    group
-* "analytic" and "synthetic" themselves are technical philosophical
-  expressions
+    "fact,' "denial,' 'assertion"
+  * they have not been formally defined
+    except in terms of members of the same group
+* "analytic" and "synthetic" are technical philosophical expressions
   * terms belonging to the circle are either technical terms or ordinary terms
     used in specially adjusted senses,
 (i) "My neighbor's three-year-old child understands
