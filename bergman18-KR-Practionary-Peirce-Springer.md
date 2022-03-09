@@ -29,32 +29,32 @@ Springer International Publishing, 464 pp., December 2018
 * NLP: many semantic tasks such as tagging or categorizing or questioning
   already perform at acceptable levels for most projects. We naturally call the
   * ‘knowledge-based artificial intelligence.’ KBAI would arise from better KR
-  * a common theme throughout the book.
-* the question of meaning, inextricably entwined with context and perspective.
+  * a common theme throughout the book
+* the question of meaning, inextricably entwined with context and perspective
   * as well as the usual vagaries of imprecise semantics. Root cause analysis
   * meaningful, interoperable information suggests one pivotal factor
-    * describe source content adequately in context to its use.
+    * describe source content adequately in context to its use
   * capturing and reflecting context is essential for interoperability
   * reason over it and test new knowledge against it, a structural form we call
     a ‘knowledge graph.’ All of this requires
-  * grounding: a logical and coherent theory a for how to represent knowledge.
+  * grounding: a logical and coherent theory a for how to represent knowledge
 * philosophy: Charles Sanders Peirce and Claude Shannon,
-  * each explicating one of the boundary senses of information.
+  * each explicating one of the boundary senses of information
   * Shannon emphasized the message and mechanical aspects of information;
   * Peirce emphasized meaning in both breadth and depth. In the
   * combination, we see semantics and groundings as essential to convey
 * C.S. Peirce belongs in the ranks of George Boole, Shannon, A Turing, Neumann
   from the perspective of KR, the meaning of information, and hewing to reality
 * The lens I use is strictly that of Peirce and his views
-  * There are neutral textbooks on KR in computer and information science.
-    * KR reference texts by van Harmelan [1] or Brachman and Levesque [2].
+  * There are neutral textbooks on KR in computer and information science
+    * KR reference texts by van Harmelan [1] or Brachman and Levesque [2]
   * pragmatism, according to a specific maxim and a recommended methodology to
     * what the Peirce scholar Kelly Parker calls a ‘practionary.’ To my
 
 ## 1.1 Structur of the book
 
 * central portion of the book (Parts II–IV) reflects
-  C.S. Peirce’s universal categories of Firstness, Secondness, and Thirdness.
+  C.S. Peirce’s universal categories of Firstness, Secondness, and Thirdness
   Across nearly five decades of writings, Peirce likens the universal
   categories to more than 60 different expressions (Table 6.2). The expression
   used for this central
@@ -69,7 +69,7 @@ Springer International Publishing, 464 pp., December 2018
     chapters tee up this structure.  The structural approach of this book is
     consistent with Peirce’s pragmatic maxim
 to achieve the “third grade of clearness of apprehension” (1878, W 3:266) 4 covering
-“all of the conceivable practical effects,” regarding an understanding of something.
+“all of the conceivable practical effects,” regarding an understanding of something
 * a practionary is for the definition of methods and potential applications
   resulting from an explication of a domain. In the case of this book, that
   domain is KR. 5
@@ -77,14 +77,14 @@ To my knowledge, this is the only Peirce book dedicated solely to knowledge
 representation, and the only KR book exclusively devoted to Peirce. 6 Some review-
 * multiple parts. I
   * Early chapters discuss contexts of information theory, economics, and
-    social circumstances.
+    social circumstances
   * Middle parts of the book are theoretical, even philosophical, that evolve
-    into how-to and practice.
+    into how-to and practice
   * The latter parts of the book are speculative and span potential
     applications in breadth and depth. My answer
   in keeping these parts together is to try to be faithful to this overall
   ideal of a Peircean practionary. I welcome you to a soup-to-nuts banquet of
-  Peircean perspectives on the challenge of KR.
+  Peircean perspectives on the challenge of KR
 
 # 1.2 Overview of Contents
 
@@ -103,24 +103,24 @@ Part I and its three chapters
   * A knowledge graph (or ontology) provides the overall schema, and
     semantic technologies give us a basis to make logical inferences across the
     * search, disambiguation, mapping, and transformation functions, all of
-      which work together to help achieve data interoperability.
+      which work together to help achieve data interoperability
 * KBAI: use of large statistical or knowledge bases to inform feature selection
   * apply these same techniques to the infrastructural foundations of KBAI
     systems in data integration, mapping to new external structure and
-    information, hypothesis testing, diagnostics and predictions.
+    information, hypothesis testing, diagnostics and predictions
 * We apply natural language processing to these knowledge bases informed by
   semantic technologies.  To complete the context, we discuss other vital
 
 # 5. Knowledge should express a coherent reality, to reflect a logical
-consistency and structure that comports with our observations about the world.
+consistency and structure that comports with our observations about the world
 How we represent reality has syntactic variation and ambiguities of a semantic
 nature that can only be resolved by context. A hub-and-spoke design with a
 canonical data model is a superior way to organize, manipulate, and manage
 input information. By understanding the sources of semantic heterogeneity, we
 set the basis for extracting meaning and resolving ambiguities. Once we resolve
 (‘disambiguate’) the source information, we need to organize it into ‘natural’
-classes and relate those classes coherently and consistently to one another.
-This organization takes the form of a knowledge graph.
+classes and relate those classes coherently and consistently to one another
+This organization takes the form of a knowledge graph
 
 Part II covers the grammar of KR
 
@@ -143,19 +143,19 @@ Part II covers the grammar of KR
 
 * ‘things’ (nouns, which are entities, events, types, or concepts) that
   * and how we organize them. We pair these things with
-  * three kinds of internal and external relations to other things.
+  * three kinds of internal and external relations to other things
     * Attributes are the intensional characteristics of an object, event,
-      entity, type (when viewed as an instance), or concept.
+      entity, type (when viewed as an instance), or concept
     * External relations are actions or assertions between an event, entity,
-      type, or concept and another particular or general.
+      type, or concept and another particular or general
     * Representations are signs and the means by which we point to, draw
       attention to, or designate, denote, or describe a specific object,
-      entity, event, type, or general.
+      entity, event, type, or general
 * We now know that
   * attributes are a Firstness in the universal categories
   * that Secondness captures all events, entities, and relations
   * and that Thirdness provides the types, context, meaning, and ways to
-    indicate what we refer to in the world.
+    indicate what we refer to in the world
 
 # 8 Logic basis and the actual vocabularies and languages
 
@@ -184,11 +184,11 @@ Part III working components of a KR system
 
 * methods: graph theory, statistical mechanics from physics, data mining and
   information visualization from computer science, inferential modeling from
-  statistics, and social structure from sociology.
+  statistics, and social structure from sociology
 * Graph theory and network science are the suitable disciplines for a variety
   of information structures and many additional classes of problems. We see the
   * graph theory to linguistics by the various knowledge bases such as WordNet
-    (in multiple languages) and VerbNet.
+    (in multiple languages) and VerbNet
 * Domain ontologies emphasize conceptual relationships over lexicographic ones
   for a given knowledge domain.  Furthermore, if we sufficiently populate a
 
@@ -207,7 +207,7 @@ Part IV, how these components are now combined to build a working platform
   * understand and tag our content workflows such that we can determine
     provenance and authority and track our content
   * and do these tasks using knowledge workers, who already have current duties
-    and responsibilities.
+    and responsibilities
 * use and updates of the semantic technologies portion must be part of daily
   routines and work tasking, subject to management and incentives.  Once a
 
@@ -224,12 +224,12 @@ Part V “conceivable practical effects” that may result from following these
 
 * Four of these are near-term applications in
   word sense disambiguation, relation extraction, reciprocal mapping, and
-  extreme knowledge supervision.
+  extreme knowledge supervision
 * Four are logic and representation applications in
   * automatic hypothesis generation, encapsulating KBpedia for deep learning,
     measuring classifier performance, and the thermodynamics of representation
 
-# 15 New applications and uses for knowledge graphs.
+# 15 New applications and uses for knowledge graphs
 
 * self-service business intelligence and semantic learning
 * apply Peirce’s ideas and guidance to nature
@@ -244,11 +244,11 @@ Part V “conceivable practical effects” that may result from following these
 ## 16.2 semantic parsing 349
 
 * a lexical theory needs to handle word senses, sentences and semantics,
-  cross-language meanings, common-sense reasoning, and learning algorithms.
+  cross-language meanings, common-sense reasoning, and learning algorithms
   We can map the compositional and semantic aspects of our language to the
   categorial perspectives of Peirce’s logic and semiosis, and then convert
   those formalisms to distributions over broad examples provided by
-  KBpedia’s knowledge.
+  KBpedia’s knowledge
 
 ### A Taxonomy of Grammars 350
 
@@ -262,14 +262,14 @@ Part V “conceivable practical effects” that may result from following these
     * what we retain should be true in relation to what we have already modeled,
   * Organized according to the universal categories. Continuing to maintain rea-
     soned splits into Firstness, Secondness, and Thirdness may offer some
-    surprising keys and insights for our knowledge representations going forward.
+    surprising keys and insights for our knowledge representations going forward
   * Logical
-    * fits well with the ideal of formal grammars.
+    * fits well with the ideal of formal grammars
   * Consistent with the logic of relations. Peirce has already provided us with
     significant guidance in his identification of relations and his logical
-    treatments of them, including algebraic notions to inform modeling.
+    treatments of them, including algebraic notions to inform modeling
   * A good entity-attribute distinction. We have already pointed to the importance
-    of separating out attributes (a Firstness) from entities (a Secondness).
+    of separating out attributes (a Firstness) from entities (a Secondness)
   * Capable of distinguishing generals from particulars. We want discrete
     class-level types (generals, a Thirdness) and item-level (particulars, a Seco)
   * Attentive to the sign representativeness in Peircean semiosis. Peirce’s ten
@@ -278,11 +278,11 @@ Part V “conceivable practical effects” that may result from following these
     analysis for teasing out rules for analyzing problems
   * Reflective of the probabilistic nature of truth. We should favor learning
     models that support inductive reasoning and allow the use of probability
-    distributions to characterize some nodes.
+    distributions to characterize some nodes
   * Contextual. In that we capture both the intensionality and extensionality of
     our lexemes and choose word senses based on the overlap with accompanying
     text. The inclusion of inference and background world knowledge supports this
-    aim [13].
+    aim [13]
 * below three approaches in relative order of complexity of implementation
   * Peircean part-of-speech tagging
   * machine learning, and then
@@ -291,10 +291,10 @@ Part V “conceivable practical effects” that may result from following these
 ## 16.3 robotics 361
 
 * Cognitive robots embrace the ideas of learning and planning and
-interacting with a dynamic world.
+interacting with a dynamic world
 * Kinesthetic robots may also be helpful to our attempts to refine NLU
 
-# 17 Conclusions looking across the broad sweep of our completed practionary.
+# 17 Conclusions looking across the broad sweep of our completed practionary
 
 #Appendix A is a short bio of Charles S. Peirce, a most accomplished and
 
@@ -304,7 +304,7 @@ interacting with a dynamic world.
   positive and negative training sets, across multiple perspectives
 * We split the KBpedia knowledge graph into concepts and topics, entities,
   events, attributes, annotations, and relations and their associated natural
-  classifications or types.
+  classifications or types
 
 #Appendix C discusses the KBpedia features suitable for use by ML
 
@@ -313,9 +313,9 @@ interacting with a dynamic world.
   frequency, weighted, or based on the ML model used); it may be semantic (in
   terms of meanings or relations); or it may be latent, as either something
   hidden or abstracted from feature layers below it. I present and organize
-  an inventory of more than 200 feature types applicable to natural language.
+  an inventory of more than 200 feature types applicable to natural language
   They include lexical, syntactical, structural, and other items that reflect
-  how we express the content in the surface forms of various human languages.
+  how we express the content in the surface forms of various human languages
 
 
 # 1.3 Key Themes

@@ -32,13 +32,13 @@ arXiv:2005.00633 [cs.CL]
   (Bender, 2011; Ponti+ 2019; Joshi+ 2020). The data scarcity issue renders the
 * Recent work has placed much emphasis on the zero-shot scenario exactly
   * in theory, it offers the widest portability across the > 7,000 languages
-    (Pires+ 2019; Artetxe+ 2019; Lin+ 2019; Cao+ 2020; Hu+ 2020).
-    * Yu-Hsiang Lin, Chian-Yu Chen, Jean Lee, Zirui Li, Yuyan Zhang, ...
+    (Pires+ 2019; Artetxe+ 2019; Lin+ 2019; Cao+ 2020; Hu+ 2020)
+    * Yu-Hsiang Lin, Chian-Yu Chen, Jean Lee, Zirui Li, Yuyan Zhang, ..
         Xuezhe Ma, Antonios Anastasopoulos, Patrick Littell, Graham Neubig
       Choosing transfer languages for cross-lingual learning. In Proceedings of
-      ACL 2019.
+      ACL 2019
 * massively multilingual transformer models pretrained on multilingual corpora
-  using LM objectives (Devlin+ 2019; Conneau and Lample, 2019; Conneau+ 2020).
+  using LM objectives (Devlin+ 2019; Conneau and Lample, 2019; Conneau+ 2020)
   * de facto become the default paradigm for cross-lingual transfer, with a
     unparalleled cross-lingual transfer performance
     (Pires+ 19; Wu and Dredze, 19; Rönnqvist+ 19; Karthikeyan+ 20; Wu+ 20)
@@ -49,22 +49,22 @@ arXiv:2005.00633 [cs.CL]
   * typologically or etymologically close to English
     (e.g., German, Scandinavian languages, French, Spanish)
   * with large monolingual corpora, well-represented in the pretraining corp
-    (e.g., Arabic, Hindi, Chinese).
+    (e.g., Arabic, Hindi, Chinese)
   * Wu+ (2020) suggest that pretrained transformers, much like static embeds,
     easily (linearly) alignable between languages
-    * Wu+ limit their study to major languages: Chinese, Russian, and French.
+    * Wu+ limit their study to major languages: Chinese, Russian, and French
     * hE, language transfer with static cross-lingual word embeddings are
       ineffective when involving
       dissimilar languages (Søgaard+ 2018; Vulić+ 2019) or
       languages with small corpora (Vulić+ 2020)
   * We demonstrate that, similar to prior research in cross-lingual embeds,
-      transfer performance crucially depends on these two factors.
+      transfer performance crucially depends on these two factors
 * Q2 the role of a particular task in consideration for transfer performance?
   * all our analyses across five different tasks, which we roughly divide into
     * “lower-level” tasks (POS-tagging, dependency parsing, and NER); and (2)
     * “higher-level” language understanding tasks (NLI and QA). We show that
   * transfer performance in both zero-shot and fewshot scenarios largely depends
-    on the “task level”.
+    on the “task level”
 * Q3 Can we even predict transfer performance?
   * a simple regression model on available transfer results, we show that
   * performance can (roughly) be predicted from the two crucial factors:
@@ -74,7 +74,7 @@ arXiv:2005.00633 [cs.CL]
 * Q4 Should we focus more on few-shot transfer scenarios and
   quick annotation cycles?
   * Complementary to the efforts on improving zero-shot transfer (Cao+ 2020),
-    Steven Cao, Nikita Kitaev, and Dan Klein.
+    Steven Cao, Nikita Kitaev, and Dan Klein
     Multilingual alignment of contextual word representations. In Proceedings of
     ICLR 2020
   * Similar to the seminal “pre-neural” work of Garrette and Baldridge (2013),
@@ -82,9 +82,9 @@ arXiv:2005.00633 [cs.CL]
       performance points in the low-resource target tasks.  For all five tasks
   * in some cases surprisingly large) improvements with minimal annotation
   * e.g. dependency parsing, in some target languages we improve up to 40 UAS
-    points by additional finetuning on as few as 10 target language sentences.
+    points by additional finetuning on as few as 10 target language sentences
   * most prominent exactly where zero-shot transfer fails:
-    for distant target languages with small monolingual corpora.
+    for distant target languages with small monolingual corpora
 
 # 2 Background and Related Work
 
@@ -100,20 +100,20 @@ arXiv:2005.00633 [cs.CL]
 * continuous cross-lingual representation spaces. The previous SOTA approaches,
   * cross-lingual word embeddings (Mikolov+ 2013; Ammar+ 2016; Artetxe+ 2017;
     Smith+ 2017; Glavaš+ 2019; Vulić+ 2019) and
-    * Mikel Artetxe, Gorka Labaka, and Eneko Agirre. 2017.
+    * Mikel Artetxe, Gorka Labaka, and Eneko Agirre. 2017
       Learning bilingual word embeddings with (almost) no bilingual data. In
       ACL 2017
-    * Samuel L. Smith, David H.P. Turban, Steven Hamblin, and Nils Y. Hammerla.
+    * Samuel L. Smith, David H.P. Turban, Steven Hamblin, and Nils Y. Hammerla
       Offline bilingual word vectors, orthogonal transformations and the
         inverted softmax. In Proceedings of
       ICLR 2017
-    * Goran Glavaš, Robert Litschko, Sebastian Ruder, and Ivan Vulić. 2019.
+    * Goran Glavaš, Robert Litschko, Sebastian Ruder, and Ivan Vulić. 2019
       How to (properly) evaluate crosslingual word embeddings:
         On strong baselines, comparative analyses, and some misconceptions. In
       ACL 2019
   * sentence embeddings (Artetxe and Schwenk, 2019), are now getting replaced by
   * mas-sively multilingual transformers based on language modeling objectives
-    (Devlin+ 2019; Conneau and Lample, 2019; Conneau+ 2020).
+    (Devlin+ 2019; Conneau and Lample, 2019; Conneau+ 2020)
 
 ## 2.2 SOTA cross-ling transfer with massively multilingual transformers (MMT)
 
@@ -125,20 +125,20 @@ arXiv:2005.00633 [cs.CL]
   * After that, adding more languages to pretraining degrades transfer
   * can be mitigated by increasing the model capacity (Artetxe+ 2019). However,
   * model capacity is a critical limitation to zero-shot cross-lingual transfer,
-    especially when dealing with lower computational budgets.
+    especially when dealing with lower computational budgets
 * In this work (see §4), we suggest that a lightweight strategy to mitigate the
   curse in a particular target is few-shot transfer
-  * without the need to train a larger-capacity MMT from scratch.
+  * without the need to train a larger-capacity MMT from scratch
 
-## 2.3 other studies that examine different properties of MMTs.
+## 2.3 other studies that examine different properties of MMTs
 
-* Libovickỳ+ (2020) analyze lang-specific versus lang-universal knowl in mBERT.
+* Libovickỳ+ (2020) analyze lang-specific versus lang-universal knowl in mBERT
 * Pires+ (2019) show that zero-shot cross-lingual transfer with mBERT is
   effective for POS tagging and NER, and that it is
   more effective between related languages
 * Wu and Dredze (2019) extend the analysis to more tasks and languages; they
   * transfer via mBERT is competitive to the best task-specific zero-shot
-    transfer approach in each task.
+    transfer approach in each task
 * Karthikeyan+  (2020) prove mBERT to be effective for NER and NLI transfer to
   Hindi, Spanish, and Russian (note that all languages are Indo-European and
   high-resource with large Wikipedias). Importantly, they show that
@@ -149,10 +149,10 @@ arXiv:2005.00633 [cs.CL]
       rather significantly smaller language subsets
   * Their primary focus is zero-shot transfer evaluation, while they
   * also experiment with target-language fine-tuning on 1,000 instances for POS
-    tagging and NER; this leads to substantial gains over zero-shot transfer.
+    tagging and NER; this leads to substantial gains over zero-shot transfer
   * focus on the evaluation aspects and protocols, in this work,
     * we
-      * factors that hinder effective zero-shot transfer across diverse tasks.
+      * factors that hinder effective zero-shot transfer across diverse tasks
       * few-shot learning scenarios, and
   * diff approach: we first finetune the MMTs on the (large) English
     task-specific training set and then fine-tune/adapt it further with a small
@@ -162,7 +162,7 @@ arXiv:2005.00633 [cs.CL]
   different languages to explain transfer effectiveness of MMTs. Their main
   * conclusion, similar as with static word embeddings:
     * it is the topological similarities 4 between the subspaces of individual
-      languages captured by MMTs that enable effective cross-lingual transfer.
+      languages captured by MMTs that enable effective cross-lingual transfer
     * For cross-lingual word embedding spaces, the assumption of approximate
       isomorphism does not hold for
       * distant languages (Søgaard+ 2018; Vulić+ 2019), and in face of
@@ -186,7 +186,7 @@ arXiv:2005.00633 [cs.CL]
   * XQuAD dataset (Artetxe+ 2019), created by translating the 240 development
     paragraphs (from 48 documents) and their corresponding 1,190 question-answer
     pairs of SQuAD v1.1 (Rajpurkar+ 2016) to 11 languages
-    (ES, DE, EL, RU, TR, AR, VI, TH, ZH, and HI).
+    (ES, DE, EL, RU, TR, AR, VI, TH, ZH, and HI)
   * the task is to identify the exact span in the paragraph, which contains the
 
 ## 3.2 Results and Preliminary Discussion
@@ -199,11 +199,11 @@ arXiv:2005.00633 [cs.CL]
   * no notable exception to this pattern on the three lower-level tasks,
   * language proximity alone does not explain many results obtained on XNLI and
     XQuAD
-* e.g.
+* e.g
   * XNLI (for both mBERT and XLM-R), the RU scores are comparable to those on ZH
     , while they are lower for HI and UR : this is
     * despite the fact that as Indo-European languages RU , HI , and UR are
-      linguistically closer to EN than ZH .
+      linguistically closer to EN than ZH 
   * we observe comparable scores on XQuAD for TH, RU , and ES . Therefore, in
 
 ## 3.3 Analysis
@@ -222,7 +222,7 @@ arXiv:2005.00633 [cs.CL]
   * inventory (INV) vectors encode presence or absence of natural classes of sounds, e.g., voiced uvulars
   * FAM vectors denote memberships in language families, e.g., Indo-Germanic
   * and GEO vectors express orthodromic distances for languages w.r.t. a fixed
-* cosine similarity between the languages’ corresponding LANG 2 VEC vectors.
+* cosine similarity between the languages’ corresponding LANG 2 VEC vectors
   * Each aspect listed above (e.g., SYN, GEO, FAM) yields one scalar feature for
     our analysis.  We also include
 * another feature: the z-normalized size of the target language corpus used in
@@ -231,7 +231,7 @@ arXiv:2005.00633 [cs.CL]
 ### Correlation Analysis. We first correlate individual features with the
 
 * the zero-shot scores for low-level syntactic tasks – POS and DEP – best
-  correlate with syntactic similarity (SYN).
+  correlate with syntactic similarity (SYN)
 * SYN similarity also correlates quite highly with higher-level tasks, except
   for XLM-R on XQuAD.  Phonological similarity (PHON) correlates best with the
   transfer results of mBERT on NER and XLM-R on XQuAD. Interestingly, for both
@@ -256,7 +256,7 @@ arXiv:2005.00633 [cs.CL]
   does not suggest that other features do not correlate with transfer results
 * summ: pretraining corpora sizes are stronger features for predicting zero-shot
   performance in higher-level tasks, whereas the results in
-  * lower-level tasks are more affected by typological language proximity.
+  * lower-level tasks are more affected by typological language proximity
 
 # 4 From Zero to Hero: Few-Shot 7
 
@@ -275,7 +275,7 @@ arXiv:2005.00633 [cs.CL]
     choosing the best sampling strategy for each task.  Moreover, the gains in
     * substantial even when we add only 10 annotated sentences in the target
     * additional experiments (omitted for brevity) show substantial gains for
-      DEP and POS even when we add fewer than 5 annotated sentences.
+      DEP and POS even when we add fewer than 5 annotated sentences
 * different sampling strategies for the lower-level tasks is also shown in
   * DEP and POS: adding longer sentences results in better scores. For
   * NER, however, RAND appears to perform best, with a larger gap between RAND
@@ -283,15 +283,15 @@ arXiv:2005.00633 [cs.CL]
       sparse with named entities, resulting in our model seeing a lot of
   * shorter sentences are also less helpful than for DEP and POS because they
     consist of (confirmed by inspection) a single named entity mention, without
-    non-NE tokens.
+    non-NE tokens
 * performance for individual languages
   on one lower-level (DEP) and one higher-level task (XQuAD), for different `k`s
-  * more distant target languages benefit much more from the few-shot data.
+  * more distant target languages benefit much more from the few-shot data
     * e.g. SV (DEP, a) or DE (XQuAD, b). Both are closely related to EN , both
       generally have high scores in the zero-shot transfer, and both benefit
       only marginally from few-shot data points
   * In stark contrast, KO (DEP, a) and TH (XQuAD, b), both exhibit
-    * fairly poor zero-shot performance given their linguistic distance to EN .
+    * fairly poor zero-shot performance given their linguistic distance to EN 
     * Given in-language data, however, both see rapid leaps in performance,
       * a gain of almost 40% UAS on DEP, and almost 5% on XQuAD. In a sense,
 * interesting are DEP results for JA and AR , where we observe
@@ -302,24 +302,24 @@ arXiv:2005.00633 [cs.CL]
 
 * What are the annotation costs, and at which conversion rate do they trans-
   late into performance points? Here, we provide some ballpark estimates based
-  on annotation costs reported by other researchers.
+  on annotation costs reported by other researchers
 
 ### Natural Language Inference
 
 * Marelli+ (2014) reportedly paid $2,030 for 200k judgements, which would amount
   to $0.01015 per NLI instance and, in turn, to $10.15 for 1,000 annotations. In
   our few-shot experiments this would yield an average improvement of 2.24 and
-  2.54 accuracy points for mBERT and XLM-R, respectively.
+  2.54 accuracy points for mBERT and XLM-R, respectively
 
-### Question Answering.
+### Question Answering
 
 * Rajpurkar+ (2016) report a payment cost of $9 per hour and a time effort of 4
   minutes per paragraph. With an average of 5 paragraphs per article, our
   few-shot scenario (10 articles) roughly requires 50 paragraphs-level
   annotations, i.e., 200 minutes of annotation effort and would in total cost
   around $30 (for respective performance improvements of 4.5 and 2.1 points for
-  mBERT and XLM-R).
+  mBERT and XLM-R)
 
 * our lower-level (DEP, POS) tasks are presumably more expensive to annotate, as
-  * they require some linguistic knowledge and annotation training.
+  * they require some linguistic knowledge and annotation training
   * On the other hand, we typically need much fewer annotated instances
