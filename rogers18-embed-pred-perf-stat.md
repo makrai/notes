@@ -170,11 +170,151 @@ COLING 2018
   * only English is supported, but (thanks to Wiktionary and BabelNet) LDT can
     be extended to other languages.
 
-# 4 Experiment set-up
+# 4 Experiment set-up 4
+
+## 4.1 Word embeddings
+
+* This work explores 3 popular word embedding algorithms
+  * GloVe (Pennington+ 2014), CBOW, and Skip-Gram (SG) (Mikolov+ 2013a).
+  * The pre-trained vectors we used were published 4 by Li+ (2017) who
+    * 4 different types of contexts on sequence labeling tasks.
+    * different vector sizes (25, 50, 100, 250, 500). In total, there were 60 models.
+    * two types of context (linear and dependency-based), and
+    * two context representations: bound and unbound.
+    * linear
+      * unbound context is the classic bagof-words context (window size 2).
+      * bound context is the same, except that words to the left and to the
+        right are counted separately (Levy and Goldberg, 2014b; Ling+ 2015).
+    * DEPS
+      * In the “bound” DEPS context (Levy and Goldberg, 2014a), the corpus is
+        syntactically parsed, and only the words that are connected with the
+        target word by some dependency relation are taken into account
+      * Li+ (2017) extended this idea into the “unbound” DEPS context, where
+        the labels of syntactic roles are ignored.
+* All embeddings were trained on English Wikipedia (August 2013 dump), with a
+  minimum frequency of 100
+  * dependency parsing by Stanford CoreNLP (Manning+ 2014), the corpus was
+    lowercased. Negative sampling was set to 5 for SG and 2 for CBOW,
+    no “dirty” sub-sampling.  Distribution smoothing was set to 0.75.
+    SG was trained for 2 epochs, CBOW for 5, and GloVe for 30.
+    
+## 4.2 Vocabulary Filtering and Sampling
+
+* LDT yields the most information when the source corpus is available, and it
+  is possible to estimate raw frequencies and cooccurence counts.
+* we filtered 5 the vocabulary down to 269,860 that were present in all models.
+  * Preliminary experiments showed that the filtering was
+    * beneficial to the performance on some tasks, and detrimental to others.
+    * consistent across embeddings.
+    * The scope of this paper does not permit full investigation of the matter,
+* we focus on the general vocabulary and exclude proper nouns. We use LDT to
+  * draw a balanced sample of WordNet lemmas for four POSs N, V, Adj, Adv
+    in 4 logarithmic frequency bins in the source corpus: 100, 1 K, 10 K, 100 K
+* Following Baroni and Lenci (2011), we control for the polysemy of the words
+  * For each part of speech at most 30 monosemous and polysemous words were
+  * Polysemy was defined as a word having over 2 meanings in WordNet 6 .  The
+* Table 3.
+* we also exclude the words belonging to several parts of speech (e.g.  a dog
+  (noun), to dog (verb)) to preserve the morphological class variable. This
+  * discards a lot of high-frequency vocabulary => the higher frequency bins
+    for verbs and adjectives were not populated fully. The total number of
+
+## 4.3 Running LDT 5
+
+* 1,000 nearest neighbors for each word in the above sample
+* most words will not have 1,000 meaningful relations,
+  nL high-frequency words might have more than that
+  * For example, a SG model with bound DEPS context has _rather_ as the neighbor
+  of _quite_ at rank 920
+* 908,000 word pairs were processed per POS (monosemous / polysemous).  for
+* resources: Wiktionary and WordNet, since BabelNet’s maximum usage quota for
+* The dictionaries covered 76,946 (28.51%) of all the neighbor words; another
+  124,511 (46.14%) were detected as proper nouns (as expected of Wikipedia)
+* Thus, only 25.35% of the total vocabulary was not covered by LDT.
+
+## 4.4 Extrinsic tasks
+
+* 8 extrinsic tasks 
+  * selection is similar to what Nayak+ (2016) proposed as representative
+ * we select simpler models for evaluation
+   * following the recommendation of Nayak+ (2016) 
+   * more complex models often yield better accuracy, but they
+     could smooth out the performance of different word embeddings and also
+     raise the question of whether the gains are due to the model or the embed
+
+* morphological and syntactic info is targeted by two sequence labeling tasks:
+  POS-tagging and chunking. We use the
+  * CoNLL 2003 shared task dataset (Tjong Kim Sang and De Meulder, 2003),
+  * method by Li+ (2017).  The model is a
+  * softmax classifier on the window-based concatenation of word embeddings
+    of every training example (window size 3, 20 training epochs).
+
+* Semantic information at the word level is targeted by
+  * one more CoNLL 2003 shared task: named entity recognition (NER),
+    * evaluated in the same way as POS-tagging and chunking. We also consider
+  * multi-way classification of semantic relations (Relation class.) between
+    pairs of nominals in the SemEval 2010 task 8 dataset (Hendrickx+ 2010).
+    * The model we use is similar to the model by Zeng+ (2014)
+      * a CNN equipped with word and distance embeddings.
+
+* 3 tasks relying on how the word embeddings
+  * encode semantic information, and
+  * can be combined into an accurate sentence representation. The
+  * sentence-level sentiment polarity classification (Sentiment (sent.)) task
+    is tested with the MR dataset of short movie reviews (Pang and Lee, 2005).
+    Binary classification is performed by a simplified version of the model
+    proposed by Kim (2014).
+
+* document-level polarity classification (Sentiment (text))
+  with the Stanford IMDB movie review dataset (Maas+ 2011)
+  * Polarity is harder to estimate at the document than at the sentence level,
+    because sentiment is more likely to be mixed. The task is performed with a
+  * single layer LSTM with 100 hidden units.
+
+* classification of subjectivity and objectivity (Subjectivity class.) is
+  tested on Rotten Tomato user review snippets vs official movie plot summaries
+  (Pang and Lee, 2004)
+  * method by Li+ (2017), employing a simple logistic regression model for the
+    binary classification task
+  * input sentences are represented as a sum of their constituent word vectors
+
+* natural language inference task: the SNLI dataset (Bowman+ 2015)
+  * Similarly to the original proposal
+  * two separate LSTMs to get a repr of the premise and the hypothesis
+    using the last hidden state
+  * The two hidden representations are merged and fed into a
+    50-unit dense layer, over which 3-class classification with softmax
+
+## 4.5 Intrinsic tasks
+
+* lack of correlation between the performance of word embedding models on tasks
+  * relatedness and sequence labeling tasks (Chiu+ 2016)
+  * Ghannay+ (2016) on sequence labeling and mention detection tasks 
+  * hE, these studies have a limited selection of word embeddings (amounting to
+    9 and 5 data points, correspondingly)
+  * focus on the same sequence labeling CoNLL tasks.
+* We explore the problem with a wider selection of extrinsic tasks The
+  * WordSim353 (Finkelstein+ 2002), together with
+  * its split into similarity and relatedness sections (Agirre+ 2009),
+  * RareWords (Luong+ 2013)
+  * MTurk (Radinsky+ 2011)
+  * MEN (Bruni+ 2014)
+  * SimLex999 (Hill+ 2015) similarity dataset. For the
+* analogy taskwe use BATS dataset (Gladkova+ 2016), which is currently
+  the largest analogy dataset for English
+  * We report separate scores for inflectional and derivational morphology,
+    lexicographic and encyclopedic semantics, and the average of all
+    categories
+  * The evaluation is performed with the SOTA LRCos method (Drozd+ 2016) 
+* Spearman’s correlation with the human judgement scores
 
 # 5 Results 6
 
 ## 5.1 Correlation analysis
+
+## 5.2 Profiling embeddings with LD
+
+## 5.3 LD for parameter search
 
 # 6 Discussion and Future Work 10
 
