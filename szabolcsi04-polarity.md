@@ -154,7 +154,7 @@ Part One: PPIs as double NPIs 4
 * _some_ can scope below an antiadditive (ie not) if it is not in its immed
   scope (Kroch 1979),
   (19) John didn’t offend someone because he was malicious (but bec he was stup)
-  √ not > because ... > some Nem azért 
+  √ not > because ... > some Nem azért
 * PPIs can scope below extraclausal negation and other extraclausal NPI-licensor
   * I remain agnostic as to the precise category specification
     (24) I don't think that John called someone

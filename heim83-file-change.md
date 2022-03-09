@@ -133,7 +133,7 @@ Irene Heim
  =     how you get from the file that obtains prior to the utterance to
  =     the file that comes to obtain as a result of the utterance
  =   * The system moreover includes an assignment of truth conditions to files
- =   * logical forms themselves are not assigned truth conditions, only thr files 
+ =   * logical forms themselves are not assigned truth conditions, only thr files
 * I will elaborate on its various components in the next few sections
 
 # 4 Files and the World 6
@@ -169,7 +169,7 @@ Irene Heim
  = * These assumptions about logical form are taken over from
  =   Chomsky's "Revised Extended Standard Theory" (May 1977) and Reinhart (1976)
 * ~ rules discriminate between semantic categories, eg variables, operators, etc
- = * both that derive logical forms and 
+ = * both that derive logical forms and
  =   that interpret them by assigning them file change potentials
  = * Here I will not go into such questions as
  =   how many and which semantic categories there are, and
@@ -241,7 +241,7 @@ Irene Heim
 ```
  = Dom(F 1) = Dom(F_2) = {1, 2}
  = Sat(F 1) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, and a_2 bit a 1}
- = Sat(F_2) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, a_2 bit a 1, and 
+ = Sat(F_2) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, a_2 bit a 1, and
  =                                                                   a 1 hit a_2}
 ```
 * the transition from Sat (F 1) to Sat (F_2) consists in
@@ -255,9 +255,9 @@ Irene Heim
  = The general rule (subject to later revision):
  = (13) Let F be a file, and let p be an atomic proposition that consists of
  = an n-place predicate R and an n-tuple of variables whose indices are i_1,..i_n
- = `Sat(F + p) = {a N : a N \in Sat(F) and <a_{i_1}, ..., a_{i_n}> \in Ext(R)}` 
- = Applied to the file F 1 and the logical form (12a), (13) gives us: 
- = Sat(F 1 + (12a)) = Sat(F_2), as intended 
+ = `Sat(F + p) = {a N : a N \in Sat(F) and <a_{i_1}, ..., a_{i_n}> \in Ext(R)}`
+ = Applied to the file F 1 and the logical form (12a), (13) gives us:
+ = Sat(F 1 + (12a)) = Sat(F_2), as intended
 * the choice of indices in the logical form that grammar provides for the
  = sentence "She hit it": there are infinitely many
  = * We also have to say something to explain that despite the infinity of
@@ -306,7 +306,7 @@ Irene Heim
  =                 M = {i 1, ..., i n}, and <b i 1, ..., b i n > \in Ext(R)}`
  = * \cup in unification of sequences
  =   * the union of two sequences is itself a sequence just in case they coincide
- =     on their common domain 
+ =     on their common domain
  = * allows for cases where F + p has a larger domain than F
  = * informally, (18) says that every sequence in Sat(F + p) has to include as
  =   sub-sequences a sequence `a_N` satisfying F and a sequence b M satisfying the

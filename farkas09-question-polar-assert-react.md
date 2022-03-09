@@ -110,7 +110,7 @@ Donka F. Farkas, Kim B. Bruce
     * The common ground is reconstructed via a relation, called _settled_,
       defined between a content and a discourse structure
     * _settled_ includes
-      questions that participants are committed to supplying an answer to 
+      questions that participants are committed to supplying an answer to
       requests they are publicly committed to carrying out
 * We present here a model that separates a Stalnakerian cg
   from the discourse commitment set of each participant
@@ -162,7 +162,7 @@ Donka F. Farkas, Kim B. Bruce
     neither p nor ¬p should be in the cg
   * In our model, p \in `DC_A`, ¬p \in `DC_B` and p, ¬p !\in cg
   * consistent cg and coherent particips even though `DC_A ∪ DC_B` is not consi
-  * the level that counts for purposes of presupposition satisfaction 
+  * the level that counts for purposes of presupposition satisfaction
     is the cg rather than either of the participant’s commitment set
     * eg, after having agreed to disagree on whether Sam is home, it would be
       infelicitous for A to say _Since Sam is home, the children are not alone_
@@ -267,8 +267,8 @@ Donka F. Farkas, Kim B. Bruce
 * notation we use throughout the rest of the paper. The table T in a context
   * to represent traditional stack operations on T :
   1. push(e, T) represents the new stack obtained by adding item e to the top
-  2. pop(T) represents the stack obtained by popping off the top item of T 
-  3. top(T) represents the top item of the stack T 
+  2. pop(T) represents the stack obtained by popping off the top item of T
+  3. top(T) represents the top item of the stack T
   4. remove(e, T) represents the stack obtained by removing the top-most
      occurrence of e from stack T.  If e does not occur in T, then T is returned
 * Lastly, let
@@ -339,7 +339,7 @@ Donka F. Farkas, Kim B. Bruce
     * constant across all these situations
     * connected to sentence form, prosodical properties, & the input conv state
   * We thus define speech acts in terms of
-    * their Heimean context change potential (CCP) 
+    * their Heimean context change potential (CCP)
     * not the actual intentions of speakers
 * We follow here Stalnaker’s suggestion that
   a side-effect of any speech act is to register in the common ground the fact
@@ -506,8 +506,8 @@ Donka F. Farkas, Kim B. Bruce
       * reversing markers such as no way, definitely not, etc
       * Denying responding assertions, exemplified by Ben’s assertion above will
         be examined in detail in the next subsection
-  * one can eventually reach a stable state in one of two ways: 
-    * one of the participants retracts their assertion; or 
+  * one can eventually reach a stable state in one of two ways:
+    * one of the participants retracts their assertion; or
     * the participants ‘agree to disagree’
     * We deal here only with the latter because
       * it underscores the need to separate participant commitments from the cg,
@@ -561,7 +561,7 @@ Donka F. Farkas, Kim B. Bruce
     * simpler than reversing moves
       because the relation they involve is identity rather than complementation
       ie, the answers polar questions project are not identical even in non-bias
-      since confirming answers are less marked 
+      since confirming answers are less marked
     => further distinguish positive and negative polar questions
     * polar questions involve a weak bias towards the least marked answer we
     * weak bias of positive polar questions towards a positive answer, and
@@ -585,7 +585,7 @@ Donka F. Farkas, Kim B. Bruce
   the Table, reactions to such questions can be neither confirming nor reversing
 * In order to capture the common denominator of respoinding moves we propose to
   * two relative polarity features,
-    [same] marking confirming moves 
+    [same] marking confirming moves
     [reverse] marking reversing ones
 * Recall that the crucial difference between assertions and (polar) questions is
   * commit/not their author to the propositional content of the asserted sentenc

@@ -183,11 +183,11 @@ EMNLP 2020
     technical details see Appendix A)
   * Søgaard+ (2018)
     * these eigenvalues are compact representations of the graph Laplacian,
-    * their comparison reveals the degree of (approximate) isomorphism.  
+    * their comparison reveals the degree of (approximate) isomorphism.
     * similar in spirit to our approach,
     * hE constructing nearest neighborhood graphs (and then analyzing their
       eigenvalues) removes useful information on the interaction between
-      all vectors from the initial space, which our spectral method retains.  
+      all vectors from the initial space, which our spectral method retains.
 *  Gromov-Hausdorff distance (GH) introduced by Patra+ (2019)
   * measures the maximum distance of a set of points to the nearest point in
     another set, or in other words

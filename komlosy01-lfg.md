@@ -750,7 +750,7 @@ utalhatnak.
 * Az általánosításokra támaszkodva megfogalmazhatóak
   a kategoriális struktúra univerzális elvei,
   s ezekből megszorítások vezethetők le arra vonatkozóan,
-  hogy milyen c-struktúrák lehetségesek a természetes nyelvekben 
+  hogy milyen c-struktúrák lehetségesek a természetes nyelvekben
 * Az univerzális elvek:
   1. 1. az endocentricitás elve
   2. a predikátum─argumentum-viszony lokális jellegének az elve
@@ -770,7 +770,7 @@ utalhatnak.
   * a lexikális és funkcionális kategóriák projekcióit leíró X'-elméletek
 * Az X'-elmélet minden változata magában foglalja az endocentricitás elvét:
   * minden frázis összetevői között feltételez egy kategoriális fej
-  * megszabja a frázis lényegi szintaktikai tulajdonságait, mindenekelőtt kateg 
+  * megszabja a frázis lényegi szintaktikai tulajdonságait, mindenekelőtt kateg
 1. A kategoriális struktúrában minden szerkezet feje azonos kategóriájú, de
    kisebb vonásszámú (komplexitású), mint a szerkezet maga. (Az összetevők
    közötti vessző a sorrend tetszőlegességére utal):
@@ -789,7 +789,7 @@ szokták még felvenni:
    aa. X' → X', YP
    ab. `X' → X , YP*`
 2. A szabad határozókat (adjunktumokat) általában
-  XP által dominált XP testvéreiként vagy X' által dominált X' testvéreiként 
+  XP által dominált XP testvéreiként vagy X' által dominált X' testvéreiként
   XP -> XP   YP
           [ADJUNCT]
   X' -> X'   YP
@@ -825,20 +825,20 @@ szokták még felvenni:
    kombinációi meglehetősen korlátozottak.  Az LFG sajátosságai az X' elmélet
    vonatkozásában:
   1. Az angolhoz hasonló nyelvek alapvetően valóban az X' elveit követik, de ez
-     nem minden nyelvben szükségszerű.  
+     nem minden nyelvben szükségszerű.
 * Az X' elmélet szerint építkező nyelvekre is állnak azonban az alábbiak:
   2. Minden c-struktúrabeli összetevő jelenléte (a fejeké is!) opcionális.
      (Jelenlétük nem a c-struktúrákra, hanem az f-stukturákra vonatkozó
      jólformáltsági követelmények, megszorítások és elvek ─ mint pl. a
      teljesség, koherencia, konzisztencia, l. 1.3.3. ─ interakciójából
-     következik.) 
+     következik.)
   3. Betartandó a lexikai integritás tétele (l. 1.3.2.2.)
     * minden egyes X^0-t csak morfológiailag teljes szó képviselhet ─
       puszta affixumok vagy különálló morfológiai jegyek (bár mindkettő
       információt adhat az f-struktúrának) nem generálhatóak a
       frázisstruktúrában. Ez az F^0-okra is követelmény
     * Az angolban pl.  C kategóriájú elem a that, if,
-      I kategóriájúak az idő-mód segédigék, minden más ige pedig V 
+      I kategóriájúak az idő-mód segédigék, minden más ige pedig V
     * Az oroszban (legalábbis az egyik lehetséges elemzés szerint)
       C a что 'hogy' és a kérdő ли '-e, vajon', I az összes finit igealak, míg
       V^0-ba az infinitívuszok tartoznak
@@ -862,7 +862,7 @@ szokták még felvenni:
   anélkül, hogy előbb ezek egy részével igei típusú projekciókat (V', VP) alkotn
 * Ennek kezelésére azt feltételezzük, hogy
   az univerzális grammatika módot ad egy
-  nem projektív, egzocentrikus, az IP-vel nem egybeeső S kategóriára is. 
+  nem projektív, egzocentrikus, az IP-vel nem egybeeső S kategóriára is.
   * Nem projektív: nincs kategoriális (=strukturális) feje,
   kategóriája egyetlen X^0-éval sem azonosítható.
   * Egzocentrikus: funkcionális fejének kategóriája nincs megkötve ─
@@ -896,7 +896,7 @@ c                                        subj
 
 * A projektivitás hiánya miatt S nem köteles binárisan ágazni ─
   * lehet több, akár nagyon sok különböző kategóriájú közvetlen összetevője is:
-  * `S → X*` ─ ahol az X-ek tetszőleges fajtájú és vonásszámú kategóriák 
+  * `S → X*` ─ ahol az X-ek tetszőleges fajtájú és vonásszámú kategóriák
   * ilyenkor az egyes szintaktikai funkciókat viselő összetevők helye általában
     nem rögzített, azaz a szerkezet nem konfigurációs.
 
@@ -933,7 +933,7 @@ a.  IP/I' b.  IP/I' I S I S gwelodd gwnaeth
                   János        NP                       János    VP      NP
                             sárkány                             látás sárkány
 
-## 2.2. Attribútumok és értékek 
+## 2.2. Attribútumok és értékek
 
 ### 2.2.1. A funkcionális attribútumok/jegyek [functional attributes/features]
 
@@ -958,9 +958,9 @@ Az érték lehet:
   2. szemantikai forma: 'BOY', 'LOVE<(↑SUBJ),(↑OBJ)>' (l. 2.6.2.)
   3. alárendelt f-struktúra
   4. fonológiai forma: it, there (angol); fittyet [hány vmire], [bedobja] a
-     törülközőt 
+     törülközőt
 1. Az egyszerű szimbólumok [simple symbols] a nyelvleírásnak (az univerzális
-   grammatikának) primitív általános terminusai, számuk korlátozott (azaz véges) 
+   grammatikának) primitív általános terminusai, számuk korlátozott (azaz véges)
 2. A szemantikai formák [semantic forms] ─ részletes jellemzésüket l. az 2.6.2.
   * a nyelvi egységeknek egyrészt a jelentését, másrészt pedig
     a jelentésükből magyarázható egyedi szintaktikai tulajdonságaikat kódolják.
@@ -970,7 +970,7 @@ Az érték lehet:
   * Forrásuk a lexikon: egy/más részük ott őrződik/ keletkezik, tehát a
   * Felépítésüket azonban mindig teljes mértékben a szótári komponensben nyerik
     * A lexikai integritás értelmében nincs a szintaxis számára látható szerkjük
-  * felső vesszők között jelenítjük meg őket.  
+  * felső vesszők között jelenítjük meg őket.
   * teljes grammatika a tételek jelentését a belső jelentésszerkezetet is
     feltüntető formulák képében rögzíti
     * A szintaxis számára azonban az elemek belső jelentésszerkezete érdektelen.
@@ -993,7 +993,7 @@ A különböző típusú értékek előfordulási helyei:
 előfordulási hely     értéktípus
 
 a. f-struktúrában                       CASE DATIVE
- lexikai tételben  egyszerű szimbólum   PRED 'pro' 
+ lexikai tételben  egyszerű szimbólum   PRED 'pro'
     annotációkban  szemantikai forma    PRED 'LOVE<(↑SUBJ), (↑OBJ)>'
 
 b. f-struktúrában   alárendelt f-struktúra      SUBJ [ ]
@@ -1051,7 +1051,7 @@ b. f-struktúrában   alárendelt f-struktúra      SUBJ [ ]
 * Grammatikai tartalmuk: az összetevők (mindenekelőtt a lexikai egységek)
   szintaktikailag releváns, nem viszonyjellegű tulajdonságai, morfoszintaktikai
 * az összes lehetséges emberi nyelv leírásához elégséges a grammatikai
-  jegyeknek egy korlátozott (véges) univerzális halmazával számolnunk 
+  jegyeknek egy korlátozott (véges) univerzális halmazával számolnunk
   * eg CASE, GENDER, NUMBER, PERSON, TENSE, PRED, FINITE stb.
 * Többségük tehát a hagyományos leírásokból is ismert grammatikai tulajdonságok
 * e tulajdonságokat a szóalakok hordozzák => a lexikai kódolás (2.7.) vezeti be
@@ -1113,7 +1113,7 @@ b. f-struktúrában   alárendelt f-struktúra      SUBJ [ ]
   * nyelvtől (1 nyelven belül esetleg még szerkezettől) függően is változhat,
     hogy az ún. birtok(os jelző) vonzat-e, vagy csak szabad határozó.
 * Megjegyzések
-  1. Az indexek értelmezését l. 2.3.2.1.2.  
+  1. Az indexek értelmezését l. 2.3.2.1.2.
   2. Az OBJ2 és az OBJθ viszonyáról l. 2.3.2.1.1.
 * azokat, amelyek az X' elvek szerint felépülő endocentrikus szerkezetekben
   komplementumpozícióban (azaz X' projekción belül) jelennek meg,
@@ -1205,17 +1205,17 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
        *Maguk/egymás megmutatták a fiúkat Palinak a fényképen.
     2. Fonológiailag realizálatlan marad, ha referenciálisan függ egy másik
        régens valamely vonzatától (tehát ha az kontrollálja őt). Példa az
-       alábbi, 3.  pontban látható.  
+       alábbi, 3.  pontban látható.
     3. Egyéb feltételek teljesülése esetén
       ő maga kontrollálhat ilyen realizálatlan alanyt
       pl.: János elment Ø vásárolni.
     4. Passzívumban ─ ha egyáltalán megjelenik ─ "visszalép" a ranglétrán:
        egyes nyelvekben OBLθ-ként, másokban ADJ funkcióban jelenik meg.
     5. Mellérendelésbeli azonosság esetén törölhető. (Nyelvfüggő tulajdonság.) Pl.:
-      I came and got the book.  
-      * Nem kötelező minden nyelv minden igéjének alannyal rendelkeznie. 
+      I came and got the book.
+      * Nem kötelező minden nyelv minden igéjének alannyal rendelkeznie.
         * angol időjárás-igék alanyaként álló it szemantikailag talán nem üres,
-          mivel kontrollálhat XADJ-ot, de az oroszban ez nem megy: 
+          mivel kontrollálhat XADJ-ot, de az oroszban ez nem megy:
       While snowing, it never rains.
       'Miközben havazik, sohasem esik.'
       `*`Темнея, стало очень холодно.
@@ -1224,15 +1224,15 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
         alanyi viszonyuk. Ezt jól illusztrálja az, hogy az orosz példa magyar
         megfelelője szintén agrammatikus.
   * OBJ
-    1. Passziválásnál alannyá lép elő. (Nyelvfüggő tulajdonság.) 
-    2. Kontrollálhat bizonyos másodlagos predikátumokat, pl. a rezultatíumvokat.  
+    1. Passziválásnál alannyá lép elő. (Nyelvfüggő tulajdonság.)
+    2. Kontrollálhat bizonyos másodlagos predikátumokat, pl. a rezultatíumvokat.
       (Nyelvfüggő tulajdonság.)
       Pl.: János Pétert elküldte Ø vásárolni.
   * OBJ2: nem könnyű elkülöníteni az OBJ-től.
     * Külön funkcióként való felvételét tulajdonképpen annak köszönhette, hogy
       a ditranzitív igék kezelése egyébként ütközött volna a funkcionális
       unicitás (l. 1.3.1.2.) követelményével.
-    * Szintén kontrollálhatott realizálatlan alanyt.  
+    * Szintén kontrollálhatott realizálatlan alanyt.
     * a korábban OBJ2-nek tekintett vonzatokat újabban thematikusan kötött
       tárgyaknak tekintik és OBJθ-nak jelölik (l. alább).
 
@@ -1246,7 +1246,7 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
     valamely képviselője).
 * Ilyen funkciók:
   * COMP, XCOMP, ADJ, XADJ ─ a PROP[osition] (=Állítás) thematikus szerepre
-    korlátozódnak 
+    korlátozódnak
   * OBLθ típusú funkciók: a PROP-tól különböző konkrét thematikus szerepek vagy
     szereposztályok kifejezésére korlátozott oblikvuszi funkciók:
     OBL_AG, OBL_LOC, OBL_DIR stb.
@@ -1285,9 +1285,9 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
     fordulnak elő, így a magyarban nem találkozunk velük
     eg John (SUBJ) gave Mary (OBJ) a book (OBJ2/OBJ TH )
   * Az ige mögött másodikként álló tárgy kizárólag Téma szerepű argumentumot
-    nevezhet meg, és 
+    nevezhet meg, és
     * szemben az igét közvetlenül követő, OBJ funkciójú tárggyal ─
-      sohasem fejezheti ki pl. az esemény BEN[eficiens] szerepű résztvevőjét. 
+      sohasem fejezheti ki pl. az esemény BEN[eficiens] szerepű résztvevőjét.
 
 ##### 2.3.2.1.3. Címkézett funkciók [idiosyncratically marked oblique objects]
 
@@ -1311,7 +1311,7 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
   * saját régensének valamely szemantikai argumentumával párosított (azt kifej)
   * Thematikus szerepe van és régense szemantikai szelekciót gyakorol rá.
   * Minden szubkategorizáló funkció alkalmas (a megfelelő típusú) thematikus
-    vonzatok kifejezésére.  
+    vonzatok kifejezésére.
 * 2. Nem-logikai/nem-thematikus vonzat [nonlogical/nonthematic argument]: olyan
   * nincs párosítva saját régensének egyetlen szemantikai argumentumával sem,
   * nincs jelentése, vagy
@@ -1331,11 +1331,11 @@ discourse-func  ~~~~~~~~non-d-functions~~~~~~~~
   felépítésük olyan, mint a szokásos mondatoké: egy predikátumot az
   argumentumaival és esetleges szabad határozóival együtt tartalmaznak.
   Szintaktikai kategóriájuk lehet:
-  * CP (a COMP és ADJ funkciót viselőké, azaz a zárt funkciójúaké ─ l. 2.3.3.) 
+  * CP (a COMP és ADJ funkciót viselőké, azaz a zárt funkciójúaké ─ l. 2.3.3.)
     Pl.: Péter tudja, [COMP hogy Mari tegnap elment.]
     [ADJ Mivel Mari tegnap elment], Péter szomorú.
-  * XP (az XCOMP és XADJ funkciót viselőké, azaz nyitott funkciójúaké ─ 2.3.3.) 
-    Pl.: János utál [XCOMP hagymát pucolni].  
+  * XP (az XCOMP és XADJ funkciót viselőké, azaz nyitott funkciójúaké ─ 2.3.3.)
+    Pl.: János utál [XCOMP hagymát pucolni].
     János [XADJ verseket skandálva] pucolta a hagymát.
 
 ### 2.3.3. Teljesség (logikai zártság) szerint
@@ -1348,7 +1348,7 @@ zárt ←→ nyitott (=predikatív)
   információkra való hivatkozás nélkül) is logikai-szemantikai értelemben zárt
   formulát képvisel. Az XCOMP és XADJ kivételével mindegyik funkció ilyen.
 
-2. Nyitott v. predikatív funkciók [open/predicative functions]: 
+2. Nyitott v. predikatív funkciók [open/predicative functions]:
   * Nyitott grammatikai funkciót hordoznak mindazok (és csak azok) a
     szintaktikai szerkezetek, amelyekben
     a fejükként szereplő régens valamelyik vonzatviszonyának a referense a
@@ -1410,7 +1410,7 @@ alcsoportot alkot.
  |    funkciók                                    FOCUS
 them  |          |      SUBJ                              OBJ2
 korl             |
-tlan      vonzat~       OBJ, 
+tlan      vonzat~       OBJ,
  |        funkciók      OBJ2
                  |
  |               |      OBLθ
@@ -1420,7 +1420,7 @@ korlt propozi~   |      COMP      XCOMP
       funkciók
 
 * Továbbá
-  * POSS(essor), ami valószínűleg korlátozatlan 
+  * POSS(essor), ami valószínűleg korlátozatlan
   * Ø funkciószimbólum (l. 2.6.2.6.1.).
 
 ## 2.4. A szintaktikai információkat kódoló formulák
@@ -1458,7 +1458,7 @@ korlt propozi~   |      COMP      XCOMP
                     [attribute marker]              [type marker] [value marker]
 
 * a rész tartalma:  (funkcionális jegy/attribútum)  az egyenlőség értéke
-                                                    típusa 
+                                                    típusa
 
                     (f5 XCOMP SUBJ)                 =             (f5 OBJ)
                     (f4 PRED)                       =             'pro'
@@ -1480,7 +1480,7 @@ korlt propozi~   |      COMP      XCOMP
     amelyekből a mondatok f-struktúrái felépülnek
   * A mondat f-struktúráját kizárólag a felszíni szerkezetben (l. 1.1.2.2.)
     megtalálható funkcionális egyenlőségeknek a halmazából építjük fel
-  * Ezt a halmazt a mondat funkcionális leírásának nevezzük (l. az 1.2.4.) 
+  * Ezt a halmazt a mondat funkcionális leírásának nevezzük (l. az 1.2.4.)
   * A funkcionális leírásból a megfelelő f-struktúra az ún. kiértékelő algoval
 
 ### 2.4.2. A funkcionális egyenlőségek alaptípusai és típusjelölőik
@@ -1488,11 +1488,11 @@ korlt propozi~   |      COMP      XCOMP
 
 * A funkcionális egyenlőségek különböző típusai eltérő feladatokat látnak el.
   Egy-egy konkrét egyenlőség ugyanis vagy/vagy
-  1. maga is egy minimális f-struktúrát képvisel, amelyet bevezet 
+  1. maga is egy minimális f-struktúrát képvisel, amelyet bevezet
      (ilyenek a definiáló funkcionális egyenlőségek, részletesebben l. 2.4.5.1)
   2. olyan követelményt ad meg, amelyet ~ állít fel az őt befogadó f-struval sz
     a. valamely szótári tétel vagy
-    b. valamely összetevőnek a grammatikai szerepe 
+    b. valamely összetevőnek a grammatikai szerepe
       (ilyenek a megszorító egyenlőségek és az egzisztenciális megszorítások,
       részletesebben l.  2.4.5.2. és 2.4.5.3.)
 
@@ -1553,7 +1553,7 @@ S ->   NP           VP
 * A kategoriális szerkezet (c-struktúra) szempontjából minden frázisban csak
   azt az összetevőt tekintjük fejnek,
   amelynek a projekciója az adott frázis.
-  * a frázis kategoriális, strukturális vagy X' fejének nevezzük: 
+  * a frázis kategoriális, strukturális vagy X' fejének nevezzük:
   X^{i+1} -> ... X^i ...
   (más elnevezései: kategoriális fej, X' fej)
 * Az f-struktúra szempontjából
@@ -1577,10 +1577,10 @@ S ->   NP           VP
     * sem pedig az, hogy a ↑=↓ annotációval ellátott testvércsomópontok csak az
       anyacsomópont fstruktúrájának legfelső szintjére vihessenek be értékeket.
 * A PRED jegyek unifikálhatatlanságából és a konzisztencia (=értékunicitás)
-  követelményéből (l. 1.3.3.1.) következik, hogy 
+  követelményéből (l. 1.3.3.1.) következik, hogy
   1. ha ugyanabban a szerkezetben több funkcionális fej van jelen, akkor
      közülük csak egynek lehet saját (nem alárendelt szintre küldött) PRED jegy
-* Az X-vonás elméletből következik, hogy 
+* Az X-vonás elméletből következik, hogy
   2. egy szerkezetben csak egyetlen összetevő minősülhet strukturális fejnek.
     * Ez nem zárja ki azt, hogy további főkategóriák is hordozhassanak ↑=↓ anno
 
@@ -1624,9 +1624,9 @@ S ->   NP           VP
 * Az utolsó fenti példához tartozó redundancia-szabály: a (↑PARTICIPLE) minden
   igealaknak jegye, de a jegy értéke jelöletlen esetben: NONE
 * Nem kell redundancia-szabállyal ellentételezni a FORM-okra vonatkozó
-  megszorításokat. (A FORM-azonosságok mindig megszorító azonosságok.) Ugyanis 
+  megszorításokat. (A FORM-azonosságok mindig megszorító azonosságok.) Ugyanis
   1. ahol ilyen megkötés nincs, ott bármilyen NP szerepelhet argumentumként
-     (olyan is, amelyet más tétel FORM-os megszorítással követel magának), 
+     (olyan is, amelyet más tétel FORM-os megszorítással követel magának),
   2. maguknak a megkövetelt formáknak a szócikkeiben is fel kell tüntetni
      (külön tételként megadni), hogy ők így (jelentés nélküli formaként) is
      előfordulnak
@@ -1659,7 +1659,7 @@ S ->   NP           VP
 * Kondicionálisként ezért nem értelmezhetjük, mert azt (lévén [¬A ∨ B] értelmű)
   az utótag igazsága az előtagétól függetlenül teszi igazzá
 * a következő interpretációban értelmezzük:
-  A ⇒ B = df ¬A ∨ (A c ∧ B) ─ 
+  A ⇒ B = df ¬A ∨ (A c ∧ B) ─
   azaz a B-t tartalmazó minimális f-struktúrában A-nak megszorító azonosságként
 
 ## 2.5.  A szintaktikai információk kódolása a szintaxisban
@@ -1695,19 +1695,19 @@ S ->   NP           VP
   az egyes nyelvek egyes kategóriatípusaira egyenként feltárandó empirikus tény
   * Még az is előfordul, hogy ugyanazon szerkezetben csak egyes összetevőknek a
     funkciója van konfigurációsan rögzítve, másoké viszont nem konfigurációs
-    pl 
+    pl
     1. Az angolban csak a mondat "magja" konfigurációs,
-      a PP-k többnyire nem konfigurációsak: 
-      V' → V_{↑=↓} (NP_{(↑OBJ)=↓}) (NP_{(↑OBJ2)=↓}) PP_{(↑OBLθ)=↓}^* 
+      a PP-k többnyire nem konfigurációsak:
+      V' → V_{↑=↓} (NP_{(↑OBJ)=↓}) (NP_{(↑OBJ2)=↓}) PP_{(↑OBLθ)=↓}^*
     2. A walpiriben konfigurációs elem az AUX kötelező második pozíciója:
       S → X AUX X*
-            ↑=↓ 
+            ↑=↓
 * a bennük szereplő összetevők funkciójának kifejezését mindkét
   szerkezettípusban általános elvek korlátozzák.
 
 ### 2.5.1. A konfigurációs kódolás [configurational encoding]
 
-#### 2.5.1.1. Funkciótársítás az endocentrikus szerkezetekben 
+#### 2.5.1.1. Funkciótársítás az endocentrikus szerkezetekben
 
 Az X'-elveknek megfelelően felépülő frázisok funkcionális jellemzése (vagyis
 az, hogy összetevői milyen funkciókat hordozhatnak, tehát hogyan annotálandók)
@@ -1753,7 +1753,7 @@ univerzális elveiből:
 
   1. A lexikai kategóriák komplementumai a nem-diskurzus funkciójú
      vonzatfunkciókat (=komplementumfunkciókat: OBJ, OBJθ, OBLθ, COMPL)
-     hordozzák. Az ezek közötti választás lexikailag determinált: 
+     hordozzák. Az ezek közötti választás lexikailag determinált:
 
   L' -> L     YP
           (↑c-fn)=↓

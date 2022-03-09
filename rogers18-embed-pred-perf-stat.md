@@ -1,5 +1,5 @@
-What’s in Your Embedding, And How It Predicts Task Performance 
-Anna Rogers, Shashwath Hosur Ananthakrishna, Anna Rumshisky 
+What’s in Your Embedding, And How It Predicts Task Performance
+Anna Rogers, Shashwath Hosur Ananthakrishna, Anna Rumshisky
 COLING 2018
 
 # Abstract

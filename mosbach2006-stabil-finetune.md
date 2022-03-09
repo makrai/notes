@@ -378,7 +378,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * consistent with previous work (Hao+ 2019)
 * we argue that it is even desirable to train for a larger number of iterations
   since the development accuracy varies considerably during fine-tuning and it
-  does not degrade even when the training loss is as low as 10 −5 
+  does not degrade even when the training loss is as low as 10 −5
 
 # 6 A simple but hard-to-beat baseline for fine-tuning bert
 

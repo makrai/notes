@@ -38,7 +38,7 @@ Draft of December 29, 2021
 * neo-Davidsonian event representation of these two sentences would be
   * how in Chapter 15 we represented the meaning of arguments for sentences
   (19.1) Sasha broke the window
-  (19.2) Pat opened the door 
+  (19.2) Pat opened the door
 ∃e, x, y Breaking(e) ∧ Breaker(e, Sasha) ∧ BrokenThing(e, y) ∧ Window(y)
 ∃e, x, y Opening(e) ∧ Opener(e, Pat) ∧ OpenedThing(e, y) ∧ Door(y)
   * the roles of the subjects of the verbs break and open are Breaker and Opener
@@ -87,7 +87,7 @@ Draft of December 29, 2021
           THEME
 (19.7)   The window was broken by John
           THEME                 AGENT
-* break has (at least) the possible arguments AGENT, and INSTRUMENT 
+* break has (at least) the possible arguments AGENT, and INSTRUMENT
 * thematic grid, θ-grid, or case frame
   * The set of thematic role arguments taken by a verb
   * there are (among others) the following possibilities for their realization
@@ -144,7 +144,7 @@ Draft of December 29, 2021
       causing an event or a change of state in another participant,
       being sentient or intentionally involved, moving)
     * the more an argument displays them, the greater the likelihood that the
-      argument can be labeled a PROTO AGENT 
+      argument can be labeled a PROTO AGENT
     * patient-like the properties (undergoing change of state,
       causally affected by another participant,
       stationary relative to other participants, etc.), the greater the likeliho
@@ -164,7 +164,7 @@ Draft of December 29, 2021
   * sem roles in PropBank are defined with respect to an individual verb sense
 * Each sense of each verb thus has a specific set of roles
   * Arg0, Arg1, Arg2, and so on
-  * In general, Arg0 represents the PROTO AGENT, and Arg1, the PROTO PATIENT 
+  * In general, Arg0 represents the PROTO AGENT, and Arg1, the PROTO PATIENT
   * The semantics of the other roles are less consistent, often spec for each V
     * nL there are some generalization
       * the Arg2 is often the benefactive, instrument, attribute, or end state,
@@ -173,7 +173,7 @@ Draft of December 29, 2021
 * eg some simplified PropBank entries for one sense each of _agree_ & _fall_
   * PropBank entries are called frame files
   * definitions in the frame file for each role are informal glosses 4 humans
-    * eg (“Other entity agreeing”), (“Extent, amount fallen”) 
+    * eg (“Other entity agreeing”), (“Extent, amount fallen”)
   (19.11) agree.01
         Arg0: Agreer
         Arg1: Proposition
@@ -284,7 +284,7 @@ Draft of December 29, 2021
                 along which the values of the ATTRIBUTE fluctuate
 * Some Non-Core Roles
   DURATION The length of time over which the change takes place
-  SPEED The rate of change of the VALUE 
+  SPEED The rate of change of the VALUE
   GROUP The GROUP in which an ITEM changes the value of an ATTRIBUTE in a specified way
 * words
   VERBS: advance climb decline decrease diminish dip double drop dwindle edge.
@@ -602,7 +602,7 @@ Draft of December 29, 2021
   (19.46) The door is open. ⇒ OPEN (door)
 * asserts that
   a single state-like predicate associated with _open_ underlies all of these
-  * meaning differences arises from the combination with CAUSE and BECOME 
+  * meaning differences arises from the combination with CAUSE and BECOME
 * can explain the similarity between
   states and actions or causative and non-causative predicates, it
   still relies on having a large number of predicates like _open_

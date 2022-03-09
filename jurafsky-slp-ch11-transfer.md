@@ -62,7 +62,7 @@ Draft of December 29, 2021
       acquiring knowledge from one task or domain, and then
       applying it (transferring it) to solve a new task
     * adding grounding from vision or from real-world interaction into
-      pretrained models can help build even more powerful models, 
+      pretrained models can help build even more powerful models,
       * nT text alone is remarkably useful, and
       * we will limit our attention here to purely textual models
 * two common paradigms for pretrained language models
@@ -101,7 +101,7 @@ Draft of December 29, 2021
 * the use of the same self-attention mechanism used in causal models
   * first step is to generate a set of key, query and value embeddings for each
     element of the input vector x
-    through the use of learned weight matrices W^Q, W^K, and W^V 
+    through the use of learned weight matrices W^Q, W^K, and W^V
   * These weights project each input vector `x_i` into its specific role as a
     key, query, or value.  q i = W^Q x_i; k i = W^K x_i; v i = W^V x_i (11.1)
   * The output vector `y_i` corresponding to each input element `x_i` is
@@ -128,7 +128,7 @@ Draft of December 29, 2021
     resulting in a matrix of shape N × d where
     each row contains a contextualized output embedding corresponding to each
     token in the input
-    SelfAttention(Q, K, V) = softmax ( Q K^T / √ d_k) V 
+    SelfAttention(Q, K, V) = softmax ( Q K^T / √ d_k) V
   * Fig. 11.3, the full set of self-attention scores represented by QK^T
     constitute an all-pairs comparison between the keys and queries for each
     element of the input
@@ -178,7 +178,7 @@ Draft of December 29, 2021
   * predict a missing item given the rest of the sentence
   * training: the model is deprived of one or more elements of an input sequence
     and must generate a probability distribution over the vocab
-    * cross-entropy loss from each of the model’s prediction 
+    * cross-entropy loss from each of the model’s prediction
   * can be generalized to any of a variety of methods that corrupt the training
     input and then asks the model to recover the original input
     * eg masks, substitutions, reorderings, deletions, and extraneous inserts
@@ -196,7 +196,7 @@ Draft of December 29, 2021
     * It is left unchanged
 * In BERT, 15% of the input tokens are sampled for learning
   * Of these, 80%/10%/10%
-  * The MLM training objective is to predict the original inputs for each 
+  * The MLM training objective is to predict the original inputs for each
     masked token using a bidirectional encoder of the kind described in 11.1
   * cross-entropy loss from these predictions drives the training process for
     all the parameters in the model
@@ -236,7 +236,7 @@ Draft of December 29, 2021
     * all the words within the span are substituted
       * to the same regime as that used in BERT: 80% [MASK], 10% rand, 10% kept
       * all the tokens in a given span are substituted using the same method
-    * As with BERT, the total token substitution is limited to 15% 
+    * As with BERT, the total token substitution is limited to 15%
     * the input is passed through the standard transformer architecture to
       generate contextualized representations of the input tokens
 * Downstream span-based applications rely on
@@ -343,7 +343,7 @@ Draft of December 29, 2021
   * With RNNs, we used the hidden layer associated with the final input element
   * with transformers, An additional vector is added to the model
     to stand for the entire sequence
-    * sometimes called the sentence embedding since it refers to the 
+    * sometimes called the sentence embedding since it refers to the
     * hE the same term is also used in other ways
   * In BERT, the [CLS] token plays the role of this embedding
     * added to the vocabulary and is prepended to the start of all input
@@ -466,7 +466,7 @@ Draft of December 29, 2021
     * set of named entity types, a span-based approach to NER is a
       straightforward classification problem
   * assign a label y, from the set of valid NER labels, to span in S(x)
-    * we’ll add the label NULL to the set of types in Y 
+    * we’ll add the label NULL to the set of types in Y
   * fine-tuning: supervised training data to learn the parameters of
     the classifier, the boundary representations, and
     the self-attention layer that generates the span content repr
@@ -477,7 +477,7 @@ Draft of December 29, 2021
     to generate a distribution over the possible labels, with the
     argmax score for each span taken as the correct answer. Fig. 11.10
   * A variation on this scheme designed to improve precision adds a
-    __calibrated threshold__ to the labeling of a span as != NULL 
+    __calibrated threshold__ to the labeling of a span as != NULL
 * two significant advantages to a span-based approach to NER
   over a BIO-based per-word labeling approach
   * BIO-based approaches are prone to a labeling mis-match problem
@@ -533,7 +533,7 @@ Draft of December 29, 2021
     language model’s tendency to generate toxic language somewhat (Gehman+ 2020)
   * analyzing the data used to pretrain large language models is important to
     understand toxicity and bias in generation, as well as privacy
-  * important that language models include datasheets or model cards 
+  * important that language models include datasheets or model cards
     * full replicable information on the corpora used to train them
 
 ## 11.7 Summary

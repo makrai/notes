@@ -219,7 +219,7 @@ Barbara H. Partee & Vladimir Borschev
     * not only about existence but also 'coming into existence', 'being
       present', occurring, being in one's perceptual field, etc
     * it turns the predication around: ` LOC has THING in it`
-    * If the LOC is implicit, this is a “thetic judgment”. 
+    * If the LOC is implicit, this is a “thetic judgment”.
 (17) PERSPECTIVE STRUCTURE:
   An “existence/location situation” BE(THING, LOC) may be structured from the
   perspective of the THING or of the LOCation
@@ -231,7 +231,7 @@ Barbara H. Partee & Vladimir Borschev
   * Any Perspectival Center must be normally be presupposed to exist
 * the subjects in NDS's are normally presupposed to exist, whereas
   in NES's, only the LOCation is normally presupposed to exist
-* This is confirmed by examples like (19). 
+* This is confirmed by examples like (19).
 (19) a.   Petja na koncerte ne byl.           Koncerta ne bylo
           Petja-NOM at concert NEG was-M.SG   Concert NEG was-N.SG
           'Petja was not at the concert.      There was no concert.'
@@ -242,8 +242,8 @@ Barbara H. Partee & Vladimir Borschev
   a presupposition that the domain of quantification is not empty
 * The nominative subject in (20) presupposes the existence of a non-empty set of
   students who 'might have been there', whereas
-* the genitive subject in (21) carries no such presupposition. 
-(20) 
+* the genitive subject in (21) carries no such presupposition.
+(20)
   [My nadejalis', čto na seminare budut studenty.]  No ni odin student tam ne byl
   [We hoped, that at seminar will.be students]      But NI one-NOM.M.SG student-NOM.M.SG there NEG was-M.SG.
   ['We hoped that (some of the) students would be at the seminar.] But not a single one of the students was there.'

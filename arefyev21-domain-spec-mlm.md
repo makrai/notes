@@ -1,4 +1,4 @@
-NB-MLM: Efficient Domain Adaptation of Masked Language Models for Sentiment Analysis 
+NB-MLM: Efficient Domain Adaptation of Masked Language Models for Sentiment Analysis
 Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov
 EMNLP 2021
 
@@ -9,10 +9,10 @@ EMNLP 2021
 * Masked Language Models (MLM) are
   * pre-trained on massive datasets, the
   * domain or task adaptation
-    * several GPU days 
+    * several GPU days
   * fine-tuning for the final task
-    * several GPU hours 
-* domain adaptation 
+    * several GPU hours
+* domain adaptation
   * additional training on domain or task-specific data improves performance
   * performed for each domain or task individually and is still rather slow,
 * the standard MLM objective leads to inefficiency for adaptation step because
@@ -39,8 +39,8 @@ EMNLP 2021
   duration reduced to 4K steps on Amazon, 20 epochs on IMDB, & 6 epochs on Yelp
 * same words masked in each example at each epoch.  For domain adaptation, only
   one epoch of training is done on a large dataset, hence, smaller temperatures
-  perform better.  
-* Figure 2 shows how the final classification accuracy improves 
+  perform better.
+* Figure 2 shows how the final classification accuracy improves
   * significantly helps for domain adaptation on IMDB
   * For task adaptation, the difference is much smaller and fits into 2 std
   * on average, the NBMLM seems to provide a consistent improvement throughout

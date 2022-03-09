@@ -23,7 +23,7 @@ https://github.com/loshchil/AdamW-and-SGDW
 * Our proposed decoupled weight decay has already been adopted by much research
   * community has implemented it in TensorFlow and PyTorch; the complete source
     code for our experiments is available at this https URL
-     
+
 # 1 Intro
 
 * Adaptive gradient methods,
@@ -34,7 +34,7 @@ https://github.com/loshchil/AdamW-and-SGDW
     * AMSGrad (Reddi+ 2018) have become
   * a default method of choice for training feed-forward and recurrent networks
     (Xu+ 2015; Radford+ 2015)
-* hE, image classification 
+* hE, image classification
   * popular datasets, such as CIFAR-10 and CIFAR-100 Krizhevsky (2009), are
   * SOTA results still obtained by applying SGD with momentum
     (Gastaldi, 2017; Cubuk+ 2018)
@@ -50,7 +50,7 @@ https://github.com/loshchil/AdamW-and-SGDW
   * a major factor of the poor generalization of the most popular adaptive
     gradient method, Adam, is due to the fact that L 2 regularization is not
     nearly as effective for it as for SGD
-* analysis of Adam leads to the following observations: 
+* analysis of Adam leads to the following observations:
   * L 2 regularization and weight decay are not identical. The two techniques
     * can be made equivalent for SGD by a reparameterization of the weight
       decay factor based on the learning rate; however, as is often overlooked,
@@ -58,7 +58,7 @@ https://github.com/loshchil/AdamW-and-SGDW
     * In particular, when combined with adaptive gradients,
       L 2 regularization leads to weights with large historic parameter and/or
       gradient amplitudes
-      being regularized less than they would be when using weight decay.  
+      being regularized less than they would be when using weight decay.
   * L 2 regularization is not effective in Adam
     * One possible explanation why Adam and other adaptive gradient methods
       might be outperformed by SGD with momentum is that
@@ -67,14 +67,14 @@ https://github.com/loshchil/AdamW-and-SGDW
     * Therefore, on tasks/datasets where the use of L 2 regularization is
       beneficial for SGD (e.g., on many popular image classification datasets),
       Adam leads to worse results than SGD with momentum (for which L 2
-      regularization behaves as expected).  
+      regularization behaves as expected).
   * Weight decay is equally effective in both SGD and Adam
-    * For SGD, it is equivalent to L 2 regularization, while for Adam it is not 
+    * For SGD, it is equivalent to L 2 regularization, while for Adam it is not
   * Optimal weight decay
     depends on the total number of batch passes/weight updates
     * Our empirical analysis of SGD and Adam suggests that
       the larger the runtime/number of batch passes to be performed,
-      the smaller the optimal weight decay.  
+      the smaller the optimal weight decay.
   * Adam can substantially benefit from a scheduled learning rate multiplier.
     The fact that
     Adam is an adaptive gradient algorithm and as such adapts the learning rate

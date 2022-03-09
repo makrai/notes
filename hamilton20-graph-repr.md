@@ -23,7 +23,7 @@ William L. Hamilton
 # Preface
 
 * from 2013, deep learning methods for “embedding” graph-structured data
-  * development of the standard graph neural network paradigm 
+  * development of the standard graph neural network paradigm
   * deep generative models of graph-structured data
   * one of the fastest growing sub-areas of deep learning
     * from a small subset of researchers working on a relatively niche topic
@@ -31,7 +31,7 @@ William L. Hamilton
   also stretched backwards through time
   * the “node embedding” methods as well-understood extensions of classic work
     on dimensionality reduction
-  * graph neural networks evolved—somewhat independently—from 
+  * graph neural networks evolved—somewhat independently—from
     spectral graph theory, harmonic analysis, variational inference, and the
     theory of graph isomorphism
     * historically rich lines of work

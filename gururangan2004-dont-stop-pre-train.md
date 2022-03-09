@@ -28,7 +28,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
   * only consider a single domain at a time
   * language model pretrained on a smaller and less diverse corpus than the
     most recent language models
-  * not known how the benefit of continued pretraining may vary with 
+  * not known how the benefit of continued pretraining may vary with
     the amount of available labeled task data, or
     the proximity of the target domain to the orig pretraining corpus: Fig 1
 * We address this question for RoBertA (Liu+ 2019) (§2)
@@ -181,7 +181,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * Applying Curated-TAPT after adapting to the domain results in the largest
   boost in performance on all tasks
   * in HYPER PARTISAN, DAPT + Curated-TAPT is within standard deviation of
-    Curated-TAPT 
+    Curated-TAPT
 * curated-TAPT achieves 95% of the performance of DAPT + TAPT with the fully
   labeled RCT corpus (Table 5) with only 0.3% of the labeled data
 * We recommend that task designers release a large pool of unlabeled task data
@@ -192,7 +192,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
 
 * retrieving related unlabeled data for TAPT, from a large unlabeled in-domain
   corpus, for tasks where extra human-curated data is unavailable
-* scenario without 
+* scenario without
   * large amounts of unlabeled data to adequate TAPT, as well as absence of
     computational resources necessary for DAPT
     (see Table 9 for details of computational requirements for different
@@ -206,8 +206,8 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * we employ VAMPIRE (Gururangan+ 2019; Figure 3),
   a lightweight bag-of-words language model
   * We pretrain VAMPIRE on a large deduplicated sample of the domain (1M sents)
-  * We then select k candidates of each task sentence from the domain sample, 
-    * via nearest neighbors selection (k NN TAPT ) 4, or 
+  * We then select k candidates of each task sentence from the domain sample,
+    * via nearest neighbors selection (k NN TAPT ) 4, or
       * flat search index with cosine similarity between embeddings with the
         FAISS (Johnson+ 2019) library.
     * randomly (RAND TAPT )
@@ -219,7 +219,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * RAND TAPT is generally worse than k NN TAPT,
   but within a standard deviation arising from 5 seeds for RCT and ACLARC
 * As we increase k, k NN TAPT performance steadily increases, and approaches
-  that of DAPT 
+  that of DAPT
   * Appendix F shows examples of nearest neighbors of task data
 * Future work might consider a closer study of k NN TAPT,
   more sophisticated data selection methods, and the
@@ -264,7 +264,7 @@ In Section §3.2, we provide RoBertA’s masked LM loss before and after DAPT . 
   to other domains). However, our analysis in §3.1 illustrates that
 * REVIEWS and NEWS also have some similarities. This is
   * supported with the loss of RoBertA that is adapted to NEWS , calculated on
-    a sample of REVIEWS .  
+    a sample of REVIEWS .
 * hE, RoBertA that is adapted to REVIEWS results in the highest loss for a NEWS
   sample.  This is the case for all domains.  One of the properties that
   * REVIEWS' documents are significantly shorter

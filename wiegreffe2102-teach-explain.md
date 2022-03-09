@@ -220,21 +220,21 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
       contradiction/neutral explanations correct if at least one piece of
       evidence in the input is highlighted
     * we conclude that post-hoc assessment of comprehensiveness
-      from a general description of data collection is error-prone 
+      from a general description of data collection is error-prone
     * Carton+ [23]: available human highlights are not necessarily sufficient
       nor comprehensive for predictions of highly accurate models. This
   * insufficiency
     * two datasets whose sufficiency Carton+ [23] found to be most concerning:
-      neutral E-SNLI pairs and no-attack W IKI A TTACK examples. 
+      neutral E-SNLI pairs and no-attack W IKI A TTACK examples.
       * Neutral E-SNLI cases are not justifiable by highlighting
         because they are obtained only as an intermediate step to collecting
         free-text explanations, and only free-text explanations truly justify a
-        neutral label [20] 
+        neutral label [20]
     * No-attack W IKI A TTACK examples are not explainable by highlighting
       because the absence of offensive content justifies the no-attack label,
     * We recommend (i) avoiding human-annotated highlights with low sufficiency
       when evaluating and collecting highlights, and (ii) assessing whether the
-      true label can be explained by highlighting 
+      true label can be explained by highlighting
   * Consider a highlight that is non-comprehensive because it is redundant with
     its complement in the input (e.g., a word appears multiple times, but only
     one occurrence is highlighted)
@@ -282,7 +282,7 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
   6. ExNLP researchers should be careful to
     not popularize their data collection decisions as universally necessary. We
     * documenting all constraints on collected explanations in a datasheet,
-      highlighting whether each constraint is necessary 
+      highlighting whether each constraint is necessary
       * noting how each constraint might affect modeling and evaluation
 
 # 5 Rise of Structured Explanations 7
@@ -335,8 +335,8 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
 *, we recommend running pilot studies to explore
   how people define and generate explanations for a task
   * If they reveal that informative human explanations are nat structured,
-    incorporating the structure in the annotation scheme is useful 
-  * This turned out to be the case with NLI; Camburu+ [21] 
+    incorporating the structure in the annotation scheme is useful
+  * This turned out to be the case with NLI; Camburu+ [21]
 * we also encourage creators of datasets with template-like explanations to
   highlight in a dataset datasheet (§4) that template structure can influence
   downstream modeling decisions
@@ -361,7 +361,7 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
      the structure.
   3. no all-encompassing definition of explanation. Thus, ExNLP researchers
      could consult domain experts or follow literature from other fields to
-    * should be open for debate on a given task.  
+    * should be open for debate on a given task.
 
                                       ***
 
@@ -372,28 +372,28 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
 * proposal for controlling quality in explanation collection
 * When asked to write free-text sentences from scratch for a table-to-text
   annotation task outside ExNLP crowdworkers produce “vanilla targets that lack
-  [linguistic] variety” Parikh+ [92] 
+  [linguistic] variety” Parikh+ [92]
   * can result in annotation artifacts, which are
     prevalent in the popular SNLI [16] and MNLI [129] datasets [97, 45, 120],
     among others [40]. These authors demonstrate the harms of such artifacts:
 * Artifacts can occur from poor-quality annotations and inattentive annotators,
   both of which have been on the rise on crowdsourcing platforms [25, 7, 87].
-  * needed: increased diversity of annotators and quality control 
+  * needed: increased diversity of annotators and quality control
   * quality control here and diversity in §7.
 
 ## 6.1 A Two-Stage Collect-And-Edit Approach
 
 * While ad-hoc methods can improve quality [20, 143, 84],
 * collect annotations in two stages.
-  * effective and generalizable method is to 
+  * effective and generalizable method is to
   * applied by a small minority of ExNLP dataset papers [58, 144, 143], who
   1. Collect explanation candidates automatically or from crowdworkers, and
-  2. quality-control by having other crowdworkers Judge the quality 
+  2. quality-control by having other crowdworkers Judge the quality
     * allows authors to release quality ratings for each instance.
 * Collect-and-Edit: Outside ExNLP, Parikh+ [92] use an extended version of this
   2. ask annotators to edit the datapoints
   * Bowman+ [17] use this approach to re-collect NLI hypotheses, and find,
-    * reduces artifacts in a subset of MNLI 
+    * reduces artifacts in a subset of MNLI
   * In XAI, Kutlu+ [67] collect highlight explanations for Web page ranking
     with annotator editing
   * We advocate Collect-and-Edit
@@ -404,20 +404,20 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     can lead to artifacts.
   * E-SNLI-VE [32] and VQA-E [75] are two visual-textual datasets for
     entailment and question-answering, respectively
-  * E-SNLI-VE combines annotations of two datasets: 
+  * E-SNLI-VE combines annotations of two datasets:
     * SNLI-VE [131], collected by replacing the textual premises of SNLI [16]
-      with F LICKR 30 K images [140], and 
+      with F LICKR 30 K images [140], and
       * every SNLI premise was originally the caption of a F LICKR 30 K photo.
     * E- SNLI [20], a dataset of crowdsourced explanations for SNLI . This
     * hE SNLI ’s hypotheses were collected from crowdworkers who did not see
       the original images, the photo replacement process results in a
       significant number of errors [122]
     * Do+ [32] re-annotate labels and explanations for the neutral pairs in the
-      validation and test sets of SNLI-VE 
+      validation and test sets of SNLI-VE
     * hE the dataset remains low-quality for training models [78]
     * With a full EDIT approach, we expect that these artifacts would be
       significantly reduced, and the resulting dataset could have quality
-      on-par with E-SNLI 
+      on-par with E-SNLI
   * Similarly, the VQA-E dataset [75] converts image captions from the VQA V
     2.0 dataset [43] into explanations, but a
     notably lower plausibility compared to a carefully-crowdsourced VCR

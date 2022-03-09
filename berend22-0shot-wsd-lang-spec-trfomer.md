@@ -3,7 +3,7 @@ zero-shot jelentésegyértelműsítés
 Berend Gábor
 XVIII. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2022. január 27–28.
 
-# Kivonat 
+# Kivonat
 
 * nyelvközi tudástranszfert egynyelvű előtanított modellekre épít
 * A nyelvek közötti kapcsolatot az
@@ -16,7 +16,7 @@ XVIII. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2022. január 27
 * jelentésegyértelműsítés a természetesnyelv-feldolgozás egy
   * régóta (Weaver, 1949/1955; Lesk, 1986; Gale+ 1992; Navigli, 2009)
   * tudásbázisokra támaszkodó, valamint felügyelt tanulást alkalmazó
-    * utóbbiak teljesítenek jobban. 
+    * utóbbiak teljesítenek jobban.
   * Mindkettő komoly humánerőforrás-igénnyel rendelkeznek, hiszen mind a
   * angol: több viszonylag nagy  jelentésegyértelműsítési adatbázis is létezik
     (Miller+ 1994; Taghipour és Ng, 2015), a legtöbb nyelvre – köztük a
@@ -86,7 +86,7 @@ XVIII. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2022. január 27
   nyertünk ki egy-egy azonos minőségben előforduló fordítási szópár
   vonatkozásában, N pedig a tanítás során fölhasznált vektorok közül tér vissza
   az argumentumában szereplő vektor legközelebbi szomszédjaival.
- 
+
 # 4. Kísérletek
 
 ## 4.4. Szótöredékek kezelése

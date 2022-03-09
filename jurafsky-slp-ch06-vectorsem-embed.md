@@ -672,7 +672,7 @@ mouse (N)
       correlated_ (Landauer and Dumais, 1997)
   * All of these datasets present words without context
 * intrinsic similarity tasks that include context
-  * The Stanford Contextual Word Similarity (SCWS) dataset (Huang+ 2012) 
+  * The Stanford Contextual Word Similarity (SCWS) dataset (Huang+ 2012)
   * Word-in-Context (WiC) dataset (Pilehvar and Camacho-Collados, 2019) offer
   * SCWS gives human judgments on 2,003 pairs of words in their sentential
     context, while
@@ -703,7 +703,7 @@ mouse (N)
 ## Bibliographical and Historical Notes
 
 * The idea of vector semantics arose out of research in the 1950s in 3 fields
-  * ling: meaning is related to the distribution of words in context 
+  * ling: meaning is related to the distribution of words in context
     * widespread in linguistic theory of the 1950s, among
     * distributionalists like Zellig Harris, Martin Joos, and J. R. Firth, and
     * semioticians like Thomas Sebeok
@@ -738,7 +738,7 @@ mouse (N)
       (Glenberg & Robertson 2000, Lake & Murphy 2021, Bisk+ 2020,
       Bender & Koller 2020)
   * defining words by a vector of discrete features
-    * More distantly related 
+    * More distantly related
     * roots at least as far back as Descartes and Leibniz
       (Wierzbicka 1992, Wierzbicka 1996)
     * Hjelmslev, (1943/1969)

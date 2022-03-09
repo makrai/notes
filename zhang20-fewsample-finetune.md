@@ -15,7 +15,7 @@ Code: github asappresearch/revisit-bert-finetuning
   * pre-determined, and small number of training iterations
     * prevalent practice
 * We identify alternative practices that resolve the instability of the process
-  * re-visit recently proposed methods to improve few-sample fine-tuning 
+  * re-visit recently proposed methods to improve few-sample fine-tuning
   * the impact of these methods diminishes significantly with our modified proc
 
 # 1 Intro

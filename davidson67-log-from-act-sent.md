@@ -3,7 +3,7 @@ Davidson
 1967
 
 * _Jones did it slowly, deliberately, in the bathroom, with a knife, at midn._
-  * What he did was butter a piece of toast. We are roo familiar 
+  * What he did was butter a piece of toast. We are roo familiar
   * language of action
   * the _it_ seems to refer to some entity, preswnably an action,
     that is chen characterized in a number of ways. Asked for the
@@ -57,7 +57,7 @@ Davidson
   is indeed a problem abouc logical form, bur it
   may be put to one side here because it is not spec for action sentences
 * We have decided co ignore, for the moment ar least, the first two adverbial
-  (2) Jones buttered the toast in the bathroom with a knife at midnight.  
+  (2) Jones buttered the toast in the bathroom with a knife at midnight.
   Kenny (ch vii same vol): most philosophers today would, as a Start, analyse
   this sentence as containing a five-place predicate with the
   * argument places filled with singular terms or bound variables. If we go on
@@ -83,14 +83,14 @@ Davidson
       the whole history of the world (op. cit., 1(0)
       * hE But he does not show how to make each addition to the scnrence one
         that irreducibly modify the killing
-        as opposed, say, to Brutus or Caesar, or the place or the time 
+        as opposed, say, to Brutus or Caesar, or the place or the time
 * Kenny proposes that we may exhibit the logical form of (2) the following mannr
 (3) Jones brought it about that the toasr was buttered in the barhroorn with a
 knife at midnight.
   * there are merits in this proposal (I shall consider some of them presently)
   * it does not solve the problem Kenny raises. For it is, if anything
     * even more obscure how (3) entails 'Jones brought it about that the coast
-      was buttered' or 'The toast was buttered' 
+      was buttered' or 'The toast was buttered'
 * Kenny seems to have confused two independent problems.
   * how to represent the idea of agency: it is this that prompts Kenny to
     assign 'Jones' a logically distinguished role in (3)
@@ -112,7 +112,7 @@ knife at midnight.
 * what is the relation between my pointing the gun and pulling the trigger, and
   my sheering the victim? The natural and, 1 think, correct answer is that
   * the relation is that of identity
-  * The logic of this sort of excuse includes, it seems, at least this 
+  * The logic of this sort of excuse includes, it seems, at least this
   : I am accused of doing b, which is deplorable
   1 admit I did a, which is excusable
   My excuse for doing b rests upon my claim that 1 did nor know that a = b.
@@ -140,7 +140,7 @@ knife at midnight.
     I am writing my name on a piece of paper
     with the intention of writing a cheque
     withthe intention of paying my gambling debt
-  * to have a coherent theory of action 
+  * to have a coherent theory of action
     tell that of these sentences is made true by the same action
   * Redescription may supply the motive ('I was getting my revenge'), place the
     action in the context of a rule ('I am castling'), give the outcome
@@ -174,21 +174,21 @@ knife at midnight.
 * 'Cass walked to the score' can't be given as
   'Cass brought it about that Cass is at the store'
   since this drops the idea of walking
-* 'Smith coughed.' 
+* 'Smith coughed.'
   * 'Smith brought it about that Smith is in a state of just having coughed'? At
     * would be correct only if Smith coughed on purpose.
 * Kenny wants to represent every (completed) action in terms only of
   the agent, the notion of bringing it about that a state of affairs obtains,
   and the state of affairs brought about by the agent
   * hE many action sentences yield no description of the state of affairs
-    brought about by the 
+    brought about by the
 * A natural move, then, is to allow that the sentence that replaces 'p' in 'x
   brings it about that p' may (or perhaps must) describe an event.
 * Chisholm has suggesred an analysis that at least
   permits the sentence that replaces 'p' to describe an event." His
   * 'x makes p happen', though he uses such
     variants as 'x brings it abour that p' or 'x makes it true that p'. Chisholm
-  * the entities to which the expressions that replace 'p' refer 
+  * the entities to which the expressions that replace 'p' refer
     := 'states of affairs', and explicitly adds chat
     states of affairs may be changes or events (as weJl as 'unchanges'). An
   * eg if a man raises his arm, then we may say
@@ -220,12 +220,12 @@ knife at midnight.
 what is the event that che whole sentence reports, and that the contained sentence
 does not? It is, apparently, just whar used ro be called an act of the will. I will not
 dredge up the standard objections co the view thee acts of the will are special
-events distinct from, say. our bodily movements. and perhaps the causes of them.  
+events distinct from, say. our bodily movements. and perhaps the causes of them.
 But even if Chisholm is willing co accept such a view, the problem of the logical
 form of the sentences that can replace `p` remains, and these describe the things
 people do as we describe them when we do nor impute intention.
 
-A somewhat different view has been developed with care and precision by von 
+A somewhat different view has been developed with care and precision by von
 Wright. 6 In effect, von Wright puts action sentences into the following form: "x
 brings it about that a state where p changes into a state where q'. Thus the
 important relevanr difference between von Wright's analysis and the ones we

@@ -6,12 +6,12 @@ Jey Han Lau, Timothy Baldwin
 
 * Recently, Le and Mikolov (2014) proposed doc2vec as
 * an extension to word2vec (Mikolov+ 2013a) to learn document-level embeddings
-* others have struggled to reproduce those results. 
+* others have struggled to reproduce those results.
 * This paper presents a rigorous empirical evaluation of doc2vec
-  over two tasks. 
+  over two tasks.
   * compare doc2vec to two baselines and two SOTA document embedding methods.
 * doc2vec performs robustly when using models trained on large external corp
-* can be further improved by using pre-trained word embeddings. 
+* can be further improved by using pre-trained word embeddings.
 * We also provide recommendations on hyper-parameter settings for general
 * we release source code to
-  induce document embeddings using our trained doc2vec models. 
+  induce document embeddings using our trained doc2vec models.

@@ -20,4 +20,4 @@ https://github.com/google-research/language/tree/master/language/multiberts
   * statistical guidelines and a code library
     implementing our recommended hypothesis testing methods
 * for five of these models we release 28 intermediate checkpoints
-  in order to support research on learning dynamics 
+  in order to support research on learning dynamics

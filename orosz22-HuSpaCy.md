@@ -73,7 +73,7 @@ MSZNY 2022 arXiv:2201.01956v2 [cs.CL] 10 Jan 2022
     advantage of large neural end-to-end systems might be very small
 * industrial demand for human-readable output
   * Most of the industrial applications are fully or partially rule-based
-    * not enough training data for a pure machine learning solution 
+    * not enough training data for a pure machine learning solution
       available. And there is no free lunch! Each and every realworld
       application has its own requirements. Rule-based components of these
       real-world applications require language-specific representations which

@@ -472,7 +472,7 @@ WL Harper, R Stalnaker, & G Pearce (eds), Ifs, 41-55 1968; Basil Blackwell Publi
     supported by evidence
   * But evidence can be gathered, by us at least, only in this universe
 * how possible worlds, even if the product of convention, can be subjects of
-  empirical investigation 
+  empirical investigation
 * I can partially define a possible world in such a way
   that I am ignorant of some of the determinate truths in that world
   * eg attribute to it features of the actual world which are unknown to me.

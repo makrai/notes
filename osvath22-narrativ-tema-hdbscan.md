@@ -25,7 +25,7 @@ XVIII. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2022. január 27
     * eg a betegség súlyossága, időbeli hossza és fennállása (Saha+ 2020).
   * Hazánkban tudomásunk szerint eddig nem történt olyan vizsgálat, amelynek
     fókuszában szöveges páciens-élmények elemzése állt volna NLP-vel
-    
+
 # 2. Módszerek
 
 ## 2.1. Adatgyűjtés

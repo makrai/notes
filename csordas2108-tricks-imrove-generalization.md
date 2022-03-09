@@ -41,7 +41,7 @@ https://github.com/robertcsordas/ transformer_generalization
   * hE the flexibility of such solutions is questionable. In fact, the
   * SCAN-inspired solutions have limited performance gains on other datasets
     (Furrer+ 2020; Shaw+ 2020). It is thus not enough to solely focus on the
-* Recently, many datasets have been proposed 
+* Recently, many datasets have been proposed
   * eg PCFG (Hupkes+ 2020) and COGS (Kim and Linzen, 2020)
   * The baseline Transformer models which are released together with the
     dataset are typically shown to dramatically fail at the task

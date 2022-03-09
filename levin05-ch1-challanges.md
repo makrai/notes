@@ -669,7 +669,7 @@ Beth Levin, Malka Rappaport Hovav
   * almost all transitive in English
   * English also permits various path, goal, and source arguments as objects, as
 * obliques that are said to be “advanced” to object
-  * just as there are objects said to be “advanced” to subject, so there are 
+  * just as there are objects said to be “advanced” to subject, so there are
   * sentence pairs with the same verb have a particular argument expressed as an
   * expression as an object is accompanied by the affixation of an “applicative”
     morpheme on the verb. This phenomenon is particularly well represented

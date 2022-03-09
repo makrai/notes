@@ -9,8 +9,8 @@ arXiv:1901.11373 [cs.LG]
   extensive empirical investigation to evaluate them against these criteria
   through a series of experiments that
   assess the task-independence of the knowledge being acquired by learning
-* , we propose a new evaluation metric 
-  * In addition to task performance 
+* , we propose a new evaluation metric
+  * In addition to task performance
   * based on an online encoding of the test data that
     quantifies how quickly an existing agent (model) learns a new task.  Our
 * while the field has made impressive progress in terms of
@@ -20,8 +20,8 @@ arXiv:1901.11373 [cs.LG]
   prone to catastrophic forgetting.  Moreover, we find that
   * far from solving general tasks (e.g., document question answering), our
   * overfitting to the quirks of particular datasets (e.g., SQuAD). We discuss
-  * missing components 
-  * conjecture on how to make progress toward general linguistic intelligence. 
+  * missing components
+  * conjecture on how to make progress toward general linguistic intelligence.
 
 # 6 Discussion
 
@@ -37,7 +37,7 @@ arXiv:1901.11373 [cs.LG]
     * neural cache (Grave+ 2017) and
     * dynamic evaluation (Krause+ 2018) provide some evidence of the effectiven
     * future: design similar models that
-      operate beyond the token level and are reusable across tasks 
+      operate beyond the token level and are reusable across tasks
 
 * Learning to learn (i.e., meta learning) is another approach to
   learn models that adapt to new tasks rapidly. In this setup,
@@ -81,8 +81,8 @@ arXiv:1901.11373 [cs.LG]
   of task-specific models has also been shown to considerably improve
   performance on downstream tasks (Radford+ 2018; Peters+ 2018; Devlin+ 2018).
   * believe that continued progress on generative LMs will drive GLI
-* not considered 
-  * robustness to adversarial examples 
+* not considered
+  * robustness to adversarial examples
   * ability to understand multiple languages In this paper, we mainly consider
   * Jia & Liang (2017) show that
     reading comprehension models trained on SQuAD are very prone to adversarial

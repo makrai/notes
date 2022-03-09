@@ -54,7 +54,7 @@ Draft of January 12, 2022
 
 * In this chapter, we’ll begin exploring the RNN and transformer architectures
   through the lens of probabilistic language models, so let’s briefly remind
-  * probabilistic language models predict the next word in a sequence 
+  * probabilistic language models predict the next word in a sequence
   * eg P(fish|Thanks for all the)
   * such a conditional probabilities a distribution over the entire vocabulary
   * assign probabilities to entire sequences with the chain rule: P(w 1:n ) = n
@@ -110,7 +110,7 @@ Draft of January 12, 2022
 
 ## 9.10 Summary
 
-* recurrent neural networks and transformers 
+* recurrent neural networks and transformers
   * how they can be applied to language problems. Here’s a summary of the main
 * In simple Recurrent Neural Networks
   sequences are processed one element at a time, with the

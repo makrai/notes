@@ -97,7 +97,7 @@ Edward L. Keenan
   * For F basic, `F_nom` or the nominative case extension of F is
     that extension of F which sends each binary relation R to {b: F(R^b) = 1}
     (R^b = « {a: (a,b) e R})
-  * NOM is that function sending each basic F to F nom 
+  * NOM is that function sending each basic F to F nom
   The object wide scope reading of (4) then is given by
   (SOME TEACHER) [(EVERY STUDENT) nom (KISS)]
 * NOM and ACC are called semantic cases

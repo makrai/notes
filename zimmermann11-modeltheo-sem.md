@@ -6,7 +6,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 
 * Model-theoretic semantics is a special form of truth-conditional semantics
   * the truth-values of sentences depend on certain abstract objects, models
-  * models are mathematical structures that provide the interpretations 
+  * models are mathematical structures that provide the interpretations
   * Originally designed for the semantic analysis of mathematical logic,
   * standard in linguistic semantics, mostly through the impact of R Montague
 * frequently (and loosely) identified with possible worlds semantics, which
@@ -144,7 +144,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * a large variety of expressions can be assigned meanings whose function is to
     contribute to truth and reference conditions without depending on any
     particular language
-* hE, for a variety of reasons, following FFP this way does 
+* hE, for a variety of reasons, following FFP this way does
   determine meaning in a fully principled, non-arbitrary way
   * which of a given number of grammatical constructions ought to serve def
     * the choice may influence the meanings obtained
@@ -203,7 +203,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * in turn, transitive verbs come out as curried binary relations,
     i.e. functions assigning characteristic functions to individuals
     * the curried version of R: individual x \in U ->
-      the characteristic function of {y ∈ U | (y, x) ∈ R} 
+      the characteristic function of {y ∈ U | (y, x) ∈ R}
   * the extensions of quantifier phrases can be identified as (character-
     istic functions of) sets of predicate extensions; and
     * once nouns are regarded as synonymous with predicates,
@@ -240,7 +240,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     * subjects refer to the same person, and both are true
     * hE, sentences not synonymous, and
       * neither are the definite descriptions in their subject position synonymous
-    * In order to reflect these semantic differences 
+    * In order to reflect these semantic differences
       * circumstances are called for under which (5) and (6) differ in truth
         and, consequently, their subjects do not corefer
   * it is hardly foreseeable what kinds of differences are needed in order to
@@ -254,7 +254,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * there better be circumstances that contradict current science
 * Detail: counterfactual (= non-actual) circumstances are just as specific.
 * ordinary conception of worlds of imagination or fiction: stories and novels
-  usually, nay always, leave open a lot of details – 
+  usually, nay always, leave open a lot of details –
   * correspond to sets of circumstances; for instance
 * Logical Space: the set of all actual and counterfactual circumstances
   (Wittgenstein 1922)
@@ -353,7 +353,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
 * presupposing a prior and independent specification of the non-logical
   vocabulary N L of the language L
   * implies that the interpretation functions of any two material models share
-    their domain, which is precisely the set N L 
+    their domain, which is precisely the set N L
 * the extensions of arbitrary expressions A of a language L can be characterised
   in the form of an inductive definition, which
   starts out with the lexical material and then
@@ -472,7 +472,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
     just in case the intension of the former is a subset of the latter
 * define the L-intension |A| of an expression A (of a language L) as the
   function that assigns A’s extension (according to M w ) to each material
-  model: |A|(M w ) = |A| M w , i.e. |A| = λM w . |A| M w 
+  model: |A|(M w ) = |A| M w , i.e. |A| = λM w . |A| M w
   * Observation (22) shows that L-intensions are as good as intensions when it
     comes to determining extensions; and we have seen that they may also be used
     to reconstruct sense relations defined via intensions, basically on account
@@ -500,7 +500,7 @@ Maienborn, von Heusinger and Portner (eds.) 2011, Semantics, de Gruyter, 762–8
   * arguably, the definite description _the world_ is such a term, thus
     rendering English discriminative
   * for almost all languages L, any two L-indistinguishable worlds give rise to
-    the same material model: (23) If w ≡ L w', then M w = M w' 
+    the same material model: (23) If w ≡ L w', then M w = M w'
 * material models stand in a one-one correspondence to the
   equivalence classes induced by L-indistinguishability
 * ?whether could they replace worlds and intensions in general
@@ -759,7 +759,7 @@ which essentially turns on the above observation (**) on invariance – is left 
 The following observation about isomorphic formal models M and M̃ (for any
 language L) is fundamental to model-theoretic semantics:
 (31) Let ρ be a model isomorphism from M to M̃. Then
-for all expressions A of L, ρ τ(A) ([[A]] M ) = [[A]] M̃. 
+for all expressions A of L, ρ τ(A) ([[A]] M ) = [[A]] M̃.
 (31) follows from (30) by a straightforward inductive argument; clause (iv) makes use of
 the above observation (**) on invariance. The special case of (31) where M = M̃ = M w
 
@@ -775,7 +775,7 @@ rial models are concerned, the extensions defined in (30) are the familiar ones 
 independent of ρ):
 (32) If M w is a material model for a language L and A is an expression of L, then
 cf. Section 2.2, (22a)
-[[A]] M w = |A| M w = ||A|| w 
+[[A]] M w = |A| M w = ||A|| w
 
 Another immediate consequence of (31) concerns (declarative) sentences S (of a given
 language L), for which τ L (S) = t and hence ρ τ(S) ([[S]] M ) = [[S]] M :
@@ -830,7 +830,7 @@ universe does not make a formal model an ersatz model
   models M w and M w'
   the analogous implication (36) about the latter and their representations in
   Ersatz Space need not be true:
-(35) If w ≠ w', then M w ≠ M w 
+(35) If w ≠ w', then M w ≠ M w
 (36) If M w ≠ M w' then |M w | ≅ ≠ |M w' | ≅
 
 * ie distinct material models may be represented by the same ersatz models
@@ -1036,7 +1036,7 @@ own right – just like the values [[A]] M : any instantiation of either (38iii)
 assign some specific U-extension to some specific expression. In particular, then, (44)
 is no more complicated or roundabout than (38); it is just different. Yet, as far as the
 specification of the truth values of sentences S of L is concerned, the two agree, since
-//S// M = π τ ([[S]] M ) = [[S]] M 
+//S// M = π τ ([[S]] M ) = [[S]] M
 
 The construction (44) can also be carried out if M = M w is a material model. Of
 course, in this case the permutation model `M*` cannot be expected to be a material

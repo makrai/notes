@@ -436,7 +436,7 @@ hundreds of publicly available models. This
   * ResNet greatly improved on VGG by replacing the large FC layers, shrinking
     the Conv2D blocks, and introducing residual connections
     * greater accuracy with far fewer parameters, and
-    * ResNet models of up to 1000 layers have been trained 32 
+    * ResNet models of up to 1000 layers have been trained 32
 * The efﬁciency and effectiveness of ResNet seems to be reﬂected in the smaller
   and more stable α ~ 2.0, across nearly all layers,
   indicating that the inner layers are very well correlated and more strongly
@@ -473,7 +473,7 @@ hundreds of publicly available models. This
     parallels in the information bottleneck approach
   * eg the quick transition from a RANDOM-LIKE phase to BULK+SPIKES phase,
     followed by slow transition to a HEAVY-TAILED phase, as noted previously 1,
-    is reminiscent of the dynamics on the Information Plane 25 
+    is reminiscent of the dynamics on the Information Plane 25
 * our work, is the ﬁrst to perform a detailed analysis of the weight matrices
   * starting in 2018 with the WeightWatcher tool 6
   * two concurrent works 40,41
