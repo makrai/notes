@@ -18,8 +18,9 @@ NAACL 2018 outstanding paper
   * complex characteristics of word use (e.g., syntax and semantics), and
   * how these uses vary across linguistic contexts (i.e., to model polysemy)
 * Our word vectors are
-  * learned functions of the internal states of a deep bidirectional language
-    model (biL[ST]M), which is pretrained on a large text corpus
+  * learned functions of the internal states of a deep bidirectional LM
+    (biL[ST]M)
+  * pretrained on a large text corpus
   * can be easily added to existing models and
   * significantly improve the SOTA across six challenging NLP problems,
     including question answering, textual entailment and sentiment analysis
@@ -27,15 +28,15 @@ NAACL 2018 outstanding paper
 # 1 Introduction
 
 * Pre-trained word representations (Mikolov+ 2013; Pennington+ 2014)
-* each token is assigned a representation that is a function of the entire
-  input sentence. We use vectors derived from a bidirectional LSTM that is
-  trained with a coupled language model (LM) objective ... ELMo (Embeddings
-  from Language Models) representations.  Unlike
-* previous approaches for ... contextualized word vectors [are not deep]
+* we
+  * each token representation is a function of the entire input sentence. We
+  * vectors derived from a bidirectional LSTM trained with a coupled LM objtive
+  * ELMo (Embeddings from Language Models) representations
+* previous approaches for contextualized word vectors [are not deep]
   (Peters+ 2017; McCann+ 2017)
 * we learn a linear combination of the vectors stacked above each input word
-  for each end task, which markedly improves performance over just using the
-  top LSTM layer
+  for each end task, which
+  * markedly improves performance over just using the top LSTM layer
 * Using intrinsic evaluations, we show that the
   * higher-level LSTM states
   capture context-dependent aspects of word meaning (e.g., they can be used
@@ -50,7 +51,7 @@ NAACL 2018 outstanding paper
 
 # 2 Related work
 
-* pretrained word vectors ... are a
+* pretrained word vectors are a
   * standard component of most [SOTA] archectures, including
     * question answering (Liu+ 2017),
     * textual entailment (Chen+ 2017),
@@ -70,16 +71,16 @@ NAACL 2018 outstanding paper
     the encoder of either
     * a supervised neural MT system (CoVe; McCann+ 2017) or
     * an unsupervised language model (Peters+ 2017)
-  * we ... train our biLM on [the 1B word benchmark] corpus (Chelba+ 2014)
+  * we train our biLM on [the 1B word benchmark] corpus (Chelba+ 2014)
     * approximately 30 million sentences
 * different layers of deep biRNNs encode different types of information
   * introducing [POS tags] at the lower levels of a deep LSTM
     can improve overall performance of higher level tasks such as
     dependency parsing (Hashimoto+ 2017) or
     CCG super tagging (Søgaard and Goldberg, 2016)
-  * In an RNN-based encoder-decoder machine translation system, Belinkov+
-    (2017) showed that the representations learned at the first layer in a 2-
-    layer LSTM encoder are better at predicting POS tags then second layer
+  * Belinkov+ (2017): an RNN-based encoder-decoder machine translation system,
+    * the first layer in a 2-layer LSTM encoder is better at predicting POS
+      tags then second layer
   * the top layer of an LSTM for encoding word context (Melamud+ 2016)
     has been shown to learn representations of word sense
 * Dai and Le (2015) and Ramachandran+ (2017)

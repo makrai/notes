@@ -101,8 +101,8 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 # 4 Comparison with Other Methods
 
 * 3CosAdd, has much higher chances of success where target vectors are close
-* We also consider LRCos, a method based on supervised learning from a set of
-  word pairs (Drozd+ 2016)
+* We also consider
+  LRCos, a method based on supervised learning from word pairs (Drozd+ 2016)
   * given a set of word pairs, the available examples of the [female class] and
     randomly selected negative examples are used to learn a representation of
     the target class with a supervised classifier. The question is this: what
@@ -110,7 +110,7 @@ The (Too Many) Problems of Analogical Reasoning with Word Vectors
 * With LRCos ..., we see the same trend: closer targets are easier to hit
 * accuracy of LRCos is much higher than the top-1 3CosAdd or 3CosMul
 * [the “honest” version of LRCos] performs just as well as the “dishonest” one
-  * consistent with the results reported by Drozd+ (2016). As for 3CosMul,
+  * consistent with the results reported by Drozd+ (2016)
 * Levy+ (2015) show that 3CosMul outperforms 3CosAdd in PPMI, SGNS, GloVe and
   SVD models with the Google dataset, sometimes yielding 10-25% improvement
 * Our BATS experiment confirms the overall superiority of 3CosMul to 3CosAdd,

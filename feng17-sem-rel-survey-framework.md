@@ -66,16 +66,16 @@ The Knowledge Engineering Review 2017, page 1 of 30
       similarity measurement on online News content from CNN Politics?
   * temporality when context is being constructed for words
     * i.e. evolution of the word contexts over time
-    * Most of the work assume that the knowledge resource is stable and constant
+    * Most of the work assume that the knowledge rsrc is stable and constant
       (except a few such as Radinsky+ 2011)
     * there is need for methods that are able to automatically determine the
-      length of the time windows between which the semantics of the words shift
+      length of the time windows between which the sem of the words shift
       through time
     * the time window for each word might be different
 * second category: extract explicit structure from knowledge resources
-  * e.g. links between Web pages, Wikipedia category hierarchy and WordNet hypnm
+  * e.g. links between Web pages, Wikipedia categ hierarchy and WordNet hypnm
   * structure extraction approaches e.g
-    * tree traversal and path finding techniques, graph analysis techniques and
+    * tree traversal and path finding techniques, graph analysis techniques,
       network mining
   * ?integrate structures extracted from WordNet, for example, hypernym rel,
     with the graph extracted from Wikipedia category hierarchy

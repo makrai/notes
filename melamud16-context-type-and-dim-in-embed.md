@@ -1,5 +1,5 @@
-Oren Melamud, David McClosky, Siddharth Patwardhan, Mohit Bansal
 The Role of Context Types and Dimensionality in Learning Word Embeddings
+Oren Melamud, David McClosky, Siddharth Patwardhan, Mohit Bansal
 2016 naacl
 
 # Abstract

@@ -10,8 +10,8 @@ Jan A. Botha and Phil Blunsom
 * intrinsic and extrinsic evaluations, ... on a range of languages
   * word similarity tasks and ... perplexity
   * used for translation into morphologically rich languages
-* compositional vector-space modelling has recently been applied to
-  morphology to good effect (Lazaridou+ 2013; Luong+ 2013), but
+* compositional vector-space modelling applied to morphology to good effect
+  (Lazaridou+ 2013; Luong+ 2013), but
   lacked the probabilistic basis necessary for use with a MT decoder
 
 # 1 Intro
