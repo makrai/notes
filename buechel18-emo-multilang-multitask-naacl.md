@@ -18,7 +18,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * Predicting the emotional value of lexical items is a well-known problem
   * research has focused on polarity for quite a long time
-  * more expressive models (such as Basic Emotions or Valence-Arousal-Dominance)
+  * more expressive models (eg Basic Emotions or Valence-Arousal-Dominance)
   * heterogeneous formats and small-sized, non-interoperable resources
     (lexicons and corpus annotations, Buechel and Hahn, 2017)
     Sven Buechel and Udo Hahn. 2017.
@@ -26,7 +26,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       and representation format} on dimensional emotion analysis
     EACL 2017
     * limitations in size hampered the application of deep learning methods
-* We here: word emotion induction as a multi-task learning (MTL) problem
+* We: word emotion induction as a multi-task learning (MTL) problem
   * each independent emotion dimension is considered as an individual task
   * hidden layers are shared between these dimensions
   * comparing our model against alternative emotion and polarity induction meth
@@ -54,7 +54,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     for affective states
     * Basic Emotions (Ekman, 1992) or the
     * Valence-Arousal-Dominance model (Bradley and Lang, 1994)
-* multi-task learning (MTL; Caruana (1997)) for word-level emotion prediction
+* multi-task learning (MTL; Caruana 1997) for word-level emotion prediction
   * greatly decrease the risk of overfitting (Baxter, 1997), work well
   * for various NLP tasks
     * Setiawan+ 2015
@@ -109,12 +109,12 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 ## Word Embeddings
 
 * Word2vec (with its variants SGNS and CBOW) features an extremely trimmed NN
-* FastText is a derivative of Word2vec, also incorporating sub-word
+* FastText is a derivative of Word2vec, also incorporating sub-words
 * GloVe trains word vectors directly on a word co-occurrence matrix
 * Somewhat similar, SVD-PPMI (Levy+ 2015)
 * we rely on embedding models pretrained on very large corpora
-  * SGNS model trained on the Google News corpus 2 (Google), the
-  * FastText model trained on Common Crawl 3 (Common), as well as the
+  * SGNS model trained on the Google News corpus (Google), the
+  * FastText model trained on Common Crawl (Common), as well as the
   * FastText models for a wide range of languages trained on the Wikipedias
     * different training and vocabulary sizes (see Grave+ (2018))
       Edouard Grave, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, T Mikolov
@@ -122,7 +122,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       LREC 2018
   * Additionally, the English embedding model from Sedoc+ (2017, Giga), a
     strongly related contribution (see below)
-    Their embeddings were trained on the English Gigaword corpus (Parker+ 2011)
+    * trained on the English Gigaword corpus (Parker+ 2011)
 
 ## Word-Level Prediction, the one we focus on in this contribution 3
 
@@ -135,7 +135,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       using a radial base function kernel (Amir+ 2015)
       * embedding vector of the target word as features
     * beaten by the Densifier algorithm (Rothe+ 2016)
-    * Hamilton+ (2016) developed SentProp, a graph-based, semi-supervised
+    * Hamilton+ (2016) developed SentProp (graph-based, semi-supervised)
       * polarity information is propagated through the graph
   * their evaluation,
     * Densifier seems to be superior overall, yet
@@ -148,9 +148,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       * word graph is constructed based on word similarity + affective info
       * emotion value computed based on the seed words in its cluster
       * outperform the results from Wang+ (2016a)
-* the best system of the IALP 2016 Shared Task on Chinese word emotion
-  induction (Yu+ 2016b) employed a simple feed-forward neural network (FFNN)
-  with one hidden layer in combination with boosting (Du and Zhang, 2016)
+* IALP 2016 Shared Task on Chinese word emotion induction (Yu+ 2016b)
+  * the best system of the employed a simple feed-forward neural network (FFNN)
+    with one hidden layer in combination with boosting (Du and Zhang, 2016)
 * supervised, Li+ (2017) propose ridge regression, again using word embeddings
 
 ## Sentence-Level and Text-Level Prediction 4
@@ -160,17 +160,17 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   (Wang+ 2016b; Abdul-Mageed and Ungar, 2017; Felbo+ 2017;
   Mohammad and Bravo-Marquez, 2017)
 * cannot easily be transferred to solve word emotion
-* either adapted to ~ input data
+* adapted to sequential or spatially arranged input data
   * sequential (typical for RNN, LSTM, GRNN and related architectures) or
   * spatially arranged (as with CNN architectures)
   * hE, for word embeddings (the default input for word emotion induction),
-    there does not seem to be any meaningful order of their components
+    no meaningful order of the components
 
 # 3 reference methods and our proposed deep MTL model
 
 ## 3.1 Reference Methods
 
-(two originally polarity-based which adaptat for VAD prediction)
+(two originally polarity-based adapted for VAD prediction)
 
 ### Linear Regression Baseline (LinReg)
 
