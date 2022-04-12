@@ -4,33 +4,32 @@ The Knowledge Engineering Review 2017, page 1 of 30
 
 # Abstract
 
-* we review the SOTA in SR research through a hierarchical framework. The
+* we review the SOTA in SR research through a hierarchical framework
   * three main aspects of SR approaches including the
     * resources they rely on, the
-    * computational methods applied on the resources for developing a rel metric
+    * methods applied on the resources for developing a rel metric
     * evaluation models that are used for measuring their effectiveness
-* We have selected 14 representative SR approaches to be analyzed using our
+* We have selected 14 representative SR approaches to be analyzed
 * we provide guidelines for researchers and practitioners on how to select the
-  most relevant SR method for their purpose.  Finally, based on the comparative
+  most relevant SR method for their purpose
 
 # 1 Intro
 
 * applications: semantic information retrieval, keyword extraction and summ
-* Information retrieval techniques have particular interest in SR measures as
+* Information retrieval techniques have particular interest in SR measures
 * domains such as biomedical informatics and geoinformatics have also benefited
-  * bioentities (Pedersen+ 2007) and geographic concepts (Hecht+ 2012), resp
-* we are primarily concerned with two main challenges in this area:
-  * challenges related to the underlying knowledge resources that can provide
-    insight into SR of words, and
-  * challenges related to the formalization of the relatedness measures. In
-* we cover the main models and techniques that have been proposed to address
+  * bioentities (Pedersen+ 2007) and geographic concepts (Hecht+ 2012)
+* we are primarily concerned with two main challenges, related to the
+  * underlying knowledge resources that can provide insight into SR of words
+  * formalization of the relatedness measures
+* we cover the main models and techniques that have been proposed
   * propose a taxonomic framework for comparing the more widely known work in
     this domain with specific focus on the above two aspects.  The framework is
     presented by considering the basic features of SR methods including:
   * the knowledge resources that an SR method adopts;
   * the computational methods that an SR method is based on; and
   * the evaluation method that is used to assess the suitability of an SR
-    method, including the used data sets and evaluation metrics. The framework
+    method, including the used data sets and evaluation metrics
 
 # 2 criteria used for selecting the methods studied in this paper; each method
 
@@ -42,7 +41,7 @@ The Knowledge Engineering Review 2017, page 1 of 30
 
 # 5 a meta-analysis of the findings in this paper; areas for future research 23
 
-* two distinct approaches for calculating semantic similarity emerge: based on
+* two approaches for calculating semantic similarity emerge: based on
   * latent relation hypothesis, and
   * content structure
 * latent relation
@@ -50,8 +49,8 @@ The Knowledge Engineering Review 2017, page 1 of 30
   * knowledge resources are primarily employed to build context for every word
   * primary objective: similarity and relatedness between words could be
     determined based on the similarity of their contexts
-  * Context is predominantly defined as the words or terms that
-    * surround the word of interest or that are used to define it
+  * Context is predominantly defined as the words or terms that surround the
+    word of interest or that are used to define it
   * many different types of textual corpora have been used to build context
     * e.g.  Wikipedia articles, Web pages, search snippets, WordNet glosses
   * e.g. ESA (Gabrilovich & Markovitch, 2007)
@@ -81,7 +80,7 @@ The Knowledge Engineering Review 2017, page 1 of 30
     with the graph extracted from Wikipedia category hierarchy
     * higher coverage and accuracy
 * integrating structural and context-based information
-  * very few reported works that have explored this possibility systematically
+  * very few reported works have explored this possibility systematically
   * e.g. in user interest modeling on microblogging platforms such as Twitter,
     * users’ social network structure combined with their posted content, for
       identifying user interests, quite effective (Zarrinkalam+ 2016)
