@@ -167,7 +167,7 @@ From frequency to meaning: vector space models of semantics
     attempt to model word frequencies better
   * Truncated SVD implicitly assumes that the elements in X have a Gaussian
     _distribution_
-    * Minimizing the the Frobenius norm `|X \hat{X}|_F` will minimize the
+    * Minimizing the the Frobenius norm `|\hat{X} -X|_F` will minimize the
       noise, if the noise has a Gaussian distribution
     * word frequencies do not have Gaussian distributions.
     * More recent algorithms are based on more realistic models of the
