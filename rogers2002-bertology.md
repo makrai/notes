@@ -63,7 +63,7 @@ arXiv:2002.12327 cs.CL
 * representations are hierarchical rather than linear
   * there is something akin to syntactic tree structure (Lin+ 2019)
     in addition to the word order information
-  * information about parts of speech, syntactic chunks and roles
+  * information about POSs, syntactic chunks and roles
     * Tenney+ (2019b) and Liu+ (2019a)
   * knowledge of syntax is partial (Liu+ 2019a)
     * not recover the labels of distant parent nodes in the syntactic tree
@@ -156,7 +156,7 @@ arXiv:2002.12327 cs.CL
   * information encoded in model weights
 * Amnesic probing (Elazar+ 2020) aims to specifically remove certain information
   * see how it changes performance
-  * e.g. language modeling does rely on part-of-speech information
+  * e.g. language modeling does rely on POS information
 * information-theoretic probing
   * Pimentel+ (2020) operationalize probing as estimating mutual information
     between the learned representation and a given linguistic property
@@ -610,7 +610,7 @@ arXiv:2002.12327 cs.CL
   (Wu and Dredze, 2019; Pires+ 2019)
   * not in language generation (Rönnqvist+ 2019)
   * high-quality cross-lingual word alignments (Libovický+ 2019), with
-  * caveats {kifogások} for open-class parts of speech (Cao+ 2019)
+  * caveats {kifogások} for open-class POSs (Cao+ 2019)
   * Adding more languages does not seem to harm the quality of representations
     (Artetxe+ 2019)
 * across some scripts (Pires+ 2019)
