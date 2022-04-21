@@ -22,7 +22,7 @@ extended lexicons are publicly available for access
 
 # 1 Intro
 
-* Affective computing from text has many potential applications, such as the
+* applications of Affective computing from text
   * analysis of consumer opinions on a company’s products [2],
   * recommendation systems for movies, books, music or pictures
     based on user’s emotions [3],
@@ -32,13 +32,13 @@ extended lexicons are publicly available for access
   * sarcasm detection [7],
   * personality detection [8],
   * intelligent human-computer interaction systems
-    that can express and detect the affective states of human beings [9], etc
+    that can express and detect the affective states of human beings [9]
 * multidimensional representation models,
   * such as the
     * valence-arousal-dominance model (VAD) [13] and the
     * evaluation-potency-activity model (EPA) [14]
-  * Theoretically speaking, discrete affective labels can always be mapped to
-    certain points in a multi-dimensional affective space [15]
+  * Theoretically, discrete affective labels can always be mapped to points in
+    a multi-dimensional affective space [15]
     * R A. Calvo and S. Mac Kim, “
       Emotions in text: dimensional and categorical models,”
       Computational Intelligence 2013
@@ -75,17 +75,17 @@ extended lexicons are publicly available for access
 ## affective models
 
 * Affective meaning includes emotion, sentiment, trait, mood, and attitudes,
-  * several proposed emotion categorizations Ekman [24] 6 Parrot [25] 6 Frijda
-    [26] 6 Plutchik [26] 8 Tomkins [27] 9 Ortony [28] 22 Xu [29] 7
-  * multi-dimensional models including the
-    * valence-arousal model (VA) [13] as shown in Figure 1; the
-    * evaluation-potency-activity model (EPA) [30] as shown in Figure 2; the
-    * hourglass model [31]: pleasantness, attention, sensitivity and aptitude
-    * Pleasure-Arousal-Dominance (PAD) [32]; the
-    * evaluation and activation [33], two continuous dimensions
-    * evaluation, potency, activation, and unpredictability [34]
-    * serotonin, dopamine and noradrenaline based on neuroscience [35]
-  * interaction information between different dimensions can be captured
+* several proposed emotion categorizations Ekman [24], Parrot [25],
+  Frijda [26], Plutchik [26], Tomkins [27], Ortony [28] 22 Xu [29]
+* multi-dimensional models including the
+  * valence-arousal model (VA) [13] as shown in Figure 1; the
+  * evaluation-potency-activity model (EPA) [30] as shown in Figure 2; the
+  * hourglass model [31]: pleasantness, attention, sensitivity and aptitude
+  * Pleasure-Arousal-Dominance (PAD) [32]; the
+  * evaluation and activation [33], two continuous dimensions
+  * evaluation, potency, activation, and unpredictability [34]
+  * serotonin, dopamine and noradrenaline based on neuroscience [35]
+* interaction information between different dimensions can be captured
 
 ## lexicon generation methods
 
@@ -120,7 +120,7 @@ extended lexicons are publicly available for access
       * WordNet and the label propagation is performed to
         infer the EPA values [46] and sentiment polarity [47]
         * confined by the coverage of the knowledge base
-      * text corpus based on the cosine similarity of words [48], Word embedding
+      * text corpus based on the cosine similarity of words [48], Word embed
         * PageRank algorithm is employed to infer VA [20]
         * to infer sentiment polarities [43]
 * map word vector to some sentiment value or categories based on a regression

@@ -23,7 +23,7 @@ arXiv:1805.07966v1 cs.CL 21 May 2018
   * affect analysis in poetry (Kao and Jurafsky, 2012)
   * opinion and emotion words (Ghosh+ 2017)
 * Sedoc+ (2017) introduce the notion of affect features in word distributions
-* augmenting neural language modeling with affective information to
+* augmenting neural language modeling with affective information for
   emotive text generation (Ghosh+ 2017)
 * Aff2Vec can be trained using any affect space,
 * we focus on the Valence–Arousal–Dominance dimensions
@@ -57,12 +57,12 @@ arXiv:1805.07966v1 cs.CL 21 May 2018
 
 ### Affect-cStrength
 
-In this approach, the affective strength is considered as a function of all F
-affect dimensions ka i − a j k S(w i , w j ) = 1 − qP (6) F 2 max dist f =1 f
-where
-  a i and a j are F dimensional vectors in A and
-  max dist f is defined as the maximum possible distance between two vectors in
-  f th dimension (= 9.0 − 1.0 = 8.0 for VAD dimensions)
+* In this approach, the affective strength is considered as a function of all F
+  affect dimensions ka i − a j k S(w i , w j ) = 1 − qP (6) F 2 max dist f =1 f
+  where
+  * a i and a j are F dimensional vectors in A and
+  * max dist f is defined as the maximum possible distance between two vectors
+    in f th dimension (= 9.0 − 1.0 = 8.0 for VAD dimensions)
 
 ### Affect-iStrength
 
