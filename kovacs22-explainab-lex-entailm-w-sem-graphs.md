@@ -1,10 +1,10 @@
 Explainable lexical entailment with semantic graphs
 Adam Kovacs, Kinga Gemes, Andras Kornai, and Gabor Recski
-Natural Language Engineering (2022), 1–24 doi:10.1017/S1351324922000092
+Natural Language Engineering (2022), 1–24 doi:101017/S1351324922000092
 
-# 2. Related work
+# 2 Related work
 
-## 2.1 formulations of the lexical entailment task and corresponding datasets,
+## 21 formulations of the lexical entailment task and corresponding datasets,
 with special emphasis on the two datasets used in our work
 
 * Entailment between pairs of words has been studied extensively as
@@ -29,7 +29,7 @@ with special emphasis on the two datasets used in our work
     * Multi-Genre NLI Corpus (MultiNLI, Williams, Nangia, and Bowman 2018)
 * we,
   * based on the 4lang formalism for representing (lexical) semantics
-    * outlined in Section 3.2
+    * outlined in Section 32
     * capable of inspecting the relationship between the meaning of any two
       utterance fragments
   * evaluate our system on two recent benchmarks
@@ -37,7 +37,7 @@ with special emphasis on the two datasets used in our work
       Lexical Entailment’’ (Glavaš+ 2020)
       * derived from HyperLex (Vulić+ 2017), a dataset of monolingual and
         cross-lingual–graded lexical entailment
-      * Candidate word pairs for human annotation were gathered from 
+      * Candidate word pairs for human annotation were gathered from
         USF (Nelson, McEvoy, and Schreiber 2004) and WordNet (Miller 1995)
       * we will use the binary labels of the monolingual subsets for English,
         German, and Italian
@@ -79,7 +79,7 @@ with special emphasis on the two datasets used in our work
       * facilitate further qualitative analysis of deep learning models by
       * strong explainable baselines on multiple tasks and datasets
 
-## 2.2 recent approaches to entailment and inference tasks
+## 22 recent approaches to entailment and inference tasks
 
 * hypernymy, lexical entailment is most often addressed using distributional
   * Hypernymy candidates are encoded using word embeddings and classified by
@@ -101,12 +101,12 @@ with special emphasis on the two datasets used in our work
       * extracting paths between premise and hypothesis from dependency trees
         and using them as inputs to Long Short-term Memory Networks (LSTMs)
     * Fine-tuning generic word vectors using external knowledge such as WordNet
-      * improved performance on a range of NLU tasks (Glavaš and Vulić 2018).
+      * improved performance on a range of NLU tasks (Glavaš and Vulić 2018)
       * POSTLE (Kamath+ 2019) extend this method to unseen words,  introduced
         * post-specialization for LE), a model that learns an explicit global
           specialization function captured with feed forward neural networks
 * Inference systems trained on the SNLI and MultiNLI datasets
-  mostly use neural language models based on the Transformer, in particul BERT 
+  mostly use neural language models based on the Transformer, in particul BERT
   * SemBERT (Zhang+ 2020): a BERT backbone enhanced with a SRL-er
   * MT-DNN (Liu+ 2019) enhances the system presented in Liu+ (2015) with BERT
   * Top results on the MultiNLI benchmark were achieved by
@@ -118,7 +118,7 @@ with special emphasis on the two datasets used in our work
   * we will also present an improvement over such a model using our fully
     rule-based method for detecting entailment between pairs of words
 
-## 2.3 common approaches to semantic parsing
+## 23 common approaches to semantic parsing
 
 * Semantic parsing: mapping natural language text to some model of its meaning
   * can only be defined with respect to a particular system of semantic repr
@@ -168,11 +168,11 @@ with special emphasis on the two datasets used in our work
           unless explicitly overridden,
           dog entails not only mammal, but also bark and four-legged
     * In its current implementations, 4lang
-      concepts have no grammatical attributes and no event structure, 
+      concepts have no grammatical attributes and no event structure,
       * eg, the phrases _water freezes_ and _frozen water_ would both be
         represented as water → freeze
     * Figure 2 shows the 4lang definition of the concept _jewel_
-      * obtained by processing the dependency parse of the Wiktionary def 
+      * obtained by processing the dependency parse of the Wiktionary def
     * the 4lang system allows us to expand graphs, a process which
       * unifies one graph with the definition graphs of the concepts in it
   * can be built automatically from Universal Dependencies (Nivre+ 2018) using
@@ -187,7 +187,7 @@ with special emphasis on the two datasets used in our work
         the system is capable of processing any UD graph and can be used to
         construct the 4lang semantic representation of any text
 
-## 2.4 approaches to modeling entailment with semantic graphs
+## 24 approaches to modeling entailment with semantic graphs
 
 * Kovács+ (2020)
   * direct applicability of semantic graphs to hypernymy detection task by
@@ -198,7 +198,7 @@ with special emphasis on the two datasets used in our work
     (the maximum number of expansions was chosen arbitrarily)
     * not flow through locative and negative modifier clauses
       * preps (eg English _in, of, on_, German _in, auf_, Italian _di, su, il_)
-      * words conveying negation (English _not_, German _keine_, etc.)
+      * words conveying negation (English _not_, German _keine_, etc)
     * For example, where _nose_ is defined as “a protuberance on the face’’,
       4lang graphs would contain a path of 0-edges from nose to face
 * On the Semeval dataset of word-level entailment, the above method detected
@@ -209,7 +209,7 @@ with special emphasis on the two datasets used in our work
     * the main contribution of 4lang was its ability to increase recall without
       hurting precision,
       * increasing the performance of strong WordNet-based baselines on three
-        languages, 
+        languages,
   * ranking first in English and Italian and second-best on German, see Table 3
 * For English and Italian official WordNet releases were accessed via the nltk
 * Kovács+ (2020) for German
@@ -228,7 +228,7 @@ with special emphasis on the two datasets used in our work
 * using graph grammars to transform dependency trees to 4lang graphs
 * our method for establishing entailment over pairs of 4lang graphs
 
-## 3.1 Semantic parsing with Interpreted Regular Tree Grammars 7
+## 31 Semantic parsing with Interpreted Regular Tree Grammars 7
 
 * Interpreted Regular Tree Grammars (IRTGs, Koller 2015) can be used to
   * encode the correspondence between sets of structures
@@ -236,7 +236,7 @@ with special emphasis on the two datasets used in our work
     * syntactic parsing (Koller and Kuhlmann 2012),
     * generation (Koller and Engonopoulos 2017),
     * semantic parsing (Groschwitz, Koller, & Teichmann 2015; Groschwitz+ 2018)
-    * surface realization (Kovács+ 2019; Recski+ 2020). The system presented in
+    * surface realization (Kovács+ 2019; Recski+ 2020) The system presented in
     * we use an IRTG for transforming UD trees into 4lang graphs
 * Parsing UD graphs and transforming them into 4lang graphs on a large scale 8
   * all UD relations representing modification (amod, advmod, nummod) are
@@ -244,21 +244,22 @@ with special emphasis on the two datasets used in our work
   * relations between predicates and their objects (obj, nsubj:pass) become 2s
   * Subjects relations (nsubj, csubj) are mapped to a pair of 0and 1-edges;
   * Clausal modifiers (acl, advcl) are generally also mapped to 0-edges,
-    * some newly introduced exceptions will be discussed below. Additionally,
-  * non-core (oblique) arguments marked by the obl relation.
+    * some newly introduced exceptions will be discussed below
+  * non-core (oblique) arguments marked by the obl relation
     * eg Wiktionary def of teacher: someone who teaches, especially in a school
     * The obl UD edge teach → school does not in itself reveal the semantics
     * we take into account the case relation marking case the argument:
     * the full UD analysis contains the subgraph teach -obl→ school -case→ in,
-    * 4lang graph teach ←  in  → school using an IRTG rule 
-    * an English-specific exception to this rule: 
+    * 4lang graph teach ←  in  → school using an IRTG rule
+    * an English-specific exception to this rule:
       * _by_ will trigger the configuration for the predicate–subject relation,
   * coordination
-    * Section 3.4.1 of Recski (2018) simply copied all semantic relations between
-      all elements of coordinating constructions, which has proved
-    * practical for downstream applications despite
-    * hE introducing some erroneous edges. Our system replicates this behavior
-    * Some simple patterns over specific conjunctions (and, or, etc.) could be
+    * Section 34.1 of Recski (2018) simply copied all semantic relations between
+      all elements of coordinating constructions
+    * practical for downstream applications
+    * hE introducing some erroneous edges
+    * Our system replicates this behavior
+    * Some simple patterns over specific conjunctions (and, or, etc) could be
       used to differentiate between occurrences of the conj dependency, similar
       to Enhanced Universal Dependencies (Schuster and Manning 2016)
     * hE modeling the semantics of coordinating conjunctions would require
@@ -266,38 +267,37 @@ with special emphasis on the two datasets used in our work
       (Gerdes and Kahane 2015; Kanayama+ 2018)
 * relationships between clauses
   * the most significant limitation of the original system
-  * This is partly due to the fact that 
+  * This is partly due to the fact that
     the type of the UD relation connecting the heads of two clauses often
-    reveals very little about the semantic function of the dependent clause.
-  * acl is defined i as clausal modifier of noun (adjectival clause), and
-    * the general case can be handled by 0-edges, but this rule will currently
-    * erroneous edges for sentences such as I have a parakeet named Cookie,
-      * no mechanism to detect that parakeet is the object of named.
-  * acl:relcl (relative clause modifier of a noun), which is
+    reveals very little about the semantic function of the dependent clause
+  * acl is defined as clausal modifier of noun (adjectival clause), and
+    * the general case can be handled by 0-edges
+    * hE erroneous edges for sentences such as I have a parakeet named Cookie,
+      * no mechanism to detect that _parakeet_ is the object of _named_
+  * acl:relcl (relative clause modifier of a noun)
     * used both in _an animal that moves_ and the _man you love_
-      * these would warrant the edges animal → move and man ← love, resp
-      * The first of these two examples can receive the correct treatment based
-        on the presence of the nsubj edge between move and that, thus we
-        introduce a rule that implements the correspondence in Figure 7
-      * Other occurrences of acl:relcl are currently not processed
-* For the full mapping between UD and 4lang structures see Table 4.
+    * these would warrant the edges animal → move and man ← love, resp
+    * _animal that moves_ can receive the correct treatment based
+      on the presence of the nsubj edge between move and that, thus
+      we introduce a rule that implements the correspondence in Figure 7
+    * Other occurrences of acl:relcl are currently not processed
+* For the full mapping between UD and 4lang structures see Table 4
 * error analysis in Section 5
-* currently implemented for three languages: English, German, and Italian.
+* currently implemented for three languages: English, German, and Italian
   * requires the existence of an accurate UD parser and
-    a machine-readable monolingual dictionary of sufficient coverage.
+    a machine-readable monolingual dictionary of sufficient coverage
   * for some languages it might be necessary to extend the dep_to_4lang mapping
-    * morphological features, as done in Recski, Borbély, and Bolevácz (2016).
-  * We apply this pipeline to dictionary definitions extracted from data dumps
-    of Wiktionary
+    * morphological features, as done in Recski, Borbély, and Bolevácz (2016)
+  * We apply this pipeline to dictionary definitions extracted from Wiktionary
 
 ## 3.2 detecting entailment between pairs of words or predicates using their
 corresponding 4lang graphs
 
 * this method improves performance even for languages with large WordNets (see
   Section 4 for details)
-  * Entailment relations extracted using this method may be of lower quality
-    than those encoded by manually built databases such as WordNet, but cover
-    larger vocabularies 
+* Entailment relations extracted using this method may be of lower quality than
+  those encoded by manually built databases such as WordNet, but cover larger
+  vocabularies
 
 # 4 evaluates our method on two recent benchmarks 14
 
@@ -306,7 +306,72 @@ corresponding 4lang graphs
 
 # 5 results of manual error analysis on both datasets
 
-# 6. Conclusion 19
+* lettuce → food
+  * Lettuce is defined in Wiktionary as “an edible plant, Lactuca sativa and.."
+  * edible means “can be eaten without harm” and finally
+  * eat is simply defined as “to ingest”
+  * Since this is as far as our iterative expansion goes,
+  * we are missing the word food altogether
+  * The main issue here is that the default object of eating is food,
+* mussel and seafood
+  * we do not believe that any reasonable lexical resource can help. This is
+  * common encyclopedic knowledge about plants, animals, minerals, and them:
+  * basically every dictionary we consulted defines mussel as a kind of mollusc
+  * mollusc: “animal belonging to Mollusca, a subkingdom of soft-bodied and
+  * As we learn for example from the Concise Oxford, this subkingdom includes
+    limpets, snails, cuttlefish, etc, and
+    * most of these (with the exception of oysters) are actually not considered
+      as seafood
+  * encyclopedic knowledge source should be consulted and here
+    * Wikipedia: the article en.wikipedia.org/wiki/Mussel has a heading As food
+* the first definition in Wiktionary does not correspond to the sense intended
+  * most often because [the 1st in Wiki] is in fact not the most common sense
+  * submarine's first sense in Wiktionary is defined as “underwater”. Quite
+  * letter → mail which is labeled as entailment but simply is not if we choose
+  * mole → animal, which fails for the sense “pigmented skin” the same way.
+* Hyperlex dataset (Vulić+ 2017), which later became
+  * the basis of the Semeval dataset used in this paper, annotators were
+  * “two words stand in a type-of relation if any of their senses stand in a
+    type-of relation.”(Vulić+ 2017, p. 797).
+ * we might consider the union of all definitions of a word for our method, but
+   our early experiments showed tha  such an approach would very often lead to
+   the proliferation of erroneous representations built from low-quality and/or
+   unwarranted definitions
+* Alternative solutions might include
+  * disambiguating among definitions based on context and/or
+  * building meaning representations from groups of definitions that
+    * describe multiple uses of the same abstract word sense. For a discussion
+  * difficulties of such approaches: see Section 4.4.3 of Recski (2018).
+* False positives of our system are considerably easier to track: for example,
+  * eg we lack a rule for handling modally subordinated predicates
+    * Therefore, we conclude _invade_ from _planning to invade_ and worse yet, 
+    * _win_ from _failing to win_
+  * Short and too generic definitions in Wiktionary are another main source of
+    * we conclude _A is selling to B_ from _A is leaving to B_
+      because _sell_ and _leave_ both contain _act_ in their definition
+* valuable information is lost when we prune the contents of prepositional
+  phrases from our premise graph (to avoid false positive entailments such as
+  nose → face, as discussed in Section 3.2). For example, our system
+  * we do not detect the entailment husband → spouse because
+  * Wiktionary defines husband as “a man in a marriage or marital relationship,
+    especially in relation to his spouse”
+  * In dictionaries that are built on stronger lexicographic principles, this
+    is avoided by reliance on a strict defining vocabulary, a limited set of
+    concepts capable of defining all other concepts
+    * LDOCE, spouse is defined as “a husband or wife’’ which avoids any
+    * Following Webster’s 3rd, modern lexicographic practice avoids defining
+      the simple by the more complex, and the idea of defining eat by means of
+* English does not mark causativization on the verb, so that
+  * ie run can express both “go fast” and “make go fast”
+    If we consider the 50+ senses that Wiktionary provides for the verb run,
+    there is little chance of finding the one appropriate for the type
+    signature (PERSON, COMPANY), which is meaning 22 “to control or manage, be
+    in charge of’’ or the one appropriate for (COMPUTER, SOFTWARE) (meaning 26)
+    “to execute or carry out a plan, procedure or program’’
+  * this level of disambiguation, between plain and causative forms, seems
+    quite feasible, especially using dynamic embeddings earlier in the analysis
+
+# 6 Conclusion 19
 
 * providing insight about the differences between the two formulations of the
   entailment task and identifying current shortcomings of our approach, along
@@ -316,10 +381,9 @@ corresponding 4lang graphs
   subordination, causativization, and a host of other questions that are
   traditionally considered central to natural language semantics
 * WordNet, with its extensive hypernym links, tailor-made for entailment detect
-  * can be profitably combined with other resources, dictionaries in particul
+  * can be profitably combined with other resources, dictionaries in particular
   * hE, for other relationals, such as causation, possession, mereological
-    implications, spatiotemporal reasoning, etc WordNet is less helpful there
+    implications, spatiotemporal reasoning, etc WordNet is less helpful
     * we would need similar datasets that highlight these very real problems
-* future work, we hope to address several of the issues exemplified in our
-  * a more explicit disambiguation process
-    before, or in parallel to, the modeling of lexical entailment
+* future work: a more explicit disambiguation process
+  * before, or in parallel to, the modeling of lexical entailment

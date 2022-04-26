@@ -28,12 +28,14 @@ More complex notation
 * we have much to say about events, actions, and event structure
 in 3.2 and 6.1,
 
-## 2.4 Linking
+## 2.4 Linking (line 1114)
+
+### the linkers, the most recalcitrant of our primitives (line 1438, page 63)
 
 * more abstract, notional binaries
   e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
-  * defer MARK to 2.5, and devote the entire
-  * Chapter 4 to our negation operator LACK.
+  * defer MARK to 2.5, and
+  * Chapter 4: our negation operator LACK
 * We begin with purposives: FOR, INSTRUMENT
 * CAUSE
 * `PART_OF`, HAS
@@ -43,8 +45,8 @@ in 3.2 and 6.1,
   by taking these as relationals that typecast their arguments
 * we compare 4lang to UD 48
 * In earlier versions of 4lang, Makrai (2014) used several thematic role-like
-  constructs, but this really stretched the ontological committment (Quine 1947)
-  of the model beyond what is absolutely necessary
+  constructs, but this really stretched the ontological committment (Quine
+  1947) of the model beyond what is absolutely necessary
 
 ## 2.5 Naive grammar 57
 
