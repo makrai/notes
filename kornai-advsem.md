@@ -42,6 +42,14 @@ More complex notation
   * eg `for_, has, ins_, lack, mark_` and others 
     * korábban e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, `PART_OF`
   * using purposive `for_` as our example
+
+### the linkers, the most recalcitrant of our primitives (line 1438, page 63)
+
+* more abstract, notional binaries
+  e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
+  * defer MARK to 2.5, and
+  * Chapter 4: our negation operator LACK
+* We begin with purposives: FOR, INSTRUMENT
 * CAUSE
   * we define x cause_ y by cause_ x before y, after(y)
   * This falls quite short of a proper analysis of single and multiple causes,
