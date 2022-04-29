@@ -21,41 +21,77 @@ Agents, patients
 Deep cases
 More complex notation
 
-# 2
+# 2 From morphology to syntax
 
 ## 2.1 Lexical categories and subcategories
 
 * we have much to say about events, actions, and event structure
-in 3.2 and 6.1,
+  in 3.2 and 6.1,
 
-## 2.4 Linking
+## 2.2 Bound morphemes
 
-* more abstract, notional binaries
-  e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
-  * defer MARK to 2.5, and devote the entire
-  * Chapter 4 to our negation operator LACK.
-* We begin with purposives: FOR, INSTRUMENT
+* The causative element in _-ize_ is well known (Lieber, 1992; Plag, 1998), and
+* the idea that we define certain verbs by their result state is standard
+
+## 2.3 Relations
+
+## 2.4 Linking (causation is also in this section) 55
+
+* `mark_`
+* Let us turn to an explanation for more abstract, non-spatial binaries (p58)
+  * eg `for_, has, ins_, lack, mark_` and others 
+    * korábban e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, `PART_OF`
+  * using purposive `for_` as our example
 * CAUSE
+  * we define x cause_ y by cause_ x before y, after(y)
+  * This falls quite short of a proper analysis of single and multiple causes,
+    * encourages precisely the kind of errors that are rampant in the
+      identification of cause-effect relations. But there is no reason to
+    * sophisticated data analysis of the kind urged in (Pearl, 2009) cannot be
+      replicated in natural language semantics, especially as
+      * the kind of statistics and probability theory that undergird the modern
+        scientific understanding are not supported by natural language (Ch 5)
+  * We compare the commonsensical definition of causation to the counterfactual
+    sine qua non definition in Chapter 6
 * `PART_OF`, HAS
 * We also explained how
   the mainstays of case/valency systems, such as datives, locatives, and ins,
   can be reconstructed without assuming link types beyond ‘1’ and ‘2’,
   by taking these as relationals that typecast their arguments
 * we compare 4lang to UD 48
-* In earlier versions of 4lang, Makrai (2014) used several thematic role-like
-  constructs, but this really stretched the ontological committment (Quine 1947)
-  of the model beyond what is absolutely necessary
+* In earlier versions of 4lang (Makrai 2014): several thematic role-like constr
+  * hE this really stretched the ontological committment (Quine 1947) of the
+    model beyond what is absolutely necessary
 
 ## 2.5 Naive grammar 57
 
-* Since our goals are remarkably close, and our motivations are nearly
+* Many of our lexical entries do double duty as elements of p64
+  the universal conceptual schema / the naive theory of grammar
+* in `cause_` the underscore signifies that we are interested in a substantive,
+  if naive, theory of causation, something that
+  * must be available to support all kinds of decompositional analyses e.g kill
+    means ‘cause to die’
+  * the common decompositional style of lexical analysis relies on primitives
+    like MOVE; BECOME; DO; and others,
+  * 4lang simply uses ordinary lexical entries _move_ `before(=agt at place/10`
+  * often the distinction between the ‘grammatical’ and the ‘ordinary’ use is
+    so slight that we see no reason to even make the distinction:
+  * eg part_of (discussed in 2.4 above) and is_a
+* The U/V (intransitive/transitive) distinction (p71)
+* Since our goals are remarkably close, and our motivations are nearly (p72)
   identical, readers of Jackendoff and Audring (2020) may find a direct
   comparison between the two formalisms helpful
   * Turning to the semantic component,
     we avoid the system of linking and coindexation that J&A 4.13.1 rely on
-    (the equalizers introduced in 3.3 will to some extent make up for this loss)
+    (the equalizers introduced in 3.3 will to some extent make up for this
+    loss)
 
-# 3 Temporal and spatial semantics
+# 3 Time and space
+
+3.1 Space
+3.2 Time
+3.3 Indexicals, coercion
+3.4 Measure
 
 # 4 Negation
 
@@ -63,6 +99,16 @@ in 3.2 and 6.1,
 
 # 6 Modals and counterfactuality
 
+6.1 Tense and aspect 
+6.2 The deontic world (The instrumental is also discussed here)
+6.3 Knowledge, belief, emotions 
+6.4 Defaults 
+
 # 7 Implicature and gradient adjectives
+
+7.1 Adjectives 
+7.2 Gradience 
+7.3 Implicature 
+7.4 Spreading activation 
 
 # 8 Coreference
