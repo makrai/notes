@@ -263,9 +263,9 @@ arXiv:2005.00633 [cs.CL]
 * we continue the fine-tuning process by feeding k additional training examples
   randomly chosen from reserved target language data portions, disjoint with
 * lower-level tasks: we compare three sampling methods:
-  * random sampling ( RAND ) of k target language sentences,
-  * selection of the k shortest ( SHORTEST ) but > 3
-  * the k longest ( LONGEST ) but <= 50 sentences
+  * random sampling (RAND) of k target language sentences,
+  * selection of the k shortest (SHORTEST) but > 3
+  * the k longest (LONGEST) but <= 50 sentences
 
 ## 4.1 Results and Discussion
 

@@ -112,11 +112,11 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * model has to judge whether the sentences paraphrases of each other
 * Performance is measured using the F 1 score
 
-### RTE. The Recognizing Textual Entailment dataset is a collection of
+### RTE. The Recognizing Textual Entailment dataset
 
 * sentence-pairs collected from a series of textual entailment challenges
   (Dagan+ 2005; Bar-Haim+ 2006; Giampiccolo+ 2007; Bentivogli+ 2009)
-* the second smallest dataset in the GLUE benchmark and
+* the second smallest dataset in the GLUE benchmark
 * fine-tuning on RTE was observed to be particularly unstable
   (Phang+ 2018; Dodge+ 2020; Lee+ 2020)
 * Accuracy is used to measure performance
@@ -215,9 +215,9 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     on a subset of BERT's training data
     * on the test set of the WikiText-2 LM benchmark (Merity+ 2016)
     * BERT was trained on English Wikipedia
-  * sequentially substitute the top-k layers of the network varying k from 0
-    (i.e. all layers are from the fine-tuned model) to 24 (i.e.  all layers are
-    from the pre-trained model)
+  * sequentially substitute the top-k layers of the network
+    varying k from 0 (i.e. all layers are from the fine-tuned model)
+    to 24 (i.e.  all layers are from the pre-trained model)
 * results in Fig. 2 (a) and (b)
   * catastrophic forgetting occurs for the failed models (Fig. 2a) —
     * perplexity on WikiText-2 is indeed degraded for k = 0 — the phenomenon
@@ -228,9 +228,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * catastrophic forgetting typically requires that the model at least
   successfully learns how to perform the new task
   * not the case for the failed fine-tuning runs
-  * ~ equal to that of the majority classifier
-    * Not only is the development accuracy
-    * also the training loss on the fine-tuning task (here RTE) is trivial,
+  * both devel acc and fine-tuning loss equal to that of the majority class
 * This suggests that the observed fine-tuning failure is rather
   an optimization problem causing catastrophic forgetting in the top layers of
   * We will show later that the optimization aspect is actually
@@ -312,8 +310,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   reduce the learning rate at the beginning of training
 * By rewriting the update equations of ADAM as follows, we can clearly see this
   effect of bias correction
+  ```
   α t = α * \sqrt{1 − β 2 t} /(1 − β 1 t ),             (1)
-  θ t ← θ t−1 − \frac{α t · m t}{\sqrt{v t} + epsilon}  (2)
+  θ_t ← θ t−1 − \frac{α t · m t}{\sqrt{v t} + epsilon}  (2)
+  ```
   * m t and v t are biased first and second moment estimates respectively
 * Equation (1) shows that bias correction simply boils down to reducing the
   original step size α by a multiplicative factor which is significantly
@@ -325,10 +325,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * The implicit warmup of ADAM is likely to be an important factor that
   contributed to its success, including fine-tuning BERT-based LMs
 * Fig. 5: the results of fine-tuning on RTE with and without bias correction
-  for BERT, RoBERTa, and ALBERT models.  5
+  for BERT, RoBERTa, and ALBERT models
   * footnote: Some of the hyperparameter settings lead to a small fine-tuning
     variance where all runs lead to a performance below the majority baseline
-    Obviously, such fine-tuning stability is of limited use
+    * Obviously, such fine-tuning stability is of limited use
   * significant benefit in combining warmup with bias correction,
     * particularly for BERT and ALBERT
     * Even though for RoBERTa fine-tuning is already more stable even without
@@ -348,17 +348,17 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 * To get further intuition about the fine-tuning failure, we provide
   loss surface visualizations (Li+ 2018; Hao+ 2019) of failed and successful
-* Denote by θ p , θ f , θ s the parameters of the
+* Denote by `θ_p , θ_f , θ_s` the parameters of the
   pre-trained model, failed model, and successfully trained model,
-  * We plot a two-dimensional loss surface f (α, β) = L(θ p + αδ 1 + βδ 2 )
-    in the subspace spanned by δ 1 = θ f − θ p and δ 2 = θ s − θ p
-    centered at the weights of the pre-trained model θ p
+  * We plot a two-dimensional loss surface `f (α, β) = L(θ_p + αδ 1 + βδ 2 )`
+    in the subspace spanned by `δ 1 = θ_f − θ_p` and `δ 2 = θ_s − θ_p`
+    centered at the weights of the pre-trained model `θ_p`
   * more details are specified in Section 7.6 in the Appendix
 * Contour plots of the loss surfaces for RTE, MRPC, and CoLA in Fig. 7
   * They provide additional evidence to our findings on vanishing gradients:
-  * failed fine-tuning runs converge to a “bad” valley separated from the local
-    minimum (to which the successfully trained run converged) by a barrier
-    (see also Fig. 13 in the Appendix)
+  * failed fine-tuning runs converge to a “bad” valley
+    separated from the local minimum (to which the successfully trained run
+    converged) by a barrier (see also Fig. 13 in the Appendix)
   * highly similar geometry for all three datasets
     * further support for our interpretation of fine-tuning instability as a
       primarily optimization issue
