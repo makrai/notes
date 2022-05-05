@@ -44,6 +44,9 @@ in 3.2 and 6.1,
   can be reconstructed without assuming link types beyond ‘1’ and ‘2’,
   by taking these as relationals that typecast their arguments
 * we compare 4lang to UD 48
+* assume that link types are acting as variable-binding term operators (VBTOs)
+  so that we would have not just =agt and =pat, but also =goal, =source,
+  =theme, =pos and perhaps several others
 * In earlier versions of 4lang, Makrai (2014) used several thematic role-like
   constructs, but this really stretched the ontological committment (Quine
   1947) of the model beyond what is absolutely necessary
@@ -61,9 +64,28 @@ in 3.2 and 6.1,
 
 # 4 Negation
 
+* Here we take advantage of the mechanism that we have at our disposal
+  independent of negation and quantification, thematic roles (Dowty, 1986) and
+  the fact that we already have a fundamental is_a
+
 # 5 Probabilistic reasoning
 
 # 6 Modals and counterfactuality
+
+* This again illustrates a point we already made at the end of 6.1: it is the
+  lexical semantics of the elements such as the instrumental case marker ins_,
+  defined as =pat make ins_ =agt[easy] that drives the way instruments are
+  referred to in language, not some top-down theory (such as hierarchical
+  ordering of thematic roles). This is not to say that conceptual definitions
+  such as Fillmore’s “The case of the inanimate force or object causally
+  involved in the action or state identified by the verb” or Pān.ini’s “most
+  effective means” are useless. To the contrary, these are both powerful
+  paraphrases for trying to get to the meaning of the instrumental marker, and
+  for the analytically minded, they provide excellent guidance in trying to
+  sort out what (if anything) can be considered an instrument in a given
+  situation. Our own definitional attempt differs from these chiefly in being
+  provided in a fully formalized language, in keeping with the overall plan of
+  the work.
 
 # 7 Implicature and gradient adjectives
 
