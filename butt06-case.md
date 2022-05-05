@@ -383,8 +383,8 @@ Theories of Case
   * V+O+A (transitive)
   * V+O+D+A  (ditransitive)
 * Fillmore’s idea was [via a series of transformations as] in TG
-  * Chomsky (1965:64– 71) argued ... that an integration of [deep cases] into
-    the categorical structure of a tree was mistaken
+  * Chomsky (1965:64– 71) argued ... that an integration of notions such as O,
+    A, D or Subject into the categorical structure of a tree was mistaken
   * Case Grammar as a variant of TG was thus not accepted
   * hE, the notion of a deep structure which licensed certain thematic roles
     became an integral part of linguistic theory
