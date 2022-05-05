@@ -18,14 +18,13 @@ Masaaki Tsuchida and Kai Ishikawa
 * methods based on
   * logical inference (Hickl and Bensley, 2007; Clark and Harrison, 2009),
   * similarity between
-    * dependency parse trees (Bar-Haim et al., 2009) or similarity between
-    * syntactic graphs (Padò et al., 2009).
-  * Sammons et al.  (2010) reports that such previous works have made
-    significant progress (Sammons et al., 2010) beyond a smart lexical
-    baseline (Do et al., 2009)
-* However, the top 3 systems in RTE-6
-  * (Jia et al., 2010; Majumdar and Bhattacharyya, 2010; Tateishi and
-    Ishikawa, 2010)  were
+    * dependency parse trees (Bar-Haim+ 2009) or similarity between
+    * syntactic graphs (Padò+ 2009).
+  * Sammons+ (2010) reports that such previous works have made
+    significant progress (Sammons+ 2010) beyond a smart lexical
+    baseline (Do+ 2009)
+* hE, the top 3 systems in RTE-6
+  * (Jia+ 2010; Majumdar and Bhattacharyya, 2010; Tateishi and Ishikawa, 2010)
   * basically lexical-level matching approaches,
 
 # 2 Description of Our System

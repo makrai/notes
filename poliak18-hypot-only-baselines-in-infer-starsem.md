@@ -5,15 +5,15 @@ naacl 2018
 # Abstract
 
 * is inference a relationship between a context and a hypothesis?
-*  experiments on ten distinct NLI datasets
-* hypothesisonly model, significantly outperform a majorityclass baseline
+* experiments on ten NLI datasets
+* hypothesis-only model, significantly outperform a majority class baseline
 
 # 1 Intro
 
 * datasets vary in size, construction, genre, label classes
   Dagan+ (2006, 2013), Nangia+ (2017)
 * related work
-  * MacCartney (2009) used a simple bagofwords model to evaluate early
+  * MacCartney (2009) used a simple bag-of-words model to evaluate early
     iterations of Recognizing Textual Entailment (RTE) challenge sets
   * Rudinger+ (2017) and in unpublished work
     * hypotheses in the Stanford Natural Language Inference (SNLI) dataset
@@ -26,10 +26,10 @@ naacl 2018
 * further related work
   * In the Story Cloze task (Mostafazadeh+ 2016, 2017)
     * a model is presented with a short four-sentence narrative and
-      asked to complete it by choosing one of two suggested  sentences
-    * Schwartz+ (2017b) achieved state-of-the-art performance by
-      ignoring the narrative and training a linear classifier with features
-      related to the writing style of the two potential endings
+      asked to complete it by choosing one of two suggested sentences
+    * Schwartz+ (2017b) achieved SOTA performance by ignoring the narrative and
+      training a linear classifier
+      with features related to the writing style of the two potential endings
     * features focusing on sentence length, sentiment, and negation are
       sufficient for achieving high accuracy on this dataset
       (Schwartz+ 2017a; Cai+ 2017; Bugert+ 2017)
@@ -38,10 +38,9 @@ naacl 2018
 
 * We modify Conneau+ (2017)’s InferSent method
   * A Conneau, D Kiela, H Schwenk, L Barrault, & A Bordes
-  EMNLP 2017
-  Supervised learning of universal sentence representations
-  from natural language inference data
-  * performed competitively with the bestscoring systems on SNLI while being
+    EMNLP 2017
+    Supervised learning of universal sentence representations from NLI data
+  * performed competitively with the best-scoring systems on SNLI while being
     representative of the types of neural architectures commonly used for NLI
   * uses a BiLSTM encoder, and constructs a
     sentence representation by maxpooling over its hidden states
@@ -49,8 +48,8 @@ naacl 2018
 
 # 5 Datasets
 
-* ten NLI datasets and
-  categorized into three distinct groups based how they were constructed
+* ten NLI datasets 
+* categorized into three groups based how they were constructed
 
 ## Human elicited
 
@@ -74,14 +73,13 @@ naacl 2018
 * datasets
   * Sentences Involving Compositional Knowledge (SICK) Marelli+ (2014)
     * rules to expand or normalize premises to make them  more difficult
-  * Addone RTE
-    * mixedgenre dataset
-    * tests whether NLI systems can understand adjectivenoun compounds
+  * Add-one RTE
+    * mixed-genre dataset
+    * tests whether NLI systems can understand adjective-noun compounds
       (Pavlick and CallisonBurch, 2016)
     * To create hypotheses, adjectives were removed or inserted
   * SciTail is an NLI dataset (Khot+ 2018)
-    * TODO or not TODO
-  * Multiple Premise Entailment (MPE) Unlike
+  * Multiple Premise Entailment (MPE)
   * Johns Hopkins Ordinal CommonSense Inference (JOCI)
 
 ## Automatically Recast
@@ -102,7 +100,7 @@ naacl 2018
     * In the recast version, the
       * premises are the original sentences and the
       * hypotheses are the same sentences with the pronoun replaced
-    * this mechanism would appear to maximally benefit a hypothesisonly
+    * this mechanism would appear to maximally benefit a hypothesis-only
       approach, as the hypothesis semantically subsumes the context
   * FrameNet Plus (FN+)
     * Using paraphrases from PPDB (Ganitkevitch+ 2013),
@@ -116,14 +114,14 @@ naacl 2018
 
 ## Criticism of the Majority Baseline
 
-* Across six of the ten datasets, our hypothesisonly model
+* Across six of the ten datasets, our hypothesis-only model
   * significantly outperforms the majoritybaseline, even
   * outperforming the best reported results on one dataset, recast SPR
 * it is unclear whether the construction method is responsible
   * largest relative gains are on humanelicited models
   * baseline performances of other datasets are noticeably larger
   * by including multiple genres, an NLI dataset may contain less biases
-* On three of the five human judged datasets, the hypothesisonly model defaults
+* On three of the five human judged datasets, the hypothesis-only model defaults
   to labeling each instance with the majority class tag. We find the same
   behavior in one recast dataset (DPR)
 
