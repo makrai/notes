@@ -21,6 +21,32 @@ Agents, patients
 Deep cases
 More complex notation
 
+## 1.3 1.3 The syntax of definitions
+
+* the details of the ‘tinkering’ change from language to language, but we try
+* the `mark_` primitive connects words to their meanings (see 2.5). One
+* permitting semantics to cross-cut syntax and morphology, such as by reliance
+  * particular piece of tinkering both Cresswell and I are guilty of
+
+## 1.5 The algebra of definitions
+
+### 5. MarkedClause ÑDefaultClause|PositionClause|ComplexClause|Clause
+
+* Position clauses, just as `mark_`, are language-specific. They are used in a
+* we abstract away from a great deal of micro-syntax, since most of the
+  ‘tinkering’ is both highly syntactic and highly language-specific, while our
+  focus is with the semantic and the universal.
+
+### 7. PositionClause Ñ PositionMarker mark_ UnaryAtom
+
+* `mark_` is a semi-technical mark term, the closest we will get to
+* the Sausserean sign: its agent is a sign, its patient is a meaning, and it
+* A typical example would be in the last clause defining the English word _buy_
+  * =agt receive =pat, =agt pay seller, "from _" mark_ seller. 
+  * discussed in 1.4
+  * Whatever follows the string “from” is the seller in English
+  * in Hungarian it would be whatever precedes the ablative case marker
+
 # 2 From morphology to syntax
 
 ## 2.1 Lexical categories and subcategories
