@@ -1,6 +1,6 @@
 Kornai
 Semantics
-2019
+2020
 
 ## 1.4
 
@@ -17,6 +17,15 @@ Semantics
   \href{https://en.wikipedia.org/wiki/Semantic_network}{semantic network}
   theory, of which both {\tt 4lang} and \href{http://amr.isi.edu}{AMR} are
   modern instances
+
+## 1.5 Suggested reading plans
+
+* Our grammatical theory is, broadly speaking, Pān.inian: we assume
+  * people want to express ideas so that others will understand them:
+  * grammar is a formal transduction mechanism
+    from the ideas (meaning representations) to utterances (strings of words).
+  * We take several technical devices from Pān.ini, chief among them the theory
+    of kārakas or deep cases, which we discuss in Section 4.6, and the
 
 ## 2.6 Proof theory
 
@@ -46,7 +55,7 @@ Semantics
   * [but there are] words like _mirror_ or _wiggle_ that are _sui generis_
     * these offer no significant contrasts
 
-## 4.2
+## 4.2 Formal syntax
 
 * our labels are called
   * NOM and ACC in case grammar (Fillmore, 1977)
@@ -56,27 +65,27 @@ Semantics
 
 ## 4.6 Inner syntax
 
-* What does NOM mean? The key semantic contribution is the sense of agency, that
-* three components of the system that implements inner syntax: the actual
-  * mechanism used for implementing deep cases, the precise
-  * inventory of deep cases, and the
+* What does NOM mean? The key semantic contribution is the sense of agency p115
+* three components of the system that implements inner syntax 117
+  * mechanism used for implementing deep cases
+  * inventory of deep cases
   * linguistic patterns that link deep cases to surface cases 119
-    * dative shows aspects of both having (possession) and getting to (directon)
+    * dative: both having (possession) and getting to (directon)
     * patterns where the dative is an experiencer, as in Marinak tetszik/fáj
     * Mit csinálsz nekem?, what.ACC do.2SG I.DAT, ‘what the heck are you doing?’
-      * the dative NP just concerns itself with the issue. These patterns again
-      * known as dativus ethicus in Latin. Finally, there are cases that seem
+      * the dative NP just concerns itself with the issue
+      * known as _dativus ethicus_ in Latin
     * Péternek el kell mennie, Peter.DAT away must go.INF3SG, ‘Peter must leave’
-      * often called the indirect object
-      * whether the explanation [of inter-language similarities] is to be sought
-        in universal cognitive patterns or in etymological relatedness or
-        cultural borrowing remains to be seen.  Be that as it may, we need a
-* mechanism for expressing such patterns on a per-language basis, and 4lang keys
-  * _appear_, which in Hungarian governs a double dative:
+      * often called the _indirect object_
+      * whether the explanation [of inter-language similarities] is to be
+        sought in universal cognitive patterns or in etymological relatedness
+        or cultural borrowing remains to be seen
+* mechanism for expressing such patterns on a per-language basis
+  * _appear_ in Hungarian governs a double dative:
   * Marinak Péter betegnek tűnik, Mary.DAT Peter.NOM sick.DAT appear.3SG
   * We analyze appear as give impression of or, more precisely, as agent cause
     recipient to have impression of condition
-  * defend (from/against), equal, feed, prefer, protest, shoot (at), and full
+  * defend (from/against), equal, feed, prefer, protest, shoot (at)
 
 ## 5.5 Representing knowledge and meaning
 
