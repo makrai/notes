@@ -164,14 +164,185 @@ Appl. Sci. 2021, 11,
 # 3 related works, a hierarchical categorization 4
 
 * by modeling of the temporal dynamics and across modalities: 3 general categs
-  * non-temporal architectures, ie, approaches that simplify the modeling of
-    the temporal dimension in both unimodal and multimodal interactions, by
-    assuming simple statistical representations;
-  * pseudo-temporal architectures, which also assume an oversimplification of
-    the temporal dimension, in either unimodal or multimodal interactions
-    (while the first category simplifies in both ways); and
-  * temporal architectures, ie, methods that try to capture both unimodal and
-    cross-modal temporal dependencies
+
+## 3.1. Methods Requirements and Categorization
+
+## 3.2 non-temporal architectures
+
+* ie simplify the modeling of the temporal dimension in both unimodal and
+  multimodal interactions, by assuming simple statistical representations;
+* neither modality-specific temporal interactions nor cross-modality temporal interactions.  
+* early fusion. One of the basic fusion ideas is applied on the task of
+  * called deep fusion (DF)
+  * persuasiveness prediction [50] 
+  * evaluated on multimodal SER in a variety of latter works. In this
+  * represent the unimodal spaces with static vectors and train a
+  * feed-forward neural network for each modality
+  * confidences c and the complementary confidences 1 − c of each modality are
+    passed through a deep neural network to perform the final inference.
+* [51] tries to introduce the temporal dimension, late fusion 
+  * combine information from neighboring utterances,
+    in order to capture the context of the session, they do
+    not consider the temporal interactions between segments of the same
+    utterance
+  * static feature vectors are extracted for every utterance and modality and
+    are later passed through a contextual LSTM (long short term memory) which
+    is applied on the sequence of utterance-based features and produces
+    context-dependent representations
+  * representations are later concatenated and used as an input to a final
+    contextual LSTM. In this way, the proposed architecture
+  * includes both unimodal and cross-modal utterance-level temporal interacts
+  * hE, neither simple early nor late fusion techniques are capable of
+    achieving robust multi-modal representations
+* tensor fusion network (TFN), introduced by [6]
+  * concatenates each unimodal representation with the unit vector and then
+    computes the outer product among each modality. The tensor fusion layer
+    (ie, outer product) explicitly captures the unimodal, bimodal and trimodal
+    interactions using a three-fold Cartesian product from modality embeddings.
+    The final representation is passed through an inference subnetwork which
+    performs inference of the target value. Despite the representation power of
+  * problem of exponential dimensional growth is a drawback for rhis
+  * [52] tries to tackle it by introducing the low rank fusion technique, which
+    scales linearly in the number of modalities and has less parameters. The
+    * matrix rank decomposition in order to parameterize the product of the
+      final neural network with the fused tensor. Here, we have to note that
+  * both [6,52] do not include temporal representations for the acoustic and
+    visual modalities, but instead consider the expected (average) vector for
+    each utterance
+
+## 3.3 pseudo-temporal architectures
+
+* also oversimplify the temporal dimension, in either unimodal or multimodal
+  interactions
+* feature-summarizing temporal observations for either cross-modal or
+  intra-modal interactions
+* attention mechanism is presented in [53]. The authors propose
+  * a deep architecture for the problem of speech emotion recognition, and thus
+  * two modalities of audio and text
+  * For each medium, they implement a recurrent neural network (RNN) to capture
+  * In order to choose the most emotional words, the final audio embedding
+    vector is used as a query for an attention mechanism against the hidden
+    states of all text sequence elements. The representations of the selected
+    “emotional” words are concatenated with the original audio vector to form
+    the multimodal representation
+  * hE, the performance is not improved by the use of the attention layer.
+* The same authors extend their work [54], the multi-hop attention (MHA)
+  * three steps: 
+  * MHA-1: predict the emotion based on the audio bidirectional-LSTM (BiLSTM)
+    and query the output state (ie, the representation of the audio) to the
+    text BiLSTM in order to obtain a text representation H 1 that is associated
+    with this very sound; 
+  * MHA-2: query H 1 to the audio BiLSTM in order to obtain the audio segments
+    that are related to the selected words and represent them with H 2 ; and 
+  * MHA-3: query H 2 to the text BiLSTM for cross-check and obtain the overall
+    representation H 3 
+    * hE the third attention step results in a worse performance compared to
+      that achieved by MHA-2.
+* A mix of traditional fusion techniques seems to be effective when combined
+  with strong segment feature representations, as shown in [55]. More
+  * apply SOTA techniques for unimodal representations with the use of
+    * ALBERT [42] embeddings for the text modality. As for the
+    * audio modality a spectrogram is calculated for every audio segment and
+      passed through a CNN in order to learn the unimodal representation
+      * The sequence of segmented features is the input to a Bi-LSTM and a
+        multi-head self-attention layer in order to filter periods of aural
+        silence
+  * The resulting multimodal representations are
+    * firstly early-fused and passed through a prediction (bi-modal) network
+    * and subsequently late-fused using an ensemble classifier on the speech
+      prediction, text prediction and bimodal prediction networks.
+* Designing a network that learns modality representations,
+  instead of using existing modality embedding libraries, may result in more
+  * [9], in order to learn representations from
+    * visual sequences: convolutional recurrent multiple kernel learning
+      (CRMKL) network which uses a convolutional RNN, ie, a CNN applied on the
+      concatenation of pairs of consecutive images, with three different
+      convolutional filter sizes
+    * text representations are learned with the application of a CNN on the
+      text embeddings, while for the
+    * aural modality, the openSMILE [25] embeddings are used. The network is
+    * multiple kernel learning algorithm, and the final emotion prediction is
+      inferred based on algorithmically selected features from the
+      concatenation of the unimodal representations
+* Attention mechanisms
+  not only serve to produce better cross-modal representations, but they can
+  * efficiently combine different feature extraction methods of the same
+    modality
+  * [56] use two different, and widely used in text analysis, feature
+    extraction techniques: 
+    * applying three Conv1D networks, with filter size 1, 2 and 3,
+      respectively, on the text embedding sequence in order to extract a
+      variety of n-word representations, and 
+    * using a Bi-RNN on the input embeddings and then apply method (a) to the
+      output
+    * attention is applied along the two methods so as to get the best possible
+      dynamics
+    * for the audio modality, a SincNet, a neural architecture that tends to
+      replace CNNs in audio feature extraction [29], is used
+    * Before concatenating the feature vectors, self-attention is calculated on
+      the unimodal sequences in order to identify informative segments.  
+* a range of different ideas that deliver promising results. The first one is
+  * [57]: the authors break down the emotion recognition problem to three
+    sub-tasks in order to extract direct and relative predictions
+    * they concatenate the different feature representations and separate
+      emotion recognition to the following tasks: 
+    1. multimodal local ranking task, the model is presented with two
+      short segments randomly selected within a video and is tasked with
+      determining whether there was an increase or decrease in emotional
+      intensity. In this way, a binary classification task is created. 
+    2. global ranking task, which uses the previous results of local rankings
+       to infer global emotion ranks using a Bayesian skill rating algorithm.  
+    3. direct-relative fusion. The global emotion ranks are incorporated with
+       the raw multimodal inputs to estimate final emotion intensities.
+
+* multimodal representation learning, [58] is one of the crucial works
+  * not concentrate on finding an efficient way to fuse information. The
+  * multimodal cyclic translation network (MCTN) learns
+    a joint representation space for different modalities
+  * For two modalities it uses an encoder–decoder architecture to translate one
+    modality to another by adopting a cyclic translation loss. The produced
+  * hidden embeddings serve as the cross-modal representation
+  * For three modalities, a cyclic translation is formed
+  * the resulting embeddings are the input to an encoder with the third
+    modality being the target for the corresponding decoder
+  * once trained with multimodal data, only data from one source modality are
+    needed during the inference time to construct both the joint representation
+    and the label
+  * more robust to noisy unimodal inputs
+* All aforementioned works 
+  * efficiently modeling unimodal temporal dynamics.  
+  * no cross-modal learning or fusion on the temporal level, since the cross-
+    modal interaction is performed on the final representations instead of the
+    sequence level.
+* The MCTN [58] achieves modeling both temporal cross-modal learning and
+  unimodal temporal dynamics but only for two modalities. When needing the
+  third modality, there is no cross-modal temporal interactions for this
+  specific input sequence.
+* In the pseudo-temporal architectures (PTA), modeling unimodal temporal
+representations (UTA) is more common
+* nL there are architectures that prefer to model crossmodal temporal
+  interactions only (CTA). An example of such models is presented in
+  * [59] introduce the multimodal factorization model (MFM) that
+    * factorizes multimodal representations into
+      multimodal discriminative factors and modality-specific generative factrs
+    * tries to learn multimodal discriminative factors in order to perform
+      inference, while it
+      jointly learns unimodal generative factors that can be used to
+      reconstruct missing or noisy information during testing time.  To achieve
+    * an encoder for each modality (audio, text, video) and their fusion (audio
+      + text + video), which creates the generative and discriminative factors.
+    * The corresponding decoders of the generative factors serve to
+      approximate the input modalities, while
+      the decoder of the discriminative factor is used for inference
+    * For the encoder networks, the MFN architecture is used while
+      LSTMs serve as decoders
+    * competitive performance on six multimodal time series datasets, a big
+    * reconstruction of missing modalities from observed modalities does not
+      significantly impact discriminative performance.
+
+## 3.4 temporal architectures
+
+* ie try to capture both unimodal and cross-modal temporal dependencies 
 
 # 4 evaluation results in the most widely adopted datasets for emotion recog 12
 
@@ -212,6 +383,10 @@ Appl. Sci. 2021, 11,
     highly generalizable results and upgrade the performance estimation to a
     more realistic manner
 
+## 4.2. Performance Evaluation Metrics
+
+## 4.3. Evaluation Procedures
+
 ## 4.4. Aggregated Reported Results
 
 * most of the authors have tested their work on the IEMOCAP datasets
@@ -240,7 +415,7 @@ Appl. Sci. 2021, 11,
     * MTAG [71] is the architecture that holds the SOTA performance,
       while using just 0.14 million parameters
 
-# 5 conclude our work and introduce the key future challenges, as they arise 16
+# 5 conclusion and future challenges 16
 
 * future
   * evaluation procedure. More specifically, the proposed architectures are
