@@ -5,11 +5,11 @@ ACL | IJCNLP | RepL4NLP 2021
 # Abstract
 
 * supervised models for text clustering find it difficult to directly optimize
-  for clustering results. This is
+  for clustering results
   * because clustering is a discrete process and it is
-    difficult to estimate meaningful gradient of any discrete function that can
+    difficult to estimate meaningful gradient of any discrete function
   * so supervised clustering algorithms indirectly optimize for some continuous
-    function that approximates the clustering process.
+    function that approximates the clustering process
 * We propose a scalable training strategy that directly optimizes for a discrete
   clustering metric
   * We train a BERT-based embedding model using our method and

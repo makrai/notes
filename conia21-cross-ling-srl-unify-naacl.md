@@ -10,7 +10,7 @@ https://github.com/SapienzaNLP/unify-srl
     * each language adopts its own linguistic formalism
     * PropBank for English, AnCora for Spanish, and PDT-Vallex for Czech,
 * we present a unified model to perform cross-lingual SRL
-  over heterogeneous linguistic resources. Our model
+  over heterogeneous linguistic resources
   * implicitly learns a high-quality mapping for different formalisms across
     diverse languages without resorting to word alignment and/or translation
   * competitive with the current SOTA and robust to low-data scenarios
