@@ -2,22 +2,22 @@ UnNatural Language Inference
 Koustuv Sinha, Prasanna Parthasarathi, Joelle Pineau, Adina Williams
 ACL 2021 arXiv:2101.00010 [cs.CL]
 
-https://github.com/facebookresearch/unlu
+* code and data are available at https://github.com/facebookresearch/unlu
 
 # Abstract
 
 * SOTA Natural Language Inference (NLI) models assign the same labels to
-  permuted examples as they do to the original, i.e. they are largely invariant
+  permuted examples as they do to the original
 * we propose a suite of metrics and investigate which properties of particular
-  permutations lead models to be word-order invariant. In the MNLI dataset, for
-  example, we find almost all (98.7%) examples contain at least one permutation
-  which elicits the gold label. Models are sometimes even able to assign gold
-  labels to permutations that they originally failed to predict correctly. We
-  provide a comprehensive empirical evaluation of this phenomenon, and further
-  show that this issue exists for
-* both
+  permutations lead models to be word-order invariant
+  * eg In the MNLI dataset we find 98.7% examples have at least one permutation
+    which elicits the gold label
+  * Models are sometimes even able to assign gold labels to permutations that
+    they originally failed to predict correctly
+  * We provide a comprehensive empirical evaluation of this phenomenon, and
+* issue exists for both
   * Transformers and pre-Transformer RNN / ConvNet based encoders, as well as
-  * English and Mandarin Chinese). Our code and data are available at this https
+  * English and Mandarin Chinese
 
 # 1 Intro
 
