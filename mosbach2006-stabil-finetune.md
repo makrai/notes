@@ -76,7 +76,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     * a large-scale empirical investig of the fine-tuning instability of BERT
     * dramatic variations in fine-tuning accuracy across multiple restarts
     * it may be related to the choice of random seed and the dataset size
-* directly address the fine-tuning instab, few approaches have been proposed
+* directly address the fine-tuning instability: few approaches
   * Phang+ (2018) intermediate task training (STILTS) before fine-tuning
     * goal: improving performance on the GLUE benchmark
     * their proposed method leads to improved fine-tuning stability
@@ -98,7 +98,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * following previous work studying instability during fine-tuning:
   * Detailed statistics for each can be found in Section 7.2 in the Appendix
 
-### CoLA. The Corpus of Linguistic Acceptability (Warstadt+ 2018) is
+### CoLA. The Corpus of Linguistic Acceptability (Warstadt+ 2018)
 
 * a sentence-level classification task containing sentences labeled as either
   grammatical or ungrammatical
@@ -108,7 +108,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 ### MRPC. The Microsoft Research Paraphrase Corpus (Dolan and Brockett, 2005)
 
-* sentence-pair classification task. Given two sentences, a
+* sentence-pair classification task
 * model has to judge whether the sentences paraphrases of each other
 * Performance is measured using the F 1 score
 
@@ -121,7 +121,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   (Phang+ 2018; Dodge+ 2020; Lee+ 2020)
 * Accuracy is used to measure performance
 
-### QNLI. The Question-answering Natural Language Inference dataset contains
+### QNLI. The Question-answering Natural Language Inference dataset
 
 * sentence pairs obtained from SQuAD (Rajpurkar+ 2016)
 * The task is to determine whether the context sentence contains the answer
@@ -160,14 +160,14 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   using the same fine-tuning strategy
   * compared to BERT, both RoBERTa and ALBERT have slightly diff hyperparams
     * RoBERTa uses weight decay with λ = 0.1 and no gradient clipping, and
-      ALBERT does not use dropout
+    * ALBERT does not use dropout
     * A detailed list of all default hyperparameters for all models: sec 7.3
 * Our implementation is based on HuggingFace’s transformers lib (Wolf+ 2019)
 
 ### Fine-tuning stability
 
 * By fine-tuning stability we mean the
-  standard deviation of the fine-tuning performance (measured, e.g., in terms
+  standard deviation of the fine-tuning performance (measured, eg, in terms
   of accuracy, MCC or F 1 score) over the randomness of an algorithm
 * we measure fine-tuning stability using the development sets from GLUE
   * following previous works (Phang+ 2018; Dodge+ 2020; Lee+ 2020)
@@ -190,24 +190,24 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 ## 4.1 Does catastrophic forgetting cause fine-tuning instability?
 
-* Catastrophic forgetting (McCloskey and Cohen, 1989; Kirkpatrick+ 2017) refers
+* Catastrophic forgetting (McCloskey and Cohen, 1989; Kirkpatrick+ 2017)
   * neural network is sequentially trained to perform two different tasks, and
-    it loses its ability to perform the first task after being trained on the
-    second
+    it loses its ability to perform the first task
+    after being trained on the second
   * in our setup: after fine-tuning a pre-trained model, it can no longer
     perform the original masked language modeling task used for pre-training
   * can be measured in terms of the perplexity on the original training data
     * the language modeling performance of a pre-trained model correlates with
       its fine-tuning accuracy (Liu+ 2019; Lan+ 2020),
     * no clear motivation for why preserving the original MLM performance after
-      fine-tuning is important. 1
+      fine-tuning is important
       * only where supervised fine-tuning as an intermediate training step,
-        e.g. with the goal of domain adaptation
+        eg with the goal of domain adaptation
       * We leave an investigation of this setting for future work
 * In the context of fine-tuning BERT,
   Lee+ (2020)'s regularization method has an effect of alleviating catastr forg
 * how exactly catastrophic forgetting occurs during fine-tuning
-  and how it relates to the observed fine-tuning instability. To better
+  and how it relates to the observed fine-tuning instability
 * we perform the following experiment:
   * fine-tune BERT on RTE, following the default strategy by Devlin+ (2019)
   * select three successful and three failed fine-tuning runs and
@@ -220,36 +220,36 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     to 24 (i.e.  all layers are from the pre-trained model)
 * results in Fig. 2 (a) and (b)
   * catastrophic forgetting occurs for the failed models (Fig. 2a) —
-    * perplexity on WikiText-2 is indeed degraded for k = 0 — the phenomenon
-  * catastrophic forgetting affects only the top layers of the network — in our
-    * around 10 out of 24 layers, and the
-  * same for the successfully fine-tuned models, except for a much smaller
-    increase in perplexity
+    * perplexity on WikiText-2 is indeed degraded for k = 0
+    * affects only the top layers of the network
+    * around 10 out of 24 layers
+  * same for the successfully fine-tuned models, except for a
+    much smaller increase in perplexity
 * catastrophic forgetting typically requires that the model at least
   successfully learns how to perform the new task
   * not the case for the failed fine-tuning runs
   * both devel acc and fine-tuning loss equal to that of the majority class
 * This suggests that the observed fine-tuning failure is rather
-  an optimization problem causing catastrophic forgetting in the top layers of
+  an optimization problem causing catastrophic forgetting in the top layers
   * We will show later that the optimization aspect is actually
     sufficient to explain most of the fine-tuning variance
 
 ## 4.2 Do small training datasets cause fine-tuning instability?
 
 * by far the most commonly stated hypothesis for fine-tuning instability
-  (Devlin+ 19; Phang+ 18; Lee+ 20; Zhu+ 20; Dodge+ 20; Pruksachatkun+ 20) that
-* do small training dataset inherently lead to fine-tuning instability we
+  (Devlin+ 19; Phang+ 18; Lee+ 20; Zhu+ 20; Dodge+ 20; Pruksachatkun+ 20)
+* do small training dataset inherently lead to fine-tuning instability
 * experiment
   * similar experiment (Phang+ 2018) with a different goal of showing that
     their extended pre-training procedure can improve fine-tuning stability
-  * randomly sample 1,000 training samples from the CoLA, MRPC, and QNLI traini
-  * fine-tune BERT using 25 different random seeds on each dataset. We compare
+  * randomly sample 1,000 training samples from the CoLA, MRPC, and QNLI train
+  * fine-tune BERT using 25 different random seeds on each dataset
   * two settings
     * training for 3 epochs on the reduced training dataset, and
     * training for the same number of iterations as on the full training set
-* results in Fig. 3 and observe that
-  * training on less data does indeed affect the fine-tuning variance, in
-    * many more failed runs
+* results in Fig. 3
+  * training on less data does indeed affect the fine-tuning variance:
+    many more failed runs
   * hE, when we simply train for as many iterations as on the full train set,
     we almost completely recover the original variance of the fine-tuning
     performance
@@ -257,18 +257,18 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     * similar to the results obtained by training on the full training set
   * as expected, training on fewer samples affects the generalization
     * worse development set performance on all three tasks
-  * the same holds true for datasets from different domains than the pre-trai
+  * the same holds true for datasets from different domains than the pre-train
     * Section 7.8 in the Appendix shows
 * We conclude from this experiment, that the role of
-  training dataset size per se is orthogonal to fine-tuning stability. What is
+  training dataset size per se is orthogonal to fine-tuning stability
   * crucial: the number of training iterations
-    (that changes the effective learning rate schedule) which, as we will show
-    in the next section, has a crucial influence on the fine-tuning stability
+    (that changes the effective learning rate schedule)
+  * we will show in the next section that it has a crucial influence on stabilt
 
 # 5 Disentangling optimization and generalization in fine-tuning instability 5
 
 * fine-tuning instability is an optimization problem
-  * this sec: a simple solution. Additionally, we show that even though
+  * this sec: a simple solution
 * a large fraction of the fine-tuning instability can be explained by optimizat
   * the remaining instability can be attributed to generalization issues where
     fine-tuning runs with the same training loss exhibit
@@ -278,11 +278,11 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 ### Failed fine-tuning runs suffer from vanishing gradients
 
-* Fig. 2c that the failed runs have practically constant training loss
-  * Fig. 14 in the Appendix for a comparison with successful fine-tuning). In
-* Fig. 4 we plot the l 2 gradient norms of the loss function with respect to
-  different layers of BERT, for one failed and successful fine-tuning run. For
-  * failed run we see large enough gradients only for the top layers and
+* Fig. 2c: the failed runs have practically constant training loss
+  * Fig. 14 in the Appendix: a comparison with successful fine-tuning
+* Fig. 4 plots the l 2 gradient norms of the loss function with respect to
+  different layers of BERT, for one failed and successful fine-tuning run
+  * failed run: we see large enough gradients only for the top layers and
     vanishing gradients for the bottom layers
   * successful run
     * also observe small gradients at the beginning of training (until iter 70)
@@ -293,13 +293,13 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * same behavior also for RoBERTa and ALBERT: Appendix Fig. 11 and 12
 * the vanishing gradients we observe during fine-tuning are
   harder to resolve than
-  the standard vanishing gradient problem (Hochreiter, 1991; Bengio+ 1994). In
+  the standard vanishing gradient problem (Hochreiter, 1991; Bengio+ 1994)
   * common weight initialization schemes (Glorot and Bengio, 2010; He+ 2015)
     * the pre-activations of each layer of the network have
       zero mean and unit variance in expectation
     * hE, we cannot simply modify the weights of a pre-trained model on each
-      layer to ensure this property since this would conflict with the idea of
-      using the pre-trained weights
+      layer to ensure this property since
+      this would conflict with the idea of using the pre-trained weights
 
 ### Importance of bias correction in ADAM
 
@@ -312,13 +312,13 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   effect of bias correction
   ```
   α t = α * \sqrt{1 − β 2 t} /(1 − β 1 t ),             (1)
-  θ_t ← θ t−1 − \frac{α t · m t}{\sqrt{v t} + epsilon}  (2)
+  θ_t ← θ t−1 − \frac{α t · m_t}{\sqrt{v t} + epsilon}  (2)
   ```
-  * m t and v t are biased first and second moment estimates respectively
-* Equation (1) shows that bias correction simply boils down to reducing the
-  original step size α by a multiplicative factor which is significantly
-  below 1 for the first iterations of training and approaches 1 as the number
-  of training iterations t increases (see Fig. 6)
+  * `m_t` and `v_t` are biased first and second moment estimates respectively
+* Equation (1) shows that bias correction simply boils down to
+  reducing the original step size α by a multiplicative factor which is
+  significantly below 1 for the first iterations of training and
+  approaches 1 as the number of training iterations t increases (see Fig. 6)
   * You+ (2020): bias correction in ADAM has a similar effect to the warmup
     which is widely used in deep learning to prevent early divergence
     (He+ 2016; Goyal+ 2017; Devlin+ 2019; Wong+ 2020)
@@ -350,8 +350,8 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   loss surface visualizations (Li+ 2018; Hao+ 2019) of failed and successful
 * Denote by `θ_p , θ_f , θ_s` the parameters of the
   pre-trained model, failed model, and successfully trained model,
-  * We plot a two-dimensional loss surface `f (α, β) = L(θ_p + αδ 1 + βδ 2 )`
-    in the subspace spanned by `δ 1 = θ_f − θ_p` and `δ 2 = θ_s − θ_p`
+  * We plot a two-dimensional loss surface `f (α, β) = L(θ_p + α δ_1 + β δ_2 )`
+    in the subspace spanned by `δ_1 = θ_f − θ_p` and `δ_2 = θ_s − θ_p`
     centered at the weights of the pre-trained model `θ_p`
   * more details are specified in Section 7.6 in the Appendix
 * Contour plots of the loss surfaces for RTE, MRPC, and CoLA in Fig. 7
@@ -360,8 +360,8 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     separated from the local minimum (to which the successfully trained run
     converged) by a barrier (see also Fig. 13 in the Appendix)
   * highly similar geometry for all three datasets
-    * further support for our interpretation of fine-tuning instability as a
-      primarily optimization issue
+  * further support for our interpretation of fine-tuning instability as a
+    primarily optimization issue
 
 ## 5.2 The role of generalization
 
@@ -370,9 +370,9 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * experiment:
   * fine-tune BERT on RTE for 20 epochs and show the
     * development set accuracy for 10 successful runs in Fig. 8a
-    * Fig. 8b the development set accuracy vs. training loss of all BERT
-      models fine-tuned on RTE for the full ablation study (shown in Fig. 9 in
-      the Appendix), in total 450 models
+    * the development set accuracy vs. training loss of all BERT models
+      fine-tuned on RTE for the full ablation study (shown in Fig. 9 in the
+      Appendix), in total 450 models
 * despite achieving close to zero training loss
   overfitting is not an issue during fine-tuning
   * consistent with previous work (Hao+ 2019)
@@ -380,7 +380,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   since the development accuracy varies considerably during fine-tuning and it
   does not degrade even when the training loss is as low as 10 −5
 
-# 6 A simple but hard-to-beat baseline for fine-tuning bert
+# 6 A simple but hard-to-beat baseline for fine-tuning BERT
 
 * guidelines for fine-tuning transformer-based MLMs on small datasets:
   * Use small learning rates with bias correction to avoid vanishing gradients
@@ -404,12 +404,11 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     the recent Mixout method (Lee+ 2020)
 * our method leads to a much more stable fine-tuning performance on all three
   datasets as evidenced by the
-  significantly smaller standard deviation of the final performance.  To
+  significantly smaller standard deviation of the final performance
 * Levene’s test (Levene, 1960) to check the equality of variances for the
   distributions of the final performances on each dataset
-  * For all three datasets, the test results in a p-value less than 0.001 when
-    we compare the variances between our method and the method achieving the
-    second smallest variance
+  * For all three datasets, p < 0.001 when we compare the variances between our
+    method and the method achieving the second smallest variance
 * our method improves the overall fine-tuning performance:
   * in Table 1 we achieve a higher mean value on all datasets and also
     comparable or better maximum performance on MRPC and CoLA respectively
@@ -425,12 +424,12 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 * The definition that we use throughout the paper follows the previous work
   (Phang+ 2018; Dodge+ 2020; Lee+ 2020). For example,
-* Dodge+ (2020) report and analyze
-  the standard deviation of the validation performance (e.g., see Section 4.1
-* Phang+ (2018), which studies the influence of intermediate fine-tuning,
-  discusses the variance of the validation performance (see Section 4: Results,
-  * shows the standard deviation over multiple random seeds in Figure 1
-* assume that the performance metric is accuracy and we have two classes. Let A
+  * Dodge+ (2020) report and analyze
+    the standard deviation of the validation performance (eg, see Section 4.1)
+  * Phang+ (2018) study the influence of intermediate fine-tuning,
+    discusses the variance of the validation performance (Section 4: Results)
+    * shows the standard deviation over multiple random seeds in Figure 1
+* assume that the performance metric is accuracy and we have two classes
 * alternative definition of fine-tuning stability:
   per-point stability where the expectation and variance are interchanged:
   * can be useful to better understand the properties of fine-tuned models and
