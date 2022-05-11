@@ -31,8 +31,7 @@ JMLR arXiv:1910.10683 [cs.LG]
 * We evaluating performance on a wide variety of English-based NLP problems,
   including question answering, document
 
-# 2 model and its implementation, our procedure for formulating every text
-processing problem as a text-to-text task, and the suite of tasks we consider
+# 2 model, implementation, formulating every problem as a txt2txt, tasks
 
 ## 2.3 Downstream Tasks
 
