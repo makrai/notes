@@ -55,13 +55,13 @@ Learning to Understand Phrases by Embedding the Dictionary
 
 * outperforming commercial systems on questions containing more than four words
 
-# 5 Conclustion
+# 5 Conclusion
 
 * future work
   * question-like language,
   * richer world knowledge
     * integration of an external memory module
-      * promising approaches proposed in several recent papers on certain QA
+      * promising approaches proposed in several recent papers on QA
     * entailment tasks
       * Graves+ 2014;
          Alex Graves, Greg Wayne, and Ivo Danihelka

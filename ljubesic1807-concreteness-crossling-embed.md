@@ -61,7 +61,7 @@ http://hdl.handle.net/11356/1187
   * supervised learning on the word embeddings in the source language, and
     performing predictions on word embeddings in the target language, with the
 
-# 5 Conclustion
+# 5 Conclusion
 
 * in-language experiments: arithmetic mean of both notions is much easier to
   predict than their standard deviation, the latter probably encoding word

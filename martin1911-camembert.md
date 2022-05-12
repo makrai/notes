@@ -101,8 +101,8 @@ freely available and distributed with the MIT license via popular NLP libraries
   * sampling 15% of the words in the sequence and then dconsidering all subword
     tokens in each of this 15% for candidate replacement. This amounts to a
     proportion of selected tokens that is close to the original 15%. These
-    * either replaced by <MASK> tokens (80%), left unchanged (10%) or replaced
-      by a random token
+    * either replaced by `<MASK>` tokens (80%), left unchanged (10%) or
+      replaced by a random token
 * next sentence prediction (NSP) task originally used in BERT does not improve
   (Lample and Conneau, 2019; Liu+ 2019), thus we also remove it
 

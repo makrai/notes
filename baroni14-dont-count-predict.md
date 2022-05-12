@@ -38,7 +38,7 @@ Don’t count, predict! A systematic comparison of
     (e.g., _people_ received a high average score as subject of to _eat_, and a
     low score as object of the same verb)
 
-# 5 Conclustion
+# 5 Conclusion
 
 * It remains to be seen whether
   * the two types of models are complementary in the errors they make,

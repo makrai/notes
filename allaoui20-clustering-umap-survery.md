@@ -1,20 +1,20 @@
 Considerably Improving Clustering Algorithms Using UMAP: A Comparative Study
-Allaoui M., Kherfi M.L., Cheriet A. (2020)
+Allaoui M, Kherfi ML, Cheriet A (2020)
 Image and Signal Processing. ICISP 2020. Lecture Notes in Computer Science
 
 # Abstract
 
 * Dimensionality reduction is widely used in machine learning and big data
-  * analyze and to visualize large, high-dimensional datasets. In particular,
-* tasks like data clustering and classification. Recently,
+  * analyze and to visualize large, high-dimensional datasets
+* tasks like data clustering and classification
 * embedding methods have emerged as a promising direction for clustering
   * preserve the local structure and simultaneously reveal the global structure
 * we investigate how to improve the performance of several clustering algos
-* Uniform Manifold Approximation and Projection or UMAP. This technique has
-  * based on Riemannian geometry and algebraic topology. Our main hypothesis is
-* We compare the results of many well-known clustering algorithms such
-  * k-means, HDBSCAN, GMM and Agglomerative Hierarchical Clustering when they
-  * on several _image_ datasets demonstrate that the proposed method
+* Uniform Manifold Approximation and Projection or UMAP
+  * based on Riemannian geometry and algebraic topology
+* We compare the results of many well-known clustering algorithms
+  * k-means, HDBSCAN, GMM and Agglomerative Hierarchical Clustering
+  * on several _image_ datasets
 * UMAP improves each of the clustering algorithms studied on each dataset consi
   * can reach 60% Accuracy improvement
 

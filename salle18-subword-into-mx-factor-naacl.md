@@ -36,7 +36,7 @@ implementation of subword LexVec ... at https://github.com/alexandres/lexvec
       give coherent answers
     * like fastText
 
-# Conclustion
+# Conclusion
 
 * future work
   * downstream tasks

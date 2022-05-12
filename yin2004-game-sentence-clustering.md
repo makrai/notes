@@ -4,14 +4,14 @@ arXiv:2004.02986 [cs.CL]
 
 # Abstract
 
-* Reinforcement learning algorithms such as Q-learning have shown great promise
+* Reinforcement learning algorithms such as Q-learning have shown great promis
   * learn the optimal action to take for a given system state
   * exploratory or adversarial nature such as task-oriented dialogues or games
-  * when access to their state only via the medium of language
+  * access to game state only via the medium of language
 * We introduce a new model amenable to deep Q-learning that incorporates a
   * Siamese neural network architecture and
   * a novel refactoring of the Q-value function in order to better represent
-  system state given its approximation over a language channel
+    system state given its approximation over a language channel
 * evaluate the model in the context of zero-shot text-based adventure game learn
   * our model reaches
     * the baseline's convergence performance point needing only 15% of its iters

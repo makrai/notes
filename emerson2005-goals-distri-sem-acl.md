@@ -17,7 +17,7 @@ ACL arXiv:2005.02982 [cs.CL]
 * In assessing progress in semantics, Koller (2016) contrasts
   * top-down approach begins with an overarching goal, and tries to build a
   * bottom-up approach begins with existing models, and tries to extend them
-    * intrinsically unfalsifiable...  We won’t know where distributional
+    * intrinsically unfalsifiable
 * linguistic perspective: the top-down goal is to
   characterise the meanings of all utterances in a language
 * I will elaborate on several crucial aspects of meaning
@@ -50,8 +50,8 @@ connecting a semantic model to things in the world
 
 # 6 Conclusion
 
-* A common thread among all of the above sections is that reaching our semantic
-  goals requires structure beyond representing meaning as a point in space
+* A common thread among all of the above sections is that
+  reaching our sem goals requires structure beyond meaning as a point in space
   * represent the meaning of a word as a region of space or as a classifier,
     and to work with probability logic
 * trade-off between expressiveness and learnability: the more structure we add,
@@ -59,7 +59,7 @@ connecting a semantic model to things in the world
 * neural architectures for working with structured data,
   * dependency graphs (for example: Marcheggiani and Titov, 2017) or
   * logical propositions (Rocktäschel and Riedel, 2017; Minervini+ 2018)
-* computationally [efficiency] in probabilistic models
+* computationally efficiency in probabilistic models
   * amortised variational inference, used in the Variational Autoencoder
     (Kingma & Welling, 2014; Rezende+ 2014; Titsias & Lázaro-Gredilla, 2014)
 * My own recent work in this direction: Pixie Autoencoder (Emerson, 2019a)

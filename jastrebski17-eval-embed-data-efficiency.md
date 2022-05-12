@@ -181,6 +181,6 @@ TODO
   * can be obtained using standard methods like k-SVD.
   * Theoretically, tasks should test for existence of such concepts
 
-# 4 Conclustion
+# 4 Conclusion
 
 * e.g. differences between different size GloVe embeddings

@@ -60,7 +60,7 @@ LREC 2014
     such a hi- erarchy cannot be adopted for French.  Without going into all
     the details, let us underline the following points:
 
-# 5 Conclustion
+# 5 Conclusion
 
 * not yet completed. When it will be completed, we will make it freely
 * part of the ASFALDA 6 project

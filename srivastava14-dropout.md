@@ -94,7 +94,7 @@ A motivation for dropout comes from a theory of the role of sex in evolution
   multiplying by a random variable drawn from N (1, 1) works just as well, or
   perhaps better than using Bernoulli noise.
 
-# 11 Conclustion
+# 11 Conclusion
 
 * A dropout network typically takes 2-3 times longer to train
 * one way to obtain some of the benefits of dropout without stochasticity is

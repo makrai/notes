@@ -1,23 +1,23 @@
 Guiding Generative LMs for Data Augmentation in Few-Shot Text Classification
 Aleksandra Edwards, A Ushio, J Camacho-Collados, H de Ribaupierre, A Preece
-Cite as: 	arXiv:2111.09064 [cs.CL]
+arXiv:2111.09064 [cs.CL]
 
 # Abstract
 
 * Data augmentation tackles class imbalance issues and data sparsity
 * generative language models to data augmentation for text classification tasks
-  in few-shot settings, especially for specialised domains. In this paper,
+  in few-shot settings, especially for specialised domains
 * we
   * generating artificial training instances leveraging GPT-2 (Radford + 2019)
     in order to improve classification performance
-  * analyse the impact the selection process of seed training examples have
+  * analyse the impact the selection process of seed training examples
     over the quality of GPT-generated samples and consequently the classifier
     * experiments with several seed selection strategies that, among others,
-      exploit class hierarchical structures and domain expert selection. Our
+      exploit class hierarchical structures and domain expert selection
 * results show that fine-tuning GPT-2 in a handful of label instances leads to
   consistent classification improvements and outperform competitive baselines
   * guiding this process through domain expert selection can lead to further
-    improvements, which
+    improvements
     * research avenues for combining generative models and active learning
 
 # 1 Introduction
@@ -30,7 +30,7 @@ Cite as: 	arXiv:2111.09064 [cs.CL]
 * Data Augmentation (DA) is a widely used method for tackling such issues
   (Anaby-Tavor+ 2020; Kumar+ 2020; Papanikolaou and Pierleoni, 2019)
 * vision and speech vs text
-  * well-established DA methods in domains such as computer vision and speech
+  * vision and speech: well-established DA methods
     (Anaby-Tavor+ 2020; Giridhara+ 2019; Krizhevsky+ 2017;
     Cui+ 2015; Ko+ 2015; Szegedy+ 2015)
     * simple transformations of existing samples
@@ -46,23 +46,22 @@ Cite as: 	arXiv:2111.09064 [cs.CL]
   * augment domain-specific datasets in classification tasks
     (Amin-Nejad+ 2020)
     * Kumar+ (2020) and Anaby-Tavor+ (2020) explore
-      different finetuning approaches for pre-trained models for DA in order to
+      different finetuning approaches for pre-trained models for DA
       * potential of generative models such as GPT-2 (Radford+ 2019) and BART
-        (Lewis+ 2019) to augment small collections of labelled data.  However,
+        (Lewis+ 2019) to augment small collections of labelled data
       * limited range of classification settings and datasets
   * problem with text generation techniques is the possibility of generating
-    noise which decreases the performance of classification models
-    rather than improving it (Yang+ 2020)
-* our aim is to improve the quality of generated artificial instances and thus
-  * seed selection strategies to guide the generation process. Specifically, we
+    noise which decreases the performance of classification models (Yang+ 2020)
+* our aim is to improve the quality of generated artificial instances
+  * seed selection strategies to guide the generation process
   * three simple DA methods in order to improve few-shot text classification
-    using GPT-2 —
-    * a method that leverages the expertgenerated classification hierarchy of a
-      dataset in order to improve the classification of the top hierarchy
-      classes;
+    using GPT-2
+    * a method that
+      leverages the expert-generated classification hierarchy of a dataset in
+      order to improve the classification of the top hierarchy classes;
     * a method that selects the seeds with the maximum occurrence of nouns; and
     * a method that involves a domain expert choosing class representative
-      samples.  We chose
+      samples
   * these seed selection strategies
     exploit characteristics associated with specialised domains such as
     high number of terms, annotation performed by experts, and hierarchical
