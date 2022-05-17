@@ -12,26 +12,26 @@ acl 2016
       both directions.  The estimated parameters of the word translation
       distributions are used to select pairs
       * threshold τ trades off dictionary recall and precision. We fixed τ =
-        0.1 early on based on manual inspection of the resulting dictionaries.
+        0.1 early on based on manual inspection of the resulting dictionaries
   * monolingual data
-  * Parallel corpora are not required but can be used when available.
+  * Parallel corpora are not required but can be used when available
 * new evaluation method, multi `QVEC_CCA` , is shown to correlate better
   than previous ones with two downstream tasks (text categorization and
   parsing)
 * web portal for evaluation that will facilitate further research in this area
-* open-source releases of all our methods.
+* open-source releases of all our methods
 
 # Introduction
 
 * shared representation of words across languages offers intriguing
-  possibilities (Klementiev+ 2012).
+  possibilities (Klementiev+ 2012)
 * For example, in machine translation, translating a word never seen in
   parallel data may be overcome by seeking its vector-space neighbors,
 * transfer learning, in which models trained in one language can be deployed
   in other languages.  While
   * hand-engineered features that are cross-linguistically stable as the basis
     model transfer (Zeman and Resnik, 2008; McDonald+ 2011; Tsvetkov+ 2014),
-  * embedding (Klementiev+ 2012; Hermann and Blunsom, 2014; Guo+ 2016).
+  * embedding (Klementiev+ 2012; Hermann and Blunsom, 2014; Guo+ 2016)
 * We ...  massively multilingual word embeddings (i.e., embeddings for words
   in a large number of languages)
 
@@ -40,20 +40,20 @@ acl 2016
 * We would like to estimate this function such that:
   (i) semantically similar words in the same language are nearby,
   (ii) translationally equivalent words in different languages are nearby, and
-  (iii) the domain of the function covers as many words in V as possible.
+  (iii) the domain of the function covers as many words in V as possible
 * our baselines: a variant of Coulmance+ (2015) and Guo+ (2016)
   (henceforth referred to as multiSkip), and the translation-invariance
-  matrix factorization method (Gardner+ 2015).
+  matrix factorization method (Gardner+ 2015)
 
 ## MultiCluster
 
 * decompose the problem
-  * deterministically maps words to multilingual clusters C, and
-  * E embed : C → R d assigns a vector to each cluster.
+  * deterministically map words to multilingual clusters C, and
+  * E embed : C → R d assigns a vector to each cluster
 * method
   * bilingual dictionary to find clusters of translationally equivalent words,
   * distributional similarities of the clusters in monolingual corpora from
-    all languages in L to estimate an embedding for each cluster.
+    all languages in L to estimate an embedding for each cluster
   * More specifically, we define the
     * clusters as the connected components in a graph where nodes are
       (language, surface form) pairs and edges correspond to translation
@@ -80,7 +80,7 @@ acl 2016
     \ {en}, the two projection matrices: T m→m,en and T en→m,en ; these are
     guaranteed to be non-singular.  We then define the multilingual embedding
     as E CCA (en, u) = E en (u) for u ∈ V en , and −1 T m→m,en E m (v) for v ∈
-    E CCA (m, v) = T en→m,en m V , m ∈ L \ {en}.
+    E CCA (m, v) = T en→m,en m V , m ∈ L \ {en}
 
 ## 2.3 MultiSkip
 
@@ -89,9 +89,9 @@ acl 2016
   * extends the skipgram model of Mikolov+ (2013a)
     * distribution can be estimated using ... noise contrastive estimation
       (Gutmann and Hyvärinen, 2012)
-  * bilingual contexts come from aligned words.
+  * bilingual contexts come from aligned words
   * can be extended for more than two languages by summing up the bilingual
-    objectives for all available parallel corpora.
+    objectives for all available parallel corpora
 
 ## 2.4 Translation-invariance
 
@@ -102,16 +102,16 @@ acl 2016
     between pairs of words in monolingual corpora, and let
     * UV ⊤ be a low-rank decomposition of X where U, V ∈ R |V|×d
   * A ∈ R |V|×|V| which summarizes bilingual alignment frequencies in a
-    parallel corpus.
+    parallel corpus
 * Gardner+ (2015) solves for a low-rank decomposition UV ⊤ which
   approximates X as well as its transformations A ⊤ X, XA and A ⊤ XA
-* multilingual embeddings are then taken to be the rows of the matrix U.
+* multilingual embeddings are then taken to be the rows of the matrix U
 
 # 3 Evaluating Multilingual Embeddings
 
 * Multi QVEC-CCA extends QVEC (Tsvetkov+ 2015), a recently proposed
   monolingual evaluation method, addressing fundamental flaws and extending it
-  to multiple languages.
+  to multiple languages
 
 ## 3.1 Word similarity
 
@@ -120,7 +120,7 @@ acl 2016
 * we report results on an
   * English word similarity task, the Stanford RW dataset (Luong+ 2013)
   * a combination of several cross-lingual word similarity datasets
-    (Camacho-Collados+ 2015).
+    (Camacho-Collados+ 2015)
 
 ## Word translation
 
@@ -128,12 +128,12 @@ acl 2016
 
 * an improvement of QVEC —a monolingual evaluation based on alignment of
   embeddings to a matrix of features extracted from a linguistic resource
-  (Tsvetkov+ 2015).
+  (Tsvetkov+ 2015)
 * QVEC
   * linguistic matrix S ∈ R P×N is constructed from a semantic database, with
     a column vector for each word. Each word vector is a distribution of the
     word over P linguistic properties, based on annotations of the word in the
-    database.
+    database
   * S and X are aligned to maximize the cumulative correlation between the
     aligned dimensions of the two matrices. Specifically, let
     * A ∈ {0, 1} D×P be a matrix of alignments such that a ij = 1 iff x i is
@@ -148,22 +148,22 @@ acl 2016
 * QVEC-CCA
   * CCA finds two sets of basis vectors, one for X ⊤ and the other for S ⊤ ,
     such that the correlations between the projections of the matrices onto
-    these basis vectors are maximized.
+    these basis vectors are maximized
       * ensures invariance to the matrices’ bases’ rotation, and
-      * since it is a single correlation, it produces a score in [−1, 1].
+      * since it is a single correlation, it produces a score in [−1, 1]
         de ettől még előnyben részesítheti a nagyobb dimenziót
 * linguistic [mx for] multilingual evaluations
   * supersense tag annotations for
     * English (Miller+ 1993)
     * Danish (Martı́nez Alonso+ 2015; Martínez Alonso+ 2016)
-    * Italian (Montemagni+ 2003).
+    * Italian (Montemagni+ 2003)
 
 ## Extrinsic tasks
 
-* multilingual document classification and multilingual dependency parsing.
-  For document classification, we follow Klementiev+ (2012) in using the
-  RCV corpus of newswire text, and train a classifier which differentiates
-  between four topics.
+* multilingual document classification and multilingual dependency parsing
+  * For document classification, we follow Klementiev+ (2012) in using
+    the RCV corpus of newswire text, and train
+    a classifier which differentiates between four topics
 * dependency parsing, we train the stack-LSTM parser of Dyer+ (2015) on
   a subset of the languages in the universal dependencies v1.1, 6 and test on
   the same languages, reporting unlabeled attachment scores. We remove all
@@ -177,7 +177,7 @@ acl 2016
 * four intrinsic evaluation metrics (cross-lingual word similarity, word
   translation, multi QVEC and multi `QVEC_CCA` ) and
 * two extrinsic evaluation metrics (multilingual document classification and
-  multilingual parsing).
+  multilingual parsing)
 
 ## 5.2 Evaluating multilingual estimation methods
 

@@ -10,7 +10,7 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 * we introduce the Cross-lingual TRansfer Evaluation of Multilingual Encoders
   * multi-task benchmark for evaluating the cross-lingual generalization
 * 40 languages and 9 tasks
-  * models tested on English reach human performance on many tasks
+  * on English, models reach human performance on many tasks
   * sizable gap cross-lingually particularly on syntactic and sentence retrival
 
 # 1. Introduction
@@ -23,19 +23,22 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
   * part-of-speech (POS) tagging (Täckström+ 2013)
   * parsing (McDonald+ 2011)
   * text classification (Klementiev+ 2012)
+    Klementiev, A., Titov, I., and Bhattarai, B.
+    Inducing Crosslingual Distributed Representations of Words
+    COLING 2012
 * general-purpose multilingual representations
   * word level (Mikolov+ 2013; Faruqui & Dyer, 2014; Artetxe+ 2017)
   * full-sentence level (Devlin+ 2019; Lample & Conneau, 2019)
   * evaluation often on a very
     * limited and disparate set of tasks
       * translation (Glavaš+ 2019; Lample & Conneau, 2019) and
-      * classification (Schwenk & Li, 2018; Conneau+ 2018b)— and
+      * classification: Reuters (Schwenk & Li, 2018), XNLI (Conneau+ 2018b)
     * typologically similar languages (Conneau+ 2018a)
 * XTREME covers
   * 40 typologically diverse languages spanning 12 families
     * typologically diverse = wide set of linguistic phenomena such as
       compounding, inflection, derivation, etc. which occur in many languages
-  * 9 tasks that require reasoning about different levels of syntax or semantics
+  * 9 tasks that require reasoning about levels of syntax or semantics
   * pseudo test sets as diagnostics that cover all 40 languages
     by automatically translating the English test set of the NLI and QA dataset
   * focuses on the zero-shot cross-lingual transfer scenario, where
@@ -312,8 +315,9 @@ training data of all languages jointly
   compare against an
   mBERT model that is jointly trained on the combined training data of all langs
 
-### Human performance. For XNLI, PAWS-X, and XQuAD, we obtain human performance
+### Human performance
 
+* For XNLI, PAWS-X, and XQuAD, we obtain human performance 
 * from the English datasets they are derived from, MNLI, PAWS-X, and SQuAD resp
   (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016)
 * TyDiQA-GoldP, we use the performance estimate of Clark+ (2020)
