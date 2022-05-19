@@ -5,13 +5,13 @@ EMNLP-IJCNLP 2019
 
 # Abstract
 
-* inspired by prior work evaluating pretrained sentence representation models.
-* negative polarity item (NPI) licensing, as a case study for our experiments.
+* inspired by prior work evaluating pretrained sentence representation models
+* negative polarity item (NPI) licensing, as a case study for our experiments
   NPIs like _any_ are grammatical only if they appear in a licensing environment
   like negation (Sue doesn’t have any cats vs.  `*`Sue has any cats). This
-  * challenging because of the variety of NPI licensing environments that exist.
+  * challenging because of the variety of NPI licensing environments that exist
 * We introduce an artificially generated dataset that manipulates key features
-  of NPI licensing for the experiments.
+  of NPI licensing for the experiments
 * We find that BERT has significant knowledge of these features, but
   its success varies widely across different experimental methods. We conclude
   * a variety of methods is necessary to reveal all relevant aspects
@@ -22,7 +22,7 @@ EMNLP-IJCNLP 2019
   * Shi+ (2016), Ettinger+ (2016), and Tenney+ (2019) use probing tasks to
   * Marvin and Linzen (2018) and Wilcox+ (2019) compare language models’
     probabilities for pairs of minimally different sentences differing in
-    grammatical acceptability.
+    grammatical acceptability
   * Linzen+ (2016), Warstadt+ (2018), and Kann+ (2019) use Boolean acceptability
     judgments inspired by methodologies in generative linguistics. However, we
   * not yet seen any substantial direct comparison between these methods,
@@ -46,9 +46,9 @@ EMNLP-IJCNLP 2019
       between minimal pairs,
   * a cloze test: BERT’s masked language modeling head, and
   * a probing task directly evaluating BERT’s representations for knowledge of
-    specific grammatical features relevant to NPI licensing.
+    specific grammatical features relevant to NPI licensing
 * We find that BERT does have knowledge of all the key features necessary to
-  predict the acceptability of NPI sentences in our experiments.
+  predict the acceptability of NPI sentences in our experiments
   hE, our five methods give meaningfully different results. While the
   * gradient minimal pair experiment
     and, to a lesser extent, the acceptability classification and cloze tests
@@ -65,7 +65,7 @@ EMNLP-IJCNLP 2019
 * Boolean classification tasks of English sentences to evaluate the
   grammatical knowledge encoded in these models
   * objective is to predict whether a single input sentence is acceptable
-  * abstracting away from gradience in acceptability judgments.
+  * abstracting away from gradience in acceptability judgments
   * Linzen+ (2016) train classifiers on this task
     using data with manipulated verbal inflection to
     investigate whether LSTMs can identify subject-verb agreement violations,
@@ -73,7 +73,7 @@ EMNLP-IJCNLP 2019
   * Warstadt+ (2018) train models on this task using the CoLA corpus of
     acceptability judgments as a method for evaluating domain general
     grammatical knowledge, and Warstadt and Bowman (2019) analyze how these
-    domain general classifiers perform on specific linguistic phenomena.
+    domain general classifiers perform on specific linguistic phenomena
   * Kann+ (2019): verbal argument structure classes
 * method of minimal pairs, consisting of two sentences that differ minimally
   * Marvin and Linzen (2018) and Wilcox+ (2019) apply this method to
@@ -81,44 +81,44 @@ EMNLP-IJCNLP 2019
 * probing tasks to predict the value of a particular linguistic feature given an
   * syntactic and surface features such as tense and voice (Shi+ 2016),
     sentence length and word content (Adi+ 2016), or
-    syntactic depth and morphological number (Conneau+ 2018).
+    syntactic depth and morphological number (Conneau+ 2018)
   * Giulianelli+ (2018) use diagnostic classifiers to track the propagation of
-    information in RNN-based language models.
+    information in RNN-based language models
   * Ettinger+ (2018) and Dasgupta+ (2018) use automatic data generation to
-    evaluate compositional reasoning.
+    evaluate compositional reasoning
   * Tenney+ (2019): sub-sentence level probing derived from common NLP tasks
 
 ## Negative Polarity Items
 
 * In the theoretical literature on NPIs, proposals have been made to
   * unify the properties of the diverse NPI licensing environments.  For
-  * downward entailing (DE) environments (Fauconnier, 1975; Ladusaw, 1979), i.e.
+  * downward entailing (DE) environments (Fauconnier, 1975; Ladusaw, 1979), i.e
     an environment that licences inferences from sets to subsets. 1
-    I have(n’t) been to France/Paris.
+    I have(n’t) been to France/Paris
 * Within computational linguistics, NPIs are used as a testing ground for neural
   * Marvin and Linzen (2018) find that LSTM LMs do not systematically prefer
-    sentences with licensed NPIs (1) over sentencew with unlicensed NPIs (2).
+    sentences with licensed NPIs (1) over sentencew with unlicensed NPIs (2)
   * Jumelet and Hupkes (2018) shows LSTM LMs find a relation between the
     licensing context and the negative polarity item, and appears to be aware of
-    the scope of this context.
+    the scope of this context
   * Wilcox+ (2019) use NPIs and filler-gap dependencies, as instances of
     non-local grammatical dependencies, to probe the effect of supervision with
-    hierarchical structure.
+    hierarchical structure
     * structurally-supervised models outperform SOTA sequential LSTM models,
       showing the importance of structure in learning non-local dependencies
-      like NPI licensing.
+      like NPI licensing
 
 ## CoLA
 
 * Corpus of Linguistic Acceptability (CoLA; Warstadt+ 2018) in our experiments
   to train supervised acceptability classifiers.  CoLA is a dataset of
   * over 10k syntactically diverse example sentences
-    from the linguistics literature with Boolean acceptability labels. As is
+    from the linguistics literature with Boolean acceptability labels
   * gathered from diverse sources and represent a wide array of syntactic,
-    semantic, and morphological phenomena.
+    semantic, and morphological phenomena
 * As measured by the GLUE benchmark (Wang+ 2018),
   acceptability classifiers trained on top of BERT and related models reach
-  near-human performance on CoLA.
+  near-human performance on CoLA
 
 # 7 Discussion
 
@@ -132,4 +132,4 @@ EMNLP-IJCNLP 2019
     syntactic pretraining does improve performance in the NPI domain. This
   * difference in findings is likely due to differences in models and training
     procedure, as their model is an RNN jointly trained on language modeling and
-    parsing over the much smaller Penn Treebank (Marcus+ 1993).
+    parsing over the much smaller Penn Treebank (Marcus+ 1993)
