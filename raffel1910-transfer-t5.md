@@ -41,17 +41,17 @@ JMLR arXiv:1910.10683 [cs.LG]
   * SQuAD question answering
   * WMT English to German, French, and Romanian translation
 * GLUE (Wang+ 2018) and SuperGLUE (Wang+ 2019b) each comprise a collection of
-  * Sentence acceptability judgment (CoLA (Warstadt+ 2018))
-  * Sentiment analysis (SST-2 (Socher+ 2013))
+  * Sentence acceptability judgment (CoLA, Warstadt+ 2018)
+  * Sentiment analysis (SST-2, Socher+ 2013)
   * Paraphrasing/sentence similarity
-    (MRPC (Dolan and Brockett, 2005), STS-B (Cer+ 2017), QQP (Iyer+ 2017))
+    (MRPC (Dolan and Brockett, 2005), STS-B (Cer+ 2017), QQP, Iyer+ 2017)
   * Natural language inference (MNLI (Williams+ 2017), QNLI (Rajpurkar+ 2016),
-    RTE (Dagan+ 2005), CB (De Marneff+ 2019))
-  * Coreference resolution (WNLI and WSC (Levesque+ 2012))
-  * Sentence completion (COPA (Roemmele+ 2011))
-  * Word sense disambiguation (WIC (Pilehvar and Camacho-Collados, 2018))
+    RTE (Dagan+ 2005), CB, De Marneff+ 2019)
+  * Coreference resolution (WNLI and WSC, Levesque+ 2012)
+  * Sentence completion (COPA, Roemmele+ 2011)
+  * Word sense disambiguation (WIC, Pilehvar and Camacho-Collados, 2018)
   * Question answering
-    (MultiRC (Khashabi+ 2018), ReCoRD (Zhang+ 2018), BoolQ (Clark+ 2019))
+    (MultiRC (Khashabi+ 2018), ReCoRD (Zhang+ 2018), BoolQ, Clark+ 2019)
 * GLUE and SuperGLUE benchmarks: we treat all of the tasks as a single task
   * As suggested by Kocijan+ (2019) we also include the Definite Pronoun
     Resolution (DPR) data set (Rahman and Ng, 2012) in the combined SuperGLUE

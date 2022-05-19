@@ -415,7 +415,7 @@ arXiv:2003.08271 [cs.CL]
     * single-sentence classification tasks (CoLA and SST-2)
     * pairwise text classification tasks (MNLI, RTE, WNLI, QQP, and MRPC)
     * text similarity task (STSB)
-    * and relevant ranking task (QNLI)
+    * relevance ranking task (QNLI)
 * SuperGLUE [176]: more challenging tasks and more diverse task formats
   (coreference resolution and question answering)
 
