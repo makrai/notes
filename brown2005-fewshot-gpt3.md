@@ -1,4 +1,4 @@
-Language Models are Few-Shot Learners
+GPT-3: Language Models are Few-Shot Learners
 Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry,
   Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler,
   Wu, Winter, Hesse, Chen, Sigler,
@@ -47,10 +47,10 @@ arXiv:2005.14165 cs.CL
     directly fine-tuned
     no need for task-specific architectures RNSS18, DCLT18, HR18
 * This last paradigm has led to
-  * substantial progress on e.g. reading comprehension, question answering,
+  * substantial progress on eg reading comprehension, question answering,
     textual entailment, and many others, and has
   * new architectures and algorithms RSR + 19, LOG + 19, YDY + 19, LCG + 19
-* removing the need for task-specific datasets and fine-tuning would be desirab
+* removing the need for task-specific datasets and fine-tuning is desired
   * practical perspective, the need for a large dataset of labeled examples for
     * a very wide range of possible useful language tasks, e.g
       correcting grammar, to generating examples of an abstract concept, to
@@ -59,7 +59,7 @@ arXiv:2005.14165 cs.CL
     * grows with the expressiveness of the model and the narrowness of the
       training distribution HLW + 20, YdC + 19, MPL19, GSL + 18, NK19
   * humans do not require large supervised datasets to learn most tasks – a
-    * e.g. “please tell me if this sentence describes something happy or sad”
+    * eg “please tell me if this sentence describes something happy or sad”
     * allows humans to seamlessly mix together or switch between many tasks and
       * performing addition during a lengthy dialogue. To be broadly useful, we
 * meta-learning in the context of language models means the
@@ -100,7 +100,7 @@ arXiv:2005.14165 cs.CL
 * Figure 1.2: few-shot learning of a simple task
   * task: remove extraneous symbols from a word
   * performance improves with the addition of a natural language task desc
-* Few-shot learning also improves dramatically with model size. Though the
+* Few-shot learning also improves dramatically with model size
   * no gradient updates or fine-tuning, just increasing numbers of demonstrat
 * result. Broadly, on NLP tasks GPT-3 achieves
   * promising results in the zero-shot and one-shot settings, and
@@ -115,15 +115,15 @@ arXiv:2005.14165 cs.CL
   * See Figure 3.8 for a more detailed analysis on SuperGLUE, a standard benchm
 * systematic study of “data contamination”
   * a growing problem when training models on datasets such as Common Crawl,
-    which can potentially include content from test datasets . In this paper we
+    which can potentially include content from test datasets
   * minimal effect on most datasets, but on a few datasets it could inflate
     * we either do not report results on these datasets or we
       note them with an asterisk, depending on the severity
 * we also train a series of smaller models
   (ranging from 125 million parameters to 13 billion parameters) in order to
   * compare their performance to GPT-3 in the zero, one and few-shot settings
-  * relatively smooth scaling with model capacity in all three settings; one
-  * the gap between zero-, one-, and few-shot performance often grows with capa
+  * relatively smooth scaling with model capacity in all three settings
+  * gap between zero-, one-, and few-shot performance often grows with capacity
     * perhaps suggesting that larger models are more proficient meta-learners
 * preliminary analysis regarding bias, fairness, and broader societal impact
 
@@ -139,7 +139,7 @@ arXiv:2005.14165 cs.CL
   million parameters to 175 billion parameters, with the last being the model
   we call GPT-3
 * scaling of validation loss should be approximately
-  a smooth power law as a function of size KMH + 20; training models of many
+  a smooth power law as a function of size [KMH+ 20]
 * we test this hypothesis both for validation loss and for downstream
 
 ## 2.2 Training Dataset
@@ -154,8 +154,55 @@ arXiv:2005.14165 cs.CL
 ## 3.4 Winograd-Style Tasks
 ## 3.5 Common Sense Reasoning
 ## 3.6 Reading Comprehension
+
+* We use a suite of 5 datasets
+  * abstractive, multiple choice, and span based answer formats in
+  * both dialog and single question settings
+* a wide spread in GPT-3’s performance across these datasets suggestive of
+  * on par with initial baselines and early results trained using contextual
+    representations on each respective dataset
+  * best (within 3 points of the human baseline) on CoQA [RCM19] a free-form
+    conversational dataset and performs
+  * worst (13 F1 below an ELMo baseline) on QuAC [CHI + 18] a
+    * dataset requires modeling structured dialog acts and answer span
+      selections of teacher-student interactions. On
+  * DROP [DWD + 19]
+    * dataset testing discrete reasoning and numeracy in the context of reading
+      comprehension
+    * GPT-3 in a few-shot setting
+      * outperforms the fine-tuned BERT baseline from the original paper but is
+        still well below both human performance and SOTA approaches which
+        augment neural networks with symbolic systems [RLL + 19]
+  * SQuAD 2.0 [RJL18], GPT-3 demonstrates its few-shot learning capabilities,
+    improving by almost 10 F1 (to 69.8) compared to a zero-shot setting. This
+    * slightly outperform the best fine-tuned result in the original paper. On
+  * RACE [LXL + 17]
+    * a multiple choice dataset of middle school and high school english exams,
+    * GPT-3 performs relatively weakly and is
+      only competitive with the earliest work utilizing contextual reprs and is
+      still 45% behind SOTA
+
 ## 3.7 SuperGLUE
-## 3.8 NLI
+## 3.8 NLI (Fyo00)
+
+* understand the relationship between two sentences
+* as a two or three class classification problem where the model classifies
+  * whether the second sentence logically follows from the first, contradicts
+    the first sentence, or is possibly true (neutral)
+* SuperGLUE includes an NLI dataset, RTE, which evaluates the binary version of
+* On RTE, only the largest version of GPT-3 performs better than random (56%)
+  * few-shot setting: GPT-3 performs similarly to a single-task fine-tuned BERT
+    Large
+* Adversarial Natural Language Inference (ANLI) dataset [NWD + 19]. ANLI is a
+  * a series of adversarially mined natural language inference questions in
+    three rounds (R1, R2, and R3)
+  * all of our models smaller than GPT-3 perform at almost exactly random
+  * even in the few-shot setting (∼ 33%), whereas
+  * GPT-3 itself shows signs of life on Round 3. Results for ANLI R3 are
+    * highlighted in Figure 3.9 and
+    * full results for all rounds can be found in Appendix H. These results on
+* NLI is still a very difficult task for language models and they are only just
+
 ## 3.9 Synthetic and Qualitative Tasks
 
 # 4 Measuring and Preventing Memorization Of Benchmarks 30
@@ -166,19 +213,19 @@ arXiv:2005.14165 cs.CL
   * lose coherence over sufficiently long passages, contradict themselves, and
     occasionally contain non-sequitur sentences or paragraphs
 * special difficulty with “common sense physics”,
-  despite doing well on some datasets (such as PIQA BZB + 19) that test this
-  * e.g. questions like “If I put cheese into the fridge, will it melt?”
+  despite doing well on some datasets (such as PIQA [BZB+ 19]) that test this
+  * eg questions like “If I put cheese into the fridge, will it melt?”
   * little better than chance when evaluated one-shot or even few-shot
     on some “comparison” tasks, such as determining if
-    * two words are used the same way in a sentence, WIC
-    * one sentence implies another (WIC and ANLI respectively), ANLI
-  * on a subset of reading comprehension tasks (e.g. QuAC and RACE)
+    * two words are used the same way in a sentence (WIC)
+    * one sentence implies another (ANLI)
+  * on a subset of reading comprehension tasks (eg QuAC and RACE)
 * structural and algorithmic limitations
   * We focused on autoregressive language models because
     it is straightforward to both sample and compute likelihoods with this
-  * we  not include any bidirectional architectures or e.g. denoising. This
+  * we not include any bidirectional architectures or eg denoising
   * potentially worse performance on tasks which benefit from bidirectionality
-    * e.g. fill-in-the-blank tasks, tasks that involve looking back and
+    * eg fill-in-the-blank tasks, tasks that involve looking back and
     * tasks that require re-reading or carefully considering a long passage and
       then generating a very short answer
   * We also conjecture, based on past literature, that a large bidirectional
@@ -188,11 +235,11 @@ arXiv:2005.14165 cs.CL
   * RRS20 customize prediction to entities of interest
   * problem with forcing the desired task into a prediction problem, whereas
     ultimately, useful language systems might take goal-directed actions rather
-  * grounding in other domains, such as video or real-world phys BHT + 20
-  * augmentation of self-supervised prediction with a different approach is
-    * learning the objective function from humans ZSW + 19a,
-    * fine-tuning with reinforcement learning, or adding
-    * additional modalities such as images CLY+ 19
+  * grounding in other domains, such as video or real-world phys (BHT + 20)
+  * augmentation of self-supervised prediction with a different approach
+    * learning the objective function from humans (ZSW + 19a)
+    * fine-tuning with reinforcement learning
+    * additional modalities such as images (CLY+ 19)
 * poor sample efficiency during pre-training
   * GPT-3 takes test-time sample efficiency closer to that of humans (1/0-shot)
   * might come from grounding in the physical world to provide additional info,
@@ -208,10 +255,10 @@ arXiv:2005.14165 cs.CL
     * wordscrambling or defining nonsense words seem to be learned de novo,
     * translation must be learned  although  from data that is very different
     * not even clear what humans learn from scratch vs from prior demonstration
-* expensive and inconvenient to perform inference on, which may present a
-  * distillation HVD15 for specific tasks. Large models such as GPT-3 contain
-  * Distillation is well-explored in general LHCG19a but
-    has not been tried at the scale of hundred of billions parameters; new
+* expensive and inconvenient to perform inference
+  * distillation HVD15 for specific tasks
+    * well-explored in general LHCG19a but
+    * not tried at the scale of hundred of billions parameters
 * not easily interpretable, it is not necessarily well-calibrated in its
   predictions on novel inputs as observed by the
   * much higher variance in performance than humans on standard benchmarks, and

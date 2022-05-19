@@ -146,38 +146,40 @@ arXiv:1907.10641 [cs.CL]
 * the original Winograd Schema Challenge dataset, 273 problems
 * Trichelair+ (2018) report that 13.5% may still have word-association bias
 
-### PDP (Morgenstern, Davis, and Ortiz 2016, Pronoun Disambiguation Problems)
+### Pronoun Disambiguation Problems (PDP, Morgenstern, Davis, and Ortiz 2016)
 
 * used in the 2016 running of the Winograd Schema Challenge
-* as a multiple choice task, in which a pronoun must be resolved to one of up
-  to 5 (but mostly binary) possible antecedents
+* as a multiple choice task, in which a pronoun must be resolved to one of
+  up to 5 (but mostly binary) possible antecedents
 
-### SuperGLUE-WSC (Wang+ 2019) SuperGLUE contains multiple datasets
+### SuperGLUE-WSC (Wang+ 2019)
 
-* including a modified version of WSC, which we will refer to as SuperGLUE-WSC
+* multiple datasets
+  including a modified version of WSC, which we will refer to as SuperGLUE-WSC
 * aggregates the original WSC, PDP and additional PDP-style examples, and
   recasts them into True/False binary problems (804 in total)
 * We converted WinoGrande to the True/False binary problems
 
-### DPR (Rahman and Ng 2012, Definite Pronoun Resolution Dataset)
+### Definite Pronoun Resolution Dataset (DPR, Rahman and Ng 2012)
 
 * 1,886 additional WSC problems authored by 30 undergraduate students
 * overall less challenging than the original WSC (Trichelair+ 2018) due to an
   increased level of language-based or dataset-specific biases
 
-### KnowRef (Emami+ 2019) KnowRef provides over 8k WSC-style coreference
+### KnowRef (Emami+ 2019)
 
+* over 8k WSC-style coreference
 * extracted and filtered with heuristic rules from 100 million web sentences
   (Reddit, Wikipedia, and OpenSubtitles)
 
 ### COPA (Roemmele, Bejan, and Gordon 2011)
 
-* This dataset introduces 1,000 problems that aim to test commonsense reasoning
-  focusing on script knowledge, formulated as a binary choice about causes and
-  effects of given premises
-* split:  Since COPA does not provide a training set, we split the original
-  development set (500) into training (400) and development (100) sets in the
-  same way as SuperGlueCopa (Wang+ 2019)
+* 1,000 problems that aim to test commonsense reasoning
+  focusing on script knowledge, formulated as a
+  binary choice about causes and effects of given premises
+* split:  Since COPA does not provide a training set,
+  we split the original development set (500) into training (400) and
+  development (100) sets in the same way as SuperGlueCopa (Wang+ 2019)
 
 ### Winogender (Rudinger+ 2018) This dataset introduces 720 problems
 
