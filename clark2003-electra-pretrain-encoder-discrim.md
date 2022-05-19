@@ -52,7 +52,7 @@ https://github.com/google-research/electra
     * SQuAD question answering benchmark (Rajpurkar+ 2016)
   * ELECTRA substantially outperforms MLM-based methods such as BERT and XLNet
     given the same model size, data, and compute (see Figure 1)
-    * ELECTRA-Small model that
+    * ELECTRA-Small model
       * can be trained on 1 GPU in 4 days
       * outperforms
         * a comparably small BERT model by 5 points on GLUE, and even outperfor
@@ -96,7 +96,7 @@ https://github.com/google-research/electra
     * question paraphrase (QQP)
     * textual similarity (STS)
     * sentiment (SST)
-    * linguistic acceptability (CoLA). See Appendix C for more details on the
+    * linguistic acceptability (CoLA). See Appendix C for more details
   * metrics are Spearman correlation for STS, Matthews correlation for CoLA,
     and accuracy for the other GLUE tasks;
     * we generally report the average score over all tasks
