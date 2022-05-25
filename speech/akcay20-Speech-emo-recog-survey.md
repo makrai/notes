@@ -29,10 +29,10 @@ Speech Communication, 2020-Elsevier
 # 2 surveys and the areas that they cover
 
 * supporting modalities, such as linguistic, discourse, and video information
-* A recent but brief survey by Basu+ (2017) highlights publications that
+* A recent but brief survey by Basu+ (2017) highlights
   * databases, noise reduction techniques for preprocessing signals, features,
-    and classifiers including recent advances such as Convolutional and
-    Recurrent Neural Networks (Basu+ 2017)
+    and classifiers including
+    recent advances such as Convolutional and Recurrent Neural Networks
 * Sailunaz+ (2018) focus on emotion detection from text and speech, where
   * publications that incorporate text information as well as speech signals to
     determine speech are discussed
@@ -41,7 +41,7 @@ Speech Communication, 2020-Elsevier
 
 # 3 emotions
 
-# 4 surveys the databases
+# 4 databases
 
 # 5 preprocessing, feature extraction, supporting modalities, and classif
 
