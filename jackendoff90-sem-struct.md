@@ -72,9 +72,9 @@ Jackendoff, Ray S
     * describe the set of possible I-concepts expressed by sentences
 * lexical concepts, the concepts expressed by the words in the sentence
   * [the] basic units out of which a sentential concept is constructed
-  * must be some sort of finite schema that can be compared with the mental
-    representations of arbitrary new objects to produce a judgment of
-    conformance or nonconformance
+  * must be some sort of finite schema that
+    can be compared with the mental representations of arbitrary new objects to
+    produce a judgment of conformance or nonconformance
   * there may well be objects for which people's judgments disagree
     * these differences too may bear examination
   * there may be novel objects such that one cannot judge clearly whether they
@@ -132,19 +132,19 @@ Jackendoff, Ray S
 * CS vs Fodor's (1975) _Language of Thought_ Hypothesis
   * Fodor's position is that we grasp the world the way we do precisely because
     that is the way the world is
-    * a marriage between the Realism of truth-conditional semantics and the
-      mentalism of generative grammar
-      * mediated by the relation of intensionality
-    * CS is concerned most directly with the
-      * form of the internal mental representations that constitute CS
-      * formal relations between this level and other levels of representation
-      * The computation of inference [is] internal to the organism
-    * [Fodor] requires a theory of semantics to include a Realist account of
-      truth-conditions and inference
-    * Intentional Realism is [useful] for dealing with people in ordinary life
-      But _folk physics_ is a good stance for ordinary life, too.  That does
-      not make it a productive constraint for doing scientific physics.  So why
-      get mired in _folk psychology_ when studying the mind?
+  * a marriage between the Realism of truth-conditional semantics and the
+    mentalism of generative grammar
+    * mediated by the relation of intensionality
+  * CS is concerned most directly with the
+    * form of the internal mental representations that constitute CS
+    * formal relations between this level and other levels of representation
+    * The computation of inference [is] internal to the organism
+  * [Fodor] requires a theory of semantics to include a Realist account of
+    truth-conditions and inference
+  * Intentional Realism is [useful] for dealing with people in ordinary life
+    But _folk physics_ is a good stance for ordinary life, too.  That does
+    not make it a productive constraint for doing scientific physics.  So why
+    get mired in _folk psychology_ when studying the mind?
 * relation [to] Cognitive Grammar or Cognitive Semantics
   * Fauconnier 1984; Langacker 1986; Herskovits 1986; Lakoff 1987
   * shared:

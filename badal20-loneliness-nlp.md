@@ -1,18 +1,19 @@
 Prediction of Loneliness in Older Adults Using Natural Language Processing:
   Exploring Sex Differences in Speech
 2020
-Varsha D. Badal, SA Graham, Depp, Shinkawa, Yamada, Palinkas, Kim, Cheol, Jeste
+VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
+  DV Jeste, EE Lee
 
 # Introduction
 
 * While loneliness and social isolation may be interrelated,
   * loneliness is a distinct construct − some people feel “lonely in a crowd”
   * interviews
-    * qualitative (e.g., open-ended or semi-structured interviews) and
-    * quantitative (e.g., based on the University of California Loneliness Scal)
+    * qualitative (eg, open-ended or semi-structured interviews) and
+    * quantitative (eg, based on the Uni of California Loneliness Scale)
 * nuanced features are not easily assessed by the human eye
   * such as word choice, expressed emotions, and sentence structure
-* NLP e.g. parts-of-speech tagging, named entity recognition and parsing
+* NLP eg parts-of-speech tagging, named entity recognition and parsing
   * NLU is a subset of NLP which is more aligned with comprehension
     * tasks such as reasoning, translation, summarization, question-answering,
       sentiment and emotion analysis
@@ -51,14 +52,16 @@ Varsha D. Badal, SA Graham, Depp, Shinkawa, Yamada, Palinkas, Kim, Cheol, Jeste
   * deep neural networks (multilayer ANN)
 * dimensions of sentiment and the embedded emotions
   * use has been limited in psychiatry
-* we conducted semi-structured qualitative interviews about loneliness and
+* we conducted semi-structured qualitative interviews about loneliness
   * quantitative loneliness assessments
-    with residents of a continuing care senior housing community. The interviews
-    were analyzed using NLP to identify differences in transcribed speech
-    patterns in lonely versus non-lonely individuals (based on qualitative and
-    quantitative assessments).  For this proof-of-concept study, we explored how
-    NLP analytic methods could assess whether individuals reported feeling
-    lonely in response to a direct question about loneliness (e.g., “Do you feel
+    with residents of a continuing care senior housing community
+    * interviews were analyzed using NLP to identify differences in transcribed
+      speech patterns in lonely versus non-lonely individuals (based on
+      qualitative and quantitative assessments)
+    * proof-of-concept study
+    * we explored how NLP analytic methods could assess whether individuals
+      reported feeling lonely in response to a direct question about loneliness
+      (eg, “Do you feel")
   * how responses of lonely individuals differed in length, sentiment, and
     emotion from non-lonely individuals (using qualitative and quantitative)
     * sex differences in the response features

@@ -12,8 +12,8 @@ Emotion Measurement 2015
       * In this chapter, we use ‘sentiment analysis’ in this sense
 * applications of detecting analysing of affectual categories in text
   * Public Health: Automatic methods for detecting emotions are useful in
-    * depression (Pennebaker, Mehl, & Niederhoffer, 2003; Rude, Gortner, &
-      Pennebaker, 2004; Cherry, Mohammad, & De Bruijn, 2012), identifying cases
+    * depression (Pennebaker, Mehl, & Niederhoffer, 2003;
+      Rude, Gortner, & Pennebaker, 2004; Cherry, Mohammad, & De Bruijn, 2012)
     * cyber-bullying (Chen, Zhou, Zhu, & Xu, 2012; Dadvar, Trieschnigg,
       Ordelman, & de Jong, 2013), predicting
     * health attributes at community level

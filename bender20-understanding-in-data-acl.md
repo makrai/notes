@@ -37,13 +37,13 @@ ACL 2020 Best Theme Paper
 > pattern recognition [is used] to better understand how human beings communicate
 
 * BERTology: what exactly it is about language that the large LMs implic repr
-  * probing tasks (e.g. Adi+ 2017; Ettinger+ 2018) has been used to show that
+  * probing tasks (eg Adi+ 2017; Ettinger+ 2018) has been used to show that
     * English subject-verb agreement (Goldberg, 2019; Jawahar+ 2019),
     * constituent types, dependency labels, NER, and (core) semantic role types
       (again, all in English, Tenney+ 2019)
     * Hewitt and Manning (2019) find information analogous to unlabeled
       dependency structures in the word vectors provided by ELMo and BERT (en)
-    * word classes, both syntactic (POS, e.g. Lin+ 2015) and semantic
+    * word classes, both syntactic (POS, eg Lin+ 2015) and semantic
       (lexical similarity, Rubenstein and Goodenough, 1965; Mikolov+ 2013)
 * success of the large LMs on apparently meaning sensitive tasks
   * they were instead simply more effective at leveraging artifacts in the data
@@ -70,7 +70,7 @@ ACL 2020 Best Theme Paper
   * _Open the window!_ or _When was Malala Yousafzai born?_, the communicative
     intent is grounded in the real world the speaker and listener inhabit
   * Communicative intents can also be about abstract worlds,
-    e.g. bank accounts, computer file systems, or a purely hypothetical world
+    eg bank accounts, computer file systems, or a purely hypothetical world
 * conventional (or standing) meaning (Quine, 1960; Grice, 1968)
   * distinguished from communicative intent
   * what is constant across all of its possible contexts of use
@@ -205,7 +205,7 @@ ACL 2020 Best Theme Paper
   * perceptual data, such as
     * photos (Hossain+ 2019) or
     * other modalities (Kiela and Clark, 2015; Kiela+ 2015)
-  * interaction data, e.g. a dialogue corpus with success annotations,
+  * interaction data, eg a dialogue corpus with success annotations,
     * low-level success signals such as
       emotional stress (McDuff and Kapoor, 2019) or eye gaze (Koller+ 2012),
       which contains a signal about the felicitous uses of forms
@@ -216,12 +216,12 @@ ACL 2020 Best Theme Paper
   real world to convey communicative intents to real people
 * standing meanings evolve over time as speakers can different experiences
   (McConnell-Ginet, 1984), and a reflection of such change can be observed in
-  their changing textual distribution (e.g. Herbelot+ 2012; Hamilton+ 2016)
+  their changing textual distribution (eg Herbelot+ 2012; Hamilton+ 2016)
 
 # 8 On climbing the right hills. Reflections on progress and research effort 7
 
 * What about systems which are trained on a task
-  e.g. semantic parsing, or reading comprehension tests
+  eg semantic parsing, or reading comprehension tests
   * pretrained embeddings can boost the accuracy of the downstream system
     drastically, even for tasks that are clearly related to meaning
 * Our arguments do not apply to such scenarios:
@@ -290,7 +290,7 @@ ACL 2020 Best Theme Paper
 
 * our working definition is as general as we could make it
 * “Meaning” cannot simply be the relation between form and some kind of “deep
-  syntax”, e.g. semantic dependency graphs (Oepen+ 2015)
+  syntax”, eg semantic dependency graphs (Oepen+ 2015)
   * such representations could perhaps be learned from form alone
     (He+ 2018; Hewitt and Manning, 2019)
   * ignores communicative intents
@@ -300,7 +300,7 @@ ACL 2020 Best Theme Paper
 * tasks designed in a way that specific forms represent semantic relations
   * NLI datasets (Dagan+ 2006; Rajpurkar+ 2016; Ostermann+ 2019) pair
     input/output tuples of linguistic forms with an explicit semantic relation
-    (e.g. text + hypothesis + “entailed”)
+    (eg text + hypothesis + “entailed”)
 * control codes, or tokens like tl;dr, have been used to prompt large LMs to
   perform summarization and other tasks (Radford+ 2019; Keskar+ 2019)
   * the prompts are explicitly declared at test time to represent a semantic rel

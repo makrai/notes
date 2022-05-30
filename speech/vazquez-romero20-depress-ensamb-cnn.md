@@ -1,19 +1,19 @@
 Automatic Detection of Depression in Speech
   Using Ensemble Convolutional Neural Networks
-by Adrián Vázquez-Romero and Ascensión Gallardo-Antolín
+Adrián Vázquez-Romero and Ascensión Gallardo-Antolín
 Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 
 # 1 Intro
 
 * Automatic Depression Detection (ADD) based on speech signals (Cohn+ 09)
-* since 2011, annually, Audio–Visual Emotion Challenges have been proposed
-  * each competition has been focused on one particular mental disorder such as
-    depression [8,9,10] or bipolar disorders [11], using emotion recognition
+* since 2011, annually, Audio–Visual Emotion Challenges
+  * each competition focused on one particular mental disorder such as
+    depression [8,9,10] or bipolar disorders [11]
   * through four well-known dimensions of the emotions
     * arousal, valence, expectancy, and power
-    * in all the challenges [8,9,10,11,12]. Some of the tasks are called
-* we follow the guidelines of the Depression Classification Sub-Challenge
-  (DCC) at the 2016 Audio–Visual Emotion Challenge (AVEC) [10]
+    * in all the challenges [8,9,10,11,12]
+* we follow the guidelines of the Depression Classification Sub-Challenge (DCC)
+  at the 2016 Audio–Visual Emotion Challenge (AVEC) [10]
   * we focus on audio information
   * ensemble of Convolutional Neural Networks (CNNs) 
   * inputs to them are speech log-spectrograms
@@ -53,8 +53,8 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     * detection of psycho pathologies, such as autism [29] or depression [30],
       * the topic of this paper
 * Conventional systems for speech-based health tasks consists of data-driven
-  * hand-crafted acoustic features, such as pitch, prosody, loudness,
-    rate of speech, and energies
+  * hand-crafted acoustic features
+    eg pitch, prosody, loudness, rate of speech, and energies
   * machine-learning algorithm such as Logistic Regression,
     Support Vector Machines (SVM) or Gaussian Mixture models [22,23,24,29]
   * deep-learning techniques (2018+) [20,21,25,26,27,28]
@@ -67,7 +67,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
   * based on the deep-learning paradigm
     * Convolutional Neural Networks (CNN)
 
-## CNNs
+## Convolutional Neural Networks (CNN)
 
 * appeared in 1980s (Fukushima 1980)
 * Krizhevsky+ (2012), a CNN-based net was proposed for image recognition
@@ -91,25 +91,25 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 * applications such as image categorization [46], sentiment analysis [47] or
   acoustic environment classification [48]
 
-## 
+## Our contributions; Privacy
 
 * our two main contributions 
   * a refined 1d-CNN architecture
-    * based on the aforementioned DepAudionet model [44] that is
-    * optimized by selecting the best configuration from an exhaustive experiment
-  * ensemble learning strategy for fusing several machines with this 1d-CNN archt
+    * based on the aforementioned DepAudionet model [44]
+    * optimized by selecting the best config from an exhaustive experiment
+  * ensemble learning strategy for fusing several 1d-CNN machines
     * the performance of these individual systems is improved
     * Ensemble CNN models have been successfully used in other speech- and
       audio-related tasks, such as automatic speech recognition [39], speech
-      emotion recognition [40], or acoustic scene classification [43], to the
+      emotion recognition [40], or acoustic scene classification [43]
     * not used previously for automatic depression detection from speech
-* An important issue in real-world speech-based health applications is privacy,
+* privacy: An important issue in real-world speech-based health applications
   * In the DAIC-WOZ dataset, participants completed consent forms to allow
-    their data to be shared for research purposes [13]. However, presently,
+    their data to be shared for research purposes [13]
   * in real-world remote monitoring of patients [20,49]
-    * data acquisition is done through microphone-enabled smart devices and/or
-      other wearable technologies
-  * two main strategies for strengthening privacy can be considered [50]. The
+    data acquisition is done through microphone-enabled smart devices and/or
+    other wearable technologies
+  * two main strategies for strengthening privacy can be considered [50]
     * extraction of acoustic features from which it is not possible to
       reconstruct the raw speech signal
       * eg in [51], the used audio characteristics are the percentage of speech
@@ -124,8 +124,8 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
       * inputs are log-spectrograms (a reversible transformation of the speech)
       * this issue is beyond the scope of this paper
 
-# 3 the dataset we have used, and the proposed system
+# 3 The dataset we have used, and the proposed system
 
-# 4 experiments and results
+# 4 Experiments and results
 
-# 5 conclusions and some lines of future work
+# 5 Conclusions and future work
