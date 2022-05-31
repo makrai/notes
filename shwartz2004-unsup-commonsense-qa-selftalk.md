@@ -50,7 +50,7 @@ EMNLP 2020 arXiv:2004.05483 [cs.CL]
   * limited reasoning capabilities: it is unclear that LMs are capable of
     performing multiple reasoning steps involving implicit knowledge
 * To increase the coverage of high-precision world knowledge and
-  facilitate multi-hop reasoning by making intermed  reasoning steps explicit,
+  facilitate multi-hop reasoning by making intermed reasoning steps explicit,
   prior work incorporated
   * KBs (e.g. ConceptNet; Speer and Havasi, 2012) and
   * knowledge-informed models (Xia+ 2019; Bosselut and Choi, 2019; Chen+ 2019)

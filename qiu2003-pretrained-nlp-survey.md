@@ -363,9 +363,20 @@ arXiv:2003.08271 [cs.CL]
 
 * first stage [with] an intermediate task or corpus
 * second stage, the transferred model is fine-tuned to the target task
-* Sun+ [154]: “further pretraining” on a related-domain corpus (BERT)
+* Sun+ (2019): “further pretraining” on a related-domain corpus (BERT)
+  * Chi Sun, Xipeng Qiu, Yige Xu, and Xuanjing Huang
+    How to fine-tune BERT for text classification?
+    In China National Conference on Chinese Computational Linguistics, pages
   * SOTA performance on eight widely-studied text classification datasets
-* Phang+ [126] and Garg+ [44]: intermediate supervised task related to the targt
+* Phang+ (2018) and Garg+ (2019): intermediate supervised task related to the trgt
+  * Jason Phang, Thibault Févry, and Samuel R Bowman
+    Sentence encoders on STILTs:
+      Supplementary training on intermediate labeled-data tasks. arXiv preprint
+      arXiv:1811.01088, 2018.
+  * Siddhant Garg, Thuy Vu, and Alessandro Moschitti
+    Tanda: Transfer and adapt pre-trained transformer models
+      for answer sentence selection
+      In AAAI, 2019.  
   * large improvement for BERT, GPT, and ELMo
 
 ### Multi-task fine-tuning

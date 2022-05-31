@@ -455,7 +455,7 @@ location. In languages 11ke Engltsh or German, this argument seems to
 be implicit, that ts it has no realization at deep- or
 surface-structure. As a COf'!Sequence, spattal and temporal
 expressions are adjuncts. They don't ftll argument positions. All but
-the event nrgument of stnge-level predlcntes tare interm.l, hence they
+the event argument of stage-level predlcates are internal, hence they
 have to be rel!ltzed within the mllximal projection of the predicate tn
 deep-structure. Subjects of stage-level verbs, then, are always
 base-generated tnside of their VP, subjects or stage-level adjecttves

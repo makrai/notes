@@ -179,9 +179,9 @@ Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
   * N = median closely tracks the ideal freezing scheme
   * further evaluation of the effect of varying N in Section 4.3
 
-## 3.2 how AutoFreeze can automatically cache intermediate outputs
+## 3.2 How AutoFreeze can automatically cache intermediate outputs
 
-## 3.3 improve resource utilization in distributed settings
+## 3.3 Improve resource utilization in distributed settings
 
 # 4 Evaluation 11
 

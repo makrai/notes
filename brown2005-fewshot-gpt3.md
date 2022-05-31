@@ -183,13 +183,56 @@ arXiv:2005.14165 cs.CL
       still 45% behind SOTA
 
 ## 3.7 SuperGLUE
+
+* In order to better aggregate results on NLP tasks and
+  compare to popular models such as BERT and RoBERTa in a more systematic way,
+  we also evaluate GPT-3 on a standardized collection of datasets, the
+  SuperGLUE benchmark (WPN+ 19, WPN + 19, CLC + 19, DMST19, RBG11, KCR + 18,
+  ZLL + 18, DGM06, BHDD + 06, GMDD07, BDD + 09, PCC18, PHR + 18)
+* GPT-3’s test-set performance on the SuperGLUE dataset is shown in Table 3.8.
+* example choice
+  * In the few-shot setting, we used 32 examples for all tasks, sampled
+    randomly from the training set
+  * For all tasks except WSC and MultiRC, we sampled a new set of examples to
+    use in the context for each problem. For
+  * WSC and MultiRC, we used the same set of randomly drawn examples from the
+    training set as context for all of the problems we evaluated.
+* a wide range in GPT-3’s performance across tasks
+  * COPA and ReCoRD GPT-3 achieves near-SOTA performance in the one-shot and
+    few-shot settings, with COPA falling only a couple points short and
+    achieving second place on the leaderboard, where first place is held by a
+    fine-tuned 11 billion parameter model (T5)
+  * WSC, performance is still relatively strong, achieving 80.1% in the
+    few-shot setting (note that GPT-3 achieves 88.6% on the original Winograd
+    dataset as described in Section 3.4)
+  * BoolQ, MultiRC, and RTE, performance is reasonable, roughly matching that
+    of a fine-tuned BERT-Large
+  * CB, we see signs of life at 75.6% in the few-shot setting.
+  * WiC is a notable weak spot with few-shot performance at 49.4% (at random
+    chance)
+    * We tried a number of different phrasings and formulations for WiC (which
+    * task: determining if a word is being used with the same meaning in two ss
+    * phenomenon will become clearer in the next section (which discusses the
+      ANLI benchmark) – GPT-3 appears to be weak in the few-shot or one-shot
+      setting at some tasks that involve comparing two sentences or snippets,
+      for example whether a word is used the same way in two sentences (WiC),
+      whether one sentence is a paraphrase of another, or whether one sentence
+      implies another.
+  * This could also explain the comparatively low scores for RTE and CB, which
+* the few-shot SuperGLUE score steadily improves with both model size and with
+  number of examples in the context showing increasing benefits from in-context
+  learning (Figure 3.8). We scale K up to 32 examples per task, after which
+  point additional examples will not reliably fit into our context. When
+  sweeping over values of K, we find that GPT-3 requires less than eight total
+  examples per task to outperform a fine-tuned BERT-Large on overall SuperGLUE
+
 ## 3.8 NLI (Fyo00)
 
 * understand the relationship between two sentences
 * as a two or three class classification problem where the model classifies
   * whether the second sentence logically follows from the first, contradicts
     the first sentence, or is possibly true (neutral)
-* SuperGLUE includes an NLI dataset, RTE, which evaluates the binary version of
+* SuperGLUE includes an NLI dataset, RTE, which evaluates the binary version
 * On RTE, only the largest version of GPT-3 performs better than random (56%)
   * few-shot setting: GPT-3 performs similarly to a single-task fine-tuned BERT
     Large

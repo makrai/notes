@@ -4,6 +4,8 @@ JMLR arXiv:1910.10683 [cs.LG]
 
 * we release our data set, pre-trained models, and code
 
+# Abstract
+
 * Transfer learning: model is first pre-trained on a data-rich task before
   being fine-tuned on a downstream task, has emerged as a powerful technique
 * diversity of approaches, methodology, and practice
@@ -26,12 +28,27 @@ JMLR arXiv:1910.10683 [cs.LG]
   * fine-tuning methods (Howard and Ruder, 2018; Houlsby+ 2019; Peters+ 2019),
 * approach is inspired by unifying frameworks casting all text problems as
   question answering (McCann+ 2018), language modeling (Radford+ 2019), or
-  span extraction Keskar+ (2019b) tasks. Crucially, the text-to-text framework
+  span extraction Keskar+ (2019b) tasks
   * the same model, objective, training procedure, and decoding process
 * We evaluating performance on a wide variety of English-based NLP problems,
-  including question answering, document
+  including question answering, document summarization, and sentiment
+* With this unified approach, we can compare the effectiveness of different
+  transfer learning objectives, unlabeled data sets, and other factors, while
+  exploring the limits of transfer learning for NLP by scaling up models and
+  data sets beyond what has previously been considered.
+* we
+  * goal is not to propose new methods but instead to provide a comprehensive
+  * a survey, exploration, and empirical comparison of existing techs
+  * explore the limits of current approaches by scaling up the insights
+    from our systematic study (training models up to 11 billion parameters) to
+    obtain SOTA results in many of the tasks we consider. In order to perform
+  * “Colossal Clean Crawled Corpus” (C4), a data set consisting of hundreds of
+    gigabytes of clean English text scraped from the web. Recognizing that the
+    main utility of transfer learning is the possibility of leveraging
+    pre-trained models in data-scarce settings, we release our code, data sets,
+    and pre-trained models
 
-# 2 model, implementation, formulating every problem as a txt2txt, tasks
+# 2 model, implementation, formulating every problem as txt2txt
 
 ## 2.3 Downstream Tasks
 
@@ -44,14 +61,14 @@ JMLR arXiv:1910.10683 [cs.LG]
   * Sentence acceptability judgment (CoLA, Warstadt+ 2018)
   * Sentiment analysis (SST-2, Socher+ 2013)
   * Paraphrasing/sentence similarity
-    (MRPC (Dolan and Brockett, 2005), STS-B (Cer+ 2017), QQP, Iyer+ 2017)
+    * MRPC (Dolan and Brockett 2005), STS-B (Cer+ 2017), QQP (Iyer+ 2017)
   * Natural language inference (MNLI (Williams+ 2017), QNLI (Rajpurkar+ 2016),
-    RTE (Dagan+ 2005), CB, De Marneff+ 2019)
+    RTE (Dagan+ 2005), CB (De Marneff+ 2019))
   * Coreference resolution (WNLI and WSC, Levesque+ 2012)
   * Sentence completion (COPA, Roemmele+ 2011)
   * Word sense disambiguation (WIC, Pilehvar and Camacho-Collados, 2018)
   * Question answering
-    (MultiRC (Khashabi+ 2018), ReCoRD (Zhang+ 2018), BoolQ, Clark+ 2019)
+    * MultiRC (Khashabi+ 2018), ReCoRD (Zhang+ 2018), BoolQ (Clark+ 2019)
 * GLUE and SuperGLUE benchmarks: we treat all of the tasks as a single task
   * As suggested by Kocijan+ (2019) we also include the Definite Pronoun
     Resolution (DPR) data set (Rahman and Ng, 2012) in the combined SuperGLUE
