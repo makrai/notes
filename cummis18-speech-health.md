@@ -5,8 +5,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 # Abstract
 
-* acoustic-prosodic properties of a speech signal are modulated with a range of
-  health related effects
+* acoustic-prosodic properties of a speech signal are
+  modulated with a range of health related effects
 * an active and growing area of machine learning research in speech and health
 
 # 1 Intro

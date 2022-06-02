@@ -1,11 +1,11 @@
-A ML Learning Approach to Identifying the Thought Markers of Suicidal
-Subjects: A Prospective Multicenter Trial
+A ML Learning Approach to Identifying the Thought Markers of Suicidal Subjects:
+  A Prospective Multicenter Trial
 John P. Pestian, Michael Sorter, Brian Connolly, Kevin Bretonnel Cohen, Cheryl
 McCullumsmith, Jeffry T. Gee, Louis‐Philippe Morency, Stefan Scherer, L Rohlfs
 2016
 
 * computer science provides opportunities to understand suicide thought markers
-* this: prospective, multimodal, multicenter, mixed demographic study, we used
+* we: prospective, multimodal, multicenter, mixed demographic study
 * two classes of suicidal thought markers: verbal and nonverbal
   * words and vocal characteristics to classify
   * 379 subjects in three groups: suicidal, mentally ill but not suicidal, contr

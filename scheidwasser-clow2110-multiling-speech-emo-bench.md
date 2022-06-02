@@ -25,7 +25,7 @@ setup instructions, evaluation pipelines & examples, is freely available online
   * fixed representation suitable for a range of audio and speech proc tasks
   * transfer learned knowledge from a large, unlabeled dataset to downstream
     tasks with less task-specific data available
-* estimated performance strongly depends on the evaluation protocol. This makes
+* estimated performance strongly depends on the evaluation protocol
   * open-source benchmarks, typically composed of fixed dataset(s) and
     evaluation pipelines, instrumental for comparisons of different methods
   * other domain
