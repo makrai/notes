@@ -63,12 +63,12 @@ We published our work on GitHub for
   * sparse features (Kazama and Tsujii, 2003; Friedman+ 2008; Mairal+ 2009) has
   * useful in several areas of NLP, including POS tagging (Ganchev+ 2010), text
     classification (Yogatama and Smith, 2014) and dependency parsing (Martins+
-    2011).
+    2011)
     * Berend (2017) also showed that sparse representations can outperform their
   * Murphy+ (2012) proposed Non-Negative Sparse Embedding to learn interpretable
   * Park+ (2017) showed a rotation based method and
   * Subramanian+ (2017) suggested an approach using a denoising k-sparse
-    auto-encoder to generate interpretable sparse word representations.
+    auto-encoder to generate interpretable sparse word representations
   * Balogh+ (2019) made prior research about the semantic overlap of the
     generated vectors with a human commonsense knowledge-base and found that
     substantial semantic content is captured by the sparse bases
@@ -84,10 +84,10 @@ We published our work on GitHub for
   category which represents a hypernym-hyponym relation, but they can be found
   among "traffic" related terms as well. Another example is "car" semantic
   category which is in meronymy relation with words such as "engine", "wheels"
-  and "crankcase".
-* to extend it to the Hungarian language as well, we used the semantic category
-  names from SemCat and defined relations on a category-by-category base
-  manually. We relied on a subset of relations from ConceptNet (Speer+ 2016).
+  and "crankcase"
+* to extend it to Hungarian, we used the semantic category names from SemCat
+  and defined relations on a category-by-category base manually. We relied on a
+  subset of relations from ConceptNet (Speer+ 2016)
   * triangulation: To obtain higher quality semantic categories, we introduced
     an intermediate language that works as a validation to reduce undesired
     translations
@@ -98,18 +98,18 @@ We published our work on GitHub for
   2. translate the semantic categories to the target language directly and
     through the intermediate language to the target language, where we kept the
     intersection of the two results.  It is recommended to rely on one of the
-    core languages defined in ConceptNet as Source and Intermediate language.
+    core languages defined in ConceptNet as Source and Intermediate language
   * i.e. distant supervised generation (Mintz+ 2009) can produce large number of
 
 ## 3.2 Word Embeddings
 
-* 3 embedding spaces trained using the Fasttext algorithm (Bojanowski+ 2017).
+* 3 embedding spaces trained using the Fasttext algorithm (Bojanowski+ 2017)
   * Hungarian Fasttext (Fasttext HU) embeddings pre-trained on Wikipedia 3 ,
   * its aligned variant 4 (Fasttext Aligned) that was created using the RCSLS
     criteria (Joulin+ 2018) with the objective to bring Hungarian embeddings
     closer to semantically similar English embeddings and the
   * Szeged Word Vectors (Szeged WV; Szántó+ 2017) which is
-    based on the concatenation of multiple Hungarian corpora.
+    based on the concatenation of multiple Hungarian corpora
 
 # 4 Our Approach
 

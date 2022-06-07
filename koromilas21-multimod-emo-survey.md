@@ -260,7 +260,7 @@ Appl. Sci. 2021, 11,
       convolutional filter sizes
     * text representations are learned with the application of a CNN on the
       text embeddings, while for the
-    * aural modality, the openSMILE [25] embeddings are used. The network is
+    * aural modality, the openSMILE [25] embeddings are used
     * multiple kernel learning algorithm, and the final emotion prediction is
       inferred based on algorithmically selected features from the
       concatenation of the unimodal representations

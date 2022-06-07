@@ -17,30 +17,32 @@ https://github.com/allenai/rainbow
   * a novel evaluation, the cost equivalent curve, that sheds new insight on
     how the choice of source datasets, pretrained language models, and transfer
     learning methods impacts performance and data efficiency
-* extensive experiments ~~ over 200 experiments encompassing 4800 models ~~ and
+* extensive experiments ~~ over 200 experiments encompassing 4800 models
   * transfer almost always leads to better or equivalent performance if
-    following a particular recipe, that
+    following a particular recipe
   * QA-based commonsense datasets transfer well with each other, while
-    commonsense knowledge graphs do not, and that
+    commonsense knowledge graphs do not
   * larger models benefit more from transfer than smaller ones
-    * perhaps counter-intuitively,
+    * perhaps counter-intuitively
 * a new universal commonsense reasoning model, UNICORN, that establishes
   * new SOTA performance across 8 popular commonsense benchmarks,
-  * aNLI (87.3%), CosmosQA (91.8%), HellaSWAG (93.9%), PIQA (90.1%), SocialIQa
+  * αNLI (87.3%), CosmosQA (91.8%), HellaSWAG (93.9%), PIQA (90.1%), SocialIQa
     (83.2%), WinoGrande (86.6%), CycIC (94.0%) and CommonsenseQA (79.3%)
 
 # 1 Intro
 
 * In AI’s early years, researchers sought to build common sense (McCarthy 1959)
+  * McCarthy, J. 1959. Programs with Common Sense
+    Teddington Conference on the Mechanization of Thought Processes
 * only recently do we see a sudden increase in research interest toward this
 * benchmarks and models (Mostafazadeh+ 2016; Talmor+ 2019; Sakaguchi+ 2020)
 * pretrained models have led to remarkable progress across the board, often
   * surpassing human performance on leaderboards
     (Radford+ 2018; Devlin+ 2019; Liu+ 2019b; Raffel+ 2019)
   * surprisingly silly and nonsensical mistakes, even GPT-3
-* we can learn a great deal from mainstream NLP research. In particular, the
-  * multitask benchmarks such as GLUE (Wang+ 2019b) and SUPER GLUE (Wang+
-    2019a) has encouraged fundamental advances in the NLP community,
+* we can learn a great deal from mainstream NLP research
+  * multitask benchmarks eg GLUE (Wang+ 2019b) and SUPER GLUE (Wang+ 2019a) has
+    encouraged fundamental advances in the NLP community,
 * we proposing two new ways to evaluate commonsense models with an
   emphasis on their generality across tasks and domains
   * new multi-task benchmark, RAINBOW, to facilitate research
@@ -57,9 +59,9 @@ https://github.com/allenai/rainbow
     * how much data does a transfer learning approach save over the baseline
     * more detailed walk-through of this chart in §2
     * advantages over
-      * simple evaluations at the full dataset size or classical
-      * learning curves drawn for each method and dataset separately, as they
-* We leverage these new tools to reevaluate common approaches for
+      * simple evaluations at the full dataset size or
+      * learning curves drawn for each method and dataset separately
+* We leverage these new tools to re-evaluate common approaches for
   intermediate-task transfer (Pruksachatkun+ 2020)
   * intermediate-task transfer can always lead to better or equivalent
     performance if following a particular recipe, that
@@ -87,15 +89,15 @@ https://github.com/allenai/rainbow
   * x-axis shows the number of examples used by the single-task baseline, while
   * y-axis shows the examples from the target dataset used by the multitask met
   * curve is where they achieve the same performance
-  * numbers on top of the figure show the performance corresponding to the
+  * numbers on top of the figure show the corresponding performance 
   * curves below the diagonal (y = x) indicating that the new method improves
 * assumption: rel between performance and cost is continuous and strictly monot
   * holds empirically for parameters, compute, and data (Kaplan+ 2020)
   * estimate each learning curve with isotonic regression (Barlow+ 1972), then
-    * isotonic regression or monotonic regression is the technique of
-      fitting a free-form line to a sequence of observations such that the
-      fitted line is non-decreasing (or non-increasing) everywhere, and lies as
-      close to the observations as possible
+    * isotonic aka monotonic regression is the technique of
+      fitting a free-form line to a sequence of observations such that
+      the fitted line is non-decreasing (or non-increasing) everywhere, and
+      lies as close to the observations as possible
   * mapping each dataset size to the baseline performance, finding the matching
     performance on the new method’s curve, and seeing how many examples requird
 * reframes the goal from pushing up performance on a fixed-size benchmark
@@ -104,7 +106,7 @@ https://github.com/allenai/rainbow
 # 3 RAINBOW
 
 * We define RAINBOW, a suite of commonsense benchmarks, with the following
-  datasets. To keep evaluation clean-cut, we only chose multiple-choice QA
+    * To keep evaluation clean-cut, we only chose multiple-choice QA
   * αNLI (Bhagavatula+ 2020) tests abductive reasoning in narratives
     * identify the best explanation among several
     * connecting a beginning and ending
@@ -147,13 +149,13 @@ https://github.com/allenai/rainbow
 
 ### Finding 2: Sequential training rarely hurts performance.  While multitask
 
-### Finding 3: Multitask training helps most often in the lowdata regime
+### Finding 3: Multitask training helps most often in the low-data regime
 
 * One mystery researchers currently face is the inconsistent effect of multitsk
 * Cost equivalent curves reveal one potential explanation: multitask learning
   tends to help when data is scarce, but may hurt performance if plentiful. In
 
-## 4.2 What Transfers Best for Common Sense?  Understanding
+## 4.2 What Transfers Best for Common Sense?
 
 * when datasets transfer well (Vu+ 2020; Pruksachatkun+ 2020)
 * researchers usually pick datasets that seem similar to the target, whether
@@ -177,9 +179,9 @@ https://github.com/allenai/rainbow
 * The off-the-shelf T5’s weights come from multitask pretraining, where
   * many tasks are mixed with a language modeling objective to learn a powerful
     initialization for the weights. In fact, both GLUE and SUPER GLUE were
-    mixed into the pretraining (Raffel+ 2019). So, while RAINBOW clearly
-* not determined whether some of the benefit comes from the novelty of RAINBOW
-  ’s knowledge to T5,
+    mixed into the pretraining (Raffel+ 2019)
+* not determined whether some of the benefit comes from the
+  novelty of RAINBOW’s knowledge to T5,
   as opposed to containing more general information than GLUE and SUPER GLUE
 
 ## 4.3 Does Model Size Affect Transfer?
@@ -187,7 +189,7 @@ https://github.com/allenai/rainbow
 * Figure 4 presents the results for transferring with different model sizes
   from RAINBOW to COMMONSENSE QA
 
-### Finding 6: Larger models benefit more from transfer.  Since larger
+### Finding 6: Larger models benefit more from transfer
 
 * pretrained models achieve substantially higher performance, it’s difficult to
 * baselines start from very different places.  Cost equivalent curves place
@@ -199,7 +201,7 @@ https://github.com/allenai/rainbow
   fixed for comparison. Exploring whether this trend holds in different
   contexts, as well as theoretical explanations, are directions for future
 
-### Finding 7: Sequential training wins across model sizes.  Figure 4 expands
+### Finding 7: Sequential training wins across model sizes.  Figure 4
 
 ## 4.4 Can Models Transfer from Knowledge Graphs to QA Datasets?
 
@@ -220,7 +222,7 @@ https://github.com/allenai/rainbow
     * backward direction, the model predicts the subject given the object and
       relation.  The results are summarized in Figure 5 and Table 3
 
-### Finding 8: Knowledge graph multitasking shows little impact. The results
+### Finding 8: Knowledge graph multitasking shows little impact
 
 * generally negative
   * Only SOCIAL IQA benefits, which
@@ -236,9 +238,9 @@ https://github.com/allenai/rainbow
 # 5 UNICORN
 
 * universal commonsense reasoning model,
-* Motivated by Finding 1, our primary goal with Unicorn is to provide a
-  pretrained commonsense reasoning model ready to be fine-tuned on other
-  downstream commonsense tasks
+* Motivated by Finding 1, our primary goal with Unicorn is to provide
+  a pretrained commonsense reasoning model ready
+  to be fine-tuned on other downstream commonsense tasks
   * analogous to how off-the-shelf T5 models are multitasked on NLP benchmarks
     such as GLUE and SUPER GLUE as part of their pretraining
 * new SOTA on all RAINBOW datasets: αNLI (87.3%), COSMOS QA (91.8%), HELLA
@@ -253,14 +255,14 @@ https://github.com/allenai/rainbow
 * simple methods that scale often outperform complex ones (Sutton 2019)
 * sharp rise in compute used by SOTA methods (Amodei and Hernandez 2018)
 * Performance gains from increasing data, parameters, and training are
-  predictable (Hestness+ 2017; Sun+ 2017; Rosenfeld+ 2020; Kaplan+ 2020). For
+  predictable (Hestness+ 2017; Sun+ 2017; Rosenfeld+ 2020; Kaplan+ 2020)
 * Sun+ (2017) found that models need exponential data for improvements in
   * Eventually, models saturate and need super-exponential data
 
 ## Commonsense Benchmarks. Rapid progress in modeling has led to a major
 
 * adversarial filtering (Zellers+ 2018; Le Bras+ 2020): a family of techniques
-* Besides COSMOS QA, all RAINBOW tasks use this technique. Many
+* Besides COSMOS QA, all RAINBOW tasks use this technique
 * more common sense benchmarks exist beyond what we could explore here
   (Roemmele, Bejan, and 2011; Levesque, Davis, and 2011; Mostafazadeh+ 2016)
 
@@ -278,7 +280,7 @@ https://github.com/allenai/rainbow
   * Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis, Zettlemoyer, & Stoyanov V
     Roberta: A robustly optimized bert pretraining approach
     arXiv preprint arXiv:1907.11692
-  * Lan, Z.; Chen, M.; Goodman, S.; Gimpel, K.; Sharma, P.; and Soricut, R
+  * Lan Z, Chen M, Goodman S, Gimpel K, Sharma P, and Soricut R
     Albert: A lite bert for self-supervised learning of language reprs
     arXiv preprint arXiv:1909.11942
 * Most relevant to this work, Raffel+ (2019) introduced T5 which built off

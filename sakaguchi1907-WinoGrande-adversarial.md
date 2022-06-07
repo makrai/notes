@@ -2,8 +2,8 @@ WinoGrande: An Adversarial Winograd Schema Challenge at Scale
 Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
 arXiv:1907.10641 [cs.CL]
 
-* Yejin Choiról hisz a deep learning szimbolikus dolgokkal való hibridizálásá-
-  ban, mondja Turán György
+* Yejin Choi hisz a deep learning szimbolikus dolgokkal való hibridizálásában,
+  mondja Turán György
 
 # Abstract
 
@@ -14,19 +14,19 @@ arXiv:1907.10641 [cs.CL]
     selectional preferences or word associations
 * recent advances in neural language models have already reached around 90%
   accuracy on variants of WSC
-  * spurious biases in the datasets that lead to an overestimation
+  * spurious biases in the datasets lead to an overestimation
 * WinoGrande, a large-scale dataset of 44k problems, inspired by the original
   WSC design, but adjusted to improve both the scale and the hardness
   * dataset construction consist of
     * a carefully designed crowdsourcing procedure, followed by
     * novel AfLite: light-weight adversarial filtering
-      * systematic bias reduction that generalizes human-detectable word
-        associations to machine-detectable embedding assoc
+      * systematic bias reduction that generalizes human-detectable word assocs
+        to machine-detectable embedding assoc
 * The best SOTA methods on WinoGrande achieve 59.4-79.1%, which are
   15-35% below human performance of 94.0%,
   depending on the amount of the training data allowed
-* new SOTA results on five related benchmarks WSC (90.1%), DPR (93.1%), COPA
-  (90.6%), KnowRef (85.6%), and Winogender (97.1%)
+* new SOTA results on five related benchmarks WSC (90.1%), DPR (93.1%),
+  COPA (90.6%), KnowRef (85.6%), and Winogender (97.1%)
 * implications:
   * effectiveness of WinoGrande when used as a resource for transfer learning
     * SOTA results on several related benchmarks
@@ -115,7 +115,7 @@ arXiv:1907.10641 [cs.CL]
 
 # 4 Experimental Results 5
 
-## 4.2
+## 4.2 Results
 
 ### Learning Curve. In order to see the effect of training size,
 
@@ -141,7 +141,7 @@ arXiv:1907.10641 [cs.CL]
 
 ## Existing WSC and Related Datasets
 
-### WSC (Levesque, Davis, and Morgenstern 2011) This is
+### WSC (Levesque, Davis, and Morgenstern 2011)
 
 * the original Winograd Schema Challenge dataset, 273 problems
 * Trichelair+ (2018) report that 13.5% may still have word-association bias
@@ -192,7 +192,7 @@ arXiv:1907.10641 [cs.CL]
 
 # 6 Conclusions 8
 
-* Unlike past decades where the community constructed a static benchmarks
-  to work on for many years to come, we now need AI algorithms to
-  compose challenges that are hard enough for AI, which requires
-  dynamic datasets that evolve together with the evolving SOTA
+* dynamic datasets
+  * Unlike past decades where static benchmarks worked on for many years
+  * we need AI algorithms to compose challenges that are hard enough for AI,
+    which requires dynamic datasets that evolve together with the evolving SOTA

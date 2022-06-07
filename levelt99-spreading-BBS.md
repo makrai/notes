@@ -73,14 +73,14 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
   the present paper is limited to the production of isolated prosodic words
 * pioneers of word production research:
   Vicky Fromkin, Merrill Garrett, Stephanie Shattuck-Hufnagel, and Gary Dell
-  * (see Levelt, 1989, for a comprehensive and therefore more balanced review of
-    modern contributions to the theory of lexical access)
+  * see Levelt (1989) for a comprehensive and therefore more balanced review of
+    modern contributions to the theory of lexical access
   * difference:
     * classical: basing on speech errors, spontaneous or induced,
     * we: reaction time (RT) research. We believed this to be a necessary
     * test cannot lie in how they account for infrequent derailments of the
       process but rather must lie in how they deal with the normal process
-    * object naming: one-fourth of an adult’s lexicon consists of names for objs
+    * object naming: 1/4 of an adult’s lexicon consists of names for objects
     * an ideal procedure for analyzing the time course of a mental process
 * RT studies of word production began with the seminal studies of Oldfield and
 * error patterns as well as for production latencies. First efforts in that

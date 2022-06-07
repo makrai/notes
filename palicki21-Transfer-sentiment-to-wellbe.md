@@ -1,17 +1,16 @@
-Transfer Learning Approach for Detecting Psychological Distress in Brexit Tweets
+Transfer Learning Approach for Detecting Psycho Distress in Brexit Tweets
 Sean-Kelly Palicki, Shereen Fouad, Mariam Adedoyin-Olowe, Zahraa S. Abdallah
 SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 
 # Abstract
 
-* Sentiment analysis has been recently considered as an important tool for
-  detecting mental well-being in Twitter contents
-* challenging task due to the lack of explicit sentences describing the
-  depressive or anxiety status
+* Sentiment analysis has been recently considered as
+  an important tool for detecting mental well-being in Twitter contents
+* hE lack of explicit sentences describing the depression/anxiety status
 * this paper leverages a transfer learning approach for sentiment analysis to
   measure the non-clinical psychological distress status in Brexit tweets
-  * a classifier is trained to identify users with psychological distress and is
-    then applied to find signs of distress in an other domain
+  * a classifier is trained to identify users with psychological distress and
+    * then applied to find signs of distress in an other domain
   * from self-reported psychological distress tweets (source domain)
   * to detect the distress status in Brexit tweets (target domain)
   * domain adaptation technique to decrease the impact of negative transfer
@@ -47,7 +46,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   * difficult task: no clear posts in which users explicitly share their mental
     health problems, medical diagnosis or depressive thoughts
 * we train a supervised learning model on labelled distress tweets and use it as
-  a baseline to train Brexit tweets to detect the non-clinical psychological
+  a baseline to train Brexit tweets to detect the non-clinical psycho status
   * we introduce a Brexit Distress Index that may serve to characterise levels
     of psychological distress in populations in Brexit related tweets
 
@@ -68,8 +67,8 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     complete psychometric surveys, and self-declaration by users
 * [12] distinguished between ‘diagnosed’ and ’non-diagnosed’ participants, but
   not between Depression and PTSD, using language patterns
-  * Using over 13 million tweets from individuals who explicitly stated they had
-    been diagnosed with clinical depression or PTSD,
+  * Using over 13 million tweets from individuals who explicitly stated they
+    had been diagnosed with clinical depression or PTSD,
 * [14] used a similar data collection strategy and to identify mental health
   * found groups of words that classified between Depression, PTSD, and Control
     with 80-90% precision
@@ -91,7 +90,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 
 * Transfer learning [26] works for classification, regression, and clustering
   * with no or limited labelled data [15]
-  * source dataset (D s) and target dataset (D t ) must be related [32]
+  * source dataset (D s) and target dataset (D t) must be related [32]
   * particularly if there is poor data availability in a target domain [37]
 * especially successful in the field of sentiment analysis
   * [4] applied transfer learning to binary and multi-class sentiment classif
@@ -99,7 +98,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     * these methods out-performed task-specific models
   * [11] applied transfer learning for opinion holder bias prediction in an
     example of topic-based real time sentiment analysis
-  * [17] utilised transfer learning to prompt sentiment embedding that portrayed
+  * [17]: transfer learning to prompt sentiment embedding that portrayed
     sentiment polarity in multiple domains across diverse sentiment tasks
   * applied to social media data: classify positive/negative/neutral sentiment,
     to detect adverse reactions, and to identify irony [1, 15, 40]
@@ -121,6 +120,6 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 * trends compared favourably to major Brexit headlines
   * Other sentiment analysis techniques show spikes in activity related to
     major political, cultural, economic, and natural events [8, 22, 23, 31]
-  * there was a time lag between the date of event and the change in public sent
+  * time lag between the date of event and the change in public sentiment
 * some residents expressed fear and sadness related to leaving the EU and
-  * others expressed anger that it has taken so long for the government to
+  * others expressed anger that it has taken so long for the government to cmpl

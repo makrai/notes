@@ -4,26 +4,26 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 * 38,000 multiple choice questions for probing emotional and social intelligenc
 * (e.g., Q: "Jordan wanted to tell Tracy a secret, so Jordan leaned towards
-  Tracy. Why did Jordan do this?" A: "Make sure no one else could hear").
+  Tracy. Why did Jordan do this?" A: "Make sure no one else could hear")
 * Through crowdsourcing, we collect commonsense questions
-  along with correct and incorrect answers about social interactions, using a
+  along with correct and incorrect answers about social interactions
   * new framework that mitigates stylistic artifacts in incorrect answers by
     asking workers to provide the right answer to a different but related
     question
 * results show that our benchmark is
   challenging for existing question-answering models based on pretrained LMs
-  * compared to human performance (>20% gap).  Notably, we further establish
+  * compared to human performance (>20% gap)
 * a resource for transfer learning of commonsense knowledge, achieving SOTA
   performance on multiple commonsense tasks (Winograd Schemas, COPA)
 
 # 1 Intro
 
 * Social and emotional intelligence (Ganaie and Mudasir, 2015)
-  * reason about the mental states of others and their likely actions .  For
+  * reason about the mental states of others and their likely actions
   * Theory of Mind (Baron-Cohen+ 1985)
     * the ability to reason about the implied emotions and behavior of others,
     * social situations ranging from simple conversations with friends to
-      complex negotiations in courtrooms (Apperly, 2010).
+      complex negotiations in courtrooms (Apperly, 2010)
     * a longstanding but elusive goal of AI (Gunning, 2018)
 * lack of large-scale resources to train and evaluate modern AI systems’ social
 * pretraining large language models have yielded
@@ -38,7 +38,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * crowdsourcing framework to gather contexts and questions that explicitly
   * combining handwritten negative answers with adversarial question-switched
     answers (Section 3.3), we minimize annotation artifacts that can arise from
-    crowdsourcing incorrect answers (Schwartz+ 2017; Gururangan+ 2018).
+    crowdsourcing incorrect answers (Schwartz+ 2017; Gururangan+ 2018)
 * challenging for AI systems, with
   * our best performing baseline reaching 64.5% (BERT-large), significantly
 * transfer learning for other commonsense challenges,
@@ -47,11 +47,11 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * new SOTA on three commonsense challenge datasets:
   * COPA (Roemmele+ 2011) (83.4%), the
   * original Winograd (Levesque, 2011) (72.5%), and the
-  * extended Winograd dataset from Rahman and Ng (2012) (84.0%).
+  * extended Winograd dataset from Rahman and Ng (2012) (84.0%)
 * contributions are as follows:
   * SocialIQa, the first large-scale QA dataset aimed at testing soc & emo
   * question-switching, a technique to collect incorrect answers that
-    * minimizes stylistic artifacts due to annotator cognitive biases.
+    * minimizes stylistic artifacts due to annotator cognitive biases
   * We establish baseline performance on our dataset, with BERT-large performing
     * well below human performance, close to 90%
   * We achieve new SOTA accuracies on COPA and Winograd
@@ -60,14 +60,14 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 # 2 Task description
 
 * correctly answering questions requires reasoning about
-  motivations, emotional reactions, or likely preceding and following actions.
+  motivations, emotional reactions, or likely preceding and following actions
 
 ## ATOMIC
 
 * we draw upon social commonsense knowledge from ATOMIC (Sap+ 2019)
-  to seed our contexts and question types.
+  to seed our contexts and question types
 * ATOMIC is a large knowledge graph that contains
-  * inferential knowledge about the causes and effects of 24k short events.
+  * inferential knowledge about the causes and effects of 24k short events
   * Each triple in ATOMIC consists of
     * (e.g., “PersonX pays for PersonY’s ”, “xAttrib”, “generous”)
     * an event phrase with person-centric variables,
@@ -77,7 +77,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
       * its effect on other participants (e.g., “Y will want to see X again”);
     * an inference object .  The nine inference dimensions in ATOMIC cover
 * Given this base, we generate natural language contexts that represent
-  specific instantiations of the event phrases found in the knowledge graph.
+  specific instantiations of the event phrases found in the knowledge graph
 
 # 3 Dataset creation
 
@@ -94,7 +94,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
     * three groupings of ATOMIC dimensions: {xWant, oWant, xNeed, xIntent},
       {xReact oReact, xAttr}, and {xEffect, oEffect}., 6 and ask workers to
 * To verify this, we compare valence, arousal, and dominance (VAD) levels
-  across answer types, computed using the VAD lexicon by Mohammad (2018).
+  across answer types, computed using the VAD lexicon by Mohammad (2018)
   Figure 4 shows effect sizes (Cohen’s d) of the differences in VAD means,
   where the magnitude of effect size indicates how different the answer types
   are stylistically. Indeed, QSA and correct answers differ substantially less
@@ -115,7 +115,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * significantly improve over a random baseline of 33% with only a few hundred
   * starts to converge after around 20k examples, providing evidence that
   * human performance (86.9%)
-  * to reach >80%, the model would require nearly 1 million training examples.
+  * to reach >80%, the model would require nearly 1 million training examples
 
 ### Error Analysis
 
@@ -123,7 +123,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * pre-conditions of the context (people’s motivations, actions needed before
     the context) are less challenging for the model. Conversely, the model
   * struggle more with questions relating to (potentially involuntary) effects,
-    stative descriptions, and what people will want to do next.
+    stative descriptions, and what people will want to do next
 * Examples of errors in Table 3 further indicate that, instead of doing
   * models may only be learning lexical associations between the context, q & a
   * as hinted at by Marcus (2018) and Zellers+ (2019b Hellaswag). This
@@ -151,7 +151,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 ### Results Shown in Table 4, sequential finetuning on SocialIQa yields
 
 * substantial improvements over the BERT-only baseline (between 2.6 and 5.5%)
-* general increase in performance stability (i.e., lower standard deviations).
+* general increase in performance stability (i.e., lower standard deviations)
 * Note that OpenAI-GPT was reported to achieve 78.6% on COPA, but that result
   was not published, nor discussed in the OpenAI-GPT white paper (Radford+ 18)
 
@@ -176,14 +176,14 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 * (Speer and Havasi, 2012; Sap+ 2019; Zhang+ 2017; Lenat, 1995 Cyc;
   Espinosa and Lieberman, 2005; Gordon and Hobbs, 2017)
-  * Sheng Zhang, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. .
+  * Sheng Zhang, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 
     Ordinal common-sense inference
-    TACL 2017, 5(1):379–395.
+    TACL 2017, 5(1):379–395
   * José H. Espinosa and Henry Lieberman
     Eventnet: Inferring temporal relations between commonsense events
-    MICAI 2005.
-  * Andrew S Gordon and Jerry R Hobbs.
-    A Formal Theory of Commonsense Psychology: How People Think People Think.
+    MICAI 2005
+  * Andrew S Gordon and Jerry R Hobbs
+    A Formal Theory of Commonsense Psychology: How People Think People Think
     Cambridge University Press 2017
 * format: natural language QA benchmark vs a taxonomic knowledge base
 

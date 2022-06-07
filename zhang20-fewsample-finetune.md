@@ -60,8 +60,7 @@ Code: github asappresearch/revisit-bert-finetuning
 ## BERT Representation Transferability
 
 * BERT pre-trained representations have been widely studied using probing
-  methods showing that
-  the pre-trained features from intermediate layers are more transferable
+* the pre-trained features from intermediate layers are more transferable
   (Tenney+ 2019b;a; Liu+ 2019a; Hewitt & Manning, 2019; Hewitt & Liang, 2019)
   or applicable (Zhang+ 2020) to new tasks than features from later layers,
   which change more after fine-tuning (Peters+ 2019; Merchant+ 2020). Our work

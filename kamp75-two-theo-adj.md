@@ -271,9 +271,10 @@ JAW Kamp
     will be assigned the set of all completions,
   * those already false as well as sentences such as `p \wedge \neg p`
     will be assigned the empty set
-  * only sentences which neither have a truth value in virtue of the recursive
-    truth definition nor have the form of a logical identity or contradiction
-    may be assigned intermediate sets
+  * only sentences which
+    neither have a truth value in virtue of the recursive truth definition
+    nor have the form of a logical identity or contradiction may be assigned
+    intermediate sets
   * first introduced by Van Fraassen (1969)
   * for an analysis of vagueness
     * Vagueness is one of the reasons why sentences may lack truth value

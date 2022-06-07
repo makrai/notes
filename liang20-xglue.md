@@ -1,11 +1,11 @@
-XGLUE: A New Benchmark Datasetfor Cross-lingual Pre-training, Understanding and Generation
+XGLUE: A New Benchmark Dataset for Cross-ling Pre-train, Understand and Gen
 Yaobo Liang, Nan Duan, Yeyun Gong, Ning Wu, Fenfei Guo, Weizhen Qi,+
 EMNLP 2020
 
 # Abstract
 
 * using multilingual and bilingual corpora, and evaluate their performance
-  across a diverse set of cross-lingual tasks.  Comparing to GLUE (Wang+2019),
+  across a diverse set of cross-lingual tasks.  Comparing to GLUE (Wang+ 2019),
   which is labeled in English and includes natural language understanding tasks
 * two corpora with different sizes for cross-lingual pre-training; (2) it
 * 11 diversified tasks that cover both NLU and generation scenarios; (3) for

@@ -21,9 +21,9 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 
 ## 1.3
 
-* size and scope of ConceptNet make it comparable to ... two other most notable
+* size and scope of ConceptNet make it comparable to two other most notable
   largescale semantic knowledge bases in the literature: Cyc and WordNet
-* differences ... these will be spelled out in the following section
+* differences these will be spelled out in the following section
   * WordNet is optimised for lexical categorisation and word-similarity
   * Cyc is optimised for formalised logical reasoning,
   * ConceptNet is optimised for making
@@ -36,7 +36,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     * generic conceptual connections
     * Of the 1.6 million assertions in its knowledge base, approximately
       1.25 million are dedicated to [k-lines]
-    * broadly characterise texts along ... topic and affect
+    * broadly characterise texts along topic and affect
     * understand novel or unknown concepts by employing
       structural analogies to situate them within what is already known
 
@@ -66,7 +66,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 * OMCS is [crowd sourced]
   * 14 000 Web contributors who logged in to enter sentences
   * fill-in-the-blank
-    e.g. ‘The effect of eating food is ...’; ‘A knife is used for ...’
+    e.g. ‘The effect of eating food is’; ‘A knife is used for’
   * 700 000 English sentences
 
 ## 2.2 Structured like WordNet, relationally rich like Cyc 4
@@ -80,7 +80,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 * twenty semantic relations including, for example, EffectOf (causality),
   SubeventOf (event hierarchy), CapableOf (agent’s ability), PropertyOf,
   LocationOf, and MotivationOf (affect)
-  * Some further intuition ... is given in the next section
+  * Some further intuition is given in the next section
   * coarse groupings of relations
   (e.g.  affect-relations versus temporal-relations versus spatial-relations)
 * informal, defeasible, and practically valued nature
@@ -92,23 +92,23 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 ## 2.3 ConceptNet as a context machine
 
 * Gelernter [8]
-  * human reasoning ... along a spectrum of mental focus
-    * high, logical and rational thinking happens
-    * medium or low focus, where ... gestalt perception, creative analogy,
-    * lowest focus, pure association
+  * human reasoning along a spectrum of mental focus
+    * high, logical and rational thinking
+    * medium or low focus: gestalt perception, creative analogy
+    * lowest focus: pure association
 * context-friendly reasoning methods such as
   spreading activation (Collins A and Loftus E 1975) and graph traversal
 * tasks
   * (spatial, affective, and temporal projections)
-    * given a ... series of everyday events,
-    [what is the likely location,] mood ... possible next events?
+    * given a series of everyday events,
+    [what is the likely location,] mood possible next events?
   * (contextual disambiguation)
     * given a search query (assuming the terms are commonsensical) where one
       of the terms can have multiple meanings, which meaning is most likely?
   * (analogy-making)
     * presented with a novel concept appearing in a story, which known
       concepts most closely resemble or approximate the novel concept?
-* generic connections between concepts ... best described as k-lines, which
+* generic connections between concepts best described as k-lines, which
   Minsky [2] implicates as a primary mechanism for context and memory
   * k-line knowledge increases the connectivity of the semantic network, and
     makes it more likely that concepts parsed out of a text document can be
@@ -131,7 +131,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
     to mine out knowledge into a semantic network
   * extract taxonomic, spatial, functional, causal, and emotional knowledge
   * spreading activation to improve information retrieval
-* OMCSNet ... semantic network with 280 000 edges and 80 000 nodes
+* OMCSNet semantic network with 280 000 edges and 80 000 nodes
   * three chief functions
     * FindPathsBetweenNodes(node1,node2), GetContext(node), and
       GetAnalogousConcepts(node)
@@ -142,7 +142,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 
 ## 3.2 ConceptNet 2.0 6
 
-* weighting ... each binary assertion based on
+* weighting each binary assertion based on
   * how many times it was uttered in the OMCS corpus, and on
   * how well it can be inferred indirectly from other facts in ConceptNet
 * assertions inferred
@@ -176,7 +176,7 @@ redundanciát elkerültem, de nem refaktoráltam a cikket
 
 ### 3.3.3 ‘Relaxation’ over the network
 
-1. duplicate assertions are merged and ... ‘frequency’ is added
+1. duplicate assertions are merged and ‘frequency’ is added
 2. heuristically ‘lift’ knowledge from the children nodes to the [IsA-]parent
 3. thematic and lexical generalisations are produced which
   * relate more specific knowledge to more general knowledge
@@ -202,8 +202,8 @@ IMPLIES
   relative amounts of knowledge falling under each relation-type
 * Table 1 concrete example of each relation-type
 * ConceptNet’s relational ontology was determined quite organically. The
-  * largely through ... users filling in the blanks of templates like
-    ‘a hammer is for ...’
+  * largely through users filling in the blanks of templates like
+    ‘a hammer is for’
   * Other portions of the OMCS corpus accepted freeform input, but
     * restricted [length] to encourage pithy phrasing and simple syntax
   * choice of relation-types reflect our original choice of templates in OMCS,
@@ -246,7 +246,7 @@ IMPLIES
 
 The GetContext() function is useful for
   * semantic query expansion and topic generation
-  e.g. Musa et al’s GloBuddy system ... a dynamic foreign-language phrase book
+  e.g. Musa et al’s GloBuddy system a dynamic foreign-language phrase book
   * querying the contextual intersection of multiple concepts. If we
     * topic gisting
     * extract all the concepts from a text document and take their intersection
@@ -297,7 +297,7 @@ The GetContext() function is useful for
   * What is and is not ‘common sense?’
   * How does one assess the goodness of knowledge that is defeasible
   * How much commonsense about a topic or concept constitutes completeness?
-* how is it improving the behaviour of the intelligent system ... Section 6
+* how is it improving the behaviour of the intelligent system Section 6
 * In this section, we attempt to characterise very broadly the
   * coverage by making some quantitative inquiries
   * goodness [by] human evaluations of OMCS and ConcepNet
@@ -315,7 +315,7 @@ The GetContext() function is useful for
     * there is much potential for improvement in this regard
 * connectivity of the semantic network by measuring [node degree], Fig 8
   * With the addition of k-line knowledge
-    * either ... k-lines are very well-connected among themselves, or
+    * either k-lines are very well-connected among themselves, or
       k-lines mainly facilitate the connectivity of nodes otherwise already
       connected. The truth is probably a mix of the two extremes
 

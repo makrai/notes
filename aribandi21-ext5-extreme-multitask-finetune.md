@@ -1,6 +1,6 @@
 EXT5: Towards extreme multi-task scaling for transfer learning
 V Aribandi, Y Tay, T Schuster, J Rao, H Steven Zheng, S Vaibhav Mehta,
-  H Zhuang, V Q. Tran, D Bahri, J Ni, J Gupta, K Hui, S Ruder, D Metzler
+  H Zhuang, VQ Tran, D Bahri, J Ni, J Gupta, K Hui, S Ruder, D Metzler
 ICLR 2022
 
 # ABSTRACT
@@ -8,12 +8,11 @@ ICLR 2022
 * recent success of multi-task learning and transfer learning for NLP,
 * few works have systematically studied the effect of
   scaling up the number of tasks during pre-training
-* we introduce EX MIX (Extreme Mixture): a massive collection of 107 supervised
-  NLP tasks across diverse domains and task-families
+* we introduce EX MIX (Extreme Mixture): a massive collection of
+  107 supervised NLP tasks across diverse domains and task-families
   * study the effect of multi-task pre-training at the largest scale to date,
   * analyze co-training transfer amongst common families of tasks
-* manually curating an ideal set of tasks for multi-task pre-training is not
-  straightforward
+* manually curating a set of tasks for multi-task pre-training is complicated
 * multi-task scaling can vastly improve models on its own
 * we propose EXT5: a model pre-trained using a multi-task objective of
   self-supervised span denoising and supervised EX MIX

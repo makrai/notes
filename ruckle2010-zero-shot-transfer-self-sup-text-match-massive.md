@@ -4,21 +4,25 @@ EMNLP-2020 arXiv:2010.00980 [cs.CL]
 
 # Abstract
 
-We study the zero-shot transfer capabilities of text matching models on a
-massive scale, by self-supervised training on 140 source domains from community
-question answering forums in English. We investigate the model performances on
-nine benchmarks of answer selection and question similarity tasks, and show that
-all 140 models transfer surprisingly well, where the large majority of models
-substantially outperforms common IR baselines. We also demonstrate that
-considering a broad selection of source domains is crucial for obtaining the
-best zero-shot transfer performances, which contrasts the standard procedure
-that merely relies on the largest and most similar domains. In addition, we
-extensively study how to best combine multiple source domains. We propose to
-incorporate self-supervised with supervised multi-task learning on all available
-source domains. Our best zero-shot transfer model considerably outperforms
-in-domain BERT and the previous state of the art on six benchmarks. Fine-tuning
-of our model with in-domain data results in additional large gains and achieves
-the new state of the art on all nine benchmarks
+* We study the zero-shot transfer capabilities of text matching models on a
+  massive scale, by
+  self-supervised training on 140 source domains from community question
+  answering forums in English
+* We investigate the model performances on nine benchmarks of answer selection
+  and question similarity tasks, and show that
+  all 140 models transfer surprisingly well, where
+  the large majority of models substantially outperforms common IR baselines.
+  * considering a broad selection of source domains is crucial for obtaining
+    the best zero-shot transfer performances, which
+    * contrasts the standard procedure that merely relies on the largest and
+      most similar domains. In
+* we extensively study how to best combine multiple source domains
+  * We propose to incorporate self-supervised with supervised multi-task
+    learning on all available source domains
+  * Our best zero-shot transfer model considerably outperforms in-domain BERT
+    and the previous SOTA on six benchmarks
+  * Fine-tuning of our model with in-domain data results in additional large
+    gains and achieves the new SOTA on all nine benchmarks
 
 # 1 Intro
 
@@ -46,15 +50,17 @@ the new state of the art on all nine benchmarks
 
 ## 3.3 Models and Training
 
-### Adapters. To reduce the storage requirements, and to efficiently distribute
-our models to the community, we train adapters (Houlsby+ 2019; Rebuffi+ 2017)
-instead of full fine-tuning for our 140 single-domain BERT models
-* Adapters share the parameters of a large pre-trained model— in our case BERT—and
-introduce a small number of task-specific parameters. With that, adapters
-* transform the intermediate representations in every BERT layer to the training
-  task while keeping the pre-trained model itself unchanged. We use the
-* recent architecture of Pfeiffer+ (2020a), which makes it possible to
-  investigate their adapter combination technique AdapterFusion in §5
+### Adapters
+
+* To reduce the storage requirements, and to efficiently distribute our models
+  to the community, we train adapters (Houlsby+ 2019; Rebuffi+ 2017) instead of
+  full fine-tuning for our 140 single-domain BERT models
+* Adapters share the parameters of a large pre-trained model— in our case BERT—
+  and introduce a small number of task-specific parameters
+* transform the intermediate representations in every BERT layer to the
+  training task while keeping the pre-trained model itself unchanged
+* recent architecture of Pfeiffer+ (2020a) 
+  * we investigate their adapter combination technique AdapterFusion in §5
   * J Pfeiffer, A Kamath, A Rücklé, K Cho, I Gurevych
     2020a arXiv preprint arXiv:2005.00247
     AdapterFusion: Non-destructive task composition for transfer learning

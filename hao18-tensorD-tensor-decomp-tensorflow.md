@@ -1,6 +1,6 @@
 TensorD: A tensor decomposition library in TensorFlow
-Neurocomputing Volume 318, 27 November 2018, Pages 196-200
 Liyang Hao, Siqi Liang, Jinmian Ye, Zenglin Xu
+Neurocomputing Volume 318, 27 November 2018, Pages 196-200
 
 https://github.com/Large-Scale-Tensor-Decomposition/tensorD
 

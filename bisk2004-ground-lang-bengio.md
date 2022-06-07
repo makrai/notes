@@ -219,7 +219,7 @@ arXiv:2004.10151 [cs.CL]
   * origins [of language] in our species (Tomasello, 2009; Barsalou, 2008)
 * what one says can change what people do
   * the ultimate goal for natural language generation
-* current, passive way generation is created and evaluated (Liu+ 2016), the
+* current, passive way of generation and its evaluation (Liu+ 2016)
   * change the world ... is the rich learning signal that
   * agent must participate in
     * negotiation (Lewis+ 2017; He+ 2018)

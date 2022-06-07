@@ -32,9 +32,10 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * Rosenberg & Tucker, 1978; Stone, Dunphy, Smith, & Ogilvie, 1966
   * adapted McClelland’s need-based coding schemes to any openended text
   * General Inquirer
-  * other programs like it (e.g., Hart’s, 1984, DICTION program; Martindale,
-    1990) have proven valuable in distinguishing mental disorders, assessing
-    personality dimensions, and evaluating speeches
+  * other programs like it
+    (e.g., Hart’s, 1984, DICTION program; Martindale, 1990) have proven
+    valuable in distinguishing mental disorders, assessing personality
+    dimensions, and evaluating speeches
 * the physician Walter Weintraub (1981, 1989)
   * pronouns and articles
   * first-person singular pronouns were linked to depression

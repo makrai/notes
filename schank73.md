@@ -1,13 +1,14 @@
 Prószéky bírálata:
 
-> Schank (1973) fogalmi hálójáról, amiben pedig megjelenik az a többi
-> szemantikus hálóra kevésbé emlékeztető mozzanat, hogy a fogalmi világ meg-
-> gondolásait előtérbe helyezve olykor nyelvészeti szempontból különböző elemek
-> kerülnek összevonásra és egységes kezelésre (így jön létre a csak Schank
-> elméletére jellemző 11 igeosztály). A 4lang-modellben is megjelenik a
-> különböző (szófaji) osztályok összevonása, csak itt egyes nyelvi elemek
-> helyett a fogalmi hierarchia egy-egy magasabb csomópontja jelenik meg, vagy
-> például a szófajokra jellemző szintaktikai különbségek eliminálásra kerülnek
+> Schank (1973) fogalmi hálójáról, amiben ... megjelenik az a többi szemantikus
+> hálóra kevésbé emlékeztető mozzanat, hogy
+> a fogalmi világ meggondolásait előtérbe helyezve olykor nyelvészeti
+> szempontból különböző elemek kerülnek összevonásra és egységes kezelésre (így
+> jön létre a csak Schank elméletére jellemző 11 igeosztály)
+> A 4lang-modellben is megjelenik a különböző (szófaji) osztályok összevonása,
+> csak itt egyes nyelvi elemek helyett a fogalmi hierarchia egy-egy magasabb
+> csomópontja jelenik meg, vagy például a szófajokra jellemző szintaktikai
+> különbségek eliminálásra kerülnek
 
 * A Findler-kötetben idézve
   * Schank (el al) 1973
@@ -15,10 +16,10 @@ Prószéky bírálata:
   [Schank, R. C , 1973]. Identification of conceptualizations underlying natural lang
   [Schank, R. C , 1973]. The Fourteen Primitive Actions and Their Inferences
   * Schanktól cikk (nem könyv)
-  2x [Schank, R. C , 1973]. The conceptual analysis of natural language. In Natural
+  2x [Schank, R. C , 1973]. The conceptual analysis of natural language
   2x [Schank, R. C , 1973]. Identification of conceptualizations underlying natural lang
-  4x [Schank, R. C , 1975]. The structure of episodes in memory. In Representation and ­
-  1x [Schank, R., 1975]. Using knowledge to understand. In Theoretical Issues in Natural
+  4x [Schank, R. C , 1975]. The structure of episodes in memory
+  1x [Schank, R., 1975]. Using knowledge to understand
   * What is a frame anyway?
 
 Inference and the computer understanding of natural language
@@ -123,9 +124,9 @@ Roger C. Schank and Charles J. Rieger 111
 * tense: modifications of the ... link
 * ACT _hurt_: action unstated, only effect known
 * set of only fourteen primitive actions
-* any given verb is mapped into a conceptual construction that may use one or
-  more of the primitive ACTs in certain specified relationships plus other
-  object and states
+* any given verb is mapped into a conceptual construction 
+  * construction may use one or more of the primitive ACTs in certain specified
+    relationships plus other object and states
 * task of the primitives to conjoin similar information so that inference rules
   need not be written for every individual surface verb but for the ACTs
 

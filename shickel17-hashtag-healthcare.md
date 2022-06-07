@@ -7,27 +7,28 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 * mining social media, less attention has been paid to analyzing users'
   internalized thoughts and emotions from a mental health perspective
 * we quantify the semantic difference between public Tweets and
-  private mental health journals used in online cognitive behavioral therapy. We
+  private mental health journals used in online cognitive behavioral therapy
   * deep transfer learning techniques for analyzing the semantic gap
-  * for the task of emotional valence prediction, social media can be
-    successfully harnessed to create more accurate, robust, and personalized
-    mental health models
+  * social media for the task of emotional valence prediction
+    * more accurate, robust, and personalized mental health models
 * the semantic gap between public and private self-expression is small
-  * utilizing the abundance of available social media is one way to overcome the
-    small sample sizes of mental health data, which are commonly limited by
-    availability and privacy concerns
+  * utilizing the abundance of available social media is
+    one way to overcome the small sample sizes of mental health data, which are
+    commonly limited by availability and privacy concerns
 
 # 1 Intro
 
 * We refer to
-  * well-known research area as external sentiment analysis: sentiment and
-    textual polarity is calculated with respect to a specific external entity
-  * internal sentiment analysis as the study of the polarity of user text with
-    respect to themselves, primarily concerned with statements of emotion and
-    mental health
+  * external sentiment analysis
+    * well-known research area 
+    * sentiment and textual polarity is calculated with respect to a specific
+      external entity
+  * internal sentiment analysis 
+    * the study of the polarity of user text with respect to themselves
+    * primarily concerned with statements of emotion and mental health
     6. Shickel, B.+
       Self-Reflective Sentiment Analysis
-      Third Workshop on Computational Ling and Clinical Psychology, 23–32 (2016)
+      Third Workshop on Computational Ling and Clinical Psychology 23–32 (2016)
 * we deal strictly with internal sentiment analysis, specifically with the
   valence prediction of private journals in a mental health therapy setting
   * partly aligns with emotion detection in text 7–12
@@ -36,29 +37,28 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
   * patient education components inherent in cognitive behavioral therapy (CBT)
     * Practice identifying and changing unhelpful thought patterns or cognitive
       distortions is a central part of CBT
-  * practice with feedback can increase patients’ ability to accurately identify
-    more helpful and less helpful thoughts, but up until now, ongoing feedback
+  * practice with feedback can increase patients’ ability to accurately
+    identify more helpful and less helpful thoughts
   * users typically submit several directed journals
-    * documenting their daily thoughts and feelings as they improve their mental
+    * documenting their daily thoughts and feelings
     * system for automatically categorizing user text has obvious benefits
-      * early warning for suicide risk, providing a positive and
-        always-available feedback for patients with distorted thinking, or
-        simply providing enhanced and more fine-grained analysis of
-        overall patient well-being
+    * early warning for suicide risk, providing a
+      positive and always-available feedback for patients with distorted think,
+      enhanced and more fine-grained analysis of overall patient well-being
 * Traditional sentiment analysis involves detecting
   * whether a given text fragment is subjective or objective, and
-  * in the case of subjectivity, classifies the text as either positive/negative
+  * in the case of subjectivity, classifies the text as positive/negative
 * for mental health polarity
   * besides positivity and negativity, we introduce two additional classes:
     both positive and negative, and neither positive nor negative
   * psychological research suggests emotions cannot be represented on a single
     axis of valence 24–28
-  * text classified as neutral using traditional frameworks would, using our new
-    annotation scheme, fall into either of the two augmented classes
-* few publicly-available mental health datasets suitable for ML-based internal
-  sentiment analysis
-  * traditional sentiment analysis in the context of social media platforms such
-    as Twitter 29–34
+  * text classified as neutral using traditional frameworks would, using our
+    new annotation scheme, fall into either of the two augmented classes
+* few publicly-available mental health datasets
+  suitable for ML-based internal sentiment analysis
+  * traditional sentiment analysis in the context of social media platforms
+    eg Twitter 29–34
   * we hypothesize that the social media domain is quite similar to the mental
     health domain with regards to textual language modeling and classification,
     and can be used to help train mental health models and systems
@@ -66,9 +66,9 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
   * training models on one domain (i.e. social media text)
   * fine-tuning them on another target domain (i.e.  mental health text)
   * in the context of deep learning
-* We train deep learning models on a large dataset of annotated text from the
-  social media platform Twitter, and transfer the underlying language model and
-  learned representation to the task of predicting the
+* We train deep learning models on a large dataset of annotated text from
+  Twitter, and transfer the underlying language model and learned
+  representation to the task of predicting the
   * valence of mental health journal text
   * objective change in mental health
     as gauged by evidence-based mental health measures
@@ -118,8 +118,11 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 * patients might be skeptical of the accuracy of therapist feedback or reactive
   to the fact that a healthcare provider is providing feedback
   * might place their trust in the more objective feedback from the ML tool
-  * ostensibly objective personality assessment feedback is widely accepted,
+  * apparently objective personality assessment feedback is widely accepted,
     especially if it is worded somewhat positively and somewhat generally
-    36. Snyder, C. R., Shenkel, R. J. & Lowery, C. R
-    Acceptance of Personality Interpretations: The ”Barnum Effect” and Beyond
-    J. consulting clinical psychology 45, 104–114 (1977)
+    36. Snyder, C R, Shenkel, R J, & Lowery, C R
+      Acceptance of Personality Interpretations: The ”Barnum Effect” and Beyond
+      J. consulting clinical psychology 45, 104–114 (1977)
+    * Barnum effect: the tendency to accept as true types of information such
+      as character assessments or horoscopes, even when the information is so
+      vague as to be worthless
