@@ -10,7 +10,7 @@ https://github.com/jlibovicky/assess-multilingual-bert
   such as multilingual BERT (mBERT) and XLM-RoBERTa
   * Previous work probed the cross-linguality of the representations indirectly
     using zero-shot transfer learning on morphological and syntactic tasks
-* We focus on the language-neutrality of mBERT with respect to lexical semantics
+* We focus on the language-neutrality of mBERT with respect to lex semantics
   * contextual embeddings are more language-neutral and informative
     than aligned static word-type embeddings
     which are explicitly trained for language neutrality
@@ -171,9 +171,9 @@ and of the MT output reflects the translation quality
 
 ## XLM-RoBERTa
 
-* original mBERT is under-trained (Conneau+ 2019) and train a similar model on
-  a larger dataset that consists of two terabytes of plain text extracted from
-  CommonCrawl (Wenzek+ 2019). Unlike mBERT, XLM-R uses a
+* original mBERT is under-trained (Conneau+ 2019)
+* a similar model on a larger dataset that consists of two terabytes of text
+  extracted from CommonCrawl (Wenzek+ 2019)
 * SentencePiece-based vocabulary (Kudo and Richardson, 2018) of 250k tokens,
 * MLM objective, only without the sentence adjacency prediction
 
@@ -204,8 +204,8 @@ and of the MT output reflects the translation quality
 * Table 2 confirms thathe hierarchical clustering of the language centroids
   mostly corresponds to the language families
 
-* XLM-R not only has a slightly worse performance in language ID, but also has
-  worse performance in capturing language similarity.
+* XLM-R not only has a slightly worse performance
+  in both language ID and capturing language similarity
   * We hypothesize that next-sentence prediction [in] mBERT leads lang-spec
   * lang is helpful in determining if two sentences are adjacent
 
@@ -216,13 +216,13 @@ and of the MT output reflects the translation quality
 * accuracy is
   * usually higher for mean-pooled states than for the [cls] embedding and
     varies among the languages too (see Table 4)
-  * varies according to the layer of mBERT used (see Figure 3).  The
-    best-performing is the 8th layer [out of 12], both for mBERT and XLM-R
+  * varies according to the layer of mBERT used (see Figure 3)
+    * best-performing is the 8th layer [out of 12], both for mBERT and XLM-R
   * consistent both among models and among tasks
-* XLM-R significantly outperforms all models.  The
+* XLM-R significantly outperforms all models
 * UDify model that was finetuned for syntax seems to significantly lose sem
 * Adversarial finetuning did not improve the performance
-* Representation centering drastically improves accuracy.
+* Representation centering drastically improves accuracy
 * An additional 50% error reduction is achievable via learning a projection on
 
 ## Word Alignment.  Table 5 shows that WA based on mBERT and XLM-R
@@ -230,7 +230,7 @@ and of the MT output reflects the translation quality
 * distortion penalty does
   not seem to influence the alignment quality when using the contextual embeds,
   whereas for the static word embeddings, it can make a difference of 3–6 F 1
-  * ie. contextual embeddings encode relative word positon across languages.
+  * ie. contextual embeddings encode relative word positon across languages
 * However, the main advantage [of contextual embeddings]:
   allows accurate alignment of function words
 

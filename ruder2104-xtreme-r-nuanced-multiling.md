@@ -32,13 +32,13 @@ data, translations, evaluation resources, and interactive leaderboard
     * Pengcheng He, Xiaodong Liu, Jianfeng Gao, and Weizhu Chen. 2021
       DeBERTa: Decoding-enhanced BERT with Disentangled Attention
       ICLR 2021
-* progress has not been uniform, but
+* progress has not been uniform
   * concentrated on cross-lingual retrieval tasks where fine-tuning on other
     tasks and pre-training with parallel data lead to large gains
   * still generally perform poorly on languages with limited data and non-Latin
   * Fine-tuning on additional translated data generally leads to the best
     performance
-* XTREME-R (XTREME-Revisited), a new benchmark with the a purpose
+* XTREME-R (XTREME-Revisited), a new benchmark 
   * 50 typologically diverse languages and 10 challenging, diverse tasks
   * new tasks that focus on “language-agnostic” retrieval (Roy+ 2020),
     * targets must be retrieved from a large multilingual candidate pool
@@ -55,13 +55,13 @@ data, translations, evaluation resources, and interactive leaderboard
   * we: extensible multilingual diagnostic and evaluation suite
   * two main components
     * MultiCheckList, a test suite (Ribeiro+ 2020) for probing QA in 50 langs
-      * direct evaluation of finegrained capabilities in a massively multiling
+      * direct evaluation of finegrained capabilities, massively multiling
     * We extend the multi-dataset evaluation framework ExplainaBoard (Fu+ 2020;
       Liu+ 2021) to additional tasks and the multilingual setting
       * break down performance based on language and task-specific attributes,
-* leaderboard: logistic improvements to improve XTREME-R ’s utility
-  * each submission is required to provide metadata such as the
-    number of parameters and amount of pre-training data
+* leaderboard: logistic improvements to improve XTREME-R’s utility
+  * each submission is required to provide metadata
+    eg number of parameters and amount of pre-training data
   * task and language-specific sub-leaderboards to invite dedicated submissions
 * contributions:
   * an analysis of progress in cross-lingual modeling;
@@ -99,13 +99,13 @@ data, translations, evaluation resources, and interactive leaderboard
     * extend BERT (Devlin+ 2019), RoBERTa (Liu+ 2019), and T5 respectively
   * Rebalanced mBERT (Rem-BERT; Chung+ 2021)
     * a more efficient, scaled-up reparameterization of mBERT.  These models
-  * pre-trained on unlabeled data in around 100 languages from Wikipedia (mBERT)
-    and CommonCrawl
-* XLM-R was the strongest baseline in XTREME (Hu+ 2020) and is the foundation
-  * fine-tuned on English data of a related task prior to task-specific
-    fine-tuning (STILTs; Phang+ 2020)
-  * The following models furthermore propose new methods to leverage parallel
-    data during pretraining or fine-tuning
+  * pre-trained on unlabeled data in around 100 languages from Wikipedia
+    (mBERT) and CommonCrawl
+* XLM-R was the strongest baseline in XTREME (Hu+ 2020)
+  * fine-tuned on English data of a related task prior to
+    task-specific fine-tuning (STILTs; Phang+ 2020)
+  * The following models furthermore propose new methods
+    to leverage parallel data during pretraining or fine-tuning
     * FILTER (Fang+ 2020), based on XLM-R, fuses representations in diff langs
     * VECO (Luo+ 2020) is a 24-layer encoder-decoder model
       * uses additional MLM variants during pre-training
@@ -136,7 +136,7 @@ data, translations, evaluation resources, and interactive leaderboard
 * models fine-tuned on in-language monolingual data often perform more similarly
   across languages (Clark+ 2020; Hu+ 2020)
 
-* standard token-level MLM pre-training produces representations are of limited
+* standard token-level MLM pre-training produces representations of limited
   use for cross-lingual sentence retrieval, as evidenced by the
   * comparatively poor performance of the mBERT and XLM-R models
 * Fine-tuning on sentence-level tasks (Phang+ 2020; Fang+ 2020) can mitigate
