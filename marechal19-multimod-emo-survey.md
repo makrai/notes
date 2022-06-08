@@ -6,7 +6,7 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
 
 * analyze emotion in text, sound, image, video and physiological signals
 * most important features for all available emotion recognition modes
-* available platform and the existing projects, which deal with multimodal emo
+* available platform and the existing projects
 
 # 1 Intro
 
@@ -30,15 +30,18 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
   * an on-board computer that is able to detect confusion, interest or fatigue
     can increase safety
   * AutoEmotive (MIT Media Lab) is a prototype equipped with sensors and a
-    camera placed on the steering wheel [5]. This vehicle measures the level of
+    camera placed on the steering wheel [5]
   * When the need arises, he puts a background music, changes the temperature
     and light in the vehicle interior, or still proposes to follow a less
     stressful journey
 
-# 2 existing works in emotion detection and multimodal emotion analysis
+# 2 existing works in emotion detection and multimodal emotion analysis 4
 
-# 3 the basic modalities and methods used for emotion analysis
+# 3 the basic modalities and methods used for emotion analysis 5
 
-# 4 projects
+# 4 projects 14
 
-# 5 summary and directions for future research
+# 5 summary and directions for future research 15
+
+* requirements on automatic emotion recognition:
+  portability, non-intrusiveness, and low price

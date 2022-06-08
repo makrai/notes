@@ -8,7 +8,7 @@ setup instructions, evaluation pipelines & examples, is freely available online
   * often leverage deep neural networks (DNNs)
   * Comparison difficult <~ different datasets and evaluation protocols
 * we present the Speech Emotion Recognition Adaptation Benchmark (SERAB), a
-  * for utterance-level SER The benchmark is composed of
+  * for utterance-level SER
   * nine datasets for SER in six languages
   * the datasets have different sizes and numbers of emotional classes, the
 * We evaluate a selection of standard hand-crafted feature sets and SOTA DNNs

@@ -26,7 +26,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   * multidisciplinary: linguistics, computer science, medicine, and psychology
     to use social media to automatically determine the mental state [19, 30]
     * [19] SC Guntuku, DB Yaden, ML Kern, LH Ungar, and JC Eichstaedt
-      Detecting depression and mental illness on social media: integrativ review
+      Detecting depression and mental illness on social media: integrat review
       Current Opinion in Behavioral Sciences 18 (2017), 43–49
     * [30] Michelle Morales, Stefan Scherer, and Rivka Levitan.
       A cross-modal review of indicators for depression detection systems
@@ -35,7 +35,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   * social media to model public mood as it relates to major public events
     * Changes correlated with major political events, natural disasters,
       cultural phenomenon, and in the prediction of stock prices [8, 35]
-  * clinical approach by using social media and machine learning techniques to
+  * clinical approach: using social media and machine learning techniques to
     classify abnormal psychological states (depression, anxiety, PTSD, etc.) in
     populations [7, 16]
   * Our research exploits both techniques
@@ -43,10 +43,10 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 * Automatic detection of non-clinical depressive states (known here as
   psychological distress status) in social media political-related contents
   (tweets)
-  * difficult task: no clear posts in which users explicitly share their mental
-    health problems, medical diagnosis or depressive thoughts
-* we train a supervised learning model on labelled distress tweets and use it as
-  a baseline to train Brexit tweets to detect the non-clinical psycho status
+  * difficult task: no clear posts in which users explicitly share their
+    mental health problems, medical diagnosis or depressive thoughts
+* we train a supervised learning model on labelled distress tweets and use it
+  as a baseline to train Brexit tweets to detect the non-clinical psycho status
   * we introduce a Brexit Distress Index that may serve to characterise levels
     of psychological distress in populations in Brexit related tweets
 
@@ -115,11 +115,12 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   * may be well-suited to this problem [1, 4, 15]
 * This research extended upon the work from [16] and [12–14]
   * signals of psychological distress for tweets related to a specific hashtag
-  * the distress and Brexit datasets were too dissimilar -> a domain adaptation
-    technique was utilised to minimise these differences
+  * the distress and Brexit datasets were too dissimilar
+    -> a domain adaptation technique was utilised to minimise these differences
 * trends compared favourably to major Brexit headlines
   * Other sentiment analysis techniques show spikes in activity related to
     major political, cultural, economic, and natural events [8, 22, 23, 31]
   * time lag between the date of event and the change in public sentiment
-* some residents expressed fear and sadness related to leaving the EU and
-  * others expressed anger that it has taken so long for the government to cmpl
+* some/other residents expressed  
+  * fear and sadness related to leaving the EU
+  * anger that it has taken so long for the government to compl

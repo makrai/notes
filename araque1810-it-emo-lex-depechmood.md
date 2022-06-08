@@ -1,11 +1,11 @@
-DepecheMood++: a Bilingual Emotion Lexicon Built Through Simple Yet Powerful Techniques
+DepecheMood++: a Biling Emotion Lexicon Built Through Simple Yet Powerful Techs
 Oscar Araque, Lorenzo Gatti, Jacopo Staiano, Marco Guerini
 arXiv:1810.03660 [cs.CL]
 
 * we contribute
   * two new resources to the community:
     * an extension of an existing and widely used emotion lexicon for English;
-    * a novel version of the lexicon targeting Italian. Furthermore,
+    * a novel version of the lexicon targeting Italian
   * we show how simple techniques can be used, both in supervised and unsup
     * on datasets and tasks of varying degree of domain-specificity
 

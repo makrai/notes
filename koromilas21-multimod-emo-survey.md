@@ -23,8 +23,8 @@ Appl. Sci. 2021, 11,
 
 * traditional approaches in early multimodal fusion works related to SER
   * Early fusion: concatenating multimodal features mostly at the input level
-    [1,8,9], ie, by simply concatenating feature vectors from different
-    * not allow the intra-modality dynamics to be efficiently modeled. This is
+    [1,8,9], ie, by simply concatenating feature vectors from different modalts
+    * not allow the intra-modality dynamics to be efficiently modeled
     * inter-modality dynamics can be more complex at the input level and can
       dominate the learning process or result in overfitting
   * Late fusion: unimodal classifiers independently and
@@ -35,35 +35,34 @@ Appl. Sci. 2021, 11,
 * more complex techniques for combining multimodal and temporal information in
   the emotion recognition application domain
 
-# 2 feature representation techniques per modality 2
+# 2 Feature representation techniques per modality 2
 
 ## 2.1. Audio
 
 * in the deep learning era
-  * some methodologies function directly on the raw audio signal. 
+  * some methodologies function directly on the raw audio signal
   * in most cases, hand-crafted features extracted from the time and freq doms
 
 ### 2.1.1. Feature Calculation
 
 1. Prosodic features
-  * long term features 
+  * long term features
   * easily preserved and explained by humans. Typical such features are
   * mostly based on energy, duration, and fundamental frequency
-  * eg rhythm and intonation.
-2. Time-domain features: Such features are
-  * directly extracted from the samples of the audio signal. Typical examples
-  * eg short-term energy, zero crossing rate and entropy of energy. Such
-  * not strongly correlated to affective content in speech signals; however,
+  * eg rhythm and intonation
+2. Time-domain features
+  * directly extracted from the samples of the audio signal
+  * eg short-term energy, zero crossing rate and entropy of energy
+  * not strongly correlated to affective content in speech signals
   * nL they can carry information related to the strength of the emo (arousal)
 3.  Spectral features:
-  * calculated in the frequency domain and are
+  * calculated in the frequency domain
   * widely used since characteristics of the vocal tract are well repred [12]
-  * usually extracted from overlapping speech short-term frames of length 20 to
-    50 ms that are applied through a windowing operation on the audio signal.
-    For each short-term frame, the discrete Fourier transform (DFT) is computed
-    to provide a representation of the distribution of the frequency content.
+  * usually extracted from overlapping short-term speech frames of length 20 to
+    50 ms that are applied through a windowing operation on the audio signal
+    * For each short-term frame, discrete Fourier transform (DFT): freq distri
   * Features such as the spectral centroid, spectral flux, spectral rolloff and
-    spectral entropy 
+    spectral entropy
     * widely used in traditional audio and music classification tasks and in
       some speech emotion recognition methods that use hand-crafted audio
       features [13]
@@ -71,59 +70,58 @@ Appl. Sci. 2021, 11,
     * the result of computing the inverse Fourier transform of the logarithm of
       the estimated signal spectrum
   * Taking the cepstral coefficients of signal transformations eg those below
-    * efficient and robust features.
-    * Mel-Frequency Cepstral Coefficients (MFCC): These coefficients
-      * represent the short term power spectrum of the speech signal and
-      * the most widely used spectral features for emotion recognition [14].
+    * efficient and robust features
+    * Mel-Frequency Cepstral Coefficients (MFCC)
+      * represent the short term power spectrum of the speech signal
+      * the most widely used spectral features for emotion recognition [14]
       * Before calculating the cepstral coefficients, the signal is transformed
-        using a Mel-filter bank on a number of sub-band energies [15].
-    * Linear Prediction Cepstral Coefficients (LPCC): These are
+        using a Mel-filter bank on a number of sub-band energies [15]
+    * Linear Prediction Cepstral Coefficients (LPCC)
       * task-specific coefficients that, in some cases, capture the emotional
         information expressed through vocal tract characteristics
       * derived from linear prediction (LP) analysis,
         which uses the energy values of linearly arranged filter banks to
         capture the contribution of all frequency components of a speech
         signal
-      * hE they need a processing technique to avoid additive noise error [16].
-    * Gammatone Frequency Cepstral Coefficients (GFCC): This is a method that
+      * hE they need a processing technique to avoid additive noise error [16]
+    * Gammatone Frequency Cepstral Coefficients (GFCC)
       * close to the MFCC procedure
       * instead of the Mel-filter bank, it uses the Gammatone filter-bank on a
-        range of sub-band energies [17].
-4. Voice quality features: The voice quality features define
+        range of sub-band energies [17]
+4. Voice quality features
   * the qualities of the glottal source by producing
     features such as noise ratio (HNR), shimmer and jitter. These are
   * extremely useful since according to [18], the emotional content and voice
-    quality of speech are correlated.
+    quality of speech are correlated
 5. Teager Energy Operator-based features
   * introduced in Teager& 1990; Kaiser 1993
   * under stressful conditions, there is a change in fundamental frequency and
-    critical bands of the hearing process due to the distribution of harmonics.
-    The operator created by Teager& (1990) was adopted in Kaiser 1993, in order
-    to quantify the energy from speech by using a nonlinear process.
+    critical bands of the hearing process due to the distribution of harmonics
+  * The operator created by Teager& (1990) was adopted in Kaiser 1993, in order
+    to quantify the energy from speech by using a nonlinear process
   * TEO-decomposed frequency modulation variation, normalized TEO auto-
-    correlation and critical band-based TEO auto-correlation are three basic
+    correlation and critical band-based TEO auto-correlation
   * open-source robust and efficient libraries can extract them, eg [22–25]
 
 ### 2.1.2. Audio Representation Learning
 
 * deep audio features can be learnt through CNNs
   * Convolutional neural networks (CNNs) “learn” image features, supervised
-  * given a way to map audio signals into 2D representations (images), 
-  * The most straightforward approach to achieve this is through spectrograms.
+  * given a way to map audio signals into 2D representations (images),
+  * The most straightforward approach to achieve this is through spectrograms
     * [26–28] use spectrograms as image inputs to CNNs in order to train
       classifiers for emotion recognition, and
     * since then, this approach of combining spectrograms (or melgrams) with
-      CNNs has been widely adopted for speech emotion recognition tasks.
-* audio representations from the initial waveform 
-  * SincNet [29], a network that replaces the one-dimensional convolution
-    kernels with sinc filter functions on the audio signal, is a supervised
-    learning technique in such a direction. On the other hand,
+      CNNs has been widely adopted for speech emotion recognition tasks
+* audio representations from the initial waveform
+  * SincNet [29], a network that  
+    replaces the one-dimensional convolution kernels with sinc filter functions
+    on the audio signal, is a supervised learning technique
   * unsupervised methods for speech representation learning from audio are
-    rapidly evolving and produce efficient
-    architectures such as
-    wav2vec [30], wav2vec 2.0 [31] and HuBERT (Hidden-Unit BERT) [32], which is
-    * HuBERT is the currently SOTA architecture for such representations.
-    
+    rapidly evolving and produce efficient architectures such as
+    wav2vec [30], wav2vec 2.0 [31] and HuBERT (Hidden-Unit BERT) [32]
+    * HuBERT is the currently SOTA architecture for such representations
+
 ## 2.2. Text
 
 * word-vectors produced by neural networks
@@ -135,18 +133,18 @@ Appl. Sci. 2021, 11,
   * BERT (bidirectional encoder representations from transformers) [41];
   * ALBERT (a lite BERT) [42], etc
 * in order to be easily compared to the baseline models, most architectures of
-  multimodal emotion recognition are adopting the GloVe embeddings.
+  multimodal emotion recognition are adopting the GloVe embeddings
 
 ## 2.3. Visual
 
 * theoretically body language plays a significant part in expressing emotions,
-* hE most of the datasets in multimodal emotion recognition capture faces.
+* hE most of the datasets in multimodal emotion recognition capture faces
 * six face characteristics are correlated to emotional state [43]
   * morphology, symmetry, duration, speed of onset and the coordination of
-    apexes and ballistic trajectory, 
+    apexes and ballistic trajectory,
 * [44]: there are three main dimensions of facial variation
   * morphology, complexion and dynamics
-  * dynamics being the most important for emotion recognition [45].
+  * dynamics being the most important for emotion recognition [45]
 * [46]: Facial Action Coding System (FACS) for objectively measuring facial mov
   * implementation introduced by [47], became
     the standard for face movement recognition
@@ -154,12 +152,12 @@ Appl. Sci. 2021, 11,
     the fundamental actions of either specific muscles or groups of muscles and
     * combined in several sets and identified by a sequence of numbers
       containing codes about head movement, eye movement, visibility, gross
-      behavior and overall codes.
+      behavior and overall codes
 * tools for automatic facial recognition
   * eg IntraFace [48] and FACET [49],
   * implement FACS and give automated facial feature tracking, head pose
     estimation, facial attribute recognition and facial expression analysis
-    from video.
+    from video
 
 # 3 related works, a hierarchical categorization 4
 
@@ -171,16 +169,16 @@ Appl. Sci. 2021, 11,
 
 * ie simplify the modeling of the temporal dimension in both unimodal and
   multimodal interactions, by assuming simple statistical representations;
-* neither modality-specific temporal interactions nor cross-modality temporal interactions.  
+* neither modality-specific temporal interactions nor cross-modality temporal interactions
 * early fusion. One of the basic fusion ideas is applied on the task of
   * called deep fusion (DF)
-  * persuasiveness prediction [50] 
+  * persuasiveness prediction [50]
   * evaluated on multimodal SER in a variety of latter works. In this
   * represent the unimodal spaces with static vectors and train a
   * feed-forward neural network for each modality
   * confidences c and the complementary confidences 1 − c of each modality are
-    passed through a deep neural network to perform the final inference.
-* [51] tries to introduce the temporal dimension, late fusion 
+    passed through a deep neural network to perform the final inference
+* [51] tries to introduce the temporal dimension, late fusion
   * combine information from neighboring utterances,
     in order to capture the context of the session, they do
     not consider the temporal interactions between segments of the same
@@ -198,7 +196,7 @@ Appl. Sci. 2021, 11,
   * concatenates each unimodal representation with the unit vector and then
     computes the outer product among each modality. The tensor fusion layer
     (ie, outer product) explicitly captures the unimodal, bimodal and trimodal
-    interactions using a three-fold Cartesian product from modality embeddings.
+    interactions using a three-fold Cartesian product from modality embeddings
     The final representation is passed through an inference subnetwork which
     performs inference of the target value. Despite the representation power of
   * problem of exponential dimensional growth is a drawback for rhis
@@ -225,19 +223,19 @@ Appl. Sci. 2021, 11,
     states of all text sequence elements. The representations of the selected
     “emotional” words are concatenated with the original audio vector to form
     the multimodal representation
-  * hE, the performance is not improved by the use of the attention layer.
+  * hE, the performance is not improved by the use of the attention layer
 * The same authors extend their work [54], the multi-hop attention (MHA)
-  * three steps: 
+  * three steps:
   * MHA-1: predict the emotion based on the audio bidirectional-LSTM (BiLSTM)
     and query the output state (ie, the representation of the audio) to the
     text BiLSTM in order to obtain a text representation H 1 that is associated
-    with this very sound; 
+    with this very sound;
   * MHA-2: query H 1 to the audio BiLSTM in order to obtain the audio segments
-    that are related to the selected words and represent them with H 2 ; and 
+    that are related to the selected words and represent them with H 2 ; and
   * MHA-3: query H 2 to the text BiLSTM for cross-check and obtain the overall
-    representation H 3 
+    representation H 3
     * hE the third attention step results in a worse performance compared to
-      that achieved by MHA-2.
+      that achieved by MHA-2
 * A mix of traditional fusion techniques seems to be effective when combined
   with strong segment feature representations, as shown in [55]. More
   * apply SOTA techniques for unimodal representations with the use of
@@ -250,7 +248,7 @@ Appl. Sci. 2021, 11,
   * The resulting multimodal representations are
     * firstly early-fused and passed through a prediction (bi-modal) network
     * and subsequently late-fused using an ensemble classifier on the speech
-      prediction, text prediction and bimodal prediction networks.
+      prediction, text prediction and bimodal prediction networks
 * Designing a network that learns modality representations,
   instead of using existing modality embedding libraries, may result in more
   * [9], in order to learn representations from
@@ -269,10 +267,10 @@ Appl. Sci. 2021, 11,
   * efficiently combine different feature extraction methods of the same
     modality
   * [56] use two different, and widely used in text analysis, feature
-    extraction techniques: 
+    extraction techniques:
     * applying three Conv1D networks, with filter size 1, 2 and 3,
       respectively, on the text embedding sequence in order to extract a
-      variety of n-word representations, and 
+      variety of n-word representations, and
     * using a Bi-RNN on the input embeddings and then apply method (a) to the
       output
     * attention is applied along the two methods so as to get the best possible
@@ -280,20 +278,20 @@ Appl. Sci. 2021, 11,
     * for the audio modality, a SincNet, a neural architecture that tends to
       replace CNNs in audio feature extraction [29], is used
     * Before concatenating the feature vectors, self-attention is calculated on
-      the unimodal sequences in order to identify informative segments.  
+      the unimodal sequences in order to identify informative segments
 * a range of different ideas that deliver promising results. The first one is
   * [57]: the authors break down the emotion recognition problem to three
     sub-tasks in order to extract direct and relative predictions
     * they concatenate the different feature representations and separate
-      emotion recognition to the following tasks: 
+      emotion recognition to the following tasks:
     1. multimodal local ranking task, the model is presented with two
       short segments randomly selected within a video and is tasked with
       determining whether there was an increase or decrease in emotional
-      intensity. In this way, a binary classification task is created. 
+      intensity. In this way, a binary classification task is created
     2. global ranking task, which uses the previous results of local rankings
-       to infer global emotion ranks using a Bayesian skill rating algorithm.  
+       to infer global emotion ranks using a Bayesian skill rating algorithm
     3. direct-relative fusion. The global emotion ranks are incorporated with
-       the raw multimodal inputs to estimate final emotion intensities.
+       the raw multimodal inputs to estimate final emotion intensities
 
 * multimodal representation learning, [58] is one of the crucial works
   * not concentrate on finding an efficient way to fuse information. The
@@ -309,15 +307,15 @@ Appl. Sci. 2021, 11,
     needed during the inference time to construct both the joint representation
     and the label
   * more robust to noisy unimodal inputs
-* All aforementioned works 
-  * efficiently modeling unimodal temporal dynamics.  
+* All aforementioned works
+  * efficiently modeling unimodal temporal dynamics
   * no cross-modal learning or fusion on the temporal level, since the cross-
     modal interaction is performed on the final representations instead of the
-    sequence level.
+    sequence level
 * The MCTN [58] achieves modeling both temporal cross-modal learning and
   unimodal temporal dynamics but only for two modalities. When needing the
   third modality, there is no cross-modal temporal interactions for this
-  specific input sequence.
+  specific input sequence
 * In the pseudo-temporal architectures (PTA), modeling unimodal temporal
 representations (UTA) is more common
 * nL there are architectures that prefer to model crossmodal temporal
@@ -330,7 +328,7 @@ representations (UTA) is more common
       jointly learns unimodal generative factors that can be used to
       reconstruct missing or noisy information during testing time.  To achieve
     * an encoder for each modality (audio, text, video) and their fusion (audio
-      + text + video), which creates the generative and discriminative factors.
+      + text + video), which creates the generative and discriminative factors
     * The corresponding decoders of the generative factors serve to
       approximate the input modalities, while
       the decoder of the discriminative factor is used for inference
@@ -338,25 +336,25 @@ representations (UTA) is more common
       LSTMs serve as decoders
     * competitive performance on six multimodal time series datasets, a big
     * reconstruction of missing modalities from observed modalities does not
-      significantly impact discriminative performance.
+      significantly impact discriminative performance
 
 ## 3.4 temporal architectures
 
-* ie try to capture both unimodal and cross-modal temporal dependencies 
+* ie try to capture both unimodal and cross-modal temporal dependencies
 
 # 4 evaluation results in the most widely adopted datasets for emotion recog 12
 
 ## 4.1. Datasets
 
-* four categories according to the recording procedure that was followed during
+* four categories according to the recording procedure
   * spontaneous speech: the participants are unaware of the recording while
     * real environment [72];
   * acted speech: the emotional condition of the speakers is acted;
   * elicited speech: where the speaker is placed in a situation which evokes a
     specific emotional state [73]; and
   * annotated public speech: data from public sources, such as YouTube
-* datasets must be realistic by having some desired properties, such as a
-  variety in modalities, speakers, genders, subjects discussed, spoken
+* datasets must be realistic by having some desired properties
+  eg variety in modalities, speakers, genders, subjects discussed, spoken
   languages, words used, emotional intensity and amount of data
 * CMU-MOSEI [63] has most of the desired properties
   * the biggest dataset available that includes the most speakers and the
@@ -366,22 +364,22 @@ representations (UTA) is more common
   * labels for emotion recognition + for (text-based) sentiment analysis
   * mostly used for sentiment analysis architectures (eg, [63,66,67,70,83–85])
 * IEMOCAP [74]
-  * the most widely used dataset, is
-  * collected in a detailed way in a lab environment. The use of
+  * the most widely used dataset
+  * collected in a detailed way in a lab environment
     * ten actors which attach different realistic emotions in dyadic sessions
-      makes this dataset the collection with the strongest ground truth. In
+      makes this dataset the collection with the strongest ground truth
   * visual features of high quality, since
     markers on the face, head and hands were used in order to capture facial
     expressions and hand movements
-  * one of the oldest, well recorded, annotated and maintained datasets, and
+  * one of the oldest, well recorded, annotated and maintained datasets
   * the overwhelming majority of multimodal architectures are evaluated using
   * overfitting
     * a variety of unwanted features since it only includes a small number of
       speakers and subjects discussed
 * The rest of the datasets are not extensively used in multimodal emotion recog
-  * they can be used in a cross-dataset evaluation scheme in order to produce
-    highly generalizable results and upgrade the performance estimation to a
-    more realistic manner
+  * they can be used in a cross-dataset evaluation scheme
+    in order to produce highly generalizable results and
+    upgrade the performance estimation to a more realistic manner
 
 ## 4.2. Performance Evaluation Metrics
 
@@ -417,58 +415,56 @@ representations (UTA) is more common
 
 # 5 conclusion and future challenges 16
 
-* future
-  * evaluation procedure. More specifically, the proposed architectures are
-    * differences in
-      * pipelines (eg random subsampling train-val split vs leave-1-speaker
-        out)
-      * classification metrics (eg, binary metrics for each label vs multiclass
-        aggregated metrics)
-    * speaker-dependent experimentation may result in overfitted results (in
-      terms of speaker identity)
-    * leave-one-speaker-out evaluation should be used as a standard not only to
-    * experiments have to list both binary and multiclass metrics and also
-    * capture both the dimensional (ie, valence, arousal and dominance) and the
-      categorical (discrete emotions) dimensions of emotion recognition
+* future:
+* evaluation procedure. More specifically, the proposed architectures are
+  * differences in
+    * pipelines (eg random subsampling train-val split vs leave-1-speaker
+      out)
+    * classification metrics (eg, binary metrics for each label vs multiclass
+      aggregated metrics)
+  * speaker-dependent experimentation may result in overfitted results (in
+    terms of speaker identity)
+  * leave-one-speaker-out evaluation should be used as a standard not only to
+  * experiments have to list both binary and multiclass metrics and also
+  * capture both the dimensional (ie, valence, arousal and dominance) and the
+    categorical (discrete emotions) dimensions of emotion recognition
 * industrial adaptation of the architectures, robustness
-  * models are usually engineered on specific datasets (thus lacking
-    generalization power),
+  * models are usually engineered on specific datasets => no generalization
     * relying on unrealistic data such as forced-aligned multimodal sequences,
       error-less text transcriptions, non realistic recording conditions,
       artificial dialog context and perfect information on all modalities
   * needed: multimodal temporal architectures for the problem of SER that are:
-    * trained in a cross-dataset evaluation manner, while utilizing the power
-      of
+    * trained in a cross-dataset evaluation manner, while utilizing
       * unsupervised [90] or supervised [91] domain adaptation methodologies,
         in order to better evaluate their generalization power;
     * capable of performing inference on unaligned temporal multimodal data;
     * capable of performing inference in cases of noisy or absent modalities;
-      and
     * capable of performing under unexpected ASR errors
 * methods need to be adopted for signal representation
   * in the task of multimodal speech emotion recognition, a few specific
-    low-level modality representation techniques have been established. In
+    low-level modality representation techniques have been established
     * aural modality, signal-analysis-based features that are associated with
       both the spectral and temporal domains are used
     * textual: basic word embeddings are used
     * visual: traditional facial features are used
     * deep learning techniques has resulted in better representation
-      capabilities for all three of these modalities. Thus,
+      capabilities for all three of these modalities
   * multimodal architectures need to
     * be in line with the SOTA techniques for unimodal representations and
     * find efficient ways to combine them by taking into account the temporal
       dimension
   * each modality can be enriched with new representations that also take into
-    account parts of the information that have not been so widely used until
-    * body language is strongly correlated with expressed emotions, the only
+    account parts of the information that have not been so widely used yet
+    * body language is strongly correlated with expressed emotions
     * beyond facial expressions
   * unsupervised representation, application-independent
-    * In other machine learning application domains, there are many powerful
-    * BERT [41] for text, wav2vec 2.0 [31] for audio, and MoCo (He+ 20) for vision
-      * He, K.; Fan, H.; Wu, Y.; Xie, S.; Girshick, R
-        Momentum contrast for unsupervised visual representation learning. In
+    * In other machine learning application domains, they are powerful
+    * BERT [41] for text, wav2vec 2.0 [31] for audio, and
+      MoCo (He+ 20) for vision
+      * He K; Fan H; Wu Y; Xie S; Girshick R
+        Momentum contrast for unsupervised visual representation learning
         IEEE/CVF Conference on Computer Vision and Pattern Recognition 2020
-      * Ruder:  Contrastive Self-Supervised Learning 🤳
+      * Ruder:  Contrastive Self-Supervised Learning
         [Ankesh Anand](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html)
         gives an overview of recent contrastive methods that learn by
         distinguishing between positive and negative examples (in contrast to

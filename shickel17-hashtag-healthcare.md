@@ -21,8 +21,8 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 * We refer to
   * external sentiment analysis
     * well-known research area 
-    * sentiment and textual polarity is calculated with respect to a specific
-      external entity
+    * sentiment and textual polarity is calculated
+      with respect to a specific external entity
   * internal sentiment analysis 
     * the study of the polarity of user text with respect to themselves
     * primarily concerned with statements of emotion and mental health
@@ -51,8 +51,8 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 * for mental health polarity
   * besides positivity and negativity, we introduce two additional classes:
     both positive and negative, and neither positive nor negative
-  * psychological research suggests emotions cannot be represented on a single
-    axis of valence 24–28
+  * psychological research suggests
+    emotions cannot be represented on a single axis of valence 24–28
   * text classified as neutral using traditional frameworks would, using our
     new annotation scheme, fall into either of the two augmented classes
 * few publicly-available mental health datasets
@@ -63,15 +63,16 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
     health domain with regards to textual language modeling and classification,
     and can be used to help train mental health models and systems
 * We quantify the similarity between the two domains using transfer learning
-  * training models on one domain (i.e. social media text)
-  * fine-tuning them on another target domain (i.e.  mental health text)
+  * training models on one domain (ie social media text)
+  * fine-tuning them on another target domain (ie mental health text)
   * in the context of deep learning
-* We train deep learning models on a large dataset of annotated text from
-  Twitter, and transfer the underlying language model and learned
-  representation to the task of predicting the
+* We
+  train deep learning models on a large dataset of annotated text from Twitter,
+  and transfer the underlying language model and learned representation
+  to the task of predicting the
   * valence of mental health journal text
   * objective change in mental health
-    as gauged by evidence-based mental health measures
+    as gauged [estimated] by evidence-based mental health measures
 * improved performance for emotional valence prediction
 
 # Methods 3
@@ -115,8 +116,8 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
     negative and high positive affect across time suggest the possibility of
     bi-polar disorder, cyclothymia, borderline personality disorder, and/or an
     interpersonal or social context fraught with cyclical affective instability
-* patients might be skeptical of the accuracy of therapist feedback or reactive
-  to the fact that a healthcare provider is providing feedback
+* patients might be skeptical of the accuracy of therapist feedback or
+  reactive to the fact that a healthcare provider is providing feedback
   * might place their trust in the more objective feedback from the ML tool
   * apparently objective personality assessment feedback is widely accepted,
     especially if it is worded somewhat positively and somewhat generally

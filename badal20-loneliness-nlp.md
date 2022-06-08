@@ -1,22 +1,22 @@
 Prediction of Loneliness in Older Adults Using Natural Language Processing:
   Exploring Sex Differences in Speech
-2020
 VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
   DV Jeste, EE Lee
+2020
 
 # Introduction
 
 * While loneliness and social isolation may be interrelated,
   * loneliness is a distinct construct − some people feel “lonely in a crowd”
   * interviews
-    * qualitative (eg, open-ended or semi-structured interviews) and
+    * qualitative (eg, open-ended or semi-structured)
     * quantitative (eg, based on the Uni of California Loneliness Scale)
 * nuanced features are not easily assessed by the human eye
   * such as word choice, expressed emotions, and sentence structure
 * NLP eg parts-of-speech tagging, named entity recognition and parsing
   * NLU is a subset of NLP which is more aligned with comprehension
-    * tasks such as reasoning, translation, summarization, question-answering,
-      sentiment and emotion analysis
+  * tasks such as reasoning, translation, summarization, question-answering,
+    sentiment and emotion analysis
 * using NLP tools for psychiatric applications include predicting/diagnosing
   * psychiatric readmission, 21
     * 21. Rumshisky A, Ghassemi M, Naumann T,+
@@ -31,7 +31,7 @@ VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
       Identifying suicide ideation and suicidal attempts in a psychiatric
       clinical research database using NLP
       Sci Rep 2018; 8:1–10
-  * mental health crises 24 ;
+  * mental health crises 24
     * 24. Kolliakou A, Bakolis I, Chandran D,+
       Mental health-related conversations on social media and crisis episodes: a
       time-series regression analysis
@@ -41,7 +41,7 @@ VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
       Predicting mental conditions based on “history of present illness” in
       psychiatric notes with deep neural networks
       J Biomed Inform 2017; 75:S138–S148
-  * depression. 26
+  * depression 26
     * 26. Perlis R, Iosifescu D, Castro V,+
       Using electronic medical records to enable large-scale studies in
       psychiatry: treatment resistant depression as a model

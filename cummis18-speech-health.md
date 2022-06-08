@@ -21,14 +21,14 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     * slight changes in a speaker’s physical and mental state can affect their
       ability to control their vocal apparatus, often at a subconscious level
 * active and passive remote sensing technology suitable for health conditions
-* at the intersection of arguably two significant recent advances in computing
+* at the intersection of two arguably significant recent advances in computing
   * ie deep learning and ubiquitous computing
   * ubiquitous computing
     * embedding computational capability (generally microprocessors) into
       everyday objects to make them effectively communicate
     * minimizes the end user's need to interact with computers
-* small size of collected datasets, it is debatable if the full advantages of
-  * shared tasks for deep learning systems 
+* datasets are small
+  * shared tasks for deep learning systems
     * Computational Paralinguistics Challenge (ComParE) [6, 7, 8, 9, 10, 11]
     * Audio/Visual Emotion Challenge (AVEC) workshops [12, 13, 14, 15]
     * ComParE 2011: recognition of speech affected by intoxication or fatigue,
@@ -37,16 +37,16 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       * feature representation learning, classification or both
 * Internet-of-Things (IoT) means there is currently a vast array of
   * microphone enabled smart-devices and wearable technologies on the market,
-    eg, the Apple WatchTM series, Samsung GearTM technology, or the Sony
-    SmartWatchTM series
+    eg, the Apple WatchTM series, Samsung GearTM technology, or
+    the Sony SmartWatchTM series
   * Voice-based applications for the remote monitor of speaker states & traits
     including health are becoming more conspicuous in the literat [17, 18, 19]
   * Smart monitoring technologies, based on deep learning and big data
     * role in and remote diagnosis of various health conditions
 
-# how health states affect the muscular and cognitive procs in speech prod
+# 2 How health states affect the muscular and cognitive procs in speech prod
 
-# the major breakthroughs that kick-started current deep learning
+# 3 The major breakthroughs that kick-started current deep learning
 
 # 4 DL approaches conducted on ComParE and AVEC health sub-challenge data
 
@@ -67,6 +67,37 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 ## 4.8. Cognitive and physical load (2014)
 
+* recognition of speakers cognitive and physical load in speech [9]
+* datasets utilised for these sub-challenges were the
+  * Cognitive Load with Speech and EGG (CLSE) database (cf. Table 6) and the
+  * Munich Bio-voice Corpus (MBC) (cf. Table 7)
+* High cognitive load and mental fatigue is strongly associated [with?]
+  increasing demands on working memory and impaired mental performances [56,99]
+  * increased articulation rate, an increase in the number of filled pauses,
+    and a reduction in formant vowel space area are commonly reported for
+    speech produced at high cognitive load [99]
+* Physical fatigue on the other hand, is a reduction in muscle power and
+  movement with a key symptom being impaired co-ordination [56]
+  * there are strong links between changes in heart-rate and changes in
+    prosodic and voice quality (glottal) features [48,100]
+* The baseline was again set with the 6373 dimensional ComParE-2013 feature set
+  * The official baseline scores for the cognitive load sub-challenge were
+    63.2%/61.6% for the development/test partition
+  * While for the physical load challenge development and test set UAR’s were
+    67.2% and 71.9% respectively [9]
+* Both challenges had two entrants using DNN based approaches [101,102], as
+  well as a DNN based representation learning paradigm [103]
+  * Gosztolya+ [101,102] proposed and developed a Deep Rectifier Network (DRN)
+    approach which utilised rectified linear units (ReLU)
+    * test set UAR of the proposed DRN is 63.05%, representing
+      a slight improvement on the baseline
+  * winning UAR of 73.9%, achieved by fusing four i-vector based systems which
+    utilise different low-level feature representations [104]
+    * i-vector paradigm: refer to [105,106]
+  * It can be speculated that the gulf in system performance between the DNN
+    system presented in [101] and the challenge winner could be due in part to
+    the small amount of data in the cognitive load corpora
+
 ## 4.9. Parkinson’s (2015)
 
 ## 4.10. Eating (2015)
@@ -86,11 +117,10 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * recurrent sequence to sequence autoencoders to learn representations which
     take into account the temporal dynamics of time series data such as speech
 
-# Opportunities and challenges associated with advancing remote deep learning
-speech-based sensing technologies
+# 5 Opportunities and challenges for remote deep learning speech-based sensing
 
 * overfitting, A common reoccurring theme, not limited to deep learning
-  * small and imbalanced datasets often use in the challenges (cf. Table 1)
+* small and imbalanced datasets often used in the challenges (cf. Table 1)
 
 ## Inclusion of intelligent labelling paradigms
 
@@ -102,7 +132,7 @@ speech-based sensing technologies
 * in speech based classification tasks including emotion recognition
   * see [150] for a recent review
 * Recent image classification research shows that
-  the combination of semi-supervised learning in with few-shot networks can
+  the combination of semi-supervised learning with few-shot networks can
   efficiently solve new learning tasks using only few training samples
   [151, 152]
 * not tested yet in the speech-health domain
@@ -142,32 +172,32 @@ speech-based sensing technologies
       affect detection on AVEC-2014 data [163, 164]
     * Autoencoder and RNN based transfer learning system have been shown to aid
       speech-based emotion recognition [165, 166]
-      * not tested yet in the speech-health domain 
+      * not tested yet in the speech-health domain
 * image: GANs are also explored for domain adaptation solutions, eg, [167]
   * core idea: an adversarial network to learn a mapping between two domains
 
-# a brief conclusion
+# A brief conclusion
 
 * two challenges have been won using a deep learning based approach:
   2015’s Parkinson’s condition sub-challenge [118] and 2017’s cold and flu
   * debatable given the results in [126] if the winning approach in 2015 was
     due to the deep learning approach or the
     post-processing speaker clustering method employed [118]
-  * the majority of challenge participants still use very conventional feature
-    extraction and classification paradigms
+  * the majority of challenge participants still use
+    very conventional feature extraction and classification paradigms
 * A major reason for this is most likely the small database,
   * compared to other speech-tasks such as speaker and speech recognition
   * multiple samples from a single speaker, and
   * can be unbalanced in terms of samples per class
 * future research topics in intelligent labelling, data augmentation,
   representation learning as well as multitask and transfer learning
-  * hE considerable investment is needed in collecting truly large datasets.
-  * The need for this data is twofold, firstly
-    * to facilitate the true impact that deep learning solutions could make, and
-    * to enable large scale clinical studies 
+  * hE considerable investment is needed in collecting truly large datasets
+  * The need for this data is twofold
+    * to facilitate the true impact that deep learning solutions could make,
+    * to enable large scale clinical studies
       * this second aspect would enable investigations into
-        which recognition accuracies correspond to positive impacts in
-        real-world healthcare situations 
+        which recognition accuracies correspond to positive impacts
+        in real-world healthcare situations
 * ubiquitous computing devices have the potential to
   * provide truly big data for researchers in the speech-health domain [168]
   * The combination of such data with current and next generation deep learning

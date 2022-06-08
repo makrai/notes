@@ -83,7 +83,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     fully connected layers
   * it is the basis of our work
 
-## ensemble methods are meta-algorithms that help to improve machine-learning
+## Ensemble methods: meta-algorithms that help to improve machine-learning
 
 * usually using the same base learner
 * Ensemble learning with neural networks was introduced in [45]
