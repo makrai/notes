@@ -187,8 +187,8 @@ arXiv:2005.14165 cs.CL
 * In order to better aggregate results on NLP tasks and
   compare to popular models such as BERT and RoBERTa in a more systematic way,
   we also evaluate GPT-3 on a standardized collection of datasets, the
-  SuperGLUE benchmark (WPN+ 19, WPN + 19, CLC + 19, DMST19, RBG11, KCR + 18,
-  ZLL + 18, DGM06, BHDD + 06, GMDD07, BDD + 09, PCC18, PHR + 18)
+  SuperGLUE benchmark (WPN+ 19, WPN+ 19, CLC+ 19, DMST19, RBG11, KCR+ 18,
+  ZLL+ 18, DGM06, BHDD+ 06, GMDD07, BDD+ 09, PCC18, PHR+ 18)
 * GPT-3’s test-set performance on the SuperGLUE dataset is shown in Table 3.8.
 * example choice
   * In the few-shot setting, we used 32 examples for all tasks, sampled
