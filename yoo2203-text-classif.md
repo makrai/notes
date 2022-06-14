@@ -12,8 +12,7 @@ https://github.com/anoymous92874838/text-adv-detection
 * As a countermeasure, adversarial defense has been explored, but
 * detect adversarial examples: relatively few efforts have been made 
 * may be crucial for eg review sentiment analysis
-* we release a dataset for four popular attack methods on four datasets and
-  four models to encourage further research in this field
+* we release a dataset for 4 popular attack methods on 4 datasets and 4 models
   * competitive baseline based on density estimation that has the
     highest AUC on 29 out of 30 dataset-attack-model combinations
 
