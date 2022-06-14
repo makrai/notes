@@ -1,5 +1,5 @@
-UNICORN on RAINBOW: A Universal Commonsense Reasoning Model
-  on a New Multitask Benchmark
+UNICORN on RAINBOW:
+  A Universal Commonsense Reasoning Model on a New Multitask Benchmark
 Nicholas Lourie, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
 AAAI 2021 arXiv:2103.13009 [cs.CL]
 
@@ -41,9 +41,9 @@ https://github.com/allenai/rainbow
     (Radford+ 2018; Devlin+ 2019; Liu+ 2019b; Raffel+ 2019)
   * surprisingly silly and nonsensical mistakes, even GPT-3
 * we can learn a great deal from mainstream NLP research
-  * multitask benchmarks eg GLUE (Wang+ 2019b) and SUPER GLUE (Wang+ 2019a) has
+  * multitask benchmarks eg GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a) has
     encouraged fundamental advances in the NLP community,
-* we proposing two new ways to evaluate commonsense models with an
+* we propos two new ways to evaluate commonsense models with an
   emphasis on their generality across tasks and domains
   * new multi-task benchmark, RAINBOW, to facilitate research
   * novel evaluation, the cost equivalent curve
@@ -110,12 +110,12 @@ https://github.com/allenai/rainbow
   * αNLI (Bhagavatula+ 2020) tests abductive reasoning in narratives
     * identify the best explanation among several
     * connecting a beginning and ending
-  * COSMOS QA (Huang+ 2019) asks commonsense reading comprehension questions
-    about everyday narratives
+  * COSMOS QA (Huang+ 2019) asks
+    commonsense reading comprehension questions about everyday narratives
   * HELLA SWAG (Zellers+ 2019)
     choose the most plausible ending to a short context
-  * PIQA (Bisk+ 2020) is a multiple-choice question answering benchmark for
-    physical commonsense reasoning
+  * PIQA (Bisk+ 2020) is
+    a multiple-choice QA benchmark for physical commonsense reasoning
   * SOCIAL IQ A(Sap+ 2019b) evaluates commonsense reasoning about
     social situations and interactions
   * WINO GRANDE (Sakaguchi+ 2020) is a large-scale collection of Winograd-inspd
@@ -147,13 +147,13 @@ https://github.com/allenai/rainbow
   * sequential training appears to be slightly more data efficient,
     * both from comparing cost equivalent curves in Figure 2 and on full dataset
 
-### Finding 2: Sequential training rarely hurts performance.  While multitask
+### Finding 2: Sequential training rarely hurts performance
 
 ### Finding 3: Multitask training helps most often in the low-data regime
 
 * One mystery researchers currently face is the inconsistent effect of multitsk
 * Cost equivalent curves reveal one potential explanation: multitask learning
-  tends to help when data is scarce, but may hurt performance if plentiful. In
+  tends to help when data is scarce, but may hurt performance if plentiful
 
 ## 4.2 What Transfers Best for Common Sense?
 
@@ -161,28 +161,28 @@ https://github.com/allenai/rainbow
 * researchers usually pick datasets that seem similar to the target, whether
   due to format, domain, or something else.  To investigate common sense
 * we compare how the RAINBOW tasks transfer to each other
-  * against two other popular dataset collections: GLUE and SUPER GLUE
+  * against two other popular dataset collections: GLUE and SuperGLUE
 
 ### Finding 4: RAINBOW transfers best for common sense
 
-* the RAINBOW tasks transfer better to each other than GLUE and SUPER GLUE do
+* the RAINBOW tasks transfer better to each other than GLUE and SuperGLUE do
   to them
 * The same result also holds for the popular benchmark COMMONSENSE QA when
 * hE, JOCI (Zhang+ 2017), an ordinal commonsense variant of NLI,
   RAINBOW appears either not to help or to slightly hurt data efficiency,
-  potentially more so than GLUE and SUPER GLUE.  4
+  potentially more so than GLUE and SuperGLUE.  4
 
-### Finding 5: Only RAINBOW uniformly beats the baseline.  With sequential
+### Finding 5: Only RAINBOW uniformly beats the baseline
 
-### Caveats about GLUE, SUPER GLUE, and T5. There’s an important caveat to note
+### Caveats about GLUE, SuperGLUE, and T5
 
 * The off-the-shelf T5’s weights come from multitask pretraining, where
   * many tasks are mixed with a language modeling objective to learn a powerful
-    initialization for the weights. In fact, both GLUE and SUPER GLUE were
+    initialization for the weights. In fact, both GLUE and SuperGLUE were
     mixed into the pretraining (Raffel+ 2019)
 * not determined whether some of the benefit comes from the
   novelty of RAINBOW’s knowledge to T5,
-  as opposed to containing more general information than GLUE and SUPER GLUE
+  as opposed to containing more general information than GLUE and SuperGLUE
 
 ## 4.3 Does Model Size Affect Transfer?
 
@@ -242,7 +242,7 @@ https://github.com/allenai/rainbow
   a pretrained commonsense reasoning model ready
   to be fine-tuned on other downstream commonsense tasks
   * analogous to how off-the-shelf T5 models are multitasked on NLP benchmarks
-    such as GLUE and SUPER GLUE as part of their pretraining
+    such as GLUE and SuperGLUE as part of their pretraining
 * new SOTA on all RAINBOW datasets: αNLI (87.3%), COSMOS QA (91.8%), HELLA
   SWAG (93.9%), PIQA (90.1%), SOCIAL IQ A(83.2%), and WINO GRANDE (86.6%)
 * SOTA on datasets beyond RAINBOW
