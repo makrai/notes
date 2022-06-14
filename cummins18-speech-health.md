@@ -211,9 +211,10 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 ## 4.11. Depression (2016 & 2017)
 
 * task revisited (cf. 4.7) in The AVEC series in 2016 and 2017 [14,15]
-* Both challenges utilised the Distress Analysis Interview Corpus – Wizard of
-  Oz (DAIC-WOZ) database of 193 clinical interviews designed to support the
-  diagnosis of psychological distress conditions such as depression
+* Both challenges utilised the
+  Distress Analysis Interview Corpus – Wizard of Oz (DAIC-WOZ) database of
+  193 clinical interviews designed to support the diagnosis of
+  psychological distress conditions such as depression
 * 2016
   * task: for AVEC-2016 [14], the challenge was a 2-class multimodal level of
     severity (high/low) task, based on the patients Patient Health Questionnaire
