@@ -54,18 +54,17 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
   * hE, less is understood about
     how the representation changes during the process of fine-tuning and
     why fine-tuning invariably seems to improve task performance
-* In this work, we investigate the process of finetuning of representations
+* In this work, we investigate the process of fine-tuning of representations
   using the English BERT family (Devlin+ 2019). Specifically, we ask:
   1. Does fine-tuning always improve performance?
   2. How does fine-tuning alter the representation to adjust for downstream?
   3. How does fine-tuning change the geometric structure of different layers?
 * We apply two probing techniques
-  * classifierbased probing (Kim+ 2019; Tenney+ 2019) and
+  * classifier-based probing (Kim+ 2019; Tenney+ 2019) and
   * DirectProbe (Zhou and Srikumar, 2021)
-  on variants of BERT representations that are
-  * fine-tuned on five tasks: part-of-speech tagging, dependency head
-    prediction, preposition supersense role & function prediction, and text
-    classification
+    on variants of BERT representations that are
+  * fine-tuned on five tasks: part-of-speech tagging, dependency head pred,
+    preposition supersense role & function prediction, and text classification
 * findings
   * Beyond confirming previous findings about fine-tuning, our analysis reveals
   1. fine-tuning introduces a divergence between training and test sets,
@@ -86,17 +85,17 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
       away from each other, thus introducing large separating regions
       * Rather than simply scaling the points, clusters move in different
         directions and with different extents (measured by Euclidean distance)
-        Overall, these clusters become distant compared to the untuned
-        representation. We conjecture that the enlarged region between groups
-        admits a bigger set of classifiers that can separate them, leading to
-        better generalization (§4.3)
+      * Overall, these clusters become distant compared to the untuned
+        representation
+      * We conjecture that the enlarged region between groups admits a bigger
+        set of classifiers that can separate them => better generaliz (§4.3)
     * We verify our distance hypothesis by
-      investigating the effect of fine-tuning across tasks. We observe that
-      fine-tuning for related tasks can also provide useful signal for the
-      target task by altering the distances between clusters representing
-      different labels (§4.4)
-  3.  Finally, fine-tuning does not change the higher layers arbitrarily. This
-      confirms previous findings
+      investigating the effect of fine-tuning across tasks
+      * fine-tuning for related tasks can also provide useful signal for the
+        target task by altering the distances between clusters representing
+        different labels (§4.4)
+  3.  Finally, fine-tuning does not change the higher layers arbitrarily
+    * confirms previous findings
     * fine-tuning largely preserves the relative positions of the label clusts,
       while reconfiguring the space to adjust for downstream tasks (§4.5)
     * fine-tuning only “slightly” changes higher layers
@@ -280,7 +279,7 @@ well a representation supports classifiers for a task
     test set after fine-tuning on PS-fxn task
 * We conjecture that
   controlling the divergence between the training and test sets can help ensure
-  that finetuning helps
+  that fine-tuning helps
 
 ## 4.2 Linearity of Representations
 
@@ -346,7 +345,7 @@ well a representation supports classifiers for a task
     since the labels were originally linearly separable, the learner need not
     adjust the representation at all
 
-## 4.4 Cross-task finetuning confirms the geometric explanation
+## 4.4 Cross-task fine-tuning confirms the geometric explanation
 
 * In §4.3, we hypothesized that fine-tuning improves the performance because it
   enlarges the gaps between label clusters
@@ -410,7 +409,7 @@ well a representation supports classifiers for a task
     fine-tuning tries to group points with the same label into a small number
     of clusters, ideally one cluster
 
-## 4.5 How finetuning changes the geometry of different layers of BERT base
+## 4.5 How fine-tuning changes the geometry of different layers of BERT base
 
 * during fine-tuning, lower layers changed little compared to higher layers
   (Merchant+ 2020; Mosbach+ 2020b)
