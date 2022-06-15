@@ -8,7 +8,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 # Abstract
 
 * how fine-tuning changes the underlying embedding space is less studied
-* we study the English BERT family and use two probing techniques for analysis
+* we study the English BERT family with two probing techniques
 * We hypothesize that fine-tuning affects classification performance by
   increasing the distances between examples associated with different labels
   * We confirm this hypothesis with carefully designed
@@ -28,7 +28,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
   * fine-tuning it for a task
 * The probing literature has largely focused on the former
   * Kassner and Schütze, ACL 2020
-    Negated and misprimed probes for pretrained language models: Birds can
+    Negated and misprimed probes for pretrained LM: Birds can/not talk/fly
   * Perone+ 2018
     Christian S Perone, Roberto Silveira, and Thomas S Paula
     Evaluation of sentence embeddings in downstream and linguistic probing
@@ -42,8 +42,8 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
     Do NLP models know numbers? Probing numeracy in embeddings
   * Pruksachatkun+ ACL 2020
     Yada Pruksachatkun, Jason Phang, Haokun Liu, Phu Mon Htut, Xiaoyi Zhang,
-      Richard Yuanzhe Pang, Clara Vania, Katharina Kann, and Samuel R.  Bowman
-    Interme-task transfer learning with pretrained LMs When & why does it work?
+      Richard Yuanzhe Pang, Clara Vania, Katharina Kann, and Samuel R Bowman
+    Intermed-task transfer learn with pretrained LMs: When & why does it work?
   * Aghajanyan+ ACL-IJCNLP 2021
     Armen Aghajanyan, Sonal Gupta, and Luke Zettlemoyer. 2021
     Intrinsic dimensionality explains the effectiveness of LM fine-tuning
@@ -76,8 +76,8 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
     * For a representation where task labels are
       not linearly separable, we find that
       fine-tuning adjusts it by grouping points with the same label into a
-      small number of clusters (ideally one), thus simplifying the underlying
-      representation
+      small number of clusters (ideally one),
+      thus simplifying the underlying representation
       * makes it easier to linearly separate labels with fine-tuned
         representations than untuned ones (§4.2)
     * For a representation whose task labels are already linearly separable,
@@ -85,8 +85,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
       away from each other, thus introducing large separating regions
       * Rather than simply scaling the points, clusters move in different
         directions and with different extents (measured by Euclidean distance)
-      * Overall, these clusters become distant compared to the untuned
-        representation
+      * Overall, these clusters become distant compared to the untuned repr
       * We conjecture that the enlarged region between groups admits a bigger
         set of classifiers that can separate them => better generaliz (§4.3)
     * We verify our distance hypothesis by
@@ -94,7 +93,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
       * fine-tuning for related tasks can also provide useful signal for the
         target task by altering the distances between clusters representing
         different labels (§4.4)
-  3.  Finally, fine-tuning does not change the higher layers arbitrarily
+  3. Finally, fine-tuning does not change the higher layers arbitrarily
     * confirms previous findings
     * fine-tuning largely preserves the relative positions of the label clusts,
       while reconfiguring the space to adjust for downstream tasks (§4.5)
@@ -102,14 +101,13 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 
 # 2 Preliminaries: Probing Methods 2
 
-## 2.1 classifier-based probe (eg, Tenney+ 2019; Jullien+ 2022) to assess how
-well a representation supports classifiers for a task
+## 2.1 classifier-based probe (eg, Tenney+ 2019; Jullien+ 2022) 
 
+* assess how well a representation supports classifiers for a task
 * the most commonly used probes in the literature
   (eg Hewitt+ 2021; Whitney+ 2021; Belinkov, 2021)
-  * To understand how well a representation encodes the labels for a task, a
-    probing classifier is trained over it, with the embeddings themselves kept
-    frozen when the classifier is trained
+* To understand how well a representation encodes the labels for a task, a
+  probing classifier is trained over it, with the embeddings kept frozen
 * For all our experiments, we use two-layer neural networks as our probe
   * grid-search to choose the best hyperparameters
   * Each best classifier is trained five times with different initializations
@@ -117,37 +115,36 @@ well a representation supports classifiers for a task
   * The hidden layer sizes are selected from {32, 64, 128, 256} × {32, 64, 128,
     256}, and the regularizer weight from the range 10 −7 to 10 0
   * All models use ReLUs as the activation function for the hidden layer and
-    are optimized by Adam (Kingma and Ba, 2015). We set the
-  * maximum number of learning iterations to 1000
-  * We use scikit-learn v0.22 (Pedregosa+ 2011) for these experiments
+    are optimized by Adam (Kingma and Ba, 2015)
+  * maximum number of learning iterations set to 1000
+  * We use scikit-learn v0.22 (Pedregosa+ 2011)
 * Classifier probes aim to measure how well a contextualized representation
   captures a linguistic property. The classification performance can help us
   assess the effect of fine-tuning
 
 ## 2.2 DirectProbe (Zhou and Srikumar, 2021) to analyze the repr geometry
 
-* We briefly summarize the technique and refer the reader to the original work
-  for details
+* refer to the original work for details
 * For a given labeling task, DirectProbe returns a set of clusters such that
   each cluster only contains the points with the same label, and
   there are no overlaps between the convex hulls of these clusters
 * Any decision boundary must cross the regions between the clusters that have
   different labels (see in Figure 1). Since fine-tuning a contextualized
   representation creates different representations for different tasks, it is
-  reasonable to probe the representation based on a given task. These
-* allow us to measure three properties of interest
+  reasonable to probe the representation based on a given task
+* allow us to measure three properties of interest:
 
 ### Number of Clusters
 
 * indicates the linearity of the representation for a task
-  * If, however, there are more clusters than labels, then at least two
-    clusters of examples with the same label can not be grouped together (as in
-    Figure 1, right). This scenario calls for a non-linear classifier
+* If, however, there are more clusters than labels, then at least two clusters
+  of examples with the same label can not be grouped together (as in Figure 1,
+  right). This scenario calls for a non-linear classifier
 
 ### Distances between Clusters (Euclidean)
 
 * can reveal the internal structure of a representation
-* By tracking these distances during fine-tuning, we can study how the
+* tracking these distances during fine-tuning
 * we use the fact that each cluster represents a convex object
 * we use max-margin separators to compute distances
 * We train a linear SVM (Chang and Lin, 2011) to find the maximum margin
@@ -162,11 +159,11 @@ well a representation supports classifiers for a task
   each other for the task at hand
 * we construct a distance vector v for a representation, where
   each element v i is the distance between the clusters of a pair of labels
-  With n labels in a task, the size of v is n(n−1)
+  * With n labels in a task, the size of v is n(n−1)
   * works only when the number of clusters equals the number of labels (ie, the
     dataset is linearly separable under the representation)
-  * nL we find this to be the case for most representations we studied. As a
-* measure of the similarity of two representations for a labeling task, we
+  * nL we find this to be the case for most representations we studied
+* measure of the similarity of two representations for a labeling task:
   * Pearson correlation coefficient between their distance vectors
 * can also be used to measure the similarity between two labeled datasets
   with respect to the same representation
@@ -177,7 +174,7 @@ well a representation supports classifiers for a task
 
 ## 3.1 Representations
 
-* several models from the BERT family (Devlin+ 2019; Turc+ 2019). These models
+* several models from the BERT family (Devlin+ 2019; Turc+ 2019)
   * same basic architecture but with different capacities, ie, different layers
     and hidden sizes
   * Table 1 summarizes the models we investigate in this work 4
@@ -188,9 +185,8 @@ well a representation supports classifiers for a task
     * The variance between different fine-tuning runs is so large that not
       comparable with other BERT models
     * This is consistent with the observations from Mosbach+ (2020a)
-* For tokens that are broken into subwords by the tokenizer, we average the
-  * models provided by HuggingFace v4.2.1 (Wolf+ 2020), and Pytorch v1.6.0
-    (Paszke+ 2019) for our experiments
+* For tokens that are broken into subwords by the tokenizer, we average
+  * models by HuggingFace v4.2.1 (Wolf+ 20), and Pytorch v1.6.0 (Paszke+ 19)
 
 ## 3.2 Tasks
 
@@ -227,18 +223,18 @@ well a representation supports classifiers for a task
 
 * We fine-tune the models in §3.1 on the five tasks from §3.2 separately
   * More detailed settings can be found in Appendix A
-  * The fine-tuned models (along with the original models) are then used to
+  * The fine-tuned models (along with the original models) are then used
   * The probing techniques described in §2 are applied to study both original
     and fine-tuned representations
 * number of epochs
   * Our preliminary experiments showed that the commonly used 3-5 epochs of
     fine-tuning are insufficient for the smaller representations, such as BERT
-    tiny , and they require more epochs
-  * We finetuned all the representations for 10 epochs
-    except BERT base , which we fine-tuned for the usual three epochs
-  * the fine-tuning phase is separate from the classifier training phase for
+    tiny, and they require more epochs
+  * We fine-tuned all the representations for 10 epochs
+    except BERT base, which we fine-tuned for the usual three epochs
+  * the fine-tuning phase is separate from the probing classif training phase 
 * for the probe classifiers, we train two-layer neural networks (§2.1) from
-  scratch on both original and fine-tuned representations 7 , ensuring a fair
+  scratch on both original and fine-tuned representations 7, ensuring a fair
   comparsion between them
   * When the fine-tuned representations are probed, their weights are frozen
   * ie the fine-tuned representations as a black-box that produces embeddings
@@ -253,7 +249,6 @@ well a representation supports classifiers for a task
 * classifier probes to examine if fine-tuning always improves classifier perf
 * It is commonly accepted that the fine-tuning improves task performance
   Does this always hold?
-
 * Table 2 summarizes the relevant observations from our experiments
 * Appendix C presents the complete fine-tuning results
 
@@ -272,14 +267,13 @@ well a representation supports classifiers for a task
 
 * BERT small does not show the improvements on the PS-fxn task after
   fine-tuning, which breaks the well-accepted impression
-  * only one such exception is observed across all our experiments (see
-    Appendix C)
+  * only one such exception is observed across all our experiments (Appendix C)
   * insufficient to draw any concrete conclusions about why this is happening
   * BERT small shows the smallest similarity (0.44) between the training and
     test set after fine-tuning on PS-fxn task
 * We conjecture that
-  controlling the divergence between the training and test sets can help ensure
-  that fine-tuning helps
+  controlling the divergence between the training and test sets
+  can help ensure that fine-tuning helps
 
 ## 4.2 Linearity of Representations
 
@@ -289,9 +283,9 @@ well a representation supports classifiers for a task
 
 * Table 3 summarizes the results
 * For brevity, we only present the results on BERT tiny
-  * The full results are in Appendix C. We observe that
-* before fine-tuning, small representations (ie, BERT tiny ) are non-linear for
-  most tasks
+  * The full results are in Appendix C
+* before fine-tuning, small representations (ie, BERT tiny ) are non-linear
+  for most tasks
 * => advisable to use a non-linear classifier rather than a simple linear one
 
 ### Fine-tuning makes the space simpler
@@ -299,8 +293,8 @@ well a representation supports classifiers for a task
 * In Table 3, we observe that
   the number of clusters decreases after fine-tuning
 * a simpler spatial configuration
-* The same trend holds for TREC-50 (Table 4), even when the final
-  representation is not linearly separable
+* The same trend holds for TREC-50 (Table 4),
+  even when the final repr is not linearly separable
 
 ## 4.3 Spatial Structure of Labels
 
@@ -310,14 +304,14 @@ well a representation supports classifiers for a task
   because it is non-linear even after fine-tuning
   * It is difficult to track the minimum distances between clusters when the
     clusters are merging during fine-tuning
-* Since all representations we considered are linearly separable 8 ,
+* Since all representations we considered are linearly separable 8
   * the number of clusters equals the number of labels
   * each cluster exclusively corresponds to one label
   * we will use clusters and labels interchangeably
 
 ### Fine-tuning pushes each label far away from each other
 
-* confirms the observation of Zhou and Srikumar (2021), who pointed out that
+* confirms the observation of Zhou and Srikumar (2021)
   * they use the global minimum distance between clusters to support this,
     which only partially supports the claim: the distances between some
     clusters might increase despite the global minimum distance decreasing
@@ -329,21 +323,21 @@ well a representation supports classifiers for a task
   * we only show the three labels where the distance increases the most/least
   * although the trend is increasing, the minimum distance associated with a
     label may decrease during the course of fine-tuning,
-  * eg, the label S TUFF in PS-role task, suggesting a potential instability of
-    fine-tuning
+  * eg, the label Stuff in PS-role task,
+    suggesting a potential instability of fine-tuning
 * we track the centroids of each cluster
   * We select three closest labels from the POS tagging task and
     track the paths of the centroids of each label cluster in the last layer of
     BERT base during the fine-tuning
-  * Figure 3 (right) shows the 2D PCA projection of these paths. We observe
-    * before fine-tuning, the centroids of all these three labels are close to
+  * Figure 3 (right) shows the 2D PCA projection of these paths
+    * before fine-tuning, the centroids of all these three labels are close
     * As fine-tuning proceeds, the centroids move around in different
       directions, away from each other
 * We conclude that fine-tuning enlarges the gaps between label clusters and
-  * admits more classifiers consistent with the labels, allowing for better
-  * neither the loss nor the optimizer explicitly mandates this change. Indeed,
-    since the labels were originally linearly separable, the learner need not
-    adjust the representation at all
+  * admits more classifiers consistent with the labels
+  * neither the loss nor the optimizer explicitly mandates this change
+    * since the labels were originally linearly separable, the learner need not
+      adjust the representation at all
 
 ## 4.4 Cross-task fine-tuning confirms the geometric explanation
 
@@ -357,9 +351,8 @@ well a representation supports classifiers for a task
   use the fine-tuned models for the PS-fxn task
   * Our choice of tasks motivated by the observation that
     * PS-role and PS-fxn are similar tasks (predict supersense tags for preps)
-    * POS tagging can adversely affect the PS-fxn task because POS/PS/fxn
-      tagging requires the prepositions to be grouped together/far away from
-      each other
+    * POS tagging can adversely affect the PS-fxn task because POS/PS-fxn
+      requires the preps to be grouped together/far away from each other
 * We apply DirectProbe on both representations to analyze the geometric changes
   with respect to PS-fxn
   * The PS-fxn task is still linearly separable even after fine-tuning on
@@ -368,10 +361,10 @@ well a representation supports classifiers for a task
 ### The effects of cross-task fine-tuning depends on how close two tasks are
 
 * The third and fourth columns of Table 5 indicate the number of labels whose
-  minimum distance is increased or decreased after fine-tuning. The second
-  column from the right shows the average distance change over all labels, eg
-  fine-tuning on POS results in the minimum distances of the PS-fxn labels
-  decreasing by 1.68 on average. We observe that
+  minimum distance is increased or decreased after fine-tuning
+* The second column from the right shows the average distance change over all
+  labels, eg fine-tuning on POS results in the minimum distances of the PS-fxn
+  labels decreasing by 1.68 on average
 * fine-tuning on
   * the same dataset (PS-fxn) increases the distances between labels (second
     row), which is consistent with observations from §4.3;
@@ -392,19 +385,19 @@ well a representation supports classifiers for a task
   * we do not further fine-tune the representations for PS-fxn
 * The last column of Table 5 shows the results
 * Fine-tuning on
-  * PS-fxn enlarges gaps between all PS-fxn labels, which justifies the highest
-    performance
-  * PS-role enlarges gaps between some labels in PS-fxn, leading to a slight
-    improvement
-  * POS tags shrinks the gaps between all labels in PS-fxn, leading to a
-    decrease in performance
+  * PS-fxn enlarges gaps between all PS-fxn labels,
+    which justifies the highest performance
+  * PS-role enlarges gaps between some labels in PS-fxn,
+    leading to a slight improvement
+  * POS tags shrinks the gaps between all labels in PS-fxn,
+    leading to a decrease in performance
 
 ## summary of §4.2, §4.3 and §4.4
 
 * fine-tuning injects or removes task-related information from representations
   by adjusting the distances between label clusters
-  even if the original representation is linearly separable (ie, when there is
-  no need to change the representation)
+  even if the original representation is linearly separable
+  (ie, when there is no need to change the representation)
   * When the original representation does not support a linear classifier,
     fine-tuning tries to group points with the same label into a small number
     of clusters, ideally one cluster

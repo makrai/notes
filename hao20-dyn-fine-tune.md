@@ -4,8 +4,7 @@ AACL
 
 # Abstract
 
-* pre-trained language model BERT advances the SOTA on many NLP tasks
-* few studies investigate how the fine-tuning process improves downstream
+* how the fine-tuning process improves downstream
 * we: two indicators
   * JS divergence to detect the change of the attention mode and
   * SVCCA distance to examine the change to the feature extraction mode
