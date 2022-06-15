@@ -28,12 +28,12 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 * Model introspection techniques (see Section 5)
   * often depend on the specifics of an encoder architecture
 * what we will call probing tasks
-  * Shi+ (2016) and Adi+ (2017) introduced the approach, relying on the
+  * Shi+ (2016) and Adi+ (2017) introduced the approach
   * a classification problem that focuses on simple linguistic properties
-  * e.g. categorize sentences by the tense of their main verb
-    * (without further embedding tuning). If the classifier succeeds, it means
-      that the pre-trained encoder is storing readable tense information into the
-      embeddings it creates. Note that:
+  * eg categorize sentences by the tense of their main verb
+    * (without further embedding tuning)
+    * If the classifier succeeds, it means that the pre-trained encoder is
+      storing readable tense information into the embeddings it creates
   * asks a simple question, minimizing interpretability problems
   * easier to control for biases than in downstream tasks
   * control for lexical cues or sentence length
@@ -41,7 +41,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 * We greatly extend earlier work on probing tasks as follows
   * a larger set of probing tasks (10 in total), organized by ling property
   * systematize the probing task methodology,
-    * controlling for e.g. lexical cues or sentence length
+    * controlling for eg lexical cues or sentence length
   * explore a wide range of SOTA encoding architectures and training methods,
   * relate probing and downstream task performance
 
@@ -49,7 +49,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 
 * probing benchmark criteria
   * should only require single sentence embeddings as input (as opposed to,
-    e.g., sentence and word embeddings, or multiple sentence representations)
+    eg, sentence and word embeddings, or multiple sentence representations)
   * large training sets
     * in order to train parameter-rich multi-layer classifiers,
       in case the relevant properties are non-linearly encoded in the sent vs
@@ -83,14 +83,14 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * as a 20-way classification problem:
     19 classes for the most frequent top constructions, and
     one for all other constructions. As an example,
-    e.g. “Then very dark gray letters on a black screen appeared [.]” has
+    eg “Then very dark gray letters on a black screen appeared [.]” has
     “ADVP NP VP .”
 
 ### Semantic information
 
 * also rely on syntactic structure, but they further require some denot
 * grouped with the semantic tasks, since, at least for models without
-  access to morphology), they must rely on what a sentence denotes (e.g.,
+  access to morphology), they must rely on what a sentence denotes (eg,
   * tense of the main-clause verb (VBP/VBZ forms are labeled as present, VBD as
     * No target form occurs across the train/dev/test split, so that classifiers
       (Shi+)
@@ -195,18 +195,18 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
 
 # 6 Conclusion 9
 
-> Their purpose of our tasks is not to encourage the development of ad-hoc
-> models that attain top performance on them
+> The purpose of our tasks is not to encourage the development of ad-hoc models
+> that attain top performance on them
 
 * interesting correlation between the tasks and more complex “downstream”
 * a set of intriguing findings about the linguistic properties
   * Bag-of-Vectors is surprisingly good at capturing sentence-level properties,
   * different encoder architectures trained with the same objective with
     similar performance can result in different embeddings
-* e.g. BiLSTM-max embeddings are
+* eg BiLSTM-max embeddings are
   * already capturing interesting linguistic knowledge before training, and
-  * after training, they detect semantic acceptability without neg data
+  * after training, they detect semantic acceptability without negative data
 * In future work, we would like to
-  * extend the probing tasks to other languages (they are automatically gened),
-  * multi-task training affects probing task performance and leverage our
+  * extend the probing tasks to other languages (they are automatically gented)
+  * multi-task training affects probing task performance
   * find more linguistically-aware universal encoders

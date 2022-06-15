@@ -5,23 +5,23 @@ ACL 2019
 # Abstract
 
 * we perform experiments to unpack the English language structure learned
-  * phrasal representation captures phrase-level information in the lower layers
-  * intermediate layers encode a rich hierarchy of linguistic information, with
-    surface features at the bottom, syntactic features in the middle and
-    semantic features at the top. BERT turns out to
-  * require deeper layers when long-distance dependency information is required,
-    e.g. to track subject-verb agreement
-  * a compositional representation that mimics classical, tree-like structures
+* phrasal representation captures phrase-level information in the lower layers
+* intermediate layers encode a rich hierarchy of linguistic information, with
+  surface features at the bottom, syntactic features in the middle and
+  semantic features at the top. turns out to
+* BERT requires deeper layers for long-distance dependency information
+  eg to track subject-verb agreement
+* a compositional representation that mimics classical, tree-like structures
 
 # 1 Introduction
 
-* interpretability of neural networks in NLP (Belinkov and Glass, 2019). An
+* interpretability of neural networks in NLP (Belinkov and Glass, 2019)
 * Goldberg (2019) shows that BERT captures syntactic phenomena well when
   evaluated on its ability to track subject-verb agreement
 * we use the
   * probing tasks defined in Conneau+ (2018) to show that BERT captures a rich
   * Tensor Product Decomposition Network (TPDN, McCoy+ 2019) to explore
-    different hypotheses about the compositional nature of BERT’s representation
+    different hypotheses about the compositional nature of BERT’s repr
     and find that BERT implicitly captures classical, tree-like structures
 
 # 6 Compositional Structure
@@ -30,7 +30,7 @@ ACL 2019
   explicitly compose the input token (“filler”) representations based on the
   role scheme selected beforehand using tensor product sum. For instance, a role
   scheme for a word can be based on the path from the root node to itself in the
-  syntax tree (e.g. ‘LR’ denotes the right child of left child of root). The
+  syntax tree (eg ‘LR’ denotes the right child of left child of root). The
   * assumtion: if a TPDN can be trained well to approximate the representation
     learned by a neural model, then that role scheme likely specifies the
     compositionality implicitly learned by the model
