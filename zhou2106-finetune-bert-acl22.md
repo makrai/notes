@@ -407,7 +407,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 * during fine-tuning, lower layers changed little compared to higher layers
   (Merchant+ 2020; Mosbach+ 2020b)
 * In the following experiments, we confirm their findings and further show
-  * fine-tuning does not change the representation arbitrarily, even for higher layers;
+  * fine-tuning does not change the repr arbitrarily, even for higher layers;
   * an analysis of the changes of different layers by a visual comparison
     between lower and higher layers
 * Here, we focus on the POS tagging task with BERT base
@@ -416,29 +416,29 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 ### Higher layers do not change arbitrarily
 
 * Mosbach+ (2020b) show that higher layers change more than the lower
-* nL, we find that higher layers still remain close to the original reprs. To
+* nL, we find that higher layers still remain close to the original reprs
 * we compare each layer during fine-tuning to its corresponding original
   pretrained one
   * spatial similarity between two representations is calculated as the
     Pearson correlation coefficient of their distance vectors (§2)
   * Intuitively, a classifier learns a decision boundary that traverses the
-    region between clusters, which makes the distances between clusters more
-    relevant to our analysis (as opposed to the spatial structure of points
-    within each cluster)
+    region between clusters => the distances between clusters more relevant to
+    our analysis than the spatial structure of points within each cluster
 * Figure 4 shows the results for all four tasks
-  * We exclude the TREC-50 task because it is non-linear. We cannot have the
-    distance vectors for non-linear representations
+  * We exclude the TREC-50 task because it is non-linear:
+    We cannot have the distance vectors for non-linear representations
   * To avoid visual clutter, we only show the plots for every alternate layer
   * For the higher layers, we find that the Pearson between the original
     representation and the fine-tuned one is surprisingly high (more than 0.5),
 * this reinforces the notion that fine-tuning does
   * not change the representation arbitrarily.  Instead, it
-  * attempts to preserve the relative positions the labels. This means the
-  * encodes task-specific information, yet it largely preserves the
+  * attempts to preserve the relative positions the labels
+  * ie encodes task-specific information, yet it largely preserves the
     pre-trained information encoded in the representation
 
 ### The labels of lower layers move only in a small region
 and almost in the same directions
+
 * The unchanged nature of lower layers raises the question:
 * do lower layers change at all? To answer this question,
   * for every label, we compute difference between its centroids before and
@@ -446,13 +446,13 @@ and almost in the same directions
 * Figure 5 shows the PCA projection in 2D of these difference vectors
   * Note that, in Figure 5, the motion range of lower layers is much smaller
     than the higher layers
-  * For brevity, we only present the plots for every alternative layer
+  * For brevity, we only present the plots for every alternate layer
     * A plot with all layers can be found in Appendix E
   * the movements of labels in lower layers concentrate in a few directions
     compared to the higher layers,
     suggesting the labels in lower layers do change, but do not separate the
     labels as much as higher layers
-  * the labels INTJ and SYM have distinctive directions in the lower layers
+  * the POS labels INTJ and SYM have distinctive directions in the lower layers
   * Figure 3
     * as opposed to the layer 12 (right) paths, we see that the
       layer 1 paths (left) traverse almost the same trajectories, which is
@@ -467,8 +467,8 @@ and almost in the same directions
 * Fine-tuning introduces a divergence between the training set and unseen
   examples (§4.1)
 * unclear how this divergence affects the generalization ability
-  * eg does this divergence suggest a new kind of overfitting that is driven
-    by representations rather than classifiers?
+* eg does this divergence suggest a new kind of overfitting that is
+  driven by representations rather than classifiers?
 
 ## How does fine-tuning alter the representation?
 
@@ -476,14 +476,14 @@ and almost in the same directions
   * grouping points with the same label into small number of clusters (§4.2)
   * pushing each label cluster away from the others (§4.3)
 * We hypothesize that the
-  distances between label clusters correlate with the classif performance and
-  * hypothesis confirmed by investigating cross-task fine-tuning (§4.4). Our
+  distances between label clusters correlate with the classif performance
+  * hypothesis confirmed by investigating cross-task fine-tuning (§4.4)
   * surprising because fine-tuning for a classification task does not need to
     alter the geometry of a representation if the data is already linearly
     separable in the original representation.  What we observe reveals
     geometric properties that characterize good representations
-  * no theoretical analysis to connect our geometric findings to representation
-    learnability, but the findings in this work may serve as a starting point
+  * no theoret anal to connect our geometric findings to repr learnability, but
+    the findings in this work may serve as a starting point
 
 ## How does fine-tuning change the geometric structure of different layers?
 
@@ -503,19 +503,19 @@ and almost in the same directions
 
 * analyzing and understanding representations. The most commonly used technique
   * classifier-based method
-    * linear classifiers (Alain and Bengio, 2017; Kulmizev+ 2020) starts with
+    * linear classifiers (Alain and Bengio, 2017; Kulmizev+ 2020)
     * linear probe is not sufficient to evaluate a repr (Hewitt and Liang 2019)
-    * non-linear probes (Tenney+ 2019; Eger+ 2019). There are also
+    * non-linear probes (Tenney+ 2019; Eger+ 2019)
   * from a geometric persepctive (Ethayarajh, 2019; Mimno and Thompson, 2017),
-    * DirectProbe (Zhou and Srikumar, 2021), which we use in this work. Another
+    * DirectProbe (Zhou and Srikumar, 2021), which we use in this work
   * control tasks (Ravichander+ 2021; Lan+ 2020) to reverse-engineer the
-    internal mechanisms of representations (Kovaleva+ 2019; Wu+ 2020). However,
+    internal mechanisms of representations (Kovaleva+ 2019; Wu+ 2020)
   * most studies (Zhong+ 2021; Li+ 2021; Chen+ 2021) focused on pre-trained
     representations, not fine-tuned ones
 * fine-tuning pre-trained representations
   * usually provides strong performance (Wang+ 2018; Talmor+ 2020),
-  * how fine-tuning manage to do so has remained an open question. Moreover,
-  * instability (Mosbach+ 2020a; Dodge+ 2020; Zhang+ 2020) and
+  * how fine-tuning manage to do so has remained an open question
+  * instability (Mosbach+ 2020a; Dodge+ 2020; Zhang+ 2020)
   * forgetting problems (Chen+ 2020; He+ 2021) make it harder to analyze
   * valuable conclusions
     * Merchant+ BlackboxNLP 2020
@@ -524,17 +524,17 @@ and almost in the same directions
     * Mosbach+ 2020b
     * Hao+ 2020 AACL-IJCNLP
       Yaru Hao, Li Dong, Furu Wei, and Ke Xu
-      Investigating learning dynamics of BERT fine-tuning. In Proceedings of
+      Investigating learning dynamics of BERT fine-tuning
 
 # 7 Conclusions 9
 
 # Appendix A Fine-tuning Details
 
-* we fine-tune all tasks and representations using HuggingFace library. We use
-  a linear weight schduler with a learning rate of 3e −4 , which uses
-  * 10% of the total update steps as the warmup steps]
+* we fine-tune all tasks and representations using HuggingFace library
+  * linear weight schduler with a learning rate of 3e −4 
+  * 10% of the total update steps as the warmup steps
     * The same schduler is used for all tasks
-* models are optimized by Adam (Kingma and Ba, 2015) with batch size of 32. All
+* models are optimized by Adam (Kingma and Ba, 2015) with batch size of 32
 * fine-tuning is run on a single Titan GPU
 * The best hidden-layer sizes for each task are shown in Table 7
 

@@ -9,12 +9,12 @@ https://github.com/anoymous92874838/text-adv-detection
 
 * Word-level adversarial attacks have shown to
   drastically decrease the performance of transformer-based models recently
-* As a countermeasure, adversarial defense has been explored, but
-* detect adversarial examples: relatively few efforts have been made 
+* As a countermeasure, adversarial defense has been explored
+* hE relatively few efforts have been made to _detect_ adversarial examples
 * may be crucial for eg review sentiment analysis
 * we release a dataset for 4 popular attack methods on 4 datasets and 4 models
-  * competitive baseline based on density estimation that has the
-    highest AUC on 29 out of 30 dataset-attack-model combinations
+* competitive baseline based on density estimation that has
+  the highest AUC on 29 out of 30 dataset-attack-model combinations
 
 # 1 Intro
 
@@ -27,11 +27,10 @@ https://github.com/anoymous92874838/text-adv-detection
 * image domain, two main lines of research to counteract adversarial attacks
   * adversarial example detection and defense
   * detection: discriminate an adversarial input from a normal input, whereas
-    * only few efforts have been made in techniques for the sole purpose of
-      detection
+    * only few efforts have been made in techniques for this sole purpose
   * defense intends to predict the correct output of the adversarial input
-    * some progress in NLP (Zhou+ 2021; Keller+ 2021; Jones+ 2020),
-* applications, in which alerting the victim of an existence of adversarial
+    * some progress in NLP (Zhou+ 2021; Keller+ 2021; Jones+ 2020)
+* applications, in which alerting the victim of an adversarial sample suffices
   * eg review sentiment analysis, news headline classification
   * gain information about the true data-generating population (eg consumers,
     news media, etc), rather than the adversary
@@ -52,7 +51,7 @@ https://github.com/anoymous92874838/text-adv-detection
     grammaticality) in order to be imperceptible (Morris+ 2020a)
   * carefully crafted word-level adversarial attacks can
     maintain original semantics and remain unsuspicious to human inspectors
-* we release a benchmark for wordlevel adversarial example detection
+* we release a benchmark for word-level adversarial example detection
   on four attack methods across four NLP models and
   four text classification datasets
   * simple but effective detection method that utilizes
@@ -63,9 +62,9 @@ https://github.com/anoymous92874838/text-adv-detection
   * We summarize the existing works in Table 1
   * Mozes+ (2021) rely on word frequency to assess the likelihood of sentences
 * we model the probability density of the entire sentence(s)
-  * we fit a parametric density estimation model to the features obtained from
-    a classification model (eg BERT) to yield likelihoods of each sample as
-    shown by Fig. 2
+  * we fit a parametric density estimation model
+    to the features obtained from a classification model (eg BERT)
+    to yield likelihoods of each sample as shown by Fig. 2
   * inspired by classic works in novelty detection (Bishop, 1994), which
     utilizes generative models to find anomalies
   * hE, simply fitting a parametric model suffers from curse of dimensionality
@@ -82,7 +81,7 @@ https://github.com/anoymous92874838/text-adv-detection
     not require validation sets of each attack method through robust parameter
     estimation
   * dataset for word-level adversarial example detection on 4 attacks, 4 text
-    classification datasets, and 4 models and the
+    classification datasets, and 4 models
     * source code for experimenting on various experimental protocols
   * analysis on a stronger adversary with partial knowledge of the detection
     method and techniques to counteract the adversary
