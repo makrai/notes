@@ -6,9 +6,10 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 # Abstract
 
 * rate of 1sg pronouns predicts demographic and psychological factors
-* We find that pronouns are overall more predictive when taking
-  * dependency relations and
-  * verb semantic categories into account, and,
+* We find that
+  * pronouns are overall more predictive when taking into account
+    * dependency relations and
+    * verb semantic categories
   * the direction of the relationship can change
 
 # Introduction

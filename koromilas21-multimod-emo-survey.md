@@ -237,9 +237,9 @@ Appl. Sci. 2021, 11,
     * hE the third attention step results in a worse performance compared to
       that achieved by MHA-2
 * A mix of traditional fusion techniques seems to be effective when combined
-  with strong segment feature representations, as shown in [55]. More
+  with strong segment feature representations, as shown in [55]
   * apply SOTA techniques for unimodal representations with the use of
-    * ALBERT [42] embeddings for the text modality. As for the
+    * ALBERT [42] embeddings for the text modality
     * audio modality a spectrogram is calculated for every audio segment and
       passed through a CNN in order to learn the unimodal representation
       * The sequence of segmented features is the input to a Bi-LSTM and a
@@ -264,8 +264,7 @@ Appl. Sci. 2021, 11,
       concatenation of the unimodal representations
 * Attention mechanisms
   not only serve to produce better cross-modal representations, but they can
-  * efficiently combine different feature extraction methods of the same
-    modality
+  * efficiently combine diff feature extraction methods of the same modality
   * [56] use two different, and widely used in text analysis, feature
     extraction techniques:
     * applying three Conv1D networks, with filter size 1, 2 and 3,
@@ -359,8 +358,8 @@ representations (UTA) is more common
 * CMU-MOSEI [63] has most of the desired properties
   * the biggest dataset available that includes the most speakers and the
     greatest subject variety
-  * YouTube videos, one of the most useful data sources, since many industrial
-    products are used on similar data
+  * YouTube videos, one of the most useful data sources,
+    since many industrial products are used on similar data
   * labels for emotion recognition + for (text-based) sentiment analysis
   * mostly used for sentiment analysis architectures (eg, [63,66,67,70,83–85])
 * IEMOCAP [74]

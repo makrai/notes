@@ -97,8 +97,8 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 
 * Of the 3,872 responses, 63.5% were assigned the negative label
   (10.4% positive, 14.3% neither positive nor negative, 11.7% both)
-  * The high class skew is a side effect of selection bias in our dataset -
-    most psychotherapy seekers exhibit negative thinking, which is one major
+* The high class skew is a side effect of selection bias in our dataset -
+  most psychotherapy seekers exhibit negative thinking
 
 ## Experiments
 

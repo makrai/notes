@@ -28,7 +28,7 @@ John P. Pestian, Michael Sorter, Brian Connolly, Kevin Bretonnel Cohen,
   * Li, Ng, Chau, Wong, and Yip (2013) presented a framework in web forums;
   * Zhang+ (2015) used microblog data with approximately 90% accuracy
   * Pestian, Matykiewicz, and Grupp‐Phelan (2008)
-    * distinguish between notes written by people who died by suicide and simul
+    * distinguish notes written by people who died by suicide vs simulated ones
     * better than mental health professionals (71% vs. 79%; Pestian+ 2008)
   * international, shared task‐setting (Voorhees+ 2005), 24 teams 
     * identify emos in over 1,319 suicide notes written shortly before death

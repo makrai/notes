@@ -13,5 +13,6 @@ Neuropsychopharmacology volume 46, pages252–253(2021)
 * temporal information, e.g. to identify the onset of psychotic symptoms [5]
   * modelling complex entities from multiple keywords (eg violence or abuse)
 * combining computational and clinical expertise is crucial for these
-* synthetic clinical text data, that can be accessed more widely for method
-  development before deploying on real data [6]. Applied clinical NLP
+* synthetic clinical text data
+  * can be accessed more widely for method development
+    before deploying on real data [6]
