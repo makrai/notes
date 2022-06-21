@@ -5,7 +5,7 @@ arXiv:1804.05788 [cs.AI]
 # Abstract
 
 * Emotion recognition, Human Computer Interactions, behaviour modelling
-  * Neural Networks which are adept at estimating complex functions that depend
+  * Neural Networks which are adept at estimating complex functions
 * we: multimodal Emotion recognition on IEMOCAP dataset using
   * data from Speech, Text, and Motion capture data from face expressions,
     rotation and hand movements
@@ -27,8 +27,7 @@ arXiv:1804.05788 [cs.AI]
     * [17] use Connectionist Temporal Classification loss function to allow
       them model states with little or no emotions in speech window. We
 * we detect emotions from many modalities of IEMOCAP. For this we explore
-  * first get the best individual detection accuracy from each of the different
-    modes. We then try
+  * first get the best individual detection accuracy from each of the modes
   * combine them in an ensemble based architecture to allow for
     * end-to-end training across the different modalities using the variations
       of the better individual models. Our ensemble consists of

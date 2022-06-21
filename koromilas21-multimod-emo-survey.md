@@ -421,9 +421,9 @@ representations (UTA) is more common
       out)
     * classification metrics (eg, binary metrics for each label vs multiclass
       aggregated metrics)
-  * speaker-dependent experimentation may result in overfitted results (in
-    terms of speaker identity)
-  * leave-one-speaker-out evaluation should be used as a standard not only to
+  * speaker-dependent experimentation may result in overfitted results
+    (in terms of speaker identity)
+  * leave-one-speaker-out evaluation should be used as a standard
   * experiments have to list both binary and multiclass metrics and also
   * capture both the dimensional (ie, valence, arousal and dominance) and the
     categorical (discrete emotions) dimensions of emotion recognition
@@ -442,8 +442,8 @@ representations (UTA) is more common
 * methods need to be adopted for signal representation
   * in the task of multimodal speech emotion recognition, a few specific
     low-level modality representation techniques have been established
-    * aural modality, signal-analysis-based features that are associated with
-      both the spectral and temporal domains are used
+    * aural modality, signal-analysis-based features that are
+      associated with both the spectral and temporal domains
     * textual: basic word embeddings are used
     * visual: traditional facial features are used
     * deep learning techniques has resulted in better representation
