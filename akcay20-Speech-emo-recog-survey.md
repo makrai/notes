@@ -52,17 +52,17 @@ Speech Communication, 2020-Elsevier
     in special silent rooms
   * real-life data is noisy and has far more different characteristics than the
   * natural data sets are also available, they are fewer in numbers. There are
-  * legal and ethical problems to record and use natural emotions. Most of the
+  * legal and ethical problems to record and use natural emotions
   * talk-shows, call-center recordings, and similar cases where the involved
-    parties are informed of the recording.  These data sets do
+    parties are informed of the recording
     * not contain all emotions and may not reflect the emotions that are felt.
   * The actual emotion felt by the speaker and emotions perceived by human
-    annotators may show differences. Even the recognition rates of human
-* cultural and language effects on SER. There are
+    annotators may show differences
+* cultural and language effects on SER
   * several studies available working on cross-language SER. 
   * hE, the results show that current systems and features used are not suffic
   * The intonation of emotions on speech among various languages may show diff
-* multiple speech signals, where the SER system has to decide which signal to
+* multiple speech signals, where the SER system has to choose the signal
   * can be handled via a speech separation algorithm in the preprocessing
   * current systems fail to notice this problem.
 

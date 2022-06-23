@@ -333,7 +333,7 @@ representations (UTA) is more common
       the decoder of the discriminative factor is used for inference
     * For the encoder networks, the MFN architecture is used while
       LSTMs serve as decoders
-    * competitive performance on six multimodal time series datasets, a big
+    * competitive performance on six multimodal time series datasets
     * reconstruction of missing modalities from observed modalities does not
       significantly impact discriminative performance
 
@@ -388,7 +388,7 @@ representations (UTA) is more common
 
 * most of the authors have tested their work on the IEMOCAP datasets
   * Some works present results for other datasets
-    eg CMU-MOSEI (eg, [63,66,84]) or REVOLA (eg, [57]), but
+    eg CMU-MOSEI (eg, [63,66,84]) or REVOLA (eg, [57])
     hE these works can be only grouped in small sets, and thus we think that
     the best overview of the field architectures can only be seen in an IEMOCAP
 * In Table 2, we only group some metrics associated with IEMOCAP
@@ -399,8 +399,8 @@ representations (UTA) is more common
       actual differences between each architecture’s ideas
     * For an empirical comparison of such architectures, which trains from
       scratch a wide range of the presented architectures, we refer to [88]
-* We also report the results on unaligned multimodal emotion recognition, which
-  * input data sequences are not forced-aligned by the dataset owners. This
+* We also report the results on unaligned multimodal emotion recognition
+  * input data sequences are not forced-aligned by the dataset owners
   * closer to reality and can result in approaches that extract more efficient
     multimodal temporal representations: more robust in real-world applications
   * In Table 3, the connectionist temporal classification (CTC) [89] method is
