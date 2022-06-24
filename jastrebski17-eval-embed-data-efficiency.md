@@ -60,15 +60,15 @@ Results and scripts will be posted online upon publication
     * In certain applications, like tagging they are crucial
       (Sharp+ 2016a, Lample+ 2016)
       * R Sharp, M Surdeanu, P Jansen, P Clark, ... M Hammond
-        Creating causal embeddings for QA with minimal supervision.
+        Creating causal embeddings for QA with minimal supervision
         CoRR 2016b http://arxiv.org/abs/1609.08097
       * G Lample, M Ballesteros, K Kawakami, S Subramanian, C Dyer
-        Neural architectures for named entity recognition.
+        Neural architectures for named entity recognition
         NAACL 2016
     * trade off between different information
       * our hypothesis: specialization of word embeddings can be best evaluated
         by checking what simple information is most easily recoverable
-  * word level classification problems (like noun classification) (Köhn, 2015b)
+  * word level classification problems (like noun classification, Köhn, 2015b)
   * we also suggest testing relations between words (e.g. in WS and WA)
   * algebraic structure that is encoded in word representation space
     * embeddings have useful information only in a small subspace
@@ -100,7 +100,7 @@ Results and scripts will be posted online upon publication
     3-tuples). WordRep dataset is a set of pairs which we split into disjoint
     sets
 * Sentence: Stanford Sentiment Treebank (Socher+ 13) and
-  News20 (3 binary datasets) (Tsvetkov+ 15a)
+  News20 (3 binary datasets, Tsvetkov+ 15a)
 * Single word:
   Datasets constructed from lexicons collected in (Faruqui and Dyer 15b):
   * POS tagging (3 datasets for verb, noun and adjective)
@@ -119,33 +119,33 @@ Results and scripts will be posted online upon publication
   * Sentence:
     * Logistic Regression,
     * Support Vector Machine (SVM) with RBF kernel taking as input avg(`w_i`)
-    * Convolutional Neural Network (CNN) (Kim, 2014) taking conc(`w_i`)
+    * Convolutional Neural Network (CNN, Kim, 2014) taking conc(`w_i`)
   * Single word: RF, SVM (with RBF kernel), Naive Bayes,
     k-Nearest Neighbor Classifier and Logistic Regression
 
 ## Embeddings
 
 * “shallow” pretrained embeddings:
-  * GloVe (100 and 300 dimensions) (Pennington+ 2014),
-  * Hellinger PCA (HPCA) (Lebret and Collobert 2014),
+  * GloVe (100 and 300 dimensions, Pennington+ 2014),
+  * Hellinger PCA (HPCA, Lebret and Collobert 2014),
   * PDC (100 and 300 dimensions) and
-  * HDC (300 dimensions) (Sun+ 2015)
+  * HDC (300 dimensions, Sun+ 2015)
 * pretrained “deep” embeddings
   * Neural Translation Machine (NMT, activations of the deep model are
-    extracted as word embeddings) (Hill+ 2014),
-  * morphological embeddings (morph) (Luong+ 2013) and
+    extracted as word embeddings, Hill+ 2014),
+  * morphological embeddings (morph, Luong+ 2013) and
   * HPCA variant trained using autoencoder architecture (Lebret & Collobert 15)
 * In some experiments we additionally include publicly available pretrained
   skip-gram embeddings on
   * Google News corpora and  on
-  * Wikipedia corpora (Ling+ 2015) (used commonly in syntax demanding tasks,
-    like tagging).
+  * Wikipedia corpora (Ling+ 2015, used commonly in syntax demanding tasks,
+    like tagging)
 
 TODO
 
 ## 3.4 Learnable Similarity and Analogy tasks
 
-* analogy: In the case of HasContext and InstanceOf datasets...
+* analogy: In the case of HasContext and InstanceOf datasets,,,
 
 ## 3.3 Rank stability under changing dataset size
 
@@ -157,13 +157,13 @@ TODO
   * different data efficiency properties for different tasks, i.e. none of
 * standard deviation of both rank at the end and beginning is around 2.5, which
   further reinforces findings from (Schnabel and Labutov, 2015) that embeddings
-  orderings are very task dependent.
+  orderings are very task dependent
 * data efficiency exemplified by differences between GloVe 100 and 300
   (elaborated on in the next section)
 
 ## 3.6 Linear vs non–linear models
 
-* there are embeddings especially fitted for use with linear models, Fig. 1.
+* there are embeddings especially fitted for use with linear models, Fig. 1
   * typically used evaluation does not answer whether there is information
     about task X in the embedding Y
   * e.g. difference in performance between two pretrained GloVe embeddings of
@@ -177,8 +177,8 @@ TODO
 
 * algebraic interpretation of word embeddings (Arora+ 2016)
   * decompose word embedding space into a set of concepts
-  * (so each word vector can be well approximated by a sum of few concepts) 9 .
-  * can be obtained using standard methods like k-SVD.
+  * (so each word vector can be well approximated by a sum of few concepts) 9 
+  * can be obtained using standard methods like k-SVD
   * Theoretically, tasks should test for existence of such concepts
 
 # 4 Conclusion

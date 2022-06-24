@@ -107,8 +107,8 @@ reprl4nlp arXiv:1903.05987
 ## Discussion
 
 * Mou+ (2016) showed that similar pretraining tasks transfer better
-  * hE Mou+ (2016) only investigate transfer between classification tasks (NLI
-    → SICK-E/MRPC)
+  * hE Mou+ (2016) only investigate transfer between classification tasks
+    (NLI → SICK-E/MRPC)
 * In computer vision (CV), Yosinski+ (2014) similarly found that the
   transferability of features decreases as the distance between the pre-
   training and target task increases
@@ -192,8 +192,8 @@ reprl4nlp arXiv:1903.05987
     * similar results when using max-pooling or the representation of the first
       token
 * diagnostic classifiers
-  * features: for each example, we extract the pretrained and fine-tuned
-    representation at each layer
+  * features: for each example, we extract the pretrained and fine-tuned repr
+    at each layer
   * logistic regression model (linear regression for STS-B, which has
     real-valued outputs)
   * data: the training data of
@@ -207,8 +207,8 @@ reprl4nlp arXiv:1903.05987
   * by task
     * For the single sentence classification tasks CoLA and SST-2, pretrained
       performance increases gradually until the last layers
-    * sentence pair tasks MRPC and STS-B performance is mostly flat after the
-      fourth layer
+    * sentence pair tasks MRPC and STS-B performance is
+      mostly flat after the fourth layer
       * ie Relevant information not seem to be concentrated primarily in the
         upper layers of pretrained representations, which could
         explain why fine-tuning is particularly useful in these scenarios
@@ -223,7 +223,7 @@ reprl4nlp arXiv:1903.05987
       * For the same settings, we obtain non-zero values with earlier
         estimators (Saxe+ 2018), which seem to be
         * less reliable for higher numbers of dimensions
-  * We show the mutual information I(H; Y ) between the pretrained and
+  * We show the mutual information I(H; Y) between the pretrained and
     fine-tuned mean hidden activations H at each layer of BERT and the output
     labels Y on the dev sets of CoLA, SST-2, and MRPC in Figure 2
     * pretrained: The MI between pretrained representations and labels is close

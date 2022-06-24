@@ -1,6 +1,6 @@
 Arvind Neelakantan, Jeevan Shankar, Alexandre Passos, Andrew McCallum
 2014 EMNLP
-Efficient Non-parametric Estimation of Multiple Embeddings per Word ..
+Efficient Non-parametric Estimation of Multiple Embeddings per Word .
 
 https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 * The global vectors, sense vectors and cluster centers of our model and
@@ -17,7 +17,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 # 1 Introduction
 
 * Skipgram ... applied to machine translation
-  * (Zou et al, 2013; Mikolov et al, 2013c)
+  * (Zou+ 2013; Mikolov+ 2013c)
     * Zouék valójában a Collobert-Huang vonalat képviselik
 * polysemy and hononymy in vector space
   * In moderately high-dimensional spaces
@@ -25,10 +25,10 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
   * triangle inequality => words that are not synonyms but are synonymous with
     different senses of the same word will be pulled together
 * embeddings for multiple senses per word type
-  * Reisinger and Mooney (2010a) and Huang et al (2012)
+  * Reisinger and Mooney (2010a) and Huang+ (2012)
     * Huang improves upon Reisinger
       * by an earlier pass of non-discriminated learning
-    * Huang et al (2012) method took one week
+    * Huang+ (2012) method took one week
     * corpus containing close to billion tokens
 * This paper
   * vectors are learned jointly with the assignment of token contexts to senses
@@ -49,7 +49,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
   * Canonical Correlation Analysis (CCA)
 * multiple vector representations for the same word type
   * While methods such as those described in Dhillon and Ungar (2011) and Reddy
-    et al (2011) use token-specific representations of words as part of the
+   + (2011) use token-specific representations of words as part of the
     learning algorithm, the final outputs are still one-to-one mappings
 
 # 3 Background: Skip-gram model
@@ -58,7 +58,7 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 
 # 4 Multi-Sense Skip-gram (MSSG) model
 
-* Az első bekezdés midkét modelljükre igaz, utána nem.
+* Az első bekezdés midkét modelljükre igaz, utána nem
 * cluster valójában cluster centroid?
 * In the MSSG model, each word w ∈ W is associated with
   * a global vector `v_ g(w)` and
@@ -70,10 +70,10 @@ https://people.cs.umass.edu/~arvind/emnlp2014wordvectors
 * online non-parametric clustering procedure described in Meyerson (2001)
 * mikor készül új jelentés? A távolságban determinisztikus vagy véletlen?
   * We create a new cluster (sense) for a word type with probability propor-
-    tional to the distance of its context to the nearest cluster (sense).
+    tional to the distance of its context to the nearest cluster (sense)
   * new context cluster and a sense vector are created [when] the similarity
     between ... the context with every existing cluster center of the word is
-    less than λ, where λ is a hyperparameter of the model.
+    less than λ, where λ is a hyperparameter of the model
 
 ```
 if (createClusterlambda < minDist) {
@@ -97,8 +97,8 @@ if (createClusterlambda < minDist) {
 ## 6.2 Word Similarity
 
 * datasets:
-  * WordSim-353 (Finkelstein et al, 2001) dataset and the
-  * Stanford’s Contextual Word Similarities (SCWS) (Huang et al 2012)
+  * WordSim-353 (Finkelstein+ 2001) dataset and the
+  * Stanford’s Contextual Word Similarities (SCWS, Huang+ 2012)
 * our metrics
   * avgSim
   * ! avgSimC weighs the similarity between each pair of senses by how well

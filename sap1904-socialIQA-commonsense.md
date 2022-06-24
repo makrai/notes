@@ -45,9 +45,9 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * through sequential finetuning of a pretrained language model on SocialIQa
     before other tasks.  Specifically, we use SocialIQa to set a
 * new SOTA on three commonsense challenge datasets:
-  * COPA (Roemmele+ 2011) (83.4%), the
-  * original Winograd (Levesque, 2011) (72.5%), and the
-  * extended Winograd dataset from Rahman and Ng (2012) (84.0%)
+  * COPA (Roemmele+ 2011, 83.4%), the
+  * original Winograd (Levesque, 2011, 72.5%), and the
+  * extended Winograd dataset from Rahman and Ng (2012, 84.0%)
 * contributions are as follows:
   * SocialIQa, the first large-scale QA dataset aimed at testing soc & emo
   * question-switching, a technique to collect incorrect answers that
