@@ -1,6 +1,6 @@
-S Buechel, U Hahn
 Word emotion induction for multiple languages as deep multi-task learning
-naacl 2018
+S Buechel, U Hahn
+NAACL 2018
 
 code base + resulting experimental data is freely available
 https://github.com/JULIELab/wordEmotions
