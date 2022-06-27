@@ -6,7 +6,7 @@ EMNLP 2020
 # Abstract
 
 * Performance in cross-lingual NLP tasks is impacted by the (dis)similarity of
-  languages at hand: e.g., previous work has suggested there is a connection
+  languages at hand: eg, previous work has suggested there is a connection
   between the expected success of bilingual lexicon induction (BLI) and the
   assumption of (approximate) isomorphism between monolingual embedding spaces
 * we present a large-scale study focused on the
@@ -39,19 +39,19 @@ EMNLP 2020
     dependency parsers or POS taggers
     (Naseem+ 2012; Ponti+ 2018; de Lhoneux+ 2018)
   * eg2: MT:
-    with all other factors kept similar (e.g., training data size, domain sim),
+    with all other factors kept similar (eg, training data size, domain sim),
     the quality of machine translation also depends heavily on the
     properties and proximity of the actual language pair (Kudugunta+ 2019)
 * we propos a suite of spectral-based measures that capture the degree of
   isomorphism (Søgaard+ 2018) between the two monolingual embedding spaces
-  * hypothesis is that the potential to align two embedding spaces and learn
-    transfer functions can be estimated through
-    the differences between the monolingual embeddings’ spectra
-  * representative statistics of the spectrum of an embedding space (i.e., the
-    set of the singular values of the embedding matrix)
-    * eg condition number or its sorted list of singular values
-  * derive measures for the isomorphism between two embedding spaces based on
-    these statistics
+  * hypothesis:
+    the potential to align two embedding spaces and learn transfer functions
+    can be estimated through the differences between the monoling embeds’ spect
+  * representative statistics of the spectrum of an embedding space
+    (ie, the set of the singular values of the embedding matrix)
+    * eg condition number or the sorted list of singular values
+  * derive measures for the isomorphism between two embedding spaces
+    based on these statistics
 * empirical evaluation with a range of cross-lingual NLP tasks
   * our proposed spectrum-based isomorphism measures
     better correlate and explain greater variance
@@ -76,7 +76,7 @@ EMNLP 2020
   * we report much higher correlations with BLI scores than existing
     isomorphism measures, across a variety of SOTA BLI approaches
   * previous work was limited only to coarse-grained analysis with a small
-    number of language pairs (i.e., < 10), our study is the first large-scale
+    number of language pairs (ie, < 10), our study is the first large-scale
   * hundreds of diverse language pairs, focusing on
     typologically, geographically and phylogenetically distant pairs
     as well as on similar languages
@@ -85,8 +85,9 @@ EMNLP 2020
   strong correlations with machine translation (MT) performance
 * our spectral-based measures can be combined
   with typologically driven language distance measures to achieve further impro
-  * complementary nature of the implicit knowledge coded in
-    * continuous semantic spaces (and captured by our spectral measures) and the
+  * complementary nature of the
+    * implicit knowledge coded in continuous semantic spaces
+      (and captured by our spectral measures) and the
     * discrete linguistic information from typological databases
 
 # 2 Quantifying Isomorphism with Spectral Statistics 2
@@ -105,8 +106,8 @@ EMNLP 2020
 * Following Higham+ (2015), we compute the condition number of an input matrix
 * the ratio between its first (largest) and last (smallest) singular values:
 * A smaller condition number denotes a more “stable” matrix
-* A function learnt on an embedding space that is sensitive to small
-  perturbations may not generalize well
+* A function learnt on an embedding space that is sensitive to small perturbs
+  may not generalize well
 
 #### Are small singular values reliable?
 
@@ -141,8 +142,8 @@ EMNLP 2020
 ### Effective Condition Number
 
 * We replace σ d in Eq. (1) with the singular value at the position of X’s
-  effective rank, and compute the effective condition number κ ecn as follows:
-  κ ecn (X) = σ 1 σ erank(X)
+  effective rank, and compute the effective condition number `κ_ecn` as follows
+  `κ_ecn` (X) = σ 1 σ erank(X)
 * In §5 we empirically validate the quality of the effective condition number
   in comparison to the standard condition number
 
@@ -151,10 +152,10 @@ EMNLP 2020
 * We combine the two condition numbers using the harmonic mean function (HM)
   to derive an isomorphism measure COND-HM between two embedding spaces,
 * similarly define the
-  [effective] ECOND-HM measure over κ ecn (X 1) and κ ecn (X 2)
+  [effective] ECOND-HM measure over `κ_ecn` (X 1) and `κ_ecn` (X 2)
 * we have empirically validated (§5) that HM is a robust choice that
-  outperforms some other possibilities (e.g., the arithmetic mean)
-* hypothesize this is because HM leans towards the smaller one (unlike arithm)
+  outperforms some other possibilities (eg, the arithmetic mean)
+* this may be because HM leans towards the smaller one (unlike arithm)
   * a noisy embedding space and a stable one would have an HM that leans
     towards the stable one
   * embedding spaces with small condition numbers can often tolerate noisy
@@ -162,9 +163,9 @@ EMNLP 2020
 
 ### Singular Value Gap
 
-* In addition to COND HM and ECOND HM, we introduce another measure that
-* empirically quantifies the divergence between the full spectral information
-  of two embedding spaces
+* In addition to COND HM and ECOND HM, we introduce another measure
+* empirically quantifies the divergence
+  between the full spectral information of two embedding spaces
 * the gap between the singular values obtained from the matrices X 1 and X 2
   sorted in descending order
 * the squared Euclidean distance between the corresponding sorted singular
@@ -176,40 +177,39 @@ EMNLP 2020
 ## Measuring Approximate Isomorphism
 
 * two standard isomorphism measures from prior work
-  which are most similar to our work, and use them as our main baselines. The
-* Isospectrality (IS) (Søgaard+ 2018), is based on spectral analysis as well,
+  which are most similar to our work: use them as our main baselines
+* Isospectrality (IS, Søgaard+ 2018), is based on spectral analysis as well,
   * based on the Laplacian eigenvalues of the nearest neighborhood graphs
-    that originate from the initial embedding spaces X 1 and X 2 (for further
-    technical details see Appendix A)
+    that originate from the initial embedding spaces X 1 and X 2
+    (for further technical details see Appendix A)
   * Søgaard+ (2018)
     * these eigenvalues are compact representations of the graph Laplacian,
-    * their comparison reveals the degree of (approximate) isomorphism.
+    * their comparison reveals the degree of (approximate) isomorphism
     * similar in spirit to our approach,
     * hE constructing nearest neighborhood graphs (and then analyzing their
       eigenvalues) removes useful information on the interaction between
-      all vectors from the initial space, which our spectral method retains.
-*  Gromov-Hausdorff distance (GH) introduced by Patra+ (2019)
+      all vectors from the initial space, which our spectral method retains
+* Gromov-Hausdorff distance (GH) introduced by Patra+ (2019)
   * measures the maximum distance of a set of points to the nearest point in
-    another set, or in other words
-    the worst case distance between two metric spaces X and Y (see Append A)
+    another set
+    ie the worst case distance between two metric spaces X and Y (see Append A)
   * Patra+ (2019) propose this distance to test how well two language
     embedding spaces can be aligned under an isometric transformation
 * both IS and GH were reported to have strong correlations with BLI performance
-  * not evaluated in large-scale experiments before. In fact, the
-  * correlations were computed on a very small number of language pairs (IS: 8
-    pairs, GH: 10 pairs)
- * neither scale well computationally. Therefore, for computational
-   * the scores are computed only on the sub-matrices spanning the sub-spaces
-     of the most frequent subsets from the full embedding spaces (IS: 10k
-     words, GH: 5k words)
+  * not evaluated in large-scale experiments before
+  * correlations were computed on a very small number of language pairs
+    (IS: 8 pairs, GH: 10 pairs)
+  * neither scale well computationally. Therefore
+    * the scores are computed only on the sub-matrices
+      spanning the sub-spaces of the most frequent subsets from the full embed
+      (IS: 10k words, GH: 5k words)
    * we provide full-fledged empirical analyses of the two measures
      on a much larger number of pairs from diverse languages, and
-     compare them against the spectral-based measures introduced in §2. The
+     compare them against the spectral-based measures introduced in §2
    * the proposed spectral-based methods are grounded in linear algebra theory
-     => more intuitive understanding of their theoretical underpinning than
+     => more intuitive understanding of their theoretical underpinning
 
-## Measuring Language Similarity. At the same time, distances between language
-pairs can also
+## Measuring Language Similarity
 
 # 4 Experimental Setup 5
 
@@ -221,7 +221,7 @@ pairs can also
   * they show the strongest individual correlations with task performance
     among all isomorphism measures and linguistic distances alike
   * The only exception is the MT task, where our measures fall short of TYP
-    * still hold a strong advantage over the baseline GH and IS isomor measures
+    * still a strong advantage over the baseline GH & IS isomorphism measures
 * ECOND HM outperforms COND-HM on 2 of 3 BLI datasets and 2 of 3 downstream
   * ie discarding the smallest singular values reduces noise
   * SVG shows greater stability across tasks and datasets than ECOND HM
@@ -232,13 +232,13 @@ pairs can also
   * our spectral measures are complemented by linguistically driven lang dists
   * their combination achieves very high correlation scores
     * across all tasks and settings (see bottom rows of the tables)
-    * eg spectral measures + the linguistic distances, the regression model
-      reaches outstanding corr scores up to r = .91 on PanLex BLI (Tab 1); with
+    * eg spectral measures + linguistic distances, the regression model reaches
+      outstanding corr scores up to r = .91 on PanLex BLI (Tab 1)
     * PanLex: 420 lang pairs, the most comprehensive BLI dataset in our study
-  * GH and IS are not chosen as significant regressors in the stepwise regressi
+  * GH and IS are not chosen as significant regressors in the stepwise regress
     * indicates that they capture less information than our spectral methods
-  * ie conceptually different distances capture different properties of sim
-    between languages, which has a synergistic effect
+  * ie conceptually different distances capture diff properties of lang sim
+    => synergistic effect
 * individual tasks, we note that
   * our spectral-based measures outperform the baselines regardless of the
     underlying BLI method
@@ -248,7 +248,7 @@ pairs can also
     correlation from 0.79 to 0.87 (Table 2, second column)
   * POS tagging task, SVG and GH are on par, and the
     * combination with IS and TYP increase their correlation from 0.52 to 0.59
-  * Additional results and analyses are provided in Appendix B
+  * Additional results and analyses in Appendix B
   * our measures also indicate transfer quality of different target/src
     languages for a given source/tgt language, for the tasks discussed here
 
@@ -265,18 +265,17 @@ pairs can also
 * input embedding
   * the spectral methods are computed solely on word vectors from Wikipedia,
     the results in the downstream tasks are computed with different sets of
-    embeddings (e.g., multilingual embeddings for dependency parsing), or the
+    embeddings (eg, multilingual embeddings for dependency parsing), or the
     embeddings are learnt during training (for POS tagging and MT)
-* use of effective rank improving the condition number (via effective condition
-  number)
-  * inspired by recent work that aimed to automatically detect true dim of embe
+* use of effective rank improving the condition number
+  (via effective condition number)
+  * inspired by recent work that aimed to automatically detect true embed dim
     * tuning embedding dimensionality to evaluation tasks at hand
       (Wang, 2019; Raunak+ 2019; Carrington+ 2019)
     * we extract the true embedding dimensionality directly from the embedding
     * Yin and Shen, (2018) employed perturbation analysis to study the
       robustness of embedding spaces to noise in monolingual settings, and
-      established that it is also related to effective dimensionality of the
-      embedding space
+      established that it is also related to effective dim of the embed space
 * we replace the standard matrix rank with effective rank
   when computing the condition number and our effective condition number (§2.1)
 * we are the first to compare language distance measures that are based on

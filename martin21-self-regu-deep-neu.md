@@ -8,14 +8,14 @@ Journal of ML Research 22(165):1−73, 2021
 * we apply Random Matrix Theory (RMT) to analyze the weight matrices of DNNs,
 * which network
   * production quality, pre-trained models such as AlexNet and Inception
-  * smaller models trained from scratch, e.g. LeNet5 and a miniature-AlexNet
+  * smaller models trained from scratch, eg LeNet5 and a miniature-AlexNet
 * Empirical and theoretical results clearly indicate that
   the DNN training process itself implicitly implements a form of Self-Regu,
   implicitly sculpting a more regularized energy or penalty landscape
   * the empirical spectral density (ESD) of DNN layer matrices displays
     signatures of traditionally-regularized statistical models
     * without exogenously [~kívülről] specifying traditional forms of
-      explicit regu e.g. Dropout or Weight Norm constraints
+      explicit regu eg Dropout or Weight Norm constraints
 * we identify 5+1 Phases of Training,
   * Building on relatively recent results in RMT,
     most notably its extension to Universality classes of Heavy-Tailed mxs
@@ -44,15 +44,15 @@ Journal of ML Research 22(165):1−73, 2021
   * Vapnik+ (1994) said
     * [VC] theory is derived for methods that minimize the empirical risk
     * hE, multilayer nets cannot be viewed as minimizing the empirical risk
-      over [the] entire set of functions implementable by the network
+      over the entire set of functions implementable by the network
   * It was originally assumed that local minima in the energy/loss surface were
     responsible for the inability of VC theory to describe NNs (Vapnik+ 1994),
     * getting trapped in local minima during training limited the number of
       possible functions realizable by the network
   * soon realized that the presence of local minima in the energy function was
     not a problem in practice (LeCun+ 1998; Duda+ 2001)
-    * More recently, this fact seems to have been rediscovered (Pascanu+ 2014;
-      Dauphin+ 2014; Goodfellow+ 2014; Soudry and Hoffer, 2017)
+    * More recently, this fact has been rediscovered
+      (Pascanu+ 2014; Dauphin+ 2014; Goodfellow+ 2014; Soudry and Hoffer, 2017)
   * there were other theories of generalization based on statistical mechanics
     (Seung+ 1992; Watkin+ 1993; Haussler+ 1996; Engel and den Broeck, 2001),
     * fell out of favor in the ML/NN communities for technical and non-tech rea
@@ -68,7 +68,7 @@ Journal of ML Research 22(165):1−73, 2021
   * non-neu regularization can be either explicit or implicit
     * explicit, it involves making the loss function L “nicer” or “smoother” or
       “more well-defined”
-      by adding an explicit capacity control term directly to the loss, i.e.,
+      by adding an explicit capacity control term directly to the loss, ie
       by considering a modified objective of the form L(W) + αkW k
       * we tune the regularization parameter α by cross validation
     * implicit, we instead have some adjustable operational procedure
@@ -97,16 +97,16 @@ Journal of ML Research 22(165):1−73, 2021
     what is the right theoretical framework to investigate regu for DNNs?
   * Practical: How can one control and adjust, in a theoretically-principled
     way, the many knobs and switches that exist in modern DNN systems,
-    e.g., to train these models efficiently and effectively,
+    eg to train these models efficiently and effectively,
     to monitor their effects on the global Energy Landscape, etc.?
-* e.g. provide metrics to characterize qualitatively different classes of
+* eg provide metrics to characterize qualitatively different classes of
   learning behaviors, as predicted in recent work (Martin and Mahoney, 2017)
 
 ## 1.2 Overview of our approach
 
 ## 1.3 Summary of our results
 
-* We analyze the distribution of eigenvalues, i.e., the Empirical Spectral
+* We analyze the distribution of eigenvalues, ie the Empirical Spectral
   Density (ESD), ρ N (λ), of the correlation matrix X = W T W associated with
   the layer weight matrix W
 * In some/other cases,
