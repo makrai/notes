@@ -5,6 +5,8 @@ arXiv:2104.07412 [cs.CL]
 
 data, translations, evaluation resources, and interactive leaderboard
 
+# Abstract
+
 * striking advances in multilingual NLP capabilities over the past year
 * SOTA on the XTREME multilingual benchmark improved by more than 13 points
   * sizeable gap to human-level performance remains,
@@ -36,9 +38,8 @@ data, translations, evaluation resources, and interactive leaderboard
   * concentrated on cross-lingual retrieval tasks where fine-tuning on other
     tasks and pre-training with parallel data lead to large gains
   * still generally perform poorly on languages with limited data and non-Latin
-  * Fine-tuning on additional translated data generally leads to the best
-    performance
-* XTREME-R (XTREME-Revisited), a new benchmark 
+  * Fine-tuning on additional translated data generally leads to the best perf
+* XTREME-R (XTREME-Revisited), a new benchmark
   * 50 typologically diverse languages and 10 challenging, diverse tasks
   * new tasks that focus on “language-agnostic” retrieval (Roy+ 2020),
     * targets must be retrieved from a large multilingual candidate pool
@@ -55,13 +56,13 @@ data, translations, evaluation resources, and interactive leaderboard
   * we: extensible multilingual diagnostic and evaluation suite
   * two main components
     * MultiCheckList, a test suite (Ribeiro+ 2020) for probing QA in 50 langs
-      * direct evaluation of finegrained capabilities, massively multiling
+      * direct evaluation of finegrained capabilities
     * We extend the multi-dataset evaluation framework ExplainaBoard (Fu+ 2020;
       Liu+ 2021) to additional tasks and the multilingual setting
-      * break down performance based on language and task-specific attributes,
+      * break down performance based on language and task-specific attributes
 * leaderboard: logistic improvements to improve XTREME-R’s utility
   * each submission is required to provide metadata
-    eg number of parameters and amount of pre-training data
+    * eg number of parameters and amount of pre-training data
   * task and language-specific sub-leaderboards to invite dedicated submissions
 * contributions:
   * an analysis of progress in cross-lingual modeling;
@@ -98,8 +99,8 @@ data, translations, evaluation resources, and interactive leaderboard
   * Multilingual BERT (mBERT), XLM-RoBERTa (XLM-R; Conneau+ 2020) and mT5
     * extend BERT (Devlin+ 2019), RoBERTa (Liu+ 2019), and T5 respectively
   * Rebalanced mBERT (Rem-BERT; Chung+ 2021)
-    * a more efficient, scaled-up reparameterization of mBERT.  These models
-  * pre-trained on unlabeled data in around 100 languages from Wikipedia
+    * a more efficient, scaled-up reparameterization of mBERT
+  * models pre-trained on unlabeled data in around 100 languages from Wikipedia
     (mBERT) and CommonCrawl
 * XLM-R was the strongest baseline in XTREME (Hu+ 2020)
   * fine-tuned on English data of a related task prior to
@@ -111,62 +112,59 @@ data, translations, evaluation resources, and interactive leaderboard
       * uses additional MLM variants during pre-training
     * T-URLv2 and HiCTL (Wei+ 2021), based on InfoXLM (Chi+ 2020) and XLM-R
       respectively, employ contrastive losses
-    * ERNIE-M (Ouyang+ 2020) incorporates back-translation into LMing
-      modeling. 2
-* We analyze the performance of these models on the XTREME leaderboard in Figure
+    * ERNIE-M (Ouyang+ 2020) incorporates back-translation into LMing 2
+* We analyze the performance of these models on the XTREME leaderboard
   * improved average performance on XTREME from 55.8 to 81.4
-  * Much of this improvement is concentrated in the retrieval-based tasks where
+  * Much of this improvement is concentrated in the retrieval-based tasks
     * from 47.7 (mBERT) to 92.7 (VECO). In contrast, performance on
   * question answering and structured prediction has improved only slightly
   * tasks
   * Tatoeba retrieval task
-    * still struggle with a few low-resource languages, ie  Swahili, Javanese,
-      and Tagalog
-    * perform well for most other languages and their
-      * scores are concentrated in a relatively small range. On the
-  * question answering task MLQA (Figure 1b), scores have increased slightly for
-    all languages but remain well below performance on English
+    * still struggle with a few low-resource languages,
+      ie Swahili, Javanese, and Tagalog
+    * perform well for most other languages and
+      * scores are concentrated in a relatively small range
+  * question answering task MLQA (Figure 1b), scores have increased slightly
+    for all languages but remain well below performance on English
   * part-of-speech tagging (Figure 1d), scores remain largely the same;
     * lower for some langs
       * with non-Latin scripts (Japanese, Chinese, Korean, Thai) and
       * low-resource languages (Yoruba). Similar trends hold for
-  * named entity recognition. We show the scores broken down by language family
-    for the remaining tasks in Appendix A. The remaining gap to English
-    performance on these tasks is par-
-* models fine-tuned on in-language monolingual data often perform more similarly
-  across languages (Clark+ 2020; Hu+ 2020)
-
-* standard token-level MLM pre-training produces representations of limited
+  * named entity recognition
+    * scores broken down by language family for the remaining tasks in Append A
+* models fine-tuned on in-language monolingual data often perform more
+  similarly across languages (Clark+ 2020; Hu+ 2020)
+* standard token-level MLM pre-training produces representations have limited
   use for cross-lingual sentence retrieval, as evidenced by the
   * comparatively poor performance of the mBERT and XLM-R models
 * Fine-tuning on sentence-level tasks (Phang+ 2020; Fang+ 2020) can mitigate
 * The strong performance of VECO and ERNIE-M on the retrieval tasks can be
   attributed to a combination of parallel data and new pre-training objectives
-  * Pre-training on parallel data improves performance on retrieval by
-    making the pre-training task more similar to the downstream setting but does
-    not significantly improve performance on other tasks
-* Fine-tuning on automatically translated task-specific data yields strong gains
-  and is used by most recent models (Hu+ 2020; Ouyang+ 2020; Luo+ 2020)
+  * Pre-training on parallel data
+    * improves performance on retrieval
+      by making the pre-training task more similar to the downstream setting
+    * not significantly improve performance on other tasks
+* Fine-tuning on automatically translated task-spec data yields strong gains
+  * used by most recent models (Hu+ 2020; Ouyang+ 2020; Luo+ 2020)
 
 # 3 XTREME-R 4
 
 * XTREME-R focuses on the tasks that have proven to be hardest for current
-  * drops XTREME ’s PAWS-X and BUCC tasks since recent advances have left
-    * less room for further improvement, and they
+  * drops XTREME ’s PAWS-X and BUCC tasks since
+    * less room for further improvement left
     * cover only a small number of less diverse languages
   * three new, more challenging tasks:
     * one focusing on causal commonsense reasoning (§3.2.1) and
     * two focusing on harder retrieval scenarios (§3.2.2)
-      * the task category where gains have been easiest to achieve. 
-  * We retain XTREME’s seven other tasks as each still presents substantial
-    challenges for SOTA cross-lingual models (§3.1)
+      * the task category where gains have been easiest to achieve
+  * We retain XTREME’s seven other tasks as each
+    still presents substantial challenges for SOTA cross-lingual models (§3.1)
   * Overall, XTREME-R includes 10
 * changes to the structured prediction tasks, NER and POS
-  * Instead of only providing examples as lists of tokens, XTREME-R always
-    provides the full text of an input sentence, thus ensuring that the entire
-    benchmark now supports research on models that operate directly from the raw
-    input string (Clark+ 2021). Furthermore, XTREME-R adopts
-  * a more realistic version of the NER task in which no gold tokenization
+  * Instead of only providing examples as lists of tokens,
+    XTREME-R always provides the full text of an input sentence, thus ensuring
+    => supports models that operate from the raw input string (Clark+ 2021)
+  * a more realistic version of the NER task without gold tokenization
   * a multilingual diagnostic and evaluation suite (§3.4)
 
 ## 3.2 New Tasks
@@ -231,11 +229,11 @@ data, translations, evaluation resources, and interactive leaderboard
 
 ## 3.3 Languages
 
-* 50 languages (shown using their ISO 639-1 codes for brevity; new languages are
-  bolded) belonging to 14 language families and two isolates:
-  af, ar, az, bg, bn, de, el, en, es, et, eu, fa, fi, fr, gu, he, hi, ht, hu,
-  id, it, ja, jv, ka, kk, ko, lt, ml, mr, ms, my, nl, pa, pl, pt, qu, ro, ru,
-  sw, ta, te, th, tl, tr, uk, ur, vi, wo, yo, zh
+* 50 languages (shown using their ISO 639-1 codes for brevity; new langs bold)
+  * 14 language families and two isolates:
+  * af, ar, az, bg, bn, de, el, en, es, et, eu, fa, fi, fr, gu, he, hi, ht, hu,
+    id, it, ja, jv, ka, kk, ko, lt, ml, mr, ms, my, nl, pa, pl, pt, qu, ro, ru,
+    sw, ta, te, th, tl, tr, uk, ur, vi, wo, yo, zh
 
 ## 3.4 Diagnostic and evaluation suite
 
@@ -255,9 +253,9 @@ data, translations, evaluation resources, and interactive leaderboard
     disambiguate linguistic phenomena, such as gender of fillin values, question
     type, semantics of properties, etc. We automatically fill names in each
 
-### Multilingual ExplainaBoard The standard practice in leaderboards is to
+### Multilingual ExplainaBoard
 
-### Metadata Beyond breaking down performance by attributes, we would like to
+### Metadata
 
 # 4 Exper 7
 
@@ -270,18 +268,19 @@ data, translations, evaluation resources, and interactive leaderboard
 * identifying the best way to leverage parallel data
   during both pre-training and fine-tuning;
 * developing fine-grained behavioral language-specific evaluation resources
-  extending MultiCheckList and learning
+  extending MultiCheckList
 * introducing appropriate inductive biases informed by a more fine-grained
   understanding of multilingual models, such as
-  * robust cross-lingual answering of abstract questions; among many others. We
+  * robust cross-lingual answering of abstract questions
 
 # Appendix B Languages
 
 ## Language characteristics
 
-* detailed overview of languages in XTREME-R including interesting typological
-  differences in Table 7.  Wikipedia information is taken from Wikipedia 9 and
-  linguistic information from WALS Online 10 .  XTREME-R includes members of the
+* Table 7: detailed overview of languages in XTREME-R
+  including interesting typological differences
+  * Wikipedia information is taken from Wikipedia 9 and
+    linguistic information from WALS Online 10 
 * families
   * Afro-Asiatic, Austro-Asiatic, Austronesian, Dravidian, IndoEuropean,
     Japonic, Kartvelian, Kra-Dai, NigerCongo, Sino-Tibetan, Turkic, Uralic,
@@ -290,10 +289,10 @@ data, translations, evaluation resources, and interactive leaderboard
 
 ## Language diversity indices
 
-* according to the typology and language family indices of Ponti+ (2020), which
+* according to the typology and language family indices of Ponti+ (2020)
 * shown in Table 8 for XTREME-R, XTREME (Hu+ 2020), and XGLUE (Liang+ 2020)
 * The typology index is based on the mean entropy of the distribution over 103
-  typological features from URIEL (Littell+ 2017) across the languages while the
+  typological features from URIEL (Littell+ 2017) across the languages
 * family index consists of the number of distinct language families divided by
   the total number of languages
 * XTREME-R is similarly diverse while covering a larger number of languages

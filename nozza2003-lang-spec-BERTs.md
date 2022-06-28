@@ -4,6 +4,8 @@ arXiv:2003.02912 cs.CL
 
 Street(https://bertlang.unibocconi.it/)
 
+# Abstract
+
 * multilingual BERT (mBERT)
   * trained on a corpus of 104 languages, which can serve as a universal
   * impressive results on a zero-shot cross-lingual natural inference task
@@ -18,14 +20,14 @@ Street(https://bertlang.unibocconi.it/)
 
 # 1 Intro
 
-* multilingual BERT model (mBERT) has been proposed, supporting over 100 lang
+* multilingual BERT model (mBERT) has been proposed, supporting over 100 langs
   * including Arabic, Dutch, French, German, Italian, or Portuguese
   * trained on different domains, like social media posts or newspaper
   * great capabilities in zero-shot cross-lingual tasks (Pires+ 2019)
 * models are trained on a particular language and
   tested on a specific domain and task
-* not been clearly demonstrated whether the advantage of training a
-  language-specific model is worth the computational expense
+* not been clearly demonstrated 
+  whether the advantage of a lang-spec model is worth the comput
 * different configurations and architectural variants
   * original BERT model was trained using the WordPiece tokenizer (Wu+ 2016),
   * Camem-BERT (Martin+ 2019)) used the SentencePiece tokenizer (available as
@@ -90,10 +92,10 @@ Street(https://bertlang.unibocconi.it/)
 
 ### Languages Covered
 
-* range from high-resourced languages (e.g., French, Italian) to
+* range from high-resourced languages (eg French, Italian) to
 * low-resource languages, such as Yorb and Mongolian
 * we are covering 18 languages
-* low-resources languages (e.g., Yorb and Arabic) show the highest improv
+* low-resources languages (eg Yorb and Arabic) show the highest improv
 * developers are more likely to be experts on other resources for that lang
   or to collect more data. This makes a greater difference for low-resource
 
@@ -127,7 +129,7 @@ Street(https://bertlang.unibocconi.it/)
   * for Arabic (Antoun+ 2020) this can be explained that language-specific
     AraBERT model handles dialects
     — even if they were not explicitly included in the training set
-* language-specific tasks, e.g., the Die/Dat (gendered determiners)
+* language-specific tasks, eg the Die/Dat (gendered determiners)
   disambiguation task in Dutch (Delobelle+ 2020), obtaining
   * impressive improvements with respect to SOTA (Allein+ 2020, 23% points accu)
 
@@ -153,10 +155,10 @@ Street(https://bertlang.unibocconi.it/)
       (specifically, on 2 million Twitter posts in Italian language)
 * evaluate: different domain data sets to evaluate the models
   * review data for sentiment analysis tasks to
-  * transcripts and news for e.g. POS
+  * transcripts and news for eg POS
   * News data are the most common domain, presumably because they are
     easier to retrieve, and because their
-    more formal register makes them more suited for e.g. POS, dependency, NER
+    more formal register makes them more suited for eg POS, dependency, NER
   * social media posts from Twitter are mostly used in tasks like
     sentiment analysis and identification of offensive language
 
