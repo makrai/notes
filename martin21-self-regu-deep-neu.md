@@ -42,7 +42,7 @@ Journal of ML Research 22(165):1−73, 2021
   NNs; not a new phenomenon
   * From the earlies: suspected that VC theory did not apply to these systems
   * Vapnik+ (1994) said
-    * [VC] theory is derived for methods that minimize the empirical risk
+    * VC theory is derived for methods that minimize the empirical risk
     * hE, multilayer nets cannot be viewed as minimizing the empirical risk
       over the entire set of functions implementable by the network
   * It was originally assumed that local minima in the energy/loss surface were
@@ -106,9 +106,9 @@ Journal of ML Research 22(165):1−73, 2021
 
 ## 1.3 Summary of our results
 
-* We analyze the distribution of eigenvalues, ie the Empirical Spectral
-  Density (ESD), ρ N (λ), of the correlation matrix X = W T W associated with
-  the layer weight matrix W
+* We analyze the distribution of eigenvalues,
+  ie the Empirical Spectral Density (ESD), ρ N (λ),
+  of the correlation matrix X = W T W associated with the layer weight matrix W
 * In some/other cases,
   * the ESDs are very well-described by the Marchenko-Pastur (MP) distribution
   * the ESDs are well-described by the MP distribution, with the
@@ -134,25 +134,25 @@ Journal of ML Research 22(165):1−73, 2021
     * We study simple capacity control metrics, the Matrix Entropy, the linear
       algebraic or Hard Rank, and the Stable Rank
     * We also use RMT to define a new metric, the MP Soft Rank
-    * These metrics track the amount of Self-Regularization that arises
+    * These metrics track the amount of Self-Regularization
       * either during training or in a pre-trained DNN
-  * Self-Regularization in old/small models. The ESDs of older/smaller DNN
+  * Self-Regularization in old/small models. The ESDs of older/smaller DNNs
     * models like LeNet5 and a toy MLP3 model
     * weak Self-Regularization,
       * well-modeled by a perturbative variant of MP theory, the
         Spiked-Covariance model
       * a small number of eigenvalues pull out from the random bulk, and thus
         the MP Soft Rank and Stable Rank both decrease
-      * like explicit Tikhonov regularization, in that there is a “size scale”
-        that cleanly separates “signal” from “noise,”
+      * like explicit Tikhonov regularization, in that
+        there is a “size scale” that cleanly separates “signal” from “noise,”
   * Heavy-Tailed Self-Regularization. The ESDs of larger, modern DNN models
-    * models including AlexNet and Inception and nearly every other large-scale
-      model we have examined
+    * models including AlexNet and Inception and
+      nearly every other large-scale model we have examined
     * deviate strongly from the common Gaussian-based MP model
       * in one of the very different Universality classes of Heavy-Tailed
         random matrix models. We call this Heavy-Tailed Self-Regularization
-      * the MP Soft Rank vanishes, and the Stable Rank decreases, but the full
-        Hard Rank is still retained
+      * the MP Soft Rank vanishes, and the Stable Rank decreases, but
+        the full Hard Rank is still retained
       * The ESD fully (or partially) Heavy-Tailed, but with finite support
       * no “size scale” (even in the theory) that separates “signal” vs “noise”
 
@@ -165,8 +165,8 @@ Journal of ML Research 22(165):1−73, 2021
 ### Remark. Subsequent to the dissemination of the initial technical report
 
 * work motivated by our results
-  * proved theorems (Dereziński+ 2019; Liao+ 2020; Theisen+ 2020; Hodgkinson
-    and Mahoney, 2020; Lim+ 2021)
+  * proved theorems (Dereziński+ 2019; Liao+ 2020; Theisen+ 2020;
+    Hodgkinson and Mahoney, 2020; Lim+ 2021)
   * solved much more practical problems on SOTA DNNs, including:
     * “predicting trends in the quality of SOTA neural networks without access
       to training or testing data” (Martin+ 2020, 2021)
