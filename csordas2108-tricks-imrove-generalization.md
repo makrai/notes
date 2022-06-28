@@ -59,7 +59,7 @@ https://github.com/robertcsordas/ transformer_generalization
   * careful designs of model and training configurations are particularly
     important for these reasoning tasks testing systematic generalization. By
   * revisiting configurations such as basic scaling of word and positional
-    embeddings, early stopping strategy, and relative positional em-bedding, we
+    embeddings, early stopping strategy, and relative positional embedding, we
     dramatically improve the performance of the baseline Transformers. We
 * experiments on five datasets:
   SCAN (Lake and Baroni, 2018), CFQ (Keysers+ 2020), PCFG (Hupkes+ 2020),

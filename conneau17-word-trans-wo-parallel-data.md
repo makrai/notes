@@ -3,7 +3,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 * we show that we can build a bilingual dictionary between two languages
   * without using any parallel corpora, by
-  * aligning monolingual word embedding spaces in an unsupervised way.
+  * aligning monolingual word embedding spaces in an unsupervised way
   * Without using any character information, our
 * outperforms existing supervised methods on cross-lingual tasks for some
   language pairs
@@ -39,12 +39,12 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
     * performance is significantly below supervised methods
 * Our method leverages adversarial training to learn a linear mapping from a
   * two steps
-    1. discriminator is trained to distinguish between the mapped ...
+    1. discriminator is trained to distinguish between the mapped
        embeddings and the target embeddings, while the mapping (which can be
        seen as a generator) is jointly trained to fool the discriminator
     2. extract a synthetic dictionary from the resulting shared embedding space
        and fine-tune the mapping with the closed-form Procrustes solution from
-       Schönemann (1966).
+       Schönemann (1966)
       * unsupervised selection metric
         * cross-lingual data can not be used ... Since the method is unsupervised,
         * introduce a ... metric that is highly correlated with the mapping
@@ -94,8 +94,8 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 * This approach is [the adaptation of] Ganin+ 2016 to language
   * Ganin, Ustinova, Ajakan, Germain, Larochelle, Laviolette, Marchand, Lempitsky
-    Domain-adversarial training of neural networks.
-    Journal of Machine Learning Research, 17(59):1–35, 2016.
+    Domain-adversarial training of neural networks
+    Journal of Machine Learning Research, 17(59):1–35, 2016
 * we follow the standard training procedure of
   deep adversarial networks (Goodfellow+ 2014)
   * The details of training are given in the next section
@@ -104,7 +104,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 * The matrix W obtained with adversarial training
   * good performance [but] still not on par with the supervised approach
-  * tries to align all words irrespective of their frequencies.
+  * tries to align all words irrespective of their frequencies
     * However, rare words have embeddings that are
       * less updated and are
       * more likely to appear in different contexts in each corpus
@@ -112,42 +112,42 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 * we build a synthetic parallel vocabulary using the W just learned with
   adversarial training. Specifically, we
   * consider the most frequent words and
-  * retain only mutual nearest neighbors to ensure a high-quality dictionary.
+  * retain only mutual nearest neighbors to ensure a high-quality dictionary
 * Subsequently, we apply the Procrustes solution ... on this ...  dictionary
   * it is possible to generate a more accurate dictionary and apply this method
-    iteratively, similarly to Artetxe+ (2017).
+    iteratively, similarly to Artetxe+ (2017)
   * However [one iteration] is already strong
-    * improvements [in more iterations] are usually below 1%.
+    * improvements [in more iterations] are usually below 1%
 
 ## 2.3 Cross-domain similarity local scaling (csls)
 
 * some [solutions of hubness] being reminiscent of pre-processing already
-  existing in spectral clustering algorithms (Zelnik-manor & Perona, 2005).
+  existing in spectral clustering algorithms (Zelnik-manor & Perona, 2005)
 * Dinu+ (2015) ... propose a pairing rule based on reverse ranks, and the
   inverted soft-max (ISF) by Smith+ (2017), which we evaluate in our
   experimental section. These methods are not fully satisfactory because the
   similarity updates are different for the words of the source and target
   languages. Additionally, ISF requires to cross-validate a parameter, whose
   estimation is noisy in an unsupervised setting where we do not have a direct
-  cross-validation criterion.
+  cross-validation criterion
 * we consider a bi-partite neighborhood graph
 * mean similarity `r` of [an] embedding x [or y] s to its target neighborhood as
-  * computed for all source and target word vectors [efficiently] (Johnson+ 2017).
+  * computed for all source and target word vectors [efficiently] (Johnson+ 2017)
   * similarity measure CSLS(., .) between mapped source words and target words,
 
   `CSLS(W x_s , y_t) = 2 cos(W x_s , y_t) − r_T(W x_s) − r_S(y_t)`
 * Intuitively, this
-  * increases the similarity associated with isolated word vectors.
+  * increases the similarity associated with isolated word vectors
   * decreases the ones of vectors lying in dense areas.  Our experiments show
   * significantly increases the accuracy for word translation retrieval, while
-  * not requiring any parameter tuning.
+  * not requiring any parameter tuning
 
 # 3 Training and architectural choices 5
 
 ## 3.2 Discriminator inputs
 
-* we only feed the discriminator with the 50,000 most frequent words.
-  * At each training step ...  sampled uniformly.
+* we only feed the discriminator with the 50,000 most frequent words
+  * At each training step ...  sampled uniformly
   * Sampling [according to the] frequency did not have any noticeable impact
 
 ## 3.3 Orthogonality
@@ -155,10 +155,10 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 * orthogonal constraint ... made the training procedure more stable in our
   experiments
 * we propose to use a simple update step to ensure that the matrix W stays
-  close to an orthogonal matrix during training (Cisse+ (2017)).
+  close to an orthogonal matrix during training (Cisse+ (2017))
   * alternate the update of our model with the following update rule on the
-    `W ← (1 + β)W − β(W W^T)W` where β = 0.01 is usually found to perform well.
-  * eigenvalues of our matrices all have a modulus close to 1, as expected.
+    `W ← (1 + β)W − β(W W^T)W` where β = 0.01 is usually found to perform well
+  * eigenvalues of our matrices all have a modulus close to 1, as expected
 
 ## 3.5 Validation criterion for unsupervised model selection
 
@@ -171,7 +171,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   correlation between the evaluation score and this unsupervised criterion
   (without stabilization by learning rate shrinkage). We use it as a stopping
   criterion during training, and also for hyperparameter selection in all our
-  experiments.
+  experiments
 
 # 4 Experiments 6
 
@@ -180,7 +180,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * our baseline model. Last,
   * [comparison] to our baseline and to previous methods
   * appendix, we offer a complementary analysis on the alignment of several
-    sets of English embeddings trained with different methods and corpora.
+    sets of English embeddings trained with different methods and corpora
 
 ### 4.1.3 Sentence translation retrieval
 
