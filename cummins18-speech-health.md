@@ -93,7 +93,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * sleepiness and cognitive load can be grouped under this umbrella term
 * fatigue has no strict medical condition definition, it can generally be
   * core symptoms include a reduction in efficiency and motivation. Fatigue
-    degrades an individual’s performances and can lead to errors and,
+  * degrades an individual’s performances and can lead to errors and,
     potentially fatal, accidents in many settings, such as on the road [55,56],
     or in the workplace [57]
 * early and remote diagnosis of fatigue is therefore potentially lifesaving on
