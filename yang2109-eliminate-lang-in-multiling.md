@@ -63,7 +63,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   agnosticism in multilingual embedding systems
 * our method
   * First introduced in Yang+ (2020) to reduce same language bias for retrieval
-  * only linear algebra factorization and posttraining operation
+  * only linear algebra factorization and post-training operation
   * can be conveniently applied to any multilingual model
   * surprisingly large improvements in several downstream tasks, including
     * LAReQA, a crosslingual QA retrieval dataset (Roy+ 2020)
@@ -84,11 +84,11 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 
 * our sentences for extracting principle components are sampled from Wiki-40B
   (Guo+ 2020)
-  * 10,000 sentences per language
-  * performance initially increases as more sentences are used but
-    then is almost unchanged after n > 10, 000. We tried
-  * different samplings of {t iL } and text resources other than Wiki-40B,
-    eg Tatoeba (Artetxe and Schwenk, 2019); minimal differences in performance
+* 10,000 sentences per language
+* performance initially increases as more sentences are used but
+  then is almost unchanged after n > 10, 000
+* different samplings of {t iL } and text resources other than Wiki-40B,
+  eg Tatoeba (Artetxe and Schwenk, 2019); minimal differences in performance
 
 ## 3.2 Amazon Reviews
 
@@ -104,7 +104,8 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 * XEVAL, a collection of multilingual sentence representation benchmark
   (Yang+ 2020)
   * The training set and test set of XEVAL are in the same language (not cross)
-  * include Movie Reviews (Pang and Lee, 2005)
+  * include
+    * Movie Reviews (Pang and Lee, 2005)
     * binary SST (sentiment analysis, Socher+ (2013))
     * MPQA (opinion-polarity, Wiebe+ (2005))
     * TREC (question-type, Voorhees and Tice (2000))
@@ -141,8 +142,8 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 * Mrkšić+ (2017) build semantically specialized cross-lingual vector spaces
   * requires the additional training to adjust the original embeddings using
     supervised data: cross-lingual synonyms and antonyms
-* Libovickỳ+ (2019) propose that the language-specific information of mBERT is
-  the centroid of each language space (the mean of embeddings)
+* Libovickỳ+ (2019): language-specific information of mBERT is the centroid of
+  each language space (the mean of embeddings)
 * Zhao+ (2021) propose several training techs to obtain lang-agnostic reprs
   * segmenting orthographic tokens in training data and
     aligning monolingual spaces by training
