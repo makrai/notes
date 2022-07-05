@@ -432,8 +432,8 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * assume that the performance metric is accuracy and we have two classes
 * alternative definition of fine-tuning stability:
   per-point stability where the expectation and variance are interchanged:
-  * can be useful to better understand the properties of fine-tuned models and
-    we refer to McCoy+ (2020) for a study in this direction
+  * can be useful to better understand the properties of fine-tuned models
+  * refer to McCoy+ (2020) for a study in this direction
 
 ## 7.2 Task statistics
 

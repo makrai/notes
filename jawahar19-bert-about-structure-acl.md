@@ -26,11 +26,12 @@ ACL 2019
 
 # 6 Compositional Structure
 
-* Tensor Product Decomposition Networks (TPDN) (McCoy+ 2019), which
-  explicitly compose the input token (“filler”) representations based on the
-  role scheme selected beforehand using tensor product sum. For instance, a role
-  scheme for a word can be based on the path from the root node to itself in the
-  syntax tree (eg ‘LR’ denotes the right child of left child of root). The
+* Tensor Product Decomposition Networks (TPDN, McCoy+ 2019)
+  * explicitly compose the input token (“filler”) representations
+    based on the role scheme selected beforehand using tensor product sum
+    * eg a role scheme for a word can be based on the path
+      from the root node to itself in the syntax tree
+      (eg ‘LR’ denotes the right child of left child of root)
   * assumtion: if a TPDN can be trained well to approximate the representation
     learned by a neural model, then that role scheme likely specifies the
     compositionality implicitly learned by the model
@@ -43,13 +44,14 @@ ACL 2019
   * an index common to all the words in the sentence (bag-of-words), which
     ignores its position
   * a role scheme based on random binary trees
-* Following McCoy+ (2019), we train our TPDN model on the premise sentences in
-  the SNLI corpus (Bowman+ 2015). We initialize the filler embeddings of the
-  TPDN with the pre-trained word embeddings from BERT’s input layer, freeze it,
-  learn a linear projection on top of it and use a Mean Squared Error (MSE) loss
-  function. Other trainable parameters include the role embeddings and a
-  linear projection on top of tensor product sum to match the embedding size of
-  BERT
+* Following McCoy+ (2019), we
+  * train our TPDN model on the premise sentences in the SNLI corp (Bowman+ 15)
+  * initialize the filler embeddings of the TPDN with the pre-trained word
+    embeddings from BERT’s input layer, freeze it, learn a linear projection on
+    top of it and use a Mean Squared Error (MSE) loss function
+    * Other trainable parameters include  
+      the role embeddings and a linear projection on top of tensor product sum
+      to match the embedding size of BERT
 * Table 4 displays the MSE between pretrained BERT and TPDN
   * BERT implicitly implements a treebased scheme, as a TPDN model following
 * case study on dependency trees induced from self attention weight
