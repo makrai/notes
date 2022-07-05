@@ -533,7 +533,7 @@ tartalom 16 (11)
   * -At: a. e rakpart-szerte zizgő hussanat b. istennők büfésnők zörgő lengetek
     * alapszó nem tárgyas ige (leng, hussan)
   * -mÁny
-    a. T.asztalon topic címében is előfordul egy szömyedmény...
+    a. T.asztalon topic címében is előfordul egy szörnyedmény...
     b. Ám ez a mesterséges arab szó-ötlemény sem vert gyökeret
     c. testetlen csavarintmányaid útján
 

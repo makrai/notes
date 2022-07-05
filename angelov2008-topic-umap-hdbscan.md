@@ -33,7 +33,7 @@ https://github.com/ddangelov/Top2Vec
     high level summaries of a large collection of documents,
     search for documents of interest, and group similar documents together
 * Topics are often thought of as discrete values, such as politics, science
-  * hE, any of these topics can be further subdivided into many other sub-topics
+  * hE, any of these topics can be further subdivided into sub-topics
   * a topic like politics can overlap with other topics, such as health
     * both share the sub-topic of health care
   * topics, their combinations or variations can be
@@ -203,11 +203,11 @@ https://github.com/ddangelov/Top2Vec
   * hierarchical topic reduction
   * comparing similarity between words, documents and topics based on distance
 * We have proposed a novel method for evaluating topics that
-  * uses mutual information to calculate how informative topics are of documents
+  * uses mutual information to calculate how informative topics are of docs
     * a képletben igazából Kullback-Leibler Divergence
-  * measures the amount of information gained about the documents when described
-    by their topic words
-  * measures both the quality of topic words and the assignment of topics to doc
+  * measures the amount of information gained about the documents
+    when described by their topic words
+  * measures both the quality of topic words & the assignment of topics to doc
 * Our results show that top2vec consistently finds topics that are
   more informative and representative of the corpus than LDA and PLSA,
   for varying sizes of topics and number of top topic words
@@ -223,10 +223,10 @@ https://github.com/ddangelov/Top2Vec
     high probability, as they make up a large proportion of all documents
   * no guarantee that they will find topics that are representative of the corp
   * they can find topics that are extremely specific or overly broad
-* the words closest to top2vec topic vectors are the words that are most infoive
+* the words closest to top2vec topic vectors are the most information words
   * learning task generates joint document and word vectors, which
   * predicts the document a word came from
-  * document vectors are placed
-    close to the words that are most informative of the documents
+  * document vectors are placed close to the words
+    that are most informative of the documents
   * topic vectors to be calculated from dense areas of those documents
   * topics are the words that are most informative of a document

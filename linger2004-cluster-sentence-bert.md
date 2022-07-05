@@ -10,7 +10,7 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
   which are then linked across time and languages
 * we introduce a novel "replaying" strategy
   to link monolingual local topics into stories
-* new fine tuned multilingual embedding using SBERT to create crosslingual
+* new fine-tuned multilingual embedding using SBERT to create crosslingual
 * SOTA results
   * monolingual on dataset of Spanish and German news and
   * crosslingual on English, Spanish and German news
@@ -21,7 +21,7 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
   to group articles into stories
   * not support multilingual articles
 * We show that multilingual documents are best represented through
-  fine tuned DistilBERT [SDCW19] multilingual model
+  fine-tuned DistilBERT [SDCW19] multilingual model
   using SBERT [RG19] triplet network structure
 
 ### 3.1.1 Article representation
@@ -38,4 +38,4 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
 # 5 Conclusion and Future Work
 
 * In future work, we plan to challenge the TF-IDF based representation of
-  monolingual articles using fine tuned SBERT [RG19] embeddings
+  monolingual articles using fine-tuned SBERT [RG19] embeddings

@@ -83,9 +83,9 @@ https://huggingface.co/mental
   problems (Calvo+ 2017)
 * mental health detection that categorizes given social posts into classes of
   mental disorders such as depression (Tadesse+ 2019)
-* Resnik+ (2013) applied topic modeling, an unsupervised approach that reduces
-  the input of textual data feature space to a fixed number of topics to
-  feature engineering in depression detection
+* Resnik+ (2013) applied topic modeling in depression detection
+  * topic modeling: an unsupervised approach that reduces the input of textual
+    data feature space to a fixed number of topics to feature engineering
 * Feature engineering + classifiers for mental health detection (Shatte+ 2019;
   Abd Rahman+ 2020)
 * features

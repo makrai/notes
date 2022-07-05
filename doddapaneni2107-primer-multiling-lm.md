@@ -10,12 +10,12 @@ arXiv:2107.00676 [cs.CL]
   * performance on monolingual, zero shot crosslingual, & biling
   * universal language patterns (if any) learnt by MLLMs and
   * augmenting the (often) limited capacity of MLLMs to improve their
-    performance on seen or even unseen languages. In this survey, we review them
+    performance on seen or even unseen languages. In this survey, we review
 
 # 1 Intro
 
 * multilingual language models (MLLMs)
-  * mBERT (Devlin+ 2019), XLM (Conneau and Lample, 2019), XLM-R (Conneau+ 2020a)
+  * mBERT (Devlin+ 2019), XLM (Conneau and Lample 2019), XLM-R (Conneau+ 2020a)
   * low resource languages may benefit from high resource languages
     * due to shared vocabulary, genetic relatedness (Nguyen and Chiang, 2017),
       or contact relatedness (Goyal+ 2020)
@@ -27,14 +27,14 @@ arXiv:2107.00676 [cs.CL]
   * number of languages involved (ranging from 12 to 100)
 * tradeoff in the performance compared to a monolingual model?
   * for a given language is a language-specific BERT better than a MLLM?
-  * capacity dilution [hígulás], the capacity of the model is dedicated to a 1/+
+  * capacity dilution [hígulás], the capacity of the model is dedicated to 1/+
   * additional pretraining data from multiple (related) languages
   * existing studies
     * Conneau+ 2020a XLM-RoBERTa
     * Shijie Wu and Mark Dredze
       Are all languages created equal in multilingual bert?
       RepL4NLP@ACL 2020, Online, July 9, 2020, pages 120–130. ACL
-    * R Agerri, IS Vicente, JA Campos, A Barrena, X Saralegi, A Soroa, E Agirre. 2020
+    * R Agerri, IS Vicente, JA Campos, A Barrena, X Saralegi, A Soroa, E Agirre
       Give your text representation models some love: the case for Basque
       LREC 2020, Marseille, France, May 11-16, 2020, pages 4781–4788
       * many monolingual models (FastText word embeddings, FLAIR and BERT
@@ -44,9 +44,9 @@ arXiv:2107.00676 [cs.CL]
     * Virtanen+ 2019
     * Samuel Rönnqvist, Jenna Kanerva, Tapio Salakoski, and Filip Ginter. 2019
       Is multilingual BERT fluent in language generation?
-      the First NLPL Workshop on Deep Learning for NLP pages 29–36, Turku, Finld
+      the First NLPL Workshop on Deep Learning for NLP
     * Youngbin Ro, Yukyung Lee, and Pilsung Kang. 2020
-      Multi2oie: Multiling open info extract based on multi-head attenton w BERT
+      Multi2oie: Multiling open info extract based on multi-head attent w BERT
     * Diego de Vargas Feijó and Viviane Pereira Moreira
       Mono vs multiling transformer-based models: a comparison in several tasks
       CoRR, abs/2007.09757
@@ -54,8 +54,8 @@ arXiv:2107.00676 [cs.CL]
       * experiments in STS, RTE, classification, sentiment, offensive and fake
       * the advantage of training a single language model, if any, is small
     * Shuohuan Wang, Jiaxiang Liu, Xuan Ouyang, and Yu Sun. 2020a
-      Galileo at SemEval-2020 task 12: Multi-lingual offensive language identifc
-  * depends on model capacity, amount of pretraining data, fine-tuning mechanism
+      Galileo at SemEval-2020 task 12: Multi-ling offensive language identifc
+  * depends on model capacity, amount of pretraining data, fine-tuning mech
     and amount of task-specific training data
 * zero shot crosslingual transfer (K+ 2020) from a resource rich language
   * benchmarks, e.g. XGLUE (Liang+20), XTREME (Hu+20), XTREME-R (Ruder+21)
@@ -71,7 +71,7 @@ arXiv:2107.00676 [cs.CL]
       CoRR, abs/2004.09205
     * Lauscher+ 2020
     * Zihan Liu, Genta Indra Winata, Andrea Madotto, and Pascale Fung. 2020c
-      .fine-tuning techniques for pre-trained cross-lingual models via continual
+      Fine-tuning techniques for pre-trained cross-lingual models via continual
       CoRR, abs/2004.14218
     * Conneau and Lample, 2019
     * Yuxuan Wang, Wanxiang Che, Jiang Guo, Yijia Liu, and Ting Liu. 2019
@@ -128,7 +128,7 @@ arXiv:2107.00676 [cs.CL]
 
 # 3 What are the benchmarks used for evaluating MLLMs? 7
 
-* The most common evaluation for MLLMs is crosslingual performance on downstream
+* The most common evaluation for MLLMs is crosslingual perf on downstream
 * common crosslingual benchmarks are
   XGLUE (Liang+ 2020), XTREME (Hu+ 2020), XTREME-R (Ruder+ 2021)
   * a wide variety of tasks and languages as shown in Table 2
@@ -142,25 +142,25 @@ arXiv:2107.00676 [cs.CL]
   * XNLI (Conneau+ 2018)
   * PAWS-X (Yang+ 2019)
   * XCOPA (Ponti+ EMNLP 2020)
-    * Edoardo M. Ponti, G Glavaš, O Majewska, Q Liu, I Vulić, and Anna Korhonen.
+    * Edoardo M. Ponti, G Glavaš, O Majewska, Q Liu, I Vulić, and Anna Korhonen
       XCOPA: A multilingual dataset for causal commonsense reasoning
   * News Classification (Liang+ 2020)
     * in XGLUE
   * Query-Ad Matching (QADSM, Liang+ 2020)
     * predict whether an advertisement (ad) is relevant to an input query
-    * 3 languages, English, French and German.
+    * 3 languages, English, French and German
     * Each instance is a 4-tuple: `<query, ad title, ad description, label>`
   * Web Page Ranking (WPR, Liang+ 2020)
     * predict how relevant (0--4) a web page is to an input query
-    * 7 langs, English, German, French, Spanish, Italian, Portuguese, Chinese.
+    * 7 langs, English, German, French, Spanish, Italian, Portuguese, Chinese
     * Each instance: `<query, web page title, web page snippet, label>`
-    * based on Bing.
-    * Normalize Discounted Cumulative Gain (nDCG) is used as the metric.
+    * based on Bing
+    * Normalize Discounted Cumulative Gain (nDCG) is used as the metric
   * QAM (Liang+ 2020)
     * QA Matching (QAM)
     * predict whether a `<question, passage>` pair is a QA pair
     * 3 languages, English, French and German
-    * based on Bing.
+    * based on Bing
     * Accuracy (ACC) of the binary classification is used as the metric
 
 ## structure prediction,
@@ -189,7 +189,7 @@ arXiv:2107.00676 [cs.CL]
   * the representations are explicitly aligned
     using bitext and appropriate loss functions and
   * the complexity of the task is less
-* crosslingual transfer using MLLMs performs much worse than in-language supervs
+* crossl transfer using MLLMs performs much worse than in-language supervision
 * in most cases it performs worse than a translate-and-train or a
   translate-and-test baseline
 
@@ -206,7 +206,7 @@ arXiv:2107.00676 [cs.CL]
   primarily between those of the same family
 * common representations
   * seem to be clearest in the middle layers, after which the network
-    specialises for different languages as modelled in the pretraining objective
+    specialises for different languages as modelled in the pretraining obj
   * can be probed to accurately perform supervised NLU tasks such as POS
     tagging, dependency parsing, in some cases with zero-shot transfer
 * more complex tasks such as MT quality evaluation (Libovickỳ+ 2019) or
@@ -229,7 +229,7 @@ arXiv:2107.00676 [cs.CL]
 
 ## Zero-Shot Evaluation
 
-* The primary promise of MLLMs remains cross-lingual performance, especially 0sh
+* The primary promise of MLLMs remains cross-lingual perf, especially 0sh
 * results have a wide variance across tasks and languages (Keung+ 2020)
 * controlling for the design parameters discussed above and the training and
   test sets is required

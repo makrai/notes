@@ -27,8 +27,7 @@ arXiv:2009.03947
 ## 2.2 Tweets Clustering
 
 * Different clustering algorithms can be used for this purpose, such as
-  K-means, spectral clustering, mean-shift, Density-Based Spatial Clustering
-  (DBSC)
+  K-means, spectral clustering, mean-shift, Density-Based Spatial Clust (DBSC)
 * We use K-means clustering algorithm here, for its simplicity, speed, and the
   ability to pre-define the number of clusters
 
@@ -36,8 +35,7 @@ arXiv:2009.03947
 
 * centroid of each cluster
   * should contain the average embedding (therefore the average topic/concept)
-  * not necessarily capture all topics of that cluster. But it could serve as a
-    simple baseline
+  * not necessarily capture all topics of that cluster, but a simple baseline
   * we use a text summarization technique, the TextRank summarization framework
 
 # 3 dataset used in our experiments

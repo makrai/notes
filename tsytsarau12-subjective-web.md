@@ -1,5 +1,5 @@
-Mikalai Tsytsarau · Themis Palpanas
 Survey on mining subjective data on the web
+Mikalai Tsytsarau · Themis Palpanas
 Data Min Knowl Disc (2012)
 
 # Abstract
