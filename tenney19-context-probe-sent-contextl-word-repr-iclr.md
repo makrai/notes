@@ -1,7 +1,7 @@
-Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R Thomas McCoy,
-Najoung Kim, Benjamin Van Durme, Samuel R. Bowman, Dipanjan Das, Ellie Pavlick
 What do you learn from context?
   Probing for sentence structure in contextualized word representations
+Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R Thomas McCoy,
+ Najoung Kim, Benjamin Van Durme, Samuel R. Bowman, Dipanjan Das, Ellie Pavlick
 ICLR 2019
 
 * data processing and model code
@@ -19,7 +19,7 @@ ICLR 2019
 * investigate syntactic, semantic, local, and long-range phenomena
 * tl;dr: models trained on language modeling and translation
   * strong representations for syntactic phenomena, but
-  * comparably small improvements on semantic tasks over a non-contextual baslin
+  * comparably small improvements on sem tasks over a non-contextual baseline
 * from the Conclusion
   * the performance of ELMo cannot be fully explained by a model with access to
     local context

@@ -6,15 +6,15 @@ Codebase and demo available from https://nlp.jhu.edu/demos/infillmore
 
 # Abstract
 
-* We propose a structured extension to bidirectional-context conditional
-  language generation, or "infilling,"
+* We propose "infilling", a structured extension
+  to bidirectional-context conditional language generation
   * inspired by Frame Semantic theory (Fillmore, 1976)
   * Guidance is provided through two approaches:
     * model fine-tuning, conditioning directly on observed symbolic frames, and
     * a novel extension to disjunctive lexically constrained decoding that
       leverages frame semantic lexical units.  Automatic and human evaluations
-* allows for explicit manipulation of intended infill semantics, with minimal
-  loss in distinguishability from human-generated text
+* allows for explicit manipulation of intended infill semantics, with
+  minimal loss in distinguishability from human-generated text
 
 # 1 Introduction
 
@@ -25,7 +25,7 @@ Codebase and demo available from https://nlp.jhu.edu/demos/infillmore
 * we study the use of FrameNet frames (Baker+ 1998) as representational units
   for such plan guidance
   * Frame Semantics (Fillmore, 1976; Fillmore and Baker, 2010),
-    * words evoke structural situation types (frames) that
+    * words evoke structural situation types (frames)
     * frames describe the common schematic relationships between lexical items
   * hypothesize yielding a flexible, controllable and domain-general model for
     surface realization of story plans with a variety of dimensions for user
@@ -33,4 +33,4 @@ Codebase and demo available from https://nlp.jhu.edu/demos/infillmore
 * We evaluate through a sentence-infilling task based on ROCStories
   (Mostafazadeh+ 2016), assessing performance on two dimensions:
   * the quality of generation, as measured through perplexity and human eval
-  * the fidelity: whether generated text evokes the frames used as guidance. We
+  * the fidelity: whether generated text evokes the frames used as guidance

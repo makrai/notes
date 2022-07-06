@@ -11,7 +11,7 @@ http://ldtoolkit.space
 * We present a new approach
   based on scaled-up qualitative analysis of word vector neighborhoods that
   quantifies interpretable characteristics of a given model
-  (e.g. its preference for synonyms or shared morphological forms as neighbors)
+  (eg its preference for synonyms or shared morphological forms as neighbors)
 * We analyze 21 such factors
   * morphological, semantic and distributional
   * correlate with performance on 14 extrinsic and intrinsic task datasets
@@ -70,7 +70,7 @@ http://ldtoolkit.space
   * Perhaps the most popular kind of intrinsic evaluation of word embeddings
   * idea: the distance between word vectors should correlate with
     human judgements of how related the two words are
-    (e.g., cat should be closer to tiger than to hammer)
+    (eg, cat should be closer to tiger than to hammer)
   * semantic similarity (Agirre+ 2009; Hill+ 2015)
     * restricts relatedness to synonymy and co-hyponymy
 * has come under fire for methodological reasons
@@ -152,7 +152,7 @@ http://ldtoolkit.space
       psychological relations between target and neighbor, as shown in Figure 1
   * The annotated data is analyzed to produce direct or statistically derived
     measures of the degree to which a given embedding is characterized by a
-    given factor (e.g. how many synonyms or morphologically related words are
+    given factor (eg how many synonyms or morphologically related words are
     neighbors of a given word vector)
   * The exact set of LD factors considered in this study: Section 5.1
 * linguistic relations (especially semantic rels such as hypernymy and antonym)
@@ -333,14 +333,14 @@ http://ldtoolkit.space
       both are compounds (based on Wiktionary and custom LDT tools)
     * SharedPOS: the two words have the same POS (any overlap counts)
 * how we quantify these
-  * Binary relations (e.g. synonymy is either detected or not) were quantified
+  * Binary relations (eg synonymy is either detected or not) were quantified
     as {a simple count of all cases of that relation} in all target:neighbor
     pairs for each embedding
   * Directed lexicographic relations (hypernymy, hyponymy, meronymy) are
-    counted when the target word is e.g. a hypernym of the neighbor
+    counted when the target word is eg a hypernym of the neighbor
   * Continuous variables are broken down into bins, the
     size of which is chosen empirically:
-    * e.g. instead of freq, number of low-frequency or high-frequency neighbors
+    * eg instead of freq, number of low-frequency or high-frequency neighbors
 * We experimented with the scores from 1,000, 5000, and 100 top neighbors
   * overall correlation patterns were similar, suggesting that
     it will be sufficient for future work to limit the selection to the top 100
@@ -478,7 +478,7 @@ http://ldtoolkit.space
 
 * we contribute to the NLP community efforts in the following directions:
   * comparison of word embedding algorithms
-    (e.g. different modifications of the Word2Vec)
+    (eg different modifications of the Word2Vec)
   * hyperparameter effects on encoding of different linguistic relations;
   * a more informed, hypothesis-driven design of new distributional reprs;
   * informed choice of word embeddings for various downstream tasks;

@@ -10,7 +10,7 @@ train word embeddings via a newly designed metric
 * In this paper, a metric is designed to estimate second order cooccurrence
   * based on [quantized] context overlap
   * joint training with existing neural word embedding models
-* Experimental results ... for word similarity tasks and text classification
+* Experimental results for word similarity tasks and text classification
 
 # 1 Intro
 
@@ -30,7 +30,7 @@ train word embeddings via a newly designed metric
 * semantic composition and distributional inference to address the sparseness
   (Mitchell and Lapata, 2008; Erk and Padó, 2008, 2010;
   Reisinger and Mooney, 2010; Thater+ 2011; Kartsaklis+ 2013; Kober+ 2016)
-  * they are not ... neural word embeds
+  * they are not neural word embeds
 * [our approach] utilizes context overlap
   * extensions for GloVe and Swivel
 * [rel work in sec conclu:]
@@ -44,26 +44,26 @@ train word embeddings via a newly designed metric
   reflects context overlap
   * As shown in Figure 1, two separate words may exhibit a particular aspect of
 * calculation of complete PMI-weighted context overlap may be time-consuming
-  * only the context words that have strong lexical association ... are consded
+  * only the context words that have strong lexical association are considered
   * threshold .. acts as a magnitude to shift PMI, and S i denotes the set that
 `\sum min f(PMI(i, k)), f(PMI(j, k)))`
   * f is a monotonic mapping function to rectify the data characteristics for
     certain objective function in word embedding training
   * exponential function f (x) = exp(x) works much better in our experiments
-    * similar ... as the cooccurrence counts, i.e., few word pairs have
+    * similar as the cooccurrence counts, i.e., few word pairs have
 
 # 4 Experiments
 
 ## 4.1 Setup
 
-### Corpus ... 6 billion tokens collected from diversified corpora
+### Corpus 6 billion tokens collected from diversified corpora
 
 ### Preprocessing Following (Lee and Chen, 2017), the Stanford tokenizer
 
 ### Parameter
 
 * vocabularies are limited to the 200K most frequent words. Following , a
-* decreasing weighting function ... to construct the cooccurrence mx (Pennington+ 2014)
+* decreasing weighting function to construct the cooccur mx (Pennington+ 2014)
 
 ## 4.2 Intrinsic Evaluation: word similarity [and] analogy tasks. Word
 
@@ -82,7 +82,7 @@ train word embeddings via a newly designed metric
 
 * word frequency [is important in] word embeddings (Gittens+ 2017). Inspired
 * word analogy accuracy [vs] the log mean freq of the words (Shazeer+ 2016) in
-* An obvious semantic performance improvement ... in the range of low frequency
+* An obvious semantic performance improvement in the range of low frequency
   * may be caused by PMI’s bias towards infrequent words [or]
     infrequent words carry more information in second order co-occurrence
     relations
