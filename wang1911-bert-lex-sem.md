@@ -34,18 +34,18 @@ arXiv:1911.02929 [cs.CL]
 * several cheap methods to obtain static embeddings from dynamic embeddings
   * averaged over a large corpus
   * word vector parameters from the token embedding layer
-  * these simple methods do not necessarily outperform traditional static embeds
-* We consider integrating dynamic embeddings into the training process of static
+  * these simple methods do not necessarily outperform trad static embeds
+* We consider integrating dynamic embeddings into the training of static
   * we integrate BERT and skip-gram by using
-    BERT to provide dynamic embeddings for center words during skip-gram trainng
+    BERT to provide dynamic embed for center words during skip-gram training
   * advantage over skip-gram training is at least two-fold
     * polysemous words are represented using BERT embeddings, thereby resolving
       word sense ambiguities (Coenen+ 2019)
     * syntactic and semantic information over the entire sentence is integrated
       into the center word representation (Jawahar+ 2019; Clark+ 2019)
-  * make use of both contextualized representation and co-occurrence information
-* Experiments over a range of lexical semantics datasets show that our method
-  outperforms the existing SOTA methods for training static embeds
+  * make use of both contextualized representation and co-occurrence info
+* Experiments over a range of lexical semantics datasets show that
+  our method outperforms the existing SOTA methods for training static embeds
 
 # 2 Related Work
 
