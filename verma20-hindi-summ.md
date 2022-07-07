@@ -19,16 +19,16 @@ Volume 64, Issue 1, 2020 Journal of Scientific Research
 * Islam+ (2007) also proposed a light weighted Bengali stemmer based on same
   approach as proposed by Ramanathan and Rao (2003). They used 72 suffixes of
   verbs, 22 for nouns and 8 for adjectives
-* Majumder+ (2007) proposed a corpus based stemmer which works effectively for
-  the primarily suffixing languages such as Bengali. It clusters the words with
-  same stem but different variants using distance function to find out the stem
-  word
+* Majumder+ (2007) proposed a corpus based stemmer
+  * works effectively for the primarily suffixing languages such as Bengali
+  * clusters the words with same stem but different variants using distance
+    function to find out the stem word
 * Saharia+ (2014) proposed a rule based approach for stemming the words of
   Assamese, Bengali, Bishnupriya Manipuri, and Bodo languages. They introduced a
   dictionary of frequent words to reduce the over-stemming and under-stemming
   errors and an HMM model to prevent the errors in special case
 * Dasgupta and Ng (2006) proposed a Bengali stemmer which is based on segmenting
-  the words according to morphemes discovered in a large annotated corpus.
+  the words according to morphemes discovered in a large annotated corpus
 * Pandey and Siddiqui (2008) introduces a Hindi stemmer based on finding
   probabilities for occurrences of suffixes and stem together using EMILLE
   corpus
@@ -43,7 +43,7 @@ Volume 64, Issue 1, 2020 Journal of Scientific Research
 # IV the preformance of different NLP tools in summarization
 
 * we have taken four techniques which were implemented for Indian text summ. To
-  * we [applied?] these methods for English language and compare the results.
+  * we [applied?] these methods for English language and compare the results
 * The considered techniques are
   * graph based technique for Hindi text summarization (Kumar+ 2015),
   * a hybrid model for Punjabi text summarization (Gupta and Kaur 2016),

@@ -1,10 +1,10 @@
-Making Monolingual Sentence Embeddings Multilingual using Knowledge Distill
+Making Monolingual Sentence Embeddings Multilingual using Knowl Distillation
 Nils Reimers, Iryna Gurevych
 arXiv:2004.09813 cs.CL
 
 https://github.com/UKPLab/sentence-transformers
-* While v1 model supports 15 languages, v2 supports 50+ languages
-  * hE, performance on the 15 languages are reported to be a bit lower in v2
+* v1 model supports 15 languages, v2 supports 50+ languages
+* hE, performance on the 15 languages are reported to be a bit lower in v2
 
 # Abstract
 
@@ -16,7 +16,7 @@ https://github.com/UKPLab/sentence-transformers
 * advantages
   * with relatively few samples to new languages
   * easier to ensure desired properties for the vector space
-    * e.g. design a vector space to work well for a specific clustering task
+    * eg design a vector space to work well for a specific clustering task
   * hardware requirements for training is lower
 * experiments in 10 languages from various language families
 * Code to extend sentence embeddings models to more than 400 languages
@@ -38,18 +38,18 @@ https://github.com/UKPLab/sentence-transformers
     (Chidambaram+ 2018; Yang+ 2019)
     * trained in a multi-task setup on SNLI (Bowman+ 2015) and
       on >1B question-answer pairs from online forums and QA websites
-    * training obj: translation ranking. Given a translation pair
-      and various alternative (incorrect) translations, identify the correct one
+    * training obj: translation ranking. Given a translation pair and various
+      alternative (incorrect) translations, identify the correct one
     * multi-task learning can suffer from catastrophic forgetting
-      * balancing multiple tasks is not straight forward
+      * balancing multiple tasks is not straightforward
       * huge computational overhead
       * alternative translations
         * random alternative translations usually leads to mediocre results
-        * hard negatives (Guo+ 2018) are required, i.e., alternative incorrect
+        * hard negatives (Guo+ 2018) are required, ie incorrect alternative 
         * Getting these hard negative samples is non-trivial
           1. train the network with random negatives samples, then
-          2. identify for each translation pair five hard negative examples with
-             this preliminary sentence encoder
+          2. identify for each translation pair five hard negative examples
+             with this preliminary sentence encoder
   * we use
     * Sentence-BERT (SBERT, Reimers and Gurevych, 2019), which
       * SOTA performance for various sentence embeddings task

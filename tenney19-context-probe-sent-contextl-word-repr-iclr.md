@@ -126,9 +126,9 @@ ICLR 2019
   * particularly pronounced on constituent and semantic role labeling, where the
     model may be benefiting from better handling of morphology by
     character-level or subword representations.
-* ELMo-style scalar mixing (mix) instead of concatenation improves significantly
-  on both deep Transformer models (BERT and GPT).  We
-  * most relevant information being contained in intermediate layers, which
+* ELMo-style scalar mixing (mix) instead of concatenation improves signif
+  on both deep Transformer models (BERT and GPT)
+  * most relevant information being contained in intermediate layers
   * agrees with Blevins+ (2018), Peters+ (2018a), and Devlin+ (2018), and with
     * Peters+ (2018b): top layers may be overly specialized to next-word pred
 * When using scalar mixing (mix), we observe that the
@@ -193,7 +193,7 @@ ICLR 2019
 
 * which task?
   * extend our lexical baseline with a convolutional layer, which
-    * allows the probing classifier to use local context. In Figure 2 we find that
+    * allows the probing classifier to use local context. Figure 2
     * CNN of width 3 (±1 token) closes 72% of the gap between the lexical baseline
       and full ELMo; this extends to
       * 79% if we use a CNN of width 5 (±2 tokens).

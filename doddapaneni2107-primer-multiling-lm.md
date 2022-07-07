@@ -20,8 +20,8 @@ arXiv:2107.00676 [cs.CL]
     * due to shared vocabulary, genetic relatedness (Nguyen and Chiang, 2017),
       or contact relatedness (Goyal+ 2020)
 * MLLMs differ in the
-  * architecture (e.g., number of layers, parameters, etc),
-  * objective functions used for training (e.g., monolingual masked language
+  * architecture (eg number of layers, parameters, etc),
+  * objective functions used for training (eg monolingual masked language
     modeling objective, translation language modeling objective, etc),
   * data used for pretraining (Wikipedia, CommonCrawl, etc) and the
   * number of languages involved (ranging from 12 to 100)
@@ -58,7 +58,7 @@ arXiv:2107.00676 [cs.CL]
   * depends on model capacity, amount of pretraining data, fine-tuning mech
     and amount of task-specific training data
 * zero shot crosslingual transfer (K+ 2020) from a resource rich language
-  * benchmarks, e.g. XGLUE (Liang+20), XTREME (Hu+20), XTREME-R (Ruder+21)
+  * benchmarks, eg XGLUE (Liang+20), XTREME (Hu+20), XTREME-R (Ruder+21)
   * a wide variety of tasks such as classification, structure prediction,
     Question Answering, and crosslingual retrieval
   * studies of crosslinguality (Pires+ 2019
@@ -137,7 +137,7 @@ arXiv:2107.00676 [cs.CL]
 ## classification,
 
 * input: a single sentence or a pair of sentences
-* e.g. Natural Language Inference (NLI)
+* eg Natural Language Inference (NLI)
 * datasets used for evaluating MLLMs are
   * XNLI (Conneau+ 2018)
   * PAWS-X (Yang+ 2019)
@@ -234,13 +234,13 @@ arXiv:2107.00676 [cs.CL]
 * controlling for the design parameters discussed above and the training and
   test sets is required
   * need for careful comparisons against translation-based baselines
-    e.g. translate-test, translate-train, translate-train-all (Conneau+ 2019)
+    eg translate-test, translate-train, translate-train-all (Conneau+ 2019)
     across tasks and languages
 
 ## mBERTologoy
 
 * what the model learns, and how and where such information is stored
-* e.g. analysis of the role of attention heads in encoding syntactic, semantic,
+* eg analysis of the role of attention heads in encoding syntactic, semantic,
   or positional information (English BERT: Voita+ 2019)
   * Elena Voita, David Talbot, Fedor Moiseev, Rico Sennrich, and Ivan Titov
     Analyzing multi-head self-attention:
@@ -253,7 +253,7 @@ arXiv:2107.00676 [cs.CL]
 * Many languages are widely spoken but not enough research and development
   (Joshi+ 2020b).  Towards this end, MLLMs must become more inclusive
 * scaling up to 1000s of languages
-  * may require model innovations e.g. moving beyond language-specific adapters
+  * may require model innovations eg moving beyond language-specific adapters
 * inclusive benchmarks in variety of tasks and languages
 
 ## Efficient models.  MLLMs represent some of the largest models
@@ -282,4 +282,4 @@ arXiv:2107.00676 [cs.CL]
   * understanding the patterns learn by attention heads and other components
   * including more languages in pretraining and evaluation
   * building efficient and robust MLLMs using better evaluation frameworks
-    (e.g., Explainaboard)
+    (eg Explainaboard)

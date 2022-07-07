@@ -84,9 +84,9 @@ https://github.com/pdufter/minimult
 ### Model
 
 * BERT-Base architecture (Devlin+ 2019), modified to achieve a smaller model:
-* BERT-small: we divide hidden size, intermediate size of the feed forward layer
-  and number of attention heads by 12; thus, hidden size is 64 and intermediate
-  size 256
+* BERT-small: we divide hidden size, intermediate size of the feed forward
+  layer and number of attention heads by 12
+  * thus, hidden size is 64 and intermediate size 256
 * this leaves us with a single attention head,
   * K+ (2020) found that the number of attention heads is not important
   * neither for overall performance nor for multilinguality. We call this
@@ -106,8 +106,8 @@ https://github.com/pdufter/minimult
 * layer: We use layer 0 (uncontextualized) and layer 8 (contextualized)
   * layer 8 works well for monolingual and multilingual tasks
     (Tenney+ 2019; Hewitt and Manning, 2019; Sabet+ 2020)
-  * layer 0 includes position and segment embeddings besides the token
-    embeddings as well as layer normalization
+  * layer 0 includes position and segment embeddings besides the token embeds
+    as well as layer normalization
 
 #### Word Alignment. Sabet+ (2020) find that mBERT performs well
 
@@ -295,10 +295,10 @@ https://github.com/pdufter/minimult
   * we use BERT-base, not BERT-small because we found that BERT-small with less
   * Each language has its own vocabulary with size 20k
 * We then evaluate the pretrained models on XNLI (Conneau+ 2018). We fine-tune
-  the pretrained models on English XNLI. Then the model is evaluated on English.
+  the pretrained models on English XNLI. Then the model is evaluated on English
   In addition, we do a zero-shot evaluation on German and Hindi
 * Table 3. en: accuracy is significantly lower but reasonable on English (.75)
-  * high multilinguality with 0-shot accuracies .57 and .45.
+  * high multilinguality with 0-shot accuracies .57 and .45
   * Inverting the order of German has little effect on HIN, but DEU drops
     significantly. Our architectural modifications (8) harm both HIN and DEU
   * knn-replace model exhibits the strongest degree of multilinguality, boosting
@@ -322,13 +322,13 @@ https://github.com/pdufter/minimult
       important, without further defining this term
   * Conneau+ (2020b) find that a
     * shared vocabulary is not required. They find that
-    * shared parameters in the top layers are required for multilinguality.
+    * shared parameters in the top layers are required for multilinguality
     * different monolingual BERT models exhibit a similar structure and thus
       * mBERT somehow aligns those isomorphic spaces. They
     * investigate having
       separate embedding look-ups per language (including position embeddings
       and special tokens) and
-      a variant of avoiding cross-language replacements.
+      a variant of avoiding cross-language replacements
     * Their method “extra anchors” yields a higher degree of multilinguality
 * creating better multilingual models
   * Mulcaire+ (2019) proposed a method to learn multilingual contextual

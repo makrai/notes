@@ -139,7 +139,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
 * clustering
   * In Computer Vision, pretrained models are often learnt by image clustering
     (Caron+ 2018)
-  * In NLP, however, clustering was mainly used for non-transfer scenarios
+  * In NLP hE clustering was mainly used for non-transfer scenarios
   * Ball (2019)
     * pretrained embeddings to cluster labeled and unlabeled data
     * Then, they fill the missing labels to augment the training data
@@ -176,8 +176,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
     * parsing (Schuster+ 2019)
 * other than fine-tuning the model
   * vision
-    * Koch (2015) suggests ranking examples’ similarity with Siamese networks
-    * Vinyals+ (2016) rely on memory and attention to find neighboring examples
+    * Koch (2015): ranking examples’ similarity with Siamese networks
+    * Vinyals+ (2016): memory and attention to find neighboring examples
     * Snell+ (2017) search for prototypes to compare to
     * Ravi and Larochelle (2017)
       * don’t define in advance how to compare the examples

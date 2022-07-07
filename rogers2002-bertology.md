@@ -27,7 +27,7 @@ arXiv:2002.12327 cs.CL
 # 2 Overview of BERT architecture
 
 * BERT is a stack of Transformer encoder layers (Vaswani+ 2017)
-  * multiple “heads”, i.e., fully-connected neural networks
+  * multiple “heads”, ie fully-connected neural networks
     augmented with a self-attention mechanism
   * For every input token in a sequence,
     each head computes key, value and query vectors,
@@ -82,8 +82,8 @@ arXiv:2002.12327 cs.CL
   * even with distractor clauses and meaningless sentences (Goldberg 2019)
 * negation and scope (Warstadt+ 2019)
   * BERT is better able to detect the presence of
-    negative polarity items (e.g.  ”ever”) and
-    the words that allow their use (e.g.  ”whether”)
+    negative polarity items (eg  ”ever”) and
+    the words that allow their use (eg  ”whether”)
     than scope violations
   * BERT does not “understand” negation and is insensitive to malformed input
     * predictions were not altered even with shuffled word order,
@@ -99,7 +99,7 @@ arXiv:2002.12327 cs.CL
   * an MLM probing study that
   * prefers incorrect fillers for semantic roles that are semantically related
     to the correct ones, to those that are unrelated
-    e.g. “to tip a chef” to “to tip a robin”
+    eg “to tip a chef” to “to tip a robin”
 * entity types, relations, semantic roles, and proto-roles
   detected with probing classifiers (Tenney+ 2019b)
 * struggles with representations of numbers. Addition and number decoding tasks
@@ -119,7 +119,7 @@ arXiv:2002.12327 cs.CL
 ## 3.3 World knowledge
 
 * MLM adapted for knowledge induction by filling in the blanks
-  e.g. “Cats like to chase [ ]”)
+  eg “Cats like to chase [ ]”)
 * probing study of world knowledge in BERT (Ettinger, 2019)
   * evidence comes from many practitioners using BERT to extract knowledge
 * for some relation types, vanilla BERT is competitive with [KB] methods
@@ -130,13 +130,13 @@ arXiv:2002.12327 cs.CL
 * BERT cannot reason based on its world knowledge
   * can “guess” the affordances and properties of many objects, but
   * no information about their interactions
-    (e.g. it “knows” that people can walk into houses, and that houses are big,
+    (eg it “knows” that people can walk into houses, and that houses are big,
     but it cannot infer that houses are bigger than people (Forbes+ 2019)
   * performance drops with the number of necessary inference steps
     * Zhou+ (2020) and Richardson and Sabharwal (2019)
   * some of BERT’s success in factoid knowledge retrieval comes from
     learning stereotypical character combinations (Poerner+ 2019)
-    e.g. a person with an Italian-sounding name is Italian
+    eg a person with an Italian-sounding name is Italian
 
 ## 3.4 Limitations
 
@@ -148,7 +148,7 @@ arXiv:2002.12327 cs.CL
     still relying on the original model?
 * different probing methods may lead to complementary or even contradictory
   (Warstadt+ 2019). A given method might also favor one model over another,
-  e.g., RoBERTa trails BERT with one tree extraction method, but leads with
+  eg RoBERTa trails BERT with one tree extraction method, but leads with
   another (Htut+ 2019)
 * choice of linguistic formalism also matters (Kuznetsov and Gurevych, 2020)
 * focus on identifying what BERT actually relies on at inference time
@@ -156,7 +156,7 @@ arXiv:2002.12327 cs.CL
   * information encoded in model weights
 * Amnesic probing (Elazar+ 2020) aims to specifically remove certain information
   * see how it changes performance
-  * e.g. language modeling does rely on POS information
+  * eg language modeling does rely on POS information
 * information-theoretic probing
   * Pimentel+ (2020) operationalize probing as estimating mutual information
     between the learned representation and a given linguistic property
@@ -170,19 +170,19 @@ arXiv:2002.12327 cs.CL
 
 ## 4.1 BERT embeddings
 
-* In studies of BERT, the term "embedding" refers to the output of a Transformer
-  layer (typically, the final one)
+* In studies of BERT, the term "embedding" refers to
+  the output of a Transformer layer (typically, the final one)
 * Both conventional static embeddings (Mikolov+ 2013) and BERT-style embeddings
   can be viewed in terms of mutual information maximization (Kong+ 2019), but
-* Every token contains at least some information about that context
+* Every token contains at least some information about the context
   (Miaschi and Dell’Orletta, 2020)
-* distilled contextualized embeddings better encode lexical semantic information
-  (i.e. they are better at traditional word-level tasks such as word similarity)
+* distilled contextualized embeddings better encode lexical semantic info
+  (ie they are better at traditional word-level tasks such as word similarity)
 * The methods to distill a contextualized representation into static include
   * aggregating the information across multiple contexts
     (Akbik+ 2019; Bommasani+ 2020),
   * encoding "semantically bleached" sentences that rely almost exclusively on
-    the meaning of a given word (e.g. "This is <>", May+ 2019), and even
+    the meaning of a given word (eg "This is <>", May+ 2019), and even
   * using contextualized embeddings to train static embeddings (Wang+ 2020d)
 * room for improvement
   * Ethayarajh (2019), how similar the embeddings for identical words are in
@@ -190,21 +190,20 @@ arXiv:2002.12327 cs.CL
   * Voita+ (2019a): in the earlier Transformer layers, MLM forces the
     acquisition of contextual information at the expense of the token identity,
     which gets recreated in later layers
-  * Ethayarajh conted: BERT embeddings occupy a narrow cone in the vector space,
+  * Ethayarajh conted: BERT embeddings occupy a narrow cone in the vector space
     * this effect increases from the earlier to later layers
     * two random words will on average have a very high cosine similarity
-    * isotropy is beneficial for static word embeddings (Mu and Viswanath, 2018)
+    * isotropy is beneficial for static word embeddings (Mu and Viswanath 2018)
 * to what extent they capture phenomena like polysemy and homonymy
   * BERT embeddings form distinct clusters corresponding to word senses
-    (Wiedemann+ 2019; Schmidt and Hofmann, 2020), making BERT
+    (Wiedemann+ 2019; Schmidt and Hofmann, 2020)
   * successful at word sense disambiguation task
   * Mickus+ (2019): representations of the same word depend on the position of
     the sentence in which it occurs, likely due to the NSP objective
   * not desirable from the linguistic point of view, and
     could be a promising avenue for future work
 * as a sentence or text encoder
-  * The standard way to generate sentence or text representations for
-    classification is to use the [CLS] token
+  * [CLS] token: The standard way to generate sentence/text reprs for classif
   * concatenation of token representations (Tanaka+ 2020),
   * normalized mean (Tanaka+ 2020), and
   * layer activations (Ma+ 2019). See
@@ -295,7 +294,7 @@ arXiv:2002.12327 cs.CL
 * The functions of special tokens are not yet well understood
   * [CLS] is typically viewed as an aggregated sentence-level representation
     (although all token reprs also contain at least some sent-level info, sc4.1)
-  * e.g. we may not see e.g. full syntactic trees in inter-word attention
+  * eg we may not see eg full syntactic trees in inter-word attention
 * Clark+ (2019) experiment with encoding Wikipedia paragraphs with base BERT to
   consider specifically the attention to special tokens, noting that
   * heads in early layers attend more to [CLS], in middle layers to [SEP], and
@@ -313,9 +312,9 @@ arXiv:2002.12327 cs.CL
 * input is a combination of token, segment, and positional embeddings
 * lower layers have the most linear word order information
   * decrease in the knowledge of linear word order around layer 4 (Lin+ 2019)
-  * increased knowledge of hierarchical sentence structure, as detected by the
-    probing tasks of predicting the
-    index of a token, the main auxiliary verb and the sentence subject
+  * increased knowledge of hierarchical sentence structure, as
+    * detected by the probing tasks of predicting
+      the index of a token, the main auxiliary verb and the sentence subject
 * syntactic information is the most prominent in the middle BERT layers
   * consensus among studies with different tasks, datasets and methodologies
   * which layers exactly?
@@ -329,8 +328,7 @@ arXiv:2002.12327 cs.CL
   * Tenney+ (2019a) [drawing
     parallels to] the order of components in a typical NLP pipeline
     from POS-tagging to dependency parsing to semantic role labeling
-  * lower layers were more useful for chunking, while
-    middle layers were more useful for parsing (Jawahar+ 2019)
+  * lower/middle layers were more useful for chunking/parsing (Jawahar+ 2019)
   * Liu+ (2019a) find the opposite: both POS-tagging and chunking were also
     performed best at the middle layers, in both BERT-base and BERT-large
 * final layers of BERT are the most task-specific
@@ -344,15 +342,15 @@ arXiv:2002.12327 cs.CL
   * while most of syntactic information can be localized in a few layers,
   * certain non-trivial examples get solved incorrectly at first but
     correctly at higher layers. This is rather to be expected:
-    semantics permeates all language, and linguists
-    debate whether meaningless structures can exist at all (Goldberg, 2006)
+    semantics permeates all language, and linguists debate
+    whether meaningless structures can exist at all (Goldberg, 2006)
   * what does stacking more Transformer layers actually achieve in BERT
     in terms of the spread of semantic knowledge, and is that beneficial?
     * comparison between base and large BERTs shows that the
       overall pattern of cumulative score gains is the same, only
       more spread out in the large BERT
-* disputed by Jawahar+ (2019), who place “surface features in lower layers,
-  syntactic features in middle layers and semantic features in higher layers”
+* disputed by Jawahar+ (2019), who place
+  surface/syntactic/semantic features in lower/middle/higher layers
   * only one SentEval semantic task in this study actually topped at the last
   * three others peaked around the middle and then degraded by the final layers
 
@@ -459,7 +457,7 @@ arXiv:2002.12327 cs.CL
   * explicit linguistic information, both
     syntactic (Sundararaman+ 2019) and semantic (Zhang+ 2020)
   * Wu+ (2019b) and Kumar+ (2020) include the label for a given sequence from an
-    annotated task dataset (e.g. sentiment analysis)
+    annotated task dataset (eg sentiment analysis)
   * Schick and Schütze (2020) separately learn representations for rare words
   * Although BERT is already actly used as a source of world knowledge (sec 3.3)
   * explicitly supplying structured knowledge
@@ -485,7 +483,7 @@ arXiv:2002.12327 cs.CL
   * Most new models' gains are often marginal, and estimates of
     model stability and significance testing are very rare
 * Continual learning (Sun+ 2019b)
-  * i.e. sequential pre-training on a large number of tasks,
+  * ie sequential pre-training on a large number of tasks,
     each with their own loss which are then combined
 
 ## 5.4 Fine-tuning BERT 9
@@ -500,7 +498,7 @@ arXiv:2002.12327 cs.CL
   * why fine-tuning would increase the attention to [CLS], but not [SEP]?
   * If Clark+ (2019) are correct that [SEP] serves as “no-op” indicator,
     fine-tuning basically tells BERT what to ignore
-  * multilingual BERT
+  * multilingual BERT:
     fine-tuning affected the top and the middle layers of the model (Singh+ 19)
 * studies explored the possibilities of improving the fine-tuning of BERT:
   * Taking more layers into account
@@ -537,7 +535,7 @@ arXiv:2002.12327 cs.CL
 ## 6.1 Overparametrization
 
 * Transformer-based models keep increasing in size:
-  e.g. T5 (Wu+ 2016a) is over 30 times larger than the base BERT. This raises
+  eg T5 (Wu+ 2016a) is over 30 times larger than the base BERT. This raises
 * concerns about
   * computational complexity of self-attention (Wu+ 2019a),
   * environmental issues (Strubell+ 2019; Schwartz+ 2019), as well as
@@ -578,7 +576,7 @@ arXiv:2002.12327 cs.CL
 
 ## 6.3 Pruning and model analysis
 
-* e.g. BERT has heads that seem to encode frame-semantic relations,
+* eg BERT has heads that seem to encode frame-semantic relations,
   but disabling them might not hurt downstream task performance (Kovaleva+ 2019)
   this suggests that this knowledge is not actually used
 * For the base Transformer, Voita+ (2019b) identify the functions of
@@ -629,7 +627,7 @@ arXiv:2002.12327 cs.CL
     if typological features structure its representation space
 * cross-lingual transfer can be achieved (Artetxe+ 2019)
   by only retraining the input embeddings while keeping monolingual BERT weight
-  * i.e. even monolingual models learn generalizable linguistic abstractions
+  * ie even monolingual models learn generalizable linguistic abstractions
 * compared with English BERT
   * At least some of the syntactic properties of English BERT hold for mBERT:
   * MLM is aware of 4 types of agreement in 26 langs (Bacon and Regier, 2019)
@@ -674,7 +672,7 @@ arXiv:2002.12327 cs.CL
 * different probing methods may reveal contradictory information
   (Warstadt+ 2019)
   * Certain methods might also favor a certain model,
-    e.g., RoBERTa and BERT with two tree extraction methods (Htut+ 2019)
+    eg RoBERTa and BERT with two tree extraction methods (Htut+ 2019)
 * Head and layer ablation studies (Michel+ 2019; Kovaleva+ 2019)
   * diffuse representations spread across the full network
   * semantic parsing tasks (Tenney+ 2019a)

@@ -68,20 +68,19 @@ https://www.github.com/salesforce/xnli_extension
 * token overlap between different languages, generating similarity matrices
   similar to the one shown in Figure 6. From these matrices we perform
 * agglomerative clustering of languages to generate phylogenetic trees (Fig 7)
-  These trees show how different tokenization schemes can embed different
-  linguistic biases into our models
+  * show how different tokenization schemes can embed different ling biases
 * We investigate subword, word, and character level tokenization
   * subword tokenization is done using BERT’s learned BPE vocabulary
   * word level tokenization is achieved by simply tokenizing at spaces, and the
   * character level tokenization is done using Python’s native character level
-* from using subwords, [although is not as accurate as] from BERT’s
-  representation at layer 6 (Figure 1), it is
-  still non-trivially close to a linguistically accurate depiction of human
+* from using subwords
+  * not as accurate as] from BERT’s representation at layer 6 (Figure 1)
+  * nL non-trivially close to a linguistically accurate depiction of human
 * by using a shared subword vocabulary, multilingual BERT has a very strong
   bias to discover the linguistic relationships between languages
   * Perhaps th[is ability] has contributed to the wide success in MT and LM
 * bias is not [so] strong if other forms of tokenization are used
   * word level tokenization splits the Romantic and Germanic languages into
-    completely different trees, and that
-  * character level tokenization ends up combining all languages that share the
-    Latin script regardless of their true families
+    completely different trees, and
+  * character level tokenization ends up combining all languages with Latin scr
+    regardless of their true families

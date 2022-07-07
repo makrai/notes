@@ -2,6 +2,8 @@ Fine-Tuned Transformers Show Clusters of Similar Representations Across Layers
 Jason Phang, Haokun Liu, Samuel R. Bowman
 BlackboxNLP 2021 arXiv:2109.08406 [cs.CL]
 
+# Abstract
+
 * success of fine-tuning pretrained language encoders like BERT for NLU
 * still poorly understood how neural networks change after fine-tuning
 * we use centered kernel alignment (CKA),

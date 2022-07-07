@@ -1,5 +1,5 @@
-Nelson F. Liu, Matt Gardner, Yonatan Belinkov, Matthew E. Peters, Noah A. Smith
 Linguistic Knowledge and Transferability of Contextual Representations
+Nelson F. Liu, Matt Gardner, Yonatan Belinkov, Matthew E. Peters, Noah A. Smith
 NAACL 2019
 
 # Abstract
@@ -68,9 +68,9 @@ NAACL 2019
 
 * Prior work has suggested that higher-level contextualizer layers may be
   expressly encoding higher-level semantic information
-  Instead, it seems likely that certain high-level semantic phenomena are
-  incidentally useful for the contextualizer’s pretraining task, leading to
-  their presence in higher layers
+* Instead, it seems likely that
+  certain high-level semantic phenomena are incidentally useful for the
+  contextualizer’s pretraining task, leading to their presence in higher layers
 
 # Appendices
 

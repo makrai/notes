@@ -4,31 +4,32 @@ ECIR'21 arXiv:2101.08370 [cs.CL]
 
 code and resources available at https://github.com/rlitschk/EncoderCLIR
 
-* Pretrained multilingual text encoders based on neural Transformer architects,
+# Abstract
+
+* Pretrained multiling text encoders based on neural Transformer architectures
   such as multilingual BERT (mBERT) and XLM
   * strong performance on a myriad of language understanding tasks
-* a go-to paradigm for multilingual and cross-lingual representation learning
-  and transfer, rendering
-  cross-lingual word embeddings (CLWEs) effectively obsolete
+* a go-to paradigm for multiling and cross-lingual repr learning and transfer,
+  rendering cross-lingual word embeddings (CLWEs) effectively obsolete
 * hE, questions remain to which extent this finding generalizes to
   unsupervised settings and ad-hoc cross-lingual IR (CLIR) tasks
-* we present a systematic empirical study on the suitability of the SOTA
-  multilingual encoders for cross-lingual document and sentence retrieval tasks
+* we: a systematic empirical study on the suitability of the SOTA multilingual
+  encoders for cross-lingual document and sentence retrieval tasks
   across a large number of language pairs
 * In contrast to supervised language understanding, our results indicate that
   for unsupervised (no relevance judgments for IR-specific fine-tuning)
   * document-level CLIR pretrained encoders fail to significantly outperform
     models based on CLWEs
-    * performance also crucially depends on e.g. using sentence/document
-      encoders directly versus averaging over constituent words and/or
-      subwords
-    * results are taskand language-pair-dependent
+    * performance also crucially depends on eg
+      using sentence/document encoders directly versus
+      averaging over constituent words and/or subwords
+    * results are task~ and language-pair-dependent
   * sentence-level CLIR, we demonstrate that SOTA performance can be achieved
     with variants that have been further specialized for sentence understanding
 
 # 2 Related work
 
-## Specialized Multilingual Sentence Encoders. An extensive body of work
+## Specialized Multilingual Sentence Encoders
 
 * in Artetxe+ (ACL 2019) the multilingual encoder of a sequence-to-sequence
   model is shared across languages and optimized to be language-agnostic,
@@ -36,13 +37,13 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
   (with tied/shared parameters) to represent parallel sentences
   * minimizes the cosine distance between parallel sentences
     * Rather than optimizing for translation performance directly
-  * A ranking softmax loss is used to classify the correct (i.e., aligned)
-    sentence in the other language from negative samples (non-aligned sentences)
+  * A ranking softmax loss is used to classify the correct (ie aligned)
+    sentence in the other language from negative samples (non-aligned sents)
 * Yang (AAAI 2019) extend this approach by using a bidirectional dual encoder
   and adding an additive margin softmax function, which
   serves to push away non-translation pairs in the shared embedding space
   * now widely adopted [20,51,18,39,56], and yields SOTA multilingual sentence
-    encoders which excel in sentence-level NLU tasks.  Other recent approaches
+    encoders which excel in sentence-level NLU tasks
 * input space normalization, and re-aligning mBERT and XLM with parallel data
   * 56. Zhao W; Eger S; Bjerva J; Augenstein I
     Inducing language-agnostic multilingual representations
@@ -54,7 +55,7 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
   output of the teacher network while preserving high similarity of
   translation pairs (Reimers and Gurevych: Making monolingual EMNLP 2020)
 * Yang+ (ACL 2020) combine multi-task learning with a translation bridging
-  task to train a universal sentence encoder. We benchmark a series of
+  task to train a universal sentence encoder
 * representative sentence encoders are described in §3.3
 
 # 3 Multilingual Text Encoders
@@ -66,14 +67,14 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
 * need to be fine-tuned on text (typ sentence) matching datasets [39,6,57]
   for semantic similarity
   * supporting tasks that require unsupervised (ad-hoc) semantic text
-* directly produce a semantic embedding of the input text. We provide a
+* directly produce a semantic embedding of the input text
 
-## Language Agnostic SEntence Representations (LASER) [2] adopts a
+## Language Agnostic SEntence Representations (LASER) [2]
 
-* standard sequence-to-sequence architecture typical for neural MT. It is
-  trained on 223M parallel sentences covering 93 languages
+* standard sequence-to-sequence architecture typical for neural MT
+* trained on 223M parallel sentences covering 93 languages
 * The encoder is a multi-layered bidirectional LSTM and the
-  * decoder is a single-layer unidirectional LSTM. The
+  * decoder is a single-layer unidirectional LSTM
   * 1024-dimensional sentence embedding is produced by max-pooling over the
     outputs of encoder’s last layer
 * The decoder then takes the sentence embedding as additional input as each
@@ -84,19 +85,19 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
 * In our experiments, we directly use the output of the encoder to represent
   both queries and documents
 
-## Multilingual Universal Sentence Encoder (m-USE) is
+## Multilingual Universal Sentence Encoder (m-USE)
 
 * a general purpose sentence embedding model for transfer learning and
-  semantic text retrieval tasks [51]. It relies on a
+  semantic text retrieval tasks [51]
 * standard dual-encoder neural framework [9,52] with shared weights,
   * trained in a multi-task setting with an additional translation bridging
     task
   * two pretrained m-USE instances available
     * we opt for the 3-layer Transformer encoder with average-pooling
 
-## Language-agnostic BERT Sentence Embeddings (LaBSE) [18] is another
+## Language-agnostic BERT Sentence Embeddings (LaBSE) [18]
 
-* neural dual-encoder framework, also trained with parallel data
+* another neural dual-encoder framework, also trained with parallel data
 * LaBSE training starts from a pretrained mBERT instance
   * Unlike in LASER and m-USE, where the encoders are trained from scratch on
     parallel data,
@@ -111,11 +112,10 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
   * specialized using the available semantic sentence-matching datasets
   * specialized for embedding sentence meaning on semantic text similarity [7]
     and natural language inference [48] datasets
-* student: non-specialized multilingual transformer (e.g., mBERT).  It first
-* In the knowledge distillation (i.e. teaching) step a pretrained multilingual student
-  encoder M is trained to mimic the output of the teacher model. For a given
-  batch of sentence-translation pairs B “ tps j , t j qu, the teacher-student
-  distillation training minimizes the following loss: „
+* student: non-specialized multilingual transformer (eg mBERT)
+* knowledge distillation (ie teaching) step:
+  a pretrained multilingual student encoder M is trained to mimic the output of
+  the teacher model
 * The student model M trained to produce for both s j and t j the same
   representation that M produces for s j
 * We benchmark different DISTIL models in our CLIR experiments, with the
@@ -134,8 +134,8 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
 ### Layer Selection
 
 * For AOC and SEMB, where both models obtain representations by
-  contextualizing (sub)words in a sentence, we get the best performance for
-  higher layers
+  contextualizing (sub)words in a sentence, we get the
+  best performance for higher layers
 * for document-level retrieval (L9/L12 for mBERT, and L15 for XLM)
 * sentence-level retrieval (L9 for mBERT and L12/L11 for XLM)
 
@@ -147,7 +147,7 @@ code and resources available at https://github.com/rlitschk/EncoderCLIR
 
 ### Input Sequence Length in document-level CLIR
 
-* Multilingual encoders have a limited input length and they, unlike static
+* Multilingual encoders have a limited input length, unlike static
   * effectively truncate long documents
   * In our main experiments we truncated the documents to first 128 word pieces
 * Somewhat counterintuitively, encoding a longer chunk of documents (256 word

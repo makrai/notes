@@ -2,7 +2,7 @@ Simple Unsupervised Similarity-Based Aspect Extraction
 Danny Suarez Vargas, Lucas R. C. Pessutto, Viviane Pereira Moreira
 CICLing 2019 arXiv:2008.10820 [cs.CL]
 
-The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
+The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git
 
 * Aspect-Based Sentiment Analysis (ABSA) involves two tasks:
   * aspect extraction and polarity detection
@@ -79,19 +79,19 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
     search for synonyms or meronyms of the words that represent the category
   * automatic selection mechanism can be performed by considering a taxonomy of
 
-## The Filtering module aims to select the domain related part from raw data.
+## The Filtering module aims to select the domain related part from raw data
 
 * optional but it is particularly useful when we want to delve into a category
   and we only have raw data for the general topic. For example, if we just
 * as a binary text classifier for the domain of interest, or simply by choosing
-  reviews that mention the category name.
+  reviews that mention the category name
 
 ## The Preprocessing module normalizes the input data and reduces the amount of
 
 * The amount of data needed to train word-embeddings is directly proportional to
   the size of the vocabulary of the raw data. Since preprocessing reduces the
   * typical preprocessing tasks such as tokenization, sentence splitting,
-    lemmatization, and stemming.
+    lemmatization, and stemming
 
 ## The Word-Embedding Representation module
 
@@ -106,7 +106,7 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   given set of reference words
 * For each group of reference words, it returns an attentionvalued version of
   the test data. This output can be used in two ways: to identify the aspects
-  for each category or as an input to the Category Attribution module.
+  for each category or as an input to the Category Attribution module
 * e.g. cosine similarity is used to attribute the relevance of a given word x
   in relation to another word y or related to a group of words c. In this
   module, we can test with two types of similarity values. The similarity
@@ -118,19 +118,19 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
   assigned by SUAEx. For example, if we consider three groups of reference words
   in the input, ”food”, ”staff”, and ”ambience”, Output1 consists in three
   attention-valued and similarity-valued versions of the test data (one set of
-  values for each category).
+  values for each category)
 
 ## The Category Attribution module uses the output of the Similarity module to
 
 * assign one of the desired categories to each sentence in the test data. In
 * we can test different ways to aggregate the similarity values
   * average for each sentence or only consider the maximum value [22]. If the
-    22. Vargas, D.S., Moreira, V.P.: Identifying sentiment-based contradictions.
+    22. Vargas, D.S., Moreira, V.P.: Identifying sentiment-based contradictions
         JIDM 8 (2017) 242–254
     * average: there are more than one relevant word to receive attention in the
-    * maximum: the word with the highest score will get all the attention.
+    * maximum: the word with the highest score will get all the attention
 * Output2 is the main output which contains all the sentences of the test data
-  with the categories assigned by the Category Attribution module.
+  with the categories assigned by the Category Attribution module
 
 # 5 Experimental Design 6
 
@@ -153,7 +153,7 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
 * similarity between word vectors was measured with the cosine similarity in
   Gensim [24] which reads the model created by the Word2vec
 * for the laptop domain, the training file provided by SemEval is too small and
-  insufficient to create the domain word-embeddings.
+  insufficient to create the domain word-embeddings
   * Amazon raw data was taken from a public repository to be used as an external
 
 # 6 Results and Discussion 8
@@ -163,25 +163,25 @@ The code for SUAEx is available at https://github.com/dannysvof/SUAEx.git.
     attention mechanism. While
     * ABAE only considers the highest attention-valued word in the sentence,
       SUAEx uses all the attention values in the sentences.  This difference can
-* On the SemEval datasets, SUAEx outperformed the baseline in nearly all cases.
-  We can attribute this to the role of the training (i.e., raw) data.
+* On the SemEval datasets, SUAEx outperformed the baseline in nearly all cases
+  We can attribute this to the role of the training (i.e., raw) data
   * SUAEx only uses the training data to generate the word-embeddings
   * ABAE also uses it in the evaluation module because it clusters the training
-    data.
-* per aspect category are shown in Table 2.
+    data
+* per aspect category are shown in Table 2
   * SUAEx scored lower in recall for Ambience, Smell, and Look because the
     reference words (i.e., the names of the categories themselves) are not as
     expressive as the reference words for the other categories
     * We can find more similar words for general terms like food or staff than
-      for specific terms like smell.
+      for specific terms like smell
 * Other works have also used the CitySearch and BeerAdvocate datasets. Thus we
   * techniques such as LDA [25], biterm topic-models [26], a statistical model
     over seed words [27], or restricted Boltzmann machines [28]. The same
 * our method can assign high attention values to adjectives (which typically are
   not aspects).  This happens with the word _higher_ in our example, which is an
-  * could be mitigated with a post-filter based on part-of-speech tagging.
+  * could be mitigated with a post-filter based on part-of-speech tagging
 * Table 3's extraction was performed by selecting the highest attention-valued
-  words of each sentence and by considering the category classification results.
+  words of each sentence and by considering the category classification results
   * This extraction can be used as an additional module in our framework
 
 ## Runtime Results. In order to obtain the runtime results, we ran both methods

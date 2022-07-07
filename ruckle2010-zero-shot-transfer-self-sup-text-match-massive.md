@@ -1,4 +1,5 @@
-MultiCQA: Zero-Shot Transfer of Self-Supervised Text Matching Models on a Massive Scale
+MultiCQA: Zero-Shot Transfer of Self-Supervised Text Matching Models
+  on a Massive Scale
 Andreas Rücklé, Jonas Pfeiffer, Iryna Gurevych
 EMNLP-2020 arXiv:2010.00980 [cs.CL]
 
@@ -72,10 +73,10 @@ EMNLP-2020 arXiv:2010.00980 [cs.CL]
 
 ## 5.1 Setup
 
-* we (2) combine knowledge from our domain adapters (§4) with AdapterFusion (AF;
-  Pfeiffer+ 2020a). This learns
+* we (2) combine knowledge from our domain adapters (§4) with
+  AdapterFusion (AF; Pfeiffer+ 2020a). This learns
   * a weighted combination of multiple (fixed) adapters in each BERT layer and
-    is typically trained on the target task. We adapt this approach to our
+  * typically trained on the target task. We adapt this approach to our
     zero-shot setup and train it with multi-task learning as above
 
 # 7 Conclusoin
