@@ -2,13 +2,13 @@ Leveraging Pre-trained Checkpoints for Sequence Generation Tasks
 Sascha Rothe, Shashi Narayan, Aliaksei Severyn
 TACL arXiv:1907.12461 [cs.CL]
 
-* query our models and predictions on various benchmarks will be available at
+* our models and predictions on various benchmarks will be available at
   https://github.com/google-research/google-re search/tree/master/bertseq2seq
 
 # Abstract
 
 * We developed a Transformer-based sequence-to-sequence model
-  * compatible with publicly available pre-trained BERT, GPT-2 and RoBERTa chpts
+  * compatible with publicly available pre-trained BERT, GPT-2 and RoBERTa chps
   * initializing our model, both encoder and decoder, with these checkpoints
 * extensive empirical study on its utility
 * new SOTA results on Machine Translation, Text Summarization,
@@ -19,11 +19,11 @@ TACL arXiv:1907.12461 [cs.CL]
 * Unsupervised and self-supervised pre-training methods have established a
   qualitatively new level of baseline performance for many benchmarks
 * argued that the pre-training objective used by BERT is not well suited for
-  conditional text generation in machine translation and summarization (Yang+ 19)
+  conditional text generation in machine translation and summ (Yang+ 19)
 * remains unclear, how beneficial for sequence-to-sequence generation models
 * what is the best way to leverage publicly available pre-trained checkpoints
   for warm-starting sequence generation models?
-  * e.g. BERT checkpoint to initialize the encoder and GPT-2 model as the decodr
+  * eg BERT checkpoint to initialize the encoder and GPT-2 model as the decodr
   * we rigorously experiment with a large number of settings to
     combine BERT, GPT and RoBERTa pre-trained checkpoints
     to initialize our Transformer-based model
@@ -39,9 +39,9 @@ TACL arXiv:1907.12461 [cs.CL]
 * significant improvements over randomly initialized models
 * new SOTA results
 * a pre-trained encoder is an essential component for sequence generation tasks
-* often these tasks benefit from sharing the weights between the encoder/decoder
+* often these tasks benefit from sharing the weights between encoder & decoder
 * over 300 experiments spending thousands of TPU v3 hours
-* Training a language specific BERT model also improves performance over multiln
+* Training a language specific BERT model also improves perf over multilgual
 
 # 2 Models and Pre-trained Checkpoints
 
@@ -51,24 +51,24 @@ TACL arXiv:1907.12461 [cs.CL]
   * the self-attention mechanism is masked to look only at the left context
   * we add an encoder-decoder attention mechanism
 * All models were fine-tuned on the target task using
-  * Adam with a learning rate of 0.05. We used a
+  * Adam with a learning rate of 0.05
   * linear learning rate warmup with 40k steps,
     normalization by the square root of the hidden size, and a
     square root decay
-  * no tuning of these hyperparameters (except for §5).  The
+  * no tuning of these hyperparameters (except for §5)
 * batch size and the number of training steps will be reported for each task
 
 # 3 Investigated Model Variants
 
 * GPT, a decoder-only architecture
   * We treat the input as a conditioning prefix of a language model
-  * the memory footprint of this model is smaller compared to an encoder-decoder
+  * the memory footprint of this model is smaller compared to encoder-decoder
 
 # 4 Experiments and Results 4
 
 ## 4.4 Abstractive Summarization 6
 
-* We evaluate our setups on three summarization datasets of varying characterist
+* We evaluate our setups on three summarization datasets of varying charistics
   * Gigaword (Napoles+ 2012),
     * 3.8M _sentence_-summary training pairs
   * CNN and DailyMail (Hermann+ 2015), and
@@ -83,11 +83,11 @@ TACL arXiv:1907.12461 [cs.CL]
 * not anonymize entities
 * casing
   * original cased versions of CNN/DailyMail and BBC datasets
-  * Gigaword: lowercased version to match the publicly available lowercased test
+  * Gigaword: lowercased version to match the pub available lowercased test
 * truncation
   * input documents: to 512 tokens for CNN/DailyMail and BBC, and to 128 tokens
   * summaries was limited to 128 tokens for CNN/DailyMail, 64 for BBC, and 32
-* global batch size of 128 document-summary pairs for CNN/DailyMail and BBC, and
+* global batch size of 128 document-summary pairs for CNN/DailyMail and BBC, &
 * number of training steps depending on the training data sizes
   * 500k, 300k and 200k steps for the Gigaword, CNN/DailyMail and BBC
 * standard publicly available test sets; these consists of
@@ -117,23 +117,23 @@ TACL arXiv:1907.12461 [cs.CL]
     is better equipped for document-level abstraction
     than the decoder-only architectures
     where the input document is a conditioning prefix of a language model
-* Initialization with different checkpoints, e.g. BERT 2 GPT
+* Initialization with different checkpoints, eg BERT 2 GPT
 * Gigaword: ROBERTA SHARE performs the best
   * on par with the current SOTA MASS model (Song+ 2019)
 * BBC extreme: The ROBERTA SHARE setup sets a new SOTA,
   outperforming all existing baselines by a large margin
-* CNN/DailyMail dataset: The best model
-  * outperforms the Pointer Generator network (See+ 2017) and
+* CNN/DailyMail dataset:
+  * The best model outperforms the Pointer Generator network (See+ 2017) and
     the pre-trained single-decoder model with TransformerLM (Khandelwal+ 2019)
   * lags behind the
     * Bottom-Up system (Gehrmann+ 2018)
-      with a taskspecific module for content selection
+      with a task-specific module for content selection
       along with the copy mechanism (Gu+ 2016)
     * UniLM model (Dong+ 2019)
       * BERT-Large pre-trained for Bidirectional, unidirectional and seq2seq LM
-      * also fine-tuned with an additional extractive summarization objective to
-        predict relevant sentences in the document; this objective could be
-        beneficial to generate the CNN/DailyMail extracts
+      * also fine-tuned with an additional extractive summarization objective
+        to predict relevant sentences in the document
+        * this objective could be beneficial to generate the CNN/DailyMail extr
 
 # 5 Discussion on Ablation Studies 8
 
@@ -145,9 +145,18 @@ TACL arXiv:1907.12461 [cs.CL]
     * two vocabularies have to be learned anyways and
     * the output is English, where GPT-2 was trained on
 
-## Tuning GPT-2 Based Models. We were sur-
+## Tuning GPT-2 Based Models
 
-## Initializing only Embeddings. We want to in-
+* setups using the GPT-2 checkpoint performed relatively poorly given that it
+* we tuned the learning rate, the warmup steps, and the optimizer ∈ {Adam,
+  Adafactor} for the GPT-2 based setups ( RND 2 GPT , GPT , BERT 2 GPT ) on the
+  DiscoFuse dataset
+* slightly higher numbers but not at a magnitude that would suggest a
+  previously suboptimal setting.  Specifically, we got a
+* SARI score of 88.8 compared to 88.4 for BERT 2 GPT , 88.1 compared to 88.0
+  for GPT and 87.7 compared to 86.5 for RND 2 GPT
+
+## Initializing only Embeddings
 
 * almost no improvement over the fully randomly initialized model RND 2 RND
 
@@ -182,11 +191,11 @@ TACL arXiv:1907.12461 [cs.CL]
 ## Summary Lengths and Repetitions
 
 * All models generated summaries of comparable lengths
-  * ROBERTA SHARE produced summaries were closest to the GOLD summaries in lengt
+  * ROBERTA SHARE summaries were closest to the GOLD summaries in length
 * we estimated the percentage of summaries with at least one repetition of rare
   or content words. We discarded the 500 most common words from the model
-  generated and reference summaries, the rests were considered as rare or contnt
-* BERT SHARE and ROBERTA SHARE summaries are unequivocally better than RND 2 GPT
+  generated and reference summaries, the rests were considered as rare/content
+* BERT SHARE and ROBERTA SHARE summs are unequivocally better than RND 2 GPT
   * in terms of both automatic evaluations (ROUGE) and human evaluation
 
 # 7 Related Work 12
