@@ -1,5 +1,5 @@
-Yonatan Belinkov and James Glass
 Analysis Methods in Neural Language Processing: A Survey
+Yonatan Belinkov and James Glass
 TACL Volume 7, 2019 p.49-72
 
 * detailed references for studies corresponding to Sections 2, 4, and 5
