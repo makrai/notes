@@ -6,21 +6,21 @@ arXiv:2204.02311 [cs.CL]
   across a variety of natural language tasks using
 * few-shot learning, which drastically reduces the number of task-spec training
 * understanding the impact of scale on few-shot learning,
-* we trained a 540-billion parameter, densely activated, Transformer LM, which
+* we trained a 540-billion parameter, densely activated, Transformer LM
   * 6144 TPU v4 chips using Pathways, a new ML system which enables highly
-    efficient training across multiple TPU Pods. We
+    efficient training across multiple TPU Pods
 * SOTA few-shot learning results on hundreds of NLU and generation benchmarks
 * On a number of these tasks, PaLM 540B achieves breakthrough performance,
   outperforming
   * the finetuned SOTA on a suite of multi-step reasoning tasks, and
-  * average human performance on the recently released BIG-bench benchmark. A
-    * discontinuous improvements from model scale, meaning that performance
+  * average human performance on the recently released BIG-bench benchmark
+    * discontinuous improvements from model scale
 * strong capabilities in multilingual tasks and source code generation, which
-  we demonstrate on a wide array of benchmarks. We additionally provide a
-* comprehensive analysis on bias and toxicity, and study the extent of
-  * training data memorization with respect to model scale. Finally, we discuss
-  * ethical considerations related to large language models and potential
-    mitigation strategies
+  we demonstrate on a wide array of benchmarks
+* comprehensive analysis on bias and toxicity, and study (the extent of)
+  * training data memorization with respect to model scale
+  * ethical considerations related to large language models and
+    potential mitigation strategies
 
 # 1 Intro
 

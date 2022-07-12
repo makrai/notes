@@ -51,7 +51,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
     is relatively small and the classification task is of a topical nature
 * future work
   * additional embedding space and/or more clustering techniques ; co-training
-    (Blum and Mitchell, 1998) methods, and more
+    (Blum and Mitchell, 1998) methods
   * tuning the number of clusters
   * using the labeled data available for fine-tuning as anchors for the
     intermediate clustering step
@@ -82,8 +82,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * compute for each class l ∈ L a centroid c l which is the average embedding
   * We then compute the average Euclidean Embeddings’ Distance (ED) from the
     corresponding centroids: ED(l, e) = E ni=0 ke i − c i k 2
-  * Macro average results were similar, we hence report only micro average
-    results.  Results with Cosine similarity were also similar, hence omitted
+  * Macro average results were similar, we hence report only micro average res
+    * Results with Cosine similarity were also similar, hence omitted
 * sanity check:
   * significance test to the ED statistic, confirming that representations of
     same-class examples are close to each other
@@ -91,11 +91,11 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
     labels to random labels. We find that EDs for both BERT and BERT IT:CLUST
     are significantly different from random (p < 0.001)
   * ie both before and after inter-training, same-class reprs are close
-* compare the representations before and after inter-training. We find that the
-  randomly permuted EDs of BERT IT:CLUST are about 3 times larger than BERT’s,
-  despite similar norm values. This means that
-  the post inter-training representations are more dispersed. Hence, to
-  properly compare, we normalize ED by the average of the permuted EDs
+* compare the representations before and after inter-training
+  * randomly permuted EDs of BERT IT:CLUST are about 3 times larger than
+    BERT’s, despite similar norm values
+  * ie the post inter-training representations are more dispersed. Hence, to
+    properly compare, we normalize ED by the average of the permuted EDs
 * Comparing the Normalized Embeddings’ Distance (NED) before and after
   inter-training, we find that
   in all datasets the normalized distance is smaller after inter-training
@@ -117,8 +117,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
       inter-training was not beneficial, as discussed in Section 4
 * Since the partition obtained via clustering is often informative for the
   target class labels, we examine whether it can be utilized directly, as
-  opposed to as pseudo-labels for BERT inter-training. To that end, we applied
-  * a simple heuristic. Given a labeling budget x, we divide it across
+  opposed to as pseudo-labels for BERT inter-training
+  * a simple heuristic: Given a labeling budget x, we divide it across
     clusters, relative to their size, while ensuring that at least one instance
     within each of the 50 clusters is labeled
   * reveal the labels of a random sample of examples in that cluster, and
@@ -136,7 +136,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * weak supervision (Shnarch+ 2018)
   * data augmentation (Anaby-Tavor+ 2020)
   * adversarial transfer (Cao+ 2018)
-* clustering
+* clustering and transfer learning/data augmentation
   * In Computer Vision, pretrained models are often learnt by image clustering
     (Caron+ 2018)
   * In NLP hE clustering was mainly used for non-transfer scenarios
@@ -161,7 +161,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * All these works aim to improve the performance upon transfer, making it
     more suitable for any new domain
     * In contrast, we focus on improvement given the domain
-* domain-specific information. For example, utilizing
+* domain-specific information eg
   * metadata (Melamud+ 2019)
   * training on weakly-supervised data (Raisi and Huang, 2018; Meng+ 2020) or
   * multitasking on related tasks concurrently (Liu+ 2019a)

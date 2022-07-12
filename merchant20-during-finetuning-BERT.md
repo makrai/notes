@@ -14,7 +14,7 @@ BlackboxNLP | EMNLP 2020
   * no catastrophic forgetting of linguistic phenomena. Instead
   * fine-tuning is a conservative process that
     primarily affects the top layers of BERT, albeit with
-    noteworthy variation across tasks
+    noteworthy variation across tasks, eg
     * dependency parsing reconfigures most of the model, whereas
     * SQuAD and MNLI involve much shallower processing
   * fine-tuning has a weaker effect on representations of out-of-domain sents,

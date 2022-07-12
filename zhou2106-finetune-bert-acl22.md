@@ -101,7 +101,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 
 # 2 Preliminaries: Probing Methods 2
 
-## 2.1 classifier-based probe (eg, Tenney+ 2019; Jullien+ 2022) 
+## 2.1 classifier-based probe (eg, Tenney+ 2019; Jullien+ 2022)
 
 * assess how well a representation supports classifiers for a task
 * the most commonly used probes in the literature
@@ -129,9 +129,9 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
   each cluster only contains the points with the same label, and
   there are no overlaps between the convex hulls of these clusters
 * Any decision boundary must cross the regions between the clusters that have
-  different labels (see in Figure 1). Since fine-tuning a contextualized
-  representation creates different representations for different tasks, it is
-  reasonable to probe the representation based on a given task
+  different labels (see in Figure 1)
+  * Since fine-tuning creates different representations for different tasks,
+    it is reasonable to probe the representation based on a given task
 * allow us to measure three properties of interest:
 
 ### Number of Clusters
@@ -232,7 +232,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
     tiny, and they require more epochs
   * We fine-tuned all the representations for 10 epochs
     except BERT base, which we fine-tuned for the usual three epochs
-  * the fine-tuning phase is separate from the probing classif training phase 
+  * the fine-tuning phase is separate from the probing classif training phase
 * for the probe classifiers, we train two-layer neural networks (§2.1) from
   scratch on both original and fine-tuned representations 7, ensuring a fair
   comparsion between them
@@ -378,8 +378,8 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 
 * Based on our conclusion in §4.3 that
   a larger gap between labels leads to better generalization,
-  we expect that the performance of PS-fxn after fine-tuning on PS-role would
-  be higher than the performance after fine-tuning on POS tagging
+  we expect that the performance of PS-fxn after fine-tuning on PS-role
+  would be higher than the performance after fine-tuning on POS tagging
 * To verify this, we train two-layer neural networks on PS-fxn task using the
   representations that are fine-tuned on PS-role and POS tagging tasks
   * we do not further fine-tune the representations for PS-fxn
@@ -404,8 +404,8 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 
 ## 4.5 How fine-tuning changes the geometry of different layers of BERT base
 
-* during fine-tuning, lower layers changed little compared to higher layers
-  (Merchant+ 2020; Mosbach+ 2020b)
+* Merchant+ (2020); Mosbach+ (2020b):
+  during fine-tuning, lower layers changed little compared to higher layers
 * In the following experiments, we confirm their findings and further show
   * fine-tuning does not change the repr arbitrarily, even for higher layers;
   * an analysis of the changes of different layers by a visual comparison
@@ -418,7 +418,6 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 * Mosbach+ (2020b) show that higher layers change more than the lower
 * nL, we find that higher layers still remain close to the original reprs
 * we compare each layer during fine-tuning to its corresponding original
-  pretrained one
   * spatial similarity between two representations is calculated as the
     Pearson correlation coefficient of their distance vectors (§2)
   * Intuitively, a classifier learns a decision boundary that traverses the
@@ -431,8 +430,8 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
   * For the higher layers, we find that the Pearson between the original
     representation and the fine-tuned one is surprisingly high (more than 0.5),
 * this reinforces the notion that fine-tuning does
-  * not change the representation arbitrarily.  Instead, it
-  * attempts to preserve the relative positions the labels
+  * not change the representation arbitrarily
+  * attempts to preserve the relative positions of the labels
   * ie encodes task-specific information, yet it largely preserves the
     pre-trained information encoded in the representation
 
@@ -464,8 +463,7 @@ and almost in the same directions
 
 * Indeed, fine-tuning almost always improves task performance
 * hE, rare cases exist where fine-tuning decreases the performance
-* Fine-tuning introduces a divergence between the training set and unseen
-  examples (§4.1)
+* Fine-tuning introduces a divergence between the training set & unseen (§4.1)
 * unclear how this divergence affects the generalization ability
 * eg does this divergence suggest a new kind of overfitting that is
   driven by representations rather than classifiers?
@@ -478,10 +476,10 @@ and almost in the same directions
 * We hypothesize that the
   distances between label clusters correlate with the classif performance
   * hypothesis confirmed by investigating cross-task fine-tuning (§4.4)
-  * surprising because fine-tuning for a classification task does not need to
-    alter the geometry of a representation if the data is already linearly
-    separable in the original representation.  What we observe reveals
-    geometric properties that characterize good representations
+  * surprising because fine-tuning for a classification task does
+    not need to alter the geometry of a representation
+    if the data is already linearly separable in the original representation.
+    * What we observe reveals geometric properties that characterize good reprs
   * no theoret anal to connect our geometric findings to repr learnability, but
     the findings in this work may serve as a starting point
 
@@ -501,7 +499,7 @@ and almost in the same directions
 
 # 6 Related Work
 
-* analyzing and understanding representations. The most commonly used technique
+* analyzing and understanding representations
   * classifier-based method
     * linear classifiers (Alain and Bengio, 2017; Kulmizev+ 2020)
     * linear probe is not sufficient to evaluate a repr (Hewitt and Liang 2019)
@@ -516,7 +514,7 @@ and almost in the same directions
   * usually provides strong performance (Wang+ 2018; Talmor+ 2020),
   * how fine-tuning manage to do so has remained an open question
   * instability (Mosbach+ 2020a; Dodge+ 2020; Zhang+ 2020)
-  * forgetting problems (Chen+ 2020; He+ 2021) make it harder to analyze
+  * forgetting problems (Chen+ 2020; He+ 2021)
   * valuable conclusions
     * Merchant+ BlackboxNLP 2020
       Amil Merchant, Elahe Rahimtoroghi, Ellie Pavlick, and Ian Tenney
@@ -531,7 +529,7 @@ and almost in the same directions
 # Appendix A Fine-tuning Details
 
 * we fine-tune all tasks and representations using HuggingFace library
-  * linear weight schduler with a learning rate of 3e −4 
+  * linear weight scheduler with a learning rate of 3e −4
   * 10% of the total update steps as the warmup steps
     * The same schduler is used for all tasks
 * models are optimized by Adam (Kingma and Ba, 2015) with batch size of 32
