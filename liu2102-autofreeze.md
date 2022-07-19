@@ -101,6 +101,12 @@ Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
         deciding when to evict data from the cache
 * We evaluate AutoFreeze using a wide range of fine-tuning tasks
   * topic classification on the AG’s News dataset [69] and Sogou News [55]
+    [69] X. Zhang, J. Zhao, and Y. LeCun
+    Character-level convolutional networks for text classification
+    NeurIPS 2015.
+    [55] C. Sun, X. Qiu, Y. Xu, and X. Huang
+    How to fine-tune BERT for text classification? 
+    China National Conference on Chinese Computational Linguistics 2019
   * sentiment analysis on Yelp Full dataset [69] and IMDb dataset [32]
   * question answering on SQuAD2.0 dataset [46]
   * multiple choice task on SWAG dataset [67], and

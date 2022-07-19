@@ -62,8 +62,8 @@ https://tfhub.dev/google/LaBSE
     * matching performance on languages with plenty of training data, but does
     * significantly better on languages with limited data, boosting the averaged
       accuracy on the entire 112 language evaluation to 83.7% from the 65.5%
-  * performs strongly on the Tatoeba task for 30+ languages for which we have no
-    monolingual or bilingual training data
+  * performs strongly on the Tatoeba task for 30+ languages
+    for which we have no monolingual or bilingual training data
     * 109 training languages cover language families containing the unseen langs
     * as long as the text can be segment to the wordpiece tokens reasonably
 * contributions
