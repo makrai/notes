@@ -1,9 +1,8 @@
 Inflection at the morphology-syntax interface
-Chapter (PDF Available) · April 2020 with 28 Reads 
-DOI: 10.1515/9783110440577-007
-In book: Word Knowledge and Word Usage, A Cross-Discip Guide to the Mental Lex
-
 Claudia Marzi, James P Blevins, Geert Booij, Vito Pirrelli
+In book: Word Knowledge and Word Usage, A Cross-Discip Guide to the Mental Lex
+2020
+
 
 * basic units of inflection and how do speakers acquire and process them? How
 * vary across languages? Are some inflection systems somewhat more complex than
@@ -54,7 +53,7 @@ Dutch nouns indirectly, by looking at agreement data. This is another challenge
 for the language learner.
 
 Two interacting but logically distinct issues lie at the core of any linguistic
-or psycholinguistic account of inflection:Inflection at the morphology-syntax
+or psycholinguistic account of inflection: Inflection at the morphology-syntax
 interface 231
 
 A. the issue of what syntactic contexts require morphosyntactic and/or mor-

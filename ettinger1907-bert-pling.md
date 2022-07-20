@@ -23,7 +23,7 @@ https://github.com/aetting/lm-diagnostics
 
 * diagnostics targeting a range of linguistic capacities, drawn from psycholing
   * advantages: because of their origin in psycholinguistics,
-    * carefully controlled to ask targeted questions about linguistic capabilits
+    * carefully controlled to ask targeted questions about ling capabilities
     * ask these questions by examining word predictions in context,
     * allows us to study LMs without any need for task-specific fine-tuning
 * distinctive properties of our diagnostics
@@ -61,10 +61,10 @@ https://github.com/aetting/lm-diagnostics
   * specific linguistic phenomena such as
     * function words (Kim+ 2019)
   * overall level of “understanding”: semantic similarity and entailment
-    (Wang+ 2018; Bowman+ 2015; Agirre+ 2012; Dagan+ 2005; Bentivogli+ 2016), and
-  * curated versions of these tasks to test for specific linguistic capabilities
+    (Wang+ 2018; Bowman+ 2015; Agirre+ 2012; Dagan+ 2005; Bentivogli+ 2016)
+  * curated versions of these tasks to test for specific ling capabilities
     (Dasgupta+ 2018; Poliak+ 2018; McCoy+ 2019)
-  * Our diagnostics test LMs in their natural setting—via word predict in contxt
+  * Our diagnostics test LMs in their natural setting: word predict in context
 * analyzing linguistic capacities of LMs specifically
   * dominated by syntactic testing
   * employing targeted evaluations modeled after psycholinguistic tests
@@ -83,7 +83,7 @@ https://github.com/aetting/lm-diagnostics
     knowledge, category membership, and negation
     * Our tests are also distinct in eliciting a very specific response profile
       in humans, creating unique predictive challenges for models, see 4.2
-* we not only compare word probabilities—we also examine word prediction direct,
+* we not only compare word probabilities: we examine word prediction directly
   * word prediction accuracy as a test of LMs’ language understanding
   * LAMBADA dataset (Paperno+ 2016), tests models’ ability to predict the final
     word of a passage, in cases where the final sentence alone is insufficient
@@ -91,7 +91,7 @@ https://github.com/aetting/lm-diagnostics
 * examining linguistic characteristics of the BERT model itself
   * Clark+ (2019) analyze the dynamics of BERT’s self-attention mechanism,
     probing attention heads for syntactic sensitivity and finding that
-    individual heads specialize strongly for syntactic and coreference relations
+    individual heads specialize strongly for syntactic and coreference rels
   * Lin+ (2019) also examine syntactic awareness in BERT by
     * syntactic probing at different layers, and
     * examination of syntactic sensitivity in the self-attention mechanism
@@ -124,7 +124,7 @@ https://github.com/aetting/lm-diagnostics
 
 ### N400 amplitude
 
-* brain response detected by measuring electrical activity at the scalp (by EEG)
+* brain response detected by measuring electrical activity at the scalp (EEG)
 * to gauge how expected a word w is in a context c
   * appears to be sensitive to fit of a word in context
   * correlate with cloze in many cases (Kutas and Hillyard, 1984)
@@ -145,7 +145,7 @@ https://github.com/aetting/lm-diagnostics
 # 5 Datasets 4
 
 * Each of our diagnostics supports three types of testing:
-  word prediction accuracy, sensitivity testing, and qualitative prediction anal
+  word prediction accuracy, sensitivity testing, and qualitative predict anal
 * constructed to constrain the information relevant for making word predictions
 * word prediction accuracy, we use the most expected items from human cloze
   probabilities as the gold completions
@@ -169,8 +169,8 @@ https://github.com/aetting/lm-diagnostics
 * tests sensitivity to differences within semantic category
 > He complained that after she kissed him, he couldn’t get the red color off
 > his face. He finally just asked her to stop wearing that (lipstick/mascara)
-* Federmeier and Kutas (1999) tested how brains would respond to different types
-  of context completions
+* Federmeier and Kutas (1999) tested
+  how brains would respond to different types of context completions
 
 ### Information needed for prediction
 
@@ -187,10 +187,10 @@ https://github.com/aetting/lm-diagnostics
 
 ### Sensitivity test. The Federmeier and Kutas (1999) study found that
 
-* inappropriate completions (e.g., mascara, bracelet) had
+* inappropriate completions (eg mascara, bracelet) had
   * cloze probabilities of virtually zero (average cloze .004 and .001, resp),
-  * N400 showed some expectation for completions that shared a semantic category
-    with the expected completion (e.g., mascara, by relation to lipstick)
+  * N400 showed some expectation for completions that shared a sem category
+    with the expected completion (eg mascara, by relation to lipstick)
 * sensitivity test targets this distinction,
   testing whether LMs will favor inappropriate completions
 
@@ -199,7 +199,7 @@ https://github.com/aetting/lm-diagnostics
 ## 5.2 ROLE-88: event knowledge and semantic role sensitivity
 
 * sensitivity to impact of role reversals. Table 2 shows an example item pair
-> the restaurant owner forgot which customer/waitress the waitr/custo had served
+> the restaurant owner forgot which customer/waitress the waitr/cust had served
 * items come from a human experiment by Chow+ (2016)
 
 ### Information needed for prediction
@@ -209,7 +209,7 @@ https://github.com/aetting/lm-diagnostics
 
 ### Sensitivity test
 
-* Chow+ (2016) study found that although each completion (e.g., served) is
+* Chow+ (2016) study found that although each completion (eg served) is
   good for only one of the noun orders and not the reverse, the
   * N400 shows a similar level of expectation for the target completions
     regardless of noun order. Our sensitivity test targets this distinction,
@@ -246,7 +246,7 @@ https://github.com/aetting/lm-diagnostics
 
 ### Supplementary items, designed to test effects of naturalness
 
-* Nieuwland and Kuperberg (2008) followed up on the Fischler+ (1983) experiment,
+* Nieuwland and Kuperberg (2008) followed up on the Fischler+ (1983) experiment
 * affirmative and negative sentences chosen to be more “natural”, and
   contrasting these with affirmative and negative sentences chosen to be less
   natural
@@ -256,7 +256,7 @@ https://github.com/aetting/lm-diagnostics
 
 # 6 Experiments 6
 
-* We test two versions of the pretrained model: BERT BASE and BERT LARGE (uncas)
+* We test two versions of the pretrained model: BERT BASE & BERT LARGE (uncas)
   * BASE has 110M parameters, and 7 BERT LARGE has 340M
 * Following Goldberg (2019), we also add a [CLS] token to the start of each
   sentence to mimic BERT’s training conditions
@@ -271,10 +271,10 @@ https://github.com/aetting/lm-diagnostics
 * to what extent BERT can achieve this performance based on simpler cues like
   * bow
     * To test word order, we shuffle the words in each item’s first sentence,
-  * n-gram context.
+  * n-gram context
     * To test adequacy of n-gram context, we truncate the second sentence,
       removing all but the two words preceding the target word (“Trunc”)—
-    * leaving generally enough syntactic context to identify the part of speech,
+    * leaving generally enough syntactic context to identify the POS,
       as well as some sense of semantic category (on top of the thematic setup
       of the first sentence), but removing other information from the second
 * each of these individual perturbations causes a notable drop in accuracy
@@ -303,12 +303,12 @@ https://github.com/aetting/lm-diagnostics
   * humans converge less clearly on the same predictions
   * To investigate the effect of constraint level,
     we divide items into four bins by top cloze value per sentence
-    * highest cloze bin yields much higher model accuracies than the other three
+    * highest cloze bin yields much higher model accuracies than the other 3
 
 # 9 Results for NEG-136 10
 
 * errors consist exclusively of cases in which BERT completes the sentence
-  with a repetition of the subject noun, e.g., _A daisy is a daisy_
+  with a repetition of the subject noun, eg _A daisy is a daisy_
 
 ## 9.4 Increasing naturalness
 
@@ -317,10 +317,10 @@ https://github.com/aetting/lm-diagnostics
 * less natural sentences show the pattern exhibited on NEG-136-SIMP, in which
   * BERT prefers true statements in a high proportion of affirmative sentences,
   * and in 0% of negative sentences.  Table 15 contains BERT
-    LARGE predictions on two pairs of sentences from the “Natural” sentence set.
+    LARGE predictions on two pairs of sentences from the “Natural” sentence set
 * even when BERT’s first prediction is appropriate in the context,
-  the top candidates often contradict each other (e.g., difficult and easy)
-* even with these natural items, sometimes the negation is not enough to reverse
+  the top candidates often contradict each other (eg difficult and easy)
+* even with these natural items, sometimes the neg is not enough to reverse
   * _A fast food dinner on a first date is(n't) very good/nice/romantic_
 
 # 10 Discussion 11
@@ -335,8 +335,8 @@ https://github.com/aetting/lm-diagnostics
   * BERT can also prefer good completions to bad semantically-related
     completions in a majority of items, but many of these probability
     differences are very small, much less than that of humans
-* ROLE-88, BERT’s accuracy in matching top human predictions is much lower, with
-  BERT LARGE at only 37.5% accuracy
+* ROLE-88, BERT’s accuracy in matching top human predictions is much lower,
+  * BERT LARGE at only 37.5% accuracy
   * BERT LARGE has more sensitivity than BERT BASE to the interaction between
     subject and object nouns
   * both models are typically able to use noun position to prefer good
@@ -353,10 +353,9 @@ https://github.com/aetting/lm-diagnostics
     predict them nonetheless. By contrast, when presented with sentences that
     are more “natural”, BERT does reliably prefer true completions to false,
     with or without negation
-  * latter sentences are designed to differ in naturalness, in all likelihood it
-    is not naturalness per se that drives the model’s relative success on
-    them—but rather a higher frequency of these types of statements in the
-    training data
+  * latter sentences are designed to differ in naturalness, in all likelihood
+    it is not naturalness per se that drives the model’s relative success 
+    but rather a higher frequency of these types of statements in the training
 
 # 11 Conclusion
 
