@@ -286,6 +286,24 @@ NAACL 2022
 * MAML (Finn+ 2017)
 * its first-order approximations, FOMAML (Finn+ 2017) & Reptile (Nichol+ 2018)
 * appendx tab 4 summs papers using MAML-based approaches to NLP applics (2019+)
+  1. Method: There are many variants in the learn-to-init family
+    * The most representative one is MAML (Finn+ 2017)
+      * large computation intensity, so the
+      * first-order approximations are widely used like
+        * FOMAML (Finn+ 2017) and Reptile (Nichol+ 2018) 
+      * DG-MAML (Li+ 2018) is for domain generalization
+      * Typical learn-to-init assumes that all the tasks use the same archit
+        * hE LEOPARD (Bansal+ 2020a) and Proto(FO)MAML (Triantafillou+ 2020)
+          are proposed to overcome the limitation.
+          Eleni Triantafillou, T Zhu, V Dumoulin, P Lamblin, U Evci, K Xu,
+            R Goroshin, C Gelada, K Swersky, P Manzagol, H Larochelle
+          Meta-Dataset: A dataset of datasets for learning to learn from few ex
+          International Conference on Learning Representations 2020
+  2. How to Initialize the Initialization: Learn-to-init approaches aim at
+    * using self-supervised pre-training as initialization is common
+    * The table specifies the pre-trained models used to initialize the l-t-ini
+    * ’-’ means the initial parameters are learned from random initialization
+      or cannot tell based on the descriptions in the papers.
 
 ### Learning to Initialize vs Self-supervised Learning
 
