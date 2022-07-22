@@ -53,8 +53,7 @@ Dutch nouns indirectly, by looking at agreement data. This is another challenge
 for the language learner.
 
 Two interacting but logically distinct issues lie at the core of any linguistic
-or psycholinguistic account of inflection: Inflection at the morphology-syntax
-interface 231
+or psycholinguistic account of inflection:
 
 A. the issue of what syntactic contexts require morphosyntactic and/or mor-
 pho-semantic word marking and for what lexical/grammatical units;
