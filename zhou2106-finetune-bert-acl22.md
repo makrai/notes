@@ -69,9 +69,9 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
   * Beyond confirming previous findings about fine-tuning, our analysis reveals
   1. fine-tuning introduces a divergence between training and test sets,
     * not severe enough to hurt generalization in most cases
-    * hE exception where fine-tuning hurts the performance; this setting also
-      has the largest divergence between training and test set after
-      fine-tuning (§4.1)
+    * hE exception where fine-tuning hurts the performance; in the setting with
+      the largest divergence between training and test set after fine-tuning
+      (§4.1)
   2. how fine-tuning changes labeled regions of the representation space
     * For a representation where task labels are
       not linearly separable, we find that

@@ -40,8 +40,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
       varying only the random seed, leads to a
       large standard deviation of the fine-tuning accuracy
       (Devlin+ 2019; Dodge+ 2020)
-* Few methods have been proposed to solve the observed instability
-  (Phang+ 2018; Lee+ 2020)
+* Few methods to solve the observed instability (Phang+ 2018; Lee+ 2020)
   * no sufficient understanding of why fine-tuning is prone to such failure
   * The goal of this work is to address this shortcoming
   * Why is fine-tuning prone to failures and how can we improve its stability?
@@ -49,12 +48,12 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * catastrophic forgetting and small size of the fine-tuning datasets
   * both hypotheses fail to explain fine-tuning instability
   * investigate fine-tuning failures on datasets from GLUE
-    * fine-tuning instability can be decomposed into two separate aspects:
-      * optimization difficulties early in training,
-        characterized by vanishing gradients,
-      * differences in generalization late in training,
-        characterized by a large variance of development set accuracy for runs
-        with almost equivalent training loss
+  * fine-tuning instability can be decomposed into two separate aspects:
+    * optimization difficulties early in training,
+      characterized by vanishing gradients,
+    * differences in generalization late in training,
+      characterized by a large variance of development set accuracy
+      for runs with almost equivalent training loss
 * a simple but strong baseline for fine-tuning pre-trained language models
   * significantly improves the fine-tuning stability compared to previous work
   * Figure 1:
@@ -287,7 +286,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * successful run
     * also observe small gradients at the beginning of training (until iter 70)
       gradients start to grow as training continues
-    * at the end of fine-tuning, we observe gradient norms nearly 2× orders of
+    * at the end of fine-tuning, we observe gradient norms nearly 2 orders of
       magnitude larger than that of the failed run
   * visualizations for additional layers and weights in Fig. 10 in the Appendix
   * same behavior also for RoBERTa and ALBERT: Appendix Fig. 11 and 12
@@ -347,7 +346,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 ### Loss surfaces
 
 * To get further intuition about the fine-tuning failure, we provide
-  loss surface visualizations (Li+ 2018; Hao+ 2019) of failed and successful
+  loss surface visualizations (Li+ 2018; Hao+ 2019), failed and successful
 * Denote by `θ_p , θ_f , θ_s` the parameters of the
   pre-trained model, failed model, and successfully trained model,
   * We plot a two-dimensional loss surface `f (α, β) = L(θ_p + α δ_1 + β δ_2 )`
@@ -368,7 +367,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * the remaining fine-tuning variance on the development set
   can be attributed to generalization
 * experiment:
-  * fine-tune BERT on RTE for 20 epochs and show the
+  * fine-tune BERT on RTE for 20 epochs
     * development set accuracy for 10 successful runs in Fig. 8a
     * the development set accuracy vs. training loss of all BERT models
       fine-tuned on RTE for the full ablation study (shown in Fig. 9 in the
@@ -383,10 +382,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 # 6 A simple but hard-to-beat baseline for fine-tuning BERT
 
 * guidelines for fine-tuning transformer-based MLMs on small datasets:
-  * Use small learning rates with bias correction to avoid vanishing gradients
-    early in training
-  * Increase the number of iterations considerably and train to (almost) zero
-    training loss
+  * Use small learning rates with bias correction
+    to avoid vanishing gradients early in training
+  * Increase the number of iterations considerably and
+    train to (almost) zero training loss
 * simple baseline scheme
   * fine-tune BERT using ADAM with bias correction and a learning rate of 2e−5
   * 20 epochs,
@@ -402,8 +401,8 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * compare to
     the default strategy of Devlin+ (2019) and
     the recent Mixout method (Lee+ 2020)
-* our method leads to a much more stable fine-tuning performance on all three
-  datasets as evidenced by the
+* our method leads to a much more stable fine-tuning performance
+  on all three datasets as evidenced by the
   significantly smaller standard deviation of the final performance
 * Levene’s test (Levene, 1960) to check the equality of variances for the
   distributions of the final performances on each dataset

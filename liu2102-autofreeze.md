@@ -4,11 +4,13 @@ arXiv:2102.01386 [cs.LG]
 
 Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
 
-* fine-tuning on models like BERT can take many hours even when using GPUs
+# Abstract
+
+* fine-tuning models like BERT can take many hours even when using GPUs
   * prior work proposes limiting the number of layers that are fine-tuned
   * eg freezing all layers but the last layer
   * we find that such static approaches lead to reduced accuracy
-* We propose, AutoFreeze
+* We propose AutoFreeze
   * adaptive approach to choose which layers are trained
     * accelerate model fine-tuning while preserving accuracy
     * conclu: freeze parts of the model that are closest to convergence during

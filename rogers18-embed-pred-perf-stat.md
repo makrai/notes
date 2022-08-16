@@ -17,7 +17,7 @@ http://ldtoolkit.space
   * correlate with performance on 14 extrinsic and intrinsic task datasets
     (and also explain the lack of correlation between some of them)
   * Our approach enables multi-faceted evaluation, parameter search, and a
-    more principled, hypothesis-driven approach to devel of distri sem reprs
+    more principled, hypothesis-driven approach to devel distri sem reprs
 
 # 1 Intro
 

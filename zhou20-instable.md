@@ -12,11 +12,11 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 * ? reliability of the conclusions drawn based on these analysis sets?
   * we: a thorough empirical study over analysis sets
   * instability exists all along the training curve
-  * lower-than-expected correlations between the analysis validation set and
-    standard validation set, questioning the effectiveness of the current
-    model-selection routine
+  * lower-than-expected correlations
+    between the analysis validation set and standard validation set,
+    questioning the effectiveness of the current model-selection routine
 * Where does this instability come from?
-  * both theoretical explanations and empirical evidence regarding the source
+  * both theoretical explanations and empirical evidence
   * mainly comes from high inter-example correlations within analysis sets
 * How should we handle this instability and what are potential solutions?
   * we: initial attempt to mitigate the instability
@@ -25,10 +25,10 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 
 # 1 Introduction
 
-* on two semantically challenging tasks, Natural Language Inference (NLI) and
-  Reading Comprehension (RC), the SOTA results have reached or even surpassed
-  the estimated human performance on certain benchmark datasets (Wang+ 2019;
-  Rajpurkar+ 2016a, 2018)
+* on two semantically challenging tasks,
+  Natural Language Inference (NLI) and Reading Comprehension (RC), the
+  SOTA results have reached or even surpassed the estimated human perf
+  on certain benchmark datasets (Wang+ 2019; Rajpurkar+ 2016a, 2018)
 * Auxiliary analysis datasets for debugging and understanding models
   * a new trend of research to analyze what NLU and reasoning skills are achivd
   * analysis approaches to examine models’ ability to capture diff ling phenom
@@ -38,63 +38,61 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
     * building analysis datasets by automatic generation or crowd-sourcing;
     * concluding models’ ability using results on these analysis datasets
 * discoveries in NLP models, such as
-  * over-stability (Jia and Liang, 2017), Robin Jia and Percy Liang. 2017
-    Adversarial examples for evaluating reading comprehension systems EMNLP
-    2017
+  * over-stability (Jia and Liang, 2017),
+    Robin Jia and Percy Liang. 2017
+    Adversarial examples for evaluating reading comprehension systems
+    EMNLP 2017
   * surface pattern overfitting (Gururangan+ 2018)
   * McCoy+ (2019a): the results of different runs of BERT NLI models have large
     non-negligible variances on the HANS (McCoy+ 2019b) analysis datasets,
     contrasting sharply with their stable results on standard validation set
-    across multiple seeds\ => concerns regarding
+    across multiple seeds => concerns regarding
     * the reliability of results on those datasets,
     * the conclusions made upon these results, and
-    * lack of reproducibilit (Makel+ 2012)
-* we conduct a deep investigation on model instability, showing how unstable
-  the results are, and how such instability compromises the feedback loop
-  between model analysis and model development
+    * lack of reproducibility (Makel+ 2012)
+* we conduct a deep investigation on model instability, showing
+  how unstable the results are, and how such instability compromises the
+  feedback loop between model analysis and model development
   1. empirical study of several representative models on NLI & RC
-    * four worrisome observations in our experiments:
+    * four worrisome observations
     * The final results of the same model with different random seeds on
       several analysis sets are of significantly high variance
-      * The largest variance is more than 27 times of that for standard
-        development set;
+      * The largest variance is more than 27 times of that for standard dev set
     * These large instabilities on certain datasets is model-agnostic
-      * ie Certain datasets have unstable results across different models;
-    * The instability not only occurs at the final performance but exists all
-      along training trajectory, as shown in Fig. 1;
+      * ie certain datasets have unstable results across different models;
+    * The instability not only occurs at the final performance but exists
+      all along training trajectory, as shown in Fig. 1;
     * The results of the same model on analysis sets and on the standard
-      development set have low correlation => hard to draw any constructive
-      conclusion and
+      development set have low correlation => hard to draw any construv conclus
       * questioning the effectiveness of the standard model-selection routine
   2. theoretical explanations behind this instability
     * inter-examples correlation within the dataset is the dominating factor
       causing this performance instability
     * the variance of model accuracy on the entire analysis set can be decomped
-      1. the sum of single-data variance (the variance caused by individual
-      pred randomness on each example)
-      2. the sum of inter-data covariance (caused by the correlation between
-      different predictions)
-    * To understand the latter term better, consider the following case: if
-      there are many examples correlated with each other in the eval set, then
-      the change of prediction on one example will influence preds on all the
-      correlated examples, causing high variances in final accuracy
-    * We estimate these two terms with multiple runs of experiments and show
-      that inter-data covariance contributes significantly more than
-      single-data variance to final accuracy variance, indicating its major
-      role in the cause of instability
+      1. the sum of single-data variance
+      (the variance caused by individual pred randomness on each example)
+      2. the sum of inter-data covariance
+      (caused by the correlation between different predictions)
+    * To understand the latter term better, consider the following case:
+      if there are many examples correlated with each other in the eval set,
+      then the change of prediction on one example will influence preds on all
+      the correlated examples, causing high variances in final accuracy
+    * We estimate these two terms with multiple runs of experiments 
+      * inter-data covariance contributes significantly more than single-data
+        variance to final accuracy variance, ie major role in instability
   3. suggestions
     * in order for the continuous progress, trustworthy and interpretab results
-    * how to perceive the implication of and handle this instability issue and
-      1. when reporting means and variance over multiple runs, also report two
-      decomposed variance terms (ie sum of single data variance and sum of
-      inter-data covariance) for more interpretable results and fair comparison
-      across models;
+    * how to perceive the implication of and handle this instability issue
+      1. when reporting means and variance over multiple runs,
+      also report two decomposed variance terms
+      (ie sum of single data variance and sum of inter-data covariance)
+      for more interpretable results and fair comparison across models;
       2. focus on designing models with better inductive and structural biases,
       datasets with higher linguistic diversity
 * Our contribution is 3-fold
   * a thorough empirical study of the instability in perf on analysis datasets
-  * we demonstrate theoretically and empirically that the performance variance
-    is attributed mostly to inter-example correlations
+  * we demonstrate theoretically and empirically that
+    the performance variance is attributed mostly to inter-example correlations
   * suggestions on how to deal with instability, including
     * reporting the decomposed variance for more interpretable evaluation and
       better comparison
@@ -149,8 +147,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 
 ## Instability in Performance
 
-* in deep reinforcement learning (Irpan, 2018) and active learning (Bloodgood
-  and Grothendieck, 2013)
+* in deep reinforcement learning (Irpan, 2018) 
+* in active learning (Bloodgood and Grothendieck, 2013)
 * supervised learning is [unstable even] with fixed datasets and labels
   * McCoy+ (2019a): high variance in NLI-models perf on the analysis dataset
   * Phang+ (2018): high variances in fine-tuning pre-trained models in several
@@ -158,8 +156,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   * Reimers & Gurevych (2017, 2018): conclu based on single run perf unreliable
   * Weber+ (2018): the model’s ability to generalize beyond the training distri
     depends greatly on the random seed
-  * Dodge+ (2020): weight initialization and training data order both
-    contribute to the randomness in BERT performance
+  * Dodge+ (2020): weight initialization and training data order
+    both contribute to the randomness in BERT performance
   * we: a comprehensive explanation and analysis of the instability of neural
     models on analysis datasets and general guidance for future work
 
