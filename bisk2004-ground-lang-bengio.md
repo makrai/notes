@@ -68,10 +68,10 @@ arXiv:2004.10151 [cs.CL]
   * expand hardware and data sizes by orders of magnitude is not the path
 * meaning, especially
   * semantic relations among words (Fu+ 2014) and
-  * inferential relationships among sentences (Wang+ 2018).  The extent to
-  * generating locally coherent narratives (Radford+ 2019). On the other hand,
-  * pretrained word and sentence representations fail to capture many grounded
-    features of words (Lucy and Gauthier, 2017) and sentences, while
+  * inferential relationships among sentences (Wang+ 2018)
+  * generating locally coherent narratives (Radford+ 2019)
+  * hE pretrained word and sentence representations fail to capture many
+    grounded features of words (Lucy and Gauthier, 2017) and sentences
   * current NLU systems fail on the thick tail of experience-informed infer
     * such as hard coreference problems (Peng+ 2015)
     * schemes seem to be reaching the point of diminishing returns from data,
@@ -251,7 +251,7 @@ arXiv:2004.10151 [cs.CL]
   * Adversarial Filtering (Zellers+ 2018, 2019b), which elucidate the biases
 * training data [should] offer the discriminatory signals that make the
   hypothesizing of consistent identity or mental states an efficient path
-  * lack of inductive bias (Martin+ 2018): it is not clear that any learned
+  * lack of inductive bias (Martin+ 2018)
     * arrange narratives along an abstract single-dimension = time, and cau
     * Models learn what they need to discriminate,
       what is learned will generalize (Mitchell, 1980).  Secondly, current

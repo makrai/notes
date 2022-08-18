@@ -89,9 +89,9 @@ Theories of Case
 * standard case for this situation is the genitive, as in
   e.g. _John’s hat_  or _The destruction of the city._
 * often ... a distinction is made between
-  verbal predicates which license verbal case such as nominative and acc
+  verbal predicates which license verbal case such as nominative and accusative
   nominal predicates which license genitive case
-  * hE in some languages verbal nouns allow arguments with either a nom or vbl
+  * hE in some languages verbal nouns allow arguments with either a noml or vbl
   * e.g. Japanese noun-verb complex predicates with _suru_ ‘do’
     (Grimshaw and Mester 1988)
     * arguments can be either marked with the genitive or ... dative or acc

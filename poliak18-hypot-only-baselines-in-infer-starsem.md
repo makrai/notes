@@ -27,9 +27,9 @@ naacl 2018
   * In the Story Cloze task (Mostafazadeh+ 2016, 2017)
     * a model is presented with a short four-sentence narrative and
       asked to complete it by choosing one of two suggested sentences
-    * Schwartz+ (2017b) achieved SOTA performance by ignoring the narrative and
-      training a linear classifier
-      with features related to the writing style of the two potential endings
+    * Schwartz+ (2017b): SOTA performance by ignoring the narrative and
+      training a linear classifier with
+      features related to the writing style of the two potential endings
     * features focusing on sentence length, sentiment, and negation are
       sufficient for achieving high accuracy on this dataset
       (Schwartz+ 2017a; Cai+ 2017; Bugert+ 2017)

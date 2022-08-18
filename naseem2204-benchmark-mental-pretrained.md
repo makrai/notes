@@ -1,9 +1,6 @@
-
 Benchmarking for Public Health Surveillance tasks on Social Media
   with a Domain-Specific Pretrained Language Model
-
 Usman Naseem, Byoung Chan Lee, Matloob Khushi, Jinman Kim, Adam G. Dunn
-
 ACL2022 : The First Workshop on Efficient Benchmarking in NLP arXiv:2204.04521
 
 https://huggingface.co/publichealthsurveillance/PHSBERT
@@ -13,9 +10,9 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 * health info on social media to enhance public health surveillance (PHS)
   * identify possible outbreaks, forecast disease trends, monitor emergency
     cases, and ascertain disease awareness and response to official health
-    correspondence Despite its potential, the technology is still in its early
+    correspondence. Despite its potential, the technology is still in its early
 * pretrained language models (PLMs) have facilitated the development of several
-  domain-specific PLMs and a variety of downstream applications. However, there
+  domain-specific PLMs and a variety of downstream applications
   * no PLMs for social media tasks involving PHS
 * We present and release PHS-BERT, a transformer-based PLM, to identify tasks
   * compared and benchmarked the performance of PHS-BERT on 25 datasets from
@@ -241,10 +238,13 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     * The total number of tweets is 18,503, with 8,965 pro-vaccine tweets,
       1,976 anti-vaccine tweets, and 7,562 neutral tweets
 6. COVID: We used 5 covid related datasets to test our model
-  * COVID Lies (Hossain+ 2020): 6761 tweets annotated by experts with known
-    COVID-19 misconceptions and
-    tweets that agree, disagree, or express no stance
+  * COVID Lies (Hossain+ 2020)
+    * 6761 tweets annotated by experts with known COVID-19 misconceptions 
+    * tweets that agree, disagree, or express no stance
   * Covid category (Müller+ 2020)
+    Martin Müller, Marcel Salathé, and Per E Kummervold.
+    Covid-twitter-bert: An NLP model to analyse covid-19 content on twitter
+    arXiv preprint arXiv:2005.07503.
     * Amazon Turk annotators 
       * Crowdbreaks was used to perform the annotation
     * tweet texts classified as personal narrative or news
