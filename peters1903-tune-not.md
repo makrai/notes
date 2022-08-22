@@ -5,8 +5,9 @@ reprl4nlp arXiv:1903.05987
 # Abstract
 
 * how to best adapt the pretrained model to a given target task
-* two most common forms of adaptation, feature extraction (where the pretrained
-  weights are frozen), and directly fine-tuning the pretrained model
+* two most common forms of adaptation
+  * feature extraction (where the pretrained weights are frozen), and
+    directly fine-tuning the pretrained model
 * empirical results across diverse NLP tasks with two SOTA models show that the
   relative performance of fine-tuning vs feature extraction depends on the
   similarity of the pretraining and target tasks

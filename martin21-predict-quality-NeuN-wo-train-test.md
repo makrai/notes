@@ -13,8 +13,8 @@ https://github.com/CalculatedContent/ww-trends-2020
     data, the loss function, the hyperparameter values, how regularized
 * say something about the expected performance or quality of the models
 * we: a detailed meta-anal of hundreds of publicly available pretrained models
-  * norm-based capacity control metrics as well as power law based metrics from
-    the recently-developed Theory of Heavy-Tailed Self Regularization
+  * norm-based capacity control metrics as well as power law based metrics
+    from the recently-developed Theory of Heavy-Tailed Self Regularization
 * norm based metrics
   * correlate well with reported test accuracies for well-trained models, but
   * often cannot distinguish well-trained versus poorly trained models
@@ -47,12 +47,13 @@ https://github.com/CalculatedContent/ww-trends-2020
   clearly not going to be well-suited to address problems such as this
 * examine the weight matrices of pretrained models, properties eg
   * norms of weight matrices and/or
-    * have been used in traditional statistical learning theory to bound
-      capacity and construct regularizers
+    * have been used in traditional statistical learning theory
+      to bound capacity and construct regularizers
   * parameters of Power Law (PL) ﬁts of the eigenvalues of weight matrices
     * based on statistical mechanics approaches to deep neural networks (DNNs)
-* we want to examine different models across common architecture series, and we
-  want to compare models between different architectures themselves
+* we want to compare ~
+  * different models across common architecture series
+  * models between different architectures themselves
 * we consider hundreds of publicly available models,
   mostly from computer vision (CV) and natural language processing (NLP)
   * there are eg hundreds of pretrained models in CV (≥500) and NLP (≈100)
@@ -60,12 +61,12 @@ https://github.com/CalculatedContent/ww-trends-2020
   * in a year or two there will be an order of magnitude or more models
 * main results
   * norm-based metrics do a reasonably good job at predicting quality trends in
-    welltrained CV/NLP models
+    well-trained CV/NLP models
   * norm-based metrics may give spurious results when applied to poorly trained
     models (eg models trained without enough data, etc.)
     * eg they may exhibit what we call Scale Collapse for these models
   * PL-based metrics can do much better at predicting quality trends in
-    pretrained CV/NLP models.  In particular,
+    pretrained CV/NLP models
     * a weighted PL exponent
       (weighted by the log of the spectral norm of the corresponding layer) is
       quantitatively better at discriminating among a series of well-trained
@@ -105,18 +106,18 @@ https://github.com/CalculatedContent/ww-trends-2020
   pyTorch models 5
   * These models have been trained and evaluated on labeled data {x i ; y i }
     \in D, using standard techniques
-  * We do not have access to this data, and we have not trained any of the
-    models ourselves
+  * We do not have access to this data, and
+    we have not trained any of the models ourselves
   * Our methodological approach is thus similar to a statistical meta-analysis,
     common in biomedical research, but uncommon in ML
   * Computations were performed with the publicly available WeightWatcher tool
-    (version 0.2.7) 6 .  To be fully reproducible, we only examine publicly
+    (version 0.2.7) 6.  To be fully reproducible, we only examine publicly
     available, pretrained models, and we provide all Jupyter and Google Colab
 * Our approach involves analyzing individual DNN weight matrices, for fully
   connected and/or convolutional layers (depending on the architecture)
-  * Each DNN layer contains one or more layer 2D N l × M l weight matrices, W
-    l, or pre-activation maps, W i,l, eg extracted from 2D Convolutional
-    layers, where N > M. (We may drop the i and/or i, l subscripts below.)
+  * Each DNN layer contains one or more layer 2D N l × M l weight matrices W l,
+    or pre-activation maps, W i,l, eg extracted from 2D Convolutional layers,
+    where N > M. (We may drop the i and/or i, l subscripts below.)
   * The best performing quality metrics depend on the norms and/or spectral
     properties of each weight matrix, W, and/or, equivalently, it’s empirical
     correlation matrix, X = W T W
@@ -241,14 +242,14 @@ https://github.com/CalculatedContent/ww-trends-2020
   * variants of BERT, Transformer-XML, GPT, etc
   * Transformer architectures consist of blocks of so-called Attention layers,
     containing two large, Feed Forward (Linear) weight matrices 28
-  * Attention matrices are signiﬁcantly larger In contrast to smaller
+  * Attention matrices are signiﬁcantly larger. In contrast to smaller
     pre-Activation maps arising in Cond2D layers,
   * In general, they have larger PL exponents α
     * Based on HT-SR Theory (in particular, the interpretation of values of α ~
       2 as modeling systems with good correlations over many size scales 8,21),
       this suggests that these models
-      * fail to capture successfully many of the information correlations in
-        the data (relative to their size) and thus
+      * fail to capture successfully many of the info corr in the data
+        (relative to their size) and thus
       * substantially under-trained
   * compared to CV models, modern NLP models have larger weight matrices and
     display different spectral properties
@@ -293,11 +294,11 @@ https://github.com/CalculatedContent/ww-trends-2020
     remarkably good at generating (near) human-quality fake text
   * Subsequent models in the GPT2 were larger and trained to more data
   * By comparing GPT2-small to GPT2-medium to GPT2-large to GPT2-xl, we can
-    examine the effect of increasing data set and model size simultaneously, as
-    well as analyze well-trained versus very-well-trained models
+    * examine the effect of increasing data set and model size simultaneously,
+    * analyze well-trained versus very-well-trained models
   * By comparing the poorly trained GPT to the well-trained GPT2-small, we can
-    identify empirical indicators for when a model has been poorly trained and
-    thus may perform poorly when deployed
+    identify empirical indicators for when
+    a model has been poorly trained and thus may perform poorly when deployed
   * The GPT models we analyze are deployed with the HuggingFace PyTorch library
 * We examine the performance of the four quality metrics
   (Log Frobenius norm, Log Spectral norm, Weighted Alpha, and Log α-Norm) for
@@ -321,7 +322,7 @@ https://github.com/CalculatedContent/ww-trends-2020
     smaller for the lower-quality model, when the number of layers is ﬁxed
   * This is unexpected
   * we can perform model diagnostics, by separating α ^ into its two components
-    * α and λ max, and examining the distributions of each.  In doing so,
+    * α and λ max, and examining the distributions of each
     * => we see additional examples of Scale Collapse and
       additional evidence for Correlation Flow
 * We next examine the Spectral norm in GPT versus GPT2-small. In Fig. 6a,

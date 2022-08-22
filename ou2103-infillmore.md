@@ -12,15 +12,15 @@ Codebase and demo available from https://nlp.jhu.edu/demos/infillmore
   * Guidance is provided through two approaches:
     * model fine-tuning, conditioning directly on observed symbolic frames, and
     * a novel extension to disjunctive lexically constrained decoding that
-      leverages frame semantic lexical units.  Automatic and human evaluations
+      leverages frame semantic lexical units
+* Automatic and human evaluations
 * allows for explicit manipulation of intended infill semantics, with
   minimal loss in distinguishability from human-generated text
 
 # 1 Introduction
 
 * A popular strategy for automatic story generation is coarse-to-fine:
-  * first by proposing a story plan, and then realizing it into natural
-    language form using large pretrained neural language models
+  * first by proposing a story plan, & then realizing using large pretrained LM
     (Fan+ 2018; Goldfarb-Tarrant+ 2019)
 * we study the use of FrameNet frames (Baker+ 1998) as representational units
   for such plan guidance

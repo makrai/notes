@@ -7,8 +7,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
 * in text classification the common practice of fine-tuning pre-trained models,
 * We suggest a method to boost the performance of such models by adding an
   intermediate unsupervised classif task, between pre-training and fine-tuning
-* intermediate task is clustering, and train the pre-trained model on
-  predicting the cluster labels
+* intermediate task is clustering
+  * train the pre-trained model on predicting the cluster labels
 * experiments on various data sets
 * classification phase can significantly improve performance,
   mainly for topical classification tasks, when the number of labeled instances

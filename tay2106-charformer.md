@@ -81,15 +81,15 @@ https://github.com/google-research/google-research/tree/master/charformer
 ### Results
 
 * Charformer Tall,LongPT outperforms subword-based models on TyDiQA-GoldP
-  (in-language multi-task). Additionally, in the translate-train setting C
-  HARFORMER T all,LongP T is on par with subword models on XQuAD and MLQA, and
-  close to parity on PAWS-X. Furthermore, Charformer outperforms other
-  character-level models in the zero-shot setting. However, we observe that
-  this setting still remains a challenge for token-free models in general. We
-  hypothesize that model size may be a major factor here. Finally, we note that
-  small character-level models generally perform poorly on PAWS-X. However, C
-  HARFORMER ’s ability to freeze GBST weights during fine-tuning greatly
-  improves its performance in this setting (see Table 15)
+  (in-language multi-task)
+  * in the translate-train setting Charformer T all,LongP T is on par with
+    subword models on XQuAD and MLQA, and close to parity on PAWS-X
+  * outperforms other character-level models in the zero-shot setting
+  * hE zero-shot still remains a challenge for token-free models in general
+    * model size may be a major factor here. Finally, we note that
+  * small character-level models generally perform poorly on PAWS-X
+  * nL Charformer’s ability to freeze GBST weights during fine-tuning
+    greatly improves its performance in this setting (see Table 15)
 
 # 4 Analyses 8
 
