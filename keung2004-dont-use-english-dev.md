@@ -21,7 +21,7 @@ EMNLP 2020 arXiv:2004.15001 [cs.CL]
 
 # 1 Intro
 
-* By zero-shot := no parallel text or labeled data from the target language
+* zero-shot := no parallel text or labeled data from the target language
   during model training, fine-tuning, or hyperparameter search
   * Standard practice prohibits the use of target language data for model select
   * the final model is chosen using the English dev set only
