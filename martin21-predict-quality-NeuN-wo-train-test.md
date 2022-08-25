@@ -241,7 +241,7 @@ https://github.com/CalculatedContent/ww-trends-2020
   * variants of BERT, Transformer-XML, GPT, etc
   * Transformer architectures consist of blocks of so-called Attention layers,
     containing two large, Feed Forward (Linear) weight matrices 28
-  * Attention matrices are signiﬁcantly larger In contrast to smaller
+  * Attention matrices are signiﬁcantly larger in contrast to smaller
     pre-Activation maps arising in Cond2D layers,
   * In general, they have larger PL exponents α
     * Based on HT-SR Theory (in particular, the interpretation of values of α ~
@@ -262,9 +262,9 @@ https://github.com/CalculatedContent/ww-trends-2020
 * PL-based metrics, including the Log α-Norm metric and the Weighted Alpha
   * more consistent behavior, even on less well-trained models
   * To help identify when architectures need repair and when more and/or better
-    data are needed, one can use these metrics, as well as the decomposition of
-    the Weighted Alpha metric (α log λ max) into its PL component (α) and its
-    norm component (log λ max ), for each layer
+    data are needed, one can use these metrics, as well as
+    the decomposition of the Weighted Alpha metric (α log λ max) into its
+    PL component (α) and its norm component (log λ max ), for each layer
 * early variants of GPT and BERT, have weight matrices with
   unusually large PL exponents (eg α >> 6). This indicates these matrices may
   be under-correlated (ie over-parameterized, relative to the amount of data)
@@ -285,12 +285,12 @@ https://github.com/CalculatedContent/ww-trends-2020
     * training the same model with low-quality data versus high-quality data
   * can generate fake text that appears to the human to be real
   * media attention because of the potential for their misuse
-  * => the original GPT model released by OpenAI was trained on a deﬁcient data
-    set, rendering the model interesting but not fully functional
+  * => the original GPT model released by OpenAI was trained on deﬁcient data,
+    rendering the model interesting but not fully functional
   * much improved model, GPT2-small, which has
-    the same architecture and number of layers as GPT, but which has been
-    trained on a larger and better data set, making it
-    remarkably good at generating (near) human-quality fake text
+    * same architecture and number of layers as GPT, but which has been
+    * trained on a larger and better data set, making it
+    * remarkably good at generating (near) human-quality fake text
   * Subsequent models in the GPT2 were larger and trained to more data
   * By comparing GPT2-small to GPT2-medium to GPT2-large to GPT2-xl, we can
     examine the effect of increasing data set and model size simultaneously, as
@@ -315,13 +315,13 @@ https://github.com/CalculatedContent/ww-trends-2020
       all these metrics now behave as expected, ie there is
       no Scale Collapse and norms are decreasing with increasing accuracy
 * Comparing trends between GPT and GPT2-small reveals a different story
-  * all four metrics increase when going from GPT to GPT2-small, ie they are
-    larger for the higher-quality model
-    (higher quality since GPT2-small was trained to better data) and
-    smaller for the lower-quality model, when the number of layers is ﬁxed
+  * all four metrics increase when going from GPT to GPT2-small
+    * ie larger metrics for the higher-quality model
+      (higher quality since GPT2-small was trained to better data) and
+      smaller for the lower-quality model, when the number of layers is ﬁxed
   * This is unexpected
   * we can perform model diagnostics, by separating α ^ into its two components
-    * α and λ max, and examining the distributions of each.  In doing so,
+    * α and λ max, and examining the distributions of each
     * => we see additional examples of Scale Collapse and
       additional evidence for Correlation Flow
 * We next examine the Spectral norm in GPT versus GPT2-small. In Fig. 6a,
@@ -359,16 +359,15 @@ https://github.com/CalculatedContent/ww-trends-2020
   * The older deﬁcient GPT has numerous unusually large α exponents
     * ie not well-described by a PL ﬁt
     * as expected: a poorly trained model will lack good (ie small α) PL
-      behavior in many/ most layers
-  * On the other hand, the newer improved GPT2-small model has, on average,
-    smaller α values than the older GPT, with all α ≤ 6 and with smaller
-    mean/median α
+      behavior in many/most layers
+  * nL the newer improved GPT2-small model has, on average, smaller α values
+    than the older GPT, with all α ≤ 6 and with smaller mean/median α
     * far fewer unusually large outlying α values than GPT
   * From this (and other results not shown), we see that α from Eq. (12),
     provides a good quality metric for comparing the poorly trained GPT versus
     the well-trained GPT2-small
-  * contrasted with the behavior displayed by scale-dependent metrics such as
-    the Frobenius norm (not shown) and the Spectral norm
+  * contrasted with the behavior displayed by scale-dependent metrics
+    such as the Frobenius norm (not shown) and the Spectral norm
   * This also reveals why α ^ performs unusually in Table 2
   * The PL exponent α behaves as expected, and thus
     the scale-invariant α metric lets us identify potentl poorly trained models
@@ -402,9 +401,9 @@ https://github.com/CalculatedContent/ww-trends-2020
   * Also, from Fig. 8b, we see that, unlike GPT, the
     layer Log Alpha Norms behave more as expected for GPT2 layers, with the
     larger models consistently having smaller norms
-    (9.96 for GPT2-medium, 7.982 for GPT2large, and 7.49 for GPT2-xl)
+    (9.96 for GPT2-medium, 7.982 for GPT2-large, and 7.49 for GPT2-xl)
   * Similarly, the Log Spectral Norm also decreases on average with the larger
-    models (2.58 for GPT2medium, 1.99 for GPT2-large, and 1.92 for GPT2-xl)
+    models (2.58 for GPT2-medium, 1.99 for GPT2-large, and 1.92 for GPT2-xl)
   * As expected, the norm metrics can indeed distinguish
     among well-trained versus very-well-trained models
   * While the means and peaks of the α distributions are getting smaller,
