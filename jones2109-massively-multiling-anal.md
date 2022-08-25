@@ -56,10 +56,10 @@ data and code for our experiments publicly available
   * broad solutions and guidelines (e.g. Kann+ 2019; Bender 2019)
 * The Bible corpus (Christodouloupoulos and Steedman, 2014)
   * includes 35 and 45 languages that are zero-shot for LaBSE and LASER resp
-    * all of which could be classified as low-resource or extremely low-resource
+    * all of which could be classified as low-resource or extremely low-resourc
   * owes its existence largely to a settler colonial tradition
     * missionaries translated the Bible into Indigenous languages
       often without crediting the Indigenous peoples who contributed
     * We acknowledge these Indigenous peoples’ contributions to this work
 * energy consumption, cost, and environmental impact of NLP models
-  * Strubell+ (2019) and Schwartz+ (2019) identified, analyzed, and proposed sol
+  * Strubell+ (2019) and Schwartz+ (2019) identified, analyzed, & proposed solu

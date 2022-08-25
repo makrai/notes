@@ -210,7 +210,7 @@ arXiv:2005.14165 cs.CL
   * CB, we see signs of life at 75.6% in the few-shot setting.
   * WiC is a notable weak spot with few-shot performance at 49.4% (at random
     chance)
-    * We tried a number of different phrasings and formulations for WiC (which
+    * We tried a number of different phrasings and formulations for WiC
     * task: determining if a word is being used with the same meaning in two ss
     * phenomenon will become clearer in the next section (which discusses the
       ANLI benchmark) – GPT-3 appears to be weak in the few-shot or one-shot

@@ -100,7 +100,7 @@ Our code is available at https://github.com/ boknilev/nmt-repr-analysis
 * small effect of the target language
 * additional observations can be made:
   higher layers of the NMT model are better at capturing semantic information
-  * discourse relations (DIS tag: subordinate vs. coordinate vs.  apposition)
+  * discourse relations (DIS tag: subordinate vs. coordinate vs. apposition)
   * semantic properties of nouns (roles vs. concepts, within the ENT tag)
   * events and predicate tense (EVE and TNS tags)
   * logic relations and quantifiers

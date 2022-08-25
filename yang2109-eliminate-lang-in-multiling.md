@@ -59,8 +59,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   * provides carefully-designed training strategies for retrieval-like model to
     mitigate this issue in order to obtain language agnostic multilingual sys
 * We systematically explore a simple post-training method we refer to as
-  Language Information Removal (LIR), to effectively facilitate the language
-  agnosticism in multilingual embedding systems
+  Language Information Removal (LIR), to effectively facilitate the lang agnost
 * our method
   * First introduced in Yang+ (2020) to reduce same language bias for retrieval
   * only linear algebra factorization and post-training operation
@@ -101,8 +100,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 
 ## 3.3 XEVAL
 
-* XEVAL, a collection of multilingual sentence representation benchmark
-  (Yang+ 2020)
+* XEVAL, a collection of multilingual sentence repr benchmarks (Yang+ 2020)
   * The training set and test set of XEVAL are in the same language (not cross)
   * include
     * Movie Reviews (Pang and Lee, 2005)
@@ -135,8 +133,8 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
   * LaBSE (Feng+ 2020) finetunes a pretrained language model
     with the bitext retrieval task and mined cross-lingual parallel data
     to obtain language agnostic sentence representations
-* Faruqui and Dyer (2014) propose a canonical correlation analysis (CCA) based
-  method to add multilingual context to monolingual embeddings
+* Faruqui and Dyer (2014): a canonical correlation analysis (CCA) based method
+  to add multilingual context to monolingual embeddings
   * post-processing 
   * requires bilingual word translation pairs to determine the projection vects
 * Mrkšić+ (2017) build semantically specialized cross-lingual vector spaces

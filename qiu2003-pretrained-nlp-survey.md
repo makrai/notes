@@ -336,9 +336,10 @@ arXiv:2003.08271 [cs.CL]
 ### 5.2.2 Choosing appropriate layers
 
 * RNN-based models, Belinkov+ [9] and Melamud+ [114] showed that
-* transformer-based PTMs, Tenney+ [166] found BERT represents the steps of the
-  traditional NLP pipeline: basic syntactic information appears earlier in the
-  network, while high-level semantic information appears at higher layers
+* transformer-based PTMs, Tenney+ [166] found
+  * BERT represents the steps of the traditional NLP pipeline:
+    basic syntactic information appears earlier in the network, while
+    high-level semantic information appears at higher layers
 * three ways to select the representation:
   * Embedding Only: choose only the pre-trained static
   * Top Layer.  The most simple and effective way
@@ -401,7 +402,7 @@ arXiv:2003.08271 [cs.CL]
 ### Others. Instead of fine-tuning all the layers simultaneously,
 
 * gradual unfreezing [62] layers of PTMs starting from the top layer
-* Chronopoulou+ [19] proposed [the simpler] sequential unfreezing, which
+* Chronopoulou+ [19] proposed the simpler sequential unfreezing, which
   * first fine-tunes only the randomly-initialized task specific layers, and
     then unfreezes the hidden layers of PTM, and
     finally unfreezes the embedding layer

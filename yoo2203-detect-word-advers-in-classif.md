@@ -27,7 +27,7 @@ https://github.com/anoymous92874838/text-adv-detection
 * image domain, two main lines of research to counteract adversarial attacks
   * adversarial example detection and defense
   * detection: discriminate an adversarial input from a normal input, whereas
-    * only few efforts have been made in techniques for this sole purpose
+    * only few NLP efforts have been made in techniques for this sole purpose
   * defense intends to predict the correct output of the adversarial input
     * some progress in NLP (Zhou+ 2021; Keller+ 2021; Jones+ 2020)
 * applications, in which alerting the victim of an adversarial sample suffices
@@ -43,8 +43,8 @@ https://github.com/anoymous92874838/text-adv-detection
     * the normal and adversarial inputs can be processed by two separate
       mechanisms as proposed by Zhou+ (2019)
 * Many/some existing works employ detection as an auxiliary task for defense
-  * require adversarial samples for training, which may be a restrictive
-    scenario given the variety of attack methods and sparsity of advers samples
+  * require adversarial samples for training, which may be a restrictive scenar
+    given the variety of attack methods and sparsity of advers samples
   * focus on a single type of attack (Le+ 2021)
   * limited to character-level attacks (Pruthi+ 2019),
   * both of which do not abide the two key constraints (semantics and
@@ -74,8 +74,8 @@ https://github.com/anoymous92874838/text-adv-detection
     Minimum Covariance Determinant, for robust density estimation (RDE)
 * Our attack-agnostic and model-agnostic detection method achieves the
   best performance as of AUC on 29 out of 30 dataset-attack-model combinations
-  and best performance as of TPR , F 1 , AUC on 25 of them without any
-  assumption on the attacks
+  and best performance as of TPR, F 1, AUC on 25 of them
+  without any assumption on the attacks
 * Our contributions
   * an adversarial detection method that does
     not require validation sets of each attack method through robust parameter

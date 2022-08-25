@@ -1,5 +1,5 @@
-James Pustejovsky
 The Generative Lexicon
+James Pustejovsky
 1995
 
 Contents p6
@@ -15,8 +15,8 @@ Contents p6
   * accounting for phenomena such as synonymy, antonymy, polysemy, and metonymy,
     then compositionahty depends ultimately on what the basic lexical categories
     of the language denote
-  * The traditional view has been that words behave as either active functors or
-    passive arguments. But we will see that if we change the way in which
+  * The traditional view has been that words behave as either active functors
+    or passive arguments. But we will see that if we change the way in which
     categories can denote, then the form of compositionahty itself changes
   * how to represent lexical ambiguity, both in theoretical and computational
     models. This view, incorporating

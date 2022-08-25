@@ -12,7 +12,7 @@ https://github.com/BinWang28/SBERT-WK-Sentence-Embedding
 * we study the layer-wise pattern of the word representation of deep contextlzd
   * dissecting BERT-based word models through geometric analysis of the space
   * No further training is required in SBERT-WK
-* evaluate SBERT-WK on semantic textual similarity and downstream supervised tsk
+* evaluate SBERT-WK on semantic textual sim and downstream supervised tasks
 * ten sentence-level probing tasks are presented for detailed linguistics
 
 # 1 Introduction

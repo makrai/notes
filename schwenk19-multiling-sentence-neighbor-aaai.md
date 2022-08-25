@@ -25,14 +25,14 @@ and efficient ways to calculate an k-nn graph over 566M sentences
   * These k closest sentences can come from different languages
 * sentence embeddings are of dimension 1024 and are stored as floating point
   * A brute force approach to obtain the k-nn graph,
-    i.e., calculating the L 2 -distance between all vectors and
+    ie calculating the L 2 -distance between all vectors and
     keeping the k smallest values,
-    would require at least 566M 2 × 1024 ≈ 3.3 × 10 20 floating point ops
+    would require >= 566M 2 × 1024 ≈ 3.3 × 10 20 floating point operations
 * We tackle this computational challenge with the
   highly optimized FAISS library for efficient similarity search and clustering
   of dense vectors (Johnson, Douze, and Jégou 2017)
   * mainly used for indexing and searching in huge image collections
-* PCA ... is unlikely to offer space reductions larger than 10 times
+* PCA is unlikely to offer space reductions larger than 10 times
 * setting: the collection of vectors is split up with k-means into 16 384
   well-balanced clusters, and compressed with OPQ (Ge+ 2013) to 32 bytes
   * “OPQ32,IVF16384,PQ32” in FAISS terms
@@ -47,4 +47,4 @@ and efficient ways to calculate an k-nn graph over 566M sentences
 
 # 5 quantitative results, including comparison with other works
 
-# 6 conclude this paper with directions for future research
+# 6 conclusion and directions for future research

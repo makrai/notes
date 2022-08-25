@@ -4,6 +4,8 @@ arXiv:2011.13662 [cs.CL]
 
 Data and code can be accessed at https://github.com/fajri91/ffci
 
+# Abstract
+
 * FFCI comprises four elements:
   * faithfulness (degree of factual consistency with the source, Maynez+ 2020)
   * focus (precision of summary content relative to the reference)
@@ -198,10 +200,10 @@ Data and code can be accessed at https://github.com/fajri91/ffci
   * Fabbri+ (2020) has shown that BERTScore > MoverScore for summarization eval
 * the main hyperparameter being layer selection:
   * Zhang+ (2020b) found that this is critical to performance
-  * For machine translation and text generation evaluation, Zhang+ (2020b)
-    recommend the use of F BERT based on the 24th layer of roberta-large,
-    on the basis of experiments over BERT (Devlin+ 2019), RoBERTa (Liu+ 2019b),
-    and XLNet (Yang+ 2019)
+  * For machine translation and text generation evaluation,
+    they recommend the use of F BERT based on the 24th layer of roberta-large,
+    on the basis of experiments over
+    BERT (Devlin+ 2019), RoBERTa (Liu+ 2019b), and XLNet (Yang+ 2019)
   * we perform similar layer selection across the three sub-facets of FFCI,
     * we examine 7 model types, that can be categorized as follows:
     * encoder-only = BERT (Devlin+ 2019), RoBERTa (Liu+ 2019b), and XLNet
@@ -246,9 +248,9 @@ Data and code can be accessed at https://github.com/fajri91/ffci
   computationally expensive, but more importantly that
 * the two versions of FA BERTScore perform differently, with
   * our summarization-optimized version resulting in the best overall results
-* The best layer for this model is layer-13, as depicted in Figure 3.  After
-  conducting model-layer search over 19 models, 24 we found that roberta-base
-  (layer 10) to result in the best correlation (based on average rank across
-  four summarization models)
+* The best layer for this model is layer-13, as depicted in Figure 3
+  * After conducting model-layer search over 19 models, 24 we found that
+    roberta-base (layer 10) to result in the best correlation
+    (based on average rank across four summarization models)
 
 # 7 Conclusion 26

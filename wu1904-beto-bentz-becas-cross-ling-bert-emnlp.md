@@ -49,27 +49,26 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 ## 5.2 Question #2: Does mBERT vary layer-wise?
 
 * goal of a deep neural network is to abstract to higher-order (Yosinski+ 2014)
-* Peters+ (2018) empirically show that for ELMo in English the
-  * lower layer is better at syntax while the
-  * upper layer is better at semantics
+* Peters+ (2018) empirically show that for ELMo in English
+  the lower/upper layer is better at syntax/semantics
 * We consider two schemes. First, we follow the
   * feature-based approach of ELMo by taking a learned weighted combination of
     all 13 layers of mBERT with a two-layer bidirectional LSTM with d h hidden
-    size (Feat). Note the LSTM is trained from scratch and mBERT is fixed. For
+    size (Feat). Note the LSTM is trained from scratch and mBERT is fixed
   * fine-tuning mBERT, we fix the bottom n layers (n included) of mBERT,
     * where layer 0 is the input embedding. We consider n ∈ {0, 3, 6, 9}
-* Freezing the bottom layers of mBERT, in general, improves the performance in
-  all five tasks (Fig. 1)
+* Freezing the bottom layers of mBERT,
+  in general, improves the performance in all five tasks (Fig. 1)
   * sentence-level tasks like document classification and natural language
     inference, we observe the largest improvement with n = 6.  For
   * word-level tasks like NER, POS tagging, and parsing, we observe the largest
     improvement with n = 3
   * More improvement in under-performing languages is observed
-* feature-based approach with LSTM under-performs fine-tuning approach. We
-  hypothesize that initialization from pretraining with lots of languages
-  provides a very good starting point that is hard to beat.  Additionally, the
-  LSTM could also be part of the problem
-  * Ahmad+ (2019) an LSTM encoder for dependency parsing
+* feature-based approach with LSTM under-performs fine-tuning approach
+  * We hypothesize that initialization from pretraining with lots of languages
+    provides a very good starting point that is hard to beat
+  * the LSTM could also be part of the problem
+  * Ahmad+ (2019): an LSTM encoder for dependency parsing
 
 ## 5.3 Question #3: Does mBERT retain language specific information?
 

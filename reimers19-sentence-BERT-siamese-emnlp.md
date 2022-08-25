@@ -1,5 +1,5 @@
-Nils Reimers, Iryna Gurevych
 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+Nils Reimers, Iryna Gurevych
 EMNLP 2019
 
 https://github.com/UKPLab/sentence-transformers
@@ -24,7 +24,7 @@ https://github.com/UKPLab/sentence-transformers
 * BERT uses a cross-encoder: Two sentences are passed to the transformer
   network and the target value is predicted
 * derive fixed-size sentence embeddings
-  * average the BERT output layer (known as BERT embeddings) or by using the
+  * average the BERT output layer (known as BERT embeddings)
   * first token (the CLS token)
   * often worse than averaging GloVe embeddings (Pennington+ 2014)
 * similarity measure like cosine-similarity or Manhatten / Euclidean distance,
@@ -103,8 +103,7 @@ https://github.com/UKPLab/sentence-transformers
     * hE, in our architecture, adding the element-wise u ∗ v decreased the perf
     * The most important component is the elementwise difference |u − v|
   * At inference, when predicting similarities for the STS benchmark dataset,
-    only the sentence embeddings u and v are used in combination with
-    cosine-similarity
+    only the sentence embeddings u and v are used in combin with cosine-sim
 * When trained with the regression objective function, we observe that the
   pooling strategy has a large impact
   * MAX strategy perform significantly worse than MEAN or CLS-token strategy

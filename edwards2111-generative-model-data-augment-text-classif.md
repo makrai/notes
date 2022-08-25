@@ -11,7 +11,7 @@ arXiv:2111.09064 [cs.CL]
   * generating artificial training instances leveraging GPT-2 (Radford + 2019)
     in order to improve classification performance
   * analyse the impact the selection process of seed training examples
-    over the quality of GPT-generated samples and consequently the classifier
+    over the quality of GPT-generated samples
     * experiments with several seed selection strategies that, among others,
       exploit class hierarchical structures and domain expert selection
 * results show that fine-tuning GPT-2 in a handful of label instances leads to

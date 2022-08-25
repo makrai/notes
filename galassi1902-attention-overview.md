@@ -260,18 +260,19 @@ perform a supervised training of the attention model
 * Voita+ [49] did the same with anaphora resolutions, and
 * Clark+ [6] investigated the correlation with many linguistic features
 * Voita+ [50] analyzed the behavior of the heads of a multihead model,
-  discovering that different heads develop different behaviors, which can be
-  related to specific position or specific syntactical element. Yang+ [39]
-  seemed to confirm that the deeper levels of neural architectures capture
-  nonlocal aspects of the textual input. They studied the application of
-  locality at different depths of an attentive deep architecture and showed that
-  its introduction is especially beneficial when it is applied to the layers
-  that are closer to the inputs. Moreover, when the application of locality is
-  based on a variable-size window, higher layers tend to have a broader window
-
-A popular way of investigating whether an architecture has learned high-level
-features amounts to using the same architecture to perform other tasks, as it
-happens with transfer learning. This setting has been adopted outside the
+  * different heads develop different behaviors, which
+    * can be related to specific position or specific syntactical element.
+* Yang+ [39] seemed to confirm that the
+  deeper levels of neural architectures capture non-local aspects of the text
+  * They studied the application of locality at different depths of an
+    attentive deep architecture and showed that
+    its introduction is especially beneficial when it is applied to the layers
+    that are closer to the inputs.
+  * when the application of locality is based on a variable-size window,
+    higher layers tend to have a broader window
+* investigation with task transfer
+  * A popular way of investigating whether an architecture has learned
+    high-level features: using the same architecture to perform other tasks, as
 * Shi+ [154], who perform syntactic predictions by using the hidden
   representations learned with machine translation. In a similar way,
 * attention weights could be used as input features in a different model, so as

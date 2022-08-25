@@ -450,13 +450,13 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 * AMR-to-text generation, Mager+ [128] compare search-based decoding & sampling,
   and find that the latter clearly decreases the performance of the system
 * One of the most exhaustive studies on diverse decoding is Ippolito+ [116]:
-  they compare 10 decoding methods, both searchand sampling-based,
-  for the tasks of image captioning and dialog response generation. They propose
+  they compare 10 decoding methods, both search~ and sampling-based,
+  for the tasks of image captioning and dialog response generation
   * automatic measures for computing local diversity (in terms of entropy and
     distinct n-grams, see Section 4.1) and
     correlating them with human judgements of adequacy, fluency & interestingnss
-  * trade-off between quality and diversity, i.e., decoding methods that
-  * Using a sum-of-ranks score over different evaluation metrics, they establish
+  * trade-off between quality and diversity
+  * Using a sum-of-ranks score over different evaluation metrics
     * dialog: clustered beam search and standard beam search with a relatively
       large beam width (k = 100) perform best for dialog generation. In
     * image captioning, the sum-of-rank score favors random sampling with top-k
@@ -512,9 +512,9 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     * extend the models coverage to a wider set of object classes. They argue that
     * image captioning systems are difficult to extend and adapt to novel types of
       concepts and scenes that are not covered in the training data, whereas
-    * constrained beam search, illustrated in Figure 2a, which guides the search
-      to include members from given sets of words (external image labels, in their
-      case) during decoding. The main idea of the algorithm is that
+    * constrained beam search, illustrated in Figure 2a, which
+      * guides the search to include members from given sets of words (external
+        image labels, in their case) during decoding. The main idea of the
       * the set of constraints is represented as a finite-state machine, where
         each state maintains its own beam of generation candidates
     * outperforms a competing system that uses similar knowledge to extend the

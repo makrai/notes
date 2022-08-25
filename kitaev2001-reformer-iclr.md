@@ -2,6 +2,8 @@ Reformer: The Efficient Transformer
 Nikita Kitaev, Łukasz Kaiser, Anselm Levskaya
 ICLR 2020 arXiv:2001.04451 [cs.LG]
 
+# Abstract
+
 * training Transformers can be prohibitively costly, especially on long seqs
 * We introduce two techniques to improve the efficiency of Transformers
   * replace dot-product attention by one that uses locality-sensitive hashing,
@@ -20,10 +22,10 @@ ICLR 2020 arXiv:2001.04451 [cs.LG]
     even longer sequences are commonplace
   * some argue that this trend is breaking NLP research
     https://hackingsemantics.xyz/2019/leaderboards/
-* If our memory use was only per-layer, then we should fairly easily fit a large
-  Transformer even on sequences of length 64K on a single accelerator
+* If our memory use was only per-layer, then we should fairly easily fit a
+  large Transformer even on sequences of length 64K on a single accelerator
   * whole corpus used to train BERT only requires 17GB to store
-  * Why is it then that we cannot even fine-tune these models on single machins?
+  * Why is it then that we cannot even fine-tune these models on 1 machine?
 * major sources of memory use in the Transformer:
   Memory in a model with N layers is N times larger than in a single-layer
 * activations need to be stored for back-propagation

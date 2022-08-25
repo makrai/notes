@@ -1,4 +1,4 @@
-Multilingual and Multilabel Emotion Recognition using Virtual Adversarial Training
+Multilingual and Multilabel Emotion Recognition using Virtual Adversarial Train
 Vikram Gupta
 arXiv:2111.06181 [cs.CL]
 

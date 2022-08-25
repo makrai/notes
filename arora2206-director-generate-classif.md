@@ -7,12 +7,12 @@ arXiv:2206.07694 [cs.CL]
   toxic responses, repetitiveness and contradictions
 * we introduce Director
   * a unified generator-classifier with
-    both a language modeling and a classification head for each output token.
+    both a language modeling and a classification head for each output token
 * Training is conducted jointly using both
   standard language modeling data, and
   data labeled with desirable and undesirable sequences
-* Experiments in several settings show that the model has
-  * competitive training and decoding speed compared to standard language models
-  * alleviating known issues while maintaining generation quality. It also
+* Experiments in several settings show
+  * competitive training and decoding speed compared to standard LMs
+  * alleviating known issues while maintaining generation quality
   * outperforms existing model guiding approaches
-    in terms of both accuracy and efficiency. 
+    in terms of both accuracy and efficiency

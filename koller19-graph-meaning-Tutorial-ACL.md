@@ -1,24 +1,24 @@
-Tutorial at ACL 2019
 Graph-Based Meaning Representations: Design and Processing
 Alexander Koller, Stephan Oepen, Weiwei Sun
+Tutorial at ACL 2019
 
 https://github.com/cfmrp/tutorial
 
 # 1 Tutorial Content and Relevance
 
 * Participants will be enabled to
-  * identify genuine content differences between frameworks as well as to
+  * identify genuine content differences between frameworks
   * tease apart more superficial variation,
     for example in terminology or packaging
 * processing techniques for semantic graphs will be reviewed
   * against a highlevel inventory of families of approaches
   * codependencies with specific graph flavors or frameworks, on
-  * worst-case and typical time and space complexity, as well as on what
-  * guarantees (if any) ... obtained on the wellformedness and correctness
+  * worst-case and typical time and space complexity
+  * guarantees (if any) on the wellformedness and correctness
 * we embrace a broader perspective on semantic parsing
   * as it has come to be viewed commonly in recent years
-  * that aim to be application~ and domain-independent, i.e. seek to provide a
-    reusable intermediate layer of interpretation that captures, in suitably
+  * that aim to be application~ and domain-independent, i.e. seek to provide
+    a reusable intermediate layer of interpretation that captures, in suitably
     abstract form, relevant constraints that the linguistic signal imposes on
     interpretation
 
@@ -27,28 +27,30 @@ https://github.com/cfmrp/tutorial
 * we will give a systematic overview of the available semantic graph banks
 * with respect to
   * the facets of natural language meaning they aim to represent
-    * some graph banks focus on predicate–argument structure,
+  * some/other graph banks
+    * focus on predicate–argument structure,
       perhaps with some extensions for polarity or tense, whereas others
-    * capture (some) scopal phenomena.  Furthermore,
-    * while the graphs in most graph banks do not have a precisely defined
-      model theory in the sense of classical linguistic semantics, there are
-      still underlying intuitions about what the nodes of the graphs mean
-      (individual entities and eventualities in the world vs. more abstract
-      objects to which statements about scope and presupposition can attach)
-  * the relationship ... between the tokens of the sentence and the nodes
+    * capture (some) scopal phenomena
+    * most graph banks do not have a precisely defined model theory
+      in the sense of classical linguistic semantics, 
+      * nL there are underlying intuitions about what the nodes of the gra mean
+      (individual entities and eventualities in the world vs.
+      more abstract objects
+      to which statements about scope and presupposition can attach)
+  * the relationship between the tokens of the sentence and the nodes
     (called anchoring of graph fragments onto input sub-strings)
     * follow Kuhlmann and Oepen (2016)
-    * three flavors ... which by degree of anchoring we will call type (0)..(2)
+    * three flavors which by degree of anchoring we will call type (0)..(2)
 
-## bi-lexical dependency graphs, where
+## 2.0 bi-lexical dependency graphs
 
 * Type (0) The strongest form of anchoring
 * graph nodes injectively correspond to surface lexical units (tokens). In
-  such graphs, each node is directly linked to a specific token (conversely,
-  there may be semantically empty tokens), and the nodes inherit the linear
-  order of their corresponding tokens. This flavor of semantic graphs was
-* popularized [by] Sem Dependency Parsing (SDP) tasks at the SemEval 14--16
-  (Oepen+ 2014, 2015; Che+ 2016).  Prominent linguistic frameworks
+  * each node is directly linked to a specific token (conversely, there may be
+    semantically empty tokens), and the
+    nodes inherit the linear order of their corresponding tokens
+* popularized by Sem Dependency Parsing (SDP) tasks at the SemEval 14--16
+  (Oepen+ 2014, 2015; Che+ 2016)
 * e.g
   * CCG word–word dependencies (CCD; Hockenmaier and Steedman, 2007),
   * Enju Predicate– Argument Structures (PAS; Miyao and Tsujii, 2008),
@@ -59,11 +61,11 @@ https://github.com/cfmrp/tutorial
 ## type 1
 
 * relaxing the correspondence relations between nodes and tokens, while
-  still explicitly annotating the correspondence between nodes and parts of the
-  sentence
-* [may] align nodes with ... subtoken or multi-token sequences, which affords
+  still explicitly annotating the
+  correspondence between nodes and parts of the sentence
+* may align nodes with subtoken or multi-token sequences,
   e.g. (derivational) affixes or phrasal constructions
-* [may] allow multiple nodes to correspond to overlapping spans,
+* may allow multiple nodes to correspond to overlapping spans,
   enabling lexical decomposition (e.g. of causatives or comparatives)
 * e.g
   * Universal Conceptual Cognitive Annotation (UCCA; Abend and Rappoport, 2013
@@ -72,24 +74,24 @@ https://github.com/cfmrp/tutorial
     (2000) and Copestake+ (2005) into directed graphs, viz
     * Elementary Dependency Structures (EDS; Oepen and Lønning, 2006) and
     * Dependency Minimal Recursion Semantics (DMRS; Copestake, 2009)
-* All three frameworks ... as target representations in recent parsing research
+* All three frameworks as target representations in recent parsing research
   (e.g. Buys and Blunsom, 2017; Chen+ 2018; Hershcovich+ 2018)
 
-## Abstract Meaning Representation (AMR; Banarescu+ 2013), which in our
+## Abstract Meaning Representation (AMR; Banarescu+ 2013)
 
-* unanchored, in that the correspondence ... is not explicitly annotated. The
-* deliberately backgrounds notions of compositionality and derivation. At the
+* unanchored, in that the correspondence is not explicitly annotated
+* deliberately backgrounds notions of compositionality and derivation
 * frequently invokes lexical decomposition and
   represents some implicitly expressed elements of meaning, such that AMR
-  ‘abstract’ furthest from the surface signal.  Since the
-* first general release of an AMR graph bank in 2014, the framework has
-* subject of ... SemEval 2016 and 2017 (May, 2016; May and Priyadarshi, 2017)
+  ‘abstract’ furthest from the surface signal
+* first general release of an AMR graph bank in 2014
+* subject of SemEval 2016 and 2017 (May, 2016; May and Priyadarshi, 2017)
 
 # Processing Semantic Graphs
 
 * a dizzying array of different semantic parsing algorithms, and it is a
-* Different [approaches are more or less effective for] different flavors
-* we organize the [graph-based sem parsing landscape] along three dimensions
+* Different approaches are more or less effective for different flavors
+* we organize the graph-based sem parsing landscape along three dimensions
 
 ## Decoding strategy
 
@@ -103,15 +105,15 @@ https://github.com/cfmrp/tutorial
 
 ## Compositionality
 
-* whether [the] representations are constructed compositionally. Some
-* standard linguistic [assumption:]  graphs have a latent compositional struct
+* whether the representations are constructed compositionally. Some
+* standard linguistic assumption:  graphs have a latent compositional struct
 * Others are more agnostic and simply predict the edges of the target graph
 
 ## Structural information
 
-* model the target graph directly, [or] use probability models that
+* model the target graph directly, or use probability models that
   * e.g. a syntactic derivation tree or a term over a graph algebra
-* tree-based models ... go together well with compositional models
+* tree-based models go together well with compositional models
 
 # 4 Tutorial Structure
 

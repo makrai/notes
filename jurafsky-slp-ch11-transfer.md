@@ -1,7 +1,7 @@
 in Speech and Language Processing. Daniel Jurafsky & James H. Martin
 Draft of December 29, 2021
 
-# 11 Transfer Learning with Pretrained Language Models and Contextual Embeddings
+# 11 Transfer Learning with Pretrained Language Models and Contextual Embeds
 
 * Fluent speakers bring an enormous amount of knowledge of comprehension & prod
   * vocabulary: rich representations associated with the words we know,
@@ -43,14 +43,14 @@ Draft of December 29, 2021
   * employed for eg measuring word similarity or studying meaning change
 * In this chapter, we expand on static word embeddings in two large ways
   * contextual embeddings: representations for words in context
-    * eg those learned by popular methods like BERT (Devlin+ 2019) or GPT
-    (Radford+ 2019) or their descendants,
-    each word w will be represented by a different vector each time it appears
+    * eg those learned by popular methods
+      like BERT (Devlin+ 2019) or GPT (Radford+ 2019) or their descendants,
+      each word will be represented by a different vector each time it appears
   * pretraining and fine-tuning
     * pretraining: the process of learning some sort of representation of meaning
       for words or sentences by processing very large amounts of text
     * We’ll call these pretrained models pretrained language models, since they
-      can take the form of the transformer language models we introduced in Ch 9
+      can take the form of the transformer LMs we introduced in Ch 9
     * fine-tuning: taking the representations from these pretrained models, and
       further training the model, often via an added neural net classifier,
       to perform some downstream task like NER or question answering or coref
@@ -63,7 +63,7 @@ Draft of December 29, 2021
       applying it (transferring it) to solve a new task
     * adding grounding from vision or from real-world interaction into
       pretrained models can help build even more powerful models,
-      * nT text alone is remarkably useful, and
+      * nL text alone is remarkably useful, and
       * we will limit our attention here to purely textual models
 * two common paradigms for pretrained language models
   * causal or left-to-right transformer model we introduced in Chapter 9
@@ -72,10 +72,10 @@ Draft of December 29, 2021
       * allows the model to see entire texts at a time, including both the right
         and left context
 * at the end of the ch, we’ll show how the contextual embeddings from these
-  pretrained language models can be used to
-  transfer the knowledge from these models to novel applications via fine-tuning
+  pretrained language models can be used to transfer the knowledge from these
+  models to novel applications via fine-tuning
 * in later chapters we’ll see pretrained language models fine-tuned to tasks
-  from parsing to question answering, from information extraction to sem parsing
+  eg parsing, question answering, information extraction, sem parsing
 
 ## 11.1 Bidirectional Transformer Encoders
 
@@ -86,7 +86,7 @@ Draft of December 29, 2021
   autoregressive generation problems such as contextual generation,
   summarization and machine translation
   * hE, when applied to sequence classification and labeling problems
-    * obvious shortcomings since they are based on an incremental, left-to-right
+    * obvious shortcomings since they are based on incremental, left-to-right
     * eg NER we’ll want to be able to use information from the right context
   * the hidden state computation at each point in time is based solely on the
     current and earlier elements of the input
@@ -171,7 +171,7 @@ Draft of December 29, 2021
 
 * We trained causal transformer language models in Chapter 9 by making them
   iteratively predict the next word in a text
-  * hE eliminating the causal mask makes the guess-the-next-word LM task trivial
+  * hE eliminating the causal mask makes the guess-the-next-word LM task trivi
     since the answer is now directly available from the context
 * a fill-in-the-blank task, technically called the cloze task (Taylor, 1953)
   * motivating example from Chapter 3

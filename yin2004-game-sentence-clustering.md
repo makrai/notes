@@ -12,7 +12,7 @@ arXiv:2004.02986 [cs.CL]
   * Siamese neural network architecture and
   * a novel refactoring of the Q-value function in order to better represent
     system state given its approximation over a language channel
-* evaluate the model in the context of zero-shot text-based adventure game learn
+* evaluate the model in the context of zero-shot text-based adventure game lear
   * our model reaches
     * the baseline's convergence performance point needing only 15% of its iters
     * a convergence performance point 15% higher than the baseline's

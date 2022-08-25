@@ -68,7 +68,25 @@ https://github.com/deepmind/xquad
 
 # 3 Experiments
 
-# 4 XQuAD: a new cross-lingual question answering dataset (§4)
+* Our goal is to evaluate the performance of different multilingual models in
+  the zero-shot cross-lingual setting to better understand the source of their
+  generalization ability
+* We discuss experiments on our new XQuAD dataset in §4
+* In all experiments, we fine-tune a pre-trained model using labeled training
+  examples in English, and evaluate on test examples in other languages via
+  zero-shot transfer
+  
+## 3.1 models that we compare 
+ 
+## 3.2 experimental setting 
+
+##3.3 Results on XNLI 
+
+##3.4 Results on MLDoc 
+
+##3.5 Results on PAWS-X 
+
+# 4 XQuAD: a new cross-lingual question answering dataset
 
 # sum 3,4: neither a shared subword vocabulary nor joint multilingual training
 is necessary for zero-shot transfer and

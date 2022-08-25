@@ -27,7 +27,7 @@ Third Workshop on Narrative Extraction From Texts arXiv:2004.08123 [cs.CL]
 ### 3.1.1 Article representation
 
 * Following Miranda+ [MZCB18] and Staykovski+ [SBCMN19] who demonstrated the
-  inefficiency of dense features to cluster documents of a same language,
+  inefficiency of dense features to cluster documents of a sinle language,
   articles are represented using sparse TF-IDF features
 * Monolingual representations for each document consist of 9 TF-IDF weighted
   bag of words sub-vectors, corresponding to the entities, lemmas and tokens

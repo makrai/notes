@@ -2,7 +2,9 @@ DeBERTa: Decoding-enhanced BERT with Disentangled Attention
 Pengcheng He, Xiaodong Liu, Jianfeng Gao, Weizhu Chen
 arXiv:2006.03654 [cs.CL]
 
-* model architecture DeBERTa (Decoding-enhanced BERT with dis-entangled attentn)
+# Abstract
+
+* model architecture DeBERTa: Decoding-enh BERT with dis-entangled attention
   * disentangled attention: each word is represented using two vectors that
     encode its content and position, respectively, and
     the attention weights among words are computed using disentangled matrices
@@ -53,26 +55,26 @@ arXiv:2006.03654 [cs.CL]
     their relative positions
     * For example, the dependency between the words “deep” and “learning” is
       much stronger when they occur next to each other than when in diff sents
-* we enhance the output layer of BERT for pre-training to address a limitation
-  of relative positions
+* we enhance the output layer of BERT for pre-training
+  to address a limitation of relative positions
   * DeBERTa incorporates absolute word position embeddings in the softmax layer
-    where the model decodes the masked words based on the aggregated contextual
-    embeddings of word contents and positions
+    where the model decodes the masked words
+    based on the aggregated contextual embeds of word contents and positions
 * substantially improve the efficiency of pre-training and the downstream perf
 
 ## 3.2 Two extensions of the disentangled attention
 
-* address a limitation of the relative positions which have been fully captured
-  by the disentangled attentions
-  * e.g. “A new store opened near the new mall” with the
+* address a limitation of the relative positions
+  which have been fully captured by the disentangled attentions
+  * eg “A new store opened near the new mall” with the
   * words _store_ and _mall_ masked for prediction
-  * both of them are right after the word _new_ with the exact relative position
+  * both words are right after the word _new_ with the exact relative position
   * two ways to introduce the absolution positions
     * BERT model incorporates the absolute positions in the input layer
     * DeBERTa, we propose an alternative to consider it
       right after all the Transformer layers but
       right before the softmax for masked token decoding, as shown in Figure 2
-      * i.e. relative positions in all the Transformer layers and
+      * ie relative positions in all the Transformer layers and
         absolute position only as a complementary in the softmax decoding layer
     * We call this new approach as Enhanced Mask Decoder (EMD)
     * In our empirical studies, the new approach in DeBERTa is much better

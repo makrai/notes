@@ -5,6 +5,8 @@ arXiv:2110.15621 [cs.CL]
 pretrained MentalBERTs with Huggingface’s model repository, available at
 https://huggingface.co/mental
 
+# Abstract
+
 * mental disorders could sometimes turn to suicidal ideation without treatment
 * Early detection of mental disorders and suicidal ideation from social content
   * a potential way for effective social intervention
@@ -22,16 +24,16 @@ https://huggingface.co/mental
 
 * Social content from users who wrote about mental health issues and posted
   suicidal ideation has been widely used (eg, Ji+ 2018; Tadesse+ 2019)
-* Machine learning-based detection techniques can empower healthcare workers in
-  early detection and assessment to take an action of proactive prevention
+* Machine learning-based detection techniques can empower healthcare workers
+  in early detection and assessment to take an action of proactive prevention
 * Recent advances in deep learning facilitate the development of effective
   early detection methods (Ji+ 2021a)
   * contextualized pretrained language models, has attracted much attention
   * domain-specific pretrained language models
   * biomedical BERT (Lee+ 2020) & clinical BERT (Alsentzer+ 2019; Huang+ 2019)
   * hE no pretrained language models customized for mental healthcare
-* Our paper trains and releases two representative bidirectional MLMs, ie,
-  BERT and RoBERTa (Liu+ 2019), with
+* Our paper trains and releases two representative bidirectional MLMs,
+  BERT and RoBERTa (Liu+ 2019)
   * corpus collected from social forums for mental health discussion
   * MentalBERT and Mental-RoBERTa
   * this work is the first to pre-train language models for mental healthcare
@@ -46,11 +48,11 @@ https://huggingface.co/mental
 
 ## 3.3 Results and Discussion
 
-* Results of Depression Detection We first compare the performance of
+* Depression Detection: We first compare the performance of
   * Table 2: results on three depression dataset collected from Reddit
   * MentalRoBERTa archives the best performance on eRisk and CLPsych datasets,
     and MentalBERT is the second best model on the Depression_Reddit dataset
-* Results of Classifying Other Mental Disorders and suicidal ideation
+* Classifying Other Mental Disorders including suicidal ideation
   * Table 3 shows the performance different mental disorder classif tasks
   * In T-SID, SAD, and Dreaddit, MentalRoBERTa is the best model with the
     highest recall and F1 scores
@@ -59,11 +61,11 @@ https://huggingface.co/mental
   * for the SWMH dataset with several mental disorders, the MentalRoBERT
     obtained the best F1 score
 * Discussion
-  * When comparing the domain-specific pretrained models for mental health with
-    models pretrained with general corpora, MentalBERT and MentalRoBERTa gain
-    better performance in most cases
-  * Domain-specific pretraining in the biomedical or clinical domain turns out
-    to be less helpful than pretraining on the target domain of mental health
+  * When comparing the domain-specific pretrained models for mental health
+    with models pretrained with general corpora,
+    MentalBERT and MentalRoBERTa gain better performance in most cases
+  * Domain-specific pretraining in the biomedical or clinical domain is
+    less helpful than pretraining on the target domain of mental health
 
 # 4 Related Work
 
@@ -77,7 +79,7 @@ https://huggingface.co/mental
 * ClinicalBERT (Alsentzer+ 2019) used clinical notes as the pretraining corpus
   * applications by fine-tuning: Lin+ (2019) and Ji+ (2020)
 
-## 4.2 NLP for Mental Healthcare in social media is increasingly applied
+## 4.2 NLP for Mental Healthcare in social media
 
 * identifying emotions, mood, and profiles that might indicate mental health
   problems (Calvo+ 2017)

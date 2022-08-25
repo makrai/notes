@@ -54,8 +54,8 @@ A conceptual graph (CG) is a graph representation for logic
     * 1897, however, he discovered a simple, but brilliant innovation for his
       new version of existential graphs
     * Sowa [33] adopted Peirce’s convention for CGs, but...
-* Kamp [18] to develop discourse representation structures (DRSs) whose logical
-  structure is isomorphic to Peirce’s existential graphs
+* Kamp [18] develops discourse representation structures (DRSs) 
+  * logical structure is isomorphic to Peirce’s existential graphs
   * discourse and formulating the rules for interpreting anaphoric references,
 * event or state expressed by a verb is also an entity that could be referenced
   by a quantified variable. That point was independently rediscovered by

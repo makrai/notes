@@ -71,8 +71,8 @@ Tree-Adjoining Grammars
 ## Substitution and Lexicalization of CFGs
 
 * in the general case, finitely ambiguous CFGs cannot be lexicalized with a
-  tree system that uses substitution as the only combining operation. (The
-  underlying idea behind this proof was suggested to us by Stuart Shieber.)
+  tree system that uses substitution as the only combining operation.
+  * The underlying idea behind this proof was suggested to us by Stuart Shieber
 * Even if some CFGs can be lexicalized by using TSG, the choice of the lexical
   items that emerge as the anchor may be too restrictive
 

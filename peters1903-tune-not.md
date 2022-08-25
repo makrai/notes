@@ -2,9 +2,12 @@ To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks
 Matthew E. Peters, Sebastian Ruder, Noah A. Smith
 reprl4nlp arXiv:1903.05987
 
+# Abstract
+
 * how to best adapt the pretrained model to a given target task
-* two most common forms of adaptation, feature extraction (where the pretrained
-  weights are frozen), and directly fine-tuning the pretrained model
+* two most common forms of adaptation
+  * feature extraction (where the pretrained weights are frozen), and
+    directly fine-tuning the pretrained model
 * empirical results across diverse NLP tasks with two SOTA models show that the
   relative performance of fine-tuning vs feature extraction depends on the
   similarity of the pretraining and target tasks
@@ -18,9 +21,9 @@ reprl4nlp arXiv:1903.05987
   * adaptation, in which the representation is transferred to a new task
 * in the adaptation phase, there are two main paradigms: feature extraction
   (FE) and fine-tuning (FT)
-  * feature extraction: the model’s weights are ‘frozen’ and the pretrained
-    representations are used in a downstream model similar to classic
-    feature-based approaches (Koehn+ 2003)
+  * feature extraction: the model’s weights are ‘frozen’ and
+    the pretrained representations are used in a downstream model
+    similar to classic feature-based approaches (Koehn+ 2003)
     * enables use of task-specific model architectures
     * computationally cheaper as features only need to be computed once
   * pretrained model’s parameters can be unfrozen and fine-tuned on a new task

@@ -39,9 +39,11 @@ Two Decades of Unsupervised POS induction: How far have we come?
 ## Variation of Information (Meilă, 2003)
 
 * regards the system output `C` and the gold standard tags `T` as two separate
-  clusterings, and evaluates the amount of information lost in going from `C`
-  to `T` and the amount of information gained, i.e., the sum of the conditional
-  entropy of each clustering conditioned on the other
+  clusterings, and evaluates
+  * the amount of information lost in going from `C` to `T`
+    and the amount of information gained,
+  * ie the sum of the conditional entropy of each clustering
+    conditioned on the other
 * How about simply `H(T|C)`?
 
 # Empirical results (the behavior of different evaluation methods)

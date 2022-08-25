@@ -9,7 +9,7 @@ EMNLP 2013
 * our goal is a [co-]compositional model
   * addresses [the polysemy issue of] current vector space models, notably
 * We
-  * implement cocompositionality using prototype projections on preds/args and
+  * implement co-compositionality using prototype projections on preds/args and
   * neural network
     unsupervised algorithm to jointly train word representations with co-compos
   * best result to date (ρ = 0.47) on the semantic similarity task of
@@ -27,24 +27,23 @@ EMNLP 2013
   in Generative Lexicon Theory (Pustejovsky, 1995)
 * Co-compositionality advocates that instead of a predicate-argument view of
   e.g. polysemous word run: _He runs the company./He runs the marathon._
-  * verbs that select for company differ from those that select for marathon,
+  * verbs that select for _company_ differ from those that sel for _marathon_
   * predicate also coerces meaning to the argument to fit expectation
 * We [propose a model that incorporates] elements of co-compositionality
-  * what we call prototype projections. For each predicate, we transform its
-    vector representation by projecting it into a latent space that is
-    prototypical of its argument. This projection is performed analogously for
-    each argument as well, and the final meaning is computed by composition of
-    these transformed vectors
+  * what we call prototype projections
+    * For each predicate, we transform its vector representation by projecting
+      it into a latent space that is prototypical of its argument
+    * This projection is performed analogously for each argument as well, and
+      the final meaning is computed by composition of these transformed vectors
   * cast as a neural network where word representations could be re-trained or
     fine-tuned
   * not implement qualia structure and other important components of GL
 * Our contributions are two-fold:
-  1. We propose a novel model for semantic cocompositionality
-     * easy to implement and achieves SOTA performance in the sentence
-       similarity dataset developed by Grefenstette and Sadrzadeh (2011)
-  2. Our results empirically confirm that existing word representations (eg.,
-     SDS and NLM in Section 2) are sufficiently effective at capturing
-     polysemy
+  1. a novel model for semantic co-compositionality
+    * easy to implement and achieves SOTA performance in the sentence
+      similarity dataset developed by Grefenstette and Sadrzadeh (2011)
+  2. Our results empirically confirm that existing word representations
+    (eg SDS and NLM in Sec 2) are sufficiently effective at capturing polysemy
 
 # 2 background to the word representations employed here (Section 2)
 

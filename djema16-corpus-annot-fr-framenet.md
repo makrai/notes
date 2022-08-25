@@ -8,11 +8,11 @@ LREC, 2016
 
 * ASFALDA project [phases]
   1. development of a French set of frames and corresponding lexicon
-    (Candito et al., 2014)
+    (Candito+ 2014)
   2. this paper concentrates on the subsequent
     * corpus annotation phase, which
-    * focused on four notional domains (commercial transactions, cognitive
-      stances, causality and verbal communication). Given
+    * focused on four notional domains (commercial transactions,
+      cognitive stances, causality, and verbal communication)
 * full coverage is not reachable for a relatively “new” FrameNet project, we
 * frames and roles were annotated on two French Treebanks
   * Abeillé and Barrier, (2004) and the
