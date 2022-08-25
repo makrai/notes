@@ -436,8 +436,8 @@ https://github.com/CalculatedContent/ww-trends-2020
     * ResNet models of up to 1000 layers have been trained 32
 * The efﬁciency and effectiveness of ResNet seems to be reﬂected in the smaller
   and more stable α ~ 2.0, across nearly all layers,
-  indicating that the inner layers are very well correlated and more strongly
-  optimized
+  indicating that the inner layers are very well correlated and
+  more strongly optimized
 * This contrasts with the DenseNet models, which contains
   many connections between every layer. These results
   (large α, meaning that even a PL model is probably a poor ﬁt)
@@ -456,14 +456,14 @@ https://github.com/CalculatedContent/ww-trends-2020
       techniques from quantitative ﬁnance, random matrix theory, and the
       statistical mechanics of heavy tailed and strongly correlated systems 34
   * using norm-based metrics to bound generalization error 37–39
-    * theoretical work aims to prove generalization bounds, and this
+    * theoretical work aims to prove generalization bounds
     * applied work then uses these norms to construct regularizers
   * Proving generalization bounds and developing new regularizers is
     very different than our focus on validating pretrained models
 * understanding DNNs with the information bottleneck principle 24,25
   * Our work also has intriguing similarities and differences with ^
-  * posits that DNNs can be quantiﬁed by the mutual information between their
-    layers and the input and output variables
+  * posits that DNNs can be quantiﬁed by the
+    mutual information between their layers and the input and output variables
   * we not require access to any data, while information measures used in the
     information bottleneck approach do require this
   * nL, several results from HT-SR Theory, on which our metrics are based,
@@ -474,6 +474,12 @@ https://github.com/CalculatedContent/ww-trends-2020
 * our work, is the ﬁrst to perform a detailed analysis of the weight matrices
   * starting in 2018 with the WeightWatcher tool 6
   * two concurrent works 40,41
+    * [40] G. Eilertsen, D. Jönsson, T. Ropinski, J. Unger, and A. Ynnerman.
+      Classifying the classifier: dissecting the weight space of neural
+      arXiv:2002.05688, 2020.
+      [41] T  Unterthiner, D Keysers, S Gelly, O Bousquet, and I  Tolstikhin
+      Predicting neural network accuracy from weights
+      arXiv:2002.11448, 2020.
   * Both of these papers validate our basic result that
     one can gain substantial insight into model quality by examining weight
     matrices without access to any training or testing data
@@ -486,10 +492,10 @@ https://github.com/CalculatedContent/ww-trends-2020
   eg to bound generalization error or to construct regularizers)
   * PL-based metrics perform better than norm-based metrics
     * not surprising—at least to those familiar with the statistical mechanics
-      of heavy tailed and strongly correlated systems 8,21–23 —since our use of
-      PL exponents is designed to capture the idea that
-      well-trained models capture information correlations over many size
-      scales in the data
+      of heavy tailed and strongly correlated systems 8,21–23 —since
+      our use of PL exponents is designed to capture the idea that
+      well-trained models capture
+      information correlations over many size scales in the data
   * Our approach provides ﬁne-scale insight (rationalizing the ﬂow of
     correlations or the collapse of size scale) throughout a network
     * Both Correlation Flow and Scale Collapse are important for improved
@@ -512,7 +518,7 @@ https://github.com/CalculatedContent/ww-trends-2020
 
 ## Special consideration for NLP models
 
-* in NLP models (and other models with large initial embeddings)
+* in NLP models (and other models with large initial embeddings),
   the embedding layers frequently lack the implicit 1/sqrt N normalization
 * eg in GPT, for most layers, the maximum eigenvalue λ max O(10  100), but
   in the ﬁrst embedding layer, the maximum eigenvalue is of order N (the
