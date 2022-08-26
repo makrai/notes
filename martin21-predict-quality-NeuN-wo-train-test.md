@@ -28,8 +28,8 @@ https://github.com/CalculatedContent/ww-trends-2020
 # [Intro] A common problem in machine learning (ML) is to evaluate the quality
 
 * training/testing curves give very limited insight into the overall properties
-  * not take into account the (often large human and CPU/GPU) time for
-    hyperparameter ﬁddling
+  * not take into account the time for hyperparameter ﬁddling
+    * often large human and CPU/GPU time
   * not correlate with robustness, fairness or interpretability
   * when the model user is not the model developer
     * no access to the training data or the testing data
@@ -132,7 +132,7 @@ https://github.com/CalculatedContent/ww-trends-2020
   * λ i is the i th eigenvalue of the X, λ max is the maximum eigenvalue, and
     α is the ﬁtted PL exponent
   * These eigenvalues are squares of the singular values σ i of W, λ i = σ 2 i
-  * All four metrics can be computed easily from DNN weight matrices
+* All four metrics can be computed easily from DNN weight matrices
 * The ﬁrst two metrics are well-known in ML
 * The last two metrics deserve special mention, as they
   * depend on an empirical parameter α that is the PL exponent that arises in
@@ -175,8 +175,8 @@ https://github.com/CalculatedContent/ww-trends-2020
   * smaller exponents α correspond to more implicit self-regularization and
     better generalization, and
   * we expect a linear correlation between α^ and model quality 1–3
-* For norm-based metrics, we use the average of the log norm, to the
-  appropriate power
+* norm-based metrics for more mxs
+  * we use the average of the log norm, to the appropriate power
   * Informally, this amounts to
     assuming that the layer weight matrices are statistically independent,
     => we can estimate the model complexity C, or test accuracy, with a
@@ -212,12 +212,12 @@ https://github.com/CalculatedContent/ww-trends-2020
     ﬁt the histogram of eigenvalues, ρ(λ), to a truncated PL,
     ρ(λ) ~ λ α ; λ \in [λ min ; λ max] (13)
     where λ max is the largest eigenvalue of X = W T W, and where
-    λ min is selected automatically to yield the best (in the sense of
-    minimizing the K-S distance) PL ﬁt
+    λ min is selected automatically to yield the best PL ﬁt
+    (best in the sense of minimizing the K-S distance)
 * Each of these quantities is deﬁned for a given layer W matrix. See Fig. 1
 * To avoid confusion, let us clarify the relationship between α and α^
-  * We ﬁt the ESD of the correlation matrix X to a truncated  PL, parameterized
-    by 2 values: the PL exponent α, and the maximum eigenvalue λ max
+  * We ﬁt the ESD of the correlation matrix X to a truncated PL,
+    paramed by 2 values: the PL exponent α, and the maximum eigenvalue λ max
   * The PL exponent α measures the amount of correlation in a layer weight mx W
     * valid for λ ≤ λ max, and it is scale-invariant, ie it does
       not depend on the normalization of W or X

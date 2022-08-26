@@ -218,7 +218,7 @@ Barbara H. Partee & Vladimir Borschev
     * In an ES, the LOC is chosen as “Perspectival Center”
     * not only about existence but also 'coming into existence', 'being
       present', occurring, being in one's perceptual field, etc
-    * it turns the predication around: ` LOC has THING in it`
+    * it turns the predication around: `LOC has THING in it`
     * If the LOC is implicit, this is a “thetic judgment”.
 (17) PERSPECTIVE STRUCTURE:
   An “existence/location situation” BE(THING, LOC) may be structured from the

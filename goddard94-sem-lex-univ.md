@@ -277,9 +277,9 @@ Semantic and Lexical Universals
     * suggested by certain Australian languages
     * Componential descriptions of nuclear verbs are generated from systems of
       primitive semantic features;
-      non-nuclear verbs are defined in terms of the nuclear verbs (or of already
-      defined non-nuclear verbs) utilising the full grammatical possibilities of
-      the language in the formulation of these definitions
+    * non-nuclear verbs are defined in terms of the nuclear verbs (or of
+      already defined non-nuclear verbs) utilising the full grammatical
+      possibilities of the language in the formulation of these definitions
     * universal semantic 'types',
       * not the ultimate elements of semantic theory, but
         about the mechanism of semantic-syntactic correspondence

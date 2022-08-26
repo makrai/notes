@@ -41,13 +41,13 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 ### Interpreting NLP
 
 * investigates the self-attention mechanism of Transformer-based models, aiming
-  to e.g. characterize its patterns or decode syntactic structure
+  to eg characterize its patterns or decode syntactic structure
   (Clark+ 2019; Kobayashi+ 2020; Mareček and Rosa, 2018;
   Raganato and Tiedemann, 2018; Vig, 2019; Voita+ 2019)
 * analyzes models’ internal representations using probes
   * often linear classifiers that
     take representations as input and are trained with supervised tasks in mind,
-    e.g. POS-tagging, dependency parsing
+    eg POS-tagging, dependency parsing
     (Hewitt & Manning, 2019; Lin+ 2019; NF Liu+ 2019; Tenney+ 2019; Zhao+ 2020)
 
 ### Contextualized Representations Space Analysis
@@ -61,11 +61,11 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 ### LayerNorm Analysis
 
-* Xu+ (2019): LayerNorm’s learnable parameters increase the risk of over-fitting
+* Xu+ (2019): LayerNorm’s learnable params increase the risk of over-fitting
   and dropping them does not affect the model’s performance on several tasks
 * Kovaleva+ (2021) draws attention to BERT’s outlier neurons
   * exhaustive analysis of LayerNorm parameterization
-  * the high-magnitude normalization parameters emerge early in pre-training and
+  * the high-magnitude normalization parameters emerge early in pre-training &
     show up consistently in the same dimensional position throughout the model
   * Removing them significantly degrades the downstream task performance
   * not analyze the reason behind such phenomenon
@@ -132,10 +132,10 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
   (K He+ 2015)
 * in the case of BERT, the first position’s embedding is directly tied to the
   requisite [CLS] token, which is prepended to all sequences as part of the MLM
-  * This has been recently noted to affect e.g. attention patterns, where
+  * recently noted to affect eg attention patterns, where
     much of the probability mass is distributed to this particular token alone,
-    despite it bearing the smallest norm among all other vectors in a given
-    layer and head (Kobayashi+ 2020)
+    despite it bearing the smallest norm among all other vectors
+    in a given layer and head (Kobayashi+ 2020)
 
 #### Neuron-level analysis
 
@@ -244,7 +244,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 # 5 Discussion 25
 
-* the common information in vectors (e.g. position artefacts) will inevitably
+* the common information in vectors (eg position artefacts) will inevitably
   make them similar to each other
   * To remove such correlations, one needs to use some normalization strategies
   * we introduced two effective methods to alleviate the anisotropy phenomenon,
@@ -264,8 +264,8 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
     design. The position information which contributes to a task’s loss function
     may be retained in the embeddings vectors. For BERT, the outlier dimension
     may be used to differentiate the 1st position from all others
-  * position information is reconstructed by the gain parameter of LayerNorm and
-    then propagates through the network
+  * position information is reconstructed by the gain parameter of LayerNorm
+    and then propagates through the network
 * new MLM models: T5 (Raffel+ 2020) and DeBERTa (P. He+ 2021)) choose to
   directly use the positional information to adjust the attention matrix
   * DeBERTa uses the disentangled attention mechanism, where
@@ -286,34 +286,34 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
   speech dataset
 * future: use such masks to modify Transformer Encoder to help it model word
   order implicitly
-* LayerNorm is one of the reasons for the position artefacts propagating through
-  the model’s representations
+* LayerNorm is one of the reasons for the position artefacts propagating
+  through the model’s representations
 * Kovaleva+ (2021) find outlier neurons
   in the learnable parameters of BERT’s LayerNorm
-  * indicate that removing the outlier neurons of LayerNorm will degenerate the
-    model’s performance on downstream tasks
-  * suggest that LayerNorm plays a much more important role than usually assumed
+  * indicate that removing the outlier neurons of LayerNorm
+    will degenerate the model’s performance on downstream tasks
+  * suggest that LayerNorm plays a much more important role than usually assumd
   * The two learnable parameters gain γ and bias β have great influence
   * Xu+ (2019) find that these parameters increase the risk of over-fitting and
     dropping them does not decrease the performance on most tasks, including
     Machine Translation, Language modeling, Text classification and Parsing
   * In the computer vision area, researchers usually use LayerNorm’s
-    counterpart, BatchNorm (Ioffe and Szegedy, 2015), which is
+    counterpart, BatchNorm (Ioffe and Szegedy, 2015)
     * similar to LayerNorm and performs the normalization for each mini-batch
-* de Vries+ (2017) propose a model called conditional BatchNorm, which
-  * only uses these two learnable parameters [gain γ and bias β?] to fuse vision
-    and text information in a model
+* de Vries+ (2017) propose a model called conditional BatchNorm
+  * only uses these two learnable parameters [gain γ and bias β?]
+    to fuse vision and text information in a model
   * LayerNorm may be able to do similar things
 
 # 6 Conclusion 27
 
-* future research questions as follows:
+* future research questions 
   1. in autoregressive models like GPT-2 (Radford+ 2019) or XLNet (Yang+ 2019)
   2. the relation between the positional information and the LayerNorm
     * both Kovaleva+ (2021) and we find that the outlier neurons phenomenon is
       highly related to the LayerNorm, especially the output LayerNorm
     * we show that the outlier neurons are the positional artefacts
-  3. the outlier neurons of LayerNorm gradually emerge after 50k pre-train steps
+  3. outlier neurons of LayerNorm gradually emerge after 50k pre-train steps
      (Kovaleva+ 2021)
     * not exist in the early training stage
     * Why does the model need to “grow” such neurons during training?

@@ -1,5 +1,5 @@
-Seyed Mehran Kazemi and David Poole
 SimplE Embedding for Link Prediction in Knowledge Graphs
+Seyed Mehran Kazemi and David Poole
 NIPS 2018
 
 code is available on GitHub at https://github.com/Mehran-k/SimplE
@@ -8,13 +8,13 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 
 * Knowledge graphs contain [structured] knowledge about the world
 * Tensor factorization approaches [to link prediction] have proved promising
-* Canonical Polyadic (CP, 1927) ... performs poorly for link prediction
+* Canonical Polyadic (CP, 1927) performs poorly for link prediction
   as it learns two independent embedding vectors for each entity
 * We present a simple enhancement of CP (which we call SimplE) to allow
   * the two embeddings of each entity to be learned dependently
   * The complexity of SimplE grows linearly with the size of embeddings
   * interpretable, and certain types of
-    background knowledge can be incorporated ... through weight tying
+    background knowledge can be incorporated through weight tying
     * namely symmetry, anti-symmetry, and inversion
   * derive a bound on the size of its embeddings for full expressivity
   * outperforms several state-of-the-art tensor factorization techniques
@@ -31,7 +31,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * Tensor factorization [for effective] KG completion [29, 4, 39, 26]
   * embeddings for each entity and each relation
   * outputs a number indicating the predicted probability
-  * Details and discussions ... in recent surveys [27, 43]
+  * Details and discussions in recent surveys [27, 43]
     27. Dat Quoc Nguyen
       An overview of embedding models of entities and relationships for knowl-
       edge base completion
@@ -39,7 +39,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
     43. Quan Wang, Zhendong Mao, Bin Wang, and Li Guo.
       Knowledge graph embedding: A survey of approaches and applications.
       IEEE Transactions on Knowledge and Data Engineering, 29(12) 2017
-  * canonical Polyadic (CP) decomposition [15] ... learns one embedding vector
+  * canonical Polyadic (CP) decomposition [15] learns one embedding vector
     for each relation and two embedding vectors for each entity
   * This independence has caused CP to perform poorly for KG completion [40]
 * In this paper tensor factorization approach [SimplE] based on CP that
@@ -59,16 +59,16 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * A tensor factorization model
   * defines two things
     * the embedding functions for entities and relations
-    * a function f taking ... h, r and t as input and generating a prediction
-  * is fully expressive if given any  ... full assignment of truth values
+    * a function f taking h, r and t as input and generating a prediction
+  * is fully expressive if given any  full assignment of truth values
 
 # 3 Related Work
 
 * Translational Approaches
   * entity `e` is a single vector `v_e ∈ R_d`
-  * relation `r` is a vector `v_r ∈ R_d` and two matrices `P_r ∈ R_d×d` and Q_r
+  * relation `r` is a vector `v_r ∈ R_d` and 2 matrices `P_r ∈ R_d×d` and `Q_r`
   * The dissimilarity function for a triple (h, r , t) is defined as
-  ||P_r v_h + v_r − Q_r v_t || i
+  `||P_r v_h + v_r − Q_r v_t || i`
   (i.e.  encouraging `P_r v_h + v_r ≈ Q_r v_t`)
   where ||v|| i represents norm i of vector v
   * restrictions they impose on `P_r` and `Q_r`
@@ -83,7 +83,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * Multiplicative Approaches define product-based functions over embeddings
   * DistMult [46] [ defines ] `\langle v_h , v_r , v_t\rangle`
     * can only model symmetric relations
-  * ComplEx [39] extends DistMult by considering complex-valued ... vectors
+  * ComplEx [39] extends DistMult by considering complex-valued vectors
   * RESCAL [28], HolE [32]
 * Deep Learning Approaches generally use a neural network
   * E-MLP [37] considers the embeddings for each
@@ -109,7 +109,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * Model Definition: SimplE considers
   * two vectors h_e , t_e ∈ R d as the embedding of each entity e
   * two vectors v_r , v_r −1 ∈ R d for each relation r
-  * similarity function ... defined as
+  * similarity function defined as
     * the average of the CP scores for (e i , r , e_j ) and (e j , r −1 , e i)
   * we also consider a different variant, which we call SimplE-ignr
 * Learning SimplE Models: stochastic gradient descent with minibatches
@@ -140,7 +140,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * post-processing steps or add
     additional terms to the loss function to penalize predictions that violate
     the background knowledge [34, 42, 45, 13, 9]
-  * Minervini+ [25] show ... in terms of equivalence and inversion ... through
+  * Minervini+ [25] show in terms of equivalence and inversion through
     parameter tying
 
 ## 5.3 Time Complexity and Parameter Growth
@@ -148,7 +148,7 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
 * time complexity for TransE is O(d) where d is the size of the embedding
 * STransE ([with] the two relation matrices) increases [it] to O(d 2 )
   * number of parameters to be learned from data grows quadratically with d
-* RESCAL and NTNs ... have quadratic or higher time [and parameter] complexity
+* RESCAL and NTNs have quadratic or higher time [and parameter] complexity
 * DistMult and ComplEx have linear time [& param] complexities
 * time complexity of both SimplE-ignr and SimplE is O(d), i.e. linear in the
 * SimplE-ignr requires one multiplication between three vectors for each
@@ -162,9 +162,9 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * the similarity function for a triple (h, r , t) is defined as v h^T M r_v t
 * remarkable performance for link prediction in knowledge graphs [31]
 * DistMult, ComplEx, and RESCAL + SimplE (and CP) also belong to this family
-  * DistMult ... restricts the M r matrices to be diagonal as in Fig. 2(a). For
+  * DistMult restricts the M r matrices to be diagonal as in Fig. 2(a). For
   * ComplEx
-  * RESCAL ... imposes no constraints on the M r matrices. Considering the
+  * RESCAL imposes no constraints on the M r matrices. Considering the
   * CP
   * SimplE [similar to CP] extra parameters [correspond to] the inverse
 * SimplE [is compatible] with other embedding models (in KG completion,
@@ -181,14 +181,14 @@ code is available on GitHub at https://github.com/Mehran-k/SimplE
   * CP, TransE, TransR, DistMult, NTN, STransE, ER-MLP, and ComplEx
 * Evaluation Metrics
   * filtered MRR. We also report hit@k measures
-* Implementation ... in TensorFlow [1]
+* Implementation in TensorFlow [1]
   * The best embedding size and λ values on FB15k for
     SimplE-ignr were 200 and 0.03 respectively, and for
     SimplE were 200 and 0.1
 
 ## 6.1 Entity Prediction Results
 
-* On WN18, SimplE-ignr and SimplE perform as good as ComplEx, a SOTA ... model
+* On WN18, SimplE-ignr and SimplE perform as good as ComplEx, a SOTA model
   On FB15k, SimplE outperforms the existing baselines
 * bilinear approaches tend to have better performances
 
@@ -206,7 +206,7 @@ Table 2: Background Knowledge Used in Section 6.2
   * ensembles of SimplE models as [18] do it for DistMult,
   * adding SimplE to the relation-level ensembles of [44],
   * explicitly modelling the analogical structures of relations as in [23],
-  * using [8]’s 1-N scoring approach to generate ... negative triples
+  * using [8]’s 1-N scoring approach to generate negative triples
     * Trouillon+ [39] show that generating more negative triples [helps]
   * combining SimplE with
     * logic-based approaches (e.g., with [19])

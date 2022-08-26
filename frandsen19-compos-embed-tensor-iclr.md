@@ -1,5 +1,5 @@
-Abraham Frandsen & Rong Ge
 Understanding composition of word embeddings via tensor decomposition
+Abraham Frandsen & Rong Ge
 ICLR 2019
 
 github.com/abefrandsen/compositional-embeddings (no documentation)

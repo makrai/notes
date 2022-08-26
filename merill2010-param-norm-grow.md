@@ -5,12 +5,13 @@ EMNLP 2021
 
 https://github.com/viking-sudo-rm/norm-growth
 
+# Abstract
+
 * transformers learn successfully due to inductive bias in the training routine
   * typically a variant of gradient descent (GD)
 * To better understand this bias, we study the
   tendency for transformer parameters to grow in magnitude (ℓ2 norm) during tra
-  * its implications for the emergent representations
-    within self attention layers
+  * its implications for the emergent reprs within self attention layers
 * Empirically, we document norm growth in the training of transformer LMs,
   including T5, during its pretraining
 * we prove: As the parameters grow in magnitude,
@@ -35,11 +36,10 @@ https://github.com/viking-sudo-rm/norm-growth
   useful biases or constraints imposed by the learning algorithm
   * attempts to study these biases in transformers
     (Rogers+ 2020; Lovering+ 2021)
-  * remains an interesting open question what the biases are, or even how to
-    characterize them in a way relevant to the domain of language
+  * remains an interesting open question what the biases are, or even
+    how to characterize them in a way relevant to the domain of language
 * thoroughly understanding the dynamics of gradient descent (GD) might clarify
-  the linguistic biases of transformers, and the types of representations they
-  acquire
+  the linguistic biases of transformers, and the types of reprs they acquire
 * We start by making a potentially surprising empirical observation (§3)
   * norm growth: growing parameter norm during training
   * the parameter l 2 norm grows proportional to √t (where t is the timestep)
@@ -47,13 +47,14 @@ https://github.com/viking-sudo-rm/norm-growth
   * Previous work has analyzed norm growth in simplified classes of feedforward
     (Li and Arora, 2019; Ji and Telgarsky, 2020)
   * not thoroughly demonstrated or studied in transformers
-* Our main contribution (§4) is analyzing the effect of norm growth on the
-  representations in the transformer
+* Our main contribution (§4) is
+  analyzing the effect of norm growth on the reprs in the transformer
   * norm growth which control the network’s grammatical generalization
-  * With some light assumptions, we prove that any network where the parameter
-    norm diverges during training approaches a saturated network (Merrill+
-    2020): a restricted network variant whose discretized reprs are
-    understandable in terms of formal langs & automata
+  * With some light assumptions, we prove that
+    any network where the parameter norm diverges during training
+    approaches a saturated network (Merrill+ 2020)
+    * a restricted network variant whose discretized reprs are understandable
+      in terms of formal langs & automata
   * Empirically, we find that internal representations of pretrained
     transformers approximate their saturated counterparts, but for randomly
     initialized transformers, they do not
@@ -64,22 +65,21 @@ https://github.com/viking-sudo-rm/norm-growth
 * saturation permits two useful types of attention heads within a transformer:
   (Merrill, 2019; Bhattamishra+ 2020)
   * one that locally targets a small number of positions, and
-  * one that attends uniformly over the full sequence, enabling an “average”
-    operation
+  * one that attends uniformly over the full sequence,
+    enabling an “average” operation
 * Empirically, we find that both of these head types emerge in trained
   transformer language models
-  * These capabilities reveal how the transformer can process various formal
-    languages, and could also suggest how it might represent the structure of
-    natural language
+  * These capabilities
+    reveal how the transformer can process various formal languages, and could
+    also suggest how it might represent the structure of natural language
 * Combined, our theoretical and empirical results shed light on the linguistic
   inductive biases imbued in the transformer architecture by GD, and could
   serve as a tool to analyze, visualize, and improve transformers
 * we discuss potential causes of norm growth in §5
-  * We prove transformers are approximately homogeneous (Ji and Telgarsky,
-    2020)
+  * We prove transformers are approximately homogeneous (Ji & Telgarsky, 2020)
     * a property that has been extensively studied in deep learning theory
-  * With some simplifying assumptions, we then show how homogeneity might
-    explain the √t growth observed for T5
+  * With some simplifying assumptions, we then show
+    how homogeneity might explain the √t growth observed for T5
 
 # 2 Background and Related Work
 
@@ -87,9 +87,9 @@ https://github.com/viking-sudo-rm/norm-growth
 
 * parameters do not converge to a finite local minimum during GD training
   * the once conventional wisdom challenged
-  * A simple case where generalization properties of GD is matrix factorization
-    (Gunasekar+ 2017; Arora+ 2019; Razin and Cohen, 2020). It has been observed
-    * deep matrix factorization leads to lowrank matrix solutions
+  * A simple case for generalization properties of GD is matrix factorization
+    (Gunasekar+ 2017; Arora+ 2019; Razin and Cohen, 2020)
+    * deep matrix factorization leads to low-rank matrix solutions
     * Razin and Cohen (2020) argued theoretically that this bias of GD cannot
       be explained as an implicit regularizer minimizing some norm
       * cases where all parameter norms diverge during GD
@@ -224,18 +224,18 @@ https://github.com/viking-sudo-rm/norm-growth
 ## 4.2 Power of Saturated Attention
 
 * theoretical background about saturated attention, largely by Merrill (2019)
-  Let H (sequence length n by model dimension d) be the input representation to
-  a self attention layer. We assume a standard self attention mechanism with
-  key, query, and value matrices K, Q, V. 8
+  * Let H (sequence length n by model dimension d) be the input representation
+    to a self attention layer. We assume a standard self attention mechanism
+    with key, query, and value matrices K, Q, V. 8
   * Saturated attention resembles standard attention where softmax is
     constrained to a generalization of “argmax” (Merrill, 2019):
     s attn(H; Q, K, V ) = arg max(HQK^T H^T )HV
 
 * define vectorized arg max(A) as a uniform distribution over all tied position
-  Saturated attention can retrieve the “maximum” value in a sequence according
-  to some similarity matrix
+  * Saturated attention can retrieve the “maximum” value in a sequence
+    according to some similarity matrix
 
-* It is also capable of restricted counting (Merrill+ 2020). Formalizing these
+* It is also capable of restricted counting (Merrill+ 2020)
   * two computational operations that are reducible to saturated self attention
     argmax and mean. Let h i represent the input representation at each time
     step 1 ≤ i ≤ n

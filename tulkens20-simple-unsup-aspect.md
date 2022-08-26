@@ -17,7 +17,7 @@ code to reproduce the experiments https://github.com/clips/cat
 # 1 Intro
 
 * aspect: a dimension on which an entity is evaluated (see Figure 1)
-  * can be concrete (e.g., a laptop battery) or subjective (e.g., the loudness)
+  * can be concrete (eg a laptop battery) or subjective (eg the loudness)
 * Aspect extraction is an important subtask of aspect-based sentiment analysis
   * most existing systems are supervised
   * overview: Zhang+ (2018). As aspects are domain-specific,
@@ -27,7 +27,7 @@ code to reproduce the experiments https://github.com/clips/cat
   * supervised systems that rely on strictly lexical cues to differentiate
     between aspects are unlikely to transfer well between different domains
     (Rietzler+ 2019)
-  * scarcity of training data for many domains (e.g., books), and, more
+  * scarcity of training data for many domains (eg books), and, more
     importantly, the complete lack of training data for many languages
 * Unsupervised aspect extraction has
   * previously been attempted with
@@ -44,7 +44,7 @@ code to reproduce the experiments https://github.com/clips/cat
     * based on Radial Basis Function (RBF) kernels
     * Compared to conventional attention mechanisms (Weston+ 2014; Sukhbaatar+
       2015), CAt captures more relevant information from a sentence. Our method
-  * outperforms more complex methods, e.g., attention neu (He+ 2017; Luo+ 2019)
+  * outperforms more complex methods, eg attention neu (He+ 2017; Luo+ 2019)
   * automatically assigns aspect labels, while in previous work, labels are
     manually assigned to aspect clusters
 * our model uses
@@ -69,29 +69,31 @@ code to reproduce the experiments https://github.com/clips/cat
   * how much in-domain data is required to achieve good performance
     * about 260k sentences are needed to tackle this specific dataset
 * error analysis, a manual categorization of error types
-  * Outof-Vocabulary (e.g. Somosas) or low frequency (e.g. Dhal)
+  * Outof-Vocabulary (eg Somosas) or low frequency (eg Dhal)
   * Since our model is purely based on lexical similarity, homonyms and
     polysemous words can lead to errors. An example of this is the word
     ‘course,’ which our model interprets as being about food
   * aspects expressed in verbs, As the aspect terms we use are restricted to N
-    * e.g. “waited for food.” Finally,
-  * discourse context and implicatures (world knowledge), e.g. ‘no free drink’
+    * eg “waited for food.” Finally,
+  * discourse context and implicatures (world knowledge), eg ‘no free drink’
     does not express an opinion about drinks, but about service
 * we surmise that our model will perform less well in domains in which aspects
   are expressed in a less overt way
-  * e.g. _As usual, Beaton conceals any number of surprises behind her trademark
+  * eg _As usual, Beaton conceals any number of surprises behind her trademark
     wry humor._
     * aspects, including writing style, plot, and a general opinion on the book
 * future
   * how CAt performs as a replacement of regular attention in supervised models,
-    e.g., memory networks (Weston+ 2014; Sukhbaatar+ 2015)
+    eg memory networks (Weston+ 2014; Sukhbaatar+ 2015)
   * why the attention model outperforms regular dot product attention
-    * our understanding is that the dot-product attention places a high emphasis
-      on words with a higher vector norm; words with a higher norm have, on
-      average, a higher inner product with other vectors. As the norm of a word
-      embedding directly relates to the frequency of this word in the training
-      corpus, the regular dot-product attention naturally attends to more
-      frequent words. In a network with trainable parameters, such as ABAE (He+
-      2017), this effect can be mitigated by finetuning the embeddings or other
-      weighting mechanisms. In our system, no such training is available, which
-      can explain the suitability of CAt
+    * our understanding is that
+      the dot-product attention places
+      a high emphasis on words with a higher vector norm
+    * these words have, on average, a higher inner product with other vectors
+    * the norm of a word embedding directly relates to the frequency
+    * => the regular dot-product attention naturally attends to more freq words
+    * In a network with trainable parameters, such as ABAE (He+ 2017),
+      this effect can be mitigated
+      by finetuning the embeddings or other weighting mechanisms
+    * In our system, no such training is available,
+      which can explain the suitability of CAt

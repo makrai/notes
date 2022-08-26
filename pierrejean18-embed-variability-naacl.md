@@ -1,6 +1,8 @@
-Bénédicte Pierrejean and Ludovic Tanguy
 Predicting Word Embeddings Variability
+Bénédicte Pierrejean and Ludovic Tanguy
 naacl 2018
+
+# Abstract
 
 * when retraining a model with the exact same hyperparameters
 * features that are intrinsic to a word, corpus or embedding model
@@ -12,13 +14,13 @@ naacl 2018
   Neha Nayak, Gabor Angeli, and Christopher D. Manning. 2016
   Evaluating word embeddings using a representative suite of practical tasks
   2016 1st Workshop on Evaluating Vector Space Representations for NLP, Berlin,
-* predict[ing] the stability of a word ... can also help ... refine a model
+* predict[ing] the stability of a word can also help refine a model
   (e.g. by removing selected semantic classes)
 * We
   * features that are intrinsic to a word, a corpus or a model:
-    POS, degree of polysemy, frequency ..., distribution of the contexts ...,
+    POS, degree of polysemy, frequency, distribution of the contexts,
     position and environment of a vector in the semantic space
-  * multilinear regression model ... predict up to 48% of the variance
+  * multilinear regression model predict up to 48% of the variance
     * with pairwise interactions
   * conducted on 3 different corpora with similar results
 
@@ -26,10 +28,10 @@ naacl 2018
 
 * variation = 1 join ratio
 * N = 25
-* This measure may also be sensible to ... hubness
-  * they were limited to ... surnames for the BNC ... and did not interfere
+* This measure may also be sensible to hubness
+  * they were limited to surnames for the BNC and did not interfere
     with our measure of stability for all other areas of the lexicon
-* 3 different corpora: ACL ..., BNC ... and PLOS (biology scientific articles)
+* 3 different corpora: ACL, BNC and PLOS (biology scientific articles)
   * same size (about 100 million words) but they are from different types (the
   * BNC is a generic corpus while PLOS and ACL are specialized corpora) and
   * lemmatized and POS-tagged using the Talismane toolkit (Urieli, 2013)
@@ -45,7 +47,7 @@ naacl 2018
     * family members in the BNC (wife, grandmother, sister...),
     * linguistic preprocessing in ACL (parsing, lemmatizing, tokenizing...) and
     * antibiotics in PLOS (puromycin, blasticidin, cefotaxime...)
-    * For ACL and PLOS ... the transdisciplinary scientific [words]
+    * For ACL and PLOS the transdisciplinary scientific [words]
       * (conjunctive adverbs such as nevertheless, moreover, furthermore and
       scientific processes such as hypothethize, reason, describe)
 * high variation we found a large number of
@@ -61,14 +63,14 @@ naacl 2018
 * features that are intrinsic to the word, corpus or model:
   * pos: part of speech (nouns, adjectives, adverbs, verbs, proper nouns);
   * polysemy: degree
-    * number of definitions [in] ENGLAWI ... (Sajous and Hathout, 2015)
-  * frequency ... (Sahlgren and Lenci, 2016)
+    * number of definitions [in] ENGLAWI (Sajous and Hathout, 2015)
+  * frequency (Sahlgren and Lenci, 2016)
   * entropy: dispersion of the contexts of a word;
     * normalized entropy of a word’s collocates computed on a
       symmetrical rectangular window of 5 for open classes words only
   * norm: L2-norm of the vector of the word in the semantic space;
-    * since Trost and Klakow (2017) found that the L2-norm of common words do
-      not follow the general distribution of the model
+    * since Trost and Klakow (2017) found that the L2-norm of common words
+      do not follow the general distribution of the model
   * NN-sim: cosine similarity of the word nearest neighbor
 
 ## Models and Results
@@ -88,7 +90,7 @@ naacl 2018
     David Mimno and Laure Thompson
     emnlp 2017
     The strange geometry of skip-gram with negative sampling
-* The effect of the frequency ... is not [monotonic]. Words having very
+* The effect of the frequency is not [monotonic]. Words having very
   * low or very high frequency are more affected by variation
   * frequent words displaying instability words in each corpus
     (e.g.  gene and protein in PLOS, language in ACL and make in BNC etc.)

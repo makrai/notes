@@ -254,16 +254,6 @@ scare (try 'He circled the field', 'He recited the Odyssey', 'He Airted with Olg
 In two matters, however, it seems ro the von Wright suggests important and
 valuable changes in the pattern of analysis we have been considering, or at least in
 our interpretation of it. Pirsr, he says that an action is not an event, bur rather the
-6
-
-
-Georg Henrik von Wrighr, Norm and Action.
-
-44
-
-
-The Essential Davidson
-
 bringing about of an event. I do not mink chis can be correct. If I fall down, chis
 is an event whether I do it intentionally or not. If you thought my falling was an
 accident and later discovered I did it On purpose, you would not be tempted to
@@ -319,7 +309,7 @@ the
 von Wright. op. cir., 23.
 
 
-The Logical Form ofAction Sentences
+
 
 45
 
@@ -379,12 +369,12 @@ Donald Davidson, 'Theories of Meaning and Learnable Languages", 390--1.
 10 Hans Reichenbach, Ekmems ofSymbolu Logic, § 48.
 'I
 
-The Essential Davidson
+
 
 46
 
 
-The Logical Form ofAction Sentences
+
 
 view spoils much of the merit in Reichenbach's proposal, and chat we must
 abandon the idea that (4) has an unproblematic logical form distinct from that of
@@ -508,10 +498,10 @@ sentence to be given in [his form:
 
 .».
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 
 If we try foe an English sentence that directly reflects this form, we run into
@@ -619,10 +609,10 @@ identical with an action of Rying ro the Evening Star; bur equally, an eclipse o
 
 49
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 two ways we can imply that a person acted as an agent: we may use a verb that
 implies it directly, or we may use a verb that is non-committal, and add that the
@@ -743,10 +733,10 @@ ochers containing no demonstrative feature. What recommends this srraregy co
 logicians {the elimination of sentences with variable truth-values) also serves co
 show that it is not a strategy for analysing the senreuces of English. Lemmon
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 makes no attempt to eliminate the demonstrative element from his canonical
 noracion (subsriruring <before now' for the past tense is a way of articulating the
@@ -854,10 +844,10 @@ But I remain unconvinced of the advantages in splirring transitive verbs up in t
 way. The gain is the entailment of 'My spaceship was flown' by 'I flew my
 rz For more on {he individuation of events, see Essay 4.
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 spaceship'; the loss becomes apparent when we realize that 'My spaceship
 was Hown' has been interpreted so as not to email 'Someone flew my
@@ -972,10 +962,10 @@ causes, but I think we understand this only when we can reduce it to the case of
 
 'I
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 an event being a cause; and here I do disagree with Chisholm. He asks how we
 are to render 'He made it happen that p' in terms merely of relations among
@@ -1234,7 +1224,7 @@ Psycho-Physical ldenriry Theory'. Kim does not take the extra step from real to 
 60
 
 
-The Logical Form ofAction Sentences
+
 
 
 The Essential Davidson
@@ -1365,7 +1355,7 @@ U
 Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
 
 accommodate all evenrualities. It's unlikely we shall succeed, for a phrase like 'by'
 can introduce an indefinitely large number of modifications, as in 'He hung the
@@ -1478,10 +1468,10 @@ ranging Over rimes, and to interpret 'before' as a two-place predicate. The resu
 roughly, is: 'There exist two times, t and u, such that Earwicker slept at t, Shem
 kicked Shaun at u, and I was before' u.' This analysis relates the two uses ofbefore',
 
-The Essential Davidson
 
 
-The Logical Form ofAction Sentences
+
+
 
 and it explains why 'Earwicker slept before Shern kicked Shaun' entails 'Shern
 kicked Shaun'. It does this, however, only by attributing to 'Shem kicked Sbaun'
@@ -1601,7 +1591,7 @@ exrensionalicy, see Dagfinn Fellesdal, 'Quine on Modality'.
 The EssentialDavidson
 
 
-The Logical Form ofAction Sentences
+
 
 particularly if. as I have argued. such an approach forces US to adrnir predicates
 with indefinitely large numbers of predicate places. I also think he slights the
@@ -1817,10 +1807,9 @@ the
 
 69
 
-The Essential Davidson
 
 
-Tbe Logical Form ofAction Sentences
+
 
 such things as events. As long as the quantifiers and variables remain in the same
 places, however, the analysis oflogical form will stick.
@@ -1878,12 +1867,3 @@ another. If one accepts. as Hedman apparently does, an ontology of evenrs, one
 will also presumably want to infer 'The striking of the rude old than by Oedipus
 occurred at the crossroads' from 'The striking of Oedipus's father by Oedipus
 occurred at the crossroads' and vice versa. But how can these entailments be
-
-IS
-
-
-G. E. M. Anscombe, Intention.
-
-71
-
-
