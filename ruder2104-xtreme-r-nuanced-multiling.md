@@ -149,7 +149,7 @@ data, translations, evaluation resources, and interactive leaderboard
 
 # 3 XTREME-R 4
 
-* XTREME-R focuses on the tasks that have proven to be hardest for current
+* XTREME-R focuses on the tasks that have proven to be hardest for current syss
   * drops XTREME ’s PAWS-X and BUCC tasks since
     * less room for further improvement left
     * cover only a small number of less diverse languages
