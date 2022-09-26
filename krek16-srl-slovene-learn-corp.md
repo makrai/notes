@@ -16,41 +16,43 @@ project Semantic Role Labeling in Slovene and Croatian.
 
 # 1 Introduction
 
-Labeling of semantic roles (Eng. Semantic Role Labeling - SRL) is a procedure
-that is the linguistic point of view, dedicated (automatic) identifying
-participatory roles of linguistic technology while developing systems for
-information extraction, systems for responding to questions (Eng. Question
-Answering System) , improving the operation of syntactic parsers and machine
-translators, etc. (Shen and Lapata, 2007; Christensen et al., 2011). Since the
-lack of consensus on the various categories and the criteria for determining
-which today are already available for many languages, causing difficulties in
-čezjezikovnem model semantic labeling should in our view, an effective system
-of criteria and indications for marking participatory roles or, more precisely
-predikatno- argumentnih relationships (a) to provide a set of categories, which
-is the most optimal, ie. cover all (in our case Slovene) key participatory
-roles and at the same time (b) does not contain categories that are excessively
-detailed or mutual overlays, (c) be based primarily on semantic rather than on
-morphological, lexical or syntactic properties, (d) allow for formal
-description or usefulness of language technology applications, and (e) to be as
-compatible with the categories and criteria applicable to other languages
-​​(cf.. Petukhov and Bunt, 2008: 39). To this end, within the
-framework of the project of making the training corpus for semantic tagging
-applications for Slovenian created a system of criteria for the identification
-and marking of participatory roles in Slovene. Our goal was to manually tag
-syntax half of the sealed part of the training corpus ssj500k, on the basis of
-whether it would be in the future be automatically recorded even larger corps.
-In this paper we present the starting point for determining the semantic
-categories and tags for the English, the tagging process and tools for semantic
-markup training corpus for Slovene.
+* Semantic Role Labeling (SRL) is a procedure that is the linguistic point of
+  * (automatic) identifying participatory roles of linguistic technology while
+  * for information extraction, QA, syntactic parsers and machine translators,
+    (Shen and Lapata, 2007; Christensen+ 2011).  Since the
+  * hE lack of consensus on the various categories and the criteria for
+    determining which today are already available for many languages, causing
+    difficulties in cross-linguistic model semantic labeling should in our view,
+    an effective system of criteria and indications for marking participatory
+    roles or, more precisely predikatno- argumentnih relationships 
+    * to provide a set of categories, which is the most optimal, ie cover all
+      (in our case Slovene) key participatory roles
+    * does not contain categories that are excessively detailed or mutual
+      overlays, 
+    * be based primarily on semantic rather than on morphological, lexical or
+      syntactic properties, 
+    * allow for formal description or usefulness of language technology
+      applications, and 
+    * to be as compatible with the categories and criteria applicable to other
+      languages (cf Petukhov and Bunt, 2008: 39)
+* To this end, within the framework of the project of making the training
+  corpus for semantic tagging applications for Slovenian created a system of
+  criteria for the identification and marking of participatory roles in
+  Slovene. Our goal was to manually tag syntax half of the sealed part of the
+  training corpus ssj500k, on the basis of whether it would be in the future be
+  automatically recorded even larger corps.  In this paper we present the
+  starting point for determining the semantic categories and tags for the
+  English, the tagging process and tools for semantic markup training corpus
+  for Slovene.
 
 # 2 Theoretical and methodological background
 
 In selecting the method of semantic tagging and semantic categories for
 determining Slovene We first analyzed the individual approaches that have been
-developed and used for other languages, for example. PropBank (Palmer et al.,
-2005), Verbnet (Kipper et al., 2006) and FrameNet (Backer et al., 1998) for
-English, Ancor (Taul et al., 2011) for the Spanish, Sonar (Schuurman et al. ,
-2010) for the Dutch. In addition, a set of codes for Croatian (Filko et al.,
+developed and used for other languages, for example. PropBank (Palmer+
+2005), Verbnet (Kipper+ 2006) and FrameNet (Backer+ 1998) for
+English, Ancor (Taul+ 2011) for the Spanish, Sonar (Schuurman+ ,
+2010) for the Dutch. In addition, a set of codes for Croatian (Filko+
 2012) and the Czech valence lexicon Vallex. We focused on comparing formal
 descriptions (ie. Sets of semantic tags) for each participatory role and the
 criteria for their determination. From the perspective of optimizing the set of
@@ -62,7 +64,7 @@ verbal valency. In addition, we have criteria for semantic tagging like to set
 so as to enable reliable and most consistent Marking the training corpus. In
 the range of participatory roles and their formal descriptions are derived from
 the functional generative approach of the Prague Dependency nurseries (Eng.
-Prague Dependency Treebank; (PDT); Mikulov et al., 2006) within the scope of
+Prague Dependency Treebank; (PDT); Mikulov+ 2006) within the scope of
 prototypical verbal sample (proposition) the relationship between the
 participants, who have You can udeležensko role delovalnika or circumstances.
 Participants and their various participatory role therefore provides
@@ -85,13 +87,13 @@ ways, with uses such language morphosyntactic inventory, including the Ellipse
 and contextual references, as well as zunajezikovne and pragmatic circumstances
 of utterance. In determining the relationship between the semantic mandatory
 and optional semantic participants are therefore at baseline derived from the
-system PropBank (Palmer et al., 2005) (Figure 1). This model provides
+system PropBank (Palmer+ 2005) (Figure 1). This model provides
 meaningful liability only at delovalnikov (set), which are always semantically
 obligatory (arg [0-4]), while the circumstances (adverbial supplements; argM)
 specified as semantically optional, while, as mentioned above, the semantic
 obligation It does not imply a structural commitments
 
-On the other hand, systems such as PDT and FrameNet (Backer et al., 1998),
+On the other hand, systems such as PDT and FrameNet (Backer+ 1998),
 provide for the determination of the level obligatornosti circumstances (Figure
 2). In this case, both semantically obligatory delovalniki (ACT, PAT, ADDR,
 ORIG, EFF) and semantically obligatory circumstances (time, place, cause,
@@ -154,13 +156,13 @@ Relationship Type: Phrase _go on the nerves_, _wrapped in silence_ Phrase etc.
   _It should be_ MODAL _could be_ modal.  Federations verb meaning weakness and
   a noun or noun phrase (in PDT code CPHR, nominal part of the complex
   predicate) at this stage does not distinguish between the roles
-  polnopomenskih same verbs. This means that it does not establish the
+  contently same verbs. This means that it does not establish the
   difference between _give name_ (PAT), _not have the purpose_ (PAT) - verbs
   with weakened meaning - and _give the ball_ (PAT), _have a friend_ (PAT) -
   where there is a relationship of verb and object set.  The distinction
   between the semantic impaired verbs as components of verbal communication,
-  see. yet have at its disposal, bear in mind, and verbs as licensor
-  participatory role have money, will come to the fore in identifying
+  _have at its disposal, bear in mind_, and verbs as licensor
+  participatory role _have money_, will come to the fore in identifying
   multi-word units, which provided for an independent level of labeling the
   training corpus. This labeling is currently taking place within the framework
   of the COST action PARSEME as part of the overall mission to identify
@@ -246,7 +248,7 @@ example. "Trail" (PATH), which also has a system FrameNet.
 # Tools and format of labeling the training corpus for Slovene
 
 Semantic tagging corpus we used the tool SentenceMarkup, which was primarily
-developed for the syntactic annotation of Slovene (Dobrovoljc et al., 2012).
+developed for the syntactic annotation of Slovene (Dobrovoljc+ 2012).
 The tool was adapted for the purposes of semantic labeling so that we have
 added an independent and at the same time interoperable semantic level (Figure
 3).
@@ -292,7 +294,7 @@ exemplary teaching corpus for Slovene and Croatian and an experimental tool
 that uses machine learning for automated labeling of semantic roles.
 
 Part of the corpus ssj500k November 2015 was included in the collection syntax
-nurseries Universal dependencies (UD) (Nivre et al., 2016). This allows the
+nurseries Universal dependencies (UD) (Nivre+ 2016). This allows the
 system to marking semantic roles developed in the existing system JOS, transfer
 and check in system, UD, which is one of the tasks for the future. Transfer
 makes sense from the standpoint of compatibility between the Slovenian and
