@@ -17,7 +17,7 @@ https://github.com/viking-sudo-rm/norm-growth
 * we prove: As the parameters grow in magnitude,
   the network approximates a discretized network with saturated activation func
   * Such "saturated" networks are known to have a reduced capacity
-    compared to the full network family that
+    compared to the full network family
     * can be described in terms of formal languages and automata
   * suggest:
     saturation is a new characterization of an inductive bias implicit in GD
@@ -169,20 +169,20 @@ https://github.com/viking-sudo-rm/norm-growth
 
 # 3 Norm growth in transformers
 
-* Fig. 1 shows that the T5 norm follows a t trend, where t is time in training
+* Fig. 1: the T5 norm follows a √t trend, where t is time in training
   * top right of Fig. 1 breaks down the growth trend by layer. Generally, the
-    norm grows more quickly in later layers than in earlier √ ones, although
-    always at a rate proportional to t. 5 Next, in the
+    norm grows more quickly in later layers than in earlier ones, although
+    always at a rate proportional to √t
   * bottom row of Fig. 1, we plot the cosine similarity between each parameter
     checkpoint θ t+1 and its prede θ t
     * rapidly approaches 1, suggesting the “direction” of the parameters (θ t
       /kθ t k) converges. The trend in
       * similar across layers
 * We also train smaller transformer language models with 38M parameters on
-  Wikitext-2 (Merity+ 2016) and the Penn Treebank (PTB; Marcus+ 1993). We
-  * two variants of the transformer: pre-norm and post-norm, which vary in the
-    relative order of layer normalization and residual connections (Xiong+
-    2020). Every model exhibits norm growth over training
+  Wikitext-2 (Merity+ 2016) and the Penn Treebank (PTB; Marcus+ 1993)
+  * two variants of the transformer: pre-norm and post-norm, which
+    vary in the relative order of layer normalization and residual connections
+    (Xiong+ 2020). Every model exhibits norm growth over training
 * remainder of this paper, we will discuss the
   * implications of this phenomenon for the linguistic biases of transformers,
   * causes of the trend rooted in the optimization dynamics

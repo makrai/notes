@@ -140,8 +140,8 @@ Draft of December 29, 2021
       to contextualize each token using information from the entire input
   * Beyond this simple change, all of the other elements of the transformer
     architecture remain the same for bidirectional encoder models
-* subword tokenization and positional embeddings then passed through a series of
-  standard transformer blocks consisting of
+* subword tokenization and positional embeddings then passed through a series
+  of standard transformer blocks consisting of
   self-attention and feedforward layers augmented with residual connections and
   layer normalization, as shown in Fig. 11.4
 * the original bidirectional transformer encoder model, BERT (Devlin+ 2019),

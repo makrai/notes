@@ -7,8 +7,8 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 * anisotropy phenomenon in popular masked language models, BERT and RoBERTa
 * We propose a possible explanation for this unreasonable phenomenon
-  * contextualized word vectors derived from pretrained MLM-based encoders share
-    a common, perhaps undesirable pattern across layers
+  * contextualized word vectors derived from pretrained MLM-based encoders
+    share a common, perhaps undesirable pattern across layers
   * persistent outlier neurons within BERT and RoBERTa's hidden state vectors
     * consistently bear the smallest or largest values in said vectors
   * LayerNorm is one of the reasons for the position artefacts propagating
@@ -46,7 +46,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
   Raganato and Tiedemann, 2018; Vig, 2019; Voita+ 2019)
 * analyzes models’ internal representations using probes
   * often linear classifiers that
-    take representations as input and are trained with supervised tasks in mind,
+    take reprs as input and are trained with supervised tasks in mind,
     eg POS-tagging, dependency parsing
     (Hewitt & Manning, 2019; Lin+ 2019; NF Liu+ 2019; Tenney+ 2019; Zhao+ 2020)
 
@@ -73,7 +73,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 ### Neuron-level Analysis
 
 * Dalvi+ (2018) introduce a neuron-level analysis method,
-* Durrani+ (2020) use this method to contxtled vcs
+* Durrani+ (2020) use this method to contextualized vectors
   * a linear probe to predict linguistic information stored in a vector
   * weights of the classifier as a proxy to select the most relevant neurons
   * finds small subsets of neurons to predict linguistic tasks and
@@ -147,7 +147,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
   * this assumes that, the larger the absolute value of the weight, the more
     important the corresponding neuron
   * hE, this method disregards the magnitudes of the values of neurons, as a
-    large weights do not necessarily imply that the neuron has high contribution
+    large weights do not necessarily imply that the neuron has high contrib
     to the final classification result
   * we define the contribution of the i th neuron as c (i) = abs (w i ∗ v i )
     * w i represents the i th weight and v i represents the i th neuron
@@ -182,8 +182,8 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 * we clip BERT and RoBERTa’s outliers by setting their value to zero
 * the vector spaces become significantly more isotropic
-  * The average cosine similarity values of RoBERTa decrease more than 0.5 after
-    the first non-input layer
+  * The average cosine similarity values of RoBERTa decrease more than 0.5
+    after the first non-input layer
 
 ### 3.2.3 Whitening Transformation
 
@@ -226,7 +226,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 * We load each dataset using the SentEval toolkit (Conneau and Kiela, 2018)
 * Reimers and Gurevych (2019) comment that the most common approach for comput-
   ing sentence embeddings from contextualized models is simply averaging all
-  subword vectors that comprise a given sentence. We follow this method in
+  subword vectors that comprise a given sentence. We follow this method
 * we then calculate the Spearman rank correlation
 * We compare the vectors before and after clipping the outliers/whitening
 * we also consider averaged GloVe embeddings as our baseline
@@ -236,10 +236,10 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 * whitening > GloVe > clipping
   * averaged GloVe embeddings still manage outperform both BERT-clip and
     RoBERTa-clip on all STS 2012-15 tasks
-  * BERT-whiten and RoBERTa-whiten outperform the static embeddings on all tasks
-    (except STS 2012)
+  * BERT-whiten and RoBERTa-whiten outperform the static embeddings
+    on all tasks (except STS 2012)
   * BERT-whiten outperform BERT-clip more than 10 points on STS 2013-14 tasks
-    These results indicate that the whitening method is also more effective on
+  * These results indicate that the whitening method is also more effective on
     the most tasks
 
 # 5 Discussion 25
@@ -253,39 +253,39 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
   * static word embeddings (Mimno and Thompson, 2017) as well as
   * contextualized ones (Li+ 2020a; Su+ 2021)
 * whitening operation outperforms “clipping” on most tasks
-  * two learnable parameters of whitening the mean vector μ and the trafo mx W
+  * two learnable parameters of whitening: the mean vector μ and the trafo mx W
   * “clipping” assumes that the mean values of all non-outlier neurons are zero
     and the transformation matrix is the identity matrix I
 * the outlier dimension observed
   * for BERT is tied directly to the [CLS] token, always at the first position
   * RoBERTa (which also employs [CLS]) retains outliers originating from
     different positions’ embeddings
-  * implies that the issue of artefact propagation is not simply a relic of task
-    design. The position information which contributes to a task’s loss function
-    may be retained in the embeddings vectors. For BERT, the outlier dimension
-    may be used to differentiate the 1st position from all others
+  * ie the issue of artefact propagation is not simply a relic of task design
+    * The position information which contributes to a task’s loss function
+      may be retained in the embeddings vectors. For BERT, the outlier
+      dimension may be used to differentiate the 1st position from all others
   * position information is reconstructed by the gain parameter of LayerNorm
     and then propagates through the network
-* new MLM models: T5 (Raffel+ 2020) and DeBERTa (P. He+ 2021)) choose to
+* new MLM models: T5 (Raffel+ 2020) and DeBERTa (P He+ 2021)) choose to
   directly use the positional information to adjust the attention matrix
   * DeBERTa uses the disentangled attention mechanism, where
-    * each word is represented using two vectors that encode its content and
-      position, resp, and
-    * the attention weights among words are computed using disentangled matrices
-      on their contents and relative positions, respectively.  All of
+    * each word is represented using two vectors
+      that encode its content and position, resp, and
+    * the attention weights among words are computed using disentangled
+      matrices on their contents and relative positions, respectively
   * better performance than BERT and RoBERTa on the well-known NLU benchmarks
     GLUE (Wang+ 2018) and SuperGLUE (Wang+ 2019)
   * hE, these models still require extra positional encodings (PE)
-    * can we modify the structure of Transformer Encoder to make it sensitive to
-      word order like LSTM (Hochreiter and Schmidhuber, 1997)?
-      * then we would be able to avoid the positional artefacts problem
+    * can we modify the structure of Transformer Encoder to make it sensitive
+      to word order like LSTM (Hochreiter and Schmidhuber, 1997)?
+    * then we would be able to avoid the positional artefacts problem
 * Tsai+ (2019) proved that the self-attention of Transformer Decoder is not
-  order-invariant. With the help of auto-regressive attention masks, Transformer
-  is no longer a bag-of-word model
-* Irie+ (2019) show that Transformer Decoder w/o PE has lower perplexity on the
-  speech dataset
-* future: use such masks to modify Transformer Encoder to help it model word
-  order implicitly
+  order-invariant. With the help of auto-regressive attention masks,
+  Transformer is no longer a bag-of-word model
+* Irie+ (2019) show that
+  Transformer Decoder w/o PE has lower perplexity on the speech dataset
+* future: use such masks to modify Transformer Encoder
+  to help it model word order implicitly
 * LayerNorm is one of the reasons for the position artefacts propagating
   through the model’s representations
 * Kovaleva+ (2021) find outlier neurons
@@ -317,9 +317,9 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
      (Kovaleva+ 2021)
     * not exist in the early training stage
     * Why does the model need to “grow” such neurons during training?
-  4. the first positional embeddings of BERT has two outlier neurons.
-    * hE, there is only one outlier neuron in the contextualized token embeds.
-      Why does the other outlier disappear?
+  4. the first positional embeddings of BERT has two outlier neurons
+    * hE, there is only one outlier neuron in the contextualized token embeds
+    * Why does the other outlier disappear?
   5. how the outlier neurons affect the attention distribution
     * Since the self-attention mechanism also relies on the dot-product
 

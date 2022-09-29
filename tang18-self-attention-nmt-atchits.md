@@ -7,10 +7,10 @@ Gongbo Tang, Mathias Müller, Annette Rios and Rico Sennrich
 * non-recurrent architectures (convolutional, self-attentional)
   * outperformed RNNs in neural machine translation
   * can connect distant words via shorter network paths than RNNs
-  * speculated that this improves their ability to model long-range dependencies
+  * speculated that this improves their ability to model long-range deps
 * We
-  * hypothesize that their strong performance is due to their ability to extract
-    semantic features from the source text
+  * hypothesize that their strong performance is due to their
+    ability to extract semantic features from the source text
   * evaluate RNNs, CNNs and self-attention networks on two tasks:
     * subject-verb agreement (long-range dependencies is required) and
       * self-attentional networks and CNNs do not outperform RNNs
