@@ -2,7 +2,7 @@ It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learn
 Timo Schick, Hinrich Schütze
 NAACL 2021
 
-Our implementation is publicly available at https:// github.com/timoschick/pet.
+code, models and datasets https://github.com/timoschick/pet.
 
 # Abstract
 
@@ -56,19 +56,45 @@ Our implementation is publicly available at https:// github.com/timoschick/pet.
 # 2 Related Work
 
 * Enabling LMs to perform zero-shot learning by providing task descriptions
-  * proposed by Radford+ (2019) and has been applied to text classifi-
-  cation (Puri and Catanzaro, 2019), commonsense knowledge mining (Davison+
-  2019) and argumentative relation classification (Opitz, 2019).  It is also
-  commonly used for probing the knowledge contained within LMs (Trinh and Le,
-  2018; Petroni+ 2019; Talmor+ 2020; Schick and Schütze, 2020; Ettinger, 2020,
-  i.a.).  
-* As finding ways to reformulate tasks as cloze questions that are understood
-  well by LMs is difficult (Jiang+ 2020), Schick and Schütze (2021) propose P
-  ET , a method that uses knowledge distillation (Hinton+ 2015) and
-  self-training (e.g., Scudder, 1965; Yarowsky, 1995; Brin, 1999; McClosky+
-  2006) to easily combine several reformulations. Our modified version of P
-  ET uses masked language models (Devlin+ 2019) to assign probabilities to
-  sequences of text; this is similar to using them in a generative fashion
-  (Wang and Cho, 2019) and has previously been investigated by Salazar+
-  (2020) and Ghazvininejad+ (2019). In contrast to P ET , which uses
-  gradient-based optimization, Radford+ (2019) 
+  * proposed by Radford+ (2019) and has been
+  * applied to
+    * text classification (Puri and Catanzaro, 2019)
+    * commonsense knowledge mining (Davison+ 2019) and 
+    * argumentative relation classification (Opitz, 2019).  It is also
+  * commonly used for probing the knowledge contained within LMs
+    (Trinh and Le, 2018; Petroni+ 2019; Talmor+ 2020; Schick and Schütze, 2020;
+    Ettinger, 2020)
+* finding ways to reformulate tasks as cloze questions that are understood
+  well by LMs is difficult (Jiang+ 2020), 
+  * Schick and Schütze (2021) propose P ET , a method that
+    * uses knowledge distillation (Hinton+ 2015) and
+      self-training (Scudder, 1965; Yarowsky, 1995; Brin, 1999; McClosky+ 2006)
+    * easily combine several reformulations
+  * Our modified version of P ET uses masked language models (Devlin+ 2019) to
+    assign probabilities to sequences of text; this is similar to using them in
+    a generative fashion (Wang and Cho, 2019) and has previously been
+    investigated by Salazar+ (2020) and Ghazvininejad+ (2019). In contrast to P
+    ET , which uses gradient-based optimization, Radford+ (2019) 
+* Brown+ (2020) investigate priming, where examples are given as context but
+  no parameter updates are performed.  Finally, our focus on
+* reducing the amount of compute required for few-shot learning is closely
+  * Green AI (Schwartz+ 2020a) aims to improve model efficiency, including
+  * knowledge distillation (Hinton+ 2015; Sanh+ 2019; Jiao+ 2020; Mao+ 2020;
+    Anderson and GómezRodríguez, 2020),
+  * pruning (Han+ 2015, 2016; Sanh+ 2020) 
+  * quantization (Gong+ 2014; Zafrir+ 2019; Stock+ 2021) as well as
+  * early exit strategies for inference (Liu+ 2020; Schwartz+ 2020b; Xin+ 2020)
+
+# 6 Conclusion
+
+* factors responsible for the strong performance of P ET combined with ALBERT:
+  * possibility to concurrently use multiple patterns for transforming examples
+    into cloze questions, the ability to
+  * compensate for patterns that are difficult to understand, the
+  * usage of labeled data to perform parameter updates, and
+  * the underlying LM itself.
+* few-shot text classification performance similar to GPT-3 on SuperGLUE with
+  * three orders of magnitude fewer parameters.
+* For future work, it would be interesting to see whether P ET also works for
+  * generative tasks when combined with generative LMs
+  * in multi-task settings: whether further improvements are possible
