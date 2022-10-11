@@ -1,4 +1,4 @@
-G Bouma
+Gerlof Bouma
 Normalized (pointwise) mutual information in collocation extraction
 GSCL, 2009
 
