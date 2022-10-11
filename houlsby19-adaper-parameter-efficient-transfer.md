@@ -1,5 +1,5 @@
 Parameter-Efficient Transfer Learning for NLP
-Houlsby, Giurgiu, Jastrzebski, Morrone, Laroussilhe, Gesmundo, Attariyan, Gelly
+Giurgiu Houlsby, Morrone Jastrzebski, Gesmundo Laroussilhe, Gelly Attariyan
 36th International Conference on Machine Learning, PMLR 2019
 
 # Abstract
