@@ -1,7 +1,7 @@
-Text Generation from Discourse Representation Structures 
+Text Generation from Discourse Representation Structures
 Jiangming Liu, Shay B. Cohen, Mirella Lapata
 NAACL 2021
- 
+
 code and datasets:
 github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/DRS-to-text
 
@@ -18,7 +18,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
     accurately represent DRS structures and is more generally
     suited to trees with wide branches
 * competitive performance (59.48 BLEU) on the GMB benchmark against several
-  strong baselines.
+  strong baselines
 
 # 1 Intro
 
@@ -31,7 +31,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
     Song+ 2018; Beck+ 2018; Damonte and Cohen 2019; Ribeiro+ 2019; Zhu+ 2019;
     Cai and Lam 2020; Wang+ 2020)
   * Discourse Representation Theory (DRT; Basile and Bos 2011; Basile 2015)
-  * and Minimal Recursion Semantics (MRS; Horvat+ 2015; Hajdik+ 2019).
+  * Minimal Recursion Semantics (MRS; Horvat+ 2015; Hajdik+ 2019)
 
 * we propose neural models to generate high-quality text from semantic
   representations based on Discourse Representation Structures (DRSs)
@@ -41,7 +41,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
   * anaphora, presuppositions (Van der Sandt, 1992; Venhuizen+ 2018), and
     temporal expressions within and across sentences
   * scoped meaning representations, they capture the semantics of negation,
-    modals, and quantification.
+    modals, and quantification
 
 * Figure 1 displays in box format the meaning representation for a discourse
   consisting of two sentences. The outermost box is a segmented DRS expressing
@@ -52,7 +52,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
   representing information about discourse referents. Variables and conditions
   have pointers (denoted by b in the figure) pointing to the boxes where they
   should be interpreted. 1 Predicates are disambiguated to their Wordnet
-  (Fellbaum, 1998) senses (eg male.n.02 and play.v.03).
+  (Fellbaum, 1998) senses (eg male.n.02 and play.v.03)
 
 * anal vs gen
   * considerable activity recently in developing models which analyze text in
@@ -60,7 +60,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
   * hE attempts to generate text from DRSs have been few and far between
     (however see Basile 2015 and Narayan and Gardent 2014)
   * two properties of DRS-based semantic representations render generation chal
-    * DRS conditions are unordered representing a set (rather than a list). 
+    * DRS conditions are unordered representing a set (rather than a list)
       * An exception are conditions in segmented DRSs whose order can be
         retrieved deterministically based on the arguments of rhetorical
         relations. For example, given the relation BECAUSE(b 1 , b 3 ), we can
@@ -87,7 +87,7 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
   => DRSs are often post-processed in a format for modern neural network
   * eg DRS variables and conditions are converted to clauses (van Noord+ 2018)
     or DRSs are modified to trees where each box is a subtree and conditions
-    within the box correspond to children of the subtree (Liu+ 2019a, 2018).
+    within the box correspond to children of the subtree (Liu+ 2019a, 2018)
 
 * we propose novel solutions to condition ordering and variable naming. We
   * even though DRS conditions appear unordered, they have a latent order due
@@ -96,29 +96,29 @@ github.com/LeonCrashCode/Discourse-Representation-Tree-Structure/tree/main/gmb/D
     collection to date of English texts annotated with DRSs
     * annotations were generated with the aid of a CCG parser (Clark and
       Curran, 2007); atomic DRS conditions were associated with CCG supertags
-      and then semantically combined following the syntactic CCG derivations.
+      and then semantically combined following the syntactic CCG derivations
   * Even annotators creating DRSs manually would be prone to follow a canonical
     order (eg listing named entities first, then verbal predicates and their
     thematic roles, and finally temporal conditions)
   * We propose a graph-based model which learns to recover the latent order of
     * handle variable names with a method which rewrites arbitrary indices to
-      relative ones which are in turn determined by the order of conditions.
+      relative ones which are in turn determined by the order of conditions
 
-* Following previous work, we convert DRSs to a more amenable format.
+* Following previous work, we convert DRSs to a more amenable format
   * Discourse Representation Tree Structures (DRTSs; Liu+ 2019b) as the
      semantic representation input to our document generation task, and
      generate a sequence of words autoregressively
   * encoder-decoder framework with a treeLSTM (Tai+ 2015) encoder and a
-    standard LSTM (Hochreiter and Schmidhuber, 1997) decoder.
+    standard LSTM (Hochreiter and Schmidhuber, 1997) decoder
   * hE DRS trees are wide and the number of children for a given node can = 180
     => memory-consuming and sparse to assign a forget gate for each child as in
     the case of conventional (N-ary) treeLSTM (Tai+ 2015)
   * We propose a variant which we call Sibling treeLSTM that
     replaces N forget gates with a parent gate and a sibling gate. As a result,
     it reduces memory usage from O(N ) to O(2), and is more suitable for
-* Our contributions can be summarized as follows: 
-  * we formalize the task of neural DRS-to-text generation; 
+* Our contributions can be summarized as follows:
+  * we formalize the task of neural DRS-to-text generation;
   * solutions for the problems of condition ordering and variable naming, which
-    render generation from DRS-based meaning representations non-trivial; and 
+    render generation from DRS-based meaning representations non-trivial; and
   * propose a novel sibling treeLSTM model that can be also generally used to
     model wide tree structures
