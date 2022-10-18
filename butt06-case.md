@@ -1,6 +1,8 @@
-MIRIAM BUTT
 Theories of Case
+Miriam Butt
 2006 Cambridge University Press
+
+todo: localist
 
 * issues must be dealt with
   * what “case” really means
@@ -391,7 +393,7 @@ Theories of Case
   * hE, the notion of a deep structure which licensed certain thematic roles
     became an integral part of linguistic theory
   * The concept of thematic roles emerged as part of the discussion
-* determination of case relations or thematic roles was not always easy. 
+* determination of case relations or thematic roles was not always easy
   * eg _dollars buy, smell sickened, accident killed_ all the same kind of I?
   * Should instrumentals in general be allowed to surface as subjects when a,,?
   * Most linguists agree that thematic roles are a problematic concept, but
@@ -430,7 +432,7 @@ Theories of Case
 * A representative collection of work within RG: Perlmutter (1980),
   Perlmutter (1983), Perlmutter & Rosen (1984) & Perlmutter & Joseph (1990)
 
-###.3.6.1 The Passive Revisited 33
+### 3.6.1 The Passive Revisited 33
 
 * relations
   * grammatical relations (the so-called ‘term’ relations)
@@ -469,7 +471,7 @@ Theories of Case
 * transformational/derivational frameworks which built on TG adopted some of
   the central ideas of RG, like the Unaccusative Hypothesis (section 3.7)
 
-###.3.6.2 Case in Relational Grammar 36
+### 3.6.2 Case in Relational Grammar 36
 
 * Georgian: a language with a complicated case marking system
   * how case and grammatical relations interact in a typical RG analysis
@@ -583,12 +585,41 @@ Theories of Case
   * where this intuition comes from, and how it plays out, the next sections go
     through some of the pertinent historical developments
 
-4.2 The Basic Architecture 46
-4.3 Thematic Roles 48
+## 4.2 The Basic Architecture 46
+
+## 4.3 Thematic Roles 48
+
+* Chomsky (1970): verbs and the nominals derived from them must share a common
+  representation in the form of lexical entries which are neutral with respect
+  to syntactic category
+  * evidence for this is provided by a comparison of the complements required
+  * same number and type of complements. The transitive verb _destroy_ requires
+  * not necessarily realized in exactly the same surface form when nominalized
+  * the overall valency and thematic type of argument remains the same: there
+    * difference between the arguments of nominalizations and the arguments of
+      verbs in that the former are optional. Immaterial to Chomsky’s argument
+    * a standard in-depth discussion of the arguments of nouns, Grimshaw (1990)
+  * suggests a level or type of representation at which there is shared info
+  * came to be referred to as argument structure of a predicate (predicates
+* arg struct specifies the number and type of arguments a predicate subcategs
+  * also invested with hierarchical relationships which held between
+    arguments, so that an agent, for example, is generally taken to be the
+    ‘highest’ argument in the hierarchy and thus the most likely to be
+  * labels for the individual members of an argument structure differ by theo
+    * and, within theories, from author to author (see chapter 5)
+    * Fillmore’s (1968) proposals for the naming of case roles were not taken
+    * a convention based on initial ideas by Gruber (1965) and Jackendoff
+      (1972) has prevailed. Common argument role labels are:
+    * agent, theme/patient, goal/beneficiary/recipient, source, location. First
+    * Gruber and Jackendoff: term thematic relations or thematic role gained
+      * intended as a primarily syntactic concept, Chomsky (1981) used the term
+        θ-role and formulated a θ-theory to account for the licensing of a args
+        ,,,
+
 4.4 Category Neutral Representations: X-Syntax 51
 4.5 The VP-internal subject hypothesis 53
 4.6 Case and Agreement 55
-4.7 D-Structure, θ-Theory, and Structural Case
+4.7 D-Structure, θ-Theory, and Structural Case 55
 4.8 Structural vs. Inherent or Quirky Case
 
 * so far: structural Case. This is defined as a property of a structural
@@ -614,7 +645,7 @@ Theories of Case
 
 # 5 Linking Theories
 
-##5.1 Introduction 91
+## 5.1 Introduction 91
 
 * Linking: generalizations in predicate-argument structures to a syntactic repr
   * relationship between lexical semantics, argument structure, case marking,
@@ -625,19 +656,150 @@ Theories of Case
   * differing linking theories
     * Kiparsky’s theory of case
     * Wunderlich’s Lexical-Decomposition Grammar (LDG)
-    * LFG’s Mapping Theor.
+    * LFG’s Mapping Theor
   * Role and Reference Grammar deferred to chapter 8
     * reference to ergativity (chapter 6)
 
-##5.2 Representation of Predicate-Argument Structure
-##5.3 Lexical Decomposition and Linking 94
-##5.4 Proto-Roles 98
-##5.5 Kiparsky’s Linking Theory 100
-5.5.1 Semantic Form and Thematic Roles 101
-5.5.2 The Feature System 103
-5.5.3 Linking by Case, Position and Agreement 107
-5.5.4 Passives, Unaccusatives and Unergatives 109
-##5.6 Lexical Decomposition Grammar 111
+## 5.2 Representation of Predicate-Argument Structure
+
+## 5.3 Lexical Decomposition and Linking 94
+
+* term linking gained currency in ling theories due to
+  Ostler (1979) on the rules governing case realization in Sanskrit
+  * Ostler in turn credits Carter (1977) with first using the term, and indeed
+  * but it was Ostler’s formulations which informed the further development of
+  * Ostler worked broadly within
+    * Fillmore’s Case Grammar (section 3.5) and used
+    * Jackendoff’s (1972, 1976) ideas on lexical decomposition to formulate
+* many approaches assume some form of lexical decomposition in their analyses,
+  including analyses within MP, it is worth revisiting the basic ideas here
+  * Jackendoff (1990) also explicitly formulates a linking theory
+* Jackendoff’s solution, based on Gruber (1965), was to
+  * define thematic roles in terms of positions in a semantic analysis that
+    decomposed the basic predication via semantic primitives such as GO , BE
+    and CAUSE . An example of a Lexical Conceptual Structure (LCS)
+    representation based on later work (Jackendoff 1990) is shown in (9)
+  * A rough correspondence between LCS positions and thematic roles: (10)
+* syntactic hierarchy is placed into correspondence with the LCS via a
+  linking principle which aligns a thematic hierarchy with the syntactic hier
+  * thematic hierarchy is a listing of thematic roles, structured from
+    ‘highest’ to ‘lowest’, whereby the
+  * thematic roles are read off of the LCS from left to right, and beginning
+* dual representation in terms of the Action and Thematic Tiers,
+  provides the flexibility needed to account for argument alternations like the
+  * eg English dative alternation. The analysis is based on the well known
+  * there is a semantic difference between the two alternatives (Anderson 1971)
+    * the most affected argument is realized as the direct object. In (13),
+  * eg2 the alter involving the verb teach in (15) and the spray/load
+    * In (15a) the version with the to indirect object does not entail that
+      the agents indeed received a knowledge of Urdu. That is, there is no
+    * When the agents are realized as a direct object in (15b), on the other
+      hand, they must have been successfully taught Urdu and any indication to
+* In Jackendoff’s system, affectedness is modelled at the Action Tier. The
+  * double object alternative of the dative alternation, for example, is
+    * the argument of TO and the second argument of AFF are coindexed. This
+* no strict one-to-one mapping between syntactic positions and thematic roles
+  This stands in contrast to the assumption of the UTAH in GB/MP (chapter 4)
+  The possible mappings allowed by Jackendoff’s linking are quite complex, as
+  shown in (19) (Jackendoff 1990:268)
+* discourse may play a role so that the direct object is placed more in focus
+  than the secondary object or the PP (Erteschik-Shir 1979, Givón 1984,
+  Thompson 1995, Arnold, Wasow, Losongco and Ginstrom 2000)
+  * Discourse factors remain to be properly explored by theories of case and
+* Jackendoff has not found a large following
+  * the definitions are not systematic enough to allow a development of the
+    ideas and analyses by an independent linguistic community
+
+## 5.4 Proto-Roles 98
+
+* 3 Also see Primus (1997) for the introduction of a Proto-Recipient role
+* Dowty: no need for a separate representation involving thematic roles. Rather,
+  * following standard notions of Montague grammar, he sees his
+  * Proto-Role entailments as applying directly to an architecture which
+    closely intertwines syntactic and semantic representations
+
+## 5.5 Kiparsky’s Linking Theory 100
+
+* Kiparsky’s theory of linking and case is
+  a combination of insights from generative grammar and
+  Pānini’s ancient ideas about the relationship between case and thematic roles
+* Kiparsky’s initial linking ideas built on the analyses of Ostler (1979), but
+  have developed far beyond those initial proposals into
+  quite a complex and elegant system (Kiparsky 1987, 1988, 1997, 2001)
+* there are three equally privileged components which determine the syntactic
+  function of an argument:
+  case, agreement and position
+* Kiparsky’s theory focuses explicitly on the role of case marking in
+  identifying grammatical relations and thus stands
+  in stark contrast to the generative tradition (RG in chapter 3, GB/MP in
+  chapter 4, and Jackendoff’s and Dowty’s contributions) in that
+  case is taken to inform syntactic function, rather than the other way around
+  * In the theories discussed so far, case was seen as an expression of
+    syntactic function, and one whose ‘spell out’ or overt realization was a
+    matter of secondary interest
+  * In Kiparsky’s approach, case is of primary interest, but the approach is
+    by no means confined to an investigation of case
+
+### 5.5.1 Semantic Form and Thematic Roles 101
+
+* theo presupposes the distinction between lexical semantics and thematic roles
+  that was argued for by Jackendoff (section 5.3). In particular, Kiparsky
+  assumes Bierwisch’s (Bierwisch 1983, 1986, Bierwisch and Schreuder 1992)
+  two-tiered lexical decomposition
+  * Semantic Form (SF) represents that subset of conceptual knowledge which
+    is relevant for the linguistic system. SF is
+    * distinct from our conceptual and world knowledge, but does interact with
+      it. Though not discussed in section 5.3, this idea is
+  * in line with Jackendoff’s assumptions, as is the idea that
+  * thematic roles can be read off the lexically decomposed SF. The
+  * thematic roles are the subset of SF information which interacts with the
+    syntax of a language
+    * extracted from the SF representation via lambda abstraction, a device
+    * Jackendoff’s approach, thematic role labels like agent or patient have no
+      formal status within the theory, but they can be used as informal and
+      convenient designations for positions at SF
+      show: λzλyλx [x CAUSE [ CAN [ y SEE z]]]
+      put: λzλyλx [x CAUSE [ BECOME [ y AT z]]]
+* order of the thematic roles is important. A variable’s depth of embedding
+  * z is the ‘lowest’ thematic role and is thus likely to be linked to an
+    oblique PP as in on the floor in (24b), or a secondary object in (24a)
+* linking principles by which thematic roles are related to syntactic funcs
+  * regulated by the assignment and unification of feature spaces which are
+  * feat spaces themselves very simple, but whose relational and crossmodular
+    nature allows for a complex interplay of relationships. The feature
+    * introduced in the next section (section 5.5.2)
+* the relationship between SF and thematic roles needs not be one-to-one. This
+  * an assumption made by most theories of syntax and case. The notion adopted
+  * eg middle construction, which is
+    * like the passive in that the agent is suppressed, but is
+    * unlike the passive because the morphology and the semantic interpretation
+    * SF for the middle use of show is the same as that of the active use in
+      * any action of showing necessarily involves an agent, an object & a goal
+      * in the middle construction, only one of these participants is expressed
+        => the SF and the argument structure show a mismatch: the SF includes
+              (25) This house shows well.  show: λz [x CAUSE [ CAN [ y SEE z]]]
+  * converse example: weather verbs or verbs of existence like the use of come
+    * SF either contains no semantically motivated or thematic arguments, or
+      less participants than at argument structure ((27))
+  * mismatch is acknowledged across theoretical frameworks. It has been shown
+    * weather verbs like rain do not act like they have a sem motivated arg
+      * impersonal.  There is no agent or theme which rains, there is only the
+        event of raining
+    * However, because languages like English require a syntactic subject, an
+    => a semantically empty pronoun, fulfils this requirement. In languages
+    * eg Urdu do not have expletives, but which do have verbs of simple
+      ‘happening’ or existence, the situation is described as an agentless
+      (impersonal) happening
+(28) barı hui rain.F.Sg.Nom become.Past.F.Sg
+  ‘It rained (lit. rain happened).’ Urdu
+
+### 5.5.2 The Feature System 103
+
+### 5.5.3 Linking by Case, Position and Agreement 107
+
+### 5.5.4 Passives, Unaccusatives and Unergatives 109
+
+## 5.6 Lexical Decomposition Grammar 111
 
 * Wunderlich (1997) to account for argument and case patterns and argument al-
   ternations crosslinguistically
@@ -649,7 +811,7 @@ Theories of Case
 5.6. Basic Analyses 113
 5.6. Unergatives, Unaccusatives and Semantics
 5.6. Quirky Case 116
-##5.7 Lexical-Functional Grammar
+## 5.7 Lexical-Functional Grammar
 5.7.1 LFG Basics 117
 5.7.2 Argument Structure and Thematic Roles 122
 5.7.3 Quirky Case and Early Association Principles 123
@@ -662,8 +824,8 @@ Theories of Case
 5.7.2 Standard LFG Mapping Theory 127
 5.7.3 Argument Alternations 131
 5.7.4 Incorporation of Proto-Roles 135
-##5.8 Case Stacking 138
-##5.9 An Interactive Model of Case 142
+## 5.8 Case Stacking 138
+## 5.9 An Interactive Model of Case 142
 
 * Urdu alternations: subject alternation, or differential subject marking
   * form: only difference is the case morphology on one of the noun phrases
@@ -701,12 +863,12 @@ Theories of Case
   * subjection to syntactic restrictions, such as being confined to certain
     grammatical functions, mostly one or two
 
-##5.10 Discussion 149
-##5.11 Exercises 150
+## 5.10 Discussion 149
+## 5.11 Exercises 150
 
 # 6 The Ergative Dragon
 
-##6.1 Fighting Dragons
+## 6.1 Fighting Dragons
 
 * The literature is huge and encompasses a truly diverse set of languages
 * chapter: overview of the centrally relevant issues and discussions
@@ -719,17 +881,17 @@ Theories of Case
 * acquisition (section 6.7)
 * historical issues (section 6.8)
 
-##6.2 The Terminology
+## 6.2 The Terminology
 6.2.1 Torres Straits and the Agentive Nominative
 6.2.2 A Misunderstanding with Georgian 156
-##6.3 Case Systems 158
-##6.4 Syntactic vs. Morphological Ergativity 161
-##6.5 Approaches to Morphological Ergativity
+## 6.3 Case Systems 158
+## 6.4 Syntactic vs. Morphological Ergativity 161
+## 6.5 Approaches to Morphological Ergativity
 6.5.1 The Ergative as an Inherent Case 165
 6.5.2 The Ergative as a Structural Case 169
 6.5.3 Linking theories revisited and more types of ergativity
-##6.6 Split Ergativity 175
-##6.7 Acquisition Issues 176
+## 6.6 Split Ergativity 175
+## 6.7 Acquisition Issues 176
 
 * ergativity as such poses no real problems for language acquisition
 * languages that have been studied in the acquisition literature include
@@ -767,7 +929,7 @@ Theories of Case
   * Samoan: ergative is grounded in sociolinguistic factors as well as syntax
     * The more formal reg requires the ergative on all postverbal trans sbj
     * The less formal register allows the ergative not to be expressed at all
-* Kaluli: ergative is 
+* Kaluli: ergative is
   * related to focus (partly encoded by word order) and kinship terms
   * identical in form to the genitive
   * children are correlating it with the use of the past tense
@@ -779,9 +941,9 @@ Theories of Case
   * they are attentive early on to the basic ergative pattern, though they may
     be struggling with the precise form of the case marker on the nouns
 
-##6.8 Historical Issues 179
-##6.9 Summary 183
-##6.10 Exercises 184
+## 6.8 Historical Issues 179
+## 6.9 Summary 183
+## 6.10 Exercises 184
 
 # 7 The Semantics of Case 188
 
@@ -867,18 +1029,18 @@ Theories of Case
 ## 7.5 Discussion 199
 ## 7.6 Exercises 200
 
-# 8 More Theories Great and Small
+# 8 More Theories Great and Small 202
 
 ## 8.1 Role and Reference Grammar
 
 * whether an approach that based itself on core data from Lakhota, Tagalog and
   Dyirbal, rather than Western + Hebrew, would differ substantially from the
-  standard Chomskyan derivational/transformational tradition (Foley and Van
-  Valin 1977, Van Valin 1977a,b). The answer to his question is ‘yes’
+  standard Chomskyan derivational/transformational tradition. Yes
+  (Foley and Van Valin 1977, Van Valin 1977a,b)
 * a theory with many active practitioners today, international conferences, and
   summer schools
-  * Much of the data that is analysed is the result of primary field work. As
-  * there are several languages for which only RRG analyses exist.
+  * Much of the data that is analysed is the result of primary field work
+  * there are several languages for which only RRG analyses exist
   * Comprehensive discussions of the theory are presented in
     Van Valin (1993) and Van Valin and LaPolla (1997)
 * inspired by Fillmore’s Case Grammar and rejects versions of X bar Theory
@@ -903,7 +1065,7 @@ Theories of Case
     existing idea of macroroles), see section 5.4
   * owes much to Gruber’s (1965) and Jackendoff’s (1976) original work
 * detailed lexical semantic or Logical Structure (LS) representations as shown
-  * follow Vendler’s (1967) original aktionsart classification 
+  * follow Vendler’s (1967) original aktionsart classification
   * in line with general assumptions about lexical decomposition (sec 4.10.3)
     * ingressive INGR denotes the beginning of a new event or state
     * BECOME denotes the entry into a new state (change of state)
@@ -915,7 +1077,7 @@ Theories of Case
       achieved or accomplished)
     * difference between achievements and accomplishments is one of duration:
       accomplishments are non-punctual
-* As in Jackendoff’s (1990) approach, there is
+* As in Jackendoff’s (1990) approach, there is p204
   no direct representation of thematic roles in RRG
   * mapping or linking of semantic arguments to syntactic representations is
     mediated by the macroroles, as shown in (2)
@@ -956,5 +1118,18 @@ transitives, passives, unaccusatives and unergatives
 8.2.1 OT Basics 213
 8.2.2 Structural Case Revisited 216
 8.2.3 Harmonic Alignment 220
+
+* Aissen is not the only way to incorporate OT into theories of case & linking
+  * Woolford’s (2001, 2003) work was already mentioned in section 8.2.1, for
+  * Kiparsky (2001) has blended OT with his linking theory and
+  * Lee (2001) accounts for markedness patterns of case with bidirectional OT
+  * Most approaches with OT assume that the
+    constraints evaluate possible alignments between grammatical relations,
+    thematic roles and overt case marking
+  * LDG and Kiparksy’s approaches are the only ones that have integrated
+* the OT literature is rich in terms of paying attention to
+  all of the guiding themes identified in the beginning of this book:
+  overt case morphology, argument structure and grammatical relations
+
 8.3 Discussion 224
 8.4 Exercises 226
