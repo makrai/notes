@@ -66,7 +66,7 @@ todo: localist
       * word order in Bulgarian is governed by discourse configurational
 * remainder of this section for phenomena which continue to be problematic
 
-### 1.2.1. Head vs. Dependent Marking 5
+### 1.2.1. Head vs Dependent Marking 5
 
 * case-bearing affixes are often historically derived from the incorporation of
   pronouns (eg Jelinek 1987 for Navajo), the two crossreferencing strategies
@@ -145,7 +145,7 @@ todo: localist
 * each theory has found differing sets of phenomena of interest
 * agreement seems to be that all theories should be able to account for
   * basic transitives, ditransitives,
-  * unaccusatives vs. unergatives (section 3.7),
+  * unaccusatives vs unergatives (section 3.7),
   * passivization,
   * quirky case (section 4.8) and
   * ergativity (chapter 6)
@@ -518,7 +518,7 @@ todo: localist
     2 in a stratum with no 1 should be called an unaccusative 2’ (Pullum 1991)
   * terminological confusion became even worse with Burzio (PhD 1981 = 1986)
     * call unaccusatives ‘ergative verbs’ (without providing reasoning)
-* division into unaccusatives vs. unergatives has proved to be useful in
+* division into unaccusatives vs unergatives has proved to be useful in
   * auxiliary selection in Romance and Germanic languages
   * impersonal passives, and ne-cliticization in Italian (Rosen 84, Burzio 86)
 * Italian auxiliary selection
@@ -620,7 +620,7 @@ todo: localist
 4.5 The VP-internal subject hypothesis 53
 4.6 Case and Agreement 55
 4.7 D-Structure, θ-Theory, and Structural Case 55
-4.8 Structural vs. Inherent or Quirky Case
+4.8 Structural vs Inherent or Quirky Case
 
 * so far: structural Case. This is defined as a property of a structural
   configuration and generally assigns nominative and accusative case
@@ -747,7 +747,7 @@ todo: localist
     (Bierwisch 1983, 1986, Bierwisch and Schreuder 1992)
   * Semantic Form (SF) represents that subset of conceptual knowledge which
     is relevant for the linguistic system
-    * distinct from our conceptual and world knowledge, but interacts with it.
+    * distinct from our conceptual and world knowledge, but interacts with it
   * in line with Jackendoff’s assumptions, as is the idea that
   * thematic roles can be read off the lexically decomposed SF
   * thematic roles are the subset of SF information which interacts with synt
@@ -795,7 +795,6 @@ todo: localist
   [± H(ighest) R(ole)], [± L(owest) R(ole)]
   * These features refer to the position of the thematic roles with respect
 
-The arguments of the verb show, for example, are specified as in (29).
 (29) show: λz   λy    λx  [x CAUSE [ CAN [ y SEE z]]]
           [+LR] [ ] [+HR]
 
@@ -805,10 +804,10 @@ The arguments of the verb show, for example, are specified as in (29).
   * abstract case and morphosyntactic case
   * abstract cases correspond to grammatical relations in other theories
     * The basic crosslinguistic inventory of abstract cases along with their
-    (30) Abstract Case: grammatical relations 
-    * Transitive Subject [+HR, −LR] 
-    * Intransitive Subject [+HR, +LR] 
-    * Higher (Indirect Object) [−HR, −LR] 
+    (30) Abstract Case: grammatical relations
+    * Transitive Subject [+HR, −LR]
+    * Intransitive Subject [+HR, +LR]
+    * Higher (Indirect Object) [−HR, −LR]
     * Lower (Direct) Object [−HR, +LR]
 * This classification corresponds to
   Dixon’s (1979) classification of basic grammatical relations in terms of
@@ -824,9 +823,9 @@ The arguments of the verb show, for example, are specified as in (29).
   * Uniqueness: A predicate has =<1 [+HR] role (the subject) and =<1 [+LR] role
   * Unification: Associated feature matrices must be unifiable
   * Specificity (Blocking, ‘Elsewhere’): Specific rules and morphemes block
-    general rules and morphemes in the shared contexts.
+    general rules and morphemes in the shared contexts
     * a version of the more general Elsewhere Principle familiar from phonology
-    * ultimately based on Pānini’s grammar of Sanskrit (Kiparsky 1973).
+    * ultimately based on Pānini’s grammar of Sanskrit (Kiparsky 1973)
     * allows language or construction specific information to apply before
       general or universal principle
 
@@ -843,35 +842,35 @@ The arguments of the verb show, for example, are specified as in (29).
     because that grammatical relation has already been linked and Uniqueness
     would be violated. It can, however, be linked to either an indirect object
     (to the customers) in (32a) or to the direct object (the customers) in
-    (32b).
+    (32b)
 
 * Crosslinguistically, the case features do not just/also classify
   * thematic roles and grammatical relations
   * morphosyntactic cases (perhaps most importantly)
-* (33) Der Affe gibt dem Hund einen Kuchen.  
-  * a normal ditransitive clause whose main predicate is geben ‘give’.  
+* (33) Der Affe gibt dem Hund einen Kuchen
+  * a normal ditransitive clause whose main predicate is geben ‘give’
 * In German, case marking is sometimes of greater relevance than gramm rels
   * Some clauses are subjectless in German and
     many of the relevant syntactic generalizations need to be stated in terms
     of the nominative argument rather than the subject argument. German is
-  * fairly free word order, so position is not a reliable indicator.
+  * fairly free word order, so position is not a reliable indicator
 * Kiparsky therefore links arguments to morphosyntactic case for those
   languages in which morphosyntactic case plays a role, in addition to
-  linking arguments to grammatical relations, as discussed above.
+  linking arguments to grammatical relations, as discussed above
 * Morphosyntactic cases are also classified via the [± HR], [± LR] case feats
-  * universal classification 
+  * universal classification
     individual languages may allow for exceptional specifications
-    (cf. the Specificity Principle).  (35) Morphosyntactic Case:
+    (cf the Specificity Principle).  (35) Morphosyntactic Case:
   * nominative [ ]
     * this is one reason why the nom is an abstract structural Case in GB/MP,
-      * Recall from chapter 4 
+      * Recall from chapter 4
   * accusative [−HR]
   * genitive [−LR]
     * a complicated case which is not discussed much in this book. It is
     * compatible with a range of thematic roles and grammatical relations, but
     * generally appears in argument structure configurations which have a lower
-      thematic role than it. 
-  * dative [−HR, −LR] 
+      thematic role than it
+  * dative [−HR, −LR]
 * This classification of morphosyntactic cases works out exactly right for the
   German pattern in (33) in combination with the Specificity Principle. The
   * Spec Principle states that each thematic role should be associated with the
@@ -881,9 +880,9 @@ The arguments of the verb show, for example, are specified as in (29).
   * element is the more marked the more featural specifications are associated
   * The more specific feature specification compatible with the z is acc
   * The association of the genitive with the x argument is ruled out due to a
-    constraint on verb agreement, see below.
+    constraint on verb agreement, see below
 * inventory in (35) reflects only a subset of the world’s possible cases
-  * languages may contain more or less cases than those listed in (35).
+  * languages may contain more or less cases than those listed in (35)
     * Finnish is famous for having 15 cases, for example. For another,
   * a language may specify a given case, eg the genitive or accusative with a
     different feature bundle. In practice, as Kiparsky’s investigations to date
@@ -894,12 +893,12 @@ The arguments of the verb show, for example, are specified as in (29).
       assignment and interaction of the [±HR,±LR] features
 * Kiparsky further distinguishes between morphosyntactic and morphological case
   * morphol: the overt realization (or ‘spell out’) of abstract morphosyntactic
-  * morphosynt: over which relevant linguistic generalizations can be stated.
+  * morphosynt: over which relevant linguistic generalizations can be stated
     * can in principle have differing morphophonological realizations, as is
   * eg Urdu dative in (36), where the overt dative form for a pronoun can
     alternate between an inflectional -e and the clitic ko.  A system which
     * some datives have to be analysed as subjects. The same is true for the
-    * also in Icelandic 
+    * also in Icelandic
     * to him/her hunger is attached/stuck (36)
   * Kiparsky: these examples are instances of language specific patterns
     * along with the GB/MP analyses
@@ -915,13 +914,104 @@ The arguments of the verb show, for example, are specified as in (29).
   [−LR]
 * This feature specification is compatible with the dative case for the x argu
 * linking by agreement. Note that the verb agrees with the y argument, not the
-  * This interac- tion is discussed in the next section.
+  * This interaction is discussed in the next section
 
 ### 5.5.3 Linking by Case, Position and Agreement 107
 
+* there is a correlation between freedom of word order and richness of morphol
+  * observation goes back to linguistic giants such as Wilhelm von Humboldt and
+    Otto Jespersen, who are responsible for much of the solid ground which mod-
+    ern generative theories find themselves on today
+* Typologically oriented grammatical theorizing at least since Humboldt has
+  * word order and inflectional morphology are alternative means of expressing
+    grammatical relations. From this premise,
+  * Boas, Sapir, and Jespersen explicity derive the interesting crosslinguistic
+* Kiparsky notes that the correlation holds only in one direction: languages
+  * little morphology => little word order freedom, but
+  * Icelandic with morphology still has a fairly rigid word order
+  * there is a correlation between the syntactic licensing of arguments and
+    position, case, and agreement.  Languages which have
+  * no or little case morphology => heavy use of agreement morphology to
+    identify the subject vs the object in a clause (American Indian languages)
+  * Languages with a complex morphological case system may make little use of
+    verb agreement (Australian languages are an example).  And languages like
+  * English or Chinese have little to no morphology, rely on positional clues
+
+* GB/MP: these crosslinguistic generalizations as finding no echo
+  * recognizes a close interaction between case assignment and agreement, the
+  * interaction is so closely intertwined as to be almost identical.  This
+  * not do justice to the variety of documented crosslinguistic patterns
+  * relegation of morphosyntactic case to Phonological Form as theo deficient,
+    because it cannot properly account for crosslinguistic differences
+  * precludes a language with the morphology of English or Chinese from having
+    the syntax of German or Japanese.  [Kiparsky 1997:473]
+* ie there is no good way of accounting for the fact that
+  * English and Chinese, which have next to no morphology, are structural rigid
+  * German and Japanese, which allow relatively free word order, have a
+    reasonable amount of morphology
+* Kiparsky therefore gives morphology a central place in his theory
+  * 3 central linkers: case, agreement (morphology) and position (syntax)
+  * The linking of thematic relations to grammatical relations thus depends on
+    an interaction of case morphology, agreement relations & positional constra
+* eg English is a language with very little morphology, but
+  strong positional requirements and subject agreement, the
+  => main linkers for English are positional, mediated by subject agreement. As
+  *  Rather than directly linking to abstract case (grammatical relations), the
+     linking is mediated by the general positional constraints in (38)
+(38)
+ a.  Complement positions are [−HR] b. Non-final complement positions are [−LR]
+ ,,, p109
+* Kiparsky observes that a corollary of this system is that
+  if a language has neither case nor agreement, like Chinese, for example,
+  it must obey very fixed word order constraints, because in these languages
+  only the positional linkers are available, allowing for no
+  * word order variability that could be licensed by an interaction with case
+    or agreement linkers
+
 ### 5.5.4 Passives, Unaccusatives and Unergatives 109
 
-## 5.6 Lexical Decomposition Grammar 111
+* not spectacular and are presented mainly in order to maintain a
+  presentational parallelism across theories
+* passive: a morphosyntactic operation which demotes the [+HR] argument. For
+  => the x argument is no longer available for linking and must be an adjunct
+  * The linking theory includes a preference for a [+HR] feature in the final
+    specification
+    * a structural requirement and
+      can be satisfied by subject-verb agreement ([+HR]) in English. The
+    => y is therefore linked by agreement to SpecIP and is realized as a subject
+  * For a language like German, where case is more important,
+    the nominative is the only compatible case, as a quick look at the
+    (41) Der Hund wurde (von Affen) gekniffen
+* unaccusative and unergative verbs are identical in Kiparsky’s approach
+  * This differs from the assumptions in RG and GB/MP (chapters 3, 4)
+  * The syntactic differences between unergatives and unaccusatives (auxiliary
+    selection, ne-cliticization, etc) fall out from other principles of the
+    * not from the relationship between thematic roles, position, and case
+* The single argument of both unaccusative fall and unergative sneeze is as-
+  signed the feature specification [+HR,+LR], namely that of an intransit subj
+* In languages like
+  * German, Italian and Dutch, this feature specification is compatible only
+    with the nominative case and this is indeed the case marking found on
+    subjects of both unaccusatives and unergatives. For languages like
+  * Urdu, which distinguish unaccusatives and unergatives in terms of case
+    marking, additional assumptions must be made
+
+* In developing his linking theory, Kiparsky focused primarily on difficult is-
+  sues within case and agreement, such as data from
+  * ergative languages (ch 6) and dative case in Germanic (ie ‘quirky’ case)
+  * range of data accounted for/not easily accounted for by Kiparsky, nor can
+    eg Urdu/Hindi case system, which is also problematic for GB/MP (sec 5.7)
+* In sum, Kiparsky’s linking theory defines
+  a complex interaction between case, agreement and syntactic position for the
+  syntactic realization (licensing) of semantic arguments
+  * case, agreement and position interact, they are not identified with one
+    another via structural positions, as is the case in the GB/MP approach
+* The next section introduces a closely related linking approach, namely Wun-
+  * followed by a relatively long section introducing the basics of LFG and its
+    linking theory, along with
+  * approaches to case which do not necessarily assume a linking theory
+
+## 5.6 [Wunderlich's] Lexical Decomposition Grammar 111
 
 * Wunderlich (1997) to account for argument and case patterns and argument al-
   ternations crosslinguistically
@@ -930,10 +1020,12 @@ The arguments of the verb show, for example, are specified as in (29).
   * Kiparsky adopted the Semantic Form (SF) representation for argument struct
     * ultimately based on Bierwisch’s 1983 ideas
 
-5.6. Basic Analyses 113
-5.6. Unergatives, Unaccusatives and Semantics
-5.6. Quirky Case 116
+5.6.1 Basic Analyses 113
+5.6.2 Unergatives, Unaccusatives and Semantics
+5.6.3 Quirky Case 116
+
 ## 5.7 Lexical-Functional Grammar
+
 5.7.1 LFG Basics 117
 5.7.2 Argument Structure and Thematic Roles 122
 5.7.3 Quirky Case and Early Association Principles 123
@@ -946,7 +1038,9 @@ The arguments of the verb show, for example, are specified as in (29).
 5.7.2 Standard LFG Mapping Theory 127
 5.7.3 Argument Alternations 131
 5.7.4 Incorporation of Proto-Roles 135
+
 ## 5.8 Case Stacking 138
+
 ## 5.9 An Interactive Model of Case 142
 
 * Urdu alternations: subject alternation, or differential subject marking
@@ -962,14 +1056,14 @@ The arguments of the verb show, for example, are specified as in (29).
   * The lexical entry for the accusative use of _ko_ states that:
     * the case is accusative;
     * the relevant NP should be a direct object;
-    * the NP should be interpreted as specific at the level of s(emantic)-struc
+    * the NP should be interpreted as specific at the level of semantic-struct
 * Based on data mainly from Urdu, Georgian and Russian, Butt and King went on
   * both a diachronic and a synchronic perspective, Butt and King (2003)
 * The next few sections briefly present the essential points of the theory
   * Butt and King (2003) assume differing kinds of case:
-    structural or default case (section 5.9.2),
-    semantic case (section 5.9.4), and
-    quirky case (section 5.9.3)
+    * structural or default case (section 5.9.2),
+    * semantic case (section 5.9.4), and
+    * quirky case (section 5.9.3)
 * The analysis makes full use of LFG’s projection architecture, including the
   semantic projection, as seen in (109), and the argument projection (a-struct)
 
@@ -997,8 +1091,8 @@ The arguments of the verb show, for example, are specified as in (29).
 * origin of the term ‘ergative’ by way of a historical introduction
   * a misunderstanding and the further confusion introduced by Burzio
 * the standard conception of ergativity (section 6.3), including morphological
-  vs. syntactic ergativity and split ergativity (section 6.6)
-* as an inherent vs. a structural case in GB/MP
+  vs syntactic ergativity and split ergativity (section 6.6)
+* as an inherent vs a structural case in GB/MP
   on the basis of eg Georgian, Urdu/Hindi and West Greenlandic
 * acquisition (section 6.7)
 * historical issues (section 6.8)
@@ -1007,7 +1101,7 @@ The arguments of the verb show, for example, are specified as in (29).
 6.2.1 Torres Straits and the Agentive Nominative
 6.2.2 A Misunderstanding with Georgian 156
 ## 6.3 Case Systems 158
-## 6.4 Syntactic vs. Morphological Ergativity 161
+## 6.4 Syntactic vs Morphological Ergativity 161
 ## 6.5 Approaches to Morphological Ergativity
 6.5.1 The Ergative as an Inherent Case 165
 6.5.2 The Ergative as a Structural Case 169
@@ -1035,7 +1129,7 @@ The arguments of the verb show, for example, are specified as in (29).
   * can be expressed in a variety of ways and some
   * fundamental ingredients are volitionality or control over the action,
     telicity or completion of the action, the affectedness of the object, and
-    the focus placed on the actor vs. the object, realis or irrealis mood, and
+    the focus placed on the actor vs the object, realis or irrealis mood, and
     punctuality of the action
     (compare these factors to Dowty’s Proto-Role entailments, section 5.4)
   * highly transitive if a high number of these ingredients are present
@@ -1081,8 +1175,8 @@ The arguments of the verb show, for example, are specified as in (29).
 * eg the Latin accusative marks objects, but [also] directional goals
 * Localist theories assume that such accusatives of direction are not aberrant:
   * regular principles connect the abstract structural use with the directional
-* English dative to: (2) Kim donated books to the library/walked to her house
-  * Because the English to is a preposition and not a case morpheme, the
+* English dative _to_: (2) Kim donated books to the library/walked to her house
+  * Because the English _to_ is a preposition and not a case morpheme, the
     parallel between the concrete spatial and the abstract use is more obvious
   * Recall that case morphology is often derived from former adpositions
   * connection between concrete spatial uses and abstract case is
@@ -1092,8 +1186,8 @@ The arguments of the verb show, for example, are specified as in (29).
   * Byzantine Maximus Planudes, who lived and worked around 1300 CE
   * Hjelmslev (1935) and J. Anderson (1971)
   * Jakobson’s (1936) effort to find coherent semantics for the Russian case
-    eg all of the individual uses of the Russian genitive, should be derivable
-    from one and the same overarching semantics
+    * eg all of the individual uses of the Russian genitive, should be
+      derivable from one and the same overarching semantics
   * Gruber (1965) have found their way into much of modern linguistic thought,
     mostly by way of Jackendoff’s (1972, 1976, 1990) devel & formalization
   * modern generative approaches
@@ -1104,11 +1198,11 @@ The arguments of the verb show, for example, are specified as in (29).
 * Localist theories seek to formalize these basic generalizations
   in order to drive linguistic explanations
 
-## 7.2 Agency vs. Experience 189
+## 7.2 Agency vs Experience 189
 
 * Wierzbicka (1981) ‘Case Marking and Human Nature’ takes a closer look
 * Silverstein’s (1976) person hierarchy (see section 6.6)
-  * humans see themselves as a ‘quintessential agent’ and that therefore
+  * humans see themselves as a ‘quintessential agent’ and therefore
     1st and 2nd persons need to be less marked for agency than other things
   * With respect to ergativity this view predicts that
     1st and 2nd person pronouns will be marked less often with an overt erg,
@@ -1140,7 +1234,7 @@ The arguments of the verb show, for example, are specified as in (29).
       Ivan.Nom is-waiting-for tram.Acc/Gen
       ‘Ivan is waiting for the/a tram.’ (Wierzbicka 1982:56)
     * encountered for Urdu in section 5.9
-    * quite common crosslinguistically, indicating that this is a systematic
+    * quite common crosslinguistically, indicating that this is systematic
 * The next section explores several proposals with respect to such object alter
 * Wierzbicka also implicates topicality and discourse as playing a role
   * particularly with respect to the ergative
@@ -1172,21 +1266,21 @@ The arguments of the verb show, for example, are specified as in (29).
     * syntactic structure
 * shares some characteristics with LFG: multidimensional
   * constituent projection (the basic tree), an
-  * operator projection (tense, mood, aspect, etc.), and a
+  * operator projection (tense, mood, aspect, etc), and a
   * focus structure projection for discourse phenomena
 * rejects the universal applicability of grammatical relations such as subject
   * Instead, relationship between macroroles and the
     Privileged Syntactic Argument (PSA)
-* The PSA functions as the syntactic pivot of the clause (cf. section 6.4)
+* The PSA functions as the syntactic pivot of the clause (cf section 6.4)
   * generalizations about agreement, control, or the coordinate reduction are
     stated with reference to the PSA and the macroroles
-  * the syntactically ergative language Dyirbal the Undergoer macrorole is PSA
+  * syntactically ergative language Dyirbal: the Undergoer macrorole is PSA
     * rather than the Actor macrorole as in German
 * macroroles: Actor and Undergoer. These two roles generalize
   * similar to Dowty’s Proto-Roles (which were inspired by the previously
     existing idea of macroroles), see section 5.4
   * owes much to Gruber’s (1965) and Jackendoff’s (1976) original work
-* detailed lexical semantic or Logical Structure (LS) representations as shown
+* detailed lexical semantic or Logical Structure (LS) representations
   * follow Vendler’s (1967) original aktionsart classification
   * in line with general assumptions about lexical decomposition (sec 4.10.3)
     * ingressive INGR denotes the beginning of a new event or state
@@ -1195,15 +1289,14 @@ The arguments of the verb show, for example, are specified as in (29).
       whether or not somebody is engaging in an activity, or whether they are
       simply continuing a given state
     * States and activities differ from achievements and accomplishments,
-      accomplishments/achievements have/ne result states (a change of state is
-      achieved or accomplished)
+      accomplishments/achievements have/no result states
+      (a change of state is achieved or accomplished)
     * difference between achievements and accomplishments is one of duration:
       accomplishments are non-punctual
-* As in Jackendoff’s (1990) approach, there is p204
-  no direct representation of thematic roles in RRG
+* As in Jackendoff’s (1990) approach: no direct representation of them roles
   * mapping or linking of semantic arguments to syntactic representations is
     mediated by the macroroles, as shown in (2)
-* Actor-Undergoer Hierarchy. The semantic macroroles generalize
+* Actor-Undergoer Hierarchy. The semantic macroroles generalize p204 
   * arguments of _do_ are preferably interpreted as Actor,
   * arguments of state predicates and second arguments of general predicates
     are preferably interpreted as Undergoer

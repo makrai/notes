@@ -323,9 +323,9 @@ with special emphasis on the two datasets used in our work
   * mollusc: “animal belonging to Mollusca, a subkingdom of soft-bodied and..."
   * As we learn for example from the Concise Oxford, this subkingdom includes
     limpets, snails, cuttlefish, etc, and
-    * most of these (with the exception of oysters) are actually not considered
-      as seafood
-  * encyclopedic knowledge source should be consulted and here
+    * most of these are actually not considered as seafood
+      (with the exception of oysters)
+  * encyclopedic knowledge source should be consulted
     * Wikipedia: the article en.wikipedia.org/wiki/Mussel has a heading As food
 * the first definition in Wiktionary does not correspond to the sense intended
   * most often because [the 1st in Wiki] is in fact not the most common sense
@@ -335,7 +335,7 @@ with special emphasis on the two datasets used in our work
 * Hyperlex dataset (Vulić+ 2017)
   * the basis of the Semeval dataset used in this paper
   * “two words stand in a type-of relation if any of their senses stand in a
-    type-of relation.”(Vulić+ 2017, p. 797).
+    type-of relation.” (Vulić+ 2017, p. 797)
  * we might consider the union of all definitions of a word for our method, but
    our early experiments showed that
    such an approach would very often lead to the proliferation of erroneous
@@ -361,7 +361,7 @@ with special emphasis on the two datasets used in our work
   * In dictionaries that are built on stronger lexicographic principles, this
     is avoided by reliance on a strict defining vocabulary, a limited set of
     concepts capable of defining all other concepts
-    * LDOCE, spouse is defined as “a husband or wife’’ which avoids any
+    * LDOCE, spouse is defined as “a husband or wife’’ which avoids these
     * Following Webster’s 3rd, modern lexicographic practice avoids defining
       the simple by the more complex
 * English does not mark causativization on the verb
@@ -376,10 +376,10 @@ with special emphasis on the two datasets used in our work
 
 # 6 Conclusion 19
 
-* differences between the two formulations of the entailment task and
+* differences between the two formulations of the entailment task
   * SherLIiC inspires us to think more deeply about synonymy, polysemy, disamb,
     definitional economy, prepositional linkers, modal subordination,
-    causativization, and a host of other questions 
+    causativization, and a host of other questions
     * traditionally considered central to natural language semantics
   * WordNet, with its extensive hypernym links, tailor-made for entailm detect
     * can be profitably combined with other resources, dictionaries in particul
