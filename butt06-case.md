@@ -723,77 +723,199 @@ todo: localist
 * Kiparsky’s theory of linking and case is
   a combination of insights from generative grammar and
   Pānini’s ancient ideas about the relationship between case and thematic roles
-* Kiparsky’s initial linking ideas built on the analyses of Ostler (1979), but
-  have developed far beyond those initial proposals into
+* initially built on the analyses of Ostler (1979), but have
+  developed far beyond those initial proposals into
   quite a complex and elegant system (Kiparsky 1987, 1988, 1997, 2001)
-* there are three equally privileged components which determine the syntactic
-  function of an argument:
+* there are three equally privileged components
+  which determine the syntactic function of an argument:
   case, agreement and position
 * Kiparsky’s theory focuses explicitly on the role of case marking in
-  identifying grammatical relations and thus stands
-  in stark contrast to the generative tradition (RG in chapter 3, GB/MP in
-  chapter 4, and Jackendoff’s and Dowty’s contributions) in that
-  case is taken to inform syntactic function, rather than the other way around
-  * In the theories discussed so far, case was seen as an expression of
-    syntactic function, and one whose ‘spell out’ or overt realization was a
-    matter of secondary interest
-  * In Kiparsky’s approach, case is of primary interest, but the approach is
-    by no means confined to an investigation of case
+  identifying grammatical relations
+  * in stark contrast to the generative tradition (RG in chapter 3, GB/MP in
+    chapter 4, and Jackendoff’s and Dowty’s contributions) in that
+    case is taken to inform syntactic function, rather than the other way aroun
+  * In the theories discussed so far, case was an expression of synt function,
+    and one whose ‘spell out’ or overt realization was secondary
+  * In Kiparsky’s approach, case is of primary interest, but the
+    approach is by no means confined to an investigation of case
 
 ### 5.5.1 Semantic Form and Thematic Roles 101
 
 * theo presupposes the distinction between lexical semantics and thematic roles
-  that was argued for by Jackendoff (section 5.3). In particular, Kiparsky
-  assumes Bierwisch’s (Bierwisch 1983, 1986, Bierwisch and Schreuder 1992)
-  two-tiered lexical decomposition
+  * was argued for by Jackendoff (section 5.3). In particular,
+  * Kiparsky assumes Bierwisch’s two-tiered lexical decomposition
+    (Bierwisch 1983, 1986, Bierwisch and Schreuder 1992)
   * Semantic Form (SF) represents that subset of conceptual knowledge which
-    is relevant for the linguistic system. SF is
-    * distinct from our conceptual and world knowledge, but does interact with
-      it. Though not discussed in section 5.3, this idea is
+    is relevant for the linguistic system
+    * distinct from our conceptual and world knowledge, but interacts with it.
   * in line with Jackendoff’s assumptions, as is the idea that
-  * thematic roles can be read off the lexically decomposed SF. The
-  * thematic roles are the subset of SF information which interacts with the
-    syntax of a language
-    * extracted from the SF representation via lambda abstraction, a device
-    * Jackendoff’s approach, thematic role labels like agent or patient have no
-      formal status within the theory, but they can be used as informal and
-      convenient designations for positions at SF
+  * thematic roles can be read off the lexically decomposed SF
+  * thematic roles are the subset of SF information which interacts with synt
+    * extracted from the SF representation via lambda abstraction
+    * Jackendoff: thematic role labels like agent or patient have
+      no formal status within the theory, but they can be used as
+      informal and convenient designations for positions at SF
       show: λzλyλx [x CAUSE [ CAN [ y SEE z]]]
       put: λzλyλx [x CAUSE [ BECOME [ y AT z]]]
 * order of the thematic roles is important. A variable’s depth of embedding
   * z is the ‘lowest’ thematic role and is thus likely to be linked to an
-    oblique PP as in on the floor in (24b), or a secondary object in (24a)
+    oblique PP as in _on the floor_ in (24b), or a secondary object in (24a)
 * linking principles by which thematic roles are related to syntactic funcs
-  * regulated by the assignment and unification of feature spaces which are
-  * feat spaces themselves very simple, but whose relational and crossmodular
-    nature allows for a complex interplay of relationships. The feature
+  * regulated by the assignment and unification of feature spaces
+  * feat spaces themselves are very simple, but their relational and
+    crossmodular nature allows for a complex interplay of relationships
     * introduced in the next section (section 5.5.2)
-* the relationship between SF and thematic roles needs not be one-to-one. This
-  * an assumption made by most theories of syntax and case. The notion adopted
-  * eg middle construction, which is
-    * like the passive in that the agent is suppressed, but is
-    * unlike the passive because the morphology and the semantic interpretation
-    * SF for the middle use of show is the same as that of the active use in
+* the relationship between SF and thematic roles needs not be one-to-one
+  * an assumption made by most theories of syntax and case
+  * eg middle construction
+    * like the passive in that the agent is suppressed
+    * unlike the passive because of the morphology and the semantic interpret
+    * SF for the middle use of _show_ is the same as that of the active use
       * any action of showing necessarily involves an agent, an object & a goal
-      * in the middle construction, only one of these participants is expressed
-        => the SF and the argument structure show a mismatch: the SF includes
-              (25) This house shows well.  show: λz [x CAUSE [ CAN [ y SEE z]]]
+    * in the middle construction, only one of these participants is expressed
+    => the SF and the argument structure show a mismatch
+    (25) This house shows well.  show: λz [x CAUSE [ CAN [ y SEE z]]]
   * converse example: weather verbs or verbs of existence like the use of come
-    * SF either contains no semantically motivated or thematic arguments, or
+    * SF either contains no semantically motivated (ie thematic) arguments, or
       less participants than at argument structure ((27))
-  * mismatch is acknowledged across theoretical frameworks. It has been shown
+  * mismatch is acknowledged across theoretical frameworks
     * weather verbs like rain do not act like they have a sem motivated arg
-      * impersonal.  There is no agent or theme which rains, there is only the
-        event of raining
-    * However, because languages like English require a syntactic subject, an
-    => a semantically empty pronoun, fulfils this requirement. In languages
-    * eg Urdu do not have expletives, but which do have verbs of simple
-      ‘happening’ or existence, the situation is described as an agentless
-      (impersonal) happening
+      * impersonal.  There is no agent or theme which rains, only the event
+    * hE languages like English require a syntactic subject
+    => a semantically empty pronoun fulfils this requirement
+    * eg Urdu do not have expletives, but it
+      has verbs of simple ‘happening’ or existence,
+      the situation is described as an agentless (impersonal) happening
 (28) barı hui rain.F.Sg.Nom become.Past.F.Sg
   ‘It rained (lit. rain happened).’ Urdu
 
 ### 5.5.2 The Feature System 103
+
+* Thematic roles are linked to the (morpho)syntax via two case features:
+  [± H(ighest) R(ole)], [± L(owest) R(ole)]
+  * These features refer to the position of the thematic roles with respect
+
+The arguments of the verb show, for example, are specified as in (29).
+(29) show: λz   λy    λx  [x CAUSE [ CAN [ y SEE z]]]
+          [+LR] [ ] [+HR]
+
+* a subtle feature unification system, the option in (29) turns out to be
+
+* case features also provide a classification of cases. Kiparsky distinguishes
+  * abstract case and morphosyntactic case
+  * abstract cases correspond to grammatical relations in other theories
+    * The basic crosslinguistic inventory of abstract cases along with their
+    (30) Abstract Case: grammatical relations 
+    * Transitive Subject [+HR, −LR] 
+    * Intransitive Subject [+HR, +LR] 
+    * Higher (Indirect Object) [−HR, −LR] 
+    * Lower (Direct) Object [−HR, +LR]
+* This classification corresponds to
+  Dixon’s (1979) classification of basic grammatical relations in terms of
+  A (agent, subject of transitive clauses), S (subject of intransitive),
+  D (dative) and O (object)
+  * See chapter 6 on ergativity for some further discussion.104
+
+* Thematic roles and grammatical relations are thus classified by exactly the
+  same featural system. This allows an interaction between them, more
+  * thematic roles and grammatical relations can be linked to one another via
+    the feature specifications. Kiparsky assumes a number of
+* principles constrain this linking relation. Some of the very basic ones are
+  * Uniqueness: A predicate has =<1 [+HR] role (the subject) and =<1 [+LR] role
+  * Unification: Associated feature matrices must be unifiable
+  * Specificity (Blocking, ‘Elsewhere’): Specific rules and morphemes block
+    general rules and morphemes in the shared contexts.
+    * a version of the more general Elsewhere Principle familiar from phonology
+    * ultimately based on Pānini’s grammar of Sanskrit (Kiparsky 1973).
+    * allows language or construction specific information to apply before
+      general or universal principle
+
+* Returning to the verb show: this verb participates in the dative alternation,
+  * same underlying argument structure, namely, (29)
+  * the x argument is assigned the [+HR] feature by the universal rule that the
+    * the least semantically embedded argument
+
+  * The z argument is compatible with the specifications of a direct object, as
+    * it may surface as a direct object in (32a) and as secondary direct object
+      in the double object construction in (32b)
+  * The y argument bears no specifications whatsoever and is therefore in
+    principle compatible with any argument. It cannot be linked to a subject
+    because that grammatical relation has already been linked and Uniqueness
+    would be violated. It can, however, be linked to either an indirect object
+    (to the customers) in (32a) or to the direct object (the customers) in
+    (32b).
+
+* Crosslinguistically, the case features do not just/also classify
+  * thematic roles and grammatical relations
+  * morphosyntactic cases (perhaps most importantly)
+* (33) Der Affe gibt dem Hund einen Kuchen.  
+  * a normal ditransitive clause whose main predicate is geben ‘give’.  
+* In German, case marking is sometimes of greater relevance than gramm rels
+  * Some clauses are subjectless in German and
+    many of the relevant syntactic generalizations need to be stated in terms
+    of the nominative argument rather than the subject argument. German is
+  * fairly free word order, so position is not a reliable indicator.
+* Kiparsky therefore links arguments to morphosyntactic case for those
+  languages in which morphosyntactic case plays a role, in addition to
+  linking arguments to grammatical relations, as discussed above.
+* Morphosyntactic cases are also classified via the [± HR], [± LR] case feats
+  * universal classification 
+    individual languages may allow for exceptional specifications
+    (cf. the Specificity Principle).  (35) Morphosyntactic Case:
+  * nominative [ ]
+    * this is one reason why the nom is an abstract structural Case in GB/MP,
+      * Recall from chapter 4 
+  * accusative [−HR]
+  * genitive [−LR]
+    * a complicated case which is not discussed much in this book. It is
+    * compatible with a range of thematic roles and grammatical relations, but
+    * generally appears in argument structure configurations which have a lower
+      thematic role than it. 
+  * dative [−HR, −LR] 
+* This classification of morphosyntactic cases works out exactly right for the
+  German pattern in (33) in combination with the Specificity Principle. The
+  * Spec Principle states that each thematic role should be associated with the
+    most specific case feature bundle possible
+  * ie relies on the relative markedness of feature specifications
+  * concept familiar from phonological analyses: an
+  * element is the more marked the more featural specifications are associated
+  * The more specific feature specification compatible with the z is acc
+  * The association of the genitive with the x argument is ruled out due to a
+    constraint on verb agreement, see below.
+* inventory in (35) reflects only a subset of the world’s possible cases
+  * languages may contain more or less cases than those listed in (35).
+    * Finnish is famous for having 15 cases, for example. For another,
+  * a language may specify a given case, eg the genitive or accusative with a
+    different feature bundle. In practice, as Kiparsky’s investigations to date
+    * this is rarely the case
+  * languages often do differ on the alignment of cases with thematic roles and
+    with grammatical relations.  These subtle crosslinguistic differences
+    * can be accounted for by postulating differences in terms of the
+      assignment and interaction of the [±HR,±LR] features
+* Kiparsky further distinguishes between morphosyntactic and morphological case
+  * morphol: the overt realization (or ‘spell out’) of abstract morphosyntactic
+  * morphosynt: over which relevant linguistic generalizations can be stated.
+    * can in principle have differing morphophonological realizations, as is
+  * eg Urdu dative in (36), where the overt dative form for a pronoun can
+    alternate between an inflectional -e and the clitic ko.  A system which
+    * some datives have to be analysed as subjects. The same is true for the
+    * also in Icelandic 
+    * to him/her hunger is attached/stuck (36)
+  * Kiparsky: these examples are instances of language specific patterns
+    * along with the GB/MP analyses
+    * ie of exceptional or quirky case marking
+  * In Urdu, goals are generally linked to datives,
+    including such abstract goals/locations as the dative in (36)
+    => The relevant lexical entry for the Urdu ‘be attached’ in (37) thus
+    carries a different feature specification
+    diff from the [+HR] that would be assigned to it according to the universal
+(37) lag ‘be attached’:
+  λx    λy
+  [−HR]
+  [−LR]
+* This feature specification is compatible with the dative case for the x argu
+* linking by agreement. Note that the verb agrees with the y argument, not the
+  * This interac- tion is discussed in the next section.
 
 ### 5.5.3 Linking by Case, Position and Agreement 107
 
