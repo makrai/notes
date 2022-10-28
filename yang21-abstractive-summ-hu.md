@@ -7,8 +7,8 @@ Date Deposited: 	25 May 2021 10:13
 # Abstract
 
 * abstractive summarization
-  * This method generates the summarized text by applying keywords that were
-    extracted from the original text
+  * This method generates the summarized text by applying keywords
+    that were extracted from the original text
 * we have built both abstractive and extractive models for Hungarian
   * abstractive models, we have used a multilingual BERT model and Hungarian
     monolingual BERT models

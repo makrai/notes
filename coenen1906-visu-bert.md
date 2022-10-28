@@ -1,5 +1,5 @@
-A Coenen, E Reif, A Yuan, B Kim, A Pearce, F Viégas, M Wattenberg
 Visualizing and Measuring the Geometry of BERT
+A Coenen, E Reif, A Yuan, B Kim, A Pearce, F Viégas, M Wattenberg
 arXiv:1906.02715 [cs.LG]
 
 # Abstract
@@ -75,7 +75,7 @@ arXiv:1906.02715 [cs.LG]
   * whether attention matrices encode syntactic features
   * a simple mathematical analysis of the tree embeddings that they found
 
-##  3.1 Attention probes and dependency representations
+## 3.1 Attention probes and dependency representations
 
 * attention probe, an analog of edge probing [25]
   * a pair of tokens, `(token_i , token_j)`
@@ -84,7 +84,7 @@ arXiv:1906.02715 [cs.LG]
   * goal is to classify a given relation between the two tokens with a linear m
     * identifying the existence and type of dependency relation
 
-###   3.1.1 Method 3
+### 3.1.1 Method 3
 
 * corpus of parsed sentences from the Penn Treebank [14]
   * filtered [to] the 30 dependency relations with more than 5,000 examples in
@@ -96,15 +96,15 @@ arXiv:1906.02715 [cs.LG]
   2. multiclass classifier to predict [the type of the] dependency relation
     * trained with distributions outlined in table 2
 
-###   3.1.2 Results
+### 3.1.2 Results
 
 * binary probe achieved an accuracy of 85.8%, and the
 * multiclass probe achieved an accuracy of 71.9%
 * success [suggests that syntactic information is] encoded in the attention vcs
 
-##  3.2 Geometry of parse tree embeddings 3
+## 3.2 Geometry of parse tree embeddings 3
 
-##    3.2.1 Mathematics of embedding trees in Euclidean space
+## 3.2.1 Mathematics of embedding trees in Euclidean space
 
 * Hewitt and Manning ask
   * why parse tree distance [corresponds] specifically to the _square_ of Eucl
@@ -121,7 +121,7 @@ arXiv:1906.02715 [cs.LG]
       Poincaré embeddings for learning hierarchical representations
       NIPS 2017
 
-###   3.2.2 Visualization of parse tree embeddings 4
+### 3.2.2 Visualization of parse tree embeddings 4
 
 * compare [parse tree embeddings in BERT] to exact power-2 embeddings?
   * layer 16 (following [7]),
@@ -137,7 +137,7 @@ arXiv:1906.02715 [cs.LG]
 
 # 4 Geometry of word senses 5
 
-##  4.1 Visualization of word senses 6
+## 4.1 Visualization of word senses 6
 
 * sentences [from] the introductions to English-language Wikipedia articles
   * interactive application. A user enters a word. 1,000 sentences. BERT-base
@@ -150,7 +150,7 @@ arXiv:1906.02715 [cs.LG]
   * quantitative corroboration that word senses are well-represented?
   * seeming contradiction: position represented syntax or semantics?
 
-##  4.2 Measurement of word sense disambiguation capability
+## 4.2 Measurement of word sense disambiguation capability
 
 * a simple classifier on these internal representations [for] WSD
   * procedure described in [21]: a similar experiment with the ELMo model
@@ -197,12 +197,12 @@ arXiv:1906.02715 [cs.LG]
   * a resolution to the seeming contradiction mentioned above
   * syntax and semantics ... in separate complementary subspaces
 
-##  4.3 Embedding distance and context: a concatenation experiment
+## 4.3 Embedding distance and context: a concatenation experiment
 
 * influence context embedding positions by systematically varying the context
   * concatenating sentences where the same word is used in different senses
 
-###   4.3.1 Method
+### 4.3.1 Method
 
 * 25,096 sentence pairs from SemCor, using the same keyword in different senses
   A: He thereupon _went_ to London and spent the winter talking to men of w
@@ -215,7 +215,7 @@ arXiv:1906.02715 [cs.LG]
   * concatenated similarity ratio
   * [contror: Concatenating a random sentence]
 
-###   4.3.2 Results 8
+### 4.3.2 Results 8
 
 * projecting the final-layer keyword embeddings into the semantic subspace
   discussed in 4.1.3

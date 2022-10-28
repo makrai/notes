@@ -1,4 +1,4 @@
-Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond
+Massively Multiling Sentence Embeds for Zero-Shot Cross-Ling Transfer & Beyond
 Mikel Artetxe, Holger Schwenk
 Transactions of the Association for Computational Linguistics (2019) 7: 597–610
 

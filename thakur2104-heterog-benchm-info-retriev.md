@@ -104,8 +104,7 @@ https://github.com/UKPLab/beir datasets and code
       8 different retrieval systems for annotation, 7 out of which relied upon
       term-matching signals and this causes a bias towards lex (Suarez+ 2018)
   * skewed length distribution of relevant documents as shown in Figure 4
-    * All neural approaches have limitations with document lengths as they
-      have limit of 512 word pieces
+    * All neural approaches have limitations with doc lengths: 512 word pieces
       * On the other hand BM25 greatly profits from longer documents as
         more keywords occur in them thereby increasing the chances of overlap
     * for Tóuche-2020 (Bondarenko+ 2020), majority of the highly relevant

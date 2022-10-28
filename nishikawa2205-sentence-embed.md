@@ -66,8 +66,8 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
 * Multilingual EASE is trained using the entity embeddings shared across langs
   * significantly outperforms the baselines in multilingual STS, STC,
     parallel sentence matching, and cross-lingual document classification tasks
-* further demonstrate the effectiveness of the multilingual entity CL in a more
-  realistic scenario for low-resource languages
+* further demonstrate the effectiveness of the multilingual entity CL
+  in a more realistic scenario for low-resource languages
   * we fine-tune a competitive multilingual sentence embedding model, LaBSE
     (Feng+ 2020) using multilingual entity CL,, and show that the tuning
   * improves the performance of parallel sentence matching
@@ -280,14 +280,12 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
   cross-lingual document classification dataset that
   classifies news articles in eight languages into four categories
 * We train a linear classifier using sentence embeddings as input features on
-  the English training data, and evaluate the resulting classifier in the
-  remaining languages. To directly evaluate the ability of the resulting
-  sentence embeddings,
-  we do not update the parameters of the sentence encoder but only train the
-  linear classifier in this setting
+  the English training data, and
+  * evaluate the resulting classifier in the remaining languages. To directly
+  * not update the parameters of the sentence encoder 
 * The detailed settings are shown in Appendix D
-* As shown in Table 6, our EASE models achieve the best average performance on
-  both back-bones
+* As shown in Table 6, our EASE models achieve the best average performance
+  on both back-bones
 
 ## 6 Case Study: Fine-tuning Supervised Model with EASE 7
 

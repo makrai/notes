@@ -23,16 +23,16 @@ unsupervised methods for keyword and sentence extraction
 
 * Experiments were also performed with directed graphs, where a
   * direction was set following the
-    * natural flow: [word] “recommends” ... the [following word]
+    * natural flow: [word] “recommends” the [following word]
     * reversed direction, where a lexical unit points to a previous token
   * window of 2
-  * results ... are worse than results obtained with undirected graphs, which
-    suggests that ... there is no natural “direction”
+  * results are worse than results obtained with undirected graphs, which
+    suggests that there is no natural “direction”
 
 # 4 sentence extraction
 
-* edge: “similarity” ... measured as a function of their content overlap
+* edge: “similarity” measured as a function of their content overlap
   * number of common tokens
   * syntactic filters, which only count words of a certain syntactic category,
-  * Other ... measures, such as string kernels, cosine similarity, longest
-    common subsequence ... we are currently evaluating their impact
+  * Other measures, such as string kernels, cosine similarity, longest
+    common subsequence we are currently evaluating their impact

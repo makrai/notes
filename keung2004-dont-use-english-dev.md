@@ -4,15 +4,15 @@ EMNLP 2020 arXiv:2004.15001 [cs.CL]
 
 # Abstract
 
-* published results for mBERT zero-shot accuracy vary as much as 17 points on
-  the MLDoc classification task across four papers
+* published results for mBERT zero-shot accuracy vary as much as
+  17 points on the MLDoc classification task across four papers
 * We show that the standard practice of
   using English dev accuracy for model selection in the zero-shot setting
   makes it difficult to obtain reproducible results on the MLDoc and XNLI tasks
   * English dev accuracy is often uncorrelated (or even anti-correlated) with
     target language accuracy, and
-  * zero-shot performance varies greatly at different points in the same
-    fine-tuning run and between different fine-tuning runs
+  * zero-shot performance varies greatly during the same fine-tuning run and
+    between different fine-tuning runs
   * issues also present for other tasks with different pre-trained embeddings
     (eg, MLQA with XLM-R)
 * We recommend providing oracle scores alongside zero-shot results: still

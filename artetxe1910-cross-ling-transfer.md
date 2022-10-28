@@ -80,11 +80,11 @@ https://github.com/deepmind/xquad
  
 ## 3.2 experimental setting 
 
-##3.3 Results on XNLI 
+## 3.3 Results on XNLI 
 
-##3.4 Results on MLDoc 
+## 3.4 Results on MLDoc 
 
-##3.5 Results on PAWS-X 
+## 3.5 Results on PAWS-X 
 
 # 4 XQuAD: a new cross-lingual question answering dataset
 
