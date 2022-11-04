@@ -521,8 +521,7 @@ tences, in the form of a Tarski-rype truth definicion; nothing stands in the way
 that is, of giving a coherent and constructive account of how the meanings [truth
 conditions) of these sentences depend upon their structure. To see how one of
 the troublesome inferences now goes through. consider (10) rewritten as
-
-the Morning Scar is an eclipse of the Evening Star. Our ordinary ralk of events, of
+the Morning Star is an eclipse of the Evening Star. Our ordinary ralk of events, of
 causes and effects, requires constant use of the idea ofdifferent descriptions of the
 same event. "When it is pointed our that striking the march was nor sufficient to
 light it, what is nor sufficient is nor the event, bur the descriprion of it-it was a
@@ -604,16 +603,6 @@ predicares mar have Iicrle relation to action do. Indeed, the problems we have
 been mainly concerned with are nor at all unique ro ralk of actions: they are
 common ro ralk of events of any kind. An acrion of flying ro the Morning Star is
 identical with an action of Rying ro the Evening Star; bur equally, an eclipse of
-
-•
-
-49
-
-
-
-
-
-
 two ways we can imply that a person acted as an agent: we may use a verb that
 implies it directly, or we may use a verb that is non-committal, and add that the
 act was intentional But when we rake the second course, it is important not to
