@@ -103,7 +103,7 @@ TACL 2016 arXiv:1612.07130v1 [cs.CL] 21 Dec 2016
 * features based on vector α i by taking the signs and indices of its non-zero
   coefficients,
 * linear chain CRF (Lafferty+ 2001) using CRFsuite (Okazaki, 2007)
-  * default coefficients of CRFsuite  for l1 and l2 regularization
+  * default coefficients of CRFsuite for l1 and l2 regularization
 
 # 4 Experiments
 

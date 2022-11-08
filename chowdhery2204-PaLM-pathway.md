@@ -101,27 +101,27 @@ arXiv:2204.02311 [cs.CL]
   (Du+ 2021), GPT-3 (Brown+ 2020), Megatron–Turing NLG (Smith+ 2022), Gopher
   (Rae+ 2021a), Chinchilla (Hoffmann+ 2022), and LaMDA (Thoppilan+ 2022)
 
-## Breakthrough capabilities NLU and generation across a number of difficult
-tasks
+## Breakthrough capabilities: NLU and generation across many difficult tasks
+
 * Section 6.3 presents evaluation on a collection of reasoning tasks, which
   * multi-step mathematical or commonsense reasoning to produce the answer
     Prior SOTA results use a combination of task-specific finetuning,
     domain-specific architectures, and task-specific verifiers
-  * we demonstrate that when model scaling is combined with chain-of-thought
-    prompting (Wei+ 2022b), simple few-shot evaluation can outperform or match
-    the finetuned SOTA on a wide array of reasoning tasks
+  * when model scaling is combined with chain-of-thought prompting (Wei+ 2022b)
+    simple few-shot evaluation can outperform or match the finetuned SOTA
+    on a wide array of reasoning tasks
   * from Conclusion: prompting the model to generate explicit inference chains
-    can drastically increase the quality of the predictions themselves. In
+    can drastically increase the quality of the predictions themselves
     * can be immensely beneficial even for tasks that are modeled as
       categorical prediction or regression, which typically do not require gen
 * In Section 6.2 we additionally highlight breakthrough performance on
-  BIG-bench (BIG-bench collaboration, 2021), a recently released suite of 150+
-  new NLU and generation tasks, many of which are extremely difficult even for
-  humans to correctly answer.  In Figure 1 and Section 9, we demonstrate
-  exploratory capabilities in PaLM’s ability to explicitly interpret and
-  explain complex reasoning chains
-  * Figure 1: These examples demonstrate exploratory capabilities in prompting
-    PaLM to generate explanations using chain-of-thought prompting (Wei+ 2022b)
+  BIG-bench (BIG-bench collaboration, 2021)
+  * BIG-bench: a recently released suite of 150+ new NLU and generation tasks,
+    many of which are extremely difficult even for humans to correctly answer.
+    In Figure 1 and Section 9, we demonstrate PaLM’s exploratory capabilities
+    to explicitly interpret and explain complex reasoning chains
+  * Fig 1 demonstrates exploratory capabilities in prompting PaLM to generate
+    explanations using chain-of-thought prompting (Wei+ 2022b)
     * All examples were generated with greedy (1-best) decoding of PaLM 540B
       The prompting was done with 2-shot exemplars, which are shown in Sec 9,
       along with output on more examples using these same exemplars
