@@ -286,9 +286,11 @@ human-written reference summaries from the 1993-2018 sessions of Congress
 
 ## 6.2 Larger Model Results 6
 
-* larger hidden size (H: 768 → 1024, F: 3072 → 4096, A: 12 → 16), number of
-  layers (L: 12 → 16) and traversed much more data, due to larger batch size
-  (B: 256 → 8192, same number of pre-training steps, 500k)
+* larger
+  * hidden size (H: 768 → 1024, F: 3072 → 4096, A: 12 → 16)
+  * number of layers (L: 12 → 16) and traversed
+  * much more data
+    * larger batch size (B: 256 → 8192, same number of pre-training steps, 500k)
 * We adopted the best practices found in the PEGASUS BASE ablation studies
   using
   * GSG (Ind-Orig) pre-training objective without MLM and Unigram vocabulary

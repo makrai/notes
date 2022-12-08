@@ -83,8 +83,8 @@ Our models and code are available at: https://github.com/pytorch/fairseq
     * separator token between documents. We remove the NSP loss
   * DOC SENTENCES : SENTENCE PAIR + NSP :
     * Inputs may not cross document boundaries
-    * Inputs near the end of a document may be shorter than 512 tokens, so we
-      dynamically increase the batch size in these cases to achieve a similar
+    * Inputs near the end of a document may be shorter than 512 tokens, so
+      we dynamically increase the batch size in these cases to achieve a similar
       number of total tokens as FULL SENTENCES . We remove the NSP loss
 
 ### Results Table 2 shows results for the four different settings
@@ -100,6 +100,6 @@ Our models and code are available at: https://github.com/pytorch/fairseq
   * It is possible that the original BERT implementation may only have removed
     the loss term while still retaining the SEGMENT PAIR input format
 * sequences from a single/multiple document(s): single performs slightly better
-  * hE because the DOC - SENTENCES format results in variable batch sizes, we
-    use FULL SENTENCES in the remainder of our experiments for easier
-    comparison with related work
+  * hE because the DOC - SENTENCES format results in variable batch sizes,
+    we use FULL SENTENCES in the remainder of our experiments
+    for easier comparison with related work

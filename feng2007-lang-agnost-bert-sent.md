@@ -51,7 +51,7 @@ https://tfhub.dev/google/LaBSE
     * The similarity between the source and target sentences is scored using
       cosine over the sentence embeddings produced by the BERT encoders
 * outperforms the previous SOTA, which are mostly bilingual models,
-  on large bitext mining tasks e.g.
+  on large bitext mining tasks e.g
   the United Nations corpus (Ziemski+ 2016) and BUCC (Zweigenbaum+ 2018),
   containing pools with 10Ms and 100,000s of translation candidates, resp
 * Both tasks cover fr, de, es, ru, and zh, languages all having plenty of
@@ -141,14 +141,17 @@ https://tfhub.dev/google/LaBSE
   * default setup for followup works (Chidambaram+ 2018; Yang+ 2019a)
 * We experiment the hard negative mining for Spanish (es) following Guo+ (2018)
   within this LaBSE setup
-  * A weaker dual encoder using the deep averaging network is trained to mine
-    the negatives from the bilingual pool of en-es.  Similar to the
-    cross-accelerator negatives, the mined negatives are also appended to each
-    example. Due to the memory constraint, we only append 3 mined hard negatives
-    in es languages for each en source sentence. Since the amount of examples
-    increased 4x per en sentence in es batches, We also decrease batch size from
-    128 to 32 in the hard negative experiment. To get fair comparison, we
-    trained 200k steps for the experiment instead of 50k in other experiments
+  * negative mining
+    * A weaker dual encoder using the deep averaging network is trained
+      to mine the negatives from the bilingual pool of en-es
+    * Similar to the cross-accelerator negatives,
+      the mined negatives are also appended to each example
+    * Due to the memory constraint, we only append 3 mined hard negatives in es
+      languages for each en source sentence
+    * Since the amount of examples increased 4x per en sentence in es batches,
+  * We also decrease batch size from 128 to 32 in the hard negative experiment
+  * To get fair comparison, we trained 200k steps for the experiment
+    instead of 50k in other experiments
   * For languages other than `es`, batch size was decreased to 32
 * Removing the cross-accelerator sampling hurts the model performance slightly
   * hard negatives don't help the LaBSE model’s performance

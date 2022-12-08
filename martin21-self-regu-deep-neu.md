@@ -130,31 +130,31 @@ Journal of ML Research 22(165):1−73, 2021
     consistent with implicit Self-Regularization that is Tikhonov-like; and
   * for modern SOTA models, these results suggest
     novel forms of Heavy-Tailed Self-Regularization
-  * Capacity Control Metrics
-    * We study simple capacity control metrics, the Matrix Entropy, the linear
-      algebraic or Hard Rank, and the Stable Rank
-    * We also use RMT to define a new metric, the MP Soft Rank
-    * These metrics track the amount of Self-Regularization
-      * either during training or in a pre-trained DNN
-  * Self-Regularization in old/small models. The ESDs of older/smaller DNNs
-    * models like LeNet5 and a toy MLP3 model
-    * weak Self-Regularization,
-      * well-modeled by a perturbative variant of MP theory, the
-        Spiked-Covariance model
-      * a small number of eigenvalues pull out from the random bulk, and thus
-        the MP Soft Rank and Stable Rank both decrease
-      * like explicit Tikhonov regularization, in that
-        there is a “size scale” that cleanly separates “signal” from “noise,”
-  * Heavy-Tailed Self-Regularization. The ESDs of larger, modern DNN models
-    * models including AlexNet and Inception and
-      nearly every other large-scale model we have examined
-    * deviate strongly from the common Gaussian-based MP model
-      * in one of the very different Universality classes of Heavy-Tailed
-        random matrix models. We call this Heavy-Tailed Self-Regularization
-      * the MP Soft Rank vanishes, and the Stable Rank decreases, but
-        the full Hard Rank is still retained
-      * The ESD fully (or partially) Heavy-Tailed, but with finite support
-      * no “size scale” (even in the theory) that separates “signal” vs “noise”
+* Capacity Control Metrics
+  * We study simple capacity control metrics, the Matrix Entropy, the
+    linear algebraic or Hard Rank, and the Stable Rank
+  * We also use RMT to define a new metric, the MP Soft Rank
+  * These metrics track the amount of Self-Regularization
+    * either during training or in a pre-trained DNN
+* Self-Regularization in old/small models. The ESDs of older/smaller DNNs
+  * models like LeNet5 and a toy MLP3 model
+  * weak Self-Regularization,
+    * well-modeled by a perturbative variant of MP theory, the
+      Spiked-Covariance model
+    * a small number of eigenvalues pull out from the random bulk, and thus
+      the MP Soft Rank and Stable Rank both decrease
+    * like explicit Tikhonov regularization, in that
+      there is a “size scale” that cleanly separates “signal” from “noise,”
+* Heavy-Tailed Self-Regularization. The ESDs of larger, modern DNN models
+  * models including AlexNet and Inception and
+    nearly every other large-scale model we have examined
+  * deviate strongly from the common Gaussian-based MP model
+    * in one of the very different Universality classes of Heavy-Tailed
+      random matrix models. We call this Heavy-Tailed Self-Regularization
+    * the MP Soft Rank vanishes, and the Stable Rank decreases, but
+      the full Hard Rank is still retained
+    * The ESD fully (or partially) Heavy-Tailed, but with finite support
+    * no “size scale” (even in the theory) that separates “signal” vs “noise”
 
 ### Main Theoretical Results: an operational the-
 

@@ -236,8 +236,8 @@ studies to say this conclusively
   * results certainly support the conclusion drawn in Hoffmann+ (2022) that
     Gopher was under-trained for a model of its size, however,
     we cannot use these results to extrapolate an answer to our critical
-    scaling question (“How would a model of size X trained on Y tokens compared
-    to PaLM 540B?”)
+    scaling question
+    (“How would a model of size X trained on Y tokens compared to PaLM 540B?”)
 * There are several reasons why this is a difficult question to answer:
   1. In order to draw strong conclusions, such experiments would have to be
      performed at scale, which has a large computational cost
