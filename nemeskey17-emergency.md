@@ -11,16 +11,14 @@ Dávid Márk Nemeskey · Judit Ács · András Kornai
 ## 2.2 Corpus-based, manual seed
 
 * theoretical justification of ignoring negative evidence
-  * Kornai et al (2003 EACL) Classifying the Hungarian Web
+  * Kornai+ (2003 EACL) Classifying the Hungarian Web
 
 # 3 Semantic similarity
 
 # 6 Conclusion
 
-* iterated keyword-weight bootstrap the
+* iterated keyword-weight bootstrap
   * simple recall-based ranking of selecting and weighing keywords
-    * Kornai et al (2003)
-  * slightly more complex Bi-Normal Separation method advocated in
-    * Forman (2003).
-  * In better resourced languages: based on word vectors
-    * Hashimoto et al (2016)
+    * Kornai+ (2003)
+  * slightly more complex Bi-Normal Separation method (Forman 2003)
+  * In better resourced languages: based on word vectors (Hashimoto+ 2016)

@@ -11,9 +11,9 @@ NeurIPS 2019
 * XLNet, a generalized autoregressive pretraining method that 
   * enables learning bidirectional contexts by maximizing the expected
     likelihood over all permutations of the factorization order and 
-  * overcomes the limitations of BERT thanks to its autoregressive formulation.
+  * overcomes the limitations of BERT thanks to its autoregressive formulation
   * integrates ideas from Transformer-XL, the SOTA autoregressive model, into
     pretraining
 * Empirically, under comparable experiment settings, XLNet
   outperforms BERT on 20 tasks, often by a large margin, including
-  QA, natural language inference, sentiment analysis, and document ranking. 
+  QA, natural language inference, sentiment analysis, and document ranking 

@@ -13,8 +13,8 @@ https://github.com/CalculatedContent/ww-trends-2020
     data, the loss function, the hyperparameter values, how regularized
 * say something about the expected performance or quality of the models
 * we: a detailed meta-anal of hundreds of publicly available pretrained models
-  * norm-based capacity control metrics as well as power law based metrics from
-    the recently-developed Theory of Heavy-Tailed Self Regularization
+  * norm-based capacity control metrics as well as power law based metrics
+    from the recently-developed Theory of Heavy-Tailed Self Regularization
 * norm based metrics
   * correlate well with reported test accuracies for well-trained models, but
   * often cannot distinguish well-trained versus poorly trained models
@@ -28,8 +28,8 @@ https://github.com/CalculatedContent/ww-trends-2020
 # [Intro] A common problem in machine learning (ML) is to evaluate the quality
 
 * training/testing curves give very limited insight into the overall properties
-  * not take into account the (often large human and CPU/GPU) time for
-    hyperparameter ﬁddling
+  * not take into account the time for hyperparameter ﬁddling
+    * often large human and CPU/GPU time
   * not correlate with robustness, fairness or interpretability
   * when the model user is not the model developer
     * no access to the training data or the testing data
@@ -47,12 +47,13 @@ https://github.com/CalculatedContent/ww-trends-2020
   clearly not going to be well-suited to address problems such as this
 * examine the weight matrices of pretrained models, properties eg
   * norms of weight matrices and/or
-    * have been used in traditional statistical learning theory to bound
-      capacity and construct regularizers
+    * have been used in traditional statistical learning theory
+      to bound capacity and construct regularizers
   * parameters of Power Law (PL) ﬁts of the eigenvalues of weight matrices
     * based on statistical mechanics approaches to deep neural networks (DNNs)
-* we want to examine different models across common architecture series, and we
-  want to compare models between different architectures themselves
+* we want to compare ~
+  * different models across common architecture series
+  * models between different architectures themselves
 * we consider hundreds of publicly available models,
   mostly from computer vision (CV) and natural language processing (NLP)
   * there are eg hundreds of pretrained models in CV (≥500) and NLP (≈100)
@@ -60,12 +61,12 @@ https://github.com/CalculatedContent/ww-trends-2020
   * in a year or two there will be an order of magnitude or more models
 * main results
   * norm-based metrics do a reasonably good job at predicting quality trends in
-    welltrained CV/NLP models
+    well-trained CV/NLP models
   * norm-based metrics may give spurious results when applied to poorly trained
     models (eg models trained without enough data, etc.)
     * eg they may exhibit what we call Scale Collapse for these models
   * PL-based metrics can do much better at predicting quality trends in
-    pretrained CV/NLP models.  In particular,
+    pretrained CV/NLP models
     * a weighted PL exponent
       (weighted by the log of the spectral norm of the corresponding layer) is
       quantitatively better at discriminating among a series of well-trained
@@ -105,18 +106,18 @@ https://github.com/CalculatedContent/ww-trends-2020
   pyTorch models 5
   * These models have been trained and evaluated on labeled data {x i ; y i }
     \in D, using standard techniques
-  * We do not have access to this data, and we have not trained any of the
-    models ourselves
+  * We do not have access to this data, and
+    we have not trained any of the models ourselves
   * Our methodological approach is thus similar to a statistical meta-analysis,
     common in biomedical research, but uncommon in ML
   * Computations were performed with the publicly available WeightWatcher tool
-    (version 0.2.7) 6 .  To be fully reproducible, we only examine publicly
+    (version 0.2.7) 6.  To be fully reproducible, we only examine publicly
     available, pretrained models, and we provide all Jupyter and Google Colab
 * Our approach involves analyzing individual DNN weight matrices, for fully
   connected and/or convolutional layers (depending on the architecture)
-  * Each DNN layer contains one or more layer 2D N l × M l weight matrices, W
-    l, or pre-activation maps, W i,l, eg extracted from 2D Convolutional
-    layers, where N > M. (We may drop the i and/or i, l subscripts below.)
+  * Each DNN layer contains one or more layer 2D N l × M l weight matrices W l,
+    or pre-activation maps, W i,l, eg extracted from 2D Convolutional layers,
+    where N > M. (We may drop the i and/or i, l subscripts below.)
   * The best performing quality metrics depend on the norms and/or spectral
     properties of each weight matrix, W, and/or, equivalently, it’s empirical
     correlation matrix, X = W T W
@@ -131,7 +132,7 @@ https://github.com/CalculatedContent/ww-trends-2020
   * λ i is the i th eigenvalue of the X, λ max is the maximum eigenvalue, and
     α is the ﬁtted PL exponent
   * These eigenvalues are squares of the singular values σ i of W, λ i = σ 2 i
-  * All four metrics can be computed easily from DNN weight matrices
+* All four metrics can be computed easily from DNN weight matrices
 * The ﬁrst two metrics are well-known in ML
 * The last two metrics deserve special mention, as they
   * depend on an empirical parameter α that is the PL exponent that arises in
@@ -174,8 +175,8 @@ https://github.com/CalculatedContent/ww-trends-2020
   * smaller exponents α correspond to more implicit self-regularization and
     better generalization, and
   * we expect a linear correlation between α^ and model quality 1–3
-* For norm-based metrics, we use the average of the log norm, to the
-  appropriate power
+* norm-based metrics for more mxs
+  * we use the average of the log norm, to the appropriate power
   * Informally, this amounts to
     assuming that the layer weight matrices are statistically independent,
     => we can estimate the model complexity C, or test accuracy, with a
@@ -211,12 +212,12 @@ https://github.com/CalculatedContent/ww-trends-2020
     ﬁt the histogram of eigenvalues, ρ(λ), to a truncated PL,
     ρ(λ) ~ λ α ; λ \in [λ min ; λ max] (13)
     where λ max is the largest eigenvalue of X = W T W, and where
-    λ min is selected automatically to yield the best (in the sense of
-    minimizing the K-S distance) PL ﬁt
+    λ min is selected automatically to yield the best PL ﬁt
+    (best in the sense of minimizing the K-S distance)
 * Each of these quantities is deﬁned for a given layer W matrix. See Fig. 1
 * To avoid confusion, let us clarify the relationship between α and α^
-  * We ﬁt the ESD of the correlation matrix X to a truncated  PL, parameterized
-    by 2 values: the PL exponent α, and the maximum eigenvalue λ max
+  * We ﬁt the ESD of the correlation matrix X to a truncated PL,
+    paramed by 2 values: the PL exponent α, and the maximum eigenvalue λ max
   * The PL exponent α measures the amount of correlation in a layer weight mx W
     * valid for λ ≤ λ max, and it is scale-invariant, ie it does
       not depend on the normalization of W or X
@@ -241,14 +242,14 @@ https://github.com/CalculatedContent/ww-trends-2020
   * variants of BERT, Transformer-XML, GPT, etc
   * Transformer architectures consist of blocks of so-called Attention layers,
     containing two large, Feed Forward (Linear) weight matrices 28
-  * Attention matrices are signiﬁcantly larger In contrast to smaller
+  * Attention matrices are signiﬁcantly larger. In contrast to smaller
     pre-Activation maps arising in Cond2D layers,
   * In general, they have larger PL exponents α
     * Based on HT-SR Theory (in particular, the interpretation of values of α ~
       2 as modeling systems with good correlations over many size scales 8,21),
       this suggests that these models
-      * fail to capture successfully many of the information correlations in
-        the data (relative to their size) and thus
+      * fail to capture successfully many of the info corr in the data
+        (relative to their size) and thus
       * substantially under-trained
   * compared to CV models, modern NLP models have larger weight matrices and
     display different spectral properties
@@ -262,9 +263,9 @@ https://github.com/CalculatedContent/ww-trends-2020
 * PL-based metrics, including the Log α-Norm metric and the Weighted Alpha
   * more consistent behavior, even on less well-trained models
   * To help identify when architectures need repair and when more and/or better
-    data are needed, one can use these metrics, as well as the decomposition of
-    the Weighted Alpha metric (α log λ max) into its PL component (α) and its
-    norm component (log λ max ), for each layer
+    data are needed, one can use these metrics, as well as
+    the decomposition of the Weighted Alpha metric (α log λ max) into its
+    PL component (α) and its norm component (log λ max ), for each layer
 * early variants of GPT and BERT, have weight matrices with
   unusually large PL exponents (eg α >> 6). This indicates these matrices may
   be under-correlated (ie over-parameterized, relative to the amount of data)
@@ -285,19 +286,19 @@ https://github.com/CalculatedContent/ww-trends-2020
     * training the same model with low-quality data versus high-quality data
   * can generate fake text that appears to the human to be real
   * media attention because of the potential for their misuse
-  * => the original GPT model released by OpenAI was trained on a deﬁcient data
-    set, rendering the model interesting but not fully functional
+  * => the original GPT model released by OpenAI was trained on deﬁcient data,
+    rendering the model interesting but not fully functional
   * much improved model, GPT2-small, which has
-    the same architecture and number of layers as GPT, but which has been
-    trained on a larger and better data set, making it
-    remarkably good at generating (near) human-quality fake text
+    * same architecture and number of layers as GPT, but which has been
+    * trained on a larger and better data set, making it
+    * remarkably good at generating (near) human-quality fake text
   * Subsequent models in the GPT2 were larger and trained to more data
   * By comparing GPT2-small to GPT2-medium to GPT2-large to GPT2-xl, we can
-    examine the effect of increasing data set and model size simultaneously, as
-    well as analyze well-trained versus very-well-trained models
+    * examine the effect of increasing data set and model size simultaneously,
+    * analyze well-trained versus very-well-trained models
   * By comparing the poorly trained GPT to the well-trained GPT2-small, we can
-    identify empirical indicators for when a model has been poorly trained and
-    thus may perform poorly when deployed
+    identify empirical indicators for when
+    a model has been poorly trained and thus may perform poorly when deployed
   * The GPT models we analyze are deployed with the HuggingFace PyTorch library
 * We examine the performance of the four quality metrics
   (Log Frobenius norm, Log Spectral norm, Weighted Alpha, and Log α-Norm) for
@@ -315,13 +316,13 @@ https://github.com/CalculatedContent/ww-trends-2020
       all these metrics now behave as expected, ie there is
       no Scale Collapse and norms are decreasing with increasing accuracy
 * Comparing trends between GPT and GPT2-small reveals a different story
-  * all four metrics increase when going from GPT to GPT2-small, ie they are
-    larger for the higher-quality model
-    (higher quality since GPT2-small was trained to better data) and
-    smaller for the lower-quality model, when the number of layers is ﬁxed
+  * all four metrics increase when going from GPT to GPT2-small
+    * ie larger metrics for the higher-quality model
+      (higher quality since GPT2-small was trained to better data) and
+      smaller for the lower-quality model, when the number of layers is ﬁxed
   * This is unexpected
   * we can perform model diagnostics, by separating α ^ into its two components
-    * α and λ max, and examining the distributions of each.  In doing so,
+    * α and λ max, and examining the distributions of each
     * => we see additional examples of Scale Collapse and
       additional evidence for Correlation Flow
 * We next examine the Spectral norm in GPT versus GPT2-small. In Fig. 6a,
@@ -359,16 +360,15 @@ https://github.com/CalculatedContent/ww-trends-2020
   * The older deﬁcient GPT has numerous unusually large α exponents
     * ie not well-described by a PL ﬁt
     * as expected: a poorly trained model will lack good (ie small α) PL
-      behavior in many/ most layers
-  * On the other hand, the newer improved GPT2-small model has, on average,
-    smaller α values than the older GPT, with all α ≤ 6 and with smaller
-    mean/median α
+      behavior in many/most layers
+  * nL the newer improved GPT2-small model has, on average, smaller α values
+    than the older GPT, with all α ≤ 6 and with smaller mean/median α
     * far fewer unusually large outlying α values than GPT
   * From this (and other results not shown), we see that α from Eq. (12),
     provides a good quality metric for comparing the poorly trained GPT versus
     the well-trained GPT2-small
-  * contrasted with the behavior displayed by scale-dependent metrics such as
-    the Frobenius norm (not shown) and the Spectral norm
+  * contrasted with the behavior displayed by scale-dependent metrics
+    such as the Frobenius norm (not shown) and the Spectral norm
   * This also reveals why α ^ performs unusually in Table 2
   * The PL exponent α behaves as expected, and thus
     the scale-invariant α metric lets us identify potentl poorly trained models
@@ -402,9 +402,9 @@ https://github.com/CalculatedContent/ww-trends-2020
   * Also, from Fig. 8b, we see that, unlike GPT, the
     layer Log Alpha Norms behave more as expected for GPT2 layers, with the
     larger models consistently having smaller norms
-    (9.96 for GPT2-medium, 7.982 for GPT2large, and 7.49 for GPT2-xl)
+    (9.96 for GPT2-medium, 7.982 for GPT2-large, and 7.49 for GPT2-xl)
   * Similarly, the Log Spectral Norm also decreases on average with the larger
-    models (2.58 for GPT2medium, 1.99 for GPT2-large, and 1.92 for GPT2-xl)
+    models (2.58 for GPT2-medium, 1.99 for GPT2-large, and 1.92 for GPT2-xl)
   * As expected, the norm metrics can indeed distinguish
     among well-trained versus very-well-trained models
   * While the means and peaks of the α distributions are getting smaller,
@@ -436,8 +436,8 @@ https://github.com/CalculatedContent/ww-trends-2020
     * ResNet models of up to 1000 layers have been trained 32
 * The efﬁciency and effectiveness of ResNet seems to be reﬂected in the smaller
   and more stable α ~ 2.0, across nearly all layers,
-  indicating that the inner layers are very well correlated and more strongly
-  optimized
+  indicating that the inner layers are very well correlated and
+  more strongly optimized
 * This contrasts with the DenseNet models, which contains
   many connections between every layer. These results
   (large α, meaning that even a PL model is probably a poor ﬁt)
@@ -456,14 +456,14 @@ https://github.com/CalculatedContent/ww-trends-2020
       techniques from quantitative ﬁnance, random matrix theory, and the
       statistical mechanics of heavy tailed and strongly correlated systems 34
   * using norm-based metrics to bound generalization error 37–39
-    * theoretical work aims to prove generalization bounds, and this
+    * theoretical work aims to prove generalization bounds
     * applied work then uses these norms to construct regularizers
   * Proving generalization bounds and developing new regularizers is
     very different than our focus on validating pretrained models
 * understanding DNNs with the information bottleneck principle 24,25
   * Our work also has intriguing similarities and differences with ^
-  * posits that DNNs can be quantiﬁed by the mutual information between their
-    layers and the input and output variables
+  * posits that DNNs can be quantiﬁed by the
+    mutual information between their layers and the input and output variables
   * we not require access to any data, while information measures used in the
     information bottleneck approach do require this
   * nL, several results from HT-SR Theory, on which our metrics are based,
@@ -474,6 +474,12 @@ https://github.com/CalculatedContent/ww-trends-2020
 * our work, is the ﬁrst to perform a detailed analysis of the weight matrices
   * starting in 2018 with the WeightWatcher tool 6
   * two concurrent works 40,41
+    * [40] G. Eilertsen, D. Jönsson, T. Ropinski, J. Unger, and A. Ynnerman.
+      Classifying the classifier: dissecting the weight space of neural
+      arXiv:2002.05688, 2020.
+      [41] T  Unterthiner, D Keysers, S Gelly, O Bousquet, and I  Tolstikhin
+      Predicting neural network accuracy from weights
+      arXiv:2002.11448, 2020.
   * Both of these papers validate our basic result that
     one can gain substantial insight into model quality by examining weight
     matrices without access to any training or testing data
@@ -486,10 +492,10 @@ https://github.com/CalculatedContent/ww-trends-2020
   eg to bound generalization error or to construct regularizers)
   * PL-based metrics perform better than norm-based metrics
     * not surprising—at least to those familiar with the statistical mechanics
-      of heavy tailed and strongly correlated systems 8,21–23 —since our use of
-      PL exponents is designed to capture the idea that
-      well-trained models capture information correlations over many size
-      scales in the data
+      of heavy tailed and strongly correlated systems 8,21–23 —since
+      our use of PL exponents is designed to capture the idea that
+      well-trained models capture
+      information correlations over many size scales in the data
   * Our approach provides ﬁne-scale insight (rationalizing the ﬂow of
     correlations or the collapse of size scale) throughout a network
     * Both Correlation Flow and Scale Collapse are important for improved
@@ -512,7 +518,7 @@ https://github.com/CalculatedContent/ww-trends-2020
 
 ## Special consideration for NLP models
 
-* in NLP models (and other models with large initial embeddings)
+* in NLP models (and other models with large initial embeddings),
   the embedding layers frequently lack the implicit 1/sqrt N normalization
 * eg in GPT, for most layers, the maximum eigenvalue λ max O(10  100), but
   in the ﬁrst embedding layer, the maximum eigenvalue is of order N (the

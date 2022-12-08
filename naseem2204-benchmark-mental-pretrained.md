@@ -1,9 +1,6 @@
-
 Benchmarking for Public Health Surveillance tasks on Social Media
   with a Domain-Specific Pretrained Language Model
-
 Usman Naseem, Byoung Chan Lee, Matloob Khushi, Jinman Kim, Adam G. Dunn
-
 ACL2022 : The First Workshop on Efficient Benchmarking in NLP arXiv:2204.04521
 
 https://huggingface.co/publichealthsurveillance/PHSBERT
@@ -13,9 +10,9 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 * health info on social media to enhance public health surveillance (PHS)
   * identify possible outbreaks, forecast disease trends, monitor emergency
     cases, and ascertain disease awareness and response to official health
-    correspondence Despite its potential, the technology is still in its early
+    correspondence. Despite its potential, the technology is still in its early
 * pretrained language models (PLMs) have facilitated the development of several
-  domain-specific PLMs and a variety of downstream applications. However, there
+  domain-specific PLMs and a variety of downstream applications
   * no PLMs for social media tasks involving PHS
 * We present and release PHS-BERT, a transformer-based PLM, to identify tasks
   * compared and benchmarked the performance of PHS-BERT on 25 datasets from
@@ -101,7 +98,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   (MLP) with the hyperbolic tangent activation function and used Adam optimizer
   (Kingma and Ba, 2014).  The models are trained with a one cycle policy
   (Smith, 2017) at a maximum learning rate of 2e-05 with momentum cycled
-  between 0.85 and 0.95.
+  between 0.85 and 0.95
 
 # 4 Experimental Analysis
 
@@ -130,9 +127,8 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * PHM (Karisani and Agichtein, 2018), HMC2019 (Biddle+ 2020) and
     RHMD 5 health mention-related datasets
 4. Vaccine sentiment: Vaccines are a critical component of public health. On
-   the other hand, vaccine hesitancy and refusal can result in clusters of
-   low vaccination coverage, diminishing the effectiveness of vaccination
-   programs. Identifying vaccine-related concerns on social media makes it
+  * vaccine hesitancy and refusal can result in clusters of low vaccination
+     coverage, diminishing the effectiveness of vaccination programs
   * VS1 (Dunn+ 2020) and VS2 (Müller and Salathé, 2019) vaccine-related Twitter
 5. COVID related: Due to the ongoing pandemic, there is a higher need for tools
   * identify COVID-19-related misinformation and sentiment on social media
@@ -241,11 +237,14 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     * The total number of tweets is 18,503, with 8,965 pro-vaccine tweets,
       1,976 anti-vaccine tweets, and 7,562 neutral tweets
 6. COVID: We used 5 covid related datasets to test our model
-  * COVID Lies (Hossain+ 2020): 6761 tweets annotated by experts with known
-    COVID-19 misconceptions and
-    tweets that agree, disagree, or express no stance
+  * COVID Lies (Hossain+ 2020)
+    * 6761 tweets annotated by experts with known COVID-19 misconceptions
+    * tweets that agree, disagree, or express no stance
   * Covid category (Müller+ 2020)
-    * Amazon Turk annotators 
+    Martin Müller, Marcel Salathé, and Per E Kummervold
+    Covid-twitter-bert: An NLP model to analyse covid-19 content on twitter
+    arXiv preprint arXiv:2005.07503
+    * Amazon Turk annotators
       * Crowdbreaks was used to perform the annotation
     * tweet texts classified as personal narrative or news
   * COVIDSenti: We used a newly released large-scale sentiment dataset,
@@ -269,7 +268,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     tweet is reporting an adverse drug reaction (Weissenbacher+ 2018)
   * SMM4H T2: Drug Intake Classification (SMM4H Task 2, Weissenbacher+ 2018)
     * tweets manually categorized as definite intake/possible intake/no intake
-  * HRT: Health related tweets (HRT, Paul and Dredze, 2012) 
+  * HRT: Health related tweets (HRT, Paul and Dredze, 2012)
     * collected using Twitter and
       manually annot using Mechanical Turk as related or unrelated to health
     * Health-related tweets were further labeled as

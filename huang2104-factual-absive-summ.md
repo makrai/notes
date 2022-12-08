@@ -30,7 +30,7 @@ arXiv preprint arXiv:2104.14839, 2021 arxiv.org
 
 * Conventional abstractive summarization methods usually
   extract some keywords from the source document, and then
-  reorder and perform linguistically motivated transformations to these keywords
+  reordering + linguistically motivated transformations to these keywords
   [Zajic+ 2004]
   * easy to produce influent sentences [Hahn and Mani, 2000]
 * encoder and decoder

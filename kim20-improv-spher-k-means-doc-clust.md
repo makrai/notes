@@ -40,4 +40,12 @@ Expert Systems with Applications Volume 150, 15 July 2020, 113288
 
 # 3 our new methods to overcome these problems
 
-# 4 their performances
+# 4 performance
+
+* For each of our enhancements on document clustering, we validate their
+  performances based on numerous criteria listed in Table 2 .
+  * Dispersed init: Initialization speed, Stability of the clustering result
+  * Centroid sparsity:
+    * Sparsity of centroids
+    * Stability of the clustering result after applying sparse centroid repr
+  * Cluster labeling ∗ Qualitative analysis

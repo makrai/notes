@@ -5,51 +5,51 @@ ACL | IJCNLP 2021
 # Abstract
 
 * Shapley Values,
-  * a solution to the credit assignment problem in cooperative game theory, are
-    a popular type of explanation in machine learning, having been used to
+  * a solution to the credit assignment problem in cooperative game theory,
+  * a popular type of explanation in machine learning, having been used to
     explain the importance of features, embeddings, and even neurons
-  * In NLP, hE, leave-one-out and attention-based explanations still predominate
+  * hE In NLP, leave-one-out and attention-based explanations still predominate
   * many desirable theoretical qualities
 * Can we draw a connection between these different methods?
-  * We formally prove that — save for the degenerate case — attention weights
-    and leave-one-out values cannot be Shapley Values
+  * We formally prove that — save for the degenerate case —
+    attention weights and leave-one-out values cannot be Shapley Values
   * Attention flow is a post-processed variant of attention weights
-    * obtained by running the max-flow algorithm on the attention graph. Perhaps
-    * are indeed Shapley Values, at least at the layerwise level.  Given the
+    * obtained by running the max-flow algorithm on the attention graph
+    * are indeed Shapley Values, at least at the layerwise level
     * should be adopted alongside more traditional ones
 
 # 1 Intro
 
 * model prediction as a cooperative effort between the potential subjects of an
-  explanation (e.g., input tokens) (Lundberg and Lee, 2017). But
+  explanation (eg input tokens) (Lundberg and Lee, 2017)
   * how should we allocate the credit for a prediction, given that
     some subjects contribute more than others
-    (e.g., the sentiment words in sentiment classification)?  The
-* Shapley Value is a solution to this problem that
+    (eg the sentiment words in sentiment classification)?
+* Shapley Value is a solution to this problem
   * uniquely satisfies several criteria for equitable allocation
-    (Shapley, 1953). However, while Shapley Value explanations have been
+    (Shapley, 1953)
   * widely adopted by the ML community
     * to analyze the importance of features, neurons, and even training data
-      (Ghorbani and Zou, 2019, 2020) — they have had
-* For example, consider a token whose masking out does not impact the prediction
+      (Ghorbani and Zou, 2019, 2020)
+* eg consider a token whose masking out does not impact the prediction
   * regardless of how many other tokens in the sentence are also masked out
-  * In game theory, such a token would be called a null player, whose Shapley
-    Value is guaranteed to be zero (Myerson, 1977; Young, 1985)
+  * In game theory, such a token would be called a null player,
+    whose Shapley Value is guaranteed to be zero (Myerson, 1977; Young, 1985)
 * we first prove that — save for the degenerate case —
-  attention weights and leaveone-out values cannot be Shapley Values
+  attention weights and leave-one-out values cannot be Shapley Values
   * More formally, there is no
-    * set of players (i.e., possible subjects of an explanation, such as tokens)
-    * payoff (i.e., function defining prediction quality) such that
-    the values induced by attention or leave-oneout also satisfy the definition
-    of a Shapley Value
+    * set of players (ie possible subjects of an explanation, such as tokens)
+    * payoff (ie function defining prediction quality) such that
+    the values induced by attention or leave-one-out
+    also satisfy the definition of a Shapley Value
 * attention flow, a post-processed variant of attention weights
   * obtained by running the max-flow algorithm on the attention graph
     (Abnar and Zuidema, 2020). We prove that
-  * when the players all come from the same layer (eg tokens in the input layer)
+  * when the players all come from the same layer (eg tokens in the input lay)
     there exists a payoff function such that attention flows are Shapley Values
 * we can extend the theoretical guarantees associated with the Shapley Value
   * these guarantees are axioms of faithful interpretation, and having them can
-    increase confidence in interpretations of black-box NLP models. For this
+    increase confidence in interpretations of black-box NLP models
 * NLP practitioners should use attention flow-based explanations
   alongside more traditional ones, such as gradients (Feng+ 2018; Smilkov+ 2017)
 * We conclude by discussing some of the limitations in calculating Shapley
@@ -59,8 +59,8 @@ ACL | IJCNLP 2021
 
 * Many have argued that attention weights
   * not a faithful explanation, on the basis of
-    * consistency (i.e., poor correlation with other importance measures) and
-    * non-exclusivity (i.e., multiple explanations leading to the same outcome)
+    * consistency (ie poor correlation with other importance measures) and
+    * non-exclusivity (ie multiple explanations leading to the same outcome)
     (Jain and Wallace, 2019). Others have countered that they
   * have some utility (Wiegreffe and Pinter, 2019). Without making assumptions
 
@@ -104,8 +104,8 @@ ACL | IJCNLP 2021
 * Finding TU-games for which the Shapley Value can be calculated exactly in
   polynomial time — as with attention flow -– is an important future work  These
   * may come with trade-offs
-    e.g. SHAP is a kind of Shapley Value that assumes contributions are linear
-    (i.e., a coalition can’t be greater than the sum of its parts), which makes
+    eg SHAP is a kind of Shapley Value that assumes contributions are linear
+    (ie a coalition can’t be greater than the sum of its parts), which makes
     * much faster to calculate but restricts the set of possible payoff
       functions (Lundberg and Lee, 2017).  Still, such methods
   * will be critical to providing explanations that are both fast and faithful

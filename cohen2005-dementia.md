@@ -28,7 +28,7 @@ ACL 2020
   be identified on the basis of linguistic anomalies observed in transcripts of
   elicited speech samples have intensified in the last several years
   * Fraser+ 2016
-    * Linguistic features identify alzheimer’s disease in narrative speech
+    * Linguistic features identify Alzheimer’s disease in narrative speech
   * Yancheva and Rudzicz, 2016
     * Vectorspace topic models for detecting alzheimer’s disease
   * Orimaye+ 2017

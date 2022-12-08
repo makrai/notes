@@ -1,7 +1,7 @@
 Sparse Coding of Neural Word Embeddings
   for Multilingual Sequence Labeling
-TACL 2016 arXiv:1612.07130v1 [cs.CL] 21 Dec 2016
 Gábor Berend
+TACL 2016 arXiv:1612.07130v1 [cs.CL] 21 Dec 2016
 
 # Abstract
 
@@ -103,7 +103,7 @@ Gábor Berend
 * features based on vector α i by taking the signs and indices of its non-zero
   coefficients,
 * linear chain CRF (Lafferty+ 2001) using CRFsuite (Okazaki, 2007)
-  * default coefficients of CRFsuite  for l1 and l2 regularization
+  * default coefficients of CRFsuite for l1 and l2 regularization
 
 # 4 Experiments
 
@@ -191,9 +191,9 @@ Gábor Berend
 #### Comparing sparse coding techniques
 
 * constraining D
-  * we explicitly constrain D to be a member of the convex set of matrices
-    comprising of column vectors having a pre-defined upper bound on their
-    norm
+  * we explicitly constrain D
+    * column vectors having a pre-defined upper bound on their norm
+    * a convex set of matrices
   * Faruqui
     * implicitly control for the norms of the basis vectors by an additional
       regularization term affected by an extra parameter τ
@@ -210,10 +210,9 @@ Gábor Berend
   * Figure 6b relative frequency of basis vectors taking part in the
     reconstruction of word embeddings
   * Figure 7
-    * correlation
-      * between the of basis vectors'
+    * correlation between two properties of the basis vectors
         * l2 norm
-        * the number of times they are assigned a non-zero coefficient in α for
+        * the number of times they are assigned a non-zero coefficient in α
       * strong for SC-3 and SC-4 but not for SC-1
 
 ### 4.2.2 Experiments using UD treebanks

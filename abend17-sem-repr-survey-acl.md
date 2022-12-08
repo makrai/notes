@@ -67,7 +67,7 @@ Omri Abend and Ari Rappoport
   * secondary relations (modifiers, non-core elements)
 * ontology or a lexicon of _event types_ (also a predicate lexicon), which
   categorizes semantically similar events evoked by different lexical items
-  e.g. FrameNet defines frames as schematized story fragments
+  eg FrameNet defines frames as schematized story fragments
   evoked by a set of conceptually similar predicates
 * not be confused with events as defined in Information Extraction
   * event coreference (Humphreys+ 1997)
@@ -98,13 +98,13 @@ Omri Abend and Ari Rappoport
     * make the frame unique and different from other frames, and
   * peripheral arguments
     * introduce additional, independent or distinct relations
-    * e.g. time, place, manner, means and degree (Ruppenhofer+ 2016)
+    * eg time, place, manner, means and degree (Ruppenhofer+ 2016)
 
 ## Semantic Roles
 
 * FrameNet
   * roles are shared across predicates that evoke the same frame type
-    e.g. “leave” and “depart”
+    eg “leave” and “depart”
 * PropBank
   * roles are verb-specific
   * role sets were extended by subsequent projects such as AMR
@@ -127,7 +127,7 @@ Omri Abend and Ari Rappoport
 * scripts
   * schematic, temporally ordered sequences of events associated with a certain
     scenario (Chambers and Jurafsky, 2008, 2009; Regneri+ 2010)
-  * e.g. going to a restaurant
+  * eg going to a restaurant
 * causal relations between events
   * applications, including planning and entailment
   * annotation schemes for causality and its sub-types
@@ -136,7 +136,7 @@ Omri Abend and Ari Rappoport
     relations into a unified representation
 * internal temporal structure of events has been less frequently tackled
   * Moens and Steedman (1988) defined an ontology for the temporal components
-    e.g. preparatory process (e.g., “climbing a mountain”), or its culmination
+    eg preparatory process (eg “climbing a mountain”), or its culmination
     (“reaching its top”)
 * Statistical work on this topic is unfortunately scarce
   * aspectual classes
@@ -145,7 +145,7 @@ Omri Abend and Ari Rappoport
 
 ## Spatial Relations 80
 
-* cognitive theories of meaning (e.g., Langacker, 2008), and in
+* cognitive theories of meaning (eg Langacker, 2008), and in
 * geographical information systems or robotic navigation
 * Spatial Role Labeling (Kordjamshidi+ 2012)
 * SpaceEval (Pustejovsky+ 2015)
@@ -162,17 +162,17 @@ Omri Abend and Ari Rappoport
   * Penn Discourse Treebank (PeDT; Miltsakaki+ 2004)
     * classifies the relations between discourse units
       * hierarchical, closed category set
-      * high-level relation types like TEMPORAL , COMPARISON and CONTINGENCY and
+      * high-level relation types like TEMPORAL, COMPARISON and CONTINGENCY and
       * finer-grained ones such as JUSTIFICATION and EXCEPTION
       * focuses on local discourse structure
   * RST Discourse Treebank (Carlson+ 2003)
     * more focus on higher-order discourse structures
     * deeper hierarchical structures than the PeDT’s
 * discourse segmentation
-  * e.g. segmentation of scientific papers into BACKGROUND and DISCUSSION
+  * eg segmentation of scientific papers into BACKGROUND and DISCUSSION
     (Liakata+ 2010)
-  * See (Webber+ 2011) for a survey
-* schemes, e.g., GMB and UCCA, supporting cross-sentence semantic relations
+  * See Webber+ (2011) for a survey
+* schemes, eg GMB and UCCA, supporting cross-sentence semantic relations
 
 ## Logical Structure
 
@@ -190,7 +190,7 @@ Omri Abend and Ari Rappoport
   * Recognizing Textual Entailment (Dagan+ 2013), and
   * Natural Logic (van Eijck, 2005)
   * Manning (2006) for a discussion of the annotation
-  * resources (e.g., Dagan+ 2006; Bowman+ 2015)
+  * resources (eg Dagan+ 2006; Bowman+ 2015)
 
 # 4 Semantic Schemes and Resources 81
 
@@ -213,13 +213,13 @@ Omri Abend and Ari Rappoport
   * argument structures of various types and relations
   * not include semantic role information
   * across languages (Sulem+ 2015)
-  * distinguishes between primary and aspectual verbs e.g. _happen to_
+  * distinguishes between primary and aspectual verbs eg _happen to_
   * support for annotation by non-experts
 ## Universal Decompositional Semantics (White+ 2016)
   * semantic role annotation, word senses and aspectual classes
-    (e.g., +/- realis)
+    (eg +/- realis)
   * distinctions collected through crowd-sourcing
-  * feature bundles e.g. +VOLITION and +AWARENESS , rather than AGENT
+  * feature bundles eg +VOLITION and +AWARENESS, rather than AGENT
 ## The Prague Dependency Treebank (PDT) Tectogrammatical Layer (PDT-TL)
   * Sgall, (1992); Böhmová+ (2003)
   * argument structure (including semantic roles), tense, ellipsis, topic/focus,
@@ -253,7 +253,7 @@ Omri Abend and Ari Rappoport
     * solicits nonexperts to answer mostly wh-questions,
       converting their output to an SRL annotation
     * Hartshorne+ (2013) and Reisinger+ (2015)
-      elicit semantic role __features__ e.g. volitional by crowdsourcing
+      elicit semantic role __features__ eg volitional by crowdsourcing
       in order to evaluate proposals for semantic role sets
     * Joshua K. Hartshorne, Claire Bonial, and Martha Palmer
       2013 emnlp
@@ -280,7 +280,7 @@ Omri Abend and Ari Rappoport
 * PropBank and FrameNet translated to multiple languages
   (Akbik+ 2016; Hartmann and Gurevych, 2013)
 * SRT schemes that have cross-linguistical applicability as main criteria
-  * e.g. UCCA, and the LinGO Grammar Matrix (Bender and Flickinger, 2005),
+  * eg UCCA, and the LinGO Grammar Matrix (Bender and Flickinger, 2005),
   * both of which draw on typological theory
 
 # 6 Syntax and Semantics
@@ -290,7 +290,7 @@ Omri Abend and Ari Rappoport
 * Syntactic distinctions are generally guided by a combination of semantic and
   distributional considerations, where emphasis varies across schemes
 * Distributional considerations in Universal Dependencies dependency type
-  * e.g. _John, my brother_, _John, who is my brother_
+  * eg _John, my brother_, _John, who is my brother_
 
 ## 6.2 The Syntax-Semantics Interface
 

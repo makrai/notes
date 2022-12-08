@@ -15,7 +15,7 @@ mszny 2018
 
 * experiments with the embeddings
   * in their unmodified form as well as experiments that i
-  * modified ... in ways commonly met in the literature [9,10]
+  * modified in ways commonly met in the literature [9,10]
     * unit length and centralizing the word representations
 * orthonormal [12,9,10]
 
@@ -24,7 +24,7 @@ mszny 2018
 * sparse linear combination of an overcomplete set of basis vectors [5,6]
 * The kind of decomposition we employ in this work
   * differs both from (Berend 17) and (Faruqui+ 15) as here we not only
-  * require D to ... comprising of unit norm column vectors, convex  but also
+  * require D to comprising of unit norm column vectors, convex but also
   * enforce the coefficients in α to be non-negative
   * We used SPAMS package accompanying (Mairal, Bach, Ponce, Sapiro, ICML ’09)
 * Putting the various steps together, our approach can be summarized [as]:
@@ -40,7 +40,7 @@ mszny 2018
 
 ## 3.1 Evaluation on the Swadesh word list
 
-* Swadesh lists are ... part of a universal basic vocabulary [14]
+* Swadesh lists are part of a universal basic vocabulary [14]
   * translated into various languages, including Hungarian
 
 * For the 207-element Swadesh list there are 161 words for which Hungarian
@@ -54,6 +54,6 @@ mszny 2018
 
 ## 3.2 Evaluation [in cross-lingual] POS tagging
 
-* [in comparison to the] mono-lingual setting ... performance drop originates
+* [in comparison to the] mono-lingual setting performance drop originates
   * not only from the insufficiencies of the cross-lingual representation, but
-  * also from [that] state transition features ... are optimized to English
+  * also from [that] state transition features are optimized to English

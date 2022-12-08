@@ -8,6 +8,17 @@ Mathematical linguisitcs
 
 ### 5.2.2 Linking
 
+* Modern theories of morphosyntax (Ostler 1979, Kiparsky 1987, Smith 1996),p109
+  differ from Pānini chiefly in their ambition to also handle analytic langs
+* deep case (kāraka) will be realized (abhihita, ‘spoken’) by morphological and
+  structural devices biuniquely but heterogeneously across verbs.  We have
+  * biuniqueness in any fixed construction since
+    every deep case that appears there will be realized by a single linker and
+    every linker realizes some deep case, and we have
+  * heterogeneity in that there is
+    no requirement for the realization to be constant across verbs.  For
+    * eg accusative (surface) case can serve to realize Goal or Patient (but)
+    * Goal can also be realized by the instrumental case.  Such theories are
 * ‘direct’: proceed from the arguments of the verb, defined semantically,
   to the linkers, which are visible on the surface,
   using only one intermediary, the deep cases
@@ -26,23 +37,22 @@ Mathematical linguisitcs
   regularly invoked in classifying verbal arguments
   * intended as fully semantical, expressing generalizations that follow from
     the meaning of verbs
-  * e.g. if V is an action and NP refers to the Agent of this action, then NP
+  * eg if V is an action and NP refers to the Agent of this action, then NP
     intends V to happen. Comparing _John accidentally killed the pedestrian_
     * _kill_ does not require an Agent but _murder_ does
-* deep and surface cases both distinct from both grammatical functions
+* both deep and surface cases distinct from both grammatical functions
   (subject, object, indirect object) and thematic roles
-* Direct theories that refer to thematic roles use them purely as abbreviatory
-  devices to distinguish different classes of verbs with different lexical
-  entailments, while
-* indirect theories, to which we now turn, permit combinatorical statements that
-  refer to more than one set of primitives
+* Direct theories that refer to thematic roles use them purely as
+  abbreviatory devices to
+  distinguish different classes of verbs with different lexical entailments,
+* indirect theories, to which we now turn, permit combinatorical statements
+  that refer to more than one set of primitives
 
 ## Semantics-driven theories
 
-* e.g. split ergativity gives rise to the suspicion, shared by many in the
-  field of artificial intelligence (AI), that mainstream linguistics goes about
-  the whole matter the wrong way, invoking too many hard to define and hard to
-  apply grammatical intermediaries
+* eg split ergativity gives rise to the suspicion, shared by many in AI,
+  that mainstream linguistics goes about the whole matter the wrong way,
+  invoking too many hard to define and hard to apply grammatical intermediaries
   * mapping should be straightforward from thought to expression.  The goal
     should be simply to specify the _language of thought_
 * goes back at least to the great
@@ -65,7 +75,7 @@ Mathematical linguisitcs
   * Schank and Abelson (1977). The original intention was to use scripts as
     repositories of commonsense procedural knowledge:
     * what to do in a restaurant, what happens during a marriage ceremony, etc
-    * actors fulfilling roles, e.g. that of the waiter or the best man,
+    * actors fulfilling roles, eg that of the waiter or the best man,
     * decompose the prototypical action in a series of more elementary
       sub-scripts such as ‘presenting the menu’ or ‘giving the bride away’
   * linguistically better motivated models, in particular discourse
@@ -89,7 +99,7 @@ Mathematical linguisitcs
       1973). We will not pursue CD in this detail because
   * the representations preferred in linguistics tend to use a slightly
     different set of primitives;
-    * e.g. for _John gave the book to Bill_ we could have
+    * eg for _John gave the book to Bill_ we could have
       `DO(John,CAUSE(HAVE(Bill,book)))` as the underlying semantic structure
       (Jackendoff 1972)
     * explicit use of implicit illocutionary primitives _such as `DO`_ in this
@@ -124,7 +134,7 @@ Mathematical linguisitcs
   include Sgall+ (1986), Mel’cuk (1988), Hudson (1990), and McCord (1990)
   * Gaifman (1965) proved the equivalence of one formulation of dependency
     grammar to CFGs
-    * deflected interest from the area 
+    * deflected interest from the area
   * revived largely because of its strong connections to key notions of grammar
 * A variety of dependency and valency models are
   surveyed in Somers (1987) and Tapanainen and Järvinen (1997)
@@ -134,14 +144,14 @@ Mathematical linguisitcs
   * the slots are endowed with ranges (used for p139 error checking) and often
   * explicit algorithms that compute the slot value or update other values on
     an as-needed basis, but there are
-    * no clear natural language phenomena that would serve to motivate them.
+    * no clear natural language phenomena that would serve to motivate them
 * the relationship between AI/KR and syntax is far more tenuous today
   * AI/KR has largely given up on syntax as too hard, and on the other, its
   * AI has moved to machine learning, a field more immediately concerned with
     linguistic pattern recognition in speech, handwriting, and machine print
     recognition (see Chapters 8 and 9) than in syntax proper
   * default inheritance and defeasible reasoning, see Ginsberg (1986a)
-  * The best introduction to thematic roles remains Dowty (1991).
+  * The best introduction to thematic roles remains Dowty (1991)
 
 # 6 Semantics
 
@@ -196,7 +206,7 @@ Mathematical linguisitcs
   up a generalized quantifier (see also Lappin 1996)
 * paraconsistent logic has already been considered by Bäuerle and Cresswell
   (1989); Possibly we would need in addition a
-* nonstandard propositional logic, perhaps e.g. the kind that Belnap (1977)
+* nonstandard propositional logic, perhaps eg the kind that Belnap (1977)
   thinks a computer should use when reasoning from inconsistent information
 * Ginsberg’s (1986) system D, which
   * combines paraconsistency with default reasoning

@@ -1,5 +1,5 @@
-Pranava Swaroop Madhyastha, Xavier Carreras, Ariadna Quattoni
 Tailoring word embeddings for bilexical predictions: an experimental comparison
+Pranava Swaroop Madhyastha, Xavier Carreras, Ariadna Quattoni
 2015
 
 https://github.com/f00barin/bmaps/tree/master/pybmaps
@@ -12,10 +12,10 @@ https://github.com/f00barin/bmaps/tree/master/pybmaps
 
 # Abstract
 
-* Our learning algorithm takes an existing lexical vector space and compresses
-  it such that the resulting word embeddings are good predictors for a target
-  bilexical relation. In experiments we show that task-specific embeddings can
-  benefit both the quality and efficiency
+* Our learning algorithm takes an existing lexical vector space and
+  compresses it such that the resulting word embeddings are good predictors for
+  a target bilexical relation
+* expers show that task-specific embeds can benefit both the quality & efficien
 
 # 1 Introduction
 
@@ -57,7 +57,7 @@ https://github.com/f00barin/bmaps/tree/master/pybmaps
         * N Srebro, J Rennie, TS Jaakkola
           Maximum-margin matrix factorization
           NIPS 2005
-      * i. e. the nuclear norm regularizer serves as
+      * ie the nuclear norm regularizer serves as
         a convex relaxation to the rank function
   * we compare the low-rank approach to `l1` and `l2` regularization penalties,
   * For all settings we use the

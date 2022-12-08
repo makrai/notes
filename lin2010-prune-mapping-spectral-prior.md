@@ -13,9 +13,8 @@ Findings of EMNLP 2020
     by applying a thresholding operator on the function norm
   * applicable to any structured module, including a
     single attention head, an entire attention block, or a feed-forward subnet
-* we introduce spectral normalization
-  to stabilize the distribution of the post-activation values of the
-  Transformer layers
+* we introduce spectral normalization to stabilize the distribution of the
+  post-activation values of the Transformer layers
   * further improving the pruning effectiveness of the proposed methodology
 * experiments with BERT on 5 GLUE benchmark tasks
   * SNIP achieves effective pruning results while maintaining comparable perf

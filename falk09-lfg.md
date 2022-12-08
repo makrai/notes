@@ -1,8 +1,7 @@
 Falk
 LFG
 
-textbook with a mini grammar, like Sag and Wasow (1999) on Head-driven
-Phrase Structure Grammar.
+textbook with a mini grammar, like Sag and Wasow (1999) on HPSG
 
 # Welcome to Lexical-Functional Grammar
 

@@ -1,10 +1,11 @@
 Mikel Artetxe, Gorka Labaka, Eneko Agirre
 Bilingual Lexicon Induction through Unsupervised Machine Translation
+ACL 2019 arXiv:1907.10761 [cs.CL]
 
 # Abstract
 
 * A recent research line ... by aligning independently trained word embeddings
-  + nearest neighbor or related retrieval methods.
+  + nearest neighbor or related retrieval methods
 * In this paper, we propose an alternative approach to this problem that
   * builds on the recent work on unsupervised machine translation. This way,
   * we use [cross-lingual embeddings] to build a phrase-table, combine it with
@@ -16,4 +17,4 @@ Bilingual Lexicon Induction through Unsupervised Machine Translation
     embeddings, our proposed method obtains an average improvement of
     * 6 accuracy points over nearest neighbor and
     * 4 points over Cross-domain Similarity Local Scaling (CSLS) (Conneau+ 18)
-    * new state-of-the-art in the standard MUSE dataset.
+    * new state-of-the-art in the standard MUSE dataset

@@ -7,7 +7,7 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
 
 # Abstract
 
-* We experiment with ... ELMo and BERT
+* We experiment with ELMo and BERT
 * open-domain argument search
 * classify and cluster, [impressive results on both tasks and] multiple dataset
   * classification, we improve the SOTA for the
@@ -30,13 +30,13 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
     * single documents or document collections (Eger+ 2017),
   * open-domain argument search aka. information-seeking perspective
     * seeking arguments relevant to a topic
-    * heterogeneous sources and topics (Shnarch+ 2018) and also face
-    * the problem of redundancy ...  calls for a subsequent clustering step,
+    * heterogeneous sources and topics (Shnarch+ 2018)
+    * the problem of redundancy  calls for a subsequent clustering step,
     * aggregate similar arguments for the same topic
     * this work
-* example of arguments ...  differently phrased
+* example of arguments differently phrased
   1. The ultimate goal is fast, affordable, open Internet access for everyone,
-  2. If this does not happen, ... only users able to pay for privileged access
+  2. If this does not happen, only users able to pay for privileged access
 * Contextualized word embeddings, especially
   * ELMo (Peters+ 2018) and BERT (Devlin+ 2018) could offer a viable solution
 * We thus analyze ELMo and BERT in a cross-topic scenario
@@ -68,8 +68,8 @@ https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering
     * Support Vector Regression model using different hand-engineered features
   * Trabelsi and Zaı̈ane (2015) used an augmented LDA to [ extract ] expressions
     * constrained clustering to group similar viewpoints of topics
-* we apply ... a dataset containing both relevant and non-relevant arguments
-  for a large number of different topics which is ... more realistic
+* we apply a dataset containing both relevant and non-relevant arguments
+  for a large number of different topics which is more realistic
 
 ## Contextualized word embeddings compute a representation for a target word
 

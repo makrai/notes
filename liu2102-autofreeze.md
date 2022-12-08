@@ -4,11 +4,13 @@ arXiv:2102.01386 [cs.LG]
 
 Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
 
-* fine-tuning on models like BERT can take many hours even when using GPUs
+# Abstract
+
+* fine-tuning models like BERT can take many hours even when using GPUs
   * prior work proposes limiting the number of layers that are fine-tuned
   * eg freezing all layers but the last layer
   * we find that such static approaches lead to reduced accuracy
-* We propose, AutoFreeze
+* We propose AutoFreeze
   * adaptive approach to choose which layers are trained
     * accelerate model fine-tuning while preserving accuracy
     * conclu: freeze parts of the model that are closest to convergence during
@@ -170,7 +172,8 @@ Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
 
 * we accumulate gradients for each layer in the model (∆) and perform our
   test at fixed intervals (T )
-  * gradient norm change for layer l: `η l = ∆_{T −1_l} − ∆_{T l} / ∆_{T −1_l}`
+  * gradient norm change for layer l:
+    `η l = |∆_{T −1_l}| − |∆_{T l}| / |∆_{T −1_l}|`
 * rank the layers in the order of η l to determine the layer that is changing
 * a layer to be frozen if all the layers preceding it are frozen and its rate
   of change is in the bottom N th percentile, where N is a tunable parameter
@@ -178,10 +181,10 @@ Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
 #### Comparison of Gradient Norm Test to SVCCA score
 
 * In Figure 6, we evaluate the performance of our proposed gradient norm test
-  * comparing it with the ideal SVCCA score based freezing scheme that has
+  * comparing it with the ideal SVCCA score based freezing scheme
 * In the ideal scheme, we denote a layer as frozen if its SVCCA score compared
   to the final model weights is above a fixed threshold of 0.9
-* In Figures 6a and 6b, we vary the percentile value used in Algorithm 1 and
+* In Figures 6a and 6b, we vary the percentile value used in Algorithm 1
   * N = median closely tracks the ideal freezing scheme
   * further evaluation of the effect of varying N in Section 4.3
 

@@ -1,4 +1,4 @@
-A véleményváltozás azonosítása politikai témájú közösségi médiában megjelenő szö
+A véleményváltozás azonosítása politikai témájú soc médiában megjelenő szövkben
 Pólya Tibor, Csertő István, Fülöp Éva, Kővágó Pál, Miháltz Márton, Váradi Tamás
 XI. Magyar Számítógépes Nyelvészeti Konferencia
 
@@ -38,7 +38,7 @@ lexikai skálák!
   * Az értékelés modulhoz képest újdonsága, hogy a nyelvi értékeléseket a
     valencia (pozitív/negatív) mellett
   * Szófajilag lehetnek a személy vagy viselkedés minőségét leíró
-    * melléknevek (tisztességes/gerinctelen; intelligens/buta), viselkedést leíró
+    * melléknevek (tisztességes/gerinctelen; intelligens/buta)
     * igék (összefog/átver; győz/megbukik), vagy a viselkedés minőségét leíró,
     * melléknevekből és igékből képzett határozószók, ítélet részei pedig ezek
       főnévi alakjai vagy absztrakt fogalmi kategóriák

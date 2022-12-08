@@ -156,8 +156,8 @@ M. Ross QUILLIAN
 
 * _superset intersection in memory_
   * The two units' superset chains merge at some point
-* intersection between the candidate units JOHN and TEACHER, since their
-  superset chains merge at the unit PERSON
+* intersection between the candidate units JOHN and TEACHER
+  * since their superset chains merge at the unit PERSON
   * not particularly useful for comprehension, however, since it does not
     involve any properties of either JOHN or of TEACHER
 * TLC locate intersections is something close to a breadth-first order

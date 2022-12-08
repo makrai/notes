@@ -1,4 +1,4 @@
-Syntagmatic Word Embeddings for Unsupervised Learning of Selectional Preferences
+Syntagmatic Word Embeddings for Unsupervised Learning of Selectional Prefs
 Renjith P. Ravindran, Akshay Badola, Narayana Kavi Murthy
 ACL 2021 | IJCNLP | RepL4NLP
 
@@ -6,7 +6,7 @@ https://github.com/renjithravindran/ spvec
 
 # Abstract
 
-* Selectional Preference (SP) has generally required a parsed corpus as a
+* Selectional Preference (SP) has generally required a parsed corpus
 * We extend the general word embedding technique with directional word context
   windows giving word representations that better capture syntagmatic relations
 * We test on the SP-10K dataset and demonstrate that
@@ -17,13 +17,12 @@ https://github.com/renjithravindran/ spvec
 
 # 1 Introduction
 
-
 * Selectional Preference (SP, Wilks, 1975) encodes the syntagmatic relatedness
   * Relations between words are either syntagmatic or paradigmatic (de
     Saussure, 1916). Two words are said to be
     * paradigmatically related if one word can replace the other in a sentence
     * Syntagmatic relations are between syntactically related co-occurring
-  * Such word relations encode both syntactic and semantic aspects of words. A
+  * Such word relations encode both syntactic and semantic aspects of words
   * Common SP relations include ‘adjective-noun’, ‘subject-verb’, ‘verb-object’
   * applications
     * sense disambiguation (Resnik, 1997),
@@ -32,30 +31,29 @@ https://github.com/renjithravindran/ spvec
 * A computational method to induce SP from instances of syntactically related
   * Resnik (1996) made use of ontological classes obtained from WordNet
   * Rooth+ (1999) learning the classes from the corpus itself using EM
-  * Erk (2007) via co-occurrence similarity between seen and unseen words. SP
+  * Erk (2007) via co-occurrence similarity between seen and unseen words
 * usually evaluated using the Pseudo-word Disambiguation task (Van de Cruys 14)
   * identification of the more probable dependent word, from a less probable
-* Zhang+  (2019b) introduced SP-10K, a dataset for SP evaluation across 5
-  syntactic relations with a total of 10,000 items each with a human-annotated
-  plausibility score. SP-10K measures the correlation between a model’s SP
-  score for a given word pair and the average human score. Therefore it is a
-  better test for SP learning.  213
-* current state-of-the-art on SP-10K is reported by Multiplex Word Embeddings
-  (MWE, Zhang+ 2019a). It is a negative sampling based word embedding model,
+* Zhang+ (2019b): SP-10K, a dataset for SP evaluation across 5 syntactic rels
+  * 10,000 items each with a human-annotated plausibility score.  SP-10K
+  * measures the correlation between a model’s SP score for a given word pair
+    and the average human score
+* current SOTA on SP-10K is Multiplex Word Embeddings (Zhang+ 2019a) It is
+  * a negative sampling based word embedding model,
   * improves over D-embeddings (Levy and Goldberg, 2014a) which is a supervised
 * We do this by taking directional (left/right) word context windows
-  * gives two embeddings per word, one of its left context and other of its
-  * allows us to approximate syntactic relations with directions; all
+  * gives two embeddings per word, one of its left and right context each
+  * allows us to approximate syntactic relations with directions
   * relations that happen to the left of a word are captured by the left embed
   * the cosine similarity between the right embedding of a word and
     left embedding of another word indicates
     how likely the two are to be syntagmatically related
-* contributions are:
-  * a simple and effective method to capture selectional preference, called
+* contributions
+  * a simple and effective method to capture selectional preference
   * Demonstrate that syntagmatic embeddings are superior to paradigmatic
-  * We also show that our unsupervised syntagmatic representations can be as
-    good as their supervised counterparts, therefore showing that a good range
-    of SP information can be learned even without a dependency-parsed corpus
+  * We also show that our unsupervised syntagmatic representations can be
+    as good as their supervised counterparts, therefore showing that
+    a good range of SP info can be learned even without a dep-parsed corpus
 
 # 4 Discussion
 

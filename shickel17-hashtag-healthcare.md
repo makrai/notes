@@ -112,10 +112,11 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
     distress, depression, or anxiety
   * when positive and negative affect are both high in narrative text:
     * ambivalence, which is often associated with conflict-related distress
-  * oscillations in levels of negative affect or oscillations between high
-    negative and high positive affect across time suggest the possibility of
-    bi-polar disorder, cyclothymia, borderline personality disorder, and/or an
-    interpersonal or social context fraught with cyclical affective instability
+  * oscillations in levels of negative affect or
+    oscillations between high negative and high positive affect across time
+    suggest the possibility of bi-polar disorder, cyclothymia,
+    borderline personality disorder, and/or an interpersonal or social context
+    fraught with cyclical affective instability
 * patients might be skeptical of the accuracy of therapist feedback or
   reactive to the fact that a healthcare provider is providing feedback
   * might place their trust in the more objective feedback from the ML tool

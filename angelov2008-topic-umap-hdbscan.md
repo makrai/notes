@@ -19,9 +19,8 @@ https://github.com/ddangelov/Top2Vec
   * not require stop-word lists, stemming or lemmatization
   * automatically finds the number of topics
   * topic vectors are jointly embedded with the document and word vectors
-* experiments demonstrate that 𝚝𝚘𝚙𝟸𝚟𝚎𝚌 finds topics which are significantly
-  more informative and representative of the corpus trained on than
-  probabilistic generative models
+* experiments: 𝚝𝚘𝚙𝟸𝚟𝚎𝚌 finds topics which are signif more informative and
+  representative of the corpus trained on than probabilistic generative models
 * hierarchical topic reduction, see the Discussion
 
 # 1 Intro
@@ -39,7 +38,7 @@ https://github.com/ddangelov/Top2Vec
   * topics, their combinations or variations can be
     described by a weighted set of words
   => topics are continuous, as there are infinitely many combinations of
-  weighted words which can be used to represent a topic
+    weighted words which can be used to represent a topic
   * each document has its own topic with a value in that continuum
   * topic is the set of weighted words that are most informative
     * can be a combination of the colloquial discrete topics

@@ -7,8 +7,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
 * in text classification the common practice of fine-tuning pre-trained models,
 * We suggest a method to boost the performance of such models by adding an
   intermediate unsupervised classif task, between pre-training and fine-tuning
-* intermediate task is clustering, and train the pre-trained model on
-  predicting the cluster labels
+* intermediate task is clustering
+  * train the pre-trained model on predicting the cluster labels
 * experiments on various data sets
 * classification phase can significantly improve performance,
   mainly for topical classification tasks, when the number of labeled instances
@@ -92,15 +92,14 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
     are significantly different from random (p < 0.001)
   * ie both before and after inter-training, same-class reprs are close
 * compare the representations before and after inter-training
-  * randomly permuted EDs of BERT IT:CLUST are about 3 times larger than
-    BERT’s, despite similar norm values
-  * ie the post inter-training representations are more dispersed. Hence, to
-    properly compare, we normalize ED by the average of the permuted EDs
+  * randomly permuted EDs of BERT IT:CLUST are about 3x larger than BERT’s,
+    despite similar norm values
+  * ie the post inter-training representations are more dispersed
+    => to properly compare, we normalize ED by the average of the permuted EDs
 * Comparing the Normalized Embeddings’ Distance (NED) before and after
   inter-training, we find that
   in all datasets the normalized distance is smaller after inter-training
-  * ie BERT IT:CLUST brings same-class representations closer
-    in comparison to BERT
+  * ie BERT IT:CLUST brings same-class representations closer in compar to BERT
 
 ## 5.4 Are Clusters Indicative of Target Labels?
 

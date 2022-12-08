@@ -232,7 +232,7 @@ Draft of December 30, 2020
     discourse model is salient: it is being “centered” on. As a model of
   * coherence: discourses in which adjacent sentences CONTINUE to maintain the
     same salient entity are more coherent than those which SHIFT back and forth
-* e.g. two texts from Grosz+ (1995) which have the same propositional content
+* eg two texts from Grosz+ (1995) which have the same propositional content
   * John went to his favorite music store to buy a piano
     He had frequented the store for many years
     He was excited that he could finally buy a piano
@@ -250,7 +250,7 @@ Draft of December 30, 2020
     C_b of the following utterance
     * denoted as C_f (U_n )
 * forward-looking centers C_f (U_n ) are ranked according to factors like
-  discourse salience and grammatical role (e.g. subjects > objects > all other)
+  discourse salience and grammatical role (eg subjects > objects > all other)
   * preferred center: the highest-ranked forward-looking center C_p
   * a kind of prediction about what entity will be talked about next
 * algorithm for centering presented in Brennan+ (1987), which defines
@@ -327,11 +327,11 @@ Draft of December 30, 2020
 * pioneered by a series of unsupervised models in the 1990s of this kind of
   * made use of lexical cohesion (Halliday and Hasan, 1976): the sharing of
     * identical or semantically related words in nearby sentences
-  * Morris and Hirst (1991) computed lexical chains of words (like
-    * e.g. pine, bush trees, trunk) that occurred through a discourse and
-      that were related in Roget’s Thesaurus (by being in the same category, or
-      linked categories).  They showed that
-    * the number and density of chain correlated with the topic structure. The
+  * Morris and Hirst (1991) computed lexical chains of words
+    * eg "pine, bush trees, trunk"
+    * occurred through a discourse and that were related in Roget’s Thesaurus
+      (by being in the same category, or linked categories)
+    * the number and density of chain correlated with the topic structure
   * TextTiling algorithm of Hearst (1997) computed the cosine between
     neighboring text spans, again showing that sentences or paragraph in a
     subtopic have higher cosine with each other, but not with sentences in a
@@ -344,7 +344,7 @@ Draft of December 30, 2020
 * beginning with Li+ (2014),
   * draw on the intuitions of
     * these early unsupervised models for learning
-      * measuring how sentence representations they change between neighboring ss
+      * measuring how sentence representations change between neighboring sents
     * also on the idea pioneered by Barzilay and Lapata (2005) of self-supervis
       * trained to distinguish natural discourses from unnatural discourses
 * Here we present the local coherence discriminator (LCD, Xu+ 2019). Like early
@@ -383,8 +383,8 @@ Draft of December 30, 2020
   * Bamman+ (2013) showed that generalizations over dramatis personae could be
     induced from movie plot summaries on Wikipedia. Their model
     * induced latent personae from features like the
-      * actions the character takes (e.g., Villains strangle), the
-      * actions done to them (e.g., Villains are foiled and arrested) or the
+      * actions the character takes (eg Villains strangle), the
+      * actions done to them (eg Villains are foiled and arrested) or the
       * descriptive words used of them (Villains are evil)
 * In this section we introduce two kinds of such global discourse structure that
   have been widely studied computationally. The first is the

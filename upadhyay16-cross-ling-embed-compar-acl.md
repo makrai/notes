@@ -64,12 +64,14 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
 
 * Hermann and Blunsom (2014) present a method that learns bilingual word
   vectors from a sentence aligned corpus
-* Let functions f : ~v → R n and g : w ~ → R n , map sentences to their seman-
-  tic representations in R n . BiCVM generates word vectors by minimizing the
-  squared l2 norm between the sentence representations of aligned sen-
-  tences. In order to prevent the degeneracy arising from directly
-  minimizing the l2 norm, they use a noise-contrastive large-margin update,
-  with randomly drawn sentence pairs
+* Let functions f : ~v → R n and g : w ~ → R n, map sentences to their sem
+  representations in R n 
+  * BiCVM generates word vectors by
+    minimizing the squared l2 norm between the sentence representations of
+    aligned sentences
+  * In order to prevent the degeneracy arising from directly minimizing the l2
+    norm, they use a noise-contrastive large-margin update,
+    with randomly drawn sentence pairs
 
 ## 2.3 Bilingual Correlation Based Embeddings (BiCCA)
 
@@ -77,7 +79,7 @@ The BiCCA model, proposed by Faruqui and Dyer (2014), showed that when
 (independently trained) monolingual vector matrices W, V are projected using
 CCA (Hotelling, 1936) to respect a translation lexicon, their performance
 improves on word similarity and word analogy tasks. They first construct W 0
-⊆ W, V 0 ⊆ V such that |W 0 |= |V 0 | and the corresponding words (w i , v i )
+⊆ W, V 0 ⊆ V such that |W 0 |= |V 0 | and the corresponding words (w i, v i )
 in the matrices are translations of each other
 
 ## 2.4 Bilingual Vectors from Comparable Data (BiVCD)
@@ -136,7 +138,7 @@ in the matrices are translations of each other
     negative sampling (Mikolov+ 2013a) with
   * window of size 5 (tuned over {5, 10, 20}). To generate a
   * cross-lingual dictionary, word alignments are generated using cdec from
-    the parallel corpus. Then, word pairs (a, b), a ∈ l 1 , b ∈ l 2 are
+    the parallel corpus. Then, word pairs (a, b), a ∈ l 1, b ∈ l 2 are
     selected such that a is aligned to b the most number of times and vice
     versa. This way, we obtained dictionaries of approximately 36k, 35k, 30k
     and 28k word pairs for en-de, en-fr, en-sv and en-zh respectively.  The
@@ -188,8 +190,8 @@ in the matrices are translations of each other
     across 26 languages with over 90% accuracy.  First,
   * we prune out words from each synset whose frequency count is less than
     1000 in the vocabulary of the training data from §3.  Then, for each
-    pair of aligned synsets s 1 = {k 1 , k 2 , · · ·} s 2 = {g 1 , g 2 , · ·
-    ·}, we include all elements from the set {(k, g) | k ∈ s 1 , g ∈ s 2 }
+    pair of aligned synsets s 1 = {k 1, k 2, · · ·} s 2 = {g 1, g 2, · ·
+    ·}, we include all elements from the set {(k, g) | k ∈ s 1, g ∈ s 2 }
     into the gold dictionary, where k and g are the lemmas. Using this
     approach
   * we generated dictionaries of sizes 1.5k, 1.4k, 1.0k and 1.6k pairs for
@@ -206,9 +208,9 @@ in the matrices are translations of each other
 * setup of Klementiev+ (2012), but extend it to cover all of our
   language pairs. We use the
 * RCV2 Reuters multilingual corpus 7 for our experiments. In this
-* task: for a language pair (l 1 , l 2 ), a document classifier is trained
+* task: for a language pair (l 1, l 2 ), a document classifier is trained
   using the document representations derived from word embeddings in language
-  l 1 , and then the trained model is tested on documents from language l 2
+  l 1, and then the trained model is tested on documents from language l 2
   (and vice-versa). By using supervised training data in one language and
   evaluating without further supervision in another, CLDC assesses whether the
   learned cross-lingual representations are semantically coherent across

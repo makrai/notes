@@ -1,5 +1,5 @@
 TensorLy: Tensor Learning in Python
-JeangKossaifi, Yannis Panagakis, and Maja Pantic
+Jeang Kossaifi, Yannis Panagakis, and Maja Pantic
 NIPS Tensor-Learn Workshop. 2016
 
 # Intro
@@ -47,7 +47,7 @@ NIPS Tensor-Learn Workshop. 2016
   * Hadamard product (∗) is inherited from the standard numpy structure
   * Kruskal (JU (1) , · · · , U (N) K) and Tucker operators
   * Computation of Higher-Order moments (E[x ⊗ x ⊗ x])
-  * Proximal operators for the ` 1 norm and the nuclear norm
+  * Proximal operators for the `l_1` norm and the nuclear norm
 * core tensor decomposition and tensor regression methods
   * CANDECOMP-PARAFAC (CP) decomposition e.g. [17])
   * Non-Negative CP decomposition [28])

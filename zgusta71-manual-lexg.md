@@ -91,7 +91,7 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
 * historical aspect may be in conflict with synchronic state
 * the logical apparatus may also clash with the language
 ### Treatment of polysemy, depletion, disambiguation
-* depletion: the word _take_ is a little more than the verbalizer -ize
+* depletion: the word _take_ is a little more than the verbalizer _-ize_
 ### Context: the contextual nuance
 * contextual nuance: less than a separate sense, the difference inferred from
   the context
