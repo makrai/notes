@@ -33,7 +33,7 @@ Rákosi, Laczkó
 * Reduplicating particles are non-projecting words, PRT
 * Possessive particles project a PP
 * thematic constraint on the particle with the oblique associate: locative or
-  directional 
+  directional
   * (7)-)(8) locative-directional pairs. A névutók esetében
   transzparensebbek a párok, mint a ragosok esetében -- összefüggés a
   grammatkalizációval
