@@ -34,10 +34,10 @@ Deep Lexical Semantics
   * e.g. the correlation between “married” and “divorced”, and maybe we can even
   * the corresponding predicate-argument structures and
   * which way the implication goes and with what
-  * temporal constraints.
+  * temporal constraints
   * But this is a too simple relation to axiomatize in comparison to the “range”
 * If we construct the core theories and the linking axioms _manually_, we can
-  achieve the desired complexity and reliability.
+  achieve the desired complexity and reliability
   * how many words would It be feasible to axiomatize the meanings of manually?
     * 100,000 not, several thousand yes
 * organization

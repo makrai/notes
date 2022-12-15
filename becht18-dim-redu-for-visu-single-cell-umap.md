@@ -1,5 +1,5 @@
-E Becht, L McInnes, J Healy, C Dutertre, IWH Kwok, LG Ng, F Ginhoux & EW Newell
 Dimensionality reduction for visualizing single-cell data using UMAP
+E Becht, L McInnes, J Healy, C Dutertre, IWH Kwok, LG Ng, F Ginhoux & EW Newell
 Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
 
 * Comparing the performance of UMAP with five other tools
