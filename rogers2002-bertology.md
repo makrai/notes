@@ -535,7 +535,7 @@ arXiv:2002.12327 cs.CL
 ## 6.1 Overparametrization
 
 * Transformer-based models keep increasing in size:
-  eg T5 (Wu+ 2016a) is over 30 times larger than the base BERT. This raises
+  eg T5 (Raffel 19) is over 30 times larger than the base BERT. This raises
 * concerns about
   * computational complexity of self-attention (Wu+ 2019a),
   * environmental issues (Strubell+ 2019; Schwartz+ 2019), as well as
