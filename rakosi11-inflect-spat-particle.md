@@ -1,4 +1,6 @@
-Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
+Inflecting Spatial Particles...
+Rákosi, Laczkó
+(2011)
 
 # Introduction
 
@@ -12,13 +14,13 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
   * _possessive particles_ are postpositions elsewhere, they license a dative
     case marked associate
 
-# \dots a descriptive overview
+# ... a descriptive overview
 
 ## Inflecting postpositions and suffixes
 
 * különbség köztük: koordináció
 * agreement in person and number, like _arc-om_
-* pronominal part (_\textbf{én_rám}): pro-drop or discourse function
+* pronominal part (**én**_rám_): pro-drop or discourse function
 
 ## Inflecting postpositions and suffixes as particles
 
@@ -31,7 +33,8 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
 * Reduplicating particles are non-projecting words, PRT
 * Possessive particles project a PP
 * thematic constraint on the particle with the oblique associate: locative or
-  directional \subitem (7)-)(8) locative-directional pairs. A névutók esetében
+  directional 
+  * (7)-)(8) locative-directional pairs. A névutók esetében
   transzparensebbek a párok, mint a ragosok esetében -- összefüggés a
   grammatkalizációval
 
@@ -48,25 +51,23 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
 
 ### productive and compositional particle-verb constructions
 
-* $^\%$NEK-EM ugrott-ál mögé-m.
+* ^% NEK-EM ugrott-ál mögé-m.
 * Surányi argues that only those speakers who accept (12) can treat the
   postposition as a possessive construction of some sort.
-* $^\%$mögéje: similar to the standard possessive morphology (13)
-* $^\%$Le-tett-em mellé-m a könyvet.(15)
+* ^% mögéje: similar to the standard possessive morphology (13)
+* ^% Le-tett-em mellé-m a könyvet.(15)
 * Rákosi: silent PLACE predicate, a helyem mellé
 * elemzés: (16a) f-struktúrájában különbözik az OBL
-* (17) OBL$\uparrow$ azt jelenti, hogy $\uparrow$ egy OBL (nevezetesen a
+* (17) OBL↑ azt jelenti, hogy ↑ egy OBL (nevezetesen a
   mondatnak, vagy ami ugyanaz, a VP-nek az OBL-ja)?
 
 ```
 \symb{\Vb}{}       \blank
 \symb{\too}{}      \blank
-\symb{VP}{\ua=\da} \blank
-\begin{tabular}{c}
-\normalsize{{DP}} \\
-\footnotesize{\ua OBL OBJ POSS = \da}\\
-\footnotesize{\da CASE $=_c$ DAT}
-\end{tabular}
+\symb{VP}{↑=↓} \blank
+                                      DP
+                              ↑ OBL OBJ POSS = ↓
+                               ↓ CASE =_c DAT
 ```
 
 ### idiosyncratic, non-compositional combinations
@@ -75,7 +76,7 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
 * `*`_Az ügy után jár-ok._
 * CONCAT template of XLE  (20).
 * this analysis requires the particle to be a non-projecting head, gondolm, az
-  _utána_ tételében szereplő \ua OBL miatt.
+  _utána_ tételében szereplő ↑ OBL miatt.
 
 # Reduplicating particles
 
@@ -104,6 +105,6 @@ Rákosi, Laczkó (2011) Inflecting Spatial Particles\dots}
   license pronominal associates.
 * _Én Ő-RÁ szorul-ok rá._
 * If the oblique pronominal is in non-third person:
-* _$^\%$Én TE-RÁD szorul-ok rá._ -- a _rá_ tételében nincs (\ua OBL PERS) = 3
-* _$^\%$Én TE-RÁD szorul-ok rád._
-* _$^{?*_$Én TE-RÁD szorul-ok.}
+* _^% Én TE-RÁD szorul-ok rá._ -- a _rá_ tételében nincs (↑ OBL PERS) = 3
+* _^% Én TE-RÁD szorul-ok rád._
+* _^? Én TE-RÁD szorul-ok._
