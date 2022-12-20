@@ -68,7 +68,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 * fine-tuning instability of BERT pointed out
   * Devlin+ (2019)
-    * instabilities when fine-tuning BERT LARGE on small datasets and
+    * instabilities when fine-tuning BERT LARGE on small datasets
     * resort to performing multiple restarts of fine-tuning and
       selecting the model that performs best on the development set
   * Dodge+ (2020)
@@ -124,7 +124,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 * sentence pairs obtained from SQuAD (Rajpurkar+ 2016)
 * The task is to determine whether the context sentence contains the answer
-  * i.e. entails the answer
+  * ie entails the answer
 * Wang+ (2019b) converted SQuAD into a sentence pair classification task
   by forming a pair between each question and each sentence in the
   corresponding paragraph
@@ -166,7 +166,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 ### Fine-tuning stability
 
 * By fine-tuning stability we mean the
-  standard deviation of the fine-tuning performance (measured, eg, in terms
+  standard deviation of the fine-tuning performance (measured eg in terms
   of accuracy, MCC or F 1 score) over the randomness of an algorithm
 * we measure fine-tuning stability using the development sets from GLUE
   * following previous works (Phang+ 2018; Dodge+ 2020; Lee+ 2020)
@@ -215,10 +215,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     * on the test set of the WikiText-2 LM benchmark (Merity+ 2016)
     * BERT was trained on English Wikipedia
   * sequentially substitute the top-k layers of the network
-    varying k from 0 (i.e. all layers are from the fine-tuned model)
-    to 24 (i.e.  all layers are from the pre-trained model)
-* results in Fig. 2 (a) and (b)
-  * catastrophic forgetting occurs for the failed models (Fig. 2a) —
+    varying k from 0 (ie all layers are from the fine-tuned model)
+    to 24 (ie  all layers are from the pre-trained model)
+* results in Fig 2 (a) and (b)
+  * catastrophic forgetting occurs for the failed models (Fig 2a)
     * perplexity on WikiText-2 is indeed degraded for k = 0
     * affects only the top layers of the network
     * around 10 out of 24 layers
@@ -246,7 +246,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * two settings
     * training for 3 epochs on the reduced training dataset, and
     * training for the same number of iterations as on the full training set
-* results in Fig. 3
+* results in Fig 3
   * training on less data does indeed affect the fine-tuning variance:
     many more failed runs
   * hE, when we simply train for as many iterations as on the full train set,
@@ -269,17 +269,17 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 * fine-tuning instability is an optimization problem
   * this sec: a simple solution
 * a large fraction of the fine-tuning instability can be explained by optimizat
-  * the remaining instability can be attributed to generalization issues where
-    fine-tuning runs with the same training loss exhibit
-    noticeable differences in the development set performance
+* the remaining instability can be attributed to generalization issues where
+  fine-tuning runs with the same training loss exhibit
+  noticeable differences in the development set performance
 
 ## 5.1 The role of optimization
 
 ### Failed fine-tuning runs suffer from vanishing gradients
 
-* Fig. 2c: the failed runs have practically constant training loss
-  * Fig. 14 in the Appendix: a comparison with successful fine-tuning
-* Fig. 4 plots the l 2 gradient norms of the loss function with respect to
+* Fig 2c: the failed runs have practically constant training loss
+* Fig 14 in the Appendix: a comparison with successful fine-tuning
+* Fig 4 plots the l 2 gradient norms of the loss function with respect to
   different layers of BERT, for one failed and successful fine-tuning run
   * failed run: we see large enough gradients only for the top layers and
     vanishing gradients for the bottom layers
@@ -288,8 +288,8 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
       gradients start to grow as training continues
     * at the end of fine-tuning, we observe gradient norms nearly 2 orders of
       magnitude larger than that of the failed run
-  * visualizations for additional layers and weights in Fig. 10 in the Appendix
-  * same behavior also for RoBERTa and ALBERT: Appendix Fig. 11 and 12
+  * visualizations for additional layers and weights in Fig 10 in the Appendix
+  * same behavior also for RoBERTa and ALBERT: Appendix Figs 11 and 12
 * the vanishing gradients we observe during fine-tuning are
   harder to resolve than
   the standard vanishing gradient problem (Hochreiter, 1991; Bengio+ 1994)
@@ -307,23 +307,23 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   * not include the bias correction in ADAM
 * Kingma and Ba (2015): the effect of the bias correction is to
   reduce the learning rate at the beginning of training
-* By rewriting the update equations of ADAM as follows, we can clearly see this
-  effect of bias correction
+* By rewriting the update equations of ADAM as follows,
+  we can clearly see this effect of bias correction
   ```
-  α t = α * \sqrt{1 − β 2 t} /(1 − β 1 t ),             (1)
+  α t = α * \sqrt{1 − β 2 t} /(1 − β 1 t )              (1)
   θ_t ← θ t−1 − \frac{α t · m_t}{\sqrt{v t} + epsilon}  (2)
   ```
   * `m_t` and `v_t` are biased first and second moment estimates respectively
 * Equation (1) shows that bias correction simply boils down to
   reducing the original step size α by a multiplicative factor which is
   significantly below 1 for the first iterations of training and
-  approaches 1 as the number of training iterations t increases (see Fig. 6)
+  approaches 1 as the number of training iterations t increases (see Fig 6)
   * You+ (2020): bias correction in ADAM has a similar effect to the warmup
     which is widely used in deep learning to prevent early divergence
     (He+ 2016; Goyal+ 2017; Devlin+ 2019; Wong+ 2020)
 * The implicit warmup of ADAM is likely to be an important factor that
   contributed to its success, including fine-tuning BERT-based LMs
-* Fig. 5: the results of fine-tuning on RTE with and without bias correction
+* Fig 5: the results of fine-tuning on RTE with and without bias correction
   for BERT, RoBERTa, and ALBERT models
   * footnote: Some of the hyperparameter settings lead to a small fine-tuning
     variance where all runs lead to a performance below the majority baseline
@@ -332,14 +332,13 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     * particularly for BERT and ALBERT
     * Even though for RoBERTa fine-tuning is already more stable even without
       bias correction, adding bias correction gives an additional improvement
-* bias correction is useful if we want to get the best performance within 3
-  epochs, the default recommendation by Devlin+ (2019)
-  * An alternative solution is to simply train longer with a smaller learning
-    rate, which also leads to much more stable fine-tuning
-  * We provide a more detailed ablation study in Appendix (Fig. 9) with
+* bias correction is useful if we want to get the best perf within 3 epochs,
+  the default recommendation by Devlin+ (2019)
+  * An alter solution is to simply train longer with a smaller learning rate,
+    which also leads to much more stable fine-tuning
+  * We provide a more detailed ablation study in Appendix (Fig 9) with
     * analogous box plots for BERT using
-      various learning rates, numbers of training epochs, with and without bias
-      correction
+      various learning rates, numbers of train epochs, with/out bias correction
 * concurrently to our work, Zhang+ (2021): the importance of bias correction
   and longer training
 
@@ -353,11 +352,11 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
     in the subspace spanned by `δ_1 = θ_f − θ_p` and `δ_2 = θ_s − θ_p`
     centered at the weights of the pre-trained model `θ_p`
   * more details are specified in Section 7.6 in the Appendix
-* Contour plots of the loss surfaces for RTE, MRPC, and CoLA in Fig. 7
+* Contour plots of the loss surfaces for RTE, MRPC, and CoLA in Fig 7
   * They provide additional evidence to our findings on vanishing gradients:
   * failed fine-tuning runs converge to a “bad” valley
     separated from the local minimum (to which the successfully trained run
-    converged) by a barrier (see also Fig. 13 in the Appendix)
+    converged) by a barrier (see also Fig 13 in the Appendix)
   * highly similar geometry for all three datasets
   * further support for our interpretation of fine-tuning instability as a
     primarily optimization issue
@@ -368,10 +367,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
   can be attributed to generalization
 * experiment:
   * fine-tune BERT on RTE for 20 epochs
-    * development set accuracy for 10 successful runs in Fig. 8a
-    * the development set accuracy vs. training loss of all BERT models
-      fine-tuned on RTE for the full ablation study (shown in Fig. 9 in the
-      Appendix), in total 450 models
+    * development set accuracy for 10 successful runs in Fig 8a
+    * the development set accuracy vs training loss of all BERT models
+      fine-tuned on RTE for the full ablation study (Fig 9 in the Appendix),
+      in total 450 models
 * despite achieving close to zero training loss
   overfitting is not an issue during fine-tuning
   * consistent with previous work (Hao+ 2019)
@@ -397,7 +396,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 ## Results
 
-* Table 1 and Fig. 1 show the results of fine-tuning BERT on RTE, MRPC, & CoLA
+* Table 1 and Fig 1 show the results of fine-tuning BERT on RTE, MRPC, & CoLA
   * compare to
     the default strategy of Devlin+ (2019) and
     the recent Mixout method (Lee+ 2020)

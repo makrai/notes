@@ -62,7 +62,7 @@ https://github.com/utahnlp/BERT-fine-tuning-analysis
 * We apply two probing techniques
   * classifier-based probing (Kim+ 2019; Tenney+ 2019) and
   * DirectProbe (Zhou and Srikumar, 2021)
-    on variants of BERT representations that are
+  * on variants of BERT representations that are
   * fine-tuned on five tasks: part-of-speech tagging, dependency head pred,
     preposition supersense role & function prediction, and text classification
 * findings
