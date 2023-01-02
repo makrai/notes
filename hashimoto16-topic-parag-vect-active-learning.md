@@ -9,13 +9,10 @@ https://nactem.ac.uk/pvtopic/
 
 * _Systematic reviews_ require expert reviewers to manually screen thousands of
   citations in order to identify all relevant articles to the review.
-* [Wikipedia: _Active learning_ is a special case of semi-supervised machine
-  learning in which a learning algorithm is able to interactively query the
-  user (or some other information source) to obtain the desired outputs at new
-  data points]
-* For evaluation purposes, we employ the active learning strategy using both
-  our novel topic detection method and a baseline topic model (i.e., Latent
-  Dirichlet Allocation).
+* [Wikipedia: _Active learning_: learning algorithm is able to interactively
+  query the user (or some other information source) to obtain the desired
+  outputs at new data points]
+* evaluation baseline: Latent Dirichlet Allocation
 
 # 1
 

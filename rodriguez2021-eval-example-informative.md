@@ -124,9 +124,9 @@ ACL | IJCNLP 2021
 * active learning (Settles, 2009) is helpful for actively
   * sampling specific items or identifying low-quality items
     (Brodley and Friedl, 1999)
-* Swayamdipta+ (2020) and Pleiss+ (2020):
-  alternative training dynamics-based methods
-  for identifying difficult items as well annotation errors
+* Swayamdipta+ (2020) and Pleiss+ (2020)
+  * alternative training dynamics-based methods
+    for identifying difficult items as well annotation errors
 * Rahman+ (2020) use active learning to build a test collection (closer to us)
 * Explicitly
   measuring how effectively examples separate the best subject from the rest

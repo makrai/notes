@@ -327,9 +327,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 ## Inclusion of intelligent labelling paradigms
 
-* Techniques [150]
-  such as semi-supervised learning, active learning and cooperative learning
-  have been shown to enhance recognition models in a range of speech tasks
+* some techniques [150] enhance recognition models in a range of speech tasks
+  * eg semi-supervised learning, active learning and cooperative learning
 * leverage a smaller set of labelled data to annotate a larger dataset with
   minimal human involvement
 * in speech based classification tasks including emotion recognition
