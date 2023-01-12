@@ -46,14 +46,14 @@ http://ldtoolkit.space
   * hE none of them predict performance on a wide range of tasks (Chiu+ 2016)
 * different extrinsic tasks may rely on different aspects of word reprs
   * what aspects of language
-    * [an embedding] captures
+    * an embedding captures
     * are relevant for different tasks
 * we propose Linguistic Diagnostics (LD)
   * a new approach to automated qualitative analysis of vector neighborhoods
   * the first large-scale attempt to identify and quantify the factors that
     make word embeddings successful with different tasks
-  * We evaluate GloVe and Word2Vec with varying vector sizes and 4 types of
-    context
+  * We evaluate GloVe and Word2Vec with varying vector sizes and
+    4 types of context
   * identifying 21 factors that, to varying extent, correlate with performance
   * 14 extrinsic and intrinsic task datasets
   * can be used for model development and optimization besides evaluation
@@ -92,10 +92,10 @@ http://ldtoolkit.space
     * eye-tracking (Klerke+ 2015; Søgaard, 2016)
     * semantic priming data (Lund+ 1995; Lund and Burgess, 1996; Jones+ 2006;
       Lapesa and Evert, 2013; Ettinger and Linzen, 2016; Auguste+ 2017)
-  * hE no large-scale studies that would show the utility of these methods in
-    predicting downstream task performance
-    * possible that psychological measures share the subjectivity problem of
-      relatedness judgments
+  * hE no large-scale studies that would show the utility of these methods
+    in predicting downstream task performance
+    * possible that psychological measures share the subjectivity problem
+      of relatedness judgments
 * word analogy task (Mikolov+ 2013b)
   * idea: the “best” word embedding is the one that
     encodes linguistic relations in the most regular way
@@ -139,7 +139,7 @@ http://ldtoolkit.space
       * could be due to its focus on a particular type of semantic relations
         (synonymy, co-hyponymy), which turned out to be relevant
 * Our solution is based on “linguistic diagnostic” tests,
-  * [obtained] by large-scale automatic annotation of linguistic, psychological
+  * obtained by large-scale automatic annotation of linguistic, psychological
     and distributional relations between words vectors and their neighbors
   * can be used to find what features are useful for what extrinsic tasks
   * inspired by
@@ -300,8 +300,8 @@ http://ldtoolkit.space
 
 ## 5.1 Correlation analysis
 
-* 21 morphological, lexicographic, psychological, and distributional factors of
-  word vector neighborhoods
+* 21 morphological, lexicographic, psychological, and distributional factors
+  of word vector neighborhoods
 * performance on 14 extrinsic and intrinsic task datasets
   (based on the data from 60 GloVe and Word2Vec embeddings described above)
 * Figure 2: their correlations with each other

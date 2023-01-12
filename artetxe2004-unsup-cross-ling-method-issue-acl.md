@@ -7,14 +7,15 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 * motivations, definition, approaches, and methodology for unsupervised cross-l
 * we call for a more rigorous position in each of them
 * the scenario that is most often used to motivate methods is unrealistic
-  * i.e. no parallel data and abundant monolingual data
+  * ie no parallel data and abundant monolingual data
 * We also discuss different training signals that have been used
   * depart from the pure unsupervised setting
-* issues in tuning and evaluation of unsupervised cross-lingual models and
+* issues in tuning and evaluation of unsupervised cross-lingual models
 * best practices
-* a unified outlook for different types of research in this area (i.e.,
-  cross-lingual word embeddings, deep multilingual pretraining, and
-  unsupervised machine translation) and we argue for comparable evaluation
+* a unified outlook for different types of research in this area 
+  * ie, cross-lingual word embeddings, deep multilingual pretraining, and
+    unsupervised machine translation
+  * we argue for comparable evaluation
 
 # Introduction
 
@@ -27,11 +28,11 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 * For the purpose of this paper, we define “multilingual learning” as learning
   a common model for two or more languages from raw text,
   without any downstream task labels
-  * e.g. translation as well as pretraining multilingual representations
+  * eg translation as well as pretraining multilingual representations
   * will use the term interchangeably with “cross-lingual learning”
 * purely unsupervised cross-lingual learning (UCL): no parallel signal
   * overview in §2. Such work has been motivated by the apparent dearth
-* We [argue with] the scenario (§3.1)
+* We against the scenario (§3.1)
 * Nevertheless, UCL is an important research direction and we advocate for its
   * inherent scientific interest (understand and make progress on general NLU)
   * usefulness as a lab setting, and simplicity (§3.2)
@@ -130,12 +131,12 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
 
 ### Over-reliance on translation tasks
 
-### Lack of an established cross-lingual benchmark. At the same time, there is
+### Lack of an established cross-lingual benchmark
 
 # 6 unified outlook of established research areas and recommendations
 
-* i.e. (cross-lingual word embeddings, deep multilingual models and
-  unsupervised machine translation)
+* ie cross-lingual word embeddings, deep multilingual models and
+  unsupervised machine translation
 
 # 7 Recommendations
 

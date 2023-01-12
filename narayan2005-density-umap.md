@@ -1,13 +1,13 @@
-Density-Preserving Data Visualization Unveils Dynamic Patterns of Single-Cell
-  Transcriptomic Variability
+Density-Preserving Data Visualization Unveils
+  Dynamic Patterns of Single-Cell Transcriptomic Variability
 Ashwin Narayan, Bonnie Berger, Hyunghoon Cho
 Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 
 # Abstract
 
 * Nonlinear data-visualization methods, such as t-SNE and UMAP
-  * staple tools for summarizing the complex transcriptomic landscape of single
-    cells in 2D or 3D
+  * staple tools for summarizing the complex transcriptomic landscape
+    of single cells in 2D or 3D
   * hE, neglect the local density of data points in the original space,
     often resulting in misleading visualizations where
     densely populated subpopulations of cells are given more visual space
@@ -60,7 +60,7 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
     * enables efficient optimization of the density-augmented visu objective
 * To demonstrate the utility of density-preserving visualization
   * a range of published scRNA-seq datasets from
-    lung cancer patients 7 , human peripheral blood cells 8 and
+    lung cancer patients 7, human peripheral blood cells 8 and
     embryonic roundworm Caenorhabditis elegans 9
   * the UK Biobank human genotype profiles and the canonical
   * MNIST hand-written digit images
@@ -80,8 +80,8 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 * t-SNE and UMAP both create a nearest-neighbors graph and
   * preserve only the distances between points that are neighbors in this
   * We use the same  graphs to calculate a local radius around each point,
-  * original objective function quantifies the agreement between a given
-    embedding and the original nearest-neighbors graph
+  * original objective function quantifies the agreement between
+    a given embedding and the original nearest-neighbors graph
 * see Methods, Supplementary Notes 1–3
 
 ## Visualizing the heterogeneity of immune cells in tumor
@@ -164,8 +164,8 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
     * typically a dense “core” surrounded by a sparse cloud of cells with more
       divergent expression patterns
     * By focusing on only this core, one could obtain crisper canonical reprs
-  * k-nearest neighbor-based methods may also benefit from information about
-    local variability
+  * k-nearest neighbor-based methods
+    may also benefit from information about local variability
     * density-augmented algorithms for clustering, trajectory analysis, and
       data integration that could better exploit the true underlying structure
 
@@ -177,14 +177,14 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 
 ## Our approach: capturing density information using the local radius 24
 
-* dense region if its nearest neighbors are very close to it, and in a sparse
+* dense region if its nearest neighbors are very close to it
 * we use average distance to nearest neighbors as a measure of density
 * we require two components:
-  * a pairwise distance function d(x i , x j ), and
+  * a pairwise distance function d(x i, x j), and
   * a probability distribution ρ j|i that weighs each x j based on its distance
-    from x i , with faraway points having lower weights. We define the
-* local radius `R_o` at an original x i , denoted R ρ (x i ),
-  as the expectation of the distance function over x j with respect to ρ j|i ,
+    from x i, with faraway points having lower weights. We define the
+* local radius `R_o` at an original x i, denoted R ρ (x i),
+  as the expectation of the distance function over x j with respect to ρ j|i,
   thus capturing the average distance from x i to nearby points:
 * In the following, we let the distance function be the squared Euclidean dist,
 * In den-SNE and densMAP, we take advantage of the probability distributions P

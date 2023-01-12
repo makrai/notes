@@ -34,7 +34,7 @@ Expert Systems with Applications Volume 150, 15 July 2020, 113288
   * preserve the sparsity of the centroid vectors, and suggest a
   * cluster labeling method for intuitively interpreting the document clusters
 * we limit our exploration to sparse document vectors
-  * TF-IDF, KS Jones, (1972) and Bag-of-Concepts (BOC, Kim, Kim, & Cho, 2017)
+  * TF-IDF (KS Jones 1972) and Bag-of-Concepts (BOC, Kim, Kim, & Cho, 2017)
 
 # 2 issues of the spherical k-means clustering algorithm, and previous attempts
 
@@ -43,7 +43,7 @@ Expert Systems with Applications Volume 150, 15 July 2020, 113288
 # 4 performance
 
 * For each of our enhancements on document clustering, we validate their
-  performances based on numerous criteria listed in Table 2 .
+  performances based on numerous criteria listed in Table 2
   * Dispersed init: Initialization speed, Stability of the clustering result
   * Centroid sparsity:
     * Sparsity of centroids

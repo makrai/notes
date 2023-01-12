@@ -14,8 +14,8 @@ naacl 2018
   Neha Nayak, Gabor Angeli, and Christopher D. Manning. 2016
   Evaluating word embeddings using a representative suite of practical tasks
   2016 1st Workshop on Evaluating Vector Space Representations for NLP, Berlin,
-* predict[ing] the stability of a word can also help refine a model
-  (e.g. by removing selected semantic classes)
+* predicting the stability of a word can also help refine a model
+  (eg by removing selected semantic classes)
 * We
   * features that are intrinsic to a word, a corpus or a model:
     POS, degree of polysemy, frequency, distribution of the contexts,
@@ -26,7 +26,9 @@ naacl 2018
 
 # 2 Experiment Setup
 
-* variation = 1 join ratio
+* To measure the variation for a word between two embedding models, we used an
+  approach similar to Sahlgren (2006) by measuring the
+  nearest neighbors overlap for words common to the two models. More precisely
 * N = 25
 * This measure may also be sensible to hubness
   * they were limited to surnames for the BNC and did not interfere
@@ -41,13 +43,13 @@ naacl 2018
 * Standard deviation
   * is low (average of 0.04) across the 10 pairs of models, meaning that the
   * across words is much higher (average of 0.08), which indicates that there
-* semantic clusters that remained stable across models. E.g.,
+* semantic clusters that remained stable across models
   * temporal expressions (am, pm, noon) in the BNC that
-  * co-hyponyms, e.g
+  * co-hyponyms
     * family members in the BNC (wife, grandmother, sister...),
     * linguistic preprocessing in ACL (parsing, lemmatizing, tokenizing...) and
     * antibiotics in PLOS (puromycin, blasticidin, cefotaxime...)
-    * For ACL and PLOS the transdisciplinary scientific [words]
+    * For ACL and PLOS the transdisciplinary scientific words
       * (conjunctive adverbs such as nevertheless, moreover, furthermore and
       scientific processes such as hypothethize, reason, describe)
 * high variation we found a large number of
@@ -63,7 +65,7 @@ naacl 2018
 * features that are intrinsic to the word, corpus or model:
   * pos: part of speech (nouns, adjectives, adverbs, verbs, proper nouns);
   * polysemy: degree
-    * number of definitions [in] ENGLAWI (Sajous and Hathout, 2015)
+    * number of definitions in ENGLAWI (Sajous and Hathout, 2015)
   * frequency (Sahlgren and Lenci, 2016)
   * entropy: dispersion of the contexts of a word;
     * normalized entropy of a word’s collocates computed on a
@@ -77,7 +79,7 @@ naacl 2018
 
 * feature ablation approach similar to Lapesa and Evert (2017)
 * similar global pattern for models trained on the 3 corpora with two features
-* cosine similarity of the [NN] explains
+* cosine similarity of the NN explains
   * around 20% of the variance. This was expected given the way we measure
   * less than half of the predictive model’s power, meaning that there are
 * POS also has a high impact on the model trained
@@ -90,10 +92,10 @@ naacl 2018
     David Mimno and Laure Thompson
     emnlp 2017
     The strange geometry of skip-gram with negative sampling
-* The effect of the frequency is not [monotonic]. Words having very
+* The effect of the frequency is not monotonic. Words having very
   * low or very high frequency are more affected by variation
   * frequent words displaying instability words in each corpus
-    (e.g.  gene and protein in PLOS, language in ACL and make in BNC etc.)
+    (eg  gene and protein in PLOS, language in ACL and make in BNC etc.)
 * (polysemy and entropy) experiments confirm that
   distributional semantics has more difficulty in representing the meaning of
   words that appear in a variety of contexts

@@ -52,7 +52,7 @@ arXiv:2012.14210 [cs.IR]
 
 # Theory
 
-* approximate nearest neighbor (ANN) index methods as implemented in FAISS are
+* approximate nearest neighbor (ANN) index methods as implemented in FAISS
   * As ANN introduces another source of error, we consider in this paper only
     exact search. The shown results are transferable for ANN
 * Using as few dimensions as possible is desirable, as it

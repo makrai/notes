@@ -122,8 +122,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
     within each of the 50 clusters is labeled
   * reveal the labels of a random sample of examples in that cluster, and
     identify each cluster with its most dominant label
-  * Next, given a new test example, we assign it with the label associated
-    with its nearest cluster
+  * Next, given a new test example, we assign it
+    with the label associated with its nearest cluster
   * Results (see App. B) showed that this rudimentary classifier is generally
     not on par with BERT IT:CLUST, yet it can be
   * surpris effective where the NMI is high and the labeling budget is small

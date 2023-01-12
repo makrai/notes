@@ -10,13 +10,13 @@ EACL 2021 arXiv:2101.11302 [cs.CL]
   * few-shot, cross-lingual adaptation to previously unseen languages; and
   * multilingual joint training when limited target-language data is available
     during training
-* systematic comparison of several meta-learning methods, investigate
+* systematic comparison of several meta-learning methods
   * multiple settings in terms of data availability and show that
   * meta-learning thrives [prosper] in settings with a heterogeneous task distr
   * We propose a simple, yet effective adjustment to existing meta-learning
     methods which allows for better and more stable learning, and set a
-  * new SOTA on several languages while performing on-par on others, using only
-    a small amount of labeled data
+  * new SOTA on several languages while performing on-par on others,
+    using only a small amount of labeled data
 
 # 1 Intro
 

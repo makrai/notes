@@ -1,58 +1,58 @@
-Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
 Factors Influencing the Surprising Instability of Word Embeddings
+Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
 naacl 2018
 
 # Abstract
 
 * even relatively high frequency words (100-200 occurrences) are often
   unstable. We provide empirical evidence for how various factors contribute
-* we analyze the effects of stability on [word similarity and POS tagging]
+* we analyze the effects of stability on word similarity and POS tagging
 
 # 1 Intro
 
 * factors that play a role in the stability of word embeddings, including
   properties of the data, the algorithm, and the words
 * Using the overlap between nearest neighbors as a measure of stability
-* e.g. training word2vec on the Penn Treebank (PTB) (Marcus+ 1993)
+* eg training word2vec on the Penn Treebank (PTB, Marcus+ 1993)
   * medium-frequency words, which show huge variance in stability
 * we explore three different embedding methods:
   PPMI (Bullinaria & Levy, 07), word2vec (Mikolov+ 13b), GloVe (Pennington+ 14)
 * previously studied. Particularly, the effect of
   parameter choices has a large impact on how all three of these algorithms
-  behave (Levy+ 2015). Further work shows that the
+  behave (Levy+ 2015)
 * parameters of the embedding algorithm word2vec influence the geometry of word
   vectors and their context vectors (Mimno and Thompson, 2017)
 * Hellrich and Hahn (2016) posit
   optimal parameters for negative sampling and the number of epochs
   * word properties, such as word ambiguity, affect embedding quality
-* Antoniak and Mimno (2018) evaluates how document properties affect [stab]
-  * to analyze language (e.g., Garg+ 2018), rather than to perform tasks
+* Antoniak and Mimno (2018) evaluates how document properties affect stability
+  * to analyze language (eg, Garg+ 2018), rather than to perform tasks
   * Nikhil Garg, Londa Schiebinger, Dan Jurafsky, and James Zou
     PNAS 2018
     Word embeddings quantify 100 years of gender and ethnic stereotypes
-* Tan+ (2015)  linearly transforming [between] Twitter and Wikipedia
-* second-order properties of embeddings (e.g., how a word relates to the words
-  around it)
+* Tan+ (2015) linearly transforming between Twitter and Wikipedia
+* second-order properties of embeddings
+  (eg, how a word relates to the words around it)
   * NewmanGriffis and Fosler-Lussier (2017) demonstrating that
     embeddings based on second-order properties perform as well as the
-    typical first-order embeddings. Here,
+    typical first-order embeddings
   * we use second-order properties of embeddings to quantify stability
 
 # 3 Defining Stability
 
 * using cosine similarity
   * comparable results for l 1 norm, l 2 norm, and l ∞ norm
-* This definition of stability can be generalized to more than two embedding[s]
+* This definition of stability can be generalized to more than two embeddings
   * Let the stability be the average percent overlap
     over every pair of embedding spaces (x, y)
 * The idea of evaluating ten best options is also found in other tasks, like
-  lexical substitution (e.g., McCarthy and Navigli, 2007) and word association
-  (e.g., Garimella+ 2017)
+  * lexical substitution (eg, McCarthy and Navigli, 2007) and
+  * word association (eg, Garimella+ 2017)
 * how changing the number of nearest neighbors affects our stability metric,
   * Figure 2
   * Ten nearest neighbors performs approximately as well as a higher number
-    of nearest neighbors (e.g., 100). ?
-    * it is computationally less intensive to use a small number of [NNs]
+    of nearest neighbors (eg, 100). ?
+    * it is computationally less intensive to use a small number of NNs
   * We see this pattern for low frequency words as well as for high frequency
     words
 
@@ -68,7 +68,7 @@ naacl 2018
 
 * (most frequent) and (second most frequent) POS
   * If the word is not present in the Brown corpus, then all of these POS
-    features are set to zero. [similarly for syllable count]
+    features are set to zero. similarly for syllable count
     * nem kavar be a gyakoriság?
   * universal tagset, which consists of twelve possible POS (Petrov+ 2012)
 * polysemy
@@ -78,7 +78,7 @@ naacl 2018
 
 ## 4.3 Data Properties
 
-* two sources: New York Times (NYT) (Sandhaus, 2008) and Europarl (Koehn, 2005)
+* two sources: New York Times (NYT, Sandhaus, 2008) and Europarl (Koehn, 2005)
 * seven domains of data: (1) NYT U.S., (2) NYT New York and Region, (3) NYT
   Business, (4) NYT Arts, (5) NYT Sports, (6) All of the data from domains 1-5
   (denoted “All NYT”), and (7) All of English Europarl
@@ -96,7 +96,7 @@ naacl 2018
       the absolute difference in raw frequency
   * the vocabulary size of each corpus (again, symmetrically) and the
   * percent overlap between corpora vocabulary, as well as the
-  * domain of each of the two corpora ...?
+  * domain of each of the two corpora?
   * whether the two corpora are from the same domain
   * the role of curriculum learning in stability
     * the order of the training data affects the performance (Bengio+ 2009)
@@ -118,10 +118,10 @@ naacl 2018
 # 5 Lessons Learned: What Contributes to the Stability of an Embedding
 
 * the regression model achieves a coefficient of determination (R^2) score
-  of 0.301 on the training data[: the model] reasonably fits the training data
-* weights corresponding to each of the features ..., shown in Table 4
-  * difficult to interpret, because features have different distributions and
-    ranges
+  of 0.301 on the training data: the model reasonably fits the training data
+* weights corresponding to each of the features, shown in Table 4
+  * difficult to interpret,
+    because features have different distributions and ranges
 1. Curriculum learning is important
   * Figure 3 shows trends between training data position and stability
   * To further understand the effect of curriculum learning on the model, we
@@ -132,7 +132,7 @@ naacl 2018
   * Table 5 most stable POS are numerals, verbs, and determiners, while the
     least stable POS are punctuation marks, adpositions, and particles
 3. Stability within domains is greater than stability across domains
-  * “All NYT” generalizes across the other NYT domains [well]
+  * “All NYT” generalizes across the other NYT domains well
     even though Europarl is much larger than “All NYT”
 4. GloVe > PPMI > word2vec
   * particularly apparent when only in-domain data is considered
@@ -156,9 +156,9 @@ naacl 2018
 
 ## 6.1 Word Similarity
 
-* we take the absolute difference between our predicted value and the [gold]
+* we take the absolute difference between our predicted value and the gold
   ground-truth value broken down by stability of the two words
-* [in datasets,] there are substantially more unstable words than  stable
+* in datasets, there are substantially more unstable words than  stable
 * As the combined stability of the two words increases, the average absolute
   error decreases
   * why?
@@ -169,7 +169,7 @@ naacl 2018
   * input noise rate of 0.1, and recurrent dropout of 0.4
 * nine sets of 128-dimensional word embeddings with word2vec
 * Fixing the word vectors provides
-  [greater stability], but also leads to much worse performance
+  greater stability, but also leads to much worse performance
 * In general, lower stability words are shifted more during training
 
 # 7 Conclusion and Recommendations

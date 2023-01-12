@@ -190,8 +190,8 @@ EMNLP 2020
       eigenvalues) removes useful information on the interaction between
       all vectors from the initial space, which our spectral method retains
 * Gromov-Hausdorff distance (GH) introduced by Patra+ (2019)
-  * measures the maximum distance of a set of points to the nearest point in
-    another set
+  * measures the maximum distance of a set of points
+    to the nearest point in another set
     ie the worst case distance between two metric spaces X and Y (see Append A)
   * Patra+ (2019) propose this distance to test how well two language
     embedding spaces can be aligned under an isometric transformation

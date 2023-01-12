@@ -167,14 +167,14 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * In §4, we continued pretraining the LM for task adaptation using only the
   training data for a supervised task. Inspired by the success of TAPT, we
   next investigate another setting where a larger pool of unlabeled data from
-  the task distribution exists, typically curated by humans.
+  the task distribution exists, typically curated by humans
 
 ## 5.1 Human Curated-TAPT
 
 * for three tasks (RCT, HYPER PARTISAN, and IMDB) we use this larger pool of
   unlabeled data from an available human-curated corpus
 
-### Results We compare Curated-TAPT to TAPT and DAPT + TAPT in Table 7.
+### Results We compare Curated-TAPT to TAPT and DAPT + TAPT in Table 7
 
 * Curated-TAPT further improves our prior results from §4 across all three
   datasets
@@ -185,7 +185,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * curated-TAPT achieves 95% of the performance of DAPT + TAPT with the fully
   labeled RCT corpus (Table 5) with only 0.3% of the labeled data
 * We recommend that task designers release a large pool of unlabeled task data
-  for their tasks to aid model adaptation through pretraining.
+  for their tasks to aid model adaptation through pretraining
   * doesn't that go against generalization?
 
 ## 5.2 Automated Data Selection for TAPT
@@ -200,19 +200,19 @@ Our code as well as pretrained models for multiple domains and tasks are public
 * We propose simple unsuper-vised methods to retrieve unlabeled text that
   aligns with the task distribution, from a large in-domain corpus. Our
   * by embedding text from both the task and domain in a shared space, then
-    selects candidates from the domain based on queries using the task data.
+    selects candidates from the domain based on queries using the task data
   * the embedding method must be lightweight enough to embed possibly millions
-    of sentences in a reasonable time.
+    of sentences in a reasonable time
 * we employ VAMPIRE (Gururangan+ 2019; Figure 3),
   a lightweight bag-of-words language model
   * We pretrain VAMPIRE on a large deduplicated sample of the domain (1M sents)
   * We then select k candidates of each task sentence from the domain sample,
     * via nearest neighbors selection (k NN TAPT ) 4, or
       * flat search index with cosine similarity between embeddings with the
-        FAISS (Johnson+ 2019) library.
+        FAISS (Johnson+ 2019) library
     * randomly (RAND TAPT )
 * We continue pretraining RoBertA on this augmented corpus with
-  both the task data (as in TAPT ) as well as the selected candidate pool.
+  both the task data (as in TAPT ) as well as the selected candidate pool
 
 ### Results in Table 8 show that k NN TAPT outperforms TAPT for all cases
 
@@ -223,18 +223,18 @@ Our code as well as pretrained models for multiple domains and tasks are public
   * Appendix F shows examples of nearest neighbors of task data
 * Future work might consider a closer study of k NN TAPT,
   more sophisticated data selection methods, and the
-  tradeoff between the diversity and task relevance of selected examples.
+  tradeoff between the diversity and task relevance of selected examples
 
 ## 5.3 Computational Requirements
 
 * Table 9
 * TAPT is nearly 60 times faster to train than DAPT on a single v3-8 TPU and
-* storage requirements for DAPT on this task are 5.8M times that of TAPT .
+* storage requirements for DAPT on this task are 5.8M times that of TAPT 
 * Our best setting of DAPT + TAPT amounts to three phases of pretraining, and
   * nL, once the LM has been adapted to a broad domain, it can be reused for
     multiple tasks within that domain, with only a single additional TAPT phase
 * CuratedTAPT tends to achieve the best cost-benefit ratio in this comparison,
-  hE, one must also take into account the cost of curating large in-domain data.
+  hE, one must also take into account the cost of curating large in-domain data
 * k NN TAPT is much cheaper than DAPT
 
 # 6 Related Work 8
@@ -258,15 +258,15 @@ Our code as well as pretrained models for multiple domains and tasks are public
 
 In Section §3.2, we provide RoBertA’s masked LM loss before and after DAPT . We
 * cross-domain masked-LM loss in Table 12, where we evaluate masked LM loss on
-  text samples in other domains after performing DAPT .
-* mostly follows our intuition and insights from the paper, i.e.
+  text samples in other domains after performing DAPT 
+* mostly follows our intuition and insights from the paper, i.e
   RoBertA’s pretraining corpus and NEWS are closer, and BIO MED to CS (relative
   to other domains). However, our analysis in §3.1 illustrates that
 * REVIEWS and NEWS also have some similarities. This is
   * supported with the loss of RoBertA that is adapted to NEWS , calculated on
-    a sample of REVIEWS .
+    a sample of REVIEWS 
 * hE, RoBertA that is adapted to REVIEWS results in the highest loss for a NEWS
   sample.  This is the case for all domains.  One of the properties that
   * REVIEWS' documents are significantly shorter
 * In general, we find that cross-DAPT masked-LM loss can in some cases be a
-  noisy predictor of domain similarity.
+  noisy predictor of domain similarity
