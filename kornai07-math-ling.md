@@ -1,6 +1,6 @@
-András Kornai
 Mathematical linguisitcs
-2007
+András Kornai
+2007 Springer
 
 # 5 Syntax
 
@@ -155,7 +155,7 @@ Mathematical linguisitcs
 
 # 6 Semantics
 
-# 6.1 The explanatory burden of semantics
+## 6.1 The explanatory burden of semantics
 
 * characterizing the set of expressions and
 * characterizing the set of meanings

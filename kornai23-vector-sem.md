@@ -1,3 +1,7 @@
+Vector Semantics
+András Kornai 
+2023 Springer
+
 # 1 Foundations of non-compositionality
 
 ## 1.1 Lexicographic principles

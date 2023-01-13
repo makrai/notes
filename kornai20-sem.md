@@ -1,8 +1,10 @@
-Kornai
 Semantics
-2020
+András Kornai
+2020 Springer
 
-## 1.4
+# 1 Introduction
+
+## 1.4 Plan of the book
 
 * First there is the Frege-Russell-Tarski-Montague-Kamp tradition, what we call
   the {\it standard} theory in this book. [\dots] Here meanings are modeled by
@@ -26,6 +28,8 @@ Semantics
     from the ideas (meaning representations) to utterances (strings of words).
   * We take several technical devices from Pān.ini, chief among them the theory
     of kārakas or deep cases, which we discuss in Section 4.6, and the
+
+# 2 Linear Spaces, Boolean Algebras, and First Order Logic
 
 ## 2.6 Proof theory
 
@@ -54,6 +58,8 @@ Semantics
 * we learn about _house_ first, and consider _tents, industrial buildings_ etc
   * [but there are] words like _mirror_ or _wiggle_ that are _sui generis_
     * these offer no significant contrasts
+
+# 4 Graphs and Machines
 
 ## 4.2 Formal syntax
 
@@ -87,6 +93,8 @@ Semantics
     recipient to have impression of condition
   * defend (from/against), equal, feed, prefer, protest, shoot (at)
 
+# 5 Phenogrammar
+
 ## 5.5 Representing knowledge and meaning
 
 * the autonomy of syntax thesis (Chomsky 1973), claiming that
@@ -100,13 +108,15 @@ Semantics
     good engineering sense to maximally isolate our theory of semantics from
     the details of syntactic representation.
 
-## 5.7
+## 5.7 Pragmatics
 
 Here we will discuss three well known ranges of ‘pragmatic’ phenomena
   * cooccurrence restrictions,
   * implicature, and the
   * dependence of linguistic meaning on external (non-linguistic) factors
 * synt jól formált de furcsa mondatok tagadása nem feltétlenül furcsa
+
+# 7 Models
 
 ## 7.1 Schematic inferences
 
