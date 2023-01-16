@@ -4,6 +4,8 @@ András Kornai
 
 # 5 Syntax
 
+## 5.1 Combinatorical theories 78
+
 ## 5.2 Grammatical theories
 
 ### 5.2.2 Linking
@@ -11,19 +13,19 @@ András Kornai
 * Modern theories of morphosyntax (Ostler 1979, Kiparsky 1987, Smith 1996),p109
   differ from Pānini chiefly in their ambition to also handle analytic langs
 * deep case (kāraka) will be realized (abhihita, ‘spoken’) by morphological and
-  structural devices biuniquely but heterogeneously across verbs.  We have
+  structural devices biuniquely but heterogeneously across verbs
   * biuniqueness in any fixed construction since
     every deep case that appears there will be realized by a single linker and
     every linker realizes some deep case, and we have
   * heterogeneity in that there is
-    no requirement for the realization to be constant across verbs.  For
+    no requirement for the realization to be constant across verbs
     * eg accusative (surface) case can serve to realize Goal or Patient (but)
-    * Goal can also be realized by the instrumental case.  Such theories are
-* ‘direct’: proceed from the arguments of the verb, defined semantically,
+    * Goal can also be realized by the instrumental case
+* ‘direct’ theo: proceed from the arguments of the verb, defined semantically,
   to the linkers, which are visible on the surface,
   using only one intermediary, the deep cases
 * indirect theories invoke two sets of intermediaries, deep cases and
-  grammatical functions (subject, object, etc.), as well
+  grammatical functions (subject, object, etc), as well
 * Relational grammar does not use a separate apparatus for these two
   * but does permit derivational strata, which make the overall theory indirect
 * same is true of case grammar
@@ -34,7 +36,7 @@ András Kornai
   subjects and objects
   * reflexives: John shaved himself is obviously grammatical and `*`Himself shav
 * a third set of primitives, called thematic roles or theta roles, that are
-  regularly invoked in classifying verbal arguments
+  * regularly invoked in classifying verbal arguments
   * intended as fully semantical, expressing generalizations that follow from
     the meaning of verbs
   * eg if V is an action and NP refers to the Agent of this action, then NP
@@ -48,16 +50,16 @@ András Kornai
 * indirect theories, to which we now turn, permit combinatorical statements
   that refer to more than one set of primitives
 
-## Semantics-driven theories
+## 5.3 Semantics-driven theories
 
 * eg split ergativity gives rise to the suspicion, shared by many in AI,
   that mainstream linguistics goes about the whole matter the wrong way,
   invoking too many hard to define and hard to apply grammatical intermediaries
-  * mapping should be straightforward from thought to expression.  The goal
-    should be simply to specify the _language of thought_
+  * mapping should be straightforward from thought to expression
+  * The goal should be simply to specify the _language of thought_
 * goes back at least to the great
-  * rationalist thinkers of the 17th century, in particular Descartes, Pascal,
-    and Leibniz
+  * rationalist thinkers of the 17th century, in particular
+    Descartes, Pascal, and Leibniz
   * Early AI research such as
     * Quillian’s (1969) Teachable Language Comprehender and
     * JR Anderson and Bower’s (1973) Human Associative Memory and
@@ -65,7 +67,7 @@ András Kornai
     * took quite seriously the task of accounting for human long-term memory
       including performance effects such as reaction times
 * accidental and essential properties
-  * What is accidental in one kind of entity may be essential in another, and
+  * What is accidental in one kind of entity may be essential in another
 * Minsky (1975) introduced the notion of frames
   * not to be confused with the case frames introduced in Section 5.2 above
   * KR frames apply to nouns, case frames to verbs
@@ -94,7 +96,7 @@ András Kornai
       INITIATES, and REASON (which correspond roughly to cases)
 * átvezetés Schankból Jackendoffba
   * This skeletal picture would need to be supplemented by a host of additional
-    axioms to recapitulate the exact combinatorical possibilities of CD, e.g
+    axioms to recapitulate the exact combinatorical possibilities of CD
     * eg objects need to be AT-LOC before they can PTRANS out of it (Schank
       1973). We will not pursue CD in this detail because
   * the representations preferred in linguistics tend to use a slightly

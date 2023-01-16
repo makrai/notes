@@ -34,6 +34,9 @@ More complex notation
 
 ## 1.5 The algebra of definitions
 
+15. BinaryAtom -> at | between | cause_ | er_ | follow | for_ | from | has | in
+    | ins_ | is_a | lack | mark_ | on | part_of | under
+
 ### 5. MarkedClause ÑDefaultClause|PositionClause|ComplexClause|Clause
 
 * Position clauses, just as `mark_`, are language-specific. They are used in a
