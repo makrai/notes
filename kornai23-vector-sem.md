@@ -1,58 +1,58 @@
 Vector Semantics
-András Kornai 
+András Kornai
 2023 Springer
 
 # 1 Foundations of non-compositionality
 
-## 1.1 Lexicographic principles
+## 1.1 Background
 
+## 1.2 Lexicographic principles
+
+Universality
 Reductivity
-Morphological prerequisites
 Encyclopedic knowledge
-Lexical categories and subcategories
-Relations
-Linking
-Naive grammar
 
-## 1.2 The syntax of definitions
+## 1.3 The syntax of definitions
+
+* the details of the ‘tinkering’ change from language to language
+* the `mark_` primitive connects words to their meanings (see 2.5)
+* permitting semantics to cross-cut syntax and morphology
+  * particular piece of tinkering both Cresswell and I are guilty of
 
 Coordination
+Subordination
 External pointers
 Subjects and objects
 Direct predication
 Defaults
 Agents, patients
-Deep cases
 More complex notation
 
-## 1.3 1.3 The syntax of definitions
-
-* the details of the ‘tinkering’ change from language to language, but we try
-* the `mark_` primitive connects words to their meanings (see 2.5). One
-* permitting semantics to cross-cut syntax and morphology, such as by reliance
-  * particular piece of tinkering both Cresswell and I are guilty of
+## 1.4 The geo of definitions
 
 ## 1.5 The algebra of definitions
 
 15. BinaryAtom -> at | between | cause_ | er_ | follow | for_ | from | has | in
     | ins_ | is_a | lack | mark_ | on | part_of | under
 
-### 5. MarkedClause ÑDefaultClause|PositionClause|ComplexClause|Clause
+### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
 * Position clauses, just as `mark_`, are language-specific. They are used in a
 * we abstract away from a great deal of micro-syntax, since most of the
   ‘tinkering’ is both highly syntactic and highly language-specific, while our
-  focus is with the semantic and the universal.
+  focus is with the semantic and the universal
 
-### 7. PositionClause Ñ PositionMarker mark_ UnaryAtom
+### 7. PositionClause ~>  PositionMarker mark_ UnaryAtom
 
 * `mark_` is a semi-technical mark term, the closest we will get to
 * the Sausserean sign: its agent is a sign, its patient is a meaning, and it
 * A typical example would be in the last clause defining the English word _buy_
-  * =agt receive =pat, =agt pay seller, "from _" mark_ seller. 
+  * =agt receive =pat, =agt pay seller, "from _" mark_ seller
   * discussed in 1.4
   * Whatever follows the string “from” is the seller in English
   * in Hungarian it would be whatever precedes the ablative case marker
+
+## 1.6 Parallel description
 
 # 2 From morphology to syntax
 
@@ -72,14 +72,14 @@ More complex notation
 
 * `mark_`
 * Let us turn to an explanation for more abstract, non-spatial binaries (p58)
-  * eg `for_, has, ins_, lack, mark_` and others 
-    * korábban e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, `PART_OF`
+  * eg `for_, has, ins_, lack, mark_` and others
+    * korábban eg CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, `PART_OF`
   * using purposive `for_` as our example
 
 ### the linkers, the most recalcitrant of our primitives (line 1438, page 63)
 
 * more abstract, notional binaries
-  e.g. CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
+  eg CAUSE, ER, FOR, HAS, INSTRUMENT, LACK, MARK, PART_OF
   * defer MARK to 2.5, and
   * Chapter 4: our negation operator LACK
 * We begin with purposives: FOR, INSTRUMENT
@@ -87,13 +87,13 @@ More complex notation
   * we define x cause_ y by cause_ x before y, after(y)
   * This falls quite short of a proper analysis of single and multiple causes,
     * encourages precisely the kind of errors that are rampant in the
-      identification of cause-effect relations. But there is no reason to
+      identification of cause-effect relations
     * sophisticated data analysis of the kind urged in (Pearl, 2009) cannot be
       replicated in natural language semantics, especially as
       * the kind of statistics and probability theory that undergird the modern
         scientific understanding are not supported by natural language (Ch 5)
   * We compare the commonsensical definition of causation to the counterfactual
-    sine qua non definition in Chapter 6
+    _sine qua non_ definition in Chapter 6
 * `PART_OF`, HAS
 * We also explained how
   the mainstays of case/valency systems, such as datives, locatives, and ins,
@@ -113,14 +113,14 @@ More complex notation
   the universal conceptual schema / the naive theory of grammar
 * in `cause_` the underscore signifies that we are interested in a substantive,
   if naive, theory of causation, something that
-  * must be available to support all kinds of decompositional analyses e.g kill
-    means ‘cause to die’
+  * must be available to support all kinds of decompositional analyses
+    eg kill means ‘cause to die’
   * the common decompositional style of lexical analysis relies on primitives
     like MOVE; BECOME; DO; and others,
   * 4lang simply uses ordinary lexical entries _move_ `before(=agt at place/10`
   * often the distinction between the ‘grammatical’ and the ‘ordinary’ use is
     so slight that we see no reason to even make the distinction:
-  * eg part_of (discussed in 2.4 above) and is_a
+  * eg `part_of` (discussed in 2.4 above) and `is_a`
 * The U/V (intransitive/transitive) distinction (p71)
 * Since our goals are remarkably close, and our motivations are nearly (p72)
   identical, readers of Jackendoff and Audring (2020) may find a direct
@@ -141,40 +141,62 @@ More complex notation
 
 * Here we take advantage of the mechanism that we have at our disposal
   independent of negation and quantification, thematic roles (Dowty, 1986) and
-  the fact that we already have a fundamental is_a
+  the fact that we already have a fundamental `is_a`
 
-# 5 Probabilistic reasoning
+# 5 Valuations and learnability. Old title: Probabilistic reasoning 115
 
 # 6 Modals and counterfactuality
 
-##6.1 Tense and aspect 
+##6.1 Tense and aspect
 
 ##6.2 The deontic world (The instrumental is also discussed here)
 
-* This again illustrates a point we already made at the end of 6.1: it is the
-  lexical semantics of the elements such as the instrumental case marker ins_,
-  defined as =pat make ins_ =agt[easy] that drives the way instruments are
-  referred to in language, not some top-down theory (such as hierarchical
-  ordering of thematic roles). This is not to say that conceptual definitions
-  such as Fillmore’s “The case of the inanimate force or object causally
-  involved in the action or state identified by the verb” or Pān.ini’s “most
-  effective means” are useless. To the contrary, these are both powerful
-  paraphrases for trying to get to the meaning of the instrumental marker, and
-  for the analytically minded, they provide excellent guidance in trying to
-  sort out what (if anything) can be considered an instrument in a given
-  situation. Our own definitional attempt differs from these chiefly in being
-  provided in a fully formalized language, in keeping with the overall plan of
-  the work.
+* lex sem drives the way things are referred to in language
+  * instruments again illustrate this point
+  * point already made at the end of 6.1
+  * it is the lexical semantics of the elements that drives the way instruments
+    are referred to in language,
+    * not some top-down theory (such as hierarchical ordering of them roles)
+  * the instrumental case marker ins_, defined as `=pat make ins_ =agt[easy]`
+  * conceptual definitions are paraphrases for trying to get to the meaning of
+    * such as Fillmore’s “The case of the inanimate force or object causally
+      involved in the action or state identified by the verb” or
+    * Pān.ini’s “most effective means”
+    * for the analytically minded, they provide excellent guidance in trying to
+      sort out what (if anything) can be considered an instrument in a given
+      situation
+    * Our own definitional attempt differs from these chiefly in being provided
+      in a fully formalized language, in keeping with our overall plan
 
-##6.3 Knowledge, belief, emotions 
+##6.3 Knowledge, belief, emotions
 
-##6.4 Defaults 
+##6.4 Defaults
 
 # 7 Implicature and gradient adjectives
 
-7.1 Adjectives 
-7.2 Gradience 
-7.3 Implicature 
-7.4 Spreading activation 
+## 7.1 Adjectives
+## 7.2 Gradience
+## 7.3 Implicature
+## 7.4 Spreading activation
 
-# 8 Coreference
+* parsing in algebraic semantics is relatively easy:
+  * It should be clear from 7.3
+  * after some morphological analysis, we just look up the words in the lexicon
+    and apply spreading activation and unification algorithms in
+  * the same manner as we analyzed colorless green ideas sleep furiously in 6.4
+  * This is the approach taken eg in
+    * Unification Grammar (Shieber, 1986)
+    * HPSG (Pollard and Sag, 1987)
+    * and more recently in
+      * Extended Dependency Unification Grammar (EDUG, Hellwig, 1993)
+      * and Abstract Meaning Representation (AMR, Banarescu+ 2013)
+  * Broadly speaking, all ‘algebraic’ approaches
+    * ie not just the classic AI models originating with Quillian (1967), but
+      also Pān.ini) and Generative Semantics
+    * proceed from meaning representation to surface form directly,
+      without any reliance on Logical Form
+    * view interpretation as the inverse task, analysis by synthesis
+
+# 8 Trainability and real-world knowledge. Old title: Coreference 175
+
+# 9 Applications

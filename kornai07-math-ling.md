@@ -2,6 +2,53 @@ Mathematical linguisitcs
 András Kornai
 2007 Springer
 
+# 1 Introduction
+
+## 1.1 The subject matter
+## 1.2 Cumulative knowledge
+## 1.3 Definitions
+## 1.4 Formalization
+## 1.5 Foundations
+## 1.6 Mesoscopy
+
+* mesoscopic systems: when these contain, say, fifty atoms,
+  * too large to be given a microscopic quantum-mechanical description but
+  * too small for the classical macroscopic properties to dominate the behavior
+  * Linguistic systems are mesoscopic in the same broad sense: they have
+  * thousands of rules and axioms
+    * compared with the handful of axioms used in most branches of mathematics
+  * we can get reasonable approximations of the behavior at the macroscopic
+    level using the statistical techniques pioneered by A. A. Markov (ch 7 & 8)
+
+## 1.7 Further reading 1
+
+# 2 The elements
+
+## 2.1 Generation
+## 2.2 Axioms, rules, and constraints
+## 2.3 String rewriting
+## 2.4 Further reading 9
+
+# 3 Phonology
+
+## 3.1 Phonemes
+## 3.2 Natural classes and distinctive features
+## 3.3 Suprasegmentals and autosegments
+## 3.4 Phonological computation
+## 3.5 Further reading 23
+
+# 4 Morphology
+
+## 4.1 The prosodic hierarchy
+## 4.1.1 Syllables
+## 4.1.2 Moras
+## 4.1.3 Feet and cola
+## 4.1.4 Words and stress typology
+## 4.2 Word formation 51
+## 4.3 Optimality
+## 4.4 Zipf’s law
+## 4.5 Further reading
+
 # 5 Syntax
 
 ## 5.1 Combinatorical theories 78
@@ -80,17 +127,18 @@ András Kornai
     * actors fulfilling roles, eg that of the waiter or the best man,
     * decompose the prototypical action in a series of more elementary
       sub-scripts such as ‘presenting the menu’ or ‘giving the bride away’
-  * linguistically better motivated models, in particular discourse
-    representation theory
+  * linguistically better motivated models, in particular
+    discourse representation theory
     * scope is more modest, being concerned primarily with the introduction of
       new entities (the owner, the best man)
   * studies of ritual, in particular in the Indian tradition (Staal 1982,1989)
 * conceptual dependency (Schank 1972) extends ideas familiar from
   dependency grammar down to the level of mental language
   * To apply the MIL formalism of Section 5.2 to Conceptual Dependency, we take
-    * primitive objects to be the atomic symbols PP, PA, and AA (which in CD
-      correspond roughly to nouns, adjectives, and adverbs), ATRANS, PTRANS,
-      MTRANS, GRASP, PROPEL, MOVE, INGEST, EXPEL, ATTEND, SPEAK, MBUILD, and DO
+    * primitive objects to be the atomic symbols PP, PA, and AA
+      (which in CD correspond roughly to nouns, adjectives, and adverbs)
+    * ATRANS, PTRANS, MTRANS, GRASP, PROPEL, MOVE, INGEST, EXPEL, ATTEND,
+      SPEAK, MBUILD, and DO
       (which correspond roughly to verbs), and choose the
     * `P_i` as CAUSE, BI-CAUSE, MOBJECT, INSTRUMENT, ENABLES, RESULTS,
       INITIATES, and REASON (which correspond roughly to cases)
@@ -105,8 +153,8 @@ András Kornai
       `DO(John,CAUSE(HAVE(Bill,book)))` as the underlying semantic structure
       (Jackendoff 1972)
     * explicit use of implicit illocutionary primitives _such as `DO`_ in this
-      example is particularly characteristic of the generative semantics school
-      (Harris 1995)
+      example is particularly characteristic of the
+      generative semantics school (Harris 1995)
 * Wierzbicka
 * conceptual modeling of the _folk theory_ or _naive theory_ behind conceptual
   entities fits very well in the style of logical analysis undertaken in AI
@@ -120,6 +168,19 @@ András Kornai
   * dictionary definitions or meaning postulates that
     connect the vast majority of lexical items to the few primitives
   * inner syntax of conceptual representations, both primitive and derived
+
+## 5.4 Weighted theories 111
+
+### 5.4.1 Approximation 113
+### 5.4.2 Zero density 116
+### 5.4.3 Weighted rules 120
+
+## 5.5 The regular domain 122
+
+### 5.5.1 Weighted finite state automata 123
+### 5.5.2 Hidden Markov models 129
+
+## 5.6 External evidence 132
 
 ## 5.7 Further reading
 
@@ -148,7 +209,7 @@ András Kornai
     an as-needed basis, but there are
     * no clear natural language phenomena that would serve to motivate them
 * the relationship between AI/KR and syntax is far more tenuous today
-  * AI/KR has largely given up on syntax as too hard, and on the other, its
+  * AI/KR has largely given up on syntax as too hard, and on the other hand
   * AI has moved to machine learning, a field more immediately concerned with
     linguistic pattern recognition in speech, handwriting, and machine print
     recognition (see Chapters 8 and 9) than in syntax proper
@@ -161,8 +222,7 @@ András Kornai
 
 * characterizing the set of expressions and
 * characterizing the set of meanings
-* expressions that have similar form should receive analyses by the same
-  apparatus
+* expressions that have similar form should be analysed by the same apparatus
 * expressions occurring in fiction should receive analysis by the same
   apparatus as expressions used in nonfiction contexts
 * the system must be flexible about naming
@@ -174,14 +234,12 @@ András Kornai
 
 * The problem, known as the defeasability of natural language statements, has
   given rise to a wide variety of
-  * nonmonotonic logic approaches (for an overview see Ginsberg 1986a). Of
-    particular interest here are
+  * nonmonotonic logic approaches (for an overview see Ginsberg 1986a)
   * generic constructions such as
     * _Sea turtles live to be over a 100 years old_, which can be true even if
       the majority of specific instances fail
-    * At the extreme end, some generic statements such as _P6 processors are
-      outdated_ may be considered true without any individual instances holding
-      true
+    * the extreme end, some generic statements eg _P6 processors are outdated_
+      may be considered true without any individual instances holding true
 
 ### 6.2.2 Truth values and variable binding term operators
 
@@ -206,9 +264,37 @@ András Kornai
 * standard treatment of exceptions is Moltmann (1995), who takes the exception
   domain to be subtracted from each element in the set of properties that make
   up a generalized quantifier (see also Lappin 1996)
-* paraconsistent logic has already been considered by Bäuerle and Cresswell
-  (1989); Possibly we would need in addition a
+* paraconsistent logic has been considered by Bäuerle and Cresswell (1989)
 * nonstandard propositional logic, perhaps eg the kind that Belnap (1977)
   thinks a computer should use when reasoning from inconsistent information
 * Ginsberg’s (1986) system D, which
   * combines paraconsistency with default reasoning
+
+# 7 Complexity 179
+
+## 7.1 Information 179
+## 7.2 Kolmogorov complexity 185
+## 7.3 Learning 189
+### 7.3.1 Minimum description length 190
+### 7.3.2 Identification in the limit 194
+### 7.3.3 Probable approximate correctness 198
+## 7.4 Further reading 200
+
+# 8 Linguistic pattern recognition 201
+
+## 8.1 Quantization 202
+## 8.2 Markov processes, hidden Markov models 206
+## 8.3 High-level signal processing 209
+## 8.4 Document classification 211
+## 8.5 Further reading 217
+
+# 9 Speech and handwriting 219
+
+## 9.1 Low-level speech processing 220
+## 9.2 Phonemes as hidden units 231
+## 9.3 Handwriting and machine print 238
+## 9.4 Further reading 245
+
+# 10 Simplicity 247
+
+## 10.1 Previous reading 250

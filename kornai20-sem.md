@@ -6,19 +6,14 @@ András Kornai
 
 ## 1.4 Plan of the book
 
-* First there is the Frege-Russell-Tarski-Montague-Kamp tradition, what we call
-  the {\it standard} theory in this book. [\dots] Here meanings are modeled by
-  logic formulas
-* Second, there is the
-  \href{https://en.wikipedia.org/wiki/John_Rupert_Firth}{Firth} -
-  \href{https://en.wikipedia.org/wiki/Zellig_Harris}{Harris} -
-  `\href{https://en.wikipedia.org/wiki/Charles_E._Osgood}{Osgood}` tradition of
-  {\it distributional} theory [\dots].  Here meanings are modeled as  vectors
-  in a continuous vector space ${\mathbb R}^n$
-* Third, there is the
-  \href{https://en.wikipedia.org/wiki/Semantic_network}{semantic network}
-  theory, of which both {\tt 4lang} and \href{http://amr.isi.edu}{AMR} are
-  modern instances
+* three theories
+  1. the standard theory
+    * First there is the Frege-Russell-Tarski-Montague-Kamp tradition,
+      what we call the _standard_ theory in this book
+    * meanings are modeled by logic formulas
+  2. the Firth-Harris-Osgood tradition of _distributional_ theory [\dots].
+     Here meanings are modeled as  vectors in a continuous vector space `R^n`
+  3. the _semantic network_ theory: both _4lang_ and _AMR_ are modern instances
 
 ## 1.5 Suggested reading plans
 
@@ -27,7 +22,7 @@ András Kornai
   * grammar is a formal transduction mechanism
     from the ideas (meaning representations) to utterances (strings of words).
   * We take several technical devices from Pān.ini, chief among them the theory
-    of kārakas or deep cases, which we discuss in Section 4.6, and the
+    of kārakas or deep cases, which we discuss in Section 4.6
 
 # 2 Linear Spaces, Boolean Algebras, and First Order Logic
 
@@ -49,15 +44,28 @@ András Kornai
 ## 2.7 Multivariate statistics
 
 * concept formation, the ability to acquire words based only on a few examples
-  * We
-    * begin with some terminology common to linguistics, cognitive science, and
-      philosophy, where the issue of concepts and concept formation is
-      generally approached through some theory of _natural kinds_, and
-    * gradually recast the main observations in the language of machine
-      learning
+* organization of the section
+  * begin with some terminology common to linguistics, cognitive science, and
+    philosophy, where the issue of concepts and concept formation is generally
+    approached through some theory of _natural kinds_, and
+  * gradually recast the main observations in the language of machine learning
 * we learn about _house_ first, and consider _tents, industrial buildings_ etc
   * [but there are] words like _mirror_ or _wiggle_ that are _sui generis_
     * these offer no significant contrasts
+
+# 3 Prolepsis
+
+* difficulties attendant to the creation of something from nothing
+  * If knowledge in the learner’s head can be created from nothing, the
+  * Prolepsis, often translated as ‘foreshadowing’ or ‘preconception’, is a
+    technical term originating with the Stoics, for whom it meant
+  * a naturally endowed and innate system of thought involving universal
+    concepts
+  * roots of the idea go back to the
+    * Platonic method of ‘recollection’ (anamnesis), as exemplified in Meno,
+      where Socrates teaches the slave boy that a square D built on the
+      diagonal of a smaller base square B will have twice the area of B. Some
+  * from Leibniz and Descartes to Chomsky and Fodor.
 
 # 4 Graphs and Machines
 
@@ -67,7 +75,7 @@ András Kornai
   * NOM and ACC in case grammar (Fillmore, 1977)
   * 1 and 2 in relational grammar (Perlmutter, 1983)
   * AGENT and PATIENT in linking theory (Ostler, 1979)
-  * nsubj and dobj in Universal Dependencies (see Section 5.4). The label names
+  * nsubj and dobj in Universal Dependencies (see Section 5.4)
 
 ## 4.6 Inner syntax
 
@@ -99,22 +107,24 @@ András Kornai
 
 * the autonomy of syntax thesis (Chomsky 1973), claiming that
   * the syntactic rules and principles of a language are formulated without
-    reference to meaning, discourse, or language use (
+    reference to meaning, discourse, or language use
   * see
     * Fred Newmayer’s class notes for this particular formulation and much
       relevant discussion, and see
-    * Anderson (2005a) for a strongly opposed view).
+    * Anderson (2005a) for a strongly opposed view
   * In this book we assume syntax to be autonomous ... simply because it makes
     good engineering sense to maximally isolate our theory of semantics from
-    the details of syntactic representation.
+    the details of syntactic representation
 
 ## 5.7 Pragmatics
 
-Here we will discuss three well known ranges of ‘pragmatic’ phenomena
+* Here we will discuss three well known ranges of ‘pragmatic’ phenomena
   * cooccurrence restrictions,
   * implicature, and the
   * dependence of linguistic meaning on external (non-linguistic) factors
-* synt jól formált de furcsa mondatok tagadása nem feltétlenül furcsa
+* the negation of synt well-formed but strange sentences are not necess strange
+
+# 6 Lexemes 177
 
 # 7 Models
 
@@ -125,15 +135,17 @@ Here we will discuss three well known ranges of ‘pragmatic’ phenomena
   * based conceptually on Winograd’s 1972 schemas and specifically
   * designed by Levesque, Davis, and Morgenstein (2012)
 
+# 8 Embodiment 227
+
 # 9 The meaning of life
 
 ## 9.4 A formal model
 
-* In
-  * the proto-logic described here there is only one rule of deduction, called
-    _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition. In
-  * standard systems of formal logic the main deductive rule is modus ponens,
+* deductive rule 
+  * in the proto-logic described here there is only one rule of deduction,
+    called _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition.
+  * in standard systems of formal logic the main deduct rule is modus ponens,
     but in our model modus ponens comes built into the set-theoretical underpinn
   * if some x is wrong, say kicking your opponent when he is down, surely 2x is
-    also wrong, and we begin to see why we want the set W that corresponds to
-    the predicate wrong to be a cone.
+    also wrong, and we begin to see
+    why we want the set W that corresponds to the predicate wrong to be a cone
