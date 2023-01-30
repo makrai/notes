@@ -256,10 +256,10 @@ Our code as well as pretrained models for multiple domains and tasks are public
 
 # Analysis of Cross-Domain Masked LM Loss
 
-In Section §3.2, we provide RoBertA’s masked LM loss before and after DAPT . We
+* In Section §3.2, we provide RoBertA’s masked LM loss before and after DAPT
 * cross-domain masked-LM loss in Table 12, where we evaluate masked LM loss on
   text samples in other domains after performing DAPT 
-* mostly follows our intuition and insights from the paper, i.e
+* mostly follows our intuition and insights from the paper, ie
   RoBertA’s pretraining corpus and NEWS are closer, and BIO MED to CS (relative
   to other domains). However, our analysis in §3.1 illustrates that
 * REVIEWS and NEWS also have some similarities. This is
