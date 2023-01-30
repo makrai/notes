@@ -15,7 +15,7 @@ ICLR 2021 Poster
   * benefits persist through the fine-tuning stage
     even though the output embedding is discarded after pre-training
 * larger output embeddings
-  prevent the model's last layers from overspec to the pre-training task and
-  encourage Transformer representations to be
-  more general and more transferable to other tasks and languages
+  * prevent the model's last layers from overspec to the pre-training task and
+  * encourage Transformer representations to be
+    more general and more transferable to other tasks and languages
 * strong performance on the XTREME benchmark without more params at fine-tuning
