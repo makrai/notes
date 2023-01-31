@@ -1,17 +1,17 @@
 From Word to Sense Embeddings: A Survey on Vector Representations of Meaning
 Jose Camacho-Collados and Mohammad Taher Pilehvar
-arXiv:1805.04032v2 [cs.CL] 14 May 2018
+arXiv:1805.04032v2 cs.CL 14 May 2018
 
 # Abstract
 
-* This survey is focused on semantic representation of meaning.
-* two main branches of sense representation, i.e., unsupervised and KBed
-* this survey covers the main evaluation procedures and provides an analysis of
+* This survey is focused on semantic representation of meaning
+* two main branches of sense representation: unsupervised and KBed
+* this survey covers the main evaluation procedures and provides an analysis
 
 # 1. Intro
 
-* word embeddings [are] beneficial in [NLP] tasks,
-  * generalization power (Goldberg, 2016). A wide range of
+* word embeddings are beneficial in NLP tasks,
+  * generalization power (Goldberg, 2016)
   * applications have reported improvements upon integrating word embeddings,
     * Machine Translation (Zou, Socher, Cer, & Manning, 2013),
     * syntactic parsing (Weiss, Alberti, Collins, & Petrov, 2015),
@@ -32,10 +32,10 @@ arXiv:1805.04032v2 [cs.CL] 14 May 2018
 
 # 6. Analysis
 
-## interpretability
-## adaptability to different domains
-## sense granularity
-## compositionality and
-## integration into downstream applications.
+## Interpretability
+## Adaptability to different domains
+## Sense granularity
+## Compositionality
+## Integration into downstream applications
 
 # 7. Conclusions

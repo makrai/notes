@@ -19,12 +19,12 @@ phrasal meaning in an interpretable way
 
 # 2.1 Non-negative Sparse Embeddings
 
-* A ∈ R^{w×l} that is sparse, non-negative, and represents word semantics
+* `A ∈ R^{w×l}` that is sparse, non-negative, and represents word semantics
 * D ∈ R^{l×c} : the encoding of corpus statistics in the latent space
 * Though Equations 1-3 represent a non-convex system,
-  when solving for A with D fixed (and vice versa) the loss function is convex
+  when solving for `A` with D fixed (and vice versa) the loss function is convex
 * Mairal+ break the problem into two alternating optimization steps
-* A is found with a LARS implementation for lasso regression (Efron+ 2004)
+* `A` is found with a LARS implementation for lasso regression (Efron+ 2004)
 * D is found via gradient descent
 * (the final solution may not be globally optimal)
 
