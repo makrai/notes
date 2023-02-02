@@ -1,5 +1,5 @@
-Jiaqi Mu, Suma Bhat, Pramod Viswanath
 All-but-the-Top: Simple and Effective Postprocessing for Word Representations
+Jiaqi Mu, Suma Bhat, Pramod Viswanath
 ICLR, 2018
 
 # Abstract
@@ -122,19 +122,19 @@ ICLR, 2018
   * A generative model of sentences: the word at time t, denoted by `w_t`, is
     generated via a log-linear model with a latent discourse variable `c_t`
     * `c_t` forms a “slowly moving" random walk,
-  * Constraints on the word vectors: Arora+ (2016) suppose that there is a
-    Bayesian priori on the word vectors:
+  * Constraints on the word vectors:
+    Arora+ (2016) suppose that there is a Bayesian priori on the word vectors:
   * Revised conditions: We revise the Bayesian prior postulate
     * differs from the original one in two ways:
       * it imposes a formal deterministic constraint on the word vectors;
       * allows the word vectors to be angularly asymmetric:
-        as long as the energy in the direction of u 1 ,. . . ,u D is bounded,
+        as long as the energy in the direction of u 1 ,... ,u D is bounded,
         there is no constraint on the coefficients. Indeed, note that there is
-        no constraint on ṽ(w) to be orthogonal to u 1 , . . . u D
+        no constraint on ṽ(w) to be orthogonal to u 1 , ... u D
 
 ## Empirical Validation of that the enlarged conditions are met by embeds
 
-* u 1 . . . u D are the singular vectors associated with the top D singul vals
+* u 1 ... u D are the singular vectors associated with the top D singul vals
   * D = 20 for WORD2VEC and D = 10 for GLOVE, and the corresponding value of
     DA^2 for WORD2VEC and GLOVE vectors are both roughly 40
     * both values are small compared to d = 300

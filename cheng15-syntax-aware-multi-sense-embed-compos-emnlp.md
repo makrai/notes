@@ -8,11 +8,11 @@ emnlp 2015
 * each word is associated with a number of senses,
   the most plausible of which is selected dynamically during the composition
 * We evaluate the produced vectors qualitatively and quantitatively
-  * At the sentence level, ...  on the MSRPar task, ... results [around SOTA]
+  * At the sentence level, on the MSRPar task, results [around SOTA]
 
 # Introduction
 
-* deep-learning architectures ... in modelling the meaning of sentences for
+* deep-learning architectures in modelling the meaning of sentences for
   a variety of tasks (Socher+ 2012; Kalchbrenner+ 2014)
 * lexical ambiguity affects the compositional process
   * recent work [by the authors] has shown that
@@ -21,7 +21,7 @@ emnlp 2015
       in a step prior to composition
     present consistently better performance than their “ambiguous” counterparts
     (Kartsaklis and Sadrzadeh, 2013; Kartsaklis+ 2014)
-  * in a deep compositional setting ... Cheng+ (2014)
+  * in a deep compositional setting Cheng+ (2014)
 * we make the word embeddings syntax-aware by introducing
   * a variation of the hinge loss objective function of Collobert & Weston (08)
   * predict the position of the word within that context

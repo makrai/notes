@@ -28,7 +28,7 @@ ACM Comput Surv 2016
 * oragnization
   5.2 how tweets can be collected and annotated Section 5.2
   2.3 presents more details for feature selection
-  3. presents the various TSA approaches. In the last step, the classifier
+  3. presents the various Twitter Sentiment Analysis (TSA) approaches
   2.4 evaluation metrics
 * related work vs we
   * Two long and detailed surveys on SA were presented some time ago

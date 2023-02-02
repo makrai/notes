@@ -11,6 +11,6 @@ Acta Linguistica Academica 69 (2022) 4, 474–500 DOI: 10.1556/2062.2022.00577
   highest performance (ROUGE-2, ROUGE-L) on HI corpus. It means the fewer
   parameters are outweighed by the “well-taught” Hungarian pre-trained
   knowledge
-* On NOL corpus, the ﬁne-tuned mT5 model could gain the highest performance.
+* On NOL corpus, the fine-tuned mT5 model could gain the highest performance.
 * message: different model types could achieve different performance on
   different data types. It is not possible to clearly determine which model

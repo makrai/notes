@@ -2,14 +2,15 @@ SocialIQA: Commonsense Reasoning about Social Interactions
 Maarten Sap, Hannah Rashkin, Derek Chen, Ronan LeBras, Yejin Choi
 EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
+# Abstract
+
 * 38,000 multiple choice questions for probing emotional and social intelligenc
-* (e.g., Q: "Jordan wanted to tell Tracy a secret, so Jordan leaned towards
+* (eg, Q: "Jordan wanted to tell Tracy a secret, so Jordan leaned towards
   Tracy. Why did Jordan do this?" A: "Make sure no one else could hear")
 * Through crowdsourcing, we collect commonsense questions
   along with correct and incorrect answers about social interactions
   * new framework that mitigates stylistic artifacts in incorrect answers by
-    asking workers to provide the right answer to a different but related
-    question
+    asking workers to provide the right answer to a diff but related question
 * results show that our benchmark is
   challenging for existing question-answering models based on pretrained LMs
   * compared to human performance (>20% gap)
@@ -69,12 +70,12 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * ATOMIC is a large knowledge graph that contains
   * inferential knowledge about the causes and effects of 24k short events
   * Each triple in ATOMIC consists of
-    * (e.g., “PersonX pays for PersonY’s ”, “xAttrib”, “generous”)
+    * (eg, “PersonX pays for PersonY’s ”, “xAttrib”, “generous”)
     * an event phrase with person-centric variables,
     * one of nine inference dimensions, and
-      * causes of an event (e.g., “X needs money”)
-      * its effects on the agent (e.g., “X will get thanked”) and
-      * its effect on other participants (e.g., “Y will want to see X again”);
+      * causes of an event (eg, “X needs money”)
+      * its effects on the agent (eg, “X will get thanked”) and
+      * its effect on other participants (eg, “Y will want to see X again”);
     * an inference object .  The nine inference dimensions in ATOMIC cover
 * Given this base, we generate natural language contexts that represent
   specific instantiations of the event phrases found in the knowledge graph
@@ -88,7 +89,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * Question-Switching Answers (QSA) We col-
   * switching the questions asked about the context, as shown in Figure 2. We
   * to avoid cognitive biases and annotation artifacts in the candidates, such
-    * e.g. negations (Schwartz+ 2017; Gururangan+ 2018). In this crowdsourcing
+    * eg negations (Schwartz+ 2017; Gururangan+ 2018). In this crowdsourcing
   * the same context as the original question, as well as a
   * question automatically generated from a different but similar ATOMIC dim
     * three groupings of ATOMIC dimensions: {xWant, oWant, xNeed, xIntent},
@@ -113,8 +114,8 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 * Figure 5: Dev accuracy when training BERT-large with various number of examp
 * significantly improve over a random baseline of 33% with only a few hundred
-  * starts to converge after around 20k examples, providing evidence that
-  * human performance (86.9%)
+  * starts to converge after around 20k examples
+  * human performance is 86.9%
   * to reach >80%, the model would require nearly 1 million training examples
 
 ### Error Analysis
@@ -131,7 +132,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
     answers pertaining to the wrong participants (examples 5 and 6), despite
 * We expect that this task would benefit from models
   * capable of more complex reasoning about entity state, or models that are
-  * more explicitly endowed with commonsense (e.g. from KGs like ATOMIC)
+  * more explicitly endowed with commonsense (eg from KGs like ATOMIC)
 
 # 6 SocialIQa for Transfer Learning
 
@@ -170,7 +171,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * Talmor+ (2019) introduce CommonsenseQA, containing 12k multiple-choice
   * Crowdsourced using ConceptNet (Speer and Havasi, 2012), these questions
     mostly probe knowledge related to factual and physical commonsense
-    (e.g., “Where would I not want a fox?”). In contrast, SocialIQa
+    (eg, “Where would I not want a fox?”). In contrast, SocialIQa
 
 ## Commonsense Knowledge Bases: In addition to large-scale benchmarks, a wealth
 

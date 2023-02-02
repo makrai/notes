@@ -1,5 +1,5 @@
-Samuel Brody and Mirella Lapata
 Bayesian Word Sense Induction
+Samuel Brody and Mirella Lapata
 2009
 
 # Abstract
@@ -13,7 +13,7 @@ Bayesian Word Sense Induction
 * induced senses can lead to improved performance in
   * machine translation (Vickrey+ 2005) and
   * information retrieval (Véronis, 2004)
-  * areas where methods based on a fixed sense inventory have ...  failed
+  * areas where methods based on a fixed sense inventory have  failed
     (Carpuat and Wu, 2005; Voorhees, 1993)
 * Our work is related to Latent Dirichlet Allocation (LDA, Blei+ 2003),
   * a probabilistic model of text generation

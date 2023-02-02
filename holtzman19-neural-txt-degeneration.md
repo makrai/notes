@@ -122,9 +122,9 @@ ICLR 2020 arXiv:1904.09751 [cs.CL]
 
 ## 5.1 Zipf distribution analysis
 
-* perfect exponential curve, where s = 1 (Piantadosi, 2014). Figure 7 shows the
-  vocabulary distributions along with estimated Zipf coefficients
-  * Steven TPiantadosi
+* perfect exponential curve, where s = 1 (Piantadosi, 2014)
+  * Figure 7: vocabulary distributions along with estimated Zipf coefficients
+  * Steven T Piantadosi
     Zipfs word frequency law in natural language: A critical review and future
     Psychonomic bulletin & review, 21(5):1112–1130, 2014
 * pure sampling is the closest to the human distribution,

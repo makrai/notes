@@ -445,4 +445,10 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 
 ## 7.7 Training curves
 
+* Fig. 14 shows training curves for 10 successful and 10 failed runs on RTE. We
+  * all 10 failed runs have a common pattern:
+  * throughout the training, their training loss stays close to that at init
+  * This implies an optimization problem and
+    suggests to reconsider the optimization scheme
+
 ## 7.8 Additional fine-tuning results

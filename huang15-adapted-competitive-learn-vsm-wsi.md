@@ -31,11 +31,11 @@ Neurocomputing, 2016
       ignores the syntactic structures of the contexts
 * non-parametric Bayesian method [19]
   * [19] JH Lau, P Cook, D McCarthy, D Newman, T Baldwin,
-    * Word sense induction for novel sense detection,
-    * EACL, 2012
+         Word sense induction for novel sense detection,
+         EACL, 2012
   * uses Hierarchical Dirichlet Processes (HDP) [33] to
-  * induce the number of word senses automatically. However, it
-  * tends to generate almost twice the number of gold standard sense
+  * induce the number of word senses automatically
+  * hE tends to generate almost twice the number of gold standard sense
     * on SEMEVAL-2010 WSI dataset [19]
 * our proposed WSI framework runs in two steps:
   1. learning a continuous semantic space representation
@@ -66,15 +66,15 @@ Neurocomputing, 2016
   * [5] applies parametric LDA [3] to WSI task
     * The contexts of ambiguous instances are regarded as pseudo documents,
     * induced topic distributions are considered as the sense distributions
-  * [35] ... uses non-parametric HDP [33]
+  * [35] uses non-parametric HDP [33]
     * to learn the sense distributions
-    * this method ... can obtain the number of word senses automatically for
-    * [while] LDA methods ...  require the number of word senses to be
+    * this method can obtain the number of word senses automatically for
+    * [while] LDA methods  require the number of word senses to be
       assigned in advance
   * the HDP model is superior to LDA model
     * on the SEMEVAL-2010 WSI dataset
-  * [19] also shows improvement in supervised F-score after
-    * incorporating position features in the HDP model
+  * [19] incorporate position features in the HDP model
+    * improvement in supervised F-score
   * [7] extends the naive Bayes model based on the
     * idea that the more closer a word to the target word, the more
       relevant this word will be in WSI
@@ -113,7 +113,7 @@ Neurocomputing, 2016
 2. Given a proper similarity threshold (larger than 0.6 in our experiment), our
    retraining-based method is capable of improving the semantic representations
    of ambiguous instances because of better generalization ability
-3. In word sense clustering, our ...  learning achieves the
+3. In word sense clustering, our  learning achieves the
   best performance in supervised evaluation
   * 25% target words are predicted correctly, and
     80% target words fall into a variation interval

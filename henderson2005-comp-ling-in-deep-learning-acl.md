@@ -22,7 +22,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   * rules were soon learned with statistical methods
   * neural networks replace symbols with induced vectors, but
     * kept structured representations, such as syntactic trees
-  * attention-based models have replaced hand-coded structures with induced str
+  * attention-based models replaced hand-coded structures with induced structs
     * multiple levels of structured representations, much as has always been
 
 # 2 Grammar Formalisms versus Connectionism
@@ -69,14 +69,14 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
         * period to be used for sequential computation
   * regularities found in natural language
     * Fodor and Pylyshyn (1988) argued that
-    * systematicity (see also (Smolensky, 1990; Fodor and McLaughlin, 1990))
-      * requires that learned rules generalise in a way that respects
-        structured representations
+    * systematicity (see also Smolensky, (1990); Fodor and McLaughlin, (1990))
+      * requires that learned rules generalise in a way that
+        respects structured representations
       * representing the structural relationships between these entities
   * significance of variable binding for solving the issues with systematicity
     (Henderson, 1994, 1996, 2000)
-    * relations were not stored explicitly, it was claimed that for NLU
-      it is adequate to recover them from the features
+    * relations were not stored explicitly, it was claimed that
+      for NLU it is adequate to recover them from the features
     * arguments were largely theoretical, [not] incorporated in learning
 
 ## 2.3 Statistical Models 3
@@ -118,7 +118,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   rather than a derivation structure, makes it possible to define
   syntactic parsing as a sequence-to-sequence problem,
   mapping the sentence to its parse sequence
-  * If seq2seq models) can perform well at this task, then maybe the
+  * If seq2seq models can perform well at this task, then maybe the
     structured linguistic representations are not necessary
     (contrary to Fodor and Pylyshyn (1988))
 * Vinyals+ (2015) report
@@ -236,7 +236,7 @@ ACL 2020, in the theme track arXiv:2005.06420 [cs.CL]
   * One common approach is to deny it is a problem: Seq2seq and end2end models
     * only include representations at a lower level, both for input and output
     * they learned about different levels implicitly (Peters+ 18; Tenney+ 19)
-* no linguistic theory postulates different levels for different languages.
+* no linguistic theory postulates different levels for different languages
   * levels minimally include phon, morph, syntax, pred-arg, discourse
   * suggests that in humans the levels of linguistic representation are innate
 

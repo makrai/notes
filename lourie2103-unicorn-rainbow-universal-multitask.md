@@ -101,7 +101,7 @@ https://github.com/allenai/rainbow
   * mapping each dataset size to the baseline performance, finding the matching
     performance on the new method’s curve, and seeing how many examples requird
 * reframes the goal from pushing up performance on a fixed-size benchmark
-  * can be applied to other definitions of cost as well (e.g., GPU compute)
+  * can be applied to other definitions of cost as well (eg, GPU compute)
 
 # 3 RAINBOW
 
@@ -151,7 +151,7 @@ https://github.com/allenai/rainbow
 
 ### Finding 3: Multitask training helps most often in the low-data regime
 
-* One mystery researchers currently face is the inconsistent effect of multitsk
+* One current mystery is the inconsistent effect of multitask training
 * Cost equivalent curves reveal one potential explanation: multitask learning
   tends to help when data is scarce, but may hurt performance if plentiful
 
@@ -191,15 +191,15 @@ https://github.com/allenai/rainbow
 
 ### Finding 6: Larger models benefit more from transfer
 
-* pretrained models achieve substantially higher performance, it’s difficult to
+* pretrained models achieve substantially higher performance
 * baselines start from very different places.  Cost equivalent curves place
-  everything in comparable units, equivalent baseline cost (e.g., number of
+  everything in comparable units, equivalent baseline cost
 * Figure 4 compares transfer from RAINBOW to COMMONSENSE QA across model size
 * larger models seem to benefit more from transfer, saving more examples
-* Since smaller models require more gradient updates to converge (Kaplan+
-  2020), it’s important to note that we held the number of gradient updates
-  fixed for comparison. Exploring whether this trend holds in different
-  contexts, as well as theoretical explanations, are directions for future
+* smaller models require more gradient updates to converge (Kaplan+ 2020)
+  => we held the number of gradient updates fixed for comparison
+  * Exploring whether this trend holds in different contexts, as well as
+    theoretical explanations, are directions for future
 
 ### Finding 7: Sequential training wins across model sizes.  Figure 4
 
@@ -294,6 +294,6 @@ https://github.com/allenai/rainbow
     hyper-parameter tuning for new models, and
   * provide an estimator for expected validation performance as a function of
     hyperparameter evaluations. In an older work
-* Clark and Matwin (1993) evaluated the use of qualitative knowledge in terms
-  of saved training examples, similarly to our cost equivalent curves.  In
+* Clark and Matwin (1993) evaluated the use of qualitative knowledge
+  in terms of saved training examples, similarly to our cost equivalent curves
   * a linear trend to the learning curve and counted examples saved rather than

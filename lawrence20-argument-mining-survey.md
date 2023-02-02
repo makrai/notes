@@ -137,19 +137,19 @@ identify topics where opinions are polarized
     with “This method/result/conclusion…,” and then categorizing the first
     sentence in each pair respectively as Method, Result, or Conclusion
   * In order to remove outliers in the data set, a multinomial naïve Bayes
-    classifier was trained to classify sentences from the corpus, and sentences
-    that were classified with less than 98% confidence were removed.  This
+    classifier was trained to classify sentences from the corpus, and
+    sentences that were classified with less than 98% confidence were removed
   * used as training data to identify Method, Result, and Conclusion sentences
-    using both SVM and naïve Bayes classifiers.  These classifiers show an
-    average F-score of 0.97 with naïve Bayes and 0.99 with SVM, and are further
-    tested on the corpus used by Agarwal and Yu (2009), where sentences are
-    classified in the same way. By using this approach, Houngbo and Mercer are
-    able to improve on the results from Agarwal and Yu, whose results show an
-    F-score of 0.92 using 10-fold cross-validation. Despite the limited nature
-    of this task, only identifying specific types of sentences and not giving
-    any idea of the relations between them, these results show that by extending
-    the training data available, substantial improvements in classifying
-    sentences can be made
+    using both SVM and naïve Bayes classifiers
+    * average F-score of 0.97 with naïve Bayes and 0.99 with SVM, and are
+    * classifiers further tested on the corpus used by Agarwal and Yu (2009),
+      where sentences are classified in the same way. By using this approach,
+    * Agarwal & Yu's results show an F-score of 0.92 using 10-fold cross-valid
+    * Houngbo and Mercer are able to improve
+    * hE limited nature of this task, only identifying specific types of
+      sentences and not giving any idea of the relations between them,
+    * nL these results show that by extending the training data available,
+      substantial improvements in classifying sentences can be made
 * Lawrence and Reed (2017) take a similar approach to Houngbo and Mercer,
   * using discourse indicators (connectives such as “because,” “however,” etc.)
     in place of “this.” In this work, the topic of a given text is first

@@ -3,6 +3,7 @@ Anders Søgaard
 2016 repeval
 
 http://cst.dk/anders/fmri-eval/
+* users can upload pairs of embeddings and obtain learning curves
 
 # Abstract
 
@@ -26,7 +27,7 @@ explicit semantic analysis (Gabrilovich and Markovitch, 2009)
 * word associations norms
   * critiques of their usage (Faruqui+ (2016); Batchkarov+ (2016); Chiu+ (2016))
   * problem with word association norms is inadequacy (and statistical power):
-    They conflate several types of similarity, e.g., synonymy and antonymy, and
+    They conflate several types of similarity, eg, synonymy and antonymy, and
     they are culture-specific
   * The hypothesis is that our mental lexicon is organized as a undirected,
     colored, weighted network,
@@ -70,9 +71,6 @@ explicit semantic analysis (Gabrilovich and Markovitch, 2009)
 
 # What I am saying,,,
 
-* website: http://cst.dk/anders/fmri-eval/ where users can upload pairs of
-  embeddings and obtain learning curves
 * Marconi (1997) says lexical competence involves both an
-  * inferential aspect, i.e., learning a semantic network of synonymy and
-    hyponymy relations, as well as a
+  * inferential aspect ie learning a semantic network of synonymy and hyponymy
   * referential aspect, which is in charge of naming and application

@@ -107,8 +107,8 @@ arXiv:2002.06305 hivatalos helyen tudtommal nem jelent meg, 200+ hivatkozás
   * expected validation performance calculates the expected value of the best
     validation performance as a function of x. 4
 * fig 1: expected validation curves for each dataset
-  * The leftmost point on each of these curves (x = 1) shows the expected
-    performance for a budget of a single training run
+  * The leftmost point on each of these curves (x = 1) shows the
+    expected performance for a budget of a single training run
   * rising trend continues even up to our largest budget,
     suggesting even larger budgets could lead to improvements
   * On the three smaller datasets (MRPC, RTE, and CoLA) there is

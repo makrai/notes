@@ -1,6 +1,6 @@
 Recurrent neural network language model adaptation with curriculum learning
 December 2014 Computer Speech & Language 33(1)
-Yangyang ShiYangyang ShiMartha LarsonCatholijn M. JonkerCatholijn M. Jonker
+Yangyang Shi, Martha Larson, Catholijn M Jonker
 
 # Abstract
 

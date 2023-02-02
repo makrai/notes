@@ -6,8 +6,8 @@ ACL | IJCNLP 2021
 
 * Leaderboards are widely used in NLP and push the field forward
   * hE they can mask nuances in evaluation items (examples) & subjects (models)
-    Rather than replace leaderboards, we advocate a reimagining
-    so that they better highlight if and where progress is made
+  * we advocate a reimagining so that they
+    better highlight if and where progress is made
 * Building on educational testing, we create a Bayesian leaderboard model where
   latent subject skill and latent item difficulty predict correct responses
   * Using this model, we analyze the ranking reliability of leaderboards

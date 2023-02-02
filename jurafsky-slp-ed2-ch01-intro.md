@@ -298,8 +298,8 @@ Daniel Jurafsky and James H. Martin
   * By the late 1950s, the Bayesian method was beginning to be applied to the
     problem of optical character recognition
   * Bledsoe and Browning (1959) built a Bayesian text-recognition that
-      used a large dictionary and computed the
-      likelihood of each observed letter sequence given each word in the
+    * used a large dictionary and computed the
+    * likelihood of each observed letter sequence given each word in the
       dictionary by multiplying the likelihoods for each letter
   * Mosteller and Wallace (1964) applied Bayesian methods to the problem of
     authorship attribution on The Federalist papers
@@ -425,13 +425,13 @@ Daniel Jurafsky and James H. Martin
     * question answering (Voorhees and Tice, 1999)
     * summarization (Dang, 2006)
 * more serious interplay with the statistical machine learning community
-  * increased focus on learning led to a ^
+  * increased focus on learning led to this interplay
   * Techniques such as
-    support vector machines (Boser+ 1992; Vapnik, 1995),
-    maximum entropy techniques and their equivalent formulation as multinomial
-    logistic regression (Berger+ 1996), and
-    graphical Bayesian models (Pearl, 1988)
-    became standard practice in computational linguistics
+    * support vector machines (Boser+ 1992; Vapnik, 1995),
+    * maximum entropy techniques and their equivalent formulation as
+      multinomial logistic regression (Berger+ 1996), and
+    * graphical Bayesian models (Pearl, 1988)
+  * became standard practice in computational linguistics
 * the widespread availability of high-performance computing systems facilitated
   the training and deployment of systems that could not have been imagined a
   decade earlier

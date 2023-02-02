@@ -23,10 +23,10 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
     * rings contain thermotropic liquid crystals that react with body temperat
     * When a person has stressed, his mood ring take on a darker color
 * affective computing
-  * pioneer: Picard (1990s) [3, 4] introduced a great progress in this ﬁeld
+  * pioneer: Picard (1990s) [3, 4] introduced a great progress in this field
   * emotion can be modeled using the nonlinear sigmoid function
   * ambient intelligence (AMI), virtual reality (VR) and augmented reality (AR)
-* eg automotive ﬁeld
+* eg automotive field
   * an on-board computer that is able to detect confusion, interest or fatigue
     can increase safety
   * AutoEmotive (MIT Media Lab) is a prototype equipped with sensors and a

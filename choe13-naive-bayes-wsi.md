@@ -1,8 +1,8 @@
-Do Kook Choe and Eugene Charniak
 Naive Bayes Word Sense Induction
+Do Kook Choe and Eugene Charniak
+2013
 
-Code used for experiments is available for download at
-http://cs.brown.edu/~dc65/
+Code used for experiments is available at http://cs.brown.edu/~dc65/
 
 # Abstract
 
@@ -13,19 +13,11 @@ http://cs.brown.edu/~dc65/
 
 # 1 Introduction
 
-* oragnization
-  2. we describe relevant previous work. In
-  3. and 4 we introduce the
-    * naive Bayes model for WSI and
-    * inference schemes for the model
-  5. we evaluate the model on SemEval-2010 data
-  6. we conclude
-
 # 2 Related Work
 
-* Bayesian WSI systems have been developed by several authors
+* Bayesian WSI systems
   * Brody and Lapata (2009)
-    * apply Latent Dirichlet Allocation (LDA) (Blei+ 2003) to WSI
+    * apply Latent Dirichlet Allocation (LDA, Blei+ 2003) to WSI
     * They run a topic modeling algorithm on texts
       * with some fixed number of topics that correspond to senses and
       * a cluster: target words assigned to the same topic
@@ -37,6 +29,8 @@ http://cs.brown.edu/~dc65/
 
 # 3 Model
 
+* naive Bayes model for WSI and
+* inference schemes for the model
 * Following Yarowsky (1995), we assume that a word in a document has one sense
 
 # 3.1 Naive Bayes
@@ -46,6 +40,8 @@ http://cs.brown.edu/~dc65/
 # 4 Inference
 
 # 5 Experiments
+
+* we evaluate the model on SemEval-2010 data
 
 # 5.4.1 Short Descriptions of Other WSI Systems Evaluated on SemEval-2010
 

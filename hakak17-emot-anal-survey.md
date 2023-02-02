@@ -1,5 +1,5 @@
-Nida Manzoor Hakak, Mohsin Mohd, Mahira Kirmani, Mudasir mohd
 Emotion Analysis: A Survey
+Nida Manzoor Hakak, Mohsin Mohd, Mahira Kirmani, Mudasir mohd
 2017 Comptelix (International Conf on Computer, Commtions and Electronics)
 
 gépi tanulás szempontjából szar cikk

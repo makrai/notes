@@ -1,5 +1,5 @@
-Sergey Bartunov, Dmitry Kondrashkin, Anton Osokin, Dmitry Vetrov
 Breaking Sticks and Ambiguities with Adaptive Skip-gram
+Sergey Bartunov, Dmitry Kondrashkin, Anton Osokin, Dmitry Vetrov
 2015
 
 * http://bayesgroup.ru/
@@ -45,20 +45,20 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
 
 # 3. Adaptive Skip-gram
 
-* variable z encodes the index of active meaning
+* variable `z` encodes the index of active meaning
 
-  * p(v|z = k, w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_{wk} out_n , 4)
+`p(v|z = k, w, θ) = \Prod_{n \in path(v)} σ(ch(n)in^T_{wk} out_n , 4)`
 
 * Note that only input vectors depend on the particular word meaning
 
-* We employing Bayesian nonparametrics into Skip-gram
+* We employ Bayesian nonparametrics into Skip-gram
   * we use the constructive definition of Dirichlet process (Ferguson, 1973)
   * stick-breaking representation (Sethuraman, 1994) to define a prior
   * for automatic determination of the required number of prototypes
   * Dirichlet process (DP) has been successfully used for
-    * infinite mixture modeling and other problems where the number of
-      structure components (e.g.  clusters, latent factors, etc.) is not known
-      a priori
+    * infinite mixture modeling and other problems
+      where the number of structure components (eg clusters, latent factors,
+      etc) is not known a priori
       * (Shahbaba & Neal, 2009; Rasmussen, 2000)
   * stick-breaking to define a prior over meanings of a word
     * The hyperparameter alpha, resolution paramater
@@ -114,7 +114,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
     * Afterwards, meanings provided by WordNet
   * Neelakantan+ (2014) proposing
     * Multisense Skip-gram (MSSG) and
-    * its non-parameteric  version (NP MSSG)
+    * its nonparameteric version (NP MSSG)
       * NP not in the sense of Bayesian nonparametrics
     * learning for NP MSSG is defined rather as ad-hoc greedy procedure that
       * allocates new representation for a word if
@@ -176,7 +176,7 @@ Breaking Sticks and Ambiguities with Adaptive Skip-gram
       * attains large values on all-singleton clustering
     * F-Score (FS)
       * biased towards small number of clusters
-      * e.g. assigning each instance to the same single cluster
+      * eg assigning each instance to the same single cluster
   * we consider adjusted Rand index (Hubert & Arabie, 1985, ARI)
     * does not suffer from such drawbacks
     * undesirable clusterings above will get ARI of nearly zero

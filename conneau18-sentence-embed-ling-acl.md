@@ -130,19 +130,19 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
     * encoder has not been explicitly trained on acceptability, and it is
     * the best models are, at least to a certain extent, able to judge
     * asymmetry between the difficult TreeDepth and easier TopConst is also
-* Figure 1 reports how probing task accuracy changes in function of encoder
-  training epochs.  The figure shows that NMT probing performance is
+* Figure 1 reports how NMT probing task accuracy changes in function of encoder
+  training epochs
   * largely independent of target language across French, German and fi
   * WC performance keeps increasing with epochs
   * For the other tasks, we observe instead an
     * early flattening of the NMT probing curves, while
     * BLEU performance keeps increasing. Most strikingly,
-    * SentLen performance is actually decreasing, suggesting again that, as a
+    * SentLen performance is actually decreasing
     * SOMO task, the curves are mostly flat, suggesting that
       * what BiLSTM-max is able to capture about this task is already encoded
         in its architecture, and further training doesn’t help much
 
-## Probing vs. downstream tasks
+## Probing vs downstream tasks
 
 * downstream tasks available in the SentEval 5 suite (Conneau and Kiela, 2018),
   * classification (MR, CR, SUBJ, MPQA, SST2, SST5, TREC

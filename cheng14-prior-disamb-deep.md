@@ -1,5 +1,5 @@
-Jianpeng Cheng and Dimitri Kartsaklis and Edward Grefenstette
 Investigating the Role of Prior Disambiguation
+Jianpeng Cheng and Dimitri Kartsaklis and Edward Grefenstette
   in Deep-learning Compositional Models of Meaning
 2014
 

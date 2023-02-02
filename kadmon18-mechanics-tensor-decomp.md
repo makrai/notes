@@ -1,5 +1,5 @@
-Jonathan Kadmon, Surya Ganguli
 Statistical mechanics of low-rank tensor decomposition
+Jonathan Kadmon, Surya Ganguli
 https://arxiv.org/abs/1810.10065
 
 https://github.com/ganguli-lab/tensorAMP
@@ -30,7 +30,7 @@ Kornai ajánlásával
   * rigorous analysis of AMP was carried out in [17]
   * For a rank-one matrix estimation problem, AMP was
     * first introduced and analyzed in [18]
-    * extended ... by Krzakla and Zdeborova and collaborators [19, 20, 21, 22]
+    * extended by Krzakla and Zdeborova and collaborators [19, 20, 21, 22]
     * recently low-rank tensor decomposition through AMP was studied in [21],
     * analysis was limited to symmetric tensors
       which are then necessarily cubic in shape
@@ -38,9 +38,9 @@ Kornai ajánlásával
   * very different numbers of dimensions across modes, yielding
     highly irregularly shaped, non-cubic tensors with no symmetry properties
   * For example in
-    * EEG studies ...  time, spatial scale, and electrodes [23].  In
+    * EEG studies  time, spatial scale, and electrodes [23].  In
     * fMRI studies the modes could span channels, time, and patients [24]. In
-    * neurophysiological measurements ... neurons, time, and conditions [25] or
+    * neurophysiological measurements neurons, time, and conditions [25] or
       neurons, time, and trials [3]. In
     * studies of visual cortex, modes could span neurons, time and stimuli [26]
 * we
@@ -70,7 +70,7 @@ Kornai ajánlásával
     * cubic tensors have highly non-generic properties
       in the space of all possible tensor shapes
 * connections to the statistical mechanics literature
-  * In practice, ... the prior or underlying rank of the tensors are not known
+  * In practice, the prior or underlying rank of the tensors are not known
 
 # 5 Summary
 

@@ -103,7 +103,7 @@ Allan M. Collins and Elizabeth F. Loftus
   * related [misunderstanding]: feature models can account for data that
     network models cannot
     * feature model posits that a concept consists of a set of values on a
-      large number of semantic dimensions (e.g., animateness, color, etc.)
+      large number of semantic dimensions (eg, animateness, color, etc.)
     * network models were developed as a method of representing features in a
       computer.  Any process that can be represented in a feature model is
       representable in a network model;
@@ -114,8 +114,8 @@ Allan M. Collins and Elizabeth F. Loftus
   to the category_
   * Juola and Atkinson's (1971) work on categorization judgments
   * categorization task, response time is measured for a subject to decide
-    whether or not a particular instance (e.g., "car") is a member of one or
-    more categories (e.g., "flower" or "vehicle")
+    whether or not a particular instance (eg, "car") is a member of one or
+    more categories (eg, "flower" or "vehicle")
 * Anderson and Bower (1973)
   * parallel model: search rate is slower in proportion to the number of paths
     that must be searched" (p.  371)
@@ -169,7 +169,7 @@ Allan M. Collins and Elizabeth F. Loftus
   * The more properties two concepts have in common,
     the more links there are between the two nodes
     * different vehicles or different colors will all be highly interlinked
-    * red things (e.g., fire engines, cherries, sunsets, and roses) are not
+    * red things (eg, fire engines, cherries, sunsets, and roses) are not
       closely interlinked, despite the one property they have in common
   * Semantic relatedness is a slightly different notion from semantic distance,
     though the two terms are sometimes used interchangeably
@@ -205,7 +205,7 @@ Allan M. Collins and Elizabeth F. Loftus
    * Failure to reach either criterion before running out of relevant evidence
      leads to a "don't know" response (Collins+ 1975)
    * This process is essentially the Bayesian decision model
-     * common in the reaction time literature (e.g. Fitts, 1966; Stone, 1960)
+     * common in the reaction time literature (eg Fitts, 1966; Stone, 1960)
  * types of paths listed in Table 1 and described below in Assumptions 9-13
 
 * TABLE I, Types of paths that constitute positive or negative evidence
@@ -250,7 +250,7 @@ Allan M. Collins and Elizabeth F. Loftus
     when two concepts have a common superordinate
 13. Counterexamples also can be used as negative evidence. This strategy
     * derives from Holyoak and Glass (1975), who argue that statements of the
-    * e.g. "All birds are canaries" are disconfirmed by finding e.g. a "robin."
+    * eg "All birds are canaries" are disconfirmed by finding eg a "robin."
     * If the question is of the form "Is X a Y?" and
       there is a superordinate link from Y to X
       Z that also has X as superordinate and is mutually exclusive from Y
@@ -295,7 +295,7 @@ number (1-4) of prespecified (target) categories
 
 ## Conrad's Study
 
-Using a true-false reaction time technique for sentences (e.g., the task is to
+Using a true-false reaction time technique for sentences (eg, the task is to
 decide whether "A salmon can eat" is true or false), Conrad (1972) found
 results which she interpreted as contradictory to Quillian's (1966, 1969)
 theory
@@ -309,7 +309,7 @@ theory
 * The way evidence is aggregated in the theory also explains the common finding
   (Collins & Quillian, 1970a, 1972b; Holyoak & Glass, 1975; Rips+ 1974) that
   people are fast to decide that semantically unrelated concepts are different
-  (e.g., that a book is not a dog)
+  (eg, that a book is not a dog)
 * Recently, Holyoak and Glass (1975) have isolated two different cases where
   semantic relatedness or typicality does not produce the usual effect on
   reaction time for negative judgments

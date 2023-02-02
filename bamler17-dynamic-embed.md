@@ -9,14 +9,14 @@ Robert Bamler, Stephan Mandt
   * tracks the semantic evolution of individual words over time
   * represents words and contexts by latent trajectories in an embedding space
     * At each moment in time, the embedding vectors are inferred from a
-      probabilistic version of word2vec [Mikolov+ 2013]. These embedding
+      probabilistic version of word2vec [Mikolov+ 2013]
     * vectors are connected in time through a latent diffusion process
   * two scalable variational inference algorithms
     skip-gram smoothing and skip-gram filtering
     * allow us to train the model jointly over all times
 * Experimental results on three different corpora
-  * more interpretable and ... higher predictive likelihoods
-    than ... static models trained separately on time slices
+  * more interpretable and higher predictive likelihoods
+    than static models trained separately on time slices
 
 # 1 Intro
 
@@ -44,9 +44,9 @@ Robert Bamler, Stephan Mandt
     1. embedding vectors at successive times can only be approximately related
        to each other,
        and only if the embedding dimension is large (Hamilton+ 2016)
-    2. time bins ... are too small
+    2. time bins are too small
 * contributions
-  * probabilistic state space model ... generalizes the skip-gram model
+  * probabilistic state space model generalizes the skip-gram model
     (Mikolov+ 2013b; Barkan, 2017) to a dynamic setup, which allows
     end-to-end training. This leads to continuous embedding trajectories,
     * allows us to share information across all times
@@ -76,7 +76,7 @@ Robert Bamler, Stephan Mandt
   * limits the applicability of static models to very large corpora [miért
     nagyra?]
 * Kim+ (2014) fit word2vec separately on different time bins, where the
-  * vectors obtained for the previous bin are used to initialize the ... next
+  * vectors obtained for the previous bin are used to initialize the next
   * trajectories are not as smooth as ours, as we demonstrate in this paper
 * Hamilton+ (2016) also trained word2vec separately on several large
   corpora from different decades
@@ -85,11 +85,13 @@ Robert Bamler, Stephan Mandt
     times approximately differ by a global rotation in addition to a small
     semantic drift
 
-# 3. our model
-# 4. two efficient variational inference algorithms
-# 5. experimental results
+# 3. Our model
 
-* track semantic changes ... by following nearest-neighbor relations over time
+# 4. Two efficient variational inference algorithms
+
+# 5. Experimental results
+
+* track semantic changes by following nearest-neighbor relations over time
 
 ## Algorithms and Baselines
 
@@ -110,7 +112,7 @@ Robert Bamler, Stephan Mandt
    approximately 10^10 observed words. The corpus consists of 5-gram tables
 2. “State of the Union” (SoU) addresses of U.S. presidents, which spans more
    * two centuries, resulting in T = 230 different time steps and approx-
-   * 10^6 observed words ... lower case[d] and ... a context window size of 4
+   * 10^6 observed words lower case[d] and a context window size of 4
 3. a Twitter corpus of news tweets for
   * 21 randomly drawn dates from 2010 to 2016. The
   * median number of tweets per day is 722. We converted all tweets to
@@ -120,9 +122,9 @@ Robert Bamler, Stephan Mandt
 
 * Figure 4 visualizes the smoothness of the trajectories
  * histograms of the Euclidean distances ||u it − u i,t+δ ||
- * In our model, ... a directed motion. In contrast, both
- * baseline models show ... fluctuations of n ± ij,t
-   * Initialization schemes alone ... have a minor effect on smoothness
+ * In our model, a directed motion. In contrast, both
+ * baseline models show fluctuations of n ± ij,t
+   * Initialization schemes alone have a minor effect on smoothness
 * skip-gram smoothing (DSG-S) may diffuse information into the past
   (see ”presidential” to ”clinton-trump” in Fig. 5)
 

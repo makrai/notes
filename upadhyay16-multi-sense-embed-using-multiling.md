@@ -1,13 +1,13 @@
-Shyam Upadhyay, Kai-Wei Chang, James Zou, Matt Taddy, Adam Kalai
 Beyond bilingual: Multi-sense word embeddings using multilingual context
+Shyam Upadhyay, Kai-Wei Chang, James Zou, Matt Taddy, Adam Kalai
 2017 Rejected from ICLR, Best Paper at Workshop on Repl4NLP
 
 # Abstract
 
 * sense identification
 * We present a multiview Bayesian non-parametric algorithm
-  1. using multilingual corpora to significantly improve sense embeddings beyond
-     what one achieves with bilingual information, and
+  1. using multilingual corpora to significantly improve sense embeddings
+     beyond what one achieves with bilingual information, and
   2. uses a principled approach to learn a variable number of senses per word,
      in a data-driven manner
 * Ours is the first approach with the ability to leverage multilingual corpora
@@ -19,8 +19,8 @@ Beyond bilingual: Multi-sense word embeddings using multilingual context
 
 # 1 Introduction
 
-* infer multi-sense word representations by modeling the sense as a latent
-  variable in a Bayesian non-parametric framework
+* infer multi-sense word representations by modeling the
+  sense as a latent variable in a Bayesian non-parametric framework
   (Reisinger and Mooney, 2010; Neelakantan+ 2014; Li and Jurafsky, 2015)
 * learn multi-sense embeddings by exploiting the fact that different senses of
   the same word may be translated into different words in a foreign language
@@ -28,9 +28,8 @@ Beyond bilingual: Multi-sense word embeddings using multilingual context
   * Šuster, Titov, and van Noord, (2016)
     * sets a fixed number of senses for each word
 * our approach
-  * we can concatenate multiple parallel corpora to obtain a large multilingual
-    corpus
-  * parameters are estimated in a Bayesian nonparametric framework that allows
+  * we concatenate multiple parallel corpora to obtain a large multiling corpus
+  * parameters are estimated in a Bayesian nonparametric framework
     * only associate a word with a new sense vector when evidence (from either
       same or foreign language context) requires it
 

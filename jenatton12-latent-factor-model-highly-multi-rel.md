@@ -1,10 +1,10 @@
-Rodolphe Jenatton, Nicolas Le Roux, Antoine Bordes, and Guillaume Obozinski
 A latent factor model for highly multi-relational data
+Rodolphe Jenatton, Nicolas Le Roux, Antoine Bordes, and Guillaume Obozinski
 NIPS 2012
 
 The data set is available under an open-source license
 https://everest.hds.utc.fr/doku.php?id=en:lfmnips12
-i.e. cs.University of Technology of Compiègne
+ie cs.University of Technology of Compiègne
 EVEREST: Learning high-level representations of sparse tensors
 * see sec 8
 
@@ -13,37 +13,37 @@ EVEREST: Learning high-level representations of sparse tensors
 * multi-relational data
   * such as social networks, movie preferences or knowledge bases
   * they describe multiple relations between entities
-  * existing approaches tend to break down when the number of ... types grows
+  * existing approaches tend to break down when the number of types grows
 * In this paper, we propose a
   * method for modeling large multi-relational datasets,
     with possibly thousands of relations
   * [model] based on a bilinear structure, which
     captures various orders of interaction of the data, and also
     shares sparse latent factors across different relations
-* [new SOTA] performance ... on standard tensor-factorization datasets
+* [new SOTA] performance on standard tensor-factorization datasets
 * an NLP application demonstrates our scalability
   * efficient and semantically meaningful verb representations
 
 # 1 Intro
 
 * Statistical Relational Learning (SRL, Getoor and Taska, The MIT Press, 2007)
-  * e.g. Social networks, [recommender systems,] semantic web or bioinfo
-* entities can be users in ... social networks or recommender systems, words in
-  the case of lexical knowledge bases, or genes and proteins
-* data is [represented as a] multi-relational graph [with] different types of
-  edges between nodes
+  * eg Social networks, [recommender systems,] semantic web or bioinfo
+* entities can be users in social networks or recommender systems,
+  words in the case of lexical knowledge bases, or genes and proteins
+* data is [represented as a] multi-relational graph [with]
+  different types of edges between nodes
 * difficulties
   * large number of relation types, some being significantly more represented
     than others and possibly concerning only subsets of entities
-  * data is typically noisy and incomplete (missing or incorrect relationships,
-    redundant entities)
+  * data is typically noisy and incomplete
+    (missing or incorrect relationships, redundant entities)
   * large scale with up to millions of entities and billions of links
 * our model
   * sparse distributed representation of relation types
   * handle data with a significantly larger number of relation types
     than was considered so far in the literature
-  * ties or beats SOTA algorithms on various benchmarks of link prediction, a
-    standard test-bed for SRL methods
+  * ties or beats SOTA algorithms on various benchmarks of link prediction,
+    a standard test-bed for SRL methods
 
 # 2 Related work
 
@@ -68,7 +68,7 @@ EVEREST: Learning high-level representations of sparse tensors
     * [26] Y. J. Wang and G. Y. Wong.
       Stochastic blockmodels for directed graphs.
       Journal of the American Statistical Association, 82(397), 1987.
-  * clustering-based approaches ... for multi-relational learning
+  * clustering-based approaches for multi-relational learning
     * [9] a non-parametric Bayesian extension of the stochastic blockmodel
       allowing to automatically infer the number of latent clusters
       9. C. Kemp, J. B. Tenenbaum, T. L. Griffiths, T. Yamada, and N. Ueda
@@ -90,7 +90,7 @@ EVEREST: Learning high-level representations of sparse tensors
       24. I. Sutskever, R. Salakhutdinov, and J. Tenenbaum
         Modelling relational data using bayesian clustered tensor factorization
         NIPS 2009
-    * [9, 24, 14, 28, 10] ... cluster not only entities but relations as well
+    * [9, 24, 14, 28, 10] cluster not only entities but relations as well
 * Semantic Matching Energy model (SME) of Bordes+ (2012) embeds relations as a
   vector from the same space as the entities
 
@@ -153,10 +153,10 @@ EVEREST: Learning high-level representations of sparse tensors
 
 ### Practical training setup
 
-* parameters ... optimized over the validation set
+* parameters optimized over the validation set
   * size p ∈ {25, 50, 100} of the representations,
   * the dimension d ∈ {50, 100, 200} of the latent decompositions (2),
-  * the value of the regularization parameter λ as a fraction ... of n r × d,
+  * the value of the regularization parameter λ as a fraction of n r × d,
   * the step-size in {0.1, 0.05, 0.01} and
   * the weighting of the negative triplets
   * we gradually increased the number of sampled negative verbs
@@ -169,10 +169,10 @@ EVEREST: Learning high-level representations of sparse tensors
   * metrics, namely, (1) the rank of the correct verb and (2) p@z
     * the minimum rank achieved over its set of synonyms obtained from WordNet
 * compared with that of
-  * SME [2], which was shown to scale well on ... large sets of relations, and
+  * SME [2], which was shown to scale well on large sets of relations, and
   * a bigram model, which estimates the probabilities of the pairs
 * observation
-  * representations (2) are sparse[, i.e.] dominated by few large values, the
+  * representations (2) are sparse[, ie] dominated by few large values, the
     top 2% of the largest values of α account for about 25% of the l_1 norm
 
 ### Lexical similarity classification 8
@@ -185,7 +185,7 @@ EVEREST: Learning high-level representations of sparse tensors
 
 * handling large amounts of linked relations seems necessary
   to model the wealth of relations underlying the semantics of [the real world]
-  * We ... using a shared representation of relations
+  * We using a shared representation of relations
     * entities have a unique representation shared between relation types, and
     * relation themselves decompose over latent “relational” factors
   * This new approach ties or beats SOTA models

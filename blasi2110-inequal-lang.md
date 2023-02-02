@@ -1,8 +1,10 @@
-Systematic Inequalities in Language Technology Performance across the World's Languages
+Systematic Inequalities in Language Technology Performance across the W's Langs
 Damián Blasi, Antonios Anastasopoulos, Graham Neubig
 arXiv:2110.06733 [cs.CL]
 
 Data and code to reproduce https://github.com/neubig/globalutility
+
+# Abstract
 
 * Natural language processing (NLP) systems have become a central technology in
   communication, education, medicine, artificial intelligence, and many other
@@ -16,8 +18,8 @@ Data and code to reproduce https://github.com/neubig/globalutility
 * we
   * quantify disparities in the current state of NLP research,
   * explore some of its associated societal and academic factors, and
-  * produce tailored recommendations for evidence-based policy making aimed at
-    promoting more global and equitable language technologies
+  * produce tailored recommendations for evidence-based policy making
+    aimed at promoting more global and equitable language technologies
 
 # 1 Intro
 
@@ -87,8 +89,8 @@ Data and code to reproduce https://github.com/neubig/globalutility
 ## 3.1 General observations
 
 * Figure 1
-  * Left panel: linguistic and demographic global utility metrics for a number
-    of language technology tasks
+  * Left panel: linguistic and demographic global utility metrics
+    for a number of language technology tasks
   * The red curve corresponds to the sequence where first the language with the
     largest number of users is set to utility 1, then the second, and so on
   * Right panel: recent historical progression of Inflection and MT from En

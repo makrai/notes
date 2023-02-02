@@ -32,7 +32,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 * Auxiliary analysis datasets for debugging and understanding models
   * a new trend of research to analyze what NLU and reasoning skills are achived
   * analysis approaches to examine models’ ability to capture diff ling phenoms
-    (eg named entities, syntax, lexical inference, etc.)
+    (eg named entities, syntax, lexical inference, etc)
   * Those studies are often conducted in 3 steps:
     * proposing assumptions about a certain ability of the model;
     * building analysis datasets by automatic generation or crowd-sourcing;

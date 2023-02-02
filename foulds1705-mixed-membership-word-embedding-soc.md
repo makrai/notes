@@ -1,5 +1,5 @@
-James Foulds
 Mixed Membership Word Embeddings for Computational Social Science
+James Foulds
 arXiv:1705.07368 cs.CL
 
 # Abstract
@@ -7,7 +7,7 @@ arXiv:1705.07368 cs.CL
 * I propose a probabilistic model-based word embedding method which can recover
   interpretable embeddings, without big data. The key insight is to leverage
   mixed membership modeling, in which
-  * individual entities (i.e. dictionary words) [use shared global
+  * individual entities (ie dictionary words) [use shared global
     representations to] differing degrees
 * a combination of SOTA training techniques for word embeddings and topic models
 * experimental results show an improvement in prediction
@@ -54,20 +54,21 @@ arXiv:1705.07368 cs.CL
 
 * Topic models such as latent Dirichlet allocation (LDA, Blei+ 2003)
   * a class of probabilistic language models that
-    have been used for semantic representation (Griffiths+ 2007).
+    have been used for semantic representation (Griffiths+ 2007)
   * unsupervised multinomial naive Bayes, in which
-    a latent cluster assignment for each document selects a multinomial
-    distribution over words, referred to as a topic
-    words are assumed to be generated with topics
+    a latent cluster assignment for each document selects
+    a multinomial distribution over words, referred to as a topic
+    * words are assumed to be generated with topics
   * LDA topic models improve over naive Bayes by a mixed membership model,
     * the assumption that all words in a document d belong to the same topic is
-      relaxed, and replaced with a distribution over topics θ (d)
+      relaxed, and replaced with a distribution over topics θ(d)
     * generative process, for each word i in document d, a topic assignment z i
-      is drawn via θ (d), then the word is drawn from the chosen topic φ (z i)
+      is drawn via θ(d), then the word is drawn from the chosen topic φ(z i)
     * a useful compromise between model flexibility and statistical efficiency:
-      the K topics φ (k) are shared across all documents, thereby sharing
-      statistical strength, but each document is free to use the topics to its
-      own unique degree. Bayesian inference further aids data efficiency, as
-      uncertainty over θ (d) can be managed for shorter documents
+      * the K topics φ(k) are shared across all documents, thereby sharing
+        statistical strength, but 
+      * each document is free to use the topics to its own unique degree
+    * Bayesian inference further aids data efficiency, as
+      uncertainty over θ(d) can be managed for shorter documents
 * combine topic models and word embeddings (Das+ 2015; Liu+ 2015)
   * not to address the small data problem

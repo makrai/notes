@@ -122,14 +122,13 @@ arXiv:1907.10641 [cs.CL]
 * Table 4 shows the performance by RoBERTa trained on different training sizes
   * the best model, RoBERTa, on the WinoGrande debiased dev set
   * ranges from 59% to 79% <800 (2% of the training data) to 41K instances
-  * To achieve human-level performance, current SOTA models would
-    need over 118K training instances
+  * for human-level perf, SOTA models would need > 118K training instances
   * (∼800) roughly matches the size of the training data made available in
-    previous variants of WSC (see Table 5). For most of these datasets,
-    SOTA already reaches around 90% (§5). In contrast, when we control for the
-    training set size in WinoGrande , RoBERTa’s performance is considerably
-    lower (59%) – demonstrating that our dataset 100 y = 4.8463ln(x) + 26.215 94
-  * problems that are collectively considerably harder than previous datasets
+    previous variants of WSC (see Table 5)
+    * For most of these datasets, SOTA already reaches around 90% (§5). In
+    * when we control for the training set size in WinoGrande,
+      RoBERTa’s performance is considerably lower (59%)
+  * ie WSC problems are collectively considerably harder than previous datasets
 
 # 5 Transfer Learning from WinoGrande 6
 

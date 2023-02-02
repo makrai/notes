@@ -223,12 +223,12 @@ studies to say this conclusively
   English NLP tasks
   * The task-specific results on the 9 English NLP benchmarks are shown in
     Table 20. 19 Task-specific results on BIG-bench are excluded for space
-* In Figure 24, we present aggregate results on both sets of tasks, as a
-  function of total training FLOP count
+* Fig24: aggregate results on both sets of tasks,
+  as a function of total training FLOP count
   * Chinchilla
-    moderately outperforms PaLM’s interpolated scaling curve on BIG-bench, and
-    slightly underperforms the scaling curve on the 9 English NLP tasks
-  * Gopher significantly underperforms both scaling curves. We also note that
+    * moderately outperforms PaLM’s interpolated scaling curve on BIG-bench,
+    * slightly underperforms the scaling curve on the 9 English NLP tasks
+  * Gopher significantly underperforms both scaling curves
   * the training corpus used for Gopher and Chinchilla were identical, so they
     can be compared minimally using factors (1) and (2), whereas PaLM used a
     different corpus, which creates additional complications in drawing

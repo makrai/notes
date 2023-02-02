@@ -9,12 +9,12 @@ Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
     neighbor occurrences and co-occurrences in high-dimensional data
   * Hidden nodes are used to aggregate all pairwise occurrence dependencies
   * the Augmented Naive Hubness Bayesian k-nearest Neighbor (ANHBNN)
-    * a novel kNN classification method ... for intrinsically high-dimensional
+    * a novel kNN classification method for intrinsically high-dimensional
   * Neighbor co-occurrence information forms an important part of the model and
-    * analysis reveals ... the influence of hubness
+    * analysis reveals the influence of hubness
       on the shape of the co-occurrence distribution
-* tested in ... object recognition from images in class-imbalanced data and the
-* results show ... clear benefits when compared to the other hubness-aware kNN
+* tested in object recognition from images in class-imbalanced data and the
+* results show clear benefits when compared to the other hubness-aware kNN
 
 # Introduction
 
@@ -42,32 +42,33 @@ Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
     dimensionality increases
 * learning from past occurrences and hub profiling can be successfully
   employed for improving the overall kNN classifier performance
-  * Radovanović, M., Nanopoulos, A., Ivanović, M
+  * Radovanović M, Nanopoulos A, Ivanović, M
     * Nearest neighbors in high-dimensional data:
       The emergence and influence of hubs
     * 2009 ICML
-  * Tomašev, N., Radovanović, M., Mladenić, D., Ivanović, M
+  * Tomašev N, Radovanović M, Mladenić D, Ivanović, M
     * Hubness-based fuzzy measures for high-dimensional k-nearest neighbor cl
     * 2011
-  * Tomašev, N., Radovanović, M., Mladenić, D., Ivanovicć, M
+  * Tomašev N, Radovanović M, Mladenić D, Ivanovicć, M
     * A probabilistic approach to nearest neighbor classification:
       Naive hubness bayesian k-nearest neighbor
     * 2011
-  * Tomašev, N., Mladenić, D
+  * Tomašev N, Mladenić, D
     * Nearest neighbor voting in high-dimensional data
       Learning from past occurrence
     * 2011, 2012
 * Hubness-aware metric learning also seems to be helpful
-  * Schnitzer, D., Flexer, A., Schedl, M., Widmer, G.:
+  * Schnitzer D, Flexer A, Schedl M, Widmer, G.:
     * Using mutual proximity to improve content-based audio similarity
     * 2011
-  * Tomašev, N., Mladenić, D.:
+  * Tomašev N, Mladenić, D.:
     * Hubness-aware shared neighbor distances for high-dimensional k-nearest
       neighbor classification
     * 2012, 2013
 * in the unsupervised context as well [28;29]
 * The Naive Bayesian interpretation of the observed k-neighbor occurrences
-  (NHBNN) [23] was shown to be quite promising in high-dimensional data
-  classification, especially in the context of learning from class imbalanced
-  data [20].  Yet, NHBNN naively assumes independence between neighbor
-  occurrences in the same k-neighbor set,
+  (NHBNN) [23] was shown to be
+  quite promising in high-dimensional data classification
+  especially in the context of learning from class imbalanced data [20]
+  * hE NHBNN naively assumes independence between neighbor occurrences in the
+    same k-neighbor set
