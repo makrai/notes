@@ -103,8 +103,8 @@ https://github.com/tobefans/LSSED
   both MTS-3 branches and PyResNet that use ResNet152 as the backbone is shown
   * Although they all use multi-scale convolution kernels
     * MTS-3 uses multi-scale kernels derived from one kernel
-    * PyResNet directly uses multiple different kernels with more powerful
-      modeling capabilities. As shown in Figure 2, we can observe that
+    * PyResNet directly uses
+      multiple different kernels with more powerful modeling capabilities. Fig 2
   * neutral samples have a high probability of being correctly predicted, which
     is also the most common emotion. But we should also note that
   * both models have a prediction bias problem for the neutral class

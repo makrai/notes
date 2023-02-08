@@ -43,7 +43,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
     * make all objects equally similar to the data centroid => reduce hubs
       (Suzuki+ 2012)
     * such kernels:
-      * commute-time kernels (Saerens+ 2004) and the
+      * commute-time kernels (Saerens+ 2004)
       * regularized Laplacian
         (Chebotarev and Shamis, 1997; Smola and Kondor, 2003)
 * In Section 7, we evaluate
@@ -51,7 +51,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
   * centering is equally or even more effective
 * Section 4 presents a theoretical justification for using centering
   * this kind of analysis is missing for the Laplacian kernels
-  * [computation cost] For a dataset of n objects
+  * computation cost: for a dataset of n objects
     * Centering takes O(n^2) time to compute, whereas computing a
     * Laplacian-based kernel requires O(n^3) time for matrix inversion
     * Mutual Proximity also has a time complexity of O(n^2)
@@ -94,10 +94,10 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
 * we also tested two recently proposed approaches to hub reduction:
   * transformation of the base similarity measure (in our case, K) by Mutual
     Proximity (Schnitzer+ 2012) 2 , and the
-  * one (Suzuki+ 2012) based on graph Laplacian kernels. Since the
-    Laplacian kernels are defined for graph nodes, we computed them by taking
-    the cosine similarity matrix K as the weighted adjacency (affinity)
-    matrix of a graph. For Laplacian kernels,
+  * one (Suzuki+ 2012) based on graph Laplacian kernels
+    * the Laplacian kernels are defined for graph nodes, 
+    => we computed the kernels by taking the cosine similarity matrix K as the
+      weighted adjacency (affinity) matrix of a graph
     * we computed both the
       * regularized Laplacian kernel (Chebotarev and Shamis, 1997; Smola and
         Kondor, 2003) with several parameter values, as well as the

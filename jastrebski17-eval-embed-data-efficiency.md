@@ -1,6 +1,6 @@
-Stanisław Jastrzebski, Damian Leśniak, Wojciech Marian Czarnecki
 How to evaluate word embeddings?
   On importance of data efficiency and simple supervised tasks
+Stanisław Jastrzebski, Damian Leśniak, Wojciech Marian Czarnecki
 2017
 
 Results and scripts will be posted online upon publication
@@ -112,8 +112,10 @@ Results and scripts will be posted online upon publication
     to a simpler linear or constant model
   * Analogy 3CosAdd and 3CosMul
 * classifiers:
-  * Similarity: cosine similarity, Random Forest (RF), Support Vector Regression
-    (SVR) with RBF kernel 6
+  * Similarity
+    * cosine similarity
+    * Random Forest (RF)
+    * Support Vector Regression (SVR) with RBF kernel 6
   * Analogy: 3CosADD , 3CosMUL (Levy+ 2015) and
     regression neural network, see Appendix for further information
   * Sentence:

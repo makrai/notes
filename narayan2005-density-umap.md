@@ -53,8 +53,8 @@ Nature Biotechnology doi: 10.1038/s41587-020-00801-7
 * we introduce density-preserving data visu methods den-SNE and densMAP
   * both t-SNE and UMAP construct their embeddings iteratively
   * we augment the objective function with an
-    auxiliary term that measures the distortion of local density at each data
-    point in the visualization
+    auxiliary term that measures the distortion of local density at each point
+    in the visualization
   * we develop a general, differentiable measure of local density, local radius
     * intuitively represents the average distance to the nearest neighbors
     * enables efficient optimization of the density-augmented visu objective

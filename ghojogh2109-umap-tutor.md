@@ -10,7 +10,7 @@ arXiv:2109.02508 To appear as a part of an upcoming textbook on dim redu &
 * theory behind UMAP by algebraic topology and category theory.  Then, we
 * UMAP as a neighbor embedding method and compare it with t-SNE and LargeVis
 * negative sampling and repulsive forces in UMAP's cost function
-* DensMAP is then explained for density-preserving embedding. We then introduce
+* DensMAP is then explained for density-preserving embedding
 * parametric UMAP for embedding by deep learning and
 * progressive UMAP for streaming and out-of-sample data embedding
 
@@ -46,12 +46,12 @@ arXiv:2109.02508 To appear as a part of an upcoming textbook on dim redu &
 
 # 6 DensMAP
 
-* UMAP and t-SNE both assume that points are uniformly distributed on an
-  underlying low-dimensional manifold
+* UMAP and t-SNE both assume that
+  points are uniformly distributed on an underlying low-dimensional manifold
 * Hence, UMAP ignores the density of data around every point by canceling the
   effect of density with binary search for scales of points
-* DensMAP (Narayan+ 2021) regularizes the cost function of UMAP to take into
-  account and add back the information of density around each point
+* DensMAP (Narayan+ 2021) regularizes the cost function of UMAP to
+  take into account and add back the information of density around each point
 
 # 7 parametric UMAP
 

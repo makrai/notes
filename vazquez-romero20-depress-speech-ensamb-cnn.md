@@ -28,7 +28,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
   * represented by Facial Action Coding System (FACS),
     Active Appearance Model (AAM), or
     Local Phase Quantization at Three Orthogonal Planes (LPQ-TOP) [14] With
-  * Support Vector Regression (SVR) models obtain good achievements [15,16]. In
+  * Support Vector Regression (SVR) models obtain good achievements [15,16]
   * [17]: eigenfaces predict depression in adolescents. Other systems
   * combine visual cues with other types of information, mainly acoustic,
     * usually outperform the individual modalities
@@ -52,7 +52,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     * the prediction of stress and cognitive load level [27,28]
     * detection of psycho pathologies, such as autism [29] or depression [30],
       * the topic of this paper
-* Conventional systems for speech-based health tasks consists of data-driven
+* Conventional systems for speech-based health tasks are data-driven
   * hand-crafted acoustic features
     eg pitch, prosody, loudness, rate of speech, and energies
   * machine-learning algorithm such as Logistic Regression,

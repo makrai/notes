@@ -83,13 +83,12 @@ Representation Learning: A Review and New Perspectives
 
 ## 2.2 Object Recognition
 
-MNIST digit image classification problem
-  * beginning
-    * (Hinton+ 2006; Bengio+ 2007),
-  *   * breaking the supremacy of SVMs
+* MNIST digit image classification problem
+  * beginning (Hinton+ 2006; Bengio+ 2007),
+  * breaking the supremacy of SVMs
   * The latest records
     * unconstrained version, convolutional: Ciresan+ (2012)
-    * knowledge-free version: Rifai+ (2011c) is
+    * knowledge-free version: Rifai+ (2011c)
 * object recognition in natural images: (Krizhevsky+ 2012)
 
 ## 2.3. Natural Language Processing

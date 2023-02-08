@@ -4,6 +4,10 @@ Miriam Butt
 
 todo: localist
 
+# Introduction
+
+## 1.1 Overview
+
 * issues must be dealt with
   * what “case” really means
   * which historically motivated assumptions have served to form the notion

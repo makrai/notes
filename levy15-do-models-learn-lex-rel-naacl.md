@@ -1,5 +1,5 @@
-Omer Levy, Steffen Remus, Chris Biemann, and Ido Dagan
 Do Supervised Distributional Methods Really Learn Lexical Inference Relations?
+Omer Levy, Steffen Remus, Chris Biemann, and Ido Dagan
 NAACL 2015
 
 mindig csak igen-nem?
@@ -27,7 +27,7 @@ mindig csak igen-nem?
     * based on contextual features
       (Turney and Mohammad, 2014; Rimell, 2014)
     * we argue that these supervised methods memorizing
-      ... whether y is a “prototypical hypernym” (i.e. a category)
+      whether y is a “prototypical hypernym” (i.e. a category)
 
 # 2 Experiment Setup
 
@@ -72,7 +72,7 @@ mindig csak igen-nem?
     * meronyms, noun cohyponyms, and random noun pairs as negative
 * (Baroni+ 2012)
   * like BLESS
-  * Hypernym ... permutated to generate negative examples
+  * Hypernym permutated to generate negative examples
 * (Turney and Mohammad, 2014)
   * Based on a crowd-sourced dataset of 79 semantic relations
     (Jurgens+ 2012)
@@ -104,12 +104,12 @@ mindig csak igen-nem?
 
 * Lexical Memorization
   * y = animal
-  * Similar findings ... by Roller+ (2014) and Weeds+ (2014)
+  * Similar findings by Roller+ (2014) and Weeds+ (2014)
   * Table 2
   * in our following experiments, we split each dataset into train and test
-    ... with zero lexical overlap
+    with zero lexical overlap
 * Supervised vs Unsupervised
-  * supervised methods ... better than unsupervised ones: not always
+  * supervised methods better than unsupervised ones: not always
   * baseline: cosine
     * outperforms all supervised methods in 2 out of 5 datasets
   * Ignoring x’s Information
@@ -152,7 +152,7 @@ mindig csak igen-nem?
 
 # 7 The Limitations of Contextual Features
 
-* requiring ... features, such as textual patterns that connect x with y
+* requiring features, such as textual patterns that connect x with y
   * bib
     * Rion Snow, Daniel Jurafsky, and Andrew Y Ng (2005)
       Learning syntactic patterns for automatic hypernym discovery

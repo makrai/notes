@@ -53,9 +53,9 @@ arXiv:2112.04172 [q-bio.QM]
         UMAP algorithm 5
   * den-SNE and densMAP are modifications of t-SNE and UMAP, respectively,
     * attempt to solve the problem inherent to these approaches whereby
-      cluster size is driven by the number of cells in the cluster. den-SNE and
-    * auxiliary function to optimise cell density between high-dimensional and
-      low-dimensional space, with
+      cluster size is driven by the number of cells in the cluster
+    * auxiliary function to optimise cell density
+      between high-dimensional and low-dimensional space
     * the size of clusters in the resulting low-dimensional plots reflecting
       the degree of heterogeneity present in the cluster 6
   * TMAP 7, to deal with limitations of t-SNE when applied beyond the single

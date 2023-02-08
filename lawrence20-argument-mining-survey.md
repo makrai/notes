@@ -83,7 +83,7 @@ identify topics where opinions are polarized
 
 * scientific papers are annotated at the sentence level with
   labels that indicate the rhetorical role of the sentence (criticism or support
-  for previous work, comparison of methods, results or goals, etc.)
+  for previous work, comparison of methods, results or goals, etc)
 
 # 3 manual argument analysis, considering the steps involved and tools
 
@@ -141,7 +141,7 @@ identify topics where opinions are polarized
     sentences that were classified with less than 98% confidence were removed
   * used as training data to identify Method, Result, and Conclusion sentences
     using both SVM and naïve Bayes classifiers
-    * average F-score of 0.97 with naïve Bayes and 0.99 with SVM, and are
+    * average F-score of 0.97 with naïve Bayes and 0.99 with SVM
     * classifiers further tested on the corpus used by Agarwal and Yu (2009),
       where sentences are classified in the same way. By using this approach,
     * Agarwal & Yu's results show an F-score of 0.92 using 10-fold cross-valid
@@ -151,7 +151,7 @@ identify topics where opinions are polarized
     * nL these results show that by extending the training data available,
       substantial improvements in classifying sentences can be made
 * Lawrence and Reed (2017) take a similar approach to Houngbo and Mercer,
-  * using discourse indicators (connectives such as “because,” “however,” etc.)
+  * using discourse indicators (connectives such as “because,” “however,” etc)
     in place of “this.” In this work, the topic of a given text is first
   * sentences are split on either side of the indicator to give possible
     premise conclusion pairs. Despite this being a noisy data set, with

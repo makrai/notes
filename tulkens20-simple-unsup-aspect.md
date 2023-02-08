@@ -51,9 +51,10 @@ code to reproduce the experiments https://github.com/clips/cat
   * frequency threshold for candidate selection
   * novel attention mechanism based on RBF kernels
   * automated aspect assignment method
-* for the task of assigning aspects to sentences in the restaurant domain, the
-  RBF kernel attention mechanism outperforms a regular attention mechanism, as
-  well as more complex models based on auto-encoders and topic models
+* for the task of assigning aspects to sentences in the restaurant domain,
+  the RBF kernel attention mechanism outperforms
+  * a regular attention mechanism, as well as
+  * more complex models based on auto-encoders and topic models
 
 # 5 Analysis
 

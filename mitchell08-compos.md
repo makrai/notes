@@ -1,6 +1,6 @@
 Jeff Mitchell and Mirella Lapata
-2008
 Vector-based Models of Semantic Composition
+2008
 
 # Abstract
 

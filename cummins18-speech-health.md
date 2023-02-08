@@ -31,7 +31,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * shared tasks for deep learning systems
     * Computational Paralinguistics Challenge (ComParE) [6, 7, 8, 9, 10, 11]
     * Audio/Visual Emotion Challenge (AVEC) workshops [12, 13, 14, 15]
-    * increase of deep learning 
+    * increase of deep learning
       * ComParE 2011: recognition of speech affected by intoxication or fatigue
         * it was held before deep learning became SOTA in speech processing
       * 2017 almost two-thirds of entrants integrated some aspect of DL
@@ -56,13 +56,13 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 ## 4.1. Baseline systems
 
 * reason for focusing this review on the ComParE and AVEC challenges is the
-  presence of a transparent baseline system and associated scoring metrics.
+  presence of a transparent baseline system and associated scoring metrics
   This property enables the use of straightforward comparisons to assess
   improvements, if any, offered through new approaches. However, aside from
-  * hE no strict rule as to what constitutes a ‘good’ system performance.
+  * hE no strict rule as to what constitutes a ‘good’ system performance
   * larger scale studies, potentially undertaken as part of a clinical trail,
     are required to establish what constitutes system performances suitable
-    to deploy speech-based systems into clinical practices.
+    to deploy speech-based systems into clinical practices
 * The baseline system for the majority of these works is set using a
   brute-forced feature extraction paradigm to create a single, yet high
   dimensional, acoustic representation of an utterance
@@ -79,13 +79,12 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 * In all the ComParE and AVEC challenges the baseline sets are extracted using
   the OPENSMILE toolkit [44]. OPENSMILE provides software solutions to enable
   * a standard set of scripts is provided with OPENSMILE to enable users to
-    replicate the feature representation used in the challenges.
+    replicate the feature representation used in the challenges
 * Classification is, mainly, achieved in the baseline systems using
-  linear kernel Support Vector Machines (SVM)/Support Vector Regression (SVR).
-  These techniques are used as they are considered to be robust against
-  overfitting
-  * overfitting is a common issue when utilising small and unbalanced datasets.
-  * implemented in the open-source machine learning toolkit Weka [54].
+  linear kernel Support Vector Machines (SVM)/Support Vector Regression (SVR)
+  * because they are considered to be robust against overfitting
+  * overfitting is a common issue when utilising small and unbalanced datasets
+  * implemented in the open-source machine learning toolkit Weka [54]
 
 ## 4.3. Sleepiness (2011)
 
@@ -103,17 +102,16 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * notable effects on speech. Indeed, speech affected by sleepiness has been
   * impaired speech planning such as flattened prosody; effects include
     reduced intelligibility and
-    tense and breathy qualities <~ irregular vocal fold actions [59] 
-* The challenge dataset was the Sleepy Language Corpus (cf. Table 2).  The
+    tense and breathy qualities <~ irregular vocal fold actions [59]
+* The challenge dataset was the Sleepy Language Corpus (Table 2)
   * 4368 dimensional acoustic feature representation, and was used in
     conjunction with Synthetic Minority Oversampling Technique (SMOTE)
-    resampling [60], to account for class imbalances and a SVM to set a
-    2-class, ‘not-sleepy’ and ‘sleepy’, development set UAR of 67.3% and test
-    set UAR of 70.3% [6].
-* deep learning technologies arguably did not begin to replace GMMs and HMMs as
-  SOTA classification techniques in speech processing tasks until 2012 [61]
-  none of the challenge entrants were based on deep, or for that matter
-  shallow, neural networks.  Indeed, the
+    resampling [60], to account for class imbalances and
+    a SVM to set a 2-class, ‘not-sleepy’ and ‘sleepy’,
+    * development set UAR of 67.3% and test set UAR of 70.3% [6]
+* GMMs & HMMs were SOTA classification techniques in speech proc until 2012 [61]
+  * none of the challenge entrants were based on deep, or for that matter
+    shallow, neural networks.  Indeed, the
   * winner of the sleepiness sub challenge used a MFCC based on a GMM-Universal
     Background Model-Maximum a Posteriori (UBM-MAP) supervector approach
     utilised in a 3-state left-to-right HMMs, with the resulting supervectors
@@ -123,7 +121,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       baseline system
   * an in-depth review of other approaches: [59]
   * no works had revisited this corpus and attempted to improve on the
-    challenge wining score using deep learning.
+    challenge wining score using deep learning
 
 ## 4.4. Intoxication (2011)
 
@@ -145,9 +143,9 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   self-reported depression as scored by the Beck Depression Index II (BDI-II)
   [94], from a given audiovisual clip [12,13]
   * Both challenges corpora are based on a subset 150 files taken from the
-    Audio-Visual Depressive Language Corpus (AViDCorpus) 1  
+    Audio-Visual Depressive Language Corpus (AViDCorpus) 1
   * audio baseline feature set for both challenges consisted of 2 268 features
-    and the classifier was a SVR. The
+    and the classifier was a SVR
   * metric for both challenges was the RMSE over all sequences
   * audio RMSE dev/test baselines for AVEC-2013 were 10.75/14.12; the corre-
     * AVEC-2014 were 11.52 and 12.57
@@ -161,14 +159,14 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       * lowest AVEC-2013 RMSE was 8.50, and the lowest test set RSME of their
         AVEC-2014, which also included visual information, was 8.12
 * a more in depth review of both challenges: [3]
-* there has been no speech and deep learning approaches on either corpora.
+* there has been no speech and deep learning approaches on either corpora
 * recent research in predicting depression scores using deep learning vision
   * Zhu+ [97], proposed a dual CNN structure to exploit both facial appearance
     and dynamic information. The authors report a lowest AVEC-2014 test set
     RMSE of 9.55
   * Kang+ [98], used the AVEC-2014 data to re-tune the VIPLFaceNet network, a
     10-layer CNN with 7 convolutional layers and 3 fully-connected layers, for
-    the task of depression detection.  This approach yielded a RMSE of 9.43.
+    the task of depression detection.  This approach yielded a RMSE of 9.43
 
 ## 4.8. Cognitive and physical load (2014)
 
@@ -180,7 +178,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   increasing demands on working memory and impaired mental performances [56,99]
   * increased articulation rate, an increase in the number of filled pauses,
     and a reduction in formant vowel space area are commonly reported [99]
-* Physical fatigue on the other hand, is a reduction in muscle power & movement 
+* Physical fatigue on the other hand, is a reduction in muscle power & movement
   * key symptom is impaired co-ordination [56]
   * there are strong links between changes in heart-rate and changes in
     prosodic and voice quality (glottal) features [48,100]
@@ -222,16 +220,16 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     * Fig. 3: score distribution of the DAIC-WOZ data
     * features: The challenge organisers provided extracted video features (for
       ethical reasons the raw video could not be shared), audio files and
-      transcription of the interviews.
+      transcription of the interviews
   * imbalance in training data (4:1 ‘notdepressed’ to ‘depressed’)
   * The audio baseline feature representation was realised using a set of
     prosodic, voice quality and spectral LLDs extracted from the Collaborative
-    Voice Analysis REPository (COVAREP) Matlab toolbox [128].
+    Voice Analysis REPository (COVAREP) Matlab toolbox [128]
     * SVM classification, with majority voting used to produce one single
-      depression label per file, with the official
-  * metric being the F1 score for the ‘depressed’ class.
+      depression label per file
+  * metric being the F1 score for the ‘depressed’ class
   * Using this method, the development score was 0.46 (0.68, for ‘not-de-
-    pressed’) and the test set score was 0.41 (0.58, for ‘not-depressed’).
+    pressed’) and the test set score was 0.41 (0.58, for ‘not-depressed’)
   * participants in 2016
     * only deep learning approach being the DEPAUDIONET E2E system [129]. This
       * feed Mel Spectrum features into an E2E network comprising a feature
@@ -246,17 +244,17 @@ Methods Volume 151, 1 December 2018, Pages 41-54
         ‘not-depressed’); however, no test set score was given in the paper
         [129]
     * winning entrant utilised a gender-dependant multi-modal decision tree ap-
-      proach, gaining a test set score of 0.57 (0.88, for ‘not-depressed’) [130].
+      proach, gaining a test set score of 0.57 (0.88, for ‘not-depressed’) [130]
 * The AVEC-2017 depression sub-challenge required participants to predict –
-  * from multimodal audio, visual, and text data – 
+  * from multimodal audio, visual, and text data –
   * target: PHQ8 score of each patient in the DAIC-WOZ corpus [15]. The
   * baseline audio system was again based on COVAREP features, however this was
     in conjunction with a Random Forest regressor
   * metric was RMSE As in AVEC-2013 and AVEC-2014 (cf. 4.7), the metric is the
-    * audio development set and test set RMSE’s being 6.74 and 7.78 resp.
+    * audio development set and test set RMSE’s being 6.74 and 7.78 resp
 * participants
   * two papers, both lead by Le Yang of Northwestern Polytechnical University,
-    explored the suitability of CNNs for the task.
+    explored the suitability of CNNs for the task
   * [131] system fed ComParE-2013 features into a CCN trained to predict PHQ8
     * After training the CNN,
       the weights were frozen and the last layer removed
@@ -273,13 +271,13 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       labels
     * development set RMSE of 6.62, which was below the provided baseline; only
       audio-visual fusion RMSE were given for test set, with the lowest
-      reported value being 5.40.
+      reported value being 5.40
   * [132], the same CNN-DNN set up but downsampling methodology during training
     presented in [129] for the ‘not-depressed’ class
-    * only gender dependent models (not class specific as well) were trained.
+    * only gender dependent models (not class specific as well) were trained
     * No audio only scores directly comparable with the baseline are given in
     * The audio-visual approach achieved a RMSE of 5.97. For the interested
-  * a unification of both CNN approaches is presented in [133].
+  * a unification of both CNN approaches is presented in [133]
   * The winning approach [134] exploited the provided patient interview
     transcripts to identify salient topics and segments
     * random forest regression on the baseline audio and visual features
@@ -287,15 +285,15 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     * augmented with semantic features, which were manually extracted using the
       Linguistic Inquiry and Word Count (LIWC) text analysis program [135]
     * The combined approach utilising acoustic, visual and semantic features
-      produced the winning RMSE of 4.99.
+      produced the winning RMSE of 4.99
 
 ## 4.12. Cold and Flu (2017)
 
-* four systems were presented as a baseline: 
-  * the ComParE2013 feature set together with a SVM 
+* four systems were presented as a baseline:
+  * the ComParE2013 feature set together with a SVM
   * a Bag-of-Audio-Words (BoAW) approach, for details see [137], which
     quantised the ComParE2013 LLD’s into a sparse histogram-of-occurrences
-    representation, 64.2% development and 67.3% for test; 
+    representation, 64.2% development and 67.3% for test;
     * 137 M. Schmitt, B. Schuller
       openXBOW – Intro the Passau open-source crossmodal bag-of-words toolkit
       J. Mach. Learn. Res. 18 (2017) 5 pages
@@ -366,8 +364,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * exploit commonalities to create a more robust system [150]
   * Inter-relationships between the sleepiness (sec 4.3) and intoxication (4.4)
     datasets were explored in [161]
-    * SVM based, classifier can be obtained by aggregating the training data
-      from both corpora
+    * SVM based, classifier can be obtained by
+      aggregating the training data from both corpora
     * [162] combined learning of depression and affects for depression
       * a multitask LSTM-RNN paradigm
     * depression information aids the accuracy of deep regressors performing

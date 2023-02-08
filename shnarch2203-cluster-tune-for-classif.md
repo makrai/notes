@@ -50,8 +50,8 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * it is most prominent when the training data available for the target task
     is relatively small and the classification task is of a topical nature
 * future work
-  * additional embedding space and/or more clustering techniques ; co-training
-    (Blum and Mitchell, 1998) methods
+  * additional embedding space and/or more clustering techniques 
+  * co-training (Blum and Mitchell, 1998) methods
   * tuning the number of clusters
   * using the labeled data available for fine-tuning as anchors for the
     intermediate clustering step

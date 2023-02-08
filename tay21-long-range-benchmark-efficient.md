@@ -152,7 +152,7 @@ ICLR 2021
 
 ## 2.2.6 PATHFINDER-X (LONG-RANGE SPATIAL DEPENDENCIES WITH EXTREME LENGTHS)
 
-* examples consist of 16K pixels (i.e., images of 128 × 128)
+* examples consist of 16K pixels (ie images of 128 × 128)
 * goal here is to observe if a model would fail to solve the 16K extreme version
   even if it can successfully learn the standard version of 1024 tokens
   * see if the same algorithmic challenges bear a different extent of difficulty
@@ -186,9 +186,8 @@ ICLR 2021
     their average is lowered by the ListOps task
 * Figure 3 shows the trade-off between qualitative performance (y-axis), model
   speed (x-axis), and memory footprint (size of the circles)
-* the kernel-based variants, i.e., Performer, Linformer, and linear Transformer
-  make a better trade-off in terms of speed and performance, while having
-  reasonable memory usage
+* the kernel-based variants, ie Performer, Linformer, and linear Transformer
+  * a better trade-off in terms of speed and performance + reasonabl memo usage
   * Overall, the pareto-optimal models are BigBird and Performers
 
 # 4 RELATED WORK

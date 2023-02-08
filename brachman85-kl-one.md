@@ -4,11 +4,11 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 # Abstract
 
-* KL-ONE is a system for representing knowledge in Artificial Intelligence pro-
-  groms.  It has been developed and refined over a long period and has been
-  used in both basic research and implemented knowledge-based systems in a
-  number of places in the AI community.  Here we present the kernel ideas of
-  KL-ONE, emphasizing its ability to form complex structured descriptions
+* KL-ONE is a system for representing knowledge in AI progroms
+  * developed and refined over a long period and has been
+  * used in both basic research and implemented knowledge-based systems in a
+  * Here we present the kernel ideas of KL-ONE
+  * emphasizing its ability to form complex structured descriptions
 * we discuss
   * description-forming structures,
   * the philosophy underlying the system, highlight notions of
@@ -20,9 +20,9 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * KL-ONE
   * a system for representing knowledge in Artificial Intelligence
     * more or less in the tradition of semantic networks and frames
-  * a computational incarnation of ... sfrucfured inheritance networks
+  * a computational incarnation of sfrucfured inheritance networks
     (Brachman, 1978)
-* first appeared in 1977 as ... the first author’s Ph.D. dissertation (Brachman, 1978)
+* first appeared in 1977 as the first author’s Ph.D. dissertation (Brachman, 1978)
   * whose primitives were rather [geared to] AI knowledge representation
     * than those of predicate logic
   * the “epistemological level”
@@ -76,7 +76,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 * the principal element of KL-ONE is the structured conceptual object, Concept
 * Brachman (1979) and Woods (1975), the history of network representations is
   fraught with imprecision on the meanings of nodes and links
-  * links ... being used to represent implementational pointers, logical
+  * links being used to represent implementational pointers, logical
     relations, semantic relations (e.g., “cases”), and arbitrary conceptual and
     linguistic relations
   * “levels”
@@ -165,7 +165,7 @@ RONALD J.BRACHMAN and JAMES G.SCHMOLZE
 
 ## 5.1. RoleSet Restriction p13
 
-* specification ... with respect to the components of a RoleSet
+* specification with respect to the components of a RoleSet
 
 ## 5.2. RoleSet Differentiation p15
 
