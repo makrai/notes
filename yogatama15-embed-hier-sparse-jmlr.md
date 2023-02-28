@@ -1,5 +1,5 @@
-Dani Yogatama and Manaal Faruqui and Chris Dyer and Noah A. Smith
 Word Representations withe Hierarchical Sparse Coding
+Dani Yogatama, Manaal Faruqui, Chris Dyer, Noah A Smith
 2015 jmlr
 
 # Abstract
@@ -8,20 +8,20 @@ Word Representations withe Hierarchical Sparse Coding
   significantly faster than previous approaches,
   making it possible to perform hierarchical sparse coding
   on a corpus of billions of word tokens
-* Experiments on ... word similarity ranking, syntactic and semantic analogies,
+* Experiments on word similarity ranking, syntactic and semantic analogies,
   sentence completion, and sentiment analysis
   * outperforms or is competitive with state-of-the-art methods
 
 # Introduction
 
-* this work [is] based on decomposition of a high-dimensional matrix
-  * contexts are words ... (Turney & Pantel, 2010)
+* this work is based on decomposition of a high-dimensional matrix
+  * contexts are words (Turney & Pantel, 2010)
 * govern the relationships among dimensions of the learned word vectors,
   * hierarchical organization imposed through a structured penalty known as the
     group lasso (Yuan & Lin, 2006). The idea of
   * regulating the order in which variables enter a model was
-    first proposed by Zhao et al. (2009), and it has since been shown useful
-  * for other applications (Jenatton et al., 2011)
+    first proposed by Zhao+ (2009), and it has since been shown useful
+  * for other applications (Jenatton+ 2011)
   * coarse-to-fine organization of words’ meanings often found in the field of
     lexical semantics (see §2.2 for a detailed description)
   * distributed nature of hierarchical concepts in the brain (Raposo+ 2012)
@@ -34,14 +34,14 @@ Word Representations withe Hierarchical Sparse Coding
 
 ## 2.1. Background and Notation
 
-* Other [contexts] include:
-  * global context (Huang et al., 2012)
+* Other contexts include:
+  * global context (Huang+ 2012)
   * multilingual context (Faruqui & Dyer, 2014)
-  * geographic context (Bamman et al., 2014)
-  * brain activation (Fyshe et al., 2014)
+  * geographic context (Bamman+ 2014)
+  * brain activation (Fyshe+ 2014)
   * and second-order context (Schutze, 1998)
 * we let `x_{v,c}` be the pointwise mutual information (PMI)
-  (Turney & Pantel, 2010; Murphy et al., 2012; Faruqui & Dyer, 2014;
+  (Turney & Pantel, 2010; Murphy+ 2012; Faruqui & Dyer, 2014;
   Levy & Goldberg, 2014)
 * sparse coding
   * D is the set of matrices whose columns have `l_2 \le 1`
@@ -49,8 +49,8 @@ Word Representations withe Hierarchical Sparse Coding
   * λ is a regularization hyperparameter, and
   * Ω is the regularizer. Here,
     * we use the squared loss for the reconstruction error, but
-    * other loss functions could also be used (Lee et al., 2009). Note that
-* it is ... typical, for M to be less than C
+    * other loss functions could also be used (Lee+ 2009). Note that
+* it is typical, for M to be less than C
   * when M > C, it is often called an overcomplete representation
 * The most common regularizer is the `l_1` penalty,
   which results in sparse codes
@@ -61,19 +61,19 @@ Word Representations withe Hierarchical Sparse Coding
 * For Ω(A), we design a forest-structured regularizer that
   * encourages the model to use some dimensions in the code space
     before using other dimensions
-  * trees describe the order in which variables “enter the model” (i.e., take
+  * trees describe the order in which variables “enter the model” (ie, take
     nonzero values). In general, a node may take a nonzero value only if its
     ancestors also do
     `\Omega (a_v) = \sum_node |a_{v,i} a_{v, descendants(i)}|_2`
-    * Jenatton et al.  (2011) proposed a related penalty with only one tree for
+    * Jenatton+  (2011) proposed a related penalty with only one tree for
       learning image and document representations
-* [thus] we encode [a] constraint that
+* thus we encode a constraint that
   the dimensions of a v that correspond to top level nodes
   should focus on “general” contexts that are present in most words
   * this corresponds to contexts with extreme PMI values for many words, since
     they are the ones that incur the largest losses
-* Our hierarchical sparse coding approach is still several steps away from
-  inducing [a lexicon like WordNet]
+* Our hierarchical sparse coding approach is
+  still several steps away from inducing a lexicon like WordNet
 
 ## 2.3. Learning
 
@@ -88,10 +88,10 @@ Word Representations withe Hierarchical Sparse Coding
   * Sample a mini-batch of words and (in parallel) solve for each one’s `a`
     using proximal methods or alternating directions method of multipliers,
     shown to work well for overlapping group lasso problems
-    (Jenatton et al., 2011; Qin & Goldfarb, 2012; Yogatama & Smith, 2014)
+    (Jenatton+ 2011; Qin & Goldfarb, 2012; Yogatama & Smith, 2014)
   * Update `D` using the block coordinate descent algorithm
-  * [once D is fixed,] we parallelize solving for all columns of A
-* For a large corpus with billions of word tokens ... We propose an alternative
+  * once D is fixed, we parallelize solving for all columns of A
+* For a large corpus with billions of word tokens We propose an alternative
 
 # 3 Experiments
 
@@ -108,7 +108,7 @@ Word Representations withe Hierarchical Sparse Coding
 
 * Our results on the syntactic and semantic analogies tasks for all models are
   below state-of-the-art performance
-* [on a] bigger corpus, and the performance levels are ... comparable with
+* on a bigger corpus, and the performance levels are comparable with
   previous work. On the
   * syntactic analogies task, FOREST is competitive with GV and
     both models outperformed SG and CBOW. On the
@@ -119,11 +119,11 @@ Word Representations withe Hierarchical Sparse Coding
 * the average numbers of nonzero entries are 91% and 85% respectively
   * not extremely sparse, this makes intuitive sense since we try to represent
     about 180,000 contexts in only 52 (520) dimensions. We also did not tune λ
-    As we increase [the tree size] M , we get sparser representations
+    As we increase the tree size M , we get sparser representations
 * We visualize our M = 52 word representations ( FOREST ) related to
   animals (10 words) and countries (10 words)
 * larger magnitude of the vectors for more abstract concepts (animal, animals,
   country, countries) is
   * reminiscent of neural imaging studies that have found evidence of
     more global activation patterns for processing superordinate terms
-    (Raposo et al., 2012)
+    (Raposo+ 2012)

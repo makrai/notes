@@ -245,9 +245,9 @@ Methods Volume 151, 1 December 2018, Pages 41-54
         [129]
     * winning entrant utilised a gender-dependant multi-modal decision tree ap-
       proach, gaining a test set score of 0.57 (0.88, for ‘not-depressed’) [130]
-* The AVEC-2017 depression sub-challenge required participants to predict –
-  * from multimodal audio, visual, and text data –
-  * target: PHQ8 score of each patient in the DAIC-WOZ corpus [15]. The
+* The AVEC-2017 depression sub-challenge required participants to predict
+  * from multimodal audio, visual, and text data
+  * target: PHQ8 score of each patient in the DAIC-WOZ corpus [15]
   * baseline audio system was again based on COVAREP features, however this was
     in conjunction with a Random Forest regressor
   * metric was RMSE As in AVEC-2013 and AVEC-2014 (cf. 4.7), the metric is the
@@ -278,10 +278,10 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     * No audio only scores directly comparable with the baseline are given in
     * The audio-visual approach achieved a RMSE of 5.97. For the interested
   * a unification of both CNN approaches is presented in [133]
-  * The winning approach [134] exploited the provided patient interview
-    transcripts to identify salient topics and segments
+  * The winning approach [134] exploited the patient interview transcripts to
+    identify salient topics and segments
     * random forest regression on the baseline audio and visual features
-      corresponding to these segments. This method was
+      corresponding to these segments
     * augmented with semantic features, which were manually extracted using the
       Linguistic Inquiry and Word Count (LIWC) text analysis program [135]
     * The combined approach utilising acoustic, visual and semantic features

@@ -8,14 +8,14 @@ EACL 2021
   * Morphology is predictive of errors; and
     * Using morphological features does improve error prediction across tasks;
   * the importance of morphology increases with the morphological complexity of
-    a language. We show across
-    * effect is less pronounced with morphologically complex languages.
-* four different tasks and up to 57 languages that
-* only (i) is true.
+    a language
+    * effect is less pronounced with morphologically complex languages
+* four different tasks and up to 57 languages
+* only (i) is true
 * We speculate this is because
-  morphology is more discriminative in morphologically simple languages.
-* Across all four tasks, case and gender are the morphological features most
-  predictive of error.
+  morphology is more discriminative in morphologically simple languages
+* Across all four tasks,
+  case and gender are the morphological features most predictive of error
 
 # 1 Intro
 
@@ -26,7 +26,7 @@ EACL 2021
 * in particular in morphologically complex languages
   (Bender, 2009; Søgaard+ 2018; Tsarfaty+ 2020)
 * If the model has generally seen fewer words in instrumental case, this can
-  lead to systematic errors on this class of inflections.
+  lead to systematic errors on this class of inflections
 * Nowadays, many NLP systems use
   * statistically learned subword units e.g. byte-pair encodings (Sennrich+ 16)
   * characters as input representations, which could allow gen to indiv affixes
@@ -53,34 +53,34 @@ EACL 2021
   * the degree to which morphology helps does
     not increase with the morphological complexity of the language. Moreover, we
 * task-specific differences between which morphological features are predictive
-  * part of speech, case and gender are most predictive of error.
+  * part of speech, case and gender are most predictive of error
 
 # 2 Background
 
 * Tsarfaty+ (2020) give a broader overview of the challenges that rich
   morphological structure presents for dependency parsing, and
-* Şahin and Steedman (2018) discuss the importance of morphology in sem parsing.
-* machine translation (MT) systems.
+* Şahin and Steedman (2018) discuss the importance of morphology in sem parsing
+* machine translation (MT) systems
   * Federico+ (2014) show that morphological errors are
     common for MT into Arabic and Russian and strongly affect human quality judg
   * For English–Romanian MT, Peter+ (2016) find that tense and verb form on the
-    target side are a common source of error.
+    target side are a common source of error
   * Klubička+ (2017) find that errors in English–Croatian MT are more common for
     some morphological categories, such as case. In a similar vein,
   * Burlot and Yvon (2017) evaluate morphological competence of MT systems using
     contrast pairs and show that systems have different strengths and weaknesses
-    for different morphological phenomena.
+    for different morphological phenomena
 * tasks Beyond parsing and MT, morphology has also been shown to present a
   * Arabic handwriting recognition (Habash and Roth, 2011) or
-  * Russian anaphora resolution (Toldova+ 2016).
-* explicitly analysed BERT with regard to morphology.
+  * Russian anaphora resolution (Toldova+ 2016)
+* explicitly analysed BERT with regard to morphology
   * Edmiston (2020) analyses morphological content in BERT-style models for
     five languages and finds that
     “[morphological] ambiguity is negatively correlated with performance on
     classification, and to a significant degree in many cases”, suggesting that
-    morphology is still a significant source of error in these models.
+    morphology is still a significant source of error in these models
 * We studying a much larger set of morphological variables, across
-  several architectures and tasks, and across up to 57 languages.
+  several architectures and tasks, and across up to 57 languages
 
 # 4 Methodology
 
@@ -98,8 +98,8 @@ EACL 2021
     e.g., book could be either U : POS = VERB or U : POS = NOUN ; and
   * AMBIG LEX specifies whether or not the token belongs to multiple lexemes:
     e.g., ruling is a form of both ‘(to) rule’ and ‘(the) ruling’. To determine
-* string-based features.
-  * based on comparing the token with its lemma.
+* string-based features
+  * based on comparing the token with its lemma
   * We perform character-based string alignment using Edlib (Šošić & Šikić, 17)
   * EDIT = PRE and EDIT = SUF when there is an edit at the beginning or the end
   * EDIT = IN when there is an edit in the middle of the sequence; and
@@ -115,9 +115,9 @@ EACL 2021
 
 ## Pruning and statistics Since very rare features are not very informative, for
 
-* we remove features that occur less than 10 times in that dataset.
+* we remove features that occur less than 10 times in that dataset
 * Depending on the task and language, we generate between 17 and 120 unique
-  * average of 68.
+  * average of 68
 
 ## 4.2 how we classify when an NLP system has made an error
 
@@ -134,10 +134,10 @@ EACL 2021
   * there is no reason to assume a priori that this task is well learnable from
     morphological input features alone.  Therefore, we believe
 * an F 1 score of 0.43—albeit with considerable var in across tasks and langs—
-  is a strong result.
+  is a strong result
 * Figure 2 plots this relationship. 9 This suggests that the
   * errors introduced by SOTA NLP systems, unsurprisingly, become harder and
-    harder to predict the better the underlying systems perform.
+    harder to predict the better the underlying systems perform
 * data imbalance is in the nature of the error prediction task, as we expect
   errors in SOTA systems to be rare. Additionally,
 * different languages have differently-sized morphological tag inventories,
@@ -148,7 +148,7 @@ EACL 2021
 
 ### Morphological complexity
 
-* morphological feature entropy (MFE) introduced by Çöltekin and Rama (2018).
+* morphological feature entropy (MFE) introduced by Çöltekin and Rama (2018)
   * sensitive to both the size of a language’s morphological feature inventory
     as well as its distribution, with a more uniform distribution of features
     resulting in a higher MFE. Since MFE is a treebank measure that relies on
@@ -156,37 +156,37 @@ EACL 2021
     calculate it; therefore, it can only be considered a rough approximation of
     the underlying language’s complexity. Like Çöltekin and Rama (2018), we
     calculate the MFE score for each language on the UD treebanks. 10
-* a slight, negative correlation between MFE and ∆F 1 (Pearson’s r = −0.24).
+* a slight, negative correlation between MFE and ∆F 1 (Pearson’s r = −0.24)
   * languages with high MFE appear across the whole range of the ∆F 1
   * a number of languages with low MFE
     e.g.  Thai ( THA ), Japanese ( JPN ), or Nigerian Pidgin ( PCM )—are found
-    to profit more from the inclusion of morphological features.
+    to profit more from the inclusion of morphological features
 * One possible explanation is that
   * the control features are already very strong, which we will look at more
     closely in Sec. 5.3. Another possible factor is that
   * morphologically complex languages introduce a much larger set of
     morphological features; if, for a given language, most of them are not
     relevant for predicting errors in the UDP task, they might hurt the overall
-    classifier performance.
+    classifier performance
 
 ## 5.3 What morphological features are most predictive of errors?
 
-* plain feature importances of trained random forest classifiers can be misleadn
-  (Strobl+ 2007; Parr+ 2018),
+* plain feature importances of trained random forest classifiers can mislead
+  (Strobl+ 2007; Parr+ 2018)
 * we explicitly remove features and retrain (Parr+ 2018; Hooker and Mentch 2019)
 
 ## Average feature importances
 
 * Table 2 shows the top 10 feature categories for each task, averaged over all
 * The two control features, FREQ and LEN , always appear among the three most
-  important categories, only trumped by U : POS for the UDP and SEM tasks.
+  important categories, only trumped by U : POS for the UDP and SEM tasks
   * these three are the only feature categories that appear with every token. It
 
 ## Individual part-of-speech tags
 
 * Since U : POS is an important feature category across tasks (cf.  Tab. 2),
   we also look at feature importances for individual POS tags. For this, we use
-* we now only remove a single U : POS feature from Φ at a time.
+* we now only remove a single U : POS feature from Φ at a time
 * Table 3 shows the average feature importances for individual U : POS features,
 * this time we restrict ourselves to the subset of languages in UDP that are
   also covered in SEM . 11 This way, we can better

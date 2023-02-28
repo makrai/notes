@@ -1,5 +1,5 @@
-Yanzhou Huang, Deyi Xiong, Xiaodong Shi, Yidong Chen, ChangXing Wu, Guimin Huang
 Adapted competitive learning on continuous semantic space for WSI
+Yanzhou Huang, Deyi Xiong, Xiaodong Shi, Yidong Chen, ChangXing Wu, Guimin Huang
 Neurocomputing, 2016
 
 # Abstract
@@ -56,7 +56,7 @@ Neurocomputing, 2016
       are considered as the representations of the induced word senses
   * without resorting to any external resources
 
-# 2 Related work
+# 2 Related work on WSI
 
 * In this section, we give an overview on previous works of WSI and
   highlight the differences from our framework
@@ -75,11 +75,9 @@ Neurocomputing, 2016
     * on the SEMEVAL-2010 WSI dataset
   * [19] incorporate position features in the HDP model
     * improvement in supervised F-score
-  * [7] extends the naive Bayes model based on the
-    * idea that the more closer a word to the target word, the more
-      relevant this word will be in WSI
-    * the extended naive Bayes model is simple yet effective on the
-      SEMEVAL-2010 WSI dataset
+  * [7] extends the naive Bayes model
+    * idea: the closer a word to the target word, the more relevant
+    * simple yet effective on the SEMEVAL-2010 WSI dataset
   * our proposed method is not trained under the BoW assumption
 * recursive deep learning as we use RAE in our WSI framework
   * Early works on using neural networks to learn phrase representations [13]

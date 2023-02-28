@@ -1,5 +1,5 @@
-Anastasia Giachanou and Fabio Crestani
 Like it or not: A survey of Twitter sentiment analysis methods
+Anastasia Giachanou and Fabio Crestani
 ACM Comput Surv 2016
 
 # Abstract

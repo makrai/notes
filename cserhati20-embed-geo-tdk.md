@@ -57,24 +57,24 @@ tdk 2020
 
 #### Tanulság a különböző nyelven tanított modellek közötti trafókra
 
-* az ilyen célra használt tarnszformációknak általában ortogonálisnak kell
+* a tarnszformációknak általában ortogonálisnak kell lenni
   * az egyeztetni kívánt modellek geometriailag hasonlók legyenek
 * Kiderült, hogy ehhez a betanításra szolgáló algoritmusnak és a legtöbb
   hiperparaméternek egyeznie kell a két modellre
   * Az ablakméret azonban variálható
   * ez hasznos, ha különböző struktúrájú nyelvekről van szó
     * a magyar nyelv toldalékoló tulajdonsága miatt magyarul
-      sokkal kevesebb szóban fejezünk ki ugyanannyi információt, mint például
+      sokkal kevesebb szóban fejezünk ki ugyanannyi információt
 * ha SGNS, SG-HS vagy SVD modellek transzformációját szeretnénk elvégezni, az
   átlag körüli csoportosulásuk miatt különösen hasznos lehet először a [3]
-  által javasolt módon kivonni az átlagvektort minden vektorból, és a
+  által javasolt módon kivonni az átlagvektort minden vektorból
   * hogy a vektorok egymáshoz viszonyított iránya jobban befolyásolja a trafót
 
 ## 2.3. Véletlen generált és valódi szóvektorok
 
 * különböző módszerekkel a modellek vektoraihoz hasonló véletlen vektorokat
   generálunk, majd egy random forest modellel megpróbáljuk megkülönböztetni a
-  véletlen vektorokat a szóbeágyazás-vektoroktól. Ez mennél kevésbé lesz
+  véletlen vektorokat a szóbeágyazás-vektoroktól (GAN-ötlet)
 * két CBOW, két Skip-gram és két GloVe modellt vizsgálunk
   * SVD-modellek: Ferdeségük és csúcsosságuk alapján nem normáleloszlás, ezért
     azokat ebből ki kell hagynunk

@@ -1,5 +1,5 @@
-Yulia Tsvetkov, Leonid Boytsov, Anatole Gershman, Eric Nyberg, Chris Dyer
 Metaphor Detection with Cross-Lingual Model Transfer
+Yulia Tsvetkov, Leonid Boytsov, Anatole Gershman, Eric Nyberg, Chris Dyer
 2014
 
 # Abstract
@@ -7,7 +7,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
 * whether a syntactic construction is meant literally or metaphorically
 * using lexical semantic features of the words
 * we
-  * obtain state-of-the-art performance
+  * obtain SOTA performance
   * model transfer approach by pivoting through a bilingual dictionary
     * identify metaphoric expressions in other languages
     * three new test sets in Spanish, Farsi, and Russian
@@ -32,7 +32,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
   * corpus-based approaches (Birke and Sarkar, 2007; Shutova+ 2013;
     Neuman+ 2013; Shutova and Sun, 2013; Hovy+ 2013)
 * We
-  * develop a new state-of-the-art English metaphor detection system that
+  * develop a new SOTA English metaphor detection system that
     * uses conceptual semantic features
       e.g. degree of abstractness and semantic supersenses
   * create new metaphor-annotated corpora for Russian and English
@@ -51,9 +51,9 @@ Metaphor Detection with Cross-Lingual Model Transfer
 * we will use coarse-grained conceptual [features],
   rather than fine-grained lexical features, in our classifier
   * Conceptual features pertain to concepts and ideas
-    as opposed to individual words or phrases ... in a particular language
+    as opposed to individual words or phrases in a particular language
 * Each SVO (or AN) instance will be represented by a triple (duple) from which
-  * feature vector ... consist of the concatenation of the
+  * feature vector consist of the concatenation of the
     * conceptual features (which we discuss below) for all participating words,
     * conjunction features for word pairs. 6
   * For example, to generate the feature vector for the SVO triple
@@ -66,7 +66,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
       (it is easier to invoke mental pictures of concrete and imageable words)
       (Turney+ 2011; Broadwell+ 2013)
       We expect that abstractness, used in conjunction features
-      (e.g., ... that the subject is abstract and the verb is concrete),
+      (e.g., that the subject is abstract and the verb is concrete),
       is especially useful
     * Although often correlated with abstractness,
       imageability is not a redundant property e.g.,
@@ -93,15 +93,15 @@ Metaphor Detection with Cross-Lingual Model Transfer
 * random forest classifier (Breiman, 2001),
   * an ensemble of decision tree classifiers
     learned from many independent subsamples of the training data
-    Given an input, each tree classifier assigns a probability to each label;
-    those probabilities are averaged to compute the probability distribution
+    * Given an input, each tree classifier assigns a probability to each label;
+      those probabilities are averaged to compute the probability distribution
   * particularly suitable [to avoid] overfitting,
     they produce a limiting value of the generalization error
     as the number of trees increases, and
     * no hyperparameter tuning is required
   * learn non-linear responses to inputs and
     often outperform logistic regression (Perlich+ 2003)
-  * probability ... threshold
+  * probability threshold
   * scikit-learn toolkit to train our classifiers (Pedregosa+ 2011)
 
 ## Feature extraction
@@ -119,7 +119,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
     different supersenses
     * Degrees of membership in different supersenses are represented by feature
       vectors, where each element corresponds to one supersense
-    * [e.g. the noun] _head_ ... participates in 33 synsets,
+    * [e.g. the noun] _head_ participates in 33 synsets,
       three of which are related to the supersense noun.body
       The value of the feature corresponding to this supersense is 3/33 ≈ 0.09
 * Supersenses of adjectives
@@ -135,7 +135,7 @@ Metaphor Detection with Cross-Lingual Model Transfer
     posterior probabilities corresponding to degrees of membership of this word
     in one of the 13 semantic classes,
     similar to the feature vectors we build for nouns and verbs
-    * e.g. for _calm_ the top-2 categories ... are adj.behavior and adj.feeling
+    * e.g. for _calm_ the top-2 categories are adj.behavior and adj.feeling
 
 ## Vector space word representations
 
@@ -151,7 +151,7 @@ We employ 64-dimensional vector-space word representations
 * For a non-English word in a source language, we
   1. obtain all translations into English
   2. average all feature vectors related to these translations
-  * e.g a Russian word ... is translated as `head` and `brain1`
+  * e.g a Russian word is translated as `head` and `brain1`
     There are 38 such synsets (33 for head and 5 for brain)
     Four of these synsets are associated with the supersense noun.body
     Therefore, the value of the feature noun.body is 4/38 ≈ 0.11
@@ -176,7 +176,7 @@ We employ 64-dimensional vector-space word representations
     * collected by two annotators using public resources (collections of
       metaphors on the web)
     * [cleaned] by removing duplicates, weak metaphors, and metaphorical
-      phrases ... whose interpretation depends on the context
+      phrases whose interpretation depends on the context
 
 ## Multilingual test sets
 
@@ -204,7 +204,7 @@ We employ 64-dimensional vector-space word representations
 
 * performance of the three feature categories and their combinations
   * accuracy in the 10-fold cross validation
-* performance over previous state-of-the-art results
+* performance over previous SOTA results
   * SVO task, the cross-validation accuracy is about 10% better than that of
     Tsvetkov+ (2013)
   * AN task, the cross validation accuracy is better by 8% than Turney+ (2011)
@@ -221,11 +221,10 @@ We employ 64-dimensional vector-space word representations
 
 ## Comparison to baselines
 
-* In this section, we compare our method to state-ofthe-art methods of
-  Tsvetkov+ (2013) and of Turney+ (2011), who focused on
-  classifying SVO and AN relations, respectively
+* we compare our method to that of Tsvetkov+ (2013) and of Turney+ (2011)
+  * Tsvetkov+ and Turney+ focused on classifying SVO and AN relations, resp
   * SVO: Our approach is different from that of Tsvetkov+ (2013)
-    * additional features (vector space word representations) and a
+    * additional features (vector space word representations)
     * different classification method (we use random forests while
       Tsvetkov+ (2013) use logistic regression)
   * AN: Turney+ (2011) train logistic-regression employing
@@ -247,7 +246,7 @@ diaper `pelenka`
   * starts from a set of seed metaphors and seeks phrases where verbs and/or
     nouns belong to the same cluster as verbs or nouns in seed examples
 * Turney+ (2011)
-  * abstractness scores ... used to detect metaphorical AN phrases
+  * abstractness scores used to detect metaphorical AN phrases
 * Neuman+ (2013) describe a Concrete Category Overlap algorithm, where
   co-occurrence statistics and Turney’s abstractness scores are used to
   determine WordNet supersenses that correspond to literal usage of a given
@@ -262,7 +261,7 @@ diaper `pelenka`
   * four languages: English, Spanish, Farsi, and Russian
 * Hovy+ (2013)
   * tree kernels [and] WordNet supersenses
-  * not ... restricted to detection of only SVO and AN
+  * not restricted to detection of only SVO and AN
 * Tsvetkov+ (2013)
 * WSD
   * most cross-lingual WSD methods employ parallel corpora (Navigli, 2009)

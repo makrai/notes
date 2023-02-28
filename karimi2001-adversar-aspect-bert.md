@@ -20,8 +20,8 @@ https://github.com/IMPLabUniPr/Adversarial-Training-for-ABSA.  Published in:
 # I. Introduction
 
 * Aspect-Based Sentiment Analysis (ABSA) is a branch of sentiment analysis which
-  * Traditional machine learning methods such as Support Vector Machines (SVM)
-    [3], Naive Bayes [4], Decision Trees [5], Maximum Entropy [6] have long been
+  * Traditional machine learning methods eg Support Vector Machines (SVM) [3],
+    Naive Bayes [4], Decision Trees [5], Maximum Entropy [6]
   * deep learning methods such as
     * Convolutional Neural Nets (CNNs) [7], [8], [9],
     * Recurrent Neural Networks (RNNs) [10], [11], [12], and the
