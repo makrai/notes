@@ -1,4 +1,4 @@
-It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners 
+It’s Not Just Size That Matters: Small LMs Are Also Few-Shot Learners 
 Timo Schick, Hinrich Schütze
 NAACL 2021
 

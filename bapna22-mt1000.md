@@ -1,5 +1,8 @@
 Building Machine Translation Systems for the Next Thousand Languages
-A Bapna, I Caswell, J Kreutzer, O Firat, D van, E Aditya, S Mengmeng+
+A Bapna, I Caswell, J Kreutzer, O Firat, D van Esch, A Siddhant, M Niu,
+  P Baljekar, X Garcia, W Macherey, T Breiner, V Axelrod, J Riesa, Y Cao,
+  M Xu Chen, K Macherey, M Krikun, P Wang, A Gutkin, A Shah, Y Huang, Z Chen,
+  Y Wu, M Hughes
 arXiv:2205.03983 [cs.CL] Google Research (2022)
 
 # Abstract
