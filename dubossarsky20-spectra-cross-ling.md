@@ -1,5 +1,5 @@
-The Secret is in the Spectra: Predicting Cross-lingual Task Performance
-  with Spectral Similarity Measures
+The Secret is in the Spectra:
+  Predicting Cross-lingual Task Performance with Spectral Similarity Measures
 Haim Dubossarsky, Ivan Vulić, Roi Reichart, Anna Korhonen
 EMNLP 2020
 
@@ -73,8 +73,8 @@ EMNLP 2020
   * methods to quantify the degree of isomorphism were proposed
     * significantly correlate with BLI scores
       (Zhang+ 2017; Søgaard+ 2018; Patra+ 2019)
-  * we report much higher correlations with BLI scores than existing
-    isomorphism measures, across a variety of SOTA BLI approaches
+  * we report much higher correlations with BLI scores than
+    existing isomorphism measures, across a variety of SOTA BLI approaches
   * previous work was limited only to coarse-grained analysis with a small
     number of language pairs (ie, < 10), our study is the first large-scale
   * hundreds of diverse language pairs, focusing on
@@ -135,8 +135,7 @@ EMNLP 2020
   * source localization for acoustic (Tourbabin and Rafaely, 2015) and seismic
     (Leeuwenburgh and Arts, 2014) waves,
   * video compression (Bhaskaranand and Gibson, 2010), and for the
-  * evaluation of implicit regularization in neural matrix factorization
-    (Arora+ 2019)
+  * evaluation of implicit regularization in neural matrix factor (Arora+ 2019)
   * We use it to inform and improve the estimation of the condition number
 
 ### Effective Condition Number
@@ -152,16 +151,16 @@ EMNLP 2020
 * We combine the two condition numbers using the harmonic mean function (HM)
   to derive an isomorphism measure COND-HM between two embedding spaces,
 * similarly define the
-  [effective] ECOND-HM measure over `κ_ecn` (X 1) and `κ_ecn` (X 2)
+  [effective] ECOND-HM measure over `κ_ecn(X 1)` and `κ_ecn(X 2)`
 * we have empirically validated (§5) that HM is a robust choice that
   outperforms some other possibilities (eg, the arithmetic mean)
 * this may be because HM leans towards the smaller one (unlike arithm)
-  * a noisy embedding space and a stable one would have an HM that leans
-    towards the stable one
-  * embedding spaces with small condition numbers can often tolerate noisy
-    mappings from embedding spaces with high condition numbers
+  * a noisy embedding space and a stable one would have an HM that
+    leans towards the stable one
+  * embedding spaces with small condition numbers can often tolerate
+    noisy mappings from embedding spaces with high condition numbers
 
-### Singular Value Gap
+### Singular Value Gap (SVG)
 
 * In addition to COND HM and ECOND HM, we introduce another measure
 * empirically quantifies the divergence
@@ -199,8 +198,8 @@ EMNLP 2020
   * not evaluated in large-scale experiments before
   * correlations were computed on a very small number of language pairs
     (IS: 8 pairs, GH: 10 pairs)
-  * neither scale well computationally. Therefore
-    * the scores are computed only on the sub-matrices
+  * neither scale well computationally
+    * => the scores are computed only on the sub-matrices
       spanning the sub-spaces of the most frequent subsets from the full embed
       (IS: 10k words, GH: 5k words)
    * we provide full-fledged empirical analyses of the two measures
@@ -212,6 +211,21 @@ EMNLP 2020
 ## Measuring Language Similarity
 
 # 4 Experimental Setup 5
+
+## 4.3 Correlation Analyses and Statistical Tests
+
+### Regression Analyses
+
+* The individual (ie, single-variable) analyses are not sufficient to account
+  for the complex interdependencies between the distance measures themselves,
+  and how they interact with task performance when combined
+* => Therefore, we also use standard linear stepwise regression model
+  (Hocking, 1976; Draper and Smith, 1998)
+  * regressors are added to the model incrementally
+    only if their marginal addition to predicting Y is stat signif (p < .01)
+  * useful for finding variables (ie, in our case distance measures) with
+    maximal and unique contribution to the explanation of Y,
+    when the variables themselves are strongly cross-correlated, as in our case
 
 # 5 Analyses and Results
 
@@ -240,8 +254,8 @@ EMNLP 2020
   * ie conceptually different distances capture diff properties of lang sim
     => synergistic effect
 * individual tasks, we note that
-  * our spectral-based measures outperform the baselines regardless of the
-    underlying BLI method
+  * our spectral-based measures outperform the baselines
+    regardless of the underlying BLI method
   * SVG is the most informative distance measure in parsing experiments, and
     all linguistic distances fall behind isomorphism measures
   * Combining linguistic distances with SVG increases the already high
@@ -281,7 +295,7 @@ EMNLP 2020
 * we are the first to compare language distance measures that are based on
   discrete linguistic information (Littell+ 2017) with measures of isomorphism
 * further research will advance our understanding of:
-  * what knowledge is captured in monolingual and cross-lingual embedding spacs
+  * what knowledge is captured in monolingual and cross-lingual embed spaces
     (Gerz+ 2018; Pires+ 2019; Artetxe+ 2020)
   * how that knowledge complements or overlaps with linguistic knowledge
     in lexical-semantic and typological databases

@@ -21,11 +21,11 @@ Journal of ML Research 22(165):1−73, 2021
     most notably its extension to Universality classes of Heavy-Tailed mxs
   * phases corresponding to increasing amounts of Implicit Self-Regularization
   * during the training process as well as in the final learned DNNs
-  * For smaller and/or older DNNs, this Implicit Self-Regularization is like
-    traditional Tikhonov regularization, in that
+  * For smaller and/or older DNNs, this Implicit Self-Regularization is
+    like traditional Tikhonov regularization, in that
     there is a “size scale” separating signal from noise
-  * For SOTA DNNs, however, we identify a novel form of
-    Heavy-Tailed Self-Regularization,
+  * For SOTA DNNs, however, we identify
+    a novel form of Heavy-Tailed Self-Regularization,
     similar to the self-organization seen in the statistical physics of
     disordered systems (such as classical models of actual neural activity)
     * results from correlations arising at all size scales, which for DNNs
@@ -57,8 +57,9 @@ Journal of ML Research 22(165):1−73, 2021
     (Seung+ 1992; Watkin+ 1993; Haussler+ 1996; Engel and den Broeck, 2001),
     * fell out of favor in the ML/NN communities for technical and non-tech rea
   * VC theory and related techniques continued to remain popular, in spite of
-    their obvious problems.  See Appendix A.1 for additional motivation
-* from the Appendix
+    their obvious problems
+* additional motivation in Appendix A.1
+  * the Spin Glass analogy
     * Choromanska+ (2014) suggested that
       the Energy/optimization Landscape of modern DNNs resembles the Energy
       Landscape of a zero-temperature Gaussian Spin Glass; and empirical result
@@ -98,7 +99,7 @@ Journal of ML Research 22(165):1−73, 2021
   * Practical: How can one control and adjust, in a theoretically-principled
     way, the many knobs and switches that exist in modern DNN systems,
     eg to train these models efficiently and effectively,
-    to monitor their effects on the global Energy Landscape, etc.?
+    to monitor their effects on the global Energy Landscape, etc?
 * eg provide metrics to characterize qualitatively different classes of
   learning behaviors, as predicted in recent work (Martin and Mahoney, 2017)
 
@@ -124,8 +125,8 @@ Journal of ML Research 22(165):1−73, 2021
 
 ### Main Empirical Results
 
-* evaluating empirically the ESDs (and related RMT-based statistics) for weight
-  matrices for a suite of DNN models, thereby probing the Energy Landscapes
+* evaluating empirically the ESDs (and related RMT-based statistics) for
+  weight mxs for a suite of DNN models, thereby probing the Energy Landscapes
   * For older and/or smaller models, these results are
     consistent with implicit Self-Regularization that is Tikhonov-like; and
   * for modern SOTA models, these results suggest
@@ -149,8 +150,9 @@ Journal of ML Research 22(165):1−73, 2021
   * models including AlexNet and Inception and
     nearly every other large-scale model we have examined
   * deviate strongly from the common Gaussian-based MP model
-    * in one of the very different Universality classes of Heavy-Tailed
-      random matrix models. We call this Heavy-Tailed Self-Regularization
+    * in one of the very different Universality classes of
+      Heavy-Tailed random matrix models
+    * We call this Heavy-Tailed Self-Regularization
     * the MP Soft Rank vanishes, and the Stable Rank decreases, but
       the full Hard Rank is still retained
     * The ESD fully (or partially) Heavy-Tailed, but with finite support
@@ -168,8 +170,8 @@ Journal of ML Research 22(165):1−73, 2021
   * proved theorems (Dereziński+ 2019; Liao+ 2020; Theisen+ 2020;
     Hodgkinson and Mahoney, 2020; Lim+ 2021)
   * solved much more practical problems on SOTA DNNs, including:
-    * “predicting trends in the quality of SOTA neural networks without access
-      to training or testing data” (Martin+ 2020, 2021)
+    * “predicting trends in the quality of SOTA neural networks
+      without access to training or testing data” (Martin+ 2020, 2021)
     * a post-mortem on a deep learning contest (Jiang+ 2020a,b),
       * identifying a Simpson’s paradox, and
       * interpreting the results in terms of the complementary roles of

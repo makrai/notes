@@ -19,11 +19,11 @@ https://github.com/viking-sudo-rm/norm-growth
   * Such "saturated" networks are known to have a reduced capacity
     compared to the full network family
     * can be described in terms of formal languages and automata
-  * suggest:
+  * we suggest:
     saturation is a new characterization of an inductive bias implicit in GD
     * of particular interest for NLP
-* We leverage the emergent discrete structure in a saturated transformer to
-  analyze the role of different attention heads, finding that
+* We leverage the emergent discrete structure in a saturated transformer
+  to analyze the role of different attention heads, finding that
   * some heads focus locally on a small number of positions, while
   * other heads compute global averages, allowing counting
 * We believe understanding the interplay between these two capabilities may
@@ -55,11 +55,11 @@ https://github.com/viking-sudo-rm/norm-growth
     approaches a saturated network (Merrill+ 2020)
     * a restricted network variant whose discretized reprs are understandable
       in terms of formal langs & automata
-  * Empirically, we find that internal representations of pretrained
-    transformers approximate their saturated counterparts, but for randomly
-    initialized transformers, they do not
-    * suggests that the norm growth implicit in training guides transformers to
-      approximate saturated networks =>
+  * Empirically, we find that internal representations of transformers 
+    * pretrained: approximate their saturated counterparts, but for
+    * randomly initialized: do not
+    * suggests that the norm growth implicit in training
+      guides transformers to approximate saturated networks =>
     * studying saturated networks (Merrill, 2019) is a way to analyze the ling
       biases of NLP architectures and the structure of their representations
 * saturation permits two useful types of attention heads within a transformer:
@@ -67,14 +67,13 @@ https://github.com/viking-sudo-rm/norm-growth
   * one that locally targets a small number of positions, and
   * one that attends uniformly over the full sequence,
     enabling an “average” operation
-* Empirically, we find that both of these head types emerge in trained
-  transformer language models
+* Empirically, we: both of these head types emerge in trained transformer LMs
   * These capabilities
-    reveal how the transformer can process various formal languages, and could
-    also suggest how it might represent the structure of natural language
-* Combined, our theoretical and empirical results shed light on the linguistic
-  inductive biases imbued in the transformer architecture by GD, and could
-  serve as a tool to analyze, visualize, and improve transformers
+    reveal how the transformer can process various formal languages, and
+    * could suggest how it might represent the structure of natural language
+* Combined, our theoretical and empirical results shed light on the
+  ling inductive biases imbued in the transformer architecture by GD, and
+  could serve as a tool to analyze, visualize, and improve transformers
 * we discuss potential causes of norm growth in §5
   * We prove transformers are approximately homogeneous (Ji & Telgarsky, 2020)
     * a property that has been extensively studied in deep learning theory
@@ -95,29 +94,28 @@ https://github.com/viking-sudo-rm/norm-growth
       * cases where all parameter norms diverge during GD
   * Similar ideas have emerged in recent works studying feedforward networks
     * biasless ReLU networks with cross-entropy loss, Poggio+ (2019, 2020) show
-    * the magnitude (l 2 norm) of the parameter vector continues to grow during
-      GD, while its direction converges
-  * Li and Arora (2019) present a similar argument for scale-invariant
-    networks, meaning that scaling the parameters by a constant does not change
-    the output
-  * homogeneous networks, Ji and Telgarsky (2020) show that the gradients
-    become aligned as t → ∞ ie their direction converges to the parameter
-    direction. This means
+    * the magnitude (l 2 norm) of the parameter vector
+      continues to grow during GD, while its direction converges
+  * Li and Arora (2019) present
+    a similar argument for scale-invariant networks, meaning that
+    scaling the parameters by a constant does not change the output
+  * homogeneous networks: gradients become aligned as t → ∞ (Ji & Telgarsky 20)
+    ie their direction converges to the parameter direction
   * the norm will grow monotonically with t
-  * these suggests that GD follows a norm-increasing trajectory along which
-    network behavior stabilizes. These analyses motivate investigation of this
-    trajectory-driven perspective of training
+  * these suggests that GD follows a norm-increasing trajectory
+    along which network behavior stabilizes. These analyses
+    motivate investigation of this trajectory-driven perspective of training
 * statistical perspective
   * the implications of these training dynamics for margin maximization
     (Poggio+ 2019; Nacson+ 2019; Lyu and Li, 2019)
-  * works vary in the networks they consider and their assumptions, they
-  * conclusions: GD follows trajectories diverging in the direction of a
-    max-margin solution
-    * As margin maximization produces a simple decision boundary, this property
-      suggests better generalization than an arbitrary solution with low
-      training loss
-    * This point of view partially explains why growing norm is associated with
-      better generalization performance
+  * works vary in the networks they consider and their assumptions
+  * conclusions: GD follows
+    trajectories diverging in the direction of a max-margin solution
+    * As margin maximization produces a simple decision boundary,
+      this property suggests
+      better generalization than an arbitrary solution with low training loss
+    * This point of view partially explains
+      why growing norm is associated with better generalization performance
 
 ## 2.2 NLP and Formal Language Theory
 
