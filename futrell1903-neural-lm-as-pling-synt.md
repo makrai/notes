@@ -18,7 +18,7 @@ experimental items, results, and analysis scripts available online at
       * calculates Penn Treebank-style context-free syntactic reprs in LM
       * found to outperform LSTMs in
         * overall test-set perplexity (Dyer+ 2016), but also in
-        * modeling long-distance number agreement in Kuncoro+ (2018)
+        * modeling long-distance number agreement (Kuncoro+ 2018)
     * LSTM trained on the same small corpus as the RNNG
 * We find evidence that the LSTMs trained on
   * large datasets represent syntactic state over large spans of text\
