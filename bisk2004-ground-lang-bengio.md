@@ -1,7 +1,7 @@
 Experience Grounds Language
 Y Bisk, A Holtzman, J Thomason, J Andreas, Y Bengio, J Chai, M Lapata,
   A Lazaridou, J May, A Nisnevich, N Pinto, J Turian
-arXiv:2004.10151 [cs.CL]
+arXiv:2004.10151 cs.CL
 
 * representational theories, modeling techniques, data collection paradigms,
   and tasks
@@ -16,7 +16,7 @@ arXiv:2004.10151 [cs.CL]
 * visual, physical, and social commonsense
 * LMs
   * are tested in terms of Indep and Identically Distr held-out sets,
-  * [should be] queried on points meant to probe the granularity of the distinc
+  * should be queried on points meant to probe the granularity of the distinc
     (Kaushik+ 2020; Gardner+ 2020)
 * We posit that the universes of knowledge and experience available to NLP
   models can be defined by successively larger world scopes:
@@ -30,7 +30,7 @@ arXiv:2004.10151 [cs.CL]
 
 * Penn Treebank (Marcus+ 1993) is the canonical example of a
   * sterilized subset of naturally generated language, processed and annotated
-* conceptual word representations [Yet fuzzy] have a long history that predates
+* conceptual word representations Yet fuzzy have a long history that predates
   * Philosophy (Lakoff, 1973) and linguistics (Coleman and Kay, 1981)
   * information about word meanings in and out of context (Bengio+ 2003;
     Collobert and Weston, 2008; Turian+ 2010; Mikolov+ 2013; McCann+ 2017)
@@ -41,7 +41,7 @@ arXiv:2004.10151 [cs.CL]
     * generative approach, Latent Dirichlet Allocation (Blei+ 2003)
   * Latent Semantic Indexing/Analysis (Deerwester+ 1988, 1990; Dumais, 2004),
 * connectionism (Pollack, 1987; James and Miikkulainen, 1995):
-* tension [between] symbols and distributed representations (Smolensky 1990)
+* tension between symbols and distributed representations (Smolensky 1990)
   * alternative representations (Kohonen, 1984; Hinton+ 1986; Barlow, 1989) and
   * composition (Erk and Padó, 2008; Socher+ 2012) span decades of research
 * An important parallel discussion centers on the hardware
@@ -53,11 +53,11 @@ arXiv:2004.10151 [cs.CL]
 * (whether mono~ or multilingual) has led to substantial advances
 * benchmarks (Wang+ 2019a)
 * transfer learning enabled by representations in deep models
-  * Traditionally, transfer learning relied on [classes i.e. symbols]
-  * Embeddings [encompass multiple] lexical senses,
+  * Traditionally, transfer learning relied on classes ie symbols
+  * Embeddings encompass multiple lexical senses,
     violating this structural assumption
-* [saturation] in terms of data and parameters
-* [Mikolov and contextual embeddings] have expanded the notion of
+* saturation in terms of data and parameters
+* Mikolov and contextual embeddings have expanded the notion of
   local context to include multiple sentences
 * language modeling—the modern workhorse of neural NLP systems
   * leader boards results make claims to super-human accuracy (Rajpurkar+ 2018)
@@ -88,7 +88,7 @@ arXiv:2004.10151 [cs.CL]
 * auditory input is necessary for understanding sarcasm, stress, and prosody
 * tactile senses give meaning, both physical (Sinapov+ 2014; Thomason+ 2016)
   and abstract, to concepts like heavy and soft
-* Visual perception is [necessary] (Harnad, 1990)
+* Visual perception is necessary (Harnad, 1990)
 * frames and scripts
   (Schank and Abelson, 1977; Charniak, 1977; Dejong, 1981; Mooney and Dejong,
   1985)
@@ -137,7 +137,7 @@ arXiv:2004.10151 [cs.CL]
     * allow for pixel level masks and skeletal modeling,
   * zero-shot settings targeting all 20,000 ImageNet categories (Chao+ 2016;
     Changpinyo+ 2017). Modern architectures are flexible enough to learn to
-  * general[ize to] class, such as face. For example, facial recognition
+  * generalize to class, such as face. For example, facial recognition
 * combination of language and vision supervision leads to clear and coherent tx
   * attention can translate parts of an image to words, indicates
   * they truly are learning about language
@@ -155,7 +155,7 @@ arXiv:2004.10151 [cs.CL]
   actively learning about the world
   * Queries can be resolved via dialog-based exploration (Liu and Chai, 2015),
 * e.g. Is an orange more like a baseball or a banana?
-  * WS1 [just] that the objects are common nouns that can both be held
+  * WS1 just that the objects are common nouns that can both be held
   * WS2 may also capture that oranges and baseballs both roll, but is
     * unlikely to capture the deformation strength, surface texture, or sizes
       (Elazar+ 2019)
@@ -171,7 +171,7 @@ arXiv:2004.10151 [cs.CL]
   * most basic scripts humans learn: moving our own bodies and stacking block
 * unlimited supervision from the environment and can learn to
 * generalize across plans and actions
-* [complex concepts even in] block worlds (Bisk+ 2018) where concepts like
+* complex concepts even in block worlds (Bisk+ 2018) where concepts like
 * pre-linguistic category formation within children (Hespos and Spelke 2004)
   * later codified by social constructs
   * children have trouble transferring knowledge from the 2D world of books
@@ -199,7 +199,7 @@ arXiv:2004.10151 [cs.CL]
 * in service of real-world cooperation is the prototypical use of language, and
 * Smoke and mirrors cleverness, in which
   situations are framed to the advantage of the model, can create the
-  [illusion] of genuine content where there is none. This phenomenon has been
+  illusion of genuine content where there is none. This phenomenon has been
   noted countless times, from Pierce (1969) to Marcus and Davis (2019) which
 * Interpersonal dialogue is a grand test for AI (Norvig and Russel, 2002), but
   * few to no examples of artificial agents one could imagine socializing
@@ -209,14 +209,14 @@ arXiv:2004.10151 [cs.CL]
 
 ## Language that Does Something
 
-* philosophy of language has long suggested that function is the
+* philosophy of language has long suggested that function is the source
   * Wittgenstein’s “language games” (Wittgenstein, 1953, 1958) and
-  * J.L.  Austin’s “performative speech acts” (Austin, 1975). That
+  * J.L.  Austin’s “performative speech acts” (Austin, 1975)
   * function is the source of meaning was echoed in linguistics
   * usage-based theory of language acquisition, which suggests that
   * useful constructions are the building blocks for everything else
-    (Langacker, 1987, 1991). In recent years, this theory has begun to shed
-  * origins [of language] in our species (Tomasello, 2009; Barsalou, 2008)
+    (Langacker, 1987, 1991)
+  * origins of language in our species (Tomasello, 2009; Barsalou, 2008)
 * what one says can change what people do
   * the ultimate goal for natural language generation
 * current, passive way of generation and its evaluation (Liu+ 2016)
@@ -237,11 +237,11 @@ arXiv:2004.10151 [cs.CL]
 
 ## Theory of Mind
 
-* people['s] desires and identities, knowledge
+* people's desires and identities, knowledge
 * Premack and Woodruff (1978) began to formalize how much the ability to
 * aka. “Speaker-Listener” model (Stephens+ 2010), and a rich theory to describe
   comp: Rational Speech Act Model (Frank and Goodman, 2012; Bergen+ 2016)
-* [competitions] (Nematzadeh+ 2018; Sap+ 2019) have been introduced. Using
+* competitions (Nematzadeh+ 2018; Sap+ 2019) have been introduced. Using
   * problem: spurious patterns (Le+ 2019). Despite
   * increased scores on datasets due to larger models and more complex
     pretraining curricula, it seems
@@ -249,7 +249,7 @@ arXiv:2004.10151 [cs.CL]
     understand the physical world in which they exist. This disconnect is
   * studies of bias (Gururangan+ 2018; Glockner+ 2018) and techniques like
   * Adversarial Filtering (Zellers+ 2018, 2019b), which elucidate the biases
-* training data [should] offer the discriminatory signals that make the
+* training data should offer the discriminatory signals that make the
   hypothesizing of consistent identity or mental states an efficient path
   * lack of inductive bias (Martin+ 2018)
     * arrange narratives along an abstract single-dimension = time, and cau
@@ -264,25 +264,24 @@ arXiv:2004.10151 [cs.CL]
 ## Language in a Social Context
 
 * status, role, intention, and countless other variables (Wardhaugh, 2011)
-* overlooked by [crowd sourcing] (Zellers+ 2020)
+* overlooked by crowd sourcing (Zellers+ 2020)
 * social cognition (Fiske and Taylor, 1991; Carpenter+ 1998) present in the
   style of utterances and in the social script of the exchange
-* evaluation [ require ] situations where artificial agents ...  have enough
+* evaluation  require  situations where artificial agents ...  have enough
   identity to be granted social standing for these interactions
-* Social interaction [signal in NLP]: persuasion related tasks where
+* Social interaction signal in NLP: persuasion related tasks where
   * interpersonal relationships are key (Wang+ 2019c; Tan+ 2016). These initial
-  * strained [beszűkíti] by the training-validation-test set scenario, as
+  * strained beszűkíti by the training-validation-test set scenario, as
 * Learning by participation
   * exhibiting different attributes and sending varying signals, the
     sociolinguistic construction of identity (Ochs, 1993) could be examined
     more deeply than ever before, yielding an understanding of social
-    intelligence that simply isn’t possible with a fixed corpus. This social
-  * the foundation upon which language situates (Tomasello, 2009).  Under-
-    standing this social layer is not only necessary, but will make clear
-  * complexities around implicature and commonsense that so obviously arise in
-    corpora, but with such sparsity that they cannot properly be learned
-    (Gordon+ 2018)
-  * Once models are commonly expected to be interacted with in [ test],
+    intelligence that simply isn’t possible with a fixed corpus
+  * the foundation upon which language situates (Tomasello, 2009)
+  * complexities around implicature and commonsense that
+    so obviously arise in corpora, but with
+    such sparsity that they cannot properly be learned (Gordon+ 2018)
+  * Once models are commonly expected to be interacted with in  test,
     probing their decision boundaries for simplifications of reality as in
     Kaushik+ will become trivial and natural
     * Divyansh Kaushik, Eduard Hovy, and Zachary Lipton.  ICLR 2020
@@ -317,7 +316,7 @@ arXiv:2004.10151 [cs.CL]
   aligns to perceptual features of the environment
 * resources such as data, code, simulators and methodology for eval multimod
   (Silberer and Lapata, 2014; Bruni+ 2012)
-* we [encourage a broader] relationship between meaning and context. We
+* we encourage a broader relationship between meaning and context. We
 
 # Conclusions
 
@@ -334,5 +333,5 @@ arXiv:2004.10151 [cs.CL]
   * trends (Church, 2007),
   * maturation toward a science (Steedman, 2008), and
   * major challenges (Hirschberg and Manning, 2015; McClelland+ 2019),
-  * [they and] we provide momentum for a direction many are already heading
+  * they and we provide momentum for a direction many are already heading
 * What tasks, representations, and inductive-biases will fill the gaps?
