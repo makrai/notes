@@ -175,8 +175,7 @@ code to reproduce: https://github.com/uds-lsv/bert-stable-fine-tuning
 ### Failed runs
 
 * Following Dodge+ (2020), we refer to a fine-tuning run as a failed run
-  if its accuracy at the end of training is
-  less or equal to that of a majority classifier on the respective dataset
+  if its accuracy at the end of training is =< that of a majority classifier
 * The majority baselines for all tasks are found in Section 7.2 in the Appendix
 
 # 4 Investigating previous hypotheses for fine-tuning instability 3
