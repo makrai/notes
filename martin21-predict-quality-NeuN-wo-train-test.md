@@ -25,7 +25,7 @@ https://github.com/CalculatedContent/ww-trends-2020
 * These methods can be used to identify when a pretrained neural network has
   problems that cannot be detected simply by examining training/test accuracies
 
-# [Intro] A common problem in machine learning (ML) is to evaluate the quality
+# [Intro] A common problem in machine learning (ML) is evaluation
 
 * training/testing curves give very limited insight into the overall properties
   * not take into account the time for hyperparameter fiddling
@@ -205,7 +205,7 @@ https://github.com/CalculatedContent/ww-trends-2020
     * identify problems that
       cannot be detected by examining training/test accuracies, and
     * discriminate poorly trained models from well-trained models
-* determine α for a given layer by fitting the ESD of that layer’s weight matrix
+* determine α for a given layer by fitting the ESD of that layer’s weight mx
   to a truncated PL, using the commonly accepted Maximum Likelihood method
   * This method works very well for exponents between α ∈ (2, 4)
   * adequate, although imprecise, for smaller and especially larger α 18
@@ -282,8 +282,7 @@ https://github.com/CalculatedContent/ww-trends-2020
   confirm this
 * The OpenAI GPT and GPT2 series of models
   * provide the opportunity to analyze two effects:
-    * increasing the sizes of both the data set and the architectures
-      simultaneously; and
+    * increasing the sizes of both the data set and the architectures simult
     * training the same model with low-quality data versus high-quality data
   * can generate fake text that appears to the human to be real
   * media attention because of the potential for their misuse
@@ -303,8 +302,8 @@ https://github.com/CalculatedContent/ww-trends-2020
   * The GPT models we analyze are deployed with the HuggingFace PyTorch library
 * We examine the performance of the four quality metrics
   (Log Frobenius norm, Log Spectral norm, Weighted Alpha, and Log α-Norm) for
-  the OpenAI GPT and GPT2 pretrained models. See Table 2 for a summ of results
-  * Comparing trends between GPT2-medium to GPT2-large to GPT2-xl, observe that
+  the OpenAI GPT and GPT2 pretrained models.  Table 2: a summary of results
+  * Comparing trends between GPT2-medium to GPT2-large to GPT2-xl,
     (with one minor exception involving the log Frobenius norm metric)
     all four metrics decrease as one goes from medium to large to xl
   * ie the larger models indeed look better than the smaller models, as expectd
@@ -326,9 +325,9 @@ https://github.com/CalculatedContent/ww-trends-2020
     * α and λ max, and examining the distributions of each
     * => we see additional examples of Scale Collapse and
       additional evidence for Correlation Flow
-* We next examine the Spectral norm in GPT versus GPT2-small. In Fig. 6a,
-  * the poorly-trained GPT model has a smaller mean/median Spectral norm as
-    well as, spuriously, many much smaller Spectral norms
+* We next examine the Spectral norm in GPT versus GPT2-small. Fig. 6a
+  * the poorly-trained GPT model has a smaller mean/median Spectral norm
+    as well as, spuriously, many much smaller Spectral norms
   * violates the conventional wisdom that smaller Spectral norms are better
   * Because there are so many anomalously small Spectral norms, the
     GPT model appears to be exhibiting a kind of Scale Collapse,
