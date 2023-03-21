@@ -60,7 +60,7 @@ ACL 2020 Best Theme Paper
 * summary
   * evidence that large LMs can learn aspects of linguistic formal structure
   * apparent ability to “reason” is sometimes a mirage built on leveraging
-    artifacts in the training data (i.e. form, not meaning)
+    artifacts in the training data (ie form, not meaning)
 
 # 3 a working definition for “meaning”
 
@@ -182,9 +182,9 @@ ACL 2020 Best Theme Paper
   * English-learning infants can learn Mandarin phonemic distinctions from brief
     interactions with a Mandarin-speaking experimenter but not from exposure to
     Mandarin TV or radio (Kuhl 2007)
-* critical for language learning is not just interaction but joint attention
-  (Baldwin 1995), i.e. situations where the child and a caregiver are both
-  attending to the same thing and both aware of this fact
+* critical for language learning is not just interaction but
+  joint attention (Baldwin 1995), ie situations where the child and a caregiver
+  are both attending to the same thing and both aware of this fact
   * toddlers (observed at 15 and 21 months) whose caregivers “follow into” their
     attention and provide labels for the object of joint attention more have
     larger vocabularies (Tomasello and Farrar, 1986)
