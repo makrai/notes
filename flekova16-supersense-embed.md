@@ -1,5 +1,4 @@
-Supersense embeddings:
-  A unified model for supersense interpretation, prediction, and utilization
+Supersense embeddings: A unified model for ... interpret, predict, & utiliz
 L Flekova, I Gurevych
 ACL 2016
 
@@ -8,7 +7,7 @@ https://github.com/UKPLab/acl2016-supersense-embeddings
 # Abstract
 
 * Coarse-grained semantic categories such as supersenses
-  * useful for e.g. question answering or machine translation
+  * useful for eg question answering or machine translation
   * no distributional word representations
 * We present a novel joint embedding model of words and supersenses
   * words and supersenses in the same vector space
@@ -18,7 +17,7 @@ https://github.com/UKPLab/acl2016-supersense-embeddings
 
 # 1 Introduction
 
-* WSD see Navigli (2009) or Pal and Saha (2015) for an overview
+* WSD: see Navigli (2009) or Pal and Saha (2015) for an overview
 * Words are most commonly annotated with senses taken from WordNet
   * improvement in sentiment prediction using WSD (...Sumanth and Inkpen, 2015)
   * the publication bias toward positive results (Plank+ 2014)
@@ -27,9 +26,9 @@ https://github.com/UKPLab/acl2016-supersense-embeddings
         a negative result
       EMNLP 2014
 * supersenses
-  * coarse-grained word labels based on WordNet’s (Fellbaum, 1998)
-    * 26 labels for nouns, such as ANIMAL , PERSON or FEELING and
-    * 15 labels for verbs, such as COMMUNICATION , MOTION or COGNITION
+  * coarse-grained word labels based on WordNet (Fellbaum, 1998)
+    * 26 labels for nouns, such as ANIMAL, PERSON or FEELING and
+    * 15 labels for verbs, such as COMMUNICATION, MOTION or COGNITION
   * provide disambiguating information without the need of fine-grained WSD
   * shown to improve
     * dependency parsing (Agirre+ 2011)
@@ -116,7 +115,7 @@ https://github.com/UKPLab/acl2016-supersense-embeddings
 * most of the assigned words are verbs
 * The most frequent error originates from
   assigning the adverbs to their related verb categories,
-  e.g.  jokingly to COMMUNICATION and drastically to CHANGE
+  eg  jokingly to COMMUNICATION and drastically to CHANGE
 
 ## 4.2 Noun Supersenses
 
@@ -215,7 +214,7 @@ supervised systems, without using any explicit gazetteers
   * dataset of 5000 subjective and 5000 objective sentences
 * Kim (2014) and Wang and Manning (2013) further improve the performance
 * Supersenses are a natural candidate for subjectivity prediction, as we
-  * (e.g. VERB.FEELING vs. VERB.COGNITION)
+  * (eg VERB.FEELING vs. VERB.COGNITION)
   * Our sota? results are reported in Table 9
   * manual error analysis
     * verbs
@@ -255,8 +254,8 @@ supervised systems, without using any explicit gazetteers
 
 * future work
   * apply our method on smaller, gold-standard corpora
-    e.g. SemCor (Miller+ 1994) and STREUSLE (Schneider and Smith, 2015)
+    eg SemCor (Miller+ 1994) and STREUSLE (Schneider and Smith, 2015)
   * multilingual adaptation of the vector space,
-    * e.g. extending Faruqui and Dyer (acl 2014)
+    * eg extending Faruqui and Dyer (acl 2014)
       Improving vector space word representations using multilingual corr
     * supersenses was shown to be preserved in translation (Schneider+ 2013)
