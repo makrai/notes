@@ -1,11 +1,10 @@
-{Samuel R. Bowman, Luke Vilnis}, Oriol Vinyals, Andrew M. Dai, Rafal
-  Jozefowicz, and Samy Bengio
+Samuel R Bowman, Luke Vilnis, Oriol Vinyals, AM Dai, R Jozefowicz, Samy Bengio
 Generating Sentences from a Continuous Space
 CoNLL 2016
 
 # Abstract
 
-* rnn-based variational autoencoder generative model that
+* RNN-based variational autoencoder generative model that
   * incorporates distributed latent representations of entire sentences
   * explicitly model holistic properties of sentences such as
     style, topic, and high-level syntactic features
@@ -18,26 +17,26 @@ CoNLL 2016
 
 * Recurrent neural network language models (rnnlms, Mikolov+ 2011)
   * the SOTA in unsupervised generative modeling
-  * In supervised settings, rnnlm decoders conditioned on task-specific
-    features are the SOTA in tasks
-    * like machine translation (Sutskever+ 2014; Bahdanau+ 2015)
+  * rnnlm decoders conditioned on task-specific features are
+    the SOTA in supervised tasks eg
+    * machine translation (Sutskever+ 2014; Bahdanau+ 2015)
     * image captioning (Vinyals+ 2015; Mao+ 2015; Donahue+ 2015)
 * a probabilistic model with no significant independence assumptions
-* does not expose global features like topic or of high-level syntactic
-  properties
+* does not expose global features like topic or high-level syntactic properties
 * variational autoencoder
   * inspiration from recent successes in modeling
-    * images (Gregor+ 2015), handwriting, and
+    * images (Gregor+ 2015),
+    * handwriting, and
     * natural speech (Chung+ 2015)
   * variational inference (Kingma and Welling, 2015; Rezende+ 2014)
 * task
   * on a standard language modeling evaluation similar performance to
     existing rnnlms.  We also evaluate our model using a larger corpus
-  * imputing missing words. For this task, we introduce a
-    * novel evaluation strategy using anadversarial classifier,
+  * imputing missing words
+    * we introduce a novel evaluation strategy using an adversarial classifier,
       * sidestepping the issue of intractable likelihood computations by
-        inspiration from work on non-parametric two-sample tests and adversarial
-        training
+        inspiration from work on non-parametric two-sample tests and
+        adversarial training
 * qualitative techniques for analyzing the ability to learn high level sent feat
   * produce diverse, coherent sentences through purely deterministic decoding
   * interpolate smoothly between sentences
