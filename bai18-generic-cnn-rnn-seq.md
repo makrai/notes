@@ -135,9 +135,9 @@ http://github.com/locuslab/TCN
 * advantages of using TCNs for sequence modeling
   * Parallelism. Unlike in RNNs..., convolutions can be done in parallel
   * Flexible receptive field size
-  * Stable gradients. TCN avoids exploding/vanishing gradients,
-    (which led to the development of LSTM, GRU,
-    HF-RNN (Martens & Sutskever, 2011, Hessian-Free optimizer))
+  * Stable gradients: no exploding/vanishing gradients
+    (which led to the development of LSTM, GRU, &
+    Hessian-Free RNN (HF-RNN ,Martens & Sutskever, 2011)
   * Low memory requirement for training
   * Variable length inputs
 * disadvantages to using TCNs

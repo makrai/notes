@@ -85,8 +85,8 @@ EVEREST: Learning high-level representations of sparse tensors
       10. S. Kok and P. Domingos
         Statistical predicate invention
         ICML 2007
-    * [24] used a non-parametric Bayesian clustering of entities embedding in a
-      collective matrix factorization formulation
+    * Sutskever+ (2009) used a non-parametric Bayesian clustering of entities
+      embedding in a collective matrix factorization formulation
       24. I. Sutskever, R. Salakhutdinov, and J. Tenenbaum
         Modelling relational data using bayesian clustered tensor factorization
         NIPS 2009
@@ -101,10 +101,7 @@ EVEREST: Learning high-level representations of sparse tensors
 
 # 4 Model description
 
-* This is the initial model considered in (Sutskever+ 2009)
-  24. Sutskever, R. Salakhutdinov, and J. Tenenbaum
-      Modelling relational data using bayesian clustered tensor factorization
-      2009 NIPS
+* This is the initial model considered in Sutskever+ (2009)
 * matches the model considered in (Nickel+ 12) if
   the least-square loss is substituted to the logistic loss
   * [16] M. Nickel, V. Tresp, and H.-P. Kriegel

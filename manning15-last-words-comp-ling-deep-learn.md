@@ -1,5 +1,5 @@
-Christopher D. Manning
 Last Words.  Computational Linguistics and Deep Learning
+Christopher D. Manning
 2015
 
 # 1. The Deep Learning Tsunami
@@ -48,13 +48,11 @@ Last Words.  Computational Linguistics and Deep Learning
   * The researcher defines a model architecture and a top-level loss function
   * parameters and the representations of the model self-organize so as to
     minimize this loss, in an end-to-end learning framework
-  * We are starting to see the power of such deep systems in
-    * recent work in neural machine translation
-      * Sutskever, Vinyals, and Le 2014;
-      * Luong+ 2015
-        MT Luong, I Sutskever, Quoc V Le, Oriol Vinyals, and Wojciech Zaremba.
-        Addressing the rare word problem in neural machine translation
-        2015
+  * We are starting to see the power of such deep systems in MT
+    * Sutskever, Vinyals, and Le 2014;
+    * Luong+ 2015
+      MT Luong, I Sutskever, Quoc V Le, Oriol Vinyals, and Wojciech Zaremba.
+      Addressing the rare word problem in neural machine translation
 * compositionality in models,
 
 # 5. Scientific Questions That Connect CL and Deep Learning
