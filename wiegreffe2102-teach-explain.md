@@ -1,4 +1,4 @@
-Teach Me to Explain: A Review of Datasets for Explainable Natural Language Processing
+Teach Me to Explain: A Review of Datasets for Explainable NLP
 Sarah Wiegreffe, Ana Marasović
 NeurIPS 2021 arXiv:2102.12060 [cs.CL]
 
@@ -124,9 +124,9 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
   document [68, 24]. We exclude datasets that include an associated document as
   evidence without specifying the location of the explanation within the
 * Some highlights are re-purposed from annotations for a different task
-  * eg M ULTI RC [60] originally to assess that each question in the dataset
+  * eg Multi RC [60] originally to assess that each question in the dataset
     requires multi-sentence reasoning to answer
-  * S TANFORD S ENTIMENT T REEBANK [ SST ; 113] which contains crowdsourced
+  * Stanford Sentiment Treebank [SST ; 113] which contains crowdsourced
     * Word phrases that have the same sentiment label as the review can be
       heuristically merged to get phrase-level highlights [23]. Other
 * wording of these instructions
@@ -165,14 +165,14 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
   automatically extracted from a fact corpus and validated with crowdsourcing
   * The resulting datasets, EQASC and EOBQA, contain
     multiple valid and invalid explanations per instance, as well as
-    perturbations for robustness testing (EQASC-PERTURBED)
+    perturbations for robustness testing (EQASC-Perturbed)
 * supplement datasets for reading comprehension
-  * Ye+ [138] collect semi-structured explanations for N ATURAL Q UESTIONS [68]
-    and SQ U AD [102]
+  * Ye+ [138] collect semi-structured explanations for Natural Questions [68]
+    and SQ UAD [102]
     * require annotators to use phrases in both the input question and context,
       and limit them to a small set of connecting expressions
-  * Inoue+ [53] collect R 4 C, fact chain explanations for H OTPOT QA [137]
-  * Lamm+ [70] collect explanations for N ATURAL Q UESTIONS that follow a
+  * Inoue+ [53] collect R 4 C, fact chain explanations for HOTPOT QA [137]
+  * Lamm+ [70] collect explanations for Natural Questions that follow a
     linguistically-motivated form (see the example in Table 1)
 * We discuss structured explanations further in §5
 
@@ -210,8 +210,8 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     * this expectation might lead to collecting highlights that are unfitting
       for the goals (ii) and (iii) in §1
     * Typical instructions for collecting highlights encourage sufficiency and
-      compactness, but not __comprehensiveness__. eg, DeYoung+ [29] deem M OVIE
-      R EVIEWS and E VIDENCE I NFERENCE highlights non-comprehensive
+      compactness, but not __comprehensiveness__. eg, DeYoung+ [29] deem Movie
+      Reviews and Evidence Inference highlights non-comprehensive
     * Carton+ [23] expect that FEVER highlights are non-comprehensive, in
       contrast to DeYoung+ [29]
     * we observe that the E-SNLI authors collect non-comprehensive highlights,
@@ -225,12 +225,12 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
       nor comprehensive for predictions of highly accurate models. This
   * insufficiency
     * two datasets whose sufficiency Carton+ [23] found to be most concerning:
-      neutral E-SNLI pairs and no-attack W IKI A TTACK examples.
+      neutral E-SNLI pairs and no-attack WIKI ATTACK examples.
       * Neutral E-SNLI cases are not justifiable by highlighting
         because they are obtained only as an intermediate step to collecting
         free-text explanations, and only free-text explanations truly justify a
         neutral label [20]
-    * No-attack W IKI A TTACK examples are not explainable by highlighting
+    * No-attack WIKI ATTACK examples are not explainable by highlighting
       because the absence of offensive content justifies the no-attack label,
     * We recommend (i) avoiding human-annotated highlights with low sufficiency
       when evaluating and collecting highlights, and (ii) assessing whether the
@@ -330,9 +330,9 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     those identified by Camburu+ [21], Brahman+ [18] that remain after filter?
 * structured explanations have been intentionally collected (see Table 5; §3).
   * acknowledge structure as inherent to explaining the tasks they investigate.
-  * [ GLUCOSE ; 85] takes the matter further, arguing that explanations should
+  * [GLUCOSE ; 85] takes the matter further, arguing that explanations should
     not be entirely free-form.
-*, we recommend running pilot studies to explore
+* we recommend running pilot studies to explore
   how people define and generate explanations for a task
   * If they reveal that informative human explanations are nat structured,
     incorporating the structure in the annotation scheme is useful
@@ -406,8 +406,8 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     entailment and question-answering, respectively
   * E-SNLI-VE combines annotations of two datasets:
     * SNLI-VE [131], collected by replacing the textual premises of SNLI [16]
-      with F LICKR 30 K images [140], and
-      * every SNLI premise was originally the caption of a F LICKR 30 K photo.
+      with FLICKR 30 K images [140], and
+      * every SNLI premise was originally the caption of a FLICKR 30 K photo.
     * E- SNLI [20], a dataset of crowdsourced explanations for SNLI . This
     * hE SNLI ’s hypotheses were collected from crowdworkers who did not see
       the original images, the photo replacement process results in a
