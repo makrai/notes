@@ -1,5 +1,5 @@
-GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding
-Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, Samuel R. Bowman
+GLUE: A Multi-Task Benchmark and Analysis Platform for NLU
+Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, SR Bowman
 ICLR 2019; arXiv:1804.07461 [cs.CL]
 
 https://gluebenchmark.com/
@@ -16,7 +16,7 @@ https://gluebenchmark.com/
   * baselines based on current methods for multi-task and transfer learning and
     * they do not immediately give substantial improvements over the aggregate
       performance of training a separate model per task, indicating
-    * room for improvement in developing general and robust NLU systems. 
+    * room for improvement in developing general and robust NLU systems
 
 # 1 Intro
 
@@ -30,14 +30,14 @@ https://gluebenchmark.com/
     entailment
   * online platform for model evaluation, comparison, and analysis. GLUE does
   * no constraints on model architecture beyond the ability to process
-    single-sentence and sentence-pair inputs and to make corresponding preds.
+    single-sentence and sentence-pair inputs and to make corresponding preds
   * For some/other GLUE tasks, training data plentiful/limited/genre mismatch
   * => favors models that can learn to represent linguistic knowledge in a way
     that facilitates sample-efficient learning and effective knowledge-transfer
   * None of the datasets in GLUE were created from scratch for the benchmark;
     * they have been implicitly agreed upon by the NLP community as challenging
   * Four of the datasets feature privately-held test data, which will be used
-* analysis examples for probing trained models, hand-crafted 
+* analysis examples for probing trained models, hand-crafted
   * To understand the types of knowledge learned by models and to encourage
     linguistic-meaningful solution strategies, GLUE also includes a set of
   * designed to highlight common challenges,
@@ -49,15 +49,15 @@ https://gluebenchmark.com/
     * still achieves a fairly low absolute score
     * Analysis with our diagnostic dataset reveals that our
       baseline models deal well with strong lexical signals but
-      struggle with deeper logical structure.  
-* In summary, we offer: 
+      struggle with deeper logical structure
+* In summary, we offer:
   * nine sentence or sentence-pair NLU tasks,
     built on established annotated datasets and selected to cover a
     diverse range of text genres, dataset sizes, and degrees of difficulty
   * online evaluation platform and leaderboard, based primarily on
     privately-held test data. The platform is model-agnostic, and can evaluate
-    any method capable of producing results on all nine tasks. 
-  * An expert-constructed diagnostic evaluation dataset. 
+    any method capable of producing results on all nine tasks
+  * An expert-constructed diagnostic evaluation dataset
   * Baseline results for several major existing approaches to sentence repr
 
 # 3 TASKS
@@ -77,11 +77,11 @@ https://gluebenchmark.com/
   * We use the standard test set, for which we obtained private labels from the
     authors
   * We report a single performance number on the combination of the in~ and
-    out-of-domain sections of the test set.
+    out-of-domain sections of the test set
 
 ### SST-2 The Stanford Sentiment Treebank (Socher+ 2013)
 
 * consists of sentences from movie reviews and human sentiment annotations
 * The task is to predict the sentiment of a given sentence
 * We use the two-way (positive/negative) class split, and use only
-  sentence-level labels.
+  sentence-level labels
