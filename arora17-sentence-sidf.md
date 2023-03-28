@@ -153,7 +153,7 @@ ICLR 2017
 3. Supervised: PP, PP-proj., DAN, RNN, iRNN, LSTM (o.g.), LSTM (no)
   * initialized with PSL word vectors and then trained on the PPDB dataset
   * PP and PP-proj. are proposed in (Wieting+ 2016).  The first
-    * average of the word vectors + linear _proj_ection. The
+    * average of the word vectors + linear `proj`ection. The
     * word vectors are updated during the training
   * DAN denotes the deep averaging network of (Iyyer+ 2015)
   * RNN denotes the classical recurrent neural network, and

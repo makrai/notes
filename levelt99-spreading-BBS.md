@@ -309,9 +309,9 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
   * Appendix gives an overview of the selection algorithm.  There are simple
     equations for the activation dynamics and the instantaneous selection
     probability of a lemma node, that is, the hazard rate of the lemma retrieval
-  * idea is that, for any smallest time interval, given that the selection
-    conditions are satisfied, the selection probability of a lemma node equals
-    the ratio of its activation to that of all the other lemma nodes (Luce rat)
+  * idea: for any smallest time interval, given that the selection conditions
+    are satisfied, the selection probability of a lemma node equals the
+    ratio of its activation to that of all the other lemma nodes (Luce rat)
   * the expectation of the retrieval time can be computed
 
 ## 5.2. Empirical RT support 9
