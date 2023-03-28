@@ -1,5 +1,5 @@
-Peter D. Turney, Patrick Pantel
 From frequency to meaning: vector space models of semantics
+Peter D. Turney, Patrick Pantel
 2010
 
 # 1. Introduction
@@ -37,7 +37,7 @@ From frequency to meaning: vector space models of semantics
 
 ## 1.3 Motivation for This Survey
 
-* pair--pattern matrices ... address some criticisms that have been directed at
+* pair--pattern matrices address some criticisms that have been directed at
   word--context matrices, regarding lack of sensitivity to word order
 
 ## 1.4 Intended Readership
@@ -53,7 +53,7 @@ From frequency to meaning: vector space models of semantics
   * optimization strategies for comparing the vectors, such as
     * distributed sparse matrix multiplication and randomized techniques
 5. detailed look at three VSM systems
-   * term–document VSMs, ... the Lucene information retrieval library
+   * term–document VSMs, the Lucene information retrieval library
    * word–context VSMs
     * the Semantic Vectors package, which builds on Lucene
    * pair–pattern VSMs the Latent Relational Analysis module in the S-Space
@@ -64,7 +64,7 @@ From frequency to meaning: vector space models of semantics
    2. applications for word–context matrices
    3. pair–pattern matrices
 7. alternatives to VSMs for semantics
-8. future of VSMs, ... their power and their limitations
+8. future of VSMs, their power and their limitations
 9. conclude
 
 # 2. Vector Space Models of Semantics
@@ -117,11 +117,11 @@ From frequency to meaning: vector space models of semantics
   * An element gets a high weight when the corresponding term is
     * frequent in the corresponding document (i.e., tf is high), but
     * rare in other documents in the corpus (i.e., df is low)
-  * Salton and Buckley (1988) defined a large family of tf-idf ...  functions
+  * Salton and Buckley (1988) defined a large family of tf-idf  functions
 * [document] length normalization (Singhal, Salton, Mitra, & Buckley, 1996)
 * correct for correlated terms
   * e.g. _hostage_ and _hostages_
-  * correlated, yet we may not want to [lemmatize] them ... (as in Sect 3.2),
+  * correlated, yet we may not want to [lemmatize] them (as in Sect 3.2),
     because they have slightly different meanings
   * alternative: we may reduce their weights when they co-occur in a document
     (Church, 1995)
@@ -130,7 +130,7 @@ From frequency to meaning: vector space models of semantics
   * An alternative to tf-idf
   * works well for both word–context matrices (Pantel & Lin, 2002a) and
     term–document matrices (Pantel & Lin, 2002b)
-  * Positive PMI (PPMI ... Niwa & Nitta, 1994)
+  * Positive PMI (PPMI Niwa & Nitta, 1994)
     * performs [well] when measuring semantic similarity with word–context
       matrices (Bullinaria and Levy 2007)
     * Turney (2008a) applied PPMI to pair–pattern matrices
@@ -205,11 +205,11 @@ From frequency to meaning: vector space models of semantics
 
 ### 4.5.2 Distributed Implementation using MapReduce 23
 
-if ... the matrix X can[not] fit into memory
+if the matrix X can[not] fit into memory
 
 ### 4.5.3 Randomized Algorithms
 
-* Truncated ... SVD can be computationally intensive
+* Truncated SVD can be computationally intensive
 * high-dimensional vectors can be randomly projected into a low-dimensional
   subspace with relatively little impact on the final similarity scores
   * especially in applications such as word similarity where
@@ -244,10 +244,8 @@ without requiring an external similarity measure
 
 # 5. Three Open Source VSM Systems
 
-* As a representative of term--document VSMs, we present the Lucene information
-  retrieval library
-* For word--context VSMs, we explore the Semantic Vectors package, which builds
-  on Lucene
+* As a representative of term--document VSMs: the Lucene info retrieval library
+* For word--context VSMs: the Semantic Vectors package, which builds on Lucene
 * As the representative of pair--pattern VSMs, we review the Latent Relational
   Analysis module in the S-Space package, which also builds on Lucene
 
