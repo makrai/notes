@@ -1518,7 +1518,7 @@ these inferences. I think Cargile underestimates the difficulties in doing this,
 x
 
 
-Cargile. nor even Russell would have denied that kickedy'is a two-place relation
+Cargile. nor even Russell would have denied that kicked is a two-place relation
 form; but Russell had the same motive Frege did for holding chat 'kicked' has the
 logical form ofa three-place predicate.
 
