@@ -6,6 +6,6 @@ Cite as: 	arXiv:1508.02297 [cs.CL]
 
 * we propose to use the length of the vectors, together with the term freq,
   as measure of word significance in a corpus
-* Experimental evidence using a domain-specific corpus of abstracts is
+* Experimental evidence using a domain-specific corpus of abstracts
 * A useful visualization technique for text corpora emerges, where words are
-  mapped onto a two-dimensional plane and automatically ranked by significance. 
+  mapped onto a two-dimensional plane and automatically ranked by significance
