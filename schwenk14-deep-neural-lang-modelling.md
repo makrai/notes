@@ -8,7 +8,7 @@ NIPS workshop on Deep Learning and Representation Learning 2014
   * [3] Yoshua Bengio
     Practical recommendations for gradient-based training of deep architectures
     In Neural Networks: Tricks of the Trade, Second Edition.  Springer, 2012
-  * [12] Yann LeCun, L ́eon Bouttou, Genevi`eve B. Orr, and Klaus-Robert Muller
+  * [12] Yann LeCun, Leon Bouttou, Genevi`eve B. Orr, and Klaus-Robert Muller
     Efficient backprop
     In Neural Networks: Tricks of the trade.  Springer, 1998
 
