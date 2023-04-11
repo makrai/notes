@@ -1,5 +1,5 @@
 A La Carte Embedding: Cheap but Effective Induction of Semantic Feature Vectors
-Mikhail Khodak, Nikunj Saunshi, Yingyu Liang, Tengyu Ma, Brandon Stewart, Sanjeev Arora
+Mikhail Khodak, Nikunj Saunshi, Yingyu Liang, Tengyu Ma, B Stewart, S Arora
 ACL 2018 arXiv:1805.05388 [cs.CL]
 
 # Abstract
