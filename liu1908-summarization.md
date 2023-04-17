@@ -123,7 +123,7 @@ code is available at https://github.com/nlpyang/PreSumm
 * mismatch between the encoder and the decoder,
   * since the former is pretrained while the latter must be trained from scratch
   * can make fine-tuning unstable;
-    e.g. the encoder might overfit the data while the decoder underfits, or vice
+    eg the encoder might overfit the data while the decoder underfits, or vice
 * we design a new fine-tuning schedule which
   separates the optimizers of the encoder and the decoder
   * the pretrained encoder should be fine-tuned with a smaller learning rate and

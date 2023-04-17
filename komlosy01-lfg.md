@@ -2767,7 +2767,7 @@ jelen lévő argumentum, azaz a főszereplő minősül ennek (szintaktikai szere
 
 részleges jellemzést (partial specification), amely az adott szerephez hozzárendelhető
 szintaktikai funkciók körét lehatárolja. Ezzel a megközelítéssel az azonos `természetes
-osztályokba@ tartozó funkciók közötti váltakozásokat nem transzformációs kapcsolatok,
+osztályokba` tartozó funkciók közötti váltakozásokat nem transzformációs kapcsolatok,
 hanem meghatározatlanság [underspecification] jellemzi.
 
 
