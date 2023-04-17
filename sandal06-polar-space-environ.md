@@ -1,5 +1,5 @@
 Human challenges in polar and space environments
-G. M. Sandal Æ G. R. Leon Æ L. Palinkas
+G. M. Sandal & G. R. Leon & L. Palinkas
 Rev Environ Sci Biotechnol (2006) 5:281–296
 
 # Abstract

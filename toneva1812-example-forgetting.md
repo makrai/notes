@@ -7,7 +7,7 @@ ICLR 2019 arXiv:1812.05159 [cs.LG]
   single classification tasks. Our goal is to understand
 * whether a related phenomenon occurs when data does not undergo a clear
   distributional shift
-  * define a `forgetting event' to have occurred when
+  * define a _forgetting event_ to have occurred when
     an individual training example transitions from being classified correctly
     to incorrectly over the course of learning
 * several benchmark data sets, we find that:

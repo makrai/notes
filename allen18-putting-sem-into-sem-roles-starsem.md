@@ -102,8 +102,8 @@ James F. Allen 1,2 and Choh Man Teng 1
   * parse errors, ambiguities, terse [tömör] and loose definitions
   * e.g. one sense of appear is `to come into sight`
     * acquisition reading where sight is acquired The parser chose
-  * a sense of _pronounce_ is `to declare judgement on (e.g., they pronounced
-    him unfit)_
+  * a sense of _pronounce_ is `to declare judgement on` (e.g., _they pronounced
+    him unfit_)
     * The parser failed to identify the second gap
     * our strategy for identifying arguments was inadequate
       There is an argument to this verb that is the judgement

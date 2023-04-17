@@ -383,13 +383,14 @@ does not hurt
 1. the semantic property the PPI detests [utál] is antiadditivity. As was
   * Zwarts: there is a class of NPIs that require precisely this kind of licer
   * In English, examples are _yet_ and _squat_
-    * _squat_ (Horn 2001a and Postal 2000a), a vulgar minimizer.  (79/80/81) I
-      haven’t/No one has/`*`At most five people have been here yet.  (82) *I
-      regret that you have been here yet (83) He didn’t know squat. can mean `He
-      didn’t know anything’ (84) No one knows squat. can mean `No one knows
-      anything’ (85) At most five people knew squat. cannot mean `=<5 people
-      knew anything’ (86) I regret that he knew squat. cannot mean `I regret
-      that he knew anythng’
+    * _squat_ (Horn 2001a and Postal 2000a), a vulgar minimizer.
+    (79/80/81) I haven’t/No one has/`*`At most five people have been here yet.
+    (82) *I regret that you have been here yet
+    (83) He didn_t know squat. can mean _He didn_t know anything_
+    (84) No one knows squat. can mean _No one knows anything_
+    (85) At most five people knew squat. cannot mean _=<5 people knew anything_
+    (86) I regret that he knew squat. cannot mean
+      _I regret that he knew anythng_
 * As Postal: _squat_ has another use where it means 'nothing’: (87) He knows
   squat.  'He knows nothing'
   * We are not concerned with the latter, it must be carefully ignored
@@ -471,15 +472,16 @@ quantification 24
     someone ¬ (¬¬∃x[person(x) & he_saw(x)])
 * support from Latin, pointed out to me by Wayles Browne (p.c.). Latin has a
   * indefinite pronouns that are formed with two negations (see the Oxford Lat)
-    (102) a. non nemo 'some persons, a few' b. non nullus `a certain amount of,
-    not a little; a number of, not a few; some men’ c. non numquam `on various
-    occasions, sometimes’
+    (102) a. non nemo _some persons, a few_
+    b. non nullus _a certain amount of, not a little; a number of, not a few;
+    some men_
+    c. non numquam _on various occasions, sometimes_
 * The following text shows that non nemo is indeed comparable to someone: 20
   (103) video de istis qui se popularis haberi volunt abesse *non neminem* [...]
-  *is* et nudius tertius in custodiam civis Romanos dedit.  `I see that of those
-  men who wish to be considered attached to the people *one man* is absent [...]
-  *He* only three days ago gave Roman citizens into custody.’ (Cicero, In
-  Catilinam, 4.10)
+  *is* et nudius tertius in custodiam civis Romanos dedit.
+  _I see that of those men who wish to be considered attached to the people
+  *one man* is absent [...] *He* only three days ago gave Roman citizens into
+  custody._ (Cicero, In Catilinam, 4.10)
 * _non nemo_ can antecede non-c-commanded anaphora
   * one of the basic tenets of Dynamic Semantics, one negation “freezes” an
     existential (eliminates its dynamic potential to bind a non-c-commanded

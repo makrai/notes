@@ -31,7 +31,7 @@ h. Ő (volt) az igazgató
 * az igével való speciális viszonyuk következménye az igevivőként való
   megjelenés. Ebbe a csoportba tartoznak például az igekötők
 * szemantika
-  * egy rész[ének] nem kompozicionális a jelentésük, pl. a berúg `lerészegedik'
+  * egy rész[ének] nem kompozicionális a jelentésük, pl. a berúg _lerészegedik_
   * nagy része azonban produktív minták alapján áll elő (mint pl.  az
     * _áttáncolja az éjszakát_ típusú igék, vagy az
     * irányjelölő igekötőket tartalmazó igék többsége), de ezek

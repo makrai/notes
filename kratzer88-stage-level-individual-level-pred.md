@@ -432,7 +432,7 @@ be known to
 The above examples are at best suggestive. We have seen that the
 stage-level /Individual-level distinction Is context-dependent and
 vague. And the distinction between predicates that are unaccusatives
-and those that are not Is l i kewise unstable. What Is Important here is
+and those that are not Is likewise unstable. What Is Important here is
 that there are prototypical examples. And that we know which
 factors contribute to context-dependency and vagueness. And that
 whatever kind of vagueness and context-dependency we mey find w t l l

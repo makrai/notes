@@ -39,7 +39,7 @@ licj17@mail.tsinghua.edu.cn
     (Von Engelhardt and Zimmermann, 1988).
 * We investigate the relatedness of the synsets (word senses) in WordNet
   (Miller, 1995) through the Wu & Palmer measure 2 (Wu and Palmer, 1994)
-  * word `book” in Figure 1.
+  * word _book_ in Figure 1.
     * right side is the similarity matrix of its 11 nominal synsets
     * left side is their frequencies in WordNet
   * correlations among these senses in different levels

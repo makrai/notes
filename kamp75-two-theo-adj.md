@@ -347,7 +347,7 @@ JAW Kamp
   * there are minor but undeniable advantages in discussing the relation
     `as least as,..as`. I will concentrate on that concept
 * Let us assume that some of the one-place predicates of L represent adjectives,
-  in particular `Q_i^1. We add to L the operator symbol \ge
+  in particular `Q_i^1`. We add to L the operator symbol \ge
   * \ge forms out of one one-place predicate Q a two-place relation \ge(Q)(x,y)
   * x is at least as Q as y
   * Let M = <M,C,F p> be a vague model for L
