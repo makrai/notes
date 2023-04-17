@@ -74,7 +74,7 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
   (Reimers and Gurevych, 2017, 2018; Madhyastha and Jain, 2019)
   * finetuning of BERT is unstable for some datasets, such that
     some runs achieve SOTA results while others perform poorly
-    (Devlin+ 2019; Phang+ 2018). Unlike these past works, we focus on out-of-di
+    (Devlin+ 2019; Phang+ 2018)
 
 ## 2.2 Out-of-distribution generalization ("syntactic")
 
@@ -132,10 +132,10 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
 
 * we provide some quantitative and qualitative analysis of consistency of
   performance on individual examples
-* the consistent score of about 84% on the MNLI development set can be
-  partially explained by the fact that there are certain examples that all
-  models answered correctly or that all models answered incorrectly, as
-  models were consistently correct or incorrect on 72% of the examples
+* the consistent score of about 84% on the MNLI development set
+  can be partially explained by the fact that there are certain examples
+  that all models answered correctly or that all models answered incorrectly,
+  as models were consistently correct or incorrect on 72% of the examples
 * Examples (7) through (12) show some of the 526 cases that all 100 instances
   answered incorrectly
   * Some of these examples arguably have incorrect labels in the dataset,
@@ -158,18 +158,18 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
 
 * HANS consists of 6 main categories of examples,
   each of which can be further divided into 5 subcategories
-  * Performance was reasonably consistent on five of these categories, but
-  * hE on the sixth category—lexical overlap examples that are inconsistent
-    with the lexical overlap heuristic—performance varied dramatically, ranging
-    from 5% accuracy to 55% accuracy (Figure 6). Since this is the most
+  * Performance was reasonably consistent on five of these categories
+  * hE on the sixth category (Figure 6)
+    * lex overlap examples that are inconsistent with the lexical overlap heu
+    * performance varied dramatically, ranging from 5% accuracy to 55% accuracy
     * we focus on it for the rest of the analysis
-    * examples for which the correct label is non-entailment and for which all
-      the words in the hypothesis also appear in the premise but not as a
-      contiguous subsequence
+    * examples for which the correct label is non-entailment and
+      for which all the words in the hypothesis also appear in the premise
+      but not as a contiguous subsequence
     * five subcategories; examples and results for each subcateg are in Fig 5
 * Chance performance on HANS was 50%;
-* on all subcategories except for passives, accuracies ranged from far below
-  chance to modestly above chance
+* on all subcategories except for passives, accuracies ranged
+  from far below chance to modestly above chance
 * Models varied considerably even on categories that humans find simple
   (McCoy+ 2019)
   * eg subject-object swap examples, which
