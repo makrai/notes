@@ -5,135 +5,135 @@ Irene Heim
 # 1 Introduction
 
 * the "familiarity theory of definiteness."
- = * What is the difference in meaning between definite/indef noun phrases
- = * the answer by Traditional grammarians Christophersen and Jespersen
- = * finds little favor with semanticists trained in twentieth century logic
- = * (1) A definite is used to refer to something that is already familiar at the
- =   current stage of the conversation
- = * An indefinite is used to introduce a new referent
- = * the logically minded semanticist will notice immediately that
- =   (1) presumes that definites and indefinites are referring expressions
- =   * very objectionable
- =   * only if there is a referent at all can is be familiar or new
+  * What is the difference in meaning between definite/indef noun phrases
+  * the answer by Traditional grammarians Christophersen and Jespersen
+  * finds little favor with semanticists trained in twentieth century logic
+  * (1) A definite is used to refer to something that is already familiar at the
+    current stage of the conversation
+  * An indefinite is used to introduce a new referent
+  * the logically minded semanticist will notice immediately that
+    (1) presumes that definites and indefinites are referring expressions
+    * very objectionable
+    * only if there is a referent at all can is be familiar or new
 * there are nonreferential uses of definite and indefinite NPs
- = * I will take it for granted without repeating the familiar arguments
- =   (2) Every cat ate its food
- =   (3) John didn't see a cat
- = * anal
- =   (2) has a reading where "its"
- =     * a personal pronoun, i.e. a type of definite NP,
- =     * functions as a so-called "bound variable pronoun" and
- =       doesn't refer to any particular cat
- =   (3) with negation taking widest scope, the indefinite "a cat" fails to refer
+  * I will take it for granted without repeating the familiar arguments
+    (2) Every cat ate its food
+    (3) John didn't see a cat
+  * anal
+    (2) has a reading where "its"
+      * a personal pronoun, i.e. a type of definite NP,
+      * functions as a so-called "bound variable pronoun" and
+        doesn't refer to any particular cat
+    (3) with negation taking widest scope, the indefinite "a cat" fails to refer
 * I will try to revive and defend the familiarity theory, or a very similar one
- = * just different enough from (1) to avoid the presumption of referentiality
- = * accordingly deviates from standard assumptions in logical semantics
- =   * familiarity and novelty as a central pair of notions, and it takes
- =   * neither definites nor indefinites to be quantifiers
- = * enables us to make better predictions about their participation in anaphora
- = * I return to this point in section 7 below, but first I must lay out the theo
+  * just different enough from (1) to avoid the presumption of referentiality
+  * accordingly deviates from standard assumptions in logical semantics
+    * familiarity and novelty as a central pair of notions, and it takes
+    * neither definites nor indefinites to be quantifiers
+  * enables us to make better predictions about their participation in anaphora
+  * I return to this point in section 7 below, but first I must lay out the theo
 
 # 2 Karttunen's "Discourse Referents" 2
 
 * Karttunen (1968a, b, 1976) introduces the notion of
- = "discourse reference", in place of "reference"
- = * So instead of principle (1), he has a requirement that
- =   a definite NP has to pick out an already familiar discourse referent, wherea
- =   an indefinite NP always introduces a new discourse referent
- = * an NP may have a discourse referent even when it has no referent
+  "discourse reference", in place of "reference"
+  * So instead of principle (1), he has a requirement that
+    a definite NP has to pick out an already familiar discourse referent, wherea
+    an indefinite NP always introduces a new discourse referent
+  * an NP may have a discourse referent even when it has no referent
 (4) John came, and so did Mary. **One of them** brought a cake
- = * "one of them" is indefinite, therefore (1) would seem to predict that it
- =   must refer to an as yet "unfamiliar" person
- = * both John and Mary, are familiar when "one of them" gets uttered and should
- =   consequently be excluded as potential referents for "one of them"
- = * in Karttunen's version in terms of discourse referents
- = * "one of them", since it is indefinite, its discourse referent must be new
- =   and must be distinct from the discourse referents of "John" and "Mary"
- = * NPs with distinct discourse reference sometimes happen to coincide in ref,
- = * (4) involves three discourse referents, but only two referents
+  * "one of them" is indefinite, therefore (1) would seem to predict that it
+    must refer to an as yet "unfamiliar" person
+  * both John and Mary, are familiar when "one of them" gets uttered and should
+    consequently be excluded as potential referents for "one of them"
+  * in Karttunen's version in terms of discourse referents
+  * "one of them", since it is indefinite, its discourse referent must be new
+    and must be distinct from the discourse referents of "John" and "Mary"
+  * NPs with distinct discourse reference sometimes happen to coincide in ref,
+  * (4) involves three discourse referents, but only two referents
 (5) Everybody found a cat and kept it. It ran away`*`
- = * the first "it", but not the second, can be anaphoric to "a cat",
- =   (in the reading "everybody" > "a cat")
- = * the first "it" and its antecedent "a cat" both fail to refer,
- =   => the traditional version of the familiarity theory cannot be applied
- = * in terms of discourse referents, however, we can describe what is going on
- =   * The indefinite "a cat" introduces a discourse referent
- =   * The first "it" picks up that same discourse referent, which ~~ having just
- =     been introduced ~~ is familiar, as required
- =   * At the end of (5a), this discourse referent ceases to exist
- =   * no longer available when the second "it" comes along
- =   * the second "it" must find the familiar discourse referent elsewhere
+  * the first "it", but not the second, can be anaphoric to "a cat",
+    (in the reading "everybody" > "a cat")
+  * the first "it" and its antecedent "a cat" both fail to refer,
+    => the traditional version of the familiarity theory cannot be applied
+  * in terms of discourse referents, however, we can describe what is going on
+    * The indefinite "a cat" introduces a discourse referent
+    * The first "it" picks up that same discourse referent, which ~~ having just
+      been introduced ~~ is familiar, as required
+    * At the end of (5a), this discourse referent ceases to exist
+    * no longer available when the second "it" comes along
+    * the second "it" must find the familiar discourse referent elsewhere
 * discourse referents behave in ways which make no sense to real referents
- = * there are discourse referents for NPs that have no referents
- = * may suddenly go out of existence
- = * if a discourse referent
- =   gets first introduced inside the scope of a quantifier (here: "everybody"),
- =   then its lifespan cannot extend beyond the scope of that quantifier
+  * there are discourse referents for NPs that have no referents
+  * may suddenly go out of existence
+  * if a discourse referent
+    gets first introduced inside the scope of a quantifier (here: "everybody"),
+    then its lifespan cannot extend beyond the scope of that quantifier
 * what are discourse referents?
- = * Karttunen formulates a number of generalizations about discourse referents,
- =   i.e. about the conditions under which they get introduced and
- =   the factors that determine their lifespan
- = * these generalizations combine with Karttunen's version of the familiarity th
- = * no explicit definition
- = * some aspect of the meaning of a word or construction of English are the
- =   capacity for introducing, picking up, or influencing the lifespan of,
- =   discourse referents
- = * is that an entirely separate aspect of meaning, or is it
- =   dependent upon other aspects of meaning, such as the referential and
- =   truth-conditional aspect? ~~ I hope to shed light on Questions of this sort
+  * Karttunen formulates a number of generalizations about discourse referents,
+    i.e. about the conditions under which they get introduced and
+    the factors that determine their lifespan
+  * these generalizations combine with Karttunen's version of the familiarity th
+  * no explicit definition
+  * some aspect of the meaning of a word or construction of English are the
+    capacity for introducing, picking up, or influencing the lifespan of,
+    discourse referents
+  * is that an entirely separate aspect of meaning, or is it
+    dependent upon other aspects of meaning, such as the referential and
+    truth-conditional aspect? ~~ I hope to shed light on Questions of this sort
 * I suggesting that Karttunen's discourse referents = "file cards"
- = * elements of a so-called "file"
- = * file: a theoretical construct which mediates between language and the world
+  * elements of a so-called "file"
+  * file: a theoretical construct which mediates between language and the world
 
 # 3 Conversation and File-keeping 4
 
 * A listener's task of understanding what is being said in the course of a
- = conversation bears relevant similarities to a file clerk's task
- = * to understand an utterance is to keep a file
- = * the file, at every time in the course of the utterance, contains the
- =   information that has so far been conveyed by the utterance
- = * The file metaphor was first suggested
- =   to impose a file-like structure on the common ground (Stalnaker 1979)
- = * the file metaphor for more or less similar purposes eg Karttunen (1976)
- = * my files are closely related to the
- =   "discourse representation structures" of Kamp (1981)
+  conversation bears relevant similarities to a file clerk's task
+  * to understand an utterance is to keep a file
+  * the file, at every time in the course of the utterance, contains the
+    information that has so far been conveyed by the utterance
+  * The file metaphor was first suggested
+    to impose a file-like structure on the common ground (Stalnaker 1979)
+  * the file metaphor for more or less similar purposes eg Karttunen (1976)
+  * my files are closely related to the
+    "discourse representation structures" of Kamp (1981)
 (6) (a) A woman was bitten by a dog. (b) She hit it. (c) It jumped over a fence
- = * Before the utterance starts, the listener has an empty file,
- =   i.e. a collection of zero file cards. Call that empty file "F'"
- = * (6a) uttered => put two cards into the file, gives each card a number, 1 & 2
+  * Before the utterance starts, the listener has an empty file,
+    i.e. a collection of zero file cards. Call that empty file "F'"
+  * (6a) uttered => put two cards into the file, gives each card a number, 1 & 2
 ```
- = F 1 :
- = 1
- = − is a woman
- = − was bitten by 2
- = 2
- = − is a dog
- = − bit 1
+  F 1 :
+  1
+  − is a woman
+  − was bitten by 2
+  2
+  − is a dog
+  − bit 1
 ```
- = * (6b) gets uttered, which prompts the listener to update the cards
- =   * 1 += "hit 2", 2 += "was hit by 1"
- = * (6c). The listener takes a new card, numbers it "3", writes on it "is a fen"
+  * (6b) gets uttered, which prompts the listener to update the cards
+    * 1 += "hit 2", 2 += "was hit by 1"
+  * (6c). The listener takes a new card, numbers it "3", writes on it "is a fen"
 * How do definites differ from indefinites?
- = (7) For every indefinite, start a new card. Definite => update an old card
- = * reminiscent of principle (1) above
- = * incorporating a version of the familiarity theory of definiteness
- = * not referents are supposed to be old or new, but rather file cards
- = * it is quite conceivable for
- =   there to be a file card that fails to describe a referent, or for
- =   two different file cards to happen to describe the same thing, or for
- =   file cards to be introduced into and be removed from the file
+  (7) For every indefinite, start a new card. Definite => update an old card
+  * reminiscent of principle (1) above
+  * incorporating a version of the familiarity theory of definiteness
+  * not referents are supposed to be old or new, but rather file cards
+  * it is quite conceivable for
+    there to be a file card that fails to describe a referent, or for
+    two different file cards to happen to describe the same thing, or for
+    file cards to be introduced into and be removed from the file
 * Now give a more precise account of the theoretically relevant properties of
- = files and of the role they play in the semantic interpretation
- = * assumptions;
- = * The grammar of a language generates sentences with representations on
- =   various levels of analysis, among them a level of "logical form"
- = * Each logical form is assigned a "file change potential",
- =   i.e.  a function from files into files
- =   * Given an utterance with a logical form, this function will determine
- =     how you get from the file that obtains prior to the utterance to
- =     the file that comes to obtain as a result of the utterance
- =   * The system moreover includes an assignment of truth conditions to files
- =   * logical forms themselves are not assigned truth conditions, only thr files
+  files and of the role they play in the semantic interpretation
+  * assumptions;
+  * The grammar of a language generates sentences with representations on
+    various levels of analysis, among them a level of "logical form"
+  * Each logical form is assigned a "file change potential",
+    i.e.  a function from files into files
+    * Given an utterance with a logical form, this function will determine
+      how you get from the file that obtains prior to the utterance to
+      the file that comes to obtain as a result of the utterance
+    * The system moreover includes an assignment of truth conditions to files
+    * logical forms themselves are not assigned truth conditions, only thr files
 * I will elaborate on its various components in the next few sections
 
 # 4 Files and the World 6
@@ -141,92 +141,92 @@ Irene Heim
 * the association of files with their truth conditions
 * line up the sequence of cards in the file with a seq of actual individuals
 * I also admit sequences whose domains are not initial segments of N
- = * E.g. a function that assigns an individual each to the numbers 2 and 7, but
- =   is not defined for any other numbers, also qualifies as a sequence
- = * This would be the sort of sequence to satisfy a file whose only two cards
- =   are numbered "2" and "7"
+  * E.g. a function that assigns an individual each to the numbers 2 and 7, but
+    is not defined for any other numbers, also qualifies as a sequence
+  * This would be the sort of sequence to satisfy a file whose only two cards
+    are numbered "2" and "7"
 * the set of all sequences that satisfy a given file: "Sat(F)"
- = * "the satisfaction set of F"
+  * "the satisfaction set of F"
 (9) Sat(F) = def {a_N : a_N satisfies F}
- = * "a_N ", "b_M ", and the like range over sequences, where
- =   the subscripts "N", "M", etc. stand for each sequence's domain
+  * "a_N ", "b_M ", and the like range over sequences, where
+    the subscripts "N", "M", etc. stand for each sequence's domain
 * the card-numbers that are used in a given file: "Dom(F)", "the domain of F"
 * In the remainder of this article, I will often
- = describe a file solely in terms of its domain and satisfaction set
- = * that does not suffice to pick out a unique file
+  describe a file solely in terms of its domain and satisfaction set
+  * that does not suffice to pick out a unique file
 
 # 5 Semantic Categories and Logical Forms
 
 * the upper part of diagram (8) and some of the assumptions about logical forms
 * logical forms are disambiguated in two respects: scope, and anaphoric rels
- = * unlike other syntactic levels of representation
- = * Scope is marked configurationally, with an element c-commanding its scope,
- = * anaphoric relatedness is marked by coindexing
- = * The relation between sentences and their logical forms is
- =   defined by a set of
- =   * transformational rules that derive logical forms from syntactic reprs and
- =   * wellformedness constraints on the output of those rules
- = * These assumptions about logical form are taken over from
- =   Chomsky's "Revised Extended Standard Theory" (May 1977) and Reinhart (1976)
+  * unlike other syntactic levels of representation
+  * Scope is marked configurationally, with an element c-commanding its scope,
+  * anaphoric relatedness is marked by coindexing
+  * The relation between sentences and their logical forms is
+    defined by a set of
+    * transformational rules that derive logical forms from syntactic reprs and
+    * wellformedness constraints on the output of those rules
+  * These assumptions about logical form are taken over from
+    Chomsky's "Revised Extended Standard Theory" (May 1977) and Reinhart (1976)
 * ~ rules discriminate between semantic categories, eg variables, operators, etc
- = * both that derive logical forms and
- =   that interpret them by assigning them file change potentials
- = * Here I will not go into such questions as
- =   how many and which semantic categories there are, and
- =   to what extent the syntactic category determines semantic category
- = * there are at least the following semantic categories and they include at
- =   least the kinds of things listed, whether as a matter of stipulation or of
- =   * variables: pronouns, empty NPs, indices on NPs with predicate heads
- =       (see below for illustration of the latter)
- =   * predicates: verbs, nouns;
- =   * operators: "every", negation
+  * both that derive logical forms and
+    that interpret them by assigning them file change potentials
+  * Here I will not go into such questions as
+    how many and which semantic categories there are, and
+    to what extent the syntactic category determines semantic category
+  * there are at least the following semantic categories and they include at
+    least the kinds of things listed, whether as a matter of stipulation or of
+    * variables: pronouns, empty NPs, indices on NPs with predicate heads
+        (see below for illustration of the latter)
+    * predicates: verbs, nouns;
+    * operators: "every", negation
 * rules and constraints that define the relation between the
- = syntactic representation of a sentence and its logical form
- = * I will be very informal and incomplete here
+  syntactic representation of a sentence and its logical form
+  * I will be very informal and incomplete here
 (12) = She hit it
- =     A cat arrived
- =     Every cat died
+      A cat arrived
+      Every cat died
 * general assumptions about logical forms:
- = * Every NP in logical form carries a numerical index
- = * Only variables occur in the argument positions of predicates
- = * NPs that are not variables, i.e. those headed by predicates,
- =   are adjoined to their scopes and coindexed with their argument position
- = * Operators are adjoined as sisters to their argument(s)
- =   * Most operators are 2-place operators, in particular the quantifiers;
- =   * some may be 1-place, e.g.  negation
+  * Every NP in logical form carries a numerical index
+  * Only variables occur in the argument positions of predicates
+  * NPs that are not variables, i.e. those headed by predicates,
+    are adjoined to their scopes and coindexed with their argument position
+  * Operators are adjoined as sisters to their argument(s)
+    * Most operators are 2-place operators, in particular the quantifiers;
+    * some may be 1-place, e.g.  negation
 * how these assumptions follow from the interaction between
- = rules of logical-form-construction,
- = wellformedness constraints on logical forms, and
- = limitations on semantic interpretability
+  rules of logical-form-construction,
+  wellformedness constraints on logical forms, and
+  limitations on semantic interpretability
 * contrast between structures (12b) and (12c)
- = * due to an assumption on which determiners are operators
- = * the articles "a" and "the" are not, "every" is
+  * due to an assumption on which determiners are operators
+  * the articles "a" and "the" are not, "every" is
 * What then is the semantic category of articles? None at all
- = * They are treated as though they weren't there at all (when sem interpret)
+  * They are treated as though they weren't there at all (when sem interpret)
 * What I have so far said about semantic categorization
- = applies only to lexical items and other basic units, and
- = fails for the complex building blocks of logical forms, such as
- = S-constituents and predicate-headed NP-constituents
+  applies only to lexical items and other basic units, and
+  fails for the complex building blocks of logical forms, such as
+  S-constituents and predicate-headed NP-constituents
 * complex constituents are propositions if any categ
- = * With some simplification
- = * all complex constituents that are of any semantic category at all are propos
- = * These subdivide into
- =   * atomic propositions, which consist of a predicate and its arguments, and
- =   * molecular propositions, which are made up of other propositions and
- =     may or may not involve an operator
+  * With some simplification
+  * all complex constituents that are of any semantic category at all are propos
+  * These subdivide into
+    * atomic propositions, which consist of a predicate and its arguments, and
+    * molecular propositions, which are made up of other propositions and
+      may or may not involve an operator
 * two kinds of atomic propositions
- = * dominated by S and made up of a verb and its subject & complements (if any),
- =   where the verb is the predicate and the variables in the subject and
- =   complement positions are its arguments
- =   * In (12), [_S she_1 hit it_2 ], [_S e_1 arrived], and [_S e_1 died]
- =     exemplify this kind of atomic proposition
- = * have a noun as the predicate, in which case the dominating node is NP
- =   * (12) contains the examples `[ NP_1 a cat]` and `[ NP_{1--} cat]`
- =   * always have one of their arguments realized as a mere numerical index
- =     which appears on the dominating NP-node. "Cat", for instance, is a 1-place
- =     predicate, and its argument in the examples just cited is the index 1
- =   * This is why I included "indices on NPs with predicate heads" in the above
- =     list of variables
+  * dominated by S and made up of a verb and its subject & complements (if any),
+    where the verb is the predicate and the variables in the subject and
+    complement positions are its arguments
+    * In (12), [_S she_1 hit it_2 ], [_S e_1 arrived], and [_S e_1 died]
+      exemplify this kind of atomic proposition
+  * have a noun as the predicate, in which case the dominating node is NP
+    * (12) contains the examples `[ NP_1 a cat]` and `[ NP_{1--} cat]`
+    * always have one of their arguments realized as a mere numerical index
+      which appears on the dominating NP-node. "Cat", for instance, is a 1-place
+      predicate, and its argument in the examples just cited is the index 1
+    * This is why I included "indices on NPs with predicate heads" in the above
+      list of variables
 
 # 6 Logical Forms and their File Change Potentials 9
 
@@ -235,143 +235,143 @@ Irene Heim
 * F + p = F'
 * I will characterize only how the satisfaction set is affected ie "Sat (F + p)"
 * by means of a recursive definition
- = * the file changes induced by atomic propositions and then characterize
- = * the file changes that molecular propositions bring about
+  * the file changes induced by atomic propositions and then characterize
+  * the file changes that molecular propositions bring about
 * The files can now be described as follows:
 ```
- = Dom(F 1) = Dom(F_2) = {1, 2}
- = Sat(F 1) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, and a_2 bit a 1}
- = Sat(F_2) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, a_2 bit a 1, and
- =                                                                   a 1 hit a_2}
+  Dom(F 1) = Dom(F_2) = {1, 2}
+  Sat(F 1) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, and a_2 bit a 1}
+  Sat(F_2) = {<a 1, a_2 >: a 1 is a woman, a_2 is a dog, a_2 bit a 1, and
+                                                                    a 1 hit a_2}
 ```
 * the transition from Sat (F 1) to Sat (F_2) consists in
- = eliminating from Sat (F 1) all those pairs which
- = fail to satisfy the sentence being processed,
- = i.e. those pairs which fail to stand in the relation that the predicate of the
- = sentence denotes, in this case the relation of hitting
- = `Sat(F_2) = {<a 1, a_2 >: <a 1, a_2 > \in Sat(F 1)
- =                                               and <a 1, a_2 > \in Ext("hit")}
- = * (I write "Ext" for "the extension of".)
- = The general rule (subject to later revision):
- = (13) Let F be a file, and let p be an atomic proposition that consists of
- = an n-place predicate R and an n-tuple of variables whose indices are i_1,..i_n
- = `Sat(F + p) = {a N : a N \in Sat(F) and <a_{i_1}, ..., a_{i_n}> \in Ext(R)}`
- = Applied to the file F 1 and the logical form (12a), (13) gives us:
- = Sat(F 1 + (12a)) = Sat(F_2), as intended
+  eliminating from Sat (F 1) all those pairs which
+  fail to satisfy the sentence being processed,
+  i.e. those pairs which fail to stand in the relation that the predicate of the
+  sentence denotes, in this case the relation of hitting
+  `Sat(F_2) = {<a 1, a_2 >: <a 1, a_2 > \in Sat(F 1)
+                                               and <a 1, a_2 > \in Ext("hit")}`
+  * (I write "Ext" for "the extension of".)
+  The general rule (subject to later revision):
+  (13) Let F be a file, and let p be an atomic proposition that consists of
+  an n-place predicate R and an n-tuple of variables whose indices are i_1,..i_n
+  `Sat(F + p) = {a N : a N \in Sat(F) and <a_{i_1}, ..., a_{i_n}> \in Ext(R)}`
+  Applied to the file F 1 and the logical form (12a), (13) gives us:
+  Sat(F 1 + (12a)) = Sat(F_2), as intended
 * the choice of indices in the logical form that grammar provides for the
- = sentence "She hit it": there are infinitely many
- = * We also have to say something to explain that despite the infinity of
- =   logical forms, real-life utterances can be immediately understood unambigly
- = * To appreciate the problem, put yourself into the imaginary file clerk's shos
+  sentence "She hit it": there are infinitely many
+  * We also have to say something to explain that despite the infinity of
+    logical forms, real-life utterances can be immediately understood unambigly
+  * To appreciate the problem, put yourself into the imaginary file clerk's shos
 * How to excluded
- = (a) _She 1 hit it 1_ is easy to exclude: there is
- = * a well-known constraint, called "Disjoint Reference"
- =   * a wellformedness condition on some level of representation in the grammar
- = (b) She 3 hit it 7 :
- =   * the file clerk must take into account what his current file looks like
- =   * a principle that constrains the choice of logical form relative to a file.
- =   * The principle, which I call the "Novelty/Familiarity Condition", is this:
- =     (15) Let F be a file, p an atomic proposition. Then
- =     p is appropriate with respect to F only if,
- =     for every noun phrase NP_i with index i that p contains:
- =     if NP i is definite, then i \in Dom(F), and
- =     if NP i is indefinite, then i \notin Dom(F)
- =   * (14b) contains two definite NPs, "she 3 " and "it 7 ", whose indices fail
- =   * we must generally assume that NPs in logical form are marked for defness
+  (a) _She 1 hit it 1_ is easy to exclude: there is
+  * a well-known constraint, called "Disjoint Reference"
+    * a wellformedness condition on some level of representation in the grammar
+  (b) She 3 hit it 7 :
+    * the file clerk must take into account what his current file looks like
+    * a principle that constrains the choice of logical form relative to a file.
+    * The principle, which I call the "Novelty/Familiarity Condition", is this:
+      (15) Let F be a file, p an atomic proposition. Then
+      p is appropriate with respect to F only if,
+      for every noun phrase NP_i with index i that p contains:
+      if NP i is definite, then i \in Dom(F), and
+      if NP i is indefinite, then i \notin Dom(F)
+    * (14b) contains two definite NPs, "she 3 " and "it 7 ", whose indices fail
+    * we must generally assume that NPs in logical form are marked for defness
 * other conditions on when a logical form is appropriate w.r.t. a file
- = * Much of what has been discussed under the name of "presupposition"
+  * Much of what has been discussed under the name of "presupposition"
 * the Novelty/Familiarity Condition (15) will still let through some unwanted
- = eg (c) She 2 hit it 1 :
- = * we need some account of gender, which I will not provide here
- = * different kinds of definites, e.g. personal pronouns differ from
- =   definite descriptions
- =   * Another problem whose solution I must leave for another occasion
+  eg (c) She 2 hit it 1 :
+  * we need some account of gender, which I will not provide here
+  * different kinds of definites, e.g. personal pronouns differ from
+    definite descriptions
+    * Another problem whose solution I must leave for another occasion
 * molecular
- = * an example with an indefinite, such as the sentence "A cat arrived"
- = * logical forms is (12b), from above, this time with the definiteness filled
- = * To determine the file change that (12b) induces, we will have to consider
- =   two questions:
- =   1. since (12b) is a molecular proposition, we have to ask ourselves
- =     how its overall effect on the file may be calculated on the basis of the
- =     file changes that each of its two parts would induce
- =   2. which rules of file change pertain to each of those parts?
+  * an example with an indefinite, such as the sentence "A cat arrived"
+  * logical forms is (12b), from above, this time with the definiteness filled
+  * To determine the file change that (12b) induces, we will have to consider
+    two questions:
+    1. since (12b) is a molecular proposition, we have to ask ourselves
+      how its overall effect on the file may be calculated on the basis of the
+      file changes that each of its two parts would induce
+    2. which rules of file change pertain to each of those parts?
 1. We compute the file change of (12b) as a whole by subjecting the file
- = first to the change that the left constituent dictates, and
- = subsequently to the file change that the right constituent dictates
- = * successive left-to-right mode of file change is this:
+  first to the change that the left constituent dictates, and
+  subsequently to the file change that the right constituent dictates
+  * successive left-to-right mode of file change is this:
 (18) Let F be a file, and let p be an atomic proposition that consists of
- = an n-place predicate R and an n-tuple of variables whose indices are
- = i1..i_n respectively. Then:
+  an n-place predicate R and an n-tuple of variables whose indices are
+  i1..i_n respectively. Then:
 `Sat(F + p) = {a N \cup b M \in A N \cup M : a N \in Sat(F),
- =                 M = {i 1, ..., i n}, and <b i 1, ..., b i n > \in Ext(R)}`
- = * \cup in unification of sequences
- =   * the union of two sequences is itself a sequence just in case they coincide
- =     on their common domain
- = * allows for cases where F + p has a larger domain than F
- = * informally, (18) says that every sequence in Sat(F + p) has to include as
- =   sub-sequences a sequence `a_N` satisfying F and a sequence b M satisfying the
- =   proposition pl
- =   * Whenever you can find an a N satisfying F and a b M satisfying p, where
- =     a N and b M agree on the intersection of their domains, link them together
- =     and the result, a N \cup b M, will be a member of Sat(F + p)
- = * That a N and b M have to agree on the common part of their domains is
- =   expressed in (18) by requiring "a N \cup b M \in A N \cup M"
- = * A^{N\cupM} denotes the set of functions from N \cup M into A, and
+                  M = {i 1, ..., i n}, and <b i 1, ..., b i n > \in Ext(R)}`
+  * \cup in unification of sequences
+    * the union of two sequences is itself a sequence just in case they coincide
+      on their common domain
+  * allows for cases where F + p has a larger domain than F
+  * informally, (18) says that every sequence in Sat(F + p) has to include as
+    sub-sequences a sequence `a_N` satisfying F and a sequence b M satisfying the
+    proposition pl
+    * Whenever you can find an a N satisfying F and a b M satisfying p, where
+      a N and b M agree on the intersection of their domains, link them together
+      and the result, a N \cup b M, will be a member of Sat(F + p)
+  * That a N and b M have to agree on the common part of their domains is
+    expressed in (18) by requiring "a N \cup b M \in A N \cup M"
+  * A^{N\cupM} denotes the set of functions from N \cup M into A, and
 * Returning to our example, assume for concreteness that we start out with the
 (21) p is
- = true w.r.t. F if F + p is true,
- = false w.r.t. F if F + p is false, and
- = truth-value-less w.r.t. F if F + p is undefined
- = * makes reference to the notion of truth that I defined for files in (11)
- = * equates the truth conditions of what is being said with those of the
- =   resulting file
- = * limited to cases where we can assume the truth of the file we start out
+  true w.r.t. F if F + p is true,
+  false w.r.t. F if F + p is false, and
+  truth-value-less w.r.t. F if F + p is undefined
+  * makes reference to the notion of truth that I defined for files in (11)
+  * equates the truth conditions of what is being said with those of the
+    resulting file
+  * limited to cases where we can assume the truth of the file we start out
 
 # 7 The Non-quantificational Analysis of Indefinites 14
 
 * I am only half way through with my recursive set of rules for assigning fil ch
 * take a break and have a critical look at the present analysis of indef NPs
- = * compares with the widely accepted Russellian analysis
- = * "quantificational analysis of indefinites", as I will call it
- = * Russell (1919); the indefinite article is treated as an existential quantif
- =   and sentences of the form (22) are assigned logical analyses of roughly the
- =   form (23)
- = "A cat arrived", for instance, would be logically analyzed as:
- = "\exists x (cat(x) & x arrived)"
- = * accepted by the vast majority of philosophers and linguists
+  * compares with the widely accepted Russellian analysis
+  * "quantificational analysis of indefinites", as I will call it
+  * Russell (1919); the indefinite article is treated as an existential quantif
+    and sentences of the form (22) are assigned logical analyses of roughly the
+    form (23)
+  "A cat arrived", for instance, would be logically analyzed as:
+  "\exists x (cat(x) & x arrived)"
+  * accepted by the vast majority of philosophers and linguists
 * This paper contains what I will call a "non-quantific analysis of indefs"
- = * an indefinite is just a proposition with a variable free in it
- = * eg "a cat" corresponds to something like "cat(x)"
- = * the logical analysis of that sentence is again a proposition with a free var
- =   Y(x) & (X x Z)
+  * an indefinite is just a proposition with a variable free in it
+  * eg "a cat" corresponds to something like "cat(x)"
+  * the logical analysis of that sentence is again a proposition with a free var
+    Y(x) & (X x Z)
 * This section is intended to bring to bear some linguistic evidence
 * But first let me clarify to what extent the two analyses agree in their predic
 * my theory predicts existential truth-conditions for such sentences
- = * By the truth criterion (21) for logical forms, we know that (12b) is true
- =   * Dom(F) must not contain 1, for F  (12b) to be defined
- =   * Sat(F (12b)) must be non-empty
- =   Rules (16) and (18) determine that Sat(F + (12b)) = {a N \cup b {1} \in
- =   A^N\cup{1} : a N \in Sat(F), b 1 is a cat, and b 1 arrived}
- = * just in case there is at least one cat that arrived
- = * the proof did not depend on any particular properties of F other than that
- =   it be true and that (12b) be appropriate w.r.t. it
- = * because the truth of a file has existential quantification built into it:
- =   * defined as there being at least one satisfying sequence
- = * So my disagreement with the quantificational analysis of indefinites is
- =   * not a disagreement about whether or not we understand statements with
- =     indefinites in them as existentially quantified
- =   * what is to be held responsible for the existential force
- = * find any empirical evidence that will discriminate between these two views,
- =   * We will have to resort to relatively indirect evidence like the following
+  * By the truth criterion (21) for logical forms, we know that (12b) is true
+    * Dom(F) must not contain 1, for F  (12b) to be defined
+    * Sat(F (12b)) must be non-empty
+    Rules (16) and (18) determine that Sat(F + (12b)) = {a N \cup b {1} \in
+    A^N\cup{1} : a N \in Sat(F), b 1 is a cat, and b 1 arrived}
+  * just in case there is at least one cat that arrived
+  * the proof did not depend on any particular properties of F other than that
+    it be true and that (12b) be appropriate w.r.t. it
+  * because the truth of a file has existential quantification built into it:
+    * defined as there being at least one satisfying sequence
+  * So my disagreement with the quantificational analysis of indefinites is
+    * not a disagreement about whether or not we understand statements with
+      indefinites in them as existentially quantified
+    * what is to be held responsible for the existential force
+  * find any empirical evidence that will discriminate between these two views,
+    * We will have to resort to relatively indirect evidence like the following
 * certain undebatable cases of quantifying NPs are subject to tighter
- = restrictions on anaphora than certain other NPs
+  restrictions on anaphora than certain other NPs
 (25) Every soldier is armed. He will shoot
 (26) He is armed. He will shoot
 * 26: The two "he"'s can be anaphorically related in (26), but
 * 25: no anaphoric relation is possible between "every soldier" and "he" in
- = * Why should this be so? ± An explanation suggests itself if we
- = * assume that "every" is a quantifier, pronouns are variables, and
- =   (25) and (26) have logical analyses of essentially these forms:
+  * Why should this be so? ± An explanation suggests itself if we
+  * assume that "every" is a quantifier, pronouns are variables, and
+    (25) and (26) have logical analyses of essentially these forms:
 (25') \forall x i (soldier (x i) ~> armed (x i)) & (x j will shoot)
 (26') armed (x i) & (x j will shoot)
 * Is i = j or i != j?
@@ -569,13 +569,13 @@ See Heim (1982)
 
 
 
-11. When I say (here and elsewhere in this article) that the indefinite is not a
- =   quantifier, I am of course not using "quantifier" in the sense of Barwise
- =   and Cooper (1981). In their sense of "quantifier", anything that denotes a
- =   function from predicate-meanings to proposition-meanings is a quantifier,
- =   and every kind of NP, even proper names and pronouns, can therefore be
- =   construed as quantifiers
-12. = The relevant notion of "vacuity" could be defined as follows:
+11. When I say (here and elsewhere in this article) that the indefinite is not
+    a quantifier, I am of course not using "quantifier" in the sense of Barwise
+    and Cooper (1981). In their sense of "quantifier", anything that denotes a
+    function from predicate-meanings to proposition-meanings is a quantifier,
+    and every kind of NP, even proper names and pronouns, can therefore be
+    construed as quantifiers
+12. The relevant notion of "vacuity" could be defined as follows:
 
 
 

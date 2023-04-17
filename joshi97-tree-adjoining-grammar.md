@@ -3,7 +3,7 @@ Tree-Adjoining Grammars
 
 # Introduction
 
-* derivation `trees' for the object language trees
+* derivation _trees_ for the object language trees
 * mildly context-sensitive
 * making constraints strictly local
 
