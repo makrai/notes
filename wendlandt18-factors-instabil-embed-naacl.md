@@ -15,7 +15,7 @@ naacl 2018
 * Using the overlap between nearest neighbors as a measure of stability
 * eg training word2vec on the Penn Treebank (PTB, Marcus+ 1993)
   * medium-frequency words, which show huge variance in stability
-* we explore three different embedding methods:
+* we explore three embedding methods:
   PPMI (Bullinaria & Levy, 07), word2vec (Mikolov+ 13b), GloVe (Pennington+ 14)
 * previously studied. Particularly, the effect of
   parameter choices has a large impact on how all three of these algorithms
@@ -26,14 +26,14 @@ naacl 2018
   optimal parameters for negative sampling and the number of epochs
   * word properties, such as word ambiguity, affect embedding quality
 * Antoniak and Mimno (2018) evaluates how document properties affect stability
-  * to analyze language (eg, Garg+ 2018), rather than to perform tasks
+  * to analyze language (eg Garg+ 2018), rather than to perform tasks
   * Nikhil Garg, Londa Schiebinger, Dan Jurafsky, and James Zou
     PNAS 2018
     Word embeddings quantify 100 years of gender and ethnic stereotypes
 * Tan+ (2015) linearly transforming between Twitter and Wikipedia
 * second-order properties of embeddings
-  (eg, how a word relates to the words around it)
-  * NewmanGriffis and Fosler-Lussier (2017) demonstrating that
+  (eg how a word relates to the words around it)
+  * Newman-Griffis and Fosler-Lussier (2017) demonstrating that
     embeddings based on second-order properties perform as well as the
     typical first-order embeddings
   * we use second-order properties of embeddings to quantify stability
@@ -46,12 +46,12 @@ naacl 2018
   * Let the stability be the average percent overlap
     over every pair of embedding spaces (x, y)
 * The idea of evaluating ten best options is also found in other tasks, like
-  * lexical substitution (eg, McCarthy and Navigli, 2007) and
-  * word association (eg, Garimella+ 2017)
+  * lexical substitution (eg McCarthy and Navigli, 2007) and
+  * word association (eg Garimella+ 2017)
 * how changing the number of nearest neighbors affects our stability metric,
   * Figure 2
   * Ten nearest neighbors performs approximately as well as a higher number
-    of nearest neighbors (eg, 100). ?
+    of nearest neighbors (eg 100). ?
     * it is computationally less intensive to use a small number of NNs
   * We see this pattern for low frequency words as well as for high frequency
     words

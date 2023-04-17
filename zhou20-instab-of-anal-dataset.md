@@ -13,7 +13,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   * we: a thorough empirical study over analysis sets
   * instability exists all along the training curve
   * lower-than-expected correlations
-    between the analysis validation set and standard validation set,
+    between the _analysis_ validation set and standard validation set,
     questioning the effectiveness of the current model-selection routine
 * Where does this instability come from?
   * both theoretical explanations and empirical evidence
@@ -101,7 +101,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 
 ## NLI and RC Analysis
 
-* In NLI, some analyses target
+* NLI
   * word/phrase level lexical/semantic inference
     (Glockner+ 2018; Shwartz and Dagan, 2018; Carmona+ 2018)
   * syntactic-related (McCoy+ 2019b; Nie+ 2019; Geiger+ 2019)
