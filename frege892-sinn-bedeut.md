@@ -131,10 +131,10 @@ Gottlob Frege
   * A proper name (word, sign, sign combination, expression) expresses its
     sense, stands for or designates its reference
   * By means of a sign we express its sense and designate its reference.
-* Idealists or sceptics will perhaps long since have objected: `You talk,
+* Idealists or sceptics will perhaps long since have objected:
   * how do you know that the name `the Moon`/anything has any reference? How do
   * when we say `the Moon,` we do not intend to speak of our idea or the sense
-  * we presuppose a reference. To assume that in the sentence `The Moon is
+  * we presuppose a reference. To assume that in the sentence _The Moon is_
   * the speakers can of course be mistaken in the presupposition, and
     * perhaps always mistaken
   * need not be answered here;
@@ -157,7 +157,7 @@ Gottlob Frege
   * Is it possible that a sentence as a whole has only a sense, but no ref? At
     * just as there are parts of sentences having sense but no reference. And
     * yes, sentences which contain proper names without reference will be of
-      The sentence `Odysseus was set ashore at Ithaca while sound asleep'
+      The sentence _Odysseus was set ashore at Ithaca while sound asleep_
       obviously has a sense.
     * But since it is doubtful whether the name `Odysseus`, has reference, it is
       also doubtful whether the whole sentence has one. ret
@@ -220,8 +220,8 @@ thoughts to the level of reference (the objective) has already been taken.
 * the reference of a sentence is its truth value is correct
   => truth must remain unchanged when a part of the sentence is replaced by an
     expression having the same reference. And this is in fact the case. Leibniz
-    gives the definition: `Eadem sunt, quae sibi mutuo substitui possunt, salva
-    veritate.' What else but the truth value could be found, that belongs quite
+    gives the definition: _Eadem sunt, quae sibi mutuo substitui possunt, salva
+    veritate._ What else but the truth value could be found, that belongs quite
     generally to every sentence if the reference of its components is relevant,
     and remains unchanged by substitutions of the kind in question?
   * Judgments can be regarded as advances from a thought to a truth value.
@@ -254,7 +254,7 @@ thoughts to the level of reference (the objective) has already been taken.
     words to have their indirect reference coinciding with what is customarily sen
     * the subordinate clause has for its
       reference a thought, not a truth value;
-      sense not a thought, but the sense of the words `the thought, that ...
+      sense not a thought, but the sense of the words _the thought, that ..._
       * only a part of the thought in the entire complex sentence
   * after `say,` `hear,` `be of the opinion,` `be convinced,` `conclude,` and
     similar words: above
@@ -263,9 +263,9 @@ thoughts to the level of reference (the objective) has already been taken.
     the reference of the subordinate clause is in fact the thought
     can also be recognized by seeing that it is indifferent to the truth of the
     whole whether the subordinate clause is true or false.
-  * eg `Copernicus believed that the planetary orbits are circles' and
-       `Copernicus believed that the apparent motion of the sun is produced by
-         the real motion of the Earth.`
+  * eg _Copernicus believed that the planetary orbits are circles_ and
+       _Copernicus believed that the apparent motion of the sun is produced by
+         the real motion of the Earth._
     * One subordinate clause can be substituted for the other without harm to
       the truth. The main clause and the subordinate clause together have as
       their
@@ -279,8 +279,8 @@ case it could always be replaced by another sentence of the same truth
 value; he would prove too much; one might just as well claim that the
 reference of `morning star` is not Venus, since one may not always say
 `Venus` in place of `morning star.` One has the right to conclude only that
-the reference of a sentence is not always its truth value, and that `morning
-star' does not always stand for the planet Venus, viz. when the word has
+the reference of a sentence is not always its truth value, and that _morning
+star_ does not always stand for the planet Venus, viz. when the word has
 its indirect reference. An exception of such a kind occurs in the subordinate
 clause just considered which has a thought as its reference.
 
@@ -295,9 +295,9 @@ so convinced he could not have been pleased that the Prussians
 were coming -even though in fact they might have been already approaching.
 
 Just as a conviction or a belief is the ground of a feeling, it can, as in
-inference, also be the ground of a conviction. In the sentence: `Columbus
+inference, also be the ground of a conviction. In the sentence: _Columbus
 inferred from the roundness of the Earth that he could reach India by
-travelling towards the west,' we have as the reference of the parts two
+travelling towards the west,_ we have as the reference of the parts two
 thoughts, that the Earth is round, and that Columbus by travelling to the
 west could reach India. All that is relevant here is that Columbus was
 convinced of both, and that the one conviction was a ground for the other.
@@ -318,8 +318,8 @@ of its own.' Here also we have the indirect reference of the words.
   * The reference of such a clause is therefore not a truth value but a command,
     a request, and so forth.
 
-* similar: dependent question in phrases such as `doubt whether,` `not to know
-  what.` It is easy to see that here also the
+* similar: dependent question in phrases such as _doubt whether,_ _not to know
+  what._ It is easy to see that here also the
   * words are to be taken to have their indirect reference
 * Dependent clauses expressing questions and beginning, with `who,` `what,`
   `where,` `when,` `how,` `by what means,` etc., seem at times to
@@ -435,13 +435,11 @@ actually always be assured of reference, by means of a special stipulation, e.g.
 convention that 0 shall count as its reference, when the concept applies to no object or to
 more than one.
 y In the case of these sentences, various interpretations are easily possible. The sense of the
-sentence, `After Schleswig-Holstein was separated from Denmark, Prussia and Austria
-quarrelled' can also be rendered in the form `After the separation of Schleswig-Holstein
-
-=50
+sentence, _After Schleswig-Holstein was separated from Denmark, Prussia and Austria
+quarrelled_ can also be rendered in the form _After the separation of Schleswig-Holstein_
 
 
-Gottlob Frege
+
 
 clauses.) In so far as each indicator refers to the other, both clauses
 together form a connected whole, which as a rule expresses only a single
@@ -467,10 +465,9 @@ If an instant of time is to be indefinitely indicated in both conditional
 and dependent clauses, this is often achieved merely by using the present
 tense of the verb, which in such a case however does not indicate the
 temporal present. This grammatical form is then the indefinite indicator
-in the main and subordinate clauses. An example of this is: `When the
-
+in the main and subordinate clauses. An example of this is: _When the
 Sun is in the tropic of Cancer, the longest day in the northern hemisphere
-from Denmark, Prussia and Austria quarrelled.' In this version, it is surely sufficiently clear
+from Denmark, Prussia and Austria quarrelled._ In this version, it is surely sufficiently clear
 that the sense is not to be taken as having as a part the thought that Schleswig-Holstein was
 once separated from Denmark, but that this is the necessary presupposition in order for the
 expression `after the separation of Schleswig-Holstein from Denmark` to have any reference
@@ -501,13 +498,12 @@ indefinitely indicated.
 
 It is clear that noun clauses with `who` or `what` and adverbial clauses
 with `where,` `when,` `wherever,` `whenever` are often to be interpreted
-as having the sense of conditional clauses, e.g. `who touches pitch, defiles
-himself.'
+as having the sense of conditional clauses, e.g. _who touches pitch, defiles himself._
 
-Adjective clauses can also take the place of conditional clauses. Thus
-the sense of the sentence previously used can be given in the form `The
-square of a number which is less than 1 and greater than 0 is less than
-1 and greater than 0.'
+Adjective clauses can also take the place of conditional clauses. Thus the
+sense of the sentence previously used can be given in the form _The square of a
+number which is less than 1 and greater than 0 is less than 1 and greater than
+0._
 
 The situation is quite different if the common component of the two
 clauses is designated by a proper name. In the sentence:
@@ -587,9 +583,9 @@ reference, so that the reference, not the sense, of the subordinate clause is
 * Similarly in the case of `but,` `yet.`
 y
 
-The thought of our sentence might also be expressed thus: `Either the Sun has not risen
-yet or the sky is very cloudy' -which shows how this kind of sentence connexion is to be
-understood.
+The thought of our sentence might also be expressed thus: _Either the Sun has
+not risen yet or the sky is very cloudy_ -which shows how this kind of sentence
+connexion is to be understood.
 
 =On Sense and Reference
 
@@ -675,19 +671,17 @@ truth value. Since the truth value is not the whole reference of the subordinate
 truth value. Similar considerations apply to expressions such as `know,`
 `discover,` `it is known that.`
 
-By means of a subordinate causal clause and the associated main clause
-we express several thoughts, which however do not correspond separately to the original clauses. In the sentence: `Because ice is less dense
-than water, it floats on water' we have
-(1)
-(2)
-(3)
+By means of a subordinate causal clause and the associated main clause we
+express several thoughts, which however do not correspond separately to the
+original clauses. In the sentence: _Because ice is less dense than water, it
+floats on water_ we have
+(1) Ice is less dense than water;
+(2) If anything is less dense than water, it floats on water;
+(3) Ice floats on water.
 
 
-Ice is less dense than water;
 
-If anything is less dense than water, it floats on water;
 
-Ice floats on water.
 
 
 The third thought, however, need not be explicitly introduced, since it is
@@ -779,19 +773,12 @@ different.
 
 
 Translator's Notes
-1 The reference is to Frege's Begriffsschrift, eine der arithmetischen nachgebildete
-
-Formelsprache des reinen Denkens (Halle, 1879).
-= ber Begriff und Gegenstand' (Vierteljahrsschrift f=r wissenschaftliche
-2 See his `U
-
-Philosophie XVI [1892], 192--205).
-= ber Begriff und Gegenstand' (Vierteljahrsschrift f=r wissenschaftliche
-3 See his `U
-
-Philosophie XVI [1892], 192--205).
-4 A literal translation of Frege's `abstracten Nennsa=tzen` whose meaning eludes
-me.
-5 Frege uses the Prussian name for the battle -`Belle Alliance.`
-
-=
+1. The reference is to Frege's Begriffsschrift, eine der arithmetischen
+   nachgebildete Formelsprache des reinen Denkens (Halle, 1879).  = ber Begriff
+   und Gegenstand' (Vierteljahrsschrift f=r wissenschaftliche
+2. See his `U Philosophie XVI [1892], 192--205).  = ber Begriff und Gegenstand'
+   (Vierteljahrsschrift f=r wissenschaftliche
+3. See his `U Philosophie XVI [1892], 192--205).
+4. A literal translation of Frege's `abstracten Nennsa=tzen` whose meaning
+   eludes me.
+5. Frege uses the Prussian name for the battle -`Belle Alliance.`
