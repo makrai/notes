@@ -20,8 +20,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   * mainly comes from high inter-example correlations within analysis sets
 * How should we handle this instability and what are potential solutions?
   * we: initial attempt to mitigate the instability
-  * guidelines for future work: reporting the decomposed variance for more
-    interpretable results and fair comparison across models
+  * guidelines for future work: reporting the decomposed variance
+    for more interpretable results and fair comparison across models
 
 # 1 Introduction
 
@@ -30,7 +30,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   SOTA results have reached or even surpassed the estimated human performance
   on certain benchmark datasets (Wang+ 2019; Rajpurkar+ 2016a, 2018)
 * Auxiliary analysis datasets for debugging and understanding models
-  * a new trend of research to analyze what NLU and reasoning skills are achived
+  * a new trend of research to analyze the achived NLU and reasoning skills
   * analysis approaches to examine models’ ability to capture diff ling phenoms
     (eg named entities, syntax, lexical inference, etc)
   * Those studies are often conducted in 3 steps:
@@ -43,10 +43,11 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
     Adversarial examples for evaluating reading comprehension systems
     EMNLP 2017
   * surface pattern overfitting (Gururangan+ 2018)
-  * McCoy+ (2019a): the results of different runs of BERT NLI models have large
-    non-negligible variances on the HANS (McCoy+ 2019b) analysis datasets,
+  * McCoy+ (2019a): the results of different runs of BERT NLI models have
+    large variances on the HANS (McCoy+ 2019b) analysis datasets,
     contrasting sharply with their stable results on standard validation set
-    across multiple seeds => concerns regarding
+    across multiple seeds
+    => concerns regarding
     * the reliability of results on those datasets,
     * the conclusions made upon these results, and
     * lack of reproducibility (Makel+ 2012)
@@ -66,8 +67,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
       development set have low correlation => hard to draw any construv conclus
       * questioning the effectiveness of the standard model-selection routine
   2. theoretical explanations behind this instability
-    * inter-examples correlation within the dataset is the dominating factor
-      causing this performance instability
+    * inter-examples correlation within the dataset is
+      the dominating factor causing this performance instability
     * the variance of model accuracy on the entire analysis set can be decomped
       1. the sum of single-data variance
       (the variance caused by individual pred randomness on each example)
@@ -167,13 +168,13 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 
 ### Instability in Final Performance
 
-* Fig. 2, the results of different runs for BERT, RoBERTa, and XLNet are highly
-  stable on MNLI-m, MNLI-mm, and SNLI => model performance on standard
+* Fig. 2, the results of different runs for BERT, RoBERTa, and XLNet are
+  highly stable on MNLI-m, MNLI-mm, and SNLI => model performance on standard
   validation datasets regardless of domain consistency are fairly stable
   * Here SNLI and MNLI-m share the same domain as the training set while
     MNLI-mm is from different domains
-* This stability also holds on some analysis sets, especially on SNLI-hard,
-  which is a strict subset of the SNLI validation set
+* This stability also holds on some analysis sets,
+  especially on SNLI-hard, which is a strict subset of the SNLI validation set
 * hE noticeable high variances on some analysis sets
   * most significant ones are on STR-NU and HANS where
     points are sparsely scattered with a
@@ -191,8 +192,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
 ### Fluctuation in Training Trajectory
 
 * We choose
-  * HANS and STR-NU as our example unstable analysis datasets because their
-    variances in final performance are the largest
+  * HANS and STR-NU as our example unstable analysis datasets because
+    their variances in final performance are the largest
   * SNLI and MNLI-m for standard validation set comparison
 * Fig. 1: the training curve
   * on MNLI and SNLI (the top two lines) is highly stable
@@ -235,7 +236,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
       examples are uniformly low, while
     * for unstable datasets (HANS), there exist clear groups of examples with
       very strong inter-correlation between their predictions
-    * suggests that those groups could be a major source of instability
+    * ie those groups could be a major source of instability
       if they contain samples with frequently changing predictions
 
 ## 4.2 Variance Decomposition
@@ -253,8 +254,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   * high-variance datasets are usually created with the help of synthetic rules
 * in Figure 4, clear boundaries of blocks of high-correlation examples in the
   right sub-figure (for HANS dataset)
-  * examples in HANS are ordered by its templates, examples in the same block
-    are created using the same template
+  * examples in HANS are ordered by its templates,
+    examples in the same block are created using the same template
     * synthetic rules may cause preds to be more correlated with each other =>
       the distributions of analysis datasets are less diverse
       than the distributions of standard datasets
@@ -270,7 +271,7 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   * analysis sets are often proposed as a single set without dev/test splits
   * In Sec. 4, we observe that models’ performances on analysis sets have
     little correlation with model performance on standard validation sets,
-    making the selection model routine useless for reducing performance
+    making the selection model routine useless for reducing performance instab
   * oracle model selection by dividing the original analysis set into an 80%
     analysis-dev dataset and a 20% analysis-test dataset
   * Model selection based on the high correlation between dev/test sets
@@ -279,8 +280,8 @@ code is publicly available at: https://github.com/owenzx/InstabilityAnalysis
   either MNLI or the corresponding analysis-dev
   * model selection on analysis-dev
     * helps increase the mean performance on several datasets 6
-      * especially on HANS, STR-O, and STRNU, indicating the expected high
-        correlation inside the analysis set
+      * especially on HANS, STR-O, and STRNU,
+        indicating the expected high correlation inside the analysis set
     * hE variances of final results are not always reduced for diff datasets
   * Hence, besides the performance instability caused by noisy model selection,
     different random seeds indeed lead to models with different performance on

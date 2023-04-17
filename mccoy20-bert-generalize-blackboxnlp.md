@@ -3,7 +3,7 @@ BERTs of a feather do not generalize together: Large variability in generaliz
 R. Thomas McCoy, Junghyun Min, Tal Linzen
 BlackboxNLP | EMNLP 2020
 
-The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
+The weights for all 100 fine-tuned models https://github.com/tommccoy1/hans
 
 # Abstract
 
@@ -57,7 +57,7 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
       * high level of consistency on labels for specific examples
         (eg 526 examples that all 100 instances labeled incorrectly)
     * In contrast, these 100 instances
-      varied dramatically in their out-of-distribution generalization perform
+      varied dramatically in their out-of-distribution generalization
       * on one of the thirty categories of examples in the HANS dataset,
         accuracy ranged from 4% to 76%
 * suggestion: when assessing the linguistic generalization of neural models,
@@ -93,7 +93,7 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
   * Liška+ (2018) trained 5000 instances of recurrent neural networks on the
     lookup tables task. Most of these instances failed on compositional
     generalization, but a small number generalized well
-* These works all used simple, synthetic tasks with
+* These works all used simple, synthetic tasks
   * training sets designed to exclude certain types of examples
   * we: natural-language training set that is not adversarially designed
 * concurrent work, Zhou+ (2020)
@@ -104,19 +104,19 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
       Consequences, source, and suggestions
     arXiv:2004.13606
   * impressive breadth, whereas we instead aim for depth
-    * We analyze the particular categories within HANS to give a fine-grained
-      investigation of syntactic generalization, while
+    * We analyze the particular categories within HANS to give a
+      fine-grained investigation of syntactic generalization, while
     * Zhou+ only report overall accuracy averaged across categories
     * we fine-tuned 100 instances of BERT, while Zhou+ only fine-tuned 10 insta
       * allows us to investigate the extent of the variability in more detail
 
 ## 2.3 Linguistic analysis of BERT
 
-* a deeper understanding of BERT, whether to assess its
+* a deeper understanding of BERT
   * encoding of sentence structure (Lin+ 2019; Hewitt and Manning, 2019;
     Chrupała and Alishahi, 2019; Jawahar+ 2019; Tenney+ 2019b)
   * representational structure more generally (Abnar+ 2019)
-  * handling of specific linguistic phenomena
+  * specific linguistic phenomena
     * subject-verb agreement (Goldberg, 2019),
     * negative polarity items (Warstadt+ 2019),
     * function words (Kim+ 2019)
@@ -125,6 +125,8 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
   * inductive biases (Warstadt and Bowman, 2020)
 * models without fine-tuning or only a small number of fine-tuning runs
   (usually only one fine-tuning run, or at most ten fine-tuning runs)
+
+# 3 Method
 
 # 4 Results
 
@@ -140,36 +142,34 @@ The weights for all 100 fine-tuned models https://github.com/tommccoy1/ hans
   answered incorrectly
   * Some of these examples arguably have incorrect labels in the dataset,
     such as (7) (because the hypothesis mentions a report which the premise
-    does not mention), so it is unsurprising that models found such examples
-    difficult
+    does not mention), so it is unsurprising that models found them difficult
   * Other consistently difficult examples involve areas that one might
     intuitively expect to be tricky for models trained on natural language,
     * world knowledge (eg (8) requires knowledge of how long forearms are, and
-      (9) requires knowledge of what nodding is), the
+      (9) requires knowledge of what nodding is)
     * ability to count (eg (10)), or
-    * fine-grained shades of meaning that might require multiple steps of
-      reasoning (eg (11) and (12))
+    * fine-grained shades of meaning that
+      might require multiple steps of reasoning (eg (11) and (12))
   * Some have a high degree of lexical overlap yet are not labeled entailment
-    (such as (13)); the difficulty of such examples adds further evidence to
-  * there are some examples, such as (14), for which it is unclear why models
-    find them so difficult
+    (such as (13)); the difficulty of such examples adds further evidence
+  * some examples, such as (14), for which it is unclear why they are difficult
 
 ## 4.2 Out-of-distribution generalization
 
 * HANS consists of 6 main categories of examples,
   each of which can be further divided into 5 subcategories
-  * Performance was reasonably consistent on five of these categories, but
+  * Performance was reasonably consistent on five of these categories
   * hE on the sixth category—lexical overlap examples that are inconsistent
-    with the lexical overlap heuristic—performance varied dramatically, ranging
-    from 5% accuracy to 55% accuracy (Figure 6). Since this is the most
+    with the lexical overlap heuristic—performance varied dramatically,
+    ranging from 5% accuracy to 55% accuracy (Figure 6)
     * we focus on it for the rest of the analysis
-    * examples for which the correct label is non-entailment and for which all
-      the words in the hypothesis also appear in the premise but not as a
-      contiguous subsequence
+    * examples for which the correct label is non-entailment and for which
+      all the words in the hypothesis also appear in the premise
+      but not as a contiguous subsequence
     * five subcategories; examples and results for each subcateg are in Fig 5
 * Chance performance on HANS was 50%;
-* on all subcategories except for passives, accuracies ranged from far below
-  chance to modestly above chance
+* on all subcategories except for passives,
+  accuracies ranged from far below chance to modestly above chance
 * Models varied considerably even on categories that humans find simple
   (McCoy+ 2019)
   * eg subject-object swap examples, which
