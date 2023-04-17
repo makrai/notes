@@ -275,7 +275,7 @@ In Ways of Scope Taking. Springer (1997)
   * to their relative interpretation I will return to in the Appendix
   * diagnostics of which position a DP occupies in the preverbal field follow:
     * Topics, but not other preverbal items, can be followed by sentential
-      adverbials like _tegnap_ `yesterday.'
+      adverbials like _tegnap_ _yesterday._
     * When a Topic or Quantifier precedes a non-negated finite verb that has a
       prefix, the prefix is in proclitic position
     * When a Focus or Predicate Operator precedes a non-negated finite verb that
@@ -799,7 +799,7 @@ In Ways of Scope Taking. Springer (1997)
   (58) Tegnap sok diákunk meg-betegedett.  HDistP
   (59) Tegnap sok diákunk betegedett meg.  PredOp
 * due to the possessive construction, they are both "presuppositional" and
-* the `many' phrases are interpretable as proportional in both cases. If this is
+* the _many_ phrases are interpretable as proportional in both cases. If this is
 * no standardly known reason for the sentences in (58) and (59) to be perceived
   as not meaning the same. But that is the perception no native speaker would be
   tempted to say otherwise, even though they might not be able to explicate the
