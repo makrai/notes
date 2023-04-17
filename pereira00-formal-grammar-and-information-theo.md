@@ -243,7 +243,7 @@ sleep ideas green colourless})}\approx 2\cdot 10^5\]
   partial-order and likelihood constraints but conflates linearization with
   argument structure
 * independence assumptions:
-  * Harris: `rough stability’ of the likelihood of a given argument of a given
+  * Harris: _rough stability_ of the likelihood of a given argument of a given
     operator ~~ implicitly assumes:
   * dependents are conditionally independent of the rest of an analysis given
     the head they depend (Markovian assumptions)
@@ -260,14 +260,13 @@ sleep ideas green colourless})}\approx 2\cdot 10^5\]
 * language-processing tasks as decision among a finite set of alternatives, or
   a ranking of alternatives
   1. classi­fy news into topics speci­fied by training examples;
-  1. a part-of-speech tagger assigns the most likely tags to the words in a
-  document;
+  1. a POS tagger assigns the most likely tags to the words in a document;
   1. a Web search engine ranks a set of Web pages according to their relevance
-  to a natural language(?) query;
+     to a natural language(?) query
   1. a speech recognizer decides among the possible transcriptions of a spoken
-  utterance
-  1. [(+1)] automatically trained machine translation (involve `understanding’
-  but questions can be left unanswered)
+     utterance
+  1. [(+1)] automatically trained machine translation (involve _understanding_
+     but questions can be left unanswered)
 * task
   1. narrow the class of mappings (to a learnable one)
   1. select a mapping from the class that minimizes some measure of the error
