@@ -74,12 +74,13 @@ for versions, see swadesh.md
 * cut, pull, dig, squeeze
   * it is frequently hard to match them in given languages, and
   * they belong to a distinctly lower level of stability
-* also interlingually ambiguous and unstable object words. Even body parts
-  include such terms as leg, back, guts, whose reference is fairly inclusive
-  and shades with one and two but drops the others.  that of other words. The
-  leg includes the foot, ankle, calf, shin, knee, thigh. Many languages have a
-  single word for foot and leg. Others make a distinction between the lower and
-  upper
+* also interlingually ambiguous and unstable [phys] object words
+  * Even body parts include such terms as leg, back, guts, whose
+    reference is fairly inclusive and shades with one and two but drops the
+    others.  that of other words
+  * The leg includes the foot, ankle, calf, shin, knee, thigh
+  * Many languages have a single word for foot and leg
+  * Others make a distinction between the lower and upper
 
 ## 4.5. Potential duplication
 
