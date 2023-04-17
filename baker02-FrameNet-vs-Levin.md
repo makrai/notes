@@ -30,8 +30,8 @@ ACL 2002
 * Levin narrower: Levin Pocket + Put Verbs vs FrameNetPlacing
 * Levin class broader
   * Levin social interaction  correspond, marry, meet
-  * FrameNet `Communication_conversation Hostile_encounter Personal_relationship
-Display_of_affection`
+  * FrameNet `Communication_conversation Hostile_encounter
+    Personal_relationship Display_of_affection`
 * Overlapping Groupings: Communication verbs
   * alternations leads to overly narrow classes
 
