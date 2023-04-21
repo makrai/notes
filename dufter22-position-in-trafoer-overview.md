@@ -176,104 +176,98 @@ for multiple reasons:
 
 ### 4.1.1 Absolute Position Encodings
 
-* The original Transformer paper considered absolute position encodings. One of
-  * one of the two approaches proposed by Vaswani+ (2017) follows Gehring+
-    (2017) and learns a position embedding matrix P ∈ Rtmax ×d corresponding to
-    the absolute positions 1, 2, ... , tmax − 1, tmax in a sequence. This
-    matrix is simply added to the unit embeddings U before they are fed to the
-    Transformer model (APE).
+* The original Transformer paper considered absolute position encodings
+  * one of the two approaches proposed by Vaswani+ (2017)
+    follows Gehring+ (2017) and learns a position embedding matrix P ∈ Rtmax ×d
+    corresponding to the absolute positions 1, 2, ... , tmax − 1, tmax in a seq
+    * This matrix is simply added to the unit embeddings U
+      before they are fed to the Transformer model (APE).
   * In the simplest case, the position embeddings are randomly initialized and
-    then adapted during training of the network (Gehring+ 2017; Vaswani+ 2017;
-    Devlin+ 2019). Gehring+ (2017) find that adding position embeddings only
-    helps marginally in a convolutional neural network. A Transformer model
-    without any position information, however, performs much worse for some
-    tasks—see for example Wang+ 2019, Wang+ 2021.
-* axial
-  * For very long sequences, that is, large tmax , the number of parameters
-    added with P is significant
-  * Kitaev, Kaiser, and Levskaya (2020) proposed
-  * a more parameter-efficient factorization called
-    axial position embeddings.  Although their
-  * method is not described in the paper, a descript can be found in their code
+    then adapted during training of the network
+    (Gehring+ 2017; Vaswani+ 2017; Devlin+ 2019)
+  * Gehring+ (2017): adding position embeddings only helps marginally in a CNN
+  * A Transformer model without any position information performs much worse
+    for some tasks—see for example Wang+ 2019, Wang+ 2021.
+* axial position embeddings (Kitaev, Kaiser, and Levskaya 2020)
+  * For very long sequences, ie large tmax, the number of parameters is signif
+  * axial position embeddings: * a more parameter-efficient factorization 
+  * method not described in the paper, a descript can be found in their code
   * Intuitively, 2 embeds
     * one embedding that marks a larger segment and a
-    * second embedding that indicates the position within each segment; see
-  * Figure 3 Overview of the structure of P with axial position embeddings by
-  Kitaev, Kaiser, and Levskaya (2020). They use two position embeddings, which
-  can be interpreted as encoding a segment (bottom, P(2) ) and the position
-  within that segment (top, P(1) ). This factorization is more
-  parameter-efficient, especially for long sequences.
-  * More specifically, the matrix P gets split into two embedding matrices P(1)
-* Liu+ (2020) argue that position embeddings should be parameter-efficient,
-  data- driven, and should be able to handle sequences that are longer than any
-  sequence in the training data. They propose a new model called flow-based
-  Transformer (or FLOATER), where they model position information with a
-  continuous dynamic model.  More specifically, consider P as a sequence of
-  timesteps p1 , p2 , ... , ptmax . They suggest modeling position information
-  as a continuous function p : R+ → Rd with
+    * second embedding that indicates the position within each segment
+  * Figure 3 overviews the structure of P with axial position embeddings by
+  * more parameter-efficient, especially for long sequences.
+* flow-based Transformer (or FLOATER, Liu+ 2020)
+  * position embeddings should be parameter-efficient, data-driven, and should
+    be able to handle seqs that are longer than any seq in the training data
+  * model position information with a continuous dynamic model.  More
+    * consider P as a sequence of timesteps p1 , p2 , ... , ptmax 
+    * They suggest modeling position information as a continuous function p :
+      R+ → Rd with `Z t p(t) = p(s) + s ␁ h τ, p(τ ), θh dτ` for 0 ≤ s < t with
+      * some initial value for p(0), where
+        h is some function, for example, a neural network with parameters θh .
+        In the simplest case they then
+  * experiment both with adding the information
+    only in the first layer and at each layer (layerwise APE). Even though they
+  * share parameters across layers, they use
+  * different initial values p(0) and thus have
+  * => different position embeddings at each layer
+  * Sinusoidal position embeddings (see §4.2) are a special case of their
+  * they provide a method to
+    use the original position embeddings of a pretrained Transformer model
+    while adding the dynamic model during finetuning only. In their experiments
+  * outperforms learned and sinusoidal position embeddings,
+    especially for long sequences
+  *  adding position information at each layer increases performance.
+* Shortformer
+  * Another approach to increase the Transformer efficiency both during
+    training and inference is to keep tmax small. The Shortformer by
+  * Press, Smith, and Lewis (2021)
+  * cache previously computed unit representations and therefore does
+    not need to handle a large number of units at the same time. This is
+  * made possible by what they call position-infused attention, where the
+    position embeddings are added to the keys and queries, but not the values.
+    Thus, the values are position independent and
+    representations from previous subsequences can seamlessly be processed.
 
-                  Z t p(t) = p(s) + s ␁ h τ, p(τ ), θh dτ (6)
+             | Ã ∼ (U + P)W(q) W(k) (U + P)|; M̃ = SoftMax(Ã)UW(v)
 
-for 0 ≤ s < t with some initial value for p(0), where h is some function, for
-example, a neural network with parameters θh . In the simplest case they then
-define pi := p(i∆t) for some fixed offset ∆t. They experiment both with adding
-the information only in the first layer and at each layer (layerwise APE). Even
-though they share parameters across layers, they use different initial values
-p(0) and thus have different position embeddings at each layer. Sinusoidal
-position embeddings (see §4.2) are a special case of their dynamic model.
-Further, they provide a method to use the original position em- beddings of a
-pretrained Transformer model while adding the dynamic model during finetuning
-only. In their experiments they observe that FLOATER outperforms learned and
-sinusoidal position embeddings, especially for long sequences. Further, adding
-position information at each layer increases performance.
-
-* Another approach to increase the Transformer efficiency both during training
-  and inference is to keep tmax small. The Shortformer by Press, Smith, and
-  Lewis (2021) caches previously computed unit representations and therefore
-  does not need to handle a large number of units at the same time. This is
-  made possible by what they call position-infused attention, where the
-  position embeddings are added to the keys and 742Dufter, Schmitt, and Schütze
-  queries, but not the values. Thus, the values are position independent and
-  representa- tions from previous subsequences can seamlessly be processed.
-  More specifically, they propose | Ã ∼ (U + P)W(q) W(k) (U + P)| (7)
-
-M̃ = SoftMax(Ã)UW(v)
-
-The computation of the attention matrix Ā still depends on absolute position
-encod- ings in Shortformer, but M̄ does not contain it, as it is only a weighted
-sum of unit embeddings in the first layer. Consequently, Shortformer can attend
-to outputs of pre- vious subsequences and the position information has to be
-added in each layer again.  Press, Smith, and Lewis (2021) report large
-improvements in training speed, as well as language modeling perplexity.
-
+  * The computation of the attention matrix Ā still depends on absolute
+    position encodings in Shortformer, but
+    M̄ does not contain it, as it is only a weighted sum of unit embeddings in
+    the first layer
+    => Shortformer can attend to outputs of previous subsequences and the
+    position information has to be added in each layer again
+  * large improvements in training speed, as well as LM perplexity.
 * While the former approaches all follow the APE methodology, Wang+ (2020)
-  propose an alternative to simply summing position and unit embeddings.
-  Instead of having one embedding per unit, they model the representation as a
-  function over positions. That is, instead of feeding Ut + Pt to the model for
-  position t, they suggest modeling the embedding of unit u as a function g(u)
-  : N → Rd such that the unit has a different embedding depending on the
-  position at which it occurs. After having pro- posed desired properties for
-  such functions (position-free offset and boundedness), they introduce
-  complex-valued unit embeddings where their k-th component is defined as
-  follows: ␐ ␑ (u) (u) (u) g(u) (t)k = rk exp i(ωk t + θk ) (8)
-
-Then, r(u) , ω(u) , θ(u) ∈ Rd are learnable parameters that define the unit
-embedding for the unit u. Their approach can also be interpreted as having a
-word embedding, pa- rameterized by r(u) , that is, component-wise multiplied
-with a position embedding, parameterized by ω(u) , θ(u) . The number of
-parameters dedicated to the position model therefore does not depend on the
-number tmax of considered positions but rather on the vocabulary size n. In
-total, 3nd trainable parameters are used compared to nd parameters of a
-traditional lookup table. We thus mark the number of parameters of the position
-model alone as 3nd − nd = 2nd in Table 1 because this difference is responsible
-for covering position information. Wang+ (2020) test their position-sensitive
-unit embeddings not only on Transformer models, but also on static embeddings,
-LSTMs, and CNNs, and observe large performance improvements.
+  * simply summing position and unit embeddings
+  * Instead of having one embedding per unit, they
+    model the representation as a function over positions
+    ie instead of feeding Ut + Pt to the model for position t, they suggest
+    modeling the embedding of unit u as a function g(u) : N → Rd such that the
+    unit has a different embedding depending on the position at which it
+    occurs. After having proposed
+  * desired properties for such functions (position-free offset & boundedness)
+  * complex-valued unit embeddings where
+    their k-th component: ␐ ␑ (u) (u) (u) g(u) (t)k = rk exp i(ωk t + θk ) (8)
+  * Then, r(u) , ω(u) , θ(u) ∈ Rd are learnable parameters that define the unit
+  * can also be interpreted as having a word embedding, parameterized by r(u) ,
+    that is, component-wise multiplied with a position embedding, parameterized
+    by ω(u) , θ(u) . The 
+  * number of parameters dedicated to the position model therefore does
+    not depend on the number tmax of considered positions but
+    rather on the vocabulary size n. In total,
+    * `3nd` trainable parameters are used
+      compared to nd parameters of a traditional lookup table
+    * ie the position model alone as 3nd − nd = 2nd in Table 1 because this
+  * test also on static embeddings, LSTMs, and CNNs, and observe
+    large performance improvements.
 
 ### 4.1.2 Relative Position Encodings
 
 * Among the first, Shaw, Uszkoreit, and Vaswani (2018) introduced an
   alternative method for incorporating both absolute and relative position
+
 
 ## 4.2 Sinusoidal 16
 
