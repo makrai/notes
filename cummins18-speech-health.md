@@ -57,8 +57,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 * reason for focusing this review on the ComParE and AVEC challenges is the
   presence of a transparent baseline system and associated scoring metrics
-  This property enables the use of straightforward comparisons to assess
-  improvements, if any, offered through new approaches. However, aside from
+  * This property enables the use of straightforward comparisons to assess
+    improvements, if any, offered through new approaches
   * hE no strict rule as to what constitutes a ‘good’ system performance
   * larger scale studies, potentially undertaken as part of a clinical trail,
     are required to establish what constitutes system performances suitable
