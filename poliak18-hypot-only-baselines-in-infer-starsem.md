@@ -48,7 +48,7 @@ naacl 2018
 
 # 5 Datasets
 
-* ten NLI datasets 
+* ten NLI datasets
 * categorized into three groups based how they were constructed
 
 ## Human elicited
@@ -115,15 +115,15 @@ naacl 2018
 ## Criticism of the Majority Baseline
 
 * Across six of the ten datasets, our hypothesis-only model
-  * significantly outperforms the majoritybaseline, even
+  * significantly outperforms the majority baseline, even
   * outperforming the best reported results on one dataset, recast SPR
 * it is unclear whether the construction method is responsible
   * largest relative gains are on humanelicited models
   * baseline performances of other datasets are noticeably larger
   * by including multiple genres, an NLI dataset may contain less biases
-* On three of the five human judged datasets, the hypothesis-only model defaults
-  to labeling each instance with the majority class tag. We find the same
-  behavior in one recast dataset (DPR)
+* On three of the five human judged datasets, the
+  hypothesis-only model defaults to labeling each instance with the major class
+  * We find the same behavior in one recast dataset (DPR)
 
 # 6 Statistical Irregularities
 
