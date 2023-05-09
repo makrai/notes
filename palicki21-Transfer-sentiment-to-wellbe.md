@@ -36,7 +36,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     * Changes correlated with major political events, natural disasters,
       cultural phenomenon, and in the prediction of stock prices [8, 35]
   * clinical approach: using social media and machine learning techniques to
-    classify abnormal psychological states (depression, anxiety, PTSD, etc.) in
+    classify abnormal psychological states (depression, anxiety, PTSD, etc) in
     populations [7, 16]
   * Our research exploits both techniques
     to understand the impact of major Brexit events on the mental well-being

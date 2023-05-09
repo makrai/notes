@@ -45,7 +45,7 @@ Model repository: https://github.com/ marcopoli/AlBERTo-it
   * 1 where the sentence satisfy the label, a 0 instead
   * “lpos” and “lneg” not been considered in the official and the current eval
   * 7410 tweets have been released for training and 2000 for testing
-    * We do not used any validation set
+    * We do not use any validation set
   * precision (p), recall (r) and F1-score (F1) for each class
 
 ## AlBERTo fine-tuning

@@ -134,7 +134,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 ## 4.7. Depression (2013 & 2014)
 
-* Major Depressive Disorders (MDD) are a growing global health concern. It
+* Major Depressive Disorders (MDD) are a growing global health concern
   * 322 million individuals worldwide living with depression [91] and that the
   * increased by 18.4% between 2005 and 2015 [92]
 * Speech, as well as other behavioural and physiological signals, as objective
@@ -160,13 +160,13 @@ Methods Volume 151, 1 December 2018, Pages 41-54
         AVEC-2014, which also included visual information, was 8.12
 * a more in depth review of both challenges: [3]
 * there has been no speech and deep learning approaches on either corpora
-* recent research in predicting depression scores using deep learning vision
-  * Zhu+ [97], proposed a dual CNN structure to exploit both facial appearance
-    and dynamic information. The authors report a lowest AVEC-2014 test set
-    RMSE of 9.55
+* recent research in predicting depression scores using deep vision
+  * Zhu+ [97]
+    * a dual CNN structure to exploit both facial appearance and dynamic info
+    * a lowest AVEC-2014 test set RMSE of 9.55
   * Kang+ [98], used the AVEC-2014 data to re-tune the VIPLFaceNet network, a
-    10-layer CNN with 7 convolutional layers and 3 fully-connected layers, for
-    the task of depression detection.  This approach yielded a RMSE of 9.43
+    10-layer CNN with 7 convolutional layers and 3 fully-connected layers
+    * RMSE of 9.43
 
 ## 4.8. Cognitive and physical load (2014)
 
@@ -214,22 +214,23 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   193 clinical interviews designed to support the diagnosis of
   psychological distress conditions such as depression
 * 2016
-  * task: for AVEC-2016 [14], the challenge was a 2-class multimodal level of
-    severity (high/low) task, based on the patients Patient Health Questionnaire
-    (PHQ)-8 depression index score [127]
+  * task: for AVEC-2016 [14], the challenge was a
+    2-class multimodal level of severity (high/low) task, based on the patients
+    Patient Health Questionnaire (PHQ)-8 depression index score [127]
     * Fig. 3: score distribution of the DAIC-WOZ data
     * features: The challenge organisers provided extracted video features (for
       ethical reasons the raw video could not be shared), audio files and
       transcription of the interviews
   * imbalance in training data (4:1 ‘notdepressed’ to ‘depressed’)
-  * The audio baseline feature representation was realised using a set of
-    prosodic, voice quality and spectral LLDs extracted from the Collaborative
-    Voice Analysis REPository (COVAREP) Matlab toolbox [128]
-    * SVM classification, with majority voting used to produce one single
-      depression label per file
-  * metric being the F1 score for the ‘depressed’ class
-  * Using this method, the development score was 0.46 (0.68, for ‘not-de-
-    pressed’) and the test set score was 0.41 (0.58, for ‘not-depressed’)
+  * audio baseline feature representation was realised using
+    a set of prosodic, voice quality and spectral LLDs extracted from the
+    Collaborative Voice Analysis REPository (COVAREP) Matlab toolbox [128]
+    * SVM classification, with
+      majority voting used to produce one single depression label per file
+  * metric: F1 score for the ‘depressed’ class
+  * Using this method, the
+    development score was 0.46 (0.68, for ‘not-de- pressed’) and the
+    test set score was 0.41 (0.58, for ‘not-depressed’)
   * participants in 2016
     * only deep learning approach being the DEPAUDIONET E2E system [129]. This
       * feed Mel Spectrum features into an E2E network comprising a feature
@@ -253,8 +254,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * metric was RMSE As in AVEC-2013 and AVEC-2014 (cf. 4.7), the metric is the
     * audio development set and test set RMSE’s being 6.74 and 7.78 resp
 * participants
-  * two papers, both lead by Le Yang of Northwestern Polytechnical University,
-    explored the suitability of CNNs for the task
+  * two papers explored CNNS
+    * both lead by Le Yang of Northwestern Polytechnical University
   * [131] system fed ComParE-2013 features into a CCN trained to predict PHQ8
     * After training the CNN,
       the weights were frozen and the last layer removed

@@ -123,8 +123,8 @@ The paper is structured as following:
 * phone calls and Short Message Service (SMS) logs
   * can be collected through software APIs
   * Faurholt-Jepsen+ [40] analyzed phone call logs of bipolar disorder patients
-    * the more severe the depressive symptoms, fewer outgoing calls/day were
-      made, and there were less answered incoming calls/day
+    * the more severe the depressive symptoms, fewer outgoing calls/day, and
+      less answered incoming calls/day
   * LiKamWa+ [105] used SMS, phone calls, emails, applications usage, web
     visits, etc, to infer mood states with smartphones achieving accura ~ 93%
   * user behavior captured by social media can reveal depression markers
@@ -147,7 +147,7 @@ The paper is structured as following:
 
 # 4 the general steps of sensor based monitoring systems
 
-* from the prerequisites/experiment design  to deployment
+* from the prerequisites/experiment design to deployment
 * key aspects and considerations for the data collection process, data
   analysis, and machine learning model training and evaluation
 

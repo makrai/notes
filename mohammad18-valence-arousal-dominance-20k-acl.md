@@ -147,9 +147,10 @@ ACL long 2018
   * Extrovert (Ex) – Introvert (In)
     outgoing, energetic, seek the company of
     others or solitary, reserved, meeting many people causes anxiety
-  * Neurotic (Ne) – Secure (Se) sensitive and nervous (often feel anger,
-    anxiety, depression, and vulnerability) or secure and confident (rarely
-    feel anger, anxiety, depression, and vulnerability)
+  * Neurotic (Ne) – Secure (Se)
+    * sensitive and nervous
+    * secure and confident
+    * often/rarely feel anger, anxiety, depression, and vulnerability
   * Open to experiences (Op) – Closed to experiences (Cl)
     inventive and curious (seek out new experiences) or
     consistent and cautious (anxious about new experiences)

@@ -32,15 +32,14 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 
 # 2 Background
 
-* pronoun use with regard to age, gender, and personality types. In fact, a
+* pronoun use with regard to age, gender, and personality types
   * “The Secret Life of Pronouns” summarizing such studies (Pennebaker, 2011)
   * Pennebaker+ (2003) and Chung & Pennebaker (2007) found that the use of
     self-references (i.e. ‘I’, ‘me’) decreases over age.
   * Pennebaker+ (2003), and Argamon+ (2007) showed that females use
     significantly more first-person singular personal pronouns
-  * Bucci and Freedman (1981), Weintraub (1981), and Zimmermann+  (2013) found
-    that first-person singular pronouns are positively correlated with
-    depressive symptoms. These analyses do
+  * first-person singular pronouns are positively correlated with depress sympt
+    * Bucci and Freedman (1981), Weintraub (1981), and Zimmermann+ (2013)
   * not take the role of syntactic and semantic context into consideration
 
 # 3 Method
