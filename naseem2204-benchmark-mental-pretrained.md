@@ -1,50 +1,49 @@
 Benchmarking for Public Health Surveillance tasks on Social Media
   with a Domain-Specific Pretrained Language Model
 Usman Naseem, Byoung Chan Lee, Matloob Khushi, Jinman Kim, Adam G. Dunn
-ACL2022 : The First Workshop on Efficient Benchmarking in NLP arXiv:2204.04521
+ACL 2022 The First Workshop on Efficient Benchmarking in NLP arXiv:2204.04521
 
 https://huggingface.co/publichealthsurveillance/PHSBERT
 
 # Abstract
 
 * health info on social media to enhance public health surveillance (PHS)
-  * identify possible outbreaks, forecast disease trends, monitor emergency
-    cases, and ascertain disease awareness and response to official health
-    correspondence. Despite its potential, the technology is still in its early
+  * identify possible outbreaks, forecast disease trends, monit emergency cases
+  * ascertain disease awareness and response to official health correspondence
 * pretrained language models (PLMs) have facilitated the development of several
   domain-specific PLMs and a variety of downstream applications
   * no PLMs for social media tasks involving PHS
-* We present and release PHS-BERT, a transformer-based PLM, to identify tasks
+* We present and release PHS-BERT, a transformer-based PLM
   * compared and benchmarked the performance of PHS-BERT on 25 datasets from
     different social medial platforms related to 7 different PHS tasks
-  * PHS-BERT achieved SOTA performance on all 25 tested datasets, showing that
+  * PHS-BERT achieved SOTA performance on all 25 tested datasets
 
 # 1 Intro
 
 * Public health surveillance (PHS) is defined by the WHO (Aiello+ 2020)
-  Traditional PHS systems: time required to collect data (Hope+ 2006)
-* Social media data provides an abundant source of timely data that can be used
+  * Traditional PHS systems: time required to collect data (Hope+ 2006)
+* Social media data provides an abundant source of timely data 
   * surveillance, sentiment analysis, health communication, and analyzing the
     history of a disease, injury, or promote health
   * Systematic reviews of studies that examine personal health experiences
-    shared online reveal the breadth of application domains, which include
-    infectious diseases and outbreaks (Charles-Smith+ 2015), illicit drug use
-    (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015).  These
-    applied health studies are motivated by their potential in supporting PHS,
-    augmenting adverse event reporting, and as the basis of public health
-    interventions (Dunn+ 2018)
-* The use of deep learning in natural language processing (NLP) has advanced
-  * pretrained language models (PLMs) that can be used for a wide range of
-  * BERT variants (Liu+ 2019; Lan+ 2019; Sanh+ 2019; Naseem+ 2021c) that are
-  * domain-specific PLMs have been presented. Some of the well-known
+    shared online reveal the
+    breadth of application domains, which include
+    * infectious diseases and outbreaks (Charles-Smith+ 2015), illicit drug use
+      (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015).  These
+    * potential in supporting PHS, augmenting adverse event reporting, and as
+      the basis of public health interventions (Dunn+ 2018)
+* deep learning in natural language processing (NLP)
+  * pretrained language models (PLMs) that can be used for many tasks
+  * BERT variants (Liu+ 2019; Lan+ 2019; Sanh+ 2019; Naseem+ 2021c)
+  * domain-specific PLMs have been presented
     * in the biomedical field
-      BioBERT, (Lee+ 2019) and BioALBERT, (Naseem+ 2020, 2021a).  Recently, other
+      BioBERT, (Lee+ 2019) and BioALBERT, (Naseem+ 2020, 2021a)
     * BERTweet (Nguyen+ 2020) for 3 downstream tasks, ie part-of-speech
-      tagging, named-entity-recognition, and text classification and
+      tagging, named-entity-recognition, and text classification
     * COVID Twitter BERT (CT-BERT, Müller+ 2020) for 5 text classification
       tasks have been trained on datasets from Twitter
     * no for PHS from online text
-    * all these LMs were evaluated with the selected dataset, and therefore
+    * all these LMs were evaluated with the selected dataset
 * we present PHS-BERT, a new domain-specific contextual PLM
   trained and fine-tuned to achieve benchmark performance on various PHS tasks
   on social media
@@ -58,16 +57,16 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 ## 2.2 NLP for Public Health Surveillance
 
-* The use of social media in conjunction with advances in NLP for PHS tasks is
+* The use of social media in conjunction with advances in NLP for PHS tasks
   (Paul and Dredze, 2017)
   * surveillance of mental disorders,
-    eg identifying depression diagnosis, assessing suicide risk and stress
-    identification, vaccine hesitancy and refusal, identifying common
-    health-related misconceptions, sentiment analysis, and the health-related
-    behaviors they support (Naseem+ 2022a,b)
-* Rao+ (2020) presented a hierarchical method that used BERT with
-  attention-based BiGRU and achieved competitive performance for depression
-  detection
+    eg identifying depression diagnosis, assessing suicide risk and
+    stress identification, vaccine hesitancy and refusal,
+    identifying common health-related misconceptions, sentiment analysis, and
+    the health-related behaviors they support (Naseem+ 2022a,b)
+* Rao+ (2020) presented a hierarchical method that
+  used BERT with attention-based BiGRU and achieved
+  competitive performance for depression detection
 * vaccine-related sentiment classification, Zhang+ (2020) classified
   tweet-level HPV vaccine sentiment using three transfer learning techniques
   (ELMo, GPT, and BERT) and found that a finely tuned BERT produced the best
@@ -87,29 +86,28 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 ## 3.3 Fine-tuning for downstream tasks
 
-* We applied the pretrained PHS-BERT in the binary and multi-class
-  classification of different PHS tasks such as stress, suicide, depression,
-  anorexia, health mention classification, vaccine, and covid related
-  misinformation and sentiment analysis. We fine-tuned the PLMs in downstream
-  tasks. Specifically, we used the ktrain library (Maiya, 2020) to fine-tune
-  each model independently for each dataset
+* We applied the pretrained PHS-BERT in the binary and multi-class classif of
+  different PHS tasks 
+  eg stress, suicide, depression, anorexia, health mention classification,
+  vaccine, and covid related misinformation and sentiment analysis. We
+* fine-tuned the PLMs in downstream tasks. Specifically, we used the
+  * ktrain library (Maiya, 2020) to fine-tune each model indep for each dataset
 * We used the embedding of the special token [CLS] of the last hidden layer as
-  the final feature of the input text.  We adopted the multilayer perceptron
-  (MLP) with the hyperbolic tangent activation function and used Adam optimizer
-  (Kingma and Ba, 2014).  The models are trained with a one cycle policy
-  (Smith, 2017) at a maximum learning rate of 2e-05 with momentum cycled
-  between 0.85 and 0.95
+  the final feature of the input text.  We adopted the
+  * multilayer perceptron (MLP) with the hyperbolic tangent activation function
+  * Adam optimizer (Kingma and Ba, 2014).  The models are trained with a
+  * one cycle policy (Smith, 2017) at a maximum learning rate of 2e-05 with
+    momentum cycled between 0.85 and 0.95
 
 # 4 Experimental Analysis
 
 ## 4.1 Tasks and Datasets
 
-* 7 different PHS classification tasks (eg stress, suicidal ideation,
-  depression, health mention, vaccine, covid related sentiment analysis, and
-  other health-related tasks) collected from popular social platforms (eg
-  Reddit and Twitter)
-* 25 datasets (see Table 1) crawled from social media platforms (eg Reddit and
-  Twitter)
+* 7 different PHS classification tasks 
+  * stress, suicidal ideation, depression, health mention, vaccine, covid
+    related sentiment analysis, and other health-related tasks
+  * collected from popular social platforms (eg Reddit and Twitter)
+* 25 datasets (see Table 1) crawled from social media (eg Reddit and Twitter)
 * Below we briefly discussed each task and dataset used in our study
   (appendix A for details)
 
@@ -140,10 +138,12 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * eRisk T3 (Losada and Crestani, 2016), eRisk T1 (Losada and Crestani, 2016),
     Depression_Reddit_1 (Naseem+ 2022a) 7 , Depression_Reddit_2 (Pirina and
     Çöltekin, 2018), Depression_Twitter_1 8 , and Depression_Twitter_2 9
-7. Other health related tasks: We also evaluated the performance of our
-  * PUBHEALTH (Kotonya and Toni, 2020), Abortion (Mohammad+ 2016) 10 , Amazon
-    Health dataset (He and McAuley, 2016), SMM4H T1 (Weissenbacher+ 2018),
-    SMM4H T2 (Weissenbacher+ 2018) and HRT (Paul and Dredze, 2012)
+7. Other health related tasks
+  * PUBHEALTH (Kotonya and Toni, 2020),
+  * Abortion (Mohammad+ 2016) 10 ,
+  * Amazon Health dataset (He and McAuley, 2016),
+  * SMM4H T1 (Weissenbacher+ 2018), SMM4H T2 (Weissenbacher+ 2018) and
+  * HRT (Paul and Dredze, 2012)
 
 ## 4.3 Baselines
 

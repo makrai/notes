@@ -147,9 +147,10 @@ ACL long 2018
   * Extrovert (Ex) – Introvert (In)
     outgoing, energetic, seek the company of
     others or solitary, reserved, meeting many people causes anxiety
-  * Neurotic (Ne) – Secure (Se) sensitive and nervous (often feel anger,
-    anxiety, depression, and vulnerability) or secure and confident (rarely
-    feel anger, anxiety, depression, and vulnerability)
+  * Neurotic (Ne) – Secure (Se)
+    * sensitive and nervous
+    * secure and confident
+    * often/rarely feel anger, anxiety, depression, and vulnerability
   * Open to experiences (Op) – Closed to experiences (Cl)
     inventive and curious (seek out new experiences) or
     consistent and cautious (anxious about new experiences)
@@ -187,8 +188,8 @@ ACL long 2018
 
 * Language use is also relevant to the understanding and treatment of
   neuropsychiatric disorders, such as sleep, mood, and anxiety disorders, which
-  have been shown to occur more frequently in women than men (Bao and Swaab,
-  2011; Lewinsohn+ 1998; McLean+ 2011; Johnson+ 2006; Chmielewski+ 1995)
+  * occur more frequently in women than men (Bao and Swaab, 2011;
+    Lewinsohn+ 1998; McLean+ 2011; Johnson+ 2006; Chmielewski+ 1995)
 * respondents over the age of 35 obtain significantly higher agreements with
   each other on valence and arousal and lower agreements on dominance
 * personality traits as they view themselves

@@ -42,7 +42,7 @@ https://github.com/tobefans/LSSED
       consecutively decode the emotion states of each utterance on IEMOCAP [6]
       and MELD [8]
 * serious overfitting to databases [14– 17]
-* Generally speaking, transfer learning can to a certain extent improve the
+* Generally speaking, transfer learning can to a certain extent improve
   * Boigne+ [18] points out task-related transfer learning of recognizing
     emotions on small datasets
   * For emotion recognition related task, a good pre-trained model is urgent
@@ -117,7 +117,7 @@ https://github.com/tobefans/LSSED
 ## 3.3. Pre-trained Model in Downstream Task
 
 * explore the applicability of the above pre-trained models to downstream
-  * We choose speech-based depression detection as our downstream task.  Due
+  * We choose speech-based depression detection as our downstream task
   * high professional requirements =>
     it is very difficult to collect data on patients with depression
   * currently unsatisfactory, automatic depression detection is
@@ -130,7 +130,7 @@ https://github.com/tobefans/LSSED
     recorded with video and audio equipments
   * annotated with the start time, end time and depression (or not) of each
     sentence
-* We choose SER task and ASR task for transfer. Firstly, we need to get the
+* We choose SER task and ASR task for transfer
   * pre-trained models
     * For SER, we use the pretrained PyResNet with ResNet152 as a backbone. For
     * ASR, we use ESPNet [27], which is an end-to-end encoder-decoder structure

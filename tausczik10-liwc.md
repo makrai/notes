@@ -11,9 +11,9 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 * earliest
   * Freud (1901) wrote about slips of the tongue
-  * Rorschach and others (e.g., Holtzman, 1950; Rorschach, 1921)
+  * Rorschach and others (eg Holtzman, 1950; Rorschach, 1921)
   * McClelland and a generation of thematic apperception test (TAT) researchers
-    (e.g., McClelland, 1979; Winter, 1998) found that the stories people told in
+    (eg McClelland, 1979; Winter, 1998) found that the stories people told in
     response to drawings of people could provide important clues to their needs
     for affiliation, power, and achievement
   * trained raters read the transcripts of people’s descriptions and
@@ -21,19 +21,19 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * Gottschalk & Gleser, 1969; Gottschalk, Gleser, Daniels, & Block, 1958
   * content-analysis method by which to track Freudian themes in text
   * patients to talk in a _stream of consciousness_ way into a tape recorder
-  * anxiety (e.g., death, castration), hostility toward self or others, and
+  * anxiety (eg death, castration), hostility toward self or others, and
     various interpersonal and psychological topics
   * later used in the psychiatric diagnoses of cognitive impairments,
     alcohol abuse, brain damage, and mental disorders
   * Attempts to a computer program have modest correlations to the
-    judge-based “gold standard” (e.g., Gottschalk & Bechtel, 1993)
+    judge-based “gold standard” (eg Gottschalk & Bechtel, 1993)
 * first general purpose computerized text analysis program in psychology was
   developed by Philip Stone and his colleagues
   * Rosenberg & Tucker, 1978; Stone, Dunphy, Smith, & Ogilvie, 1966
   * adapted McClelland’s need-based coding schemes to any openended text
   * General Inquirer
   * other programs like it
-    (e.g., Hart’s, 1984, DICTION program; Martindale, 1990) have proven
+    (eg Hart’s, 1984, DICTION program; Martindale, 1990) have proven
     valuable in distinguishing mental disorders, assessing personality
     dimensions, and evaluating speeches
 * the physician Walter Weintraub (1981, 1989)
@@ -95,7 +95,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * Function words, such as
   * personal pronouns
     * People who are experiencing physical or emotional pain use more
-      first-person singular pronouns (e.g., Rude, Gortner, & Pennebaker, 2004)
+      first-person singular pronouns (eg Rude, Gortner, & Pennebaker, 2004)
     * teasing, interaction with sex men may focus more on the perpetrator
       of the event when they are the victim
     * first-person plural pronouns—“we,” “us,” and “our.”
@@ -156,7 +156,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     * promote interdependence as in “we can do this;” it may
     * increase group cohesion if it is being used to indirectly assign
       tasks as it may lead to resentment
-  * assents (e.g., agree, OK, yes) could signal increased group consensus
+  * assents (eg agree, OK, yes) could signal increased group consensus
     * Later in a group task, assents may signal consensus,
     * early assents may indicate blind agreement by unmotivated group members
       (Leshed, Hancock, Cosley, McLeod, & Gay, 2007)
@@ -165,7 +165,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 * Deceptive statements
   * moderately descriptive, distanced from self, and more negative. Newman+
-  * more motion words (e.g., arrive, car, go), fewer exclusion words
+  * more motion words (eg arrive, car, go), fewer exclusion words
 * the people being deceived also changed their language
   * both used a higher total word count, less first-person singular, and more
     sense words
@@ -191,20 +191,20 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 * two components of reasoning: the extent to which someone
   * differentiates between multiple competing solutions
-    * Exclusive words (e.g., but, without, exclude)
+    * Exclusive words (eg but, without, exclude)
       * used at higher rates among people telling the truth (Newman+ 2003)
   * integrates among solutions (Tetlock, 1981)
     * conjunctions
       * important for creating a coherent narrative (Graesser+ 2004)
 * complexity
-  * Prepositions (e.g., to, with, above), cognitive mechanisms (e.g., cause,
+  * Prepositions (eg to, with, above), cognitive mechanisms (eg cause,
     know, ought), and words greater than six letters are all also indicative
     * in journal articles, authors use more prepositions in the discussion
       than the introduction or abstract
 * active process of reappraisal újraértékelés in describing a past event
   * two subcategories of cognitive mechanisms,
-    * causal words (e.g., because, effect, hence) and
-    * insight words (e.g., think, know, consider),
+    * causal words (eg because, effect, hence) and
+    * insight words (eg think, know, consider),
   * led to greater health improvements
 * in recounting a personal story younger participants used more filler words
   compared with older participants

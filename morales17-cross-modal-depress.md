@@ -7,27 +7,27 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
 
 * Automatic detection of depression has attracted increasing attention
 * This paper surveys these efforts
-  * the first cross-modal review of depression detection systems and discusses
+  * the first cross-modal review of depression detection systems
   * best practices and most promising approaches to this task
 
 # 1 Intro
 
-* challenge is the existing disconnect between language technology subfields:
-  approaches to depression assessment from natural language processing (NLP),
-  speech processing, and human-computer interaction (HCI) tend to silo by
-  subfield, with little discussion about the utility of combining approaches
+* challenge: disconnect between language technology subfields
+  * approaches to depression assessment from natural language processing (NLP),
+    speech processing, and human-computer interaction (HCI) tend to silo by
+    subfield, with little discussion about the utility of combining approaches
   * Each subfield tends to approach the task from a unique perspective, with
     slightly different goals, and completely different data sources
     => it is difficult to compare
   * Each data source is labeled for depression through different approaches,
-    * rating scales, self-report surveys, manual annotation, etc. As a result,
+    * rating scales, self-report surveys, manual annotation, etc
   * various definitions of how depression is defined across studies
 * This survey paper aims to serve as a bridge between the subfields
   * the first review of depression detection systems across subfields & modalit
   * questions, how has depression been defined and annotated in detection syss?
-    * What kinds of depression data exists or could be obtained
-    * What (multimodal) indicators have been used for the automatic detection
-    * How do we evaluate depression detection systems?
+    * What kinds of depression _data_ exists or could be obtained
+    * What (multimodal) _indicators_ have been used for the automatic detection
+    * How do we _evaluate_ depression detection systems?
     * Each research question could serve as the main focus of an entire paper
 * this review briefly touches upon each question
   * reviewing indicators of depression and subsequently features for depression
@@ -84,8 +84,8 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
         open-ended questions with the intent of identifying clinical symptoms
   * audio and video recordings and extensive questionnaire responses
   * depression score from the PHQ-8 (Kroenke+ 2009)
-  * A portion of the corpus was released during the AVEC 2016 Depression
-    Sub-challenge and is available to download 3
+  * A portion of the corpus was released
+    during the AVEC 2016 Depression Sub-challenge and is available to download
     * includes transcripts of the interview
 * The DementiaBank Database 4 represents data
   * collected between 1983 and 1988 as part of the Alzheimer Research Program
