@@ -50,14 +50,15 @@ Semantic and Lexical Universals
 
 ## 1.1 semantic theory underlying the present work
 
-### 1. Semiotic Principle. A sign cannot be reduced to or analysed into any
+### 1. Semiotic Principle. A sign cannot be reduced/analysed to non-signs
+to any combination of things which are not themselves signs; Peirce (1932)
 
- combination of things which are not themselves signs; Peirce (1932)
- * what philosophers know as a fully intensional conception of meaning. It is
+* principle
+ * what philosophers know as a fully intensional conception of meaning
  * incompatible with
-  * reference-based or denotation-based approaches to meaning, such as
-    classical truth-conditional semantics and more recent developments in
-    'formal semantics'. It also precludes
+  * reference-based or denotation-based approaches to meaning
+    eg classical truth-conditional semantics and
+    more recent developments in 'formal semantics'
   * neurophysiological approach in the way Kay and McDaniel (1978) went
     about 'defining' the meaning of colour terms
   * speakers' usage (in the way Labov (1973) approach
@@ -571,8 +572,8 @@ entire proposed primitive inventory is provided in chapter 2
     * often involved in complex patterns of polysemy
     * often appear to be bound morphemes
 * LIKE
-  * crucial for the prototype-style analyses needed for emotions, speech acts,
-    colours and kinship
+  * crucial for the prototype-style analyses
+    needed for emotions, speech acts, colours and kinship
   * many languages have special allolexes for the combination LIKE THIS, or
     even for more specialised combinations such as DO LIKE THIS, HAPPEN LIKE
     THIS or SAY LIKE THIS
