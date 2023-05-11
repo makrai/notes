@@ -10,6 +10,6 @@ Yangyang Shi, Martha Larson, Catholijn M Jonker
 * RNNLMs ... can exploit word-dependency information over arbitrarily long dist
 * In this paper, we
   * within-domain adaptation and limited-data within-domain adaptation
-  * curricula that start with general data: characterizing the whole domain as
-    * move towards specific data, i.e., characterizing the sub-domain targeted
+  * curricula that start with general data: characterizing the whole domain
+    * move towards specific data, ie, characterizing the sub-domain targeted
   * result in a[n] interpolation between general data and sub-domain-specific

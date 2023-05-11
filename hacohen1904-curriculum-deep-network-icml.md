@@ -9,12 +9,12 @@ ICML 2019 arXiv:1904.03626 [cs.LG]
 * We address challenge
   1. two methods:
     * transfer learning from some competitive "teacher" network, and
-    * bootstrapping. In our
+    * bootstrapping
     * empirical evaluation, both methods show similar benefits
-      in terms of increased learning speed and improved final performance on
-  2. by investigating different pacing functions to guide the sampling. The
+      in terms of increased learning speed and improved final performance
+  2. by investigating different pacing functions to guide the sampling
     * empirical investigation variety of network architectures,
-      using images from CIFAR-10, CIFAR-100 and subsets of ImageNet. We
+      using images from CIFAR-10, CIFAR-100 and subsets of ImageNet
 * a novel theoretical analysis of curriculum learning, where we show
   * it effectively modifies the optimization landscape
   * we define the concept of an ideal curriculum, and show that

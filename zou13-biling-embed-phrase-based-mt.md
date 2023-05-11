@@ -15,7 +15,7 @@ Will Y. Zou, Richard Socher, Daniel Cer, Christopher D. Manning
 
 * semantic similarities of phrase-pairs
 * curriculum training (Bengio+ ICML 2009)
-  * Y. Bengio, J. Louradour, R. Collobert and J. Weston
+  * Y Bengio, J Louradour, R Collobert and J Weston
     Curriculum Learning
 * bilingual distributed representations which lie in the same feature space
 * semantic relationships across bilingual embeddings were
