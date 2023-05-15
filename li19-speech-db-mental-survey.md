@@ -5,8 +5,8 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
 # Abstract
 
 * clinical databases in the study of mental disorders is essential to the
-  diagnosis and treatment of patients with mental illness. While
-  * unlike text corpora, speech corpora capture tones, emotions, rhythms and
+  diagnosis and treatment of patients with mental illness
+  * unlike text corpora, speech corpora capture tones, emotions, rhythms
 * we: from online databases and peer-reviewed journals in order to demonstrate
   * worldwide; reports from China; comparison between Chinese and non-Chinese
   * Most of the speech databases were recorded in Europe or the United States
