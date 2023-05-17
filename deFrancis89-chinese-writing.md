@@ -191,209 +191,181 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
   * "Geographical Mandarin" (the invention of twentieth-century linguists,
     created in an effort to delineate the language of a particular area sharing
     certain common phonological traits)
-  * and "Local Mandarin" (every locale, because of its unique linguistic
+  * "Local Mandarin" (every locale, because of its unique linguistic
     composition, treated as an independent speech community) (Sanders 1987).
 
-In earlier times most literature was produced in a style loosely called
-"classical Chinese" that was written by people who spoke some form of language
-ancestral to the varieties of current "Chinese" noted above. Such literature
-was also produced by many people who were not even native speakers of Chinese,
-but who adopted the system for want of a script of their own.
+* classical Chinese
+  * In earlier times most literature was produced in a style loosely called
+    "classical Chinese" that was written by people who spoke some form of
+  * ancestral to the varieties of current "Chinese" noted above. Such
+  * produced by many people who were not even native speakers of Chinese, but
+  * had about the same status as Latin in the Romance situation. In modern
+  * based more or less on speech, chiefly Mandarin but to some extent also
+    other varieties, notably Shanghainese and Cantonese
+    * these varieties of speech are mutually unintelligible,
+      so are the varieties of written language based on them
+  * It is a widespread myth that Chinese characters cut across boundaries of
+    speech
+  * like the universality for the Latin alphabet  
+    * It is necessary to learn the concrete application of the symbols to each
+      specific form of speech
+  * the version of Mandarin that is officially called Putonghua or Common
+    Speech is the standard language in China, the writing system based on it is
+    also the written standard. But
+  * it takes more effort for a Cantonese to learn to read and write in the
+    national standard than it does for a Spaniard to learn to read and write
+    French (DeFrancis 1984a).
 
-The classical Chinese literature written by people with such diverse linguistic
-backgrounds had about the same status as Latin in the Romance situation. In
-modern times the primary emphasis in writing has been on a style based more or
-less on speech, chiefly Mandarin but to some extent also other varieties,
-notably Shanghainese and Cantonese. Just as these varieties of speech are
-mutually unintelligible, so are the varieties of written language based on
-them. It is a widespread myth that Chinese characters cut across boundaries of
-speech. This is no more true than the claim of universality for the Latin
-alphabet. It is necessary to learn the concrete application of the symbols to
-each specific form of speech. Since the version of Mandarin that is officially
-called Putonghua or Common Speech is the standard language in China, the
-writing system based on it is also the written standard. But it takes more
-effort for a Cantonese to learn to read and write in the national standard than
-it does for a Spaniard to learn to read and write French (DeFrancis 1984a).
+* realities of speech and writing in China that are obscured by the
+  * myth of the universality of Chinese characters and by the
+  * ambiguity of the umbrella term "Chinese" should be kept in mind in
+* evolution of Chinese writing. There has been continuity as well as change in
+  * Characters have been created by speakers of many different varieties of
+    Chinese and often reflect the peculiarities of their speech.
+  * historical changes in word order, and the characters have been shuffled
+    around to adapt to these changes
+  * Characters have died out as the words that they represented have become
+    obsolete
+  * New characters and new combinations of characters have been created to
+    express new words that have entered into the vocabulary. In common
+  * pronunciation of the symbols has changed greatly over time, as is readily
+    * dictionary of Early Zhou Chinese (Schuessler 1987).
 
-The realities of speech and writing in China that are obscured by the myth of
-the universality of Chinese characters and by the ambiguity of the umbrella
-term "Chinese" should be kept in mind in considering the evolution of Chinese
-writing. There has been continuity as well as change in this long period.
-Characters have been created by speakers of many different varieties of Chinese
-and often reflect the peculiarities of their speech. There have been historical
-changes in word order, and the characters have been shuffled around to adapt to
-these changes. Characters have died out as the words that they represented have
-become obsolete. New characters and new combinations of characters have been
-created to express new words that have entered into the vocabulary. In common
-with all writing systems with a long history, the pronunciation of the symbols
-has changed greatly over time, as is readily apparent in a recently published
-dictionary of Early Zhou Chinese (Schuessler 1987).
+* The forms or shapes of the characters have also undergone change. On the
+  * stylized, abbreviated, distorted, and otherwise modified that it is often
+  * Shang oracle bones, the Great Seal style of the Zhou dynasty, the
+    Small Seal style of the short-lived Qin dynasty (221-206 bc)
+  * and the Scribal and Regular styles of the Han dynasty (206 bc-220 ad)
+    * the most commonly used script until the
+  * official simplification of characters in the PRC in the 1950s. Figure 17
+    compares the OBI and modern forms of a number of characters.  Root of some
+    of the very few characters that are pictographic in origin.
 
-The forms or shapes of the characters have also undergone change. On the oracle
-bones many characters are clear pictographs. Their modern descendants have been
-so stylized, abbreviated, distorted, and otherwise modified that it is often
-difficult to see the relationship with the ancestral character, as can be
-illustrated by the following example (from DeFrancis 1984a:83) showing the loss
-of iconicity in the evolution of the character for mǎ 'horse' : history of the
-'horse' character
+* Figure 17. Chinese Writing: A 1% Pictographic Script
+  * The evolution of fourteen Chinese characters representative of the mere one
+    percent that go back to pictographs, chiefly those found on oracle bone
+    inscriptions (OBI) of around 1200-1045 bc. All but two -- 12 and 14, the
+    most complicated -- have been used as phonetic symbols in the formation of
+    multielement characters. Adapted with permission from William G. Boltz,
+    "Early Chinese Writing." World Archaeology 17 (3) (1986):427.
 
-The styles illustrated are those of the Shang oracle bones, the Great Seal
-style of the Zhou dynasty, the Small Seal style of the short-lived Qin dynasty
-(221-206 bc), and the Scribal and Regular styles of the Han dynasty (206 bc-220
-ad), the last being the most commonly used script until the official
-simplification of characters in the PRC in the 1950s. Figure 17 compares the
-OBI and modern forms of a number of characters.  Root of some of the very few
-characters that are pictographic in origin.
+* Shang characters, of which
+  some 1,000 out of a total of 4,500 have been identified to date, is
+  * in many cases it is possible to trace the evolution of a character from its
+    Shang to its contemporary form
+  * There are many "descendantless" graphs. Some/others are
+    * completely unrelated to any modern symbols
+    * complex characters whose component elements have modern counterparts but
+      are not now combined in the same way as in the Shang graphs.
 
-Figure 17. Chinese Writing: A 1% Pictographic Script
+* component elements in Chinese characters and how they are combined raises the
+  * question of the principles behind the Chinese system of writing. To obtain
+  * what the principles are and
+  * how they were applied in different proportions over time.
 
-The evolution of fourteen Chinese characters representative of the mere one
-percent that go back to pictographs, chiefly those found on oracle bone
-inscriptions (OBI) of around 1200-1045 bc. All but two -- 12 and 14, the most
-complicated -- have been used as phonetic symbols in the formation of
-multielement characters. Adapted with permission from William G. Boltz, "Early
-Chinese Writing." World Archaeology 17 (3) (1986):427.
+* traditional practice to classify Chinese characters into several groups. The
+  1. pictographs.  Many of the earliest characters, as represented on the OBIs,
+  2. the "simple indicative principle" identifies a second group of characters
+    * not exactly pictorially but in some other representational manner. For
+    * eg "one," "two," and "three" are respectively represented by one, two,
+    * The words for "above" and "below" are represented by a horizontal line
+  3. the "compound indicative principle" involves a somewhat more elaborate
+    * frequently illustrated by the combination of the characters for "sun" and
+      "moon" to represent the word míng 'bright,' as follows:
 
-As the examples presented in the illustration suggest, the task of deciphering
-Shang characters, of which some 1,000 out of a total of 4,500 have been
-identified to date, is facilitated by the fact that in many cases it is
-possible to trace the evolution of a character from its Shang to its
-contemporary form. There are many instances, however, of "descendantless"
-graphs. These constitute a problem in decipherment. Some descendantless
-characters appear to be completely unrelated to any modern symbols. Others are
-complex characters whose component elements have modern counterparts but are
-not now combined in the same way as in the Shang graphs.
+      sun 	moon  bright 
+      日 	  月 	  明
 
-This mention of the component elements in Chinese characters and how they are
-combined raises the crucial question of the principles behind the Chinese
-system of writing. To obtain a clear understanding of this system it is
-essential that we recognize what the principles are and-a much neglected
-aspect-how they were applied in different proportions over time.
+  4. the familiar rebus device which we first encountered in
+    * Sumerian with the use of gi 'reed' borrowed to represent the homophonous
+      word gi 'reimburse
+    * Chinese example is the borrowing of a character representing xiàng
+      'elephant' to represent the homophonous word xiàng 'image.'
 
-It has been the traditional practice to classify Chinese characters into
-several groups. The first group, about which there is general agreement,
-consists of pictographs. As we have already seen, many of the earliest
-characters, as represented on the OBIs, are clearly pictographic in nature.
+  5. one which combines a rebus-like symbol with another symbol giving,
+     generally, a semantic clue to the meaning
+    * eg1 the addition (on the left) of the symbol for 'person' to that (on
+       the right) for xiàng 'elephant' to produce an unambiguous character
+       xiàng 'image': 亻 + 象 = 像
+    * eg2 the previously cited character for mā 'mother' formed by combining
+      the character for mǎ 'horse' (on the right) with another for 'female' (on
+      the left): 女 + 馬 = 媽
+    * I call this the SF principle, since it involves joining
+      * a semantic element S-such as the symbols for 'person' and 'female' in
+      * a phonetic element F-such as the symbols for xiàng 'elephant' and mǎ
+    * I also designate as SF characters those, to be discussed below, that are
+      formed by joining a phonetic element P to a semantic element S. We can
+      think of both of these types as MS (meaning-plus-sound) characters.
 
-What might be called the "simple indicative principle" identifies a second
-group of characters which represent words not exactly pictorially but in some
-other representational manner. For example, the words for "one," "two," and
-"three" are respectively represented by one, two, and three horizontal lines:
-1, 2, 3
+* The proportions in which the foregoing principles have been applied varied
+  * table (adapted from DeFrancis 1984a:84) summarizing
+  * the structural classification of 977 Shang characters, 9,353 characters of
+    a second-century dictionary by Xu Shen, and 48,641 characters of the great
+    imperial Kang Xi dictionary of the eighteenth century:
 
-The words for "above" and "below" are represented by a horizontal line with
-another graphic element placed above or below it: above, below
+|Principle	          |Shang Dynasty	|2nd century  |18th century |
+|---------------------|---------------|-------------|-------------|
+|Pictographic	        |226 (23%)	    |364 (4%)	    |             |
+|Simple indicative	  |20 (2%)	      |125 (1%)     |± 1,500 (3%) |
+|Compound indicative	|396 (41%)	    |1,167 (13%)  |             |
+|Semantic-phonetic	  |334 (34%)	    |7,697 (82%)	|47,141 (97%) |
+|Total	              |977	          |9,353        |48,641       |
 
-What might be called the "compound indicative principle" involves a somewhat
-more elaborate version of the preceding. It is frequently illustrated by the
-combination of the characters for "sun" and "moon" to represent the word míng
-'bright,' as follows: sun 	moon 	bright 日 	月 	明
+* The traditional view summarized above has been challenged by Boodberg 1937+
+  * two main points
+    * failure of many people, sinologists included, to realize the importance
+      of SP characters because of neglecting or minimizing the phonetic
+      contribution of the p element and exaggerating the semantic contribution
+      of the the S element
+    * especially with those characters traditionally classified under the
+      "compound indicative principle."
+      * The majority of these characters are in reality SP characters. Indeed,
+      * apart from "a few exceptional cases " there is simply no such thing as
+      * reiterated by another scholar, William G. Boltz, who has also done
+      * "Characters were not invented by just putting together two or more
+        elements based on their semantic values alone. At least of one of the
+        components must have had a phonetic function" (Boltz 1986:428).
 
-The fourth principle is the familiar rebus device which we first encountered in
-Sumerian with the use of gi 'reed' borrowed to represent the homophonous word
-gi 'reimburse.' A Chinese example is the borrowing of a character representing
-xiàng 'elephant' to represent the homophonous word xiàng 'image.'
+* Boodberg's "few exceptional cases" include chiefly single characters of
+  clearly pictographic origin. There are at most only a few hundred of these,
+  * the number has not increased for some two millennia. These simple
+  * examples appear in figure 17, comprise only about one percent of the total
+    number of Chinese characters
+  * majority examples in figure 18, are
 
-The final principle is one which combines a rebus-like symbol with another
-symbol giving, generally, a semantic clue to the meaning. One example is the
-addition (on the left) of the symbol for 'person' to that (on the right) for
-xiàng 'elephant' to produce an unambiguous character xiàng 'image': 亻 + 象 =
-像
+  * phonetic element (ie, one of the 895 syllabic elements in the "Soothill
+    Syllabary"), and an added
+  * semantic element (ie, one of the 214 elements
+    traditionally called radicals or keys).
 
-Another example is the previously cited character for mā 'mother' formed by
-combining the character for mǎ 'horse' (on the right) with another for 'female'
-(on the left): 女 + 馬 = 媽
+* eg1 míng 'bright.' He rejects the traditional approach which begins with a
+  * he starts by assuming definite spoken words related to the meaning
+  * existence of an earlier form of the character for míng 'bright' (Morohashi
+    1955-1960) that I present below in juxtaposition with the later version:
+    ming 明
 
-I call this the SF principle, since it involves joining a semantic element
-S-such as the symbols for 'person' and 'female' in the previous examples-to a
-phonetic element F-such as the symbols for xiàng 'elephant' and mǎ 'horse.' I
-also designate as SF characters those, to be discussed below, that are formed
-by joining a phonetic element P to a semantic element S. We can think of both
-of these types as MS (meaning-plus-sound) characters.
+  * In both cases the element 'moon' on the right-hand side of the characters
+    is a semantic determinative
+  * The element on the left-hand side
+    * of the first character is originally a picture of a window, with a
+      pronunciation related to míng. In short, the present character
+      representing míng 'bright' is simply a later variant with what is usually
+      taken as a semantic "sun"-which has caused us to overlook an earlier
+      version with a phonetic míng element that more closely relates the
+      character to a spoken word (Boodberg 1937:344-345; 1940:270-274).
 
-The proportions in which the foregoing principles have been applied in the
-formation of Chinese characters have varied over time. This can be seen in the
-following table (adapted from DeFrancis 1984a:84) summarizing the structural
-classification of 977 Shang characters, 9,353 characters of a second-century
-dictionary by Xu Shen, and 48,641 characters of the great imperial Kang Xi
-dictionary of the eighteenth century: Principle 	Shang Dynasty 	2nd century
-18th century Pictographic 	227 (23%) 	364 (4%) 	± 1,500 (3%) Simple
-indicative 	20 (2%) 	125 (1%) Compound indicative 	396 (41%) 	1,167 (13%)
-Semantic-phonetic 	334 (34%) 	7,697 (82%) 	47,141 (97%) Total 	977 	9,353
-48,641
-
-The traditional view of Chinese characters summarized above has been challenged
-in some important respects by Peter A. Boodberg, a leading student of early
-Chinese writing whose views are receiving more and more acceptance since they
-were propounded several decades ago (Boodberg 1937, 1940, 1957). His criticisms
-center on two main points. The first is the failure of many people, sinologists
-included, to realize the importance of SP characters because of neglecting or
-minimizing the phonetic contribution of the p element and exaggerating the
-semantic contribution of the the S element. The second extends Boodberg's
-criticism of underestimating the significance of the phonetic element by
-dealing especially with those characters traditionally classified under the
-"compound indicative principle."
-
-The majority of these characters, Boodberg contends, are in reality SP
-characters. Indeed, he goes so far as to claim that apart from "a few
-exceptional cases " there is simply no such thing as a class of characters
-constructed on semantic principles (1937:345-347). This view has recently been
-reiterated by another scholar, William G. Boltz, who has also done significant
-work on early Chinese writing. He asserts: "Characters were not invented by
-just putting together two or more elements based on their semantic values
-alone. At least of one of the components must have had a phonetic function"
-(Boltz 1986:428).
-
-Boodberg's "few exceptional cases" include chiefly single characters of clearly
-pictographic origin. There are at most only a few hundred of these, and the
-number has not increased for some two millennia. These simple characters of
-pictographic origin, examples of which appear in figure 17, comprise only about
-one percent of the total number of Chinese characters. The remaining 99
-percent, examples of which are presented in figure 18, are compound characters
-whose main component is a phonetic element.  Examples of how the vast majority
-of Chinese characters are formed: a phonetic element and an added semantic
-element. They aren't ideograms or ideographs or anything else of the sort.
-
-view larger image
-
-Figure 18. Chinese Writing: A 100% Syllabic Script
-
-Examples of Chinese characters, which always represent syllables, showing their
-derivation (except for the 1% noted in Figure 17) from two elements -- a
-primary phonetic element (i.e., one of the 895 syllabic elements in the
-"Soothill Syllabary"), and an added semantic element (i.e., one of the 214
-elements traditionally called radicals or keys).
-
-As an example of the need to rethink characters allegedly based on semantic
-principles, Boodberg cites the case of the previously mentioned character for
-míng 'bright.' He rejects the traditional approach which begins with a
-disembodied concept supposedly represented by a character formed by combining
-the symbols for "sun" and "moon."
-
-Instead he starts by assuming definite spoken words related to the meaning
-"bright." This leads him to note the existence of an earlier form of the
-character for míng 'bright' (Morohashi 1955-1960, 5:14, 366) that I present
-below in juxtaposition with the later version: ming 明
-
-In both cases the element 'moon' on the right-hand side of the characters is a
-semantic determinative. The element on the left-hand side of the first
-character is originally a picture of a window, with a pronunciation related to
-míng. In short, the present character representing míng 'bright' is simply a
-later variant with what is usually taken as a semantic "sun"-which has caused
-us to overlook an earlier version with a phonetic míng element that more
-closely relates the character to a spoken word (Boodberg 1937:344-345;
-1940:270-274).
-
-Boodberg also cites the case of the following two characters: 目 見
-
-In modern transcription, the first character is mù eye,' the second jiàn 'see.'
-But the first was also used to write the related word 'see.' Hence it
-represented two related meanings and had two quite different pronunciations,
-which have become modern mù 'eye' and jiàn 'see.' In order to distinguish the
-two meanings, the 'eye' character was supplemented with a phonetic
-determinative, the bottom part of the second character, whose earlier
-pronunciation nzien provided a better phonetic clue than the modern
-pronunciation rén (Boodberg 1937:343).
+* eg2 Boodberg also cites the case of the following two characters: 目 見
+  * the second jiàn 'see
+  * the first
+    * In modern transcription, the first character is mù eye,' .' But the first
+    * was also used to write the related word 'see.' Hence
+      * it represented two related meanings and had
+      * two quite different pronunciations, which have
+        become modern mù 'eye' and jiàn 'see.'
+  * In order to distinguish the two meanings, the 'eye' character was
+    supplemented with a phonetic determinative, the bottom part of the second
+    character, whose earlier pronunciation nzien provided a better phonetic
+    clue than the modern pronunciation rén (Boodberg 1937:343).
 
 In presenting these and other cases Boodberg stresses an aspect of Chinese
 writing that we have already encountered in Sumerian. That is the fact that
