@@ -125,7 +125,7 @@ https://github.com/tobefans/LSSED
 * our experiments are carried out on
   the DAIC-WOZ depression database, which is
   * a subset of the Distress Analysis Interview Corpus (DAIC) [26]. There are
-    107/35/47 subjects in the training/development/test set the test set
+  * 107/35/47 subjects in the training/development/test set the test set
   * Each subject will be interviewed by an animated virtual interviewer and
     recorded with video and audio equipments
   * annotated with the start time, end time and depression (or not) of each
