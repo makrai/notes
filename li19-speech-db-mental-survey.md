@@ -93,8 +93,8 @@ The selection criteria qualify studies included in the review from the global
 * listed contents: name of the speech database, establishment year, language,
   average age, number of subjects, location, media type, description and number
   of citations were shown in table 2. Among them, the number of citations was
-* DAIC-WOZ	2014	English	–	–	50	USA	Video	Anxiety, depression and
-  post-traumatic stress disorder in University of Southern California
+* DAIC-WOZ 2014 English 50 USA Video Anxiety, depression and post-traumatic SD
+  * University of Southern California
 
 ## Quality assessment of included studies
 
@@ -244,13 +244,14 @@ The selection criteria qualify studies included in the review from the global
       sequential commands (43.7 vs 53.2; p=0.017) when compared with white
 * WRAP, Mueller+ showed that participants with early MCI status had a faster
   decline in speech fluency and semantic cognition than those normal peers
-  * Dham+ 40 presented their multimodal feature extraction and decision-level
-    fusion approach for detecting depression automatically. Features were
-    extracted from the provided DAIC-WOZ database. The model proved to cross
-    the provided baseline on validation data set by 17% on audio features and
-    24.5% on video features. Similarly, Cummins+ 41 presented key factors that
-    may reveal gender differences in the significance of depression on vowels’
-    formant features through the application of DAIC-WOZ
+  * Dham+ 40: multimodal feature extraction and decision-level fusion approach
+    for detecting depression automatically
+    * Features were extracted from the provided DAIC-WOZ database. The model
+    * above baseline on validation data set by 17% on audio features and 24.5%
+      on video features
+  * Cummins+ 41: key factors that may reveal
+    gender differences in the significance of depression on vowels’ formant
+    * through the application of DAIC-WOZ
 
 ### Speech databases from China
 

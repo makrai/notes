@@ -43,11 +43,11 @@ available at https://github.com/SaraS92/CAE_ADD
     from 40 speakers with a major depressive disorder, rated using the Quick
     Inventory of Depressive Symptomatology- Self Report (QIDS-SR) scale (Cohn+
     2018)
-* DAIC-WOZ (Gratch+ 2014), which comprises interviews between participants
-  (patients) and a virtual questioner. As we are aiming to develop a
-  generalized depression detection model, we use this dataset that is spoken in
-  English and contains more sample data (higher number of participants compared
-  to other dataset)
+* DAIC-WOZ (Gratch+ 2014)
+  * interviews between participants (patients) and a virtual questioner
+  * to develop a generalized depression detection model, we use this dataset
+  * spoken in English, more sample data, ie? more participants
+    compared to other dataset
 * depression detection systems based on both visual and vocal features . For
   * Yang+ (2017) proposed a hybrid depression classification and estimation
     method using the fusion of audio, video and textual information and the
@@ -95,21 +95,21 @@ available at https://github.com/SaraS92/CAE_ADD
     * curse of dimensionality, avoid overfitting, and have better
     * we should reduce the dimensionality to a feature space that corresponds
     * intrinsic representation of data (Van Der Maaten+ 2009)
-* DL techniques in automatic feature extraction and classification, applied to
+* DL techniques in automatic feature extraction and classification applied
   (Nakisa+ 2020, Nakisa+ 2018b, Nakisa+ 2018a, Rastgoo+ 2019, Rastgoo+ 2018,
-  Zhang+ 2017, Mou+ 2021, Banan+ 2020, Shamshirband+ 2019, Fan+ 2020), it can
-  * ADD systems using DL methods. One of the studies in the
-  * Depaudionet proposed by Ma+ (2016). That system is focused on two important
-    challenges of data representation and sample unbalanced issue for the audio
-    files in the DAIC-WOZ dataset. In their study, the audio files were firstly
-    converted to spectrograms (a time–frequency 2D representation) and a deep
-    model based on Convolutional Neural Network (CNN) and LSTM models. To
-    address the unbalanced issue in the dataset, a random sampling strategy is
-    used. This method resulted in 0.52F-measure performance for depressed class
-    detection in development set.  Although they have achieved better
-    performance compared to hand-crafted feature extraction methods, they
-    converted the raw audio data into spectrogram data which is time consuming
-    and limits its application to real-world applications
+  Zhang+ 2017, Mou+ 2021, Banan+ 2020, Shamshirband+ 2019, Fan+ 2020)
+  * ADD systems using DL methods
+* Depaudionet proposed by Ma+ (2016)
+  * focused on two challenges of data representation and sample unbalanced
+    issue for the audio files in the DAIC-WOZ dataset. In their
+  * audio files were firstly converted to spectrograms (a time–frequency 2D
+    representation) and a deep model based on
+  * Convolutional Neural Network (CNN) and LSTM models. To address the
+  * unbalanced issue: a random sampling strategy is used. This method
+  * 0.52 F-measure performance for depressed class detection in dev set.
+  * better performance compared to hand-crafted feature extraction methods,
+  * hE converting the raw audio data into spectrogram data which is time
+    consuming and limits its application to real-world applications
 * Vázquez-Romero and Gallardo-Antolín (2020), an
   ensemble of CNNs for depression classification is proposed. To address the
   unbalanced data challenge, a random sampling method is utilized. The authors
@@ -172,8 +172,8 @@ available at https://github.com/SaraS92/CAE_ADD
     * no other research conducted on developing an automated feature extraction
       using Convolutional AE on the audio modality for depression detection
       * it is applied on raw audio data without converting them to spectrograms
-  * To overcome the problem of unbalanced data using DAIC-WOZ dataset, in this
-    * a cluster-based resampling technique for the preprocessing step which can
+  * To overcome the problem of unbalanced data using DAIC-WOZ dataset
+    * a cluster-based resampling technique for the preprocessing step
   * experiments to compare the performance of the proposed CNN AE method with
     hand-crafted feature extraction technique. To address the problem of
     * different dimensionality reduction techniques were explored for

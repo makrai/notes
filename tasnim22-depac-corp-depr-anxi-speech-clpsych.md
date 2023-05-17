@@ -54,7 +54,7 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
   * automated computational analysis of speech represents an excellent data
     * develop digital biomarkers for mental illness.  This kind of automated
     * takes only a few minutes of audio recording, therefore is less
-* speech-based comp models for measuring depression prevalence and severity has
+* speech-based comp models for measuring depression prevalence and severity
   * Audio-Visual Emotion Recognition Challenge (AVEC) in 2013
   * A subset of the audiovisual depressive language corpus (AViD-Corpus) was
     introduced as challenge corpus for 2013 (Valicsstar+ 2013) and 2014
@@ -63,7 +63,7 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
       divided equally into training, development and test partitions
     * Predicting depression severity on BDI-II scale was the challenge
       specified task
-  * Distress Analysis Interview Corpus (DAIC,Gratch+ 2014). It contains
+  * Distress Analysis Interview Corpus (DAIC, Gratch+ 2014)
     * semi-structured clinical interviews in English language
       formulated to support diagnosis of psychological conditions such as
       anxiety, depression, and post-traumatic stress disorder
