@@ -78,8 +78,8 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
     psychological distress conditions
     eg anxiety, depression, and post-traumatic stress disorder
   * The interviews were conducted by an animated virtual interviewer
-    * meant to simulate the first step in identifying mental illness in health
-      care settings, which is
+    * meant to simulate the first step in identifying mental illness
+      in health care settings
       * a semi-structured interview where health care providers ask a series of
         open-ended questions with the intent of identifying clinical symptoms
   * audio and video recordings and extensive questionnaire responses

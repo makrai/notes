@@ -55,11 +55,11 @@ github.com/Advancing-Machine-Human-Reasoning-Lab/transformer-psychometrics
   * item response theory (IRT, Reckase, 2009) have been particularly popular
     * Lalor+ (2018) used IRT models to study the impact of question difficulty
       on the performance of deep models on several NLP tasks.  In a follow-up
-    * Lalor and Yu (2020) used IRT models to estimate the competence of LSTM
-      (Hochreiter and Schmidhuber, 1997) and BERT models during training.  This
-      allowed them to create a dynamic curriculum learning (Bengio+ 2009)
-      algorithm, which achieved superior performance to the same models trained
-      using a static scheduler for several tasks
+    * Lalor and Yu (2020) used IRT models to estimate the competence of
+      LSTM (Hochreiter and Schmidhuber, 1997) and BERT models during training.
+      * create a dynamic curriculum learning (Bengio+ 2009) algorithm, which
+      * superior performance to the same models trained using a static
+        scheduler for several tasks
     * Sedoc and Ungar (2020) used IRT to efficiently assess chat-bots
     * Martı́nez-Plumed+ (2019) used IRT to analyze the performance of ML
       classifiers in a supervised learning task. IRT has also been used

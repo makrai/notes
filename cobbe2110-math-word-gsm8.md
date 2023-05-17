@@ -102,8 +102,8 @@ Cite as: 	arXiv:2110.14168 [cs.LG]
   the math reasoning skills of large transformer-based models.
   * Hendrycks+ (2021) propose pretraining models on a new AMPS corpus, derived
     from Khan Academy problems and Mathematica scripts. Similarly
-  * Shen+ (2021b) propose a pretrained a corpus of pre-K to college level
-    curricula extracted from the internet, and
+  * Shen+ (2021b): a pretrained corpus of pre-K to college level curricula
+    extracted from the internet, and
   * Peng+ (2021) propose
     pretraining by predicting masked subexpressions from expression trees.
 * Similar to verification, other methods have finetuned a language model to

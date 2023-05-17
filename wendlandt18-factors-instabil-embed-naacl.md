@@ -103,7 +103,7 @@ naacl 2018
     * previously explored for word2vec (Tsvetkov+ 2016)
     * only affects word2vec Of the embedding algorithms we consider,
       * GloVe and PPMI use a complete matrix before building embeddings,
-    * as features the first appearance of word W in the dataset for embedding
+    * features: the first appearance of word W in the dataset for embedding
       space A and B (represented as percentages of sentences)
     * We further include the absolute difference between these percentages
 

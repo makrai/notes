@@ -27,7 +27,7 @@ Beth Levin, Malka Rappaport Hovav
       * bend, fold, shatter, crack
     * hit involve contact, often forceful, with an entity,
       without entailing any change of state in that entity
-      (e.g., The rocks hit the window, but luckily it wasn’t damaged)
+      (eg The rocks hit the window, but luckily it wasn’t damaged)
       * slap, strike, bump, stroke (Fillmore 1970)
 * All verbs in the break class – and none in the hit class –
   * show the two argument realization options in (1) and (2), which together
@@ -121,12 +121,12 @@ Beth Levin, Malka Rappaport Hovav
       arguments of verbs (Chomsky 1986; Pesetsky 1982; Stowell 1981)
   * Implicit assumption that
     s-selection takes a list of arguments, identified by their semantic roles
-  * Chomsky (1986) e.g. suggests that the syntactic type and grammatical
+  * Chomsky (1986) eg suggests that the syntactic type and grammatical
     relation of each argument (c-selection) can be derived from s-selection
     * subcategorization frames can be dispensed with altogether
     * the fact that this verb is transitive, taking an NP subject and an NP DO
       follows from the fact that the verb selects two “things” as arguments
-      (rather than e.g. a “thing” and a “proposition”)
+      (rather than eg a “thing” and a “proposition”)
     * The fact that the NP denoting the hitter is the subject and the NP
       denoting the contacted object is the direct object follows from
       * the former as agent and the latter as patient
@@ -156,7 +156,7 @@ Beth Levin, Malka Rappaport Hovav
     NPs bearing identical semantic roles to a verb have to be realized in the
     same syntactic relation to that verb
     * when two NPs bear the same semantic relation to a verb?
-    * e.g. in the analysis of the dative alternation, exemplified by
+    * eg in the analysis of the dative alternation, exemplified by
     * _Terry gave a watch to Sam/Terry gave Sam a watch_
     * whether the two VP-internal arguments bear the same semantic roles in both
     * Most of the recent well-articulated theories of argument realization take
@@ -195,12 +195,12 @@ Beth Levin, Malka Rappaport Hovav
 * color (Grimshaw 1993)
   * cognitively salient, but there are no grammatical processes or generalizs
     about the morphosyntactic realization of arguments which are restricted to
-    verbs having to do with color (e.g., paint, color, bleach, redden, stain)
+    verbs having to do with color (eg paint, color, bleach, redden, stain)
 * Pesetsky (1995)
-  * verbs of loud vssoft speech (e.g., bellow, holler, shout) vs (e.g., murmur,
+  * verbs of loud vssoft speech (eg bellow, holler, shout) vs (eg murmur,
     whisper) is not relevant
   * verbs of manner vscontent of speaking
-    * e.g. holler and whisper vs say and propose, is grammatically relevant
+    * eg holler and whisper vs say and propose, is grammatically relevant
     * his examples for grammatical properties of these classes of verbs involve
       sentential complements, which we do not discuss in this book, but instead
   * we present comparable examples involving verbs of sound emission, drawing on
@@ -214,10 +214,10 @@ Beth Levin, Malka Rappaport Hovav
 * Consistent with what Pesetsky (1995) notes in his discussion of verbs of
   * the volume, pitch, resonance, and duration of the sound play no part
   * critical is the mode of sound production. Some sounds are produced
-    * internal to the sound emitter (e.g., babble, gurgle, holler, rumble),
-    * external to it (e.g., clatter, jingle, rattle).  Still others may be
+    * internal to the sound emitter (eg babble, gurgle, holler, rumble),
+    * external to it (eg clatter, jingle, rattle).  Still others may be
     * in either way, depending on the emitter (buzz, squeak, squeal, whistle);
-      * e.g. a baby squeals vs as when tires squeal. The verbs of sound with
+      * eg a baby squeals vs as when tires squeal. The verbs of sound with
   * causative uses are associated with externally produced sounds
     (B. Levin, Song and Atkins 1996; Song 1996)
 * B. Levin, Song, and Atkins (1997) argue, however, that
@@ -397,7 +397,7 @@ Beth Levin, Malka Rappaport Hovav
 * As discussed in section 1.2, causative alternation is shown
   * predominantly by verbs of change of state, but it is
   * also by certain verbs which, like splash, involve a change of location
-    (e.g., move, roll, spin) (Smith 1970)
+    (eg move, roll, spin) (Smith 1970)
   * most verbs found in the causative alternation do not show the locative alte,
 * Precisely delineating the class of verbs showing a particular alternation
   presents a real challenge, which we take up in chapter 7
@@ -444,7 +444,7 @@ Beth Levin, Malka Rappaport Hovav
   * what DeLancey (1991) terms “the objectivist error.” This error involves
     * incorporate into the semantic representation of the clause inferences
       which are not in fact part of the event representation of the clause
-  * e.g. John threw the ball through the window
+  * eg John threw the ball through the window
     * window vs ball as the entity that changed
     * they imagined a scenario with a closed window. The objectivist error
     * an “imagined ‘real world’” (1991), rather than on the linguistic
@@ -462,7 +462,7 @@ Beth Levin, Malka Rappaport Hovav
     * Van Valin (1999) suggesting that buy and sell may differ in truth cond;
       * in various languages the verb  meaning sell _(verkaufen)_ is
         morphologically derived from the verb meaning buy _(kaufen)_ , often via
-        a causative morpheme, e.g., German
+        a causative morpheme, eg German
         * Lakhota ophéthu̧ ‘buy’/iyópheya ‘sell,’ and
         * Tagalog bili ‘buy’/mag-bili ‘sell,’ but the verb meaning
       * buy is never the causative of the verb meaning sell, surely no accident
@@ -495,13 +495,13 @@ Beth Levin, Malka Rappaport Hovav
   * two-argument verbs which do not fit this mold exhibit
     * crossl (Blume 1998; Dezsö 1982; Nichols 1975; Testelec 1998; Tsunoda 1985)
     * less uniformity within a given language (B.  Levin 1999)
-    * e.g. many verbs of authority, ruling, and disposition,
+    * eg many verbs of authority, ruling, and disposition,
       * in Russian, take instrumental complements, though their
       * English counterparts are transitive
         (Dezsö 1982; Fowler 1996; Nichols 1975, 1984; Wierzbicka 1980)
       * Even within English, such verbs do not show uniformity in argument real
-        * transitive (e.g., command, direct, govern, manage), others are
-        * intransitive + over (e.g., preside, reign), and
+        * transitive (eg command, direct, govern, manage), others are
+        * intransitive + over (eg preside, reign), and
         * both (rule and tyrannize)
 * hit and other surface-contact verbs, including kick, kiss, and slap. These
   * English transitive verbs, in other languages not necessarily simple transit
@@ -519,7 +519,7 @@ Beth Levin, Malka Rappaport Hovav
       * pattern which according to Nichols (1984) is common across Caucasian
         languages
 * individual members of varying classes to show a range of argument realiz ops
-  * e.g. English either the surface or the instrument as their object, as in
+  * eg English either the surface or the instrument as their object, as in
     (19) a. Lindsay hit/beat the stick against the fence
                              the fence with a stick
     * analogue of the most common Caucasian argument realization pattern for
@@ -783,9 +783,9 @@ Beth Levin, Malka Rappaport Hovav
   * what semantic properties of arguments govern these deviations? 10 In some
   * In some/other instances
     * belonging to a particular semantic class of verbs is a necessary cond
-      * e.g. the Russian verbs of authority, ruling, and disposition
+      * eg the Russian verbs of authority, ruling, and disposition
     * depend on properties of the NP bearing a particular grammatical relation
-      e.g. accusative/partitive case alternations in Finnish or Estonian
+      eg accusative/partitive case alternations in Finnish or Estonian
       (Kiparsky 1998; Ackerman and Moore 2001), depend on
       the case-marked NP in determining the time course of the event. In still
     * animacy or the specificity of the NP bearing a particular gramm relation

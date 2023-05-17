@@ -125,9 +125,9 @@ http://ldtoolkit.space
   * FastText (Bojanowski+ 2017)
   * Table 1: the first 7 nearest neighbors of color (measured by cosine sim)
     * Both models output the British spelling of the target word (colour)
-    * hE, DEPS also includes derivatives and synonyms, while
-      * FastText favors misspellings and compounds
-        * as could be expected of a subword-level model
+    * DEPS also includes derivatives and synonyms, while
+    * FastText favors misspellings and compounds
+      * as could be expected of a subword-level model
 * Which of these models is “better”? Without the context of some application?
   * more meaningful question: what are the properties of embedding X that
     could predict its performance on tasks Y?

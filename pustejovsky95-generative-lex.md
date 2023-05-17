@@ -28,7 +28,7 @@ Contents p6
         * the latter refers to logically related word senses
 * organization
   * chapters 2 and 3: most of the careful representation work has been done on
-    verb classes (e.g., Levin, 1993)
+    verb classes (eg Levin, 1993)
     * semantic weight in both lexical and compositional terms
     * consequences for how lexical ambiguity has been treated
   * chapter 4: several devices
@@ -40,7 +40,7 @@ Contents p6
     * I will refer to such an organization as a generative lexicon
     * generative devices
       * operations which generate these "extended senses"
-      * e.g. type coercion and co-composition
+      * eg type coercion and co-composition
   * natural languages are weakly polymorphic enyhén típusos
     * rich enough to capture logical polysemy and co-compositionality
   * chapter 5: the type system
@@ -120,7 +120,7 @@ Contents p6
   * What is the unit of well-formedness
     * the sentence, utterance, paragraph, or discourse?
 * semantic levels
-  * e.g., lexical semantics, compositional semantics, discourse structure,
+  * eg lexical semantics, compositional semantics, discourse structure,
     temporal structure
   * individual sources of semantic knowledge compute local inferences with a
     high degree of certainty
@@ -146,7 +146,7 @@ Contents p6
 ### 2.1.1 Verbal Alternations
 
 * syntactic patterns that words participate in
-  (e.g., common grammatical alternations)
+  (eg common grammatical alternations)
   * Levin (1993), outlines a broad classification of alternations
 * For example
   * lexical = zero-derivated causation
@@ -161,7 +161,7 @@ Contents p6
   * including argument dropping alternations
   * Bresnan (1982), Fillmore (1986), and Levin (1993)
   * e.g eat +/obj
-* ditransitive-transitive shifts, e.g. _give_
+* ditransitive-transitive shifts, eg _give_
   * interaction of the verbal semantics
     with semantic information from the complement itself
 * why these and just these grammatical forms are part of a certain alternation
@@ -194,7 +194,7 @@ Contents p6
   * A theory of lexical semantics should be able to account for this behavior,
 * typeshifting
   * aspect may change as the result of syntax
-  * e.g. adverbial modification, the structure of the NP in an argument
+  * eg adverbial modification, the structure of the NP in an argument
     position, or the presence of a prepositional phrase
   * problems in compositional semantics
   * Bach (1986), Link (1983), Krifka (1989), and Verkuyl (1993)
@@ -217,7 +217,7 @@ Contents p6
   * anaphoric binding,
 * Relational nouns (vs predicative)
   * dependent on another referent in terms of how they themselves denote
-  e.g. _neighbor_ and _brother_
+  eg _neighbor_ and _brother_
 * taxonomic classification of objects through language
   * commonsense perspective of what the nouns denote in the world
   * e.g
@@ -246,7 +246,7 @@ Contents p6
 
 ### 2.1.3 Adjective Classes
 
-* Some of the previous discussion on types of stativity, e.g., the
+* Some of the previous discussion on types of stativity, eg the
   * individual-level vs. stage-level distinction
     * related to but not identical with accidental vs. necessary qualities
       * the oldest distinction, used in Aristotle and the scholastics
@@ -260,7 +260,7 @@ Contents p6
   * Mary is certain to be the/It is certain that Mary will be the
 * raising/control distinction seen with adjective pairs such as easy
   * subject-control
-    * e.g. eager, anxious, and unwilling
+    * eg eager, anxious, and unwilling
     * no alternating construction, while
   * tough-Movement adjectives
     * such as _easy, tough, and difficult_
@@ -292,14 +292,14 @@ Contents p6
     * substituting one for the other in all contexts does not change the truth
   * weaker definition
     * substitution relative to a specific context
-      * e.g. in carpentry, plank and board might be considered synonyms
+      * eg in carpentry, plank and board might be considered synonyms
   * if synonymy is defined by substitutability of expressions, then it is an
-    intra-category relation, e.g., nouns for nouns, verbs for verbs, and so on
+    intra-category relation, eg nouns for nouns, verbs for verbs, and so on
 2. Antonymy
   * defined over pairs of lexical items rather than concepts
-  * e.g. rise/fall, heavy/light, fast/slow, long/short
+  * eg rise/fall, heavy/light, fast/slow, long/short
   * synonyms do not necessarily share the same antonyms
-    * e.g. rise and ascend as well as fall and descend are similar in meaning,
+    * eg rise and ascend as well as fall and descend are similar in meaning,
       yet neither fall/ascend nor rise/descend are antonym pairs
       (Miller et al 1990)
 3. Hyponymy and Lexical Inheritance
@@ -325,7 +325,7 @@ Contents p6
     * lexical decomposition in linguistics in the 1960s, and still motivates
     * Jackendoff (1983) and Dowty (1979)
   * factive
-    * e.g. _forget that_ (but _forget to_)
+    * eg _forget that_ (but _forget to_)
     * presuppose the truth of the complement
     * Kiparsky and Kiparsky (1971)
 
@@ -384,7 +384,7 @@ Contents p6
   16. Count/Mass alternations; lamb
   17. Container/Containee alternations; bottle
   18. Figure/Ground Reversals; door, window
-    * e.g. door, window, fireplace, pipe, room, gate
+    * eg door, window, fireplace, pipe, room, gate
     * 'aperture' nyílás and 'physical object' used to frame this aperture
   19. Product/Producer alternation; newspaper, Honda
   20. Plant/Food alternations; fig, apple
@@ -488,28 +488,28 @@ Contents p6
   * These undergo semantic deviations due to convention or pragmatic factors,
     supplying additional or overriding information to the existing selectional
     restrictions of the preposition
-  * e.g. from the core meaning of _in_, convention will elicit related but
+  * eg from the core meaning of _in_, convention will elicit related but
     distinct senses for the preposition as used in the two expressions _the
     hole in the wall_ and _the crack in the bowl_
 * express the logical relation between senses in cases of logical polysemy
 * adjectives which have complementary senses in well-defined contexts
   * psychological predicates, discussed in Ostler and Atkins (1991, 1992),
     * have the ability to apparently change type
-    * e.g. sad and happy are able to predicate of both individuals and events
+    * eg sad and happy are able to predicate of both individuals and events
   * _noisy_, which predicates of an individual or of a particular location
 
 ## 4.4 Difference in Syntactic Forms 50
 
 * It is equally arbitrary to create separate word senses  just because it
   can participate in distinct lexical realizations
-* e.g. verbs such as _believe_ and _forget_
+* eg verbs such as _believe_ and _forget_
 * the syntactic realization of the verb's complement determines interpretation
   * The tensed-S complement exhibits "factivity" (cf. Kiparsky and Kiparsky, 1971)
   * forget to: a "concealed question"
 * The proper approach, in our view, is to have one definition for _forget_
   which could, by suitable composition with the different complement types,
   generate all the allowable readings shown above (cf. chapter 7 below)
-* subjects possible with causative and experiencer verbs, e.g. _frighten_
+* subjects possible with causative and experiencer verbs, eg _frighten_
   * similar to general metonymy (Lakoff and Johnson, 1982, Nunberg, 1978),
   * there is an interesting systematicity that we will try to characterize
 * &ast;A car and a tree ran into each other
@@ -544,7 +544,7 @@ Contents p6
     * work reported in Klein and van Benthem (1987)
   * All lexical items are semantically active, and have a
   * richer typed semantic representation than conventionally assumed
-  * semantic operations of lexically-determined type changing (e.g., type
+  * semantic operations of lexically-determined type changing (eg type
     coercions) operate under well-defined constraints
   * Different subclasses of polymorphic operations are defined,
     each with independent properties and conditions on their application
@@ -635,7 +635,7 @@ Contents p6
       * multiple elements within a phrase behave as functors,
         generating new non-lexicalized senses for the words
       * underspecified semantic forms becoming contextually enriched,
-        e.g.  manner co-composition, feature transcription, and
+        eg manner co-composition, feature transcription, and
         light verb specification
   * Semantic underspecification for lexical items plays an important role
   * I call such meta-entries _lexical conceptual paradigms_ (leps)
@@ -660,28 +660,28 @@ Contents p6
     * may be left unexpressed in the surface syntax
   3. Shadow Arguments:
     * semantic content that is not necessarily expressed in syntax
-    * e.g.  incorporated semantic content in the verbs _butter_ and _kick_
+    * eg incorporated semantic content in the verbs _butter_ and _kick_
     * can be expressed only by operations of subtyping or discourse
-      specification; e.g., "Mary buttered her toast with an expensive butter."
+      specification; eg "Mary buttered her toast with an expensive butter."
   4. True Adjuncts:
     * part of the situational interpretation,
       not tied to any particular lexical item's semantic representation
     * include temporal or spatial modification
     * associated with verb classes and not individual verbs
-      * e.g. individuated event can be modified by the temporal expression
+      * eg individuated event can be modified by the temporal expression
 * Verbal alternations  should be distinguished
   * which result in the expression of true arguments
-    * e.g. inchoative/causative alternation in (2), while the latter include
+    * eg inchoative/causative alternation in (2), while the latter include
       cases such as the
   * those involving the expression of an optional phrase
-    * e.g. material/product alternation,  e.g. _(ki)farag (vmit) (vmiből)_
+    * eg material/product alternation,  eg _(ki)farag (vmit) (vmiből)_
     * the material is optional, different from the created object
 * Compositional operations may create an argument or shadow an argument
   * similarly, a true argument is defaulted by a complement's semantics
   * show (sy) sg
 * default arguments can be satisfied as a phrase incorporated into a true
   argument
-  * e.g. _Mary built a **wooden** house_
+  * eg _Mary built a **wooden** house_
 
 ## 5.3 Extended Event Structure 67
 
@@ -721,9 +721,9 @@ Contents p6
     * Rules of agreement, government,
     * what part of the matrix event is being focused by the lexical item
   * összehasonlítani after-rel és before-ral
-  * When adjoined to predicates denoting transitions, _prepositional and
-    adverbial phrases_ not only _can modify_ the entire event, but can also
-    take scope over the individual subevents. In particular, heads
+  * When adjoined to predicates denoting transitions,
+    _prepositional and adverbial phrases_ not only _can modify_ the entire
+    event, but can also take scope over the individual subevents
     * e.g
       * My terminal died for two days
       * Mary left town for two weeks
@@ -734,7 +734,7 @@ Contents p6
   * constitutive:
     * internal structural differences
     * the relation between an object and its constituent parts
-    * e.g. text in a novel is characteristically a narrative or story, while a
+    * eg text in a novel is characteristically a narrative or story, while a
       dictionary is by definition a listing of words
   * FORMAL: that which distinguishes it within a larger domain
     * novel FORMAL book
@@ -766,7 +766,7 @@ Contents p6
 * in order to derive the "sense in context
 * how modes of explanation map into a verb's event structure
   * a stative predicate corresponds to the FORMAL role in the qualia structure,
-    e.g., that state of affairs which exists, without reference to how it came
+    eg that state of affairs which exists, without reference to how it came
     about. For example, the predicate _tall_
   * stage-level predication involves reference to the bringing into being of
     the resulting state, i.e., the AGENTIVE quale
@@ -784,7 +784,7 @@ Contents p6
     * processes are quantifiable in different ways
       * specify explicitly the resulting state in the FORMAL role
       * more complex event structures
-        * e.g. walk
+        * eg walk
         * bind into both AGENTIVE and FORMAL qualia roles
 
 ## 5.5 The Interaction of Semantic Levels 81
@@ -1107,7 +1107,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   1. Semantic Motivations
     * doors, windows, books, computer programs
     * predicates and relations for such items are characteristic of the do
-      object of e.g. printed material] alone
+      object of eg printed material] alone
       * "reading" and "writing" are not conceivable without the dot object
     * not  the conjunction of simple types (or properties)
   2. Lexical Motivations
@@ -1250,7 +1250,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * semantics  need not reflect the currently accepted view of _reality_
     for those concepts
     * Reichenbach (1978)
-    * e.g. _quantum mechanics_
+    * eg _quantum mechanics_
     * If anything remarkably _Aristotelian_
 * properties of causation
   1. the causing event (i.e., the AGENTIVE quale) can completely precede or
@@ -1278,7 +1278,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * Italian, "The enemy sank the boat."
 * Chierchia (1989)
   * unaccusatives is an underlying causative
-* adjunct phrases e.g. "John died from pneumonia."
+* adjunct phrases eg "John died from pneumonia."
   * not a true adjunct, but is in fact adding specificity to the relation in
     the event associated with the AGENTIVE quale for the verb
 
@@ -1413,7 +1413,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * opposed to logical polysemy
     * lexically idiosyncratic and semi-productive
 * polysemy is the result of both
-  * compositional operations in the semantics, e.g. coercion and co-composition
+  * compositional operations in the semantics, eg coercion and co-composition
   * contextual effects, such as the structure of
     * rhetorical relations in discourse and
     * pragmatic constraints on co-reference
