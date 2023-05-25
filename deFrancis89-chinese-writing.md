@@ -1,105 +1,92 @@
-Chinese [writing] .
+Chinese [writing]
 DeFrancis, J. (1989)
-From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
+From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 
-* Sumerian writing, whose history can be traced to its very beginning, the
-  * hE origins of Chinese writing are obscure and much debated
+* origins of Chinese writing are obscure and much debated
+  * unlike Sumerian writing, whose history can be traced to its very beginning
   * The earliest form known to us dates from the Shang dynasty (1200-1045 bc).
-    * By that time the script was already a highly developed system based on
+    * By that time the script was already a highly developed system
     * principles continued to characterize the system to the present
-
-* How did the idea of writing come into the minds of the Chinese? There are
-  * two opposing views of the matter based on different explanations for the
-    emergence of civilized societies and the existence of specific elements of
-    culture, including writing
+* How did the idea of writing come into the minds of the Chinese?
+  * two opposing explanations for the emergence of civilized societies and the
+    existence of specific elements of culture, including writing
   * One/other approach stresses "independent invention,"/"stimulus diffusion"
-
-* Chinese scholars tend to espouse the first approach. In support of this view
-  * push Chinese writing back before Sumerian by claiming a
+* Chinese scholars tend to espouse the first approach
+  * push Chinese writing back before Sumerian
   * connection between some symbols of Shang date and those inscribed on
-    pottery several millennia earlier (Chang 1983; Cheung 1983). However,
-  * as noted in the previous criticism of scholars who see a connection between
-    Easter Island symbols and those of the Indus Valley, it is methodologically
-    unacceptable to advance as evidence miscellaneous instances of similarity
-    * limited number of scratchings that can be made using only two or three
-      lines. There is involved here is a sort of chauvinistic scholarship that
-
-* "stimulus diffusion" approach sometimes use the same dubious methodology to
-  * some of the symbols found in China have been copied from earlier ones found
-    in the Near East
+    pottery several millennia earlier (Chang 1983; Cheung 1983)
+  * methodologically unacceptable to advance as evidence miscellaneous
+    instances of similarity
+    * as noted in the previous criticism of scholars who see a connection
+      between Easter Island symbols and those of the Indus Valley
+    * limited number of scratchings can be made using only two or three lines
+* "stimulus diffusion" approach sometimes use the same dubious methodology
+  * some of the symbols found in China have been
+    copied from earlier ones found in the Near East
   * a broader and more general argument based on the amount and quality of
-    correspondence between civilizations. They argue that while
+    correspondence between civilizations
   * some simple aspects of culture, such as stone knives and drawings of
     familiar things, may have been independently invented by various peoples,
-  * hE more complicated ones like writing must have had a single origin. In
+  * hE more complicated ones like writing must have had a single origin
   * diffusionists cite evidence of borrowing of some other specific cultural
-    items to prove the borrowing of the idea of writing. Thus the prominent
-  * Near Eastern scholar Cyrus H. Gordon states that "China heard about casting
-    bronze from the West; and what impelled China to invent her own system of
-    writing was diffusion of the idea from the Near East" (Gordon 1971:16).
-
-* the arguments for both approaches are seriously flawed and that at present
+    items to prove the borrowing of the idea of writing
+  * Near Eastern scholar Cyrus H. Gordon states that 
+    * China heard about casting bronze from the West
+    * China was impelled to invent her own system of writing by diffusion of
+      the idea from the Near East" (Gordon 1971:16).
+* the arguments for both approaches are seriously flawed
   * there is simply not enough evidence to provide convincing proof for either
-  * the burden of proof rests with the diffusionists.  I therefore incline
+  * the burden of proof rests with the diffusionists
   * human beings are sufficiently inventive to have
     come up with the same idea more than just once.
-
-* while some of the principles underlying Chinese writing are in fact similar
-  to those underlying Sumerian writing, not because that one was influenced by
-  * distances in time and space, unlike the Sumerian-Egyptian and
+* some of the principles underlying Chinese writing are in fact similar to
+  those underlying Sumerian writing
+  * hE distances in time and space, unlike the Sumerian-Egyptian and
     Phoenician-Greek situations (discussed in chapters 4 and 5, respectively),
-  * It is underlying principles, not the superficial outward form of symbols,
-    that should occupy most of our attention.
-
-* analysis of the Chinese script we encounter quite a
+  * important: underlying principles, not the superficial outward form of symbs
+* analysis of the Chinese script
   * different problem from that of Sumerian
   * Sumerian: the language represented by the writing was completely unknown
     * reconstructed from scratch, in part with the help of information provided
       by peoples such as the Babylonians and Assyrians, who took over both the
       language and the writing system, applied the latter to their own
-    * bilingual texts of various kinds. In the case of the
+    * bilingual texts of various kinds
   * Chinese, there is continuity between the earliest and present day
-    * gaps can at least partially be filled in, .  And given the
-    * considerable amount of archaeological work going on in China and the
+    * gaps can at least partially be filled in
+    * considerable amount of archaeological work going on in China
     * finds have been made in recent years, there is hope of being able to fill
     * Chief gap: the one that must have contained an earlier stage of writing
-      before the full-grown system emerged during the Shang dynasty.
-
+      before the full-grown system emerged during the Shang dynasty
 * since when do we know about what is so far the earliest known Chinese writing
   * Toward the end of the 19th century peasants working their fields
     in the district of Anyang, located in the northern part of Honan province a
-    bit north of the Yellow River, turned up
+    bit north of the Yellow River
   * fragments of bone, some of which bore markings that Chinese scholars
-    recognized as characters of an older form than any yet known. Owing to the
-  * turmoil attending the collapse of the imperial regime in 1911, it was
-  * after several decades, scientific excavations could be conducted in the
-  * In the meantime large numbers of inscribed bone fragments found their way
-    into the hands of scattered Chinese and foreign scholars
-  * Scientific excavations began in 1928, were
-    * interrupted by the Sino-Japanese war of 1937-1945, and were
-    * resumed on a larger scale after the establishment of the People's RC 1949
-
+    recognized as characters of an older form than any yet known
+  * turmoil attending the collapse of the imperial regime in 1911
+  * after several decades, scientific excavations could be conducted
+  * many inscribed bone fragments to Chinese and foreign scholars
+  * Scientific excavations began in 1928
+  * interrupted by the Sino-Japanese war of 1937-1945
+  * resumed on a larger scale after the establishment of the People's RC 1949
 * over 100,000 inscriptions, many of them of a fragmentary nature,
   * on pottery, stone, bronze, and, most important of all, bones and shells.
-  * The earliest date from about 1200 bc This was during the hitherto somewhat
-    shadowy Shang dynasty that was
+  * The earliest date from about 1200 bc during the shadowy Shang dynasty
   * overthrown in the middle of the eleventh century bc by conquerors who
-    established the long-lived Zhou dynasty (1045-221 bc). The Zhou dynasty, in
+    established the long-lived Zhou dynasty (1045-221 bc)
     * flourishing literate culture of which Confucius is an outstanding
-
 * The extension of our knowledge of Chinese civilizat back from Zhou to Shang
   owes much to the inscriptions found on bones and shells
   * Inscriptions on other materials tell us little, since
     they are in general restricted to a few characters
   * the second most important group, those on bronze vessels, consist in part
-    of so-called "clan-name" inscriptions. These are
-    * pictographs often encased in a sort of rectangular cartouche that is
-      reminiscent of those found in Egyptian hieroglyphic inscriptions
+    of so-called "clan-name" inscriptions
+    * pictographs often encased in a sort of rectangular cartouche
+    * reminiscent of those found in Egyptian hieroglyphic inscriptions
       containing the names of royal personages
     * Some bronze vessels have slightly more extended inscriptions specifying
       who made the vessel and for whom it was made (Boltz 1986).
-
-* inscriptions on bones and shells are much more informative. This is due only
+* inscriptions on bones and shells are much more informative
   * somewhat greater length, for most of the texts are less than 15 characters
     in length, and very few exceed 50 characters (Micke11986:256).
   * The nature of the inscriptions and how they came to be written provide most
@@ -107,35 +94,32 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
   * divination
   * priests were scribes and had the power to communicate with their ancestors
     and their gods
-  * oracular advice on all sorts of matters, from the most serious affairs of
-    state to lesser problems such as what to do about toothaches and how to
-    interpret dreams
+  * oracular advice on all sorts of matters
+    * from the most serious affairs of state to
+    * what to do about toothaches and how to interpret dreams
   * known as "oracle bone inscriptions" (OBI).
   * written on the large shoulder bones of cattle and the shells of turtles.
-    * These were much prized. Some nondivination texts record the receipt of
-
+    * These were much prized. Some nondivination texts record their receipt
 * The bones and shells, especially the latter, were prepared by being smoothed
   * diviner asked a question, such as "Shall an army of five thousand men be
-    raised?" or "Will it rain?" Then
+    raised?" or "Will it rain?"
   * heat was applied to the back of the bone or shell, causing cracks to appear
     * cracks were interpreted by the diviner, or perhaps even by the king
   * a record of the whole matter, including the follow-up on the final outcome,
     was incised, or sometimes written with a brush, on the bone or shell.
-
-* characters were not yet standardized as to shape and size. It was only
-  * later they came to occupy the uniform square space that has earned them the
-    Chinese name of fāngkuàizì 'square block characters,' which one Western
-    scholar has rendered as 'tetragraphs' (Mair 1988). Moreover, in the early
+* characters were not yet standardized as to shape and size
+  * later they came to occupy the uniform square space:
+    * fāngkuàizì 'square block characters,' which
+    * one Western scholar has translated as 'tetragraphs' (Mair 1988)
   * no fixed direction of writing: varied from left to right, right to left,
     top to bottom, and various mixtures of direction within the same
-    inscription and even within the same sentence (Serruys 1974:16). When we
-  * fragmentary nature of many of the bones and shells, it goes without saying
-
-* A full inscription consists of four parts: 
+    inscription and even within the same sentence (Serruys 1974:16)
+  * fragmentary nature of many of the bones and shells
+* A full inscription consists of four parts:
   * a preface stating that on such-and-such a day a bone or shell was cracked
-    and that So-and-so divined; 
-  * a "charge" asking a question; 
-  * the prognostication; and 
+    and that So-and-so divined;
+  * a "charge" asking a question;
+  * the prognostication; and
   * the verification, telling what actually happened
 * Few inscriptions contain all four parts
   * dating of the inscriptions is also generally limited to the specification
@@ -144,39 +128,37 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
     sometimes possible to achieve a more precise dating, as in the case of some
     solar-eclipse inscriptions during the reign of King Wu Ding (1200-1181 bc)
     (Keightley 1978:174).
-
 * 1045 Zhou
-  * Shang for a period of only about a century and a half, that is until the
+  * Shang for a period of only about a century and a half
   * Zhou continue the practice of inscribing on bronze
   * The earliest identifiable Zhou text is on a bronze vessel with an
-    inscription stating that it was commissioned only eight days after the Zhou
-    victory over the Shang
+    * inscription stating that it was
+      commissioned only eight days after the Zhou victory over the Shang
   * typical of a large number of vessels cast during the early Zhou period that
     contained texts
-  * stating the date, discussing the meritorious deed which led to the casting
-    of the vessel, noting the generosity of the ruler as represented by the
-    gift of metal, and expressing the desire that future generations take note
-    and use the vessel
+  * contents
+    * stating the date
+    * discussing the meritorious deed which led to the casting of the vessel,
+    * noting the generosity of the ruler as represented by the gift of metal,
+    * the desire that future generations take note and use the vessel
   * Some of the inscriptions are quite long. One that can be precisely dated as
-    incised in the reign of a Zhou king who ruled from 946 to 935 bc contains
-    284 characters
+    incised in the reign of a Zhou king who ruled from 946 to 935 bc
+    * 284 characters
   * practice continued until the early Han period (206 bc-9 ad)
     (Mickel 1986:295)
-
 * overshadowed by Zhou texts written with a brush on bamboo, wood, and silk,
-  and carved on stone and other hard substances. These materials were the
-  * basis of the extensive literary remains that survive from before the
+  and carved on stone and other hard substances
+  * basis of the extensive literary remains that survive from before the paper
   * paper in the second century ad: a considerable increase in output,
-  * block-printing about 600 ad and then, well before Gutenberg, of printing
-    from movable type. This resulted in
+  * block-printing about 600 ad and then
+  * of printing from movable type well before Gutenberg
   * a veritable explosion of publications
-  * The total Chinese output prior to the nineteenth century may have exceeded
-    that of the rest of the world combined.
-
+  * The total Chinese output prior to the nineteenth century may have
+    exceeded that of the rest of the world combined.
 * long period, huge area
-  * a long period, more than three thousand years, and in a
+  * a long period, more than three thousand years
   * huge area populated by people who commanded various forms of speech that
-    have conventionally been grouped together as "Chinese." This term is an
+    have conventionally been grouped together as "Chinese"
   * at least eight present-day varieties of what are usually called "dialects"
     * mutually unintelligible, might better be considered parallel to the
       various languages that make up the Romance group of languages
@@ -206,7 +188,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
       so are the varieties of written language based on them
   * It is a widespread myth that Chinese characters cut across boundaries of
     speech
-  * like the universality for the Latin alphabet  
+  * like the universality for the Latin alphabet
     * It is necessary to learn the concrete application of the symbols to each
       specific form of speech
   * the version of Mandarin that is officially called Putonghua or Common
@@ -273,7 +255,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems by
     * frequently illustrated by the combination of the characters for "sun" and
       "moon" to represent the word míng 'bright,' as follows:
 
-      sun 	moon  bright 
+      sun 	moon  bright
       日 	  月 	  明
 
   4. the familiar rebus device which we first encountered in
@@ -728,7 +710,7 @@ examples of characters we have already encountered: 馬 	mǎ 	'horse' 門 	mén
 
 The overall distribution of the various kinds of characters can be roughly
 summarized as follows: Kind of Character 	Example 	Percent A. 	single-element
-characters 	馬 	mǎ 	'horse' 	1 B. 	multielement (SP) characters 	  	  	  	 
+characters 	馬 	mǎ 	'horse' 	1 B. 	multielement (SP) characters 	  	  	  	
   1. 	completely useful phonetic (represents all the phonemes of the
       derivative) 	蝗 	huáng 	'locust' 	25
   2. 	generally useful phonetic (represents all the segmental phonemes, but
