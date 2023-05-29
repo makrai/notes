@@ -155,20 +155,21 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   * a veritable explosion of publications
   * The total Chinese output prior to the nineteenth century may have
     exceeded that of the rest of the world combined.
-* long period, huge area
+* language variants from a long period and a huge area
   * a long period, more than three thousand years
-  * huge area populated by people who commanded various forms of speech that
-    have conventionally been grouped together as "Chinese"
+  * huge area populated by people who commanded various forms of speech
+  * conventionally grouped together as "Chinese"
   * at least eight present-day varieties of what are usually called "dialects"
     * mutually unintelligible, might better be considered parallel to the
       various languages that make up the Romance group of languages
 * The main varieties are
   * Mandarin (750 million speakers)
   * Wu or Shanghainese (85 million speakers)
-  * and Cantonese (So million speakers).
+  * Cantonese (2023: 85.5 million speakers).
 * "Mandarin" is itself an umbrella term for
-  "Idealized Mandarin" (Putonghua 'Common Speech' or Guoyu 'National Language')
-  * "Imperial Mandarin " (the largely uncodified language spoken by the
+  * "Idealized Mandarin" (Putonghua 'Common Speech' or
+    Guoyu 'National Language')
+  * "Imperial Mandarin" (the largely uncodified language spoken by the
     scholar-official class in imperial China)
   * "Geographical Mandarin" (the invention of twentieth-century linguists,
     created in an effort to delineate the language of a particular area sharing
@@ -178,30 +179,28 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 
 * classical Chinese
   * In earlier times most literature was produced in a style loosely called
-    "classical Chinese" that was written by people who spoke some form of
-  * ancestral to the varieties of current "Chinese" noted above. Such
-  * produced by many people who were not even native speakers of Chinese, but
-  * had about the same status as Latin in the Romance situation. In modern
+    "classical Chinese"
+  * ancestral to the varieties of current "Chinese" noted above
+  * produced by many people who were not even native speakers of Chinese
+  * had about the same status as Latin in the Romance situation
   * based more or less on speech, chiefly Mandarin but to some extent also
     other varieties, notably Shanghainese and Cantonese
     * these varieties of speech are mutually unintelligible,
       so are the varieties of written language based on them
-  * It is a widespread myth that Chinese characters cut across boundaries of
-    speech
+  * widespread myth: Chinese characters cut across boundaries of speech
   * like the universality for the Latin alphabet
     * It is necessary to learn the concrete application of the symbols to each
       specific form of speech
-  * the version of Mandarin that is officially called Putonghua or Common
-    Speech is the standard language in China, the writing system based on it is
-    also the written standard. But
+  * Putonghua or Common Speech: the standard language in China
+    * the writing system based on it is also the written standard
   * it takes more effort for a Cantonese to learn to read and write in the
     national standard than it does for a Spaniard to learn to read and write
     French (DeFrancis 1984a).
 
-* realities of speech and writing in China that are obscured by the
+* realities of speech and writing in China are obscured by
   * myth of the universality of Chinese characters and by the
-  * ambiguity of the umbrella term "Chinese" should be kept in mind in
-* evolution of Chinese writing. There has been continuity as well as change in
+  * ambiguity of the umbrella term "Chinese"
+* evolution of Chinese writing. There has been continuity as well as change
   * Characters have been created by speakers of many different varieties of
     Chinese and often reflect the peculiarities of their speech.
   * historical changes in word order, and the characters have been shuffled
@@ -209,30 +208,29 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   * Characters have died out as the words that they represented have become
     obsolete
   * New characters and new combinations of characters have been created to
-    express new words that have entered into the vocabulary. In common
-  * pronunciation of the symbols has changed greatly over time, as is readily
-    * dictionary of Early Zhou Chinese (Schuessler 1987).
+    express new words that have entered into the vocabulary
+  * pronunciation of the symbols has changed greatly over time
+  * dictionary of Early Zhou Chinese (Schuessler 1987).
 
-* The forms or shapes of the characters have also undergone change. On the
-  * stylized, abbreviated, distorted, and otherwise modified that it is often
+* The forms or shapes of the characters have also undergone change
+  * stylized, abbreviated, distorted, and otherwise modified
   * Shang oracle bones, the Great Seal style of the Zhou dynasty, the
     Small Seal style of the short-lived Qin dynasty (221-206 bc)
   * and the Scribal and Regular styles of the Han dynasty (206 bc-220 ad)
-    * the most commonly used script until the
-  * official simplification of characters in the PRC in the 1950s. Figure 17
-    compares the OBI and modern forms of a number of characters.  Root of some
-    of the very few characters that are pictographic in origin.
+  * official simplification of characters in the PRC in the 1950s
+    * Figure 17 compares the OBI and modern forms of a number of characters.
+    * Root of some of the very few characters that are pictographic in origin.
 
 * Figure 17. Chinese Writing: A 1% Pictographic Script
-  * The evolution of fourteen Chinese characters representative of the mere one
-    percent that go back to pictographs, chiefly those found on oracle bone
-    inscriptions (OBI) of around 1200-1045 bc. All but two -- 12 and 14, the
-    most complicated -- have been used as phonetic symbols in the formation of
-    multielement characters. Adapted with permission from William G. Boltz,
-    "Early Chinese Writing." World Archaeology 17 (3) (1986):427.
+  * The evolution of fourteen Chinese characters representative of the mere 1%
+    that go back to pictographs
+    * chiefly those found on oracle bone inscriptions (OBI) of in 1200-1045 bc.
+    * All but two -- 12 and 14, the most complicated -- have been used as
+      phonetic symbols in the formation of multielement characters
+  * Adapted with permission from William G. Boltz (1986) "Early Chinese Writing"
 
 * Shang characters, of which
-  some 1,000 out of a total of 4,500 have been identified to date, is
+  some 1,000 out of a total of 4,500 have been identified to date
   * in many cases it is possible to trace the evolution of a character from its
     Shang to its contemporary form
   * There are many "descendantless" graphs. Some/others are
@@ -240,40 +238,36 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
     * complex characters whose component elements have modern counterparts but
       are not now combined in the same way as in the Shang graphs.
 
-* component elements in Chinese characters and how they are combined raises the
-  * question of the principles behind the Chinese system of writing. To obtain
+* question of the principles behind the Chinese system of writing
+  * component elements in Chinese characters and how they are combined
   * what the principles are and
   * how they were applied in different proportions over time.
 
-* traditional practice to classify Chinese characters into several groups. The
+* traditional practice to classify Chinese characters into several groups
   1. pictographs.  Many of the earliest characters, as represented on the OBIs,
   2. the "simple indicative principle" identifies a second group of characters
-    * not exactly pictorially but in some other representational manner. For
-    * eg "one," "two," and "three" are respectively represented by one, two,
-    * The words for "above" and "below" are represented by a horizontal line
-  3. the "compound indicative principle" involves a somewhat more elaborate
+    * not exactly pictorially but in some other representational manner
+    * eg "one," "two," and "three" are respectively represented by 一, 二, & 三
+    * The words for "above" and "below" are represented by 上 and 下
+  3. the "compound indicative principle" is somewhat more elaborate
     * frequently illustrated by the combination of the characters for "sun" and
       "moon" to represent the word míng 'bright,' as follows:
 
       sun 	moon  bright
       日 	  月 	  明
 
-  4. the familiar rebus device which we first encountered in
-    * Sumerian with the use of gi 'reed' borrowed to represent the homophonous
-      word gi 'reimburse
+  4. the familiar rebus device
+    * eg Sumerian: the use of gi 'reed' borrowed to represent the homophonous
+      word gi 'reimburse'
     * Chinese example is the borrowing of a character representing xiàng
-      'elephant' to represent the homophonous word xiàng 'image.'
+      'elephant' to represent the homophonous word xiàng 'image'
 
-  5. one which combines a rebus-like symbol with another symbol giving,
-     generally, a semantic clue to the meaning
-    * eg1 the addition (on the left) of the symbol for 'person' to that (on
-       the right) for xiàng 'elephant' to produce an unambiguous character
-       xiàng 'image': 亻 + 象 = 像
-    * eg2 the previously cited character for mā 'mother' formed by combining
-      the character for mǎ 'horse' (on the right) with another for 'female' (on
-      the left): 女 + 馬 = 媽
+  5. one which combines a rebus-like symbol with
+    another symbol giving, generally, a semantic clue to the meaning
+    * eg1 sem 亻 person + phon 象 elephant  = 像 image (unambiguous)
+    * eg2 sem 女 female + phon 馬 mǎ horse     = 媽 mā mother 
     * I call this the SF principle, since it involves joining
-      * a semantic element S-such as the symbols for 'person' and 'female' in
+      * a semantic element S-such as the symbols for 'person' and 'female'
       * a phonetic element F-such as the symbols for xiàng 'elephant' and mǎ
     * I also designate as SF characters those, to be discussed below, that are
       formed by joining a phonetic element P to a semantic element S. We can
@@ -281,9 +275,10 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 
 * The proportions in which the foregoing principles have been applied varied
   * table (adapted from DeFrancis 1984a:84) summarizing
-  * the structural classification of 977 Shang characters, 9,353 characters of
-    a second-century dictionary by Xu Shen, and 48,641 characters of the great
-    imperial Kang Xi dictionary of the eighteenth century:
+  * the structural classification of
+    * 977 Shang characters
+    * 9,353 characters of a second-century dictionary by Xu Shen, and 
+    * 48,641 characters of the great imperial Kang Xi dictionary, 18th century
 
 |Principle	          |Shang Dynasty	|2nd century  |18th century |
 |---------------------|---------------|-------------|-------------|
@@ -294,40 +289,35 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 |Total	              |977	          |9,353        |48,641       |
 
 * The traditional view summarized above has been challenged by Boodberg 1937+
-  * two main points
-    * failure of many people, sinologists included, to realize the importance
-      of SP characters because of neglecting or minimizing the phonetic
-      contribution of the p element and exaggerating the semantic contribution
-      of the the S element
-    * especially with those characters traditionally classified under the
-      "compound indicative principle."
-      * The majority of these characters are in reality SP characters. Indeed,
-      * apart from "a few exceptional cases " there is simply no such thing as
-      * reiterated by another scholar, William G. Boltz, who has also done
+  * failure to realize the importance of SP characters because of
+    * neglecting or minimizing the phonetic contribution of the p element and
+    * exaggerating the semantic contribution of the the S element
+  * especially with those characters traditionally classified under the
+    "compound indicative principle"
+    * The majority of these characters are in reality SP characters
+    * only "a few exceptional cases"
+    * reiterated by another scholar, William G. Boltz (1986)
       * "Characters were not invented by just putting together two or more
-        elements based on their semantic values alone. At least of one of the
-        components must have had a phonetic function" (Boltz 1986:428).
+        elements based on their semantic values alone
+      * At least of one of the components must have had a phonetic function"
 
-* Boodberg's "few exceptional cases" include chiefly single characters of
-  clearly pictographic origin. There are at most only a few hundred of these,
-  * the number has not increased for some two millennia. These simple
+* Boodberg's "few exceptional cases" include chiefly
+  single characters of clearly pictographic origin
+  * at most only a few hundred 
+  * the number has not increased for some two millennia
   * examples appear in figure 17, comprise only about one percent of the total
-    number of Chinese characters
-  * majority examples in figure 18, are
+  * majority examples in figure 18
 
-  * phonetic element (ie, one of the 895 syllabic elements in the "Soothill
-    Syllabary"), and an added
-  * semantic element (ie, one of the 214 elements
-    traditionally called radicals or keys).
+  * phon element: one of the 895 syllabic elements in the "Soothill Syllabary"
+  * sem element: one of the 214 elements traditionally called radicals or keys
 
-* eg1 míng 'bright.' He rejects the traditional approach which begins with a
+* eg1 míng 'bright'
   * he starts by assuming definite spoken words related to the meaning
   * existence of an earlier form of the character for míng 'bright' (Morohashi
     1955-1960) that I present below in juxtaposition with the later version:
     ming 明
 
-  * In both cases the element 'moon' on the right-hand side of the characters
-    is a semantic determinative
+  * In both cases the element 'moon' on the right side is a sem determinative
   * The element on the left-hand side
     * of the first character is originally a picture of a window, with a
       pronunciation related to míng. In short, the present character
@@ -337,251 +327,202 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
       character to a spoken word (Boodberg 1937:344-345; 1940:270-274).
 
 * eg2 Boodberg also cites the case of the following two characters: 目 見
-  * the second jiàn 'see
+  * the second jiàn 'see'
   * the first
-    * In modern transcription, the first character is mù eye,' .' But the first
-    * was also used to write the related word 'see.' Hence
-      * it represented two related meanings and had
+    * In modern transcription, the first character is mù eye' 
+    * was also used to write the related word 'see'
+      * it represented two related meanings
       * two quite different pronunciations, which have
-        become modern mù 'eye' and jiàn 'see.'
+        become modern mù 'eye' and jiàn 'see'
   * In order to distinguish the two meanings, the 'eye' character was
     supplemented with a phonetic determinative, the bottom part of the second
     character, whose earlier pronunciation nzien provided a better phonetic
     clue than the modern pronunciation rén (Boodberg 1937:343).
 
-In presenting these and other cases Boodberg stresses an aspect of Chinese
-writing that we have already encountered in Sumerian. That is the fact that
-many sounds are represented by more than one symbol (recall the 23 for Sumerian
-du and that the same symbol may represent several different words (recall the
-different words represented by the pronunciations gub, gin, túm for the same
-symbol with the basic meaning 'leg'). Chinese words are also often written with
-different characters, and the same character may be read in several different
-ways. It is a major challenge to modern scholarship to unravel the
-interconnections that have grown up among Chinese characters in the several
-millennia that they have been handled and mishandled by millions of scholars
-with widely different backgrounds in the many varieties of spoken and written
-Chinese.
+* n sound: m symbol
+* many sounds are represented by more than one symbol (recall the
+  * 23 for Sumerian du and that
+* the same symbol may represent several different words (recall the different
+  * Sumerian: pronunciations gub, gin, túm for the same symbol with the basic
+    meaning 'leg')
+  * Chinese words are also often written with different characters, and the
+    same character may be read in several different ways.
+  * challenge: unravel the interconnections that have grown up among Chinese
+    characters in the several millennia that they have been handled and
+    mishandled by millions of scholars with widely different backgrounds in the
+    many varieties of spoken and written Chinese.
 
-Because of his emphasis on relating writing to speech, Boodberg presents a
-clearer analysis of the evolution of Chinese writing than that suggested by the
-conventional listing of its underlying principles. It is summarized in even
-simpler terms by Boltz as a three-stage development: (1) a pictographic stage,
-which in its pure form could write only the limited part of the language that
-was clearly picturable; (2) a multivalent stage, which included the use of the
-rebus principle whereby the same symbol might stand for unrelated homophonous
-words, and the use of the same character to represent words semantically
-related but with different pronunciations; and (3) a stage in which the
-ambiguity that grew up with the multivalent use of characters was resolved by
-resort to semantic and phonetic determinatives, as in the case of Near Eastern
-writing (Boltz 1986). The following examples illustrate these stages: Stage
-xiàng 'elephant' 	A xiàng 'image' 	mù 'eye' 	B jiàn 'see' Pictographic 	./象
-(none) 	./目 	(none) Rebus 	象 	象 	目 	目 Determinative (A. Semantic) (B.
-Phonetic) 	象 	像 	目 	見
+* a clearer analysis of the evolution of Chinese writing than that suggested by
+  the conventional listing of its underlying principles
+  * three-stage development (Boltz)
+    * a pictographic stage, which in its pure form could write only the limited
+      part of the language that was clearly picturable; 
+    * a multivalent stage, which included the use of the
+      * rebus principle whereby the same symbol might stand for unrelated
+        homophonous words, and the
+      * use of the same character to represent words semantically related but
+        with different pronunciations; and 
+   * a stage in which the ambiguity that grew up with the multivalent use of
+    characters was resolved by resort to semantic and phonetic determinatives,
+    as in the case of Near Eastern writing (Boltz 1986). The following examples
+    illustrate these stages: Stage
 
-Note that in column A a semantic determinative, a variant of the symbol for
-'person,' is added to the phonetic base xiàng to distinguish the meaning
-'image.' In column B a phonetic determinative, another variant of the symbol
-for 'person,' is added to the semantic base mù 'eye' to distinguish the meaning
-'see.' Both types are SP characters. Note also that the three stages should not
-be viewed as chronologically distinct. They define the stage of an individual
-character as determined by its function.
+             | xiàng 'elephant'|  xiàng 'image'|  mù 'eye'|  jiàn 'see' | 
+-------------|-----------------|---------------|----------|-------------|
+Pictographic | ./象            |  (none)       |   ./目   |   (none)    |
+Rebus        | 象              |  象           |   目     |   目        |
+Determinative| 象              |  像           |   目     |   見        |
 
-It is useful now to take a closer look at the preponderant category of
-characters of the determinative stage. Particularly illuminating is a
-comparison of Chinese and Sumerian in their approaches to an essentially
-similar problem of coping with the ambiguity inherent in writing systems in
-which one word might be written many different ways and one graph might be read
-many different ways. We can schematize the Sumerian and Chinese approaches as
-follows: Sumerian 	S 	P? 	P 	S?  Chinese 	  	SP? 	  	PS?
+* phonetic determinative in _see_: another variant of the symbol for 'person,'
+* stages should not be viewed as chronologically distinct. They define the
 
-The Sumerian examples have already been discussed in the preceding section. It
-was explained there that an ambiguous phonetic symbol (P?) is disambiguated by
-adding a semantic determinative (S), and an ambiguous semantic symbol (S?) is
-disambiguated by adding a phonetic determinative (P). Chinese does exactly the
-same thing, but it developed a variation that has had a profound influence on
-how the characters have been viewed. That variation is to weld the
-determinative, whether semantic or phonetic, with the ambiguous element to form
-a tightly knit symbol that is rigidly confined within its own square space of
-exactly the same size as that for every other character, regardless of
-simplicity or complexity.
+* comparison of Chinese and Sumerian in their approaches to an essentially
+  * ambiguity inherent in writing systems in which
+    * one word might be written many different ways and
+    * one graph might be read many different ways. We can schematize the
+  * Sumerian
+    * an ambiguous phonetic symbol (P?) is disambiguated by adding a
+    semantic determinative (S), and
+    * an ambiguous semantic symbol (S?) is disambiguated by adding a phonetic
+      determinative (P)
+  * Chinese: weld [hegeszt] the determinative, whether semantic or phonetic,
+    with the ambiguous element to form a tightly knit symbol that is
+    * rigidly confined within its own square space of exactly the same size as
+      that for every other character, regardless of simplicity or complexity.
 
-With his usual perspicuity, Boodberg notes this important difference between
-Chinese and Sumerian ( and Egyptian also) in the following passage:
+* difference between Chinese and Sumerian ( and Egyptian also) in the following
+  * Egyptian and cuneiform, where the
+    use of semantic determinatives remained optional and the determinatives
+    themselves detachable from the graphs they determined, moved on apace
+    toward phonetization
+  * Chinese, the determinatives, semantic or phonetic, were welded securely to
+    their graphs so as to form one single graphic body
+    * diagrammatic structure became thus the dominant type of character
+    * may have been caused by a [Boodberg 1957:115]
+      * more pronounced homophony of the Chinese vocab
+      * aesthetic imperative quite early in the development of the script, to
 
-Egyptian and cuneiform, where the use of semantic determinatives remained
-optional and the determinatives themselves detachable from the graphs they
-determined, moved on apace toward phonetization. In Chinese, the
-determinatives, semantic or phonetic, were welded securely to their graphs so
-as to form one single graphic body; diagrammatic structure became thus the
-dominant type of character building. This may have been caused by a more
-pronounced homophony of the Chinese vocabulary, but it must have also been
-influenced by an aesthetic imperative in the Chinese which prompted them,
-apparently quite early in the development of the script, to enforce the
-principle of equidimensionalism. ... of the graphs [Boodberg 1957:115].
+* two kinds of SP characters, namely those formed by adding an S to a P or a P
+  to an S, which kind is more important? On this there has been
+  * considerable disagreement among specialists in Chinese.
+  * Earlier scholars, and a few still today, consider that the complex
+    characters of this category were formed
+    chiefly by adding a phonetic determinative to a semantic base
+    * The popular names given to the semantic element reflect this view. It is
+    * sem referred to 
+      * frequently as a "radical," sometimes as a "key," the
+        * key: the unit (comparable to letters) for filing characters in a dict.
+      * sometimes called a "signific" or "determinative."
 
-With respect to the two kinds of SP characters, namely those formed by adding
-an S to a P or a P to an S, which kind is more important? On this there has
-been considerable disagreement among specialists in Chinese. Earlier scholars,
-and a few still today, consider that the complex characters of this category
-were formed chiefly by adding a phonetic determinative to a semantic base. The
-popular names given to the semantic element reflect this view. It is frequently
-referred to as a "radical," sometimes as a "key," the latter being used
-especially in connection with its function as the unit (comparable to our abc
-... xyz) for filing characters in a dictionary. The semantic element is
-considerably less often called a "signific" or "determinative."
+* Noel Barnard (1978): the phonetic element is the real core 
+  * For the most part semantic elements were added to phonetic elements, not
+  * the prevailing view among most specialists today. I hold strongly to this
 
-Noel Barnard, who has done some of the most important research on this aspect
-of Chinese, is firmly of the opinion that the phonetic element is the real core
-of compound characters. For the most part semantic elements were added to
-phonetic elements, not the other way around (Barnard 1978). This is the
-prevailing view among most specialists today. I hold strongly to this opinion
-also.
+* left versus right: also of secondary importance.
 
-Leaving aside the matter of priority, it should be noted that the result of
-adding an S to a P is essentially the same as that of adding a P to an S. That
-is to say, PS = SP. The order in which the two elements merged is now largely
-of only historical interest. And the location within a character (e.g., left
-side versus right side) is also of secondary importance.
+* how the combination was effected. Part of the task is easy. It has been the
+  * tradition, as illustrated in the Kang Xi Dictionary, to identify
+  * exactly 214 key semantic elements
+  * Until the PRC simplification of the 1950s,
+  * all characters were analyzed, sometimes quite arbitrarily, as having one of
+    these 214 keys, and they were listed in dictionaries under the appropr key
+  * artificiality and arbitrariness in all this, as is indicated by the fact
+  * the first Chinese dictionary, of the second century bc, listed characters
+    under 540 keys, while 
+  * the most recent PRC dictionaries: 186, 191, 225, 226, and 250 keys
 
-If almost all characters are of the SP variety, and if most of these were
-formed by adding a semantic to a phonetic, then we need to take a closer look
-at just how the combination was effected. Part of the task is easy. It has been
-the tradition, as illustrated in the Kang Xi Dictionary, to identify exactly
-214 key semantic elements. Until the PRC simplification of the 1950s, all
-characters were analyzed, sometimes quite arbitrarily, as having one of these
-214 keys, and they were listed in dictionaries under the appropriate key.
-However, there is a good deal of artificiality and arbitrariness in all this,
-as is indicated by the fact that the first Chinese dictionary, of the second
-century bc, listed characters under 540 keys, while the most recent PRC
-dictionaries have variously classified them under 186, 191, 225, 226, and 250
-keys.
+* phonetic elements? The Chinese have in general paid much less attention to
+  * rhyming dictionaries based on the sounds of the characters. Some scholars,
+  * => Bernhard Karlgren reconstructing the pronunciation of earlier stages of
+  * use the phonetic elements in teaching: Wieger (1965) and Soothill (1942)
+    * classify characters under 850-900 phonetics based on Mandarin pronunciat
 
-What of the phonetic elements? The Chinese have in general paid much less
-attention to this aspect, though some philologists have compiled rhyming
-dictionaries based on the sounds of the characters. Some scholars, including
-some foreign pathbreakers like Bernhard Karlgren, have made good use of the
-phonetic elements in reconstructing the pronunciation of earlier stages of
-Chinese. A few have also attempted to use the phonetic elements in teaching.
-Two well known examples of pedagogical use are works by Wieger (1965) and
-Soothill (1942) that classify characters under 850-900 phonetics based on
-Mandarin pronunciations.
+* Marshman (1814) extremely useful, if somewhat flawed, study was published in
+  * missionary-scholar Joshua Marshman, who
+  * analyzed the characters in the eighteenth-century Kang Xi dictionary. He
+  * excluded from consideration more than a third of the characters on various
+    * eg stylistic variants or lacking explanations => 25,000 characters that
+  * the total unabridged lexicon of Chinese over the past two millennia.
+  * Removing from each character its [sem] "Element
+    => 3,867 residual compons which he called "Primitives." He concluded that
+  * only a few hundred consisting only of a single component, are
+  * majority formed by combining: 214 elements x 3,867 primitives => Derivatives
 
-An extremely useful, if somewhat flawed, study was published in 1814 by the
-missionary-scholar Joshua Marshman, who analyzed the characters in the
-eighteenth-century Kang Xi dictionary. He excluded from consideration more than
-a third of the characters on various grounds, such as their being mere
-stylistic variants or lacking explanations. This left him with about 25,000
-characters that can more or less be viewed as the total unabridged lexicon of
-Chinese over the past two millennia. Removing from each character what he
-called its "Element," that is, the semantic element or key under which the
-character was classified, he arrived at a figure of 3,867 residual components,
-which he called "Primitives." He concluded that all characters, apart from the
-few hundred consisting only of a single component, are formed by combining one
-of the 214 elements with one of the 3,867 primitives. He referred to the
-combinations thus formed as "Derivatives."
+  * did he know, that primitives are pronunciations
+    * term primitives => Marshman correctly assigned their primary role 
+    * hE he was convinced that the primitives "convey a general idea" that he
+    * nL pointed out that eg out of the 16 derivatives formed with a primitive lì
+      * (actually there are more)
+      * 11 of the  had exactly the same pronunciation, and 
+      * all but one had the same initial.
+  * his work remains valuable, for it shows that
+    Chinese characters are not all idiosyncratic entities 
 
-By his use of the term primitives we can conclude that Marshman correctly
-assigned the primary role to this category of components that enter into the
-composition of Chinese characters. At the same time, however, he was so firmly
-convinced that the primitives "convey a general idea" that he failed to
-appreciate the significance of the fact (which he himself pointed out) that,
-for example, 11 of the 16 derivatives (actually there are more) formed with a
-primitive lì had exactly the same pronunciation, and all but one had the same
-initial. Despite his myopia regarding the precise function of the primitives,
-which was of course chiefly phonetic, his work remains valuable, for it shows
-that Chinese characters are not all idiosyncratic entities like, as is
-frequently alleged, our numerals 1, 2, 3.
+* most Chinese characters written within the past two millennia or so, and
+  * excluding a few of direct pictographic origin, are actually
+  * combinations of some 200 semantics and 4,000 phonetics. These numbers are
+  * inventories large, but they are not open-ended, and above all they are
+  * the phonetic elements are syllabograms that comprise a sort of syllabary
+    * an outsized, haphazard, inefficient, and only partially reliable
+      syllabary.  Nevertheless it works, as is apparent from the examples given
+      in figure 18.
 
-All Chinese characters, or at least all the characters one is likely to
-encounter in reading a text written within the past two millennia or so, and
-excluding a few of direct pictographic origin, are actually combinations of
-some 200 semantics and 4,000 phonetics. These numbers are large, but they are
-not open-ended, and above all they are finite enough to make the Chinese system
-manageable. It works because the phonetic elements are syllabograms that
-comprise a sort of syllabary .It is, to be sure, an outsized, haphazard,
-inefficient, and only partially reliable syllabary. Nevertheless it works, as
-is apparent from the examples given in figure 18.
+* a huge "Semantic-plus-Phonetic Matrix" composed by listing the 214 semantics
+  * not all semantics combine with all phonetics, so that
+  * of the over 800,000 cells contained in our matrix, only some 25,000 would
+    be occupied by the derivatives that Marshman selected for study from the
+* Soothill's classification of 4,300 of the more frequently used characters
+  * a smaller matrix
+  * (approximately the number needed for full literacy) under
+  * 895 phonetics, combined of course with the usual 214 semantics.  We extract
+* a few examples (from DeFrancis 1984a:106) of cells filled by derivatives that
+  by combining one of the 3,867 phonetics with one of the 214 semantics
+  * The numbering system follows the "Soothill Syllabary" of 895 phonetics that
 
-Perhaps it will help to visualize the structure of Chinese characters if we
-imagine a huge "Semantic-plus-Phonetic Matrix" composed by listing the 214
-semantics on the left and the 3,867 phonetics across the top. Of course not all
-semantics combine with all phonetics, so that of the over 800,000 cells
-contained in our matrix, only some 25,000 would be occupied by the derivatives
-that Marshman selected for study from the Kang Xi dictionary. We can also
-imagine a smaller matrix based on Soothill's classification of 4,300 of the
-more frequently used characters (approximately the number needed for full
-literacy) under 895 phonetics, combined of course with the usual 214 semantics.
-We extract from the imagined overarching matrix a few examples (from DeFrancis
-1984a:106) of cells filled by derivatives that are actually formed by combining
-one of the 3,867 phonetics with one of the 214 semantics. The numbering system
-follows that of what might be called the "Soothill Syllabary" of 895 phonetics
-that is contained within the "Marshman Syllabary" of 3,867 phonetics.
+               |   Phonetic 264     | Phonetic 282       | Phonetic 391          |  Phonetic 597      |
+               |   敖  (áo)         | 參  (cān)          | 堯  (yāo)             |  甫  (fǔ)          |
+---------------|--------------------|--------------------|-----------------------|--------------------|
+ 9  ?  'person'|   傲  (ào: 'proud')| ?  (cān: 'good')   | 僥  (jiǎo: 'lucky')   |  ?  (fù: 'help')   |
+64  扌  'hand' |    (ào: 'shake')   | 摻  (shán: 'sieze')| 撓 (nǎo: 'scratch')   |  捕  (bǔ: 'catch') |
+75  木  'wood' |    (āo: 'barge')   | 槮 (shēn: 'beam')  | 橈  (náo: 'oar')      |  (fú: 'trellis')   |
+85  ?  'water' |   滶 (ào: 'stream')| 滲  (shèn: 'leak') | 澆  (jiāo: 'sprinkle')|  浦  (pǔ: 'creek') |
 
-Semantic-plus-Phonetic Matrix Phonetic 264 	Phonetic 282 	Phonetic 391
-Phonetic 597 semantic 	敖 	(áo) 	參 	(cān) 	堯 	(yāo) 	甫 	(fǔ) 9 	?
-'person' 	傲 	(ào: 'proud') 	? 	(cān: 'good') 	僥 	(jiǎo: 'lucky') 	?
-(fù: 'help') 64 	扌 	'hand' 	  	(ào: 'shake') 	摻 	(shán: 'sieze') 	撓
-(nǎo: 'scratch') 	捕 	(bǔ: 'catch') 75 	木 	'wood' 	  	(āo: 'barge') 	槮
-(shēn: 'beam') 	橈 	(náo: 'oar') 	  	(fú: 'trellis') 85 	? 	'water' 	滶
-(ào: 'stream') 	滲 	(shèn: 'leak') 	澆 	(jiāo: 'sprinkle') 	浦 	(pǔ: 'creek')
+* the semantic element on the left provides a sort of thesaurus-like clue to
+* The phonetics noted at the top of the chart appear to give some clues to the
+  * they vary in the degree to which they suggest the pronunciation of the full
+  * far more specific than the semantic clues.
 
-As can be seen by reading across the rows, in many but not all cases the
-semantic element on the left provides a sort of thesaurus-like clue to the
-meaning of the items on the right. All those to the right of no. 85, for
-example, have something to do with water. The phonetics noted at the top of the
-chart appear to give some clues to the pronunciation of the characters of which
-they form a part. Although the clues vary in the degree to which they suggest
-the pronunciation of the full characters, overall they are far more specific
-than the semantic clues.
+* Some phonetics are more productive of derivatives than others
+  * from as few as two or three to as many as almost two dozen. In figure 18
+  * The phonetics are more likely to be evident in less frequently used chars,
+    * as attested by the fact that they enter into an average of
+      * 6.5 characters in the Kang Xi list of 25,000 characters but
+      * only about 5.0 in the Soothill selection of 4,300. The lower ratio in
+        * more frequently used characters, where the original structure of the
+          graphs has often become so distorted as not to be readily recognizab
 
-Some phonetics are more productive of derivatives than others- from as few as
-two or three to as many as almost two dozen. In figure 18 the lì phonetic
-(no.511) and the zhōng phonetic (no.784) both occur as a component in 20
-characters. Yāo (no.391) and mò (no.453) each has 22 derivatives. The phonetics
-are more likely to be evident in less frequently used characters, as attested
-by the fact that they enter into an average of 6.5 characters in the Kang Xi
-list of 25,000 characters but only about 5.0 in the Soothill selection of
-4,300. The lower ratio in the latter shows the effect of attrition in more
-frequently used characters, where the original structure of the graphs has
-often become so distorted as not to be readily recognizable.
+* Some semantics also occur more frequently than others in compound characters.
+  * "vegetation" semantic occurs in hundreds of characters. The
+  * "step forward " semantic occurs in 17 derivatives, all but two or three of
+    which are quite rare.
 
-Some semantics also occur more frequently than others in compound characters.
-The "vegetation" semantic occurs in hundreds of characters. The "step forward "
-semantic occurs in 17 derivatives, all but two or three of which are quite
-rare.
+* expand on the important difference between Sumerian and Chinese mentioned
+  * hypot 亻敖 vs real 傲 ào 'proud', hypot 氵敖 vs real 滶  ào 'stream'
+  * hypot would emphaize the phonetic elements like ào than to the
+  * we would therefore most likely say that
+    * the virtually unabridged historical lexicon based on the Kang Xi dict
+    has 3867 + 214 = 4081 different symbols instead of the astronomical 25,000
+    * the abridged modern selection presented by Soothill might be said to
+      comprise 895 + 214 = 1109 different symbols instead of the 4,300 obtained
 
-The illustration in the matrix of the way semantics and phonetics combine to
-form new characters in Chinese can be used to expand on the important
-difference between Sumerian and Chinese mentioned earlier. If Chinese combined
-the two elements along the same lines as Sumerian, the two characters for ào
-'proud' and ào 'stream' might appear as on the left below instead of as they
-actually do on the right: 亻敖 	  	傲 	ào 'proud' vs. 	  	 氵敖 	  	滶 	ào
-'stream'
+* how useful are these semantic and phonetic elements? The former, it is clear,
+  * sem can at best suggest only a general semantic area. Thus we know that
+    * eg no.85/140 => most likely have something to do with water/vegetation In
+    * often no real semantic information at all and merely serve to diff
+      * as do our spelling distinctions in hair and hare.
 
-The detachability of the semantic elements for 'person' and 'water' in the
-characters to the left would incline us to view these characters rather
-differently from those on the right. We would surely pay as much if not more
-attention to the phonetic elements like ào than to the determinatives and would
-view them all as separate entities. In counting symbols we would therefore most
-likely say that the virtually unabridged historical lexicon based on the Kang
-Xi dictionary has 3867 + 214 = 4081 different symbols instead of the
-astronomical 25,000 that we see in the more closely-knit derived characters.
-Similarly, the abridged modern selection presented by Soothill might be said to
-comprise 895 + 214 = 1109 different symbols instead of the 4,300 obtained by
-combining semantics and phonetics.
-
-Another point we have to consider is this: Just how useful are these semantic
-and phonetic elements? The former, it is clear, can at best suggest only a
-general semantic area. Thus we know that characters containing semantic no.85
-most likely have something to do with water, and those containing semantic
-no.140 with vegetation. In fact the so-called semantic in many characters does
-not provide even this limited amount of information. They often offer no real
-semantic information at all and merely serve to differentiate one character
-from another, as do our spelling distinctions in hair and hare.
-
-There is a wide range in the usefulness of the phonetic elements. We can
-distinguish four degrees of correspondence between a phonetic and the
-derivative of which it forms part:
+* usefulness of the phonetic elements. We can distinguish
+  * four degrees of correspondence between a phonetic and the derivative of
 
 1. In some cases the phonetic tells us with 100 percent accuracy the
    pronunciation, even as to tone, of the full character of which it forms
@@ -988,7 +929,9 @@ countries like Turkey (Heyd 1954; Bazin 1983), North Korea (Blank 1981), and
 Viet Nam (DeFrancis 1977), where writing systems and writing styles were
 reformed in a matter of a few years or a few decades, it appears that
 controversy over basic problems of writing is likely to drag on indefinitely in
-China.  Notes
+China.  
+
+# Notes
 
 It may be of interest to note briefly how phoneticity in Japanese and Korean
 compares with that in Chinese. There will naturally be differences, because,
@@ -999,7 +942,7 @@ shēng in Chinese both became shō in Sino-Japanese.
 
 Horodeck (1987:23) summarizes the results of studies of the utility of the
 phonetics in 1,240 different Sino-Japanese readings or pronunciations of
-characters as follows: " Almost 58% of these readings can be predicted with
+characters as follows: "Almost 58% of these readings can be predicted with
 100% accuracy from the pronunciation of the phonetic contained in the kanji.
 Another 27.7% can be predicted with 50% or more accuracy."
 
@@ -1031,9 +974,9 @@ summarized as follows: V vV Vv vVv
 The following table, in which bold-face V stands for any of these vowel types,
 illustrates the kinds of Chinese syllables and notes the number in each
 category and the percentage of syllables ending in vowels or in consonants: V
-(e.g., a, ya≡ia, ao, yao≡iao) 	17 	} 	56 percent C 	V 	  	(e.g., la, lia,
-lao, liao) 	207 V 	C 	(e.g., an, yan≡ian) 	15 	} 	44 percent C 	V 	C
-(e.g., lan, lian) 	159
+(eg, a, ya≡ia, ao, yao≡iao) 	17 	} 	56 percent C 	V 	  	(eg, la, lia,
+lao, liao) 	207 V 	C 	(eg, an, yan≡ian) 	15 	} 	44 percent C 	V 	C
+(eg, lan, lian) 	159
 
 The proportion of syllables ending in consonants was probably considerably
 greater in earlier stages of Chinese, when there was a richer inventory of
