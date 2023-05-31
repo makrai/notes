@@ -68,16 +68,16 @@ https://gluebenchmark.com/
 
 * English acceptability judgments drawn from books and journal articles on
   linguistic theory
-  * Each example is a sequence of words annotated with whether it is a
-    grammatical English sentence
-  * Following the authors, we use Matthews correlation coefficient (Matthews,
-    1975) as the evaluation metric, which evaluates performance on unbalanced
-    binary classification and ranges from -1 to 1, with 0 being the performance
-    of uninformed guessing
-  * We use the standard test set, for which we obtained private labels from the
-    authors
-  * We report a single performance number on the combination of the in~ and
-    out-of-domain sections of the test set
+* Each example is a sequence of words annotated with whether it is a
+  grammatical English sentence
+* Following the authors, we use Matthews correlation coeff (Matthews, 1975) as
+  the evaluation metric
+  * Matthews evaluates performance on unbalanced binary classification and
+    ranges from -1 to 1, with 0 being the performance of uninformed guessing
+* We use the standard test set, for which we obtained private labels from the
+  authors
+* We report a single performance number on the combination of the in~ and
+  out-of-domain sections of the test set
 
 ### SST-2 The Stanford Sentiment Treebank (Socher+ 2013)
 
