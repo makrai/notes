@@ -111,7 +111,7 @@ EMNLP-IJCNLP 2019
 ## CoLA
 
 * Corpus of Linguistic Acceptability (CoLA; Warstadt+ 2018) in our experiments
-  to train supervised acceptability classifiers.  CoLA is a dataset of
+  to train supervised acceptability classifiers
   * over 10k syntactically diverse example sentences
     from the linguistics literature with Boolean acceptability labels
   * gathered from diverse sources and represent a wide array of syntactic,
