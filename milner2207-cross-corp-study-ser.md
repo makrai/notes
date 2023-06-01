@@ -47,12 +47,10 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
     multi-task learning setting for emotion recognition. Most recently, to deal
   * unsupervised: the domain-adaptive subspace learning (DoSL) approach was
     * an SVM is trained based on labelled training set speech signals [19].
-
 * hE, the majority of this cross-corpus work has been cross-lingual and
   occasionally both cross-lingual and cross-age. In the past this has been
   * now larger datasets, 
     * eg MOSEI database which has around 65 hours of natural emotion data [20],
-
 * Deep neural networks, such as long short-term memory (LSTM) networks [21] and
   attention mechanism [22]
   * in various emotion recognition studies [23, 17, 18, 24]. Recently,
@@ -62,7 +60,6 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
       attempt to bring the representations closer.  Training models using DAT
     * saves time, by learning two representations simultaneously, it also aims
     * transfer of information between the two tasks.
-
 * we cross-corpus SER within the same language (English) and same age (adult)
   * between acted and natural datasets, the first study of this kind.
   * A bidirectional-LSTM with an attention mechanism approach is considered for
