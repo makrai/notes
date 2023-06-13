@@ -12,14 +12,15 @@ arXiv:1901.02839 [cs.HC]
   controlled settings, low demographic variability, and a single task
 * we introduce the SEWA database of more than 2000 minutes of audio-visual data
   * 398 people coming from six cultures, 50% female, and
-  * uniformly spanning the age range of 18 to 65 years old. Subjects were
-* two different contexts: while watching adverts and while
-  discussing adverts in a video chat
+  * uniformly spanning the age range of 18 to 65 years old
+* two different contexts
+  * watching adverts and while
+  * discussing adverts in a video chat
 * rich annotations of the recordings in terms of facial landmarks, facial
   action units (FAU), various vocalisations, mirroring, and continuously valued
-  valence, arousal, liking, agreement, and prototypic examples of (dis)liking.
+  valence, arousal, liking, agreement, and prototypic examples of (dis)liking
 * we provide extensive baseline experiments for automatic FAU detection and
-  automatic valence, arousal and (dis)liking intensity estimation. 
+  automatic valence, arousal and (dis)liking intensity estimation
 
 # 2 State-of-the-art in audio-visual emotion databases
 
@@ -33,24 +34,24 @@ arXiv:1901.02839 [cs.HC]
 
 ### 2.1.1 posed behaviour – emotion is portrayed by a person upon request,
 
-* eg [9], [10], 
+* eg [9], [10],
 
-### 2.1.2 induced behaviour 
+### 2.1.2 induced behaviour
 
 * a controlled setting is designed to elicit a reaction to a given affective
   stimulus, eg watching audio-visual clips or interacting with a manipulated
   system
-* [11], [12], and 
+* [11], [12], and
 
-### 2.1.3 spontaneous behaviour 
+### 2.1.3 spontaneous behaviour
 
 * natural interactions between individuals, or between a human and a machine eg
   * chatting with a sensitive artificial listener [7]
-  * resolving a task in collaboration [13].
+  * resolving a task in collaboration [13]
 
 ## 2.2 models of emotion representation
 
-* subjective and complex 
+* subjective and complex
   * whether a certain expression stems from eg sadness versus boredom
 * several continuous-valued, multidimensional models have been proposed for
   * VA: most popular model employed by the affective computing research community
@@ -67,7 +68,7 @@ arXiv:1901.02839 [cs.HC]
 
 * ANVIL [33], ATLAS [34], Ikannotate [35], EmoWheel (Geneva emotion wheel)
   [36], FEELtrace [37], Gtrace 1 , ANNEMO [38], and the frame by frame
-  Valence/Arousal Online Annotation Tool [39].
+  Valence/Arousal Online Annotation Tool [39]
 * creating the unified gold standard from a set of annotations,
   * gold standard != ‘ground-truth’, which is avoided for affective computing
   * no truth on a subjective feeling such as emotion
@@ -76,9 +77,9 @@ arXiv:1901.02839 [cs.HC]
     * metrics such as the correlation coefficients, dynamical time warping
       (DTW) distance [32], [40], average of the data post standardization or
       normalization, or assigning individual annotations certain weight
-      percentages (eg evaluator weighted estimator (EWE)).
+      percentages (eg evaluator weighted estimator (EWE))
 
-## 2.4, existing corpora.
+## 2.4, existing corpora
 
 * We focus here on databases containing dyadic interaction recordings annotated
   in terms of displayed affective reactions
@@ -88,6 +89,6 @@ arXiv:1901.02839 [cs.HC]
   demographic variability, and are made in primarily one language –that has
   mostly been English so far
   * Predominance of one language in the corpora limits usability of the
-    database for cross-lingual, cross-cultural study of emotion recognition.
+    database for cross-lingual, cross-cultural study of emotion recognition
 * Table 1 presents a summarized overview of the surveyed databases containing
-  dyadic interactions.
+  dyadic interactions
