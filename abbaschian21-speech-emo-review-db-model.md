@@ -40,8 +40,8 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
   * complication:
     * continuousness of emotions and their dynamic variation during the course
     * concurrent emotions together, and the presence of background noise
-    * number of different emotions found in these corpora is limited. Moreover,
-    * copyright and privacy issues arise using this type of corpora. The major
+    * number of different emotions found in these corpora is limited
+    * copyright and privacy issues arise using this type of corpora
 * number of samples and actors
   * Earlier examples of databases for emotional speech used to contain a
     limited number of samples with a limited number of actors, but

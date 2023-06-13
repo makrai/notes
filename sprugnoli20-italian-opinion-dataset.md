@@ -25,7 +25,7 @@ MultiEmotions-it: A new dataset for opinion polarity and emotion anal for Italia
   * emotions, their analysis follows two main approaches (Buechel & Hahn, 2017)
     * discrete categories based on the theories of psychologists such as those
       of Ekman (Ekman, 1992) and Plutchik whereas in the second approach
-    * dimensional form using continuous values such as valence, arousal and dom
+    * dimensional form using continuous values such as valence, arousal & domin
 * Survey papers like the ones by
   * Hakak+ (2017), Bostan & Klinger (2018) and Kim & Klinger (2019) report on
   * text genres, mainly
