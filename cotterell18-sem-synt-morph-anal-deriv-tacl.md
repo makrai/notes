@@ -22,13 +22,13 @@ TACL 2018
   * keyword spotting (Narasimhan+ 2014)
   * machine translation (Clifton and Sarkar, 2011) and
   * parsing (Seeker and Çetinoğlu, 2015). In contrast to much of this prior
-* we focus on supervised segmentation, i.e. gold segmentations during training
+* we focus on supervised segmentation, ie gold segmentations during training
   * Instead of surface segmentation, our model performs canonical segmentation
-    (Cotterell+ 2016a; Cotterell+ 2016b; Kann+ 2016), i.e., it allows
+    (Cotterell+ 2016a; Cotterell+ 2016b; Kann+ 2016), ie, it allows
     the induction of orthographic changes together with the segmentation, which
     is not typical
 * In this work, our primary contribution lies in the
-  * integration of continuous semantic vectors into supervised morph segmentatn
+  * integration of continuous sem vectors into supervised morph segmentation
   * experimentally investigate three novel aspects of our model
     * jointly modeling ... to improve morphological analysis
       * On the English portion of CELEX (Baayen+ 1993), we achieve a 5 point

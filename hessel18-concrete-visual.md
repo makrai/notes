@@ -19,7 +19,7 @@ http://www.cs.cornell.edu/~jhessel/concreteness/concreteness.html
 # 1. Intro
 
 * Text and images are often used together to serve as a richer form of content
-  * e.g
+  * eg
     * articles may be accompanied by photographs or infographics;
     * images shared on social media are often coupled with descriptions or tags
   * suggest that [images and text are] complements
@@ -37,10 +37,10 @@ http://www.cs.cornell.edu/~jhessel/concreteness/concreteness.html
     images associated with “beautiful” may contain flowers, sunsets, weddings
 * Allowing concreteness to be dataset-specific is an important innovation
   because concreteness is contextual
-  * e.g. “London” as highly concrete because of a preponderance of iconic imgs
+  * eg “London” as highly concrete because of a preponderance of iconic imgs
     [or] a geotag for diverse images
-* our method ... is compatible with both discrete and continuous textual
-  concepts (e.g., topic distributions)
+* our method is compatible with both discrete and continuous textual concepts
+  (eg topic distributions)
 * we consider the cross-modal retrieval problem, and examine a number of NLP,
   vision, and retrieval algorithms
   * 4 datasets × 2 image-representation algorithms × 5 textualrepresentation

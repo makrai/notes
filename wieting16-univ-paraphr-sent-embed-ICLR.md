@@ -30,11 +30,11 @@ http://ttic.uchicago.edu/~wieting
 # 1 Intro
 
 * domain independent? embeddings used effectively for many downstream tasks
-  * Turian+ 2010 Word representations: A general method for semi-supervised
-  * Socher+ 2011 Dynamic pooling & unfolding recursive autoencoders for paraphr
-  * Kim, 2014 CNNs for sentence classification EMNLP
-  * Bansal+ 2014 continuous word representations for dependency parsing ACL
-  * Tai+ 2015 Improved semantic representations from tree-structured LSTMs
+  * Turian+ (2010) Word representations: A general method for semi-supervised
+  * Socher+ (2011) Dynamic pooling & unfolding recursive autoencod for paraphr
+  * Kim, (2014) CNNs for sentence classification EMNLP
+  * Bansal+ (ACL 2014) continuous word representations for dependency parsing 
+  * Tai+ (2015) Improved semantic representations from tree-structured LSTMs
 * representations for word sequences such as phrases or sentences based on
   * simple operations like addition
     (Mitchell & Lapata, 2010; Yu & Dredze, 2015; Iyyer+ 2015)

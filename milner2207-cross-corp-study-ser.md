@@ -4,7 +4,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
 
 * speech emotion datasets: difficult to acquire large quantities of reliable
   * acted emotions may be over the top compared to
-    less expressive emotions displayed in everyday life. Lately,
+    less expressive emotions displayed in everyday life Lately,
   * recently larger datasets with natural emotions have been created. Instead
   * we not ignor smaller, acted datasets, this study investigates
 * question: whether information learnt from acted emotions is useful for
@@ -19,20 +19,20 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
       * Out-of-domain models, followed by adapting to the missing dataset, and
         domain adversarial training (DAT) are shown to be more suitable to
       * positive information transfer from acted datasets to more natural
-      * benefits from training on different corpora. 
+      * benefits from training on different corpora
 
 # 1 Intro
 
 * Speech emotion recognition (SER) aims to automatically detect human
-  * reviews into methods, features and datasets exist [3, 4, 5, 6].
+  * reviews into methods, features and datasets exist [3, 4, 5, 6]
 * A lot of research within SER has focussed on a single dataset avoiding
   different annotation problems [10]
   * [10] Mia Atcheson, Vidhyasaharan Sethu, and Julien Epps,
-    “Demonstrating and modelling systematic time-varying annotator disagreement
-    in continuous emotion annotation,” in
-    Interspeech, Hyderabad, India, 2-6 Sep, 2018, pp.  3668–3672.
+    Demonstrating and modelling systematic time-varying annotator disagreement
+    in continuous emotion annotation
+    Interspeech, Hyderabad, India, 2-6 Sep, 2018, pp. 3668–3672
   * Cross-corpus has been investigated with initial work by Schuller+ [11]
-    using various normalising schemes across six datasets.
+    using various normalising schemes across six datasets
 * training test mismatch
   * In [12], to relieve the feature distribution mismatch between training and
     test speech, importance weights are learnt for a support vector machine
@@ -46,10 +46,10 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
   * Kim+ [18] used auxiliary gender and naturalness recognition tasks in a
     multi-task learning setting for emotion recognition. Most recently, to deal
   * unsupervised: the domain-adaptive subspace learning (DoSL) approach was
-    * an SVM is trained based on labelled training set speech signals [19].
+    * an SVM is trained based on labelled training set speech signals [19]
 * hE, the majority of this cross-corpus work has been cross-lingual and
   occasionally both cross-lingual and cross-age. In the past this has been
-  * now larger datasets, 
+  * now larger datasets,
     * eg MOSEI database which has around 65 hours of natural emotion data [20],
 * Deep neural networks, such as long short-term memory (LSTM) networks [21] and
   attention mechanism [22]
@@ -59,9 +59,9 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
     * a gradient reversal layer is applied in the domain classifier in an
       attempt to bring the representations closer.  Training models using DAT
     * saves time, by learning two representations simultaneously, it also aims
-    * transfer of information between the two tasks.
+    * transfer of information between the two tasks
 * we cross-corpus SER within the same language (English) and same age (adult)
-  * between acted and natural datasets, the first study of this kind.
+  * between acted and natural datasets, the first study of this kind
   * A bidirectional-LSTM with an attention mechanism approach is considered for
   * The information transfer to other datasets is investigated and further
   * experiments looking into domain adversarial training (DAT) and
@@ -74,7 +74,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
 * two acted datasets, eNTERFACE [30] and RAVDESS [31],
 * one elicited dataset, IEMOCAP [32], and
 * one natural dataset, MOSEI [20]
-* Table 1 gives an overview of the emotion classes covered in each dataset.
+* Table 1 gives an overview of the emotion classes covered in each dataset
 
 ## 3.1. eNTERFACE
 
@@ -86,7 +86,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
   * speakers are from 14 nations, not all native speakers, resulting in
     different English accents
   * A training set is created with 38 speakers (Spkr1 to Spkr39 without Spkr6)
-  * test set contains the last 5 speakers (Spkr40 to Spkr44).
+  * test set contains the last 5 speakers (Spkr40 to Spkr44)
 
 ## 3.2. RAVDESS
 
@@ -98,7 +98,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
       by predominantly white Americans, in much of the Great Lakes region,,,
   * the first 19 speakers for training and the last 5 for testing. The
   * 0 for no emotion, 1 as exists and 2 as strong emotion
-    * All 2 values have been changed to 1 for classification.
+    * All 2 values have been changed to 1 for classification
 
 ## 3.3. IEMOCAP
 
@@ -124,7 +124,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
   * training, validation and test splits1 for the ACL 2018 conference have been
     * training and validation sets are combined for training.  The emotion
   * labels in the range 0 to 3, have been changed to binary values,
-    * whether the emotion exists or not.
+    * whether the emotion exists or not
 
 # 4 Experimental setup and results 3
 
