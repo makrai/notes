@@ -22,7 +22,7 @@ arXiv:1901.02839 [cs.HC]
 * we provide extensive baseline experiments for automatic FAU detection and
   automatic valence, arousal and (dis)liking intensity estimation
 
-# 2 State-of-the-art in audio-visual emotion databases
+# 2 SOTA in audio-visual emotion databases
 
 * The standard approach in automatic emotion recognition relies on
   machine learning models trained on a collection of recordings,

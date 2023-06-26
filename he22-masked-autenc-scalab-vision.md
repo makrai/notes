@@ -8,7 +8,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022
 * Our MAE approach is simple
   * mask random patches of the input image and reconstruct the missing pixels
   * two core designs
-    1. asymmetric encoder-decoder architecture, with an
+    1. asymmetric encoder-decoder architecture:
       * encoder operates only on the visible subset of patches (no mask tokens)
       * lightweight decoder that reconstructs the original image
         from the latent representation and mask tokens
@@ -17,18 +17,18 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022
   * Coupling these two designs enables us to train large models effic & effec:
     we accelerate training (by 3x or more) and improve accuracy
     * high-capacity models that generalize well
-    * eg, a vanilla ViT-Huge model achieves the best accuracy (87.8%) among
-      methods that use only ImageNet-1K data
-    * Transfer performance in downstream tasks outperforms supervised
-      pre-training and shows promising scaling behavior
+    * eg, a vanilla ViT-Huge model achieves the best accuracy (87.8%)
+      among methods that use only ImageNet-1K data
+    * Transfer performance in downstream tasks outperforms supervised pre-train
+      * promising scaling behavior
 
 # 1 Intro
 
-* models today can easily overfit one million images [13] and begin to
+* models today can easily overfit one million images [13]
   * demand 100s of millions of—often publicly inaccessible—labeled images [16]
 * NLP: self-supervised pretraining
   * autoregressive language modeling in GPT [47, 48, 4] and
-  * masked autoencoding in BERT [14], are conceptually simple: they
+  * masked autoencoding in BERT [14], are conceptually simple
   * both remove a portion of the data and learn to predict the removed content
     => generalizable NLP models containing over one hundred billion params [4]
 * vision: masked autoencoders, a form of more general denoising autoencoders
@@ -36,14 +36,14 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022
   * closely related research in vision [59, 46] preceded BERT
   * significant interest in this idea following the success of BERT,
   * hE progress of autoencoding methods in vision lags behind NLP
-  * ?what makes masked autoencoding different between vision and language? We
+  * what makes masked autoencoding different between vision and language?
 * perspectives:
   * Until recently, architectures were different
     * In vision, convolutional networks [34] were dominant over the last
       decade [33]
     * operate on regular grids and it is
-        not straightforward to integrate ‘indicators’ such as mask tokens
-        [14] or positional embeddings [57] into convolutional networks
+    * not straightforward to integrate ‘indicators’ such as mask tokens [14] or
+      positional embeddings [57] into convolutional networks
     * This architectural gap, however, has been addressed with the introduction
       of Vision Transformers (ViT) [16] and should no longer be an obstacle
   * Information density is different between language and vision
@@ -58,9 +58,8 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022
       show that a simple strategy works well in computer vision:
       masking a very high portion of random patches
       * largely reduces redundancy and creates a challenging selfsupervisory
-        task that requires holistic understanding beyond low-level image
-        statistics. To get a qualitative sense of our reconstruction task, see
-        Figures 2 – 4
+        task that requires holistic understanding beyond low-level image stats.
+      * see Figures 2 – 4
     * Figure 2. Example results on ImageNet validation images
       * no loss is computed on visible patches, the model output on visible
         patches is qualitatively worse

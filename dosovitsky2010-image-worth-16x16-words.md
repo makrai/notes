@@ -17,17 +17,17 @@ google-research/vision_transformer
     used to replace certain components of convolutional networks
     while keeping their overall structure in place
 * We show that this reliance on CNNs is not necessary and
-  a pure transformer applied directly to sequences of image patches can perform
-  very well on image classification tasks
+  a pure transformer applied directly to sequences of image patches can
+  perform very well on image classification tasks
   * When pre-trained on large amounts of data and
     transferred to multiple mid-sized or small image recognition benchmarks
-    (ImageNet, CIFAR-100, VTAB, etc.),
+    (ImageNet, CIFAR-100, VTAB, etc),
   * Vision Transformer (ViT) attains excellent results compared to SOTA CNNs
     while requiring substantially fewer computational resources to train
 
 # 1 Intro
 
-* Self-attention-based architectures, in particular Transformers (Vaswani+ 17),
+* Self-attention-based architectures, in particular Transformers (Vaswani+ 17)
   * pre-train on a large text corpus and then fine-tune (Devlin+ 2019)
   * models with over 100B parameters (Brown+ 2020; Lepikhin+ 2020)
   * models and datasets growing, still no sign of saturating performance
@@ -40,25 +40,24 @@ google-research/vision_transformer
   * hE
     not yet been scaled effectively on modern hardware accelerators
     due to the use of specialized attention patterns => in large-scale image
-    recognition, classic ResNet-like archits are still SOTA
+    recognition, classic ResNet-like architectures are still SOTA
     (Mahajan+ 2018; Xie+ 2020; Kolesnikov+ 2020)
 * we experiment with applying a standard Transformer directly to images, with
   the fewest possible modifications
   * we split an image into patches and provide the sequence of linear
     embeddings of these patches as an input to a Transformer
-  * Image patches are treated the same way as tokens (words) in an NLP
-    application
+  * Image patches are treated the same way as tokens (words) in NLP
   * We train the model on image classification in supervised fashion
   * When trained on mid-sized datasets such as ImageNet without strong regu,
     these models yield modest accuracies 
     * a few percentage points below ResNets of comparable size
     * may be expected: Transformers lack some of the inductive biases inherent
-      to CNNs, such as translation equivariance and locality, and therefore do
-  * nL, if the models are trained on larger datasets (14M-300M images). We find
+      to CNNs, such as translation equivariance and locality
+  * nL, if the models are trained on larger datasets (14M-300M images)
   * excellent results when pre-trained at sufficient scale
     and transferred to tasks with fewer datapoints
-  * When pre-trained on the public ImageNet-21k dataset or the in-house
-    JFT-300M dataset, ViT approaches or beats SOTA on multiple image
-    recognition benchmarks
+  * When pre-trained on the public ImageNet-21k dataset
+    or the in-house JFT-300M dataset,
+    ViT approaches or beats SOTA on multiple image recognition benchmarks
     * best model: accuracy of 88.55% on ImageNet, 90.72% on ImageNet-ReaL,
       94.55% on CIFAR-100, and 77.63% on the VTAB suite of 19 tasks
