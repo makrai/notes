@@ -77,11 +77,11 @@ NAACL-HLT 2022 Findings arXiv:2204.08688 [cs.CL]
     * all of them focus on introducing an extra set of parameters to trace the
       word order. Our work chooses to make use of the causal attention masks
 * Most similar to our modification in Section 3.2,
-  Im and Cho (2017) propose a self-attention based model which achieve better
-  performance on SNLI task (Bowman+ 2015) without the help of explicit
-  position encodings
+  Im and Cho (2017) propose a self-attention based model which achieve
+  * better performance on SNLI task (Bowman+ 2015)
+    without the help of explicit position encodings
   * hE models are different from the standard Transformer and use
-    extra local attention masks to control the information flow. With the
+    extra local attention masks to control the information flow
 * popularity of the Transformer model in the Computer Vision field, some works
   propose different methods to make Vision Transformer know word order
   implicitly (Chu+ 2021; Yuan+ 2021; Wu+ 2021b), but
