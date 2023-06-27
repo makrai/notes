@@ -54,9 +54,9 @@ arXiv:1901.02839 [cs.HC]
 * subjective and complex
   * whether a certain expression stems from eg sadness versus boredom
 * several continuous-valued, multidimensional models have been proposed for
-  * VA: most popular model employed by the affective computing research community
-    is the two dimensional model describing the degree of activation (arousal)
-    and pleasantness (valence) of displayed affect expressions as a point in
+  * VA: most popular model employed by the affective computing research
+    community is the two dimensional model describing the degree of activation
+    (arousal) and pleasantness (valence) of displayed affect expressions in 2d
     * problem with this approach is the dynamically varying time-delay between
       an expression and the annotation due to reaction lag of the annotators,
       which also varies among different annotators, over the sessions, and even

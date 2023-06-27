@@ -5,28 +5,27 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
 * speech emotion datasets: difficult to acquire large quantities of reliable
   * acted emotions may be over the top compared to
     less expressive emotions displayed in everyday life Lately,
-  * recently larger datasets with natural emotions have been created. Instead
-  * we not ignor smaller, acted datasets, this study investigates
-* question: whether information learnt from acted emotions is useful for
-    detecting natural emotions
+  * recently larger datasets with natural emotions have been created
+  * we not ignor smaller, acted datasets
+* is information learnt from acted emotions useful for detecting natural emo?
   * Cross-corpus research has mostly considered cross-lingual and cross-age
-  * difficulties arise from different methods of annotating emotions causing a
+  * difficulties arise from different methods of annotating emotions
   * we: four adult English datasets covering acted, elicited and natural
   * A SOTA model is proposed to accurately investigate the degradation of perf
     * a bi-directional LSTM with an attention mechanism to classify emotions
     * the transfer of information is not successful
     * more suitable
       * Out-of-domain models, followed by adapting to the missing dataset, and
-        domain adversarial training (DAT) are shown to be more suitable to
-      * positive information transfer from acted datasets to more natural
+        domain adversarial training (DAT) are shown to be more suitable for
+        positive information transfer from acted datasets to more natural
       * benefits from training on different corpora
 
 # 1 Intro
 
-* Speech emotion recognition (SER) aims to automatically detect human
+* Speech emotion recognition (SER)
   * reviews into methods, features and datasets exist [3, 4, 5, 6]
-* A lot of research within SER has focussed on a single dataset avoiding
-  different annotation problems [10]
+* A lot of research within SER has focussed on a single dataset
+  avoiding different annotation problems [10]
   * [10] Mia Atcheson, Vidhyasaharan Sethu, and Julien Epps,
     Demonstrating and modelling systematic time-varying annotator disagreement
     in continuous emotion annotation

@@ -6,7 +6,7 @@ Francisca Adoma Acheampong, Henry Nunoo-Mensah, and Chen Wenyu
 # Abstract
 
 * The models are fine-tuned on the ISEAR data to distinguish emotions into
-  anger, disgust, sadness, fear, joy, shame, and guilt. Using the same
+  anger, disgust, sadness, fear, joy, shame, and guilt
   | RoBERTa	| XLNet	  | BERT	  | DistilBERT	|
   | 0.7431	| 0.7299	| 0.7009	| 0.6693	    |
 

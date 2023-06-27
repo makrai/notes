@@ -10,8 +10,8 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 * FEEL-IT, a novel benchmark corpus of Italian Twitter posts annotated with
   * four basic emotions: anger, fear, joy, sadness (Ekman, 1992)
   * By collapsing them, we can also do sentiment analysis
-  * first Italian dataset with a broad topic and domain coverage for emotion and
-    sentiment classification
+  * first Italian dataset with a broad topic and domain coverage
+    for emotion and sentiment classification
 * evaluate our corpus on benchmark datasets for
   * both emotion and sentiment classification, obtaining competitive results
   * recent neural models trained on our corpus for emotion recognition
@@ -30,14 +30,12 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
   * political campaigns and discourse (Huguet Cabot+ 2020). Emotion and
   * crisis management or emergency scenarios (Stowe+ 2016; Desai+ 2020)
 * benchmark datasets have been proposed for
-  * English
-    (Calefato+ 2017; Abdul-Mageed and Ungar, 2017; Akhtar+ 2019, inter alia)
-  * other languages, such as
-    * German (Troiano+ 2019),
-    * Chinese (Wang+ 2018),
-    * Spanish (Navas-Loro and Rodrı́guezDoncel, 2019),
-    * Italian (Barbieri+ 2016; Sprugnoli, 2020), and
-    * multiple languages in shared tasks (Mohammad+ 2018; Pontiki+ 2016)
+  * English (Calefato+ 2017; Abdul-Mageed and Ungar, 2017; Akhtar+ 2019)
+  * German (Troiano+ 2019),
+  * Chinese (Wang+ 2018),
+  * Spanish (Navas-Loro and Rodrı́guezDoncel, 2019),
+  * Italian (Barbieri+ 2016; Sprugnoli, 2020), and
+  * multiple languages in shared tasks (Mohammad+ 2018; Pontiki+ 2016)
 * shotcomings
   * usually collected via hashtags and emojis for distant supervision
     (AbdulMageed and Ungar, 2017; Mohammad, 2012; Pak and Paroubek, 2010;
@@ -49,25 +47,25 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 
 ## Corpus Analysis
 
-* Table 1 shows the label distribution of the FEEL-IT corpus for the four emos
+* Table 1 shows the label distribution of the FEEL-IT corpus for the 4 emotions
   * Examples for each class are shown in Table 2
 * imbalanced
   * Similar to other realistic emotion classification datasets
-    (Sprugnoli, 2020; Mohammad+ 2018; Nozza+ 2017; Mohammad, 2012), the dataset
+    (Sprugnoli, 2020; Mohammad+ 2018; Nozza+ 2017; Mohammad, 2012)
   * distribution is similar to the SemEval-2018 Task 1 dataset (Mohammad+ 2018),
     * anger and joy account for the majority of tweets, and
-      fear is the least frequent emotion. 3 In FEEL-IT,
+      fear is the least frequent emotion
 * vary both with respect to topic domains and time
   * Topic domains ranges
     health (#covid19, #mascherina/mask), sports (#F1, #Juventus), social issues
     (#scuola/school), TV shows (#GFvip, #pomeriggio5), individuals (#DiMaio,
     #Suarez), generic targets (#negazionisti/negationists)
   * Each topic is associated with a time range that greatly varies with subject
-    * TV shows are cited when they are broadcast, e.g., #domenicalive, literally
+    * TV shows are cited when they are broadcast, eg #domenicalive, literally
       Sunday live is mainly commented on Sunday.  Some events, like
-    * soccer matches or celebrity birthdays, are mentioned only one day, e.g.,
+    * soccer matches or celebrity birthdays, are mentioned only one day, eg
     * COVID-19 are present every observed day, with some
-      peaks for specific events (e.g., 2nd October, Trump testing positive)
+      peaks for specific events (eg 2nd October, Trump testing positive)
 
 # 3 Experiments
 
@@ -94,7 +92,7 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 
 ## Results
 
-* The only emotion for which UmBERTo-FT obtains lower equal to TF-IDF is fear
+* The only emotion for which UmBERTo-FT obtains =< TF-IDF is fear
   * the least frequent class in the dataset and, therefore, the more difficult
     to capture. The different prediction behavior on this class is also why the
     large difference in precision in Table 3.  Indeed, precision for the class
@@ -109,11 +107,11 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
   * tweet authors tend to communicate their fears by other, less intimate, emos
     * Examples are “Siete un branco di egoisti che pensa solo al proprio,
 > You are a bunch of selfish people who only think about themselves, not caring
-> about putting everyone else’s life at risk)
-    * “Ogni giorno compilo il mio
-> Every day I fill an excel file on the situation in Veneto...and every day I
+> about putting everyone else’s life at risk
+    * “Ogni giorno compilo il mio"
+> Every day I fill an excel file on the situation in Veneto... and every day I
 > close it thinking “Let’s hope that tomorrow we are going to have more
-> encouraging data
+> encouraging data"
 
 ## 3.2 Sentiment Analysis 4
 
@@ -142,16 +140,15 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 
 * models trained on FEEL-IT and tested on two topic-specific datasets:
   * MultiEmotions-It (Sprugnoli, 2020) and
-    * a linguistic resource for Italian which comprises
+    * a linguistic resource for Italian
     * comments of music videos and advertisements posted on YouTube and Facebook
     * Each text is manually annotated according to four different dimensions:
-      i.e., relatedness, opinion polarity, emotions, and sarcasm
+      ie, relatedness, opinion polarity, emotions, and sarcasm
     * differs from FEEL-IT both in topic variety and considered social media
     * from the emotion classes considered in ME, we removed the ones not
-      pertaining to our set of emotions. After this process, we are left with
-      304 comments.  As before, we pick UmBERTo-FT and UmBERTo-PT as our
-      champion models. To give a point of reference, we also show the Most
-      Frequent Class (MFC) baseline results
+      pertaining to our set of emotions => 304 comments
+    * As before, we pick UmBERTo-FT and UmBERTo-PT as our champion models
+    * baseline: we also show the Most Frequent Class (MFC) baseline results
   * a dataset of 662 tweets about COVID-19
 
 ## Results. Table 6 shows that training on FEEL-IT brings
@@ -167,21 +164,21 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
   * a dataset for emotion recognition limited to Youtube and Facebook comments
     (Sprugnoli, 2020)
   * for sentiment analysis SENTIPOLC16 (Barbieri+ 2016)
-* English: Abdul-Mageed and Ungar (2017) proposes EmoNet, an English emotion
+* English: Abdul-Mageed and Ungar (2017) proposes EmoNet
   * collected using a keyword-based approach
-    (e.g., tweets are retrieved using #happy as a marker for joy)
+    (eg tweets are retrieved using #happy as a marker for joy)
   * we approach the problem annotating manually and without distant supervision
   * EmoTxt (Calefato+ 2017) is an open-source toolkit for emotion prediction
     * love, joy, surprise, anger, sadness, and fear
-  * Nozza+ (2017) propose a English corpus of tweets that comprises
-    * five different views for each message, i.e,
+  * Nozza+ (2017) propose a English corpus of tweets
+    * five different views for each message, ie
       subjective/objective, sentiment polarity, implicit/explicit, irony, emo
 * multiple languages
   * Lamprinidis+ (2021) introduce a novel dataset extracted from Facebook posts
   * Troiano+ (2019) introduce a dataset in two languages, English and German,
     obtained through crowd-sourcing
 * Akhtar+ (2019) propose a multi-model architecture that
-  * combines visual, auditory, and text information for both
+  * combines visual, auditory, and text information for
     emotion and sentiment prediction in English
 
 # 6 Conclusions

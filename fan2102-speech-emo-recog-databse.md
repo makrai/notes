@@ -4,14 +4,17 @@ arXiv:2102.01754 ICASSP 2021 IEEE IC on Acoustics, Speech & Signal Proc
 
 https://github.com/tobefans/LSSED
 
+# Abstract
+
 * Speech emotion recognition contributs to human-computer interaction (HCI)
 * we present LSSED, a challenging large-scale english speech emotion dataset,
   * data collected from 820 subjects to simulate real-world distribution
   * some pre-trained models based on LSSED
     * can also be transferred to related downstream tasks eg mental health anal
       where data is extremely difficult to collect
-* Finally, our experiments show the necessity of large-scale datasets and the
-  effectiveness of pre-trained models
+* our experiments show the
+  * necessity of large-scale datasets and the
+  * effectiveness of pre-trained models
 
 # 1 Intro
 
@@ -79,10 +82,10 @@ https://github.com/tobefans/LSSED
 ## 3.2. Speech Emotion Recognition Benchmark
 
 * We investigate
-  * some recent SER papers [23–25] with open source code from papers. Also, we
+  * some recent SER papers [23–25] with open source code from papers
     * configuration from the original papers
   * a series of contrast experiments based on commonly used backbone models,
-    including VGG and ResNet. In addition, we also test
+    including VGG and ResNet
   * our PyResNet model mentioned in Section 2.4
   * configuration of Our PyResNet and the backbone models
     * 60 epochs with batch size of 256 through the SGD optimizer with a
@@ -90,15 +93,14 @@ https://github.com/tobefans/LSSED
     * learning rate (initialized to 0.01) drops to 10% of the original every 20
       epochs
   * four emotion categories, including angry, neutral, happy and sad
-    * Consistent with the current mainstream SER experiments, we use
+    * Consistent with the current mainstream SER experiments
 * The results are shown in table 5
   * the performance of existing algorithms on large-scale LSSED is not satisfac
   * the accuracy (weighted and unweighted) of these algorithms is even lower
     than that of the basic VGG and ResNet models
   * our PyResNet achieves better results than the basic backbone models. This
   * LSSED still has great challenges which means that
-    speech emotion recognition is still a long way from being perfectly widely
-    applicable
+    speech emotion recognition is still a long way from being widely applicable
 * Confusion matrices of
   both MTS-3 branches and PyResNet that use ResNet152 as the backbone is shown
   * Although they all use multi-scale convolution kernels
@@ -106,8 +108,8 @@ https://github.com/tobefans/LSSED
     * PyResNet directly uses
       multiple different kernels with more powerful modeling capabilities. Fig 2
   * neutral samples have a high probability of being correctly predicted, which
-    is also the most common emotion. But we should also note that
-  * both models have a prediction bias problem for the neutral class
+    is also the most common emotion
+  * hE both models have a prediction bias problem for the neutral class
     * We speculate that this is because each individual has different neutral
       standards
   * future work: take into account the resting (neutral) state of each indiv

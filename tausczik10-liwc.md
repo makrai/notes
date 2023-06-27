@@ -77,15 +77,15 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 * style words are linked to people’s social and psychological worlds
   * the reader needs to know who “I” and “you” refer to.  Where is “here”
   * referents that are shared by two people in a particular conversation
-  * (cf. Chung & Pennebaker, 2007)
+  * (cf Chung & Pennebaker, 2007)
   * detect emotional and biological states, status, honesty
 
 # The Social and Psychological Meaning of Words
 
 * In this section, we give a brief discussion of psychological processes and a
-  small set of related of language categories. The section concludes with a
-  comprehensive summary of findings about the correlates of word categories
-  from a large group of studies
+  small set of related of language categories
+* The section concludes with a comprehensive summary of findings about the
+  correlates of word categories from a large group of studies
 
 ## Attentional Focus: Pronouns and Verb Tense
 
@@ -98,7 +98,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
       first-person singular pronouns (eg Rude, Gortner, & Pennebaker, 2004)
     * teasing, interaction with sex men may focus more on the perpetrator
       of the event when they are the victim
-    * first-person plural pronouns—“we,” “us,” and “our.”
+    * first-person plural pronouns—“we,” “us,” and “our”
       * can signal a sense of group identity, such as when couples
       * Royal We, such as when the boss says that "we need to analyze that"
         * by political figures in Pennebaker & Lay (2002)
@@ -116,7 +116,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
 
 ## Emotionality: Positive and Negative Emotions
 
-* Use of emotion words as a measure of immersion belemerülés
+* Use of emotion words as a measure of immersion [belemerülés]
   * higher use of emotion words showed more immersion in the traumatic event,
     which led to increased experience of physical pain (Holmes+ 2007)
 * cognitive complexity thinking styles, and social awareness
@@ -201,7 +201,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
     know, ought), and words greater than six letters are all also indicative
     * in journal articles, authors use more prepositions in the discussion
       than the introduction or abstract
-* active process of reappraisal újraértékelés in describing a past event
+* active process of reappraisal [újraértékelés] in describing a past event
   * two subcategories of cognitive mechanisms,
     * causal words (eg because, effect, hence) and
     * insight words (eg think, know, consider),
@@ -229,7 +229,7 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   * higher word count and fewer large words predicted extraversion
   * categories of complexity were less frequent in extraversion
   * Social and emotional language also differed with respect to extraversion;
-    * more positive emotion, and less negative emotion. The
+    * more positive emotion, and less negative emotion
   * findings support traditional personality models
 
 # Conclusion
@@ -238,6 +238,6 @@ The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
   while retaining LIWC’s transparency
 * Studies have begun to look at n-grams
 * relevant social information can vary greatly between language and cultures
-  (cf. Maass, Karasawa, Politi, & Suga, 2006)
+  (cf Maass, Karasawa, Politi, & Suga, 2006)
   * politeness, formality, and social closeness
     * function words (Boroditsky, Schmidt, & Phillips, 2003)

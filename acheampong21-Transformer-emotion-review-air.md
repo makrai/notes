@@ -6,14 +6,13 @@ Artificial Intelligence Review (2021)
 
 * models discussed: the Generative Pre-training (GPT) and its variants,
   Transformer-XL, Cross-lingual Language Models (XLM), and
-  the Bidirectional Encoder Representations from Transformers (BERT).
+  the Bidirectional Encoder Representations from Transformers (BERT)
   * recent works in which researchers proposed various BERT-based models
 
 # Introduction
 
-* in Akhtar+ (2020), the intensities of emotions were detected
-  using a stacked ensemble of convolutional neural network (CNN), LSTM, and
-  gated recurrent unit (GRU)
+* Akhtar+ (2020) detect the intensities of emotions using a stacked ensemble of
+  convolutional neural network (CNN), LSTM, and gated recurrent unit (GRU)
 * Emotion Detection (ED) is a branch of sentiment analysis (SA) that seeks to
   extract fine-grained emotions from either speech/voice, image, or text data
   * issues
@@ -26,6 +25,62 @@ Artificial Intelligence Review (2021)
 
 # 2 Models of emotions and the concept of text-based emotion detection
 
+* discrete and dimensional form
+  * Discrete representations place emotions into finite categories. Prominent
+    * agreed that emotions arose due to how individuals perceived events, and
+      those emotions varied according to their degree of intensity
+    * Ekman (1999) places emotions into six basic categories, ie, happiness,
+      sadness, anger, disgust, surprise, and fear. Ekman posited that
+      * these emotions are independent of each other, basic, and can produce
+        complex emotions by combinations
+    * Plutchik (1980)
+      * like Ekman, primary emotions, and their combinations: complex emotions
+      * hE 8 primary emotions instead of 6 by Ekman which occured
+        * in opposite pairs. The 8 primary emotions as proposed by Plutchik
+        * joy--sadness, trust--disgust, anger--fear and surprise--anticipation
+    * Orthony, Clore, and Collins (OCC) disagreed with the analogy of ’basic
+      emotions’ as presented by Ekman and Plutchik. They discretized emotions
+      * 22 emotions, adding 16 emotions to Ekman's essential ones, thus
+      * additional classes of relief, envy, reproach, self-reproach,
+        appreciation, shame, pity, disappointment, admiration, hope,
+        fears-confirmed, grief, gratification, gloating, like and dislike
+        (Ortony+ 1990)
+  * dimensional models place emotions into a uni~ or multi-dimensional space
+    * The spatial order depicts the relationship between emotions and their
+      relative degree of occurrence
+    * Circumplex of Affect proposed by Russell (1980) is a profound example of
+      * 2-dimensional circular wheel in an arousal-valence domain
+    * Russell and Mehrabian (1977) also presented a 3-D emotional model made up
+      * valence, arousal, and dominance with
+        valence differentiating emotions by pleasantness and unpleasantness,
+        arousal differentiating emotions by activations and deactivations, and
+        dominance: the degree to which experiencers control their emotions
+    * The Hourglass of Emotions revisited model presented by Susanto+ (2020) is
+      * an improvement over the original Hourglass of Emos by Cambria+ (2012)
+      * both classify unknown concepts based on known features
+      * issues with the earlier proposal
+        * uncanny color associations of the original model, the presence of
+        * neutral and ambiguous emotions, the
+        * absence of polar emotions such as calmness and eagerness.  Also, an
+        * wrong associations of antithetic emotions eg
+          * anger and fear (which were both negatives) or
+          * surprise and anticipation
+            (opposite in terms of meaning but not in terms of polarity)
+        * low polarity scores for compound emotions and the
+        * absence of self-conscious or moral emotions also contributed to the
+      * tested on three sentiment benchmarks (ie, Blitzer dataset, Pang and Lee
+        dataset, and Amazon dataset)
+        * The revisited hourglass model demonstrated the highest scores in all
+        * 94.72%, 93.29%, and 89.85% for the Blitzer, Pang and Lee, and Amazon
+      * Figure 1 illustrated the revised hourglass model
+* The approaches for recognizing emotions from texts as
+  * outlined by Acheampong+ (2020) inferred that Machine learning approaches
+  * SOTA: deep learning techniques in the lead
+  * remaining issues: However, there remained the hurdle of adequate knowledge
+    * extracting the relationship between long term dependent texts the
+    * parallel processing of text sequence, and the
+    * integration of logical reasoning within these techniques.  The
+
 # 3 The concept of transformers
 
 # 4 Some transformer-based models, their pros and cons 7
@@ -33,20 +88,33 @@ Artificial Intelligence Review (2021)
 # 5 Text-based emotion detection works with transformer-based pre-train 15
 
 * Yang+ [32], proposed a contextual emotion classifier, EmotionX-KU, which was
-  applied to the EmotionX 2019 challenge shared task for detecting
+  applied to the EmotionX 2019 challenge shared task
 * Huang+ [37] for detecting emotions in dialogue utterances used the
-  EmotionLines dataset. The dataset was the same as the one
-* Huang+ [38]. The competition consisted
+  EmotionLines dataset
+* Huang+ [38] competition
 * Malte and Ratadiya [45] using BERT to detect cyber abuse in English and Hindi
 * Park+ [48] learn dimensional valence arousal dimension (VAD) scores from the
-  corpus with categorical emotion labels. The
+  corpus with categorical emotion labels
 * Matero+ [55] assessed suicide risks using multi-level dual-context language
-  and BERT. The
+  and BERT
 * Jwa+ [59] designed the BAKE and exBAKE model to automatically detect fake news
   using BERT through the scrutiny of headlines and body
 * Yang+ [65] detected humor in paragraphs by implementing a three-level approach
-  of data augmentation with paragraph de-
-* Vlad+ [68] classified emotions and detected propaganda news in the NLP4IF-2019
+  of data augmentation with paragraph dedecomposition (PD), fine-tuning BERT
+  with task-specific label and ensemble for inference
+  * Three datasets, viz,
+    * CCL2019 Chinese Humor Computation (XIAONIU) dataset, the
+      * The XIAONIU dataset is a Chinese humor dataset made up of 21, 552 human
+        written jokes mixed with machine written ones. It is also composed of
+        21, 885 jokes labeled in three levels for tri-classification problems
+    * FUN (Blinov+ 2019) dataset, and the authors used the
+      * The FUN dataset is a Russian dataset containing 313, 210 samples
+        collected from Russian social media websites and labeled binary classif
+    * HAHA (Humor Analysis based on Human Annotation, Chiruzzo+ 2019) dataset
+      in evaluating their model
+      * HAHA is a Spanish dataset that contains 30, 000 tweets, out of which
+        11, 595 is labeled as humorous
+* Vlad+ [68] classified emotions and detected propaganda news in NLP4IF-2019
 * Gupta+ [72] proposed the ensemble of neural architectures and BERT to de-
 * identification of speaker sensitive utterance, a significant challenge in
   Conversational Emotion Recognition (CER), Li+ in [78] de-

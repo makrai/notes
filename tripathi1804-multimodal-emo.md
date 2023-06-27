@@ -11,7 +11,7 @@ arXiv:1804.05788 [cs.AI]
     rotation and hand movements
 * Prior research: only Emotion detection from Speech on the IEMOCAP dataset,
 * we are the first that uses the multiple modes of data offered by IEMOCAP for
-  a more robust and accurate emotion detection. 
+  a more robust and accurate emotion detection
 
 # 1 Intro
 
@@ -42,4 +42,4 @@ arXiv:1804.05788 [cs.AI]
   * combining Speech (individually 55.65% accuracy) and Text (individually
     64.78% accuracy) modes we achieve an improvement to 68.40% accuracy
   * When we also account MoCap data (individually 51.11% accuracy) we also
-    achieve a further improvement to 71.04%.
+    achieve a further improvement to 71.04%

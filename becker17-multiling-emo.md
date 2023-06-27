@@ -1,4 +1,4 @@
-Multilingual emotion classification using supervised learning: Comparative experiments
+Multiling emotion classif using supervised learning: Comparative experiments
 Karin Becker, Viviane P.Moreira, Aline G.L.dos Santos
 Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
 
@@ -38,14 +38,14 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
   * emotion dimensions (Russell & Mehrabian, 1977) and
   * cognitive-appraisal categories (Ortony & Turner, 1990)
 * applications of emotion mining is increasingly recognized in a full range
-  * Mohammad (2016) highlights interesting applications in the domain of
-    * health (eg, detection of suicidal clues
-    * social analysis (eg, identification of pedophiles
-    * writing assistance (eg, to avoid misinterpretations on emails
-    * education, literary analysis (Mohammad, 2012
+  * Mohammad (2016) highlights interesting applications:
+    * health (eg, detection of suicidal clues)
+    * social analysis (eg, identification of pedophiles)
+    * writing assistance (eg, to avoid misinterpretations on emails)
+    * education, literary analysis (Mohammad, 2012)
   * electoral tweets annotated for sentiment (Mohammad+ 2015) shows that
-    emotions can convey a richer context to understand opinions (eg, most
-    negative opinions express disgust)
+    emotions can convey a richer context to understand opinions
+    (eg, most negative opinions express disgust)
   * sentiment-based prediction: emotions can be more discriminant than polarity
     (Asur+ 2010, Bollen+ 2011, Tumasjan+ 2010)
   * in the software engineering field, such as
@@ -62,13 +62,13 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
     results are not comparable
   * emotion words are fairly more specific with regard to the affect state
     * a slight change in the vocabulary may result in a different perception
-    * polarity, a full range of diverse vocabulary, with very distinct
+    * polarity: a full range of diverse vocabulary, with very distinct
       semantics, are summarized into a positive/negative label
   * the presence of one emotion does not preclude others, ie,
     * mixed feelings such as surprise and joy are possible even in tiny texts
-    * Several opinions may be contained in a single document, but from a
-      polarity classification perspective, the task involves selecting
-      between mutually exclusive polarity labels
+    * Several opinions may be contained in a single document, but
+      from a polarity classification perspective, the task involves
+      selecting between mutually exclusive polarity labels
 * we investigate whether automatic translation introduces noise
   that affects the recognition of the emotion(s) expressed
   * we focus only on the sentiment classification task based on
@@ -93,7 +93,7 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
       * combined use of texts in different languages improve polarity classif
         (Balahur+ 2014, Banea+ 2010)
         * as they provide more context to allow for term disambiguation
-* All these MLSA works address sentiments expressed in terms of polarity
+  * All these MLSA works address sentiments expressed in terms of polarity
   * challenges for an automatic translation approach
     * the specifics of the vocabulary used to express given emos,
     * a given text might convey multiple, concomitant emotions
@@ -113,7 +113,7 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
 * questions:
   1. classification performance of automatically translated texts
     compared to monoling emotion classification
-  2. Can the combination of languages be explored to improve emo classif
+  2. combination of languages to improve emo classif:
     * which combination strategy is better?
   3. Compared to polarity classification results, does
     automatic translation affect emotion classification in different ways?

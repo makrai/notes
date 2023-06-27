@@ -62,14 +62,14 @@ arXiv:2203.07378 [eess.AS]
   * tremendous success in computer vision [19], NLP [20], and computer audition
     [21, 22] – including SER [23, 24, 25]
   * speech: wav2vec 2.0 [21] and HuBERT [22] have emerged as foundation model
-* best performing model publicly available [26]. To our best knowledge this is
-  * the first transformer-based dimensional SER model released to the
+* best performing model publicly available [26]
+  * the first transformer-based dimensional SER model released
   * [an introduction how to use it](https://github.com/audeering/w2v2-how-to)
 
 # 2 Rel work: wav2vec2.0 and HuBERT utilised for (primarily categorical) SER
 
 * Table 1: a summary of recent works based on wav2vec 2.0 and HuBERT on the
-  IEMOCAP dataset [33], where most prior works have focused. Results are
+  IEMOCAP dataset [33], where most prior works have focused
   * ranked by unweighted average recall (UAR) / weighted average recall (WAR)
   * four emotional categories of anger (1103 utterances), happiness (1636),
     sadness (1084), and neutral (1708), which is the typical categ for IEMOCAP
@@ -103,10 +103,10 @@ arXiv:2203.07378 [eess.AS]
     * hE, some of the more complex models [32] only report results without fint
       * eg the cross-representation encoder-decoder model proposed by Makiuchi+
 * dimensional emotion
-  * the aforementioned studies have focused on emotional categories, there also
+  * the aforementioned studies have focused on emotional categories
   * several studies concentrate on dimensions
 * most comparable to ours is that of Srinivasan+ [16], who fine-tuned wav2vec
-  2.0 / HuBERT on arousal, dominance, and valence. Their results show that
+  2.0 / HuBERT on arousal, dominance, and valence
   * particularly good in predicting valence – a feat which has long escaped
     audio-based models
   * When additionally joining audio embeddings from the fine-tuned models and
@@ -129,7 +129,7 @@ arXiv:2203.07378 [eess.AS]
       * pre-train a CRNN model on LibriSpeech
         * using Contrastive Predictive Coding and subsequently
       * fine-tuned it on MSP-Podcast
-* ? influence of the amount and domain of the data used for pre-training really
+* ? influence of the amount and domain of the data used for pre-training
   * eg the large model consistently shows better performance, it
     * hE unclear if that can be attributed to the additional layers or the fact
       that it was trained on 60 times more data compared to the base model
@@ -194,7 +194,6 @@ arXiv:2203.07378 [eess.AS]
   * sentiment is a different concept than valence, as the
   * sentiment corresponds to an attitude held towards a specific object and the
   * valence more generally characterises a person’s feeling [50], there is
-    nevertheless evidence to suggest that
   * nL sentiment annotations can be decomposed to intensity and polarity [51],
     which we consider to roughly correspond to arousal and valence
   * We expect some correlation between

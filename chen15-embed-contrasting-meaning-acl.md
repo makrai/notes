@@ -4,22 +4,21 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
 
 # Abstract
 
-* 92% on the widely-used, publicly available dataset, the GRE “most contrasting
-  word” questions (Mohammad+ 2008)
-  * the highest performance seen [before Ono+ naacl15] on this dataset
-  * our best result relying solely on lexical resources (Roget’s and
-    WordNet)
+* we: 92% on the GRE “most contrasting word” questions
+  * widely-used, publicly available dataset (Mohammad+ 2008)
+  * the highest performance seen [before Ono+ NAACL 2015] on this dataset
+  * our best result relying solely on lexical resources (Roget’s and WordNet)
 
 # Intro
 
-* Lexical contrast [modeled] (Lin and Zhao, 03; Mohammad+ 08; Mohammad+ 13).
+* Lexical contrast [modeled] (Lin and Zhao, 03; Mohammad+ 08; Mohammad+ 13)
 * embedding spaces, leading to stateof-the-art performances. For example,
   * Yih+ (2012)
     * polarity-primed LSA used to initialize a neural network
     * F-score of 81% on the same GRE “most contrasting word” questions
       (Mohammad+ 2008)
     * The Encarta thesaurus [is] used [which] is not publicly available
-    so we did not use it in our experiments.
+    so we did not use it in our experiments
   * Zhang+ (2014) proposed a tensor factorization approach
     * multidimensional semantic information, relations,
       unsupervised data structure information in tensor factorization, and
@@ -66,8 +65,8 @@ Z Chen, W Lin, Q Chen, X Chen, S Wei, H Jiang, X Zhou
   * evaluative (good-bad), potency (strong-weak), and activity(active-passive)
   * We hypothesize that such information should help reconstruct contrasting
     meaning
-  * The General Inquirer lexicon (Stone1966) represents these three factors but
-    has a limited coverage.
+  * The General Inquirer lexicon (Stone 1966) represents these three factors
+    * hE limited coverage
   * We used the algorithm of Turney and Littman (2003) to extend the labels to
     more words with Google one billion words corpus
     * to obtain the evaluative score for a candidate word w, the point-wise

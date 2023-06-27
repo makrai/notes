@@ -5,7 +5,7 @@ ACM Comput Surv 2016
 # Abstract
 
 * studies are categorized according to the approach they follow
-* we discuss fields related
+* we discuss related fields
   * opinion retrieval, tracking sentiments over time, irony detection,
     emotion detection, and tweet sentiment quantification
 * Resources that have been used in the Twitter sentiment analysis literature

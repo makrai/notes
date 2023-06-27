@@ -1,16 +1,16 @@
 Multimodal Language Analysis in the Wild:
-CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph
+  CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph
 A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 
 # Abstract
 
-* multimodal language Analysis is an emerging area of research in NLP. In-
-  * communication is multimodal (heterogeneous), temporal and asynchronous; it
+* multimodal language Analysis is an emerging area of research in NLP
+  * communication is multimodal (heterogeneous), temporal and asynchronous
   * language (words), visual (expressions), and acoustic (paralinguistic)
 * we:
   * CMU-MOSEI, CMU Multimodal Opinion Sentiment and Emotion Intensity
     * the largest dataset of sentiment analysis and emotion recognition to date
-  * novel multimodal fusion technique called the Dynamic Fusion Graph (DFG), we
+  * novel multimodal fusion technique called the Dynamic Fusion Graph (DFG)
     * how modalities interact with each other in human multimodal language
     * highly interpretable and achieves competitive performance to SOTA
 
@@ -18,29 +18,27 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 
 * multimodal language has recently become a centric research direction
   (Hazarika+ 2018; Zadeh+ 2018a; Poria+ 2017a; Baltrušaitis+ 2017; Chen+ 2017)
-
 * dual dynamics of multimodal language:
   * intra-modal dynamics (dynamics within each modality) and
-  * cross-modal dynamics (dynamics across different modalities). However, from
+  * cross-modal dynamics (dynamics across different modalities)
 * datasets have severe shortcomings in the following aspects:
-  * Diversity in the training samples: The diversity in training samples is
-    * crucial due to the complexity of the underlying distribution. This
+  * Diversity in the training samples
+    * crucial due to the complexity of the underlying distribution
     * variability of intra-modal and crossmodal dynamics (Rajagopalan+ 2016)
   * Variety in the topics: Variety in topics opens the door to generalizable
     * language and nonverbal behaviors tend to change based on the impression
       of the topic on speakers’ internal mental state
-  * Diversity of speakers: speaking styles are highly idiosyncratic. Training
+  * Diversity of speakers: speaking styles are highly idiosyncratic
     * overfitting: models learn the identity of speakers (Wang+ 2016)
   * Variety in annotations
-    * multiple labels allows for studying the relations between labels. Another
+    * multiple labels allows for studying the relations between labels
     * multi-task learning which has shown excellent performance in past
-
-* CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI). CMU-MOSEI
-  * 23,453 annotated video segments from 1,000 speakers and 250 topics. Each
+* CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI)
+  * 23,453 annotated video segments from 1,000 speakers and 250 topics
   * manual transcription aligned with audio to phoneme level
-  * All the videos are gathered from online video sharing websites 1 . The
-  * part of the CMU Multimodal Data SDK and is
-  * freely available to the scientific community through Github 2
+  * All the videos are gathered from online video sharing websites
+  * part of the CMU Multimodal Data SDK
+  * freely available to the scientific community through Github
 * an interpretable fusion model called Dynamic Fusion Graph (DFG)
   * cross-modal dynamics visualized and studied in detail in our experiments
   * superior performance compared to previously proposed models
@@ -87,7 +85,7 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 ### 2.1.3 Visual and Acoustic Datasets
 
 * Vera am Mittag (VAM) corpus consists of 12 hours of recordings of the German
-  TV talk-show “Vera am Mittag” (Grimm+ 2008). This audio-visual data is
+  TV talk-show “Vera am Mittag” (Grimm+ 2008)
   * labeled for continuous-valued scale for three emotion primitives VAD
   * VAM-Audio and VAM-Faces are subsets that contain on acoustic and visual
     inputs respectively
@@ -190,8 +188,8 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 
 ## 3.2 Annotation
 
-* Annotation of CMU-MOSEI follows closely the annotation of CMU-MOSI (Zadeh+
-  2016a) and Stanford Sentiment Treebank (Socher+ 2013)
+* Annotation of CMU-MOSEI follows closely the annotation of
+  CMU-MOSI (Zadeh+ 2016a) and Stanford Sentiment Treebank (Socher+ 2013)
   * Each sentence is annotated for
   * sentiment on a [-3,3] Likert scale
   * Ekman emotions (Ekman+ 1980) of {happiness, sadness, anger, fear, disgust,
@@ -235,10 +233,10 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
   (Ekman+ 1980). Extracting these action units allows for accurate tracking and
   understanding of the facial expressions (Baltrušaitis+ 2016)
 * We also extract a set of six basic emotions purely from static faces using
-  Emotient FACET (iMotions, 2017). MultiComp OpenFace (Baltrušaitis+ 2016) is
-  used to extract the set of 68 facial landmarks, 20 facial shape parameters,
-  facial HoG features, head pose, head orientation and eye gaze (Baltrušaitis+
-  2016)
+  Emotient FACET (iMotions, 2017)
+* MultiComp OpenFace (Baltrušaitis+ 2016) is used to
+  extract the set of 68 facial landmarks, 20 facial shape parameters, facial
+  HoG features, head pose, head orientation and eye gaze (Baltrušaitis+ 2016)
 * face embeddings from commonly used facial recognition models such as DeepFace
   (Taigman+ 2014), FaceNet (Schroff+ 2015) and SphereFace (Liu+ 2017)
 

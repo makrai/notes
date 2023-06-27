@@ -15,7 +15,7 @@ Speech Communication, 2020-Elsevier
   * computer games (Szwoch and Szwoch, 2015)
   * psychological assessment
     (Lancker, Cornelius, Kreiman, 1989, Low, Maddage, Lech, Sheeber+, 2011)
-* approaches to model the emotions, and it is still an open problem
+* approaches to model the emotions: still an open problem
   * discrete and the dimensional models are commonly used
   * we first review the emotional models
 * classifier, a supervised learning construct, that will be trained
@@ -40,6 +40,44 @@ Speech Communication, 2020-Elsevier
   * recent classifiers
 
 # 3 emotions
+
+* Emotions are convoluted psychological states that are composed of several
+  components such as personal experience, physiological, behavioral, and com-
+  municative reactions. Based on these deﬁnitions, two models have become
+* Discrete emotion theory is based on the six categories of basic emotions;
+  sadness, happiness, fear, anger, disgust, and surprise, as described by
+  * Ekman and Oster (1979); Ekman+ (2013)
+  * inborn and culturally independent emotions are experienced for a short
+    period (Ekman, 1971)
+  * Other emotions are obtained by the combination of the basic ones
+  * Most of the existing SER systems focus on these basic emotional categories.
+    In daily life, people use this model to deﬁne their observed emotions,
+    hence labeling scheme based on emotional categories are intuitive.
+  * unable to deﬁne some of the complex emotional states observed in communicat
+* Dimensional emotional model is an alternative model that uses
+  * a small number of latent dimensions to characterize emotions such as
+    valence, arousal, control, power
+  * (Russell and Mehrabian, 1977; Watson+ 1988). These dimensions are deﬁnitive
+  * emotions are not independent of each other; instead, they are analogous to
+    each other in a systematic way. One of the most preferred dimensional
+  * eg two-dimensional model that uses
+    * arousal, activation, or excitation on one dimension,
+      * Arousal dimension deﬁnes the strength of the felt emotion
+      * It may be excited or apathetic, and it ranges from boredom to frantic
+        excitement (Nicolaou+ 2011).
+    * versus valence, appraisal, or evaluation on the other.
+      * whether an emotion is positive or negative, and it ranges between
+        unpleasant and pleasant The 
+   * three-dimensional model includes a dimension of dominance or power, which
+     * the seeming strength of the person that is between weak and strong.  For
+     * differentiates anger from fear by considering the strength or weakness
+       of the person, respectively (Grimm+ 2007).
+  * disadvantages for the dimensional representation.  It is
+    * not intuitive enough and special training may be needed for labeling
+      (Zeng+ 2009)
+    * some of the emotions become identical, such as fear and anger, and
+    * some emotions like surprise cannot be categorized and lie outside of the
+      * since surprise may have positive or negative valence 
 
 # 4 databases
 

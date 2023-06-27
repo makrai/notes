@@ -2,13 +2,13 @@ Sentiment Anal: Detecting Valence, Emotions & Other Affectual States from Text
 Saif M. Mohammad
 Emotion Measurement 2015
 
-* term refers to automatically determining,,,
-  * Most commonly: the valence or polarity of a of txt
-  * more generally: one’s attitude towards a particular target or topic.  Here,
+* term refers to automatic detection
+  * Most commonly: the valence or polarity of a txt
+  * more generally: one’s attitude towards a particular target or topic
     * evaluative judgment, such as positive or negative, or an
     * emotional or affectual attitude such as frustration, joy, anger, sadness,
-    * feelings the general category that includes attitude, emotions, moods, and
-      other affectual states
+    * feelings: the general category that includes
+      attitude, emotions, moods, and other affectual states
       * In this chapter, we use ‘sentiment analysis’ in this sense
 * applications of detecting analysing of affectual categories in text
   * Public Health: Automatic methods for detecting emotions are useful in
@@ -67,7 +67,7 @@ Emotion Measurement 2015
       computer-mediated communication. Several studies have analyzed the
     * emotions in language used by men and women in these contexts
       (Grijalva+ 14; Montero, Munezero, & Kakkonen, 14; Mohammad & Yang, 11a)
-  * Literary Analysis: There is growing interest in using automatic natural
+  * Literary Analysis
     * analyze large collections of literary texts. Specifically with respect to
     * tracking the flow of emotions in novels, plays, and movie scripts,
     * detecting patterns of sentiment common to large collections of texts, and
@@ -79,10 +79,10 @@ Emotion Measurement 2015
       entity, emotion, or time-frame of interest, and the system responds to
     * Quan and Ren (2014), Mohammad (2012b), Liu, Selker, and Lieberman (2003b),
       Gobron, Ahn, Paltoglou, Thelwall, and Thalmann (2010) for work on
-* speech: surveys by El Ayadi, Kamel, and Karray (2011) and Anagnostopoulos,
-  Iliou, and Giannoukos (2015) for an overview of emotion detection in speech
+* speech: surveys by El Ayadi, Kamel, and Karray (2011) and
+  Anagnostopoulos, Iliou, and Giannoukos (2015) for an overview of emotion
 * broader intro: Picard (2000) and Alm (2008)
-* SemEval: a twoday workshop, normally held in conjunction with a NLP conference
+* SemEval: a two-day workshop, normally held in conjunction with an NLP conf
 
 # 2 challenges to sentiment analysis
 
@@ -113,4 +113,4 @@ Emotion Measurement 2015
 
 * leveraging the resources in English
 
-# 9, we present future directions
+# 9 future directions

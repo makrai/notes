@@ -4,16 +4,16 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
 
 # Abstract
 
-* need for accurate and near real-time Speech Emotion Recognition (SER) in
+* need for accurate and near real-time Speech Emotion Recognition (SER)
 * compare available methods and databases in SER to achieve feasible solutions
 * The current study reviews deep learning approaches for SER with available
   datasets, followed by conventional machine learning techniques for SER
-  * a multi-aspect comparison between practical neural network approaches in
+  * a multi-aspect comparison between practical neural network approaches
 
 #  4. Emotional Speech Databases
 
 * three types of databases specifically designed for SER,
-  * simulated, semi-natural, and natural speech collections. The
+  * simulated, semi-natural, and natural speech collections
   * simulated datasets are created by trained speakers reading the same text
     with different emotions [54]
   * Semi-natural collections are made by asking people or actors to read a
@@ -23,9 +23,9 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
 * Simulated data sets such as EMO-DB (German) [55], DES (Danish) [56], RAVDESS
   [57], TESS [58], and CREMA-D [59] are standardized collections of emotions,
 * Semi-natural collections of emotions include
-  IEMOCAP [60], Belfast [61], and NIMITEK [62]. This group has the advantage of
+  IEMOCAP [60], Belfast [61], and NIMITEK [62]
 * natural corpora of emotional speech databases such as
-  VAM [39], AIBO [63], and call center data [45,64]. These are entirely
+  VAM [39], AIBO [63], and call center data [45,64]
   * [63] Steidl, S
     AIBO: Automatic Classification of Emotion-Related User States
       in Spontaneous Children’s Speech

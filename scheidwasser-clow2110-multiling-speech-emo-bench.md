@@ -185,7 +185,7 @@ setup instructions, evaluation pipelines & examples, is freely available online
     * pre-training BYOL-A models on only speech samples of AudioSet (BYOL-S)
       led to an almost 3% accuracy improvement compared to the original method
 * future
-  * develop something based on CvT explored here.  Future work should focus on
-  * incorporating more datasets in even more languages into SERAB, as well as
+  * develop something based on CvT explored here
+  * incorporating more datasets in even more languages into SERAB
   * extending the task range to include regression problems
-    eg valence or arousal estimation. To facilitate the usage of SERAB, the
+    eg valence or arousal estimation

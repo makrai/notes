@@ -11,10 +11,10 @@ Journal of Environmental Psychology 60, 112-115
     seasonal, situational, social and salutogenic
     * salutogenic an approach to wellness focusing on health and not on disease
   * main factors involve the length of isolation, occurrence of significant
-    events, contact with outsiders, weather; and experience (i.e., whether they
-    are novices or veterans, Steel and Suedfeld (1991)
-  * individual personality characteristics and adequate coping strategies also
-    play an important role (Palinkas, Suedfeld, and Steel 1995)
+    events, contact with outsiders, weather; and novices vs veteran
+    (Steel and Suedfeld, 1991)
+  * individual personality characteristics and adequate coping strategies
+    also play an important role (Palinkas, Suedfeld, and Steel 1995)
   * emotional stability, psychological well-being, which includes
     mood and morale, anxiety, depression, aggression, hostility,
     life satisfaction, positive psychological outcomes, etc
@@ -29,16 +29,16 @@ Journal of Environmental Psychology 60, 112-115
     during the mid-winter period (Gunderson and Nelson 1963)
   * three-stage model (Rohrer 1961)
   * Gunderson (1973) also found three distinct phases
-* In an early empirical study in Antarctica, Palmai (1963) 
-  * year divided period into four segments and found that
+* In an early empirical study in Antarctica, Palmai (1963)
+  * year divided into four segments and found that
   * The third-quarter saw some further decline in morale,
     reflected also in irritability of the more responsible members
   * Earls (1969) also described a four-quarter general adjustment pattern
     in submarine crews
 * In 1991, Bechtel and Berning coined the term “third-quarter phenomenon,”
   though, originally only “for the sake of convenience”
-  * empirical support of the model: Harrison & Connors,84,
-    Stuster, Bachelard, & Suedfeld,00, Sandal,00, and Décamps & Rosnet,05
+  * empirical support of the model: Harrison & Connors 84,
+    Stuster, Bachelard, & Suedfeld 00, Sandal 00, and Décamps & Rosnet 05
   * hE, Steel and Suedfeld found no evidence of this pattern of emotionality
     (Steel, 2001; Steel & Suedfeld, 1991)
 
@@ -61,53 +61,52 @@ Journal of Environmental Psychology 60, 112-115
 ## 1.3. Aim of the study
 
 * word-based content analysis for exploring and comparing the
-  effect of time on overall and fine-grained patterns of emotionality 
-  * two different winterovering settings in the Antarctica, 
+  effect of time on overall and fine-grained patterns of emotionality
+  * two different winterovering settings in the Antarctica,
     * Concordia and Halley VI
-  * assessed the presence of the third-quarter phenomenon.
+  * assessed the presence of the third-quarter phenomenon
 
 # 4. Discussion
 
-* Concordia and the Halley VI samples: very different emotionality patterns.
+* Concordia and the Halley VI samples: very different emotionality patterns
 * Concordia
-  * Affective Processes, i.e., the overall expression of emotions 
-    gradually decreased with increasing isolation. 
+  * Affective Processes, ie, the overall expression of emotions
+    gradually decreased with increasing isolation
   * Emotional Valence showed an overall declining trend until reaching a nadir
     in the Q3 period, and then it significantly improved in the Q4 period
     * components contributing to this pattern include
       * Positive Emotions, which was diminished in the second half of the
         winter-over season, and
-      * Negative Emotions, particularly Anger, which were both expressed most
-        markedly in the third quarter of the isolation
+      * Negative Emotions, particularly Anger, which were
+        both expressed most markedly in the third quarter of the isolation
       * Otherwise, Anxiety was the highest in Q1 and the lowest in the Q4
-      * Sadness showed no significant changes.
+      * Sadness showed no significant changes
 * Halley VI
-  * no significant changes were observed in any Emotionality Word categories in
+  * no significant changes were observed in any Emotionality Word categories
   * no evidence of the “third-quarter phenomenon”
   * TQP only detectable in Emotional Valence and Negative Emotions,
     particularly Anger, while
-    Positive Emotions, Anxiety, and Sadness showed different patterns. These
+    Positive Emotions, Anxiety, and Sadness showed different patterns
   * literature: the phenomenon is inconsistent
-    (Sandal, Leon, & Palinkas, 2006; Hawkes & Norris, 2017). By demonstrating
+    (Sandal, Leon, & Palinkas, 2006; Hawkes & Norris, 2017)
   * future: the circumstances under which Q3 or any other dynamic pattern is
-    manifested.
+    manifested
 * The novelty of our study is the use of word-based content analysis for
   exploring the emotional patterns and time-effect thereon
   * fine-grained analysis of seven different aspects of emotionality
     (Affectivity, Positive Emotions, Negative Emotions, Emotional Valence,
     Anger, Anxiety, and Sadness) in two ICE samples
-  * Such differences in the emotionality patterns between the two stations may
-    be attributed to multiple factors.
-* A reasonable explanation may pose the possibility that
-  the more isolated a setting (in a possible locational sequence of ships <
-  islands < coastal bases < deep inland bases < remote camps), the more
-  negativity is expressed (see, e.g., Sandal, 2000; Stuster+ 2000).
-* Another important consideration might be
-  the role of cultural differences in the expression and withdrawal of emo.
-  * Pennebaker, Rimé, and Blankenship (1996) found
-    correlations with geographical latitude and the occurrence of emo exp in
-  * increasing from north to south
-  * Palinkas+ (2004) found evidence of cultural variation in changes in both
-    mood and structural and functional characteristics of social dynamics
-    during the winter in Antarctica
-    * The results obtained in our two samples fit these patterns.
+  * Such differences in the emotionality patterns between the two stations
+    may be attributed to multiple factors
+* A/another reasonable explanation
+  * the more isolated a setting, the more negativity is expressed 
+    (ships < islands < coastal bases < deep inland bases < remote camps)
+    (see, eg Sandal, 2000; Stuster+ 2000)
+  * the role of cultural differences in the expression and withdrawal of emo
+    * Pennebaker, Rimé, and Blankenship (1996) found
+      correlations with geographical latitude and the occurrence of emo exp
+    * increasing from north to south
+    * Palinkas+ (2004) found evidence of cultural variation in changes in both
+      mood and structural and functional characteristics of social dynamics
+      during the winter in Antarctica
+      * The results obtained in our two samples fit these patterns
