@@ -26,7 +26,7 @@ arXiv:1901.02839 [cs.HC]
 
 * The standard approach in automatic emotion recognition relies on
   machine learning models trained on a collection of recordings,
-  annotated in terms of different categories or dimensions of affect. As a
+  annotated in terms of different categories or dimensions of affect
 * generalisation ability on new data acquired in different conditions, strongly
   depends on:
 
@@ -69,6 +69,25 @@ arXiv:1901.02839 [cs.HC]
 * ANVIL [33], ATLAS [34], Ikannotate [35], EmoWheel (Geneva emotion wheel)
   [36], FEELtrace [37], Gtrace 1 , ANNEMO [38], and the frame by frame
   Valence/Arousal Online Annotation Tool [39]
+  * ANVIL: The Video Annotation Research Tool
+    http://www.anvil-software.de
+    ANVIL is a free video annotation tool, developed by Michael Kipp. It offers
+    * multi-layered annotation based on a user-defined coding scheme.
+  * Atlas Annotation documentation
+    https://atlas-annotation.readthedocs.io
+    This package proposes a number of methods for deforming the Nissl volume
+    and the CCFv2 annotations in order to re-align them to CCFv3. Contents.
+  * github ilyabo/annemo: A simplistic web app for annotating ...
+    A simplistic web app for annotating emotions in human speech video
+  * Valence/Arousal Online Annotation Tool - iBUG group
+    https://ibug.doc.ic.ac.uk › resources › valencearousal-...
+    This tool, written in Python as a Flask application backed with a MongoDB,
+    * allows any number people to annotate video clips per-frame, for valence
+      and arousal
+  * ikannotate: top hits lead to the paper
+  * EmoWheel: top hits are not computational
+  * FEELtrace: The participants in a test or experiment use a computer to
+    continuously report the emotion they perceive. They can move a cursor in a
 * creating the unified gold standard from a set of annotations,
   * gold standard != ‘ground-truth’, which is avoided for affective computing
   * no truth on a subjective feeling such as emotion

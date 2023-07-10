@@ -22,18 +22,19 @@ https://github.com/Helsinki-NLP/XED
   * parallel manually annotated data for English and Finnish, with additional
     parallel datasets of varying sizes for a total of 32 languages created by
     annotation projection
-  * We use Plutchik (1980)’s Wheel of Emotions (anger, anticipation, disgust,
-    fear, joy, sadness, surprise, trust) as our annotation scheme
+  * We use Plutchik (1980)’s Wheel of Emotions  as our annotation scheme
+    (anger, anticipation, disgust, fear, joy, sadness, surprise, trust)
     with the addition of neutral
     on movie subtitle data from OPUS (Lison and Tiedemann, 2016)
 * evaluations with
   * fine-tuned cased multilingual and language specific BERT
   * Suport Vector Machines (SVMs)
   * show that
-    * the human-annotated datasets behave on par with comparable SOTA datasets such
-      as the GoEmotions dataset (Demszky+ 2020). Furthermore,
-    * the projected datasets have accuracies that closely resemble
-      human-annotated data with macro f1 scores of
+    * the human-annotated datasets behave on par with comparable SOTA datasets
+      eg the GoEmotions dataset (Demszky+ 2020)
+    * the projected datasets have accuracies that
+      closely resemble human-annotated data
+      with macro f1 scores of
       0.51 for the human annotated Finnish data and
       0.45 for the projected Finnish data when evaluating with FinBERT
       (Virtanen+ 2019)
@@ -93,8 +94,8 @@ https://github.com/Helsinki-NLP/XED
 * Movie subtitles annotated out of sequence have virtually no context to aid
   the annotator and are supposed to be accompanied by visual cues as well
   * annotating with context can reduce the accuracy of one’s model
-    by doubly weighting surrounding units of granularity (roughly ’sentences’
-    in our case, Boland+ 2013)
+    by doubly weighting surrounding units of granularity
+    (roughly ’sentences’ in our case, Boland+ 2013)
   * On the other hand,
     contextual annotations are less frustrating for the annotator and
     => likely provide more annotations in the same amount of time (Öhman, 2020)

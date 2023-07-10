@@ -73,7 +73,7 @@ LREC 2020
   dataset of textual dialogues annotated for
   * four classes: happy, sad, anger and others
 * TEC (Mohammad, 2012) is a large dataset of more than 20,000 emotion-labeled
-  tweets automatically label using hashtags. The set of labels includes
+  tweets automatically label using hashtags
   * six basic emotions: anger, disgust, fear, joy, sadness, and surprise
 * EmoTweet28 (Liew+ 2016) is a corpus
   * four sampling strategies based on random sampling by topic and user

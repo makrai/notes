@@ -29,7 +29,7 @@ ACL long 2018
 
 * factor analysis studies
   * the three most important, largely independent,
-    * valence (positiveness–negativeness/pleasure– displeasure)
+    * valence (positiveness–negativeness/pleasure–displeasure)
     * arousal (active–passive)
     * dominance (dominant–submissive)
   * (Osgood+ 1957; Russell, 1980, 2003)
