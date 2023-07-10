@@ -29,15 +29,15 @@ Artificial Intelligence Review (2021)
   * Discrete representations place emotions into finite categories. Prominent
     * agreed that emotions arose due to how individuals perceived events, and
       those emotions varied according to their degree of intensity
-    * Ekman (1999) places emotions into six basic categories, ie, happiness,
-      sadness, anger, disgust, surprise, and fear. Ekman posited that
+    * Ekman (1999) places emotions into six basic categories, ie,
+      happiness, sadness, anger, disgust, surprise, and fear
       * these emotions are independent of each other, basic, and can produce
         complex emotions by combinations
     * Plutchik (1980)
       * like Ekman, primary emotions, and their combinations: complex emotions
       * hE 8 primary emotions instead of 6 by Ekman which occured
         * in opposite pairs. The 8 primary emotions as proposed by Plutchik
-        * joy--sadness, trust--disgust, anger--fear and surprise--anticipation
+        * joy--sadness, trust--det uÉssgust, anger--fear and surprise--anticipation
     * Orthony, Clore, and Collins (OCC) disagreed with the analogy of ’basic
       emotions’ as presented by Ekman and Plutchik. They discretized emotions
       * 22 emotions, adding 16 emotions to Ekman's essential ones, thus
@@ -46,15 +46,15 @@ Artificial Intelligence Review (2021)
         fears-confirmed, grief, gratification, gloating, like and dislike
         (Ortony+ 1990)
   * dimensional models place emotions into a uni~ or multi-dimensional space
-    * The spatial order depicts the relationship between emotions and their
-      relative degree of occurrence
-    * Circumplex of Affect proposed by Russell (1980) is a profound example of
+    * The spatial order depicts the relationship between emotions and
+      their relative degree of occurrence
+    * Circumplex of Affect proposed by Russell (1980) is a profound example
       * 2-dimensional circular wheel in an arousal-valence domain
-    * Russell and Mehrabian (1977) also presented a 3-D emotional model made up
+    * Russell and Mehrabian (1977) also presented a 3-D emotional model
       * valence, arousal, and dominance with
-        valence differentiating emotions by pleasantness and unpleasantness,
-        arousal differentiating emotions by activations and deactivations, and
-        dominance: the degree to which experiencers control their emotions
+        * valence differentiating emotions by pleasantness and unpleasantness,
+        * arousal differentiating emotions by activations and deactivations,
+        * dominance: the degree to which experiencers control their emotions
     * The Hourglass of Emotions revisited model presented by Susanto+ (2020) is
       * an improvement over the original Hourglass of Emos by Cambria+ (2012)
       * both classify unknown concepts based on known features
@@ -74,12 +74,12 @@ Artificial Intelligence Review (2021)
         * 94.72%, 93.29%, and 89.85% for the Blitzer, Pang and Lee, and Amazon
       * Figure 1 illustrated the revised hourglass model
 * The approaches for recognizing emotions from texts as
-  * outlined by Acheampong+ (2020) inferred that Machine learning approaches
+  * outlined by Acheampong+ (2020)
   * SOTA: deep learning techniques in the lead
-  * remaining issues: However, there remained the hurdle of adequate knowledge
-    * extracting the relationship between long term dependent texts the
+  * remaining issues with deep learning
+    * extracting the relationship between long term dependent texts
     * parallel processing of text sequence, and the
-    * integration of logical reasoning within these techniques.  The
+    * integration of logical reasoning within these techniques
 
 # 3 The concept of transformers
 

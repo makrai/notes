@@ -1,7 +1,7 @@
 Speech emotion recognition:
   Emotional models, databases, features, preprocessing methods, supporting
   modalities, and classifiers
-MB Akçay, K Oğuz 
+MB Akçay, K Oğuz
 Speech Communication, 2020-Elsevier
 
 # 1 Intro
@@ -50,9 +50,9 @@ Speech Communication, 2020-Elsevier
   * inborn and culturally independent emotions are experienced for a short
     period (Ekman, 1971)
   * Other emotions are obtained by the combination of the basic ones
-  * Most of the existing SER systems focus on these basic emotional categories.
-    In daily life, people use this model to deﬁne their observed emotions,
-    hence labeling scheme based on emotional categories are intuitive.
+  * Most of the existing SER systems focus on these basic emotional categories
+    * In daily life, people use this model to deﬁne their observed emotions,
+    hence labeling scheme based on emotional categories are intuitive
   * unable to deﬁne some of the complex emotional states observed in communicat
 * Dimensional emotional model is an alternative model that uses
   * a small number of latent dimensions to characterize emotions such as
@@ -63,21 +63,21 @@ Speech Communication, 2020-Elsevier
   * eg two-dimensional model that uses
     * arousal, activation, or excitation on one dimension,
       * Arousal dimension deﬁnes the strength of the felt emotion
-      * It may be excited or apathetic, and it ranges from boredom to frantic
-        excitement (Nicolaou+ 2011).
-    * versus valence, appraisal, or evaluation on the other.
+      * It may be excited or apathetic, and it
+        ranges from boredom to frantic excitement (Nicolaou+ 2011)
+    * versus valence, appraisal, or evaluation on the other
       * whether an emotion is positive or negative, and it ranges between
-        unpleasant and pleasant The 
+        unpleasant and pleasant The
    * three-dimensional model includes a dimension of dominance or power, which
      * the seeming strength of the person that is between weak and strong.  For
      * differentiates anger from fear by considering the strength or weakness
-       of the person, respectively (Grimm+ 2007).
-  * disadvantages for the dimensional representation.  It is
-    * not intuitive enough and special training may be needed for labeling
+       of the person, respectively (Grimm+ 2007)
+  * disadvantages for the dimensional representation
+    * not intuitive enough and special training may is needed for labeling
       (Zeng+ 2009)
     * some of the emotions become identical, such as fear and anger, and
     * some emotions like surprise cannot be categorized and lie outside of the
-      * since surprise may have positive or negative valence 
+      * since surprise may have positive or negative valence
 
 # 4 databases
 
@@ -93,15 +93,15 @@ Speech Communication, 2020-Elsevier
   * legal and ethical problems to record and use natural emotions
   * talk-shows, call-center recordings, and similar cases where the involved
     parties are informed of the recording
-    * not contain all emotions and may not reflect the emotions that are felt.
+    * not contain all emotions and may not reflect the emotions that are felt
   * The actual emotion felt by the speaker and emotions perceived by human
     annotators may show differences
 * cultural and language effects on SER
-  * several studies available working on cross-language SER. 
+  * several studies available working on cross-language SER
   * hE, the results show that current systems and features used are not suffic
   * The intonation of emotions on speech among various languages may show diff
 * multiple speech signals, where the SER system has to choose the signal
   * can be handled via a speech separation algorithm in the preprocessing
-  * current systems fail to notice this problem.
+  * current systems fail to notice this problem
 
 # 7 concluding remarks
