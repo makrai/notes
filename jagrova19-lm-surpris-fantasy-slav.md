@@ -1,14 +1,14 @@
-Language models, surprisal and fantasy in Slavic intercomprehension☆\
+Language models, surprisal and fantasy in Slavic intercomprehension\
 Klára Jágrová, Tania Avgustinova, Irina Stenger, Andrea Fischer\
-Computer Speech & Language Volume 53, January 2019, Pages 242-275 
+Computer Speech & Language Volume 53, January 2019, Pages 242-275
 
 # Abstract
 
 * monolingual human language processing, the\
-  predictability of a word given its surrounding sentential context is crucial.
-* receptive multilingualism, it is\
-  unclear to what extent predictability in context interplays with other
-  linguistic factors in understanding a related but unknown language – a
+  predictability of a word given its surrounding sentential context is crucial
+* receptive multilingualism
+  * unclear to what extent predictability in context interplays with other
+    linguistic factors in understanding a related but unknown language
   * called intercomprehension
   * two dimensions influencing processing effort during intercomprehension:
     surprisal in sentential context and linguistic distance. Based on this
@@ -19,12 +19,12 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
   translation
 * orthographic and lexical distances are reliable predictors of linguistic sim
   * we obtain the predictability of words in a sentence\
-  with the help of trigram language models. We find that
+    with the help of trigram language models
   * linguistic distance (encoding similarity) and in-context surprisal
     (predictability in context) appear to be complementary, with
     * neither factor outweighing the other, and that
     * our distinguishing of these two measurable dimensions is helpful in
-      understanding certain unexpected effects in human behaviour.
+      understanding certain unexpected effects in human behaviour
 
 # 1. Introduction
 
@@ -37,9 +37,9 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
   * usually confined to a monolingual setting – one in which the subjects have
     * evaluate the relative difference in processing complexity of various
       formulations that convey effectively the same information
-* We study the mutual intelligibility of Slavic languages and in contrast to
+* We study the mutual intelligibility of Slavic languages
   * not clear to what extent and in what form such psycholinguistic results
-    translate in case of receptive multilingualism.  
+    translate in case of receptive multilingualism
   * a qualitative empirical study into the role of sentential context during
     reading intercomprehension between selected Slavic languages. We\
     hypothesize that both\
@@ -47,13 +47,13 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
     influence the processing effort in reading intercomprehension. To
     investigate the relationship between these two predictors – linguistic
     distance and surprisal – we discuss
-* three different experiments. In the\
+* three experiments
   1. a Croatian (HR) sentence which poses morphosyntactic challenges to Russian
      native speakers was presented to respondents with Slavic native languages
      other than HR. They were asked to translate the given sentence into their
      native language. The results of this experiment indicate that
-    * words which are apparently orthographically transparent may influence
-      translations more than within-context surprisal does.  In a\
+    * words which are apparently orthographically transparent
+      may influence translations more than within-context surprisal does
   2. we presented native readers of Czech (CS) with Polish (PL) sentences and
      elicited translations for these sentences
     * data was gathered in a series of two-person think-aloud experiments
@@ -74,16 +74,15 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
      translation gaps were placed on the words that turned out to be\
      problematic in the think-aloud experiments. The cloze experiments were
      conducted over the website freely accessible at
-     http://intercomprehension.coli.uni-saarland.de/en/.
-
+     http://intercomprehension.coli.uni-saarland.de/en/
 * The main purpose of this study is to present a method for estimating the
   processing difficulty of sentences in reading intercomprehension, using
   statistical LMs
   * The qualitative analysis does not aim to evaluate a statistically
     significant number of stimuli in an experiment, but rather to\
-    investigate why respondents chose certain translations in certain cases.
-    Results from web-based cloze experiments for the same stimuli are added for
-    a quantitative perspective.
+    investigate why respondents chose certain translations in certain cases
+    * Results from web-based cloze experiments for the same stimuli are added for
+    a quantitative perspective
 
 # 6. Summary and discussion
 
@@ -95,12 +94,11 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
     reading intercomprehension experiments
   * We analysed the written answers that were given by the respondents as well
     as the audio recordings of the respondents during a translation task in
-    think-aloud protocol design.
+    think-aloud protocol design
   * Additionally, we evaluated the translations of a number of critical words
     and phrases within the same stimuli sentences that were gathered in
     web-based cloze experiments
-  * We compared the predicted difficulties with the experimental results.
-
+  * We compared the predicted difficulties with the experimental results
 * Overall, the results show that the\
   predictions do not always agree with the actually observed difficulty of the
   stimuli
@@ -109,7 +107,7 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
   * hE high surprisal scores can ruin the intelligibility advantage that
     identical words or words with low orthographic distance actually have. The
   * audio recordings bring further insight into the decoding process than
-    if only the written translations of the respondents were considered.
+    if only the written translations of the respondents were considered
     * Although respondents pronounce the correct translations of words such as
       rektor ‘rector’ or auto ‘car’,\
       they do not trust these obvious words, because, in their opinion,\
@@ -117,15 +115,13 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
       or they are simply surprising because they are used rarely
     * nL readers’ opinions about what does and what does not make sense in
       context can differ and that they do\
-      not always agree with the surprisal scores determined with LMs.
-
+      not always agree with the surprisal scores determined with LMs
 * orthographically distant words with low surprisal scores,\
   surprisal influences readers' performance only to a point until there are
   other linguistic features that can have a more powerful influence on\
   (eg initial letter, neighbourhood density)
   * Knowing how strong the role of context is in these stimuli allows us to\
     draw conclusions about the role of other influencing factors and their domi
-
 * Regarding encoding, our findings suggest that\
   the UID hypothesis does not hold for the translations given by the\
   respondents in the three stimulus sentences:\
@@ -139,8 +135,7 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
     PL stimuli sentences by Czech readers
     * just discussion of certain phenomena influencing intercomprehension in
       certain stimuli and it is an attempt to use LMs in order to describe the
-      role of context in the stimuli and translations thereof.
-
+      role of context in the stimuli and translations thereof
 * further research into the topic of reading intercomprehension of sentences\
   and the role of context
   * instead of absolute surprisal scores, the difference in surprisal to the

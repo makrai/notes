@@ -43,13 +43,13 @@ arXiv:2005.14165 cs.CL
   * single-layer representations using word vectors MCCD13, PSM14 and fed to
   * RNNs with multiple layers of representations and contextual state
     DL15, MBXS17, PNZtY18 (though still applied to task-specific archits)
-  * pre-trained recurrent or transformer language models VSP + 17 have been
+  * pre-trained recurrent or transformer language models VSP+ 17 have been
     directly fine-tuned
     no need for task-specific architectures RNSS18, DCLT18, HR18
 * This last paradigm has led to
   * substantial progress on eg reading comprehension, question answering,
     textual entailment, and many others, and has
-  * new architectures and algorithms RSR + 19, LOG + 19, YDY + 19, LCG + 19
+  * new architectures and algorithms RSR+ 19, LOG+ 19, YDY+ 19, LCG+ 19
 * removing the need for task-specific datasets and fine-tuning is desired
   * practical perspective, the need for a large dataset of labeled examples for
     * a very wide range of possible useful language tasks, e.g
@@ -57,33 +57,32 @@ arXiv:2005.14165 cs.CL
       critiquing a short story
   * spurious false correlations in training data
     * grows with the expressiveness of the model and the narrowness of the
-      training distribution HLW + 20, YdC + 19, MPL19, GSL + 18, NK19
+      training distribution HLW+ 20, YdC+ 19, MPL19, GSL+ 18, NK19
   * humans do not require large supervised datasets to learn most tasks – a
     * eg “please tell me if this sentence describes something happy or sad”
     * allows humans to seamlessly mix together or switch between many tasks and
       * performing addition during a lengthy dialogue. To be broadly useful, we
-* meta-learning in the context of language models means the
-  * model develops a broad set of skills and pattern recognition abilities at
-    training time, and then uses those abilities at inference time to rapidly
-    adapt to or recognize the desired task (illustrated in Figure 1.1)
-  * RWC + 19 attempts to do this via what we call “in-context learning”,
+* meta-learning in the context of language models (Fig 1.1)
+  * training: model develops a broad set of skills and pattern recognition abils
+  * inference: model uses those abilities to rapidly adapt to/recognize task
+  * RWC+ 19 attempts to do this via what we call “in-context learning”,
     using the text input of a pretrained language model as a form of task specf
     * model is conditioned on a natural language instruction and/or a few
       demonstrations of the task
-    * results far inferior to fine-tuning – for example RWC + 19 achieves
-      only 4% on Natural Questions, and even its
-      55 F1 CoQa result is now more than 35 points behind the SOTA
+    * results far inferior to fine-tuning
+      * only 4% on Natural Questions, and even its
+      * 55 F1 CoQa result is now more than 35 points behind the SOTA
 * capacity of transformer language models has increased substantially,
 ```
     100 million parameters RNSS18, to
     300 million parameters DCLT18, to
-  1.5 billion parameters RWC + 19, to
-  8 billion parameters SPP + 19,
- 11 billion parameters RSR + 19, and finally
+  1.5 billion parameters RWC+ 19, to
+  8 billion parameters SPP+ 19,
+ 11 billion parameters RSR+ 19, and finally
  17 billion parameters Tur20
 ```
   * log loss, which correlates well with many downstream tasks,
-    follows a smooth trend of improvement with scale KMH + 20
+    follows a smooth trend of improvement with scale KMH+ 20
   * it is plausible that in-context learning abilities might show similar gains
 * we test in-context learning abilities. Specifically, we evaluate GPT-3 on
   * two dozen NLP datasets, as well as several novel tasks designed to test
@@ -131,7 +130,7 @@ arXiv:2005.14165 cs.CL
 
 ## 2.1 Model and Architectures
 
-* same model and architecture as GPT-2 RWC + 19,
+* same model and architecture as GPT-2 RWC+ 19,
   * including the modified init, pre-normalization, and reversible tokenization
   * but alternating dense and locally banded sparse attention patterns in the
     layers of the transformer, similar to the Sparse Transformer CGRS19. To
@@ -163,20 +162,20 @@ arXiv:2005.14165 cs.CL
     representations on each respective dataset
   * best (within 3 points of the human baseline) on CoQA [RCM19] a free-form
     conversational dataset and performs
-  * worst (13 F1 below an ELMo baseline) on QuAC [CHI + 18] a
+  * worst (13 F1 below an ELMo baseline) on QuAC [CHI+ 18] a
     * dataset requires modeling structured dialog acts and answer span
       selections of teacher-student interactions. On
-  * DROP [DWD + 19]
+  * DROP [DWD+ 19]
     * dataset testing discrete reasoning and numeracy in the context of reading
       comprehension
     * GPT-3 in a few-shot setting
       * outperforms the fine-tuned BERT baseline from the original paper but is
         still well below both human performance and SOTA approaches which
-        augment neural networks with symbolic systems [RLL + 19]
+        augment neural networks with symbolic systems [RLL+ 19]
   * SQuAD 2.0 [RJL18], GPT-3 demonstrates its few-shot learning capabilities,
     improving by almost 10 F1 (to 69.8) compared to a zero-shot setting. This
     * slightly outperform the best fine-tuned result in the original paper. On
-  * RACE [LXL + 17]
+  * RACE [LXL+ 17]
     * a multiple choice dataset of middle school and high school english exams,
     * GPT-3 performs relatively weakly and is
       only competitive with the earliest work utilizing contextual reprs and is
@@ -236,7 +235,7 @@ arXiv:2005.14165 cs.CL
 * On RTE, only the largest version of GPT-3 performs better than random (56%)
   * few-shot setting: GPT-3 performs similarly to a single-task fine-tuned BERT
     Large
-* Adversarial Natural Language Inference (ANLI) dataset [NWD + 19]. ANLI is a
+* Adversarial Natural Language Inference (ANLI) dataset [NWD+ 19]. ANLI is a
   * a series of adversarially mined natural language inference questions in
     three rounds (R1, R2, and R3)
   * all of our models smaller than GPT-3 perform at almost exactly random
@@ -278,9 +277,9 @@ arXiv:2005.14165 cs.CL
   * RRS20 customize prediction to entities of interest
   * problem with forcing the desired task into a prediction problem, whereas
     ultimately, useful language systems might take goal-directed actions rather
-  * grounding in other domains, such as video or real-world phys (BHT + 20)
+  * grounding in other domains, such as video or real-world phys (BHT+ 20)
   * augmentation of self-supervised prediction with a different approach
-    * learning the objective function from humans (ZSW + 19a)
+    * learning the objective function from humans (ZSW+ 19a)
     * fine-tuning with reinforcement learning
     * additional modalities such as images (CLY+ 19)
 * poor sample efficiency during pre-training
