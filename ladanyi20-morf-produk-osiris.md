@@ -189,8 +189,7 @@ tartalom 16 (11)
     egy borokat áruló üzlet, hanem egy étterem neve
     * n e k tá riu m növényrész, a hagym áriu m növénynév, mindkettő biológiai
       szakszó
-    * sch w a jd á riu m (Schwajda György nevéből) a Nemzeti Színház ironikus
-      megnevezése; a
+    * schwajdárium (Schwajda György nevéből) a Nemzeti Színház ironikus megnev
     * Trebi-skatulyárium a szövegösszefüggés alapján valószínűleg 'Trebi
       szerinti beskatulyázás’
   * Az első csoport sémáját követő képzés lehetséges alapszavai az áru-, étel-
@@ -285,7 +284,7 @@ tartalom 16 (11)
     tandor-izmus, döbrög-izmus, lakitelk-izmus, vasgárd-izmus
   * a második jelentésre épülő új, harmadik jelentésben:
     ’egyfajta mentalitás: valamilyen felfogáshoz vagy életformához való erős
-    kötődés (ironikus konnotációval)’. Ebben a jelen­ tésben köznevekhez járul
+    kötődés (ironikus konnotációval)’. Ebben a jelentésben köznevekhez járul
     * (7) hord-izmus («horda), család-izmus, kutatóprogram-izmus, pógár-izmus
       (♦polgár), prol-izmus («proli)
     * az ironikus jelen­ téstartalom abból adódik, hogy a követett fel­

@@ -8,8 +8,8 @@ Model repository: https://github.com/ marcopoli/AlBERTo-it
 
 * AlBERTo is focused on the language used in Twitter
 * evaluated AlBERTo on the EVALITA 2016 task SENTIPOLC (SENTIment POLarity
-  Classification) obtaining SOTA results in subjectivity, polarity and irony
-  detection on Italian tweets
+  Classification) 
+  * SOTA in subjectivity, polarity and irony detection on Italian tweets
 
 # 1 Related work
 
