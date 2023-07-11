@@ -1,5 +1,5 @@
-J Sedoc, D Wijaya, M Rouhizadeh, A Schwartz, L Ungar
 Deriving Verb Predicates By Clustering Verbs with Arguments
+J Sedoc, D Wijaya, M Rouhizadeh, A Schwartz, L Ungar
 arXiv preprint arXiv:1708.00416
 
 # Abstract
@@ -7,10 +7,10 @@ arXiv preprint arXiv:1708.00416
 * Verb classes
   * Hand-built verb clusters such as Levin classes (Levin, 1993)
     * useful, but have limited coverage
-  * automatically induced from corpus data such as
-    e.g. VerbKB (Wijaya, 2016), on the other hand, can give clusters with much
+  * automatically induced from corpus data
+    * eg VerbKB (Wijaya, 2016)
 * We present a method for clustering the outputs of VerbKB
-  * e.g. "marry(person, person)", "feel(person, emotion)."
+  * eg "marry(person, person)", "feel(person, emotion)"
   * make use of a novel low-dimensional embedding of verbs and their arguments
   * the same verb can be in different clusters depending on its argument type
   * eval in predicting sarcasm, sentiment, and locus of control in tweets
@@ -39,7 +39,7 @@ arXiv preprint arXiv:1708.00416
 
 ## Verb Clustering
 
-* applications including e.g.,
+* applications including eg
   * metaphor detection (Shutova+ 2010)
   * semantic role labeling (Palmer+ 2010)
   * language acquisition (Hartshorne+ 2016)
@@ -53,7 +53,7 @@ arXiv preprint arXiv:1708.00416
     * large-scale, automatically induced from ClueWeb (Callan+ 2009). Unlike
     * semantically typed verbs: verbs (+ prepositions) whose
     * types from NELL knowledge base (Carlson+ 2010)
-      e.g., “marry on(person, date)”, “marry(person, person)”
+      eg “marry on(person, date)”, “marry(person, person)”
       * poor coverage for common nouns in NELL KB
     * 65,000 verbs (+prepositions) and outperforms other large-scale verb
     * clusters align well to hand-built verb classes. Unlike these previous

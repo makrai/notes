@@ -1,5 +1,9 @@
 A survey of opinion mining and sentiment analysis
-B Liu, L Zhang
+K Ravi, V Ravi
+Knowledge-Based Systems Volume 89, November 2015, Pages 14-46
+
+not to be confused with a paper with the same title:
+B Liu, L Zhang or
 chapter in Mining text data, 2012 - Springer
 
 # Abstract 415
@@ -45,7 +49,7 @@ chapter in Mining text data, 2012 - Springer
   Document-level SA, sentence-level SA, aspect-based SA, comparative SA and,
   sentiment lexicon acquisition
   * open issues like SA of composition statement, automatic entity recognition,
-    discussion on multi-entity in same review, sarcasm detection and
+    discussion on multi-entity in same review, sarcasm detection, and
     subjectivity classification at finer level
 * Most recently, Medhat+ (2014) presented a survey on
   * feature selection and
@@ -105,4 +109,4 @@ chapter in Mining text data, 2012 - Springer
 
 # 4. discussion..., open issues, and possible applications of sentiment analysis
 
-# 5. concluded in section 5
+# 5. conclusion

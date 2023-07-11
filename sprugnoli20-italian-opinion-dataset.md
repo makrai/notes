@@ -6,8 +6,8 @@ Sprugnoli, Rachele
 
 * MultiEmotions-It: a new linguistic resource for Italian
 * comments to music videos and advertisements posted on YouTube and Facebook
-* manually annotated according to four dimensions: ie,
-  * relatedness, opinion polarity, emotions and sarcasm
+* manually annotated according to four dimensions
+  * ie relatedness, opinion polarity, emotions and sarcasm
   * emotions: we adopted the Plutchik (1980)’s model
     * taking into account both basic and complex emotions, ie dyads
     * Following Plutchik, we take into consideration both the

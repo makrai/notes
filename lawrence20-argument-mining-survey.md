@@ -214,7 +214,7 @@ identify topics where opinions are polarized
       * the links from one unit to the unit that it most directly supports or at
 * Internet Argument Corpus (IAC) (Walker+ 2012) is a corpus for research in
   political debate on Internet forums
-  * annotated for topic, stance, agreement, sarcasm, and nastiness, among
+  * annotated for topic, stance, agreement, sarcasm, and nastiness
   * version 2 (Abbott+ 2016), a collection of corpora for research in political
     * topic annotations, response characterizations (4forums), and stance,
 * The most comprehensive and completely annotated existing collection is the

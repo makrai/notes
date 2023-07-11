@@ -198,21 +198,21 @@ Wiley Interdisciplinary Reviews 2018
 
 * Wang Z, Zhang Y, Lee S, Li S, and Zhou G
   A bilingual attention network for code-switched emotion prediction
-  (COLING 2016)
+  COLING 2016
   * both the monolingual and bilingual contexts
 * Zhou H, Huang M, Zhang T, Zhu X and Liu B
   Emotional chatting machine: with internal and external memory
   arXiv preprint. arXiv:1704.01074, 2017
 * Abdul-Mageed M, Ungar L
   EmoNet: fine-grained emotion detection with gated recurrent NNs
-  (ACL 2017), 2017
+  ACL 2017
 * Felbo B, Mislove A, Søgaard A, Rahwan I, and Lehmann S
-  Using millions of emoji occurrences to learn any-domain representations for
-  detecting sentiment, emotion and sarcasm
-  (EMNLP 2017), 2017
+  Using millions of emoji occurrences to learn any-domain representations
+    for detecting sentiment, emotion and sarcasm
+  EMNLP 2017
 * Gui L, Hu J, He Y, Xu R, Lu Q, and Du J
   A question answering approach to emotion cause extraction
-  (EMNLP 2017), 2017
+  EMNLP 2017
 
 # OTHER RELATED TASKS with deep learning 25
 
