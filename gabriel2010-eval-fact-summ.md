@@ -147,9 +147,9 @@ ACL 2021 Findings arXiv:2010.12834 [cs.CL]
   much lower on news domains when we consider non-entity-based errors
   * with the exception of QAbased metrics, ROUGE-(2/3) and BERTScore,
   * indicating that factuality and standard metrics
-    * while fairly attuned to changes in factual consistency that relate to
+    * fairly attuned to changes in factual consistency that relate to
       entity-based errors
-    * less robust to other types of factual errors
+    * hE less robust to other types of factual errors
 
 ## 5.2 Comparison with Human Evaluation of Model Generations
 
@@ -253,7 +253,7 @@ ACL 2021 Findings arXiv:2010.12834 [cs.CL]
 
 * between contextual embeddings of a source or reference document D and
   candidate summary S i
-* We use BERTScore (Zhang+ 2020), which has been shown to
+* We use BERTScore (Zhang+ 2020)
   * correlate better with human judgements of coherency than standard metrics
     and similarly to n-gram metrics on factual consistency of CNNDM summaries
     (Wang+ 2020)
