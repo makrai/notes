@@ -163,7 +163,7 @@ Findings of EMNLP 2020 arXiv:2010.12421 [cs.CL]
       * sequence tagging (Baldwin+ 2015; Gimpel+ 2018)
       * multimodality (Schifanella+ 2016; Lu+ 2018)
       * codeswitching tasks (Barman+ 2014; Vilares+ 2016)
-    * similar GLUE (Wang+ 2019b) -> SuperGLUE (Wang+ 2019a)
+    * similar: GLUE (Wang+ 2019b) -> SuperGLUE (Wang+ 2019a)
   * biases (Augenstein+ 2017; Wiegand+ 2019)
     * these datasets do not represent their underlying tasks as a whole but
       only a subsample, and therefore contain biases automatic models trained

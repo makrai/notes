@@ -5,14 +5,12 @@ International Journal of Market Research Volume 62, Issue 5
 # Abstract
 
 * Recognizing both literal and figurative meanings is crucial to understanding
-  users’ opinions on various topics or events in social media. Detecting the
-  sarcastic posts on social media has received much attention recently,
+  opinions on various topics or events in social media. Detecting the
   * sarcastic comments in the form of tweets often include positive words that
-    represent negative or undesirable characteristics. The Preferred Reporting
-    Items for Systematic Reviews and Meta-Analyses (PRISMA) statement was used
-    to understand the application of different machine learning algorithms for
-    sarcasm detection in Twitter. Extensive database searching led to the
-    inclusion of
+    represent negative or undesirable characteristics
+    * The Preferred Reporting Items for Systematic Reviews and Meta-Analyses
+      (PRISMA) statement was used to understand the application of different
+      machine learning algorithms for sarcasm detection in Twitter
 * 31 studies classified into two groups:
   * Adapted Machine Learning Algorithms (AMLA) and
   * Customized Machine Learning Algorithms (CMLA).  The review results
@@ -23,7 +21,7 @@ International Journal of Market Research Volume 62, Issue 5
     high prediction accuracy.  Moreover, our result showed that
   * using lexical, pragmatic, frequency, and part-of-speech tagging can
     contribute to the performance of SVM, whereas
-  * both lexical and personal features can enhance the performance of CNN-SVM.
+  * both lexical and personal features can enhance the performance of CNN-SVM
 
 # Introduction
 # Sarcasm detection advantages and implications
@@ -46,4 +44,3 @@ International Journal of Market Research Volume 62, Issue 5
 # Information, rights and permissions
 # Metrics and citations
 # Figures and tables
-
