@@ -15,7 +15,7 @@ EMNLP 2013 October Seattle, Washington, USA SIGDAT 1590–1601
 # Introduction
 
 * no text corpus, regardless of its size, can provide reliable distributional
-  representations for ... phrase or sentence level
+  representations for phrase or sentence level
 * composing the vectors of the words that comprise the sentence
 * two general categories. Following an influential work
   * [what we refer to] as vector mixtures (Mitchell and Lapata, 2008)
@@ -29,7 +29,7 @@ EMNLP 2013 October Seattle, Washington, USA SIGDAT 1590–1601
 * common feature: they all rely on ambiguous vector representations
   * for the vector mixture approach
   * [ambiguous] practice has proved suboptimal: Reddy+ (2011) and
-  * Kartsaklis+ (2013) test ... simple multiplicative and additive models using
+  * Kartsaklis+ (2013) test simple multiplicative and additive models using
     * disambiguation step prior to actual composition can [increase the qual]
 * [we: how beneficial] for tensor-based approaches, which in general constitute
 Specifically, this paper aims to:
@@ -40,19 +40,19 @@ Specifically, this paper aims to:
 * algorithms
   * Based on the generic procedure of Schütze (1998),
     we propose algorithms for a number of tensor-based models, where the
-    composition is modelled as ... linear maps (tensor contractions)
+    composition is modelled as linear maps (tensor contractions)
 * test
   * Following Mitchell and Lapata (2008) and many others, we test our models on
   * two disambiguation tasks similar to that of Kintsch (2001), and on the
   * phrase similarity task introduced in (Mitchell and Lapata, 2010)
 * results show that disambiguation can make a great difference in the case of
   tensor-based models; they also
-  * reconfirm previous findings ... for simple vector mixture models
+  * reconfirm previous findings for simple vector mixture models
 
 # 2 Vectors vs tensors
 
 * a compositional approach based on linear maps, tensor-based models
-  * e.g., one can consider building linear maps for prepositions and logical
+  * eg one can consider building linear maps for prepositions and logical
     words, rather than treating them as noise and discard them, as common
 
 # 3 Disambiguation in vector mixtures 3
@@ -72,14 +72,14 @@ Specifically, this paper aims to:
 # 5 Creating verb tensors 4
 
 * [Now we review proposals for] constructing tensors for relational words
-  in ... the frameworks of Coecke+ (2010) and Baroni and Zamparelli (2010),
+  in the frameworks of Coecke+ (2010) and Baroni and Zamparelli (2010),
 
 ## Relational
 
 * Following ideas from the set-theoretic view of formal semantics,
   Grefenstette and Sadrzadeh (2011a) suggest that the meaning of a
-  relational word should be represented as the sum of its arguments. The
-  * e.g. meaning of adjective ‘red’ ... becomes the sum of the vectors of all
+  relational word should be represented as the sum of its arguments
+  * eg meaning of adjective ‘red’ becomes the sum of the vectors of all
     the nouns that ‘red’ modifies in the corpus
   * relational words of any arity [are the sum of] the tensor product of their
     arguments. So for a transitive verb we have:
@@ -89,8 +89,7 @@ Specifically, this paper aims to:
 ## Kronecker
 
 * Grefenstette and Sadrzadeh (2011b) proposes the creation of a
-  verb matrix as the Kronecker product of the verb’s contextual vector with
-  itself
+  verb mx as the Kronecker product of the verb’s contextual vector with itself
 * sentence space is of order 2
 
 ## Frobenius
@@ -134,7 +133,7 @@ Specifically, this paper aims to:
 * adopted by Mitchell and Lapata (2008) and others for evaluating the quality
   of composition in vector spaces. Given an ambiguous verb such as ‘file’, the
   goal is to find out to what extent the presence of an appropriate context
-  will disambiguate its intended meaning. The context (e.g. a subject/object
+  will disambiguate its intended meaning. The context (eg a subject/object
   pair) is composed with
 * two landmark verbs corresponding to the different senses (‘smooth’ and
   ‘register’) to create simple sentences. The assumption is that a good
@@ -142,15 +141,15 @@ Specifically, this paper aims to:
   is closer to ‘woman registers application’ than to ‘woman smooths
   application’
 * we test our models on two different datasets of transitive sentences, that of
-  * Grefenstette and Sadrzadeh (2011a) and
+  * Grefenstette and Sadrzadeh (2011a)
     * verbs and their alternative meanings have been selected automatically
       using the JCN metric of semantic similarity (Jiang and Conrath, 1997)
-    * many verbs cannot be considered as genuinely ambiguous (e.g. ‘say’ with
+    * many verbs cannot be considered as genuinely ambiguous (eg ‘say’ with
       meanings state and allege or ‘write’ with meanings publish and spell)
   * Kartsaklis+ (2013) 4
     * selection was based on human judgements
       from the work of Pickering and Frisson (2001). So, while 4
-    * landmarks ... correspond to clearly separated senses (e.g. ‘file’ with
+    * landmarks correspond to clearly separated senses (eg ‘file’ with
       meanings register and smooth or ‘charge’ with meanings accuse and bill)
     * subjects and objects of this latter case are modified by appropriate
       adjectives
@@ -175,19 +174,19 @@ Specifically, this paper aims to:
     interaction with the context, is sufficient to provide the best score
   * composition of the verb with the context decreases performance,
     confirming the results reported by Kartsaklis+ (2013)
-    * task ... is designed around the ambiguity of the verb, this result is not
+    * task is designed around the ambiguity of the verb, this result is not
     * no composition is necessary for this task to be successful
 * However, when one use[s this task] to evaluate compositional models
   * implicitly correlate the strength of the disambiguation effect that takes
     place during the composition with the quality of composition, essentially
   * assuming that the stronger the disambiguation, the better the compositional
     model that produced this side-effect. Unfortunately, the extent to which
-  * this ... is still not quite clear (Kartsaklis+ 2013). Keeping a note of
+  * this is still not quite clear (Kartsaklis+ 2013). Keeping a note of
 
 ## 8.2 Phrase/sentence similarity task
 
 * does not use disambiguation as a criterion of composition
-* based on ... Mitchell and Lapata (2010). On the contrary with the task of
+* based on Mitchell and Lapata (2010). On the contrary with the task of
 * We work on the verb-phrase part of the dataset, consisting of
   72 short verb phrases (verb-object structures). These 72 phrases have been
 * groups exhibiting various degrees of similarity:
@@ -196,7 +195,7 @@ Specifically, this paper aims to:
 ### Verb phrases It can be shown that
 
 * for simple verb phrases the relational model reduces itself to the copy-subj
-* effects of disambiguation ... are quite impressive
+* effects of disambiguation are quite impressive
 * [w]hat benefit the most from disambiguation are the vector mixtures; both
 
 ### Transitive sentences
@@ -230,14 +229,14 @@ Specifically, this paper aims to:
   in the phrase/sentence similarity task
   This observation is really interesting, since the words of that dataset were
   not selected in order to be ambiguous in any way. The superior performance of
-* We believe ... that the automatic selection of landmark verbs using the JCN
+* We believe that the automatic selection of landmark verbs using the JCN
   metric (as done with the G&S dataset) was not very efficient
-* less conclusive for ... the comparison of the two classes of models. Despite
+* less conclusive for the comparison of the two classes of models. Despite
   * vector mixture models might constitute a hard-to-beat baseline;
   * similar observations have been made [by] Blacoe and Lapata (2012). However,
 * implies that the effectiveness of each method depends to some extent on the
   length of the text segment:
-  when more words are involved, vector mixture models ... less effective; on
+  when more words are involved, vector mixture models less effective; on
   * performance of tensor-based models seems to be proportional to the length
 
 # 10 Conclusion and future work 10

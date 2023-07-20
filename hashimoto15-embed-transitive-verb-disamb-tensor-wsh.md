@@ -18,7 +18,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 
 * representing the meaning of transitive verb phrases
   (Grefenstette and Sadrzadeh, 2011; Grefenstette+ 2013; Kartsaklis+ 2012)
-* The meaning of a transitive verb is often ... disambiguated by its arguments,
+* The meaning of a transitive verb is often disambiguated by its arguments,
 * capturing the meanings of transitive verb phrases is useful in
   * semantic retrieval (Miyao+ 2006) and
   * question answering (Who did What to Whom?; Srihari and Li, 2000)
@@ -42,8 +42,8 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 * We evaluate our method using a widely-used verb disambiguation task and
   three phrase similarity tasks
   * disambiguation dataset provided by Grefenstette and Sadrzadeh (2011), we
-    have achieved a Spearman’s rank correlation score of 0.614, which is
-    significantly higher than the state of the art (0.456)
+    * Spearman’s rank correlation score of 0.614, which is
+    * significantly higher than the state of the art (0.456)
 
 # 2 Method 2
 
@@ -88,7 +88,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 
                  `tanh(w_s ⊙ s(j) + w_v ⊙ v(i) + w_o ⊙ o(k))`
 
-    where w_s, w_v, w_o ∈ R^{d×1} are the weight vectors ... for composition
+    where w_s, w_v, w_o ∈ R^{d×1} are the weight vectors for composition
     and s(j), v(i), o(k) ∈ R^{d×1} are the embeddings
 
 # 4 Results and Discussion 6
@@ -101,7 +101,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 
 * We evaluated the learned embeddings of transitive verbs using
   * a transitive verb _disambiguation_ task and
-  * 3 tasks for ... the semantic _similarity_ between transitive verb phrases
+  * 3 tasks for the semantic _similarity_ between transitive verb phrases
 
 #### Transitive verb disambiguation 7
 
@@ -116,7 +116,7 @@ Learning embeddings for transitive verb disambiguation by implicit tensor factr
 
 #### Transitive verb phrase similarity
 
-The other datasets are
+* The other datasets are
   * ML’10 provided by Mitchell and Lapata (2010),
     * pairs of verb-object phrases and
   * KS’13 provided by Kartsaklis and Sadrzadeh (2013)
@@ -144,8 +144,8 @@ The other datasets are
 # 5 Related Work 9
 
 * representing transitive verb phrases using word embeddings
-  (Grefenstette and Sadrzadeh, 2011; Hashimoto+ 2014; Kartsaklis+ 2012;
-   Tsubaki+ 2013)
+  * Grefenstette and Sadrzadeh, 2011; Hashimoto+ 2014; Kartsaklis+ 2012;
+    Tsubaki+ 2013
 * Grefenstette and Sadrzadeh (2011) presented a method for
   calculating a verb matrix using pre-trained word embeddings of its args
   * then composition functions for the verb matrices and the noun embeds

@@ -1,4 +1,4 @@
-Dimitri Kartsaklis (University of Oxford), Mehrnoosh Sadrzadeh (Queen Mary
+Dimitri Kartsaklis, Mehrnoosh Sadrzadeh
 A Study of Entanglement in a Categorical Framework of Natural Language
 QPL 2014, arXiv:1412.8102
 
@@ -37,12 +37,12 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
 * Abramsky and Coecke [1]
   * provide a structural proof for a class of quantum protocols,
   * essentially recasting the vector space semantics of quantum mechanics
-  * compact closed categories applicable to ... corpus linguistics. Here,
-  * Coecke+ [4] ... unify two seemingly orthogonal semantic models of nat lang
+  * compact closed categories applicable to corpus linguistics. Here,
+  * Coecke+ [4] unify two seemingly orthogonal semantic models of nat lang
     * a syntax-driven compositional approach as expressed by Lambek [15] and
     * distributional models of meaning based on vector spaces.  The latter
       * do not scale up to larger text constituents such as phrases and sents
-* unification ... based on the fact that both a type logic expressed as a
+* unification based on the fact that both a type logic expressed as a
   pregroup [15] and finite dimensional vector spaces share a compact closed
   structure; so in principle there exists a way to express a grammatical
   derivation as a morphism that defines mathematical manipulations between
@@ -53,8 +53,8 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
 * words with relational types, such as adjectives or verbs, live in tensor
   product spaces of higher order
   * These tensors act on their arguments by tensor contraction, a
-    generalization of ... matrix multiplication
-* tensor ... should be entangled to allow for a so called ‘flow of information’
+    generalization of matrix multiplication
+* tensor should be entangled to allow for a so called ‘flow of information’
   (a terminology borrowed from categorical quantum mechanics [1]) among the
   meanings of words in a phrase or sentence. Otherwise, parts of the meaning of
   these words become isolated from the rest, leading to unwanted consequences
@@ -83,7 +83,7 @@ http://www.cs.ox.ac.uk/activities/compdistmeaning/
 * ukWaC corpus [5], originally using as a basis the
 * 2,000 content words with the highest frequency ([minus] stop words)
 * 5-word window from either side of the target word, whereas
-* for ... weighting scheme we used local mutual information
+* for weighting scheme we used local mutual information
   (i.e.  point-wise mutual information multiplied by raw counts). The
 * vector space was normalized and projected onto a 300-dimensional space using
 

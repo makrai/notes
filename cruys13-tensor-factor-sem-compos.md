@@ -1,5 +1,5 @@
-Tim Van de Cruys, Thierry Poibeau, Anna Korhonen
 A Tensor-based Factorization Model of Semantic Compositionality
+Tim Van de Cruys, Thierry Poibeau, Anna Korhonen
 naacl 2013
 
 # Abstract

@@ -1,6 +1,6 @@
-Edward Grefenstette and Mehrnoosh Sadrzadeh.
 Experimental support for
   a categorical compositional distributional model of meaning
+Edward Grefenstette and Mehrnoosh Sadrzadeh
 EMNLP 2011
 
 http://www.cs.ox.ac.uk/activities/compdistmeaning/GS2011data.txt

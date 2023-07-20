@@ -102,8 +102,8 @@ Distributional Semantics
 * Cosine similarity
 * Both fulladd and lexfunc perform significantly better than stem
 * forms containing the “negative” affixes "-less", "un-" and "in-"
-*   * modeling negation is a challenging task for DSMs (Mohammad+
-  * 2013) as well as cDSMs (Preller and Sadrzadeh, 2011)
+  * modeling negation is a challenging task for
+    DSMs (Mohammad+ 2013) as well as cDSMs (Preller and Sadrzadeh, 2011)
 
 # Experiment 2: Comparing the quality of corpus-extracted and compositionally
 

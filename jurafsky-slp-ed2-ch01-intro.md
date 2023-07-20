@@ -225,11 +225,11 @@ Daniel Jurafsky and James H. Martin
 
 * the automaton and probabilistic or information-theoretic models
 * automaton arose in the 1950s
-  out of Turing’s (1936) model of algorithmic computation, considered by many
+  out of Turing’s (1936) model of algorithmic computation
   * the foundation of modern computer science
   * McCulloch-Pitts neuron (McCulloch and Pitts, 1943), a simplified model of
     the neuron as a kind of computing element that could be described in terms
-    of propositional logic, and then to the work of
+    of propositional logic
   * Kleene (1951, 1956) on finite automata and regular expressions
   * Shannon (1948) applied probabilistic models of discrete Markov processes to
     automata for language
