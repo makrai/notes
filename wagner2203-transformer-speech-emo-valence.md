@@ -6,15 +6,15 @@ arXiv:2203.07378 [eess.AS]
 # Abstract
 
 * transformer-based architectures which are pre-trained in self-supervised
-* audio domain, such architectures have also been successfully utilised in the
+* audio domain: such architectures have also been successfully utilised
 * hE not evaluated the influence of model size and pre-training data on
   downstream performance, and have shown limited attention to
-  * generalisation, robustness, fairness, and efficiency. The present
+  * generalisation, robustness, fairness, and efficiency
 * we: a thorough analysis of these aspects on several pre-trained variants of
   wav2vec 2.0 and HuBERT that we
   * fine-tuned on the dimensions arousal, dominance, and valence of
     MSP-Podcast, while additionally using
-  * IEMOCAP and MOSI to test cross-corpus generalisation. To the best of our
+  * IEMOCAP and MOSI to test cross-corpus generalisation
 * new SOTA performance for valence prediction without explicit linguistic info,
   * unlike recent multimodal approaches that explicitly utilise textual info
   * concordance correlation coefficient (CCC) of .638 on MSP-Podcast
@@ -22,7 +22,7 @@ arXiv:2203.07378 [eess.AS]
   * more robust to small perturbations compared to a CNN-based baseline and
   * fair with respect to biological sex groups, but
   * not fair towards individual speakers.  Finally, we are the first to show
-* success on valence is based on implicit linguistic information learnt during
+* success on valence is based on implicit linguistic information learnt
 * remaining issues: robustness and individual speaker
 
 # 1 Intro
@@ -53,15 +53,15 @@ arXiv:2203.07378 [eess.AS]
   * eg cross-modal knowledge distillation to increase valence performance [16],
   * speech enhancement or data augmentation to improve robustness [12, 13], and
   * de-biasing techniques to mitigate unfair outcomes [17]. However
-* each of those approaches comes with its own hyperparameters to tune, making
+* each of those approaches comes with its own hyperparameters to tune
 * general-purpose foundation models that can be easily adapted to several use-
-  cases [18]. Typically, these foundation models are
-  * trained on large datasets, often using proxy tasks to avoid dependencies
-    on hard-to-acquire labels, and then
-  * fine-tuned on (small) sets of labelled data for their intended tasks. Such
+  cases [18]. Typically
+  * trained on large datasets, often using proxy tasks
+    to avoid dependencies on hard-to-acquire labels, and then
+  * fine-tuned on (small) sets of labelled data for their intended tasks
   * tremendous success in computer vision [19], NLP [20], and computer audition
     [21, 22] – including SER [23, 24, 25]
-  * speech: wav2vec 2.0 [21] and HuBERT [22] have emerged as foundation model
+  * speech: wav2vec 2.0 [21] and HuBERT [22]
 * best performing model publicly available [26]
   * the first transformer-based dimensional SER model released
   * [an introduction how to use it](https://github.com/audeering/w2v2-how-to)

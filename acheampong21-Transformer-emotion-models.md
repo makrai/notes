@@ -19,7 +19,7 @@ Francisca Adoma Acheampong, Henry Nunoo-Mensah, and Chen Wenyu
   * DistilBERT pre-trained models were necessary proposals for mitigating
 * International Survey on Emotion Antecedents and Reactions (ISEAR) dataset
 
-# II related works,
+# II related works
 
 # III the emotion detection pipeline and the model implementation
 

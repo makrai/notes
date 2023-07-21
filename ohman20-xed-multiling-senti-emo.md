@@ -68,8 +68,12 @@ https://github.com/Helsinki-NLP/XED
   often following Plutchik’s theory of emotions (Plutchik, 1980)
   * A typical emotion dataset consists of 6-8 categories
   * The exception is CrowdFlower with 14 categories, and those
+    * created in 2016 but has since been acquired by different companies at
+      least twice and is now hard to find. It is currently owned by Appen
   * not mentioned in Bostan+ are eg the
     * SemEval 2018 task 1 subtask c dataset (Mohammad+ 2018) with 11 categs,
+      * anger, anticipation, disgust, fear, joy, love, optimism, pessimism,
+        sadness, surprise, trust
     * EmoNet with 24 (Abdul-Mageed and Ungar, 2017), and the
     * GoEmotions dataset (Demszky+ 2020) with 27 categories
 * tweets and granularity
