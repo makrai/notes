@@ -1,5 +1,5 @@
 Word translation without parallel data
-Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
+Alexis Conneau, G Lample, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
 
 * we show that we can build a bilingual dictionary between two languages
   * without using any parallel corpora, by
@@ -34,23 +34,22 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   * recent methods explored distribution-based approach
     * Cao+ (2016) or
       A distribution-based model to learn bilingual word embeddings
-      H Cao, T Zhao, S Zhang, Y Meng - Proceedings of COLING 2016
-    * adversarial training Zhang+ (2017b) ... without any parallel data
+      H Cao, T Zhao, S Zhang, Y Meng ~ Proceedings of COLING 2016
+    * adversarial training Zhang+ (2017b) without any parallel data
     * performance is significantly below supervised methods
-* Our method leverages adversarial training to learn a linear mapping from a
-  * two steps
-    1. discriminator is trained to distinguish between the mapped
-       embeddings and the target embeddings, while the mapping (which can be
-       seen as a generator) is jointly trained to fool the discriminator
-    2. extract a synthetic dictionary from the resulting shared embedding space
-       and fine-tune the mapping with the closed-form Procrustes solution from
-       Schönemann (1966)
-      * unsupervised selection metric
-        * cross-lingual data can not be used ... Since the method is unsupervised,
-        * introduce a ... metric that is highly correlated with the mapping
-          quality and
-        * that we use both as a stopping criterion and
-        * to select the best hyper-parameters
+* Our method leverages adversarial training to learn a linear mapping, 2 steps
+  1. discriminator is trained to distinguish between the mapped
+     embeddings and the target embeddings, while the mapping (which can be
+     seen as a generator) is jointly trained to fool the discriminator
+  2. extract a synthetic dictionary from the resulting shared embedding space
+     and fine-tune the mapping with the closed-form Procrustes solution from
+     Schönemann (1966)
+    * unsupervised selection metric
+      * cross-lingual data can not be used Since the method is unsupervised,
+      * introduce a metric that is highly correlated with the mapping
+        quality and
+      * that we use both as a stopping criterion and
+      * to select the best hyper-parameters
 * main contributions:
   * an unsupervised approach that reaches or outperforms state-of-the-art
     supervised approaches on several language pairs and on
@@ -58,9 +57,9 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
       * word translation,
       * sentence translation retrieval, and
       * cross-lingual word similarity
-  * cross-domain similarity adaptation to mitigate the ...  hubness problem
+  * cross-domain similarity adaptation to mitigate the  hubness problem
     * inspired by the self-tuning method from Zelnik-manor & Perona (2005), but
-    * we ... consider a bi-partite graph for neighbors
+    * we consider a bi-partite graph for neighbors
   * an unsupervised criterion that is highly correlated with the quality of the
     mapping, that can be used both as a stopping criterion and to select the
     best hyper-parameters
@@ -78,11 +77,11 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 # 2. Model
 
-* Xing+ (2015) showed that [Mikolov 13's] results are improved by enforc-
-  ing an orthogonality constraint on W . In that case, the equation (1) boils
-  down to the Procrustes problem, which advantageously offers a closed form
-  solution obtained from the singular value decomposition (SVD) of $Y X^T$
-*  In this paper ... without cross-lingual supervision
+* Xing+ (2015) improved [Mikolov 13's] results by enforcing an
+  orthogonality constraint on W 
+  * In that case, the equation (1) boils down to the Procrustes problem, which
+  * offers a closed form solution obtained from the SVD of `Y X^T`
+*  In this paper without cross-lingual supervision
   * First, we learn an initial proxy of W by using an adversarial criterion
   * Then, we use the words that match the best as anchor points for Procrustes
   * Finally, we improve performance over less frequent words by
@@ -113,9 +112,9 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
   adversarial training. Specifically, we
   * consider the most frequent words and
   * retain only mutual nearest neighbors to ensure a high-quality dictionary
-* Subsequently, we apply the Procrustes solution ... on this ...  dictionary
-  * it is possible to generate a more accurate dictionary and apply this method
-    iteratively, similarly to Artetxe+ (2017)
+* Subsequently, we apply the Procrustes solution on this  dictionary
+  * it is possible to generate a more accurate dictionary and
+    apply this method iteratively, similarly to Artetxe+ (2017)
   * However [one iteration] is already strong
     * improvements [in more iterations] are usually below 1%
 
@@ -123,7 +122,7 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 
 * some [solutions of hubness] being reminiscent of pre-processing already
   existing in spectral clustering algorithms (Zelnik-manor & Perona, 2005)
-* Dinu+ (2015) ... propose a pairing rule based on reverse ranks, and the
+* Dinu+ (2015) propose a pairing rule based on reverse ranks, and the
   inverted soft-max (ISF) by Smith+ (2017), which we evaluate in our
   experimental section. These methods are not fully satisfactory because the
   similarity updates are different for the words of the source and target
@@ -147,12 +146,12 @@ Alexis Conneau†, Guillaume Lample†, Marc’Aurelio Ranzato, Ludovic Denoyer,
 ## 3.2 Discriminator inputs
 
 * we only feed the discriminator with the 50,000 most frequent words
-  * At each training step ...  sampled uniformly
+  * At each training step  sampled uniformly
   * Sampling [according to the] frequency did not have any noticeable impact
 
 ## 3.3 Orthogonality
 
-* orthogonal constraint ... made the training procedure more stable in our
+* orthogonal constraint made the training procedure more stable in our
   experiments
 * we propose to use a simple update step to ensure that the matrix W stays
   close to an orthogonal matrix during training (Cisse+ (2017))

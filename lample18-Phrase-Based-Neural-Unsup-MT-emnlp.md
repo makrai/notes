@@ -96,7 +96,7 @@ arXiv:1804.07755v1 EMNLP 2018
 ## Iterative Back-translation
 
 * back-translation (Sennrich+ 2015a)
-* unsupervised setting[:]
+* unsupervised setting:
   couple the machine translation system with a backward model
 * turns the problem into a supervised learning task with noisy source
 * iterative algorithm (He+ 2016)
@@ -183,11 +183,10 @@ arXiv:1804.07755v1 EMNLP 2018
 
 ### Initialization
 
-* We populate the initial phrase tables in both directions using a [rotation
-  matrix] (Conneau+ 2018)
+* We populate the initial phrase tables in both directions using a rotation mx
+  (Conneau+ 2018)
   * populated with word n-grams
-  * to work at the level of BPEs [(Kunchukuttan and Bhattacharyya, 2016), we
-    leave] to future work
+  * to work at the level of BPEs (Kunchukuttan and Bhattacharyya, 2016): future 
 
 ### Language Modeling
 
@@ -202,7 +201,7 @@ arXiv:1804.07755v1 EMNLP 2018
 * we train a PBSMT in supervised mode to map the generated data back
 * Next, we perform both generation and training process but in the reverse
 * We repeat these steps as many times as desired, see Algorithm 2.
-* at any given point[, the language model may be able to fix some] mistakes
+* at any given point, the language model may be able to fix some mistakes
   * As long as that happens, the translation and the ph tables improve
 
 # 4 Experiments 5

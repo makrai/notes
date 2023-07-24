@@ -19,7 +19,7 @@ naacl 2018
   * effectiveness in certain cross-language NLP tasks (Upadhyay+ 2016)
 * In this study as an extrinsic task: cross-language paraphrase detection task
   * because [both] word similarity and paraphrase detection evaluate
-    semantic modeling (i.e. not ... POS tags, or the ability to cluster words)
+    semantic modeling (i.e. not POS tags, or the ability to cluster words)
 
 # 2 Related Work
 
@@ -32,16 +32,16 @@ naacl 2018
   (Ruder, 2017)
   * [no] empirical analysis
 * works [from] cross-language information retrieval (Braschler+ 2000),
-  * no ... from the position of word embeddings
+  * no from the position of word embeddings
 
 # 3 Problems of Cross-language Evaluation
 
-* ... against human references on any intrinsic task
+* against human references on any intrinsic task
 1. Translation Disagreement
   * two different words with the same translation or with different POS
   * (Camacho-Collados+ 2015)
   * some words could have no translations while some words could have multiple
-  * could be partially avoided if ... the problematic words would be dropped
+  * could be partially avoided if the problematic words would be dropped
     * how the agreement for word dropping of human assessors could be concluded
 2. Scores Re-assessment
   * Some researchers obtain [scores for cross-lingual embeds by] automatically
@@ -50,7 +50,7 @@ naacl 2018
 3. Semantic Fields
   * lexical typology, the meaning of a properly translated word could denote a
     bit different things in a new languages (Ryzhova+ 2016)
-  * dataset ... should consist only of zero valency nouns
+  * dataset should consist only of zero valency nouns
     * more properly linked with real world objects
     * exclude relational nouns (Koptjevskaja-Tamm+ 2015)
     * distinction of words on relational and non-relational ones is fuzzy
@@ -60,11 +60,11 @@ naacl 2018
 
 # 4 Experimental Setup
 
-## 4.1 Distributional Models ... cross-language
+## 4.1 Distributional Models cross-language
 
 1. MSE (Multilingual Supervised Embeddings)
   * Trains using a bilingual dictionary and
-  * learns a mapping ... using Procrustes alignment (Conneau+ 2017)
+  * learns a mapping using Procrustes alignment (Conneau+ 2017)
 2. MUE (Multilingual Unsupervised Embeddings)
    * adversarial training and Procrustes refinement (Conneau+ 2017)
 3. VecMap (Artetxe+ 2018)
@@ -82,7 +82,7 @@ naacl 2018
 
 * three publicly available datasets for cross-language word similarity
   (Camacho-Collados+ 2015, 2017)
-* for Russian, ... we created the crosslanguage datasets ourselves
+* for Russian, we created the crosslanguage datasets ourselves
   * We used
     * 5 English datasets assessed by semantic **S**imilarity of Ns and As (S),
     * 3 datasets assessed by semantic similarity of **V**erbs, and
@@ -93,7 +93,7 @@ naacl 2018
       word of each word pair was English, and the second was Russian), dropped
       certain words pairs according to limitations addressed by us (in the
       Section 2), and
-  * re-assessed ... with the help of 3 English-Russian volunteers, having
+  * re-assessed with the help of 3 English-Russian volunteers, having
     Krippendorff’s alpha 0.5
 
 ### Dictionary Induction (also called word translation)
@@ -108,7 +108,7 @@ naacl 2018
 
 * mutual similarities between datasets
   * measured as Spearman’s rank correlation between evaluation scores
-  * One can see ... at least 4 clusters:
+  * One can see at least 4 clusters:
     extrinsic+SemEval; word relations; word translation+some word similarities;
     others
 
@@ -117,7 +117,7 @@ naacl 2018
 * Our research does not address some
   * evaluation methods (like MultiQVEC (Ammar+ 2016)) and
   * word embeddings models (for instance, Bivec (Luong+ 2015))
-    since Russian do not have enough ... parallel corpora
+    since Russian do not have enough parallel corpora
 * In future we plan
   * other languages
   * cross-language extensions of the analogical reasoning task

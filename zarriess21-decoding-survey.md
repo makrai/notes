@@ -404,9 +404,9 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     in terms of the quality-diversity trade-off, and temperature can be used to
     systematically balance this trade-off
 * nucleus [71] and top-k sampling [99] are well-known decoding diversity methods
-  * sample from truncated language model distributions: In each decoding step, a
-    set of most probable next tokens is determined, from which one item is then
-    randomly selected. They differ, however, in how the distribution is
+  * both sample from truncated language model distributions
+    * In each decoding step, a set of most probable next tokens is determined,
+      from which one item is then randomly selected
   * Top-k sampling always samples from a fixed number of k items
     * The sum of the probabilities of the top k items, p 0 is then used as a
       rescaling factor to calculate the probability of a word in the top-k

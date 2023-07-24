@@ -24,13 +24,12 @@ We compare [to pre-Mikolov] on named entity recognition and movie review tasks
   encode the structural relationships between words
   (Hinton, 1986; Pollack, 1990; Elman, 1991). More recently, a neural network
 * Dimensionality reduction techniques such as Singular Valued Decomposition
-  (SVD) are widely used (e.g. LSA (Landauer and Dumais, 1997), ICA (Väyrynen
-  and Honkela, 2004)). However, word co-occurence statistics are discrete
-  distributions. An information theory measure such as the Hellinger distance
-  seems to be more appropriate than the Euclidean distance over a discrete
-  distribution space.
-* [we] compare the Hellinger PCA against the classical Euclidean PCA and the
-  Low Rank Multi-View Learning (LR-MVL) method, which is
-  another spectral method based on Canonical Correlation Analysis (CCA) to
-  learn word embeddings (Dhillon+ 2011).
+  * LSA (Landauer and Dumais, 1997), ICA (Väyrynen and Honkela, 2004)
+* hE, word co-occurence statistics are discrete distributions
+  => An information theory measure eg the Hellinger distance seems to be more
+  appropriate than the Euclidean distance over a discrete distribution space
+* we compare the Hellinger PCA against the classical Euclidean PCA and the
+  Low Rank Multi-View Learning (LR-MVL) method
+  * LR-MVL is another spectral method based on Canonical Correlation Analysis
+    to learn word embeddings (Dhillon+ 2011)
 * embeddings can be too generic to perform well on ... tasks such as sentiment

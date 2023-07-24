@@ -115,8 +115,8 @@ Peter D. Turney, Patrick Pantel
 * tf-idf (term frequency × inverse document frequency) family of weighting
   functions (Spärck Jones, 1972)
   * An element gets a high weight when the corresponding term is
-    * frequent in the corresponding document (i.e., tf is high), but
-    * rare in other documents in the corpus (i.e., df is low)
+    * frequent in the corresponding document (ie, tf is high), but
+    * rare in other documents in the corpus (ie, df is low)
   * Salton and Buckley (1988) defined a large family of tf-idf  functions
 * [document] length normalization (Singhal, Salton, Mitra, & Buckley, 1996)
 * correct for correlated terms
@@ -185,10 +185,9 @@ Peter D. Turney, Patrick Pantel
 * Dice `2xy / (|x|^2 + |y|^2)` and Jaccard coefficients
   Nem tudom, hogy a Jaccard-indexet hogyan általánosítja nem-bool számokra
 * Lee (1999): measures that focused more on overlapping coordinates and less on
-  the importance of negative features (i.e., coordinates where one word has a
-  nonzero value and the other has a zero value) appear to perform better. In
-  Lee’s experiments, the Jaccard, Jensen-Shannon, and L1 measures seemed to
-  perform best
+  the importance of negative features (ie, coordinates where one word has a
+  nonzero value and the other has a zero value) appear to perform better
+  * the Jaccard, Jensen-Shannon, and L1 measures seemed to perform best
 * Given a word `w_0`, if we use a high/low/similar-frequency sensitive
   measure to score other words according to their similarity with `w_0`, words
   with frequencies higher than/lower than/similar to `w_0` will tend to get

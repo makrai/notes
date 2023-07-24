@@ -14,8 +14,8 @@ We published our work on GitHub for
 * We propose a transformation that amplifies desired semantic features in the
   basis of the embedding space. We generate these semantic features by a distant
   supervised approach, to make them applicable for Hungarian embedding spaces
-  * We propose the Hellinger distance in order to perform a transformation to an
-  interpretable embedding space. Furthermore, we
+  * We propose the Hellinger distance in order to perform a
+    transformation to an interpretable embedding space
   * extend our research to sparse word representations as well, since sparse
     representations are considered to be highly interpretable
 
@@ -43,7 +43,7 @@ We published our work on GitHub for
     * Şenel, L.K Utlu, I Yücesoy, V Koç, A Çukur, T
       Semantic structure and interpretability of word embeddings
       IEEE/ACM Transactions on Audio, Speech, and Language Proce 26(10), 2018
-    * utilized the Bhattacharyya distance for the aforementioned purpose. In
+    * utilized the Bhattacharyya distance for the aforementioned purpose
   * we also evaluate a close variant of the Bhattacharyya distance, the
     Hellinger distance for transforming word representations in a way that the
     individual dimensions have a more transparent interpretation
@@ -74,7 +74,7 @@ We published our work on GitHub for
     substantial semantic content is captured by the sparse bases
 * Şenel+ (2018): a method to measure the interpretability of the dense GloVe
   * manipulate and improve the interpretability of a static w repr (Şenel+ 2020)
-* Hellinger distance: constructing word embeddings Lebret and Collobert (2014)
+* Hellinger distance & word embedding construction: Lebret and Collobert (2014)
 
 # 3 Data
 
