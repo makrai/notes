@@ -26,7 +26,7 @@ Artificial Intelligence Review (2021)
 # 2 Models of emotions and the concept of text-based emotion detection
 
 * discrete and dimensional form
-  * Discrete representations place emotions into finite categories. Prominent
+  * Discrete representations place emotions into finite categories
     * agreed that emotions arose due to how individuals perceived events, and
       those emotions varied according to their degree of intensity
     * Ekman (1999) places emotions into six basic categories, ie,
@@ -37,10 +37,10 @@ Artificial Intelligence Review (2021)
       * like Ekman, primary emotions, and their combinations: complex emotions
       * hE 8 primary emotions instead of 6 by Ekman which occured
         * in opposite pairs. The 8 primary emotions as proposed by Plutchik
-        * joy--sadness, trust--det uÉssgust, anger--fear and surprise--anticipation
+        * joy--sadness, trust--disgust, anger--fear and surprise--anticipation
     * Orthony, Clore, and Collins (OCC) disagreed with the analogy of ’basic
-      emotions’ as presented by Ekman and Plutchik. They discretized emotions
-      * 22 emotions, adding 16 emotions to Ekman's essential ones, thus
+      emotions’ as presented by Ekman and Plutchik
+      * 22 emotions, adding 16 emotions to Ekman's essential ones
       * additional classes of relief, envy, reproach, self-reproach,
         appreciation, shame, pity, disappointment, admiration, hope,
         fears-confirmed, grief, gratification, gloating, like and dislike
@@ -84,6 +84,23 @@ Artificial Intelligence Review (2021)
 # 3 The concept of transformers
 
 # 4 Some transformer-based models, their pros and cons 7
+
+* This section expounds on some models that have evolved from the transformer
+  architecture, strengths, and weaknesses. The models discussed in this section
+  
+## 4.1 Transformer-XL
+
+## 4.2 Generative Pre-Training (GPT)
+
+## 4.3 Bidirectional Encoder Representations from Transformers (BERT)
+
+## 4.4 Cross-Lingual Language Model (XLM)
+
+## 4.5 XLNet
+
+## 4.6 Robustly Optimized BERT pre- training Approach (RoBERTa)
+
+## 4.7 DistilBERT
 
 # 5 Text-based emotion detection works with transformer-based pre-train 15
 

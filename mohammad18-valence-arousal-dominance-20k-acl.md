@@ -1,6 +1,6 @@
-Saif Mohammad
 Obtaining reliable human ratings of valence, arousal, and dominance
   for 20,000 English words
+Saif Mohammad
 ACL long 2018
 
 * The NRC Valence, Arousal, and Dominance Lexicon
