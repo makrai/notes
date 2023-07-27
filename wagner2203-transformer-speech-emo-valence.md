@@ -5,10 +5,10 @@ arXiv:2203.07378 [eess.AS]
 
 # Abstract
 
-* transformer-based architectures which are pre-trained in self-supervised
+* transformer-based architectures which are pre-trained with self-supervision
 * audio domain: such architectures have also been successfully utilised
 * hE not evaluated the influence of model size and pre-training data on
-  downstream performance, and have shown limited attention to
+  downstream performance, and limited attention to
   * generalisation, robustness, fairness, and efficiency
 * we: a thorough analysis of these aspects on several pre-trained variants of
   wav2vec 2.0 and HuBERT that we
@@ -21,7 +21,7 @@ arXiv:2203.07378 [eess.AS]
 * our investigations reveal that transformer-based architectures are
   * more robust to small perturbations compared to a CNN-based baseline and
   * fair with respect to biological sex groups, but
-  * not fair towards individual speakers.  Finally, we are the first to show
+  * not fair towards individual speakers
 * success on valence is based on implicit linguistic information learnt
 * remaining issues: robustness and individual speaker
 
@@ -52,15 +52,15 @@ arXiv:2203.07378 [eess.AS]
 * Previous works have attempted to tackle these issues in isolation, eg by
   * eg cross-modal knowledge distillation to increase valence performance [16],
   * speech enhancement or data augmentation to improve robustness [12, 13], and
-  * de-biasing techniques to mitigate unfair outcomes [17]. However
+  * de-biasing techniques to mitigate unfair outcomes [17]
 * each of those approaches comes with its own hyperparameters to tune
 * general-purpose foundation models that can be easily adapted to several use-
-  cases [18]. Typically
+  cases [18]
   * trained on large datasets, often using proxy tasks
     to avoid dependencies on hard-to-acquire labels, and then
   * fine-tuned on (small) sets of labelled data for their intended tasks
-  * tremendous success in computer vision [19], NLP [20], and computer audition
-    [21, 22] – including SER [23, 24, 25]
+  * tremendous success in computer vision [19], NLP [20], and
+    computer audition [21, 22] – including SER [23, 24, 25]
   * speech: wav2vec 2.0 [21] and HuBERT [22]
 * best performing model publicly available [26]
   * the first transformer-based dimensional SER model released
@@ -84,7 +84,7 @@ arXiv:2203.07378 [eess.AS]
     * base architecture (w2v2-b / hubert-b) or the large architecture (w2v2-L /
       hubert-L) in a down-stream classification task (for
       * more details on the models, see Section 3.2). Even though, authors have
-  * different head architectures and training procedures in their studies, we
+  * different head architectures and training procedures
 * general observations from Table 1:
   1. roughly 10% better performance with models where the weights of the
      pre-trained model were not frozen during the down-stream task
@@ -95,28 +95,27 @@ arXiv:2203.07378 [eess.AS]
      large one yields better results (eg row 17 vs row 22 +3.0%), though the
      difference can be quite small (eg row 19 vs row 20 +.5% )
   4. Likewise, in that case HuBERT outperforms wav2vec 2.0
-    (eg row 22 vs row 20: +2.1%)
+     (eg row 22 vs row 20: +2.1%)
   5. When performing a fine-tuning of the transformer layers, a
-    simple average pooling in combination with a linear classifier built over
-    wav2vec 2.0 or HuBERT as proposed by Wang+ [23] seems sufficient and shows
-    best performance in the ranking
+    simple average pooling in combination with
+    a linear classifier built over wav2vec 2.0 or HuBERT (Wang+ [23]) 
+    shows best performance in the ranking
     * hE, some of the more complex models [32] only report results without fint
       * eg the cross-representation encoder-decoder model proposed by Makiuchi+
 * dimensional emotion
   * the aforementioned studies have focused on emotional categories
   * several studies concentrate on dimensions
-* most comparable to ours is that of Srinivasan+ [16], who fine-tuned wav2vec
-  2.0 / HuBERT on arousal, dominance, and valence
-  * particularly good in predicting valence – a feat which has long escaped
-    audio-based models
+* most comparable to ours is that of Srinivasan+ [16], 
+  * wav2vec 2.0 / HuBERT fine-tuned on arousal, dominance, and valence
+  * particularly good in predicting valence 
+    * a feature which has long escaped audio-based models
   * When additionally joining audio embeddings from the fine-tuned models and
     text representations obtained with a pre-trained BERT model, they got a
     concordance correlation coefficient (CCC) for valence of .683 on the
     MSP-Podcast corpus [34]
   * they distill the multi-model system to an audio-only model using
-    student-teacher transfer learning, while still reaching a CCC of .627 (a
-    massive improvement compared to the previous SOTA performance of only
-    .377 [35])
+    student-teacher transfer learning, while still reaching a CCC of .627
+    * massive improv compared to the previous SOTA performance of .377 [35]
   * Table 2, summarises their results for w2v2-b, hubert-b, w2v2-L, and
     hubert-L without cross-modal distillation
   * back up two of our earlier findings: the
@@ -130,20 +129,20 @@ arXiv:2203.07378 [eess.AS]
         * using Contrastive Predictive Coding and subsequently
       * fine-tuned it on MSP-Podcast
 * ? influence of the amount and domain of the data used for pre-training
-  * eg the large model consistently shows better performance, it
+  * eg the large model consistently shows better performance
     * hE unclear if that can be attributed to the additional layers or the fact
       that it was trained on 60 times more data compared to the base model
   * since the models used in previous work were all pre-trained on read English
-    * ? impact that the use of speech from other domains may have. In this
+    * ? impact that the use of speech from other domains may have
   * we therefore present a systematic comparison of different models
     pre-trained under various conditions (eg including noisy speech) and
     evaluate them on several datasets (in-domain and cross-corpus)
-* augmentatio ie perturbation ie noise and reverb
+* augmentation ie perturbation ie noise and reverb
   * Besides investigating performance of SER models on clean test data, it is
     important to show that they also work well under more challenging condis
   * augmentation methods have been used to improve performance on clean test
     data [36, 37],
-  * hE only a few studies have evaluated performance on augmented test data as
+  * hE only a few studies have evaluated performance on augmented test data
   * prev SER models show robustness issues (Jaiswal& [38] and Pappagari+ [39])
     * particularly for background noise and reverb
   * we systematically investigate robustness of transformer-based models
@@ -163,37 +162,38 @@ arXiv:2203.07378 [eess.AS]
 ## 3.3 Datasets
 
 * We used the MSP-Podcast corpus [34] (v1.7) to run multitask training on the
-  three dimensions of arousal, dominance, and valence. The dataset consists of
-  * 84 hours of naturalistic speech from podcast recordings. The
+  three dimensions of arousal, dominance, and valence
+  * 84 hours of naturalistic speech from podcast recordings
   * original labels cover a range from 1 to 7, which we normalise into the
-    interval of 0 to 1. In-domain results are reported on the test-1 split. The
-    test-1 split contains 12, 902 samples (54% female / 46% male) from 60
-    speakers (30 female / 30 male). The samples per speaker are not balanced
-    and vary between 42 and 912. The samples have a combined length of roughly
-    21 hours, and vary between 1.92 s and 11.94 s per sample
-* We report cross-domain results for the IEMOCAP (Interactive Emotional Dyadic
-  Motion Capture) dataset [33], which consists of
+    interval of 0 to 1. In-domain results are reported on the test-1 split
+    * The test-1 split contains 12, 902 samples (54% female / 46% male) from 60
+      speakers (30 female / 30 male)
+    * samples per speaker are not balanced and vary between 42 and 912. The
+      samples have a combined length of roughly 21 hours, and
+      * vary between 1.92 s and 11.94 s per sample
+* We report cross-domain results for the IEMOCAP  dataset [33]
+  * ie Interactive Emotional Dyadic Motion Capture
   * roughly 12 hours of scripted and improvised dialogues by ten speakers (5
     female / 5 male). It provides
-  * the same dimensional labels as MSP-Podcast corpus, but in a range of 1 to
-    5, which we normalise to the interval 0 to 1
+  * the same dimensional labels as MSP-Podcast corpus, but in a range of 1--5,
+    which we normalise to the interval 0 to 1
   * Since we use the dataset only during evaluation, we do not apply the usual
     speaker cross-folding, but treat the corpus as a whole
-  * 10, 039 samples (49% female / 51% male) with a varying length between .58 s
-    and 34.14 s
-* Finally, we additionally report cross-corpus results for valence on the
-  Multimodal Opinion Sentiment Intensity (MOSI) [49] corpus. The dataset is a
+  * 10, 039 samples (49% female / 51% male) with a 
+    * length varying between .58 s and 34.14 s
+* Finally, we additionally report cross-corpus results for valence on MOSI
+  * ie Multimodal Opinion Sentiment Intensity (MOSI) [49] corpus
   * 4 h of YouTube movie review videos spoken by 41 female and 48 male
   * annotated for sentiment on a 7-point Likert scale ranging from −3 to 3,
-    which we normalise to the interval 0 to 1. As the
+    which we normalise to the interval 0 to 1
   * gender/sex labels are not part of the distributed database, we re-annotated
   * We report results on the test set that contains 685 samples (51% female /
-    49% male) with a total duration of 1 hour and varying sample length between
-    .57 s and 33.13 s
+    49% male) with a total duration of 1 hour and
+    * sample length varying between .57 s and 33.13 s
 * arousal and valence from sentiment
-  * sentiment is a different concept than valence, as the
-  * sentiment corresponds to an attitude held towards a specific object and the
-  * valence more generally characterises a person’s feeling [50], there is
+  * sentiment is a different concept than valence
+  * sentiment corresponds to an attitude held towards a specific object
+  * valence more generally characterises a person’s feeling [50]
   * nL sentiment annotations can be decomposed to intensity and polarity [51],
     which we consider to roughly correspond to arousal and valence
   * We expect some correlation between
