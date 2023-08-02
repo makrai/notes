@@ -38,7 +38,7 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
       Ensemble methods for spoken emotion recognition in call-centres
       Speech Commun. 2007, 49, 98–112.  [Google Scholar] [CrossRef]
   * complication:
-    * continuousness of emotions and their dynamic variation during the course
+    * continuousness of emotions and their dynamic variation
     * concurrent emotions together, and the presence of background noise
     * number of different emotions found in these corpora is limited
     * copyright and privacy issues arise using this type of corpora

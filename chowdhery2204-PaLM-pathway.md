@@ -162,9 +162,9 @@ arXiv:2204.02311 [cs.CL]
     demonstrates the potential for the model to falsely affirm stereotypes, for
     instance, associating Muslims with terrorism, extremism, and violence. This
     * consistent across model scales
-  * toxicity analysis on prompt continuation tasks demonstrates a slightly
-    higher overall toxicity level for the 62B and 540B model compared to the 8B
-    model
+  * toxicity analysis on prompt continuation tasks demonstrates
+    a slightly higher overall toxicity level for the 62B and 540B model
+    compared to the 8B model
     * the toxicity of the model-generated continuation correlates highly with
       the toxicity of the prompting text, whereas human-generation
       continuations do not have a strong toxicity correlation.  This suggests
