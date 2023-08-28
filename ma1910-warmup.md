@@ -21,8 +21,8 @@ AAAI 2021 arXiv:1910.04209 [cs.LG]
 
 # 1 Intro
 
-* Stochastic gradient-based optimization serves as the workhorse approach for
-  many classes of parametric models, including neural networks.  Stochastic
+* Stochastic gradient-based optimization serves as
+  the workhorse approach for many parametric models, including neural networks
   * and its various first-order cousins (Polyak 1964; Nesterov 1983) have
   * enabled numerous advances in deep learning across domains (Krizhevsky,
     Sutskever, and Hinton 2012; He+ 2016; Gehring+ 2017)
