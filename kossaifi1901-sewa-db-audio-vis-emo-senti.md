@@ -9,21 +9,22 @@ arXiv:1901.02839 [cs.HC]
 # Abstract
 
 * human-computer interaction and audio-visual human behaviour sensing systems,
-  which would achieve robust performance in-the-wild are more needed than ever
+  with robust performance in-the-wild are more needed than ever
 * hE databases usually consider
   controlled settings, low demographic variability, and a single task
 * we introduce the SEWA database of more than 2000 minutes of audio-visual data
   * 398 people coming from six cultures, 50% female, and
   * uniformly spanning the age range of 18 to 65 years old
 * two different contexts
-  * watching adverts and while
+  * watching adverts
   * discussing adverts in a video chat
 * rich annotations of the recordings in terms of facial landmarks,
   facial action units (FAU), various vocalisations, mirroring, and
   continuously valued valence, arousal, liking, agreement, and
   prototypic examples of (dis)liking
-* we provide extensive baseline experiments for automatic FAU detection and
-  automatic valence, arousal and (dis)liking intensity estimation
+* we provide extensive baseline experiments for automatic 
+  * FAU detection and
+  * valence, arousal and (dis)liking intensity estimation
 
 # 1 Intro
 
@@ -35,39 +36,50 @@ arXiv:1901.02839 [cs.HC]
     * CONFER dataset contains only Greeks [8]
     * no database that would enable a large scale study on the effect of culture
       on expression recognition and communication of emotions and sentiment
-  * only annotated in terms of certain behaviour and affect dimensions, for
+  * only annotated in terms of certain behaviour and affect dimensions
     * SEMAINE database contains continuous annotations of valence and arousal,
     * CONFER2 dataset is annotated only in terms of conflict intensity etc
     * no database annotated in terms of multiple behavioural cues:
-      facial action units (FAUs), affect dimensions and social signals
+      facial action units (FAUs), affect dimensions, and social signals
 * we introduce the SEWA database (SEWA DB), in Section 3, which is an
-  audio-visual, multilingual dataset of richly annotated facial, vocal, and
-  verbal behaviour recordings made in-the wild. The SEWA DB extends and
-  contrasts considerably the available audio-visual datasets for affect
-  research by providing the following key features:
+  * audio-visual, multilingual dataset of
+    richly annotated facial, vocal, and verbal behaviour recordings in-the-wild
   * audio-visual recordings of spontaneous behaviour of volunteers, captured in
-    completely unconstrained, real-world, environments using standard
-    web-cameras and microphones
+    completely unconstrained, real-world, environments using
+    standard web-cameras and microphones
   * episodes of unconstrained interactions of subjects of different age,
-    gender, and cultural backgrounds. In particular, 6 groups of volunteers
-    with around 66 subjects per group (50% females, uniformly divided over 5
-    age groups, 20+, 30+, 40+, 50+, 60+) from six different cultural
-    backgrounds, namely British, German, Hungarian, Greek, Serbian, and Chinese
-    were recoded.  This makes the SEWA DB the first publicly available
-    benchmark dataset for affect analysis in the wild across age and cultures
+    gender, and cultural backgrounds
+    * 6 groups of volunteers with around 66 subjects per group
+      (50% females, uniformly over 5 age groups, 20+, 30+, 40+, 50+, 60+) from
+    * six cultural backgro: British, German, Hungarian, Greek, Serbian, Chinese
+    * the first publicly available benchmark dataset for affect analysis in the
+      wild across age and cultures
   * richly annotated in terms of FAUs, facial landmarks, vocal and verbal cues
-    as well as continuously valued emotion dimensions such as valence,
-    arousal, liking and social signals including agreement and mimicry. This
-    * allow for the first time to (study)
-      * different aspects of human affect simultaneously
-      * how observed behaviours are influenced in dyadic interactions, and
-      * exploit behaviour dynamics in affect modelling and analysis
-      * exploit inter-dependencies between age, gender, word and language
-        usage, affect and behaviour, hence enabling robust and
-        context-sensitive interpretation of speech and non-verbal behaviour
-* we provide exhaustive baseline experimental results FAUs detection and
-  valence, arousal and liking/disliking estimation are provided in Section 4
-
+    * continuously valued emotion dimensions such as valence, arousal, liking
+    * social signals including agreement and mimicry
+  * allow to study
+    * different aspects of human affect simultaneously
+    * how observed behaviours are influenced in dyadic interactions
+    * exploit behaviour dynamics in affect modelling and analysis
+    * exploit inter-dependencies between age, gender,
+      word and language usage, affect and behaviour
+      ie robust and context-sensitive interpret of speech and non-verbal behav
+* exhaustive baseline experimental results (sec 4)
+  * FAUs detection and
+  * valence, arousal and liking/disliking estimation
+* from the Conclusions
+  * The SEWA DB contains the recordings of 204 experiment sessions, covering
+    408 subjects recruited from 6 different cultural backgrounds: British,
+    German, Hungarian, Greek, Serbian, and Chinese
+  * 1525 minutes of audio-visual recordings of the subjects reaction to the 4
+    advertisement stimuli and 568 minutes of video-chat recordings of the
+    subjects discussing the advertisement
+  * a wide range of annotations including:
+    low-level audio descriptor (LLD) features, facial landmark locations,
+    hand-gesture, head gesture, facial action units, audio transcript,
+    continuously-valued valence, arousal and liking / disliking (toward the
+    advertisement), template behaviours, agreement / disagreement episodes, and
+    mimicry episodes
 
 # 2 SOTA in audio-visual emotion databases
 
@@ -147,12 +159,34 @@ arXiv:1901.02839 [cs.HC]
   annotated in terms of displayed affective reactions
   * For an overview of databases containing recordings of non-interactive
     * recent survey papers (eg [19], [41]) and recent database papers (eg [39])
+    * [19] H. Gunes and B. Schuller 2013
+      “Categorical and dimensional affect analysis in continuous input: 
+      Current trends and future directions” 
+      Image and Vision Computing, vol.  31, no.  2, pp. 120–136, 2013.
+    * [41] E. Sariyanidi, H. Gunes, and A. Cavallaro, 
+      “Automat anal of facial affect: A survey of registration, repr, & reg”
+      IEEE Transactions on Pattern Analysis and Machine Intelligence 2015
+    * [39] J. Kossaifi, G. Tzimiropoulos, S. Todorovic, and M. Pantic,
+      “Afew-VA database for valence and arousal estimation in-the-wild,”
+      Image and Vision Computing, vol. 65, pp. 23 – 36, 2017
 * mostly controlled settings, constrained dyadic task, low demographic
-  variability, and one language –that has mostly been English so far
+  variability, and one language – mostly English
   * Predominance of one language in the corpora limits usability of the
     database for cross-lingual, cross-cultural study of emotion recognition
 * Table 1 presents a summarized overview of the surveyed databases containing
   dyadic interactions
+
+# 3 SEWA DATABASE 5
+
+## 3.1 Data collection
+
+## 3.2 The Data Statistics and subject demographics
+
+## 3.3 Data annotation
+
+## 3.4 Database availability
+
+# 4 BASELINE EXPERIMENTS 10
 
 ## 4.3 Experimental results
 
@@ -180,36 +214,36 @@ arXiv:1901.02839 [cs.HC]
 ### 4.3.2 Estimation of valence, arousal and liking/disliking
 
 * The setting of our baseline experiment allows us to
-  * investigate the effect of audio, video and the fusion of both on the
-  * separate the effect of culture on the results
+  * investigate the effect of audio, video and the fusion of both 
+  * separate the effect of culture
   * infer the human-level-performance of recognizing the levels of valence and
     arousal displayed by a subject given each type of information
-    * . As annotations were performed separately but by the same annotators on
-      the audio, video and audio-video feeds respectively
-  * Results are reported in term of CORR/CORR in Table 12/11
-    In all cases, we report results when training with annotations and features
-    obtained using either exclusively audio, video or audio-video
+    * As annotations were performed separately but by the same annotators
+      on the audio, video and audio-video feeds respectively
+  * Results are reported in term of CORR/CCC in Table 12/11
+    * In all cases, we report results when training with annotations and
+      features obtained using either exclusively audio, video or audio-video
 * for valence, we obtained better results on annotation obtained using
   exclusively video
   * slightly lower when using labels obtained by annotating audio-video, while
   * the worst results were obtained on the labels collected from audio only
-  * in line with the recent finding by psychologists that valence is much
-    better estimated from video imagery than from audio only, while
+  * in line with the recent finding by psychologists that
+    valence is much better estimated from video imagery than from audio only,
     * arousal is much better predicted from audio than from video [86], [87]
-      As expected, using a fusion of audiovideo features increases the results,
+    * As expected, a fusion of audio-video features increases the results,
       while audio features are the least helpful, supporting the theory that
       the face and its deformation is the main medium of communication between
       humans when it comes to emotions
 * models
   * performances of different regression models vary from each other
   * overall, SVM performs better than RF which in turn outperforms LSTM
-    hE, in the experiments on audio features, while
+  * hE, in the experiments on audio features, while
     * Support Vector Machine for Regression (SVR) and Random Forest (RF) are
       expected to perform well for arousal and valence prediction,
-      LSTM-RNNs noticeably outperform them for liking/disliking prediction. For
-      * eg while the average CCC of liking prediction based on audio features
-        and A+V annotations is 0.194 and 0.087 by SVR and RF, respectively, a
-        CCC of 0.254 is achieved with LSTM
+      LSTM-RNNs noticeably outperform them for liking/disliking prediction
+    * eg while the average CCC of liking prediction based on audio features and
+      A+V annotations is 0.194 and 0.087 by SVR and RF, respectively,
+      a CCC of 0.254 is achieved with LSTM
 * audio/video -> valence/arousal/liking
   * audio features: in most cases, arousal is better predicted than valence,
     * conforms repeated findings in the literature [66], [67], [68]
@@ -218,8 +252,8 @@ arXiv:1901.02839 [cs.HC]
       valence can result in more subtle facial expressions
       requiring geometric and appearance features to be predicted accurately
     * hE, for liking or disliking, there is no such noticeable tendency
-      * In most cases, as can be seen from the table, the performance for liking
-        or disliking is lower than for arousal and valence
+      * In most cases, the performance for liking or disliking is < A & V
+        * as can be seen from the table
       * could be mainly because the prediction of liking and disliking is more
         content-related and could not obtain sufficient useful information via
         acoustic cues only, lacking linguistic cues
@@ -228,33 +262,32 @@ arXiv:1901.02839 [cs.HC]
     * no obvious performance improvement was seen with the A+V annot
     * hE, for liking or disliking, in many cases the best results of prediction
       of liking were achieved with the audio/video-based annotations were
-      * a quite complex problem which is difficult to address with limited
-        data. It could be improved when more data with information of multiple
-        modalities is given
+      * a quite complex problem which is difficult to address with limited data
+      * It could be improved with more data: information of multiple modalities
 * predicting the culture
-  * Using video features, culture 5 (Hungarian) is best predicted (with a CCC
-    of 0.495) for valence using SVR
-  * this same culture is also best predicted for valence using audio features
-    (CCC 0.398), again with SVR based on audio features but video-based
-    annotation
+  * Using video features, Hungarian is best predicted (CCC = 0.495) for valence
+    using SVR
+  * Hungarian is also best predicted for valence using audio features (0.398),
+    again with SVR based on audio features but video-based annotation
   * For arousal and using audio features only, regarding the six different
-    cultures, the performance in term of CCC (0.694) is obtained for culture 3
-    (German) with SVR on audio/video-based annotations. In contrast, using a
+    cultures, the performance in term of CCC (0.694) is obtained for German
+    with SVR on audio/video-based annotations
   * fusion of audio and video features: best results are obtained for arousal
-    on culture 2 with a CCC of 0.501
+    on culture 2 CCC = 0.501
 * SVR, predictions of valence with video-based annotations outperforms that
-  with audio-based annotations for all cultures except for culture 3 (German)
+  with audio-based annotations for all cultures except for culture German
   * predictions of arousal with audio-based labels
     outperforms that with video-based labels for all cultures
-    except for culture 5 (Hungarian) and 6 (Serbian)
+    except for culture Hungarian and Serbian
   * contrast could be mainly due to the close connection between the two
-    dimensions in spontaneous conversation. Therefore, it might
-    be good to predict them together, ie conducting multi-task learning to take
-    advantage of the interconnections between the two different aspects
+    dimensions in spontaneous conversation
+    => it might be good to predict them together,
+    ie conducting multi-task learning to take advantage of the interconnections
 * ReseNet-18 (Table 10) outperforms the other baseline models, as expected,
-  particularly when trained by optimizing the CCC directly. This is
-  * especially true in the case of arousal, which is captured more accurately
-    by deeply learned representations than by hand-crafted features
-  * Valence on the other hand, as expected (eg [39]), can be predicted
-    accurately from geometric features, encoded by facial landmarks or SIFT
-    features. However, this method is much more costly to run
+  particularly when trained by optimizing the CCC directly
+  * especially in the case of arousal, which is captured more accurately by
+    deeply learned representations than by hand-crafted features
+  * Valence on the other hand, can be predicted accurately
+    from geometric features, encoded by facial landmarks or SIFT features
+    * as expected (eg [39])
+    * hE, this method is much more costly to run
