@@ -113,12 +113,12 @@ arXiv:2203.07378 [eess.AS]
     text representations obtained with a pre-trained BERT model, they got a
     concordance correlation coefficient (CCC) for valence of .683 on the
     MSP-Podcast corpus [34]
-  * they distill the multi-model system to an audio-only model using
+  * Srinivasan+ distill the multi-model system to an audio-only model using
     student-teacher transfer learning, while still reaching a CCC of .627
     * massive improv compared to the previous SOTA performance of .377 [35]
-  * Table 2, summarises their results for w2v2-b, hubert-b, w2v2-L, and
-    hubert-L without cross-modal distillation
-  * back up two of our earlier findings: the
+  * Table 2, summarises their results for w2v2-b, hubert-b, w2v2-L, & hubert-L
+    without cross-modal distillation
+  * back up two of our earlier findings:
     * large architecture is superior to the base model and
     * HuBERT outperforms wav2vec 2.0
   * CCC performance surpasses both that of
@@ -166,15 +166,15 @@ arXiv:2203.07378 [eess.AS]
   * 84 hours of naturalistic speech from podcast recordings
   * original labels cover a range from 1 to 7, which we normalise into the
     interval of 0 to 1. In-domain results are reported on the test-1 split
-    * The test-1 split contains 12, 902 samples (54% female / 46% male) from 60
-      speakers (30 female / 30 male)
-    * samples per speaker are not balanced and vary between 42 and 912. The
-      samples have a combined length of roughly 21 hours, and
+    * The test-1 split contains 12, 902 samples (54% female / 46% male) from
+      60 speakers (30 female / 30 male)
+    * samples per speaker are not balanced and vary between 42 and 912
+      * combined length: roughly 21 hours, and
       * vary between 1.92 s and 11.94 s per sample
 * We report cross-domain results for the IEMOCAP  dataset [33]
   * ie Interactive Emotional Dyadic Motion Capture
-  * roughly 12 hours of scripted and improvised dialogues by ten speakers (5
-    female / 5 male). It provides
+  * roughly 12 hours of scripted and improvised dialogues by ten speakers
+    (5 female / 5 male)
   * the same dimensional labels as MSP-Podcast corpus, but in a range of 1--5,
     which we normalise to the interval 0 to 1
   * Since we use the dataset only during evaluation, we do not apply the usual
