@@ -29,27 +29,27 @@ AAAI 2021
   * XLM-RoBERTa (XLM-R, Conneau+ 2020)
   * Massively Multilingual Translation Encoder (MMTE, Arivazhagan+ 2019)
   * Unicoder (Liang+ 2020)
-* crosslingual zero-shot transfer capabilities (Pires, Schlinger, and Garrette
-  2019; Wu and Dredze 2020) have revolutionized our approach
-* `A` performs better than B on 10 languages, B performs better than A on 3
-  languages, and on the remaining two, the models perform equally well. Should
-* The problem has great practical significance for two reasons. First, before
+* crosslingual zero-shot transfer capabilities: revolutional
+  (Pires, Schlinger, and Garrette 2019; Wu and Dredze 2020)
+* `A` performs better than B on 10 languages, B perfs better than A on 3 langs,
+  and on the remaining two, the models perform equally well
+* The problem has great practical significance for two reasons
   * average performance over the set of tested languages has been adopted by
     * important factors such as
     * the set of languages and tasks the model is expected to work well on, and
       the amount of data across languages that the MultiLM was pre-trained and
-      fine-tuned on (Hu+ 2020; Wu and Dredze 2020; Lauscher+  2020). More
-  * one of the primary advantages as well as the reason behind the popularity of
-    MultiLMs is their excellent crosslingual zero-shot transfer ability
-    * Wu and Dredze (2020) point out, “top high resource languages are slightly
-      hurt by massively multilingual joint training”; yet these are preferred
-      because they offer a solution for low-resource languages
+      fine-tuned on (Hu+ 2020; Wu and Dredze 2020; Lauscher+  2020)
+  * one of the primary advantages and the reason for the popularity of MultiLMs
+    is their excellent crosslingual zero-shot transfer ability
+    * Wu and Dredze (2020): “top high resource languages are slightly hurt by
+      massively multilingual joint training”; yet these are preferred because
+      they offer a solution for low-resource languages
     * equal or equitable accuracy of MultiLMs across languages and tasks has
       been one of the critical points of scrutiny in the recent times (Hu+ 2020)
     * If this is the central tenet behind the conception and construction of
-      MultiLMs, then selection problem (MMSP) must be resolved in a manner that
-      conforms to this normative principle of “fairness” or “distributive
-      justice” across languages
+      MultiLMs, then the mas mul selection problem (MMSP) must be resolved in a
+      manner that conforms to this normative principle of “fairness” or
+      “distributive justice” across languages
 * discourse on fairness in machine learning, ethics, social choice theory,
   economics and decision theory, we provide several possible resolution of the
 * principles of distributive justice entailed by the choices made by the
