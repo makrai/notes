@@ -19,18 +19,18 @@ Findings 2020
 
 # 1 Intro
 
-* identification of both Dialog Acts (DA) and Emotion/Sentiment (E/S) in spoken
+* identification of both Dialog Acts (DA) and Emotion/Sentiment (E/S) in speech
   * important step in spontaneous dialogue task
   * essential to avoid the generic response problem (Yi+ 2019; Colombo+ 2019)
     * automatic dialog system generate an unspecific response
     * can be an answer to a very large number of user utterances
 * DA and emotion identification (Witon+ 2018; Jalalzai+ 2020) are
   done through sequence labelling systems that are
-  * usually trained on large corpora (with over 100k labelled utterances) eg
+  * usually trained on large corpora (with > 100k labelled utterances) eg
     * Switchboard (Godfrey+ 1992)
     * MRDA (Shriberg+ 2004) or
     * Daily Dialog Act (Li+ 2017)
-    * complex models learned from scratch (eg seq2seq (Colombo+ 2020)) are
+    * complex models learned from scratch (eg seq2seq, Colombo+ 2020) are
       very specific to the labelling scheme employed
 * Generic representations adapt models across different sets of labels
   (Mikolov+ 13; Pennington+ 14; Peters+ 18; Devlin+ 18; Yang+ 19; Liu+ 19)
@@ -76,21 +76,21 @@ Findings 2020
 # 2 Method
 
 * two levels
-  * At the highest level, we have a set D of conversations composed of
-    utterances with Y being the corresponding set of labels (eg DA, E/S). At a
-  * lower level each conversation Ci is composed of utterances u with Yi being
-    the corresponding sequence of labels: each ui is associated with a unique
-  * lowest level, each utterance ui can be seen as a sequence of words, i )
+  * highest level: a set D of conversations composed of utterances with
+    Y being the corresponding set of labels (eg DA, E/S)
+  * lower level: each conversation Ci is composed of utterances u with
+    Yi being the corresponding sequence of labels
+  * lowest level: each utterance ui can be seen as a sequence of words
 
 ## 2.1 Pre-training Objectives
 
-* Our work builds upon existing objectives designed to pre-train encoders: the
-  * Masked Language Model (MLM)
-    * Devlin+ (2018); Liu+  (2019); Lan+ (2019); Zhang+  (2019a)
-  * Generalized Autoregressive Pre-training (GAP) from Yang+ (2019)
-    * computing a classic language modelling loss across different
-      factorisation orders of the tokens. In this way, the model will learn to
-      gather information across all possible positions from both directions
+* Our work builds upon existing objectives designed to pre-train encoders
+* Masked Language Model (MLM)
+  * Devlin+ (2018); Liu+  (2019); Lan+ (2019); Zhang+  (2019a)
+* Generalized Autoregressive Pre-training (GAP) from Yang+ (2019)
+  * computing a classic language modelling loss across different
+    factorisation orders of the tokens. In this way, the model will learn to
+    gather information across all possible positions from both directions
 
 ## 2.5 Pre-training Datasets
 
@@ -99,7 +99,7 @@ Findings 2020
   * Cornell Movie Corpus (Danescu-Niculescu-Mizil and Lee, 2011)
   * Ubuntu (Lowe+ 2015) based on logs;
   * MultiWOz (Budzianowski+ 2018a)
-* we focus on OpenSubtitles (Lison and Tiedemann, 2016)4 because
+* we focus on OpenSubtitles (Lison and Tiedemann, 2016) because
   * it contains spoken language, contrarily to the Ubuntu corpus (Lowe+ 2015)
   * multi-party dataset as
     * Wizard of Oz (Budzianowski+ 2018a) and
@@ -112,11 +112,11 @@ Findings 2020
 
 ## 2.6 Baseline Encoders, two different types
 
-* Pre-trained Encoder Models. We use BERT (Devlin+ 2018) through the pytorch
-  * fed with a concatenation of the utterances. Formally given an input context
+* Pre-trained Encoder Models. We use BERT (Devlin+ 2018) through pytorch
+  * fed with a concatenation of the utterances
 * Hierarchical Recurrent Encoders
   * ie hierarchical encoders based on recurrent cells
-  * current SOTA perf in many seq labelling tasks
+  * current SOTA performance in many sequence labelling tasks
     (Li+ 2018a; Colombo+ 2020; Lin+ 2017)
   * In this work we rely on our own implementation of the model based on HR
   * Hyperparameters in Appendix B
@@ -160,8 +160,8 @@ Findings 2020
     inputs and predict the corresponding labels can be evaluated on SILICONE
   * We especially include small-sized datasets
     * models should distil substantial knowledge and
-      adapt to different sets of labels without relying on many examples.  The
-  * corpora statistics are gathered in Table 2
+      adapt to different sets of labels without relying on many examples
+  * corpora statistics in Table 2
 
 ### 3.2.1 DA Datasets
 
@@ -190,7 +190,7 @@ Findings 2020
   * Bi-LSTMs with attention as well as additional features
   * We follow the official split introduced by the authors
 
-#### HCRC MapTask Corpus (MT) has been introduced by (Thompson+ 1993). To build
+#### HCRC MapTask Corpus (MT) has been introduced by (Thompson+ 1993)
 
 * participants were asked to collaborate verbally by
   describing a route from a first participant’s map
@@ -238,11 +238,11 @@ Findings 2020
   beats with an accuracy of 61.9% (MELDs ) and 67.9% (MELDe ) against 60.8% and
   65.2
 
-#### IEMOCAP database (IEMO) is a multimodal database of ten speakers. It
+#### IEMOCAP database (IEMO) is a multimodal database of ten speakers
 
 * dyadic sessions where actors perform improvisations or scripted scenarios
 * Emotion categories are: anger, happiness, sadness, neutral, excitement,
-  frustration, fear, surprise, and other. There is
+  frustration, fear, surprise, and other
 * no official split on this dataset
 * a bi-LSTMs model (Zhang+ 2019b) and achieves 35.1%, with text only
 
@@ -250,8 +250,8 @@ Findings 2020
 
 * comes from the Sustained Emotionally coloured Machine human Interaction using
   Nonverbal Expression project (Mckeown+ 2013)
-* annotated on three sentiments labels: positive, negative and neutral by
-  Barriere+ (2018)
+* annotated on three sentiments labels: positive, negative and neutral
+  by Barriere+ (2018)
 * built on Multimodal Wizard of Oz experiment where
   participants held conversations with an operator who adopted various roles
   designed to evoke emotional reactions
