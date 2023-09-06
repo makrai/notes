@@ -22,8 +22,7 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
     * labeled the emotions by human listeners [54]
 * Simulated data sets such as EMO-DB (German) [55], DES (Danish) [56], RAVDESS
   [57], TESS [58], and CREMA-D [59] are standardized collections of emotions,
-* Semi-natural collections of emotions include
-  IEMOCAP [60], Belfast [61], and NIMITEK [62]
+* Semi-natural collections of emo: IEMOCAP [60], Belfast [61], and NIMITEK [62]
 * natural corpora of emotional speech databases such as
   VAM [39], AIBO [63], and call center data [45,64]
   * [63] Steidl, S

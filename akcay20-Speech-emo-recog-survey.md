@@ -57,7 +57,7 @@ Speech Communication, 2020-Elsevier
 * Dimensional emotional model is an alternative model that uses
   * a small number of latent dimensions to characterize emotions such as
     valence, arousal, control, power
-  * (Russell and Mehrabian, 1977; Watson+ 1988). These dimensions are deﬁnitive
+  * Russell and Mehrabian, (1977); Watson+ (1988). These dims are deﬁnitive
   * emotions are not independent of each other; instead, they are analogous to
     each other in a systematic way. One of the most preferred dimensional
   * eg two-dimensional model that uses

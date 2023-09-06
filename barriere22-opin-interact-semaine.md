@@ -1,4 +1,4 @@
-Opinions in Interactions : New Annotations of the SEMAINE Database
+Opinions in Interactions: New Annotations of the SEMAINE Database
 Valentin Barriere, Slim Essid, Chloé Clavel
 LREC 2022
 
@@ -32,38 +32,38 @@ LREC 2022
   is very different depending on the media he uses (tweet/phone call/real-life)
   * Certain kinds of phenomena are easier to detect using specific modalities
   * many more studies on emotion recog in speech than in text (Schuller+ 2009),
-    because of para-linguistic like tone, pitch or emphasis
+    because of para-linguistics like tone, pitch or emphasis
 * the study of opinion phenomena was initially restricted to text
-  (Irsoy and Cardie, 2014; Balahur+ 2010) which has a clearer syntax, due to
-  * oral: complexity of the annotation of the phenomenon and the
-    volatility of the linguistic structure in oral language
-* corpora for the study of multimodal affective phenomena whether they appear
+  (Irsoy and Cardie, 2014; Balahur+ 2010) which has a clearer syntax
+  * oral language: complexity of the annotation of the phenomenon and the
+    volatility of the linguistic structure
+* corpora for the study of multimodal affective phenomena
   * without interaction (Zadeh+ 2018; Morency+ 2011)
   * with dyadic interactions (Ringeval+ 2013; Busso+ 2017) or
   * with multiparty interactions (Poria+ 2019a; Lotfian and Busso, 2018)
   * majority of the available annotations are centered either on the emotions
     (McKeown+ 2012) or on the sentiment (Zadeh+ 2018)
   * we use multimodal data to detect the opinions in a dyadic interaction
-* Some datasets are acted (Busso+ 2008) since it is mandatory to create
+* Some datasets are acted (Busso+ 2008)
   * emotions that are too rare in real-life data, like fear (Busso+ 2017)
   * This being not a problem for opinions, we decided to annotate a corpus
-    containing non-acted interactions. We chose to use the
+    containing non-acted interactions
   * SEMAINE corpus of McKeown+ (2012), which is a corpus of
     dyadic interactions between a spontaneous human-user and a human-agent
     playing a predefined role
-    * The agent is intended to trigger an emotion in the user and engage
-      him/her in an emotionally colored discussion.  It is a dataset of
+    * The agent is intended to trigger an emotion in the user and engage them
+      in an emotionally colored discussion
     * crafted to contain affective phenomena, likely to be dense with opinions
 * links between the different affective phenomena are blurred (Munezero+ 2014)
   * nL the difference between emotion and opinion is pretty clear
-  * The emotions are physiological when the
+  * emotions are physiological 
   * opinions are constructed and prominently based on objective and/or
     subjective probabilities of information about a topic, and not necessarily
-    charged in emotion (Munezero+ 2014). Finally,
+    charged in emotion (Munezero+ 2014)
 * SEMAINE (Schuller+ 2012) already contains annotation in emotions regarding
   4 affective dimensions, namely activity, expectation, power, and valence
   * used recently to compare different models of Emotion Recognition in
-    Conversation (ERC) (Poria+ 2019b) and can be useful to investigate the
+    Conversation (ERC, Poria+ 2019b) and can be useful to investigate the
     links between emotions and opinions in a multimodal dyadic context
 * our annotation process, we focused on
   * the distinction between an opinion and an emotion in order to get clean
@@ -86,32 +86,30 @@ LREC 2022
 # 4 results of two baseline SOTA models for APReC
 
 * APReC: Affective Phenomenon Recognition in Conversation (APReC)
-* this section: valence and arousal for the emotions and opinion
-* we introduce a baseline based on an ERC (Emotion Recognition in Conversation)
-  SOTA model. We use a variant of the DialogueRNN of Majumder+ (2018) since it
-  aims to detect an affective phenomenon in a conversation and is SOTA on the
-  SEMAINE dataset
-* we used a subset of SEMAINE of 72 sessions, 5210 speech turns and 68,043
-  tokens, which has the annotations from AVEC and our annotations. We kept the
-  same documents Majumder+ (2018) used in the training and testing sets
-* We further improve that SOTA model, using the high-quality manual transcripts
-  we were able to extract new textual features with the RoBERTa model (Liu+
-  2019) at the granularity of a speech turn
+* this section: valence and arousal for emotions and opinion
+* baseline based on an ERC (Emotion Recognition in Conversation) SOTA model
+  * a variant of the DialogueRNN of Majumder+ (2018) since it aims to detect an
+    affective phenomenon in a conversation and is SOTA on the SEMAINE dataset
+* we used a subset of SEMAINE 
+  * 72 sessions, 5210 speech turns and 68,043 tokens, which has the
+    annotations from AVEC and our annotations
+  * the same documents Majumder+ (2018) used in the training and testing sets
+* We further improve that SOTA model
+  * using the high-quality manual transcripts
+    we extract RoBERTa features (Liu+ 2019) at the granularity of a speech turn
   * We chose to do so because opinions phenomena are more centered on the text
-    than the emotions are. Furthermore, since our task is atypical,
+    than the emotions are
   * we validated this new model on ERC, out-performing the SOTA in ERC on the
     SEMAINE dataset (see Table 6), before using the new model on our task
-  * The version of the DialogueRNN we used is the one that worked the best for
-    Majumder+ (2018), namely the bidirectional version with attention and
-    listener state update
-    * trained for 600 epochs, with a dropout of 0.3 and a ℓ2 regularization
-      weight of 1e-4. We trained the model 5 times, reporting average
-      performance
-* Our model using the RoBERTa embeddings improves greatly the results on the
-  emotion recognition task on Valence and Arousal, either regarding the MAE or
-  the Pearson coefficient
-  * The best results on opinion were obtained using a bimodal model using the
-    textual and the audio modalities.3 Although the task is different, this
-    improvement over the SOTA for Valence and Arousal can let us think that the
-    DialogueRNN with RoBERTa embeddings is a strong baseline for an Affective
-    Phenomenon Recognition in Conversation (APReC) task
+  * The version of the DialogueRNN we used is
+    * the one that worked the best for Majumder+ (2018)
+    * bidirectional version with attention and listener state update
+    * trained for 600 epochs, with a dropout of 0.3 and an
+      ℓ2 regularization weight of 1e-4
+    * We trained the model 5 times, reporting average performance
+* Our model using the RoBERTa embeddings improves greatly on the Valen & Arous
+  * either regarding the MAE or the Pearson coefficient
+  * The best results on opinion were obtained using a bimodal model
+    using the textual and the audio modalities.3 
+  * ie DialogueRNN with RoBERTa embeddings is a strong baseline for
+    Affective Phenomenon Recognition in Conversation (APReC)

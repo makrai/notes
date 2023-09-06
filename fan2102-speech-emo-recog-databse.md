@@ -22,7 +22,7 @@ https://github.com/tobefans/LSSED
   it still has some obvious intonation characteristics
   * Intuitively, sad voices are generally low-pitched and slow while
     happy voices are usually the opposite.  Up to now, many algorithms have
-* researches carried out on SER
+* research carried out on SER
   * Schuller+ (2003) applies continuous Hidden Markov Models (HMM) to introduce
     SER with a self-collected speech corpus
   * standardized speech emotion databases
@@ -32,8 +32,8 @@ https://github.com/tobefans/LSSED
       * IEMOCAP [6] collects 7,433 sentences (13 hours and 40 minutes in total)
         spoken by 10 people
       * MELD [8] contains 13,708 sentences (about 12 hours) from 407 people
-  * In [9], decision tree is utilized to mitigate error propagation on AIBO [2]
-  and IEMOCAP [6]
+  * In [9], decision tree is utilized to
+    mitigate error propagation on AIBO [2] and IEMOCAP [6]
   * In [10], RBM is applied to learn discriminatory features on EMODB [3] and
     ENTERFACE [4]
   * deep learning

@@ -368,13 +368,13 @@ representations (UTA) is more common
     * ten actors which attach different realistic emotions in dyadic sessions
       makes this dataset the collection with the strongest ground truth
   * visual features of high quality, since
-    markers on the face, head and hands were used in order to capture facial
-    expressions and hand movements
+    markers on the face, head and hands were used for
+    capturing facial expressions and hand movements
   * one of the oldest, well recorded, annotated and maintained datasets
-  * the overwhelming majority of multimodal architectures are evaluated using
+  * the overwhelming majority of multimodal archits are evaluated with IEMOCAP
   * overfitting
-    * a variety of unwanted features since it only includes a small number of
-      speakers and subjects discussed
+    * a variety of unwanted features since it only includes a
+      small number of speakers and subjects discussed
 * The rest of the datasets are not extensively used in multimodal emotion recog
   * they can be used in a cross-dataset evaluation scheme
     in order to produce highly generalizable results and

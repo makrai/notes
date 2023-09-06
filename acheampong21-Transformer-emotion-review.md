@@ -110,8 +110,8 @@ Artificial Intelligence Review (2021)
   EmotionLines dataset
 * Huang+ [38] competition
 * Malte and Ratadiya [45] using BERT to detect cyber abuse in English and Hindi
-* Park+ [48] learn dimensional valence arousal dimension (VAD) scores from the
-  corpus with categorical emotion labels
+* Park+ [48] learn dimensional valence arousal dimension (VAD) scores
+  from the corpus with categorical emotion labels
 * Matero+ [55] assessed suicide risks using multi-level dual-context language
   and BERT
 * Jwa+ [59] designed the BAKE and exBAKE model to automatically detect fake news

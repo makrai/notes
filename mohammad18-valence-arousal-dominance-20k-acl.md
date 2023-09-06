@@ -32,14 +32,14 @@ ACL long 2018
     * valence (positiveness–negativeness/pleasure–displeasure)
     * arousal (active–passive)
     * dominance (dominant–submissive)
-  * (Osgood+ 1957; Russell, 1980, 2003)
+  * Osgood+ (1957); Russell (1980, 2003)
     * James A Russell. 1980. A circumplex model of affect. Journal of personali
     * JA Russell. 2003 Core affect and the psychological construction of emotion
 * beneficial for
-  * natural language processing (e.g., automatic sentiment and emotion anal)
+  * natural language processing (eg automatic sentiment and emotion anal)
   * psycholinguistics
-  * psychology (e.g., for understanding how people view the world around them)
-  * social sciences (e.g., for understanding relationships between people), and
+  * psychology (eg for understanding how people view the world around them)
+  * social sciences (eg for understanding relationships between people), and
   * evolutionary linguistics (how language and behaviour relate for advantag)
 * VAD lexicons created using rating scales
   (Bradley and Lang, 1999; Warriner+ 2013)
@@ -51,7 +51,7 @@ ACL long 2018
     (Louviere, 1991; Cohen, 2003; Louviere+ 2015)
   * The scores are fine-grained real-valued numbers in the interval 0 to 1
   * the NRC Valence, Arousal, and Dominance (VAD) Lexicon
-* Correlations (r) between repeated annotations, e.g.  split-half reliability
+* Correlations (r) between repeated annotations, eg split-half reliability
   * r = 0.95 for valence, r = 0.90 for arousal, and r = 0.91 for dominance
   * well above the SHR scores obtained by Warriner+ (2013)
 * Respondents had the option of additionally filling out a brief demographic
@@ -216,7 +216,7 @@ ACL long 2018
   * high V, A, and D words in books and literature
 * hashtag words and emojis common in tweets, emotion denotating words,
   emotion associated words, neutral terms, words belonging to particular POS
-* demographic groups and specific groups of words, for example, e.g. whether
+* demographic groups and specific groups of words, for example, eg whether
   * younger annotators have a higher shared understanding of tweet terms,
   * women have a higher shared understanding of adjectives
 * shared understanding in geographic and language groups
