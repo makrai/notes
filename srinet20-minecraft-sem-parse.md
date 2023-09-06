@@ -1,4 +1,4 @@
-CraftAssist Instruction Parsing: Semantic Parsing for a Voxel-World Assistant 
+CraftAssist Instruction Parsing: Semantic Parsing for a Voxel-World Assistant
 Kavya Srinet, Yacine Jernite, Jonathan Gray, Arthur Szlam
 ACL 2020
 
@@ -8,49 +8,49 @@ https://github.com/facebookresearch/craftassist/tree/master/acl2020_submission
 # Abstract
 
 * a semantic parsing dataset focused on instruction-driven communication with
-  an agent in the game Minecraft. The dataset consists of
+  an agent in the game Minecraft
   * 7K human utterances and their corresponding parses. Given proper world
     state, the parses can be interpreted and executed in game
   * We report the performance of baseline models, and analyze their successes
-    and failures.
+    and failures
 
 # 1 Intro
 
 * Semantic parsing as a component for NLU in
   * human-robot interaction systems (Lauria+ 2001; Bos & Oka, 2007; Tellex+
     2011; Matuszek+ 2013; Thomason+ 2019) and for
-  * virtual assistants (Campagna+ 2017; Kollar+ 2018; Campagna+ 2019). We
-  * deep learning methods in this space, as recently researchers have shown
+  * virtual assistants (Campagna+ 2017; Kollar+ 2018; Campagna+ 2019)
+  * deep learning methods in this space
     * more generally (Dong and Lapata, 2016; Jia and Liang, 2016; Zhong+ 2017)
     * hE In the space of human-robot (or human-assistant) interaction, the
-      publicly available semantic parsing datasets are small. Furthermore, it
+      publicly available semantic parsing datasets are small
     * difficult to reproduce the end-to-end results (from utterance to action
       in the environment) because of the wide variety of robot setups &
       proprietary nature of personal assistants
 * we introduce a new semantic parsing dataset for human-bot interactions. Our
   “robot” or “assistant” is embodied in the sandbox construction game Minecraft
   2 , a popular multiplayer openworld voxel-based crafting game. We
-  + the associated platform for executing the logical forms in game.
+  + the associated platform for executing the logical forms in game
 * Minecraft has several benefits for studying task oriented NLU
   * Compared to physical robots, Minecraft allows less technical overhead
     * eg difficulties with hardware and large scale data collection. On the
   * has all the basic in-game capabilities of a player, including movement and
     placing or removing voxels. Thus Minecraft preserves many of the NLU
-  * discussions of navigation and spatial object reference.
+  * discussions of navigation and spatial object reference
   * large scale human interaction because of its large player base, in the 10Ms
   * task space is complex. While there are many atomic objects in the game,
     * complex structures made up of collections of voxels such as a house/hill
     * The assistant cannot apprehend them without a perceptual system, creating
       Our contributions in the paper are as follows:
   * Grammar: We develop a grammar over a set of primitives that comprise a
-    mid-level interface to Minecraft for machine learning agents.  
+    mid-level interface to Minecraft for machine learning agents
   * Data: We collect 7K crowd-sourced annotations of commands generated
     independent of our grammar. In addition to the natural language commands
     and the associated logical forms, we release the tools used to collect
     these, which allow crowd-workers to efficiently and accurately annotate
-    parses.  
+    parses
   * Models: We show the results of several neural semantic parsing models
-    trained on our data.  
+    trained on our data
   * Execution: we also make available the code to execute logical forms in the
     game, allowing the reproduction of end-to-end results. This also
     * opens the door to using the data for reinforcement and imitation learning
@@ -77,9 +77,9 @@ https://github.com/facebookresearch/craftassist/tree/master/acl2020_submission
   * similar in scale to the datasets in (Wang+ 2015), but
   * smaller than (Zhong+ 2017)
   * In addition to mapping natural language to logical forms, our dataset
-    connects both of these to a dynamic environment. 
+    connects both of these to a dynamic environment
 * Lauria+ 2001; Bos & Oka, 2007; Tellex+ 2011; Matuszek+ 2013; Thomason+ 2019:
-  semantic parsing used for interpreting natural language commands for robots.
+  semantic parsing used for interpreting natural language commands for robots
   * we: the “robot” is embodied in the Minecraft game instead of in the
     physical world
 * Boye+ 2006: semantic parsing for spoken dialogue with an embodied character
@@ -88,29 +88,29 @@ https://github.com/facebookresearch/craftassist/tree/master/acl2020_submission
     language
     * We go from language to logical forms end-to-end with no pattern match to
       mark that a sentence is a command to perform necessary
-* Semantic parsing in a voxel-world 
+* Semantic parsing in a voxel-world
   * Wang+ (2017) describe a method for building up a programming language from
     a small core via interactions with players
-* We demonstrate the results of several neural parsing models on our dataset.
+* We demonstrate the results of several neural parsing models on our dataset
   * a re-implementation of Dong and Lapata, (2016) adapted to our grammar, and
     a straightforward fine-tuned BERT model (Devlin+ 2018). There have been
 * neural architectures for semantic parsing, for example (Jia and Liang, 2016;
-  Zhong+ 2017; Wang+ 2018; Hwang+ 2019); in particular 
+  Zhong+ 2017; Wang+ 2018; Hwang+ 2019); in particular
   * Hwang+ (2019) use a BERT based model. In those papers, as in this one, the
     models are trained with full supervision of the mapping from natural
     language to logical forms, without considering the results of executing the
     logical form (in this case, the effect on the environment of executing the
     actions denoted by the logical form).  There has been progress towards
-* “weakly supervised” semantic parsing (Artzi and Zettlemoyer, 2013; Liang+
-  2016; Guu+ 2017) 
+* “weakly supervised” semantic parsing
+  (Artzi and Zettlemoyer, 2013; Liang+ 2016; Guu+ 2017)
   * the logical forms are hidden variables, and
-    the only supervision given is the result of executing the logical form.
+    the only supervision given is the result of executing the logical form
 * approaches without even passing through (discrete) logical forms at all
   (Riedel+ 2016; Neelakantan+ 2016). We hope that the dataset introduced
   here, which has supervision at the level of the logical forms, but whose
   underlying grammar and environment can be used to generate essentially
   infinite weakly supervised or execution rewards, will also be useful for
-  studying these models.
+  studying these models
 * Minecraft, especially via the MALMO project (Johnson+ 2016) has been used as
   a base environment for several machine learning papers
   * reinforcement learning (RL) (Shu+ 2017; Udagawa+ 2016; Alaniz, 2018; Oh+
@@ -134,7 +134,7 @@ https://github.com/facebookresearch/craftassist/tree/master/acl2020_submission
   Minecraft agent
   * our collection of free generations (see 3.1.1) includes
     annotated examples from similar studies of players interacting with
-    a player pretending to be a bot.
+    a player pretending to be a bot
 
 # 6 Experiments
 
@@ -146,7 +146,7 @@ https://github.com/facebookresearch/craftassist/tree/master/acl2020_submission
   which are most commonly mistaken, with the number of false positive and false
   negatives out of these 363 mistakes
   * Unsurprisingly, the most commonly confused span leaf is “has tag”, which we
-    use as a miscellaneous marker.
+    use as a miscellaneous marker
   * the other span mistakes are evenly spread over all other leaves
 * The next most common source of mistakes comes from the model struggling
   * between identifying

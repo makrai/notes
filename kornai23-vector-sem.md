@@ -34,6 +34,19 @@ More complex notation
 
 15. BinaryAtom -> at | between | cause_ | er_ | follow | for_ | from | has | in
     | ins_ | is_a | lack | mark_ | on | part_of | under
+* “doing grammar by spreading activation” 
+  * our concept is almost ident to that of Jackendoff and Audring, 2020 7.2.3
+  * both go back to the same ideas (Quillian, 1969; Collins and Loftus, 1975),
+  * obliterating the usual distinction between rules and representations. In
+  * all the work is done by the representations and
+    there are only a few generic rules that apply to all representations,
+    primitive and derived, intermediary or final, the same way
+  * characteristic of early combinatorial system like the untyped lambda
+    calculus (Church, 1936) and categorial grammar (Ajdukiewicz, 1935)
+  * maintained in all implementations of 4lang , be they by 
+    * Eilenberg machines (which directly formalize spreading activation), by
+    * (hyper)graph kernel methods (Ghosh+ 2018), or by 
+    * direct linear algebraic manipulation.
 
 ### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
@@ -122,13 +135,12 @@ More complex notation
     so slight that we see no reason to even make the distinction:
   * eg `part_of` (discussed in 2.4 above) and `is_a`
 * The U/V (intransitive/transitive) distinction (p71)
-* Since our goals are remarkably close, and our motivations are nearly (p72)
-  identical, readers of Jackendoff and Audring (2020) may find a direct
-  comparison between the two formalisms helpful
+* Since our goals are remarkably close, and our motivations are nearly ident,
+  readers of Jackendoff and Audring (2020) may find                     (p72)
+  a direct comparison between the two formalisms helpful
   * Turning to the semantic component,
     we avoid the system of linking and coindexation that J&A 4.13.1 rely on
-    (the equalizers introduced in 3.3 will to some extent make up for this
-    loss)
+    (equalizers introduced in 3.3 will to some extent make up for this loss)
 
 # 3 Time and space
 
@@ -147,9 +159,9 @@ More complex notation
 
 # 6 Modals and counterfactuality
 
-##6.1 Tense and aspect
+## 6.1 Tense and aspect
 
-##6.2 The deontic world (The instrumental is also discussed here)
+## 6.2 The deontic world (The instrumental is also discussed here)
 
 * lex sem drives the way things are referred to in language
   * instruments again illustrate this point
@@ -168,9 +180,9 @@ More complex notation
     * Our own definitional attempt differs from these chiefly in being provided
       in a fully formalized language, in keeping with our overall plan
 
-##6.3 Knowledge, belief, emotions
+## 6.3 Knowledge, belief, emotions
 
-##6.4 Defaults
+## 6.4 Defaults
 
 # 7 Implicature and gradient adjectives
 
@@ -179,20 +191,21 @@ More complex notation
 ## 7.3 Implicature
 ## 7.4 Spreading activation
 
+* see the end of sec 1.5
 * parsing in algebraic semantics is relatively easy:
   * It should be clear from 7.3
   * after some morphological analysis, we just look up the words in the lexicon
-    and apply spreading activation and unification algorithms in
-  * the same manner as we analyzed colorless green ideas sleep furiously in 6.4
+    and apply spreading activation and unification algorithms
+  * in the same manner as we analyzed colorless green ideas sleep furi in 6.4
   * This is the approach taken eg in
     * Unification Grammar (Shieber, 1986)
     * HPSG (Pollard and Sag, 1987)
     * and more recently in
-      * Extended Dependency Unification Grammar (EDUG, Hellwig, 1993)
-      * and Abstract Meaning Representation (AMR, Banarescu+ 2013)
-  * Broadly speaking, all ‘algebraic’ approaches
+      * Extended Dependency Unification Grammar (EDUG, Hellwig, 1993) and
+      * Abstract Meaning Representation (AMR, Banarescu+ 2013)
+  * Broadly speaking, all ‘algebraic’ approaches are direct
     * ie not just the classic AI models originating with Quillian (1967), but
-      also Pān.ini) and Generative Semantics
+      also Pān.ini and Generative Semantics
     * proceed from meaning representation to surface form directly,
       without any reliance on Logical Form
     * view interpretation as the inverse task, analysis by synthesis
