@@ -278,8 +278,7 @@ TACL Volume 7, 2019 p.49-72
 # 6 Explaining model predictions 10
 
 * relatively underexplored area, and we call for more work in this direction
-* Other work considered learning textual-visual explanations from multimodal
-  annotations (Park+ 2018)
+* learning textual-visual explanations from multimodal annotations (Park+ 2018)
 
 # 7 A few other methods
 

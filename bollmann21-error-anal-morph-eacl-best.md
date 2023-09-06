@@ -5,12 +5,11 @@ EACL 2021
 # Abstract
 
 * We evaluate two common conjectures in error analysis of NLP models:
-  * Morphology is predictive of errors; and
+  * (i) Morphology is predictive of errors; and
     * Using morphological features does improve error prediction across tasks;
-  * the importance of morphology increases with the morphological complexity of
-    a language
+  * (ii) the importance of morph increases with the morph complexity of a lang
     * effect is less pronounced with morphologically complex languages
-* four different tasks and up to 57 languages
+* four tasks and up to 57 languages
 * only (i) is true
 * We speculate this is because
   morphology is more discriminative in morphologically simple languages
