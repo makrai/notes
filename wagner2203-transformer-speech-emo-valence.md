@@ -3,12 +3,13 @@ Johannes Wagner, Andreas Triantafyllopoulos, Hagen Wierstorf,
   Maximilian Schmitt, Felix Burkhardt, Florian Eyben, Björn W. Schuller
 arXiv:2203.07378 [eess.AS]
 
+
 # Abstract
 
-* transformer-based architectures which are pre-trained with self-supervision
-* audio domain: such architectures have also been successfully utilised
-* hE not evaluated the influence of model size and pre-training data on
-  downstream performance, and limited attention to
+* transformer-based architectures pre-trained with self-supervision
+* audio domain: successfully utilised
+* hE not evaluated the 
+  * influence of model size and pre-training data on downstream performance,
   * generalisation, robustness, fairness, and efficiency
 * we: a thorough analysis of these aspects on several pre-trained variants of
   wav2vec 2.0 and HuBERT that we
@@ -24,6 +25,7 @@ arXiv:2203.07378 [eess.AS]
   * not fair towards individual speakers
 * success on valence is based on implicit linguistic information learnt
 * remaining issues: robustness and individual speaker
+
 
 # 1 Intro
 
@@ -48,7 +50,7 @@ arXiv:2203.07378 [eess.AS]
 * challenges remain for real-world paralinguistics-based SER applications:
   * improving on its inferior valence performance [4, 8],
   * overcoming issues of generalisation and robustness [12, 13], and
-  * alleviating individual~ and group-level fairness concerns [14, 15]
+  * individual~ and group-level fairness [14, 15]
 * Previous works have attempted to tackle these issues in isolation, eg by
   * eg cross-modal knowledge distillation to increase valence performance [16],
   * speech enhancement or data augmentation to improve robustness [12, 13], and
@@ -56,57 +58,56 @@ arXiv:2203.07378 [eess.AS]
 * each of those approaches comes with its own hyperparameters to tune
 * general-purpose foundation models that can be easily adapted to several use-
   cases [18]
-  * trained on large datasets, often using proxy tasks
-    to avoid dependencies on hard-to-acquire labels, and then
+  * trained on large datasets, often using proxy tasks to avoid dependencies on
+    hard-to-acquire labels, and then
   * fine-tuned on (small) sets of labelled data for their intended tasks
-  * tremendous success in computer vision [19], NLP [20], and
-    computer audition [21, 22] – including SER [23, 24, 25]
+  * tremendous success in computer vision [19], NLP [20], and computer audition
+    [21, 22] – including SER [23, 24, 25]
   * speech: wav2vec 2.0 [21] and HuBERT [22]
 * best performing model publicly available [26]
   * the first transformer-based dimensional SER model released
   * [an introduction how to use it](https://github.com/audeering/w2v2-how-to)
 
+
 # 2 Rel work: wav2vec2.0 and HuBERT utilised for (primarily categorical) SER
 
 * Table 1: a summary of recent works based on wav2vec 2.0 and HuBERT on the
   IEMOCAP dataset [33], where most prior works have focused
-  * ranked by unweighted average recall (UAR) / weighted average recall (WAR)
+  * ranked by unweighted average recall (UAR)/weighted average recall (WAR)
   * four emotional categories of anger (1103 utterances), happiness (1636),
     sadness (1084), and neutral (1708), which is the typical categ for IEMOCAP
   * unbalanced class problem, UAR and WAR can diverge
-    * nL Yuan+ [28] report both yielding almost identical values. We therefore
-      assume that a ranking over both metrics is still meaningful. Most of the
+    * nL Yuan+ [28]: both yield almost identical values
   * cross-validation
     * most works apply leave-one-session-out cross validation (5 folds), except
       Yuan+ [28] using leave-one-speaker-out cross validation (10 folds) and
-      Wang+ [23] who do not explicitly mention which folds they used. The
+      Wang+ [23] who do not explicitly mention which folds they used
   * model size
-    * base architecture (w2v2-b / hubert-b) or the large architecture (w2v2-L /
-      hubert-L) in a down-stream classification task (for
-      * more details on the models, see Section 3.2). Even though, authors have
+    * base architecture (w2v2-b/hubert-b) or the large architecture (w2v2-L /
+      hubert-L) in a down-stream classification task
+      * more details on the models, see Section 3.2
   * different head architectures and training procedures
 * general observations from Table 1:
   1. roughly 10% better performance with models where the weights of the
-     pre-trained model were not frozen during the down-stream task
+     pre-trained model were _not frozen_ during the down-stream task
   2. Using a pre-trained model fine-tuned for speech recognition does not help
      with the down-stream task (eg row 15 vs row 19 −3.2%)
   3. When the base and the large architecture of the same model type are tested
-     within the same study, the
-     large one yields better results (eg row 17 vs row 22 +3.0%), though the
-     difference can be quite small (eg row 19 vs row 20 +.5% )
-  4. Likewise, in that case HuBERT outperforms wav2vec 2.0
-     (eg row 22 vs row 20: +2.1%)
-  5. When performing a fine-tuning of the transformer layers, a
-    simple average pooling in combination with
-    a linear classifier built over wav2vec 2.0 or HuBERT (Wang+ [23]) 
-    shows best performance in the ranking
+     within the same study, the large one yields better results (eg row 17 vs
+     row 22 +3.0%), though the difference can be quite small (eg row 19 vs row
+     20 +.5%)
+  4. Likewise, in that case HuBERT outperforms wav2vec 2.0 (eg row 22 vs row
+     20: +2.1%)
+  5. When performing a fine-tuning of the transformer layers, a simple average
+     pooling in combination with a linear classifier built over wav2vec 2.0 or
+     HuBERT (Wang+ [23]) shows best performance in the ranking
     * hE, some of the more complex models [32] only report results without fint
-      * eg the cross-representation encoder-decoder model proposed by Makiuchi+
+      * eg the cross-representation encoder-decoder model by Makiuchi+ (2021)
 * dimensional emotion
   * the aforementioned studies have focused on emotional categories
   * several studies concentrate on dimensions
 * most comparable to ours is that of Srinivasan+ [16], 
-  * wav2vec 2.0 / HuBERT fine-tuned on arousal, dominance, and valence
+  * wav2vec 2.0/HuBERT fine-tuned on arousal, dominance, and valence
   * particularly good in predicting valence 
     * a feature which has long escaped audio-based models
   * When additionally joining audio embeddings from the fine-tuned models and
@@ -126,7 +127,7 @@ arXiv:2203.07378 [eess.AS]
       pre-trained BERT embeddings with an untrained CNN model, and of
     * Li+ [35] (.377) who
       * pre-train a CRNN model on LibriSpeech
-        * using Contrastive Predictive Coding and subsequently
+        * using Contrastive Predictive Coding 
       * fine-tuned it on MSP-Podcast
 * ? influence of the amount and domain of the data used for pre-training
   * eg the large model consistently shows better performance
@@ -140,8 +141,7 @@ arXiv:2203.07378 [eess.AS]
 * augmentation ie perturbation ie noise and reverb
   * Besides investigating performance of SER models on clean test data, it is
     important to show that they also work well under more challenging condis
-  * augmentation methods have been used to improve performance on clean test
-    data [36, 37],
+  * augmentation methods to improve performance on clean test data [36, 37]
   * hE only a few studies have evaluated performance on augmented test data
   * prev SER models show robustness issues (Jaiswal& [38] and Pappagari+ [39])
     * particularly for background noise and reverb
@@ -153,9 +153,9 @@ arXiv:2203.07378 [eess.AS]
   * For SER models, only a few evaluations are available
   * Gorrostieta+ [17] found a decrease in CCC for females compared to males for
     arousal in MSP-Podcast (v1.3) of around .234 for their convolutional model
-    * individual fairness by estimating the influence of the speaker on the
-      model performance
-      * a known problem for other speaker verification models [42]
+  * individual fairness: the influence of the speaker on the performance
+  * a known problem for other speaker verification models [42]
+
 
 # 3 Experimental setup: models, databases, and evaluation methods
 
@@ -166,20 +166,19 @@ arXiv:2203.07378 [eess.AS]
   * 84 hours of naturalistic speech from podcast recordings
   * original labels cover a range from 1 to 7, which we normalise into the
     interval of 0 to 1. In-domain results are reported on the test-1 split
-    * The test-1 split contains 12, 902 samples (54% female / 46% male) from
-      60 speakers (30 female / 30 male)
+    * The test-1 split contains 12, 902 samples (54% female/46% male) from 60
+      speakers (30 female/30 male)
     * samples per speaker are not balanced and vary between 42 and 912
       * combined length: roughly 21 hours, and
       * vary between 1.92 s and 11.94 s per sample
 * We report cross-domain results for the IEMOCAP  dataset [33]
   * ie Interactive Emotional Dyadic Motion Capture
-  * roughly 12 hours of scripted and improvised dialogues by ten speakers
-    (5 female / 5 male)
+  * ~ 12 hours of scripted and improvised dialogues by 10 speakers (5 females)
   * the same dimensional labels as MSP-Podcast corpus, but in a range of 1--5,
     which we normalise to the interval 0 to 1
   * Since we use the dataset only during evaluation, we do not apply the usual
     speaker cross-folding, but treat the corpus as a whole
-  * 10, 039 samples (49% female / 51% male) with a 
+  * 10, 039 samples (49% female/51% male) with a 
     * length varying between .58 s and 34.14 s
 * Finally, we additionally report cross-corpus results for valence on MOSI
   * ie Multimodal Opinion Sentiment Intensity (MOSI) [49] corpus
@@ -187,8 +186,8 @@ arXiv:2203.07378 [eess.AS]
   * annotated for sentiment on a 7-point Likert scale ranging from −3 to 3,
     which we normalise to the interval 0 to 1
   * gender/sex labels are not part of the distributed database, we re-annotated
-  * We report results on the test set that contains 685 samples (51% female /
-    49% male) with a total duration of 1 hour and
+  * We report results on the test set that contains 685 samples (51% female)
+    * total duration of 1 hour and
     * sample length varying between .57 s and 33.13 s
 * arousal and valence from sentiment
   * sentiment is a different concept than valence
@@ -196,12 +195,13 @@ arXiv:2203.07378 [eess.AS]
   * valence more generally characterises a person’s feeling [50]
   * nL sentiment annotations can be decomposed to intensity and polarity [51],
     which we consider to roughly correspond to arousal and valence
-  * We expect some correlation between
-    (predicted) valence and (annotated) sentiment scores
-  * As our primary interest is a
-    between-model comparison for out-of-domain generalisation, and
-    not the absolute sentiment prediction performance itself
-    => the use of MOSI for cross-corpus experiments well-motivated practically
+  * We expect some correlation between (predicted) valence and (annotated)
+    sentiment scores
+  * As our primary interest is a between-model comparison for out-of-domain
+    generalisation, and not the absolute sentiment prediction performance
+    itself => the use of MOSI for cross-corpus expers is well-motivated
+    practically
+
 
 # 4 Results with publicly-available pre-trained models for dimensional SER (cf)
 
@@ -209,7 +209,38 @@ arXiv:2203.07378 [eess.AS]
 
 ## 4.2 Do the models generalise better across different domains?
 
-## 4.3 More (and more diverse) data during pre-training ?=> better performance?
+## 4.3 [earlier 5.3] Do the models implicitly learn linguistic information?
+
+* To asses how sensitive the models are to linguistic content, we generated a
+  synthesised version of a subset of the test set from the transcriptions of
+  MSP-Podcast.3 
+* Figure 4 shows CCC performance for valence on the original and synthesised
+  * performance gaps between the models in Figure 2 are directly linked with
+    their ability to predict sentiment. Models reaching a high performance on
+    the original files also do so on their synthetic versions and vice versa.
+* to learn linguistic content, a fine-tuning of the transformer layers is
+  essential
+  * otherwise correlation drops to almost zero.
+* This finding is also important for works doing in-domain training on IEMOCAP,
+  * parts of the conversations are scripted which results in a leakage of text
+    information that may result in overoptimistic results [56] when that text
+    information is exploited by transformer models
+* our models may inherit similar biases as those found in NLP models [57].  A.
+  Triantafyllopoulos, J. Wagner, H. Wierstorf, M. Schmitt, U. Reichel, F.
+  Eyben, F. Burkhardt, and B. W. Schuller, “Probing speech emotion recognition
+  transformers for linguistic knowledge,” InterSpeech 2022 pp. 146–150
+
+## 4.6 [earlier 4.3] More (and more diverse) data during pre-training ?=>
+better performance?
+
+* arousal and dominance: all tested models perform equally well, whereas
+* valence/sentiment the data used for pre-training has a strong effect
+* Mixing data from several domains 
+  * among w2v2s: considerable improvement for w2v2-L-robust compared to w2v2-L,
+    which is only trained on clean speech.
+  * hE, hubert-L, which uses the same pre-training data as w2v2-L, which is
+    also trained on clean speech, still performs as good as w2v2-L-robust
+* multi-lingual data: we see a performance drop when tested on English speech
 
 ## 4.4 Does a larger architecture lead to better performance?
 
@@ -219,24 +250,103 @@ arXiv:2203.07378 [eess.AS]
 
 ## 4.7 Is performance equal across all speakers?
 
+* Performance for the best foundation models is similar between most speakers
+  in MSP-Podcast, but can deteriorate to low CCC values for some speakers.
+
 ## 4.8 Does explicit linguistic information further improve performance?
+
 
 # 5 Analysis 13
 
 ## 5.1 Why do transformer-based models generalise so well?
 
+* Even without pre-training, the latent space provided by the transformer
+  architecture generalises better than CNN14, as it 
+  * abstracts away domain and speaker
+  * Pre-training 
+    * marginally improves arousal and dominance performance but is
+    * critical for valence.
+
 ## 5.2 How important is a fine-tuning of the transformer layers?
 
-## 5.3 Do the models implicitly learn linguistic information?
+
 
 # 6 Efficiency improvements 18
 
 ## 6.1 Does pre-training help with training stability and convergence?
 
+* Figure 11 shows the mean and standard deviation over the performance on the
+  development set across three trials for CNN14 and w2v2-b
+  * CNN14 shows a constant jittering across all 60 epochs, whereas 
+  * w2v2-b converges faster and we can reduce the number of epochs to 5
+
 ## 6.2 How many transformer layers do we really need?
+
+* We can reduce the number of transformer layers to 12 without a degradation
+  * With less than 12 layers we begin to see a negative effect on valence
 
 ## 6.3 Can we reduce the training data without a loss in performance?
 
-# 7 Summary 21
+* only possible for arousal and dominance
+
+
+# 6 [earlier 7] Summary 21
+
+## Effect of pre-training
+
+* pre-training is essential to get good performance (Section 4.6), especially
+  for the valence dimension
+* when training wav2vec 2.0 from a random initialisation (Section 4.11): the
+  model performs substantially worse on all three dimensions, and its
+  embeddings are unable to capture valence information. In addition,
+* pre-training serves as a form of regularisation which helps stabilise the
+  training (Section 5.1), thus resulting in 
+  * models require less iterations, and less data to train on (Section 5.3).
+* hE !=> ‘more pre-training data leads to better performance’. In fact,
+* downstream performance can be negatively impacted by the introduction of more
+  data, as seen by the comparison between w2v2-L-vox and w2v2-L-xls-r, which
+  differ only in the fact that w2v2-L-xls-r has been trained on more (and more
+  diverse) data, yet performs worse on all three dimensions.
+
+## Generalisation: transformer-based models show 
+
+* very good cross-corpus generalisation (Section 4.6), 
+* robustness (Section 4.8), and appear 
+* invariant to domain, speaker, and gender characteristics (Section 4.11).
+* These seem to stem primarily from the architecture rather than the
+  pre-training as they are also evident in models inited from random (Sec 4.11)
+* several self-attention layers can be removed without hampering perf (Sec 5.2)
+  * though they might still be necessary for successful pre-training.
+
+## Fairness: fairness remains a challenging topic for contemporary ML
+
+* gender (Section 4.9), where we observe that transformer-based architectures
+  are more fair than the CNN14 baseline. However, we argue that 
+* individual fairness is important for SER. This refers to how models perform
+  * challenging even for the top-performing models investigated here (Sec 4.10)
+    * long known to impact other speech analysis models [35, 37].
+
+## Integration of linguistic and paralinguistic streams: finally, one of our
+
+* transformers seem capable of integrating both information streams of the
+  voice signal
+  * well-performing valence prediction models 
+    * retain their effectiveness for synthesised speech lacking emotional
+      intonation (Section 4.3) and 
+    * fail to benefit from fusion with explicit textual information (cf Sec 4.2).
+  * this is only possible when fine-tuning the self-attention layers (Sec 4.4),
+    * keeping them frozen results to complete failure for synthesised speech
+      (Section 4.3)
+    * ie ft leads to fundamental change in how the underlying signal is
+      represented (moving from almost no sensitivity to linguistic content to
+      increased reactivity to it).  This mechanism may be crucial in the
+      pursuit of paralinguistic and linguistic integration which is key to a
+      holistic understanding of human communication
+  * integration might prove problematic in cases where the two modalities
+    disagree, eg in cases of irony [67]. Our results also highlight that 
+* good valence performance might be language dependent as 
+  models pre-trained on a variety of languages perform worse for valence
+  compared with comparable models pre-trained only for English (Section 4.1).
+
 
 # 8 Conclusion

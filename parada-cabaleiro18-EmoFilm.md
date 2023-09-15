@@ -180,8 +180,8 @@ the reference labels of the test
 ### T. 3. Forced-choice categorical test with ‘distractor’ labels (74 listen)
 
 * two ‘distractor’ labels—surprise and neutral
-* perception tests were performed using a computer-based interface (developed
-  in the visual programming tool Max MSP1 ), with
+* perception tests were performed using a computer-based interface
+  (developed in the visual programming tool Max MSP1)
 * 225 Italian native listeners, who evaluated the Italian emotional speech of
   the database, ie 413 emotional utterances
 * T. 1 and T. 2 were performed together in the same perceptual session by 151
