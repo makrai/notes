@@ -25,9 +25,9 @@ ICLR 2015 arXiv:1412.6980 [cs.LG]
 
 * Stochastic gradientbased optimization is of core practical importance in
   * optimization of some scalar parameter ized objective function requiring
-  * If the function is differentiable w.r.t. its parameters, gradient descent
+  * If the function is differentiable wrt its parameters, gradient descent
     * efficient, since the computation of first-order partial derivatives
-      w.r.t. all the parameters is of the same computational complexity as just
+      wrt all the parameters is of the same computational complexity as just
       evaluating the function
   * Often, objective functions are stochastic.  For example, many objective
     * a sum of subfunctions evaluated at different subsamples of data; in this

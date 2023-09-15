@@ -12,7 +12,7 @@ https://github.com/loshchil/AdamW-and-SGDW
   inequivalence we expose),
 * we propose a simple modification to
   recover the original formulation of weight decay regularization
-  by _decoupling_ the weight decay from the optimization steps taken w.r.t. the
+  by _decoupling_ the weight decay from the optimization steps taken wrt the
   loss function
 * empirical evidence that our proposed modification
   * decouples the optimal choice of weight decay factor
@@ -96,7 +96,7 @@ https://github.com/loshchil/AdamW-and-SGDW
     and the weight decay factor much more independent, thereby
     easing hyperparameter optimization (see Figure 2).
 * The main motivation of this paper is to
-  improve Adam to make it competitive w.r.t. SGD with momentum
+  improve Adam to make it competitive wrt SGD with momentum
   even for those problems where it did not use to be competitive
   * hope: practitioners do not need to switch between Adam and SGD anymore,
   * reduce the common issue of selecting
