@@ -251,11 +251,9 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
   more directly its ability to capture cross-lingual semantics
   * task is to retrieve the correct target sentence for each query sentence,
     given a set of parallel sentences
-
   * We perform the retrieval using the cosine similarity scores of the sentence
   * For each language-pair dataset, we compute the retrieval accuracy averaged
     over the forward and backward directions (English <-> target language)
-
 * Table 4 shows the evaluation results for the languages in the CL training dat
   * EASE significantly outperforms the corresponding base models and SimCSE for
     all languages
@@ -265,7 +263,6 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
     conjecture that this is because the SimCSE model is trained using only the
     positive sentence pairs within the same language, which sometimes leads to
     less language-neutral representations
-
 * languages not included in the EASE training set (Table 5)
   * EASE performs robustly on these languages as well, which suggests that, in
   * ie crosslingual alignment effect propagates to other languages not used in

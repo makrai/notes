@@ -21,9 +21,8 @@ Alexis Conneau, G Lample, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
     * Lazaridou+ (2015)
     * Ammar+ (2016)
     * Artetxe+ (2016)
-    * Smith+ (2017)),
-      * Offline bilingual word vectors, orthogonal transformations and the
-        inverted softmax
+    * Smith+ (2017): Offline bilingual word vectors, orthogonal transformations
+        and the inverted softmax
     * seed parallel lexicon (Duong+ (2016)
   * parallel corpora (Gouws+ (2015)
 * reducing the need for bilingual supervision (Smith+ 2017) employ
@@ -151,10 +150,9 @@ Alexis Conneau, G Lample, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
 
 ## 3.3 Orthogonality
 
-* orthogonal constraint made the training procedure more stable in our
-  experiments
+* orthogonal constraint made the training procedure more stable in our expers
 * we propose to use a simple update step to ensure that the matrix W stays
-  close to an orthogonal matrix during training (Cisse+ (2017))
+  close to an orthogonal matrix during training (Cisse+ 2017)
   * alternate the update of our model with the following update rule on the
     `W ← (1 + β)W − β(W W^T)W` where β = 0.01 is usually found to perform well
   * eigenvalues of our matrices all have a modulus close to 1, as expected
