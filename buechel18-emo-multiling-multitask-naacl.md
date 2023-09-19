@@ -23,7 +23,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * more expressive models (eg Basic Emotions or Valence-Arousal-Dominance)
   * heterogeneous formats and small-sized, non-interoperable resources
     (lexicons and corpus annotations, Buechel and Hahn, 2017)
-    Sven Buechel and Udo Hahn. 2017.
+    Sven Buechel and Udo Hahn. 2017
     EmoBank: Studying the impact of {annotation perspective
       and representation format} on dimensional emotion analysis
     EACL 2017
@@ -31,19 +31,19 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * We: word emotion induction as a multi-task learning (MTL) problem
   * each independent emotion dimension is considered as an individual task
   * hidden layers are shared between these dimensions
-  * comparing our model against alternative emotion and polarity induction meth
+  * comparing our model against alternative emo and polarity induction methods
   * 9 typologically diverse languages and a total of 15 conditions
   * Our model turns out to outperform each one of them
     * largest gain on the smallest data sets, merely composed of 1000 samples
 * organization of the main part
-  * we will first validate our claim that MTL is superior to single-task
-    learning for word emotion induction
+  * we first validate our claim that MTL is superior to single-task learning
+    for word emotion induction
   * large-scale evaluation of our model featuring
-    9 typologically diverse languages and multiple publicly available embedding
+    9 typologically diverse languages and multiple publicly available embeds
   * 15 conditions
   * Our MTL model surpasses the current SOTA for each of them, and even
     performs competitive relative to human reliability
-  * largest benefit on the smallest data sets, comprising merely one thousand
+  * largest benefit on the smallest data sets, comprising merely 1 K
   * competitive to human annotation reliability
     in terms of inter-study as well as split-half reliability
 
@@ -57,7 +57,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * Basic Emotions (Ekman, 1992) or the
     * Valence-Arousal-Dominance model (Bradley and Lang, 1994)
 * multi-task learning (MTL; Caruana 1997) for word-level emotion prediction
-  * greatly decrease the risk of overfitting (Baxter, 1997), work well
+  * greatly decrease the risk of overfitting (Baxter, 1997), works well
   * for various NLP tasks
     * Setiawan+ 2015
       H Setiawan, Z Huang, J Devlin, T Lamar, R Zbib, R M. Schwartz, J Makhoul
@@ -84,11 +84,11 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * Psychological models of emotion can typically be subdivided into
   * discrete (or categorical) and
-    * centered around particular sets of emotional categories
-    * Ekman (1992), for instance, identifies six Basic Emotions
+    * with particular sets of emotional categories
+    * Ekman (1992) eg identifies six Basic Emotions
       (Joy, Anger, Sadness, Fear, Disgust and Surprise)
   * dimensional ones (Stevenson+ 2007; Calvo and Mac Kim, 2013)
-    * emotions to be composed of several influencing factors (mainly two or 3)
+    * emotions to be composed of several influencing factors (mainly 2 or 3)
       * often VAD (Bradley and Lang 1994)
         * Valence (a positive–negative scale),
         * Arousal (a calm–excited scale), and
@@ -103,8 +103,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       A novel approach to generate high-quality multi-lingual emotion lexicons
     LREC 2018
 * regression, not as a classification problem (Buechel and Hahn 2016)
-* In this paper, we focus on the VAD format for the following reasons:
-  1.  Valence exactly corresponds to polarity (Turney and Littman, 2003)
+* we focus on the VAD format for the following reasons:
+  1. Valence exactly corresponds to polarity (Turney and Littman, 2003)
     * emotion prediction can be seen as a generalization over classical
   2. diversity of available emotion lexicons with VAD encodings is largest
 
@@ -272,8 +272,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * Valence dimension are usually much higher than for Arousal and Dominance
     * in line with former studies (Sedoc+ 2017; Li+ 2017)
   * ordering between Arousal and Dominance
-    * e.g., to EN, EN+ and IT: V > D \approx avg > A
-    * e.g., PL, NL and ID, less clear though Valence still stands out
+    * eg to EN, EN+ and IT: V > D \approx avg > A
+    * eg PL, NL and ID, less clear though Valence still stands out
     * We observe the same general pattern for the reference methods
 * comparison to Sedoc+ (2017), arguably one of most related contributions, they
   * MTLNN using the Common model achieves about 10%points better on VA
@@ -289,5 +289,4 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 # 5 Conclusion 9
 
-* future work
-  * other format of emotion representation than VAD
+* future work: other format of emotion representation than VAD

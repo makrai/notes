@@ -114,14 +114,14 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * TUM AVIC  10h 21 speakers spontaneous English
   [22] Schuller, Müller, Eyben, Gast, Hörnler, Wöllmer, Rigoll, Höthker, Konosu
     “Being bored? recognising natural interest by extensive audiovisual
-    integration for real-life application,” 
+    integration for real-life application,”
     Image and Vision Computing, vol.  27, no. 12, pp. 1760– 1774, November 2009.
 
 ## 2.1 Lack of Naturalness
 
 * actors were used in the Emo-DB, CREMA-D, and Chen Bimodal database. A
-  * lack of naturalness, as the acted renditions 
-  * resemble more prototypical behaviors 
+  * lack of naturalness, as the acted renditions
+  * resemble more prototypical behaviors
     unlike daily interactions [23], [24], [25], [26].
 * elicitation schemes can attenuate the problem of acting [27], [28], [29]
   * IEMOCAP and MSP-IMPROV databases are two examples, where emotions were
@@ -141,7 +141,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     * colloquial discussions, the emotions will be biased toward positive
     * If the topic of discussion is noncontroversial => neutral
 * Figure 1 depicts the distribution for the emotional speech samples
-  in the arousal-valence space: IEMOCAP, MSP-IMPROV, SEMAINE, RECOLA and VAM 
+  in the arousal-valence space: IEMOCAP, MSP-IMPROV, SEMAINE, RECOLA and VAM
   * (the arousal-valence scores are normalized between -1 and 1). These figures
   * created as follows
     * First, we plot each speaking turn in the corpora as a dark point. Then,
@@ -165,7 +165,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     * mainly positive due to the colloquial interaction between the
   * VAM database mostly covers sentences with negative valence since the
     recordings come from the TV talk show Vera am Mittag, where the
-    participants discuss relationship issues 
+    participants discuss relationship issues
     (ie, fatherhood, affairs, and friendship) [15].
 
 ## 2.3 Limited Size of the Corpora
@@ -173,7 +173,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * Most emotional databases have few hours of recordings. To the best of our
 * the largest emotional corpora are included in Table 1
 * IEMOCAP, MSP-IMPROV, TUM AVIC and FAU-AIBO are the only corpora with > 9 h
-* also limits the advances in ASR 
+* also limits the advances in ASR
   o create recognition systems that are robust to expressive speech.
 
 ## 2.4 Limited Number of Speakers
@@ -191,12 +191,12 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 
 * the selection of the podcasts, segmentation of the podcasts into short turns,
   post-processing steps, and emotional annotation.
-* our previous work, we introduced the idea of building 
+* our previous work, we introduced the idea of building
   * a naturalistic database from existing speech corpora providing the
     proof-of-concepts behind this framework [31]
-  * That study relied on the Fisher corpus [32], which consists of 
+  * That study relied on the Fisher corpus [32], which consists of
     * telephone conversation between two participants. However, the Fisher
-    * hE not freely available to the broader community and the 
+    * hE not freely available to the broader community and the
     * interactions were mainly colloquial with very few sentences with negative
 * MSP-Podcast: podcasts recordings that are freely available on audio sharing
   * emotional diversity by selecting podcasts from a variety of topics,
@@ -230,17 +230,17 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
   speaking segments and music segments, one or multiple speakers.  Therefore,
 * we segment the podcasts into short segments using a diarization tool. We have
   * an online cloud applic called Speaker Attribution Intelligent Service [33],
-    * output: starting time, duration of the segments and the speaker ID 
-* We also manually segmented 105 podcasts. These podcasts are 
+    * output: starting time, duration of the segments and the speaker ID
+* We also manually segmented 105 podcasts. These podcasts are
   later used to train a classifier that can detect music (Sec 3.3)
 
 ## 3.3 Selecting Candidate Speaking Turns
 
 * Our goal is to consider single speaker segments, without noise or music.
 * selecting segments that are not too long or too short
-* We emotionally annotate the corpus at the segment level, where 
+* We emotionally annotate the corpus at the segment level, where
   each rater assigns an emotional label (Sec.  3.4). There is a tradeoff in the
-* ideal duration of the segments. If the segments are too 
+* ideal duration of the segments. If the segments are too
   * long, the emotional content may fluctuate within the segment, so a single
   * short, the listeners will have limited information to evaluate the
   * we considering segments with duration between 2.75s and 11s, discarding
@@ -254,8 +254,8 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     waveform amplitude distribution analysis (WADASNR) method [35], where we
     discard segments with SNR values less than 20dB
   * We also remove phone quality speech.  Audio recorded over the phone has
-    
-* We remove segments with music or speech with background music. Since 
+
+* We remove segments with music or speech with background music. Since
   * the diarization tool detects any segment that has an identifiable speech
   * we built a support vector machine (SVM) classifier to detect music by
     analyzing the spectrum of the audio signal represented by pyknogram
@@ -270,7 +270,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 
 * The retrieved speech segments are then emotionally annotated (Sec. 3.4). This
   * we manually check the retrieved samples before uploading them for
-  * Figure 3: 
+  * Figure 3:
     * 65.6% of the retrieved samples that were accepted
     * the reasons for rejection including segment with silence, multiple
       speakers, music and other reasons (eg, offensive language, explicit
@@ -281,8 +281,8 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 ## 3.4 Perceptual Evaluations using Crowdsourcing
 
 * Amazon mechanical Turk (AMT)
-* In our previous work [10], [19], we have annotated sentences with 
-  * emotional attributes (arousal, valence, dominance) and 
+* In our previous work [10], [19], we have annotated sentences with
+  * emotional attributes (arousal, valence, dominance) and
   * categorical emotions (ie, anger, happiness, sadness)
   * Attribute and categorical based descriptors provide complementary info
 * Figure 4 shows the questionnaire which has two parts
@@ -322,7 +322,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     * we increase the frequency that we include reference sentences. In
       * one reference sentence every four new sentences so we can detect faster
     * we randomly the presentation pattern for the four new sentences and the
-      reference sentence 
+      reference sentence
   * the stopping criterion includes not only primary emotions, as in our
     previous work, but also attribute-based annotations
     * metric: For primary emotions, we use the angular similarity metric, which
@@ -338,25 +338,23 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * we focus on balancing the emotional content in terms of attribute-based
   * dominance is highly correlated with arousal so we do not include this
   * We prefer attribute-based annotations over categorical annotations because
-  (1) the diversity on the emotional classes considered across studies [3], and
-  (2) the existence of annotations for arousal and valence in many corpora.
-
+  1. the diversity on the emotional classes considered across studies [3], and
+  1. the existence of annotations for arousal and valence in many corpora.
 * emotion detectors by training different models using available emotional
-  corpora to find the most expressive samples among the unlabeled pool of
+  corpora to find the most expressive samples among the unlabeled pool
   * We formulate the problem as a retrieval task where the objective is to
     identify sentences with high and low arousal, and high and low valence.
-    Using these methods, we expect a better balance in the emotion distribution
-    over the arousal-valence space by separately targeting these four problems.
-    Other formulations are possible, but are left as future work (eg,
-    retrieving categorical emotions [41], finding hotspots [42], [43]).
-
+  * we expect a better balance in the emotion distribution over the
+    arousal-valence space by separately targeting these four problems.
+  * Other formulations are possible, but are left as future work
+    * eg retrieving categorical emotions [41], finding hotspots [42], [43]
 * classification, preference learning and regression.
   * classification, we use the confidence level of the claseifiers to retrieve
     sentences from the pool that are most likely eo be in the target
-    arousal-valence region. Using 
+    arousal-valence region. Using
   * preference learning (ie ranking), we rank unlabeled samples according to
     their valence or arousal scores, selecting the sentences at the top (high)
-    and bottom (low) of the sorted list. Using 
+    and bottom (low) of the sorted list. Using
   * regression, we directly estimate the arousal and valence scores of the
     * selecting the ones with higher and lower values for each attribute
 * This section describes different solutions under these three ML problems,
@@ -365,14 +363,15 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 
 # 5 Quantitative analysis on the emotion distribution of the retrieved DB
 
-## 5.4
+## 5.4 Analysis of Primary Emotions
 
 * the distribution of the corpus across primary emotions is not as balanced as
-  the scores for attribute dimensions, where we have few sentences for
-  certain emotional classes (eg, fear, sadness)
-  * future: To address this problem, we are exploring preference learning
-    solutions for categorical emotions (eg, sad ranker). We are also increasing
-    the number of podcasts with emotional content including unrepresentative
-    emotional classes increasing the pool of candidate sentences.
+  the scores for attribute dimensions,
+  * we have few sentences for certain emotional classes (eg, fear, sadness)
+  * future/in progress
+    * preference learning solutions for categorical emotions (eg, sad ranker).
+    * increasing the number of podcasts with emotional content
+      including unrepresentative emotional classes
+    * increasing the pool of candidate sentences
 
 # 6 Conclusion: summery, final remarks and future directions

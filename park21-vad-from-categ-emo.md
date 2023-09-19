@@ -4,16 +4,15 @@ arXiv:1911.02499 [cs.CL]
 
 # Abstract
 
-* We present a model to predict fine-grained emotions
-  along the continuous dimensions of valence, arousal, and dominance (VAD)
+* We present a model to predict fine-grained VAD emotions
   with a corpus with categorical emotion annotations
+  * continuous dimensions of valence, arousal, and dominance (VAD)
   * trained by minimizing the Earth Mover's Distance (EMD) loss between
     the predicted VAD score distribution and 
     the categorical emotion distributions sorted along VAD
   * can simultaneously classify the emotion categories and predict VAD scores
     for a given sentence
-  * pre-trained RoBERTa-Large 
-    fine-tuned on three different corpora with categorical labels
+  * pre-trained RoBERTa-Large fine-tuned on three corpora with categ labels
   * evaluation on EmoBank corpus with VAD scores
     * categorical: comparable performance to that of the SOTA classifiers
     * VAD: significant positive correlations with the ground truth VAD scores
@@ -25,7 +24,7 @@ arXiv:1911.02499 [cs.CL]
 # 1 Intro
 
 * basic emotions and VAD
-  * basic emotions are categorized as happy,,, (Ekman, 1992; Plutchik, 2001)
+  * basic emotions eg happy (Ekman, 1992; Plutchik, 2001)
   * hE we can feel and express more subtle and complex emotions beyond them
   * emotions can be systematically represented with the Valence-Arousal-Domin
     * model maps emotional states to 3-dimensional continuous VAD space
@@ -35,11 +34,11 @@ arXiv:1911.02499 [cs.CL]
     * could benefit
       * clinical NLP (Desmet and Hoste, 2013; Sahana and Girish, 2015),
       * emotion regulation such as psychotherapy (Torre and Lieberman, 2018)
-        * eg analyzing the client’s utterance and acknowledging the negative
-          emotion as ‘neglected’ rather than ‘sad’, which is known as ‘affect
-          labeling’, would reduce negative physiological, behavioral, and
-          psychological responses resulting from that emotional state
-* lack of required annotated resources
+        * 'affect labeling': analyzing the client’s utterance and 
+          acknowledging the negative emotion as ‘neglected’ rather than ‘sad’,
+          would reduce negative physiological, behavioral, and psycho responses 
+          resulting from that emotional state
+* lack of annotated resources
   * a small sentence-level corpus with full VAD annot (Buechel and Hahn, 2017),
   * a corpus annotated with V and A dimensions
     (Preoţiuc-Pietro+ 2016a; Yu+ 2016a), and
@@ -51,14 +50,14 @@ arXiv:1911.02499 [cs.CL]
   (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
   Shahraki and Zaiane, 2017; Mohammad+ 2018)
-* In this paper, we propose a framework to learn the VAD scores of the
-  label words obtained from the NRC-VAD lexicon (Mohammad, 2018)
+* we propose a framework to learn the VAD scores of the label words obtained
+  from the NRC-VAD lexicon (Mohammad, 2018)
   * fine-tuning a pre-trained language model RoBERTa (Liu+ 2019)
   * we learn conditional VAD distributions
     through supervision of categorical labels and
     use them to compute VAD scores as well as to
     predict the emotion labels for a given sentence
-* contributions are as follows
+* contributions
   * a framework which enables learning to predict VAD scores as well as
     categorical emotions from a sentence only with categorical emotion labels
   * significant positive correlations to corresponding ground truth VAD scores
@@ -71,15 +70,16 @@ arXiv:1911.02499 [cs.CL]
 ## Overview
 
 * categorical labels can be mapped to word-level VAD scores by using NRC-VAD
-  lexicon (Mohammad, 2018). Thus we conceptualize categorical emotion as a
-  point in the VAD space. Then we sort the labels by each VAD dimension to
+  lexicon (Mohammad, 2018)
+  * categorical emotion as a point in the VAD space
+  * Then we sort the labels by each VAD dimension to
 
 ## Model Architecture (Fig 1a)
 
 * Formally, an emotion detection model is P (e|X) where
   e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E =
   X = {x1 , x2 , ..., xn } is a sequence of symbols xi representing the input
-  * Usually e is a one-hot vector in emotion classification.
+  * Usually e is a one-hot vector in emotion classification
 * since the VAD dimensions are nearly independent (Russell and Mehrabian,
   1977), we simply assume mutual independence:
 
@@ -87,6 +87,7 @@ arXiv:1911.02499 [cs.CL]
 
 * we need to obtain target conditionals for each P (v|X), P (a|X), P (d|X) from
   categorical emotion labels
+* sorted one-hot labels can be treated as a proxy of target conditionals
 * we minimize the distances between the true and predicted P (·|X)s
   * Since we sorted the labels, there is ordering among the classes
   * This should be taken into account during optimization, so
@@ -95,8 +96,8 @@ arXiv:1911.02499 [cs.CL]
 
 ## Predicting Continuous VAD Scores (Fig. 1d)
 
-* We can further compute the expectations of each predicted conditional
-  distributions of V, A, D dimension to predict the continuous VAD scores
+* We compute the expectations of each predicted conditional distributions of V,
+  A, D dimension to predict the continuous VAD scores
 
 ## Predicting Categorical Emotion Labels (Fig.  1c)
 
@@ -116,12 +117,12 @@ arXiv:1911.02499 [cs.CL]
 * 10,983 tweets
 * labels for presence or absence of 11 emotions (Mohammad+ 2018)
 
-### ISEAR. A single-labeled categorical emotion annotated corpus contains 
+### ISEAR. A single-labeled categorical emotion annotated corpus
 
 * 7,666 sentences. A label
 * 7 categorical emotions (Scherer and Wallbott, 1994)
 * split in a stratified fashion in terms of the labels
-* The train, valid, test set is split by the ratios (0.7:0.15:0.15).
+* The train, valid, test set is split by the ratios (0.7:0.15:0.15)
 
 ### GoEmotions. A multi-labeled categorical dataset
 
@@ -133,7 +134,7 @@ arXiv:1911.02499 [cs.CL]
 * To reduce the side-effects from this property, we choose the ‘Ekman’ option
   of the dataset provided by the authors which consists of 
   * 7 emotion labels including neutral class
-* We use pre-splits of train, valid, test set of the dataset.
+* We use pre-splits of train, valid, test set of the dataset
 
 ### EmoBank. Sentences paired with continuous VAD scores as labels
 
@@ -160,17 +161,17 @@ arXiv:1911.02499 [cs.CL]
 
 # 5 Ablation
 
-* the effect of model architecture, pre-training and fine-tuning should be
+* the effect of model architecture, pre-training and fine-tuning
   * We show the result for SemEval dataset because it gave the best performance
     for zero-shot score prediction
   * Validation set results are shown in Appendix
 * In Table 3, we present six models for ablation study
 * Model 1: RoBERTa trained on SemEval with our framework except
-  EMD loss replaced with cross-entropy which does not consider the order of
+  EMD loss replaced with cross-entropy which does not consider the order
   * our model shows better correlations in overall. (+.022)
 * Model 3 is fine-tuned on EmoBank without pretrained weights of RoBERTa,
   * highly underperforming result compared to Model 5 (+.302)
-  * performance Still comparable to that of AAN (Zhu+ 2019), it could be
+  * performance Still comparable to that of AAN (Zhu+ 2019)
 * Model 4 uses BERT (Devlin+ 2018) pre-trained weights
   * slightly lower performance than Model 5 (+.027)
 * Model 6 shows comparable performance compared to Model 5 when using full
@@ -178,7 +179,7 @@ arXiv:1911.02499 [cs.CL]
 
 # 6 Qualitative Examples
 
-* In Table 4, we show examples predicted from our model trained on SemEval. The
+* In Table 4, we show examples predicted from our model trained on SemEval
   * annotated tweets from SemEval test set,
     corresponding predicted categorical labels, and
     5 nearest neighbor emotional words with respect to the predicted VAD
@@ -187,68 +188,66 @@ arXiv:1911.02499 [cs.CL]
 
 # 7 Related work
 
-* word-level VAD annotation of English words has been created
-  (Bradley and Lang, 1999; Warriner+ 2013; Mohammad, 2018). Also, there are few
+* word-level VAD annotation of English words
+  (Bradley and Lang, 1999; Warriner+ 2013; Mohammad, 2018)
 * sentence-level VA or VAD annotated corpora
-  (Buechel and Hahn, 2017; Preoţiuc-Pietro+ 2016b; Yu+ 2016b). By using these
+  (Buechel and Hahn, 2017; Preoţiuc-Pietro+ 2016b; Yu+ 2016b)
 * predict VAD scores from sentences based on
   * variational autoencoders (Wu+ 2019),
   * adversarial learning (Zhu+ 2019),
-  * ensemble learning (Akhtar+ 2019).  However, sentence-level VAD annotated
+  * ensemble learning (Akhtar+ 2019)
 * sentences annotated with basic categorical emotions for VAD score prediction
-  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007; Mohammad,
-  2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017; Shahraki and
-  Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
+  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007; 
+  Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017; 
+  Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
   * more common than VAD
   * commonly used for emotion classification, we use them to predict VAD scores
     from Categorical model of emotion assumes that the catcal emotion labels
-* categorical dataset related to emotion has been released. Especially, there
-  * in healthcare domain (Sosea and Caragea, 2020),
-  * relation between emoji and emotion (Shoeb and de Melo, 2020), and emotional
-  * from social media (Ding+ 2020). All of these are cateogrical annotations
+* dataset related to emotion, all of these are cateogrical annotations
+  * in healthcare (Sosea and Caragea, 2020),
+  * relation between emoji and emotion (Shoeb and de Melo, 2020)
+  * from social media (Ding+ 2020)
   * multimodal emotion detection (Zhang+ 2020),
   * emotion in conversation (Ishiwatari+ 2020), and
-  * emotion change in a paragraph (Brahman and Chaturvedi, 2020).  There are
+  * emotion change in a paragraph (Brahman and Chaturvedi, 2020)
 * various types of label sets. To train model across the various shaped emotion
   * aggregate various format of emotion dataset into a common annotation schema
   * better performance using unified dataset
     (Bostan and Klinger, 2018; Belainine+ 2020)
-  * hE still the labels are mapped to other predefined emotions and the
+  * hE still the labels are mapped to other predefined emotions
   * Buechel and Hahn (2018) convert categorical emotions into VAD
     * using simple Feed-Forward Neural Networks
-    * with dataset labeled with both emotion categories and VAD.  However, in
+    * with dataset labeled with both emotion categories and VAD
 
 # 8 Discussion and Conclusions
 
 ## Robustness. Our framework could be applied to multimodal datasets
 
 * If we apply our framework to IEMOCAP (Busso+ 2008), the zero-shot VAD
-  predictions are significantly correlated with ground truths (V: 0.396, A:
-  0.241, D: 0.197) as well
-  * hE performance is rather low since our model does not leverage other
-    modalities such as audio or videos. Once our framework is extended to
-    integrate such information through image/speech encoders, performance would
-    be improved
+  predictions are significantly correlated with ground truths
+  (V: 0.396, A: 0.241, D: 0.197)
+  * hE performance is rather low
+    since our model does not leverage other modalities such as audio or videos
 * which word-level resources
   * We use NRC-VAD to estimate distance between emotions because it is
     constructed very carefully to locate words in VAD space
-  * If we use ANEW (Redondo+ 2007), we observe positive results as well (V:
-    0.682, A: 0.270, D: 0.296)
+  * If we use ANEW (Redondo+ 2007), we observe positive results as well
+    (V: 0.682, A: 0.270, D: 0.296)
 
 ## Ethical Considerations: understand and regulate emotional states
 
-* manipulating the semantic emotive content of user news feeds which
+* manipulating the semantic emotive content of user news feeds
   * can affect the choices of both individuals and groups on the platform to
     engage and interact (Stark and Hoey, 2020). From a different perspective,
-* problems might occur from the inaccurate results of the model. Mispredictions
-  of the models could result in harmful outcomes even in systems designed to be
+* problems might occur from the inaccurate results of the model
+  * Mispredictions of the models could result in harmful outcomes
 * a serious problem in many languages with relatively low resources, resulting
   * quality  of emotion detection resources would degrade if translated to
-  * cultural nuances to defining emotions vary. Therefore, one should follow
-* guidelines for the ethical use of emotional AI technologies, which present a
+  * cultural nuances to defining emotions vary
+* guidelines for the ethical use of emotional AI technologies present a
   checklist for anyone engaged with data about human emotion
-  * Stark and Hoey, (2020)
-  * McStay and Pavliscak, (2019) include a number of salutary suggestions for
+  * Stark and Hoey (2020)
+  * McStay and Pavliscak (2019) include a number of salutary suggestions for
     taking action as a practitioner
 * resources using multilingual corpora with categorical emotion labels
   (Öhman+ 2018)
