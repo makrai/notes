@@ -31,7 +31,7 @@ A Neural Probabilistic Language Model
   * learn simultaneously the word feature vectors and
     the parameters of that probability function
 * maximize the log-likelihood of the training data or a regularized criterion,
-  e.g. by adding a weight decay penalty [i.e.] Like in ridge regression,
+  eg by adding a weight decay penalty [i.e.] Like in ridge regression,
   the squared norm of the parameters is penalized
 * feature vectors ... could be initialized using prior knowledge of semantic
   features
@@ -65,7 +65,7 @@ A Neural Probabilistic Language Model
     based statistical language model, using LSI to dynamically identify the
     topic of discourse
 * vector-space representation for symbols in the context of neural networks
-  * in terms of a parameter sharing layer, (e.g. Riis and Krogh, 1996) for
+  * in terms of a parameter sharing layer, (eg Riis and Krogh, 1996) for
     * secondary structure prediction, and for
     * text-to-speech mapping (Jensen and Riis, 2000)
 
@@ -76,7 +76,7 @@ A Neural Probabilistic Language Model
     of the neural network and to the C matrix, not to the biases
 * number of free parameters only scales linearly with `V` and the order `n`
 * The scaling factor could be reduced to sub-linear if more sharing structure
-  were introduced, e.g. using a
+  were introduced, eg using a
     * _time-delay neural network_ or a
     * _recurrent neural network_ (or a combination of both)
 * optionally, direct connections from the word features to the output
@@ -164,7 +164,7 @@ A Neural Probabilistic Language Model
 ## 5.2 Other Future Work
 
 1. Decomposing the network in sub-networks
-  * [e.g.] using a clustering of the words
+  * [eg] using a clustering of the words
   * Training many smaller networks should be easier and faster
 2. "hierarchical softmax"
 3. Propagating gradients only from a subset of the output words. It could be
@@ -177,11 +177,11 @@ A Neural Probabilistic Language Model
    * See also Bengio and Senécal (2003) for a new accelerated training method
      using importance sampling to select the words
 4. Introducing a-priori knowledge. Several forms of such knowledge could be
-   * semantic information (e.g., from WordNet, see Fellbaum, 1998), low-level
-   * parts-of-speech), and high-level grammatical information, e.g.,
+   * semantic information (eg from WordNet, see Fellbaum, 1998), low-level
+   * parts-of-speech), and high-level grammatical information, eg
    * coupling the model to a stochastic grammar, as suggested in Bengio (2002)
    * longer term context could be captured by introducing more structure and
-     parameter sharing ..., e.g. using time-delay or recurrent neural networks
+     parameter sharing ..., eg using time-delay or recurrent neural networks
     * see work already done by Schwenk and Gauvain (2002) ... in speech
 5. Interpreting (and possibly using) the word feature representation
 6. Polysemous words
