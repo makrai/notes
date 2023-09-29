@@ -217,10 +217,10 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
       interpersonal conflict, mental illness, and financial need
     * Posts in Dreaddit are collected from 10 subreddits,
       including some mental health domains such as anxiety and PTSD
-  * SAD (Mauriello+ 2021) dataset, which contains 6,850 SMS-like sentences, is
-    used to recognize everyday stressors
-    * derived from stress management articles, chatbot-based conversation
-      systems, crowdsourcing, and web crawling
+  * SAD (Mauriello+ 2021) dataset, used to recognize everyday stressors
+    * 6,850 SMS-like sentences
+    * derived from stress management articles, chatbot-based conversation syss,
+      crowdsourcing, and web crawling
     * Some of the more specific stressors are
       * work-related issues like fatigue or physical pain,
       * financial difficulties like debt or anxiety,
