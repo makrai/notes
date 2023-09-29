@@ -40,7 +40,7 @@ ACL | IJCNLP | RepL4NLP 2021
   * hE, if there are small clusters: only a few must-links
     * highly unbalanced training data
     * => trained model is biased towards predicitng cannot-links
-  * triplet-based constraints (Dor+ 2018) that combine
+  * triplet-based constraints (Dor+ 2018) combine
     a positive and a negative sample in a single triplet, mitigate such bias
   * hE, the sample complexity (Bartlett, 1998) grows more rapidly
     * samples complexity: number of samples required to cover all interactions
@@ -48,11 +48,11 @@ ACL | IJCNLP | RepL4NLP 2021
 * we hypothesize the following:
   1. Instead of learning to solve some approximation of the clustering problem,
      we need to directly optimize for a clustering evaluation metric
-  2. Instead of sample-pairs in case of pairwise constraints or triplets in
-     case of Triplet-loss, we can
-     make efficient and scalable use of the available training data by
-     presenting all interactions between a set of data points
-     as a single clustering sample
+  2. Instead of sample-pairs in case of pairwise constraints 
+    or triplets in case of Triplet-loss, we can
+    make efficient and scalable use of the available training data by
+    presenting all interactions between a set of data points
+    as a single clustering sample
     * neither suffers from unbalanced data nor from sample complexity
 * we propose an alternative training strategy that directly
   * draws its supervision signal from an evaluation metric that measures
