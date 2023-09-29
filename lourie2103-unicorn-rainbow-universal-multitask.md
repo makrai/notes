@@ -159,7 +159,7 @@ https://github.com/allenai/rainbow
 
 * when datasets transfer well (Vu+ 2020; Pruksachatkun+ 2020)
 * researchers usually pick datasets that seem similar to the target, whether
-  due to format, domain, or something else.  To investigate common sense
+  due to format, domain, or something else
 * we compare how the RAINBOW tasks transfer to each other
   * against two other popular dataset collections: GLUE and SuperGLUE
 
