@@ -8,9 +8,8 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * goal: large, natural emotional database
   * translate results on speech emotion recognition in controlled
     conditions into real-life applications.
-  * unbalanced emotional content, which is dictated by the given recording
-    protocol (eg, positive for colloquial conversations, negative for
-    discussion or debates)
+  * unbalanced emotional content, which is dictated by the recording protocol
+    (eg, positive for colloquial conversats, negative for discussion or debates)
   * size and speaker diversity are also limited.
 * we propose a novel approach to effectively build a large, naturalistic
   emotional database with balanced emotional content, reduced cost and reduced
@@ -32,8 +31,8 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * challenging task given the
   * subtle expressive behaviors that occur during human interactions [1].
   * databases are limited in size, number of speakers, inadequate/inconsistent
-    emotional descriptors, lack of naturalistic behaviors, and unbalanced
-    emotional content [2], [3], [4]
+    emotional descriptors, lack of naturalistic behaviors, and
+    unbalanced emotional content [2], [3], [4]
   * deep learning in automatic speech recognition (ASR)
     relies on many hours of speech data
     The research community does not have the resources to leverage powerful
