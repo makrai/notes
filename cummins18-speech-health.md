@@ -1,5 +1,4 @@
-Speech analysis for health:
-  Current SOTA and the increasing impact of deep learning
+Speech analysis for health: The SOTA and the increasing impact of deep learning
 Nicholas Cummins; Alice Baird; Björn W. Schuller
 Methods Volume 151, 1 December 2018, Pages 41-54
 
