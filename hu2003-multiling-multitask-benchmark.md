@@ -106,11 +106,11 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 
 ## 3.1. Design principles
 
-### Task difficulty: Tasks should be sufficiently challenging i.e. `<` human
+### Task difficulty: Tasks should be sufficiently challenging ie `<` human
 
 ### Task diversity
 
-* transfer at different levels, e.g. words, phrases and sentences
+* transfer at different levels, eg words, phrases and sentences
   * classification tasks require sentence-level transfer of meaning,
   * sequence labeling tasks like POS and NER test the word level
 
@@ -347,20 +347,20 @@ training data of all languages jointly
 * For the tasks where in-language training data is available,
   * multilingual models trained on in-language data outperform zero-shot
   * zero-shot transfer models nevertheless outperform multilingual models
-    trained on only 1,000 in-language examples on the complex QA tasks as long
-    as more samples in English are available
+    trained on only 1,000 in-language examples on the complex QA tasks
+    as long as more samples in English are available
   * structured prediction tasks, 1,000 in-language examples enable the model to
     achieve performance that is similar to being trained on the full labelled
     dataset, similar to findings for classification (Eisenschlos+ 2019)
-* multitask learning on the Translate-train and In-language setting generally
-  improves upon single language training
+* multitask learning on the Translate-train and In-language setting
+  generally improves upon single language training
 
 ### Cross-lingual transfer gap
 
-* i.e. the difference between English test set and all other languages in Tab 3
+* ie the difference between English test set and all other languages in Tab 3
 * should be taken with a grain of salt, as
   scores across languages are not directly comparable
-  for the tasks where test sets differ, i.e. POS, NER, MLQA, and TyDiQA-GoldP
+  for the tasks where test sets differ, ie POS, NER, MLQA, and TyDiQA-GoldP
   * differences in scores may not be linearly related
 * powerful models such as XLM-R reduce the gap significantly
 * XLM-R reduce the gap significantly compared to mBERT
@@ -373,7 +373,7 @@ training data of all languages jointly
 
 ## Best zero-shot model analysis
 
-* i.e. XLM-R Large by task and language in Figure 1
+* ie XLM-R Large by task and language in Figure 1
 * Figure 1. An overview of XLM-R’s performance on the XTREME tasks across all
   * an estimate of human performance, performance on the English test set,
     the average of all languages excluding English, and the family of each lang
@@ -407,13 +407,13 @@ training data of all languages jointly
 * mBERT, we observe the best transfer performance on branches of the
   * family
     * Indo-European language family such as Germanic, Romance and Slavic
-    * e.g. Niger-Congo and Kra-Dai is still low
+    * eg Niger-Congo and Kra-Dai is still low
 * scripts, we find that the
   performance on syntactic tasks differs among popular scripts such as Latin
-  and ideogram scripts. For example in the
-  * NER task, mBERT performs better on data in Latin script than that in
-    Chinese or Japanese ideograms
-    * i.e. difficulty transferring word-level syntactic information
+  and ideogram scripts
+  * NER task, mBERT performs better on data in Latin script
+    than that in Chinese or Japanese ideograms
+    * ie difficulty transferring word-level syntactic information
 
 ## Errors across languages
 
@@ -436,7 +436,7 @@ training data of all languages jointly
   common set of 17 POS tags for all languages, so a
   model is not required to generalize to unseen tags at test time
   * hE, model may be required to generalize to unseen tag combinations at test
-  * e.g. due to differences in word order between languages
+  * eg due to differences in word order between languages
 * We gauge [megmér] a model’s accuracy for unseen POS tag n-grams in the target
   * n=3,4 mBERT in Table 4
   * largest differences in performance for unseen trigrams and 4-grams, which
@@ -444,13 +444,12 @@ training data of all languages jointly
     syntactic characteristics of other languages
 * NER, we estimate how well models generalize to unseen entities at test time
   * largest for Indonesian and Swahili
-  * Isolating for e.g. entity length, frequency, and Latin script, we find the
+  * Isolating for eg entity length, frequency, and Latin script, we find the
     largest differences in performance for Swahili and Basque
 * detailed results for both analyses in the appendix
 
 # 6. Conclusions
 
 * varies significantly both between tasks and languages
-* Our future work is to package the demonstration codes for fine-tuning models
-  on tasks in XTREME and provide analysis tools, and these will be released
-  upon publication
+* the demonstration codes for fine-tuning models on tasks in XTREME and
+  analysis tools will be released upon publication
