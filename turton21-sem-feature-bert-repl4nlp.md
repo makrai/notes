@@ -7,9 +7,9 @@ ACL 2021 | IJCNLP | RepL4NLP
 * Binder+ (2016) proposed an intuitive embedding space where
   * each dimension is based on one of 65 core semantic features
   * a small data-set of 535 words, limiting its uses
-* Utsumi, 2018, 2020; Turton+ 2020: Binder features can be derived from static
-  embeddings and successfully extrapolated to a large new vocabulary
-* this paper demonstrates that Binder features can be derived from the BERT
+* Utsumi, (2018, 2020); Turton+ (2020): Binder features can be derived from
+  static embeddings and successfully extrapolated to a large new vocabulary
+* this paper demonstrates that Binder features can be derived from BERT
   * insights into how semantic features are represented across layers
   * The results supported the findings of Jawahar+ (2019) that
     semantic information tends to be represented in the later layers of BERT
@@ -17,7 +17,7 @@ ACL 2021 | IJCNLP | RepL4NLP
 # 1 Introduction
 
 * efforts for more interpretable embeddings eg (Şenel+ 2020; Panigrahi+ 2019),
-  * the general approach has been to interpret them in relation to each-other
+  * general approach: interpret vectors in relation to each-other
   * eg, the distance between word embeddings can indicate their semantic sim
     (Schnabel+ 2015)
 * dim reduction techniques to visualise the embedding space (Liu+ 17)
@@ -37,10 +37,9 @@ ACL 2021 | IJCNLP | RepL4NLP
 ## 3.5 Discussion
 
 * Binder features derived from BERT embeddings outperform static Numberbatch
-  * interesting as Numberbatch embeddings make use of additional human pro-
-    vided information from a concept network
+  * interesting as Numberbatch embeddings make use of a concept network
 * The poor performance of GPT-2 is not surprising
-  due to its uni-directional attention architecture
+  * uni-directional attention architecture
 * how the different semantic features are represented across the layers of BERT
   * In line with the findings of Jawahar+ (2019), semantic features tended to be
     better represented by the later layers
@@ -52,8 +51,8 @@ ACL 2021 | IJCNLP | RepL4NLP
 * Variation in how well different features were predicted by the models
   * more difficult to explain conclusively
   * it may be that certain features are better represented by the transformer
-  * there is also variation in the underlying distributions of the different
-    Binder features, with some more equally distributed across the score range
+  * variation in the underlying distributions of the different Binder features,
+    * some more equally distributed across the score range
     * certain features have very unbalanced distributions
 
 # 4 Experiment 1b: Towards Contextualised Binder Features
