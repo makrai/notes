@@ -34,7 +34,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       * ComParE 2011: recognition of speech affected by intoxication or fatigue
         * it was held before deep learning became SOTA in speech processing
       * 2017 almost two-thirds of entrants integrated some aspect of DL
-        * feature representation learning, classification or both
+        * feature representation learning, classification, or both
 * Internet-of-Things (IoT) means there is currently a vast array of
   * microphone enabled smart-devices and wearable technologies on the market,
     eg, the Apple WatchTM series, Samsung GearTM technology, or
@@ -79,7 +79,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   the OPENSMILE toolkit [44]. OPENSMILE provides software solutions to enable
   * a standard set of scripts is provided with OPENSMILE to enable users to
     replicate the feature representation used in the challenges
-* Classification is, mainly, achieved in the baseline systems using
+* Classification is mainly achieved in the baseline systems using
   linear kernel Support Vector Machines (SVM)/Support Vector Regression (SVR)
   * because they are considered to be robust against overfitting
   * overfitting is a common issue when utilising small and unbalanced datasets
@@ -89,16 +89,16 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 * ‘speech affected by fatigue’
   * sleepiness and cognitive load can be grouped under this umbrella term
-* fatigue has no strict medical condition definition, it can generally be
-  * core symptoms include a reduction in efficiency and motivation. Fatigue
+* fatigue has no strict medical condition definition
+  * core symptoms include a reduction in efficiency and motivation
   * degrades an individual’s performances and can lead to errors and,
     potentially fatal, accidents in many settings, such as on the road [55,56],
     or in the workplace [57]
 * early and remote diagnosis of fatigue is therefore potentially lifesaving on
   the roads and in related transport industries such as aeronautical and
-  freight [58]. Fatigue contains both
-* cognitive and physical aspects, which are expected to have
-  * notable effects on speech. Indeed, speech affected by sleepiness has been
+  freight [58]
+* cognitive and physical aspects
+  * notable effects on speech
   * impaired speech planning such as flattened prosody; effects include
     reduced intelligibility and
     tense and breathy qualities <~ irregular vocal fold actions [59]

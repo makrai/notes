@@ -92,8 +92,8 @@ Interspeech 20182-6 September 2018, Hyderabad
     corpora for training and evaluation [21]
     * might be valuable for robust development and real-world applications
       [22, 23]
-* unbalanced distribution across speakers, utterances, and emotions may limit
-  the performance of experimental techniques and bias results
+* unbalanced distribution across speakers, utterances, and emotions
+  may limit the performance of experimental techniques and bias results
 * multilingual datasets, based on several types of speech, including
   * acted emotional speech [4], natural [24], or speech gathered in so-called
     Wizardof-Oz experiments [25]

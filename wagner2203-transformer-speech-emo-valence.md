@@ -69,7 +69,7 @@ arXiv:2203.07378 [eess.AS]
   * [an introduction how to use it](https://github.com/audeering/w2v2-how-to)
 
 
-# 2 Rel work: wav2vec2.0 and HuBERT utilised for (primarily categorical) SER
+# 2 Related work: wav2vec2.0 and HuBERT for (primarily categorical) SER
 
 * Table 1: a summary of recent works based on wav2vec 2.0 and HuBERT on the
   IEMOCAP dataset [33], where most prior works have focused

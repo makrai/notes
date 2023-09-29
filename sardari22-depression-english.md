@@ -68,14 +68,14 @@ available at https://github.com/SaraS92/CAE_ADD
     * hE affects the acceptability of the system in real-world situations
 * To develop a depression detection system, we need to follow three phases:
 * preprocessing, feature extraction, and classification. One of the major tasks
-  * unbalanced data problem in depression detection, since depression occurs
+  * unbalanced data problem in depression detection
     * techniques like random sampling to overcome the problem of unbalanced
       (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)
     * hE, both of the undersampling and oversampling as random sampling
       strategies have limitations
-    * undersampling, some of the useful information from the majority class
-      might be eliminated. In random
-    * oversampling the likelihood for overfitting in the model (Lin+ 2017)
+    * undersampling: some of the useful information from the majority class
+      might be eliminated
+    * oversampling: likely overfitting in the model (Lin+ 2017)
     * clustering-based resampling (undersampling) is to
       group similar data samples from the majority class into diff clusters
       * Therefore, the cluster centroid (or center) can be used to represent
@@ -100,19 +100,18 @@ available at https://github.com/SaraS92/CAE_ADD
   Zhang+ 2017, Mou+ 2021, Banan+ 2020, Shamshirband+ 2019, Fan+ 2020)
   * ADD systems using DL methods
 * Depaudionet proposed by Ma+ (2016)
-  * focused on two challenges of data representation and sample unbalanced
-    issue for the audio files in the DAIC-WOZ dataset. In their
-  * audio files were firstly converted to spectrograms (a time–frequency 2D
-    representation) and a deep model based on
-  * Convolutional Neural Network (CNN) and LSTM models. To address the
-  * unbalanced issue: a random sampling strategy is used. This method
+  * focused on two challenges of data representation and unbalance issue for
+    the audio files in the DAIC-WOZ dataset
+  * audio files were firstly converted to spectrograms (= time–freq 2D repr)
+  * Convolutional Neural Network (CNN) and LSTM models
+  * unbalanced issue: a random sampling strategy is used
   * 0.52 F-measure performance for depressed class detection in dev set.
   * better performance compared to hand-crafted feature extraction methods,
   * hE converting the raw audio data into spectrogram data which is time
     consuming and limits its application to real-world applications
 * Vázquez-Romero and Gallardo-Antolín (2020), an
   ensemble of CNNs for depression classification is proposed. To address the
-  unbalanced data challenge, a random sampling method is utilized. The authors
+  unbalanced data challenge, a random sampling method is utilized
   * notable performance (0.63F-measure) using the proposed method, utilizing
     the common practice of log-spectrogram representation of audio signals
 * most of the studies (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)
