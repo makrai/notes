@@ -13,13 +13,12 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
 * arg struct
   * conventional: set of arguments and diacritics indicating how they are realiz
   * Some authors: a structured representation with prominence relations
-* events (e.g., whether a sentence denotes an activity, a state, etc.)
+* events (eg whether a sentence denotes an activity, a state, etc)
   * conventional: a single, existentially quantified event variable for sentencs
     (Higginbotham, 1985; Parsons, 1985)
   * There are many who still argue that events are not a necessary type
     (Cresswell, 1985)
-  * we will argue that grammatical phenomena make reference
-    to the internal structure of events
+  * we: grammatical phenomena make reference to the internal structure of events
     * subeventual analysis for predicates is able to systematically capture
       these effects
 * basic assumptions of the theory
@@ -165,7 +164,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
     (Katz, 1972; Katz and Fodor, 1963; Schank, 1975; Wilks, 1975)
   * provide a characterization for all of the well-formed expressions in the l?
     * not Even those theories that rely on some internal structure for word mean
-      (e.g., Dowty, 1979; Fillmore, 1988)
+      (eg Dowty, 1979; Fillmore, 1988)
     * Jackendoff (1983) comes closest, but
       no comprehensive semantics for all categories in language
 * What, exactly, would a method for lexical decomposition tell us?
@@ -183,7 +182,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
          c. John closed the door. (causative)
     * Lakoff (1970), Jackendoff (1972):
       the sense in (12c) must incorporate sg like cause-to-become-not-open
-  * _give_ specifies a transfer from one person to another, e.g. cause-to-have
+  * _give_ specifies a transfer from one person to another, eg cause-to-have
   * decomposition theories of word meaning (with a set of primitives) are
     exhaustive since they assume
     with a fixed number of primitives complete definitions of lexical meaning
@@ -353,8 +352,8 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
 * two classes of event composition, PP attachment and resultative constructions
 * There are several types of syntactic constructions that
   directly affect the event type of a phrase:
-  temporal adverbials, adjunct phrases, complement type (e.g., individuated or
-  not), and aspectual coercion (e.g., the progressive)
+  temporal adverbials, adjunct phrases, complement type (eg individuated or
+  not), and aspectual coercion (eg the progressive)
   * we consider only the first two types here (for further discussion see Pus())
 * the event type for a sentence need not be the event type of the main verb
   * Category changes may occur because of
@@ -369,7 +368,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
   (25)  a. `*`Mary ran in an hour
         b. Mary built a chair in an hour
 * one basic principle that accounts for these facts:
-  only when an event contains a logical culmination (e.g. it is a transition)
+  only when an event contains a logical culmination (eg it is a transition)
   is it modifiable by a frame adverbial. Why should this be?
   * subeventual analysis for verbs =>
     temporal predicates in the language can make reference to a subevent, or to
@@ -402,7 +401,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
     (see also Jackendoff (1983) and Talmy (1985) for similar points)
   * event composition: When this structure arises from syntactic composition
     * rule: In certain constructions, when
-      the verb denotes a process (e.g.  run, push), and
+      the verb denotes a process (eg  run, push), and
       there is a phrase which denotes a function from processes to transitions,
       then the event type of the entire verb phrase (VP) is transition
     * footnote: This is a slight simplification for illustration purposes
@@ -452,7 +451,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
   (30)  a. Mary hammered the metal flat
         b. Mary wiped the table clean
         c. The men drank the pot dry
-  * Rappaport and Levin (1989) argue that the resultative phrase (e.g. flat)
+  * Rappaport and Levin (1989) argue that the resultative phrase (eg flat)
     can only be predicated of the direct object
     * restriction called the direct object restriction (DOR)
     * We will return to this restriction in Section 7
@@ -501,8 +500,8 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
     * Belletti & Rizzi (1985), Pesetsky (1987), & Grimshaw (1986)
   * there are two types of psych predicates
     * both with an argument structure of (experiencer, theme)
-    1. experiencer expressed as the subject (e.g. fear) and the second
-    2. theme expressed as the subject (e.g. frighten)
+    1. experiencer expressed as the subject (eg fear) and the second
+    2. theme expressed as the subject (eg frighten)
       * footnote There are of course two readings for ‘‘frighten’’ type verbs:
         1. purely causative (x occasions fear in y), and
         2. the other which is being considered here
@@ -602,7 +601,7 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
   (46)  a. \exists e[depart(e, Lisa) ^ rude(e, eˆ'[depart_0 (e')])]
         b. \exists e[rude(e, Lisa, eˆ'[depart(e' , Lisa)]) ^ depart(e, Lisa)]
 * a.: compared to the set of departing events, Lisa ’s instance was a rude one
-  b.: Lisa was being rude in that she departed (e.g. when she did)
+  b.: Lisa was being rude in that she departed (eg when she did)
   * another example of theta-identification, which
     results in the conjunction of two attributes predicated of a single individu
   * and theta-marking, which applies the adverb as a function to its argument,
@@ -766,7 +765,7 @@ S
 LCS⬘:
 [Q( y)]
 [act(x, y) & ¬Q(y)]
-b. V(x*, y)
+b. `V(x*, y)`
 
 An analysis in terms of event structure allows us to speculate on just what an unaccu-
 sative is, in terms of lexical semantic structure. Namely, an unaccusative is a transition
@@ -815,7 +814,7 @@ The Language of Time: A Reader
 (E) Each subevent must be associated with at least one argument position at lexical
 structure.
 
-It is clear from the resultative data and the false reflexive data (e.g. laugh herself silly),
+It is clear from the resultative data and the false reflexive data (eg laugh herself silly),
 that certain predicates require the expression of a separate, unsubcategorized argument
 while others do not, for example, hammer the metal flat (see Simpson, 1983). Principle
 (E) requires that every subevent (in this case, silly and flat) be associated with at least one

@@ -2,22 +2,22 @@ A theory of lexical access in speech production
 Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
 BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
-#Abstract
+# Abstract
 
-* A comprehensive review of theory, model, and experiments is presented. The
+* A comprehensive review of theory, model, and experiments is presented
 * Preparing words in speech production is normally a fast and accurate process
   * We generate them two or three per second in fluent conversation; and
   * naming a clear picture of an object can easily be initiated within 600 msec
 * The theory reviewed in this target article analyzes this
   process as staged and feedforward
-  stages: conceptual preparation, through lexical selection, morphological and
-  phonological encoding, phonetic encoding, and articulation itself
+  * stages: conceptual preparation, through lexical selection, morphological
+    and phonological encoding, phonetic encoding, and articulation itself
 * In addition, the speaker exerts some degree of output control, by monitoring
 * The core of the theory,
-  ranging from lexical selection to the initiation of phonetic encoding, is
+  ranging from lexical selection to the initiation of phonetic encoding
 * computational model, called weaver++
-* developed in interaction with reaction time experiments, particularly in
-  picture naming or related word production paradigms, with the aim of
+* developed in interaction with reaction time experiments
+  * particularly in picture naming or related word production paradigms
 * handle some of the main observations in the domain of speech errors
 * the theory opens new ways of approaching the cerebral organization of
   speech production by way of high-temporal-resolution imaging

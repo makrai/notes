@@ -15,11 +15,11 @@ Jackendoff, Ray S
     * account for the distinctions of meaning made by language users, and for
     * semantic relations including inference that speakers can draw
       among words, phrases, and sentences
-    * relate [ling forms] to their understanding of the nonlinguistic world, so
+    * relate ling forms to their understanding of the nonlinguistic world, so
       that they can make judgments of reference and truth
-  * The Problem of Correspondence is to characterize the relationship between
-    the formal treatment of meaning and syntax
-    * choice of semantic formalism has an immediate effect on [its] solutions
+  * The Problem of Correspondence is to characterize
+    the relationship between the formal treatment of meaning and syntax
+    * choice of semantic formalism has an immediate effect on its solutions
 * my research over the past fifteen years
   * Conceptual Semantics [CS]
   * principles parallel to those that motivate generative syntax and phonology
@@ -28,13 +28,14 @@ Jackendoff, Ray S
     * Consciousness and the Computational Mind (C&CM 1987)
   * situate the study of meaning in an overall psychological framework,
     * perception, cognition, and conscious experience
-  * linguistic phenomena [only] in the early and middle 1970s
+  * linguistic phenomena only in the early and middle 1970s
 * now a richer range of lexical items and syntactic constructions
 * parts
   1. the basic parameters of the formalization of meaning
     * argument structure and thematic roles
-    * lexical structure, including how the syntactic frames [of a lexical item]
-      are correlated with alternative meanings
+    * lexical structure
+      * how the syntactic frames of a lexical item are correlated with
+        alternative meanings
   2. extending the range of semantic fields encompassed
     * by adding features to existing conceptual primitives,
       rather than by introducing altogether new primitives
@@ -43,10 +44,10 @@ Jackendoff, Ray S
   3. Correspondence
     * first three chapters
       * a wide range of adjunct constructions in English
-      * [complicated] view of the syntax-semantics corresponddence
+      * complicated view of the syntax-semantics corresponddence
     * alongside the canonical relations of syntactic to semantic arguments,
-      [there are] numerous other strategies [for]  encoding thematic roles
-    * simplify the argument structure[s]
+      there are numerous other strategies for encoding thematic roles
+    * simplify the argument structures
     * final chapter: very general principles for the linking
 
 # Part I Basic Machinery
@@ -71,7 +72,7 @@ Jackendoff, Ray S
     * the grammar of sentential concepts
     * describe the set of possible I-concepts expressed by sentences
 * lexical concepts, the concepts expressed by the words in the sentence
-  * [the] basic units out of which a sentential concept is constructed
+  * the basic units out of which a sentential concept is constructed
   * must be some sort of finite schema that
     can be compared with the mental representations of arbitrary new objects to
     produce a judgment of conformance or nonconformance
@@ -81,15 +82,15 @@ Jackendoff, Ray S
     are dogs or not
     * there is a potential degree of indeterminacy either in
       * the lexical concept itself
-      * the procedure for comparing it with [new] objects
+      * the procedure for comparing it with new objects
       * both
 * acquisition of syntax, rules, and concepts (sentential and lexical)
   * on the basis of some combination of linguistic experience, nonlinguistic
     experience, and innate constraints on possible principles
-    * part of our task is to determine what [is learned and what is] innate
+    * part of our task is to determine what is learned and what is innate
   * primitives and principles of combination of the innate _grammar of lexical
     concepts_
-    * Learning a lexical concept [is] constructing a composite expression
+    * Learning a lexical concept is constructing a composite expression
       within the grammar of lexical concepts + phon + synt
     * This contrasts sharply with Jerry Fodor's view that
       lexical concepts are cognitively primitive monads
@@ -107,7 +108,7 @@ Jackendoff, Ray S
     * conceptual structures derived from sensory modalities
       * _Is this what's going on?_; _Is that what I should be looking for?_
   * can be evaluated with respect to what one believes and perceives
-* [this idea of a concept is] not universally accepted
+* this idea of a concept is not universally accepted
   * Frege's _On Sense and Reference_ (1892)
     * disassociates the
       * _sense_ of an expression, an objective, publicly available entity
@@ -120,8 +121,8 @@ Jackendoff, Ray S
   * Truth, a relation between language and reality, independent of users
     * both reality and the language that describes it are speaker-independent
     * Tarski, Davidson
-  * generative grammar [concerns] the principles internalized in speakers that
-    permit them to understand sentences, draw inferences, and [judge] of truth
+  * generative grammar concerns the principles internalized in speakers that
+    permit them to understand sentences, draw inferences, and judge of truth
     * _Speakers of Language L treat Sentence S as true if and only if their
       construal of the world meets Condition C_
     * This is the basis of the approach of Conceptual Semantics
@@ -138,14 +139,14 @@ Jackendoff, Ray S
   * CS is concerned most directly with the
     * form of the internal mental representations that constitute CS
     * formal relations between this level and other levels of representation
-    * The computation of inference [is] internal to the organism
+    * The computation of inference is internal to the organism
   * [Fodor] requires a theory of semantics to include a Realist account of
     truth-conditions and inference
-  * Intentional Realism is [useful] for dealing with people in ordinary life
+  * Intentional Realism is useful for dealing with people in ordinary life
     But _folk physics_ is a good stance for ordinary life, too.  That does
     not make it a productive constraint for doing scientific physics.  So why
     get mired in _folk psychology_ when studying the mind?
-* relation [to] Cognitive Grammar or Cognitive Semantics
+* relation to Cognitive Grammar or Cognitive Semantics
   * Fauconnier 1984; Langacker 1986; Herskovits 1986; Lakoff 1987
   * shared:
     * mental representation of the world and its relation to language
@@ -184,7 +185,7 @@ Jackendoff, Ray S
 * Katz-Postal (1964) Hypothesis
   * phonology and semantics are _interpretive_ components that derive their
     respective structures from some level or another of syntactic structure
-  * The organization proposed [here] eliminates this syntacto-centrism
+  * The organization proposed here eliminates this syntacto-centrism
     * three levels as equally _creative_; none is derived from the others
 
 ## 1.5 Intuitions about Lexical Relations 22
@@ -209,22 +210,22 @@ Jackendoff, Ray S
   * how the relation can be expressed lexically so as to minimize the
     difference among the uses in question
     * worst case, we can always fall back on mere homonymy (the two _bank_s)
-    * [for] making the learner's job easier, a formal lexical relation is
+    * for making the learner's job easier, a formal lexical relation is
       preferable: learning one use then makes it easier to learn the other
 
 ## 1.6 X-Bar Semantics 32
 
 * cross-categorial feature decompositions with an _X-bar_ flavor play an
   important role in the characterization of I-concepts
-  * [in] three major subsystems within conceptual structure
+  * in three major subsystems within conceptual structure
 
 ### 1.6.1 Ontological Categories and Argument Structure
 
 * S&C, chapters 3, 4, and 9, proposes a basic organization for CS
-* Instead of a division of formal entities into [logical types]
+* Instead of a division of formal entities into logical types
   * constants, variables, predicates, and quantifiers,
   * each of which has nothing in common with the others
-* conceptual constituents [belong] to one of a small set of major ontological
+* conceptual constituents belong to one of a small set of major ontological
   categories (or conceptual _parts of speech_)
   * Thing, Event, State, Action, Place, Path, Property, and Amount
 * These are quite different in the kind of reference they pick out, but
@@ -236,11 +237,11 @@ Jackendoff, Ray S
       * many conceptual constituents of a sentence's meaning are completely
         contained within lexical items
     * the mapping between conceptual and syntactic categories is many-to-many
-      [but] subject to markedness conditions
+      but subject to markedness conditions
   2. also on the basis of the visual (or other sensory) environment
   3. Many of the categories support a type-token distinction
   4. Many of the categories support quantification
-  5. and 6.  each conceptual constituent [decomposes] into three basic
+  5. and 6.  each conceptual constituent decomposes into three basic
      feature complexes, one of which, the argument structure feature,
      allows for recursion of conceptual structure and hence an infinite class
      of possible concepts
@@ -255,7 +256,7 @@ Jackendoff, Ray S
 * intuitively related paradigms
 * generalization is by no means totally free
   * `*`The meeting went from Tuesday to Monday
-* they are each realizations of the [same] basic conceptual functions
+* they are each realizations of the same basic conceptual functions
 * the precise values of the field feature
   that a particular verb or preposition may carry is a lexical fact
 * inference rule (21)
@@ -295,7 +296,7 @@ Jackendoff, Ray S
 
 ### 1.7.1 Spatial Structure of Objects
 
-* How are [duck and goose] distinguished from one another?
+* How are duck and goose distinguished from one another?
   * different appearance
   * how is a chair to be distinguished from a stool? [± has-a-back]?
 * the 3D model structure of Marr 1982
@@ -315,15 +316,15 @@ Jackendoff, Ray S
 * nouns that denote functional categories: form and function
 * when one lacks information about the satisfaction of the conditions, they
   are invariably assumed to be satisfied as default values
-* The formalism was in fact developed originally [for] musical cognition
+* The formalism was in fact developed originally for musical cognition
   (Lerdahl and Jackendoff 1983)
 * comparison with prototype theory, and fuzzy set theory
 
 ## 1.8 Appendix: Lexical Composition versus Meaning Postulates
 
 * the solution Fodor advocates
-  * each lexical item [has] its own specific meaning postulates
-    * determine the entailments of sentences [the lexical item] occurs in
+  * each lexical item has its own specific meaning postulates
+    * determine the entailments of sentences the lexical item occurs in
 * e.g. causative-noncausative pairs in (26)
 * each element in a lexical decomposition can be regarded as that item's access
   to more general-purpose rules of inference
@@ -339,7 +340,7 @@ Jackendoff, Ray S
      Place-function defines a region
   d. EXT, for the spatial extension of linear objects along a path
      (The road goes from New York to San Francisco)
-* functions in (1) are [not] primitives
+* functions in (1) are not primitives
   * STAY is likely composite, perhaps some sort of durational form of BE
   * EXT is clearly related to GO
   * CAUSE too turns out to be composite as will be seen in chapter 7
@@ -354,9 +355,9 @@ Jackendoff, Ray S
 ## 2.2 The Status of Thematic Roles 50
 
 * thematic (q-)roles
-  * [for] parallel notions in other syntactic theories, see Wilkins (1988a)
+  * for parallel notions in other syntactic theories, see Wilkins (1988a)
   * are part of the level of conceptual structure, not part of syntax
-* [traditional examples]
+* traditional examples
   * Theme
     * Gruber's (1965) intuitive definition:
       the object in motion or being located
@@ -372,10 +373,10 @@ Jackendoff, Ray S
 * thematic roles are nothing but particular structural configurations in CS
 * there are many kinds of arguments for which there is no traditional name
   * the object of the verb pass, as in _John passed the house_
-  * pierce (The arrow pierced the target) [incorporate] THROUGH (or VIA IN),
+  * pierce (The arrow pierced the target) incorporate THROUGH (or VIA IN),
   * climb embeds its NP argument in a structure something like
     `[Path TO ([Place TOP-OF ([Thing ]j)])]`
-    There is a Goal, both intuitively and formally, but [more specific]
+    There is a Goal, both intuitively and formally, but more specific
   * not primitives of semantic theory
 * a list of a verb's arguments can be constructed simply by extracting the
   indices from the verb's lexical conceptual structure
@@ -421,8 +422,8 @@ Jackendoff, Ray S
 
 * combinatorial rules that develop the conceptual structure of a [syntactic
   constituent] headed by a lexical item H
-* (7) [assumes that all linkings] are stipulated in the head's lexical item
-* [yet] there are regularities of linking,
+* (7) assumes that all linkings are stipulated in the head's lexical item
+* yet there are regularities of linking,
   * e.g. Agents invariably appear in subject position
   * One can express such regularities
     and thereby leave predictable indices out of lexical entries
@@ -430,7 +431,7 @@ Jackendoff, Ray S
 * argument fusion and selectional restrictions
   * _enter_, where the position indexed `i` is specified as a Thing
   * [if selection fails,] the sentence could not receive a well-formed reading
-  * Selectional restrictions [go into much more detail than] the
+  * Selectional restrictions go into much more detail than the
     conceptual category
     * e.g. the object of _drink_, the direct object of _pay_,
       the subject of German _fressen_, which is predicated only of animals
@@ -453,7 +454,7 @@ Jackendoff, Ray S
   * Both mean "cause something to go someplace."
   * They differ
     * semantically in what they stipulate about the Theme and the Path
-    * syntactically only in [being] obligatorily resp. optionally transitive
+    * syntactically only in being obligatorily resp. optionally transitive
     * in the syntactic-semantic correspondence they stipulate
       * direct object of _butter_ is the Goal, and the
         * Theme is completely specified by the verb. By contrast,
@@ -493,8 +494,8 @@ Jackendoff, Ray S
   * that each open argument position in conceptual structure is expressed by
     exactly one NP
   * central to GB Theory, and
-    [there are] parallel notions in other theories (e.g. biuniqueness in LFG)
-  * important [for]
+    there are parallel notions in other theories (e.g. biuniqueness in LFG)
+  * important for
     * q-roles as annotations to syntactic structure
     * q-marking and case-marking are comparable phenomena (Dowty 1988)
 * examples that collectively suggest that the q-Criterion must be weakened
@@ -531,7 +532,7 @@ Jackendoff, Ray S
 
 ## 3.4 Appendix: Thematic Conditions on Control 68
 
-* PRO must also be treated in terms of argument binding [with] sem conditions
+* PRO must also be treated in terms of argument binding with sem conditions
 * give/get order/promise to do sg
   * it is part of the meaning of
     * _order_ that the recipient (or Goal) of an order is under obligation to
@@ -548,7 +549,7 @@ Jackendoff, Ray S
     permit certain alternations to be expressed within single lexical entries
   * Further alternations will be taken up in part III
 * already two mechanisms in place for unifying the syntactic frames
-  * potential modifiers are not encoded anywhere in [the] lexical entry
+  * potential modifiers are not encoded anywhere in the lexical entry
     * place, time, and manner
   * in argument structure optional expression of an argument
   * We have encoded such alternations in more or less traditional terms
@@ -560,22 +561,22 @@ Jackendoff, Ray S
 
 * c. `to(under(...)` to encode the Goal and Route senses of _under_ and _over_
   * the Place sense provides a "conceptual core" that remains constant in
-    all three senses [and] can optionally be elaborated by
+    all three senses and can optionally be elaborated by
     embedding it as an argument of either of the Path-functions TO and VIA
   * optional elaborations as part of the preposition's lexical entry
     * what is optional is a non-constituent: a constituent minus an argument
-  * I will [notate optional outer arguments with] a dashed underline,
+  * I will notate optional outer arguments with a dashed underline,
 * d. `via(under(...))`
 * inchoative verbs
   * alternate between a State reading and an Event reading
   * _point, surround, stand, cover, hide, shelter, block, support, face, sit_
   * the Event reading describes a change whose final state is the State
-  * formaliz[ation]: the inchoative as an elaboration of Event into the
+  * formalization: the inchoative as an elaboration of Event into the
     function INCH, whose sole argument is a State
     * more detailed argumentation in section 5.3
 * causative
   * {The box slid/Bill slid the box} down the stairs
-  * external argument: _the_ in the noncausative [but] Agent in the causative
+  * external argument: _the_ in the noncausative but Agent in the causative
   * solution Unaccusative Hypothesis (Perlmutter 1978; Burzio 1986)
     * Agent is coindexed with subject position
     * in both causative and non-causative versions the Theme is coindexed
@@ -585,12 +586,12 @@ Jackendoff, Ray S
 ## 4.2 Multiple Argument Structures 81
 
 * climb,
-  * [its] use of a preference rule system was discussed in section 1.7.2
-  * three syntactic [frames]: null complement, direct object [or] PP
-  * [only the null entails] that the subject reaches the top
+  * its use of a preference rule system was discussed in section 1.7.2
+  * three syntactic frames: null complement, direct object or PP
+  * only the null entails that the subject reaches the top
   * to(top-of(...)) is optional
-  * Argument Fusion [chooses based on] the conceptual category Thing vs Place
-  * [some] nouns such as _way_ and _route_ map into Paths instead of Things
+  * Argument Fusion chooses based on the conceptual category Thing vs Place
+  * some nouns such as _way_ and _route_ map into Paths instead of Things
   * much like _climb_ is _jump_
 * _pass_
   * Syntactically the same as climb
@@ -605,7 +606,7 @@ Jackendoff, Ray S
   * eat: a single entry NP argument optional
   * verb _dress_
     * discussed in section 3.3
-    * [the intransitive] binds the Theme to the Agent
+    * the intransitive binds the Theme to the Agent
 
 ## 4.3 Remarks
 
@@ -618,7 +619,7 @@ Jackendoff, Ray S
 # A last remark to close part I
 
 * one important thread of these chapters has been to compare a fine-grained
-  theory of argument structure with a coarse-grained [one]
+  theory of argument structure with a coarse-grained one
 * In order for a sentence to be understood, of course, the [fine CS] must exist
 * the issue is whether a coarse-grained argument structure is necessary
   * as a temporary shortcut
@@ -632,16 +633,16 @@ Jackendoff, Ray S
   * account for a substantial fraction of the
     verbs of spatial motion and location of English and
   * can be extended to a wide range of other semantic fields
-* many conceptual domains [must] be posited as additional elaborations of CS
+* many conceptual domains must be posited as additional elaborations of CS
 * two general questions constantly arise
   * new conceptual functions
     * as simple primitives
-      [or] by elaborating old primitives in terms of a feature system
+      or by elaborating old primitives in terms of a feature system
     * In the areas examined [in chapter 5,] addition of primitives
     * chapter 6: posit feature elaboration of existing spatial primitives
     * Chapter 7: a combination of the two solutions
-  * to what extent conceptual functions receive a consistent synta[x]
-    * [whether] a thematic role always corresponds to the same syntactic role
+  * to what extent conceptual functions receive a consistent syntax
+    * whether a thematic role always corresponds to the same syntactic role
     * there is something like an unmarked realization
       * for certain arguments of certain semantic functions, but
       * there are lexical exceptions to the pattern
@@ -657,8 +658,8 @@ Jackendoff, Ray S
   * `MOVE() + GO( , [Path ])`
   * laugh + emission of sound
 * stay, sit + locative adjunct
-  * the distinctions among various CONF-verbs [are]
-    not expressed in CS [but in an external] representation
+  * the distinctions among various CONF-verbs are
+    not expressed in CS but in an external representation
   * CONF + BE
 
 ## 5.3 Inchoative 95
@@ -686,7 +687,7 @@ Jackendoff, Ray S
     1. If the verb in question appears with a range of Path-prepositions --> GO
     2. If the verb in question appears in an Extent sense  --> GO
        (Recall that EXT is a featural variant of GO)
-    3. If the verb [has two senses] related by the inchoative relation --> INCH
+    3. If the verb has two senses related by the inchoative relation --> INCH
       * etc. in chapter 6
       * when modified by a durative expression
 
@@ -706,20 +707,20 @@ Jackendoff, Ray S
     * normally encoded as an infinitival, _in order to_-phrase, or _for_-phrase
     * differ from causes in their entailments
     * conceptualized by the speaker as the intended result
-    * the intention may be the speaker's [or] attributed to the Agent
+    * the intention may be the speaker's or attributed to the Agent
     * `FOR`, a variety of TO or TOWARD
 3. accompaniment
   * mutual dependence between Bill's coming and Harry's,
-  * "foreground[ing]"
+  * "foregrounding"
   * asymmetrical
-  * [more] than [conjunction but less than] causation
+  * more than conjunction but less than causation
   * `WITH`, a variety of the spatial WITH
 4. exchange, jutalom/büntetés
   * a voluntary act of social cognition, based on assessment
     * legal and economic systems
   * EXCH
 * similarities of the first four subordinators to spatial functions
-  * inferences associated with these [are] parallel
+  * inferences associated with these are parallel
   * more than morphological similarity
   * I have not found a spatial counterpart for EXCH
 * conceptual category of the modifying constituents `[BY [GO ...]]`
@@ -739,21 +740,21 @@ Jackendoff, Ray S
 * progressive aspect, which in a sense takes a
   snapshot of an event in progress whose temporal boundaries are not in view
 * similar determiner constraints appear in location sentences
-  [with] _over, all along_, and _throughout_:
+  with _over, all along_, and _throughout_:
   `*`Some water was all over the floor
   * acceptable determiners and the possibility of only plural or mass nouns
   * the location of the subject with respect to the object of the preposition
-    [vs extension] over the whole space subtended by the object
+    vs extension over the whole space subtended by the object
 * sentences [in (3)] not only locate the medium but also specify its form
   * aggregates to be densely packed [e.g.] a line of telephone poles
-    * not localized in one part of the [object]
+    * not localized in one part of the object
 * feature
   * a. on the floor `[Place ON+dist [Thing FLOOR]]`
   * semi-idiomatic combinations recorded in the lexicon
     | on                    | all over                  |
     | {along around across} | all {along around across} |
     | in                    | throughout                |
-* completiveness [load with hay]
+* completiveness load with hay
   * Fillmore (1968), Chomsky (1972), Anderson (1971)
 
 ## 6.2 Verbs of Touching 112
@@ -763,7 +764,7 @@ Jackendoff, Ray S
   * optional inchoative
 * _hit, prick, strike, bump, knock_, and _kick_, have only an Event reading
   * obligatorily inchoative
-* a new feature opposition [in] spatial location, say Location versus Contact
+* a new feature opposition in spatial location, say Location versus Contact
   (or [±contact])
 * also in the prepositional system
   * _on_ and _against_ contrast with _in, next to, alongside, above_
@@ -771,10 +772,10 @@ Jackendoff, Ray S
 * nonspecific location function AT
 * secondary locative
   * a further location expression describing the point of contact,
-  * [permited by most] verbs of contact
+  * permited by most verbs of contact
 * hit: GO( , TO) or INCH(BE( , AT))
   * GOc might [specify e.g. motion while in continuous contact with the object
-    * _stroke_ and _scratch_ [mean] exactly this
+    * _stroke_ and _scratch_ mean exactly this
 * _rub_ and _brush_ specifying a Path of contact
 * _bounce_ specifies travel that is interrupted by an impact and that continues
   in a new direction
@@ -798,18 +799,18 @@ Jackendoff, Ray S
 * secondary locative, causation
 * glue, nail, and pin, incorporate the instrument
 * detachment
-  * one element of the [analyses should be] reversed or negated
+  * one element of the analyses should be reversed or negated
     * INCH could be reversed to an element TERM(inate)
     * BE could be negated
     * AT could be reversed or negated
-* _from_ [is] a Place-function that expresses the _negation_ of a position !
+* _from_ is a Place-function that expresses the _negation_ of a position !
 * AT-END-OF
 * _detach_
   * The presupposition that NPj was previously attached to NPk comes out of the
     logic of the inchoative: for this state to come to pass, the reverse had to
     be the case before the event took place
 * Where is the instrument of attachment, the glue or nails, integrated into CS?
-* [difference between] contact and attachment
+* difference between contact and attachment
   * contact verbs are transitive but the attachment verbs use _to_, and
   * there are verbs of detachment but none of ceasing to touch
 * reciprocal
@@ -827,19 +828,19 @@ Jackendoff, Ray S
   * inchoative and causative
   * All of these permit a Goal-expression; none permits a Source
   * destroyed/demolished/wrecked
-* resemblance [to] the Identificational field
+* resemblance to the Identificational field
   * change into, turn into, become
-  * [but here] the Theme is referential
+  * but here the Theme is referential
   * syntactic patterns are in part the same
     * especially the use of into as the standard preposition of Goal
 * [Composition is] with Identification under a supercategory Character
-  * Character [is in contrast with] Location [and] Possession
+  * Character is in contrast with Location and Possession
 * statives must be analyzed as BE(-comp),
   with a Theme and a reference object
 * there happens to be the verb _consist of_ with the proper argument structure
-* mapping from [the whole and its parts] to thematic relations
+* mapping from the whole and its parts to thematic relations
   * parts as Theme, whole as reference object (49a), and the reverse (49b)
-  * a further feature must be added in CS to distinguish [these]
+  * a further feature must be added in CS to distinguish these
     * a diacritic on the field feature Comp, as follows:
 * the usual question: are the inchoatives [INCH BE-verbs, or] GO-verbs?
 
@@ -865,10 +866,10 @@ Jackendoff, Ray S
   * missing from the theory of thematic relations in S&C and earlier sources
     (back to Gruber 1965)
   * What happened to Pat? What did Agt do to Pat?
-  * [othogonal to] what moves where {under whose agency[?]}
+  * othogonal to what moves where {under whose agency[?]}
 * Actors ("doers of the action")
   * Agt did what
-  * [similarly orthogonal to] Source (6a), Theme (6b), and Goal (6c)
+  * similarly orthogonal to Source (6a), Theme (6b), and Goal (6c)
 * tiers of conceptual roles
   * Culicover and Wilkins (1986) and Talmy (1985)
   * thematic tier dealing with motion and location
@@ -883,7 +884,7 @@ Jackendoff, Ray S
   * implicit arguments
   * AFF has two optional arguments
     * there is no sense of an "implicit Patient"
-    * [evidence for] the optionality of the Actor role
+    * evidence for the optionality of the Actor role
       * intransitive verbs such as _roll_
       * subject passes the test for either Actor or Patient
       * contrasts with, for instance, enter or march
@@ -915,7 +916,7 @@ Jackendoff, Ray S
 
 ## 7.3 Varieties of Dyadic Interaction; the Role Beneficiary 138
 
-###7.3.1 Verbs of Helping and Letting
+### 7.3.1 Verbs of Helping and Letting
 
 * second parameter in force-dynamic theory is the character of the interaction
 * verbs like _help, assist, and aid_: two characters are striving for the same
@@ -927,7 +928,7 @@ Jackendoff, Ray S
   promote, "help to advance."; release: "let go out/away"; drop, "let fall";
   admit, "let enter."
 
-###7.3.2 Verbs of [transfer of] Possession
+### 7.3.2 Verbs of transfer of Possession
 
 * the "dative shift" verbs have an alternation in the action tier not unlike
   that of the locative alternation with _load_
@@ -938,7 +939,7 @@ Jackendoff, Ray S
   * preserved of the regular verb give is its action tier, in which X is the
   * switch from Beneficiary in give X a kiss to Patient in give X a kick: neut
 
-###7.3.3 Verbs of Reaction
+### 7.3.3 Verbs of Reaction
 
 * _Sam gave in to/withstood/resisted Harry('s pressure on him)._
 * the rhetoric of political and social resistance has stressed its active char
