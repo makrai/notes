@@ -212,11 +212,11 @@ identify topics where opinions are polarized
       least one proposition
     * implicit argumentative relations (i.e., support or attack) between them. In
       * the links from one unit to the unit that it most directly supports or at
-* Internet Argument Corpus (IAC) (Walker+ 2012) is a corpus for research in
+* Internet Argument Corpus (IAC, Walker+ 2012) is a corpus for research in
   political debate on Internet forums
   * annotated for topic, stance, agreement, sarcasm, and nastiness
   * version 2 (Abbott+ 2016), a collection of corpora for research in political
-    * topic annotations, response characterizations (4forums), and stance,
+    * topic annotations, response characterizations (4forums), and stance
 * The most comprehensive and completely annotated existing collection is the
   openly accessible database, AIFdb17 (Lawrence+ 2012), containing
   * over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m

@@ -26,7 +26,7 @@ arXiv preprint arXiv:1708.00416
 * eval: predicting attributes of Facebook messages and Tweets
   * predicting sarcasm, sentiment, and locus of control:
     * locus of control: whether the author feels in control or being controlled
-      * a relatively novel task
+    * a relatively novel task
 * contributions
   * a novel method for learning the low-dimensional embeddings of verbs and
     their arguments
