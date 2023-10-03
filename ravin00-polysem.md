@@ -24,7 +24,7 @@ Reviewed by Jean Véronis Université de Provence, Aix-en-Provence
 
 * This term requires a two-step explanation
 * Troponyms are
-  verb hyponyms, that refer to specific manners of performing ... other verbs
-  e.g. stammer, babble, whisper, and shout, are troponyms of talking
-* Autotroponymy ... verbs linked by this relation share the same form
-  e.g. The children behaved / The children behaved well
+  verb hyponyms, that refer to specific manners of performing other verbs
+  eg _stammer, babble, whisper_, and _shout_, are troponyms of _talk_
+* Autotroponymy verbs linked by this relation share the same form
+  eg The children behaved / The children behaved well
