@@ -188,7 +188,7 @@ Beth Levin, Malka Rappaport Hovav
     (Davis 2001; Grimshaw 1993; Jackendoff 1990b; B. Levin 1999; Pinker 1989; T
     Mohanan and K. P. Mohanan 1999; Rappaport Hovav and B. Levin 1998a)
   * Pinker: the set verb meanings are organized around is "much smaller than the
-    set of cognitively available and culturally salient distinctions (1989
+    set of cognitively available and culturally salient distinctions (1989)
   * relevant components of verb meaning are usually isolated through an
     examination of the common semantic denominator of verbs exhibiting the same
     range of argument realization options
@@ -197,9 +197,9 @@ Beth Levin, Malka Rappaport Hovav
     about the morphosyntactic realization of arguments which are restricted to
     verbs having to do with color (eg paint, color, bleach, redden, stain)
 * Pesetsky (1995)
-  * verbs of loud vssoft speech (eg bellow, holler, shout) vs (eg murmur,
-    whisper) is not relevant
-  * verbs of manner vscontent of speaking
+  * verbs of loud vs soft speech is not relevant
+    * eg _bellow, holler, shout_ vs _murmur, whisper_
+  * verbs of manner vs content of speaking
     * eg holler and whisper vs say and propose, is grammatically relevant
     * his examples for grammatical properties of these classes of verbs involve
       sentential complements, which we do not discuss in this book, but instead
