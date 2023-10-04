@@ -48,8 +48,8 @@ arXiv:1911.02499 [cs.CL]
 * we approach this problem with a novel and more efficient method to
   predict VAD scores from existing corpora annotated with categorical emotions
   (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
-  Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
-  Shahraki and Zaiane, 2017; Mohammad+ 2018)
+   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
+   Shahraki and Zaiane, 2017; Mohammad+ 2018)
 * we propose a framework to learn the VAD scores of the label words obtained
   from the NRC-VAD lexicon (Mohammad, 2018)
   * fine-tuning a pre-trained language model RoBERTa (Liu+ 2019)
@@ -69,24 +69,24 @@ arXiv:1911.02499 [cs.CL]
 
 ## Overview
 
-* categorical labels can be mapped to word-level VAD scores by using NRC-VAD
-  lexicon (Mohammad, 2018)
+* categorical labels can be mapped to word-level VAD scores
+  by using NRC-VAD lexicon (Mohammad, 2018)
   * categorical emotion as a point in the VAD space
-  * Then we sort the labels by each VAD dimension to
+  * Then we sort the labels by each VAD dimension for Earth-Mover Distance
 
 ## Model Architecture (Fig 1a)
 
 * Formally, an emotion detection model is P (e|X) where
-  e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E =
+  e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E
   X = {x1 , x2 , ..., xn } is a sequence of symbols xi representing the input
   * Usually e is a one-hot vector in emotion classification
 * since the VAD dimensions are nearly independent (Russell and Mehrabian,
-  1977), we simply assume mutual independence:
+  1977), we simply assume mutual independence
 
 ## Model Training (Fig 1b)
 
-* we need to obtain target conditionals for each P (v|X), P (a|X), P (d|X) from
-  categorical emotion labels
+* we need to obtain target conditionals for each P (v|X), P (a|X), P (d|X)
+  from categorical emotion labels
 * sorted one-hot labels can be treated as a proxy of target conditionals
 * we minimize the distances between the true and predicted P (·|X)s
   * Since we sorted the labels, there is ordering among the classes
@@ -102,8 +102,7 @@ arXiv:1911.02499 [cs.CL]
 ## Predicting Categorical Emotion Labels (Fig.  1c)
 
 * pick
-  * one emotion label having the maximum probability among labels (single-label
-    case, Eq. 9), or
+  * the emotion label with the maximum prob among labels (single-label, Eq 9) or
   * multiple labels with probability over a certain threshold (multi-label)
     * The threshold is a hyperparameter of the model, set to 0.51/3
     * ie geometric mean of the three distributions
@@ -168,10 +167,10 @@ arXiv:1911.02499 [cs.CL]
 * In Table 3, we present six models for ablation study
 * Model 1: RoBERTa trained on SemEval with our framework except
   EMD loss replaced with cross-entropy which does not consider the order
-  * our model shows better correlations in overall. (+.022)
+  * our model shows better correlations in overall (+.022)
 * Model 3 is fine-tuned on EmoBank without pretrained weights of RoBERTa,
   * highly underperforming result compared to Model 5 (+.302)
-  * performance Still comparable to that of AAN (Zhu+ 2019)
+  * performance still comparable to that of AAN (Zhu+ 2019)
 * Model 4 uses BERT (Devlin+ 2018) pre-trained weights
   * slightly lower performance than Model 5 (+.027)
 * Model 6 shows comparable performance compared to Model 5 when using full
@@ -198,11 +197,11 @@ arXiv:1911.02499 [cs.CL]
   * ensemble learning (Akhtar+ 2019)
 * sentences annotated with basic categorical emotions for VAD score prediction
   (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007; 
-  Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017; 
-  Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
+   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017; 
+   Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
   * more common than VAD
-  * commonly used for emotion classification, we use them to predict VAD scores
-    from Categorical model of emotion assumes that the catcal emotion labels
+  * commonly used for emotion classification
+    * we use them to predict VAD scores from categorical model of emotion
 * dataset related to emotion, all of these are cateogrical annotations
   * in healthcare (Sosea and Caragea, 2020),
   * relation between emoji and emotion (Shoeb and de Melo, 2020)
@@ -210,7 +209,7 @@ arXiv:1911.02499 [cs.CL]
   * multimodal emotion detection (Zhang+ 2020),
   * emotion in conversation (Ishiwatari+ 2020), and
   * emotion change in a paragraph (Brahman and Chaturvedi, 2020)
-* various types of label sets. To train model across the various shaped emotion
+* various types of label sets. To train model across the various inventories
   * aggregate various format of emotion dataset into a common annotation schema
   * better performance using unified dataset
     (Bostan and Klinger, 2018; Belainine+ 2020)
@@ -241,13 +240,13 @@ arXiv:1911.02499 [cs.CL]
     engage and interact (Stark and Hoey, 2020). From a different perspective,
 * problems might occur from the inaccurate results of the model
   * Mispredictions of the models could result in harmful outcomes
-* a serious problem in many languages with relatively low resources, resulting
+* languages with relatively low resources
   * quality  of emotion detection resources would degrade if translated to
   * cultural nuances to defining emotions vary
-* guidelines for the ethical use of emotional AI technologies present a
-  checklist for anyone engaged with data about human emotion
+* guidelines for the ethical use of emotional AI technologies present 
+  * a checklist for anyone engaged with data about human emotion
   * Stark and Hoey (2020)
-  * McStay and Pavliscak (2019) include a number of salutary suggestions for
-    taking action as a practitioner
+  * McStay and Pavliscak (2019) include a number of salutary suggestions
+    for taking action as a practitioner
 * resources using multilingual corpora with categorical emotion labels
   (Öhman+ 2018)
