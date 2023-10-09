@@ -2,8 +2,6 @@ Theories of Case
 Miriam Butt
 2006 Cambridge University Press
 
-todo: localist
-
 # Introduction
 
 ## 1.1 Overview
@@ -190,7 +188,7 @@ todo: localist
 * Tékhnē dealt with locative associations of three cases:
   genitive of origin, dative of location and accusative of direction
   * Byzantine times, the grammarian Maximus Planudes (ca. 1300) dealt with this
-  * Hjelmslev (1935:10–12) to see Planudes as the first propounder of a truly
+  * Hjelmslev (1935:10–12) sees Planudes as the first propounder of a truly
     localist theory of case (Robins 2000:420)
   * found their way into mainstream syntax via Jackendoff (1972, 1990)
     * lexical decomposition, discussed in chapter 5
@@ -900,8 +898,8 @@ todo: localist
   * morphosynt: over which relevant linguistic generalizations can be stated
     * can in principle have differing morphophonological realizations, as is
   * eg Urdu dative in (36), where the overt dative form for a pronoun can
-    alternate between an inflectional -e and the clitic ko.  A system which
-    * some datives have to be analysed as subjects. The same is true for the
+    alternate between an inflectional _-e_ and the clitic _ko_
+    * some datives have to be analysed as subjects
     * also in Icelandic
     * to him/her hunger is attached/stuck (36)
   * Kiparsky: these examples are instances of language specific patterns

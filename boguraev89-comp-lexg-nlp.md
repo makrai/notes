@@ -186,7 +186,7 @@ Pages: 1-40
     * general real-word knowledge
     * specialised domain and task-dependent knowledge
   * knowledge is represented using a scheme
-    * based on ... frame-like concepts with slot-like role descriptions,
+    * based on frame-like concepts with slot-like role descriptions,
     * organised along a generalisation/specialisation axis
 * WSD p22
 
@@ -293,15 +293,14 @@ Pages: 171-192
 ## 8.5 p99
 
 # 9 A tractable machine dictionary as a resource for comp sem p104
-Y. Wilks, D. Fass, C. Guo, J. McDonald, T. Plate, B. Slator
+Y Wilks, D Fass, C Guo, J McDonald, T Plate, B Slator
 Pages: 193-228
 
-> We begin with a review of computational semantics, starting with what may now
-> be called the historical background in computational semantics. In some sense
-> nearly all the work in the early seventies on AI approaches to natural
-> language understanding can be said to fall under the term computational
-> semantics:
-
+* comp sem in the 1970s
+  * We begin with a review of computational semantics, starting with what may
+    now be called the historical background in computational semantics
+  * nearly all the work in the early seventies on AI approaches to NLU
+    fall under the term computational semantics
 * history
   * Schank (CD)
   * Wilks' Preference Semantics
@@ -309,7 +308,7 @@ Pages: 193-228
   * Simmons' (1973) semantic network and Charniak’s (1972) inferential system
   * Lehnert (1987) is a fusion of Preference Semantics and CD
 * comp sem is opposed to any claims as to the necessity or sufficiency of
-  ... syntactic analysis, logical semantics, and expert systems
+  syntactic analysis, logical semantics, and expert systems
   * substantial algorithms and the right level of analysis lie elsewhere
   * natural language interfaces, especially expert systems
     * a false claim: if the knowledge structure is adequate, practical problems
@@ -317,13 +316,13 @@ Pages: 193-228
     * knowledge of language and the world are not ultimately separable
 * connectionism
   * properties shared with comp sem
-  * sub—symbolic approaches within connectionism (Smolensky, 1987)
+  * sub-symbolic approaches within connectionism (Smolensky, 1987)
     * not expect to distinguish representations for particular word senses,
       they would be simply different aspects of a single non-symbolic
-      representation, and would correspond (if to anything) to ... a selection
+      representation, and would correspond (if to anything) to a selection
       of different weighted arcs
   * those usually called localist
-    * (for example, Cottrell and Small, 1983; Waltz and Pollack, 1985)
+    * eg Cottrell and Small (1983); Waltz and Pollack (1985)
     * weighted symbolic representations
     * used in this chapter
 * the difference as they apply to issues of word sense for comp sem

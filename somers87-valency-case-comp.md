@@ -1,5 +1,6 @@
-Somers
 Valency and Case in Computational Linguistics
+Harold L Somers
+Edinburgh University Press 1987
 
 parts:
   1. ling theory of valency and case
@@ -638,7 +639,8 @@ parts:
   * co-occurrence with Src and Gol
   * temporal
 * metaphorical p159
-  * Anderson: abstract uses of (surface) cases in general, location, *state* or time
+  * Anderson
+    * abstract uses of (surface) cases in general, location, *state* or time
   * Fillmore 1971
     * Factitive -> Goal
     * Dative -> Goal
@@ -670,7 +672,7 @@ parts:
       * similar =TO
       * London is larger =FROM Birmingham
       * David is long =IN the leg
-    * tell over the phone, hear whit my own ears, witness with unbelieving eyes
+    * tell over the phone, hear with my own ears, witness with unbelieving eyes
 
 ### 7.6 Comitative p164
 

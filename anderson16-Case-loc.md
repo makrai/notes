@@ -6,35 +6,35 @@ John M. Anderson
 
 * creativity in language
   * involves the capacity to formulate representations for newly perceived
-    ‘scenes’ and to decode them, possibly in novel situations; and it
-  * includes more lexical than syntactic capacities. This capacity
+    ‘scenes’ and to decode them, possibly in novel situations
+  * includes more lexical than syntactic capacities
   * depends on an understanding of figurativeness, which,
     * despite the relative routinization, or institutionalization, involved in
       lexicalization and grammaticalization, is
     * basic to the structure and development of both lexical and grammar
-* organization: three parts, followed by an Epilogue. Part I,
+* organization: three parts, followed by an Epilogue
   1. ‘The Tradition’, discusses the evolution of grammars of case
     * terminating in the chapter on the identity of semantic relations
     * The boundary between Parts I and II cuts across localism:
-      * both the latter part of Chapter 5 and Chapter 6 are concerned with it
+      * both the latter part of Ch 5 and Ch 6 are concerned with localism
       * one reason for this is chronology
       * proposed incorporation of the ‘localist hypothesis’ into ‘case grammar’
   2. ‘The Implementation of the Category of Case’
     * there is also an attempt to give attention to studies that do not
-      regard itself as ‘case grammar’ e.g. ‘macro-roles’ and ‘abstract syntax’
+      regard themselves as ‘case grammar’ eg ‘macro-roles’ and ‘abstract syntax’
     * the categorial character of ‘case’ in the wide sense
     * divided from Part III by a difference in focus within the grammar
   3. ‘Case Grammar as a Notional Grammar’
     * ‘case’ is typical of syntactic categories in being semantically grounded:
     * the role of ‘case’ in eliminating appeal to syntactic transformations
-      and other syntactic paraphernalia, in favour of simple projections from a
-      richly structured but formally parsimonious lexicon
+      and other syntactic paraphernalia, in favour of
+      simple projections from a richly structured but formally parsimon lexicon
   * Epilogue which tries to draw together the main results, as I see them
     * some extensions and further consequences of the main traditions
     * novel analyses also in the discussion of localism in Chapter 6
     * ideas whose development is as informative as the snap-shots
-    * e.g. the treatment of passives or causatives is recurrently modified in
-      the light of conceptual shifts
+    * eg the treatment of passives or causatives is recurrently modified
+      in the light of conceptual shifts
 
 # 5 The Identity of Semantic Relations
 
@@ -71,12 +71,12 @@ John M. Anderson
   * where distinctions in semantic relation
     can rather be ascribed to other elements in the structures
 
-## 5.3 The ineluctability of ‘case’ 103
+## 5.3 The ineluct[=avoid]ability of ‘case’ 103
 
-* The mainstream of modern linguistics inherited the view that there were two
-  kinds of case, the grammatical and the local or notional
+* The mainstream of modern linguistics inherited the view that there were
+  two kinds of case, the grammatical and the local or notional
 * Anderson's articulation of localism differs from Hjelmslev’s
-  * Some of the differences are contingent esetleges,
+  * Some of the differences are contingent [esetleges],
     depending on the syntactic-derivationalist orientation of Anderson
   * Others are more fundamental, as we shall see
 
@@ -87,9 +87,11 @@ John M. Anderson
   described and formulated in Hjelmslev (1935/7)
   * we return to arguments for the basicness of semantic relations in §6.3
 
-5.4.1 The insufficiency of ‘criteria’
-5.4.2 Hjelmslev and localism
-5.4.3 A localist interpretation of ‘datives/experiencers’
+### 5.4.1 The insufficiency of ‘criteria’
+
+### 5.4.2 Hjelmslev and localism
+
+### 5.4.3 A localist interpretation of ‘datives/experiencers’
 
 ## 5.5 Conclusion and prospect
 

@@ -313,8 +313,8 @@ Beth Levin, Malka Rappaport Hovav
     * The assignment of an experiencer role reflects the verbs's meaning
     * unclear what motivates the assignment of the theme role to their second
     * “Theme” is usually defined as the role of an entity whose movement,
-      location, state, or change of state is specified by
-    * a general tendency to treat theme as a default role; see section 2.4. The
+      location, state, or change of state is specified by the verb
+    * a general tendency to treat theme as a default role; see section 2.4
   * very similar, if not identical, underlying syntactic representations
     (Belletti and Rizzi 1988; Postal 1971)
   * these analyses are extended to other psych-verbs since fear and like, on the

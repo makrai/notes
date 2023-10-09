@@ -1,5 +1,5 @@
-Barry J. Blake 2004
 Case
+Barry J. Blake 2004
 
 # 3 Modern approaches to case
 
@@ -20,32 +20,31 @@ Case
     * John Anderson’s Localist Case Grammar (1971, 1977, 1997),
     * Starosta’s Lexicase (1971, 1988) and Dik’s Functional Grammar (1978)
 
-### 3.4.4 Localist Case Grammar
+### 3.4.4 Localist Case Grammar 80 102
 
-* three characteristics of Localist Case Grammar that account for [how the
-  larger number of semantic roles recognised by scholars] can be accommodated
-  1. Localism
-  * syntactic case categories [are] extensions of local case categories
-    into an abstract domain
-    e.g. the subject of [ _have_ ] in _She has it_ ... will be [locative].
+* three characteristics of Localist Case Grammar that account for how the
+  larger number of semantic roles recognised by scholars can be accommodated
+  1. Localism: syntactic case categories are extensions of local case categs
+     into an abstract domain
+    * eg the subject of _have_ in _She has it_ ... will be locative
   1. Syntagmatic contrast
     The absolutive and the locative are interpreted as goal (destination)
-    in the context of ergative and ablative respectively.
-    For instance, the noun phrase the stick will be [abs] both in
+    in the context of ergative and ablative respectively
+    For instance, the noun phrase the stick will be abs both in
     _The stick broke_ and in _The teacher broke the stick_, but
     will be interpreted as a ‘goal of action’ ( patient) only in the transitive
   1. Multiple assignment
     * an argument can bear more than one case relation
-* a desire to maintain a fixed mapping of extralinguistic roles to case[s]
-  e.g. ‘teacher’ as [abl]
-  since the ‘teacher’ is the abstract source of the knowledge
+* a desire to maintain a fixed mapping of extralinguistic roles to cases
+  * eg ‘teacher’ as abl
+  * since the ‘teacher’ is the abstract source of the knowledge
 * holds roles constant under paraphrase
   * capturing the objective properties of the arguments and at the same time
     recognising the difference in perspective
-  * e.g. tying the holistic reading to the case relation [abs]
+  * eg tying the holistic reading to the case relation abs
 * the core grammar of all languages is organised on an absolutive–ergative bas
 
-### 3.4.5 Starosta’s Lexicase 305
+### 3.4.5 Starosta’s Lexicase 83 105
 
 ## 3.5 Hierarchies
 
@@ -59,7 +58,7 @@ Case
 
 #### Absolutive and ergative
 
-* [it is claimed that] the SP/A distinction has a semantic basis
+* it is claimed that the SP/A distinction has a semantic basis
   (John Anderson 1977, 1979, Kibrik 1979 and Wierzbicka 1981)
 
 ## 5.3 Dative

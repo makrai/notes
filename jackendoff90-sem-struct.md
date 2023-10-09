@@ -3,8 +3,8 @@ Jackendoff, Ray S
 1990
 
 * az itteni elemzés szintaxisalapúbb, mint a 4lang
-* minden példát összevetni
 * különféle neveken hívja a dekompozíciót (tiers, X-bar flavor)
+* minden példát összevetni
 
 # Introduction
 
@@ -264,15 +264,15 @@ Jackendoff, Ray S
   * many so-called implicative properties of verbs
     follow from generalized forms of inference rules
     developed to account for verbs of spatial motion and location
-    * properties such as _factive,_ _implicative,_ and _semifactive_
+    * properties such as _factive, implicative,_ and _semifactive_
     * need not be stated as arbitrary meaning postulates
     * This is just the sort of explanatory power one wants from a theory of
       lexical decomposition into conceptual features
   * Each semantic field has its own particular inference patterns
-    * e.g. in the spatial field, one fundamental principle stipulates that an
+    * eg in the spatial field, one fundamental principle stipulates that an
       object cannot be in two disjoint places at once
-      From this principle plus rule (21), it follows that an object that
-      travels from one place to another is not still in its original position
+      * From this principle plus rule (21), it follows that an object that
+        travels from one place to another is not still in its original position
     * in the field of information transfer, this inference does not hold
 
 ### 1.6.3 Aggregation and Boundedness
@@ -325,11 +325,11 @@ Jackendoff, Ray S
 * the solution Fodor advocates
   * each lexical item has its own specific meaning postulates
     * determine the entailments of sentences the lexical item occurs in
-* e.g. causative-noncausative pairs in (26)
+* eg causative-noncausative pairs in (26)
 * each element in a lexical decomposition can be regarded as that item's access
   to more general-purpose rules of inference
 * studies of language acquisition have benefited from decompositional theories
-  of lexical concepts (e.g. Landau and Gleitman 1985; Pinker 1989)
+  of lexical concepts (eg Landau and Gleitman 1985; Pinker 1989)
 
 # Chapter 2 Argument Structure and Thematic Roles 43
 
@@ -391,7 +391,7 @@ Jackendoff, Ray S
 * how they behave in rules of inference
   * Each kind of argument position plays a distinct role in rules of inference,
     which are stated over full conceptual structures
-  * e.g. at the end of an Event of going to some place, one is at that place
+  * eg at the end of an Event of going to some place, one is at that place
     * does not hold if either of the functions in the Event is changed
       * if TO is changed to TOWARD, as in Bill ran toward the house, or
       * if GO is changed to ORIENT, as in Bill pointed to the house
@@ -402,7 +402,7 @@ Jackendoff, Ray S
   2. not only NPs receive thematic roles. For instance,
     * _green_ is a Goal in _a. The light changed from red to green._
     * proposition
-      * e.g. _shut up_ is a Goal in _b. Bill talked Harry into shutting up._
+      * eg _shut up_ is a Goal in _b. Bill talked Harry into shutting up._
       * not the thematic role for a subordinate clause,
         as suggested by Bresnan (1982d, 293)
       * can occur in various thematic roles, just as Things can
@@ -424,7 +424,7 @@ Jackendoff, Ray S
   constituent] headed by a lexical item H
 * (7) assumes that all linkings are stipulated in the head's lexical item
 * yet there are regularities of linking,
-  * e.g. Agents invariably appear in subject position
+  * eg Agents invariably appear in subject position
   * One can express such regularities
     and thereby leave predictable indices out of lexical entries
   * redundancy rules. I defer discussing it until chapter 11
@@ -433,24 +433,24 @@ Jackendoff, Ray S
   * [if selection fails,] the sentence could not receive a well-formed reading
   * Selectional restrictions go into much more detail than the
     conceptual category
-    * e.g. the object of _drink_, the direct object of _pay_,
+    * eg the object of _drink_, the direct object of _pay_,
       the subject of German _fressen_, which is predicated only of animals
   * where an argument is not even syntactically expressed:
     * selectional restrictions are explicit information that the verb
       supplies about its arguments
     * selectional restriction = conceptual structure that occurs within an
       indexed conceptual constituent
-     e.g. drink
+     eg drink
       * cause a liquid to go into one's mouth
       * obviously an oversimplification, but sufficient for the present point
   * the reading of an NP argument as somehow fused or merged with the semantic
     information already present in the constituent
     * If C1 and C2 contain incompatible information,
       the fusion of C1 and C2 is anomalous
-      e.g. if the offending features are sisters in a taxonomy
+      eg if the offending features are sisters in a taxonomy
       of mutually exclusive possibilities,
       such as Thing/Property/Place/Event/etc. or solid/liquid/gas
-* e.g. drink vs butter
+* eg drink vs butter
   * Both mean "cause something to go someplace."
   * They differ
     * semantically in what they stipulate about the Theme and the Path
@@ -494,7 +494,7 @@ Jackendoff, Ray S
   * that each open argument position in conceptual structure is expressed by
     exactly one NP
   * central to GB Theory, and
-    there are parallel notions in other theories (e.g. biuniqueness in LFG)
+    there are parallel notions in other theories (eg biuniqueness in LFG)
   * important for
     * q-roles as annotations to syntactic structure
     * q-marking and case-marking are comparable phenomena (Dowty 1988)
@@ -612,7 +612,7 @@ Jackendoff, Ray S
 
 * more productive lexical processes
   * can be expressed in terms of manipulations on the indices in the verb's LCS
-  * e.g. passive participles from verbs
+  * eg passive participles from verbs
     * delete i, the index that marks the external argument
     * "logical subject" becomes an implicit argument
 
@@ -673,15 +673,15 @@ Jackendoff, Ray S
   * The possibility, that GO can be reduced to INCH (BE)
   * appeared in its essence many times in the literature
     * Schank 1973; Dowty 1979; Hinrichs 1985
-    * arguments against such a reduction:
-      * GO can occur also
-        * with a wide variety of Path-functions:
-        * as expressions of extent (_reach_ and _go_ itself)
-      * motion must be a primitive in spatial cognition anyway
-        * we can perceive an object as in continuous motion
-          without knowing anything about the endpoints of its motion
-        * visual system contains specialized motion detectors (Marr 1982)
-          * independent of the channels that individuate and localize objects
+  * arguments against such a reduction:
+    * GO can occur also
+      * with a wide variety of Path-functions:
+      * as expressions of extent (_reach_ and _go_ itself)
+    * motion must be a primitive in spatial cognition anyway
+      * we can perceive an object as in continuous motion
+        without knowing anything about the endpoints of its motion
+      * visual system contains specialized motion detectors (Marr 1982)
+        * independent of the channels that individuate and localize objects
 * My conclusion is that GO and INCH are two independent functions of CS
   * three criteria to determine which function is being encoded
     1. If the verb in question appears with a range of Path-prepositions --> GO
@@ -734,9 +734,9 @@ Jackendoff, Ray S
 
 * an unbounded stream of water or people
 * media in the sense discussed in section 1.6.3
-  As pointed out there, a medium can consist either of a
-  * substance like water, which has no internal organization, or of an
-  * aggregate like people, which is organized in terms of minimal units
+  * As pointed out there, a medium can consist either of a
+    * substance like water, which has no internal organization, or of an
+    * aggregate like people, which is organized in terms of minimal units
 * progressive aspect, which in a sense takes a
   snapshot of an event in progress whose temporal boundaries are not in view
 * similar determiner constraints appear in location sentences
@@ -745,8 +745,8 @@ Jackendoff, Ray S
   * acceptable determiners and the possibility of only plural or mass nouns
   * the location of the subject with respect to the object of the preposition
     vs extension over the whole space subtended by the object
-* sentences [in (3)] not only locate the medium but also specify its form
-  * aggregates to be densely packed [e.g.] a line of telephone poles
+* sentences in (3) not only locate the medium but also specify its form
+  * aggregates to be densely packed eg a line of telephone poles
     * not localized in one part of the object
 * feature
   * a. on the floor `[Place ON+dist [Thing FLOOR]]`
@@ -774,7 +774,7 @@ Jackendoff, Ray S
   * a further location expression describing the point of contact,
   * permited by most verbs of contact
 * hit: GO( , TO) or INCH(BE( , AT))
-  * GOc might [specify e.g. motion while in continuous contact with the object
+  * GOc might [specify eg motion while in continuous contact with the object
     * _stroke_ and _scratch_ mean exactly this
 * _rub_ and _brush_ specifying a Path of contact
 * _bounce_ specifies travel that is interrupted by an impact and that continues
@@ -930,12 +930,12 @@ Jackendoff, Ray S
 
 ### 7.3.2 Verbs of transfer of Possession
 
-* the "dative shift" verbs have an alternation in the action tier not unlike
-  that of the locative alternation with _load_
+* the "dative shift" verbs have an alternation in the action tier
+  like that of the locative alternation with _load_
 * direct object: canonical positions for action tier roles. The use of an
   indirect object, then, is a means of canonically marking the Beneficiary role
   (We return to this matter in chapter 11.)
-* light verb, e.g. _give X a kiss, give X a kick_
+* light verb, eg _give X a kiss, give X a kick_
   * preserved of the regular verb give is its action tier, in which X is the
   * switch from Beneficiary in give X a kiss to Patient in give X a kick: neut
 
@@ -957,7 +957,7 @@ Jackendoff, Ray S
   facilitates movement of things that happen to come in contact with them
 * logical relation (suggested by Talmy and hinted at in Jackendoff 1976)
   a. X entails/implies/leads to Y.  (cause)
-  b. X rules out/precludes Y.  (cause . . . not)
+  b. X rules out/precludes Y.  (cause ... not)
   c. X permits/is consistent with Y.  (let)
   d. X reinforces/supports Y.  (help)
     * strictly speaking are not considered verbs of logical relation but which
@@ -982,7 +982,7 @@ Jackendoff, Ray S
   * ambiguous between the two fields (force, resist, let)
   * logical relations, the modals, and the Experiencer verbs introduce new
     fields of causation, sometimes using the very same lexical items
-    (e.g. lead to, permit, support, reinforce, strike)
+    (eg lead to, permit, support, reinforce, strike)
 * force-dynamic domain yields a further application of the semantic field
   * beyond the extensions of thematic roles
 * The observed generalizations, particularly in the logical domain,
