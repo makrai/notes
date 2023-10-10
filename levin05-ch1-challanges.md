@@ -200,7 +200,7 @@ Beth Levin, Malka Rappaport Hovav
   * verbs of loud vs soft speech is not relevant
     * eg _bellow, holler, shout_ vs _murmur, whisper_
   * verbs of manner vs content of speaking
-    * eg holler and whisper vs say and propose, is grammatically relevant
+    * eg _holler_ & _whisper_ vs _say_ & _propose_, is grammatically relevant
     * his examples for grammatical properties of these classes of verbs involve
       sentential complements, which we do not discuss in this book, but instead
   * we present comparable examples involving verbs of sound emission, drawing on
