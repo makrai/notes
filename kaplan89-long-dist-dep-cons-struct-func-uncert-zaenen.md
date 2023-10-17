@@ -1,7 +1,7 @@
 Long-Distance Dependencies, Constituent Structure, and Functional Uncertainty
 Ronald M Kaplan and Annie Zaenen
-1989 In Baltin and Kroch eds Alternative Conceptions of Phrase Structure. U Chic
-1995 In Dalrymple+ Formal Issues in Lexical-Functional Grammar. Stanford Uni
+1989 In Baltin & Kroch eds _Alternative Conceptions of Phrase Structure_ U Chic
+1995 In Dalrymple+ _Formal Issues in Lexical-Functional Grammar_ Stanford Uni
 
 # 1 Introduction
 

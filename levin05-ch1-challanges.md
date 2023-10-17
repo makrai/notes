@@ -4,42 +4,40 @@ Beth Levin, Malka Rappaport Hovav
 
 # page i
 
-* how a verb’s semantics can determine the morphosyntactic realization of its
-  arguments
+* how a verb’s semantics can determine the morphosynt realization of its args
   * Assuming a close connection between verb meaning and syntactic structure
   * a bridge between lexical semantic and syntactic research,
   * synthesizing the results of work from a range of linguistic subdisciplines
     and in a variety of theoretical frameworks
 * organization
-  * first four chapters survey leading theories about
+  * ch 1--4 survey leading theories about
     event structure and conceptualization
-  * fifth and sixth chapters focus on the
-    mapping from lexical semantics to morphosyntax, and include a detailed
-    * thematic hierarchy.  The seventh chapter reviews treatments of
-  7. multiple argument realization.  With useful bibliographic references and
+  * ch 5 & 6 focus on the mapping from lexical semantics to morphosyntax, and
+    * thematic hierarchy, a detailed one
+  * ch 7: multiple argument realization.  With useful bibliographic references
 
 # Introduction
 
 * semantically identifiable classes, which are the basis for generalizations
   * Fillmore (1970) points out that in terms of their linguistic behavior,
-  * break and hit are each representative of a larger set of verbs
-    * break involve a change of state in an entity
-      * bend, fold, shatter, crack
-    * hit involve contact, often forceful, with an entity,
+  * _break_ and _hit_ are each representative of a larger set of verbs
+    * _break_ involve a change of state in an entity
+      * _bend, fold, shatter, crack_
+    * _hit_ involve contact, often forceful, with an entity,
       without entailing any change of state in that entity
       (eg The rocks hit the window, but luckily it wasn’t damaged)
-      * slap, strike, bump, stroke (Fillmore 1970)
-* All verbs in the break class – and none in the hit class –
-  * show the two argument realization options in (1) and (2), which together
+      * _slap, strike, bump, stroke_ (Fillmore 1970)
+* All verbs in the _break_ class – and none in the _hit_ class –
+  * show the two argument realization options in (1) and (2)
   * The window broke
   * the causative alternation (aka, “anticausative” or “causative/inchoative”)
   * the transitive use of a verb V means roughly ‘cause to V-intransitive’;
     * see B. Levin (1993) for discussion and references. More generally, both
-      the break verbs and the hit verbs show a range of characteristic argument
-      realization possibilities, going well beyond those just illustrated
+      the _break_ verbs and the _hit_ verbs show a range of characteristic
+      arg realization possibilities, going well beyond those just illustrated
 * As Fillmore (1970) discusses
-  * The window was broken allows both eventive and stative readings, while the
-  * The window was hit allows only a stative reading
+  * _The window was broken_ allows both eventive and stative readings, while the
+  * _The window was hit_ allows only a stative reading
   * I broke/hit his leg.  I broke/`*`hit him on the leg
     * alternate expressions of the possessor of a body part
 *  Fillmore (1977a): the sentences in the pair in (5)/(6) are not/are paraphras

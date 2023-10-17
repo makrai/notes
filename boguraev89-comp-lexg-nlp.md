@@ -7,12 +7,12 @@ Bran Boguraev and Ted Briscoe eds
 * attention drawn to lexical resources
 * theoretical role and applications in traditional linguistic professions and
   NLP-based systems
-* tens and hundreds of thousands of lexical items
+* 10--100 Ks of lexical items
 * computational lexicography and lexicology as a discipline
   * workshops, confs, etc
 * explicit lexical knowledge bases facilitate human use and lexicographic work
 * reusability refers to two issues
-  1. establish now lexical KBs for a wide variety of researchers and applications
+  1. establish now lexical KBs for a wide variety of researchers & applications
   2. reuse existing lexical resources
 
 # Introduction to computational lexicography for natural language processing
@@ -41,7 +41,7 @@ Pages: 1-40
     * uniquely suitable for computational lexicography
 * term computational lexicography
   * lexicons derived from MRDs for use by machine will be different from
-    conventional dictionaries both in how they organize and represent information
+    conventional dictionaries both in how they organize and represent info
   * use in the development of dictionary DBs for human use
   * OED (Stubbs and Tompa 1984, Stubbs 1986)
   * one dictionary DB for both automated and human use (Byrd 1988)
@@ -77,8 +77,8 @@ Pages: 1-40
   * use (formal/slang), allomorphs, stress
 * function
   * distributional behaviour
-    * simple word class tag, e.g. The Collins English Dictionary (Hanks, 1979)
-    * elaborate subcat, e.g.
+    * simple word class tag, eg The Collins English Dictionary (Hanks, 1979)
+    * elaborate subcat, eg
       * The Oxford Advanced Learner's Dictionary of Current English
         * (Hornby, 1980, OALD)
       * LDOCE
@@ -95,9 +95,9 @@ Pages: 1-40
   * _subject_ and _box_ codes
     * unique to LDOCE, not printed
     * semantic notions
-      * context e.g. politics, religion, language
+      * context eg politics, religion, language
       * selectional restriction p14
-        * e.g. _sandwich_ v 1 `__L_X___S` where `X` denotes the preference for
+        * eg _sandwich_ v 1 `__L_X___S` where `X` denotes the preference for
           an abstract or human subject
 * experiences with the exploitation of
   * pronunciation, see chap 6
@@ -172,7 +172,7 @@ Pages: 1-40
   particular word (word sense) and the specialised (or expert) knowledge
   relevant to its use in a _domain_ context
   (Wilks, 1977; or more recently, Cater, 1987)
-* if most of [lexical sem] could be derived from a machine-readable source
+* if most of lexical sem could be derived from a machine-readable source
   * possible representations of lexical semantics
     * decomposition into semantic markers (Katz and Fodor, 1963),
     * formulae constructed from semantic primitives (Wilks, 1977),
@@ -207,7 +207,7 @@ Pages: 1-40
 * LDV
   * the preface to the published version claims that ‘a rigorous set of
     principles was established to ensure that only the most ‘central’ meanings
-    of [a controlled vocabulary of] 2000 words, and only easily understood
+    of a controlled vocabulary of 2000 words, and only easily understood
     derivatives, were used’ (Procter, 1978:ix)
   * `body` is part of the definitional vocabulary and has as its central (1)
     meaning “the whole of a person”. However, _parliament_ is defined as “a
@@ -268,7 +268,7 @@ Pages: 135-152
 H. Alshawi
 Pages: 153-169
 
-* the [small vocabulary] problem does not disappear in limited domain because
+* the small vocabulary problem does not disappear in limited domain because
   of synonyms and specialised words and the difficulty of delimiting domains
 * partial syntactic analysis
 
@@ -333,10 +333,9 @@ Pages: 193-228
     as information enters the systems
     * Mellish (1985), Hirst (1987), and Small and Rieger (1982),
 * Small, Cottrell and Tanenhaus (forthcoming)
-  * boundaries of discreteness, in word-senses continuity and vagueness, and
-    [machine learning]
+  * boundaries of discreteness, in word-senses continuity and vagueness, and ML
 * position in this chapter
-  * inseparability of knowledge and language goes [far]
+  * inseparability of knowledge and language goes far
   * knowledge for certain purposes should be stored in text-like forms
 * semantic structure of dictionaries has been analysed,
   compared to the underlying organisation of knowledge representations, and
@@ -360,7 +359,7 @@ Pages: 193-228
   4. bootstrapping
     * collecting the initial information that is needed
       * internal: from the dictionary itself
-      * external (e.g. noun is_a POS)
+      * external (eg noun is_a POS)
     * syntax and case
 * organization
   2. three approaches that extract information from LDOCE
@@ -374,7 +373,7 @@ Pages: 193-228
   * the three approaches
 * LDOCE
   * about 30 non-LDV words are used in definitions
-    e.g. aircraft is used 267 times
+    eg aircraft is used 267 times
   * senses of LDV words constitute 24k of the 74k senses in LDOCE
   * box codes CONCRETE, ABSTRACT, and ANIMATE, hierarchy
   * pragmatic (`subject`) codes

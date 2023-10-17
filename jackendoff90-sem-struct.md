@@ -15,8 +15,8 @@ Jackendoff, Ray S
     * account for the distinctions of meaning made by language users, and for
     * semantic relations including inference that speakers can draw
       among words, phrases, and sentences
-    * relate ling forms to their understanding of the nonlinguistic world, so
-      that they can make judgments of reference and truth
+    * relate ling forms to speakers' understanding of the nonlinguistic world,
+      so that they can make judgments of reference and truth
   * The Problem of Correspondence is to characterize
     the relationship between the formal treatment of meaning and syntax
     * choice of semantic formalism has an immediate effect on its solutions

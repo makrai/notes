@@ -1,9 +1,9 @@
-Cliff Goddard and Anna Wierzbicka (eds)
 Semantic and Lexical Universals
+Cliff Goddard and Anna Wierzbicka (eds)
 1994
 
 * megszerezni a definíciókat
-* combinatorics of primitives formalized by someone?
+* has the combinatorics of the primitives been formalized?
 
 # Contents
 
@@ -35,14 +35,14 @@ Semantic and Lexical Universals
 
 # Opening Statement Anna Wierzbicka
 
-* This set of papers is the first attempt ever to empirically test a
-  hypothetical set of semantic and lexical universals across a number of
-  genetically and typologically diverse languages
+* This set of papers is the first attempt ever to 
+  empirically test a hypothetical set of semantic and lexical universals
+  across a number of genetically and typologically diverse languages
   * parallel and strictly comparable answers to the same set of questions
-* a shared set of concepts, forming the common conceptual foundation of all
-  cultures
-  * the processes of consciousness may not be uniform across the cultural
-    regions of the world
+* a shared set of concepts, forming the common conceptual foundation
+  of all cultures
+  * the processes of consciousness may not be uniform
+    across the cultural regions of the world
 
 # Part 1: General
 
@@ -65,8 +65,8 @@ to any combination of things which are not themselves signs; Peirce (1932)
   * embodied action-schemata (in the style of Johnson (1987) and Lakoff
     (1987))
 * taken for granted in
-  * much semiotic work (cf. Eco 1984)
-  * European structural semanticists (e.g.  Greimas 1966, 1987)
+  * much semiotic work (cf Eco 1984)
+  * European structural semanticists (eg  Greimas 1966, 1987)
 * only rarely endorsed in the mainstream Anglo-American linguistic
   literature
 * found in the work of Yorick Wilks and Jerrol Katz
@@ -140,7 +140,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
   * such as CAUSE, NOT, BECOME and ALIVE
   * intended meanings were not (exactly) those of the English words, but
     were more 'abstract'
-    * criticised (Kempson 1977:92-96; Wierzbicka 1980; cf. Lyons 1977)
+    * criticised (Kempson 1977:92-96; Wierzbicka 1980; cf Lyons 1977)
  3. semi-technical nature
   * Katz (1987:186-187) uses labels like these to identify the 'conceptual
     components' of the English word chase:
@@ -229,37 +229,38 @@ to any combination of things which are not themselves signs; Peirce (1932)
   seemed confident that all human languages rested on a universal conceptual
   base, they did little to characterise that base in substantive terms
 * The sole exception was the work of Sapir's student Swadesh (1955),
-* both the major European schools of post-Saussurean structuralism, the Prague
-  School and the Copenhagen School, arrived at the view that word-meanings,
-  like phonemes, could be analysed into _distinctive features_,
+* both the major European schools of post-Saussurean structuralism,
+  the Prague School and the Copenhagen School, arrived at the view that
+  word-meanings, like phonemes, could be analysed into _distinctive features_
 
-  > although the complexes of components are unique to particular
-  > languages, the ultimate components of sound and meaning are
-  > language-neutral.  (Lyons 1977:245)
+> although the complexes of components are unique to particular languages,
+> the ultimate components of sound and meaning are language-neutral.  
+(Lyons 1977:245)
 
-* Prague School (especially through the person of Roman Jakobson)
+* Prague School (especially Roman Jakobson)
 * generativist ideas about semantic primitives in the mid-1960s and the 1970s,
   * Fillmore (1971:372) cited his
     * eight examples of the "ultimate terms of semantic description" —
       * identity, time, space, body, movement, territory, life and fear
       * "presumably biologically given notions"
-  * Bierwisch (1967:3-4) believed that universal semantic markers corresponded
-    to "certain deep seated, innate properties of the human organism and the
-    perceptual apparatus", and spoke of a "biological determination" of the
-    ultimate components of concepts
-  * Katz maintained that the inventory of potential semantic markers is innate
-    and universal because of their physiological basis (cf. Katz & Nagel 1974)
+  * Bierwisch (1967:3-4) 
+    * universal semantic markers corresponded to "certain deep seated, innate
+      properties of the human organism and the perceptual apparatus"
+    * a "biological determination" of the ultimate components of concepts
+  * Katz: the inventory of potential semantic markers is innate and universal
+    because of their physiological basis (cf Katz & Nagel 1974)
   * Berlin and Kay's (1969) discoveries about universals of colour terminology
   * unfortunate consequence of this 'biological turn' in thinking was the
-    apparent assumption that semantic universals were not only
-    language-independent (in the sense of language-universal), but
-    _extra-linguistic_ in nature
-  * To the best of my knowledge, no-one from either the Interpretive Semantics
+    apparent assumption that semantic universals were
+    not only language-independent (in the sense of language-universal), but
+    _extra-linguistic_
+  * To the best of my knowledge, noone from either the Interpretive Semantics
     or the Generative Semantics camps, or any of their intellectual heirs or
     successors; has proposed any substantial _inventory_ of universal semantic
-    elements. Where a few samples have been offered, such as those referred to
-    above, it was on the basis of a handful of sketched analyses, with no
-    detailed consideration of methodology
+    elements
+  * Where a few samples have been offered, such as those referred to above,
+    it was on the basis of a handful of sketched analyses, with
+    * no detailed consideration of methodology
 * most important contemporary sources of substantive semantic universals
   (again excepting the work of Wierzbicka and associates)
   to be found in John Lyons, RMW Dixon, and the linguists of the Moscow School:
@@ -270,8 +271,8 @@ to any combination of things which are not themselves signs; Peirce (1932)
     (Lyons 1989)
   * his discussion of substantive universals is relatively limited
 * Dixon
-  * "the syntactic properties of a lexical item can be largely predicted from
-    its semantic description" (1982:8)
+  * "the syntactic properties of a lexical item
+    can be largely predicted from its semantic description" (1982:8)
   * long association with Wierzbicka but their semantics differ
   * the lexicon as consisting of two natural groups —
     nuclear words and non-nuclear words
@@ -285,8 +286,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
       * not the ultimate elements of semantic theory, but
         about the mechanism of semantic-syntactic correspondence
 * Moscow School
-  * Russian scholars like Jurij Apresjan, Lidija Iordanskaja, Igor Mel'cuk
-    and Aleksandr Zolkovskij
+  * Russian scholars like J Apresjan, L Iordanskaja, I Mel'cuk and A Zolkovskij
   * construction of a non-arbitary semantic metalanguage,
   * 'elementary senses' may be combined in various ways, according to
     the grammar of the semantic language (which is also non-arbitrary),
@@ -296,13 +296,14 @@ to any combination of things which are not themselves signs; Peirce (1932)
   * Apresjan (1992 1974:53) listed 27 'basic meanings'
   * primitive meanings not necessarily correspond to ordinary words
   * they could be made perfectly clear through examples
-  * The 'semantic networks' by which the meaning of a lexical item is
-    stated in the MTM are not constructed within any postulated set of
-    elementary senses, and their syntax is based on predicate calculus,
+  * The 'semantic networks' by which the meaning of a lexical item is stated in
+    the MTM are not constructed within any postulated set of elementary senses,
+    and their syntax is based on predicate calculus,
     rather than being drawn from the language being analysed
-  * according to Mel'cuk there is no reason to believe, on the assumptions
-    of the Meaning-Text Model, that the elementary lexical meanings of
-    different languages correspond
+  * according to Mel'cuk there is no reason to believe,
+    on the assumptions of the Meaning-Text Model, that 
+    * the elementary lexical meanings of different languages correspond
+    * ie there are any substantive semantic universals at all
 
 ## The NSM Search for Universal Semantic Primitives p20
 
@@ -315,28 +316,28 @@ to any combination of things which are not themselves signs; Peirce (1932)
     * KNOW and BE IN A PLACE were tentatively added, and
     * FEEL discarded (though the latter has since made a comeback)
 * studies of diverse areas of the lexicon,
-  e.g. speech act verbs, emotion terms, simple and complex artefacts,
-  mass nouns, natural kinds, superordinate functional categories, and
+  eg speech act verbs, emotion terms, simple and complex artefacts, mass nouns,
+  natural kinds, superordinate functional categories, and
   ideological and value terms, among others
   (see references at end of this chapter)
 * languages
   * Wierzbicka herself did work on English, Polish, Russian and Japanese
   * fieldwork and practical linguistic description of Australian Aboriginal
-    languages ..., to Chinese (Chappell), and to Ewe (Ameka)
+    languages, to Chinese (Chappell), and to Ewe (Ameka)
 * earlier analyses for the domains of time, space, quantification and cognition
-  needed improvement (cf. Goddard 1989; Wierzbicka 1989)
+  needed improvement (cf Goddard 1989; Wierzbicka 1989)
   * Semantic Primitives Workshop held in Adelaide in 1986,
 * syntax is set out below and will be discussed in some detail in chapter 2
-  * Though some account has been taken of other languages in this
-    formulation, it has been derived in the main through 'deep' semantic
-    investigations conducted in European languages
-  * Reliance on English-specific syntax in early NSM explications (e.g. in
-    Wierzbicka 1980) was noted with disapproval by a number of critics, for
-    instance McCawley (1983:655), who called for the primitive vocabulary items
-    to be supplemented with "a list of semantically primitive syntactic
-    constructions"
-  * Considerable progress has since been made toward this goal, as explained in
-    Wierzbicka (1991) and in chapter 2 of the present book
+  * Though some account has been taken of other languages in this formulation,
+    it has been derived in the main through 'deep' semantic investigations in
+    European languages
+  * Reliance on English-specific syntax in early NSM explications
+    (eg in Wierzbicka 1980) was
+    noted with disapproval by a number of critics, eg McCawley (1983:655), who
+    called for the primitive vocabulary items to be supplemented with
+    "a list of semantically primitive syntactic constructions"
+  * Considerable progress has since been made toward this goal
+    * as explained in Wierzbicka (1991) and in chapter 2 of the present book
 
 ## 1.4 Goals and Methods of the Present Project p22
 
@@ -344,7 +345,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
   primitives in Table 1 to its first thorough cross-linguistic test
 4. To claim that two words are similar but not identical in meaning, it must be
    possible to identify the supposed difference in meaning
-* two words (morphemes, etc.) can be identical in meaning despite
+* two words (morphemes, etc) can be identical in meaning despite
   * belonging to different parts of speech
   * very different ranges of use for cultural reasons, or because of
   * different patterns of polysemy
@@ -364,7 +365,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
     * There was a lot of noise; because of that I couldn t sleep and He hit me;
       that's why I'm crying
 * Further discussion of methodological issues and a preliminary review of the
-entire proposed primitive inventory is provided in chapter 2
+  entire proposed primitive inventory is provided in chapter 2
 
 # 2 Introducing Lexical Primitives; Cliff Goddard and Anna Wierzbicka 31
 
@@ -381,12 +382,12 @@ entire proposed primitive inventory is provided in chapter 2
   * to reject polysemy in a dogmatic and a priori fashion is just as foolish as
     to postulate it without justification
   * basic, everyday words are particularly likely to be polysemous (Zipf 1949)
-* feel is polysemous between
+* _feel_ is polysemous between
   * its semantically primitive sense (I feel good/had), its
   * action sense (I felt her pulse) and its
   * cognitive sense (I feel it's wrong)
   Lagos: a 2. és 3. jelentés a szem primitív + valami
-* not based on comparisons between range of use across languages
+* not based on comparisons between the range of use across languages
 * To prove that a word is polysemous one has to demonstrate that they
   call for distinct reductive paraphrase explications
   * For instance, it can be shown that the action and cognitive senses of
@@ -394,32 +395,30 @@ entire proposed primitive inventory is provided in chapter 2
     these senses as complex and distinct from the semantically primitive
     FEEL
   * a diagnostic of polysemy is mutually exclusive syntactic frames or
-    combinatorial possibilities (cf.  Weinreich 1966:177-183)
-    * e.g. _know_
+    combinatorial possibilities (cf  Weinreich 1966:177-183)
+    * eg _know_
       * +/- takes a sentential that-complement,
       * Modern English you: forms yourself and yourselves,
     * even if both are primitive
 
+### 2.1.2 Formal [morphological] versus Semantic Complexity
 
-### 2.1.2 Formal versus Semantic Complexity
-
-* The words SOMEONE and SOMETHING are both formally analysable, but in neither
-  case is the meaning of the whole word the sum of the parts;
+* The words SOMEONE and SOMETHING are both formally analysable, but
+  in neither case is the meaning of the whole word the sum of the parts;
 
 ### 2.1.3 Allomorphy and Allolexy
 
-* e.g
+* eg
   * the combination of the meanings THIS and SOMEONE is more naturally
     expressed as `this person`, rather than as `this someone`; because it is
     not possible to specify any semantic difference between `this person` and
     THIS SOMEONE, the term person may be regarded in this context as an allolex
     of SOMEONE
   * Japanese `this` nominal modifier vs a referring expression in its own right
-* how to reconcile the existence of language-specific morphosyntactic
-  categories with the NSM claim that the semantic metalanguage is isomorphic
-  across languages?
-  * in the natural semantic metalanguage based on Latin, volo would never occur
-    without an explicit subject
+* how to reconcile the existence of language-specific morphosynt categories
+  with the NSM claim that the semantic metalanguage is isomorphic across langs?
+  * in the natural semantic metalanguage based on Latin, 
+    _volo_ would never occur without an explicit subject
 
 ### 2.1.4 Differences in Range of Use
 
@@ -433,13 +432,12 @@ entire proposed primitive inventory is provided in chapter 2
 ### 2.1.5 Resonance
 
 1. non-paraphrasable effects resulting from the association between an exponent
-   and other, complex meanings also expressible by the same lexical form.  For
-   instance, English feel may expound FEEL, but the same word also expresses
-   meanings to do with the sense of touch; whereas the Malay equivalent _rasa_ is
-   poly-semous with the meaning 'taste', and the Yankunytjatjara equivalent
-   tjuni with the meaning 'belly'
-2. a result of formal complexity. For instance  English someone and
-   something
+   and other, complex meanings also expressible by the same lexical form
+   eg English _feel_ may expound FEEL, but the same word also expresses
+   meanings to do with the sense of touch; whereas 
+   the Malay equivalent _rasa_ is poly-semous with the meaning 'taste', and 
+   the Yankunytjatjara equivalent _tjuni_ with the meaning 'belly'
+2. a result of formal complexity eg English someone and something
 3. sound shape (or even the graphic shape)
 * Here we acknowledge the possible existence of resonance effects primarily for
   the sake of completeness. By definition, they inhere in relationships between
@@ -450,20 +448,20 @@ entire proposed primitive inventory is provided in chapter 2
 
 ### 2.1.6 Non-Compositional Relationships
 
-* assumption was that it would seem that if two concepts had something in
-  common they could not both be semantically indivisible
-* e.g
+* old assumption: if two concepts had something in common
+  they could not both be semantically indivisible
+* eg
   * YOU and I are not independent of SOMEONE
   * THINK, KNOW, WANT and FEEL have something in common (mental proc/state)
   * GOOD seems to be intuitively related in some way to WANT,
     * as a long line of philosophers have suggested; and
-  * BECAUSE and CAN seem to be related to IF (cf. Austin 1961)
+  * BECAUSE and CAN seem to be related to IF (cf Austin 1961)
 
 ## 2.2 The Proposed Primitive Inventory p37
 
-* In some cases, we will discuss and
-  * refute putative decompositions which are circulating
-  * indicate areas where the elements have proved  indispensable
+* In some cases, we will
+  * discuss and refute putative decompositions which are circulating
+  * indicate areas where the elements have proved indispensable
 
 ### 2.2.1 Substantives: I, YOU, SOMEONE, SOMETHING, PEOPLE p37
 
@@ -495,10 +493,10 @@ entire proposed primitive inventory is provided in chapter 2
   and FEEL (Lutz 1985; Levy 1973; Howell 1981), but is apperars that azért nem
   találták az érez szó megfelelőjét, mert az, ami ezt valóban kifejezi, az
   homonim volt egy konkrét jelentésű szóval pl. “has” vagy “belső”
-* Polysemy between WANT and SAY, however, is not uncommon in e.g. New Guinea
+* Polysemy between WANT and SAY, however, is not uncommon in eg New Guinea
 * feel
   * for the semantic analysis of words for emotions and sensations, as well as
-    for interjections, speech act verbs, 'experiencer constructions', etc.
+    for interjections, speech act verbs, 'experiencer constructions', etc
   * canonical contexts: 'feel (something) good/bad'
 
 ### 2.2.3 Determiners and Quantifiers p39
@@ -601,8 +599,8 @@ entire proposed primitive inventory is provided in chapter 2
   difficulties in terms of cross-linguistic lexical identification
 * `kind_of`
   * categorisation cannot be reduced to notions such as likeness or similarity
-  * natural kinds (e.g. dog, oak, daffodil) and
-  * cultural kinds (e.g. cup, bottle, chair)
+  * natural kinds (eg dog, oak, daffodil) and
+  * cultural kinds (eg cup, bottle, chair)
 * Rather than it taking a form analogous to English `part of`, recent research
   suggests an exponent with the converse orientation is more widely attested,
   that is, an element like `HAVE PARTS`
@@ -626,19 +624,17 @@ entire proposed primitive inventory is provided in chapter 2
     * three words corresponding to bad
 * have no relation to time
 
-# 17 Semantic Primitives Across Languages:
-  A Critical Review Anna Wierzbicka p445
+# 17 Semantic Primitives Across Languages: A Critical Review A Wierzbicka p445
 
-* polysemy (in a broad sense, covering also homonymy) is a major problem. If,
-  for example, it is discovered that in a language the same word can be glossed
-  as both SAY and WANT,
+* polysemy (in a broad sense, covering also homonymy) is a major problem
+  eg If in a language the same word can be glossed as both SAY and WANT,
   * The first assumption should always be that a word or morpheme has only one
     meaning;
   * Patterns of polysemy recurring in many languages
 * 'allolexy':
-* if our semantic metalanguage is to be carved out of natural language, neither
-  of no polysemy, no synonymy/allolexy can be met in a straightforward
-  manner:
+* if our semantic metalanguage is to be carved out of natural language,
+  neither of no polysemy, no synonymy/allolexy can be met
+  in a straightforward manner:
 
 ## 17.1 Substantives 447
 ## 17.2 Mental Predicates
@@ -654,4 +650,4 @@ entire proposed primitive inventory is provided in chapter 2
 * The primitives repeatedly vindicated in this way include, in particular,
   SOMEONE, THE SAME, ALL, WANT, THINK, FEEL, BECAUSE, IF, CAN, AFTER and KIND
 
-notes p498
+# notes p498

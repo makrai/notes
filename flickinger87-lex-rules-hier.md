@@ -1,29 +1,32 @@
+Lexical rules in the hierarchical lexicon
+DP Flickinger 
+1987 York University
+
 # Preface
 
 * hierarchy of word classes that I present in the first part of this thesis
 
 # 1 Introduction 1
 
-* status of the lexicon as an appropriate repository of generalizations about
-  language has changed dramatically in the last ten years of work in
-  generative grammar.  Today enjoying a position of central importance in
-  theoretical linguistics, the lexicon provides
+* status of the lexicon as an appropr repository of generalizations about lang
+  has changed dramatically in the last ten years of work in generative grammar.
+  * Today enjoying a position of central importance in theoretical linguistics,
   * the basis for expressing generalizations about phenomena which include
     * infection and derivation, but also
     * constructions
       * once viewed as outside the scope of the lexicon, such as the
       * passive relation and properties of control
 * two basic questions:
-  (1) What mechanisms are necessary for expressing these lexical
-  generalizations precisely enough to make them falsifiable?
+  (1) What mechanisms are necessary for expressing these lexical generalizats
+  precisely enough to make them falsifiable?
   (2) What aspects of constituent structure within a sentence remain not
   accounted for once these lexical mechanisms are in place?
 * Work of the last ten years by
   * Selkirk, Lieber, Anderson, Williams, Kiparsky, and others contains
     * some concrete proposals for lexical representation and word structure as
-      they affect inflection and derivation, but each of these
-    * assumes a rich, transformational syntactic component about which few
-      details are provided
+      they affect inflection and derivation
+    * assumes a rich, transformational syntactic component
+      about which few details are provided
   * linguists following Bresnan, Wasow, and Dowty
     * syntactic or semantic generalizations
     * without recourse to transformations
@@ -35,8 +38,8 @@
 
 # 2 Structure of the Word Class Hierarchy 5
 
-* two ways in which lexical entries can be related, giving rise to two formal
-  mechanisms for representing this sharing of properties
+* two ways in which lexical entries can be related
+  => two formal mechanisms for representing this sharing of properties
   1. category-based
     * items share some syntactic properties
     * a given lexical item will often belong to several word classes, with each
@@ -77,7 +80,6 @@
 * default properties and idiosyncracies
 * how lexical items subcategorize for both complements and adjuncts
 
-
 ## 3.1 Inheritance
 
 3.1.1 An illustration of inheritance
@@ -92,10 +94,9 @@
 # 4 Phrase structure rules
 
 * in HPSG frame-work
-* attributes and values used to define lexical entries interact with a small
-  set of grammar rules and universal feature principles to provide the
-  syntactic structures,
-
+* attributes and values used to define lexical entries interact with
+  a small set of grammar rules and universal feature principles
+  to provide the syntactic structures,
 
 ## 4.1 Rules and feature conventions
 
@@ -106,15 +107,12 @@
 
 ## 4.2 Two examples
 
-
 ## 4.3 Trace introduction
-
 
 # 5 Lexical Rules 101
 
 * a second kind of generalization which holds between the elements of two
   related classes, and introduce the familiar notion of the lexical rule
-
 
 ## 5.1 On the Content and Form of Lexical Rules
 
@@ -135,13 +133,14 @@
 # 6 Adjectives and Unbounded Dependencies
 
 * Adjectival passives
-* _tough-movement_ adjectives
-* _too/enough_ constructions The chapter concludes with an account of
-* one class of unbounded dependencies,
-
+* tough-movement adjectives
+  * In formal syntax, tough movement refers to sentences in which
+    the syntactic subject of the main verb is
+    logically the object of an embedded non-finite verb
+* _too/enough_ constructions
+* one class of unbounded dependencies
 
 ## 6.1 Adjectival passives
-
 
 ## 6.2 _Tough-Movement_ adjectives
 
@@ -157,7 +156,6 @@
 
 ## 6.4 Sonatas and double gaps
 
-
 ## 6.5 Tensed-VP constructions
 
 6.5.1 Parasitic gaps
@@ -165,9 +163,9 @@
 # 7 Summary
 
 * summarize the mechanisms introduced in the course of the presentation, and
-  the constraints both implicit and explicit that I proposed to govern the
-  applicability of these tools
-1. distinguishing the work of lexical rules from that of word classes and
-   inheritance
-2. maintaining a sharp distinction between lexical rules and phrase structure
-   rules
+  the constraints both implicit and explicit that I proposed
+  to govern the applicability of these tools
+1. distinguishing the work of lexical rules
+  from that of word classes and inheritance
+2. maintaining a sharp distinction
+  between lexical rules and phrase structure rules

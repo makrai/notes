@@ -180,7 +180,8 @@ correspondance]
 
 Az 1.1.2-beli szinteknek az LFG-ben radikálisan különböző reprezentációs szintek
 felelnek meg:
-  * a predikátum--argumentum-viszonyoknak a lexikai szerkezet (vagy argumentumszerkezet: a-struktúra),
+  * a predikátum--argumentum-viszonyoknak a lexikai szerkezet
+    (vagy argumentumszerkezet: a-struktúra),
   * az elemek elrendezésének az összetevős vagy kategoriális szerkezet: c-struk)
   * az elemek közötti grammatikai viszonyoknak a funkcionális szerkezet (f-stru)
 

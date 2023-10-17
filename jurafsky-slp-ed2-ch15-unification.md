@@ -5,15 +5,15 @@ Speech and Language Processing (2Nd Edition)
 # 15 Features and Unification
 
 * reductionist perspective
-  * [in] natural sciences
+  * in natural sciences
     * explain the behavior of larger structures
       by the combined action of smaller primitives
-    * biology: inheritance ... explained by the action of genes, and then again
+    * biology: inheritance explained by the action of genes, and then again
       genes have been explained by the action of DNA
     * physics, matter was reduced to atoms and then again to subatomic particls
 	* computational linguistics: grammatical categories and rules
-    * e.g. VPto, Sthat, Non3sgAux, or 3sgNP, as well
-    * complex sets of properties associated with [rules] like S → NP VP
+    * eg VPto, Sthat, Non3sgAux, or 3sgNP, as well
+    * complex sets of properties associated with rules like S → NP VP
     * represented by constraints, and so these kinds of models are
     * often called constraint-based formalisms
 * Why do we need a more fine-grained way of representing and placing constrants
@@ -21,17 +21,17 @@ Speech and Language Processing (2Nd Edition)
     * fine-grained information about number and person, agreement,
       subcategorization, as well as semantic categories like mass/count
   * proliferation of primitive grammatical categories such as Non3sgVPto,
-  * explosion in the number of grammar rules and ... loss of generality
-* other advantages [of constraints-based formalisms] that will not be covered
+  * explosion in the number of grammar rules and loss of generality
+* other advantages of constraints-based formalisms that will not be covered
   * model more complex phenomena than context-free grammars
   * compute semantics for syntactic representations
-* e.g. grammatical number
+* eg grammatical number
   * property called NUMBER that can have the value singular or plural
-  * members of the NP and the VP category [can have] the value singular/plural
-  * operations, such as equality tests [paired] with our core grammar rules
-    * i.e. constraints to help ensure [grammaticality]
-* one computational implementation of a constraint-based formalism, based on
-  feature structures and unification
+  * members of the NP and the VP category can have the value singular/plural
+  * operations, such as equality tests paired with our core grammar rules
+    * i.e. constraints to help ensure grammaticality
+* one computational implementation of a constraint-based formalism,
+  based on feature structures and unification
 
 ## 15.1 feature structures (FS) 2
 
@@ -39,10 +39,10 @@ Speech and Language Processing (2Nd Edition)
   * features are unanalyzable atomic symbols drawn from some finite set, and
   * values are either atomic symbols or feature structures themselves
   * diagram, called an attribute-value matrix (AVM)
-* e.g. number property discussed above
+* eg number property discussed above
   * feature: the symbol NUMBER to designate this grammatical attribute, and the
   * values: symbols sg and pl (in English)
-  * e.g. 3sgNP
+  * eg 3sgNP
 
 ```
 [ CAT     NP
@@ -55,7 +55,7 @@ Speech and Language Processing (2Nd Edition)
   * draw distinctions among members of a single category
 * features can also have other feature structures as their values
   * bundle a set of feature-value pairs together for similar treatment
-  * e.g. NUMBER and PERSON features are often lumped together since grammatical
+  * eg NUMBER and PERSON features are often lumped together since grammatical
     subjects must agree with their predicates in both their number and person
   * AGREEMENT feature that takes a feature structure
     consisting of the NUMBER and PERSON feature-value pairs as its value
@@ -68,14 +68,14 @@ Speech and Language Processing (2Nd Edition)
 
 * test for the equality of the values for both the NUMBER and PERSON features
   of two constituents by testing for the equality of their AGREEMENT features
-* feature path: a sequence of features through a feature structure [to a] value
-  e.g. `<AGREEMENT, NUMBER>` path leads to the value sg,
+* feature path: a sequence of features through a feature structure to a value
+  eg `<AGREEMENT, NUMBER>` path leads to the value sg,
 * directed acyclic graph (DAG): alternative graphical way for feature structurs
   * suggestive of how they will be implemented
   * features appear as labeled edges and values as nodes
 * reentrant structures:
-  [there are] features that share some feature structure as a value
-  * not simpl[y] equal values, but rather that they share the same FS
+  there are features that share some feature structure as a value
+  * not simply equal values, but rather that they share the same FS
   * in terms of paths through a graph:
     two feature paths actually lead to the same node in the structure
   * Figure 15.2 illustrates a simple example of reentrancy
@@ -92,25 +92,25 @@ Speech and Language Processing (2Nd Edition)
 > Ha bármelyikőtök tud olyan titkos akadályról, mely a házasság megkötése
 > ellen szól: üdvösségetekre kérlek, el ne hallgassátok! (Mészöly Dezső ford.)
 
-* wanted: reasonably efficient and powerful operations on [feature structures]
+* wanted: reasonably efficient and powerful operations on feature structures
 * two principal operations we need to perform are
 	* merging the information content of two structures and
 	* rejecting the merger of structures that are incompatible
 * a single computational technique, called **unification**, suffices for both
 * this section will illustrate through a series of examples
 * Discussion of the algorithm and its implementation will be deferred to 15.4
-* e.g. NUMBER sg ⊔ NUMBER sg = NUMBER sg
-* binary [partial] operation (represented here as ⊔) [on] feature structures
-* e.g. NUMBER sg ⊔ NUMBER pl Fails!
-* e.g. NUMBER sg ⊔ NUMBER [] = NUMBER sg
-  * [] value ... indicates that the value has been left unspecified
-* e.g.  NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
+* eg NUMBER sg ⊔ NUMBER sg = NUMBER sg
+* binary partial operation (represented here as ⊔) on feature structures
+* eg NUMBER sg ⊔ NUMBER pl Fails!
+* eg NUMBER sg ⊔ NUMBER  = NUMBER sg
+  *  value indicates that the value has been left unspecified
+* eg  NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
 																	PERSON 	3rd ]
   * union of all the information stored in each of the original structures
   * compatible because they contain no features that are explicitly incompatibl
     * The fact that they each contain a feature-value pair that the other does
       not is not a reason for the unification to fail
-* unification of ... reentrant structures
+* unification of reentrant structures
 * copying capabilities of unification
 * difference between features that actually share values versus
   those that merely have identical looking values
@@ -148,7 +148,7 @@ Speech and Language Processing (2Nd Edition)
     * Vigyázat, a könyv zavaros! A jegystruktúrák metszetfélhálót alkotnak, de
       az érdekes ,,művelet", az unifikáció, az uniónak felel meg, és csak
       parciális(-)művelet
-  * every feature structure is subsumed by the empty structure []
+  * every feature structure is subsumed by the empty structure 
   * F ⊔ G is defined as the most general feature structure H such that F ⊑ H
     and G ⊑ H
 * unification operation is
@@ -175,8 +175,8 @@ Speech and Language Processing (2Nd Edition)
   * guide the composition of feature structures for larger constituents
     based on the feature structures of their component parts
   * enforce compatibility constraints between specified parts of constructions
-* notation ... based on the PATR-II system described in Shieber (1986):
-* [two styles of constraints]
+* notation based on the PATR-II system described in Shieber (1986):
+* two styles of constraints
   1. the value found at the end of the given path
   2. the values found at the end of the two given paths must be unifiable
 
@@ -196,14 +196,14 @@ S → NP VP
 
 ### 15.3.1 Agreement
 
-* [in] This section, two main types of English agreement phenomena:
+* in This section, two main types of English agreement phenomena:
   subject-verb agreement and determiner-nominal agreement
 
 (15.8)  This flight serves breakfast
 (15.9)  Does this flight serve breakfast?
 (15.10) Do these flights serve breakfast?
 
-[involves] PERSON: make use of the AGREEMENT feature
+involves PERSON: make use of the AGREEMENT feature
 
 S → NP VP
 `<NP AGREEMENT> = <VP AGREEMENT>`
@@ -226,7 +226,7 @@ NP → Det Nominal
 
 * how the constituents acquire values for their various agreement features
 * constraints involve both lexical and non-lexical constituents
-  * lexical constituents, Aux and Det, receive [feature] values from the lex
+  * lexical constituents, Aux and Det, receive feature values from the lex
 
 Aux → do
 `<Aux AGREEMENT NUMBER> = pl`
@@ -317,7 +317,7 @@ Verb → serves
 ### 15.3.3 Subcategorization
 
 * verbs can be picky about the patterns of arguments they will allow
-* In Ch. 12, [we] split the category of verb into multiple sub-categories
+* In Ch. 12, we split the category of verb into multiple sub-categories
 * categories were then used in the definition of the specific verb phrases that
 
 ```
@@ -328,7 +328,7 @@ Verb-with-S-comp → think
 * undesirable proliferation of categories
 * introduce feature structures to distinguish among the various verbs
 * atomic feature called SUBCAT, with an appropriate value
-* e.g. transitive version of _serves_ could be assigned the following FS in lex
+* eg transitive version of _serves_ could be assigned the following FS in lex
 
 Verb → serves
 `<Verb HEAD AGREEMENT NUMBER> = sg`
@@ -351,7 +351,7 @@ VP → Verb NP NP
 * requires unique symbols for each of the 50–100 verb phrase frames in English
   * unanalyzable SUBCAT symbols do not directly encode either the
     number or type of the arguments that the verb expects to take
-* you must use ... a pointer to those verb phrase rules in the grammar that can
+* you must use a pointer to those verb phrase rules in the grammar that can
   accept the verb in question
 * A more elegant solution: directly specify the order and category type of args
 
@@ -369,7 +369,7 @@ Verb → leaves
 `<Verb HEAD SUBCAT SECOND CAT> = PP`
 `<Verb HEAD SUBCAT THIRD> = end`
 
-* encoding a list [with] types defined in Sec. 15.6
+* encoding a list with types defined in Sec. 15.6
 
 VP → Verb NP5
 
@@ -377,18 +377,18 @@ VP → Verb NP5
 `<VP HEAD SUBCAT FIRST CAT> = <NP CAT>`
 `<VP HEAD SUBCAT SECOND> = end`
 
-* complex subcategorization frames, (e.g., NP PP, NP NP, or NP S)
+* complex subcategorization frames, (eg, NP PP, NP NP, or NP S)
   * frames can be composed of many different phrasal types
 * Fig. 15.3.3 shows one short list of possible phrase types
-  * from ... the FrameNet project (Johnson, 1999; Baker+ 1998)
+  * from the FrameNet project (Johnson, 1999; Baker+ 1998)
   * special subjects like _there_ and _it,_ as well as for objects and comps
-* e.g. VPto, which is subcategorized for by _want_ might be expressed as:
+* eg VPto, which is subcategorized for by _want_ might be expressed as:
 
 Verb → want
 `<Verb HEAD SUBCAT FIRST CAT> = VP`
 `<Verb HEAD SUBCAT FIRST FORM> = infinitive`
 
-* e.g. the two-complement _want_
+* eg the two-complement _want_
   * two different notational possibilities
     * lists can be represented via an angle brackets notation `<` and `>`
     * represent the lexical entry as a single ORTH feature
@@ -400,23 +400,23 @@ Verb → want
   * ACQUILEX tagset of verb subcategorization frames (Sanfilippo, 1993)
   * other information about the complements, such as specifying the
     identity of the implicit subject in a lower verb phrase, i.e. control
-    e.g. _Temmy promised Ruth to go_ vs _Temmy persuaded Ruth to go_
-* [info about the] subcategorization frames for a verb can be partially
+    eg _Temmy promised Ruth to go_ vs _Temmy persuaded Ruth to go_
+* info about the subcategorization frames for a verb can be partially
   predicted by the semantics of the verb
-  * e.g. verbs of transfer (like _give, send, carry_) predictably take the
+  * eg verbs of transfer (like _give, send, carry_) predictably take the
     two subcategorization frames NP NP and NP PP:
     * sent NP NP: sent FAA Administrator James Busey a letter
     * sent NP PP: sent a letter to the chairman of the Armed Services Committee
 * relationships between subcategorization frames across classes of verbs are
   called argument-structure alternations
   * will be discussed in Ch. 19 when we discuss the semantics of verbal
-  * Ch. 14 will introduce probabilities [of] the different subcategorization
-    frames [of each verb]
+  * Ch. 14 will introduce probabilities of the different subcategorization
+    frames of each verb
 
 #### Subcategorization in Other Parts of Speech
 
-* subcategorization, or valence ... originally conceived for verbs
-* but e.g. _Keep your seatbelt fastened while/during we are taking off/takeoff_
+* subcategorization, or valence originally conceived for verbs
+* but eg _Keep your seatbelt fastened while/during we are taking off/takeoff_
 * adjectives and nouns also have subcategorization frames
   * adjectives apparent, aware, and unimportant; nouns assumption and question:
     * _It was apparent [ `Sfin` that the kitchen was the only room. . . ]_
@@ -426,8 +426,8 @@ Verb → want
     * _the assumption [ `Sfin` that wasteful methods have been employed]_
     * _the question [ `Swheth` whether the authorities might have decided]_
     * See Macleod+ (1998) and Johnson (1999) for descriptions
-* Verbs [subcategorize for] their subjects as well as their complements
-  * e.g. _seem_ can take an `Sfin` as its subject
+* Verbs subcategorize for their subjects as well as their complements
+  * eg _seem_ can take an `Sfin` as its subject
 
 ### 15.3.4 Long-Distance Dependencies (out of the VP)
 
@@ -435,21 +435,21 @@ Verb → want
   * head word has a SUBCAT feature which contains a list of the complements
   * phrasal rules like the VP rule in (15.15) match up each expected complement
     in the SUBCAT list with an actual constituent
-* but e.g. wh-non-subject-questions
+* but eg wh-non-subject-questions
   * _What cities does Continental service?_
   * _What flights do you have from Boston to Baltimore?_
   * _What time does that flight leave Atlanta?_
 
 S → Wh-NP Aux NP VP
 
-* [these] require the
+* these require the
   * Aux and the NP to agree (since the NP is the subject)
   * Wh-NP should fill some subcategorization slot in the VP
 * Which flight do you want me to have the travel agent book?
   * Melyik **járatra** akarod hogy **foglaltassak** az utazási ügynökkel?
 * Many solutions in unification grammars involve keeping a gap list,
   * a feature GAP , which is passed up from phrase to phrase in the parse tree
-  * filler (e.g. _which flight_ above) is put on the gap list, and must
+  * filler (eg _which flight_ above) is put on the gap list, and must
     eventually be unified with the subcategorization frame of some verb
   * See Sag and Wasow (1999) for an explanation of such a strategy
     * plus many other complications that must be modeled in long-distance deps
@@ -461,34 +461,34 @@ S → Wh-NP Aux NP VP
 * feature structures are represented as directed acyclic graphs (DAGs), where
   features are depicted as labels on directed edges, and
   feature values are either atomic symbols or DAGs.  As we will see, the
-* implementation [is] recursive graph matching algorithm, suitably tailored to
+* implementation is recursive graph matching algorithm, suitably tailored to
   * loops through the features in one input and
     attempts to find a corresponding feature in the other. If all of the
-  * recursion is [needed for] features that have feature structures as value
+  * recursion is needed for features that have feature structures as value
 * rather than constructing a new feature structure with the unified information
   * destructively alters the arguments so that
     in the end they point to exactly the same information. Thus, the result of
 
 ### 15.4.1 Unification Data Structures
 
-* destructive nature of this algorithm necessitates [extensions to the] DAGs
+* destructive nature of this algorithm necessitates extensions to the DAGs
 * additional edges, or fields. Specifically,
   * each feature structure = two fields: a content field and a pointer field
     * content field may be null or contain an ordinary feature structure
     * pointer field may be null or contain a pointer to another feature struct
   * If the pointer field of the DAG is null, then the content field of the DAG
     contains the actual feature structure to be processed.  If, on the other
-    * [else] the destination of the pointer represents the actual FS
+    * else the destination of the pointer represents the actual FS
 
 NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
                             PERSON 3rd ]
 
-* unification is accomplished by ... changing some of the pointers from one
+* unification is accomplished by changing some of the pointers from one
   structure to the other so that in the end they contain the same content. In
   * adding a PERSON feature to the first argument, and assigning it a value by
     filling its POINTER field with a pointer to the appropriate location in the
     second argument, as shown in Figure 15.7
-* two arguments [must be] completely unified at the top level,
+* two arguments must be completely unified at the top level,
   future unifications involving one of the arguments
 * set the POINTER field of the second argument to point at the first one. When
   this is done any future change to either argument will be immediately
@@ -502,7 +502,7 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
   base cases of the recursion before proceeding on to a recursive call
   1. The arguments are identical
     * the pointer of the first is set to the second and the second is returned
-    * [reason for] pointer change: two arguments to be identical
+    * reason for pointer change: two arguments to be identical
   2. One or both of the arguments has a null value
     * the pointer field for the null argument is changed to point to the
       other argument, which is then returned. The result is that both
@@ -527,11 +527,11 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
     * integrating unification constraints directly into the Earley parsing
     * ill-formed structures to be eliminated as soon as they are proposed
     * only minimal changes to the basic Earley algorithm
-  * then ... briefly consider an approach that moves even further from CF
+  * then briefly consider an approach that moves even further from CF
 
 ### 13.4.2 The Earley Algorithm 447/474
 
-* Earley algorithm (Earley, 1970) uses dynamic programming [and] top-down searc
+* Earley algorithm (Earley, 1970) uses dynamic programming and top-down searc
   * In contrast with the bottom-up search implemented by the CKY algorithm
 * core of the Earley algorithm is a single left-to-right pass
 * fills a chart i.e. array that has N + 1 entries
@@ -540,7 +540,7 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
     * indexes represent the locations between the words in an input
   * Each possible subtree is represented only once and
     can thus be shared by all the parses that need it
-* individual states [in] each chart entry contain three kinds of information:
+* individual states in each chart entry contain three kinds of information:
   * a subtree corresponding to a single grammar rule,
   * information about the progress made in completing this subtree, and the
     * • within the right-hand side of a state’s grammar rule to indicate
@@ -555,7 +555,7 @@ NP → Det • Nominal, [1, 2]
 VP → V NP • , [0, 3]
 ```
 
-* e.g. above
+* eg above
   * (1) represents a top-down prediction for this particular kind of S
   * (2) created at a later stage in the processing of this sentence
   * (3) with its dot to the right of all its two constituents, represents the
@@ -578,7 +578,7 @@ VP → V NP • , [0, 3]
 
 * When a state has a part-of-speech category to the right of the dot
 * examine the input and incorporate a state corresponding to the prediction
-* when the state VP → • Verb NP, [0, 0] is processed, SCANNER [comes]
+* when the state VP → • Verb NP, [0, 0] is processed, SCANNER comes
   * results in the creation of the new state Verb → book • , [0, 1]
 * new state is then added to the following chart entry
 
@@ -599,7 +599,7 @@ VP → V NP • , [0, 3]
 
 #### Retrieving Parse Trees from a Chart
 
-* the representation of each state must be augmented with ... information about
+* the representation of each state must be augmented with information about
   the completed states that generated its constituents
 * can be gathered by making a simple change to the COMPLETER function
   * Recall that COMPLETER creates new states by advancing existing incomplete
@@ -630,7 +630,7 @@ S → NP VP
     * list of other states that represent the completed sub-parts of the state
   * add a field to contain the DAG
     representing the feature structure corresponding to the state
-    * PREDICTOR: DAG will simply [be] retrieved from the rule
+    * PREDICTOR: DAG will simply be retrieved from the rule
       For example, when PREDICTOR uses the above S rule to enter a state
       * the feature structure given above
 * altering the algorithm itself
@@ -647,7 +647,7 @@ S → NP VP
       state with the appropriate part of the feature structure being advanced
       * If this unification succeeds, then the DAG of
         the new state receives the unified structure and is entered
-      * [else] no new state is entered into the chart
+      * else no new state is entered into the chart
 * The final change to the original algorithm: check for states already in chart
   * ENQUEUE function refused to enter into the chart any state that was
     identical to one already present in the chart
@@ -656,12 +656,12 @@ S → NP VP
     * avoid the infinite recursion problems associated with left-recursive ruls
   * prevent the wasteful addition of a state into the chart whose effect on the
     parse would be accomplished by an already existing state
-    * i.e. prevent ... duplicat[ing] the work that will eventually be done by
-      [more general] states [already] in the chart
-  * e.g.  chart contains the following state,
+    * i.e. prevent duplicating the work that will eventually be done by
+      more general states already in the chart
+  * eg  chart contains the following state,
     where the Dag places no constraints on the Det
 
-  NP → • Det NP, [i, i], [], Dag
+  NP → • Det NP, [i, i], , Dag
 
   * parser wants to insert a new state into the chart that is identical to this
     one, with the exception that its DAG restricts the Det to be singular
@@ -670,10 +670,10 @@ S → NP VP
 #### The Need for Copying
 
 * COPY DAG within the UNIFY-STATE procedure
-* states [in] the chart they may be used again and again in derivations,
-* [not copying would have] negative consequences regardless of whether the
+* states in the chart they may be used again and again in derivations,
+* not copying would have negative consequences regardless of whether the
   unification succeeds or fails
-* e.g. _Show me morning flights._
+* eg _Show me morning flights._
   * When the word _me_ is read, the state representing the (uni)transitive verb
     phrase will be completed since its dot has moved to the end
   * we have already altered the DAG attached to the state representing _show_,
@@ -715,14 +715,14 @@ S → NP VP
 `<X_1 CAT = < X_2 CAT>`
 `<X_0 CAT = < X_2 CAT>`
 
-* (1) generalize over e.g. NP → NP PP and VP → VP PP
+* (1) generalize over eg NP → NP PP and VP → VP PP
   * any category can be followed by a prepositional phrase, and that the
-* (2) generalize over e.g. `S → S and S`, `NP → NP and NP`, and so on
+* (2) generalize over eg `S → S and S`, `NP → NP and NP`, and so on
   * any constituent can be conjoined with a constituent of the same category
-* not ... correct, or complete, accounts of the phenomena in question
+* not correct, or complete, accounts of the phenomena in question
 * constituents with constrained, but unspecified, categories
 * benefit: constituents that are not easily characterized using a synt cat
-  * e.g. English HOW-MANY construction from the WSJ (Jurafsky, 1992)
+  * eg English HOW-MANY construction from the WSJ (Jurafsky, 1992)
     * _How early does it open?_
     * _How deep is her Greenness?_
     * _How papery are your profits?_
@@ -738,7 +738,7 @@ S → NP VP
 
 * A complete account of rules like this involves semantics, see Ch. 17
   * not make any use of the notion of a syntactic category
-* COMPLETER [searches the chart based on] the category of the constituent
+* COMPLETER searches the chart based on the category of the constituent
   following the • in the existing state
   * trouble when there are no such categories to consult
 * remedy: search the chart for states whose DAGs unify with the new DAG
@@ -754,7 +754,7 @@ S → NP VP
 
 * two problems that have led to extensions to the formalism
   1. place a constraint on what can be the value of a feature
-    * e.g. NUMBER attribute can take only sg and pl as values
+    * eg NUMBER attribute can take only sg and pl as values
     * keep intransitive verb like _sneeze_ from unifying with a direct object
     * Functional Unification Grammar (FUG, Kay, 1979, 1984, 1985)
       * adding a special atom `none` which is not allowed to unify with anythng
@@ -777,13 +777,13 @@ S → NP VP
 * Types come in two kinds: simple types (also called atomic), and complex
   * simple types: an atomic symbol like sg or pl
     * hierarchy:  multiple-inheritance (lattice. a kind of partial order)
-    * Fig. 15.13 shows the type hierarchy for ... agreement
+    * Fig. 15.13 shows the type hierarchy for agreement
     * the type of the kind of atomic object that can be the value of AGREE
     * the unification of any two types is
       the most-general type that is more specific than the two input types
       * legnagyobb közös osztó
     * The unification of two types which do not have a defined unifier
-      * e.g.  `3rd ⊔ 1st = undefined`
+      * eg  `3rd ⊔ 1st = undefined`
       * it is also possible to explicitly represent this fail type using ⊥
         (Aı̈t-Kaci, 1984)
   * complex types
@@ -792,7 +792,7 @@ S → NP VP
       * restrictions on the values of those features
         (expressed in terms of types)
       * equality constraints between the values
-    * e.g. verb: just represents agreement and verbal morphology information
+    * eg verb: just represents agreement and verbal morphology information
       * two appropriate features, AGREE and VFORM
       * type of the values of the two features
         * AGREE feature takes values of type agr defined in Fig. 15.13, and
@@ -824,14 +824,14 @@ S → NP VP
       (Lascarides and Copestake, 1997; Young and Rounds, 1993),
       * related to Reiter’s default logic (Reiter, 1980)
 * lexical rule (Jackendoff, 1975)
-  * e.g. HPSG (Pollard and Sag, 1987, 1994) and LFG (Bresnan, 1982)
+  * eg HPSG (Pollard and Sag, 1987, 1994) and LFG (Bresnan, 1982)
   * for capturing lexical generalizations
   * a reduced, hence more redundancy-free lexicon to be automatically expanded
   * See Pollard and Sag (1994) for examples,
     Carpenter (1991) on complexity issues, and
     Meurers and Minnen (1997) on efficient implementation.  Conversely, see
     Krieger and Nerbonne (1993) on using the type hierarchy to replace lex ruls
-* Types ... to represent constituency. Instead of rules like
+* Types to represent constituency. Instead of rules like
 
 ```
 NP → Det Nominal
@@ -873,7 +873,7 @@ NP → Det Nominal
 
 # Bibliographical and Historical Notes
 
-* [distinctive] features in linguistic theory comes originally from
+* distinctive features in linguistic theory comes originally from
   * phonology
     * Anderson (1985) credits Jakobson (1939) with being the first
     * Trubetskoi (1939) and others. The semantic use of features followed soon
@@ -881,7 +881,7 @@ NP → Det Nominal
 * unification operation in linguistics was developed independently by
   Kay (1979) (feature structure u) and Colmerauer (1970, 1975) (term u)
   * Both were working in machine translation
-  * [combination operation should] be reversible: both parsing and generation
+  * combination operation should be reversible: both parsing and generation
   * Prolog
     * Colmerauer, F Didier, Robert Pasero, Philippe Roussel, and J Trudel
     * resolution principle of Robinson (1965), and implemented a French

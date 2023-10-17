@@ -1,5 +1,5 @@
-Joshi1 and Yves Schabes (1997)
 Tree-Adjoining Grammars
+Joshi1 and Yves Schabes (1997)
 
 # Introduction
 
@@ -13,12 +13,12 @@ Tree-Adjoining Grammars
 
 ## Definition
 
-* `(\Sigma,N,I,A,S)`
+* `(\Sigma, N, I, A, S)`
   * `I` initial trees. Non-terminal symbols on the frontier of the trees in I
     are marked for substitution;
   * `A` auxiliary trees, the foot node
-* In \emph{lexicalized} TAG, at least one terminal symbol (the anchor) must
-  appear at the frontier of all initial or auxiliary trees
+* In _lexicalized_ TAG, at least one terminal symbol (the anchor) must appear
+  at the frontier of all initial or auxiliary trees
 * `I\cup A`: (`X`-type) elementary trees `\leftrightarrow` derived trees
 * adjoining auxiliary at a non-substitution node
 * substitution, initial trees

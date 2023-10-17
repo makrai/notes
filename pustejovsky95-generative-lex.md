@@ -12,14 +12,13 @@ Contents p6
   * issues:
     * the creative use of words in novel contexts
     * compositionality
-  * accounting for phenomena such as synonymy, antonymy, polysemy, and metonymy,
-    then compositionahty depends ultimately on what the basic lexical categories
-    of the language denote
+  * accounting for phenomena such as synonymy, antonymy, polysemy, & metonymy,
+    then compositionality depends ultimately on
+    what the basic lexical categories of the language denote
   * The traditional view has been that words behave as either active functors
-    or passive arguments. But we will see that if we change the way in which
-    categories can denote, then the form of compositionahty itself changes
-  * how to represent lexical ambiguity, both in theoretical and computational
-    models. This view, incorporating
+    or passive arguments.  If we change the way in which categories can denote,
+    then the form of compositionahty itself changes
+  * how to represent lexical ambiguity, both in theoretical and computat models
     * "sense enumerative techniques,"
       * distinguishes word senses on the basis of finite feature distinctions
       * no distinction between what Weinreich (1964) calls contrastive and
@@ -32,16 +31,16 @@ Contents p6
     * semantic weight in both lexical and compositional terms
     * consequences for how lexical ambiguity has been treated
   * chapter 4: several devices
-  * conception of lexical semantic systems emerges. Under such a theory, a
+  * conception of lexical semantic systems emerges
     * core set of word senses, typically
       * with greater internal structure than is assumed in previous theories,
-      * is used to generate a larger set of word senses
-      when individual lexical items are combined with others in phrases and clauses
+      * is used to generate more word senses when
+        indiv lexical items are combined with others in phrases and clauses
     * I will refer to such an organization as a generative lexicon
     * generative devices
       * operations which generate these "extended senses"
       * eg type coercion and co-composition
-  * natural languages are weakly polymorphic enyhén típusos
+  * natural languages are weakly polymorphic, enyhén típusos
     * rich enough to capture logical polysemy and co-compositionality
   * chapter 5: the type system
     * multiple levels of representation
@@ -52,12 +51,11 @@ Contents p6
         * information related to Aktionsarten and event type (Vendler, 1967)
       * Qualia Structure
         * defining attributes of an object, such as its
-          constituent parts, purpose and function, mode of creation, etc., and
+          constituent parts, purpose and function, mode of creation, etc, and
       * Inheritance Structure
         * relation between the lexical item and others in the lexicon
-  * Chapter 6: the structure of qualia, and
-    * the role they play in distributing the functional behavior of words and
-      phrases in composition
+  * Chapter 6: the structure of qualia, and the role they play in 
+    distributing the functional behavior of words and phrases in composition
   * Chapter 7: generative devices
     * coercion
     * selective binding and co-composition
@@ -66,15 +64,15 @@ Contents p6
     * An analysis of nominal polysemy is presented, making use of the type system
   * chapter 8: argument selection as driven by semantic types,
     * explain the polymorphic nature of verbs taking multiple syntactic types
-  * chapter 9, I discuss the role that qualia and event structure have in
-    describing the way _causal relations_ are lexicalized in language
+  * chapter 9: the role that qualia and event structure have in describing
+    the way _causal relations_ are lexicalized in language
     * causative/inchoative verbs, aspectual predicates, experiencer predicates,
       and modal causatives such as _risk_
-  * chapter 10: how this view of lexical organization relates to current theories of
-    * metaphor and pragmatically-induced metonymy
-    * I argue for a strong distinction between common-sense knowledge and
-      lexical structure, although the issue is clearly an empirical one
-      * _creative polysemy_ c
+  * chapter 10: relation to current theories of
+    metaphor and pragmatically-induced metonymy
+    * for a strong distinction between
+      common-sense knowledge and lexical structure
+      * _creative polysemy_
         exhibit a regularity and systematicity across languages that is
         absent from sense extension or modes of metaphor_
 

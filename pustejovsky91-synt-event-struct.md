@@ -11,13 +11,12 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
   * lexical conceptual structure (LCS, Jackendoff 1983; Rappaport & Levin, 1988)
   * we posit event structures associated with predicates and their arguments
 * arg struct
-  * conventional: set of arguments and diacritics indicating how they are realiz
+  * conventional: set of arguments and diacritics indicating how they realize
   * Some authors: a structured representation with prominence relations
 * events (eg whether a sentence denotes an activity, a state, etc)
   * conventional: a single, existentially quantified event variable for sentencs
     (Higginbotham, 1985; Parsons, 1985)
-  * There are many who still argue that events are not a necessary type
-    (Cresswell, 1985)
+  * Cresswell (1985): events are not a necessary type
   * we: grammatical phenomena make reference to the internal structure of events
     * subeventual analysis for predicates is able to systematically capture
       these effects
@@ -38,11 +37,11 @@ Cognition 41 (1991): 47–81 # 1991 Elsevier
       a further refinement of the semantic responsibilities within an LCS
       (Jackendoff, 1983; Rappaport & Levin, 1988)
 * one caveat about the analysis presented below
-  * not specifying the formal semantics of the event structure proposed here
+  * not specifying the formal semantics of the event structure
   * what we attempt to show is the relevance of event structure to lexical sem
   * Where appropriate, we will briefly point out the
-    technical details of the analysis, as well as the
-    limitations and shortcomings of the proposal
+    * technical details of the analysis, as well as the
+    * limitations and shortcomings of the proposal
   * Details of the formal interpretation can be found in Pustejovsky (1991)
 
 # 2 Event types 1

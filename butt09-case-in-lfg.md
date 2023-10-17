@@ -1,10 +1,10 @@
-Butt, Miriam
 Case in Lexical-Functional Grammar
+Butt, Miriam
 2009 in The Oxford Handbook of Case, 59-71
 
 # Introduction
 
-* The treatment of case  within LFG
+* The treatment of case within LFG
   * has been one of the central concerns since its inception in the late 1970s
   * seminal book marking the emergence of LFG (Bresnan 1982) deal with case
     * Neidle on Russian, KP Mohanan with respect to Malayalam
