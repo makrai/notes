@@ -76,7 +76,7 @@ SemEval | `*`SEM 2018
 * eg5 I love waking up with migraines #not
 * eg6 I really love this year’s summer; weeks and weeks of awful weather In the
 
-## Other verbal irony. This category contains instances that show no polarity
+## Other verbal irony: instances that show no polarity
 
 * eg7 @someuser Yeah keeping cricket clean, that’s what he wants `#Sarcasm`
 * eg8 Human brains disappear every day. Some of them have never even appeared.

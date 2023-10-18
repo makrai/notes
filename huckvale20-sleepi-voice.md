@@ -1,13 +1,14 @@
-Huckvale, M; Beke, A; Ikushima, M; (2020)
 Prediction of sleepiness ratings from voice by man and machine
+Huckvale, M; Beke, A; Ikushima, M; (2020)
+Huckvale, M; Beke, A; Ikushima, M; (2020)
 Interspeech.2020 pp. 4571-4575
 
 # Abstract
 
 * we look in more detail at the Interspeech 2019 comp paralinguistics challenge
-  on the prediction of sleepiness ratings from speech. In this
-  * regression task to predict sleepiness from samples of the Düsseldorf Sleepy
-    Language Corpus (DSLC). This challenge was notable because
+  on the prediction of sleepiness ratings from speech
+  * regression task to predict sleepiness from
+    samples of the Düsseldorf Sleepy Language Corpus (DSLC)
   * the performance of all entrants was uniformly poor, with even the winning
     system only achieving a correlation of r=0.37. We look at
   * whether

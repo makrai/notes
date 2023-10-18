@@ -1,6 +1,6 @@
-Front. Digit. Health, 22 September 2021 Sec. Health Informatics Volume 3 ~ 2021
 How to Design a Relevant Corpus for Sleepiness Detection Through Voice?  
 VP Martin, Jean-Luc Rouas, J-A Micoulaud-Franchi, Pierre Philip, J Krajewski
+Front. Digit. Health, 22 September 2021 Sec. Health Informatics Volume 3 ~ 2021
 
 # Abstract
 

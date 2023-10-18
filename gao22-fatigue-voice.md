@@ -22,8 +22,7 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
   * different fatigue procedures and graded the fatigue levels accordingly.  We
     then extracted the speech features at different instances and constructed a
     model to match the speech features and the degree of fatigue using a
-    machine learning algorithm. Thus, we established a method to rapidly judge
-    the degree of fatigue based on speech
+    machine learning algorithm
 * accuracy of the judgment by sample length
   * unitary voice -> could reach 94%
   * long speech could reach 81%
@@ -31,7 +30,7 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
 
 # Discu
 
-* sleep deprivation modeling is a common method of fatigue modeling
+* sleep deprivation modeling is a common method in fatigue modeling
 * Speech contains substantial information that can be used as biomarker
   * monitor patient status, diagnose conditions, classify diseases, or develop
     drugs (Abrahamsson 2018; Kraus, 2018; Noffs 2018; Lee 2020; Fagherazzi 21)

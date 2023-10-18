@@ -4,8 +4,8 @@ International Journal of Market Research Volume 62, Issue 5 2020
 
 # Abstract
 
-* Recognizing both literal and figurative meanings is crucial to understanding
-  opinions on various topics or events in social media
+* Recognizing both literal and figurative meanings is
+  crucial to understanding opinions on various topics or events in social media
   * sarcastic tweets often include
     positive words that represent negative or undesirable characteristics
     * The Preferred Reporting Items for Systematic Reviews and Meta-Analyses

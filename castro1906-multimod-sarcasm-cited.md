@@ -1,5 +1,6 @@
 Towards Multimodal Sarcasm Detection (An _Obviously_ Perfect Paper)
-Santiago Castro, Devamanyu Hazarika, Verónica Pérez-Rosas, Roger Zimmermann, Rada Mihalcea, Soujanya Poria
+Santiago Castro, Devamanyu Hazarika, Verónica Pérez-Rosas, Roger Zimmermann,
+  Rada Mihalcea, Soujanya Poria
 ACL 2019 arXiv:1906.01815 [cs.CL]
 
 The full dataset is publicly available at github.com/soujanyaporia/MUStARD
