@@ -312,8 +312,8 @@ tartalom 16 (11)
   képzők alkalmazási tartományában is működik
 * sőt nem-idegen képzők tartományában is alkot neologizmust
   * -ság/-ség képző, valamint az -os-ság/-es-ség és a -z-ás/-z-és
-  * baloldaliság ~ baloldalizmus, a többségiség ~ többségizmus, a humorosság ~
-    humorizmus, a lobbizás ~ lobbizmus, a brahizás ~ brahizmus
+  * baloldaliság ~ baloldalizmus, a többségiség ~ többségizmus,
+    a humorosság ~ humorizmus, a lobbizás ~ lobbizmus, a brahizás ~ brahizmus
   * anti-..  .-izmus ...-[ellenesség] utótagú összetétellel egyenértékűen
     * pártellenesség  ~  antipártizmus, kisebbség-ellenesség  ~
       antikisebbségizmus, örményellenesség  ~  antiörményizmus, halés

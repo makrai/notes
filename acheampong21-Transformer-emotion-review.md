@@ -116,21 +116,21 @@ Artificial Intelligence Review (2021)
   and BERT
 * Jwa+ [59] designed the BAKE and exBAKE model to automatically detect fake news
   using BERT through the scrutiny of headlines and body
-* Yang+ [65] detected humor in paragraphs by implementing a three-level approach
-  of data augmentation with paragraph dedecomposition (PD), fine-tuning BERT
-  with task-specific label and ensemble for inference
-  * Three datasets, viz,
-    * CCL2019 Chinese Humor Computation (XIAONIU) dataset, the
+* Yang+ [65] detected humor in paragraphs with three-level approach
+  * data augmentation with paragraph dedecomposition (PD),
+    fine-tuning BERT with task-specific label and 
+    ensemble for inference
+  * Three datasets
+    * CCL2019 Chinese Humor Computation (XIAONIU) dataset
       * The XIAONIU dataset is a Chinese humor dataset made up of 21, 552 human
         written jokes mixed with machine written ones. It is also composed of
         21, 885 jokes labeled in three levels for tri-classification problems
-    * FUN (Blinov+ 2019) dataset, and the authors used the
-      * The FUN dataset is a Russian dataset containing 313, 210 samples
-        collected from Russian social media websites and labeled binary classif
+    * FUN (Blinov+ 2019) dataset
+      * a Russian dataset containing 313, 210 samples collected from Russian
+        social media websites and labeled binary classif
     * HAHA (Humor Analysis based on Human Annotation, Chiruzzo+ 2019) dataset
-      in evaluating their model
-      * HAHA is a Spanish dataset that contains 30, 000 tweets, out of which
-        11, 595 is labeled as humorous
+      * a Spanish dataset that contains 30, 000 tweets,
+        out of which 11, 595 is labeled as humorous
 * Vlad+ [68] classified emotions and detected propaganda news in NLP4IF-2019
 * Gupta+ [72] proposed the ensemble of neural architectures and BERT to de-
 * identification of speaker sensitive utterance, a significant challenge in
