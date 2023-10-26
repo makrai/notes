@@ -15,7 +15,7 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
     cannot detect fatigue levels in real time
 * Speech contains information that can be used as acoustic biomarkers
   to monitor physiological and psychological statuses
-* we constructed a fatigue model based on the method of sleep deprivation by
+* we constructed a fatigue model based on the method of sleep deprivation
   * features
     * physiological indexes, such as P300 and glucocorticoid level in saliva,
     * questionnaires filled by 15 participants
@@ -26,9 +26,9 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
 * accuracy of the judgment by sample length
   * unitary voice -> could reach 94%
   * long speech could reach 81%
-* our model can operate in real time, it is non-invasive and efficien
+* our model can operate in real time, it is non-invasive and efficient
 
-# Discu
+# Discussion
 
 * sleep deprivation modeling is a common method in fatigue modeling
 * Speech contains substantial information that can be used as biomarker
@@ -52,8 +52,8 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
 * speech recognition technology for biomarkers
   * neurodegenerative eg Parkinson’s disease, Alzheimer’s disease, and mild
     cognitive impairment (Ahmed 2013; Dashtipour 2018; Toth 2018; Yang 2020)
-  * mental health and emotional condition (Pisanski 2016; Holmqvist-Jämsén
-    2017; Dibeklioglu 2018; Pisanski and Sorokowski, 2021; Kappen 2022)
+  * mental health and emotional condition (Pisanski 2016; Holmqvist-Jämsén 17;
+    Dibeklioglu 2018; Pisanski and Sorokowski, 2021; Kappen 2022)
   * respiratory diseases such as COVID-19 to detect/monitor the
     * health conditions of the patients and
     * emotional states of the staff
@@ -63,6 +63,6 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
 * future
   * a unified corpus collection standard and a large-scale library of
     clinically available voice samples should be developed
-  * algorithm optimization and updates and the
+  * algorithm optimization and updates
   * integration of algorithms into user-friendly devices
     eg smartphone applications and connected medical devices (Fagherazzi 2021)
