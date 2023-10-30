@@ -9,7 +9,7 @@ Interspeech 20182-6 September 2018, Hyderabad
 * hE multilingual databases suitable for such a study are missing
   * no agreement on the most suitable emotional model (in the contxt of percep)
 * we present EmoFilm, a new multilingual emotional speech corpus
-  * 1115 English, Spanish, and Italian emotional utterances extracted
+  * 1115 English, Spanish, and Italian emotional utterances
     from 43 films and 207 speakers
 * eval: within-culture categorical vs dimensional perceptual evaluation,
   employing 225 native Italian listeners, who evaluated the Italian section
@@ -30,9 +30,9 @@ Interspeech 20182-6 September 2018, Hyderabad
     * the extent to which culture can impact expression and perception [1]
   * emo perception in foreing language
     * accuracy in the perception of non-native emo speech is > by chance [3]
-    * emotional states identif accuracy is substantially higher in native [4];
-    * this has been explained by the level of proximity, ie similarity, between
-      the culture of the listener and that of the encoder [5]
+    * emotional state identific accuracy is substantially higher in native [4]
+    * this has been explained by the level of proximity, ie similarity,
+      between the culture of the listener and that of the encoder [5]
     * the measurement strategy considered to evaluate listeners’ perception of
       emotion could also influence their responses, since
       different subjects of the same culture may have diverse predispositions
@@ -112,8 +112,7 @@ Interspeech 20182-6 September 2018, Hyderabad
     adequately handle social situations [30]—which can result in hiding or
   * Acting techniques such as the Stanivslavsky method [31] claim to guarantee
     the validity of acted emotions as they are based on self-induction
-  * the extent to which acted speech and natural speech can be considered to be
-    realistic expressions of emotions is still unclear,
+  * the extent to which acted speech are realistic expressions of emo: unclear
   * especially from a cross-cultural perspective: Culture influences
 * emotional speech databases from films have been collected
   * predominantly in English [32, 33, 34, 35, 21]; only rarely, other languages
@@ -128,13 +127,13 @@ Interspeech 20182-6 September 2018, Hyderabad
   * Sequences with emotional content were chosen (collected under
     creative-commons) and segmented
   * audio in wave mono format (48 kHz sample rate and 16-bit)
-* emo inventory: we started with the so-called ‘big six’,
+* emotion inventory: we started with the so-called ‘big six’,
   * ie the basic emos: anger, sadness, happiness, fear, surprise, disgust [10]
   * Surprise and disgust could be found rarely in films [32] => excluded
   * contempt is more freq => included as a basic emotion too [37]
-* The same utterances (447 produced by females) have been extracted for each of
-  the three languages: English (EN) produced by English actors in the original
-  version, and over-dubbed versions by Italian (IT) and Spanish (SP)
+* The same utterances (447 by females) have been extracted for en, it, and sp
+  * English (EN) produced by English actors in the original version, and
+  * over-dubbed versions by Italian (IT) and Spanish (SP)
   * a total of 2,848 utterances
 * clip selection
   * 1st manually by two affective computing researchers,
@@ -147,8 +146,8 @@ Interspeech 20182-6 September 2018, Hyderabad
       three languages
   * the same dubbing actor can dub more than one original actor in diff films,
     => the number of actors in IT and SP is mostly lower than in EN
-    * 207 speakers: 94 females (35 EN, 35 IT, and 24 SP) and 113 males (44 EN,
-      36 IT, and 33 SP)
+    * 207 speakers: 94 females (35 EN, 35 IT, and 24 SP) and
+      113 males (44 EN, 36 IT, and 33 SP)
   * 1115 clips with a mean length of 3.5 sec. (std 1.2 sec.)
 
 |lang |clip |femail | utter per emo |
