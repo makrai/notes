@@ -6,9 +6,9 @@ ISAIC 2021 International Symposium on Automation, Information and Computing
 
 * sport fatigue
   * Medically, moderate fatigue is the embodiment of workload, and
-  * excessive fatigue will cause adverse effects on the human body. Therefore,
-  * real-time monitoring of human fatigue is of great significance. In order to
-  * speech fatigue detection method based on deep learning is proposed in this
+  * excessive fatigue will cause adverse effects on the human body
+  * real-time monitoring of human fatigue is of great significance
+  * we: speech fatigue detection method based on deep learning is proposed
 * we screen the useful speech segments
   of the fatigue corpus created in the previous work
   * the speech signal is preprocessed and
@@ -21,7 +21,7 @@ ISAIC 2021 International Symposium on Automation, Information and Computing
 # 1. Introduction
 
 * Sports fatigue detection plays an important role in sports training
-  * subjective detection and objective detection [2]
+  * subjective and objective detection [2]
 * Subjective fatigue detection methods
   * subjective questionnaire, Stanford sleep scale & sleep habit questionnaire
   * objective detection methods mainly use instruments and equipment
@@ -36,6 +36,7 @@ ISAIC 2021 International Symposium on Automation, Information and Computing
   * Objective methods can not achieve real-time detection, and 
     it is invasive, which will make users resist
 * we: fatigue detection based on speech analysis using deep learning
+* related work
   * Greeley+ (2006) proposed a fatigue detection method based on speech recog,
     * Mel frequency cepstrum coefficient can be used to describe fatigue [4]
   * Krajewskil+ (2008): an acoustic framework for human-computer interaction

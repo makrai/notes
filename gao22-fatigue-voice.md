@@ -1,5 +1,5 @@
 A rapid, non-invasive method for fatigue detection based on voice information
-Xiujie Gao†, Kefeng Ma†, Honglian Yang, Kun Wang, Bo Fu, Yingwen Zhu,
+Xiujie Gao, Kefeng Ma, Honglian Yang, Kun Wang, Bo Fu, Yingwen Zhu,
   Xiaojun She, Bo Cui
 Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
 
