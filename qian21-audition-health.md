@@ -6,11 +6,11 @@ Journals & Magazines >IEEE Internet of Things Journal >Volume: 8 Issue: 21
 
 # Abstract
 
-* we have witnessed the power of 5G, Internet of Things, big data, computer
-  vision, and artificial intelligence in applications of epidemiology modeling,
-  drug and/or vaccine finding and designing, fast CT screening, and quarantine
-  management. On the other hand, relevant studies in exploring the capacity of
-* we propose a novel multitask speech corpus for COVID-19 research usage. We
+* we have witnessed the power of 5G, Internet of Things, big data,
+  computer vision, and artificial intelligence
+  in applications of epidemiology modeling, drug and/or vaccine finding and
+  designing, fast CT screening, and quarantine management
+* we propose a novel multitask speech corpus for COVID-19 research usage
   * 51 confirmed COVID-19 patients’ in-the-wild speech data in Wuhan city,
   * three-category classification: sleep quality, fatigue, and anxiety
 * baseline: both classic machine learning methods and SOTA deep learning
@@ -64,7 +64,6 @@ Journals & Magazines >IEEE Internet of Things Journal >Volume: 8 Issue: 21
   * confusion matrix of the best model [see Table V(c)], we may find that
     “Mild” and “Severe” both have a proportion of instances to be wrongly
     predicted as “Moderate.”
-
 * The late fusion of models cannot generate significantly higher results than
   * Only for sleep quality and fatigue, the fused models has a slight improv
 
@@ -80,7 +79,6 @@ Journals & Magazines >IEEE Internet of Things Journal >Volume: 8 Issue: 21
 * human hand-crafted features (with clear definitions and physical meanings)
   are worth exploring
 * limited data size => the DL-based models may have been restrained in their
-
 * For these three computational paralinguistics analysis tasks,
   the ComPARe feature set shows good robustness
   due to its design in the context of its original target usage
