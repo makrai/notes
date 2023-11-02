@@ -87,7 +87,7 @@ Artificial Intelligence Review (2021)
 
 * This section expounds on some models that have evolved from the transformer
   architecture, strengths, and weaknesses. The models discussed in this section
-  
+
 ## 4.1 Transformer-XL
 
 ## 4.2 Generative Pre-Training (GPT)
@@ -116,10 +116,11 @@ Artificial Intelligence Review (2021)
   and BERT
 * Jwa+ [59] designed the BAKE and exBAKE model to automatically detect fake news
   using BERT through the scrutiny of headlines and body
-* Yang+ [65] detected humor in paragraphs with three-level approach
-  * data augmentation with paragraph dedecomposition (PD),
-    fine-tuning BERT with task-specific label and 
-    ensemble for inference
+* Yang+ [65] detected humor in paragraphs
+  * three-level approach
+    * data augmentation with paragraph dedecomposition (PD),
+    * fine-tuning BERT with task-specific label and
+    * ensemble for inference
   * Three datasets
     * CCL2019 Chinese Humor Computation (XIAONIU) dataset
       * The XIAONIU dataset is a Chinese humor dataset made up of 21, 552 human

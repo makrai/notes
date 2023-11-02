@@ -29,9 +29,9 @@ code and datasets open source
 * gathered using Reddit’s public API, collecting the most recent jokes
   * Every time the scraper ran, it also updated the upvote score
   * every hour through the months of March and April 2019
-  * data was already split into body and punchline sections from Reddit, we
+  * data was already split into body and punchline sections from Reddit
   => separate datasets containing: just body, just punchline, both
-* Some sample jokes are shown in Table 1, above
+* Some sample jokes are shown in Table 1
   * The distribution of joke scores varies wildly, from 0 to 136,354 upvotes
   * there is a major jump between the 0-200 upvote range and the 200 range
     * only 6% of jokes scoring between 200-20,000
@@ -57,10 +57,10 @@ code and datasets open source
 
 # 6 Discussion
 
-* The model has used the context of the words to determine, with high
-  probability, what an average Reddit r/Jokes viewer will find humorous
-* stark difference between the preferences of the general population and those
-  of the Reddit users (Table 2)
+* The model has used the context of the words to determine, with high probabil,
+  what an average Reddit r/Jokes viewer will find humorous
+* stark diff between the prefers of the general population vs Reddit users
+  (Table 2)
   * We think that our model is learning the specific type of humor
     enjoyed by those who use the Reddit r/Jokes forum
   => humor can be learned for a specific subset of the population
@@ -68,7 +68,7 @@ code and datasets open source
   dataset show the effectiveness of the model for transfer learning
   * not terribly surprising: If the model can figure out which jokes are funny,
     it seems to be an easier task to tell when something isn’t a joke at all
-* defining the absolute truth value for a joke’s humor is a challenging, if not
-  impossible task
+* defining the absolute truth value for a joke’s humor is a challenging,
+  if not impossible task
   * nL, these results indicate that, at least for a subset of the population,
     we can find and identify jokes that will be most humorous to them

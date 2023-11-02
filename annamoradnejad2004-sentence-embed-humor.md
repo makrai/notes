@@ -5,6 +5,8 @@ arXiv:2004.12765 [cs.CL]
 
 https://github.com/Moradnejad/ColBERT-Using-BERT-Sentence-Embedding-for-Humor-Detection
 
+# Abstract
+
 * we detect and rate humor in short texts
   based on a popular linguistic theory of humor
 * sentence embeddings are fed to separate lines of hidden layers
@@ -18,7 +20,7 @@ https://github.com/Moradnejad/ColBERT-Using-BERT-Sentence-Embedding-for-Humor-De
   * two contrasting settings confirm the strength and robustness of the model
 * two important factors in achieving high accuracy in the current task
   * usage of sentence embeddings and
-  * utilizing the linguistic structure of humor in designing the proposed model
+  * we utilized the linguistic structure of humor in designing the model
 
 # IV. Proposed method
 
@@ -29,14 +31,12 @@ https://github.com/Moradnejad/ColBERT-Using-BERT-Sentence-Embedding-for-Humor-De
 
 * works in linguistics of humor classify jokes into various categories based on
   their structure or content. Many believed that humor arises from the sudden
-  transformation of an expectation into nothing [23].
-
+  transformation of an expectation into nothing [23]
 * main theories on the structure of a joke involves two or three stages of
   storytelling that concludes with a punchline [24], [25]
-  * Punchline is the last part of a joke that destroys the perceiver’s previous
-    expectations and bring humor for its incongruity.
-
-* Raskin [26] presented Semantic Script Theory of Humor (SSTH), 
-  * a detailed formal semantic theory of humor. The SSTH has the necessary
+  * Punchline is the last part of a joke that destroys the expectations 
+    and brings humor for its incongruity
+* Raskin [26] presented Semantic Script Theory of Humor (SSTH),
+  * a detailed formal semantic theory of humor
   * text has to have two distinct related scripts that are opposite in nature,
-    such as real/unreal, possible/impossible.  For example, let us review a
+    such as real/unreal, possible/impossible
