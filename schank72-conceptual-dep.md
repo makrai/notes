@@ -1,5 +1,5 @@
-Schank, R. C
 Conceptual dependency: A theory of natural language understanding
+Schank, R. C
 Cognitive Psychology, 1972, 3, 552-631
 http://www.cs.cf.ac.uk/Dave/AI2/node69.html
 

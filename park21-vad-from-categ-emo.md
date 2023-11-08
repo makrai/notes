@@ -77,8 +77,8 @@ arXiv:1911.02499 [cs.CL]
 ## Model Architecture (Fig 1a)
 
 * Formally, an emotion detection model is P (e|X) where
-  e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E
-  X = {x1 , x2 , ..., xn } is a sequence of symbols xi representing the input
+  * e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E
+  * X = {x1 , x2 , ..., xn } is a sequence of symbols xi representing the input
   * Usually e is a one-hot vector in emotion classification
 * since the VAD dimensions are nearly independent (Russell and Mehrabian,
   1977), we simply assume mutual independence
