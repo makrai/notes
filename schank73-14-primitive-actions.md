@@ -68,6 +68,75 @@ March 1973 National Technica! Information Service, US Department of Commerce
 
 # 2 Conceptual Dependency 7
 
+## 2.1 Conceptualizations
+
+
+* We are using what is basically an actor-action-object framework that 
+  * includes cases of the actions.
+
+  * actors that are allowed in this schema are animate.
+
+  * ie an action is something that is done by an actor to an object.
+
+  * natural forces which shall not be discussed here.)
+
+* Actors, actions and objects in our CSs: real world actors, actions and objects
+
+* eg 'John hurt Mary'.
+* ? treat this sentence as (actor: John; action: hurt; object: Mary) violates
+  * hurt is not a real world action, is a resultant state of Mary.
+
+  * It does not refer to any action that actually occurred, 
+    but rather to the result of the action that actually occurred.
+
+  * the action that can be said to have caused this 'hurt' is unknown.
+
+* conceptual relationships must be accounted for:
+ * John did something: Mary was hurt; the action caused the resultant state.
+
+* actor-action complexes are 
+  * a mutual dependency between actor and action
+* object-state complexes are
+  * a predication of an attribute of an object, or by <^d^ denoting a
+  * a change of state■ in the object:
+
+* Causal relationships are temporal dependencies
+
+* Causal arrows may only exist btcween two-way dependencies
+* ie only events or states can cause events or states.
+
+Thus our representation for this sentence is:
+.
+
+John <=> do
+      |
+Marv <-> hurt
+
+* The dummy 'do' represents an unknown action.
+('Hurt1 is ambiguous between mental hurt (hurt^) and physical hurt (hurt-™-) .)
+
+* Conceptual dependency reprpstation depict the actual conceptual relationships
+  that are Implicit within a natural lau- puage utterance.
+
+* Actions, in conceptual depencency, are things that arc done to objects.
+  * the conceptual cases of an action.
+    * sometimes have directions (either through space or between humans), and
+    * always have means (instruments)
+
+* conceptual cases are part of a given action and 
+  => always present whenever that action is present.
+  * Unlike syntactic cases, (as posited by Fillmore (I968) for example)
+
+  * eg if an action takes an object, whether or not that object was mentioned
+
+  * If the instance of that object was not stated and is not inferable 
+  => an empty object slot is retained.
+
+
+## 2.2 Paraphrase Recognition 14
+
+## 2.3 Simmary 16
+
 # 3 The Primitive Actions 18
 
 # 4 Inferences 40
