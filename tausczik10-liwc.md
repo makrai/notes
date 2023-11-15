@@ -1,5 +1,5 @@
-Yla R. Tausczik and James W. Pennebaker
 The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods
+Yla R. Tausczik and James W. Pennebaker
 2010 Journal of Language and Social Psychology
 
 # Abstract
