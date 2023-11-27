@@ -89,7 +89,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
   others who propose _scalar_ notations for semantics, such as 'fuzzy set
   theory'
 
-### 3. Semantic Primitives Principle. There exists a finite set of undecomposable
+### 3. Semantic Primitives Principle. There is a finite set of undecomposable
 
  meanings — semantic primitives
  * does not mean that all lexical universals must also be semantic
