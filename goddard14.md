@@ -45,7 +45,8 @@ Words and Meanings
 
 substantial NSM literature on grammar
 
-In this chapter we survey some of the ways in which semantic primes can be used
-for exploring cultural norms and values, for clarifying thinking in the human
-sciences, and for helping to document and conserve the unique human concepts of
-endangered languages + the importance of word [meaning in] literature
+* this chapter surveies some ways in which semantic primes can be used for 
+  * exploring cultural norms and values, for 
+  * clarifying thinking in the human sciences, and for 
+  * documenting and conserving the unique human concepts of endangered langs +
+  * the importance of word [meaning in] literature
