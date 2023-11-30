@@ -27,6 +27,7 @@ Yla R. Tausczik and James W. Pennebaker
     alcohol abuse, brain damage, and mental disorders
   * Attempts to a computer program have modest correlations to the
     judge-based “gold standard” (eg Gottschalk & Bechtel, 1993)
+  * DSM 4-re aktualizálva van (Altbäcker pers comm)
 * first general purpose computerized text analysis program in psychology was
   developed by Philip Stone and his colleagues
   * Rosenberg & Tucker, 1978; Stone, Dunphy, Smith, & Ogilvie, 1966

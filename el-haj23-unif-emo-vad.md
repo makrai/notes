@@ -8,10 +8,10 @@ Conference on Language, Data and Knowledge 2023
 * This paper presents a novel approach to unifying various emotional datasets
   using the Valence Arousal Dominance (VAD) framework
 * Emotion analysis lacks large, standard, and unified datasets
-* we map diverse emotions from different datasets into four categories: joy,
-  anger, fear, and sadness using the VAD framework
+* we map diverse emotions from different datasets into four categories:
+  joy, anger, fear, and sadness using the VAD framework
   * This process creates multidimensional emotional scores that are consistent
-    across datasets, regardless of the number of emotions included. By unifying
+    across datasets, regardless of the number of emotions included
 * we address “weak emotions” by annotating such instances with a neutral VAD
   * Sentences that contain conflicting emotions or those that do not exhibit a
     clear or strong emotional response are referred to as weak emotion sents
@@ -22,14 +22,14 @@ Conference on Language, Data and Knowledge 2023
 # 2 Related work
 
 * VAD model as a way to detect and unify different emotion datasets
-  (Kulkarni and Bhattacharyya, 221 2021; Luengo+, 2010)
+  (Kulkarni and Bhattacharyya 2021; Luengo+, 2010)
   * Manasi Kulkarni and Pushpak Bhattacharyya. 2021
-    Retrofitting of pre-trained emotion words with vad-dimensions and the
-    plutchik emotions
+    Retrofitting of pre-trained emotion words
+      with vad-dimensions and the plutchik emotions
     ICON’21
   * I Luengo, E Navas, I Odriozola, I Saratxaga, I Hernaez, I Sainz, D Erro
     Modified ltse-vad algorithm for applications requiring reduced silence
-    frame misclassification. In
+    frame misclassification
     LREC 2010
 
 # 3 Datasets
@@ -82,17 +82,14 @@ Conference on Language, Data and Knowledge 2023
 
 # 4 Preproc the train data
 
-* For datasets, such as SemEval-2018 and SSEC (Section 3.1), which are
-  annotated with multiple categorical emotions in a single sentence, we average
-  the VAD values of each emotion to obtain the overall VAD value of that
-  sentence before BERT model training.
-
+* SemEval-2018 and SSEC are annotated with multiple categ emos in 1 sentence,
+  => we average the VAD values of the emotions to obtain the overall VAD value
+  of that sentence before BERT model training
 * To account for neutral, we set the intermediate value in VAD space, 500, for
-  sentences without any labels.
-  * as we demonstrate later in Experiment 2 (Section 5.2).
-
-* For the EmoBank dataset (Section 3.5), the preexisting VAD values range
-  between 1 and 5 points, which is different from our VAD scale -> scaled
+  sentences without any labels
+  * as we demonstrate later in Experiment 2 (Section 5.2)
+* For the EmoBank dataset, the VAD values range between 1 and 5 points
+  != our VAD scale -> we scaled it
 * text: removing mentions and URLs, as they are considered unrelated to
 
 # Experiments
@@ -108,10 +105,9 @@ Conference on Language, Data and Knowledge 2023
 
 # Conclusion
 
-* Experiments 1 and 2 demonstrate the benefits of t raining with larger
+* Experiments 1 and 2 demonstrate the benefits of training with larger
   emotion-based datasets
   * suggest that it is possible to predict a wider range of emo expressions
   * polarity analysis in Experiment 2 further support this conclusion
   * also predict weak emotions, which are often overlooked by sentiment anal
-* future work, it is expected that
-  * increasing the number of datasets used in training will result in improved
+* future work: increasing the number of datasets used in training

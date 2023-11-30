@@ -2,7 +2,7 @@ An Analysis of Annotated Corpora for Emotion Classification in Text
 Laura-Ana-Maria Bostan, Roman Klinger
 COLING 2018
 
-http://www.ims.uni-stuttgart.de/data/unifyemotion
+ttps://github.com/sarnthil/unify-emotion-datasets
 * a script that downloads and converts the datasets, and
 * instrucions on how to obtain datasets where the license requires no redistrib
 
