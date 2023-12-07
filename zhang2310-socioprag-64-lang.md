@@ -30,74 +30,167 @@ https://github.com/UBC-NLP/SPARROW
   * instruction tuning and reinforcement learning from human feedback (RLHF)
     (Ouyang+, 2022) have further enhanced the zero-shot generalizability of
   * ChatGPT exhibits impressive capabilities in this regard. Human language,
-  * what we call sociopragmatic meaning (SM).
+  * what we call sociopragmatic meaning (SM)
     * some forms of meaning are deeply embedded in social interactions
     * sociolinguistics: social var related to lang users (Tagliamonte, 2015)
     * pragmatics: communicative intentions (Boxer and Cortés-Conde, 2021)
-    * quite established within linguistics, hE NLP systems still struggle 
+    * quite established within linguistics, hE NLP systems still struggle
     * intertwined in social and interactive cont (Zhang and Abdul-Mageed, 2022)
-* evaluate instruction tuned models such as ChatGPT can capture SM across langs
-  * needed: datasets under standardized conditions easy to replicate.
-  * fairness of model comparisons and reproducibility, early benchmarks.
-  * hE Most existing benchmarks focus on the monolingual setting. These
-    * en: GLUE (Wang+, 2019), SentEval (Conneau and Kiela, 2018), and 
-      TweetEval (Barbieri+, 2020) for English, 
-    * ARLUE (Abdul-Mageed+, 2021) for Arabic, CLUE (Xu+, 2020a) for Chinese,
-      and IndoNLU (Wilie+, 2020) for Indonesian
+* evaluate how instruction tuned models eg ChatGPT can capture SM across langs
+  * needed: datasets under standardized conditions easy to replicate
+  * fairness of model comparisons and reproducibility, early benchmarks
+  * hE Most existing benchmarks focus on the monolingual setting
+    * en: GLUE (Wang+, 2019), SentEval (Conneau and Kiela, 2018), and
+      TweetEval (Barbieri+, 2020) for English,
+    * ARLUE (Abdul-Mageed+, 2021) for Arabic,
+      * CLUE (Xu+, 2020a) for Chinese,
+      * IndoNLU (Wilie+, 2020) for Indonesian
     * XTREME (Hu+, 2020) and XGLUE (Liang+, 2020) introduce multilingual
-      * hE they only include a few SM tasks for a limited number of languages.
-      * They are also limited to standard language use (eg Wikipedia).
+      * hE they only include a few SM tasks for a limited number of languages
+      * They are also limited to standard language use (eg Wikipedia)
     * UMSAB (Barbieri+ 2022) propose a multilingual sentiment analysis
-      * tweet sentiment analysis datasets in only eight languages. As such,
-    * ie absence of a unified, diverse, and comprehensive benchmark and a
+      * tweet sentiment analysis datasets in only eight languages
+    * ie absence of a unified, diverse, and comprehensive benchmark
 * data inaccessibility (Assenmacher+, 2022)
   * many studies release the IDs of posts (eg tweets)
   * hE substantial amounts of these social posts become inaccess (Zhang+, 2022)
   * we attempt to re-collect text contents of 25 datasets by using their IDs
-    * we can only retrieve 58% samples on average (see Table 8 in Appendix).
+    * we can only retrieve 58% samples on average (see Table 8 in Appendix)
   * hinders fair comparisons in NLP for SM research.  This issue has already
   * become worse as corporations such as Twitter tighten access to their API,
 * we introduce SPARROW, a massively multilingual SM evaluation benchmark,
   * 169 datasets covering 64 languages from 12 language families, 16 scripts,
-  * diverse online platforms (eg Twitter, YouTube, and Weibo).  We then perform
-  * extensive evaluation of ChatGPT, comparing it to 13 other models ranging
+  * diverse online platforms (eg Twitter, YouTube, and Weibo)
+  * extensive evaluation of ChatGPT, comparing it to 13 other models
     * size between 110M-7B parameters
-  * Our evaluations allow us to answer multiple questions related to 
-    how that LLMs fare across languages
-  * leaderboard: to facilitate future comparisons, we also design a 
-    * modular, interactive
+  * we answer multiple questions related to how that LLMs fare across languages
+  * leaderboard: to facilitate future comparisons: modular, interactive
 
 * tab 1: Zhong+ (2023) Qin+ (2023) Ahuja+ (2023) Laskar+ (2023) Bang+ (2023)
   Lai+ (2023) Das+ (2023) Wang+ (2023) Zhang+ (2023b) Ziems+ (2023)
 
-* contributions of this paper are as follows: 
+* contributions of this paper are as follows:
   * We collect, uniformize, and responsibly release massively multilingual SM
     datasets in a new benchamark;
-  * SPARROW benchmark is essentially an archive of SM datasets that 
-    * alleviates the serious issue of data decay; 
+  * SPARROW benchmark is essentially an archive of SM datasets
+    * alleviates the serious issue of data decay;
   * We evaluate a wide range of models on our SPARROW benchmark via
-    fine-tuning SoTA encoder-only pretrained language models and 
+    fine-tuning SoTA encoder-only pretrained language models
     * zero-shot learning of a number of generative models, including
-      instruction tuned models (eg BLOOMZ) as well as ChatGPT; and 
-  * We establish standard settings for future research in this area across a
-    large number of languages and tasks
+      instruction tuned models (eg BLOOMZ) as well as ChatGPT
+  * We establish standard settings for future research in this area
+    across a large number of languages and tasks
 
 # 2 Related Work
 
-## Evaluation of LLMs. There have been many attempts to evaluate ChatGPT and
-instruction tuned LLMs. Qin+ (2023); Laskar+ (2023);
+## Evaluation of LLMs, ChatGPT and instruction tuned LLMs
 
-### Sociopragmatic Meaning Benchmarks. Many previous works introduce unified
-benchmarks such as GLUE (Wang+, 2019), SentE-
+* utilize existing English evaluation benchmarks to eval on various NLP tasks
+  * Qin+ (2023); Laskar+ (2023); Zhong+ (2023); Wu+ (2023)
+  * eg GLUE (Wang+, 2019) and BigBench (Srivastava+, 2022)
+  * ChatGPT performs less effectively than the models finetuned specifically
+  * nL superior capabilities compared to other instruction tuned LLMs
+    * eg FLAN (Chung+, 2022)
+* with multilingual benchmarks
+  * Ahuja+ (2023); Bang+ (2023); Laskar+ (2023); Lai+ (2023); Huang+ (2023)
+  * benchmarks: eg XNLI, PAWS-X, XLSum) involving monolingual NLP tasks and
+    crosslingual tasks (eg machine translation). Their findings point to a
+  * large gap in performance of instruction tuned LLMs and ChatGPT,
+    * especially on low-resource languages and those with non-Latin scripts
+* SM is still not adequately represented in existing benchmarks, hindering
+  * Table 1: benchmarks used for listed evaluations only include a few SM tasks
+    focusing on sentiment analysis
+  * Wang+ (2023); Zhang+ (2023b) investigate LLMs on a number of SM tasks (eg
+    offensive language detection), but only on English
+  * Ziems+ (2023) investigate ChatGPT performance on a range of comp soc sci
+    * eg sociology, psychology, and linguistics, but only on English
+  * Das+ (2023) evaluate ChatGPT on hate speech detection to 11 languages
+
+## Sociopragmatic Meaning Benchmarks
+
+* unified benchmarks such as GLUE (Wang+, 2019), SentEval (Conneau and Kiela,
+  2018), XTREME (Hu+, 2020), and XGLUE (Liang+, 2020).  These benchmarks
+  * a wide range of NLP tasks, but comprise a sole SM task (ie sentiment)
+* benchmarks focusing on SM
+  * Barbieri+ (2020) introduce TweetEval benchmark that contains
+    seven English datasets of six SM tasks
+  * Zhang+ (2023b) develop SentiEval that involves 26 English datasets of
+    13 sentiment-related tasks
+* Beyond English
+  * sentiment: NusaX (Winata+, 2022), NaijaSenti (Muhammad+, 2022), and AfriSenti
+    (Muhammad+, 2023a) propose benchmarks for sentiment analysis with eight
+    * 8 Indonesian languages, four African languages, and 14 African langs resp
+  * UMSAB introduced by Barbieri+ (2022) contains
+    * 11 sentiment analysis datasets in 11 languages. For
+  * detecting antisocial online comments, Risch+ (2021) introduces a
+    toxic comment collection that contains 43 datasets of
+    six antisocial detection tasks in 14 languages
+* Figure 1 for a comparison
 
 # 3 SPARROW Benchmark
 
-* Inspired by previous evaluation benchmarks like GLUE (Wang+, 2019),
-  we define a global metric called SPARROW score, which represents the
-  unweighted average of all dataset-specific metrics.  The SPARROW score
+* 13 types of tasks in six main categories. It contains 169 datasets
+* covers a wide period of time (1986-2022)
+* We group different tasks in our benchmark by what we perceive to be an
+  * hate speech, offensive language, and dangerous language detection as
+    anti-social language detection
+* we keep sentiment analysis and emotion recognition distinct due to the popul
+* Table 2 summarizes statistics of SPARROW.  We now briefly introduce our task
+  * more information about languages in SPARROW in Table 7 of the Appendix. We
+  * detailed descriptions with full citations of all our datasets in Tab 9--14
+* Inspired by previous evaluation benchmarks like GLUE (Wang+, 2019), we define
+  a global metric called SPARROW score, which represents the unweighted average
+  of all dataset-specific metrics.  The SPARROW score
   * an overall indication of performance on SM tasks
 
 ## 3.1 Task Clusters
+
+### Antisocial Language Detection
+
+* proliferation of antisocial language (eg hate speech)
+  toxifies public discourse, incites violence, and undermines civil society
+  (Sap+, 2019; Vidgen and Derczynski, 2020).  Antisocial language detection is
+* We include under the umbrella of antisocial language the following:
+  * aggressive language (Kumar+, 2018),
+  * dangerous language (Alshehri+, 2020),
+  * hate speech (eg Waseem and Hovy (2016); Deng+ (2022)),
+  * offensive language (eg Mubarak+ (2020); Kralj Novak+ (2021)),
+  * offense type identification (eg Zampieri+ (2019)), and
+  * offense target identification (eg Ousidhoum+ (2019); Jeong+ (2022))
+
+### Emotion Recognition
+
+* Emotion affects our decision-making as well as mental and physical health
+  (Abdul-Mageed and Ungar, 2017)
+* SPARROW includes 26 emotion datasets in 17 languages
+  (eg Kajava (2018); Bianchi+ (2021))
+
+### Humor Detection
+
+* Humor is a type of figurative language which induces
+  amusing effects, such as laughter or well-being sensations
+* We include four humor detection datasets in four languages
+  (eg Blinov+ (2019); Meaney+ (2021))
+
+### Irony & Sarcasm Detection
+
+* Irony and sarcasm also involve figurative language
+  * intentionally uses diametric language to signify implied meaning
+* We include
+  * nine irony detection datasets in seven languages (eg Xiang+ (2020)),
+  * ten sarcasm detection datasets in four languages (eg Walker+ (2012)), and
+  * an irony type identification dataset (Van Hee+, 2018)
+
+### Subjectivity and Sentiment Analysis
+
+* Subjectivity analysis aims to understand the opinions, feelings, judgments,
+  and speculations expressed via language (Abdul-Mageed+, 2014)
+  * Our benchmark includes six subjectivity analysis datasets in 5 languages
+    (eg Pang and Lee (2004); Pribán and Steinberger (2022))
+* Subjectivity incorporates sentiment
+  * Sentiment analysis (Poria+, 2020) is one of the most popular tasks in SM
+  * Our benchmark contains 77 sentiment analysis datasets in 58 languages
+    (eg Pang and Lee (2005); Marreddy+ (2022))
 
 ## 3.2 Preprocessing, Splits, and Metrics
 
