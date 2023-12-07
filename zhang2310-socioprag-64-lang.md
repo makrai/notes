@@ -194,6 +194,46 @@ https://github.com/UBC-NLP/SPARROW
 
 ## 3.2 Preprocessing, Splits, and Metrics
 
+# 4 Evaluation Methods
+
+## 4.1 Finetuning on Encoder-Only Models
+
+* We evaluate the following Transformer-encoder-based multilingual models on
+  * Multilingual-BERT (mBERT, Devlin+, 2019, Base, 110M parameters),
+  * XLM-RoBERTaBase (XLM-R, Conneau+, 2020, 270M parameters),
+  * Bernice (DeLucia+, 2022), a 270M-parameter model trained with 2.5B tweets
+    in 66 languages, and
+  * InfoDCL (Zhang+, 2023a), a SoTA for SM understanding, which
+    * further trains XLM-R with 100M tweets in 66 languages with contrastive
+      learning
+* More details about all models are in Appendix B
+
+## 4.2 Zero- and Few-Shot on LLMs
+
+* We investigate zero-shot performance on a wide range of generative models,
+  including pre-trained generative models:
+  * BLOOM (Scao+, 2022),
+  * mT5 (Xue+, 2021),
+  * LLaMA (Touvron+, 2023),
+* instruction tuned models:
+  * BLOOMZ (Scao+, 2022), a BLOOM-initialized model
+    tuned with multi-lingual xP3 corpus,
+  * BLOOMZ-P3 (Muennighoff+, 2022), a BLOOM-initialized model
+    tuned with English-only P3 corpus,
+  * BLOOM-Bactrian (Li+, 2023), a BLOOM-initialized model
+    tuned with 3.4M instruction-following samples in 52 languages,
+  * mT0 (Muennighoff+, 2022), an mT5 model tuned with xP3 corpus,
+  * Alpaca (Taori+, 2023), a LLaMA-initialized model
+    tuned with 52K English instruction-following samples,
+  * Vicuna (Chiang+, 2023), a LLaMA-initialized model on 70K conversational
+    data, and
+  * ChatGPT, for which we use the gpt-3.5-turbo-0301 version via OpenAI API.2
+* details
+  * We use 7B-size version of BLOOM~ and LLaMA-based models and
+  * 4B-size version of mT5-based models. We also evaluate
+* six open-source LLMs (i.e, BLOOM, BLOOMZ-P3, mT5, mT0, LLaMA, and Vicuna) via
+  few-shot in-context learning
+
 ## 5.2 Results
 
 * tab 3: aggregated performance of Test-S on each task and main category
