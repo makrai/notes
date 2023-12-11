@@ -1,15 +1,17 @@
-Sentiment Analysis: Automatically Detecting Valence, Emotions, and Other Affectual States from Text
+Sentiment Analysis: 
+  Aut Detecting Valence, Emotions, and Other Affectual States from Text
 Saif M. Mohammad
-The author's manuscript of the chapter in Emotion Measurement 2021 2nd ed
-                                                       arXiv:2005.11882 [cs.CL]
+manuscript of the chapter in Emotion Measurement 2021 2nd ed arXiv:2005.11882
 
-* Sentiment analysis, the automatic determination of emotions in text, is
+# Abstract
+
+* Sentiment analysis, the automatic determination of emotions in text
   * app in commerce, public health, government policy, social sciences, & art
   * text, from news to social media posts, is improving our
   * understanding how 
     * people convey emotions through language but also how 
     * emotions shape our behaviour
-* This article presents a sweeping overview of sentiment analysis research that
+* we: a sweeping overview of sentiment analysis research
   * origins, tasks, challenges, methods and resources used, and applications.
   * potential for harmful outcomes
   * fairness
@@ -54,7 +56,6 @@ The author's manuscript of the chapter in Emotion Measurement 2021 2nd ed
       retrieval, text summarization, and textual entailment benefit from
       determining not just the emotional state but also from determining these
       semantic roles of emotion.
-
 * Mohammad, Zhu, Kiritchenko, and Martin (2015) created 
   a corpus of tweets from the run up to the 2012 US presidential elections,
   * annotations for 
@@ -138,7 +139,6 @@ The author's manuscript of the chapter in Emotion Measurement 2021 2nd ed
       marked as neutral. The corpus has 
     * 1,487 documents, 11,255 paragraphs, 35,096 sentences, and 878,164 Chinese
       words.
-
 * The 2013 Chinese Microblog Sentiment Analysis Evaluation (CMSAE) compiled a
   * posts from Sina Weibo (a popular Chinese microblogging service) annotated
   * seven emotions: anger, disgust, fear, happiness, like, sadness and
@@ -147,7 +147,6 @@ The author's manuscript of the chapter in Emotion Measurement 2021 2nd ed
   * Chinese emotion classification using transfer learning and neural networks
     * Yu, Marujo, Jiang, Karuturi, and Brendel (2018), 
     * Matsumoto, Sasayama, Yoshida, Kita, and Ren (2018).
-
 * Arabic emotion datasets include the tweet datasets from the shared task
   Semeval-2018 task 1: Affect in Tweets Mohammad+ (2018) and other works
   * Badarneh, Al-Ayyoub, Alhindawi, Jararweh,+ (2018), 
@@ -174,7 +173,6 @@ The author's manuscript of the chapter in Emotion Measurement 2021 2nd ed
   * survey by Marechal+ (2019).) Such multi-modal representations of emotions
   * applicatios also: captioning images or audio for emotions and even
     generating text that is affectually suitable for a given image or audio
-
 As seen above, there are a number of datasets where sentences are manually
 labeled for emotions. They have helped improve our understanding of how people
 use language to convey emotions and they have helped in developing supervised
@@ -215,8 +213,9 @@ terms annotated for real-valued scores of valence, arousal and dominance
 #### NRC Emotion Lexicon (EmoLex): ∼14k English terms with binary annotations
 (0 or 1) indicating no association or association with eight basic emotions
 (those proposed by Plutchik (1980)) as well as for positive and negative
-sentiment.26 Automatic translations of the words in overl 100 languages
-included (Mohammad & Turney, 2010, 2012).
+sentiment.26 
+* Automatic translations of the words in overl 100 languages included
+  (Mohammad & Turney, 2010, 2012)
 
 #### Warriner+ Lexicon: ∼14K English terms annotated for valence, arousal, and
 dominance (real-valued scores) (Warriner, Kuperman, & Brysbaert, 2013).27
@@ -242,20 +241,24 @@ These include about 1500 words from the Osgood study
 #### AFINN: ∼2,500 English terms annotated for valence (Nielsen, 2011). The
 ratings range from -5 (most negative) to +5 (most positive) in steps of 1.32
 
-#### Linguistic Inquiry and Word Count (LIWC) Dictionary: ∼1,400 English terms
-manually identified to denotate the affect categories: positive emotion, neg-
-ative emotion, anxiety, anger, and sadness
-(Pennebaker, Boyd, Jordan, & Blackburn, 2015)
+#### Linguistic Inquiry and Word Count (LIWC) Dictionary
 
-#### The Affective Norms for English Words (ANEW): ∼1,000 English terms
-annotated for valence, arousal, and dominance (Bradley & Lang, 1999).34 
+* ∼1,400 English terms manually identified to denotate the affect categories:
+* positive emotion, negative emotion, anxiety, anger, and sadness
+* Pennebaker, Boyd, Jordan, & Blackburn, (2015)
+
+#### The Affective Norms for English Words (ANEW)
+
+* ∼1,000 English terms annotated for valence, arousal, and dominance
+  (Bradley & Lang, 1999).34 
+
+---
 
 * Emotion lexicons such as those listed above provide simple and effective
   means to analyze and draw inferences from large amounts of text. They are
   also used by machine learning systems to improve prediction accuracy,
   especially when the amount of training data is limited. Large emotion
-  lexicons are also widely used in digital humanities, literary analyses,
-  psychology, and art for a number purposes.
+  * also used in digital humanities, literary analyses, psychology, and art
 
 # 6. Modeling the impact of sentiment modifiers 27
 
@@ -272,7 +275,6 @@ annotated for valence, arousal, and dominance (Bradley & Lang, 1999).34
   * understanding the relationships between emotions, multimodal affect
     analysis (involving not just text but also speech, vision, physiological
     sensors, etc), and applying emotion detection to new applications.
-
 * NLP has always been an interdisciplinary field with strong influences from
   * always: Computer Science, Linguistics, and Information Sciences
   * last decade: psychology, digital humanities, history, art, and social sci

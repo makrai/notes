@@ -96,6 +96,10 @@ Conference on Language, Data and Knowledge 2023
 
 ## 5.1 Experiment 1: Predicting Categorical Emotions
 
+* The combined model was trained on the EmoBank, SemEval-2018, and SSEC, tab 12
+  * Additionally, separate models were trained for each individual dataset
+* We use the WASSA dataset (Section 3.3) as the test set for this experiment,
+  * each sentence in WASSA is annotated with a single categorical label (eg joy)
 * calculating the Euclidean Distance between the predicted VAD scores
   and the VAD scores of each of the four emotions as labeled in WASSA
 
