@@ -3,6 +3,18 @@ Davis Liang, Hila Gonen, Yuning Mao, Rui Hou, Naman Goyal,
   Marjan Ghazvininejad, Luke Zettlemoyer, Madian Khabsa
 EMNLP 2023 arXiv:2301.10472 [cs.CL]
 
+# Ruder
+
+* This paper proposes XLM-V, an XLM-R-style model covering 100 languages that
+  * pre-trained with a 1M vocabulary
+  * To create the vocabulary, 
+    * vocabularies of languages are first clustered (Chung+ 2020), 
+    * clusters are allocated capacity corresponding to their average log prob
+      (Zheng+ 2021), and 
+    * sentencepiece models are trained for each cluster and then combined
+* While pre-training with a 1M vocabulary is 2.5x slower than with a 250k
+  * outperforms a (reimplemented) XLM-R
+
 # Abstract
 
 * Large multilingual LMs: typically a single vocabulary for 100+ languages. As
@@ -53,7 +65,7 @@ EMNLP 2023 arXiv:2301.10472 [cs.CL]
 * we present XLM-V, the first multilingual language model with a 1M token vocab
   trained on 2.5TB of data from Common Crawl (Conneau+ 2019)
 * contributions are as follows:
-  
+
 
 ## Clustering
 
