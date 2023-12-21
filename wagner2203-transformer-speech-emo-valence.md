@@ -96,13 +96,13 @@ arXiv:2203.07378 [eess.AS]
      within the same study, the large one yields better results (eg row 17 vs
      row 22 +3.0%), though the difference can be quite small (eg row 19 vs row
      20 +.5%)
-  4. Likewise, in that case HuBERT outperforms wav2vec 2.0 (eg row 22 vs row
-     20: +2.1%)
-  5. When performing a fine-tuning of the transformer layers, a simple average
-     pooling in combination with a linear classifier built over wav2vec 2.0 or
-     HuBERT (Wang+ [23]) shows best performance in the ranking
+  4. Likewise, in that case HuBERT outperforms wav2vec 2.0
+    (eg row 22 vs row 20: +2.1%)
+  5. When performing a fine-tuning of the transformer layers, a simple
+    average pooling in combination with a linear classifier built over
+    wav2vec 2.0 or HuBERT (Wang+ [23]) shows best performance in the ranking
     * hE, some of the more complex models [32] only report results without fint
-      * eg the cross-representation encoder-decoder model by Makiuchi+ (2021)
+    * eg the cross-representation encoder-decoder model by Makiuchi+ (2021)
 * dimensional emotion
   * the aforementioned studies have focused on emotional categories
   * several studies concentrate on dimensions

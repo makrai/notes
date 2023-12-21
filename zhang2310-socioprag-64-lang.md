@@ -26,10 +26,10 @@ https://github.com/UBC-NLP/SPARROW
 
 # 1 Intro
 
-* Multilingual LLMs have recently transformed (Xue+, 2021; Scao+, 2022)
+* Multilingual LLMs recently (Xue+, 2021; Scao+, 2022)
   * instruction tuning and reinforcement learning from human feedback (RLHF)
-    (Ouyang+, 2022) have further enhanced the zero-shot generalizability of
-  * ChatGPT exhibits impressive capabilities in this regard. Human language,
+    (Ouyang+, 2022) have further enhanced the zero-shot generalizability
+  * ChatGPT exhibits impressive capabilities in this regard
   * what we call sociopragmatic meaning (SM)
     * some forms of meaning are deeply embedded in social interactions
     * sociolinguistics: social var related to lang users (Tagliamonte, 2015)
@@ -72,7 +72,7 @@ https://github.com/UBC-NLP/SPARROW
 * contributions of this paper are as follows:
   * We collect, uniformize, and responsibly release massively multilingual SM
     datasets in a new benchamark;
-  * SPARROW benchmark is essentially an archive of SM datasets
+  * SPARROW is essentially an archive of SM datasets
     * alleviates the serious issue of data decay;
   * We evaluate a wide range of models on our SPARROW benchmark via
     fine-tuning SoTA encoder-only pretrained language models
@@ -129,18 +129,19 @@ https://github.com/UBC-NLP/SPARROW
 
 # 3 SPARROW Benchmark
 
-* 13 types of tasks in six main categories. It contains 169 datasets
+* 13 types of tasks in six main categories, 169 datasets
 * covers a wide period of time (1986-2022)
-* We group different tasks in our benchmark by what we perceive to be an
+* We group different tasks in our benchmark
   * hate speech, offensive language, and dangerous language detection as
     anti-social language detection
 * we keep sentiment analysis and emotion recognition distinct due to the popul
-* Table 2 summarizes statistics of SPARROW.  We now briefly introduce our task
-  * more information about languages in SPARROW in Table 7 of the Appendix. We
+* Table 2 summarizes statistics of SPARROW
+  * more information about languages in SPARROW in Table 7 of the Appendix
   * detailed descriptions with full citations of all our datasets in Tab 9--14
-* Inspired by previous evaluation benchmarks like GLUE (Wang+, 2019), we define
-  a global metric called SPARROW score, which represents the unweighted average
-  of all dataset-specific metrics.  The SPARROW score
+* aggregated metric
+  * Inspired by previous evaluation benchmarks like GLUE (Wang+, 2019)
+  * we define a global metric called SPARROW score, which represents the
+    unweighted average of all dataset-specific metrics
   * an overall indication of performance on SM tasks
 
 ## 3.1 Task Clusters
@@ -251,7 +252,7 @@ https://github.com/UBC-NLP/SPARROW
 
 ### 5.2.2 Instruction tuning can enhance LLMs’ ability on SM understanding, but
 
-* it depends on the instruction training data. Following instruction tuning
+* it depends on the instruction training data
 * on the English-only P3 dataset,
   * BLOOMZ-P3 demonstrates an improvement of 7.76 SPARROW compared to BLOOM
   * BLOOMZ improves 5.85 points over BLOOM (but falls short of BLOOMZ-P3)
@@ -260,7 +261,6 @@ https://github.com/UBC-NLP/SPARROW
   * BLOOMBactrian performs worse than BLOOMZ and BLOOMZ-P3, which are
     instruction tuned with NLP tasks. This indicates that
   * ie the general purpose instruction-response dataset is not very useful for SM
-
 * we compare BLOOM with BLOOMZ-P3 and BLOOMZ in terms of individual tasks,
   * sentiment analysis to exhibit the most significant improvement
   * BLOOMZ-P3 and BLOOMZ achieve a sentiment score improvement of 16.37 and
@@ -359,7 +359,7 @@ https://github.com/UBC-NLP/SPARROW
 * suggest that although ChatGPT has inferior ability on several languages in
   terms of detecting SM, a translate-then-detect approach may be possible
 
-### 5.2.8 How do open-source LLMs perform with few-shot in-context learning? As
+### 5.2.8 How do open-source LLMs perform with few-shot in-context learning?
 
 * Table 6 compares three-shot and five-shot results with zero-shot results
 * few-shot learning does enhance the performance of BLOOM, mT5, LLaMA, and
@@ -373,7 +373,7 @@ https://github.com/UBC-NLP/SPARROW
   * they are also different from BLOOM and LLaMA in that they are finetuned on
     several NLP tasks only one of which is an SM task (ie sentiment analysis)
 
-### 5.2.9 Are the open-source LLMs sensitive to prompts used? We carry out a
+### 5.2.9 Are the open-source LLMs sensitive to prompts used?
 
 * We curate 55 datasets across four tasks from SPARROW and evaluate six models
   with the prompts we used for evaluating ChatGPT. As Table 24 in Appendix
