@@ -4,8 +4,8 @@ arXiv:2304.08865 [cs.CL]
 
 # Ruder
 
-* This paper explores the potential of large-scale transliteration to enable
-  multilingual LMs to deal with under-represented languages. In particular, the
+* large-scale transliteration to enable multilingual LMs to deal with
+  under-represented languages
   * we romanize (ie maps UTF-8 characters to Latin characters) text using
     uroman across 14 diverse languages, which
   * text is then used to adapt multilingual LMs
@@ -14,18 +14,18 @@ arXiv:2304.08865 [cs.CL]
 # Abstract
 
 * Large multilingual pretrained LMs (mPLMs) for cross-lingual transfer in NLP
-* hE besides pretraining data scarcity, is also hindered by the
-  increase in vocabulary size and limitations in their parameter budget. In
-* we: transliteration on a massive scale. In particular,
+* hE pretraining data scarcity, increase in vocabulary size, and
+  limitations in their parameter budget
+* we: transliteration on a massive scale
 * we explore the UROMAN transliteration tool, which provides
-  mappings from UTF-8 to Latin characters for all the writing systems, enabling
-  * inexpensive romanization for virtually any language. We first focus on
+  * mappings from UTF-8 to Latin characters for all the writing systems
+  * inexpensive romanization for virtually any language
 * we
   * how UROMAN compares against other language-specific and manually curated
-    transliterators for adapting multilingual PLMs. We then
+    transliterators for adapting multilingual PLMs
   * study and compare a plethora of data-and parameter-efficient strategies for
     adapting the mPLMs to romanized and non-romanized corpora of
-    14 diverse low-resource languages.  Our
+    14 diverse low-resource languages
 * results reveal that
   UROMAN-based transliteration can offer strong performance for many languages,
   * particular gains achieved in the most challenging setups:
@@ -38,12 +38,12 @@ arXiv:2304.08865 [cs.CL]
 # 1 Intro
 
 * multiling NLP (XCOPA Ponti+ 2020; XTREME Hu+ 2020; Multi3nlu++ Moghe+ 2022)
-* problems. The first issue is the
+* problems
   * vocabulary size, as the vocabulary is bound to increase with the number of
-    languages added if per-language performance is to be maintained (Hu+
-    2020; Artetxe+ 2020; Pfeiffer+ 2022). Second,
+    languages added if per-language performance is to be maintained
+    (Hu+ 2020; Artetxe+ 2020; Pfeiffer+ 2022)
   * pretraining mPLMs with a fixed model capacity improves cross-lingual
-    performance up to a point after which it starts to decrease; this is the
+    performance up to a point after which it starts to decrease
     * the curse of multilinguality (Conneau+ 2020)
 * Transliteration: conversion between writing systems (Wellisch+ 1978)
   * Latin script-centered transliteration or romanization is the most common
@@ -59,12 +59,12 @@ arXiv:2304.08865 [cs.CL]
     reuse the information already present within the mPLM, thereby
     allocating the model’s parameter budget more efficiently
 * main drawback of transliteration: the expensive process of creating effective
-  language-specific transliterators, as they typically require language
-  expertise to curate dictionaries that map tokens from one language and script
-  to another. Therefore,
-  * previous attempts at mPLM adaptation to unseen languages via transl
+  language-specific transliterators, as they
+  * typically require language expertise to curate dictionaries
+    that map tokens from one language and script to another
+  * previous attempts at mPLM adaptation to unseen languages via transliterat
     (Muller+ 2021; Chau and Smith, 2021; Dhamecha+ 2021; Moosa+ 2022) were
-    * constrained to a handful of languages due to the limited availability of
+    * constrained to a handful of languages due to the limited availability
     * only to languages that have ‘language siblings’ with developed translit
 * we use and then evaluate the usefulness of a universal romanization tool,
   UROMAN (Hermjakob+ 2018), for quick, large-scale and effective adaptation of
@@ -73,12 +73,12 @@ arXiv:2304.08865 [cs.CL]
   * maps any UTF-8 character to the Latin script, increasing the portability of
     romanization, with some examples in Figure 1
 * We analyze language adaptation on a massive scale via UROMAN-based
-  romanization on a set of 14 diverse low-resource languages. We conduct
+  romanization on a set of 14 diverse low-resource languages
   * experiments within the standard parameter-efficient adapter-based
     cross-lingual transfer setup on two tasks:
   * NER on the WikiANN dataset (Pan+ 2017; Rahimi+ 2019), and
   * Dependency Parsing (DP) with Universal Dependencies v2.7 (Nivre+ 2020)
-* results on par or even outperforming adaptation with language-specific
+* results on par or even outperforming adaptation with language-spec translit
   * gains particularly pronounced for languages with unseen scripts
     (∼8-22 performance points) without any vocabulary augmentation
 
@@ -122,9 +122,11 @@ arXiv:2304.08865 [cs.CL]
   * We adopt the better-performing MAD-X 2.0 setup (Pfeiffer+ 2021) where
     * the adapters in the last Transformer layer are dropped at inference
 
+# 3 Experiments and Results
+
 ## 3.2 Results and Discussion
 
-### UROMAN versus Other Transliterators and Transliteration Strategies. In
+### UROMAN versus Other Transliterators and Transliteration Strategies
 
 * transliteration options using the TransLA + INV setup as the most efficient
   scenario. First, we compare UROMAN with
@@ -188,7 +190,7 @@ arXiv:2304.08865 [cs.CL]
 
 # App E Further Analyses
 
-* analyze tokenization quality of the mBERT tokenizer using the following
+* analyze tokenization quality of the mBERT tokenizer
   (Ács; Rust+ 2021; Moosa+ 2022)
   * metrics:
     * % of “UNK”s measures the % of “UNK” tokens produced by the tokenizer,
@@ -208,11 +210,11 @@ arXiv:2304.08865 [cs.CL]
     where the quality of the underlying mBERT tokenizer is relatively poor
 * is the tokenizer quality the principal reason for the performance gap for the
   transliteration-based methods in comparison to the non-transliteration based?
-  * experiment, we adapt the Non-TransLA+EmbLex to operate on transliterated
+  * experiment: we adapt the Non-TransLA+EmbLex to operate on transliterated
   * we call this variant TransLA+EmbLex
   * we train a new tokenizer on the transliterated data
   * initialize lexically overlapping embeddings with mBERT’s pretrained embeds
-* fig 5 plots the performance in Figure 5
+* fig 5 plots the performance
   * TransLA+EmbLex now outperforms the nontransliteration-based variant
     on 8/12 languages and also on average
   * this validates our hypothesis and is in line with the prev work (Moosa+ 22)
