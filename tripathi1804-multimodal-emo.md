@@ -10,7 +10,7 @@ arXiv:1804.05788 [cs.AI]
   * data from Speech, Text, and Motion capture data from face expressions,
     rotation and hand movements
 * Prior research: only Emotion detection from Speech on the IEMOCAP dataset,
-* we are the first that uses the multiple modes of data offered by IEMOCAP for
+* we are the first who use the multiple modes of data offered by IEMOCAP for
   a more robust and accurate emotion detection
 
 # 1 Intro

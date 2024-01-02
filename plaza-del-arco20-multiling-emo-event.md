@@ -4,8 +4,8 @@ LREC 2020
 
 # Abstract
 
-* emotion detection in text has become more popular
-  * pot appl: psychology, marketing, political science, artificial intelligence
+* emotion detection in text
+  * applicat: psychology, marketing, political science, artificial intelligence
   * While opinion mining is a well-established task with many standard data
     sets and well-defined methodologies, emotion mining has received less
   * annotated gold standard resources available are not enough
@@ -25,13 +25,12 @@ LREC 2020
 
 # 1 Intro
 
-* research on emotion has become popular in numerous fields including
-  psychology, sociology, neuroscience, endocrinology, medicine, history, and
-  computer science
-* in computational linguistics consists of identifying
-  discrete emotion expressed in text and is seen as
-  a natural evolution of sentiment analysis and its more fine-grained model
-  (Seyeditabari+ 2018)
+* research on emotion in fields including psychology, sociology, neuroscience,
+  endocrinology, medicine, history, and computer science
+* emo in computational linguistics consists of identifying
+  discrete emotion expressed in text
+  * a natural evolution of sentiment analysis and its more fine-grained model
+    (Seyeditabari+ 2018)
   * more difficult task than sentiment analysis, still a long way to go
 * potential applications in a number of areas, such as
   * marketing to modify or improve business strategies according to the emotion
@@ -49,7 +48,7 @@ LREC 2020
   * labeled with emotions by three annotators
   * languages: English and Spanish. This choice of languages intends to show
 
-# 2 related work presenting some available datasets labelled with emotions
+# 2 related work: datasets labelled with emotions
 
 * EmoBank (Buechel and Hahn, 2017) is a large-scale corpus of English sentences
   annotated with the dimensional Valence-Arousal-Dominance (VAD) representation
@@ -99,6 +98,6 @@ LREC 2020
 # 6 conclusions and future work
 
 * future work: deep learning with the purpose of improving the results
-  regarding those emotions which are more difficult to detect. In the same way,
+  regarding those emotions which are more difficult to detect
 * classification by event
   in order to observe the classification behavior of emotions in each of them

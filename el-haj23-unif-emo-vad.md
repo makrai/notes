@@ -28,14 +28,13 @@ Conference on Language, Data and Knowledge 2023
       with vad-dimensions and the plutchik emotions
     ICON’21
   * I Luengo, E Navas, I Odriozola, I Saratxaga, I Hernaez, I Sainz, D Erro
-    Modified ltse-vad algorithm for applications requiring reduced silence
-    frame misclassification
+    Modified LTSE-VAD algorithm for ... reduced silence frame misclassification
     LREC 2010
 
 # 3 Datasets
 
-* we use five different datasets mainly focusing on text written in English
-  * Four of the studied datasets are annotated with coarse-grained categorical
+* we use five datasets mainly focusing on text written in English
+  * Four of the studied datasets are annotated with coarse-grained categories
   * the fifth has VAD labels
 
 ## 3.1 Stance Sentiment Emotion Corpus (SSEC)
@@ -54,7 +53,7 @@ Conference on Language, Data and Knowledge 2023
   Surprise, and Trust (Mohammad+, 2018). The dataset was created by
 * seven annotators label one or more emotions that represent the tweeter’s
 
-## 3.3 WASSA-2017 Shared Task on Emotion Intensity is a dataset containing
+## 3.3 WASSA-2017 Shared Task on Emotion Intensity
 
 * 4,636 manually annotated tweets, categorized into
 * four emotions: Anger, Fear, Joy, and Sadness (Mohammad & Bravo-Marquez, 2017)
@@ -63,7 +62,7 @@ Conference on Language, Data and Knowledge 2023
   * The emotional words were chosen using Roget’s Thesaurus (Chapman+, 1977)
 * annotated using crowd-sourcing. WASSA-2017 is a useful dataset for emotion
 
-## 3.4 SemEval-2017 Task 4 A (Polarity) is a dataset
+## 3.4 SemEval-2017 Task 4 A (Polarity)
 
 * from the Sentiment Analysis in Twitter challenge (Rosenthal+, 2017). It
 * 11,906 polarity-emotion annotated tweets, with
@@ -99,7 +98,7 @@ Conference on Language, Data and Knowledge 2023
 * The combined model was trained on the EmoBank, SemEval-2018, and SSEC, tab 12
   * Additionally, separate models were trained for each individual dataset
 * We use the WASSA dataset (Section 3.3) as the test set for this experiment,
-  * each sentence in WASSA is annotated with a single categorical label (eg joy)
+  * each sentence in WASSA is annotated with a single category label (eg joy)
 * calculating the Euclidean Distance between the predicted VAD scores
   and the VAD scores of each of the four emotions as labeled in WASSA
 
@@ -111,7 +110,7 @@ Conference on Language, Data and Knowledge 2023
 
 * Experiments 1 and 2 demonstrate the benefits of training with larger
   emotion-based datasets
-  * suggest that it is possible to predict a wider range of emo expressions
+  * it is possible to predict a wider range of emo expressions
   * polarity analysis in Experiment 2 further support this conclusion
   * also predict weak emotions, which are often overlooked by sentiment anal
 * future work: increasing the number of datasets used in training

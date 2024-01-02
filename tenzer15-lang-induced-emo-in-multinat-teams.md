@@ -3,6 +3,8 @@ Leading across language barriers:
 Helene Tenzer, Markus Pudelko
 The Leadership Quarterly Volume 26, Issue 4, August 2015, Pages 606-625
 
+# Abstract
+
 * multinational team (MNT) members' emotional reactions to language barriers
   fall into two discrete categories:
   * self-directed anxiety and other-directed resentment
@@ -10,5 +12,5 @@ The Leadership Quarterly Volume 26, Issue 4, August 2015, Pages 606-625
   of language barriers
 * the measures MNT leaders have at their disposal: three major strategies:
   * reducing the impact of language barriers,
-  * redirecting MNT members' attention away from language barriers, and
+  * directing MNT members' attention away from language barriers, and
   * reducing the negative appraisal of language barriers

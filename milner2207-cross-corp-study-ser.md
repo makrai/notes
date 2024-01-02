@@ -2,9 +2,11 @@ A cross-corpus study on speech emotion recognition
 Rosanna Milner, Md Asif Jalal, Raymond W. M. Ng, Thomas Hain
 ASRU 2019 arXiv:2207.02104 [cs.CL]
 
+# Abstract
+
 * speech emotion datasets: difficult to acquire large quantities of reliable
   * acted emotions may be over the top compared to
-    less expressive emotions displayed in everyday life Lately,
+    less expressive emotions displayed in everyday life
   * recently larger datasets with natural emotions have been created
   * we not ignor smaller, acted datasets
 * is information learnt from acted emotions useful for detecting natural emo?
@@ -23,7 +25,7 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
 # 1 Intro
 
 * Speech emotion recognition (SER)
-  * reviews into methods, features and datasets exist [3, 4, 5, 6]
+  * reviews into methods, features and datasets [3, 4, 5, 6]
 * A lot of research within SER has focussed on a single dataset
   avoiding different annotation problems [10]
   * [10] Mia Atcheson, Vidhyasaharan Sethu, and Julien Epps,
@@ -43,28 +45,28 @@ ASRU 2019 arXiv:2207.02104 [cs.CL]
     the maximum mean discrepancy (MMD) to balance the feature distribution
     difference using transfer non-negative matrix factorisation (TNNMF)
   * Kim+ [18] used auxiliary gender and naturalness recognition tasks in a
-    multi-task learning setting for emotion recognition. Most recently, to deal
-  * unsupervised: the domain-adaptive subspace learning (DoSL) approach was
+    multi-task learning setting for emotion recognition
+  * unsupervised: the domain-adaptive subspace learning (DoSL) approach
     * an SVM is trained based on labelled training set speech signals [19]
 * hE, the majority of this cross-corpus work has been cross-lingual and
-  occasionally both cross-lingual and cross-age. In the past this has been
+  occasionally both cross-lingual and cross-age
   * now larger datasets,
     * eg MOSEI database which has around 65 hours of natural emotion data [20],
 * Deep neural networks, such as long short-term memory (LSTM) networks [21] and
   attention mechanism [22]
-  * in various emotion recognition studies [23, 17, 18, 24]. Recently,
+  * in various emotion recognition studies [23, 17, 18, 24]
   * in speech recognition, domain adversarial training (DAT) was proposed [25]
     * applicable to the SER task [26], and achieves representation learning
     * a gradient reversal layer is applied in the domain classifier in an
-      attempt to bring the representations closer.  Training models using DAT
-    * saves time, by learning two representations simultaneously, it also aims
+      attempt to bring the representations closer
+    * saves time, by learning two representations simultaneously
     * transfer of information between the two tasks
-* we cross-corpus SER within the same language (English) and same age (adult)
+* we: cross-corpus SER within the same language (English) and same age (adult)
   * between acted and natural datasets, the first study of this kind
-  * A bidirectional-LSTM with an attention mechanism approach is considered for
-  * The information transfer to other datasets is investigated and further
+  * A bidirectional-LSTM with an attention mechanism approach is considered
+  * The information transfer to other datasets is investigated
   * experiments looking into domain adversarial training (DAT) and
-    out-of-domain (OOD) models, then adapting these models, are considered. The
+    out-of-domain (OOD) models, then adapting these models
 
 # 2 Approach
 

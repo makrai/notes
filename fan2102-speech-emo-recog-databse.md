@@ -6,7 +6,7 @@ https://github.com/tobefans/LSSED
 
 # Abstract
 
-* Speech emotion recognition contributs to human-computer interaction (HCI)
+* Speech emotion recognition contributes to human-computer interaction (HCI)
 * we present LSSED, a challenging large-scale english speech emotion dataset,
   * data collected from 820 subjects to simulate real-world distribution
   * some pre-trained models based on LSSED

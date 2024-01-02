@@ -1,4 +1,4 @@
-Emotional voice conversion: Theory, databases and ESD
+Emotional voice conversion: Theory, databases, and [our] ESD
 K Zhou, B Sisman, R Liu, and H Li,
 Speech Communication, vol. 137, pp. 1–18, 2022
 
@@ -6,10 +6,10 @@ Speech Communication, vol. 137, pp. 1–18, 2022
 
 # Abstract
 
-* We release the Emotional Speech Database (ESD), publicly available, which
-  * one of the largest emotional speech databases, and is suitable
-    for multi-speaker and cross-lingual emotional voice conversion,
-    and other speech synthesis studies
+* We release the Emotional Speech Database (ESD), publicly available
+  * one of the largest emotional speech databases, and is
+    suitable for multi-speaker and cross-lingual emotional voice conversion,
+    and other speech _synthesis_ studies
 * 350 parallel utterances spoken by 10 native English and 10 native Chinese
   * 5 emotion categories (neutral, happy, angry, sad and surprise). More than
   * > 29 h of speech data were recorded in a controlled acoustic environment

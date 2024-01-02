@@ -6,8 +6,8 @@ Sensors 2021, 21(4), 1249; https://doi.org/10.3390/s21041249
 
 * need for accurate and near real-time Speech Emotion Recognition (SER)
 * compare available methods and databases in SER to achieve feasible solutions
-* The current study reviews deep learning approaches for SER with available
-  datasets, followed by conventional machine learning techniques for SER
+* we review deep learning approaches for SER with datasets,
+  followed by conventional machine learning techniques for SER
   * a multi-aspect comparison between practical neural network approaches
 
 #  4. Emotional Speech Databases

@@ -4,7 +4,7 @@ Brain Sci. 2020, 10, 687; doi:10.3390/brainsci10100687
 
 # Abstract
 
-* portable noninvasive human sensor technologies 
+* portable non-invasive human sensor technologies 
   eg brain–computer interfaces (BCI)
 * multimodal emotion recognition in the area of affective computing
 * This paper primarily discusses the progress of research into

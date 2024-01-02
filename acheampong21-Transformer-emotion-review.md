@@ -20,73 +20,69 @@ Artificial Intelligence Review (2021)
     * unavailability of a practical context extraction approach for texts
     * some texts convey multiple emotional expressions
 * pre-trained transformer-based models
-* this paper is to review some of these transformer-based models
+* we review some of these transformer-based models
   * datasets used, model architecture, results obtained, and limitations
 
 # 2 Models of emotions and the concept of text-based emotion detection
 
 * discrete and dimensional form
-  * Discrete representations place emotions into finite categories
-    * agreed that emotions arose due to how individuals perceived events, and
-      those emotions varied according to their degree of intensity
-    * Ekman (1999) places emotions into six basic categories, ie,
-      happiness, sadness, anger, disgust, surprise, and fear
-      * these emotions are independent of each other, basic, and can produce
-        complex emotions by combinations
-    * Plutchik (1980)
-      * like Ekman, primary emotions, and their combinations: complex emotions
-      * hE 8 primary emotions instead of 6 by Ekman which occured
-        * in opposite pairs. The 8 primary emotions as proposed by Plutchik
-        * joy--sadness, trust--disgust, anger--fear and surprise--anticipation
-    * Orthony, Clore, and Collins (OCC) disagreed with the analogy of ’basic
-      emotions’ as presented by Ekman and Plutchik
-      * 22 emotions, adding 16 emotions to Ekman's essential ones
-      * additional classes of relief, envy, reproach, self-reproach,
-        appreciation, shame, pity, disappointment, admiration, hope,
-        fears-confirmed, grief, gratification, gloating, like and dislike
-        (Ortony+ 1990)
-  * dimensional models place emotions into a uni~ or multi-dimensional space
-    * The spatial order depicts the relationship between emotions and
-      their relative degree of occurrence
-    * Circumplex of Affect proposed by Russell (1980) is a profound example
-      * 2-dimensional circular wheel in an arousal-valence domain
-    * Russell and Mehrabian (1977) also presented a 3-D emotional model
-      * valence, arousal, and dominance with
-        * valence differentiating emotions by pleasantness and unpleasantness,
-        * arousal differentiating emotions by activations and deactivations,
-        * dominance: the degree to which experiencers control their emotions
-    * The Hourglass of Emotions revisited model presented by Susanto+ (2020) is
-      * an improvement over the original Hourglass of Emos by Cambria+ (2012)
-      * both classify unknown concepts based on known features
-      * issues with the earlier proposal
-        * uncanny color associations of the original model, the presence of
-        * neutral and ambiguous emotions, the
-        * absence of polar emotions such as calmness and eagerness.  Also, an
-        * wrong associations of antithetic emotions eg
-          * anger and fear (which were both negatives) or
-          * surprise and anticipation
-            (opposite in terms of meaning but not in terms of polarity)
-        * low polarity scores for compound emotions and the
-        * absence of self-conscious or moral emotions also contributed to the
-      * tested on three sentiment benchmarks (ie, Blitzer dataset, Pang and Lee
-        dataset, and Amazon dataset)
-        * The revisited hourglass model demonstrated the highest scores in all
-        * 94.72%, 93.29%, and 89.85% for the Blitzer, Pang and Lee, and Amazon
-      * Figure 1 illustrated the revised hourglass model
+* Discrete representations place emotions into finite categories
+  * agreed that emotions arose due to how individuals perceived events, and
+    those emotions vary according to their degree of intensity
+  * Ekman (1999) places emotions into six basic categories, ie,
+    happiness, sadness, anger, disgust, surprise, and fear
+    * these emotions are independent of each other, basic, and can produce
+      complex emotions by combinations
+  * Plutchik (1980)
+    * like Ekman, primary emotions, and their combinations: complex emotions
+    * hE 8 primary emotions instead of 6 by Ekman which occured
+      * in opposite pairs. The 8 primary emotions as proposed by Plutchik
+      * joy--sadness, trust--disgust, anger--fear and surprise--anticipation
+  * Orthony, Clore, and Collins (1990, OCC) disagreed with the analogy of ’basic
+    emotions’ as presented by Ekman and Plutchik
+    * 22 emotions, adding 16 emotions to Ekman's essential ones
+    * additional classes of relief, envy, reproach, self-reproach,
+      appreciation, shame, pity, disappointment, admiration, hope,
+      fears-confirmed, grief, gratification, gloating, like and dislike
+* dimensional models place emotions into a uni~ or multi-dimensional space
+  * The spatial order depicts the relationship between emotions and
+    their relative degree of occurrence
+  * Circumplex of Affect proposed by Russell (1980) is a profound example
+    * 2-dimensional circular wheel in an arousal-valence domain
+  * Russell and Mehrabian (1977) also presented a 3-D emotional model
+    * valence, arousal, and dominance with
+      * valence differentiating emotions by pleasantness and unpleasantness,
+      * arousal differentiating emotions by activations and deactivations,
+      * dominance: the degree to which experiencers control their emotions
+  * The Hourglass of Emotions revisited model presented by Susanto+ (2020) is
+    * an improvement over the original Hourglass of Emos by Cambria+ (2012)
+    * both classify unknown concepts based on known features
+    * issues with the Susanto+ proposal
+      * uncanny color associations of the original model, the presence of
+      * neutral and ambiguous emotions, the
+      * absence of polar emotions such as calmness and eagerness
+      * wrong associations of antithetic emotions eg
+        * anger and fear (which were both negatives) or
+        * surprise and anticipation
+          (opposite in terms of meaning but not in terms of polarity)
+      * low polarity scores for compound emotions and the
+      * absence of self-conscious or moral emotions
+    * tested on three sentiment benchmarks
+      (ie, Blitzer dataset, Pang and Lee dataset, and Amazon dataset)
+      * The Cambria+ hourglass model demonstrated the highest scores in all
+      * 94.72%, 93.29%, and 89.85% for the Blitzer, Pang and Lee, and Amazon
+    * Figure 1 illustrated the revised hourglass model
 * The approaches for recognizing emotions from texts as
   * outlined by Acheampong+ (2020)
   * SOTA: deep learning techniques in the lead
   * remaining issues with deep learning
     * extracting the relationship between long term dependent texts
-    * parallel processing of text sequence, and the
+    * parallel processing of text sequence
     * integration of logical reasoning within these techniques
 
 # 3 The concept of transformers
 
 # 4 Some transformer-based models, their pros and cons 7
-
-* This section expounds on some models that have evolved from the transformer
-  architecture, strengths, and weaknesses. The models discussed in this section
 
 ## 4.1 Transformer-XL
 
@@ -102,16 +98,15 @@ Artificial Intelligence Review (2021)
 
 ## 4.7 DistilBERT
 
-# 5 Text-based emotion detection works with transformer-based pre-train 15
+# 5 Text-based emotion detection works with transformer-based pre-training 15
 
-* Yang+ [32], proposed a contextual emotion classifier, EmotionX-KU, which was
+* Yang+ [32]: a contextual emotion classifier, EmotionX-KU, which was
   applied to the EmotionX 2019 challenge shared task
-* Huang+ [37] for detecting emotions in dialogue utterances used the
-  EmotionLines dataset
+* Huang+ [37] detecting emotions in dialogue utterances (EmotionLines dataset)
 * Huang+ [38] competition
 * Malte and Ratadiya [45] using BERT to detect cyber abuse in English and Hindi
 * Park+ [48] learn dimensional valence arousal dimension (VAD) scores
-  from the corpus with categorical emotion labels
+  from a corpus with categorical emotion labels
 * Matero+ [55] assessed suicide risks using multi-level dual-context language
   and BERT
 * Jwa+ [59] designed the BAKE and exBAKE model to automatically detect fake news
@@ -155,7 +150,7 @@ Artificial Intelligence Review (2021)
 * XLNet significantly outperforms other BERT variants in related NLP tasks
 * a robust semi-supervised learning architecture could be efficient for an
   in-depth exploration of this available data [107]
-  * 107. A. Hussain and E. Cambria,
+  * 107 A Hussain and E Cambria,
     Semi-supervised learning for big social data analysis
     Neurocomputing, vol. 275, pp. 1662–1673, 2018
 * GPT possesses lexical robustness and is SOTA in related tasks

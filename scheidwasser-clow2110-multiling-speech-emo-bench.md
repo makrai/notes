@@ -4,13 +4,14 @@ Submitted to ICASSP 2022 arXiv:2110.03414 [cs.SD]
 
 setup instructions, evaluation pipelines & examples, is freely available online
 
-* Recently developments in speech emotion recognition (SER)
-  * often leverage deep neural networks (DNNs)
+# Abstract
+
+* speech emotion recognition (SER) recently with deep neural networks (DNNs)
   * Comparison difficult <~ different datasets and evaluation protocols
-* we present the Speech Emotion Recognition Adaptation Benchmark (SERAB), a
+* we present the Speech Emotion Recognition Adaptation Benchmark (SERAB)
   * for utterance-level SER
   * nine datasets for SER in six languages
-  * the datasets have different sizes and numbers of emotional classes, the
+  * the datasets have different sizes and numbers of emotional classes
 * We evaluate a selection of standard hand-crafted feature sets and SOTA DNNs
   * using only a subset of the data included in SERAB can result in biased
     evaluation, while compliance with the proposed protocol can circumvent this

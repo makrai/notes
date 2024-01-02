@@ -18,15 +18,15 @@ INTERSPEECH 2022
 # Conclusion
 
 * We presented a three-stage probing methodology for quantifying the dependence
-  * we analyse the behaviour of a recent SOTA model
+* we analyse the behaviour of a recent SOTA model
 * the success for the valence dimension can be partially attributed to
-  linguistic knowledge encoded in their self-attention layers
+  linguistic knowledge encoded in the self-attention layers
 * we uncover a potentially spurious correlation between valence and negations
   * could hamper performance in real-world applications
 * Future work
   * expanding the set of probing features
   * emotional voice conversion [33] to control the emotional expressivity of
     synthesised samples as another parameter [34]
-    * K. Zhou, B. Sisman, R. Liu, and H. Li, 
-      “Emotional voice conversion: Theory, databases and esd,” 
-      Speech Communication, vol. 137, pp. 1–18, 2022.
+    * K Zhou, B Sisman, R Liu, and H Li, 
+      “Emotional voice conversion: Theory, databases and ESD,” 
+      Speech Communication, vol. 137, pp. 1–18, 2022

@@ -1,4 +1,4 @@
-An Analysis of Annotated Corpora for Emotion Classification in Text
+Bostan, Roman KlingerAn Analysis of Annotated Corpora for Emotion Classification in Text
 Laura-Ana-Maria Bostan, Roman Klinger
 COLING 2018
 
@@ -10,8 +10,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 * datasets annotated and published for classification of emotions differ
   * different annotation schemata
-    * discrete label sets, including joy, anger, fear, or sadness or
-    * continuous values including valence, or arousal
+    * discrete label sets eg {joy, anger, fear, sadness}
+    * continuous values eg {valence, arousal}
   * the domain, and,
   * guidelines and schemata
   * the file formats
@@ -45,10 +45,9 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   * crowdsourcing, self-reporting, expert-based, distant labeling
 * we perform cross-corpus experiments by training classifiers on each dataset
   and evaluating them on others
-* contributions are therefore
+* contributions
   * describe existing resources,
-  * evaluate which SOTA classifiers perform well when trained on one dataset
-    and applied on another,
+  * evaluate which SOTA classifiers perform well in a cross-dataset setup
   * evaluate which datasets generalize best to other domains, and
   * compare the datasets qualitatively and quantitatively
 * We aim at keeping the unified corpus up to date in the future
@@ -61,7 +60,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     Language, emotion, and the emotions: A computational introduction.
     Language and Linguistics Compass, 12(6):e12279
 
-## 2.1 differences in psychological models and annotation schemata,
+## 2.1 Differences in psychological models and annotation schemata,
 
 * still debated in psychology (Barrett+, 2018; Cowen and Keltner, 2018)
   * discrete and finite sets of emotions (categorical models) and
@@ -71,20 +70,21 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Suttles and Ide (2013), Meo and Sulis 2105(2017), and Abdul-Mageed and Ungar
   (2017) follow the Wheel of Emotion (Plutchik, 1980; Plutchik, 2001)
   * emotions as a discrete set of eight basic emotions in four opposing pairs:
-    joy–sadness, anger–fear, trust–disgust, and anticipation–surprise, together
-    with emotion mixtures
+    joy–sadness, anger–fear, trust–disgust, and anticipation–surprise,
+    together with emotion mixtures
 * Dimensional models were more recently adopted in NLP
   (Preoţiuc-Pietro+, 2016; Buechel and Hahn, 2017a; Buechel and Hahn, 2017b)
-  * The circumplex model (Russell and Mehrabian, 1977) puts affective states
-    into a vector space of valence (corresponding to sentiment/polarity),
-    arousal (corresponding to a degree of calmness or excitement), and
-    dominance (perceived degree of control over a given situation)
+  * The circumplex model (Russell and Mehrabian, 1977)
+    puts affective states into a vector space of 
+    * valence (corresponding to sentiment/polarity),
+    * arousal (corresponding to a degree of calmness or excitement), and
+    * dominance (perceived degree of control over a given situation)
   * Any emotion is a linear combination of these
 
 ## 2.2 annotation procedures (Section 2.2), different
 
 * expert annotation (Aman and Szpakowicz, 2007; Strapparava and Mihalcea, 2007;
-  Ghazi+, 2015; Li+, 2017; Schuff+, 2017; Li+, 2017).  However, having an
+  Ghazi+, 2015; Li+, 2017; Schuff+, 2017; Li+, 2017)
 * ISEAR dataset: "self reporting"
   * subjects are asked to describe situations associated with a specific
     emotion (Scherer and Wallbott, 1994). This approach can be considered an
@@ -94,20 +94,19 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     successfully acquired with this approach, eg the dataset released by
     Crowdflower for Cortana3 or the datasets constructed by Milnea+ (2015) and
     Lapitan+ (2016)
-* Mohammad (2012) designs two detailed online questionnaires and annotate
-  tweets by crowdsourcing
+* Mohammad (2012) designs two detailed online questionnaires and
+  annotate tweets by crowdsourcing
 * social networks -> distant supervision (aka self-labeling in this context),
-  (Mohammad and Kiritchenko, 2015; Abdul-Mageed and Ungar, 2017; De Choudhury+,
-  2012; Liu+, 2017)
+  (Mohammad and Kiritchenko, 2015; Abdul-Mageed and Ungar, 2017;
+  De Choudhury+, 2012; Liu+, 2017)
   * Twitter: one could add a “#joy” hashtag to a happy tweet or on
   * Facebook: one could tag personal posts with a “feeling” and people can show
     an emotional “surprised reaction”. In this last example, two levels of
     * ie both the reader’s and the writer’s emotional state.  Accessing this
 * More challenging is to acquire such data for other domains
 * distinguish between writers’ and readers’ emo (Buechel & Hahn 2017a, 2017b)
-* some of these approaches exist in parallel to previous research in assessing
-  emotion states of people, despite the fact that standardized psychological
-  instruments exist (Bradley and Lang, 1994)
+* some of these assessment approaches exist in parallel to previous research in 
+* nL standardized psychological instruments exist (Bradley and Lang, 1994)
 
 ## 2.3 domains and topics (Section 2.3), and different
 
@@ -121,7 +120,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     * eg health, politics (Mohammad, 2012) and stock markets (Bollen+, 2011)
 * Aman and Szpakowicz (2007) use blog posts, sampled without taking a specific
   * identify the emotion, category, intensity and cue words and phrases
-* Mishne and de Rijke (2005), Balog+  (2006) and Nguyen+ (2014) works on
+* Mishne and de Rijke (2005), Balog+ (2006) and Nguyen+ (2014) works on
   LiveJournal data to develop predictive models for moods
 * social media has been a subject of research
   * Mohammad+ (2015) and Mohammad and Bravo-Marquez (2017b) annotate electoral
@@ -165,7 +164,6 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   * NRC Word-Emotion Association Lexicon (Mohammad+, 2013), which uses the
     eight basic emotions (Plutchik, 1980)
 * Warriner+ (2013) use crowdsourcing to assign values of VAD (Russell, 1980)
-  Another related category of lexical resources which has been used for emotion
 * concreteness and abstractness (Köper+, 2017)
   * Brysbaert+ (2014) publish a lexicon based on crowdsourcing, where the task
     was to assign a rating from 1 to 5 of the concreteness of 40,000 words
@@ -188,7 +186,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     results with the most balanced precision and recall
   * Abdul-Mageed and Ungar (2017) claim the highest F1 following Plutchik’s
     emotion model with gated recurrent unit networks (Chung+, 2015)
-* transfer learning; to make use of similar resources and then transfer the
+* transfer learning; to make use of similar resources and then transfer
   * Felbo+ (2017) present a neural network model trained on emoticons which is
     * transfered to sentiment, sarcasm, and emotions
 
@@ -329,12 +327,12 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * distribution of labels is different in the corpora. Table 2
   * before and after having applied the mapping to a unique set of emotions
     (see Table 4 in the Appendix A)
-  * In many corpora, joy is the domin, followed by sadness, surprise, anger
-    * Exceptions are SSEC, Electoral-Tweets, and EmoInt, in which negative
-      emotions are more frequent
+  * In many corpora, `joy` is the domin, followed by `sadness, surprise, anger`
+    * Exceptions are SSEC, Electoral-Tweets, and EmoInt, 
+      in which negative emotions are more frequent
       * SSEC, this is because of its origin as a stance dataset
       * Electoral-Tweets shows a polarizing nature of political debates with
-        disgust and anger being more common
+        `disgust` and `anger` being more common
 * Figure 1 shows a quantitative similarity comparison of the data
   * We represent each dataset by its term distribution, taking the top 5,000
     most common words from each dataset and calculating the cosine similarity
@@ -343,8 +341,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     * ie EmoInt and CrowdFlower are the most similar to TEC
     * exception of SSEC, which is the most dissimilar to the other tweet dsets
   * DailyDialogs is more similar to the tweets than to ISEAR and Blogs
-* The column All stands for the union of all datasets except the one that is
-  being compared to
+* column `All` stands for
+  the union of all datasets except the one that is being compared to
   * the most dissimilar is
     * AffectiveText
       * a small dataset compared to the tweet-based corpora
@@ -361,14 +359,14 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   * Where availble from the original publication, we follow proposed mappings
     (eg Electoral-Tweets with 19 emotions and a mapping to Plutchik’s)
   * Table 4 in Appendix A summarizes the mapping
-  * We include valence, arousal, and dominance where annotated, however, we
+  * We include valence, arousal, and dominance where annotated
     * we do not map the categorical emotion models onto the dimensional ones
 * Each instance in the unified dataset contains, in addition, a
   * unique id, the source corpus name, the text, and an assignment of a
   * real number to each of the 11 emotion variables
     * In most datasets, each instance is only annotated discretely with single
-      * (exceptions are SSEC and AffectiveText).  Therefore, most instances have
-    * multi-labeled datasets, several emotions can be marked
+      * exceptions are SSEC and AffectiveText
+    * multi-labeled datasets: several emotions can be marked
     * For datasets with annotated emotion intensity, values can range 0..1
     * multiple annotator information: we follow the authors' recommendations ie
       * SSEC: accepting a label if at least one annotator assigned it. For
@@ -431,7 +429,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
       * In addition, manual inspection shows that this data is comparably noisy
       * generally worse performance on Twitter data than on most other domains
 * as for annotation procedures: these experiments allow almost for no judgement
-  * most of the datasets use expert annotation and we only have few examples
+  * most of the datasets use expert annotation
   * the crowdsourced datasets are more difficult: might be due to a more noise
 
 ### Cross-corpus emotion classification

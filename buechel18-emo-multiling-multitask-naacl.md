@@ -80,7 +80,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 # 2 Related work 2
 
-## Emotion Representation and Data Sets
+## 2.1 Emotion Representation and Data Sets
 
 * Psychological models of emotion can typically be subdivided into
   * discrete (or categorical) and
@@ -95,8 +95,8 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
         * Dominance (perceived degree of control over a (social) situation)
       * Many contributions though omit Dominance (the VA model, Russell, 1980)
       * we will still use the term “VAD” to jointly refer to both variants
-* resources (also called “emotion lexicons”) have emerged from
-  psychological/NLP research labs for diverse languages
+* emotion lexicons have emerged from psychological/NLP research labs
+  for diverse languages
   * listed in Table 1 and Buechel and Hahn (2018)
     Sven Buechel and Udo Hahn
     Representation mapping:
@@ -108,9 +108,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * emotion prediction can be seen as a generalization over classical
   2. diversity of available emotion lexicons with VAD encodings is largest
 
-## Word Embeddings
+## 2.2 Word Embeddings
 
-* Word2vec (with its variants SGNS and CBOW) features an extremely trimmed NN
+* Word2vec (with its variants SGNS and CBOW): an extremely trimmed NN
 * FastText is a derivative of Word2vec, also incorporating sub-words
 * GloVe trains word vectors directly on a word co-occurrence matrix
 * Somewhat similar, SVD-PPMI (Levy+ 2015)
@@ -124,9 +124,12 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       LREC 2018
   * Additionally, the English embedding model from Sedoc+ (2017, Giga), a
     strongly related contribution (see below)
+    João Sedoc, Daniel Preoţiuc-Pietro, and Lyle H. Ungar
+    Predicting emotional word ratings using distri reprs and signed clustering
+    EACL 2017 Valencia, Spain, April 3- 7, 2017, volume 2: Short Papers 564–571
     * trained on the English Gigaword corpus (Parker+ 2011)
 
-## Word-Level Prediction, the one we focus on in this contribution 3
+## 2.3 Word-Level Prediction, the one we focus on in this contribution 3
 
 * polarity
   * based on its PMI to a set of positive and negative seed words,
@@ -155,7 +158,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     with one hidden layer in combination with boosting (Du and Zhang, 2016)
 * supervised, Li+ (2017) propose ridge regression, again using word embeddings
 
-## Sentence-Level and Text-Level Prediction 4
+## 2.4 Sentence-Level and Text-Level Prediction 4
 
 * DL approaches
 * fully established as the method of choice

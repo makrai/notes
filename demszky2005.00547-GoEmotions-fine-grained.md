@@ -4,11 +4,10 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 # Abstract
 
-* Understanding emotion expressed in language has a wide range of applications,
-  * empathetic chatbots to detecting harmful online behavior
+* Understand emo for eg empathetic chatbots or detecting harmful online behav
 * large-scale datasets with a fine-grained typology
   * adaptable to multiple
-* We introduce GoEmotions, the largest manually annotated dataset of
+* We introduce GoEmotions, the largest manually annotated dataset
   * 58k English Reddit comments, labeled for 27 emotion categories or Neutral
   * We demonstrate the high quality of the annotations
     via Principal Preserved Component Analysis
@@ -166,12 +165,12 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * Unlike Principal Component Analysis (PCA), PPCA examines the cross-covariance
   between datasets
   rather than the variance-covariance matrix within a single dataset
-  * We obtain the principal preserved components (PPCs) of two datasets
-    (matrices) X, Y ∈ RN ×|E| , where
-    N is the number of examples and
-    |E| is the number of emotions,
-    by calculating the eigenvectors of the symmetrized cross covariance matrix
-    X T Y + Y T X
+* We obtain the principal preserved components (PPCs) of two datasets
+  (matrices) X, Y ∈ RN ×|E| , where
+  N is the number of examples and
+  |E| is the number of emotions,
+  by calculating the eigenvectors of the symmetrized cross covariance matrix
+  X T Y + Y T X
 
 ## 4.4 Linguistic Correlates of Emotions
 
@@ -199,7 +198,9 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * sentiment level: 4 categories – positive, negative, ambiguous and Neutral –
   * Neutral category intact, and the rest of the mapping as shown in Figure 2
 * Ekman level: the Neutral label and the following 6 groups:
-  * anger (anger, annoyance, disapproval), disgust (disgust),
-    fear (fear, nervousness), joy (all positive emotions),
-    sadness (sadness, disappointment, embarrassment, grief, remorse) and
-    surprise (all ambiguous emotions)
+  * anger (anger, annoyance, disapproval), 
+  * disgust (disgust),
+  * fear (fear, nervousness), 
+  * joy (all positive emotions),
+  * sadness (sadness, disappointment, embarrassment, grief, remorse) and
+  * surprise (all ambiguous emotions)

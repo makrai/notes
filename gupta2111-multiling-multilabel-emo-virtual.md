@@ -2,7 +2,7 @@ Multilingual and Multilabel Emotion Recognition using Virtual Adversarial Train
 Vikram Gupta
 arXiv:2111.06181 [cs.CL]
 
-* Virtual Adversarial Training (VAT) has been effective in learning robust mods
+* Virtual Adversarial Training (VAT) has been effective in robust learning
   * supervised and semi-supervised settings for both computer vision and NLP
   * not yet for multilingual and multilabel text classification
 * we explore VAT for multilabel emotion recognition with a focus on leveraging

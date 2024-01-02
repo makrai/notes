@@ -17,10 +17,10 @@ Behav Sci (Basel). 2023 Feb; 13(2): 179
   * during such a stressful event, humor would have increased the positive
     effect of the approach coping style on mental health and
     * reduced the negative effect of the avoidance coping style.  Based on this
-* we: a cross-sectional study with a moderation analysis in which we assessed
-  the interaction of humor with both approach-based and avoidance-based coping
-  styles on perceived stress in a large sample of Italian participants
-  collected in April and May 2021
+* we: a cross-sectional study with a moderation analysis in which 
+  * we assessed the interaction of humor with both approach-based and
+    avoidance-based coping styles on perceived stress
+    in a large sample of Italian participants collected in April and May 2021
   * limitations related to sampling and study design, the
   * results partially support our hypothesis, as we observed that
     humor had a significant moderating effect on the relationship between

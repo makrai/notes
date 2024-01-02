@@ -12,7 +12,7 @@ Electronics 2023, 12(2), 328; https://doi.org/10.3390/electronics12020328
     using linear attention mechanisms with kernel functions
 * experiments on two datasets of
   Distress Analysis Interview Corpus-Wizard of OZ (DAIC-WOZ) and
-  Multi-modal Open Dataset for Mental-disorder Analysis (MODMA). The
+  Multi-modal Open Dataset for Mental-disorder Analysis (MODMA)
 * better performance compared with the SOTA strategies
 
 # 1. Introduction
