@@ -4,11 +4,11 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
 
 # Abstract
 
-* emotion mining broadening the potential market already proven for opinion min
+* emotion mining broadening the market already proven for opinion mining
 * we apply Multilingual Sentiment Analysis to emotions
-* experiments involving machine translations over corpora originally written in
-  two languages
-* Our experimental framework  assesses variations on
+* experiments involving machine translations
+  trained over corpora originally written in two languages
+* Our experimental framework assesses variations on
   * the language of the original text and its translations;
   * strategies to combine multiple languages to overcome losses due to translat
   * options for data pre-processing

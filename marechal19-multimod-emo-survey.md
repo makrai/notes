@@ -14,8 +14,8 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
   acoustic characteristics and emotions expressed in the text
   * body signals and facial expressions recorded in real-time by sensors and
     cameras can be associated with predetermined emotions
-* merge the multimodal information retrieved by these devices with information
-  from analysis of emotions and intensity in text
+* merge the multimodal information retrieved by these devices with
+  information from analysis of emotions and intensity in text
 * Mehrabian (1967) established the 7%– 38%–55% rule, also known as the “3V”
   * 7/38/55% of the communication is verbal/vocal/visual [1]
 * emotion detection was born during the sixties/seventies
@@ -27,8 +27,7 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
   * emotion can be modeled using the nonlinear sigmoid function
   * ambient intelligence (AMI), virtual reality (VR) and augmented reality (AR)
 * eg automotive field
-  * an on-board computer that is able to detect confusion, interest or fatigue
-    can increase safety
+  * an on-board computer to detect confusion, interest or fatigue => safety
   * AutoEmotive (MIT Media Lab) is a prototype equipped with sensors and a
     camera placed on the steering wheel [5]
   * When the need arises, he puts a background music, changes the temperature

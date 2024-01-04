@@ -144,8 +144,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
       * polarity information is propagated through the graph
   * their evaluation,
     * Densifier seems to be superior overall, yet
-    * SentProp produces competitive only when the seed lexicon or the corpus
-      the word embeddings are trained on is very small
+    * SentProp produces competitive only when the resource is very small
+      * resource: the seed lexicon or
+        the corpus the word embeddings are trained on
 * word emotion induction
   * graph-based
     * very similar approach to SentProp has been proposed by Wang+ (2016a)
@@ -156,14 +157,13 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * IALP 2016 Shared Task on Chinese word emotion induction (Yu+ 2016b)
   * the best system of the employed a simple feed-forward neural network (FFNN)
     with one hidden layer in combination with boosting (Du and Zhang, 2016)
-* supervised, Li+ (2017) propose ridge regression, again using word embeddings
+* supervised: Li+ (2017) propose ridge regression, again using word embeddings
 
 ## 2.4 Sentence-Level and Text-Level Prediction 4
 
 * DL approaches
-* fully established as the method of choice
-  (Wang+ 2016b; Abdul-Mageed and Ungar, 2017; Felbo+ 2017;
-  Mohammad and Bravo-Marquez, 2017)
+* fully established as the method of choice (Wang+ 2016b;
+  Abdul-Mageed and Ungar, 2017; Felbo+ 2017; Mohammad and Bravo-Marquez, 2017)
 * cannot easily be transferred to solve word emotion
 * adapted to sequential or spatially arranged input data
   * sequential (typical for RNN, LSTM, GRNN and related architectures) or
@@ -188,7 +188,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * one of the earliest contributions in the field, Turney and Littman (2003)
 * a simple PMI-based approach to determine the semantic polarity of a word w
-`SP T L (w) = \sum pmi(w, s) − \sum pmi(w, s) `
+`SP T L (w) = \sum pmi(w, s) − \sum pmi(w, s)`
 * still popular today (Köper and Schulte im Walde, 2016),
 * we here provide a novel modification for adapting to vectors
   1. we replace PMI-based association by their cos similarity `sim`
@@ -227,12 +227,14 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 
 * We use leaky ReLU activation (LReLU) as nonlinearity (Maas+ 2013)
 * dropout (Srivastava+ 2014) is applied during training
-* We train for 15, 000 iterations (well beyond convergence on each data set)
-* Adam optimizer (Kingma and Ba, 2015) of .001 base learning rate,
-  batch size of 128 and Mean-Squared-Error loss.  The
-  weights are initialized from a normal distri with a standard deviation .001
-  biases are uniformly initialized as .01
-  Tensorflow is used for implementation
+* 15, 000 iterations (well beyond convergence on each data set)
+* Adam optimizer (Kingma and Ba, 2015) 
+  * .001 base learning rate,
+  * batch size of 128 
+  * Mean-Squared-Error loss
+  * weights are initialized from a normal distri with a standard deviation .001
+  * biases are uniformly initialized as .01
+  * Tensorflow is used for implementation
 
 # 4 Results 7
 
@@ -241,7 +243,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * we compare our proposed MTLNN model in a large-scale evaluation
 * Performance figures will be measured as Pearson correlation (r)
 
-## 4.1 Single-Task vs. Multi-Task Learning
+## 4.1 Single-Task vs Multi-Task Learning
 
 * each combination of model and data set displays a satisfactory performance of
   at least r ≈ .75 after 15,000 steps compared to previous work (see below)
@@ -251,9 +253,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * the MTLNN model does indeed outperform the single task model on both dsets
   * gain is larger on smaller data sets
   * regularizing effect, since the SepNN model shows signs of overfitting
-    * SepNN needs fewer training steps before convergence, the
+    * SepNN needs fewer training steps before convergence
   * Yet, even when the separate model does not overfit (EN+), MTLNN better
-  * MTLNN model converging in about a minute on a middle-class GPU). This is
+  * MTLNN model converging in about a minute on a middle-class GPU
     * only about a third as many parameters as the separate model SepNN
 
 ## 4.2 Comparison against Reference Methods
@@ -262,15 +264,14 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
   * the embedding model provided by Sedoc+ (2017) will be used separately
 * For each of these conditions, we performed a 10-fold cross-validation (CV)
   for each of the 6 methods presented in Section 3
-  * each method is presented with the identical data splits. 8
-    * paired t-tests
+  * each method is presented with the identical data splits, paired t-tests
   * the methods we compare ourselves against comprise the current SOTA in both
-    polarity and emotion induction (as described in Section 2).  8
-* Valence and Arousal for ES+ and ZH, VAD for the others
+    polarity and emotion induction (as described in Section 2)
+* Valence and Arousal for ES+ [?] and ZH, VAD for the others
 * our proposed MTLNN model outperforms all other approaches in each condition
-* improvements are especially pronounced on smaller data sets containing one up
-  to two thousand entries (EN, ES, IT, PT, ID) with close to 10%-points
-  improvement over the respective second-best system
+* improvements are especially pronounced on smaller data sets
+  containing 1--2 thousand entries (EN, ES, IT, PT, ID) 
+  * ~10%-points improvement over the respective second-best system
 * relative ordering of the affective dimensions,
   * Valence dimension are usually much higher than for Arousal and Dominance
     * in line with former studies (Sedoc+ 2017; Li+ 2017)
@@ -278,7 +279,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
     * eg to EN, EN+ and IT: V > D \approx avg > A
     * eg PL, NL and ID, less clear though Valence still stands out
     * We observe the same general pattern for the reference methods
-* comparison to Sedoc+ (2017), arguably one of most related contributions, they
+* comparison to Sedoc+ (2017), arguably one of most related contributions
   * MTLNN using the Common model achieves about 10%points better on VA
   * using their smaller embedding model, MTLNN still clearly outperforms
 * comparison to human performance, MTLNN achieves also very strong results

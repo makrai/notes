@@ -21,51 +21,51 @@ setup instructions, evaluation pipelines & examples, is freely available online
 * computational paralinguistics, the analysis of non-verbal elements of speech
 * applications: human-computer interaction [1], healthcare [2], & public safety
 * hand-engineered features has proven effective in tackling various SER-related
-  * based on acoustic [4] or linguistic descriptors [5]. More recently,
-* deep neural networks (DNNs) trained in self-supervised fashion were able to
+  * based on acoustic [4] or linguistic descriptors [5]
+* deep neural networks (DNNs) trained in self-supervised fashion
   * fixed representation suitable for a range of audio and speech proc tasks
-  * transfer learned knowledge from a large, unlabeled dataset to downstream
-    tasks with less task-specific data available
+  * transfer learned knowledge from a large, unlabeled dataset
+    to downstream tasks with less task-specific data available
 * estimated performance strongly depends on the evaluation protocol
   * open-source benchmarks, typically composed of fixed dataset(s) and
     evaluation pipelines, instrumental for comparisons of different methods
   * other domain
     * In visual object recognition, ImageNet [8] has established itself as the
       de facto image dataset and benchmark for deep learning models
-    * In natural language processing (NLP), GLUE [9] is a widely used
-      benchmark, with nine different NLU tasks encompassing various characteris
+    * In NLP, GLUE [9] is a widely used benchmark, with 9 NLU tasks
       (eg, sentiment analysis, paraphrase, and inference tasks)
 * audio benchmark
-  * As one of the largest audio datasets available, AudioSet [10] is commonly
-    used for self-supervised pre-training, as well as a benchmarking method for
-    audio event classification [6, 7, 11]. A
-  *  HEAR challenge [12]  evaluating general-purpose audio representations and
-     extends the concept underlying AudioSet by including additional tasks
+  * As one of the largest audio datasets, AudioSet [10] is commonly used for 
+    * self-supervised pre-training, as well as a 
+    * benchmarking method for audio event classification [6, 7, 11]
+  * HEAR challenge [12] evaluating general-purpose audio representations and
+    extends the concept underlying AudioSet by including additional tasks
   * speech representation learning,
-    * NOSS [6] platform for evaluating speech-specific feature extractors. It
+    * NOSS [6] platform for evaluating speech-specific feature extractors
       * non-semantic speech processing problems, such as
         speaker and language identification, as well as
       * two SER tasks (CREMA-D [13] and SAVEE [14])
 * no multi-task SER benchmark yet
-  * [15]'s SER-specific benchmarking framework, it has shortcomings
+  * [15]'s SER-specific benchmarking framework has shortcomings
     * only includes a single dataset, implying the
-      lack of diversity in terms of task difficulty, amount of task-specific
-      data, or data acquisition setup (eg, recording equipment and conditions)
+    * lack of diversity:
+    * task difficulty, amount of task-specific data, or
+    * data acquisition setup (eg, recording equipment and conditions)
     * monolingual, with all speech material in English
       * As a paralinguistic cue, robust embeddings for speech emotion
         recognition should perform well across different languages
-* we introduce the Speech Emotion Recognition Adaptation Benchmark (SERAB), a
+* we introduce the Speech Emotion Recognition Adaptation Benchmark (SERAB)
   * nine SER tasks spanning six languages,
     different dataset sizes and emotion categories
-    * baselines have different performance on diff datasets, and illustrate the
-  * we set up a custom evaluation pipeline.  We employed the framework to
+    * baselines have different performance on diff datasets
+  * we set up a custom evaluation pipeline
   * we evaluate
     * recent SOTA pre-trained DNNs for speech/audio feat extract [6, 7, 11, 16]
     * a classic set of handcrafted features
       commonly used in computational paralinguistics [4]
     * see Conclusions
 * we also propose a novel Transformer-based model, which
-  * performs on par with SOTA approaches. Results obtained for a range of
+  * performs on par with SOTA approaches
 
 # 2. Speech emotion recognition adaptation benchmark (serab)
 

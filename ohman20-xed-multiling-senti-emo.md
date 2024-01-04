@@ -19,10 +19,10 @@ https://github.com/Helsinki-NLP/XED
 # 1 Intro
 
 * XED: a cross-lingual fine-grained sentence-level emotion & sentiment dataset
-  * parallel manually annotated data for English and Finnish, with additional
-    parallel datasets of varying sizes for a total of 32 languages created by
-    annotation projection
-  * We use Plutchik (1980)’s Wheel of Emotions  as our annotation scheme
+  * parallel manually annotated data for English and Finnish
+  * parallel datasets of varying sizes for a total of 32 languages
+    created by annotation projection
+  * We use Plutchik (1980)’s Wheel of Emotions as our annotation scheme
     (anger, anticipation, disgust, fear, joy, sadness, surprise, trust)
     with the addition of neutral
     on movie subtitle data from OPUS (Lison and Tiedemann, 2016)
@@ -63,11 +63,10 @@ https://github.com/Helsinki-NLP/XED
   * only two are multilabel
     * AffectiveText (Strapparava and Mihalcea, 2007)
     * SSEC (Schuff+ 2017)
-* annotation scheme: Nearly all of these datasets use an annotation scheme
-  based on Ekman (Ekman, 1971; Ekman, 1992) with many adding a few labels
-  often following Plutchik’s theory of emotions (Plutchik, 1980)
+* annotation scheme: Nearly all of these datasets based on Ekman (1971; 1992)
+  * many adding a few labels often following Plutchik’s theory of emo (1980)
   * A typical emotion dataset consists of 6-8 categories
-  * The exception is CrowdFlower with 14 categories, and those
+  * The exception is CrowdFlower with 14 categories
     * created in 2016 but has since been acquired by different companies at
       least twice and is now hard to find. It is currently owned by Appen
   * not mentioned in Bostan+ are eg the
@@ -103,7 +102,7 @@ https://github.com/Helsinki-NLP/XED
   * On the other hand,
     contextual annotations are less frustrating for the annotator and
     => likely provide more annotations in the same amount of time (Öhman, 2020)
-* table 1 we have gathered some of the most significant emotion datasets
+* table 1: some of the most significant emotion datasets
   * the paper in which the dataset was released (study),
   * source data used (source),
   * model used to obtain the best evaluation scores (model), the
@@ -129,21 +128,20 @@ https://github.com/Helsinki-NLP/XED
 
 * affect categories are quite universal (Cowen+ 2019; Scherer & Wallbott, 1994)
 * they should also be to a large degree retained in translation
-* Annotation projection has shown reliable results in diff NLP and NLU tasks
+* Annotation projection has shown reliable results in some NLP and NLU tasks
   (Kajava+ 2020; Yarowsky+ 2001; Agić+ 2016; Rasooli and Tetreault, 2015)
   * sometimes the only feasible way to produce resources for under-resourced
-    languages. By taking datasets created for high-resource languages and
-    projecting these results on the corresponding items in the under-resourced
-  * using parallel corpora, we can create datasets in as many languages as
+    * taking datasets created for high-resource languages and projecting these
+      results on the corresponding items in the under-resourced
+  * using parallel corpora, we can create datasets in many languages
   * A parallel corpus for multiple languages enables the simultaneous creation
     of resources for multiple languages at a low cost
 * annotator agreement: even with binary or ternary classification schemes,
   human annotators agree only about 70-80% of the time and
   * the more categories there are, the harder (Boland+ 2013; Mozetič+ 2016)
-  * eg DENS dataset (Liu+ 2019), only 21% of their annotations had consensus
-    between all annotators with 73.5% having to resort to majority agreement,
-    and a further 5.5% could not be agreed upon and were left to expert
-    annotators to be resolved
+  * eg DENS dataset (Liu+ 2019), only 21% of their annotations full consensus
+    * 73.5% having to resort to majority agreement,
+    * 5.5% could not be agreed upon and were left to expert annotators
 * Some emotions are also harder to detect, even for humans
   * Demszky+ (2020)
     * admiration, approval, annoyance, gratitude had the highest interrater
@@ -155,12 +153,11 @@ https://github.com/Helsinki-NLP/XED
     * anger and disgust expressed explicitly, and
     * surprise in context
 * Some emotions are also more closely correlated
-  * In Plutchik’s wheel (Plutchik, 1980) related emotions are placed on the
-    same dyad
+  * In Plutchik’s wheel (1980) related emotions are placed on the same dyad
     * eg for anger as a core emotion, there is also
       * rage that is more intense, but highly correlated with anger, and
       * annoyance which is less intense, but equally correlated
-  * map more distinct categories of emotions onto larger wholes; in this case
+  * map more distinct categories of emotions onto larger wholes
     * even more coarsely: map anger to negative
   * This approach has been employed by for example Abdul-Mageed & Ungar (2017)
 
@@ -176,8 +173,7 @@ https://github.com/Helsinki-NLP/XED
   * many under-resourced languages
   * large number of annotations at high granularity, as
     most other similar datasets are annotated at a much coarser granularity
-* movie subtitles as source data means that it is possible to use the XED
-  dataset across multiple domains (eg social media) as the source data is
-  representative of other domains and not as restricted to the domain of the
-  source data (movies) as many other datasets. Perhaps the greatest
-  contribution of all is that, for the first time,
+* movie subtitles as source data means that
+  * possible to use the XED dataset across multiple domains (eg social med)
+    as the source data is representative of other domains and
+    not as restricted to the domain of the source data (movies) as many other

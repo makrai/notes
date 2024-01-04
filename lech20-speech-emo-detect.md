@@ -9,8 +9,8 @@ Front. Comput. Sci., 26 May 2020 | https://doi.org/10.3389/fcomp.2020.00014
   recognizing the emotional aspects of speech irrespective of the semantics
   * humans can efficiently perform this task in speech communication
   * automatically: still an ongoing subject of research
-* create efficient, real-time methods of detecting the emotions of mobile phone
-  users, call center operators and customers, car drivers, pilots
+* create efficient, real-time methods of detecting the emotions of
+  mobile phone users, call center operators and customers, car drivers, pilots
 * Adding emotions to machines has been recognized as
   a critical factor in making machines appear and act in a human-like manner
   (André+ 2004)
@@ -25,9 +25,9 @@ Front. Comput. Sci., 26 May 2020 | https://doi.org/10.3389/fcomp.2020.00014
   * can be overcome by an approach known as transfer learning
   * network pre-trained on extensive data to solve a general classification
   * (fine-tuned) using a small number of available data to solve specific task
-* the most powerful pre-trained neural networks were trained for image
-  classification, to apply these networks to the problem of SER, the speech
-  signal needs to be transformed into an image format (Stolar+ 2017)
+* the most powerful pre-trained neural networks were trained for image classif,
+  to apply these networks to the problem of SER, the speech signal needs to be
+  transformed into an image format (Stolar+ 2017)
 * This study describes
   * steps involved in the speech-to-image transition
   * training and testing procedures, and

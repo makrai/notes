@@ -45,17 +45,17 @@ https://github.com/tobefans/LSSED
       consecutively decode the emotion states of each utterance on IEMOCAP [6]
       and MELD [8]
 * serious overfitting to databases [14– 17]
-* Generally speaking, transfer learning can to a certain extent improve
+* transfer learning can to a certain extent improve
   * Boigne+ [18] points out task-related transfer learning of recognizing
     emotions on small datasets
   * For emotion recognition related task, a good pre-trained model is urgent
     since data collection is very difficult
-  * eg depression detection: there are only about a hundred subjects at most
+  * eg depression detection: there are only =< 100 subjects
   * In our opinion, the pre-trained model from the SER task is more suitable
     for detecting depression, since
     it is more inclined to obtain acoustic features while the model from ASR
     task is prone to extract linguistic features
-* we present LSSED, a challenging large-scale english dataset for SER. It
+* we present LSSED, a challenging large-scale english dataset for SER
   * 147,025 sentences (206 hours and 25 minutes in total) spoken by 820 people
   * release some pre-trained models with speech emotion recognition task
     * since there is currently no non-semantic large-scale pre-training model,
@@ -64,16 +64,16 @@ https://github.com/tobefans/LSSED
 
 ## 2.4. Pre-trained Models
 
-* We firstly select VGG [20] and ResNet [21] for pre-training, which are useful
+* We firstly select VGG [20] and ResNet [21] for pre-training
   * VGG builds a unified and simple structure to deepen the network, while
-    ResNet proposes residual learning to ease the training procedure
+  * ResNet proposes residual learning to ease the training procedure
 * In order to better adapt to the specificity of speech, we propose PyResNet,
   an improved model of ResNet
   * PyResNet is based on ResNet50, ResNet101 or ResNet152
     * Due to the sufficient amount of data
   * the second convolution layer in each layer of ResNet is replaced with a
-    pyramid convolution [22] that can capture multi-scale information to solve
-    the problem of uncertain time position of valid speech information. In
+    pyramid convolution [22] that can capture multi-scale information
+    to solve the problem of uncertain time position of valid speech info
   * we replaced the GAP layer with average pooling layer only in the time dim,
     to make the model insensitive to time and preserve the frequency info
 
@@ -90,16 +90,16 @@ https://github.com/tobefans/LSSED
   * configuration of Our PyResNet and the backbone models
     * 60 epochs with batch size of 256 through the SGD optimizer with a
     * weight decay of 0.001
-    * learning rate (initialized to 0.01) drops to 10% of the original every 20
-      epochs
-  * four emotion categories, including angry, neutral, happy and sad
+    * learning rate (initialized to 0.01) drops to 10% of the original
+      every 20 epochs
+  * 4 emotion categories, including angry, neutral, happy and sad
     * Consistent with the current mainstream SER experiments
 * The results are shown in table 5
   * the performance of existing algorithms on large-scale LSSED is not satisfac
   * the accuracy (weighted and unweighted) of these algorithms is even lower
     than that of the basic VGG and ResNet models
-  * our PyResNet achieves better results than the basic backbone models. This
-  * LSSED still has great challenges which means that
+  * our PyResNet achieves better results than the basic backbone models
+  * LSSED still poses great challenges which means that
     speech emotion recognition is still a long way from being widely applicable
 * Confusion matrices of
   both MTS-3 branches and PyResNet that use ResNet152 as the backbone is shown
@@ -108,13 +108,13 @@ https://github.com/tobefans/LSSED
     * PyResNet directly uses
       multiple different kernels with more powerful modeling capabilities. Fig 2
   * neutral samples have a high probability of being correctly predicted, which
-    is also the most common emotion
+    * the most common emotion
   * hE both models have a prediction bias problem for the neutral class
     * We speculate that this is because each individual has different neutral
       standards
   * future work: take into account the resting (neutral) state of each indiv
   * our PyResNet has a significant improvement in the angry, happy, and sad
-    categories which are less predictable
+    * theses categories are less predictable
 
 ## 3.3. Pre-trained Model in Downstream Task
 
@@ -126,15 +126,14 @@ https://github.com/tobefans/LSSED
   * idea: use a pre-trained model with sufficient prior knowledge
 * our experiments are carried out on
   the DAIC-WOZ depression database, which is
-  * a subset of the Distress Analysis Interview Corpus (DAIC) [26]. There are
+  * a subset of the Distress Analysis Interview Corpus (DAIC) [26]
   * 107/35/47 subjects in the training/development/test set the test set
-  * Each subject will be interviewed by an animated virtual interviewer and
-    recorded with video and audio equipments
-  * annotated with the start time, end time and depression (or not) of each
-    sentence
+  * Each subject interviewed by an animated virtual interviewer and
+  * recorded with video and audio equipments
+  * each sentence annotated with the start time, end time, & depression/not
 * We choose SER task and ASR task for transfer
   * pre-trained models
-    * For SER, we use the pretrained PyResNet with ResNet152 as a backbone. For
+    * For SER, we use the pretrained PyResNet with ResNet152 as a backbone
     * ASR, we use ESPNet [27], which is an end-to-end encoder-decoder structure
   * The results of the experiment are shown in Table 6
     * transfer based on SER is better than that based on ASR

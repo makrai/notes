@@ -121,7 +121,7 @@ arXiv:1901.02839 [cs.HC]
 ## 2.3 annotation tools
 
 * ANVIL [33], ATLAS [34], Ikannotate [35], EmoWheel (Geneva emotion wheel)
-  [36], FEELtrace [37], Gtrace 1 , ANNEMO [38], and
+  [36], FEELtrace [37], Gtrace 1, ANNEMO [38], and
   the frame by frame Valence/Arousal Online Annotation Tool [39]
   * ANVIL: The Video Annotation Research Tool
     http://www.anvil-software.de
@@ -169,8 +169,8 @@ arXiv:1901.02839 [cs.HC]
     * [39] J. Kossaifi, G. Tzimiropoulos, S. Todorovic, and M. Pantic,
       “Afew-VA database for valence and arousal estimation in-the-wild,”
       Image and Vision Computing, vol. 65, pp. 23 – 36, 2017
-* mostly controlled settings, constrained dyadic task, low demographic
-  variability, and one language – mostly English
+* mostly controlled settings, constrained dyadic task,
+  low demographic variability, and one language – mostly English
   * Predominance of one language in the corpora limits usability of the
     database for cross-lingual, cross-cultural study of emotion recognition
 * Table 1 presents a summarized overview of the surveyed databases containing
@@ -190,7 +190,7 @@ arXiv:1901.02839 [cs.HC]
 
 ## 4.3 Experimental results
 
-* Here we present the experimental results for action unit detection and
+* this sec: the experimental results for action unit detection and
   valence, arousal and liking/disliking estimation
 
 ### 4.3.1 Action unit detection
@@ -223,20 +223,19 @@ arXiv:1901.02839 [cs.HC]
   * Results are reported in term of CORR/CCC in Table 12/11
     * In all cases, we report results when training with annotations and
       features obtained using either exclusively audio, video or audio-video
-* for valence, we obtained better results on annotation obtained using
-  exclusively video
+* valence: we got better results on annotation obtained using exclusively video
   * slightly lower when using labels obtained by annotating audio-video, while
   * the worst results were obtained on the labels collected from audio only
   * in line with the recent finding by psychologists that
     valence is much better estimated from video imagery than from audio only,
     * arousal is much better predicted from audio than from video [86], [87]
     * As expected, a fusion of audio-video features increases the results,
-      while audio features are the least helpful, supporting the theory that
-      the face and its deformation is the main medium of communication between
-      humans when it comes to emotions
+      * audio features are the least helpful
+      * supporting the theory that the face and its deformation is the main
+        medium of communication between humans when it comes to emotions
 * models
   * performances of different regression models vary from each other
-  * overall, SVM performs better than RF which in turn outperforms LSTM
+  * overall, SVM perform > RF > LSTM
   * hE, in the experiments on audio features, while
     * Support Vector Machine for Regression (SVR) and Random Forest (RF) are
       expected to perform well for arousal and valence prediction,
@@ -275,7 +274,7 @@ arXiv:1901.02839 [cs.HC]
   * fusion of audio and video features: best results are obtained for arousal
     on culture 2 CCC = 0.501
 * SVR, predictions of valence with video-based annotations outperforms that
-  with audio-based annotations for all cultures except for culture German
+  with audio-based annotations for all cultures except for German
   * predictions of arousal with audio-based labels
     outperforms that with video-based labels for all cultures
     except for culture Hungarian and Serbian
@@ -286,7 +285,7 @@ arXiv:1901.02839 [cs.HC]
 * ReseNet-18 (Table 10) outperforms the other baseline models, as expected,
   particularly when trained by optimizing the CCC directly
   * especially in the case of arousal, which is captured more accurately by
-    deeply learned representations than by hand-crafted features
+    deep representations than by hand-crafted features
   * Valence on the other hand, can be predicted accurately
     from geometric features, encoded by facial landmarks or SIFT features
     * as expected (eg [39])
