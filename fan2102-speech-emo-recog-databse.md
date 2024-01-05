@@ -21,7 +21,7 @@ https://github.com/tobefans/LSSED
 * Although emotion itself is very abstract,
   it still has some obvious intonation characteristics
   * Intuitively, sad voices are generally low-pitched and slow while
-    happy voices are usually the opposite.  Up to now, many algorithms have
+    happy voices are usually the opposite
 * research carried out on SER
   * Schuller+ (2003) applies continuous Hidden Markov Models (HMM) to introduce
     SER with a self-collected speech corpus
@@ -44,7 +44,7 @@ https://github.com/tobefans/LSSED
     * Yeh+ [13] proposes a dialogical emotion decoding algorithm to
       consecutively decode the emotion states of each utterance on IEMOCAP [6]
       and MELD [8]
-* serious overfitting to databases [14– 17]
+* serious overfitting to databases [14–17]
 * transfer learning can to a certain extent improve
   * Boigne+ [18] points out task-related transfer learning of recognizing
     emotions on small datasets
@@ -107,11 +107,10 @@ https://github.com/tobefans/LSSED
     * MTS-3 uses multi-scale kernels derived from one kernel
     * PyResNet directly uses
       multiple different kernels with more powerful modeling capabilities. Fig 2
-  * neutral samples have a high probability of being correctly predicted, which
+  * neutral samples have a high probability of being correctly predicted
     * the most common emotion
   * hE both models have a prediction bias problem for the neutral class
-    * We speculate that this is because each individual has different neutral
-      standards
+    * We speculate: because each individual has different neutral standards
   * future work: take into account the resting (neutral) state of each indiv
   * our PyResNet has a significant improvement in the angry, happy, and sad
     * theses categories are less predictable
@@ -122,7 +121,7 @@ https://github.com/tobefans/LSSED
   * We choose speech-based depression detection as our downstream task
   * high professional requirements =>
     it is very difficult to collect data on patients with depression
-  * currently unsatisfactory, automatic depression detection is
+  * currently unsatisfactory results in automatic depression detection
   * idea: use a pre-trained model with sufficient prior knowledge
 * our experiments are carried out on
   the DAIC-WOZ depression database, which is
@@ -139,10 +138,10 @@ https://github.com/tobefans/LSSED
     * transfer based on SER is better than that based on ASR
       * because the features extracted by ASR are bias towards semantics while
         the features extracted by SER are bias towards acoustics
-* differences in band-width between SER and ASR when framing
-  * ASR/SER generally uses a narrow/wide window length of about 25ms/65ms
-  * more attention to changes in time/freq and has a higher time/freq res
-  * In general, a high time/freq resolution is conducive to extracting
-    semantic/acoustics features from frame by frame
-  => for downstream tasks such as depression detection, the SER pre-trained
-    model with high frequency resolution and smaller gap may be a better choice
+  * differences in band-width between SER and ASR when framing
+    * ASR/SER generally uses a narrow/wide window length of about 25ms/65ms
+    * more attention to changes in time/freq and has a higher time/freq res
+    * In general, a high time/freq resolution is conducive to extracting
+      semantic/acoustics features from frame by frame
+    => for downstream tasks such as depression detection, the SER pre-trained
+      model with high frequency resolution and smaller gap may be a better choice

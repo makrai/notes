@@ -1,6 +1,7 @@
 Multimodal Language Analysis in the Wild:
   CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph
 A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
+ACL 2018
 
 # Abstract
 
@@ -24,15 +25,15 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 * datasets have severe shortcomings in the following aspects:
   * Diversity in the training samples
     * crucial due to the complexity of the underlying distribution
-    * variability of intra-modal and crossmodal dynamics (Rajagopalan+ 2016)
-  * Variety in the topics: Variety in topics opens the door to generalizable
+    * variability of intra-modal and cross-modal dynamics (Rajagopalan+ 2016)
+  * Variety in the topics
     * language and nonverbal behaviors tend to change based on the impression
       of the topic on speakers’ internal mental state
   * Diversity of speakers: speaking styles are highly idiosyncratic
     * overfitting: models learn the identity of speakers (Wang+ 2016)
   * Variety in annotations
     * multiple labels allows for studying the relations between labels
-    * multi-task learning which has shown excellent performance in past
+    * multi-task learning has shown excellent performance in the past
 * CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI)
   * 23,453 annotated video segments from 1,000 speakers and 250 topics
   * manual transcription aligned with audio to phoneme level
@@ -108,8 +109,7 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 
 ### 2.2 baselines and recent models for sentiment analysis and emotion recog
 
-* Modeling multimodal language has been the subject of studies in NLP and
-  multimodal machine learning. Notable approaches are listed as follows and
+* Modeling multimodal language in NLP and multimodal machine learning
 * symbol for reference in the Experiments and Discussion section (Section 5)
 * # MFN: (Memory Fusion Network, Zadeh+ 2018a) synchronizes multimodal
   sequences using a multi-view gated memory that stores intra-view and
@@ -126,16 +126,16 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 * § EF-LSTM (Early Fusion LSTM) concatenates the inputs from different
   modalities at each time-step and uses that as the input to a single LSTM
   (Hochreiter and Schmidhuber, 1997; Graves+ 2013; Schuster and Paliwal, 1997)
-  In case of unimodal models EF-LSTM refers to a single LSTM
+  * In case of unimodal models EF-LSTM refers to a single LSTM
 * baseline models:
   * multimodal
     * † BC-LSTM (Poria+ 2017b),
     * ♣ C-MKL (Poria+ 2016),
     * ♭ DF (Nojavanasghari+ 2016),
-    * ♡ SVM (Cortes & Vapnik, 1995; Zadeh+ 2016b; Perez-Rosas+ 2013; Park+
-      2014)
-    * ● RF (Breiman, 2001), THMM (Morency+ 2011), SAL-CNN (Wang+ 2016), 3D- CNN
-      (Ji+ 2013)
+    * ♡ SVM
+      (Cortes & Vapnik, 1995; Zadeh+ 2016b; Perez-Rosas+ 2013; Park+ 2014)
+    * ● RF (Breiman, 2001), THMM (Morency+ 2011), SAL-CNN (Wang+ 2016),
+        3D-CNN (Ji+ 2013)
   * language only baseline models:
     * ∪ CNN-LSTM (Zhou+ 2015), RNTN (Socher+ 2013),
     * ×: DynamicCNN (Kalchbrenner+ 2014),
@@ -224,7 +224,7 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
   Since the utterance duration of words in English is usually short, this
   interpolation does not lead to substantial information loss
 
-### Visual:
+### Visual
 
 * Frames are extracted from the full videos at 30Hz
 * bounding box of the face is extracted using the MTCNN face detection
@@ -232,8 +232,8 @@ A Zadeh, PP Liang, J Vanbriesen, S Poria, E Tong, E Cambria, M Chen, L Morency
 * facial action units extracted through Facial Action Coding System (FACS)
   (Ekman+ 1980). Extracting these action units allows for accurate tracking and
   understanding of the facial expressions (Baltrušaitis+ 2016)
-* We also extract a set of six basic emotions purely from static faces using
-  Emotient FACET (iMotions, 2017)
+* We also extract a set of six basic emotions purely from static faces
+  using Emotient FACET (iMotions, 2017)
 * MultiComp OpenFace (Baltrušaitis+ 2016) is used to
   extract the set of 68 facial landmarks, 20 facial shape parameters, facial
   HoG features, head pose, head orientation and eye gaze (Baltrušaitis+ 2016)

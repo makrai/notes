@@ -1,6 +1,5 @@
-Survey on Multimodal Emotion Recognition (MER) Systems
-Bhanusree Yalamanchili, Keerthana Dungala, Keerthi Mandapati, Mahitha Pillodi,
-  Sumasree Reddy Vanga
+Survey on Multimodal Emotion Recognition Systems
+Bhanusree Yalamanchili, Keerthana Dungala, K Mandapati, M Pillodi, SR Vanga
 in CK Mai et al. (eds.), Machine Learning Technologies and Applications,
 
 # Abstract

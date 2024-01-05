@@ -170,16 +170,16 @@ https://github.com/allenai/rainbow
 * The same result also holds for the popular benchmark COMMONSENSE QA when
 * hE, JOCI (Zhang+ 2017), an ordinal commonsense variant of NLI,
   RAINBOW appears either not to help or to slightly hurt data efficiency,
-  potentially more so than GLUE and SuperGLUE.  4
+  potentially more so than GLUE and SuperGLUE
 
 ### Finding 5: Only RAINBOW uniformly beats the baseline
 
 ### Caveats about GLUE, SuperGLUE, and T5
 
 * The off-the-shelf T5’s weights come from multitask pretraining, where
-  * many tasks are mixed with a language modeling objective to learn a powerful
-    initialization for the weights. In fact, both GLUE and SuperGLUE were
-    mixed into the pretraining (Raffel+ 2019)
+  * many tasks are mixed with a language modeling objective
+    to learn a powerful initialization for the weights
+  * both GLUE and SuperGLUE were mixed into the pretraining (Raffel+ 2019)
 * not determined whether some of the benefit comes from the
   novelty of RAINBOW’s knowledge to T5,
   as opposed to containing more general information than GLUE and SuperGLUE

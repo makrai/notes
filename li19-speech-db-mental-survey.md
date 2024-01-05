@@ -7,7 +7,7 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
 * clinical databases in the study of mental disorders is essential to the
   diagnosis and treatment of patients with mental illness
   * unlike text corpora, speech corpora capture tones, emotions, rhythms
-* we: from online databases and peer-reviewed journals in order to demonstrate
+* we: from online databases and peer-reviewed journals
   * worldwide; reports from China; comparison between Chinese and non-Chinese
   * Most of the speech databases were recorded in Europe or the United States
   * mostly by audio or video
@@ -15,10 +15,10 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
     * eye-tracking
   * mostly developed for patients with
     * neurocognitive disorders like stutter and aphasia, and
-    * mental illness like dementia, while other types of mental illness such as
-    * scarce: bipolar disorder, anxiety, depression and autism were scarce in
+    * mental illness, mostly dementia
+    * scarce: bipolar disorder, anxiety, depression and autism
   * China
-    * db on neurocognitive disorders in China is much scarcer than that in Europe
+    * db on neurocognitive disorders in China is much scarcer than that in Eu
     * existing databases pave an instructive road for psychiatric problems
 
 # Background
@@ -35,15 +35,15 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
 * brains can be learnt by AI for early screening and diagnosis. However, we
   * hE few speech databases in Asia compared with those in the western
   * special characteristics of their languages, the significance of building
-* global epidemiology of mental disorders revealed that there was a
+* global epidemiology of mental disorders
   * hE data on mental disorders and the mortality rate in low/middle-income cnt
   * large-scale statistical collection on patients with mental disorders is
     mainly popular in Europe and the United States, while
   * few databases or corpora of mental health are available in Asia
-* many existing studies are merely tentatively inductive and comparative case
-  studies in a single aspect, which falls behind in systematisation and
-  standardisation. Since research based on corpora of mental disorders is
-  * transfering from unimodal to multimodal, which contains diverse records of
+* many existing studies are merely tentatively inductive and comparative
+  case studies in a single aspect
+  * falls behind in systematisation and standardisation
+  * transfering from unimodal to multimodal
 
 # Methods
 
@@ -151,7 +151,7 @@ The selection criteria qualify studies included in the review from the global
 
 * aphasic speech corpora, Westerhout and Monachesi15 developed a corpus
   * CoDAS with six participants. In this pilot study, they introduced basic
-  * The Cambridge Cookie-Theft Corpus is an audio corpus consisting of
+  * The Cambridge Cookie-Theft Corpus is an audio corpus
     * two tasks:
       * the Boston Cookie-Theft picture description task16 and a
       * spontaneous speech task, which contains a semiprompted monologue (where
@@ -164,8 +164,8 @@ The selection criteria qualify studies included in the review from the global
   * annotated Greek Corpus of Aphasic Discourse17 with 72 patients and 28 contrls
     * large multidisciplinary project ‘THALES-Levels of impairment in Greek
     * relationship with processing deficits, brain region, and therapeutic impl
-*  Orozco-Arroyave Database18 provide speech recordings of 50 patients with
-   Parkinson’s disease compared by their healthy controls. The
+*  Orozco-Arroyave Database^18 provide speech recordings of 50 patients with
+   Parkinson’s disease compared by their healthy controls
 * Distress Analysis Interview Corpus-Wizard of Oz (DAIC-WOZ) database is
   * part of a larger corpus, the DAIC, which contains both audio and video
   * patients with anxiety, depression and post-traumatic stress disorder
@@ -288,15 +288,15 @@ The selection criteria qualify studies included in the review from the global
   * AphasiaBank is most frequently cited by researchers, followed by
   * WRAP and DAIC-WOZ.  AphasiaBank is one of the pioneering database projects
 * the best three
-  * The three databases (the Orozco-Arroyave Database, the Cambridge
-    Cookie-Theft Corpus and the DementiaBank) apply
+  * The three databases
+    (Orozco-Arroyave Database, Cambridge Cookie-Theft Corpus, and DementiaBank)
   * multiple methods in data recordings, including biological indexes and brain
     scanning, or they may cover a
   * wide range of mental diseases such as anxiety, dementia, depression and
     PTSD. One common feature of them is the
   * large scale of participants, which is an indispensable necessity for a
     reliable and scientific research study
-* as pioneering resources in neurocognitive areas that may well provide
+* as pioneering resources in neurocognitive areas
   * AphasiaBank and DementiaBank serve as pioneering resources in
     neurocognitive areas that may well provide references for future studies on
     mental disorder, especially the Cantonese AphasiaBank Database, which is
@@ -304,11 +304,11 @@ The selection criteria qualify studies included in the review from the global
 
 ## Limitations
 
-* number under of participants limited to 40 in the majority of the studies,
-* mostly focus on patients with neurocognitive illness, such as
+* number of participants limited to 40 in the majority of the studies,
+* mostly focus on patients with neurocognitive illness
   eg aphasia, stutter, and brain injuries, which reveal explicit signs of
   language disabilities in learning and delivering verbal or non-verbal
-* inadequate number of existing corpora for patients with mental disorders such
+* inadequate number of existing corpora for patients with mental disorders
   eg dementia, schizophrenia, depression, autism and other mental diseases that
   may also reveal abnormalities in emotion, language usage, or behavior in
   communication, which should be taken into consideration

@@ -5,8 +5,8 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
 # Abstract
 
 * Personal and ubiquitous sensing technologies such as smartphones
-* Machine learning methods have been applied to continuous sensor data to
-  predict user contextual information such as
+* Machine learning methods have been applied to continuous sensor data
+  to predict user contextual information such as
   location, mood, physical activity, etc
 * growing interest in ubiquitous sensing technologies for mental health care
   * automatic continuous monitoring of different mental conditions such as
@@ -15,9 +15,8 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
   using sensor data and machine learning
   * focused on mental disorders/conditions such as:
     depression, anxiety, bipolar disorder, stress, etc
-  * classification taxonomy to guide the review of related works and present
-    the overall phases of MHMS
-  * research challenges in the field and future opportunities are also
+  * classification taxonomy to guide the review and present the phases of MHMS
+  * research challenges in the field and future opportunities
 
 # 1 Intro
 
@@ -27,20 +26,20 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
     repeated sampling of thoughts, feelings and behaviors
     as close in time to the experience as possible in real-life situations [8]
     * outperform paper and pencil reports in the assessment of some mental [9]
-* smartphones and wearable devices make them potential platforms for EMA
-  measurements, monitoring mental illness, treatment, self-management and
+* smartphones and wearable devices are potential platforms for
+  EMA measurements, monitoring mental illness, treatment, self-management and
   interventions, thus, reducing costs and expanding the coverage of services
-  * have potential in providing mental health interventions [10–12]
-  * Wearable devices like smartphones, smart watches and fitness bands, have
-    a vast variety of embedded sensors
-  * communication devices (WiFi, Bluetooth, etc), inertial sensors
-    (accelerometer, gyroscope, etc), physiological sensors (heart rate,
-    dermal activity, etc) and ambient sensors (ambient pressure, temperature,
-    etc) to name a few
+  * potential in providing mental health interventions [10–12]
+  * Wearable devices like smartphones, smart watches and fitness bands
+    * with a vast variety of embedded sensors
+    * communication devices (WiFi, Bluetooth, etc), 
+    * inertial sensors (accelerometer, gyroscope, etc), 
+    * physiological sensors (heart rate, dermal activity, etc) and 
+    * ambient sensors (ambient pressure, temperature, etc) to name a few
 * multimodal sensing applications in the healthcare domain [13]
   * combining the data from subsets of those sensors, it is possible to infer
-    contextual information such as physical activity [14], location [15], mood
-    [16] and social relationships [17]; among others
+    contextual information such as physical activity [14], location [15],
+    mood [16], and social relationships [17]; among others
   * Multimodal sensing settings have shown to produce better results in some
     applications, compared to single sensor modalities [18,19]
     * take into account the individual characteristics of each person
@@ -65,11 +64,9 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
   * an overview of sensors and the work flow of sensor based monitoring systems
   * a list of research challenges and opportunities in the field
 
-The paper is structured as following:
-
 # 2 Related work
 
-* (surveys, review works) about MHMS and wearable devices for automatic monitor
+* surveys, review works about MHMS and wearable devices for automatic monitor
 
 # 3 our proposed classification taxonomy of MHMS, covering
 
@@ -82,7 +79,7 @@ The paper is structured as following:
       transitions
   * fewer works related to forecasting than to association and detection
   * Support Vector Machines (SVM) and tree based classifiers seem to be among
-    the most used models for detection which makes sense since they are
+    the most used models for detection
     * well researched, easy to understand and included in many ML frameworks
 
 ## Study type can be association, detection and forecasting
@@ -136,14 +133,13 @@ The paper is structured as following:
 ### 3.3.4. Discussion
 
 * each research study has used different combinations of sensors
-* Fig. 2 shows a heatmap of pair-wise sensor co-occurrences from 28 works that
+* Fig 2 shows a heatmap of pair-wise sensor co-occurrences from 28 works
 * eg heart rate (hr) measurements are often used in combination with
   Electrodermal Activity (EDA) measurements
   * movement sensors (accelerometers, gyroscopes) are likely to be combined
     with other types of sensors
   * App, social media and EEG were used in isolation (from the sampled works)
-* These insights show some opportunities for future research work, for example,
-  combining social media with physiological sensors
+* future work eg combining social media with physiological sensors
 
 # 4 the general steps of sensor based monitoring systems
 

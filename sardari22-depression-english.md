@@ -35,14 +35,14 @@ available at https://github.com/SaraS92/CAE_ADD
     Sub-Challenge (DCC, Valstar+ 2016). This challenge involves proposing a
     * distinguishing depressed and non-depressed speakers using
     * three main modalities: audio, visual, and textual (a transcript)
-* several datasets for languages such as German, Turkish and English were
+* several datasets for languages such as German, Turkish and English
   (Gratch+ 2014, Ozkanca+ 2018, Valstar+ 2014)
   * German database as a part of the AVEC 2014 challenge (Valstar+ 2014)
   * Turkish which was collected at a hospital in Istanbul with 70 subjects
   * Black Dog dataset (McIntyre+ 2009) which includes recordings of audio/video
-    from 40 speakers with a major depressive disorder, rated using the Quick
-    Inventory of Depressive Symptomatology- Self Report (QIDS-SR) scale (Cohn+
-    2018)
+    from 40 speakers with a major depressive disorder
+    * rating: Quick Inventory of Depressive Symptomatology Self Report scale
+      (QIDS-SR, Cohn+ 2018)
 * DAIC-WOZ (Gratch+ 2014)
   * interviews between participants (patients) and a virtual questioner
   * to develop a generalized depression detection model, we use this dataset

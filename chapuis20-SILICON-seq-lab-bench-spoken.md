@@ -13,7 +13,7 @@ Findings 2020
 * our representations with a hierarchical encoder based on transformer
   * we extend two well-known pre-training objectives
   * Pre-training is performed on OpenSubtitles
-    * a large corpus of spoken dialog containing over 2.3 billion of tokens. We
+    * a large corpus of spoken dialog containing over 2.3 billion of tokens
   * competitive results with consistently fewer parameters compared to SOTA
   * hierarchical encoders are important for both pre-training and fine-tuning
 
@@ -30,8 +30,8 @@ Findings 2020
     * Switchboard (Godfrey+ 1992)
     * MRDA (Shriberg+ 2004) or
     * Daily Dialog Act (Li+ 2017)
-    * complex models learned from scratch (eg seq2seq, Colombo+ 2020) are
-      very specific to the labelling scheme employed
+  * complex models learned from scratch (eg seq2seq, Colombo+ 2020) are
+    very specific to the labelling scheme employed
 * Generic representations adapt models across different sets of labels
   (Mikolov+ 13; Pennington+ 14; Peters+ 18; Devlin+ 18; Yang+ 19; Liu+ 19)
   * usually trained on large written corpora such as
@@ -49,16 +49,15 @@ Findings 2020
     (Devlin+ 2018; Yang+ 2019; Liu+ 2019),
     as they often treat sentences as a simple stream of tokens
 * our goal is to train on SD data a generic dialog encoder
-  capturing discourse-level features that produce representations
-  adapted to spoken dialog
+  capturing discourse-level feats that produce reprs adapted to spoken dialog
   * We evaluate these representations on both DA and E/S labelling
   * new benchmark SILICONE composed of
     * datasets of varying sizes using different sets of labels
   * smaller models to obtain lightweight reprs (Jiao+ 2019; Lan+ 2019)
     * can be trained without a costly computation infrastructure
     * good performance on several downstream tasks (Henderson+ 2020)
-  * we propose the first hierarchical generic multi-utterance encoder based on
-    a hierarchy of transformers
+  * we propose the first hierarchical generic multi-utterance encoder
+    based on a hierarchy of transformers
     * hierarchy is inherent in dialog (Thornbury and Slade, 2006)
     * factorise the model parameters, getting rid of long term dependencies and
     * training on a reduced number of GPUs
@@ -68,19 +67,19 @@ Findings 2020
     * we preprocess OpenSubtitles (Lison+ 2019)
       * a large corpus of spoken dialog from movies
       * an order of magnitude bigger than corpora
-      (Budzianowski+ 2018b; Lowe+ 2015; Danescu-Niculescu-Mizil and Lee, 2011)
-      used in previous works (Mehri+ 2019; Hazarika+ 2019)
+        (Budzianowski+ 2018b; Lowe+ 2015; Danescu-Niculescu-Mizil and Lee, 2011)
+        used in previous works (Mehri+ 2019; Hazarika+ 2019)
 * Lastly, we evaluate our encoder along with other baselines on SILICONE
   * finer conclusions of the generalisation capability of our models
 
 # 2 Method
 
-* two levels
-  * highest level: a set D of conversations composed of utterances with
+* two? levels
+  * conversations are composed of utterances with
     Y being the corresponding set of labels (eg DA, E/S)
-  * lower level: each conversation Ci is composed of utterances u with
+  * each conversation Ci is composed of utterances u with
     Yi being the corresponding sequence of labels
-  * lowest level: each utterance ui can be seen as a sequence of words
+  * each utterance ui can be seen as a sequence of words
 
 ## 2.1 Pre-training Objectives
 
@@ -190,7 +189,7 @@ Findings 2020
   * Bi-LSTMs with attention as well as additional features
   * We follow the official split introduced by the authors
 
-#### HCRC MapTask Corpus (MT) has been introduced by (Thompson+ 1993)
+#### HCRC MapTask Corpus (MT, Thompson+ 1993)
 
 * participants were asked to collaborate verbally by
   describing a route from a first participant’s map
@@ -229,13 +228,12 @@ Findings 2020
 
 * created by enhancing and extending EmotionLines dataset (Chen+ 2018a) where
   multiple speakers participated in the dialogues
-* two types of annotations MELDs and MELDe :
+* two types of annotations MELDs and MELDe:
   * three sentiments (positive, negative and neutral) and
   * seven emotions (anger, disgust, fear, joy,neutral, sadness and surprise)
-* The SOTA model with text only is proposed by Zhang+ (2019b) and is inspired
-  by quantum physics
+* The SOTA model with text only (Zhang+ 2019b) is inspired by quantum physics
 * On the official split, it is compared with a hierarchical bi-LSTM, which it
-  beats with an accuracy of 61.9% (MELDs ) and 67.9% (MELDe ) against 60.8% and
+  beats with an accuracy of 61.9% (MELDs) and 67.9% (MELDe) against 60.8% and
   65.2
 
 #### IEMOCAP database (IEMO) is a multimodal database of ten speakers

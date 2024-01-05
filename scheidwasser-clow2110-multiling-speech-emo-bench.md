@@ -6,15 +6,15 @@ setup instructions, evaluation pipelines & examples, is freely available online
 
 # Abstract
 
-* speech emotion recognition (SER) recently with deep neural networks (DNNs)
+* speech emotion recognition (SER) with deep neural networks (DNNs)
   * Comparison difficult <~ different datasets and evaluation protocols
 * we present the Speech Emotion Recognition Adaptation Benchmark (SERAB)
   * for utterance-level SER
   * nine datasets for SER in six languages
   * the datasets have different sizes and numbers of emotional classes
 * We evaluate a selection of standard hand-crafted feature sets and SOTA DNNs
-  * using only a subset of the data included in SERAB can result in biased
-    evaluation, while compliance with the proposed protocol can circumvent this
+  * using only a subset of the data in SERAB can result in biased eval, while
+    compliance with the proposed protocol can circumvent this
 
 # 1 Intro
 
@@ -68,6 +68,49 @@ setup instructions, evaluation pipelines & examples, is freely available online
   * performs on par with SOTA approaches
 
 # 2. Speech emotion recognition adaptation benchmark (serab)
+
+## 2.1 A summary of the tasks used in SERAB is presented in Table 1. The
+
+* nine speech emotion classification tasks in six languages: 
+  * four in English (CREMA-D, IEMOCAP, RAVDESS & SAVEE), and 
+  * one in French (CaFE), German (EmoDB), Greek (AESDD), Italian (EMOVO), and
+    Persian (ShEMO). In each dataset, 
+* speech samples have three attributes: 
+  audio data (ie the raw waveform, in mono), 
+  speaker identifier, and 
+  emotion label (eg angry, happy, sad)
+* The datasets vary in size (ie number of utterances), number of speakers,
+  class distribution, and number of classes.
+* emo set
+  * anger, happiness, and sadness are found across all datasets, 
+  * disgust, fear, neutral emotion, surprise, calm, and boredom appear in >= 1
+* all datasets have roughly the same average utterance duration 
+  (between 2.5 & 4.5 seconds)
+* designed to balance dataset popularity, language diversity, and open
+  access
+  * In speech emotion recognition, EmoDB, IEMOCAP and RAVDESS are among the
+    most widely used datasets [15, 23, 24]. In the same vein as [24], a 4-class
+    subset of IEMOCAP (IEM4) was used to mitigate the severe class imbalance
+    in the original dataset. For the other tasks, all samples and classes from
+    the original datasets were used (Table 1). As already present in NOSS [6],
+    CREMA-D and SAVEE were included in SERAB. To complete the benchmark, CaFE
+    (French) and EMOVO (Italian) were chosen as Italic-language datasets,
+    whereas AESDD (Greek) and ShEMO (Persian) represented the Hellenic and
+    IndoIranian branches of the Indo-European family [25]. Overall, the
+* mainly comprises scripted and acted speech, 
+  excepting IEM4 [17], RAVDESS [22] and ShEMO [23] which feature spontaneous
+  utterances
+* Each dataset was split into training, validation, and testing sets to
+  * Excepting CREMA-D, each dataset was split into 60% training, 20% valid, and
+    20% testing sets
+  * For CREMA-D, we followed a 70/10/20% (training/validation/testing) split
+    that was applied in NOSS [6]
+  * Each data partition was speaker-independent, ie
+    the sets of speakers included in each part were mutually disjoint
+  * Since SERAB datasets vary in size, the fixed data split allows assessing
+    how different methods cope with various amounts of task-specific data
+
+## 2.2 Eval pipeline
 
 # 3. Baseline approaches
 
@@ -135,7 +178,7 @@ setup instructions, evaluation pipelines & examples, is freely available online
 * relies on comparing two augmented versions of a single sample
   * Instead of assessing the temporal proximity of two different audio segments
   * each version is respectively fed to an online network and a target network
-    * both networks composed of an encoder and a projection block, the
+    * both networks composed of an encoder and a projection block
     * online network includes a prediction layer which aims at predicting the
       projected representation of the second augmented view
 * Thus, BYOL (and BYOL-A) learns a representation by negating the random data
@@ -154,10 +197,10 @@ setup instructions, evaluation pipelines & examples, is freely available online
   the speech-specific BYOL-S (S denoting speech). The model architecture,
   pre-training routine, and usage remained the same as in the original version
 
-## BYOL-S/CvT: an extension of BYOL-S with a Transformer representation. More
+## BYOL-S/CvT: an extension of BYOL-S with a Transformer representation
 
 * we replaced the convolution blocks in BYOL-S
-  with Convolutional Transformer 6 (CvT) [32]
+  with Convolutional Transformer (CvT) [32]
 * CvT notably extends self-attention with depthwise convolution to
   project the queries, keys, and value embeddings
   * Between the attention modules, traditional convolution layers are added to

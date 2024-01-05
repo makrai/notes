@@ -16,7 +16,7 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
     cameras can be associated with predetermined emotions
 * merge the multimodal information retrieved by these devices with
   information from analysis of emotions and intensity in text
-* Mehrabian (1967) established the 7%– 38%–55% rule, also known as the “3V”
+* Mehrabian (1967) established the 7%–38%–55% rule, also known as the “3V”
   * 7/38/55% of the communication is verbal/vocal/visual [1]
 * emotion detection was born during the sixties/seventies
   * mood rings [2]

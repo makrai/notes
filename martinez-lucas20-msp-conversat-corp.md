@@ -9,8 +9,7 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
   multiparty interactions
 * we introduce the MSP-Conversation corpus, which contains
   * interactions annotated with time-continuous emotional traces for
-    arousal (calm to active), valence (negative to positive), and
-    dominance (weak to strong)
+    arousal (calm/active), valence (negative/pos), and dominance (weak/strong)
   * Time-continuous annotations offer the flexibility to
     explore emotional displays at different temporal resolutions while
     leveraging contextual information
@@ -20,8 +19,8 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
       annotated with sentence-level emotional scores
       * an easy, affordable, and scalable approach to obtain
         natural data with diverse emotional content from multiple speakers
-  * we compare the time-continuous evaluations from the MSP-Conversation
-    corpus with the sentence-level annotations of the MSP-Podcast corpus
+  * we compare the time-continuous evaluations from MSP-Conversation
+    with the sentence-level annotations of the MSP-Podcast corpus
     for the speech segments that overlap between the two corpora
 
 # Index Terms: SER, human-computer interaction, time-continuous emo attribs

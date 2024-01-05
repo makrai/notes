@@ -210,7 +210,7 @@ else:
 * dominance more correlated with emotion categories than arousal
   * Contrary to what some studies claim [36]
   * Especially with sadness (r = −0.46 in Tweets and r = −0.45 in Captions)
-  * Captions: fear and joy are rather highly neg correlated (-) with dominance
+  * Captions: fear and joy are rather highly negativ correlated with dominance
 * summ: correlated, but not for each dimension-category pair and
   certainly not always to a great extent
   * suggests that a mapping could be learned

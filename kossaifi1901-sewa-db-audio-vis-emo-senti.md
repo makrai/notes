@@ -141,7 +141,7 @@ arXiv:1901.02839 [cs.HC]
   * ikannotate: top hits lead to the paper
   * EmoWheel: top hits are not computational
   * FEELtrace: The participants in a test or experiment use a computer to
-    continuously report the emotion they perceive. They can move a cursor in a
+    continuously report the emotion they perceive. They move a cursor
 * creating the unified gold standard from a set of annotations,
   * gold standard != ‘ground-truth’, which is avoided for affective computing
   * no truth on a subjective feeling such as emotion
@@ -235,7 +235,7 @@ arXiv:1901.02839 [cs.HC]
         medium of communication between humans when it comes to emotions
 * models
   * performances of different regression models vary from each other
-  * overall, SVM perform > RF > LSTM
+  * overall, SVM > RF > LSTM
   * hE, in the experiments on audio features, while
     * Support Vector Machine for Regression (SVR) and Random Forest (RF) are
       expected to perform well for arousal and valence prediction,

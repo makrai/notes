@@ -1,4 +1,4 @@
-Bostan, Roman KlingerAn Analysis of Annotated Corpora for Emotion Classification in Text
+An Analysis of Annotated Corpora for Emotion Classification in Text
 Laura-Ana-Maria Bostan, Roman Klinger
 COLING 2018
 
@@ -453,7 +453,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Pearson corr between the similarity measure and model performance: r = 0.32
   (mediocre)
 
-### All vs. one cross-corpus emotion classification: the All column of Figure 2
+### All vs one cross-corpus emotion classification: the All column of Figure 2
 
 * classify while training on all the other datasets
 * shows which datasets are easier to classify: DailyDialogs, Blogs, and EmoInt
@@ -466,14 +466,14 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 # 5 Conclusion 10
 
-* opens up the possibility of transfer learning and domain adaptation work,
+* opens up the possibility of transfer learning and domain adaptation work
   between domains and on different label sets
 * From the collected unified datasets one could learn how to
   * select the most suitable dataset
     for a given new domain and
   * evaluate it across different classification models, domains, and annotation
     procedures, easier than it was possible until now
-* this work will help the emotion detection task to become a standard task
+* this work will help emotion detection to become a standard task
   * similarly to eg sentiment classification, which plays this role already
   * to explore the current state of the emotion analysis field
 * future work
