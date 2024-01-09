@@ -2,7 +2,6 @@ Unifying Emotion Analysis Datasets using Valence Arousal Dominance (VAD)
 Mo El-Haj, Ryutaro Takanami
 Conference on Language, Data and Knowledge 2023
 
-
 # Abstract
 
 * This paper presents a novel approach to unifying various emotional datasets

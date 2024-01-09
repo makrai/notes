@@ -9,6 +9,7 @@ LREC 2018
 * a much smaller amount on classif text into basic emotion categories eg joy
 * we create a single textual dataset that is annotated for
   many emotion (or affect) dimensions, both the basic emotion model and VAD
+  * but see set 5, last point
 * For each emotion dimension, we annotate the data
   also for fine-grained real-valued scores indicating the
   intensity of emotion (anger, sadness, valence, etc)
@@ -28,7 +29,7 @@ LREC 2018
 * 11,000 tweets such that overlapping subsets are annotated for a number of
   emotion dimensions (from both the basic emotion model and the VAD model)
 * Subsequently, Spanish and Arabic tweet datasets were also created
-  following the methodology described here (Mohammad+, 2018). SemEval task
+  following the methodology described here (Mohammad+, 2018)
 * We calculated the extent to which
   * pairs of emotions co-occur in tweets
   * the intensities of affect dimensions correlate

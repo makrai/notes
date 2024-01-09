@@ -14,7 +14,7 @@ arXiv:2203.07378 [eess.AS]
 * we: a thorough analysis of these aspects on several pre-trained variants of
   wav2vec 2.0 and HuBERT that we
   * fine-tuned on the dimensions arousal, dominance, and valence of
-    MSP-Podcast, while additionally using
+    MSP-Podcast (Lotfian and Busso, 2019), while additionally using
   * IEMOCAP and MOSI to test cross-corpus generalisation
 * new SOTA performance for valence prediction without explicit linguistic info,
   * unlike recent multimodal approaches that explicitly utilise textual info
@@ -124,8 +124,8 @@ arXiv:2203.07378 [eess.AS]
     * large architecture is superior to the base model and
     * HuBERT outperforms wav2vec 2.0
   * CCC performance surpasses both that of
-    * Triantafyllopoulos+ [4] (.515), who proposed a multimodal fusion of
-      pre-trained BERT embeddings with an untrained CNN model, and of
+    * Triantafyllopoulos+' [4] (.515) multimodal fusion of
+      pre-trained BERT embeddings with an untrained CNN model
     * Li+ [35] (.377) who
       * pre-train a CRNN model on LibriSpeech
         * using Contrastive Predictive Coding
@@ -165,11 +165,12 @@ arXiv:2203.07378 [eess.AS]
 * We used the MSP-Podcast corpus [34] (v1.7) to run multitask training on the
   three dimensions of arousal, dominance, and valence
   * 84 hours of naturalistic speech from podcast recordings
-  * original labels cover a range from 1 to 7, which we normalise into the
-    interval of 0 to 1. In-domain results are reported on the test-1 split
-    * The test-1 split contains 12, 902 samples (54% female/46% male) from 60
-      speakers (30 female/30 male)
-    * samples per speaker are not balanced and vary between 42 and 912
+  * emotionally balanced
+  * original labels cover a range from 1 to 7, which we normalise into 0..1
+    * In-domain results are reported on the test-1 split
+    * The test-1 split contains 12, 902 samples (54% female) from 60 speakers
+                                                                          (50%)
+    * samples per speaker vary between 42 and 912
       * combined length: roughly 21 hours, and
       * vary between 1.92 s and 11.94 s per sample
 * We report cross-domain results for the IEMOCAP  dataset [33]

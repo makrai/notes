@@ -1,5 +1,5 @@
-Saif M Mohammad, Svetlana Kiritchenko, Xiaodan Zhu
 NRC-Canada: Building the State-of-the-Art in Sentiment Analysis of Tweets
+Saif M Mohammad, Svetlana Kiritchenko, Xiaodan Zhu
 SemEval-2013
 
 The lexicons are made freely available www.purl.com/net/sentimentoftweets
@@ -28,7 +28,7 @@ The lexicons are made freely available www.purl.com/net/sentimentoftweets
 
 # 2 Sentiment Lexicons
 
-* i.e. lists of words with associations to positive and negative sentiments
+* ie lists of words with associations to positive and negative sentiments
 
 ## 2.1 Existing, Manually Created Lexicons
 
@@ -41,21 +41,22 @@ The lexicons are made freely available www.purl.com/net/sentimentoftweets
 
 ### 2.2.1 NRC Hashtag Sentiment Lexicon
 
-* Mohammad (2012) showed that hashtagged emotion words such as joy, sadness,
-  angry, and surprised are good indicators that the tweet as a whole (even
-  without the hashtagged emotion word) is expressing the same emotion. We
+* Mohammad (2012): hashtagged emotion words eg joy, sadness, angry, and
+  surprised are good indicators that the tweet as a whole (even without the
+  hashtagged emotion word) is expressing the same emotion
 * seed terms were chosen from entries for positive and negative in the
   Roget’s Thesaurus
-* The final lexicon, i.e. the NRC Hashtag Sentiment Lexicon has entries for
-  54,129 unigrams and 316,531 bigrams.  Entries were also generated for
-  unigram–unigram, unigram–bigram, and bigram–bigram pairs that were not
-  necessarily contiguous in the tweets corpus.  Pairs with certain
-  punctuations, ‘@’ symbols, and some function words were removed. The lexicon
-  has entries for 308,808 non-contiguous pairs
+* The final lexicon, ie the NRC Hashtag Sentiment Lexicon has entries for
+  * 54,129 unigrams and 316,531 bigrams.  Entries were also generated for
+  * unigram–unigram, unigram–bigram, and bigram–bigram pairs that were not
+    necessarily contiguous in the tweets corpus
+  * Pairs with certain punctuations, ‘@’ symbols, and some function words were
+    removed
+  * entries for 308,808 non-contiguous pairs
 
 ### 2.2.2 Sentiment140 Lexicon
 
-* The sentiment140 corpus (Go+ 2009) is a collection of 1.6 million
-  tweets that contain positive and negative emoticons. The tweets are labeled
-* We generated a sentiment lexicon from this corpus in the same manner as
+* The sentiment140 corpus (Go+ 2009) is a collection of
+  1.6 million tweets that contain positive and negative emoticons. The tweets
+* We generated a sentiment lexicon from this corpus in the same manner
 * 62,468 unigrams, 677,698 bigrams, and 480,010 noncontiguous pairs

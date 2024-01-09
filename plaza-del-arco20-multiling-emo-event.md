@@ -48,7 +48,7 @@ LREC 2020
   * labeled with emotions by three annotators
   * languages: English and Spanish. This choice of languages intends to show
 
-# 2 related work: datasets labelled with emotions
+# 2 Related work: datasets labelled with emotions
 
 * EmoBank (Buechel and Hahn, 2017) is a large-scale corpus of English sentences
   annotated with the dimensional Valence-Arousal-Dominance (VAD) representation

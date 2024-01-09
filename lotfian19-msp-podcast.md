@@ -1,7 +1,7 @@
 MSP-Podcasts: Building Naturalistic Emotionally Balanced Speech Corpus
   by Retrieving Emotional Speech From Existing Podcast Recordings
 Reza Lotfian, and Carlos Busso
-Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
+Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
 
 # Abstract
 
@@ -14,8 +14,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * we propose a novel approach to effectively build a
   large, naturalistic emotional database with balanced emotional content,
   reduced cost and reduced manual labor
-  * relies on existing spontaneous recordings obtained from audio-sharing
-    websites
+  * relies on existing spontaneous recordings obtained from audio-sharing sites
   * combines machine learning algorithms to retrieve recordings conveying
     balanced emotional content with a cost effective annotation process using
     crowdsourcing, which make it possible to build a large scale speech emo db
@@ -24,11 +23,11 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 
 # 1 Intro
 
-* AFFECTIVE comp: understand, analyze, recognize, and synthesize human emotions
+* affective comp: understand, analyze, recognize, and synthesize human emotions
   * applications in areas related to human computer interaction (HCI),
     healthcare, security and defense, education and entertainment
-  * Speech provides an accessible modality for current interfaces, importa info
-* challenging task given the
+  * Speech is an accessible modality for current interfaces, important info
+* challenges
   * subtle expressive behaviors that occur during human interactions [1]
   * databases are limited in size, number of speakers, inadequate/inconsistent
     emotional descriptors, lack of naturalistic behaviors, and
@@ -38,7 +37,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     The research community does not have the resources to leverage powerful
     learning algorithms to create robust emotion models
 * Collecting data in real-life condition is a challenging task involving
-  ethical, legal and financial considerations.  A popular approach used in
+  ethical, legal and financial considerations
   * actors reading predefined sentences portraying target emotions [5], [6]
     * results in over-emphasized expressions, not subtle [4], [7], [8], [9]
   * simulate conversations between two or more speakers collecting spontaneous,
@@ -85,15 +84,15 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     in real-time, stopping the evaluation when their performance drops below an
     acceptable threshold, as proposed in our previous study [18]
 * proof-of-concept experiments that demonstrate that
-  * cross-corpus emotion classification along with crowdsource-based annot
+  * cross-corpus emotion classification along with crowdsource-based annotation
     can be effectively used to build
     naturalistic emotional database with balanced emotional content,
     reduced cost and reduced manual labor
   * building affective databases using media content was prev explored [17]
     * we: machine learning algorithms to retrieve audio clips with balanced emo
       * natural stimuli with wider spectrum of emotions
-  * We study different information retrieval methods in the context of emotion
-    detection and compare their performances. The proposed approach relies on
+  * We study different information retrieval methods in emotion detection and
+    compare their performances. The proposed approach relies on
   * automatic algorithms to post-process podcasts and a
   * cost effective annotation process, which make it possible to scale 
 * from the Conclusion
@@ -110,7 +109,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 
 # 2 Existing emotional databases
 
-* TUM AVIC  10h 21 speakers spontaneous English
+* TUM AVIC: 10h 21 speakers spontaneous English
   [22] Schuller, Müller, Eyben, Gast, Hörnler, Wöllmer, Rigoll, Höthker, Konosu
     “Being bored? recognising natural interest by extensive audiovisual
     integration for real-life application,”
@@ -247,13 +246,11 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     samples with short speech activity
     * While the speech diarization tool should remove non-speech segments, we
       can still have 2.75s segments dominated by silence
-
 * We also remove segments recorded with poor quality, or contaminated by noise
   * We find the signal-to-noise ratio (SNR) of the segments, using the
     waveform amplitude distribution analysis (WADASNR) method [35], where we
     discard segments with SNR values less than 20dB
   * We also remove phone quality speech.  Audio recorded over the phone has
-
 * We remove segments with music or speech with background music. Since
   * the diarization tool detects any segment that has an identifiable speech
   * we built a support vector machine (SVM) classifier to detect music by
@@ -262,11 +259,9 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
     podcasts that are manually segmented. After listening to 500 randomly
     selected samples detected as music, 63.8% of them included only music, or
     music in the background. There is room for improvement
-
 * this results in 84,125 speaking turns from the 403 podcasts. These segments
   * we select the sentences to be annotated, many neutral
   * by automatically evaluating the emotional content of speak turns (sec 4)
-
 * The retrieved speech segments are then emotionally annotated (Sec. 3.4). This
   * we manually check the retrieved samples before uploading them for
   * Figure 3:
@@ -305,18 +300,15 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
       * We extend the list of emotion including amused, frustrated, depressed,
         concerned, disappointed, excited, confused, and annoyed
       * Similar emotional classes are grouped together to reduce cognitive load
-
 * We rely on a modified version of the crowdsourcing approach by Burmania+ [18]
   * the inter-evaluator agreement in annotating emotional labels increases when
     the evaluators evaluate more than one segment per human intelligence task
     (HIT). The workers can calibrate their assessment by evaluating multiple
     segments per task [18].  The performance drops when the worker tires or
     loses interest in the task
-
   * Burmania+ [18] proposed to create HITs with multiple segments, where we
     track in real-time the quality of the workers, stopping the evaluation when
     * a set of reference sentences which are already evaluated are interlaced
-
   * we implement three main changes on the approach
     * we increase the frequency that we include reference sentences. In
       * one reference sentence every four new sentences so we can detect faster
@@ -367,10 +359,11 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2016
 * the distribution of the corpus across primary emotions is not as balanced as
   the scores for attribute dimensions,
   * we have few sentences for certain emotional classes (eg, fear, sadness)
-  * future/in progress
-    * preference learning solutions for categorical emotions (eg, sad ranker)
-    * increasing the number of podcasts with emotional content
-      including unrepresentative emotional classes
-    * increasing the pool of candidate sentences
 
 # 6 Conclusion: summary, final remarks and future directions
+
+* future/in progress
+  * preference learning solutions for categorical emotions (eg, sad ranker)
+  * increasing the number of podcasts with emotional content
+    including unrepresentative emotional classes
+  * increasing the pool of candidate sentences

@@ -1,5 +1,5 @@
-Saif M. Mohammad and Peter D. Turney
 Crowdsourcing a word–emotion association lexicon
+Saif M. Mohammad and Peter D. Turney
 Computational Intelligence, Volume 29, Number 3, 2013
 
 This paper expands on work first published in Mohammad and Turney (2010)
@@ -30,8 +30,8 @@ This paper expands on work first published in Mohammad and Turney (2010)
   * We focus on the emotions of joy, sadness, anger, fear, trust, disgust,
     surprise, and anticipation
     * argued by many to be the basic and prototypical emotions (Plutchik 1980)
-  * terms in EmoLex are carefully chosen to include some of the most frequent
-    English nouns, verbs, adjectives, and adverbs
+  * terms in EmoLex are carefully chosen
+    * some of the most frequent English nouns, verbs, adjectives, and adverbs
     * In addition to unigrams, EmoLex has many commonly used bigrams as well
     * words from the GI and the WAL to allow comparison of annotations
 * extensive analysis of the annotations to answer several questions, including
@@ -39,10 +39,10 @@ This paper expands on work first published in Mohammad and Turney (2010)
   1. How can emotion-annotation questions be phrased
   1. Are emotions more commonly evoked by nouns, verbs, adjectives, or adverbs?
      How common are emotion terms among the various parts of speech?
-  1. How much do people agree on the association
+  1. How much do people agree on the association?
   1. Is there a correlation between
     the polarity of a word and the emotion associated with it?
   1. Which emotions tend to go together
 * Our lexicon now has close to 10,000 terms
 
-# 2. APPLICATIONS
+# 2. Applications

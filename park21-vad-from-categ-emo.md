@@ -1,6 +1,6 @@
 Dimensional Emotion Detection from Categorical Emotion
 Sungjoon Park, Jiseon Kim, Seonghyeon Ye, Jaeyeol Jeon, Hee Young Park, Alice Oh
-arXiv:1911.02499 [cs.CL]
+arXiv:1911.02499
 
 # Abstract
 
@@ -96,14 +96,14 @@ arXiv:1911.02499 [cs.CL]
 
 ## Predicting Continuous VAD Scores (Fig. 1d)
 
-* We compute the expectations of each predicted conditional distributions of V,
-  A, D dimension to predict the continuous VAD scores
+* We compute the expectations of each predicted conditional distris of V, A, D
+  to predict the continuous VAD scores
 
 ## Predicting Categorical Emotion Labels (Fig.  1c)
 
 * pick
-  * the emotion label with the maximum prob among labels (single-label, Eq 9) or
-  * multiple labels with probability over a certain threshold (multi-label)
+  * single-label, Eq 9: the emotion label with the maximum prob
+  * multiple labels: those with probability over a certain threshold
     * The threshold is a hyperparameter of the model, set to 0.51/3
     * ie geometric mean of the three distributions
 
@@ -148,7 +148,25 @@ arXiv:1911.02499 [cs.CL]
 
 ### 3.2.1 "Zero-shot" (transfer) VAD Prediction
 
+* not trained over the EmoBank train-set, only 
+  using the EmoBank test-set for evaluation
+* could be interpreted as how much a model can generalize the categorical
+  emotions into the continuous VAD space
+  using only |E| fixed points in the space
+
 ### 3.2.2 VAD Prediction with Supervision
+
+* We continuously train our zero-shot models with the train-set of the EmoBank,
+  and compare their performance with other methods which relies on the direct
+  supervision from them
+* allow us to compare the zero-shot prediction performances against them, and
+  * how much the zero-shot prediction model could be improved if VAD
+    annotations are available
+* We also compare data scarce scenarios, only using a part of Emobank train set
+
+## 3.3 Categorical Emotion Prediction
+
+## 3.4 Experimental Details
 
 # 4 Results
 
@@ -156,7 +174,7 @@ arXiv:1911.02499 [cs.CL]
 
 ## VAD prediction with Supervision
 
-## Categorical Emotion Prediction. Next, classifi-
+## Categorical Emotion Prediction
 
 # 5 Ablation
 
@@ -243,7 +261,7 @@ arXiv:1911.02499 [cs.CL]
 * languages with relatively low resources
   * quality  of emotion detection resources would degrade if translated to
   * cultural nuances to defining emotions vary
-* guidelines for the ethical use of emotional AI technologies present 
+* guidelines for the ethical use of emotional AI technologies
   * a checklist for anyone engaged with data about human emotion
   * Stark and Hoey (2020)
   * McStay and Pavliscak (2019) include a number of salutary suggestions

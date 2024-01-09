@@ -6,13 +6,13 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 # Abstract
 
 * Research usually focuses on emotion classification, but performance tends to
-  be rather low, especially when dealing with more advanced emotion categories
+  be rather low, especially with more advanced emotion categories
   that are tailored to specific tasks and domains
 * we propose the use of the dimensional emotion representations (VAD), in an
   emotion regression task.  Hypothesis:
   * VAD can improve performance of the classification task
-  * VAD might be used as a pivot mechanism to map towards any given emotion
-    framework, which allows tailoring emotion frameworks to spec applications
+  * VAD might be used as a pivot mechanism to map towards any emo framework,
+    * allows tailoring emotion frameworks to spec applications
 * we examine three cross-framework transfer methodologies
   * multi-task learning, in which
     VAD regression and classification are learned simultaneously
@@ -25,9 +25,9 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   emotion classification, especially in the meta-learning setting
   (up to 7% macro F1-score compared to regular emotion classification)
   * The pivot method was not able to compete with the base model, but
-  * while categories do benefit from the additional VAD information, the
-    opposite does not hold, which further underlines the assumption that the
-    VAD model is more robust than the classification model
+  * categories do benefit from the additional VAD information, 
+  * hE the opposite does not hold
+    * ie the VAD model is more robust than the classification model
   * further inspection suggests that it could be efficient, provided that the
     VAD regression model is further improved
     * rule-based mapping itself does perform on par with the base model when
@@ -48,7 +48,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 * Cross-framework transfer learning methods could mitigate these challenges
   * Finetuning pre-trained models, multi-task learning or label space mapping
 * A straight-forward approach to shift between frameworks is to
-  map discrete categories into a three-dimensional space, which
+  map discrete categories into a three-dimensional space
   * 3D space corresponds to Mehrabian and Russell’s claim that all affective
     states can be represented by the dimensions valence, arousal and dominance
   * This mapping to and from the VAD space can be regarded as a pivot
@@ -80,10 +80,10 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   * nL results for emotional dimensions were more promising (0.64 Pearson’s r)
 * Multi-task learning in tasks related to emotion and sentiment [14,15]
   * not many studies perform transfer learning with multiple emo frameworks
-  * various studies employ multitask learning by jointly training emotion detec
-    with sentiment analysis [16,17] or other related tasks [18]
+  * various studies employ multitask learning by jointly training
+    emotion detec with sentiment analysis [16,17] or other related tasks [18]
   * these studies suggest that multi-task frameworks outperform single-task
-* deal with disparate label spaces. Mostly,
+* deal with disparate label spaces
   * mapping between categorical and dimensional frameworks
     eg Stevenson+ [19] and Buechel and Hahn [20,21]
     * scores for valence, arousal and dominance were used to predict
@@ -135,14 +135,15 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   used as input for a meta-learner algorithm, in this case an
   SVM for classification and a linear regression model for VAD
 * Nested cross-validation is used for this approach
-  * when training the base models, for every test fold, a model is trained on
-    eight folds and predictions are saved on the remaining fold. This is
-    repeated, so that, for every test fold, predictions for the other nine
-    folds have been made. These predictions will be used in the training phase
-    of the meta-learner. Afterwards, the model is trained again using regular
-    cross-validation, in order to save predictions for the test fold, based on
-    training on nine folds. These predictions are then used during the test
-    phase of the meta-learner
+  * training data of the meta-learner
+    * when training the base models, for every test fold, a model is trained on
+      eight folds and predictions are saved on the remaining fold
+    * This is repeated, so that, for every test fold, predictions for the other
+      nine folds have been made
+    * These predictions will be used in the training phase of the meta-learner
+  * test data of the meta-learner 
+    * the model is trained again using regular cross-validation, in order to
+      save predictions for the test fold, based on training on nine folds
 
 ### 3.2.4. Pivot Method
 
@@ -150,11 +151,11 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   (see Figure 4)
   * several mapping techniques have been investigated in related work (Sec 2),
     hE these approaches are not eligible for a pivot method, as
-    they all rely on data in a bi-representational format and thus also require
+    they all rely on data in a bi-representational format
 * The rule-based mapping works as follows
-* we look up the emotion terms from our label set (anger, fear, joy, love, sa)
+* we look up the emotion terms from our label set {anger, fear, joy, love, sa}
   in the definition list with VAD scores of Mehrabian and Russell [12] and
-  scale them to a range from 0 to 1 to match the VAD annotation of the dataset.
+  scale them to a range from 0 to 1 to match the VAD annotation of the dataset
   * The scores can be found in Table 2
   * Following [22], we place both the textual instances to be classified and
     the vectors for the categorical emotion terms in the 3D space
@@ -194,7 +195,7 @@ else:
 
 ## 5.1. Correlation between Categories and Dimensions
 
-* The point biserial correlation coefficient is used to measure
+* The point biserial correlation coefficient is used to measure the
   correlation between a continuous and a binary variable
   * Table 8 (Tweets) and Table 9 (Captions)
 * Valence. In both domains,
@@ -220,7 +221,7 @@ else:
   * a mapping should be achieved without relying on any categorical annotation
   * correlations too low to directly map VAD predictions to categories through
     a rule-based approach, as was proven in the results of the pivot method
-* For comparison, we did try to learn a simple mapping using an SVM
+* SVM. For comparison, we did try to learn a simple mapping using an SVM
   * similar approach as meta-learn depicted in Figure 3, but now
     only the VAD predictions are used as input for the SVM classifier
   * Results of this learned mapping are shown in Table 10
@@ -234,14 +235,13 @@ else:
   multi-framework) and the pivot model
   * we randomly select a number of instances and discuss their predictions
   * Tweets/Captions: Figures 9–11/12--14
-  * Although the base model’s accuracy was higher for the Tweets,
-    the confusion matrices show that there are less misclassifications per
-    class in Captions, which corresponds to its overall higher macro F1 score
-    (0.372 compared to 0.347)
+  * the base model’s accuracy was higher for the Tweets, the confusion matrices
+  * there are less misclassifications per class in Captions, which corresponds
+    * overall higher macro F1 score (0.372 compared to 0.347)
 * the classifiers perform poorly on the smaller classes (fear and love)
-* meta-learner: The most notable improvement is for fear
-  * love and sadness are the categories that benefit most from the
-    meta-learning
+* meta-learner
+  * true positives: The most notable improvement is for fear
+  * general: fear, love and sadness are the categories that benefit most
 * The pivot method clearly falls short
   * Tweets subset, only the predictions for joy and sadness are acceptable,
     while anger and fear get mixed up with sadness
@@ -249,8 +249,8 @@ else:
     for all negative emotions
 * tab 11: ten rand instances (5 from the Tweets subcorpus and 5 from Captions)
   * English translation of the instances is given in Appendix A
-  * all (except instance 2), the base model gave a wrong prediction, while the
-    meta-learner outputted the correct class
+  * all (except instance 2), the base model gave a wrong prediction,
+    while the meta-learner outputted the correct class
   * the first example is interesting, as this instance contains irony
     * sunglasses emoji and the words _politicians never lie_
     * in fact an angry message
@@ -262,7 +262,7 @@ else:
 
 * other datasets and other languages than Dutch
 * different model architectures for the pivot method
-* then The pivot method for mapping to other label sets
+* The pivot method for mapping to other label sets
 * other modalities, eg facial emotion recognition (FER)
   * A well-known problem in FER is the poor performance in real-time testing
     because of the bad quality of datasets [37]

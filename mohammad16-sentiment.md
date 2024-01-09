@@ -1,7 +1,7 @@
-Saif M Mohammad
 Challenges in sentiment analysis
-in Cambria, Das, Bandyopadhyay, and Feraco eds. A practical guide to sentm anal
-2017
+Saif M Mohammad
+in Cambria, Das, Bandyopadhyay, and Feraco eds
+  A practical guide to sentm anal 2017
 
 * Russell (1980) developed a model of affect with two primary dimensions:
   valence (positive and negative dimension) and

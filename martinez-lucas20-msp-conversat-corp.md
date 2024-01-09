@@ -4,9 +4,8 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
 
 # Abstract
 
-* lack of large corpora annotated with emotional labels that reflect the
-  temporal complexity of expressive behaviors, especially during
-  multiparty interactions
+* large corpus annotated with emotional labels that reflect the temporal
+  complexity of expressive behaviors, especially during multiparty interactions
 * we introduce the MSP-Conversation corpus, which contains
   * interactions annotated with time-continuous emotional traces for
     arousal (calm/active), valence (negative/pos), and dominance (weak/strong)
@@ -14,11 +13,14 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
     explore emotional displays at different temporal resolutions while
     leveraging contextual information
   * ongoing effort, currently > 15 hours of speech annotated by >= 5 annotors
-  * The data is sourced from the MSP-Podcast corpus
+  * The data is sourced from the MSP-Podcast corpus 
     * MSP-Podcast: speech data from online audio-sharing websites
       annotated with sentence-level emotional scores
       * an easy, affordable, and scalable approach to obtain
         natural data with diverse emotional content from multiple speakers
+      * Lotfian and Busso, 
+        ...naturalistic emotionally balanced speech corpus by retrieving
+        IEEE Transactions on Affective Computing, vol. 10, no. 4 2019
   * we compare the time-continuous evaluations from MSP-Conversation
     with the sentence-level annotations of the MSP-Podcast corpus
     for the speech segments that overlap between the two corpora
