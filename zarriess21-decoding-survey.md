@@ -74,10 +74,10 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       strict left-to-right fashion and make it difficult to pass information
       between the encoder and the decoder in a flexible way
   * transformer architecture by Vaswani+ [40] has now replaced RNNs in many
-    * self-attention heads. The layers of the transformer are built out of many
+    * self-attention heads, the layers of the transformer are built out of many
     * The decoder can attend to all positions up to the current one via
-      self-attention, and includes encoder-decoder attention layers that allow
-      the decoder to attend to all positions in the input sequence
+      self-attention, and includes encoder-decoder attention layers that
+      allow the decoder to attend to all positions in the input sequence
     * most, but not all, neural generation systems are autoregressive, see the
       next Section 2.3 for a brief summary of non-autoregressive approaches
 * different ways in which these models can be optimized
@@ -109,12 +109,12 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   generation architecture, leading to so-called non-autoregressive models
   * parallel decoding (here understood as the decoder part of the model)
 * the WaveNex?t architecture for text-to-speech synthesis by Oord+ [48]
-* Gu+ [49] proposed a model for non-autoregressive machine translation, with the
-  aim of fully leveraging the performance advantage of the Transformer
+* Gu+ [49] proposed a model for non-autoregressive machine translation
+  * aim: fully leveraging the performance advantage of the Transformer
   during decoding and
-  avoid slow, potentially error-prone decoding mechanisms, such as beam search
-* The main idea of non-autoregressive modeling is that, at inference time, the
-  model does not have to take into account dependencies
+  * avoid slow, potentially error-prone decoding mechanisms, such as beam search
+* The main idea of non-autoregressive modeling: at inference time, the model
+  does not have to take into account dependencies
 * naive baseline in (3)
   * predicts the target length of the sentence from its input and
   * conditions the word probabilities only on the input, not on preceding output
@@ -122,28 +122,27 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       exhibits full conditional independence
 * Most studies show that non-autoregressive models typically generate output of
   lower quality then outputs of autoregressive models
-  * However, they are much faster and in some domains, such as speech synthesis
-    or machine translation, good quality can be reached by using techniques of
-    knowledge distillation [49], probability density distillation [48], or
-    iterative refinement [50]
+  * nL they are much faster and 
+  * in some domains, such as speech synthesis or machine translation, 
+    good quality can be reached by using techniques of knowledge distillation
+    [49], probability density distillation [48], or iterative refinement [50]
 * some work on non-autoregressive or partially autoregressive models aims at
   going beyond the assumption that output needs to be produced in a fixed
   left-to-right generation order
-  * Gu+ [51] present a transformer that treats generation order as a latent
-    variable in sequence generation
-    * predict the next word and, based on the next word, the next position in a
-      given partial sequence
+  * Gu+ [51] present a transformer that treats
+    generation order as a latent variable in sequence generation
+    * predict the next word and, based on the next word,
+      the next position in a given partial sequence
     * Since likelihood marginalized over generation orders is intractable,
       they approximate the latent generation orders using beam search to explore
       the space of all permutations of the target sequence. In a similar vein,
-  * Stern+ [52] develop the Insertion Transfomer which is trained to predict
-    insertions of words into a partial sequence
+  * Stern+ [52] develop the Insertion Transfomer which is
+    trained to predict insertions of words into a partial sequence
     * By adopting different loss functions, their model can accommodate
       different generation orders, including orders that can be parallelized
       (eg, balanced binary trees)
-  * Both Gu+ [51]’s and Stern+ [52]’s experiments show that insertion-based
-    decoding models reach SOTA performance in tasks, such as MT, code
-    generation, or image captioning
+  * Gu+ [51]’s and Stern+ [52]’s experiments show that insertion-based decoding
+    reaches SOTA performance in tasks eg MT, code generation, or image caption
 * non-autoregressive models typically involves a built-in mechanism that defines
   the assembly of the sequence, in contrast to the autoregressive generation
 
