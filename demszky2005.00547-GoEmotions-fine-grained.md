@@ -39,9 +39,9 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * we compiled GoEmotions, the largest human annotated dataset
   * 58k carefully selected Reddit comments, labeled for 27 emotion cat or Neut
   * comments extracted from popular English subreddits. Table 1: a sample
-  * our emotion taxonomy considering related work in psychology and coverage in
-    our data
-  * Ekman’s taxonomy, which includes only one positive emotion (joy),
+  * our emotion taxonomy considering both
+    related work in psychology and coverage in our data
+  * Ekman’s taxonomy, includes only one positive emotion (joy),
   * our taxonomy includes many positive, negative, and ambiguous emotion categs
   * suitable for downstream conversation understanding tasks
     * for tasks that require a subtle understanding of emotion expression
@@ -55,7 +55,7 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
   * the toplevel clusters correspond to sentiment categories
   * allow for potential grouping into higher-level categories
     * if desired for a downstream task
-* strong baseline for modeling finegrained emotion classification over
+* strong baseline for modeling finegrained emotion classification
   * By fine-tuning a BERT-base model (Devlin+ 2019)
   * average F1-score of
     * .46 over our taxonomy
@@ -66,7 +66,7 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * transfer learning experiments with existing emotion benchmarks show that
   our data can generalize to different taxonomies and domains, such as
   tweets and personal narratives
-  * given limited additional data for labeled for emo classif in spec domains,
+  * given limited additional data labeled for emo classif in spec domains,
     our data can provide baseline emotion understanding
     and contribute to increasing model accuracy for the target domain
 * Future work
@@ -80,14 +80,14 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * emotion datasets vary in size, domain and taxonomy (Bostan and Klinger, 2018)
 * Affective Text (Strapparava and Mihalcea, 2007) was the first benchmark for
   emotion recognition
-  * majority of emotion datasets are constructed manually, but relatively small
-    * The largest manually labeled dataset is CrowdFlower (2016), with
-      * 39k labeled examples
-      * found by Bostan and Klinger (2018) to be noisy in comparison with other
-  * automatically weakly-labeled, based on emotion-related hashtags on Twitter
-    (Wang+ 2012; Abdul-Mageed and Ungar, 2017)
-  * We build our dataset manually, making it the largest human annotated
-    * multiple annotations per example for quality assurance
+* majority of emotion datasets are constructed manually
+  * The largest manually labeled dataset is CrowdFlower (2016), with
+    * 39k labeled examples
+    * found by Bostan and Klinger (2018) to be noisy in comparison with other
+* automatically weakly-labeled, based on emotion-related hashtags on Twitter
+  (Wang+ 2012; Abdul-Mageed and Ungar, 2017)
+* We build our dataset manually, making it the largest human annotated
+  * multiple annotations per example for quality assurance
 * domains
   * Twitter: informal language and expressive content, such as emojis and hashtag
   * news headlines (Strapparava and Mihalcea, 2007)
@@ -102,7 +102,7 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 * The vast majority of existing datasets contain annotations for
   * minor variations of the 6 basic emotion categories by Ekman (1992a) and/or
-    * (joy, anger, fear, sadness, disgust, and surprise)
+    * joy, anger, fear, sadness, disgust, and surprise
   * along affective dimensions (valence and arousal) that underpin the
     circumplex model of affect (Russell, 2003; Buechel and Hahn, 2017)
 * Recent advances in psychology have offered
@@ -122,10 +122,9 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * feature-based and neural models have been used for automatic emotion classif
   * Feature-based models often make use of handbuilt lexicons, such as the
     Valence Arousal Dominance Lexicon (Mohammad, 2018)
-  * BERT (Devlin+ 2019) has recently shown to reach SOTA perf on several tasks,
-    including emotion prediction
+  * BERT (Devlin+ 2019) reached SOTA perf on several tasks, including emotion
     * the top-performing models in the EmotionX Challenge (Hsu and Ku, 2018)
-      all employed a pre-trained BERT model. We also use the BERT model in our
+      all employed a pre-trained BERT model. We also use the BERT model
     * we find that BERT outperforms our biLSTM model
 
 # 3 GoEmotions

@@ -26,8 +26,8 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * surveillance, sentiment analysis, health communication, and analyzing the
     history of a disease, injury, or promote health
   * Systematic reviews of studies that examine personal health experiences
-    shared online reveal the
-    breadth of application domains, which include
+    shared online reveal the breadth of 
+    * application domains, which include
     * infectious diseases and outbreaks (Charles-Smith+ 2015), illicit drug use
       (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015).  These
     * potential in supporting PHS, augmenting adverse event reporting, and as
@@ -64,22 +64,22 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     stress identification, vaccine hesitancy and refusal,
     identifying common health-related misconceptions, sentiment analysis, and
     the health-related behaviors they support (Naseem+ 2022a,b)
-* Rao+ (2020) presented a hierarchical method that
-  used BERT with attention-based BiGRU and achieved
-  competitive performance for depression detection
+* Rao+ (2020): a hierarchical method that used 
+  * BERT with attention-based BiGRU and achieved
+  * competitive performance for depression detection
 * vaccine-related sentiment classification, Zhang+ (2020) classified
   tweet-level HPV vaccine sentiment using three transfer learning techniques
   (ELMo, GPT, and BERT) and found that a finely tuned BERT produced the best
-* Biddle+ (2020) presented a method (BiLSTMSenti) that leveraged contextual
-  word embeddings (BERT) with word-level sentiment to improve performance
+* Biddle+ (2020) presented a method (BiLSTMSenti) that leveraged
+  * contextual word embeddings (BERT) with word-level sentiment
 * Naseem+ (2021b) presented a model that uses domain-specific LM and captures
   commonsense knowledge into a context-aware bidirectional gated recurrent netw
-* Sawhney+ (2021) presented an ordinal hierarchical attention model for Suicide
-  Risk Assessment where
+* an ordinal hierarchical attention model for Suicide Risk Assessment
+  (Sawhney+ 2021)
   * text embeddings obtained by Longformer were fed to BiLSTM with attention
-    and ordinal loss as an objective function
+  * ordinal loss as an objective function
   * abstract: neural methods for assessing suicide risk on social media ignore
-    the inherent ordinal nature across fine-grain levels of suicide risk. To
+    the inherent ordinal nature across fine-grain levels of suicide risk
     * we reformulate suicide risk assessment as an Ordinal Regression problem,
 * no PLM trained on health-related text collected from social media that
   directly benefit the applications related to PHS

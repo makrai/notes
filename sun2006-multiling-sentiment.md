@@ -15,7 +15,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
 * we introduce three linguistic features that capture cross-cultural sims that
   manifest in linguistic patterns and quantify distinct aspects of lang pragm:
   * language context-level, figurative language, and the
-    lexification of emotion concepts. Our
+    lexification of emotion concepts
   * capture cross-cultural similarities and align well with existing work in
     sociolinguistics and linguistic anthropology
 * downstream task of choosing transfer languages for cross-lingual sentiment
@@ -33,7 +33,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
   * can be used to select transfer languages and improve cross-lingual transfer,
     specifically in pragmatically-motivated tasks such as sentiment analysis,
     * expressions of subtle sentiment or emotion vary significantly by culture
-      * e.g. subjective well-being (Smith+ 2016), anger (Oster, 2019), or
+      * eg subjective well-being (Smith+ 2016), anger (Oster, 2019), or
         irony (Karoui+ 2017)
 * We focus on three aspects in the intersection of lang and culture,
   * features to operationalize them
@@ -43,9 +43,10 @@ arXiv preprint arXiv …, 2020 arxiv.org
   2. similar cultures construct and construe figurative language similarly
      (Casas and Campoy, 1995; Vulanović, 2014)
   3. emotion semantics is similar between languages that are culturally-related
-     (Jackson+ 2019)
-     * e.g. in Persian, ‘grief’ and ‘regret’ are expressed with the same word
-       whereas ‘grief’ is co-lexified with ‘anxiety’ in Dargwa
+    (Jackson+ 2019)
+    * eg grief = ?
+      * in Persian, ‘grief’ and ‘regret’ are expressed with the same word
+      * in Dargwa, ‘grief’ is co-lexified with ‘anxiety’ 
       * Therefore, Persian/Dargwa speakers may perceive ‘grief’ as more similar
 * We validate the proposed features qualitatively, and also by an extrinsic
   * confirm that our linguistic features capture the intended cultural patterns

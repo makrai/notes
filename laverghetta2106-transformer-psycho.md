@@ -46,10 +46,10 @@ github.com/Advancing-Machine-Human-Reasoning-Lab/transformer-psychometrics
     * The architecture achieved superior results to multiple baselines
   * Ahmad+ (2020) created a deep learning architecture for extracting
     psychometric dimensions related to healthcare, specifically numeracy,
-    literacy, trust, anxiety, and drug experiences. Their architecture did not
-    use transformers, and relied instead on a sophisticated combination of
-    convolutional and recurrent layers in order to extract representations of
-    emotions, demographics, and syntactic patterns, among others
+    literacy, trust, anxiety, and drug experiences. Their architecture did 
+    * not use transformers, and relied instead on a sophisticated combination
+      of convolutional and recurrent layers in order to 
+    * extract representations of emotions, demographics, and synt patterns,
   * Eisape+ (2020) examined the correlation between human and LM next-word pred
     and proposed a procedure for achieving more human-like cloze probabilities
   * item response theory (IRT, Reckase, 2009) have been particularly popular

@@ -6,7 +6,7 @@ arXiv:2310.17369 [cs.CL]
 * emo dynamics in psychopathology: the patterns of emotional change over time
   * at an aggregate level, they are indicators of one's mental health
   * traditionally determined through self-reports of emotions
-    * hE issues with accuracy, bias, and ease of data collection
+  * hE issues with accuracy, bias, and ease of data collection
 * Recently: from one's everyday utterances. Addresses many of the concerns
   * not yet known whether these measures of utterance emotion dynamics (UED)
     correlate with mental health diagnoses
