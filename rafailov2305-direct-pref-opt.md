@@ -2,6 +2,8 @@ Direct Preference Optimization: Your Language Model is Secretly a Reward Model
 Rafael Rafailov, Archit Sharma, Eric Mitchell, S Ermon, CD Manning, C Finn
 arXiv:2305.18290 [cs.LG]
 
+see the intro of https://www.deeplearning.ai/the-batch/issue-231/
+
 # Abstract
 
 * large-scale unsupervised LMs learn broad world knowledge and some reasoning
@@ -18,54 +20,54 @@ arXiv:2305.18290 [cs.LG]
       without drifting too far from the original model
 * we introduce a new parameterization of the reward model in RLHF that
   * enables extraction of the corresponding optimal policy in closed form,
-    allowing us to solve the standard RLHF problem with only a simple
-    classification loss
+    allowing us to solve the standard RLHF problem
+    with only a simple classification loss
   * Direct Preference Optimization (DPO), the resulting algorithm we call
   * stable, performant, and computationally lightweight
   * no need for sampling from the LM during fine-tuning or performing
   * no significant hyperparameter tuning
 * experiments show that DPO can fine-tune LMs to align with human preferences
   as well as or better than existing methods
-  * fine-tuning with DPO exceeds proximal policy optimization (PPO)-based RLHF
-    in ability to control sentiment of generations, and
+  * exceeds proximal policy optimization (PPO)-based RLHF in ability to
+    control sentiment of generations, and
   * matches or improves response quality
     in summarization and single-turn dialogue
   * substantially simpler to implement and train
 
 # 2 Related work
 
-* Self-supervised language models of increasing scale learn to complete some
-  * zero-shot [31] or with few-shot prompts [6, 25, 11]. However, their
+* Self-supervised language models of increasing scale
+  * zero-shot [31] or few-shot prompts [6, 25, 11]
 * instruction-tuning
   * performance on downstream tasks and alignment with user intent can be
     significantly improved by fine-tuning on datasets of instructions and
-    humanwritten completions [23, 36, 13, 39]. This ‘
+    humanwritten completions [23, 36, 13, 39]
   * enables LLMs to generalize to instructions outside of the
-    instruction-tuning set and generally increase their usability [13]. Despite
-* fine-tuned LLMs with datasets of human preferences, improving
+    instruction-tuning set and generally increase their usability [13]
+* fine-tuned LLMs with datasets of human preferences
   * relative human judgments of response quality are often easier to collect
-    than expert demonstrations, and thus subsequent works have
+    than expert demonstrations
   * in translation [18], summarization [38, 49], story-telling [49], and
     instruction-following [26, 32]
   * steps
     * first optimize a neural network reward function for compatibility with the
-      dataset of preferences under a preference model such as the Bradley-Terry
-      model [5], then
+      dataset of preferences under
+      a preference model such as the Bradley-Terry model [5]
     * fine-tune a language model to maximize the given reward using
-      reinforcement learning algorithms, commonly REINFORCE [45], proximal
-      policy optimization (PPO; [37]), or variants [32]
+      reinforcement learning algorithms, commonly REINFORCE [45],
+      proximal policy optimization (PPO; [37]), or variants [32]
 * A closely-related line of work leverages
   LLMs fine-tuned for instruction following with human feedback to generate
-  additional synthetic preference data for targeted attributes such as
+  additional synthetic preference data for targeted attributes
   * attributes eg safety or harmlessness [2], using only
   * weak supervision from humans in the form of a text rubric for the LLM’s
     annotations. These methods represent
-  * a convergence of two bodies of work: one body of work on
-    * training language models with reinforcement learning for a variety of
-      objectives [33, 27, 46] and another body of work on
+  * a convergence of two bodies of work
+    * training language models with reinforcement learning
+      for a variety of objectives [33, 27, 46]
     * general methods for learning from human preferences [12, 19]
-* Despite the appeal of using relative human preferences, fine-tuning large
-* reinforcement learning remains a major practical challenge;
+* the appeal of using relative human preferences
+* hE reinforcement learning remains a major practical challenge
 * we: a theoretically-justified approach to optimizing relative preferences
   without RL
 * not language
@@ -76,17 +78,16 @@ arXiv:2305.18290 [cs.LG]
     the absence of absolute rewards, theoretical analysis of CDBs
     * substitutes the notion of an optimal policy with a von Neumann winner, a
       policy whose expected win rate against any other policy is at least 50%
-      [14]. However, in the CDB setting,
-    * hE preference labels are given online, while in learning from human
-      preferences, we typically learn from a fixed batch of offline
-      preference-annotated action pairs [47]
+      [14]
+    * hE preference labels are given online, while
+      in learning from human preferences, we typically learn from
+      a fixed batch of offline preference-annotated action pairs [47]
   * preference-based RL (PbRL) learns from binary preferences generated by an
     unknown ‘scoring’ function rather than rewards [9, 35]
     * algorithms for PbRL exist, including methods that can reuse off-policy
       preference data, but
     * generally involve
-      * first explicitly estimating the latent scoring function (i.e. the
-        reward model) and
+      * first explicitly estimating the latent scoring function (=reward model)
       * subsequently optimizing it [16, 9, 12, 34, 19]
     * We instead present a single stage policy learning approach that
       directly optimizes a policy to satisfy preferences
