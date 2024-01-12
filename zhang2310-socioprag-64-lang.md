@@ -226,8 +226,7 @@ https://github.com/UBC-NLP/SPARROW
   * mT0 (Muennighoff+, 2022), an mT5 model tuned with xP3 corpus,
   * Alpaca (Taori+, 2023), a LLaMA-initialized model
     tuned with 52K English instruction-following samples,
-  * Vicuna (Chiang+, 2023), a LLaMA-initialized model on 70K conversational
-    data, and
+  * Vicuna (Chiang+, 2023), a LLaMA-initialized model on 70K conversat data
   * ChatGPT, for which we use the gpt-3.5-turbo-0301 version via OpenAI API.2
 * details
   * We use 7B-size version of BLOOM~ and LLaMA-based models and
@@ -318,7 +317,7 @@ https://github.com/UBC-NLP/SPARROW
 * The instruction-response data for training Alpaca and Vicuna models consist
   solely of English language
   => we compare the performance of Alpaca and Vicuna to that of LLaMA using
-  both English and non-English datasets. We observe that
+  both English and non-English datasets
   * Alpaca and Vicuna outperform LLaMA when evaluated on English datasets,
   * hE, their performance declines when tested on non-English datasets,
 * Compared to task-specific InfoDCL, ChatGPT performs poorly in 63 out of 64
@@ -362,14 +361,13 @@ https://github.com/UBC-NLP/SPARROW
 ### 5.2.8 How do open-source LLMs perform with few-shot in-context learning?
 
 * Table 6 compares three-shot and five-shot results with zero-shot results
-* few-shot learning does enhance the performance of BLOOM, mT5, LLaMA, and
-  Vicuna
+* few-shot learning does enhance the perf of BLOOM, mT5, LLaMA, and Vicuna
 * With the increasing number of shots, the performance of LLaMA and Vicuna
   increases. Vicuna obtains SPARROW scores of 29.36, 39.44, and 41.97
   with zero, three, and five shots, respectively
 * hE BLOOMZ-P3 and mT0 do not improve with few-shot learning
   * We suspect this is because the instruction finetuning of these two models
-    only uses a zero-shot template that hurts their few-shot learning
+    only uses a zero-shot template that hurts them in few-shot learning
   * they are also different from BLOOM and LLaMA in that they are finetuned on
     several NLP tasks only one of which is an SM task (ie sentiment analysis)
 
