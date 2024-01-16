@@ -69,7 +69,7 @@ setup instructions, evaluation pipelines & examples, is freely available online
 
 # 2. Speech emotion recognition adaptation benchmark (serab)
 
-## 2.1 A summary of the tasks used in SERAB is presented in Table 1. The
+## 2.1 A summary of the tasks used in SERAB is presented in Table 1
 
 * nine speech emotion classification tasks in six languages: 
   * four in English (CREMA-D, IEMOCAP, RAVDESS & SAVEE), and 

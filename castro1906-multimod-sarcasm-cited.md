@@ -81,7 +81,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 * multimodal ~> better relationship modeling (Majumder 2018), and 
 * exploit models that provide gesture, facial and pose information (Cao 2018).
 
-## Neural baselines: As we strove to create a 
+## Neural baselines
 
 * high quality vs corpus size
 * the occurrence of sarcastic utterances itself is scanty. To focus on effects
@@ -91,7 +91,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 * solutions involving pre-training, transfer learning, domain adaption, or
   low-parameter models.
 
-## Sarcasm detection in conversational context:
+## Sarcasm detection in conversational context
 
 * MUStARD is inherently a dialogue level dataset where 
   we aim to classify the last utterance in the dialogue. In a dialogue, to

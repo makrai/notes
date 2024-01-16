@@ -125,8 +125,7 @@ arXiv:1911.02499
 
 ### GoEmotions. A multi-labeled categorical dataset
 
-* 58,009 reddit comments with 28 emotion labels including neutral class
-  (Demszky+ 2020)
+* 58,009 reddit comments with 28 emotion labels including neut (Demszky+ 2020)
 * hE the original dataset with 28 emotion labels has
   large disparity in terms of emotion frequencies 
   (admiration is 30 times more frequent that grief )

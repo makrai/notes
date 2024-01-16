@@ -8,7 +8,7 @@ arXiv:2203.07378 [eess.AS]
 
 * transformer-based architectures pre-trained with self-supervision
 * audio domain: successfully utilised
-* hE not evaluated the
+* hE not evaluated
   * influence of model size and pre-training data on downstream performance,
   * generalisation, robustness, fairness, and efficiency
 * we: a thorough analysis of these aspects on several pre-trained variants of
@@ -56,15 +56,18 @@ arXiv:2203.07378 [eess.AS]
   * speech enhancement or data augmentation to improve robustness [12, 13], and
   * de-biasing techniques to mitigate unfair outcomes [17]
 * each of those approaches comes with its own hyperparameters to tune
-* general-purpose foundation models that can be easily adapted to several use-
-  cases [18]
+* general-purpose foundation models
+  that can be easily adapted to several usecases [18]
   * trained on large datasets, often using proxy tasks to avoid dependencies on
     hard-to-acquire labels, and then
   * fine-tuned on (small) sets of labelled data for their intended tasks
-  * tremendous success in computer vision [19], NLP [20], and computer audition
-    [21, 22] – including SER [23, 24, 25]
+  * tremendous success in computer vision [19], NLP [20], and
+    computer audition [21, 22] – including SER [23, 24, 25]
   * speech: wav2vec 2.0 [21] and HuBERT [22]
-* best performing model publicly available [26]
+* best performing model publicly available [22]
+  * J Wagner, A Triantafyllopoulos, H Wierstorf, M Schmitt, F Eyben, B Schuller
+    Model for Dimensional Speech Emotion Recognition based on Wav2vec 2.0,
+    2022 DOI: 10.5281/zenodo.6221127.
   * the first transformer-based dimensional SER model released
   * [an introduction how to use it](https://github.com/audeering/w2v2-how-to)
 
@@ -168,8 +171,7 @@ arXiv:2203.07378 [eess.AS]
   * emotionally balanced
   * original labels cover a range from 1 to 7, which we normalise into 0..1
     * In-domain results are reported on the test-1 split
-    * The test-1 split contains 12, 902 samples (54% female) from 60 speakers
-                                                                          (50%)
+    * test-1 split contains 12, 902 samples (54% female) from 60 speakers (50%)
     * samples per speaker vary between 42 and 912
       * combined length: roughly 21 hours, and
       * vary between 1.92 s and 11.94 s per sample
@@ -348,4 +350,4 @@ better performance?
   compared with comparable models pre-trained only for English (Section 4.1)
 
 
-# 8 Conclusion
+# 7 Conclusion
