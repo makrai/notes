@@ -82,9 +82,9 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
     the most used models for detection
     * well researched, easy to understand and included in many ML frameworks
 
-## Study type can be association, detection and forecasting
+## 3.1 Study type can be association, detection and forecasting
 
-## Study duration can be either short-term or long-term
+## 3.2 Study duration can be either short-term or long-term
 
 * eg
   * social anxiety disorder, several transitions between a non-anxious and an
@@ -105,7 +105,7 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
       * Grünerbl utilized machine learning to recognize bipolar states and
         * recognition accuracy of 76%. Table 2 provides more examples
 
-## Sensing types can be wearable, external and software/social media
+## 3.3. Sensing types can be wearable, external and software/social media
 
 ### 3.3.3. Software and social media sensing
 

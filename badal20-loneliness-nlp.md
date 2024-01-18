@@ -12,27 +12,23 @@ VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
     * qualitative (eg, open-ended or semi-structured)
     * quantitative (eg, based on the Uni of California Loneliness Scale)
 * nuanced features are not easily assessed by the human eye
-  * such as word choice, expressed emotions, and sentence structure
-* NLP eg parts-of-speech tagging, named entity recognition and parsing
-  * NLU is a subset of NLP which is more aligned with comprehension
-  * tasks such as reasoning, translation, summarization, question-answering,
-    sentiment and emotion analysis
+  * eg word choice, expressed emotions, and sentence structure
 * using NLP tools for psychiatric applications include predicting/diagnosing
   * psychiatric readmission, 21
-    * 21. Rumshisky A, Ghassemi M, Naumann T,+
+    * 21. Rumshisky A, Ghassemi M, Naumann T+
       Predicting early ~ with NLP of narrative discharge summaries
       Transl Psychiatry 2016; 6, e921- e921
   * suicidality 22,23 or
-    * 22. Cook BL, Progovac AM, Chen P,+
+    * 22. Cook BL, Progovac AM, Chen P+
       Novel use of NLP to predict suicidal ideation and psychiatric symptoms in
       a text-based mental health intervention in Madrid
       Comput Math Methods Med 2016; 2016;doi:10.1155/ 2016/8708434
-    * 23. Fernandes AC, Dutta R, Velupillai S,+
+    * 23. Fernandes AC, Dutta R, Velupillai S+
       Identifying suicide ideation and suicidal attempts in a psychiatric
       clinical research database using NLP
       Sci Rep 2018; 8:1–10
   * mental health crises 24
-    * 24. Kolliakou A, Bakolis I, Chandran D,+
+    * 24. Kolliakou A, Bakolis I, Chandran D+
       Mental health-related conversations on social media and crisis episodes: a
       time-series regression analysis
       Sci Rep 2020; 10:1342
@@ -42,7 +38,7 @@ VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
       psychiatric notes with deep neural networks
       J Biomed Inform 2017; 75:S138–S148
   * depression 26
-    * 26. Perlis R, Iosifescu D, Castro V,+
+    * 26. Perlis R, Iosifescu D, Castro V+
       Using electronic medical records to enable large-scale studies in
       psychiatry: treatment resistant depression as a model
       Psychol Med 2012; 42:41–50
@@ -56,8 +52,8 @@ VD Badal, SA Graham, CA Depp, K Shinkawa, Y Yamada, LA Palinkas, H Kim,
   * quantitative loneliness assessments
     with residents of a continuing care senior housing community
     * interviews were analyzed using NLP to identify differences in transcribed
-      speech patterns in lonely versus non-lonely individuals (based on
-      qualitative and quantitative assessments)
+      speech patterns in lonely versus non-lonely individuals
+      (qualitative and quantitative assessments)
     * proof-of-concept study
     * we explored how NLP analytic methods could assess whether individuals
       reported feeling lonely in response to a direct question about loneliness

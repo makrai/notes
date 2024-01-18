@@ -14,7 +14,7 @@ PLOS Published: April 10, 2020
   * Unlike traditional observational cohort studies conducted through
     questionnaires and self-reported surveys
 * we explore the reliable detection of depressive symptoms from tweets
-  * multimodal big (social) data to discern depressive behaviors using
+  * multimodal social data to discern depressive behaviors using
     a wide variety of features including individual-level demographics
   * developing a multimodal framework and employing statistical techniques to
     fuse heterogeneous sets of features obtained through the processing of

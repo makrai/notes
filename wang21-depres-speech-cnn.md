@@ -4,14 +4,14 @@ Front. Hum. Neurosci., 2021 Sec. Cognitive Neuroscience Volume 15
 
 # Abstract
 
-* goal: objective evaluation of depression based on intelligent technology to
+* goal: objective evaluation of depression based on intelligent technology
   * early diagnosis and treatment of patients
-  * abnormal speech features of patients with depression are related to their
+  * abnormal speech features of patients with depression
   * limited performance of traditional feature extraction methods for speech
   * from the conclu: problem of small fluctuation of emotion in daily speech
 * we suggest 3D-CBHGA
   * Three-Dimensional Convolutional filter bank with Highway Networks and
-    Bidirectional GRU (Gated Recurrent Unit) with an Attention mechanism, which
+    Bidirectional GRU (Gated Recurrent Unit) with an Attention mechanism
   * two key strategies
     * The three-dimensional feature extraction of the speech signal is time-eff
     * Based on the attention mechanism in the GRU network,
@@ -29,27 +29,27 @@ Front. Hum. Neurosci., 2021 Sec. Cognitive Neuroscience Volume 15
 
 * human brain: different types of information have different concerns
 * attention mechanism (Mnih+ 2014) and
-* Mnih, V., Heess, N., Graves, A., and Kavukcuoglu, K. (2014)
-  Recurrent models of visual attention
-  International Conference on Neural Information Processing Systems (NIPS 2014)
-* applied it to image recognition, which determined its contribution to the
-* Bahdanau+ (2014) introduced the attention mechanism into machine translation
-* widely applied in various fields and become a research focus of neural netws
-* speech recognition is similar to machine translation (Chorowski+ 2015)
-  * converting a given sequence into another sequence, the attention mechanism
+  * Mnih, V., Heess, N., Graves, A., and Kavukcuoglu, K. (2014)
+    Recurrent models of visual attention
+    International Conference on Neural Information Processing Systems (NIPS 2014)
+  * applied it to image recognition
+  * Bahdanau+ (2014) introduced the attention mechanism into machine translation
+  * widely applied in various fields and become a research focus of neural netws
+  * speech recognition is similar to machine translation (Chorowski+ 2015)
+    * converting a given sequence into another sequence
 * in speech emotion recognition
   * more attention should be paid to the frames with full emotion
   * increase the proportion of valid frames and
     reduce the interference of invalid frames
-  * Huang+ (Huang and Narayanan, 2017): a Deep Convolutional Recurrent Neural
-    Network (DCRNN) for speech emotion recognition, which uses the
+  * Huang and Narayanan (2017): a Deep Convolutional Recurrent Neu Net (DCRNN)
+    for speech emotion recognition
     * convolutional attention mechanism to learn the discourse structures
-  * Mirsamadi+ (2017) added a local attention mechanism on the basis of an RNN,
-* In the depression detection scenario, the attention mechanism also played an
-  * Lu+ (2021) proposed an emotion-based attention network that can capture
-    high-level emotional semantic information and effectively improve
-    * A dynamic fusion strategy is proposed to integrate positive and negative
-      emotional information
+  * Mirsamadi+ (2017) added a local attention mechanism on the basis of an RNN
+* attention mechanism also in the depression detection scenario
+  * Lu+ (2021) proposed an emotion-based attention network that can
+    capture high-level emotional semantic information and effectively improve
+    * A dynamic fusion strategy is proposed
+      to integrate positive and negative emotional information
   * Zhang+ (2020) combined demographic factors in EEG modeling and depression
     detection, integrating gender and age factors into a 1D CNN through
     attention mechanisms to explore the complex correlation
@@ -62,20 +62,18 @@ Front. Hum. Neurosci., 2021 Sec. Cognitive Neuroscience Volume 15
 
 * Two groups of comparative experiments were conducted
   on DAIC-ori and DAIC-mute-removed, respectively, and
-  * four algorithms including 1D-CBBG, 3D-CBHGA, SVM, and Random Forest were
-  * 10 independent replicates, and the results were averaged. It mainly
+  * four algorithms including 1D-CBBG, 3D-CBHGA, SVM, and Random Forest
+  * 10 independent replicates, and the results were averaged
 * our focus:
-  * performance comparison between different algorithms; and
+  * performance comparison between different algorithms
   * the influence of different data sets on the performance of the algorithm
 * Table 3 shows the performance of four different models in the original uncut
   * accuracy of traditional classification algorithm SVM and RF is 62.86 and
     68.57%, respectively, the accuracy of the 1D-CBBG model is 71.43%, and the
-    accuracy of the 3D-CBHGA model is the highest (74.29%). It is proved that
+    accuracy of the 3D-CBHGA model is the highest (74.29%)
 * Table 4 shows the performance of four models in the DAIC-mute-removed data
-  * 3D-CBHGA has the best performance in the four evaluation indexes. According
+  * 3D-CBHGA has the best performance in the four evaluation indexes
   * better results than on original (those of SVM, RF, 1D-CBBG, and 3D-CBHGA)
-    * proves that silent segments in speech conversations are interference
-      items for depression recognition tasks
-* recognition performance of the four models for the depression category is
-  low, and that of the non-depression category is high
+  * ie silent segments in speech conversations are interference items
+* performance of the four models for the depression/non category is low/high
   * reason may be the imbalance between the two classes

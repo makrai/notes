@@ -1,7 +1,6 @@
 Self-deprecating Humor Detection: A Machine Learning Approach
 Ashraf Kamal & Muhammad Abulaish
-PACLING 2019
-Intl Conference of the Pacific Association for Computational Linguistics
+PACLING 2019 Intl Conf of the Pacific Association for Computational Linguistics
 
 # Abstract
 
@@ -20,8 +19,8 @@ Intl Conference of the Pacific Association for Computational Linguistics
 
 # 1 Intro
 
-* The proposed approach follows a layered design in which 
-  1. semi-automated process to identify candidate self-around instances 
+* The proposed approach follows a layered design in which
+  1. semi-automated process to identify candidate self-around instances
   2. feature extraction and classifier learning for self-deprecating humor
 
 # 2 Related work
@@ -30,24 +29,23 @@ Intl Conference of the Pacific Association for Computational Linguistics
   * whether a textual message is humorous or non-humorous (Liu+ 2018)
 * Mihalcea and Strapparava (2005) classiﬁed humorous or non-humorous text in
   One-Liners English jokes, news sentences, BNC corpus, and proverb lists
-  datasets
 * Reyes+ (2012) considered humor generation using supervised ML techniques
 * Zhang and Liu (2014) and Raz (2012) applied humor detection in Twitter
 * Yang+ (2015) considered a random forest classiﬁer to identify humor using
   * features, such as incongruity, ambiguity, interpersonal effect, and
-    phonetic style. They also introduced 
+    phonetic style
   * humor anchors in the form of words or phrases that play a role in recogniz
 * Zhang+ (2017): features like contextual knowledge, affective polarity, and
   subjectivity for humor recognition
 * Liu+ (2018) sentiment association for humor recognition in discourse relations
-* Beukel and Aroyo (2018): homonym as an indicative feature for humor recognition.
+* Beukel and Aroyo (2018): homonym as an indicative feature for humor recognition
 * Chen and Soo (2018) applied a deep learning approach for humor recognition
   using a convolutional neural network
 * Ortega-Bueno+ (2018) proposed an attention-based recurrent neural network
-  for humor detection in Spanish language and 
-* Ermilov+ (2018) applied the supervised approach in the Russian language for
+  for humor detection in Spanish
+* Ermilov+ (2018) applied a supervised approach for Russian
 * Gultchin+ (2019) applied word embedding
-* none of the existing works aims to identify self-deprecating humor, in which
+* none of the existing works aims to identify self-deprecating humor
 
 # 3 Our approach
 

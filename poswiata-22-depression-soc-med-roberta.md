@@ -1,4 +1,4 @@
-OPI@LT-EDI-ACL2022: Detecting Signs of Depression from Social Media Text using RoBERTa Pre-trained Language Models
+OPI@LT-EDI-ACL2022: Detecting Signs of Depression from Social Med using RoBERTa
 Rafał Poświata, Michał Perełkiewicz
 LTEDI 2022 ... on Language Technology for Equality, Diversity and Inclusion
 
@@ -6,20 +6,20 @@ model at huggingface
 
 # Abstract
 
-* This paper presents our winning solution for the LT-EDI-ACL2022
-  Shared Task on Detecting Signs of Depression from Social Media Text
-  * given social media posts in English, should detect the level of depression
-  * ‘not depressed’, ‘moderately depressed’ or ‘severely depressed’. We based
-  * We fine-tuned selected models: BERT, RoBERTa, XLNet, of which the best
-  * using the prepared corpus, we trained our own language model called
-    DepRoBERTa.  Fine-tuning of this model improved the results
-  * third solution was to use the ensemble averaging => best solution
-    * macro-averaged F1-score of 0.583
+* This paper presents our winning solution for the LT-EDI-ACL2022 Shared Task
+  on Detecting Signs of Depression from Social Media Text
+* given social media posts in English, should detect the level of depression
+* ‘not depressed’, ‘moderately depressed’ or ‘severely depressed’
+* We fine-tuned selected models: BERT, RoBERTa, XLNet
+* using the prepared corpus, we trained our own language model called
+  DepRoBERTa.  Fine-tuning of this model improved the results
+* third solution was to use the ensemble averaging => best solution
+* macro-averaged F1-score of 0.583
 
 # 1 Intro
 
-* rapid detection of depression signs is possible, for example, based on the
-  * social media posts of the individual (De Choudhury+ 2013)
+* rapid detection of depression signs is possible
+* based on the social media posts of the individual (De Choudhury+ 2013)
 
 # 2 Related work: depression detection in social media
 
@@ -32,34 +32,37 @@ model at huggingface
     * Support Vector Machines (SVM) classifier to estimate the presence of
   * Wolohan+ (2018) created a dataset based on Reddit2 posts, binary
     * LIWC (Pennebaker+ 2015)
-  * Pirina and Çöltekin (2018) also used Reddit as a data source and with other
-    * how training data can affect the quality of a SVM-based model to identify
-  * Tadesse+ (2019) use different types of approaches to text encoding (the
-    LIWC dictionary, Latent Dirichlet Allocation (LDA) topics or N-grams) to
+  * Pirina and Çöltekin (2018) also used Reddit as a data source and
+    * how training data can affect the quality of a SVM-based model
+  * Tadesse+ (2019) use LIWC, Latent Dirichlet Allocation (LDA) topics, N-grams
   * Arora and Arora (2019) analyze tweets for depression and anxiety by using
     Multinomial Naive Bayes and Support Vector Regression (SVR) classifier
-  * Lin+ (2020) create SenseMood system to detect depression from tweets based
-    on visual and textual features using Convolutional Neural Network (CNN) and
-    BERT language model
+  * Lin+ (2020) create SenseMood system to detect depression from tweets 
+    * visual and textual features using 
+      Convolutional Neural Network (CNN) and BERT language model
   * Zogan+ (2021) propose novel summarization boosted deep framework for
     * data filtering
   * Aswathy+ (2019); Haque+ (2021); William and Suhartono (2021)
-* deep learning and large pre-trained transformer-based LMs (Min+ 2021). This
+* deep learning and large pre-trained transformer-based LMs (Min+ 2021)
+  * Bonan Min, Hayley H Ross, Elior Sulem, Amir Pouran Ben Veyseh,
+      Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heinz, and Dan Roth
+    Recent advances in NLP via large pre-trained language models: A survey.
+    ArXiv, abs/2111.01243.
   * SOTA results for numerous classification tasks
     (Devlin+ 2019; Liu+ 2019; Chan+ 2020; Dadas+ 2020)
 
 # 3 Dataset and its modification
 
-* we first removing duplicate records containing the same posts. As a result of
+* we first remove duplicate records containing the same posts =>
   * the train set consists of a large number of the same examples, and the
     unique ones are only 2,720 (out of 8,891 total).  In the case of the
     dev set, the difference was much smaller, ie, 4,481 unique against 4,496
-  * make the train set larger than the dev or test set.  This is especially
+  * make the train set larger than the dev or test set
     => we decided to use part of the dev set for training,
-    leaving 1,000 examples for verification (we
-    * kept the class distribution close to the original one)
+    leaving 1,000 examples for verification 
+    * kept the class distribution close to the original one
   * As a result, the train set we used in our experiments counted 6,006 unique
-    * there were overlaps between the original train and dev sets). The whole
+    * there were overlaps between the original train and dev sets
 * the dataset is unbalanced, and the severe class is underrepresented
 
 # 4 Our solution
@@ -77,4 +80,4 @@ model at huggingface
 * analysis was carried out on the dev set
   as the competition organisers did not provide labels for the test set
 
-# 6 Concludes
+# 6 Conclusion

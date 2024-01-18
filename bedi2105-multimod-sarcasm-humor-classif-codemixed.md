@@ -77,12 +77,10 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
     the interactions among the modalities
   * Finally, we utilize the filtered representations for the sarcasm and humor
     classification
-
 * significant performance for both the sarcasm and humor classification tasks
   * We also evaluate MaSaC on the existing multi-modal contextual sentence
     classification systems. The comparative study reveals that MSH-COMICS
     yields superior performance compared to the baselines for both the tasks
-
 * contributions of the current work are as follows:
   * MaSaC, a qualitative multi-modal dataset
     for the sarcasm detection and humor classification
@@ -97,29 +95,27 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
 ## Sarcasm Detection has gained significant attention in the last few years
 
 * [24, 25, 26, 27, 28, 29]
-* Earlier work: lexical aspects of the text expressing sarcasm [24]. More
+* Earlier work: lexical aspects of the text expressing sarcasm [24]
   * the influence of adjectives, adverbs, interjections, and punctuation marks
-    in sarcasm detection, and showed that their presence have positive
-    correlation (though small) with the sarcastic text
+    * their presence have positive correlation (though small) with sarcasm
   * Tsur+ [26] proposed a semi-supervised approach for sarcasm discovery in
-    Amazon product reviews.  The authors employed punctuation and pattern-based
-    features to classify the unseen samples using a kNN classifier
-  * A similar study on tweet was proposed in [25]. Other works claimed
+    Amazon product reviews: punctuation and pattern-based features to classify
+    * kNN classifier
+  * A similar study on tweet was proposed in [25]
   * the presence of sentiment shift or the contextual incongruity to be an
     important factor in accurate sarcasm prediction [27]
-  * Son+ [30] proposed a hybrid Bi-LSTM and CNN based neural architecture for
+  * Son+ [30] proposed a hybrid Bi-LSTM and CNN based neural architecture
 * context
-  * for the implicit case, more often than not, the context in is of utmost
-    importance [31, 32, 33]
+  * for the implicit case, more often than not,
+    the context in is of utmost importance [31, 32, 33]
   * Joshi+ [31] exploited the historical tweets of a user to predict sarcasm in
     his/her tweet. They investigated the sentiment incongruity in the current
     and historical tweets, and proposed it to be a strong clue in the sarcasm
   * Ghosh+ [34] employed an attention-based recurrent model to identify sarcasm
-    in the presence of a context. The authors trained two separate
-    LSTMs-with-attention for the two inputs (ie sentence and context), and
-    subsequently, combined their hidden representations during the prediction
-  * context was also leveraged by [32]. The authors learned a CNN-BiLSTM based
-    hybrid model to exploit the contextual clues for sarcasm detection
+    in the presence of a context. The authors trained
+    * two separate LSTMs-with-attention for the sentence and the context, and
+  * context was also leveraged by [32]
+    * a CNN-BiLSTM based hybrid model to exploit the contextual clues
     * they investigated the psychological dimensions of the user in sarcasm
       using 11 emotional states (eg, upbeat, worried, angry, depressed, etc.)
 * Hindi or other Indian languages [35, 36].  One of the prime reasons for

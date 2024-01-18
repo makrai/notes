@@ -4,8 +4,8 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
 
 # Abstract
 
-* clinical databases in the study of mental disorders is essential to the
-  diagnosis and treatment of patients with mental illness
+* clinical databases in the study of mental disorders is
+  essential to the diagnosis and treatment of patients with mental illness
   * unlike text corpora, speech corpora capture tones, emotions, rhythms
 * we: from online databases and peer-reviewed journals
   * worldwide; reports from China; comparison between Chinese and non-Chinese
@@ -29,10 +29,10 @@ gpsych 2019 http://orcid.org/0000-0003-1430-709X
   * eg schizophrenia, depression, intellectual disabilities and drug disorders
 * Speech databases can be applied into many linguistic and non-linguistic
   * discourse analyses, language acquisition, neuroscience, sociology, and
-    psychopathology, and so forth
+    psychopathology, etc
   * databases of patients with mental disorders can offer statistical support
-    * verbal productive and perceptive symptoms of stutterers, so as to provide
-* brains can be learnt by AI for early screening and diagnosis. However, we
+    * verbal productive and perceptive symptoms of stutterers
+* brains can be learnt by AI for early screening and diagnosis
   * hE few speech databases in Asia compared with those in the western
   * special characteristics of their languages, the significance of building
 * global epidemiology of mental disorders
@@ -243,7 +243,7 @@ The selection criteria qualify studies included in the review from the global
       auditory word recognition (49.3 vs 53.3; p=0.02) and comprehension of
       sequential commands (43.7 vs 53.2; p=0.017) when compared with white
 * WRAP, Mueller+ showed that participants with early MCI status had a faster
-  decline in speech fluency and semantic cognition than those normal peers
+  decline in speech fluency and semantic cognition than the normal peers
   * Dham+ 40: multimodal feature extraction and decision-level fusion approach
     for detecting depression automatically
     * Features were extracted from the provided DAIC-WOZ database. The model

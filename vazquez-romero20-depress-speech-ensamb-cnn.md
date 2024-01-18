@@ -19,7 +19,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
   * inputs to them are speech log-spectrograms
   * As in the DCC sub-challenge, the English-speakers database DAIC-WOZ [13]
 
-# 2 the SOTA of the automatic depression detection, CNNs and ensemble methods
+# 2 The SOTA of the automatic depression detection, CNNs and ensemble methods
 
 ## ADD systems consider visual and audio individually or combined
 

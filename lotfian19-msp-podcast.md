@@ -296,9 +296,9 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
       evaluators can choose all the classes that they perceive in the segment
       (eg, sadness + frustration)
       * Speech in naturalistic interactions often convey ambiguous emotions [40]
-      * provides complementary information to better describe the emotional
-      * We extend the list of emotion including amused, frustrated, depressed,
-        concerned, disappointed, excited, confused, and annoyed
+      * provides complementary information to better describe the emotion
+      * We extend the list of emotion including _amused, frustrated, depressed,
+        concerned, disappointed, excited, confused,_ and _annoyed_
       * Similar emotional classes are grouped together to reduce cognitive load
 * We rely on a modified version of the crowdsourcing approach by Burmania+ [18]
   * the inter-evaluator agreement in annotating emotional labels increases when

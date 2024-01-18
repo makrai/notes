@@ -1,5 +1,5 @@
 Depression Detection in Speech Using Transformer and Parallel CNNs
-by Faming Yin, Jing Du, Xinzhou Xu and Li Zhao
+Faming Yin, Jing Du, Xinzhou Xu and Li Zhao
 Electronics 2023, 12(2), 328; https://doi.org/10.3390/electronics12020328
 
 # Abstract
@@ -27,11 +27,11 @@ Electronics 2023, 12(2), 328; https://doi.org/10.3390/electronics12020328
   * video-based [9–11], text-based [12,13], audiobased [5,14],
     EEG-based [15,16], and multi-modal fusion [17–22] strategies
   * latent depression factors hidden in speech [23,24]
-  * existing research with deep models employ stacking CNNs or RNN [25–27]
+  * deep models employ stacking CNNs or RNN [25–27]
   * hE
-    * insufficient due to the single-stream networks [28,29]
+    * single-stream networks are insufficient [28,29]
     * large time complexity and memory footprint [30]
-* speech emotion recognition (SER) show the effectiveness in mining latent
+* speech emotion recognition (SER) show the effectiveness in latent represent
   * multi-category features in speech [31–33]
     * Zhao Y, Liang Z, Du J, Zhang L, Liu C, Zhao L
       Multi-Head Attention-Based LSTM for Depression Detection From Speech.
@@ -44,11 +44,11 @@ Electronics 2023, 12(2), 328; https://doi.org/10.3390/electronics12020328
       Exploring zero-shot emotion recognition in speech
         using semantic-embedding prototypes
       IEEE Trans. Multimed. 2022, 24, 2752–2765.  [CrossRef]
-  * including parallel structures for the current depression detection task
+  * including parallel structures for depression detection
     through learning from multiple representations [34]
 * we propose a convolutional neural network based on a parallel structure and
-  transformer model in this paper in order to learn effective depression
-  representations through multi-source fusion
+  transformer model
+  * multi-source fusion
   * three streams
     * input: low-level mel-frequency cepstral coefficient (MFCC) features with a
       fixed length as the input to the network
@@ -61,7 +61,7 @@ Electronics 2023, 12(2), 328; https://doi.org/10.3390/electronics12020328
 * compared with existing related works on depression detection in speech, the
   * CNN streams to learn local knowledge while setting a
   * transformer stream for acquiring global sequential information
-* contribution of this paper can be summarized as follows:
+* contributions
   * a transformer-CNN-CNN (TCC) model for depression detection in speech, with
     two modules of a parallel CNN and transformer
     * linear attention mechanisms instead of the original attention in
@@ -76,7 +76,7 @@ structure, including the improvement scheme of the attention mechanisms
 
 # 4 Databases, experimental setups, and analysis of the experimental results 7
 
-## 4.1 4.1. Experimental Setups
+## 4.1. Experimental Setups
 
 * We employed the datasets of
   * Distress Analysis Interview Corpus-Wizard of Oz (DAICWOZ) [78] and

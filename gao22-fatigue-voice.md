@@ -54,7 +54,7 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
     cognitive impairment (Ahmed 2013; Dashtipour 2018; Toth 2018; Yang 2020)
   * mental health and emotional condition (Pisanski 2016; Holmqvist-Jämsén 17;
     Dibeklioglu 2018; Pisanski and Sorokowski, 2021; Kappen 2022)
-  * respiratory diseases such as COVID-19 to detect/monitor the
+  * respiratory diseases such as COVID-19: detect/monitor
     * health conditions of the patients and
     * emotional states of the staff
       (Castillo-Allendes 2021; König 2021; Gama 2022)
@@ -62,7 +62,7 @@ Front. Cell Dev. Biol., 13 September 2022 Sec. Molecular and Cellular Pathology
     the US Food and Drug Admin or the European Medicines Agency so far
 * future
   * a unified corpus collection standard and a large-scale library of
-    clinically available voice samples should be developed
+    clinically available voice samples
   * algorithm optimization and updates
   * integration of algorithms into user-friendly devices
     eg smartphone applications and connected medical devices (Fagherazzi 2021)

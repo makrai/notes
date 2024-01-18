@@ -6,10 +6,10 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
 
 * automatic detection of pathologies affecting speech
   * Voice processing has been used for eval Parkinson, Alzheimer, or depression
-  * ? If some studies present results that seem sufficient for clinical
+  * are any results sufficient for clinical?
   * not the case for the detection of sleepiness
-    * Even two international challenges and the recent advent of deep learning
-      have still not managed to change this situation
+  * Even two international challenges and the recent advent of deep learning
+    have still not managed to change this situation
 * we: the observed average performances find their cause in corpus design
 * organization
   * we refine the concept of sleepiness related to the ground-truth labels
@@ -32,28 +32,29 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
 ## Chronic sleepiness
 
 * two corpora have been designed at the Sleep Clinic of Bordeaux Hospital
-* Maintenance of Wakefulness Test Corpus (MWTc) elaborated 2018--2019
+* Maintenance of Wakefulness Test Corpus (MWTc) 2018--2019
   * recordings of 75 patients undertaking a Maintenance of Wakefulness Test
-  * multiple methodology defects that have prevented us from exploiting it
+  * multiple methodology defects prevented us from exploiting it
   * no study has been published based on this corpus
 * Multiple Sleep Latency Test corpus (termed hereafter MSLTc, sec 3.4)
-  * studies aiming at estimating chronic sleepiness through voice are 
+  * studies aiming at estimating chronic sleepiness through voice are
     based on the MSLTc (13)
   * recordings of 106 patients affected by sleep pathologies
-    * These patients present symptoms such as hypersomnolence, a chronic
-      sleepiness impacting their everyday life
-  * labels are the sleep latencies to a medical test measuring their daytime
-    propensity to fall asleep [the Multiple Sleep Latency Test (MSLT)], and the
-    answer to a short-term subjective sleepiness questionnaire [Karolinska
-    Sleepiness Scale (KSS)]. This corpus is extensively presented in section
+    * These patients present symptoms such as hypersomnolence,
+      a chronic sleepiness impacting their everyday life
+  * labels are
+    * the sleep latencies to a medical test measuring their daytime propensity
+      to fall asleep [the Multiple Sleep Latency Test (MSLT)], and
+    * the answer to a short-term subjective sleepiness questionnaire
+      [Karolinska Sleepiness Scale (KSS)]
   * studies based on this corpus only led to preliminary results
-    * Martin (2020 in fr): an Unweighted Average Recall (mean of the recall on
-      the two classes—termed hereafter UAR) of 60% has been obtained on the
-      detection of daytime propensity to sleep based on voice biomarkers
+    * Martin (2020 in fr): an Unweighted Average Recall (UAR) of 60%
+      on the detection of daytime propensity to sleep based on voice biomarkers
+      * UAR: mean of the recall on the two classes
       * an UAR of 82.6% with a system based on reading errors (15)
       * the implementation of these systems in medical applications is not
-        ready yet: 
-      * the first suffers from too low accuracy, and 
+        ready yet
+      * the first suffers from too low accuracy, and
       * the second was a proof of concept based on manual annotation of the
         recordings by human annotators, not a fully automated process
 
@@ -65,12 +66,11 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
     introducing the Sleepy Language Corpus (SLC), and the
   * Interspeech 2019 (IS19) challenge on continuous sleepiness estimation (18)
     that introduced the SLEEP corpus (aka the Dusseldorf Sleepy Language Corp)
-  * both label instantaneous sleepiness with the KSS a medical questionnaire
+  * both label instantaneous sleepiness with the KSS, a medical questionnaire
     aiming at measuring instantaneous subjective sleepiness (see section 2.1.1)
 * IS11: the objective was to achieve the highest UAR on binary classification
-  Sleep (SL) and Non-Sleepy (NSL). SL and NSL were delimited by a 7.5 threshold
-  in the KSS
-  * six systems have been proposed for the IS11 challenge, 
+  Sleep (SL) and Non-Sleepy (NSL, delimited by a 7.5 threshold in the KSS
+  * six systems have been proposed for the IS11 challenge,
   * only three outperformed the baseline UAR of 70.3%. The best performances
     have been obtained by a system based on the ASIMPLS algorithm
   * More recently, a work focusing on the longer reading tasks of the SLC has
@@ -94,34 +94,35 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
     * in common language, _lack of vigilance, a drop of performances,_
       _fatigue, sleepiness_ or _drowsiness_ are interchangeable
     * hE different medical definitions, remediation, measures, and voice expr
-* Huckvale+ (2020)  questioned the feasibility of the task: is it even possible
-  to estimate sleepiness through voice?  Are the vocal changes induced by
-  sleepiness visible enough to be detected and used for classification?
+* Huckvale+ (2020) questioned the feasibility of the task
+  * is it even possible to estimate sleepiness through voice?  
+  * Are the vocal changes induced by sleepiness visible enough for classif?
   * a sub-corpus of 99 samples of the SLEEP corpora has been annotated by
     25 trained annotators.  The labels obtained in this way have reached a
-    correlation of ρ = 0.72 with the ground-truth KSS and 
+    correlation of ρ = 0.72 with the ground-truth KSS and
   * binarizing the KSS label using the same 7.5 threshold as in the SLC, they
     achieved an UAR of 93.6%
-  * ie human audition can detect subjective sleepiness in the SLEEP corpus and
-  * hE there are too many samples per speaker and that they have been 
+  * ie human audition can detect subjective sleepiness in the SLEEP corpus
+  * hE 
+    * there are too many samples per speaker and 
     * recorded in a too restrained diversity of sleepiness states
-  * there's a link between the identity of speakers and their KSS levels, that
-    prevents algorithms from learning the impact of sleepiness through voice
+    * there's a link between the identity of speakers and their KSS levels,
+      that prevents algos from learning the impact of sleepiness through voice
 * our objective is fourfold
   * a practical definition of sleepiness and related concepts
   * the tools used in the corpora to measure sleepiness
-  * we study extensively the four previously mentioned corpora
-  * guidelines to design relevant corpora for voice sleepiness detection
+  * corpora
+    * we study extensively the four previously mentioned corpora
+    * guidelines to design relevant corpora for voice sleepiness detection
 
 # 1. Task statement
 
 # 3. Corpora 5 for automatic detection of sleepiness or excessive sleepiness
 
 * few databases contain enough data for machine learning purposes (13)
-* we focus on four of them
-  * Two of them have been used for international challenges on sleepiness
-  * two of them have been recorded to design a machine algorithm that will be
-    implemented in a virtual physician
+* we focus on four of them.  Two of them each have been 
+  * used for international challenges on sleepiness
+  * recorded to design a virtual physician
 * On every one of them, we have computed statistics of the available data,
   dividing the speakers and samples between two classes (SL and NSL), following
   the threshold detailed in each part.  When this piece of information is
@@ -158,7 +159,7 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
 ## 3.4. Multiple Sleep Latency Test Corpus. Elaborated following the MWTc
 
 * Also recorded at the Sleep Clinic of the Bordeaux’s University Hospital
-* the same goal as the MWTc 
+* the same goal as the MWTc
   ie linking objective measures of hypersomnolence and vocal recordings
 
 # 4. Comparison between corpora 9

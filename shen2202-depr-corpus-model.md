@@ -1,5 +1,5 @@
 Automatic Depression Detection:
-  an Emotional Audio-Textual Corpus and A Gru/Bilstm-Based Model
+  an Emotional Audio-Textual Corpus and A GRU/Bilstm-Based Model
 Ying Shen; Huiyu Yang; Lin Lin
 ICASSP 2022 - 2022 IEEE Inter,,,
 

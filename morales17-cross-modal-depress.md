@@ -5,8 +5,7 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
 
 # Abstract
 
-* Automatic detection of depression has attracted increasing attention
-* This paper surveys these efforts
+* This paper surveys automatic detection of depression
   * the first cross-modal review of depression detection systems
   * best practices and most promising approaches to this task
 
@@ -64,7 +63,7 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
     * 300 videos in German; the duration ranges from 6 seconds to 4 minutes
     * The files include a read speech passage (Die Sonne und der Wind) and an
       answer to a free response question
-* The Crisis Text Line is a free 24/7 crisis support texting hot line where
+* The Crisis Text Line is a free 24/7 crisis support texting hot line
   * live trained crisis counselors receive and respond quickly to texts
   * the organization supports people with mental health issues through texting
   * open data collaboration
@@ -126,15 +125,16 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
 
 # 6 Discussion
 
-* mechanical prediction (statistical, algorithmic, etc.) is typically as
-  accurate or more accurate than clinical prediction (Grove+ 2000)
+* mechanical prediction (statistical, algorithmic, etc) is typically
+  as accurate or more accurate than clinical prediction (Grove+ 2000)
 * not require an expert judgment and completely reproducible
 
 # 7 Conclusion
 
 * researchers should begin to follow the best practices (Stodden & Miguez 2013)
 * Best practices lead to communication standards, which will help disseminate
-  reproducible research, facilitate innovation by enabling data and code
-  re-use, and enable broader communication of the output of comput research
+  reproducible research, facilitate innovation by enabling
+  data and code re-use, and enable
+  broader communication of the output of computational research
 * Without the data and code that underlie scientific discoveries, is is all
   but impossible to verify published findings

@@ -11,8 +11,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 # 1 Intro
 
 * paralinguistic states and traits eg emotional states or age and gender
-  * intelligent signal analysis and machine learning techniques to recognise
-    these different facets [1, 2, 3, 4]
+  * intelligent signal analysis and machine learning techniques
+    to recognise these different facets [1, 2, 3, 4]
 * computational paralinguistic analysis to assess health conditions
   * complexity of speech production
   * importances of the physiological and cognitive systems involved
@@ -149,7 +149,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * audio RMSE dev/test baselines for AVEC-2013 were 10.75/14.12; the corre-
     * AVEC-2014 were 11.52 and 12.57
   * participants
-    * None in either of the challenges, utilised deep learning approach, this
+    * None in either of the challenges, utilised deep learning approach
     * audio-only, visual-only and audiovisual systems
     * Both challenges were won by teams from Lincoln Lab, Massachusetts [95,96]
       * highly knowledge driven, exploiting a specifically designed feature
@@ -231,7 +231,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     development score was 0.46 (0.68, for ‘not-de- pressed’) and the
     test set score was 0.41 (0.58, for ‘not-depressed’)
   * participants in 2016
-    * only deep learning approach being the DEPAUDIONET E2E system [129]. This
+    * only deep learning approach being the DEPAUDIONET E2E system [129]
       * feed Mel Spectrum features into an E2E network comprising a feature
         extraction topology of; a onedimensional convolution layer, a batch
         normalization layer, a ReLu layer, a one-dimensional max-pooling layer
@@ -250,7 +250,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * target: PHQ8 score of each patient in the DAIC-WOZ corpus [15]
   * baseline audio system was again based on COVAREP features, however this was
     in conjunction with a Random Forest regressor
-  * metric was RMSE As in AVEC-2013 and AVEC-2014 (cf. 4.7), the metric is the
+  * metric was RMSE, as in AVEC-2013 and AVEC-2014 (cf. 4.7)
     * audio development set and test set RMSE’s being 6.74 and 7.78 resp
 * participants
   * two papers explored CNNS

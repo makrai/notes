@@ -8,7 +8,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 # Abstract
 
 * health info on social media to enhance public health surveillance (PHS)
-  * identify possible outbreaks, forecast disease trends, monit emergency cases
+  * identify possible outbreaks, forecast disease trends, monitor emergency
   * ascertain disease awareness and response to official health correspondence
 * pretrained language models (PLMs) have facilitated the development of several
   domain-specific PLMs and a variety of downstream applications
@@ -22,14 +22,13 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 * Public health surveillance (PHS) is defined by the WHO (Aiello+ 2020)
   * Traditional PHS systems: time required to collect data (Hope+ 2006)
-* Social media data provides an abundant source of timely data 
+* Social media data provides an abundant source of timely data
   * surveillance, sentiment analysis, health communication, and analyzing the
     history of a disease, injury, or promote health
-  * Systematic reviews of studies that examine personal health experiences
-    shared online reveal the breadth of 
+  * studies that examine personal health experiences shared online
     * application domains, which include
     * infectious diseases and outbreaks (Charles-Smith+ 2015), illicit drug use
-      (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015).  These
+      (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015)
     * potential in supporting PHS, augmenting adverse event reporting, and as
       the basis of public health interventions (Dunn+ 2018)
 * deep learning in natural language processing (NLP)
@@ -48,10 +47,10 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   trained and fine-tuned to achieve benchmark performance on various PHS tasks
   on social media
   * trained on a health-related corpus collected from user-generated content
-  * the first largescale study to train, release and test a domainspecific PLM
-    for PHS tasks on social media
+  * the first large-scale study to train, release and test
+    a domain-specific PLM for PHS tasks on social media
   * PHS-BERT outperforms other SOTA PLMs on 25 datasets
-    from different social media platforms related to 7 different PHS tasks,
+    from different social media platforms related to 7 different PHS tasks
 
 # 2 Related Work
 
@@ -64,14 +63,13 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     stress identification, vaccine hesitancy and refusal,
     identifying common health-related misconceptions, sentiment analysis, and
     the health-related behaviors they support (Naseem+ 2022a,b)
-* Rao+ (2020): a hierarchical method that used 
+* Rao+ (2020): a hierarchical method that used
   * BERT with attention-based BiGRU and achieved
   * competitive performance for depression detection
 * vaccine-related sentiment classification, Zhang+ (2020) classified
   tweet-level HPV vaccine sentiment using three transfer learning techniques
   (ELMo, GPT, and BERT) and found that a finely tuned BERT produced the best
-* Biddle+ (2020) presented a method (BiLSTMSenti) that leveraged
-  * contextual word embeddings (BERT) with word-level sentiment
+* BiLSTMSenti (Biddle+ 2020) leveraged BERT with word-level sentiment
 * Naseem+ (2021b) presented a model that uses domain-specific LM and captures
   commonsense knowledge into a context-aware bidirectional gated recurrent netw
 * an ordinal hierarchical attention model for Suicide Risk Assessment
@@ -84,12 +82,32 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 * no PLM trained on health-related text collected from social media that
   directly benefit the applications related to PHS
 
+# 3 Method
+
+## 3.2 Pretraining of PHS-BERT
+
+* we initialized PHS-BERT with weights from the uncased BERT during training
+* PHS-BERT is the first domain-specific LM for tasks related to PHS and is
+  * corpus of health-related tweets that were crawled via the Twitter API
+  * keywords used to collect pretraining corpus are set to disease, symptom,
+    vaccine, and mental health-related words in English
+  * Pre-processing methods similar to those used in previous works
+    (Müller+ 2020; Nguyen+ 2020) were employed prior to training
+    * Retweet tags were deleted from the raw corpus, and
+    * URLs and usernames were replaced with HTTP-URL and @USER, respectively
+    * the Python emoji3 library was used to replace all emoticons with their
+      associated meanings
+    * tweet segmentation with HuggingFace, an open-source python library,
+    * 50,265 vocab
+    * Twitter posts are restricted to 200 characters, and during the training
+* batch size of 8. Distributed training was performed on a TPU v3-8
+
 ## 3.3 Fine-tuning for downstream tasks
 
 * We applied the pretrained PHS-BERT in the binary and multi-class classif of
-  different PHS tasks 
+  different PHS tasks
   eg stress, suicide, depression, anorexia, health mention classification,
-  vaccine, and covid related misinformation and sentiment analysis. We
+  vaccine, and covid related misinformation and sentiment analysis
 * fine-tuned the PLMs in downstream tasks. Specifically, we used the
   * ktrain library (Maiya, 2020) to fine-tune each model indep for each dataset
 * We used the embedding of the special token [CLS] of the last hidden layer as
@@ -103,7 +121,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 ## 4.1 Tasks and Datasets
 
-* 7 different PHS classification tasks 
+* 7 different PHS classification tasks
   * stress, suicidal ideation, depression, health mention, vaccine, covid
     related sentiment analysis, and other health-related tasks
   * collected from popular social platforms (eg Reddit and Twitter)
@@ -145,6 +163,11 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * SMM4H T1 (Weissenbacher+ 2018), SMM4H T2 (Weissenbacher+ 2018) and
   * HRT (Paul and Dredze, 2012)
 
+## 4.2 Evaluation Metric
+
+* F1-score and the relative improvement in marginal performance (∆M P ) used in
+  a previous similar study (Müller+ 2020)
+
 ## 4.3 Baselines
 
 * BERT (Devlin+ 2019), ALBERT (Lan+ 2019), and DistilBERT (Sanh+ 2019)
@@ -153,6 +176,50 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   pre-trained on covid related tweets
 * MentalBERT (Ji+ 2021) pretrained on corpus from Reddit from mental
   health-related subreddits
+
+## 4.4 Results
+
+* Table 2: the results of the presented PHS-BERT in comparison to baselines. We
+  * the performance of PHS-BERT is higher than SOTA PLMs on all tested tasks
+* Below we discuss the performance comparison of PHS-BERT with BERT and the
+  results of the second-best PLM
+  * the marginal increases in performance of PHS-BERT
+
+### Suicide Ideation Task
+18.45% when compared to BERT and 12.79% when compared to second best results
+
+### Stress Detection Task (2)
+
+* 3.80% compared to BERT and 2% when compared to second-best results
+
+### Health Mention Task
+
+* 3.34% compared to BERT and 1.76% when compared to second-best
+
+### Depression Detection Task (6)
+
+* 6.03% compared to BERT and 2.76% when compared to second-best results
+
+### Vaccine Sentiment Task (2)
+
+* 7.70% than BERT and 0.34% compared to second-best results
+
+### COVID Related Task (5)
+11.82% compared to BERT and 4.471% compared to the second-best results
+
+### Other Health Related Task (6)
+
+* 11.82% compared to BERT and 4.71% when compared to second-best results
+
+## 4.5 Discussion
+
+* BioBERT is less effective than pretraining on the target domain. We also ob-
+* CT-BERT, BERTweet, and MentalBERT, which are trained on social media-based
+  text, performs better compared to PLMs trained in the general and biomedical
+  * CT-BERT has the second-best performance on 9 datasets, and
+  * MentalBERT has the second-best performance on 13 datasets. The results of
+
+# 5 Conclusion
 
 # Appendix: Dataset description
 

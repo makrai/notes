@@ -2,25 +2,24 @@ Audio based depression detection using Convolutional Autoencoder
 Sardari+
 Expert Systems with Applications Volume 189, 1 March 2022, 116076
 
-implementation of the preprocessing phase and the proposed method is publicly
-available at https://github.com/SaraS92/CAE_ADD
+implementation of the preprocessing phase and the proposed method at
+https://github.com/SaraS92/CAE_ADD
 
-• Thorough experimental study based on a real-world depression detection dataset
-• Complete comparison of proposed feature extraction method with other techniques
+* Thorough experimental study based on a real-world depression detect dataset
+* Complete comparison of proposed feature extraction method with other techs
 
 # Abstract
 
 * Depression requires early diagnosis and treatment
 * audio-based Automatic Depression Detection (ADD) system has sparked the
-  * most of the reported approaches to recognize depression rely on
-    hand-crafted feature extraction for audio data representation
-  * They combine wide variety of audio-related features to improve the
-  * large feature space can lead to high-dimensionality issues as not all the
-    * increase the risk of overfitting. To overcome these limitations, an
+  * most of the reported approaches rely on hand-crafted audio features
+  * They combine wide variety of audio-related features
+  * large feature space can lead to high-dimensionality issues
+    * increase the risk of overfitting
 * we: a deep learning (DL) technique
   * an end-to-end Convolutional Neural Network-based Autoencoder (CNN AE)
-  * sample imbalance problem -> we use a cluster-based sampling technique which
-    highly reduces the risk of bias towards the major class (non-depressed)
+  * sample imbalance problem ~> we use a cluster-based sampling technique
+    * highly reduces the risk of bias towards the major class (non-depressed)
 * experiments on Distress Analysis Interview Corpus-Wizard of Oz (DAIC-WOZ)
   * baseline: the hand-crafted feature extraction methods and other studies in
   * the proposed method outperforms other well-known audio-based ADD models
@@ -28,11 +27,12 @@ available at https://github.com/SaraS92/CAE_ADD
 
 # 1 Intro
 
-* the “Audio-Visual Emotion Challenges” (AVEC) competition has been held with
-  * mental disorder, examples being bipolar (Ringeval+ 2018) and depression
-    (Valstar+ 2016, Ringeval+ 2017, Valstar+ 2013, Valstar+ 2014).  Some of the
+* the “Audio-Visual Emotion Challenges” (AVEC) competition has been held
+  * mental disorder, examples being
+    bipolar (Ringeval+ 2018) and 
+    depression (Valstar+ 2016, Ringeval+ 2017, Valstar+ 2013, Valstar+ 2014)
   * One of the most popular sub-challenges is Depression Classification
-    Sub-Challenge (DCC, Valstar+ 2016). This challenge involves proposing a
+    Sub-Challenge (DCC, Valstar+ 2016)
     * distinguishing depressed and non-depressed speakers using
     * three main modalities: audio, visual, and textual (a transcript)
 * several datasets for languages such as German, Turkish and English
@@ -48,42 +48,42 @@ available at https://github.com/SaraS92/CAE_ADD
   * to develop a generalized depression detection model, we use this dataset
   * spoken in English, more sample data, ie? more participants
     compared to other dataset
-* depression detection systems based on both visual and vocal features . For
-  * Yang+ (2017) proposed a hybrid depression classification and estimation
-    method using the fusion of audio, video and textual information and the
-    experiments are carried out on DIAC-WOZ dataset. The study utilized a
-    multivariate regression model fusing the depression degree estimations
-    extracted from each modality. They used the text modality for developing
-    depression/non-depression classification system using Paragraph Vector
-    (PV), Support Vector Machine (SVM), and Random Forest where the whole
-    system resulted in 0.667F-measure for depressed class in the dev set. In
+* depression detection systems based on both visual and vocal features
+  * Yang+ (2017): a hybrid depression classification and estimation method
+    * fusion of audio, video and textual information and the 
+    * experiments are carried out on DIAC-WOZ dataset. The study utilized a
+    * multivariate regression model fusing the depression degree estimations
+      extracted from each modality
+    * text modality for developing depression/non-depression classification
+      system using Paragraph Vector (PV), Support Vector Machine (SVM), and
+      Random Forest where the whole system resulted in
+    * 0.667F-measure for depressed class in the dev set. In
   * Al Hanai+ (2018) based on the sequences of audio and textual transcriptions
     * multi-modal Long Short-Term Memory (LSTM) model that combined the
       features extracted from both text and audio are evaluated. This model
       yielded the performance of 0.77F-measure score
-  * Yang+ (2016) proposed a gender specific Decision Tree classifier based on
+  * Yang+ (2016): a gender specific Decision Tree classifier based on
     visual and vocal features. Their work was the winner of the AVEC-2016
     * F1 score of 0.57 for depressed class in testing set. Despite the fact
-  * fusion of different modalities has been shown to be an efficient and
+  * fusion of different modalities has been shown to be efficient
     * hE affects the acceptability of the system in real-world situations
-* To develop a depression detection system, we need to follow three phases:
-* preprocessing, feature extraction, and classification. One of the major tasks
-  * unbalanced data problem in depression detection
-    * techniques like random sampling to overcome the problem of unbalanced
-      (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)
-    * hE, both of the undersampling and oversampling as random sampling
-      strategies have limitations
-    * undersampling: some of the useful information from the majority class
-      might be eliminated
-    * oversampling: likely overfitting in the model (Lin+ 2017)
-    * clustering-based resampling (undersampling) is to
-      group similar data samples from the majority class into diff clusters
-      * Therefore, the cluster centroid (or center) can be used to represent
-        the data in the whole group
-      * ie reducing the size of the majority class without losing info
+* three phases: preprocessing, feature extraction, and classification
+* unbalanced data problem in depression detection
+  * techniques like random sampling to overcome the problem of unbalanced
+    (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)
+  * hE, both of the undersampling and oversampling as random sampling
+    strategies have limitations
+  * undersampling: some of the useful information from the majority class
+    might be eliminated
+  * oversampling: likely overfitting in the model (Lin+ 2017)
+  * clustering-based resampling (undersampling) is to
+    group similar data samples from the majority class into diff clusters
+    * Therefore, the cluster centroid (or center) can be used to represent
+      the data in the whole group
+    * ie reducing the size of the majority class without losing info
 * feature extraction
-  * the performance of the model significantly depends on this
-    (Nakisa, Rastgoo, Rakotonirainy, Maire, & Chandran, 2020). Therefore, it is
+  * the performance of the model significantly depends on feature extraction
+    (Nakisa, Rastgoo, Rakotonirainy, Maire, & Chandran, 2020)
   * Hand-crafted features can be extracted either by using special algorithms
     or utilizing the knowledge of human experts
   * Most of the studies related to ADD (Pampouchidou+ 2016, Valstar+ 2016,
@@ -95,13 +95,13 @@ available at https://github.com/SaraS92/CAE_ADD
     * curse of dimensionality, avoid overfitting, and have better
     * we should reduce the dimensionality to a feature space that corresponds
     * intrinsic representation of data (Van Der Maaten+ 2009)
-* DL techniques in automatic feature extraction and classification applied
+* DL techniques in automatic feature extraction and classification
   (Nakisa+ 2020, Nakisa+ 2018b, Nakisa+ 2018a, Rastgoo+ 2019, Rastgoo+ 2018,
   Zhang+ 2017, Mou+ 2021, Banan+ 2020, Shamshirband+ 2019, Fan+ 2020)
   * ADD systems using DL methods
 * Depaudionet proposed by Ma+ (2016)
-  * focused on two challenges of data representation and unbalance issue for
-    the audio files in the DAIC-WOZ dataset
+  * focused on the two challenges of data representation and unbalance issue
+    * audio files in the DAIC-WOZ dataset
   * audio files were firstly converted to spectrograms (= time–freq 2D repr)
   * Convolutional Neural Network (CNN) and LSTM models
   * unbalanced issue: a random sampling strategy is used
@@ -110,8 +110,8 @@ available at https://github.com/SaraS92/CAE_ADD
   * hE converting the raw audio data into spectrogram data which is time
     consuming and limits its application to real-world applications
 * Vázquez-Romero and Gallardo-Antolín (2020), an
-  ensemble of CNNs for depression classification is proposed. To address the
-  unbalanced data challenge, a random sampling method is utilized
+  ensemble of CNNs for depression classification is proposed
+  * unbalanced data: a random sampling method is utilized
   * notable performance (0.63F-measure) using the proposed method, utilizing
     the common practice of log-spectrogram representation of audio signals
 * most of the studies (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)

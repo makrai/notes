@@ -4,30 +4,29 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
 
 # Abstract
 
-* Mental distress like depression and anxiety contribute to the largest
-* required: information-rich and balanced corpora. In this work,
+* Mental distress like depression and anxiety
+* required: information-rich and balanced corpora
 * we introduce a novel mental distress analysis audio dataset DEPAC,
   * labelled based on established thresholds on depression and anxiety standard
-    screening tools.  This large dataset comprises
+    screening tools.  A large dataset
   * multiple speech tasks per individual, as well as relevant demographic info
   * we present a feature set: hand-curated acoustic and linguistic features,
   * from the conclus:
     * labelled with scores on standard scales:
-      PHQ-9 scores for depression and GAD-7 scores for anxiety assessment.  The
+      PHQ-9 scores for depression and GAD-7 scores for anxiety assessment
     * remarkably larger sample size in comparison to other publicly ava corpora
   * diversity of speech tasks and participants with various degrees of
     education, genders, and age groups
 * exper our audio corpus and feature set in predicting depression severity by
   * comparing the performance of baseline machine learning models
     built on this dataset vs on other well-known depression corpora
-  * competitive performance when compared to the AVEC 2016 and AVEC 2019
-    baseline models and demonstrate the quality of the DEPAC dataset and
-    effectiveness of our proposed feature set in measuring depression severity
+  * competitive performance
+    when compared to the AVEC 2016 and AVEC 2019 baseline models
 
 # 1 Intro
 
-* traditional schema for diagnosis is based on clustering of non-specific
-  physical and behavioral symptoms, which makes the diagnostic process
+* traditional schema for diagnosis is based on
+  clustering of non-specific physical and behavioral symptoms
   * eg, in major depressive disorder (MDD), high disease heterogeneity and lack
     of agreed-upon assessment standards necessitate a high degree of clinical
     experience and training to make an accurate diagnosis
@@ -42,18 +41,19 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
       subjective (Berman+ 1985; Nemeroff, 2007; Wakefield, 2013). Moreover,
       participants are often reluctant to fill-out the self rated assessment in
 * language can be an effective alternative to objectively characterize
-  * emotion and cognition are both affected in MDD. As a result,
+  * emotion and cognition are both affected in MDD
   * depressed patients demonstrate
     * negative emotional bias in memory, attention, and event-interpretation
-      (Mathews and MacLeod, 2005), as well as more
+      (Mathews and MacLeod, 2005)
     * general impairment in attention, memory, and decision-making
-      (Cohen+ 1982; Blanco+ 2013) These effects are manifested in patients’
-    * slowed rate of speech, volume, prosody, as well as increased use of
-      firstperson pronouns, negatively valenced speech content, and use of
-      absolute words (Flint+ 1992; Fineberg+ 2016).  Therefore,
+      (Cohen+ 1982; Blanco+ 2013)
+    * slowed rate of speech, volume, prosody, as well as
+      increased use of first-person pronouns,
+      negatively valenced speech content, and use of
+      absolute words (Flint+ 1992; Fineberg+ 2016)
   * automated computational analysis of speech represents an excellent data
-    * develop digital biomarkers for mental illness.  This kind of automated
-    * takes only a few minutes of audio recording, therefore is less
+    * develop digital biomarkers for mental illness
+    * takes only a few minutes of audio recording
 * speech-based comp models for measuring depression prevalence and severity
   * Audio-Visual Emotion Recognition Challenge (AVEC) in 2013
   * A subset of the audiovisual depressive language corpus (AViD-Corpus) was
@@ -71,15 +71,14 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
       AVEC 2016, 2017 and 2019 (Valstar+ 2016; Ringeval+ 2017, 2019) where
     * participants reported PHQ8 scores predicted by their regression models
 * two vital limitations
-* small sample size increases the risk of overfitting in the models. For
+  * small sample size increases the risk of overfitting in the models
     * eg the number of recordings in the AVEC challenges available for model
       training range from 50 to 189, which is far from sufficient.  Secondly,
-  * lack in linguistic variety: only one or two samples per subject.  To
+  * lack in linguistic variety: only one or two samples per subject
 * we introduce the DEPression and Anxiety Crowdsourced corpus (DEPAC) as a
-  * rich in the diversity of speech tasks and subjects and is tailored
-  * to capture the signs of anxiety and depression to make accurate prediction
-  * We also present a set of acoustic and linguistic features extracted from
-    the corpus which
+  * rich in the diversity of speech tasks and subjects
+  * capture the signs of anxiety and depression to make accurate prediction
+  * We also present a set of acoustic and linguistic features extracted 
     * incorporates domain knowledge of clinical and machine learning experts
   * we benchmark our dataset with several baseline machine learning models that
     use this set of features

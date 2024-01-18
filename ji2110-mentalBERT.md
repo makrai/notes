@@ -2,8 +2,7 @@ MentalBERT: Publicly Available Pretrained Language Models for Mental Healthcare
 Shaoxiong Ji, Tianlin Zhang, Luna Ansari, Jie Fu, Prayag Tiwari, Erik Cambria
 arXiv:2110.15621 [cs.CL]
 
-pretrained MentalBERTs with Huggingface’s model repository, available at
-https://huggingface.co/mental
+pretrained MentalBERTs at https://huggingface.co/mental
 
 # Abstract
 

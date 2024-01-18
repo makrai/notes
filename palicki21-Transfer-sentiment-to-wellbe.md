@@ -34,15 +34,14 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 * two major approaches
   * social media to model public mood as it relates to major public events
     * Changes correlated with major political events, natural disasters,
-      cultural phenomenon, and in the prediction of stock prices [8, 35]
+      cultural phenomena, and in the prediction of stock prices [8, 35]
   * clinical approach: using social media and machine learning techniques to
     classify abnormal psychological states (depression, anxiety, PTSD, etc) in
     populations [7, 16]
   * Our research exploits both techniques
     to understand the impact of major Brexit events on the mental well-being
-* Automatic detection of non-clinical depressive states (known here as
-  psychological distress status) in social media political-related contents
-  (tweets)
+* Automatic detection of non-clinical depressive states (ie psychological
+  distress status) in social media political-related contents (tweets)
   * difficult task: no clear posts in which users explicitly share their
     mental health problems, medical diagnosis or depressive thoughts
 * we train a supervised learning model on labelled distress tweets and use it
@@ -59,7 +58,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 * Social networks have been used to detect a list of conditions, including:
   Depression, PTSD, Anxiety, Bipolar Disorder, Seasonal Affective Disorder,
   Eating Disorder, Schizophrenia, Suicidal Ideation, Phobias, and others [38]
-* [19] reviewed classifying mental health disorders
+* [19] reviewed mental health disorder classifiers
   * Support Vector Machine, Regression, and Random Forest can identify patterns
 * labelled mental health related data
   * manual labelling by clinical mental health experts,
@@ -69,22 +68,22 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   not between Depression and PTSD, using language patterns
   * Using over 13 million tweets from individuals who explicitly stated they
     had been diagnosed with clinical depression or PTSD,
-* [14] used a similar data collection strategy and to identify mental health
+* [14] used a similar data collection strategy to identify mental health
   * found groups of words that classified between Depression, PTSD, and Control
     with 80-90% precision
 * [16] users completed a psychometric survey querying signs of depression and
   shared three months of Twitter posts
   * features from the tweets including post sentiment, linguistic style,
     n-grams, proportion of posts with reply, and number of followers
-  * depressed users had significantly less Twitter engagement, more emotional
-    word related n-grams, negative affect, and less followers
+  * depressed users had significantly less Twitter engagement,
+    more emotional word related n-grams, negative affect, and less followers
   * These features were then included in a classification model and achieved
     82% precision with 72% accuracy
 * identify depression and other mental health conditions from Twitter posts
   * [12] provided a technique to gather open data
-    * not detail a method to evaluate unlabelled population level depression
-* [16] used proprietary data, they developed a useful technique to extract
-  features and analyse tweets to detect signals of mental health issues
+    * no details on a method to evaluate unlabelled population level depression
+* [16] used proprietary data, they developed a useful technique to
+  extract features and analyse tweets to detect signals of mental health issues
 
 ## 2.3 Transfer Learning Approach for Sentiment Analysis
 
