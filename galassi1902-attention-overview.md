@@ -38,10 +38,10 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * new attention models and attentive architectures ensued, resulting in a
     highly diversified architectural landscape
   * different authors developing almost identical attention models
-    * e.g. inner attention [68] and word attention [41] are arguably the same
+    * eg inner attention [68] and word attention [41] are arguably the same
   * the same terms have been introduced by different authors to define
     different concepts, thus further adding to the ambiguity in the literature
-    * e.g. context vector is used with different meanings by
+    * eg context vector is used with different meanings by
     Bahdanau+ Bahdanau, Cho, and Bengio (2015), Yang+ [52], and Wang+ [129]
 * not a comprehensive account of all the neural architectures for NLP that
   uses an attention mechanism. This would be impossible and would rapidly outdat
@@ -97,7 +97,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
     interpretation since the use of a softmax normalization [91]
   * some recent literature defines as deterministic attention models [134], [135]
     * context words are deterministically selected, for example,
-      e.g. by using the constituency parse tree of the input sentence
+      eg by using the constituency parse tree of the input sentence
 * other authors described the
   * first model as deterministic (soft) attention, to contrast it with
   * stochastic (hard) attention, where the probability distribution over
@@ -128,13 +128,13 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 * When the generation of a text sequence is required, as in MT,
   * dynamic representation of the input sequence
   * q represents an embedding of the previous state of the decoder
-    * e.g. sentiment analysis and information extraction
+    * eg sentiment analysis and information extraction
 * sequence-to-sequence annotators,
   * without resorting to RNNs or convolutional neural networks (CNNs),
   * as suggested by Vaswani+ [36], who rely on an attention mechanism to obtain
     a whole encoder/decoder architecture
 * a tool for selecting specific words
-  e.g. dependence parsing [97] and cloze question-answering tasks [66], [70]
+  eg dependence parsing [97] and cloze question-answering tasks [66], [70]
 * when multiple interacting input sequences have to be considered in combination
   * question answering, where the input consists of two textual sequences,
     the question and the document or the question and the possible answers
@@ -200,7 +200,7 @@ perform a supervised training of the attention model
 * When attention is applied multiple times on the same data,
   as in sequence-to-sequence models, a useful piece of information could be
   how much relevance has been given to the input along different iterations
-* e.g. in MT, it is desirable to ensure that all the words of the original
+* eg in MT, it is desirable to ensure that all the words of the original
   phrase are considered
   * One possibility to maintain this information is to use a suitable structure
     and provide it as an additional input to the attention model
@@ -216,7 +216,7 @@ perform a supervised training of the attention model
 ## C. Modeling the Distribution Function by Exploiting Prior Knowledge
 
 * define or to infer a distance between the elements in the domain. Such
-* e.g. by the syntactical information. Chen+ [40] and He+ [109] used
+* eg by the syntactical information. Chen+ [40] and He+ [109] used
 
 # VI Open challenges, current trends, and future directions 13
 
@@ -230,25 +230,22 @@ perform a supervised training of the attention model
   * currently an open debate.  Some recent studies
   * [10], [11] suggest that attention cannot be considered a reliable mean to
     explain or even interpret neural networks. Nonetheless, other works
-    * [10] S. Jain and B. C. Wallace, “Attention is not explanation,”
+    * [10] S Jain and BC Wallace, “Attention is not explanation,”
       NAACL-HLT, 2019, pp. 3543–3556
-    * [11] S. Serrano and N. A. Smith, “Is attention interpretable?”
+    * [11] S Serrano and NA Smith, “Is attention interpretable?”
       CoRR, vol. abs/1906.03731, 2019
   * [6]–[9] advocate the use of attention weights as an analytic tool
-    * [6] K. Clark, U. Khandelwal, O. Levy, and C. D. Manning,
+    * [6] K Clark, U Khandelwal, O Levy, and CD Manning,
       “What does BERT look at? An analysis of BERT’s attention,”
       BlackboxNLP@ACL. Florence, Italy: ACL, Aug. 2019, pp. 276–286
-    * [7] G. Letarte, F. Paradis, P. Giguère, and F. Laviolette
+    * [7] G Letarte, F Paradis, P Giguère, and F Laviolette
       “Importance of self-attention for sentiment analysis”
       BlackboxNLP@EMNLP, 2018, pp. 267–275
-    * [8] S. Vashishth, S. Upadhyay, G. S. Tomar, and M. Faruqui
+    * [8] S Vashishth, S Upadhyay, GS Tomar, and M Faruqui
       “Attention interpretability across NLP tasks”
       2019, arXiv:1909.11218.  [Online]
-    * [9] S. Wiegreffe and Y. Pinter, “Attention is not not explanation,” in
+    * [9] S Wiegreffe and Y Pinter, “Attention is not not explanation,” in
       EMNLP/IJCNLP, 2019, pp.  11–20
-  * Jain and Wiegreffe discussed this at the Big Picture Workshop at EMNLP 2023
-    see [Ruder's newsletter]
-    (https://newsletter.ruder.io/i/139785296/is-attention-explanation)
   * Jain and Wallace [10] proved that 
     * attention is not consistent with other explainability metrics
     * local adversarial distributions (distributions that are
@@ -259,6 +256,9 @@ perform a supervised training of the attention model
     * if by explanation, we mean a plausible, but not necessarily faithful,
       reconstruction of the decision-making process,
       as suggested by Rudin [151] and Riedl [152]
+  * Jain and Wiegreffe discussed this at the Big Picture Workshop at EMNLP 2023
+    see [Ruder's newsletter]
+    (https://newsletter.ruder.io/i/139785296/is-attention-explanation)
 * deepest levels will compute the most abstract features [146], [153]
   * Therefore, the application of attention to deep networks could enable the
     selection of higher level features, thus providing hints to understand which
