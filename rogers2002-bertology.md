@@ -1,5 +1,5 @@
-Anna Rogers, Olga Kovaleva, Anna Rumshisky
 Primer in BERTology: What we know about how BERT works
+Anna Rogers, Olga Kovaleva, Anna Rumshisky
 arXiv:2002.12327 cs.CL
 
 # Abstract
@@ -154,7 +154,7 @@ arXiv:2002.12327 cs.CL
 * focus on identifying what BERT actually relies on at inference time
   * architecture blocks (to be discussed in subsection 6.3 pruning)
   * information encoded in model weights
-* Amnesic probing (Elazar+ 2020) aims to specifically remove certain information
+* Amnesic probing (Elazar+ 2020) aims to specifically remove certain info
   * see how it changes performance
   * eg language modeling does rely on POS information
 * information-theoretic probing
@@ -686,7 +686,7 @@ arXiv:2002.12327 cs.CL
     Wiegreffe and Pinter, 2019; Brunner+ 2020)
   * limited to qualitative analysis (Belinkov and Glass, 2019)
 
-# 7 Directions for further research
+# 7 Further research
 
 ### Benchmarks that require verbal reasoning
 

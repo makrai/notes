@@ -1,4 +1,5 @@
-COMPS: Conceptual Minimal Pair Sentences for testing Robust Property Knowledge and its Inheritance in Pre-trained Language Models
+COMPS: Conceptual Minimal Pair Sentences for testing
+  Robust Property Knowledge and its Inheritance in Pre-trained Language Models
 Kanishka Misra, Julia Rayz, Allyson Ettinger
 EACL 2023
 
@@ -25,8 +26,8 @@ code and data at: https://github.com/kanishkamisra/comps
 * pre-trained language models stride in eliciting
   * general knowl about real world concepts & entities (Petroni+ 19; Weir+ 20)
   * isomorphism with real world abstractions like direction and color
-    (Abdou+ 2021; Patel and Pavlick, 2022), often times without even having
-  * robustness has recently been called to question, owing to failures due to
+    (Abdou+ 2021; Patel and Pavlick, 2022)
+  * robustness has recently been called to question, owing to failures
     * reporting bias (Gordon and Van Durme, 2013; Shwartz and Choi, 2020),
     * lack of consistency (Elazar+ 2021; Ravichander+ 2020), and
     * sensitivity to lexical cues

@@ -80,7 +80,7 @@ arXiv:2004.10151 cs.CL
 # WS3. Perception
 
 * axioms from which to extrapolate. Learned, physical heuristics, such as that
-  * e.g. a falling cat will land quietly, are
+  * eg a falling cat will land quietly, are
     abstracted into language metaphors like as nimble as a cat (Lakoff, 1980)
   * forms the basis for how people make entailment and reasoning decisions
 * children require grounded sensory input, not just speech, to learn language
@@ -93,7 +93,7 @@ arXiv:2004.10151 cs.CL
   (Schank and Abelson, 1977; Charniak, 1977; Dejong, 1981; Mooney and Dejong,
   1985)
   * require understanding often unstated sets of pre~ and post-conditions
-  * e.g. learn the meaning, method, and implications of painting? (Charniak 77)
+  * eg learn the meaning, method, and implications of painting? (Charniak 77)
   * A web crawl of knowledge from an exponential number of possible how-to,
     text-only guides and manuals (Bisk+ 2020) is misdirected without some
     fundamental referents to ground symbols
@@ -131,7 +131,7 @@ arXiv:2004.10151 cs.CL
     * include audio (Tsai+ 2019)
 * Semantic level representations emerge from ImageNet classification pretrain
   * class hypernyms. For example, the
-    * e.g.person class sub-divides into many professions and hobbies, like
+    * egperson class sub-divides into many professions and hobbies, like
       firefighter, gymnast, and doctor. To differentiate such sibling classes,
     * lower-level charistics like clothing, hair, and typical surroundg scenes
     * allow for pixel level masks and skeletal modeling,
@@ -154,10 +154,10 @@ arXiv:2004.10151 cs.CL
 * Control and action taking open several new dimensions to understanding and
   actively learning about the world
   * Queries can be resolved via dialog-based exploration (Liu and Chai, 2015),
-* e.g. Is an orange more like a baseball or a banana?
+* eg Is an orange more like a baseball or a banana?
   * WS1 just that the objects are common nouns that can both be held
-  * WS2 may also capture that oranges and baseballs both roll, but is
-    * unlikely to capture the deformation strength, surface texture, or sizes
+  * WS2 may also capture that oranges and baseballs both roll
+    * hE unlikely to capture the deformation strength, surface texture, or sizes
       (Elazar+ 2019)
   * WS3 can begin to understand the relative deformability of these objects,
     * likely to confuse how much force is necessary
@@ -204,7 +204,7 @@ arXiv:2004.10151 cs.CL
 * Interpersonal dialogue is a grand test for AI (Norvig and Russel, 2002), but
   * few to no examples of artificial agents one could imagine socializing
   * just transactional (Bordes+ 2016) or limited game scenarios (Lewis+ 2017)
-  * purposefully hollow and fixed (e.g. ELIZA ,Weizenbaum, 1966)
+  * purposefully hollow and fixed (eg ELIZA ,Weizenbaum, 1966)
 * why socialization is required as the next rung on the context ladder in grond
 
 ## Language that Does Something
@@ -306,7 +306,7 @@ arXiv:2004.10151 cs.CL
   * dataset (Regneri+ 2013) which aligns
     text descriptions and semantic annotations of actions with videos. Even
 * syntax acquisition informed with visual information. Shi+ (2019) investigate
-  * to learn headedness (e.g.  choosing the main verb vs the more common
+  * to learn headedness (eg  choosing the main verb vs the more common
     auxiliary as the root of a sentence, Bisk and Hockenmaier, 2015)
 * language modeling, Ororbia+ (2019) investigate the benefits of visual context
 * Collaborative games have long served as a testbed (Werner and Dyer, 1991) for

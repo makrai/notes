@@ -225,13 +225,13 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
       nor comprehensive for predictions of highly accurate models. This
   * insufficiency
     * two datasets whose sufficiency Carton+ [23] found to be most concerning:
-      neutral E-SNLI pairs and no-attack WIKI ATTACK examples.
+      neutral E-SNLI pairs and `no-attack` WIKI ATTACK examples.
       * Neutral E-SNLI cases are not justifiable by highlighting
         because they are obtained only as an intermediate step to collecting
         free-text explanations, and only free-text explanations truly justify a
         neutral label [20]
-    * No-attack WIKI ATTACK examples are not explainable by highlighting
-      because the absence of offensive content justifies the no-attack label,
+    * `no-attack` WIKI ATTACK examples are not explainable by highlighting,
+      because the absence of offensive content justifies the `no-attack` label,
     * We recommend (i) avoiding human-annotated highlights with low sufficiency
       when evaluating and collecting highlights, and (ii) assessing whether the
       true label can be explained by highlighting

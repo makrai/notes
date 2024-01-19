@@ -54,7 +54,7 @@ arXiv:1907.10641 [cs.CL]
     contrasting properties, usage, locations, etc
 * In total, we collected 77k questions (i.e., 38k twins)
 
-# 3 novel adversarial filtering algorithm: Algorithmic Data Bias Reduction
+# 3 Algorithmic Data Bias Reduction (adversarial filtering)
 
 * annotation artifacts in large-scale datasets (Gururangan+ 2018; Poliak+ 2018;
   Tsuchiya 2018; Niven and Kao 2019; Geva, Goldberg, and Berant 2019)

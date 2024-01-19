@@ -14,7 +14,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 
 # Intro
 
-* first introduced in NLP for machine translation tasks by Bahdanau+ [2]
+* first introduced in NLP for machine translation tasks by Bahdanau+ Bahdanau, Cho, and Bengio (2015)
   * glimpses already proposed in computer vision by Larochelle and Hinton [3],
     following the observation that biological retinas fixate on relevant parts
     of the optic array, while resolution falls off rapidly with eccentricity
@@ -33,7 +33,8 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * computer vision [16]–[18], speech recognition [18]–[21],
     recommendation [22], [23], time-series analysis [24], [25], games [26], and
     mathematical problems [27], [28]
-* In NLP, exploration by a number of seminal papers [2], [59]
+* In NLP, exploration by a number of seminal papers
+  (Bahdanau, Cho, and Bengio 2015, Sukhbaatar+ 2015)
   * new attention models and attentive architectures ensued, resulting in a
     highly diversified architectural landscape
   * different authors developing almost identical attention models
@@ -41,7 +42,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * the same terms have been introduced by different authors to define
     different concepts, thus further adding to the ambiguity in the literature
     * e.g. context vector is used with different meanings by
-    Bahdanau+ [2], Yang+ [52], and Wang+ [129]
+    Bahdanau+ Bahdanau, Cho, and Bengio (2015), Yang+ [52], and Wang+ [129]
 * not a comprehensive account of all the neural architectures for NLP that
   uses an attention mechanism. This would be impossible and would rapidly outdat
   * a synthesis and a critical outlook rather than a flat listing
@@ -59,16 +60,16 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
     of embeddings
   * In other cases, attention-based models paving the way to radically new
     approaches for some tasks
-    * Bahdanau+’s work [2] to the field of machine translation
-    * the expressive power of memory networks [59] significantly contributed to
+    * Bahdanau+’s work Bahdanau, Cho, and Bengio (2015) to the field of machine translation
+    * the expressive power of memory networks Sukhbaatar+ (2015) significantly contributed to
       the idea of using deep networks for reasoning tasks
 
 # II A general model of attention and its components 3
 
-* We use a well-known MT architecture introduced by Bahdanau+ [2] as an
+* We use a well-known MT architecture introduced by Bahdanau+ Bahdanau, Cho, and Bengio (2015) as an
   illustration and an instance of the general model
 * To illustrate, we briefly describe a classic attention architecture, called
-  RNNsearch [2]
+  RNNsearch Bahdanau, Cho, and Bengio (2015)
   * historical significance and for its simplicity
 
 ## A. Example for Machine Translation and Alignment
@@ -159,7 +160,7 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * statistical relational learning [147],
   * neural-symbolic learning [148], and the
   * application of various deep learning architectures [149], such as
-    * memory networks [59],
+    * memory networks Sukhbaatar+ (2015),
     * neural Turing machines [142], and several others.  From this perspective,
 
 ## A. Supervised Attention
@@ -225,65 +226,86 @@ perform a supervised training of the attention model
 
 ## A. Attention for Deep Networks Investigation
 
-* Whether attention may or may not be considered as a mean to explain neural
-  networks is currently an open debate.  Some recent studies
+* Whether attention may be considered as a mean to explain neural networks
+  * currently an open debate.  Some recent studies
   * [10], [11] suggest that attention cannot be considered a reliable mean to
     explain or even interpret neural networks. Nonetheless, other works
+    * [10] S. Jain and B. C. Wallace, “Attention is not explanation,”
+      NAACL-HLT, 2019, pp. 3543–3556
+    * [11] S. Serrano and N. A. Smith, “Is attention interpretable?”
+      CoRR, vol. abs/1906.03731, 2019
   * [6]–[9] advocate the use of attention weights as an analytic tool
-  * Jain and Wallace [10] proved that attention is not consistent with other
-    explainability metrics and that it is easy to create
-    * local adversarial distributions (distributions that are similar to the
-      trained model but produce a different outcome)
-  * Wiegreffe and Pinter [9] pushed the discussion further, providing
+    * [6] K. Clark, U. Khandelwal, O. Levy, and C. D. Manning,
+      “What does BERT look at? An analysis of BERT’s attention,”
+      BlackboxNLP@ACL. Florence, Italy: ACL, Aug. 2019, pp. 276–286
+    * [7] G. Letarte, F. Paradis, P. Giguère, and F. Laviolette
+      “Importance of self-attention for sentiment analysis”
+      BlackboxNLP@EMNLP, 2018, pp. 267–275
+    * [8] S. Vashishth, S. Upadhyay, G. S. Tomar, and M. Faruqui
+      “Attention interpretability across NLP tasks”
+      2019, arXiv:1909.11218.  [Online]
+    * [9] S. Wiegreffe and Y. Pinter, “Attention is not not explanation,” in
+      EMNLP/IJCNLP, 2019, pp.  11–20
+  * Jain and Wiegreffe discussed this at the Big Picture Workshop at EMNLP 2023
+    see [Ruder's newsletter]
+    (https://newsletter.ruder.io/i/139785296/is-attention-explanation)
+  * Jain and Wallace [10] proved that 
+    * attention is not consistent with other explainability metrics
+    * local adversarial distributions (distributions that are
+      similar to the trained model but produce a different outcome)
+  * Wiegreffe and Pinter [9] pushed the discussion further
     * creating an effective global adversarial attention model is much more
-      difficult than creating a local one and that attention weights may contain
+      difficult than creating a local one
     * if by explanation, we mean a plausible, but not necessarily faithful,
-      reconstruction of the decision-making process, as suggested by Rudin [151]
-      and Riedl [152]
+      reconstruction of the decision-making process,
+      as suggested by Rudin [151] and Riedl [152]
 * deepest levels will compute the most abstract features [146], [153]
   * Therefore, the application of attention to deep networks could enable the
     selection of higher level features, thus providing hints to understand which
     complex features are relevant for a given task. Following this line of
-    inquiry in the computer vision domain, Zhang+ [18] showed that the
-    application of attention to middle-to-high level feature sets leads to
-    better performance in image generation
-  * higher weights are not attributed to proximate image regions, but rather to
-    those regions whose color or texture is most similar to that of the query
-    image point.  Moreover, the spatial distribution does not follow a specific
-    pattern, but instead, it changes, modeling a region that corresponds to the
-    object depicted in the image. Identifying abstract features in an input text
-    might be less immediate than in an image, where the analysis process is
-    greatly aided by visual intuition. Yet, it may be interesting to test the
-    effects of the application of attention at different levels and to assess
-    whether its weights correspond to specific high-level features. For example,
+    * in the computer vision domain, Zhang+ [18] showed that
+      the application of attention to middle-to-high level feature sets
+      leads to better performance in image generation
+  * higher weights are not attributed to proximate image regions, but rather
+    to those regions whose color or texture is most similar to that of the
+    query image point
+  * the spatial distribution does not follow a specific pattern, but instead,
+    it changes, modeling a region that corresponds to the object depicted in
+    the image
+  * text: Identifying abstract features in an input text
+    might be less immediate than in an image, where 
+    the analysis process is greatly aided by visual intuition
+  * nL it may be interesting to test the effects of the application of
+    attention at different levels and to
+    assess whether its weights correspond to specific high-level features
 * Vaswani+ [36] analyzed the relation between attention and syntactic preds,
 * Voita+ [49] did the same with anaphora resolutions, and
 * Clark+ [6] investigated the correlation with many linguistic features
 * Voita+ [50] analyzed the behavior of the heads of a multihead model,
   * different heads develop different behaviors, which
-    * can be related to specific position or specific syntactical element.
+    * can be related to specific position or specific syntactical element
 * Yang+ [39] seemed to confirm that the
   deeper levels of neural architectures capture non-local aspects of the text
   * They studied the application of locality at different depths of an
     attentive deep architecture and showed that
     its introduction is especially beneficial when it is applied to the layers
-    that are closer to the inputs.
+    that are closer to the inputs
   * when the application of locality is based on a variable-size window,
     higher layers tend to have a broader window
 * investigation with task transfer
   * A popular way of investigating whether an architecture has learned
-    high-level features: using the same architecture to perform other tasks, as
-* Shi+ [154], who perform syntactic predictions by using the hidden
-  representations learned with machine translation. In a similar way,
+    high-level features: using the same architecture to perform other tasks
+  * Shi+ [154]: syntactic predictions
+    by using the hidden representations learned with machine translation
 * attention weights could be used as input features in a different model, so as
   to assess whether they can select relevant information for a different
-  learning task.  This is what happens, for example, in
+  learning task
 * attention distillation, where a student network is trained to penalize the
-  most confusing features according to a teacher network, producing an efficient
-  and robust model in the task of machine reading comprehension [155]
-* attentional heterogeneous transfer [156] has been exploited in heterolingual
-  text classification to selectively filter input features from heterogeneous
-  sources
+  most confusing features according to a teacher network, producing an
+  efficient and robust model in the task of machine reading comprehension [155]
+* attentional heterogeneous transfer [156] has been exploited
+  in heterolingual text classification to
+  selectively filter input features from heterogeneous sources
 
 ## B. Attention for Outlier Detection and Sample Weighing
 
@@ -295,7 +317,6 @@ perform a supervised training of the attention model
   an architecture’s confidence in performing a task on a given input
 * Heo+ [157] proposed to exploit the uncertainty of their stochastic predictive
   model to avoid making risky predictions in healthcare tasks
-
 * In a hybrid model that relies on both symbolic and subsymbolic information,
   * uncertainty of the neural model can be used as a parameter in the merging
   * Other example: multitask learning and reinforcement learning
