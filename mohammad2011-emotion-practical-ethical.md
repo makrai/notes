@@ -26,10 +26,10 @@ arXiv:2011.03492 [cs.CL]
   * automatically from large text corpora using simple statistical algorithms
 * I list some of the practical and ethical considerations involved
   * likely apply to any emotion lexicon, eg
-    * General Inquirer (Stone+ 1966),
+    * General Inquirer (Stone+ 1966)
     * Affective Norms for English Words (Nielsen, 2011; Bradley and Lang, 1999)
       * AFEW
-    * LIWC (Pennebaker+ 2001),
+    * LIWC (Pennebaker+ 2001)
     * Multi-perspective Question Answering (Wiebe+ 2005), and
     * the VAD lexicon by Warriner+ (2013)
 

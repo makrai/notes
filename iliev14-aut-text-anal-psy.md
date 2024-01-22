@@ -28,7 +28,7 @@ Language and Cognition, 2014
 
 * The most popular example in recent years is LIWC (Pennebaker, 2011)
 * categories such as leisure, religion, money, or psych processes
-* e.g. when people write about
+* eg when people write about
   * pleasant events the positivity category (Kahn+ 2007)
   * depressed individuals negative emotions (Rude+ 2004)
   * more surprising associations
@@ -150,7 +150,7 @@ Language and Cognition, 2014
     * human-generated text
       * companies offer specialized software for automated text analysis, and
       * text analysis tools [in] standard statistical packages
-        (e.g., SAS Text Miner, SPSS Text Analytics, R)
+        (eg SAS Text Miner, SPSS Text Analytics, R)
 * measures of subjective properties [of authors]
   * from clinical psychology, personality and individual differences,
     intelligence, knowledge assessment, lie detection, political attitudes,

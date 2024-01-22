@@ -244,7 +244,7 @@ ratings range from -5 (most negative) to +5 (most positive) in steps of 1.32
 
 #### Linguistic Inquiry and Word Count (LIWC) Dictionary
 
-* ∼1,400 English terms manually identified to denotate the affect categories:
+* ∼1,400 English terms manually identified to denotate the affect categories
 * positive emotion, negative emotion, anxiety, anger, and sadness
 * Pennebaker, Boyd, Jordan, & Blackburn, (2015)
 

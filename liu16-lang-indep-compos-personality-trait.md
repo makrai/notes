@@ -6,7 +6,7 @@ Fei Liu, Julien Perez, Scott Nowson
 # Abstract
 
 * Many methods have been used to recognise author personality
-  * e.g. linear regression or Support Vector Machines
+  * eg linear regression or Support Vector Machines
 * This work uses deep-learning based models on
   * characters to build hierarchical word and sentence representations
   * applied to a corpus of tweets, shows SOTA performance across
@@ -27,7 +27,7 @@ Fei Liu, Julien Perez, Scott Nowson
   * workshops exploring the topic (Celli+ 2014; Tkalčič+ 2014)
   * in the PAN Author Profiling challenge at CLEF in 2015 (Rangel+ 2015)
   * Much prior literature in this field has used some variation of enriched
-    bag-of-words; e.g. the Open vocabulary approach (Schwartz+ 2013)
+    bag-of-words; eg the Open vocabulary approach (Schwartz+ 2013)
   * relationship between word use and traits (Pennebaker+ 2003)
   * levels of representation such as syntactic, semantic, and the
     psychologically-derived lexica of LIWC (Pennebaker+ 2015)

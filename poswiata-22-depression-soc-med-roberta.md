@@ -31,7 +31,7 @@ model at huggingface
   * Japanese: Tsugawa+ (2015) prepared the dataset in a similar way but for
     * Support Vector Machines (SVM) classifier to estimate the presence of
   * Wolohan+ (2018) created a dataset based on Reddit2 posts, binary
-    * LIWC (Pennebaker+ 2015)
+    * Then, among other things, they analyzed their posts using LIWC (2015)
   * Pirina and Çöltekin (2018) also used Reddit as a data source and
     * how training data can affect the quality of a SVM-based model
   * Tadesse+ (2019) use LIWC, Latent Dirichlet Allocation (LDA) topics, N-grams

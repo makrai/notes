@@ -1,4 +1,5 @@
-An Acoustic Framework for Detecting Fatigue in Speech Based Human-Computer-Interaction
+An Acoustic Framework for Detecting Fatigue
+  in Speech Based Human-Computer-Interaction
 Jarek Krajewski, Rainer Wieland & Anton Batliner 
 Part of the Lecture Notes in Computer Science book series (LNISA,volume 5105)
 
