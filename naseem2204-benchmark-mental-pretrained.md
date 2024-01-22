@@ -26,7 +26,6 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * surveillance, sentiment analysis, health communication, and analyzing the
     history of a disease, injury, or promote health
   * studies that examine personal health experiences shared online
-    * application domains, which include
     * infectious diseases and outbreaks (Charles-Smith+ 2015), illicit drug use
       (Kazemi+ 2017), and pharmacovigilance support (Golder+ 2015)
     * potential in supporting PHS, augmenting adverse event reporting, and as
@@ -37,10 +36,10 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * domain-specific PLMs have been presented
     * in the biomedical field
       BioBERT, (Lee+ 2019) and BioALBERT, (Naseem+ 2020, 2021a)
-    * BERTweet (Nguyen+ 2020) for 3 downstream tasks, ie part-of-speech
-      tagging, named-entity-recognition, and text classification
-    * COVID Twitter BERT (CT-BERT, Müller+ 2020) for 5 text classification
-      tasks have been trained on datasets from Twitter
+    * BERTweet (Nguyen+ 2020) for 3 downstream tasks:
+      POS tagging, named-entity-recognition, and text classification
+    * COVID Twitter BERT (CT-BERT, Müller+ 2020) for 5 text classif tasks
+      * trained on datasets from Twitter
     * no for PHS from online text
     * all these LMs were evaluated with the selected dataset
 * we present PHS-BERT, a new domain-specific contextual PLM
@@ -63,8 +62,8 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     stress identification, vaccine hesitancy and refusal,
     identifying common health-related misconceptions, sentiment analysis, and
     the health-related behaviors they support (Naseem+ 2022a,b)
-* Rao+ (2020): a hierarchical method that used
-  * BERT with attention-based BiGRU and achieved
+* Rao+ (2020): a hierarchical method
+  * BERT with attention-based BiGRU
   * competitive performance for depression detection
 * vaccine-related sentiment classification, Zhang+ (2020) classified
   tweet-level HPV vaccine sentiment using three transfer learning techniques
@@ -87,20 +86,20 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 ## 3.2 Pretraining of PHS-BERT
 
 * we initialized PHS-BERT with weights from the uncased BERT during training
-* PHS-BERT is the first domain-specific LM for tasks related to PHS and is
+* PHS-BERT is the first domain-specific LM for tasks related to PHS
   * corpus of health-related tweets that were crawled via the Twitter API
-  * keywords used to collect pretraining corpus are set to disease, symptom,
-    vaccine, and mental health-related words in English
+  * keywords used to collect pretraining corpus are set to
+    _disease, symptom, vaccine_, and mental health-related words in English
   * Pre-processing methods similar to those used in previous works
-    (Müller+ 2020; Nguyen+ 2020) were employed prior to training
+    (Müller+ 2020; Nguyen+ 2020)
     * Retweet tags were deleted from the raw corpus, and
     * URLs and usernames were replaced with HTTP-URL and @USER, respectively
     * the Python emoji3 library was used to replace all emoticons with their
       associated meanings
     * tweet segmentation with HuggingFace, an open-source python library,
     * 50,265 vocab
-    * Twitter posts are restricted to 200 characters, and during the training
-* batch size of 8. Distributed training was performed on a TPU v3-8
+    * Twitter posts are restricted to 200 characters
+  * batch size of 8. Distributed training was performed on a TPU v3-8
 
 ## 3.3 Fine-tuning for downstream tasks
 
@@ -111,9 +110,9 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 * fine-tuned the PLMs in downstream tasks. Specifically, we used the
   * ktrain library (Maiya, 2020) to fine-tune each model indep for each dataset
 * We used the embedding of the special token [CLS] of the last hidden layer as
-  the final feature of the input text.  We adopted the
+  the final feature of the input text
   * multilayer perceptron (MLP) with the hyperbolic tangent activation function
-  * Adam optimizer (Kingma and Ba, 2014).  The models are trained with a
+  * Adam optimizer (Kingma and Ba, 2014)
   * one cycle policy (Smith, 2017) at a maximum learning rate of 2e-05 with
     momentum cycled between 0.85 and 0.95
 
@@ -131,8 +130,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 1. Suicide: The widespread use of social media for expressing personal thoughts
    and emotions makes it a valuable resource for assessing suicide risk on
-   social media. We used the following dataset to evaluate the performance of
-   * R-SSD (Cao+ 2019) dataset to evaluate the performance of our model
+   social media. We used the R-SSD dataset (Cao+ 2019) to evaluate our perf
 2. Stress: It is desirable to detect stress early in order to address the
    growing problem of stress.  To evaluate stress detection using social media,
   * the Dreaddit (Turcan and McKeown, 2019) and SAD (Mauriello+ 2021) datasets
@@ -142,17 +140,17 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
     disease and symptom terms for other reasons
   * PHM (Karisani and Agichtein, 2018), HMC2019 (Biddle+ 2020) and
     RHMD 5 health mention-related datasets
-4. Vaccine sentiment: Vaccines are a critical component of public health. On
-  * vaccine hesitancy and refusal can result in clusters of low vaccination
-     coverage, diminishing the effectiveness of vaccination programs
+4. Vaccine sentiment: Vaccines are a critical component of public health
+  * vaccine hesitancy and refusal can result in clusters of low vacc coverage, 
+    diminishing the effectiveness of vaccination programs
   * VS1 (Dunn+ 2020) and VS2 (Müller and Salathé, 2019) vaccine-related Twitter
 5. COVID related: Due to the ongoing pandemic, there is a higher need for tools
   * identify COVID-19-related misinformation and sentiment on social media
-    Misinformation can have a negative impact on public opinion and endanger
+  * Misinformation can have a negative impact on public opinion
   * COVID Lies (Hossain+ 2020), Covid category (Müller+ 2020), and
     COVIDSenti (Naseem+ 2021d) 6 datasets to test our model
 6. Depression: User-generated text on social media has been actively explored
-   for its feasibility in the early identification of depression.  We used
+   for its feasibility in the early identification of depression
   * eRisk T3 (Losada and Crestani, 2016), eRisk T1 (Losada and Crestani, 2016),
     Depression_Reddit_1 (Naseem+ 2022a) 7 , Depression_Reddit_2 (Pirina and
     Çöltekin, 2018), Depression_Twitter_1 8 , and Depression_Twitter_2 9
@@ -161,12 +159,16 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * Abortion (Mohammad+ 2016) 10 ,
   * Amazon Health dataset (He and McAuley, 2016),
   * SMM4H T1 (Weissenbacher+ 2018), SMM4H T2 (Weissenbacher+ 2018) and
+    * Social Media Mining for Health
   * HRT (Paul and Dredze, 2012)
+    Michael J Paul and Mark Dredze. 2012
+    A model for mining public health topics from twitter
+    Health, 11(16-16):1
 
 ## 4.2 Evaluation Metric
 
-* F1-score and the relative improvement in marginal performance (∆M P ) used in
-  a previous similar study (Müller+ 2020)
+* F1-score and the relative improvement in marginal performance (∆M P)
+  used in a previous similar study (Müller+ 2020)
 
 ## 4.3 Baselines
 
@@ -179,84 +181,59 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 
 ## 4.4 Results
 
-* Table 2: the results of the presented PHS-BERT in comparison to baselines. We
-  * the performance of PHS-BERT is higher than SOTA PLMs on all tested tasks
-* Below we discuss the performance comparison of PHS-BERT with BERT and the
-  results of the second-best PLM
-  * the marginal increases in performance of PHS-BERT
-
-### Suicide Ideation Task
-18.45% when compared to BERT and 12.79% when compared to second best results
-
-### Stress Detection Task (2)
-
-* 3.80% compared to BERT and 2% when compared to second-best results
-
-### Health Mention Task
-
-* 3.34% compared to BERT and 1.76% when compared to second-best
-
-### Depression Detection Task (6)
-
-* 6.03% compared to BERT and 2.76% when compared to second-best results
-
-### Vaccine Sentiment Task (2)
-
-* 7.70% than BERT and 0.34% compared to second-best results
-
-### COVID Related Task (5)
-11.82% compared to BERT and 4.471% compared to the second-best results
-
-### Other Health Related Task (6)
-
-* 11.82% compared to BERT and 4.71% when compared to second-best results
+* Table 2: the results of the presented PHS-BERT in comparison to baselines
+* the performance of PHS-BERT is higher than SOTA PLMs on all tested tasks
+* the marginal increases in performance of PHS-BERT
+  when compared to BERT/the 2nd best
+  * Suicide Ideation Task: 18.45%/12.79% 
+  * Stress Detection Task (2): 3.80%/2% 
+  * Health Mention Task: 3.34%/1.76% compared to second-best
+  * Depression Detection Task (6): 6.03%/2.76% 
+  * Vaccine Sentiment Task (2): 7.70% than BERT and 0.34% 
+  * COVID Related Task (5): 11.82%/4.471%
+  * Other Health Related Task (6): 11.82%/4.71% 
 
 ## 4.5 Discussion
 
-* BioBERT is less effective than pretraining on the target domain. We also ob-
+* BioBERT is less effective than pretraining on the target domain
 * CT-BERT, BERTweet, and MentalBERT, which are trained on social media-based
   text, performs better compared to PLMs trained in the general and biomedical
-  * CT-BERT has the second-best performance on 9 datasets, and
-  * MentalBERT has the second-best performance on 13 datasets. The results of
+  * CT-BERT has the second-best performance on 9 datasets
+  * MentalBERT has the second-best performance on 13 datasets
 
 # 5 Conclusion
 
 # Appendix: Dataset description
 
 1. Depression: We used 6 depression-related datasets in our experiments
-  * eRisk T3: We used eRISK, a publicly available dataset, released by
-    (Losada and Crestani, 2016) and
-    * labeled across 4 depression severity levels using Beck’s Depression
-      Inventory (Beck+ 1961) criteria to detect the existence of depression and
-      identify its severity level in social media posts. eRISK was
-    * later used in the CLEF’s eRISK challenge Task 3 11 on early
-      identification of depression in social media
+  * `eRisk T3`, publicly available (Losada and Crestani, 2016) 
+    * labeled across 4 depression severity levels using
+      Beck’s Depression Inventory (Beck+ 1961) criteria to detect the existence
+      of depression and identify its severity level in social media posts
+    * later used in the CLEF’s eRISK challenge Task 3 11
+      on early identification of depression in social media
     * in each years’ challenge author released a small number of user’s data
       (ranging from 70-90 users data),
       we combined and used the data of the last 3 years, which is equivalent to
       190 Reddit users, labeled across 4 depression severity levels
-  * Depression_Reddit_1: We used new Reddit depression data released by
-    Naseem+ (2022a). This dataset consists of
+  * `Depression_Reddit_1`: We used new Reddit depression data released by
+    Naseem+ (2022a)
     * 3,553 Reddit posts to identify the depression severity on social media
     * manually labeled data into 4 depression severity levels
-      ie (i) minimal; (ii) mild; (iii) moderate; and (iv) severe  using
+      ie (i) minimal; (ii) mild; (iii) moderate; and (iv) severe using
       Depressive Disorder Annotation scheme (Mowery+ 2015)
-  * eRisk T1: The third depression data is from eRisk shared task 1 (Losada and
-    Crestani, 2016), which is a public competition for detecting early risk in
-    health-related areas. The eRisk data consists of
-    * posts from 2,810 users, with 1,370 expressing depression and 1,440 as a
-      control group without depression
-  * Depression_Reddit_2: The fourth depression dataset used is released by
-    Pirina and Çöltekin (Pirina and Çöltekin, 2018). The authors used Reddit
-    to collect additional social data, which they combined with previously
-    collected data to identify depression
-  * Depression_Twitter_1
-    * a publicly available
-    * collected from Twitter and labeled into 3 labels (e.g., Positive,
-      Negative, and Neutral) for depression sentiment analysis
-  * Depression_Twitter_2
-    * a public dataset 13 , collected from Twitter and labeled into 2 labels
-      (e.g., Positive and Negative) for depression detection
+  * eRisk T1 from eRisk shared task 1 (Losada and Crestani, 2016),
+    a public competition for detecting early risk in health-related areas
+    * posts from 2,810 users, with 1,370 expressing depression & 1,440 control
+  * `Depression_Reddit_2` (Pirina and Çöltekin, 2018)
+    * The authors used Reddit to collect additional social data, which they
+      combined with previously collected data to identify depression
+  * `Depression_Twitter_1`
+    * publicly available
+    * collected from Twitter and labeled into 3 Positive, Negative, and Neutral
+      for depression sentiment analysis
+  * `Depression_Twitter_2`
+    * a public dataset 13 , collected from Twitter, binary depression detection
 2. Health Mention: We used 3 health mention-related datasets in our experiments
   * PHM (Karisani and Agichtein 2018)
     * 7,192 English tweets across 6 diseases and symptoms. They used the
@@ -278,7 +255,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * R-SSD (Cao+ 2019), which contains
   * 500 individuals’ Reddit postings categorized into 5 increasing suicide risk
     classes from 9 mental health and suicide-related subreddits
-4. Stress detection using social media, we evaluated PHS-BERT on the following
+4. Stress detection using social media
   * Dreaddit (Turcan and McKeown, 2019) collected from 5 Reddit forums
     * 3,553 posts, focus on three major stressful topics:
       interpersonal conflict, mental illness, and financial need
@@ -329,10 +306,10 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
       legalization of abortion, atheism, climate change, feminism, and Hillary
     * We used the legalization of abortion in our experiments
   * Amazon Health dataset (He and McAuley, 2016) contains
-    reviews of Amazon healthcare products and has
-    4 classes: strongly positive, positive, negative, and strongly negative
-  * Social Media Mining for Health (SMM4H) Shared Task 1 recognizing whether a
-    tweet is reporting an adverse drug reaction (Weissenbacher+ 2018)
+    * reviews of Amazon healthcare products and has
+    * 4 classes: strongly positive, positive, negative, and strongly negative
+  * Social Media Mining for Health (SMM4H) Shared Task 1 recognizing
+    whether a tweet is reporting an adverse drug reaction (Weissenbacher+ 2018)
   * SMM4H T2: Drug Intake Classification (SMM4H Task 2, Weissenbacher+ 2018)
     * tweets manually categorized as definite intake/possible intake/no intake
   * HRT: Health related tweets (HRT, Paul and Dredze, 2012)

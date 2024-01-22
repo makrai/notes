@@ -70,8 +70,8 @@ pretrained MentalBERTs at https://huggingface.co/mental
 
 ## 4.1 Contextualized Text Embeddings: Self-supervised large-scale pretraining
 
-* domain-specific variants of pretrained contextualized text embeddings. Embed-
-  dings in specific domains aim to encode domain-specific information to boost
+* domain-specific variants of pretrained contextualized text embeddings
+  * Embeddings in specific domains aim to encode domain-specific information
 * BioBERT (Lee+ 2020) pretrained the BERT model in the biomedical domain using
   research articles from PubMed, which was applied to many biomedical tasks
   such as biomedical relation extraction and named entity recognition
@@ -80,27 +80,34 @@ pretrained MentalBERTs at https://huggingface.co/mental
 
 ## 4.2 NLP for Mental Healthcare in social media
 
-* identifying emotions, mood, and profiles that might indicate mental health
-  problems (Calvo+ 2017)
+* identifying emotions, mood, and profiles that might indicate
+  mental health problems (Calvo+ 2017)
 * mental health detection that categorizes given social posts into classes of
   mental disorders such as depression (Tadesse+ 2019)
 * Resnik+ (2013) applied topic modeling in depression detection
   * topic modeling: an unsupervised approach that reduces the input of textual
     data feature space to a fixed number of topics to feature engineering
-* Feature engineering + classifiers for mental health detection (Shatte+ 2019;
-  Abd Rahman+ 2020)
+* Feature engineering + classifiers for mental health detection
+  (Shatte+ 2019; Abd Rahman+ 2020)
 * features
   * sensor signals from personal devices (Mohr+ 2017) and
   * EEG signals (Gore and Rathi, 2019) have been applied
-  * textual: word counts, TF-IDF (Campillo-Ageitos+ 2021), topic features
-    (Shickel+ 2020) and sentiment traits (Yoo+ 2019)
+  * textual: word counts, TF-IDF (Campillo-Ageitos+ 2021),
+    topic features (Shickel+ 2020) and sentiment traits (Yoo+ 2019)
 * machine learning-based methods for suicidal ideation detection (Ji+ 2021b)
 * deep representation learning methods, which enable automatic feature learning
   * feed [pre-trained] embeddings into neural architectures such as
-    convolutional neural networks (Rao+ 2020),
-    recurrent networks (Bouarara, 2021),
-    self attention-based Transformers,
-    hybrid architectures like CNN-LSTM (Kang+ 2021) and
-    more other deep learning architectures (Su+ 2020)
+    * convolutional neural networks (Rao+ 2020),
+    * recurrent networks (Bouarara, 2021),
+    * self attention-based Transformers,
+    * hybrid architectures like CNN-LSTM (Kang+ 2021) and
+      Mingu Kang, Siho Shin, Jaehyo Jung, and Youn Tae Kim. 2021.
+      Classification of mental stress using cnn-lstm algorithms
+        with electrocardiogram signals
+      Journal of Healthcare Engineering, 2021
+    * more other deep learning architectures (Su+ 2020)
+      Chang Su, Zhenxing Xu, Jyotishman Pathak, and Fei Wang. 2020
+      Deep learning in mental health outcome research: a scoping review.
+      Translational Psychiatry, 10(1):1–26
 * Jiang+ (2020), MartínezCastaño+ (2021) and Bucur+ (2021), use
   pretrained language models fine-tuned for mental health tasks
