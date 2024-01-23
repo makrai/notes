@@ -259,8 +259,8 @@ arXiv:2107.00676 [cs.CL]
 
 ## Efficient models.  MLLMs represent some of the largest models
 
-* running inference on such large models is often not possible on edge devices
-  and increasingly expensive on cloud devices
+* running inference on large models is often not possible on edge devices and
+  increasingly expensive on cloud devices
 * downsize these large models without affecting accuracy
   * pruning, quantization, factorization, distillation, and architecture search
     have been standardly used on monolingual models (Tay+ 2020)

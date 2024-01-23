@@ -1,5 +1,5 @@
-Yimeng Zhuang, Jinghui Xie, Yinhe Zheng, and Xuan Zhu
 Quantifying Context Overlap for Training Word Embeddings
+Yimeng Zhuang, Jinghui Xie, Yinhe Zheng, and Xuan Zhu
 EMNLP 2018
 
 Ruder: Zhuang+ propose to use second-order co-occurrence relations to

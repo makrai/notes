@@ -9,27 +9,28 @@ tl;dr: Variance regularization prevents collapse in self-supervised repr learn
 * Recent self-supervised methods for image representation learning
   maximize the agreement between embedding vectors produced by encoders fed
   with different views of the same image
-* main challenge is to prevent a collapse ie constant or non-informative vectors
-* We introduce VICReg (Variance-Invariance-Covariance Regularization), a method
+* main challenge is to prevent a collapse ie constant or non-informative vecs
+* We introduce VICReg (Variance-Invariance-Covariance Regularization)
   * explicitly avoids the collapse problem with
   * two regularizations terms applied to both embeddings separately:
     1. maintains the variance of each embedding dimension above a threshold,
-    2. decorrelates each pair of variables. Unlike most other approaches to the
-  * not require techniques such as: weight sharing between the branches, batch
-    normalization, feature-wise normalization, output quantization, stop
-    gradient, memory banks, etc
+    2. decorrelates each pair of variables. Unlike most other approaches
+  * not require techniques such as weight sharing between the branches,
+    batch normalization, feature-wise normalization, output quantization,
+    stop gradient, memory banks, etc
 * results on par with the SOTA on several downstream tasks. In addition, we
 * stabilizes the training of other methods and leads to performance improv
 
 # 1 Intro
 
 * Self-supervised representation learning has made significant progress
-  * almost reaching the performance of supervised baselines on many downstream
+  * almost reaching the performance of supervised baselines on many downstreams
   * Bachman+ (2019); Misra & Maaten (2020); He+ (2020); Tian+ (2020); Caron+
     (2020); Grill+ (2020); Chen & He (2020); Gidaris+ (2021); Zbontar+ (2021)
     * Ishan Misra and Laurens van der Maaten. CVPR, 2020
       Self-supervised learning of pretext-invariant representations
-  * Several recent approaches rely on a joint embedding architecture in which
+  * Several recent approaches rely on a
+    joint embedding architecture in which
     two networks are trained to produce
     similar embeddings for different views of the same image
   * eg Siamese network architecture (Bromley+ 1994), where
@@ -41,8 +42,8 @@ tl;dr: Variance regularization prevents collapse in self-supervised repr learn
     * information maximization methods
   * Contrastive 
     (Bromley+ 1994; Chopra+ 2005; He+ 2020; Hjelm+ 2019; Chen+ 2020a)
-    * costly, require large batch sizes or memory banks, and use a loss that
-      explicitly pushes the embeddings of dissimilar images away
+    * costly, require large batch sizes or memory banks, and use
+      a loss that explicitly pushes the embeddings of dissimilar images away
     * require a mining procedure to search for offending dissimilar samples
       from a memory bank (He+ 2020) or from the current batch (Chen+ 2020a)
   * Quantization-based approaches (Caron+ 2020; 2018) force the embeddings of
@@ -52,7 +53,7 @@ tl;dr: Variance regularization prevents collapse in self-supervised repr learn
     * A similarity term encourages the cluster assignment score vectors from
       the two branches to be similar
   * More recent methods not rely on contrastive samples or vector quantization,
-    yet produce high-quality representations, for example
+    yet produce high-quality representations
     * eg BYOL (Grill+ 2020) and SimSiam (Chen & He 2020)
     * They exploit several tricks: batch-wise or feature-wise normalization, a
       "momentum encoder" in which the parameter vector of one branch is a

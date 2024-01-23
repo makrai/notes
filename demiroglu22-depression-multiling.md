@@ -30,9 +30,8 @@ EURASIP Journal on Audio, Speech, and Music Processing volume 2020
     [15] features were extracted from audio. Those features
   * combined within a bag-of-word (BoW) front-end that uses vector quantization
     to quantize feature vectors into a limited set of centroids [16]
-    * ie sequences of features vectors are converted into sequences of
-      centroid-ids
-    * well-known in the text processing field, and it has also gained
+    * ie seqs of features vectors are converted into sequences of centroid-ids
+    * well-known in the text processing field
     * recent popularity in emotion detection [17]
 * Deep learning based feature extraction methods for emotion detection [14]
   * convolutional neural network (CNN)-based image recognition systems are

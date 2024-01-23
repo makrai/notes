@@ -1,6 +1,6 @@
 Fine-Tuning Language Models with Just Forward Passes
 S Malladi, T Gao, E Nichani, A Damian, JD Lee, D Chen, S Arora
-arXiv:2305.17333 [cs.LG]
+arXiv:2305.17333
 
 # Abstract
 
@@ -143,8 +143,8 @@ arXiv:2305.17333 [cs.LG]
 # 6 Conclusion
 
 * future
-  * combining MeZO with other memory-efficient methods, such as FlashAttention
-    [22] and quantization [25]. We hope to investigate this in the future.  We
+  * combining MeZO with other memory-efficient methods,
+    eg FlashAttention [22] and quantization [25]
   * explore the applicability of MeZO to a number of promising areas, including
     pruning, distillation, saliency, interpretability, and
     dataset selection for fine-tuning

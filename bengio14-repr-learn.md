@@ -24,11 +24,11 @@ Representation Learning: A Review and New Perspectives
 
 # 2 Why should we care about learning representations?
 
-* Representation learning [has]
+* Representation learning has
    * regular workshops at the leading conferences NIPS and ICML, and a new
   *  conference dedicated to it, ICLR
-  * sometimes ... the header of Deep Learning or Feature Learning
-* Below, we briefly highlight some ... empirical successes both in academia
+  * sometimes the header of Deep Learning or Feature Learning
+* Below, we briefly highlight some empirical successes both in academia
   and in industry
 
 ## 2.1 Speech Recognition and Signal Processing
@@ -43,7 +43,7 @@ Representation Learning: A Review and New Perspectives
       * first introduced for modeling natural images
   * Deng+ 2010;
     * Binary coding of speech spectrograms using a deep auto-encoder
-    * produce[s] a logspectral distortion that is approximately 2 dB lower
+    * produces a logspectral distortion that is approximately 2 dB lower
       than a subband vector quantization technique
   * Seide+ 2011a Interspeech
     * Conversational speech transcription using context-dependent DNNs
@@ -63,7 +63,7 @@ Representation Learning: A Review and New Perspectives
       * is between 16% and 23%
   * Hinton+ 2012 IEEE
     * Deep neural networks for acoustic modeling in speech recognition
-    * Most current speech recognition systems use ... Gaussian mixture models
+    * Most current speech recognition systems use Gaussian mixture models
       to determine how well each state of each HMM fits a frame or a short
       window of frames of coefficients that represents the acoustic input
     * An alternative way to evaluate the fit is to use a feedforward NN that
@@ -93,16 +93,16 @@ Representation Learning: A Review and New Perspectives
 
 ## 2.3. Natural Language Processing
 
-Distributed representations for symbolic data
+* Distributed representations for symbolic data
   * were introduced by Hinton (1986)
 * in the context of statistical language modeling
   * by Bengio+ (2003) in so-called
   * neural net language models (Bengio, 2008)
-Adding a convolutional architecture, Collobert+ (2011) developed
+* Adding a convolutional architecture, Collobert+ (2011) developed
   * the SENNA system that
   * _shares representations across the tasks_
 * combined with learning image representations in a way that allow to
-* associate text and images
+  associate text and images
   * Google’s image search, exploiting huge quantities of data to
   * map images and queries in the same space (Weston+ 2010) and it has
   * recently been extended to deeper multi-modal representations
@@ -111,7 +111,7 @@ Adding a convolutional architecture, Collobert+ (2011) developed
       NIPS 2012
 * adding recurrence to the hidden layers (Mikolov+ 2011)
 * statistical machine translation [182], [121],
-Recursive auto-encoders (which generalize recurrent networks)
+* Recursive auto-encoders (which generalize recurrent networks)
   * full sentence paraphrase detection (Socher+ 2011a)
     * almost doubling the F1 score for paraphrase detection
 * word sense disambiguation [33],
@@ -125,7 +125,7 @@ Recursive auto-encoders (which generalize recurrent networks)
 * two transfer learning challenges held in 2011
   * ICML 2011 workshop of the same name, was won using
   * unsupervised layerwise pretraining [12], [145]
-  * Goodfellow+ [72] ... at NIPS 2011’s Challenges in Learning
+  * Goodfellow+ [72] at NIPS 2011’s Challenges in Learning
   * Hierarchical Models Workshop
 * setups
   * domain adaptation
@@ -169,7 +169,7 @@ Sparsity
   * this could be represented by
     * features that are often zero2
   *   * (as initially proposed by Olshausen and Field (1996)),
-    * [most] features are insensitive to small variations of x
+    * most features are insensitive to small variations of x
   * This can be achieved with
     * priors on latent variables (peaked at 0), or by using
     * a nonlinearity whose value is often flat at 0
@@ -200,12 +200,12 @@ We advocate learning algorithms that are flexible and non-parametric7
 
 * probabilistic graphical models and one rooted in neural networks
 * single-layer greedy learning modules
-  * restricted Boltzmann machine (RBM) ... and the auto-encoder variants
+  * restricted Boltzmann machine (RBM) and the auto-encoder variants
 In the next few sections (6--8) we will review the major developments in
 * single-layer training modules
   * Principal Components Analysis
     * the three interpretations
-  * this review does not cover ... Independent Component Analysis
+  * this review does not cover Independent Component Analysis
 
 # 6 Probabilistic models
 
@@ -217,7 +217,7 @@ In the next few sections (6--8) we will review the major developments in
 
 ## 7.2 Regularized Auto-Encoders
 
-  * auto-encoders originally ... dimensionality reduction ... bottleneck,
+  * auto-encoders originally dimensionality reduction bottleneck,
   `d_h < d_x`
   * successful uses of sparse coding and RBM approaches ->
     * overcomplete representations, i.e. d h > d x
@@ -248,7 +248,7 @@ In the next few sections (6--8) we will review the major developments in
     * some directions are well preserved (the tangent directions)
     * others aren’t (directions orthogonal to the manifolds)
   * an intrinsic coordinate system on the embedded manifold
-* The archetypal manifold modeling algorithm is ... PCA
+* The archetypal manifold modeling algorithm is PCA
 * real world domains are however expected to be strongly nonlinear.  Their
 * patchworks of locally linear tangent spaces (Vincent & Bengio, 03; Brand, 03)
 * a non-parametric approach, based on a training set nearest neighbor graph
@@ -261,7 +261,7 @@ In the next few sections (6--8) we will review the major developments in
     original high dimensional input space are best preserved
   * do not directly learn a parametrized feature extraction function `f_θ(x)`
     applicable to new test points
-* we will focus on [non-linear manifold learning methods] that learn a
+* we will focus on non-linear manifold learning methods that learn a
   parametric map that can directly compute a representation for new points
 
 ## 8.1 Learning a parametric mapping based on a neighborhood graph

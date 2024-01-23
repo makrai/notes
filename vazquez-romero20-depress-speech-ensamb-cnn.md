@@ -23,7 +23,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 
 ## ADD systems consider visual and audio individually or combined
 
-* visual modality is based on facial video information, by means of the
+* visual modality is based on facial video information
   * facial expressions, head movements, eye gazes, or blinks
   * represented by Facial Action Coding System (FACS),
     Active Appearance Model (AAM), or
