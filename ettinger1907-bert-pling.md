@@ -125,7 +125,7 @@ https://github.com/aetting/lm-diagnostics
 ### N400 amplitude
 
 * brain response detected by measuring electrical activity at the scalp (EEG)
-* to gauge how expected a word w is in a context c
+* to gauge how expected a word `w` is in a context `c`
   * appears to be sensitive to fit of a word in context
   * correlate with cloze in many cases (Kutas and Hillyard, 1984)
   * predicted by LM probabilities (Frank+ 2013)
@@ -136,7 +136,7 @@ https://github.com/aetting/lm-diagnostics
 
 * all drawn from human studies that have
   * revealed divergences between cloze and N400 profiles
-  * i.e. N400 response suggests a level of insensitivity to certain information
+  * ie N400 response suggests a level of insensitivity to certain information
     when computing expectations, causing a deviation from the fully-informed
     cloze predictions
   * present particularly challenging prediction tasks, tripping up models that
@@ -298,7 +298,7 @@ https://github.com/aetting/lm-diagnostics
 * removing either the object (“-Obj”) or the subject (“-Sub”)
   * relatively little effect on the accuracy of BERT BASE for either k = 1 or 5
   * the accuracy of LARGE drops substantially
-  * i.e. BERT BASE is relying primarily upon one or the other
+  * ie BERT BASE is relying primarily upon one or the other
 * items in this set are overall less constraining than those in Section 7
   * humans converge less clearly on the same predictions
   * To investigate the effect of constraint level,\

@@ -10,8 +10,7 @@ EACL 2021
   * the two ideas can be combined
 * We introduce Pattern-Exploiting Training (PET)
   * a semi-supervised training procedure that
-    reformulates input examples as cloze-style phrases to help LMs understand a
-    given task
+    reformulates input as cloze-style phrases to help LMs understand a task
   * These phrases are then used to assign soft labels to a large set of
     unlabeled examples
   * Finally, standard supervised training is performed on the resulting
@@ -32,20 +31,20 @@ EACL 2021
 * we show that 
   * task descriptions can be combined with standard supervised learning in
     few-shot settings: We introduce
-  * Pattern-Exploiting Training (P ET ), a semi-supervised training procedure
+  * Pattern-Exploiting Training (PET), a semi-supervised training procedure
     * uses natural language patterns to reformulate input examples into
       cloze-style phrases
-    * Figure 1, P ET works in
+    * Figure 1, PET works in
   * three steps: 
     1. for each pattern a separate PLM is finetuned on a small training set T
     2. The ensemble of all models is then used to annotate a large unlabeled
        dataset D with soft labels
     3. a standard classifier is trained on the soft-labeled dataset
-* We also devise iP ET , an iterative variant of P ET in which
+* We also devise iPET , an iterative variant of PET in which
   * this process is repeated with increasing training set sizes.
 * experiments On a diverse set of tasks in multiple languages, we show that
   * small to medium number of labeled examples,
-  * P ET and iP ET substantially outperform unsupervised approaches, supervised
+  * PET and iPET substantially outperform unsupervised approaches, supervised
     training and strong semi-supervised baselines
 
 # Related Work
@@ -87,7 +86,7 @@ EACL 2021
   * our approach requires no additional labeled data and provides an intuitive
     interface to leverage task-specific human knowledge.
 * training multiple generations of models on data labeled by previous gens 
-  * The idea behind iP ET 
+  * The idea behind iPET 
   * resembles to self-training and bootstrapping approaches for
     * word sense disambiguation (Yarowsky, 1995)
     * relation extraction (Brin 1999; Agichtein & Gravano 2000; Batista+ 2015)
@@ -144,36 +143,36 @@ EACL 2021
   3. We finetune a PLM C with a standard sequence classification head on T C
     * The finetuned model C then serves as our classifier for A.  All steps
 
-## 3.4 Iterative P ET (iP ET )
+## 3.4 Iterative PET (iPET)
 
 * Distilling the knowledge of all individual models into a single classifier C
   means they cannot learn from each other
   * As some patterns perform (possibly much) worse than others, the training
     set T C for our final model may therefore contain many mislabeled examples.
-* The core idea of iP ET is to train several generations of models
+* The core idea of iPET is to train several generations of models
   on datasets of increasing size
   * we first enlarge the original dataset T by labeling selected examples from
-    D using a random subset of trained P ET models (Figure 2a)
-  * then train a new generation of P ET models on the enlarged dataset (b);
+    D using a random subset of trained PET models (Figure 2a)
+  * then train a new generation of PET models on the enlarged dataset (b);
     this process is repeated several times (c).
 
 # 5 Analysis
 
 ## Combining PVPs We first investigate
 
-* whether P ET is able to cope with situations were some PVPs perform much
+* whether PET is able to cope with situations were some PVPs perform much
   worse than othersl
-* Table 4 compares the performance of P ET to that of the best and worst
+* Table 4 compares the performance of PET to that of the best and worst
   performing patterns after finetuning; we also include results obtained
-  using the ensemble of P ET models corresponding to individual PVPs without
+  using the ensemble of PET models corresponding to individual PVPs without
   knowledge distillation
   * Even after finetuning, the gap between the best and worst pattern is large,
-    especially for Yelp.  However, P ET is not only able to compensate for
+    especially for Yelp.  However, PET is not only able to compensate for
     this, but even improves accuracies over using only the best-performing
     pattern across all tasks
   * Distillation brings consistent improvements over the ensemble;
     additionally, it significantly reduces the size of the final classifier. We
-  * no clear difference between the uniform and weighted variants of P ET
+  * no clear difference between the uniform and weighted variants of PET
 
 ## Auxiliary Language Modeling, the influence of
 
@@ -183,7 +182,7 @@ EACL 2021
   * With more data, it becomes less important, sometimes even leading to worse
   * Only for MNLI, we find language modeling to consistently help.
 
-## Iterative P ET, whether iP ET is able to improve models over multiple gens,
+## Iterative PET, whether iPET is able to improve models over multiple gens,
 
 * Figure 4: average performance of all generations of models in a zero-shot
   * Each additional iteration does indeed further improve the ensemble
@@ -199,16 +198,16 @@ EACL 2021
 
 ## In-Domain Pretraining
 
-* P ET makes use of the additional unlabeled dataset D. Thus, at least some of
+* PET makes use of the additional unlabeled dataset D. Thus, at least some of
 * we simply further pretrain RoBERTa on in-domain data,
   * a common technique for improving text classification accuracy
     (eg Howard and Ruder, 2018; Sun+ 2019). As language model pretraining is
     expensive in terms of GPU usage, we do so only for the Yelp dataset
-* Figure 5 shows results of supervised learning and P ET with/out indomain pret
+* Figure 5 shows results of supervised learning and PET with/out indomain pret
   * pretraining does indeed improve accuracy for supervised training, the
-    supervised model still clearly performs worse than P ET , showing that
+    supervised model still clearly performs worse than PET , showing that
     the success of our method is not simply due to the usage of additional
     unlabeled data
-  * in-domain pretraining is also helpful for P ET , indicating that
-    P ET leverages unlabeled data in a way that is clearly different from
+  * in-domain pretraining is also helpful for PET , indicating that
+    PET leverages unlabeled data in a way that is clearly different from
     standard masked language model pretraining

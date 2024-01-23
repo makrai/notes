@@ -81,8 +81,9 @@ EMNLP-2020 arXiv:2010.00980 [cs.CL]
 
 # 7 Conclusoin
 
-* future: combining our approach with additional pre-training objectives such as
-  the Inverse Cloze Task (Chang+ 2020) could substantially increase the amount
-  of training data for the large quantity of smaller forums. Researchers could
-  also use our 140 domain-specific adapters and investigate further combination
-  techniques to make them even more broadly applicable
+* future
+  * combining our approach with additional pre-training objectives eg the
+    Inverse Cloze Task (Chang+ 2020) could substantially increase the amount of
+    training data for the large quantity of smaller forums
+  * Researchers could also use our 140 domain-specific adapters and investigate
+    further combination techniques to make them even more broadly applicable

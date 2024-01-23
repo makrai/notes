@@ -133,7 +133,7 @@ ACL 2021 Findings arXiv:2010.12834 [cs.CL]
     * BERTScore (Zhang+ 2020),
       * a summarization metric that is aimed primarily at improving coherency
         rather than factual consistency, and
-    * standard summarization evaluation metrics (e.g. ROUGE (Lin, 2004))
+    * standard summarization evaluation metrics (eg ROUGE (Lin, 2004))
 
 # 5 Meta-Analysis of Factuality Metrics
 
@@ -218,7 +218,7 @@ ACL 2021 Findings arXiv:2010.12834 [cs.CL]
   * Vered Shwartz, Peter West, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
     Unsupervised commonsense question answering with selftalk
     EMNLP 2020
-* summary meta-metric results (e.g. correlation on simulated data) could be used
+* summary meta-metric results (eg correlation on simulated data) could be used
   as rewards for reinforcement learning driven approaches to training factuality
   metrics
 
@@ -277,7 +277,7 @@ ACL 2021 Findings arXiv:2010.12834 [cs.CL]
 * Extrinsic entity errors: substitute entity from the whole corpus of docs
 * To swap an adjective for its antonym, we use WordNet (Miller, 1995) to obtain
 * Pronoun entity errors with a preset list of commonly used pronouns
-  * e.g. we swap she/her with he/him
+  * eg we swap she/her with he/him
 * Verb Negation. We use a rule-based system for verb negation
   * based on verb tense, and predict tense based on the suffix and preceding
     words

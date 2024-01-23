@@ -80,12 +80,13 @@ EMNLP 2019 arXiv:1904.09077 [cs.CL]
 
 * representation of a shared subword
   * explicitly trained to contain enough information for the cloze task in all
-    languages in which it appears.  During fine-tuning for zero-shot
-  * could overfit to the source language and potentially hurt transfer
+    languages in which it appears
+  * During fine-tuning for zero-shot,
+    mBERT could overfit to the source language and potentially hurt transfer
 * In four out of five tasks (not XNLI) we observed a strong positive corr
   * In Indo-European languages, we observed
     * subwords shared across languages are usually high freq
-    * p_token is usually around 50% to 75% while p_type is less than 50%
+    * `p_token` is usually around 50% to 75% while `p_type` is less than 50%
 
 # 6 Discussion
 

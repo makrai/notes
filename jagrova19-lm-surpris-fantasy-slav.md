@@ -70,19 +70,19 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
           have felt misled by the apparently “weird” context, and instead chose
           less surprising translations. In addition to the results from the
       think-aloud translation experiments, we present results from\
-  3. web-based cloze tests with the same stimuli sentences where the\
-     translation gaps were placed on the words that turned out to be\
-     problematic in the think-aloud experiments. The cloze experiments were
-     conducted over the website freely accessible at
-     http://intercomprehension.coli.uni-saarland.de/en/
+  3. web-based cloze tests with the same stimuli sentences 
+    * the translation gaps were placed on the words that turned out to be
+      problematic in the think-aloud experiments
+    * The cloze experiments were conducted over the website freely accessible
+      at http://intercomprehension.coli.uni-saarland.de/en/
 * The main purpose of this study is to present a method for estimating the
   processing difficulty of sentences in reading intercomprehension, using
   statistical LMs
   * The qualitative analysis does not aim to evaluate a statistically
     significant number of stimuli in an experiment, but rather to\
     investigate why respondents chose certain translations in certain cases
-    * Results from web-based cloze experiments for the same stimuli are added for
-    a quantitative perspective
+    * Results from web-based cloze experiments for the same stimuli are added
+      for a quantitative perspective
 
 # 6. Summary and discussion
 
