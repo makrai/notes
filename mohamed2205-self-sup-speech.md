@@ -3,7 +3,7 @@ Abdelrahman Mohamed, Hung-yi Lee, Lasse Borgholt, Jakob D Havtorn,
   J Edin, C Igel, K Kirchhoff, S Li, K Livescu, L Maaløe, TN Sainath, S Watanabe
 arXiv:2205.10643 [cs.CL]
 
-whisper not mentioned
+this paper is older than whisper (Radford 23)
 
 # Abstract
 
