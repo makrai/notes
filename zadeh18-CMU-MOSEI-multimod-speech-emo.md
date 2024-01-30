@@ -194,7 +194,7 @@ ACL 2018
   * sentiment on a [-3,3] Likert scale
   * Ekman emotions (Ekman+ 1980) of {happiness, sadness, anger, fear, disgust,
     surprise} are annotated on a [0,3] Likert scale for presence of emotion x:
-  * 3 crowdsourced judges from Amazon Mechanical Turk platform.  To avert
+  * 3 crowdsourced judges from Amazon Mechanical Turk platform
     * 5 minutes training video on how to use the annotation system. All the
     * master workers with higher than 98% approval rate to assure high quality
 * Extensive statistics of the dataset including the crawling mechanism, the

@@ -1,6 +1,6 @@
 Robust Speech Recognition via Large-Scale Weak Supervision
 Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, C Mcleavey, Ilya Sutskever 
-40th International Conference on Machine Learning, PMLR 202:28492-28518, 2023.
+40th International Conference on Machine Learning, PMLR 202:28492-28518, 2023
 
 inference code and models at the following URL: https://github.com/openai/whisper
 

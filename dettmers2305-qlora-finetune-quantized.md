@@ -217,7 +217,7 @@ birthday given is correct for the person mentioned, Al Jolson)
 * When Guanaco shows its work, it tends to be accurate
   * eg User: Lee mows one lawn and charges $33. Last week he mowed 16 lawns and
     three customers each gave him a $10 tip. How many dollars did Lee earn
-    mowing lawns last week?  
+    mowing lawns last week?
     Lee earned $582 mowing lawns last week.  To find the total amount he
     earned, we first need to calculate how much he earned for mowing 16 lawns:
     $33 x 16 = $528 Then we need to add the tips he received from the three
@@ -229,7 +229,7 @@ birthday given is correct for the person mentioned, Al Jolson)
     prime number, which means it has only two factors: 1 and 1833.  So the
     unique factorization of 1833 is: 2ˆ1 * 3ˆ2 * 17ˆ1 I hope this helps!
     questions.  Let me know if you have any other which is not only wrong (the
-    true factorization is 3 × 17 × 43), it’s wrong twice 
+    true factorization is 3 × 17 × 43), it’s wrong twice
 
 ### Theory of Mind: surprisingly strong Theory of Mind capabilities [41, 51]
 
@@ -242,12 +242,12 @@ birthday given is correct for the person mentioned, Al Jolson)
   in the desk drawer, because that’s where she left it last time. However, this
   assumption may be incorrect, because Abby may have seen James moving the pen
 * hE often the model gives reasons that presume things that don’t make sense in
-  the situation, eg 
+  the situation, eg
 > Evelyn entered the living room. Jackson entered the playroom. James entered
 > the playroom. The beans are in the treasure chest.  James exited the
 > playroom.  Jackson moved the beans to the pantry. Jackson exited the
 > playroom.  James entered the living room. Where will James look for the
-> beans?  
+> beans?
 Guanaco
 > James will look for the beans in the pantry, because that’s where Jackson
 > moved them
@@ -325,17 +325,17 @@ Guanaco
   Guanaco-65B is much lower than other raw pretrained models. As such, it seems
   that finetuning on the OASST1 dataset reduces the bias of the LLaMA base
   * unclear if Guanaco does also well when assessed on other types of biases
-* we did not evaluate different bit-precisions, such as using 3-bit base
-  models, or different adapter methods. Besides LoRA, there is also
-  * a wide variety Parameter Efficient FineTuning (PEFT) methods that have been
-    shown to work well. However, it is
-    * unclear if these methods scale to large models. We used LoRA as many
-    * other adapters might yield better performance
-    * Since finetuning after quantization seems to recover most of the info
-      that is lost during quantization this might enable much more aggressive
-      quantization
-    * eg 3-bit GPTQ quantization of the basemodel with LoRA might also yield
-      16-bit full finetuning performance after finetuning
+* we did not evaluate
+  * different bit-precisions, such as using 3-bit base models, or
+  * different adapter methods
+  * a wide variety Parameter Efficient FineTuning (PEFT) methods work well
+  * unclear if these methods scale to large models
+  * other adapters might yield better performance
+  * Since finetuning after quantization seems to recover most of the info
+    that is lost during quantization
+  * ie much more aggressive quantization may be possible
+  * eg 3-bit GPTQ quantization of the basemodel with LoRA might also yield
+    16-bit full finetuning performance after finetuning
 
 # 9 Broader Impacts
 
