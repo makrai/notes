@@ -145,9 +145,8 @@ arXiv:2305.17333
 * future
   * combining MeZO with other memory-efficient methods,
     eg FlashAttention [22] and quantization [25]
-  * explore the applicability of MeZO to a number of promising areas, including
-    pruning, distillation, saliency, interpretability, and
-    dataset selection for fine-tuning
+  * application of MeZO to pruning, distillation, saliency, interpretability,
+    and dataset selection for fine-tuning
   * Non-differentiable objectives are a particularly exciting area
     * recent advances in tuning large LMs to adapt to human feedback
     * future: theoretical analyses for how these efficient gradient estimates
