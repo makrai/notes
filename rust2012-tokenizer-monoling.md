@@ -29,7 +29,7 @@ arXiv:2012.15613 [cs.CL]
 # 1 Introduction
 
 * large Transformer-based language models (LMs; Vaswani+ 2017) pretrained for
-  * English (e.g., BERT, RoBERTa, T5; Devlin+ 2019; Liu+ 2019; Raffel+ 2020)
+  * English (eg BERT, RoBERTa, T5; Devlin+ 2019; Liu+ 2019; Raffel+ 2020)
   * monolingual language models have been introduced for other languages
     (Virtanen+ 2019; Antoun+ 2020; Martin+ 2020, inter alia), offering
     previously unmatched performance on virtually all NLP tasks.  ∗
@@ -74,7 +74,7 @@ arXiv:2012.15613 [cs.CL]
     different tokenizers (i.e., shared multilingual tokenizers versus dedicated
     language-specific ones)
     * to disentangle the impact of pretraining data size versus tokenization on
-  * We isolate factors that contribute to performance difference (e.g.,
+  * We isolate factors that contribute to performance difference (eg
     tokenizers’ “fertility”, the number of unseen (sub)words, data size) and
     provide an in-depth analysis of the impact of these important factors
 
@@ -95,7 +95,7 @@ arXiv:2012.15613 [cs.CL]
   variant of the original BERT model; Liu+ 2019)
 * studies started analyzing mBERT’s and XLM-R’s capabilities and limitations,
   * work surprisingly well for cross-lingual tasks, despite the fact that they
-    do not rely on any direct cross-lingual supervision (e.g., parallel or
+    do not rely on any direct cross-lingual supervision (eg parallel or
     comparable data, translation dictionaries)
     (Pires+ 2019; Wu and Dredze, 2019; K+ 2020)
 * limitations of the multilingual models
@@ -160,7 +160,7 @@ arXiv:2012.15613 [cs.CL]
 * We compare multilingual BERT with its monolingual counterparts in a spectrum
   of typologically diverse languages and across a variety of downstream tasks
   * isolating and analyzing crucial factors contributing to performance
-    e.g. tokenizers and pretraining data, we conduct unbiased and fair compariso
+    eg tokenizers and pretraining data, we conduct unbiased and fair compariso
 
 ## 3.1 Language and Task Selection
 
@@ -349,10 +349,10 @@ criteria:
     the mBERT tokenizer, establishing that a
   * specialized vocabulary plays an equally important role on the downstream
     performance as the pretraining data set size
-* more balancing of individual languages’ representations within the tokenizer’s
-  vocabulary (e.g., by merging monolingual vocabularies) can close the gap
-  between monolingual and multilingual models in cases where the tokenizer
-  currently makes the difference
+* more balancing of individual languages’ representations in the toker's vocab 
+  (eg by merging monolingual vocabularies) can
+  close the gap between monolingual and multilingual models
+  in cases where the tokenizer currently makes the difference
 
 # Appendix 15
 

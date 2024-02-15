@@ -181,9 +181,9 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * classifiers such as naive Bayes, SVM (Mohammad, 2012), MaxEnt and others to
 * deep learning, SOTA models for emotion classification are often based on
   * Schuff+ (2017) applied models from the classes of CNN, BiLSTM (Schuster and
-    Paliwal, 1997), and LSTM (Hochreiter and Schmidhuber, 1997) and compare
-    them to linear classifiers (SVM and MaxEnt), where the BiLSTM show best
-    results with the most balanced precision and recall
+    Paliwal, 1997), and LSTM (Hochreiter and Schmidhuber, 1997) and
+    compare them to linear classifiers (SVM and MaxEnt), where the
+    BiLSTM show best results with the most balanced precision and recall
   * Abdul-Mageed and Ungar (2017) claim the highest F1 following Plutchik’s
     emotion model with gated recurrent unit networks (Chung+, 2015)
 * transfer learning; to make use of similar resources and then transfer

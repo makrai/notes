@@ -205,6 +205,50 @@ arXiv:2203.07378 [eess.AS]
     itself => the use of MOSI for cross-corpus expers is well-motivated
     practically
 
+# 3.4 Evaluation
+
+we evaluate SER models for correctness, robustness, and fairness [48]
+
+## Correctness measures how well predictions match the ground truth
+
+* The concordance correlation coefficient (CCC) provides an estimate of
+  how well the predicted distribution matches the ground truth one [49], and is
+* the typical measure for evaluating dimensional SER models [50]
+
+## Robustness (cf. Section 4.8) 
+
+* how model performance is affected by changes to the input signals such as
+  adding background noise
+  * Applying changes to the input might affect the ground truth label [33, 51].
+* We focus on testing the robustness of the models against data augmentations
+  that do not change the human perception of the underlying emotion
+  * We select the following five augmentations from Jaiswal and Provost [33] to
+    enable direct comparison with previous results: 
+  * Natural soundscapes adds a randomly selected sample from the natural class
+    of the ESC-50 dataset [52] with a signal-to-noise ratio (SNR) of 0 dB, 10
+    dB or 20 dB
+  * Human, non-speech adds a randomly selected sample from the human class of
+    the ESC-50 dataset with a SNR of 0 dB, 10 dB or 20 dB
+  * Interior/domestic adds a randomly selected sample from the interior class
+    of the ESC-50 dataset with a SNR of 0 dB, 10 dB or 20 dB
+  * Speed up segment selects a random segment of 10% to 20% length within the
+    utterance and increases its speed by 1.25
+  * Fade-in/fade-out decreases or increases the amplitude of the signal by 2%
+    every second.
+
+## Fairness (cf. Section 4.9) evaluates if the model predictions show
+
+* biases for certain protected attributes like race, gender, or age [53]
+* We focus on gender
+  * due to the lack of sufficient available information and/or datasets for
+  * For regression problems, there is no clear definition how to measure
+  * most approaches try to achieve an equal average expected outcome for
+    population A and B [54]
+  * We measure fairness by estimating the gender fairness score as the
+    difference in the correctness metric (CCC) between female and male groups.
+  * A positive gender fairness score indicates a better performance of the
+    model for female speakers.
+
 
 # 4 Results with publicly-available pre-trained models for dimensional SER (cf)
 

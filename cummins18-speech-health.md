@@ -79,7 +79,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   the OPENSMILE toolkit [44]. OPENSMILE provides software solutions to enable
   * a standard set of scripts is provided with OPENSMILE to enable users to
     replicate the feature representation used in the challenges
-* Classification is mainly achieved in the baseline systems using
+* Classification mainly with
   linear kernel Support Vector Machines (SVM)/Support Vector Regression (SVR)
   * because they are considered to be robust against overfitting
   * overfitting is a common issue when utilising small and unbalanced datasets
@@ -230,16 +230,15 @@ Methods Volume 151, 1 December 2018, Pages 41-54
   * Using this method, the
     development score was 0.46 (0.68, for ‘not-de- pressed’) and the
     test set score was 0.41 (0.58, for ‘not-depressed’)
-  * participants in 2016
-    * only deep learning approach being the DEPAUDIONET E2E system [129]
+  * contestants in 2016
+    * the only deep learning approach was the DEPAUDIONET E2E system [129]
       * feed Mel Spectrum features into an E2E network comprising a feature
         extraction topology of; a onedimensional convolution layer, a batch
         normalization layer, a ReLu layer, a one-dimensional max-pooling layer
         and a dropout layer; this is then followed by a LSTM layer and two fully
         connected layers
       * To help overcome imbalance issues: random down sampling of the non
-        depression class when creating their mini-batch samples for network
-        training
+        depression class when creating their mini-batch samples 
       * outperformed the baseline approach on development set 0.52 (0.70, for
         ‘not-depressed’); however, no test set score was given in the paper
         [129]
@@ -252,7 +251,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
     in conjunction with a Random Forest regressor
   * metric was RMSE, as in AVEC-2013 and AVEC-2014 (cf. 4.7)
     * audio development set and test set RMSE’s being 6.74 and 7.78 resp
-* participants
+* contestants
   * two papers explored CNNS
     * both lead by Le Yang of Northwestern Polytechnical University
   * [131] system fed ComParE-2013 features into a CCN trained to predict PHQ8
@@ -266,9 +265,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       similar systems from the video and text modalities) via multivariate
       linear regression
     * To alleviate imbalance issues: data expansion technique in which the
-      ‘depressed’ class by cutting longer segments into multiple chunks to
-      artificially create more depression data instance, albeit with the same
-      labels
+      * cutting longer depressed segments into multiple chunks to artificially
+        create more depression data instance, albeit with the same labels
     * development set RMSE of 6.62, which was below the provided baseline; only
       audio-visual fusion RMSE were given for test set, with the lowest
       reported value being 5.40
@@ -380,9 +378,9 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 * two challenges have been won using a deep learning based approach:
   2015’s Parkinson’s condition sub-challenge [118] and 2017’s cold and flu
-  * debatable given the results in [126] if the winning approach in 2015 was
-    due to the deep learning approach or the
+  * ? winning approach in 2015 was due to the
     post-processing speaker clustering method employed [118]
+    * given the results in [126], rather than deep learning
   * the majority of challenge participants still use
     very conventional feature extraction and classification paradigms
 * A major reason for this is most likely the small database,

@@ -11,7 +11,7 @@ https://github.com/SaraS92/CAE_ADD
 # Abstract
 
 * Depression requires early diagnosis and treatment
-* audio-based Automatic Depression Detection (ADD) system has sparked the
+* audio-based Automatic Depression Detection (ADD) system has sparked
   * most of the reported approaches rely on hand-crafted audio features
   * They combine wide variety of audio-related features
   * large feature space can lead to high-dimensionality issues
@@ -110,7 +110,7 @@ https://github.com/SaraS92/CAE_ADD
   * hE converting the raw audio data into spectrogram data which is time
     consuming and limits its application to real-world applications
 * Vázquez-Romero and Gallardo-Antolín (2020), an
-  ensemble of CNNs for depression classification is proposed
+  ensemble of CNNs for depression classification
   * unbalanced data: a random sampling method is utilized
   * notable performance (0.63F-measure) using the proposed method, utilizing
     the common practice of log-spectrogram representation of audio signals
@@ -174,7 +174,7 @@ https://github.com/SaraS92/CAE_ADD
   * To overcome the problem of unbalanced data using DAIC-WOZ dataset
     * a cluster-based resampling technique for the preprocessing step
   * experiments to compare the performance of the proposed CNN AE method with
-    hand-crafted feature extraction technique. To address the problem of
+    hand-crafted feature extraction technique
     * different dimensionality reduction techniques were explored for
       hand-crafted features and their performance are explored and compared
   * The performance of the proposed method is analyzed and compared to previous

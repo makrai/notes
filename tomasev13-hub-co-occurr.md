@@ -1,5 +1,5 @@
-Nenad Tomašev and Dunja Mladenić
 Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
+Nenad Tomašev and Dunja Mladenić
 2013
 
 # Abstract
@@ -9,11 +9,11 @@ Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
     neighbor occurrences and co-occurrences in high-dimensional data
   * Hidden nodes are used to aggregate all pairwise occurrence dependencies
   * the Augmented Naive Hubness Bayesian k-nearest Neighbor (ANHBNN)
-    * a novel kNN classification method for intrinsically high-dimensional
-  * Neighbor co-occurrence information forms an important part of the model and
-    * analysis reveals the influence of hubness
-      on the shape of the co-occurrence distribution
-* tested in object recognition from images in class-imbalanced data and the
+    * a novel kNN classification method for intrinsically high-dimensional data
+  * Neighbor co-occurrence information forms an important part of the model
+  * analysis reveals the influence of hubness
+    on the shape of the co-occurrence distribution
+* tested in object recognition from images in class-imbalanced data
 * results show clear benefits when compared to the other hubness-aware kNN
 
 # Introduction
@@ -70,5 +70,5 @@ Hub Co-occurrence Modeling for Robust High-dimensional kNN Classification
   (NHBNN) [23] was shown to be
   quite promising in high-dimensional data classification
   especially in the context of learning from class imbalanced data [20]
-  * hE NHBNN naively assumes independence between neighbor occurrences in the
-    same k-neighbor set
+  * hE NHBNN naively assumes
+    independence between neighbor occurrences in the same k-neighbor set

@@ -177,7 +177,7 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
 * dominance has the smallest range
 * Arousal and dominance scores are biased to positive scores
   (ie, active and strong, respectively)
-* In the future, we will look for more conversations with low arousal and domin
+* future: we will look for more conversations with low arousal and domin
   to balance the corpus (eg fear)
 
 ## 4.2. Inter-Evaluator Agreement

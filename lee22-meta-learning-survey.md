@@ -463,7 +463,7 @@ NAACL 2022
 
 * diversity of human languages
   * Multi-linguality, multi-task, and multi-label
-  * much impact on NLP problems due to the diversity of human languages
+  * much impact o[f] NLP problems due to the diversity of human languages
   * To learn models with balanced performance over attributes
   * weight the training examples for data selection
     to learn models with balanced performance over the attributes
@@ -495,9 +495,9 @@ NAACL 2022
   * conventionally addressed by tuning hyperparameters manually
     to up-sample languages with less resources
   * Differentiable Data Selection (DDS) to parameterize the sampling strategies
-    * trained with episodes and REINFORCE algorithm to optimize parameters of
-      sampler and MT models in an alternating way for the MT models
-      to converge with better performance across languages
+    * trained with episodes and REINFORCE algorithm to
+      optimize parameters of sampler and MT models in an alternating way
+      for the MT models to converge with better performance across languages
 * Pham+ (2021) formulate data sampling for multilingual MT as a problem of
   back-translation to
   generate examples of parallel utterances from unlabeled corpora in targ lang

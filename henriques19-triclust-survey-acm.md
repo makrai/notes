@@ -31,7 +31,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * underlying disease progression, development, and responses to stimuli,
     drugs, or therapy (Tchagang+ 2012; Bhar+ 2015; Heylen+ 2016)
   * Two-dimensional biomedical data also have been augmented into 3D data
-    e.g. specie-metabolite-condition concentration (Hu and Bhatnagar 2010)) or
+    eg specie-metabolite-condition concentration (Hu and Bhatnagar 2010)) or
     by decomposing the observed values against knowledge-driven annotations
     (such as gene-sample-term or gene-sample-regulator expression data)
 * social domains, understanding consumerism, web usage, work performance, and
@@ -129,7 +129,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 * [The homogeneity, statistical significance and] dissimilarity criteria
   are essentially defined by the selected merit functions and how they are
   applied
-* e.g. variance of values in a tricluster is an illustrative merit function,
+* eg variance of values in a tricluster is an illustrative merit function,
 * Merit functions vary according to
   * the way they are applied: to guide greedy iterative searches (Bhar+ 2012),
     optimize multiple objectives (Liu+ 2008), or learn parametric models
@@ -145,10 +145,10 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 
 ### 3D Merit Functions
 
-* e.g. algebraic distances, correlation coefficients, and residue-based funcs
+* eg algebraic distances, correlation coefficients, and residue-based funcs
   (Gutiérrez-Avilés and Rubio-Escudero 2014b; Sim+ 2010a)
 * Residue-based functions can be used to guarantee more flexible forms of
-  * e.g. accommodate shifts and scales on one, two, or three dimensions.  In
+  * eg accommodate shifts and scales on one, two, or three dimensions.  In
   * mean squared residue (MSR)
                     `a i j k = c + α i + β j + γ k + η i j k`
 * relationships between triclusters
@@ -156,9 +156,9 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
   * Mankad and Michailidis (2014)
   * real-valued 3D data can be described as a sum of q layers
 * multiple (possibly conflicting) merit funcs
-* [handle] (Gutiérrez-Avilés and Rubio-Escudero 2014b)
+* handle (Gutiérrez-Avilés and Rubio-Escudero 2014b)
   * imbalance on the number of objects per dimension
-    (e.g., thousands of genes for dozens of samples and time points
+    (eg thousands of genes for dozens of samples and time points)
   * arbitrarily high overlapping areas (Xu+ 2009)
 * symbolic 3D data analysis, most 3D merit functions [for binary] (Ignatov+ 15)
   * function : product of the fraction and number of ones in the tricluster
@@ -178,7 +178,7 @@ ACM Comput. Surv. 51, 5, Article 95 (September 2018)
 
 * find subspaces on each slice, then search for consensus across the third dim
 * biclustering merit functions (Madeira and Oliveira 2004; Henriques+ 2015b)
-  * e.g. Euclidean distances, pattern support, correlation coefficients,
+  * eg Euclidean distances, pattern support, correlation coefficients,
     permutation consistency, and residue-based functions.
 * 2D merit functions can enforce contiguity of time points and accommodate
   temporal misalignments. Xu+ (2009) placed an order-preserving assumption on

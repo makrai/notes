@@ -13,7 +13,7 @@ Cogn Comput (2015) 7:226–240
 
 # Intro
 
-* Chinese emotion corpora e.g. Ren-CECps and NLPCC2013 datasets
+* Chinese emotion corpora eg Ren-CECps and NLPCC2013 datasets
   * eight and seven emotion categories, and the
   * the largest emotion category are about 10 and 11 times the size of the slst
 * methods proposed to address this problem three major groups [29]:

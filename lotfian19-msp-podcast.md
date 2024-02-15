@@ -53,9 +53,9 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
     * media over Internet such as interviews or video blogs [16], [17]. In most
     * hE emo biased by the context and nature of the interaction,
     * reduced range of emotional behaviors in the corpora. It is important to
-* we present MSP-PODCAST and the data collection approach that we are using to
+* we present MSP-PODCAST and the data collection approach
   * relies on existing naturalistic recordings available on audio-sharing
-    websites. The recent popularity of multimedia content on Internet
+    websites (multimedia)
     * unlimited resources for videos (eg, YouTube, Vimeo), images (eg, Flickr,
       Picasa, Facebook, Instagram), and audio clips (eg, iTunes, Soundcloud)
     * we focus on podcasts, which are prerecorded audio programs that can be
@@ -70,7 +70,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
     background music, noisy segments, or overlapped speech
 * selection, segmentation and cleaning is
   automatized with algorithms for voice activity detection (VAD),
-  speaker diarization, music/speech recognition, and noise level estimation.
+  speaker diarization, music/speech recognition, and noise level estimation
   * After selecting candidate speaking turns, we retrieve a set of segments
     conveying balanced and rich emotional content
   * We rely on machine learning models trained with existing corpora to
@@ -90,7 +90,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
     reduced cost and reduced manual labor
   * building affective databases using media content was prev explored [17]
     * we: machine learning algorithms to retrieve audio clips with balanced emo
-      * natural stimuli with wider spectrum of emotions
+    * natural stimuli with wider spectrum of emotions
   * We study different information retrieval methods in emotion detection and
     compare their performances. The proposed approach relies on
   * automatic algorithms to post-process podcasts and a

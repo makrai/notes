@@ -126,9 +126,8 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * in some domains, such as speech synthesis or machine translation, 
     good quality can be reached by using techniques of knowledge distillation
     [49], probability density distillation [48], or iterative refinement [50]
-* some work on non-autoregressive or partially autoregressive models aims at
-  going beyond the assumption that output needs to be produced in a fixed
-  left-to-right generation order
+* some work on non-autoregressive or partially autoregressive models' aim:
+  output does not need to be produced in a fixed left-to-right generation order
   * Gu+ [51] present a transformer that treats
     generation order as a latent variable in sequence generation
     * predict the next word and, based on the next word,
@@ -392,16 +391,16 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
 
 ## 4.3 sampling-based methods
 
-* additional heuristics to shape or truncate the model distributions. A
+* additional heuristics to shape or truncate the model distributions
 * temperature sampling [157] that shapes the probability distribution with a
   temperature t and can be seen as a parameter of the softmax calculation [71]
-  * often used with low temperatures, ie, α < 1, as this skews the
-    distribution to the high probability events. A
+  * often used with low temperatures ie α < 1, as this
+    skews the distribution to the high probability events
   * detailed evaluation of the effect of temperature on quality and diversity is
     reported by Caccia+ [103]: they find the
     neural language models trained with a standard MLE objective outperform GANs
-    in terms of the quality-diversity trade-off, and temperature can be used to
-    systematically balance this trade-off
+    in terms of the quality-diversity trade-off, and
+    temperature can be used to systematically balance this trade-off
 * nucleus [71] and top-k sampling [99] are well-known decoding diversity methods
   * both sample from truncated language model distributions
     * In each decoding step, a set of most probable next tokens is determined,
@@ -654,18 +653,19 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
     * the listener models the identification of the speaker’s underlying persona
     * improves the consistency of the generated responses, ie, the response
 * Up to this point: decoding methods that are clearly separated from the
-  internal layers of a neural NLG architecture and that use heuristics and
-  * Section 2.2 already mentioned RL-based methods for optimizing the model with
-    sequence-level rewards in training. This sequence-level optimization aims
+  internal layers of a neural NLG architecture and that use heuristics
+  * Section 2.2 already mentioned RL-based methods for optimizing the model
+    with sequence-level rewards in training
   * Gu+ [174] explore RL for decoding and introduce the notion of trainable
-    decoding. As in other RL-based generation approaches [41,42], they use a
-    neural (MT) system that is trained in supervised fashion as their base
-    model. An important difference to Ranzato+ [41]’s approach is that, for
+    decoding
+    * As in other RL-based generation approaches [41,42], they use a neural
+      (MT) system that is trained in supervised fashion as their base model
+    * An important difference to Ranzato+ [41]’s approach:
     * an additional layer or “actor-network” to the trained model that will be
-      optimized with RL, while freezing the other, pretrained layers of the
-      network. They treat this actor network as a trainable decoder that learns
-      to manipulate the hidden state of the underlying pre-trained RNN and can
-      be optimized with any given reward function.  Whereas Gu+ [174] train the
+      optimized with RL, while freezing the other, pretrained layers 
+      * this actor network as a trainable decoder that learns to manipulate the
+        hidden state of the underlying pre-trained RNN and 
+      * can be optimized with any given reward function
   * Chen+ [179] present a supervised method to train the decoder. Of course,
     this notion of trainable decoding is conceptually different from an actual
     inference procedure for sequence prediction. Thus, when applying their
@@ -676,9 +676,9 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
   * Gu+ [174] and Zarrieß and Schlangen [70] rely on BLEU as a reward for the
     decoder, other metrics and rewards might constitute more interesting options
     to optimize decoding for, eg, conversational goals. For instance,
-  * Panagiaris+ [118] present a transformer-based model for REG that incorpo-
-    rates RL and various decoding methods to balance the diversity and
-    informativeness of referring expressions. Their approach suggests that
+  * Panagiaris+ [118] present a transformer-based model for REG that incorpors
+    RL and various decoding methods
+    to balance the diversity and informativeness of referring expressions
     * different objectives during generation might be achieved through a
       combination of modeling and decoding techniques
 

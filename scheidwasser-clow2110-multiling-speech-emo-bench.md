@@ -86,17 +86,16 @@ setup instructions, evaluation pipelines & examples, is freely available online
   * disgust, fear, neutral emotion, surprise, calm, and boredom appear in >= 1
 * all datasets have roughly the same average utterance duration 
   (between 2.5 & 4.5 seconds)
-* designed to balance dataset popularity, language diversity, and open
-  access
-  * In speech emotion recognition, EmoDB, IEMOCAP and RAVDESS are among the
-    most widely used datasets [15, 23, 24]. In the same vein as [24], a 4-class
-    subset of IEMOCAP (IEM4) was used to mitigate the severe class imbalance
-    in the original dataset. For the other tasks, all samples and classes from
-    the original datasets were used (Table 1). As already present in NOSS [6],
-    CREMA-D and SAVEE were included in SERAB. To complete the benchmark, CaFE
-    (French) and EMOVO (Italian) were chosen as Italic-language datasets,
-    whereas AESDD (Greek) and ShEMO (Persian) represented the Hellenic and
-    IndoIranian branches of the Indo-European family [25]. Overall, the
+* designed to balance dataset popularity, language diversity, and open access
+  * In SER, EmoDB, IEMOCAP and RAVDESS are among the most widely used datasets
+    [15, 23, 24]. In the same vein as [24], 
+  * class imbalance ~> a 4-class subset of IEMOCAP (IEM4) was used 
+  * For the other tasks, all samples and classes from the original datasets
+    were used (Table 1)
+  * CREMA-D and SAVEE were included in SERAB
+    * because they are already present in NOSS [6], 
+  * CaFE (French) and EMOVO (Italian) were chosen as Italic-language datasets,
+  * AESDD (Greek) and ShEMO (Persian) represented the Hellenic & IndoIran [25]
 * mainly comprises scripted and acted speech, 
   excepting IEM4 [17], RAVDESS [22] and ShEMO [23] which feature spontaneous
   utterances
