@@ -15,7 +15,7 @@ arXiv:2307.09288 [cs.CL]
 * detailed description of our approach to fine-tuning and safety improvements
 
 
-#1 Introduction3
+#1 Introduction 3
 
 * seemingly straightforward nature of the training methodology. Auto-regressive
   * pretrained on an extensive corpus of self-supervised data, followed by
