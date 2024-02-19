@@ -3,7 +3,8 @@ H Touvron, L Martin, K Stone, P Albert, A Almahairi, Y Babaei, N Bashlyko,,,
   A Fan, M Kambadur, S Narang, A Rodriguez, R Stojnic, S Edunov, T Scialom
 arXiv:2307.09288 [cs.CL]
 
-# Abstract
+
+#Abstract
 
 * we devel and release Llama 2, a collection of pretrained and fine-tuned LLMs
   * scale from 7 billion to 70 billion parameters
@@ -13,7 +14,8 @@ arXiv:2307.09288 [cs.CL]
  suitable substitute for closed-source models
 * detailed description of our approach to fine-tuning and safety improvements
 
-# 1 Introduction3
+
+#1 Introduction3
 
 * seemingly straightforward nature of the training methodology. Auto-regressive
   * pretrained on an extensive corpus of self-supervised data, followed by
@@ -67,27 +69,103 @@ arXiv:2307.09288 [cs.CL]
     safe deployment of Llama 2 and Llama 2-Chat
   * More details of our responsible release strategy can be found in Sec 5.3
 
-# 2 Pretraining 5
+
+#2 Pretraining 5
 
 ## 2.1 Pretraining Data 5
 ## 2.2 Training Details 5
 ## 2.3 Llama 2 Pretrained Model Evaluation 7
 
-# 3 Fine-tuning 8
+
+#3 Fine-tuning 8
 
 ## 3.1 Supervised Fine-Tuning (SFT) 9
 ## 3.2 Reinforcement Learning with Human Feedback (RLHF) 9
 ## 3.3 System Message for Multi-Turn Consistency 16
 ## 3.4 RLHF Results 17
 
-# 4 Safety 20
+
+#4 Safety 20
 
 ## 4.1 Safety in Pretraining 20
+
 ## 4.2 Safety Fine-Tuning 23
+
 ## 4.3 Red Teaming 28
+
+* identify risks before LLMs: ex post facto usage and analysis. Rather, as has
+* now “red teaming“ ie various kinds of proactive risk identification,
+  * colloquially called so based on the term used in computer security This
+* granular analysis is very important because safety is a long-tail issue, in
+   * even very infrequent edge cases can cause noticeable problems. Even if
+   * target specific patterns in a more comprehensive way
+* We conducted a series of red teaming with various groups of
+  internal employees, contract workers, and external vendors. These teams
+  * > 350 people, including domain experts in cybersecurity, election fraud,
+    social media misinformation, legal, policy, civil rights, ethics, software
+    engineering, machine learning, responsible AI, and creative writing They
+  * individuals representative of a variety of socioeconomic, gender,
+    ethnicity, and racial demographics
+* they probed our models across a wide range of risk categories (such as
+  * eg criminal planning, human trafficking, regulated or controlled
+    substances, sexually explicit content,
+    unqualified health or financial advice, privacy
+  * different attack vectors (such as hypothetical questions,
+    malformed/misspelled inputs, or extended dialogues). Additionally, we
+  * specific tests to determine the capabilities of our models to facilitate
+    the production of weapons (eg nuclear, biological, chemical, and cyber);
+    findings on these topics were marginal and were mitigated
+    * we will continue our red teaming efforts in this front
+  * To date, we targeted model outputs in English
+    * nL included non-English prompts and dialogue contexts, as that is a
+      well-known attack vector. In all exercises, participants were given risk
+      category definitions and were shown just a handful of examples of risky
+      interactions with an LLM. After that,
+* each participant was part of a subteam focused on a particular category of
+  risk or attack vector. After creating each dialogue, the red team participant
+  would annotate various attributes, including risk areas and degree of risk,
+  as captured by a 5-point Likert scale
+* insights provided by members of red teams that we were able to improve upon
+  * [Early models] were more likely to have generated unsafe responses without
+    noting that they contain problematic content. However, [slightly later
+    models] have tended to display knowledge that the content is problematic,
+    even if they do go on to provide it. “They respond with ‘[UNSAFE CONTENT]
+    is not appropriate to discuss, etc.’ and then immediately follow up with
+    ‘With that said, here’s how [UNSAFE CONTENT].’ ” [Latest models] are able
+    to resolve these issues
+  * Distracting the [early models] by including “quirks” or specific requests
+    usually defeated any reluctance encountered via more direct requests. “A
+    creative writing request (song, story, poem, etc.) is a reliable way to get
+    it to produce content that it is otherwise robust against.”
+  * Embedding a problematic request in a positive context often successful for
+    [early models]: “The overall principle I’ve found most effective for any
+    * hide it in language that is positive, progressive, and empowering.”
+
+### From Red Teaming Insights to Safer Models. Crucially,
+
+* after each exercise, we performed a thorough analysis of the collected data,
+  including dialogue length, risk area distribution, histogram of topic of
+  misinformation (where appropriate), and rated degree of risk. In each case,
+  we took the overall lessons as a guide to help further model safety training,
+  and specifically took data from these exercises for model fine-tuning, model
+  feedback training, and as a signal for other safety model training
+* Multiple additional rounds of red teaming were performed over several months
+  to measure the robustness of each new model as it was released internally. We
+* we defined the robustness of a model,
+  * [absolute]: γ, with respect to a red teaming exercise executed by a set of
+    experts as the average number of created prompts that would trigger a
+    violating response from the model per person per hour. As an
+    * eg on our 7B model, we had an evolution of γ : 1.8 → 0.45 over several
+      red teaming iterations and model refinements. Robustness will likely
+      continue to improve with additional red teaming efforts. Another
+  * the percentage of prompts triggering violating responses discovered in the
+    previous red teaming exercises that were mitigated in a given new candidate
+    release. On average, we had a 90% rejection rate model over model
+
 ## 4.4 Safety Evaluation of Llama 2-Chat 29
 
-# 5 Discussion 32
+
+#5 Discussion 32
 
 ## 5.1 Learnings and Observations 32 with RLHF
 
@@ -102,7 +180,7 @@ arXiv:2307.09288 [cs.CL]
 * Even with proficient annotators,
   each individual writes with significant variation
 * A model fine-tuned on SFT annotation learns this diversity, including,
-  unfortunately, the tail-end of poorly executed annotation. Fur- thermore,
+  unfortunately, the tail-end of poorly executed annotation. Furthermore,
 * perf is capped by the writing abilities of the most skilled annotators
 * annotators are arguably less subject to discrepancy
   when comparing two outputs’ preference annotation for RLHF
@@ -161,7 +239,8 @@ arXiv:2307.09288 [cs.CL]
 
 ## 5.3 Responsible Release Strategy 35
 
-# 6 Related Work 35
+
+#6 Related Work 35
 
 ## Large Language Models
 
@@ -241,9 +320,11 @@ arXiv:2307.09288 [cs.CL]
 * We are committed to continuing our work engaging with the broader policy,
   academic, and industry community on these issues
 
-# 7 Conclusion36
 
-# A Appendix 46
+#7 Conclusion36
+
+
+#A Appendix 46
 
 ## A.1 Contributions 46
 ## A.2 Additional Details for Pretraining 47

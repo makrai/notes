@@ -103,7 +103,7 @@ arXiv:2204.02311 [cs.CL]
 
 ## Breakthrough capabilities: NLU and generation across many difficult tasks
 
-* Section 6.3 presents evaluation on a collection of reasoning tasks, which
+* Section 6.3 presents evaluation on a collection of reasoning tasks
   * multi-step mathematical or commonsense reasoning to produce the answer
     Prior SOTA results use a combination of task-specific finetuning,
     domain-specific architectures, and task-specific verifiers
