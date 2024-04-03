@@ -59,7 +59,7 @@ Walter Daelemans
   * features, feature selection, weighting and construction methods,
     machine learning algorithm optimization,
   * ensemble methods, active learning, joint learning, structured learning,
-    one-class learning etc.
+    one-class learning etc
   * evaluation methods
 *  modern authorship studies have not yet produced solid, scientific, and
    steadily progressing studies (Rudman 1997; 2010)

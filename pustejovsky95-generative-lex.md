@@ -976,8 +976,8 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   1. adjectives being able to modify individuals or events; and
   2. interpretation depends on the semantics of the head (Bartsch, 1985)
 * fast
-* evaluative adjectives such as good, discussed in chapters 2 and 3
-  * Since good functions as an event predicate, it is able to selectively
+* evaluative adjectives such as _good_, discussed in chapters 2 and 3
+  * Since _good_ functions as an event predicate, it is able to selectively
     modify the event description in the TELIC quale of the noun,
 * subselective binding properties of different classes of adjectives, as
   modifying different facets or qualia of the head, by virtue of their type
@@ -1136,7 +1136,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
   * tense, and the
   * distinction between propositions and events
 * untensed utterance such as _Mary build a house_ will denote a set of events,
-* proposition only by virtue of being "tensed" (cf.  Verkuyl, 1993)
+* proposition only by virtue of being "tensed" (cf. Verkuyl, 1993)
 * distinction
   * assertion of an event having occurred
 * both untensed sentences and NPs may denote event descriptions

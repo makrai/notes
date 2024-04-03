@@ -422,8 +422,8 @@ http://ldtoolkit.space
       making the margin of error very small for the models
 * all the extrinsic and intrinsic tasks have high correlations with >1 LD factr
   * tasks are complex ensembles of various linguistic features
-  * hE we can explain and improve on them only by breaking them down into
-    smaller, controllable factors
+  * hE we can explain and improve on them only by breaking them down
+    into smaller, controllable factors
 * all the factors we considered within a subclass correlate considerably with
   * morphological features have mostly negative correlations with the
     lexicographic ones, while the

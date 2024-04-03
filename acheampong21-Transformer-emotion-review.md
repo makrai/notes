@@ -128,13 +128,13 @@ Artificial Intelligence Review (2021)
       * a Spanish dataset that contains 30, 000 tweets,
         out of which 11, 595 is labeled as humorous
 * Vlad+ [68] classified emotions and detected propaganda news in NLP4IF-2019
-* Gupta+ [72] proposed the ensemble of neural architectures and BERT to de-
+* Gupta+ [72] proposed the ensemble of neural architectures and BERT
 * identification of speaker sensitive utterance, a significant challenge in
   Conversational Emotion Recognition (CER), Li+ in [78] de-
 * Luo and Wang [81] adopted the BERT pre-trained model to classify emotions in
   the Friends and EmotionPush datasets during the EmotionX-2019,
-* Cambria+ [82] designed a commonsense knowledge-based architecture made up of
-  an ensemble of Bi-LSTM and BERT so that deep learning architec-
+* Cambria+ [82]: a commonsense knowledge-based architecture
+  made up of an ensemble of Bi-LSTM and BERT
 * Kazameini+ [102] extracted contextualized word embeddings from text data using
   BERT and the bagged-SVM classifier to predict the personality
 * Using the Big Five Essay dataset and the Myers-Briggs’ type indicator Kaggle

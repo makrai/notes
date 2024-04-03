@@ -13,10 +13,10 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     * arousal, valence, expectancy, and power
     * in all the challenges [8,9,10,11,12]
 * we follow the guidelines of the Depression Classification Sub-Challenge (DCC)
-  at the 2016 Audio–Visual Emotion Challenge (AVEC) [10]
+  at the 2016 Audio-Visual Emotion Challenge (AVEC) [10]
   * we focus on audio information
   * ensemble of Convolutional Neural Networks (CNNs) 
-  * inputs to them are speech log-spectrograms
+  * inputs are speech log-spectrograms
   * As in the DCC sub-challenge, the English-speakers database DAIC-WOZ [13]
 
 # 2 The SOTA of the automatic depression detection, CNNs and ensemble methods
@@ -83,9 +83,9 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     fully connected layers
   * it is the basis of our work
 
-## Ensemble methods: meta-algorithms that help to improve machine-learning
+## Ensemble methods
 
-* usually using the same base learner
+* meta-algorithms, usually using the same base learner
 * Ensemble learning with neural networks was introduced in [45]
 * used in many architectures
 * applications such as image categorization [46], sentiment analysis [47] or
@@ -99,9 +99,10 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
     * optimized by selecting the best config from an exhaustive experiment
   * ensemble learning strategy for fusing several 1d-CNN machines
     * the performance of these individual systems is improved
-    * Ensemble CNN models have been successfully used in other speech- and
-      audio-related tasks, such as automatic speech recognition [39], speech
-      emotion recognition [40], or acoustic scene classification [43]
+    * Ensemble CNN models have been successfully used in
+      other speech~ and audio-related tasks
+      eg automatic speech recognition [39], speech emotion recognition [40], or
+      acoustic scene classification [43]
     * not used previously for automatic depression detection from speech
 * privacy: An important issue in real-world speech-based health applications
   * In the DAIC-WOZ dataset, participants completed consent forms to allow

@@ -1,5 +1,7 @@
-HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units
-Wei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, Abdelrahman Mohamed
+HuBERT: Self-Supervised Speech Representation Learning
+  by Masked Prediction of Hidden Units
+Wei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia,
+  Ruslan Salakhutdinov, Abdelrahman Mohamed
 arXiv:2106.07447 [cs.CL]
 
 * Self-supervised approaches for speech representation learning: problems

@@ -7,8 +7,8 @@ https://adapterhub.ml/adapters
 
 # Ruder
 
-* Full fine-tuning of LLMs has become prohibitive and requires
-* parameter-efficient methods instead. This demo paper presents
+* Full fine-tuning of LLMs has become prohibitive
+* parameter-efficient methods
 * Adapters, a library, the successor to adapter-transformers
 * 10 diverse modular methods such as prompt tuning, prefix tuning, Compacter,
   LoRA, and (IA)³ into 20 SOTA models for NLP, vision, and multi-modal applics

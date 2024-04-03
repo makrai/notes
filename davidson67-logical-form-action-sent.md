@@ -423,11 +423,9 @@ Reichenbach's proposal has another attractive feature: it eliminates a peculiar
 confusion that seemed to attach to the idea that sentences like (7) 'describe an
 event'. The difficulty was thac one wavered between thinking of the sentence as
 describing or referring to that one flight Amundsen made in May 1926, or as
-describing a kind ofevent, or perhaps as describing (potentially?) several. A5 von
-
+describing a kind of event, or perhaps as describing (potentially?) several. As von
 Wtight pointed out, any number of events might be described by a sentence like
 'Brutus kissed Caesar.' This fog is dispelled in a way I find entirely persuasive by
-
 Reichenbach's proposal that ordinary action sentences have, in effect, an exist­
 ential quantifier binding the action-variable. \'Qhen we were tempted into
 chinking a sentence like (7) describes a single evenr we were misled: it does not

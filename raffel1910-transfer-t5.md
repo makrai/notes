@@ -133,10 +133,10 @@ wide variety of benchmarks
     by a larger model for fewer steps
   * ensemble of models can provide substantially better results than a single
     * an orthogonal means of leveraging additional computation
-    * Ensembling models that were fine-tuned from the same base pre-trained
-      model performed worse than pre-training and fine-tuning all models
-      completely separately, though fine-tune-only ensembling still
-      substantially outperformed a single model
+    * Ensembling models
+      that were fine-tuned from the same base pre-trained model performed worse
+      than pre-training and fine-tuning all models completely separately,
+      nL fine-tune-only ensembling still substant outperformed a single model
 * We combined our above insights and trained
   substantially larger models (up to 11 billion parameters) to achieve
   SOTA results across many of the benchmarks we considered
