@@ -818,7 +818,7 @@ Miriam Butt
   * See chapter 6 on ergativity for some further discussion.104
 
 * Thematic roles and grammatical relations are thus classified by exactly the
-  same featural system. This allows an interaction between them, more
+  same featural system. This allows an interaction between them
   * thematic roles and grammatical relations can be linked to one another via
     the feature specifications. Kiparsky assumes a number of
 * principles constrain this linking relation. Some of the very basic ones are
@@ -831,7 +831,7 @@ Miriam Butt
     * allows language or construction specific information to apply before
       general or universal principle
 
-* Returning to the verb show: this verb participates in the dative alternation,
+* Returning to the verb _show_ this verb participates in the dative alternation
   * same underlying argument structure, namely, (29)
   * the x argument is assigned the [+HR] feature by the universal rule that the
     * the least semantically embedded argument
@@ -846,7 +846,7 @@ Miriam Butt
     (to the customers) in (32a) or to the direct object (the customers) in
     (32b)
 
-* Crosslinguistically, the case features do not just/also classify
+* Crosslinguistically, the case features classify both
   * thematic roles and grammatical relations
   * morphosyntactic cases (perhaps most importantly)
 * (33) Der Affe gibt dem Hund einen Kuchen
@@ -874,7 +874,7 @@ Miriam Butt
       thematic role than it
   * dative [−HR, −LR]
 * This classification of morphosyntactic cases works out exactly right for the
-  German pattern in (33) in combination with the Specificity Principle. The
+  German pattern in (33) in combination with the Specificity Principle
   * Spec Principle states that each thematic role should be associated with the
     most specific case feature bundle possible
   * ie relies on the relative markedness of feature specifications
@@ -885,12 +885,11 @@ Miriam Butt
     constraint on verb agreement, see below
 * inventory in (35) reflects only a subset of the world’s possible cases
   * languages may contain more or less cases than those listed in (35)
-    * Finnish is famous for having 15 cases, for example. For another,
+    * Finnish is famous for having 15 cases, for example
   * a language may specify a given case, eg the genitive or accusative with a
-    different feature bundle. In practice, as Kiparsky’s investigations to date
-    * this is rarely the case
-  * languages often do differ on the alignment of cases with thematic roles and
-    with grammatical relations.  These subtle crosslinguistic differences
+    different feature bundle, but this rare
+  * languages often differ on the alignment of cases with thematic roles and
+    with grammatical relations
     * can be accounted for by postulating differences in terms of the
       assignment and interaction of the [±HR,±LR] features
 * Kiparsky further distinguishes between morphosyntactic and morphological case
