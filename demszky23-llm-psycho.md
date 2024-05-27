@@ -1,8 +1,8 @@
-  Using large language models in psychology
-  Dorottya Demszky, D Yang, DS Yeager, CJ Bryan, M Clapper, S Chandhok,
-    JC Eichstaedt, C Hecht, J Jamieson, M Johnson, M Jones, D Krettek-Cobb, L
-    Lai, N JonesMitchell, DC Ong, CS Dweck, JJ  Gross, JW  Pennebaker
-  Nature Reviews Psychology volume 2, pages 688–701 (2023)
+    Using large language models in psychology
+    Dorottya Demszky, D Yang, DS Yeager, CJ Bryan, M Clapper, S Chandhok,
+      JC Eichstaedt, C Hecht, J Jamieson, M Johnson, M Jones, D Krettek-Cobb,
+      L Lai, N JonesMitchell, DC Ong, CS Dweck, JJ  Gross, JW  Pennebaker
+    Nature Reviews Psychology volume 2, pages 688–701 (2023)
 
 # Abstract
 
