@@ -1,7 +1,7 @@
-Natural Language Analysis and the Psychology of Verbal Behavior:
-  The Past, Present, and Future States of the Field
-Ryan L. Boyd and H. Andrew Schwartz
-Journal of Language and Social Psychology Volume 40, Issue 1 2020
+    Natural Language Analysis and the Psychology of Verbal Behavior:
+      The Past, Present, and Future States of the Field
+    Ryan L. Boyd and H. Andrew Schwartz
+    Journal of Language and Social Psychology Volume 40, Issue 1 2020
 
 # Abstract
 
