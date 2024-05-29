@@ -7,27 +7,27 @@ Alfonso Semeraro, Salvatore Vilella, Saif Mohammad, Giancarlo Ruffo, M Stella
 
 * a cutting-edge synergy of interpretable artificial intelligence (AI) and
   psychologically-validated lexicons
-* detection of 8 categorical emotions and
-  * syntactic network building in 18 languages
+* detection of 8 categorical emotions
+* syntactic network in 18 languages
 * in social media posts and news media articles, in Italian or in English,
   * performances analogous, or even superior (eg 70.2% prec for joy in tweets),
     to BERT, RoBERTa, distillBERT and ALBERT (eg 67.9% prec for joy in tweets)
 * EmoAtlas is 12 times faster than BERT
-* In a psychometric task like reproducing human creativity ratings for 1,071
-  short stories, EmoAtlas and BERT obtain equivalent predictive power
-  (ρ≈ 0.495, p< 10-4)
+* in reproducing human creativity ratings for 1,071 short stories,
+  EmoAtlas and BERT obtain equivalent predictive power (ρ≈ 0.495, p< 10-4)
+  * a psychometric task
 * Combining BERT's semantic features with
   EmoAtlas' emotional/syntactic networks of words,
   the cross-validated resulting AIs get substantially better at estimating
-  creativity rates of stories (ρ≈ 0.628, p< 10-4)
+  creativity rates of stories (ρ ≈ 0.628, p < 10-4)
   * interplay between the creativity of narratives and the semantic, emotional,
     and syntactic divergence of their words, pointing out how
     EmoAtlas and BERT-like models could be used in synergy in psychometrics
 * interpretable emotional profiles and syntactic networks
-  * EmoAtlas can quantify how emotions are channelled through specific
-    associations in texts, eg how did customers frame their ideas and emotions
-    towards "beds" in hotel reviews?
-* We release EmoAtlas as a standalone computational tool 
+  * EmoAtlas can quantify how emotions are channelled through assocs in texts,
+    eg how did customers frame their ideas and emotions towards "beds" in hotel
+    reviews?
+* We release EmoAtlas as a standalone computational tool
   * we discuss its impact in modelling texts as data, promisingly filling gaps
 
 # 1 Intro
