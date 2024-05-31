@@ -1,5 +1,5 @@
 J László, I Csertő, É Fülöp, R Ferenczhalmy, R Hargitai, Piroska Lendvai,
-  B Péley, T Pólya, K Szalai, O Vincze and B Ehmann
+  B Péley, T Pólya, K Szalai, O Vincze, and B Ehmann
 Narrative Language as an Expression of Individual and Group Identity:
   The Narrative Categorical Content Analysis
 SAGE Open April-June 2013: 1­–12
