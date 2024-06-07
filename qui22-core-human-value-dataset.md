@@ -113,6 +113,8 @@ https://liang-qiu.github.io/ValueNet/
     where they come from, as shown in Figure 1
   * The closer/distant any two values in either direction around the circle,
     the more similar/antagonistic their underlying motivations are; the more
+  * ie the pursuit of some value may result in accordance/conflict with another
+    one
   * why ten? an arbitrary convenience. It is reasonable to partition the value
     * A refinement of the theory (Schwartz+ 2012), partitions the same
       continuum into 19 more narrowly defined values that permit more precise
@@ -170,33 +172,179 @@ https://liang-qiu.github.io/ValueNet/
 
 # The ValueNet Dataset
 
+* we aim to provide a transferable knowledge base for human value modeling
+* the ValueNet dataset, we
+  * curated social scenarios with value-related keywords and further
+  * annotated them via Amazon Mechanical Turk
+  * Each sample in ValueNet is a social scenario description
+    labeled with the annotator’s attitude through a specific value lens
+* The dataset is organized in a circular structure as shown in Figure 1,
+  aligning with the theory of basic human values (Schwartz 2012). The theory
+* The ten values can be further organized into four higher-order groups
+  * Openness to change: self-direction, stimulation
+  * Self-enhancement: hedonism, achievement, power
+  * Conservation: security, conformity, tradition
+  * Self-transcendence: benevolence, universalism
+* We describe the collection details of the ValueNet in the following sections
+
 ## Social Scenario Curation
+
+* We curated a set of 21,374 social scenarios from the largescale
+  social-related database Social-Chem-101 (Forbes+ 2020)
+* Value-related scenarios are retrieved with value keywords after lemmatization
+  and stemming. There are
+  * three sets of keywords identified for each dimension of Schwartz value:
+    * the keywords in the original definition of each value in (Schwartz (2012)
+    * words that share a similar meaning, words that are often used to describe
+      the original keywords, and words that are triggered by (strongly
+      associated with) the original keywords3
+      * We use [datamuse](https://www.datamuse.com/api/) for this purpose
+    * words that are near the original keywords in GloVe (Pennington+ 2014)
+  * The value keywords are verified and confirmed by humans as listed in Fig 2
 
 ## Value-Aspect Attitude Annotation
 
+* The original inter-annotator agreement is 64.9%, and
+  * the Fleiss’ kappa score (Fleiss 1971) among the workers is 0.48, which
+    considers the possibility of the agreement by chance
+* we only retain the samples with three or more agreements
+* Fig 4 shows the sample size of each value split and their label distribution
+* The data is split into the train (75%), valid (15%), and test (10%)
+* we quantify the annotated labels into numerical values: yes (positive): +1,
+  no (negative): -1, unrelated (neutral): 0
+  * Similar to the polarity in sentiment analysis (Kouloumpis, Wilson, and
+    Moore 2011),
+* We call the numerical values _utility_ to describe
+  * the effect of a scenario on one’s value
+  * In other words, for people who appreciate a certain value, actions with a
+    higher utility in this value dimension would be more desirable to them
+* Table 1 shows more statistical details about the ValueNet dataset. In total,
+* 21,374 samples covering a wide range of scenarios in daily social life
+
 # Value Modeling
+
+* We experiment using Transformer-based pre-trained language models for
+  modeling human values from the ValueNet dataset
 
 ## Task Formalization
 
 ## Model
 
+* Pre-trained language model variants: BERT (Devlin+ 2018), RoBERTa (Liu+
+  2019), DistilBERT (Sanh+ 2019), BART (Lewis+ 2019) are investigated for
+* input format constructed as ‘[CLS][$VALUE]s’ is fed into a Transformer
+  encoder, i.e., positive (+1) V$VALUE (s) = TRM([CLS][$VALUE]s), (1) ACH where
+  TRM denotes the Transformer encoder, [CLS] is the special token for
+  regression or classification, and [$VALUE] are special tokens we define to
+* btw prompt (Li and Liang 2021; Brown+ 2020; Le Scao and Rush 2021)
+  * Li, X. L.; and Liang, P. 2021.  Prefix-tuning: Optimizing continuous
+    prompts for generation. arXiv arXiv:2101.00190
+  * Brown, T. B.; Mann, B.; Ryder, N.; Subbiah, M.; Kaplan, J.; Dhariwal, P.;
+    Neelakantan, A.; Shyam, P.; Sastry, G.; Askell, A.;+ 2020.  Language models
+    are few-shot learners.  arXiv preprint arXiv:2005.14165
+  * Le Scao, T.; and Rush, A. M. 2021. How many data points is a prompt worth?
+    NAACL 2021
+* details
+  * In order to get the ten-dimensional output V(s), a batch size of 10 is
+  * For the BERT, DistilBERT, and RoBERTa, a regression head on the top of
+  * Mean Squared Error (MSE) loss
+  * sigmoid activation to get a continuous estimation of the utility in [−1, 1]
+  * different loss functions, we train the BART model with three output classes
+    and the cross-entropy loss
+
 ## Result and Analysis
+
+* pre-trained language models perform better than the fastText baseline
+* no noticeable difference between the Transformer variants. The prediction
+* sample imbalance across different value splits and labels (Figure 4), ~> we
+  release another two versions of ValueNet: ValueNet (balanced) and ValueNet
+  (augmented). The original dataset is balanced by subsampling the
+  * we augment the neutral class of the original ValueNet by assigning AMT
+    results with less worker agreement to “unrelated”
+  * Data distribution of the balanced and augmented versions in the Appendix
+* prediction accuracy in different value splits (Table 3), we find that
+  * reducing the sample number of BENEVOLENCE hurts the model performance in
+    that dimension. Looking at the F1 score of each class in Table 2, we
+  * augmenting the neutral class improves the F1(0) but reduces F1(1) and
+    F1(-1). We leave it a future work to further improve the performance
 
 # Persona-Chat
 
+* values are closely related to one’s personality, we first assess our value
+  model on a personalized dialogue dataset: Persona-Chat (Zhang+ 2018). The
+* Persona-Chat dataset contains multi-turn dialogues conditioned on personas
+  * Each persona is encoded by at least 5 sentences of text, a _profile_
+  * eg “I like to ski”, “I enjoying walking for exercise”, “I have 4 children”,
+  * 8,939 dialogues for training, 1,000 for validation, and 968 for testing
+  * It also provides revised personas by rephrasing, generalizing or
+    specializing the original ones
+  * public available in ParlAI5
+
 ## Task Formalization
 
 ## Model
 
+* A decoder-only Transformer-based model is used
+  to estimate the generation distribution pθ (xst | hst , p), where θ is the
+* Following the practice proposed in Guo+ (2018), the
+  1. trained with Maximum Likelihood Estimation (MLE) to ensure generating
+     fluent responses. Then we took
+  2. an interleaving of supervised training (MLE) and reinforcement learning
+    * REINFORCE policy gradient algorithm (Williams 1992) in our experiment,
+    * the reward assignment is described as following
+
 ## Setup
+
+* both generation and ranking settings. In the
+* response ranking setup, the candidates are scored with their
+  log-likelihood. For the
+* GPT2 (Radford+  2019) and DialoGPT (Zhang+ 2019) we have finetuned, we
 
 ## Result and Analysis
 
+* metrics in tab 4
+  * Following Zhang+ (2018) and Liu+ (2020), we report the
+  * Hits@1, Perplexity and F1 to evaluate the methods in Table 4. By the
+* P 2 B OT (Liu+ 2020) is the SOTA model reported in this task
+* generative baseline using S EQ 2S EQ with attention mechanism (Bahdanau+ 14)
+* finetuning GPT2 or DialoGPT2 models with our value function provides a
+  significant performance boost compared to simply training them with MLE
+* Our `DialoGPT + Value` model achieves
+  new SOTA performance on perplexity and F1
+
 # Empathetic Dialogues
+
+* Empathetic Dialogues (Rashkin et al. 2019) provides
+  25k conversations grounded in emotional situations
+* tests the dialogue system’s capability to produce empathetic responses
+* Each dialogue is grounded in a specific situation where a speaker was feeling
+  a given emotion, with a listener responding. In this section, we demonstrate
+* we leveraged ValueNet to improve the emotion classification accuracy and
+  further improve the empathetic response generation
 
 ## Emotion Classification
 
+* An auxiliary task that is highly related to empathetic dialogue generation
+  is emotion classification. In Empathetic Dialogues, each situation is
+  written in association with a given emotion label. A total of
+* 32 emotion labels were annotated to cover a broad range of posit and neg emos
+
+### Result
+
+* baseline that directly applies the BERT model for emotion classification. As
+* Table 5: the additional value information benefits emotion classification
+  * relative improvement of 5.2% on DistilBERT and 6.4% on BERT
+
 ## Empathetic Dialogue Generation
+
+* our value model helps the empathetic dialogue generation
+* Empathetic Dialogues applies Prepend-K,
+  when predicting the utterance given the dialogue history and the situation
+  * Prepend-K is a strategy to add supervised information to data,
+  * We apply the strategy of prepending the top-k emotion labels for dialog gen
+  * The top predicted label from the classifiers of emotion is prepended to the
+    beginning of the token sequence as encoder input, as below:
+  * eg “I finally got promoted!” ~> “`proud` I finally got promoted!”
 
 # Value Profiling
 
