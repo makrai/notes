@@ -8,8 +8,8 @@
 
 * Large language models (LLMs),
   such as OpenAI’s GPT-4, Google’s Bard or Meta’s LLaMa, have created
-* language data have a central role in all areas of psychology, this new
-* we review the foundations of LLMs.  We then explain how the way that
+* language data have a central role in all areas of psychology
+* we review the foundations of LLMs
 * LLMs
   * effectively generate human-like linguistic output without the ability to
     think or feel like a human.  We argue that although LLMs
@@ -26,7 +26,7 @@
 
 # Introduction
 
-* Language is a core aspect of all areas of psychological science. For
+* Language is a core aspect of all areas of psychological science
   * the means through which children form mental models of the world
     (developmental psychology)
   * These mental models are revealed through verbal explanations of events
@@ -42,7 +42,6 @@
     (personality psychology)
   * Finally, research is conveyed through text in scholarly papers, which then
     * systematic reviews (metascience)
-
 * history of NLP for psychology
   * humans counting words in text, starting in the 1960s1,2, to
   * latent semantic analysis in the 1990s3,4 and to automated algorithms for
@@ -55,7 +54,6 @@
 * [generative] LLMs, such as OpenAI’s generative pre-trained transformer (GPT)
   models11,12, Google’s LaMDA and Bard AI13 (which can both generate and score
   text in human-like ways), will probably push the field in new directions.
-
 * LLMs are massive statistical models that predict the next word, phrase,
   * go beyond popular word-counting bag-of-words methods (such as LIWC)
     * meaning in context, rather than assuming that words have a static meaning
@@ -67,7 +65,6 @@
       generate text that is human-like, synthesize information from a wide
       range of sources, engage in natural dialogue and simulate different
       linguistic styles and personas.
-
 * potentially broad 0-shot applications of LLMs across diverse areas of psycho
   * query people’s mental models of themselves and their environments (social
     and cognitive psychology), infer individual differences in coping styles
@@ -75,22 +72,22 @@
     experiences (affective and clinical psychology)
   * GPT output was generated in March 2023 using text-davinci-003 in the OpenAI
     playground with default settings (temperature 0.7, length 256)
-
 * use cases across subfields in measurement, experimentation, and practice
   * measurement (probe psychological patterns in massive bodies of text),
   * experimentation (to rapidly generate stimuli and responses to those stimuli
     to improve the granularity of factorial designs) and
   * practice (to simulate realistic conversations to train human therapists,
-    counsellors, teachers or managers). Table 1 previews
+    counsellors, teachers or managers)
   * tab 1: We generated these use cases by consulting experts in several areas
     * how LLMs could make their work more efficient or wholly different. These
   * actually
     * the public rushed to use LLMs such as ChatGPT for mental health screening
       and therapy16, and
-    * 40% of US teachers were using ChatGPT weekly for lesson planning just three
-    months after its public release17 — a nationally representative survey found
+    * 40% of US teachers were using ChatGPT weekly for lesson planning just
+      three months after its public release17 — a nationally representative
+      survey found
 * question: whether — and on what timescale — the field will apply a nuanced
-  understanding of LLM technology to developing and disseminating tools so that
+  understanding of LLM technology to developing and disseminating tools
 
 # Conceptual and methodological foundations
 
@@ -124,7 +121,6 @@ how LLMs work, and what this information means for psychology
   development of easy-to-use packages and libraries (see below)
 * hE the most powerful models are not downloadable or are only accessible via
   APIs such as OpenAI’s ChatGPT.
-
 * Hosting large models can incur large costs and hardware requirements. LLMs
   * need access to graphical processing units (GPUs) or tensor processing units
     during model training and application. These types of processors are
@@ -152,13 +148,11 @@ how LLMs work, and what this information means for psychology
 * LLMs have already become integrated in products such as Google Sheets
   (eg SheetGPT.ai), and we anticipate that LLMs will become increasingly more
   accessible to the consumer through intuitive interfaces.
-
 * Example Python packages include:
   * openai (a Python interface over OpenAI’s API endpoints)
   * DLATK (a human text analysis package written in Python that supports transformer-based models from Hugging Face, in addition to other models)
   * langchain (a Python framework to develop LLM-powered applications, which supports various LLMs, including open-source models hosted in the Hugging Face model hub)
   * chainlit (a Python framework that uses langchain to build ChatGPT-like LLM apps).
-
 * Example R packages include:
   * TheOpenAIR (an R package to integrate OpenAI’s GPT models into R workflows)
   * askgpt (another R package built around OpenAI APIs to access the GPT models in R)
@@ -192,7 +186,6 @@ how LLMs work, and what this information means for psychology
   * pre-training forms the base for general language understanding, 
   * fine-tuning and prompt-tuning adapt the model to a specific task 
     with and without changing the model’s parameters, respectively.
-
 * Off-the-shelf LLMs are powerful, but they cannot fulfil their potential for
   psychology research without further adaptation. For example, in the
   * eg LLM-generated dialogue on the right of Fig. 1, 
@@ -204,8 +197,7 @@ how LLMs work, and what this information means for psychology
       Department of Education, this kind of college-advising guidance has no
       effect on college persistence compared to a control condition20. In
     * ie on-topic, grammatically correct useless information.
-
-  * ‘reduce stress’, ‘take breaks’ and practice ‘self-care’. These are 
+    * ‘reduce stress’, ‘take breaks’ and practice ‘self-care’. These are 
     * common themes in advice from advisors. However they are generally 
     * not what research on stress shows is helpful or what might be most
       appropriate given the context21,22. The LLM seems to have acquired 
@@ -215,10 +207,8 @@ how LLMs work, and what this information means for psychology
       the potentially enhancing role of stress. That is, the body’s stress
       response keeps people alive by helping to mobilize energy for performance
       (for example, getting more oxygenated blood to brains and muscles)21,22.
-
 * if the cultural context that produced the training text tends to give bad
   advice about applying to college, then the LLM will probably parrot that 24
-
 * the biases in LLMs’ output might be interesting to research.  Researchers
   * what does it say about human culture that the LLM learned a
     stress-is-debilitating mindset from its training data? Because LLMs are
@@ -262,10 +252,8 @@ how LLMs work, and what this information means for psychology
     * in a particular domain that is under-represented in the training data,
       such as language from parent–child interactions or language from people
       with a speech-related disability.
-
 * requires orders-of-magnitude less data than would be needed to train a
   * 5–100 annotated examples may be needed to fine-tune versus 100 Ks
-
 * drawbacks. First, fine-tuning is 
   * still computationally expensive. Powerful servers are required to update
   * high-quality annotated data to use in fine-tuning can be difficult to come

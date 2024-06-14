@@ -449,8 +449,8 @@ arXiv:2312.00752 [cs.LG]
 
 ## No Free Lunch: Continuous-Discrete Spectrum
 
-* Structured SSMs were originally defined as discretizations of continuous
-  systems (1)
+* Structured SSMs were originally defined as
+  discretizations of continuous systems (1)
 * strong inductive bias toward continuous-time data modalities
   eg perceptual signals (eg audio, video)
 * the selection mechanism overcomes their weaknesses on discrete modalities
@@ -530,11 +530,10 @@ arXiv:2312.00752 [cs.LG]
 
 * could be considered a special case of ideas
   eg architectural gating, hypernetworks, or data-dependence,
-* hE so can an enormous range of other constructions—essentially
-  anything with a multiplication, including standard attention mechanisms
-  (Bahdanau, Cho, and Bengio 2015; Vaswani+ 2017) as well—and we find it
-~> uninformative to think of them as such
-
+* hE so can an enormous range of other constructions,
+  essentially anything with a multiplication, including
+  standard attention mechanisms (Bahdanau, Cho, and Bengio 2015; Vaswani+ 2017)
+  ~> uninformative to think of them as such
 * we view selection as most closely related to
   the gating mechanism of traditional RNNs, which
   * is a special case (Theorem 1) and also
@@ -542,10 +541,10 @@ arXiv:2312.00752 [cs.LG]
     through variable (input-dependent) discretization of ∆
     (Funahashi and Nakamura 1993; Gu, Dao+ 2020; Tallec and Ollivier 2018)
 * We also eschew the term “gating” in favor of selection
-  * gating is overloaded use of former. More narrowly,
-  * we use selection to refer to the mechanistic action of a model to select or
-    ignore inputs and facilitate data interaction along the sequence length
-    (Section 3.1)
+  * gating is overloaded
+  * we use selection to refer to
+    the mechanistic action of a model to select or ignore inputs and facilitate
+    data interaction along the sequence length (Section 3.1)
   * other examples may include
     * Beyond selective SSMs and gated RNNs,
     * input-dependent convolutions (Kosma, Nikolentzos, and Vazirgiannis 2023;

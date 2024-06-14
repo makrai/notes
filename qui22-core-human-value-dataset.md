@@ -101,9 +101,9 @@ https://liang-qiu.github.io/ValueNet/
 
 # Related Work
 
-* incorporating the theory of human value to dialogue systems by
-* our dataset shares a similar nature with multiple social commonsense
-  benchmarks and knowledge bases
+* incorporating the theory of human value to dialogue systems
+* our dataset shares a similar nature with multiple
+  social commonsense benchmarks and knowledge bases
 * we apply our ValueNet for various dialogue tasks related to EQ
 
 ## Theory of Human Value and Utility
@@ -115,16 +115,16 @@ https://liang-qiu.github.io/ValueNet/
     the more similar/antagonistic their underlying motivations are; the more
   * ie the pursuit of some value may result in accordance/conflict with another
     one
-  * why ten? an arbitrary convenience. It is reasonable to partition the value
-    * A refinement of the theory (Schwartz+ 2012), partitions the same
-      continuum into 19 more narrowly defined values that permit more precise
+  * Why ten? An arbitrary convenience
+    * A refinement of the theory (Schwartz+ 2012) partitions the continuum into
+      19 more narrowly defined values
 * utility (Fishburn 1970) is initially defined as
-  a measure of pleasure or satisfaction in economics and ethics that
-  * drives human activities at all levels. Therefore,
+  a measure of pleasure or satisfaction in economics and ethics
+  * drives human activities at all levels
 * when we teach agents to speak and act in a socially intelligent way,
-  an approach considering human value utilities should be adopted. In this
-* we aim to learn a utility function for each dimension of value and steer the
-  dialogue system response generation accordingly
+  an approach considering human value utilities should be adopted
+* we aim to learn a utility function for each dimension of value and
+  steer the dialogue system response generation accordingly
 
 ## Social Commonsense Benchmarks
 
@@ -164,8 +164,9 @@ https://liang-qiu.github.io/ValueNet/
 * Persona-Chat (Zhang+ 2018) provides natural language profiles of speakers
   * revised in ConvAI2 (Dinan+ 2020)
 * Based on Persona-Chat, Liu+ (2020) propose
-  a transmitter-receiver-based framework with explicitly human understanding
-  modeling to enhance the quality of personalized dialogue generation
+  a transmitter-receiver-based framework with
+  explicitly human understanding modeling
+  to enhance the quality of personalized dialogue generation
 * Empathetic Dialogues (Rashkin+ 2019) is a dataset that provides
   25k conversations grounded in emotional situations. Each dialogue is grounded
   in a specific situation where a speaker was feeling a given emotion
@@ -192,7 +193,7 @@ https://liang-qiu.github.io/ValueNet/
 * We curated a set of 21,374 social scenarios from the largescale
   social-related database Social-Chem-101 (Forbes+ 2020)
 * Value-related scenarios are retrieved with value keywords after lemmatization
-  and stemming. There are
+  and stemming
   * three sets of keywords identified for each dimension of Schwartz value:
     * the keywords in the original definition of each value in (Schwartz (2012)
     * words that share a similar meaning, words that are often used to describe
@@ -212,13 +213,13 @@ https://liang-qiu.github.io/ValueNet/
 * The data is split into the train (75%), valid (15%), and test (10%)
 * we quantify the annotated labels into numerical values: yes (positive): +1,
   no (negative): -1, unrelated (neutral): 0
-  * Similar to the polarity in sentiment analysis (Kouloumpis, Wilson, and
-    Moore 2011),
+  * Similar to polarity in sentiment analysis
+    (Kouloumpis, Wilson, and Moore 2011)
 * We call the numerical values _utility_ to describe
   * the effect of a scenario on one’s value
-  * In other words, for people who appreciate a certain value, actions with a
-    higher utility in this value dimension would be more desirable to them
-* Table 1 shows more statistical details about the ValueNet dataset. In total,
+  * ie, for people who appreciate a certain value, actions with a higher
+    utility in this value dimension would be more desirable
+* Table 1 shows more statistical details about the ValueNet dataset
 * 21,374 samples covering a wide range of scenarios in daily social life
 
 # Value Modeling

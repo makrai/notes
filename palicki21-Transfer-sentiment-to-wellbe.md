@@ -5,7 +5,7 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
 # Abstract
 
 * Sentiment analysis has been recently considered as
-  an important tool for detecting mental well-being in Twitter contents
+  an important tool for detecting mental well-being in Twitter
 * hE lack of explicit sentences describing the depression/anxiety status
 * this paper leverages a transfer learning approach for sentiment analysis to
   measure the non-clinical psychological distress status in Brexit tweets
@@ -36,8 +36,8 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
     * Changes correlated with major political events, natural disasters,
       cultural phenomena, and in the prediction of stock prices [8, 35]
   * clinical approach: using social media and machine learning techniques to
-    classify abnormal psychological states (depression, anxiety, PTSD, etc) in
-    populations [7, 16]
+    classify abnormal psychological states (depression, anxiety, PTSD, etc)
+    in populations [7, 16]
   * Our research exploits both techniques
     to understand the impact of major Brexit events on the mental well-being
 * Automatic detection of non-clinical depressive states (ie psychological

@@ -151,7 +151,7 @@
 * decoupling a literal, one-dimensional interpretation of the relationship
   between words and anger, we return to a more intuitive place for language
 
-## Isn’t Language Supposed to be. . . You Know. . . Social?
+## Isn’t Language Supposed to be... You Know... Social?
 
 * we overlook the fundamental essence of language itself: to transmit and
   coordinate complex information (broadly defined) with others. Scholars who
@@ -166,20 +166,20 @@
 * studies that directly explore language as complex, bidirectional social
   * Language analysis techniques such as Language Style Matching (LSM) and
     Latent Semantic Similarity (LSS) are currently thought to give us a “broad
-    strokes” picture of interpersonal attention, for instance (eg Ta+ 2017)
-  * still primarily rooted in the idea of “words as attention,” it stands to
-  * when and how much two people are paying attention to each other, the better
-    (Bayram & Ta, 2019; Doorn & Müller-Frommeyer, 2020; Heuer+ 2020). After
-    all, social interaction implies interpersonal attention, and the degree to
-    which people are focused on each other is the foundation upon which social
-  * the attentional processes captured by LSM (see Gasiorek+ 2021) and LSS are
+    strokes” picture of interpersonal attention, eg Ta+ (2017)
+  * still primarily rooted in the idea of “words as attention”
+  * when and how much two people are paying attention to each other
+    (Bayram & Ta, 2019; Doorn & Müller-Frommeyer, 2020; Heuer+ 2020)
+    * social interaction implies interpersonal attention, and
+      the degree to which people are focused on each other is foundational
+  * the attentional processes captured by LSM (see Gasiorek+ 2021) and LSS
   * Attentional patterns are necessary, but not sufficient, to explain the
   * motivations and goals during social interact (Berger, 2014; Horowitz+ 2006)
 * social cognitive domains, such as the “why’s” and “how’s” of deception,
   persuasion, and person perception as they occur through verbal behavior. In
   * persuasion has begun to thrive, with scholars starting to leverage language
     * how social appraisals are shaped by subtle linguistic cues
-      (Althoff+ 2014; Markowitz, 2019). Similarly,
+      (Althoff+ 2014; Markowitz, 2019)
     * how personality is inferred through lang (Berry+ 1997; Tong+ 2020)
 * group identification and interpersonal motives
   (Danescu-Niculescu-Mizil+ 2013; Niculae+ 2015)
@@ -201,7 +201,7 @@
       (Holtzman+ 2010), Rouhizadeh+ (2016) compellingly showed that not all
       self-references are equal
 * nested contexts
-* Looking at words under the “words as attention” paradigm, the psychological
+* Looking at words under the “words as attention” paradigm
   * a decontextualized understanding of the word, thus yielding
   * an ambiguous psychosocial sense (Markowitz & Hancock, 2019)
   * needed: a “words in context as attention” approach, whereby
