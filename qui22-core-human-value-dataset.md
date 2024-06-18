@@ -7,7 +7,7 @@ https://liang-qiu.github.io/ValueNet/
 
 # Abstract
 
-* socially intelligent agent involves speaking guided by its value like a human
+* socially intelligent agent: speaking guided by its value like a human
   * hE value-driven chatbots are still understudied in dialogue systems
   * Most existing datasets focus on
     commonsense reasoning or social norm modeling
@@ -17,8 +17,7 @@ https://liang-qiu.github.io/ValueNet/
       intercultural research
   * a Transformer-based value regression model on ValueNet
     to learn the utility distribution
-* Comprehensive empirical results show that the learned value model could
-  benefit a wide range of dialogue tasks
+* Comprehensive empirical results show benefits in many dialogue tasks
   * eg by teaching a generative agent with reinforcement learning and the
     rewards from the value model, our method attains
     SOTA performance on the Persona-Chat personalized dialog generation dataset
@@ -64,8 +63,8 @@ https://liang-qiu.github.io/ValueNet/
     based on value-defined keyword searching
   * Amazon Mechanical Turk workers:
     how the provided scenarios will affect one’s value
-  * based on the assumption that values underlie our attitudes; they are the
-    guideline by which we evaluate things
+  * based on the assumption that values underlie our attitudes
+    * ie they are the guideline by which we evaluate things
   * Workers assess behaviors/events positively if they promote or protect the
     attainment of the goals we value. Behaviors/events are evaluated
     negatively if they hinder or threaten the attainment of these valued goals
@@ -94,17 +93,18 @@ https://liang-qiu.github.io/ValueNet/
     well-defined in intercultural research
   * [apply] the value model learned from ValueNet to several EQ-related tasks
     and demonstrate its usage for building a value-driven dialogue system
-  * Our methodology can be generalized to a wide range of
+  * Our methodology can be generalized to
     * interactive situations in socially aware dialogue systems
       (Zhao, Romero, and Rudnicky 2018)
-    * human-robot interactions (Yuan and Li 2017; Liang, He, and Anthony’Chen 2021)
+    * human-robot interactions
+      (Yuan and Li 2017; Liang, He, and Anthony’Chen 2021)
 
 # Related Work
 
 * incorporating the theory of human value to dialogue systems
 * our dataset shares a similar nature with multiple
   social commonsense benchmarks and knowledge bases
-* we apply our ValueNet for various dialogue tasks related to EQ
+* we apply ValueNet for various dialogue tasks related to EQ
 
 ## Theory of Human Value and Utility
 
@@ -173,15 +173,15 @@ https://liang-qiu.github.io/ValueNet/
 
 # The ValueNet Dataset
 
-* we aim to provide a transferable knowledge base for human value modeling
+* a transferable knowledge base for human value modeling
 * the ValueNet dataset, we
-  * curated social scenarios with value-related keywords and further
-  * annotated them via Amazon Mechanical Turk
+  * curated social scenarios with value-related keywords
+  * annotated via Amazon Mechanical Turk
   * Each sample in ValueNet is a social scenario description
     labeled with the annotator’s attitude through a specific value lens
 * The dataset is organized in a circular structure as shown in Figure 1,
-  aligning with the theory of basic human values (Schwartz 2012). The theory
-* The ten values can be further organized into four higher-order groups
+  aligning with the theory of basic human values (Schwartz 2012)
+* The ten values can be organized into four higher-order groups
   * Openness to change: self-direction, stimulation
   * Self-enhancement: hedonism, achievement, power
   * Conservation: security, conformity, tradition
@@ -192,10 +192,10 @@ https://liang-qiu.github.io/ValueNet/
 
 * We curated a set of 21,374 social scenarios from the largescale
   social-related database Social-Chem-101 (Forbes+ 2020)
-* Value-related scenarios are retrieved with value keywords after lemmatization
-  and stemming
+* Value-related scenarios are retrieved with value keywords
+  after lemmatization and stemming
   * three sets of keywords identified for each dimension of Schwartz value:
-    * the keywords in the original definition of each value in (Schwartz (2012)
+    * the keywords in the original definition of each value in Schwartz (2012)
     * words that share a similar meaning, words that are often used to describe
       the original keywords, and words that are triggered by (strongly
       associated with) the original keywords3
@@ -205,14 +205,14 @@ https://liang-qiu.github.io/ValueNet/
 
 ## Value-Aspect Attitude Annotation
 
-* The original inter-annotator agreement is 64.9%, and
+* The original inter-annotator agreement is 64.9%
   * the Fleiss’ kappa score (Fleiss 1971) among the workers is 0.48, which
     considers the possibility of the agreement by chance
 * we only retain the samples with three or more agreements
 * Fig 4 shows the sample size of each value split and their label distribution
-* The data is split into the train (75%), valid (15%), and test (10%)
-* we quantify the annotated labels into numerical values: yes (positive): +1,
-  no (negative): -1, unrelated (neutral): 0
+* The data is split into train (75%), valid (15%), and test (10%)
+* we quantify the annotated labels into numerical values
+  * yes (positive): +1, no (negative): -1, unrelated (neutral): 0
   * Similar to polarity in sentiment analysis
     (Kouloumpis, Wilson, and Moore 2011)
 * We call the numerical values _utility_ to describe
@@ -232,22 +232,25 @@ https://liang-qiu.github.io/ValueNet/
 ## Model
 
 * Pre-trained language model variants: BERT (Devlin+ 2018), RoBERTa (Liu+
-  2019), DistilBERT (Sanh+ 2019), BART (Lewis+ 2019) are investigated for
+  2019), DistilBERT (Sanh+ 2019), BART (Lewis+ 2019) are investigated
 * input format constructed as ‘[CLS][$VALUE]s’ is fed into a Transformer
-  encoder, i.e., positive (+1) V$VALUE (s) = TRM([CLS][$VALUE]s), (1) ACH where
+  encoder, ie, positive (+1) V$VALUE (s) = TRM([CLS][$VALUE]s), (1) ACH where
   TRM denotes the Transformer encoder, [CLS] is the special token for
-  regression or classification, and [$VALUE] are special tokens we define to
+  regression or classification, and [$VALUE] are special tokens
 * btw prompt (Li and Liang 2021; Brown+ 2020; Le Scao and Rush 2021)
-  * Li, X. L.; and Liang, P. 2021.  Prefix-tuning: Optimizing continuous
-    prompts for generation. arXiv arXiv:2101.00190
-  * Brown, T. B.; Mann, B.; Ryder, N.; Subbiah, M.; Kaplan, J.; Dhariwal, P.;
-    Neelakantan, A.; Shyam, P.; Sastry, G.; Askell, A.;+ 2020.  Language models
-    are few-shot learners.  arXiv preprint arXiv:2005.14165
-  * Le Scao, T.; and Rush, A. M. 2021. How many data points is a prompt worth?
+  * Li XL; and Liang P 2021
+    Prefix-tuning: Optimizing continuous prompts for generation
+    arXiv:2101.00190
+  * Brown TB; Mann B; Ryder N; Subbiah M; Kaplan J; Dhariwal P; Neelakantan A;
+      Shyam P; Sastry G; Askell A;+ 2020
+    Language models are few-shot learners
+    arXiv preprint arXiv:2005.14165
+  * Le Scao T; and Rush A M 2021 
+    How many data points is a prompt worth?
     NAACL 2021
 * details
-  * In order to get the ten-dimensional output V(s), a batch size of 10 is
-  * For the BERT, DistilBERT, and RoBERTa, a regression head on the top of
+  * In order to get the ten-dimensional output V(s), a batch size of 10
+  * For the BERT, DistilBERT, and RoBERTa, a regression head on the top
   * Mean Squared Error (MSE) loss
   * sigmoid activation to get a continuous estimation of the utility in [−1, 1]
   * different loss functions, we train the BART model with three output classes
@@ -256,23 +259,22 @@ https://liang-qiu.github.io/ValueNet/
 ## Result and Analysis
 
 * pre-trained language models perform better than the fastText baseline
-* no noticeable difference between the Transformer variants. The prediction
-* sample imbalance across different value splits and labels (Figure 4), ~> we
-  release another two versions of ValueNet: ValueNet (balanced) and ValueNet
-  (augmented). The original dataset is balanced by subsampling the
+* no noticeable difference between the Transformer variants
+* sample imbalance across different value splits and labels (Figure 4), 
+  ~> we release another two versions of ValueNet: balanced and augmented
   * we augment the neutral class of the original ValueNet by assigning AMT
     results with less worker agreement to “unrelated”
   * Data distribution of the balanced and augmented versions in the Appendix
-* prediction accuracy in different value splits (Table 3), we find that
+* prediction accuracy in different value splits (Table 3)
   * reducing the sample number of BENEVOLENCE hurts the model performance in
-    that dimension. Looking at the F1 score of each class in Table 2, we
+    that dimension
   * augmenting the neutral class improves the F1(0) but reduces F1(1) and
-    F1(-1). We leave it a future work to further improve the performance
+    F1(-1)
 
 # Persona-Chat
 
 * values are closely related to one’s personality, we first assess our value
-  model on a personalized dialogue dataset: Persona-Chat (Zhang+ 2018). The
+  model on a personalized dialogue dataset: Persona-Chat (Zhang+ 2018)
 * Persona-Chat dataset contains multi-turn dialogues conditioned on personas
   * Each persona is encoded by at least 5 sentences of text, a _profile_
   * eg “I like to ski”, “I enjoying walking for exercise”, “I have 4 children”,
@@ -286,28 +288,28 @@ https://liang-qiu.github.io/ValueNet/
 ## Model
 
 * A decoder-only Transformer-based model is used
-  to estimate the generation distribution pθ (xst | hst , p), where θ is the
-* Following the practice proposed in Guo+ (2018), the
-  1. trained with Maximum Likelihood Estimation (MLE) to ensure generating
-     fluent responses. Then we took
+  to estimate the generation distribution pθ (xst | hst , p)
+* Following the practice proposed in Guo+ (2018)
+  1. trained with Maximum Likelihood Estimation (MLE)
+    to ensure generating fluent responses
   2. an interleaving of supervised training (MLE) and reinforcement learning
-    * REINFORCE policy gradient algorithm (Williams 1992) in our experiment,
+    * REINFORCE policy gradient algorithm (Williams 1992) in our experiment
     * the reward assignment is described as following
 
 ## Setup
 
-* both generation and ranking settings. In the
+* both generation and ranking settings
 * response ranking setup, the candidates are scored with their
-  log-likelihood. For the
-* GPT2 (Radford+  2019) and DialoGPT (Zhang+ 2019) we have finetuned, we
+  log-likelihood
+* GPT2 (Radford+  2019) and DialoGPT (Zhang+ 2019) finetuned
 
 ## Result and Analysis
 
 * metrics in tab 4
-  * Following Zhang+ (2018) and Liu+ (2020), we report the
-  * Hits@1, Perplexity and F1 to evaluate the methods in Table 4. By the
-* P 2 B OT (Liu+ 2020) is the SOTA model reported in this task
-* generative baseline using S EQ 2S EQ with attention mechanism (Bahdanau+ 14)
+  * Following Zhang+ (2018) and Liu+ (2020)
+  * Hits@1, Perplexity and F1 to evaluate the methods
+* P2Bot (Liu+ 2020) is the SOTA model reported in this task
+* generative baseline using Seq2Seq with attention mechanism (Bahdanau+ 14)
 * finetuning GPT2 or DialoGPT2 models with our value function provides a
   significant performance boost compared to simply training them with MLE
 * Our `DialoGPT + Value` model achieves
@@ -315,11 +317,11 @@ https://liang-qiu.github.io/ValueNet/
 
 # Empathetic Dialogues
 
-* Empathetic Dialogues (Rashkin et al. 2019) provides
+* Empathetic Dialogues (Rashkin+ 2019) provides
   25k conversations grounded in emotional situations
 * tests the dialogue system’s capability to produce empathetic responses
 * Each dialogue is grounded in a specific situation where a speaker was feeling
-  a given emotion, with a listener responding. In this section, we demonstrate
+  a given emotion, with a listener responding
 * we leveraged ValueNet to improve the emotion classification accuracy and
   further improve the empathetic response generation
 
@@ -327,12 +329,12 @@ https://liang-qiu.github.io/ValueNet/
 
 * An auxiliary task that is highly related to empathetic dialogue generation
   is emotion classification. In Empathetic Dialogues, each situation is
-  written in association with a given emotion label. A total of
+  written in association with a given emotion label
 * 32 emotion labels were annotated to cover a broad range of posit and neg emos
 
 ### Result
 
-* baseline that directly applies the BERT model for emotion classification. As
+* baseline that directly applies the BERT model for emotion classification
 * Table 5: the additional value information benefits emotion classification
   * relative improvement of 5.2% on DistilBERT and 6.4% on BERT
 
