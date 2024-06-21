@@ -23,7 +23,7 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
 
 ## Values and Value Research
 
-* Psychologists, historians, and other social scientists have long argued that
+* Psychologists, historians, and other social scientists have long argued
 * people’s basic values predict their behaviors
   (Ball-Rokeach, Rokeach, and Grube 1984; Rokeach 1968)
 * generalize across broad swaths of time and culture (Schwartz 1992)
@@ -59,7 +59,7 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
     cognitive development (Bubeck and Bilsky 2004), and 
     politically-motivated behaviors (Caprara+ 2006), to name but a few domains
   * Schwartz Value Survey (SVS)
-    * the vast majority of this research has been built upon the
+    * the vast majority of research has been built upon the SVS
     * an internally reliable self-report questionnaire commonly used to assess
       the theorized ten core human values (Schwartz 1992)
   * now the common currency of values researchers around the world

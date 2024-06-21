@@ -7,8 +7,8 @@ SemEval-2023 Toronto, Canada
 
 * ValueEval aims at assigning a subset of possible human value categories
   underlying a given argument
-* Values behind arguments are often determinants to evaluate
-  the relevance and importance of decisions in ethical sense, thereby making
+* Values behind arguments are often determinants
+  to evaluate the relevance and importance of decisions in ethical sense
 * we propose two systems for the same.
   * Both systems use RoBERTa to encode sentences in each document. 
   * System1 makes use of features obtained from training models for two
@@ -23,7 +23,7 @@ SemEval-2023 Toronto, Canada
     (System2), 0.31 (ablation on System1) and 0.33 (ablation on System1) on the
     main dataset, the Nahj al-Balagha dataset, and the New York Times dataset.
 
-# 2 Background The data made available by the organisers comprises of 
+# 2 Background. The data made available by the organisers
 
 * a main dataset and three supplementary datasets, namely, Zhihu, Nahj
   al-Balagha and The New York Times dataset. The 
