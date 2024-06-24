@@ -42,7 +42,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 * LM's best results are observed in narrowly specific conditions – we show (cf
   §5) that they perform better when evaluated on knowledge bases that
   prioritize ontological relations and whose examples resemble language-like
-  assertions (e.g., mango IsA fruit). 2 Consequently, the types of knowledge
+  assertions (eg mango IsA fruit). 2 Consequently, the types of knowledge
   that can be directly accessed through the language model’s interface remains
   limited
 * training language models on knowledge graph tuples leads them to learn to
@@ -85,8 +85,8 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   TOMIC 20 20 
 * The ConceptNet (v5.7) knowledge graph (Speer, Chin, and Havasi 2017)
   * 36 relations focusing mostly on
-    * 90% taxonomic and lexical knowledge (e.g., RelatedTo, Synonym, IsA) and
-    * physical commonsense knowledge (e.g., MadeOf, PartOf). ConceptNet
+    * 90% taxonomic and lexical knowledge (eg RelatedTo, Synonym, IsA) and
+    * physical commonsense knowledge (eg MadeOf, PartOf). ConceptNet
   * 3.4M entity-relation tuples (in English) collected by crowdsourcing and
     merged with existing knowledge databases from DBPedia, WordNet, Wiktionary,
     and OpenCyc. Since the knowledge are derived from human efforts, the
@@ -96,7 +96,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
     the coverage of ConceptNet (v5.7) is limited to mostly taxonomic,
 * The Atomic (Sap+ 2019) knowledge graph consists of
   * 880K of tuples across 9 relations that cover
-    social commonsense knowledge (e.g, X gets X’s car repaired xIntent to
+    social commonsense knowledge (eg X gets X’s car repaired xIntent to
     maintain the car),
     including dynamic aspects of events such as causes and effects, if-then
     conditional statements, and mental states
@@ -116,7 +116,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 
 * results motivating these observations are often limited to narrowly scoped
   subsets of commonsense knowledge that primarily include taxonomic knowledge
-  (e.g., mango IsA fruit) and that are often found explicitly stated in text
+  (eg mango IsA fruit) and that are often found explicitly stated in text
   However, commonsense facts are often implied (Gordon and Van Durme 2013),
   and as will be seen in our studies (cf. §4),
   * SOTA neural models struggle to express implicit commonsense knowledge that
@@ -125,8 +125,8 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   graphs and pretrained language models. The
   * commonsense transformer, or COMET, adapts pretrained neural language models
     by training on example tuples from commonsense knowledge graphs. It takes a
-    head/source phrase and a relation (e.g., take a nap Causes) and generates
-    the tail/target phrase (e.g., have energy). Bosselut+ (2019) show that
+    head/source phrase and a relation (eg take a nap Causes) and generates
+    the tail/target phrase (eg have energy). Bosselut+ (2019) show that
     COMET trained on the ConceptNet and Atomic knowledge graphs is able to
     adapt to generate novel (and valid) commonsense knowledge tuples
   * produce commonsense knowledge on-demand for any head entity that can be
@@ -149,7 +149,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
     situations surrounding a given event of interest. The full inventory of A
     TOMIC 20 20 relations is listed in Table 1
   * by far, the two largest new relations are ObjectUse and HinderedBy. For
-* ObjectUse e.g. “popcorn bucket” that may be used for “holding popocorn”
+* ObjectUse eg “popcorn bucket” that may be used for “holding popocorn”
   * 130K everyday object-use pairs
   * by asking crowdworkers for necessary objects and their uses for each event
   * atypical usages gathered in a separate pass where workers were asked to
@@ -159,18 +159,18 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   * many events in real world can be defeasible (Lascarides and Asher 1991)
     by collecting hindrances to goals that may be useful for tasks such as
     counterfactual reasoning. For example
-  * e.g.  X’s desires to adopt a cat may be hindered by finding out that X is
+  * eg  X’s desires to adopt a cat may be hindered by finding out that X is
     allergic to cats, which would necessitate X to adjust future actions
 * Atomic^20_20 also pulls commonsense tuples from the English subset of
   ConceptNet (v5.7, latest version available; Speer, Chin, and Havasi 2017)
   * 172K out of 3.4M tuples was selectively chosen to be integrated into
   * to reflect commonsense information dealing with qualitative human experienc
   * eliminated data are tuples with edge weight ≤ 0.5, dictionary or
-    etymologically based knowledge (e.g., synonyms/antonyms, inflections),
+    etymologically based knowledge (eg synonyms/antonyms, inflections),
     lexical hyper/hyponymic lexical relationships such as IsA or InstanceOf,
-    and relations based on lexical cooccurrence (e.g., RelatedTo or
+    and relations based on lexical cooccurrence (eg RelatedTo or
     LocatedNear), which are easily recoverable from language models. 5 After
-    * geographic facts (e.g., “shenzhen” AtLocation“china”), tuples from each
+    * geographic facts (eg “shenzhen” AtLocation“china”), tuples from each
       ConceptNet were examined for further splits or joins to align with the
       existing structure of Atomic^20_20 . A random 10% tuples from each
 * crowdsourced validity testing (akin to the process described later in §4)

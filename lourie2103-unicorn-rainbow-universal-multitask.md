@@ -74,7 +74,7 @@ https://github.com/allenai/rainbow
     * COSMOS QA (91.8%, Huang+ 2019)
     * HELLA SWAG (93.9%, Zellers+ 2019)
     * PIQA (90.1%, Bisk+ 2020)
-    * SOCIAL IQ A(83.2%, Sap+ 2019b)
+    * SocialIQA (83.2%, Sap+ 2019b)
     * WINO GRANDE (86.6%, Sakaguchi+ 2020)
     * CYCIC (94.0%)
     * COMMONSENSE QA dataset (79.3%, Talmor+ 2019)
@@ -116,7 +116,7 @@ https://github.com/allenai/rainbow
     choose the most plausible ending to a short context
   * PIQA (Bisk+ 2020) is
     a multiple-choice QA benchmark for physical commonsense reasoning
-  * SOCIAL IQ A(Sap+ 2019b) evaluates commonsense reasoning about
+  * SocialIQA (Sap+ 2019b) evaluates commonsense reasoning about
     social situations and interactions
   * WINO GRANDE (Sakaguchi+ 2020) is a large-scale collection of Winograd-inspd
     * requiring reasoning about both social and physical interactions
@@ -141,7 +141,7 @@ https://github.com/allenai/rainbow
 
 ### Finding 1: Sequential training almost always matches or beats others
 
-* For some tasks (αNLI and SOCIAL IQ A), all three methods perform similarly;
+* For some tasks (αNLI and SocialIQA), all three methods perform similarly;
 * on the rest, sequential and multitask fine-tune training greatly improve data
 * sequential and multitask fine-tune training are often comparable,
   * sequential training appears to be slightly more data efficient,
@@ -225,8 +225,8 @@ https://github.com/allenai/rainbow
 ### Finding 8: Knowledge graph multitasking shows little impact
 
 * generally negative
-  * Only SOCIAL IQA benefits, which
-    * might come from the use of ATOMIC during its construction. We offer
+  * Only SOCIAL IQA benefits
+    * might come from the use of ATOMIC during its construction
   * two possible explanations: the
     * serialized language from the knowledge graphs is not in a QA format, and
     * knowledge graph completion task is generative while
@@ -243,8 +243,8 @@ https://github.com/allenai/rainbow
   to be fine-tuned on other downstream commonsense tasks
   * analogous to how off-the-shelf T5 models are multitasked on NLP benchmarks
     such as GLUE and SuperGLUE as part of their pretraining
-* new SOTA on all RAINBOW datasets: αNLI (87.3%), COSMOS QA (91.8%), HELLA
-  SWAG (93.9%), PIQA (90.1%), SOCIAL IQ A(83.2%), and WINO GRANDE (86.6%)
+* new SOTA on all RAINBOW datasets: αNLI (87.3%), COSMOS QA (91.8%),
+  HellaSwag (93.9%), PIQA (90.1%), SocialIQA (83.2%), and WinoGrande (86.6%)
 * SOTA on datasets beyond RAINBOW
   * CycIC (94.0%) and COMMONSENSE QA (79.3%)
 
