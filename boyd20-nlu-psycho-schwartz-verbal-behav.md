@@ -5,8 +5,8 @@
 
 # Abstract
 
-* language has been used to infer psychological processes has seen dramatic
-* critical need for language analysis practitioners in the social sciences to
+* language has been used to infer psychological processes
+* critical need for language analysis practitioners in the social sciences
 
 # The Secrets of Verbal Behavior: From the Mystical to the Statistical
 
@@ -15,16 +15,16 @@
     bubbling cauldron of the preconscious (Freud, 1915; Laffal, 1964). As the
   * Allport (1942) aired significant concerns about the need for more rigorous
     theory-testing in language analysis studies, rejecting much
-* In the 1960’s, the so-called General Inquirer showed incredible promise as
+* In the 1960’s, the so-called General Inquirer showed incredible promise
   * widespread technological optimism of early Space Age social sciences (eg
     Kranz, 1970; Stone+ 1962): a massive computer with software that
-    could “read” texts and deduce the inner workings of the human mind was,
+    could “read” texts and deduce the inner workings of the human mind
   * score texts for psychosocial phenomena, it was
   * hoped to remove subjectivity, bias, and human error from the measurement
   * aspired to become a standardized, scientific tool: something of a language
   * Early demonstrations showcased the system’s sheer potential: research
-    ranging from the scientific study of suicide notes to political documents
-    to folktales highlighted the range (Colby+ 1963; Holsti, 1965)
+    * suicide notes to political documents to folktales highlighted the range
+      (Colby+ 1963; Holsti, 1965)
   * hE it was complicated, difficult to maintain, and costly (Psathas, 1969)
     * “gold standard” of hand-scored texts (Smith, 1968)
   * Other approaches absorbed important lessons from the General Inquirer, and
@@ -154,7 +154,7 @@
 ## Isn’t Language Supposed to be... You Know... Social?
 
 * we overlook the fundamental essence of language itself: to transmit and
-  coordinate complex information (broadly defined) with others. Scholars who
+  coordinate complex information (broadly defined) with others
 * traditionally downplayed due to the sheer difficulty of collecting and
   analyzing language data from two or more people; until very recently,
 * “split the difference,” so to speak, by analyzing the language of mass media
@@ -228,34 +228,34 @@
   but also in the creation of new paradigms that facilitate the rapid and
 * merits of interdisciplinary collaboration (Cummings & Kiesler, 2016)
 
-## The Bird in Borrowed Feathers
+## The Bird in Borrowed Feathers: Computational social science?
 
 * social scientists have gradually become more computationally savvy =hozzáértő
   * computer scientists have begun to recognize the need for better theoretical
-    models of human behavior, moving
+    models of human behavior
     * beyond a purely “informatic” view of social psychology (Wang+ 2007)
-* an explosion of research at the intersection: “computational social science.”
+* an explosion of research at the intersection: “computational social science”
 * In practice hE “computational social science” ~= intelligent data pipelines
   * use one type of human-generated data (eg text or videos) to
   * predict another (eg scores on questionnaires; behaviors), often providing
   * no real test of social theories or insights into human psychology
-  * machine learning exercises masquerading as social science. Equally
-  * social scientists haphazardly wielding powerful machine learning algorithms
-    and poorly-validated language models, deriving statistically flawed
-    interpretations of their data. For every social scientist who rolls their
-  * computer scientist butchering basic theories of human behavior, there is a
+  * machine learning exercises masquerading as social science
+  * social scientists haphazardly wielding [véletlenszerűen hadonászva]
+    powerful machine learning algorithms and poorly-validated language models,
+    deriving statistically flawed interpretations of their data
+  * computer scientist butchering basic theories of human behavior
   * psychologist excitedly proclaiming that “big data” and “machine learning”
-    solved their research problems with unbelievable accuracy. In the end,
-  * each field has its own scientific norms (ie paradigms, in the Kuhnian
-    sense): fitting psychological theory into the norms of machine learning or
-    vice versa rings of the classic “square peg into a round hole” problem
+    solved their research problems with unbelievable accuracy
+  * each field has its own sci norms (ie paradigms, in the Kuhnian sense):
+    * fitting psychological theory into the norms of machine learning or vice
+      versa = square peg into a round hole
 * The way forward: developing new paradigms in computational social science
-  * Initial steps toward this goal are visible in the form of practical guides
-    written within specific disciplines that outline other fields and norms
+  * Initial steps: practical guides written within specific disciplines that
+    outline other fields and norms
     * eg political science papers describing computational text analysis
-      (Grimmer & Stewart, 2013); psychology papers describing machine learning
-      (Stachl+ 2020), and machine learning papers describing social sciences
-      (O’Connor+ 2011)
+      (Grimmer & Stewart, 2013); 
+    * psychology papers describing machine learning (Stachl+ 2020), and
+    * machine learning papers describing social sciences (O’Connor+ 2011)
 
 # Conclusion
 

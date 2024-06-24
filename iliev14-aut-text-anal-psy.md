@@ -19,8 +19,8 @@ Language and Cognition, 2014
   (Freud, 1901; Rorschach, 1964 [1921]; Murray, 1943; Van Dijk & Kintsch, 1977;
   Weber, Hsee, & Sokolowska, 1998; Braun & Clarke, 2006)
 * Based on what someone says, we make judgments about his or her
-  * personality, general knowledge, past, and about the value of future
-    interactions with the speaker
+  * personality, general knowledge, past, and about
+    the value of future interactions with the speaker
   * happy or sad, polite or rude, expert or novice
   * sometimes even infer gender, religion, or political orientation
 

@@ -133,7 +133,7 @@ https://liang-qiu.github.io/ValueNet/
 * Scruples (Lourie, Bras, and Choi 2021) is
   a large-scale dataset with ethical judgments over real-life anecdotes,
   * motivated by descriptive ethics
-* Forbes+ (2020) is
+* Forbes+ (2020)
   * SOcial-Chem-101, a corpus that catalogs rules-of-thumb as basic concept
     units for studying people’s everyday social norms and moral judgments
   * Neural Norm Transformer to reason about previously unseen situations,

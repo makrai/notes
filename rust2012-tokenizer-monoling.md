@@ -224,13 +224,13 @@ criteria:
 ## 3.3 Initial results
 
 * lang
-  * largest performance gains of monolingual models: FI , TR , KO , and AR 
+  * largest performance gains of monolingual models: FI, TR, KO, and AR 
   * mBERT outperforms the IndoBERT ( ID ) model in all tasks but SA, and performs
   * competitively with the JA and ZH monolingual models on most datasets.  In gen-
 * task
   * gap is particularly narrow for POS tagging, where all models score high >95%
   * ID aside, for UDP, with monolingual models out-performing fine-tuned mBERT
-    * most notably for FI and TR , and
+    * most notably for FI and TR, and
   * fully fine-tuned mBERT models, in turn, outperforming the adapter-based
 * In what follows, we seek to understand the causes of this behaviour in
   relation to different factors such as used tokenizers, corpora sizes, as well
@@ -242,14 +242,14 @@ criteria:
 
 * we compare how much data each monolingual model was trained on
   with the amount of data in the respective language that mBERT has seen. Given
-  * mBERT was trained on entire Wikipedia dumps 8 , we estimate the latter by
+  * mBERT was trained on entire Wikipedia dumps 8, we estimate the latter by
     the total number of words across all articles listed for each Wiki 9 
   * For the monolingual models, we extract information on pretraining data from
     the model documentation.  If no exact numbers are explicitly stated, and the
     pretraining corpora are unavailable to us, we make estimations based
 * Figure 1. For
-  * EN , JA , RU , and ZH , the two models were trained on similar amounts of
-  * AR , ID , FI , KO , and TR monolingual models were trained
+  * EN, JA, RU, and ZH, the two models were trained on similar amounts of
+  * AR, ID, FI, KO, and TR monolingual models were trained
     from about twice ( KO) up to more than 40 times ( TR ) as much data
 
 ## 4.2 Tokenizer
@@ -265,9 +265,9 @@ criteria:
   produced per tokenized word
 * Table 2
 * mBERT has
-  * similar fertility values as the monolingual for EN , ID , JA, ZH . In
-  * much higher fertility for AR , FI , KO , RU , and TR , indicating that
-  * lowest for EN , which is likely due to
+  * similar fertility values as the monolingual for EN, ID, JA, ZH . In
+  * much higher fertility for AR, FI, KO, RU, and TR, indicating that
+  * lowest for EN, which is likely due to
     * mBERT having seen the most data in this language during training, as
     * English being a morphologically poor language in comparison to languages
   * JA model is the only monolingual one with a fertility higher than mBERT
@@ -276,7 +276,7 @@ criteria:
 2. The second metric is the proportion of words in the corpus where the
    tokenized word is continued across at least two sub-tokens (denoted by)
   * Figure 3 show similar trends as with the fertility statistic
-  * In addition to AR , FI , KO , RU , and TR , where there were already
+  * In addition to AR, FI, KO, RU, and TR, where there were already
     conspicuous differences in fertility, mBERT also produces a proportion of
     continued words more than twice as high as the monolingual model for ID 
 * We discuss additional tokenization statistics, further highlighting the
@@ -288,7 +288,7 @@ criteria:
 * to disentangle the effects of these two factors,
   we pretrain new models for the languages that exhibited the largest discrepanc
   on Wikipedia data
-  * AR , FI , ID , KO , and TR
+  * AR, FI, ID, KO, and TR
 * three model variants for each language. First, we train
   * two new monolingual BERT models on the same data,
     * one with the original monolingual tokenizer ( wiki-mono-mono ) and
@@ -304,13 +304,13 @@ criteria:
 
 * When choosing a monolingual tokenizer that scores significantly lower in
   fertility and the proportion of continued words than the mBERT tokenizer
-  (such as for AR , FI , ID , KO , TR ), performance gains can be made
+  (such as for AR, FI, ID, KO, TR ), performance gains can be made
   relatively consistently, irrespective of whether the models themselves are
   monolingual ( wiki-mono-mono versus wiki-mono-mbert ) or multilingual (
   wiki-mbert-retrained versus fully fine-tuned mBERT)
 * Whenever the differences between monolingual models and mBERT
   with respect to the tokenizer (as measured by the fertility or prop of conted)
-  and the pretraining corpus size are small, such as for EN , JA , and ZH , the
+  and the pretraining corpus size are small, such as for EN, JA, and ZH, the
   performance gap is typically also small
   * In QA, we even find mBERT to be favorable for these languages. Therefore, we
 
@@ -385,7 +385,7 @@ criteria:
   tokenizations by human UD annotators, indicating they are more capable than
   the mBERT tokenizer. Likewise, the monolingual models’ and mBERT’s sentence
   length distributions are closer for languages with similar fertility and
-  proportion of continued words, such as EN , JA , and ZH 
+  proportion of continued words, such as EN, JA, and ZH 
 
 ## B.2 Correlation Analysis 20
 
