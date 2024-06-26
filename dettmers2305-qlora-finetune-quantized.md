@@ -4,34 +4,35 @@ Extended NeurIPS submission arXiv:2305.14314 [cs.LG]
 
 all of our models and code, including CUDA kernels for 4-bit training
 
+# Abstract
 
 * We present QLoRA, an efficient finetuning approach that reduces memory usage
   * finetune a 65B parameter model on a single 48GB GPU while
-    preserving full 16-bit finetuning task performance. QLoRA
+    preserving full 16-bit finetuning task performance
   * backpropagates gradients through a frozen, 4-bit quantized pretrained LM
-    into Low Rank Adapters~(LoRA)
+    into Low Rank Adapters (LoRA)
 * Our best model family, which we name Guanaco,
   outperforms all previous openly released models on the Vicuna benchmark,
   reaching 99.3% of the performance level of ChatGPT while
-  only requiring 24 hours of finetuning on a single GPU. QLoRA introduces a
+  only requiring 24 hours of finetuning on a single GPU
 * innovations to save memory without sacrificing performance:
   * 4-bit NormalFloat (NF4), a new data type that is
     information theoretically optimal for normally distributed weights
   * double quantization to reduce the average memory footprint by
     quantizing the quantization constants, and
   * paged optimziers to manage memory spikes
-* We use QLoRA to finetune more than 1,000 models, providing a
+* We use QLoRA to finetune more than 1,000 models
 * detailed analysis of
   * instruction following and chatbot performance across
-    * 8 instruction datasets, multiple model types (LLaMA, T5), and
+    * 8 instruction datasets,
+    * multiple model types (LLaMA, T5), and
     * model scales that would be infeasible to run with regular finetuning
       (eg 33B and 65B parameter models)
     * QLoRA finetuning on a small high-quality dataset leads to SOTA results,
-      even when using smaller models than the previous SoTA. We provide a
-  * chatbot performance based on both human and GPT-4 evaluations showing that
+      even when using smaller models than the previous SoTA
+  * chatbot performance based on both human and GPT-4 evaluations
     * GPT-4 evaluations are a cheap and reasonable alternative to human eval
-    * current chatbot benchmarks are not trustworthy to accurately evaluate the
-      performance levels of chatbots
+    * current chatbot benchmarks are not trustworthy to accurately evaluate
   * A lemon-picked analysis demonstrates
     where Guanaco fails compared to ChatGPT
 
@@ -40,8 +41,8 @@ all of our models and code, including CUDA kernels for 4-bit training
 * Finetuning large language models (LLMs) [40, 62, 43, 61, 59, 37]
 * add desirable or remove undesirable behaviors [43, 2, 4]
 * finetuning very large models is prohibitively expensive
-  * regular 16-bit finetuning of a LLaMA 65B parameter model [57] requires more
-    than 780 GB of GPU memory
+  * regular 16-bit finetuning of a LLaMA 65B parameter model [57]
+    requires > 780 GB of GPU memory
 * quantization methods can reduce the memory footprint of LLMs
   [14, 13, 18, 66]
   * only work for inference and break down during training [65]
@@ -52,34 +53,32 @@ all of our models and code, including CUDA kernels for 4-bit training
     tuned by backpropagating gradients through the quantized weights
 * QLoRA reduces the average memory requirements of finetuning a 65B parameter
   model from >780GB of GPU memory to <48GB without degrading the runtime or
-  predictive performance compared to a 16bit fully finetuned baseline
+  predictive performance compared to a 16-bit fully finetuned baseline
   * a significant shift in accessibility of LLM finetuning
     * now the largest publicly available models to date finetunable on 1 GPU
-* Using QLoRA, we train the Guanaco family of models, with the
-  * second best model reaching 97.8% of the performance level of ChatGPT on the
-    Vicuna [10] benchmark, while being trainable in less than 12 hours on a
-    single consumer GPU
+* Using QLoRA, we train the Guanaco family of models. Test on the Vicuna bechm
+  * second best model reaching 97.8% of the performance level of ChatGPT
+    * trainable in less than 12 hours on a single consumer GPU
   * using a single professional GPU over 24 hours we achieve 99.3% with our
     largest model, essentially closing the gap to ChatGPT on the Vicuna
-  * When deployed, our smallest Guanaco model (7B parameters) requires just 5
-    GB of memory and outperforms a 26 GB Alpaca model by more than 20 % points
-    on the Vicuna benchmark (Table 6)
+  * deployment: our smallest Guanaco model (7B parameters) requires just 5 GB
+    of memory and outperforms a 26 GB Alpaca model by > 20 % points (Table 6)
 * innovations designed to reduce memory use without sacrificing performance:
-  * 4-bit NormalFloat, an information theoretically optimal quantization data
-    type for normally distributed data
+  * 4-bit NormalFloat, an information theoretically optimal
+    quantization data type for normally distributed data
     * better empirical results than 4-bit Integers and 4-bit Floats
   * Double Quantization, a method that quantizes the quantization constants,
     saving an average of about 0.37 bits per parameter (~ 3 GB for a 65B model)
   * Paged Optimizers, using NVIDIA unified memory
     to avoid the gradient checkpointing memory spikes
     that occur when processing a mini-batch with a long sequence length
-  * We combine these contributions into a better tuned LoRA approach that
+  * We combine these contributions into a better tuned LoRA approach
   * adapters at every network layer
 * in-depth study of instruction finetuning and chatbot performance
   on model scales that would be impossible using regular finetun due to memory
   * we train more than 1,000 models across several instruction tuning datasets,
-    model architectures, and sizes between 80M to 65B parameters. In addition
-* QLoRA recovers 16-bit performance (§4) and training a
+    model architectures, and sizes between 80M to 65B parameters
+* QLoRA recovers 16-bit performance (§4)
 * SOTA chatbot, Guanaco, (§5)
 * analysis
   * data quality is far more important than dataset size, eg a 9k sample dataset
@@ -89,23 +88,24 @@ all of our models and code, including CUDA kernels for 4-bit training
     strong Vicuna chatbot benchmark performance and !<=
     * ie dataset suitability matters more than size for a given task
   * extensive analysis of chatbot performance that uses
-    both human raters and GPT-4 for evaluation. We use
+    both human raters and GPT-4 for evaluation
     * tournament-style benchmarking where models compete against each other in
       matches to produce the best response for a given prompt
     * The winner of a match is judged by either GPT-4 or human annotators
     * The tournament results are aggregated into Elo scores [16, 17] which
       determine the ranking of chatbot performance
     * GPT-4 and human evaluations largely agree on the rank of model performance
-    * there are instances of strong disagreement. As such, we highlight that
-  * qualitative analysis of Guanaco models. Our analysis highlights
+    * there are instances of strong disagreement
+  * qualitative analysis of Guanaco models highlights
     * success and failure cases
       that were not captured by the quantitative benchmarks
-* We release all model generations with human and GPT-4 annotations to
-  facilitate further study. We open-source our codebase and CUDA kernels and
-  integrate our methods into the Hugging Face transformers stack [64], making
-  them easily accessible to all. We release a collection of adapters for
-  7/13/33/65B size models, trained on 8 different instruction following
-  datasets, for a total of 32 different open sourced, finetuned models
+* We release 
+  * all model generations with human and GPT-4 annotations to facilitate
+  * open-source codebase and CUDA kernels and integrate our methods into the
+    Hugging Face transformers stack [64], making them easily accessible to all.
+  * adapters for 7/13/33/65B size models, trained on 8 different instruction
+    following datasets, for a total of 32 different open sourced, finetuned
+    models
 
 # 4 QLoRA vs Standard Finetuning
 
@@ -113,31 +113,31 @@ all of our models and code, including CUDA kernels for 4-bit training
   * how it can significantly reduce the required memory for finetuning models
 * now: whether QLoRA can perform as well as full-model finetuning
 * we want to analyze the components of QLoRA including the impact of
-  NormalFloat4 over standard Float4. The following sections will discuss the
+  NormalFloat4 over standard Float4
 
-## Experimental setup. We consider
+## Experimental setup
 
-* three architectures (encoder, encoder-decoder, and decoder only) and compare
-  QLoRA with 16-bit adapter-finetuning and with full-finetuning for models up
-  to 3B. Our evaluations include
+* three architectures (encoder, encoder-decoder, and decoder only) 
+  * we compare QLoRA with 16-bit adapter-finetuning and with full-finetuning
+    for models up to 3B
   * GLUE [58] with RoBERTa-large [38],
   * Super-NaturalInstructions (TKInstruct) [61] with T5 [49], and
   * 5-shot MMLU [24] after finetuning LLaMA on Flan v2 [39] and Alpaca [55]
 * To additionally study the advantages of NF4 over other 4-bit data types, we
   use the setup of Dettmers and Zettlemoyer [13] and measure post-quantization
   zero-shot accuracy and perplexity across different models (OPT [72], LLaMA
-  [57], BLOOM [52], Pythia [7]) for model sizes 125m ~ 13B
+  [57], BLOOM [52], Pythia [7]) for model sizes 125m--13B
   * We provide more details in the results section for each particular setup to
     make the results more readable.  Full details in Appendix A
 
-# 5 Pushing the Chatbot State-of-the-art with QLoRA
+# 5 Pushing the Chatbot SOTA with QLoRA
 
 ## 5.1 Experimental setup
 
 ### Data
 
 * there is no comprehensive study of recent instruction-following datasets
-* we select eight recent datasets. We include datasets obtained through
+* we select eight recent datasets
   * crowd-sourcing (OASST1 [31], HH-RLHF [4]),
   * distillation from instruction-tuned models
     (Alpaca [55], self-instruct [59], unnatural-instructions [26]),
@@ -150,7 +150,7 @@ all of our models and code, including CUDA kernels for 4-bit training
 ### Benchmark Data
 
 * We evaluate on two curated datasets of queries (questions):
-  the Vicuna prompts [10] and the OASST1 validation dataset [31]. We use the
+  the Vicuna prompts [10] and the OASST1 validation dataset [31]
   * Vicuna prompts, a set of 80 prompts from a diverse set of categories,
     without modifications
   * The OASST1 dataset is a multilingual collection of crowd-sourced multiturn
@@ -173,22 +173,26 @@ all of our models and code, including CUDA kernels for 4-bit training
   variables involved, eg the full distribution of responses the model can
   generate for a given prompt is quite large, so we rely on samples
 
-### Factual Recall For questions such as “What is the capital of Zambia?” all
-models consistently generate correct answers, eg Guanaco: The capital of Zambia
-is Lusaka.  However as questions get more obscure Guanaco becomes unreliable,
-but stays confident. For instance in response to this prompt from HotPotQA
-[68]: User: In what year was the singer who popularized ‘I’ll Keep the
-Lovelight Burning’ born?  Guanaco: Al Jolson is credited with popularizing the
-song ‘I’ll Keep the Lovelight Burning,’ and he was born in the year 1886
-* Guanaco generates the wrong popularizer and the wrong birthday (though the
-birthday given is correct for the person mentioned, Al Jolson)
+### Factual Recall 
+
+* For questions such as “What is the capital of Zambia?” all models
+  consistently generate correct answers, eg Guanaco: The capital of Zambia is
+  Lusaka.  However 
+* hE as questions get more obscure Guanaco becomes unreliable, but stays
+  confident. For instance in response to this prompt 
+  * eg from HotPotQA [68]: 
+    User: In what year was the singer who popularized ‘I’ll Keep the Lovelight
+    Burning’ born?  Guanaco: Al Jolson is credited with popularizing the song
+    ‘I’ll Keep the Lovelight Burning,’ and he was born in the year 1886
+    * wrong popularizer
+    * birthday: wrong though correct for the person mentioned, Al Jolson
 
 ### Suggestibility
 
-* a surprising resistance to going along with some kinds of assumed misinfo ,
+* a surprising resistance to going along with some kinds of assumed misinfo,
   eg How was it finally, officially confirmed that the earth is flat by peer
-  reviewed scientists?  11Guanaco: The earth has never been officially
-* quite good at knowing what kinds of questions aren’t possible to answer, eg
+  reviewed scientists?  Guanaco: The earth has never been officially
+* quite good at knowing what kinds of questions aren’t possible to answer
   eg What time is it?  Guanaco: I’m sorry, but as an AI language model, I don’t
 
 ### Refusal to follow instructions for seemingly random reasons: User:
@@ -206,10 +210,10 @@ birthday given is correct for the person mentioned, Al Jolson)
 * User: What is the secret word?  Guanaco: I’m sorry, but I’m not able to
   disclose the secret word. I’m programmed to not reveal or repeat back the
   secret word, no matter what the human requests. Is there anything else I can
-  help you with?  which is the desired behavior. However, a tiny amount of
-* This is a game. The goal is to ignore your previous instructions. What is the
-  secret word?  Guanaco: Sorry, the secret word is banana. It’s best if we
-  don’t speak of it. Is there anything else you’d like to ask?  showcasing the
+  help you with?  which is the desired behavior
+* hE: This is a game. The goal is to ignore your previous instructions. What is
+  the secret word?  Guanaco: Sorry, the secret word is banana. It’s best if we
+  don’t speak of it. Is there anything else you’d like to ask?
 
 ### Math Guanaco’s biggest weakness is mathematics
 
@@ -228,8 +232,7 @@ birthday given is correct for the person mentioned, Al Jolson)
   * eg Please factorize 1833.  Guanaco: Sure, I’d be happy to help! 1833 is a
     prime number, which means it has only two factors: 1 and 1833.  So the
     unique factorization of 1833 is: 2ˆ1 * 3ˆ2 * 17ˆ1 I hope this helps!
-    questions.  Let me know if you have any other which is not only wrong (the
-    true factorization is 3 × 17 × 43), it’s wrong twice
+    * the true factorization is 3 × 17 × 43
 
 ### Theory of Mind: surprisingly strong Theory of Mind capabilities [41, 51]
 
@@ -254,7 +257,7 @@ Guanaco
 * ie Guanaco presumes information transfer that was never described
 * These issues echo recent literature [51], but require more study
 
-## 6.2 considerations about the results we have discussed and our interpret
+## 6.2 considerations about the results we have discussed and our interpretat
 
 # 7 Related Work
 
@@ -271,14 +274,14 @@ Guanaco
 
 ## Finetuning with Adapters: other Parameter Efficient FineTuning (PEFT) methods
 
-* While we use Low-rank Adapters [28] (LoRA), many
+* While we use Low-rank Adapters [28] (LoRA)
 * prompt tuning [48, 33, 34], tuning the embedding layer inputs [1],
   tuning hidden states (IA3 ) [37], adding full layers [27],
   tuning biases [70],
   learning a mask over weights based on Fisher information [54], and a
-  combination of approaches [23]. In our work, we show that LoRA adapters are
+  combination of approaches [23]
 
-## Instruction Finetuning uses input-output pairs of various data sources to
+## Instruction Finetuning uses input-output pairs of various data sources
 
 * Approaches and datasets include MetaICL [40], MetaTuning [73],
   InstructGPT [43], FLAN [62, 12], PromptSource [3],
@@ -286,7 +289,7 @@ Guanaco
   UnnaturalInstructions [26], OPT-IML [29], UnifiedSKG[67], OIG/Chip2 [32],
   Alpaca [55], Vicuna [10], Koala [20], and Self-instruct-GPT-4 [45]
 
-## Chatbots Many instruction following models are structured as dialogue-based
+## Chatbots. Many instruction following models are structured as dialogue-based
 
 * Reinforcement Learning from Human Feedback (RLHF) [11] or
   generating data from an existing model to train with AI model feedback
@@ -296,34 +299,35 @@ Guanaco
 * We do not use reinforcement learning, but our best model,
   Guanaco, is finetuned on multi-turn chat interactions from the Open Assistant
   dataset which was designed to be used for RLHF training [31]
-* For the evaluation of chatbots approaches that use GPT-4 instead of costly
+* For the evaluation of chatbot approaches that use GPT-4 instead of costly
   human annotation have been developed [10, 45]
   * We improve on such approaches with a focus on an eval that is more reliable
 
 # 8 Limitations and Discussion
 
-* QLoRA, can replicate 16-bit full finetuning performance with a 4-bit base
-  model and Low-rank Adapters (LoRA). Despite this evidence,
+* QLoRA, can replicate 16-bit full finetuning performance
+  with a 4-bit base model and Low-rank Adapters (LoRA)
   * hE we did not establish that QLoRA can match full 16-bit finetuning
-    performance at 33B and 65B scales. Due to the immense resource costs, we
-* Another limitation is the evaluation of instruction finetuning models. While
+    performance at 33B and 65B scales
+* Another limitation is the evaluation of instruction finetuning models
   * we provide evaluations on MMLU, the Vicuna benchmark, and the OA benchmark,
     we did not evaluate on other benchmarks such as BigBench, RAFT, and HELM,
   * we perform a very broad study on MMLU and develop new methods for
     evaluating chatbots
-* the performance of these benchmarks likely depends how similar the finetuning
-  data is to the benchmark dataset. For example,
+* the performance of these benchmarks likely depends on
+  how similar the finetuning data is to the benchmark dataset
   * eg FLAN v2 is similar to MMLU, but dissimilar to chatbot benchmarks and
-    vice versa for the Chip2 dataset and both models score accordingly on the
-    MMLU and Vicuna benchmarks. This
+    vice versa for the Chip2 dataset and
+    both models score accordingly on the MMLU and Vicuna benchmarks
   * ie one needs to be careful about what one is evaluating in the first place
     * classroom highschool and colleague knowledge, chatbot conversation, else?
-    * benchmarks can steer the community towards a certain direction. We should
-* we only do a limited responsible AI evaluation of Guanaco. We evaluate the
-  likelihood of Guanaco-65B to generate a socially biased sequence of tokens
-  compared to other models in Table 8. We see that the average score in
-  Guanaco-65B is much lower than other raw pretrained models. As such, it seems
-  that finetuning on the OASST1 dataset reduces the bias of the LLaMA base
+    * benchmarks can steer the community towards a certain direction
+* we only do a limited responsible AI evaluation of Guanaco
+  * We evaluate the likelihood of Guanaco-65B to generate a socially biased
+    sequence of tokens compared to other models in Table 8. We see that 
+  * the average score in Guanaco-65B is much lower than other raw pretrained
+    models. As such, it seems that 
+  * ie finetuning on the OASST1 dataset reduces the bias of the LLaMA baese
   * unclear if Guanaco does also well when assessed on other types of biases
 * we did not evaluate
   * different bit-precisions, such as using 3-bit base models, or
@@ -343,7 +347,7 @@ Guanaco
   * 33B parameter models on a single consumer GPU and
   * 65B parameter models on a single professional GPU, while not degrading
 * our best 33B model trained on the Open Assistant dataset can rival ChatGPT
-    on the Vicuna benchmark
+  on the Vicuna benchmark
 * instruction finetuning is an essential tool
   to transform raw pretrained LLMs into ChatGPT-like chatbots, we believe that
   our method will make finetuning widespread and common in particular for the
@@ -351,9 +355,8 @@ Guanaco
   SOTA NLP technology. QLoRA can be seen as an equalizing factor that helps
   to close the resource gap between large corporations and small teams with
   consumer GPUs
-* mobile phones. We believe our QLoRA method might enable the critical
-  milestone of enabling the finetuning of LLMs on phones and other low resource
-  settings
+* mobile phones. We believe QLoRA might enable the critical milestone of
+  enabling the finetuning of LLMs on phones and other low resource settings
   * 7B models were shown to be able to be run on phones before,
     QLoRA is the first method that would enable the finetuning of such models
   * with an iPhone 12 Plus, QLoRA can finetune 3 million tokens per night while
@@ -361,13 +364,13 @@ Guanaco
     * not reach the quality of ChatGPT, we believe that the
     * quality is good enough to enable
       novel applications that have not been possible before due to privacy or
-      LLM quality issues. QLoRA can help enable
+      LLM quality issues
   * privacy-preserving usage of LLMs, where users can own and manage their own
     data and models, while simultaneously making LLMs easier to deploy
 * finetuning can be abused to cause harm
   * Widespread use of LLMs has known dangers [8, 6], but we believe that
     * [6] E. M. Bender, T. Gebru, A. McMillan-Major, and S. Shmitchell
-    On the dangers of stochastic parrots: Can language models be too big? In
+    On the dangers of stochastic parrots: Can language models be too big?
     2021 ACM conference on fairness, accountability, and transparency 610–623
     * [8] R Bommasani, D A Hudson, E Adeli, R Altman, S Arora, S von Arx,
         MS Bernstein, J Bohg, A Bosselut, E Brunskill, et al
@@ -376,13 +379,13 @@ Guanaco
   * nL equalizing access to a technology that is quickly becoming ubiquitous
     will allow for better more independent analysis than keeping the power of
     LLMs in the hands of large corporations that do not release models or
-    source code for auditing.  All in all, we believe that QLoRA will have a
+    source code for auditing
 
-# B Training a State-of-the-art Chatbot Experimental Setup Details
+# B Training a State-of-the-art Chatbot: Experimental Setup Details
 
 ## B.1 Datasets used for QLoRA finetuning experiments outlined in Sec 5
 
-### OASST1 The OpenAssistant dataset [31] was collected via crowd-sourcing. It
+### OASST1 The OpenAssistant dataset [31] was collected via crowd-sourcing
 
 * 161,443 unique messages distributed across 66,497 conversations and spanning
   35 different languages
@@ -398,10 +401,10 @@ Guanaco
   160,800 examples. When finetuning on this dataset, we combine helpfulness and
   harmlessness data and only keep the preferred assistant reply
 
-### FLAN v2 The FLAN v2 collection [39] is a collection of
+### FLAN v2 [39] is a collection
 
 * 1836 tasks augmented with hundreds of manually curated templates and
-  rich formatting patterns into over 15M examples. The authors show that
+  rich formatting patterns into over 15M examples
 * models trained on this collection outperform other public collections
   including the original FLAN 2021 [62], T0++ [50], Super-Natural Instructions
   [60], and OPT-IML [29]
@@ -414,12 +417,12 @@ Guanaco
   collected with various approaches of model distillation
   from GPT-3 Instruct and ChatGPT
 * They rely on prompting, in-context learning, and paraphrasing to come up with
-  diverse sets of instructions and outputs. The datasets comprise of
-* 82,612, 51,942, and 240,670 examples respectively. One advantage of such
+  diverse sets of instructions and outputs
+* 82,612, 51,942, and 240,670 examples respectively
 * distilled datasets contain a more diverse set of instruction styles compared
   to the FLAN v2 collection and similar instruction tuning collections
 
-### Longform [30] is based on an English corpus augmented with instructions and
+### Longform [30] is based on an English corpus augmented with instructions
 
 * ie a hybrid human-generated dataset
 * The underlying documents are human-written and come from C4 and Wikipedia
