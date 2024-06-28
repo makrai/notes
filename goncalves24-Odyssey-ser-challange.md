@@ -27,11 +27,11 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
   * have provided a description of their approaches and
   * ranked prominently in both the categorical and emotional attributes
 * metrics for each track
-  * categorical emotion recognition, we present both micro and macro F1
-  * emotion attributes prediction track, we employ the CCC to measure the
-  * final overall ranking of the models, we use the
+  * categorical emotion recognition: both micro and macro F1
+  * emotion attributes prediction track: CCC
+  * final overall ranking of the models
     * Macro F1 scores for the categorical emotion recognition and the
-    * average CCC values across arousal, valence, and dominance for the
+    * average CCC values across arousal, valence, and dominance
 * Task 1 top-3 scores (based on F1-Macro) were achieved by
   * Sheffield-MINI with 0.3569 (.046 over Baseline),
   * TalTech with 0.3543 (.043 over Baseline), and
@@ -44,24 +44,24 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
 * Sheffield-MINI: ensemble approach combining self-attention layers and MLPs,
   * features extracted from both audio and text using pre-trained models like
     Whisper [11], Wav2vec [12], HuBERT [13], WavLM [4], and RoBERTa [14]
-* UPC-BSC, THAU, and NU integrated textual data with audio features, leveraging
-  pre-trained models and fine-tuning
+* UPC-BSC, THAU, and NU integrated textual data with audio features
+  * pre-trained models and fine-tuning
 * NU utilized SSL-based features from BERT [15] and Emotion2Vec [16] in
   addition to WavLM features
-* Vivolab, CONILIUM, and VicomSpeech focused solely on audio data, employing
-  models like WavLM [4] with 
-  * innovative architectures like second-order attention mechanisms [17] and
+* Vivolab, CONILIUM, and VicomSpeech focused solely on audio data
+  * models like WavLM [4]
+  * innovative architectures like second-order attention mechanisms [17]
     * Vivolab: a specific focus on Selective State Space Models (SSM), MAMBA,
   * support vector machine (SVM) [18] classifiers
   * CONILIUM utilized a structure that mirrored the baseline and made use of
-    secondary annotations of all workers (annotators) in the weighed binary CE
-    loss function
+    secondary annotations of all workers (annotators)
+    in the weighed binary CE loss function
 * TalTech opted for features derived from mel-scale filters applied to the
   spectrogram, such as 80 Melfrequency filter-banks as their acoustic inputs
 
 ## 5.2. Data Modalities and Augmentation Techniques
 
-* At least six teams utilized audio and textual input, with the
+* At least six teams utilized audio and textual input
 * transcriptions often derived from pre-trained speech models like Whisper
 * augmentation was also employed, with techniques ranging from
   * speed perturbation and noise addition (TalTech, UPC-BSC, and Vivolab)
@@ -75,14 +75,14 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
 ## 5.3. Training Process and Optimization
 
 * Training methodologies varied significantly, different loss functions from
-  the ones used for the baseline were noted in some approaches
-* Sheffield-MINI and UPC-BSC made use of Focal Loss [21] to address class
-  imbalance and CE loss
+  the ones used for the baseline in some approaches
+* Sheffield-MINI and UPC-BSC made use of Focal Loss [21]
+  to address class imbalance and CE loss
 * NU optimized their models using CE loss and MSE loss
 * L’antenne du Ventoux utilized Negative log-likelihood and Jeffreys loss
   during training to jointly fine-tune both speech and text encoders
 * TalTech
-  * logistic regression-based fusion of audio and text-based models 
+  * logistic regression-based fusion of audio and text-based models
     * using low-rank adaptation (LoRA) [22] to
       finetune Llama 2 [23] and Wav2Vec-BERT [24]
   * they then fused the audio and text-based posterior probabilities using a
@@ -94,10 +94,10 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
   * Sheffield-MINI’s focal loss and
   * Vivolab’s balance through sample equalization
 * emotions with subtle distinctions were tackled through
-  innovative model architectures and feature sets, as seen in
+  innovative model architectures and feature sets
   * UPC-BSC’s use of double multi-head attention component [25] and
   * THAU’s use of large language models (LLM) [26] for fusion
-* The computational resources required varied, with
+* The computational resources required varied
   * most teams employing high-end GPUs like the NVIDIA RTX 3090 or A100
 
 ## 5.5. Top-3 Performing Models Evaluation
@@ -117,7 +117,7 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
 * TalTech Model shows a somewhat balanced classification ability
   * notable confusion between ‘Neutral’ and ‘Sadness’, with
     * many ‘Neutral’ emotions being incorrectly labeled as ‘Sadness’
-    * often mislabeling Contempt as ‘Disgust’ or ‘Anger’, and to a larger
+    * often mislabeling Contempt as ‘Disgust’ or ‘Anger’
     * ‘Fear’ emotions being misclassified as ‘Anger’ or ‘Sadness’
 * The UPC-BSC Model, while
   * proficient at identifying ‘Happiness’ emotions
@@ -126,30 +126,30 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
   * a considerable amount of ‘Surprise’ emotions as ‘Happiness’
 * common challenge
   * ‘Disgust’, ‘Fear’, and ‘Contempt’ with ‘Anger’, which could be due to
-    intrinsic similarities in the emotional expression of these categories 
+    intrinsic similarities in the expression of these categories
   * ‘Surprise’ seems to be a difficult category for all models, with
     misclassifications scattered across other emotions
 
 ### 5.5.2. Attributes Emotion Recognition Analysis
 
-* fig 6
+* fig 6.  Note the order top, bottom, middle
 * We employed the mean squared error (MSE) to gauge the error of predictions
   with the ground truth. We conducted these experiments
   * ? regions of emotional attributes are these models struggling more
-* Here we segmented the emotional intensity for each attribute into the top 25%
+* we binned the emotional intensity for each attribute into the top 25%
   percentile, bottom 25% percentile, and the middle 50% attribute values
 * All top-3 models essentially have the same patterns as the baseline model,
   * lower MSE scores with 0.25+
   * extreme difficulties with bottom 25% attribute intensity prediction for A,D
-* AIST-BahasaKita Model emerged as more proficient in the midrange for Arousal
-  and in the top 25% for Dominance
-* Intema Model mirrored the baseline for the most part with slight lower MSE in
-  the top 25% intensities for Dominance predictions
+* AIST-BahasaKita Model emerged as more proficient
+  in the midrange for Arousal and in the top 25% for Dominance
+* Intema Model mirrored the baseline for the most part with
+  slightly lower MSE in the top 25% intensities for Dominance
 * substantial challenges observed when predicting low-intensity dominance,
 * all models registering higher MSE scores for Arousal at lower intensities,
 * ie current models have made great improvements in understanding average
-  emotional states and even model intense regions, the ability to detect and
-  * lower end of the emotional intensity spectrum, requires further advancem
+  emotional states and even model intense regions
+  * the lower end of the emotional intensity spectrum requires further advancem
 
 # 6. Conclusion
 
