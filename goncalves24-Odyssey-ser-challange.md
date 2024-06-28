@@ -5,7 +5,7 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
 
 # 4. Baseline
 
-* The overall structure of our baseline 2 is illustrated in Figure 4 and
+* The overall structure of our baseline 2 is illustrated in Figure 4
   * two main modules
 * The Fine-Tuned (FT) module integrates components from a pre-trained
   Self-Supervised Learning (SSL) model, specifically WavLM [4]
@@ -51,6 +51,7 @@ Lucas Goncalves, Ali N. Salman, Abinay R. Naini, Laureano Moro Velazquez,
 * Vivolab, CONILIUM, and VicomSpeech focused solely on audio data, employing
   models like WavLM [4] with 
   * innovative architectures like second-order attention mechanisms [17] and
+    * Vivolab: a specific focus on Selective State Space Models (SSM), MAMBA,
   * support vector machine (SVM) [18] classifiers
   * CONILIUM utilized a structure that mirrored the baseline and made use of
     secondary annotations of all workers (annotators) in the weighed binary CE
