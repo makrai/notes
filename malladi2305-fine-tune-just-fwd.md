@@ -27,9 +27,9 @@ arXiv:2305.17333
     * eg LoRA and prefix tuning;
   * can effectively optimize non-differentiable objectives
     (eg maximizing accuracy or F1)
-* our theoretical insights highlight how
-  adequate pre-training and task prompts enable MeZO to fine-tune huge models,
-  despite classical ZO analyses suggesting otherwise
+* theoretical insights
+  * adequate pre-training and task prompts enable MeZO to fine-tune huge models,
+    despite classical ZO analyses suggesting otherwise
 
 # 1 Intro
 
@@ -47,10 +47,10 @@ arXiv:2305.17333
       backpropagation with Adam is feasible only for a 2.7B LM
 * Parameter-efficient fine-tuning methods (PEFT [44, 55, 52])
   * references
-    * [44] Edward J Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi
-      Li, Shean Wang, Lu Wang, and Weizhu Chen
+    * [44] Edward J Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu,
+        Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen
       LoRA: Low-rank adaptation of large language models
-      In International Conference on Learning Representations, 2022
+      ICLR 2022 International Conference on Learning Representations
     * [55] Xiang Lisa Li and Percy Liang
       Prefix-tuning: Optimizing continuous prompts for generation
       ACL-IJCNLP 2021
