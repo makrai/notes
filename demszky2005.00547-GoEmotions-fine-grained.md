@@ -64,8 +64,8 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
     * much room for improvement:
       task not yet fully addressed by current SOTA NLU models
 * transfer learning experiments with existing emotion benchmarks show that
-  our data can generalize to different taxonomies and domains, such as
-  tweets and personal narratives
+  our data can generalize to different taxonomies and domains,
+  eg tweets and personal narratives
   * given limited additional data labeled for emo classif in spec domains,
     our data can provide baseline emotion understanding
     and contribute to increasing model accuracy for the target domain
@@ -77,7 +77,7 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 ## 2.1 Emotion Datasets
 
-* emotion datasets vary in size, domain and taxonomy (Bostan and Klinger, 2018)
+* emotion datasets vary in size, domain, and taxonomy (Bostan & Klinger, 2018)
 * Affective Text (Strapparava and Mihalcea, 2007) was the first benchmark for
   emotion recognition
 * majority of emotion datasets are constructed manually
@@ -129,6 +129,8 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 # 3 GoEmotions
 
+## 3.1 Selecting & Curating Reddit comments
+
 ## 3.2 Taxonomy of Emotions: we seek to jointly maximize the following
 
 1. greatest coverage in terms of emotions expressed in our data
@@ -149,7 +151,29 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * The final set of selected emotions is listed in Table 4, and Figure 1
   * Appendix B for more details on our multi-step taxonomy selection procedure
 
+## 3.3 Annotation
+
 # 4 Data Analysis
+
+## 4.1 Interrater Correlation
+
+## 4.2 Correlation Among Emotions
+
+* We obtain N dimensional vectors for each emotion by averaging raters’
+  judgments for all examples labeled with that emotion. We calculate Pearson
+* Figure 2 shows that 
+  * emotions that are related in intensity (e.g. annoyance and anger, joy and
+    excitement, nervousness and fear) have a strong positive correlation.
+  * emotions that have the opposite sentiment are neg- atively correlated.
+* We also perform hierarchical clustering to un- cover the nested structure of
+  * We use correlation as a distance metric and ward as a linkage method,
+* dendrogram on the top of Figure 2 shows that 
+  * emotions that are related by intensity are neighbors, and that 
+  * larger clusters map closely onto sentiment categories. Interestingly,
+  * emotions that we labeled as “ambiguous” in terms of sentiment (e.g. sur-
+    prise) are closer to the positive than to the negative category. This
+    * ie in our data, ambiguous emotions are more likely to occur in the
+      context of positive sentiment than that of negative sentiment.
 
 ## 4.3 Principal Preserved Component Analysis
 
@@ -203,3 +227,17 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
   * joy (all positive emotions),
   * sadness (sadness, disappointment, embarrassment, grief, remorse) and
   * surprise (all ambiguous emotions)
+
+## 5.2 Model Architecture
+
+## 5.3 Parameter Settings
+
+## 5.4 Results
+
+# 6 Transfer Learning Experiments
+
+## 6.1 Emotion Benchmark Datasets
+
+## 6.2 Experimental Setup
+
+## 6.3 Results
