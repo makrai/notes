@@ -10,7 +10,7 @@ github.com/Advancing-Machine-Human-Reasoning-Lab/transformer-psychometrics
   * We gather responses from numerous human participants and LMs (transformer
     and non-transformer-based) on a broad diagnostic test of linguistic
 * transformer-based LMs predict psychometric properties consistently well in
-  certain categories but consistently poorly in others, thus providing new
+  certain categories but consistently poorly in others
 
 # 1 Introduction
 
