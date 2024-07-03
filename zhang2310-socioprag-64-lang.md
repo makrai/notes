@@ -14,15 +14,16 @@ https://github.com/UBC-NLP/SPARROW
   * 169 datasets covering 13 task types
   * 6 primary categories (eg anti-social language detection, emotion recog)
   * 64 languages from 12 language families representing 16 scripts
-* evaluation of various
-  * multilingual pretrained language models (eg mT5) and
-  * instruction-tuned LLMs (eg BLOOMZ, ChatGPT) on SPARROW
-  * fine-tuning, zero-shot, and/or few-shot learning
-* existing open-source instruction tuned LLMs still struggle to understand SM
-  across various languages
-  * close to a random baseline in some cases
-  * ChatGPT outperforms many LLMs
-  * hE it still falls behind task-specific finetuned models (gap = 12.19)
+* evaluation 
+  * of various
+    * multilingual pretrained language models (eg mT5) and
+    * instruction-tuned LLMs (eg BLOOMZ, ChatGPT) on SPARROW
+    * fine-tuning, zero-shot, and/or few-shot learning
+  * results
+    * open-source instruction tuned LLMs struggle to understand SM multiling
+    * close to a random baseline in some cases
+    * ChatGPT outperforms many LLMs
+    * hE it still falls behind task-specific finetuned models (gap = 12.19)
 
 # 1 Intro
 
@@ -32,7 +33,7 @@ https://github.com/UBC-NLP/SPARROW
   * ChatGPT exhibits impressive capabilities in this regard
   * what we call sociopragmatic meaning (SM)
     * some forms of meaning are deeply embedded in social interactions
-    * sociolinguistics: social var related to lang users (Tagliamonte, 2015)
+    * sociolinguistics: social varia related to lang users (Tagliamonte, 2015)
     * pragmatics: communicative intentions (Boxer and Cortés-Conde, 2021)
     * quite established within linguistics, hE NLP systems still struggle
     * intertwined in social and interactive cont (Zhang and Abdul-Mageed, 2022)
@@ -130,18 +131,18 @@ https://github.com/UBC-NLP/SPARROW
 # 3 SPARROW Benchmark
 
 * 13 types of tasks in six main categories, 169 datasets
-* covers a wide period of time (1986-2022)
+* from a wide period of time (1986-2022)
 * We group different tasks in our benchmark
   * hate speech, offensive language, and dangerous language detection as
     anti-social language detection
 * we keep sentiment analysis and emotion recognition distinct due to the popul
 * Table 2 summarizes statistics of SPARROW
   * more information about languages in SPARROW in Table 7 of the Appendix
-  * detailed descriptions with full citations of all our datasets in Tab 9--14
+  * detailed descriptions with full citations of all our datasets in Tabs 9--14
 * aggregated metric
-  * Inspired by previous evaluation benchmarks like GLUE (Wang+, 2019)
-  * we define a global metric called SPARROW score, which represents the
-    unweighted average of all dataset-specific metrics
+  * Inspired by previous evaluation benchmarks like GLUE (Wang+ 2019)
+  * we define a global metric called SPARROW score, which represents
+    the unweighted average of all dataset-specific metrics
   * an overall indication of performance on SM tasks
 
 ## 3.1 Task Clusters
@@ -164,7 +165,7 @@ https://github.com/UBC-NLP/SPARROW
 * Emotion affects our decision-making as well as mental and physical health
   (Abdul-Mageed and Ungar, 2017)
 * SPARROW includes 26 emotion datasets in 17 languages
-  (eg Kajava (2018); Bianchi+ (2021))
+  * eg Kajava (2018); Bianchi+ (2021)
 
 ### Humor Detection
 
@@ -234,6 +235,10 @@ https://github.com/UBC-NLP/SPARROW
 * six open-source LLMs (i.e, BLOOM, BLOOMZ-P3, mT5, mT0, LLaMA, and Vicuna) via
   few-shot in-context learning
 
+# 5 Experiments 5
+
+## 5.1 Implementation
+
 ## 5.2 Results
 
 * tab 3: aggregated performance of Test-S on each task and main category
@@ -276,7 +281,7 @@ https://github.com/UBC-NLP/SPARROW
     93.00, 49.00, and 76.8 on SentengSoc (not included in either xP3 or P3),
     * BLOOM-Bactrian still performs poorly (accuracy= 53.60) after instruction
 
-### 5.2.3 How do LLMs perform across different SM tasks? They are
+### 5.2.3 How do LLMs perform across different SM tasks?
 
 * inferior at humor and antisocial language detection
 * relatively better at sentiment and emotion recognition tasks
@@ -377,3 +382,9 @@ https://github.com/UBC-NLP/SPARROW
   with the prompts we used for evaluating ChatGPT. As Table 24 in Appendix
 * BLOOM, LLaMA, and Vicuna incur sizable performance drops (> 6 points)
 * BLOOMZ-P3, mT5, and mT0 demonstrate performance levels akin to previous ones
+
+# 6 Public Leaderboard 9
+
+# 7 Conclusion
+
+# 8 Limitations 10
