@@ -1,6 +1,6 @@
 Prediction of sleepiness ratings from voice by man and machine
-Huckvale, M; Beke, A; Ikushima, M; (2020)
-Interspeech.2020 pp. 4571-4575
+Huckvale M, Beke A, Ikushima M
+Interspeech 2020 pp. 4571-4575
 
 # Abstract
 

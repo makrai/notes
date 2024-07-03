@@ -1,8 +1,8 @@
-MSC-COVID-19: Computer Audition for Fighting the SARS-CoV-2 Corona Crisis
-  Introducing the Multitask Speech Corpus for COVID-19
-Kun Qian; Maximilian Schmitt; Huaiyuan Zheng; Tomoya Koike; Jing Han; Juan Liu;
-  ;;; Zhao Ren; Shuo Liu; Zixing Zhang; Yoshiharu Yamamoto; Björn W. Schuller
-Journals & Magazines >IEEE Internet of Things Journal >Volume: 8 Issue: 21
+  MSC-COVID-19: Computer Audition for Fighting the SARS-CoV-2 Corona Crisis
+    Introducing the Multitask Speech Corpus for COVID-19
+  Kun Qian; Maximilian Schmitt; Huaiyuan Zheng; Tomoya Koike; Jing Han; Juan Liu;
+    ;;; Zhao Ren; Shuo Liu; Zixing Zhang; Yoshiharu Yamamoto; Björn W. Schuller
+  Journals & Magazines > IEEE Internet of Things Journal > Volume: 8 Issue: 21
 
 # Abstract
 
@@ -29,9 +29,11 @@ Journals & Magazines >IEEE Internet of Things Journal >Volume: 8 Issue: 21
   * The experimental results (UARs) are shown in Table IV and the
   * confusion matrices of the best models are illustrated in Table V. In summary,
   * the best models can reach a UAR of 
+
 |sleep quality  |fatigue  |anxiety|
 |---------------|---------|-------|
 |44.3 %         |44.4 %   |55.3 % |
+
   * Among these results, 
     one best result is achieved by a single model (anxiety) while 
     the other two best results are reached by a late fusion (majority vote)
