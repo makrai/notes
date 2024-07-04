@@ -14,7 +14,7 @@ https://github.com/UBC-NLP/SPARROW
   * 169 datasets covering 13 task types
   * 6 primary categories (eg anti-social language detection, emotion recog)
   * 64 languages from 12 language families representing 16 scripts
-* evaluation 
+* evaluation
   * of various
     * multilingual pretrained language models (eg mT5) and
     * instruction-tuned LLMs (eg BLOOMZ, ChatGPT) on SPARROW
@@ -101,7 +101,7 @@ https://github.com/UBC-NLP/SPARROW
 * SM is still not adequately represented in existing benchmarks, hindering
   * Table 1: benchmarks used for listed evaluations only include a few SM tasks
     focusing on sentiment analysis
-  * Wang+ (2023); Zhang+ (2023b) investigate LLMs on a number of SM tasks 
+  * Wang+ (2023); Zhang+ (2023b) investigate LLMs on a number of SM tasks
     * eg offensive language detection), but only on English
   * Ziems+ (2023) investigate ChatGPT performance on a range of comp soc sci
     * eg sociology, psychology, and linguistics, but only on English
@@ -115,7 +115,7 @@ https://github.com/UBC-NLP/SPARROW
 * benchmarks focusing on SM
   * Barbieri+ (2020) introduce TweetEval benchmark that contains
     seven English datasets of six SM tasks
-  * SentiEval (Zhang+ 2023b) 
+  * SentiEval (Zhang+ 2023b)
     * 26 English datasets of 13 sentiment-related tasks
 * Beyond English
   * sentiment: NusaX (Winata+, 2022), NaijaSenti (Muhammad+, 2022), and
@@ -144,6 +144,8 @@ https://github.com/UBC-NLP/SPARROW
   * we define a global metric called SPARROW score, which represents
     the unweighted average of all dataset-specific metrics
   * an overall indication of performance on SM tasks
+  * may be dominated by the largest task cluster (i.e., sentiment analysis)
+    or languages (e.g., languages from Indo-European language family)
 
 ## 3.1 Task Clusters
 
@@ -210,7 +212,7 @@ https://github.com/UBC-NLP/SPARROW
       with contrastive learning
 * More details about all models are in Appendix B
 
-## 4.2 Zero- and Few-Shot on LLMs
+## 4.2 Zero~ and Few-Shot on LLMs
 
 * We investigate zero-shot performance on a wide range of generative models,
   including pre-trained generative models:
@@ -385,6 +387,41 @@ https://github.com/UBC-NLP/SPARROW
 
 # 6 Public Leaderboard 9
 
+* interactive and offers rich metadata about the various datasets in our bench-
+* users can submit information about their models
+  (eg number of params, time to convergence, pretraining datasets)
+* also a new modular toolkit for fine-tuning or evaluating models on SPARROW
+
 # 7 Conclusion
 
 # 8 Limitations 10
+
+## Benchmark Construction. Our SPARROW
+
+* we plan to extend SPARROW to more types of tasks related to SM, such as
+  * span-based sentiment analysis (Xu+ 2020b),
+    Lu Xu, Lidong Bing, Wei Lu, and Fei Huang. 2020b
+    Aspect sentiment classification with aspect-specific opinion spans. In
+    EMNLP 2020b, pages 3561–3567, Online
+  * affective language generation (Goswamy+ 2020), and
+  * conversational sentiment analysis (Ojamaa et al., 2015)
+* more modalities, such affective image captioning (Mohamed+ 2022) and
+  multi-modal emotion recognition (Firdaus+ 2020)
+
+## Model Selection
+
+* future: model sizes > 7B . However, we hope SPARROW will be used in the
+* commercial instruction tuned models
+  * we only conduct a relatively small case study on GPT-4 and do not evaluate
+  * future: more expensive (eg text-davinci-003 by OpenAI)
+
+## Experiments: prompts
+
+* we customize prompts employed for each task,
+* we do not tailor prompts specifically for each model
+* future work will test diverse prompt variations for more robust results
+* translation
+  * now only machine translated prompts in our analyses
+  * the performance drop may stem from the poor quality of machine translation
+  * future: human translated prompts
+* now only zero-shot learning. The adoption of few-shot incontext learning
