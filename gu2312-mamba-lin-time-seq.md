@@ -70,7 +70,7 @@ arXiv:2312.00752 [cs.LG]
 * This simple change poses a technical challenge for the computation
 * all prior SSMs models must be time~ and input-invariant in order to be
   computationally efficient
-* we: a hardware-aware algorithm that
+* we: a hardware-aware algorithm
   * computes the model recurrently with a scan instead of convolution, but does
     not materialize the expanded state in order to
     avoid IO access between different levels of the GPU memory hierarchy
@@ -122,25 +122,25 @@ arXiv:2312.00752 [cs.LG]
         LLaMa (Touvron+ 2023)
     * 5× generation throughput compared to Transformers of similar size, and
     * Mamba-3B’s quality matches that of Transformers twice its size
-      * 4 points higher avg. on common sense reasoning compared to Pythia-3B
+      * 4 points higher avg on common sense reasoning compared to Pythia-3B
         and even exceeding Pythia-7B
 
 # 2 State Space Models 3
 
 * Structured state space sequence models (S4) are
-  * a recent class of sequence models for deep learning 
+  * a recent class of sequence models for deep learning
   * broadly related to RNNs, and CNNs, and classical state space models
   * inspired by a particular continuous system (1) that
     maps a 1-dimensional function or sequence 𝑥(𝑡) ∈ ℝ ↦ 𝑦(𝑡) ∈ ℝ through an
-    implicit latent state ℎ(𝑡) ∈ ℝ𝑁 
+    implicit latent state ℎ(𝑡) ∈ ℝ𝑁
   * defined with four parameters (∆, A, B, C), which
     define a sequence-to-sequence transformation in two stages
 
-## Discretization. The first stage 
+## Discretization. The first stage
 
 * transforms the “continuous parameters” (∆, A, B) to “discrete parameters” (A,
   B) through fixed formulas A = 𝑓𝐴 (∆, A) and B = 𝑓𝐵 (∆, A, B), where
-  * the pair (𝑓𝐴 , 𝑓𝐵 ) is called a discretization rule
+  * the pair (𝑓𝐴, 𝑓𝐵 ) is called a discretization rule
 * Various rules can be used such as the zero-order hold (ZOH) defined in (4)
     A = exp(∆A)
     B = (∆A)−1 (exp(∆A) − I) ⋅ ∆B     (4)
@@ -185,7 +185,7 @@ arXiv:2312.00752 [cs.LG]
 * The most popular form of structure is diagonal (Gu, Gupta,+ 2022; Gupta, Gu,
   and Berant 2022; Smith, Warrington, and Linderman 2023), which we also use
 * complexity detailed
-  * In this case, the A ∈ ℝ𝑁×𝑁 , B ∈ ℝ𝑁×1 , C ∈ ℝ1×𝑁 matrices can all be
+  * In this case, the A ∈ ℝ𝑁×𝑁, B ∈ ℝ𝑁×1, C ∈ ℝ1×𝑁 matrices can all be
     represented by 𝑁 numbers. To operate over an input sequence 𝑥 of
   * batch size 𝐵 and length 𝐿 with 𝐷 channels, the SSM is applied independently
     to each channel.  Note that in this case,
@@ -211,7 +211,7 @@ arXiv:2312.00752 [cs.LG]
   either the linear-recurrence or global-convolution viewpoints
   (Y Li+ 2023; Orvieto+ 2023; Poli+ 2023)
 
-## SSM Architectures. SSMs are standalone sequence transformations that
+## SSM Architectures. SSMs are standalone sequence transformations
 
 * can be incorporated into end-to-end neural network architectures
 * SSNNs are to SSM layers as CNNs are to linear convolution layers
@@ -220,7 +220,7 @@ arXiv:2312.00752 [cs.LG]
   * Linear attention (Katharopoulos+ 2020) is
     an approximation of self-attention
     involving a recurrence which can be viewed as a degenerate linear SSM
-  * H3 (Dao, Fu, Saab,+ 2023) generalized this recurrence to use S4; it
+  * H3 (Dao, Fu, Saab,+ 2023) generalized this recurrence to use S4
     * an architecture with an SSM sandwiched by two gated connections (Fig 3)
     * H3 also inserts a standard local convolution, which they frame as a
       shift-SSM, before the main SSM layer
@@ -238,7 +238,7 @@ arXiv:2312.00752 [cs.LG]
   * the most closely related methods to our core selective SSM
     * S5 (Smith, Warrington, and Linderman 2023),
     * QRNN (Bradbury+ 2016), and
-    * SRU (Lei+  2017), 
+    * SRU (Lei+  2017),
 
 # 3 Selective State Space Models
 
@@ -280,7 +280,7 @@ arXiv:2312.00752 [cs.LG]
 * In summary, the efficiency vs effectiveness tradeoff of sequence models =
   how well they compress their state
   * efficient models must have a small state, while
-  * effective models must have a state that contains all necessary context 
+  * effective models must have a state that contains all necessary context
   * we: a fundamental principle for building sequence models is selectivity
   * ie context-aware ability to focus on or filter out inputs into a seq state
   * a selection mechanism controls how information propagates or interacts
@@ -290,9 +290,9 @@ arXiv:2312.00752 [cs.LG]
 
 * by letting their parameters that affect interactions along the sequence
   (eg the recurrent dynamics of an RNN or the convolution kernel of a CNN)
-  be input-dependent.
+  be input-dependent
 * This loses the equivalence to convolutions (3) with implications for its
-  efficiency, discussed next.
+  efficiency, discussed next
 
 ## 3.3 Hardware-aware algorithm
 
@@ -300,14 +300,14 @@ arXiv:2312.00752 [cs.LG]
   presenting a technical challenge of how to compute them efficiently
 * We overcome this with a hardware-aware algorithm that
   * exploits the memory hierarchy on modern hardware (Section 3.3). We then
-* Hardware-friendly architectures such as 
-  * convolutions (Krizhevsky, Sutskever, and Hinton 2012) and 
+* Hardware-friendly architectures such as
+  * convolutions (Krizhevsky, Sutskever, and Hinton 2012) and
   * Transformers (Vaswani+ 2017) enjoy widespread application. Here we
-* The selection mechanism is quite natural, and 
+* The selection mechanism is quite natural, and
   * earlier works attempted to incorporate special cases of selection, such as
     letting ∆ vary over time in recurrent SSMs (Gu, Dao,+ 2020). However, as
   * hE computational efficiency ~> S4 and all derivatives used LTI
-    (non-selective) models, most commonly in the form of global convolutions.
+    (non-selective) models, most commonly in the form of global convolutions
 
 ### 3.3.1 Motivation of Prior Models
 
@@ -330,28 +330,28 @@ arXiv:2312.00752 [cs.LG]
 * Selectivity allows filtering out irrelevant noise tokens that may occur
   between inputs of interest. This is exemplified by the Selective Copying
   task, but occurs ubiquitously in common data modalities, particularly for
-  discrete data – for example the presence of language fillers such as “um”.
-* the model can mechanistically filter out any particular input 𝑥𝑡 , for
-  example in the gated RNN case (Theorem 1) when 𝑔𝑡 → 0.
+  discrete data – for example the presence of language fillers such as “um”
+* the model can mechanistically filter out any particular input 𝑥𝑡, for
+  example in the gated RNN case (Theorem 1) when 𝑔𝑡 → 0
 
 #### Filtering Context. It has been empirically observed that
 
 * many sequence models do not improve with longer context (F. Shi+ 2023),
-  despite the principle that more context should lead to strictly better perf.
-  An explanation is that many sequence models cannot effectively ignore
-  irrelevant context when necessary; an intuitive example are global
-  convolutions (and general LTI models)
-* <~> selective models can simply reset their state at any time to remove
+  despite the principle that more context should lead to strictly better perf
+  * An explanation is that many sequence models
+    cannot effectively ignore irrelevant context when necessary;
+    an intuitive example are global convolutions (and general LTI models)
+* vs selective models can simply reset their state at any time to remove
   extraneous history, and thus their performance in principle improves
   monotonicly with context length (eg Section 4.3.2)
 
-#### Boundary Resetting. 
+#### Boundary Resetting
 
 * In settings where multiple independent sequences are stitched together,
   Transformers can keep them separate by instantiating a particular attention
-  mask, while LTI models will bleed information between the sequences.
-  Selective SSMs can also reset their state at boundaries (eg ∆𝑡 → ∞ or Theorem
-  1 when 𝑔𝑡 → 1)
+  mask, while LTI models will bleed information between the sequences
+  * Selective SSMs can also reset their state at boundaries
+    (eg ∆𝑡 → ∞ or Theorem 1 when 𝑔𝑡 → 1)
 * These settings may occur
   * artificially (eg packing documents together to improve hardware utiliz) or
   * naturally (eg episode boundaries in reinforcement learning (Lu+ 2023))
@@ -359,33 +359,33 @@ arXiv:2312.00752 [cs.LG]
 #### effects of each selective parameter
 
 * ∆ controls the balance between how much to focus or ignore the current input
-* generalizes RNN gates (eg 𝑔𝑡 in Theorem 1), mechanically, 
+* generalizes RNN gates (eg 𝑔𝑡 in Theorem 1), mechanically,
   * a large ∆ resets the state ℎ and focuses on the current input 𝑥, while
   * a small ∆ persists the state and ignores the current input
 * SSMs (1)-(2) can be interpreted as a continuous system discretized by a
-  timestep ∆, and in this context the intuition is that 
+  timestep ∆, and in this context the intuition is that
   * large ∆ → ∞ represents the system focusing on the current input for longer
     (thus “selecting” it and forgetting its current state) while a
   * small ∆ → 0 represents a transient input that is ignored
 
 #### `A`
 
-* the A parameter could also be selective, 
+* the A parameter could also be selective,
 * nL it ultimately affects the model only through its interaction with ∆
   via A = exp(∆A) (the discretization (4))
 * Thus selectivity in ∆ is enough to ensure selectivity in (A, B), and is
   the main source of improvement
-* We hypothesize that making A selective in addition to (or instead of) ∆ would
-  have similar performance, and leave it out for simplicity
+* We hypothesize that making `A` selective in addition to (or instead of) ∆
+  would have similar performance, and leave it out for simplicity
 
 #### B and C
 
-* As discussed in Section 3.1, 
+* As discussed in Section 3.1,
 * the most important property of selectivity is filtering out irrelevant info,
-  so that a sequence model’s context can be compressed into an efficient state.
+  so that a sequence model’s context can be compressed into an efficient state
 * In an SSM, modifying B and C to be selective
   allows finer-grained control over whether to let
-  an input 𝑥𝑡 into the state ℎ𝑡 or the state into the output 𝑦𝑡 
+  an input 𝑥𝑡 into the state ℎ𝑡 or the state into the output 𝑦𝑡
 * ~ modulate the recurrent dynamics
   based on content (input) and context (hidden states) respectively
 
@@ -394,6 +394,16 @@ arXiv:2312.00752 [cs.LG]
 ## 4.1 Synthetic Tasks
 
 ## 4.2 Language Modeling
+
+* evaluation on standard autoregressive language modeling 
+* metrics: both pretraining metrics (perplexity) and zero-shot evaluations. We
+* model sizes (depth and width) to mirror GPT3 specifications. We use the 
+* Pile dataset (L. Gao, Biderman,+ 2020), and follow the training recipe
+  described in Brown+ (2020). All training details are in Appendix E.2.
+  * [32] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe,
+      Charles Foster, J Phang, H He, A Thite, N Nabeshima, S Presser, C Leahy
+    The Pile: An 800GB Dataset of Diverse Text for Language Modeling
+    arXiv preprint arXiv:2101.00027 (2020)
 
 ## 4.3 DNA Modeling
 
@@ -433,12 +443,16 @@ arXiv:2312.00752 [cs.LG]
   * A larger model parameter-matched to the baselines further improves dramat
 * Table 5 takes the small Mamba model and investigates combinations of
   different architectures for the outer stages and center stage. It shows that
-  * Mamba is consistently better than S4+MLP in the outer blocks, and 
+  * Mamba is consistently better than S4+MLP in the outer blocks, and
   * Mamba > S4+MLP > MHA+MLP in the center blocks.
 
 ## 4.5 Speed and Memory Benchmarks
 
 ## 4.6 Model Ablations
+
+### 4.6.1 Architecture
+
+### 4.6.2 Selective SSM
 
 # 5 Discussion 17
 
