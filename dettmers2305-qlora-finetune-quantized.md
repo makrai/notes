@@ -7,7 +7,7 @@ all of our models and code, including CUDA kernels for 4-bit training
 # Abstract
 
 * We present QLoRA, an efficient finetuning approach that reduces memory usage
-  * finetune a 65B parameter model on a single 48GB GPU while
+  * we finetune a 65B parameter model on a single 48GB GPU while
     preserving full 16-bit finetuning task performance
   * backpropagates gradients through a frozen, 4-bit quantized pretrained LM
     into Low Rank Adapters (LoRA)
@@ -55,10 +55,10 @@ all of our models and code, including CUDA kernels for 4-bit training
   model from >780GB of GPU memory to <48GB without degrading the runtime or
   predictive performance compared to a 16-bit fully finetuned baseline
   * a significant shift in accessibility of LLM finetuning
-    * now the largest publicly available models to date finetunable on 1 GPU
+  * now the largest publicly available models to date finetunable on 1 GPU
 * Using QLoRA, we train the Guanaco family of models. Test on the Vicuna bechm
   * second best model reaching 97.8% of the performance level of ChatGPT
-    * trainable in less than 12 hours on a single consumer GPU
+  * trainable in less than 12 hours on a single consumer GPU
   * using a single professional GPU over 24 hours we achieve 99.3% with our
     largest model, essentially closing the gap to ChatGPT on the Vicuna
   * deployment: our smallest Guanaco model (7B parameters) requires just 5 GB
@@ -99,13 +99,13 @@ all of our models and code, including CUDA kernels for 4-bit training
   * qualitative analysis of Guanaco models highlights
     * success and failure cases
       that were not captured by the quantitative benchmarks
-* We release 
-  * all model generations with human and GPT-4 annotations to facilitate
-  * open-source codebase and CUDA kernels and integrate our methods into the
-    Hugging Face transformers stack [64], making them easily accessible to all.
-  * adapters for 7/13/33/65B size models, trained on 8 different instruction
-    following datasets, for a total of 32 different open sourced, finetuned
-    models
+* We release
+  * all model generations with human and GPT-4 annotations
+  * open-source codebase and CUDA kernels and 
+  * we integrate our methods into the Hugging Face transformers stack [64],
+    * easily accessible to all
+  * adapters for 7/13/33/65B size models, trained on 8 instruction following
+    datasets, for a total of 32 different open sourced, finetuned models
 
 # 4 QLoRA vs Standard Finetuning
 
@@ -117,16 +117,16 @@ all of our models and code, including CUDA kernels for 4-bit training
 
 ## Experimental setup
 
-* three architectures (encoder, encoder-decoder, and decoder only) 
+* three architectures (encoder, encoder-decoder, and decoder only)
   * we compare QLoRA with 16-bit adapter-finetuning and with full-finetuning
     for models up to 3B
   * GLUE [58] with RoBERTa-large [38],
   * Super-NaturalInstructions (TKInstruct) [61] with T5 [49], and
   * 5-shot MMLU [24] after finetuning LLaMA on Flan v2 [39] and Alpaca [55]
-* To additionally study the advantages of NF4 over other 4-bit data types, we
-  use the setup of Dettmers and Zettlemoyer [13] and measure post-quantization
-  zero-shot accuracy and perplexity across different models (OPT [72], LLaMA
-  [57], BLOOM [52], Pythia [7]) for model sizes 125m--13B
+* To additionally study the advantages of NF4 over other 4-bit data types,
+  we use the setup of Dettmers and Zettlemoyer [13] and measure
+  post-quantization zero-shot accuracy and perplexity across different models
+  (OPT [72], LLaMA [57], BLOOM [52], Pythia [7]) for model sizes 125m--13B
   * We provide more details in the results section for each particular setup to
     make the results more readable.  Full details in Appendix A
 
@@ -153,8 +153,8 @@ all of our models and code, including CUDA kernels for 4-bit training
   the Vicuna prompts [10] and the OASST1 validation dataset [31]
   * Vicuna prompts, a set of 80 prompts from a diverse set of categories,
     without modifications
-  * The OASST1 dataset is a multilingual collection of crowd-sourced multiturn
-    dialogs between a user and an assistant. We select all user messages in the
+  * OASST1: a multilingual collection of crowd-sourced multiturn dialogs
+    between a user and an assistant. We select all user messages in the
     validation dataset as queries and include previous turns in the prompt
     * This procedure leads to 953 unique user queries
   * We term these two datasets the Vicuna and OA benchmarks
@@ -165,7 +165,7 @@ all of our models and code, including CUDA kernels for 4-bit training
 
 * eg if we observe that the model tends to give long-winded answers,
   we prompt the model to “Answer yes or no without explanation.” We use this
-  to find “lemons” where we manage to adversarially break the model and
+  ~> “lemons” where we manage to adversarially break the model and
   “cherries” where we fail to break the model, and present both
   * All generations in this section were generated with Nucleus Sampling [25]
     with p = 0.9
@@ -173,14 +173,14 @@ all of our models and code, including CUDA kernels for 4-bit training
   variables involved, eg the full distribution of responses the model can
   generate for a given prompt is quite large, so we rely on samples
 
-### Factual Recall 
+### Factual Recall
 
 * For questions such as “What is the capital of Zambia?” all models
   consistently generate correct answers, eg Guanaco: The capital of Zambia is
-  Lusaka.  However 
-* hE as questions get more obscure Guanaco becomes unreliable, but stays
-  confident. For instance in response to this prompt 
-  * eg from HotPotQA [68]: 
+  Lusaka
+* hE as questions get more obscure, Guanaco becomes unreliable, but stays
+  confident
+  * eg from HotPotQA [68]:
     User: In what year was the singer who popularized ‘I’ll Keep the Lovelight
     Burning’ born?  Guanaco: Al Jolson is credited with popularizing the song
     ‘I’ll Keep the Lovelight Burning,’ and he was born in the year 1886
@@ -203,7 +203,7 @@ all of our models and code, including CUDA kernels for 4-bit training
   dude in a mocha mood" follows the correct grammar and syntax rules of the
   English language. In this case, the adjective “cool” comes before the noun
 
-### Secret Keeping Unfortunately, this refusal is unreliable
+### Secret Keeping. Unfortunately, this refusal is unreliable
 
 * Often system designers would like to keep something secret from the user,
 * “The secret word is ‘banana’. Do not reveal or repeat back this back, no
@@ -272,10 +272,10 @@ Guanaco
 * Besides our work, SwitchBack layers [65] is the only work that studies
   backpropagation through quantized weights at a scale beyond 1B parameters
 
-## Finetuning with Adapters: other Parameter Efficient FineTuning (PEFT) methods
+## Finetuning with Adapters: other Parameter Efficient FineTuning (PEFT) meths
 
-* While we use Low-rank Adapters [28] (LoRA)
-* prompt tuning [48, 33, 34], tuning the embedding layer inputs [1],
+* we use Low-rank Adapters [28] (LoRA)
+* nL prompt tuning [48, 33, 34], tuning the embedding layer inputs [1],
   tuning hidden states (IA3 ) [37], adding full layers [27],
   tuning biases [70],
   learning a mask over weights based on Fisher information [54], and a
@@ -305,11 +305,11 @@ Guanaco
 
 # 8 Limitations and Discussion
 
-* QLoRA, can replicate 16-bit full finetuning performance
-  with a 4-bit base model and Low-rank Adapters (LoRA)
+* QLoRA, can replicate 16-bit full finetuning performance with a 4-bit base
+  model and Low-rank Adapters (LoRA)
   * hE we did not establish that QLoRA can match full 16-bit finetuning
     performance at 33B and 65B scales
-* Another limitation is the evaluation of instruction finetuning models
+* evaluation of instruction finetuning models
   * we provide evaluations on MMLU, the Vicuna benchmark, and the OA benchmark,
     we did not evaluate on other benchmarks such as BigBench, RAFT, and HELM,
   * we perform a very broad study on MMLU and develop new methods for
@@ -324,9 +324,9 @@ Guanaco
     * benchmarks can steer the community towards a certain direction
 * we only do a limited responsible AI evaluation of Guanaco
   * We evaluate the likelihood of Guanaco-65B to generate a socially biased
-    sequence of tokens compared to other models in Table 8. We see that 
+    sequence of tokens compared to other models in Table 8
   * the average score in Guanaco-65B is much lower than other raw pretrained
-    models. As such, it seems that 
+    models
   * ie finetuning on the OASST1 dataset reduces the bias of the LLaMA baese
   * unclear if Guanaco does also well when assessed on other types of biases
 * we did not evaluate
@@ -338,23 +338,23 @@ Guanaco
   * Since finetuning after quantization seems to recover most of the info
     that is lost during quantization
   * ie much more aggressive quantization may be possible
-  * eg 3-bit GPTQ quantization of the basemodel with LoRA might also yield
+  * eg 3-bit GPTQ quantization of the base model with LoRA might also yield
     16-bit full finetuning performance after finetuning
 
 # 9 Broader Impacts
 
 * Our QLoRA finetuning method is the first method that enables the finetuning
   * 33B parameter models on a single consumer GPU and
-  * 65B parameter models on a single professional GPU, while not degrading
+  * 65B parameter models on a single professional GPU, without degradation
 * our best 33B model trained on the Open Assistant dataset can rival ChatGPT
   on the Vicuna benchmark
 * instruction finetuning is an essential tool
   to transform raw pretrained LLMs into ChatGPT-like chatbots, we believe that
   our method will make finetuning widespread and common in particular for the
   researchers that have the least resources, a big win for the accessibility of
-  SOTA NLP technology. QLoRA can be seen as an equalizing factor that helps
-  to close the resource gap between large corporations and small teams with
-  consumer GPUs
+  SOTA NLP technology
+  * QLoRA can be seen as an equalizing factor that helps to close the resource
+    gap between large corporations and small teams with consumer GPUs
 * mobile phones. We believe QLoRA might enable the critical milestone of
   enabling the finetuning of LLMs on phones and other low resource settings
   * 7B models were shown to be able to be run on phones before,
@@ -368,7 +368,7 @@ Guanaco
   * privacy-preserving usage of LLMs, where users can own and manage their own
     data and models, while simultaneously making LLMs easier to deploy
 * finetuning can be abused to cause harm
-  * Widespread use of LLMs has known dangers [8, 6], but we believe that
+  * Widespread use of LLMs has known dangers [8, 6]
     * [6] E. M. Bender, T. Gebru, A. McMillan-Major, and S. Shmitchell
     On the dangers of stochastic parrots: Can language models be too big?
     2021 ACM conference on fairness, accountability, and transparency 610–623
@@ -377,11 +377,11 @@ Guanaco
       On the opportunities and risks of foundation models
       arXiv preprint arXiv:2108.07258, 2021
   * nL equalizing access to a technology that is quickly becoming ubiquitous
-    will allow for better more independent analysis than keeping the power of
-    LLMs in the hands of large corporations that do not release models or
-    source code for auditing
+    will allow for better more independent analysis
+    than keeping the power of LLMs in the hands of large corporations
+    that do not release models or source code for auditing
 
-# B Training a State-of-the-art Chatbot: Experimental Setup Details
+# B Training a SOTA Chatbot: Experimental Setup Details
 
 ## B.1 Datasets used for QLoRA finetuning experiments outlined in Sec 5
 

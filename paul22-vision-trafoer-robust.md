@@ -28,7 +28,7 @@ Code for reproducing our experiments is available at https://git.io/J3VO0
 # 1 Intro
 
 * recent works on evaluating the robustness of ViTs (Bhojanapalli+ 2021; Shao+
-  2021; Mahmood, Mahmood, and Van Dijk 2021) 
+  2021; Mahmood, Mahmood, and Van Dijk 2021)
   * relatively limited scope. We build on top of these and provide further and
 * we
   * use common robustness benchmark datasets
@@ -37,7 +37,7 @@ Code for reproducing our experiments is available at https://git.io/J3VO0
 * contributions:
   * We use 6 diverse ImageNet datasets concerning
     different types of robustness evaluation and conclude that
-    ViTs achieve significantly better performance than BiTs.
+    ViTs achieve significantly better performance than BiTs
   * We design 6 experiments, including robustness to masking, energy/loss
     landscape analysis, and sensitivity to highfrequency artifacts
   * novel insights for robustness attribution of ViT.  Moreover, our robustness
@@ -59,10 +59,9 @@ Code for reproducing our experiments is available at https://git.io/J3VO0
   needs to be pre-trained on a relatively larger dataset (such as ImageNet-21k
   (Deng+ 2009)) with strong regularization for achieving reasonable downstream
   performance. Strong regularization is particularly needed in the absence of a
-  larger dataset during pre-training (Steiner+ 2021).
-
+  larger dataset during pre-training (Steiner+ 2021)
 * variants of Transformers have been proposed to show that it is possible to
-  achieve comparable performance on ImageNet-1k without using additional data.
+  achieve comparable performance on ImageNet-1k without using additional data
   * DeIT (Touvron+ 2020) introduces a novel distillation strategy (Hinton,
     Vinyals, and Dean 2015) to learn a student Transformer-based network from a
     well-performing teacher network based on RegNets (Radosavovic+ 2020).  With
@@ -75,10 +74,9 @@ Code for reproducing our experiments is available at https://git.io/J3VO0
   * LV-ViT (Jiang+ 2021) introduces a new training objective namely
     token labeling and also tunes the structure of the Transformers. It
     * 85.4% top-1 accuracy on ImageNet-1k
-  * CLIP (Radford+ 2021) and Swin Transformers (Liu+ 2021) are also two recent
+  * CLIP (Radford+ 2021) and Swin Transformers (Liu+ 2021) are recent
     * make use of Transformers for image recognition problems
-  * we only focus on ViT (Dosovitskiy+ 2021).
-
+  * we only focus on ViT (Dosovitskiy+ 2021)
 * Concurrent works that study the robustness of ViTs from different
   * Shao+ (2021) showed that ViTs has better robustness than CNNs against
     adversarial input perturbations. The major performance gain can be
@@ -96,6 +94,6 @@ Code for reproducing our experiments is available at https://git.io/J3VO0
   * diff Mahmood+ vs our insights
     * we benchmark the robustness of ViTs on a wide spectrum of ImageNet
       datasets (see Table 2), which are the most comprehensive robustness
-      performance benchmarks to date; 
+      performance benchmarks to date;
     * we design six new experiments to verify the superior robustness of ViTs
-      over BiT and ResNet models.
+      over BiT and ResNet models

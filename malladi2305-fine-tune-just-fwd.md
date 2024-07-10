@@ -42,9 +42,9 @@ arXiv:2305.17333
     * needs to cache activations during the forward pass,
       gradients during the backward pass, and,
       in the case of Adam [50], also store gradient history (see Section 3.4)
-    * while it is possible to run inference with a 30-billion (30B) parameter
-      LM on a single Nvidia A100 GPU (with 80GB memory),
-      backpropagation with Adam is feasible only for a 2.7B LM
+    * it is possible to run inference with a 30B parameter LM on a single
+      Nvidia A100 GPU (with 80GB memory),
+      hE backpropagation with Adam is feasible only for a 2.7B LM
 * Parameter-efficient fine-tuning methods (PEFT [44, 55, 52])
   * references
     * [44] Edward J Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu,
@@ -57,16 +57,16 @@ arXiv:2305.17333
     * [52] Brian Lester, Rami Al-Rfou, and Noah Constant
       The power of scale for parameter-efficient prompt tuning
       EMNLP 2021
-  * update just a fraction of the network parameters, but
-  * still need to cache many activations, because the tuned parameters are
-    scattered throughout the model
+  * update just a fraction of the network parameters
+  * hE still need to cache many activations,
+    because the tuned parameters are scattered throughout the model
   * In our tests, fine-tuning an OPT-13B model with full parameter or PEFT
     requires 12× and 6× more memory than inference respectively
 * In-context learning (ICL [12]) has allowed
-  * solving many tasks with a single inference pass, during which the model
-    processes labeled examples (demonstrations) in its context and then outputs
-    a prediction on a test example. While this allows for quick adaptation of
-    the model to specific use cases, current models allow a
+  * solving many tasks with a single inference pass, during which 
+    the model processes labeled examples (demonstrations) in its context and
+    then outputs a prediction on a test example. While this 
+    * allows for quick adaptation of the model to specific use cases, current
     * hE limited context size (and thus, limited demonstrations) and the
       performance is sensitive to the formatting and choice of demonstrations
       [58, 64]
@@ -76,9 +76,9 @@ arXiv:2305.17333
 * non-differentiable criteria
   * eg human preference scores or set safety standards [84, 70]
   * Another reason to consider alternatives to standard backpropagation
-  * backpropagation cannot incorporate non-differentiable criteria, which have
+  * backpropagation cannot incorporate non-differentiable criteria
   * Typically with reinforcement learning from human feedback (RLHF [19]),
-    * expensive
+  * expensive
 * A classical zeroth-order optimization method (ZO-SGD [83])
   * uses only differences of loss values to estimate the gradients
   * in princip, the method can update neural networks with just forward passes
@@ -111,21 +111,21 @@ arXiv:2305.17333
   3. compatibility with full-parameter tuning and PEFT
     (eg LoRA [44] and prefix-tuning [55]) in Section 3
   4. MeZO can optimize non-differentiable objectives such as accuracy or F1
-     * while still requiring only the same memory as inference (Sec 3.3)
+    * while still requiring only the same memory as inference (Sec 3.3)
   5. Our theory suggests that adequate pre-training ensures the per-step
      optimization rate (Theorem 1) and global convergence rate (Lemma 3) of
      MeZO depend on a certain condition number of the landscape (ie, the local
      effective rank, see Assumption 1) instead of numbers of parameters
-     * in sharp contrast to existing ZO lower bounds [67, 31]
-       * existing lower bounds suggest that the
-         converg rate can slow proport to the number of parameters (Section 4)
+    * in sharp contrast to existing ZO lower bounds [67, 31]
+      * existing lower bounds suggest that the
+        converg rate can slow proport to the number of parameters (Section 4)
 
 # 4 Theory
 
 * when the loss landscape exhibits favorable conditions (Assumption 1), we can
-  derive a convergence rate independent of the number of parameters. We show
+  derive a convergence rate independent of the number of parameters
   * the loss decreases per step at a rate independent of the parameter
-    dimension d (Theorem 1), and that,
+    dimension d (Theorem 1)
   * under stronger conditions, the algorithm converges in time independent of d
     (Lemma 3)
   * Together, these results imply that MeZO is not catastrophically slower than
@@ -133,8 +133,9 @@ arXiv:2305.17333
     * Section 3 uses the standard choice of Adam for FT
     * we provide SGD experiments in Appendix E.1
 * For ease of illustration, we assume that z is sampled from a sphere with
-  radius √d, and in Appendix F.2 we derive the rate for a general Gaussian z,
-  which was used in the experiments
+  radius √d
+  * in Appendix F.2 we derive the rate for a general Gaussian z,
+    which was used in the experiments
 * We follow classical analyses of SGD and
   * replace the mini-batch gradient estimate with SPSA.  Consider the minibatch
     SGD update θt+1 ← θt − η∇L(θ; Bt) where Bt is a minibatch drawn uniformly

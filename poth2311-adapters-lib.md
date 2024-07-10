@@ -13,7 +13,7 @@ https://adapterhub.ml/adapters
 * 10 diverse modular methods such as prompt tuning, prefix tuning, Compacter,
   LoRA, and (IA)³ into 20 SOTA models for NLP, vision, and multi-modal applics
 * It supports a range of operations on these modules
-  eg grouping, stacking, fusing, splitting, and parallelizing, among others,
+  eg grouping, stacking, fusing, splitting, and parallelizing, etc
   * enable a variety of modeling approaches and research directions
 
 # Abstract
@@ -25,7 +25,7 @@ https://adapterhub.ml/adapters
 * allows researchers and practitioners to
   leverage adapter modularity through composition blocks
   enabling the design of complex adapter setups
-* evaluation its performance against full fine-tuning on various NLP tasks
+* evaluation of its performance against full fine-tuning on various NLP tasks
 * addressing the challenges of conventional fine-tuning paradigms
 * more efficient and modular transfer learning
 
@@ -41,24 +41,24 @@ https://adapterhub.ml/adapters
     catastrophic forgetting (French, 1999), and poor generalization
 * Two closely related lines of research aimed at addressing these
   * parameter-efficient fine-tuning (Lialin+ 2023; Sabry and Belz, 2023)
-    focuses on the aspect of computational efficiency and feasibility by only
-    fine-tuning a small number of parameters for downstream tasks
+    focuses on the aspect of computational efficiency and feasibility
+    by only fine-tuning a small number of parameters for downstream tasks
   * modular transfer learning (Pfeiffer+ 2023) focuses on the aspect of
     knowledge transfer by designing
-    * self-contained network modules which can be aggregated for better
-      multi-task performance and generalization
+    * self-contained network modules which can be aggregated
+      for better multi-task performance and generalization
   * adapters
     * small components within a language model for fine-tuning on labeled data,
     * both parameter-efficient and modular in nature
 * The initial release of AdapterHub (Pfeiffer+ 2020a) marks the first attempt
-  * make adapters accessible to researchers and practitioners in an easy-to-use
+  * make adapters accessible to researchers and practitioners, easy to use
   * integrate, train and use adapters for SOTA Transformer models
     with minimal changes
   * an open platform to share, explore and consume pre-trained adapter modules
-  * focused on bottleneck-style adapters (Houlsby+ 2019) initially, the field
+  * bottleneck-style adapters (Houlsby+ 2019), the field initially focused on 
   * many other adapter methods
     (Li and Liang, 2021; Mahabadi+ 2021; Hu+ 2022; He+ 2022; Liu+ 2022)
-* new tools and libraries for adapter methods have been developed
+* new tools and libraries for adapter methods
   * OpenDelta (Hu+ 2023a), HuggingFace’s PEFT (Mangrulkar+ 2022) and
     LLM-Adapters (Hu+ 2023b) are recent examples of libraries which 
     * unify adapter methods in a single code base + new model architectures
@@ -74,14 +74,14 @@ https://adapterhub.ml/adapters
     composition blocks that allow flexibly defining complex adapter setups;
   * we integrate all methods into 20 Transformer-based models spanning NLP,
     vision, and multi-modal applications;
-  * we evaluate the performance of our adapter implementations against full
-    fine-tuning on a diverse set of tasks
+  * we evaluate the performance of our adapter implementations
+    against full fine-tuning on a diverse set of tasks
 
 # 2 Background
 
 * adapter: a broad family of transfer learning methods
   * two defining properties: parameter efficiency and modularity
-* For a detailed overview of different adapter architects, Pfeiffer+ (2023)
+* For a detailed overview of different adapter architectures, Pfeiffer+ (2023)
 
 ## 2.1 Parameter Efficiency
 
@@ -89,8 +89,8 @@ https://adapterhub.ml/adapters
   * pre-trained parameters Θ (frozen) and
   * Φ (can either be newly introduced or Φ ⊂ Θ)
 * fine-tuning, adapter methods optimize only Φ according to a loss function L
-* Different adapter methods insert parameters Φ at different locations of a
-  pre-trained large model
+* Different adapter methods insert parameters Φ at different locations
+  of a pre-trained large model
 * Bottleneck adapters (Rebuffi+ 2017; Houlsby+ 2019)
   * one of the early methods
   * bottleneck feed-forward layers in each layer of a Transformer model
@@ -98,7 +98,7 @@ https://adapterhub.ml/adapters
   * a Transformer model’s self-attentions (Li and Liang, 2021)
   * bias terms (Ben Zaken+ 2022)
   * input prompts (Lester+ 2021) or
-  * embeddings (Pfeiffer+ 2021b). Complementary
+  * embeddings (Pfeiffer+ 2021b)
 * optimizing the efficiency
   * parameter efficiency (Mahabadi+ 2021; Liu+ 2022) and
   * runtime efficiency (Hu+ 2022; Lei+ 2023)
@@ -118,17 +118,16 @@ https://adapterhub.ml/adapters
   * output aggregation
     * weighted (Wang+ 2021) and
     * attention-based (Pfeiffer+ 2021a)
-* training: the modularity of adapters allows using pre-trained adapter
-  modules as initialization for further fine-tuning (Poth+ 2021; Vu+ 2022)
+* training: the modularity of adapters allows using pre-trained adapters
+  as initialization for further fine-tuning (Poth+ 2021; Vu+ 2022)
 
 # 3 The Adapters Library 2
 
 * builds on many design decisions established in the initial AdapterHub release
   (Pfeiffer+ 2020a)
 * extensions with respect to AdapterHub
-  * ‘horizontally’
-    (eg many more pretrained neural architectures, adapter architectures)
-  * ‘vertically’ (eg new composition and processing capabilities)
+  * horizontally, eg many more pretrained neural architectures, adapter archits
+  * vertically, eg new composition and processing capabilities
 * Table 1 gives an overview of the novelties
 * The core features adopted from the initial release, facilitating its ease of
   use and wider adoption by researchers and practitioners, include:
@@ -149,7 +148,7 @@ https://adapterhub.ml/adapters
 
 ### AdapterModel: providing our own, specialized model classes
 
-* ,,, automatic conversion from HuggingFace’s model classes ~~ typically paired
+*,,, automatic conversion from HuggingFace’s model classes ~~ typically paired
   with a single, fixed prediction head ~~ to our newly introduced classes
   featuring flexible prediction heads
 
@@ -159,24 +158,24 @@ https://adapterhub.ml/adapters
 
 ### 3.3.1 Single Methods
 
-* introduce parameters in new feed-forward modules such as bottleneck
-  adapters (Houlsby+ 2019), 
-* introduce prompts at different locations such as Parallel prefix tuning (Li
-  and Liang, 2021), 
+* introduce parameters in new feed-forward modules 
+  eg bottleneck adapters (Houlsby+ 2019), 
+* introduce prompts at different locations such as Parallel prefix tuning
+  (Li and Liang, 2021)
 * reparameterize existing modules such as LoRA (Hu+ 2022) or 
-* re-scale their output representations such as (IA)³ (Liu+ 2022). Detailed
-* Appendix A, see also Table 2 again.
+* re-scale their output representations such as (IA)³ (Liu+ 2022)
+* Details: Appendix A, see also Table 2 again
 
 ### 3.3.2 Complex Methods
 
-* combining fine-tuning methods and configurations for joint training has
-  proven to be beneficial (He+ 2022; Mao+ 2022). To make this process easier,
-* Adapters provides the possibility to group multiple configuration
-  instances using the ConfigUnion class. This flexible mechanism allows easy
-  * integration of multiple complex methods proposed in the literature (as the
-    two examples outlined below), as well as the 
-  * construction of other, new complex configurations currently not available
-    nor benchmarked in the literature (Zhou+ 2023).
+* combining fine-tuning methods and configurations for joint training is benef
+  (He+ 2022; Mao+ 2022)
+* Adapters provides the possibility to
+  group multiple configuration instances using the ConfigUnion class
+  * integration of multiple complex methods proposed in the literature
+    (as the two examples outlined below), as well as the 
+  * construction of other, new complex configurations
+    currently not available nor benchmarked in the literature (Zhou+ 2023)
     * Han Zhou, Xingchen Wan, Ivan Vulić, and Anna Korhonen. 2023. 
       AutoPEFT: Automatic configuration search for parameter-efficient
       fine-tuning. 
@@ -195,12 +194,12 @@ https://adapterhub.ml/adapters
 
 #### UniPELT (Mao+ 2022) combines LoRA, Prefix Tuning, and bottleneck adapters
 
-* additionally introduces a gating mechanism that controls the activation of
-  the different adapter modules. Gm ← σ(WGm · x).
+* additionally introduces a gating mechanism that
+  controls the activation of the different adapter modules. Gm ← σ(WGm · x).
 
 ## 3.4 Adapter Composition
 
-* the modularity and composability aspects of adapters: increasing research
+* the modularity and composability aspects of adapters, increasing research
 * hE overlooked by open-source libraries (Mangrulkar+ 2022; Hu+ 2023a)
 * Adapters makes adapter compositions central and accessible 
   by enabling the definition of complex, composed adapter setups
@@ -277,14 +276,16 @@ Split("g", "h", splits=[64, 64])
   * text decoder models such as GPT-2 (Radford+ 2019),
   * sequenceto-sequence models such as BART (Lewis+ 2020) and T5 (Raffel+ 2020)
   * vision encoder models such as ViT (Dosovitskiy+ 2021), as well as
-  * multimodal models such as CLIP (Radford+ 2021).3
-* While adapter-related implementations mostly can be shared across all
-  supported models, correctly integrating them into each model implementation
-  requires manual effort
+  * multimodal models such as CLIP (Radford+ 2021)
+* adapter-related implementations mostly can be shared across all supported
+  models
+  * hE correctly integrating them into each model implementation requires
+    manual effort
 * shared interfaces and step-by-step documentation
-  * While it is difficult to standardize this process due to differences
-    between model architectures, we provide clear guidelines for integrating
-    new models in the form of shared interfaces and step-by-step documentation
+  * it is difficult to standardize this process
+    due to differences between model architectures, 
+    nL we provide clear guidelines for integrating new models
+    in the form of shared interfaces and step-by-step documentation
 
 ## 3.6 AdapterHub Ecosystem
 
@@ -313,13 +314,13 @@ Split("g", "h", splits=[64, 64])
 
 ## Setup
 
-* grid search over a range of 
+* tab A: grid search over
   * common training hyper-parameters, varying
-    * learning rates between {10−5 , 10−4 , 5 · 10−4 , 10−4 , 10−3 } and the
+    * learning rates between {10−5, 10−4, 5 · 10−4, 10−4, 10−3} and the
     * number of epochs between {5, 10, 20, 30}
-  * adapter-specific hyper-parameters.  These, along with the minimum and
-    maximum trainable parameters added across the configurations, are
-    detailed in Table A
+  * adapter-specific hyper-parameters
+  * the minimum and maximum trainable parameters added across the
+    configurations also in Table A
 * The highest attained performance (and the standard deviation of results
   across the grid) for the two chosen base models are outlined in Tabs 3 and 4,
 
@@ -331,7 +332,7 @@ Split("g", "h", splits=[64, 64])
   eg Bottleneck adapters, LoRA, and Prefix Tuning predictably have 
   the highest topline performance, often surpassing full finetuning
 * nL, extremely parameter-frugal [economical] methods 
-  like (IA)3 , which add < 0.005% of the parameters of the base model, 
+  like (IA)3, which add < 0.005% of the parameters of the base model, 
   also perform commendably and only fall short by a small fraction
 * the Compacter is the least volatile [romlandó] among the single methods,
   obtaining the lowest standard deviation between runs on the majority of tasks
