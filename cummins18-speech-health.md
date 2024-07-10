@@ -120,7 +120,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
       baseline system
   * an in-depth review of other approaches: [59]
   * no works had revisited this corpus and attempted to improve on the
-    challenge wining score using deep learning
+    challenge winning score using deep learning
 
 ## 4.4. Intoxication (2011)
 
