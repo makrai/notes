@@ -148,9 +148,10 @@ https://adapterhub.ml/adapters
 
 ### AdapterModel: providing our own, specialized model classes
 
-*,,, automatic conversion from HuggingFace’s model classes ~~ typically paired
-  with a single, fixed prediction head ~~ to our newly introduced classes
-  featuring flexible prediction heads
+* automatic conversion 
+  * from HuggingFace’s model classes
+    * typically paired with a single, fixed prediction head
+  * to our newly introduced classes featuring flexible prediction heads
 
 ## 3.2 Unified Adapter Interface
 
@@ -164,6 +165,11 @@ https://adapterhub.ml/adapters
   (Li and Liang, 2021)
 * reparameterize existing modules such as LoRA (Hu+ 2022) or 
 * re-scale their output representations such as (IA)³ (Liu+ 2022)
+  Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang,
+    Mohit Bansal, and Colin A Raffel. 2022. 
+  Few-shot parameter-efficient fine-tuning is
+    better and cheaper than in-context learning
+  NeurIPS 2022, Nov 28 Dec 9, 2022, virtual and New Orleans, pages 1950–1965
 * Details: Appendix A, see also Table 2 again
 
 ### 3.3.2 Complex Methods
