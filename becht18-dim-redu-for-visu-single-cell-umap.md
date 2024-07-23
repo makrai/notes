@@ -12,15 +12,15 @@ Nature Biotechnology volume 37, pages 38–44(2019)Cite this article
   * ∼20 for flow cytometry, ∼40 for mass cytometry and
     >20,000 in single-cell RNA sequencing (scRNAseq)
 * Dimensionality reduction techniques have been pivotal to visualize
-* Nonlinear dimensionality reduction techniques
-  * avoid overcrowding of the representation, wherein distinct clusters are
+* Non-linear dimensionality reduction techniques
+  * avoid over-crowding of the representation, wherein distinct clusters are
     represented on an overlapping area
   * include Isomap [2], Diffusion Map [3] and t-SNE
 * t-SNE is currently the most commonly used technique in single-cell analysis
   * efficiently reveal local data structure and is widely used to identify
     distinct cell populations in cytometry and transcriptomic data
   * limitations such as
-    * loss of large-scale information (the intercluster relationships),
+    * loss of large-scale information (the inter-cluster relationships),
     * slow computation time and
     * inability to meaningfully represent very large datasets
 * uniform manifold approximation and projection (UMAP)

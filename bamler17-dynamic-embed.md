@@ -4,8 +4,7 @@ Robert Bamler, Stephan Mandt
 
 # Abstract
 
-* We present a
-  * probabilistic language model for time-stamped text data
+* We: a probabilistic language model for time-stamped text data
   * tracks the semantic evolution of individual words over time
   * represents words and contexts by latent trajectories in an embedding space
     * At each moment in time, the embedding vectors are inferred from a
@@ -122,11 +121,11 @@ Robert Bamler, Stephan Mandt
 
 * Figure 4 visualizes the smoothness of the trajectories
  * histograms of the Euclidean distances ||u it − u i,t+δ ||
- * In our model, a directed motion. In contrast, both
- * baseline models show fluctuations of n ± ij,t
+ * In our model, a directed motion
+ * hE both baseline models show fluctuations of n ± ij,t
    * Initialization schemes alone have a minor effect on smoothness
 * skip-gram smoothing (DSG-S) may diffuse information into the past
-  (see ”presidential” to ”clinton-trump” in Fig. 5)
+  (see ”presidential” to ”clinton-trump” in Fig 5)
 
 ## Quantitative [predictive]
 

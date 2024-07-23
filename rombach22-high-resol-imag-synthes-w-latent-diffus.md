@@ -8,11 +8,11 @@ https://github.com/CompVis/latent-diffusion
 # Abstract
 
 * diffusion models (DMs)
-  * decomposing the image formation process into a sequential application of
-    denoising autoencoders
+  * decomposing the image formation process into
+    a sequential application of denoising autoencoders
   * SOTA synthesis results on image data and beyond
-  * formulation allows for a guiding mechanism to control the image generation
-    process without retraining
+  * formulation allows for a guiding mechanism to
+    control the image generation process without retraining
   * hE typically operate directly in pixel space
     => optimization consumes hundreds of GPU days and
     inference is expensive due to sequential evaluations
@@ -20,8 +20,8 @@ https://github.com/CompVis/latent-diffusion
 * we apply DMs in the latent space of powerful pretrained autoencoders
   * we reach a near-optimal point between complexity reduction and
     detail preservation, greatly boosting visual fidelity
-  * with cross-attention layers into the model architecture
-    => diffusion models turn into powerful and flexible generators for general
+  * with cross-attention layers in the model architecture,
+    diffusion models turn into powerful and flexible generators for general
     conditioning inputs such as text or bounding boxes and high-resolution
     synthesis becomes possible in a convolutional manner
   * Our latent diffusion models (LDMs) achieve
