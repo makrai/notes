@@ -10,7 +10,7 @@ code and adapters: AdapterHub.ml
   * main goal is enabling and bootstrapping NLP applications in low-resource ls
     through zero-shot or few-shot cross-lingual transfer
   * hE limited model capacity => transfer performance is the weakest exactly on
-    such low-resource languages and languages unseen during pre-training
+    low-resource languages and languages unseen during pre-training
 * we propose
   * MAD-X, an adapter-based framework that enables high portability and
     parameter-efficient transfer to arbitrary tasks and languages

@@ -11,7 +11,7 @@ EMNLP 2021 arXiv:2104.08247 [cs.CL]
   * similar sequential fine-tuning gains can be achieved in adapter settings,
   * efficiently identify beneficial tasks for intermediate transfer learning.
     * we consolidate previously proposed methods
-* experiments: 42 intermediate and 11 target 
+* experiments: 42 intermediate and 11 target
   * English classification, multiple choice, question answering, and seq tag
   * efficient embedding based methods that rely solely on the respective
     datasets outperform computational expensive few-shot fine-tuning

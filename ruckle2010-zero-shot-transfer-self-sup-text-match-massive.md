@@ -7,16 +7,16 @@ EMNLP-2020 arXiv:2010.00980 [cs.CL]
 
 * We study the zero-shot transfer capabilities of text matching models on a
   massive scale, by
-  self-supervised training on 140 source domains from community question
-  answering forums in English
-* We investigate the model performances on nine benchmarks of answer selection
-  and question similarity tasks, and show that
-  all 140 models transfer surprisingly well, where
-  the large majority of models substantially outperforms common IR baselines.
+  self-supervised training on 140 source domains from community QA forums
+  in English
+* We investigate the model performances
+  on nine benchmarks of answer selection and question similarity tasks, and
+  * all 140 models transfer surprisingly well, where
+  * the large majority of models substantially outperforms common IR baselines
   * considering a broad selection of source domains is crucial for obtaining
-    the best zero-shot transfer performances, which
-    * contrasts the standard procedure that merely relies on the largest and
-      most similar domains. In
+    the best zero-shot transfer performances
+  * contrasts the standard procedure that merely relies on the largest and most
+    similar domains
 * we extensively study how to best combine multiple source domains
   * We propose to incorporate self-supervised with supervised multi-task
     learning on all available source domains

@@ -7,7 +7,7 @@ https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/reports/default/158
 * Both PALs (Stickland and Murray [15]) and adapters ([3]) introduce
   task-specific modules in the BERT architecture for multi-task training
   * Adapters [3] add new bottleneck modules within the transformer layers of
-    the pre-trained network which are fine-tuned for the given task. Similarly
+    the pre-trained network which are fine-tuned for the given task
   * [15] add Projected Attention Layers within the transformer layer with
     shared weights across the different transformer layers of the BERT model
   * We describe these models in more details in the next section

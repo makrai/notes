@@ -4,9 +4,9 @@ arXiv:2012.15613 [cs.CL]
 
 # Abstract
 
-* systematic empirical comparison of pretrained
-  multilingual language models versus their monolingual counterparts
-  with regard to their monolingual task performance. We study a set of
+* systematic empirical comparison of pretrained multilingual language models
+  versus their monolingual counterparts
+  with regard to their monolingual task performance
 * nine typologically diverse languages with available pretrained monolingual
 * five diverse monolingual downstream tasks
 * We
@@ -14,25 +14,24 @@ arXiv:2012.15613 [cs.CL]
     monolingual representation of that language exists, and subsequently
   * investigate the reason for a performance difference
 * To disentangle the impacting variables,
-  we train new monolingual models on the same data, but with diff  tokenizers,
+  we train new monolingual models on the same data, but with diff tokenizers,
   both the monolingual and the multilingual version
 * We find that while the
   * pretraining data size is an important factor, the
-  * designated tokenizer of the monolingual model plays an equally important rol
-  * languages which are adequately represented in the multilingual model's
-    vocabulary exhibit negligible performance decreases over their monolingual
-    counterparts. We further find that
-  * replacing the original multilingual tokenizer with the specialized
-    monolingual tokenizer improves the downstream performance of the
-    multilingual model for almost every task and language
+  * designated tokenizer of the monoling model plays an equally important role
+  * languages which are adequately represented in the multilingual LMs vocab
+    exhibit negligible performance decreases over their monoling counterparts
+  * replacing the orig multiling tokenizer with the spec monoling tokenizer 
+    improves the downstream performance of the multiling model
+    for almost every task and language
 
 # 1 Introduction
 
 * large Transformer-based language models (LMs; Vaswani+ 2017) pretrained for
   * English (eg BERT, RoBERTa, T5; Devlin+ 2019; Liu+ 2019; Raffel+ 2020)
-  * monolingual language models have been introduced for other languages
-    (Virtanen+ 2019; Antoun+ 2020; Martin+ 2020, inter alia), offering
-    previously unmatched performance on virtually all NLP tasks.  ∗
+  * monolingual language models for other languages
+    (Virtanen+ 2019; Antoun+ 2020; Martin+ 2020)
+    * previously unmatched performance on virtually all NLP tasks
 * massively multilingual pretrained models with the same architectures and
   training procedures, but covering more than 100 languages in a single model,
   * multilingual BERT (mBERT), XLM-R, multilingual T5
@@ -55,7 +54,7 @@ arXiv:2012.15613 [cs.CL]
     languages and language properties, tasks, pretrained models and their
     pretraining data, domain, and size
 * an independent and controlled empirical comparison on a diverse set of
-  languages and tasks is necessary .  While recent work
+  languages and tasks is necessary
 * prior work typically lacks either ~ diversity
   language (Rönnqvist+ 2019; Zhang+ 2020) or
   task (Wu and Dredze, 2020; Vulić+ 2020),
@@ -190,17 +189,17 @@ criteria:
 
 ### Fine-Tuning Setup. We use the
 
-* standard fine-tuning setup of Devlin+ (2019) for all tasks besides UDP: for
-  that, we use a transformer-based variant (Glavaš and Vulić, 2020) of the
-  standard deep biaffine attention dependency parser (Dozat and Manning, 2017)
+* standard fine-tuning setup of Devlin+ (2019) for all tasks besides UDP: 
+  * for UDP, we use a transformer-based variant (Glavaš and Vulić, 2020) of the
+    standard deep biaffine attention dependency parser (Dozat & Manning 2017)
 * Besides full model fine-tuning, we also evaluate all models within a more
   efficient setup based on adapters
-  (Rebuffi+ 2017; Houlsby+ 2019; Stickland and Murray, 2019; Pfeiffer+
-  2020a,b,c,d; Lauscher+ 2020a; Rücklé+ 2020a,b, inter alia):
-  * additional parameter sets that are fine-tuned while the original pretrained
-    model is kept frozen
-  * have been shown to perform well for cross-lingual transfer by training
-    language-specific adapters (Pfeiffer+ 2020c,d),
+  (Rebuffi+ 2017; Houlsby+ 2019; Stickland and Murray, 2019; 
+  Pfeiffer+ 2020a,b,c,d; Lauscher+ 2020a; Rücklé+ 2020a,b)
+  * additional parameter sets that are fine-tuned
+    while the original pretrained model is kept frozen
+  * have been shown to perform well for cross-lingual transfer
+    by training language-specific adapters (Pfeiffer+ 2020c,d)
   * we here evaluate whether they perform equally well in monolingual setups
 * we distinguish between four different setups for each task:
   * fully fine-tune a monolingual BERT model;
@@ -209,7 +208,7 @@ criteria:
     parameters (labeled +A Task henceforth);
   * inject both a dedicated language adapter available via AdapterHub (Pfeiffer+
     2020b), and a task adapter into mBERT, and then fine-tune by updating only
-    the task adapter parameters (+A Lang, Task )
+    the task adapter parameters (+A Lang, Task)
 * three random initializations on the development set
   * On the test set, we report the results of the initialization that achieved
     the highest score on the development set
@@ -225,16 +224,16 @@ criteria:
 
 * lang
   * largest performance gains of monolingual models: FI, TR, KO, and AR 
-  * mBERT outperforms the IndoBERT ( ID ) model in all tasks but SA, and performs
+  * mBERT outperforms the IndoBERT (ID) model in all tasks but SA, and performs
   * competitively with the JA and ZH monolingual models on most datasets.  In gen-
 * task
   * gap is particularly narrow for POS tagging, where all models score high >95%
   * ID aside, for UDP, with monolingual models out-performing fine-tuned mBERT
     * most notably for FI and TR, and
   * fully fine-tuned mBERT models, in turn, outperforming the adapter-based
-* In what follows, we seek to understand the causes of this behaviour in
-  relation to different factors such as used tokenizers, corpora sizes, as well
-  as languages and tasks in consideration
+* In what follows, we seek to understand 
+  ? the causes of this behaviour in relation to different factors
+  eg used tokenizers, corpora sizes, as well as languages and tasks
 
 # 4 Tokenizer vs. Corpus Size 5
 
@@ -250,7 +249,7 @@ criteria:
 * Figure 1. For
   * EN, JA, RU, and ZH, the two models were trained on similar amounts of
   * AR, ID, FI, KO, and TR monolingual models were trained
-    from about twice ( KO) up to more than 40 times ( TR ) as much data
+    from about twice (KO) up to more than 40 times (TR) as much data
 
 ## 4.2 Tokenizer
 
@@ -265,7 +264,7 @@ criteria:
   produced per tokenized word
 * Table 2
 * mBERT has
-  * similar fertility values as the monolingual for EN, ID, JA, ZH . In
+  * similar fertility values as the monolingual for EN, ID, JA, ZH
   * much higher fertility for AR, FI, KO, RU, and TR, indicating that
   * lowest for EN, which is likely due to
     * mBERT having seen the most data in this language during training, as
@@ -291,23 +290,23 @@ criteria:
   * AR, FI, ID, KO, and TR
 * three model variants for each language. First, we train
   * two new monolingual BERT models on the same data,
-    * one with the original monolingual tokenizer ( wiki-mono-mono ) and
+    * one with the original monolingual tokenizer (wiki-mono-mono) and
       * to compare against the monolingual models trained on significantly more
         data but with the same tokenizer, we implicitly disentangle the effect
-    * one with the mBERT tokenizer ( wiki-mono-mBERT ). 11 Additionally,
+    * one with the mBERT tokenizer (wiki-mono-mBERT). 11 Additionally,
   * 3rd: we retrain the embedding layer of mBERT with the respective monolingual
-    tokenizer ( wiki-mBERT-retrained )
+    tokenizer (wiki-mBERT-retrained)
 
 # 5 Further Analysis
 
 ## 5.1 Qualitative Analysis
 
 * When choosing a monolingual tokenizer that scores significantly lower in
-  fertility and the proportion of continued words than the mBERT tokenizer
-  (such as for AR, FI, ID, KO, TR ), performance gains can be made
-  relatively consistently, irrespective of whether the models themselves are
-  monolingual ( wiki-mono-mono versus wiki-mono-mbert ) or multilingual (
-  wiki-mbert-retrained versus fully fine-tuned mBERT)
+  fertility and the proportion of continued words than the mBERT tokenizer 
+  (eg AR, FI, ID, KO, TR), performance gains can be made relat consistently,
+  irrespective of whether the models themselves are 
+  * monolingual (wiki-mono-mono vs wiki-mono-mbert) or 
+  * multilingual (wiki-mbert-retrained vs fully fine-tuned mBERT)
 * Whenever the differences between monolingual models and mBERT
   with respect to the tokenizer (as measured by the fertility or prop of conted)
   and the pretraining corpus size are small, such as for EN, JA, and ZH, the
@@ -369,10 +368,10 @@ criteria:
 * Table 9: vocabulary size and the proportion of its vocabulary also contained
   in mBERT. It shows that the tokenizers scoring lower in fertility (and
   accordingly performing better) than mBERT are often not adequately covered by
-  mBERT’s vocabulary. For instance, only 5.6% of the AraBERT ( AR ) vocabulary
+  mBERT’s vocabulary. For instance, only 5.6% of the AraBERT (AR) vocabulary
   is covered by mBERT
 
-* Figure 5: proportion of unknown tokens ( [UNK] ) in the tokenized data. It
+* Figure 5: proportion of unknown tokens ([UNK]) in the tokenized data. It
   shows that the proportion is generally extremely low, i.e., the tokenizers can
   typically split unknown words into known subwords
 

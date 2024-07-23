@@ -1,5 +1,5 @@
 Romanization-based Large-scale Adaptation of Multilingual Language Models
-Sukannya Purkayastha, Sebastian Ruder, Jonas Pfeiffer, Iryna Gurevych, Ivan Vulić
+Sukannya Purkayastha, Sebastian Ruder, Jonas Pfeiffer, Iryna Gurevych, I Vulić
 arXiv:2304.08865 [cs.CL]
 
 # Ruder
@@ -92,19 +92,19 @@ arXiv:2304.08865 [cs.CL]
 
 ## Cross-Lingual Transfer to Low-Resource Languages
 
-* Parameter-efficient and modular finetuning methods (Pfeiffer+ 2023) such as
+* Parameter-efficient and modular finetuning methods (Pfeiffer+ 2023)
   * eg adapters (Houlsby+ 2019; Pfeiffer+ 2020b)
   * used for cross-lingual transfer
   * focus on low-resource languages and scenarios, including languages with
     scripts ‘unseen’ by the base mPLM (Pfeiffer+ 2021)
-  * Adapters are small lightweight components stitched into the base mPLM, and
+  * Adapters are small light-weight components stitched into the base mPLM, and
     then trained for particular languages and tasks while
-    keeping the parameters of the original mPLM frozen. This circumvents the
-  * against catastrophic forgetting and interference (McCloskey and Cohen,
-    1989) within the mPLM, and
+    keeping the parameters of the original mPLM frozen
+  * circumvents catastrophic forgetting and interference (McCloskey and Cohen,
+    1989) within the mPLM
   * extending its reach also to unseen languages (Pfeiffer+ 2021; Ansell+ 2021)
 * For our main empirical analyses, we adopt a SOTA modular method for
-  cross-lingual transfer: MAD-X (Pfeiffer+ 2020b). In short,
+  cross-lingual transfer: MAD-X (Pfeiffer+ 2020b)
   * MAD-X is based on language adapters (LA), task adapters (TA), and
     invertible adapters (INV)
   * LAs are trained for specific languages relying on masked language modeling,

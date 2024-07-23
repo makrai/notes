@@ -75,16 +75,16 @@ https://github.com/deepmind/xquad
 * In all experiments, we fine-tune a pre-trained model using labeled training
   examples in English, and evaluate on test examples in other languages via
   zero-shot transfer
-  
-## 3.1 models that we compare 
- 
-## 3.2 experimental setting 
 
-## 3.3 Results on XNLI 
+## 3.1 models that we compare
 
-## 3.4 Results on MLDoc 
+## 3.2 experimental setting
 
-## 3.5 Results on PAWS-X 
+## 3.3 Results on XNLI
+
+## 3.4 Results on MLDoc
+
+## 3.5 Results on PAWS-X
 
 # 4 XQuAD: a new cross-lingual question answering dataset
 

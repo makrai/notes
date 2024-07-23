@@ -9,37 +9,36 @@ arXiv:2106.09685 [cs.CL]
 * An important paradigm of natural language processing consists of
   * large-scale pre-training on general domain data and
   * adaptation to particular tasks or domains
-* larger models ~> full fine-tuning, which retrains all model parameters,
-  becomes less feasible.  Using
-* eg GPT-3 175B -deploying independent instances of fine-tuned models, each
+* larger models ~> full fine-tuning (ie retraining all params) less feasible
+* eg GPT-3 175B: deploying independent instances of fine-tuned models, each
   with 175B parameters, is prohibitively expensive
   * larger models are trained every few months
-* We propose Low-Rank Adaptation, or LoRA, which
+* We propose Low-Rank Adaptation, or LoRA
   * freezes the pre-trained model weights and
     injects trainable rank decomposition matrices into each layer of the
     Transformer architecture,
     greatly reducing the number of trainable parameters for downstream tasks
-* Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce
-  the number of trainable parameters by 10,000 times and the
-  GPU memory requirement by 3 times. LoRA
-  performs on-par or better than fine-tuning in model quality on RoBERTa,
-  DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a
-  higher training throughput, and,
-  * unlike adapters, no additional inference latency. We also provide an
+* Compared to GPT-3 175B fine-tuned with Adam, LoRA can 
+  * reduce
+    * the number of trainable parameters by 10,000 times and the
+    * GPU memory requirement by 3 times
+  * performs on-par or better than fine-tuning in model quality on RoBERTa,
+    DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a
+    higher training throughput, and,
+  * unlike adapters, no additional inference latency
 * empirical investigation into rank-deficiency in language model adaptation,
-* a package that facilitates the integration of LoRA with PyTorch models and
+* a package that facilitates the integration of LoRA with PyTorch models
 * implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2
 * from the Conclusion
   * LoRA neither introduces inference latency nor reduces input sequence length
-  * allows for quick task-switching when deployed as a service by sharing the
-    vast majority of the model parameters. While we focused on Transformer
-  * besides Transformers, generally applicable to any neural networks with
-    dense layers
+  * allows for quick task-switching when deployed as a service
+    by sharing the vast majority of the model parameters
+  * besides Transformers, applicable to any neural networks with dense layers
 * future works
   * LoRA can be combined with other efficient adaptation methods, potentially
   * The mechanism behind fine-tuning or LoRA is far from clear –
     * how are features learned during pre-training transformed to do well on
-      downstream tasks? We believe that
+      downstream tasks?
     * LoRA makes it more tractable to answer this than full finetuning
   * We mostly depend on heuristics to select the weight matrices to apply LoRA
     to. Are there more principled ways to do it?
@@ -196,11 +195,11 @@ arXiv:2106.09685 [cs.CL]
   * The key functional difference is that
     our learned weights can be merged with the main weights during inference,
     ~> no latency unlike the adapter layers (Section 3)
-* A comtenporary extension of adapter is COMPACTER (Mahabadi+ 2021), which
+* A comtenporary extension of adapter is COMPACTER (Mahabadi+ 2021)
   * parametrizes the adapter layers using Kronecker products with some
-    predetermined weight sharing scheme. Similarly,
+    predetermined weight sharing scheme
   * combining LoRA with other tensor product-based methods could potentially
-    improve its parameter efficiency, which we leave to future work. More
+    improve its parameter efficiency, which we leave to future work
 * optimizing the input word embeddings in lieu of fine-tuning, akin to a
   continuous and differentiable generalization of prompt engineering
   (Li & Liang, 2021; Lester+ 2021; Hambardzumyan+ 2020; Liu+ 2021)

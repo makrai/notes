@@ -7,10 +7,10 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
 
 * The recent explosion of performance of LLMs has changed the field of NLP
   more abruptly and seismically than any other shift in the 80-year history
-* concerns that the field will become homogenized and resource-intensive. The
-* academic researchers, especially PhD students, at a disadvantage. This paper
+* concerns that the field will become homogenized and resource-intensive
+* academic researchers, especially PhD students, at a disadvantage
 * we define a new NLP playground by proposing 20+ PhD-worthy research dirs
-  * covering theoretical analysis, new and challenging problems, 
+  * covering theoretical analysis, new and challenging problems,
     learning paradigms, and interdisciplinary applications
 
 # 6 NLP+X Interdisciplinary Applications
@@ -18,15 +18,15 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
 ## 6.1 Human-Centered NLP
 
 * mitigating harms, both allocation and representation (Blodgett+ 2020), to
-  social groups using these models must be a core consideration.
+  social groups using these models must be a core consideration
   * Social bias and stereotypes are a common way for LLMs to materialize these
   * LLMs must be aware of the extra-contextual requirement of abiding by the
     sociocultural norms expected by the user (Fung+ 2023), especially chatbots
-* Post-hoc debiasing and improving the social awareness of pretrained LLMs are
+* Post-hoc debiasing and improving the social awareness of pretrained LLMs
   * a separate general debiasing step to account for any unintended
     associations stemming from pretraining (Yu+ 2023a; Omrani+ 2023; Yang+
-    2023b). Relatively less explored is the 
-  * complementary requirement of augmenting LLMs with the 
+    2023b). Relatively less explored is the
+  * complementary requirement of augmenting LLMs with the
     awareness and ability to abide by sociocultural norms. The crux of the
     * recognize what behaviors in its training data are the results of
       sociocultural norms, discover why and when those norms should be
@@ -41,7 +41,7 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
     * bridging the gap between distant users who share similar beliefs to
       decode latent representations (Sun+ 2023)
 * multi-dimensional controls for generation (Han+ 2023b), including their
-  sentiment, political stance, and moral values, so that they can directly
+  sentiment, political stance, and moral values
 
 ## 6.2 NLP for Science
 
@@ -58,36 +58,36 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
   * Within these drugs, there are substructures which confer beneficial drug
     properties, and the knowledge about these properties are reported in
     millions of scientif papers
-  * hE, existing LLMs are pretrained only from unstructured text 
-  * inconsistencies in the literature.
-* domain-knowledge-empowered LLMs include development of a 
+  * hE, existing LLMs are pretrained only from unstructured text
+  * inconsistencies in the literature
+* domain-knowledge-empowered LLMs include development of a
   * lightweight adapter framework to select and integrate structured domain
-    knowledge into LLMs (Lai+ 2023b), 
+    knowledge into LLMs (Lai+ 2023b),
   * data augmentation for knowledge distillation from LLMs in general domain to
-    scientific domain (Wang+ 2023g), and 
+    scientific domain (Wang+ 2023g), and
   * tool learning frameworks leveraging foundation models for more complicated
     sequential actions problem solving (Qin+ 2023; Qian+ 2023)
 
 ## 6.3 NLP for Education
 
-* eliciting the captured knowledge to generate lesson plans and materials.
+* eliciting the captured knowledge to generate lesson plans and materials
   * personalizing education and the educational experience with LLMs would al-
 * identifying and analyzing gaps in a student’s understanding or learning
-  * apart from scoring essays or resps in dims eg fluency or sent struct 
+  * apart from scoring essays or resps in dims eg fluency or sent struct
   * identifying keyspans
     (Mathias and Bhattacharyya, 2020; Takano and Ichikawa, 2022; Fiacco+ 2022)
-    * Sandeep Mathias and Pushpak Bhattacharyya. 2020.
+    * Sandeep Mathias and Pushpak Bhattacharyya. 2020
       Can neural networks automatically score essay traits?
       Wsh Innovative Use of NLP for Building Educational Applications, p 85–91
-    * Shunya Takano and Osamu Ichikawa. 2022. 
+    * Shunya Takano and Osamu Ichikawa. 2022
       Automatic scoring of short answers using justification cues estim by BERT
       Wsh Innovative Use of NLP for Building Educational Applications (BEA 2022),
-    * James Fiacco, Shiyan Jiang, David Adamson, and Carolyn Rosé. 2022.
+    * James Fiacco, Shiyan Jiang, David Adamson, and Carolyn Rosé. 2022
       Toward automatic discourse parsing of student writing
-        motivated by neural interpretation. In Proceedings of the 17th 
+        motivated by neural interpretation. In Proceedings of the 17th
       Wsh Innovative Use of NLP for Building Educational Applications, BEA 22
-  * determine which parts of a freeform submission indicate a gap and 
-    * associate it with a learning goal provided by the teacher, 
+  * determine which parts of a freeform submission indicate a gap and
+    * associate it with a learning goal provided by the teacher,
       without using specific (and costly to create) goldlabeled responses
     * which portions of the response are written by the student as opposed to
       copied from an AI assistant
@@ -100,23 +100,23 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
 
 * the stultification of NLP as a mere evaluation optimization endeavor and to
 * ML/LLMs not/did produce an engine that could learn languages, translate, answer
-  questions, create poetry, and do all the things a child can do.
+  questions, create poetry, and do all the things a child can do
 * scale. No child needs to read or hear more than half the internet’s English
   text in order to use language
   * What reasoning and sensory capabilities do people have that LLMs lack? How
   * need for global infrastructures to dramatically scale up computing
     resources, because the open-source models still cannot achieve performance
-    comparable to GPT variants (Gudibande+ 2023).
-  * deeper thinking about the foundational conceptual models driving our field.
+    comparable to GPT variants (Gudibande+ 2023)
+  * deeper thinking about the foundational conceptual models driving our field
 * systematically change and refine our paper review system and academic success
-  measurements, in order to establish a more inclusive research environment and
+  measurements, in order to establish a more inclusive research environment
   * longterm, high-risk topics that are crucial for the entire field. The new
   * close collaboration with researchers from other fields, including
     social science, natural science, computer vision, knowledge representation
-    and reasoning, and human-computer interaction.
+    and reasoning, and human-computer interaction
 
-# Limitations 
+# Limitations
 
 # Ethical Considerations
 
-* We do not intend for our proposed positions to be forcefully pedagogical We
+* We do not intend for our proposed positions to be forcefully pedagogical

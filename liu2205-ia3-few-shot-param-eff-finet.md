@@ -7,28 +7,28 @@ NeurIPS 2022 arXiv:2205.05638 [cs.LG]
 * Few-shot in-context learning (ICL)
   * enables pre-trained language models to perform a previously-unseen task
   * without any gradient-based training by feeding
-  * a small number of training examples as part of the input. ICL
+  * a small number of training examples as part of the input
   * incurs [-val jár] substantial computational, memory, and storage costs
     because it involves processing all of the training examples at every pred
 * Parameter-efficient fine-tuning (PEFT) (eg adapter modules, prompt tuning,
-  sparse update methods, etc.) offers an alternative paradigm where
-  * a small set of parameters are trained to perform the new task. In this
-* we rigorously compare few-shot ICL and PEFT and demonstrate that the latter
+  sparse update methods, etc) offers an alternative paradigm where
+  * a small set of parameters are trained to perform the new task
+* we rigorously compare few-shot ICL and PEFT
   * PEFT offers better accuracy as well as dramatically lower computation costs
   * we introduce a new PEFT method called (IA)3 that
-    * scales activations by learned vectors, attaining
+    * scales activations by learned vectors
     * stronger performance while only a relatively tiny amount of new params
   * a simple recipe based on the T0 model called T-Few that can be applied to
-    new tasks without task-specific tuning or modifications. We
+    new tasks without task-specific tuning or modifications
   * from the conclu: T-Few also uses two additional loss terms that
     * encourage the model to output lower probabilities for incorrect choices
-    * account for the length of different answer choices. When applying T-Few
+    * account for the length of different answer choices
   * T-Few uses over 1,000× fewer FLOPs during inference than few-shot ICL with
     GPT-3 and only requires 30 minutes to train on a single NVIDIA A100 GPU
 * we validate the effectiveness of T-Few on completely unseen tasks by applying
   * RAFT benchmark, attaining super-human performance for the first time and
-    * outperforming the SOTA by 6% absolute. All of the code used in our
-* future: generative tasks like as summarization and question answering
+    * outperforming the SOTA by 6% absolute
+* future: generative tasks like summarization and question answering
 
 # 1 Intro
 

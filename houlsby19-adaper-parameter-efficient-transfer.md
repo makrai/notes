@@ -6,7 +6,7 @@ Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone,
 # Abstract
 
 * Fine-tuning large pretrained models is an effective transfer mechanism in NLP
-* in many downstream tasks, fine-tuning is parameter inefficient: an entire new
+* in many downstream tasks, fine-tuning is parameter inefficient
 * we propose transfer with adapter modules
   * compact and extensible model; they add only a few trainable parameters per
     task, and new tasks can be added without revisiting previous ones
