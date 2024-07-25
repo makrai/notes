@@ -4,34 +4,33 @@ H Touvron, L Martin, K Stone, P Albert, A Almahairi, Y Babaei, N Bashlyko,,,
 arXiv:2307.09288 [cs.CL]
 
 
-#Abstract
+# Abstract
 
 * we devel and release Llama 2, a collection of pretrained and fine-tuned LLMs
   * scale from 7 billion to 70 billion parameters
   * fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases
   * outperform open-source chat models on most benchmarks we tested, and
   * based on our human evaluations for helpfulness and safety, may be a
- suitable substitute for closed-source models
+    suitable substitute for closed-source models
 * detailed description of our approach to fine-tuning and safety improvements
 
 
-#1 Introduction 3
+# 1 Introduction 3
 
 * seemingly straightforward nature of the training methodology. Auto-regressive
   * pretrained on an extensive corpus of self-supervised data, followed by
-    alignment with human preferences via techniques such as Reinforcement
-    Learning with Human Feedback (RLHF). Although the training methodology is
-* high computational requirements have limited the development of LLMs to a few
-  * public releases of pretrained LLMs (such as BLOOM (Scao+ 2022), LLaMa-1
-    (Touvron+ 2023), and Falcon (Penedo et al., 2023))
-    that match the performance of
-    closed pretrained competitors like GPT-3 (Brown+ 2020) and Chinchilla
-    (Hoffmann+ 2022), but
-    none of these models are suitable substitutes for
-    closed “product” LLMs, such as ChatGPT, BARD, and Claude
-    * heavily fine-tuned to align with human preferences, which
-      * greatly enhances their usability and safety. This step can require
-      * often not transparent or easily reproducible, limiting progress within
+    alignment with human preferences  
+    via eg Reinforcement Learning with Human Feedback (RLHF)
+* high computational requirements have limited the development of LLMs
+  * public pretrained LLMs match the performance of some closed ones
+    * eg public that match: BLOOM (Scao+ 2022), LLaMa-1 (Touvron+ 2023), and
+      Falcon (Penedo+ 2023)
+    * eg closed matched: GPT-3 (Brown+ 2020) and Chinchilla (Hoffmann+ 2022)
+  * hE none of these are suitable substitutes for closed “product” LLMs 
+  * product LLMs eg ChatGPT, BARD, and Claude
+  * product LLMs are heavily fine-tuned to align with human preferences, which
+    * greatly enhances their usability and safety
+    * often not transparent or easily reproducible, limiting progress
 * we develop and release Llama 2, a family of pretrained and fine-tuned LLMs,
   * scales up to 70B parameters. On the
   * series of helpfulness and safety benchmarks we tested,
@@ -70,14 +69,14 @@ arXiv:2307.09288 [cs.CL]
   * More details of our responsible release strategy can be found in Sec 5.3
 
 
-#2 Pretraining 5
+# 2 Pretraining 5
 
 ## 2.1 Pretraining Data 5
 ## 2.2 Training Details 5
 ## 2.3 Llama 2 Pretrained Model Evaluation 7
 
 
-#3 Fine-tuning 8
+# 3 Fine-tuning 8
 
 ## 3.1 Supervised Fine-Tuning (SFT) 9
 ## 3.2 Reinforcement Learning with Human Feedback (RLHF) 9
@@ -85,7 +84,7 @@ arXiv:2307.09288 [cs.CL]
 ## 3.4 RLHF Results 17
 
 
-#4 Safety 20
+# 4 Safety 20
 
 ## 4.1 Safety in Pretraining 20
 
@@ -165,7 +164,7 @@ arXiv:2307.09288 [cs.CL]
 ## 4.4 Safety Evaluation of Llama 2-Chat 29
 
 
-#5 Discussion 32
+# 5 Discussion 32
 
 ## 5.1 Learnings and Observations 32 with RLHF
 
@@ -240,7 +239,7 @@ arXiv:2307.09288 [cs.CL]
 ## 5.3 Responsible Release Strategy 35
 
 
-#6 Related Work 35
+# 6 Related Work 35
 
 ## Large Language Models
 
@@ -321,10 +320,10 @@ arXiv:2307.09288 [cs.CL]
   academic, and industry community on these issues
 
 
-#7 Conclusion36
+# 7 Conclusion36
 
 
-#A Appendix 46
+# A Appendix 46
 
 ## A.1 Contributions 46
 ## A.2 Additional Details for Pretraining 47

@@ -4,14 +4,16 @@ Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang,
   Mohit Bansal, Colin Raffel
 NeurIPS 2022 arXiv:2205.05638 [cs.LG]
 
+# Abstract
+
 * Few-shot in-context learning (ICL)
   * enables pre-trained language models to perform a previously-unseen task
-  * without any gradient-based training by feeding
+  * without any gradient-based training
   * a small number of training examples as part of the input
   * incurs [-val jár] substantial computational, memory, and storage costs
     because it involves processing all of the training examples at every pred
-* Parameter-efficient fine-tuning (PEFT) (eg adapter modules, prompt tuning,
-  sparse update methods, etc) offers an alternative paradigm where
+* Parameter-efficient fine-tuning (PEFT, eg adapter modules, prompt tuning,
+  sparse update methods, etc) offers an alternative paradigm
   * a small set of parameters are trained to perform the new task
 * we rigorously compare few-shot ICL and PEFT
   * PEFT offers better accuracy as well as dramatically lower computation costs
@@ -32,16 +34,16 @@ NeurIPS 2022 arXiv:2205.05638 [cs.LG]
 
 # 1 Intro
 
-* in-context learning (ICL) popularized by [3, 4] is , which induces a model to
+* in-context learning (ICL) popularized by [3, 4] induces a model to
   perform a downstream task by inputting prompted examples
   * Few-shot prompting converts a small collection of input-target pairs into
     (typically) human-understandable instructions and examples [3, 4], along
-    with a single unlabeled example for which a prediction is desired. Notably,
+    with a single unlabeled example for which a prediction is desired
   * requires no gradient-based training and therefore allows a single model to
     immediately perform a wide variety of tasks. Performing ICL therefore
     solely relies on the capabilities that a model learned during pre-training
   * a great deal of recent interest in ICL methods [5–10]
-* drawbacks. First,
+* drawbacks
   * processing all prompted input-target pairs for every pred incurs
   * typically produces inferior performance compared to fine-tuning [4]
   * the exact formatting of the prompt (including the wording [11] and ordering

@@ -35,13 +35,14 @@ arXiv:2106.09685 [cs.CL]
     by sharing the vast majority of the model parameters
   * besides Transformers, applicable to any neural networks with dense layers
 * future works
-  * LoRA can be combined with other efficient adaptation methods, potentially
+  * LoRA may be combined with other efficient adaptation methods
   * The mechanism behind fine-tuning or LoRA is far from clear –
     * how are features learned during pre-training transformed to do well on
       downstream tasks?
     * LoRA makes it more tractable to answer this than full finetuning
-  * We mostly depend on heuristics to select the weight matrices to apply LoRA
-    to. Are there more principled ways to do it?
+  * how to select the weight matrices to apply LoRA to
+    * We mostly depend on heuristics
+    * Are there more principled ways to do it?
   * Finally, the rank-deficiency of ∆W suggests that W could be rank-deficient
     as well, which can also be a source of inspiration for future works
 
@@ -155,6 +156,20 @@ arXiv:2106.09685 [cs.CL]
   reduces the sequence length available to process a downstream task, which we
   suspect makes tuning the prompt less performant compared to other methods
   * we study task performance in Section 5
+
+# 4 Our method
+
+* The principles outlined here apply to any dense layers in deep models,
+  though we only focus on certain weights in Transformer language models
+
+## 4.1 Low-rank-parametrized update matrices
+
+* We scale ∆Wx by α/r, where α is a constant in r
+  * When optimizing with Adam, tuning α is roughly the same as tuning the
+    learning rate if we scale the initialization appropriately
+  * we simply set α to the first r we try and do not tune it
+  * This scaling helps to reduce the need to retune hyperparameters when we
+    vary r (Yang & Hu, 2021)
 
 # 6 Related works
 

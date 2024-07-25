@@ -42,7 +42,7 @@ https://github.com/rabeehk/compacter
 * parameter-efficient fine-tuning methods. These approaches generally
   * keep the pretrained model’s parameters fixed and
     introduce a set of trainable parameters per task,
-  trading off the number of trainable parameters with task performance
+    trading off the number of trainable parameters with task performance
   * prompts,
     * At one end of the spectrum
     * ie natural language descriptions of a task, together with demonstrations
@@ -51,13 +51,13 @@ https://github.com/rabeehk/compacter
     * They also require huge models to work well but
     * choosing good prompts becomes harder with larger model sizes [9]
   * Soft prompt methods treat prompts as trainable continuous parameters, which
-    * prepended to the inputs at the input layer or intermediate layers [10,
-      11, 12]. Such methods, however,
-    * often require large models to achieve good performance and are
+    * prepended to the inputs at the input layer or intermediate layers
+      [10, 11, 12]
+    * hE often require large models to achieve good performance
     * very sensitive to initialization and unstable during training
 * The theoretically motivated low-rank methods
   * train a small number of parameters that lie in a low-dimensional subspace
-    using random projections [13, 14]. However,
+    using random projections [13, 14]
   * hE storing the random projection matrices causes substantial memory
     overhead and leads to slow training times
 * adapter methods [1, 15]
