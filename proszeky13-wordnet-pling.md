@@ -29,9 +29,9 @@ Prószéky Gábor, Miháltz Márton, and Kuti Judit
   * speciális adatszerkezetek
   * sztereotipikus dolgok és szituációk reprezentálására
   * Minsky érdeme elsősorban a formális megfogalmazás (Minsky 1975),
-* Charniak Minsky ötletét továbbfejlesztve, kimondottan nyelvfeldolgozási célra
-  létrehozott egy olyan keretelméletet, amelyben a mindennapi gondolkodás
-  következtetési lépései döntő szerepet játszottak (Charniak 1976)
+* Charniak keretelmélete (Charniak 1976)
+  * Minsky ötletét továbbfejlesztve, kimondottan nyelvfeldolgozási célra
+  * a mindennapi gondolkodás következtetési lépései döntő szerepet játszottak
 * Wilks (1972) _preferenciális szemantikája_ volt
   * szövegrészletek lehetséges interpretációi közül a mért szemantikai
     sűrűségnek megfelelően kell kiválasztani

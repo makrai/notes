@@ -292,7 +292,7 @@ Pages: 171-192
 
 ## 8.5 p99
 
-# 9 A tractable machine dictionary as a resource for comp sem p104
+# 9 A tractable machine dictionary as a resource for computational sem p104
 Y Wilks, D Fass, C Guo, J McDonald, T Plate, B Slator
 Pages: 193-228
 

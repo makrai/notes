@@ -121,8 +121,7 @@ Contents p6
   * eg lexical semantics, compositional semantics, discourse structure,
     temporal structure
   * individual sources of semantic knowledge compute local inferences with a
-    high degree of certainty
-    * (cf. Hobbs et al., 1986, and Charniak and Goldman, 1988)
+    high degree of certainty (Hobbs+ 1986, Charniak and Goldman, 1988)
   * semantic interpretation proceeds in a principled fashion, always aware of
     * what the source of a particular inference is, and
     * what the certainty of its value is
@@ -230,7 +229,7 @@ Contents p6
     * systems
       * primitives-based inferencing techniques such as Wilks (1975,1978) to
       * commonsense metaphysics reasoning systems applied to language
-        * Hobbs et al. (1987)
+        * Hobbs+ (1987)
 * renewed interest in computational approaches to language analysis
   * both in computational linguistics and formal semantics
   * selection restriction from the 1960s and 1970s generative tradition
@@ -299,7 +298,7 @@ Contents p6
   * synonyms do not necessarily share the same antonyms
     * eg rise and ascend as well as fall and descend are similar in meaning,
       yet neither fall/ascend nor rise/descend are antonym pairs
-      (Miller et al 1990)
+      (Miller+ 1990)
 3. Hyponymy and Lexical Inheritance
   * the taxonomic relation defined in inheritance networks
   * superconcept of the concept _car_
@@ -307,9 +306,9 @@ Contents p6
 4. Meronymy
   * familiar from knowledge representation languages with predicates or
     slot-names such as part-of and made-of (cf. Brachman and Schmolze, 1985,
-    Hobbs et al, 1987). Similarly in the domain of planning
+    Hobbs+ 1987). Similarly in the domain of planning
   * necessary or optional subparts
-  * in lexical semantics, see Miller et al. (1990) and Cruse (1986)
+  * in lexical semantics, see Miller+ (1990) and Cruse (1986)
 5. Entailment and Presupposition
   * `A` semantically entails an expression `B` if and only if
     * every situation that makes `A` true, makes `B` true. On the other hand,
@@ -789,7 +788,7 @@ Contents p6
 
 * for discussion, a system
   * based on typed feature structures such as Carpenter's (1992) system, and
-  * application to lexical semantics described in Copestake et al. (1993).  The
+  * application to lexical semantics described in Copestake+ (1993).  The
   * two parts; the
     * type hierarchy itself, and the
     * constraint system operating over the types
@@ -834,9 +833,9 @@ Contents p6
   * typing system necessary to characterize the semantics of NPs, and,
   * logically polysemous behavior of nominals such as window and door
 * system based on typed feature structures,
-  * as applied to lexical structures in Copestake et al (1993)
+  * as applied to lexical structures in Copestake+ (1993)
 * details of the typing constraints will not be discussed here
-  * cf. Briscoe et al, 1993
+  * cf. Briscoe+ 1993
 * both to 2-dimensional objects such as window and door, as well as to
   3-dimensional objects, such as room, fireplace, and pipe
 * Lexical Conceptual Paradigm (lcp) allows us to treat these as logical
@@ -959,7 +958,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 ## 7.2 Co-composition 122 p137
 
 * _bake_ has two meanings, a change of state sense and a creation sense
-  (Atkins et al, 1988)
+  (Atkins+ 1988)
 * process reading and a transition reading
 * Pustejovsky (1991a) proposed that the complements carry information which
   acts on the governing verb, essentially taking the verb as argument and
@@ -1040,7 +1039,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * multiple inheritance
   * has been explored in a generative lexicon
     * to some extent in Pustejovsky and Boguraev (1993) and
-    * more generally in Copestake (1992) and Copestake et al.  (1993)
+    * more generally in Copestake (1992) and Copestake+  (1993)
 * different aspects of objects become more or less prominent as context varies
   * "book" is.a "information," as well as a "physical-object; a
   * "dictionary" `is_a` "physical-object," as well as "reference"; a
@@ -1240,7 +1239,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
     * explore temporal connections between events,
       * in order to structure an event-based logic for planning or reasoning
   * Kamp (1979) and van Benthem (1983): philosophical logic
-  * Hobbs et al. (1987) presents an extremely rich language
+  * Hobbs+ (1987) presents an extremely rich language
     * causal connections and constraints on temporal binding
   * Discourse Representation Theory (DRT)
     * Kamp and Reyle, 1993, and Asher, 1993
@@ -1437,7 +1436,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 * original work with Bran Boguraev, Ted Briscoe, and Ann Copestake
 * not examined
   * lexical inheritance, recent work in computational lexicography and
-    semantics, much of it reported in Briscoe et al., 1993) has pointed to
+    semantics, much of it reported in Briscoe+ 1993) has pointed to
     new and exciting directions for how lexicons should be organized globally
     * a projective inheritance model (Pustejovsky 1991) is currently one of
       the topics of research with Bran Boguraev

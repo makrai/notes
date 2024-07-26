@@ -1,5 +1,5 @@
-Prószéky Gábor, Indig Balázs
 Magyar szövegek pszicholingvisztikai indíttatású elemzése számítógéppel
+Prószéky Gábor, Indig Balázs
 2015
 
 # 1. Bevezetés

@@ -1,10 +1,10 @@
-1983 Cognitive Science
-Eugene Charniak
 Passing Markers: A Theory of Contextual Influence in Language Comprehension
+Eugene Charniak
+1983 Cognitive Science
 
 # Abstract
 
-Most Artificial Intelligence theories of language either
+* Most Artificial Intelligence theories of language either/or
   * assume syntactic component
   * reject attempts at distinguishing modules
 * In this paper
@@ -22,14 +22,14 @@ Most Artificial Intelligence theories of language either
     * One routine, coroutines, separate but parallel?
 * refurbishing of an old [theory]: the spreading activation [SA] model
   * SA history
-    * long and distinguished run in psychology (Anderson, 1976; Collins & Lof-
-      tus, 1975; Collins & Quillian, 1969)
+    * long and distinguished run in psychology
+      (Anderson, 1976; Collins & Loftus, 1975; Collins & Quillian, 1969)
     * to a lesser degree in Artificial Intelligence (AI) (Quillian, 1966),
     * since the early 70’s SA has mostly disappeared from the AI literature
   * or marker passing, as it is commonly referred to in AI circles
   * relate SA to common AI problems
     * context determination, WSD, and the semantic guidance of syntax
-  * psychological evidence ... by Swinney (1979) ... so obviously contradict
+  * psychological evidence by Swinney (1979) so obviously contradict
     most standard AI theories of WSD
 
 # 2. THREE PUZZLES
@@ -38,7 +38,7 @@ Most Artificial Intelligence theories of language either
 
 * comprehension of ungrammatical sentences
 * parallel arrangement of syntax and semantics (called a “blackboard” model)
-  as in HEARSAY (Erman, et al., 1980)
+  as in HEARSAY (Erman+ 1980)
 
 ## 2.2. Contextual Determination of Word Senses
 
@@ -52,16 +52,17 @@ Most Artificial Intelligence theories of language either
   * has bidirectional pointers
     * from an action to higher level actions in which it may play a role
     * from objects to actions in which they typically play a role, and
-    * from objects to their superclasses (... the ubiquitous “isa” pointer)
+    * from objects to their superclasses (the ubiquitous “isa” pointer)
   * depends crucially on a reasonably complete functional structure
 
 # 3 THE THEORY 8
 
 ## 3.1 Finding Explanatory Actions
 
-* The problem is that we appear to have two kinds of phenomena.  One requires
-  the use of functional relations in finding explanatory actions, the other does
-  not. Solution: postulate two separate capabilities
+* The problem is that we appear to have two kinds of phenomena
+* One requires the use of functional rels in finding explanatory actions, 
+* the other does not
+* Solution: postulate two separate capabilities
 
 ### Searching for connections
 

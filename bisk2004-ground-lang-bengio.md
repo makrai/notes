@@ -19,7 +19,7 @@ arXiv:2004.10151 cs.CL
   * should be queried on points meant to probe the granularity of the distinc
     (Kaushik+ 2020; Gardner+ 2020)
 * We posit that the universes of knowledge and experience available to NLP
-  models can be defined by successively larger world scopes:
+  models can be defined by successively larger world scopes (WS):
   * from a single corpus to a fully embodied and social context
   * corpus linguistics (Zipf, 1932; Harris, 1954),
     to the formation of the Penn Treebank (Marcus+ 1993), NLP researchers have
@@ -79,19 +79,18 @@ arXiv:2004.10151 cs.CL
 
 # WS3. Perception
 
-* axioms from which to extrapolate. Learned, physical heuristics, such as that
-  * eg a falling cat will land quietly, are
-    abstracted into language metaphors like as nimble as a cat (Lakoff, 1980)
+* axioms from which to extrapolate. Learned, physical heuristics
+  * eg a falling cat will land quietly
+  * abstracted into language metaphors like as nimble as a cat (Lakoff, 1980)
   * forms the basis for how people make entailment and reasoning decisions
 * children require grounded sensory input, not just speech, to learn language
   (Sachs+ 1981; O’Grady, 2005; Vigliocco+ 2014)
 * auditory input is necessary for understanding sarcasm, stress, and prosody
 * tactile senses give meaning, both physical (Sinapov+ 2014; Thomason+ 2016)
-  and abstract, to concepts like heavy and soft
+  and abstract, to concepts like `heavy` and `soft`
 * Visual perception is necessary (Harnad, 1990)
-* frames and scripts
-  (Schank and Abelson, 1977; Charniak, 1977; Dejong, 1981; Mooney and Dejong,
-  1985)
+* frames and scripts (Schank and Abelson, 1977; Charniak, 1977; Dejong, 1981;
+  Mooney and Dejong, 1985)
   * require understanding often unstated sets of pre~ and post-conditions
   * eg learn the meaning, method, and implications of painting? (Charniak 77)
   * A web crawl of knowledge from an exponential number of possible how-to,

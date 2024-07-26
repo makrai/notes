@@ -1,14 +1,14 @@
-Prószéky bírálata:
+Prószéky írja Recski disszertációjáól:
 
-> Schank (1973) fogalmi hálójáról, amiben ... megjelenik az a többi szemantikus
+> Schank (1973) fogalmi hálójá[ban] megjelenik az a többi szemantikus
 > hálóra kevésbé emlékeztető mozzanat, hogy
 > a fogalmi világ meggondolásait előtérbe helyezve olykor nyelvészeti
 > szempontból különböző elemek kerülnek összevonásra és egységes kezelésre
-> (így jön létre a csak Schank elméletére jellemző 11 igeosztály)
+> (így jön létre a csak Schank elméletére jellemző 11 igeosztály).
 > A 4lang-modellben is megjelenik a különböző (szófaji) osztályok összevonása,
 > csak itt egyes nyelvi elemek helyett a fogalmi hierarchia egy-egy magasabb
 > csomópontja jelenik meg, vagy például
-> a szófajokra jellemző szintaktikai különbségek eliminálásra kerülnek
+> a szófajokra jellemző szintaktikai különbségek eliminálásra kerülnek.
 
 * A Findler-kötetben idézve
   * Schank (el al) 1973
