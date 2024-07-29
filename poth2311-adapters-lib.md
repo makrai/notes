@@ -55,12 +55,12 @@ https://adapterhub.ml/adapters
   * integrate, train and use adapters for SOTA Transformer models
     with minimal changes
   * an open platform to share, explore and consume pre-trained adapter modules
-  * bottleneck-style adapters (Houlsby+ 2019), the field initially focused on 
+  * bottleneck-style adapters (Houlsby+ 2019), the field initially focused on
   * many other adapter methods
     (Li and Liang, 2021; Mahabadi+ 2021; Hu+ 2022; He+ 2022; Liu+ 2022)
 * new tools and libraries for adapter methods
   * OpenDelta (Hu+ 2023a), HuggingFace’s PEFT (Mangrulkar+ 2022) and
-    LLM-Adapters (Hu+ 2023b) are recent examples of libraries which 
+    LLM-Adapters (Hu+ 2023b) are recent examples of libraries which
     * unify adapter methods in a single code base + new model architectures
   * hE exclusively focus on the parameter-efficiency aspect of adapters,
     neglecting the modularity side of these methods
@@ -148,7 +148,7 @@ https://adapterhub.ml/adapters
 
 ### AdapterModel: providing our own, specialized model classes
 
-* automatic conversion 
+* automatic conversion
   * from HuggingFace’s model classes
     * typically paired with a single, fixed prediction head
   * to our newly introduced classes featuring flexible prediction heads
@@ -159,14 +159,14 @@ https://adapterhub.ml/adapters
 
 ### 3.3.1 Single Methods
 
-* introduce parameters in new feed-forward modules 
-  eg bottleneck adapters (Houlsby+ 2019), 
+* introduce parameters in new feed-forward modules
+  eg bottleneck adapters (Houlsby+ 2019),
 * introduce prompts at different locations such as Parallel prefix tuning
   (Li and Liang, 2021)
-* reparameterize existing modules such as LoRA (Hu+ 2022) or 
+* reparameterize existing modules such as LoRA (Hu+ 2022) or
 * re-scale their output representations such as (IA)³ (Liu+ 2022)
   Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang,
-    Mohit Bansal, and Colin A Raffel. 2022. 
+    Mohit Bansal, and Colin A Raffel. 2022
   Few-shot parameter-efficient fine-tuning is
     better and cheaper than in-context learning
   NeurIPS 2022, Nov 28 Dec 9, 2022, virtual and New Orleans, pages 1950–1965
@@ -179,21 +179,21 @@ https://adapterhub.ml/adapters
 * Adapters provides the possibility to
   group multiple configuration instances using the ConfigUnion class
   * integration of multiple complex methods proposed in the literature
-    (as the two examples outlined below), as well as the 
+    (as the two examples outlined below), as well as the
   * construction of other, new complex configurations
     currently not available nor benchmarked in the literature (Zhou+ 2023)
-    * Han Zhou, Xingchen Wan, Ivan Vulić, and Anna Korhonen. 2023. 
+    * Han Zhou, Xingchen Wan, Ivan Vulić, and Anna Korhonen. 2023
       AutoPEFT: Automatic configuration search for parameter-efficient
-      fine-tuning. 
+      fine-tuning
       https://arxiv.org/abs/2301.12132
 
-#### Mix-and-Match Adapters (He+ 2022) was proposed as 
+#### Mix-and-Match Adapters (He+ 2022) was proposed as
 
 * a combination of Prefix-Tuning and parallel bottleneck adapters
-* Using ConfigUnion, this method can be defined as: 
+* Using ConfigUnion, this method can be defined as:
 ```python
   config = ConfigUnion(
-      PrefixTuningConfig(bottleneck_size=800), 
+      PrefixTuningConfig(bottleneck_size=800),
       ParallelConfig(),)
   model.add_adapter("name", config=config)
 ```
@@ -201,13 +201,13 @@ https://adapterhub.ml/adapters
 #### UniPELT (Mao+ 2022) combines LoRA, Prefix Tuning, and bottleneck adapters
 
 * additionally introduces a gating mechanism that
-  controls the activation of the different adapter modules. Gm ← σ(WGm · x).
+  controls the activation of the different adapter modules. Gm ← σ(WGm · x)
 
 ## 3.4 Adapter Composition
 
 * the modularity and composability aspects of adapters, increasing research
 * hE overlooked by open-source libraries (Mangrulkar+ 2022; Hu+ 2023a)
-* Adapters makes adapter compositions central and accessible 
+* Adapters makes adapter compositions central and accessible
   by enabling the definition of complex, composed adapter setups
   * a set of simple composition blocks that each capture a specific method of
     aggregating the functionality of multiple adapters
@@ -289,7 +289,7 @@ Split("g", "h", splits=[64, 64])
     manual effort
 * shared interfaces and step-by-step documentation
   * it is difficult to standardize this process
-    due to differences between model architectures, 
+    due to differences between model architectures,
     nL we provide clear guidelines for integrating new models
     in the form of shared interfaces and step-by-step documentation
 
@@ -309,7 +309,7 @@ Split("g", "h", splits=[64, 64])
 
 * we conduct evaluations on the single adapter implementations made available
   by Adapters (see §3.3.1). We demonstrate the effectiveness of these methods
-* task types: 
+* task types:
   * extractive question answering (Rajpurkar+ 2018)
   * multiple choice classification (Huang+ 2019)
   * sequence tagging (Tjong Kim Sang, 2002)
@@ -335,10 +335,10 @@ Split("g", "h", splits=[64, 64])
 * all adapter implementations offered by our framework are
   competitive with full model fine-tuning, across all task classes
 * Approaches that offer more tunable hyper-parameters (for scaling)
-  eg Bottleneck adapters, LoRA, and Prefix Tuning predictably have 
+  eg Bottleneck adapters, LoRA, and Prefix Tuning predictably have
   the highest topline performance, often surpassing full finetuning
-* nL, extremely parameter-frugal [economical] methods 
-  like (IA)3, which add < 0.005% of the parameters of the base model, 
+* nL, extremely parameter-frugal [economical] methods
+  like (IA)3, which add < 0.005% of the parameters of the base model,
   also perform commendably and only fall short by a small fraction
 * the Compacter is the least volatile [romlandó] among the single methods,
   obtaining the lowest standard deviation between runs on the majority of tasks
@@ -351,5 +351,5 @@ Split("g", "h", splits=[64, 64])
 * performances competitive to full fine-tuning
 * research on adapters and LLMs continues to advance rapidly,
   our library will evolve as well
-* extensibile with new adapter methods and model architectures, 
+* extensibile with new adapter methods and model architectures,
   both from us and the community
