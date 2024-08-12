@@ -24,7 +24,7 @@ see the intro of https://www.deeplearning.ai/the-batch/issue-231/
     with only a simple classification loss
   * Direct Preference Optimization (DPO), the resulting algorithm we call
   * stable, performant, and computationally lightweight
-  * no need for sampling from the LM during fine-tuning or performing
+  * no need for sampling from the LM during fine-tuning
   * no significant hyperparameter tuning
 * experiments show that DPO can fine-tune LMs to align with human preferences
   as well as or better than existing methods
