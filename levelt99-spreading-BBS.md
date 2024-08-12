@@ -1,5 +1,5 @@
 A theory of lexical access in speech production
-Willem J. M. Levelt, Ardi Roelofs, and Antje S. Meyer
+Willem J M Levelt, Ardi Roelofs, and Antje S Meyer
 BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
 # Abstract
@@ -57,7 +57,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 * four-tiered processing device: from a lexical concept to its lemma,
   phonological code and phonetic-articulatory gesture
 * still reflects the original duality in ontogenesis
-* apparent from e.g. the tip-of-the-tongue state (Levelt 1993)
+* apparent from eg the tip-of-the-tongue state (Levelt 1993)
 
 # 2. Scope of the theory
 
@@ -99,12 +99,12 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 * whether these stages overlap in time or are strictly sequential
   * In the following it will be a recurring issue
 
-### 3.1.1. Conceptual preparation. All open class words and most closed class
+### 3.1.1. Conceptual preparation. All open class words and most closed ones
 
 * “female elephant,”: there is no unitary lexical concept available
 * no one-to-one mapping of notions onto messages (Bierwisch & Schreuder 1992)
 * there are multiple ways to refer to the same object
-  * e.g. “animal,” “horse,” “mare,” [kanca]. This is called perspective taking
+  * eg “animal,” “horse,” “mare,” [kanca]. This is called perspective taking
   * mediated by
     * pragmatic, context-dependent considerations
     * semantic causes of activation modeled by way of a conceptual network
@@ -147,7 +147,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
   * retrieving the lemma `escort` will make available that this is a transitive
     verb [node V t (x, y)] with two argument positions (x and y),
 * Many lemmas have so-called diacritic parameters that have to be set
-  * e.g. features for number, person, tense, and mood (see Fig. 2)
+  * eg features for number, person, tense, and mood (see Fig. 2)
   * values of these features will in part derive from the
     * conceptual representation
       * tense: the relevant temporal properties of the state of affairs being
@@ -208,7 +208,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 ##3.2.3. Binding
 
 * [i.e. melyik hova?]
-* e.g.
+* eg
   * _Pages escort kings_, at some time the lemmas page and king will be
     * prevent the speaker from erroneously producing Kings escort pages? The
   * Similarly the segments of the word forms ⬍king⬎ and ⬍page⬎ are spelled out
@@ -259,8 +259,8 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
   is a set of lexical concepts or the set of primitive conceptual features
   * explicitly the intended lexical concepts (see Fodor+ 1980) <~ we
   * primitive conceptual features that make up these concepts
-    (see, e.g., Bierwisch & Schreuder 1992; Goldman 1975;
-    Miller & Johnson-Laird 1976; Morton 1969)
+    (Bierwisch & Schreuder 1992; Goldman 1975; Miller & Johnson-Laird 1976;
+    Morton 1969)
 * theoretical and empirical arguments for this assumption of chunked retrieval
   * reviewed extensively (Roelofs 1992b; 1993; 1996a; and, especially, 1997a)
   * Any representation makes some information explicit at the expense of
@@ -271,7 +271,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
 * spatial
   * Any state of affairs can be expressed in many different ways. Take the
-    e.g. _I see a chair with a ball to the left of it_ and
+    eg _I see a chair with a ball to the left of it_ and
     _I see a chair with a ball to the right of it_ Hence one can use the
   * deictic perspective is a three-term relation between the speaker as origin,
     the relatum (chair), and the referent (ball).  However, right of results
@@ -292,7 +292,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 * Retrieval starts by enhancing the level of activation of the concept node
 * Activation then spreads through the network, each node sending a proportion of
 * The most highly activated lemma node is selected when verification allows
-* e.g. `escort` and `accompany` will be activated.  The escort node will be the
+* eg `escort` and `accompany` will be activated.  The escort node will be the
   most highly activated node, because it receives a full proportion of
   `escort(x, y)`’s activation, whereas accompany and other lemma nodes receive
   only a proportion of a proportion. Upon verification of the link between the
@@ -300,7 +300,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 * function words also involves lemma selection
   * Various routes of lemma activation are open here
     * just the way described for selecting escort, because they can be used to
-      express semantic content e.g.  prepositions, such as up or in
+      express semantic content eg  prepositions, such as up or in
     * prepositions can also function as parts of particle verbs (as in look up,)
       * In section 5.3 we will discuss how such particles are accessed
     * as part of a syntactic procedure
@@ -322,7 +322,7 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 
 ## 5.3.2. The single-lemma-multiple-morpheme case. escort+ing
 
-## 5.3.3. The single-concept-multiple-lemma, e.g. particle verbs
+## 5.3.3. The single-concept-multiple-lemma, eg particle verbs
 
 * Some experimental evidence on the encoding of particle verbs will be presented
   in section 6.4.4
@@ -414,8 +414,8 @@ BEHAVIORAL AND BRAIN SCIENCES (1999) 22, 1–75
 * a morphological level of form encoding that is distinct from a lemma level
   with morphosyntactic parameters
   * Some morphemic errors appear to concern the lemma level, whereas others
-    involve the form level (see, e.g., Dell 1986; Garrett 1975; 1980; 1988). For
-  * e.g. _how many pies does it take to make an apple?_ (from Garrett 1988), the
+    involve the form level (see, eg Dell 1986; Garrett 1975; 1980; 1988). For
+  * eg _how many pies does it take to make an apple?_ (from Garrett 1988), the
     * plurality of apple is stranded, that is, it is realized on pie. Thus, the
     * distributional properties of these morpheme exchanges are similar to those
       of whole-word exchanges

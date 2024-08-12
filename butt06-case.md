@@ -744,7 +744,7 @@ Miriam Butt
 ### 5.5.1 Semantic Form and Thematic Roles 101
 
 * theo presupposes the distinction between lexical semantics and thematic roles
-  * was argued for by Jackendoff (section 5.3). In particular,
+  * argued for by Jackendoff (see section 5.3)
   * Kiparsky assumes Bierwisch’s two-tiered lexical decomposition
     (Bierwisch 1983, 1986, Bierwisch and Schreuder 1992)
   * Semantic Form (SF) represents that subset of conceptual knowledge which
@@ -1014,8 +1014,8 @@ Miriam Butt
 
 ## 5.6 [Wunderlich's] Lexical Decomposition Grammar 111
 
-* Wunderlich (1997) to account for argument and case patterns and argument al-
-  ternations crosslinguistically
+* Wunderlich (1997) accounted for
+  argument and case patterns and argument alternations crosslinguistically
   * primarily a theory of linking and was inspired by Kiparsky’s linking theory
   * later it in turn informed the further development of Kiparsky’s theory
   * Kiparsky adopted the Semantic Form (SF) representation for argument struct

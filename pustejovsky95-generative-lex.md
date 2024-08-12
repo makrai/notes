@@ -1037,7 +1037,7 @@ ebben a fejezetben nincs semmi értelmes, a következőben viszont van
 ## 8.2 Nominals with Unified Types 142
 
 * multiple inheritance
-  * has been explored in a generative lexicon
+  * explored in a generative lexicon
     * to some extent in Pustejovsky and Boguraev (1993) and
     * more generally in Copestake (1992) and Copestake+  (1993)
 * different aspects of objects become more or less prominent as context varies

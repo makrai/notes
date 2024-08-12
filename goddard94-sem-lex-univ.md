@@ -35,7 +35,7 @@ Cliff Goddard and Anna Wierzbicka (eds)
 
 # Opening Statement Anna Wierzbicka
 
-* This set of papers is the first attempt ever to 
+* This set of papers is the first attempt ever to
   empirically test a hypothetical set of semantic and lexical universals
   across a number of genetically and typologically diverse languages
   * parallel and strictly comparable answers to the same set of questions
@@ -50,33 +50,30 @@ Cliff Goddard and Anna Wierzbicka (eds)
 
 ## 1.1 semantic theory underlying the present work
 
-### 1. Semiotic Principle. A sign cannot be reduced/analysed to non-signs
-to any combination of things which are not themselves signs; Peirce (1932)
+### 1.1.1 Semiotic Principle. A sign cannot be reduced/analysed to non-signs
 
-* principle
- * what philosophers know as a fully intensional conception of meaning
- * incompatible with
+* ie to any combination of things which are not themselves signs; Peirce (1932)
+* in philosophy: a fully intensional conception of meaning
+* incompatible with
   * reference-based or denotation-based approaches to meaning
-    eg classical truth-conditional semantics and
-    more recent developments in 'formal semantics'
-  * neurophysiological approach in the way Kay and McDaniel (1978) went
-    about 'defining' the meaning of colour terms
-  * speakers' usage (in the way Labov (1973) approach
-  * embodied action-schemata (in the style of Johnson (1987) and Lakoff
-    (1987))
+    * eg classical truth-conditional semantics and
+    * more recent developments in 'formal semantics'
+  * neurophysiological approach in the way Kay and McDaniel (1978) went about
+    'defining' the meaning of colour terms
+  * speakers' usage (Labov 1973)
+  * embodied action-schemata (in the style of Johnson (1987) and Lakoff (1987))
 * taken for granted in
   * much semiotic work (cf Eco 1984)
-  * European structural semanticists (eg  Greimas 1966, 1987)
-* only rarely endorsed in the mainstream Anglo-American linguistic
-  literature
+  * European structural semanticists (eg Greimas 1966, 1987)
+* only rarely endorsed in the mainstream Anglo-American linguistic literature
 * found in the work of Yorick Wilks and Jerrol Katz
 
-### 2. exhaustive decomposition into discrete terms
+### 1.1.2 exhaustive decomposition into discrete terms
 
 * Principle of Discrete and Exhaustive Analysis
-  * in a fully determinate way; that is, any complex meaning can be
-    decomposed into a combination of discrete other meanings, without
-    circularity and without residue
+  * Any complex meaning can be
+    decomposed into a combination of discrete other meanings,
+    in a fully determinate way, without circularity and without residue
 * The pursuit of _exhaustive_ analysis distinguishes the present approach from
   the tradition of _componential analysis_ which attempts to capture only
   that portion of a word's meaning which enters into _systematic opposition_
@@ -89,40 +86,39 @@ to any combination of things which are not themselves signs; Peirce (1932)
   others who propose _scalar_ notations for semantics, such as 'fuzzy set
   theory'
 
-### 3. Semantic Primitives Principle. There is a finite set of undecomposable
+### 1.1.3 Semantic Primitives Principle. A finite set of undecompable meanings
 
- meanings — semantic primitives
- * does not mean that all lexical universals must also be semantic
-   primitives. For example, it appears that all languages have a word
-   corresponding to 'mother'
- * Semantic primitives have an elementary _syntax_ whereby they combine to form
-   'simple propositions'
- * From their different standpoints, Katz and Fodor (1963), Postal (1966;
-   cited in Bierwisch 1967:3), Fillmore (1971), McCawley (1968, 1970) and
-   Lakoff (1970, 1972) all subscribed to the existence of semantic
-   primitives, also called elementary meaning components or atomic concepts
+* = semantic primitives
+* does not mean that all lexical universals must also be semantic primitives.
+  * eg it appears that all languages have a word corresponding to 'mother'
+* Semantic primitives have an elementary _syntax_ whereby they combine to form
+  'simple propositions'
+* Katz and Fodor (1963), Postal (1966; cited in Bierwisch 1967:3),
+  Fillmore (1971), McCawley (1968, 1970) and Lakoff (1970, 1972)
+  * From their different standpoints,
+    all subscribed to the existence of semantic primitives
+* also called elementary meaning components or atomic concepts
 
-   > The meaning of a lexical item  it is analysable into atomic
-   > conceptual elements
+> The meaning of a lexical item it is analysable into atomic conceptual
+> elements
 
- * Others interested in modelling the nature of language comprehension,
+* Others interested in modelling the nature of language comprehension,
   * such as
     * psychologists Miller and Johnson-Laird (1976) and
-    * artificial intelligence researchers Wilks (1976, 1977) and Schank
-      (1972),
+    * artificial intelligence researchers Wilks (1976, 1977) and Schank (1972)
   * also upheld the concept of semantic primitives
     (even going beyond most linguists in proposing a concrete set)
-  * Since the 1970s, general enthusiasm for semantic primitives has subsided,
-    for reasons we will consider in section 1.2
-  * their most persistent advocate has been Anna Wierzbicka
+* Since the 1970s, general enthusiasm for semantic primitives has subsided,
+  for reasons we will consider in section 1.2
+* their most persistent advocate has been Anna Wierzbicka
 
-### 4. The metalanguage of semantic representation
+### 1.1.4 The metalanguage of semantic representation
 
-* a minimal subset of ordinary natural language (Natural Semantic Metalanguage
-  (NSM) approach)
- * a defining metalanguage which is independent of natural language
+* a minimal subset of ordinary natural language
+  (Natural Semantic Metalanguage (NSM) approach)
+* a defining metalanguage which is independent of natural language
 * three sorts of position can be identified in the literature
- 1. Furthest from the spirit of Principle (IV) are proposals which employ
+ 1. Furthest from the spirit of this Principle are proposals which employ
     _obscure technical terms_ to represent posited primitives
     * McCawley (1968) used technical symbols borrowed from symbolic logic,
       such as \exists and \forall
@@ -165,59 +161,58 @@ to any combination of things which are not themselves signs; Peirce (1932)
   morphemes drawn from an ordinary language: it is rather an artificial,
   extra-linguistic syntax devised and imposed by the analyst
 
-### 5. Expressive Equivalence of NSMs. The NSMs derived from various languages
+### 1.1.5 Expressive Equivalence of NSMs
 
- will have the same expressive power.  Any simple proposition expressible
- in an NSM based on `L_1` will be expressible in an NSM based on `L_2`
+* The NSMs derived from various languages will have the same expressive power
+* Any simple proposition expressible in an NSM based on `L_1`
+  will be expressible in an NSM based on `L_2`
 
-### 6. Principle (VI): the linguistic exponents of semantically primitive meanings
+### 1.1.6 The linguistic exponents of semantically primitive meanings in
+different languages can be placed into one-to-one correspondence
 
- in different languages can be placed into one-to-one correspondence
- * differences like allolexy and part-of-speech membership; see section 2.1
-   and chapter 17)
- * entails that the exponents of semantic primitives in different languages
-   share a common set of combinatorial properties
+* differences like allolexy and part-of-speech membership; see section 2.1
+   and chapter 17
+* entails that the exponents of semantic primitives in different languages
+  share a common set of combinatorial properties
 
-### 7.  Strong Lexicalisation Hypothesis. Every semantically primitive meaning can
+### 1.1.7 Strong Lexicalisation Hypothesis
 
-  be expressed through a distinct word, morpheme or fixed phrase in every
-  language
-  * it sometimes happens that the same form serves as an exponent of
-    different primitives, although their distinct syntactic frames make it
-    appropriate to recognise polysemy
-    * in this volume the term 'polysemy' is used to cover both homonymy and
-      the situation of related meanings
-  * an exponent of a semantically primitive meaning may be _formally
-    complex_, including elements which function elsewhere as full morphemes
-    (These points are dealt with more fully in section 2.1.)
-  * a semantically primitive meaning will always be expounded by means of
-    specifically lexical material — be it a bound morpheme, a lexeme or a
-    fixed phrase (or phraseme); to put it another way, that the linguistic
-    exponents of primitive meanings will always be 'segmental signs'
-  * corner cases
-    * Goddard (1989) floated the idea that the imperative construction could be
-      taken as the true universal exponent of the notion of 'wanting', if it
-      turned out that lexical equivalents for WANT were lacking in some
-      languages
-    * Evans (this volume) and Chappell (this volume) consider the possibility
-      that the PART OF notion is not lexicalised in Kayardild and Mandarin, but
-      might be expressible through an inalienable possession-type grammatical
-      construction
-    * 'modifying' (such as LIKE or VERY) might lack a distinct lexical identity
-      if a language possessed a set of portmanteau morphemes (Evans, this volume)
-    * a primitive meaning may have no exponent at all, neither lexical nor
-      grammatical (Hale, this volume)
-  * at this early stage of investigation into lexical and semantic universals
-    it seems methodologically sounder to provisionally adopt the Strong
-    Lexicalisation Hypothesis
-  * Lyons (1977:331-332) applies a distinction
-    * _Formal universals_ concern the principles by which sense-components are
-      combined to yield the meanings of lexemes;
-    * _substantive universals_ concern the identity of semantic components
-    * the most extreme form of substantive universalism, that "there is a
-      fixed set of semantic components, which are universal in that they are
-      lexicalised in all languages
-    * that is precisely the thesis to be tested in the present work
+* Every semantically primitive meaning can be expressed through a distinct
+  word, morpheme or fixed phrase in every language
+* it sometimes happens that
+  the same form serves as an exponent of different primitives, although
+  their distinct syntactic frames make it appropriate to recognise polysemy
+  * in this volume the term 'polysemy' is used to cover
+    both homonymy and the situation of related meanings
+* an exponent of a semantically primitive meaning may be _formally
+  complex_, including elements which function elsewhere as full morphemes
+  (These points are dealt with more fully in section 2.1.)
+* a semantically primitive meaning will always be expounded by means of
+  specifically lexical material — be it a bound morpheme, a lexeme or a
+  fixed phrase (or phraseme); to put it another way, that the linguistic
+  exponents of primitive meanings will always be 'segmental signs'
+* corner cases
+  * Goddard (1989) floated the idea that the imperative construction could be
+    taken as the true universal exponent of the notion of 'wanting', if it
+    turned out that lexical equivalents for WANT were lacking in some languages
+  * Evans (this volume) and Chappell (this volume) consider the possib that
+    the PART OF notion is not lexicalised in Kayardild and Mandarin, but
+    might be expressible through an inalienable possession-type gramm const
+  * 'modifying' (such as LIKE or VERY) might lack a distinct lexical identity
+    if a language possessed a set of portmanteau morphemes (Evans, this volume)
+  * a primitive meaning may have no exponent at all, neither lexical nor
+    grammatical (Hale, this volume)
+* at this early stage of investigation into lexical and semantic universals
+  it seems methodologically sounder to provisionally adopt the Strong
+  Lexicalisation Hypothesis
+* Lyons (1977:331-332) applies a distinction
+  * _Formal universals_ concern the principles by which sense-components are
+    combined to yield the meanings of lexemes;
+  * _substantive universals_ concern the identity of semantic components
+  * the most extreme form of substantive universalism, that "there is a
+    fixed set of semantic components, which are universal in that they are
+    lexicalised in all languages
+  * that is precisely the thesis to be tested in the present work
 
 ## 1.2 literature on semantic and lexical universals in the 20th century
 
@@ -234,7 +229,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
   word-meanings, like phonemes, could be analysed into _distinctive features_
 
 > although the complexes of components are unique to particular languages,
-> the ultimate components of sound and meaning are language-neutral.  
+> the ultimate components of sound and meaning are language-neutral.
 (Lyons 1977:245)
 
 * Prague School (especially Roman Jakobson)
@@ -243,7 +238,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
     * eight examples of the "ultimate terms of semantic description" —
       * identity, time, space, body, movement, territory, life and fear
       * "presumably biologically given notions"
-  * Bierwisch (1967:3-4) 
+  * Bierwisch (1967:3-4)
     * universal semantic markers corresponded to "certain deep seated, innate
       properties of the human organism and the perceptual apparatus"
     * a "biological determination" of the ultimate components of concepts
@@ -301,14 +296,15 @@ to any combination of things which are not themselves signs; Peirce (1932)
     and their syntax is based on predicate calculus,
     rather than being drawn from the language being analysed
   * according to Mel'cuk there is no reason to believe,
-    on the assumptions of the Meaning-Text Model, that 
+    on the assumptions of the Meaning-Text Model, that
     * the elementary lexical meanings of different languages correspond
     * ie there are any substantive semantic universals at all
 
 ## The NSM Search for Universal Semantic Primitives p20
 
 * list,
-  * first published in English in the book Semantic primitives (Wierzbicka 1972:15-16)
+  * first published in English in the book Semantic primitives
+    (Wierzbicka 1972:15-16)
   * 14 elements
   * I, YOU, SOMEONE, SOMETHING, WORLD, THIS, WANT, DON'T WANT, FEEL, THINK OF,
     IMAGINE, SAY, BECOME, BE A PART OF
@@ -417,7 +413,7 @@ to any combination of things which are not themselves signs; Peirce (1932)
   * Japanese `this` nominal modifier vs a referring expression in its own right
 * how to reconcile the existence of language-specific morphosynt categories
   with the NSM claim that the semantic metalanguage is isomorphic across langs?
-  * in the natural semantic metalanguage based on Latin, 
+  * in the natural semantic metalanguage based on Latin,
     _volo_ would never occur without an explicit subject
 
 ### 2.1.4 Differences in Range of Use
@@ -434,8 +430,8 @@ to any combination of things which are not themselves signs; Peirce (1932)
 1. non-paraphrasable effects resulting from the association between an exponent
    and other, complex meanings also expressible by the same lexical form
    eg English _feel_ may expound FEEL, but the same word also expresses
-   meanings to do with the sense of touch; whereas 
-   the Malay equivalent _rasa_ is poly-semous with the meaning 'taste', and 
+   meanings to do with the sense of touch; whereas
+   the Malay equivalent _rasa_ is poly-semous with the meaning 'taste', and
    the Yankunytjatjara equivalent _tjuni_ with the meaning 'belly'
 2. a result of formal complexity eg English someone and something
 3. sound shape (or even the graphic shape)
@@ -503,8 +499,8 @@ to any combination of things which are not themselves signs; Peirce (1932)
 
 * THIS, THE SAME, OTHER, ONE, TWO, MANY, ALL
 * THIS is neutral with respect to animacy, personhood and discreteness:
-  * though every language appears to distinguish 'who' from 'what', none appears
-  to distinguish between 'this who ' and 'this what '
+  * though every language appears to distinguish 'who' from 'what',
+    none appears to distinguish between 'this who' and 'this what'
   * not necessarily restricted to a 'modifying' role, but may be used on its
     own to refer directly to a situation, or to some aspect of a situation
   * here = this+where, now = this+when
@@ -526,8 +522,8 @@ to any combination of things which are not themselves signs; Peirce (1932)
   the decomposition of numerous lexical items involving the notions of parts
   and kinds, and for some grammatical phenomena such as switch-reference
 * we have negation
-* All the determiner-like and quantifier-like elements in this grouping can ..
-  be combinable with the substantives SOMEONE, SOMETHING and PEOPLE,
+* All the determiner-like and quantifier-like elements in this grouping can be
+  combinable with the substantives SOMEONE, SOMETHING and PEOPLE
   * other 'complex substantives'  like 'the same person', 'two people',
     'the same two people', 'these two people', and so on in many languages,
     are normally realised as 'third-person pronouns'
