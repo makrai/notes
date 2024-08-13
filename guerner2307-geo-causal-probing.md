@@ -4,9 +4,9 @@ arXiv:2307.15054 [cs.CL]
 
 # Abstract
 
-* The linear subspace hypothesis (Bolukbasi+ 2016):
+* The linear subspace hypothesis (Bolukbasi+ 2016)
   * in a language model's representation space, all information about a concept
-    such as verbal number is encoded in a linear subspace
+    eg verbal number is encoded in a linear subspace
 * auxiliary classification tasks to identify and evaluate candidate subspaces
   that might give support for this hypothesis 
 * We: intrinsic criteria which characterize an ideal linear concept subspace
