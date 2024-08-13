@@ -11,13 +11,13 @@ a generic ReFT training library https://github.com/stanfordnlp/pyreft
   * representations encode rich semantic information
     * interpretability work has shown
     ~> editing representations might be a more powerful alternative
-* we: a family of Representation Finetuning (ReFT) methods. ReFT methods
-  operate on a frozen base model and learn
-  task-specific interventions on hidden representations
-* eg Low-rank Linear Subspace ReFT (LoReFT), and we identify
-  * an ablation of this method, DiReFT, that trades some performance for
-    increased efficiency. Both are drop-in replacements for existing PEFTs
-  * 15x--65x more parameter-efficient than LoRA. We showcase LoReFT
+* we: a family of Representation Finetuning (ReFT) methods
+  * operate on a frozen base model and learn
+    task-specific interventions on hidden representations
+* eg Low-rank Linear Subspace ReFT (LoReFT)
+  * an ablation of this method, DiReFT, trades some performance for increased
+    efficiency. Both are drop-in replacements for existing PEFTs
+  * 15x--65x more parameter-efficient than LoRA
   * experiments on eight commonsense reasoning tasks, four arithmetic reasoning
     tasks, instruction-tuning, and GLUE. In all these evaluations, our
   * ReFTs deliver the best balance of efficiency and performance, and
@@ -25,47 +25,47 @@ a generic ReFT training library https://github.com/stanfordnlp/pyreft
 
 # 1 Intro
 
-* Pretrained language models (LMs) are frequently finetuned to adapt them to
-  new domains or tasks [Dai and Le, 2015]. With finetuning,
+* Pretrained language models (LMs) are frequently finetuned
+  to adapt them to new domains or tasks [Dai and Le, 2015]
   * a single base model can be adapted to a variety of tasks given only small
     amounts of in-domain data. However, finetuning large LMs is expensive
 * Parameter-efficient finetuning (PEFT) methods propose to address the high
-  costs of full finetuning by updating a small number of weights. This
-  * reduces memory usage and training time, and PEFTs achieve
-    similar performance to full finetuning in many settings [Hu+ 2023]
+  costs of full finetuning by updating a small number of weights
+  * reduces memory usage and training time
+  * similar performance to full finetuning in many settings [Hu+ 2023]
   * current SOTA PEFTs modify weights rather than representations
 * representations encode rich semantic information, suggesting that
   editing representations might be a more powerful alternative
   to weight updates
-* we pursue this hypothesis by developing and motivating Representation
-  Finetuning (ReFT). Instead of adapting model weights
+* we pursue this hypothesis by developing and motivating
+  Representation Finetuning (ReFT). Instead of adapting model weights
   * train interventions that manipulate a small fraction of model reprs
     in order to steer model behaviors to solve downstream tasks at inference
   * drop-in replacements for weight-based PEFTs
 * recent work in LM interpretability intervenes on representations to
   * find faithful causal mechanisms [Geiger+ 2023b] and to
   * steer model behaviours at inference time [Turner+ 2023, Li+ 2024]
-* a generalisation of the representation-editing work of Wu+ [2024a], Turner+
-  [2023], and Zou+ [2023], see appendix B for details
+* a generalisation of the representation-editing work of
+  Wu+ [2024a], Turner+ [2023], and Zou+ [2023], see appendix B for details
 * a strong and highly efficient instance of the ReFT family that we call
   Low-rank Linear Subspace ReFT (LoReFT)
-  * a parametrisation of ReFT that intervenes on hidden representations in the
-    linear subspace spanned by a low-rank projection matrix,
+  * a parametrisation of ReFT that intervenes on hidden representations
+    in the linear subspace spanned by a low-rank projection matrix,
   * building directly on the distributed alignment search (DAS) method 
     (Geiger+ [2023b] and Wu+ [2023])
 * We also identify an ablation of this method (DiReFT) that
   trades some performance for increased efficiency
 * We evaluate our ReFTs on LLaMA-family models and small-scale LMs
-  against existing PEFTs on standard benchmarks from
+  against existing PEFTs on standard benchmarks
   * four domains: commonsense reasoning, arithmetic reasoning,
-    instruction-following, and natural language understanding. Compared to
+    instruction-following, and natural language understanding
   * LoReFT uses 15×–65× times fewer parameters than LoRA while achieving
     SOTA performance on commonsense reasoning, instruction-following, and NLU
     against the strongest PEFTs
 
 # 2 Related work
 
-## Parameter-efficient finetuning methods (PEFTs) train a fraction
+## Parameter-efficient finetuning methods (PEFTs) train a fract of the params
 
 * We classify PEFTs into three categories:
 
@@ -73,18 +73,18 @@ a generic ReFT training library https://github.com/stanfordnlp/pyreft
 on top of the frozen pretrained model
 
 * Series adapters insert components between LM attention or MLP layers
-  [Houlsby+ 2019, Pfeiffer+ 2020, Wang+ 2022, He+ 2022b, Fu+ 2021], while
+  [Houlsby+ 2019, Pfeiffer+ 2020, Wang+ 2022, He+ 2022b, Fu+ 2021]
 * parallel adapters add modules alongside existing components [He+ 2022a]
-* the new components that cannot be easily folded into existing weights,
+* the new components cannot be easily folded into existing weights,
   ~> they impose an additional burden at inference time.1
-* Several very recent papers introduce new adapter architectures but do
+* Several very recent papers introduce new adapter architectures
 * LLaMA-Adapter [Zhang+ 2024b], LLaMA-Adapter v2 [Gao+ 2023],
   Aligner [Ziheng+ 2023]
   * hE
-    * not benchmark them on the tasks we consider, or
-    * they perform hyperparameter-tuning in a different setup than done by us
+    * not benchmarked on the tasks we consider, or
+    * they perform hyperparameter-tuning in a different setup than us
 
-### LoRA [Hu+ 2022] and DoRA [Liu+ 2024c] use
+### LoRA [Hu+ 2022] and DoRA [Liu+ 2024c]
 
 * low-rank matrices to approximate additive weight updates during training, and
 * require no additional overhead during inference since the weight updates can
@@ -95,33 +95,34 @@ on top of the frozen pretrained model
 ### Prompt-based methods
 
 * add randomly-initialised soft tokens to the input (usually as a prefix) and
-  train their embeddings while keeping the LM weights frozen [Li and Liang,
-  2021]. These methods are
-* often far from optimal compared to other PEFTs, and come at the cost of
+  train their embeddings while keeping the LM weights frozen
+  [Li and Liang, 2021]
+* often far from optimal compared to other PEFTs
 * significant inference overhead
 * A variant of this method where hidden-layer activations are also tuned was
   introduced as a baseline in Hu+ [2022], with better performance
 
 ## Representation editing
 
-* activation steering and representation engineering shows that
+* activation steering and representation engineering
+* methods
   * adding fixed or task-specific steering vectors [Subramani+ 2022,
     Turner+ 2023, Zou+ 2023, Liu+ 2024b, Vogel, 2024, Li+ 2024] or applying
   * concept erasure [Ravfogel+ 2022, Belrose+ 2023, Avitan+ 2024, Singh+ 2024]
-    to the residual stream can
-    enable a degree of control over pretrained LM generations
-    without the need for resource-intensive finetuning [Wu+ 2024a].  The
+    to the residual stream 
+* can enable a degree of control over pretrained LM generations
+  without the need for resource-intensive finetuning [Wu+ 2024a]
 * ie representations induced by pretrained LMs carry rich semantic structure
 
-## Interventional interpretability. Much recent work has used
+## Interventional interpretability, much recent work has used
 
 * interventions on model-internal states to test hypotheses about
   how LMs implement various behaviours
 * interventions on linear subspaces of representations
   * human-interpretable concepts are encoded linearly
     [Smolensky, 1986, Rumelhart+ 1986, McClelland+ 1986]
-    * Paul Smolensky. Neural and conceptual interpretation of Parallel
-      Distributed Processing (PDP) models
+    * Paul Smolensky. Neural and conceptual interpretation of
+      Parallel Distributed Processing (PDP) models
       In PDP: Explorations in the Microstructure of Cognition, volume 2: 1986
     * David E. Rumelhart, James L. McClelland, and PDP Research Group
       Parallel Distributed Processing: Explorations in the Microstructure of
@@ -155,16 +156,15 @@ on top of the frozen pretrained model
 
 * To evaluate our ReFTs against existing PEFTs, we conduct experiments across
 * four diverse NLP benchmarks covering more than 20 datasets (details: App C)
-* both masked and autoregressive LMs at different
-* scales, ranging from RoBERTa-base [Liu+ 2019] with 125M to LLaMA models
-  [Touvron+ 2023a,b] with 13B parameters
+* both masked and autoregressive LMs
+  * scale ranging from RoBERTa-base [Liu+ 2019] with 125M
+    to LLaMA models [Touvron+ 2023a,b] with 13B parameters
 * against existing PEFTs such as
   * prefix-tuning [Li and Liang, 2021],
   * adapter-tuning with both Series Adapters and Parallel Adapters,
     * BitFit [Ben Zaken+ 2022]
       Elad Ben Zaken, Yoav Goldberg, and Shauli Ravfogel
-      BitFit: Simple parameter-efficient finetuning for transformer-based
-      masked language-models
+      BitFit: Simple parameter-efficient finetuning for transformer-based MLMs
       ACL 2022 (Volume 2: Short Papers), pages 1–9, Dublin, Ireland, May 2022
     * RED [Wu+ 2024a]
       Muling Wu, Wenhao Liu, Xiaohua Wang, Tianlong Li, Changze Lv,
@@ -181,19 +181,19 @@ on top of the frozen pretrained model
 * details
   * In our comparisons, we use hyperparameter-tuned scores from previous works
     when possible
-  * We load our base LMs in torch.bfloat16 to save memory. All of our
+  * We load our base LMs in torch.bfloat16 to save memory
   * a single GPU: NVIDIA A100 40G/80G or RTX 6000
   * Examples of raw model generations are in appendix I
 
 # 5 Limitations
 
-* we mainly explored the LLaMA-family of models. In future work, we hope to
+* we mainly explored the LLaMA-family of models
 * future
-  * vision–language models such as LLaVA [Liu+ 2024a]. The capabilities
-  * large hyperparameter search space ~> automating this search. We provide
-  * LM personalisation with ReFT in a few-shot setting in appendix G.2. We hope
-  * explore why ReFT works, and we provide some of our early
-  * explorations focused on memorisation (appendix F.1, appendix F.2). We are
+  * vision–language models such as LLaVA [Liu+ 2024a]
+  * large hyperparameter search space ~> automating this search
+  * LM personalisation with ReFT in a few-shot setting, see appendix G.2
+  * explore why ReFT works
+  * explorations focused on memorisation (appendix F.1, appendix F.2)
   * whether learned orthogonal subspaces can be composed together without
     adaptation. Some encouraging initial findings are in appendix G.1
 
@@ -210,13 +210,13 @@ on top of the frozen pretrained model
     to steer model behavior [Li+ 2024, Zou+ 2023]
 * ReFT advances this line of work by showing one way that such steering can be
   learned, rather than being merely a post hoc analysis step
-* ReFT may create new causal pathways
+* ReFT may creates new causal pathways
   * The precise ways in which ReFT works 
   * these methods intervene on representations,
   * hE the causal effect of such interventions may only emerge in the model’s
     upstream computations
   * ie the power of ReFT may come from the fact that
-    it creates new causal pathways or modifies the strength of some existing 1s
+    it creates new causal pathways or modifies the strength of existing ones
 * future: more structured ReFTs to modify complex causal pathways in LMs
 
 ## ReFT and model interpretability
@@ -230,17 +230,17 @@ on top of the frozen pretrained model
 * The success of ReFT suggests to us a quite different approach to interperet,
   * assumption: neurons will play different roles in different contexts
 
-## Evaluation practices in PEFT research. In this work,
+## Evaluation practices in PEFT research
 
-* we hyperparameter-tune ReFT on development sets that do not overlap with the
-  test set
+* we hyperparameter-tune ReFT on development sets
+  that do not overlap with the test set
 * hE a considerable portion of the literature on PEFTs directly hill-climbs
   performance on test sets. This results in overfitting to specific tasks,
-* future work can introduce benchmarks for evaluating PEFTs and ReFTs. These
-  * compute~ or time-matched hyperparameter-tuning comparisons, and they should
+* future work can introduce benchmarks for evaluating PEFTs and ReFTs
+  * compute~ or time-matched hyperparameter-tuning comparisons
   * disallow any kind of tuning or model selection based on the test set
 
-# App A `pyreft`: A ReFT-native Python Library
+# A. `pyreft`: A ReFT-native Python Library
 
 * To lower the cost of switching from PEFTs to ReFT, we release a Python lib
 * built on top of pyvene [Wu+ 2024b], a library for performing and
@@ -248,20 +248,20 @@ on top of the frozen pretrained model
 * Any pretrained LM available on HuggingFace is supported through our library
 * finetuned models can be easily uploaded to HuggingFace. The following example
   shows steps to wrap a Llama-2 7B model with a single intervention on the
-  residual stream output of the 19-th layer:
+  residual stream output of the 19-th layer
 
 # B Describing existing methods under the ReFT framework
 
-## General comments about expressivity of ReFT. Given that
+## General comments about expressivity of ReFT
 
-* previous works have unified PEFTs under a single framework [He+ 2022a], one
+* previous works have unified PEFTs under a single framework [He+ 2022a]
 * why not express ReFT as a PEFT method? The main reason is that
 * PEFT frameworks lack the notion of time or sequence (see the unified PEFT
-  view provided in Table 1 on pg. 5 of He+ 2022a). In PEFTs,
+  view provided in Table 1 on pg 5 of He+ 2022a)
   * representation modifications are necessarily applied to every token in the
-    sequence, even in recent variants such as AdaLoRA [Zhang+ 2023]. A key
-* ReFT  leverages representations over time and
-  intervenes only on a small number of them while being effective. More
+    sequence, even in recent variants such as AdaLoRA [Zhang+ 2023]
+* ReFT leverages representations over time and
+  intervenes only on a small number of them while being effective
   * the notation of time is important for future versions of ReFT that
     intervene on representations schematically (eg intervene on the first token
     at some early layers and then intervene on the last token at some later
@@ -270,7 +270,7 @@ on top of the frozen pretrained model
     libraries 7 enforce weight-based updates without supporting flexible
     representation-based interventions
 
-# Datasets
+# C Datasets
 
 ## C.1 Commonsense reasoning
 
@@ -347,19 +347,19 @@ We train and evaluate with seven datasets of math world problems:
 * Intervening on multiple positions delivers significant gains. We find that
   * intervening only on a single token position (eg just the first one or the
     last one) is always less optimal than intervening on multiple tokens
-  * However, intervening on excessive number of tokens might harm performance
+  * hE intervening on excessive number of tokens might harm performance
     by slowing down convergence
-* Intervening on all layers first, and then shrink down. Intervening on all
-  layers often provides a good baseline. We recommand users to start with all
+* Intervening on all layers first, and then shrink down
+  * Intervening on all layers often provides a good baseline
   * shrink down the number of intervening layers depending on the desired
     performance–parameter count balance
-* Higher rank may not entail better performance. High rank entails higher
+* Higher rank may not entail better performance
   * (likely due to slower convergence)
   * We recommend users to start with a rank that is lower than 32 (eg rank 4)
 * Tie intervention weights as much as you can
   * In the paper, we explore tying the intervention weights between prefix and
-    suffix token positions. It automatically halves the parameter count, and it
+    suffix token positions. It automatically halves the parameter count
   * We suspect weight sharing across layers may also help
 * Hyperparameter tuning with learning rate, warmup ratio, dropout rate and
   weight decay should go after other hyperparameters
-  * they have much smaller effect than ReFT-spec ones
+  * they have much smaller effect than ReFT-spec hyperparameters
