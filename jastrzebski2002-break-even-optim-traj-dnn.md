@@ -4,7 +4,7 @@ a spotlight at ICLR 2020 arXiv:2002.09572 [cs.LG]
 
 # Abstract
 
-* The early phase of training of deep neural networks is critical for their
+* The early phase of training of deep neural networks is critical
   * we study how the hyperparameters of stochastic gradient descent (SGD) used
     in the early phase of training affect the rest of the optimization traject
 * there is a "break-even" point on this trajectory,
@@ -18,7 +18,6 @@ a spotlight at ICLR 2020 arXiv:2002.09572 [cs.LG]
   become visible after the break-even point
   * using a low learning rate results in bad conditioning of the loss surface
     even for a neural network with batch normalization layers
-    * we Complement prior work
 * ie key properties of the loss surface are
   strongly influenced by SGD in the early phase of training
 * future: studying the impact of the identified effects on generalization

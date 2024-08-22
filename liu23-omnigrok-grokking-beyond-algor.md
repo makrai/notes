@@ -8,22 +8,21 @@ grokking, loss landscape, neural dynamics, representation learning, init
 
 # TL;DR
 
-* understand grokking through the lens of neural loss landscapes, and show
-  grokking can occur for various datasets beyond algorithmic datasets.
+* understand grokking through the lens of neural loss landscapes
+* grokking can occur for various datasets beyond algorithmic datasets
 
 # Abstract
 
-* Grokking, the unusual,elusive phenomenon for algorithmic datasets where
+* Grokking, the unusual, elusive phenomenon for algorithmic datasets where
   generalization happens long after overfitting the training data
 * We aim to understand grokking by analyzing the loss landscapes of NNs,
-  * the mismatch between training and test losses as the cause for grokking. We
+  * the mismatch between training and test losses as the cause for grokking
   * "LU mechanism": training and test losses (against model weight norm)
     typically resemble "L" and "U", respectively
 * This simple mechanism can nicely explain many aspects of grokking:
-  data size dependence, weight decay dependence, the emergence of
-  representations, etc.
+  data size dependence, weight decay dependence, the emergence of reprs, etc
 * Guided by the intuitive picture, we are able to
   induce grokking on tasks involving images, language and molecules
   * nL the grokking signals are sometimes less dramatic
 * We attribute the dramatic nature of grokking for algorithmic datasets to
-  representation learning.
+  representation learning

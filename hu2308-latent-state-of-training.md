@@ -68,7 +68,7 @@ arXiv:2308.09543 [cs.LG] Under review as submission to TMLR
   2. We discover detour states := latent states associated with slower converg
     * a general way to assign semantics onto latent states in training maps
       (Sections 2.3, 3.4)
-    * induce/remove detour states in image/grokking by de/stabiliz optimization
+    * induce/remove detour states in image classif by de/stabiliz optimization
       * induce detour states in image classification by destabilizing the
         optimization process and,
       * remove detour states in grokking by stabilizing the optimizat process
@@ -377,13 +377,13 @@ arXiv:2308.09543 [cs.LG] Under review as submission to TMLR
     * These modeling decisions (discrete vs continuous latent space,
       dimensionality reduction) all impact the interpretation of the trained
       model, so we invite readers to consider them carefully
-* measures literature: find metrics that can
+* measure literature: find metrics that can
   predict discontinuous improvement or convergence in neural networks
   * Barak+ (2022) first hypothesized the existence of hidden progress measures
   * Olsson+ (2022) found a progress measure for induction heads
     in Transformer-based language models, and
   * Nanda+ (2023): a progress measure for grokking in the modular arithm task
-* The L2 norm is also known to be important to and predictive of grokking,
+* The L2 norm is important to and predictive of grokking,
   * motivates the use of weight decay to accel convergence in grokking settings
     (Nanda+ 2023; Power+ 2022; Thilak+ 2022)
   * Liu+ (2023) highlight the importance of the L2 norm by
@@ -420,8 +420,8 @@ arXiv:2308.09543 [cs.LG] Under review as submission to TMLR
 * a low-dimensional, discrete representation of training dynamics
 * Via the HMM, this representation is generally predictive of the next set of
   metrics in the training trajectory, given the previous metrics
-* Furthermore, in some cases this low-dimensional, discrete representation can
-  even be used to predict the iteration in which models converge
+* Furthermore, in some cases this low-dimensional, discrete representation
+  can even be used to predict the iteration in which models converge
 
 ## 5.1 Grokking and the Optimization Landscape
 
@@ -442,10 +442,10 @@ arXiv:2308.09543 [cs.LG] Under review as submission to TMLR
   * These detour states are generally characterized by specific requirements in
     metrics such as the L2 norm
   * eg in the modular arithmetic setting, avoiding detour states requires a
-    “just-right” decrease in the L2 norm–not too little, and not too much
-  * Liu+ (2023): grokking occurs because the weight norm is slow to reach a
-    shell of particular L2 norm in weight space, previously called
-    the “Goldilocks zone” (Fort & Scherlis, 2018)
+    “just-right” decrease in the L2 norm: not too little, and not too much
+  * Liu+ (2023): grokking occurs because the weight norm is
+    slow to reach a shell of particular L2 norm in weight space,
+    previously called the “Goldilocks zone” (Fort & Scherlis, 2018)
   * our results suggest that the rate of change is also crucial
     * not only the momentary value of the norm
 
