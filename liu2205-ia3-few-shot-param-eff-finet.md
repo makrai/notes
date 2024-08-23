@@ -119,7 +119,7 @@ NeurIPS 2022 arXiv:2205.05638 [cs.LG]
   * add low-rank adapters using hypercomplex multiplication [i, j...] [28]
   * prompt tuning [14] and prefix tuning [29] concatenate learned continuous
     embeddings to the model’s input or activations to induce it for a task;
-    this can be seen as a PEFT method [30]. SOTA PEFT methods
+    this can be seen as a PEFT method [30]
   * can match the performance of fine-tuning all of the model’s parameters
     while updating only a tiny fraction (eg 0.01%) of the model’s parameters
 * drastically reduces the memory and storage requirements for training & saving
@@ -164,15 +164,15 @@ NeurIPS 2022 arXiv:2205.05638 [cs.LG]
 
 # B Related work
 
-* prompt tuning is one of the most parameter-efficient methods for LLMs [29,
-  14, 53]
+* prompt tuning is one of the most parameter-efficient methods for LLMs
+  [29, 14, 53]
   * Liu+ [54] introduce several tricks to improve prompt tuning,
   * An+ [55] tune prompts along with input embeddings for boost in performance,
   * Chen+ [56] improve prompt embeddings through continued pre-training
   * optimization difficulties when training prompt embeddings,
   * Diao+ [57] recently used black-box optimization to train prompt embeddings
-    without requiring gradients. Several works have analyzed prompt tuning
-  * from the perspective of interpretability Khashabi+ [58] and its
+    without requiring gradients
+  * from the perspective of interpretability Khashabi+ [58]
   * similarity to other PEFT methods He+ [30]
   * applications for NLP including continual learning [59], model robustness
     [60, 61], summarization [62], machine translation [63], co-training [64],

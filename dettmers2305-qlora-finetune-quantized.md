@@ -276,7 +276,7 @@ Guanaco
 
 * we use Low-rank Adapters [28] (LoRA)
 * nL prompt tuning [48, 33, 34], tuning the embedding layer inputs [1],
-  tuning hidden states (IA3 ) [37], adding full layers [27],
+  tuning hidden states (IA3) [37], adding full layers [27],
   tuning biases [70],
   learning a mask over weights based on Fisher information [54], and a
   combination of approaches [23]

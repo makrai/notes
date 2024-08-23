@@ -102,10 +102,9 @@ how LLMs work, and what this information means for psychology
 
 * tend to be accessible to users with no technical background. For example,
 * no worry about the computational needs required for hosting and serving LLMs
-
 * disadvantages
   * limited customization, transparency, and in many instances, financial cost
-  * not allow for fine-tuning (only prompt-tuning) and the 
+  * not allow for fine-tuning (only prompt-tuning) and the
   * input format is currently limited to text written in a box (for example,
     users cannot upload a file with multiple variables). Although some APIs do
   * not allow users to inspect the models’ parameters, which can be important
@@ -114,7 +113,7 @@ how LLMs work, and what this information means for psychology
 ### Downloading and hosting models
 
 * when smaller LLMs are sufficient and when data security and control over the
-  models is a high priority. Having more control means 
+  models is a high priority. Having more control means
 * more room for customization, evaluation of ‘black box’ model parameters,
   greater data privacy and, in some cases, decreased costs. Technical expertise
   might become less of a barrier to working with downloaded models owing to the
@@ -137,14 +136,14 @@ how LLMs work, and what this information means for psychology
 
 * programming language
   * R: Fully pre-trained, off-the-shelf LLMs can be used in a browser or
-    accessed through an R package (for example, text). 
+    accessed through an R package (for example, text).
   * Python: Deeper engagement with language models might require work with
     Python libraries, such as Hugging Face.  These are becoming easier to use
 * DLATK
   * A good trade-off between complexity and the range of possible applications
-  * open-source Differential Analysis ToolKit (DLATK). This is 
+  * open-source Differential Analysis ToolKit (DLATK). This is
   * a Linux-based library that provides a user-friendly interface to many NLP
-    Python libraries, including those that provide access to LLMs113. 
+    Python libraries, including those that provide access to LLMs113.
 * LLMs have already become integrated in products such as Google Sheets
   (eg SheetGPT.ai), and we anticipate that LLMs will become increasingly more
   accessible to the consumer through intuitive interfaces.
@@ -166,8 +165,8 @@ how LLMs work, and what this information means for psychology
 * immense quantities of training data and complex architecture. The most common
 * ‘transformer’ forms the backbone of BERT, GPT, Bard and LaMDA. These LLMs are
 * a massive systems of nonlinear regression equations (specifically, neural
-  network machine learning models). These models often have 
-  * millions of parameters that were 
+  network machine learning models). These models often have
+  * millions of parameters that were
   * trained by taking sentences as predictors (an X in a regression equation)
     and masked-out words or the next sentence as an outcome (Y)
   * backpropagation: The prediction error from one fit is then used to update
@@ -175,32 +174,32 @@ how LLMs work, and what this information means for psychology
       between the model output and the target text. This
 * pre-training (Fig. 2a). The newest models
 * instruction tuning and reinforcement learning from human feedback to further
-  * ChatGPT and GPT-4 involve these kinds of steps, including 
+  * ChatGPT and GPT-4 involve these kinds of steps, including
   * ~> generate coherent and relevant
-    language18,19.  
-* Fig. 2: Pre-training, fine-tuning and prompt-tuning of LLMs.  figure 2
+    language18,19.
+* Fig. 2: Pre-training, fine-tuning and prompt-tuning of LLMs
   * pre-training, a dataset of sentences is used as input to the LLM
   * Fine-tuning is the subsequent process of refining the model on a smaller,
-  * Prompt-tuning involves optimizing the input prompts to guide the
-* Whereas 
-  * pre-training forms the base for general language understanding, 
-  * fine-tuning and prompt-tuning adapt the model to a specific task 
+  * Prompt-tuning involves optimizing the input prompts
+* Whereas
+  * pre-training forms the base for general language understanding,
+  * fine-tuning and prompt-tuning adapt the model to a specific task
     with and without changing the model’s parameters, respectively.
 * Off-the-shelf LLMs are powerful, but they cannot fulfil their potential for
   psychology research without further adaptation. For example, in the
-  * eg LLM-generated dialogue on the right of Fig. 1, 
+  * eg LLM-generated dialogue on the right of Fig. 1,
   * the LLM-generated college advisor asked whether the LLM-generated applicant
     had created a ‘timeline’ or taken ‘online courses’
-    * reasonable things for an advisor to say but are 
+    * reasonable things for an advisor to say but are
     * not necessarily good advice
     * according to a large, rigorous, randomized experiment funded by the US
       Department of Education, this kind of college-advising guidance has no
       effect on college persistence compared to a control condition20. In
     * ie on-topic, grammatically correct useless information.
-    * ‘reduce stress’, ‘take breaks’ and practice ‘self-care’. These are 
-    * common themes in advice from advisors. However they are generally 
+    * ‘reduce stress’, ‘take breaks’ and practice ‘self-care’. These are
+    * common themes in advice from advisors. However they are generally
     * not what research on stress shows is helpful or what might be most
-      appropriate given the context21,22. The LLM seems to have acquired 
+      appropriate given the context21,22. The LLM seems to have acquired
     * [reflects] a stress-is-debilitating mindset23 — the notion that stress
       always harms performance and health.
     * contradicted by research that emphasizes the importance of understanding
@@ -218,43 +217,43 @@ how LLMs work, and what this information means for psychology
 ## Adapting LLMs for specific purposes
 
 * off-the-shelf LLMs might provide insight into the way people on the internet
-  see concepts such as a stress-can-be-enhancing mindset, 
+  see concepts such as a stress-can-be-enhancing mindset,
 * much of the public’s conversation about LLMs has focused on off-the-shelf
 * hE scientists typically want to study constructs using scientific conceptions
   of those constructs.  Thus, using LLMs to advance scientific theory and to
 * train (or ‘tune’) LLMs on high-quality data curated by experts for a given
-  construct.  Moreover, they will need to 
+  construct.  Moreover, they will need to
 * conduct evaluation experiments to see whether the LLM-generated data are as
   effective as intended. This need for additional training and evaluation is
 * eg DocsGPT is an LLM that is pre-trained on medical prose to help with
-  clinical correspondence and charting26. 
+  clinical correspondence and charting26.
 * Here we describe how fine-tuning and prompt-tuning can be used to tune LLMs
-  to specific 
-  * domains (for example, parent–child interactions) or 
+  to specific
+  * domains (for example, parent–child interactions) or
   * constructs (for example, optimal stress coping or a growth mindset) that
   * not represented scientifically in the public’s language or in the training
 
 ### Fine-tuning
 
 * new and more specific training data to adjust the model for a specific task.
-* data can come in many forms. Generally, 
+* data can come in many forms. Generally,
   * the larger and the more representative the data is of the target task and
     domain, the better the fine-tuned model will perform. The new data might be
   * a set of texts annotated by experts for a ‘stress-is-debilitating’ versus a
     ‘stress-can-be-enhancing’ mindset, high versus low narcissism, metaphors
     that represent causal relationships, or the expected responses to a given
     query.
-* Annotations do not always need to come 
-  * from experts. They can include 
-  * lay annotations (which might have bias) or any kind of 
+* Annotations do not always need to come
+  * from experts. They can include
+  * lay annotations (which might have bias) or any kind of
   * metadata, such as reactions to social media posts or the demographic data
-  * Unlabelled text can also be used to improve the models’ performance 
+  * Unlabelled text can also be used to improve the models’ performance
     * in a particular domain that is under-represented in the training data,
       such as language from parent–child interactions or language from people
       with a speech-related disability.
 * requires orders-of-magnitude less data than would be needed to train a
   * 5–100 annotated examples may be needed to fine-tune versus 100 Ks
-* drawbacks. First, fine-tuning is 
+* drawbacks. First, fine-tuning is
   * still computationally expensive. Powerful servers are required to update
   * high-quality annotated data to use in fine-tuning can be difficult to come
     * coders might not agree on what counts as a narcissistic statement, a
@@ -276,10 +275,10 @@ how LLMs work, and what this information means for psychology
   colleges and universities115.
 
 * coded by trained graduate student annotators for themes related to belonging,
-  specifically whether 
+  specifically whether
   * the essays portrayed belonging concerns as common
   * they explored changes in belonging over time
-  * students connected these ideas to their personal lives. 
+  * students connected these ideas to their personal lives.
 * Next, the subsample of 650 essays were used to fine-tune an LLM so that it
   was ‘biased’ towards these three language features. Finally, the entire set
   of approximately 11,000 essays were scored by the LLM for their tendency to
@@ -292,43 +291,42 @@ how LLMs work, and what this information means for psychology
   Some next steps for this research might be to unpack the ‘black box’ of what
   the LLM was using for its scoring.
 
-## Prompt-tuning (also called in-context learning)27,28 (Fig. 2c).
+## Prompt-tuning (also called in-context learning, 27, 28, Fig. 2c)
 
-* popular because the LLM does not need to be re-fitted 
+* popular because the LLM does not need to be re-fitted
   (that is, the underlying model parameters are not changed)
   Instead, the type of output the LLM generates is tailored to match
   user-generated prompts. Thus, the customization can happen quickly. For
-  example, a user interested in fostering a stress-can-be-enhancing mindset
-  could prompt-tune an LLM with the following prompt: “Here is some good advice
-  to give to people who are very stressed.
-  [user enters one or two examples written by the user or an expert].  What is
-  a way to give this advice to someone who is stressed about work?” The LLM
-  would then output one or two examples. The user could then ask (in the same
-  session with the LLM): “What is a way to give this advice to someone who is
-  stressed about relationships?” The LLM would then output one or two examples.
-  Thus, even just a couple of user-generated examples can help the model to
-  extrapolate structural and semantic features (Box 3) and use them to generate
-  a new set of examples in response to similar user queries29.
-
+  * eg a user interested in fostering a stress-can-be-enhancing mindset
+    could prompt-tune an LLM with the following prompt:
+    “Here is some good advice to give to people who are very stressed.  [user
+    enters one or two examples written by the user or an expert].  What is a
+    way to give this advice to someone who is stressed about work?”
+  * The LLM would then output one or two examples. The user could then ask (in
+    the same session with the LLM): “What is a way to give this advice to
+    someone who is stressed about relationships?” The LLM would then output one
+    or two examples.
+  * even just a couple of user-generated examples can help the model to
+    extrapolate structural and semantic features (Box 3) and use them to
+    generate a new set of examples in response to similar user queries29.
 * the same limitations with respect to high-quality annotated data as
   * fewer examples (for example, one to ten) are needed. The key limitation of
   * it might not be very effective at addressing the many subtleties and
     complexities of a specific psychological construct, unlike a fine-tuned
     model whose parameters are adjusted based on a high-quality annotated
-    dataset. Prompt-tuning is also 
+    dataset. Prompt-tuning is also
   * less likely than fine-tuning to overcome biases in the data because its
     parameters are not updated.
   * the LLMs’ outputs will be sensitive to how the prompt was worded. Thus,
     prompt engineering (in which users vary the prompts given to the LLM to
     achieve a better output for a given purpose) is a key aspect of
     prompt-tuning that requires subtle expertise30,31.
-
 * LLM providers such as OpenAI, Meta or Google prioritize model customization
-  via prompt-tuning rather than fine-tuning; their 
+  via prompt-tuning rather than fine-tuning
   * latest models (OpenAI’s GPT-4 and Google’s Bard AI) cannot be fine-tuned by
     public users. One potential reason for preventing users from fine-tuning is
-  * fine-tuning might interfere guardrails that prevent harmful outputs such as
-    Anticipated enhancements might elevate the effectiveness of prompt-tuning
+  * fine-tuning might interfere guardrails that prevent harmful outputs
+  * Anticipated enhancements might elevate the effectiveness of prompt-tuning
   * OpenAI allows for increasingly detailed instructions via system messages
     (such as step-by-step directions for responding to an adolescent who is
     anxious about applying to college) that can guide the model’s behaviour
@@ -337,17 +335,18 @@ how LLMs work, and what this information means for psychology
 
 ### Box 3 Prompt-tuning for experimentation
 
-* Clapper and colleagues116 used prompt-tuning to evaluate the ability of two
+* Clapper and colleagues 116 used prompt-tuning to evaluate the ability of two
   LLMs (GPT-3 and LaMDA) to generate growth mindset language (language
   supporting students’ belief that intellectual ability can be developed117) in
   the form of an Algebra I teacher’s speech describing how to do well in the
-  class that year118. The study had three conditions: speeches generated by
-  un-tuned LLMs; speeches written by expert growth mindset math teachers; and
-  speeches written by LLMs that were prompt-tuned with the expert human
-  speeches from the second condition. These speeches were then evaluated by a
-  new sample of about a thousand adolescents. In the two LLM conditions, the
-  prompt was: “Write a speech for the first day of Algebra class that tells
-  your students what learning math is like.”
+  class that year118. The study had
+  * three conditions: speeches generated by un-tuned LLMs; speeches written by
+    expert growth mindset math teachers; and speeches written by LLMs that were
+    prompt-tuned with the expert human speeches from the second condition.
+  * These speeches were then evaluated by a new sample of about a thousand
+     adolescents
+  * In the two LLM conditions, the prompt was: “Write a speech for the first
+    day of Algebra class that tells your students what learning math is like.”
 
 * A typical speech generated by the un-tuned LLM was: “Hello students! Welcome
   * positive and encourages effort, it was not rated as being high in growth
@@ -355,28 +354,28 @@ how LLMs work, and what this information means for psychology
     fixed mindset fears (that is, that when they struggle it means they are
     ‘bad at maths’).
 
-* A typical speech generated by the expert-prompt-tuned LLM was: “Welcome to my
+* A typical speech generated by the expert-prompt-tuned LLM was: “Welcome to"
 
 * adolescents’ ratings of the prompt-tuned examples were not significantly
   different (P > 0.05) from ratings of the human expert examples — even though
   the former were generated in seconds, whereas the latter were generated over
   a three-day period.  Furthermore, the expert-prompt-tuned speeches made up
   75% of the gap between un-tuned LLM and human expert speech ratings. These
-  findings provide direct evidence that 
+  findings provide direct evidence that
 * ie LLMs can generate novel text that is similar to a precise psychological
   construct with only five training examples. This study also suggests a
 
 # Concerns about using LLMs for psychology + solutions
 
-* LLMs might be used in ways that cause harm to the public. 
-* eg Members of underrepresented groups in particular could suffer harm 
+* LLMs might be used in ways that cause harm to the public.
+* eg Members of underrepresented groups in particular could suffer harm
   * owing to biases in how AI models are trained and implemented
 * they are not actually simulating human intelligence29,32,33
   * they tend to output an ‘average’ of what the internet or popular books tend
     * (with some constraints, for example LLM providers have put ethical
       ‘guardrails’ in place to prevent hate speech)
   * an advantage for research areas that seek to leverage and study human
-    cognition and culture as represented in the training data. 
+    cognition and culture as represented in the training data.
 * sandbox for conducting metascientific analyses, creating interactive
   interventions and generating a wide range of stimuli. At the same time,
   * With appropriate prompting and tuning, LLMs can also become
@@ -391,14 +390,14 @@ how LLMs work, and what this information means for psychology
 ## How to evaluate LLMs
 
 * leading questions to goad it into saying something problematic37,38
-* GPT models could 
+* GPT models could
   * pass the Bar Exam (which certifies US lawyers)
   * ace the Graduate Record Examination
     (GRE; used in applications to many US graduate schools), and
   * earn a 5 (the highest score) on every Advanced Placement test39
 * ? the standards for what constitutes ‘good’ LLM performance to psychologists
   interested in using LLMs to perform scientific or professional psychology
-  tasks 
+  tasks
 * psychologists usually want to evaluate the effects on human thought and behav
 * we introduce two high-level approaches to evaluating LLMs: expert & impact
 
@@ -442,7 +441,7 @@ how LLMs work, and what this information means for psychology
   the text (Box 3)
 * eg LLM asked to generate a persuasive argument about the death penalty.
   * Expert evaluation would entail social psychologists coding the persuasive
-    qualities of an LLM-generated argument; 
+    qualities of an LLM-generated argument;
     * currently the most common approach to evaluating persuasiveness in
       LLMs47, pointing to the need for more impact evaluations.
   * impact evaluation would ask lay participants to report their attitudes
@@ -450,32 +449,31 @@ how LLMs work, and what this information means for psychology
     * ie not relying on subjective and contentious criteria for persuasiv 46
 * hE why LLM-generated text fail to change downstream outcomes?
   * the LLM output failed to communicate the psychological construct of
-    interest effectively, or because 
+    interest effectively, or because
   * the construct does not affect outcomes?
 
 ### Recommendations for evaluating LLMs
 
-* expert and impact evaluation offer complementary advantages 
+* expert and impact evaluation offer complementary advantages
 * we recommend using both when possible
-* Expert evaluation methods can be used first, 
+* Expert evaluation methods can be used first,
   akin to a manipulation check or a measure of construct validity
 * Next, the scored text that matches expert judgements can be used in an impact
   evaluation study that attempts to measure the intended effects on third-party
   participants, akin to a measure of predictive or external validity.
-* This process can be iterative, 
+* This process can be iterative,
   * ie impact evaluations can be used to inform the next round of expert eval
     and vice versa
-* eg a panel of experts identified principles for the best reappraisal
-  techniques (techniques for changing one’s thinking to change one’s emotional
-  response48)
+* eg a panel of experts identified principles for the best reappraisal techs
+  (techniques for changing one’s thinking to change one’s emotional response48)
   * experts score a corpus of text along theoretically defined key dimensions,
      such as reframing all-or-nothing thinking about stressors in terms of
      temporary, controllable factors
-  * fine-tune or prompt-tune an LLM to conform to these dimensions. 
+  * fine-tune or prompt-tune an LLM to conform to these dimensions.
   * An impact evaluation could assess whether LLM-generated text higher on
     these dimensions improved mental health or coping for real humans
   * the panel could re-convene and debate new hypotheses about the validity of
-    their theories and scoring guidelines, and 
+    their theories and scoring guidelines, and
     * repeat the impact evaluation with text generated by the newly updated
       LLM
     * result: a corpus of human and AI-generated text
@@ -488,10 +486,10 @@ how LLMs work, and what this information means for psychology
 ## Bias in LLMs
 
 * LLMs reproduce biases in those data49
-* representational and allocational harms50,51. 
+* representational and allocational harms50,51.
   * Repr: LLM represents some social groups in a less favourable light,
     demeans them, or fails to recognize their existence altogether
-    * can be caused by 
+    * can be caused by
       * sampling biases (eg when privileged groups’ data are over-represented)
       * data-processing biases (eg when annotators from majority groups
         misunderstand minority groups)
@@ -500,11 +498,11 @@ how LLMs work, and what this information means for psychology
     groups owing to historically biased decision patterns represented in the
     data, such as biased diagnoses or biased assignment to therapy treatment
 * Algorithms for generating and presenting text to people online through social
-  media and news platforms are subject to both representational and alloc harms 
+  media and news platforms are subject to both representational and alloc harms
   * because they are driven by predictions about which text will engage
     targeted consumers and generate advertising or sales revenue52
   * ie the web data used to train LLMs is not a random sample of all sentences
-* LLMs are already being used for copywriting online 
+* LLMs are already being used for copywriting online
   without transparency about whether it was written by a human or a machine.
   * That text will probably be used to train subsequent generations of LLMs.
   * Thus, without corrective action many biases might become more entrenched
@@ -512,7 +510,7 @@ how LLMs work, and what this information means for psychology
 ### Using LLMs to study bias
 
 * Psychologists might be interested in studying LLMs’ biases to gain insight
-  into human bias. However, bias-probing is 
+  into human bias. However, bias-probing is
   * he made difficult by censorship ‘guardrails’ that have been placed on most
     LLMs by their developers. For example, a typical LLM will not directly
     answer a question such as “are white people smart?”.
@@ -526,7 +524,7 @@ how LLMs work, and what this information means for psychology
   * censorship guardrails (via post-processing the output or tuning the model)
     might addresses the symptoms, rather than the underlying bias in the data.
   * could falsely lead researchers to conclude that the LLM is not biased55. It
-  * censorship algorithms shoudl be transparent and to develop 
+  * censorship algorithms shoudl be transparent and to develop
     * bias-testing protocols that go beyond testing obvious stereotypes to also
       examine the pernicious, pervasive and subtle ways that bias manifests in
       culture56,57.
@@ -542,7 +540,7 @@ how LLMs work, and what this information means for psychology
   tool) at every stage of the research process (research design, data
   annotation and model evaluation). Another way to mitigate bias is to take an
 * ‘AI-in-the-loop, humans in charge’ approach58
-  * LLM not interact directly with vulnerable populations (eg strugg students), 
+  * LLM not interact directly with vulnerable populations (eg strugg students),
     human experts (for example, teachers) are in control of the interaction and
     * accept or reject suggestions from the LLM.
 * As LLMs become better at simulating different types of behaviour, they could
@@ -552,17 +550,17 @@ how LLMs work, and what this information means for psychology
     principles written by people60 to de-bias their output. These algorithms
     could also be applied to mitigate human bias as a form of bias training.
     For example, participants could receive constructive feedback on their
-    responses to scenarios that have the potential for bias. Given that 
+    responses to scenarios that have the potential for bias. Given that
   * many training programmes to combat implicit bias do not have a measurable
     benefit61,62, LLM-guided explicit-bias training might be a promising avenue
 * important: clear processes for quantifying and reducing bias
 
 ## The ‘black box’ of LLM output
 
-* LLM outputs are straightforward. As shown in Fig. 1, 
-  * LLMs can be asked which emotions are present in a sentence, and 
+* LLM outputs are straightforward. As shown in Fig. 1,
+  * LLMs can be asked which emotions are present in a sentence, and
   * they can provide an answer in plain language, just as a participant in a
-    psychology study can. LLMs can 
+    psychology study can. LLMs can
   * also for context-dependent, high-inference constructs, such as belonging
     (Box 2) or suicide risk63.
   * outputs from conventional text-analysis methods, such as word-counting and
@@ -573,22 +571,22 @@ how LLMs work, and what this information means for psychology
     * eg2 topics from a topic model is subjective64, and the topics
     * might not map onto psychological constructs of interest.
 
-* interpretability 
+* interpretability
   * yes: LLM output increases access to these tools for non-technical users and
   * powerful applications, such as coaching tools for teachers, therapists and
     peers65,66,67 or for students who are writing self-persuasion essays as
     part of ‘wise’ psychological interventions68,69,70,71. At the same time, it
   * difficult to interpret the processes by which LLMs reach their
-    responses45,72,73. This is a problem because 
+    responses45,72,73. This is a problem because
   * psychologists typically care about mechanisms. It is usually not enough to
     * why and how the language implies anxiety. Interrogating LLMs to identify
       the linguistic predictors or rationales of their predictions would inform
-      theories of psychological constructs. However, it is not clear 
+      theories of psychological constructs. However, it is not clear
   * how to assign meaning to the billions of parameters in LLMs.
 
-* probing74. In probing, researchers seek evidence on 
+* probing74. In probing, researchers seek evidence on
   * how the matrices underlying a model’s inferences align with linguistic
-    features that influence the model’s outputs. To do this, 
+    features that influence the model’s outputs. To do this,
   * researchers first need to identify linguistic features relevant to their
     psychological construct (for example, negation, use of first person, or use
     of cognitive processing words from LIWC)
@@ -604,7 +602,7 @@ how LLMs work, and what this information means for psychology
   * future: more tools to make LLMs’ output interpretable to psychologists will
     be developed
     * newer models that more readily lend themselves to interpretation than
-  * this stage: complementing LLMs with traditional lexical analysis to 
+  * this stage: complementing LLMs with traditional lexical analysis to
     * connect interpretable outputs to interpretable processes
 
 ## Using LLMs as a reproducible tool
@@ -620,16 +618,16 @@ how LLMs work, and what this information means for psychology
     * more linguistically (and possibly psychologically) diverse outputs.
 
 * similar to how the same human research participant might respond differently
-  when presented with the same prompt — 
-  * there is a true ‘signal’, but there is also variability and noise. 
+  when presented with the same prompt —
+  * there is a true ‘signal’, but there is also variability and noise.
   * To address this variability, psychologists do not typically survey one
     participant; they survey many and then compute statistics on the aggregate.
   * also randomly vary the stimuli in their studies77. In both cases,
   * psychologists incorporate uncertainty intervals into their conclusions.
-  * ie they re-sample from their data generating process and 
+  * ie they re-sample from their data generating process and
     incorporate that uncertainty into their analyses.
 
-* Our recommendation is therefore to 
+* Our recommendation is therefore to
   * acknowledge and incorporate the stoch asticity of LLM outputs into anal
     LLMs to generate multiple responses for any prompt and
   * publish (in supplementary material) both the parameters and outputs. This
@@ -642,7 +640,7 @@ psychological science and inform an ethical future for the applications
   in language-related technology that has profound implications for psychology.
   Massive amounts of language data can now be harnessed to help psychologists
   to develop better measures, to perform larger and perhaps more definitive
-  experiments, and to develop and 
+  experiments, and to develop and
 * areas that are critical to society, such as education and mental health.
 Armed with an understanding of the conceptual foundations and concerns related
 * three important investments the field can make to realize the full potential
@@ -652,21 +650,21 @@ Armed with an understanding of the conceptual foundations and concerns related
     American Psychological Association), private industry and the funding
     community.
 
-## keystone datasets. These are large natural language databases that 
+## keystone datasets. These are large natural language databases that
 
 * meet the highest standards for both expert and impact evaluation. Keystone
 * represent populations and psychological constructs of interest; must rely
   * precise definitions of these psychological constructs (possibly including
-    expert annotations); and must be 
+    expert annotations); and must be
 * linked to psychologically important outcomes, such as real-world behaviour,
   mindset, health and mental health, or academic and career trajectory.
 * For example, the Texas Mindset Initiative is creating a large dataset of
   1,000 Texas secondary school teachers’ natural language when talking with
   students. Teachers’ transcripts can be annotated with expertise in different
-  * constructs, such as 
-    * growth mindset (intellectual abilities can be developed), 
+  * constructs, such as
+    * growth mindset (intellectual abilities can be developed),
     * emotional reappraisal (novel ways of thinking that lead to decreased
-      negative emotions) or 
+      negative emotions) or
     * autonomy support (whether teachers refrain from controlling language).
   * could then be empirically linked with teachers’ reports of their intentions
     to use these concepts, with students’ ratings of classroom culture, and
@@ -675,13 +673,13 @@ Armed with an understanding of the conceptual foundations and concerns related
   * what teachers can say to a struggling student to support their mindset,
     to help them to cope with stress and to help them to learn. These findings
   * fine-tuning LLMs to measure or recommend language that matches the
-    constructs of interest, which could in turn 
+    constructs of interest, which could in turn
   * power educational technologies such as virtual tutors or coaching tools
-    for teachers. If similar datasets are collected in other 
+    for teachers. If similar datasets are collected in other
 * education in a different region, country or for a different devel age group,
   * shed light on the culture-dependent and age-dependent context-specificity
     of LLM-generated psychological language in teaching contexts.
-* other constructs or policy spaces. The 
+* other constructs or policy spaces. The
   * already availabile:
     * online therapy platforms66,78,79, body cameras on police officers80 and
       recorded Zoom meetings for clinical psychology, policing and management.
@@ -694,12 +692,12 @@ Armed with an understanding of the conceptual foundations and concerns related
   science81. Benchmarking occurs when model developers refine their software
   to optimize performance on a set of defined tasks and datasets82,83. However,
 * hE existing forms of benchmarking might not be appropriate for many psycho
-  use cases owing to the 
+  use cases owing to the
   * highly context-dependent nature of psychological constructs and
-    intersubjectivity issues. Thus, 
+    intersubjectivity issues. Thus,
 * a new, psychologically defined way of benchmarking LLMs could help to
-* depends on the availability of 
-  * keystone datasets and requires a 
+* depends on the availability of
+  * keystone datasets and requires a
   * consensus on how to define and operationalize psychological constructs.
   * standards and procedures for safety and transparency, which might involve
     sharing models with other scientists for further evaluation.
@@ -707,7 +705,7 @@ Armed with an understanding of the conceptual foundations and concerns related
   drive this consensus process.
 * privacy and confidentiality of language data will need to be accounted for in
   * especially important when working with data from vulnerable populations.
-  * anonymized or modified versions of their data where 
+  * anonymized or modified versions of their data where
   * randomized simulations to prevent reverse identification.
 * research and policy concerning AI and the use of private data, and the role
   of AI in perpetuating biases: critical for LLM-powered research84–88.
@@ -719,12 +717,12 @@ Armed with an understanding of the conceptual foundations and concerns related
   * fitting an LLM takes an immense amount of resources. For example, the basic
     research and model fitting required to create ChatGPT cost US $3 billion89.
     Even the smaller, less costly LLMs can take months to train with the most
-    advanced cloud computing resources. Because 
+    advanced cloud computing resources. Because
   * academia is unlikely to compete with the for-profit sector for the
-    development of multi-billion-dollar models, 
+    development of multi-billion-dollar models,
   * researchers should invest in developing cost-effective LLMs whose
     performance is as close as possible to expensive, paywall-protected and
-    non-downloadable models. It will be 
+    non-downloadable models. It will be
   * important: academics can access discounted or free research licences for
   * tutorials, optimal defaults and vetted data-processing pipelines should be
     created.
@@ -735,7 +733,7 @@ Armed with an understanding of the conceptual foundations and concerns related
   typically taught during psychology methods training. Thus, a new generation
   of text-analysis psychology methods courses and more training in programming
   languages such as Python might be needed.
-* science collaboration and team science for the future of LLMs in psychology. 
+* science collaboration and team science for the future of LLMs in psychology.
   * Psychological scientists and computational linguists can learn from one
     another and could contribute to aspects of keystone data collection and
     model fine-tuning.

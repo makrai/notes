@@ -1,5 +1,5 @@
 VeRA: Vector-based Random Matrix Adaptation
-Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano
+Dawid J Kopiczko, Tijmen Blankevoort, Yuki M Asano
 ICLR 2024 arXiv:2310.11454 [cs.CL]
 
 https://dkopi.github.io/vera
@@ -7,22 +7,22 @@ https://dkopi.github.io/vera
 # Abstract
 
 * Low-rank adapation (LoRA) reduces the number of trainable parameters when
-  finetuning large language models, but still faces
-  * hE acute storage challenges when scaling to even larger models or deploying
-    numerous per-user or per-task adapted models. In this work,
+  finetuning large language models
+  * hE acute storage challenges when scaling to even larger models or
+    deploying numerous per-user or per-task adapted models
 * we present Vector-based Random Matrix Adaptation (VeRA), which
   * significantly reduces the number of trainable parameters compared to LoRA,
     yet maintains the same performance. It achieves this by using
-  * a single pair of low-rank matrices shared across all layers and learning
-    small scaling vectors instead
-* exper on the GLUE and E2E benchmarks, image classification tasks, and show
+  * a single pair of low-rank matrices shared across all layers and
+    small scaling vectors 
+* exper on the GLUE and E2E benchmarks, image classification tasks
   * instruction-tuning of 7B and 13B language models
 * from the conclusion
   * many versions can reside in the limited memory of a single GPU, thus
     substantially improving serving efficiency and
     removing the bottleneck of loading specific models into memory
 * future work
-  * different architectures and domains remains an area for future
+  * different architectures and domains remain an area for future
   * dynamic parameter budget allocation
   * different initialization and regularization techniques
 
@@ -31,26 +31,26 @@ https://dkopi.github.io/vera
 * use case: a cloud-based operating system assistant that continuously learns
   from and adapts to individual user behaviors and feedback. The need to store
 * Finetuning techniques like LoRA (Hu+ 2022), while effective, still introduce
-  considerable memory overhead. As an illustrative example,
+  considerable memory overhead
   * eg applying LoRA with a rank of 16 to the query and value layers of GPT-3
     (Brown+ 2020) would demand at least 288MB of memory, if stored in
     singe-precision – at a million finetuned weights, eg one per user, that
     would amount to 275TB
 * Aghajanyan+ (2021): low intrinsic dimensionality of pretrained models’
-  features. These studies reported numbers
-  * much lower than the trainable parameters used in LoRA, suggesting there is
+  features
+  * much lower than the trainable parameters used in LoRA
 * surprising effectiveness of models utilizing random weights and projections
-  (Peng+ 2021; Ramanujan+ 2020; Lu+ 2022; Schrimpf+ 2021; Frankle+ 2021). Such
-* we: Vector-based Random Matrix Adaptation (VeRA), which minimizes the number
-  of trainable parameters introduced during finetuning by
-  reparametrizing the weights matrices
+  (Peng+ 2021; Ramanujan+ 2020; Lu+ 2022; Schrimpf+ 2021; Frankle+ 2021)
+* we: Vector-based Random Matrix Adaptation (VeRA)
+  * minimizes the number of trainable parameters introduced during finetuning
+    by reparametrizing the weights matrices
   * “scaling vectors” to adapt a pair of frozen random matrices shared between
     layers. With this approach, many more versions of the model can reside in
     the limited memory of a single GPU
-* contributions are as follows:
-  * novel finetuning method with no additional inference time cost. Our method
-    further reduces the number of trainable parameters compared to LoRA, with
-    comparable results
+* contributions
+  * novel finetuning method with no additional inference time cost
+    * further reduces the number of trainable parameters compared to LoRA, with
+      comparable results
   * We compare our approach with LoRA and other parameter-efficient adapt meths
     on natural language understanding (GLUE) and natural language generation
     (E2E) benchmarks, and compare against LoRA on instruction-following and
@@ -59,7 +59,7 @@ https://dkopi.github.io/vera
 
 # 2 Related work
 
-## Low-Rank Adaptation (LoRA, Hu+ 2022) employs
+## Low-Rank Adaptation (LoRA, Hu+ 2022)
 
 * low-rank matrices to approximate the weight changes during finetuning,
   effectively reducing the number of parameters that need to be trained. Among
@@ -80,7 +80,7 @@ https://dkopi.github.io/vera
   by selectively pruning less important components of the matrices
   based on an importance metric
 
-## Parameter Efficiency in Existing Methods While
+## Parameter Efficiency in Existing Methods
 
 * methods such as LoRA still require a considerable amount of trainable params
   * Aghajanyan+ (2021), the upper bound for intrinsic dimensions is much
@@ -94,7 +94,7 @@ https://dkopi.github.io/vera
 
 ## Random Models and Projections
 
-* The concept of using random matrices and projections for model efficiency is
+* The concept of using random matrices and projections for model efficiency
 * Frankle & Carbin (2019): randomly-initialized neural networks contain
   subnetworks that are capable of reaching high performance when trained
 * Ramanujan+ (2020) revealed that there exist subnetworks that can achieve
