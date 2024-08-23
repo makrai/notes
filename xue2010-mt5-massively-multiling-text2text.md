@@ -64,7 +64,7 @@ arXiv:2010.11934 [cs.CL]
     remove those with a confidence below 70%
 * include in the corpus all languages with 10,000 or more pages. This produces
   * 107 “languages” as defined by cld3. However, we note that
-  * six of these are just script variants of the same spoken language (e.g. ru
+  * six of these are just script variants of the same spoken language (eg ru
     is Russian in Cyrillic script and ru-Latn is Russian in Latin script). A
     histogram of the page counts for each language is shown in fig. 1
   * Detailed dataset statistics including per-language token counts: appendix
@@ -200,8 +200,8 @@ arXiv:2010.11934 [cs.CL]
   boost, corroborating the findings of Conneau+ (2020) and Raffel+ (2020) that
 * the language sampling exponent α
   * Increasing to 0.7 has the expected effect of
-    improving performance in high-resource languages (e.g. Russian 81.5 → 82.8),
-    while hurting low-resource languages (e.g. Swahili 75.4 → 70.6), with the
+    improving performance in high-resource languages (eg Russian 81.5 → 82.8),
+    while hurting low-resource languages (eg Swahili 75.4 → 70.6), with the
     average effect being negative. Conversely,
   * lowering α to 0.2 boosts one tail language slightly (Urdu 73.5 → 73.9) but
     is harmful elsewhere. Detailed
@@ -211,7 +211,7 @@ arXiv:2010.11934 [cs.CL]
 # 5 Zero-shot generation
 
 * in XQuAD zero-shot, we find that many of the gen errors are due to “accidental
-  translation” into the fine-tuning language (English). In this section, we
+  translation” into the fine-tuning language (English)
 * it can be counteracted by mixing a small amount of our multilingual
   pre-training task into the fine-tuning stage
 * illegal predictions mainly fall into three categories:
@@ -227,7 +227,7 @@ arXiv:2010.11934 [cs.CL]
 ## Grammatical adjustment involves minor morphological changes
 
 * when the target span cannot stand as a well-formed answer on its own. For
-* e.g., mT5-XXL’s Arabic and Russian predictions in the middle rows of table 5
+* eg mT5-XXL’s Arabic and Russian predictions in the middle rows of table 5
   are judged by native speakers as correct and grammatical answers to the posed
   XQuAD questions, while the gold targets are judged as ungrammatical
 * most common in languages with extensive grammatical case marking, such as

@@ -26,7 +26,7 @@ LREC 2020 arXiv:1912.05372 [cs.CL]
 ## 2.2. Pre-trained Language Models Beyond English
 
 * ELMo exists for Portuguese, Japanese, German and Basque
-* BERT and variants were trained for simplified and traditional Chinese and Germ
+* BERT and variants were trained for simplified and trad Chinese and German
 * Portuguese version of MultiFiT is also available
 * BERT for
   * Arabic (Antoun+ 2020)

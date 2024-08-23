@@ -96,7 +96,7 @@ in the matrices are translations of each other
 # 3 Data
 
 * 4 language pairs: English-German (en-de), English-French (en-fr),
-  English-Swedish (en-sv) and EnglishChinese (en-zh)
+  English-Swedish (en-sv) and English-Chinese (en-zh)
   * For en-de and en-sv we use the Europarl v7 parallel corpus (Koehn, 2005)
   * For en-fr, we use Europarl combined with the newscommentary and UN-corpus
     dataset from WMT 2015
@@ -242,12 +242,12 @@ in the matrices are translations of each other
 * we turn off other features that can capture distributional information like
   brown clusters, which were originally used in Guo+ (2015). We use the
   universal dependency treebank (McDonald+ 2013)
-* BiCCA does better than other models. BiSkip is a close second, with an
-  average performance gap of less than 1 point. BiSkip outperforms BiCVM on
-  German and French (over 2 point improvement), owing to word alignment
-  information BiSkip’s model uses during training. It is not surprising that
-  English-Chinese transfer scores are low, due to the significant difference
-  in syntactic structure
+* BiCCA does better than other models. 
+  * BiSkip is a close second, with an average performance gap of < 1 point.
+    * outperforms BiCVM on German and French (over 2 point improvement), owing
+      to word alignment information BiSkip’s model uses during training
+  * It is not surprising that English-Chinese transfer scores are low,
+    due to the significant difference in syntactic structure
   * models with expensive supervision requirements like BiSkip and BiCVM
     could not outperform a cheaply supervised BiCCA
 * whether using cross-lingually trained vectors for learning dependency

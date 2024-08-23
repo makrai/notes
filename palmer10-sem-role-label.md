@@ -44,7 +44,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     It would typically be labeled as the Patient,
   * does not occur with every transitive (binary) verb (see Example 2), it is
     not easily predictable
-* This book ... describes the
+* This book describes the
   * motivations behind the annotations, and then it
   * techniques for developing automated systems
 
@@ -69,7 +69,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * commonalities between the Agentive cases and the Objective cases of actions
   such as hitting, breaking, and cutting
 * distinguishing between [individual roles]
-  * the Agent and the Patient ... is reasonably straightforward
+  * the Agent and the Patient is reasonably straightforward
     * Agent is the initiator of the action, the doer, and can typically be
       * acting deliberately or on purpose
       * The question What did X do? can be applied, with X being the Agent. The
@@ -108,12 +108,12 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
       after locations, possessors, or states
   * later versions:
     * subtypes of primitive predicates
-    * More information can be added, e.g., the manner of motion in (7) could be
+    * More information can be added, eg the manner of motion in (7) could be
       represented by adding a predicate: MANNER:
   * CAUSE predicate, which takes the Agent
   * Jackendoff ’s intent was never to provide detailed representations of all
     of meaning but, instead, to focus on fundamental concepts that had special
-    relevance to the _mapping_ between syntax and semantics [e.g.] Causation
+    relevance to the _mapping_ between syntax and semantics [eg] Causation
   * a mapping between an ordered list of semantic roles (a thematic hierarchy)
     and an ordered list of syntactic constituents (Jackendoff, 1992)
   * extending this approach to all of the verbs in multiple languages and, in
@@ -130,7 +130,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * there could be times when the number of entailments for each semantic role
   would be similar, and he predicted that in such cases, the likely result
   would be syntactic alternations,
-  * spray/load alternation as discussed in the paragraph ... Incremental Themes
+  * spray/load alternation as discussed in the paragraph Incremental Themes
   * Psychological predicates
 
 ## 1.3.3 Levin’s Verb Classes and Alternations
@@ -191,11 +191,11 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   a particular situation or event along with its participants
 * semantic roles are called Frame Elements (FE)
   * defined for each semantic frame, and
-* The predicate ... is called Lexical Unit (LU)
+* The predicate is called Lexical Unit (LU)
   * all LUs in a semantic frame share the same set of semantic roles
 * Frame Elements
   * fine-grained semantic role labels
-  * e.g. for the Apply-heat Frame include a
+  * eg for the Apply-heat Frame include a
     Cook, Food, and a Heating Instrument
   * a frame can also have adjectives and nouns such as nominalizations
   * classified in terms of how central they are, with three levels
@@ -209,7 +209,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * rich, idiosyncratic descriptions
 * overlaps between [Levin class and] FrameNet frame
   * explored in more detail by Baker and Ruppenhofer (2002)
-* e.g. _buy_ and _sell_ both belong to the semantic frame `Commerce_buy`, which
+* eg _buy_ and _sell_ both belong to the semantic frame `Commerce_buy`, which
   involves a Buyer and Seller exchanging Money and Goods
   * Buyer and Goods are core FEs for this frame while
   * Seller and Money are Non-Core FEs
@@ -256,11 +256,11 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 ### Syntactic Frames
 
-* Each VerbNet class contains a set of ... syntactic frames
+* Each VerbNet class contains a set of syntactic frames
 * constructions such as transitive, intransitive, prepositional phrases,
   resultatives, and a large set of diathesis alternations listed by Levin
 * semantic roles (such as Agent, Theme, and Location), the verb, and
-* other lexical items ... required for a ... construction or alternation
+* other lexical items required for a construction or alternation
 * Semantic restrictions (such as animate, human , and organization )
   * 36 semantic types are taken originally from the EuroWordNet Interlingua,
   * typically encompass literal meanings rather than metaphorical ones and
@@ -294,21 +294,21 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * labels (its “roleset”) and all possible
     * syntactic realizations. This lexical resource is used as
   * a set of verb-specific guidelines by the annotators
-  * similar in nature to FrameNet and VerbNet although ... more coarse-grained
+  * similar in nature to FrameNet and VerbNet although more coarse-grained
   * more focused on literal meaning than FrameNet
     * less attention to clearly marking
       metaphorical usages and support verb constructions
 * defines semantic roles on a verb by verb basis
-  * Arg0 is generally ... a prototypical Agent (Dowty, 1991) while
+  * Arg0 is generally a prototypical Agent (Dowty, 1991) while
   * Arg1 is a prototypical Patient or Theme
-  * No consistent generalizations ... for the higher numbered arguments
+  * No consistent generalizations for the higher numbered arguments
     * effort was made to consistently define roles across members of VerbNet
       classes
-    * Arg2 ... can be beneficiary, goal, source, extent or cause
+    * Arg2 can be beneficiary, goal, source, extent or cause
   * several more general ArgM (Argument Modifier) roles
     * can apply to any verb, and which are
     * similar to adjuncts
-    * e.g.  LOCation, EXTent, ADVerbial, CAUse, TeMPoral, MaNneR, and
+    * eg  LOCation, EXTent, ADVerbial, CAUse, TeMPoral, MaNneR, and
       DIRection, among others
   * high inter-annotator agreement
 * A set of roles or a roleset corresponds to a distinct usage of a verb. It is
@@ -319,7 +319,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     sets of roles, one set for each Frameset
 * verb-specific descriptor field for each role, such as _baker_ for `Arg0`
   * for use during annotation and as documentation, [no] theoretical standing
-  * Frame File ... the collection of Frameset entries for a verb
+  * Frame File the collection of Frameset entries for a verb
 * neutral, generic labels facilitate mapping between PropBank and other more
   fine-grained resources such VerbNet and FrameNet, as well as
   Lexical-Conceptual Structure or Prague Tectogrammatics (Rambow+ 2003)
@@ -338,7 +338,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
   * Researchers using PropBank as training data for the most part ignore the
     “verb-specific” nature of the labels, and instead build a single model for
     each numbered argument
-    * Arg0/Arg1 ... constitute 85% of the arguments
+    * Arg0/Arg1 constitute 85% of the arguments
     * ArgMs are also labeled quite consistently
     * arguments Arg2-Arg5 are highly overloaded, and performance drops
       significantly on them
@@ -413,12 +413,12 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 # 4 A Cross-Lingual Perspective . 53
 
-1. different styles of semantic role annotation ... across languages
+1. different styles of semantic role annotation across languages
   * semantic role projection, the task of
     automatically transferring semantic roles from one language to another
 2. semantic role alignment
   * aligning predicate-argument structures in parallel data
-  * prerequisite ... is that semantic role annotation exists in both languages
+  * prerequisite is that semantic role annotation exists in both languages
 3. semantic role adaptation
   * similarities and differences in semantic role labeling from a
     cross-linguistic perspective
@@ -434,22 +434,21 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
     * Korean (Palmer+ 2006)
 * SRL systems are starting to be developed using these linguistic resources
   (Xue, 2008; Surdeanu+ 2008; Diab+ 2008)
-* labels ... vary from project to project, as discussed in Chapter 2
+* labels vary from project to project, as discussed in Chapter 2
   * three broad categories:
     * Propbank-style roles,
     * FrameNet-style roles, and
-    * roles ... based on the linguistic traditions of a particular language
+    * roles based on the linguistic traditions of a particular language
 * Propbank-type labels
   * Chinese Propbank (Xue and Palmer, 2009)
   * Korean Propbank (Palmer+ 2006)
   * Pilot Arabic Propbank (Palmer+ 2008)
   * AnCora (Taulé+ 2008) for Catalan and Spanish
-* FrameNet-style labels
-  * languages
-    * SALSA Project for German (Burchardt+ 2006), the
-    * Japanese FrameNet Project (Ohara, 2008), and the
-    * Spanish FrameNet Project (Subirats and Petruck, 2003)
-* Prague Dependency Treebank (PDT) (Böhmová+ 2003)
+* FrameNet-style labels for the following languages
+  * SALSA Project for German (Burchardt+ 2006), the
+  * Japanese FrameNet Project (Ohara, 2008), and the
+  * Spanish FrameNet Project (Subirats and Petruck, 2003)
+* Prague Dependency Treebank (PDT, Böhmová+ 2003)
   * inner participants and free modifications
     * Inner participants are roughly core arguments while
       * can modify a given verb only once (except for the case of coordination)
@@ -468,14 +467,13 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 * Japanese linguistic traditions
   * Kyoto University Text Corpus 1 (Kawahara+ 2002) and the
   * NAIST Text Corpus (Lida+ 2007)
-  * the two corpora differ in the annotation of specific ...  constructions
-  * [in Japanese,] close association between the grammatical cases and
-    the semantic roles
+  * the two corpora differ in the annotation of specific  constructions
+  * in Japanese, close association between grammatical cases and semantic roles
   * label the arguments based on their grammatical case
     * nominative (GA), accusative (O) and dative (NI) cases
   * Japanese SRL is not as simple
     * markers are routinely dropped
-    * word order is ... less rigid
+    * word order is less rigid
 * constituent vs dependency
   * Propbank and FrameNet both assign semantic roles to constituents
   * Czech and Japanese are assigned to words directly
@@ -496,20 +494,20 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 * As semantically annotated corpora become available in multiple languages
   * how consistent the semantic annotation is across languages
-  * all semantic role annotation ... targets the predicate-argument structure,
+  * all semantic role annotation targets the predicate-argument structure,
   * predicate in the source language may be translated into multiple predicates
 * potential application in Machine Translation and other NLP systems
 
 ## 4.3 Language-(In)Dependent Semantic Role Labeling . 61
 
-* how semantic role labeling techniques developed for one language can be
-  adapted for use in another language
+* how semantic role labeling techniques developed for one language
+  can be adapted for use in another language
 * language (in)dependence of semantic role labeling techniques
   * often used as a measure [of] superiority of language processing techniques
 * [drawing from Chinese SRL, we show that SRL systems] need to incorporate
   language-specific features
 * Chinese
-  * morphology-poor
+  * poor morphology
     * no systematic use of morphological case markers, which would be useful
       cues for SRL
       * makes it impractical to use the Japanese-style semantic role labels
@@ -518,26 +516,26 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
         orthographical forms
   * larger number of verbs than English, and the tradeoff is that
     * Chinese verbs tend to be less polysemous
-    * Chinese has so-called “stative verbs” that are generally translated into
-      adjectives in English
+    * Chinese has so-called “stative verbs” that are
+      generally translated into adjectives in English
     * smaller average verb frequency given a similar-sized corpus
-      * data sparsity
-        * class-based back-off
+      * data sparsity ~> class-based back-off
       * more uniform argument structure for verbs
   * words consist of characters rather than letters
     * characters are morphemes that can also be words themselves
     * Multi-character words are mostly compounds
-    * verb components are sometimes incorporated arguments (e.g., 发 “hair” in 理发 “cut-hair”) or
-    * [incorporations] have their own argument structures
-      * e.g., if a verb has an incorporated object, it is unlikely that is will
-        also have an external object
-* syntactic constructions that do not have a close parallel in English, and
-  they can be exploited to improve Chinese semantic role labeling
+    * verb components are sometimes incorporated arguments
+      (eg 发 “hair” in 理发 “cut-hair”)
+    * incorporations have their own argument structures
+      * eg if a verb has an incorporated object, it is
+        unlikely that it will also have an external object
+* syntactic constructions that do not have a close parallel in English
+  * they can be exploited to improve Chinese semantic role labeling
   * BA construction
     * a closed class of words POS-tagged BA
-    * Syntactically, BA is treated as a light verb that takes a clausal
-      complement, and the subject of the clausal complement tends to be Arg1
-      instead of Arg0, different from a typical clause or sentence in Chinese
+    * Synt: BA is treated as a light verb that takes a clausal complement, and
+      the subject of the clausal complement tends to be Arg1 instead of Arg0,
+      different from a typical clause or sentence in Chinese
   * BEI construction is the Chinese passive construction
     * not marked by passive morphology (past participle)
     * a closed group of light verbs POS-tagged LB (for long BEI) and SB (for
@@ -550,66 +548,64 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 
 * developed in close association with the English Propbank
   (Palmer+ 2005)
-* core and adjunctive arguments. The
+* core and adjunctive arguments
   * core arguments are marked with predicate-specific semantic roles Arg0
   * adjunctive semantic roles are
     * listed in Table 4.1
-    * Most ... are similar to those in the English Propbank, but
+    * Most are similar to those in the English Propbank, but
     * TPC is used to label topics
       * more of a semantic notion and is narrower
       * as a syntactic notion is mostly defined in structural terms
         * either be “base-generated” or
           * labeled TPC in the Chinese Propbank
         * moved to the topic position from its canonical position
-          * a core argument to a predicate in the sentence and is labeled
-            with a numbered argument
-* labels are assigned to constituents
-  * cases where
-    * multiple constituents in a parse tree receive the same label
-      * trace
-      * discontinuous argument
-    * Conversely, ... one constituent receives multiple semantic roles from
-      different predicates
+          * a core argument to a predicate in the sentence and is
+            labeled with a numbered argument
+* labels are assigned to constituents. There are cases where
+  * multiple constituents in a parse tree receive the same label
+    * trace
+    * discontinuous argument
+  * Conversely, one constituent receives multiple semantic roles from
+    different predicates
 
 ### 4.3.2 Semantic Role Labeling for Verbs
 
 * Commonalities
   * stages:
-    * pruning,
-      * described in Chapter 3, turns out to be straightforward ... for Chinese
+    * pruning (see Chapter 3) turns out to be straightforward for Chinese
     * argument identification, and
     * argument classification
   * subcat
 * Verb classes
   * Xue (2008) proposed a verb classification scheme based on three dimensions:
-    the number of core arguments, the number of framesets, and syntactic
-    alternation patterns.The
+    the number of core arguments, the number of framesets, and
+    syntactic alternation patterns
   * may or may not have any semantic standing
 * word formation features
-  * e.g. (“become”) in 建成 (“build-become”) adds another argument that is the
+  * eg (“become”) in 建成 (“build-become”) adds another argument that is the
     result of 建 (“build”), which by itself does not take such an argument
   * Knowing the grammatical/semantic relation between the two components will
     help predict the arguments for the verb as a whole
-  * features that represent word formation information (e.g., the head,
-    modifier, object, or complement string of a verb) ... achieved modest
-    gains
+  * features that represent word formation information
+    (eg the head, modifier, object, or complement string of a verb)
+    achieved modest gains
   * However, intuitively this is a promising avenue for further exploration
-* syntactic chunks vs. full parses as input is a tradeoff
+* syntactic chunks vs full parses as input: tradeoff
   * Results in the literature are inconclusive
 
 ### 4.3.3 Semantic Role Labeling for Nouns 70
 
-* Compared with verbs, however, the distribution of the arguments for
-  nominalized predicates is less uniform
+* the distribution of the arguments for nominalized predicates is less uniform
+  compared with verbs 
 * presence or absence of a support verb
-  * most common scenario in which a support verb is present is when the
-    nominalized predicate heads an NP that is the syntactic object of this
-    support verb. In this case, the arguments can be found both inside and
-    outside the NP headed by the nominalized predicate,
+  * most common scenario in which a support verb is present is
+    when the nominalized predicate heads an NP that is the syntactic object of
+    this support verb. In this case, the arguments can be found both inside and
+    outside the NP headed by the nominalized predicate
     * whether a verb is a support verb or not often depends on the context,
-      * e.g.  _conduct_
-  * [without] a support verb, generally all of its arguments are realized
-    within the NP of which it is the head
+    * eg  _conduct_
+  * without a support verb, generally all the arguments are realized in the NP
+    of which it is the head
 * features
   * a support verb to a large extent determines whether or not the arguments of
     a nominalized predicate can occur outside the NP of which it is the head

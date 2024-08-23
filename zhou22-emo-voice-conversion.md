@@ -23,7 +23,7 @@ Speech Communication, vol. 137, pp. 1–18, 2022
     have a major impact on the expression of social attitudes
 * Emotional voice conversion (EVC) is a technique that aims to
   convert the emotional state of the utterance from one to another while
-  preserving the linguistic information and speaker identity, Fig.  1(a). It
+  preserving the linguistic information and speaker identity, Fig. 1(a). It
   * project the desired emotion into a human voice, for example, to act or to
   * not adequately equipped with human-like emotions (Schuller & Schuller 2018)
 * Earlier studies of voice conversion are focused on modeling the mapping
@@ -46,7 +46,7 @@ Speech Communication, vol. 137, pp. 1–18, 2022
     characterized by the speaker’s physical attributes, which are determined by
     * spectrum conversion (Kain and Macon, 1998, Desai+ 2010, Sisman, 2019). It
     * prosody-related features are speaker-independent, that are to be carried
-      forward from the source to the target (Liu+ 2020a).  However, in
+      forward from the source to the target (Liu+ 2020a)
   * emotional voice conversion, emotion is inherently supra-segmental and
     * emo involves both spectrum and prosody (Arias+ 2020, Schuller and
       Schuller, 2020)
@@ -78,8 +78,6 @@ Speech Communication, vol. 137, pp. 1–18, 2022
   * multi-speaker (Shankar+ 2019, Shankar+ 2020, Liu+ 2020b), and
     speaker-independent emotional voice conversion
     (Zhou+ 2020c, Choi and Hahn, 2021)
-
-
 * Speaker-independent emotional voice conversion studies call for a large DB
   * VCTK database (Yamagishi+ 2019), CMU-Arctic database (Kominek and Black,
     2004), and Voice Conversion Challenge (VCC) corpus (Toda+ 2016,
@@ -90,19 +88,25 @@ Speech Communication, vol. 137, pp. 1–18, 2022
     limitations. Based on the review of the current emotional voice conversion
 This paper is organized as follows
 
-#  We first give a comprehensive overview of recent studies on emotional voice conversion in Section 2
+# 2 Overview of recent studies on emotional voice conversion in Section 2
 
-#  3 We discuss the 19 existing databases (Zhou+ 2021c)
+# 3 The 19 existing databases (Zhou+ 2021c)
 
-# 4. ESD database
+# 4 ESD database
 
-*  We then formulate the design of a novel ESD database for speaker-independent emotional voice conversion, that is also suitable for other speech synthesis tasks, such as mono-lingual or cross-lingual speaker voice conversion and emotional text-to-speech
-*  The ESD database consists of a total of 29 h of audio recordings from 10 native English speakers and 10 native Chinese speakers, covering 5 different emotion categories (neutral, happy, angry, sad and surprise)
-*  It represents one of the largest emotional speech databases publicly available, in terms of speaker and lexical variability
-*  All the recordings are conducted in the studio with professional devices to guarantee audio quality
+* We formulate the design of a novel ESD database for speaker-independent
+  emotional voice conversion
+   * also suitable for other speech synthesis tasks, such as mono-lingual or
+     cross-lingual speaker voice conversion and emotional text-to-speech
+* a total of 29 h of audio recordings from
+* 10 native English speakers and 10 native Chinese speakers, covering
+* 5 different emotion categories (neutral, happy, angry, sad and surprise)
+* It represents one of the largest public emotional speech databases
+   * in terms of speaker and lexical variability
+* All the recordings are conducted in the studio with professional devices
 
-#  5, we report the performance for the ESD database in emotional voice conversion
+# 5 The performance for the ESD database in emotional voice conversion
 
-#  6, we show the promise of the ESD database on other voice conversion and text-to-speech tasks
+# 6 The ESD database for other voice conversion and text-to-speech tasks
 
-#  7 concludes the study
+# 7 Conclusion

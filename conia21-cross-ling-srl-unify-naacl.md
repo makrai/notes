@@ -82,21 +82,22 @@ https://github.com/SapienzaNLP/unify-srl
   * the information available in one language cannot be exploited to make SRL
     more robust in other languages. In contrast, one of the main objectives of
 
-## Cross-lingual SRL. A key challenge in performing cross-lingual SRL with a
+## Cross-lingual SRL
 
-* dissimilarity of predicate sense and semantic role inventories between
+* dissimilarity of predicate sense and semantic role inventories
 * the multilingual CoNLL-2009 shared task (Hajic+ 2009) adopts the
   * English Proposition Bank (Palmer+ 2005) and NomBank (Meyers+ 2004) to en,
   * Chinese Proposition Bank (Xue and Palmer, 2009) for Chinese, the
   * AnCora (Taulé+ 2008) predicate-argument structure inventory for Catalan, sp
   * German Proposition Bank
     * differently from the other PropBanks, is derived from FrameNet (Hajic+ 09)
-  * PDT-Vallex (Hajic+ 2003) for Czech. Many of these inventories are not
+  * PDT-Vallex (Hajic+ 2003) for Czech
 * Padó and Lapata (2009), and Akbik+ (2015, 2016) worked around these issues by
   making the English PropBank act as a universal predicate sense and semantic
-  role inventory and projecting PropBank-style annotations from English onto
-  non-English sentences by means of word alignment techniques applied to
-  parallel corpora such as Europarl (Koehn, 2005). These efforts
+  role inventory and
+  projecting PropBank-style annotations from English onto non-English sentences
+  by means of word alignment techniques applied to parallel corpora eg Europarl
+  (Koehn, 2005)
   * resulted in the creation of the Universal PropBank,
   * a multilingual collection of semi-automatically annotated corpora for SRL,
   * actively in use today to train and evaluate novel cross-lingual methods such
@@ -153,13 +154,14 @@ https://github.com/SapienzaNLP/unify-srl
 ## 4.2 Dataset
 
 * CoNLL-2009 shared task (Hajic+ 2009) is the largest and most diverse
-  collection of human-annotated sentences for multilingual SRL.  It comprises 6
-  languages 4 , namely, Catalan, Chinese, Czech, English, German and Spanish,
+  collection of human-annotated sentences for multilingual SRL
+  * 6 languages: Catalan, Chinese, Czech, English, German and Spanish,
   * significantly varying amounts of training samples, from 400K predicate
     instances in Czech to only 17K in German; we provide an overview of the
-    statistics of each language in Appendix B. CoNLL-2009 is the ideal testbed
-    for evaluating the ability of our unified model to generalize across hetero-
-    geneous resources since each language adopts its own linguistic formalism,
+    statistics of each language in Appendix B. CoNLL-2009 is 
+  * the ideal testbed for evaluating the ability of our unified model to
+    generalize across heterogeneous resources since 
+    each language adopts its own linguistic formalism,
     from English PropBank to PDT-Vallex, from Chinese PropBank to AnCora
 * VerbAtlas (Di Fabio+ 2019), a recently released resource for SRL 5 , with the
   aim of understanding whether our model can learn to align inventories that are
@@ -209,7 +211,7 @@ https://github.com/SapienzaNLP/unify-srl
 ## Cross-formalism SRL
 
 * may potentially work on any of the 100 languages supported by the LM
-  (m-BERT or XLMRoBERTa), e.g., in Italian, as shown in Figure 1 (right). This
+  (m-BERT or XLMRoBERTa), eg in Italian, as shown in Figure 1 (right). This
 * vital for those languages for which a predicate-argument structure inventory
   has not  yet been developed – an endeavor that may take years to come to
   fruition – and, therefore, manually annotated data are unavailable. Thus, as
@@ -228,14 +230,15 @@ https://github.com/SapienzaNLP/unify-srl
   top-3 edges with largest weight from the nodes of each inventory to the nodes
   of the English PropBank (Figure 2, left) and to the nodes of VerbAtlas
   (Figure 2, right)
-* e.g. the Chinese PropBank sense 开始.01 can correspond to both start.01 and
+* eg the Chinese PropBank sense 开始.01 can correspond to both start.01 and
   begin.01
-* map senses from different languages and formalisms to the coarse-grained
-  senses of VerbAtlas, even though the latter formalism is quite distant from
-  the others as its frames are based on clustering WordNet synsets – sets of
-  synonymous words – that share similar semantic behavior, rather than
-  enumerating and defining all the possible senses of a lexeme as in the
-  English and Chinese PropBanks
+* VerbAtlas is quite distant from the others as 
+  * its frames are based on clustering WordNet synsets that share similar
+    semantic behavior,
+    rather than enumerating and defining all the possible senses of a lexeme
+    as English and Chinese PropBanks
+* nL map senses from different languages and formalisms to the coarse-grained
+  senses of VerbAtlas
 * our unified model is the first transfer-based tool to automatically align
   diverse linguistic resources across languages without relying on supervision
 

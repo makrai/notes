@@ -38,12 +38,12 @@ https://github.com/awslabs/sockeye/ tree/master/contrib/sacrebleu
   * for multi-reference settings, the computation of the length penalty;
   * the maximum n-gram length; and
   * smoothing applied to 0-count n-grams
-* people use BLEU scores across test sets and languages (comparing, for
-  example, translation performance into English from German and Chinese)
+* people use BLEU scores across test sets and languages
+  (comparing eg translation performance into English from German and Chinese)
 * the number of references included with a test set has a large effect
   * WMT 2017 includes two references for English–Finnish
     * Scoring the online-B system with one/2 reference produces BLEU 22.04/25.25
-  * NIST OpenMT Arabic–English and Chinese– English test sets provided four
+  * NIST OpenMT Arabic–English and Chinese–English test sets provided four
     * BLEU scores in the high 40s (and now, low 50s)
   * all gathered together under the label “BLEU”, over time, they
     leave an impression of very high BLEU scores for some language pairs

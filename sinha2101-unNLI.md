@@ -27,17 +27,17 @@ ACL 2021 arXiv:2101.00010 [cs.CL]
   * also called Natural Language Inference (NLI; Bowman+  2015, i.a.), typically
   * predict whether the premise entails the hypothesis, contradicts it, or neut
 * For nearly all premise-hypothesis pairs, there are many permuted examples that
-  fool the models into providing the correct prediction.
+  fool the models into providing the correct prediction
   * In case of MNLI, for example, the current SOTA of 90.5% can be increased to
     98.7% merely by permuting the word order of test set examples. We even find
-  * drastically increased cross-dataset generalization when we reorder words.
+  * drastically increased cross-dataset generalization when we reorder words
 * We verify our findings with
   * three popular English NLI datasets
     * SNLI (Bowman+ 2015), MultiNLI (Williams+ 2018b) and ANLI (Nie+ 2020))—and
-  * one Chinese one, OCNLI (Hu+ 2020a). It is thus less likely that our findings
+  * one Chinese one, OCNLI (Hu+ 2020a)
 * We also observe the effect for various architectures
   * transformer pre-trained on language modeling (BERT, RoBERTa, DistilBERT),
-  * non-transformers, including a ConvNet, an InferSent model, and a BiLSTM.
+  * non-transformers, including a ConvNet, an InferSent model, and a BiLSTM
 * contributions are as follows:
 
 # 3 a suite of metrics (Permutation Acceptance)
@@ -53,4 +53,4 @@ for measuring model insensitivity to word order (§3),
 # 7 humans struggle with UnNatural Language Inference
 
 # 8 a simple maximum entropy-based method
-to encourage models not to accept permuted examples.
+to encourage models not to accept permuted examples

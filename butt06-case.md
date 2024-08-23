@@ -632,7 +632,7 @@ Miriam Butt
   * hE English, Italian and French, the languages which initially provided the
     bulk of the data for trafoal analyses, do not have a morphological dative
 
-4.9 Taking Stock 71
+## 4.9 Taking Stock 71
 
 * Widespread agreement on case is restricted to a small subset of the crosslin-
   guistic patterns: genitive for possessors in NPs, accusative for objects,
@@ -923,24 +923,23 @@ Miriam Butt
   * observation goes back to linguistic giants such as Wilhelm von Humboldt and
     Otto Jespersen, who are responsible for much of the solid ground which mod-
     ern generative theories find themselves on today
-* Typologically oriented grammatical theorizing at least since Humboldt has
+* Typologically oriented grammatical theorizing at least since Humboldt:
   * word order and inflectional morphology are alternative means of expressing
     grammatical relations. From this premise,
   * Boas, Sapir, and Jespersen explicity derive the interesting crosslinguistic
-* Kiparsky notes that the correlation holds only in one direction: languages
+* Kiparsky notes that the correlation holds only in one direction:
   * little morphology => little word order freedom, but
   * Icelandic with morphology still has a fairly rigid word order
   * there is a correlation between the syntactic licensing of arguments and
-    position, case, and agreement.  Languages which have
+    position, case, and agreement
   * no or little case morphology => heavy use of agreement morphology to
     identify the subject vs the object in a clause (American Indian languages)
   * Languages with a complex morphological case system may make little use of
-    verb agreement (Australian languages are an example).  And languages like
+    verb agreement (Australian languages are an example)
   * English or Chinese have little to no morphology, rely on positional clues
-
 * GB/MP: these crosslinguistic generalizations as finding no echo
-  * recognizes a close interaction between case assignment and agreement, the
-  * interaction is so closely intertwined as to be almost identical.  This
+  * recognizes a close interaction between case assignment and agreement
+  * interaction is so closely intertwined as to be almost identical
   * not do justice to the variety of documented crosslinguistic patterns
   * relegation of morphosyntactic case to Phonological Form as theo deficient,
     because it cannot properly account for crosslinguistic differences
@@ -963,7 +962,7 @@ Miriam Butt
  a.  Complement positions are [−HR] b. Non-final complement positions are [−LR]
  ,,, p109
 * Kiparsky observes that a corollary of this system is that
-  if a language has neither case nor agreement, like Chinese, for example,
+  if a language has neither case nor agreement eg Chinese, 
   it must obey very fixed word order constraints, because in these languages
   only the positional linkers are available, allowing for no
   * word order variability that could be licensed by an interaction with case
@@ -1071,6 +1070,7 @@ Miriam Butt
 5.9.1 Linking 144
 5.9.2 Structural Case 145
 5.9.3 Quirky Case 146
+
 ### 5.9.4 Semantic Case 146
 
 * In Urdu and in most South Asian languages,

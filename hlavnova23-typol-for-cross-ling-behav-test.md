@@ -48,9 +48,9 @@ code at https://github.com/google-research/multi-morph-checklist
   * one of the most general and widely useful NLP applications (McCann+ 2018)
   * enables zero-shot evaluation of models
   * We create tests that cover a diverse set of reasoning capabilities
-  * ling feats
+  * ling features
     * general linguistic features that are expressed differently across langs
-      —negation, numerals, spatial and temporal expressions, and compar
+      * negation, numerals, spatial and temporal expressions, and comparatives
     * features unique to certain languages eg time in Swahili, measure words in
       Chinese, compounding possessives in Finnish, and motion verbs in Russian
 * We evaluate SOTA LMs on the generated tests in zero-shot and one-shot
@@ -296,7 +296,7 @@ based on morphology, string matching and regex
   has), which must be correctly inflected by models in order to achieve the
   intended meaning
 
-### Measure words in Mandarin Chinese, which include over 150 cases and are
+### Measure words in Mandarin Chinese, which include over 150 cases
 
 * used for different types of objects depending on their characteristics, eg
   “本” for books, “双” for pairs, or “辆” for vehicles
@@ -346,11 +346,12 @@ based on morphology, string matching and regex
   * less than a third for SK, SW, and AR for PaLM-S.  These results highlight
   * ie the tests generated with M2C are challenging for the majority of SOTA
     models and demonstrate that a clear gap under performance on English
-* Competence with language-agnostic features emerges at scale. We observe a 20
-  point improvement in average performance from PaLM-S to PaLM-M to PaLM-L,
+* Competence with language-agnostic features emerges at scale
+  * 20 point improvement in average performance from PaLM-S to PaLM-M to
+    PaLM-L
   * PaLM 2 achieves the largest improvements on Slovak, Russian, Swahili, Arab
-  * On Finnish, Slovak, Chinese, and Swahili average performance of PaLm 2 is
-    still below 90%, however, indicating that there is headroom left in terms
+  * hE On Finnish, Slovak, Chinese, and Swahili average performance of PaLm 2
+    is still below 90% indicating that there is headroom left
 
 ## 7.2 Performance across Linguistic Features
 
@@ -373,7 +374,7 @@ based on morphology, string matching and regex
   different forms of motion verbs in Russian
 * Small and medium-sized models generally fail to reason with compounding
   possessives in Finnish and time expressions in Swahili while
-* all models are unable to perfectly employ the correct/reason with
+* all models are unable to perfectly {employ the correct/reason with}
   * measure words in Chinese, despite it being a high-resource language
   * time expressions in Swahili
 * examples of errors for each test type together with English glosses in App B
