@@ -29,9 +29,9 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * Speech is an accessible modality for current interfaces, important info
 * challenges
   * subtle expressive behaviors that occur during human interactions [1]
-  * databases are limited in size, number of speakers, inadequate/inconsistent
-    emotional descriptors, lack of naturalistic behaviors, and
-    unbalanced emotional content [2], [3], [4]
+  * databases are limited in size, number of speakers,
+    inadequate/inconsistent emotional descriptors,
+    lack of naturalistic behaviors, and unbalanced emotional content [2, 3, 4]
   * deep learning in automatic speech recognition (ASR)
     relies on many hours of speech data
     The research community does not have the resources to leverage powerful

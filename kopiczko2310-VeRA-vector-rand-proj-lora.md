@@ -66,8 +66,8 @@ https://dkopi.github.io/vera
   * significantly lowers the hardware barrier for finetuning by reducing the
     need for gradient calculation and optimizer state maintenance for most
     parameters
-  * can also work with quantized model weights (Dettmers+ 2023), reducing the
-    requirements even further. Furthermore, LoRA modules are
+  * can also work with quantized model weights (Dettmers+ 2023),
+    reducing the requirements even further
   * easily swappable, making task-switching efficient and less
     resource-intensive
   * no additional inference time cost when deployed,

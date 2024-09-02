@@ -67,10 +67,10 @@ NeurIPS 2022. Camera-ready version
   * we provide a new descriptive analysis which shows that
     large features with magnitudes up to 20x larger than in other dimensions
     * first appear in about 25% of all transformer layers and then gradually
-    * spread to other layers as we scale transformers to 6B parameters
+      spread to other layers as we scale transformers to 6B parameters
   * At around 6.7B parameters, a phase shift occurs, and
-    all transformer layers and 75% of all sequence dimensions are affected by
-    extreme magnitude features
+    all transformer layers and 75% of all sequence dimensions are affected
+    by extreme magnitude features
     * These outliers are highly systematic:
       at the 6.7B scale, 150,000 outliers occur per sequence, but they are
       concentrated in only 6 feature dimensions across the entire transformer
@@ -88,8 +88,8 @@ NeurIPS 2022. Camera-ready version
 * LLM.int8() = vector-wise quantization + mixed precision decomposition
 * inference in LLMs with up to 175B parameters without any performance degrad
   * new insights into the effects of these outliers on model performance
-  * possible for the first time to use very large models eg OPT-175B/BLOOM, on
-    a single server with consumer GPUs
+  * possible for the first time to use very large models, eg OPT-175B/BLOOM,
+    on a single server with consumer GPUs
 * lossy (App D)
   * our work focuses on no degrad
   * we maintain end-to-end inference runtime performance for LLMs eg BLOOM-176B

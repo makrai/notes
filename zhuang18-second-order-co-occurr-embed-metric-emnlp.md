@@ -8,7 +8,7 @@ train word embeddings via a newly designed metric
 # Abstract
 
 * In this paper, a metric is designed to estimate second order cooccurrence
-  * based on [quantized] context overlap
+  * based on quantized context overlap
   * joint training with existing neural word embedding models
 * Experimental results for word similarity tasks and text classification
 

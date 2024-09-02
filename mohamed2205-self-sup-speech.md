@@ -10,12 +10,12 @@ this paper is older than whisper (Radford 23)
 * Self-supervised representation learning (SSL) has success in NLP and vision
 * Speech representation learning is experiencing similar progress in
   * three main categories: generative, contrastive, and predictive methods
-  * Other approaches rely on multi-modal data for pre-training, mixing text or
-    visual data streams with speech. Although self-supervised speech
+  * Other approaches rely on multi-modal data for pre-training,
+    mixing text or visual data streams with speech
 * closely related
-  * acoustic word embedding and learning with zero lexical resources, both of
-    which have seen active research for many years. This review presents
-    approaches for self-supervised speech representation learning and their
+  * acoustic word embedding and learning with zero lexical resources, 
+    * both have seen active research for many years
+    * we review approaches for self-supervised speech representation learning
 * many current methods focus on automatic speech recognition as a downstream
 * recent efforts on benchmarking learned representations to extend the applic
 
@@ -27,13 +27,14 @@ this paper is older than whisper (Radford 23)
 
 ## B. Generative approaches
 
-### 1) Motivation: In this category, the pretext task is to generate, or
-reconstruct, the input data based on some limited view.  This includes
-predicting future inputs from past inputs, masked from unmasked, or the
-original from some other corrupted view. “Generative” as used in this paper
-hence refers to models that target the original input in their pretext task
-* Note that this differs from generative models, which learn distributions that
-allow to sample new data
+### 1) Motivation: the pretext task 
+
+* task: to generate, or reconstruct, the input data based on some limited view.
+* This includes predicting future inputs from past inputs, masked from
+  unmasked, or the original from some other corrupted view
+* “Generative” as used in this paper hence refers to models that
+  target the original input in their pretext task
+* != generative models, which learn distributions that allow to sample new data
 
 ### 2) Approaches:
 
@@ -51,25 +52,25 @@ allow to sample new data
 
 ## C. Contrastive approaches 7
 
-### 1) Motivation: As discussed above, speech contains many entangled features
+### 1) Motivation:  Speech contains many entangled features
 
-* Thus, learning to reconstruct the raw speech signal might not be the best way
+* ~> learning to reconstruct the raw speech signal might not be the best way
   to discover contextualized latent factors of variations
-* Contrastive models learn representations by distinguishing a target sample
-  (positive) from distractor samples (negatives) given an anchor
-  representation
+* Contrastive models learn representations by
+  distinguishing a target sample (positive) from distractor samples (negatives)
+  given an anchor representation
 * The pretext task is to max/minimize latent space similarity
-  between the anchor and posi/negative samples
+  between the anchor and positive/negative samples
 * This approach has been used extensively in the general ML community [134]
 
 ### 2) Approaches:
 
-#### a) CPC: Contrastive Predictive Coding (CPC) [56] is a prominent example of
+#### a) Contrastive Predictive Coding (CPC) [56]
 
 * a convolutional module f1 (·) to produce localized representations zt with
   a recurrent module f2 (·) on top that outputs a contextualized representation
-  ht . An anchor representation ẑt,k is obtained via a linear projection gk (·)
-  of ht . The positives and negatives are sampled from the localized
+  ht. An anchor representation ẑt,k is obtained via a linear projection gk (·)
+  of ht. The positives and negatives are sampled from the localized
   representation Z.  Hence, at a single timestep t, CPC forms multiple anchor
   representations ẑt,k for k ∈ {1, ... , K} and associates with each
 
@@ -116,7 +117,7 @@ allow to sample new data
 * Applying BERT-type training directly to speech input is not possible
   * Discrete BERT [129] uses a pre-trained vq-wav2vec model
     to derive a discrete vocabulary [124]
-  * vq-wav2vec model is similar to wav2vec mentioned in Paragraph III-C2a
+  * vq-wav2vec is similar to wav2vec mentioned in Paragraph III-C2a
     but uses quantization to learn discrete representations
     * discrete units ct are first extracted with the vq-wav2vec model f1 (·)
 * softmax normalized output layer g(·), ct = f1 (X[t−u,t+u] ) ,(21) H = f2
@@ -139,7 +140,7 @@ allow to sample new data
   * convolutional module f1 (·) and a Transformer encoder f2 (·), as well as a
   * softmax normalized output layer g2 (·): where w defines the window size
 * categorical cross-entropy loss is computed on both masked, Lm , and unmasked,
-  Lu , timesteps: X Lm = − log p(ct | X) , (29) t∈M L = βLm + (1 − β)Lu .  (30)
+  Lu , timesteps: X Lm = − log p(ct | X) , (29) t∈M L = βLm + (1 − β)Lu.  (30)
   Again, M is the set of all masked timesteps, β is a scalar hyperparameter and
   Lu is computed as Lm but summing over t∈ / M
 * Intuitively,
@@ -156,7 +157,7 @@ allow to sample new data
 * pre-training is a two-step procedure
   * The first iteration is described above
   * second iteration: representations from a hidden layer of the model from the
-    first iteration are clustered with k-means to obtain new targets ct .  For
+    first iteration are clustered with k-means to obtain new targets ct.  For
 * only two iterations are needed to match or outperform the previous SOTA
   results for low-resource speech recognition
 * combining the HuBERT approach with the wav2vec 2.0 approach, the w2v-BERT
