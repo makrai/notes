@@ -1,5 +1,6 @@
 GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection
-Jiawei Zhao, Zhenyu Zhang, Beidi Chen, Zhangyang Wang, Anima Anandkumar, Yuandong Tian
+Jiawei Zhao, Zhenyu Zhang, Beidi Chen, Zhangyang Wang, Anima Anandkumar,
+  Yuandong Tian
 ICML 2024 (Oral) arXiv:2403.03507 [cs.LG]
 
 # Abstract

@@ -69,14 +69,14 @@ https://github.com/SaraS92/CAE_ADD
     * hE affects the acceptability of the system in real-world situations
 * three phases: preprocessing, feature extraction, and classification
 * unbalanced data problem in depression detection
-  * techniques like random sampling to overcome the problem of unbalanced
+  * techniques like random sampling to overcome the problem of unbalance
     (Ma+ 2016, Vázquez-Romero and Gallardo-Antolín, 2020)
   * hE, both of the undersampling and oversampling as random sampling
     strategies have limitations
   * undersampling: some of the useful information from the majority class
     might be eliminated
   * oversampling: likely overfitting in the model (Lin+ 2017)
-  * clustering-based resampling (undersampling) is to
+  * clustering-based resampling (undersampling):
     group similar data samples from the majority class into diff clusters
     * Therefore, the cluster centroid (or center) can be used to represent
       the data in the whole group

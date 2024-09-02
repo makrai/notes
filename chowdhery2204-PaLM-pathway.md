@@ -53,7 +53,7 @@ arXiv:2204.02311 [cs.CL]
   * all trained either on English data or diverse multilingual sets. Other
   * specific non-English languages, such as Zeng+ (2021) for Chinese
   * all variants of the Transformer architecture (Vaswani+ 2017). The
-* improvements in these models have primarily come from one or more of the foll
+* improvements in these models have primarily come from one or more of
   * scaling the size of the models in both depth and width;
   * increasing the number of tokens that the model was trained on;
   * training on cleaner datasets from more diverse sources; and
@@ -186,8 +186,8 @@ arXiv:2204.02311 [cs.CL]
 
 # 13 Open Questions in Scaling
 
-* In our introductory section, we describe the four main axes which have led to
-  significant quality improvements of large LMs for few-shot learning. These
+* In our introductory section, we described the four main axes which have led
+  to significant quality improvements of large LMs for few-shot learning
   * model depth and width,
   * number of tokens trained,
   * training corpus quality,

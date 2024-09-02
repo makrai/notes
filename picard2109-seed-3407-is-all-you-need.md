@@ -1,5 +1,7 @@
-Torch.manual_seed(3407) is all you need: On the influence of random seeds in
-deep learning archits for computer vision David Picard arXiv:2109.08203 [cs.CV]
+`Torch.manual_seed(3407)` is all you need:
+  On the influence of random seeds in deep learning archits for computer vision
+David Picard
+arXiv:2109.08203 [cs.CV]
 
 * popular deep learning architectures for computer vision
 * I scan a large amount of seeds (up to 104) on CIFAR 10 and I also scan fewer

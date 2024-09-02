@@ -1,4 +1,4 @@
-Ecco: An Open Source Library for the Explainability of Transformer Language Models
+Ecco: An Open Source Library for the Explainability of Transformer LMs
 J Alammar
 ACL | IJCNLP 2021
 
@@ -9,10 +9,10 @@ ACL | IJCNLP 2021
 # Abstract
 
 * understanding of Transformer-based NLP models' success
-  lags behind our ability to continue scaling these models. To increase the
-* we present Ecco – an open-source library for the explainability of
+  lags behind our ability to continue scaling these models
+* we present Ecco – an open-source library for transformer explainability
   * a set of tools to capture, analyze, visualize, and interactively explore
-    the inner mechanics of these models. This includes
+    the inner mechanics of these models
   * gradient-based feature attribution for natural language generation
   * hidden states and their evolution between model layers
   * convenient access and examination tools for neuron activations in the
@@ -21,7 +21,7 @@ ACL | IJCNLP 2021
     via canonical correlation analysis (CCA), non-negative matrix factor (NMF),
     and probing classifiers
 * We find that syntactic information can be retrieved from BERT’s FFNN reprs
-  in levels comparable to those in hidden state representations. More
+  in levels comparable to those in hidden state representations
   * the model builds up syntactic information in its hidden states even when
     intermediate FFNNs indicate diminished levels of syntactic information
 
