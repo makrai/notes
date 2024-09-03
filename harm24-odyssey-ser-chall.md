@@ -97,11 +97,11 @@ Henry Härm; Tanel Alumae
     layer following the pooling layer. A logistic regression model was then
     trained on these embeddings, excluding data labeled as “X” and “O” with
     feature normalization and dimensionality reduction to 15 using LDA
-* The training data is highly unbalanced with regard to the emotion
-  categories. However, the emotion distribution in evaluation data is
-  uniform. Therefore, we post-processed the trained logistic regression
-  model to use uniform prior over the 8 emotion categories, by appropriately
-  modifying the biases of the softmax layer
+* The training data is highly unbalanced with regard to the emo categories.
+  * hE the emotion distribution in evaluation data is uniform. Therefore, 
+  ~> we post-processed the trained logistic regression model to use uniform
+  prior over the 8 emotion categories, by appropriately modifying the biases of
+  the softmax layer
 * attribute prediction, the model structure mirrored that of classification
   model, but replaced the final softmax layer with a tanh nonlinearity, fol-
   lowed by an additional linear layer with three outputs

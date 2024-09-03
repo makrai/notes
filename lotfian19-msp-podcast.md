@@ -9,7 +9,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * translate results on speech emotion recognition in controlled
     conditions into real-life applications
   * unbalanced emotional content, which is dictated by the recording protocol
-    (eg, positive for colloquial conversats, negative for discussion or debates)
+    (eg, positive for colloquial conversats, neg for discussion or debates)
   * size and speaker diversity are also limited
 * we propose a novel approach to effectively build a
   large, naturalistic emotional database with balanced emotional content,

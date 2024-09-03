@@ -20,20 +20,19 @@ baseline: https://huggingface.co/3loi
     a weighted multi-class cross-entropy (CE) loss. We employ a weighted loss
     function to address the class imbalance problem (while the train and
     development set are unbalanced across emotions, the test set is balanced).
-    This approach assigns more significance to the less frequent classes.
-    Specifically, for tasks like ours that use the CE loss for
-    classification, we adjust the weight parameter to reflect the inverse
-    frequency of each class. This means assigning higher weights to less fre-
-    quent classes, therefore, enhancing the model’s sensitivity and performance
-    on these classes. The weighted CE loss is defined as follows:
-* attributes prediction (task 2) 4 , we use a single task setup, where we
-  train a separate regression model for arousal, valence, and dominance. For
-  the loss on emotional attributes regression models, we use the concordance
-  correlation coefficient (CCC), which measures the agreement between the true
-  and predicted emotional attribute scores. Equation 2 illustrates the CCC
+    * assigns more significance to the less frequent classes.
+    * we adjust the weight parameter of the CE loss to reflect the inverse
+      frequency of each class. This means assigning 
+    * ie higher weights to less frequent classes, therefore, enhancing the
+      model’s sensitivity and performance on these classes. The 
+    * weighted CE loss is defined as follows:
+* attributes prediction (task 2), we use a single task setup, where we train a
+  separate regression model for arousal, valence, and dominance. For the 
+  * loss on emotional attribs: concordance correlation coefficient (CCC, eq 2)
+  * measures the agreement between the true and predicted emo attribute scores
   * Our model’s training objective is to optimize the CCC, aiming to achieve a
-    high correlation between predicted and actual scores while minimizing
-    prediction errors.
+    high correlation between predicted and actual scores
+    while minimizing prediction errors
 
 # 5. Results and Findings
 
