@@ -7,14 +7,14 @@ https://github.com/state-spaces/mamba
 
 # Abstract
 
-* Transformers have been the main architecture behind deep LM
-* state-space models (SSMs) such as Mamba have recently been shown to match or
-  outperform Transformers at small to medium scale
-* We show that these families of models are actually quite closely related, and
-  * a rich framework of theoretical connections
-    between SSMs and variants of attention, connected
-    * through various decompositions of a well-studied class of structured
-      semiseparable matrices
+* SSMs and variants of attention
+  * Transformers have been the main architecture behind deep LM
+  * state-space models (SSMs) such as Mamba have recently been shown to
+    match or outperform Transformers at small to medium scale
+* We: the two families of models are actually quite closely related, and
+  * we develop a rich framework of theoretical connections 
+  * connected through various decompositions of a well-studied class of
+    structured semiseparable matrices
     * state space duality (SSD) framework allows us to design
   * a new architecture (Mamba-2) whose
     * at the intersection of SSMs and structured attention
