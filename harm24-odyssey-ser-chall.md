@@ -45,10 +45,9 @@ Henry Härm; Tanel Alumae
 # 2. Data
 
 * The average duration of utterances in the training set is 5.8 seconds
-* we decided to automatically transcribe all data splits on our own, in order
-  for the evaluation data transcripts to be consistent with training and
-  development data. This was done using the NVIDIA NeMo Canary 1B1 multilingual
-  ASR model [17], using greedy decoding
+* we decided to automatically transcribe all data splits on our own,
+  in order for the eval data transcripts to be consistent with training & dev
+  * using the NVIDIA NeMo Canary 1B1 multiling ASR model [17], greedy decoding
 
 # 3. Methods
 

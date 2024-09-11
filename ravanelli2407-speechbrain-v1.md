@@ -23,12 +23,11 @@ Submitted to JMLR (Machine Learning Open Source Software) arXiv:2407.00463 [cs.L
 # 1 Intro
 
 * other open-source toolkits, like NeMo and ESPnet,
-  also support multiple Conversational AI tasks, each excelling in different
-  applications
-  * NeMo is industry-focused, offering ready-to-use solutions, but may provide
-    less flexibility for extensive customization compared to SpeechBrain, which
+  also support multiple Conversational AI tasks, each excelling in diff applic
+  * NeMo is industry-focused, offering ready-to-use solutions, 
+    may be less flexibile for extensive customization compared to SpeechBrain,
   * ESPnet also supports various tasks with competitive performance, but
-    SpeechBrain stands out for its comprehensive documentation,
+  * nL SpeechBrain stands out for its comprehensive documentation,
     beginner-friendly tutorials, simplicity, and
     lightweight design with fewer dependencies
 
