@@ -72,9 +72,9 @@ LREC 2016
   of the typological database ValPal (Hartmann+ 2013)
   * part of the Leipzig Valency Classes Project, which aims to follow up
     the works by Levin (1993) for English and by Apresjan (1967) for Russian;
-* We did not include, at least in this first phase, a formal description of the
-  event and of its temporal structure (which is instead present in VerbNet’s
-  semantic description)
+* We did not includ, a formal description of the event and of its temporal
+  structure (which is instead present in VerbNet’s semantic description)
+  * at least in this first phase of the proj
 
 ## 3.2. Class Description and Structure
 

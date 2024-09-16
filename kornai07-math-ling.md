@@ -193,8 +193,9 @@ András Kornai
 * The first proposal within generative linguistics to use case as the driving
   mechanism for syntax was by Fillmore (1968, 1977)
 * ergativity: the standard introduction is Dixon (1994)
-* Dependency grammars are due to Tesnière (1959).  Other modern formulations
-  include Sgall+ (1986), Mel’cuk (1988), Hudson (1990), and McCord (1990)
+* Dependency grammars are due to Tesnière (1959)
+  * Other modern formulations include
+    Sgall+ (1986), Mel’cuk (1988), Hudson (1990), and McCord (1990)
   * Gaifman (1965) proved the equivalence of one formulation of dependency
     grammar to CFGs
     * deflected interest from the area

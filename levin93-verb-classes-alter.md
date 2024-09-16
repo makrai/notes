@@ -16,14 +16,14 @@ Beth Levin
 ## The Nature of Lexical Knowledge 1
 
 * Bloomfield (1933) wrote, "The lexicon is really an appendix of the
-  grammar, a list of basic irregularities" (p. 274 )
+  grammar, a list of basic irregularities" (p 274)
   * conforms to [the desideratum that the lexicon] contains
     * the minimum information necessary
     * precisely the idiosyncratic information associated with each item
-* Speakers of English also know [extended meanings (or senses)]
+* Speakers of English also know extended meanings (or senses)
   * what Apresjan (1973) calls regular polysemy
-  * e.g. Verbs like _whistle_ can be used as verbs of directed motion
-    [e.g.] _The bullet whistled through the window_
+  * eg Verbs like _whistle_ can be used as verbs of directed motion
+    eg _The bullet whistled through the window_
     `*`_The dog barked down the street behind the jogger_
 
 ## Verb Meaning: A Key to Verb Behavior 4
@@ -34,7 +34,7 @@ Beth Levin
   means "see"/"frighten"
 * on the basis of these assumptions about the meaning of gaily, the two
   speakers are able to make judgments about its syntactic behavior
-* e.g. middle transitivity alternation
+* eg middle transitivity alternation
   * available only to change of state verbs such as frighten, cut, split
 * _spray/load_(Rappaport and B. Levin,1988) and Pinker (1989)
 * the church example (Hale and Keyser,1991) for a discussion of  and E. V
@@ -120,8 +120,8 @@ Beth Levin
 * example is provided by verbs of motion
   * this class is not homogeneous (B. Levin and Rappaport Hovav 199). It
   * subclasses
-    * inherently directed motion (e.g., arrive, come, go) and a subclass of
-    * manner of motion (e.g., jump, run, trot, skip)
+    * inherently directed motion (eg arrive, come, go) and a subclass of
+    * manner of motion (eg jump, run, trot, skip)
   * In the absence of a directional prepositional phrase [they] describe the
     direction [vs] the manner of motion
   * some verbs of manner of motion do not necessarily entail any
@@ -174,7 +174,7 @@ Beth Levin
         needs to be carefully investigated
 * decision not to illustrate a consistent set of properties across all the verb
   classes identified in Part II of this book
-  * e.g. _fill_ expresses its arguments in a frame resembling one of the
+  * eg _fill_ expresses its arguments in a frame resembling one of the
     variants of the locative alternation, and it is similar in meaning to
     locative alternation verbs like spray and load,
     * it makes sense to include among the properties of fill's verb class that

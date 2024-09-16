@@ -429,9 +429,9 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   Penn Treebank (Marcus+ 1993) described in Chapter 12
 * head-finding rules developed for use with probabilistic parsing facilitated
   * extraction of dependency parses from phrase-based ones (Xia and Palmer 2001)
-* long-running Prague Dependency Treebank project (Hajič, 1998) is the most
-  * directly annotate a corpus with multiple layers of morphological, syntactic
-    and semantic information
+* long-running Prague Dependency Treebank project (Hajič, 1998)
+  * directly annotate a corpus with
+    multiple layers of morphological, syntactic and semantic information
   * The current PDT 3.0 now contains over 1.5 M tokens (Bejček+ 2013)
 * Universal Dependencies (UD; Nivre+ 2016) is a project directed at creating a
   consistent framework for dependency treebank annotation across languages with

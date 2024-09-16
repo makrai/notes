@@ -84,10 +84,10 @@ LREC 2014, Reykjavik, Iceland
 * two main theoretical frameworks dominate the dependency syntax landscape
   * Prague Dependency school and the
     * Prague Dependency treebanks (for Czech, English and Arabic), and the
-    * distinguishes between analytical and tectogrammatical levels. While the
+    * distinguishes between analytical and tectogrammatical levels
     * tectogrammatical:
-      * semantic labels, called functors, such as Actor/Bearer, Addressee,etc.,
-      * topic-focus articulation of a sentence, which we do not represent in
+      * semantic labels, called functors, such as Actor/Bearer, Addressee, etc
+      * topic-focus articulation of a sentence, which we do not represent
   * Meaning Text Theory (MTT, (Melčuk, 1988))
     * the basis of a new Spanish treebank (Mille et al., 2013)
     * AnCora-UPF Treebank (Mille et al., 2013) follows the MTT model with four
