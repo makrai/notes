@@ -56,20 +56,20 @@ project Semantic Role Labeling in Slovene and Croatian.
   * Dutch: Sonar (Schuurman+ , 2010) for the
   * Croatian (Filko+ 2012) and 
   * the Czech valence lexicon Vallex. 
-We focused on comparing formal descriptions (ie. Sets of semantic tags) for
-each participatory role and the criteria for their determination. From the
-perspective of optimizing the set of codes, which would provide enough robust
-system and at the same time as far as possible into account the specifics of
-the Slovenian language, we consider also the degree of semantic fragmentation,
-which provides a single system, and the fact that the Slovene language is not
-available in machine-readable lexicon verbal valency. In addition, we have
-criteria for semantic tagging like to set so as to enable reliable and most
-consistent Marking the training corpus. In the range of participatory roles and
-their formal descriptions are derived from the functional generative approach
-of the Prague Dependency nurseries (Eng.
-Prague Dependency Treebank; (PDT); Mikulov+ 2006) within the scope of
-prototypical verbal sample (proposition) the relationship between the
-participants, who have You can udeležensko role delovalnika or circumstances.
+* formal descriptions (ie. Sets of semantic tags) for each participatory role
+  and the criteria for their determination. From the perspective of optimizing
+  * goal: robust system and at the same time as far as possible into account
+    the specifics of the Slovenian language, 
+  * we consider also the degree of semantic fragmentation, which provides a
+  * Slovene language is not available in machine-readable lexicon verbal
+    valency. In addition, we have 
+  * criteria for semantic tagging like to set so as to enable reliable and most
+    consistent Marking the training corpus. In 
+  * the range of participatory roles and their formal descriptions are derived
+    from the functional generative approach of the Prague Dependency Treebank;
+    (PDT); Mikulov+ 2006) within the scope of prototypical verbal sample
+    (proposition) the relationship between the participants, who have You can
+    udeležensko role delovalnika or circumstances.
 Participants and their various participatory role therefore provides
 prototypical prepozicija given meaning of the verb, which is realized in its
 valency scheme. In concrete terms, we could say that foresees verb to do in one

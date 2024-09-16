@@ -62,8 +62,7 @@ KI Künstliche Intelligenz (2021) 35:343–360
 * we discuss the design choices of UMR in relation to five meaning reprs:
   * Abstract Meaning Representation (AMR) [6],
   * Discourse Representation Structures (DRS) [13, 44],
-  * the tectogrammatical layer of the Prague Dependency TreeBank (PDT) [37,
-    38],
+  * the tectogrammatical layer of the Prague Dependency TreeBank (PDT) [37, 38]
   * Minimal Recursion Semantics (MRS) [21], and
   * Universal Conceptual Cognitive Annotation (UCCA) [1]
 * These five meaning representations are selected as a basis for comparison

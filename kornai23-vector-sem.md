@@ -34,7 +34,7 @@ More complex notation
 
 15. BinaryAtom -> at | between | cause_ | er_ | follow | for_ | from | has | in
     | ins_ | is_a | lack | mark_ | on | part_of | under
-* “doing grammar by spreading activation” 
+* “doing grammar by spreading activation”
   * our concept is almost ident to that of Jackendoff and Audring, 2020 7.2.3
   * both go back to the same ideas (Quillian, 1969; Collins and Loftus, 1975),
   * obliterating the usual distinction between rules and representations. In
@@ -43,10 +43,10 @@ More complex notation
     primitive and derived, intermediary or final, the same way
   * characteristic of early combinatorial system like the untyped lambda
     calculus (Church, 1936) and categorial grammar (Ajdukiewicz, 1935)
-  * maintained in all implementations of 4lang , be they by 
+  * maintained in all implementations of 4lang , be they by
     * Eilenberg machines (which directly formalize spreading activation), by
-    * (hyper)graph kernel methods (Ghosh+ 2018), or by 
-    * direct linear algebraic manipulation.
+    * (hyper)graph kernel methods (Ghosh+ 2018), or by
+    * direct linear algebraic manipulation
 
 ### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
@@ -211,5 +211,31 @@ More complex notation
     * view interpretation as the inverse task, analysis by synthesis
 
 # 8 Trainability and real-world knowledge. Old title: Coreference 175
+
+## 8.3 Dynamic embeddings
+
+### Vectors
+
+* Both Harris, 1954 and Firth, 1957 are frequently cited as early precursors of
+  vector semantics, but contemporary readers will be greatly disappointed if
+  they read these works with the goal of understanding these key elements of
+  modern systems
+  * Harris’ work is clear, well reasoned, and forms the basis for much
+    theoretical and computational linguistic work in the subsequent decades,
+    but neither vectors nor cooccurrence statistics play a major role in it
+  * Firth, besides providing the slogan “You shall know a word by the company"
+    has had practically no impact, and much of what he wrote is quite opaque
+  * In truth, none of the key ideas can be fully traced to them
+* the use of vectors appeared first via multivariate statistics, importing
+  * Principal Component Analysis and the strongly related SVD which
+  * go back to the late 19th and early 20th century. In
+  * S19:2.7 we discussed how
+    * Osgood, May, and Miron (1975) and
+    * Deerwester, Dumais, and Harshman (1990) used these methods to study human
+      conceptual structure and improve information retrieval
+  * The key conceptual step,
+    parting with the venerable Prague School tradition of discrete features and
+    relying entirely on embedding the discrete elements in a cont vector space,
+    was taken by Schütze, 1993
 
 # 9 Applications

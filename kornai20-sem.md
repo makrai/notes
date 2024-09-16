@@ -11,8 +11,8 @@ András Kornai
     * First there is the Frege-Russell-Tarski-Montague-Kamp tradition,
       what we call the _standard_ theory in this book
     * meanings are modeled by logic formulas
-  2. the Firth-Harris-Osgood tradition of _distributional_ theory [\dots].
-     Here meanings are modeled as  vectors in a continuous vector space `R^n`
+  2. the Firth-Harris-Osgood tradition of _distributional_ theory [\dots]
+    * Here meanings are modeled as  vectors in a continuous vector space `R^n`
   3. the _semantic network_ theory: both _4lang_ and _AMR_ are modern instances
 
 ## 1.5 Suggested reading plans
@@ -20,7 +20,7 @@ András Kornai
 * Our grammatical theory is, broadly speaking, Pān.inian: we assume
   * people want to express ideas so that others will understand them:
   * grammar is a formal transduction mechanism
-    from the ideas (meaning representations) to utterances (strings of words).
+    from the ideas (meaning representations) to utterances (strings of words)
   * We take several technical devices from Pān.ini, chief among them the theory
     of kārakas or deep cases, which we discuss in Section 4.6
 
@@ -65,7 +65,7 @@ András Kornai
     * Platonic method of ‘recollection’ (anamnesis), as exemplified in Meno,
       where Socrates teaches the slave boy that a square D built on the
       diagonal of a smaller base square B will have twice the area of B. Some
-  * from Leibniz and Descartes to Chomsky and Fodor.
+  * from Leibniz and Descartes to Chomsky and Fodor
 
 # 4 Graphs and Machines
 
@@ -105,7 +105,7 @@ András Kornai
 
 ## 5.5 Representing knowledge and meaning
 
-* the autonomy of syntax thesis (Chomsky 1973), claiming that
+* the autonomy of syntax thesis (Chomsky 1973), claiming that             155
   * the syntactic rules and principles of a language are formulated without
     reference to meaning, discourse, or language use
   * see
@@ -115,6 +115,25 @@ András Kornai
   * In this book we assume syntax to be autonomous ... simply because it makes
     good engineering sense to maximally isolate our theory of semantics from
     the details of syntactic representation
+* Two main lines of criticism were leveled against the Katz–Fodor model:
+  * cognitive scientists attacked the Prague School-style binary features, and
+  * the formal semantics community faulted the theory for its
+    inability to confront what they saw as the central issue of meaning,
+    how concepts relate to things in the real world
+  * Lewis (1970) decried the model as ‘markerese’ for
+    interpreting words in an uninterpreted language of markers,
+    rather than in model-theoretic terms
+  * variants of the model survived as the principal tool of lexical semantics
+    in generative grammar eg Jackendoff (1972), Pustejovsky (1995)
+* the model owes its resilience to
+  * a clear, and therefore clearly debatable (Bolinger, 1965), restatement of
+    the Aristotelian notion of eidopoios diaphora as the ‘distinguisher’, and
+  * the great heuristic appeal of systematizing structural decomposition in
+    terms of a featural theory of ‘semantic markers’. Evidently Katz and Fodor
+  * a surprising amount of what earlier generations of philosophers and
+    grammarians had to say about word meaning can be restated in their
+    formalism clearly, and without much technical difficulty,
+    at least for nominal bases (nouns and adjectives)
 
 ## 5.7 Pragmatics
 
@@ -141,9 +160,9 @@ András Kornai
 
 ## 9.4 A formal model
 
-* deductive rule 
+* deductive rule
   * in the proto-logic described here there is only one rule of deduction,
-    called _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition.
+    called _a fortiori_ in the Latin and kal va-chomer in the Hebrew tradition
   * in standard systems of formal logic the main deduct rule is modus ponens,
     but in our model modus ponens comes built into the set-theoretical underpinn
   * if some x is wrong, say kicking your opponent when he is down, surely 2x is
