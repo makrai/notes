@@ -63,15 +63,17 @@ LREC 2017, Springer 2018
     not break-type and touch-type verbs). In
   * Polish verbs pattern like English verbs in terms of the middle construction:
 * The stipulated cross-linguistic validity has implications for the creation of
-  VerbNet style resources to support NLP in other languages. Yet few languages
-  boast Levin-style classifications and resources similar to the English
-  * developed manually from scratch, aiming to capture properties specific to
-    the language in question, e.g., resources for Spanish and Catalan (Aparicio+
-    2008), Czech (Pala and Horák 2008), and Mandarin (Liu and Chiang 2008)
+  VerbNet style resources to support NLP in other languages. Yet 
+  * few languages boast Levin-style classifications and resources like English
+  * developed manually from scratch,
+    aiming to capture properties specific to the language in question,
+    * Spanish and Catalan (Aparicio+ 2008), 
+    * Czech (Pala and Horák 2008), and 
+    * Mandarin (Liu and Chiang 2008)
   * (semi-)automatically, using already existing resources and aiming to reduce
     * Brazilian Portuguese (Scarton and Aluısio 2012), French (Pradet+ 2014),
       and Croatian (Mikelić Preradović and Boras 2013). Also
-  * fully automatic methods have been used, e.g., for French (Sun+ 2010) and
+  * fully automatic methods have been used, eg for French (Sun+ 2010) and
     Brazilian Portuguese (Scarton+ 2014).  However, this work has been limited
 
 # 3 Translation of verb classes: method and evaluation on Polish
@@ -83,7 +85,7 @@ LREC 2017, Springer 2018
     Brazilian Portuguese (Scarton+ 2014). This resource
   * includes 17 fine-grained classes sampled from different parts of the
     VerbNet taxonomy, with 12 member verbs each
-    (e.g., ‘9.1 PUT’ class: bury, place, install, put, mount, deposit,
+    (eg ‘9.1 PUT’ class: bury, place, install, put, mount, deposit,
     position, set, situate, immerse, insert, stash)
 * stages of the proposed method
   1. translation of the 12 member verbs from each class
@@ -137,11 +139,11 @@ LREC 2017, Springer 2018
     based on the lexicalization options (Levin and Hovav 2015)
 * Talmy’s (1985) examination of directed motion verbs reveals that
   * languages encode ‘Path’ and ‘Manner’
-    1. conflating ‘Manner’ with ‘Motion’ inside the verb, e.g.  English _roll_
+    1. conflating ‘Manner’ with ‘Motion’ inside the verb, eg  English _roll_
     2. expressing ‘Motion’ + ‘Path’ in the verbal root or
-      e.g. Romance languages (Folli and Ramchand 2005)
+      eg Romance languages (Folli and Ramchand 2005)
       * ‘Manner’ may be expressed as a gerundive
-    3. ‘Motion’ + ‘Figure’ are lexicalized in the verb root, e.g. Navajo
+    3. ‘Motion’ + ‘Figure’ are lexicalized in the verb root, eg Navajo
 
 ### 4.3.3 Causativity and transitivity
 
@@ -156,10 +158,10 @@ LREC 2017, Springer 2018
 
 ### 4.3.4 Cross-linguistic commonalities
 
-* e.g. all languages studied allow ‘remove’ verbs to appear in frames such as
+* eg all languages studied allow ‘remove’ verbs to appear in frames such as
   NP V NP PP.SOURCE (I removed the stains from the tablecloth)
 * Further research is necessary to investigate the applicability of the method
-  to e.g. ergative and active-stative languages,
+  to eg ergative and active-stative languages,
 
 # 5 Conclusion and future work
 

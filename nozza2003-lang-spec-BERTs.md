@@ -108,7 +108,7 @@ Street(https://bertlang.unibocconi.it/)
 * mBERT was used to initialize and fine-tune models for languages such as
   Russian (Kuratov and Arkhipov, 2019), Slavic languages (Arkhipov+ 2019) 7 and
   Yorb (Alabi+ 2019)
-  * Here “Slavic” includes Russian, Bulgarian, Czech and Polish
+  * Here “Slavic” includes Russian, Bulgarian, Czech, and Polish
   * Yorb is a noteworthy example of cross-lingual transfer
     * Fine-tuning mBERT instead of pretraining from scratch
 

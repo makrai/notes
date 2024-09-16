@@ -11,12 +11,12 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   * root node explicitly marks the root of the tree, the head of the sentence
 * comparison to phrase-structure analysis
   * no nodes corresponding to phrasal constituents or lexical categories in the
-  * e.g. the arguments to the verb _prefer_ are directly linked to it
+  * eg the arguments to the verb _prefer_ are directly linked to it
   * morning and Denver, modifiers of flight, are linked to it directly
 * major advantage:
   * languages that are morphologically and have a relatively free word order
-    * e.g. Czech can be much more flexible than in English; a grammatical object
-      might occur before or after a location adverbial
+    * eg Czech can be much more flexible than in English:
+      a grammatical object might occur before or after a location adverbial
   * head-dependent relations provide an approximation to the semantic relships
     * useful for many applications such as
       coreference resolution, question answering and information extraction
@@ -37,7 +37,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
     dependents of their head. In dependency-based approaches, the head-dependent
 * classify the kinds of grammatical relations, or grammatical function, in terms
   of the role that the dependent plays with respect to its head. Familiar
-  * e.g. subject, direct object and indirect object
+  * eg subject, direct object and indirect object
   * In English these strongly correlate with position in a sentence and
     constituent type
   * in other languages the information encoded directly in these grammatical
@@ -54,7 +54,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   * core set of frequently used relations can be broken into two sets:
     * clausal relations that describe syntactic roles with respect to a pred
     * modifier relations categorize the ways that words can modify their heads
-  * e.g. (14.2)
+  * eg (14.2)
 
 ## 14.2 Dependency Formalisms
 
@@ -66,7 +66,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   * arcs, A, captures the head-dependent and grammatical function relationships
     * constraints on these dependency structures are specific to the underlying
       grammatical theory or formalism
-    * e.g. structures must be connected, have a designated root node, and be
+    * eg structures must be connected, have a designated root node, and be
       acyclic or planar
     * Of most relevance to the parsing approaches discussed in this chapter is
       the common, computationally-motivated, restriction to rooted trees. That
@@ -86,7 +86,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
   * tree is then said to be projective if all the arcs are projective. All the
   * There are, however constructions which lead to non-projective trees,
     particularly in languages with a relatively flexible word order
-  * e.g.  _JetBlue canceled our flight this morning which was already late_
+  * eg  _JetBlue canceled our flight this morning which was already late_
     * the arc from _flight_ to its modifier _was_ is non-projective since
       there is no path from flight to the intervening words _this_ and _morning_
   * A dependency tree is projective if it can be drawn with no crossing edges
@@ -112,7 +112,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
     the use of head rules
 * For the most part, directly annotated dependency treebanks have been created
   for morphologically rich languages such as Czech, Hindi and Finnish
-  * Prague Dependency Treebank (Bejček+ 2013) for Czech being the most well-knon
+  * Prague Dependency Treebank (Bejček+ 2013), Czech is the most well-known
 * English: largely extracted from existing resources
   * Wall Street Journal sections of the Penn Treebank (Marcus+ 1993).  The more
   * OntoNotes project (Hovy+ 2006, Weischedel+ 2011) extends this approach going
@@ -130,7 +130,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
        on the head of the head-child
 * a phrase-structure parse may contain additional information in the form of
   grammatical relations and function tags, as in the case of the Penn Treebank,
-* e.g When applied to the parse tree in Fig. 14.4, this algorithm would produce
+* eg When applied to the parse tree in Fig. 14.4, this algorithm would produce
   the dependency structure in example 14.4
 * shortcoming of these extraction methods is that they are limited by
   * fail to integrate morphological information with the phrase-structure trees,
@@ -247,7 +247,7 @@ Speech and Language Processing (3rd ed. draft) December 30, 2020 draft
 * arc eager transition system: assert rightward relations much sooner
   than in the arc standard approach
   * and still allow the dependent to serve as the head for later dependents
-* e.g. Book the flight through Houston
+* eg Book the flight through Houston
   * Consider the dependency relation between book and flight in this analysis
 * arc-standard approach would assert this relation at Step 8, despite the fact
   * due to the presence of the postnominal modifier _through Houston_. In an

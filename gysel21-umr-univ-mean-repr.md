@@ -149,8 +149,9 @@ KI Künstliche Intelligenz (2021) 35:343–360
 
 * must provide mechanisms for abstracting away from language-specific
   morphosyntax without losing semantic information. An advantage of
-* AMR already abstracts away from constituent order which varies widely across
-  languages. This has been shown to make AMR more portable across languages,
+* AMR already abstracts away from constituent order which 
+  * constituent order varies widely across languages
+  ~> AMR is more portable across languages,
   * Chinese and Czech [47, 48, 85]
 * UCCA, by intentionally attempting to annotate semantic relations that are
   indifferent to syntactic relations, have also proved to be readily portable

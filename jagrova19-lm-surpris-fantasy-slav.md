@@ -13,10 +13,10 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
   * two dimensions influencing processing effort during intercomprehension:
     surprisal in sentential context and linguistic distance. Based on this
 * we formulate expectations regarding the difficulty of designed experimental
-  stimuli and compare them to the results from think-aloud protocols of
-  experiments in which\
-  Czech native speakers decode Polish sentences by agreeing on an appropriate
-  translation
+  stimuli and
+  compare them to the results from think-aloud protocols of experiments
+  in which Czech native speakers decode Polish sentences
+  by agreeing on an appropriate translation
 * orthographic and lexical distances are reliable predictors of linguistic sim
   * we obtain the predictability of words in a sentence\
     with the help of trigram language models
@@ -123,15 +123,15 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
   * Knowing how strong the role of context is in these stimuli allows us to\
     draw conclusions about the role of other influencing factors and their domi
 * Regarding encoding, our findings suggest that\
-  the UID hypothesis does not hold for the translations given by the\
-  respondents in the three stimulus sentences:\
+  the UID hypothesis does not hold for the translations
+  given by the respondents in the three stimulus sentences:\
   they did not avoid peaks and troughs in surprisal
   * nL, the UID hypothesis refers to communicative situations, which was\
     not the case in our experimental design
   * for most stimuli with a high surprisal score of 6 hartley or more,
     respondents showed a tendency to provide translations that would have a
     lower surprisal score. As stated in the introduction, this contribution
-  * not claim to provide statistically sufficient data on the understanding of
+  * no claim to provide statistically sufficient data on the understanding of
     PL stimuli sentences by Czech readers
     * just discussion of certain phenomena influencing intercomprehension in
       certain stimuli and it is an attempt to use LMs in order to describe the

@@ -63,8 +63,8 @@ LREC 2020
 * overview of document summarization corpora (Dernoncourt+ 2018)
 * non-English text summarization, the most notable corpora are the MultiLing
   datasets which aim to assist in efforts to improve multilingual summarization
-  * MultiLing 2015 dataset (Giannakopoulos+ 2015) contains documents in Arabic,
-    Chinese, Czech, English, French, Greek, Hebrew, Hindi, Romanian and Spanish
+  * MultiLing 2015 dataset (Giannakopoulos+ 2015): documents in Arabic,
+    Chinese, Czech, English, French, Greek, Hebrew, Hindi, Romanian & Spanish
   * MultiLing 2017 dataset (Giannakopoulos+ 2017) consists of documents written
     in 41 languages, including Slovak
   * small size which makes them impractical for use in combination with neural

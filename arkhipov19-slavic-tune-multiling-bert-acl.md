@@ -7,7 +7,7 @@ Mikhail Arkhipov, Maria Trofimova, Yuri Kuratov, Alexey Sorokin
 * Slavic languages: Russian, Bulgarian, Czech and Polish with multilingual BERT
 * Unsupervised pre-training of the BERT model on these 4 languages allows to
   significantly outperform baseline neural approaches and multilingual BERT.
-  Additional improvement is achieved by extending BERT with a word-level CRF
+  * Additional improvement is achieved by extending BERT with a word-level CRF
 * NER models and BERT model pre-trained on the four Slavic languages.
 
 # Intro
@@ -28,6 +28,6 @@ Mikhail Arkhipov, Maria Trofimova, Yuri Kuratov, Alexey Sorokin
 ## 4.2 Preand Post-processing
 
 * sentence tokenizer
-  * NLTK (Loper and Bird, 2002) ... for Bulgarian, Polish, and Czech. Due to
+  * NLTK (Loper and Bird, 2002) for Bulgarian, Polish, and Czech
   * absence of Bulgarian sentence tokenizer we apply the English NLTK one
-  * Russian language we use DeepMIPT sentence tokenizer 3 .  We replace all UTF
+  * Russian language we use DeepMIPT sentence tokenizer.  We replace all UTF

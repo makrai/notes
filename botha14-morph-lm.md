@@ -16,14 +16,14 @@ Jan A. Botha and Phil Blunsom
 
 # 1 Intro
 
-* trans into 6 languages, including the morphologically complex Czech, German
-  and Russian
+* trans into 6 languages,
+  including the morphologically complex Czech, German and Russian
 
 # 2 Additive
 
 * languages types
-  * more fusional languages (e.g. Czech, Russian) to
-  * more agglutinative languages (e.g. Turkish)
+  * more fusional languages (eg Czech, Russian) to
+  * more agglutinative languages (eg Turkish)
 * Unlike the recursive neural-network method of Luong+ (2013),
   we do not impose a single tree structure over a word, which would ignore the
   ambiguity inherent in words like `un[[lock]able]` vs. `[un[lock]]able`. In

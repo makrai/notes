@@ -45,9 +45,9 @@ Understanding and Improving Morphological Learning in the NMT Decoder
     * What is the effect of attention on the performance of the decoder?
     * How much does the encoder help the decoder
       in predicting the correct morphological variant of the word it generates?
-  * a quantitative measure of how well the NMT model learned morph features
+  * a quantitative measure of how well the NMT model learned morph features. We
     * train NMT models for different language pairs,
-      involving morphologically rich languages such as German and Czech. We then
+      involving morphologically rich languages such as German and Czech
     * extract features from the decoder for words in the language of interest
     * train a classifier using the extracted features to predict the morph tag
   * results indicate that both the encoder and the attention mechanism

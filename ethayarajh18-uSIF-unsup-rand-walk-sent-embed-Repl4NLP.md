@@ -58,8 +58,8 @@ unsupervised smoothed inverse frequency (uSIF)
 * three types of word vectors:
   * GloVe vectors (Pennington+ 2014)
   * PARAGRAM-SL999 (PSL) vectors (Wieting+ 2015), tuned on the SimLex999
-  * ParaNMT-50 vectors (Wieting and Gimpel, 2017a), tuned on 51M English-
-    English sentence pairs translated from EnglishCzech sentence pairs. The
+  * ParaNMT-50 vectors (Wieting and Gimpel, 2017a), tuned on 51M
+    English-English sentence pairs translated from English-Czech sentence pairs
 * n ~ 11 and was estimated using sentences from all corpora. The value of
 * a = 1.2 * 10^3 . Our results are denoted as X+UP, where X 2 {‘GloVe’, ‘PSL’,
   ‘ParaNMT’}, U denotes uSIF-weighting, and P denotes piecewise common

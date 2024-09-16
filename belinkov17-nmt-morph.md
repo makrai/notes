@@ -90,7 +90,7 @@ updated results and discussion in section 5
   * classifier itself can be modeled in different ways
   * could be an LSTM over outputs of the encoder. However, as we are inter-
     ested in assessing the quality of the representations learned by the MT
-  * we choose [ a ] feed-forward network with one hidden layer and a ReLU
+  * we choose a feed-forward network with one hidden layer and a ReLU
     * cross-entropy loss; more details in the supplementary material
   * We also experimented with a linear classifier and observed
     * similar trends to the non-linear case, but
@@ -101,8 +101,8 @@ updated results and discussion in section 5
 ## Language pairs
 
 * several language pairs,
-* including morphologically-rich languages, that [ received ] attention in MT
-  * sr: Arabic-, German-, French-, and Czech-English pairs.  To broaden our
+* including morphologically-rich languages, that received attention in MT
+  * sr: Arabic-, German-, French-, and Czech-English pairs
   * sr & tg:
     * Arabic-Hebrew, two languages with rich and similar morphological sys
     * Arabic-German, two languages with rich but different morphologies
@@ -131,7 +131,7 @@ updated results and discussion in section 5
 
 ### Impact of word frequency
 
-* e.g. Arabic POS and morphological tagging. Figure 3 shows the effect
+* eg Arabic POS and morphological tagging. Figure 3 shows the effect
 * word-based vs. char-based reprs, obtained from the encoder of the Arabic-He
   (other language pairs are similar)
 * char-based model is superior especially on OOV words (+37.6% POS, +32.7%)
@@ -170,7 +170,7 @@ updated results and discussion in section 5
 
 * While translating from morphologically-rich languages is challenging,
   translating into such languages is even harder
-  * e.g. BLEU of 24.69/23.2 on Arabic/Czech to English, but only 13.37/13.9 on
+  * eg BLEU of 24.69/23.2 on Arabic/Czech to English, but only 13.37/13.9 on
 * How does the target language affect the learned source language reprs?
   * a morphologically-rich tg require less sr morph knowledge
 * we fix the source language (Arabic) and train NMT models on different target
@@ -269,7 +269,7 @@ updated results and discussion in section 5
     * morphologically-rich (Luong+ 2010) or
     * related language pairs (Durrani+ 2010; Nakov and Tiedemann, 2012)
   * In neural MT, such units are
-    * obtained in a pre-processing step—e.g. by
+    * obtained in a pre-processing step—eg by
       * byte-pair encoding (Sennrich+ 2016) or
       * the word-piece model (Wu+ 2016)— or
     * learned during training using a character-based convolutional/recurrent
@@ -297,7 +297,7 @@ updated results and discussion in section 5
     * important for the encoder representations
 * future work in neural MT
   * jointly learning translation and morphology can possibly help
-    * take into account e.g. the encoding layer and the type of word repr
+    * take into account eg the encoding layer and the type of word repr
   * extend the analysis to
-    * other representations (e.g.  byte-pair encoding), deeper networks, and
+    * other representations (eg  byte-pair encoding), deeper networks, and
     * more semantically-oriented tasks such as sem role labeling or sem parsing
