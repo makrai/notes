@@ -156,7 +156,7 @@ ate in 1984, we began the first serious attempt at iii)
   non-monotonic: they are currently held default beliefs
   * The monotonic (absolutely true) assertions are usually those that are
     _definitional_ (e.g., it is absolutely certain that tall people are people)
-    or ... mathematical
+    or mathematical
 * An argument for a proposition P is similar to a proof for P, but is non-
   monotonic
 
@@ -173,7 +173,7 @@ ate in 1984, we began the first serious attempt at iii)
   * because tney are numerous
 * quickly identify a small subset of sentences relevant
   * efficiently reason using those sentences
-* Functional Interface ... consists of the following six operations
+* Functional Interface consists of the following six operations
   1. Tell: add \sigma as an axiom
   2. Unassert: remove axiom \sigma
   3. Deny: squelches all positive arguments for \sigma, and does not affect
@@ -309,7 +309,7 @@ ate in 1984, we began the first serious attempt at iii)
     reason at different levels of abstraction and a priori assigning of a set
     of actions as primitives goes against this;
 * concurrent events
-* Interval-based quantity slots [also for] ... happiness, alertness, level of
+* Interval-based quantity slots [also for] happiness, alertness, level of
   frustration, attractiveness
   * reified “mileposts” for these attributes’ values can be defined, and
   * partial orders and even crude calculi developed
@@ -390,15 +390,17 @@ directly communicated)
 
 * application programs using it, but the early results are promising
   * DEC, for example, John McDermott, David Marques, Renata Bushko,
-* given that the basic business unit in a hotel is “the room”, and at a car
-  rental agency is "the car", use relatively deep understanding of what goes on
-  at each kind of place to decide that for a new potential customer which is a
-  hospital the right business unit is the bed, not the room
+* the basic business unit
+  * the basic business unit in a hotel is “the room”, and 
+  * at a car rental agency is "the car", use 
+  * hospital: the right business unit is the bed, not the room
+  * relatively deep understanding of what goes on at each kind of place
+    needed to decide that for a new potential domain
 * Academic collaborations include coupling with
   * large engineering knowledge bases (with Ed Feigenbaum and Tom Gruber)
   * large data bases (with Stuart Russell and Mike Stonebraker at Berkeley),
-  *  standardizing knowledge interchange formats (with Mike Genesereth)
+  * standardizing knowledge interchange formats (with Mike Genesereth)
   * axiomatizing human emotions (with John McCarthy at Stanford),
-  * ... analogy (with Devika Subramanian at Cornell), and
-  * qualitative physics reasoning in ... children’s stories (with Ken Forbus)
-  * NLU project (Barnett et al (1990) Knowledge and NLP)
+  * analogy (with Devika Subramanian at Cornell), and
+  * qualitative physics reasoning in children’s stories (with Ken Forbus)
+  * NLU project (Barnett+ 1990 Knowledge and NLP)

@@ -1965,7 +1965,7 @@ since a ptantst always a sonata by heart knows
 ' there is always a sonata that a pianist knows by heart'
 well eln Pianist eine Senate lmmer auswendig kann
 since a pianist a
-sonata always by heart knQws
+sonata always by heart knows
 'a pianist knows any sonata (he plays) by heart'
 since a pianist always knows a sonata by heart
 

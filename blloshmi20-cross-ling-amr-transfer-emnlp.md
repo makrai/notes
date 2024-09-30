@@ -41,7 +41,7 @@ github.com/SapienzaNLP/xl-amr
   * concepts (Conia and Navigli, 2020) and
   * semantic roles (Akbik+ 2015; Di Fabio+ 2019). Furthermore, it could be
 * AMR formalism is that it aims at abstracting away from word forms.  AMR graphs
-  * unanchored, i.e., the linkage between tokens in a sentence and nodes in the
+  * unanchored, ie, the linkage between tokens in a sentence and nodes in the
     corresponding graph is not explicitly annotated. Hence, the feature of being
   * initially designed for encoding the meaning of English sentences. Owing to
     * resources and modelling techniques focus mostly on English, while leaving
@@ -55,10 +55,10 @@ github.com/SapienzaNLP/xl-amr
       (Damonte and Cohen, 2018; Zhu+ 2019).
 * The underlying idea of this paper is that AMR can be used in different langs
   * there exist key linguistic features that are shared across languages, such
-  * e.g. predicates, roles and conjunctions (Von Fintel and Matthewson, 2008).
+  * eg predicates, roles and conjunctions (Von Fintel and Matthewson, 2008).
 * acquiring semantic annotations for a large number of sentences is a slow and
   expensive process in NLP (Zhang+ 2018; Pasini, 2020). To this end, we aim at
-* cross-lingual AMR parsing, i.e., the task of
+* cross-lingual AMR parsing, ie, the task of
   transducing a sentence in the source language into an AMR graph based on Engl
   (Damonte and Cohen, 2018).
 * We study different transfer learning techniques to enable its training:
@@ -68,7 +68,7 @@ github.com/SapienzaNLP/xl-amr
   * automatic translation of the training corpora which guarantees gold AMR
     structures. We make the following
 * contributions:
-  * XL AMR, a crosslingual AMR parser which disposes of word aligners, i.e.,
+  * XL AMR, a crosslingual AMR parser which disposes of word aligners, ie,
     word-to-word and word-to-node, and surpasses the previously reported results
     on Chinese, German, Italian and Spanish, by a large margin.
   * Exploration of different techniques to create cross-lingual AMR training
@@ -130,7 +130,7 @@ github.com/SapienzaNLP/xl-amr
   are scarce (Ruder+ 2019).  Different
 * techniques include annotation projection, machine translation and
   language-independent feature-based models.
-* applied to different NLP tasks, i.e.,
+* applied to different NLP tasks, ie,
   * WSD (Barba+ 2020)
   * SRL (Padó and Lapata, 2009; Kozhevnikov and Titov, 2013)
   * Dependency Parsing (Tiedemann, 2015)
@@ -151,24 +151,27 @@ github.com/SapienzaNLP/xl-amr
 
 ## Translation divergences We investigate how deals with the cases where there
 
-* translation divergences, i.e. when source and target language have different
+* translation divergences, ie when source and target language have different
   syntactic ordering properties (Dorr, 1990), as
   * classified by Dorr (1994) using the following 7 categories: thematic,
     promotional, demotional, structural, conflational, categorial, lexical
 * thematic divergence: when the argument-predicate structure is different across
-  * e.g., I like travelling where I is the subject, in Italian becomes _Mi piace
-    viaggiare_, and Mi is now the object. XL AMR overcomes this divergence and
-    predicts the correct AMR ,
+  * eg _I like travelling_ where I is the subject, in 
+    * Italian: _Mi piace viaggiare_, and _Mi_ is now the object
+    * XL AMR overcomes this divergence and predicts the correct AMR
     (l / like-01 :ARG0 (i / I) :ARG1 (t / travel :ARG0 i))
-* Promotional and demotional divergences can be merged into the head
-  switching macro-category.  They arise
+* Promotional and demotional divergences are both head switching
+  * head-switching is a macro-category
   * when a modifier in one language is promoted to a main verb in the other, or
-  * e.g., John usually goes home is Juan suele ir a casa (John is accustomed to
-    go home) in Spanish.  XL AMR correctly parses the sentence into (g / go01
-    :ARG0 (p / person :name (n / Juan)) :ARG4 (h / home) :mod (u / usual))
+  * eg John usually goes home is Juan suele ir a casa (John is accustomed to
+    go home) in Spanish.  XL AMR correctly parses the sentence into
+    (g / go01 
+     :ARG0 (p / person :name (n / Juan)) 
+     :ARG4 (h / home) 
+     :mod (u / usual))
 * A structural divergence exists when a verbal
   * object is realized as a NP in one language and as PP in the other,
-  * e.g., _I saw John_ is translated as Vi a Juan (I saw to John) in Spanish
+  * eg _I saw John_ is translated as Vi a Juan (I saw to John) in Spanish
   * This also is not a problem for our parser, which predicts the correct graph,
     (s / see-01 :ARG0 (i / I) :ARG1 (p / person :name (n / Juan))).
 * A conflational divergence: the translation of two or more words into one
@@ -177,11 +180,11 @@ github.com/SapienzaNLP/xl-amr
   * other example: I fear translates into Io ho paura (I have fear) in Italian
     and the parser correctly predicts the AMR graph, (f / fear-01 :ARG0 (i / I))
 * A categorical divergence: the same meaning is expressed by different syn cats
-  * e.g., I agree, where agree is a verb, is expressed by a noun in It, Sp
+  * eg I agree, where agree is a verb, is expressed by a noun in It, Sp
   * Sono d’accordo and Estoy de acuerdo.  The parser correctly predicts
     the same AMR for both languages, (a / agree-01 :ARG0 (i / I))
 * A lexical divergence arises when a verb in the source language is translated
-  * e.g., John broke into the room, Juan forzó la entrada al cuarto `force` Sp
+  * eg John broke into the room, Juan forzó la entrada al cuarto `force` Sp
   * XL AMR predicts (f / force-01 :ARG0 (p / person :name (n / Juan)) :ARG2 ...)
   * even though it is correctly parsed, it results in different AMR graphs for
   * partially due to the fact that AMR is bounded to lexical forms in English.

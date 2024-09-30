@@ -19,9 +19,8 @@ LREC 2022
     using the available high-quality manual transcriptions
   * 5627 speech turns for a total of 73,944 words, corresponding to
     6 hours 20 minutes of dyadic interactions
-  * Each interaction has been labeled by three annotators at the speech turn
-    level following a three-step process. This method allows us to obtain a
-    precise annotation regarding the opinion of a speaker
+  * Each interaction has been labeled by three annotators
+    at the speech turn level following a three-step process
   * more than 48% of the annotated speech turns containing at least one opinion
 * a new baseline for the detection of opinions in interactions
   improving slightly a SOTA model with RoBERTa embeddings, F1-score at 0.72
@@ -29,7 +28,7 @@ LREC 2022
 # 1 Intro
 
 * The way a human expresses affective phenomena (opinion, emotion or sentiment)
-  is very different depending on the media he uses (tweet/phone call/real-life)
+  is very different depending on the media they use (tweet/phone call/real-life)
   * Certain kinds of phenomena are easier to detect using specific modalities
   * many more studies on emotion recog in speech than in text (Schuller+ 2009),
     because of para-linguistics like tone, pitch or emphasis

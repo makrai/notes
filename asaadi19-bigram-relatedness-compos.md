@@ -11,13 +11,13 @@ http://saifmohammad.com/WebPages/Relatedness.html
 
 * we describe how we created a large, fine-grained, bigram relatedness dataset
   (BiRD), using a comparative annotation technique called Best–Worst Scaling
-* Each of BiRD’s 3,345 English term pairs involves at least one bigram. We show
-  that the relatedness scores obtained are highly reliable (split-half
-  reliability r= 0.937). We analyze the data to obtain insights into bigram
-  semantic relatedness. Finally, we present benchmark experiments on using the
-  relatedness dataset as a testbed to evaluate simple unsupervised measures of
-  semantic composition. BiRD is made freely available to foster further research
-  on how meaning can be represented and how meaning can be composed
+* Each of BiRD’s 3,345 English term pairs involves at least one bigram
+  * the relatedness scores obtained are highly reliable (split-half reliability
+    r= 0.937)
+* We analyze the data to obtain insights into bigram semantic relatedness
+* benchmark experiments on using the relatedness dataset as a testbed to
+  evaluate simple unsupervised measures of semantic composition
+* BiRD is made freely available to foster further research on meaning
 
 # 1 Introduction
 

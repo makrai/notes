@@ -9,7 +9,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 # Abstract
 
 * datasets annotated and published for classification of emotions differ
-  * different annotation schemata
+  * annotation schemata
     * discrete label sets eg {joy, anger, fear, sadness}
     * continuous values eg {valence, arousal}
   * the domain, and,
@@ -27,8 +27,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 # 1 Introduction
 
 * Emotion detection and classification = mapping words, sentens, & docs to emos
-  * psychological model such as those proposed by Ekman (1992), Plutchik (1980)
-    or Russell (1980)
+  * psychological models proposed by eg Ekman (1992), Plutchik (1980) or
+    Russell (1980)
   * emerged from a purely research oriented topic
   * applications include
     * dialog systems (chatbots, tutoring systems),
@@ -54,8 +54,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 # 2 Background & Related work
 
-* An overview on the resources and previous work is shown in Table 1
-* we recommend the surveys by Munezero+ (2014) and Santos and Maia (2018)
+* tab 1: overview of the resources and previous work
+* surveys by Munezero+ (2014) and Santos and Maia (2018) <~ we recommend them
   * Diana Santos and Belinda Maia. 2018
     Language, emotion, and the emotions: A computational introduction.
     Language and Linguistics Compass, 12(6):e12279
@@ -178,12 +178,13 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 * features: word n-grams, character n-grams, word embeddings, affect lexicons,
   negation, punctuation, emoticons, or hashtags (Mohammad, 2012)
-* classifiers such as naive Bayes, SVM (Mohammad, 2012), MaxEnt and others to
+* classifiers such as naive Bayes, SVM (Mohammad, 2012), MaxEnt and others
 * deep learning, SOTA models for emotion classification are often based on
-  * Schuff+ (2017) applied models from the classes of CNN, BiLSTM (Schuster and
-    Paliwal, 1997), and LSTM (Hochreiter and Schmidhuber, 1997) and
-    compare them to linear classifiers (SVM and MaxEnt), where the
-    BiLSTM show best results with the most balanced precision and recall
+  * Schuff+ (2017) applied 
+    * models from the classes of CNN, BiLSTM (Schuster and Paliwal, 1997), and
+      LSTM (Hochreiter and Schmidhuber, 1997) and 
+    * compared to linear classifiers (SVM and MaxEnt), where the 
+    * BiLSTM show best results with the most balanced precision and recall
   * Abdul-Mageed and Ungar (2017) claim the highest F1 following Plutchik’s
     emotion model with gated recurrent unit networks (Chung+, 2015)
 * transfer learning; to make use of similar resources and then transfer
@@ -224,7 +225,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * free download, the license is not specified
 * noisy: the data is comparably noisy
 
-### DailyDialogs (Li+ 2017), is built on conversations and consists of
+### DailyDialogs (Li+ 2017), is built on conversations
 
 * 13,118 sentences. The annotation schema follows
 * Ekman, complemented by “no emotion”.  It is
@@ -232,7 +233,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * free download for research purposes. This dataset has
 * additional annotations for communication intention and topic
 
-### Electoral-Tweets (Mohammad+ 2015), targets the domain of elections It
+### Electoral-Tweets (Mohammad+ 2015) targets the domain of elections
 
 * 100,000 responses to two detailed online questionnaires (the questions
   targeted emotions, purpose, and style in electoral tweets)
@@ -251,7 +252,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * A subset of the corpus is AffectiveText, which makes this dataset a good
   * both discrete or dimensional representations
 
-### EmoInt (Bravo-Marquez 2017a) builds on social media content that amounts to
+### EmoInt (Bravo-Marquez 2017a) builds on social media content
 
 * 7,097 tweets altogether
 * main goal: associate text with various intensities of emotion. The tweets are
@@ -260,7 +261,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * most tweets are only annotated with one emotion. It
 * free download for research purposes
 
-### Emotion-Stimulus (Ghazi+ 2015) consists of
+### Emotion-Stimulus (Ghazi+ 2015)
 
 * 820 sentences which are annotated both with emotions and their causes, and
   1,549 sentences which are marked only with their emotion. The set of labels
@@ -269,7 +270,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   sentence
 * download for research purposes
 
-### fb-valence-arousal (Preoţiuc-Pietro+ 2016) is built on Facebook posts. It
+### fb-valence-arousal (Preoţiuc-Pietro+ 2016) is built on Facebook posts
 
 * 2,895 posts stratified by age and gender. The
 * valence and arousal, nine point scale, expert annotation, available for
@@ -277,7 +278,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Each message is written by a distinct user and all messages are from the same
   time interval
 
-### Grounded-Emotions (Liu+ 2017) is built on social media and consists of
+### Grounded-Emotions (Liu+ 2017) is built on social media
 
 * 2,557 single labeled instances published by 1,369 unique users. The
 * main goal: context of other factors including weather, news events, social
@@ -294,7 +295,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * labels are joy, fear, anger, sadness, disgust, shame, and guilt
 * available for download
 
-### SSEC. The Stance Sentiment Emotion Corpus published by Schuff+ (2017) is
+### SSEC. The Stance Sentiment Emotion Corpus (Schuff+ 2017)
 
 * an annotation of the SemEval 2016 Twitter stance and sentiment dataset
   (Mohammad+, 2017)
@@ -304,7 +305,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * not only provide a majority annotation but publish the individual information
   for all annotators
 
-### Tales (Alm+ 2005) is built on literature and consists of
+### Tales (Alm+ 2005) is built on literature
 
 * 15,302 sentences from 185 fairytales by B. Potter, H.C. Andersen and the
   brothers Grimm. Out of these 15,302 sentence,
@@ -312,7 +313,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Ekman’s six basic emotions. In the final data angry and disgust are merged
 * free download for research purposes
 
-### TEC. The Twitter Emotion Corpus (Mohammad 2012) is built on social media
+### Twitter Emotion Corpus (TEC, Mohammad 2012) is built on social media
 
 * 21,051 tweets
 * main goal: if emotion-word hashtags can successfully be used as emo labels
@@ -324,16 +325,16 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 ## 3.2 Analysis 7
 
 * tab 1
-* distribution of labels is different in the corpora. Table 2
+* tab 2: distribution of labels is different in the corpora
   * before and after having applied the mapping to a unique set of emotions
     (see Table 4 in the Appendix A)
-  * In many corpora, `joy` is the domin, followed by `sadness, surprise, anger`
+  * In many corpora, `joy` dominates, followed by `sadness, surprise, anger`
     * Exceptions are SSEC, Electoral-Tweets, and EmoInt, 
       in which negative emotions are more frequent
       * SSEC, this is because of its origin as a stance dataset
       * Electoral-Tweets shows a polarizing nature of political debates with
         `disgust` and `anger` being more common
-* Figure 1 shows a quantitative similarity comparison of the data
+* Figure 1: a quantitative similarity comparison of the data
   * We represent each dataset by its term distribution, taking the top 5,000
     most common words from each dataset and calculating the cosine similarity
     * inspired by Ruder and Plank (2017) and Plank and Van Noord (2011)
@@ -354,8 +355,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 ## 3.3 Aggregation 8
 
 * To provide a standardized access to the datasets, we define
-  joy, anger, sadness, disgust, fear, trust, surprise, love, confusion,
-  anticipation and noemo as our common label set
+  {joy, anger, sadness, disgust, fear, trust, surprise, love, confusion,
+  anticipation and noemo} as our common label set
   * Where availble from the original publication, we follow proposed mappings
     (eg Electoral-Tweets with 19 emotions and a mapping to Plutchik’s)
   * Table 4 in Appendix A summarizes the mapping
@@ -390,7 +391,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 ## 4.1 Experimental settings
 
-* Previous work: linear classifiers are nearly en par with neural methods
+* Previous work: linear classifiers are nearly _en par_ with neural methods
   (Schuff+, 2017)
   => We use maximum entropy classifiers as implemented in scikit-learn with
   bag-of-words (BOW) features for these experiments for simplicity and reproduc
@@ -440,10 +441,11 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Models trained on Twitter data perform slightly better on other Twitter sets,
   * exception of Electoral-Tweets <~ different label distribution
     * disgust dominating the set
-* EmoInt, Emotion-Stimulus, Grounded-Emotions ISEAR, and SSEC are easier to
-  classify (high performance when used for testing) while
-  * DailyDialogs, Blogs, CrowdFlower, and Tales are more informative: training
-    on them and classifying other datasets leads to better results
+* easy tgt, good src
+  * EmoInt, Emotion-Stimulus, Grounded-Emotions ISEAR, and SSEC are
+    easier to classify (high performance when used for testing) while
+  * DailyDialogs, Blogs, CrowdFlower, and Tales are more informative:
+    training on them and classifying other datasets leads to better results
 * Models trained on ISEAR and SSEC perform comparably well
 * DailyDialogs best classif with training on other, Blogs
 * do not train on Emotion-Stimulus and Grounded-Emotions as long as the

@@ -29,7 +29,7 @@ https://github.com/UBC-NLP/SPARROW
 
 * Multilingual LLMs recently (Xue+, 2021; Scao+, 2022)
   * instruction tuning and reinforcement learning from human feedback (RLHF)
-    (Ouyang+, 2022) have further enhanced the zero-shot generalizability
+    (Ouyang+, 2022) have further enhanced the zero-shot generalization
   * ChatGPT exhibits impressive capabilities in this regard
   * what we call sociopragmatic meaning (SM)
     * some forms of meaning are deeply embedded in social interactions
@@ -38,7 +38,7 @@ https://github.com/UBC-NLP/SPARROW
     * quite established within linguistics, hE NLP systems still struggle
     * intertwined in social and interactive cont (Zhang and Abdul-Mageed, 2022)
 * evaluate how instruction tuned models eg ChatGPT can capture SM across langs
-  * needed: datasets under standardized conditions easy to replicate
+  * needed: datasets under standardized conditions, easy to replicate
   * fair model comparisons and reproducibility
   * hE Most existing benchmarks focus on the monolingual setting
     * en: GLUE (Wang+, 2019), SentEval (Conneau and Kiela, 2018), and
@@ -94,11 +94,11 @@ https://github.com/UBC-NLP/SPARROW
     * eg FLAN (Chung+, 2022)
 * multilingual benchmarks
   * Ahuja+ (2023); Bang+ (2023); Laskar+ (2023); Lai+ (2023); Huang+ (2023)
-  * benchmarks: eg XNLI, PAWS-X, XLSum) involving monolingual NLP tasks and
+  * benchmarks: eg XNLI, PAWS-X, XLSum involving monolingual NLP tasks and
     crosslingual tasks (eg machine translation)
   * large gap in performance of instruction tuned LLMs and ChatGPT,
     * especially on low-resource languages and those with non-Latin scripts
-* SM is still not adequately represented in existing benchmarks, hindering
+* SM is still not adequately represented in existing benchmarks
   * Table 1: benchmarks used for listed evaluations only include a few SM tasks
     focusing on sentiment analysis
   * Wang+ (2023); Zhang+ (2023b) investigate LLMs on a number of SM tasks
@@ -302,7 +302,7 @@ https://github.com/UBC-NLP/SPARROW
     antisocial language detection (a difference of 14.06)
     * makes more false positive errors (classifies non-hateful as hateful)
 
-### 5.2.4 How do LLMs perform across different languages? (instruction finet)
+### 5.2.4 How do LLMs perform across different languages? (instruction fineted)
 
 * we calculate the average language scores across all datasets within a lang
   * each language contains different tasks and datasets, no direct comparison
@@ -396,7 +396,7 @@ https://github.com/UBC-NLP/SPARROW
 
 # 8 Limitations 10
 
-## Benchmark Construction. Our SPARROW
+## Benchmark Construction
 
 * we plan to extend SPARROW to more types of tasks related to SM, such as
   * span-based sentiment analysis (Xu+ 2020b),
@@ -404,15 +404,19 @@ https://github.com/UBC-NLP/SPARROW
     Aspect sentiment classification with aspect-specific opinion spans. In
     EMNLP 2020b, pages 3561–3567, Online
   * affective language generation (Goswamy+ 2020), and
-  * conversational sentiment analysis (Ojamaa et al., 2015)
+  * conversational sentiment analysis (Ojamaa+ 2015)
 * more modalities, such affective image captioning (Mohamed+ 2022) and
   multi-modal emotion recognition (Firdaus+ 2020)
+  * MEISD: A Multimodal Multi-Label Emotion, Intensity and Sentiment Dialogue
+      Dataset for Emotion Recognition and Sentiment Analysis in Conversations
+    Mauajama Firdaus, Hardik Chauhan, Asif Ekbal, Pushpak Bhattacharyya
+    COLING 2020
 
 ## Model Selection
 
-* future: model sizes > 7B . However, we hope SPARROW will be used in the
+* future: model sizes > 7B
 * commercial instruction tuned models
-  * we only conduct a relatively small case study on GPT-4 and do not evaluate
+  * we only conduct a relatively small case study on GPT-4
   * future: more expensive (eg text-davinci-003 by OpenAI)
 
 ## Experiments: prompts
