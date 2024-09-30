@@ -29,9 +29,9 @@ PhD 1979. Supervisor: Kiparsky
   * Semantic linking rules make use of the feature system to establish intrinsic
     connexions between particular formal cases and particular classes of roles
   * Grammatical linking rules presuppose total orderings of the roles and cases
-    respectively, and 
+    respectively, and
     establish links on the basis of priority determined by these orderings
-  * Extensive illustrations of these various principles are given, 
+  * Extensive illustrations of these various principles are given,
     from Japanese and other languages
 * the system is integrated with Bresnan's 'Realistic Transformational Grammar'
 * The place of the Lexicon in the application of all these components

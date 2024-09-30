@@ -7,7 +7,7 @@ SemEval-2023 Toronto, Canada
 * [people] relate to, accept or disregard, debate over, or enlighten ourselves
   with texts
 * Trained on the ValueEval data set as a multi-label classification problem,
-  F1 metrics at most 0.04 for each value. Noting this, 
+  F1 metrics at most 0.04 for each value. Noting this,
 * the limitations and weaknesses of our approach are discussed in our paper
 
 # 1 Intro
@@ -21,7 +21,7 @@ SemEval-2023 Toronto, Canada
 * we: TF-IDF vectorization before being fed to ensembles of ML models
 * 20 human value themes on the test data. The hyper-parameters for each model
   were also tuned to inspect for changes in performance.
-* we placing last in the rankings for scoring the main test set 
+* we placing last in the rankings for scoring the main test set
 
 # Background
 
@@ -29,7 +29,7 @@ SemEval-2023 Toronto, Canada
 
 * values have been analyzed for personality profiling (Maheshwari+ 2017), but
 * data sets for human values. One such data new data set is the
-  * ValueNet (Qiu+ 2022) contains human attitudes on 21,374 text scenarios 
+  * ValueNet (Qiu+ 2022) contains human attitudes on 21,374 text scenarios
     * 10 categories, namely, Universalism, Benevolence, Conformity, Tradition,
       Security, Power, Achievement, Hedonism, Stimulation, and Self-direction.
     * Their train a Transformer based regression model and apply it to dialogue
@@ -38,7 +38,7 @@ SemEval-2023 Toronto, Canada
 
 ## Dataset Information:
 
-* SemEval Task 2023, containing arguments categorized under 20 labels, 
+* SemEval Task 2023, containing arguments categorized under 20 labels,
   * each representing one or more humanistic themes as shown in Figure 1. An
     argument sample consists of three attributes:
   * Premise: A text feature showcasing the main argument.

@@ -11,7 +11,7 @@ arXiv:2303.12659 [cs.AI]
   forces the interpreter to focus on the parts of the input data deemed
   relevant by the classifier for making a prediction. Our model formulation
 * enables learning concepts by incorporating the supervision of pretrained
-  annotation models such as SOTA image segmentation models. We 
+  annotation models such as SOTA image segmentation models. We
 * evaluation through quantitative and qualitative studies involving
   black-and-white images, color images, and audio. As a result of these studies
 * PIQ generates interpretations that are

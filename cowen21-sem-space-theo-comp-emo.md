@@ -1,5 +1,5 @@
 Semantic space theory: A computational approach to emotion
-AS Cowen, D Keltner 
+AS Cowen, D Keltner
 Trends in Cognitive Sciences, 2021
 
 # Abstract

@@ -395,9 +395,9 @@ arXiv:2312.00752 [cs.LG]
 
 ## 4.2 Language Modeling
 
-* evaluation on standard autoregressive language modeling 
+* evaluation on standard autoregressive language modeling
 * metrics: both pretraining metrics (perplexity) and zero-shot evaluations. We
-* model sizes (depth and width) to mirror GPT3 specifications. We use the 
+* model sizes (depth and width) to mirror GPT3 specifications. We use the
 * Pile dataset (L. Gao, Biderman,+ 2020), and follow the training recipe
   described in Brown+ (2020). All training details are in Appendix E.2.
   * [32] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe,

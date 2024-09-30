@@ -21,4 +21,4 @@ ECAI 2020 arXiv:2002.05688 [cs.CV]
     optimization, by only considering a small subset of randomly selected
     consecutive weights. To promote further research on the weight space,
 * we release the neural weight space (NWS) dataset -- a collection of
-  * 320K weight snapshots from 16K individually trained deep neural networks. 
+  * 320K weight snapshots from 16K individually trained deep neural networks.

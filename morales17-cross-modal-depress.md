@@ -48,8 +48,8 @@ CLPsych WS 2017 4th Workshop on Computational Linguistics and Clinical Psyc
     listed in Table 1
   * We focus solely on datasets that are publicly available to download
     * For a detailed list of databases both private and public that have been
-      used in speech processing studies see (Cummins+ 2015a) 
-* Both the AVEC 2013 and 2014 corpora are available to download 1 
+      used in speech processing studies see (Cummins+ 2015a)
+* Both the AVEC 2013 and 2014 corpora are available to download 1
   * The AVEC challenges are organized competitions aimed at comparing
     multimedia processing and machine learning methods for automatic audio,
     video and audiovisual emotion and depression analysis,

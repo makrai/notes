@@ -19,7 +19,7 @@ March 1973 National Technica! Information Service, US Department of Commerce
 
 * For the past four years there has been an effort undertaken at Stanford to
   enable computers to understand natural language sufficieutly well for
-  dialogue 
+  dialogue
 * analyze natural language into meaning structures that are
   unambiguous representations of the meaning of an input utterance
 * requirement: representations be unique
@@ -42,7 +42,7 @@ March 1973 National Technica! Information Service, US Department of Commerce
 * Such generic concepts simplified the conceptual networks => more useful
 * the representation of concepts eg 'buy' and 'sell' became solvable
 * Katz (I967): while these concepts seem close enought
-  it would be arbitrary to choose one as the basic form of the other, so 
+  it would be arbitrary to choose one as the basic form of the other, so
   the correct thing to do must be to write formal rules translating structures
   using 'buy' into structures using 'sell' when this is deemed necessary.
 * Instead of doing this, we made the suggestion (Schän, in press) that
@@ -56,7 +56,7 @@ March 1973 National Technica! Information Service, US Department of Commerce
 
 ## 2.1 Conceptualizations
 
-* We are using what is basically an actor-action-object framework that 
+* We are using what is basically an actor-action-object framework that
   * includes cases of the actions.
 * actors that are allowed in this schema are animate.
 * ie an action is something that is done by an actor to an object.
@@ -65,12 +65,12 @@ March 1973 National Technica! Information Service, US Department of Commerce
 * eg 'John hurt Mary'.
 * ? treat this sentence as (actor: John; action: hurt; object: Mary)
   * no: hurt is not a real world action, but a resultant state of Mary.
-* It does not refer to any action that actually occurred, 
+* It does not refer to any action that actually occurred,
     but rather to the result of the action that occurred.
 * the action that can be said to have caused this 'hurt' is unknown.
 * conceptual relationships must be accounted for:
  * John did something: Mary was hurt; the action caused the resultant state.
-* actor-action complexes are 
+* actor-action complexes are
   * a mutual dependency between actor and action
 * object-state complexes are
   * a predication of an attribute of an object, or
@@ -92,11 +92,11 @@ March 1973 National Technica! Information Service, US Department of Commerce
   * the conceptual cases of an action.
     * sometimes have directions (either through space or between humans), and
     * always have means (instruments)
-* conceptual cases are part of a given action and 
+* conceptual cases are part of a given action and
   => always present whenever that action is present.
   * Unlike syntactic cases, (as posited by eg Fillmore (1968))
 * eg if an action takes an object, whether or not that object was mentioned
-* If the instance of that object was not stated and is not inferable 
+* If the instance of that object was not stated and is not inferable
   => an empty object slot is retained.
 * The conceptual cases are: OBJECTIVE; RECIPIENT; DIRECTIVE; and INSTRUMENTAL.
 * it should be impossible to ever actually finish conceptually diagramming a
@@ -115,7 +115,7 @@ March 1973 National Technica! Information Service, US Department of Commerce
 > separable from each other.  In actuality, they express one event anü thus are
 > considered to be part of one conceptualization.  The rule is ner, that one
 > conceptualization (which may have many conceptuali- zations P- a part of it)
-> is considered to be representative of one event.  
+> is considered to be representative of one event.
 
 > In ordinary English usage, the syntactic instrument of a given sen- tence
 > corresponds conceptually to either one of two potential places in a
@@ -136,16 +136,16 @@ March 1973 National Technica! Information Service, US Department of Commerce
 > such a sentence in this manner allows for the discovery of this ambiguity,
 > (in an actual computer analysis schema the blank 'do's' can be realized as
 > predictions about missing infor- mation which must be discovered either by
-> inquiry or memory search.) 
+> inquiry or memory search.)
 
 > Predictions about what ACT's fit into this instrumental slot are made from
 > the ACT in the main conceptualization.  PROPEL requires either 'move' or
 > 'move' + 'ungrasp' as actions for its first instrument.  'Swing' and 'throw'
 > are mapped conceptually into 'move' and 'move' + 'ungrasp' respectively (with
-> additional information as to manner).  
+> additional information as to manner).
 
 > The other type of conceptual realization for a syntactic instru- ment can be
-> illustrated by: Jjhn grew the plants with fertilizer.  
+> illustrated by: Jjhn grew the plants with fertilizer.
 
 > Traditionally, linguists would consider 'fertilizer' to be an in- strument of
 > the verb 'grow'.  Conceptually however, 'grow' is simply a state change and
@@ -155,12 +155,12 @@ March 1973 National Technica! Information Service, US Department of Commerce
 > concepLualization represents the extremely important fact that something was
 > done by John.  Thus the plants were not 'growed', they grew (state change).
 > What John did was not 'causing'; rather what he did caused something else to
-> happen.  
+> happen.
 
 > Since the 'do' represents an unknown action, it might be of interest to find
 > out what that action might have been.  But since that information was
 > unstated, finding it is the job of any processor that uses the re- sults of a
-> conceptual analysis.  
+> conceptual analysis.
 
 > The syntactic instrument of 'grow' is treated conceptually then as the object
 > of the causing action.  Thus we have: We can, in fact, make an educated guess
@@ -184,7 +184,7 @@ March 1973 National Technica! Information Service, US Department of Commerce
 * PROPEL: means 'apply a force to'; its object must be under a certain size and
   weight, but for our purposes we will say that any object is acceptable
 * MOVE: means 'move a bodypart'; the only objects that are MOVE-d (in our
-  sense of MOVE) are bodyparts.  
+  sense of MOVE) are bodyparts.
 * INGEST means 'take something inside you1; INCEST'S object must be smaller
   than the mouth of the actor or must be divided into pieces smaller than the
   mouth opening; object should be food.
@@ -204,12 +204,12 @@ March 1973 National Technica! Information Service, US Department of Commerce
 
 ### PTRANS 16
 
-* The most important Global ACT is PTRANS, 
+* The most important Global ACT is PTRANS,
   change in physical location ol an object.
   * In order to change the physical location of an object it is necessary to
     perform one of the physical ACTs upon that object first.
 * the use of PTRANS
-  * for change of location verbs such as move ind pick up 
+  * for change of location verbs such as move ind pick up
   * to represent the ACT underlying the verb 'go'.
 * whenever PTRANS is present, it can be inferred that the object of PTRANS is
   now located at the location present as i-ho directive case for PTRANS.

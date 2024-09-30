@@ -148,7 +148,7 @@ https://github.com/facebookresearch/SentEval/tree/master/data/probing
   * classification (MR, CR, SUBJ, MPQA, SST2, SST5, TREC
   * natural language inference (SICK-E
   * semantic relatedness (SICK-R, STSB
-  * paraphrase detection (MRPC) 
+  * paraphrase detection (MRPC)
   * semantic textual similarity (STS 2012 to 2017) tasks. Strikingly,
 * WC is significantly positively correlated with all downstream tasks. This
   * the latter do not require extracting particularly abstract knowledge

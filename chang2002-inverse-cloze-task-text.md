@@ -30,13 +30,13 @@ Accepted by ICLR 2020 arXiv:2002.03932 [cs.LG]
 
 # 2 The two-tower retrieval model
 
-## Related Works 
+## Related Works
 
 * Cer+ (2018) study
   the two-tower Transformer model as a universal sentence encoder. The model is
-  learned with multiple tasks including the 
-  * unsupervised Skip-Thought task (Kiros+, 2015), the 
-  * supervised 
+  learned with multiple tasks including the
+  * unsupervised Skip-Thought task (Kiros+, 2015), the
+  * supervised
     * conversation input-response task (Henderson+, 2017), and the
     * sentence classification SNLI task (Bowman+, 2015)
 * Humeau+ (2019) propose the Poly-encoders architecture
@@ -65,7 +65,7 @@ Accepted by ICLR 2020 arXiv:2002.03932 [cs.LG]
     fine-tuning is only performed on the query-tower.
 * Model distillation (Hinton+, 2015) can be used to compress expensive
   BERT-like cross-attention models into efficient two-tower Transformer models
-  for large-scale retrieval problems. For example, 
+  for large-scale retrieval problems. For example,
   * Tang+ (2019) demonstrate initial success in distilling the BERT model into
     a two-tower model with BiLSTM as encoders
   * The pre-training tasks we study in this paper can be used as additional
@@ -86,7 +86,7 @@ Accepted by ICLR 2020 arXiv:2002.03932 [cs.LG]
 * In this paper, we assume that the pre-training data is defined as positive
   query-document (q, d) pairs
 * A good pre-training task should have the
-  following two properties. 1) It should be 
+  following two properties. 1) It should be
   * relevant to the downstream task.  For example, when solving the
     question-answering retrieval problem, the model should capture different
     granularities of semantics between the query and document. The semantics
@@ -103,7 +103,7 @@ Accepted by ICLR 2020 arXiv:2002.03932 [cs.LG]
   Wikipedia without an additional manual labeling process
 * Figure 2 provides illustrative examples of these tasks
 
-## Inverse Cloze Task (ICT) 
+## Inverse Cloze Task (ICT)
 
 * Given a passage p consisting of n sentences, p = {s1 , . . . , sn }, the
   query q is a sentence randomly drawn from the passage, q = si , i ∼ [1, n],
@@ -113,7 +113,7 @@ Accepted by ICLR 2020 arXiv:2002.03932 [cs.LG]
 
 ## Body First Selection (BFS) to capture sem relship outside of the loc parag
 
-* Here, the query q2 is a random sentence in the first section of a Wikip page, 
+* Here, the query q2 is a random sentence in the first section of a Wikip page,
 * the document d is a random passage from the same page (Figure 2).  Since the
 * first section of a Wikipedia article is often the description or summary of
   the whole page, we expect it to contain information central to the topic.

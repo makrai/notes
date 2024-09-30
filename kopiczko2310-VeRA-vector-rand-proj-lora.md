@@ -14,7 +14,7 @@ https://dkopi.github.io/vera
   * significantly reduces the number of trainable parameters compared to LoRA,
     yet maintains the same performance. It achieves this by using
   * a single pair of low-rank matrices shared across all layers and
-    small scaling vectors 
+    small scaling vectors
 * exper on the GLUE and E2E benchmarks, image classification tasks
   * instruction-tuning of 7B and 13B language models
 * from the conclusion

@@ -64,14 +64,14 @@ Stepwise Lexical Decomposition
 
 * should not be identified with lexical items of the object language
 
-* Semanticists are interested 
+* Semanticists are interested
   * not just developing semantic descriptions for particular languages, but
-  * in building a semantic theory which will on the one/other hand 
+  * in building a semantic theory which will on the one/other hand
     * define those elements and rules which count as semantic universals, and
     * provide evaluation measures for individual semantic descriptions. If
 
   * explain how the content of expressions of one language could be translated
-    into expressions of another language, were it not for some 
+    into expressions of another language, were it not for some
     * intermediate vocabulary in terms of which the link between the two
       languages could be established
 
@@ -115,7 +115,7 @@ Stepwise Lexical Decomposition
   * how the notion 'universal set' is to be interpreted in this context
 
   * sometimes a strong interpretation: all defining predicates are relevant in
-    the description of all languages: 
+    the description of all languages:
 
 > Semantic markers must ... be thought of as theoretical constructs introduced
 > into semantic theory to designate language invariant but language linked
@@ -124,7 +124,7 @@ Stepwise Lexical Decomposition
 
   * Sometimes a much weaker interpretation: only a proper subset of the
   defining predicates is presented as relevant in the description of all
-  languages: 
+  languages:
 
 > Roughly, the semantic categories are those concepts represented by the
 > semantic markers belonging to the intersection of the sets of semantic
@@ -196,7 +196,7 @@ these English and Spanish examples
   structured, this internal structure to be defined in terms of even simpler
   defining predicates (Katz 1967, 1972)
   * criterion for deciding what types of complex semantic marker would be
-  admissible in meaning definitions, or for deciding 
+  admissible in meaning definitions, or for deciding
     * what the ‘depth’ of a meaning definition might be in terms of the
   * Such a criterion is necessary unless one holds the view that different
   meaning definitions of the same lexical item can be accepted as equivalent,
@@ -222,13 +222,13 @@ these English and Spanish examples
   * this would require a repeated application of lexical insertion to
   structures consisting partly of abstract semantic predicates and partly of =>
   the mapping of semantic predicates onto lexical items is no longer uniquely
-  determined. Thus, according to the alternative procedure, 
+  determined. Thus, according to the alternative procedure,
   * eg we could derive the causative verb _harden_ along two different routes:
   13 (16) a. HARD hard b. BECOME hard => harden c. CAUSE harden => harden (17)
   a. HARD hard b. BECOME => become c. CAUSE become =* make d. make hard =>
   harden
   * It is not clear whether this would be a disadvantage of the alternative
-  procedure. On the other hand, the alternative procedure 
+  procedure. On the other hand, the alternative procedure
   * might have the advantage of requiring fewer prelexical transformations
 
 * There are two ways, then, in which assumption A3 can be avoided
@@ -258,9 +258,9 @@ these English and Spanish examples
 
 * For example, consider a simple statement such as:
   * (18) A robin is a bird
-  * This statement is indeed simple in the sense that language 
+  * This statement is indeed simple in the sense that language
     * users on the average need little over a second to come to the conclusion
-    that it is true (Rips, Shoben and Smith 1973). 
+    that it is true (Rips, Shoben and Smith 1973).
     * Consider what they would have to do if their semantic competence were
     organised according to assumption A3
     * They would have to retrieve the meanings of robin and bird. They would
@@ -289,7 +289,7 @@ these English and Spanish examples
   1. (A4b) The definiens of meaning definitions is directly accessible to the
   operation of syntactic rules
 
-* Neither of these assumptions is incorporated into Katz' IS. For example 
+* Neither of these assumptions is incorporated into Katz' IS. For example
   * the structure of a meaning definition like (3) is different from that of a
   syntactic structure, and it is not available at the point in derivations at
   which syntactic rules operate
@@ -307,7 +307,7 @@ predicates must be made clear in meaning definitions
   * I here give the latest variant known to me, from Katz and Nagel (1974:325).
   * Katz and Nagel state that this analysis has the form of a phrase marker,
   this is true only in the sense that
-  * the elements of the analysis are presented in a tree structure 
+  * the elements of the analysis are presented in a tree structure
   * In other respects, the structure given is obviously diff from a synt struct
 
 (21)  [Activity of X [Natúré [Physical]] [Movement [Rate [Fast]] [Direction
@@ -320,17 +320,17 @@ predicates must be made clear in meaning definitions
   is rather a specification of the (Activity of X) itself.  Consider: (22)  a.
   the nature of the activity of X is physical b. the activity of X has a nature
   and that nature is physical (23)  a. the movement of the activity of X , .
-  b. the activity of X has movement. . 
+  b. the activity of X has movement. .
 
   * some of the predicates are provided with argument variables, but others are
   not
-    * (Movement) not specified as (Movement of X)? 
+    * (Movement) not specified as (Movement of X)?
     * What are the arguments of (Purpose)? From another discussion in Katz
     (1972:102-3) it appears that (Purpose) is a property of (Activity of X).
     “(Purpose) is preferred to the earlier (Intention), ... It is left open to
     what extent the persons engaged in an activity having a fixed purpose
     themselves have the associated intention.” But could a person be chasing
-    another person without having the intention of catching him? 
+    another person without having the intention of catching him?
     * Is (Following Y) a property of X, of (Activity of X), of (Movement), or
     of (Direction)? From the tree structure one would think the latter is
     intended, but this can hardly be meant to be interpreted in the sense that
@@ -345,7 +345,7 @@ properties of defining predicates, since it incorporates assumption (A4a),
   predicate logic
   * much easier to see both the argument structure and the scope relations
   connected with the defining predicates, than it is in semantic marker trees
-  with the format of (21), On the other hand, assumption 
+  with the format of (21), On the other hand, assumption
 * (A4b) has been much less convincingly established by the theory of GS. Let us
 consider some of the arguments which have been advanced for the thesis that
 syntactic rules must have access to lexical structure,
@@ -376,10 +376,10 @@ caused him to almost die
 lexical substructure of kill is available at the syntactic level.  However,
 * hE (33) I closed the door temporarily
   * not modify my action of closing the door, but the resulting state `closed`
-* McCawley starts from (34) CAUSE(I, BECOME(TEMPORARY(CLOSED(the door)))) 
+* McCawley starts from (34) CAUSE(I, BECOME(TEMPORARY(CLOSED(the door))))
   * “it is necessary that there be a transformation which may apply before
   predicate raising and which raises ‘adverbial’ elements"
-  * two problems with this approach: first, 
+  * two problems with this approach: first,
     * how do the rules detect which predicate is eligible as adverbial
     * is TEMPORARY a main predicate at all. Literally, (34) would be a. ‘I
     brought it about that it became temporary that the door was closed’ b. ‘I
@@ -408,7 +408,7 @@ structure, whereas If we assume an underlying structure of the form: (39)
 CAUSE(x, BECOME(LIQUID(y)) then this structure provides us with an explicit
 antecedent for it in (38b).
 * problems than it solves (cf.  the criticism in Fodor 1970):
-  * Anaphoric reference to implied antecedents is the exception 
+  * Anaphoric reference to implied antecedents is the exception
     * a great many possible antecedents provided by the underlying structures
     cannot be anaphorically referred to in the manner of (38b).
   * Anaphoric reference to sublexical antecedents are always more ‘difficult’
@@ -432,7 +432,7 @@ antecedent for it in (38b).
 # 2.Sketch of an Alternative theory of Meaning Definitions 21
 
 * assumptions:
-  * The defining predicates are 
+  * The defining predicates are
     1. lexical items of the object language.  => not drawn from a universal,
     language-independent set of such predicates;
     2. need not be primitives
@@ -449,46 +449,46 @@ antecedent for it in (38b).
       functional properties
 * Basic lexemes are those which are not derived or otherwise constructed by
   means of productive rules, Basic predicates are of different types:
-  * verbal, nominal, adjectival, and perhaps others. Although 
-  * they are all predicates, these 
+  * verbal, nominal, adjectival, and perhaps others. Although
+  * they are all predicates, these
   * categorial differences are indicated from the very start, since they are
     needed to determine differences in behaviour with respect to synt rules
 * basic lexemes are not given as isolated items, but as a
   part of predicate-frames
-  * predicate-frames are structural schemata 
+  * predicate-frames are structural schemata
   * Each predicate-frame specifies at least the following information
-    about the predicate: 
-    * its lexical form, 
-    * the number of arguments it requires, 
-    * the selection restrictions imposed on these arguments, 
-    * the semantic functions of the argu­ ments, 
+    about the predicate:
+    * its lexical form,
+    * the number of arguments it requires,
+    * the selection restrictions imposed on these arguments,
+    * the semantic functions of the argu­ ments,
     * the syntactic type of the predicate. The following example illustrates
 
 (41) give `(x1 human(x1))_Ag (x2)_Go (x3: animate(x3))_Rec`
 
 * nuclear predications
   * The predicate-frames define the basic structure of nuclear predications,
-  * indicate sets of states of affairs.  Nuclear predications 
-  * can be extended by means of satellites, which have 
-    * the same formal properties as arguments do, but are 
+  * indicate sets of states of affairs.  Nuclear predications
+  * can be extended by means of satellites, which have
+    * the same formal properties as arguments do, but are
     * in construction with the nuclear predication as a whole
       rather than with the predicate
   * a nuclear predication indicating an Action can be extended by adding
     satellites specifying the Manner, the Instrument, the Beneficiary, the
     Reason, the Time, etc. of the Action.
 * 45
-  * nuclear predication, indicating an Action of giving; 
+  * nuclear predication, indicating an Action of giving;
   * followed by a satellite x4 specifying the Purpose of the Action. This
   * the indexed variables symbolise co-reference, and the last argument, x5,
 * predicational structures of the form of (45) are further developed by first
   * assigning the syntactic functions Subject and Object to constituents
-    already marked for semantic functions, and then 
+    already marked for semantic functions, and then
   * assigning pragmatic functions such as Topic and Focus to the resulting
     complexes of functions
 * The functional structures resulting from these assignments will determine
   * the syntactic form in which the construction is going to be realised, and,
   * the full semantic interpretation of the construction.
-* specification of the meaning of lexical items, we assume that 
+* specification of the meaning of lexical items, we assume that
   * each predicate is associated with a meaning definition
   * The definiendum of that meaning definition is the predicate-frame
   * the definiens is, in accordance with assumption (A4a), of the same
@@ -498,10 +498,10 @@ antecedent for it in (38b).
     in the structures underlying sentences, the definiens of meaning
     definitions is not directly accessible to the operation of syntactic rules,
     in accordance with assumption (A4b').
-* what is meant by assumption (A3'), which states that 
+* what is meant by assumption (A3'), which states that
   * defining predicates need not be primitive, but may themselves be defined
   * we shall try to give the simplest possible meaning definition for each
-    lexical predicate. One way of achieving simplicity is to 
+    lexical predicate. One way of achieving simplicity is to
     * make maximum use of predicates which have already been defined in other
     * <= the principle of ‘stepwise’ lexical decomposition.  This principle is in
       * a more rigorous version of assumption (A3'). Whereas (A3') allows the use
@@ -528,7 +528,7 @@ antecedent for it in (38b).
   * Here we are only concerned with how
     the principle of stepwise lexical definition would exclude, for instance, a
     ‘murder’ := ‘cause to become dead intentionally’
-    * since ‘become dead defines the predicate die, and 
+    * since ‘become dead defines the predicate die, and
       ‘cause to die’ defines kill
   * Again, these definitions are close to native speakers’ and dictionaries’
     practices in defining lexical meanings
@@ -536,10 +536,10 @@ antecedent for it in (38b).
 # 3.Some Advantages 27
 
 1. advantages following directly from the underlying assumptions
-  * From assumption (A1') it follows that this theory is 
+  * From assumption (A1') it follows that this theory is
     economical in that no semantic elements (complex or primitive) are
     postulated other than those expressed by the lexical items of the language
-  * stepwise definition embodied in assumption (A3`*`) also makes for 
+  * stepwise definition embodied in assumption (A3`*`) also makes for
     * economy in terms of length and complexity of meaning definitions, and has
     * the paradigmatic relations between the lexical items of the language are
       directly expressed
@@ -568,14 +568,14 @@ antecedent for it in (38b).
   A mamutfenyő tuskók termékenyen csíráznak, és ezek kifejlődhetnek.
   * on the fringe of being grammatical, and that intuitively it appears to
   * what the antecedent of _these_ is. I believe that it is not unrealistic to
-  * interpretation process: 
+  * interpretation process:
     * first assume that the surface structure of the sentence will provide him
       with some antecedent for these
     * The semantic and the prosodic properties of (54) will soon tell him,
       however, that redwood stumps cannot be the antecedent of these, and he
     * no other overt antecedent in the sentence
     * ask whether there might be something ‘implied’ in _redwood stumps sprout
-      prolifically_ which might act as an antecedent 
+      prolifically_ which might act as an antecedent
     * The meaning definition of the verb _sprout_ will provide him with such a
       possible antecedent. This meaning definition would have something like
     * to say of something that it ‘sprouts’ is to say that it ‘produces

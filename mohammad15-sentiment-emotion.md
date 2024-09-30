@@ -31,13 +31,13 @@ Emotion Measurement 2015
     as national and international events
     * the more partisan electorate tend to tweet more, as do members from
       minority groups (Lassen & Brown, 2011)
-    * identifying contentious issues (Maynard & Funk, 2011) and on 
+    * identifying contentious issues (Maynard & Funk, 2011) and on
     * detecting voter polarization (Conover+ 2011a)
     * nowcasting: Tweet streams have been shown to help identify current public
       opinion towards the candidates in an election
       (Golbeck & Hansen, 2011; Conover+ 2011b; Mohammad+ 2014)
     * forecasting: predictive power of analyzing electoral tweets to determine
-      the number of votes a candidate will get (Tumasjang, 2010a; 
+      the number of votes a candidate will get (Tumasjang, 2010a;
       Bermingham & Smeaton, 2011; Lampos, Preotiuc-Pietro, & Cohn, 2013).
     * skepticism at the extent to which forecasting is possible (Avello, 2012)
   * Brand management, customer relationship management, and Stock market

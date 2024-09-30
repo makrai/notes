@@ -23,7 +23,7 @@ Yushi Wang, Jonathan Berant, Percy Liang @ Stanford
 * semantic parsers
   *  mapping natural language utterances to executable logical forms,
   * applications requiring precise language understanding (Zelle and Mooney,
-    1996; Zettlemoyer and Collins, 2005; Liang+ 2011; Berant+ 
+    1996; Zettlemoyer and Collins, 2005; Liang+ 2011; Berant+
     2013; Kwiatkowski+ 2013; Artzi and Zettlemoyer, 2013; Kushman and
     Barzilay, 2013)
 * functionality-driven process:

@@ -73,7 +73,7 @@ avoiding performance degradation in monolingual tasks
 
 * Dimension-wise mean centering
   * intuition that two randomly taken words would not be expected to be
-    semantically similar, ensuring that 
+    semantically similar, ensuring that
   * the expected product of two random embeddings in any dimension and,
     consequently, their cosine similarity, is zero
 * As long as W is orthogonal, this is equivalent to maximizing the sum of

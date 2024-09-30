@@ -18,7 +18,7 @@ Nature Biotechnology 39(2), 156–157 (Feb 2021)
   * Both algorithms minimize their loss functions by using gradient descent.
 * LE5 can often achieve globally accurate embedding on its own6.  The effect of
   this difference on how well the two algorithms preserve global structure was
-  not discussed or investigated by Becht+ 
+  not discussed or investigated by Becht+
 
 * We: illustration using a simple toy dataset (Fig. 1). We sampled
   * n = 7,000 points from a circle with some added Gaussian noise and used

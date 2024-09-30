@@ -70,7 +70,7 @@ architecture for SER
       e2e SER using a deep convolutional recurrent network
       Proc. IEEE Int.  Conf.  Acoust. Speech Signal Process. (ICASSP) 2016, pp
   * learning of real-world data without the need for manual human labels
-  * Table 7 provides a summary of the Deep learning techniques used 
+  * Table 7 provides a summary of the Deep learning techniques used
     along with their descriptive key features, databases used, accuracy,
     and some commentary on future directions
 

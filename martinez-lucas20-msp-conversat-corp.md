@@ -13,12 +13,12 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
     explore emotional displays at different temporal resolutions while
     leveraging contextual information
   * ongoing effort, currently > 15 hours of speech annotated by >= 5 annotors
-  * The data is sourced from the MSP-Podcast corpus 
+  * The data is sourced from the MSP-Podcast corpus
     * MSP-Podcast: speech data from online audio-sharing websites
       annotated with sentence-level emotional scores
       * an easy, affordable, and scalable approach to obtain
         natural data with diverse emotional content from multiple speakers
-      * Lotfian and Busso, 
+      * Lotfian and Busso,
         ...naturalistic emotionally balanced speech corpus by retrieving
         IEEE Transactions on Affective Computing, vol. 10, no. 4 2019
   * we compare the time-continuous evaluations from MSP-Conversation
@@ -183,7 +183,7 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
 ## 4.2. Inter-Evaluator Agreement
 
 * We use Cronbach’s Alpha [28] to estimate inter-evaluator agreement
-  * metric considers not only if the ratings are similar in value, 
+  * metric considers not only if the ratings are similar in value,
     but also if the ratings increase or decrease at the same rates (ie, similar
     trends)
 * overall agreement for the emotional attributes and the evaluators
@@ -211,7 +211,7 @@ Interspeech 2020, Shanghai, China, October 2020, pp. 1823-1827
 * 1,567 speech turns overlap the two corpora (Sec 3.5)
   * the aggregated time-continuous annotations are averaged in time during the
     duration of the speaking turns of the MSP-Podcast annotations
-  * Figure 3 illustrates this process for three speech segments, which 
+  * Figure 3 illustrates this process for three speech segments, which
   * => sentence-level scores from the traces
   * reaction lag of the annotator [18, 19]
     * we consider lags equal to 2.8, 3.0, 3.6, 4.08, 5.44, and 5.6 seconds

@@ -50,7 +50,7 @@ arXiv:2206.04615 [cs.CL]
   * scale: For certain non-English tasks, we observe performance gains with
     scale, but this is often not the case (see below)
   * eg Figure 14: Performance on entailed polarity increases with model scale
-    for (a) the English version (entailed_polarity) of the task, but 
+    for (a) the English version (entailed_polarity) of the task, but
     * not for (b) the Hindi version (entailed_polarity_hindi) of the task
 * parallel tasks in English and another language enable direct comparison
   * The clearest such cases are the entailed polarity tasks, which test

@@ -35,8 +35,8 @@ setup instructions, evaluation pipelines & examples, is freely available online
     * In NLP, GLUE [9] is a widely used benchmark, with 9 NLU tasks
       (eg, sentiment analysis, paraphrase, and inference tasks)
 * audio benchmark
-  * As one of the largest audio datasets, AudioSet [10] is commonly used for 
-    * self-supervised pre-training, as well as a 
+  * As one of the largest audio datasets, AudioSet [10] is commonly used for
+    * self-supervised pre-training, as well as a
     * benchmarking method for audio event classification [6, 7, 11]
   * HEAR challenge [12] evaluating general-purpose audio representations and
     extends the concept underlying AudioSet by including additional tasks
@@ -71,32 +71,32 @@ setup instructions, evaluation pipelines & examples, is freely available online
 
 ## 2.1 A summary of the tasks used in SERAB is presented in Table 1
 
-* nine speech emotion classification tasks in six languages: 
-  * four in English (CREMA-D, IEMOCAP, RAVDESS & SAVEE), and 
+* nine speech emotion classification tasks in six languages:
+  * four in English (CREMA-D, IEMOCAP, RAVDESS & SAVEE), and
   * one in French (CaFE), German (EmoDB), Greek (AESDD), Italian (EMOVO), and
-    Persian (ShEMO). In each dataset, 
-* speech samples have three attributes: 
-  audio data (ie the raw waveform, in mono), 
-  speaker identifier, and 
+    Persian (ShEMO). In each dataset,
+* speech samples have three attributes:
+  audio data (ie the raw waveform, in mono),
+  speaker identifier, and
   emotion label (eg angry, happy, sad)
 * The datasets vary in size (ie number of utterances), number of speakers,
   class distribution, and number of classes.
 * emo set
-  * anger, happiness, and sadness are found across all datasets, 
+  * anger, happiness, and sadness are found across all datasets,
   * disgust, fear, neutral emotion, surprise, calm, and boredom appear in >= 1
-* all datasets have roughly the same average utterance duration 
+* all datasets have roughly the same average utterance duration
   (between 2.5 & 4.5 seconds)
 * designed to balance dataset popularity, language diversity, and open access
   * In SER, EmoDB, IEMOCAP and RAVDESS are among the most widely used datasets
-    [15, 23, 24]. In the same vein as [24], 
-  * class imbalance ~> a 4-class subset of IEMOCAP (IEM4) was used 
+    [15, 23, 24]. In the same vein as [24],
+  * class imbalance ~> a 4-class subset of IEMOCAP (IEM4) was used
   * For the other tasks, all samples and classes from the original datasets
     were used (Table 1)
   * CREMA-D and SAVEE were included in SERAB
-    * because they are already present in NOSS [6], 
+    * because they are already present in NOSS [6],
   * CaFE (French) and EMOVO (Italian) were chosen as Italic-language datasets,
   * AESDD (Greek) and ShEMO (Persian) represented the Hellenic & IndoIran [25]
-* mainly comprises scripted and acted speech, 
+* mainly comprises scripted and acted speech,
   excepting IEM4 [17], RAVDESS [22] and ShEMO [23] which feature spontaneous
   utterances
 * Each dataset was split into training, validation, and testing sets to

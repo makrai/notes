@@ -19,5 +19,5 @@ Advances in Physiology Education Volume 41, Issue 3 Sep 2017 Pages321-491
   * Self-effacing humor illustrates to students that the teacher is comfortable
     making mistakes and sharing these experiences with the classroom.  In
 * this brief review, we discuss the history and relationship between humor,
-  laughing, learning, and health 
+  laughing, learning, and health
   * emphasis on the powerful, universal language of laughter

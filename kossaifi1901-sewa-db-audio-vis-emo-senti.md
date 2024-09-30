@@ -22,7 +22,7 @@ arXiv:1901.02839 [cs.HC]
   facial action units (FAU), various vocalisations, mirroring, and
   continuously valued valence, arousal, liking, agreement, and
   prototypic examples of (dis)liking
-* we provide extensive baseline experiments for automatic 
+* we provide extensive baseline experiments for automatic
   * FAU detection and
   * valence, arousal and (dis)liking intensity estimation
 
@@ -160,10 +160,10 @@ arXiv:1901.02839 [cs.HC]
   * For an overview of databases containing recordings of non-interactive
     * recent survey papers (eg [19], [41]) and recent database papers (eg [39])
     * [19] H. Gunes and B. Schuller 2013
-      “Categorical and dimensional affect analysis in continuous input: 
-      Current trends and future directions” 
+      “Categorical and dimensional affect analysis in continuous input:
+      Current trends and future directions”
       Image and Vision Computing, vol.  31, no.  2, pp. 120–136, 2013.
-    * [41] E. Sariyanidi, H. Gunes, and A. Cavallaro, 
+    * [41] E. Sariyanidi, H. Gunes, and A. Cavallaro,
       “Automat anal of facial affect: A survey of registration, repr, & reg”
       IEEE Transactions on Pattern Analysis and Machine Intelligence 2015
     * [39] J. Kossaifi, G. Tzimiropoulos, S. Todorovic, and M. Pantic,
@@ -214,7 +214,7 @@ arXiv:1901.02839 [cs.HC]
 ### 4.3.2 Estimation of valence, arousal and liking/disliking
 
 * The setting of our baseline experiment allows us to
-  * investigate the effect of audio, video and the fusion of both 
+  * investigate the effect of audio, video and the fusion of both
   * separate the effect of culture
   * infer the human-level-performance of recognizing the levels of valence and
     arousal displayed by a subject given each type of information

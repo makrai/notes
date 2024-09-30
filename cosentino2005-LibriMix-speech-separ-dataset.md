@@ -10,11 +10,11 @@ submitted to INTERSPEECH 2020 arXiv:2005.11262 [eess.AS]
 * hE important performance drops when models trained on wsj0-2mix are evaluated
   on other, similar datasets. To address this generalization issue, we created
 * we: LibriMix, an open-source alternative to wsj0-2mix, and to its noisy
-  extension, WHAM!. Based on LibriSpeech, LibriMix consists of 
+  extension, WHAM!. Based on LibriSpeech, LibriMix consists of
   * two- or three-speaker mixtures combined with ambient noise samples from
-    WHAM!. 
+    WHAM!.
 * experiments: Using Conv-TasNet, we achieve competitive performance on all
-  LibriMix versions. In order to fairly evaluate across datasets, 
+  LibriMix versions. In order to fairly evaluate across datasets,
 * we introduce a third test set based on VCTK for speech and WHAM! for noise.
 * the generalization error is smaller for models trained with LibriMix than
   with WHAM!, in both clean and noisy conditions.

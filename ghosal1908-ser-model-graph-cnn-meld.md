@@ -10,7 +10,7 @@ https://github.com/SenticNet/conv-emotion
 
 * Emotion recognition in conversation (ERC) has received much attention,
   * applications in health-care, education, and human resources. In this
-  * we present Dialogue Graph Convolutional Network (DialogueGCN), 
+  * we present Dialogue Graph Convolutional Network (DialogueGCN),
     * a graph neural network based approach to ERC
     * We leverage self and inter-speaker dependency of the interlocutors to
       model conversational context for emotion recognition

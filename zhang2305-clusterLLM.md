@@ -58,11 +58,11 @@ feedback from an instruction-tuned large language model, such as ChatGPT
     One embedder, any task: Instruction-finetuned text embeddings
     https://arxiv.org/abs/2212.09741
   * higher performance with better pre-training quality.  State-of-the-art
-* large language models (LLMs) 
+* large language models (LLMs)
   * recent GPT series (Brown+ 2020; Ouyang+ 2022; OpenAI, 2023) have
   * extraordinary language capabilities for various NLP applications however,
   * hE can only be utilized through the APIs
-  * no accessible embedding vectors for clustering. Hence, LLMs 
+  * no accessible embedding vectors for clustering. Hence, LLMs
   * ie cannot be directly applied on text clustering tasks
 * Can we leverage API-based LLMs to guide text clustering efficiently? We
   * pairwise relationships
@@ -135,15 +135,15 @@ feedback from an instruction-tuned large language model, such as ChatGPT
   * few-shot annotations (eg “Sentence1 and Sentence2 have the same entity
     type...”) to determine cluster granularity
 
-# 3 Our ClusterLLM 
+# 3 Our ClusterLLM
 
 * based on a pre-trained small embedder (Wang+ 2022; Su+ 2022) (denoted as f )
   which usually represents sentences individually. In contrast, inspired by
 * ClusterLLM considers a pair or a triplet of sentences through prompting LLMs
   that are trained to follow human instructions (Ouyang+ 2022; OpenAI, 2023).
-* a two-stage framework (See Figure 2). In 
+* a two-stage framework (See Figure 2). In
 
-## 3.1 Stage 1 
+## 3.1 Stage 1
 
 * triplet task to improve clustering quality with respect to user-specified
   perspectives, along with a sampling strategy that reduces number of API quers
@@ -165,8 +165,8 @@ based on predictions from LLMs.
 * variants of our method:
   * ClusterLLM-I(E) adopt Instructor or E5 as embedders
   * ClusterLLM-I(E)-iter applies the entire framework twice in an iterative
-    manner by using 
-    * previous fine-tuned model as initialization and 
+    manner by using
+    * previous fine-tuned model as initialization and
     * the 1, 024 triplets inferred from new embeddings for fine-tuning
 * All of these use GPT-3.5 for prediction
 * observations:
@@ -188,7 +188,7 @@ based on predictions from LLMs.
   (exactly one positive and one negative choices based on ground truth) with
   two different sampling methods
   * Random triplet sampling uniformly samples
-    three random instances as query and two choices, and we guarantee 
+    three random instances as query and two choices, and we guarantee
     * the two choices are different from the anchor <~ filtering
 * a selection accuracy with Euclidean distances between embeddings as a
   comparison. We observe that,
@@ -202,12 +202,12 @@ based on predictions from LLMs.
 ### Clustering Quality
 
 * We show ablation studies on ClusterLLM based on Instructor in Table 4
-  * results with 
+  * results with
     * 3 kinds of predictions on the same set of triplets for finetuning:
       GPT-3.5/4, replace triplet predictions of GPT-3.5 to ground truth on
       those triplets that have ground truth
     * GPT-4 marginally improves upon GPT-3.5 given the much higher cost. When
-    * human labels, 
+    * human labels,
     * ClusterLLM-GT&GPT3.5 achieves the highest performance, which indicates
       * possibility for further improvement with more accurate predictions
 * similar observations for large-scale datasets in Table 6
@@ -336,11 +336,11 @@ decreasing mean of interval) except for GoEmo. We make two hypothesis:
   requirement on clustering
 * infant research area, most previous works employ pseudo-labelling, via
   * optimal transport (Rizve+ 2022b; Yang+ 2022)
-  * similarity learning (Rizve+ 2022a; Cao+ 2022) or 
+  * similarity learning (Rizve+ 2022a; Cao+ 2022) or
   * prototype-based learning (Sun and Li, 2022).
 * new intent discovery (Zhang+ 2022, 2021b, 2023; An+ 2022; Lin+ 2020) is
   * a similar research problem in the domain of intent detection.
-* Hogan+ 2023 adapts GCD into relation type discovery. However, 
+* Hogan+ 2023 adapts GCD into relation type discovery. However,
 * hE GCD relies on sufficient annotated and unlabeled data for training.  In
 * ClusterLLM seeks for minimal supervision and studies a setting with
   controlled computation~ & data~ cost

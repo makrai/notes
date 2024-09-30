@@ -156,7 +156,7 @@ github.com/SapienzaNLP/xl-amr
   * classified by Dorr (1994) using the following 7 categories: thematic,
     promotional, demotional, structural, conflational, categorial, lexical
 * thematic divergence: when the argument-predicate structure is different across
-  * eg _I like travelling_ where I is the subject, in 
+  * eg _I like travelling_ where I is the subject, in
     * Italian: _Mi piace viaggiare_, and _Mi_ is now the object
     * XL AMR overcomes this divergence and predicts the correct AMR
     (l / like-01 :ARG0 (i / I) :ARG1 (t / travel :ARG0 i))
@@ -165,9 +165,9 @@ github.com/SapienzaNLP/xl-amr
   * when a modifier in one language is promoted to a main verb in the other, or
   * eg John usually goes home is Juan suele ir a casa (John is accustomed to
     go home) in Spanish.  XL AMR correctly parses the sentence into
-    (g / go01 
-     :ARG0 (p / person :name (n / Juan)) 
-     :ARG4 (h / home) 
+    (g / go01
+     :ARG0 (p / person :name (n / Juan))
+     :ARG4 (h / home)
      :mod (u / usual))
 * A structural divergence exists when a verbal
   * object is realized as a NP in one language and as PP in the other,

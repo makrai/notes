@@ -5,9 +5,9 @@ arXiv:2210.11416 [cs.LG]
 
 * Finetuning LMs on a collection of datasets phrased as instructions has been
   shown to improve model performance and generalization to unseen tasks. In
-* we explore instruction finetuning with a particular focus on 
-  * scaling the number of tasks, 
-  * scaling the model size, and 
+* we explore instruction finetuning with a particular focus on
+  * scaling the number of tasks,
+  * scaling the model size, and
   * finetuning on chain-of-thought data. We find that instruction finetuning
 * dramatically improves performance on a variety of
   * model classes (PaLM, T5, U-PaLM)

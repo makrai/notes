@@ -434,7 +434,7 @@ https://github.com/CalculatedContent/ww-trends-2020
   ordinary least squares to regress the metrics on the Top1 (and Top5) reported
   errors (as dependent variables), and we report the RMSE, the R2 (R2)
   regresssion metric, and the Kendal-τ rank correlation metric.  These include
-  * Top5 errors for the ImageNet-1K model, 
+  * Top5 errors for the ImageNet-1K model,
   * percent error for the CIFAR-10/100, SVHN, CUB-200-2011 models, and
   * Pixel accuracy (Pix.Acc.) and Intersection-Over-Union (IOU) for other
     models

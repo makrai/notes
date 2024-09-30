@@ -11,7 +11,7 @@ Cognition 104 (2007) 427–436 www.elsevier.com/locate/COGNIT Brief article
 * Do Chinese speakers, then, think about time in a different way than English
 * Boroditsky (2001) claimed that they do: ‘language is a powerful tool in
   shaping habitual thought about abstract domains’ (such as time)
-* we 
+* we
   * estimating the frequency of usage, we found that
     * Chinese speakers actually use the horizontal spatial metaphors more often
     * no logical ground for Boroditsky’s claim

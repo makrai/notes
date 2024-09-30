@@ -63,10 +63,10 @@ SemEval | `*`SEM 2018
 
 ## 3.2 Task B: Multiclass Irony Classification
 
-* submitted systems have to predict one out of four labels describing 
-  * verbal irony realised through a polarity contrast, 
+* submitted systems have to predict one out of four labels describing
+  * verbal irony realised through a polarity contrast,
   * verbal irony without such a polarity contrast (ie other verbal irony)
-  * descriptions of situational irony, and 
+  * descriptions of situational irony, and
   * non-irony
 * The following paragraphs present a description and a number of examples
 
@@ -93,7 +93,7 @@ SemEval | `*`SEM 2018
 ## Non-ironic or lack context to be sure that they are ironic, as shown in the
 
 * eg10 And then my sister should be home from college by time I get home from
-  babysitting. And it’s payday. THIS IS A GOOD FRIDAY 
+  babysitting. And it’s payday. THIS IS A GOOD FRIDAY
 * eg12 Is Obamacare Slowing Health Care Spending? #NOT
 
 # 8 Conclusions

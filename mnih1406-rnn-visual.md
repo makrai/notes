@@ -4,7 +4,7 @@ arXiv:1406.6247 [cs.LG]
 
 # Abstract
 
-* Applying convolutional neural networks to large images is computat expensive 
+* Applying convolutional neural networks to large images is computat expensive
   * the amount of computation scales linearly with the number of image pixels.
 * We present a novel recurrent neural network model that is capable of
   * adaptively selecting a sequence of regions or locations and

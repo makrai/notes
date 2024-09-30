@@ -124,7 +124,7 @@ Roger C. Schank and Charles J. Rieger 111
 * tense: modifications of the ... link
 * ACT _hurt_: action unstated, only effect known
 * set of only fourteen primitive actions
-* any given verb is mapped into a conceptual construction 
+* any given verb is mapped into a conceptual construction
   * construction may use one or more of the primitive ACTs in certain specified
     relationships plus other object and states
 * task of the primitives to conjoin similar information so that inference rules

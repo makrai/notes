@@ -46,7 +46,7 @@ code and datasets open source
   * their exact combined dataset is not publicly available
   * we used the same method and news crawl source to create a similar dataset
     * sentences from the WMT162 news crawl that had the same distribution of
-      words and characters as the jokes in the Short Jokes dataset on Kaggle3 
+      words and characters as the jokes in the Short Jokes dataset on Kaggle3
 
 ## 3.3 Pun of the Day scraped by Yang+ (2015)
 

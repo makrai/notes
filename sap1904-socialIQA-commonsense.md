@@ -177,7 +177,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 * (Speer and Havasi, 2012; Sap+ 2019; Zhang+ 2017; Lenat, 1995 Cyc;
   Espinosa and Lieberman, 2005; Gordon and Hobbs, 2017)
-  * Sheng Zhang, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 
+  * Sheng Zhang, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme.
     Ordinal common-sense inference
     TACL 2017, 5(1):379–395
   * José H. Espinosa and Henry Lieberman

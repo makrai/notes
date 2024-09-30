@@ -57,9 +57,9 @@ ACL 2023 Main Conference arXiv:2305.18554 [cs.CL]
     * an additional page for incorporating reviewer comments,
     * Appendices, and the inclusion of an increasing number of experiments
 
-## Q2. On average, how far back in time do we go to cite papers? As in, 
-* average age of cited papers? What is the 
-* distribution of this age across all citations? How do 
+## Q2. On average, how far back in time do we go to cite papers? As in,
+* average age of cited papers? What is the
+* distribution of this age across all citations? How do
 * these vary by publication type?
 
 ### Ans. If a paper x cites a paper yi , then the age of the citation (AoC) is
@@ -75,7 +75,7 @@ ACL 2023 Main Conference arXiv:2305.18554 [cs.CL]
   first submission to the date of publication (usually between 6 and 18 months)
   * A list of the oldest papers cited by AA papers is available in the repo
 
-## Q3. What is the trend in the variation of AoC over time and 
+## Q3. What is the trend in the variation of AoC over time and
 * how does this variation differ across venues in NLP?
 
 ### Ans. Just as Verstak+ (2014), we define a cited paper as older if it
@@ -174,7 +174,7 @@ was published at least ten years prior to the citing paper
   of citations for a bin and the mean mAoC of the citation bins are shown
 * for the 1990’s papers there is essentially no correlation, but there are
   * strong correlations for the 2000s, 2010s, and the full dataset papers
-* Similar to Figure 7a, in Figure 12 (in the Appendix) we show how 
+* Similar to Figure 7a, in Figure 12 (in the Appendix) we show how
   * between 1965 and 2021: mean mAoC and CAD Index of AA papers by research
     topics. This examination across various research topics consistently
   * the higher the citations, the lower the age diversity of citations. This

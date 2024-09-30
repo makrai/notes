@@ -13,13 +13,13 @@ arXiv:2108.13349 [cs.CL]
     remarkable results given the zero-shot scenario
   * We investigate its potential and limits in
     * extractive question-answering and natural language generation, as well as
-    * effect of scale in terms of model size. 
+    * effect of scale in terms of model size.
 
 # 1 Intro
 
 * GPT-3 training data: generally of good quality, it has not been filtered for
   language (in purpose)
-  * training data contains many other languages, 
+  * training data contains many other languages,
     * https://github.com/openai/gpt-3/tree/master/dataset_statistics
   even if they account for a small portion of the dataset in comparison to
   English (93% by word count). Intuitively, one would expect that this

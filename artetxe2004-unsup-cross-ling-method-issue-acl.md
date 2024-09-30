@@ -12,7 +12,7 @@ ACL 2020 arXiv:2004.14958 [cs.CL]
   * depart from the pure unsupervised setting
 * issues in tuning and evaluation of unsupervised cross-lingual models
 * best practices
-* a unified outlook for different types of research in this area 
+* a unified outlook for different types of research in this area
   * ie, cross-lingual word embeddings, deep multilingual pretraining, and
     unsupervised machine translation
   * we argue for comparable evaluation

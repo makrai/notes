@@ -19,14 +19,14 @@ arXiv:2307.09288 [cs.CL]
 
 * seemingly straightforward nature of the training methodology. Auto-regressive
   * pretrained on an extensive corpus of self-supervised data, followed by
-    alignment with human preferences  
+    alignment with human preferences
     via eg Reinforcement Learning with Human Feedback (RLHF)
 * high computational requirements have limited the development of LLMs
   * public pretrained LLMs match the performance of some closed ones
     * eg public that match: BLOOM (Scao+ 2022), LLaMa-1 (Touvron+ 2023), and
       Falcon (Penedo+ 2023)
     * eg closed matched: GPT-3 (Brown+ 2020) and Chinchilla (Hoffmann+ 2022)
-  * hE none of these are suitable substitutes for closed “product” LLMs 
+  * hE none of these are suitable substitutes for closed “product” LLMs
   * product LLMs eg ChatGPT, BARD, and Claude
   * product LLMs are heavily fine-tuned to align with human preferences, which
     * greatly enhances their usability and safety

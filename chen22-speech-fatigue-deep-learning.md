@@ -33,7 +33,7 @@ ISAIC 2021 International Symposium on Automation, Information and Computing
         * eg balance ability when athletes are in a state of sports fatigue
 * not operable in practical application
   * Subjective detection methods often change due to the subjective factors
-  * Objective methods can not achieve real-time detection, and 
+  * Objective methods can not achieve real-time detection, and
     it is invasive, which will make users resist
 * we: fatigue detection based on speech analysis using deep learning
 * related work

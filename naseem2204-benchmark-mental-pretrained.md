@@ -141,7 +141,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
   * PHM (Karisani and Agichtein, 2018), HMC2019 (Biddle+ 2020) and
     RHMD 5 health mention-related datasets
 4. Vaccine sentiment: Vaccines are a critical component of public health
-  * vaccine hesitancy and refusal can result in clusters of low vacc coverage, 
+  * vaccine hesitancy and refusal can result in clusters of low vacc coverage,
     diminishing the effectiveness of vaccination programs
   * VS1 (Dunn+ 2020) and VS2 (Müller and Salathé, 2019) vaccine-related Twitter
 5. COVID related: Due to the ongoing pandemic, there is a higher need for tools
@@ -185,13 +185,13 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 * the performance of PHS-BERT is higher than SOTA PLMs on all tested tasks
 * the marginal increases in performance of PHS-BERT
   when compared to BERT/the 2nd best
-  * Suicide Ideation Task: 18.45%/12.79% 
-  * Stress Detection Task (2): 3.80%/2% 
+  * Suicide Ideation Task: 18.45%/12.79%
+  * Stress Detection Task (2): 3.80%/2%
   * Health Mention Task: 3.34%/1.76% compared to second-best
-  * Depression Detection Task (6): 6.03%/2.76% 
-  * Vaccine Sentiment Task (2): 7.70% than BERT and 0.34% 
+  * Depression Detection Task (6): 6.03%/2.76%
+  * Vaccine Sentiment Task (2): 7.70% than BERT and 0.34%
   * COVID Related Task (5): 11.82%/4.471%
-  * Other Health Related Task (6): 11.82%/4.71% 
+  * Other Health Related Task (6): 11.82%/4.71%
 
 ## 4.5 Discussion
 
@@ -206,7 +206,7 @@ https://huggingface.co/publichealthsurveillance/PHSBERT
 # Appendix: Dataset description
 
 1. Depression: We used 6 depression-related datasets in our experiments
-  * `eRisk T3`, publicly available (Losada and Crestani, 2016) 
+  * `eRisk T3`, publicly available (Losada and Crestani, 2016)
     * labeled across 4 depression severity levels using
       Beck’s Depression Inventory (Beck+ 1961) criteria to detect the existence
       of depression and identify its severity level in social media posts

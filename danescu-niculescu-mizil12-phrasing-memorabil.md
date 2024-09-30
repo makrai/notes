@@ -19,7 +19,7 @@ acl 2012
 * memorable quotes have significantly lower LM likelihood
   than their nonmemorable counterparts at the level of words
   * with respect to lexical language models
-    trained on the newswire portions of the Brown corpus [21] 
+    trained on the newswire portions of the Brown corpus [21]
 * POS composition of memorable quotes is in fact more likely
 * containing fewer markers that indicate references to nearby text
   * In their patterns of verb tenses, personal pronouns, and determiners

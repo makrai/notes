@@ -245,7 +245,7 @@ https://liang-qiu.github.io/ValueNet/
       Shyam P; Sastry G; Askell A;+ 2020
     Language models are few-shot learners
     arXiv preprint arXiv:2005.14165
-  * Le Scao T; and Rush A M 2021 
+  * Le Scao T; and Rush A M 2021
     How many data points is a prompt worth?
     NAACL 2021
 * details
@@ -260,7 +260,7 @@ https://liang-qiu.github.io/ValueNet/
 
 * pre-trained language models perform better than the fastText baseline
 * no noticeable difference between the Transformer variants
-* sample imbalance across different value splits and labels (Figure 4), 
+* sample imbalance across different value splits and labels (Figure 4),
   ~> we release another two versions of ValueNet: balanced and augmented
   * we augment the neutral class of the original ValueNet by assigning AMT
     results with less worker agreement to “unrelated”

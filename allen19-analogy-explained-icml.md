@@ -1,5 +1,5 @@
 Analogies Explained: Towards Understanding Word Embeddings
-Carl Allen, Timothy Hospedales 
+Carl Allen, Timothy Hospedales
 International Conference on Machine Learning, PMLR 97:223-231, 2019.
 
 # Abstract
@@ -14,4 +14,4 @@ International Conference on Machine Learning, PMLR 97:223-231, 2019.
   a mathematical description of _wx is to wy_
   * From these concepts we
     prove existence of linear relationship between W2V-type embeddings that
-    underlie the analogical phenomenon, identifying explicit error terms. 
+    underlie the analogical phenomenon, identifying explicit error terms.

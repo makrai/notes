@@ -101,7 +101,7 @@ ACL 2024 best paper arXiv:2401.06416 [cs.CL]
 * We conduct these experiments for `*R E VERSE` and ``*Hop`` languages,
   since these languages have constituents in contiguous token sequences
 * For NoReverse` and Partial Reverse, we take a sample of unaltered BabyLM test
-  sentences and omit the reversal token R 
+  sentences and omit the reversal token R
 * For FullReverse`, we use the same sample sentences, but reverse the tokens
 * For the `*Hop` languages, we use a sample of BabyLM test sentences that are
   unaffected by the perturbation, which are sentences that do not contain

@@ -1,5 +1,5 @@
 Lexical rules in the hierarchical lexicon
-DP Flickinger 
+DP Flickinger
 1987 York University
 
 # Preface

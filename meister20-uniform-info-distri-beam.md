@@ -1,5 +1,5 @@
 
-If beam search is the answer, what was the question?  
+If beam search is the answer, what was the question?
 
 Clara Meister, Ryan Cotterell, Tim Vieira
 
@@ -41,10 +41,10 @@ EMNLP 2020
     * almost invariably leads to better text than using exact search (or beam
       search with a very large beam size).  In fact,
     * Stahlberg and Byrne (2019) report that exact search returns the empty
-      string in > 50% of cases, 
+      string in > 50% of cases,
       * This rate tends to decrease for larger models, although it is often
         still a considerable percentage.
-      * showing that the success of beam search does (not) stem from 
+      * showing that the success of beam search does (not) stem from
         * not from its ability to approximate exact decoding in practice, but
         * from a hidden inductive bias embedded in the algorithm
           * This inductive bias appears to be paramount for generating

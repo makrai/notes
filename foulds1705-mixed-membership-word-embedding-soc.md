@@ -66,7 +66,7 @@ arXiv:1705.07368 cs.CL
       is drawn via θ(d), then the word is drawn from the chosen topic φ(z i)
     * a useful compromise between model flexibility and statistical efficiency:
       * the K topics φ(k) are shared across all documents, thereby sharing
-        statistical strength, but 
+        statistical strength, but
       * each document is free to use the topics to its own unique degree
     * Bayesian inference further aids data efficiency, as
       uncertainty over θ(d) can be managed for shorter documents

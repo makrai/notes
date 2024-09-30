@@ -203,7 +203,7 @@ arXiv:2005.00633 [cs.CL]
   * XNLI (for both mBERT and XLM-R), the RU scores are comparable to those on ZH
     , while they are lower for HI and UR : this is
     * despite the fact that as Indo-European languages RU , HI , and UR are
-      linguistically closer to EN than ZH 
+      linguistically closer to EN than ZH
   * we observe comparable scores on XQuAD for TH, RU , and ES . Therefore, in
 
 ## 3.3 Analysis
@@ -291,7 +291,7 @@ arXiv:2005.00633 [cs.CL]
       generally have high scores in the zero-shot transfer, and both benefit
       only marginally from few-shot data points
   * In stark contrast, KO (DEP, a) and TH (XQuAD, b), both exhibit
-    * fairly poor zero-shot performance given their linguistic distance to EN 
+    * fairly poor zero-shot performance given their linguistic distance to EN
     * Given in-language data, however, both see rapid leaps in performance,
       * a gain of almost 40% UAS on DEP, and almost 5% on XQuAD. In a sense,
 * interesting are DEP results for JA and AR , where we observe

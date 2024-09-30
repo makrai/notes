@@ -1,4 +1,4 @@
-BMEAUT at SemEval-2020 Task 2: Lexical Entailment with Semantic Graphs 
+BMEAUT at SemEval-2020 Task 2: Lexical Entailment with Semantic Graphs
 Ádám Kovács, Kinga Gémes, Andras Kornai, Gábor Recski
     COLING | SemEval 2020
 

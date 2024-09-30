@@ -173,13 +173,13 @@ manuscript of the chapter in Emotion Measurement 2021 2nd ed arXiv:2005.11882
     generating text that is affectually suitable for a given image or audio
 * As seen above, there are a number of datasets where sentences are manually
   labeled for emotions
-  * They have helped 
+  * They have helped
     * improve our understanding of how people use language to convey emotions
     * in developing supervised
 * questions remain unexplored. For example, to what extent do people
   * convey emotions without using explicit emotion words?
   * are some emotions more basic than others?  Is there
-    * a taxonomy of emotions? 
+    * a taxonomy of emotions?
     * Are some emotions indeed combinations of other emotions?
       (optimism = joy + anticipation)
   * data labeled for certain emotions be useful in detecting certain other emo?

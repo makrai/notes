@@ -9,7 +9,7 @@ Volume 72, Issue 8 2019 https://doi.org/10.1177/1747021819829012
   * Each participant provided valence, arousal, and dominance ratings for
     120-130 faces displaying various emotional expressions (eg happiness,
     sadness). The current work provides a large database of normed ratings for
-    facial stimuli that 
+    facial stimuli that
 * complements the existing normative set of emotional ratings for photos/words
   * International Affective Picture System and the
   * Affective Norms for English Words

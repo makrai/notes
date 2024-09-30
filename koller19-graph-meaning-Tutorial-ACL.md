@@ -32,7 +32,7 @@ https://github.com/cfmrp/tutorial
       perhaps with some extensions for polarity or tense, whereas others
     * capture (some) scopal phenomena
     * most graph banks do not have a precisely defined model theory
-      in the sense of classical linguistic semantics, 
+      in the sense of classical linguistic semantics,
       * nL there are underlying intuitions about what the nodes of the gra mean
       (individual entities and eventualities in the world vs.
       more abstract objects

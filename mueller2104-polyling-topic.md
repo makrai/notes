@@ -19,7 +19,7 @@ code and instructions for replicating our dataset and experimental setup
   * fine-tuning encoder representations on topic classification and integrating
     the topic classification task directly into topic modeling improves topic
   * fine-tuning encoder representations on any task is the most important
-    factor for facilitating cross-lingual transfer. 
+    factor for facilitating cross-lingual transfer.
 
 # 1 Intro
 
@@ -30,7 +30,7 @@ code and instructions for replicating our dataset and experimental setup
   variety of applications (Xia+ 2020)
   * when trained on multilingual corpora, they have been able to discover
     cross-lingual alignments despite the lack of explicit cross-lingual links
-    (Wu and Dredze, 2019).  
+    (Wu and Dredze, 2019).
   * Models such as multilingual BERT (mBERT; Devlin+ 2018) or XLM-RoBERTa
     (XLM-R; Conneau+ 2019) can produce a representation of text in a shared
     subspace across multiple input languages, suitable for both monolingual and

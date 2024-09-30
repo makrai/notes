@@ -31,11 +31,11 @@ EMNLP2022 arXiv:2210.09773 [cs.CL]
 
 ## LaBSE, Language-agnostic BERT Sentence Embedding (LaBSE, Feng+ 2020) was
 
-* trained similar to mUSE with a translation ranking loss. It 
-* fine-tunes a dual-BERT architecture with 6 Billion translation pairs for 
+* trained similar to mUSE with a translation ranking loss. It
+* fine-tunes a dual-BERT architecture with 6 Billion translation pairs for
 * 109 languages.
 
-## Xpara: Reimers and Gurevych (2020) 
+## Xpara: Reimers and Gurevych (2020)
 
 * XLM-R fine-tuned to imitate SBERT-paraphrases (Reimers and Gurevych, 2019),
 * a RoBERTa model trained on more than 50 Million English paraphrase pairs,
@@ -54,24 +54,24 @@ EMNLP2022 arXiv:2210.09773 [cs.CL]
 
 ## 6.5 Results
 
-### Multilingual STS Table 2 and Table 3 show the evaluation results 
+### Multilingual STS Table 2 and Table 3 show the evaluation results
 
 * 3 monolingual STS tasks and 7 cross-lingual STS tasks respectively. As seen,
-  * the best-performing models in the literature are mUSE and Xpara. Thus, 
+  * the best-performing models in the literature are mUSE and Xpara. Thus,
   * we present the results of augmenting mUSE and Xpara with our AMR embeds,
     denoted by mUSE++ and Xpara++ respectively.
 * Using AMR embeddings substantially improves both two models across the
   monolingual (up to +2.31 on avg.) and cross-lingual settings (up to +2.22 on
   avg.), greatly advancing the SOTA performance. The average scores of
   monolingual and cross-lingual settings are pushed to 85.88 and 84.25
-  * The improvements for mUSE are generally greater than those for Xpara, 
+  * The improvements for mUSE are generally greater than those for Xpara,
     * even though the training data of mUSE overlaps with our AMR encoders
     * maybe because Xpara is trained on paraphrase corpus, which diminishes the
       ability of AMR to group different expressions of the same semantics.
-* model variant #2 performs best on monolingual settings while 
+* model variant #2 performs best on monolingual settings while
   * model variant #5 attains the best results on cross-lingual settings. We
-  * adding more languages to the training of the AMR parser 
-    helps the generalization to other languages and 
+  * adding more languages to the training of the AMR parser
+    helps the generalization to other languages and
     reduces the parsing inconsistency across different languages
     => the AMR graphs from different languages are better aligned, leading to a
     => better-aligned vector space
@@ -86,17 +86,17 @@ EMNLP2022 arXiv:2210.09773 [cs.CL]
   * The results for each language can be found in Appendix
   * our AMR encoders are only trained with a few languages (en, de, es, it, zh,
     fr, and ar) at most
-    * unlike previous work, 
+    * unlike previous work,
     * To isolate the effect on unseen languages, we separate the results on
       those seen languages from all languages (seen/all).
 * the rankings of existing models are quite different to the results on STS
-  * LASER and LaBSE achieve the best results on most transfer tasks 
-    except for QAM, and 
+  * LASER and LaBSE achieve the best results on most transfer tasks
+    except for QAM, and
     * outperforms mUSE and Xpara by large margins in most cases. The results
 * Next, we augment the best-performing models, LASER and LaBSE, with our AMR
   * For seen languages, our methods substantially boost the performance of
     these two models across different tasks (up to +2.02 on avg.). The
-    * gains over LASER are greater than those over LaBSE.  Note that 
+    * gains over LASER are greater than those over LaBSE.  Note that
     * LASER is trained with an encoder-decoder architecture and both LaBSE and
       our AMR encoders are trained with a Siamese network. Therefore, we
       believe the AMR embeddings are more complementary to LASER.
@@ -106,8 +106,8 @@ EMNLP2022 arXiv:2210.09773 [cs.CL]
     * LaBSE: However, according to the average scores over different tasks, the
       AMR embeddings seem to fail to improve LaBSE; We even observe a
       performance drop for model variants #1-#3. Nevertheless, the performance
-      * largely comes from XNLI while the 
-        scores on other tasks are instead boosted. This is 
+      * largely comes from XNLI while the
+        scores on other tasks are instead boosted. This is
       * because the test sets of XNLI include some distant languages (eg
         Swahili and Urdu) that our multilingual AMR parser cannot handle well
         (see the results on individual languages in Table 6 in Appendix). We
@@ -117,5 +117,5 @@ EMNLP2022 arXiv:2210.09773 [cs.CL]
     * #1 (drop all non-English AMR graphs for training) and #2 (drop the AMR
       graphs derived from French and Arabic) are the other two variants that
       negatively impact the average performance.  Another interesting
-    * #4 performs best on MLDoc and QAM, suggesting 
+    * #4 performs best on MLDoc and QAM, suggesting
       English sentences might not be necessary.

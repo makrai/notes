@@ -196,7 +196,7 @@ Appl. Sci. 2021, 11,
     computes the outer product among each modality
     * The tensor fusion layer (ie, outer product) explicitly captures the
       unimodal, bimodal and trimodal interactions using a three-fold Cartesian
-      product from modality embeddings 
+      product from modality embeddings
     * The final representation is passed through an inference subnetwork which
       performs inference of the target value. Great representation power
   * problem of exponential dimensional growth is a drawback

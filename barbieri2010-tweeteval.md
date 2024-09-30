@@ -152,7 +152,7 @@ Findings of EMNLP 2020 arXiv:2010.12421 [cs.CL]
       * some models such as RoBERTa (Liu+ 2019) or GPT-2 (Radford+ 2019) are
         familiar with internet language and slang, as
         part of their underlying training corpora contains Reddit data (38GB)
-         
+
 # Conclusion
 
 * future:

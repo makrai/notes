@@ -391,8 +391,8 @@ directly communicated)
 * application programs using it, but the early results are promising
   * DEC, for example, John McDermott, David Marques, Renata Bushko,
 * the basic business unit
-  * the basic business unit in a hotel is “the room”, and 
-  * at a car rental agency is "the car", use 
+  * the basic business unit in a hotel is “the room”, and
+  * at a car rental agency is "the car", use
   * hospital: the right business unit is the bed, not the room
   * relatively deep understanding of what goes on at each kind of place
     needed to decide that for a new potential domain

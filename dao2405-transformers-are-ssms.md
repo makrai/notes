@@ -12,7 +12,7 @@ https://github.com/state-spaces/mamba
   * state-space models (SSMs) such as Mamba have recently been shown to
     match or outperform Transformers at small to medium scale
 * We: the two families of models are actually quite closely related, and
-  * we develop a rich framework of theoretical connections 
+  * we develop a rich framework of theoretical connections
   * connected through various decompositions of a well-studied class of
     structured semiseparable matrices
     * state space duality (SSD) framework allows us to design

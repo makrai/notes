@@ -38,12 +38,12 @@ COLING 2020
   * this is the first extensive study to specifically evaluate the performance
     of multilingual epidemiological text classification methods.
 
-# 2 works related to NLP-based epidemic surveillance systems, 
+# 2 works related to NLP-based epidemic surveillance systems,
 
-# 3 dataset used in the study, while the 
+# 3 dataset used in the study, while the
 
-# 4 experiment setup and results are presented in 
+# 4 experiment setup and results are presented in
 
-# 5 discussion of the results in 
+# 5 discussion of the results in
 
 # 6 conclusions and possible suggestions for future research

@@ -63,9 +63,9 @@ arXiv:2305.17333
   * In our tests, fine-tuning an OPT-13B model with full parameter or PEFT
     requires 12× and 6× more memory than inference respectively
 * In-context learning (ICL [12]) has allowed
-  * solving many tasks with a single inference pass, during which 
+  * solving many tasks with a single inference pass, during which
     the model processes labeled examples (demonstrations) in its context and
-    then outputs a prediction on a test example. While this 
+    then outputs a prediction on a test example. While this
     * allows for quick adaptation of the model to specific use cases, current
     * hE limited context size (and thus, limited demonstrations) and the
       performance is sensitive to the formatting and choice of demonstrations

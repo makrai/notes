@@ -1,4 +1,4 @@
-Know What You Don’t Know: Unanswerable Questions for SQuAD 
+Know What You Don’t Know: Unanswerable Questions for SQuAD
 Pranav Rajpurkar, Robin Jia, Percy Liang
 ACL 2018
 

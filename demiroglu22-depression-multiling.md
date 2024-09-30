@@ -11,7 +11,7 @@ EURASIP Journal on Audio, Speech, and Music Processing volume 2020
 * contributions in this paper
   * exploit databases from multiple languages for acoustic feature selection
     * significantly improved the depression assessment accuracy over baselines
-  * extract text-based features for depression assessment and 
+  * extract text-based features for depression assessment and
   * fusion: we use a novel algorithm to fuse the text~ & speech-based classif
     which further boosted the performance
 

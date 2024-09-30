@@ -138,7 +138,7 @@ naacl 2018
 
 ## What are “Give-away” Words?
 
-* _instrument_ -> entailment, _tall_ -> neutral, 
+* _instrument_ -> entailment, _tall_ -> neutral,
   _sleeping, asleep, sleeps_ -> contradiction
 
 ### Qualitative Examples

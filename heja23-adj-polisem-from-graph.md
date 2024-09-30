@@ -44,11 +44,11 @@ XIX. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2023. január 26�
     * Véronis, 2004 HyperLex: lexical cartography for information retrieval
       Computer Speech & Language 18(3), 223–252 (2004)
     * Biemann, 2006
-      Chinese Whispers ~ an Efficient Graph Clustering Algorithm and its Applic 
+      Chinese Whispers ~ an Efficient Graph Clustering Algorithm and its Applic
       TextGraphs: the First Workshop on Graph Based Methods 4NLP
 * statikus sűrű szóbeágyazásokból épített gráfokat Pelevina+ (2016)
   * Pelevina M, Arefiev N, Biemann C, Panchenko A
-    Making Sense of Word Embeddings 
+    Making Sense of Word Embeddings
     1st Workshop on Representation Learning for NLP
 * A jelentés hagyományos definíciója a jelentések azonosságát veszi alapul
   * szinonímia definíciója2 hosszú múltra tekint vissza (pl Frege, 1892)

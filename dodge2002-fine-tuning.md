@@ -57,7 +57,7 @@ arXiv:2002.06305 hivatalos helyen tudtommal nem jelent meg, 200+ hivatkozás
     weight initializations and data orders
   * some weight initializations perform well across all studied tasks
 * By frequently evaluating the models through training, we empirically observe:
-  worse performing models can often be distinguished from better ones early 
+  worse performing models can often be distinguished from better ones early
   * motivating investigations of early stopping strategies
 * a simple early stopping algorithm (sec 5) is an effective strategy for
   reducing the computational resources needed to reach a given validation perf

@@ -5,8 +5,8 @@ ACL Workshop on ... Creating Large Language Models arXiv:2204.06745
 
 # Abstract
 
-* We introduce GPT-NeoX-20B, a 20 billion parameter autoregressive LM 
-  * trained on the Pile, whose 
+* We introduce GPT-NeoX-20B, a 20 billion parameter autoregressive LM
+  * trained on the Pile, whose
   * freely and openly available to the public through a permissive license. It
   * the largest dense autoregressive model that has publicly available weights
 * we describe \model{}'s architecture and training and

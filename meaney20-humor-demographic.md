@@ -5,13 +5,13 @@ ACL 2020 Student Research Workshop
 # Abstract
 
 * Recent humor classification shared tasks have struggled with two issues:
-  * highly constrained genre of humor or 
+  * highly constrained genre of humor or
   * the data is so indiscriminate that
     the inter-annotator agreement on its humor content is drastically low
 * typically average over all annotators’ judgments,
   in spite of that humor is a highly subjective phenomenon
 * We argue that demographic factors influence whether a text is humorous
-  * propose the addition of 
+  * propose the addition of
     * demographic information about the humor annotators in order to bin
     * an ‘offensive’ label to distinguish between different generations
 * could lead to better performance on eg content moderation
@@ -22,7 +22,7 @@ ACL 2020 Student Research Workshop
   * since 2017, the proliferation of shared humor detection tasks in NLP has
   * not always informed by the long and interdisciplinary history of humor
     research (Taylor and Attardo, 2016, Davies, 2008)
-  => excellent evaluation results, but which may not 
+  => excellent evaluation results, but which may not
     * transfer to other humor datasets,
     * improve downstream tasks like content moderation, or
     * contribute to our understanding of humor.
@@ -30,7 +30,7 @@ ACL 2020 Student Research Workshop
   humor-or-not, similar to image classification’s view of an image as
   dog-or-not.
   + score prediction, with little recognition that gold
-  * standard labels for these constructs simply do not exist.  
+  * standard labels for these constructs simply do not exist.
 
 ## 1.1 Proposal
 
@@ -63,14 +63,14 @@ ACL 2020 Student Research Workshop
     female, and older counterparts did (Omwake, 1937).
   * in the Netherlands, Kuipers (2017) found significant differences in humor
     preferences along the lines of gender, age, and in particular, social class
-    or education level. An interesting finding was that 
+    or education level. An interesting finding was that
     * the older generation rated their younger counterparts’ humor as
       offensive. This contradicts the popular opinion that the millennial
       generation is perpetually offended (Fisher, 2019).
   * a US study found that males tended to give higher ratings to female-hostile
     jokes, and females did the same with male-hostile jokes. Both genders found
     female-hostile jokes more offensive overall (Abel and Flick, 2012).
-* no current work from CH on demographic differences in humor perception 
+* no current work from CH on demographic differences in humor perception
   * can be incorporated into shared tasks with some simple adjustments.
 
 # 4 Contribution to Computational Humor
@@ -80,7 +80,7 @@ ACL 2020 Student Research Workshop
   * the first CH dataset to take into account the ratings of non-binary
     annotators
 * In line with Hossain (2019), we aim to use clustering methods on the humor
-  and/or offensive texts to 
+  and/or offensive texts to
   determine themes that evoke these classes for different groups. We also aim
   * explore whether theories of humor, such as surprisal, superiority and
     incongruity are equally appreciated among different groups

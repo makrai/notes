@@ -310,7 +310,7 @@ arXiv:2302.13971 [cs.CL]
 ## 5.1 RealToxicityPrompts: ~ 100k prompts
 
 * a toxicity score is automatically evaluated by making a request to
-  PerspectiveAPI 3 
+  PerspectiveAPI 3
   * no control over the pipeline used by the third-party PerspectiveAPI, making
 * For each of the 100k prompts, we greedily generate with our models, and
 * In Table 11, we report our averaged score on basic and respectful prompts

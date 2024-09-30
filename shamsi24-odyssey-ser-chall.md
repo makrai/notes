@@ -1,4 +1,4 @@
-The CONILIUM proposition for Odyssey Emotion Challenge : 
+The CONILIUM proposition for Odyssey Emotion Challenge :
   Leveraging major class with complex annotations
 Meysam Shamsi; Lara Gauder; Marie Tahon
 Odyssey 2024
@@ -18,4 +18,4 @@ Odyssey 2024
   * F1-Macro score of 0.361 on the development set, 0.335 on the test set,
   * significant improvement compare to the provided baseline
 * We also explore characteristics of "easy" and "difficult" samples:
-  * prediction performance consistent across different models 
+  * prediction performance consistent across different models

@@ -50,10 +50,10 @@ Machine Learning and Systems 2 (MLSys 2020)
 * experience developing ASHA within Determined AI’s production-quality ML sys
   that offers hyperparameter tuning as a service, we describe several systems
   design decisions and optimizations that we explored as part of the
-  * streamlining the user interface to enhance usability; 
+  * streamlining the user interface to enhance usability;
   * autoscaling parallel training to systematically balance the tradeoff
     between lower latency in individual model training and
-    higher throughput in total configuration evaluation; 
+    higher throughput in total configuration evaluation;
   * efficiently scheduling ML jobs to optimize multi-tenant cluster utilization
   * tracking parallel hyperparameter tuning jobs for reproducibility.
 
@@ -68,7 +68,7 @@ Machine Learning and Systems 2 (MLSys 2020)
 
 * Existing hyperparameter tuning methods attempt to speed up the search for a
   good configuration by either/or
-  * adaptively selecting/evaluating configurations 
+  * adaptively selecting/evaluating configurations
   * selection approaches attempt to identify promising regions of the
     hyperparameter search space from which to sample new configurations to
     evaluate (Hutter+ 2011; Snoek+ 2012; Bergstra+ 2011; Srinivas+ 2010).
@@ -135,7 +135,7 @@ Machine Learning and Systems 2 (MLSys 2020)
 * PBT (Jaderberg+ 2017; Li+ 2019) and Vizier (Golovin+ 2017).
 * PBT is a SOTA hybrid evolutionary approach that
   exploits partial training to
-  iteratively increase the fitness of a population of models, PBT lacks any 
+  iteratively increase the fitness of a population of models, PBT lacks any
   * no theoretical guarantees, In contrast to Hyperband
   * primarily designed for neural networks and is not a general approach for
   * more comparable to SHA than to Hyperband since both PBT and SHA require
@@ -170,7 +170,7 @@ Machine Learning and Systems 2 (MLSys 2020)
 
 ## 3.1 Successive Halving (SHA)
 
-* The idea behind SHA (Algorithm 1) is simple: 
+* The idea behind SHA (Algorithm 1) is simple:
   * allocate a small budget to each configuration, evaluate all configura-
     tions and keep the top 1/η, increase the budget per configuration by a
     factor of η, and repeat until the maximum per-configuration budget of R is
@@ -214,7 +214,7 @@ return best configuration in T
     the base rung numbered 0 and increasing
 * Figure 1
   * (a) shows the rungs for bracket 0 for an example setting with n = 9, r = 1,
-    R = 9, and η = 3, while Figure 
+    R = 9, and η = 3, while Figure
   * (b) shows how resource allocations change for different brackets s.
 
 Straightforward ways of parallelizing SHA are not well suited for the parallel
@@ -238,10 +238,10 @@ Another naive way of parallelizing SHA is to distribute the training of the n/η
 k surviving configurations on each rung k as is done by Falkner+ (2018) and add
 brackets when there are no jobs available in existing brackets. We will refer
 to this method as “synchronous” SHA. The efficacy of this strategy is severely
-hampered by two issues: 
+hampered by two issues:
   * SHA’s synchronous nature is sensitive to stragglers and dropped jobs as
     every configuration within a rung must complete before proceeding to the
-    next rung, and 
+    next rung, and
   * the estimate of the top 1/η configurations for a given early-stopping rate
     does not improve as more brackets are run since promotions are performed
     independently for each bracket.  We demonstrate the susceptibility of
@@ -261,5 +261,5 @@ hampered by two issues:
 
 ## 4.1 Sequential Experiments
 
-# 5 Productionizing ASHA 8 
+# 5 Productionizing ASHA 8
 

@@ -54,7 +54,7 @@ Contents p6
           constituent parts, purpose and function, mode of creation, etc, and
       * Inheritance Structure
         * relation between the lexical item and others in the lexicon
-  * Chapter 6: the structure of qualia, and the role they play in 
+  * Chapter 6: the structure of qualia, and the role they play in
     distributing the functional behavior of words and phrases in composition
   * Chapter 7: generative devices
     * coercion

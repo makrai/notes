@@ -18,7 +18,7 @@ arXiv:2106.09685 [cs.CL]
     injects trainable rank decomposition matrices into each layer of the
     Transformer architecture,
     greatly reducing the number of trainable parameters for downstream tasks
-* Compared to GPT-3 175B fine-tuned with Adam, LoRA can 
+* Compared to GPT-3 175B fine-tuned with Adam, LoRA can
   * reduce
     * the number of trainable parameters by 10,000 times and the
     * GPU memory requirement by 3 times
@@ -249,9 +249,9 @@ arXiv:2106.09685 [cs.CL]
 * Few-shot learning, or prompt engineering, is very advantageous
   when we only have a handful of training samples. However
 * hE in practice, we can often afford to curate a few thousand or more examples
-  for performance-sensitive applications. As shown in 
+  for performance-sensitive applications. As shown in
 * Table 8, fine-tuning improves the model performance drastically vs few-shot
-  * on datasets large and small. We take the 
+  * on datasets large and small. We take the
 * eg GPT-3 few-shot result on RTE from the GPT-3 paper (Brown+ 2020)
   * MNLI-matched, we use two demonstrations per class and
     six in-context examples in total

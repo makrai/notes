@@ -122,7 +122,7 @@ Interspeech 20182-6 September 2018, Hyderabad
 
 ## 3.2. Corpus description
 
-* 43 films (from 1993–2009, English originals), were selected 
+* 43 films (from 1993–2009, English originals), were selected
   * genres including comedy, drama, horror, and thriller
   * Sequences with emotional content were chosen (collected under
     creative-commons) and segmented

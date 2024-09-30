@@ -215,7 +215,7 @@ we evaluate SER models for correctness, robustness, and fairness [48]
   how well the predicted distribution matches the ground truth one [49], and is
 * the typical measure for evaluating dimensional SER models [50]
 
-## Robustness (cf. Section 4.8) 
+## Robustness (cf. Section 4.8)
 
 * how model performance is affected by changes to the input signals such as
   adding background noise
@@ -223,7 +223,7 @@ we evaluate SER models for correctness, robustness, and fairness [48]
 * We focus on testing the robustness of the models against data augmentations
   that do not change the human perception of the underlying emotion
   * We select the following five augmentations from Jaiswal and Provost [33] to
-    enable direct comparison with previous results: 
+    enable direct comparison with previous results:
   * Natural soundscapes adds a randomly selected sample from the natural class
     of the ESC-50 dataset [52] with a signal-to-noise ratio (SNR) of 0 dB, 10
     dB or 20 dB
@@ -268,7 +268,7 @@ we evaluate SER models for correctness, robustness, and fairness [48]
 * to learn linguistic content, fine-tuning the transformer layers is essential
   * otherwise correlation drops to almost zero
 * This finding is also important for works doing in-domain training on IEMOCAP,
-  * parts of the conversations are scripted 
+  * parts of the conversations are scripted
     => a leakage of text information that may result in overoptimistic results
     [56] when that text information is exploited by transformer models
 * our models may inherit similar biases as those found in NLP models [57]

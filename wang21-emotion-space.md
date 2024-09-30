@@ -9,7 +9,7 @@ ACL | IJCNLP 2021
 * we propose a general framework to learn the distributed representations for
   emotion categories in emotion space from an emotion classification dataset.
 * based on the soft labels predicted by the pre-trained neural network model,
-  we derive a simple and effective algorithm. 
+  we derive a simple and effective algorithm.
 * Experiments: much better than word vectors in semantic space
 
 # Conclusion

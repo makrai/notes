@@ -1,5 +1,5 @@
 EasyCall corpus: a dysarthric speech dataset
-Rosanna Turrisi, Arianna Braccia, Marco Emanuele, Simone Giulietti, 
+Rosanna Turrisi, Arianna Braccia, Marco Emanuele, Simone Giulietti,
   Maura Pugliatti, Mariachiara Sensi, Luciano Fadiga, Leonardo Badino
 arXiv:2104.02542
 
@@ -21,4 +21,4 @@ arXiv:2104.02542
     in this paper. This result corroborates the need for dysarthric speech
     corpora for developing effective assistive technologies. To the best of our
     knowledge, this database represents the richest corpus of dysarthric speech
-    to date. 
+    to date.

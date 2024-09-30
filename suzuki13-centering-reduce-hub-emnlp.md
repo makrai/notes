@@ -95,7 +95,7 @@ Ikumi Suzuki Kazuo Hara Masashi Shimbo Marco Saerens Kenji Fukumizu
   * transformation of the base similarity measure (in our case, K) by Mutual
     Proximity (Schnitzer+ 2012) 2 , and the
   * one (Suzuki+ 2012) based on graph Laplacian kernels
-    * the Laplacian kernels are defined for graph nodes, 
+    * the Laplacian kernels are defined for graph nodes,
     => we computed the kernels by taking the cosine similarity matrix K as the
       weighted adjacency (affinity) matrix of a graph
     * we computed both the

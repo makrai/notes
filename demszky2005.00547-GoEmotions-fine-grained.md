@@ -142,7 +142,7 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
   * no research that identifies principal categories for emo recog from text
     * see Section 2.2
     * we consider those emotions that
-      * identified as basic in other domains (video and speech) and that 
+      * identified as basic in other domains (video and speech) and that
       * apply to text as well
 3. Limit overlap among emotions and limit the number of emotions
   * not include emotions that are too similar
@@ -161,14 +161,14 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 * We obtain N dimensional vectors for each emotion by averaging raters’
   judgments for all examples labeled with that emotion. We calculate Pearson
-* Figure 2 shows that 
+* Figure 2 shows that
   * emotions that are related in intensity (e.g. annoyance and anger, joy and
     excitement, nervousness and fear) have a strong positive correlation.
   * emotions that have the opposite sentiment are neg- atively correlated.
 * We also perform hierarchical clustering to un- cover the nested structure of
   * We use correlation as a distance metric and ward as a linkage method,
-* dendrogram on the top of Figure 2 shows that 
-  * emotions that are related by intensity are neighbors, and that 
+* dendrogram on the top of Figure 2 shows that
+  * emotions that are related by intensity are neighbors, and that
   * larger clusters map closely onto sentiment categories. Interestingly,
   * emotions that we labeled as “ambiguous” in terms of sentiment (e.g. sur-
     prise) are closer to the positive than to the negative category. This
@@ -221,9 +221,9 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * sentiment level: 4 categories – positive, negative, ambiguous and Neutral –
   * Neutral category intact, and the rest of the mapping as shown in Figure 2
 * Ekman level: the Neutral label and the following 6 groups:
-  * anger (anger, annoyance, disapproval), 
+  * anger (anger, annoyance, disapproval),
   * disgust (disgust),
-  * fear (fear, nervousness), 
+  * fear (fear, nervousness),
   * joy (all positive emotions),
   * sadness (sadness, disappointment, embarrassment, grief, remorse) and
   * surprise (all ambiguous emotions)

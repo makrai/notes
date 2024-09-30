@@ -44,7 +44,7 @@ LREC 2016
   * entailment recognition (eg Lien and Kouylekov (2014))
   * detection of scope of negation (eg Packard+ (2014)) and
   * natural language interfaces (eg Packard (2014))
-* ERS-based system has outperformed other approaches in a competitive task  
+* ERS-based system has outperformed other approaches in a competitive task
   * Packard+ (2014), Lien and Kouylekov (2014), Packard (2014),
     Yao and Zhang (2010), MacKinlay+ (2009))
 * pros and cons of ERG-based system

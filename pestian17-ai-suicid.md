@@ -30,7 +30,7 @@ John P. Pestian, Michael Sorter, Brian Connolly, Kevin Bretonnel Cohen,
   * Pestian, Matykiewicz, and Grupp‐Phelan (2008)
     * distinguish notes written by people who died by suicide vs simulated ones
     * better than mental health professionals (71% vs. 79%; Pestian+ 2008)
-  * international, shared task‐setting (Voorhees+ 2005), 24 teams 
+  * international, shared task‐setting (Voorhees+ 2005), 24 teams
     * identify emos in over 1,319 suicide notes written shortly before death
     * fusion of multiple methods outperform single methods
       (Pestian, Matykiewicz, & Linn‐Gust, 2012)

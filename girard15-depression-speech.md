@@ -7,7 +7,7 @@ Curr Opin Psychol. 2015 Aug; 4: 75–79
 * Analysis of behavior in depression primarily relies on subjective measures
 * auto audiovisual measurement of behaviors that humans struggle to quantify
   (eg movement velocity & voice inflection)
-  * improve screening and diagnosis, 
+  * improve screening and diagnosis,
   * identify new behavioral indicators of depression,
   * measure response to clinical intervention, and
   * test clinical theories about underlying mechanisms

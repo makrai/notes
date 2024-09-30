@@ -18,7 +18,7 @@ inference code and models at the following URL: https://github.com/openai/whispe
 # 1. Introduction
 
 * unsupervised pre-training techniques eg Wav2Vec 2.0 (Baevski+ 2020)
-  * learn directly from raw audio without the 
+  * learn directly from raw audio without the
   * no need for human labels, they can productively use large datasets
   * scaled up to 1,000,000 hours of training data (Zhang+ 2021)
   * >> the ~ 1 K h typical of an academic supervised dataset
@@ -39,7 +39,7 @@ inference code and models at the following URL: https://github.com/openai/whispe
       datasets. A model that achieves “superhuman” performance when trained
     * humans are oblivious to those dataset-specific quirks (Geirhos+, 2020)
 * crucial weakness
-  * an equivalently high-quality pre-trained decoder combined with 
+  * an equivalently high-quality pre-trained decoder combined with
   * a recommended protocol of dataset-specific finetuning, is a
 * speech recognition systems that are pre-trained in a supervised fashion
   across many datasets/domains exhibit higher cross-dataset generalization

@@ -25,7 +25,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   emotion classification, especially in the meta-learning setting
   (up to 7% macro F1-score compared to regular emotion classification)
   * The pivot method was not able to compete with the base model, but
-  * categories do benefit from the additional VAD information, 
+  * categories do benefit from the additional VAD information,
   * hE the opposite does not hold
     * ie the VAD model is more robust than the classification model
   * further inspection suggests that it could be efficient, provided that the
@@ -141,7 +141,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
     * This is repeated, so that, for every test fold, predictions for the other
       nine folds have been made
     * These predictions will be used in the training phase of the meta-learner
-  * test data of the meta-learner 
+  * test data of the meta-learner
     * the model is trained again using regular cross-validation, in order to
       save predictions for the test fold, based on training on nine folds
 
@@ -202,7 +202,7 @@ else:
   * anger and sadness show a high negative correlation with valence
   * joy shows a high positive correlation with this dimension
   * For fear and love, the correlation is less obvious
-* Arousal is (weakly) positively correlated with anger and joy 
+* Arousal is (weakly) positively correlated with anger and joy
   * Sadness has a negative correlation with this dimension in Captions
   * neutral, strikingly, has a notable negative correlation with arousal
     * a bit against our assumption that neutral is the center

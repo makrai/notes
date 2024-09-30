@@ -82,7 +82,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   over commonsense knowledge to make predictions (Lin+ 2019; Feng+  2020).  In
 * we evaluate three existing knowledge graphs, C ON CEPT N ET , Atomic , and
   T RANS OMCS on their coverage 3 and precision relative to our new resource A
-  TOMIC 20 20 
+  TOMIC 20 20
 * The ConceptNet (v5.7) knowledge graph (Speer, Chin, and Havasi 2017)
   * 36 relations focusing mostly on
     * 90% taxonomic and lexical knowledge (eg RelatedTo, Synonym, IsA) and
@@ -104,7 +104,7 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
 * The T RANS OMCS (Zhang+ 2020a) knowledge graph consists of
   * 18.48M tuples that were automatically converted from syntactic parses of
     sentences from various web sources including Wikipedia, Yelp, and Reddit
-  * The set of relations used for the mapping is copied from ConceptNet 
+  * The set of relations used for the mapping is copied from ConceptNet
     * much larger than other commonsense knowledge graphs, the
     * precision of the extracted knowledge is significantly lower
     * performs poorly as an adaptation resource relative to other KGs (cf. §5)

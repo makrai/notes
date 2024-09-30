@@ -49,7 +49,7 @@ google-research/vision_transformer
   * Image patches are treated the same way as tokens (words) in NLP
   * We train the model on image classification in supervised fashion
   * When trained on mid-sized datasets such as ImageNet without strong regu,
-    these models yield modest accuracies 
+    these models yield modest accuracies
     * a few percentage points below ResNets of comparable size
     * may be expected: Transformers lack some of the inductive biases inherent
       to CNNs, such as translation equivariance and locality

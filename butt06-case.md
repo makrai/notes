@@ -962,7 +962,7 @@ Miriam Butt
  a.  Complement positions are [−HR] b. Non-final complement positions are [−LR]
  ,,, p109
 * Kiparsky observes that a corollary of this system is that
-  if a language has neither case nor agreement eg Chinese, 
+  if a language has neither case nor agreement eg Chinese,
   it must obey very fixed word order constraints, because in these languages
   only the positional linkers are available, allowing for no
   * word order variability that could be licensed by an interaction with case
@@ -1297,7 +1297,7 @@ Miriam Butt
 * As in Jackendoff’s (1990) approach: no direct representation of them roles
   * mapping or linking of semantic arguments to syntactic representations is
     mediated by the macroroles, as shown in (2)
-* Actor-Undergoer Hierarchy. The semantic macroroles generalize p204 
+* Actor-Undergoer Hierarchy. The semantic macroroles generalize p204
   * arguments of _do_ are preferably interpreted as Actor,
   * arguments of state predicates and second arguments of general predicates
     are preferably interpreted as Undergoer

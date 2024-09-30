@@ -40,7 +40,7 @@ tl;dr: Variance regularization prevents collapse in self-supervised repr learn
   * two main approaches to preventing collapse:
     * contrastive methods and
     * information maximization methods
-  * Contrastive 
+  * Contrastive
     (Bromley+ 1994; Chopra+ 2005; He+ 2020; Hjelm+ 2019; Chen+ 2020a)
     * costly, require large batch sizes or memory banks, and use
       a loss that explicitly pushes the embeddings of dissimilar images away

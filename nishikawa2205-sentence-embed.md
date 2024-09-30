@@ -279,7 +279,7 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
 * We train a linear classifier using sentence embeddings as input features on
   the English training data, and
   * evaluate the resulting classifier in the remaining languages. To directly
-  * not update the parameters of the sentence encoder 
+  * not update the parameters of the sentence encoder
 * The detailed settings are shown in Appendix D
 * As shown in Table 6, our EASE models achieve the best average performance
   on both back-bones
@@ -295,7 +295,7 @@ source code, pre-trained models, and newly constructed multilingual STC dataset
   * LaBSE is trained on both monolingual and bilingual data in 109 languages,
   * fine-tuning with our EASE framework in five low-resource languages
     (kab, pam, cor, tr, mhr). These languages are not present in the original
-  * We fine-tune the model using 5,000 pairs each from English and the language 
+  * We fine-tune the model using 5,000 pairs each from English and the language
 * Figure 2: EASE improves the performance of LaBSE across all target languages,
   * intriguing result considering that LaBSE has already been trained on about
     six billion parallel corpora. These results suggest the potential benefit

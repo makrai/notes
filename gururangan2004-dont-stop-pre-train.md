@@ -229,7 +229,7 @@ Our code as well as pretrained models for multiple domains and tasks are public
 
 * Table 9
 * TAPT is nearly 60 times faster to train than DAPT on a single v3-8 TPU and
-* storage requirements for DAPT on this task are 5.8M times that of TAPT 
+* storage requirements for DAPT on this task are 5.8M times that of TAPT
 * Our best setting of DAPT + TAPT amounts to three phases of pretraining, and
   * nL, once the LM has been adapted to a broad domain, it can be reused for
     multiple tasks within that domain, with only a single additional TAPT phase
@@ -258,13 +258,13 @@ Our code as well as pretrained models for multiple domains and tasks are public
 
 * In Section §3.2, we provide RoBertA’s masked LM loss before and after DAPT
 * cross-domain masked-LM loss in Table 12, where we evaluate masked LM loss on
-  text samples in other domains after performing DAPT 
+  text samples in other domains after performing DAPT
 * mostly follows our intuition and insights from the paper, ie
   RoBertA’s pretraining corpus and NEWS are closer, and BIO MED to CS (relative
   to other domains). However, our analysis in §3.1 illustrates that
 * REVIEWS and NEWS also have some similarities. This is
   * supported with the loss of RoBertA that is adapted to NEWS , calculated on
-    a sample of REVIEWS 
+    a sample of REVIEWS
 * hE, RoBertA that is adapted to REVIEWS results in the highest loss for a NEWS
   sample.  This is the case for all domains.  One of the properties that
   * REVIEWS' documents are significantly shorter

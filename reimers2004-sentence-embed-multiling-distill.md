@@ -45,7 +45,7 @@ https://github.com/UKPLab/sentence-transformers
       * huge computational overhead
       * alternative translations
         * random alternative translations usually leads to mediocre results
-        * hard negatives (Guo+ 2018) are required, ie incorrect alternative 
+        * hard negatives (Guo+ 2018) are required, ie incorrect alternative
         * Getting these hard negative samples is non-trivial
           1. train the network with random negatives samples, then
           2. identify for each translation pair five hard negative examples

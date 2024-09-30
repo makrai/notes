@@ -95,7 +95,7 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
       _fatigue, sleepiness_ or _drowsiness_ are interchangeable
     * hE different medical definitions, remediation, measures, and voice expr
 * Huckvale+ (2020) questioned the feasibility of the task
-  * is it even possible to estimate sleepiness through voice?  
+  * is it even possible to estimate sleepiness through voice?
   * Are the vocal changes induced by sleepiness visible enough for classif?
   * a sub-corpus of 99 samples of the SLEEP corpora has been annotated by
     25 trained annotators.  The labels obtained in this way have reached a
@@ -103,8 +103,8 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
   * binarizing the KSS label using the same 7.5 threshold as in the SLC, they
     achieved an UAR of 93.6%
   * ie human audition can detect subjective sleepiness in the SLEEP corpus
-  * hE 
-    * there are too many samples per speaker and 
+  * hE
+    * there are too many samples per speaker and
     * recorded in a too restrained diversity of sleepiness states
     * there's a link between the identity of speakers and their KSS levels,
       that prevents algos from learning the impact of sleepiness through voice
@@ -120,7 +120,7 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
 # 3. Corpora 5 for automatic detection of sleepiness or excessive sleepiness
 
 * few databases contain enough data for machine learning purposes (13)
-* we focus on four of them.  Two of them each have been 
+* we focus on four of them.  Two of them each have been
   * used for international challenges on sleepiness
   * recorded to design a virtual physician
 * On every one of them, we have computed statistics of the available data,

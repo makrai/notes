@@ -18,4 +18,4 @@ ACL 2020 arXiv:1910.14659 [cs.CL]
   single inference pass.  In all, PLLs and their associated pseudo-perplexities
   (PPPLs) enable plug-and-play use of the growing number of pretrained MLMs; eg
   we use a single cross-lingual model to rescore translations in multiple
-  languages. We release our library for language model scoring 
+  languages. We release our library for language model scoring

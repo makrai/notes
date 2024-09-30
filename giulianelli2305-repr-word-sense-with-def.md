@@ -19,7 +19,7 @@ ACL 2023 arXiv:2305.11993 [cs.CL]
   * outperform token or usage sentence embeddings
     in word-in-context semantic similarity judgements
 * from the conclusion
-  * generated defs already shown to be effective for WSD (Bevilacqua+ 2020) 
+  * generated defs already shown to be effective for WSD (Bevilacqua+ 2020)
   * we: a broader perspective and demonstrates that
     * modern language models like Flan-T5 (Chung+ 2022) are sufficiently mature
       to produce robust and accurate definitions in a simple prompting setup.
@@ -29,7 +29,7 @@ ACL 2023 arXiv:2305.11993 [cs.CL]
     dynamics over time
     * Operating in the space of humanreadable definitions makes such analyses
       much more interesting and actionable for linguists and lexicographers—who
-  * can also be used for other NLP tasks in the area of lexical semantics, 
+  * can also be used for other NLP tasks in the area of lexical semantics,
     eg word sense induction, idiom detection, and metaphor interpretation.
   * Our experiments with diachronic sense modelling are
     still preliminary and mostly qualitative
@@ -47,10 +47,10 @@ ACL 2023 arXiv:2305.11993 [cs.CL]
 
 * Words in natural language change their meaning over time; these diachronic
 * of interest both for linguists and NLP practitioners
-* Lexical semantic change detection (LSCD) is nowadays well represented 
+* Lexical semantic change detection (LSCD) is nowadays well represented
   * workshops (Tahmasebi+ 2022) and several
   * shared tasks (eg Schlechtweg+ 2020; Kurtyigit+ 2021). LSCD is usually
-* cast either/or as 
+* cast either/or as
   * binary classification (whether the target word changed its meaning)
   * a ranking task (ordering target words according to the degree of change)
 * manually annotated datasets are used: so-called DWUGs in Sec 3

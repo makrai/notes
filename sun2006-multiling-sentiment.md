@@ -46,7 +46,7 @@ arXiv preprint arXiv …, 2020 arxiv.org
     (Jackson+ 2019)
     * eg grief = ?
       * in Persian, ‘grief’ and ‘regret’ are expressed with the same word
-      * in Dargwa, ‘grief’ is co-lexified with ‘anxiety’ 
+      * in Dargwa, ‘grief’ is co-lexified with ‘anxiety’
       * Therefore, Persian/Dargwa speakers may perceive ‘grief’ as more similar
 * We validate the proposed features qualitatively, and also by an extrinsic
   * confirm that our linguistic features capture the intended cultural patterns

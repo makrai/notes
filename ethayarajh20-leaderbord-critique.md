@@ -1,11 +1,11 @@
-Utility is in the Eye of the User: A Critique of NLP Leaderboards 
+Utility is in the Eye of the User: A Critique of NLP Leaderboards
 Kawin Ethayarajh, Dan Jurafsky
 EMNLP 2020
 
 # Abstract
 
 * Benchmarks such as GLUE have helped drive advances in NLP
-* focus on performance-based evaluation has been at the expense of 
+* focus on performance-based evaluation has been at the expense of
 * hE other qualities that the NLP community values in models
   eg compactness, fairness, and energy efficiency
 * In this opinion paper, we study the divergence

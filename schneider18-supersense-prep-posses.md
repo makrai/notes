@@ -1,4 +1,4 @@
-Comprehensive Supersense Disambiguation of English Prepositions and Possessives 
+Comprehensive Supersense Disambiguation of English Prepositions and Possessives
 Nathan Schneider, Jena D. Hwang, Vivek Srikumar, Jakob Prange, Austin Blodgett,
   Sarah R. Moeller, Aviram Stern, Adi Bitan, Omri Abend
 ACL 2018

@@ -60,7 +60,7 @@ Eugene Charniak
 ## 3.1 Finding Explanatory Actions
 
 * The problem is that we appear to have two kinds of phenomena
-* One requires the use of functional rels in finding explanatory actions, 
+* One requires the use of functional rels in finding explanatory actions,
 * the other does not
 * Solution: postulate two separate capabilities
 

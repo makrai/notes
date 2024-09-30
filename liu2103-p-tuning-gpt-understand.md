@@ -115,7 +115,7 @@ arXiv:2103.10385 [cs.CL]
 * Selfsupervised (Liu+ 2020) pre-trained LMs (Han+ 2021): not only
   contextualized text representations but also linguistic and world knowledge
   * including GPT (Radford+ 2019), BERT (Devlin+ 2018), XL-Net (Yang+ 2019),
-    RoBERTa (Liu+ 2019) have been observed to learn 
+    RoBERTa (Liu+ 2019) have been observed to learn
 * Hewitt and Manning (2019) demonstrate that contextualized representations
   produced by language models can form a parse tree in the embedding space
 * Vig (2019) and Clark+ (2019b) look into the multi-head attention patterns

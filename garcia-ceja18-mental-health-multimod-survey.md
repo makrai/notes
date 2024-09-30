@@ -32,9 +32,9 @@ Pervasive and Mobile Computing Volume 51, December 2018, Pages 1-26
   * potential in providing mental health interventions [10–12]
   * Wearable devices like smartphones, smart watches and fitness bands
     * with a vast variety of embedded sensors
-    * communication devices (WiFi, Bluetooth, etc), 
-    * inertial sensors (accelerometer, gyroscope, etc), 
-    * physiological sensors (heart rate, dermal activity, etc) and 
+    * communication devices (WiFi, Bluetooth, etc),
+    * inertial sensors (accelerometer, gyroscope, etc),
+    * physiological sensors (heart rate, dermal activity, etc) and
     * ambient sensors (ambient pressure, temperature, etc) to name a few
 * multimodal sensing applications in the healthcare domain [13]
   * combining the data from subsets of those sensors, it is possible to infer

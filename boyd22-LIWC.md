@@ -8,15 +8,15 @@ Ryan L. Boyd, Ashwini Ashokkumar, Sarah Seraj, James W. Pennebaker
   states: their beliefs, emotions, thinking habits, lived experiences, social
   relationships, and personalities
 * history
-  * From the time of Freud’s writings about “slips of the tongue” to the 
+  * From the time of Freud’s writings about “slips of the tongue” to the
   * early days of computer-based text analysis, researchers across the social
   * Allport (1942), Gottschalk and Gleser (1969), Stone+ (1966), and
     Weintraub (1989).
-  * LIWC applications 
+  * LIWC applications
     * the 1st one as part of an exploratory study of language and disclosure
       (Francis & Pennebaker, 1992)
     * LIWC2001, LIWC2007, 2015, LIWC-22 (Pennebaker+ 2001, 2007, 2015)
-      * expanded dictionaries and sophisticated software design 
+      * expanded dictionaries and sophisticated software design
 
 # The LIWC-22 Text Processing Modules
 

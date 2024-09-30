@@ -45,7 +45,7 @@ Rev Environ Sci Biotechnol (2006) 5:281–296
   * factors affecting human adaptation in ICE environments
     * Variables and their interrelations are portrayed in Fig. 1. In addition
 * applied value for the development of evidence-based countermeasures to
-  minimize psychological and interpersonal problems among personnel 
+  minimize psychological and interpersonal problems among personnel
 
 ## 3.2 Group dynamics
 

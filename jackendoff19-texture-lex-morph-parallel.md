@@ -6,14 +6,14 @@ Ray Jackendoff, Jenny Audring
 
 # Abstract
 
-* three interwoven themes: 
-  * a morphological theory, 
-  * the structure of the lexicon, and 
+* three interwoven themes:
+  * a morphological theory,
+  * the structure of the lexicon, and
   * an integrated account of the language capacity and its place in the mind.
 * These themes together constitute the theory of Relational Morphology (RM),
   extending the Parallel Architecture of Jackendoff’s Foundations of Language
 
-# Part I (chapters 1–3) 
+# Part I (chapters 1–3)
 
 * situates morphology in the architecture of the language faculty, and
 * a novel formalism that unifies the treatment of morphological patterns, from
@@ -24,13 +24,13 @@ Ray Jackendoff, Jenny Audring
       => grammar should really be thought of as part of the lexicon
   2. the traditional emphasis on productive patterns, to the detriment of
      nonproductive patterns, is misguided
-    * linguistic theory can and should encompass them both. 
+    * linguistic theory can and should encompass them both.
 
-# Part II (chapters 4–6) applying the theory 
+# Part II (chapters 4–6) applying the theory
 to a wide range of familiar and less familiar morphological phenomena
 
 
-# Part III (chapters 7–9) 
+# Part III (chapters 7–9)
 
 * connects RM with language processing, language acquisition, and a broad
   selection of linguistic and nonlinguistic phenomena beyond morphology. The
@@ -47,9 +47,9 @@ to a wide range of familiar and less familiar morphological phenomena
 * the lexicon, complete with schemas and relational links, constitutes the
   long-term memory network that supports language production and comprehension.
 
-### 7.2 Theory of processing: Basic assumptions 
+### 7.2 Theory of processing: Basic assumptions
 
-* processing: 
+* processing:
   * the nature of working memory
   * promiscuous (opportunistic) processing
   * spreading activation

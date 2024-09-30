@@ -41,7 +41,7 @@ Speech Communication, 2020-Elsevier
 
 # 3 emotions
 
-* Emotions are convoluted psychological states that are composed of 
+* Emotions are convoluted psychological states that are composed of
   * several components such as personal experience, physiological, behavioral,
     and communicative reactions. Based on these deﬁnitions, two models
 * Discrete emotion theory is based on the six categories of basic emotions;

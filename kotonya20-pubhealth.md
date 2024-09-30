@@ -5,7 +5,7 @@ EMNLP 2020
 # Abstract
 
 * Fact-checking of matters for which expertise is required
-* we: the first study of explainable fact-checking for such claims 
+* we: the first study of explainable fact-checking for such claims
 * For our case study we choose the setting of public health
 * we construct a new dataset PUBHEALTH of
   11.8K claims accompanied by journalist crafted, gold standard explanations

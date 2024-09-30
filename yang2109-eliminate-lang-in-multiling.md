@@ -7,7 +7,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
 # Abstract
 
 * our "Language Information Removal (LIR)" factors out language identity info
-  from semantics related components in pre-trained multilingual representations 
+  from semantics related components in pre-trained multilingual representations
   * only uses simple linear operations,
     eg matrix factorization and orthogonal projection
 * for weak-alignment multilingual systems, the
@@ -135,7 +135,7 @@ Implementation for LIR is available at https://github.com/ziyi-yang/LIR
     to obtain language agnostic sentence representations
 * Faruqui and Dyer (2014): a canonical correlation analysis (CCA) based method
   to add multilingual context to monolingual embeddings
-  * post-processing 
+  * post-processing
   * requires bilingual word translation pairs to determine the projection vects
 * Mrkšić+ (2017) build semantically specialized cross-lingual vector spaces
   * requires the additional training to adjust the original embeddings using

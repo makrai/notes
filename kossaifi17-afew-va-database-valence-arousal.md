@@ -46,7 +46,7 @@ Image and Vision Computing, vol. 65, pp. 23 – 36, 2017
       data recorder in unconstrained conditions
   * goal: robustness mechanisms for addressing uncertainty and noise of
     real-world settings
-* we present AFEW-VA 
+* we present AFEW-VA
   * highly accurate per-frame annotations of valence and arousal for
   * 600 challenging, real-world video clips extracted from feature films
     (also used in part for the AFEW database [7,8])

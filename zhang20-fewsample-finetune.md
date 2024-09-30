@@ -47,7 +47,7 @@ Code: github asappresearch/revisit-bert-finetuning
 * The instability of the BERT fine-tuning process has been known since its
   introduction (Devlin+ 2019), and various solutions have been proposed
 * Phang+ (2018): fine-tuning the pre-trained model on a large intermediate task
-* Lee+ (2020): a new regularization method 
+* Lee+ (2020): a new regularization method
   * constrain the fine-tuned model to stay close to the pre-trained weights
 * Dodge+ (2020): an early stopping method to filter out bad random seeds
 * Concurrently to our work, Mosbach+ (2020) also show that

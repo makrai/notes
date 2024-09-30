@@ -70,7 +70,7 @@ Computer Speech & Language Volume 53, January 2019, Pages 242-275
           have felt misled by the apparently “weird” context, and instead chose
           less surprising translations. In addition to the results from the
       think-aloud translation experiments, we present results from\
-  3. web-based cloze tests with the same stimuli sentences 
+  3. web-based cloze tests with the same stimuli sentences
     * the translation gaps were placed on the words that turned out to be
       problematic in the think-aloud experiments
     * The cloze experiments were conducted over the website freely accessible

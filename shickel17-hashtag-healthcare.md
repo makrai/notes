@@ -20,10 +20,10 @@ Under review with Scientific Reports arXiv:1708.01372 [cs.CL]
 
 * We refer to
   * external sentiment analysis
-    * well-known research area 
+    * well-known research area
     * sentiment and textual polarity is calculated
       with respect to a specific external entity
-  * internal sentiment analysis 
+  * internal sentiment analysis
     * the study of the polarity of user text with respect to themselves
     * primarily concerned with statements of emotion and mental health
     6. Shickel, B.+

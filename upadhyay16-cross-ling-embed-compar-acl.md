@@ -65,7 +65,7 @@ http://cogcomp.cs.illinois.edu/page/publication_view/794
 * Hermann and Blunsom (2014) present a method that learns bilingual word
   vectors from a sentence aligned corpus
 * Let functions f : ~v → R n and g : w ~ → R n, map sentences to their sem
-  representations in R n 
+  representations in R n
   * BiCVM generates word vectors by
     minimizing the squared l2 norm between the sentence representations of
     aligned sentences
@@ -242,7 +242,7 @@ in the matrices are translations of each other
 * we turn off other features that can capture distributional information like
   brown clusters, which were originally used in Guo+ (2015). We use the
   universal dependency treebank (McDonald+ 2013)
-* BiCCA does better than other models. 
+* BiCCA does better than other models.
   * BiSkip is a close second, with an average performance gap of < 1 point.
     * outperforms BiCVM on German and French (over 2 point improvement), owing
       to word alignment information BiSkip’s model uses during training

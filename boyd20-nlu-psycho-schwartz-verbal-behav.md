@@ -140,10 +140,10 @@
   * lacking: tease apart the antecedents, facets, and consequences of anger,
   * most studies simply use verbal behavior as a presumed measure of anger
 * eg “anger” has several hypothesized appraisal tendencies associated with it:
-  externalization, control, and certainty (Lerner & Keltner, 2000). 
+  externalization, control, and certainty (Lerner & Keltner, 2000).
   * An experimental condition that induces anger, then, might explore verbal
     behavior to determine the degree to which a person uses more
-    * “you” and “they” words (reflecting greater externalization), 
+    * “you” and “they” words (reflecting greater externalization),
     * agentic words (reflecting greater control), and
     * absolutist words (reflecting greater certainty)
   * ~> the deeper meaning, purpose, and utility of language is preserved and
@@ -253,7 +253,7 @@
   * Initial steps: practical guides written within specific disciplines that
     outline other fields and norms
     * eg political science papers describing computational text analysis
-      (Grimmer & Stewart, 2013); 
+      (Grimmer & Stewart, 2013);
     * psychology papers describing machine learning (Stachl+ 2020), and
     * machine learning papers describing social sciences (O’Connor+ 2011)
 

@@ -120,6 +120,6 @@ SAC ’21, March 22–26, 2021, Virtual Event, Republic of Korea
   * Other sentiment analysis techniques show spikes in activity related to
     major political, cultural, economic, and natural events [8, 22, 23, 31]
   * time lag between the date of event and the change in public sentiment
-* some/other residents expressed  
+* some/other residents expressed
   * fear and sadness related to leaving the EU
   * anger that it has taken so long for the government to compl

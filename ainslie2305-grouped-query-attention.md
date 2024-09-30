@@ -2,7 +2,7 @@ GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpo
 Joshua Ainslie, James Lee-Thorp, M de Jong, Y Zemlyanskiy, F Lebrón, S Sanghai
 EMNLP 2023. Added to related work arXiv:2305.13245 [cs.CL]
 
-* Multi-query attention (MQA) only uses a single key-value head, 
+* Multi-query attention (MQA) only uses a single key-value head,
   * drastically speeds up decoder inference
   * hE MQA can lead to quality degradation, and moreover it may not be
     desirable to train a separate model just for faster inference

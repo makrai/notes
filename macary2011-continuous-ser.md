@@ -6,7 +6,7 @@ IEEE SLT 2021 arXiv:2011.09212 [cs.CL]
 # Abstract
 
 * continuous SER task, usually characterized by a small amount of labeled data
-* Pre-training for feature extraction for continuous repr of audio and text 
+* Pre-training for feature extraction for continuous repr of audio and text
 * we use wav2vec and camemBERT as self-supervised representation models
 * task: continuous emotion recognition from speech (SER) on
   * AlloSat is a large French emotional database describing the satisfaction

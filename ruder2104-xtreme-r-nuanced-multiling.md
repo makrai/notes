@@ -280,7 +280,7 @@ data, translations, evaluation resources, and interactive leaderboard
 * Table 7: detailed overview of languages in XTREME-R
   including interesting typological differences
   * Wikipedia information is taken from Wikipedia 9 and
-    linguistic information from WALS Online 10 
+    linguistic information from WALS Online 10
 * families
   * Afro-Asiatic, Austro-Asiatic, Austronesian, Dravidian, IndoEuropean,
     Japonic, Kartvelian, Kra-Dai, NigerCongo, Sino-Tibetan, Turkic, Uralic,

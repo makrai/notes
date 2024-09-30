@@ -63,12 +63,12 @@ LREC 2017, Springer 2018
     not break-type and touch-type verbs). In
   * Polish verbs pattern like English verbs in terms of the middle construction:
 * The stipulated cross-linguistic validity has implications for the creation of
-  VerbNet style resources to support NLP in other languages. Yet 
+  VerbNet style resources to support NLP in other languages. Yet
   * few languages boast Levin-style classifications and resources like English
   * developed manually from scratch,
     aiming to capture properties specific to the language in question,
-    * Spanish and Catalan (Aparicio+ 2008), 
-    * Czech (Pala and Horák 2008), and 
+    * Spanish and Catalan (Aparicio+ 2008),
+    * Czech (Pala and Horák 2008), and
     * Mandarin (Liu and Chiang 2008)
   * (semi-)automatically, using already existing resources and aiming to reduce
     * Brazilian Portuguese (Scarton and Aluısio 2012), French (Pradet+ 2014),

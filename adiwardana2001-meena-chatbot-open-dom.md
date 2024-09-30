@@ -48,7 +48,7 @@ https://github.com/google-research/google-research/tree/master/meena/
   automatic metrics such as BLEU (Liu+ 2016; Lowe+ 2017)
 * Our best end-to-end learned model has an average of 72% SSA
   * the full version of Meena scores 79% by incorporating a filtering mechanism
-    and tuned decoding (Section 5). This is still below the 86% SSA 
+    and tuned decoding (Section 5). This is still below the 86% SSA
   * humans have very high sensibleness, but significantly lower specificity, as
     detailed in Section 4.2
 * weaknesses of our methodology

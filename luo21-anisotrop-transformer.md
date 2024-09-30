@@ -307,7 +307,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
 
 # 6 Conclusion 27
 
-* future research questions 
+* future research questions
   1. in autoregressive models like GPT-2 (Radford+ 2019) or XLNet (Yang+ 2019)
   2. the relation between the positional information and the LayerNorm
     * both Kovaleva+ (2021) and we find that the outlier neurons phenomenon is

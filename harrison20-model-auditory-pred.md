@@ -125,7 +125,7 @@ model is available in open-source R package, https://github.com/pmcharrison/ppm
 * Here we present a new version of the PPM algorithm: ‘PPM-Decay’
   * decay kernel that determines the weighting of historic data as a function
     of various parameters, typically
-    * the time elapsed since the historic observation, or 
+    * the time elapsed since the historic observation, or
     * the number of subsequent observations (Fig 1)
   * stochastic noise into memory retrieval, allowing the model to capture
     analogous imperfections in human memory. We have developed an

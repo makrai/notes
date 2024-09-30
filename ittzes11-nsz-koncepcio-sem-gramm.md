@@ -390,9 +390,9 @@ Az Nszt. a poliszémia és homonímia kérdésében
 
 * lexikográfiai gyakorlat hagyományosan nem szótároz egyes gyakori, produktív
   képzőkkel létrehozott, elsősorban deverbális szófajokat
-  * pl főnévi és a határozói igenév, a ható ige; 
-    korlátozottan szótározza a műveltető és a szenvedő igét, 
-    az -ás/-és képzős, elvont cselekvést kifejező főneveket, 
+  * pl főnévi és a határozói igenév, a ható ige;
+    korlátozottan szótározza a műveltető és a szenvedő igét,
+    az -ás/-és képzős, elvont cselekvést kifejező főneveket,
     bizonyos szótárak a melléknévi igenevet
   * Hasonló módon jár el az Nszt
 

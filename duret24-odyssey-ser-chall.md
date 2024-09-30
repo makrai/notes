@@ -8,7 +8,7 @@ Odyssey 2024
 * an ensemble of models, each trained independently and then fused at the score
   level using a Support Vector Machine (SVM) classifier
   * The models were trained using various strategies, including Self-Supervised
-    Learning (SSL) fine-tuning across different 
+    Learning (SSL) fine-tuning across different
   * modalities: speech alone, text alone, and a combined speech and text
 * This joint training methodology aims to enhance the system's ability to
 * F1-macro of 0.35\% on development set

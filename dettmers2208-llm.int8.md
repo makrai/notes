@@ -39,12 +39,12 @@ NeurIPS 2022. Camera-ready version
   * Degradation-free quantization up to 350M parameters is poorly understood,
   * multi-billion parameter quantization remains an open challenge
 * we: the first multi-B-scale Int8 quantization procedure for transformers that
-  does not incur any performance degradation. Our procedure makes it 
+  does not incur any performance degradation. Our procedure makes it
   * possible to load a 175B parameter transformer with 16 or 32-bit weights,
     convert the feed-forward and attention projection layers to 8-bit, and
     use the resulting model immediately for inference without any perf degrad
 * We achieve this result by solving two key challenges: need for/to
-  * higher quantization precision at scales beyond 1B parameters 
+  * higher quantization precision at scales beyond 1B parameters
   * explicitly represent
     the sparse but systematic large magnitude outlier features
     that ruin quantization precision

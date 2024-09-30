@@ -75,7 +75,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Dimensional models were more recently adopted in NLP
   (Preoţiuc-Pietro+, 2016; Buechel and Hahn, 2017a; Buechel and Hahn, 2017b)
   * The circumplex model (Russell and Mehrabian, 1977)
-    puts affective states into a vector space of 
+    puts affective states into a vector space of
     * valence (corresponding to sentiment/polarity),
     * arousal (corresponding to a degree of calmness or excitement), and
     * dominance (perceived degree of control over a given situation)
@@ -105,7 +105,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     * ie both the reader’s and the writer’s emotional state.  Accessing this
 * More challenging is to acquire such data for other domains
 * distinguish between writers’ and readers’ emo (Buechel & Hahn 2017a, 2017b)
-* some of these assessment approaches exist in parallel to previous research in 
+* some of these assessment approaches exist in parallel to previous research in
 * nL standardized psychological instruments exist (Bradley and Lang, 1994)
 
 ## 2.3 domains and topics (Section 2.3), and different
@@ -180,10 +180,10 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   negation, punctuation, emoticons, or hashtags (Mohammad, 2012)
 * classifiers such as naive Bayes, SVM (Mohammad, 2012), MaxEnt and others
 * deep learning, SOTA models for emotion classification are often based on
-  * Schuff+ (2017) applied 
+  * Schuff+ (2017) applied
     * models from the classes of CNN, BiLSTM (Schuster and Paliwal, 1997), and
-      LSTM (Hochreiter and Schmidhuber, 1997) and 
-    * compared to linear classifiers (SVM and MaxEnt), where the 
+      LSTM (Hochreiter and Schmidhuber, 1997) and
+    * compared to linear classifiers (SVM and MaxEnt), where the
     * BiLSTM show best results with the most balanced precision and recall
   * Abdul-Mageed and Ungar (2017) claim the highest F1 following Plutchik’s
     emotion model with gated recurrent unit networks (Chung+, 2015)
@@ -329,7 +329,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   * before and after having applied the mapping to a unique set of emotions
     (see Table 4 in the Appendix A)
   * In many corpora, `joy` dominates, followed by `sadness, surprise, anger`
-    * Exceptions are SSEC, Electoral-Tweets, and EmoInt, 
+    * Exceptions are SSEC, Electoral-Tweets, and EmoInt,
       in which negative emotions are more frequent
       * SSEC, this is because of its origin as a stance dataset
       * Electoral-Tweets shows a polarizing nature of political debates with

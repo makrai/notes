@@ -6,7 +6,7 @@ ACL | IJCNLP | RepL4NLP 2021
 
 * supervised models for text clustering
   * difficult to directly optimize for clustering
-  * because clustering is a discrete process 
+  * because clustering is a discrete process
     * it is difficult to estimate meaningful gradient of a discrete function
   * so supervised clustering algorithms indirectly optimize for
     some continuous function that approximates the clustering process
@@ -48,7 +48,7 @@ ACL | IJCNLP | RepL4NLP 2021
 * we hypothesize the following:
   1. Instead of learning to solve some approximation of the clustering problem,
      we need to directly optimize for a clustering evaluation metric
-  2. Instead of sample-pairs in case of pairwise constraints 
+  2. Instead of sample-pairs in case of pairwise constraints
     or triplets in case of Triplet-loss, we can
     make efficient and scalable use of the available training data by
     presenting all interactions between a set of data points
@@ -133,6 +133,6 @@ ACL | IJCNLP | RepL4NLP 2021
     hierarchical (fine-grained) benchmarks. We train and evaluate our models on
     both flavors of the dataset.
 
-## 4.2 evaluation paradigm and present 
+## 4.2 evaluation paradigm and present
 
 ## 4.3 experimental results that demonstrate efficacy of the representation

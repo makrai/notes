@@ -8,7 +8,7 @@ arXiv:1911.02499
   with a corpus with categorical emotion annotations
   * continuous dimensions of valence, arousal, and dominance (VAD)
   * trained by minimizing the Earth Mover's Distance (EMD) loss between
-    the predicted VAD score distribution and 
+    the predicted VAD score distribution and
     the categorical emotion distributions sorted along VAD
   * can simultaneously classify the emotion categories and predict VAD scores
     for a given sentence
@@ -34,9 +34,9 @@ arXiv:1911.02499
     * could benefit
       * clinical NLP (Desmet and Hoste, 2013; Sahana and Girish, 2015),
       * emotion regulation such as psychotherapy (Torre and Lieberman, 2018)
-        * 'affect labeling': analyzing the client’s utterance and 
+        * 'affect labeling': analyzing the client’s utterance and
           acknowledging the negative emotion as ‘neglected’ rather than ‘sad’,
-          would reduce negative physiological, behavioral, and psycho responses 
+          would reduce negative physiological, behavioral, and psycho responses
           resulting from that emotional state
 * lack of annotated resources
   * a small sentence-level corpus with full VAD annot (Buechel and Hahn, 2017),
@@ -127,10 +127,10 @@ arXiv:1911.02499
 
 * 58,009 reddit comments with 28 emotion labels including neut (Demszky+ 2020)
 * hE the original dataset with 28 emotion labels has
-  large disparity in terms of emotion frequencies 
+  large disparity in terms of emotion frequencies
   (admiration is 30 times more frequent that grief )
 * To reduce the side-effects from this property, we choose the ‘Ekman’ option
-  of the dataset provided by the authors which consists of 
+  of the dataset provided by the authors which consists of
   * 7 emotion labels including neutral class
 * We use pre-splits of train, valid, test set of the dataset
 
@@ -147,7 +147,7 @@ arXiv:1911.02499
 
 ### 3.2.1 "Zero-shot" (transfer) VAD Prediction
 
-* not trained over the EmoBank train-set, only 
+* not trained over the EmoBank train-set, only
   using the EmoBank test-set for evaluation
 * could be interpreted as how much a model can generalize the categorical
   emotions into the continuous VAD space
@@ -213,8 +213,8 @@ arXiv:1911.02499
   * adversarial learning (Zhu+ 2019),
   * ensemble learning (Akhtar+ 2019)
 * sentences annotated with basic categorical emotions for VAD score prediction
-  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007; 
-   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017; 
+  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
+   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
    Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
   * more common than VAD
   * commonly used for emotion classification

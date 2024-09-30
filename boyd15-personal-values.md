@@ -54,9 +54,9 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
   * Benevolence (Benev)
   * Universalism (Univ)
 * Schwartz’s 10-value model has seen great success in psychological research
-  * The basic circumplex model has been applied to the understanding of 
+  * The basic circumplex model has been applied to the understanding of
     culture (Schwartz 1994; 2004), religion (Schwartz and Huismans 1995),
-    cognitive development (Bubeck and Bilsky 2004), and 
+    cognitive development (Bubeck and Bilsky 2004), and
     politically-motivated behaviors (Caprara+ 2006), to name but a few domains
   * Schwartz Value Survey (SVS)
     * the vast majority of research has been built upon the SVS
@@ -90,7 +90,7 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
     * “humility” <~ “play down my achievements or talent”
 * how to measure behaviors efficiently and effectively
   * problem with Self-reports of behaviors via forced choice questionnaires
-    * the same as other self-report measures: the questionnaires 
+    * the same as other self-report measures: the questionnaires
     * only questions that researchers think to ask. By adopting such an
     * potentially skewed and inaccurate structure on behavioral patterns. These
     * features are intractable by closed-format self-report questionnaires. In
@@ -150,7 +150,7 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
   assign integers in the range [-1,7] to the 57 items of the SVS:
   how important they perceived them to be as principles in their own lives
   * higher numbers indicate greater personal importance, Likert-type scale
-  * Scores for the ten values were then calculated by taking the mean 
+  * Scores for the ten values were then calculated by taking the mean
     * centering (Schwartz 2009) to address respondents’ diffs in scale use
   * Tasks were presented in a randomized fashion between participants
   * Participants were allowed to take as much time as needed to complete each

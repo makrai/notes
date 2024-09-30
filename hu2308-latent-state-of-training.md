@@ -155,7 +155,7 @@ arXiv:2308.09543 [cs.LG] Under review as submission to TMLR
   * convr time: the first timestep that evaluation accuracy crosses a threshold
   * threshold to be a value slightly smaller than the maximum eval accuracy
     (see Section 3.4)
-    * We use linear regression to predict convergence time from P̂ 
+    * We use linear regression to predict convergence time from P̂
     * Here, we are not forecasting when a model will converge from earlier
       timesteps; rather, we are simply using linear regression to learn a
       function between latent states and convergence time

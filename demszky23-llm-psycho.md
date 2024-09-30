@@ -149,7 +149,7 @@
   accessible to the consumer through intuitive interfaces
 * Example Python packages include:
   * openai: a Python interface over OpenAI’s API endpoints
-  * DLATK: a human text analysis package written in Python that 
+  * DLATK: a human text analysis package written in Python that
     * supports transformer-based models from Hugging Face + other models
   * langchain: a Python framework to develop LLM-powered applications, which
     * supports various LLMs, including open-source models hosted in HuggingFace
@@ -158,7 +158,7 @@
 * Example R packages include:
   * TheOpenAIR: an R package to integrate OpenAI’s GPT models into R workflows
   * askgpt: another R package built around OpenAI APIs to access the GPT models in R
-  * reticulate: a Python interface written in R that 
+  * reticulate: a Python interface written in R that
     * allows us to import Python modules and call functions, which
       can be used to work with LLaMA and other LLMs, and langchain
   * gptstudio and gpttools: RStudio add-ins that incorporate LLMs into R programming

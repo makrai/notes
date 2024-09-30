@@ -7,7 +7,7 @@ Beth Levin, Malka Rappaport Hovav
 * We focus on the last two approaches
 * sentience is sometimes implicated in argument realization
   * cannot always be subsumed under causal notions or in aspect
-* the term “event structure” is now widely used to refer to 
+* the term “event structure” is now widely used to refer to
   the lexical semantic representation which determines argument realization.
   * consensus that such representations encode properties of events.
   * hE fundamental differences among the representations that have been
@@ -34,14 +34,14 @@ Beth Levin, Malka Rappaport Hovav
      “transmission of force” between these participants play a major role. We
 * for each proposal, illustrate the types of lexical semantic representations
   proposed to encode the relevant facets of an event.  Although these
-  * not always developed to account for argument realization, it is 
-    nL possible to compare how each fares in this respect.  Our 
+  * not always developed to account for argument realization, it is
+    nL possible to compare how each fares in this respect.  Our
   * Our concerns.  Primary: how well each determins the subject & direct object
     * and the morphosyntactic expression of the subject and object.  We briefly
     * predictions concerning the realization of arguments as obliques;
       * for fuller studies in several theoretical frameworks of this question
         see Croft (1991), Jolly (1993), Markantonatou and Sadler (1995), and
-        Wechsler (1995). We also consider 
+        Wechsler (1995). We also consider
     * how each approach deals with argument alternations
 * There are several versions of each approach, and as we cannot review all in
   * we focus on what is common to most instantiations of a particular approach,
@@ -53,33 +53,33 @@ Beth Levin, Malka Rappaport Hovav
   underlying the assignment of semantic roles is found in Gruber (1965), who
   * an explicitly localist approach to the representation of events.  The basic
   * events involving motion and location in space are central to the construal
-    of all events and that 
+    of all events and that
     * the machinery used for representing motion and location events is
       harnessed for the description of events which are not obviously events
-      of spatial motion and location. It is 
+      of spatial motion and location. It is
   * Jackendoff (1972, 1976, 1983, 1987, 1990b) who formalizes and most fully
     develops the localist approach to event structure representation, so we
   * see the work of J M Anderson (1971, 1977) for another localist approach,
   * van Voorst (1993) combines facets of the causal and localist approaches.
-  * Jackendoff’s earliest work (1972) makes use of semantic role lists , 
+  * Jackendoff’s earliest work (1972) makes use of semantic role lists ,
   * he early on adopted a predicate decomposition approach to lexical semantics
     * predicate decompositions is not necessary for a localist approach.
   * Anderson’s approach, which is more strictly localist than Jackendoff’s,
-    * semantic role lists, using 
+    * semantic role lists, using
     * roles that are defined in terms of combinations of features.
 * two major types of events: motion and location events; each type has its own
   * Location events involve a thing & a location (eg The vase sat on the shelf)
   * motion events involve a thing and the path that it travels along (eg The)
   * The moving or located entity is known as the theme (see section 2.4), and
     * every event must have a theme.  Jackendoff further distinguishes between
-  * two types of locational verbs: those which describe 
-    * states (eg the verb be and all stative verbs) and 
+  * two types of locational verbs: those which describe
+    * states (eg the verb be and all stative verbs) and
     * those which, like motion verbs, are eventive (eg _remain, stay_ when
       predicated of animates)
   * The predicates go, be, and stay, respectively, are used to represent
     motional verbs and the two types of locational verbs – stative and
   * causative events that embed events of each of these three types.
-    (1) a. The rock fell from the roof to the ground.  
+    (1) a. The rock fell from the roof to the ground.
         b. Linda lowered the rock from the roof to the ground.
         c. Linda dropped the rock from the roof to the ground.
         (Jackendoff 1976: 104, (35))
@@ -135,7 +135,7 @@ Beth Levin, Malka Rappaport Hovav
   argument realization
 
 ### 4.2.2 an overview of the properties which are common to most theories of
-argument realization which take aspect to be the dominant factor 
+argument realization which take aspect to be the dominant factor
 
 ### 4.2.3 the evidence which is commonly taken to support the aspectual
 approach to argument realization
@@ -148,7 +148,7 @@ approach to argument realization
 
 * takes causal notions to be central to determining argument realization. There
   * Croft (1990, 1991, 1994, 1998), DeLancey (1984, 1985, 1990, 1991),
-    Jackendoff (1990b), Langacker (1987, 1990, 1991, 1993), and 
+    Jackendoff (1990b), Langacker (1987, 1990, 1991, 1993), and
     van Voorst (1988, 1993, 1995)
     * most are inspired by Talmy’s work on causation (1976, 1988)
   * For presentational purposes, we focus on Croft’s formulation of this
@@ -160,31 +160,31 @@ approach to argument realization
     * unclear to us whether there is a conceptual affinity between
       the causal approach to event conceptualization and
       the theoretical underpinnings of these frameworks; we leave this open
-* models events as causal chains, consisting of a series of segments, 
+* models events as causal chains, consisting of a series of segments,
   * each segment relates two participants in the event; a single participant
     may be involved in more than one segment. Verbs name segments of such a
     causal chain. The main features of an event conceptualized in causal chain
     terms, as set out by Croft (1991: 173), are listed below. (Croft adds
     additional assumptions later in the book [1991: 269], but the assumptions
-    cited here are the central ones.) 
-  (49) 
+    cited here are the central ones.)
+  (49)
     1. a simple event [ie what is named by the verb] is a (not necessarily
-       atomic) segment of the causal network; 
-    1. simple events are nonbranching causal chains; 
-    1. a simple event involves transmission of force; 
+       atomic) segment of the causal network;
+    1. simple events are nonbranching causal chains;
+    1. a simple event involves transmission of force;
     1. transmission of force is asymmetric, with distinct participants as
        initiator and endpoint (Croft 1991: 173)
 
 According to Croft (1991: 173) “
-* The prototypical event type that fits this model is 
+* The prototypical event type that fits this model is
   unmediated volitional causation that brings about a change in the entity
   acted on (ie, the manifestation of the transmission of force), that is, the
   prototypical transitive event ␁ ␁ ␁ ” (see also section 1.5). This model is
   schematized in (50).  (Croft [1994: 37, n. 5])
-* notation: 
-  * a dot indicates a participant; an 
-  * arrow indicates a relationship of transmission of force, which 
-    can be described by the capitalized label just below it; a 
+* notation:
+  * a dot indicates a participant; an
+  * arrow indicates a relationship of transmission of force, which
+    can be described by the capitalized label just below it; a
   * line without an arrowhead indicates a noncausal (stative) relation; a
   * parenthesized dot indicates that it is the same participant as in the
     preceding causal (or noncausal) segment

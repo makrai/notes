@@ -1,7 +1,7 @@
 K-EmoCon, a multimodal sensor dataset
   for continuous emotion recognition in naturalistic conversations
 Cheul Young Park, Narae Cha, Soowon Kang, Auk Kim, Ahsan Habib Khandoker,
-  Leontios Hadjileontiadis, Alice Oh, Yong Jeong, & Uichin Lee 
+  Leontios Hadjileontiadis, Alice Oh, Yong Jeong, & Uichin Lee
 Scientific Data volume 7, Article number: 293 (2020)
 
 # Abstract
@@ -10,7 +10,7 @@ Scientific Data volume 7, Article number: 293 (2020)
 * low-cost mobile sensors
 * lack of naturalistic affective interaction data
   * Most existing emotion datasets were collected in constrained environments
-* K-EmoCon is a multimodal dataset 
+* K-EmoCon is a multimodal dataset
   * comprehensive annotations of continuous emotions during natural conversat
   * multimodal measurements, including
     * audiovisual recordings, EEG, and peripheral physiological signals,
@@ -28,10 +28,10 @@ Scientific Data volume 7, Article number: 293 (2020)
 * facial expressions are compound^14, relative^15, and misleading^16
   * facial expressions lack reliability, specificity, and generalizability^17,
   * contextual dependency^18,19,20 and individual variability of emotions^21,22
-* K-EmoCon, a multimodal dataset acquired from 
+* K-EmoCon, a multimodal dataset acquired from
   * 32 subjects participating in 16 paired debates on a social issue
   * physiological sensor data collected with 3 off-the-shelf wearable devices,
     audiovisual footage of participants during the debate, and
     continuous emotion annotations
-* the first dataset with emotion annotations from all possible perspectives: 
+* the first dataset with emotion annotations from all possible perspectives:
   subject him/herself, debate partner, and external observers

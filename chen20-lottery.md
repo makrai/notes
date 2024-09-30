@@ -36,7 +36,7 @@ Codes available at https://github.com/VITA-Group/BERT-Tickets
   * Self-supervised pre-trainingmay again become a standard practice across
     deep learning as it was in the past (Erhan+ 2010)
   [10] D Erhan, Y Bengio, A Courville, P-Antoine Manzagol, P Vincent, S Bengio
-  Why does unsupervised pre-training help deep learning? 
+  Why does unsupervised pre-training help deep learning?
   Journal of Machine Learning Research, 11(Feb):625–660, 2010
 * training smaller subnetworks without sacrificing performance [11–16]
   * lottery ticket hypothesis (LTH) [16] demonstrated that small-scale networks
@@ -64,7 +64,7 @@ Codes available at https://github.com/VITA-Group/BERT-Tickets
     * nL the resulting subnetworks transfer between related tasks [22–24]
   * These two themes are also the signature attributes of BERT models:
     * If we treat the pre-trained weights as our initialization,
-    * are there matching subnetworks for each downstream task? 
+    * are there matching subnetworks for each downstream task?
     * Do they transfer to other downstream tasks?
     * Are there universal subnetworks that can transfer to many tasks
       with no degradation in performance?

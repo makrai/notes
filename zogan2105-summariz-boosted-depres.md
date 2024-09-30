@@ -17,4 +17,4 @@ arXiv:2105.10878 [cs.LG]
   sequence of all user tweets
   * novel deep learning framework comprising of a unified learning machinery
   * Convolutional Neural Network (CNN) coupled with attention-enhanced GRU
-* better empirical performance than existing strong baselines 
+* better empirical performance than existing strong baselines

@@ -238,7 +238,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
         and a dropout layer; this is then followed by a LSTM layer and two fully
         connected layers
       * To help overcome imbalance issues: random down sampling of the non
-        depression class when creating their mini-batch samples 
+        depression class when creating their mini-batch samples
       * outperformed the baseline approach on development set 0.52 (0.70, for
         ‘not-depressed’); however, no test set score was given in the paper
         [129]

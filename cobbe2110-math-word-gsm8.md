@@ -15,12 +15,12 @@ Cite as: 	arXiv:2110.14168 [cs.LG]
   * significantly improves performance on GSM8K, and we provide strong
   * scales more effectively with increased data than a finetuning baseline
 
-# 1 Intro 
+# 1 Intro
 
 * Kaplan+ (2020) describe the consistent benefits of increasing model size,
   * scaling trends that hold across many orders of magnitude
   * hE, even the largest models falter in multi-step mathematical reasoning
-    (Hendrycks+ 2021) 
+    (Hendrycks+ 2021)
   * high sensitivity to individual mistakes (Shen+ 2021a)
   * generation: autoregressive models have no mechanism to correct their errors
   * the MATH dataset (Hendrycks+ 2021): challenging distribution This evidence
@@ -119,7 +119,7 @@ Cite as: 	arXiv:2110.14168 [cs.LG]
       * we focus attention on the space of natural language solutions, as
         this is a richer and more general solution format than pure math exps.
         * enables our models to develop verbal analytical skills and to produce
-        * more readily interpretable by humans. 
+        * more readily interpretable by humans.
       * we provide evidence that verifiers scale very favorably with data
       * we use separate generator and verifier networks,
         in order to prevent the generator from overfitting.

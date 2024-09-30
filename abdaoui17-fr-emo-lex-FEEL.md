@@ -10,7 +10,7 @@ http://www.lirmm.fr/lirmm_eng/research/teams/advanse/prototypes/fee
 * based on the semi-automatic translation and expansion to synonyms of the
   English NRC Word Emotion Association Lexicon (NRC-EmoLex)
   * First, 6 online translators have been automatically queried
-  * Then, a human professional translator manually validated the entries 
+  * Then, a human professional translator manually validated the entries
     * agreed with more than 94 % of the pre-validated entries (those found by a
       majority of translators) and less than 18 % of the remaining entries
 * Annotating a subset of terms by three different annotators shows that the

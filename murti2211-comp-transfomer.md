@@ -27,4 +27,4 @@ arXiv:2211.01288 [cs.CL]
   become more tree-like over the course of training,
   in some cases unsupervisedly recovering the same trees as supervised parsers.
   These trees, in turn, are predictive of model behavior, with more tree-like
-  models generalizing better on tests of compositional generalization. 
+  models generalizing better on tests of compositional generalization.

@@ -50,7 +50,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * it is most prominent when the training data available for the target task
     is relatively small and the classification task is of a topical nature
 * future work
-  * additional embedding space and/or more clustering techniques 
+  * additional embedding space and/or more clustering techniques
   * co-training (Blum and Mitchell, 1998) methods
   * tuning the number of clusters
   * using the labeled data available for fine-tuning as anchors for the
@@ -107,7 +107,7 @@ ACL 2022 arXiv:2203.10581 [cs.CL]
   * Normalized Mutual Information (NMI) between sIB labels and the target task
     labels, calculated over the entire training set, versus
   * the gain of using BERT IT:CLUST,
-    reflected as the reduction in classif error rate between BERT 
+    reflected as the reduction in classif error rate between BERT
     BERT IT:CLUST, at the extreme case of 64 fine-tuning samples
   * Evidently, in datasets where the NMI is around zero, BERT IT:CLUST does
     not confer a clear benefit; conversely,

@@ -33,7 +33,7 @@ http://ttic.uchicago.edu/~wieting
   * Turian+ (2010) Word representations: A general method for semi-supervised
   * Socher+ (2011) Dynamic pooling & unfolding recursive autoencod for paraphr
   * Kim, (2014) CNNs for sentence classification EMNLP
-  * Bansal+ (ACL 2014) continuous word representations for dependency parsing 
+  * Bansal+ (ACL 2014) continuous word representations for dependency parsing
   * Tai+ (2015) Improved semantic representations from tree-structured LSTMs
 * representations for word sequences such as phrases or sentences based on
   * simple operations like addition

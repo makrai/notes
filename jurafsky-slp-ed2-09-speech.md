@@ -43,7 +43,7 @@ MFCC, the mel frequency cepstral coefficients
 * conferences
   * annual INTERSPEECH conference,
     * called ICSLP and EUROSPEECH in alternate years
-  * the annual IEEE International Conference on 
+  * the annual IEEE International Conference on
     Acoustics, Speech, and Signal Processing (ICASSP)
 * Journals include
   * Speech Communication,

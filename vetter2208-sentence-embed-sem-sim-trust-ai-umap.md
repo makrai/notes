@@ -10,7 +10,7 @@ arXiv:2208.04608 [cs.IR]
     same problem but use different terminologies. In other words, the problem
     * group problem descriptions (a.k.a. issues) with the same semantic meaning
 * we show how we employe sentence embeddings and semantic textual similarity,
-  * domain: assessing the trustworthiness of an AI system used in healthcare. 
+  * domain: assessing the trustworthiness of an AI system used in healthcare.
 
 ## 2.3
 
@@ -18,7 +18,7 @@ arXiv:2208.04608 [cs.IR]
   * dimensionality reduction, as clustering algorithms are known to have
     problems when working with high-dimensional vectors. We used UMAP [22] to
 
-## 3.3 
+## 3.3
 
 * The best results were achieved with a two-step dimensionality reduction with
   * from 768 dimensions of the sentence embeddings to 15 and then to 2.

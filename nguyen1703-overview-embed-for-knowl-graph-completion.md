@@ -19,7 +19,7 @@ standard benchmark datasets FB15k, WN18, FB15k-237, WN18RR, FB13 and WN11
   Graph.  Nowadays, KBs are used in a number of commercial
 * applications including
   * search engines
-  * NLP tasks such as 
+  * NLP tasks such as
     * question answering (Ferrucci 2012; Fader+ 2014)
     * word sense disambiguation (Navigli and Velardi 2005; Agirre+ 2013)
     * semantic parsing (Krishnamurthy and Mitchell 2012; Berant+ 2013)

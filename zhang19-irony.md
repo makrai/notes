@@ -6,7 +6,7 @@ Information Processing & Management Volume 56, Issue 5, September 2019
 
 * Take advantage of the readily available sentiment resources
   to identify implicit incongruity for irony detection
-* Transferring deep sentiment features to a neural attention model 
+* Transferring deep sentiment features to a neural attention model
   * an effective approach to extract patterns of implicit incongruity
 * Evaluate irony detection models using
   human-annotated and automatic hashtag-labeled datasets separately

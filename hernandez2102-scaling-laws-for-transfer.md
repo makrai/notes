@@ -20,4 +20,4 @@ arXiv:2102.01293 [cs.LG]
       symmetric sense)
     * pre-training effectively multiplies the fine-tuning dataset size.
     * Transfer, like overall performance, scales predictably in terms of
-      parameters, data, and compute. 
+      parameters, data, and compute.

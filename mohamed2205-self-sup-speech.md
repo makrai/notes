@@ -13,7 +13,7 @@ this paper is older than whisper (Radford 23)
   * Other approaches rely on multi-modal data for pre-training,
     mixing text or visual data streams with speech
 * closely related
-  * acoustic word embedding and learning with zero lexical resources, 
+  * acoustic word embedding and learning with zero lexical resources,
     * both have seen active research for many years
     * we review approaches for self-supervised speech representation learning
 * many current methods focus on automatic speech recognition as a downstream
@@ -27,7 +27,7 @@ this paper is older than whisper (Radford 23)
 
 ## B. Generative approaches
 
-### 1) Motivation: the pretext task 
+### 1) Motivation: the pretext task
 
 * task: to generate, or reconstruct, the input data based on some limited view.
 * This includes predicting future inputs from past inputs, masked from

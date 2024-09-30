@@ -107,7 +107,7 @@ Our implementation is available at https://github.com/uw-mad-dash/AutoFreeze
     Character-level convolutional networks for text classification
     NeurIPS 2015.
     [55] C. Sun, X. Qiu, Y. Xu, and X. Huang
-    How to fine-tune BERT for text classification? 
+    How to fine-tune BERT for text classification?
     China National Conference on Chinese Computational Linguistics 2019
   * sentiment analysis on Yelp Full dataset [69] and IMDb dataset [32]
   * question answering on SQuAD2.0 dataset [46]

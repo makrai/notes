@@ -1,7 +1,7 @@
 Evidence against linguistic relativity in Chinese and English:
   A case study of spatial and temporal metaphors
 Tse Chi-Shing & Jeanette Altarriba (2008)
-Journal of Cognition and Culture 8: 338-357. 
+Journal of Cognition and Culture 8: 338-357.
 
 # Abstract
 

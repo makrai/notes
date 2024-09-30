@@ -26,7 +26,7 @@ Street(https://bertlang.unibocconi.it/)
   * great capabilities in zero-shot cross-lingual tasks (Pires+ 2019)
 * models are trained on a particular language and
   tested on a specific domain and task
-* not been clearly demonstrated 
+* not been clearly demonstrated
   whether the advantage of a lang-spec model is worth the comput
 * different configurations and architectural variants
   * original BERT model was trained using the WordPiece tokenizer (Wu+ 2016),

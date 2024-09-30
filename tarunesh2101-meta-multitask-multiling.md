@@ -43,11 +43,11 @@ EACL 2021 arXiv:2101.10368 [cs.CL]
       * this is exactly what we find with our meta-learned model and is borne
 * We also find that as the model progressively learns, the meta-learning based
   models for the tasks requiring deeper semantic analysis benefit more from
-  joint learning compared to the shallower tasks 
+  joint learning compared to the shallower tasks
 * how to sample effectively from different tasks and languages also becomes
   * sampling strategies, including a parameterized sampling strategy, to assess
     the influence of sampling across tasks and languages on our meta-learned
-    model 
+    model
 * Our main contributions in this work are threefold:
   * a meta-learning approach that enables effective sharing of parameters
     across multiple tasks and multiple languages

@@ -58,10 +58,10 @@ a cikk során két értelemben szerepel:
   relationships and _linear order_, whereas
   Harris factors out linear order explicitly
 * It is only more recently that categorial grammar has acquired the technical
-  means to investigate such factorizations 
+  means to investigate such factorizations
   * weighted piecewise testable (Morrill 1994; Moortgat 1995)
 
-### Likelihood 
+### Likelihood
 
 > each word has a particular and roughly stable likelihood of occurring as
 > argument, or operator, with a given other word, though there are many cases
@@ -77,7 +77,7 @@ a cikk során két értelemben szerepel:
     fillers, and which, thus, correspond more closely to the usual notion of
     selectional restriction
 
-### Reduction 
+### Reduction
 
 > It consists, for each language, of a few speci­fiable types of reduction
 > ... what is reduced is the high-likelihood ... material ... ; an example is
@@ -97,7 +97,7 @@ a cikk során két értelemben szerepel:
 > Since the relation that makes sentences out of words is a partial order,
 > while speech is linear, a linear projection is involved from the start
 
-### Összefoglalás 
+### Összefoglalás
 
 * Thus, linguistic events involve the generation of basic
   configurations|unordered simple clauses|whose structure is determined by the

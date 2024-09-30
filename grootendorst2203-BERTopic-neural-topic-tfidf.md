@@ -44,7 +44,7 @@ python implementation
     representative of that cluster, and thereby a topic
     * hE a cluster will not always lie within a sphere around a clust centroid
     * Sia+ (2020) attempt to overcome this issue by re-ranking topic words
-      based on their frequency in a cluster, 
+      based on their frequency in a cluster,
       hE the initial candidates are still generated from a centroid-based persp
 * In this paper, we introduce BERTopic, a topic-model that leverages
   clustering techniques and a class-based variation of TF-IDF

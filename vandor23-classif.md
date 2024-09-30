@@ -2,7 +2,7 @@ huBERT alapú sziámi neur háló architek elemzése ügyfélszolg emailek klass
 Vándor Péter1 és Csáki Csaba1
 XIX. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2023. január 26–27.
 
-# Kivonat: 
+# Kivonat:
 
 * Az itt bemutatott kutatás célja kettős
   * egy valós ügyfélszolgálati probléma (nagy mennyiségű emailek automatikus
@@ -14,7 +14,7 @@ XIX. Magyar Számítógépes Nyelvészeti Konferencia Szeged, 2023. január 26�
   paramétereinek változtatásával növelhető volt a pontosság és az alkalmazott
   * a kezdeti alig 70%-os helyett közel 95%-os teljesítmény volt elérhető.
 
-## 3.3 
+## 3.3
 
 * Az eredeti multiklasszifikációs probléma megoldása érdekében generáltunk egy
   minden osztályt pontosan egyszer magába foglaló támogató halmazt

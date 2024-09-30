@@ -34,7 +34,7 @@ https://github.com/Moradnejad/ColBERT-Using-BERT-Sentence-Embedding-for-Humor-De
   transformation of an expectation into nothing [23]
 * main theories on the structure of a joke involves two or three stages of
   storytelling that concludes with a punchline [24], [25]
-  * Punchline is the last part of a joke that destroys the expectations 
+  * Punchline is the last part of a joke that destroys the expectations
     and brings humor for its incongruity
 * Raskin [26] presented Semantic Script Theory of Humor (SSTH),
   * a detailed formal semantic theory of humor

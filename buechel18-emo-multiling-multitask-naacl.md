@@ -228,9 +228,9 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * We use leaky ReLU activation (LReLU) as nonlinearity (Maas+ 2013)
 * dropout (Srivastava+ 2014) is applied during training
 * 15, 000 iterations (well beyond convergence on each data set)
-* Adam optimizer (Kingma and Ba, 2015) 
+* Adam optimizer (Kingma and Ba, 2015)
   * .001 base learning rate,
-  * batch size of 128 
+  * batch size of 128
   * Mean-Squared-Error loss
   * weights are initialized from a normal distri with a standard deviation .001
   * biases are uniformly initialized as .01
@@ -270,7 +270,7 @@ https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
 * Valence and Arousal for ES+ [?] and ZH, VAD for the others
 * our proposed MTLNN model outperforms all other approaches in each condition
 * improvements are especially pronounced on smaller data sets
-  containing 1--2 thousand entries (EN, ES, IT, PT, ID) 
+  containing 1--2 thousand entries (EN, ES, IT, PT, ID)
   * ~10%-points improvement over the respective second-best system
 * relative ordering of the affective dimensions,
   * Valence dimension are usually much higher than for Arousal and Dominance

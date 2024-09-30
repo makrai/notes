@@ -7,10 +7,10 @@ EMNLP 2023 arXiv:2301.10472 [cs.CL]
 
 * This paper proposes XLM-V, an XLM-R-style model covering 100 languages that
   * pre-trained with a 1M vocabulary
-  * To create the vocabulary, 
-    * vocabularies of languages are first clustered (Chung+ 2020), 
+  * To create the vocabulary,
+    * vocabularies of languages are first clustered (Chung+ 2020),
     * clusters are allocated capacity corresponding to their average log prob
-      (Zheng+ 2021), and 
+      (Zheng+ 2021), and
     * sentencepiece models are trained for each cluster and then combined
 * While pre-training with a 1M vocabulary is 2.5x slower than with a 250k
   * outperforms a (reimplemented) XLM-R

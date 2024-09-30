@@ -377,7 +377,7 @@ arXiv:2003.08271 [cs.CL]
   * Siddhant Garg, Thuy Vu, and Alessandro Moschitti
     Tanda: Transfer and adapt pre-trained transformer models
       for answer sentence selection
-      In AAAI, 2019.  
+      In AAAI, 2019.
   * large improvement for BERT, GPT, and ELMo
 
 ### Multi-task fine-tuning

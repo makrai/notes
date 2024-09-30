@@ -81,7 +81,7 @@ the SepFormer will be made available within the SpeechBrain toolkit
   * SI-SNRi of 22.3 dB on the standard WSJ0-2mix dataset
   * SOTA performance of 19.5 dB SI-SNRi on the WSJ0-3mix dataset
   * processes all the time steps in parallel
-  * also competitive performance when 8x downsampling the encoded repr 
+  * also competitive performance when 8x downsampling the encoded repr
     ~> significantly faster and less memory demanding
     than the latest RNN-based separation models
 * future: different transformer architectures

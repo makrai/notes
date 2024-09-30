@@ -15,7 +15,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 * we follow the guidelines of the Depression Classification Sub-Challenge (DCC)
   at the 2016 Audio-Visual Emotion Challenge (AVEC) [10]
   * we focus on audio information
-  * ensemble of Convolutional Neural Networks (CNNs) 
+  * ensemble of Convolutional Neural Networks (CNNs)
   * inputs are speech log-spectrograms
   * As in the DCC sub-challenge, the English-speakers database DAIC-WOZ [13]
 
@@ -33,7 +33,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
   * combine visual cues with other types of information, mainly acoustic,
     * usually outperform the individual modalities
     * [18]: fusing the audio and visual information with neural network-based
-      hierarchical classifiers and SVR ensembles 
+      hierarchical classifiers and SVR ensembles
       * successfully assessed on the AVEC-2013 [8] challenge
     * [19] implements a combination of the audio and visual features with a
       Decision Tree as classifier and was the winner of the AVEC-2016
@@ -74,9 +74,9 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 * many problems in computer vision have been solved with CNNs
   * handwritten digits, traffic sign classification, people detection, or
     image recognition for health applications
-* audio-related tasks 
+* audio-related tasks
   * automatic speech recognition [36,37,38,39],
-  * speech emotion recognition [40,41] 
+  * speech emotion recognition [40,41]
   * acoustic scene classification [42,43]
 * DepAudionet (Ma+ 2016): a speech-based depression detection system
   * uses One-Dimensional CNN (1d-CNN), Long Short-Term Memory (LSTM) and
@@ -93,7 +93,7 @@ Entropy 2020, 22(6), 688; https://doi.org/10.3390/e22060688
 
 ## Our contributions; Privacy
 
-* our two main contributions 
+* our two main contributions
   * a refined 1d-CNN architecture
     * based on the aforementioned DepAudionet model [44]
     * optimized by selecting the best config from an exhaustive experiment

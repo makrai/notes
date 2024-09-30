@@ -55,7 +55,7 @@ https://github.com/viking-sudo-rm/norm-growth
     approaches a saturated network (Merrill+ 2020)
     * a restricted network variant whose discretized reprs are understandable
       in terms of formal langs & automata
-  * Empirically, we find that internal representations of transformers 
+  * Empirically, we find that internal representations of transformers
     * pretrained: approximate their saturated counterparts, but for
     * randomly initialized: do not
     * suggests that the norm growth implicit in training

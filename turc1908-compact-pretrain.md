@@ -2,7 +2,7 @@ Well-Read Students Learn Better: On the Importance of Pre-training Compact Model
 Iulia Turc, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
 arXiv:1908.08962 [cs.CL] Comments: 	Added comparison to concurrent work
 
-* model compression techniques on pre-trained language representations 
+* model compression techniques on pre-trained language representations
   (Sun+ 2019; Sanh, 2019).
 * hE, the baseline of just pre-training and fine-tuning compact LMs overlooked
 * we first show that
@@ -21,7 +21,7 @@ arXiv:1908.08962 [cs.CL] Comments: 	Added comparison to concurrent work
 * these variables have a compound effect
   even when sequentially applied on the same data
 * To accelerate future research, we will make our 24 pre-trained miniature BERT
-  models publicly available. 
+  models publicly available.
 
 # 1 Intro
 
@@ -71,7 +71,7 @@ arXiv:1908.08962 [cs.CL] Comments: 	Added comparison to concurrent work
     * pre-trained students can leverage depth much better than width;
       in contrast, this property is not visible for randomly-initialized models.
   * data
-    * we vary 
+    * we vary
       the amount of unlabeled data, as well as
       its similarity to the labeled set
     * Interestingly, Pretrained Distillation is more robust to these variations

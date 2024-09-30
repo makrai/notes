@@ -68,7 +68,7 @@ ACL | IJCNLP 2021
   * machine translation (Hopkins and May, 2013) and
   * chatbot evaluation (Sedoc and Ungar, 2020)
 * Concurrent with/closest to our work
-  * Vania+ (2021) compare NLP test sets with IRT 
+  * Vania+ (2021) compare NLP test sets with IRT
   * Otani+ (2016), who rank machine translation subjects and compute
     correlations with gold scores
 * MartínezPlumed and HernándezOrallo (2020) use

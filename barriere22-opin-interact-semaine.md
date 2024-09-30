@@ -55,7 +55,7 @@ LREC 2022
     * crafted to contain affective phenomena, likely to be dense with opinions
 * links between the different affective phenomena are blurred (Munezero+ 2014)
   * nL the difference between emotion and opinion is pretty clear
-  * emotions are physiological 
+  * emotions are physiological
   * opinions are constructed and prominently based on objective and/or
     subjective probabilities of information about a topic, and not necessarily
     charged in emotion (Munezero+ 2014)
@@ -89,7 +89,7 @@ LREC 2022
 * baseline based on an ERC (Emotion Recognition in Conversation) SOTA model
   * a variant of the DialogueRNN of Majumder+ (2018) since it aims to detect an
     affective phenomenon in a conversation and is SOTA on the SEMAINE dataset
-* we used a subset of SEMAINE 
+* we used a subset of SEMAINE
   * 72 sessions, 5210 speech turns and 68,043 tokens, which has the
     annotations from AVEC and our annotations
   * the same documents Majumder+ (2018) used in the training and testing sets
@@ -109,6 +109,6 @@ LREC 2022
 * Our model using the RoBERTa embeddings improves greatly on the Valen & Arous
   * either regarding the MAE or the Pearson coefficient
   * The best results on opinion were obtained using a bimodal model
-    using the textual and the audio modalities.3 
+    using the textual and the audio modalities.3
   * ie DialogueRNN with RoBERTa embeddings is a strong baseline for
     Affective Phenomenon Recognition in Conversation (APReC)

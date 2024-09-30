@@ -16,4 +16,4 @@ TACL 2022; 10 257-273 arXiv:2106.15110 [cs.CL]
     * memorization of seen facts from the training time period, as well as
     * calibration on predictions about unseen facts from future time periods.
   * models trained with temporal context can be efficiently "refreshed"
-    as new data arrives, without the need for retraining from scratch 
+    as new data arrives, without the need for retraining from scratch

@@ -133,7 +133,7 @@ Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone,
     zero-mean Gaussian with standard deviation 10 −2 , truncated to two
     standard deviations. To analyze the impact of the initialization scale on
   * we test standard deviations in the interval [10 −7 , 1].  Figure 6
-  * on both datasets, the performance of adapters is robust for std < 10 −2 
+  * on both datasets, the performance of adapters is robust for std < 10 −2
   * hE when the init is too large, perform degrades, more substantially on CoLA
 * robustness of adapters to the number of neurons, we
   * re-examine the experimental data from Section 3.2.  We find that the

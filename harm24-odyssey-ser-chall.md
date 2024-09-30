@@ -59,7 +59,7 @@ Henry Härm; Tanel Alumae
 
 * For both emotion category and emotion attribute prediction
 * based on the Wav2Vec2BERT model shared by the Seamless4MT project [18]
-  * pre-trained on 4.5M hours of unlabeled audio data covering 
+  * pre-trained on 4.5M hours of unlabeled audio data covering
     > 143 languages, using self-supervised loss
   * the same architecture as Wav2Vec2.0 [7], but replaces the attention-block
     with a Conformer-block as introduced in [19]
@@ -72,7 +72,7 @@ Henry Härm; Tanel Alumae
     waveform. Wav2Vec2BERT uses Shaw-like position embeddings [20]
   * 24 Conformer layers with approximately 600M parameters
 * Wav2Vec2-BERT model was adapted into an emotion classification model by
-  aggregating its outputs with an attentive pooling layer, 
+  aggregating its outputs with an attentive pooling layer,
   followed by a fully connected layer featuring ReLU activation and BatchNorm,
   and the final output layer, corresponding to the emotion categories
   * This model categorizes emotions into eight primary classes, along with “O”
@@ -82,7 +82,7 @@ Henry Härm; Tanel Alumae
     rather than directly utilizing individual annotator labels
   * on-the-fly data augmentation was applied using point source noises and
     simulated room impulse responses (RIRs) from the MUSAN corpus
-  * training regimen spanning 10 epochs, with optimization via Adam, a 
+  * training regimen spanning 10 epochs, with optimization via Adam, a
     * peak learning rate of 10−4, weight decay 0.001 and an
     * effective batch size of 64
   * speed perturbation was applied to half of the training batches
@@ -97,7 +97,7 @@ Henry Härm; Tanel Alumae
     trained on these embeddings, excluding data labeled as “X” and “O” with
     feature normalization and dimensionality reduction to 15 using LDA
 * The training data is highly unbalanced with regard to the emo categories.
-  * hE the emotion distribution in evaluation data is uniform. Therefore, 
+  * hE the emotion distribution in evaluation data is uniform. Therefore,
   ~> we post-processed the trained logistic regression model to use uniform
   prior over the 8 emotion categories, by appropriately modifying the biases of
   the softmax layer
@@ -124,7 +124,7 @@ Henry Härm; Tanel Alumae
   a sequence classification head configured with three output features
   * a regression task with a loss function based on the mean CCC of V, A, and D
 * LoRA adapter is used (rank = 256, α = 256 and dropout = 0.1) for efficient
-  fine-tuning over 40 epochs, using AdamW optimizer, a 
+  fine-tuning over 40 epochs, using AdamW optimizer, a
   * learning rate of 2 × 10−5 and a batch size of 16
   * As LLaMA does not have a pad token we set it to be the same as EOS token
 * alternative method, we train a model using RoBERTa [21] as the backbone
@@ -192,7 +192,7 @@ Henry Härm; Tanel Alumae
 * we experimented with some additional pretrained models
 1. we finetuned the English SONAR speech encoder model [22] for emotion identif
   * SONAR speech encoders are based on the finetuned Wav2Vec2BERT model, with
-    an additional sentence embedding layer that is 
+    an additional sentence embedding layer that is
     trained to map spoken utterance embeddings into the same semantic space as
     the corresponding text-based sentence embeddings
     * The embedding layer uses simple mean pooling
@@ -203,7 +203,7 @@ Henry Härm; Tanel Alumae
       the SONAR-based model indeed outperforms Wav2Vec2-BERT based model
     * we also replaced logistic regression based classification of the
       utterance embeddings with PLDA-based scoring
-    * PLDA is a generative model and does 
+    * PLDA is a generative model and does
       not depend on the prior probability of the different categories in the
       training data, eliminating thus the need for the prior balancing step
 2. we finetuned the larger 70 billion parameter variant of the LLaMA2 model

@@ -13,7 +13,7 @@ https://github.com/yiren-jian/NonLing-CSE.
   * unpaired examples from another modality (eg sentences and unrelated
     image/audio data)
   * our model
-    * besides learning by the contrastive loss on text, our model 
+    * besides learning by the contrastive loss on text, our model
     * clusters examples from a non-linguistic domain (eg visual/audio) with a
       similar contrastive loss at the same time. The reliance of our framework
   * language-agnostic, enabling it to be widely applicable beyond English NLP.

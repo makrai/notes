@@ -62,7 +62,7 @@ Odyssey 2024
 * We: an ensemble system of 7 models
   * Each model takes in multi-modal features: audio and text
   * text repr (transcriptions) <~ automatic speech recognition (ASR) model [14]
-    * To enhance the quality of the ASR transcriptions, an 
+    * To enhance the quality of the ASR transcriptions, an
       error correction model is used in post-processing
   * all models share the same architecture
   * models trained independently with
@@ -151,8 +151,8 @@ Odyssey 2024
   encode dynamic information in features
 * only one transformer head in the layers
   * In order to avoid over-fitting
-* The transformer layers are followed by a mean pooling layer, 
-* then the utterance-level audio features and text features are concatenated.  
+* The transformer layers are followed by a mean pooling layer,
+* then the utterance-level audio features and text features are concatenated.
 * The concatenated features are processed by the two MLP modules
 * The softmax output of the final MLP produces class probabilities
 

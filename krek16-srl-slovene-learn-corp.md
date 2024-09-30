@@ -24,15 +24,15 @@ project Semantic Role Labeling in Slovene and Croatian.
     determining which today are already available for many languages, causing
     difficulties in cross-linguistic model semantic labeling should in our view,
     an effective system of criteria and indications for marking participatory
-    roles or, more precisely predikatno- argumentnih relationships 
+    roles or, more precisely predikatno- argumentnih relationships
     * to provide a set of categories, which is the most optimal, ie cover all
       (in our case Slovene) key participatory roles
     * does not contain categories that are excessively detailed or mutual
-      overlays, 
+      overlays,
     * be based primarily on semantic rather than on morphological, lexical or
-      syntactic properties, 
+      syntactic properties,
     * allow for formal description or usefulness of language technology
-      applications, and 
+      applications, and
     * to be as compatible with the categories and criteria applicable to other
       languages (cf Petukhov and Bunt, 2008: 39)
 * To this end, within the framework of the project of making the training
@@ -49,22 +49,22 @@ project Semantic Role Labeling in Slovene and Croatian.
 
 * In selecting the method of semantic tagging and semantic categories for
   determining Slovene We first analyzed the individual approaches that have
-  been developed and used for other languages, for example. 
-  * en: 
+  been developed and used for other languages, for example.
+  * en:
     PropBank (Palmer+ 2005), Verbnet (Kipper+ 2006) and FrameNet (Backer+ 1998)
-  * sp: Ancor (Taul+ 2011) for the Spanish, 
+  * sp: Ancor (Taul+ 2011) for the Spanish,
   * Dutch: Sonar (Schuurman+ , 2010) for the
-  * Croatian (Filko+ 2012) and 
-  * the Czech valence lexicon Vallex. 
+  * Croatian (Filko+ 2012) and
+  * the Czech valence lexicon Vallex.
 * formal descriptions (ie. Sets of semantic tags) for each participatory role
   and the criteria for their determination. From the perspective of optimizing
   * goal: robust system and at the same time as far as possible into account
-    the specifics of the Slovenian language, 
+    the specifics of the Slovenian language,
   * we consider also the degree of semantic fragmentation, which provides a
   * Slovene language is not available in machine-readable lexicon verbal
-    valency. In addition, we have 
+    valency. In addition, we have
   * criteria for semantic tagging like to set so as to enable reliable and most
-    consistent Marking the training corpus. In 
+    consistent Marking the training corpus. In
   * the range of participatory roles and their formal descriptions are derived
     from the functional generative approach of the Prague Dependency Treebank;
     (PDT); Mikulov+ 2006) within the scope of prototypical verbal sample

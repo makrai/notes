@@ -94,7 +94,7 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * We study different information retrieval methods in emotion detection and
     compare their performances. The proposed approach relies on
   * automatic algorithms to post-process podcasts and a
-  * cost effective annotation process, which make it possible to scale 
+  * cost effective annotation process, which make it possible to scale
 * from the Conclusion
   * we trained and evaluated machine learning alternatives for classification,
     preference learning and regression, where the task was to identify

@@ -148,7 +148,7 @@ Speech and Language Processing (2Nd Edition)
     * Vigyázat, a könyv zavaros! A jegystruktúrák metszetfélhálót alkotnak, de
       az érdekes ,,művelet", az unifikáció, az uniónak felel meg, és csak
       parciális(-)művelet
-  * every feature structure is subsumed by the empty structure 
+  * every feature structure is subsumed by the empty structure
   * F ⊔ G is defined as the most general feature structure H such that F ⊑ H
     and G ⊑ H
 * unification operation is

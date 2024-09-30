@@ -12,7 +12,7 @@ https://doi.org/10.5281/zenodo.7599667.
   * applications such as question answering and summarization. However, prior
   * semantic similarity, a subset of relatedness, because no relatedness data
 * we introduce a dataset for Semantic Textual Relatedness, STR-2022, that has
-  * 5,500 English sentence pairs manually annotated using a 
+  * 5,500 English sentence pairs manually annotated using a
   * comparative annotation framework, resulting in fine-grained scores. We show
   * human intuition regarding relatedness of sentence pairs is highly reliable,
     * repeat annotation correlation of 0.84
@@ -22,10 +22,10 @@ https://doi.org/10.5281/zenodo.7599667.
 
 ## 2.2 Existing Relatedness and Similarity Data Existing datasets created for
 
-* sentence pair similarity 
-  * STS (Agirre+, 2012, 2013, 2014, 2015, 2016), 
-  * MRPC (Dolan and Brockett, 2005), and 
-  * LiSent (Li+, 2006)) 
+* sentence pair similarity
+  * STS (Agirre+, 2012, 2013, 2014, 2015, 2016),
+  * MRPC (Dolan and Brockett, 2005), and
+  * LiSent (Li+, 2006))
   * ask annotators to choose among coarse similarity labels. This leads to
   * eg in STS 2012–2016 2: not equivalent but share some details and 1: not
     * despite claiming to determine semantic similarity, the descriptions of
@@ -40,7 +40,7 @@ https://doi.org/10.5281/zenodo.7599667.
 
 * textual coherence and narrative structure
   * Often, sentences in a document are not paraphrases, entailments, or
-    similar, but rather semantically related to each other. This 
+    similar, but rather semantically related to each other. This
   * need for continuity of meaning has long been identified as crucial to lang
     (Halliday and Hasan, 1976; Morris and Hirst, 1991).
   * ie when generating a summary or a response to a question, systems must

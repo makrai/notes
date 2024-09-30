@@ -9,7 +9,7 @@ From the book The Chinese Language Published by University of Hawaii Press 1984
   * Chinese characters are a phonetic, not an ideographic, system of writing,
   * Here I would go further: There never has been, and never can be, such a
     thing as an ideographic system of writing. How then did this concept
-    
+
 # Origin of the Myth
 
 * stimulated by the generally highly laudatory writings of
@@ -48,7 +48,7 @@ From the book The Chinese Language Published by University of Hawaii Press 1984
     * the pictorial algebra of the sciences and the arts. In truth, a
     * a sentence is as much stripped of all intermediaries as is the most
       rigorously bare algebraic demonstration. [Mémoires 1776:282-285]
-  * no term for writing that conveys ideas without regard to sound 
+  * no term for writing that conveys ideas without regard to sound
     * Friar Gaspar da Cruz, as noted above, referred to the Chinese symbols as
       "characters," and the
     * Jesuit missionary Alessandro Valignani, who visited Macao in 1577,

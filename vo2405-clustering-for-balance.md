@@ -40,7 +40,7 @@ https://github.com/facebookresearch/ssl-data-curation
     * the gap with the absolute supervised SOTA is drastically shrinking
 * strong out-of-distribution generalization, opening new research avenues
   * successfully applied to more narrow domains, considerable model improv
-    * medical image analysis (Azizi+ 2021; Chen+ 2024), 
+    * medical image analysis (Azizi+ 2021; Chen+ 2024),
     * phenotypic representations of cells (Ucar+ 2021), and
     * canopy height estimation for forest growth monitoring (Tolan+ 2023)
 * corpus qual
@@ -75,7 +75,7 @@ https://github.com/facebookresearch/ssl-data-curation
   * importance of size and diversity (Kaplan+ 2020, Hoffmann+ 2022)
   * Obtaining large and diverse data is possible by
     leveraging large-scale web archives of Internet (Grave+ 2018; Wenzek+ 2019)
-* we use the term “concept” rather than “category” or “class” as  
+* we use the term “concept” rather than “category” or “class” as
   the latter is often poorly defined, subjective, and depends on the context
   * a data point (an image or a text paragraph) could belong to multiple such
     “classes”. In contrast, “concept” is a more abstract term and allows us to
@@ -101,8 +101,8 @@ https://github.com/facebookresearch/ssl-data-curation
   * language models for representation learning
     (Radford+ 2017; 2018; Devlin+ 2019)
   * Finetuning BERT models on the task at hand has become the standard
-  * large-scale models fundamentally changing AI research (Chowdhery+ 2022; 
-    Hoffmann+ 2022; Ouyang+ 2022; Achiam+ 2023; Touvron+ 2023), 
+  * large-scale models fundamentally changing AI research (Chowdhery+ 2022;
+    Hoffmann+ 2022; Ouyang+ 2022; Achiam+ 2023; Touvron+ 2023),
 * unsupervised learning of visual features has also received much interest
   * Initially relied on well-tailored pretext tasks
   * idea was that general visual features would emerge by training a NN to
@@ -120,8 +120,8 @@ https://github.com/facebookresearch/ssl-data-curation
     * distillation (Grill+ 2020; Caron+ 2021), and
     * information maximization (Zbontar+ 2021; Bardes+ 2022) have been proposed
   * led to astonishing progress of the representation power of SSL models
-* We evaluate our curated datasets with DINOv2 (Oquab+ 2023), 
-  * DINOv2 is a distillation-based approach which shows 
+* We evaluate our curated datasets with DINOv2 (Oquab+ 2023),
+  * DINOv2 is a distillation-based approach which shows
     successful training attempts on large, curated image datasets
   * Eval with other SSL methods (SimCLR, MoCo, SwAV) is beyond our scope
     * we assume that our conclusions hold for similar training algorithms
@@ -191,8 +191,8 @@ https://github.com/facebookresearch/ssl-data-curation
 ## Clustering or cluster analysis aims at finding structures in data
 
 * types
-  * centroid-based 
-    * k-means (Arthur & Vassilvitskii, 2007; Lloyd, 1982) or 
+  * centroid-based
+    * k-means (Arthur & Vassilvitskii, 2007; Lloyd, 1982) or
     * mean-shift (Cheng, 1995),
   * density-based such as DBSCAN (Ester+ 1996; Schubert+ 2017),
   * statistical model-based with Gaussian Mixture Model (Yang+ 2012) or

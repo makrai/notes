@@ -148,7 +148,7 @@ KI Künstliche Intelligenz (2021) 35:343–360
 
 * must provide mechanisms for abstracting away from language-specific
   morphosyntax without losing semantic information. An advantage of
-* AMR already abstracts away from constituent order which 
+* AMR already abstracts away from constituent order which
   * constituent order varies widely across languages
   ~> AMR is more portable across languages,
   * Chinese and Czech [47, 48, 85]

@@ -246,7 +246,7 @@ perform a supervised training of the attention model
       2019, arXiv:1909.11218.  [Online]
     * [9] S Wiegreffe and Y Pinter, “Attention is not not explanation,” in
       EMNLP/IJCNLP, 2019, pp.  11–20
-  * Jain and Wallace [10] proved that 
+  * Jain and Wallace [10] proved that
     * attention is not consistent with other explainability metrics
     * local adversarial distributions (distributions that are
       similar to the trained model but produce a different outcome)
@@ -273,7 +273,7 @@ perform a supervised training of the attention model
     it changes, modeling a region that corresponds to the object depicted in
     the image
   * text: Identifying abstract features in an input text
-    might be less immediate than in an image, where 
+    might be less immediate than in an image, where
     the analysis process is greatly aided by visual intuition
   * nL it may be interesting to test the effects of the application of
     attention at different levels and to

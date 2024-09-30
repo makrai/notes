@@ -10,7 +10,7 @@ Lindia Tjuatja, Emmy Liu, Lori Levin, Graham Neubig
 * the semantic notion of agentivity as a case study for probing
 * We created a novel evaluation dataset
 * a subset of optionally transitive English verbs
-* prompt varying sizes of three model classes to see 
+* prompt varying sizes of three model classes to see
   * if they are sensitive to agentivity at the lexical level
   * if they can employ these word-level priors given a specific synt context
 * Overall, GPT-3 text-davinci-003 performs extremely well across all expers,
@@ -133,7 +133,7 @@ disregarding lexical semantics when necessary?
   * compared to our dataset
     * they focus on the explicit relationship between the event and the noun,
     * our data is meant to focus on the relship between the prototypical role
-      of a noun (out of context) and its role in a controlled synt environ 
+      of a noun (out of context) and its role in a controlled synt environ
       * the agent/patient distinction to be a minimal pair resulting changing
         the noun in an identical surface form => the sets of nouns and verbs
         between their studies and ours only partially overlap
@@ -150,7 +150,7 @@ disregarding lexical semantics when necessary?
   * Ettinger (2020): a suite of tests drawn from human language experiments
     to evaluate commonsense reasoning, event knowledge, and negation
   * COGS challenge (Kim and Linzen, 2020)
-    * tests with regards to argument alternation, related to ours 
+    * tests with regards to argument alternation, related to ours
     * whether LMs can learn to generalize about passivization and
       unnacusative-transitive alternations in English
   * Misra+ (2022) test LMs for their ability to attribute properties to
@@ -166,7 +166,7 @@ disregarding lexical semantics when necessary?
     of using generation probabilities for grammaticality judgements
 * NLP work inspired by Construction Grammar (CxG, Goldberg 1995; Croft 2001)
   * CxG a branch of theories within cognitive linguistics that posits that
-    constructions ~~ form-meaning pairings ~~ are the basic building blocks 
+    constructions ~~ form-meaning pairings ~~ are the basic building blocks
   * Mahowald (2023) conducted a similar prompting experiment on the English
     Article-Adjective-Numeral-Noun construction
     * hE focused on grammaticality judgements as opposed to aspects of sem

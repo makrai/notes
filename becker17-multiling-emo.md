@@ -23,7 +23,7 @@ Information Processing & Management Volume 53, Issue 3, May 2017, Pages 684-704
 
 # 1 Intro
 
-* opinion as opposed to sentiment 
+* opinion as opposed to sentiment
   * a positive/negative judgemental attitude towards a given target
   * Opinion mining involves
     * identifying in documents a target,

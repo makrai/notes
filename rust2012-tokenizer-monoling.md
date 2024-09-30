@@ -21,7 +21,7 @@ arXiv:2012.15613 [cs.CL]
   * designated tokenizer of the monoling model plays an equally important role
   * languages which are adequately represented in the multilingual LMs vocab
     exhibit negligible performance decreases over their monoling counterparts
-  * replacing the orig multiling tokenizer with the spec monoling tokenizer 
+  * replacing the orig multiling tokenizer with the spec monoling tokenizer
     improves the downstream performance of the multiling model
     for almost every task and language
 
@@ -189,12 +189,12 @@ criteria:
 
 ### Fine-Tuning Setup. We use the
 
-* standard fine-tuning setup of Devlin+ (2019) for all tasks besides UDP: 
+* standard fine-tuning setup of Devlin+ (2019) for all tasks besides UDP:
   * for UDP, we use a transformer-based variant (Glavaš and Vulić, 2020) of the
     standard deep biaffine attention dependency parser (Dozat & Manning 2017)
 * Besides full model fine-tuning, we also evaluate all models within a more
   efficient setup based on adapters
-  (Rebuffi+ 2017; Houlsby+ 2019; Stickland and Murray, 2019; 
+  (Rebuffi+ 2017; Houlsby+ 2019; Stickland and Murray, 2019;
   Pfeiffer+ 2020a,b,c,d; Lauscher+ 2020a; Rücklé+ 2020a,b)
   * additional parameter sets that are fine-tuned
     while the original pretrained model is kept frozen
@@ -223,7 +223,7 @@ criteria:
 ## 3.3 Initial results
 
 * lang
-  * largest performance gains of monolingual models: FI, TR, KO, and AR 
+  * largest performance gains of monolingual models: FI, TR, KO, and AR
   * mBERT outperforms the IndoBERT (ID) model in all tasks but SA, and performs
   * competitively with the JA and ZH monolingual models on most datasets.  In gen-
 * task
@@ -231,7 +231,7 @@ criteria:
   * ID aside, for UDP, with monolingual models out-performing fine-tuned mBERT
     * most notably for FI and TR, and
   * fully fine-tuned mBERT models, in turn, outperforming the adapter-based
-* In what follows, we seek to understand 
+* In what follows, we seek to understand
   ? the causes of this behaviour in relation to different factors
   eg used tokenizers, corpora sizes, as well as languages and tasks
 
@@ -242,7 +242,7 @@ criteria:
 * we compare how much data each monolingual model was trained on
   with the amount of data in the respective language that mBERT has seen. Given
   * mBERT was trained on entire Wikipedia dumps 8, we estimate the latter by
-    the total number of words across all articles listed for each Wiki 9 
+    the total number of words across all articles listed for each Wiki 9
   * For the monolingual models, we extract information on pretraining data from
     the model documentation.  If no exact numbers are explicitly stated, and the
     pretraining corpora are unavailable to us, we make estimations based
@@ -277,7 +277,7 @@ criteria:
   * Figure 3 show similar trends as with the fertility statistic
   * In addition to AR, FI, KO, RU, and TR, where there were already
     conspicuous differences in fertility, mBERT also produces a proportion of
-    continued words more than twice as high as the monolingual model for ID 
+    continued words more than twice as high as the monolingual model for ID
 * We discuss additional tokenization statistics, further highlighting the
   differences (or lack thereof) between the individual monolingual tokenizers
   and the mBERT tokenizer, in Appendix B.1
@@ -302,10 +302,10 @@ criteria:
 ## 5.1 Qualitative Analysis
 
 * When choosing a monolingual tokenizer that scores significantly lower in
-  fertility and the proportion of continued words than the mBERT tokenizer 
+  fertility and the proportion of continued words than the mBERT tokenizer
   (eg AR, FI, ID, KO, TR), performance gains can be made relat consistently,
-  irrespective of whether the models themselves are 
-  * monolingual (wiki-mono-mono vs wiki-mono-mbert) or 
+  irrespective of whether the models themselves are
+  * monolingual (wiki-mono-mono vs wiki-mono-mbert) or
   * multilingual (wiki-mbert-retrained vs fully fine-tuned mBERT)
 * Whenever the differences between monolingual models and mBERT
   with respect to the tokenizer (as measured by the fertility or prop of conted)
@@ -348,7 +348,7 @@ criteria:
     the mBERT tokenizer, establishing that a
   * specialized vocabulary plays an equally important role on the downstream
     performance as the pretraining data set size
-* more balancing of individual languages’ representations in the toker's vocab 
+* more balancing of individual languages’ representations in the toker's vocab
   (eg by merging monolingual vocabularies) can
   close the gap between monolingual and multilingual models
   in cases where the tokenizer currently makes the difference
@@ -384,7 +384,7 @@ criteria:
   tokenizations by human UD annotators, indicating they are more capable than
   the mBERT tokenizer. Likewise, the monolingual models’ and mBERT’s sentence
   length distributions are closer for languages with similar fertility and
-  proportion of continued words, such as EN, JA, and ZH 
+  proportion of continued words, such as EN, JA, and ZH
 
 ## B.2 Correlation Analysis 20
 

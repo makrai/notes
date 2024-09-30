@@ -4,7 +4,7 @@ ACL 2017
 
 # Abstract
 
-* detection of emotion from natural language 
+* detection of emotion from natural language
   * applications ranging from emotional chatbots to
     better understanding individuals and their lives.
   * hE absence of large labeled datasets
@@ -14,7 +14,7 @@ ACL 2017
     24 fine-grained types of emotions (with an average accuracy of 87.58%). We
   * extend the task to model Robert Plutick’s 8 primary emotion dimensions,
     acquiring a superior accuracy of 95.68%.
-     
+
 # 1 Intro
 
 * distant supervision (Mintz+ 2009, eg the use of hashtags as a surrogate)
@@ -27,16 +27,16 @@ ACL 2017
     * after performing varying degrees of data quality assurance
   * We take a similar approach, using a larger collection of tweets,
     richer emotion definitions, and stronger filtering for tweet quality
-* contributions: 
+* contributions:
   1. a large-scale, high quality dataset of tweets labeled with emotions. Key
-    * methods to ensure data quality, 
+    * methods to ensure data quality,
     * Grounded in psychological theory of emotions
-  1. we validate the data collection method using human annotations, 
+  1. we validate the data collection method using human annotations,
   1. we develop powerful deep learning models using a gated recurrent network
-     * new SOTA on 24 fine-grained types of emotions, and 
+     * new SOTA on 24 fine-grained types of emotions, and
   1. we extend the task to model Plutick’s 8 primary emotion dimensions.
 
-# 2 Related literature 
+# 2 Related literature
 
 * distant supervision with Twitter data
   * Our work is similar to (Mohammad, 2012; Mohammad and Kiritchenko, 2015,
@@ -86,9 +86,9 @@ ACL 2017
   * Nguyen (2010) builds models to infer patterns of moods in a large
     collection of LiveJournal posts
   * Some of the moods in these LiveJournal studies (eg hungry, cold), would not
-    fit any psychological theory (De Choudhury+ 2011) 
+    fit any psychological theory (De Choudhury+ 2011)
 
-# 3 Data collection 
+# 3 Data collection
 
 ## 3.1 Collection of a Large-Scale Dataset
 
@@ -125,9 +125,9 @@ ACL 2017
 
 # 4 The annotation study we performed to validate our distant supervision meth
 
-# 5 Our methods 
+# 5 Our methods
 
-# 6 Results 
+# 6 Results
 
 # 7 Comparisons to Other Systems
 

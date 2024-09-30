@@ -4,7 +4,7 @@ arXiv:1806.07914 [cs.CL]
 
 * we ensemble both different model initializations and different model archits
   in multilingual and multi-domain contexts
-* a new banking domain dataset 
+* a new banking domain dataset
 * we compare results against the standard ATIS dataset and the Chinese SMP2017
 * conclusion: ensembling provides significant performance increases, and
   multi-layer ensembling is a no-risk way to improve performance on intent clas

@@ -116,7 +116,7 @@ NAACL 2022
       meta-parameters φ ∗ parameterizing the learning algorithm F φ ∗
     * With a sufficient number of tasks in T train,
       cross-task training should find a suitable φ ∗ for a wide range of doms,
-      and thus also works well on the tasks in T test 
+      and thus also works well on the tasks in T test
     * meta-learning can be considered as
       * one way to improve domain adaptation
       * If the support set in each task includes only a few examples
@@ -290,7 +290,7 @@ NAACL 2022
     * The most representative one is MAML (Finn+ 2017)
       * large computation intensity, so the
       * first-order approximations are widely used like
-        * FOMAML (Finn+ 2017) and Reptile (Nichol+ 2018) 
+        * FOMAML (Finn+ 2017) and Reptile (Nichol+ 2018)
       * DG-MAML (Li+ 2018) is for domain generalization
       * Typical learn-to-init assumes that all the tasks use the same archit
         * hE LEOPARD (Bansal+ 2020a) and Proto(FO)MAML (Triantafillou+ 2020)

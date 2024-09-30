@@ -19,7 +19,7 @@ Oren Melamud, David McClosky, Siddharth Patwardhan, Mohit Bansal
 
 # 1 Intro
 
-* Bansal+ (2014) and Levy and Goldberg (2014) 
+* Bansal+ (2014) and Levy and Goldberg (2014)
   * using syntactic contexts rather than window contexts in word2vec captures
     functional similarity (as in lion:cat)
     rather than topical similarity or relatedness (as in lion:zoo). Further,

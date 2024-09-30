@@ -14,31 +14,31 @@ arXiv:1712.07040 [cs.CL]
     similarity or global term frequency); they thus fail to test for the
 * we present a new dataset and set of tasks in which
   the reader must answer questions about stories by reading entire books or
-  movie scripts. These tasks are designed so that successfully 
+  movie scripts. These tasks are designed so that successfully
   * answering their questions requires understanding the underlying narrative
   * humans solve the tasks easily, standard RC models struggle on the tasks
   * We provide an analysis of the dataset and the challenges it presents.
 
 # Conclusion
 
-* domain: fiction ie self-contained 
+* domain: fiction ie self-contained
   * richer set of entities, events, and the relations between them. We have
-* a range of tasks, from 
+* a range of tasks, from
   * simple: read summaries of books and movie scripts, and generate or rank
     fluent English answers to human-generated questions
   * more complex: read the full stories to answer the questions (no summaries)
-* the larger tasks are significantly more difficult as 
-  * the issue of scaling neural models to large documents, 
+* the larger tasks are significantly more difficult as
+  * the issue of scaling neural models to large documents,
   * questions formulated based on one or two sentences of a summary might
     require appealing to possibly discontiguous sentences or paragraphs
-* requires potential solutions to these tasks to jointly 
+* requires potential solutions to these tasks to jointly
   * model the process of searching for information (possibly in several
     steps) to serve as support for generating an answer
-  * generating the answer entailed by said support. 
+  * generating the answer entailed by said support.
 * SOTA
   * End-to-end mechanisms for both searching for information, such as
     attention, do not scale beyond selecting words or n-grams in short
-    contexts such as sentences and small documents. Likewise, 
+    contexts such as sentences and small documents. Likewise,
   * neural models for mapping documents to answers, or determining entailment
     typically operate on the scale of sentences rather than sets of paragraphs.
 * baseline and benchmark results for both sets of tasks, demonstrating that

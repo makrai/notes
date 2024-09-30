@@ -73,7 +73,7 @@ Front. Artif. Intell., 19 April 2021 Sec. Language and Computation Volume 4 -
     * eg Shannon made important contributions to multiple positions.
 * Most positions have much to recommend them. At each historical stage,
   * there’s a combination that is better than the best “pure” position. We will
-  * tempting to emphasize differences, but more profitable to emphasize synergs.  
+  * tempting to emphasize differences, but more profitable to emphasize synergs.
 
 ## 1.1 Can We Use the Past to Predict the Future?
 
@@ -210,7 +210,7 @@ Front. Artif. Intell., 19 April 2021 Sec. Language and Computation Volume 4 -
 ## 1.4 An Example of Representations: Semantic Nets
 
 * words (and concepts) as nodes in a graph, with
-  edges representing relations such as synonyms, antonyms and hypernyms 
+  edges representing relations such as synonyms, antonyms and hypernyms
   * many names for such graphs: knowledge graphs, semantic networks,
     ontologies, etc
   * represent lexical knowledge and/or world knowledge. Examples of semantic
@@ -218,13 +218,13 @@ Front. Artif. Intell., 19 April 2021 Sec. Language and Computation Volume 4 -
     (Bollacker+ 2008). Many of these resources were
   * other languages.20 BabelNet 4.021 (Navigli and Ponzetto, 2012) supports 284
     languages. Many of these ontologies can be downloaded for free. All have
-* ambitious projects 
+* ambitious projects
   * CYC is particularly ambitious, perhaps too ambitious
   * WordNet is less ambitious; the scope of this project was constrained by the
   * Murray’s Oxford English Dictionary (Murray, 2001) and CYC, have a way of
   * WordNet (and Unix) succeeded, largely because “Less is more”
     (McMahon+ 1978)
-* resources have been built with volunteer labor: 
+* resources have been built with volunteer labor:
   * Freebase, Wikipedia and Murray’s Oxford English Dictionary. If one wants to
   * it may not be feasible to pay a full-time staff to do the work by hand.
   * Universities can use student labor to reduce labor costs

@@ -18,7 +18,7 @@ CMCL 2021 arXiv:2104.12874 [cs.CL]
   consistent with cue-based retrieval models of parsing
 * But in contrast to these models,\
   the attentional cues and memory representations are learned entirely from the
-  simple self-supervised task of predicting the next word. 
+  simple self-supervised task of predicting the next word.
 
 # 1 Intro
 
@@ -56,15 +56,15 @@ CMCL 2021 arXiv:2104.12874 [cs.CL]
       through a surprisal bottleneck (Levy, 2008).
 
 # 2 Agreement interference effects human sentence processing\
-(subject-verb and reflexive pronoun) 
+(subject-verb and reflexive pronoun)
 
-# 3 GPT-2 for human reading time studies 
+# 3 GPT-2 for human reading time studies
 
 * GPT-2 architecture, its interesting psycholinguistic properties, and
-* the method and metrics that we will use to examine the agreement effects 
+* the method and metrics that we will use to examine the agreement effects
 
 # 4 Subject-verb agreement experiments
 
 # 5 Reflexive agreement experiments
- 
+
 # 6 theoretical reflections, weaknesses, and future work

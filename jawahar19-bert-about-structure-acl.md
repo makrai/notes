@@ -49,7 +49,7 @@ ACL 2019
   * initialize the filler embeddings of the TPDN with the pre-trained word
     embeddings from BERT’s input layer, freeze it, learn a linear projection on
     top of it and use a Mean Squared Error (MSE) loss function
-    * Other trainable parameters include  
+    * Other trainable parameters include
       the role embeddings and a linear projection on top of tensor product sum
       to match the embedding size of BERT
 * Table 4 displays the MSE between pretrained BERT and TPDN

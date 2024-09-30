@@ -44,7 +44,7 @@ Front. Comput. Sci., 26 May 2020 | https://doi.org/10.3389/fcomp.2020.00014
   * low-level acoustic speech parameters, or groups of parameters
   * classifiers such as the Support Vector Machine (SVM),
     Gaussian Mixture Model (GMM), and shallow Neural Networks (NNs)
-  * reviews of SER methods 
+  * reviews of SER methods
     * Schröder (2001), Krothapalli and Koolagudi (2013), and Cowie+ (2001)
   * benchmark comparison can be found in Schuller+ (2009b)
 * low-level prosodic and spectral acoustic parameters
@@ -52,7 +52,7 @@ Front. Comput. Sci., 26 May 2020 | https://doi.org/10.3389/fcomp.2020.00014
     spectral energy of speech, and speech rate
   * Majority correlated with emotional intensity and emotional processes
     (Scherer, 1986, 2003; Bachorovski and Owren, 1995; Tao and Kang, 2005)
-  * more complex parameters 
+  * more complex parameters
     * eg Mel-frequency cepstral coefficients (MFCCs), spectral roll-off,
       Teager Energy Operator (TEO) features
       (Ververidis and Kotropoulos, 2006; He+ 2008; Sun+ 2009),
@@ -110,7 +110,7 @@ Front. Comput. Sci., 26 May 2020 | https://doi.org/10.3389/fcomp.2020.00014
     * Alternatively, pre-trained network parameters can be applied as features
       to train conventional classifiers that require smaller of training data.
   * Pre-trained networks in the categorization of images
-    * very efficient, freely available image classification networks 
+    * very efficient, freely available image classification networks
   * speech classification task can be re-formulated as image classification
     (Stolar+ 2017; Lech+ 2018)
     * The speech to image transformation achieved by

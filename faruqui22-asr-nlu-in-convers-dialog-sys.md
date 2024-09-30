@@ -10,8 +10,8 @@ Computational Linguistics, Volume 48, Issue 1 - March 2022
     automatic speech recognition (ASR) and natural language understanding (NLU)
 * We briefly review these research areas and lay out the current relationship
   * NLU should be cognizant of the ASR models being used upstream in a dialog
-    system’s pipeline, 
+    system’s pipeline,
   * ASR should be able to learn from errors found in NLU,
   * there is a need for end-to-end data sets that provide
-    semantic annotations on spoken input, 
+    semantic annotations on spoken input,
   * there should be stronger collaboration between ASR and NLU research

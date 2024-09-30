@@ -13,9 +13,9 @@ Transactions of the Association for Computational Linguistics, Volume 10
 * this survey’s aim is to
   assist in the development of new Text Game problem settings and solutions for
   Reinforcement Learning informed by natural language. Specifically, this
-  survey: 
-  * introduces the challenges in Text Game Reinforcement Learning problems, 
+  survey:
+  * introduces the challenges in Text Game Reinforcement Learning problems,
   * outlines the generation tools for rendering Text Games and the subsequent
-    environments generated, and 
+    environments generated, and
   * compares the agent architectures currently applied
     * systematic review of benchmark methodologies

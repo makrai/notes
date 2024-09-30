@@ -77,7 +77,7 @@ Alexis Conneau, G Lample, Marc’Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
 # 2. Model
 
 * Xing+ (2015) improved [Mikolov 13's] results by enforcing an
-  orthogonality constraint on W 
+  orthogonality constraint on W
   * In that case, the equation (1) boils down to the Procrustes problem, which
   * offers a closed form solution obtained from the SVD of `Y X^T`
 *  In this paper without cross-lingual supervision

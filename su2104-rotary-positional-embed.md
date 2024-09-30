@@ -6,7 +6,7 @@ already integrated into Huggingface: \url{this https URL}
 
 * Position encoding recently has shown effective in the transformer
   * enables valuable supervision for dependency modeling between elements at
-    different positions of the sequence. In this paper, 
+    different positions of the sequence. In this paper,
 * we first investigate various methods to integrate positional information into
   the learning process of transformer-based language models. Then, we propose a
   * novel method named Rotary Position Embedding(RoPE) to effectively leverage
@@ -16,7 +16,7 @@ already integrated into Huggingface: \url{this https URL}
     * by multiplying the context representations with a rotation matrix with a
       clear theoretical interpretation
   * valuable properties, including the
-    * flexibility of sequence length, 
+    * flexibility of sequence length,
     * decaying inter-token dependency with increasing relative distances, and the
     * equipping the linear self-attention with relative position encoding.
 * evaluation on various long text classification benchmark datasets. Our
@@ -25,20 +25,20 @@ already integrated into Huggingface: \url{this https URL}
 
 # 1 Intro
 
-* The sequential order of words is of great value to NLU. 
+* The sequential order of words is of great value to NLU.
   * Recurrent neural networks (RRNs) based models encode tokens’ order by
     recursively computing a hidden state along the time dimension.
-  * Convolution neural networks (CNNs) based models (CNNs) Gehring+ [2017] 
-    * were typically considered position-agnostic, but recent work 
+  * Convolution neural networks (CNNs) based models (CNNs) Gehring+ [2017]
+    * were typically considered position-agnostic, but recent work
     * nL Islam+ [2020] has shown that the commonly used padding operation can
-      implicitly learn position information. Recently, the 
+      implicitly learn position information. Recently, the
   * pre-trained language models (PLMs), which were built upon the transformer
     Vaswani+ [2017], have achieved the SOTA performance of various NLP tasks,
     * context representation learning Devlin+ [2019], machine translation
       Vaswani+ [2017], and language modeling Radford+ [2019], to name a few.
     * self-attention mechanism to semantically capture the contextual
       representation of a given corpus. As a consequence, PLMs achieve a
-    * significant improvement in terms of parallelization over RNNs and 
+    * significant improvement in terms of parallelization over RNNs and
     * improved modeling ability of longer intra-token relations
       compared to CNNs1
       * A stack of multiple CNN layers can also capture longer intra-token
@@ -48,7 +48,7 @@ already integrated into Huggingface: \url{this https URL}
   * absolute
     * generated absolute position encoding through a pre-defined function
       Vaswani+ [2017] was added to the contextual representations,
-    * trainable absolute position encoding 
+    * trainable absolute position encoding
       Gehring+ [2017], Devlin+ [2019], Lan+ [2020], Clark+ [2020],
       Radford+ [2019], Radford and Narasimhan [2018]
     * relative position encoding
@@ -58,13 +58,13 @@ already integrated into Huggingface: \url{this https URL}
         mechanism. In addition
   * Liu+ [2020] have proposed to model the dependency of position encoding from
     the perspective of Neural ordinary differential equations (ODE) Chen+
-    [2018a], and the authors of 
+    [2018a], and the authors of
   * Wang+ [2020] model the position information in complex space.
   * these approaches, they commonly add the position information to the context
     representation and thus render them unsuitable for the linear
     self-attention architecture.
 * our Rotary Position Embedding (RoPE) leverages the positional information
-  into the learning process of PLMS. Specifically, RoPE 
+  into the learning process of PLMS. Specifically, RoPE
   * encodes the absolute position with a rotation matrix and meanwhile
     incorporates the explicit relative position dependency in self-attention
   * valuable properties, including the sequence length flexibility, decaying
@@ -91,9 +91,9 @@ already integrated into Huggingface: \url{this https URL}
 # 2 Formal description of the position encoding problem in self-attention
 and previous works
 
-# 3 Rotary position encoding (RoPE) and its properties in 
+# 3 Rotary position encoding (RoPE) and its properties in
 
-# 4 Experiments 
+# 4 Experiments
 
 # 5 Conclusion
 (5).

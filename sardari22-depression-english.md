@@ -29,7 +29,7 @@ https://github.com/SaraS92/CAE_ADD
 
 * the “Audio-Visual Emotion Challenges” (AVEC) competition has been held
   * mental disorder, examples being
-    bipolar (Ringeval+ 2018) and 
+    bipolar (Ringeval+ 2018) and
     depression (Valstar+ 2016, Ringeval+ 2017, Valstar+ 2013, Valstar+ 2014)
   * One of the most popular sub-challenges is Depression Classification
     Sub-Challenge (DCC, Valstar+ 2016)
@@ -50,7 +50,7 @@ https://github.com/SaraS92/CAE_ADD
     compared to other dataset
 * depression detection systems based on both visual and vocal features
   * Yang+ (2017): a hybrid depression classification and estimation method
-    * fusion of audio, video and textual information and the 
+    * fusion of audio, video and textual information and the
     * experiments are carried out on DIAC-WOZ dataset. The study utilized a
     * multivariate regression model fusing the depression degree estimations
       extracted from each modality

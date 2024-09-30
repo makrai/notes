@@ -186,7 +186,7 @@ arXiv:1804.07755v1 EMNLP 2018
 * We populate the initial phrase tables in both directions using a rotation mx
   (Conneau+ 2018)
   * populated with word n-grams
-  * to work at the level of BPEs (Kunchukuttan and Bhattacharyya, 2016): future 
+  * to work at the level of BPEs (Kunchukuttan and Bhattacharyya, 2016): future
 
 ### Language Modeling
 

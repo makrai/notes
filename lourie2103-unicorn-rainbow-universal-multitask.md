@@ -89,7 +89,7 @@ https://github.com/allenai/rainbow
   * x-axis shows the number of examples used by the single-task baseline, while
   * y-axis shows the examples from the target dataset used by the multitask met
   * curve is where they achieve the same performance
-  * numbers on top of the figure show the corresponding performance 
+  * numbers on top of the figure show the corresponding performance
   * curves below the diagonal (y = x) indicating that the new method improves
 * assumption: rel between performance and cost is continuous and strictly monot
   * holds empirically for parameters, compute, and data (Kaplan+ 2020)

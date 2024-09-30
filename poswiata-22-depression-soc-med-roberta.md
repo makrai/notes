@@ -37,8 +37,8 @@ model at huggingface
   * Tadesse+ (2019) use LIWC, Latent Dirichlet Allocation (LDA) topics, N-grams
   * Arora and Arora (2019) analyze tweets for depression and anxiety by using
     Multinomial Naive Bayes and Support Vector Regression (SVR) classifier
-  * Lin+ (2020) create SenseMood system to detect depression from tweets 
-    * visual and textual features using 
+  * Lin+ (2020) create SenseMood system to detect depression from tweets
+    * visual and textual features using
       Convolutional Neural Network (CNN) and BERT language model
   * Zogan+ (2021) propose novel summarization boosted deep framework for
     * data filtering
@@ -59,7 +59,7 @@ model at huggingface
     dev set, the difference was much smaller, ie, 4,481 unique against 4,496
   * make the train set larger than the dev or test set
     => we decided to use part of the dev set for training,
-    leaving 1,000 examples for verification 
+    leaving 1,000 examples for verification
     * kept the class distribution close to the original one
   * As a result, the train set we used in our experiments counted 6,006 unique
     * there were overlaps between the original train and dev sets

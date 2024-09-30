@@ -33,9 +33,9 @@ publicly available for research https://github.com/ROC-HCI/UR-FUNNY
     * similar to (Chen and Lee, 2017)
 
 * Humor is a unique communication skill that removes barriers in conversations
-  * allows a speaker to 
-    * establish rapport (Stauffer, 1999), 
-    * grab attention (Wanzer 2010), 
+  * allows a speaker to
+    * establish rapport (Stauffer, 1999),
+    * grab attention (Wanzer 2010),
     * introduce a difficult concept without causing confusion (Garner 2005)
     * build trust (Vartabedian and Vartabedian, 1993)
   * multimodal communicative channels:

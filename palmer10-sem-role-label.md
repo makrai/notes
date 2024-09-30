@@ -596,7 +596,7 @@ Martha Palmer, Daniel Gildea, and Nianwen Xue
 ### 4.3.3 Semantic Role Labeling for Nouns 70
 
 * the distribution of the arguments for nominalized predicates is less uniform
-  compared with verbs 
+  compared with verbs
 * presence or absence of a support verb
   * most common scenario in which a support verb is present is
     when the nominalized predicate heads an NP that is the syntactic object of

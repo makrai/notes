@@ -181,9 +181,9 @@ https://github.com/nunompmoniz/IRon
 
 ### 3.1.1 Control points: a set of data points where relevance is known
 
-* This set must contain information on 
-  * the target value yk , 
-  * its respective relevance value 𝜑(yk ) and on 
+* This set must contain information on
+  * the target value yk ,
+  * its respective relevance value 𝜑(yk ) and on
   * the intended derivative of the relevance function at that point 𝜑� (yk ).
     * By default, control points are assumed as local minimum or maximum of
     * other values may be provided for monotonicity
@@ -197,7 +197,7 @@ https://github.com/nunompmoniz/IRon
 * two main types of interpolation methods: statistical and spline smoothing.
   * statistical includes methods such as loess smoothing (Cleveland+ 1992).
   * spline eg nearest-neighbour, bilinear, bicubic and shape-preserv (Basu+ 15)
-* aspects of The interpolation we require 
+* aspects of The interpolation we require
   * the set of control points will typically have a very low cardinality. Such
     * hampers the application of statistical methods
     * statistical methods focus on minimising the residual sum of distances
@@ -252,7 +252,7 @@ https://github.com/nunompmoniz/IRon
   * non-parametric is commonly based on histograms and kernel functions
 * thorough analyses and discussions of outlier/extreme value detection
   * Aggarwal (2013), Chandola+ (2009) and Hodge and Austin (2004)
-* Tukey’s boxplot rule (1970) 
+* Tukey’s boxplot rule (1970)
   * one of the most frequently used statistical graphic methods (Wickham and
     Stryjewski 2012) for depicting data from continuous distributions. This
   * illustrates information concerning the location, spread, skewness and tails
@@ -282,7 +282,7 @@ https://github.com/nunompmoniz/IRon
     and defined as
   `MC = med_{xi ≤Q2 ≤xj} h(xi , xj )`, (1) where
     * Q2 is the second quartile (median) and
-    * for all xi ≠ xj the kernel function h is given by 
+    * for all xi ≠ xj the kernel function h is given by
       `h(xi , xj ) = (xj − Q2) − (Q2 − xi ) xj − x i` (2)
 * the following intervals will mark points outside them as potential outliers:
   * if MC ≥ 0, then the interval is [Q1 − 1.5 e−4MC IQR, Q3 + 1.5 e3MC IQR];
@@ -301,7 +301,7 @@ https://github.com/nunompmoniz/IRon
     * for Binomial, Logistic and Poisson distributions there is almost no diff
     * symmetric distributions such as Normal and Student t distributions
       present a slight difference between the two boxplots (blue). Finally, we
-    * heavily skewed distributions (red), 
+    * heavily skewed distributions (red),
       * namely 𝜒 2, Exponential, Gamma, Geometric, LogNormal and Weibull
       * the diff between Tukey’s boxplot and adjusted boxplot is more evident:
       * the number of extreme values (outliers) identified by the latter is
@@ -310,7 +310,7 @@ https://github.com/nunompmoniz/IRon
   points, based on the methodology presented by Ribeiro (2011)
   => obtaining a continuous relevance function such that the extreme values of
   Y are assigned maximum relevance
-  => the upper and lower adjacent values are considered threshold values 
+  => the upper and lower adjacent values are considered threshold values
   Also, the median value of Y is considered as a centrality value of irrelevance
   * Three points compose the set of control points:
     the median value of Y with relevance value equal to zero and

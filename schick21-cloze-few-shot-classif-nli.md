@@ -140,7 +140,7 @@ EACL 2021
     * We transform the above scores into a probability distri q using softmax
     * temperature of T = 2 to obtain a suitably soft distribution
       * Following Hinton+ (2015)
-    * All pairs (x, q) are collected in a (soft-labeled) training set T C 
+    * All pairs (x, q) are collected in a (soft-labeled) training set T C
   3. We finetune a PLM C with a standard sequence classification head on T C
     * The finetuned model C then serves as our classifier for A.  All steps
 

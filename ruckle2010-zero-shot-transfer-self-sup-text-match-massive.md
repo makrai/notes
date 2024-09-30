@@ -60,7 +60,7 @@ EMNLP-2020 arXiv:2010.00980 [cs.CL]
   and introduce a small number of task-specific parameters
 * transform the intermediate representations in every BERT layer to the
   training task while keeping the pre-trained model itself unchanged
-* recent architecture of Pfeiffer+ (2020a) 
+* recent architecture of Pfeiffer+ (2020a)
   * we investigate their adapter combination technique AdapterFusion in §5
   * J Pfeiffer, A Kamath, A Rücklé, K Cho, I Gurevych
     2020a arXiv preprint arXiv:2005.00247

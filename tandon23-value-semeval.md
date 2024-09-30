@@ -10,9 +10,9 @@ SemEval-2023 Toronto, Canada
 * Values behind arguments are often determinants
   to evaluate the relevance and importance of decisions in ethical sense
 * we propose two systems for the same.
-  * Both systems use RoBERTa to encode sentences in each document. 
+  * Both systems use RoBERTa to encode sentences in each document.
   * System1 makes use of features obtained from training models for two
-    auxiliary tasks, whereas 
+    auxiliary tasks, whereas
   * System2 combines RoBERTa with topic modeling to get sentence reprs
   * These features are used by a classification head to generate predictions.
 * result
@@ -26,9 +26,9 @@ SemEval-2023 Toronto, Canada
 # 2 Background. The data made available by the organisers
 
 * a main dataset and three supplementary datasets, namely, Zhihu, Nahj
-  al-Balagha and The New York Times dataset. The 
+  al-Balagha and The New York Times dataset. The
   * main dataset consists of Train/ Validation/Test counts as 5393/ 1896/ 1576.
-  * 9324 arguments on statements which include 
+  * 9324 arguments on statements which include
     * religious texts (Nahj al-Balagha) 279 test
     * political discussions (Group Discussion Ideas)
     * free-text arguments (IBM-ArgQRank-30kArgs)
@@ -38,7 +38,7 @@ SemEval-2023 Toronto, Canada
 * An instance of the dataset can be interpreted as, Arguing in favor
   of/against a `<Conclusion>` by saying `<Premise>` eg tab 1
 
-# 6 Results 
+# 6 Results
 
 * Ablation studies on System1 were conducted as follows. The results
   * Ablation 1.1: System1 without Model_Level1
@@ -54,7 +54,7 @@ SemEval-2023 Toronto, Canada
       validation, improving the robustness of the system
 * It is observed that use of topic modeling improves the performance of the
 * main dataset, the F1score is highest for eleven labels, for System2. Sim-
-* Nahj al-Balagha dataset, for five labels, the the F1-score is 
-  * highest for Ablation 1.2.  For this dataset, 
-  * System2 performs at par with the BERT baseline. On the 
+* Nahj al-Balagha dataset, for five labels, the the F1-score is
+  * highest for Ablation 1.2.  For this dataset,
+  * System2 performs at par with the BERT baseline. On the
 * New York Times dataset, for five labels, the F1-score is highest for Abl 1.1

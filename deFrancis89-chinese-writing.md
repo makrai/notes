@@ -30,7 +30,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   * hE more complicated ones like writing must have had a single origin
   * diffusionists cite evidence of borrowing of some other specific cultural
     items to prove the borrowing of the idea of writing
-  * Near Eastern scholar Cyrus H. Gordon states that 
+  * Near Eastern scholar Cyrus H. Gordon states that
     * China heard about casting bronze from the West
     * China was impelled to invent her own system of writing by diffusion of
       the idea from the Near East" (Gordon 1971:16).
@@ -265,7 +265,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   5. one which combines a rebus-like symbol with
     another symbol giving, generally, a semantic clue to the meaning
     * eg1 sem 亻 person + phon 象 elephant  = 像 image (unambiguous)
-    * eg2 sem 女 female + phon 馬 mǎ horse     = 媽 mā mother 
+    * eg2 sem 女 female + phon 馬 mǎ horse     = 媽 mā mother
     * I call this the SF principle, since it involves joining
       * a semantic element S-such as the symbols for 'person' and 'female'
       * a phonetic element F-such as the symbols for xiàng 'elephant' and mǎ
@@ -277,7 +277,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   * table (adapted from DeFrancis 1984a:84) summarizing
   * the structural classification of
     * 977 Shang characters
-    * 9,353 characters of a second-century dictionary by Xu Shen, and 
+    * 9,353 characters of a second-century dictionary by Xu Shen, and
     * 48,641 characters of the great imperial Kang Xi dictionary, 18th century
 
 |Principle	          |Shang Dynasty	|2nd century  |18th century |
@@ -303,7 +303,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 
 * Boodberg's "few exceptional cases" include chiefly
   single characters of clearly pictographic origin
-  * at most only a few hundred 
+  * at most only a few hundred
   * the number has not increased for some two millennia
   * examples appear in figure 17, comprise only about one percent of the total
   * majority examples in figure 18
@@ -329,7 +329,7 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
 * eg2 Boodberg also cites the case of the following two characters: 目 見
   * the second jiàn 'see'
   * the first
-    * In modern transcription, the first character is mù eye' 
+    * In modern transcription, the first character is mù eye'
     * was also used to write the related word 'see'
       * it represented two related meanings
       * two quite different pronunciations, which have
@@ -356,18 +356,18 @@ From John DeFrancis: Visible Speech: The Diverse Oneness of Writing Systems
   the conventional listing of its underlying principles
   * three-stage development (Boltz)
     * a pictographic stage, which in its pure form could write only the limited
-      part of the language that was clearly picturable; 
+      part of the language that was clearly picturable;
     * a multivalent stage, which included the use of the
       * rebus principle whereby the same symbol might stand for unrelated
         homophonous words, and the
       * use of the same character to represent words semantically related but
-        with different pronunciations; and 
+        with different pronunciations; and
    * a stage in which the ambiguity that grew up with the multivalent use of
     characters was resolved by resort to semantic and phonetic determinatives,
     as in the case of Near Eastern writing (Boltz 1986). The following examples
     illustrate these stages: Stage
 
-             | xiàng 'elephant'|  xiàng 'image'|  mù 'eye'|  jiàn 'see' | 
+             | xiàng 'elephant'|  xiàng 'image'|  mù 'eye'|  jiàn 'see' |
 -------------|-----------------|---------------|----------|-------------|
 Pictographic | ./象            |  (none)       |   ./目   |   (none)    |
 Rebus        | 象              |  象           |   目     |   目        |
@@ -409,12 +409,12 @@ Determinative| 象              |  像           |   目     |   見        |
     characters of this category were formed
     chiefly by adding a phonetic determinative to a semantic base
     * The popular names given to the semantic element reflect this view. It is
-    * sem referred to 
+    * sem referred to
       * frequently as a "radical," sometimes as a "key," the
         * key: the unit (comparable to letters) for filing characters in a dict.
       * sometimes called a "signific" or "determinative."
 
-* Noel Barnard (1978): the phonetic element is the real core 
+* Noel Barnard (1978): the phonetic element is the real core
   * For the most part semantic elements were added to phonetic elements, not
   * the prevailing view among most specialists today. I hold strongly to this
 
@@ -428,7 +428,7 @@ Determinative| 象              |  像           |   目     |   見        |
     these 214 keys, and they were listed in dictionaries under the appropr key
   * artificiality and arbitrariness in all this, as is indicated by the fact
   * the first Chinese dictionary, of the second century bc, listed characters
-    under 540 keys, while 
+    under 540 keys, while
   * the most recent PRC dictionaries: 186, 191, 225, 226, and 250 keys
 
 * phonetic elements? The Chinese have in general paid much less attention to
@@ -449,14 +449,14 @@ Determinative| 象              |  像           |   目     |   見        |
   * majority formed by combining: 214 elements x 3,867 primitives => Derivatives
 
   * did he know, that primitives are pronunciations
-    * term primitives => Marshman correctly assigned their primary role 
+    * term primitives => Marshman correctly assigned their primary role
     * hE he was convinced that the primitives "convey a general idea" that he
     * nL pointed out that eg out of the 16 derivatives formed with a primitive lì
       * (actually there are more)
-      * 11 of the  had exactly the same pronunciation, and 
+      * 11 of the  had exactly the same pronunciation, and
       * all but one had the same initial.
   * his work remains valuable, for it shows that
-    Chinese characters are not all idiosyncratic entities 
+    Chinese characters are not all idiosyncratic entities
 
 * most Chinese characters written within the past two millennia or so, and
   * excluding a few of direct pictographic origin, are actually
@@ -929,7 +929,7 @@ countries like Turkey (Heyd 1954; Bazin 1983), North Korea (Blank 1981), and
 Viet Nam (DeFrancis 1977), where writing systems and writing styles were
 reformed in a matter of a few years or a few decades, it appears that
 controversy over basic problems of writing is likely to drag on indefinitely in
-China.  
+China.
 
 # Notes
 

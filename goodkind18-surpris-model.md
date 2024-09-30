@@ -1,5 +1,5 @@
 Predictive power of word surprisal for reading times is
-  a linear function of language model quality 
+  a linear function of language model quality
 Adam Goodkind, Klinton Bicknell
 Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2018)
 
@@ -37,7 +37,7 @@ Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2018)
   * cannot in principle yield reliable estimates of word probabilities in
     context that are relatively low, say less than 1 in 100, as many word
     probabilities are, without requiring an extremely large number of
-    participants (Levy, 2008).  
+    participants (Levy, 2008).
   * not practical to use the Cloze task to estimate probabilities for large
     datasets on which surprisal is often studied, for which there can easily be
     tens of thousands of contexts that would require estimation.
@@ -85,7 +85,7 @@ Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2018)
 # 3 linear: quantify the ability of surprisals derived from each language model to
 predict reading times and
 * see the extent to which this changes with language model type and quality,
-  assuming that effects of surprisal on reading times are linear. In 
+  assuming that effects of surprisal on reading times are linear. In
 
 # 4 non-linear: we do the same but allow surprisal to have non-linear effects,
 and we additionally use the non-linear models to assess whether there is
@@ -97,7 +97,7 @@ type or quality.
 * a strong effect of language model linguistic quality on the predictive power
   of surprisals estimated from that language model for reading times. This
   * regardless of whether surprisal is modeled as a linear or non-linear
-  * remarkable consistency Across language models 
+  * remarkable consistency Across language models
     * LMs varied by more than a factor of 4 in perplexity, the
     * size of the effect of surprisal was estimated to be the similar and the
       shape of the effect of surprisal was estimated to be roughly linear.

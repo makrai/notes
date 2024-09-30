@@ -78,7 +78,7 @@ Workshop on Computational Linguistics and Clinical Psychology 2022
 * we introduce the DEPression and Anxiety Crowdsourced corpus (DEPAC) as a
   * rich in the diversity of speech tasks and subjects
   * capture the signs of anxiety and depression to make accurate prediction
-  * We also present a set of acoustic and linguistic features extracted 
+  * We also present a set of acoustic and linguistic features extracted
     * incorporates domain knowledge of clinical and machine learning experts
   * we benchmark our dataset with several baseline machine learning models that
     use this set of features

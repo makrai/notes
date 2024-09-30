@@ -23,7 +23,7 @@
   * SWBI ITA dimensions in the considered period at the regional level
   * for some dimensions,
     for which a similar currently available measure provided by Italian
-    official statistics exists, 
+    official statistics exists,
     comparisons are proposed emphasizing novelties, similarities and diffs
 
 # 1 Introduction

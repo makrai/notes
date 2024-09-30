@@ -78,7 +78,7 @@ Sarah Choi, James H Liu, István Csertő, Orsolya Vincze, Éva Fülöp, Tibor P�
   the psychological states of the writer (or reader) measured outside the
   text (Pennebaker & King, 1999; Pennebaker, Mehl, & Niederhoffer, 2003;
   Tausczik & Pennebaker, 2010)
-* NarrCat: how narrative composition constructs psychological meaning 
+* NarrCat: how narrative composition constructs psychological meaning
   * theory-driven
   * particularly phenomena unfolding over time
     (Archer, 1996; Liu, Fisher-Onar, & Woodward, 2014)
@@ -112,19 +112,19 @@ Sarah Choi, James H Liu, István Csertő, Orsolya Vincze, Éva Fülöp, Tibor P�
 * Search words: prevalent terms and labels referring to ... as a group or indiv
   * Māori  (Māori, native aborigine, chief, tribe, and iwi),
   * settlers as a group or individuals (colonist, settler, British, Colonial,
-    European, English, our race, founders, and Pākehā), 
+    European, English, our race, founders, and Pākehā),
   * symbols of the colony’s founding treaty between Māori and settlers
-    (Waitangi and Treaty) and 
-  * general inter-group terminologies (race and ethnicity). 
+    (Waitangi and Treaty) and
+  * general inter-group terminologies (race and ethnicity).
 * The contexts of each returned word and word stem were reviewed to confirm the
   * eg “chief” were included only when referring to a Māori chief, and extracts
   * “British” were included only when referring to British settlers in NZ
 * length of each extract was determined by representation of a single topical
-  discursive unit. This process resulted in a total of 
-  * 218 extracts, with a range from 
+  discursive unit. This process resulted in a total of
+  * 218 extracts, with a range from
   * 0 to 16 extracts identified in any single speech (M = 3.3, SD = 3). The
   * length of individual extracts ranged
-    from a single sentence to several paragraphs 
+    from a single sentence to several paragraphs
     (8-551 words, M = 142.5, SD = 102.4)
 
 ## Analysis by NarrCat
@@ -134,7 +134,7 @@ Sarah Choi, James H Liu, István Csertő, Orsolya Vincze, Éva Fülöp, Tibor P�
   * we combined matches from these modules, which were
     all implemented in the NooJ Linguistic Development Environment
     (Silberztein, 2004)
-* The Hungarian dictionaries of NarrCat were 
+* The Hungarian dictionaries of NarrCat were
   * The English version of NarrCat’s dictionaries are based on it
   * compiled from frequency dictionaries of verbs, nouns, adjectives, and
     noninflected words, each containing 10,000 of the most frequently used
@@ -146,9 +146,9 @@ Sarah Choi, James H Liu, István Csertő, Orsolya Vincze, Éva Fülöp, Tibor P�
     they contain a total of 461 phrases.
 * Figure 1. Local grammar for the exclusion of certain word sequences from hits
   * This local grammar has two pathways
-    * upper pathway recognizes a true hit for the emotion module. The 
+    * upper pathway recognizes a true hit for the emotion module. The
     * lower pathway does not recognize a hit and excludes the word from the
-    * <WF> is a substitute for any word form 
+    * <WF> is a substitute for any word form
 * linguistic analysis determined the lemma and part of speech category for each
   * Stanford CoreNLP Natural Language Processing Toolkit (Manning+ 2014).
 * each lemmatized word form in the texts were checked against the lemmas listed

@@ -28,14 +28,14 @@
 * general
   * The experimental results (UARs) are shown in Table IV and the
   * confusion matrices of the best models are illustrated in Table V. In summary,
-  * the best models can reach a UAR of 
+  * the best models can reach a UAR of
 
 |sleep quality  |fatigue  |anxiety|
 |---------------|---------|-------|
 |44.3 %         |44.4 %   |55.3 % |
 
-  * Among these results, 
-    one best result is achieved by a single model (anxiety) while 
+  * Among these results,
+    one best result is achieved by a single model (anxiety) while
     the other two best results are reached by a late fusion (majority vote)
     strategy of multiple models (sleep quality and fatigue). We
   * promising potential for future emotion-aware IoMT applications

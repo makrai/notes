@@ -86,7 +86,7 @@ https://github.com/SapienzaNLP/srl4e
     * predictions are hard to interpret and more difficult to use in real-world
 * we rely on resources that not only indicate emotions, but also identify their
   semantic constituents, namely, emotional CUEs, EXPERIENCER s, TARGETs and
-  STIMULI 
+  STIMULI
 
 ## Emotion Taxonomy. Among the studies that aim to identify the fundamental
 

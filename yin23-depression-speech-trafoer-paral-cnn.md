@@ -94,7 +94,7 @@ structure, including the improvement scheme of the attention mechanisms
     the rest of the samples formed the training part,
     considering the balance of data distribution between the two classes
     as in [31]
-* The MODMA dataset 
+* The MODMA dataset
   * ref
     * Dubagunta SP, Vlasenko B, Doss MM
       Learning voice source related information for depression detection

@@ -89,7 +89,7 @@ ACL 2020
   distributions wt | W\t are modeled by masking at position t. We include a
   further discussion in Appendix B.
 * This enabled text generation with BERT via Gibbs sampling, leading to the
-   of a related quantity, the 
+   of a related quantity, the
   * sum of logits proposed  for sentence ranking by Wang and Cho, (2019)
   * not evaluated by Wang and Cho
 * Shin+ (2019) extended past research on future-conditional LMs in ASR (Sec 5)
@@ -116,7 +116,7 @@ ACL 2020
   distillation (Hinton+, 2014)
   * Here
     * teacher gives individual token probabilities (|W | inference passes) while
-    * student approximates their sum (one inference pass).  This is 
+    * student approximates their sum (one inference pass).  This is
   * reminiscent of distilling an autoregressive teacher to a parallel student,
     as in the case of WaveNet (Oord +, 2018)
 * Other [MASK]less bidirectional models like XLNet (Yang+, 2019) can also give
@@ -130,20 +130,20 @@ ACL 2020
 * Past work (Chen+, 2017) also computed this quantity with bi-RNNLMs for ASR,
   although such models are not deeply bidirectional like selfattentive MLMs
   (see Section 5).
-* can be used in lieu of perplexities. For example, 
+* can be used in lieu of perplexities. For example,
   * eg during domain adaptation, one can perform early stopping with respect to
-    development PPPL. This is 
+    development PPPL. This is
     * in contrast to MLM accuracy, which is not a continuous loss and is often
       stochastic (eg when performing dynamic masking as in RoBERTa)
   * In Section 4.1, we see that PPPLs naturally separate out sets of acceptable
     and unacceptable sentences.
-* before BERT (Chen+, 2017; Shin +, 2019) 
+* before BERT (Chen+, 2017; Shin +, 2019)
 * we use pretrained BERTs, which are open-vocabulary (subword) bidirectional
-* PPPLs are only comparable under the same subword vocabulary, which 
+* PPPLs are only comparable under the same subword vocabulary, which
   * differs between eg BERT and RoBERTa
   * Normalizing with N as the number of words mitigates this
 * word-normalized PPPLs correlate with (In Appendix C, we show)
-  * domain adaptation, and with 
+  * domain adaptation, and with
   * downstream metrics like ASR and BLEU after rescoring
 
 # 3 Sequence-to-sequence rescoring

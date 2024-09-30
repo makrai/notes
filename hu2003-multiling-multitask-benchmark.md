@@ -317,7 +317,7 @@ training data of all languages jointly
 
 ### Human performance
 
-* For XNLI, PAWS-X, and XQuAD, we obtain human performance 
+* For XNLI, PAWS-X, and XQuAD, we obtain human performance
 * from the English datasets they are derived from, MNLI, PAWS-X, and SQuAD resp
   (Nangia & Bowman, 2019; Zhang+ 2019; Rajpurkar+ 2016)
 * TyDiQA-GoldP, we use the performance estimate of Clark+ (2020)

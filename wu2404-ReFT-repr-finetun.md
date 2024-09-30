@@ -51,7 +51,7 @@ a generic ReFT training library https://github.com/stanfordnlp/pyreft
   Low-rank Linear Subspace ReFT (LoReFT)
   * a parametrisation of ReFT that intervenes on hidden representations
     in the linear subspace spanned by a low-rank projection matrix,
-  * building directly on the distributed alignment search (DAS) method 
+  * building directly on the distributed alignment search (DAS) method
     (Geiger+ [2023b] and Wu+ [2023])
 * We also identify an ablation of this method (DiReFT) that
   trades some performance for increased efficiency
@@ -109,7 +109,7 @@ on top of the frozen pretrained model
   * adding fixed or task-specific steering vectors [Subramani+ 2022,
     Turner+ 2023, Zou+ 2023, Liu+ 2024b, Vogel, 2024, Li+ 2024] or applying
   * concept erasure [Ravfogel+ 2022, Belrose+ 2023, Avitan+ 2024, Singh+ 2024]
-    to the residual stream 
+    to the residual stream
 * can enable a degree of control over pretrained LM generations
   without the need for resource-intensive finetuning [Wu+ 2024a]
 * ie representations induced by pretrained LMs carry rich semantic structure
@@ -204,14 +204,14 @@ on top of the frozen pretrained model
     causal abstraction [Geiger+ 2023a] for model interpretability, and
   * LoReFT builds directly on the distributed interchange intervention method
     of Geiger+ [2023b] and Wu+ [2023]
-  * See also the interchange intervention training (IIT) method   
+  * See also the interchange intervention training (IIT) method
     (Geiger+ [2022], Wu+ [2022], Huang+ [2023c])
   * using representation-based editing of the Transformer stream
     to steer model behavior [Li+ 2024, Zou+ 2023]
 * ReFT advances this line of work by showing one way that such steering can be
   learned, rather than being merely a post hoc analysis step
 * ReFT may creates new causal pathways
-  * The precise ways in which ReFT works 
+  * The precise ways in which ReFT works
   * these methods intervene on representations,
   * hE the causal effect of such interventions may only emerge in the model’s
     upstream computations

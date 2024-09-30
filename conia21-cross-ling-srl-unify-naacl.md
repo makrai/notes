@@ -158,9 +158,9 @@ https://github.com/SapienzaNLP/unify-srl
   * 6 languages: Catalan, Chinese, Czech, English, German and Spanish,
   * significantly varying amounts of training samples, from 400K predicate
     instances in Czech to only 17K in German; we provide an overview of the
-    statistics of each language in Appendix B. CoNLL-2009 is 
+    statistics of each language in Appendix B. CoNLL-2009 is
   * the ideal testbed for evaluating the ability of our unified model to
-    generalize across heterogeneous resources since 
+    generalize across heterogeneous resources since
     each language adopts its own linguistic formalism,
     from English PropBank to PDT-Vallex, from Chinese PropBank to AnCora
 * VerbAtlas (Di Fabio+ 2019), a recently released resource for SRL 5 , with the
@@ -232,7 +232,7 @@ https://github.com/SapienzaNLP/unify-srl
   (Figure 2, right)
 * eg the Chinese PropBank sense 开始.01 can correspond to both start.01 and
   begin.01
-* VerbAtlas is quite distant from the others as 
+* VerbAtlas is quite distant from the others as
   * its frames are based on clustering WordNet synsets that share similar
     semantic behavior,
     rather than enumerating and defining all the possible senses of a lexeme

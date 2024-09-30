@@ -122,8 +122,8 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       exhibits full conditional independence
 * Most studies show that non-autoregressive models typically generate output of
   lower quality then outputs of autoregressive models
-  * nL they are much faster and 
-  * in some domains, such as speech synthesis or machine translation, 
+  * nL they are much faster and
+  * in some domains, such as speech synthesis or machine translation,
     good quality can be reached by using techniques of knowledge distillation
     [49], probability density distillation [48], or iterative refinement [50]
 * some work on non-autoregressive or partially autoregressive models' aim:
@@ -662,9 +662,9 @@ Information 2021, 12(9), 355; https://doi.org/10.3390/info12090355 spec issu nlg
       (MT) system that is trained in supervised fashion as their base model
     * An important difference to Ranzato+ [41]’s approach:
     * an additional layer or “actor-network” to the trained model that will be
-      optimized with RL, while freezing the other, pretrained layers 
+      optimized with RL, while freezing the other, pretrained layers
       * this actor network as a trainable decoder that learns to manipulate the
-        hidden state of the underlying pre-trained RNN and 
+        hidden state of the underlying pre-trained RNN and
       * can be optimized with any given reward function
   * Chen+ [179] present a supervised method to train the decoder. Of course,
     this notion of trainable decoding is conceptually different from an actual

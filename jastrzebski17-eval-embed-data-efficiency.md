@@ -179,7 +179,7 @@ TODO
 
 * algebraic interpretation of word embeddings (Arora+ 2016)
   * decompose word embedding space into a set of concepts
-  * (so each word vector can be well approximated by a sum of few concepts) 9 
+  * (so each word vector can be well approximated by a sum of few concepts) 9
   * can be obtained using standard methods like k-SVD
   * Theoretically, tasks should test for existence of such concepts
 

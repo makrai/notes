@@ -177,9 +177,9 @@ doi: 10.21437/Interspeech.2023-1113
   * we, to remove noise in the labels, use the cooccurring emotions after the
     label processing step presented in Section 3.1 (the original implementation
     used all annotations to estimate the co-occurrence matrix)
-  * transforms the co-occurrence matrix into a penalization matrix P 
+  * transforms the co-occurrence matrix into a penalization matrix P
   * P is integrated into the loss function
-  * We use the BCE variant presented in Chou+ [14] (Eq 3), 
+  * We use the BCE variant presented in Chou+ [14] (Eq 3),
     where Pjz are the entries in matrix P
 * Based on the analyses in Chou+ [14], we also use a weight factor α in Eq 4
   to combine the penalized loss function (P L) and the BCE loss (LBCE),
@@ -220,7 +220,7 @@ doi: 10.21437/Interspeech.2023-1113
 * To investigate whether modern SER systems need calibration
 * we employ the SER architecture proposed by Wagner+ [2]
   * Wagner+ obtained SOTA performance on valence prediction
-    using release 1.7 of the MSP-Podcast corpus 
+    using release 1.7 of the MSP-Podcast corpus
   * Based on results of the study [2], we choose “wav2vec2-L-robust-12”
   * only uses the first 12 transformers of the full wav2vec2-large-robust [2]
   * preserves the performance of the full model with half the transformers
@@ -239,7 +239,7 @@ doi: 10.21437/Interspeech.2023-1113
 
 ## 4.3. Evaluation Metric and Statistical Analysis
 
-* we analyze and optimizes both the performance and calibration of the models 
+* we analyze and optimizes both the performance and calibration of the models
 * metrics to study relationships between the accuracy and the confidence
 
 ### Calibration Metric

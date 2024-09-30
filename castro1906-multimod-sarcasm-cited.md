@@ -13,7 +13,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
   * Most recent works were textual
 * we argue that incorporating multimodal cues can improve the automatic
   * a new sarcasm dataset, Multimodal Sarcasm Detection Dataset (MUStARD),
-    compiled from popular TV shows. MUStARD consists of 
+    compiled from popular TV shows. MUStARD consists of
   * audiovisual utterances annotated with sarcasm labels
   * Each utterance is accompanied by its context of historical utterances in
     the dialogue, which provides additional information on the scenario
@@ -41,30 +41,30 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
   1. we load the audio sample for an utterance as a time series signal with a
      sampling rate of 22050 Hz
   2. remove background noise from the signal by applying a heuristic
-     vocal-extraction method.3 Finally, we 
+     vocal-extraction method.3 Finally, we
   3. segment the audio signal into dw nonoverlapping windows
     to extract local features that include MFCC, melspectogram, spectral
     centroid and their associated temporal derivatives (delta).  Segmentation
     * a fixed length representation of the audio sources which are otherwise
     * All the extracted features are concatenated together to compose a da =
-      283 dimensional joint representation {uai }di=1 for each window.  
+      283 dimensional joint representation {uai }di=1 for each window.
   * The final audio representation of each utterance is obtained by calculating
     the mean across the window segments, ie  ua = d1w (∑i uai ) ∈ Rda .
 
-## Video Features: We extract 
+## Video Features: We extract
 
 * visual features for each frame using a `pool5` layer of an ImageNet (Deng 09)
   pretrained ResNet-152 (He 2016) image classification model
   * preprocess every frame by resizing, center-cropping and normalizing it.  To
   * each utterance, we compute the mean of the obtained dv = 2048 dimensional
-    feature vector uvi for every frame: uv = f1 (∑i uvi ) ∈ Rdv 
+    feature vector uvi for every frame: uv = f1 (∑i uvi ) ∈ Rdv
 * we could use more advanced visual encoding techniques (eg, recurrent neural
   network encoding techniques), we decide to use the same averaging strategy as
   with the other modalities.
 
 # 7 Conclusion
 
-* we developed models that leverage three different modalities, including 
+* we developed models that leverage three different modalities, including
   text, speech, and visual signals
   * We also experimented with the integration of context and speaker info
 * challenges that we believe are important to address in future research work
@@ -78,7 +78,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 
 ## Multiparty conversation: The dialogues represented in our dataset are often
 
-* multimodal ~> better relationship modeling (Majumder 2018), and 
+* multimodal ~> better relationship modeling (Majumder 2018), and
 * exploit models that provide gesture, facial and pose information (Cao 2018).
 
 ## Neural baselines
@@ -93,7 +93,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 
 ## Sarcasm detection in conversational context
 
-* MUStARD is inherently a dialogue level dataset where 
+* MUStARD is inherently a dialogue level dataset where
   we aim to classify the last utterance in the dialogue. In a dialogue, to
 * we utilize conversational context
 * hE key conversation specific factors such as interlocutors’ goals, intents,
@@ -101,7 +101,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 
 ## Main speaker localization
 
-* We currently extract visual features ubiquitously for each frame.  As 
+* We currently extract visual features ubiquitously for each frame.  As
 * gesture and facial expressions are important features for sarcasm analysis,
 * the capability for models to identify the speakers in the multiparty videos
   is likely to be beneficial for the task.  Finally, we believe the resource

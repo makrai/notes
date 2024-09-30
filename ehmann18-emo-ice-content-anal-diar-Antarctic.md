@@ -99,7 +99,7 @@ Journal of Environmental Psychology 60, 112-115
   * Such differences in the emotionality patterns between the two stations
     may be attributed to multiple factors
 * A/another reasonable explanation
-  * the more isolated a setting, the more negativity is expressed 
+  * the more isolated a setting, the more negativity is expressed
     (ships < islands < coastal bases < deep inland bases < remote camps)
     (see, eg Sandal, 2000; Stuster+ 2000)
   * the role of cultural differences in the expression and withdrawal of emo
