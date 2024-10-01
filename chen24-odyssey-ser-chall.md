@@ -12,16 +12,16 @@ Odyssey 2024
 * we: focal loss in optimisation when applying class weighted loss
   * the focal loss is further weighted by prior-based class weights
   * better overall performance, by sacrificing performance on major classes
-* we further employ a majority voting strategy to combine the outputs of an
-  ensemble of 7 models. The models are trained independently, using different
-  acoustic features and loss functions
-* best performance in the challenge, ranking top-1 among 68 submissions
+* we further employ a majority voting strategy to
+  combine the outputs of an ensemble of 7 models. The models are trained
+  independently, using different acoustic features and loss functions
+* best performance in the challenge, ranking 1st among 68 submissions
 * Macro-F1 score of 35.69% and an accuracy of 37.32%
 * from the _Conclusion_
   * The 7 models were trained independently with
     different loss functions and class weights. Specifically, the
     * cross entropy loss and the focal loss were used
-    * Uniform class weights and prior-based class weights are studied. The
+    * Uniform class weights and prior-based class weights are studied
     * the combinations of loss functions and class weights lead to different
       preference on the major classes or the minor classes
 

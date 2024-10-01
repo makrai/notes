@@ -249,7 +249,7 @@ Francisco, bur then we no longer need the separate statement of the initial stat
 Indeed, viewed as an analysis of ordinary sentences about actions, von Wright's
 proposal seems subject co all the difficulties I have already outlined plus the extra
 one that mosr action sentences do not yield a non-trivial description of the initial
-scare (try 'He circled the field', 'He recited the Odyssey', 'He Airted with Olga).
+scare (try 'He circled the field', 'He recited the Odyssey', 'He Airted with Olga').
 
 In two matters, however, it seems ro the von Wright suggests important and
 valuable changes in the pattern of analysis we have been considering, or at least in
