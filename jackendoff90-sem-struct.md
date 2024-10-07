@@ -304,8 +304,8 @@ Jackendoff, Ray S
 
 ### 1.7.2 Focal Values in a Continuous Domain
 
-* a percept whose value in color space is close to focal red is easily
-  categorized as red
+* a percept whose value in color space is close to focal red is
+  easily categorized as red
 
 ### 1.7.3 Preference Rule Systems
 

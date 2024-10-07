@@ -19,11 +19,11 @@ Odyssey 2024
 * Macro-F1 score of 35.69% and an accuracy of 37.32%
 * from the _Conclusion_
   * The 7 models were trained independently with
-    different loss functions and class weights. Specifically, the
+    different loss functions and class weights:
     * cross entropy loss and the focal loss were used
     * Uniform class weights and prior-based class weights are studied
-    * the combinations of loss functions and class weights lead to different
-      preference on the major classes or the minor classes
+    * the combinations of loss functions and class weights lead to
+      different preference on the major classes or the minor classes
 
 # 1. Introduction
 
@@ -72,8 +72,8 @@ Odyssey 2024
     Focal loss for dense object detection
     ICCV, 2017
   * weighted by prior-based class weights or uniform class weights
-    * The prior-based class weights are used to give more preference to minor
-      classes than major classes during training
+    * The prior-based class weights are used to give
+      more preference to minor classes than major classes during training
     * hE over-fitting for minor classes, and thus a reduction in overall perf
     * In order to alleviate this issue, focal loss [15]
       * aims to give higher weights to more difficult samples and
@@ -81,12 +81,12 @@ Odyssey 2024
   * The model trained with the focal loss together with the prior-based class
     weights obtained the best overall performance
   * focal loss + prior-based class weights + ensemble
-    * focal loss 9 prior-based class weights performs worse on major classes
+    * focal loss + prior-based class weights performs worse on major classes
       than the models trained with uniform class weights
   ~> ensemble system is designed to comprise of models with different
     preferences on major classes and minor classes
   ~> SOTA performance in the Odyssey 2024 Emotion Recognition Challenge track-1
-  * Macro-F1 of 35.69%, and has ranked the first among 68 submissions
+  * Macro-F1 of 35.69%, and rank 1 among 68 submissions
 
 # 2. Related Works
 
@@ -167,9 +167,9 @@ Odyssey 2024
 
 ## 3.3. Loss Functions and Class Weights
 
-* loss functions, the focal loss and the cross entropy loss. The loss
+* loss functions, the focal loss and the cross entropy loss
 * can be weighted by the prior-based class weights or uniform class weights
-  Combining loss functions with class weights, four types of optimisation
+* Combining loss functions with class weights: four types of optimisation
 
 ### 3.3.1. Uniform Class Weights and Prior-based Class weights Consider a
 
@@ -263,17 +263,17 @@ Odyssey 2024
     * the Whisper model were trained supervisedly with text transcriptions,
       while the other two models were trained without supervision. These are
     * difference due to the model sizes and the amount of training data used
-* the two loss functions and the two class weights. Generally speaking,
-  different loss functions and class weights yields models that have different
-  preferences for major and minor classes. Specifically, when training with the
+* the two loss functions and the two class weights
+  * Generally: different loss functions and class weights yields models that
+    have different preferences for major and minor classes
   * class weights
-    * uniform class weights, model-6 and the model-7 show good performance on
-      UA but poor performance on WA
-    * Comparing model-7 and model-5, the prior-based class weights give more
-      attention to minor classes, causing a significant improvement in WA but a
-      large drop in UA. This means that
+    * uniform class weights, model-6 and the model-7 show
+      good performance on UA but poor performance on WA
+    * Comparing model-7 and model-5, the prior-based class weights give
+      more attention to minor classes ~>
+      * significant improvement in WA but a large drop in UA
     * ie the prior-based class weights improve the performance on the minor
       classes, but sacrificing the performance on the major classes. The per-
-      formance drop may be due to model-5 over-fitting on major classes. The
-  * focal loss: comparing model-1 and model-5, which shows that
+      formance drop may be due to over-fitting on major classes
+  * focal loss: comparing model-1 and model-5 shows that
     * focal loss helps model-1 reach a better balance between major & minor

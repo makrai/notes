@@ -4,11 +4,11 @@ Odyssey 2024
 
 # Abstract
 
-* We concentrated our efforts on the categorical classification of eight
-* an ensemble of models, each trained independently and then fused at the score
-  level using a Support Vector Machine (SVM) classifier
+* We concentrated our efforts on the categorical classification (eight categs)
+* an ensemble of models, each trained independently and then
+  fused at the score level using a Support Vector Machine (SVM) classifier
   * The models were trained using various strategies, including Self-Supervised
-    Learning (SSL) fine-tuning across different
+    Learning (SSL) fine-tuning
   * modalities: speech alone, text alone, and a combined speech and text
-* This joint training methodology aims to enhance the system's ability to
-* F1-macro of 0.35\% on development set
+* This joint training methodology aims to enhance the system's ability
+* F1-macro of 0.35% on the development set

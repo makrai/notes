@@ -12,7 +12,7 @@ arXiv:2203.07378 [eess.AS]
   * influence of model size and pre-training data on downstream performance,
   * generalisation, robustness, fairness, and efficiency
 * we: a thorough analysis of these aspects on several pre-trained variants of
-  wav2vec 2.0 and HuBERT that we
+  wav2vec 2.0 and HuBERT
   * fine-tuned on the dimensions arousal, dominance, and valence of
     MSP-Podcast (Lotfian and Busso, 2019), while additionally using
   * IEMOCAP and MOSI to test cross-corpus generalisation
@@ -258,9 +258,9 @@ we evaluate SER models for correctness, robustness, and fairness [48]
 
 ## 4.3 [earlier 5.3] Do the models implicitly learn linguistic information?
 
-* To asses how sensitive the models are to linguistic content, we generated a
-  synthesised version of a subset of the test set
-  from the transcriptions of MSP-Podcast.3
+* To asses how sensitive the models are to linguistic content,
+  we generated a synthesised version of a subset of the test set
+  from the transcriptions of MSP-Podcast
 * Figure 4: CCC performance for valence on the original and synthesised
   * performance gaps between the models in Figure 2 are directly linked with
     their ability to predict sentiment. Models reaching a high performance on
