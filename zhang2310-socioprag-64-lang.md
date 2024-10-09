@@ -8,7 +8,7 @@ https://github.com/UBC-NLP/SPARROW
 
 * Instruction tuned large language models (LLMs), such as ChatGPT
 * cross-lingual sociopragmatic meaning (SM)
-  * ie meaning embedded within social and interactive contexts
+  * = meaning embedded within social and interactive contexts
   * not adequately represented in any of the existing benchmarks
 * we present SPARROW, an extensive multilingual benchmark specifically for SM
   * 169 datasets covering 13 task types
@@ -29,7 +29,7 @@ https://github.com/UBC-NLP/SPARROW
 
 * Multilingual LLMs recently (Xue+, 2021; Scao+, 2022)
   * instruction tuning and reinforcement learning from human feedback (RLHF)
-    (Ouyang+, 2022) have further enhanced the zero-shot generalization
+    (Ouyang+, 2022) have enhanced the zero-shot generalization
   * ChatGPT exhibits impressive capabilities in this regard
   * what we call sociopragmatic meaning (SM)
     * some forms of meaning are deeply embedded in social interactions
@@ -64,8 +64,8 @@ https://github.com/UBC-NLP/SPARROW
   * diverse online platforms (eg Twitter, YouTube, and Weibo)
   * extensive evaluation of ChatGPT in comparson to 13 other models
     * size between 110M--7B parameters
-  * we answer multiple questions related to how that LLMs fare across languages
-  * leaderboard: to facilitate future comparisons, modular, interactive
+  * we answer some questions related to how that LLMs fare across languages
+  * leaderboard to facilitate future comparisons; modular, interactive
 
 * tab 1: Zhong+ (2023) Qin+ (2023) Ahuja+ (2023) Laskar+ (2023) Bang+ (2023)
   Lai+ (2023) Das+ (2023) Wang+ (2023) Zhang+ (2023b) Ziems+ (2023)
@@ -144,7 +144,7 @@ https://github.com/UBC-NLP/SPARROW
   * we define a global metric called SPARROW score, which represents
     the unweighted average of all dataset-specific metrics
   * an overall indication of performance on SM tasks
-  * may be dominated by the largest task cluster (i.e., sentiment analysis)
+  * may be dominated by the largest task cluster (ie, sentiment analysis)
     or languages (e.g., languages from Indo-European language family)
 
 ## 3.1 Task Clusters

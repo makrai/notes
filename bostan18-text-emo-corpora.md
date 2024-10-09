@@ -27,8 +27,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 # 1 Introduction
 
 * Emotion detection and classification = mapping words, sentens, & docs to emos
-  * psychological models proposed by eg Ekman (1992), Plutchik (1980) or
-    Russell (1980)
+  * psychological models
+    proposed by eg Ekman (1992), Plutchik (1980) or Russell (1980)
   * emerged from a purely research oriented topic
   * applications include
     * dialog systems (chatbots, tutoring systems),
@@ -81,7 +81,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
     * dominance (perceived degree of control over a given situation)
   * Any emotion is a linear combination of these
 
-## 2.2 annotation procedures (Section 2.2), different
+## 2.2 annotation procedures
 
 * expert annotation (Aman and Szpakowicz, 2007; Strapparava and Mihalcea, 2007;
   Ghazi+, 2015; Li+, 2017; Schuff+, 2017; Li+, 2017)
@@ -108,7 +108,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * some of these assessment approaches exist in parallel to previous research in
 * nL standardized psychological instruments exist (Bradley and Lang, 1994)
 
-## 2.3 domains and topics (Section 2.3), and different
+## 2.3 domains and topics
 
 * different domains and topics
   * self reported emotional events (Scherer and Wallbott, 1994)
@@ -150,7 +150,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   * tales corpus by Alm+ (2005)
   * Kim+ (2017): the relationship between literary genres and emotions
 
-## 2.4 prediction methods (Section 2.4)
+## 2.4 prediction methods
 
 ### Rule-based Algorithms
 
