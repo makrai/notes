@@ -4,8 +4,8 @@ EACL | WASSA Workshop on ... Subjectivity, Sentiment and Social Media Anal 2021
 
 # Abstract
 
-* more nuanced information than sentiment: is the post negative because the
-  user is angry or sad?
+* more nuanced information than sentiment:
+  is the post negative because the user is angry or sad?
 * approaches for these tasks treat only one of the tasks
 * FEEL-IT, a novel benchmark corpus of Italian Twitter posts annotated with
   * four basic emotions: anger, fear, joy, sadness (Ekman, 1992)

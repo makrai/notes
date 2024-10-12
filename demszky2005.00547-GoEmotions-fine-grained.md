@@ -133,10 +133,10 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 
 ## 3.2 Taxonomy of Emotions: we seek to jointly maximize the following
 
-1. greatest coverage in terms of emotions expressed in our data
+1. coverage in terms of emotions expressed in our data
    * we manually labeled a small subset of the data, and ran a pilot task where
      raters can suggest emotion labels on top of the pre-defined set
-2. greatest coverage in terms of kinds of emotional expression
+2. coverage in terms of kinds of emotional expression
   * We consult psychology literature on emotion expression and recognition
     (Plutchik, 1980; Cowen and Keltner, 2017; Cowen+ 2019b)
   * no research that identifies principal categories for emo recog from text

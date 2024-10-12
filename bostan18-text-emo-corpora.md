@@ -20,9 +20,9 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * we: a survey of the datasets
   * aggregate them in a common file format with a common annotation schema
   * the first cross-corpus classification experiments
-  * some corpora are better classified with models trained on a other corpus
-  * For none of the corpora is training on all data altogether better than
-    using a subselection of the resources
+    * some corpora are better classified with models trained on a other corpus
+    * For none of the corpora is training on all data altogether better than
+      using a subselection of the resources
 
 # 1 Introduction
 
@@ -97,15 +97,15 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 * Mohammad (2012) designs two detailed online questionnaires and
   annotate tweets by crowdsourcing
 * social networks -> distant supervision (aka self-labeling in this context),
-  (Mohammad and Kiritchenko, 2015; Abdul-Mageed and Ungar, 2017;
-  De Choudhury+, 2012; Liu+, 2017)
+  * Mohammad and Kiritchenko, 2015; Abdul-Mageed and Ungar, 2017;
+    De Choudhury+, 2012; Liu+, 2017
   * Twitter: one could add a “#joy” hashtag to a happy tweet or on
   * Facebook: one could tag personal posts with a “feeling” and people can show
     an emotional “surprised reaction”. In this last example, two levels of
     * ie both the reader’s and the writer’s emotional state.  Accessing this
 * More challenging is to acquire such data for other domains
 * distinguish between writers’ and readers’ emo (Buechel & Hahn 2017a, 2017b)
-* some of these assessment approaches exist in parallel to previous research in
+* some of these assessment approaches exist in parallel
 * nL standardized psychological instruments exist (Bradley and Lang, 1994)
 
 ## 2.3 domains and topics
@@ -220,8 +220,8 @@ ttps://github.com/sarnthil/unify-emotion-datasets
 
 * 39,740 tweets
 * Part of this data has been used in Microsoft’s Cortana Intelligence Gallery
-* The set of labels is non-standard (see Table 4). It is
-* annotated via crowdsourcing with one label per tweet and
+* The set of labels is non-standard (see Table 4)
+* annotated via crowdsourcing with one label per tweet
 * free download, the license is not specified
 * noisy: the data is comparably noisy
 

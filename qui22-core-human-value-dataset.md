@@ -91,7 +91,7 @@ https://liang-qiu.github.io/ValueNet/
 * our contributions are two-fold
   * a large-scale dataset ValueNet for the modeling of human values that are
     well-defined in intercultural research
-  * [apply] the value model learned from ValueNet to several EQ-related tasks
+  * we apply the value model learned from ValueNet to several EQ-related tasks
     and demonstrate its usage for building a value-driven dialogue system
   * Our methodology can be generalized to
     * interactive situations in socially aware dialogue systems

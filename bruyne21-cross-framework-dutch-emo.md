@@ -5,9 +5,9 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 
 # Abstract
 
-* Research usually focuses on emotion classification, but performance tends to
-  be rather low, especially with more advanced emotion categories
-  that are tailored to specific tasks and domains
+* Research usually focuses on emotion classification, but 
+  performance tends to be rather low, 
+  esp with emotion categories that are tailored to specific tasks and domains
 * we propose the use of the dimensional emotion representations (VAD), in an
   emotion regression task.  Hypothesis:
   * VAD can improve performance of the classification task
@@ -61,7 +61,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
     the classification task would therefore be an interesting line of research
 * two research questions: can dimensional reprs
   * serve as an aid in the prediction of emotion categories and
-  * contribute in tailoring label sets to specific tasks and domains?  Our
+  * contribute in tailoring label sets to specific tasks and domains?
 * we make use of the EmotioNL dataset [13]
 * We examine three cross-framework transfer methodologies, namely
   * multi-task setting, the VAD regression task and classification task are
@@ -70,10 +70,10 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
     regression and one for emotion classification. We will investigate whether
   * pivot method, using solely dimensional representations.  The code is
 
-# 2, related work on the combination of categorical and dimensional
+# 2 related work on the combination of categorical and dimensional
 
 * Our previous work on Dutch emotion detection focused on the prediction of the
-  classes joy, love, anger, fear, sadness or neutral and VAD
+  classes {joy, love, anger, fear, sadness, or neutral} and VAD
   * in Dutch Twitter messages and captions from reality TV-shows [13]
   * classification results were low
     (54% accuracy for tweets and 48% for captions)
@@ -88,7 +88,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
     eg Stevenson+ [19] and Buechel and Hahn [20,21]
     * scores for valence, arousal and dominance were used to predict
       intensity values for the basic emotion categories
-      happiness, anger, sadness, fear and disgust,
+      {happiness, anger, sadness, fear, and disgust},
       and vice versa
     * linear regression [19], a kNN model [20] and
       a multi-task feed-forward network [21] were used
@@ -100,9 +100,10 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   * Figure 1 shows the positions of Ekman’s basic emotions in the VAD space,
     based on the scores of these terms in Mehrabian and Russell [12]
   * Calvo and Mac Kim apply this idea directly to emotion detection [22]
-    * lexicon scores for emotion words related to the categories anger/disgust,
-      fear, joy and sadness by looking them up in the Affective Norms for
-      English Words (ANEW) [23], and map the center of each of these categories
+    * lexicon scores for emotion words related to the categories
+      {anger/disgust, fear, joy, and sadness} by looking them up in the
+      Affective Norms for English Words (ANEW) [23], and
+      map the center of each of these categories
     * Then, they calculate VAD scores for sentences (again using ANEW)
     * By computing cosine similarity between the sentence and the emo categs
   * no annotated categories are needed, in contrast to the previously discussed
@@ -121,7 +122,7 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
       reality TV-shows (Blind getrouwd; Bloed, zweet en luxeproblemen; Ooit)
       * more or less equally distributed over the shows (335/331/334 instances)
 * All data were annotated with both categorical labels and dimensions. Eg tab 1
-  * categorical annotation: 1 of joy, love, anger, fear, sadness, or neutral
+  * categorical annotation: 1 of {joy, love, anger, fear, sadness, or neutral}
   * The dimensional annotations are real-valued scores from 0 to 1
 
 ## 3.2 Experimental setup
@@ -163,9 +164,9 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   shown in Table 3 (at this point, love and neutral are not taken into consid)
 
 ```python
-if V < 0.5 and A > 0.5 and D > 0.5 :
+if V < 0.5 and A > 0.5 and D > 0.5:
   class ← anger
-elif V < 0.5 and A > 0.5 and D < 0.5 :
+elif V < 0.5 and A > 0.5 and D < 0.5:
   class ← fear
 elif V > 0.5 and A > 0.5 and D < 0.5:
   class ← joy
@@ -182,7 +183,7 @@ else:
 
 # 4 Results
 
-# 5 Discussed
+# 5 Discussion
 
 * The results in Section 4 suggest that
   * VAD dimensions can help in predicting emotional categories, as the
@@ -235,8 +236,8 @@ else:
   multi-framework) and the pivot model
   * we randomly select a number of instances and discuss their predictions
   * Tweets/Captions: Figures 9–11/12--14
-  * the base model’s accuracy was higher for the Tweets, the confusion matrices
-  * there are less misclassifications per class in Captions, which corresponds
+  * the base model’s accuracy was higher for the Tweets
+  * there are less misclassifications per class in Captions
     * overall higher macro F1 score (0.372 compared to 0.347)
 * the classifiers perform poorly on the smaller classes (fear and love)
 * meta-learner
@@ -260,7 +261,7 @@ else:
 
 ## 5.3. Future Work
 
-* other datasets and other languages than Dutch
+* other datasets and languages than Dutch
 * different model architectures for the pivot method
 * The pivot method for mapping to other label sets
 * other modalities, eg facial emotion recognition (FER)

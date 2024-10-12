@@ -7,26 +7,27 @@ https://github.com/SapienzaNLP/srl4e
 # Abstract
 
 * a single sentence may express multiple, sometimes contrasting, sentims & emos
-  * each with its own experiencer, target and/or cause. To this end, over the
-  * manually annotated data in order to investigate the capabilities of
-  * systems to capture the semantic constituents of emos. However, currently
-  * hE datasets are heterogeneous in size, domain, format, splits, emotion
-    categories and role labels ~> comparisons across different works difficult
+  * each with its own experiencer, target and/or cause
+  * manually annotated data in order to investigate the capabilities
+  * systems to capture the semantic constituents of emos
+  * hE datasets are heterogeneous in size, domain, format, splits, emo categs,
+    and role labels ~> comparisons across different works are difficult
 * we: a unified evaluation framework focused on
   Semantic Role Labeling for Emotions (SRL4E), in which
   * we unify several datasets tagged with emotions and semantic roles by using
-    a common labeling scheme. We use SRL4E as a benchmark to
-* we evaluate how modern pretrained language models perform and analyze where
+    a common labeling scheme
+* we evaluate how modern pretrained language models perform + analysis
 
 # 1 Intro
 
-* the automatic identification, categorization and analysis of emotions in
-  texts has been beneficial in hate speech detection (Markov+ 2021), sarcasm
-  detection (Chauhan+ 2020), and modeling political discourse (Cabot+ 2021)
-* Deep Learning techniques in emotion detection (Chatterjee+ 2019). However,
+* applications of the automatic text emo identification, categ and analysis
+  * hate speech detection (Markov+ 2021), 
+  * sarcasm detection (Chauhan+ 2020),
+  * modeling political discourse (Cabot+ 2021)
+* Deep Learning techniques in emotion detection (Chatterjee+ 2019)
 * annotate corpora with emotions manually (Bostan and Klinger, 2018)
 * a short text, even a single sentence, may contain multiple – at times
-  concurring, at other times contrasting – sentiments and emotions. And not
+  concurring, at other times contrasting – sentiments and emotions
   * two emotions in the same sentence may be experienced, targeted, and/or
     caused by different semantic constituents which,
   * similarly to predicate-argument structures in Semantic Role Labeling (SRL),
@@ -34,10 +35,9 @@ https://github.com/SapienzaNLP/srl4e
 * potential applications in social media analysis, abuse detection, and other
   actively studied areas in NLP (Rajamanickam+ 2020) of such
 * datasets aimed at investigating the capabilities of modern systems to parse
-  emotional events (Oberländer+ 2020). Unfortunately, despite the increasing
-* heterogeneous structures and characteristics, ranging from varying sizes to
-  different domains, file format, splits and, most importantly, non-overlapping
-  emotion categories. We argue that this heterogeneity obstructs, or at least
+  emotional events (Oberländer+ 2020)
+* heterogeneous structures and characteristics: size, domains, file format,
+  splits and, most importantly, non-overlapping emotion categories
 * we introduce a unified framework for Semantic Role Labeling for Emotions
   * In SRL4E, we unify several gold but heterogeneous datasets that contain
     annostations both for emotions and for their semantic constituents, so as
@@ -55,7 +55,7 @@ https://github.com/SapienzaNLP/srl4e
 
 ## Emotion classification datasets. Currently, there are a wide variety of
 
-* different domains and using different annotation schemes. Among others, we
+* different domains and using different annotation schemes. Among others,
   * emotional experiences (Scherer and Wallbott, 1994)
   * children’s fairy tales (Alm+ 2005)
   * news headlines (Strapparava and Mihalcea, 2007)
@@ -65,19 +65,21 @@ https://github.com/SapienzaNLP/srl4e
   * dialogs (Li+ 2017; Chatterjee+ 2019)
   * Facebook posts (Preoţiuc-Pietro+ 2016)
   * tweets (Mohammad, 2012; Mohammad and Bravo-Marquez, 2017;
-    CrowdFlower, 2016; Liu+ 2017; Schuff+ 2017) due to their tendency to have
-    * dense emotional content. To meet such a diversity of contents and
+    CrowdFlower, 2016; Liu+ 2017; Schuff+ 2017)
+    * dense emotional content
 * Bostan and Klinger (2018) created a unified resource for emotion classif
   comprising many of the aforementioned datasets, while
 * Tafreshi and Diab (2018) added an additional clause-level annotation layer to
   some existing resources
 * More recent efforts, such as
 
-|GoEmotion (Demszky+ 2020)|XED (Öhman+ 2020)     |CancerEmo (Sosea Caragea 2020)  |
-|-------------------------|----------------------|--------------------------------|
-|Reddit comments          |multilingual subtitles|blog posts about health problems|
+|------------------------------|----------------------------------|
+|GoEmotion (Demszky+ 2020)     | Reddit comments                  |
+|XED (Öhman+ 2020)             | multilingual subtitles           |
+|CancerEmo (Sosea Caragea 2020)| blog posts about health problems |
 
-  * their annotations are sentencelevel and, therefore, introduce
+
+  * their annotations are sentence-level
     * an oversimplification: they indicate only the overall sentiment and/or
       emotion that appears in a given text, neglecting the cases in which a
       short text, even a single sentence, may express multiple emotions
@@ -88,21 +90,22 @@ https://github.com/SapienzaNLP/srl4e
   semantic constituents, namely, emotional CUEs, EXPERIENCER s, TARGETs and
   STIMULI
 
-## Emotion Taxonomy. Among the studies that aim to identify the fundamental
+## Emotion Taxonomy
 
 * Ekman (1992) proposed a set of six categories: anger, disgust, fear, joy,
   sadness and surprise
 * Plutchik (1980): the same set with two additions: anticipation and trust
 * Russell (1980) proposed the circumplex model where every emotion can be
   described by three continuous values: arousal, dominance and valence. More
-* more fine-grained sets of emotions, ranging from 12 (Cowen+ 2019b) to 28
-  categories (Cowen and Keltner, 2020), devised depending on the
-  context of the study, eg speech prosody and facial expressions
+* more fine-grained sets of emotions, ranging
+  from 12 (Cowen+ 2019b) to 28 categories (Cowen and Keltner, 2020),
+  * devised depending on the modality of the study,
+    eg speech prosody and facial expressions
 * analysis of Demszky+ (2020) over a fine-grained set of 28 emotions suggests
   * a large number of categories results in more frequent disagreements on
-    similar classes (such as anger and annoyance, or excitement and joy) which,
-    ~> low inter-annotator agreement and unbalanced distributions among some of
-    these categories
+    similar classes (such as anger and annoyance, or excitement and joy) ~>
+    * low inter-annotator agreement and 
+    * unbalanced distributions among some of these categories
 * we adopt Plutchik’s Wheel of Emotions (Plutchik, 2001), which provides
   clearly distinct and well-defined coarse-grained categories, whose
   composition can be used to virtually describe all other fine-grained sets
@@ -111,7 +114,7 @@ https://github.com/SapienzaNLP/srl4e
 
 ## Emotions and SRL. Over the past few years, automatic systems for
 
-* SRL has achieved impressive performance in predicate-argument relation label
+* SRL: impressive performance in predicate-argument relation labeling
   (Shi and Lin, 2019; Conia and Navigli, 2020; Blloshmi+ 2021; Conia+ 2021)
   * has long become useful tools in several downstream tasks, from
     Question Answering (He+ 2015) to Machine Translation (Marcheggiani+ 2018)
@@ -121,20 +124,20 @@ https://github.com/SapienzaNLP/srl4e
   * emotional CUEs can be seen as particular types of predicates, and their
     semantic constituents as their arguments
 * datasets for emotion detection that also provide this kind of more granular
-  semantic information. In particular
+  semantic information
   * Aman and Szpakowicz (2007) and Liew+ (2016) released corpora that indicate
     multiple emotions and their corresponding emotion CUEs in each sentence;
   * Ghazi+ (2015) and Gao+ (2017) indicate the cause of an emotion, with the
-    latter providing such annotations both in English and in Chinese. Finally,
+    latter providing such annotations both in English and in Chinese
   * Mohammad+ (2014), Mohammad+ (2015), Kim and Klinger (2018) and
     Bostan+ (2020)
     * annotations for emotion CUEs, EXPERIENCERs, TARGETs and STIMULI,
-    * hE different sets of emotions in different domains. This means that the
+    * hE different sets of emotions in different domains
 * btw
-  * Bostan and Klinger (2018) for sentence-level Emotion Classification and
-  * Raganato+ (2017) for Word Sense Disambiguation. In
-* SRL4E, not only/but do we
-  * aggregate the resources under the same task formulation, but we also
+  * Bostan and Klinger (2018) for sentence-level Emotion Classification
+  * Raganato+ (2017) for Word Sense Disambiguation
+* SRL4E, not only/but
+  * aggregate the resources under the same task formulation
   * manually correct their inconsistencies and unify the different emo schemes
 
 # 3 SRL4E
@@ -143,16 +146,16 @@ https://github.com/SapienzaNLP/srl4e
 
 ,,,
 
-### NTCIR 13 ECA.  A part of the NTCIR 13 Emotion Cause Analysis task.  It
+### NTCIR 13 ECA.  A part of the NTCIR 13 Emotion Cause Analysis task
 
 * 1,826 unique sentences from English novels and
 * 2,022 unique sentences from Chinese news, annotated using Ekman’s classes
 * emotion keywords and causes are annotated, CUE and STIMULUS respectively
 
-### REMAN. Relational EMotion ANnotation by Kim and Klinger (2018), is a corpus
+### REMAN. Relational EMotion ANnotation by Kim and Klinger (2018), a corpus
 
 * 1,720 fictional text excerpts from Project Gutenberg. These documents were
-* annotation scheme included emotion categories based on Plutchik’s set, CUE,
+* annotation scheme includes emotion categories based on Plutchik’s set, CUE,
   EXPERIENCER, TARGET, STIMULUS, named entities, events and coreferences,
 * For some sentences, we automatically identified and manually corrected some
   typos in order to increase the overall quality of this dataset

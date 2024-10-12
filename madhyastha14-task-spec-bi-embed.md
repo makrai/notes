@@ -17,12 +17,12 @@ Pranava Swaroop Madhyastha, Xavier Carreras, Ariadna Quattoni
 * Unsupervised approaches mainly not for a specific task
   * rather a variety of tasks
 * unsupervised approaches can be roughly categorized into
-  * (a) clusters induced using a notion of distributed similarity,
+  1. clusters induced using a notion of distributed similarity,
     * such as the method by Brown+ (1992);
-  * (b) multilayer neural network to extract features from the data
+  1. multilayer neural network to extract features from the data
     * Morin and Bengio, 2005; Mnih and Hinton, 2007; Bengio and Senecal 2008;
       Mnih and Hinton, 2009
-  * (c) pure distributional approaches
+  1. pure distributional approaches
     * Sahlgren, 2006;
       * The Word-Space Model: Using distributional analysis to represent
       * syntagmatic and paradigmatic relations between words in

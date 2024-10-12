@@ -8,7 +8,7 @@ Conference on Language, Data and Knowledge 2023
   using the Valence Arousal Dominance (VAD) framework
 * Emotion analysis lacks large, standard, and unified datasets
 * we map diverse emotions from different datasets into four categories:
-  joy, anger, fear, and sadness using the VAD framework
+  {joy, anger, fear, and sadness} using the VAD framework
   * This process creates multidimensional emotional scores that are consistent
     across datasets, regardless of the number of emotions included
 * we address “weak emotions” by annotating such instances with a neutral VAD

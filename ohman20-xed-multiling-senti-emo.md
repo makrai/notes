@@ -45,13 +45,13 @@ https://github.com/Helsinki-NLP/XED
 
 # 2 Related work
 
-* Datasets created for sentiment analysis have been available for researchers
+* Datasets created for sentiment analysis
   * since at least the early 2000s (Mäntylä+ 2018)
   * generally binary or ternary annotation scheme (positive, negative + neut)
   * eg Blitzer+ (2007)
   * traditionally based on review data eg Amazon product reviews, or movie rev
     (Blitzer+ 2007; Maas+ 2011; Turney, 2002)
-* emotion: most emotion datasets on the other hand use Twitter as a source and
+* emotion: most emotion datasets use Twitter as a source and
   individual tweets as level of granularity
   (Schuff+ 2017; Abdul-Mageed and Ungar, 2017; Mohammad+ 2018)
   * emotion taxonomies used are often based on
@@ -124,7 +124,7 @@ https://github.com/Helsinki-NLP/XED
     Tokuhisa+ (2008) and Demszky+ (2020) are better at crossing domains
     at the cost of evaluation metrics
 
-## 2.2 Annotation Projection
+## 2.2 Annotation Projection [ie translation]
 
 * affect categories are quite universal (Cowen+ 2019; Scherer & Wallbott, 1994)
 * they should also be to a large degree retained in translation

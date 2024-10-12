@@ -1,5 +1,5 @@
 EmoEvent: A Multilingual Emotion Corpus based on different Events
-FM Plaza del Arco, Carlo Strapparava, L. Alfonso Urena Lopez, Maite Martin
+FM Plaza del Arco, Carlo Strapparava, L Alfonso Urena Lopez, Maite Martin
 LREC 2020
 
 # Abstract
@@ -15,7 +15,7 @@ LREC 2020
   * seven emotions, six Ekman’s basic emotions plus the “neutral or other
     emotions”, was labeled on each tweet by 3 Amazon MTurkers
   * 8,409 in Spanish and 7,303 in English were labeled
-  * In addition, each tweet was also labeled as offensive or no offensive
+  * In addition, each tweet was also labeled as offensive or not offensive
 * We report some linguistic statistics about the data
   * difference between English and Spanish speakers when they express emotions
     related to the same events

@@ -1,5 +1,6 @@
 Dimensional Emotion Detection from Categorical Emotion
-Sungjoon Park, Jiseon Kim, Seonghyeon Ye, Jaeyeol Jeon, Hee Young Park, Alice Oh
+Sungjoon Park, Jiseon Kim, Seonghyeon Ye, Jaeyeol Jeon, Hee Young Park,
+  Alice Oh
 arXiv:1911.02499
 
 # Abstract
@@ -47,9 +48,9 @@ arXiv:1911.02499
     by Best-Worst Scaling (Kiritchenko and Mohammad, 2017)
 * we approach this problem with a novel and more efficient method to
   predict VAD scores from existing corpora annotated with categorical emotions
-  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
-   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
-   Shahraki and Zaiane, 2017; Mohammad+ 2018)
+  * Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
+    Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
+    Shahraki and Zaiane, 2017; Mohammad+ 2018
 * we propose a framework to learn the VAD scores of the label words obtained
   from the NRC-VAD lexicon (Mohammad, 2018)
   * fine-tuning a pre-trained language model RoBERTa (Liu+ 2019)
@@ -94,12 +95,12 @@ arXiv:1911.02499
     we minimize the squared Earth Mover’s Distance (EMD) loss (Hou+ 2017)
     between them to consider the order of labels
 
-## Predicting Continuous VAD Scores (Fig. 1d)
+## Predicting Continuous VAD Scores (Fig 1d)
 
 * We compute the expectations of each predicted conditional distris of V, A, D
   to predict the continuous VAD scores
 
-## Predicting Categorical Emotion Labels (Fig.  1c)
+## Predicting Categorical Emotion Labels (Fig 1c)
 
 * pick
   * single-label, Eq 9: the emotion label with the maximum prob
@@ -213,9 +214,9 @@ arXiv:1911.02499
   * adversarial learning (Zhu+ 2019),
   * ensemble learning (Akhtar+ 2019)
 * sentences annotated with basic categorical emotions for VAD score prediction
-  (Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
-   Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
-   Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020)
+  * Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
+    Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
+    Shahraki and Zaiane, 2017; Mohammad+ 2018; Demszky+ 2020
   * more common than VAD
   * commonly used for emotion classification
     * we use them to predict VAD scores from categorical model of emotion

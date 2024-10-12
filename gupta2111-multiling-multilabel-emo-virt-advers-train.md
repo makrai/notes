@@ -2,13 +2,15 @@ Multilingual and Multilabel Emotion Recognition using Virtual Adversarial Train
 Vikram Gupta
 arXiv:2111.06181 [cs.CL]
 
+# Abstract
+
 * Virtual Adversarial Training (VAT) has been effective in robust learning
   * supervised and semi-supervised settings for both computer vision and NLP
   * not yet for multilingual and multilabel text classification
 * we explore VAT for multilabel emotion recognition with a focus on leveraging
   unlabelled data from different languages to improve the model performance
-  * extensive semi-supervised experiments on SemEval2018 multilabel and
-    multilingual emotion recognition dataset
+  * extensive semi-supervised experiments on
+    SemEval2018 multilabel and multilingual emotion recognition dataset
   * performance gains of 6.2% (Arabic), 3.8% (Spanish) and 1.8% (English) over
     supervised learning with same amount of labelled data (10% of train data)
   * improve the existing SOTA by 7%, 4.5% and 1% (Jaccard Index)
@@ -26,13 +28,13 @@ arXiv:2111.06181 [cs.CL]
     * Efficacy of VAT for multilingual and multilabel setup
   * semi-supervised learning in a multilingual and multilabel emotion classif
   * semi-supervised Virtual Adversarial Training (VAT, Miyato+ 2018) for
-    multilabel emotion classification using contextual models and perform
+    multilabel emotion classification using contextual models
   * extensive experiments to demonstrate that
     unlabelled data from other languages `L_ul` improves the classification on
     the target language L tgt
     * competitive performance by reducing the amount of annotated data
       * ie cross-language learning. To effectively leverage the multilingual
-  * we use multilingual contextual models for representing the text across
+  * we use multilingual contextual models for representing the text
     * comparison to monolingual contextual models to understand the performance
     * explore the advantages of domain-adaptive and task-adaptive pretraining
       of models for our task and observe substantial gains
@@ -42,7 +44,7 @@ arXiv:2111.06181 [cs.CL]
       three languages English, Spanish and Arabic and demonstrate the
     * semi-supervised learning across languages. To the  best of our knowledge,
   * our study is the first one to explore semi-supervised adversarial learning
-    across different languages for multilabel classification. In
+    across different languages for multilabel classification
 * contributions of our work are the following:
   * We explore Virtual Adversarial Training (VAT) for semi-supervised
     multilabel classification on multilingual corpus
@@ -56,7 +58,7 @@ arXiv:2111.06181 [cs.CL]
 
 # 2 Related Work
 
-* Semi-supervised learning is an important paradigm for tackling the scarcity
+* Semi-supervised learning is an important paradigm for tackling data scarcity
   * large amount of unlabelled data along with small amount of labelled data
     (Yang+ 2021, Van Engelen and Hoos, 2020)
   * Early approaches used self-training for leveraging the model’s own
@@ -69,16 +71,16 @@ arXiv:2111.06181 [cs.CL]
   * Ladder networks (Laine and Aila, 2016),
     Mean Teacher networks (Tarvainen and Valpola, 2017) are another way for
     * temporal and model-weights are ensembled.  Another popular direction
-  * adversarial training where the
-    * data point is perturbed with random or carefully tuned perturbations to
-      create an adversarial sample. The model is then encouraged to maintain
-      consistent predictions for the original sample and the adversarial sample
-    * initially for developing secure and robust models to prevent attacks
-      (Goodfellow+ 2014, Xiao+ 2018, Saadatpanah+ 2020)
-    * improve both robustness and generalization for
-      classification (Miyato+ (2016)), MT (Cheng+ (2019)) and GLUE (Zhu+ 2019)
-    * semi-supervised image and text classification, substantial improvements
-      * Miyato+ (2016), Sachan+ (2019), Miyato+ (2018)
+* adversarial training
+  * data point is perturbed with random or carefully tuned perturbations to
+    create an adversarial sample. The model is then encouraged to maintain
+    consistent predictions for the original sample and the adversarial sample
+  * initially for developing secure and robust models to prevent attacks
+    (Goodfellow+ 2014, Xiao+ 2018, Saadatpanah+ 2020)
+  * improve both robustness and generalization for
+    classification (Miyato+ (2016)), MT (Cheng+ (2019)) and GLUE (Zhu+ 2019)
+  * semi-supervised image and text classification, substantial improvements
+    * Miyato+ (2016), Sachan+ (2019), Miyato+ (2018)
 * Emotion recognition (Yadollahi+ 2017, Sailunaz+ 2018)
   * taxonomies of emotions suggested by
     Plutchik wheel of emotions (Plutchik, 1980) and Ekman, (1984) have been
@@ -98,8 +100,8 @@ arXiv:2111.06181 [cs.CL]
       emojis (Felbo+ 2017), hashtags (Mohammad, 2012) or
       pretraining emotion specific embeddings and language models
       (Barbieri+ 2021, Ghosh+ 2017)
-* contextual models like BERT (Devlin+ 2018), Roberta (Liu+ 2019) etc, the
-  * classification has been revolutionized as these models are able to learn
+* contextual models like BERT (Devlin+ 2018), Roberta (Liu+ 2019) etc
+  * classification has been revolutionized
   * across different languages and domains (Hassan+ 2021, Barbieri+ 2021)
     * Hassan Alhuzali and Sophia Ananiadou. 2021
       Spanemo: Casting multi-label emotion classification as span-prediction
