@@ -1,3 +1,7 @@
+Understanding RNN
+Goldberg
+Blackbox 2018
+
 # Q1: What is encoded/captured in a vector? 27
 
 * Yossi Adi, Einat Kermany, Yonatan Belinkov, Ofer Lavi, Y Goldberg\
