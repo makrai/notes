@@ -64,17 +64,17 @@ M. Krifka (ed.). Genericity in Natural Language. Proceedings of the 1988 Tübing
   expressions in Germon.
 * Stage-level pred i c oles
 a wei1 fast ol l e FIUchllinge i n dteser Stadt umgekommen sind
-  since almost o11 refugees i n this ctty perished ore
-  Since almost o11 of the refugees In this ctty perished
-  Since almost o11 of the refugees perished in this ctty
-(5) weil fhn fost o11e FJohe in diesem Bell gebissen hoben
+  since almost all refugees i n this ctty perished ore
+  Since almost all of the refugees In this ctty perished
+  Since almost all of the refugees perished in this ctty
+(5) weil fhn fost alle FJohe in diesem Bell gebissen hoben
     since him almost an fleas in this bed bitten have
     since oJmost oll of the fleas tn lhts bed bit him
     since almost oll the fleas btl htm tn this bed
-(6) weiJ fast , o11e Antrogst e11er i n diesem Wortesoal sossen
-    since almost o11 petiti oners tn this wotting room sal
-    since almost o11 of the petitioners i n lhts woiling room were sitting
-    since almost o11 the petitioners were sitting i n this wailing room
+(6) weiJ fast , alle Antrogst e11er i n diesem Wortesoal sossen
+    since almost all petiti oners tn this wotting room sal
+    since almost all of the petitioners i n lhts woiling room were sitting
+    since almost all the petitioners were sitting i n this wailing room
 (7) weil uns heute fast a 1 1 e Kandtdaten beei ndruckt haben
     since us today almost all candidates I mpressed have
     since almost all of today·s candidates i mpressed us
@@ -1006,7 +1006,7 @@ the hypothesis that there I s a tight connection between surface '
 structure VPs tsnd the nuclettr scope of quantifier representations.
 The two issues are closely related, of course, with VP-external
 versus VP-1nternal subjects providing the link.
-In the remainder or this paper, I am go1ng to pursue both of those
+In the remainder or this paper, I am going to pursue both of those
 issues further. We will look at a diverse body of data jointly
 supporting the conclusions we have reached so far.
 
@@ -1360,7 +1360,7 @@ As for a pumpkin, we didn't buy one
 If singular negative qaantifier phrases can optiona11y be 'true'
 quantifiers, they should be able to appear as subjects of
 individual-level predicates that are not unaccusatives. They can
-indeed, as shown by the fo11owing examples.
+indeed, as shown by the fallowing examples.
 (55)
 
 wei I kein Arzt
@@ -2187,7 +2187,7 @@ main predicate of the sentence, it follows that a variable ranging
 over spatiotemporal locations must appear in the res trictive clause
 of every tensed sentence whose mafn predicate is stage-level. This
 ftact ts importtant for our discussion of _when_-cltauses throughout
-this paper. Take the fo11owing example from sectton 2.
+this paper. Take the fallowing example from sectton 2.
 (76)
 
 When Mary speaks French, she speaks It well
@@ -2258,7 +2258,7 @@ have (x,y))
 
 (77') is true i f and only H most pairs or tndtvtduals that satisfy the
 restrictive clause of (77') also satisfy its nuclear scope. Imagine
-now a st tuation with fifty houses. 20 of the houses are o1 d , 30 are
+now a st tuation with fifty houses. 20 of the houses are old , 30 are
 new. Each of the old houses has five fire places. The new houses
 have only one. This means that there are 130 house/fire place pairs
 that satisfy the restrictive clause of (77'). Out of those 130 pairs,
@@ -2979,7 +2979,7 @@ But this meons that the verb _odore_ Is being pushed towcrds o
 stcge-1evel predicate.
 let us now examine on unaccusottve case. Toke the verb •belong to''.
 The tests proposed earlier establish that i t I s individual-level,
-unaccusatlve, and that its object can be scrambled. The fo11ow1ng
+unaccusatlve, and that its object can be scrambled. The fallow1ng
 sentence expresses a general ization from real estate catalogues.
 (9 1)
 
@@ -3074,7 +3074,7 @@ American Dialect Society
 Amertan Soctotootcaf Association
 A3ociecion Venezolena de lf ngutstica
 Msociatton for Dlmputatiooal U ll9Uistic3
-Aatatton for S1Jmbo11c logic
+Aatatton for S1Jmballc logic
 Australian ltnguietfc Society
 Berkelev linguistic Societv
 Cenodian ltngutstfc Association
@@ -3718,7 +3718,7 @@ various audiences. I'd also like tu (nank my colleagues Emmon Bach and
 
 Barbera Partee for very helpful conversations tn connection with our NSF
 gr3nt. During the p3st ye3rs, I h3ve been working with l<artn3 Wilkinson,
-Nlrlt Kadmon, Steve Berman, and No11y Otestng on related topics, and thetr
+Nlrlt Kadmon, Steve Berman, and Nally Otestng on related topics, and thetr
 Insights and proposals had a considerable and vtstble Influence on the
 present work. Usa Selkirk, Irene Helm, and Arntm von Stechow all gave
 me detatled and much appreciated comments on various drafts. Very
