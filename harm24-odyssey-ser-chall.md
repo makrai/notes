@@ -1,5 +1,6 @@
 TalTech Systems for the Odyssey 2024 Emotion Recognition Challenge
 Henry Härm; Tanel Alumae
+Odyssey 2024
 
 # Abstract
 
