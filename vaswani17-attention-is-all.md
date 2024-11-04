@@ -9,11 +9,11 @@ NIPS 2017
   superior in quality while being
   more parallelizable and
   requiring significantly less time to train
-* generalizes well ... to English constituency parsing
+* generalizes well to English constituency parsing
   both with large and limited training data
 
 # Attention Visualizations 13
 
-* long-distance dependencies in the encoder self-attention in layer 5 of 6.
-  ... completing the phrase ‘making...more difficult’
+* long-distance dependencies in the encoder self-attention in layer 5 of 6
+  * completing the phrase ‘making...more difficult’
 * anaphora resolution
