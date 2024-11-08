@@ -608,7 +608,7 @@ developed Independently
 
 by Karina Wilkinson (1966) and Claudie:a
 
-Gerstner and Manfred Krl fka
+Gerstner and Manfred Krifka
 
 (1967). I wt I 1 then pol nt out some
 
