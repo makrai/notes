@@ -18,13 +18,13 @@ baseline: https://huggingface.co/3loi
 * classification
   * to address the issue of class imbalance, our training objective utilizes
     a weighted multi-class cross-entropy (CE) loss. We employ a weighted loss
-    function to address the class imbalance problem (while the train and
-    development set are unbalanced across emotions, the test set is balanced).
-    * assigns more significance to the less frequent classes.
+    * to address the class imbalance problem (while the train and development
+      set are unbalanced across emotions, the test set is balanced)
+    * assigns more significance to the less frequent classes
     * we adjust the weight parameter of the CE loss to reflect the inverse
-      frequency of each class. This means assigning
+      frequency of each class
     * ie higher weights to less frequent classes, therefore, enhancing the
-      model’s sensitivity and performance on these classes. The
+      model’s sensitivity and performance on these classes
     * weighted CE loss is defined as follows:
 * attributes prediction (task 2), we use a single task setup, where we train a
   separate regression model for arousal, valence, and dominance. For the

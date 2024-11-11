@@ -6,9 +6,9 @@ IEEE International Conference on Computer Vision (ICCV), 2017, pp 2980-2988
 
 * SOTA object detectors are based on a two-stage approach popularized by R-CNN,
   * a classifier is applied to a sparse set of candidate object locations
-* one-stage detectors that are 
+* one-stage detectors that are
   * applied over a regular, dense sampling of possible object locations
-  * potential to be faster and simpler, but have 
+  * potential to be faster and simpler, but have
   * trailed [nyomában kullog] the accuracy of two-stage detectors thus far
 * we investigate why this is the case. We discover that the
   * extreme foreground-background class imbalance
