@@ -43,8 +43,8 @@ Draft of January 12, 2022
     words in the past
   * transformer offers
     self-attention and positional encodings
-    that help represent time and help focus on how words relate to each other
-    over long distances
+    that help represent time and
+    help focus on how words relate to each other over long distances
   * We’ll see how to apply both models to the task of
     * language modeling, to
     * sequence modeling tasks like part-of-speech tagging, and to
