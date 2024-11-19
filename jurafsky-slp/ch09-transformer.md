@@ -141,3 +141,23 @@ Draft of January 12, 2022
     each element of a sequence is assigned a label
   * Sequence classification, where an entire text is assigned to a category
     * spam detection, sentiment analysis or topic classification
+
+# Bibliographical and Historical Notes
+
+* The transformer (Vaswani+ 2017) was developed drawing on two lines:
+  self-attention and memory networks
+* Encoder-decoder attention
+  * ie the idea of using a soft weighting over the encodings of input words to
+    inform a generative decoder (see Chapter 13) was developed by
+    * Graves (2013) in the context of handwriting generation, and
+    * Bahdanau+ (2015) for MT. This idea was
+  * extended to self-attention
+    by dropping the need for separate encoding and decoding sequences and
+    * instead seeing attention as a way of weighting the tokens in collecting
+      information passed from lower layers to higher layers
+    (Ling et al., 2015; Cheng+ 2016; Liu+ 2016)
+* the terminology of key, query, and value, came from memory networks (MN)
+  * MN: a mechanism for adding an external read-write memory to networks, by
+    using an embedding of a query to match keys representing content in an
+    associative memory (Sukhbaatar+ 2015; Weston+ 2015; Graves+ 2014)
+* MORE HISTORY TBD IN NEXT DRAFT
