@@ -69,7 +69,7 @@ Recent Advances in Natural Language Processing (RANLP2021) 11 days ago
   * Enhanced Universal Dependencies (EUD, Schuster and Manning 2016). The goal
   * for natural language understanding tasks,
     making some of the implicit relations between words more explicit
-  * Five kinds of new annotations are considered in this framework 3 : adding null nodes for elided predicates
+  * Five kinds of new annotations are considered in this framework 3: adding null nodes for elided predicates
     * propagating relations over conjuncts
     * adding subject relations for control and raising constructions
     * adding coreference in relative clause constructions and
@@ -78,8 +78,8 @@ Recent Advances in Natural Language Processing (RANLP2021) 11 days ago
     * some of these 34 treebanks have only a part of the five extensions
 * Deep Universal Dependencies (DUD, Droganova and Zeman, 2019) is also to
   * relations that are closer to predicate-argument structure than the
-  * relations names (arg1, arg2, . . . ) borrowed from semantic frameworks like
-    the Abstract Meaning Representation (AMR, Banarescu+ 2013). DUD is
+  * relations names (arg1, arg2,...) borrowed from semantic frameworks like
+    the Abstract Meaning Representation (AMR, Banarescu+ 2013)
   * built automatically from EUD when annotations are available or with an
     automatic production of EUD for other corpora. 4
 

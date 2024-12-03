@@ -1,4 +1,4 @@
-Retrofitting Multilingual Sentence Embeddings with Abstract Meaning Representation
+Retrofitting Multilingual Sentence Embeddings with Abstract Meaning Repr
 Deng Cai, Xin Li, Jackie Chun-Sing Ho, Lidong Bing, Wai Lam
 EMNLP2022 arXiv:2210.09773 [cs.CL]
 

@@ -6,30 +6,32 @@ github.com/SapienzaNLP/xl-amr
 
 #Abstract
 
-* Abstract Meaning Representation (AMR) is a popular formalism of natural
-  * represents the meaning of a sentence as a semantic graph. It is
-  * agnostic about how to derive meanings from strings and for this reason it
-  * training data are scarce in languages other than English and the
+* Abstract Meaning Representation (AMR) is a popular formalism
+  * represents the meaning of a sentence as a semantic graph
+  * agnostic about how to derive meanings from strings 
+  * training data are scarce in languages other than English 
   * existing English AMR parsers are not directly suited to being used in a
-    cross-lingual setting. In this work we tackle these two problems so as to
+    cross-lingual setting
 * we explore different transfer learning techniques for producing automatic AMR
-  annotations across languages and develop a cross-lingual AMR parser, XL-AMR
-  This can be trained on the produced data and does not rely on AMR aligners or
-  source-copy mechanisms as is commonly the case in English AMR parsing. The
+  annotations across languages and 
+  * we develop a cross-lingual AMR parser, XL-AMR
+    * can be trained on the produced data and does not rely on AMR aligners or
+      source-copy mechanisms as is commonly the case in English AMR parsing.
 * significantly surpass previous in Chinese, German, Italian and Spanish
-* qualitative analysis which sheds light on the suitability of AMR across langs
+* qualitative analysis sheds light on the suitability of AMR across languages
 * conclusion
   * We created silver data based on annotation projection through parallel
-    sentences and machine translation, on which we trained XL AMR, a
-  * qualitative evaluation showed that XL AMR is able to handle most of the
-    structural divergences among languages. The performance of XL AMR together
-    with the qualitative analysis suggests that carefully modeling cross-lingual
-    AMR parsing leads to the production of suitable AMR structures across lan-
-    guages. It would therefore be promising to extend this line of our research
+    sentences and machine translation, on which we trained XL AMR
+  * qualitative evaluation showed that 
+    XL AMR is able to handle most of the structural divergences among langs.
+  * carefully modeling cross-lingual AMR parsing leads to the production of
+    suitable AMR structures across languages
+  * a promising to extend this line of our research
 
 # Introduction
 
-* applications, inter alia, information extraction (Rao+ 2017)
+* applications
+  * information extraction (Rao+ 2017)
   * text summarization (Hardy and Vlachos, 2018; Liao+ 2018)
   * paraphrase detection (Issa+ 2018)
   * spoken language understanding (Damonte+ 2019)
@@ -39,8 +41,8 @@ github.com/SapienzaNLP/xl-amr
   cross-lingual representations for
   * grammatical annotation (de Marneffe+ 2014),
   * concepts (Conia and Navigli, 2020) and
-  * semantic roles (Akbik+ 2015; Di Fabio+ 2019). Furthermore, it could be
-* AMR formalism is that it aims at abstracting away from word forms.  AMR graphs
+  * semantic roles (Akbik+ 2015; Di Fabio+ 2019)
+* AMR formalism aims at abstracting away from word forms
   * unanchored, ie, the linkage between tokens in a sentence and nodes in the
     corresponding graph is not explicitly annotated. Hence, the feature of being
   * initially designed for encoding the meaning of English sentences. Owing to
@@ -54,10 +56,10 @@ github.com/SapienzaNLP/xl-amr
       it is possible to overcome some of the structural linguistic divergences
       (Damonte and Cohen, 2018; Zhu+ 2019).
 * The underlying idea of this paper is that AMR can be used in different langs
-  * there exist key linguistic features that are shared across languages, such
+  * there exist key linguistic features that are shared across languages
   * eg predicates, roles and conjunctions (Von Fintel and Matthewson, 2008).
 * acquiring semantic annotations for a large number of sentences is a slow and
-  expensive process in NLP (Zhang+ 2018; Pasini, 2020). To this end, we aim at
+  expensive process in NLP (Zhang+ 2018; Pasini, 2020)
 * cross-lingual AMR parsing, ie, the task of
   transducing a sentence in the source language into an AMR graph based on Engl
   (Damonte and Cohen, 2018).
@@ -84,9 +86,10 @@ github.com/SapienzaNLP/xl-amr
 
 * Our work lies between semantic parsing and cross-lingual transfer learning
 
-## Semantic parsing Semantic parsing is a key task required to complete the
+## Semantic parsing 
 
-* formalisms have been proposed over the years to encode semantic structures: Elementary Dependency Structures (Oepen and Lønning, 2006, EDS)
+* formalisms have been proposed over the years to encode semantic structures:
+  * Elementary Dependency Structures (Oepen and Lønning, 2006, EDS)
   * Prague Tectogrammatical Graphs (Hajič+ 2012, PTG)
   * Universal Conceptual Cognitive Annotation (Abend and Rappoport, 2013, UCCA)
   * Universal Decompositional Semantics (White+ 2016, UDS)
@@ -123,7 +126,7 @@ github.com/SapienzaNLP/xl-amr
   anonymization and recategorization, expanding them across languages by relying
   on multilingual resources.
 
-## Transfer learning The
+## Transfer learning
 
 * idea: leverage annotations available in one language, commonly English, to
   enable learning models that generalize to languages where labelled resources

@@ -67,8 +67,8 @@ For our illustrations here, we _restrict our structural variation_
 ## Semantic characteristics
 
 * semantic role information in the form of tasks such as
-  abstract meaning representation (AMR, Banarescu+ 2013). Similarly, the concept
-* scope
+  abstract meaning representation (AMR, Banarescu+ 2013)
+* scope of operators
  * including negation
  * applications such as sentiment analysis (Blunsom+ 2013; Iyyer+ 2015)
 
