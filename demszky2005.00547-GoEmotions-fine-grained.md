@@ -164,8 +164,8 @@ ACL 2020 arXiv:2005.00547 [cs.CL]
 * Figure 2 shows that
   * emotions that are related in intensity (e.g. annoyance and anger, joy and
     excitement, nervousness and fear) have a strong positive correlation.
-  * emotions that have the opposite sentiment are neg- atively correlated.
-* We also perform hierarchical clustering to un- cover the nested structure of
+  * emotions that have the opposite sentiment are negatively correlated.
+* We also perform hierarchical clustering to uncover the nested structure of
   * We use correlation as a distance metric and ward as a linkage method,
 * dendrogram on the top of Figure 2 shows that
   * emotions that are related by intensity are neighbors, and that
