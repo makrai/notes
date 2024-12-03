@@ -95,7 +95,7 @@ arXiv:2302.13971 [cs.CL]
 
 ### SwiGLU activation function [PaLM]. We replace the ReLU non-linearity
 
-* SwiGLU activation function, introduced by Shazeer (2020) to improve the
+* SwiGLU activation function, introduced by Shazeer (2020)
 * dimension of 2/3 4d instead of 4d as in PaLM
 
 ### Rotary Embeddings [GPTNeo]
