@@ -65,7 +65,7 @@ Front Digit Health, 22 September 2021, Sec Health Informatics, Volume 3 ~ 2021
   * Interspeech 2011 (IS11) challenge on speakers state estimation (17),
     introducing the Sleepy Language Corpus (SLC), and the
   * Interspeech 2019 (IS19) challenge on continuous sleepiness estimation (18)
-    that introduced the SLEEP corpus (aka the Dusseldorf Sleepy Language Corp)
+    introduced the SLEEP corpus (aka the Dusseldorf Sleepy Language Corp)
   * both label instantaneous sleepiness with the KSS, a medical questionnaire
     aiming at measuring instantaneous subjective sleepiness (see section 2.1.1)
 * IS11: the objective was to achieve the highest UAR on binary classification

@@ -87,7 +87,7 @@ ttps://github.com/sarnthil/unify-emotion-datasets
   Ghazi+, 2015; Li+, 2017; Schuff+, 2017; Li+, 2017)
 * ISEAR dataset: "self reporting"
   * subjects are asked to describe situations associated with a specific
-    emotion (Scherer and Wallbott, 1994). This approach can be considered an
+    emotion (Scherer and Wallbott, 1994)
 * Crowdsourcing, for instance using the
   * platforms Amazon’s Mechanical Turk1 or CrowdFlower2 , is another way to
   * often lacks sufficient quality control but some popular datasets have been
