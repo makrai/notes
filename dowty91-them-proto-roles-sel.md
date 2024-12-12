@@ -16,7 +16,7 @@ Language, Vol. 67, No. 3, (Sep., 1991), pp. 547-619
     * an introductory text (Chierchia & McConnell-Ginet 1990) offers a
       technique for formalizing roles
 * New candidates for thematic roles are being proposed all the time,
-  * e.g.  FIGURE and GROUND in Talmy 1985a,
+  * eg FIGURE and GROUND in Talmy 1985a,
 * Deep Cases also served an argument-indexing function
   * [in early Case Grammar theory (Fillmore 1968)]
   * syntactic transformations are stated in terms of these labels
