@@ -67,7 +67,7 @@ Odyssey 2024
   * all models share the same architecture
   * models trained independently with
     different audio features or different optimisation configurations
-  * loss function chosen is either the focal loss [15] or the cross entropy
+  * loss function: either the focal loss [15] or the cross entropy
     [15] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollár,
     Focal loss for dense object detection
     ICCV, 2017
