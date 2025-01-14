@@ -8,10 +8,10 @@ see swadesh50.md and swadesh55.md
   * 1952 he published a list of 215 meanings,[2] of which he
   * suggested the removal of 16 for being unclear or not universal, with
     one added to arrive at 200 words
-  * In 1955[3] he wrote, "The only solution appears to be a drastic weeding out
-    of the list, in the realization that quality is at least as important as
-    quantity....Even the new list has defects, but they are relatively mild and
-    few in number
+  * In 1955[3] he wrote, "The only solution appears to be
+    a drastic weeding out of the list, in the realization that
+    quality is at least as important as quantity....Even the new list has
+    defects, but they are relatively mild and few in number
   * final 100-word list in 1971[4] and 1972
     * minor corrections
   * Explanations of the terms can be found in
@@ -35,7 +35,8 @@ see swadesh50.md and swadesh55.md
   * The CLLD-Concepticon collects various concept lists (including classical
     Swadesh lists) across different linguistic areas and times, currently
     listing more than 150 different concept lists. [5]
-* Frequently used, not for any proven quality, but for its _electronic
-  availability_ via the internet, is the version by I Dyen (1992, 200 meanings
-  of 95 language variants)
+* Dyen (1992), Dunn et al (2010+)
+  * Frequently used, not for any proven quality, but for its
+    _electronic availability_ via the internet, is the version by I Dyen (1992,
+  * 200 meanings of 95 language variants)
   * Since 2010, a team around M Dunn has tried to update and enhance that list
