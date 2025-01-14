@@ -1,7 +1,17 @@
-J Ács
-Multilingual Morphological Probes for Contextual Word Representations
+Morphosyntactic probing of multilingual BERT models
+J Acs, E Hamerlik, R Schwartz, NA Smith, A Kornai
+Natural Language Engineering 30 (4), 753-792
 
-    We will publicly release our code and data
+# History of the notes
+
+* Makrai wrote these notes based on a manuscript:
+  * J Ács
+  * Multilingual Morphological Probes for Contextual Word Representations
+* He didn't check whether the info in the notes really appeared in the paper
+
+---
+
+We will publicly release our code and data
 
 # Intro
 
