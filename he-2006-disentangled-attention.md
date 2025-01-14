@@ -7,12 +7,12 @@ arXiv:2006.03654 [cs.CL]
 * model architecture DeBERTa: Decoding-enh BERT with dis-entangled attention
   * disentangled attention: each word is represented using two vectors that
     encode its content and position, respectively, and
-    the attention weights among words are computed using disentangled matrices
-    on their contents and relative positions
+    * the attention weights among words are computed using disentangled mxs on
+      their contents and relative positions
   * enhanced mask decoder is used to incorporate absolute positions in the
     decoding layer to predict the masked tokens in model pre-training
-* significantly improve the
-  * efficiency of model pre-training and the
+* significant improvements
+  * efficiency of model pre-training
   * performance of both natural language understand (NLU) and generation (NLG)
   * Compared to RoBERTa-Large, a DeBERTa model trained on half of the data
     * NLP tasks, achieving improvements on
@@ -58,8 +58,8 @@ arXiv:2006.03654 [cs.CL]
 * we enhance the output layer of BERT for pre-training
   to address a limitation of relative positions
   * DeBERTa incorporates absolute word position embeddings in the softmax layer
-    where the model decodes the masked words
-    based on the aggregated contextual embeds of word contents and positions
+  * masked words decoded based on the
+    aggregated contextual embeds of word contents and positions
 * substantially improve the efficiency of pre-training and the downstream perf
 
 ## 3.2 Two extensions of the disentangled attention

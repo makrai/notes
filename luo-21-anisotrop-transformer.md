@@ -273,7 +273,7 @@ MA 2021 Uppsala Uni, Discip Domain of Humanities and Soc Sci, Faculty of Langs,
       that encode its content and position, resp, and
     * the attention weights among words are computed using disentangled
       matrices on their contents and relative positions, respectively
-  * better performance than BERT and RoBERTa on the well-known NLU benchmarks
+  * better performance than BERT and RoBERTa on
     GLUE (Wang+ 2018) and SuperGLUE (Wang+ 2019)
   * hE, these models still require extra positional encodings (PE)
     * can we modify the structure of Transformer Encoder to make it sensitive

@@ -222,15 +222,17 @@ response to our call for data on NLP mailing lists:
 
 ## Top-ranked Approaches
 
-### Team Adam Smith uses an ensemble of 12 transformer-based models: DeBERTa
-and RoBERTa, both trained for either loss minimization or F1-score maximization
-on three different folds each.11 The RoBERTa models were pretrained on the full
-IBM-ArgQ-Rank30KArgs dataset (Gretz+ 2020), which is the source for most
-arguments in the main set (cf. Table 2). For ensembling, they averaged the
-predictions of the single models and used a single decision threshold that they
-optimized on a hold-out set.  They also tried a stacked meta-classifier based
-on logistic regression, which performs better on the Nahj al-Balagha but not on
-the main test set
+### Team Adam Smith uses an ensemble of 12 transformer-based models
+
+* DeBERTa and RoBERTa
+* both trained for either loss minimization or F1-score maximization on three
+  different folds each.11 The
+* RoBERTa models were pretrained on the full IBM-ArgQ-Rank30KArgs dataset
+  (Gretz+ 2020), which is the source for most arguments in the main set (tab 2)
+* ensembling: they averaged the predictions of the single models
+  * a single decision threshold optimized on a hold-out set.
+* They also tried a stacked meta-classifier based on logistic regression, which
+  performs better on the Nahj al-Balagha but not on the main test set.
 
 ### Team John Arthur fine-tuned a DeBERTa model (microsoft/deberta-v2-xxlarge)
 
@@ -304,8 +306,9 @@ the main test set
     eg the world value survey (Haerpfer+ 2020), and Rokeach (1973)
 
 ## Special Training
+
 * pre-trained on other corpora:
-  * list
+  * which teams
     * Besides team Adam Smith, as described above, three more teams
     * team Niccolo Machiavelli finetuned DeBERTaV3, and team
     * Hitachi fine-tuned RoBERTa on ValueNet (Qiu+ 2022), while team
