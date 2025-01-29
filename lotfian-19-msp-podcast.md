@@ -280,13 +280,14 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * categorical emotions (ie, anger, happiness, sadness)
   * Attribute and categorical based descriptors provide complementary info
 * Figure 4 shows the questionnaire which has two parts
-  * first part evaluates the segments with attribute based annotations (Figs
+  * first part evaluates the segments with attribute based annotations (Figs)
     * seven-point Likert scale to evaluate valence (negative versus  positive),
       arousal (calm versus  active), and dominance (weak versus  strong). We
     * self-assessment manikins (SAMs) [38], [39] to visually guide the
-      evaluators in annotating these dimensional attributes. SAM provides a
-      lexicon-free assessment tool which simplifies the understanding of the
-      emotional attributes, improving their inter-evaluator agreement. The
+      evaluators in annotating these dimensional attributes
+      * a lexicon-free assessment tool which
+        simplifies the understanding of the emotional attributes,
+        improving their inter-evaluator agreement
   * second part evaluates the segments with categorical labels
     * First, the evaluators need to choose the primary emotion that best
       * anger, sadness, happiness, surprise, fear, disgust, contempt, neutral
@@ -304,8 +305,8 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * the inter-evaluator agreement in annotating emotional labels increases when
     the evaluators evaluate more than one segment per human intelligence task
     (HIT). The workers can calibrate their assessment by evaluating multiple
-    segments per task [18].  The performance drops when the worker tires or
-    loses interest in the task
+    segments per task [18]
+    * The performance drops when the worker tires or loses interest in the task
   * Burmania+ [18] proposed to create HITs with multiple segments, where we
     track in real-time the quality of the workers, stopping the evaluation when
     * a set of reference sentences which are already evaluated are interlaced
@@ -317,9 +318,10 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   * the stopping criterion includes not only primary emotions, as in our
     previous work, but also attribute-based annotations
     * metric: For primary emotions, we use the angular similarity metric, which
-      transforms evaluations into vectors and estimates whether the angular
-      distance between annotations in/decreases (less/more agreement) or
-      when an extra annotation is added (see details in Burmania+ [18]). For
+      * transforms evaluations into vectors and
+        estimates whether the angular distance between annotations in/decreases
+        (less/more agreement) when an extra annotation is added
+        (see details in Burmania+ [18])
     * attribute-based annotation, we only consider arousal and valence. We
       estimate the absolute distance between the average score assigned to a
       reference sentence and the score provided by the worker
@@ -353,6 +355,23 @@ Journal of IEEE Transact on Affective Computing, Vol. XX, No. X, December 2019
   algorithms are then used to retrieve the sentences for MSP-PODCAST
 
 # 5 Quantitative analysis on the emotion distribution of the retrieved DB
+
+## 5.3 Reliability of Emotional Annotations
+
+* the reliability of emotional annotations obtained with the crowdsourcing
+
+|-----------------|-----|
+|Primary emotion  |0.229|
+|Arousal          |0.426|
+|Valence          |0.459|
+|Dominance        |0.402|
+
+* For attribute based annotations, we assess Krippendorff’s alpha coefficient
+* For primary emotions, we use Fleiss’ kappa
+* lower than the ones reported in our previous work [18]
+  * The key difference is the extended emotional classes considered in this
+  * previously: anger, sadness, happiness, neutral state, and other
+  * now in addition: surprise, fear, disgust, and contempt
 
 ## 5.4 Analysis of Primary Emotions
 
