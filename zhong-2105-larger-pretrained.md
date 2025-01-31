@@ -14,12 +14,12 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
   * individual predictions are highly sensitive to noise in the randomness in
     training
   * We develop statistically rigorous methods to address this
-* our BERT-Large is worse than BERT-Mini on at least 1-4% of instances
+* our Bert-Large is worse than Bert-Mini on at least 1-4% of instances
   across MNLI, SST-2, and QQP
   * compared to the overall accuracy improvement of 2-10%
 * finetuning noise increases with model size
-* instance-level improvement from BERT-Mini to BERT-Medium correlates with
-  improvement from BERT-Medium to BERT-Large
+* instance-level improvement from Bert-Mini to Bert-Medium correlates with
+  improvement from Bert-Medium to Bert-Large
   * suggest that instance-level predictions provide a rich source of info
 * we recommend that researchers supplement model weights with model predictions
 
@@ -42,7 +42,7 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
     finetuning seeds leads to different predictions on ∼8% of the instances
   * This is due to under-specification (D’Amour+ 2020)
     * ie there are multiple solutions that can minimize the training loss
-  * the accuracy improvement from our BERTBASE 1 to BERTLARGE is 2%,
+  * the accuracy improvement from our BertBASE 1 to BertLarge is 2%,
   => most signals across different model sizes will be due to random seeds
 * we define instance accuracy:
   “how often a model correctly predicts an instance” (Figure 1 left)
@@ -58,15 +58,15 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 * from conclusion: we developed metrics that compute variance and correlation
   of improvements conditioned on instance accuracy
 * we find that, on the MNLI in-domain development set, the accuracy “decays”
-  from BERTLARGE to BERTMINI on at least ∼4% of the instances, which is
+  from BertLarge to BertMini on at least ∼4% of the instances, which is
   * significant given that the improvement in overall accuracy is 10%
-  * These decaying instances contain more controversial or wrong labels, but
-    also correct ones (Section 4.2)
+  * These decaying instances contain
+    more controversial or wrong labels, but also correct ones (Section 4.2)
   * ie larger pretrained language models are not uniformly better
 
 # 2 Data, Models, and Predictions
 
-* we considered different sizes of the BERT architecture and
+* we considered different sizes of the Bert architecture and
 * finetuned them on
   * Quora Question Pairs (QQP 2 )
   * Multi-Genre Natural Language Inference (MNLI; Williams+ (2020))
@@ -75,11 +75,11 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
   we averaged over multiple random initializations and training data order, and
   thus needed to pretrain our own models
 * size: Following Turc+ (2019) we trained 5 architectures of increasing size:
-  * MINI (L4/H256, 4 Layers with hidden dimension 256)
+  * Mini (L4/H256, 4 Layers with hidden dimension 256)
   * SMALL (L4/H512)
   * MEDIUM (L8/H512)
   * BASE (L12/H768)
-  * LARGE (L24/H1024)
+  * Large (L24/H1024)
 * For each architecture we pre-trained models with 10 different random seeds
   and fine-tuned each of them 5 times (50 total) on each task; see Figure 1 mid
 * Since pretraining is computationally expensive, we reduced the context size
@@ -98,9 +98,9 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 * naı̈ve approach is to finetune a larger pretrained model,
   compare it to a smaller one, and
   find instances where the larger is incorrect but the smaller is correct
-  * BERTLARGE is worse than BERTBASE on 4.5% of the instances and better on 7%,
+  * BertLarge is worse than BertBASE on 4.5% of the instances and better on 7%,
     giving an overall accuracy improvement of 2.5%
-* hE, this is misleading: even if we compare two BERTBASE model with different
+* hE, this is misleading: even if we compare two BertBASE model with different
   * finetuning seeds, their predictions differ on 8% of the instances, while
     their accuracies differ only by 0.1%
     * Table 1 reports this baseline randomness across model sizes
@@ -126,7 +126,7 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
   * Our baseline splits these into a
     group A of 5 smaller + 5 larger, and another
     group B of the remaining 5 + 5
-* our noisy estimate BASE ˆ LARGE ∆Acc has a larger left tail than the
+* our noisy estimate BASE ˆ Large ∆Acc has a larger left tail than the
 * [the point is in the next section]
 
 # 4 Quantifying the Decaying Instances
@@ -141,7 +141,7 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
   between Decay(t) Decay (t) at every threshold t
   * => we take the maximum difference between Decay(t) and Decay (t) to
     lower-bound the fraction of decaying instances
-  * Figure 4 estimates the true decaying fraction between MINI and LARGE >= 6%
+  * Figure 4 estimates the true decaying fraction between Mini and Large >= 6%
   * for other pairs of model sizes in Table 2, and
   * for the full results across other tasks and model size pairs in Appendix C
 * In all of these settings we find a non-zero fraction of decaying instances,
@@ -158,14 +158,14 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
       except that the finetuning randomness is averaged out
     * Hence we obtain 10 independent sets of model predictions with different
       random seeds, which allows us to apply Theorem 1
-* We compare MINI to LARGE using these ensembles and report the
+* We compare Mini to Large using these ensembles and report the
   discovery Decay 0 and the baseline Decay in Table 3
   * Taking the maximum difference across thresholds, we estimate at least ∼4%
     of decaying instances
   * lower than the previous 6% estimate, which used the full set of 50 models’
     predictions assuming they were independent
   * nL still a meaningful amount,
-    given that the overall accuracy improvement from MINI to LARGE is 10%
+    given that the overall accuracy improvement from Mini to Large is 10%
 
 ## 4.1 Fisher’s Test + Benjamini-Hochberg
 
@@ -200,9 +200,9 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 * whether we can find any interpretable patterns
   * One hypothesis is that all the decaying fractions are in fact mislabeled,
     and hence larger models are not in fact worse on any instances
-* we examined the group of instances where MINI LARGE ∆Acc i ≤ −0.9
-  * MINI is almost always correct on these instances, while
-    LARGE is almost always wrong, and the false discovery fraction is tiny
+* we examined the group of instances where Mini Large ∆Acc i ≤ −0.9
+  * Mini is almost always correct on these instances, while
+    Large is almost always wrong, and the false discovery fraction is tiny
 * For each instance, we manually categorize it as either:
   * Correct / Fine / Wrong / Unsure
   * Fine: might be controversial but we could see a reason why reasonable
@@ -217,19 +217,19 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 * the decaying fraction has more wrong or controversial labels than the rest
 * hE even after we adjust for the fraction of incorrect labels,
   the Decay fraction still exceeds the false discovery control
-  => MINI models are better than LARGE models on some correctly labeled instans
+  => Mini models are better than Large models on some correctly labeled instans
 * hE no interpretable pattern for these correctly labeled decaying instances
   by simply eyeballing
 * future directions to discover interpretable categories in Section 7
 
 # 5 instance-level accuracy has momentum:
-  improvement from MINI to MEDIUM corrs with improvement from MEDIUM to LARGE
+  improvement from Mini to MEDIUM corrs with improvement from MEDIUM to Large
 
 * naı̈ve approach is to calculate the Pearson correlation coefficient between
-  MINI MEDIUM ∆Acc and MEDIUM LARGE ∆Acc, and we find the correlation to be 0
+  Mini MEDIUM ∆Acc and MEDIUM Large ∆Acc, and we find the correlation to be 0
   * accuracies being bounded in [0, 1]
-    * If MEDIUM drastically improves over MINI from 0 to 1, there is
-      no room for LARGE to improve over MEDIUM
+    * If MEDIUM drastically improves over Mini from 0 to 1, there is
+      no room for Large to improve over MEDIUM
   * To remove this inherent negative correlation, we calculate the
     correlation conditioned on the accuracy of the middle-sized model
     * bucket instances by their estimated MEDIUM accuracy into intervals of
@@ -268,7 +268,7 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 ## Conclusion
 
 * larger models have larger finetuning variance,
-* LARGE has smaller pretraining variance than BASE
+* Large has smaller pretraining variance than BASE
 * the ordering between other sizes varies across tasks and losses, and
 * finetuning variance is 2−8 times as large as pretraining variance, and the
   ratio is bigger for larger models
