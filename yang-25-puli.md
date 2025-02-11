@@ -209,7 +209,7 @@
   * Egyéb kategóriában a Sambalingo vezet, 66%-kal, míg a PULI LlumiX Instruct
 
 |Témakör| # Kérdés|PULI LlumiX Instruct|ParancsPuli|Sambalingo|
-|-------:|--------------:|--------------------:|-----------:|----------:|
+|-------|--------------:|--------------------:|-----------:|----------:|
 |Egyéb	| 19	| 61%	| 47%	| 66%	|
 |Földrajz	| 17	| 82%	| 85%	| 71%	|
 |Irodalom	| 26	| 67%	| 63%	| 65%	|
