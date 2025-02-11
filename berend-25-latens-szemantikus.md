@@ -71,11 +71,10 @@
   * minden egyes szakasz végén, az adott szakaszban meghatározott utolsó 200
     kötegben előfordult tokeneknek a transzformer modell utolsó rétegében
     előálló rejtett vektorai alapján egy (1)-ben található alakú optimalizálás
-    problémát old meg annak érdekében, hogy a következő előtanítási szakaszban –
-    a klasszikus maszkolt nyelvi modellezési feladat ellátása mellett
-    párhuzamosan – a látens szemantikus tulajdonságok modellezésére vonatkozó
-    előtanítási feladatot is el tudja látni a modell a frissített szótármátrixra
-    támaszkodva.
+    problémát old meg annak érdekében, hogy 
+  * a következő előtanítási szakaszban – a klasszikus MLM feladat mellett
+    – a látens szemantikus tulajdonságok modellezésére vonatkozó előtanítási
+    feladatot is el tudja látni a modell a frissített szótármátrixszal
 * a maszkolt nyelvi modellezés és a látens szemantikus tulajdonságokra
   támaszkodó modellezésből jövő veszteség egymáshoz való viszonyát az
   előtanítás előre haladtával szakaszosan változtatjuk. A legelső szakaszban
@@ -153,10 +152,10 @@
   * mindegyik modell kifejezetten magas pontosság elérésére képes.
 * fig 3.b 
   * konkrétan magára a modell kiementén produkált eloszlásvektorokra hagyatkozva
-  * kevésbé gyakori megközelítés
-  * a modellezést a kváziszimbolikus látens szemantikus fogalmi tulajdonságok
-    mentén (is) elvégző előtanítási módszerek esetén azonban kínálja magát
-  * a modell belső rejtett reprezentációi helyett 
+    * kevésbé gyakori megközelítés
+    * a modellezést a kváziszimbolikus látens szemantikus fogalmi tulajdonságok
+      mentén (is) elvégző előtanítási módszerek esetén kínálja magát
+    * a modell belső rejtett reprezentációi helyett 
   * legközelebbi szomszédság megítélését az Hellinger-távolság kiszámolásával
   * a látens tulajdonságokat alkalmazó modellek ebben a fajta kiértékelésben
     sokkal jobb teljesítmény elérésére voltak képesek a látens szemantikus
