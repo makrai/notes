@@ -193,8 +193,7 @@ https://github.com/UBC-NLP/SPARROW
 |2016|Oraby	|eng |Macro-F1	|138||
 |2014|Ptáček	|eng |Macro-F1	|286|Czech and English Twitter|
 |2015|Rajadesingan	|eng |Accuracy	|499|twitter: A behavioral approach|
-|2013|Riloff	|eng |F1-sarcasm	|832|as contrast between a positive sentiment\
-and negative situation|
+|2013|Riloff	|eng |F1-sarcasm	|832|as contrast between a positive sentiment and negative situation|
 |2012|Walker	|eng |Macro-F1	|356|deliberation and debate|
 |2020|Gong	|zho |Macro-F1	|
 
