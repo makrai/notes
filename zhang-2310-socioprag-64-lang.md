@@ -15,7 +15,7 @@ https://github.com/UBC-NLP/SPARROW
   * 6 primary categories (eg anti-social language detection, emotion recog)
   * 64 languages from 12 language families representing 16 scripts
 * evaluation
-  * of various
+  * models and settings
     * multilingual pretrained language models (eg mT5) and
     * instruction-tuned LLMs (eg BLOOMZ, ChatGPT) on SPARROW
     * fine-tuning, zero-shot, and/or few-shot learning
@@ -32,7 +32,7 @@ https://github.com/UBC-NLP/SPARROW
     (Ouyang+, 2022) have enhanced the zero-shot generalization
   * ChatGPT exhibits impressive capabilities in this regard
   * what we call sociopragmatic meaning (SM)
-    * some forms of meaning are deeply embedded in social interactions
+    * meaning deeply embedded in social interactions
     * sociolinguistics: social varia related to lang users (Tagliamonte, 2015)
     * pragmatics: communicative intentions (Boxer and Cortés-Conde, 2021)
     * quite established within linguistics, hE NLP systems still struggle
@@ -102,7 +102,7 @@ https://github.com/UBC-NLP/SPARROW
   * Table 1: benchmarks used for listed evaluations only include a few SM tasks
     focusing on sentiment analysis
   * Wang+ (2023); Zhang+ (2023b) investigate LLMs on a number of SM tasks
-    * eg offensive language detection), but only on English
+    * eg offensive language detection, but only on English
   * Ziems+ (2023) investigate ChatGPT performance on a range of comp soc sci
     * eg sociology, psychology, and linguistics, but only on English
   * Das+ (2023) evaluate ChatGPT on hate speech detection to 11 languages
@@ -111,7 +111,7 @@ https://github.com/UBC-NLP/SPARROW
 
 * unified benchmarks: GLUE (Wang+, 2019), SentEval (Conneau and Kiela, 2018),
   XTREME (Hu+, 2020), and XGLUE (Liang+, 2020)
-  * a wide range of NLP tasks, hE !1 SM task (ie sentiment)
+  * a wide range of NLP tasks, hE only 1 SM task (ie sentiment)
 * benchmarks focusing on SM
   * Barbieri+ (2020) introduce TweetEval benchmark that contains
     seven English datasets of six SM tasks
@@ -141,11 +141,11 @@ https://github.com/UBC-NLP/SPARROW
   * detailed descriptions with full citations of all our datasets in Tabs 9--14
 * aggregated metric
   * Inspired by previous evaluation benchmarks like GLUE (Wang+ 2019)
-  * we define a global metric called SPARROW score, which represents
+  * we define a global metric called SPARROW score:
     the unweighted average of all dataset-specific metrics
   * an overall indication of performance on SM tasks
   * may be dominated by the largest task cluster (ie, sentiment analysis)
-    or languages (e.g., languages from Indo-European language family)
+    or languages (eg languages from Indo-European language family)
 
 ## 3.1 Task Clusters
 
@@ -153,7 +153,7 @@ https://github.com/UBC-NLP/SPARROW
 
 * proliferation of antisocial language (eg hate speech)
   toxifies public discourse, incites violence, and undermines civil society
-  (Sap+, 2019; Vidgen and Derczynski, 2020).  Antisocial language detection is
+  (Sap+, 2019; Vidgen and Derczynski, 2020)
 * We include under the umbrella of antisocial language the following:
   * aggressive language (Kumar+, 2018),
   * dangerous language (Alshehri+, 2020),
@@ -183,7 +183,22 @@ https://github.com/UBC-NLP/SPARROW
 * We include
   * nine irony detection datasets in seven languages (eg Xiang+ (2020)),
   * ten sarcasm detection datasets in four languages (eg Walker+ (2012)), and
-  * an irony type identification dataset (Van Hee+, 2018)
+
+|year|1st author|lang|score|cited by|from the title|
+|----|---------|----|--------:|----------:|--------|
+|2020|Abufarha	|ara |Macro-F1	|
+|2021|Farha	|ara |Macro-F1	|
+|2014|Ptacek	|ces |Macro-F1	|
+|2015|Bamman	|eng |Accuracy	|511|tweets|
+|2016|Oraby	|eng |Macro-F1	|138||
+|2014|Ptáček	|eng |Macro-F1	|286|Czech and English Twitter|
+|2015|Rajadesingan	|eng |Accuracy	|499|twitter: A behavioral approach|
+|2013|Riloff	|eng |F1-sarcasm	|832|as contrast between a positive sentiment\
+and negative situation|
+|2012|Walker	|eng |Macro-F1	|356|deliberation and debate|
+|2020|Gong	|zho |Macro-F1	|
+
+  * an irony type identification dataset (Van Hee+, 2018) 
 
 ### Subjectivity and Sentiment Analysis
 
@@ -421,7 +436,7 @@ https://github.com/UBC-NLP/SPARROW
 
 ## Experiments: prompts
 
-* we customize prompts employed for each task,
+* we customize prompts employed for each task
 * we do not tailor prompts specifically for each model
 * future work will test diverse prompt variations for more robust results
 * translation
