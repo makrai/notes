@@ -5,7 +5,7 @@ Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
 
 # Abstract
 
-* Sentiment analysis and its sub-area of sarcasm detection has received growing
+* Sentiment analysis and its sub-area of sarcasm detection
 * approaches from basic machine learning to multi-modal deep learning solutions,
 * Context has proven to be instrumental for sarcasm .  However, no NLP research has
 * we: detection of sarcasm context, aiming to develop models that can correctly

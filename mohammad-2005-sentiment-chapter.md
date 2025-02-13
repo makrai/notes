@@ -62,7 +62,7 @@ manuscript of the chapter in Emotion Measurement 2021 2nd ed arXiv:2005.11882
     * intent (to criticize, to support, to ridicule, etc) and
     * style (simple statement, sarcasm, hyperbole, etc)
   * available for download
-  * emotion detection alone can fail to distinguish between sev types of intent
+  * emotion detection alone can fail to distinguish between types of intent
     * eg the same emotion of disgust can be associated with the intents of ‘to
       criticize’, ‘to vent’, and ‘to ridicule’
   * systems that automatically classify electoral tweets: emotion and purpose
