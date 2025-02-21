@@ -9,7 +9,7 @@ SemEval | `*`SEM 2018
   * which type of irony (if any) is expressed (Task B)
     * verbal irony by means of a polarity clash,
     * situational irony, or
-    * another type of verbal irony, see further) or is
+    * another type of verbal irony, see further, or 
     * not ironic. Concretely, participants should define which one out of four
 * The ironic tweets were collected using irony-related hashtags (ie #irony,
   `#sarcasm`, #not) and were subsequently

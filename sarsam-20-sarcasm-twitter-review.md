@@ -35,12 +35,3 @@ International Journal of Market Research Volume 62, Issue 5 2020
 # Common features of sarcasm detection
 # Contribution of sarcastic features to machine learning performance
 # Conclusion
-# Funding
-# ORCID iD
-# References
-# PDF / ePub
-# Cite article
-# Share options
-# Information, rights and permissions
-# Metrics and citations
-# Figures and tables

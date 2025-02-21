@@ -6,19 +6,19 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
 
 * Sarcasm detection and humor classification <~ contextual and non-verbal info
   * languages such as Hindi: lack of qualitative annotated datasets
-* we make two major contributions considering the above limitations
+* we make two major contributions
   * a Hindi-English code-mixed dataset, MaSaC for
     multi-modal sarcasm and humor detection in conversational dialog
     * utterances adopted from a popular Indian television comedy show
     * We cleaned, and annotated more than 15000 utterances across 1190 dialogues
-  * MSH-COMICS, an attention-rich neural archit for the [bina] utterance classif
+  * MSH-COMICS, an attention-rich neural archit for binary utterance classif
     * utterance representation utilizing a hierarchical attention mechanism
-      that attends to a small portion of the input sentence at a time
+      * attends to a small portion of the input sentence at a time
     * dialog-level contextual attention mechanism
       to leverage the dialog history for the multi-modal classification
 * experiments
   * extensive experiments for both tasks by
-    varying multi-modal inputs and various submodules of MSH-COMICS
+    * varying multi-modal inputs and various submodules of MSH-COMICS
   * superior performance over the existing models by
     * > 1 F1-score point for the sarcasm detection and
     * 10 F1-score points in humor classification
@@ -37,22 +37,21 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
     * to leverage the distinct and diverse information offered by each modality
     * to reduce the effect of noise among the multi-modal information sources
 * India is a multi-lingual country, and
-  a vast population are comfortable with more than one language. Their comfort
+  a vast population are comfortable with more than one language
   * regular usage of words from multiple languages to form a single sentence
     in both writing and speaking
   * eg ‘Sachin ne 21 years pehle apna debut match khela tha.’
-    ‘Sachin played his debut match twenty one years ago.’) has
+       ‘Sachin played his debut match twenty one years ago.’)
     * three English words (ie ‘years’, ‘debut’, and ‘match’),
     * one named-entity
-    * the rest of the words are part of romanized Hindiy language
+    * the rest of the words are part of romanized Hindi language
   * common to switch languages for the consecutive sentences as well
   * These two variants are termed as the code-mixed and code-switched resp
   * pre-BERT pipeline
     1. language identification of each word. Dictionary-based lookup
-      * hE a token (in transliterated form) is a valid word in more than one
-        language. For example, the word ‘main’ has the meaning ‘important’ in
-        English, while it also means ‘I’ in Hindi
-    2. literature suggests language-specific processing for the downstrea tasks
+      * hE a token (in transliterated form) is a valid word in >1 language
+        eg ‘main’ means ‘important’ in English, and ‘I’ in Hindi
+    2. literature suggests language-specific processing for the downstream tasks
 * handling multilingual inputs in a deep neural network architecture
   * multilingual/cross-lingual word representation techniques [21, 22]
 * Most of the existing datasets for the multi-modal sarcasm and humor detection
@@ -64,25 +63,26 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
   * ∼15,000 utterance exchanges (primarily in Hindi) among the speakers
   * We manually analyze all the utterances and mark the presence/absence of
     sarcasm and humor for each of them (cf Section V for detailed description)
-* MSH-COMICS, a multi-modal hierarchical attention framework for the utterance
-  classification in conversational dialogs
+* MSH-COMICS, a multi-modal hierarchical attention framework for the
+  utterance classification in conversational dialogs
   1. encode the textual utterance representation
     using a hierarchy of localized attention over the tokens in a sentence
   2. learn the modality-specific dialog sequence using LSTM [23] layers
   * to leverage the contextual information, we employ three attention mechs
     that learn the importance of preceding utterances with respect to each of
     the textual, acoustic, and textual+acoustic modalities
-  * a simple gating mechanism that aims to filter the noise in accordance with
-    the interactions among the modalities
-  * Finally, we utilize the filtered representations for the sarcasm and humor
-    classification
+  * a simple gating mechanism aims to filter the noise
+    in accordance with the interactions among the modalities
+  * Finally, we utilize the filtered representations
+    for the sarcasm and humor classification
 * significant performance for both the sarcasm and humor classification tasks
   * We also evaluate MaSaC on the existing multi-modal contextual sentence
-    classification systems. The comparative study reveals that MSH-COMICS
-    yields superior performance compared to the baselines for both the tasks
-* contributions of the current work are as follows:
+    classification systems
+  * MSH-COMICS yields superior performance compared to the baselines
+    for both the tasks
+* contributions
   * MaSaC, a qualitative multi-modal dataset
-    for the sarcasm detection and humor classification
+    for sarcasm detection and humor classification
   * novel architecture for the multi-modal contextual sentence classification
   * strong baselines for the two tasks on the proposed dataset
   * detailed analysis of the experimental results and the reported errors
@@ -118,25 +118,23 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
       using 11 emotional states (eg, upbeat, worried, angry, depressed, etc.)
 * Hindi or other Indian languages [35, 36]
   * Bharti+ [36] developed a sarcasm dataset of 2,000 Hindi tweets. For the
-    baseline evaluation, they employed a rule-based approach that
-    classifies a tweet as sarcastic if it contains more positive words than the
-    negative words, and vice-versa
-  * Swami+ [35] collected and annotated more than 5,000 Hindi-English
-    code-mixed tweets. They extracted n-gram and various Twitter-specific
-    features to learn SVM and Random Forest classifiers. Though the dataset
+    * baseline evaluation, they employed a rule-based approach that
+      classifies a tweet as sarcastic if it contains more positive words than
+      the negative words, and vice-versa
+  * Swami+ [35] collected and annotated > 5,000 Hindi-English code-mixed tweets.
+    * n-gram and various Twitter-specific features to learn SVM and Rand Forest
     * no context, unimodal
 * multi-modal analysis [10, 11]
   * Cai+ [10] proposed a hierarchical fusion model to identify the presence of
     sarcasm in an image in the pretext of its caption
-    * exploited the incongruity in the semantics of the two modalities as the
-      signals of sarcasm.  Another application of the multi-modal sarcasm
+  * exploited the incongruity in the semantics of the two modalities 
 * in the conversational dialog system
   * it is crucial for a dialog agent to be aware of the sarcastic utterances
   * Castro+ [11] developed a multi-speaker conversational dataset for sarcasm
     * For each sarcastic utterance in the dialog, the authors identified
       a few previous utterances as the context for sarcasm (English)
-    * we: instead of defining the explicit context, we let the model learn the
-      appropriate context during training
+* we: instead of defining the explicit context,
+  we let the model learn the appropriate context during training
 
 ## Humor Detection
 
@@ -161,21 +159,69 @@ IEEE Transactions on Affective Computing (Volume: 14, Issue: 2, Apr-Jun 2023)
 * Dario+ [42] treated the humor classification task as sequence labelling
   * conditional random field
 * in Indian languages, the study on humor classification is limited
-  * Khandelwal+ [45] is one of the first studies that involve humor
-    classification in Hindi-English code-mixed language. They developed
-    * a dataset of ∼3,500 tweets with almost equal number of humorous and
-      non-humorous tweets. The authors bench-marked the dataset on
+  * Khandelwal+ [45] is one of the first studies that involve
+    humor classification in Hindi-English code-mixed language
+    * a dataset of ∼3,500 tweets with ~ equal number of +/- humorous tweets. The
     * SVM classifier using bag-of-word features
   * Sane+ [46] improved the SOTA on the same dataset using neural models
   * the dataset of Kandelwal+ [45] lacks both the context and multi-modality
-    * MaSaC has significantly more instances, and
-      annotations for two tasks, ie sarcasm and humor detection
+  * MaSaC has significantly more instances, and 
+    * annotations for two tasks, ie sarcasm and humor detection
 
 # 4 Methodology 4
 
 # 5 Dataset Preparation 5
 
 # 6 Experimental results and analysis 6
+
+## D. Comparative Analysis
+
+* comparative analysis by evaluating the existing systems on MaSaC. In
+* baseline models
+  * SVM [58]: We incorporate an SVM classifier on standalone utterances (without
+    any context) as the baseline system.  Depending on the textual
+    representation, we evaluate two variants:
+    * a) on the average of the constituent word embeddings (T avg ), and
+    * b) on the embedding computed using the hierarchical attention module
+      `H-ATN^U`. For the acoustic signal, we utilize the raw feature
+      representation as mentioned in Section V-C
+  * MUStARD [11]: It is
+    an SVM-based system that takes an
+    * input: utterance and its contextual utterances for the classification
+    * eval context: previous five utterances as the context and learn the
+    * publicly available implementation 8 provided by Castro+ [11]
+  * Ghosh+ [32]: The underlying
+    * architecture of Ghosh+ [32] also incorporates the contextual information
+    * deep neural network architecture that models the contextual and target
+      utterances using two separate CNN-BiLSTM layers
+    * the learned representations are combined in DNN for the classification 9 
+    * eval context: the previous five utterances
+    * implementation of the model was adopted from [32] 10 
+  * DialogRNN [59]: The DialogRNN (DRNN) [59] is one of the
+    * a recent classification model capable of handling conversational dialog
+    * originally proposed for the emotion recognition in conversation (ERC)
+    * the closest approach to our modeling of the two tasks, i.e., classifying
+      each utterance in the conversational dialog
+    * encodes speaker-specific utterances independent of other speakers, and
+      subsequently, incorporates each speaker-specific sequence to maintain the
+      dialog sequence. We utilize the
+    * implementation 11 of DRNN [59] for the evaluation
+* Table VI reports the results of above comparative systems. For each
+  * both unimodal 12 textual and bi-modal textual+acoustic information. In
+  * text:
+    * SVM on T avg reports mediocre F1-scores of 22.5% and 35.6% for the
+      sarcasm and humor classification, respectively. In contrast,
+    * the same SVM classifier improves the performance of two tasks (11% and 6%,
+      respectively) by utilizing the embeddings of hierarchical attention module
+    * the contextual models (MUStARD [11] and Ghosh+ [32]) yield decent F1-scores
+      * 45.1% and 50.0% in sarcasm detection. Similarly,
+      * 59.8% and 57.6% F1-scores for the humor classification
+      * DialogRNN obtains the best comparative F1-scores of 67.0% and 71.4%,
+      * our proposed system reports ∼3% and ∼4.5% improvement over the best
+  * similar trends with the bi-modal textual+acoustic inputs for both tasks
+    * SVM-based system records the least F1-scores of 24.5% and 37.9%, while
+    * DialogRNN [59] reports the best performance with 70.8% and 72.0% F1-scores
+    * the proposed system over the comparative system with >1 and 10 points
 
 ## E. Error Analysis 10
 

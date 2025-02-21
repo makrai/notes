@@ -25,12 +25,11 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 
 ## Text Features
 
-* BERT (Devlin 2018) provides a sentence representation ut ∈ Rdt for every
-  utterance u
+* BERT (Devlin 2018) provides a sentence repr `ut` for every utterance
   * we average the last four transformer layers of the first token ([CLS]) in
-  * BERTBase model – to get a unique utterance representation of size dt =
-* We also considered averaging Common Crawl pre-trained 300 dimensional GloVe
-  * it resulted in lower performance as compared to BERT-based features.
+  * BERTBase model – to get a unique utterance representation of size dt
+* We also considered averaging pre-trained 300 dimensional GloVe (Common Crawl)
+  * it resulted in lower performance as compared to BERT-based features
 
 ## Speech Features
 
@@ -47,15 +46,15 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
     centroid and their associated temporal derivatives (delta).  Segmentation
     * a fixed length representation of the audio sources which are otherwise
     * All the extracted features are concatenated together to compose a da =
-      283 dimensional joint representation {uai }di=1 for each window.
+      283 dimensional joint representation {uai }di=1 for each window
   * The final audio representation of each utterance is obtained by calculating
-    the mean across the window segments, ie  ua = d1w (∑i uai ) ∈ Rda .
+    the mean across the window segments, ie  ua = d1w (∑i uai ) ∈ Rda 
 
 ## Video Features
 
 * visual features for each frame using a `pool5` layer of an ImageNet (Deng 09)
   pretrained ResNet-152 (He 2016) image classification model
-  * preprocess every frame by resizing, center-cropping and normalizing it.  To
+  * preprocess every frame by resizing, center-cropping and normalizing it
   * each utterance, we compute the mean of the obtained dv = 2048 dimensional
     feature vector uvi for every frame: uv = f1 (∑i uvi ) ∈ Rdv
 * we could use more advanced visual encoding techniques (eg, RNN encoding),
@@ -63,30 +62,30 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
 
 # 7 Conclusion
 
-* we developed models that leverage three mods: text, speech, and visual signals
+* we developed models that leverage three modalities: text, speech, and visual
   * We also experimented with the integration of context and speaker info
 * future challenges for multimodal sarcasm detection
 
 ## Multimodal fusion: So far, we have only explored early fusion
 
-* Future work could investigate advanced spatiotemporal fusion strategies (
-  * eg Tensor-Fusion (Zadeh 2017), CCA (Hotelling, 1936)) to better encode the
+* Future work could investigate advanced spatiotemporal fusion strategies
+  * eg Tensor-Fusion (Zadeh 2017), CCA (Hotelling, 1936)
 * fusion strategies that can better model incongruity among modalities
 
 ## Multiparty conversation
 
 * multimodal ~> better relationship modeling (Majumder 2018), and
-* exploit models that provide gesture, facial and pose information (Cao 2018).
+* exploit models that provide gesture, facial and pose information (Cao 2018)
 
 ## Neural baselines
 
 * high quality vs corpus size
-* the occurrence of sarcastic utterances itself is scanty. To focus on effects
+* the occurrence of sarcastic utterances is scanty
 * we chose a balanced version of the dataset with a limited size
   => the problem of over-fitting in complex neural models
   * SVM classifiers perform better than CNNs
 * solutions involving pre-training, transfer learning, domain adaption, or
-  low-parameter models.
+  low-parameter models
 
 ## Sarcasm detection in conversational context
 
@@ -94,7 +93,7 @@ The full dataset is publicly available at github.com/soujanyaporia/MUStARD
   we aim to classify the last utterance in the dialogue
 * we utilize conversational context
 * hE key conversation specific factors such as interlocutors’ goals, intents,
-  dependency, etc. (Poria 2019)
+  dependency, etc (Poria 2019)
 
 ## Main speaker localization
 

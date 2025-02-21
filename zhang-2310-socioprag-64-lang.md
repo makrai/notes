@@ -184,18 +184,18 @@ https://github.com/UBC-NLP/SPARROW
   * nine irony detection datasets in seven languages (eg Xiang+ (2020)),
   * ten sarcasm detection datasets in four languages (eg Walker+ (2012)), and
 
-|year|1st author|lang|score|cited by|from the title|
-|----|---------|----|--------:|----------:|--------|
+|year|1st author|lang|score     |cited by|from the title|
+|----|----------|----|---------:|-------:|--------------|
 |2020|Abufarha	|ara |Macro-F1	|
-|2021|Farha	|ara |Macro-F1	|
-|2014|Ptacek	|ces |Macro-F1	|
-|2015|Bamman	|eng |Accuracy	|511|tweets|
-|2016|Oraby	|eng |Macro-F1	|138||
-|2014|Ptáček	|eng |Macro-F1	|286|Czech and English Twitter|
-|2015|Rajadesingan	|eng |Accuracy	|499|twitter: A behavioral approach|
-|2013|Riloff	|eng |F1-sarcasm	|832|as contrast between a positive sentiment and negative situation|
-|2012|Walker	|eng |Macro-F1	|356|deliberation and debate|
-|2020|Gong	|zho |Macro-F1	|
+|2021|Farha	    |ara |Macro-F1	|
+|2014|Ptacek	  |ces |Macro-F1	|
+|2013|Riloff	  |eng |F1-sarcasm|832|as contrast between a + senti & - situ|
+|2015|Bamman	  |eng |Accuracy	|511|tweets                         |
+|2015|Rajadesingan|eng|Accuracy	|499|twitter: A behavioral approach |
+|2012|Walker	  |eng |Macro-F1	|356|deliberation and debate        |
+|2014|Ptáček	  |eng |Macro-F1	|286|Czech and English Twitter      |
+|2016|Oraby	    |eng |Macro-F1	|138|                               |
+|2020|Gong	    |zho |Macro-F1	|   |                               |
 
   * an irony type identification dataset (Van Hee+, 2018) 
 

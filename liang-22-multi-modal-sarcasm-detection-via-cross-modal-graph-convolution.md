@@ -5,10 +5,10 @@ ACL 2022
 
 # Abstract
 
-* increasing popularity of posting multimodal messages online, many recent
-* we: multi-modal sarcasm detection by constructing a cross-modal graph for each
-  instance to explicitly draw the ironic relations between textual and visual
-  modalities. Specifically, we first 
+* increasing popularity of posting multimodal messages online
+* we: multi-modal sarcasm detection by constructing
+  a cross-modal graph for each instance to
+  explicitly draw the ironic relations between textual and visual modalities.
   1. detect the objects paired with descriptions of the image modality, enabling
      the learning of important **visual** information.
   2. the descriptions of the objects are served as a bridge to determine the
