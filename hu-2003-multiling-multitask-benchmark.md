@@ -286,8 +286,10 @@ https://ai.googleblog.com/2020/04/xtreme-massively-multilingual-multi.html
 * not for structured prediction tasks due to an abundance of in-language
   data and a requirement for annotation projection
 
-### Translate-train multi-task: fine-tune mBERT on the combined translated
-training data of all languages jointly
+### Translate-train multi-task
+
+* fine-tune mBERT
+  on the combined translated training data of all languages jointly
 
 ### Translate-test
 

@@ -12,14 +12,14 @@ EACL 2021 arXiv:2101.10368 [cs.CL]
   * experiments on five different tasks and six different languages from the
     XTREME multilingual benchmark dataset
 * Our meta-learned model clearly improves in performance compared to
-  competitive baseline models that also include multi-task baselines.  We also
-  * zero-shot evaluations on unseen target languages to demonstrate the utility
-    * two multi-task baselines while also reinforcing the linguistic insight
+  competitive baseline models that also include multi-task baselines
+  * zero-shot evaluations on unseen target languages demonstrate the utility
+  * two multi-task baselines
 
 # 1 Intro
 
 * multi-task learning
-  (Liu+ 2019b; Kendall+ 2018; Liu+ 2019a; Yang and Hospedales, 2017) that
+  (Liu+ 2019b; Kendall+ 2018; Liu+ 2019a; Yang and Hospedales, 2017)
 * multi-lingual deep learning models to learn effective embeddings has led to
   (Conneau+ 2020; Conneau and Lample, 2019; Artetxe and Schwenk, 2019);
   * to aid languages in limited resource (Kumar+ 2019; Wang+ 2017; Adams+ 2017)
@@ -42,9 +42,10 @@ EACL 2021 arXiv:2101.10368 [cs.CL]
         different tasks might be more beneficial
       * this is exactly what we find with our meta-learned model and is borne
 * We also find that as the model progressively learns, the meta-learning based
-  models for the tasks requiring deeper semantic analysis benefit more from
-  joint learning compared to the shallower tasks
-* how to sample effectively from different tasks and languages also becomes
+  models for the tasks requiring
+  deeper semantic analysis benefit more from joint learning compared to the
+  shallower tasks
+* how to sample effectively from different tasks and languages
   * sampling strategies, including a parameterized sampling strategy, to assess
     the influence of sampling across tasks and languages on our meta-learned
     model

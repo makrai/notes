@@ -178,14 +178,14 @@ Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone,
 * not require task-specific model design, unlike representation-based transfer
 * hE require a new set of network weights for every new task
 
-## Multi-task Learning (MTL) involves training on tasks simult
+## Multi-task Learning (MTL) involves training on tasks simultaneously
 
 * Caruana (1997) share weights in lower layers, specialized higher layers
 * POS, chunking, NER, etc (Collobert & Weston, 2008)
 * multilingual models (Huang+, 2013)
 * semantic parsing (Peng+, 2017)
 * machine translation (Johnson+, 2017)
-* question answering (Choi+, 2017). MTL yields a single model to solve all
+* question answering (Choi+, 2017)
 * unlike our adapters, MTL requires simultaneous access to the tasks
 
 ## Continual (=lifelong) Learning
