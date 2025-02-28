@@ -5,11 +5,11 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 
 # Abstract
 
-* Research usually focuses on emotion classification, but 
-  performance tends to be rather low, 
+* emotion classification performance tends to be rather low,
   esp with emotion categories that are tailored to specific tasks and domains
 * we propose the use of the dimensional emotion representations (VAD), in an
-  emotion regression task.  Hypothesis:
+  emotion regression task.  
+  * Hypothesis:
   * VAD can improve performance of the classification task
   * VAD might be used as a pivot mechanism to map towards any emo framework,
     * allows tailoring emotion frameworks to spec applications
@@ -126,6 +126,23 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   * The dimensional annotations are real-valued scores from 0 to 1
 
 ## 3.2 Experimental setup
+
+### 3.2.2. Multi-Task Learning
+
+* In this setting, the classification (categories) and regression (dimensions)
+  models are trained simultaneously (see Figure 2). We use 
+  * the same architecture and hyperparameters as in the base model. 
+  * The RobBERT feature encoder allows for hard parameter sharing where the
+    learning of features for the emotion classes and VAD prediction happens
+    simultaneously, but has separate task-specific output layers
+* loss weights
+  * Binary Cross Entropy for emotion classification and 
+  * Mean Squared Error loss for VAD) are 
+  * averaged according to pre-defined weights. 
+  * We test three different ratios: one where 
+    * VAD and classification are weighed equally (both 0.5), one where
+    * classification outweighs VAD (0.75 for classification and 0.25 for VAD)
+    * VAD has the largest weight (0.75 for VAD and 0.25 for classification).
 
 ### 3.2.3. Meta-Learner (fig 3)
 

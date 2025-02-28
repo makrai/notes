@@ -40,9 +40,8 @@ https://github.com/allenai/rainbow
   * surpassing human performance on leaderboards
     (Radford+ 2018; Devlin+ 2019; Liu+ 2019b; Raffel+ 2019)
   * surprisingly silly and nonsensical mistakes, even GPT-3
-* we can learn a great deal from mainstream NLP research
-  * multitask benchmarks eg GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a) has
-    encouraged fundamental advances in the NLP community,
+* multitask benchmarks eg GLUE (Wang+ 2019b) and SuperGLUE (Wang+ 2019a)
+  ~> fundamental advances in NLP
 * we propos two new ways to evaluate commonsense models with an
   emphasis on their generality across tasks and domains
   * new multi-task benchmark, RAINBOW, to facilitate research

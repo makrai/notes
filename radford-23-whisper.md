@@ -139,11 +139,11 @@ transcriptions
 * Our results visualized in Figure 9 show that
   * for small models trained with moderate amounts of compute, there is indeed
     negative transfer between tasks and languages: joint models underperform
-    English-only models trained for the same amount of compute. However,
+    English-only models trained for the same amount of compute
   * nL multitask and multilingual models scale better and
     * for our largest experiments outperform their English-only counterparts
-    * joint models also slightly outperform English-only models even when not
-      adjusting for compute spent per task
+    * joint models also slightly outperform English-only models
+      even when not adjusting for compute spent per task
 
 ## 4.4. Text Normalization
 
@@ -224,10 +224,10 @@ transcriptions
 ## Multitask Learning (Caruana, 1997) has been studied for a long time
 
 * In speech recognition, multi-lingual models (Schultz & Kirchhoff, 2006)
-* An inspirational and foundational work in NLP exploring multi-task learning
-  with a single model is Collobert+ (2011).  Multitask learning
-* in the sequence-to-sequence framework (Sutskever+ 2014) using multiple
-  encoders and decoders was investigated in Luong+ (2015).  The use of
+* Collobert+ (2011) is an inspirational and foundational work in NLP
+  exploring multi-task learning with a single model
+* in the sequence-to-sequence framework (Sutskever+ 2014) using
+  multiple encoders and decoders was investigated in Luong+ (2015)
 * language codes with a shared encoder/decoder architecture was first demon-
   strated for machine translation by Johnson+ (2017), removing the need for
   separate encoders and decoders
