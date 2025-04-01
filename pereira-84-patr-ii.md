@@ -1,4 +1,4 @@
-Fernando C. N. Pereira and Stuart M. Shieber
+Fernando CN Pereira and Stuart M Shieber
 1984
 The Semantics of Grammar Formalisms Seen as Computer Languages
 
@@ -64,15 +64,14 @@ formalisms, in particular those of recent versions of GPSG, LFG, and PATRI1
 
 * The inclusion order K in D provides the notion of a description being
   _more or less specific_ than another
-* The least-upper-bound operation \sqsubseteq
-  * combines two descriptions into the least instantiated description
-    * that satisfies the equations in both descriptions, their
-  * unification
-* The greatest-lower-bound operation \sqcup
+* The least-upper-bound operation $\sqsubseteq$
+  * combines two descriptions into the least instantiated description that
+    satisfies the equations in both descriptions, their unification
+* The greatest-lower-bound operation $\sqcup$
   * gives the most instantiated description containing all the equations
     * common to two descriptions, their
   * generalization
-* unification operation \sqcup is always defined and
+* unification operation $\sqcup$ is always defined and
   * returns T? on unification failure
 * This description mapping can be shown to be continuous
   * in the sense of domain theory,

@@ -202,7 +202,7 @@ Part One: PPIs as double NPIs 4
   NPI-licensing context
 * “immediate” means that there is no scopal intervener
 * more exotic members of the class like _would rather_ share similar properties
-  (43) *John wouldn’t rather eat Chinese (44) John wouldn’t always rather eat
+  (43) `*`John wouldn’t rather eat Chinese (44) John wouldn’t always rather eat
   Chinese (45) I am surprised that John wouldn’t rather eat Chinese
 
 # 3. Questions 12

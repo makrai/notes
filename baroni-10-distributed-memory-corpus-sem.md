@@ -85,7 +85,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
     many of them certainly not envisaged by the resource creators
 * we believe that the lack of generalization in corpus-based semantics stems
   from the choice of representing co-occurrence statistics directly as
-  matrices i.e. binary relations between target items and their contexts
+  matrices ie binary relations between target items and their contexts
   * DM represents corpus-extracted co-occurrences as a third-order tensor
   * word–link–word tuples. Matrices are then generated from the tensor
 
@@ -221,9 +221,9 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
     * familiar to most computer and cognitive scientists
   * At a more abstract level, DM and Turney differ in the strategy with which
     unification in distributional semantics is pursued
-    * Turney’s approach amounts to picking a source task and reinterpreting
-      other tasks as its particular instances
-    * i.e. attributional sim is a subtype of relational
+    * Turney’s approach amounts to picking a source task and
+      reinterpreting other tasks as its particular instances
+    * ie attributional sim is a subtype of relational sim
   * Turney’s focus is on dimensionality reduction applied to tensors
 * higher-order language tensor dimensionality reduction aka. decomposition
   * Turney (2007) and Van de Cruys (2009) can be applied to the DM tensors
@@ -245,7 +245,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
 * only lexicalized links are prepositions
 * noun–verb, noun–noun, and adjective–noun links
 * For each link, we also extract its inverse (this holds for all our DM models)
-* weights i.e. scoring function is Local Mutual Information (LMI)
+* weights ie scoring function is Local Mutual Information (LMI)
   * an approximation to the log-likelihood ratio measure that has been shown to
     be a very effective weighting scheme for sparse frequency counts
     (Dunning 1993; Padó and Lapata 2007)
@@ -495,7 +495,7 @@ Computational Linguistics, Volume 36, Issue 4 December 2010 673–721
   * Constitutive is mostly a whole–part relation, and the harvested links good
   * Telic,
     * q by n, q through n, and q via n capture: action–instrument relation
-    * i.e. subtype of Telic role that Pustejovsky (1995) calls “indirect”
+    * ie subtype of Telic role that Pustejovsky (1995) calls “indirect”
     * The two verb–noun links (q obj n and n sbj intr q) instead capture
       “direct” Telic roles, theme, _read a book, the book reads well_
   * Agentive

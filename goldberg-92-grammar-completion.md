@@ -102,7 +102,7 @@ COLING-92
     corresponding to B, and collapse s1 with the initial state of C (with the
     standard technique). So the procedure will terminate in all cases
 
-# 4 structural description vs structural change
+# 4 Structural description vs structural change
 
 * unificationalists have been asserting that this old-fashioned distinction
   should be abandoned
@@ -110,32 +110,34 @@ COLING-92
 * hE origins of a piece of information may matter
   (Zaenen and Karttunen, 1984; Pullum and Zwicky, 1986; Ingria. 1990)
 * in BUG
-  * The structural description in a BUG rule specifies the conditions under
-    which the rule can be applied in the parsing process. That is, when
-    parsing, it refers to the right-hand side of the rewrite rule only, and it
-    is never used to update any feature structure
+  * The structural description in a BUG rule specifies
+    the conditions under which the rule can be applied in the parsing process.
+    * ie when parsing, it refers to the right-hand side of the rewrite rule
+      only, and it is never used to update any feature structure
     * check unifiability,
-  * The structural change describes what action to take when the structural
-    description is satisfied, ie, how to build a new feature structure (when
-    parsing, this corresponds to the left-hand side of tile context-free rule)
-    * builds structure.  In usual unification-based grammars
+  * The structural change describes
+    what action to take when the structural description is satisfied
+    * ie how to build a new feature structure (when parsing, this corresponds to
+      the left-hand side of tile context-free rule)
+    * builds structure
     * Unifiability differs from unification in a crucial respect
-    * example:
-      1
-      A: []
+* example:
+  1.  A: []
       B: [NUMBER = SINGULAR]
       C: [NUMBER = PLURAL]
-      A is unifiable with B and A is unifiable with C, even though B is not
-      unifiable with C. Therefore, if a structural description requires
-      unifiability of A with both B and C, it will be satisfied. However, if we
-      were to formulate this requirement in terms of unification, as is
-      currently done in unification-based grammars, then A, B and C will not
-      satisfy this requirement
-      2. auxiliary verb should agree with each subject of a co-ordination:
-        (6) Will Jean leave and the others arrive?  This sentence is in because
-        will's NUMBER is unifiable with both that of Jean and that of the
-        others, although the unification of all three NUMBER values still
-        leads to failure. So BUG will behave correctly in this case
+  * A is unifiable with B and A is unifiable with C, even though
+    B is not unifiable with C
+    * if a structural description requires
+      unifiability of A with both B and C, it will be satisfied.
+    * hE if we were to formulate this requirement in terms of unification,
+      as is currently done in unification-based grammars, then
+      A, B and C will not satisfy this requirement
+  2. auxiliary verb should agree with each subject of a co-ordination:
+    * (6) Will Jean leave and the others arrive?  
+    * This sentence is in because
+      will's NUMBER is unifiable with both that of Jean and that of the others,
+      although the unification of all three NUMBER values still fails
+    * So BUG will behave correctly in this case
 
 # 5 Generative Capacity
 
@@ -149,11 +151,11 @@ COLING-92
   * SDs are only used in unifiability tests and are never modified at run-time,
   => they can be constrained in such a way that they yield a finite set of
     equivalence classes of feature structures
-  * SCs only affects the structures being built and cannot interfere with the
-    trajectory through the automaton. Incidentally, this means that
-    unification (but not unifiability tests!) may never fail
+  * SCs only affects the structures being built and
+    cannot interfere with the trajectory through the automaton
+    ~> unification (but not unifiability tests!) may never fail
 * we use an associative, idempotent and commutative version of 'default
   unification' (see Bouma, 1990), which we are not going into here
-  => The automaton produced by BUG is, thus, actually finite-state
+  => The automaton produced by BUG is actually finite-state
   * an extremely important benefit, if not the most important one, of
     separating SDs from SCs in a grammar-writing system

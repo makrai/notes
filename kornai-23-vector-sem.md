@@ -48,6 +48,13 @@ More complex notation
     * (hyper)graph kernel methods (Ghosh+ 2018), or by
     * direct linear algebraic manipulation
 
+## 1.6 Parallel description
+
+* This unification, which is automatic for nodes named identically (or for the
+  element gen, which is capable of unification with anything), is 
+  * not to be confused with coercion (see 3.3),
+    though the effects are somewhat similar.
+
 ### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
 * Position clauses, just as `mark_`, are language-specific. They are used in a
@@ -196,7 +203,7 @@ More complex notation
   * It should be clear from 7.3
   * after some morphological analysis, we just look up the words in the lexicon
     and apply spreading activation and unification algorithms
-  * in the same manner as we analyzed colorless green ideas sleep furi in 6.4
+  * in the same manner as we analyzed _colorless green ideas sleep furio_ in 6.4
   * This is the approach taken eg in
     * Unification Grammar (Shieber, 1986)
     * HPSG (Pollard and Sag, 1987)
@@ -209,6 +216,20 @@ More complex notation
     * proceed from meaning representation to surface form directly,
       without any reliance on Logical Form
     * view interpretation as the inverse task, analysis by synthesis
+
+    ...
+
+* To summarize [the section], we need only one operation, spreading activation,
+  to handle all forms of sensemaking 
+  as long as we have a low-level unification primitive that enforces well-
+  formedness at all times, 
+  * somewhat analogous to autosegmental spreading, resyllabifica- tion, and
+    similar processes maintaining phonological well-formedness. Under this view
+  * syntax, much like morphology, is about matching patterns specified in
+    lexical entries (constructions). The conceptual 
+  * similarity of this view to classical (Lambek-style) Cat- egorial Grammar and
+    modern Combinatory Categorial Grammar is evident, as is the relation to
+    the more lexically inspired Berkeley Construction Grammar
 
 # 8 Trainability and real-world knowledge. Old title: Coreference 175
 
