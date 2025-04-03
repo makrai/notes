@@ -32,8 +32,9 @@ More complex notation
 
 ## 1.5 The algebra of definitions
 
-15. BinaryAtom -> at | between | cause_ | er_ | follow | for_ | from | has | in
-    | ins_ | is_a | lack | mark_ | on | part_of | under
+15. BinaryAtom -> 
+      `at` | `between` | `cause_` | `er_` | `follow` | `for_` | `from` | `has` |
+      `in` | `ins_` | `is_a` | `lack` | `mark_` | `on` | `part_of` | `under`
 * “doing grammar by spreading activation”
   * our concept is almost ident to that of Jackendoff and Audring, 2020 7.2.3
   * both go back to the same ideas (Quillian, 1969; Collins and Loftus, 1975),
@@ -50,10 +51,80 @@ More complex notation
 
 ## 1.6 Parallel description
 
-* This unification, which is automatic for nodes named identically (or for the
-  element gen, which is capable of unification with anything), is 
-  * not to be confused with coercion (see 3.3),
-    though the effects are somewhat similar.
+* three ( + AMR) main approaches to endowing nat lang expressions with semantics
+  * the formulaic, the geometric, and the algebraic approaches
+    discussed in 1.3, 1.4, and 1.5 respectively.
+  * All three have a long tradition going back to the 1960s, with many current
+    variants. No doubt
+  * all these approaches are algebras of their own, and as such
+    * they can be connected by a parallel hyperedge rewriting system with
+  * other approaches, such as
+    * the (now deprecated) automatatheoretic work, are feasible. The view we
+    * Abstract Meaning Representation (AMR) theory Banarescu+ (2013) could be
+    * UD: rough semantics encoded in explicit marking of head-dependent rels,
+      Universal Dependencies could be added as yet another branch. In fact, some
+* syntax-directed translation, going back to Aho and Ullman, 1971, is
+  * standard both in compiler design and in semantics, where it is considered to
+  * implement the Fregean principle of compositionality (see S19:1.1) by two
+    systems operating in parallel: a
+    * syntax that, proceeding from the bottom (leaf) nodes gradually collects
+      these together, and a
+    * semantics that computes at each step a formula based on the formulas
+      associated to the leaves and associates it to the parent node,
+    * using only synthesized attributes in the sense of Knuth, 1968. The basic
+  * generalized for more powerful rewriting methods (Rambow and Satta, 1994;
+    Shieber, 2004), and here we suggest, with implementation planned for Release
+    V3, a hyperedge replacement framework (see Drewes, Kreowski, and Habel
+    (1997) for a detailed overview) for two reasons: first, because it offers
+    * great clarity in regards to separating the metalanguage from the language,
+      the tools from the objects themselves, and second, because it has an
+    * efficient implementation, the Algebraic Language Toolkit (Alto).
+* translational approach [to sem repr] whereby
+  * the semantics of one natural language is explicated in terms of another
+    natural language
+* atomic components of all algebras are the morphemes and words
+  * including multi-word expressions that contain orthographic word boundaries
+  * loosely connected by an `is_a` network. This network is
+    * a DAG but not necessarily a tree:
+    * undirected cycles are common, as in the classic Nixon diamond (Reiter and
+      Criscuolo, 1983). Edges of this network are labeled 0.
+  * two other networks, with edges labeled 1 and 2. In these,
+    * no undirected or directed cycles have been found, but
+    * confluences are not rare.
+* nodes can have non-linguistic content: they may contain
+  * pointers to all kinds of encyclopedic (verbal) knowledge as well as
+  * non-verbal memory: sounds, images, smell. Further,
+    * activation of such may bring activation of the nodes, so these pointers
+  * new nodes are added as the individual, whose linguistic capabilities are
+    being modeled, is acquiring new words/morphemes.
+* hypernodes
+  * In addition to these static node-like structures
+  * hypernodes are more dynamic structures by a process of grouping. In
+  * the simplest case, this is just coordinating a few elementary nodes: instead
+    of Tom, Dick, and Harry we can refer to the collective entity they form as
+  * Typically, hypernodes are nonce elements: boys may very well refer to other
+  * best thought of as the meanings of constituents, are
+  * denoted in the [mini]syntax by curly brackets. On
+  * rare but important: strongly lexicalized groupings we call schemas. For
+    eg `{place}`, defined as point, gen at from {place}, a complex schema we
+  * will discuss in great detail in 3.1.
+* nodes and hyfight peredges are not that different. In fact, when we define
+  * fight := person want {harm at other(person)}, `ins_` weapon this
+  * def means that we can at any time replace the node fight by the hypernode
+    {person want {harm at other (person), `ins_` weapon}} salva veritate. This
+  * substitution plays a major role in the low-level deduction process that
+  * eg _John fought the coyote with his bare hands_:
+    we automatically put _bare hands_ in the `ins_` slot and typecast it as a
+    weapon
+* elementary operations [of deduction during text comprehension].
+  (hyper)nofrd can...
+  * activate themselves and adjacent edges to various degrees;
+  * activate copy themselves (triggered by the keyword other);
+  * unify subnodes. This unification, which is
+    * automatic for nodes named identically
+    * automatic for `gen`, which is capable of unification with anything), is
+    * not to be confused with coercion (see 3.3), though
+      the effects are somewhat similar.
 
 ### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
@@ -81,6 +152,16 @@ More complex notation
 * we have much to say about events, actions, and event structure
   in 3.2 and 6.1,
 
+### Places, Paths
+
+* typecasting or coercion to make sense of expressions like _Let’s meet at
+  Jim’s_
+  * It doesn’t matter what kind of concrete object (eg Jim’s house, restaurant)
+  * the object must be viewed as a place for it to function as the obj of _at_
+* We discuss locations in 3.1, but note here that
+  * their treatment will involve conceptual schemas
+    rather than a type theory with distinguished Place or Path types
+
 ## 2.2 Bound morphemes
 
 * The causative element in _-ize_ is well known (Lieber, 1992; Plag, 1998), and
@@ -89,6 +170,19 @@ More complex notation
 ## 2.3 Relations
 
 ## 2.4 Linking (causation is also in this section) 55
+
+* p60 coercion
+  * typecasting creates a new instance of the standard coordinate system with
+  the office at its origin, and maps many of the features of this system
+  appropriately, in the kind of process described by Fauconnier, 1985.
+  * We call this process coercion, not because it is
+  * not that different from what Fauconnier calls ‘projection mapping’, but
+  * we wish to emphasize its forcible, Procrustean aspect. By understanding,
+    mental reality is created. _at_ forces Bill to be inside the office
+    premises.  We may entertain different notions, perhaps he is out shopping,
+    but to understand the sentence is tantamount to having a concept of him in
+    the office.
+  * geometric interpretation of the coercion mechanism in 3.3.
 
 * `mark_`
 * Let us turn to an explanation for more abstract, non-spatial binaries (p58)
@@ -141,6 +235,10 @@ More complex notation
   * often the distinction between the ‘grammatical’ and the ‘ordinary’ use is
     so slight that we see no reason to even make the distinction:
   * eg `part_of` (discussed in 2.4 above) and `is_a`
+* p71 the somewhat elusive idea of ‘an especially close relationship’
+  * obtains between betrayal and its object, but
+  * not between eating and its object,
+  * can be operationalized in terms of coercion.
 * The U/V (intransitive/transitive) distinction (p71)
 * Since our goals are remarkably close, and our motivations are nearly ident,
   readers of Jackendoff and Audring (2020) may find                     (p72)
@@ -151,10 +249,11 @@ More complex notation
 
 # 3 Time and space
 
-3.1 Space
-3.2 Time
-3.3 Indexicals, coercion
-3.4 Measure
+* 3.1 Space
+* 3.2 Time
+* 3.3 Indexicals, coercion
+  * p92 coercion
+* 3.4 Measure
 
 # 4 Negation
 
@@ -176,7 +275,7 @@ More complex notation
   * it is the lexical semantics of the elements that drives the way instruments
     are referred to in language,
     * not some top-down theory (such as hierarchical ordering of them roles)
-  * the instrumental case marker ins_, defined as `=pat make ins_ =agt[easy]`
+  * the instrumental case marker `ins_`, defined as `=pat make ins_ =agt[easy]`
   * conceptual definitions are paraphrases for trying to get to the meaning of
     * such as Fillmore’s “The case of the inanimate force or object causally
       involved in the action or state identified by the verb” or
@@ -216,18 +315,87 @@ More complex notation
     * proceed from meaning representation to surface form directly,
       without any reliance on Logical Form
     * view interpretation as the inverse task, analysis by synthesis
+...
+* 169 Island parsing techniques (Carroll, 1983), based on the idea that
+  a full parse may be built from well-understood subgrammars, came two decades
+  * Ken Church’s famous declaration, parsers don’t work, that
+  * ~> interest in partial parses
+    * eg light parsing (Abney, 1991),
+* semantics: no reason to suppose that this memory is sequentially organized
+  outside of procedural/episodic memory. In particular,
+  * the bulk of linguistic information is stored in
+    the lexicon, a device that is best thought of as random access
+  * graph transduction
+    * best suited to random access of this sort
+    * The classic model is the Kolmogorov Б-complex (KБC),
+      * originating with Kolmogorov (1953) – for
+      * a more accessible English-language introduction see Ch. 1 of Uspensky
+        and Semenov (1993).
+    * more modern concepts
+      * Storage Modification Machine of Schönhage (1980), the
+      * Pointer Machine of Shvachko (1991), and the
+      * Random Access Computer of Angluin and Valiant (1979) –
+    * for a good discussion, see Gurevich (1988).
+    * all these models are “more appropriate for lower time complexities like
+      real time or linear time” than the standard Turing Machine. We are, in the
+* hypergraphs
+  * Theories of ‘algebraic conceptual representation’ (Kornai and Kracht 2015)
+    take all lexical entries, and the knowledge representations, to be
+    (hyper)graphs, just as the KБC family of models. But
+  * vector semantics demands a new set of parsing and generation techniques.
+    * direct, assigning vector output to each sentence input, or
+    * indirect, proceeding first to create a hypergraph, and
+      computing the vector based on this.
+  * why (hyper)graph?
+    * not so much as a suggestion about the architecture of the grammar but
+    * a means of filling the vacuum left by the deprecation of the Eilenberg Ms
+    * no theoretical claim of ‘psychological reality’ attached to the
+    * nor is there a practical claim that indirect methods will turn out to be
+      the best possible way to organize computation.
+    * not seen as Logical Form any more than binary strings are ‘logical form’
+      for numbers. They are merely
+    * a perspicuous [clearly expressed and easily understood] shorthand, and
+    * economy of the rules that can be stated with their use.
+* 171 spreading activation
+  * The key, most compelling notion these theories have since Quillian is
+  * island parsing writ large,
+  * beginning with nouns, named entities, NPs and PPs, detection of case
+    marking, assembly of clausal structure, and verbal slot filling.
+  * At every stage, morphemes, words, or larger lexical entries are active, and
+    by spreading activation so are their links.
+  * A structure is detected whenever two such spreading waves of activation
+    meet
 
-    ...
+`#`John dared to chew gum (Sec 7.3, p 166, example 7.4)
+
+* Pragmatics, in the sense relevant to our understanding of dare and other
+  implicatives, is simply an effort to find paths where none initially exist.
+  * There is clearly no link, at least initially, from chewing gum to danger.
+  * But chewing gum is the object of dare, so we make the link, and
+    now chewing gum is risky.
+* How far the activation is spread (how many substitutions are made) is
+  obviously related to short-term memory limitations: we, as humans, can only
+  * the motivating experiments: humans respond faster to specific questions like
+    Is a robin a bird? than to more general ones Is a robin an animal? (Collins
+    and Quillian, 1969)
+    * there are 0-links from robin to bird, and from bird to animal, and it
+      simply takes more time to traverse two links than one
+* our linkers =agt and =pat are equalizers, with coercive effect.
+  * When we say _John sleeps_ we are committing not just to the idea that ,,,
+    but (by implication) also to the idea that there is nobody else
+    participating in this particular sleeping event.
+
+### To see how island parsing can provide locality constraints on spreading 172
 
 * To summarize [the section], we need only one operation, spreading activation,
-  to handle all forms of sensemaking 
+  to handle all forms of sensemaking
   as long as we have a low-level unification primitive that enforces well-
-  formedness at all times, 
-  * somewhat analogous to autosegmental spreading, resyllabifica- tion, and
+  formedness at all times,
+  * somewhat analogous to autosegmental spreading, resyllabification, and
     similar processes maintaining phonological well-formedness. Under this view
   * syntax, much like morphology, is about matching patterns specified in
-    lexical entries (constructions). The conceptual 
-  * similarity of this view to classical (Lambek-style) Cat- egorial Grammar and
+    lexical entries (constructions). The conceptual
+  * similarity of this view to classical (Lambek-style) Categorial Grammar and
     modern Combinatory Categorial Grammar is evident, as is the relation to
     the more lexically inspired Berkeley Construction Grammar
 
