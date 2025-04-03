@@ -298,6 +298,9 @@ More complex notation
 ## 7.4 Spreading activation
 
 * see the end of sec 1.5
+
+### It should be clear from 7.3 that parsing in algebraic semantics...
+
 * parsing in algebraic semantics is relatively easy:
   * It should be clear from 7.3
   * after some morphological analysis, we just look up the words in the lexicon
@@ -338,6 +341,9 @@ More complex notation
     * for a good discussion, see Gurevich (1988).
     * all these models are “more appropriate for lower time complexities like
       real time or linear time” than the standard Turing Machine. We are, in the
+
+### Theories of 'algebraic conceptual representation' (Kornai:2015c) share
+
 * hypergraphs
   * Theories of ‘algebraic conceptual representation’ (Kornai and Kracht 2015)
     take all lexical entries, and the knowledge representations, to be
