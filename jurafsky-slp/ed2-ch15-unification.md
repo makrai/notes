@@ -1,5 +1,5 @@
-Jurafsky, Daniel and Martin, James H
-Speech and Language Processing (2Nd Edition)
+Daniel Jurafsky and James H Martin
+Speech and Language Processing (2nd Edition)
 2009
 
 # 15 Features and Unification
@@ -14,7 +14,7 @@ Speech and Language Processing (2Nd Edition)
 	* computational linguistics: grammatical categories and rules
     * eg VPto, Sthat, Non3sgAux, or 3sgNP, as well
     * complex sets of properties associated with rules like S → NP VP
-    * represented by constraints, and so these kinds of models are
+    * represented by constraints
     * often called constraint-based formalisms
 * Why do we need a more fine-grained way of representing and placing constrants
   * phenomena such as agreement and subcategorization can lead to over-generatn
@@ -29,7 +29,7 @@ Speech and Language Processing (2Nd Edition)
   * property called NUMBER that can have the value singular or plural
   * members of the NP and the VP category can have the value singular/plural
   * operations, such as equality tests paired with our core grammar rules
-    * i.e. constraints to help ensure grammaticality
+  * ie constraints to help ensure grammaticality
 * one computational implementation of a constraint-based formalism,
   based on feature structures and unification
 
@@ -55,8 +55,9 @@ Speech and Language Processing (2Nd Edition)
   * draw distinctions among members of a single category
 * features can also have other feature structures as their values
   * bundle a set of feature-value pairs together for similar treatment
-  * eg NUMBER and PERSON features are often lumped together since grammatical
-    subjects must agree with their predicates in both their number and person
+  * eg NUMBER and PERSON features are often lumped together since
+    grammatical subjects must agree with their predicates
+    in both their number and person
   * AGREEMENT feature that takes a feature structure
     consisting of the NUMBER and PERSON feature-value pairs as its value
 
@@ -85,7 +86,7 @@ Speech and Language Processing (2Nd Edition)
 
 ## 15.2 unification operator that is used to implement basic operations 5
 
-> FRIAR FRANCIS : If either of you know any inward impediment
+> FRIAR FRANCIS: If either of you know any inward impediment
 > why you should not be conjoined, charge you, on your souls, to utter it
                                     William Shakespeare, Much Ado About Nothing
 
@@ -104,8 +105,9 @@ Speech and Language Processing (2Nd Edition)
 * eg NUMBER sg ⊔ NUMBER pl Fails!
 * eg NUMBER sg ⊔ NUMBER  = NUMBER sg
   *  value indicates that the value has been left unspecified
-* eg  NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
-																	PERSON 	3rd ]
+* eg  
+    NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
+                              PERSON 	3rd ]
   * union of all the information stored in each of the original structures
   * compatible because they contain no features that are explicitly incompatibl
     * The fact that they each contain a feature-value pair that the other does
@@ -399,7 +401,7 @@ Verb → want
     subcategorization frames for verbs, adjectives, and nouns, and the
   * ACQUILEX tagset of verb subcategorization frames (Sanfilippo, 1993)
   * other information about the complements, such as specifying the
-    identity of the implicit subject in a lower verb phrase, i.e. control
+    identity of the implicit subject in a lower verb phrase, ie control
     eg _Temmy promised Ruth to go_ vs _Temmy persuaded Ruth to go_
 * info about the subcategorization frames for a verb can be partially
   predicted by the semantics of the verb
@@ -534,7 +536,7 @@ NUMBER sg ⊔ PERSON 3rd = [  NUMBER sg
 * Earley algorithm (Earley, 1970) uses dynamic programming and top-down searc
   * In contrast with the bottom-up search implemented by the CKY algorithm
 * core of the Earley algorithm is a single left-to-right pass
-* fills a chart i.e. array that has N + 1 entries
+* fills a chart ie array that has N + 1 entries
   * For each word position in the sentence, the chart contains a
     list of states representing the partial parse trees
     * indexes represent the locations between the words in an input
@@ -612,7 +614,7 @@ VP → V NP • , [0, 3]
 * two goals
   * richer representation for the constituents of the parse, and to
   * block entry into the chart of ill-formed constituents that violate unif
-* original Earley scheme given on page 448 (i.e. 475)
+* original Earley scheme given on page 448 (ie 475)
 
 S → NP VP
 `<NP HEAD AGREEMENT> = <VP HEAD AGREEMENT>`
@@ -636,12 +638,12 @@ S → NP VP
 * altering the algorithm itself
   The most important:
   when COMPLETER creates a new state by the extension of a state
-  * i.e. when a completed constituent has been added to the chart
+  * ie when a completed constituent has been added to the chart
   * task is to attempt to find, and extend, existing states in the chart that
     are looking for constituents that are compatible with the new one
 * To be more specific, COMPLETER adds a new state into the chart by
   * finding an existing state whose • can be advanced by the newly completed
-    state [i.e.] when the category of the constituent immediately following •
+    state [ie] when the category of the constituent immediately following •
     matches the category of the newly completed constituent
     * now: unifying the feature structure associated with the newly completed
       state with the appropriate part of the feature structure being advanced
@@ -656,7 +658,7 @@ S → NP VP
     * avoid the infinite recursion problems associated with left-recursive ruls
   * prevent the wasteful addition of a state into the chart whose effect on the
     parse would be accomplished by an already existing state
-    * i.e. prevent duplicating the work that will eventually be done by
+    * ie prevent duplicating the work that will eventually be done by
       more general states already in the chart
   * eg  chart contains the following state,
     where the Dag places no constraints on the Det
@@ -852,7 +854,7 @@ NP → Det Nominal
 * disjunction (Kay, 1979; Kasper and Rounds, 1986)
 * operation incorporated into feature structures OR in a separate metalanguage
   * descriptions may thus use negation and disjunction to describe a set of
-    feature structures (i.e., a certain feature must not contain a certain
+    feature structures (ie, a certain feature must not contain a certain
     value, or may contain any of a set of values) but an
   * actual instance of a feature structure that meets the description would not
     have negated or disjoint values
