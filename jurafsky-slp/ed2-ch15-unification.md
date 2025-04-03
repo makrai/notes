@@ -105,9 +105,10 @@ Speech and Language Processing (2nd Edition)
 * eg NUMBER sg ⊔ NUMBER pl Fails!
 * eg NUMBER sg ⊔ NUMBER  = NUMBER sg
   *  value indicates that the value has been left unspecified
-* eg  
-    NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
-                              PERSON 	3rd ]
+* eg
+  
+      NUMBER sg ⊔ PERSON 3rd = [NUMBER	sg
+                                PERSON 	3rd ]
   * union of all the information stored in each of the original structures
   * compatible because they contain no features that are explicitly incompatibl
     * The fact that they each contain a feature-value pair that the other does
