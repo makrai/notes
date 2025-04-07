@@ -12,7 +12,11 @@ Universality
 Reductivity
 Encyclopedic knowledge
 
+### Instead of sophisticated scientific taxonomies, ... a naive world-view
+
 ## 1.3 The syntax of definitions
+
+### Starting with ‘disambiguated language’ ... departs from many syntactic 10
 
 * the details of the ‘tinkering’ change from language to language
 * the `mark_` primitive connects words to their meanings (see 2.5)
@@ -30,21 +34,41 @@ More complex notation
 
 ## 1.4 The geo of definitions
 
+### In addition to 0 links 12
+defs often explain the definiendum in terms of it being the subject or object
+
+### ... a rudimentary theory of communication 15
+
+### The key link type ...  is the type 0 (is, is\_a) link p20
+
+* More traditional dictionaries, use even more vague terms in the definition,
+  * Webster’s New World (Guralnik, 1958) ‘used to express futurity, possibility,
+    obligation, intention, etc’; The
+  * Concise Oxford (McIntosh, 1951) has, distributed among several senses,
+    ‘exist, occur, live, remain, continue, occupy such a position, experien...'
+* A more unified treatment seems warranted, and will in fact be provided in 2.3
+
 ## 1.5 The algebra of definitions
 
-15. BinaryAtom -> 
+15. BinaryAtom ->
       `at` | `between` | `cause_` | `er_` | `follow` | `for_` | `from` | `has` |
       `in` | `ins_` | `is_a` | `lack` | `mark_` | `on` | `part_of` | `under`
+
+* morphology and syntax are handled by the same mechanism 25
+  * We will see in Chapter 2 in far greater detail
+  * syntax and morphological analysis of Latin sentences ordinarily proceeds
+    hand in hand (S19:5.3)
 * “doing grammar by spreading activation”
   * our concept is almost ident to that of Jackendoff and Audring, 2020 7.2.3
   * both go back to the same ideas (Quillian, 1969; Collins and Loftus, 1975),
-  * obliterating the usual distinction between rules and representations. In
+  * obliterating the usual distinction between rules and representations
   * all the work is done by the representations and
     there are only a few generic rules that apply to all representations,
     primitive and derived, intermediary or final, the same way
-  * characteristic of early combinatorial system like the untyped lambda
-    calculus (Church, 1936) and categorial grammar (Ajdukiewicz, 1935)
-  * maintained in all implementations of 4lang , be they by
+  * characteristic of early combinatorial system like the
+    * untyped lambda calculus (Church, 1936) and
+    * categorial grammar (Ajdukiewicz, 1935)
+  * maintained in all implementations of 4lang, be they by
     * Eilenberg machines (which directly formalize spreading activation), by
     * (hyper)graph kernel methods (Ghosh+ 2018), or by
     * direct linear algebraic manipulation
@@ -53,7 +77,7 @@ More complex notation
 
 * three ( + AMR) main approaches to endowing nat lang expressions with semantics
   * the formulaic, the geometric, and the algebraic approaches
-    discussed in 1.3, 1.4, and 1.5 respectively.
+    discussed in 1.3, 1.4, and 1.5 respectively
   * All three have a long tradition going back to the 1960s, with many current
     variants. No doubt
   * all these approaches are algebras of their own, and as such
@@ -78,7 +102,7 @@ More complex notation
     (1997) for a detailed overview) for two reasons: first, because it offers
     * great clarity in regards to separating the metalanguage from the language,
       the tools from the objects themselves, and second, because it has an
-    * efficient implementation, the Algebraic Language Toolkit (Alto).
+    * efficient implementation, the Algebraic Language Toolkit (Alto)
 * translational approach [to sem repr] whereby
   * the semantics of one natural language is explicated in terms of another
     natural language
@@ -87,16 +111,16 @@ More complex notation
   * loosely connected by an `is_a` network. This network is
     * a DAG but not necessarily a tree:
     * undirected cycles are common, as in the classic Nixon diamond (Reiter and
-      Criscuolo, 1983). Edges of this network are labeled 0.
+      Criscuolo, 1983). Edges of this network are labeled 0
   * two other networks, with edges labeled 1 and 2. In these,
     * no undirected or directed cycles have been found, but
-    * confluences are not rare.
+    * confluences are not rare
 * nodes can have non-linguistic content: they may contain
   * pointers to all kinds of encyclopedic (verbal) knowledge as well as
   * non-verbal memory: sounds, images, smell. Further,
     * activation of such may bring activation of the nodes, so these pointers
   * new nodes are added as the individual, whose linguistic capabilities are
-    being modeled, is acquiring new words/morphemes.
+    being modeled, is acquiring new words/morphemes
 * hypernodes
   * In addition to these static node-like structures
   * hypernodes are more dynamic structures by a process of grouping. In
@@ -107,7 +131,7 @@ More complex notation
   * denoted in the [mini]syntax by curly brackets. On
   * rare but important: strongly lexicalized groupings we call schemas. For
     eg `{place}`, defined as point, gen at from {place}, a complex schema we
-  * will discuss in great detail in 3.1.
+  * will discuss in great detail in 3.1
 * nodes and hyfight peredges are not that different. In fact, when we define
   * fight := person want {harm at other(person)}, `ins_` weapon this
   * def means that we can at any time replace the node fight by the hypernode
@@ -116,15 +140,15 @@ More complex notation
   * eg _John fought the coyote with his bare hands_:
     we automatically put _bare hands_ in the `ins_` slot and typecast it as a
     weapon
-* elementary operations [of deduction during text comprehension].
-  (hyper)nofrd can...
+* elementary operations [of deduction during text comprehension]
+  (hyper)nofrd can..
   * activate themselves and adjacent edges to various degrees;
   * activate copy themselves (triggered by the keyword other);
   * unify subnodes. This unification, which is
     * automatic for nodes named identically
     * automatic for `gen`, which is capable of unification with anything), is
     * not to be confused with coercion (see 3.3), though
-      the effects are somewhat similar.
+      the effects are somewhat similar
 
 ### 5. MarkedClause ~> DefaultClause|PositionClause|ComplexClause|Clause
 
@@ -174,15 +198,15 @@ More complex notation
 * p60 coercion
   * typecasting creates a new instance of the standard coordinate system with
   the office at its origin, and maps many of the features of this system
-  appropriately, in the kind of process described by Fauconnier, 1985.
+  appropriately, in the kind of process described by Fauconnier, 1985
   * We call this process coercion, not because it is
   * not that different from what Fauconnier calls ‘projection mapping’, but
   * we wish to emphasize its forcible, Procrustean aspect. By understanding,
     mental reality is created. _at_ forces Bill to be inside the office
     premises.  We may entertain different notions, perhaps he is out shopping,
     but to understand the sentence is tantamount to having a concept of him in
-    the office.
-  * geometric interpretation of the coercion mechanism in 3.3.
+    the office
+  * geometric interpretation of the coercion mechanism in 3.3
 
 * `mark_`
 * Let us turn to an explanation for more abstract, non-spatial binaries (p58)
@@ -238,7 +262,7 @@ More complex notation
 * p71 the somewhat elusive idea of ‘an especially close relationship’
   * obtains between betrayal and its object, but
   * not between eating and its object,
-  * can be operationalized in terms of coercion.
+  * can be operationalized in terms of coercion
 * The U/V (intransitive/transitive) distinction (p71)
 * Since our goals are remarkably close, and our motivations are nearly ident,
   readers of Jackendoff and Audring (2020) may find                     (p72)
@@ -295,14 +319,14 @@ More complex notation
 ## 7.1 Adjectives
 ## 7.2 Gradience
 ## 7.3 Implicature
+
 ## 7.4 Spreading activation
 
 * see the end of sec 1.5
 
-### It should be clear from 7.3 that parsing in algebraic semantics...
+### ... parsing in algebraic semantics is relatively easy 169
 
-* parsing in algebraic semantics is relatively easy:
-  * It should be clear from 7.3
+* It should be clear from 7.3
   * after some morphological analysis, we just look up the words in the lexicon
     and apply spreading activation and unification algorithms
   * in the same manner as we analyzed _colorless green ideas sleep furio_ in 6.4
@@ -318,92 +342,128 @@ More complex notation
     * proceed from meaning representation to surface form directly,
       without any reliance on Logical Form
     * view interpretation as the inverse task, analysis by synthesis
-...
+* (hyper)graph manipulation
+  * The linearization of meanings as formulas is a relatively new development:
+  * Frege (1879) actually used 2D notation, as does
+  * Generative Semantics used tree structures on the semantic side, and almost
+  * The exception is Pān.ini, whose
+    notational conventions were geared toward the pronuncability of the sūtras:
+    linear, but with special indicatory letters (it, anubandha) interspersed
+* the limitations of short-term or working memory (Miller, 1956)
+  * Starting perhaps with Yngve (1961), linguists have long wrestled with
+    assessing the impact on sentence processing of ~
+  * The bulk of this work concerns syntax and takes it for granted that
+    the central issue is dealing with the linear succession of words
 * 169 Island parsing techniques (Carroll, 1983), based on the idea that
-  a full parse may be built from well-understood subgrammars, came two decades
-  * Ken Church’s famous declaration, parsers don’t work, that
+  a full parse may be built from well-understood subgrammars
+  * Ken Church’s famous declaration: parsers don’t work
   * ~> interest in partial parses
-    * eg light parsing (Abney, 1991),
-* semantics: no reason to suppose that this memory is sequentially organized
-  outside of procedural/episodic memory. In particular,
+  * eg light parsing (Abney, 1991),
+* semantics: no reason to suppose that the memory is sequentially organized
+  outside of procedural/episodic memory
   * the bulk of linguistic information is stored in
     the lexicon, a device that is best thought of as random access
   * graph transduction
     * best suited to random access of this sort
     * The classic model is the Kolmogorov Б-complex (KБC),
       * originating with Kolmogorov (1953) – for
-      * a more accessible English-language introduction see Ch. 1 of Uspensky
-        and Semenov (1993).
+      * a more accessible English-language introduction:
+        Ch 1 of Uspensky and Semenov (1993)
     * more modern concepts
-      * Storage Modification Machine of Schönhage (1980), the
-      * Pointer Machine of Shvachko (1991), and the
+      * Storage Modification Machine of Schönhage (1980)
+      * Pointer Machine of Shvachko (1991)
       * Random Access Computer of Angluin and Valiant (1979) –
-    * for a good discussion, see Gurevich (1988).
+    * for a good discussion, see Gurevich (1988)
     * all these models are “more appropriate for lower time complexities like
-      real time or linear time” than the standard Turing Machine. We are, in the
+      real time or linear time” than the standard Turing Machine
 
 ### Theories of 'algebraic conceptual representation' (Kornai:2015c) share
 
 * hypergraphs
   * Theories of ‘algebraic conceptual representation’ (Kornai and Kracht 2015)
     take all lexical entries, and the knowledge representations, to be
-    (hyper)graphs, just as the KБC family of models. But
-  * vector semantics demands a new set of parsing and generation techniques.
+    (hyper)graphs, just as the KБC family of models
+  * vector semantics demands a new set of parsing and generation techniques
     * direct, assigning vector output to each sentence input, or
     * indirect, proceeding first to create a hypergraph, and
-      computing the vector based on this.
+      computing the vector based on this
   * why (hyper)graph?
     * not so much as a suggestion about the architecture of the grammar but
     * a means of filling the vacuum left by the deprecation of the Eilenberg Ms
     * no theoretical claim of ‘psychological reality’ attached to the
     * nor is there a practical claim that indirect methods will turn out to be
-      the best possible way to organize computation.
+      the best possible way to organize computation
     * not seen as Logical Form any more than binary strings are ‘logical form’
       for numbers. They are merely
     * a perspicuous [clearly expressed and easily understood] shorthand, and
-    * economy of the rules that can be stated with their use.
+    * economy of the rules that can be stated with their use
 * 171 spreading activation
-  * The key, most compelling notion these theories have since Quillian is
+  * The key, most compelling notion these theories have since Quillian
   * island parsing writ large,
   * beginning with nouns, named entities, NPs and PPs, detection of case
-    marking, assembly of clausal structure, and verbal slot filling.
+    marking, assembly of clausal structure, and verbal slot filling
   * At every stage, morphemes, words, or larger lexical entries are active, and
-    by spreading activation so are their links.
+    by spreading activation so are their links
   * A structure is detected whenever two such spreading waves of activation
     meet
 
 `#`John dared to chew gum (Sec 7.3, p 166, example 7.4)
 
-* Pragmatics, in the sense relevant to our understanding of dare and other
-  implicatives, is simply an effort to find paths where none initially exist.
-  * There is clearly no link, at least initially, from chewing gum to danger.
+* Pragmatics, in the sense relevant to our understanding of _dare_ and other
+  implicatives, is simply an effort to find paths where none initially exist
+  * There is clearly no link, at least initially, from chewing gum to danger
   * But chewing gum is the object of dare, so we make the link, and
-    now chewing gum is risky.
+    now chewing gum is risky
 * How far the activation is spread (how many substitutions are made) is
   obviously related to short-term memory limitations: we, as humans, can only
   * the motivating experiments: humans respond faster to specific questions like
     Is a robin a bird? than to more general ones Is a robin an animal? (Collins
     and Quillian, 1969)
-    * there are 0-links from robin to bird, and from bird to animal, and it
-      simply takes more time to traverse two links than one
-* our linkers =agt and =pat are equalizers, with coercive effect.
+  * there are 0-links from robin to bird, and from bird to animal, and
+    it simply takes more time to traverse two links than one
+* our linkers =agt and =pat are equalizers, with coercive effect
   * When we say _John sleeps_ we are committing not just to the idea that ,,,
     but (by implication) also to the idea that there is nobody else
-    participating in this particular sleeping event.
+    participating in this particular sleeping event
 
 ### To see how island parsing can provide locality constraints on spreading 172
 
+* we need some notion of a pattern that imposes linearity constraints
+  (immediate precedence). A well-known example would be the standard
+* eg English SVO pattern: `=agt V =pat` and the
+  * ‘nmod’ pattern A N. Both assume linearity
+* simplifications for presentation
+  * the subject agrees with the predicate in number and person, and that
+  * other critical phrase-level features eg bar level
+    (Harris, 1951; Jackendoff, 1977)
+  * these require more complex graphs (feature structures in GPSG/HPSG)
+* ‘radical lexicalist’ paradigm (Karttunen, 1989),
+  * tactic patters are also lexical entries, though considerably less contentful
+* eg _colorless green ideas sleep furiously_
+  * The first islands are built on the morphologically preferred color+less and
+    furious+ly
+  * We can try to match the nmod pattern A N to green ideas, to ideas sleep, and
+  * invoke the lexical category of the elements. Though 4lang , being a
+  * -ly is a deadjectival adverb-forming suffix, and -less is adj-forming
+    Since colorless is an adjective, it can match the first member of the A N
+    pattern, while furiously, being D, cannot match the second member
+* extramorphological formatives acting as separate words or clitics?
+  * eg the English subordinating particle _that_, which can act as a device for
+    activating either/or
+    * the subject of the subordinate clause the flood that engulfed me or
+    * its object the vote that I cast
 * To summarize [the section], we need only one operation, spreading activation,
   to handle all forms of sensemaking
-  as long as we have a low-level unification primitive that enforces well-
-  formedness at all times,
+  as long as we have a low-level unification primitive that enforces
+  well-formedness at all times,
   * somewhat analogous to autosegmental spreading, resyllabification, and
-    similar processes maintaining phonological well-formedness. Under this view
+    similar processes maintaining phonological well-formedness
   * syntax, much like morphology, is about matching patterns specified in
-    lexical entries (constructions). The conceptual
-  * similarity of this view to classical (Lambek-style) Categorial Grammar and
-    modern Combinatory Categorial Grammar is evident, as is the relation to
-    the more lexically inspired Berkeley Construction Grammar
+    lexical entries (constructions)
+  * similarity/relation of this view to 
+    * classical (Lambek-style) Categorial Grammar and 
+    * modern Combinatory Categorial Grammar is evident, as is the relation to
+    * the more lexically inspired Berkeley Construction Grammar
 
 # 8 Trainability and real-world knowledge. Old title: Coreference 175
 
