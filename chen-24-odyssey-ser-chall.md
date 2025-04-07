@@ -1,4 +1,4 @@
-1st Place Solution to Odyssey Emotion Recognition Challenge Task1:
+1st Place Solution to Odyssey Emotion Recognition Challenge Task1 (classif):
   Tackling Class Imbalance Problem
 Mingjie Chen, Hezhao Zhang, Yuanchao Li, JIACHEN LUO, Wen Wu, Ziyang Ma,
   Peter Bell, C Lai, J D Reiss, L Wang, P Woodland, X Chen, H Phan, T Hain
@@ -15,15 +15,12 @@ Odyssey 2024
 * we further employ a majority voting strategy to
   combine the outputs of an ensemble of 7 models. The models are trained
   independently, using different acoustic features and loss functions
+  * cross entropy loss and the focal loss were used
+  * Uniform class weights and prior-based class weights are studied
+  * the combinations of loss functions and class weights lead to
+    different preference on the major classes or the minor classes
 * best performance in the challenge, ranking 1st among 68 submissions
 * Macro-F1 score of 35.69% and an accuracy of 37.32%
-* from the _Conclusion_
-  * The 7 models were trained independently with
-    different loss functions and class weights:
-    * cross entropy loss and the focal loss were used
-    * Uniform class weights and prior-based class weights are studied
-    * the combinations of loss functions and class weights lead to
-      different preference on the major classes or the minor classes
 
 # 1. Introduction
 
@@ -129,7 +126,7 @@ Odyssey 2024
 # 3. System Description
 
 * the system yielding the best performance makes use of an ensemble of models
-  * Each model takes as/returns
+  * Each model takes as input/returns
     * input in frame-level audio features as well as token-level text features
     * output of each model are the probabilities for each emotion class
     * the prediction of each model is equally used for voting to emotion
@@ -208,6 +205,7 @@ Odyssey 2024
 * The implementations are based on the recipe of the speechbrain toolkit [32]
 
 ### 4.2.2. Feature Fusion
+
 * the following ones were implemented and compared
   * Early fusion: text and audio features are concatenated at the embedding
     level
@@ -245,24 +243,24 @@ Odyssey 2024
   * expected improvement in accuracy on the test set: approximately 1%,
     as suggested by previous research on the impact of WER on SER perform [38]
 
-## 4.3. Evaluation Metrics: Macro-F1 is used as the primary metric. Macro-F1 is
+## 4.3. Evaluation Metrics: Macro-F1 is used as the primary metric
 
 * ie the unweighted average of the F1 score of each class
 * additianlly: the weighted accuracy (WA) and unweighted accuracy (UA)
 
 # 5. Results
 
-* From analysing the performance difference in WA and UA results, it would be
-  easy to understand how the models perform on the major vs minor classes
+* From analysing the performance difference in +/-weighted accuracy WA and UA
+  * ie how the models perform on the major vs minor classes
 * Comparing model-1 to model-4, increasing γ = 2 causes an improvement in WA
   but a drop in UA, causing a reduction in Macro-F1
 * audio features: for model-1, model-2 and model-3, it is clear that the
-  Whisper features yield better results than both the WavLM features and the
-  Hubert features
+  Whisper features yield better results
+  than both the WavLM features and the Hubert features
   * possible reasons
     * the Whisper model were trained supervisedly with text transcriptions,
-      while the other two models were trained without supervision. These are
-    * difference due to the model sizes and the amount of training data used
+      while the other two models were trained without supervision
+    * difference in the model sizes and the amount of training data used
 * the two loss functions and the two class weights
   * Generally: different loss functions and class weights yields models that
     have different preferences for major and minor classes
@@ -272,8 +270,8 @@ Odyssey 2024
     * Comparing model-7 and model-5, the prior-based class weights give
       more attention to minor classes ~>
       * significant improvement in WA but a large drop in UA
-    * ie the prior-based class weights improve the performance on the minor
-      classes, but sacrificing the performance on the major classes. The per-
-      formance drop may be due to over-fitting on major classes
+    * ie the prior-based class weights improve the perf on the minor classes,
+      but sacrificing the performance on the major classes. The performance
+      drop may be due to over-fitting on major classes
   * focal loss: comparing model-1 and model-5 shows that
     * focal loss helps model-1 reach a better balance between major & minor
