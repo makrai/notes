@@ -336,7 +336,7 @@ for multiple reasons:
   * combining these two relative position information models
     increases performance on natural language understanding tasks
 * DeBERTa (He+ 2021)
-  * Complementary to that line of research is a method by He+ (2021): In their
+  * Complementary to that line of research is a method by He+ (2021)
   * omit the position–position interaction and focus on unit–position interact
   * hE still untied or disentangled as they use
     different projection matrices for unit and position embeddings

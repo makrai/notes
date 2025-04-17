@@ -41,7 +41,7 @@ https://github.com/google-research/language/tree/master/language/multiberts
     bootstrapping methods similar to the Multi-Bootstrap,
     in the context of summarization metrics evaluation.  Also in concurrent
   * the Mistral project (Karamcheti+ 2021) released a set of 10 GPT-2 models
-    with intermediate checkpoints at different stages of pre-training.  Our
+    with intermediate checkpoints at different stages of pre-training
 
 # 2 release the MultiBerts
 
