@@ -51,13 +51,13 @@ arXiv:2106.09685 [cs.CL]
 * adapting only some parameters or learning external modules for new tasks
   ~> we only need to store and load a small number of task-specific parameters
   in addition to the pre-trained model for each task, greatly boosting the
-  operational efficiency when deployed. However, existing techniques
-  * hE inference latency (Houlsby+ 2019; Rebuffi+ 2017) by extending model
-    depth
-  * or reduce the model’s usable sequence length
+  operational efficiency when deployed
+  * hE inference latency because of extended model depth
+    (Houlsby+ 2019; Rebuffi+ 2017)
+  * or reduced usable sequence length
     (Li & Liang, 2021; Lester+ 2021; Hambardzumyan+ 2020; Liu+ 2021) (Sec 3)
-  * often fail to match the fine-tuning baselines, posing a
-    * trade-off between efficiency and model quality
+  * often fail to match the fine-tuning baselines
+  * trade-off between efficiency and model quality
 * We take inspiration from Li+ (2018a); Aghajanyan+ (2020) which show that
   * the learned over-parametrized models in fact reside on a low intrinsic dim
   * We hypothesize that
@@ -86,15 +86,15 @@ arXiv:2106.09685 [cs.CL]
   * LoRA is orthogonal to many prior methods and can be combined with many of
     them, such as prefix-tuning. We provide an example in Appendix E
 
-## Terminologies and Conventions We make frequent references to the Transformer
+## Terminologies and Conventions. We make frequent references to the Transformer
 
-* input and output dimension size of a Transformer layer d_model . We use
+* input and output dimension size of a Transformer layer `d_model`. We use
 * Wq , Wk , Wv , and Wo to refer to the query/key/value/output projection mxs
   in the self-attention module
 * W or W0 refers to a pretrained weight matrix and
   * ∆W its accumulated gradient update during adaptation. We use
-* r to denote the rank of a LoRA module. We follow the
-* conventions set out by Vaswani+ (2017) and Brown+ (2020)
+* r to denote the rank of a LoRA module
+* We follow the conventions set out by Vaswani+ (2017) and Brown+ (2020)
   * Adam (Loshchilov & Hutter, 2019; Kingma & Ba, 2017) for model optimization
   * Transformer MLP feedforward dimension d_{ffn} = 4 × d_model
 

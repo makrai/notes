@@ -125,7 +125,7 @@ Odyssey 2024
   a sequence classification head configured with three output features
   * a regression task with a loss function based on the mean CCC of V, A, and D
 * LoRA adapter is used (rank = 256, α = 256 and dropout = 0.1) for efficient
-  fine-tuning over 40 epochs, using AdamW optimizer, a
+  fine-tuning over 40 epochs, using AdamW optimizer
   * learning rate of 2 × 10−5 and a batch size of 16
   * As LLaMA does not have a pad token we set it to be the same as EOS token
 * alternative method, we train a model using RoBERTa [21] as the backbone
