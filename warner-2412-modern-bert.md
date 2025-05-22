@@ -42,35 +42,38 @@ B Warner, A Chaffin, B Clavié, O Weller, O Hallström, S Taghadouini,
       Retrieval-Augmented Generation (RAG) pipelines (Lewis+, 2020), where
       encoder models are used to retrieve and feed LLMs with context relevant
       to user queries.
-  * still frequently used for a variety of discriminative tasks such as
-    classification (Tunstall+, 2022) or Na[med] Entity Recognition (NER)
-    (Zaratiana+, 2024), where 
-    they often match the performance of specialized LLMs. Here again, 
-    * they can be used in conjunction with LLMs, for example 
-      detecting toxic prompts (Ji+, 2023; Jiang+, 2024b) and 
-      preventing responses, or 
-      routing queries in an agentic framework (Yao+, 2023; Schick+, 2023).
+* still frequently used for a variety of discriminative tasks
+  * classification (Tunstall+, 2022) or 
+    * L Tunstall, N Reimers, Unso ES Jo, L Bates, D Korat, M Wasserblat, O Pereg
+      arXiv 2022
+      Efficient few-shot learning without prompts
+  * Na[med] Entity Recognition (NER) (Zaratiana+, 2024)
+  * where they often match the performance of specialized LLMs
+  * they can be used in conjunction with LLMs, for example 
+    * detecting toxic prompts (Ji+, 2023; Jiang+, 2024b) and 
+    * preventing responses, or 
+    * routing queries in an agentic framework (Yao+, 2023; Schick+, 2023).
   * hE these pipelines currently rely on older models, and 
     * quite often on the original BERT itself as their backbone (Wang+, 2022;
-      Xiao+, 2023), without leveraging improvements developed in recent
+      Xiao+, 2023), without leveraging recent improvements
     * sequence lengths limited to 512 tokens, 
     * suboptimal model design (Anthony+, 2024) and 
     * suboptimal vocabulary sizes (Karpathy, 2023), and 
-    * generally inefficient architectures, whether in terms of downstream
-      performance or computational efficiency. Finally, 
+    * generally inefficient architectures
+      in terms of both downstream performance or computational efficiency
     * training data is limited in volume and restricted to narrow domains
-      (especially lacking code data) or lacking knowledge of recent events.
+      (especially lacking code data) or lacking knowledge of recent events
 * Recent modernization efforts have only partially addressed the shortcomings
-  of encoder-only models due to limited breadth. 
   * MosaicBERT (Portes+, 2023), CrammingBERT (Geiping and Goldstein,
     2023), and AcademicBERT (Izsak+, 2021) focused on
     matching BERT performance with better training efficiency.
-  * NomicBERT (Nussbaum+, 2024) and GTE-en-MLM (Zhang+, 2024) (developed
-    concurrently to this work) introduced longer-context encoder models
+  * NomicBERT (Nussbaum+, 2024) and GTE-en-MLM (Zhang+, 2024) 
+    * concurrently to this work) introduced 
+    * longer-context encoder models
     * retrieval applications, but did 
     * not optimize for efficiency or classification performance, and 
     * re-used older training data mixtures which is
-      especially apparent in programming-related tasks.
+      especially apparent in programming-related tasks
 * Contributions We present ModernBERT, a modernized encoder-only transformer
   * increase downstream performance and efficiency,
     especially over longer sequence lengths. We also bring encoder-only models
@@ -84,3 +87,18 @@ B Warner, A Chaffin, B Clavié, O Weller, O Hallström, S Taghadouini,
   * FlexBERT1 , our modular architecture framework allowing easy experiments,
   * all intermediate training checkpoints (further detailed in Section 2.2.2).
     * inspired by Pythia (Biderman+, 2023), 
+
+## 3.1 Evaluation Setting
+
+### 3.1.1 Natural Language Understanding
+
+* General Language Understanding Evaluation (GLUE) benchmark (Wang+ 2018) is the
+  * sentence or sentence-pair understanding tasks, such as 
+  * eg sentiment detection (Liu+ 2019b) or language entailment, through tasks
+    such as MNLI (Williams et al., 2018).
+  * saturated by the best-performing models, such as LLMs (Zhao+ 2023), it
+  * remains one of the most commonly used evaluation suites for smaller
+    encoder-based models, and
+    provides a good impression of a model’s performance on classification
+    (Portes+ 2023; Zhang+ 2024; He+ 2023)
+
