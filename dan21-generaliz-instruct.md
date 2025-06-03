@@ -14,11 +14,11 @@ Our code is publicly available http://cogcomp.org/page/publication_view/936
   * whether the test performance of these models indicates an understanding of
     the spatial domain and of the natural language instructions relative to it,
     * or they merely over-fit spurious signals in the dataset
-* We formulate a set of expectations one might have from a model and concretely
-  * dimensions of robustness such a model should possess. Despite decent test
+* We formulate a set of expectations one might have from a model
+  * dimensions of robustness such a model should possess
 * SOTA models fall short of these expectations and are extremely brittle
-* We then propose a learning strategy that involves data augmentation and show
-  * extensive experiments that the proposed learning strategy yields models
+* We then propose a learning strategy that involves data augmentation
+  * extensive experiments
     * competitive on the original test set while
     * satisfying our expectations much better
 

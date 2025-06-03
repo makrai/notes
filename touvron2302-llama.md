@@ -9,20 +9,22 @@ arXiv:2302.13971 [cs.CL]
   * trained on trillions of tokens, publicly available datasets exclusively
   * LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and
     * while being more than 10× smaller
-  * LLaMA-65B is competitive with the best models, Chinchilla-70B and
-    PaLM-540B
+  * LLaMA-65B is competitive with the best models,
+    Chinchilla-70B and PaLM-540B
 * from the conclusion
-  * finetuning these models on instructions lead to promising results, and we
+  * finetuning these models on instructions lead to promising results
     * like Chung+ (2022)
   * future
     * finetuning on instructions
-    * larger models trained on larger pretraining corpora in the future, since we
-      have seen a constant improvement in performance as we were scaling
+    * we have seen a constant improvement in performance as we were scaling
+    ~> larger models trained on larger pretraining corpora in the future
 
 # 1 Intro
 
-* Large Languages Models (LLMs) trained on massive corpora of texts have
+* Large Languages Models (LLMs) trained on massive corpora of texts
   * perform new tasks from textual instructions or from a few examples (Brown+)
+    * TB Brown, B Mann, N Ryder, M Subbiah, J Kaplan, P Dhariwal, A
+      2020.  Language models are few-shot learners.
   * [just] when scaling models to a sufficient size (Kaplan+, 2020), resulting
     => a line of work that focuses on further scaling these models
     (Chowdhery+, 2022; Rae+, 2021)
