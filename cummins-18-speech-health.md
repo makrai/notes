@@ -54,8 +54,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 ## 4.1. Baseline systems
 
-* reason for focusing this review on the ComParE and AVEC challenges is the
-  presence of a transparent baseline system and associated scoring metrics
+* reason for focusing this review on the ComParE and AVEC challenges
+  * transparent baseline system and associated scoring metrics
   * This property enables the use of straightforward comparisons to assess
     improvements, if any, offered through new approaches
   * hE no strict rule as to what constitutes a ‘good’ system performance

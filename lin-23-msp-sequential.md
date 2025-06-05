@@ -18,14 +18,14 @@ February 2023 IEEE/ACM Transactions on Audio Speech Lang Porocess Vol: 31
     1. uses the pretrained emotion rankers to generate the emotional curves
     2. it uses the chunk-based curves as labels to train the seq-to-seq SER 
 * sequence-to-sequence formulation by leveraging the retrieved emotional
-  curves. The proposed method 
+  curves
   * we achieve the best concordance correlation coefficient (CCC) prediction
     performance for arousal (0.7120), valence (0.3125), and dominance (0.6324)
-    on the MSP-Podcast corpus. In addition, we validate the approach with
+    on the MSP-Podcast corpus
   * experiments on the IEMOCAP and MSP-IMPROV databases: validated
-  * We compare the retrieved curves with time-continuous emotional traces. The
-  * the chunk-label curves display a time-consistency property that is similar
-    to time-continuous traces annotated by human listeners. The proposed SER
+  * We compare the retrieved curves with time-continuous emotional traces
+  * the chunk-label curves display a time-consistency property that is
+    similar to time-continuous traces annotated by human listeners
 
 # I.  Introduction
 

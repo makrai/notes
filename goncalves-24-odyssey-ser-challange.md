@@ -25,8 +25,8 @@ baseline: https://huggingface.co/3loi
       the inverse frequency of each class
     * ie higher weights to less frequent classes
     * weighted CE loss is defined as follows
-* attributes prediction (task 2), we use a single task setup, where we train a
-  separate regression model for arousal, valence, and dominance
+* attribute prediction (task 2): we use a single task setup, where we train
+  a separate regression model for arousal, valence, and dominance
   * loss on emotional attribs: concordance correlation coefficient (CCC, eq 2)
   * measures the agreement between the true and predicted emo attribute scores
   * Our model’s training objective is to optimize the CCC, aiming to achieve a

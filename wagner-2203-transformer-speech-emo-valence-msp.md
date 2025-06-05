@@ -106,10 +106,10 @@ arXiv:2203.07378 [eess.AS]
     wav2vec 2.0 or HuBERT (Wang+ [23]) shows best performance in the ranking
     * hE, some of the more complex models [32] only report results without fint
     * eg the cross-representation encoder-decoder model by Makiuchi+ (2021)
-* dimensional emotion (deferred)
+* dimensional emotion deferred
   * the aforementioned studies have focused on emotional categories
   * several studies concentrate on dimensions
-* most comparable to ours is that of Srinivasan+ [16],
+* most comparable to ours is Srinivasan+ [16]
   * wav2vec 2.0/HuBERT fine-tuned on arousal, dominance, and valence
   * particularly good in predicting valence
     * a feature which has long escaped audio-based models
@@ -212,8 +212,15 @@ we evaluate SER models for correctness, robustness, and fairness [48]
 ## Correctness measures how well predictions match the ground truth
 
 * The concordance correlation coefficient (CCC) provides an estimate of
-  how well the predicted distribution matches the ground truth one [49], and is
+  how well the predicted distribution matches the ground truth one [49]
+  49. L. I.-K. Lin, “A concordance correlation coefficient to evaluate
+      reproducibility,” Biometrics, vol. 45, no. 1, pp. 255–268, 1989.
 * the typical measure for evaluating dimensional SER models [50]
+  50. F. Ringeval, B. Schuller, M. Valstar, R. Cowie, H. Kaya, M. Schmitt,
+    S.  Amiriparian, N. Cummins, D. Lalanne, A. Michaud, et al.,
+    “Avec 2018 workshop and challenge:
+      Bipolar disorder and cross-cultural affect recognition,”
+    2018 on audio/visual emotion challenge and workshop, 2018, pp. 3–13.
 
 ## Robustness (cf. Section 4.8)
 

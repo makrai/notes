@@ -23,16 +23,16 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
     converts the predictions of the VAD model to emotion classes
 * We show that dimensional representations can indeed boost performance for
   emotion classification, especially in the meta-learning setting
-  (up to 7% macro F1-score compared to regular emotion classification)
+  * up to 7% macro F1-score compared to regular emotion classification
   * The pivot method was not able to compete with the base model, but
   * categories do benefit from the additional VAD information,
   * hE the opposite does not hold
     * ie the VAD model is more robust than the classification model
   * further inspection suggests that it could be efficient, provided that the
     VAD regression model is further improved
-    * rule-based mapping itself does perform on par with the base model when
-      gold VAD values are used.  This suggests that the pivot method could be
-      efficient, provided that the VAD regression model is further improved
+  * gold VAD + rule-based mapping: performance on par with the base model
+    ie the pivot method could be efficient, 
+    provided that the VAD regression model is further improved
 
 # 1 Intro
 

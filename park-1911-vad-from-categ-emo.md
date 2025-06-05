@@ -18,7 +18,7 @@ arXiv:1911.02499
     * categorical: comparable performance to that of the SOTA classifiers
     * VAD: significant positive correlations with the ground truth VAD scores
   * further training with supervision of VAD labels leads to improved perf
-    especially when dataset is small
+    especially when the dataset is small
 * We also present examples of predictions of appropriate emotion words
   that are not part of the original annotations
 
@@ -46,8 +46,8 @@ arXiv:1911.02499
   * one only with V (Lykousas+ 2019)
   * We could build additional resources by labeling VAD scores
     by Best-Worst Scaling (Kiritchenko and Mohammad, 2017)
-* we approach this problem with a novel and more efficient method to
-  predict VAD scores from existing corpora annotated with categorical emotions
+* our method predicts VAD scores
+  from existing corpora annotated with categorical emotions
   * Scherer and Wallbott, 1994; Alm+ 2005; Aman and Szpakowicz, 2007;
     Mohammad, 2012; Sintsovaa and Musata, 2013; Li+ 2017; Schuff+ 2017;
     Shahraki and Zaiane, 2017; Mohammad+ 2018
@@ -77,7 +77,7 @@ arXiv:1911.02499
 
 ## Model Architecture (Fig 1a)
 
-* Formally, an emotion detection model is P (e|X) where
+* Formally, an emotion detection model is P(e|X) where
   * e is an emotion drawn from a set of pre-defined categorical emotions e ∈ E
   * X = {x1 , x2 , ..., xn } is a sequence of symbols xi representing the input
   * Usually e is a one-hot vector in emotion classification
@@ -86,10 +86,10 @@ arXiv:1911.02499
 
 ## Model Training (Fig 1b)
 
-* we need to obtain target conditionals for each P (v|X), P (a|X), P (d|X)
+* we need to obtain target conditionals for each P(v|X), P(a|X), P(d|X)
   from categorical emotion labels
 * sorted one-hot labels can be treated as a proxy of target conditionals
-* we minimize the distances between the true and predicted P (·|X)s
+* we minimize the distances between the true and predicted P(·|X)s
   * Since we sorted the labels, there is ordering among the classes
   * This should be taken into account during optimization, so
     we minimize the squared Earth Mover’s Distance (EMD) loss (Hou+ 2017)
@@ -179,8 +179,8 @@ arXiv:1911.02499
 # 5 Ablation
 
 * the effect of model architecture, pre-training and fine-tuning
-  * We show the result for SemEval dataset because it gave the best performance
-    for zero-shot score prediction
+  * We show the result for SemEval dataset because
+    it gave the best performance for zero-shot score prediction
   * Validation set results are shown in Appendix
 * In Table 3, we present six models for ablation study
 * Model 1: RoBERTa trained on SemEval with our framework except
@@ -255,11 +255,11 @@ arXiv:1911.02499
 
 * manipulating the semantic emotive content of user news feeds
   * can affect the choices of both individuals and groups on the platform to
-    engage and interact (Stark and Hoey, 2020). From a different perspective,
+    engage and interact (Stark and Hoey, 2020)
 * problems might occur from the inaccurate results of the model
   * Mispredictions of the models could result in harmful outcomes
 * languages with relatively low resources
-  * quality  of emotion detection resources would degrade if translated to
+  * quality  of emotion detection resources would degrade
   * cultural nuances to defining emotions vary
 * guidelines for the ethical use of emotional AI technologies
   * a checklist for anyone engaged with data about human emotion
