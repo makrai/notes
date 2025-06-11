@@ -32,7 +32,7 @@ as an auxiliary task in a multi-task neural network
   * a more nuanced notion of truth by comparing against soft labels: we
     * the probability distributions over the labels given by the annotators,
       rather than using one-hot encodings with a single correct label. To
-* divergence measure between probability distributions, we can use well-known
+* divergence measure between probability distributions
   * Kullback-Leibler divergence (Kullback and Leibler, 1951), the
   * Jensen-Shannon divergence (Lin, 1991), and the Cross-Entropy, which is
     also used to quantify the error with one-hot encoded labels. 
