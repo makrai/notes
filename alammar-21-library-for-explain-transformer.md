@@ -94,9 +94,10 @@ ACL | IJCNLP 2021
     layer as can be seen in Section 4)
 * Figure 6 shows a comparison of the hidden states and FFNN neuron activations
   as the model processes textual input
-* All three CCA methods take two activation vectors (be they hidden states or
-  neuron activations) and assign a similarity score from zero (no correlation)
-  to one (the two inputs are linear transformations of each other)
+* All three CCA methods
+  * take two activation vectors (be they hidden states or neuron activations)
+  * assign a similarity score from zero (no correlation) to
+    one (the two inputs are linear transformations of each other)
 
 ## 3.2 Ranking of Output Token Across Layers
 

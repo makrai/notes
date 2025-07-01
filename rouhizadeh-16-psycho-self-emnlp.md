@@ -55,10 +55,10 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
   1. empirically-driven verb clustering based on CCA
 * Canonical Correlation Analysis (CCA)
   * a multiview dimensionality reduction technique
-  * previously ... used in word clustering methods such as
+  * previously used in word clustering methods such as
     * word embeddings (Dhillon+ 2011), or
     * multilingual word embeddings (Ammar+ 2016)
-    * advantage[:] we can leverage both the subject and object context
+    * advantage: we can leverage both the subject and object context
     * we performed sparse CCA on
   * input matrices
     * x that includes 5k by 10k verb-by-nominal-subject (nsubj) co-occurrences,
@@ -67,8 +67,8 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
     * a _subject by component_ matrix (u: subject-view), and
     * an _object by component_ matrix (v: object-view)
   * We then build matrix
-    * S by multiplying x by u to get the verbs by CCA-components
-    * O by multiplying z by v to get the ... verbs by object components
+    * S = x u = the verbs by CCA-components
+    * O = z v = the verbs by object components
   * cluster verbs from direct CCA components,
     we use the average score of subject-view and object-view components,
     assigning verbs to those components
@@ -96,8 +96,8 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 * encoded as the mean from maximum likelihood estimation over the probability
   of mentioning a first person singular pronoun in a given context
 * The overall usage of a first person singular pronoun: P (1p) = P (P N = 1p)
-* The probability ... in the nsubj, and the dobj positions: P (1p|r)
-* The probability ... in the nsubj[/dobj] positions of a given verb category
+* The probability in the nsubj, and the dobj positions: P (1p|r)
+* The probability in the nsubj[/dobj] positions of a given verb category
 
 # Evaluation
 
@@ -142,4 +142,4 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
     (Meyer+ 2001)
 * Tables 2, 3, and 4 show the most predictive features,
   using the best performing clustering method (i.e. Levin & Sentiment)
-  * in the case of age and gender ...  the direction completely changes
+  * in the case of age and gender  the direction completely changes

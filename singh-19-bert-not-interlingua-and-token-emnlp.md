@@ -22,12 +22,12 @@ https://www.github.com/salesforce/xnli_extension
 
 # 1 Introduction
 
-* multilingual version of BERT trained on over 100 languages achieved
+* multilingual version of BERT trained on > 100 languages achieved
   SOTA performance across a wide range of languages as well
 * Performance for low-resource languages has been further improved by
   * parallel data (Lample and Conneau, 2019) and leveraging
   * machine translation systems for cross-lingual regularization (Singh+ 2019)
-* zero-shot machine translation has investigated the multilingual NMT
+* zero-shot machine translation (neural?)
   * shared subword vocabulary Johnson+ (2017);
 * Kudugunta+ (2019) learn a form of interlingua, a common representational
 * We aim to extend this study to multilingual language models
@@ -38,7 +38,7 @@ https://www.github.com/salesforce/xnli_extension
 * Singular value and projection weighted variants of CCA allow for
   analysis of representations of the same data points from different models
   * invariant to affine transformations (Raghu+ 2017; Morcos+ 2018),
-  * [were] used to explore learning dynamics and representational similarity
+  * were used to explore learning dynamics and representational similarity
     * computer vision (Morcos+ 2018) and
     * natural language processing (Saphra and Lopez, 2018; Kudugunta+ 2019)
 * We analyze multilingual BERT

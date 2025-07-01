@@ -246,9 +246,9 @@ on top of the frozen pretrained model
 * built on top of pyvene [Wu+ 2024b], a library for performing and
   training activation interventions on arbitrary PyTorch models
 * Any pretrained LM available on HuggingFace is supported through our library
-* finetuned models can be easily uploaded to HuggingFace. The following example
-  shows steps to wrap a Llama-2 7B model with a single intervention on the
-  residual stream output of the 19-th layer
+* finetuned models can be easily uploaded to HuggingFace
+  * The following example shows steps to wrap a Llama-2 7B model with a single
+    intervention on the residual stream output of the 19-th layer
 
 # B Describing existing methods under the ReFT framework
 
