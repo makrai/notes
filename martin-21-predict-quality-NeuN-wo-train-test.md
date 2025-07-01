@@ -462,8 +462,7 @@ https://github.com/CalculatedContent/ww-trends-2020
     * ResNet models of up to 1000 layers have been trained 32
 * The efficiency and effectiveness of ResNet seems to be reﬂected in the
   smaller and more stable α ~ 2.0, across nearly all layers,
-  indicating that the inner layers are very well correlated and
-  more strongly optimized
+  ie the inner layers are very well correlated and more strongly optimized
 * This contrasts with the DenseNet models, which contains
   many connections between every layer. These results
   (large α, meaning that even a PL model is probably a poor fit)

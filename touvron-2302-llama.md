@@ -47,8 +47,8 @@ arXiv:2302.13971 [cs.CL]
   * it may be cheaper to train a large model to reach a certain level of
   * a smaller one trained longer will ultimately be cheaper at inference. For
   * Hoffmann+ (2022) recommends training a 10B model on 200B tokens,
-  * we find that the performance of a 7B model continues to improve even after
-    1T tokens
+  * we find that
+    the perf of a 7B model continues to improve even after 1T tokens
 * we train a series of language models that achieve the best possible perf at
   various inference budgets, by training on more tokens than what is typical
   * LLaMA, ranges from 7B to 65B parameters with
@@ -64,7 +64,7 @@ arXiv:2302.13971 [cs.CL]
     (Scao +, 2022) and GLM (Zeng+, 2022), but
     * none that are competitive with PaLM-62B or Chinchilla
 
-# 2 modifications we made to the transformer archit and our training method 2
+# 2 modifications to the transformer archit and our training method 2
 
 * Our training approach is
   * similar to the methods described in previous work
@@ -86,14 +86,16 @@ arXiv:2302.13971 [cs.CL]
 
 ## 2.2 Architecture
 
-* Following recent work on large language models, our network is based on the
-  transformer architecture (Vaswani+, 2017). We leverage various improvements:
+* our network is based on the transformer architecture (Vaswani+, 2017)
+* We leverage improvements that were used in different models such as PaLM
+* were found the inspiration for this change (in bracket):
 
 ### Pre-normalization [GPT3]. To improve the training stability
 
 * we normalize the input of each transformer sub-layer
   * instead of normalizing the output
-  * We use the RMSNorm normalizing function (Zhang and Sennrich 2019)
+  * We use the Root mean square layer normalization (RMSNorm) normalizing func
+    (Zhang and Sennrich 2019)
 
 ### SwiGLU activation function [PaLM]. We replace the ReLU non-linearity
 

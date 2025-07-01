@@ -66,9 +66,9 @@ https://github.com/facebookresearch/blt
       contextualized groupings of bytes with relatively uniform information
       density
 * flop-controlled scaling study of byte-level models up to 8B parameters and 4T
-  training bytes, showing that we can train a model end-to-end at scale from
-  * matches training flop-controlled performance 1 of Llama 3 while using up to
-    50% fewer flops at inference (§5). We also show that directly working with
+  training bytes, showing that we can train a model end-to-end at scale
+  * matches training flop-controlled performance of Llama 3 while using up to
+    50% fewer flops at inference (§5)
   * significant improvements in modeling the long-tail of the data. BLT models
   * more robust to noisy inputs and display 
   * enhanced character level understanding abilities demonstrated on
