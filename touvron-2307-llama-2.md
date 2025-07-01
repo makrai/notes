@@ -45,18 +45,18 @@ arXiv:2307.09288 [cs.CL]
   * emergence of tool usage and temporal organization of knowledge
 * We are releasing the following models to the general public
   for research and commercial use
-  1. Llama 2, an updated version of Llama 1
-    * trained on a new mix of publicly available data. We also
-      increased the size of the pretraining corpus by 40%,
-      doubled the context length of the model, and adopted
-      grouped-query attention (Ainslie+ 2023)
-      * Joshua Ainslie, James Lee-Thorp, Michiel de Jong, Yury Zemlyanskiy,
-          Federico Lebrón, and Sumit Sanghai
-        Gqa: Training generalized multi-query transformer models from
-        multi-head checkpoints
-        2023
-    * We are releasing variants of Llama 2 with 7B, 13B, and 70B parameters. We
-    * 34B variants, which we report on in this paper but are not releasing.§
+1. Llama 2, an updated version of Llama 1
+  * trained on a new mix of publicly available data. We also
+    increased the size of the pretraining corpus by 40%,
+    doubled the context length of the model, and adopted
+    grouped-query attention (Ainslie+ 2023)
+    * Joshua Ainslie, James Lee-Thorp, Michiel de Jong, Yury Zemlyanskiy,
+        Federico Lebrón, and Sumit Sanghai
+      Gqa: Training generalized multi-query transformer models from
+      multi-head checkpoints
+      2023
+  * We are releasing variants of Llama 2 with 7B, 13B, and 70B parameters. We
+  * 34B variants, which we report on in this paper but are not releasing.§
 2. Llama 2-Chat, a fine-tuned version of Llama 2 that is optimized for dialogue
    * We release variants of this model with 7B, 13B, and 70B parameters as
 * potential risks with use (Bender+ 2021b; Weidinger+ 2021; Solaiman+ 2023)
@@ -244,12 +244,12 @@ arXiv:2307.09288 [cs.CL]
 ## Large Language Models
 
 * scaling laws of Kaplan+ (2020)
-* several Large Language Models with more than 100B parameters have been
-  * from GPT-3 (Brown+ 2020) to Gopher (Rae+ 2022) or
+* several Large Language Models with more than 100B parameters
+  * from GPT-3 (Brown+ 2020) to Gopher (Rae+ 2022)
 * specialized models, eg Galactica, for science (Taylor+ 2022)
 * With 70B parameters, Chinchilla (Hoffmann+ 2022) redefined those scaling laws
   towards the number of tokens rather than model weights. Notable in this
-* Llama: focus on computational efficiency during inference (Touvron+ 2023). A
+* Llama: focus on computational efficiency during inference (Touvron+ 2023)
 * open-source versus closed-source models
   * Open-source releases like BLOOM (Scao+ 2022), OPT (Zhang+ 2022), and Falcon
     (Penedo+ 2023) have risen to

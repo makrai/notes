@@ -111,8 +111,9 @@ https://github.com/state-spaces/mamba
   implemented (eg in the style of Megatron (Shoeybi+ 2019)). The main ideas:
   * grouped-value attention (GVA) head structure, and moving all data-dependent
     projections to occur in parallel at the beginning of the block
-* The combination of the modified parallel Mamba block, together with using SSD
-  as the inner SSM layer, results in the Mamba-2 architecture
+* The combination of 
+  * the modified parallel Mamba block, together with using 
+  * SSD as the inner SSM layer, results in the Mamba-2 architecture
   * Chinchilla scaling laws for Mamba-2 in the same setting as Mamba
   * it Pareto dominates Mamba and Transformer++ in both perplexity and
     wall-clock time
