@@ -60,7 +60,7 @@ ACL 2025 arXiv:2503.01315 [cs.CL]
   * not fully the clinical setting, where each participant was only asked three
     questions, making the dialogue content too short for retrieval.
 * social intelligence enhancement module, we employ
-  COKE, a cognitive knowledge graph for machine theory of mind (Wu+ 2024). COKE
+  COKE, a cognitive knowledge graph for machine theory of mind (Wu+ 2024)
   * contains a series of cognitive chains to describe human mental activities
     and behavioral/affective responses in social situations.
   * we, In RED
