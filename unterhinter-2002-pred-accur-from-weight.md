@@ -1,10 +1,14 @@
 Predicting Neural Network Accuracy from Weights
 T Unterthiner, Daniel Keysers, Sylvain Gelly, Olivier Bousquet, Ilya Tolstikhin
-Comments:
-  * Updated the Small CNN Zoo dataset: reduced the maximal learning rate and
-    got rid of multiple bad runs. Replaced all the experiments with the new
-    numbers. Added MLP. Fixed typo in the abstract (R2 score instead of
-    Kendall's tau). Added several earlier related works to the literature
+
+# Comments:
+
+* Updated the Small CNN Zoo dataset:
+  * reduced the maximal learning rate and got rid of multiple bad runs
+  * Replaced all the experiments with the new numbers
+  * Added MLP
+  * Fixed typo in the abstract (R2 score instead of Kendall's tau)
+  * Added several earlier related works to the literature
 
 # Abstract
 
