@@ -17,13 +17,24 @@
   Erről többünknek eszünkbe jutott, hogy
   a beadott cikkek élmezőnyén kívül nagyjából random, hogy elfogadják-e.
   Az alább ajánlott poszterek között is lehet ilyen.
+* Vissyzatérő motívum: circuit /ˈsɝːkɪt/
 * Sok cikk címében kettőspont!
+* Egy poszter nem poszter! `20250729_162001`
+  * [World Modeling Makes a Better Planner:](https://arxiv.org/abs/2503.10480)
+    Dual Preference Optimization for Embodied Task Planning
+    Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai, et al
+  * World-aware Planning Narratives [Enhance](https://arxiv.org/abs/2506.21230)
+    Large Vision-Language Model Planner
+Junhao Shi, Zhaoye Fei, Siyin Wang, Qipeng Guo, Jingjing Gong, Xipeng Qiu
+
+
+    Recent advances in large vision-language models (LVLMs) have shown promise for embodied task planning, yet they struggle with fundamental challenges like dependency constraints and efficiency. Existing approaches either solely optimize action selection or leverage world models during inference, overlooking the benefits of learning to model the world as a way to enhance planning capabilities. We propose Dual Preference Optimization (D2PO), a new learning framework that jointly optimizes state prediction and action selection through preference learning, enabling LVLMs to understand environment dynamics for better planning. To automatically collect trajectories and stepwise preference data without human annotation, we introduce a tree search mechanism for extensive exploration via trial-and-error. Extensive experiments on VoTa-Bench demonstrate that our D2PO-based method significantly outperforms existing methods and GPT-4o when applied to Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving superior task success rates with more efficient execution paths.
 
 # Pszichológia
 
 ## Narrative
 
-[Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
+### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
 
 `20250728_175038`
 
@@ -44,12 +55,25 @@
   and hierarchical zero-shot learning using LLMs
   * at the level of a document, a paragraph, and a sentence
 
+### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
+
+Jaya Caporusso, Matthew Purver, Senja Pollak
+
+* PhD proposal
+* we plan to introduce
+  an ontology of Self-aspects and a gold-standard annotated dataset. Using this
+  * develop and evaluate conventional discriminative models, generative LLMs,
+    and embedding-based retrieval approaches against four main
+* criteria: interpretability, ground-truth adherence, accuracy, and
+  computational efficiency
+* case studies in mental health and empirical phenomenology
+
 ## Depression
 
 [Eeyore:](https://arxiv.org/abs/2503.00018) Realistic Depression Simulation
 via Supervised and Preference Optimization
 
-Siyang Liu, Bianca Brie, Wenda Li, Laura Biester, Andrew Lee, \
+Siyang Liu, Bianca Brie, Wenda Li, Laura Biester, Andrew Lee,
 James Pennebaker, Rada Mihalcea
 
 * goal: capturing diverse client traits and psychological conditions. We
@@ -90,6 +114,27 @@ Byung-Doh Oh, Hongao Zhu, William Schuler
      replicated using models trained on ‘leakage-free’ data that
      overlaps only minimally with the reading time corpora. Taken together, this
 
+# Konstrukciós nyelvtan
+
+[CxGGEC:](https://aclanthology.org/2025.acl-long.307/)
+Construction-Guided Grammatical Error Correction
+
+Yayu Cao, Tianxiang Wang, Lvxiaowei Xu, Zhenyao Wang, Ming Cai
+
+* Current grammatical error correction (GEC) methods primarily rely on
+  grammatical labels for syntactic information, often overlooking the inherent
+  usage patterns of language. In this work, we explore
+the potential of construction grammar (CxG) to improve GEC by leveraging
+constructions to capture underlying language patterns and guide corrections
+* we establish a comprehensive construction inventory from corpora. Next, we
+* we introduce a construction prediction model that
+  identifies potential constructions in ungrammatical sentences
+  using a noise-tolerant language model
+* we train a CxGGEC model on construction-masked parallel data, which performs
+  GEC by decoding construction tokens into their original forms and correcting
+  erroneous tokens
+* Extensive experiments on English and Chinese GEC benchmarks: effective
+
 # Tutorials
 
 
@@ -107,7 +152,7 @@ Byung-Doh Oh, Hongao Zhu, William Schuler
 
 ### Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
-* the standard pipeline of LLM training: \
+* the standard pipeline of LLM training:
   tokenization, pretraining, possibly mid-training, and post training or
   alignment
 * 3 cases when we don't understand  this pipeline
@@ -123,8 +168,8 @@ Byung-Doh Oh, Hongao Zhu, William Schuler
 
 ### Poster
 
-#### [TUBA:](https://arxiv.org/abs/2404.19597) \
-Cross-Lingual Transferability of Backdoor Attacks in LLMs \
+#### [TUBA:](https://arxiv.org/abs/2404.19597)
+Cross-Lingual Transferability of Backdoor Attacks in LLMs
 with Instruction Tuning
 
 Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp, et al
@@ -147,7 +192,7 @@ The implications of backdoor attacks on English-centric large language models
 * 2) Robustness: the proposed attack remains effective even after defenses are
   applied. These findings expose critical security vulnerabilities in
 
-#### [Human-LLM Coevolution:](https://arxiv.org/abs/2502.14718) \
+#### [Human-LLM Coevolution:](https://arxiv.org/abs/2502.14718)
     Evidence from Academic Writing
 
 Mingmeng Geng, Roberto Trotta
@@ -163,7 +208,18 @@ Mingmeng Geng, Roberto Trotta
   the LLM-generated content.  Such coevolution and cooperation of humans and
   * additional challenges to the detection of machine-generated text in
 
-#### [A Semantic-Aware Layer-Freezing Approach](https://arxiv.org/abs/2406.11753) \
+#### [Testing English News Articles for Lexical Homogenization](https://arxiv.org/abs/2505.24731)
+Due to Widespread Use of Large Language Models
+
+Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
+
+* we compare two datasets of English online news articles:  2018 vs 2024
+* lexical homogenization measured by the MATTR, Maas, and MTLD metrics, and
+* LLM-Style-Word Ratio (SWR) to measure LLM influence. We found
+  * higher MTLD and SWR scores, yet
+  * negligible changes in Maas and MATTR scores in 2024 corpus. We conclude that
+
+#### [A Semantic-Aware Layer-Freezing Approach](https://arxiv.org/abs/2406.11753)
 to Computation-Efficient Fine-Tuning of Language Models
 
 Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
@@ -180,7 +236,7 @@ Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
 * our approach is effective and efficient, and outperforms the existing
   baselines.
 
-#### [Large Language Models as Neurolinguistic Subjects:](https://arxiv.org/abs/2411.07533) \
+#### [Large Language Models as Neurolinguistic Subjects:](https://arxiv.org/abs/2411.07533)
 Discrepancy between Performance and Competence
 
 Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonathan Brennan
@@ -202,7 +258,7 @@ Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonatha
   complementing existing English datasets.
 
 
-#### [On the Role of Semantic Proto-roles in Semantic Analysis: \
+#### [On the Role of Semantic Proto-roles in Semantic Analysis:
 What do LLMs know about agency?](https://aclanthology.org/2025.findings-acl.623/)
 
 Elizabeth Spaulding, Shafiuddin Rehan Ahmed, James Martin
@@ -213,8 +269,8 @@ At the top of the poster:
   highly complementary tasks, but
   prompting LLMs for SPRL alongside SRL doesn't result in better performance.
 
-* proto-role theory, which characterizes \
-  agents via properties such as *instigation* and *volition* and \
+* proto-role theory, which characterizes
+  agents via properties such as *instigation* and *volition* and
   patients via properties such as *change of state*,
 * we examine the ability of LLMs to answer questions that require complex,
   multi-step event reasoning.  Specifically, we investigate the extent to which
@@ -244,7 +300,7 @@ Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
   features, contributing to statistically significant performance gains across
   tasks
 
-#### [EXECUTE:](https://arxiv.org/abs/2505.17784) \
+#### [EXECUTE:](https://arxiv.org/abs/2505.17784)
 A Multilingual Benchmark for LLM Token Understanding
 Lukas Edman, Helmut Schmid, Alexander Fraser
 
@@ -258,7 +314,7 @@ A vörös poszter.
 * Some languages show word-level processing issues, some show no issues at all.
 * We also examine sub-character tasks in Chinese, Japanese, and Korean
 
-#### [Small Models, Big Impact:](https://arxiv.org/abs/2502.10140) \
+#### [Small Models, Big Impact:](https://arxiv.org/abs/2502.10140)
 Efficient Corpus and Graph-Based Adaptation of Small Multilingual LMs
 for Low-Resource Languages
 
@@ -324,7 +380,7 @@ Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani, et al
     quality while also rigorously evaluating cultural biases present in the
   * designated subsets labeled as culturally sensitive and culturally agnostic
 
-#### [Middle-Layer Representation Alignment](https://arxiv.org/abs/2412.03304) \
+#### [Middle-Layer Representation Alignment](https://arxiv.org/abs/2412.03304)
 for Cross-Lingual Transfer in Fine-Tuned LLMs
 Danni Liu, Jan Niehues
 
@@ -341,7 +397,7 @@ github.com/dannigt/mid-align
 * separately trained alignment modules can be merged with existing task-specific
   modules, improving cross-lingual capabilities without full re-training. Our
 
-#### [TUMLU:](https://aclanthology.org/2025.acl-long.1112/) 
+#### [TUMLU:](https://aclanthology.org/2025.acl-long.1112/)
 A Unified and Native Language Understanding Benchmark for Turkic
 
 Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova, et al
@@ -353,16 +409,94 @@ cirillnél illetve arabnál, és ennek megfelelően a nagy, többnyelvű modelle
 régi szkripten jobbak.
 
 * Turkic language family: under-represented, distinct morphosyntactic and
-  cultural characteristics. 
-* We propose two benchmarks for Turkic language MMLU: 
+  cultural characteristics.
+* We propose two benchmarks for Turkic language MMLU:
   * TUMLU is a comprehensive, multilingual, and natively developed NLU benchmark
-    specifically designed for Turkic languages. It consists of 
+    specifically designed for Turkic languages. It consists of
   * middle- and high-school level questions spanning 11 academic subjects in
     Azerbaijani, Crimean Tatar, Karakalpak, Kazakh, Tatar, Turkish, Uyghur, and
-    Uzbek. We also present 
+    Uzbek. We also present
   * TUMLU-mini, a more concise, balanced, and manually verified subset of the
 * we systematically evaluate a diverse range of
   open and proprietary multilingual large language models (LLMs), including
   Claude, Gemini, GPT, and LLaMA, offering an
   in-depth analysis of their performance across different languages, subjects,
   and alphabets. To promote further research and development in multilingual
+
+#### [The Hidden Attention of Mamba Models](https://arxiv.org/abs/2403.01590)
+
+Ameen Ali, Itamar Zimerman, Lior Wolf
+
+Ficsor Tominak fényképeztem le, de nem örült neki, mert azt mondat, hogy a
+Mambában eleve van attention.
+
+* The Mamba _layer_ offers an efficient selective state space model (SSM) that
+* highly effective in modeling multiple domains, including NLP, long-range
+  sequence processing, and computer vision. Selective SSMs are viewed as
+* dual models, in which one
+  * trains in parallel on the entire sequence via an IO-aware parallel scan, and
+  * deploys in an autoregressive manner.
+  * We add a third view: such models can be viewed as attention-driven models
+* empirically and theoretically compare the underlying mechanisms
+  to that of the self-attention layers in transformers and allows us to
+* peer inside the inner workings of the Mamba model with explainability methods.
+
+#### [Circuit Stability](https://arxiv.org/abs/2505.24731) Characterizes Language Model Generalization
+
+Alan Sun
+
+* mechanistic interpretability
+* we introduce circuit stability as a new way to assess model performance.
+  := a model's ability to apply a consistent reasoning process across inputs
+* We mathematically formalize circuit stability and circuit equivalence.
+
+#### [From Directions to Cones:](https://arxiv.org/abs/2505.24731)
+Exploring Multidimensional Representations of Propositional Facts in LLMs
+
+Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin, et al
+
+* Prior work suggests that the truthfulness of simple propositions can be
+  represented as a single linear direction in a model’s internal activations,
+  but this may not fully capture its underlying geometry. In
+* the concept cone framework, recently introduced for modeling refusal,
+* we extend the concept cone framework to the domain of truth.
+* We identify multi-dimensional cones that causally mediate truth-related
+  behavior across multiple LLM families. Our results are supported by
+* three lines of evidence:
+  1. causal interventions reliably flip model responses to factual statements,
+  1. learned cones generalize across model architectures, and
+  1. cone-based interventions preserve unrelated model behavior.
+* ie richer, multidirectional structure governing simple true/false propositions
+
+#### [Limited-Resource Adapters Are Regularizers, Not Linguists](https://arxiv.org/abs/2505.24525)
+**Marcell Fekete**, Nathaniel R. Robinson, Ernests Lavrinovics, et al
+
+* low-resource machine translation (MT). In this work,
+* we investigate an adapter souping method combined with cross-attention
+  fine-tuning of a pre-trained MT model to leverage language transfer for
+* three low-resource Creole languages, which exhibit
+  * related to different language groups across distinct linguistic dimensions.
+* Our approach improves performance substantially over baselines. However, we
+* hE linguistic relatedness -- or a lack thereof -- does not covary with perf
+* equal efficiency with randomly initialized adapters, implying that
+* ie the benefit of adapters in this setting lies in parameter regularization,
+  * no meaningful information transfer. We provide analysis supporting this
+* neural language processing involves many success factors, and that
+* not all neural methods leverage linguistic knowledge in intuitive ways
+
+#### [DenseLoRA: Dense Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2505.24731)
+Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
+
+* Low-rank adaptation (LoRA): fine-tuning two low-rank matrices
+* hE many of the weights in these matrices are redundant, leading to
+* we introduce Dense Low-Rank Adaptation (DenseLoRA), a novel approach that
+* incorporating a single Encoder-Decoder to refine and compress hidden
+  representations across all adaptation layers before applying adaptation.
+  Instead of relying on two redundant low-rank matrices as in LoRA, DenseLoRA
+  adapts LLMs through a dense low-rank matrix, improving parameter utilization
+  and adaptation efficiency. We 
+* evaluation on various benchmarks, showing that it achieves
+  83.8% accuracy with only 0.01% of trainable parameters, compared to
+  LoRA's 80.8% accuracy with 0.70% of trainable parameters on LLaMA3-8B.
+* extensive experiments to systematically assess the impact of DenseLoRA's
+  components on overall model performance. Code is available at this https URL.
