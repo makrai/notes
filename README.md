@@ -21,9 +21,9 @@
 
 # Pszichológia
 
-# Narrative
+## Narrative
 
-## [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
+[Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
 
 `20250728_175038`
 
@@ -44,9 +44,9 @@
   and hierarchical zero-shot learning using LLMs
   * at the level of a document, a paragraph, and a sentence
 
-# Depression
+## Depression
 
-## [Eeyore:](https://arxiv.org/abs/2503.00018) Realistic Depression Simulation
+[Eeyore:](https://arxiv.org/abs/2503.00018) Realistic Depression Simulation
 via Supervised and Preference Optimization
 
 Siyang Liu, Bianca Brie, Wenda Li, Laura Biester, Andrew Lee, \
