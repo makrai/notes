@@ -44,44 +44,11 @@
     * significantly outperforms existing methods and GPT-4o when applied to
       Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving
     * superior task success rates with more efficient execution paths.
+* A jegyzet felépítése: az elején a mostani projektjeimhez kapcsolódó témák,
+  majd a konferencia részei időrendben, kivéve, hogy a poszterek a végén vannak,
+  mert az adja a doksi nagy részét.
 
 ## Pszichológia
-
-### Narrative
-
-#### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
-
-`20250728_175038`
-
-* Tarek Mahmoud, Zhuohan Xie, Dimitar Dimitrov, Nikolaos Nikolaidis,+
-* a novel multilingual hierarchical corpus annotated for entity framing and role
-  portrayal in news articles. The dataset uses
-* a unique taxonomy inspired by storytelling elements, comprising
-  22 fine-grained roles, or archetypes, nested within three main categories:
-  protagonist, antagonist, and innocent. Each archetype is carefully defined,
-  * protagonist: guardian, martyr, and underdog
-  * antagonist: tyrant, deceiver, and bigot
-  * innocent: victim, scapegoat, and exploited
-* 1,378 recent news articles in
-* five languages (Bulgarian, English, Hindi, European Portuguese, and Russian)
-* two domains: the Ukraine-Russia War and Climate Change
-* > 5,800 entity mentions have been annotated with role labels. This
-* evaluation results on fine-tuned SOTA multilingual transformers
-  and hierarchical zero-shot learning using LLMs
-  * at the level of a document, a paragraph, and a sentence
-
-#### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
-
-Jaya Caporusso, Matthew Purver, Senja Pollak
-
-* PhD proposal
-* we plan to introduce
-  an ontology of Self-aspects and a gold-standard annotated dataset. Using this
-  * develop and evaluate conventional discriminative models, generative LLMs,
-    and embedding-based retrieval approaches against four main
-* criteria: interpretability, ground-truth adherence, accuracy, and
-  computational efficiency
-* case studies in mental health and empirical phenomenology
 
 ### Speech (for psychology)
 
@@ -115,6 +82,10 @@ Benjamin Litterer, David Jurgens, Dallas Card
 * audio features and speaker turns for a subset of 370K episodes, and
 * speaker role inferences and other metadata for all 1.1M episodes. Using this
 * investigation into the content, structure, and responsiveness of this
+
+### Emotion
+
+Workshop day 1, `20250731_170252`
 
 ### Depression
 
@@ -176,7 +147,43 @@ Poster Session 4
   significantly tackling incongruity distortions and cross-instance variance.
 * SOTA performance surpassing LLaVA1.5-7B with only 17.3M trainable parameters,
 
-### Surprisal
+### Narrative
+
+#### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
+
+`20250728_175038`
+
+* Tarek Mahmoud, Zhuohan Xie, Dimitar Dimitrov, Nikolaos Nikolaidis,+
+* a novel multilingual hierarchical corpus annotated for entity framing and role
+  portrayal in news articles. The dataset uses
+* a unique taxonomy inspired by storytelling elements, comprising
+  22 fine-grained roles, or archetypes, nested within three main categories:
+  protagonist, antagonist, and innocent. Each archetype is carefully defined,
+  * protagonist: guardian, martyr, and underdog
+  * antagonist: tyrant, deceiver, and bigot
+  * innocent: victim, scapegoat, and exploited
+* 1,378 recent news articles in
+* five languages (Bulgarian, English, Hindi, European Portuguese, and Russian)
+* two domains: the Ukraine-Russia War and Climate Change
+* > 5,800 entity mentions have been annotated with role labels. This
+* evaluation results on fine-tuned SOTA multilingual transformers
+  and hierarchical zero-shot learning using LLMs
+  * at the level of a document, a paragraph, and a sentence
+
+#### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
+
+Jaya Caporusso, Matthew Purver, Senja Pollak
+
+* PhD proposal
+* we plan to introduce
+  an ontology of Self-aspects and a gold-standard annotated dataset. Using this
+  * develop and evaluate conventional discriminative models, generative LLMs,
+    and embedding-based retrieval approaches against four main
+* criteria: interpretability, ground-truth adherence, accuracy, and
+  computational efficiency
+* case studies in mental health and empirical phenomenology
+
+### Surprisal (see CoNLL as well)
 
 #### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
@@ -389,7 +396,9 @@ Ndapa Nakashole
 
 ### Best Resource Paper
 
-* Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral
+* Are Rules Meant to be Broken? Understanding
+  Multilingual Moral Reasoning as a Computational Pipeline
+  with UniMoral
     Shivani Kumar, David Jurgens
 
 * BRIGHTER: BRIdging the Gap in Human-Annotated
@@ -431,6 +440,119 @@ Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
 * Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
   Jingyang Yuan, Huazuo Gao, Damai Dai, Junyu Luo, Liang Zhao, et al
   DeepSeek-AI, Peking University
+
+## Workshop
+
+### CoNLL day 1
+
+#### A Continuous Approach to Metaphorically Motivated Regular Polysemy in LMs
+Anna Temerko, Marcos Garcia, Pablo Gamallo
+
+* a word’s polysemy structure is largely governed by systematic sense
+  alternations that form overarching patterns across the vocabulary. While
+  (Apresjan, 1974; Nunberg, 1995; Pustejovsky, 1995)
+* psycholinguistic studies confirm the psychological validity of regularity in
+  * ie systematic relatedness of senses affects
+    how the human mental lexicon is learned, represented, and processed
+    (Frisson, 2015; Klepousniotou et al., 2012; Rabagliati and Snedeker, 2013;
+    Zhu, 2021)
+* in LLMs, this phenomenon remains largely unaddressed.
+  * ? models’ sensitivity to systematic sense alternations of polysemous words
+  * how LLMs process ambiguity and
+    to what extent they emulate representations in the human mind. For this,
+* we employ the measures of surprisal and semantic similarity as proxies of
+  human judgment on the acceptability of novel senses. We focus on
+* two aspects that have not received much attention previously:
+  metaphorically motivated patterns and the continuous nature of regularity.  We
+* finding
+  * surprisal from LMs represents regularity of polysemic extensions in a
+    human-like way,
+    discriminating between different types of senses and varying regularity
+    degrees, and overall strongly correlating with human acceptability scores
+
+#### [An Appraisal Theoretic Approach to Modelling Affect Flow](https://aclanthology.org/2025.conll-1.16/)
+in Conversation Corpora
+Alok Debnath, Yvette Graham, Owen Conlan
+
+* the multidimensional cognitive model of Appraisal Theory offers significant
+  advantages for analyzing emotions in conversational contexts, addressing the
+  current challenges of inconsistent annotation methodologies across corpora. To
+* we present AppraisePLM,
+  a regression and classification model trained on the crowd-EnVent corpus that
+  outperforms existing models in predicting 21 appraisal dimensions
+  including pleasantness, self-control, and alignment with social norms.
+* We apply AppraisePLM to diverse conversation datasets spanning
+  task-oriented dialogues, general-domain chit-chat, affect-specific
+  conversations, and domain-specific affect analysis. Our analysis reveals that
+* AppraisePLM successfully extrapolates emotion labels across datasets, while
+  capturing domain-specific patterns in affect flow – change in conversational
+  emotion over the conversation. This work highlights the entangled nature of
+
+#### Discussion session - CoNLL community
+
+### XLLM
+
+##### Mark Johnson: The Changing Roles of (Linguistic) Structure in Comp Ling
+
+* Egyelőre a honlapon szereplő absztraktból idézek, bár nem erről beszélt.
+* The closest relationship between linguistics and computational linguistics was
+  probably with the Unification Grammars introduced in the 1980s, where the
+  * goal was to develop a computational model that implemented the ling theory.
+  * impractical for scientific and sociological reasons that I’ll describe, and
+* the huge training data and long context windows of Deep Learning models makes
+  it unnecessary to incorporate any specific linguistically-inspired parsing
+  architecture into such models. While
+* there are deep scientific questions about how LLMs “understand” human langs,
+  their linguistic ability is sufficiently good for most practical tasks. Quite
+* most current research focuses on the information content of the language LLMs
+  generate, such as reducing hallucinations and improving instruction-following.
+* the main opportunities for linguistics to contribute the modern computational
+  linguistics are in model evaluation and explainability.
+
+##### Jan Hajič: LLMs and Symbolic Meaning Representations
+
+* there could be still synergies between the linguistically oriented research
+  and the standard LLM and/or end-to-end deep learning approach to improve, eg
+  LLMs for low-resourced languages as well as for complementing current
+  LLM-based applications with explanatory power or interpretation.
+* In the talk, I will present
+  * current developments in [LLM building in Europe](https://openeurollm.eu/),
+  * recent developments on the linguistic front (semantic, or meaning
+    representations such as PDT and UMR, and the use of eventive ontologies),
+  * unanswered research questions
+
+#### BARTABSA++: Revisiting BARTABSA with Decoder LLMs
+Jan et al.
+
+* We revisit the Bartabsa framework for aspect-based sentiment analysis with
+  modern decoder LLMs to assess the importance of explicit structure modeling
+* Our updated implementation features
+  architectural enhancements that boost performance and training stability.
+* Systematic testing with various encoder-decoder architectures shows that
+  BARTABSA++ with BartLarge achieves SOTA results, even
+  surpassing a finetuned GPT -4 O model. Our
+* analysis: the encoder’s representational quality is vital, while
+  the decoder’s role is minimal,
+  explaining the limited benefits of scaling decoderonly LLMs for this task.
+
+#### Structure Modeling Approach for UD Parsing of Historical Modern Japanese
+Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
+
+* The structure industry.
+* structure modeling for transferability in diachronic syntactic parsing. The
+* We compared the zero-shot transfer ability between Transformer-based Biafﬁne
+  UD parsers and our structure modeling approach.
+* The structure modeling approach is a pipeline method consisting of
+  * dictionary-based morphological analysis (MeCab)
+  * a deep learning-based phrase (bunsetsu) analysis (Monaka)
+  * SVMbased phrase dependency parsing (CaboCha) and a rule-based conversion
+    from phrase dependencies to UD.
+* This pipeline closely follows the methodology used in constructing Japanese UD
+  corpora.
+* Experimental results showed that the structure modeling approach outperformed
+  * zero-shot transfer from the contemporary to the modern Japanese.
+  * several existing UD parsers in contemporary Japanese. To this end, the
+  * by a wide margin
 
 ## Poster (Main conference)
 
@@ -854,3 +976,44 @@ Alan Saji, Jaavid Aktar Husain, Thanmay Jayakumar, Raj Dabre,+
 * for translation into non-Roman script languages, our findings reveal that when
   the target language is in Romanized form, its representations emerge earlier
   in the model's layers compared to native script. These insights contribute to
+
+### Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations
+Xiao Zhang, Gosse Bouma, Johan Bos
+
+* Egy workshopos fényképem forrását keresve találtam ezt a posztert.
+* open-domain neural semantics parsers show impressive performance.
+* hE the symbolic meaning representations they produce sometimes merely copy
+  character sequences from the source text to form symbolic concepts,
+  * defaulting to the most frequent word sense based in the training
+* we leverage the hierarchical structure of a lexical ontology, we introduce
+* a novel compositional symbolic representation for concepts
+  based on their position in the taxonomical hierarchy. This representation
+* a neural "taxonomical" semantic parser to utilize this new representation
+* a novel challenge set and evaluation metric for evaluation. Our
+* experimental findings demonstrate that the taxonomical model, trained on much
+  richer and complex meaning representations, is
+  slightly subordinate in performance to the traditional model using the
+  standard metrics for evaluation, but
+  outperforms it when dealing with out-of-vocabulary concepts.
+
+### Generative Pretrained Structured Transformers:
+Unsupervised Syntactic LMs at Scale
+Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
+
+* A syntactic language model (SLM)
+  incrementally generates a sentence with its syntactic tree in a left-to-right
+* We present Generative Pretrained Structured Transformers (GPST), an
+  unsupervised SLM at scale capable of being pre-trained from scratch on raw
+* not relying on gold trees and sequential training. It consists of 
+* two components, 
+  * a usual SLM supervised by a uni-directional language modeling loss, and an
+  * composition model, which
+    induces syntactic parse trees and computes constituent representations,
+    supervised by a bi-directional language modeling loss. 
+* We propose a representation surrogate to enable joint parallel training of the
+  two models in a hard-EM fashion. 
+* We pre-train GPST on OpenWebText, a corpus with 9 billion tokens, and
+  * superiority of GPST over GPT-2 with a comparable size in numerous tasks
+    covering both language understanding and language generation.
+  * significantly outperforms existing unsupervised SLMs on left-to-right
+    grammar induction, while holding a substantial acceleration on training.
