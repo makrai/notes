@@ -556,8 +556,8 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
 
 ## Poster (Main conference)
 
-### [TUBA:](https://arxiv.org/abs/2404.19597)
-Cross-Lingual Transferability of Backdoor Attacks in LLMs
+### [TUBA](https://arxiv.org/abs/2404.19597)
+: Cross-Lingual Transferability of Backdoor Attacks in LLMs
 with Instruction Tuning
 
 Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp,+
@@ -580,8 +580,8 @@ The implications of backdoor attacks on English-centric large language models
 * 2) Robustness: the proposed attack remains effective even after defenses are
   applied. These findings expose critical security vulnerabilities in
 
-### [Human-LLM Coevolution:](https://arxiv.org/abs/2502.14718)
-    Evidence from Academic Writing
+### [Human-LLM Coevolution](https://arxiv.org/abs/2502.14718)
+: Evidence from Academic Writing
 
 Mingmeng Geng, Roberto Trotta
 
@@ -624,8 +624,8 @@ Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
 * our approach is effective and efficient, and outperforms the existing
   baselines.
 
-### [LLMs as Neurolinguistic Subjects:](https://arxiv.org/abs/2411.07533)
-Discrepancy between Performance and Competence
+### [LLMs as Neurolinguistic Subjects](https://arxiv.org/abs/2411.07533)
+: Discrepancy between Performance and Competence
 
 Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonathan Brennan
 
@@ -646,8 +646,8 @@ Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonatha
   complementing existing English datasets.
 
 
-### [On the Role of Semantic Proto-roles in Semantic Analysis:
-What do LLMs know about agency?](https://aclanthology.org/2025.findings-acl.623/)
+### [On the Role of Semantic Proto-roles in Semantic Analysis](https://aclanthology.org/2025.findings-acl.623/)
+What do LLMs know about agency?
 
 Elizabeth Spaulding, Shafiuddin Rehan Ahmed, James Martin
 
@@ -688,8 +688,8 @@ Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
   features, contributing to statistically significant performance gains across
   tasks
 
-### [EXECUTE:](https://arxiv.org/abs/2505.17784)
-A Multilingual Benchmark for LLM Token Understanding
+### [EXECUTE](https://arxiv.org/abs/2505.17784)
+: A Multilingual Benchmark for LLM Token Understanding
 Lukas Edman, Helmut Schmid, Alexander Fraser
 
 A vörös poszter.
@@ -702,8 +702,8 @@ A vörös poszter.
 * Some languages show word-level processing issues, some show no issues at all.
 * We also examine sub-character tasks in Chinese, Japanese, and Korean
 
-### [Small Models, Big Impact:](https://arxiv.org/abs/2502.10140)
-Efficient Corpus and Graph-Based Adaptation of Small Multilingual LMs
+### [Small Models, Big Impact](https://arxiv.org/abs/2502.10140)
+: Efficient Corpus and Graph-Based Adaptation of Small Multilingual LMs
 for Low-Resource Languages
 
 Daniil Gurgurov, Ivan Vykopal, Josef van Genabith, Simon Ostermann
@@ -785,8 +785,8 @@ github.com/dannigt/mid-align
 * separately trained alignment modules can be merged with existing task-specific
   modules, improving cross-lingual capabilities without full re-training. Our
 
-### [TUMLU:](https://aclanthology.org/2025.acl-long.1112/)
-A Unified and Native Language Understanding Benchmark for Turkic
+### [TUMLU](https://aclanthology.org/2025.acl-long.1112/)
+: A Unified and Native Language Understanding Benchmark for Turkic
 
 Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova,+
 
@@ -838,8 +838,8 @@ Alan Sun
   := a model's ability to apply a consistent reasoning process across inputs
 * We mathematically formalize circuit stability and circuit equivalence.
 
-### [From Directions to Cones:](https://arxiv.org/abs/2505.24731)
-Exploring Multidimensional Representations of Propositional Facts in LLMs
+### [From Directions to Cones](https://arxiv.org/abs/2505.24731)
+: Exploring Multidimensional Representations of Propositional Facts in LLMs
 
 Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin,+
 
@@ -996,22 +996,22 @@ Xiao Zhang, Gosse Bouma, Johan Bos
   standard metrics for evaluation, but
   outperforms it when dealing with out-of-vocabulary concepts.
 
-### Generative Pretrained Structured Transformers:
-Unsupervised Syntactic LMs at Scale
+### Generative Pretrained Structured Transformers
+: Unsupervised Syntactic LMs at Scale
 Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
 
 * A syntactic language model (SLM)
   incrementally generates a sentence with its syntactic tree in a left-to-right
 * We present Generative Pretrained Structured Transformers (GPST), an
   unsupervised SLM at scale capable of being pre-trained from scratch on raw
-* not relying on gold trees and sequential training. It consists of 
-* two components, 
+* not relying on gold trees and sequential training. It consists of
+* two components,
   * a usual SLM supervised by a uni-directional language modeling loss, and an
   * composition model, which
     induces syntactic parse trees and computes constituent representations,
-    supervised by a bi-directional language modeling loss. 
+    supervised by a bi-directional language modeling loss.
 * We propose a representation surrogate to enable joint parallel training of the
-  two models in a hard-EM fashion. 
+  two models in a hard-EM fashion.
 * We pre-train GPST on OpenWebText, a corpus with 9 billion tokens, and
   * superiority of GPST over GPT-2 with a comparable size in numerous tasks
     covering both language understanding and language generation.
