@@ -18,20 +18,20 @@
   a beadott cikkek élmezőnyén kívül nagyjából random, hogy elfogadják-e.
   Az alább ajánlott poszterek között is lehet ilyen.
 * Vissyzatérő motívum: circuit /ˈsɝːkɪt/
-* Sok cikk címében kettőspont!
+* Pilehvar észrevétele: sok cikk címében kettőspont!
 * Egy poszter nem poszter! `20250729_162001`
   * [World Modeling Makes a Better Planner:](https://arxiv.org/abs/2503.10480)
     Dual Preference Optimization for Embodied Task Planning
-    Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai, et al
+    Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai,+
   * World-aware Planning Narratives [Enhance](https://arxiv.org/abs/2506.21230)
     Large Vision-Language Model Planner
     Junhao Shi, Zhaoye Fei, Siyin Wang, Qipeng Guo, Jingjing Gong, Xipeng Qiu
 
   * large vision-language models (LVLMs) for embodied task planning, yet they
   * hE fundamental challenges like dependency constraints and efficiency .
-  * Existing approaches either 
-    solely optimize action selection or 
-    leverage world models during inference, 
+  * Existing approaches either
+    solely optimize action selection or
+    leverage world models during inference,
     overlooking the benefits of learning to model the world
     as a way to enhance planning capabilities
   * We propose Dual Preference Optimization (D2PO), a new learning framework
@@ -45,15 +45,15 @@
       Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving
     * superior task success rates with more efficient execution paths.
 
-# Pszichológia
+## Pszichológia
 
-## Narrative
+### Narrative
 
-### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
+#### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
 
 `20250728_175038`
 
-* Tarek Mahmoud, Zhuohan Xie, Dimitar Dimitrov, Nikolaos Nikolaidis, et al
+* Tarek Mahmoud, Zhuohan Xie, Dimitar Dimitrov, Nikolaos Nikolaidis,+
 * a novel multilingual hierarchical corpus annotated for entity framing and role
   portrayal in news articles. The dataset uses
 * a unique taxonomy inspired by storytelling elements, comprising
@@ -66,11 +66,11 @@
 * five languages (Bulgarian, English, Hindi, European Portuguese, and Russian)
 * two domains: the Ukraine-Russia War and Climate Change
 * > 5,800 entity mentions have been annotated with role labels. This
-* evaluation results on fine-tuned state-of-the-art multilingual transformers
+* evaluation results on fine-tuned SOTA multilingual transformers
   and hierarchical zero-shot learning using LLMs
   * at the level of a document, a paragraph, and a sentence
 
-### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
+#### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
 
 Jaya Caporusso, Matthew Purver, Senja Pollak
 
@@ -83,7 +83,40 @@ Jaya Caporusso, Matthew Purver, Senja Pollak
   computational efficiency
 * case studies in mental health and empirical phenomenology
 
-## Depression
+### Speech (for psychology)
+
+#### [WhiSPA: Semantically and Psychologically Aligned Whisper](https://arxiv.org/abs/2501.16344)
+with Self-Supervised Contrastive and Student-Teacher Learning
+Rajath Rao, Adithya Ganesan, Oscar Kjell, Jonah Luby, Akshay Raghavan,+
+
+* Current speech encoding pipelines often rely on an additional text-based LM,
+  even though SotA speech-to-text models often have a LM within. This work
+* We introduce WhiSPA (Whisper with Semantic and Psychological Alignment), which
+* a novel audio training objective:
+  contrastive loss with an LM embedding as a teacher.
+* Using over 500k speech segments from mental health audio interviews, we
+* aligning Whisper's latent space with
+  * SBERT semantic representations from a text autoencoder (SBERT) and
+  * lexically derived embeddings of basic psychological dimensions: emotion and
+    personality.
+* eval: self-supervised affective tasks and downstream psychological tasks,
+  * WhiSPA surpasses current speech encoders, achieving an
+    average error
+    reduction of 73.4% and 83.8%, respectively. WhiSPA demonstrates that it is
+
+#### [Mapping the Podcast Ecosystem](https://arxiv.org/abs/2411.07892)
+with the Structured Podcast Research Corpus
+Benjamin Litterer, David Jurgens, Dallas Card
+
+* we introduce a massive dataset of over 1.1M podcast transcripts that is
+  largely comprehensive of
+  all English language podcasts available through public RSS feeds
+  from May and June of 2020. This data is not limited to text, but rather
+* audio features and speaker turns for a subset of 370K episodes, and
+* speaker role inferences and other metadata for all 1.1M episodes. Using this
+* investigation into the content, structure, and responsiveness of this
+
+### Depression
 
 [Eeyore:](https://arxiv.org/abs/2503.00018) Realistic Depression Simulation
 via Supervised and Preference Optimization
@@ -109,9 +142,43 @@ James Pennebaker, Rada Mihalcea
   outperforms GPT-4o with SOTA prompting strategies,
   both in linguistic authenticity and profile adherence.
 
-## Surprisal
+### Sarcasm
 
-The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
+#### Rhetorical Device-Aware Sarcasm Detection with Counterfactual Data Augmentation
+Qingqing Hong, Jiayi Lin, Junji Wang, Dapeng Yin, Dongyu Zhang, Shuyue Zhu
+Findings Posters -- Virtual
+
+#### BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for Varieties of English
+Dipankar Srirag, Aditya Joshi, Diptesh Kanojia, Jordan Painter
+Findings Posters -- In-Person 1
+
+#### Incongruity-aware Tension Field Network for Multi-modal Sarcasm Detection
+Jiecheng Zhang, C. L. Philip Chen, Shuzhen Li, Tong Zhang
+Poster Session 4
+
+* Multi-modal sarcasm detection (MSD): from text-image pairs
+* Most MSD researches explore the incongr through consistency preference methods
+* However, these methods prioritize consistency over incongruity and blur
+  incongruity information under their global feature aggregation mechanisms,
+  leading to incongruity distortions and model misinterpretations. To address
+* we: incongruity-aware tension field network (ITFNet) for multi-modal sarcasm
+  * extracts effective text-image feature pairs
+    in fact and sentiment perspectives. It then constructs
+  * a fact/sentiment tension field with discrepancy metrics to capture the
+    contextual tone and polarized incongruity after the iterative learning of
+    tension intensity, effectively highlighting incongruity information during
+    such inconsistency preference learning. It further
+  * standardizes the polarized incongruity with reference to contextual tone to
+    obtain standardized incongruity, effectively implementing
+    instance standardization for unbiased decision-making in MSD.
+* performs well in extracting salient and standardized incongruity through an
+  incongruity-aware tension field,
+  significantly tackling incongruity distortions and cross-instance variance.
+* SOTA performance surpassing LLaVA1.5-7B with only 17.3M trainable parameters,
+
+### Surprisal
+
+#### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
 Byung-Doh Oh, Hongao Zhu, William Schuler
 
@@ -129,7 +196,24 @@ Byung-Doh Oh, Hongao Zhu, William Schuler
      replicated using models trained on ‘leakage-free’ data that
      overlaps only minimally with the reading time corpora. Taken together, this
 
-# Konstrukciós nyelvtan
+#### Subword models struggle with word learning, but [surprisal hides it](https://arxiv.org/abs/2502.12835)
+Bastian Bunzeck, Sina Zarrieß
+
+* We study word learning in subword and character language models
+  with the psycholinguistic lexical decision task. While
+  * subword LMs struggle to discern words and non-words with high accuracy,
+  * character LMs solve this task easily and consistently. Only
+  * when supplied with further contexts do subword LMs perform similarly to
+    character models. Additionally, when
+  * looking at word-level and syntactic learning trajectories, we find that
+    * char: both processes are separable in character LMs
+      * Word learning happens before syntactic learning, whereas
+    * subword: both occur simultaneously in subword LMs. This raises questions
+* ? adequacy of subword LMs for modeling language acquisition and positions
+* character LMs is a viable alternative to study processes below the syntactic
+  level.
+
+## Konstrukciós nyelvtan
 
 [CxGGEC:](https://aclanthology.org/2025.acl-long.307/)
 Construction-Guided Grammatical Error Correction
@@ -150,18 +234,14 @@ constructions to capture underlying language patterns and guide corrections
   erroneous tokens
 * Extensive experiments on English and Chinese GEC benchmarks: effective
 
-# Tutorials
-
-
-
-## [Guardrails](https://llm-guardrails-security.github.io/)
+## [Tutorial on Guardrails](https://llm-guardrails-security.github.io/)
 
 * Ábra: az egyes nyelvek hanyadmagukkal, milyen gyakran szerepelnek cikkekben.
   * The State of Multilingual LLM Safety Research:
     From Measuring the Language Gap to Mitigating It
-    [(Yong et al., 2025)](https://arxiv.org/abs/2505.24119)
+    [(Yong+ 2025)](https://arxiv.org/abs/2505.24119)
 
-# Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
+## Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
 * the standard pipeline of LLM training:
   tokenization, pretraining, possibly mid-training, and post training or
@@ -177,10 +257,12 @@ constructions to capture underlying language patterns and guide corrections
       model components and behaviors
 * sum: centering and amplifying the influence of data in architecture design
 
-# Oral (Main conference)
+## Oral (Main conference)
 
-## Unique Hard Attention: A Tale of Two Sides
+### Unique Hard Attention: A Tale of Two Sides
 Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
+
+#### Abstract
 
 * Understanding the expressive power of transformers
 * Many studies analyze unique hard attention transformers, where
@@ -196,20 +278,167 @@ Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
   attention
   * ie they may better approximate real-world transformers than right-attention
 
-* links
-  * [Underline (pre-recorded video and poster)](https://underline.io/events/485/sessions/20606/lecture/123375-unique-hard-attention-a-tale-of-two-sides)
-  * [arxiv.org/abs/2503.14615](https://arxiv.org/abs/2503.14615)
+#### Links
+
+* [Underline (pre-recorded video and poster)](https://underline.io/events/485/sessions/20606/lecture/123375-unique-hard-attention-a-tale-of-two-sides)
+* [arxiv.org/abs/2503.14615](https://arxiv.org/abs/2503.14615)
 
 (In the Q&A of this paper, Anssi Yli-Jyrä asked a question about reset automata
 and counter automata.)
 
-# Poster (Main conference)
+## ACL Lifetime Award: Kathleen McKeown
 
-#### [TUBA:](https://arxiv.org/abs/2404.19597)
+* [Detecting and Explaining Emotional Reactions in Personal Narrative](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mBf4mJUAAAAJ&citation_for_view=mBf4mJUAAAAJ:YsMSGLbcyi4C)
+  Elsbeth Turcan
+  PhD Thesis 2024
+
+## Paper Awards
+
+### Outstanding Papers
+
+* A New Formulation of **Zipf’s Meaning-Frequency Law** through Contextual Diversity
+Ryo Nagata, Kumiko Tanaka-Ishii
+
+* All That Glitters is Not Novel: Plagiarism in AI Generated Research
+Tarun Gupta, Danish Pruthi
+
+* Between **Circuits and Chomsky:**
+  Pre-pretraining on Formal Languages Imparts Linguistic Biases
+Michael Y. Hu, Jackson Petty, Chuan Shi, William Merrill, Tal Linzen
+
+* **Beyond N-Grams:** Rethinking Evaluation Metrics and Strategies
+  for Multilingual Abstractive Summarization
+Itai Mondshine, Tzuf Paz-Argaman, Reut Tsarfaty
+
+* Bridging the Language Gaps in LLMs
+  with Inference-Time Cross-Lingual Intervention
+Weixuan Wang, Minghao Wu, Barry Haddow, Alexandra Birch
+
+* **Byte Latent Transformer:** Patches Scale Better Than Tokens
+Artidoro Pagnoni, Ramakanth Pasunuru, Pedro Rodriguez, John Nguyen, Benjamin Muller, Margaret Li, Chunting Zhou, LILI YU, Jason E Weston, Luke Zettlemoyer, Gargi Ghosh, Mike Lewis, Ari Holtzman, Srini Iyer
+
+* **Capability Salience Vector:** Fine-grained Alignment of Loss and Capabilities
+  for Downstream Task Scaling Law
+Qiming Ge, Shuhao Xing, Songyang Gao, Yunhua Zhou, Yicheng Zou, Songyang Zhang, Zhi Chen, Hang Yan, Qi Zhang, Qipeng Guo, Kai Chen
+
+* From Real to Synthetic:
+  Synthesizing Millions of Diversified and Complicated User Instructions
+  with Attributed Grounding
+Chiwei Zhu, Benfeng Xu, Xiaorui Wang, Zhendong Mao
+
+* HALOGEN: Fantastic LLM Hallucinations and Where to Find Them
+Abhilasha Ravichander, Shrusti Ghela, David Wadden, Yejin Choi
+
+* **HateDay:**
+  Insights from a Global Hate Speech Dataset Representative of a Day on Twitter
+Manuel Tonneau, Diyi Liu, Niyati Malhotra, Scott A. Hale, Samuel Fraiberger, Victor Orozco-Olvera, Paul Röttger
+
+* IOT: **Embedding Standardization Method** Towards Zero Modality Gap
+Na Min An, Eunki Kim, James Thorne, Hyunjung Shim
+
+* IndicSynth: A Large-Scale Multilingual Synthetic Speech Dataset
+  for Low-Resource Indian Languages
+Divya V Sharma, Vijval Ekbote, Anubha Gupta
+
+* LaTIM: Measuring **Latent Token-to-Token Interactions in Mamba Models**
+Hugo Pitorro, Marcos Vinicius Treviso
+
+* Llama See, Llama Do:
+  A Mechanistic Perspective on Contextual Entrainment and Distraction in LLMs
+Jingcheng Niu, Xingdi Yuan, Tong Wang, Hamidreza Saghir, Amir H. Abdi
+
+* LLMs know their vulnerabilities:
+  Uncover Safety Gaps through Natural Distribution Shifts
+Qibing Ren, Hao Li, Dongrui Liu, Zhanxu Xie, Xiaoya Lu, Yu Qiao, Lei Sha, Junchi Yan, Lizhuang Ma, Jing Shao
+
+* **Mapping 1,000+ Language Models via the Log-Likelihood Vector**
+Momose Oyama, Hiroaki Yamagiwa, Yusuke Takase, Hidetoshi Shimodaira
+
+* MiniLongBench: The Low-cost Long Context Understanding Benchmark for LLMs
+Zhongzhan Huang, Guoming Ling, Shanshan Zhong, Hefeng Wu, Liang Lin
+
+* PARME: Parallel Corpora for Low-Resourced Middle Eastern Languages
+  Sina Ahmadi, Rico Sennrich, Erfan Karami, Ako Marani, Parviz Fekrazad, et al
+
+* Past Meets Present: Creating Historical Analogy with LLMs
+Nianqi Li, Siyu Yuan, Jiangjie Chen, Jiaqing Liang, Feng Wei, Zujie Liang, Deqing Yang, Yanghua Xiao
+
+* Pre³: Enabling Deterministic **Pushdown Automata**
+  for Faster Structured LLM Generation
+Junyi Chen, Shihao Bai, Zaijun Wang, Siyu Wu, Chuheng Du, Hailong Yang, Ruihao Gong, Shengzhong Liu, Fan Wu, Guihai Chen
+
+* Rethinking the Role of **Prompting** Strategies in LLM Test-Time Scaling:
+  A Perspective of **Probability** Theory
+Yexiang Liu, Zekun Li, Zhi Fang, Nan Xu, Ran He, Tieniu Tan
+
+* Revisiting Compositional Generalization Capability of LLMs
+  Considering Instruction Following Ability
+Yusuke Sakai, Hidetaka Kamigaito, Taro Watanabe
+
+* Toward Automatic Discovery of a **Canine** Phonetic Alphabet
+Theron S. Wang, Xingyuan Li, Hridayesh Lekhak, Tuan Minh Dang, Mengyue Wu, Kenny Q. Zhu
+
+* Towards the Law of Capacity Gap in Distilling Language Models
+Chen Zhang, Qiuchi Li, Dawei Song, Zheyu Ye, Yan Gao, Yao Hu
+
+* ...: Accelerating Inference of LLMs with **Token Recycling**
+Xianzhen Luo, Yixuan Wang, Qingfu Zhu, Zhiming Zhang, Xuanyu Zhang, Qing Yang, Dongliang Xu
+
+* Typology-Guided Adaptation for African NLP
+Ndapa Nakashole
+
+### Best Resource Paper
+
+* Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral
+    Shivani Kumar, David Jurgens
+
+* BRIGHTER: BRIdging the Gap in Human-Annotated
+  Textual Emotion Recognition Datasets for 28 Languages
+  Shamsuddeen Hassan Muhammad, Nedjma Ousidhoum, ..., Saif M. Mohammad
+
+* Palm: A Culturally Inclusive and Linguistically Diverse Dataset
+  for Arabic LLMs
+  Fakhraddin Alwajih, Abdellah EL MEKKI, ..., Muhammad Abdul-Mageed
+
+### Best Demo: OLMoTrace. Tracing Language Model Outputs Back to Trillions of
+Training Tokens
+Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
+
+* OLMoTrace finds and shows verbatim matches between segments of output and
+  documents in the training text corpora.
+* Powered by an extended version of infini-gram (Liu et al., 2024), our system
+  returns tracing results within a few seconds. OLMoTrace can help users
+* We showcase how it can be used to explore fact checking, hallucination, and
+  the creativity
+* publicly available and fully open-source.
+
+### Best Paper
+
+* [A Theory of Response Sampling in LLMs:](https://pramod-kaushik.github.io/llm-response-sampling/)
+  Part Descriptive and Part Prescriptive
+  Sarath Sivaprasad, Pramod Kaushik, Sahar Abdelnabi, Mario Fritz
+  1CISPA Helmholtz Center for Information Security
+
+* Fairness through Difference Awareness: Measuring Desired Group Discrimination in LLMs
+  Angelina Wang, Michelle Phan, Daniel E. Ho, Sanmi Koyejo
+  Stanford
+
+* Language Models Resist Alignment: Evidence From Data Compression
+  Jiaming Ji, Kaile Wang, Tianyi Qiu, Boyuan Chen, Jiayi Zhou, Changye Li, Hantao Lou, Juntao Dai, Yunhuai Liu, Yaodong Yang
+  Peking University
+  [photo of the authors (in smokings)](https://img.36krcdn.com/hsossms/20250730/v2_fd517c465a1c4cf4842e8a649a055fb9@000000_oswg1342379oswg1080oswg810_img_000?)
+
+* Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
+  Jingyang Yuan, Huazuo Gao, Damai Dai, Junyu Luo, Liang Zhao, et al
+  DeepSeek-AI, Peking University
+
+## Poster (Main conference)
+
+### [TUBA:](https://arxiv.org/abs/2404.19597)
 Cross-Lingual Transferability of Backdoor Attacks in LLMs
 with Instruction Tuning
 
-Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp, et al
+Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp,+
 
 The implications of backdoor attacks on English-centric large language models
 * embedding malicious behaviors during training and
@@ -229,7 +458,7 @@ The implications of backdoor attacks on English-centric large language models
 * 2) Robustness: the proposed attack remains effective even after defenses are
   applied. These findings expose critical security vulnerabilities in
 
-#### [Human-LLM Coevolution:](https://arxiv.org/abs/2502.14718)
+### [Human-LLM Coevolution:](https://arxiv.org/abs/2502.14718)
     Evidence from Academic Writing
 
 Mingmeng Geng, Roberto Trotta
@@ -245,8 +474,8 @@ Mingmeng Geng, Roberto Trotta
   the LLM-generated content.  Such coevolution and cooperation of humans and
   * additional challenges to the detection of machine-generated text in
 
-#### [Testing English News Articles for Lexical Homogenization](https://arxiv.org/abs/2505.24731)
-Due to Widespread Use of Large Language Models
+### [Testing English News Articles for Lexical Homogenization](https://arxiv.org/abs/2505.24731)
+Due to Widespread Use of LLMs
 
 Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
 
@@ -256,7 +485,7 @@ Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
   * higher MTLD and SWR scores, yet
   * negligible changes in Maas and MATTR scores in 2024 corpus. We conclude that
 
-#### [A Semantic-Aware Layer-Freezing Approach](https://arxiv.org/abs/2406.11753)
+### [A Semantic-Aware Layer-Freezing Approach](https://arxiv.org/abs/2406.11753)
 to Computation-Efficient Fine-Tuning of Language Models
 
 Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
@@ -273,7 +502,7 @@ Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
 * our approach is effective and efficient, and outperforms the existing
   baselines.
 
-#### [Large Language Models as Neurolinguistic Subjects:](https://arxiv.org/abs/2411.07533)
+### [LLMs as Neurolinguistic Subjects:](https://arxiv.org/abs/2411.07533)
 Discrepancy between Performance and Competence
 
 Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonathan Brennan
@@ -295,7 +524,7 @@ Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonatha
   complementing existing English datasets.
 
 
-#### [On the Role of Semantic Proto-roles in Semantic Analysis:
+### [On the Role of Semantic Proto-roles in Semantic Analysis:
 What do LLMs know about agency?](https://aclanthology.org/2025.findings-acl.623/)
 
 Elizabeth Spaulding, Shafiuddin Rehan Ahmed, James Martin
@@ -320,7 +549,7 @@ At the top of the poster:
   * ie LLMs implicitly encode consistent multi-dimensional event role knowledge.
   * LLMs underperform human annotators in complex semantic analysis.
 
-#### [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](https://arxiv.org/abs/2502.12953)
+### [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](https://arxiv.org/abs/2502.12953)
 
 Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
 
@@ -337,7 +566,7 @@ Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
   features, contributing to statistically significant performance gains across
   tasks
 
-#### [EXECUTE:](https://arxiv.org/abs/2505.17784)
+### [EXECUTE:](https://arxiv.org/abs/2505.17784)
 A Multilingual Benchmark for LLM Token Understanding
 Lukas Edman, Helmut Schmid, Alexander Fraser
 
@@ -351,7 +580,7 @@ A vörös poszter.
 * Some languages show word-level processing issues, some show no issues at all.
 * We also examine sub-character tasks in Chinese, Japanese, and Korean
 
-#### [Small Models, Big Impact:](https://arxiv.org/abs/2502.10140)
+### [Small Models, Big Impact:](https://arxiv.org/abs/2502.10140)
 Efficient Corpus and Graph-Based Adaptation of Small Multilingual LMs
 for Low-Resource Languages
 
@@ -383,7 +612,7 @@ Daniil Gurgurov, Ivan Vykopal, Josef van Genabith, Simon Ostermann
     dominant factor, especially for languages with extensive pre-training
     coverage.
 
-#### [Minimal Pair-Based Evaluation of Code-Switching](https://arxiv.org/abs/2502.10140)
+### [Minimal Pair-Based Evaluation of Code-Switching](https://arxiv.org/abs/2502.10140)
 
 Igor Sterner, Simone Teufel
 
@@ -400,14 +629,14 @@ Igor Sterner, Simone Teufel
 * the largest probability differences arise in those pairs where the manipulated
   material consisted of closed-class words.
 
-#### [Global MMLU:](https://arxiv.org/abs/2412.03304) Understanding and
+### [Global MMLU:](https://arxiv.org/abs/2412.03304) Understanding and
 Addressing Cultural and Linguistic Biases in Multilingual Evaluation
 
-Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani, et al
+Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani,+
 
 * ? practical utility of translated datasets like MMLU.
 * translation often introduces artefacts that can distort the meaning or clarity
-* large-scale evaluation of state-of-the-art open and proprietary models
+* large-scale evaluation of SOTA open and proprietary models
   * progress on MMLU depends heavily on learning Western-centric concepts, with
     28% of all questions requiring culturally sensitive knowledge.
   * geographic knowledge, an astounding 84.9% focus on either North American or
@@ -417,7 +646,7 @@ Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani, et al
     quality while also rigorously evaluating cultural biases present in the
   * designated subsets labeled as culturally sensitive and culturally agnostic
 
-#### [Middle-Layer Representation Alignment](https://arxiv.org/abs/2412.03304)
+### [Middle-Layer Representation Alignment](https://arxiv.org/abs/2412.03304)
 for Cross-Lingual Transfer in Fine-Tuned LLMs
 Danni Liu, Jan Niehues
 
@@ -434,10 +663,10 @@ github.com/dannigt/mid-align
 * separately trained alignment modules can be merged with existing task-specific
   modules, improving cross-lingual capabilities without full re-training. Our
 
-#### [TUMLU:](https://aclanthology.org/2025.acl-long.1112/)
+### [TUMLU:](https://aclanthology.org/2025.acl-long.1112/)
 A Unified and Native Language Understanding Benchmark for Turkic
 
-Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova, et al
+Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova,+
 
 Én arról beszélgettem a szerzővel (már nem emlékszem, hogy ő emelte ki, vagy én
 ragadtam le ennél), hogy némelyik türk nyelvnél az van, hogy már a latin a
@@ -460,7 +689,7 @@ régi szkripten jobbak.
   in-depth analysis of their performance across different languages, subjects,
   and alphabets. To promote further research and development in multilingual
 
-#### [The Hidden Attention of Mamba Models](https://arxiv.org/abs/2403.01590)
+### [The Hidden Attention of Mamba Models](https://arxiv.org/abs/2403.01590)
 
 Ameen Ali, Itamar Zimerman, Lior Wolf
 
@@ -478,7 +707,7 @@ Mambában eleve van attention.
   to that of the self-attention layers in transformers and allows us to
 * peer inside the inner workings of the Mamba model with explainability methods.
 
-#### [Circuit Stability](https://arxiv.org/abs/2505.24731) Characterizes Language Model Generalization
+### [Circuit Stability](https://arxiv.org/abs/2505.24731) Characterizes Language Model Generalization
 
 Alan Sun
 
@@ -487,10 +716,10 @@ Alan Sun
   := a model's ability to apply a consistent reasoning process across inputs
 * We mathematically formalize circuit stability and circuit equivalence.
 
-#### [From Directions to Cones:](https://arxiv.org/abs/2505.24731)
+### [From Directions to Cones:](https://arxiv.org/abs/2505.24731)
 Exploring Multidimensional Representations of Propositional Facts in LLMs
 
-Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin, et al
+Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin,+
 
 * Prior work suggests that the truthfulness of simple propositions can be
   represented as a single linear direction in a model’s internal activations,
@@ -505,8 +734,8 @@ Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin, et al
   1. cone-based interventions preserve unrelated model behavior.
 * ie richer, multidirectional structure governing simple true/false propositions
 
-#### [Limited-Resource Adapters Are Regularizers, Not Linguists](https://arxiv.org/abs/2505.24525)
-**Marcell Fekete**, Nathaniel R. Robinson, Ernests Lavrinovics, et al
+### [Limited-Resource Adapters Are Regularizers, Not Linguists](https://arxiv.org/abs/2505.24525)
+**Marcell Fekete**, Nathaniel R. Robinson, Ernests Lavrinovics,+
 
 * low-resource machine translation (MT). In this work,
 * we investigate an adapter souping method combined with cross-attention
@@ -521,7 +750,7 @@ Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin, et al
 * neural language processing involves many success factors, and that
 * not all neural methods leverage linguistic knowledge in intuitive ways
 
-#### [DenseLoRA: Dense Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2505.24731)
+### [DenseLoRA: Dense Low-Rank Adaptation of LLMs](https://arxiv.org/abs/2505.24731)
 Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
 
 * Low-rank adaptation (LoRA): fine-tuning two low-rank matrices
@@ -531,9 +760,97 @@ Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
   representations across all adaptation layers before applying adaptation.
   Instead of relying on two redundant low-rank matrices as in LoRA, DenseLoRA
   adapts LLMs through a dense low-rank matrix, improving parameter utilization
-  and adaptation efficiency. We 
+  and adaptation efficiency. We
 * evaluation on various benchmarks, showing that it achieves
   83.8% accuracy with only 0.01% of trainable parameters, compared to
   LoRA's 80.8% accuracy with 0.70% of trainable parameters on LLaMA3-8B.
 * extensive experiments to systematically assess the impact of DenseLoRA's
   components on overall model performance. Code is available at this https URL.
+
+### [Culture Matters in Toxic Language Detection in Persian](https://www.arxiv.org/abs/2506.03458)
+Zahra Bokaei, Walid Magdy, Bonnie Webber
+
+* we compare different methods for toxic language detection, including
+  fine-tuning, data enrichment, zero-shot and few-shot learning, and
+  cross-lingual transfer learning
+* the impact of cultural context on transfer learning for this task: We show
+  that the language of a country with cultural similarities to Persian yields
+  better results in transfer learning.
+* Warning: This paper contains examples of toxic language that may disturb some
+  readers. These examples are included for the purpose of research
+
+### [Can Community Notes Replace Professional Fact-Checkers?](https://arxiv.org/abs/2502.14132)
+Nadav Borenstein, Greta Warren, Desmond Elliott, Isabelle Augenstein
+
+* Two strategies to combat misinformation on social media are
+  * fact-checking by professional organisations and
+  * community moderation by platform users.
+* Policy changes by Twitter/X and, more recently, Meta, signal a shift
+  away from partnerships with fact-checking organisations and
+  towards an increased reliance on crowdsourced community notes. However, the
+* ? dependencies between fact-checking and helpful community notes
+* we use language models to annotate a large corpus of Twitter/X community notes
+  with attributes such as topic, cited sources, and whether they refute claims
+  tied to broader misinformation narratives. Our analysis reveals that
+* community notes cite fact-checking sources
+  up to five times more than previously reported
+* ie successful community moderation relies on professional fact-checking and
+  * citizen and professional fact-checking are deeply intertwined
+
+### [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](https://arxiv.org/abs/2505.05111)
+Boyi Deng, Yu Wan, Yidan Zhang, Baosong Yang, Fuli Feng
+
+* The mechanisms behind multilingual capabilities in LLMs have been examined
+* neuron-based or internal-activation-based methods.
+* hE, these methods often face challenges such as
+  superposition and layer-wise activation variance, which limit their
+* Sparse Autoencoders (SAEs) offer a more nuanced analysis by
+  decomposing the activations of LLMs
+  into a sparse linear combination of SAE features
+* We introduce a novel metric to assess the monolinguality of features obtained
+  from SAEs, discovering that
+* some features are strongly related to specific languages. Additionally, we
+* ablating these SAE features only significantly reduces abilities in one
+  language of LLMs, leaving others almost unaffected. Interestingly, we find
+* some languages have multiple synergistic SAE features, and
+  ie ablating them together yields greater improvement than ablating indiv
+* we leverage these SAE-derived language-specific features to enhance
+  [steering vectors (Turner+ arxiv)](https://arxiv.org/abs/2308.10248),
+  achieving control over the language generated by LLMs
+
+### [ModerBERT](https://arxiv.org/abs/2412.13663) redifines encoders,
+with support for long-context & code, strong bechmarks, & sets an efficiency
+record
+Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder
+for Fast, Memory Efficient, and Long Context Finetuning and Inference
+Benjamin Warner, Antoine Chaffin, Benjamin Clavié, Orion Weller,+
+
+* Encoder-only transformer models such as BERT: a great perf-size tradeoff
+  for retrieval and classification tasks
+  with respect to larger decoder-only models.  Despite being the workhorse of
+* we: ModernBERT, bringing modern model optimizations to encoder-only models and
+* a major Pareto improvement over older encoders.
+* Trained on 2 trillion tokens with a native 8192 sequence length, ModernBERT
+* SOTA results on a large pool of evaluations encompassing
+  diverse classification tasks and
+  both single and multi-vector retrieval on different domains (incl code)
+* the most speed and memory efficient encoder and is
+* designed for inference on common GPUs.
+
+### RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs
+Alan Saji, Jaavid Aktar Husain, Thanmay Jayakumar, Raj Dabre,+
+
+* we use mechanistic interpretability techniques, we analyze next-token
+  generation and find that
+* intermediate layers frequently represent target words in Romanized form
+  before transitioning to native script: Latent Romanization.
+* activation patching experiments, we demonstrate that
+  LLMs encode semantic concepts similarly across native and Romanized scripts,
+  suggesting a shared underlying representation. Additionally,
+  * activation patching
+    (Ghandeharioun+ 2024; Variengien and Winsor, 2024; Chen+ 2024; Dumas+ 2024),
+    a technique that replaces activations from one forward pass with another
+    to analyze the resulting outputs (c.f. Section 3.3)
+* for translation into non-Roman script languages, our findings reveal that when
+  the target language is in Romanized form, its representations emerge earlier
+  in the model's layers compared to native script. These insights contribute to
