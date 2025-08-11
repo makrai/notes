@@ -1,6 +1,6 @@
 # ACL 2025 Wien
 
-* Hangulatkép `20250727_175007, 20250728_184147`
+* Hangulatkép: szamaritánusok `20250727_175007, 20250728_184147`
 * A frontális előadások nagyon rövidek voltak, és kevés is volt belőlük.
   A poszterek közt viszont jó élményeket szereztem, beleértve a Findings
   posztereket is.  Ennek a formának az is előnye, hogy a szerzőnek nem a
@@ -25,10 +25,25 @@
     Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai, et al
   * World-aware Planning Narratives [Enhance](https://arxiv.org/abs/2506.21230)
     Large Vision-Language Model Planner
-Junhao Shi, Zhaoye Fei, Siyin Wang, Qipeng Guo, Jingjing Gong, Xipeng Qiu
+    Junhao Shi, Zhaoye Fei, Siyin Wang, Qipeng Guo, Jingjing Gong, Xipeng Qiu
 
-
-    Recent advances in large vision-language models (LVLMs) have shown promise for embodied task planning, yet they struggle with fundamental challenges like dependency constraints and efficiency. Existing approaches either solely optimize action selection or leverage world models during inference, overlooking the benefits of learning to model the world as a way to enhance planning capabilities. We propose Dual Preference Optimization (D2PO), a new learning framework that jointly optimizes state prediction and action selection through preference learning, enabling LVLMs to understand environment dynamics for better planning. To automatically collect trajectories and stepwise preference data without human annotation, we introduce a tree search mechanism for extensive exploration via trial-and-error. Extensive experiments on VoTa-Bench demonstrate that our D2PO-based method significantly outperforms existing methods and GPT-4o when applied to Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving superior task success rates with more efficient execution paths.
+  * large vision-language models (LVLMs) for embodied task planning, yet they
+  * hE fundamental challenges like dependency constraints and efficiency .
+  * Existing approaches either 
+    solely optimize action selection or 
+    leverage world models during inference, 
+    overlooking the benefits of learning to model the world
+    as a way to enhance planning capabilities
+  * We propose Dual Preference Optimization (D2PO), a new learning framework
+  * jointly optimizes state prediction and action selection
+    through preference learning,
+    enabling LVLMs to understand environment dynamics for better planning.
+  * To automatically collect trajectories and stepwise preference data, we:
+    a tree search mechanism for extensive exploration via trial-and-error.
+  * Extensive experiments on VoTa-Bench demonstrate that our D2PO-based method
+    * significantly outperforms existing methods and GPT-4o when applied to
+      Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving
+    * superior task success rates with more efficient execution paths.
 
 # Pszichológia
 
@@ -146,11 +161,7 @@ constructions to capture underlying language patterns and guide corrections
     From Measuring the Language Gap to Mitigating It
     [(Yong et al., 2025)](https://arxiv.org/abs/2505.24119)
 
-# Main conference
-
-## Monday
-
-### Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
+# Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
 * the standard pipeline of LLM training:
   tokenization, pretraining, possibly mid-training, and post training or
@@ -166,7 +177,33 @@ constructions to capture underlying language patterns and guide corrections
       model components and behaviors
 * sum: centering and amplifying the influence of data in architecture design
 
-### Poster
+# Oral (Main conference)
+
+## Unique Hard Attention: A Tale of Two Sides
+Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
+
+* Understanding the expressive power of transformers
+* Many studies analyze unique hard attention transformers, where
+  attention selects a single position that maximizes the attention scores.
+* When multiple positions achieve the maximum score, either the rightmost or the
+  leftmost of those is chosen
+* We highlight the importance of this seeming triviality
+* finite-precision transformers with both leftmost- and rightmost-hard attention
+  were shown to be equivalent to Linear Temporal Logic (LTL)
+* [we:?] this no longer holds with only leftmost-hard attention --
+  in that case, they correspond to a _strictly weaker_ fragment of LTL.
+* we show that models with leftmost-hard attention are equivalent to _soft_
+  attention
+  * ie they may better approximate real-world transformers than right-attention
+
+* links
+  * [Underline (pre-recorded video and poster)](https://underline.io/events/485/sessions/20606/lecture/123375-unique-hard-attention-a-tale-of-two-sides)
+  * [arxiv.org/abs/2503.14615](https://arxiv.org/abs/2503.14615)
+
+(In the Q&A of this paper, Anssi Yli-Jyrä asked a question about reset automata
+and counter automata.)
+
+# Poster (Main conference)
 
 #### [TUBA:](https://arxiv.org/abs/2404.19597)
 Cross-Lingual Transferability of Backdoor Attacks in LLMs
