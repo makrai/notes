@@ -1,21 +1,21 @@
 # ACL 2025 Wien
 
-## Elöljáróban a tartalmibbtól a small talk és a savanyú szőlő felé haladva
+## Elöljáróban a tartalmibbtól a savanyú szőlő és a _small talk_ felé haladva
 
 * A jegyzet felépítése: 
   * az elején a mostani projektjeimhez kapcsolódó témák, majd 
     a konferencia részei időrendben, kivéve, hogy 
     a poszterek a végén vannak, mert az adja a doksi nagy részét.
 * A frontális előadások nagyon rövidek voltak, és kevés is volt belőlük.
-  A poszterek közt viszont jó élményeket szereztem, beleértve a Findings
-  posztereket is.  Ennek a formának az is előnye, hogy a szerzőnek nem a
-  nünükéjé el kezdi a prezentációt (pl.
-  [Jarca](https://arxiv.org/abs/2502.12953) nem a _cyclic decaying masking
-  ratio_-val), azt csak a nagyon kitartó hallgatónak mondja
-  el,hanem azzal, ami működött.
+  A poszterek közt viszont jó élményeket szereztem, beleértve a _Findings_
+  posztereket is.
+  Ennek a formának az is előnye, hogy a szerző nem a nünükéjével kezdi a
+  prezentációt (pl.  [Jarca](https://arxiv.org/abs/2502.12953) nem a _cyclic
+  decaying masking ratio_-val) -- azt csak a nagyon kitartó hallgatónak mondja
+  el -- hanem azzal, ami működött.
   Volt kifejezetten nyelvészeti motivációjú cikk, pl. code switching.
 * Az első napokban főleg a többnyelvűségről szóló cikkek
-  keltették föl az érdeklődésemet, a Findings poszterek voltak egy korai
+  keltették föl az érdeklődésemet, a _Findings_ poszterek voltak egy korai
   kiemelkedő pont.
 * Nem minden poszternél van értelmes összehasonlítás.
   Erről többünknek eszünkbe jutott, hogy
