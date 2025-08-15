@@ -253,7 +253,9 @@ constructions to capture underlying language patterns and guide corrections
     From Measuring the Language Gap to Mitigating It
     [(Yong+ 2025)](https://arxiv.org/abs/2505.24119)
 
-## Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
+## Keynote
+
+### L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
 * Abstract
   * the standard pipeline of LLM training:
@@ -285,6 +287,17 @@ constructions to capture underlying language patterns and guide corrections
     after RLVR, from 65% to over 90%, even with spurious rewards. Overall,
   * we hypothesize that RLVR must somehow be surfacing useful reasoning
     representations learned during pretraining
+
+### Verena Rieser: Whose Gold? Re-imagining Alignment for Truly Beneficial AI
+
+* Human feedback is often the "gold standard" for AI alignment, but what if
+* this "gold" reflects diverse, even contradictory human values? This keynote
+  * not just between individuals, but also within them.
+* the technical and ethical challenges of building beneficial AI when values
+* I advocate for a dual expansion of the AI alignment framework: moving beyond a
+  * plurality of perspectives, and
+  * transcending [meghalad] narrow safety and engagement metrics to promote
+    comprehensive human well-being
 
 ## Oral (Main conference)
 
@@ -332,6 +345,16 @@ Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
   languages, compared to pitch- and stress-accent languages, and thus the mutual
   information is higher in these languages, supporting our hypothesis.  Our
 
+### [Natural Language Processing RELIES on Linguistics](https://arxiv.org/abs/2405.05966)
+Juri Opitz, Shira Wein, Nathan Schneider
+
+* aspects in which NLP (still) relies on linguistics, or where
+  linguistic thinking can illuminate new directions. We argue our case around
+* the acronym RELIES that encapsulates six major facets where linguistics
+  * Resources, Evaluation, Low-resource settings, Interpretability, Explanation,
+    and the Study of language. This list is not exhaustive, nor is linguistics
+* bib for each letter
+
 ## ACL Lifetime Award: Kathleen McKeown
 
 * [Detecting and Explaining Emotional Reactions in Personal Narrative](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mBf4mJUAAAAJ&citation_for_view=mBf4mJUAAAAJ:YsMSGLbcyi4C)
@@ -340,11 +363,11 @@ Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
 * The presidential address is "a humorous after-dinner talk"
 
 ## Paper Awards
-     
+
 ### ACL 2025 Test of Time Award
 
-* Automatic Labeling of Semantic Roles 
-  Daniel Gildea, Daniel Jurafsky 
+* Automatic Labeling of Semantic Roles
+  Daniel Gildea, Daniel Jurafsky
   ACL 2000 Hong Kong
   The 1st paper for the statistical modeling of semantics
 * Effective Approaches to Attention-based Neural Machine Translation
@@ -352,7 +375,7 @@ Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
   EMNLP 2015 Lisbon, Portugal
   * not to be confused with Neural Machine Translation by Jointly Learning to Align and Translate
     Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio
-    arXiv:1409.0473 ICLR 2015 
+    arXiv:1409.0473 ICLR 2015
   * Luong now: superhuman reasoning eg Gemini 2.5
 
 ### Outstanding Papers
@@ -553,15 +576,26 @@ Alok Debnath, Yvette Graham, Owen Conlan
   probably with the Unification Grammars introduced in the 1980s, where the
   * goal was to develop a computational model that implemented the ling theory.
   * impractical for scientific and sociological reasons that I’ll describe, and
-* the huge training data and long context windows of Deep Learning models makes
-  it unnecessary to incorporate any specific linguistically-inspired parsing
-  architecture into such models. While
+* the huge training data and long context windows of Deep Learning models
+  ~> unnecessary to incorporate any specific linguistically-inspired parsing
+  architecture into such models
 * there are deep scientific questions about how LLMs “understand” human langs,
-  their linguistic ability is sufficiently good for most practical tasks. Quite
-* most current research focuses on the information content of the language LLMs
-  generate, such as reducing hallucinations and improving instruction-following.
+  their linguistic ability is sufficiently good for most practical tasks
+* most current research focuses on the information content of the generation,
+  eg reducing hallucinations and improving instruction-following
 * the main opportunities for linguistics to contribute the modern computational
   linguistics are in model evaluation and explainability.
+* mentioned:
+  [Tetra-Tagging: Word-Synchronous Parsing with Linear-Time Inference](https://aclanthology.org/2020.acl-main.557/)
+  Nikita Kitaev, Dan Klein
+  * a constituency parsing algorithm
+  * like a supertagger, works by assigning labels to each word in a sentence
+  * In order to maximally leverage current neural architectures, the model
+    scores each word’s tags in parallel, with minimal task-specific structure.
+  * After scoring, a left-to-right reconciliation phase extracts a tree in
+    (empirically) linear time. Our parser achieves
+  * 95.4 F1 on the WSJ test set while also achieving
+  * speedups compared to current SOTA parsers with comparable accuracies
 
 ##### Jan Hajič: LLMs and Symbolic Meaning Representations
 
@@ -608,7 +642,9 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
   * several existing UD parsers in contemporary Japanese. To this end, the
   * by a wide margin
 
-### Lisa Bylinina's Keynote at FieldMatters
+### FieldMatters
+
+#### Lisa Bylinina's Keynote
 
 * NLP ~> language theory
   * [Modern language models refute Chomsky’s approach to language](https://lingbuzz.net/lingbuzz/007180)
@@ -624,6 +660,42 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
   * How Linguistics Learned to Stop Worrying and Love the Language Models
     Richard Futrell, Kyle Mahowald
     arXiv:2501.17047 [cs.CL]
+
+#### [Token-level semantic typology without a massively parallel corpus](https://aclanthology.org/2025.sigtyp-1.16/)
+Barend Beekhuizen
+
+* massively parallel setting :-(
+  * I have a rat. I know him well. He likes lettuce. He know I have lettuce.
+* we present a computational method for token-level lexical semantic comparative
+  research in an original text setting, as opposed to the more common massively
+  parallel setting. Given a set of (non-massively parallel) bitexts, the method
+  consists of leveraging pre-trained contextual vectors in a reference language
+  to induce, for a token in one target language, the lexical items that all
+  other target languages would have used, thus simulating a massively parallel
+  set-up. The method is evaluated on its extraction and induction quality, and
+  the use of the method for lexical semantic typological research is
+  demonstrated.
+* mentioned: 
+  A Crosslingual Investigation of [Conceptualiz](https://aclanthology.org/2023.acl-long.726/)ation in 1335 Languages
+  Yihong Liu, H Ye, L Weissweiler, P Wicke, R Pei, R Zangenfeind, H Schütze 
+  * Languages differ in how they divide up the world into concepts and words;
+  * Swahili has a single concept for ‘belly’ and ‘womb’. We investigate these
+  * we propose Conceptualizer, a method that 
+    creates a bipartite directed alignment graph between source language concepts
+    and sets of target language strings. In a
+  * detailed linguistic analysis across all languages for _bird_ and an 
+  * evaluation on gold standard data for 32 Swadesh concepts, we show that
+    Conceptualizer has good alignment accuracy. We demonstrate the potential of
+  * exper 1. We define crosslingual stability of a concept as the degree to
+    which it has 1-1 correspondences across languages, and show
+    * concreteness predicts stability. 
+  * exper 2. We represent each language by its conceptualization pattern for 83
+    concepts, and define a similarity measure on these representations. 
+    * The resulting measure for the conceptual similarity between two languages
+      is complementary to standard genealogical, typological, and surface
+      similarity measures. For four out of six language families, we can assign
+      languages to their correct family based on conceptual similarity with
+      accuracies between 54% and 87%
 
 ## Poster (Main conference)
 
