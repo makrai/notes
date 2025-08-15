@@ -310,7 +310,7 @@ Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
 #### Abstract
 
 * Understanding the expressive power of transformers
-* Many studies analyze unique hard attention transformers, where \\
+* Many studies analyze unique hard attention transformers, where \
   attention selects a single position that maximizes the attention scores.
 * When multiple positions achieve the maximum score, either the rightmost or the
   leftmost of those is chosen
