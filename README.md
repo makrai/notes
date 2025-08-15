@@ -734,7 +734,7 @@ Barend Beekhuizen
 - [Global MMLU: Understanding and](/README.md#global-mmlu-understanding-and)
 - [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
 - [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
-- [TUMLU: Turkic](/README.md#tumlu)
+- [TUMLU: Turkic](/README.md#tumlu-a-unified-and-native-language-understanding-benchmark-for-turkic)
 - [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
 
 #### 4. Linguistic structure, semantics, and parsing
