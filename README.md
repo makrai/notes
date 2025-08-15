@@ -152,6 +152,9 @@ Poster Session 4
   significantly tackling incongruity distortions and cross-instance variance.
 * SOTA performance surpassing LLaVA1.5-7B with only 17.3M trainable parameters,
 
+### Az AstroSpeech-hez lásd még [Verena Rieser keynoteját](/makrai/notes/blob/master/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
+arról, hogy az eltérő annotációk modellezéséről.
+
 ### Narrative
 
 #### [Entity Framing and Role Portrayal in the News](https://arxiv.org/abs/2502.14718)
@@ -253,7 +256,7 @@ constructions to capture underlying language patterns and guide corrections
     From Measuring the Language Gap to Mitigating It
     [(Yong+ 2025)](https://arxiv.org/abs/2505.24119)
 
-## Keynote
+## Keynotes
 
 ### L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
@@ -307,7 +310,7 @@ Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
 #### Abstract
 
 * Understanding the expressive power of transformers
-* Many studies analyze unique hard attention transformers, where
+* Many studies analyze unique hard attention transformers, where \\
   attention selects a single position that maximizes the attention scores.
 * When multiple positions achieve the maximum score, either the rightmost or the
   leftmost of those is chosen
