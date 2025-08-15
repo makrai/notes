@@ -719,19 +719,19 @@ Barend Beekhuizen
 - [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/README.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
 - [A Systematic Study of Compositional Syntactic Transformer Language Models](/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
 
-#### 3. Evaluation, benchmarks, and performance analysis
+#### 2. Evaluation, benchmarks, and performance analysis
 - [Global MMLU: Understanding and](/README.md#global-mmlu-understanding-and)
 - [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
 - [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
 - [TUMLU: Turkic](/README.md#tumlu-a-unified-and-native-language-understanding-benchmark-for-turkic)
 - [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
 
-#### 4. Linguistic structure, semantics, and parsing
+#### 3. Linguistic structure, semantics, and parsing
 - [On the Role of Semantic Proto-roles in Semantic Analysis](/README.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
 - [Enhancing AMR Parsing with Group Relative Policy Optimization](/README.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
 - [A Computational Typological Analysis of Tone Function in ASR](/README.md#a-computational-typological-analysis-of-tone-function-in-asr)
 
-#### 5. Social, cultural, and human–AI interaction aspects
+#### 4. Social, cultural, and human–AI interaction aspects
 - [Human-LLM Coevolution](/README.md#human-llm-coevolution)
 - [LLMs as Neurolinguistic Subjects](/README.md#llms-as-neurolinguistic-subjects)
 - [Culture Matters in Toxic Language Detection in Persian](/README.md#culture-matters-in-toxic-language-detection-in-persian)
