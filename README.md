@@ -1,6 +1,11 @@
 # ACL 2025 Wien
 
-* Hangulatkép: szamaritánusok `20250727_175007, 20250728_184147`
+## Elöljáróban a tartalmibbtól a small talk és a savanyú szőlő felé haladva
+
+* A jegyzet felépítése: 
+  * az elején a mostani projektjeimhez kapcsolódó témák, majd 
+    a konferencia részei időrendben, kivéve, hogy 
+    a poszterek a végén vannak, mert az adja a doksi nagy részét.
 * A frontális előadások nagyon rövidek voltak, és kevés is volt belőlük.
   A poszterek közt viszont jó élményeket szereztem, beleértve a Findings
   posztereket is.  Ennek a formának az is előnye, hogy a szerzőnek nem a
@@ -9,7 +14,6 @@
   ratio_-val), azt csak a nagyon kitartó hallgatónak mondja
   el,hanem azzal, ami működött.
   Volt kifejezetten nyelvészeti motivációjú cikk, pl. code switching.
-* Az első szerzők 51 %-a kínai
 * Az első napokban főleg a többnyelvűségről szóló cikkek
   keltették föl az érdeklődésemet, a Findings poszterek voltak egy korai
   kiemelkedő pont.
@@ -17,41 +21,18 @@
   Erről többünknek eszünkbe jutott, hogy
   a beadott cikkek élmezőnyén kívül nagyjából random, hogy elfogadják-e.
   Az alább ajánlott poszterek között is lehet ilyen.
-* Vissyzatérő motívum: circuit /ˈsɝːkɪt/
+* Az első szerzők 51 %-a kínai
+* Hangulatkép: szamaritánusok `20250727_175007, 20250728_184147`
 * Pilehvar észrevétele: sok cikk címében kettőspont!
 * Egy poszter nem poszter! `20250729_162001`
+  Az alábbi poszter előadója két másik posztert is mutogatott a kifüggesztetten
+  kívül -- followup work-öt
   * [World Modeling Makes a Better Planner:](https://arxiv.org/abs/2503.10480)
     Dual Preference Optimization for Embodied Task Planning
     Siyin Wang, Zhaoye Fei, Qinyuan Cheng, Shiduo Zhang, Panpan Cai,+
   * World-aware Planning Narratives [Enhance](https://arxiv.org/abs/2506.21230)
     Large Vision-Language Model Planner
     Junhao Shi, Zhaoye Fei, Siyin Wang, Qipeng Guo, Jingjing Gong, Xipeng Qiu
-
-  * large vision-language models (LVLMs) for embodied task planning, yet they
-  * hE fundamental challenges like dependency constraints and efficiency .
-  * Existing approaches either
-    solely optimize action selection or
-    leverage world models during inference,
-    overlooking the benefits of learning to model the world
-    as a way to enhance planning capabilities
-  * We propose Dual Preference Optimization (D2PO), a new learning framework
-  * jointly optimizes state prediction and action selection
-    through preference learning,
-    enabling LVLMs to understand environment dynamics for better planning.
-  * To automatically collect trajectories and stepwise preference data, we:
-    a tree search mechanism for extensive exploration via trial-and-error.
-  * Extensive experiments on VoTa-Bench demonstrate that our D2PO-based method
-    * significantly outperforms existing methods and GPT-4o when applied to
-      Qwen2-VL (7B), LLaVA-1.6 (7B), and LLaMA-3.2 (11B), achieving
-    * superior task success rates with more efficient execution paths.
-* A jegyzet felépítése: az elején a mostani projektjeimhez kapcsolódó témák,
-  majd a konferencia részei időrendben, kivéve, hogy a poszterek a végén vannak,
-  mert az adja a doksi nagy részét.
-  * További fényképek: `0801_1449`+
-    * Event Extraction as Machine Reading Comprehension (EMNLP 2020)
-      by Jian Liu, Yubo Chen, Kang Liu, Wei Bi, and Xiaojiang Liu—it
-      explicitly references and works with the ACE event ontology.
-
 
 ## Pszichológia
 
@@ -708,6 +689,14 @@ Barend Beekhuizen
       languages to their correct family based on conceptual similarity with
       accuracies between 54% and 87%
 
+### Nem tudom, melyik workshopról vannak 
+
+* a `0801_1449`--`1524` fényképek
+* mentioned:
+  * Event Extraction as Machine Reading Comprehension (EMNLP 2020)
+    by Jian Liu, Yubo Chen, Kang Liu, Wei Bi, and Xiaojiang Liu
+    works with the ACE event ontology
+
 ## Poster (Main conference)
 
 ### Csoportosítva (Alapvetően ChatGPT-vel)
@@ -1024,7 +1013,7 @@ Mambában eleve van attention.
 Alan Sun
 
 * mechanistic interpretability
-* we introduce circuit stability as a new way to assess model performance.
+* we introduce circuit /ˈsɝːkɪt/ stability as a new way to assess model performance.
   := a model's ability to apply a consistent reasoning process across inputs
 * We mathematically formalize circuit stability and circuit equivalence.
 
