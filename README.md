@@ -156,9 +156,9 @@ Poster Session 4
 
 ### Az AstroSpeech-hez lásd még
 
-* [Verena Rieser keynoteját](/blob/master/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
+* [Verena Rieser keynoteját](/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
 az eltérő annotációk modellezéséről.
-* [Appraisal](/blob/master/README.md#an-appraisal-theoretic-approach-to-modelling-affect-flow)
+* [Appraisal](/README.md#an-appraisal-theoretic-approach-to-modelling-affect-flow)
 
 ### Narrative
 
@@ -713,40 +713,40 @@ Barend Beekhuizen
 ### Csoportosítva (Alapvetően ChatGPT-vel)
 
 #### 1. Model architectures, training strategies, fine-tuning, and interpretability
-- [TUBA](/blob/master/README.md#tuba)
-- [A Semantic-Aware Layer-Freezing Approach](/blob/master/README.md#a-semantic-aware-layer-freezing-approach)
-- [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/blob/master/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
-- [EXECUTE](/blob/master/README.md#execute)
-- [Small Models, Big Impact](/blob/master/README.md#small-models-big-impact)
-- [Limited-Resource Adapters Are Regularizers, Not Linguists](/blob/master/README.md#limited-resource-adapters-are-regularizers-not-linguists)
-- [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/blob/master/README.md#denselora-dense-low-rank-adaptation-of-llms)
-- [ModerBERT](/blob/master/README.md#moderbert)
-- [Generative Pretrained Structured Transformers](/blob/master/README.md#generative-pretrained-structured-transformers)
-- [The Hidden Attention of Mamba Models](/blob/master/README.md#the-hidden-attention-of-mamba-models)
-- [Circuit Stability Characterizes Language Model Generalization](/blob/master/README.md#circuit-stability-characterizes-language-model-generalization)
-- [From Directions to Cones](/blob/master/README.md#from-directions-to-cones)
-- [Middle-Layer Representation Alignment](/blob/master/README.md#middle-layer-representation-alignment)
-- [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](/blob/master/README.md#unveiling-language-specific-features-in-llms-via-sparse-autoencoders)
-- [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/blob/master/README.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
-- [A Systematic Study of Compositional Syntactic Transformer Language Models](/blob/master/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
+- [TUBA](/README.md#tuba)
+- [A Semantic-Aware Layer-Freezing Approach](/README.md#a-semantic-aware-layer-freezing-approach)
+- [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
+- [EXECUTE](/README.md#execute)
+- [Small Models, Big Impact](/README.md#small-models-big-impact)
+- [Limited-Resource Adapters Are Regularizers, Not Linguists](/README.md#limited-resource-adapters-are-regularizers-not-linguists)
+- [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/README.md#denselora-dense-low-rank-adaptation-of-llms)
+- [ModerBERT](/README.md#moderbert)
+- [Generative Pretrained Structured Transformers](/README.md#generative-pretrained-structured-transformers)
+- [The Hidden Attention of Mamba Models](/README.md#the-hidden-attention-of-mamba-models)
+- [Circuit Stability Characterizes Language Model Generalization](/README.md#circuit-stability-characterizes-language-model-generalization)
+- [From Directions to Cones](/README.md#from-directions-to-cones)
+- [Middle-Layer Representation Alignment](/README.md#middle-layer-representation-alignment)
+- [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](/README.md#unveiling-language-specific-features-in-llms-via-sparse-autoencoders)
+- [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/README.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
+- [A Systematic Study of Compositional Syntactic Transformer Language Models](/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
 
 #### 3. Evaluation, benchmarks, and performance analysis
-- [Global MMLU: Understanding and](/blob/master/README.md#global-mmlu-understanding-and)
-- [Minimal Pair-Based Evaluation of Code-Switching](/blob/master/README.md#minimal-pair-based-evaluation-of-code-switching)
-- [Testing English News Articles for Lexical Homogenization](/blob/master/README.md#testing-english-news-articles-for-lexical-homogenization)
-- [TUMLU](/blob/master/README.md#tumlu)
-- [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/blob/master/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
+- [Global MMLU: Understanding and](/README.md#global-mmlu-understanding-and)
+- [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
+- [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
+- [TUMLU](/README.md#tumlu)
+- [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
 
 #### 4. Linguistic structure, semantics, and parsing
-- [On the Role of Semantic Proto-roles in Semantic Analysis](/blob/master/README.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
-- [Enhancing AMR Parsing with Group Relative Policy Optimization](/blob/master/README.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
-- [A Computational Typological Analysis of Tone Function in ASR](/blob/master/README.md#a-computational-typological-analysis-of-tone-function-in-asr)
+- [On the Role of Semantic Proto-roles in Semantic Analysis](/README.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
+- [Enhancing AMR Parsing with Group Relative Policy Optimization](/README.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
+- [A Computational Typological Analysis of Tone Function in ASR](/README.md#a-computational-typological-analysis-of-tone-function-in-asr)
 
 #### 5. Social, cultural, and human–AI interaction aspects
-- [Human-LLM Coevolution](/blob/master/README.md#human-llm-coevolution)
-- [LLMs as Neurolinguistic Subjects](/blob/master/README.md#llms-as-neurolinguistic-subjects)
-- [Culture Matters in Toxic Language Detection in Persian](/blob/master/README.md#culture-matters-in-toxic-language-detection-in-persian)
-- [Can Community Notes Replace Professional Fact-Checkers?](/blob/master/README.md#can-community-notes-replace-professional-fact-checkers)
+- [Human-LLM Coevolution](/README.md#human-llm-coevolution)
+- [LLMs as Neurolinguistic Subjects](/README.md#llms-as-neurolinguistic-subjects)
+- [Culture Matters in Toxic Language Detection in Persian](/README.md#culture-matters-in-toxic-language-detection-in-persian)
+- [Can Community Notes Replace Professional Fact-Checkers?](/README.md#can-community-notes-replace-professional-fact-checkers)
 
 ### [TUBA](https://arxiv.org/abs/2404.19597)
 : Cross-Lingual Transferability of Backdoor Attacks in LLMs
