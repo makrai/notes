@@ -710,9 +710,9 @@ Barend Beekhuizen
 
 ## Poster (Main conference)
 
-### Csoportosítva (Chat GPT-vel)
+### Csoportosítva (Alapvetően ChatGPT-vel)
 
-#### 1. Model architectures, training strategies, and fine-tuning
+#### 1. Model architectures, training strategies, fine-tuning, and interpretability
 - [TUBA](/makrai/notes/blob/master/README.md#tuba)
 - [A Semantic-Aware Layer-Freezing Approach](/makrai/notes/blob/master/README.md#a-semantic-aware-layer-freezing-approach)
 - [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/makrai/notes/blob/master/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
@@ -722,8 +722,6 @@ Barend Beekhuizen
 - [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/makrai/notes/blob/master/README.md#denselora-dense-low-rank-adaptation-of-llms)
 - [ModerBERT](/makrai/notes/blob/master/README.md#moderbert)
 - [Generative Pretrained Structured Transformers](/makrai/notes/blob/master/README.md#generative-pretrained-structured-transformers)
-
-#### 2. Model internals, representations, and interpretability
 - [The Hidden Attention of Mamba Models](/makrai/notes/blob/master/README.md#the-hidden-attention-of-mamba-models)
 - [Circuit Stability Characterizes Language Model Generalization](/makrai/notes/blob/master/README.md#circuit-stability-characterizes-language-model-generalization)
 - [From Directions to Cones](/makrai/notes/blob/master/README.md#from-directions-to-cones)
