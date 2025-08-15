@@ -47,6 +47,11 @@
 * A jegyzet felépítése: az elején a mostani projektjeimhez kapcsolódó témák,
   majd a konferencia részei időrendben, kivéve, hogy a poszterek a végén vannak,
   mert az adja a doksi nagy részét.
+  * További fényképek: `0801_1449`+
+    * Event Extraction as Machine Reading Comprehension (EMNLP 2020)
+      by Jian Liu, Yubo Chen, Kang Liu, Wei Bi, and Xiaojiang Liu—it
+      explicitly references and works with the ACE event ontology.
+
 
 ## Pszichológia
 
@@ -250,19 +255,36 @@ constructions to capture underlying language patterns and guide corrections
 
 ## Keynote: L Zettlemoyer: Rethinking Pretraining: Data and Architecture
 
-* the standard pipeline of LLM training:
-  tokenization, pretraining, possibly mid-training, and post training or
-  alignment
-* 3 cases when we don't understand  this pipeline
-  * our work on data efficient post training (eg LIMA, ALMA, and s1) where we
-    * nearly all advanced model capabilities come from the pretraining data
-  * new hierarchical architectures for byte-level language models (eg BLT) that
-    * both tokenizer-free and scale better than traditional BPE-based methods,
-      especially in the long tail. Finally, I will discuss
-  * decentralized, modular training algorithms (eg BTM) that
-    * better isolate and control the influence of specific data on specific
-      model components and behaviors
-* sum: centering and amplifying the influence of data in architecture design
+* Abstract
+  * the standard pipeline of LLM training:
+    tokenization, pretraining, possibly mid-training, and post training or
+    alignment
+  * 3 cases when we don't understand this pipeline
+    * our work on data efficient post training (eg LIMA, ALMA, and s1) where we
+      * nearly all advanced model capabilities come from the pretraining data
+    * new hierarchical architectures for byte-level language models (eg BLT) that
+      * both tokenizer-free and scale better than traditional BPE-based methods,
+        especially in the long tail. Finally, I will discuss
+    * decentralized, modular training algorithms (eg BTM) that
+      * better isolate and control the influence of specific data on specific
+        model components and behaviors
+  * sum: centering and amplifying the influence of data in architecture design
+* Mentioned in the keynote:
+  Spurious [hamis] Rewards: Rethinking Training Signals in RLVR
+  R Shao, S Stella Li, R Xin, S Geng, Y Wang, S Oh, ..., L Zettlemoyer
+  * reinforcement learning with verifiable rewards (RLVR) can elicit strong
+    mathematical reasoning in certain models even with spurious rewards that
+    have little, no, or even negative correlation with the correct answer.
+  * et MATH-500 performance for Qwen2.5-Math-7B improved in absolute points by
+    21.4% (random reward), 13.8% (format reward), 24.1% (incorrect label), 26.0%
+    (1-shot RL), and 27.1% (majority voting) -- nearly matching the 29.1% gained
+    with ground truth rewards
+  * hE, the spurious rewards that work for Qwen often fail with Llama3 or OLMo2
+  * code reasoning -- thinking in code without actual code execution -- to be a
+    distinctive Qwen2.5-Math behavior that becomes significantly more frequent
+    after RLVR, from 65% to over 90%, even with spurious rewards. Overall,
+  * we hypothesize that RLVR must somehow be surfacing useful reasoning
+    representations learned during pretraining
 
 ## Oral (Main conference)
 
@@ -293,13 +315,45 @@ Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
 (In the Q&A of this paper, Anssi Yli-Jyrä asked a question about reset automata
 and counter automata.)
 
+### [Using Information Theory to Characterize Prosodic Typology](https://aclanthology.org/2025.acl-long.1192/)
+The Case of Tone, Pitch-Accent and Stress-Accent
+Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
+
+* relationship between lexical identity and prosody can be
+  characterized using information theory
+* languages that use prosody to make lexical distinctions should exhibit a
+  higher mutual information between word identity and prosody, compared to
+  languages that don’t
+* pitch is used to make lexical distinctions in tonal languages, eg Cantonese.
+* speakers reading sentences aloud in ten languages across 5 families to
+  estimate the mutual information between the text and their pitch curves. We
+* across languages, pitch curves display similar amounts of entropy.  However,
+* these curves are easier to predict given their associated text in the tonal
+  languages, compared to pitch- and stress-accent languages, and thus the mutual
+  information is higher in these languages, supporting our hypothesis.  Our
+
 ## ACL Lifetime Award: Kathleen McKeown
 
 * [Detecting and Explaining Emotional Reactions in Personal Narrative](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mBf4mJUAAAAJ&citation_for_view=mBf4mJUAAAAJ:YsMSGLbcyi4C)
   Elsbeth Turcan
   PhD Thesis 2024
+* The presidential address is "a humorous after-dinner talk"
 
 ## Paper Awards
+     
+### ACL 2025 Test of Time Award
+
+* Automatic Labeling of Semantic Roles 
+  Daniel Gildea, Daniel Jurafsky 
+  ACL 2000 Hong Kong
+  The 1st paper for the statistical modeling of semantics
+* Effective Approaches to Attention-based Neural Machine Translation
+  Thang Luong, Hieu Pham, and Christopher D. Manning
+  EMNLP 2015 Lisbon, Portugal
+  * not to be confused with Neural Machine Translation by Jointly Learning to Align and Translate
+    Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio
+    arXiv:1409.0473 ICLR 2015 
+  * Luong now: superhuman reasoning eg Gemini 2.5
 
 ### Outstanding Papers
 
@@ -553,6 +607,23 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
   * zero-shot transfer from the contemporary to the modern Japanese.
   * several existing UD parsers in contemporary Japanese. To this end, the
   * by a wide margin
+
+### Lisa Bylinina's Keynote at FieldMatters
+
+* NLP ~> language theory
+  * [Modern language models refute Chomsky’s approach to language](https://lingbuzz.net/lingbuzz/007180)
+    Steven T. Piantadosi a,b
+    in Edward Gibson & Moshe Poliak (eds.), From fieldwork to linguistic theory
+    2024
+  * Why Large Language Models Are Poor Theories of Human Linguistic Cognition: A Reply to Piantadosi
+    Roni Katzir Orcid
+    Bioling Volume 17
+  * Semantics and Deep Learning
+    Lasha Abzianidze, Lisa Bylinina and Denis Paperno
+    Cambridge University Press 2024
+  * How Linguistics Learned to Stop Worrying and Love the Language Models
+    Richard Futrell, Kyle Mahowald
+    arXiv:2501.17047 [cs.CL]
 
 ## Poster (Main conference)
 
@@ -1017,3 +1088,51 @@ Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
     covering both language understanding and language generation.
   * significantly outperforms existing unsupervised SLMs on left-to-right
     grammar induction, while holding a substantial acceleration on training.
+
+### A Systematic Study of Compositional Syntactic Transformer Language Models
+Yida Zhao, Hao Xve, Xiang Hu, Kewei Tu
+
+* Syntactic language models (SLMs) enhance Transformers by
+  incorporating syntactic biases through the modeling of linearized syntactic
+  parse trees alongside surface sentences. This paper focuses on
+* compositional SLMs that are based on constituency parse trees and contain
+  explicit bottom-up composition of constituent representations. We identify
+* key aspects of design choices in existing compositional SLMs and
+* we propose a unified framework encompassing both existing models and novel
+  variants. We conduct a comprehensive empirical
+* evaluation of all the variants in our framework across
+  tasks: language modeling, syntactic generalization, summarization, dialogue,
+  and inference efficiency.  Based on the experimental results, we make multiple
+
+### Enhancing AMR Parsing with Group Relative Policy Optimization
+Botond Barta, Endre Hamerlik, Milán Nyist, Masato Ito, Judit Acs
+XLLM
+
+* We investig the openly available Llama 3.2 1B language model for AMR parsing
+  * supervised fine-tuning, further enhanced by
+    reinforcement learning via Group Relative Policy Optimization (GRPO).
+* our GRPO-based approach explicitly optimizes fine-grained semantic rewards,
+  including Smatch scores, frame-argument correctness, and
+  structural validity of logical operations.
+* Experimental results show that
+  * supervised fine-tuning alone establishes Llama as a capable English AMR
+    parser, and
+  * subsequent GRPO fine-tuning further improves its performance.
+  * Our final model achieves higher Smatch scores,
+    consistently respects critical low-level semantic constraints, and
+    outperforms existing parsers on high-level semantic evaluation metrics
+    across diverse linguistic phenomena.
+
+---
+Tone in Perspective:
+### A Computational Typological Analysis of Tone Function in ASR
+Siyu Liang, Gina-Anne Levow
+
+* we investigate the impact of pitch flattening on automatic speech recognition
+  across tonal and non-tonal languages.
+* tonal languages experience substantially larger performance degradation than
+* tone confusion matrices show systematic patterns of misidentification where
+  contour tones collapse toward level tones when pitch information is removed.
+* Calculation of tone’s functional load at syllable and word levels demonstrates
+  * syllable-level functional load strongly predicts ASR vulnerto flattening,
+  * word-level patterns reflect each language’s morphological structure.
