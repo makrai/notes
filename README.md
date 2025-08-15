@@ -90,7 +90,9 @@ Benjamin Litterer, David Jurgens, Dallas Card
 
 ### Emotion
 
-Workshop day 1, `20250731_170252`
+* Workshop day 1, `20250731_170252`
+* [ld. McKeown előadását (explaining emotions)](https://github.com/makrai/notes/blob/master/README.md#acl-lifetime-award-kathleen-mckeown_
+
 
 ### Depression
 
@@ -152,8 +154,11 @@ Poster Session 4
   significantly tackling incongruity distortions and cross-instance variance.
 * SOTA performance surpassing LLaVA1.5-7B with only 17.3M trainable parameters,
 
-### Az AstroSpeech-hez lásd még [Verena Rieser keynoteját](/makrai/notes/blob/master/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
-arról, hogy az eltérő annotációk modellezéséről.
+### Az AstroSpeech-hez lásd még
+
+* [Verena Rieser keynoteját](/makrai/notes/blob/master/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
+az eltérő annotációk modellezéséről.
+* [Appraisal](/makrai/notes/blob/master/README.md#an-appraisal-theoretic-approach-to-modelling-affect-flow)
 
 ### Narrative
 
@@ -489,8 +494,8 @@ Ndapa Nakashole
   for Arabic LLMs
   Fakhraddin Alwajih, Abdellah EL MEKKI, ..., Muhammad Abdul-Mageed
 
-### Best Demo: OLMoTrace. Tracing Language Model Outputs Back to Trillions of
-Training Tokens
+### Best Demo: OLMoTrace. Tracing Language Model Outputs Back
+to Trillions of Training Tokens
 Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
 
 * OLMoTrace finds and shows verbatim matches between segments of output and
@@ -572,9 +577,12 @@ Alok Debnath, Yvette Graham, Owen Conlan
 
 ### XLLM
 
+#### Invited Keynote Speakers
+
 ##### Mark Johnson: The Changing Roles of (Linguistic) Structure in Comp Ling
 
-* Egyelőre a honlapon szereplő absztraktból idézek, bár nem erről beszélt.
+* Most of this section is based on the abstract, however, he spoke about
+  something else.
 * The closest relationship between linguistics and computational linguistics was
   probably with the Unification Grammars introduced in the 1980s, where the
   * goal was to develop a computational model that implemented the ling theory.
@@ -668,7 +676,7 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
 Barend Beekhuizen
 
 * massively parallel setting :-(
-  * I have a rat. I know him well. He likes lettuce. He know I have lettuce.
+  * I have a rat. I know him well. He likes lettuce. He knows I have lettuce.
 * we present a computational method for token-level lexical semantic comparative
   research in an original text setting, as opposed to the more common massively
   parallel setting. Given a set of (non-massively parallel) bitexts, the method
@@ -678,22 +686,22 @@ Barend Beekhuizen
   set-up. The method is evaluated on its extraction and induction quality, and
   the use of the method for lexical semantic typological research is
   demonstrated.
-* mentioned: 
+* mentioned:
   A Crosslingual Investigation of [Conceptualiz](https://aclanthology.org/2023.acl-long.726/)ation in 1335 Languages
-  Yihong Liu, H Ye, L Weissweiler, P Wicke, R Pei, R Zangenfeind, H Schütze 
+  Yihong Liu, H Ye, L Weissweiler, P Wicke, R Pei, R Zangenfeind, H Schütze
   * Languages differ in how they divide up the world into concepts and words;
   * Swahili has a single concept for ‘belly’ and ‘womb’. We investigate these
-  * we propose Conceptualizer, a method that 
+  * we propose Conceptualizer, a method that
     creates a bipartite directed alignment graph between source language concepts
     and sets of target language strings. In a
-  * detailed linguistic analysis across all languages for _bird_ and an 
+  * detailed linguistic analysis across all languages for _bird_ and an
   * evaluation on gold standard data for 32 Swadesh concepts, we show that
     Conceptualizer has good alignment accuracy. We demonstrate the potential of
   * exper 1. We define crosslingual stability of a concept as the degree to
     which it has 1-1 correspondences across languages, and show
-    * concreteness predicts stability. 
+    * concreteness predicts stability.
   * exper 2. We represent each language by its conceptualization pattern for 83
-    concepts, and define a similarity measure on these representations. 
+    concepts, and define a similarity measure on these representations.
     * The resulting measure for the conceptual similarity between two languages
       is complementary to standard genealogical, typological, and surface
       similarity measures. For four out of six language families, we can assign
@@ -701,6 +709,46 @@ Barend Beekhuizen
       accuracies between 54% and 87%
 
 ## Poster (Main conference)
+
+### Csoportosítva (Chat GPT-vel)
+
+#### 1. Model architectures, training strategies, and fine-tuning
+- [TUBA](/makrai/notes/blob/master/README.md#tuba)
+- [A Semantic-Aware Layer-Freezing Approach](/makrai/notes/blob/master/README.md#a-semantic-aware-layer-freezing-approach)
+- [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/makrai/notes/blob/master/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
+- [EXECUTE](/makrai/notes/blob/master/README.md#execute)
+- [Small Models, Big Impact](/makrai/notes/blob/master/README.md#small-models-big-impact)
+- [Limited-Resource Adapters Are Regularizers, Not Linguists](/makrai/notes/blob/master/README.md#limited-resource-adapters-are-regularizers-not-linguists)
+- [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/makrai/notes/blob/master/README.md#denselora-dense-low-rank-adaptation-of-llms)
+- [ModerBERT](/makrai/notes/blob/master/README.md#moderbert)
+- [Generative Pretrained Structured Transformers](/makrai/notes/blob/master/README.md#generative-pretrained-structured-transformers)
+
+#### 2. Model internals, representations, and interpretability
+- [The Hidden Attention of Mamba Models](/makrai/notes/blob/master/README.md#the-hidden-attention-of-mamba-models)
+- [Circuit Stability Characterizes Language Model Generalization](/makrai/notes/blob/master/README.md#circuit-stability-characterizes-language-model-generalization)
+- [From Directions to Cones](/makrai/notes/blob/master/README.md#from-directions-to-cones)
+- [Middle-Layer Representation Alignment](/makrai/notes/blob/master/README.md#middle-layer-representation-alignment)
+- [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](/makrai/notes/blob/master/README.md#unveiling-language-specific-features-in-llms-via-sparse-autoencoders)
+- [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/makrai/notes/blob/master/README.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
+- [A Systematic Study of Compositional Syntactic Transformer Language Models](/makrai/notes/blob/master/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
+
+#### 3. Evaluation, benchmarks, and performance analysis
+- [Global MMLU: Understanding and](/makrai/notes/blob/master/README.md#global-mmlu-understanding-and)
+- [Minimal Pair-Based Evaluation of Code-Switching](/makrai/notes/blob/master/README.md#minimal-pair-based-evaluation-of-code-switching)
+- [Testing English News Articles for Lexical Homogenization](/makrai/notes/blob/master/README.md#testing-english-news-articles-for-lexical-homogenization)
+- [TUMLU](/makrai/notes/blob/master/README.md#tumlu)
+- [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/makrai/notes/blob/master/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
+
+#### 4. Linguistic structure, semantics, and parsing
+- [On the Role of Semantic Proto-roles in Semantic Analysis](/makrai/notes/blob/master/README.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
+- [Enhancing AMR Parsing with Group Relative Policy Optimization](/makrai/notes/blob/master/README.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
+- [A Computational Typological Analysis of Tone Function in ASR](/makrai/notes/blob/master/README.md#a-computational-typological-analysis-of-tone-function-in-asr)
+
+#### 5. Social, cultural, and human–AI interaction aspects
+- [Human-LLM Coevolution](/makrai/notes/blob/master/README.md#human-llm-coevolution)
+- [LLMs as Neurolinguistic Subjects](/makrai/notes/blob/master/README.md#llms-as-neurolinguistic-subjects)
+- [Culture Matters in Toxic Language Detection in Persian](/makrai/notes/blob/master/README.md#culture-matters-in-toxic-language-detection-in-persian)
+- [Can Community Notes Replace Professional Fact-Checkers?](/makrai/notes/blob/master/README.md#can-community-notes-replace-professional-fact-checkers)
 
 ### [TUBA](https://arxiv.org/abs/2404.19597)
 : Cross-Lingual Transferability of Backdoor Attacks in LLMs
