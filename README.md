@@ -235,7 +235,7 @@ constructions to capture underlying language patterns and guide corrections
   erroneous tokens
 * Extensive experiments on English and Chinese GEC benchmarks: effective
 
-## [Tutorial]
+## Tutorials
 
 ### [Uncertainty](https://sites.google.com/view/acl2025-uncertainty-for-llms/)
 
