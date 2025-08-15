@@ -880,8 +880,7 @@ Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
   features, contributing to statistically significant performance gains across
   tasks
 
-### [EXECUTE](https://arxiv.org/abs/2505.17784)
-: A Multilingual Benchmark for LLM Token Understanding
+### [EXECUTE: A Multilingual Benchmark for LLM Token Understanding](https://arxiv.org/abs/2505.17784)
 Lukas Edman, Helmut Schmid, Alexander Fraser
 
 A vörös poszter.
