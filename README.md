@@ -716,7 +716,7 @@ Barend Beekhuizen
 - [TUBA](/README.md#tuba)
 - [A Semantic-Aware Layer-Freezing Approach](/README.md#a-semantic-aware-layer-freezing-approach)
 - [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
-- [EXECUTE](/README.md#execute)
+- [EXECUTE: a multilingual benchmark for LLM token understanding](/README.md#execute-a-multilingual-benchmark-for-llm-token-understanding)
 - [Small Models, Big Impact](/README.md#small-models-big-impact)
 - [Limited-Resource Adapters Are Regularizers, Not Linguists](/README.md#limited-resource-adapters-are-regularizers-not-linguists)
 - [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/README.md#denselora-dense-low-rank-adaptation-of-llms)
@@ -734,7 +734,7 @@ Barend Beekhuizen
 - [Global MMLU: Understanding and](/README.md#global-mmlu-understanding-and)
 - [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
 - [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
-- [TUMLU](/README.md#tumlu)
+- [TUMLU: Turkic](/README.md#tumlu)
 - [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
 
 #### 4. Linguistic structure, semantics, and parsing
@@ -976,8 +976,7 @@ github.com/dannigt/mid-align
 * separately trained alignment modules can be merged with existing task-specific
   modules, improving cross-lingual capabilities without full re-training. Our
 
-### [TUMLU](https://aclanthology.org/2025.acl-long.1112/)
-: A Unified and Native Language Understanding Benchmark for Turkic
+### [TUMLU: A Unified and Native Language Understanding Benchmark for Turkic](https://aclanthology.org/2025.acl-long.1112/)
 
 Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova,+
 
