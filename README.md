@@ -159,7 +159,7 @@ az eltérő annotációk modellezéséről.
 * 1,378 recent news articles in
 * five languages (Bulgarian, English, Hindi, European Portuguese, and Russian)
 * two domains: the Ukraine-Russia War and Climate Change
-* > 5,800 entity mentions have been annotated with role labels. This
+* 5,800 entity mentions have been annotated with role labels. This
 * evaluation results on fine-tuned SOTA multilingual transformers
   and hierarchical zero-shot learning using LLMs
   * at the level of a document, a paragraph, and a sentence
@@ -177,7 +177,7 @@ az eltérő annotációk modellezéséről.
   computational efficiency
 * case studies in mental health and empirical phenomenology
 
-### Surprisal (see CoNLL as well)
+### Surprisal (see [CoNLL](/README.md#conll-day-1)) as well)
 
 #### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
@@ -265,7 +265,7 @@ constructions to capture underlying language patterns and guide corrections
         model components and behaviors
   * sum: centering and amplifying the influence of data in architecture design
 * Mentioned in the keynote:
-  Spurious [hamis] Rewards: Rethinking Training Signals in RLVR
+  Spurious [hamis] Rewards: Rethinking Training Signals in RLVR.
   R Shao, S Stella Li, R Xin, S Geng, Y Wang, S Oh, ..., L Zettlemoyer
   * reinforcement learning with verifiable rewards (RLVR) can elicit strong
     mathematical reasoning in certain models even with spurious rewards that
@@ -359,11 +359,11 @@ and counter automata.)
 
 ### ACL 2025 Test of Time Award
 
-* Automatic Labeling of Semantic Roles
+* Automatic Labeling of Semantic Roles.
   Daniel Gildea, Daniel Jurafsky
   ACL 2000 Hong Kong
-  The 1st paper for the statistical modeling of semantics
-* Effective Approaches to Attention-based Neural Machine Translation
+  * The 1st paper for the statistical modeling of semantics
+* Effective Approaches to Attention-based Neural Machine Translation.
   Thang Luong, Hieu Pham, and Christopher D. Manning
   EMNLP 2015 Lisbon, Portugal
   * not to be confused with Neural Machine Translation by Jointly Learning to Align and Translate
@@ -469,15 +469,15 @@ and counter automata.)
 
 * Are Rules Meant to be Broken? Understanding
   Multilingual Moral Reasoning as a Computational Pipeline
-  with UniMoral
+  with UniMoral.
     Shivani Kumar, David Jurgens
 
 * BRIGHTER: BRIdging the Gap in Human-Annotated
-  Textual Emotion Recognition Datasets for 28 Languages
+  Textual Emotion Recognition Datasets for 28 Languages.
   Shamsuddeen Hassan Muhammad, Nedjma Ousidhoum, ..., Saif M. Mohammad
 
 * Palm: A Culturally Inclusive and Linguistically Diverse Dataset
-  for Arabic LLMs
+  for Arabic LLMs.
   Fakhraddin Alwajih, Abdellah EL MEKKI, ..., Muhammad Abdul-Mageed
 
 ### Best Demo: OLMoTrace. Tracing Language Model Outputs Back
@@ -495,20 +495,20 @@ to Trillions of Training Tokens
 ### Best Paper
 
 * [A Theory of Response Sampling in LLMs:](https://pramod-kaushik.github.io/llm-response-sampling/)
-  Part Descriptive and Part Prescriptive
+  Part Descriptive and Part Prescriptive.
   Sarath Sivaprasad, Pramod Kaushik, Sahar Abdelnabi, Mario Fritz
   1CISPA Helmholtz Center for Information Security
 
-* Fairness through Difference Awareness: Measuring Desired Group Discrimination in LLMs
+* Fairness through Difference Awareness: Measuring Desired Group Discrimination in LLMs.
   Angelina Wang, Michelle Phan, Daniel E. Ho, Sanmi Koyejo
   Stanford
 
-* Language Models Resist Alignment: Evidence From Data Compression
+* Language Models Resist Alignment: Evidence From Data Compression.
   Jiaming Ji, Kaile Wang, Tianyi Qiu, Boyuan Chen, Jiayi Zhou, Changye Li, Hantao Lou, Juntao Dai, Yunhuai Liu, Yaodong Yang
   Peking University
   [photo of the authors (in smokings)](https://img.36krcdn.com/hsossms/20250730/v2_fd517c465a1c4cf4842e8a649a055fb9@000000_oswg1342379oswg1080oswg810_img_000?)
 
-* Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
+* Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention.
   Jingyang Yuan, Huazuo Gao, Damai Dai, Junyu Luo, Liang Zhao, et al
   DeepSeek-AI, Peking University
 
@@ -522,7 +522,7 @@ to Trillions of Training Tokens
 * a word’s polysemy structure is largely governed by systematic sense
   alternations that form overarching patterns across the vocabulary. While
   (Apresjan, 1974; Nunberg, 1995; Pustejovsky, 1995)
-* psycholinguistic studies confirm the psychological validity of regularity in
+* psycholinguistic studies confirm the psychological validity of regularity
   * ie systematic relatedness of senses affects
     how the human mental lexicon is learned, represented, and processed
     (Frisson, 2015; Klepousniotou et al., 2012; Rabagliati and Snedeker, 2013;
@@ -545,9 +545,9 @@ to Trillions of Training Tokens
 in Conversation Corpora
 . Alok Debnath, Yvette Graham, Owen Conlan
 
-* the multidimensional cognitive model of Appraisal Theory offers significant
-  advantages for analyzing emotions in conversational contexts, addressing the
-  current challenges of inconsistent annotation methodologies across corpora. To
+* the multidimensional cognitive model of Appraisal Theory offers
+  significant advantages for analyzing emotions in conversational contexts,
+  addressing the current challenges of inconsistent annotation methodologies
 * we present AppraisePLM,
   a regression and classification model trained on the crowd-EnVent corpus that
   outperforms existing models in predicting 21 appraisal dimensions
@@ -557,7 +557,7 @@ in Conversation Corpora
   conversations, and domain-specific affect analysis. Our analysis reveals that
 * AppraisePLM successfully extrapolates emotion labels across datasets, while
   capturing domain-specific patterns in affect flow – change in conversational
-  emotion over the conversation. This work highlights the entangled nature of
+  emotion over the conversation. This work highlights the entangled nature
 
 #### Discussion session - CoNLL community
 
@@ -644,17 +644,17 @@ in Conversation Corpora
 #### Lisa Bylinina's Keynote
 
 * NLP ~> language theory
-  * [Modern language models refute Chomsky’s approach to language](https://lingbuzz.net/lingbuzz/007180)
+  * [Modern language models refute Chomsky’s approach to language](https://lingbuzz.net/lingbuzz/007180).
     Steven T. Piantadosi a,b
     in Edward Gibson & Moshe Poliak (eds.), From fieldwork to linguistic theory
     2024
-  * Why Large Language Models Are Poor Theories of Human Linguistic Cognition: A Reply to Piantadosi
+  * Why Large Language Models Are Poor Theories of Human Linguistic Cognition: A Reply to Piantadosi.
     Roni Katzir Orcid
     Bioling Volume 17
-  * Semantics and Deep Learning
+  * Semantics and Deep Learning.
     Lasha Abzianidze, Lisa Bylinina and Denis Paperno
     Cambridge University Press 2024
-  * How Linguistics Learned to Stop Worrying and Love the Language Models
+  * How Linguistics Learned to Stop Worrying and Love the Language Models.
     Richard Futrell, Kyle Mahowald
     arXiv:2501.17047 [cs.CL]
 
@@ -673,10 +673,10 @@ in Conversation Corpora
   the use of the method for lexical semantic typological research is
   demonstrated.
 * mentioned:
-  A Crosslingual Investigation of [Conceptualiz](https://aclanthology.org/2023.acl-long.726/)ation in 1335 Languages
+  A Crosslingual Investigation of [Conceptualiz](https://aclanthology.org/2023.acl-long.726/)ation in 1335 Languages.
   Yihong Liu, H Ye, L Weissweiler, P Wicke, R Pei, R Zangenfeind, H Schütze
   * Languages differ in how they divide up the world into concepts and words;
-  * Swahili has a single concept for ‘belly’ and ‘womb’. We investigate these
+  * eg Swahili has a single concept for ‘belly’ and ‘womb’. We investigate these
   * we propose Conceptualizer, a method that
     creates a bipartite directed alignment graph between source language concepts
     and sets of target language strings. In a
@@ -707,7 +707,7 @@ in Conversation Corpora
 ### Csoportosítva (Alapvetően ChatGPT-vel)
 
 #### 1. Model architectures, training strategies, fine-tuning, and interpretability
-- [TUBA](/README.md#tuba)
+- [TUBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs](/README.md#tuba)
 - [A Semantic-Aware Layer-Freezing Approach](/README.md#a-semantic-aware-layer-freezing-approach)
 - [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
 - [EXECUTE: a multilingual benchmark for LLM token understanding](/README.md#execute-a-multilingual-benchmark-for-llm-token-understanding)
@@ -725,7 +725,7 @@ in Conversation Corpora
 - [A Systematic Study of Compositional Syntactic Transformer Language Models](/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
 
 #### 2. Evaluation, benchmarks, and performance analysis
-- [Global MMLU: Understanding and](/README.md#global-mmlu-understanding-and)
+- [Global MMLU: ...Cultural and Ling Biases in Multiling Eval](/README.md#global-mmlu-understanding-and)
 - [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
 - [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
 - [TUMLU: Turkic](/README.md#tumlu-a-unified-and-native-language-understanding-benchmark-for-turkic)
@@ -742,8 +742,7 @@ in Conversation Corpora
 - [Culture Matters in Toxic Language Detection in Persian](/README.md#culture-matters-in-toxic-language-detection-in-persian)
 - [Can Community Notes Replace Professional Fact-Checkers?](/README.md#can-community-notes-replace-professional-fact-checkers)
 
-### [TUBA](https://arxiv.org/abs/2404.19597)
-: Cross-Lingual Transferability of Backdoor Attacks in LLMs
+### [TUBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs](https://arxiv.org/abs/2404.19597)
 with Instruction Tuning
 
 . Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp,+
