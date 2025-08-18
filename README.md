@@ -60,7 +60,7 @@ with Self-Supervised Contrastive and Student-Teacher Learning
 
 #### [Mapping the Podcast Ecosystem](https://arxiv.org/abs/2411.07892)
 with the Structured Podcast Research Corpus
-Benjamin Litterer, David Jurgens, Dallas Card
+. Benjamin Litterer, David Jurgens, Dallas Card
 
 * we introduce a massive dataset of over 1.1M podcast transcripts that is
   largely comprehensive of
@@ -73,16 +73,15 @@ Benjamin Litterer, David Jurgens, Dallas Card
 ### Emotion
 
 * Workshop day 1, `20250731_170252`
-* [ld. McKeown előadását (explaining emotions)](https://github.com/makrai/notes/blob/master/README.md#acl-lifetime-award-kathleen-mckeown_
-
+* ld. [McKeown előadását](https://github.com/makrai/notes/blob/master/README.md#acl-lifetime-award-kathleen-mckeown)
+  (explaining emotions)
 
 ### Depression
 
 [Eeyore:](https://arxiv.org/abs/2503.00018) Realistic Depression Simulation
 via Supervised and Preference Optimization
 
-Siyang Liu, Bianca Brie, Wenda Li, Laura Biester, Andrew Lee,
-James Pennebaker, Rada Mihalcea
+. Siyang Liu, Bianca Brie, Wenda Li, L Biester, A Lee, J Pennebaker, R Mihalcea
 
 * goal: capturing diverse client traits and psychological conditions. We
 * Eeyore: an 8B model optimized for realistic depression simulation
@@ -105,16 +104,16 @@ James Pennebaker, Rada Mihalcea
 ### Sarcasm
 
 #### Rhetorical Device-Aware Sarcasm Detection with Counterfactual Data Augmentation
-Qingqing Hong, Jiayi Lin, Junji Wang, Dapeng Yin, Dongyu Zhang, Shuyue Zhu
-Findings Posters -- Virtual
+. Qingqing Hong, Jiayi Lin, Junji Wang, Dapeng Yin, Dongyu Zhang, Shuyue Zhu
+. Findings Posters -- Virtual
 
 #### BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for Varieties of English
-Dipankar Srirag, Aditya Joshi, Diptesh Kanojia, Jordan Painter
-Findings Posters -- In-Person 1
+. Dipankar Srirag, Aditya Joshi, Diptesh Kanojia, Jordan Painter
+. Findings Posters -- In-Person 1
 
 #### Incongruity-aware Tension Field Network for Multi-modal Sarcasm Detection
-Jiecheng Zhang, C. L. Philip Chen, Shuzhen Li, Tong Zhang
-Poster Session 4
+. Jiecheng Zhang, C. L. Philip Chen, Shuzhen Li, Tong Zhang
+. Poster Session 4
 
 * Multi-modal sarcasm detection (MSD): from text-image pairs
 * Most MSD researches explore the incongr through consistency preference methods
@@ -167,7 +166,7 @@ az eltérő annotációk modellezéséről.
 
 #### [A Computational Framework to Identify Self-Aspects in Text](https://aclanthology.org/2025.acl-srw.47/)
 
-Jaya Caporusso, Matthew Purver, Senja Pollak
+. Jaya Caporusso, Matthew Purver, Senja Pollak
 
 * PhD proposal
 * we plan to introduce
@@ -182,7 +181,7 @@ Jaya Caporusso, Matthew Purver, Senja Pollak
 
 #### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
-Byung-Doh Oh, Hongao Zhu, William Schuler
+. Byung-Doh Oh, Hongao Zhu, William Schuler
 
 * psycholinguistic modeling
 * surprisal from larger pre-trained language models has been shown to be
@@ -199,7 +198,7 @@ Byung-Doh Oh, Hongao Zhu, William Schuler
      overlaps only minimally with the reading time corpora. Taken together, this
 
 #### Subword models struggle with word learning, but [surprisal hides it](https://arxiv.org/abs/2502.12835)
-Bastian Bunzeck, Sina Zarrieß
+. Bastian Bunzeck, Sina Zarrieß
 
 * We study word learning in subword and character language models
   with the psycholinguistic lexical decision task. While
@@ -218,9 +217,9 @@ Bastian Bunzeck, Sina Zarrieß
 ## Konstrukciós nyelvtan
 
 [CxGGEC:](https://aclanthology.org/2025.acl-long.307/)
-Construction-Guided Grammatical Error Correction
+. Construction-Guided Grammatical Error Correction
 
-Yayu Cao, Tianxiang Wang, Lvxiaowei Xu, Zhenyao Wang, Ming Cai
+. Yayu Cao, Tianxiang Wang, Lvxiaowei Xu, Zhenyao Wang, Ming Cai
 
 * Current grammatical error correction (GEC) methods primarily rely on
   grammatical labels for syntactic information, often overlooking the inherent
@@ -296,7 +295,7 @@ constructions to capture underlying language patterns and guide corrections
 ## Oral (Main conference)
 
 ### Unique Hard Attention: A Tale of Two Sides
-Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
+. Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
 
 #### Abstract
 
@@ -323,8 +322,8 @@ Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell
 and counter automata.)
 
 ### [Using Information Theory to Characterize Prosodic Typology](https://aclanthology.org/2025.acl-long.1192/)
-The Case of Tone, Pitch-Accent and Stress-Accent
-Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
+. The Case of Tone, Pitch-Accent and Stress-Accent
+. Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
 
 * relationship between lexical identity and prosody can be
   characterized using information theory
@@ -340,7 +339,7 @@ Ethan Wilcox, Cui Ding, Giovanni Acampa, Tiago Pimentel, A Warstadt, TI Regev
   information is higher in these languages, supporting our hypothesis.  Our
 
 ### [Natural Language Processing RELIES on Linguistics](https://arxiv.org/abs/2405.05966)
-Juri Opitz, Shira Wein, Nathan Schneider
+. Juri Opitz, Shira Wein, Nathan Schneider
 
 * aspects in which NLP (still) relies on linguistics, or where
   linguistic thinking can illuminate new directions. We argue our case around
@@ -375,96 +374,96 @@ Juri Opitz, Shira Wein, Nathan Schneider
 ### Outstanding Papers
 
 * A New Formulation of **Zipf’s Meaning-Frequency Law** through Contextual Diversity
-Ryo Nagata, Kumiko Tanaka-Ishii
+. Ryo Nagata, Kumiko Tanaka-Ishii
 
 * All That Glitters is Not Novel: Plagiarism in AI Generated Research
-Tarun Gupta, Danish Pruthi
+. Tarun Gupta, Danish Pruthi
 
 * Between **Circuits and Chomsky:**
   Pre-pretraining on Formal Languages Imparts Linguistic Biases
-Michael Y. Hu, Jackson Petty, Chuan Shi, William Merrill, Tal Linzen
+. Michael Y. Hu, Jackson Petty, Chuan Shi, William Merrill, Tal Linzen
 
 * **Beyond N-Grams:** Rethinking Evaluation Metrics and Strategies
   for Multilingual Abstractive Summarization
-Itai Mondshine, Tzuf Paz-Argaman, Reut Tsarfaty
+. Itai Mondshine, Tzuf Paz-Argaman, Reut Tsarfaty
 
 * Bridging the Language Gaps in LLMs
   with Inference-Time Cross-Lingual Intervention
-Weixuan Wang, Minghao Wu, Barry Haddow, Alexandra Birch
+. Weixuan Wang, Minghao Wu, Barry Haddow, Alexandra Birch
 
 * **Byte Latent Transformer:** Patches Scale Better Than Tokens
-Artidoro Pagnoni, Ramakanth Pasunuru, Pedro Rodriguez, John Nguyen, Benjamin Muller, Margaret Li, Chunting Zhou, LILI YU, Jason E Weston, Luke Zettlemoyer, Gargi Ghosh, Mike Lewis, Ari Holtzman, Srini Iyer
+. Artidoro Pagnoni, Ramakanth Pasunuru, Pedro Rodriguez, John Nguyen, Benjamin Muller, Margaret Li, Chunting Zhou, LILI YU, Jason E Weston, Luke Zettlemoyer, Gargi Ghosh, Mike Lewis, Ari Holtzman, Srini Iyer
 
 * **Capability Salience Vector:** Fine-grained Alignment of Loss and Capabilities
   for Downstream Task Scaling Law
-Qiming Ge, Shuhao Xing, Songyang Gao, Yunhua Zhou, Yicheng Zou, Songyang Zhang, Zhi Chen, Hang Yan, Qi Zhang, Qipeng Guo, Kai Chen
+. Qiming Ge, Shuhao Xing, Songyang Gao, Yunhua Zhou, Yicheng Zou, Songyang Zhang, Zhi Chen, Hang Yan, Qi Zhang, Qipeng Guo, Kai Chen
 
 * From Real to Synthetic:
   Synthesizing Millions of Diversified and Complicated User Instructions
   with Attributed Grounding
-Chiwei Zhu, Benfeng Xu, Xiaorui Wang, Zhendong Mao
+. Chiwei Zhu, Benfeng Xu, Xiaorui Wang, Zhendong Mao
 
 * HALOGEN: Fantastic LLM Hallucinations and Where to Find Them
-Abhilasha Ravichander, Shrusti Ghela, David Wadden, Yejin Choi
+. Abhilasha Ravichander, Shrusti Ghela, David Wadden, Yejin Choi
 
 * **HateDay:**
   Insights from a Global Hate Speech Dataset Representative of a Day on Twitter
-Manuel Tonneau, Diyi Liu, Niyati Malhotra, Scott A. Hale, Samuel Fraiberger, Victor Orozco-Olvera, Paul Röttger
+. Manuel Tonneau, Diyi Liu, Niyati Malhotra, Scott A. Hale, Samuel Fraiberger, Victor Orozco-Olvera, Paul Röttger
 
 * IOT: **Embedding Standardization Method** Towards Zero Modality Gap
-Na Min An, Eunki Kim, James Thorne, Hyunjung Shim
+. Na Min An, Eunki Kim, James Thorne, Hyunjung Shim
 
 * IndicSynth: A Large-Scale Multilingual Synthetic Speech Dataset
   for Low-Resource Indian Languages
-Divya V Sharma, Vijval Ekbote, Anubha Gupta
+. Divya V Sharma, Vijval Ekbote, Anubha Gupta
 
 * LaTIM: Measuring **Latent Token-to-Token Interactions in Mamba Models**
-Hugo Pitorro, Marcos Vinicius Treviso
+. Hugo Pitorro, Marcos Vinicius Treviso
   * my short personal note at the poser: residual stream
 
 * Llama See, Llama Do:
   A Mechanistic Perspective on Contextual Entrainment and Distraction in LLMs
-Jingcheng Niu, Xingdi Yuan, Tong Wang, Hamidreza Saghir, Amir H. Abdi
+. Jingcheng Niu, Xingdi Yuan, Tong Wang, Hamidreza Saghir, Amir H. Abdi
 
 * LLMs know their vulnerabilities:
   Uncover Safety Gaps through Natural Distribution Shifts
-Qibing Ren, Hao Li, Dongrui Liu, Zhanxu Xie, Xiaoya Lu, Yu Qiao, Lei Sha, Junchi Yan, Lizhuang Ma, Jing Shao
+. Qibing Ren, Hao Li, Dongrui Liu, Zhanxu Xie, Xiaoya Lu, Yu Qiao, Lei Sha, Junchi Yan, Lizhuang Ma, Jing Shao
 
 * **Mapping 1,000+ Language Models via the Log-Likelihood Vector**
-Momose Oyama, Hiroaki Yamagiwa, Yusuke Takase, Hidetoshi Shimodaira
+. Momose Oyama, Hiroaki Yamagiwa, Yusuke Takase, Hidetoshi Shimodaira
 
 * MiniLongBench: The Low-cost Long Context Understanding Benchmark for LLMs
-Zhongzhan Huang, Guoming Ling, Shanshan Zhong, Hefeng Wu, Liang Lin
+. Zhongzhan Huang, Guoming Ling, Shanshan Zhong, Hefeng Wu, Liang Lin
 
 * PARME: Parallel Corpora for Low-Resourced Middle Eastern Languages
   Sina Ahmadi, Rico Sennrich, Erfan Karami, Ako Marani, Parviz Fekrazad, et al
 
 * Past Meets Present: Creating Historical Analogy with LLMs
-Nianqi Li, Siyu Yuan, Jiangjie Chen, Jiaqing Liang, Feng Wei, Zujie Liang, Deqing Yang, Yanghua Xiao
+. Nianqi Li, Siyu Yuan, Jiangjie Chen, Jiaqing Liang, Feng Wei, Zujie Liang, Deqing Yang, Yanghua Xiao
 
 * Pre³: Enabling Deterministic **Pushdown Automata**
   for Faster Structured LLM Generation
-Junyi Chen, Shihao Bai, Zaijun Wang, Siyu Wu, Chuheng Du, Hailong Yang, Ruihao Gong, Shengzhong Liu, Fan Wu, Guihai Chen
+. Junyi Chen, Shihao Bai, Zaijun Wang, Siyu Wu, Chuheng Du, Hailong Yang, Ruihao Gong, Shengzhong Liu, Fan Wu, Guihai Chen
 
 * Rethinking the Role of **Prompting** Strategies in LLM Test-Time Scaling:
   A Perspective of **Probability** Theory
-Yexiang Liu, Zekun Li, Zhi Fang, Nan Xu, Ran He, Tieniu Tan
+. Yexiang Liu, Zekun Li, Zhi Fang, Nan Xu, Ran He, Tieniu Tan
 
 * Revisiting Compositional Generalization Capability of LLMs
   Considering Instruction Following Ability
-Yusuke Sakai, Hidetaka Kamigaito, Taro Watanabe
+. Yusuke Sakai, Hidetaka Kamigaito, Taro Watanabe
 
 * Toward Automatic Discovery of a **Canine** Phonetic Alphabet
-Theron S. Wang, Xingyuan Li, Hridayesh Lekhak, Tuan Minh Dang, Mengyue Wu, Kenny Q. Zhu
+. Theron S. Wang, Xingyuan Li, Hridayesh Lekhak, Tuan Minh Dang, Mengyue Wu, Kenny Q. Zhu
 
 * Towards the Law of Capacity Gap in Distilling Language Models
-Chen Zhang, Qiuchi Li, Dawei Song, Zheyu Ye, Yan Gao, Yao Hu
+. Chen Zhang, Qiuchi Li, Dawei Song, Zheyu Ye, Yan Gao, Yao Hu
 
 * ...: Accelerating Inference of LLMs with **Token Recycling**
-Xianzhen Luo, Yixuan Wang, Qingfu Zhu, Zhiming Zhang, Xuanyu Zhang, Qing Yang, Dongliang Xu
+. Xianzhen Luo, Yixuan Wang, Qingfu Zhu, Zhiming Zhang, Xuanyu Zhang, Qing Yang, Dongliang Xu
 
 * Typology-Guided Adaptation for African NLP
-Ndapa Nakashole
+. Ndapa Nakashole
 
 ### Best Resource Paper
 
@@ -483,7 +482,7 @@ Ndapa Nakashole
 
 ### Best Demo: OLMoTrace. Tracing Language Model Outputs Back
 to Trillions of Training Tokens
-Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
+. Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
 
 * OLMoTrace finds and shows verbatim matches between segments of output and
   documents in the training text corpora.
@@ -518,7 +517,7 @@ Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, YenSung Chen, et al
 ### CoNLL day 1
 
 #### A Continuous Approach to Metaphorically Motivated Regular Polysemy in LMs
-Anna Temerko, Marcos Garcia, Pablo Gamallo
+. Anna Temerko, Marcos Garcia, Pablo Gamallo
 
 * a word’s polysemy structure is largely governed by systematic sense
   alternations that form overarching patterns across the vocabulary. While
@@ -544,7 +543,7 @@ Anna Temerko, Marcos Garcia, Pablo Gamallo
 
 #### [An Appraisal Theoretic Approach to Modelling Affect Flow](https://aclanthology.org/2025.conll-1.16/)
 in Conversation Corpora
-Alok Debnath, Yvette Graham, Owen Conlan
+. Alok Debnath, Yvette Graham, Owen Conlan
 
 * the multidimensional cognitive model of Appraisal Theory offers significant
   advantages for analyzing emotions in conversational contexts, addressing the
@@ -608,7 +607,7 @@ Alok Debnath, Yvette Graham, Owen Conlan
   * unanswered research questions
 
 #### BARTABSA++: Revisiting BARTABSA with Decoder LLMs
-Jan et al.
+. Jan et al.
 
 * We revisit the Bartabsa framework for aspect-based sentiment analysis with
   modern decoder LLMs to assess the importance of explicit structure modeling
@@ -622,7 +621,7 @@ Jan et al.
   explaining the limited benefits of scaling decoderonly LLMs for this task.
 
 #### Structure Modeling Approach for UD Parsing of Historical Modern Japanese
-Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
+. Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
 
 * The structure industry.
 * structure modeling for transferability in diachronic syntactic parsing. The
@@ -660,7 +659,7 @@ Hiroaki Ozaki, Mai Omura, Komiya Kanako, Masayuki Asahara, and Toshinobu Ogiso
     arXiv:2501.17047 [cs.CL]
 
 #### [Token-level semantic typology without a massively parallel corpus](https://aclanthology.org/2025.sigtyp-1.16/)
-Barend Beekhuizen
+. Barend Beekhuizen
 
 * massively parallel setting :-(
   * I have a rat. I know him well. He likes lettuce. He knows I have lettuce.
@@ -747,9 +746,9 @@ Barend Beekhuizen
 : Cross-Lingual Transferability of Backdoor Attacks in LLMs
 with Instruction Tuning
 
-Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp,+
+. Xuanli He, Jun Wang, Qiongkai Xu, Pasquale Minervini, Pontus Stenetorp,+
 
-The implications of backdoor attacks on English-centric large language models
+. The implications of backdoor attacks on English-centric large language models
 * embedding malicious behaviors during training and
 * activated under specific conditions that trigger malicious outputs. Despite
 * we focus on how poisoning the instruction-tuning data for one or two languages
@@ -770,7 +769,7 @@ The implications of backdoor attacks on English-centric large language models
 ### [Human-LLM Coevolution](https://arxiv.org/abs/2502.14718)
 : Evidence from Academic Writing
 
-Mingmeng Geng, Roberto Trotta
+. Mingmeng Geng, Roberto Trotta
 
 * statistical analysis of arXiv paper abstracts, we report a
 * marked drop in the frequency of several words previously identified as
@@ -784,9 +783,9 @@ Mingmeng Geng, Roberto Trotta
   * additional challenges to the detection of machine-generated text in
 
 ### [Testing English News Articles for Lexical Homogenization](https://arxiv.org/abs/2505.24731)
-Due to Widespread Use of LLMs
+. Due to Widespread Use of LLMs
 
-Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
+. Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
 
 * we compare two datasets of English online news articles:  2018 vs 2024
 * lexical homogenization measured by the MATTR, Maas, and MTLD metrics, and
@@ -797,7 +796,7 @@ Sarah Fitterer, Dominik Gangl, Jannes Ulbrich
 ### [A Semantic-Aware Layer-Freezing Approach](https://arxiv.org/abs/2406.11753)
 to Computation-Efficient Fine-Tuning of Language Models
 
-Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
+. Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
 
 * full finetuning is usually costly. Existing work, such as
 * we conduct a semantic analysis of the LM inference process.
@@ -814,7 +813,7 @@ Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
 ### [LLMs as Neurolinguistic Subjects](https://arxiv.org/abs/2411.07533)
 : Discrepancy between Performance and Competence
 
-Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonathan Brennan
+. Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonathan Brennan
 
 * psycholinguistic evaluations often reflect statistical rules that may not
   accurately represent LLMs' true linguistic competence. We introduce a
@@ -834,11 +833,11 @@ Linyang He, Ercong Nie, Helmut Schmid, Hinrich Schütze, Nima Mesgarani, Jonatha
 
 
 ### [On the Role of Semantic Proto-roles in Semantic Analysis](https://aclanthology.org/2025.findings-acl.623/)
-What do LLMs know about agency?
+. What do LLMs know about agency?
 
-Elizabeth Spaulding, Shafiuddin Rehan Ahmed, James Martin
+. Elizabeth Spaulding, Shafiuddin Rehan Ahmed, James Martin
 
-At the top of the poster:
+. At the top of the poster:
 
   Semantic role labeling and semantic proto-role labeling are
   highly complementary tasks, but
@@ -860,7 +859,7 @@ At the top of the poster:
 
 ### [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](https://arxiv.org/abs/2502.12953)
 
-Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
+. Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
 
 * We propose to adjust the masking ratio in MLM and to decide
   which tokens to mask?
@@ -876,9 +875,9 @@ Andrei Jarca, Florinel Alin Croitoru, Radu Tudor Ionescu
   tasks
 
 ### [EXECUTE: A Multilingual Benchmark for LLM Token Understanding](https://arxiv.org/abs/2505.17784)
-Lukas Edman, Helmut Schmid, Alexander Fraser
+. Lukas Edman, Helmut Schmid, Alexander Fraser
 
-A vörös poszter.
+. A vörös poszter.
 
 * The CUTE benchmark showed that
   LLMs struggle with character understanding in English.
@@ -892,7 +891,7 @@ A vörös poszter.
 : Efficient Corpus and Graph-Based Adaptation of Small Multilingual LMs
 for Low-Resource Languages
 
-Daniil Gurgurov, Ivan Vykopal, Josef van Genabith, Simon Ostermann
+. Daniil Gurgurov, Ivan Vykopal, Josef van Genabith, Simon Ostermann
 
 * SOTA LLMs still struggle with LRLs,
 * smaller multilingual models (mLMs) such as mBERT and XLM-R
@@ -922,7 +921,7 @@ Daniil Gurgurov, Ivan Vykopal, Josef van Genabith, Simon Ostermann
 
 ### [Minimal Pair-Based Evaluation of Code-Switching](https://arxiv.org/abs/2502.10140)
 
-Igor Sterner, Simone Teufel
+. Igor Sterner, Simone Teufel
 
 * Do large language models (LLMs) use code-switching (CS) in the same way as
   bilinguals. Existing methods do not have wide language coverage, fail to
@@ -938,9 +937,9 @@ Igor Sterner, Simone Teufel
   material consisted of closed-class words.
 
 ### [Global MMLU:](https://arxiv.org/abs/2412.03304) Understanding and
-Addressing Cultural and Linguistic Biases in Multilingual Evaluation
+. Addressing Cultural and Linguistic Biases in Multilingual Evaluation
 
-Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani,+
+. Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani,+
 
 * ? practical utility of translated datasets like MMLU.
 * translation often introduces artefacts that can distort the meaning or clarity
@@ -956,7 +955,7 @@ Shivalika Singh, Angelika Romanou, Clémentine Fourrier, David I. Adelani,+
 
 ### [Middle-Layer Representation Alignment](https://arxiv.org/abs/2412.03304)
 for Cross-Lingual Transfer in Fine-Tuned LLMs
-Danni Liu, Jan Niehues
+. Danni Liu, Jan Niehues
 
 github.com/dannigt/mid-align
 
@@ -973,7 +972,7 @@ github.com/dannigt/mid-align
 
 ### [TUMLU: A Unified and Native Language Understanding Benchmark for Turkic](https://aclanthology.org/2025.acl-long.1112/)
 
-Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova,+
+. Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova,+
 
 Én arról beszélgettem a szerzővel (már nem emlékszem, hogy ő emelte ki, vagy én
 ragadtam le ennél), hogy némelyik türk nyelvnél az van, hogy már a latin a
@@ -998,10 +997,10 @@ régi szkripten jobbak.
 
 ### [The Hidden Attention of Mamba Models](https://arxiv.org/abs/2403.01590)
 
-Ameen Ali, Itamar Zimerman, Lior Wolf
+. Ameen Ali, Itamar Zimerman, Lior Wolf
 
-Ficsor Tominak fényképeztem le, de nem örült neki, mert azt mondat, hogy a
-Mambában eleve van attention.
+. Ficsor Tominak fényképeztem le, de nem örült neki, mert azt mondat, hogy a
+. Mambában eleve van attention.
 
 * The Mamba _layer_ offers an efficient selective state space model (SSM) that
 * highly effective in modeling multiple domains, including NLP, long-range
@@ -1016,7 +1015,7 @@ Mambában eleve van attention.
 
 ### [Circuit Stability](https://arxiv.org/abs/2505.24731) Characterizes Language Model Generalization
 
-Alan Sun
+. Alan Sun
 
 * mechanistic interpretability
 * we introduce circuit /ˈsɝːkɪt/ stability as a new way to assess model performance.
@@ -1026,7 +1025,7 @@ Alan Sun
 ### [From Directions to Cones](https://arxiv.org/abs/2505.24731)
 : Exploring Multidimensional Representations of Propositional Facts in LLMs
 
-Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin,+
+. Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin,+
 
 * Prior work suggests that the truthfulness of simple propositions can be
   represented as a single linear direction in a model’s internal activations,
@@ -1058,7 +1057,7 @@ Stanley Yu*, Vaidehi Bulusu*, Oscar Yasunaga, Clayton Lau, Cole Blondin,+
 * not all neural methods leverage linguistic knowledge in intuitive ways
 
 ### [DenseLoRA: Dense Low-Rank Adaptation of LLMs](https://arxiv.org/abs/2505.24731)
-Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
+. Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
 
 * Low-rank adaptation (LoRA): fine-tuning two low-rank matrices
 * hE many of the weights in these matrices are redundant, leading to
@@ -1075,7 +1074,7 @@ Lin Mu, Xiaoyu Wang, Li Ni, Yang Li, Zhize Wu, Peiquan Jin, Yiwen Zhang
   components on overall model performance. Code is available at this https URL.
 
 ### [Culture Matters in Toxic Language Detection in Persian](https://www.arxiv.org/abs/2506.03458)
-Zahra Bokaei, Walid Magdy, Bonnie Webber
+. Zahra Bokaei, Walid Magdy, Bonnie Webber
 
 * we compare different methods for toxic language detection, including
   fine-tuning, data enrichment, zero-shot and few-shot learning, and
@@ -1087,7 +1086,7 @@ Zahra Bokaei, Walid Magdy, Bonnie Webber
   readers. These examples are included for the purpose of research
 
 ### [Can Community Notes Replace Professional Fact-Checkers?](https://arxiv.org/abs/2502.14132)
-Nadav Borenstein, Greta Warren, Desmond Elliott, Isabelle Augenstein
+. Nadav Borenstein, Greta Warren, Desmond Elliott, Isabelle Augenstein
 
 * Two strategies to combat misinformation on social media are
   * fact-checking by professional organisations and
@@ -1105,7 +1104,7 @@ Nadav Borenstein, Greta Warren, Desmond Elliott, Isabelle Augenstein
   * citizen and professional fact-checking are deeply intertwined
 
 ### [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](https://arxiv.org/abs/2505.05111)
-Boyi Deng, Yu Wan, Yidan Zhang, Baosong Yang, Fuli Feng
+. Boyi Deng, Yu Wan, Yidan Zhang, Baosong Yang, Fuli Feng
 
 * The mechanisms behind multilingual capabilities in LLMs have been examined
 * neuron-based or internal-activation-based methods.
@@ -1128,9 +1127,9 @@ Boyi Deng, Yu Wan, Yidan Zhang, Baosong Yang, Fuli Feng
 ### [ModerBERT](https://arxiv.org/abs/2412.13663) redifines encoders,
 with support for long-context & code, strong bechmarks, & sets an efficiency
 record
-Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder
+. Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder
 for Fast, Memory Efficient, and Long Context Finetuning and Inference
-Benjamin Warner, Antoine Chaffin, Benjamin Clavié, Orion Weller,+
+. Benjamin Warner, Antoine Chaffin, Benjamin Clavié, Orion Weller,+
 
 * Encoder-only transformer models such as BERT: a great perf-size tradeoff
   for retrieval and classification tasks
@@ -1145,7 +1144,7 @@ Benjamin Warner, Antoine Chaffin, Benjamin Clavié, Orion Weller,+
 * designed for inference on common GPUs.
 
 ### RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs
-Alan Saji, Jaavid Aktar Husain, Thanmay Jayakumar, Raj Dabre,+
+. Alan Saji, Jaavid Aktar Husain, Thanmay Jayakumar, Raj Dabre,+
 
 * we use mechanistic interpretability techniques, we analyze next-token
   generation and find that
@@ -1163,7 +1162,7 @@ Alan Saji, Jaavid Aktar Husain, Thanmay Jayakumar, Raj Dabre,+
   in the model's layers compared to native script. These insights contribute to
 
 ### Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations
-Xiao Zhang, Gosse Bouma, Johan Bos
+. Xiao Zhang, Gosse Bouma, Johan Bos
 
 * Egy workshopos fényképem forrását keresve találtam ezt a posztert.
 * open-domain neural semantics parsers show impressive performance.
@@ -1183,7 +1182,7 @@ Xiao Zhang, Gosse Bouma, Johan Bos
 
 ### Generative Pretrained Structured Transformers
 : Unsupervised Syntactic LMs at Scale
-Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
+. Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
 
 * A syntactic language model (SLM)
   incrementally generates a sentence with its syntactic tree in a left-to-right
@@ -1204,7 +1203,7 @@ Xiang Hu, Pengyu Ji, Qingyang Zhu, Wei Wu, Kewei Tu
     grammar induction, while holding a substantial acceleration on training.
 
 ### A Systematic Study of Compositional Syntactic Transformer Language Models
-Yida Zhao, Hao Xve, Xiang Hu, Kewei Tu
+. Yida Zhao, Hao Xve, Xiang Hu, Kewei Tu
 
 * Syntactic language models (SLMs) enhance Transformers by
   incorporating syntactic biases through the modeling of linearized syntactic
@@ -1219,8 +1218,8 @@ Yida Zhao, Hao Xve, Xiang Hu, Kewei Tu
   and inference efficiency.  Based on the experimental results, we make multiple
 
 ### Enhancing AMR Parsing with Group Relative Policy Optimization
-Botond Barta, Endre Hamerlik, Milán Nyist, Masato Ito, Judit Acs
-XLLM
+. Botond Barta, Endre Hamerlik, Milán Nyist, Masato Ito, Judit Acs
+. XLLM
 
 * We investig the openly available Llama 3.2 1B language model for AMR parsing
   * supervised fine-tuning, further enhanced by
@@ -1238,9 +1237,9 @@ XLLM
     across diverse linguistic phenomena.
 
 ---
-Tone in Perspective:
+. Tone in Perspective:
 ### A Computational Typological Analysis of Tone Function in ASR
-Siyu Liang, Gina-Anne Levow
+. Siyu Liang, Gina-Anne Levow
 
 * we investigate the impact of pitch flattening on automatic speech recognition
   across tonal and non-tonal languages.
