@@ -2,6 +2,7 @@
 
 ## Elöljáróban a tartalmibbtól a savanyú szőlő és a _small talk_ felé haladva
 
+* [Event Page](https://underline.io/events/485/) – Now Open to the Public
 * A jegyzet felépítése: 
   * az elején a mostani projektjeimhez kapcsolódó témák, majd 
     a konferencia részei időrendben, kivéve, hogy 
