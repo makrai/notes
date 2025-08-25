@@ -281,7 +281,7 @@ constructions to capture underlying language patterns and guide corrections
   * we hypothesize that RLVR must somehow be surfacing useful reasoning
     representations learned during pretraining
 
-### Verena Rieser: Whose Gold? Re-imagining Alignment for Truly Beneficial AI
+### Verena Rieser: [Whose Gold? Re-imagining Alignment for Truly Beneficial AI](https://underline.io/events/485/sessions/20291/lecture/125525-whose-goldquestion-re-imagining-alignment-for-truly-beneficial-ai)
 
 * Human feedback is often the "gold standard" for AI alignment, but what if
 * this "gold" reflects diverse, even contradictory human values? This keynote
