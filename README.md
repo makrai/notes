@@ -531,8 +531,8 @@ to Trillions of Training Tokens
   * ? models’ sensitivity to systematic sense alternations of polysemous words
   * how LLMs process ambiguity and
     to what extent they emulate representations in the human mind. For this,
-* we employ the measures of surprisal and semantic similarity as proxies of
-  human judgment on the acceptability of novel senses. We focus on
+* we employ the measures of surprisal and semantic similarity
+  as proxies of human judgment on the acceptability of novel senses
 * two aspects that have not received much attention previously:
   metaphorically motivated patterns and the continuous nature of regularity.  We
 * finding

@@ -8,8 +8,8 @@ BlackboxNLP 2019
 
 * Large pre-trained neural networks such as BERT have had great recent success
   * research investigating what aspects of language they are able to learn from
-    * model outputs (e.g., language model surprisal) or
-    * internal vector representations (e.g., probing classifiers)
+    * model outputs (eg language model surprisal) or
+    * internal vector representations (eg probing classifiers)
 * we propose methods for analyzing the attention mechanisms of pre-trained mods
   * patterns such as attending to delimiter tokens, specific positional
     offsets, or broadly attending over the whole sentence, with

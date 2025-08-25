@@ -18,8 +18,8 @@ ACL WS
     distinguish between a naturally occurring corpus sentence and its
     grammatical variants (expressing the same idea)
   * Our results indicate that our UID measures are not a significant factor in
-    predicting the corpus sentence in the presence of lexical surprisal, a
-    competing control predictor
+    predicting the corpus sentence
+    in the presence of lexical surprisal, a competing control predictor
   * in the light of other recent works, we conclude with a discussion of
     reasons for UID not being suitable for a theory of word order
 

@@ -1,8 +1,5 @@
-
 If beam search is the answer, what was the question?
-
 Clara Meister, Ryan Cotterell, Tim Vieira
-
 EMNLP 2020
 
 # Abstract
@@ -61,14 +58,15 @@ EMNLP 2020
   * Qualitative inspection reveals that our “beam search regularizer” has a
     clear connection to a theory in cognitive science—the uniform information
     density hypothesis (UID; Levy and Jaeger, 2007)
-  * The UID hypothesis states that—subject to the constraints of the grammar—
+  * UID hypothesis: —subject to the constraints of the grammar—
     humans prefer sentences that distribute information (in the sense of
     information theory) equally across the linguistic signal, eg a sentence.
-    * ie, human-produced text, regardless of language, tends to have evenly
-      distributed surprisal, formally defined in information theory as negative
-      log-probability => beam search has an interpretation as exact decoding,
-      but with a UID-promoting regularizer that encourages evenly distributed
-      surprisal in generated text
+  * ie, human-produced text, regardless of language, tends to have evenly
+    distributed surprisal
+  * surprisal in information theory := negative log-probability
+    => beam search has an interpretation as exact decoding, but
+    with a UID-promoting regularizer that
+    encourages evenly distributed surprisal in generated text
   * naturally leads to the development of several new regularizers that
     likewise enforce the UID property.
 * Empirically, we experiment with our novel regularizers in the decoding of NMT

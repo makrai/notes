@@ -58,8 +58,9 @@ ACL 2021 arXiv:2105.07144 [cs.CL]
 ## UID in modern NLP. In addition to the traditional line of psycholinguistic
 
 * more-recent studies on UID in the context of modern NLP
-* Rubino+ (2016) leverage information density encoded as surprisal\
-  at the word, part of speech, and syntax levels to help build a\
+* Rubino+ (2016) leverage
+  information density encoded as
+  surprisal at the word, part of speech, and syntax levels to help build a
   SOTA model for mixed-domain translationese detection
 * Jain+ (2018) incorporate UID measures across sentences\
   into models designed to detect natural versus manipulated text
