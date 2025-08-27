@@ -1,6 +1,7 @@
 The Interspeech 2025 Challenge on Speech Emotion Recognition in Natur Cond
 AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
   L Paola Garcia, N Dehak, B Sisman, C Busso
+Interspeech 2025
 
 # Abstract
 
@@ -23,6 +24,30 @@ AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
   * gender bias and variability across speaker demographics, which require more
 
 # 4. Observations and Findings
+
+classification
+
+| Team Name      | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
+|----------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
+| NTUA \[19]     | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
+| SAIL \[20]     | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
+| ABHINAYA \[21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
+| Voinosis \[22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
+| UNICAMP \[23]  | WavLM, Whisper, HuBERT     | RoBERTa, DeBERTa          | Weighted-CE, Rank | Batch Balancing | No         | 0.4094   |
+| NU \[24]       | Whisper, HuBERT            | RoBERTa, GPT-4            | CrossEntropy      | Weighted Loss   | No         | 0.4033   |
+| BSC-UPC \[25]  | Wav2Vec2, WavLM, Whisper   | RoBERTa, DeBERTa          | F1, Focal Loss    | Weighted Loss   | No         | 0.4006   |
+| SRPOL \[26]    | WavLM, Whisper             | RoBERTa                   | Weighted CE       | Weighted Loss   | No         | 0.3784   |
+
+dimensions
+
+| Team Name        | Speech Foundational Models | Other Foundational Models | Losses & Metrics | CCC Avg |
+|------------------|----------------------------|---------------------------|------------------|---------|
+| SAIL \[27]       | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
+| SRPOL \[26]      | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
+| SEU AIPLab \[28] | Wav2Vec2, Whisper, HuBERT  | no                        | 1-CCC            | 0.5955  |
+| Voinosis \[22]   | WavLM, Whisper, HuBERT     | BERT, T5                  | 1-CCC            | 0.5928  |
+| ABHINAYA \[21]   | WavLM, SALMONN-13B         | no                        | 1-CCC            | 0.5871  |
+
 
 * 93 research teams participated in the challenge, submitting
   * 166 entries to task 1 (categories) and 111 to task 2 (attributes)
@@ -103,8 +128,25 @@ AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
   * improvement
     * categorical emotion recognition and valence prediction shows significant
       improvement through ensemble methods, with valence reaching a CCC of 0.734
-      when combining the top five submis- sions. In contrast,
+      when combining the top five submissions. In contrast,
     * arousal and dominance prediction show minimal benefit from ensemble
 * The primary distinction between top submissions lies in their use of diverse
   text-based foundational models
   * ie valence prediction can be substantially improved through model diversity
+
+# Ref
+
+19. G. Chatzichristodoulou, D. Kosmopoulou, A. Kritikos, A. Poulopoulou,
+  E.  Georgiou, A. Katsamanis, V. Katsouros, and A. Potamianos, 
+  “Medusa: A multimodal deep fusion multi-stage training framework for SER natur
+  Interspeech 2025,
+20. T. Feng, T. Lertpetchpun, D. Byrd, and S. Narayanan, 
+  Developing a top-tier framework in naturalistic...: From speech foundation
+  models and learning objective to data augmentation and engineering choices
+  Interspeech 2025,
+27. T. Lertpetchpun, T. Feng, D. Byrd, and S. Narayanan
+  Developing a high-performance framework for...: emotional attribute prediction
+  Interspeech 2025
+26. B. Zgórzyński, J. Wójtowicz-Kruk, P. Masztalski, and W. Średniawa,
+  Multi-task learning for SER in naturalistic conditions
+  Interspeech 2025
