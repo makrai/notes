@@ -1,7 +1,7 @@
-  The Interspeech 2025 Challenge on Speech Emotion Recognition in Natur Cond
-  AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
-    L Paola Garcia, N Dehak, B Sisman, C Busso
-  Interspeech 2025
+    The Interspeech 2025 Challenge on Speech Emotion Recognition in Natur Cond
+    AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
+      L Paola Garcia, N Dehak, B Sisman, C Busso
+    Interspeech 2025
 
 # Abstract
 
