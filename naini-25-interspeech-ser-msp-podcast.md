@@ -1,7 +1,7 @@
-The Interspeech 2025 Challenge on Speech Emotion Recognition in Natur Cond
-AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
-  L Paola Garcia, N Dehak, B Sisman, C Busso
-Interspeech 2025
+  The Interspeech 2025 Challenge on Speech Emotion Recognition in Natur Cond
+  AR Naini, L Goncalves, A N. Salman, P Mote, I R. Ulgen, T Thebaud, LM Velazquez,
+    L Paola Garcia, N Dehak, B Sisman, C Busso
+  Interspeech 2025
 
 # Abstract
 
@@ -9,19 +9,18 @@ Interspeech 2025
   models to achieve robust SER systems. The competition
 * [website, with leaderboards, baseline code, and instructions](https://lab-msp.com/MSP-Podcast_Competition/IS2025/)
 * conclu
-  * class imbalance, particularly in categorical emotion recognition
+  * **class imbalance**, particularly in categorical emotion recognition
     * Despite the use of advanced loss functions
       eg focal loss and class-weighted cross-entropy, cls imb remains a chall
-  * predicting extreme values in emotional attributes
+  * predicting **extreme values in emotional attributes**
     eg very high arousal or very low dominance proved difficult, with
     most models gravitating toward mid-range values
-  * large multimodal models combining speech and text features
+  * **simpicity**: large multimodal models combining speech and text features
     * Teams that integrated multiple self-supervised learning models and
-      text-based foundational models faced high computational costs and complex
-      optimization strategies. The
-    * trade-off between model complexity and generalization remains a
-      significant hurdle
-  * gender bias and variability across speaker demographics, which require more
+      text-based foundational models faced
+      high computational costs and complex optimization strategies
+    * trade-off between model complexity and generalization remains
+  * **gender** bias and variability across speaker demographics require more
 
 # 4. Observations and Findings
 
