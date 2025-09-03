@@ -28,11 +28,10 @@ classification
 
 | Team Name     | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
 |---------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
-| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] | ⤵ | | | | | |
-| ↑             | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
+| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] | WavLM, Whisper, HuBERT | RoBERTa, ModernBERT | CrossEntropy, F1 | Soft Labels | Yes | 0.4316 |
 | [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20] | ⤵ | | | | | |
 | ↑             | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
-| ABHINAYA [21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
+| ABHINAYA [21] | WavLM, SALMONN | LLaMA-3 | [Focal Loss](https://github.com/itakurah/Focal-loss-PyTorch) | Weighted Loss | No | 0.4181 |
 | Voinosis [22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
 | UNICAMP [23]  | WavLM, Whisper, HuBERT     | RoBERTa, DeBERTa          | Weighted-CE, Rank | Batch Balancing | No         | 0.4094   |
 | NU [24]       | Whisper, HuBERT            | RoBERTa, GPT-4            | CrossEntropy      | Weighted Loss   | No         | 0.4033   |
