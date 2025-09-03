@@ -29,9 +29,9 @@ classification
 
 | Team Name     | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
 |---------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
-| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19]     
+| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] \
                 | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
-| [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20]     
+| [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20] \
                 | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
 | ABHINAYA [21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
 | Voinosis [22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
