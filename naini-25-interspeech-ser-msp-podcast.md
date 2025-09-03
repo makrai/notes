@@ -27,26 +27,30 @@ Interspeech 2025
 
 classification
 
-| Team Name      | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
-|----------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
-| NTUA \[19]     | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
-| SAIL \[20]     | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
-| ABHINAYA \[21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
-| Voinosis \[22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
-| UNICAMP \[23]  | WavLM, Whisper, HuBERT     | RoBERTa, DeBERTa          | Weighted-CE, Rank | Batch Balancing | No         | 0.4094   |
-| NU \[24]       | Whisper, HuBERT            | RoBERTa, GPT-4            | CrossEntropy      | Weighted Loss   | No         | 0.4033   |
-| BSC-UPC \[25]  | Wav2Vec2, WavLM, Whisper   | RoBERTa, DeBERTa          | F1, Focal Loss    | Weighted Loss   | No         | 0.4006   |
-| SRPOL \[26]    | WavLM, Whisper             | RoBERTa                   | Weighted CE       | Weighted Loss   | No         | 0.3784   |
+| Team Name     | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
+|---------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
+| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19]     
+                | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
+| [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20]     
+                | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
+| ABHINAYA [21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
+| Voinosis [22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
+| UNICAMP [23]  | WavLM, Whisper, HuBERT     | RoBERTa, DeBERTa          | Weighted-CE, Rank | Batch Balancing | No         | 0.4094   |
+| NU [24]       | Whisper, HuBERT            | RoBERTa, GPT-4            | CrossEntropy      | Weighted Loss   | No         | 0.4033   |
+| BSC-UPC [25]  | Wav2Vec2, WavLM, Whisper   | RoBERTa, DeBERTa          | F1, Focal Loss    | Weighted Loss   | No         | 0.4006   |
+| SRPOL [26]    | WavLM, Whisper             | RoBERTa                   | Weighted CE       | Weighted Loss   | No         | 0.3784   |
 
 dimensions
 
-| Team Name        | Speech Foundational Models | Other Foundational Models | Losses & Metrics | CCC Avg |
-|------------------|----------------------------|---------------------------|------------------|---------|
-| SAIL \[27]       | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
-| SRPOL \[26]      | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
-| SEU AIPLab \[28] | Wav2Vec2, Whisper, HuBERT  | no                        | 1-CCC            | 0.5955  |
-| Voinosis \[22]   | WavLM, Whisper, HuBERT     | BERT, T5                  | 1-CCC            | 0.5928  |
-| ABHINAYA \[21]   | WavLM, SALMONN-13B         | no                        | 1-CCC            | 0.5871  |
+| Team Name       | Speech Foundational Models | Other Foundational Models | Losses & Metrics | CCC Avg |
+|-----------------|----------------------------|---------------------------|------------------|---------|
+| [SAIL (dim)](/lertpetchpun-25-interspeech-ser-msp-dims-1nd.md) [27]       
+                  | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
+| [SRPOL](/zgorzynski-25-interspeech-ser-msp-dims-2nd.md) [26]      
+                  | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
+| SEU AIPLab [28] | Wav2Vec2, Whisper, HuBERT  | no                        | 1-CCC            | 0.5955  |
+| Voinosis [22]   | WavLM, Whisper, HuBERT     | BERT, T5                  | 1-CCC            | 0.5928  |
+| ABHINAYA [21]   | WavLM, SALMONN-13B         | no                        | 1-CCC            | 0.5871  |
 
 
 * 93 research teams participated in the challenge, submitting

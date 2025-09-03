@@ -2,7 +2,7 @@ SAILER: Developing a Top-tier Framework in Naturalistic Conditions Challenge for
   From Speech Foundation Models and Learning Objective to Data Augmentation and
   Engineering Choices
 Tiantian Feng, Thanathai Lertpetchpun, Dani Byrd, Shrikanth Narayanan
-Interspeech 2025 SER MSP Podcast Categ 2nd
+Interspeech 2025 [SER MSP Podcast](/naini-25-interspeech-ser-msp-podcast.md) Categ 2nd
 
 [model](https://github.com/tiantiaf0627/vox-profile-release)
 

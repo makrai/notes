@@ -1,6 +1,7 @@
 Medusa: A Multimodal Deep Fusion Multi-Stage Training Framework for SER Natural
 G Chatzichristodoulou, D Kosmopoulou, A Kritikos, A Poulopoulou, E Georgiou,
   A Katsamanis, V Katsouros, A Potamianos
+Interspeech 2025 [challange](/naini-25-interspeech-ser-msp-podcast.md)
 
 first place in Task 1 Interspeech 2025 SER MSP Podcast classification
 [code](https://github.com/emopodntua/medusa)
