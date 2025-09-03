@@ -31,8 +31,8 @@ classification
 |---------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
 | [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] | ⤵ | | | | | |
 | ↑             | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
-| [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20] | | | | | | |
-|               | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
+| [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20] | ⤵ | | | | | |
+| ↑             | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
 | ABHINAYA [21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
 | Voinosis [22] | WavLM, Whisper, HuBERT     | BERT, T5                  | CrossEntropy      | Class Weights   | No         | 0.4101   |
 | UNICAMP [23]  | WavLM, Whisper, HuBERT     | RoBERTa, DeBERTa          | Weighted-CE, Rank | Batch Balancing | No         | 0.4094   |
@@ -46,8 +46,8 @@ dimensions
 |-----------------|----------------------------|---------------------------|------------------|---------|
 | [SAIL (dim)](/lertpetchpun-25-interspeech-ser-msp-dims-1nd.md) [27] | ⤵ | | | | | |
 | ↑               | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
-| [SRPOL](/zgorzynski-25-interspeech-ser-msp-dims-2nd.md) [26]
-                  | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
+| [SRPOL](/zgorzynski-25-interspeech-ser-msp-dims-2nd.md) [26] | ⤵ | | | | | |
+| ↑               | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
 | SEU AIPLab [28] | Wav2Vec2, Whisper, HuBERT  | no                        | 1-CCC            | 0.5955  |
 | Voinosis [22]   | WavLM, Whisper, HuBERT     | BERT, T5                  | 1-CCC            | 0.5928  |
 | ABHINAYA [21]   | WavLM, SALMONN-13B         | no                        | 1-CCC            | 0.5871  |
