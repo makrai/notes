@@ -10,10 +10,10 @@ Interspeech 2025
 * [website, with leaderboards, baseline code, and instructions](https://lab-msp.com/MSP-Podcast_Competition/IS2025/)
 * conclu
   * class imbalance, particularly in categorical emotion recognition
-    * Despite the use of advanced loss functions 
+    * Despite the use of advanced loss functions
       eg focal loss and class-weighted cross-entropy, cls imb remains a chall
-  * predicting extreme values in emotional attributes 
-    eg very high arousal or very low dominance proved difficult, with 
+  * predicting extreme values in emotional attributes
+    eg very high arousal or very low dominance proved difficult, with
     most models gravitating toward mid-range values
   * large multimodal models combining speech and text features
     * Teams that integrated multiple self-supervised learning models and
@@ -29,8 +29,8 @@ classification
 
 | Team Name     | Speech Foundational Models | Other Foundational Models | Losses & Metrics  | Class Imbalance | Multi-Task | F1 Macro |
 |---------------|----------------------------|---------------------------|-------------------|-----------------|------------|----------|
-| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] | | | | | | |
-|               | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
+| [NTUA](/chatzichristodoulou-25-interspeech-ser-msp-classif-1st.md) [19] | ⤵ | | | | | |
+| ↑             | WavLM, Whisper, HuBERT     | RoBERTa, ModernBERT       | CrossEntropy, F1  | Soft Labels     | Yes        | 0.4316   |
 | [SAIL (cls)](/feng-25-interspeech-ser-msp-classif-2nd.md) [20] | | | | | | |
 |               | Whisper                    | RoBERTa                   | KLD Loss          | Data Aug        | Yes        | 0.4281   |
 | ABHINAYA [21] | WavLM, SALMONN             | LLaMA-3                   | Focal Loss        | Weighted Loss   | No         | 0.4181   |
@@ -44,9 +44,9 @@ dimensions
 
 | Team Name       | Speech Foundational Models | Other Foundational Models | Losses & Metrics | CCC Avg |
 |-----------------|----------------------------|---------------------------|------------------|---------|
-| [SAIL (dim)](/lertpetchpun-25-interspeech-ser-msp-dims-1nd.md) [27]       
-                  | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
-| [SRPOL](/zgorzynski-25-interspeech-ser-msp-dims-2nd.md) [26]      
+| [SAIL (dim)](/lertpetchpun-25-interspeech-ser-msp-dims-1nd.md) [27] | ⤵ | | | | | |
+| ↑               | WavLM, Whisper             | RoBERTa                   | 1-CCC            | 0.6076  |
+| [SRPOL](/zgorzynski-25-interspeech-ser-msp-dims-2nd.md) [26]
                   | WavLM, Whisper             | RoBERTa                   | BSE, MSE Losses  | 0.6003  |
 | SEU AIPLab [28] | Wav2Vec2, Whisper, HuBERT  | no                        | 1-CCC            | 0.5955  |
 | Voinosis [22]   | WavLM, Whisper, HuBERT     | BERT, T5                  | 1-CCC            | 0.5928  |
@@ -141,10 +141,10 @@ dimensions
 # Ref
 
 19. G. Chatzichristodoulou, D. Kosmopoulou, A. Kritikos, A. Poulopoulou,
-  E.  Georgiou, A. Katsamanis, V. Katsouros, and A. Potamianos, 
+  E.  Georgiou, A. Katsamanis, V. Katsouros, and A. Potamianos,
   “Medusa: A multimodal deep fusion multi-stage training framework for SER natur
   Interspeech 2025,
-20. T. Feng, T. Lertpetchpun, D. Byrd, and S. Narayanan, 
+20. T. Feng, T. Lertpetchpun, D. Byrd, and S. Narayanan,
   Developing a top-tier framework in naturalistic...: From speech foundation
   models and learning objective to data augmentation and engineering choices
   Interspeech 2025,
