@@ -1,7 +1,7 @@
-Developing a High-performance Framework for SER Naturalistic Conditions Chall
-  for Emotional Attribute Prediction
-Thanathai Lertpetchpun, Tiantian Feng, Dani Byrd, Shrikanth Narayanan
-Interspeech 2025 [challange](/naini-25-interspeech-ser-msp-podcast.md)
+    Developing a High-performance Framework for SER Naturalistic Conditions Chall
+      for Emotional Attribute Prediction
+    Thanathai Lertpetchpun, Tiantian Feng, Dani Byrd, Shrikanth Narayanan
+    Interspeech 2025 [challange](/naini-25-interspeech-ser-msp-podcast.md)
 
 [model](https://github.com/tiantiaf0627/vox-profile-release)
 

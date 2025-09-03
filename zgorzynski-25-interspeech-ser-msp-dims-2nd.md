@@ -1,6 +1,6 @@
-Multi-task learning for speech emotion recognition in naturalistic conditions
-Bartłomiej Zgórzyński, Juliusz Wójtowicz-Kruk, Piotr Masztalski, Władysław Średniawa
-Interspeech 2025 [challange](/naini-25-interspeech-ser-msp-podcast.md)
+    Multi-task learning for speech emotion recognition in naturalistic conditions
+    Bartłomiej Zgórzyński, Juliusz Wójtowicz-Kruk, Piotr Masztalski, Władysław Średniawa
+    Interspeech 2025 [challange](/naini-25-interspeech-ser-msp-podcast.md)
 
 * a multi-encoder joint classification and regression training framework for
 * a multi-modal, multi-encoder architecture with a fusion module. 
