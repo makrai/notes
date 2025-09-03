@@ -50,11 +50,11 @@ dimensions
 
 * 93 research teams participated in the challenge, submitting
   * 166 entries to task 1 (categories) and 111 to task 2 (attributes)
-  * > baseline
-    * 28 teams submitted classification results for task 1 that were better than
-    * 10 teams submitted predictions for task 2 that were better than the cor-
+  * $>$ baseline
+    * 28 teams submitted classification results for task 1 that were better
+    * 10 teams submitted predictions for task 2 that were better
 * This section: information provided by the teams that
-  outperformed the baselines of the corresponding tasks and responded to our
+  outperformed the baselines of the corresponding tasks and responded to us
   (17 for task 1, 8 for task 2)
   * focuses on the categorical task, given that
   * similar architecture choices were used for the attribute prediction task
@@ -64,15 +64,14 @@ dimensions
   * speech encoding, WavLM [17] (70%) and Whisper [31] (47%) were the most
   * RoBERTa [32] (53%) and LLaMA (24%) were frequently used for text-based
   * advanced foundational models such as LLaMA-3 [33] (24%), GPT-4 [34] (18%),
-    and ModernBERT [35] (5%), underscoring the growing trend of leveraging
+    and ModernBERT [35] (5%), underscoring the growing trend
   * **cross-modal attention** mechanisms to better integrate speech and text
     * UNICAMP team extended conventional architectures by combining audio, text,
       and paralinguistic features through cross-attention blocks, enabling
     * ABHINAYA explored fine-tuning SALMONN [36] for SER tasks and combined it
       with speech-text fusion using LLaMA-3 [33] to boost accuracy
-* **ensemble:** Ensemble learning emerged as a key strategy for improving (95%)
-  * NTUA team achieved high performance by employing an ensemble of 14 indepen-
-    dently trained fusion models
+* **ensemble:** Ensemble learning emerged as a key strategy for improvment (95%)
+  * NTUA team achieved high performance by employing an ensemble of 14 independently trained fusion models
     * deep hierarchical fusion
   * UNICAMP trained a fivefold stratified RandomForest meta-model on the logits
     from multiple architectures for more robust predictions
