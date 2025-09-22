@@ -1,6 +1,6 @@
 # ACL 2025 Wien
 
-## Elöljáróban a tartalmibbtól a savanyú szőlő és a _small talk_ felé haladva
+## Elöljáróban a tartalmibbtól a savanyú szőlő és a _small talk_ felé
 
 * [Event Page](https://underline.io/events/485/) – Now Open to the Public
 * A jegyzet felépítése: 
@@ -177,7 +177,7 @@ az eltérő annotációk modellezéséről.
   computational efficiency
 * case studies in mental health and empirical phenomenology
 
-### Surprisal (see [CoNLL](/README.md#conll-day-1)) as well)
+### Surprisal (see [CoNLL](/README.md#conll-day-1) as well)
 
 #### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
@@ -574,7 +574,7 @@ in Conversation Corpora
   * goal was to develop a computational model that implemented the ling theory.
   * impractical for scientific and sociological reasons that I’ll describe, and
 * the huge training data and long context windows of Deep Learning models
-  ~> unnecessary to incorporate any specific linguistically-inspired parsing
+  $\rightarrow$ unnecessary to incorporate any specific linguistically-inspired parsing
   architecture into such models
 * there are deep scientific questions about how LLMs “understand” human langs,
   their linguistic ability is sufficiently good for most practical tasks
@@ -643,7 +643,7 @@ in Conversation Corpora
 
 #### Lisa Bylinina's Keynote
 
-* NLP ~> language theory
+* NLP $\rightarrow$ language theory
   * [Modern language models refute Chomsky’s approach to language](https://lingbuzz.net/lingbuzz/007180).
     Steven T. Piantadosi a,b
     in Edward Gibson & Moshe Poliak (eds.), From fieldwork to linguistic theory
