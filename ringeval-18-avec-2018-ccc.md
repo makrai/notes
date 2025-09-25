@@ -20,7 +20,7 @@ AVEC’18 International Workshop on Audio/Visual Emotion Challenge
   and performance is the total Concordance Correlation Coefficient (CCC) [45,
   83] averaged over the dimensions.
 ...
-* CCC is preferred over the Pearson’s Correlation Coefficient (PCC), because it
+* CCC is preferred over the Pearson’s Correlation Coefficient (PCC), because
   * sensitive to bias and scaling, and 
     permit discriminative training when used as cost function [83]
     [83] Felix Weninger, Fabien Ringeval, Erik Marchi, and Björn Schuller. 2016.
