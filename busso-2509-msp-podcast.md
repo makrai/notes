@@ -8,16 +8,25 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
 * MSP-Podcast corpus, summarizing our ten-year effort. The corpus consists of
 * 400 hours of diverse audio samples from various audio-sharing websites, all
   * Common Licenses that permit the distribution of the corpus. We annotate
-* labels, including 
-  * primary (single dominant emotion) and 
+* labels, including
+  * primary (single dominant emotion) and
   * secondary (multiple emotions perceived in the audio) emotional categories,
-  * emotional attributes for valence, arousal, and dominance. 
+  * emotional attributes for valence, arousal, and dominance.
   * $\ge$ five raters annotate these emotional labels. The corpus also has
-  * speaker identification for most samples, and 
+  * speaker identification for most samples, and
   * human transcriptions of the lexical content of the sentences for the
 * The data collection protocol includes a machine learning-driven pipeline for
   selecting emotionally diverse recordings, ensuring a balanced and varied
   representation of emotions across speakers and environments. The resulting
+
+# I Intro
+
+* We employed enhanced machine learning models trained on larger corpora to
+  identify segments exhibiting specific emotional categories and values for
+  the attributes of
+  valence (negative versus positive),
+  arousal (calm versus active), and
+  dominance (weak versus strong).
 
 | Corpus                              | Size | #spk | Size    | #Spkr   | Type               | Language           |
 |-------------------------------------|------|------|--------:|---------|--------------------|--------------------|
@@ -56,17 +65,17 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
 * class imbalance observed with each split is proportionally consistent with
   the class distribution across the whole dataset,
   except for test 2 and test 3, as explained later in this section. A key
-  * three test sets, which have different characteristics. The 
+  * three test sets, which have different characteristics. The
   * test 1 set has approximately 17.2% of the corpus collected from 465
     speakers (Table VI).
     * Table III shows inter-evaluator agreements very similar to entire corpus.
   * test 2 set was collected without the retrieval-based protocol presented in
     * An early feedback we received:
-      machine learning models may bias the selection of speaking turns. 
-      We mitigate this issue by utilizing 
+      machine learning models may bias the selection of speaking turns.
+      We mitigate this issue by utilizing
       over 48 criteria based on different SER formulations, trained on
-      different databases, features, and modalities, as 
-      * explained in Section III-C. In response to this problem, 
+      different databases, features, and modalities, as
+      * explained in Section III-C. In response to this problem,
       * we also created the test 2 set. We
     * 117 podcasts for this set, annotating all the speaking turns that
       satisfy our requirements, except the emotion retrieval step (Figure 1).
@@ -74,9 +83,9 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
     * 112 known speakers. An observation from this set in Table III is the
     * lower inter-evaluator agreement compared to other partitions
       since neutral speech tends to be more uncertain [91].
-  * test 3 set comprises 3,200 speaking turns, with a 
+  * test 3 set comprises 3,200 speaking turns, with a
     * balanced representation based on primary categorical emotions (Tab VI).
-    * 428 speakers. We are 
+    * 428 speakers. We are
     * not releasing the emotional labels, transcriptions, or speaker info
     * Early versions of this test set were successfully used for SER challs
       (Odyssey 2024 [60] and Interspeech 2025 [84]).  We have developed a
@@ -88,8 +97,8 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
   * The development set has 12.9% of the corpus (Table VI), and its purpose is
     * 704 speakers, which are not included in either the test sets or the train
   * training set includes recordings of the remaining 2,220 speakers and the
-    speaking turns with unknown speakers. The partitions 
-    * aim to be speaker-independent, although 
+    speaking turns with unknown speakers. The partitions
+    * aim to be speaker-independent, although
     * some unknown speakers in the training set may overlap with dev or test
   * there is speaker overlap between test sets (e.g., data from some speakers
     are included in both test 1 and test 2 sets).
@@ -97,14 +106,14 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
 # VI. Baseline
 
 * pre-trained SSL models built on WavLM [92], Wav2vec 2.0 [93], or HuBERT
-  [94]. These models contain 
+  [94]. These models contain
   * 24 transformer layers and are comprised of ∼310M parameters. We utilized
     the pre-trained off-the-shelf models from Hugging Face [48]. As evidenced
     in previous studies [55], [57], [60], [95], [96], fine-tuning pre-trained
     SSL models for SER can lead to a significant performance boost. For
 * categorical emotion recognition, we fine-tuned the models on eight emotion
   classes using focal loss, with a simple two-layer fully connected head. For
-* attribute prediction, we adopted a staged fine-tuning strategy: 
+* attribute prediction, we adopted a staged fine-tuning strategy:
   * first, adapting SSL models using concordance correlation coefficient (CCC)
     loss to predict valence, arousal, and dominance, and
   * then jointly training with categorical classification using focal loss.
@@ -117,9 +126,9 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
   previous MSP-Podcast v1.12 release, highlighting the benefit of expanding
   the training set and removing low-agreement labels
   * on SERB [84], these refinements translated into ∼8% relative gains over
-    the earlier baselines. 
+    the earlier baselines.
   * WavLM generally outperformed both wav2vec2 and HuBERT
-    in both categorical and attribute tasks. The 
+    in both categorical and attribute tasks. The
 
 * Table VII. Baseline perf. for categorical emotion recognition and emo attrib
 
@@ -142,19 +151,19 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
 ## A. Perception of Emotions
 
 With 1,446,224 annotations from 13,278 workers, this corpus is well-suited for
-studying human emotion perception. 
-* We are releasing all individual annotations, along with the 
+studying human emotion perception.
+* We are releasing all individual annotations, along with the
   timestamps indicating when each annotation was completed. This information
 * allows eg investigation of the priming effect [97], [98] The sequential
-* can also support preference learning strategies, where 
+* can also support preference learning strategies, where
   direct comparisons are used to establish relative labels (e.g., one speaking
   turn is more positive than another) [99].
 
 ## B. Robustness to Environments
 
-* speech models that are robust to multiple environments. 
-* MSP provides a perfect resource for evaluating 
-* We highlight two prominent efforts in this area. 
+* speech models that are robust to multiple environments.
+* MSP provides a perfect resource for evaluating
+* We highlight two prominent efforts in this area.
 * Leem+ [61] recorded an early version of the MSP-Podcast corpus by playing
   the speaking turns and radio noise in a single-walled sound booth (release
   1.8). The microphone and the speaker were strategically placed at different
@@ -170,14 +179,14 @@ studying human emotion perception.
 
 * how emotion affects eg speaker verification and speaker recog [77]–[81] To
 * we collected multiple podcast episodes from the same speakers whenever
-  possible. 
+  possible.
 * Speaker verification evaluations are often conducted across sessions
   collected on different days under different conditions.
   * Different episodes are often collected on different days, which approaches
 * speaker verification tasks require an enrollment set to build the models.
 * text-to-speech (TTS) requires enough data to build a speaker model.
 * Fig. 15. Cumulative distribution of speakers
-  with increasing recording duration. The bars show 
+  with increasing recording duration. The bars show
   * the number of male, female, and total speakers who have more than a given
 * ideal for voice conversion (VC) and TTS tasks [82], [83].
 
@@ -185,13 +194,13 @@ studying human emotion perception.
 
 * secondary emotion labels, where annotators select all emotions they perceive
 * We have shown the value of secondary emotions by using them as auxiliary
-  tasks in 
-  classification problems [105], and in 
+  tasks in
+  classification problems [105], and in
   retrieval tasks aimed at finding recordings with emotions similar to a
-  reference (anchor) sample [106], [107]. 
+  reference (anchor) sample [106], [107].
 * the annotation protocol allows evaluators to provide their own labels for
   both primary and secondary emotions when none of the predefined options are
-  appropriate. 
+  appropriate.
 * Chou+ [108] transformed these free-text labels into polarity vectors
   (negative, positive, ambiguous) using LIWC [109]. These examples showcase
 
@@ -201,16 +210,16 @@ studying human emotion perception.
   affective naturalistic database consortium [AndC](http://andc.ai/)
   * aims to provide all the tools used to collect the MSP-Podcast corpus to
     other researchers, enabling them to create new databases and expand the
-    infrastructure for affective computing. 
+    infrastructure for affective computing.
 * We have partnered with collaborators from the National Tsing Hua University
   in Taiwan to test this initiative.
   They followed the code and protocol used for our corpus. The result of this
-  effort is 
+  effort is
   the BIIC-Podcast corpus [15], with recordings in Taiwanese Mandarin. Another
 * eg2 the White House tapes speech emotion recognition (WHiSER) corpus [32].
   Using a variation of the proposed protocol, we annotated the emotions of
   ambient recordings from the Oval Office during the presidency of Richard
-  Nixon. This set provides a perfect test set for SER models in 
+  Nixon. This set provides a perfect test set for SER models in
   * challenging recording conditions (distant speech, low-quality microphones,
     noisy environment). We expect that this consortium will encourage the
     creation of new resources.
