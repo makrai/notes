@@ -6,9 +6,9 @@ ACL 2025
   significant advantages for analyzing emotions in conversational contexts,
   addressing the current challenges of inconsistent annotation methodologies
 * we present AppraisePLM,
-  a regression and classification model trained on the crowd-EnVent corpus that
-  outperforms existing models in predicting 21 appraisal dimensions
-  including pleasantness, self-control, and alignment with social norms
+  * a regression and classification model trained on the crowd-EnVent corpus
+  * outperforms existing models in predicting 21 appraisal dimensions
+    * including pleasantness, self-control, and alignment with social norms
 * We apply AppraisePLM to diverse conversation datasets spanning
   task-oriented dialogues, general-domain chit-chat,
   affect-specific conversations, and domain-specific affect analysis
@@ -27,42 +27,43 @@ ACL 2025
   (Busso+ 2008; Ma+ 2020; Karna+ 2020). While affect-annotated
 * datasets exist across general and specialized domains,
 * inconsistencies in annotation schemas and objectives (Liu+ 2021; Islam+ 2022)
-  * variations in annotation methodologies, including differences in unit-level
-    labelling (e.g., turn-wise versus full-conversation annotations) and
-    dataset construction depending on the domain (Liu+ 2024). Moreover,
+  * variations in annotation methodologies, including differences
+  * unit level (eg turn-wise versus full-conversation annotations) and
+  * dataset construction depending on the domain (Liu+ 2024)
 * evaluation metrics for contextual affect interactions remain limited, coercing
-  a generalization of findings across datasets. Many
+  a generalization of findings across datasets
 * domain-specific models, such as diff-Epitome (Lee+ 2022), are trained within
-  a specific domain but later applied broadly, highlighting the need for
-  standardized affect evaluation (Schaaff+ 2023). A generalizable framework for
-  modelling affect in conversations could address these challenges, ensuring
-  more consistent benchmarking for conversational agents
-* we Appraisal Theory provides a generalizable framework. Appraisal
+  a specific domain but later applied broadly, highlighting the
+  * need for standardized affect evaluation (Schaaff+ 2023).
+  * A generalizable framework for modelling affect in conversations could
+    address these challenges, ensuring more consistent benchmarking for
+    conversational agents
+* we: Appraisal Theory provides a generalizable framework
   * emotions as responses to an individual’s evaluation of a stimulus along
     multiple cognitive dimensions (Ellsworth and Smith, 1988; Scherer, 2005)
   * eg anger can be characterized as an unpleasant, short-lived emotion with low
-    self-control (Roseman and Smith, 2001). Such an approach not only
-  * allows for the modelling of emotional intensity and duration but also
-    enables the analysis of affect flow, or how emotions evolve throughout a
-    conversation (Hendriks+ 2014; Poria+ 2019b)
-  * hypothesize that:
-    1. appraisal-theoretic emotion analysis aligns with existing emotion
-       annotations; and that
-    2. such a cognitive analysis captures affect flow: emotion change over the
-       course of a conversation
-  * introduces AppraisePLM, a model for appraisal regression and emo classif
-    * trained on the crowd-E N V ENT corpus. Crowd-E N VENT is
+    self-control (Roseman and Smith, 2001)
+  * allows for the modelling of emotional intensity and duration
+  * enables the analysis of affect flow, or
+    how emotions evolve throughout a conversation (Hendriks+ 2014; Poria+ 2019b)
+  * hypoth
+    1. appraisal-theoretic emotion analysis
+      aligns with existing emotion annotations
+    2. such a cognitive analysis captures affect flow:
+      ie emotion change over the course of a conversation
+  * we introduce AppraisePLM, a model for appraisal regression and emo classif
+    * trained on the crowd-ENVent corpus. Crowd-ENVent is
       * a benchmark emotion recognition and appraisal analysis corpus which
       * fine-grained annotations of event descriptions on 21 appraisal dims
-        eg pleas-antness, self-control, and suddenness (Troiano+ 2023)
+        eg plea-antness, self-control, and suddenness (Troiano+ 2023)
 * AppraisePLM outperforms existing classifiers and regressors on this dataset
 * turn-wise appraisal annotation across four benchmark conversation corpora:
-  EmoWOZ (Feng+ 2022), E MPATHETIC D IALOGUES (Rashkin+ 2019), DailyDialog (Li+
-  2017), and E P TIOME (Sharma+ 2020). Our results show that
-  * AppraisePLM improves appraisal estimation performance on the crowd-E N V ENT
+  EmoWOZ (Feng+ 2022), Empathetic Dialogues (Rashkin+ 2019),
+  DailyDialog (Li+ 2017), and EPTiome (Sharma+ 2020). Our results show that
+  * AppraisePLM improves appraisal estimation performance on the crowd-ENVent
     corpus and can extrapolate categorical and emotion labels
 * corpus domain influences affect flow, with distinct patterns emerging in
-  specific domains (e.g., empathetic conversations improving pleasantness)
+  specific domains (eg empathetic conversations improving pleasantness)
 
 # 2 Background and Motivation
 
@@ -155,9 +156,9 @@ ACL 2025
     future should determine which of these dimensions are most applicable
     * power amplification of differences between values
       we use to identify interaction trends, which
-      could be critiqued as potentially highlighting insignificant variations. A
-* corpus: future may development and use conversationally defined and annotated
-  corpora based on appraisal theory, given its relationship to and generality of
-  emotion categorization systems
+      could be critiqued as potentially highlighting insignificant variations
+* future: conversationally defined and annotated corpora based on appraisal
+  theory, given its relationship to and generality of emotion categorization
+  systems
 * longitudinal data will allow observing
   how appraisal patterns might change over time in ongoing human-machine

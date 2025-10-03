@@ -28,6 +28,12 @@ baseline: https://huggingface.co/3loi
 * attribute prediction (task 2): we use a single task setup, where we train
   a separate regression model for arousal, valence, and dominance
   * loss on emotional attribs: concordance correlation coefficient (CCC, eq 2)
+                                  2 ρ σx σy
+                                      /
+                          σx^2 + σy^2 + (µx − µy)^2
+
+  A corr def-je miatt a nevező egyenlő 2 cov-val, de a fenti számítás
+  gyorsabb, ld. `astrospeech/msp/podcast/util.py`
   * measures the agreement between the true and predicted emo attribute scores
   * Our model’s training objective is to optimize the CCC, aiming to achieve a
     high correlation between predicted and actual scores
