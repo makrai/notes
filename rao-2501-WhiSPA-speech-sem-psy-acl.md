@@ -3,6 +3,8 @@ Rajath Rao, A Ganesan, O Kjell, J Luby, A Raghavan, S Feltman, W Ringwald,
   RL Boyd, B Luft, C Ruggero, N Ryant, R Kotov, HA Schwartz 
 ACL 2025 arXiv:2501.16344 [eess.AS]
 
+Personal comm: jövőre lesz elérhető a korpusz
+
 TL;DR: a speech encoder which streamlines the pipeline and exhibits similar
 performance to a text-based LM
 
