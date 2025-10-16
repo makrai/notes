@@ -55,8 +55,7 @@ with Self-Supervised Contrastive and Student-Teacher Learning
     personality.
 * eval: self-supervised affective tasks and downstream psychological tasks,
   * WhiSPA surpasses current speech encoders, achieving an
-    average error
-    reduction of 73.4% and 83.8%, respectively. WhiSPA demonstrates that it is
+    average error reduction of 73.4% and 83.8%, respectively
 
 #### [Mapping the Podcast Ecosystem](https://arxiv.org/abs/2411.07892)
 with the Structured Podcast Research Corpus
