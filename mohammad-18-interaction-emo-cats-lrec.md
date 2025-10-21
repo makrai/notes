@@ -28,7 +28,7 @@ LREC 2018
 
 * 11,000 tweets such that overlapping subsets are annotated for a number of
   emotion dimensions (from both the basic emotion model and the VAD model)
-* Subsequently, Spanish and Arabic tweet datasets were also created
+* Spanish and Arabic tweet datasets were also created subsequently,
   following the methodology described here (Mohammad+, 2018)
 * We calculated the extent to which
   * pairs of emotions co-occur in tweets

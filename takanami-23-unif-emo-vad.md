@@ -4,7 +4,7 @@ Conference on Language, Data and Knowledge 2023
 
 # Abstract
 
-* This paper presents a novel approach to unifying various emotional datasets
+* we present a novel approach to unifying various emotional datasets
   using the Valence Arousal Dominance (VAD) framework
 * Emotion analysis lacks large, standard, and unified datasets
 * we map diverse emotions from different datasets into four categories:
@@ -12,8 +12,8 @@ Conference on Language, Data and Knowledge 2023
   * This process creates multidimensional emotional scores that are consistent
     across datasets, regardless of the number of emotions included
 * we address “weak emotions” by annotating such instances with a neutral VAD
-  * Sentences that contain conflicting emotions or those that do not exhibit a
-    clear or strong emotional response are referred to as weak emotion sents
+  * Sentences that contain conflicting emotions or those that do
+    not exhibit a clear or strong emotional response are referred to as weak emo
   * VAD can detect and provide a more nuanced label by assigning a score range
 * we train a BERT model on the combined data and
   improve the performance of emotion detection
@@ -83,12 +83,12 @@ Conference on Language, Data and Knowledge 2023
 * SemEval-2018 and SSEC are annotated with multiple categ emos in 1 sentence,
   => we average the VAD values of the emotions to obtain the overall VAD value
   of that sentence before BERT model training
-* To account for neutral, we set the intermediate value in VAD space, 500, for
-  sentences without any labels
+* neutral: we set the intermediate value in VAD space, 500, for 
+* sentences without any labels
   * as we demonstrate later in Experiment 2 (Section 5.2)
 * For the EmoBank dataset, the VAD values range between 1 and 5 points
   != our VAD scale -> we scaled it
-* text: removing mentions and URLs, as they are considered unrelated to
+* text: removing mentions and URLs, as they are considered unrelated to emos
 
 # Experiments
 

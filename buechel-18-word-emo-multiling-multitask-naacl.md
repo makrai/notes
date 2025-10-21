@@ -2,19 +2,17 @@ Word emotion induction for multiple languages as deep multi-task learning
 S Buechel, U Hahn
 NAACL 2018
 
-code base + resulting experimental data is freely available
-https://github.com/JULIELab/wordEmotions
+code base + resulting experimental data: https://github.com/JULIELab/wordEmotions
 
-# joemzhao/ultradensifier says
+# joemzhao/ultradensifier says in the context of  the Orthogonal Constraint
 
-https://github.com/joemzhao/ultradensifier says: *Orthogonal Constraint*:
-> Buechel+ 2018 reports that enforcing the orthogonal constraint introduces no
-> difference on performance. Similar observations occur in this implementation
-> * Releasing the orthogonal constraint means we now can touch the norm of `Q`
->   so probably we need to regularize the `l2` norm of `PQ` such that the loss
->   does not go to `-\infty`. Again, no improvements are observed in this case
-> * The orthorgonal constraint probably is not significantly helpful when
->   the evaluation metric is ranking based
+* Buechel+ (2018) reports that enforcing the orthogonal constraint introduces no
+  difference on performance. Similar observations occur in this implementation
+  * Releasing the orthogonal constraint means we now can touch the norm of `Q`
+    so probably we need to regularize the `l2` norm of `PQ` such that the loss
+    does not go to `-\infty`. Again, no improvements are observed in this case
+  * The orthorgonal constraint probably is not significantly helpful when the
+    evaluation metric is ranking based
 
 # Abstract
 

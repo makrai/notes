@@ -1,15 +1,19 @@
+A méret a lényeg? Morfológiailag annotált korpuszok összehasonlító kiértékelése
+Dömötör Andrea, Indig Balázs, Nemeskey Dávid Márk
+MSZNY 2025
+
 # Abstract
 
-* A korpuszok legjellemzőbb tulajdonsága: a méretük, az annotációk minőségét
+* A korpuszok legjellemzőbb tulajdonsága: a méretük, az annotációk minősége
   * Minőség alatt elsősorban konzisztenciát értünk: azt mérjük, hogyan teljesít
     a korpusz egy részén betanított modell a korpusz egy másik részén.
 * ELTE DH gold standard korpusz, NYTK-NerKor, Szeged Treebank) vizsgáltuk, hogy
   * mekkora az elég nagy korpusz?
 * standard címkekészleteket követnek, kézenfekvőnek tűnt a kombinálásukkal is
   kísérletezni, így ugyanis a nagyobb méret mellett nagyobb műfaji
-  változatosságot is elérhetünk. Eredményeink szerint 
+  változatosságot is elérhetünk. Eredményeink szerint
 * result
-  * nem a korpuszok mérete a volt döntő szempont a teljesítményben, 
+  * nem a korpuszok mérete a volt döntő szempont a teljesítményben,
   * a korpuszok vegyítése pedig még rontott is az eredményeken
     az annotációs sémák eltérő értelmezései miatt.
 * az Összegzésből: future
@@ -20,7 +24,7 @@
     megőrizzék az "egyéniségüket", aminek az emMorph elemzési réteg jó tere
     lehet.
 
-# 1 
+# 1
 
 * különböző korpuszok együttes használatának lehetősége is. Ez korábban a
   * névelem-felismerésben jól működő módszer (Simon és mtsai, 2022), így a
@@ -50,19 +54,19 @@
   * előfordulhatnak (és elő is fordulnak) egy korpuszon belül is, Wisniewski és
     * az eltérő annotációk aránya minden esetben nagyobb volt, ha a korpuszt
       egy másik korpusszal hasonlították össze, mint ha saját magával. A
-  * egy másik kísérletet is végeztek a szerzők. Ebben egy 
+  * egy másik kísérletet is végeztek a szerzők. Ebben egy
     * bináris osztályozót tanítottak be, amelynek az volt a feladata, hogy
       eldöntse egy mondatról, hogy két korpusz közül melyikhez tartozik.
       Intuitív feltételezés szerint minél nagyobb lesz ennek az osztályozónak a
       hibaaránya, annál hasonlóbb a két korpusz. Az osztályozót betanították
     * csak szavakra, csak POS-tagekre és szó + POS-tag kombinációkra is. A
-    * legsikeresebb osztályozást ez utóbbinál érték el, ami arra utal, hogy 
+    * legsikeresebb osztályozást ez utóbbinál érték el, ami arra utal, hogy
     * az azonos szavak (vagy szószekvenciák) eltérő annotációi jól jellemzik a
 * A korpuszméret és a vele betanított modell sikerességének kapcsolatához ér-
   * Martin és mtsai (2020) munkáját, akik CamemBERT nevű BERT alapú francia
     modelljüket (és összehasonlításképpen más modelleket) tanították be és
-    értékelték ki négy különböző korpuszon. Ezek közül 
-  * a legnagyobb 389363 tokent tartalmazott, a szófaji címkézésben 
+    értékelték ki négy különböző korpuszon. Ezek közül
+  * a legnagyobb 389363 tokent tartalmazott, a szófaji címkézésben
   * a legjobb eredményeket azonban a nála jóval kisebb, 68615 tokenből álló
     Sequoia korpusszal érték el a szerzők.  Egyrészt elmondható tehát, hogy az
   * [implicit:] morfológiai címkéző modellek eredményességének nem feltétlenül
@@ -71,9 +75,9 @@
 
 * Kísérleteinkhez 3 különböző méretű kézzel annotált korpuszt használtunk fel.
   1. legnagyobb a HuSpacy tanítóanyagául is szolgáló Szeged Treebank (Vincze+10)
-    * 1 362 505 token. 
+    * 1 362 505 token.
     * Az eredeti annotáció nagyrészt automatikusan lett a Universal Dependencies
-      szabványra konvertálva1 , a UD annotációk 
+      szabványra konvertálva1 , a UD annotációk
       * csak a korpusz egy kis részén (42 032 token) kaptak kézi ellenőrzést.2 A
  2. NYTK-NerKor (Simon és Vadász, 2021)3 , amely összesen 1 017 340 tokent
     * gold standard morfológiai annotáció készült az emMorph címkekészletével,
@@ -82,8 +86,8 @@
   3. legkisebb az ELTE DH gold standard korpusza (K. Molnár és Dömötör, 2023) 4
     * 496 060 tokenből áll, és az NYTK-NerKorhoz hasonló módszertannal
     * Mindkét korpuszt az emtsv (Indig és mtsai, 2019) morfológiai elemző
-      moduljaival előelemezték, majd 
-    * az elemző által adott annotációkat javították kézzel az annotátorok. 
+      moduljaival előelemezték, majd
+    * az elemző által adott annotációkat javították kézzel az annotátorok.
     * ie Az eredeti, kézzel ellenőrzött annotációk ennek megfelelően itt is az
       emMorph címkekészletét követik, majd ezek is az emmorph2ud2 eszközzel
     * utóbbi annotációs réteg nem kapott kézi ellenőrzést.
@@ -92,39 +96,39 @@
   méretet, hanem nagyobb műfaji változatosságot is elérhetünk. A korpuszokban
   található műfajokat az 1. táblázatban foglaltuk össze.
 * A korpuszok teszteléséhez elsősorban a HuSpaCy (Orosz és mtsai, 2023) lem-
-  matizáló és morfológiai elemző moduljait használtuk, 
+  matizáló és morfológiai elemző moduljait használtuk,
   * mivel azonban a három vizsgált korpuszból kettő eredetileg emMorph
     címkekészlettel készült, így ezek összehasonlításához a PurePos (Orosz és
-    Novák, 2013) tanításával is végeztünk kísérleteket. Ez utóbbinál 
+    Novák, 2013) tanításával is végeztünk kísérleteket. Ez utóbbinál
     * lehetőség van előelemzést is végeztetni a szabályalapú emMorph (Novák és
       mtsai, 2016) modul segítségével.
   * train-dev-test felosztásához a HuSpaCy eredeti (Szeged Treebankből
     származó) tanítóanyagának arányait használtuk. A vágásnál szempont volt,
     * minden alkorpuszból nagyjából azonos train/dev/test arány
-    * a bekerülő szövegek teljes mondatok legyenek. 
-  * A korpuszokat először külön-külön használtuk tanításra és tesztelésre, 
+    * a bekerülő szövegek teljes mondatok legyenek.
+  * A korpuszokat először külön-külön használtuk tanításra és tesztelésre,
     * majd megpróbáltuk kettesével kombinálni őket.
 * A HuSpaCy eredményei összehasonlíthatók a spaCy (Honnibal és mtsai, 2020) más
-  nyelvű modelljeivel. 
+  nyelvű modelljeivel.
   * A hivatalos weboldalon5 24 nyelv összesen 82 modelljének eredményei érhetők
   * 16 nyelv esetén van adat mind a UD POS-tag, a morfológiai jegyek és a
-    lemmatizálás kiértékelésére. 
+    lemmatizálás kiértékelésére.
   * tab 2: A modellek átlagos teljesítménye az egyes feladatokon a 2.
   * A legjobb eredményt a spanyol, a katalán és a német modellek érték el, ezek
-    mindhárom feladaton az átlagosnál jobban teljesítettek. A 
+    mindhárom feladaton az átlagosnál jobban teljesítettek. A
   * leggyengébbek
     (mindhárom feladaton átlag alatti) teljesítményt a finn, a litván és a
-    görög modellek adták. Ezen kívül még az 
+    görög modellek adták. Ezen kívül még az
   * olasz és a norvég modellek eredményei kiegyensúlyozott a feladatok mentén
     * mindkettő átlagos eredményt nyújt POS-tagelésben, a másik két feladaton
-      pedig átlagnál jobbat. 
-  * A többi modell sikeressége eltérő volt az egyes feladatoknál.  A 
+      pedig átlagnál jobbat.
+  * A többi modell sikeressége eltérő volt az egyes feladatoknál.  A
   * tab 3 táblázat az előbb említett modellek eredményeit és a modell alapjául
     szolgáló korpuszok méretét mutatja. Az egyes nyelveknél a legjobb eredményt
     elérő modellt vettük figyelembe. A korpuszméret a modell tanításához és
     kiértékeléséhez használt teljes korpusz tokenszámát jelenti.
   * a gyengébb teljesítményű modellek tanítókorpusza valóban jellemzően
-    kisebb, 
+    kisebb,
   * egy bizonyos korpuszméret fölött (a 278 ezres olasz korpusztól kezdve)
     azonban már nincs lényeges különbség az eredmények között.
   * pontos értelmezéséhez nyilvánvalóan figyelembe kellene venni az egyes
@@ -137,9 +141,9 @@
 
 * A 4. táblázatban a HuSpaCy eredményei láthatók a különböző korpuszokon és
 azok kombinációin tanítva. A szófaj meghatározásában (
-* POS:, a NerKor érte el a legjobb eredményt. A 
+* POS:, a NerKor érte el a legjobb eredményt. A
 * lemmatizálásnál nagyjából a mérettel arányosan változott a teljesítmény az
-* morfológiai jegyek azonosításában (Feats) 
+* morfológiai jegyek azonosításában (Feats)
   * a Szeged Treebank jelentősen alulteljesít a másik két korpuszhoz képest. A
   * legnagyobb eltérés a ritka jegyeknél (Reflex, Aspect, Number[psed]), a
     melléknevek fokozásánál (Degree) és a számjegyeknél (NumType) mutatkozott.
@@ -149,7 +153,7 @@ azok kombinációin tanítva. A szófaj meghatározásában (
     eredményeit.
 * korpuszok kombinálása szinte minden esetben lényegesen rontott az
   * egyedül az ELTE–Szeged párosítás lemma eredménye nem rosszabb mindkét
-    korpusz önálló teljesítményénél. 
+    korpusz önálló teljesítményénél.
   * A legrosszabb eredményt éppen a két nagyobb korpusz, a NerKor és a Szeged
 * sum: a kisebb korpuszok nem teljesítenek (sokkal) rosszabbul a
 * ? mi az a minimális korpuszméret, amivel még értékelhető eredményt lehet
@@ -170,9 +174,9 @@ azok kombinációin tanítva. A szófaj meghatározásában (
 
 * Hasonló kísérleteket végeztünk a PurePos tanításával is
   a két emMorph annotációt tartalmazó korpusszal (ELTE DH és NerKor). Az
-  * először az emMorph modul kikapcsolásával tanítottuk, azaz 
+  * először az emMorph modul kikapcsolásával tanítottuk, azaz
   * ie előelemzés nélkül, csak a korpuszokból kellett megtanulnia a
-    címkekészletet. 
+    címkekészletet.
   * Itt is először külön-külön, majd együtt is tanítottunk a két korpusszal. A
   * az ELTE DH korpusz kisebbre vágott változataival is.
   * tabs 6. és 7
@@ -182,11 +186,11 @@ azok kombinációin tanítva. A szófaj meghatározásában (
     lemmával elvégeztük a tanítást.
 * A két korpusz eredményeit összehasonlítva azt látjuk, hogy [hol a táblázat?]
   * a címkézési feladatnál különböző méretük ellenére is azonos teljesítményt
-  nyújtott a két korpusz. A 
-  * lemmatizálásnál a 
+  nyújtott a két korpusz. A
+  * lemmatizálásnál a
     * NerKor UD lemmái könnyebben tanulhatónak bizonyultak, mint az eredeti
       lemmák, ez utóbbiak szintén azonos eredményt mutatnak az ELTE DH
-      korpusszal. Itt is igaz, hogy 
+      korpusszal. Itt is igaz, hogy
   * a két korpusz kombinálása nemhogy nem javított, de még rontott is az
 * tab 7: a PurePos a HuSpaCy-nél kevésbé érzékeny a korpuszméretre. (Ami nem
   meglepő, hiszen a PurePosnak kifejezett célja volt, hogy kis korpuszokon is
@@ -209,22 +213,22 @@ azok kombinációin tanítva. A szófaj meghatározásában (
     lyásolta az eredményeket: a korpusz csupán 10%-át (48 ezer tokent)
     használva is ugyanolyan eredményeket kaptunk, mint a teljes korpuszon
 * Az 1. ábrán még jobban látszik a neurális (HuSpaCy) és a HMM (PurePos)
-  rendszerek eltérő karakterisztikája. 
+  rendszerek eltérő karakterisztikája.
   * A HuSpaCy eredménye mind a szótövesítésben, mind a tagelésben meredeken
-    zuhan a 10%-osra redukált korpuszméret alatt, míg 
+    zuhan a 10%-osra redukált korpuszméret alatt, míg
   * a PurePos teljesítménye jóval visszafogottabb ütemben csökken. (A HuSpaCy
     esetén az (1b) ábrán a feats eredményeket jelenítettük meg, mert ne-
-    hézségben ez a leginkább összevethető az emMorph címkézéssel.) 
+    hézségben ez a leginkább összevethető az emMorph címkézéssel.)
   * Az emMorph előelemzővel az esés mindkét feladaton még lassabb, a
     szótövesítés pontossága pedig végig a HuSpaCy-é felett marad.
 
 # 5. Diszkusszió
 
-* mennyire számít a méret? Úgy tűnik, hogy 
+* mennyire számít a méret? Úgy tűnik, hogy
   * a neurális háló alapú rendszereknél, amilyen a HuSpaCy, számít, de ott sem
     mindenek felett. A kisebb korpuszok nemcsak vesenyképesnek bizonyultak a
     legnagyobb mérettel bíró Szeged Treebankkel szemben, de bizonyos
-    feladatokban meg is előzték. Azt mondhatjuk tehát, hogy nagyjából 
+    feladatokban meg is előzték. Azt mondhatjuk tehát, hogy nagyjából
   * félmillió tokentől (ami az ELTE DH korpusz teljes mérete) kezdve már nem
     feltétlenül számít a méret. Az ennél kisebb részkorpuszokon azonban
     egyértelmű volt a teljesítménycsökkenés, különösen a lemmatizálásnál. A
@@ -236,16 +240,16 @@ azok kombinációin tanítva. A szófaj meghatározásában (
   * lehet helye a szabályalapú moduloknak: az emMorph és a PurePos éppen a
     HuSpaCy számára leginkább kihívást jelentő lemmatizálásban volt különösen
     sikeres a kisebb korpuszokon. Az, hogy a tagelési feladatban viszont (bár
-    abban is jó) nem éri el a lemmatizáló szintjét amiatt lehet, hogy 
+    abban is jó) nem éri el a lemmatizáló szintjét amiatt lehet, hogy
   * a szófaj kérdése sokszor a szakértő annotátorok számára sem egyértelmű.
 * gyakori tévesztés Mind a NerKorban, mind az ELTE DH korpuszban gyakori
   * melléknevek és főnevek keverése, ami a nyelvészeknek is "szürke zónának"
 *  együtt használni a meglévő korpuszokat, ez sajnos minden esetben rossz
    * a lemmatizálás és morfológiai elemzés túlságosan sokrétű feladat ahhoz,
      hogy bármely két műhely egységesen tudjon annotálni, még akkor is, ha
-     azonos sémát próbálnak követni. 
+     azonos sémát próbálnak követni.
 * A korpuszok közötti eltérések részletes vizsgálata egy külön tanulmányt
-  érdemelne, itt csak néhány különbséget említünk meg, amelyek 
+  érdemelne, itt csak néhány különbséget említünk meg, amelyek
   * vagy már a korpuszok leírásából kiderülnek, vagy az általunk végzett
 * A NerKor például sajátos elemzést alkalmaz a többtagú tulajdonnevekre.
   * Ezek belső tagjai nem kapnak esetragot, csak sima [/N] taggel annotálják
@@ -254,7 +258,7 @@ azok kombinációin tanítva. A szófaj meghatározásában (
     emMorph annotációkat használjuk). További különbség a két kisebb korpusz
   * a NerKor megkülönbözteti a melléknévi igeneveket a melléknevektől,
     előbbiekre a [/V][_ImpfPtcp/Adj], [/V][_PerfPtcp/Adj] és [/V][_ModPtcp/Adj]
-    címkéket használja, míg 
+    címkéket használja, míg
     * az ELTE DH korpuszban ez a különbség csak a részletes elemzésben jelenik
       meg, az egyszerű címke minden esetben [/Adj].
     * Ez érinti a UD változatot is, a NerKor a melléknévi igeneveknél használ
@@ -270,13 +274,13 @@ azok kombinációin tanítva. A szófaj meghatározásában (
 * A NerKor dokumentációja továbbá megjegyzi, hogy a Szeged Treebank nem mindig
   következetes a névmások szótövesítésében, és az sem könnyítette meg a
   * néhány ragozott alakra nincs példa a korpuszban.
-* segédigék kérdéskörét, amit szintén eltérően kezelnek a korpuszok. A 
+* segédigék kérdéskörét, amit szintén eltérően kezelnek a korpuszok. A
   * Szeged Treebankben AUX címkét kap a múlt idejű feltételes mód (volna) és a
-    jövő idő (fog) segédigéje, valamint a kopula. Az 
+    jövő idő (fog) segédigéje, valamint a kopula. Az
   * emMorph címkekészletben azonban nincs segédige kategória, így az
-    emmorph2ud2 konvertáló eszközbe sem került bele. 
+    emmorph2ud2 konvertáló eszközbe sem került bele.
   * A NerKor a sima [/V] címkével különbözteti meg a segédigét a többi igétől,
     ezt azonban csak a _volna_ esetében használják (ami érthető, hiszen a jövő
-    időt jelző fog-nak és a kopuláknak van ragozása). 
+    időt jelző fog-nak és a kopuláknak van ragozása).
   * Az ELTE DHkorpusz UD változatában viszont (mivel az az emmorph2ud2
     eszközzel készült) egyáltalán nem szerepel az AUX címke.

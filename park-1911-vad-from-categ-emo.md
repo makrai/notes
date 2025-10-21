@@ -11,8 +11,8 @@ arXiv:1911.02499
   * trained by minimizing the Earth Mover's Distance (EMD) loss between
     the predicted VAD score distribution and
     the categorical emotion distributions sorted along VAD
-  * can simultaneously classify the emotion categories and predict VAD scores
-    for a given sentence
+  * can simultaneously
+    classify the emotion categories and predict VAD scores for a given sentence
   * pre-trained RoBERTa-Large fine-tuned on three corpora with categ labels
   * evaluation on EmoBank corpus with VAD scores
     * categorical: comparable performance to that of the SOTA classifiers
@@ -59,8 +59,8 @@ arXiv:1911.02499
     use them to compute VAD scores as well as to
     predict the emotion labels for a given sentence
 * contributions
-  * a framework which enables learning to predict VAD scores as well as
-    categorical emotions from a sentence only with categorical emotion labels
+  * framework for learning to predict VAD scores as well as categorical emotions
+    from sentences only with categorical emotion labels
   * significant positive correlations to corresponding ground truth VAD scores
   * Our model outperforms SOTA dimensional emotion detection models
     by fine-tuning with supervision of VAD scores
@@ -98,12 +98,11 @@ arXiv:1911.02499
 ## Predicting Continuous VAD Scores (Fig 1d)
 
 * We compute the expectations of each predicted conditional distris of V, A, D
-  to predict the continuous VAD scores
 
 ## Predicting Categorical Emotion Labels (Fig 1c)
 
 * pick
-  * single-label, Eq 9: the emotion label with the maximum prob
+  * single-label, Eq 9: the emotion label with the maximum probability
   * multiple labels: those with probability over a certain threshold
     * The threshold is a hyperparameter of the model, set to 0.51/3
     * ie geometric mean of the three distributions
@@ -150,8 +149,8 @@ arXiv:1911.02499
 
 * not trained over the EmoBank train-set, only
   using the EmoBank test-set for evaluation
-* could be interpreted as how much a model can generalize the categorical
-  emotions into the continuous VAD space
+* could be interpreted as
+  how much a model can generalize the categorical emotions into the VAD space
   using only |E| fixed points in the space
 
 ### 3.2.2 VAD Prediction with Supervision
@@ -160,8 +159,8 @@ arXiv:1911.02499
   and compare their performance with other methods which relies on the direct
   supervision from them
 * allow us to compare the zero-shot prediction performances against them, and
-  * how much the zero-shot prediction model could be improved if VAD
-    annotations are available
+  * how much the zero-shot prediction model could be improved
+    if VAD annotations are available
 * We also compare data scarce scenarios, only using a part of Emobank train set
 
 ## 3.3 Categorical Emotion Prediction
@@ -182,21 +181,21 @@ arXiv:1911.02499
   * We show the result for SemEval dataset because
     it gave the best performance for zero-shot score prediction
   * Validation set results are shown in Appendix
-* In Table 3, we present six models for ablation study
-* Model 1: RoBERTa trained on SemEval with our framework except
-  EMD loss replaced with cross-entropy which does not consider the order
-  * our model shows better correlations in overall (+.022)
-* Model 3 is fine-tuned on EmoBank without pretrained weights of RoBERTa,
-  * highly underperforming result compared to Model 5 (+.302)
-  * performance still comparable to that of AAN (Zhu+ 2019)
-* Model 4 uses BERT (Devlin+ 2018) pre-trained weights
-  * slightly lower performance than Model 5 (+.027)
-* Model 6 shows comparable performance compared to Model 5 when using full
-  train-set
+* Table 3: six models for ablation study
+  * Model 1: RoBERTa trained on SemEval with our framework except
+    EMD loss replaced with cross-entropy which does not consider the order
+    * our model shows better correlations in overall (+.022)
+  * Model 3 is fine-tuned on EmoBank without pretrained weights of RoBERTa,
+    * highly underperforming result compared to Model 5 (+.302)
+    * performance still comparable to that of AAN (Zhu+ 2019)
+  * Model 4 uses BERT (Devlin+ 2018) pre-trained weights
+    * slightly lower performance than Model 5 (+.027)
+  * Model 6 shows comparable performance compared to Model 5 when using full
+    train-set
 
 # 6 Qualitative Examples
 
-* In Table 4, we show examples predicted from our model trained on SemEval
+* Table 4: examples predicted from our model trained on SemEval
   * annotated tweets from SemEval test set,
     corresponding predicted categorical labels, and
     5 nearest neighbor emotional words with respect to the predicted VAD
@@ -227,7 +226,7 @@ arXiv:1911.02499
   * multimodal emotion detection (Zhang+ 2020),
   * emotion in conversation (Ishiwatari+ 2020), and
   * emotion change in a paragraph (Brahman and Chaturvedi, 2020)
-* various types of label sets. To train model across the various inventories
+* various types of label sets: train model across the various inventories
   * aggregate various format of emotion dataset into a common annotation schema
   * better performance using unified dataset
     (Bostan and Klinger, 2018; Belainine+ 2020)
@@ -246,8 +245,8 @@ arXiv:1911.02499
   * hE performance is rather low
     since our model does not leverage other modalities such as audio or videos
 * which word-level resources
-  * We use NRC-VAD to estimate distance between emotions because it is
-    constructed very carefully to locate words in VAD space
+  * We use NRC-VAD to estimate distance between emotions
+    because it is constructed very carefully to locate words in VAD space
   * If we use ANEW (Redondo+ 2007), we observe positive results as well
     (V: 0.682, A: 0.270, D: 0.296)
 

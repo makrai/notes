@@ -5,7 +5,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 # Abstract
 
 * 38,000 multiple choice questions for probing emotional & social intelligence
-* (eg, Q: "Jordan wanted to tell Tracy a secret, so Jordan leaned towards
+* (eg Q: "Jordan wanted to tell Tracy a secret, so Jordan leaned towards
   Tracy. Why did Jordan do this?" A: "Make sure no one else could hear")
 * Through crowdsourcing, we collect commonsense questions
   along with correct and incorrect answers about social interactions
@@ -26,7 +26,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
     * social situations ranging from simple conversations with friends to
       complex negotiations in courtrooms (Apperly, 2010)
     * a longstanding but elusive goal of AI (Gunning, 2018)
-* lack of large-scale resources to train and evaluate modern AI systems’ social
+* lack of large-scale resources to train and evaluate AI systems’ soc & emo
 * pretraining large language models
   * promising improvements on several commonsense inference tasks
   * hE still struggle to reason about social situations, as shown by us and
@@ -70,12 +70,12 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * ATOMIC is a large knowledge graph that contains
   * inferential knowledge about the causes and effects of 24k short events
   * Each triple in ATOMIC consists of
-    * (eg, “PersonX pays for PersonY’s ”, “xAttrib”, “generous”)
+    * (eg “PersonX pays for PersonY’s ”, “xAttrib”, “generous”)
     * an event phrase with person-centric variables,
     * one of nine inference dimensions, and
-      * causes of an event (eg, “X needs money”)
-      * its effects on the agent (eg, “X will get thanked”) and
-      * its effect on other participants (eg, “Y will want to see X again”);
+      * causes of an event (eg “X needs money”)
+      * its effects on the agent (eg “X will get thanked”) and
+      * its effect on other participants (eg “Y will want to see X again”);
     * an inference object .  The nine inference dimensions in ATOMIC cover
 * Given this base, we generate natural language contexts that represent
   specific instantiations of the event phrases found in the knowledge graph
@@ -130,18 +130,18 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
   * as hinted at by Marcus (2018) and Zellers+ (2019b Hellaswag)
   * leads to incorrect timing (examples 3 and 4) or
     answers pertaining to the wrong participants (examples 5 and 6)
-* We expect that this task would benefit from models
+* We expect that this task would benefit from models that are
   * capable of more complex reasoning about entity state, or models that are
   * more explicitly endowed with commonsense (eg from KGs like ATOMIC)
 
 # 6 SocialIQa for Transfer Learning
 
-### COPA. The Choice of Plausible Alternatives task (COPA; Roemmele+ 2011) is a
+### COPA. The Choice of Plausible Alternatives task (COPA; Roemmele+ 2011)
 
 * a two-way multiple choice task which aims to measure commonsense reasoning
 * 1,000 questions (500 dev, 500 test) that ask about the causes and effects
 
-### Winograd Schema. The Winograd Schema Challenge (WSC; Levesque, 2011)
+### Winograd Schema Challenge (WSC; Levesque, 2011)
 
 * 273 short sentences in which a pronoun must be resolved to one of two
 * Rahman and Ng (2012) created 943 Winograd-style sentence pairs (DPR), which
@@ -149,7 +149,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 
 ## 6.1 Sequential Finetuning
 
-### Results Shown in Table 4, sequential finetuning on SocialIQa
+### Sequential finetuning on SocialIQa, Tab 4
 
 * substantial improvements over the BERT-only baseline (between 2.6 and 5.5%)
 * general increase in performance stability (ie, lower standard deviations)
@@ -171,7 +171,7 @@ EMNLP 2019 arXiv:1904.09728 [cs.CL]
 * Talmor+ (2019) introduce CommonsenseQA, containing 12k multiple-choice
   * Crowdsourced using ConceptNet (Speer and Havasi, 2012), these questions
     mostly probe knowledge related to factual and physical commonsense
-    (eg, “Where would I not want a fox?”). In contrast, SocialIQa
+    (eg “Where would I not want a fox?”). In contrast, SocialIQa
 
 ## Commonsense Knowledge Bases: In addition to large-scale benchmarks, a wealth
 

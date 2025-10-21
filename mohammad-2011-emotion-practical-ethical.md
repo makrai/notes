@@ -1,7 +1,7 @@
 Practical and Ethical Considerations
   in the Effective use of Emotion and Sentiment Lexicons
-Saif M. Mohammad
-arXiv:2011.03492 [cs.CL]
+Saif M Mohammad
+arXiv:2011.03492
 
 # 1 Introduction
 
@@ -57,7 +57,7 @@ arXiv:2011.03492 [cs.CL]
 * Limitations of Aggregation by Majority Vote
   * can have the effect of only considering the perceptions of the majority
   * I have made available all the disaggregated annotations, where possible
-* Inappropriate Biases: Some of the human biases that have percolated into the
+* Inappropriate Biases: Some human biases have percolated into the lexicons
   * eg low valence scores for certain demographic groups or social categories
   * when these lexicons are used in specific tasks, care must be taken to
     ensure that inappropriate biases are not amplified or perpetuated
@@ -86,7 +86,7 @@ arXiv:2011.03492 [cs.CL]
 1. Manually examine the emotion associations
   of the most frequent terms in your data
   * Remove entries from the lexicon that are not suitable
-2. Depending on your specific use case, you may choose to re-scale the scores
+2. re-scaling, Depending on your specific use case, you may
    * if using the lexicon entries as features in machine learning experiments,
      the scale (0 to 1 or -1 to 1) can make a difference
    * eg how much weight should be assigned to terms with scores close to 0

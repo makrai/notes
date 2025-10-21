@@ -7,8 +7,8 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 
 * emotion classification performance tends to be rather low,
   esp with emotion categories that are tailored to specific tasks and domains
-* we propose the use of the dimensional emotion representations (VAD), in an
-  emotion regression task.  
+* we propose the use of the dimensional emotion representations (VAD),
+  an emotion regression task
   * Hypothesis:
   * VAD can improve performance of the classification task
   * VAD might be used as a pivot mechanism to map towards any emo framework,
@@ -24,14 +24,14 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 * We show that dimensional representations can indeed boost performance for
   emotion classification, especially in the meta-learning setting
   * up to 7% macro F1-score compared to regular emotion classification
-  * The pivot method was not able to compete with the base model, but
-  * categories do benefit from the additional VAD information,
-  * hE the opposite does not hold
+  * pivot method was not able to compete with the base model, but
+    * categories do benefit from the additional VAD information,
+    * hE the opposite does not hold
     * ie the VAD model is more robust than the classification model
   * further inspection suggests that it could be efficient, provided that the
     VAD regression model is further improved
-  * gold VAD + rule-based mapping: performance on par with the base model
-    ie the pivot method could be efficient, 
+  * gold (oracle) VAD + rule-based mapping: performance = the base model
+    ie the pivot method could be efficient,
     provided that the VAD regression model is further improved
 
 # 1 Intro
@@ -49,8 +49,8 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   * Finetuning pre-trained models, multi-task learning or label space mapping
 * A straight-forward approach to shift between frameworks is to
   map discrete categories into a three-dimensional space
-  * 3D space corresponds to Mehrabian and Russell’s claim that all affective
-    states can be represented by the dimensions valence, arousal and dominance
+  * 3D space corresponds to Mehrabian and Russell’s claim that
+    all affective states can be represented by the dims valence, arousal & domin
   * This mapping to and from the VAD space can be regarded as a pivot
   * mapping technique (eg linear regression, kNN or lexicon-based mappings),
   * predicted VAD values can be converted to any categorical emotion label set
@@ -80,8 +80,9 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
   * nL results for emotional dimensions were more promising (0.64 Pearson’s r)
 * Multi-task learning in tasks related to emotion and sentiment [14,15]
   * not many studies perform transfer learning with multiple emo frameworks
-  * various studies employ multitask learning by jointly training
-    emotion detec with sentiment analysis [16,17] or other related tasks [18]
+  * various studies employ multitask learning by
+    jointly training emotion detec with
+    sentiment analysis [16,17] or other related tasks [18]
   * these studies suggest that multi-task frameworks outperform single-task
 * deal with disparate label spaces
   * mapping between categorical and dimensional frameworks
@@ -130,28 +131,28 @@ Special Issue Emerging Application of Sentiment Analysis Technologies 2021
 ### 3.2.2. Multi-Task Learning
 
 * In this setting, the classification (categories) and regression (dimensions)
-  models are trained simultaneously (see Figure 2). We use 
-  * the same architecture and hyperparameters as in the base model. 
-  * The RobBERT feature encoder allows for hard parameter sharing where the
-    learning of features for the emotion classes and VAD prediction happens
+  models are trained simultaneously (see Figure 2)
+  * the same architecture and hyperparameters as in the base model
+  * The RobBERT feature encoder allows for hard parameter sharing where
+    the learning of features for the emotion classes and VAD prediction happens
     simultaneously, but has separate task-specific output layers
 * loss weights
-  * Binary Cross Entropy for emotion classification and 
-  * Mean Squared Error loss for VAD) are 
-  * averaged according to pre-defined weights. 
-  * We test three different ratios: one where 
+  * Binary Cross Entropy for emotion classification and
+  * Mean Squared Error loss for VAD
+  * averaged according to pre-defined weights
+  * We test three different ratios: one where
     * VAD and classification are weighed equally (both 0.5), one where
     * classification outweighs VAD (0.75 for classification and 0.25 for VAD)
-    * VAD has the largest weight (0.75 for VAD and 0.25 for classification).
+    * VAD has the largest weight (0.75 for VAD and 0.25 for classification)
 
 ### 3.2.3. Meta-Learner (fig 3)
 
 * no parameters are shared between the tasks
-* a stacking ensemble is used in which two base models are trained, one for VAD
+* a stacking ensemble is used in which two base models are trained
 * The predictions (or probabilities in the case of classification) are
   concatenated (six values for classification and three values for VAD) and
-  used as input for a meta-learner algorithm, in this case an
-  SVM for classification and a linear regression model for VAD
+  used as input for a meta-learner algorithm
+  * SVM for classification and a linear regression model for VAD
 * Nested cross-validation is used for this approach
   * training data of the meta-learner
     * when training the base models, for every test fold, a model is trained on
@@ -194,8 +195,8 @@ else:
 ```
 
 * If a class cannot be matched based on these rules, then we calculate
-  cosine distance between the instance that needs to be classified and each
-  emotion class vector
+  cosine distance between the instance that needs to be classified and
+  each emotion class vector
   (here love and neutral are included, neutral = {0.5, 0.5, 0.5})
 
 # 4 Results
@@ -203,9 +204,9 @@ else:
 # 5 Discussion
 
 * The results in Section 4 suggest that
-  * VAD dimensions can help in predicting emotional categories, as the
+  * VAD dimensions can help in predicting emotional categories
   * VAD regression model seems more robust than the classification model
-  * hE, the pivot method did not seem an effective approach to cat emotion
+  * the pivot method did not seem an effective approach to cat emotion
 * this section
   * correlation between categories and VAD dimensions as annotated in EmotioNL
   * error analysis on the predictions of the pivot method
@@ -238,8 +239,8 @@ else:
     need for annotations in the target label set
   * a mapping should be achieved without relying on any categorical annotation
   * correlations too low to directly map VAD predictions to categories through
-    a rule-based approach, as was proven in the results of the pivot method
-* SVM. For comparison, we did try to learn a simple mapping using an SVM
+    a rule-based approach, as was proven in the pivot method
+* SVM. For comparison, we tried to learn a simple mapping using an SVM
   * similar approach as meta-learn depicted in Figure 3, but now
     only the VAD predictions are used as input for the SVM classifier
   * Results of this learned mapping are shown in Table 10

@@ -1,5 +1,5 @@
-Minglei Li, Qin Lu, Yunfei Long, and Lin Gui
 Inferring Affective Meanings of Words from Word Embedding
+Minglei Li, Qin Lu, Yunfei Long, and Lin Gui
 Journal of IEEE transactions on affective computing 2017 (under review)
 
 extended lexicons are publicly available for access
