@@ -2,9 +2,11 @@ An Appraisal Theoretic Approach to Modelling Affect Flow in Conversation Corpora
 Alok Debnath, Yvette Graham, Owen Conlan
 ACL 2025
 
+# Abstract
+
 * the multidimensional cognitive model of Appraisal Theory offers
   significant advantages for analyzing emotions in conversational contexts,
-  addressing the current challenges of inconsistent annotation methodologies
+  addressing the challenges of inconsistent annotation methodologies
 * we present AppraisePLM,
   * a regression and classification model trained on the crowd-EnVent corpus
   * outperforms existing models in predicting 21 appraisal dimensions
@@ -25,6 +27,15 @@ ACL 2025
 * methodologies include emotion classification, dimensional ratings, intent
   annotations, and vicarious emotion ratings such as empathy and condolence
   (Busso+ 2008; Ma+ 2020; Karna+ 2020). While affect-annotated
+  * Carlos Busso, Murtaza Bulut, Chi-Chun Lee, Abe Kazemzadeh, Emily Mower,
+      Samuel Kim, Jeannette N Chang, Sungbok Lee, and Shrikanth S Narayanan.
+    Iemocap: Interactive emotional dyadic motion capture database.  
+    Language resources and evaluation, 2008 42:335–359.
+  * Yukun Ma, Khanh Linh Nguyen, Frank Z Xing, and Erik Cambria. . 
+    A survey on empathetic dialogue systems. Information Fusion, 2020 64:50–70.
+  * Mounika Karna, D Sujitha Juliet, and R Catherine Joy.
+    Deep learning based text emotion recognition for chatbot applications.
+    2020 IEEE Intl Conference on Trends in Electronics and Informatics
 * datasets exist across general and specialized domains,
 * inconsistencies in annotation schemas and objectives (Liu+ 2021; Islam+ 2022)
   * variations in annotation methodologies, including differences

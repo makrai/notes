@@ -29,29 +29,27 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 # Intro
 
 * AI integration of modalities is often fragmented (Lazaro+ 2021; Gu+ 2017).
-* Speech to text models, like Whisper (Radford+ 2022), are often pipelined into
-  text-based language models (LMs, Chuang+ 2020) in order to get the most
-  accurate speech-based representations (see Figure 1). This often results in
+* Speech to text models, like Whisper (Radford+ 2022), are
+  often pipelined into text-based language models (LMs, Chuang+ 2020)
+  in order to get the most accurate speech-based representations (see Figure 1).
   * redundant computational costs from having two LMs in the pipeline, and
-    representations remain incomplete of the full spectrum of human
-    expressions (Zhang+ 2023; Lian+ 2023).
-* psychological and social scientific applications where representations from
-  text-based LMs demonstrate superior performance than direct speech
-  representations (Lukac, 2024; Chen+ 2024).
+    representations remain incomplete of the full spectrum of human expressions
+    (Zhang+ 2023; Lian+ 2023).
+* in psychological and social scientific applications, representations from
+  text-based LMs demonstrate superior performance
+  than direct speech representations (Lukac, 2024; Chen+ 2024).
 * we seek to bridge the semantic and psychological representation gap between
-  speechbased LMs present in audio models and text-based LMs. We introduce
+  speech-based LMs present in audio models and text-based LMs
   * a speech encoding model,
   * WhiSPA (Whisper with Semantic and Psychological Alignment), which
   * aligns a pretrained speech recognition model, Whisper (Radford+ 2022), with
-    the latent dimensions from SBERT (Reimers and Gurevych, 2019), intended to
-    better capture semantics and deeper psychological information (V Ganesan+
-    2022; Park+ 2014).
-* main idea repeated: Such alignment reduces computational and memory
-  inefficiencies, circumventing the need for a second text encoder, as it
-  enables a unified crossmodal representation between speech and language
-  models. Still, since text is derivable from speech, speech should
-  intrinsically be mappable to the same rich semantic features from the text.
-* focus on psychological or human-level tasks reflects a
+    the latent dimensions from SBERT (Reimers and Gurevych, 2019), intended
+    to better capture semantics and deeper psychological information
+    (V Ganesan+ 2022; Park+ 2014)
+  * reduces computational and memory inefficiencies,
+    circumventing the need for a second text encoder, as it enables 
+  * a unified crossmodal representation between speech and language models.
+* focus on psychological or human-level tasks
   * growing demand for foundation models to better understand the intrinsic
     qualities of hucommunication (Soni+ 2024).
   * As Clark and Schober (1992) put it,
@@ -66,7 +64,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
   over systematically tested variants of WhiSPA. We find that:
   * SotA person-level psychological assessments;
   * a Noise Contrastive Estimation loss yielded a more optimal convegence in
-     aligning Whisper’s latent space with semantic and psychological dimensions.
+    aligning Whisper’s latent space with semantic and psychological dimensions.
   * for downstream psychological tasks, there was
     almost no benefit in utilizing SBERT representations on top of WhiSPA’s,
     ie the same information from a text LM can be captured with the LM of the
@@ -75,45 +73,45 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 # Background
 
 * Whisper (Radford+ 2022), OpenAI’s SotA automatic speech recognition (ASR)
-  * alternatives such as HuBERT and Wav2Vec2-BERT, since previous works  have shown that
+  * alternatives such as HuBERT and Wav2Vec2-BERT
   * Whisper has a stronger language encoding module at capturing speaker attribs
     (Kyung+ 2024; Yang+ 2023)
     * due to its pretraining objective of transcription/translation.
-* speech recognition vastly improved (Radford+ 2022; Hsu+ 2021). However, they
+* speech recognition vastly improved (Radford+ 2022; Hsu+ 2021)
   * hE limited ability to capture deeper semantics and speaker attributes
     compared to a text-based language model (Chen+ 2024; Dong+ 2022).
   * Prior works that have addressed this have targeted a very narrow scope of
     psychological attributes (Busso+ 2008).
   * need for bridging speech encoders’ acoustic robustness
-    with the psychological depth of text-based language models—a challege we
-    ie embedding fundamental psychological dimensions present in one’s speech.
+    with the psychological depth of text-based language models—a challege
+    * ie embedding fundamental psychological dimensions present in one’s speech.
 * Multi-level fusion architectures leveraging both acoustic and lexical features
   * improve performance in emotion recognition, speaker identification, and
-    other downstream tasks. For instance, (
+    other downstream tasks
   * Zhao+ (2022) demonstrates that
-    coattention-based early fusion and late fusion using Wav2Vec2.0 (Baevski+
-    2020; Schneider+ 2019) and BERT (Devlin+ 2019) outperform SotA emotion
-    recognition benchmarks. Other recent works
+    coattention-based early fusion and late fusion
+    using Wav2Vec2.0 (Baevski+ 2020; Schneider+ 2019) and BERT (Devlin+ 2019)
+    outperform SotA emotion recognition benchmarks
   * text only-input
-    * inject acoustic nuances into language models using textual descriptions of
-      speech characteristics (Wu+ 2024) or
+    * inject acoustic nuances into language models using
+      textual descriptions of speech characteristics (Wu+ 2024) or
     * common-sense reasoning through historical utterances from the speaker
-      (Fu, 2024). However, this approach does
-    * not fully leverage the cross-modal dependencies between text and audio, as
-* cross-modal alignment provide foundational insights for this integration.
+      (Fu, 2024)
+    * not fully leverage the cross-modal dependencies between text and audio
+* cross-modal alignment provide foundational insights for this integration
   * Compositional Contrastive Learning (Chen+ 2021)
     distilled audio-visual knowlege into video representations
     by aligning teacher-student embeddings across modalities,
     embedding rich semantics from teacher-audio and image models into the
     studentvideo model.
   * Dong+ (2022): intent classification of spoken language
-    * contrastive loss using both speech and language features. These works
+    * contrastive loss using both speech and language features
   * sum
     * the cross-modal alignment objective embeds information from different
       modalities into shared spaces to capture their relationships, while
     * contrastive learning aids in
-      grouping related inputs across different modalities (eg audio and text
-      segments) while
+      grouping related inputs across different modalities
+      (eg audio and text segments) while
       separating unrelated pairs (Ye+ 2022).
   * align text and audio include
     * SpeechBERT (Chuang+ 2020), which
@@ -141,15 +139,15 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
   a structured manner (Kjell+ 2024).
 * != HiTOP followed a semi-structured format, where
   patients described experiences on set topics while
-  also organically conversing with the interviewer. Once
+  also organically conversing with the interviewer
   * [after?] filtering for audio segments solely spoken by patients,
   * interviews generally ranged from 45 to 90 minutes, yielding
-    a voluminous and broadened set of audio segments (Kotov+ 2022). The
+    a voluminous and broadened set of audio segments (Kotov+ 2022)
 * diarized using NVIDIA NeMo and transcribed with whisper-large-v2.
 
 ## Psychological Assessments. For each dataset, psychological measures were
 
-* WTC, each subject completed the selfreported PTSD CheckList (PCL), yielding
+* WTC, each subject completed the self-reported PTSD CheckList (PCL), yielding
   scores for four specific subscales: Re-experiencing (REX), Avoidance (AVO),
   Negative Alterations in Mood (NAM), Hyperarousal (HYP).
 * HiTOP, trained interviewers provided ratings for the following
