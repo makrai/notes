@@ -171,12 +171,12 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     at a point in time;
   * dispositions, which are slightly more stable than states and reflect the
     tendencies of humans to behave in certain ways and finally
-  * the traits, which are
+  * traits, which are
     long term stable characteristics (Park+ 2014).
-* The ten dimensions of PsychEmb are Valence (VAL), Arousal (ARO), Openness
-  (OPE), Consciousness (CON), Extraversion (EXT), Agreeableness (AGR),
-  Neuroticism (NEU), Anger (ANG), Anxiety (ANX), and Depression (DEP), each
-  represented with scalar values.
+* The ten dimensions of PsychEmb are
+  Valence (VAL), Arousal (ARO), Openness (OPE), Consciousness (CON),
+  Extraversion (EXT), Agreeableness (AGR), Neuroticism (NEU), Anger (ANG),
+  Anxiety (ANX), and Depression (DEP), each represented with scalar values.
 * After extracting self-supervised PsychEmb dimensions for each segment across
   both datasets, we perform a 80:10:10 (train/val/test) split.
 
