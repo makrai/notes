@@ -67,9 +67,10 @@
       linguistic styles and personas
 * potentially broad 0-shot applications of LLMs across diverse areas of psycho
   * query people’s mental models of themselves and their environments (social
-    and cognitive psychology), infer individual differences in coping styles
-    (personality psychology), or help people to reappraise stressful
-    experiences (affective and clinical psychology)
+    and cognitive psychology), 
+  * infer individual differences in coping styles (personality psychology), or
+  * help people to reappraise stressful experiences
+  * (affective and clinical psychology)
   * GPT output was generated in March 2023 using text-davinci-003 in the OpenAI
     playground with default settings (temperature 0.7, length 256)
 * use cases across subfields in measurement, experimentation, and practice

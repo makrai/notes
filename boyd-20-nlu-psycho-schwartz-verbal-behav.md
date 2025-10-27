@@ -176,7 +176,7 @@
   * Attentional patterns are necessary, but not sufficient, to explain the
   * motivations and goals during social interact (Berger, 2014; Horowitz+ 2006)
 * social cognitive domains, such as the “why’s” and “how’s” of deception,
-  persuasion, and person perception as they occur through verbal behavior. In
+  persuasion, and person perception as they occur through verbal behavior
   * persuasion has begun to thrive, with scholars starting to leverage language
     * how social appraisals are shaped by subtle linguistic cues
       (Althoff+ 2014; Markowitz, 2019)
