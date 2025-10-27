@@ -28,14 +28,14 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 
 # Intro
 
-* AI integration of modalities is often fragmented (Lazaro+ 2021; Gu+ 2017).
+* integration of modalities is often fragmented (Lazaro+ 2021; Gu+ 2017).
 * Speech to text models, like Whisper (Radford+ 2022), are
   often pipelined into text-based language models (LMs, Chuang+ 2020)
   in order to get the most accurate speech-based representations (see Figure 1).
   * redundant computational costs from having two LMs in the pipeline, and
     representations remain incomplete of the full spectrum of human expressions
     (Zhang+ 2023; Lian+ 2023).
-* in psychological and social scientific applications, representations from
+* in psychological and social scientific applications,
   text-based LMs demonstrate superior performance
   than direct speech representations (Lukac, 2024; Chen+ 2024).
 * we seek to bridge the semantic and psychological representation gap between
@@ -47,16 +47,13 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     to better capture semantics and deeper psychological information
     (V Ganesan+ 2022; Park+ 2014)
   * reduces computational and memory inefficiencies,
-    circumventing the need for a second text encoder, as it enables 
+    circumventing the need for a second text encoder
   * a unified crossmodal representation between speech and language models.
 * focus on psychological or human-level tasks
   * growing demand for foundation models to better understand the intrinsic
-    qualities of hucommunication (Soni+ 2024).
-  * As Clark and Schober (1992) put it,
-    “The common misconception is that language has to do with words and what
-    they mean. It does not. It has to do with people and what they mean.”
+    qualities of human communication (Soni+ 2024).
   * how well the representations capture information about the people
-    communicating (Hovy and Yang, 2021; Soni+ 2022). More specifically,
+    communicating (Hovy and Yang, 2021; Soni+ 2022)
   * mental health attributes are highly multimodal as they are influenced by
     subtle nuances in voice and content (Sartori and Orrù, 2023; Chen+ 2024).
 * significant accuracy improvements
@@ -83,11 +80,10 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
   * Prior works that have addressed this have targeted a very narrow scope of
     psychological attributes (Busso+ 2008).
   * need for bridging speech encoders’ acoustic robustness
-    with the psychological depth of text-based language models—a challege
+    with the psychological depth of text-based language models
     * ie embedding fundamental psychological dimensions present in one’s speech.
 * Multi-level fusion architectures leveraging both acoustic and lexical features
-  * improve performance in emotion recognition, speaker identification, and
-    other downstream tasks
+  * improve performance in emotion recognition, speaker identification, etc
   * Zhao+ (2022) demonstrates that
     coattention-based early fusion and late fusion
     using Wav2Vec2.0 (Baevski+ 2020; Schneider+ 2019) and BERT (Devlin+ 2019)
@@ -103,7 +99,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     distilled audio-visual knowlege into video representations
     by aligning teacher-student embeddings across modalities,
     embedding rich semantics from teacher-audio and image models into the
-    studentvideo model.
+    student-video model.
   * Dong+ (2022): intent classification of spoken language
     * contrastive loss using both speech and language features
   * sum
@@ -119,7 +115,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     * SLAM (Speech-Language Aligned Models, Bapna+ 2022), which
       optimized joint embedding spaces
       to improve downstream tasks like speech recognition and audio-text retriev
-* we are the first work to perform cross-modal learning to endow the
+* we are the first to perform cross-modal learning to endow the
   foundational speech model with richer semantic and psychological reprs
 
 # 3 Data & Tasks
@@ -127,16 +123,15 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 ## Audio Dataset: two psychological, mental health-focused datasets
 
 * for training and evaluation:
-* WTC-Segments (WTC, Kjell+ 2024) and
+* WTC-Segments (WTC, Kjell+ 2024)
   * recordings were completed by patients in a clinic for World Trade Center
     (9/11) responders who came for a health monitoring visit.
 * HiTOP-Segments (HiTOP, Kotov+ 2022).
   * interviews were completed by outpatients with psychiatric diagnoses who were
     recruited by the study team to complete a research interview.
 * Both datasets consist of paired audio-text data, ensuring alignment
-* From its source, WTC was curated from ∼6 minute interview recordings, on
-  average, of patients responding to both personal and general questions in
-  a structured manner (Kjell+ 2024).
+* WTC ∼6 minute interview recordings, on average, of patients responding to both
+  personal and general questions in a structured manner (Kjell+ 2024).
 * != HiTOP followed a semi-structured format, where
   patients described experiences on set topics while
   also organically conversing with the interviewer
@@ -145,26 +140,25 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     a voluminous and broadened set of audio segments (Kotov+ 2022)
 * diarized using NVIDIA NeMo and transcribed with whisper-large-v2.
 
-## Psychological Assessments. For each dataset, psychological measures were
+## Psychological Assessments. For each dataset, psychological measures
 
 * WTC, each subject completed the self-reported PTSD CheckList (PCL), yielding
   scores for four specific subscales: Re-experiencing (REX), Avoidance (AVO),
   Negative Alterations in Mood (NAM), Hyperarousal (HYP).
-* HiTOP, trained interviewers provided ratings for the following
-  six psychopathology scales: Internalizing (INT), Disinhibition (DIS),
-  Antagonism (ANT), Somatoform (SOM), Thought-Disorder (THD), and Detachment
-  (DET), (Kotov+ 2022, 2024).
-* Three random audio segments containing more than 5 uttered words from each
-  user were sampled from each dataset and were
-  annotated by two individuals with a background in psychology using the
-  affective circumplex scale (Figure 8).
-  This resulted in 300 audio segments, equally split between the two datasets.
+* HiTOP, trained interviewers provided ratings for 6 psychopathology scales:
+  Internalizing (INT), Disinhibition (DIS), Antagonism (ANT), Somatoform (SOM),
+  Thought-Disorder (THD), and Detachment (DET), (Kotov+ 2022, 2024).
+* 3 random audio segments containing > 5 words from each user were
+  sampled from each dataset and were
+  * annotated by two individuals with a background in psychology using the
+  * affective circumplex scale (Figure 8).
+  * This resulted in 300 audio segments, equally split between the two datasets.
 
 ## Self-Supervised PsychEmb
 
-* For each audio/text pair in our datasets, we extract theoretically derived
-  psychological features using PsychEmb
-* PsychEmb: pre-trained lexica (V Ganesan+ 2022), which we
+* For each audio/text pair in our datasets, we extract
+  theoretically derived psychological features using PsychEmb
+* PsychEmb: pre-trained lexica (V Ganesan+ 2022)
   * broadly covers three domains of psychological constructs
     measured at different temporal granularity:
   * states, which reflect the emotional condition of the person
@@ -184,26 +178,26 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 
 * Aligning audio representations directly with a text-based language model
   ~> infuse the audio model’s latent space with the rich semantic and affective
-  details typically provided by text representations, thereby eliminating the
-* not explicitly leverage the unique acoustic features of speech, it prioritizes
+  details typically provided by text representations
+* not explicitly leverage the unique acoustic features of speech
 * efficiency: avoiding redundant processing and
-* consistently semantically enriched representation—an advantage that is
-  particularly critical for psychological and social scientific applications
-  (Lukac, 2024; Chen+ 2024)
+* consistently semantically enriched representation
+  * particularly critical for psychological and social scientific applications
+    (Lukac, 2024; Chen+ 2024)
 
 ## 4.0 Model Architecture: Fig 2
 
-* We begin with the Whisper encoder-decoder backbone (Radford+ 2022), which
+* Whisper encoder-decoder backbone (Radford+ 2022)
   * Whisper-384 version, whisper-tiny
   * does not run autoregressively.
   * we denote the pre-trained Whisper model as Whisper-384, where
   * the numeric suffix refers to the embedding dimensionality.
-* audio segments are previously transcribed with whisper-large-v2, making it
-* SBERT and PsychEmb representations were encoded using these transcriptions. As
+* audio segments are previously transcribed with whisper-large-v2
+* SBERT and PsychEmb representations were encoded using these transcriptions
 * Whisper (Student)
 * mean pooling layer to the last hidden state of Whisper’s decoder
-* then learnable dense layer, and the output serves as our embedding during
-  alignment. This aggregated representation is
+* then learnable dense layer, and the output serves as our embedding
+  during alignment. This aggregated representation is
 * aligned to
   * the pooled representations from pre-trained SBERT for semantic alignment and
   * the PsychEmb’s dimensions for psychological alignment.
@@ -214,8 +208,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 
 ### 4.1.1 Cosine Similarity Loss (CS)
 
-* rel work: success of the cosine similarity-based approach in building
-  geometrically robust representations in SBERT
+* rel work: cosine sim ~> geometrically robust representations in SBERT
   (Reimers and Gurevych, 2019; Sanh+ 2020)
 
 ### 4.1.2 Noise Contrastive Estimation Loss (NCE)
@@ -231,13 +224,11 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 
 * student-teacher model paradigm (Hinton+ 2015; Sanh+ 2020) to
   align Whisper’s audio-based embeddings with SBERT’s text-based embeddings,
-  * teacher = SBERT encodes corresponding text sentences into semantically rich
-    embedding vectors, which serve as T in the above equations during training.
-  * Whisper’s embeddings (A in the above equations), derived from its decoder’s
-    last hidden state, are aligned to these SBERT embeddings
-    using the loss functions described above. This process is
+  * teacher = SBERT encodes text sentences into semantically rich embedding
+    * T in the above equations
+  * Whisper’s decoder’s last hidden state (A in the above equations) are aligned
   * aim: WhiSA to learn robust semantic representations directly from audio
-  * by minimizing the cosine distance between Whisper and SBERT embeddings as
+  * by minimizing the cosine distance between Whisper and SBERT embeddings
 
 ## 4.3  Adding Psychological Alignment (WhiSPA)
 
@@ -248,12 +239,12 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
   * replacement: a naive strategy (WhiSPA-384 r to refer to this)
     * replacing the first ten dimensions of SBERT’s embedding with the PsychEmb
       dimensions
-      to maintain the same number of latent dimensions between both models. We use
-  * projection: (WhiSPA-394)
+      to maintain the same number of latent dimensions between both models
+  * projection (WhiSPA-394)
     * concatenate the PsychEmb dimensions to the text embedding from SBERT.
-    * requires a 384 × 10 learnable projection matrix, P ,
+    * requires a 384 × 10 learnable projection matrix P
       to transform Whisper embeddings of dimensionality 384 to 394, which is
-      then passed through a TanH activation. This model goes by the name
+      then passed through a TanH activation
 * numerical instability issues from modeling the PsychEmb dimensions in its
   absolute range, we
   ~> standardize and scale them to match SBERT’s distribution of embeds, see A.2
@@ -261,142 +252,124 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
 # 5 Results & Discussion
 
 * 3 popular, robust speech encoders as baselines (W2V2B, HuBERT, Whisper-384)
-  * Wav2Vec2-BERT 4 (Communication+ 2023; Chung+ 2021)
+  * Wav2Vec2-BERT (Communication+ 2023; Chung+ 2021)
   * HuBERT 5 (Hsu+ 2021)
   * Whisper (Radford+ 2022)
 * metric: Pearson correlation coefficient (r) and mean squared error (mse)
-  over a 10-fold cross-validated ridge regression model for each task. For each
-  model variant, we encode audio segments for each participant and aggregate
-  them with a statistical mean to represent person-level embeddings for the
-  tasks in Table 2 and Table 3.
+  * 10-fold cross-validated ridge regression model for each task
+  * person-level embed: For each model variant, we encode audio segments for
+    each participant and aggregate them with a statistical mean to represent
+    person-level embeddings for the tasks in Table 2 and Table 3.
 
-## Alignment improved the models’ ability to capture psychological dimensions
-from language. We evaluated the speech-based models’ ability to capture the
-psychological dimensions of language by comparing our models’ predictions to
-PsychEmb derived values at the segment level. As summarized in Table 2, we found
-that both semantic (WhiSA) and psychological alignments (WhiSPA) significantly
-outperformed traditional speech-based models (W2V2B and Whisper) across all
-ten dimensions on both metrics. Compared to Whisper, which was evidently a
-stronger baseline than W2V2B (Avg∆ = 36 Pearson points for WTC & 21 points for
-HiTOP), our semantic alignment method showed a marked improvement in
-performance, with an average of 11 in Pearson points for WTC and 2 in HiTOP. A
-paired t-test was used to confirm that all improvements over W2V2B and all
-improvements over Whisper, except for 4 outcomes in HiTOP, were statistically
-significant (p < .05). This result highlighted our alignment methods improved
-the speech model’s ability to capture psychological dimensions in language
-(PsychEmb).
-Interestingly, deriving psychological estimates from semantic dimensions
-(WhiSPA-394) was consistently better than the replacement (WhiSPA384 r) of 10
-semantic dimensions with PsychEmb dimension. This shows the importance of
-curating the semantic dimensions before replacing them with different
-embeddings.
-* the alignment increased the overlap between the latent space of the speech and
-  text embeddings, as shown in Figure 3. Before alignment (Figure 3a), speech
-  and text embeddings show distinct contours with very little overlap in their
-  dense regions, highlighting a clear modality gap and a lack of shared
-  contextual meaning. After alignment (Figure 3b), the contours exhibit greater
-  overlap, indicating a unified embedding space with reduced variance.
-Figure 3 demonstrates that the alignment process effectively bridges the
-semantic gap between the two modalities.
+## Alignment improved the models’ ability to capture psychological dims (Tab 2)
 
-## Semantic-Psychological alignment is SotA for speech-based psychological
-assessments. Table 3 shows that the improvements brought by our aligned models
-over traditional models were preserved even when
-* evaluated on a spectrum of downstream psychological assessment tasks. In
-  * a stark increase in capturing deeper psychological conditions such as INT
-    (internalizing) (≥ 16 Pearson points) and DIS (disinhibition) (≥ 20 Pearson
-    points) from very long durations of speech data. Consistent with behaviours
-    exhibited with PsychEmb dimensions, in Table 2,
+* both semantic (WhiSA) and psychological alignments (WhiSPA) significantly
+  outperformed traditional speech-based models (W2V2B and Whisper) across all
+  ten dimensions on both metrics. 
+  * Compared to Whisper, which was evidently a stronger baseline than W2V2B
+    (Avg∆ = 36 Pearson points for WTC & 21 points for HiTOP), our semantic
+    alignment method showed a marked improvement in performance, with an average
+  * paired t-test was used to confirm that all improvements over W2V2B and all
+    improvements over Whisper, except for 4 outcomes in HiTOP, were
+    statistically significant (p < .05).
+* WhiSPA-394 (learnable projs = psychological estimates from semantic dims)
+  was consistently better than the replacement (WhiSPA384 r) of 10 semantic
+  dimensions with PsychEmb dimension. This shows the importance of curating the
+* fig 3: overlap between the latent space of the speech and text embeddings, as
+  * Before alignment (Figure 3a), speech and text embeddings show distinct
+    contours with very little overlap in their dense regions, highlighting a
+    clear modality gap and a lack of shared contextual meaning.
+  * After alignment (Figure 3b), the contours exhibit greater overlap,
+    indicating a unified embedding space with reduced variance.
+
+## Semantic-Psychological alignment is SotA for speech-based psy assess (Tab 3)
+
+* evaluated on a spectrum of downstream psychological assessment tasks
+  * a stark increase in capturing deeper psychological conditions 
+    eg INT (internalizing) (≥ 16 Pearson points) and DIS (disinhibition) (≥ 20)
+    from very long durations of speech data. Consistent with behaviours
 * which method, tab 2
   * semantic-psychological alignment from semantically-derived psychological
     dimensions (WhiSPA-394) performed the best, followed by
   * semantic-psychological alignment from replacement (WhiSPA-384 r) and finally
   * semantic-only alignment (WhiSA-384).
-    For these tasks, we averaged the segment-level representations of the
-    interview audio file to produce a person-level embedding. These embeddings
-    were used to perform 10-fold cross-validation with a ridge regression model,
-    and its performance was measured using Pearson correlation coefficient (r)
-    and mean squared error (mse).
+  * 10-fold cross-validation with a ridge regression model, and its 
+    perf measured using Pearson corr coeff (r) and mean squared error (mse)
 * psychological feature alignment complements semantic alignment
   by explicitly encoding affective dimensions such as valence and arousal. The
   improvements in outcomes like INT and DIS further support this interpretation
   * these constructs often rely on subtle vocal cues, such as
     pause distribution, pitch variability, and vocal tone as estab (Kotov+ 2024)
-* By injecting dimensions with psychological relevance into the alignment
-  process, the model bridges the gap between the prosodic information in speech
-  and the textual semantics used to train baseline models like WhiSA. This dual
-  alignment likely enhances the model’s ability to capture both the what
-  (semantic content) and the how (affective delivery) of speech, enabling more
-  accurate predictions of psychological scales.
+* By injecting dimensions with psychological relevance into the alignment,
+  the model bridges the gap between the prosodic information in speech and the
+  textual semantics used to train baseline models like WhiSA. This dual
+  * ie capture both the what (semantic content) and the how (affective delivery)
 
 ## Contrastive loss criteria led to richer representations of audio (Table 4)
 
 * Noise Contrastive Estimation (NCE) consistently produced a better-aligned
   than cosine similarity (CS). This is
   likely because NCE optimizes for discriminative learning,
-  encouraging more separation between positive and negative samples in the
-  embedding space (Ye+ 2022), enhancing the model’s ability to encode nuanced
-  semantic and psychological cues. When
+  encouraging more separation between positive and negative samples (Ye+ 2022),
+  enhancing the model’s ability to encode nuanced semantic and psychologic cues
 * comparing WhiSPA-394 and WhiSPA-384, we notice the
   * recurring trend with NCE granting a greater optima during alignment than CS
     as exemplified in Table 4.
   * WhiSPA-384 holds its ground in HiTOP, achieving comparable correlations.
 
-## WhiSPA effectively scales to larger dimension-
-alities. To investigate the effects of utilizing a
-larger teacher LM, we conducted experiments with
-all-roberta-large-v1 (∼330M) paired with
-whisper-medium (∼796M) as the audio backbone,
-each with 1024 embedding dimensions. Table 5
-shows that the distillation process remains effective
-for aligning larger student-teacher model configura-
-tions, further validating its scalability and general-
-izability for the downstream task. When comparing
-Whisper-384 to WhiSPA-394, we observe an aver-
-age error reduction of 83.38%, while the 1024-
-sized models show an even greater reduction of
-86.61%. A larger audio backbone also improves
-the consistency with which the student model out-
-performs its language-based teacher, likely due to
-enhanced context retention afforded by a larger
-parameter space. For example, WhiSPA-394 sur-
-passes its teacher in only 2 of 11 outcomes, whereas
-WhiSPA-1034 does so in 7 of 11 psychological
-assessments. These findings underscore the effec-
-tiveness of our distillation strategy, particularly for
-larger models offering greater embedding dimen-
-sionality.
+## WhiSPA effectively scales to larger dimensionalities (Tab 5)
 
-## WhiSPA captures semantics without the need
-for appending SBERT representations. The
-last row in Table 6 underscores the marginal in-
-crease in correlations after appending SBERT em-
-beddings to WhiSPA. WhiSPA, trained through
-a student-teacher alignment paradigm, appears
-to reach a semantic and psychological optimum
-during convergence. This is evident in its sub-
+* ? larger teacher LM, we conducted experiments with all-roberta-large-v1
+  (∼330M) paired with whisper-medium (∼796M) as the audio backbone, each with
+  1024 embedding dimensions. Table 5 shows that 
+* the distillation process remains effective for aligning larger student-teacher
+  model configurations, further validating its scalability and generalizability
+  for the downstream task. 
+* err reduc
+  * so far: When comparing Whisper-384 to WhiSPA-394, we observe an average error
+    reduction of 83.38%, while 
+  * the 1024-sized models show an even greater reduction of 86.61%. A larger audio
+* the consistency with which the student model outperforms its language-based
+  * likely due to enhanced context retention afforded by a larger parameter
+  * WhiSPA-394 surpasses its teacher in only 2 of 11 outcomes, whereas
+  * WhiSPA-1034 does so in 7 of 11 psychological assessments.  These findings
 
-## WhiSPA’s representations are interpretable
-through language semantically associated with
-psychological dimensions. Table 7a shows that
-n-grams known to be indicative of PTSD severity
-from prior studies (Kjell+ 2024) —including
-first-person pronouns, experienced symptoms, psy-
-chological distress, and negative affect – yield sig-
-nificantly higher correlations with WhiSPA’s pre-
-dictions compared to Whisper. In contrast, Table 7b
-reveals that language discussing relationships and
-positive affect is more negatively associated with
-WhiSPA’s scores. These findings indicate that the
-contrastive loss training effectively aligns the la-
-tent space with rich semantic and psychological
-representations, capturing psychologically relevant
-linguistic markers more robustly. The highly se-
-mantic latent spaces of text-based LMs are reflected
-in WhiSPA’s representations, especially for psycho-
-logical nuances in spoken language. More quan-
-titative analysis of our model can be found in Ap-
-pendix subsection A.4
+## WhiSPA captures semantics without the need for appending SBERT
+representations. The last row in Table 6 underscores the marginal increase in
+correlations after appending SBERT embeddings to WhiSPA. WhiSPA, trained
+through a student-teacher alignment paradigm, appears to reach a semantic and
+psychological optimum during convergence. This is evident in its substantial
+performance gains over Whisper, which lacks the semantic and psychological depth
+provided by language models. However, the potential of cross-modal alignment
+may be constrained by the representational efficacy of the teacher model(s). On
+human-annotated audio segments, all of the WhiSPA variants achieve substantial
+improvements in capturing acoustic valence. In comparison with Whisper-384,
+WhiSPA-384 r exhibits a gain of +15 Pearson points in VAL (acoustic valence)
+which exemplifies the reduction in the semantic/psychological gap between audio
+models and text-based models. Notably in Figure 4, WhiSPA-1034 demonstrates
+clear improvements in the majority of outcomes, with an average gain of +2
+Pearson points, when compared to its teacher, SBERT-1024.
+Ultimately, these findings highlight two important observations: (1) WhiSPA
+effectively captures nearly all the information encoded by its textbased
+teacher model, SBERT. (2) The marginal returns from appending text-based
+representations indicate that WhiSPA successfully learns to encode the critical
+semantic and psychological cues provided by its teachers, reflecting the
+success of the distillation.
+
+## WhiSPA’s representations are interpretable through language semantically
+associated with psychological dimensions. Table 7a shows that n-grams known to
+be indicative of PTSD severity from prior studies (Kjell+ 2024) —including
+first-person pronouns, experienced symptoms, psychological distress, and
+negative affect – yield significantly higher correlations with WhiSPA’s pre-
+dictions compared to Whisper. In contrast, Table 7b reveals that language
+discussing relationships and positive affect is more negatively associated with
+WhiSPA’s scores. These findings indicate that the contrastive loss training
+effectively aligns the latent space with rich semantic and psychological
+representations, capturing psychologically relevant linguistic markers more
+robustly. The highly semantic latent spaces of text-based LMs are reflected in
+WhiSPA’s representations, especially for psychological nuances in spoken
+language. More quantitative analysis of our model can be found in Appendix
+subsection A.4.
 
 # 7 Limitations
 
