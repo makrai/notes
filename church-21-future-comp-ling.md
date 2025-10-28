@@ -81,8 +81,8 @@ Front. Artif. Intell., 19 April 2021 Sec. Language and Computation Volume 4 -
                                                                      Mark Twain
 
 * it is a good bet that the future will not be like the present. There was
-  considerable relevant history before the 1950s, and there will certainly be
-  more changes in the future.
+  considerable relevant history before the 1950s, and
+  there will certainly be more changes in the future.
 * the times may be ripe for change, though it is hard to say in which direction
   * will involve some combination of logic, probability and connectionism,
   * probably in different proportions from what they are now, or what they were
@@ -90,8 +90,8 @@ Front. Artif. Intell., 19 April 2021 Sec. Language and Computation Volume 4 -
   * classes on computational linguistics are removing many topics that we used
 * Consider BERT (Devlin+ 2018). Transformer nets have taken the field by storm,
   * 14k citations for this one BERT paper in just two years, with
-  * many more citations for other transformer nets: ERNIE (Sun+ 2020), GPT5
-    (Brown+ 2020), ELMO (Peters+ 2018), etc. Given all this excitement over
+  * many more citations for other transformer nets:
+    ERNIE (Sun+ 2020), GPT (Brown+ 2020), ELMO (Peters+ 2018): excitement
   * will there be a future beyond BERT? Probably so, given that
   * history of paradigm changes every few decades.
 * Sometimes the theory is ahead of the practice,6 but these days, the
