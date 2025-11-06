@@ -1,6 +1,6 @@
-A Cognitive Regularizer for Language Modeling\
-Jason Wei, Ryan Cotterell , Clara Meister\
-ACL 2021 arXiv:2105.07144 [cs.CL]
+                 A Cognitive Regularizer for Language Modeling
+                   Jason Wei, Ryan Cotterell , Clara Meister
+                       ACL 2021 arXiv:2105.07144 [cs.CL]
 
 # Abstract
 
