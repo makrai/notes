@@ -20,7 +20,7 @@ ACL 2025
 
 # 1 Introduction
 
-* Affect encompasses both emotion and mood, is
+* Affect: emotion and mood
   * crucial in conversations, influencing eg empathy, sarcasm, and naturalness
     (Ruusuvuori, 2012)
 * In the domain of conversational agents (CAs), recognizing and responding to
@@ -29,13 +29,13 @@ ACL 2025
   annotations, and vicarious emotion ratings such as empathy and condolence
   (Busso+ 2008; Ma+ 2020; Karna+ 2020). While affect-annotated
   * Carlos Busso, Murtaza Bulut, Chi-Chun Lee, Abe Kazemzadeh, Emily Mower,
-      Samuel Kim, Jeannette N Chang, Sungbok Lee, and Shrikanth S Narayanan.
-    IEmoCap: Interactive emotional dyadic motion capture database.  
-    Language resources and evaluation, 2008 42:335–359.
-  * Yukun Ma, Khanh Linh Nguyen, Frank Z Xing, and Erik Cambria. . 
-    A survey on empathetic dialogue systems. Information Fusion, 2020 64:50–70.
-  * Mounika Karna, D Sujitha Juliet, and R Catherine Joy.
-    Deep learning based text emotion recognition for chatbot applications.
+      Samuel Kim, Jeannette N Chang, Sungbok Lee, and Shrikanth S Narayanan
+    IEmoCap: Interactive emotional dyadic motion capture database
+    Language resources and evaluation, 2008 42:335–359
+  * Yukun Ma, Khanh Linh Nguyen, Frank Z Xing, and Erik Cambria. 
+    A survey on empathetic dialogue systems. Information Fusion, 2020 64:50–70
+  * Mounika Karna, D Sujitha Juliet, and R Catherine Joy
+    Deep learning based text emotion recognition for chatbot applications
     2020 IEEE Intl Conference on Trends in Electronics and Informatics
 * datasets exist across general and specialized domains,
 * inconsistencies in annotation schemas and objectives (Liu+ 2021; Islam+ 2022)
@@ -46,9 +46,9 @@ ACL 2025
   a generalization of findings across datasets
 * domain-specific models, such as diff-Epitome (Lee+ 2022), are
   * trained within a specific domain but later applied broadly
-  * need for standardized affect evaluation (Schaaff+ 2023).
+  * need for standardized affect evaluation (Schaaff+ 2023)
   * A generalizable framework for modelling affect in conversations could
-    address these challenges 
+    address these challenges
     ~> more consistent benchmarking for conversational agents
 * we: Appraisal Theory provides a generalizable framework
   * emotions as responses to an individual’s evaluation of a stimulus along
@@ -58,14 +58,14 @@ ACL 2025
   * allows for the modelling of emotional intensity and duration
   * enables the analysis of affect flow, or
     how emotions evolve throughout a conversation (Hendriks+ 2014; Poria+ 2019b)
-  * hypoth
+  * hypoth (Sec 6: yes, yes)
     1. appraisal-theoretic emotion analysis
       aligns with existing emotion annotations
     2. such a cognitive analysis captures affect flow:
       ie emotion change over the course of a conversation
 * we introduce AppraisePLM, a model for appraisal regression and emo classif
-  * trained on the crowd-ENVent corpus.  Crowd-ENVent is
-    * a benchmark corpus for emotion recognition and appraisal analysis
+  * trained on the crowd-ENVent corpus.  
+    * Crowd-ENVent: benchmark corpus for emotion recognition and appraisal anal
     * fine-grained annotations of event descriptions on 21 appraisal dims
       eg pleasantness, self-control, and suddenness (Troiano+ 2023)
 * AppraisePLM outperforms existing classifiers and regressors on this dataset
@@ -74,8 +74,8 @@ ACL 2025
   DailyDialog (Li+ 2017), and EPTiome (Sharma+ 2020)
   * AppraisePLM improves appraisal estimation performance on the crowd-ENVent
   * it can extrapolate categorical and emotion labels
-* corpus domain influences affect flow, with distinct patterns emerging in
-  specific domains (eg empathetic conversations improving pleasantness)
+  * corpus domain influences affect flow, with distinct patterns emerging in
+    specific domains (eg empathetic conversations improving pleasantness)
 
 # 2 Background and Motivation
 
@@ -90,7 +90,7 @@ ACL 2025
   * eg joy, fear, sadness, anger, surprise, disgust, and neutral
   * varying numbers of emotion categories, ranging from finegrained annotations
     to broader affect labels (Qin+ 2023). The veracity [igazságtartalma] and
-    similarity of emotions can differ significantly by domain, raising 
+    similarity of emotions can differ significantly by domain, raising
     * ? accessibility and identification of fine-grained emotions in
       conversation (Hancock+ 2007; Machová+ 2023)
 * The Valence-Arousal-Dominance (VAD) model is a prevalent dimensional model
@@ -115,14 +115,14 @@ ACL 2025
   * Empathetic Dialogues is a open-domain empathetic conversat benchmark corp
     (EDOS Rashkin+ 2019)
   * 32 fine-grained emotion labels
-* mental health specific corpora, 
-  * such as 
-    * Epitome (Sharma+ 2020), 
-    * ALoE (Yang and Jurgens, 2024), 
+* mental health specific corpora,
+  * such as
+    * Epitome (Sharma+ 2020),
+    * ALoE (Yang and Jurgens, 2024),
     * PAIR (Pérez-Rosas+ 2022), and ESConv (Liu+ 2021)
   * not directly annotate emotion. Instead, they
   * assess characteristics of empathetic interactions using direct annotator
-    ratings, like Emotional Interpretation in Epitome . 
+    ratings, like Emotional Interpretation in Epitome 
   * This approach allows models to access desirable interactional behaviours
     without relying solely on emotion (Lahnala+ 2022)
   * have been used to benchmark open-domain conversational agents (Lee+ 2024)
@@ -133,7 +133,7 @@ ACL 2025
 
 ## 2.3 Appraisal Theory in Language and Conversation Analysis
 
-* Appraisal theory posits that
+* Appraisal theory:
   experienced emotions result from cognitive appraisals of event stimuli,
   such as pleasantness, suddenness, controllability, or alignment with social
   norms (Ellsworth and Smith, 1988)
@@ -158,88 +158,83 @@ ACL 2025
     * specifically for text analysis, studying the
       relationship between appraisals, emotions, and event descriptions
 
-# 3 The AppraisePLM Framework
+# 3 The AppraisePLM conversation anal framework
 
-* this section: AppraisePLM, an appraisal-theoretic conversation anal framework 
-  * estimates the aggregate change(s) and patterns in how the interlocutors
-    appraise the conversation over time. First, 
-
-## 3.1--3.3 Crosscomparability of appraisals with other reprs (§3.1-3.3) then
+* AppraisePLM estimates the aggregate change(s) and patterns in
+  how the interlocutors appraise the conversation over time
 
 ## 3.1 Problem Definition
 
-* Given a dataset D = {(e i , l i , c i )} N i=1 where 
-* e i is the ith event description (text), 
-* l i is a vector of a event description appraisals, and 
+* Given a dataset D = {(e i , l i , c i )} N i=1 where
+* e i is the ith event description (text),
+* l i is a vector of a event description appraisals, and
 * c i ∈ C is a label from the set of n emotion class labels C, we perform the
 
-### Appraisal Estimation Train a function f app : R d → R a where 
+### Appraisal Estimation Train a function f app : R d → R a where
 
-* d is the dimensionality of the encoded event description PLM(e i ) and 
-* a is the number of appraisals. The objective of this function is to 
+* d is the dimensionality of the encoded event description PLM(e i ) and
+* a is the number of appraisals. The objective of this function is to
 * find `θ_{app}` with least squares
 
-### Emotion Classification: train a function f emo : R d ×R a → C, where 
+### Emotion Classification: train a function f emo : R d ×R a → C, where
 
-* d is the dimensionality of the encoded event description PLM(e i ), 
-* C is a set of n emotion class labels, and 
-* $a$ is the number of appraisals. The objective of this function is to 
+* d is the dimensionality of the encoded event description PLM(e i ),
+* C is a set of n emotion class labels, and
+* $a$ is the number of appraisals. The objective of this function is to
 * find `θ_{emo*} = \arg min \mean 1_[c_i=k] \cdot \ln f_{emo}(comb)`
-  
+
 ## 3.2 Dataset Characteristics (crowd-EnVent)
 
-* 6,600 event descriptions (550 event descriptions for 13 emotion labels). 
-* Each event is annotated with 21 appraisal variables, which 
-* appraisal variables are cognitive evals of the event by the event’s author.
+* 6,600 event descriptions (550 event descriptions for 13 emotion labels)
+* Each event is annotated with 21 appraisal variables, which
+* appraisal variables are cognitive evals of the event by the event’s author
 * The finegrained emotion labels allow us to analyze how experiencers appraise
-  various emotions (including a no-emotion label). The 
-* distribution of appraisal values is skewed, > 33% of the corpus either 1 or 5.
+  various emotions (including a no-emotion label). The
+* distribution of appraisal values is skewed, > 33% of the corpus either 1 or 5
 * Their approach for appraisal classification involves a two-class classif,
   which we do not use as the differences in appraisal values are a critical step
-  in AppraisePLM.
+  in AppraisePLM
 
 ## 3.3 Model Framework
 
-* The proposed AppraisePLM multitask framework 
+* The proposed AppraisePLM multitask framework
   jointly performs appraisal regression and emotion classification using
-  attention-attenuated pretrained language models (PLMs) such as 
+  attention-attenuated pretrained language models (PLMs) such as
   eg RoBERTa (Liu+ 2019), DeBERTa (He+ 2020), MP-Net (Song+ 2020) and
-  T5 (Raffel+ 2020); with 
-  * Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, and TieYan Liu. 2020. 
-    Mpnet: Masked and permuted pretraining for language understanding.
+  T5 (Raffel+ 2020); with
+  * Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, and TieYan Liu. 2020
+    Mpnet: Masked and permuted pretraining for language understanding
     NeurIPS 2020
   * DeBERTa yielding the best performance. Figure 1 provides a simple schematic
 * event description is embedded using a PLM encoder and a multihead attention
 * Each appraisal dimension has a task-specific multihead attention layer and
-  linear head. Regression is trained with 
-* individual MSE losses for all appraisal values.
+  linear head
+* individual MSE losses for all appraisal values
 * Emotion classification utilizes
-  both the PLM representation and predicted appraisal values. The encoded
-  * concatenated, normalized and regularized before being decoded by another
-    multihead attention layer and a linear classification head. Clas-
-  * cross-entropy loss.
+  both the PLM representation and predicted appraisal values
+  * concatenated, normalized and regularized
+    then decoded by another multihead attention layer and a linear classif head
+  * cross-entropy loss
 
 ## 3.4 AppraisePLM Results and Performance
 
-* Tab 1 performance of the AppraisePLM architecture on the crowd-enVENT dataset,
-  compared to the baseline model. While 
+* Tab 1: Performance of the AppraisePLM architecture on crowd-enVENT vs baseline 
   * attention attenuation marginally improves appraisal estimation,
-    DeBERTa-large achieves the highest performance.
-  * hE limited improvement in regression scores reflects the task’s complexity
-    (see Appendix D).
-* Appraisal representations enhance categorical emotion detection, with 
-  * event descriptions appended with appraisal information 
-  ~> a 0.11 macro avg F1 improvement over the baseline.
+    DeBERTa-large achieves the highest performance
+  * hE limited improvement in regression scores <~ the task is complex (App D)
+* Appraisal representations enhance categorical emotion detection
+  * event descriptions appended with appraisal information
+  ~> a 0.11 macro avg F1 improvement over the baseline
 * Multi-head attention slightly improves standard emotion classification (T → E
-  in Table 6), but the 
+  in Table 6), but the
 * nL AppraisePLM architecture shows a more substantial boost when integrating
-  both text and appraisal data.
-* Figure 6?/2 visualizes appraisal estimates across emotions using DeBERTa-large
-  AppraisePLM, with 
-  * emotions ordered by pleasantness. As expected, 
-  * no-emotion separates positive and negative emotions, with 
-  * joy being the most pleasant and disgust the least. 
-  * Unpleasantness follows the inverse trend, while 
+  both text and appraisal data
+* Figure 6?/2 visualizes appraisal estimates across emotions using DeBERTa-large 
+  AppraisePLM, with
+  * emotions ordered by pleasantness
+  * no-emotion separates positive and negative emotions, with
+  * joy being the most pleasant and disgust the least
+  * Unpleasantness follows the inverse trend, while
   * urgency, attention, and other-control exhibit
     minimal variation across emotions
 
@@ -249,95 +244,94 @@ ACL 2025
 
 # 6 Discussion
 
-* Appraisal theory, as a model of emotion realized in text, is 
-  based on post-hoc or simulated appraisals of cognitive dimensions correlated
-  with universal emotion labels. 
+* Appraisal theory, a model of emotion realized in text
+* AT is based on post-hoc or simulated appraisals of cognitive dimensions
+  correlated with universal emotion labels
 * We approximate conversation segments (situation, turn, or response) as event
-  descriptions, assuming that 
+  descriptions, assuming that
   post-hoc contextual rating of appraisals preserves the relationship between
-  semantic and cognitive representations of affect. 
+  semantic and cognitive representations of affect
 * Our analysis of conversational corpora using appraisal estimation
-  * mixed quantitative results but promising qualitative insights.
+* mixed quantitative results nL promising qualitative insights
 * Label inconsistencies complicate the evaluation of emotion detection in
-  AppraisePLM.
-* In this section, we examine the veracity of the hypotheses mentioned in §1.
+  AppraisePLM
+* In this section, we examine the veracity of the hypotheses mentioned in §1
 
 ## 6.1 H1: Aligning with Extant Affect Annotations
 
-* H1: appraisal-theoretic emotion analysis aligns with existing emotion an-
-  notations. 
-  * We tested this at multiple levels by examining patterns of appraisal
-    estimates for the overall corpus, characterized by its domain and annotation
-    level (conversation, turn, or response).
-* fully textual corpora, such as E M PATHETIC D IALOGUES and DailyDialog,
-  * significantly higher alignment in categorical labels between the AppraisePLM
-    emotion classification and existing annotations. 
-  * This finding is notable, as both corpora have different approaches and goals
-    for affect annotation.
+* H1: appraisal-theoretic emotion analysis aligns with existing emotion annots
+* We tested this at multiple levels by examining patterns of appraisal estimates
+  for the overall corpus, characterized by its domain and annotation level
+  (conversation, turn, or response)
+* fully textual corpora, such as Empathetic Dialogues and DailyDialog,
+  * significantly higher alignment in categorical labels
+  * This is notable, as both corpora have different approaches and goals
+    for affect annotation
     hE, the domain of affect annotation poses challenges for quantitative anal
-* in the E PITOME corpus, 
-  changes in appraisal estimates between utterance and response 
-  align with the definitions of the annotated dimensions, while
+* in the Epitome corpus,
+  * changes in appraisal estimates between utterance and response
+    align with the definitions of the annotated dimensions, while
   * appraisal-informed emotion classification reflects the source of the
-    conversation. 
-* A similar domain effect is observed in EmoWOZ, where 
-  emotion classification scores after label folding were baseline, but 
-  trends in appraisal by turn and speaker
-  correspond to action states in the corpus.
+    conversation
+* EmoWOZ
+  * A similar domain effect is observed
+  * emotion classification scores after label folding were baseline, but
+  * trends in appraisal by turn and speaker
+    correspond to action states in the corpus
 * summary
   * appraisal theory shows reasonable alignment with existing affect annotations
     in conversational corpora, providing additional cognitive insights. Using
     appraisal theory as the grounding emotion annotation in general domain
     conversations would significantly improve the performance and reliability of
-    the AppraisePLM approach.
+    the AppraisePLM approach
 
 ## 6.2 H2: Appraisal Change as Affect Flow
 
-* H2: cognitive analysis captures
-  affect flow, examined as emotion change over the course of a conversation. We
-  * not all appraisals are relevant to a conversation or domain and may change
-    minimally. However, 
+* H2: cognitive analysis captures affect flow,
+  examined as emotion change over the course of a conversation
+  * not all appraisals are relevant to a conversation or domain
+    * some appras may change minimally
   * nL those appraisals that do change
     exhibit a small but consistent gradient when aggregated over the conversat
-* Section §5 details findings from one approach to examining affect flow using
-  the power-amplified difference of appraisal estimates between conversation
-  turns.
-* Appraisal gradients differ by dataset: 
-  * Empathetic Dialogues exhibits low appraisal shifts, 
-  * DailyDialog shows greater variability in negative emotions, and 
-  * EmoWOZ presents the highest appraisal gradient with 
-    * distinct trends for satisfaction and dissatisfaction. 
+* Sec 5 details findings from one approach to examining affect flow using the
+  power-amplified difference of appraisal estimates between conversation turns
+* Appraisal gradients differ by dataset:
+  * Empathetic Dialogues exhibits low appraisal shifts,
+  * DailyDialog shows greater variability in negative emotions, and
+  * EmoWOZ presents the highest appraisal gradient with
+    * distinct trends for satisfaction and dissatisfaction
 * Empathic matching, where interlocutors align appraisals over time, is
-  evident in positive emotions across E MPATHETIC D IALOGUES and DailyDialog.
-  * hE, DailyDialog lacks directional speaker roles, leading to 
-    ~> broader variability in emotional elicitation. The 
-* E PITOME corpus demonstrates distinct appraisal relevance, with 
-  dimensions like responsibility and attention influencing response quality.
-* summary: 
+  evident in positive emotions across Empathetic Dialogues and DailyDialog
+  * hE, DailyDialog lacks directional speaker roles
+    ~> broader variability in emotional elicitation
+* Epitome corpus demonstrates distinct appraisal relevance, with
+  dimensions like responsibility and attention influencing response quality
+* summary:
   changes in appraisal estimates represent emotion change in conversation. The
   multidimensionality and cognitive nature of appraisal theory reinforce its
-  utility in emotion modeling and highlight corpus-specific affective dynamics.
+  utility in emotion modeling and highlight corpus-specific affective dynamics
 
 # 7 Conclusion
 
-* AppraisePLM, a multitask learning model designed to estimate appraisal
-  dimensions and emotion categories using the crowd-EnVENT dataset. 
-* By applying our model to various conversational corpora, we leveraged its
-  fine-grained dimensional representation of emotion to analyze affect flow—the
-* appraisal theory provides a valuable framework for examining how emotions
-  manifest in conversational data. While the 
-* crowd-EnVENT dataset is not a dialogue corpus, our results support the
+* AppraisePLM, a multitask learning model
+  designed to estimate appraisal dimensions and emotion categories
+  using the crowd-EnVENT dataset
+* we applied our model to various conversational corpora
+  * we leveraged its fine-grained dimensional representation of emotion
+    to analyze affect flow
+* ie appraisal theory provides a valuable framework for examining how emotions
+  manifest in conversational data
+* crowd-EnVENT dataset is not a dialogue corpus, nL our results support the
   feasibility of using appraisal-based models to examine emotion dynamics in
-  conversation. We observed not only 
-* improved appraisal estimation and emotion classification performance over
-  baseline models but also 
-* reasonable success in appraisal-informed zero-shot emotion classification.
-* two key applications for this approach. First, 
-  1. benchmarking affective conversational agents, such as those designed for
-     emotional support or empathetic interaction, by assessing 
-     how their responses modulate appraisal dimensions. Second, 
+  conversation
+* improved appraisal estimation and emotion classification perf over baseline
+* reasonable success in appraisal-informed zero-shot emotion classification
+* possible applications
+  1. benchmarking affective conversational agents
+    eg those designed for emotional support or empathetic interaction, by
+    assessing how their responses modulate appraisal dimensions
  2. informing agent response expectations when expressing specific emotions,
-    offering insights into emotionally intelligent dialogue systems. These
+  ~> insights into emotionally intelligent dialogue systems
 
 # Limitations
 
