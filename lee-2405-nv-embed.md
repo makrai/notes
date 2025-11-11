@@ -1,15 +1,16 @@
 NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models
-Chankyu Lee, Rajarshi Roy, Mengyao Xu, Jonathan Raiman, Mohammad Shoeybi, Bryan Catanzaro, Wei Ping
+Chankyu Lee, Rajarshi Roy, Mengyao Xu, Jonathan Raiman, Mohammad Shoeybi,
+  Bryan Catanzaro, Wei Ping
 arXiv:2405.17428 [cs.CL]
 
 * Decoder-only large language model (LLM)-based embedding models are 
   * beginning to outperform BERT or T5-based embedding models in
     general-purpose text embedding tasks, including dense vector-based
-    retrieval. In this work, 
+    retrieval
 * we introduce the NV-Embed model, incorporating architectural designs,
   training procedures, and curated datasets to 
   * significantly enhance the performance of LLM as a versatile embedding
-  * maintaining its simplicity and reproducibility. For model 
+  * maintaining its simplicity and reproducibility
   * architecture, we propose a latent attention layer to obtain pooled
     embeddings, which consistently improves retrieval and downstream task
     accuracy compared to mean pooling or using the last `<EOS>` token embedding

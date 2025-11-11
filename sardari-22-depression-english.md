@@ -2,8 +2,8 @@ Audio based depression detection using Convolutional Autoencoder
 Sardari+
 Expert Systems with Applications Volume 189, 1 March 2022, 116076
 
-implementation of the preprocessing phase and the proposed method at
-https://github.com/SaraS92/CAE_ADD
+[implementation of the preprocessing phase and the proposed method]
+(https://github.com/SaraS92/CAE_ADD)
 
 * Thorough experimental study based on a real-world depression detect dataset
 * Complete comparison of proposed feature extraction method with other techs

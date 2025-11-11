@@ -54,7 +54,24 @@ github.com/sarnthil/unify-emotion-datasets
 
 # 2 Background & Related work
 
-* tab 1: overview of the resources and previous work
+| Dataset            | Granularity  | Annotation  | Size   | Topic          | Source                | Avail.  |
+|--------------------|--------------|-------------|--------|----------------|-----------------------|---------|
+| AffectiveText      | headlines    | E+V         | 1,250  | news           | Strapparava (2007)    | D-U     |
+| Blogs              | sentences    | E + ne + me | 5,025  | blogs          | Aman (2007)           | R       |
+| CrowdFlower        | tweets       | E + CF      | 40,000 | general        | Crowdflower (2016)    | D-U     |
+| DailyDialogs       | dialogues    | E           | 13,118 | multiple       | Li et al. (2017)      | D-RO    |
+| Electoral-Tweets   | tweets       | P           | 4,058  | elections      | Mohammad (2015)       | D-RO    |
+| EmoBank            | sentences    | V+A+D       | 10,548 | multiple       | Buechel (2017a)       | CC-by4  |
+| EmoInt             | tweets       | E − DS      | 7,097  | general        | Mohammad (2017b)      | D-RO    |
+| Emotion-Stimulus   | sentences    | E + shame   | 2,414  | general        | Ghazi et al. (2015)   | D-U     |
+| fb-valence-arousal | faceb. posts | V+A         | 2,895  | questionnaire  | Preoţiuc (2016)       | D-U     |
+| Grounded-Emotions  | tweets       | HS          | 2,585  | weather/events |Liu et al. (2017)      | D-U     |
+| ISEAR              | descriptions | E + SG      | 7,665  | events         | Scherer (1994)        | GPLv3   |
+| Tales              | sentences    | E           | 15,302 | fairytales     | Alm et al. (2005)     | GPLv3   |
+| SSEC               | tweets       | P           | 4,868  | general        | Schuff et al. (2017)  | D-RO    |
+| TEC                | tweets       | E ± S       | 21,051 | general        | Mohammad (2012)       | D-RO    |
+
+
 * surveys by Munezero+ (2014) and Santos and Maia (2018) <~ we recommend them
   * Diana Santos and Belinda Maia. 2018
     Language, emotion, and the emotions: A computational introduction.

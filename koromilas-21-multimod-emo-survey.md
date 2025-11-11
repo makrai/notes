@@ -4,7 +4,7 @@ Appl. Sci. 2021, 11,
 
 # Abstract
 
-* This work reviews the SOTA in multimodal speech emotion recognition (SER)
+* we review the SOTA in multimodal speech emotion recognition (SER)
 * focusing on audio, text and visual information
 * new, descriptive categorization of methods, based on the way they handle
   the inter-modality and intra-modality dynamics in the temporal dimension:
@@ -17,7 +17,7 @@ Appl. Sci. 2021, 11,
     both unimodal and cross-modal temporal dependencies
 * basic feature representation methods for each modality
 * aggregated evaluation results on the reported methodologies
-* future: validation procedures, representation learning & method robustness
+* future: validation procedures, representation learning, & method robustness
 
 # 1 Intro
 
@@ -442,8 +442,7 @@ Appl. Sci. 2021, 11,
       associated with both the spectral and temporal domains
     * textual: basic word embeddings are used
     * visual: traditional facial features are used
-    * deep learning techniques has resulted in better repr capabilities
-      for all three of these modalities
+    * deep learning techniques: better repr capabilities for all three modalits
   * multimodal architectures need to
     * be in line with the SOTA techniques for unimodal representations and
     * find efficient ways to combine them by taking into account the temporal

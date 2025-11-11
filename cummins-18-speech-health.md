@@ -12,7 +12,7 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 
 * paralinguistic states and traits eg emotional states or age and gender
   * intelligent signal analysis and machine learning techniques
-    to recognise these different facets [1, 2, 3, 4]
+    to recognise these [1, 2, 3, 4]
 * computational paralinguistic analysis to assess health conditions
   * complexity of speech production
   * importances of the physiological and cognitive systems involved
@@ -173,8 +173,8 @@ Methods Volume 151, 1 December 2018, Pages 41-54
 * datasets
   * Cognitive Load with Speech and EGG (CLSE) database (cf. Table 6) and the
   * Munich Bio-voice Corpus (MBC) (cf. Table 7)
-* High cognitive load and mental fatigue is strongly associated [with?]
-  increasing demands on working memory and impaired mental performances [56,99]
+* cognitive load and mental fatigue
+* increasing demands on working memory and impaired mental performances [56,99]
   * increased articulation rate, an increase in the number of filled pauses,
     and a reduction in formant vowel space area are commonly reported [99]
 * Physical fatigue on the other hand, is a reduction in muscle power & movement

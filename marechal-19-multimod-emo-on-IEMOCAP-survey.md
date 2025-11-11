@@ -30,7 +30,7 @@ in J. Kołodziej and H. González-Vélez (Eds.) High-Performance Mo (cHiPSet 201
   * an on-board computer to detect confusion, interest or fatigue => safety
   * AutoEmotive (MIT Media Lab) is a prototype equipped with sensors and a
     camera placed on the steering wheel [5]
-  * When the need arises, he puts a background music, changes the temperature
+  * When the need arises, it puts a background music, changes the temperature
     and light in the vehicle interior, or still proposes to follow a less
     stressful journey
 

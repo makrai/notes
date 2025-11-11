@@ -3,33 +3,35 @@ Explainable Depression Detection in Clinical Interviews
 Linhai Zhang, Ziyang Gao, Deyu Zhou, Yulan He
 ACL 2025 arXiv:2503.01315 [cs.CL]
 
-* clinical interviews are the gold standard for depression assessment. However,
+* clinical interviews are the gold standard for depression assessment
 * attempts to improve interpretability use post-hoc LLM generation but suffer
-  from hallucination. To address these limitations, we propose
+  from hallucination
 * we: RED, a Retrieval-augmented generation framework for Explainable depres Det
   * retrieves evidence from clinical interview transcripts, providing
-    explanations for predictions. Traditional query-based retrieval systems use
-    a one-size-fits-all approach, which may not be optimal for depression
-    detection, as user backgrounds and situations vary. We introduce a
+    explanations for predictions
+    * Traditional query-based retrieval systems: one-size-fits-all approach,
+    * may not be optimal for depression detection
+    <~ user backgrounds and situations vary
   * personalized query generation module that
-    combines standard queries with user-specific background inferred by LLMs,
-    tailoring retrieval to individual contexts. Additionally, to enhance LLM
+    * combines standard queries with user-specific background inferred by LLMs,
+      tailoring retrieval to individual contexts
   + retrieving relevant knowledge from a social intelligence datastore
-    using an event-centric retriever.
-* Experimental results on the real-world benchmark demonstrate RED's
+    using an event-centric retriever
+* good Experimental results on the real-world benchmark
 
 # 2 Related Work
 
 ## 2.1 Depression detection is challenging due to its subtle nature, with
 
 * data: clinical interviews or social media data
-  (Gratch+ 2014; Burdisso+ 2020; Salas-Zárate+ 2022). Recent approaches focus on
+  (Gratch+ 2014; Burdisso+ 2020; Salas-Zárate+ 2022)
 * multi-modal data from interviews, combining text, audio, and video for better
-  (Gratch+ 2014; Burdisso+ 2020; Salas-Zárate+ 2022). These methods
+  (Gratch+ 2014; Burdisso+ 2020; Salas-Zárate+ 2022)
 * aggregate features at various levels (word or utterance) to capture more
-* Early risk detection is also gaining traction, using techniques like
-  incremental classifiers and risk window-based methods to predict depression
-  before full symptoms emerge (Burdisso+ 2019a,b; Sadeque+ 2018)
+* Early risk detection is also gaining traction, using 
+  * techniques like incremental classifiers and risk window-based methods to
+    predict depression before full symptoms emerge 
+    (Burdisso+ 2019a,b; Sadeque+ 2018)
   * enable timely interventions by detecting consistent patterns over time.
 * LLMs are fine-tuned on mental health datasets to capture complex ling cues
   * LLMs with multimodal data for both depression detection and early interven

@@ -13,7 +13,7 @@ Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
 * the best performer for sarcasm-context detection is an attention-based LSTM
 * F1 score of 60.1
 * Furthermore tested on the SARC dataset and
-  * compared with other results reported in the literature for better assessment
+  * compared with other results reported in the literature
 * Future: a conversational agent that could identify and even respond to sarcasm
 
 #  1. Introduction [Related work]
@@ -34,10 +34,9 @@ Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
       * 2nd Workshop on Figurative Language Processing’s sarcasm-detection
         shared challenge
     * Context, response, and label fields are all included in these datasets
-    * different models after preprocessing the data: long short-term memory
-      (LSTM) [16], bidirectional LSTM (BiLSTM), stacked LSTM, convolutional
-      neural network LSTM (CNN–LSTM), bidirectional encoder representations
-      from transformers (BERT) [17], and XLNet [18]. For each dataset,
+    * models: long short-term memory (LSTM) [16], bidirectional LSTM (BiLSTM),
+      stacked LSTM, convolutional neural network LSTM (CNN–LSTM), bidirectional
+      encoder representations from transformers (BERT) [17], and XLNet [18]
     * BERT was the top performing model, with BERT-5 for Reddit and
       * BERT-7 for Twitter
 * Internet Argument Corpus (IAC)

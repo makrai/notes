@@ -1,6 +1,6 @@
 Survey on Multimodal Emotion Recognition Systems
 Bhanusree Yalamanchili, Keerthana Dungala, K Mandapati, M Pillodi, SR Vanga
-in CK Mai et al. (eds.), Machine Learning Technologies and Applications,
+in CK Mai et al. (eds.) 2021 Machine Learning Technologies and Applications,
 
 # Abstract
 

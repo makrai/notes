@@ -17,7 +17,7 @@ ACL 2025
 
 ## Textual Features and Self-Aspects Correlations
 
-### Self-Aspects Most research focuses on I-talk, i.e., the use of 
+### Self-Aspects Most research focuses on I-talk, ie the use of 
 
 * first-person pronouns as indicators of Self-focus (Pennebaker+ 2003), which
   correlates with emotional pain, trauma, and depression
@@ -26,7 +26,7 @@ ACL 2025
 * active vs passive voice can shed light on the sense of agency of the author 
   (Simchon+ 2023), while 
 * the Narrative Self (NS)
-  * i.e., “the narrative someone has of themselves, comprising their
+  * ie “the narrative someone has of themselves, comprising their
     autobiographical memories and stories of who they are” 
   * Caporusso+ (2024) is 
   * reflected in the structure and coherence of one’s autobiographical accounts
@@ -44,7 +44,7 @@ ACL 2025
   aspects of the Self: 
   * MS, 
   * NS, 
-  * Self as Agent (AS; “the experience of being an agent, i.e., in control,
+  * Self as Agent (AS; “the experience of being an agent, ie in control,
     active”), 
   * Bodily Self (BS; “the experience of owning, controlling, and/or identifying
     with someone’s own body (or parts of it)”), and 
