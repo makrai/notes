@@ -14,7 +14,7 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
 * We then apply our findings to
   a corpus of Facebook user (N = 130, 828) status updates
   * how core values influence the personal thoughts and behaviors
-  * self-report questionnaires for values are inadequate for painting
+  * self-report questionnaires for values are inadequate
   * Free response language data and language modeling show greater promise
     * understanding both the structure and content of concepts such as values
     * predicting
@@ -116,12 +116,13 @@ Proceedings of the Ninth International AAAI Conference on Web and Social Media
 2. adapted the results of the first project to Facebook status updates
   * status updates from over 130,000 Facebook users
     * part of the myPersonality project (Kosinski+ 2013)
-  * a relatively small number of the cases (N = 1, 260) included the SVS,
+  * a relatively small number of the cases (N = 1260) included the SVS,
   * the primary analyses revealed
     intuitive links between the MEM-derived values and MEM-derived behaviors
-* ie a proof-ofconcept study demonstrating the utility of relying on ling
-  markers of abstract psychological phenomena, including values, to better
-  predict and understand their connections to behaviors and thought
+* ie a proof-ofconcept study demonstrating the
+  utility of relying on ling markers of abstract psychological phenomena,
+  including values, to better predict and understand their connections to
+  behaviors and thought
 
 # Project 1: Values and Behavior in an Online Survey Sample 2
 

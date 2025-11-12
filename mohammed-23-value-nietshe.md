@@ -12,9 +12,9 @@ SemEval-2023 Toronto, Canada
 
 # 1 Intro
 
-* humanistic archetypes of freedom, creativity, self-preservation, etc. upon
-  * religious beliefs and concerns about nature and the environment. At other
-* SemEval 2023 ValueEval task (Kiesel+ 2023), we seek to explore the
+* humanistic archetypes of freedom, creativity, self-preservation, etc
+  * religious beliefs and concerns about nature and the environment
+* SemEval 2023 ValueEval task (Kiesel+ 2023)
   * we: Decision Trees, Logistic Regression, Support Vector Machines, and
     Random Forest in the extraction of implicit themes within the liter; Python
 * With the problem being of multi-label nature and the SemEval2023 dataset as
