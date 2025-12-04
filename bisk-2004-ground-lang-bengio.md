@@ -18,8 +18,8 @@ arXiv:2004.10151 cs.CL
   * are tested in terms of Indep and Identically Distr held-out sets,
   * should be queried on points meant to probe the granularity of the distinc
     (Kaushik+ 2020; Gardner+ 2020)
-* We posit that the universes of knowledge and experience available to NLP
-  models can be defined by successively larger world scopes (WS):
+* the universes of knowledge and experience available to NLP models
+  can be defined by successively larger world scopes (WS):
   * from a single corpus to a fully embodied and social context
   * corpus linguistics (Zipf, 1932; Harris, 1954),
     to the formation of the Penn Treebank (Marcus+ 1993), NLP researchers have

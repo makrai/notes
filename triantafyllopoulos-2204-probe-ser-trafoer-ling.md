@@ -6,7 +6,7 @@ INTERSPEECH 2022
 * transformers: Large, pre-trained neural networks consisting of self-attention
 * SOTA results on several speech emotion recognition (SER) datasets
 * pre-trained in self-supervised manner with the goal of speech recognition
-* ie understand linguistic information
+* ie transformers understand linguistic information
 * we: the extent in which this information is exploited during SER fine-tuning
 * we synthesise prosodically neutral speech utterances while varying the senti
   * Using a reproducible methodology based on open-source tools,

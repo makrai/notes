@@ -6,10 +6,10 @@ Language and Cognition, 2014
 # Abstract
 
 * measuring psychological and demographic properties
-* despite the fact that current [data collection] methods have many
-  disadvantages and pitfalls compared to more traditional methods
-  * computational power and the wide availability of textual data will
-    inevitably make automated text analysis a common tool for psychologists
+* current [data collection] methods have many disadvantages and pitfalls
+  compared to more traditional methods
+* nL computational power and the wide availability of textual data will
+  inevitably make automated text analysis a common tool for psychologists
 
 # 1. Introduction
 
