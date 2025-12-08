@@ -28,15 +28,15 @@ https://huggingface.co/datasets/unswnlporg/BESSTIE
     
 # 1 Intro
 
-| Benchmark                | Sent. | Sarc. | Eng. | Var. |
-|--------------------------|:-----:|:-----:|:----:|:----:|
+| Benchmark          | Sent. | Sarc. | Eng. | Var. |
+|--------------------|:-----:|:-----:|:----:|:----:|
 | Cieliebak+ (2017)  |   1   |   0   |  0   |  0   |
 | Wang+ (2018)       |   1   |   0   |  1   |  0   |
 | Alharbi+ (2020)    |   1   |   0   |  0   |  1   |
 | Abu Farha+ (2021)  |   1   |   1   |  ar  |  1   |
 | Elmadany+ (2023)   |   1   |   1   |  ar  |  1   |
 | Faisal+ (2024)     |   1   |   0   |  0   |  1   |
-| **BESSTIE**              |   1   |   1   |  1   |  1   |
+| **BESSTIE**        |   1   |   1   |  1   |  1   |
 
 * The relationship between sentigment and sarcasm classification is
   well-understood (Chauhan+ 2020)
