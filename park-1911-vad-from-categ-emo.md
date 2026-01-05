@@ -41,8 +41,7 @@ arXiv:1911.02499
           resulting from that emotional state
 * lack of annotated resources
   * a small sentence-level corpus with full VAD annot (Buechel and Hahn, 2017),
-  * a corpus annotated with V and A dimensions
-    (Preoţiuc-Pietro+ 2016a; Yu+ 2016a), and
+  * a corpus annotated with V and A (Preoţiuc-Pietro+ 2016a; Yu+ 2016a), and
   * one only with V (Lykousas+ 2019)
   * We could build additional resources by labeling VAD scores
     by Best-Worst Scaling (Kiritchenko and Mohammad, 2017)

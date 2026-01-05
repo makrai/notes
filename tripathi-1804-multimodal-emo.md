@@ -6,7 +6,7 @@ arXiv:1804.05788 [cs.AI]
 
 * Emotion recognition, Human Computer Interactions, behaviour modelling
   * Neural Networks which are adept at estimating complex functions
-* we: multimodal Emotion recognition on IEMOCAP dataset using
+* we: multimodal Emotion recognition on IEMOCAP dataset
   * data from Speech, Text, and Motion capture data from face expressions,
     rotation and hand movements
 * Prior research: only Emotion detection from Speech on the IEMOCAP dataset,

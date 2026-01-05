@@ -5,19 +5,20 @@ Proc. Interspeech 2020, 2322-2326, doi: 10.21437/Interspeech.2020-2636
 
 # Abstract
 
-* Traditionally: statistical descriptions, which are computed over time from
-  low level descriptors (LLDs), creating a fixed dimension sentence-level
-  feature representation regardless of the duration of the sentence. However
-  * sentence-level features lack temporal information, which limits the
-* deep learning architectures have been proposed to model temporal data. An
-  * how to extract emotion-relevant features with temporal information. This
+* Traditionally: statistical descriptions, which are
+  computed over time from low level descriptors (LLDs), creating 
+  a fixed dimension sentence-level feature representation
+  regardless of the duration of the sentence
+  * sentence-level features lack temporal information
+* deep learning architectures have been proposed to model temporal data
+  * how to extract emotion-relevant features with temporal information
 * we extract a fixed number of small chunks over sentences of diff durations by
-  changing the overlap between these chunks. The approach is flexible,
-  * combine gated network or attention mechanisms with LSTM networks. Our
+  changing the overlap between these chunks
+  * combine gated network or attention mechanisms with LSTM networks
 * experiments based on the MSP-Podcast dataset demonstrate that the proposed
-  method not only significantly improves recognition accuracy over alternative
-  temporal-based models relying on LSTM, but also leads to computational
-  efficiency.
+  * we significant improvement in recognition accuracy
+    over alternative temporal-based models relying on LSTM
+  * better computational efficiency
 
 # Merci
 

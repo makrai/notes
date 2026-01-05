@@ -6,19 +6,22 @@ AVEC’18 International Workshop on Audio/Visual Emotion Challenge
 
 # 1 Intro
 
-* The Cross-cultural Emotion Sub-challenge (CES) is a major ex- tension of the
-  Emotion Sub-challenge previously run in AVEC 2017 [60], where dimensional
-  emotion recognition was performed on data collected ‘in-the-wild’ by the
-  German participants of the SEWA dataset 1 ; audiovisual signals were recorded
-  in various places, e. g. , home, work place, and with arbitrary personal
-  equipments, thus providing noisy but realistic data. For the AVEC 2018 CES, an
-  extended version of the SEWA dataset, with new data collected in the same
-  conditions from Hungarian participants, is used as a blind test set for the
-  first ever cross-cultural emotion recognition compe- tition task: participants
-  have to predict the level of three emotional dimensions (arousal, valence, and
-  liking) time-continuously from audiovisual recordings of dyadic interactions,
-  and performance is the total Concordance Correlation Coefficient (CCC) [45,
-  83] averaged over the dimensions.
+* The Cross-cultural Emotion Sub-challenge (CES) is a major 
+  * extension of the Emotion Sub-challenge previously run in AVEC 2017 [60],
+  * AVEC 2017: dimensional emotion recognition was performed on 
+    data collected ‘in-the-wild’ by the German participants of the SEWA dataset
+  * audiovisual signals were recorded in various places, e. g. , home, work
+    place, and with arbitrary personal equipments, thus providing noisy but
+    realistic data. For the 
+  * AVEC 2018 CES, an extended version of the SEWA dataset, with 
+    new data collected in the same conditions from Hungarian participants, is
+    used as a blind test set for the first ever cross-cultural emotion
+    recognition competition task: 
+    participants have to predict the level of three emotional dimensions
+    (arousal, valence, and liking) time-continuously from audiovisual recordings
+    of dyadic interactions, and 
+  * metric is the total Concordance Correlation Coefficient (CCC) [45, 83]
+    averaged over the dimensions.
 ...
 * CCC is preferred over the Pearson’s Correlation Coefficient (PCC), because
   * sensitive to bias and scaling, and 
