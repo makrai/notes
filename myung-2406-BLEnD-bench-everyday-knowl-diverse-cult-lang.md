@@ -1,5 +1,5 @@
-BLEnD: A Benchmark for LLMs on
-  Everyday Knowledge in Diverse Cultures and Languages
+BLEnD: A Benchmark for LLMs
+  on Everyday Knowledge in Diverse Cultures and Languages
 J Myung, N Lee, Y Zhou, J Jin, R Afina Putri, D Antypas, H Borkakoty, E Kim,
   C Perez-Almendros, AA Ayele, V Gutiérrez-Basulto, Y Ibáñez-García, H Lee,
   SH Muhammad, K Park, AS Rzayev, N White, SM Yimam, MT Pilehvar, N Ousidhoum,
@@ -78,6 +78,10 @@ https://github.com/nlee0212/BLEnD
 # Related Work
 
 * LLMs incorporate extensive parametric knowledge from large corpora [25]
+  * [25] 
+    Fabio Petroni, T Rocktäschel, S Riedel, P Lewis, A Bakhtin, Y Wu, A Miller
+    Language models as knowledge bases? 
+    EMNLP-IJCNLP 2019 Hong Kong, China, November petroni-etal-2019-language
   * models frequently display bias due to imbalanced representations [3]
   * Cultural knowledge is critical in enhancing the reasoning capabilities
 * socio-cultural aspects of LLMs
