@@ -47,7 +47,7 @@ ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
 * we propose the Multimodal Humor and Sarcasm Detection Benchmark (MHSDB), a
   unified benchmark
   * standardize datasets, feature extraction, and multimodal fusion strategies
-  * a consistent platform for fair comparisons, utilizing mainstream 
+  * a consistent platform for fair comparisons, utilizing mainstream
     foundation models, such as HuBERT [15], GTE [16], and CLIP [17],
     for feature extraction
 
@@ -59,34 +59,41 @@ ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
 
 ## A. Tasks and Datasets
 
+| Dataset                 | Year | Task    | Language | #Utts  | #Hrs  |
+| ----------------------- | ---- | ------- | -------- | ------ | ----- |
+| UR-FUNNY [18]           | 2019 | Humor   | English  | 16,514 | 22.81 |
+| M2H2 [9]                | 2022 | Humor   | Hindi    |  6,191 |  4.46 |
+| MUStARD++ [13]          | 2022 | Sarcasm | English  |  1,202 |  1.74 |
+| MUStARD++ Balanced [19] | 2023 | Sarcasm | English  |  1,365 |  1.98 |
+
 * two languages: English and Hindi, facilitating cross-lingual and cross-cult
-* Table 1 summarizes the datasets: 
-* en: UR-FUNNY [18], MUStARD++, MUStARD++ Balanced [19] for English, and 
-* hi: M2H2 [9] for Hindi. 
+* Table 1 summarizes the datasets:
+* en: UR-FUNNY [18], MUStARD++, MUStARD++ Balanced [19] for English, and
+* hi: M2H2 [9] for Hindi.
 * These datasets vary in sample size, speaker number, and class distribution,
 * two primary tasks: humor detection and sarcasm detection.
 * We adhered to official data partitioning protocols where available. For
-  * UR-FUNNY is evaluated on its official test set, while 
-  * M2H2 and MUStARD++ Balanced employ five-fold cross-validation, avg perf 
+  * UR-FUNNY is evaluated on its official test set, while
+  * M2H2 and MUStARD++ Balanced employ five-fold cross-validation, avg perf
   * MUStARD++, we used “Friends” episodes as the test set, performing five-fold
     cross-validation on the training set and reporting the average results.
 
 ## B. Multi-Modal Foundation Models
 
 * Audio Modality
-  * models include Wav2vec 2.0 [20], HuBERT, and WavLM [21]. 
+  * models include Wav2vec 2.0 [20], HuBERT, and WavLM [21].
   * HuBERT: * speech segment prediction training, outperforms Wav2vec 2.0
-  * WavLM excels in multi-speaker tasks. We also included 
-  * Data2Vec [22] for unified modality learning, and 
+  * WavLM excels in multi-speaker tasks. We also included
+  * Data2Vec [22] for unified modality learning, and
   * Emotion2vec [23] and ExHuBERT [24] to capture emotionrelated nuances. For
   * multilingual data, we evaluated XLSR [25], Chinese-HuBERT (HuBERT-CN), and
     Whisper [26], known for its large-scale training.
-* Text Modality: We selected 
+* Text Modality: We selected
   * optimized BERT variants such as RoBERTa [27], XLNet [28], and DeBERTa [29],
   * contrastive learning models like SimCSE [30], Sentence-T5 [31], and E5 [32].
   * multimodal LLMs such as LLaMA-3.1-8B [33] and Qwen27B [34]
-* Video Modality: In video-based humor and sarcasm detection, 
-  * temporal information is essential. 
+* Video Modality: In video-based humor and sarcasm detection,
+  * temporal information is essential.
   * We evaluated VideoMAE [35], DINOv2 [36], and EVA-02 [37],
     known for their multi-scale visual feature extraction capabilities.
   * ResNet-based models like ResNet-MSCeleb and ResNet-FER2013 were used for
@@ -98,16 +105,16 @@ ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
 * Fig 1 depicts the complete pipeline for multi-modal humor and sarcasm detect
 * unimodal features, a self-attention mechanism was employed to enhance focus on
   relevant cues, particularly suited for Transformer-based models (e. g., BERT,
-  RoBERTa, VideoMAE). 
+  RoBERTa, VideoMAE).
   * simple attention-based classifier, similar to MERBench [38], was used.
   * To prevent overfitting and ensure generalization,
     especially for robust models like CLIP and EVA-02
-* multimodal fusion, we used 
+* multimodal fusion, we used
   * utteranc level: mainstream strategies like TFN [39], LMF [40], and MISA [41]
   * seq level: methods like MFN [42] and MulT [43]
   * Models like CLIP and EVA-02 are prioritized for their cross-modal
     understanding, which is essential in this context.
-* To ensure consistency with previous studies [9], [13], [18], [19], we have 
+* To ensure consistency with previous studies [9], [13], [18], [19], we have
   * Accuracy (Acc) and F1 Score (F1), commonly used in humor and sarcasm
 
 # III.  Evaluation results and Discussion
@@ -119,7 +126,7 @@ ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
   * our approach consistently outperforms existing SOTA methods, demonstrating
   * clear advantages over traditional modal representations (e. g., GLoMo [44],
     TriDiRA [45], and Gaze-Collaborative Gating Mechanism [14]) across various
-    evaluation metrics. Additionally, our benchmark 
+    evaluation metrics. Additionally, our benchmark
   * surpasses autoregressive generative models like i-Code V2 [46], which
     integrate audio, linguistic, and visual inputs across all datasets.
 
@@ -130,6 +137,6 @@ ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
     * potentially through advanced fundation models or novel context encod [48]
   2. Fine-grained Classification of humor and sarcasm
   3. Cross-lingual and Cross-cultural Analysis
-  4. Optimization of Fusion Strategies: 
+  4. Optimization of Fusion Strategies:
     * visual modality representation <~ improve
     * visual-text alignment mechanisms
