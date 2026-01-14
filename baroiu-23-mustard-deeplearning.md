@@ -1,7 +1,7 @@
-Comparison of Deep Learning Models for Automatic Detection of Sarcasm Context
-  on the MUStARD Dataset
-Alexandru-Costin Băroiu and Ștefan Trăușan-Matu
-Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
+ Comparison of Deep Learning Models for Automatic Detection of Sarcasm Context
+                             on the MUStARD Dataset
+                Alexandru-Costin Băroiu and Ștefan Trăușan-Matu
+   Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
 
 # Abstract
 

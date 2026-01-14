@@ -1,7 +1,7 @@
-MHSDB: A Comprehensive Benchmark for Multimodal Humor and Sarcasm Detection
-  Leveraging Foundation Models
-Zhongren Dong; Donghao Wang; Ciqiang Chen; Dong-Yan Huang; Zixing Zhang
-ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
+  MHSDB: A Comprehensive Benchmark for Multimodal Humor and Sarcasm Detection
+                          Leveraging Foundation Models
+    Zhongren Dong; Donghao Wang; Ciqiang Chen; Dong-Yan Huang; Zixing Zhang
+     ICASSP 2025 IEEE Intl Conference on Acoustics, Speech and Signal Proc
 
 # Abstract:
 

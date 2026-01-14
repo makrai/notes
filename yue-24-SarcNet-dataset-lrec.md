@@ -1,6 +1,6 @@
-SarcNet: A Multilingual Multimodal Sarcasm Detection Dataset
-Tan Yue, Xuzhao Shi, Rui Mao, Zonghai Hu, Erik Cambria
-joint LREC-COLING 2024 Torino, Italia
+          SarcNet: A Multilingual Multimodal Sarcasm Detection Dataset
+             Tan Yue, Xuzhao Shi, Rui Mao, Zonghai Hu, Erik Cambria
+                     joint LREC-COLING 2024 Torino, Italia
 
 # Abstract
 

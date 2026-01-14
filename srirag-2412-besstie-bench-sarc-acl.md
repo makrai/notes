@@ -1,7 +1,7 @@
-BESSTIE: A Benchmark for Sentiment and Sarcasm Classification
-  for Varieties of English
-Dipankar Srirag, Aditya Joshi, Jordan Painter, Diptesh Kanojia
-Findings of ACL: ACL 2025 arXiv:2412.04726 [cs.CL]
+         BESSTIE: A Benchmark for Sentiment and Sarcasm Classification
+                            for Varieties of English
+         Dipankar Srirag, Aditya Joshi, Jordan Painter, Diptesh Kanojia
+               Findings of ACL: ACL 2025 arXiv:2412.04726 [cs.CL]
 
 https://huggingface.co/datasets/unswnlporg/BESSTIE
 

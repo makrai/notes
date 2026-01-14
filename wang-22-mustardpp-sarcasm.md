@@ -1,8 +1,8 @@
-A Multimodal Corpus for Emotion Recognition in Sarcasm
-Anupama Ray, Shubham Mishra, Apoorva Nunna, Pushpak Bhattacharyya
-(LREC 2022), pages 6992–7003 Marseille, 20-25 June 2022
+             A Multimodal Corpus for Emotion Recognition in Sarcasm
+       Anupama Ray, Shubham Mishra, Apoorva Nunna, Pushpak Bhattacharyya
+            (LREC 2022), pages 6992–7003 Marseille, 20-25 June 2022
 
-dataset enriched with var- ious annotations and the code
+dataset enriched with various annotations and the code
 for research purposes: https://github.com/apoorva-nunna/MUStARD_Plus_Plus
 
 # Abstract

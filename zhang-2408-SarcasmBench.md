@@ -1,6 +1,6 @@
 SarcasmBench: Towards Evaluating Large Language Models on Sarcasm Understanding
-Yazhou Zhang, Chunwang Zou, Zheng Lian, Prayag Tiwari, Jing Qin
-arXiv:2408.11319 [cs.CL]
+        Yazhou Zhang, Chunwang Zou, Zheng Lian, Prayag Tiwari, Jing Qin
+                            arXiv:2408.11319 [cs.CL]
 
 * LLMs: the task of ``System I''~-~the fast, unconscious, and intuitive tasks,
   e.g., sentiment analysis, text classification, etc., have been argued to be
