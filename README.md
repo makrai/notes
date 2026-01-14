@@ -1,3 +1,7 @@
+This is the list of my notes related to sarcasm, ordered by recency.
+The more interesing ones are from 2022 or more recent.
+The number at the end is how many times my notes contain the word sarcasm.
+
 * [li-25-**PodSarc**-llm-interspeech.md](/li-25-PodSarc-llm-interspeech.md):25
 * [dong-25-multimod-sarcasm-**MHSDB**-icassp.md](/dong-25-multimod-sarcasm-mhsdb-icassp.md):17
 * [zhang-25-sarcasm-txt-img-tension-acl.md](/zhang-25-sarcasm-txt-img-tension-acl.md):5
