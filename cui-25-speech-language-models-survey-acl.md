@@ -25,20 +25,26 @@ https://github.com/dreamtheater123/Awesome-SpeechLM-Survey
         (Radford+ 2023; Le+ 2020)
     1. Cumulative error, particularly during the transition between ASR and LLM
        (Fathullah+ 2024; Tang+ 2024)
-* Speech Language Models (SpeechLMs, Figure 1b). Specifically, SpeechLMs 
-  * encode speech waveforms directly into speech tokens (Section 3.1). This
-  * capture both semantic and paralinguistic information from audio, thereby
-  * SpeechLMs then model these tokens autoregressively (Section 3.2), without
-  * Finally, the generated tokens are synthesized back to speech (Section 3.3).
-    This integrated approach eliminates the need to chain three separate
-    modules, significantly reducing latency. By working directly with the
-    encoded speech tokens, SpeechLMs effectively mitigate the cumulative
-  * training is integrated with the speech encoding, whereas the training of the
-  * potential to enable real-time voice interactions, 
-    * allowing the model to be interrupted by users or to speak simultaneously
-  * taxonomy (Figure 2). We explore the various 
-    * components that constitute their architecture (Section 3) and the 
-    * training recipes (Section 4) involved in their development. We aim to
-      elucidate the current state of the field by analyzing these models from
-    * metrics to evaluate SpeechLMs (Section 5) and discuss the 
-    * challenges and future directions in this area, hoping to prov (Section 6)
+* SpeechLMs (Components: Sec 3)
+* training is integrated with the speech encoding
+* potential to enable real-time voice interactions, 
+  * allowing the model to be interrupted by users or to speak simultaneously
+* taxonomy (Figure 2)
+
+# 2 Problem Formulation
+
+# 3 Components in SpeechLM (Fig 1b)
+
+## 3.1 SpeechLM encode speech waveforms directly into speech tokens
+
+* speech tokens capture both semantic and paralinguistic information from audio,
+
+## 3.2 SpeechLMs then model these tokens autoregressively
+
+## 3.3 Finally, the generated tokens are synthesized back to speech
+
+# 4 Training recipes involved in their development
+
+# 5 Metrics to evaluate SpeechLMs
+
+# 6 Challenges and future directions in this area
