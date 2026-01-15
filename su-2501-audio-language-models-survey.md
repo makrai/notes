@@ -4,204 +4,466 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 
 # Abstract
 
-* Audio-Language Models (ALMs) are trained on audio-text data, focus on the
-  * processing, understanding, and reasoning of sounds.
+* Audio-Language Models (ALMs)
+  * trained on audio-text data
+  * processing, understanding, and reasoning of sounds
   * Unlike traditional supervised learning approaches
   * utilize natural language as a supervision signal, which is
-    more suitable for describing complex real-world audio recordings. ALMs
+    more suitable for describing complex real-world audio recordings
   * strong zero-shot capabilities and
-    * can be flexibly adapted to diverse downstream tasks.
-  * from the Conclu:
+    * can be flexibly adapted to diverse downstream tasks
   * Models combined with LLMs exhibit listening, thinking, and reasoning
-    + significant success in following audio instructions.
-  * enhance the accuracy and generalization of audio processing tasks but also
-  * These strengths promote the development of models that more closely resemble
-    human auditory perception and comprehension. Recent advances in ALMs have
-* this surveys: focus on general audio tasks, aiming to fill this gap by
-  providing a structured and holistic overview of ALMs. Specifically, we cover:
+    + significant success in following audio instructions <~ Conclusion
+  * enhance the accuracy and generalization of audio processing tasks
+  * These strengths promote the development of models that more closely
+    resemble human auditory perception and comprehension
+* this surveys: focus on general audio tasks
+  * a structured and holistic overview of ALMs
   * the background of computer audition and audio-language models;
-  * the foundational aspects of ALMs, including prevalent network
+  * the foundational aspects of ALMs, including
     architectures, training objectives, and evaluation methods;
   * foundational pre-training and audio-language pre-training approaches;
   * task-specific fine-tuning,
     multi-task tuning and
     agent systems for downstream applications;
   * datasets and benchmarks; and
-  * current challenges and future directions. Our review provides a clear
+  * current challenges and future directions
   * a wide range of tasks in various
-    audio types such as natural sounds, speech, and music, providing a clear
-  * we analyze the current challenges in this field and humbly propose directs
+    audio types such as natural sounds, speech, and music
+  * we analyze the current challenges in this field and propose directions
 
 # 1 Intro
 
 * Enabling machines to hear like humans and process audiocentric tasks [1]
+  [1] S. Deshmukh, B. Elizalde, R. Singh, and H. Wang,
+  “Pengi: An Audio Language Model for Audio Tasks”
+  NeurIPS 2023
 * Audio-Language Models (ALMs)
 * applicable to
   * basic audio tasks, such as audio classification [2], but also show great
   * audio-text retrieval [3], audio generation [4],
     automatic audio captioning [5], audio source separation [6],
-    automatic speech translation [7], and audio chatbots [8].
+    automatic speech translation [7], and audio chatbots [8]
 * In contrast to learning based on labeled data for specific audio tasks,
   ALM can learn from more descriptive textual information, expanding the scope
-  * including human-annotated captions and readily available titles and
-    descriptions from web sources [9]
-  * Natural language is well-suited for characterizing real-world audio, which
+  * including human-annotated captions and
+    readily available titles and descriptions from web sources [9]
+  * Natural language is well-suited for characterizing real-world audio
     * eg multiple overlapping sound events:
       ALMs can learn the intrinsic relationships [10]
-  * avoids the model’s reliance on task-specific predefined labels, enhancing
-    ~> potential for models to generalize effectively to open-world scenarios.
-* integration with LLMs as guiding components within ALMs.
-  * LLMs exhibit remarkable comprehension capabilities, researchers have
+  * avoids the model’s reliance on task-specific predefined labels
+    ~> potential for models to generalize effectively to open-world scenarios
+* integration with LLMs as guiding components within ALMs
+  * LLMs exhibit remarkable comprehension capabilities
   * hE LLMs still face challenges in generalizing across a broad spectrum of
     downstream tasks [11], necessitating additional transfer steps such as
-    post-training and collaboration with other foundational models. Within this
-* language provides a unified mechanism for constructing instances,
-  enabling LLMs to undergo instruction tuning and incontext learning across
-  diverse tasks. This approach bridges the gap between auditory information and
-  language understanding, facilitating the alignment of multiple components
-  within ALMs.
-  + language serves as a versatile human-machine interface, empowering users to
-    instruct LLM agents to collaborate effectively with audio-language systems.
+    post-training and collaboration with other foundational models
+* language as a bridge
+  * a unified mechanism for constructing instances, enabling LLMs to undergo
+    instruction tuning and incontext learning across diverse tasks. This
+    * bridges the gap between auditory information and language understanding,
+      facilitating the alignment of multiple components within ALMs
+  * a versatile human-machine interface, empowering users to
+    instruct LLM agents to collaborate effectively with audio-language systems
 * Existing relevant reviews include
   * speech-language models [12, 13]
   * codec-based models [14]
   * ALMs for specific tasks such as audio-text retrieval [15]
   * automated audio captioning [16]
   * speech-to-text translation [17]
-  * audio-language datasets [18].
+  * audio-language datasets [18]
 * we: the first comprehen survey on ALMs, from the perspective of model training
-  * perspective centered on general audio-centric tasks that encompasses
-  * a diverse range of audio types to provide a more detailed reflection of the
-* Fig. 1: A timeline of recent advances in audio-language models. Is is
+  * perspective centered on general audio-centric tasks
+  * a diverse range of audio types
+* Fig. 1: A timeline of recent advances in audio-language models
   * datasets serve as the foundation for inspiring research
-    in pre-training and downstream models.  With the advancement of model
-  * CLAP [2] is considered a significant milestone. Previous work includes
-* audio-caption datasets [19]–[21], which were initially used for automatic
-  audio caption model training and also served as data foundations for ALMs,
-  inspiring subsequent work. Since the introduction of
-* pre-training and large-scale datasets [22], the advantages of ALMs have
-  gradually gained attention.
-* Recently: intertwined development between pre-training and downstream models.
-  * evaluation standards and proposed various benchmarks. It shows a high
-  * datasets, pre-training, downstream models, and benchmark research in ALMs.
+    in pre-training and downstream models
+  * CLAP [2] is considered a significant milestone
+* audio-caption datasets [19]–[21]
+  * initially used for automatic audio caption model training and 
+  * also served as data foundations for ALMs, inspiring subsequent work
+* pre-training and large-scale datasets [22]
+  * the advantages of ALMs have gradually gained attention
+* Recently: intertwined development between pre-training and downstream models
+  * evaluation standards and proposed various benchmarks
+  * datasets, pre-training, downstream models, and benchmark research in ALMs
   * driven by commercial applications,
-    research interests have shifted more towards the speech domain.
-* general audio modeling [23].
-  * types including human voices, natural sounds, music rhythms, etc., which
-In the subsequent sections of this paper, we first
+    research interests have shifted more towards the speech domain
+* general audio modeling [23]
+  * types including human voices, natural sounds, music rhythms, etc
 
 ## II. Background of audio-language pre-training and transfer
 
 ## A. Pre-training and Transfer Paradigm
 
-* two challenges within the pre-training and transfer paradigm 
-  * models may overfit by exploiting simple label mappings [24], achieving high
+* two challenges within the pre-training and transfer paradigm
+  * models may overfit by exploiting simple label mappings [24]
   * the high cost of manual annotation [25]
-* To address these challenges, ALMs have been proposed to learn audio concepts
-  through natural language supervision [2].  This form of supervision 
-  * provides more details about the audio, enabling models to understand the
-    meanings and make decisions accordingly like a human. For example, natural
-    language can describe the temporal order of multiple events using words such
-    as ‘simultaneous,’ ‘before,’ and ‘after’ [26], better reflecting the complex
-    composition of audio compared to predefined labels and helping models learn
-    their intrinsic relationships [10]. Additionally, audio-text data is 
-  * easier to obtain than well-defined labeled datasets, effectively expanding
-    * eg ‘dog’ or ‘barking’ to label a dog barking, but inconsistencies among
-    * difficult to create a perfectly accurate audio dataset. While ALMs are
+* ALMs: to learn audio concepts through natural language supervision [2]
+  * provides more details about the audio, enabling models to
+    understand the meanings and make decisions accordingly like a human
+    * eg natural language can describe the temporal order of multiple events
+      using words such as ‘simultaneous,’ ‘before,’ and ‘after’ [26], better
+      reflecting the complex composition of audio compared to predefined labels
+      and helping models learn their intrinsic relationships [10].
+  * easier to obtain than well-defined labeled datasets
+    * eg ‘dog’ or ‘barking’ to label a dog barking
+    * difficult to create a perfectly accurate audio dataset
     * human-annotated captions and translations, titles and descriptions related
       to audio found abundantly on the web can also serve as sources of annot
 
 ## B. Audio-Language Training Stages
 
-* As data and model sizes grow, 
-  the training strategies for ALMs become more intricate. 
-* def: pre-training vs transfer
-  * representation learning /pre-training:
+* As data and model sizes grow,
+  the training strategies for ALMs become more intricate
+* def: pre-training (reprlearning) vs fine-tuning (transfer)
+  * representation learning/pre-training:
     stages aimed at enhancing task-independent audio reprs
   * transfer: fine-tuning and cooperating
-    before the model is applied to downstream tasks
+    (just) before the model is applied to downstream tasks
 * pre-training can be further divided into multiple stages, typically including
-  * pre-training of foundational models, followed by 
-  * audio-language pre-training on paired data. Some may also involve 
-  * potentially further training on a broader range of data and tasks.
+  * pre-training of foundational models, followed by
+  * audio-language pre-training on paired data
+  * potentially further training on a broader range of data and tasks
 * zero-shot or transfer
   * ALMs have achieved strong zero-shot capabilities in audio retrieval,
-    hE transfer remains an important stage for applying models to downstream
-* Task-specific finetuning is one of the most widely used methods. It involves
-  * supervised fine-tuning of pre-trained models on downstream task datasets and
-  * potentially with adaptive modules. Another category of methods includes
+  * hE transfer remains an important stage for the downstream application
+* Task-specific fine-tuning is one of the most widely used methods. It involves
+  * supervised fine-tuning of pre-trained models on downstream task datasets
+  * potentially with adaptive modules. Or
   * transferring simultaneously on multiple tasks to make the model more
-    universal or gain from multi-task knowledge sharing. Unlike task-specific
+    universal or gain from multi-task knowledge sharing
   * instruction tuning and in-context learning aim to enhance (or unlock) the
-    LLM’s ability to follow human instructions. Essentially, it 
-    * fine-tunes ALMs with a set of formatted instances in natural language form
-      [27], thus helping the model generalize to various downstream tasks.
-  * agent system: Multi-task transfer by cooperating multiple models 
+    LLM’s ability to follow human instructions
+    * fine-tunes ALMs with a set of formatted instances in natural language [27]
+    * thus helping the model generalize to various downstream tasks
+  * agent system: Multi-task transfer by cooperating multiple models
 
 ## C. Research Landscape (Fig 2)
 
-* training dimension, ALMs are divided into pre-training and transfer. 
+* training dimension, ALMs are divided into pre-training and transfer
 * ALMs integrate pre-trained audio and language models, then undergo further
-  pre-training on extensive audio-text data.
-  Transfer is crucial for combining these models with other networks and
-  applying them to various downstream tasks. 
-* Data is an essential element for model training and evaluation. Different
-  types of datasets can be utilized at various stages of training, and
-  benchmarks provide unified and comprehensive standards for model evaluation,
-  playing an important role in optimizing the models. Therefore, research on
-  ALMs can be developed in three fields: 
-  * pretraining for representation
-  learning, 
-  * downstream transfer, and 
-  * datasets and benchmarks.
+  pre-training on extensive audio-text data
+  * Transfer is crucial for combining these models with other networks and
+    applying them to various downstream tasks
+* Data is an essential element for model training and evaluation
+  * pre-training for representation learning,
+  * downstream transfer, and
+  * datasets and benchmarks
 * Fig. 2: Research landscape for audio-language models
-  * audio-language representation requires pre-training (Sec.  IV), 
+  * audio-language representation requires pre-training (Sec IV),
   * transfer to downstream application
-    through task-specific fine-tuning or instruction tuning (Sec. V), 
-  * data (Sec. VI) is the foundation for model training, and they can be divided
-    * labeled audio datasets, 
-    * audio-text paired datasets, and 
+    through task-specific fine-tuning or instruction tuning (Sec V),
+  * data (Sec VI) is the foundation for model training, and they can be divided
+    * labeled audio datasets,
+    * audio-text paired datasets, and
     * audio question answering datasets
 
 # III. Foundations: architecture, training objectives, and evaluation methods
 
-A. ALM Architectures
-B. Training Objectives
+## A. ALM Architectures (Fig 4)
+
+* ALMs and systems typically comprising audio and language encoders, and
+  may include other multimodal alignment mechanisms and language models. As
+* four types: Two Towers, Two Heads, One Head and Cooperated Systems.  
+* Two Towers, with one encoder and a projector for each modality, 
+  * embeddings will be aligned in a joint space. 
+  * most prominent pre-training: Contrastive Language-Audio Pretraining (CLAP)
+    * incorporates a contrastive learning framework to 
+      bring audio and text descriptions into a joint multimodal space,
+      learning the mapping relationship between the two modalities [2].
+  * based on the concept of modality alignment, 
+    mechanisms can be added between two independent encoders
+    to facilitate communication
+    ~> early-stage modality fusion during the representation phase [28]
+* Two Heads, adds language model on top. 
+  * ‘Head’ refers to a network that unifies a certain modal representation
+    space into a unified space [29]–[31].
+  * Language modeling has first been proven to possess strong capabilities in
+    semantic feature extraction within the field of speech [32], making it a
+    natural design choice to incorporate language models into ALMs. With the
+  * many works have utilized LLMs as the backbone for ALM inference, expanding
+    the perceptual modalities of large language models and leveraging their
+    emergent understanding capabilities.
+  * classic works such as SpeechGPT [8], Pengi [1], and Qwen-Audio [33],
+    making Two Heads a unified architecture of Large Audio-Language Models. In
+  * modality fusion can also be promoted through communication mechanisms
+    between encoders [34]. It is important to note that 
+  * in some works, text inputs may only undergo tokenization
+    without the need for a dedicated text encoder, and 
+    these models can be considered under a special type of Two Heads framework
+* One Head, with one unified encoder and a language model. 
+  * one encoder to handle two different modalities simultaneously, with a
+    language model on top. In the 
+  * vision community, a line of work has conducted research on the One Head
+    architecture 
+    based on the view that the same multimodal processing module can achieve
+    better alignment. That is, using a unified space to represent two
+  * hE there are relatively few related studies in audio-language [35].
+* Cooperated Systems, utilize LLMs as agents to cooperate several models.
+  * various model types mentioned above. Its design 
+  * facilitates the selection and utilization of each model’s inherent
+    complementary strengths, tailored to downstream task requirements. Through
+  * the system can tackle a wider array of complex tasks [36]
+
+## B. Training Objectives (Fig 5)
+
+* Pre-training objectives include contrastive, generative, and discriminative
+  * may be conducted on audio-text or single-modal data. The 
+  * aiming to learn audio semantic features and audio-language correlations
+* transfer objectives can be 
+  * task-specific fine-tuning objectives: either generative or discriminative
+  * generative language modeling objective.
+    * aims to improve unlock pre-training models’ generalization ability on
+      downstream tasks through standard language modeling objectives. Note that
+* the above training objectives can be used in combination.
 
 ### Contrastive Objectives
+
+* the most commonly used type of training objective in audio-language
+  pre-training, which 
+* aims to train the model to bring positive sample pairs closer together and
+  push negative sample pairs further apart within a shared embedding space
+  for audio and text, thereby learning the audio-language correlations and
+  obtaining distinguishable representations between audio samples
+* symmetric audio-text infoNCE [37] loss function
+  to measure the similarity between audio and text embeddings
+  * The most widely implemented approach for this category of objective is using a
+  . Let the i − th sample pair be x i , t i . Given an audio encoder h a (·) and
+  a text encoder h t (·),  audio sample x i and its corresponding caption t i
+  * the embedding vectors for the can be represented as: 
+  z i a = h a (x i ) (1) 
+  z i t = h t (t i ) (2) 
+  The similarity between audio and text embeddings: dot product
+  * The infoNCE loss for the audio dimension, l a , is defined as the average of
+    a normalized function measuring the similarity of different texts to the
+    same audio query
+  * the contrastive loss for the text dimension, l t , measures the similarity
+    of different audios to the same text query
+  * For a batch with B audio-text pairs, we have: 
+    l i a = − log softmax z i a · z j t /τ (3)
+    l i t = − log softmax z i · z j /τ (4) where 
+* τ represents a temperature parameter used to scale the range of logits. When
+
 ### Generative Objectives
+
+* in audio representation learning [in general]:
+  generative objectives lead the network in learning semantic features of audio
+  through pretext tasks such as masked reconstruction [38]. 
+* In audio-language pre-training, similar approaches are introduced, guiding
+  * audio or audio-related language generation tasks. These methods are 
+  * often combined with contrastive learning to bolster the robustness of
+    learned audio embeddings or improve computational efficiency. 
+  * During transfer, these generative objectives can help the model adapt to
+    corresponding generative tasks and are
+    widely used in transfer with generative LLMs.
+* pre-training: the most common method for audio mask reconstruction is
+  based on the audio spectrogram. 
+  * M (·) denote the masking operation, and let 
+  * f a (·) represent the spectrogram encoder and 
+  * p ae (·) is the audio embedding projection layer 
+  * masked spectrogram prediction, an additional decoder f a −1 (·) is added to
+  * For an audio sample with the original spectrogram $a$, 
+  * spectrogram reconstruction can be represented as â = f a −1(p ae(f a(M(a))))
+    Using â n and a n to denote the decoder prediction output of the n − th
+    masked spectrogram patch and the original true patch, respectively. For a
+  * spectrogram divided into N patches, 
+  * the audio reconstruction loss used for self-supervision can be defined as
+    minimizing the L2 (mean squared error, MSE) loss
+  * ALMs include both audio and language modalities as inputs, some works have
+    similarly designed masked crossmodal reconstruction tasks, which typically
+    involve methods such as 
+    cross-attention mechanisms to communicate between the encoders of the two
+    modalities and perform reconstruction on the audio representation.
+* transfer: During audio generation transfer, training objectives essentially
+  enhance the model’s performance by minimizing the distance between the
+  predicted embedding ẑ and its corresponding ground truth z. This 
+  * distance metric can be chosen based on the situation, with common options
+    * eg L1 and L2 distances. The 
+  * training objective can also be set as a weighted sum of multiple distances.
+    * audio sample: generative audio modeling objective can be represented
+    as: \mean \alpha L1 + \beta L2
+  * also possible to directly train jointly with the decoder network, designing
+    the training objective directly on the predicted audio amplitude. For
+    instance, aiming to learn a decoder net h de (·) that maps known audio x i
+    and query t i to a predicted audio â i . Denote z i t as the embedding of
+    the language query, the training objective could be to minimize the L1 (mean
+    absolute error, MAE) loss between the amplitude spectrogram |a i | of the
+    ground truth target audio source and the predicted |â i |:
+* LM: Generative language modeling objectives are used to guide ALM in
+  generating audio-related text that is consistent with the ground truth. On one
+  * pre-training: force the model to learn audio-language correlations
+    * improve the model’s performance on corresponding downstream tasks
+      (eg automatic caption generation)
+  * fine-tuning: as a standard loss for generative language modeling, it is also
+    commonly used during ALM transfer with language model [39].
+  * An additional text decoder (language pre-trained model) is required in
+    language generation. 
+    * autoregressive language model to predict tokenized text associated with a
+      given audio sample x, 
+      the language modeling objective is defined as minimizing the negative
+      log-likelihood of the current ground-truth token (cross-entropy, CE loss),
+      given the previous ground-truth tokens
+    * Non-autoregressive language models also adopt a similar
+      negative log likelihood objective without temporal averaging
+
 ### Discriminative Objectives
 
-C. Evaluation Methods
+* They are used to guide the model in learning to predict the correct label, and
+  can be broadly categorized into classification and retrieval objectives.
+* Here, we take the cross-entropy function as an example to
+  uniformly calculate the loss between the predicted output and the truth.
+* Audio classification is one of the most extensively studied downstream tasks.
+  It aims to recognize patterns from specific audio inputs to predict given
+  labels. For a batch of B audio samples, the objective can be expressed as:
+  avg y i,c log(p̂ i,c )
+  * C is the number of classes. y i,c is the true label of the i − th sample in
+  * p̂ i,c is the predicted probability of the i − th sample in class c.
+* Audio-Text Retrieval (ATR) aims to 
+  find matching items between audio clips and textual descriptions. 
+  * Given a query in one modality (audio or text), the goal is to retrieve the
+    corresponding item from a pool of candidates in the other modality. Here, we
+  * scoring function S (·) to represent the model’s prediction output by
+  * Y is a set of m possible caption texts, the correspondence caption of a
+    given audio x i is argmax softmax S(z i a , z j t )
+  * retrieval tasks can be considered as instance-level classification, so the
+    objective can be formatted as L = \sum log yi^
+  * Specially, audio-text matching is pretext task designed to forcing
+    a more fine-grained alignment between audio and text embeddings than
+    contrastive pre-training
+    * predict whether a given text correctly describes a provided audio, can be
+    * binary classification task
+      L mat = p log S(z a , z t) + (1 − p) log 1 − S(z a , z t)
+    * Here, p is 1 if the audio and text are paired, otherwise it is 0.
+
+## C. Evaluation Methods
+
+* Zero-Shot Evaluation
+  * assessing the ability of contrastive ALMs in open-set retrieval. This
+  *  measuring the similarity between audio and text embeddings. Notably, aside
+  * allows for zero-shot evaluation on classification tasks such as 
+    eg sound event detection and emotion recognition.
+* Linear Probe Evaluation: It is a common experimental setup 
+  * for evaluating pre-trained models, and it is used to 
+  * assess the audio representation of ALMs.
+  * probe
+    * adding a linear header (usually an MLP) to the frozen pre-trained model and
+      training the header on downstream tasks, allowing the model to be adapted
+      for specific tasks and datasets. Although this simple transfer learning
+    * may not achieve optimal performance on specific tasks, it 
+    * minimizes the variables introduced, hence its widespread adoption for
+  * tasks are usually fundamental linear tasks like classification.
+* Supervised Fine-tune Evaluation: It further 
+  * examines the generalization ability of the pre-trained model to downstream
+    tasks and its task-specific performance. For a given downstream task, 
+  * the audio encoder is unfrozen and fine-tuned along with an attached head.
+  * performance is then validated on the test set and compared with
+    state-of-the-art (SOTA) models for that task. This evaluation approach not
+  * tasks: not only classification tasks but often eg detection and generation
+* Instruction-following Evaluation: It emphasizes the model’s ability to
+  * esp for the generalization ability of Large Audio-Language Models LALMs.
+  * a special type of zero-shot evaluation or supervised fine-tuning evaluation,
+    depending on whether instruction tuning is performed.
 
 # IV. Representation pre-training
 
-A. Audio Pre-training
-B. Language Pre-training
-C. Audio-Language Pre-training
+## A. Audio Pre-training
+## B. Language Pre-training
+## C. Audio-Language Pre-training
 
 ### Contrastive Pre-trained Models
 ### Generative Pre-trained Models
 ### Discriminative Pre-trained Models
 
-# V. Downstream transfer
+## V. Downstream transfer
 
-A. Task-specific Fine-tuning
+## A. Task-specific Fine-tuning
 
 ### Models for Discriminative Tasks
 ### Models for Generative Tasks
 
-B. Multi-task Tuning and Cooperation
+## B. Multi-task Tuning and Cooperation
 
 ### Multi-task Tuning Models
 ### Audio-Language Agent Systems
 
 # VI. Datasets and benchmarks
 
-A. Audio-Text Paired Datasets
-B. Audio Question Answering Datasets
-C. Benchmarks
+## A. Audio-Text Paired Datasets
+## B. Audio Question Answering Datasets
+## C. Benchmarks
 
 # VII. Challenges and future research directions
+
+* From a data perspective, there are three challenges and potential directions.
+  * Audio Sources: 
+    * The current audio-language datasets have limited sources [18]
+    * AudioSet [161], FreeSound [162], and BBC Sound Effects [163]. 
+    * using multiple audio-language datasets for model training, it is 
+      hE often limited due to the overlap of data sources, restricting the
+    * distribution shift issues [164], resulting in ALM lacking robustness and
+    * Compared with the data sources of LLM and VLM, the 
+      diversity of audio data is still limited [165]. We hope to develop 
+    * future: methods for constructing online audio datasets to expand the
+  * Text Sources: 
+    * Currently, audio-language datasets focus on generating audio captions from
+      known labeled datasets or manual annotation, hindering the acquisition of
+    * create ALM-suitable datasets via model generation methods.
+    * generated text may still contain inaccuracies like hallucinations [166].
+    * future: dependable model generation methods is a crucial direction needing
+    * vast but noisy audio-related text on the internet, such as 
+      eg audio introductions and comments, remains overlooked.
+  * Evaluation Benchmarks and Analysis: A unified model evaluation framework is
+    essential for identifying model limitations and advancing the field. While
+    * ? empirical analysis across a wide range of audio types, tasks, and models
+      remains scarce. This gap is partly due to the 
+    * limited availability of audio resources, as data used in evaluations
+      should not overlap with the training set. Therefore, we encourage the
+    * future: benchmarks with broader coverage beyond mainstream audio sources,
+      from other public or private domains, and look forward to extensive
+* model perspective
+  * Compared to training methods, the model architecture is a more fundamental
+  * four challenges and potential directions.
+  * Unified multimodal encoder: 
+    * Current ALMs mainly employ two separate networks for audio and language
+    * vision community: unifying learning on the One Head architecture can
+      enhance communication efficiency across data modalities, improve training
+      efficiency, and alignment [31, 167]
+      * [31] J. Jang, C. Kong, D. Jeon, S. Kim, and N. Kwak, “
+        Unifying vision-language representation space with single-tower trafoer 
+        AAAI Conference on Artificial Intelligence, vol. 37, no.  1, 2023, pp.
+      * [167] M. Tschannen, B. Mustafa, and N. Houlsby
+        Image-and-language understanding from pixels only
+        arXiv preprint arXiv:2212.08045, vol.  3, 2022.
+    * hE few related studies in the field of audio-language [35]
+  * Pre-trained Foundation Models
+    * the choice of pre-trained audio and text encoders is crucial [22, 40,
+      141]. However, with the rapid development of language models, 
+    * hE the primary audio encoders are still pre-trained models such as 
+      eg PANNs [43] and AST [48].
+    * the open ALM community lacks a large, well-trained audio encoder to
+  * Continual Learning: Existing work highlights the use of larger-scale
+    * streamable data accumulates, pre-training from scratch requires
+    + when old data is unavailable, such pretraining from scratch is not
+      permissible. We aspire for models to directly 
+    * continue learning on new datasets without affecting their performance on
+      old tasks and zero-shot predictions. This method of continual learning for
+  * Efficient Learning: 
+    * Compared to the natural language and vision communities, 
+      * sources of audio are relatively limited, and 
+    * pre-training ALMs on large-scale training data requires intensive comput
+    * future: data-efficient ALMs that can train effective models with limited
+      audio-text data. For example, learning not only from each audio-text
+      pair but also utilizing more useful information from supervised learning
+      between paired data [168]
+      * [168] B. Wu, R. Cheng, P. Zhang, T. Gao, J. E. Gonzalez, and P. Vajda
+        Data efficient language-supervised zero-shot recognition
+          with optimal trans- port distillation
+        ICLR 2022 International Conference on Learning Representations
+    * active learning or curriculum learning methods are possible 
+      to make more efficient use of limited data [169]. Moreover, for 
+    * audio tasks and transfer learning methods are orthogonal, we encourage
+      ~> combining ALMs with more transfer learning methods 
+      ~> better trade-off between parameter-efficient learning and performance
 
 # VIII. Concluding the paper
