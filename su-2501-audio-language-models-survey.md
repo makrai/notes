@@ -30,6 +30,8 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
   * current challenges and future directions
   * a wide range of tasks in various
     audio types such as natural sounds, speech, and music
+    * human voices, natural sounds, music rhythms present
+      significant challenges to general audio modeling [23]
   * we analyze the current challenges in this field and propose directions
 
 # 1 Intro
@@ -229,14 +231,14 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 * symmetric audio-text infoNCE [37] loss function
   to measure the similarity between audio and text embeddings
   * The most widely implemented approach for this category of objective
-  * Let the i − th sample pair be x i , t i . Given an 
-  * audio encoder h a (·) and a text encoder h t (·),  
+  * Let the i − th sample pair be x i , t i . Given an
+  * audio encoder h a (·) and a text encoder h t (·),
     audio sample x i and its corresponding caption t i
   * the embedding vectors can be represented as:
   z i a = h a (x i ) (1)
   z i t = h t (t i ) (2)
   The similarity between audio and text embeddings: dot product
-  * The infoNCE loss for the audio dimension, l a , is defined as 
+  * The infoNCE loss for the audio dimension, l a , is defined as
     the average of a normalized function measuring the similarity of different
     texts to the same audio query
   * the contrastive loss for the text dimension, l t , measures the similarity
@@ -275,7 +277,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
     ~> some works have similarly designed masked crossmodal reconstruct tasks eg
     cross-attention mechanisms to communicate between the two encoders
     and perform reconstruction on the audio representation
-* transfer: During audio generation transfer, training objectives 
+* transfer: During audio generation transfer, training objectives
   enhance the model’s performance by minimizing the distance between the
   predicted embedding ẑ and its corresponding ground truth z
   * distance metric can be chosen based on the situation
@@ -285,7 +287,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
   * also possible to directly train jointly with the decoder network, designing
     the training objective directly on the predicted audio amplitude. For
     * eg aiming to learn a decoder net h de (·) that maps known audio x i and
-      query t i to a predicted audio â i 
+      query t i to a predicted audio â i
     * z i t is the embedding of the language query
     * the training objective could be the L1 (mean absolute error, MAE) loss
       between the amplitude spectrogram |a i | of the ground truth target audio
@@ -363,13 +365,196 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 
 # IV. Representation pre-training
 
+* the choice of encoders significantly impacts the generation of powerful
+  representations through Audio-language pre-training and
+  enhances the performance of downstream tasks [40]
+
 ## A. Audio Pre-training
+
+* CNN-based Models
+  * strong feature extraction capabilities, parameter sharing, and sparse
+    connectivity. In audio applications, CNNs-based models usually use
+  * short-time Fourier transform (STFTs) to convert time-domain waveforms into
+    log-mel spectrograms as input. Models like
+  * AlexNet and VGG perform well in audio classification tasks [41, 42], and
+  * performance is related to the design of network depth and width
+  * PANNs [43] based on CNN14 achieve good results in Audioset labeling,
+    * [43] Q. Kong, Y. Cao, T. Iqbal, Y. Wang, W. Wang, and M. D. Plumbley,
+      Panns: Large-scale pretrained audio neural networks for audio patt recog
+      IEEE/ACM Transactions on Audio, Speech, and Language Processing 2020
+* Transformer-based Models: These models utilize self-attention mechanisms to
+  * Wav2vec 2.0 [44] and HuBERT [45] are designed for speech tasks,
+    * combining CNN with self-attention to manage local features and long-term
+    * Wav2vec 2.0 uses a unique self-supervised method, which
+      converts raw audio into potential representations through CNN, and then
+      generates contextual output with masks and Transformer
+    * Training involves contrastive tasks to predict masked segments for generlz
+    * HuBERT improves this by introducing noise labels from offline clustering
+      to form a codebook for pre-text prediction,
+      encouraging the model to capture acoustic details and long-range temp rels
+  * Whisper
+    * supervised models face overfitting risks during fine-tuning [46],
+    * Whisper [47] addresses this issue with a multi-task training framework,
+      * encoder-decoder Transformer with additional convolutional layers for
+        processing audio spectrograms, promoting next token prediction across
+        tasks and offering wide adaptability
+  * AST [48] is the first model without convolutions and based purely on
+    attention for audio spectrograms
+    * requires more data for training and faces
+      challenges with large GPU memory and long training times [49]
+  * HTSAT [50] deals with these issues through a hierarchical model structure,
+    processing audio signals through multiple layers, with each layer’s
+    Transformer capturing temporal and structural information, enabling more
+    effective handling of long audio signals
+  * AudioMAE [38]
+    * audio extension of the Masked Autoencoder (MAE) [51], adopting a
+      Transformer-based encoder-decoder design, masking log-mel spectrograms at
+      a high rate, with the encoder providing non-masked tokens and the decoder
+      reconstructing masked parts
+    * advanced performance in classification tasks and is
+    * one of the mainstream self-supervised pre-training models in the audio
+* Codec-based Models: Based on the
+  * encoder-decoder structure,
+  * they can convert continuous audio into discrete tokens for developing ALMs
+  * some loss of information, hE they excel at extracting acoustic features and
+    * high-quality audio reconstruction [52]
+  * SoundStream [53] is a pioneer, using
+    * streamable SEANets [54] for encoding and decoding, and
+    * Residual Vector Quantization (RVQ) bottleneck for parallel token flow,
+      optimized through reconstruction and adversarial loss
+  * Encodec [55] enhances this framework by adding LSTM layers and using a
+    Transformer-based language model to improve sequence modeling performance
+
 ## B. Language Pre-training
+
+* small (≤ 1 billion), medium (1−10 billion), large (10−100 billion), and
+  very large (> 100 billion). Models with over
+* > 1 billion parameters are referred to as LLMs. By pre-training on vast
+* fine-tuning techniques incorporating human feedback, numerous LLMs with tens
+* 10 bs: promising capabilities for multimodal tasks. Renowned language pre-
+* GPT (Generative Pre-trained Transformers) families [56]–[61],
+* LLaMA (Large Language Model Meta AI) families [62]–[65],
+* Qwen [66]–[69], and
+* OPT (Open Pre-trained Transformer) families [70, 71]
+* details: please refer to [11, 72]
+  * [11] W. X. Zhao, K. Zhou, J. Li, T. Tang, X. Wang, Y. Hou, Y. Min, B. Zhang,
+    J. Zhang, Z. Dong, et al
+    A survey of large language models, arXiv:2303.18223, 2023
+  * [72] S. Minaee, T. Mikolov, N. Nikzad, M. Chenaghlu, R. Socher, X
+    Amatriain, and J. Gao, “
+    Large language models: A survey,” arXiv preprint arXiv:2402.06196, 2024
+
 ## C. Audio-Language Pre-training
 
+| Model           | Architecture       | Con | Gen | Dis | Notes                                                                               |
+|-----------------|--------------------|-----|-----|-----|-------------------------------------------------------------------------------------|
+| MS-CLAP [2]     | CNN14 + BERT       |  1  |     |     | first to propose contrastive learning for ALM pre-training                          |
+| LAION-CLAP [22] | HTSAT + RoBERTa    |  1  |     |     | first open-source contrastive learning for ALM pre-training                         |
+| MS-CLAP V2 [50] | HTSAT-22 + GPT-2   |  1  |     |     | multi-task audio encoder and an autoregressive text encoder                         |
+| BLAT [73]       | CNN14 + BERT       |  1  |     |     | audio captioning to synthetic data for pre-training                                 |
+| ACBA [74]       | CNN14 + RoBERTa    |  1  |     |     | synthesize sequential audio with captions
+                                                                   to enhance sequential relationship modeling capability between sound events |
+| COMPA [26]      | HTSAT + Flan-T5    |  1  |     |     | composition-aware
+                                                                            contrastive learning to enhance compositional reasoning capability |
+| MGA-CLAP [75]   | HTSAT / AST + BERT |  1  |     |     | shared codebook and hard negative guided contrastive loss
+                                                                            to unify the granularity and latent distribution of two modalities |
+| MusCALL [76]    | ResNet50 + GPT-2   |  1  |     |     | strong performance in zero-shot genre classification and auto-tagging tasks
+                                                                                                                       within the music domain |
+|-----------------|--------------------|-----|-----|-----|-------------------------------------------------------------------------------------|
+| CTAL [28]       | RoBERTa            |     |  1  |     | early exploration of joint representation learning methods
+                                                                                                             for audio and language modalities |
+| FLAP [77]       | MAViL + RoBERTa    |  1  |  1  |     | self-supervised audio-language representations
+                                                                                   by masking for both contrastive learning and reconstruction |
+| M2D-CLAP [78]   | M2D + GTE          |  1  |  1  |     | combine Masked Modeling Duo (M2D) to train audio encoder while contrastive learning |
+| Cacophony [79]  | AudioMAE + RoBERTa |  1  |  1  |     | enhances audio-text alignment using auxiliary captions for fine-grained learning    |
+| MINT [34]       | Data2vec + Flan-T5 |  1  |  1  |  1  | multi-target pre-training and instruction tuning                                    |
+
+
 ### Contrastive Pre-trained Models
+
+* Inspired by vision, the CLIP [80] model, which
+  * CLIP leverages large-scale web visual-text pairs to expand the training
+  * excellent performance across various tasks, researchers have begun to apply
+* MS-CLAP [2] (prefix added by the editor for distinction) is the first
+  * symmetric audio-text infoNCE loss function 5 for pre-training based on
+  * data: audio-text paired datasets and audios from other tasks such as audio
+    classification
+* Subsequent studies have focused on dataset scaling
+  * LAION-CLAP [22] released a larger audio-caption dataset, LAION-Audio-630K,
+    and trained the first fully open-source CLAP model based on this dataset
+    together with other public datasets
+  * MS-CLAP V2 [50] not only/but also
+    * leverages a more extensive multi-task trained audio encoder
+    * further expands the audio-text paired dataset for contrastive
+      language-audio learning
+  * BLAT [73], from another prospective, proposes using an audio captioning
+    model to generate audio-text pair data for contrastive pretraining
+* address the inherent shortcomings of the vanilla CLAP. The experiments of
+  * ACBA [74] show that CLAP has limited understanding of natural language,
+    especially regarding the order or concurrent arrangement of sound events. It
+  * modifying the original pretraining dataset to provide more audio-language
+    pairs about ordering
+  * COMPA [26]
+    * issue: current benchmarks cannot measure the lack of combinatorial
+      reasoning in models and proposes
+    * contrastive training with
+      composition-aware hard negatives and a modular contrastive loss
+  * MGA-CLAP [75] tackles the
+    * problem of different granularities between modalities by adopting
+    * solution: a shared codebook, designing
+      a locality-aware block and a
+      hard-negative guided loss to achieve fine-grained alignment
+  * MusCALL [76] conducts pre-training research in professional fields such as
+    music and performs excellently in related tasks
+    * [76] I. Manco, E. Benetos, E. Quinton, and G. Fazekas, “
+      Contrastive audiolanguage learning for music,” in
+      Ismir 2022 Hybrid Conference, 2022
+
 ### Generative Pre-trained Models
+
+* Cross-modal Transformer for Audio-and-Language (CTAL) [28] is an early
+  * masked language modeling and
+    cross-attention based masked cross-modal acoustic modeling
+* Fast Language-Audio Pre-training (FLAP) [77] conduct representation learning
+  through the combination of masked reconstruction and contrastive learning
+  It generates multiple augmented views of the audio through masking for
+  inter-modal contrast and
+  * reconstruct the masked parts of the audio spectrogram. This masking
+  * reduces the amount of data that needs to be processed, thereby
+    lowering the computational complexity and making it
+    more efficient than contrastive learning with raw spectrograms
+  * the masked reconstruction task, encourages the model to compress information
+    into each sample embedding, making the audio embedding
+    ie not only close to their textual counterparts but also producing more
+    informative original inputs
+* M2D-CLAP [78] addresses the
+  * issue: MAE using all patches to encode training signals, which
+    may lead to underutilization of inductive biases. By
+  * combining Masked Modeling Duo (M2D) [81] to train the audio encoder while
+    contrastive learning further promotes input modeling, thus enhancing the
+    effectiveness of the learned representations
+* Cacophony [79]
+  * vision-language has shown that
+    integrating auxiliary captioning objectives in contrastive learning can pro-
+    vide stronger supervision [82, 83]
+  * Cacophony: improves CLAP by incorporating an auxiliary captioning objective,
+    encouraging the audio encoder to capture fine-grained patterns closely
+    matching text descriptions
+
 ### Discriminative Pre-trained Models
+
+* set up a pretext task of audio-text matching, allowing the model to learn
+  cross-modal alignment features
+* MINT [34] is a framework that enhances audio-language pretraining through
+  multiple objectives. Specifically, it introduces
+  * Bridge-Net as a trainable module,
+    taking the output of the audio encoder and text as inputs to the Bridge-Net
+  * contrastive objective to align the audio and text representations by
+    maximizing the mutual information between them,
+    combines matching objective for fine-grained audio-text alignment, and
+  * generative objective to guide the audio-grounded text generation task,
+    forcing the model to extract audio features to capture all necessary
+    information about generating the text
 
 ## V. Downstream transfer
 
@@ -411,10 +596,10 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 | AnimalSpeak [145]      | Bioacoustic | iNaturalist, Xeno-Canto, Animal Sound Archive, etc. | 1.1M  | Generated         |
 
 * eg captions (description of audios), transcriptions (for speech datasets) or
-  translations (transcriptions in another language of what the speaker says).
+  translations (transcriptions in another language of what the speaker says)
 * natural language can describe multiple events in the audio more freely and in
   greater detail, audio-caption datasets providing more information
-* transcriptions and translations are more often used for fine-tuning 
+* transcriptions and translations are more often used for fine-tuning
 
 ## B. Audio Question Answering Datasets
 
@@ -434,22 +619,22 @@ Tab V: popular open-source QA datasets
 
 * Initially, such datasets were specifically created for Audio Question
   Answering (AQA) tasks, constructing diverse questions to train models on how
-  to answer similar queries. 
+  to answer similar queries
 * In recent years, AQA tasks have been increasingly utilized as a proxy task for
   model learning perception and reasoning about audio [146]. They can serve as a
-* they integrate multiple audio tasks [24] and 
-* can also be used to guide models in better following human instructions [8].
+* they integrate multiple audio tasks [24] and
+* can also be used to guide models in better following human instructions [8]
 
 ## C. Benchmarks (ie datasets + evaluation strategy)
 
-* three types: task-specific, cross-task, and audio instruction benchmarks.
-* Task-specific benchmarks like 
+* three types: task-specific, cross-task, and audio instruction benchmarks
+* Task-specific benchmarks like
   * eg SoundDescs [15], CompA [26], and ADU-Bench [150] evaluate models on
-  * tasks such as ATR and audio dialogue.
-* Cross-task benchmarks 
+  * tasks such as ATR and audio dialogue
+* Cross-task benchmarks
   * eg ARCH [151] and MMAU [152] test generalization
     across multiple domains and tasks
-  * Other speech-related cross-task benchmarks: 
+  * Other speech-related cross-task benchmarks:
     SUPERB [153], Dynamic-SUPERB [154], LeBenchmark [155], LAPE [156],
     VoiceBench [157]
   * music domain benchmarks like MusicBench [91] and MuChoMusic [158]
@@ -477,8 +662,8 @@ Tab V: popular open-source QA datasets
     * future: dependable model generation methods is a crucial direction
     * vast but noisy audio-related text on the internet,
       eg audio introductions and comments, remains overlooked
-  * Evaluation Benchmarks and Analysis: A 
-    * unified model evaluation framework is essential 
+  * Evaluation Benchmarks and Analysis: A
+    * unified model evaluation framework is essential
     * ? empirical analysis across a wide range of audio types, tasks, and models
       remains scarce
     * limited availability of audio resources, as data used in evaluations
@@ -491,7 +676,7 @@ Tab V: popular open-source QA datasets
   * Unified multimodal encoder:
     * Current ALMs mainly employ two separate networks for audio and language
     * vision community: unifying learning on the One Head architecture can
-      enhance communication efficiency across data modalities, 
+      enhance communication efficiency across data modalities,
       improve training efficiency, and alignment [31, 167]
       * [31] J. Jang, C. Kong, D. Jeon, S. Kim, and N. Kwak, “
         Unifying vision-language representation space with single-tower trafoer
@@ -507,7 +692,7 @@ Tab V: popular open-source QA datasets
     * the open ALM community lacks a large, well-trained audio encoder
   * Continual Learning: Existing work highlights the use
     * streamable data accumulates
-    + when old data is unavailable, pretraining from scratch is not permissible.
+    + when old data is unavailable, pretraining from scratch is not permissible
     * continue learning on new datasets without affecting their performance on
       old tasks and zero-shot predictions
   * Efficient Learning:
