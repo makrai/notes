@@ -627,11 +627,11 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
     * speech-tos-peech translation (S2ST) [47], and
     * automatic audio captioning (AAC) [5, 101–105]
 
-### Models for Discriminative Tasks
+### Models for Discriminative Tasks, Fig 6
 
 * Through contrastive learning with natural language supervision,
   pre-trained ALMs can perform zero-shot audio classification and retrieval
-  within a unified framework (Fig 6)
+  within a unified framework
   * pre-trained models already have strong generalization capabilities,
     nL supervised fine-tuning remains important [2, 22, 50]
   * Audio classification: mapping input audio to a label
@@ -717,7 +717,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
     * involves recognizing environments, sound events, and the temporal
       relationships between these events, and then describing them in fluent
       sentences. Currently,
-    * the standard approach is an encoder-decoder deep learning framework, with
+    * the standard approach is an encoder-decoder deep learning framework, Fig 8
     * innovative network architectures and training schemes [16]
   * Audio Captioning Transformer (ACT) [102] is
     the first full Transformer architecture designed specifically for AAC,
@@ -1025,7 +1025,7 @@ Tab V: popular open-source QA datasets
 * they integrate multiple audio tasks [24] and
 * can also be used to guide models in better following human instructions [8]
 
-## C. Benchmarks (ie datasets + evaluation strategy)
+## C. Benchmarks (ie a dataset along with an evaluation strategy)
 
 * three types: task-specific, cross-task, and audio instruction benchmarks
 * Task-specific benchmarks like
