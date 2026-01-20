@@ -34,7 +34,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
       significant challenges to general audio modeling [23]
   * we analyze the current challenges in this field and propose directions
 
-# 1 Intro
+# I. Intro
 
 * Enabling machines to hear like humans and process audiocentric tasks [1]
   [1] S. Deshmukh, B. Elizalde, R. Singh, and H. Wang,
@@ -81,7 +81,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
   * datasets serve as the foundation for inspiring research
     in pre-training and downstream models
   * CLAP [2] is considered a significant milestone
-* audio-caption datasets [19]–[21]
+* audio-caption datasets [19–21]
   * initially used for automatic audio caption model training and
   * also served as data foundations for ALMs, inspiring subsequent work
 * pre-training and large-scale datasets [22]
@@ -94,7 +94,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 * general audio modeling [23]
   * types including human voices, natural sounds, music rhythms, etc
 
-## II. Background of audio-language pre-training and transfer
+# II. Background of audio-language pre-training and transfer
 
 ## A. Pre-training and Transfer Paradigm
 
@@ -180,7 +180,7 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
     ~> early-stage modality fusion during the representation phase [28]
 * Two Heads, adds language model on top
   * ‘Head’ refers to a network that unifies a certain modal representation
-    space into a unified space [29]–[31]
+    space into a unified space [29–31]
   * Language modeling has first been proven to possess strong capabilities in
     semantic feature extraction within the field of speech [32], making it a
     natural design choice to incorporate language models into ALMs. With the
@@ -432,9 +432,9 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
 * > 1 billion parameters are referred to as LLMs. By pre-training on vast
 * fine-tuning techniques incorporating human feedback, numerous LLMs with tens
 * 10 bs: promising capabilities for multimodal tasks. Renowned language pre-
-* GPT (Generative Pre-trained Transformers) families [56]–[61],
-* LLaMA (Large Language Model Meta AI) families [62]–[65],
-* Qwen [66]–[69], and
+* GPT (Generative Pre-trained Transformers) families [56–61],
+* LLaMA (Large Language Model Meta AI) families [62–65],
+* Qwen [66–69], and
 * OPT (Open Pre-trained Transformer) families [70, 71]
 * details: please refer to [11, 72]
   * [11] W. X. Zhao, K. Zhou, J. Li, T. Tang, X. Wang, Y. Hou, Y. Min, B. Zhang,
@@ -556,17 +556,417 @@ Cite as: 	arXiv:2501.15177 [cs.SD]
     forcing the model to extract audio features to capture all necessary
     information about generating the text
 
-## V. Downstream transfer
+# V. Downstream transfer
+
+* [1] S. Deshmukh, B. Elizalde, R. Singh, and H. Wang
+  Pengi: An Audio Language Model for Audio Tasks
+  NeurIPS 2023
+* divided into task-specific fine-tuning or multi-task tuning and cooperation
 
 ## A. Task-specific Fine-tuning
 
+| Model              | Domain        | Architectures / Pre-trained models          | Tasks     <td colspan=2>Input <td colspan=2>Output
+|                    |               |                                             |           | A | T | A | T |
+|--------------------|---------------|---------------------------------------------|-----------|---|---|---|---|
+| VALL-E [32]        | Speech        | EnCodec + AR/NAR LM                         | TTS       | 1 | 1 | 1 |   |
+| VALL-E X [84]      | Speech        | EnCodec + AR/NAR LM                         | TTS, S2ST | 1 | 1 | 1 |   |
+| MMCE-Qformer [85]  | Speech        | RoBERTa + SpeechTokenizer + GPT-2           | TTS       | 1 | 1 | 1 |   |
+| E2 TTS [86]        | Speech        | Unsupervised Pretraining + BigVGAN          | TTS       | 1 | 1 | 1 |   |
+| Seed-TTS [87]      | Speech        | Speech Tokenizers + AR LM + DiT + Vocoders  | TTS       | 1 | 1 | 1 |   |
+| F5-TTS [88]        | Speech        | ConvNeXt + DiT                              | TTS       | 1 | 1 | 1 |   |
+| Whisper [47]       | Speech        | BPE + encoder-decoder Transformer           | ASR, S2TT | 1 |   |   | 1 |
+| Style-Talker [99]  | Speech        | Whisper + Qwen-Audio + StyleTTS 2           | ASR       | 1 |   |   | 1 |
+| Seed-ASR [100]     | Speech        | LUISE + MoE LLM                             | ASR       | 1 | 1 |   | 1 |
+|--------------------|---------------|---------------------------------------------|-----------|---|---|---|---|
+| MusicLM [90]       | Music         | SoundStream + w2v-BERT + MuLan              | TTM, SG   | 1 | 1 | 1 |   |
+| MusicGen [106]     | Music         | EnCodec + AR LMs                            | TTM       | 1 | 1 | 1 |   |
+| MeLoDy [107]       | Music         | MuLan + Wav2Vec2-Conformer + VAE + LM + DPD | TTM       | 1 | 1 | 1 |   |
+| TANGO [91]         | Music         | FLAN-T5 + LDM + VAE + HiFi-GAN              | TTM       | 1 | 1 | 1 |   |
+| LP-MusicCaps [101] | Music         | Whisper + BART-base                         | AAC       | 1 | 1 |   | 1 |
+|--------------------|---------------|---------------------------------------------|-----------|---|---|---|---|
+| AudioLM [89]       | Speech, Music | SoundStream + w2v-BERT                      | SC, PC    | 1 |   | 1 |   |
+|--------------------|---------------|---------------------------------------------|-----------|---|---|---|---|
+| AudioGEN [92]      | General audio | SoundStream + LSTM                          | TAC       | 1 | 1 | 1 |   |
+| Diffsound [93]     | General audio | VQ-VAE + diffusion                          | TTA       |   | 1 | 1 |   |
+| AudioLDM [4]       | General audio | CLAP + LDM + VAE                            | TTA       | 1 | 1 | 1 |   |
+| LASS-Net [6]       | General audio | BERT + ResUNet                              | LASS      | 1 | 1 | 1 |   |
+| ClipSep [94]       | General audio | CLIP + U-Net                                | LASS      | 1 | 1 | 1 |   |
+| AudioSep [95]      | General audio | CLIP / CLAP + ResUNet                       | LASS, SE  | 1 | 1 | 1 |   |
+| OpenSep [96]       | General audio | Caption Models + Instruction-tuned LLMs     | LASS      | 1 | 1 | 1 | 1 |
+| FlowSep [97]       | General audio | FLAN-T5 + VAE + BigVGAN                     | LASS      | 1 | 1 | 1 |   |
+| TQ-SED [98]        | General audio | CLAP + ResUNet + DPRNN                      | TSED      | 1 | 1 | 1 |   |
+| ACT [102]          | General audio | DeiT + Word2Vec                             | AAC       | 1 |   |   | 1 |
+| EnCLAP [5]         | General audio | CLAP + BART + EnCodec                       | AAC       | 1 |   |   | 1 |
+| EnCLAP++ [103]     | General audio | CLAP + BART + DAC                           | AAC       | 1 |   |   | 1 |
+| ReCap [104]        | General audio | CLAP + GPT-2                                | AAC       | 1 |   |   | 1 |
+| DRCap [105]        | General audio | CLAP + SLAM LLM                             | AAC       | 1 |   |   | 1 |
+
+* supervised fine-tuning on specific downstream task datasets
+  * adaptive modules, such as adding a linear proj layers to a spec num of cats
+  * between the source and target domains, facilitating knowledge transfer
+* discriminative tasks include audio classification (AC) and audio-text
+  retrieval (ATR)
+* classification broadly encompasses more specific scenarios such as
+  Sound Event Classification, Accent Classification, Chord Classification,
+  Spoken Language Identification, speech emotion recognition (SER), and
+  spoken language understanding (SLU)
+* Generative tasks can be further divided into
+  * audio generation:
+    * speech: speech continuation (SC), text-to-speech (TTS), and speech
+      enhancement (SE) in the speech domain [32, 84–89];
+    * music: piano continuation (PC), stereo generation (SG), and
+      text-to-music (TTM) in the music domain [89–91]; as well as
+    * other: text-guided audio continuation (TAC), text-to-audio (TTA),
+      language-query sound source separation (LASS), and
+      text-query sound event detection (TSED) in other general audio domains
+      [4, 6, 92–98]
+  * Language generation, on the other hand, centers on transcription,
+    translation, and caption. Typical tasks include
+    * automatic speech recognition (ASR) [47, 99, 100],
+    * speech-to-text translation (S2TT) [84],
+    * speech-tos-peech translation (S2ST) [47], and
+    * automatic audio captioning (AAC) [5, 101–105]
+
 ### Models for Discriminative Tasks
+
+* Through contrastive learning with natural language supervision,
+  pre-trained ALMs can perform zero-shot audio classification and retrieval
+  within a unified framework (Fig 6)
+  * pre-trained models already have strong generalization capabilities,
+    nL supervised fine-tuning remains important [2, 22, 50]
+  * Audio classification: mapping input audio to a label
+    * the audio encoder from the pre-trained model can serve as a powerful audio
+      pretraining model, used to train additional classifiers on specific
+      datasets for fine-tuning
+  * Retrieval can be divided into audio-to-text and text-to-audio
+    * classification considered as a special case of retrieval
+    * ATR research primarily focuses on enhancing system performance by
+      integrating orthogonal SOTA works
+* eg CNN14-NetRVLAD [108]: audio features and sequence aggregation
+  * CNN14-based audio pretraining model PANNs and
+  * NetRVLAD pooling techniques to achieve significant improvements in
+  * bidirectional audio-text retrieval
+* EN-CA-IMC [109] implements an audio enhancement strategy (EN) involving
+  Gaussian noise, pitch adjustment, and time shift to reduce model overflow,
+  + co-attentive mechanism (CA) and
+  * intra-modal contrastive learning (IMC) between enhanced and original audio
+* CED-BERT-LE [110] integrates a language enhancement strategy (LE) for
+  effective cross-lingual retrieval and uses
+  consistent ensemble distillation (CED) to handle variable-length audio
+  * proficiency across seven additional languages with minimal extra train data
+* the mini-batch Learning-to-match (m-LTM) framework [111] adapts the
+  Learning-to-match approach using minibatch subsampling and
+  Mahalanobis-enhanced ground metrics, leveraging soft-matching from entropic
+  optimal plans and Mahalanobis distance to learn a rich, expressive joint
+  embedding space for audio and text modalities
+
 ### Models for Generative Tasks
+
+* personalized audio for applications such as augmented and virtual reality,
+  game development, and video editing [4]
+* common archit: codec structure that converts continuous audio into discrete
+  tokens for language modeling, ensuring high fidelity [52]
+* AudioGEN [92] is an pioneering audio language codec that uses
+  data augmentation techniques, multi-stream modeling, and
+  classifier-free guidance to improve adherence to text,
+  * distinguishing multiple sound sources, handling real-world recording
+    conditions, and encoding high-fidelity audio
+* VALL-E [32], VALL-E X [84], and MusicLM [90] perform well in speech and
+  music respectively
+* SpeechX [112]
+  combines neural codec language modeling with task-specific prompts to
+  * unified and scalable modeling and provides
+  * a consistent method for utilizing text input in speech enhancement and
+    conversion tasks
+* combining advanced generative models such as flow models and Diffusion
+  * flow-based models like Flow-TTS [113] improve the overall fluency and
+    naturalness of generated speech by using
+    reversible transformations to balance local accuracy and global coherence
+  * Diffsound [93] is an work based on diffusion models, using
+    text as a condition for controlled audio generation by the diffusion model
+  * SeedTTS [87] is a foundational speech generation model that
+    excels in speech in-context learning and achieves
+    good performance in speaker similarity and naturalness
+* Audio source separation is a crucial task in audio enhancement applications
+  * can be considered a type of audio generative task according to objectives in
+    fine-tuning
+  * LASS-Net [6] is the first end-to-end network for
+    language-queried audio source separation (LASS),
+    * capable of separating the target source from an audio mixture based on
+      user’s natural language descriptions (e.g., “a woman speaking”)
+  * AudioSep [95]
+    * Transfer ALMs to source separation typically requires new design, Fig 7
+    * text pretraining that achieves audio-text modality alignment during the
+      ALM pretraining process as the query encoder for text and connects it to
+      the prediction network for downstream tasks (audio separation network),
+      and conduct post-training on specific task datasets. It
+    * achieved audio segmentation for arbitrary descriptions but
+    * extended to speech enhancement tasks, demonstrating the flexibility of
+      combining natural language prompts with task paradigms
+    * potential to integrate multiple audio enhancement tasks into a unified
+      framework
+  * Current research is unfolding in two main aspects:
+    improving separation performance [97] and enhancing generalizability [96]
+* Language generation aims to enable the model to perform audio-centric text
+  prediction tasks, and
+  fine-tuning can be conducted through language generative objectives
+  * two sub-tasks, audio understanding and language generation, are accomplished
+    by the audio encoder and the text decoder, respectively
+  * multiple encoders or decoders [17]
+  * Automated Audio Captioning (AAC) is an emerging audio perception task that
+    * involves recognizing environments, sound events, and the temporal
+      relationships between these events, and then describing them in fluent
+      sentences. Currently,
+    * the standard approach is an encoder-decoder deep learning framework, with
+    * innovative network architectures and training schemes [16]
+  * Audio Captioning Transformer (ACT) [102] is
+    the first full Transformer architecture designed specifically for AAC,
+    excelling in capturing global information and temporal relationships
+  * EnCLAP [5] integrates
+    * two powerful acoustic representation models, EnCodec and CLAP, with the
+    + pre-trained language model BART to generate more accurate and contextually
+      relevant captions
+  * AutoCap [114]
+    leverages extra guidance from metadata to enhance feature extraction,
+    capturing nuanced acoustic information
+  * LPMusicCaps [101] addresses data scarcity in music captioning by using LLMs
+    to generate descriptions from large-scale tag datasets
 
 ## B. Multi-task Tuning and Cooperation
 
-### Multi-task Tuning Models
-### Audio-Language Agent Systems
+| Type         | Model                | Domain | Architectures / Pre-trained models    <td colspan=2>Input 
+                                                                                              <td colspan=2>Output
+|              |                      |        |                                                   | A | T | A | T |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| Codec        | UniAudio [116]       | Audio  | Tokenizers + Multi-scale Transformer              | 1 | 1 | 1 | 1 |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| Codec        | SpeechX [112]        | Speech | EnCodec + AR/NAR LM (VALL-E)                      | 1 | 1 | 1 |   |
+| Codec        | VioLA [117]          | Speech | LSTM + AR LM                                      | 1 | 1 | 1 | 1 |
+| Codec        | AudioPaLM [7]        | Speech | w2v-BERT / USM-v1 / USM-v2 + PaLM-2 + SoundStream | 1 | 1 | 1 | 1 |
+| Codec        | LauraGPT [118]       | Speech | EnCodec + Qwen + Vocoder                          | 1 | 1 | 1 | 1 |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| LALM         | Pengi [1]            | Audio  | CLAP + GPT-2                                      | 1 | 1 |   | 1 |
+| LALM         | LTU [24]             | Audio  | AST + LLaMA                                       | 1 | 1 |   | 1 |
+| LALM         | SALMONN [119]        | Audio  | Q-Former + Whisper + BEATs + Vicuna               | 1 | 1 |   | 1 |
+| LALM         | Qwen-audio [66]      | Audio  | Whisper + Qwen                                    | 1 | 1 |   | 1 |
+| LALM         | Audio Flamingo [120] | Audio  | CLAP + OPT-IML-MAX                                | 1 | 1 |   | 1 |
+| LALM         | GAMA [121]           | Audio  | AST + Q-Former + LLaMA-2                          | 1 | 1 |   | 1 |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| LALM         | SpeechGPT [8]        | Speech | HuBERT + LLaMA + HiFi-GAN                         | 1 | 1 | 1 | 1 |
+| LALM         | SALM [122]           | Speech | Conformer + Megatron LLM                          | 1 | 1 |   | 1 |
+| LALM         | BLSP [123]           | Speech | Whisper + LLaMA-2                                 | 1 | 1 | 1 | 1 |
+| LALM         | SpeechT5 [124]       | Speech | wav2vec 2.0 + Transformer + vocoders              | 1 | 1 | 1 | 1 |
+| LALM         | Voicebox [125]       | Speech | ALiBi + VB-En / VB-Multi                          | 1 | 1 |   |   |
+| LALM         | SpeechVerse [115]    | Speech | WavLM / Best-RQ / Others + Flan-T5                | 1 | 1 |   | 1 |
+| LALM         | COSMIC [126]         | Speech | Whisper-medium + Qformer + LLaMA-2                | 1 | 1 |   | 1 |
+| LALM         | Moshi [127]          | Speech | Mimi + Helium                                     | 1 | 1 | 1 | 1 |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| LALM         | MusiLingo [128]      | Music  | MERT + Vicuna                                     | 1 | 1 |   | 1 |
+| LALM         | Llark [129]          | Music  | Jukebox + LLaMA-2                                 | 1 | 1 | 1 | 1 |
+|--------------|----------------------|--------|---------------------------------------------------|---|---|---|---|
+| Agent System | AudioGPT [130]       | Audio  | GPT-3.5 + Audio Foundation Models                 | 1 | 1 | 1 | 1 |
+| Agent System | SpeechAgents [131]   | Speech | SpeechGPT + LLaMA-2                               | 1 | 1 | 1 | 1 |
+| Agent System | MusicAgents [132]    | Music  | LLMs + Music Tools                                | 1 | 1 | 1 | 1 |
+
+
+* In the early stages of audio processing, research efforts were primarily
+  focused on breaking down complex tasks into simpler, independent audio tasks
+* [1, 115]: task-specific models lacked understanding capabilities and
+  failed to capture the connections between tasks, resulting in
+  poor scalability and limited robustness 
+  when dealing with the inherent variability and complexity of audio signals
+* the combination of LLM in ALM achieves
+  understanding and reasoning across diverse audio tasks
+  * convergence of large-scale language modeling with audio processing has
+    ~> new possibilities to create more powerful, context-aware, and human-like
+    audio understanding and reasoning systems
+
+### Multi-task Tuning Models, Fig 9
+
+* can be achieved by multi-task sequence-to-sequence modeling, instruction
+  tuning or in-context learning
+
+#### Multi-task sequence-to-sequence modeling is a classic approach
+
+* Codecs
+  * pipeline
+    * Codecs convert continuous audio into discrete tokens
+    * these tokens can easily be merged with text, MIDI, and other context tokens
+    * then passed to a language model to generate an output sequence
+    * further converted into the desired audio, text, or other outputs [14]
+  * high fidelity and is widely used in generative tasks
+  * more natural interaction between text and audio, enabling the use of a
+    single model to perform ASR, TTS, S2TT, MT, and S2ST tasks, using
+  * context or ID to indicate the task to which a sample belongs [117]
+  * Depending on the LM type: autoregressive (AR) and non-autoregressive (NAR)
+  * hE information loss due to the quantization of voice signals into discrete
+    * significant performance degradation in some tasks compared to models that
+      use continuous speech features [118]. Apart from codecs,
+* Large Audio-Language Models (LALMs)
+  leverage the emergent understanding and reasoning capabilities of LLMs
+  to build more generalized audio-centric models
+  * typically employ an audio pre-trained model as the encoder,
+    set up encoders for other modalities as needed, and
+    add adaptive modules before connecting an LLM on top
+  * hE pre-trained LLMs still lack sufficient cross-task generalization
+    * require further post-training [11]
+  * Multi-task tuning for LALMs can be similar to codecs, adopting a unified
+    sequence format, or achieved through instruction tuning or in-context
+    learning
+* VioLA [117] is a Transformer-based autoregressive decoder network
+  * unifies cross-modal tasks involving speech and text
+  * converts speech into discrete tokens and
+    integrates task IDs and language IDs
+    to enhance the ability to handle different languages and tasks
+    * excellent performance in both single-modal and cross-modal tasks
+* LauraGPT [118] operates based on a unified task expression (input embeddings,
+  task ID, output tokens) to handle multiple tasks
+  * modular and flexible design
+  * perform complex tasks by combining sub-tasks such as S2ST
+* AudioPaLM [7] is a model for speech understanding and generation. In
+  * combined task learning,
+    the model is instructed to output intermediate steps of complex tasks, which
+    aligns with the spirit of chain-of-thought prompting. For example,
+  * eg in Speech-to-Speech Translation (S2ST), the model can perform
+    end-to-end conversion from English audio tokens to French audio tokens
+    through a single autoregressive decoding process,
+    guided by task tags like [ASR AST S2ST English French]
+  * This enables the integration of ASR, MT, and TTS within a unified model,
+    eliminating the need for a separated pipeline approach
+* UniAudio [116] is an advanced codec-based ALM supports
+  * 11 diverse audio generation tasks. It achieves this by
+  * tokenizing both target audio and various condition modalities, then
+    concatenating these source-target pairs into unified [conditions, target]
+    sequences. The system leverages
+  * LM for next-token prediction and incorporates a
+  * multi-scale Transformer architecture to efficiently handle the extended
+    sequence lengths introduced by neural codec-based tokenization
+* Pengi [1] frames all audio tasks as text-generation tasks, allowing for
+  comprehensive audio understanding and generation. Pengi demonstrates
+  * remarkable capabilities across zero-shot tasks in general audio including
+    environmental sound, speech, and music tasks, and achieves
+    good performance in close-ended and open-ended audio tasks
+* Qwen-audio [33] adopts a multitask training framework, which uses
+  * hierarchical tags to condition the decoder, allowing for effective knowledge
+    sharing while avoiding interference issues
+  * handle diverse audio types and tasks, including automatic speech recognition
+    (ASR), audio captioning, and audio question-answering
+  * pre-trained across over 30 tasks in environmental sound, speech, and music,
+  * SOTA results on 9 evaluation benchmarks without task-specific fine-tuning,
+  * surpassing baselines on several tasks,
+    eg automatic speech recognition and acoustic scene classification
+
+#### Instruction tuning
+
+* another method to provide multiple audio tasks
+  with unified instance construction formats using natural language
+* This allows a single model to handle multiple tasks
+  without explicit fine-tuning on specific tasks but
+  by enhancing its instruction-following capability [133]
+  * [133] H. Liu, C. Li, Q. Wu, and Y. J. Lee
+    Visual instruction tuning
+    NeurIPS vol. 36, 2024
+* SpeechGPT [8] incorporates discrete speech representations into a large
+  language model framework, enabling intrinsic cross-modal conversational
+  abilities. SpeechGPT is
+  * datasets: SpeechInstruct, a pioneering large-scale cross-modal speech
+    instruction dataset, and employs a sophisticated
+  * three-stage training strategy: modality-adaptation pre-training, cross-modal
+    instruction finetuning, and chain-of-modality instruction fine-tuning. This
+  * perceive and generate multimodal content effectively, demonstrating
+    impressive capabilities in following cross-modal human instructions and
+* LLark [129] and MusiLingo [128] are instruction-tuned multimodal model designed
+  specifically for music tasks,
+  from classification and regression to more complex captioning and reasoning
+  * impressive capabilities in zero-shot tasks
+* SALMONN [119] conduct a
+  * three-stage cross-modal training method of
+    pre-training, instruction tuning and an additional activation tuning stage
+    proposed to resolve the issue of over-fitting to the speech recognition and
+    audio captioning tasks in instruction tuning
+  * impressive capabilities across zeroshot and downstream tasks in
+    environmental sound, speech, and music, and introduce
+  * two novel tasks: audio-based storytelling and speech audio co-reasoning
+* LTU [24] aims to leverage the comprehension abilities of LLM to enable an
+  audio foundation model to listen, think, and understand. To train LTU, they
+  * dataset: OpenAQA-5M consisting of closed-ended and open-ended diverse
+    (audio, question, answer) tuples, using a
+    * perception-to-understanding curriculum with an autoregressive training
+      framework. LTU demonstrates
+  * strong performance and generalization ability on
+    * conventional audio tasks such as classification and captioning, as well as
+    * emerging audio reasoning and compression abilities that are absent in
+      existing audio models
+* GAMA [121] integrates multiple types of audio representations using a custom
+  Audio Q-Former and a multi-layer aggregator, capturing diverse aspects from
+  semantic generalization to surface-level audio properties
+  * datasets: CompA-R and CompA-R-test,
+    a human-labeled dataset for open-ended audio QA requiring complex reasoning
+  * Fine-tuned on CompA-R, GAMA demonstrates
+    strong performance in complex reasoning and instruction-following tasks
+
+#### In-context learning
+
+* LLMs: quickly adapt to specific tasks using a few examples
+  * predict unseen input labels without additional parameter updates. In the
+* audio-language: learn and enhance vocabulary from the context of prompt texts
+  without performing backpropagation [122]
+  * unlocking the capabilities of frozen LLMs for a wide range of audio
+    understanding and generation tasks [134]
+* Voicebox [125] is a non-autoregressive flow-matching model trained to infill
+  speech based on audio context and text, utilizing over 50,000 hours of
+  unfiltered or enhanced speech data for training. Voicebox
+  * can perform various tasks through in-context learning, such as
+    * eg mono or cross-lingual zero-shot TTS, noise removal, content editing,
+      style conversion, and diverse sample generation, achieving
+    * high fidelity and efficiency in speech synthesis and editing
+* SALM [122] equipped with multitask and in-context learning capabilities. SALM
+  * comparable performance to task-specific models through instruction tuning
+    for ASR and AST. Additionally,
+  + a speech-supervised in-context training method is proposed to bridge the gap
+    between LLM training and downstream speech tasks, further enhancing the
+    in-context learning ability of speech-to-text models
+* Audio Flamingo [120]: instruction tuning on interleaved audio-text pairs,
+  thereby excelling in robust multi-turn dialogue capabilities. By
+  incorporating in-context learning, it achieves
+  quick adaptation to unseen tasks. The model attains
+  * SOTA results on several close-ended and open-ended audio understanding tasks
+    without the need for task-specific finetuning
+
+### Audio-Language Agent Systems, Fig 10
+
+* LLMs as agents to transform human instructions, achieving task transfer in
+  downstream tasks by cooperating different foundational pre-trained models
+  * leveraging the reasoning capabilities of LLMs
+  * invoke and collaborate with a diverse array of audio models and tools
+    to accomplish complex tasks initiated by humans
+* SpeechAgents [131] is a multi-modal, multi-agent system designed to
+  simulate human communication
+  * The agents collaborate in a distributed and parallel manner to
+    make decisions and execute corresponding actions,
+    significantly enhancing work efficiency and effectiveness
+  * Multi-Agent Tuning technique was proposed, allowing the system to handle
+    complex, multi-party communications more effectively. Notably, the system
+    * excellent scalability, performing well even with up to 25 agents. This
+  * particularly suitable for tasks such as drama creation and audio novel
+    generation
+* MusicAgent [132] integrates and organizes various music processing tasks
+  * a comprehensive toolset for collecting music-related tools from diverse
+    sources, and
+  * an autonomous workflow powered by LLMs that organizes these tools,
+  * decomposes user requests into multiple sub-tasks automatically, and
+    invokes the appropriate music tools to fulfill these requirements
+  * capable of handling a wide range of music processing tasks and
+    aims to bridge the gap between tools from different sources by unifying data
+    formats (text, MIDI, ABC notation, audio), thereby enabling seamless
+    collaboration among tools on different platforms
+* AudioGPT [130] is an innovative multi-modal system that
+  * integrates ChatGPT with audio foundation models and input/output interfaces
+    to process complex audio information and conduct spoken conversations. Its
+  * four key stages:
+    modality transformation, task analysis, model assignment, response generat
+  * proficiency in various audio-related tasks, including speech processing,
+    music analysis and generation, and sound effect understanding and creation
 
 # VI. Datasets and benchmarks
 
