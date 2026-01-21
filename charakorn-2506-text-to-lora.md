@@ -112,6 +112,22 @@ https://github.com/SakanaAI/text-to-lora
     with a single forward pass based on text descriptions
   * T2L architectures can be trained using
     both distillat of pretrained adapters and supervised multi-task fine-tuning
+* target module (m) and layer index (l),
+* a hypernetwork generates the two low-rank matrices A, B based on a task
+  description z i ∈ Z i of a task t i as follows: i
+  ∆W m,l = h θ (ϕ im,l ), with
+  ϕ im,l = concat f (z i ), E[m], E[l]], where
+  * f gives a vector representation of a text description, typically
+    * the CLS token of a bidirectional transformer model or
+    * last token activation of an LLM
+  * E is a learnable embedding dictionary
+    indexed by either a module type m or a layer index l. For legibility, we
+* shorthand notation for T2L’s output ∆W i := h θ (ϕ i ) := h θ ({ϕ im,l })
+* supervised finetuning training objective for T2L is
+  θ = argmin E D i ∼D,z i ∼Z i L SFT (D i , Ψ, h θ (ϕ i )), (5) θ Note that
+  * values of m and l can be batched, which allows T2L to
+    ~> generate ∆W for all modules and layer indices efficiently
+    within a single forward pass
 
 ## 3.1. Text-to-LoRA Architectures
 
@@ -146,14 +162,140 @@ https://github.com/SakanaAI/text-to-lora
 
 ## 3.2. Training Text-to-LoRA via LoRA Reconstruction
 
-## 3.3. Training Text-to-LoRA via Supervised Fine-Tuning
+* utilize publicly available libraries of LoRAs
+  (Brüel-Gabrielsson+ 2024; Zhao+ 2024)
+* Alternatively, one can also use a two-stage procedure, in which
+  1. a library of LoRAs is pre-trained in the first stage and then
+  2. train T2L to reconstruct them
+* For the sole purpose of compressing LoRAs, we can train T2L using
+  one-hot or learnable vectors as task embeddings
+* For zero-shot LoRA generation for unseen tasks
+* reconstruction loss: L(Ω, θ) = E ∆W i ∼Ω |∆W i − h θ (ϕ i )|
 
-# 4 T2L can efficiently encode hundreds of LoRA adapters (Section 4)
+## 3.3. Training Text-to-LoRA via Supervised Fine-Tuning (SFT)
 
-* While the compression is lossy, T2L maintains the performance of
-  task-specifically tuned LoRA adapters. Furthermore,
-* T2L can generalize to unseen tasks given suitable natural language
-  descriptions of the tasks
+* T2L can be directly optimized on fine-tuning datasets. Training T2L with SFT
+  sidesteps the need for intermediate target LoRA adapters and allows for
+  end-to-end training. This training scheme is
+  * preferred if existing trained LoRAs are not naturally clustered by their
+    functionalities or downstream tasks. For instance, t 1 and t 2 could be two
+    related tasks requiring a similar LLM capability, but ∆W 1 and ∆W 2 could be
+    in different minima. Thus, T2L trained via reconstruction training would
+    have to compress numerically different ∆W 1 and ∆W 2 , making it less likely
+    to generalize. In fact,
+  * we empirically find that a T2L trained via reconstruction fails to
+    generalize to unseen tasks (Section 5.4). In contrast, an
+* SFT-trained T2L can implicitly learn to cluster tasks, which has been shown to
+  improve zeroshot LoRA routing performance (Ostapenko+ 2024).  The SFT
+  loss for T2L is given by Equation (5)
+
+# 4 Experiments. T2L can efficiently encode hundreds of LoRA adapters
+
+* contributions
+  * While the compression is lossy, T2L maintains the performance of
+    task-specifically tuned LoRA adapters. Furthermore,
+  * T2L can generalize to unseen tasks given suitable natural language
+    descriptions of the tasks
+* We investigate the effectiveness of the different T2L architectures and
+  training schemes in terms of the compression of adapters (Section 4.1) and
+  zero-shot LoRA generation for unseen tasks (Section 4.2). As
+* baselines, we consider
+  * task-specific LoRAs,
+  * element-wise averaged LoRA, and
+  * multi-task LoRA
+    * a LoRA adapter trained on all training tasks. We also implement
+  * Hyperdecoders (Ivison & Peters, 2022)—a hypernetwork that generates LoRAs on
+    a per-sequence basis—based on our proposed architectures
+  * To boost the performance of the base models without finetuning, we utilize
+    * few-shot in-context learning (ICL, Brown+ 2020; Dong+ 2024) and
+    * task description prepending,
+      ie providing task description at the beginning of each query
+  * Arrow Routing zero-shot performance from Ostapenko+ (2024). Note that the
+    * can only be compared indirectly as it uses a
+      * different set of LoRA adapters and training tasks
+      * likely differences in the benchmark evaluation prompts
+* base LLM: In most experiments, we use Mistral-7B-Instruct (Jiang+ 2023) as the
+  * except in Tables 7 and 8 where Llama-3.1-8B-Instruct and
+    Gemma-2-2b-Instruct are used as the base models, respectively. We use
+  * gte-large-en-v1.5 (Li+ 2023; Zhang+ 2024) for extracting the task embed-
+    ding from a natural language task description. All
+* LoRA adapters are of
+  rank 8 and only target the query and the value projection modules in every
+  attention block of the base LLM (totaling 3.4M parameters)
+* L , M , and S have 55M, 34M, and 5M trainable parameters respectively
+* train dataset: We utilize the SNI dataset (Wang+ 2022) for training LoRAs
+  * 500 tasks following Brüel-Gabrielsson+ (2024)
+    * 11 tasks for hold-out validation and
+    * removed 10 datasets due to data contamination from the evaluation benchmark
+    * 479 datasets for training. All samples are in English
+  * More details of the datasets can be found in Appendix J
+* evaluation benchmarks: 10 widely used benchmarks that
+  collectively cover a variety of LLM capability assessments,
+  eg reasoning, math, science, coding, and world knowledge. Specifically, we
+  * Arc-challenge (ArcC) and Arc-easy (ArcE, Clark+ 2018), BoolQ (Clark+ 2019),
+    GSM8K (Cobbe+ 2021), Hellaswag (HS, Zellers+ 2019),
+    OpenBookQA (OQA, Mihaylov+ 2018), PIQA (Bisk+ 2020),
+    Winogrande (WG, Keisuke+ 2019), HumanEval (HE, Chen+ 2021), and
+    MBPP (Austin+ 2021)
+* Task descriptions for the training datasets and the benchmarks are
+  fully generated, as described in Appendix L. When we use a language task
+  embedding as a part of the input, we average T2L performance using three
+  descriptions for each benchmark
+
+## 4.1. LoRA Compression
+
+* we train a task-specific LoRA (oracle) on the training split of each
+  benchmark task, collectively forming a library of LoRAs
+* Table 1: the benchmark performance of T2L
+  by distilling 9 benchmark-specific LoRAs using
+  either one-hot or natural language task embeddings from gte-large-en-v1.5. We
+* the benchmark tasks are indirectly seen during training by T2L, as it learns
+  to distill benchmark-specific LoRAs. We can see that
+* T2L fully recovers the performance of the oracle adapters
+  with both task embedding types. Notably,
+  * T2L outperforms task-specific LoRAs on several benchmarks (in green)
+    * We hypothesize that the gain comes from the lossy compression,
+      a regularization on the already trained LoRA weights
+    * most apparent on PIQA and WG benchmarks, where the oracle LoRA overfits
+* whether T2L conditioned on one-hot task vectors can maintain the oracle
+  single-task LoRAs’ performance when
+  using an increasing number of training tasks
+  * Figure 3 shows the performance of one-hot T2L on the test splits of a subset
+    of 10 SNI training tasks
+    with varying degrees of final average training L1 reconstruction error
+  * We train various T2L instances for each architecture using {16, 32, 64,
+    128, 256, 479} training tasks, leading to an effective increase in the
+    training reconstruction error
+  * Although T2L fully recovers the oracles’ performance when the reconstruction
+    loss is less than 10 −4 , the performance drops as the training error
+    increases. This result suggests that T2L learns a lossy compression of the
+    target LoRAs
+  * all T2L architectures can maintain around 65% of oracles’ performance, and
+    the performance does not drop further even at > 8 × 10 −4 per-element L1 er-
+    ror. Despite the performance drop, we show that
+    increasing the number of training tasks is beneficial in the SFT setup,
+    increasing zero-shot benchmark performance of T2L in Section 5.1
+
+## 4.2. Zero-Shot LoRA Generation (Tab 2)
+
+* SFT on 479 SNI tasks, each with 128 task descriptions
+* For each data point in a training minibatch, we sample a description from the
+  corresponding dataset in an online fashion
+* Table 2 shows the zero-shot performance on 10 benchmark tasks
+* Here, we present the best model of each variant from our scaling experiment in
+  Section 5.1. We observe that
+* a multitask LoRA adapter performs well on the benchmarks
+  despite no additional fine-tuning. Still,
+* there is a performance gap between task-specific LoRAs and MT LoRA. We observe
+* SFT-trained T2L indeed generates useful LoRAs, thus
+  improving over the multi-task LoRA adapter consistently and across benchmarks
+  (indicated by bold numbers). Notably, even though
+  T2L cannot fully bridge the performance gap with task-specific LoRAs,
+  nL it outperforms the oracles on a subset of tasks (highlighted in green)
+* Appa A: ? the generality of our proposed method with
+  different base models including Llama (Dubey+ 2024) and Gemma (Team+ 2024)
+* one of the main advantages of T2L is its efficiency
+  * an ad-hoc FLOPs analysis in Appendix I
 
 # 5 ablations including
   * T2L scaling with datasets (see Figure 1, bottom right),
@@ -161,15 +303,181 @@ https://github.com/SakanaAI/text-to-lora
   * the training routines, and
   * text-based task descriptions
 
-## 5.5 semantically meaningful LoRA clusters
+## 5.1. Increasing Training Compute Proportional to the Number of Training Tasks
 
-* when visualizing the generated LoRAs in a dimensionality-reduced space
+* Table 3: after increasing the number of training tasks and compute budget, T2L
+  generally benefits from the additional training tasks. However,
+  * hE S does not benefit from extended training with 479 tasks,
+    potentially due to its limited model capacity
+* App C: task diversity ?~> robustness
+  * by training on more tasks without scaling the training budget in Appendix C
+  * it is crucial to scale the compute budget according to the number of
+    training tasks. For instance,
+  * eg M with scaled compute budget improves over training runs with a fixed
+    budget when using 256 or more training tasks
 
-# Appendix D. we analyze the nature of T2L generations
+## 5.2. Task Embedding Models (Tab 4)
 
-* we study the relationship between LoRA adapters and find
-* compelling [lenyűgöző] evidence
-  why reconstruction-trained T2L cannot generalize
+* Table 4 shows the zero-shot benchmark performance with
+  two different embedding models: gte-large-en-v1.5 and Mistral-7B-Instruct
+* For the gte model, we extract a task description by using the activation of
+  the CLS token in the last layer as the model is a bidirectional model
+* For Mistral, we use the activation of the last token in the sequence to
+  represent a given description (BehnamGhader+ 2024). Table 4 shows the
+* 128 tasks
+* Both embedding models yield T2L instances with comparable generalization
+  capability, suggesting T2L’s robustness to task description embedding methods
+
+## 5.3. Varying Task Descriptions
+
+* four types of descriptions:
+  * aligned
+    * Train: Training descriptions of corresponding tasks
+    * Eval: Unseen descriptions of corresponding tasks
+  * unaligned
+    * Random strings: Random literal strings
+    * Train (random): Training descriptions randomly sampled from other tasks
+* For each description type, we use the gte-large-en-v1.5 embedding
+  * we report the average performance using three descriptions. The four types
+* we use reconstruction-trained T2L in this experiment. That is, the
+  hypernetwork has seen training descriptions of the benchmarks during training
+* We observe a performance gap between aligned and unaligned
+  * aligned matching the performance of oracle LoRAs, despite the evaluation
+    * ie T2L is robust to changes in the task description as long as the
+* qualitative result demonstrating steerability and an unsuccessful example of
+  T2L in Figure 4. Importantly, the last two examples in
+  * Figure 4 (iii) and (iv) are both correct but have
+    different answer styles thanks to different descriptions
+  * Hyperdecoders (Ivison & Peters, 2022) cannot exhibit such steerability as
+    it uses the problem instance as the input to the hypernetwork
+
+## 5.4. Training Schemes
+
+* zero-shot performance of SFT-trained and reconstruction-trained T2L
+* All model instances are trained with roughly equal wall-clock time of 10 hours
+* Tab 6: clear performance gap between reconstruction and SFT training schemes
+  * SFT produces T2L instances that perform significantly better (
+    * 66.3 vs 61.83 benchmark performance averaged over model architectures). We
+* For reconstruction-trained T2L to generalize, the target LoRA adapters of
+  similar tasks should be clustered in some latent manifold. In contrast,
+  * SFT training does not need pre-trained task-specific LoRA adapters, thus
+* Appendix D: that pre-trained adapters for similar tasks do not live nearby in
+  the weight space, supporting our claim of a
+  ie potential problem when reconstructing pre-trained LoRAs
+
+## 5.5. Visualization of T2L Activations
+
+* We probe SFT T2L M trained on 256 training tasks in the zero-shot evaluation
+  * all the benchmark tasks, each with three unseen descriptions. Figure 5 shows
+* Fig 5: 2D t-SNE projection of T2L’s task encoder activations and the outputs
+  of the last MLP block. We can see
+* clear clustering in both projection plots based on the tasks (colors and
+* T2L generates different adapters for different tasks, confirming that T2L
+* similar tasks, eg MBPP and HumanEval, are clustered together in both plots,
+  * MBPP: Program synthesis
+  * HumanEval: LLMs trained on code
+
+# Appendix D. we analyze the nature of T2L generations 14
+
+* contributions
+  * we study the relationship between LoRA adapters
+  * compelling [lenyűgöző] evidence why reconstr-trained T2L cannot generalize
+* Here, we investigate the relationship between LoRA adapters by inspecting
+  their similarity in the parameter space, performance on the benchmarks, and
+  similarity of their description embeddings. To
+* measure
+  * adapter similarity, we compute the cosine similarity of the concatenation of
+    flattened low-rank A and B matrices of all layers
+  * task description similarity (using the mean embedding of each task)
+* Fig 6
+  * top row the adapters’ similarity against task description similarity
+    * near 0 Pearson correlation
+  * bottom row of Figure
+    * relative benchmark performance of SNI-trained adapters
+      * adapters’ relative benchmark performance
+        among? benchmark-specific adapters
+    * positive correlation
+* ie
+  * adapters perform better on a benchmark if their task descriptions are
+    similar to those of the benchmark
+  * hE adapters with similar descriptions are not similar in the parameter space
+  * We believe that this relationship has a significant impact on the limited
+    generalization of reconstruction-trained T2L.  We further discuss this topic
+    in Appendix K
+
+# K. Utilizing Full Adaptation Matrix vs Low-Rank Matrices
+
+* Fig 11
+  * Similar to Figure 6
+    * the similarity of SNI adapters to benchmark-specific adapters, but
+  * instead of using the concatenation of flattened A and B matrices,
+  * we use flattened ∆W instead. With the change, we find a
+  * positive correlation between the task embedding similarity and the adapter
+    similarity in the weight space
+  * likely because, for a given ∆W matrix, there are many possible permutations
+    of low-rank matrices A and B. This suggests that
+    if we compute the reconstruction loss in the full adaptation matrix space,
+    reconstruction-trained T2L could generalize better
+    However, we empirically find that it does not outperform T2L trained to
+    reconstruct low-rank matrices at zero-shot LoRA generation
+
+# 6. Related Work
+
+## Hypernetworks for Adaptation:
+
+* Hypernetworks (Ha+ 2016) provide a general indirect encoding method for neural
+  network weights
+* They have been applied to different
+  * architectures (eg in attention, Schug+ 2024) and
+  * training paradigms (eg in continual learning, Von Oswald+ 2019)
+* hypernetworks for LLM adaptation in a multi-task context
+  (Mahabadi+ 2021; He+ 2022; Ortiz-Barajas+ 2024)
+  * only learned task identifiers instead of natural language for adaptation
+  * not enable task-wise zero-shot generalization
+
+## Hypernetworks for Zero-Shot LLM Adaptation:
+
+* Xiao+ (2023) explore the use of hypernetworks on a limited set of English
+  dialects; they only consider five dialects, one of which is unseen
+  Furthermore, the hypernetwork relies on an expert-based transformation of the
+  dialects, limiting the possibility for generalization
+* Mu+ (2024) propose Gisting, a method that learns to
+  compress an in-context task description to prefix tokens, allowing the
+  language model to follow instructions with fewer tokens. However, Gisting is
+  * limited to prefix tokens—only influencing the attention matrices of the base
+    model. Thus, prefix tokens are less flexible compared to
+  * LoRAs can modify different parts of LLMs, eg attention blocks
+* Hyperdecoders (Ivison & Peters, 2022) is a hypernetwork that generates
+  adapters on the fly based on the input sequence
+  * desirable for benchmark evaluation—where the LLM should always output the
+    correct answer—we argue that
+  * hE description-based adaptation gives more control to users since they can
+    steer the LLM in creative ways based on user-generated descriptions (see
+    Figure 4). Furthermore, the generated
+  * These adapters cannot be efficiently fused into the base model, leading to
+    significant overhead for each query
+* Closely related to our work are
+  HyperTuning (Phang+ 2023), HNET-LM (Deb+ 2022), and HINT (Ivison+ 2023)
+* base model
+  * prior work heavily focuses on pre-trained encoder-decoder models,
+    eg T5 (Raffel+ 2020) or BART (Lewis, 2019),
+  * we use frontier instruction fine-tuned models as the base models,
+    ie Mistral, Llama, Gemma. Also,
+* init
+  * prior work typically relies on initializing a part of their hypernetworks
+    from the base model (eg tying task encoder’s weights to the base model) to
+    achieve good performance or stable training as opposed to
+  * ours are task-embedder agnostic and can freely change the task embedding
+    model (Section 5.2)
+* descriptions
+  * our work utilizes generated descriptions instead of the ones provided by the
+    SNI dataset
+  * App B: using generated descriptions increase the performance of T2L
+    considerably. Overall, our work improves upon prior work in several ways,
+* Concurrent to our work, Lv+ (2024) propose a similar approach that utilizes a
+  hypernetwork to generate LoRA adapters at inference time. However, their
+  * Lv's hypernetwork assumes that the context vector provided to the
+    hypernetwork contains few-shot examples
 
 # 7. Discussion and Limitations
 
