@@ -1,6 +1,6 @@
 Audio-Language Models for Audio-Centric Tasks: A survey
 Yi Su, Jisheng Bai, Qisheng Xu, Kele Xu, Yong Dou
-Cite as: 	arXiv:2501.15177 [cs.SD]
+arXiv:2501.15177 [cs.SD]
 
 # Abstract
 
