@@ -26,9 +26,13 @@ https://github.com/SakanaAI/text-to-lora
   * LoRA adapter has to be optimized for each downstream task and
     requires task-specific dataset and hyperparameter setting
   * structural constraints, the low-rank matrices learned by LoRA adapters can
-    be further compressed. For example, one can train
-    * eg lossy versions of the original adapter while maintaining performance
+    be further compressed
+    * eg train lossy versions of the original adapter while maintaining perf
       (Brüel-Gabrielsson+ 2024; Kim+ 2024; Kopiczko+ 2024)
+      Brüel-Gabrielsson R; Zhu J; Bhardwaj O; Choshen L; Greenewald K; 
+        Yurochkin M; and Solomon J
+      Compress then serve: Serving thousands of lora adapters
+        with little overhead. arXiv preprint arXiv:2407.00066
   * multiple LoRAs can be combined for new tasks at inference time
     (Ostapenko+ 2024)
   * At the core of these approaches lies the explicit use of
@@ -47,6 +51,12 @@ https://github.com/SakanaAI/text-to-lora
   generates new LoRA adapters zeroshot at inference time. T2L is
   * trained to compress LoRAs on a diverse task distribution
     from the Super Natural Instructions (SNI) dataset (Wang+ 2022)
+    * See Sec 4
+    Wang Y, Mishra S, Alipoormolabashi P, Kordi Y, Mirzaei A, Naik A, Ashok A,
+      Dhanasekaran A. S, Arunkumar A, Stap D, et al
+    Super-naturalinstructions:
+      Generalization via declarative instructions on 1600+ nlp tasks
+    EMNLP 2022
 * T2L takes a natural language description of the target task as an input,
   allowing zero-shot LoRA generation to unseen tasks
 * Empirically, we show that T2L can effectively be trained either/or
@@ -89,7 +99,7 @@ https://github.com/SakanaAI/text-to-lora
   * We omit the layer index and module type of the LoRA weights
     when referring to all LoRA weights
   * Otherwise, we use subscripts to represent the layer index and module type,
-    eg ∆W m,l , where m is the module type  and l is the layer index
+    eg ∆W m,l, where m is the module type  and l is the layer index
 
 ## Hypernetworks
 
@@ -99,7 +109,7 @@ https://github.com/SakanaAI/text-to-lora
   2018; Schug+ 2024) of the base network,
   given that the parameter count of the hypernetwork is much smaller
 * This compression is achieved by learning to share parameters indirectly
-* given a layer-specific descriptor vector ϕ l ,
+* given a layer-specific descriptor vector ϕ l,
 * a hypernetwork with parameters θ generates the parameters of the base model at
   layer l ∈ {1, . . . L} as follows: W l = h_θ (ϕ_l)
 * the layer descriptors are either one-hot or learned vectors
@@ -124,7 +134,7 @@ https://github.com/SakanaAI/text-to-lora
     indexed by either a module type m or a layer index l. For legibility, we
 * shorthand notation for T2L’s output ∆W i := h θ (ϕ i ) := h θ ({ϕ im,l })
 * supervised finetuning training objective for T2L is
-  θ = argmin E D i ∼D,z i ∼Z i L SFT (D i , Ψ, h θ (ϕ i )), (5) θ Note that
+  θ = argmin E D i ∼D,z i ∼Z i L SFT (D i, Ψ, h θ (ϕ i )), (5) θ Note that
   * values of m and l can be batched, which allows T2L to
     ~> generate ∆W for all modules and layer indices efficiently
     within a single forward pass
@@ -135,7 +145,7 @@ https://github.com/SakanaAI/text-to-lora
   * output layer scales linearly with the size of the target weights
     (Von Oswald+ 2019)
 * To explore the complexity-performance trade-off, we propose
-  three variants of T2L: L , M , and S . We impose
+  three variants of T2L: L, M, and S . We impose
   * different output spaces on the hypernetwork that represent
     different inductive biases and parameter counts (see Figure 2)
   * all variants use the same backbone architecture and
@@ -181,7 +191,7 @@ https://github.com/SakanaAI/text-to-lora
     functionalities or downstream tasks. For instance, t 1 and t 2 could be two
     related tasks requiring a similar LLM capability, but ∆W 1 and ∆W 2 could be
     in different minima. Thus, T2L trained via reconstruction training would
-    have to compress numerically different ∆W 1 and ∆W 2 , making it less likely
+    have to compress numerically different ∆W 1 and ∆W 2, making it less likely
     to generalize. In fact,
   * we empirically find that a T2L trained via reconstruction fails to
     generalize to unseen tasks (Section 5.4). In contrast, an
@@ -189,16 +199,16 @@ https://github.com/SakanaAI/text-to-lora
   improve zeroshot LoRA routing performance (Ostapenko+ 2024).  The SFT
   loss for T2L is given by Equation (5)
 
-# 4 Experiments. T2L can efficiently encode hundreds of LoRA adapters
+# 4 Experiments
 
 * contributions
   * While the compression is lossy, T2L maintains the performance of
     task-specifically tuned LoRA adapters. Furthermore,
   * T2L can generalize to unseen tasks given suitable natural language
     descriptions of the tasks
-* We investigate the effectiveness of the different T2L architectures and
-  training schemes in terms of the compression of adapters (Section 4.1) and
-  zero-shot LoRA generation for unseen tasks (Section 4.2). As
+* We investigate the different T2L architectures and training schemes
+  * compression of adapters (Section 4.1) and
+  * zero-shot LoRA generation for unseen tasks (Section 4.2)
 * baselines, we consider
   * task-specific LoRAs,
   * element-wise averaged LoRA, and
@@ -222,12 +232,17 @@ https://github.com/SakanaAI/text-to-lora
 * LoRA adapters are of
   rank 8 and only target the query and the value projection modules in every
   attention block of the base LLM (totaling 3.4M parameters)
-* L , M , and S have 55M, 34M, and 5M trainable parameters respectively
+* L, M, and S have 55M, 34M, and 5M trainable parameters respectively
 * train dataset: We utilize the SNI dataset (Wang+ 2022) for training LoRAs
   * 500 tasks following Brüel-Gabrielsson+ (2024)
     * 11 tasks for hold-out validation and
     * removed 10 datasets due to data contamination from the evaluation benchmark
-    * 479 datasets for training. All samples are in English
+    * 479 datasets for training. All samples are in English incl
+      "Lots-of-LoRAs/task889_goemotions_classification",
+      "Lots-of-LoRAs/task875_emotion_classification",
+      "Lots-of-LoRAs/task517_emo_classify_emotion_of_dialogue",
+      "Lots-of-LoRAs/task518_emo_different_dialogue_emotions",
+      "Lots-of-LoRAs/task1489_sarcasmdetection_tweet_classification",
   * More details of the datasets can be found in Appendix J
 * evaluation benchmarks: 10 widely used benchmarks that
   collectively cover a variety of LLM capability assessments,
@@ -267,7 +282,7 @@ https://github.com/SakanaAI/text-to-lora
     128, 256, 479} training tasks, leading to an effective increase in the
     training reconstruction error
   * Although T2L fully recovers the oracles’ performance when the reconstruction
-    loss is less than 10 −4 , the performance drops as the training error
+    loss is less than 10 −4, the performance drops as the training error
     increases. This result suggests that T2L learns a lossy compression of the
     target LoRAs
   * all T2L architectures can maintain around 65% of oracles’ performance, and
