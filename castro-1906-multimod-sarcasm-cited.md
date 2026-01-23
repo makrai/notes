@@ -3,7 +3,7 @@ Santiago Castro, Devamanyu Hazarika, Verónica Pérez-Rosas, Roger Zimmermann,
   Rada Mihalcea, Soujanya Poria
 ACL 2019 arXiv:1906.01815 [cs.CL]
 
-The full dataset is publicly available at github.com/soujanyaporia/MUStARD
+[The full dataset](github.com/soujanyaporia/MUStARD)
 
 # Abstract
 

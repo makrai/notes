@@ -6,26 +6,26 @@
 https://huggingface.co/datasets/unswnlporg/BESSTIE
 
 * LLMs being known to exhibit bias against non-standard language varieties,
-  * no known labelled datasets for sentiment analysis of English. To address
+  * no known labelled datasets for sentiment analysis of English
 * we introduce BESSTIE, a benchmark for sentiment and sarcasm classification for
   three varieties of English: Australian (en-AU), Indian (en-IN), and British
-* collection methods: 
-  * location-based for Google Places reviews, and 
-  * topic-based filtering for Reddit comments. To 
+* collection methods:
+  * location-based for Google Places reviews, and
+  * topic-based filtering for Reddit comments. To
   * assessment: whether the dataset accurately represents these varieties, we
     (a) manual annotation of language varieties and (b) automatic lang var pred
   * Native speakers of the language varieties manually annotate the datasets
     with sentiment and sarcasm labels. We perform an additional annotation
     exercise to validate the reliance of the annotated labels
 * we fine-tune nine LLMs (representing a range of encoder/decoder and
-  mono/multilingual models) on these datasets, and evaluate their performance on
-  the two tasks. Our results show that 
-  * the models consistently perform better on inner-circle varieties (i.e.,
-    en-AU and en-UK), in comparison with en-IN, particularly for sarcasm
-    classification. We also report 
-  * challenges in cross-variety generalisation, highlighting the need for
-    language variety-specific datasets such as ours
-    
+  mono/multilingual models) on these datasets, and
+  evaluate their performance on the two tasks. Our results show that
+  * the models consistently perform better on inner-circle varieties
+    (ie en-AU and en-UK), in comparison with en-IN,
+    particularly for sarcasm classification
+  * challenges in cross-variety generalisation, highlighting the
+    need for language variety-specific datasets such as ours
+
 # 1 Intro
 
 | Benchmark          | Sent. | Sarc. | Eng. | Var. |
@@ -38,7 +38,7 @@ https://huggingface.co/datasets/unswnlporg/BESSTIE
 | Faisal+ (2024)     |   1   |   0   |  0   |  1   |
 | **BESSTIE**        |   1   |   1   |  1   |  1   |
 
-* The relationship between sentigment and sarcasm classification is
+* The relationship between sentiment and sarcasm classification is
   well-understood (Chauhan+ 2020)
 
 # 6 Rel work
@@ -48,15 +48,12 @@ https://huggingface.co/datasets/unswnlporg/BESSTIE
   * Arabic dialects (Elmadany+ 2023)
   * CreoleVal (Lent+ 2024) which provides datasets for 28 creole languages. More
   * DialectBench (Faisal+ 2024) in 280 dialectal varieties for several tasks
-    * English dialectal datasets for sentiment and sarcasm classification.
+    * English dialectal datasets for sentiment and sarcasm classification
 * sarcasm classification datasets for standard variety of English exist,
   * reddit comments (Khodak+ 2018)
   * amazon reviews (Filatova, 2012)
   * tweets (Ptáček+ 2014; Painter+ 2022; Abercrombie and Hovy, 2016; Oprea and
-    Magdy, 2020). While datasets like ArSarcasm-v2 (Abu Farha+ 2021) present
-    annotations for sarcasm, sentiment, and the dialect of each tweet for
-    Arabic, there is a notable absence of sarcasm classification datasets that
-    account for non-standard varieties of English. Similar to their work, we
-    also create a dataset that contains both sentiment and sarcasm labels. To
-    the best of our knowledge, BESSTIE is the first benchmark for sentiment and
-    sarcasm classification specifically for varieties of English.
+    Magdy, 2020). While datasets like
+* ArSarcasm-v2 (Abu Farha+ 2021) present annotations for sarcasm, sentiment, and
+  the dialect of each tweet for Arabic, there is a notable absence of sarcasm
+  classification datasets that account for non-standard varieties of English
