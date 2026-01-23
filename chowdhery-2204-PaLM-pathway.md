@@ -60,16 +60,16 @@ arXiv:2204.02311 [cs.CL]
   * increasing model capacity without increasing the computational cost through
     sparsely activated modules
   * see sec 13
-* we continue the scaling line of language modeling improvements and train
-  * a 540 billion parameter, densely activated, autoregressive Transformer on
-    780 billion tokens of high-quality text
+* we continue the scaling line of language modeling improvements
+  * we: a 540 billion parameter, densely activated, autoregressive Transformer
+  * trained on 780 billion tokens of high-quality text
   * achieved through the use of Pathways (Barham+ 2022), a new ML system which
     enables highly efficient training of very large neural networks across
     thousands of accelerator chips, including those spanning multiple Tensor
     Processing Units (TPU) v4 Pods
-  * This new model, called Pathways Language Model (PaLM), achieves SOTA
-    few-shot results across hundreds of natural language, code, and
-    mathematical reasoning tasks
+  * This new model, called Pathways Language Model (PaLM), achieves 
+    SOTA few-shot results across
+    100s of natural language, code, and mathematical reasoning tasks
 * The key takeaways from this work are as follows:
 
 ## Efficient scaling
@@ -91,15 +91,16 @@ arXiv:2204.02311 [cs.CL]
 
 ## Continued improvements from scaling
 
-* In Section 6, we evaluate PaLM across hundreds of natural language, code, and
-  mathematical reasoning tasks, and achieve SOTA results on the vast majority
-  of these benchmarks, typically by significant margins. This critically
-  demonstrates scaling improvements from large LMs have neither plateaued nor
-  reached their saturation point. For instance, in Table 4 we present a new
-  few-shot SOTA on 28 out of the 29 most widely evaluated English language
-  understanding benchmarks, compared against the best per-task result from GLaM
-  (Du+ 2021), GPT-3 (Brown+ 2020), Megatron–Turing NLG (Smith+ 2022), Gopher
-  (Rae+ 2021a), Chinchilla (Hoffmann+ 2022), and LaMDA (Thoppilan+ 2022)
+* Sec 6, we evaluate PaLM in 100s of natural language, code, and math reasoning
+  * SOTA results on the vast majority of these benchmarks, typically by
+    significant margins. This critically demonstrates 
+  * ie scaling improvements from large LMs have neither plateaued nor reached
+    their saturation point. For instance, in 
+  * eg Table 4: a new few-shot SOTA on 28 out of the 29 most widely evaluated
+    English language understanding benchmarks, compared against the best
+    per-task result from GLaM (Du+ 2021), GPT-3 (Brown+ 2020), Megatron–Turing
+    NLG (Smith+ 2022), Gopher (Rae+ 2021a), Chinchilla (Hoffmann+ 2022), and
+    LaMDA (Thoppilan+ 2022)
 
 ## Breakthrough capabilities: NLU and generation across many difficult tasks
 
@@ -116,10 +117,10 @@ arXiv:2204.02311 [cs.CL]
       categorical prediction or regression, which typically do not require gen
 * In Section 6.2 we additionally highlight breakthrough performance on
   BIG-bench (BIG-bench collaboration, 2021)
-  * BIG-bench: a recently released suite of 150+ new NLU and generation tasks,
+  * BIG-bench: 150+ new NLU and generation tasks, 
     many of which are extremely difficult even for humans to correctly answer.
-    In Figure 1 and Section 9, we demonstrate PaLM’s exploratory capabilities
-    to explicitly interpret and explain complex reasoning chains
+  * Figure 1 and Section 9, we demonstrate PaLM’s exploratory capabilities to
+    explicitly interpret and explain complex reasoning chains
   * Fig 1 demonstrates exploratory capabilities in prompting PaLM to generate
     explanations using chain-of-thought prompting (Wei+ 2022b)
     * All examples were generated with greedy (1-best) decoding of PaLM 540B

@@ -5,10 +5,10 @@ arXiv:1909.07521 [cs.CL]
 # Abstract
 
 * abilities such as boolean coordination, quantification, conditionals,
-  comparatives, and monotonicity reasoning (i.e., about word subst in sentence)
+  comparatives, and monotonicity reasoning (ie about word subst in sentence)
 * unclear the extent to which they are captured in existing NLI benchmarks
-* we propose the use of semantic fragments---systematically generated datasets
-  that each target a different semantic phenomenon---for probing
+* we propose the use of semantic fragments ~~ systematically generated datasets
+  that each target a different semantic phenomenon ~~ for probing
 * experiments, using a library of 8 such semantic fragments
 * two remarkable findings:
   * SOTA models, including BERT, that are pre-trained on existing NLI benchmark
@@ -25,8 +25,7 @@ arXiv:1909.07521 [cs.CL]
   * determine whether the second sentence, known as the hypothesis sentence,
     follows from the meaning of the first sentence (the premise)
   * involve a wide range of reasoning and knowledge phenomena, including
-    knowledge that goes beyond basic linguistic understanding
-    (e.g., elementary logic)
+    knowledge that goes beyond basic linguistic understand (eg elementary logic)
 * large-scale NLI datasets
   * Stanford NLI datasets (SNLI, Bowman+ 2015) and
   * MultiNLI (MNLI, Williams, Nangia, and Bowman 2018), coupled with new
@@ -48,12 +47,12 @@ arXiv:1909.07521 [cs.CL]
   * questions such as: are models able to effectively learn and extrapolate
     complex knowledge and reasoning abilities when trained on benchmark tasks?
 * challenge datasets limited by the simple types of inferences they included
-  (e.g., lexical and negation inferences)
+  (eg lexical and negation inferences)
   * fail to cover more complex reasoning phenomena related to logic, and
     primarily use adversarially generated corpus data
   * datasets that are easily constructed and/or verified using crowdsrc
   * requires datasets that are hard even for humans, but that are nonetheless
-    based on sound formal principles (e.g., reasoning about monotonicity where,
+    based on sound formal principles (eg reasoning about monotonicity where,
     several nested downward monotone contexts are involved
     * compositionality, cf.  Lake and Baroni (2017))
 * we propose using semantic fragments—
@@ -69,7 +68,7 @@ arXiv:1909.07521 [cs.CL]
     * Is this fragment learnable from scratch using existing NLI architectures
       (if so, are the resulting models useful)?
     * How well do large SOTA pre-trained NLI models do on this task?
-      (i.e., models trained on all known NLI data such as SNLI/MNLI)
+      (ie models trained on all known NLI data such as SNLI/MNLI)
     * Can existing models be quickly re-trained or re-purposed to be robust on
       these fragments
       * if so, does mastering the fragment affect performance on the original t?
@@ -83,8 +82,8 @@ arXiv:1909.07521 [cs.CL]
   (using a novel and cheap inoculation (Liu, Schwartz, and Smith 2019) strategy)
   improve performance?
   * mixed results depending on the particular linguistic phenomena and model
-    * e.g. comparatives, re-training some models degrade performance on the orig
-    * e.g. monotonicity, the learning is more stable, even across models
+    * eg comparatives, re-training some models degrade performance on the orig
+    * eg monotonicity, the learning is more stable, even across models
 
 # Related Work
 
@@ -120,8 +119,8 @@ arXiv:1909.07521 [cs.CL]
 * NLI challenge datasets (Glockner, Shwartz, and Goldberg 2018; Naik+ 2018),
 * we focus on the trade-off between
   * mastering a particular linguistic fragment or phenomena independent of other
-    tasks and data (i.e., Question 1 from Figure 1), while also
-  * maintaining performance on other NLI benchmark tasks (i.e., related to
+    tasks and data (ie Question 1 from Figure 1), while also
+  * maintaining performance on other NLI benchmark tasks (ie related to
     Question 3 in Figure 1)
 * we introduce a novel variation of the inoculation through finetuning
   * Liu, Schwartz, and Smith (2019)
@@ -168,7 +167,7 @@ CONTRADICTION	|A man ropes a calf successfully
   following Liu, Schwartz, and Smith (2019)
 * q3: whether a pre-trained NLI model can be retrained to improve on a fragment
   * we employ the recent inoculation by fine-tuning method (Liu+ 2019).  The
-  * to re-fine-tune (i.e., continue training) the models above using k pieces of
+  * to re-fine-tune (ie continue training) the models above using k pieces of
     fragment training data
   * Our approach to inoculation, which we call lossless inoculation, differs
     * explicitly optimizing the aggregate score of each model on both its

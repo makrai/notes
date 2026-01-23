@@ -1,4 +1,5 @@
-An analysis of the blockchain and COVID-19 research landscape using a bibliometric study
+An analysis of the blockchain and COVID-19 research landscape using 
+  a bibliometric study
 José Manuel Guaita Martínez, Patricia Carracedo, Dolores G Comas, Carlos H
 Sustainable Technology and Entrepreneurship Volume 1, Issue 1, January–Apr 2022
 

@@ -58,11 +58,11 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
   * transformer [36] for sequence-to-sequence annotation, as well as with
     BERT [60], currently among the most popular architectures for the creation
     of embeddings
-  * In other cases, attention-based models paving the way to radically new
-    approaches for some tasks
-    * Bahdanau+’s work Bahdanau, Cho, and Bengio (2015) to the field of machine translation
-    * the expressive power of memory networks Sukhbaatar+ (2015) significantly contributed to
-      the idea of using deep networks for reasoning tasks
+  * attention paving the way to radically new approaches for some tasks
+    * Bahdanau+’s work Bahdanau, Cho, and Bengio (2015)
+      to the field of machine translation
+    * the expressive power of memory networks Sukhbaatar+ (2015) to the idea of
+      using deep networks for reasoning tasks
 
 # II A general model of attention and its components 3
 
@@ -152,10 +152,11 @@ IEEE Transactions on Neural Networks and Learning Sys (2020) arXiv:1902.02181
 # V Combined with knowledge about the task or the data 11
 
 * According to LeCun+ [146], a major open challenge in AI is
-* combining connectionist (or subsymbolic) models, such as deep networks,
-  with approaches based on symbolic knowledge representation, in order to
-  perform complex reasoning tasks. Throughout the last decade, filling the gap
-  between these two families of AI methodologies has represented a major
+* combining 
+  connectionist (or subsymbolic) models, such as deep networks, with 
+  approaches based on symbolic knowledge representation, 
+  in order to perform complex reasoning tasks
+  * filling the gap between these two families of AI methodologies
 * approaches include
   * statistical relational learning [147],
   * neural-symbolic learning [148], and the
@@ -348,7 +349,7 @@ perform a supervised training of the attention model
 ## E. Neural-Symbolic Learning and Reasoning
 
 * neural logic programming [167]: reasoning over knowledge graphs, in order to
-  combine parameter and structure learning of first-order logic rules. They have
+  combine parameter and structure learning of first-order logic rules
 * logic attention networks [168] to aggregate information coming from graph
   neighbors with both rule~ and network-based attention weights. Moreover,
 * prior knowledge has also been exploited by Shen+ [169] to
@@ -356,9 +357,8 @@ perform a supervised training of the attention model
     entities for ranking question–answer pairs
 * in reasoning tasks that are also addressed with symbolic approaches,
   such as textual entailment [99]
-  * Hudson and Manning [170] recently proposed a new architecture for complex
-    reasoning problems, with NLP usually being one of the target sub-tasks, as
-    in the case of visual question answering. In such an architecture,
+  * Hudson and Manning [170]: a new architecture for complex reasoning problems,
+    with NLP usually being one of the target sub-tasks, eg in visual QA
     * attention is used within several parts of the model, for example, over
       question words or to capture long-range dependences with self-attention
 * introduce constraints in the form of logical statements within neural networks
@@ -377,13 +377,13 @@ perform a supervised training of the attention model
   based on measures of similarity or significance.  It can also autonomously
 * attention creats a representation encoding of what the important data should
   be similar to
-* possible role of attention in addressing fundamental AI challenges. In
+* possible role of attention in addressing fundamental AI challenges
   * injecting knowledge into the neural model, so as to represent specific
-    features, or to exploit previously acquired knowledge, as in transfer
-    learning settings. We speculate that this could pave the way to new
-    challenging research avenues, where attention could be exploited to enforce
-    the combination of subsymbolic models with symbolic knowledge
-    representations to perform reasoning tasks or to address natural language
-    understanding
+    features, or to 
+    exploit previously acquired knowledge, as in transfer learning settings. We
+  * this could pave the way to new challenging research avenues, where 
+    attention could be exploited to enforce the 
+    combination of subsymbolic models with symbolic knowledge reprs
+    to perform reasoning tasks or to address natural language understanding
   * unsupervised learning architectures, by guiding and focusing the training
     process where no supervision is given in advance

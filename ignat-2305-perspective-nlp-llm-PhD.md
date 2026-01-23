@@ -3,8 +3,8 @@ O Ignat, Z Jin, A Abzaliev, L Biester, S Castro, N Deng, X Gao, A Gunal, J He,
   A Kazemi, M Khalifa, N Koh, A Lee, S Liu, D June Min, S Mori, J Nwatu,+
 arXiv:2305.12544 [cs.CL]
 
-* generative NLP applications. At the same time, it has also led to a
-* misleading public discourse that ``it's all been solved.'' Not surprisingly,
+* generative NLP applications
+* misleading public discourse that ``it's all been solved''
 * we: a compilation of NLP research directions that are rich for exploration,
   * reflecting the views of a diverse group of PhD students in an acad res lab
   * we do not cover tasks where LLMs’s performance is limited (Bang+ 2023a)
@@ -13,23 +13,23 @@ arXiv:2305.12544 [cs.CL]
 
 # 3 Reasoning 4
 
-* reasoning types, including deductive, inductive, abductive, quantitative,
-  causal, and moral reasoning. Improving reasoning skills in NLP is vital for
-* tasks such as question answering, reading comprehension, and dialogue
-  systems, as it can enhance a model’s generalization ability in unseen
+* reasoning types, including
+  deductive, inductive, abductive, quantitative, causal, and moral reasoning
+* tasks such as
+  question answering, reading comprehension, and dialogue systems
 * from early rule-based and symbolic approaches to statistical methods in the
-  1990s, which utilized probabilistic models and machine learning algorithms.
+  1990s, which utilized probabilistic models and machine learning algorithms
   In recent years, deep learning and neural networks have revolutionized the
-* challenges remain in attaining humanlike reasoning and generalization
+* challenges remain in attaining human-like reasoning and generalization
 
 ## Gaps
 
-* impressive performance on many reasoning benchmarks (Brown+ 2020b; Ouyang+
-  2022; Zhang+ 2022; Touvron+ 2023a; OpenAI, 2023), there are still several
-* formal reasoning (Jin+ 2022b; Stolfo+ 2023; Jin+ 2023a), as we often see LLMs
-  * errors that a formal or symbolic system would not make.
-* lack grounding in real-world experiences when reasoning (Ignat+ 2021).
-* distinguishing empirical knowledge and rational reasoning: how LLMs reason?
+* impressive performance on many reasoning benchmarks
+  (Brown+ 2020b; Ouyang+ 2022; Zhang+ 2022; Touvron+ 2023a; OpenAI, 2023)
+* formal reasoning (Jin+ 2022b; Stolfo+ 2023; Jin+ 2023a)
+  * errors that a formal or symbolic system would not make
+* lack grounding in real-world experiences when reasoning (Ignat+ 2021)
+* distinguishing empirical knowledge and rational reasoning: how do LLMs reason?
 
 ## Research Directions
 
@@ -45,33 +45,33 @@ arXiv:2305.12544 [cs.CL]
   * integrate external reasoning systems, such as
     * calculators, python interpreters, knowledge retrieval from databases, or
       search engines (Schick+ 2023; Mialon+ 2023)
-2. Grounded reasoning in the physical real world. While current models generate
+2. Grounded reasoning in the physical real world
   * linguistically plausible responses that are nonsensical or unrealistic in
     practice. To address this issue, one direction is to explore ways to
   * incorporate external knowledge sources, multimodal data, or simulated world
-3. Responsible reasoning in social contexts.  With increasing numbers of
-   applications that use NLP models, it is foreseeable that
-  * models will need to make complicated decisions that involve moral reasoning
-    as intermediate steps. For example,
-  * when creating a website, there may be moral choices to consider such as
-    catering towards certain subpopulations, or overly optimizing for user
-    attention or click-through rates
+3. Responsible reasoning in social contexts
+  * increasing numbers of applications that use NLP models, it is foreseeable
+  * models will need to make complicated decisions that 
+    involve moral reasoning as intermediate steps
+  * eg when creating a website, there may be moral choices to consider
+    * eg catering towards certain subpopulations, or overly optimizing for user
+      attention or click-through rates
   * These decision principles are pervasive in our daily life, across small and
   * different social contexts and cultural backgrounds
     (Jin+ 2023b; Hendrycks+ 2021)
   * interdisciplinary collaboration with domain experts and policymakers needed
-4. Formally defining reasoning and designing proper evaluation framework. There
+4. Formally defining reasoning and designing proper evaluation framework
   * LLMs start to make the difference between knowledge and reasoning blurry –
   * when a model memorizes a reasoning pattern, does it count as the mastery of
   * increasing mastery of templated solutions by pattern matching, which seems
     to be the reasoning that many want. Fundamentally, it leads to a question
   * what are the sparkles of intelligence that humans excel at, and how
-    different are these from empirically learning how to do template matching.
+    different are these from empirically learning how to do template matching
   * then how to test models’ reasoning skills. We face problems such as
   * data contamination, Goodhart’s law (a dataset failing to reflect the skill
     once it is exploited), and a
-  * lack of reliable metrics to evaluate multi-step reasoning.
-5. Analyzing how prompts help reasoning.  There are
+  * lack of reliable metrics to evaluate multi-step reasoning
+5. Analyzing how prompts help reasoning
   * two types of prompting to inspect: in-context learning and chain of thought
   * conditioning on in-context examples has a similar effect to finetuning the
     model (Akyürek+ 2022), and researchers start to
@@ -82,7 +82,7 @@ arXiv:2305.12544 [cs.CL]
       problem-solving. However, it is
     * debatable whether language models truly reason
       or just generate statistically-alike sequences, and
-    * to what extent AI systems can learn to reason from fewshot exemplars.
+    * to what extent AI systems can learn to reason from fewshot exemplars
 
 # 4 Knowledge Bases
 
@@ -90,16 +90,17 @@ arXiv:2305.12544 [cs.CL]
 
 # 6 Computational Social Science
 
-### 6.2.2 Development of new CSS-aiding abstractions, concepts, and methods.
+### 6.2.2 Development of new CSS-aiding abstractions, concepts, and methods
 
-* Word and sentence-level embeddings have had a large impact on CSS in recent
+* Word and sentence-level embeddings have had a large impact on CSS recently
 * Topic modeling, such as LDA (Blei+ 2003), and keyword extraction have been
-  prevalent in CSS prior to the introduction of embeddings.  These are examples
-  of methods that encapsulate generic capabilities at a high abstraction level
-  in CSS, as they are frequently used in studies across several subfields of
-  CSS. As CSS researchers transition to using more powerful AI technologies,
-  the concepts and algorithms that unlock new capabilities for them are yet to
-  be developed.
+  prevalent in CSS prior to the introduction of embeddings
+  * These are examples of methods that encapsulate generic capabilities at a
+    high abstraction level in CSS, as they are 
+    frequently used in studies across several subfields of CSS
+* As CSS researchers transition to using more powerful AI technologies, the
+  concepts and algorithms that unlock new capabilities for them are yet to be
+  developed
 
 # 7 NLP for Online Environments
 
@@ -127,10 +128,10 @@ arXiv:2305.12544 [cs.CL]
     extracting relevant information from data. These tasks involve important
     * challenges such as standardization of healthcare data, accurate labeling,
       extraction and retrieval of health concepts as well as
-      categorization of patient conditions (Dash+ 2019).
+      categorization of patient conditions (Dash+ 2019)
   * patient requests for information on
     * applications such as question answering for health-related questions, and
-      retrieval of information relevant to medical treatments or illnesses.
+      retrieval of information relevant to medical treatments or illnesses
 * analysis of language in the mental health space covering both
   * professional therapy (Sharma+ 2020; PérezRosas+ 2017; Min+ 2022) and
   * social media conversations
@@ -139,7 +140,7 @@ arXiv:2305.12544 [cs.CL]
   * surveillance of public health to identify diseases and risk factors or
     at-risk populations (Naseem+ 2022; Jimeno Yepes+ 2015; Yates+ 2014) and
   * moderate aspects such as misinformation or public sentiment online
-    (Hou+ 2019; Kazemi+ 2021b).
+    (Hou+ 2019; Kazemi+ 2021b)
 
 ## Gaps. One of the most glaring limitations of NLP in healthcare is the
 
@@ -149,12 +150,12 @@ arXiv:2305.12544 [cs.CL]
     * privacy and ethics concerns. Another shortcoming is the
 * lack of language diversity as work to date has primarily focused on
   English or other high-resource languages (Mondal+ 2022) but devoted
-  * less efforts towards minority languages.
+  * less efforts towards minority languages
 * lack of human evaluation of NLP-based health systems has made it challenging
-* automatic evaluation metrics do not necessarily speak to patient outcomes.
+* automatic evaluation metrics do not necessarily speak to patient outcomes
 * human-centric studies must be conducted in evaluating the efficacy of
 
-## Research Directions.
+## Research Directions
 
 1. Healthcare benchmark construction. Although the documentation of recent
   * very high performance for various medical question answering benchmarks, or
@@ -176,7 +177,7 @@ arXiv:2305.12544 [cs.CL]
     information requires new strategies for knowledge integration
   * interpretable, to provide clear reasoning behind their predictions
     <~ interdisciplinary collaboration with medical experts to make sure that
-    the system aligns with their domain knowledge and clinical practice.
+    the system aligns with their domain knowledge and clinical practice
 3. Drug discovery. Drug discovery is a critical research area that has
   * often been considered in relation to biomedical and chemical research, but
   * extraction and analysis of information from large amounts of
@@ -186,7 +187,7 @@ arXiv:2305.12544 [cs.CL]
     discovery of new drug candidates, the prediction of compound properties,
   * optimization drug design. New NLP methods can also contribute to the
   * identification of novel drug-target associations and can enable more
-  * effective drug repurposing efforts.
+  * effective drug repurposing efforts
 
 # 15 NLP and Ethics
 
@@ -198,5 +199,5 @@ arXiv:2305.12544 [cs.CL]
   * Start with your motivation and interests:
   * consider your previous experiences, look around at your community, explore
   * your curiosities about language and about people, and try to find
-  * what resonates with you the most. Building on this foundation,
+  * what resonates with you the most
   * tasks and applications in NLP that connect to your motivations & interests

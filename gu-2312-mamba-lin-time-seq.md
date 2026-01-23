@@ -116,14 +116,14 @@ arXiv:2312.00752 [cs.LG]
     * Mamba is the first linear-time sequence model that truly achieves
       Transformer-quality performance,
       both in pretraining perplexity and downstream evaluations
-    * scaling laws up to 1B parameters, we show
+    * scaling laws up to 1B parameters
     * exceeds the performance of a large range of baselines,
       * including very strong modern Transformer training recipes based on
         LLaMa (Touvron+ 2023)
-    * 5× generation throughput compared to Transformers of similar size, and
+    * 5× generation throughput compared to Transformers of similar size
     * Mamba-3B’s quality matches that of Transformers twice its size
       * 4 points higher avg on common sense reasoning compared to Pythia-3B
-        and even exceeding Pythia-7B
+      * exceeding Pythia-7B
 
 # 2 State Space Models 3
 
@@ -152,8 +152,9 @@ arXiv:2312.00752 [cs.LG]
     which we will revisit in Section 3.5
 * the first step of the computation graph in the forward pass of an SSM
   * from a mechanical point of view discretization can simply be viewed as
-* Alternate flavors of SSMs can bypass the discretization step and parameterize
-  (A, B) directly instead (Zhang+ 2023), which may be easier to reason about
+* Alternate flavors of SSMs can bypass the discretization step and 
+  parameterize (A, B) directly instead (Zhang+ 2023), which
+  may be easier to reason about
 
 ## Computation
 
@@ -264,8 +265,8 @@ arXiv:2312.00752 [cs.LG]
   * The Induction Heads task is a well-known mechanism
     hypothesized to explain the majority of in-context learning abilities of
     LLMs (Olsson+ 2022)
-    * It requires context-aware reasoning to know when to produce the correct
-      output in the appropriate context (black)
+    * It requires context-aware reasoning
+      to produce the correct output in the appropriate context (black)
 * These tasks reveal the failure mode of LTI models. From the RNN/CNN view
   * recurrent: their constant dynamics (eg the (A, B) transitions in (2))
     cannot let them select the correct information from their context, or

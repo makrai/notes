@@ -495,8 +495,7 @@ arXiv:2501.15177 [cs.SD]
   * modifying the original pretraining dataset to provide more audio-language
     pairs about ordering
   * COMPA [26]
-    * issue: current benchmarks cannot measure the lack of combinatorial
-      reasoning in models and proposes
+    * issue: current benchmarks not measure the lack of combinatorial reasoning
     * contrastive training with
       composition-aware hard negatives and a modular contrastive loss
   * MGA-CLAP [75] tackles the
@@ -1020,8 +1019,7 @@ Tab V: popular open-source QA datasets
 * Initially, such datasets were specifically created for Audio Question
   Answering (AQA) tasks, constructing diverse questions to train models on how
   to answer similar queries
-* In recent years, AQA tasks have been increasingly utilized as a proxy task for
-  model learning perception and reasoning about audio [146]. They can serve as a
+* recent: AQA tasks  as a proxies for perception and reasoning about audio [146]
 * they integrate multiple audio tasks [24] and
 * can also be used to guide models in better following human instructions [8]
 

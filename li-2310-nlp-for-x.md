@@ -101,19 +101,20 @@ EMNLP Findings 2023 "Theme Track: LLMs and the Future of NLP" arXiv:2310.20633
 * the stultification of NLP as a mere evaluation optimization endeavor and to
 * ML/LLMs not/did produce an engine that could learn languages, translate, answer
   questions, create poetry, and do all the things a child can do
-* scale. No child needs to read or hear more than half the internet’s English
-  text in order to use language
-  * What reasoning and sensory capabilities do people have that LLMs lack? How
+* scale
+  * No child needs to read or hear more than half the internet’s English text
+  * What reasoning and sensory capabilities do people have that LLMs lack?
   * need for global infrastructures to dramatically scale up computing
     resources, because the open-source models still cannot achieve performance
     comparable to GPT variants (Gudibande+ 2023)
   * deeper thinking about the foundational conceptual models driving our field
-* systematically change and refine our paper review system and academic success
-  measurements, in order to establish a more inclusive research environment
-  * longterm, high-risk topics that are crucial for the entire field. The new
+* systematically change and refine
+  our paper review system and academic success measurements,
+  in order to establish a more inclusive research environment
+  * long-term, high-risk topics that are crucial for the entire field
   * close collaboration with researchers from other fields, including
-    social science, natural science, computer vision, knowledge representation
-    and reasoning, and human-computer interaction
+    social science, natural science, computer vision,
+    knowledge representation and reasoning, and human-computer interaction
 
 # Limitations
 

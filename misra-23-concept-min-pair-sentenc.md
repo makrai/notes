@@ -64,12 +64,13 @@ code and data at: https://github.com/kanishkamisra/comps
     * models should (3a) > (3b), given that (1a) > (1b)
       a. A wug is a robin. A dax is a penguin. Therefore, a wug can fly
       b. `*`A wug is a robin. A dax is a penguin. Therefore, a dax can fly
-  * Together, the three sets of stimuli tease apart more superficial predictive
-    behaviors, such as contextual word associations, from more robust reasoning
-    behaviors based on understanding of concept properties. While we can expect
-    superficial predictive strategies to be brittle in the face of shallow
-    perturbations and irrelevant distractions, robust property knowledge and
-    reasoning behaviors should not
+  * Together, the three sets of stimuli 
+    tease apart more superficial predictive behaviors, such as contextual word
+    associations, from more robust reasoning behaviors based on understanding of
+    concept properties. While 
+    * we can expect superficial predictive strategies to be brittle in the face
+      of shallow perturbations and irrelevant distractions, robust property
+      knowledge and reasoning behaviors should not be so
 * We use COMPS to analyze robust property knowledge and its inheritance in
   22 different PLMs, ranging from small masked language models to
   billion-parameter autoregressive language models

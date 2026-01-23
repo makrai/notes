@@ -31,8 +31,8 @@ ICML 2024 Oral. Code at this https URL arXiv:2310.16834 [stat.ML]
   * capabilities, such as creating images given only text (Ramesh+ 2022)
   * answering complex questions (Brown+ 2020)
 * probabilistic modeling technique. For discrete data such as natural language,
-  * autoregressive modeling (Yule, 1971)– arguably the simplest modeling type
-    since it derives from the probabilistic chain rule–has remained the only
+  * autoregressive modeling (Yule, 1971) – arguably the simplest modeling type
+    since it derives from the probabilistic chain rule – has remained the only
   * autoregressive transformers have produced stunning results (Vaswani+ 2017;
     Radford+ 2019), there are limits. For example, the 
   * hE sequential sampling of tokens is slow, hard to control, and often

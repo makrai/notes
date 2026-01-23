@@ -8,7 +8,7 @@ arXiv:2210.11416 [cs.LG]
 * we explore instruction finetuning with a particular focus on
   * scaling the number of tasks,
   * scaling the model size, and
-  * finetuning on chain-of-thought data. We find that instruction finetuning
+  * finetuning on chain-of-thought data
 * dramatically improves performance on a variety of
   * model classes (PaLM, T5, U-PaLM)
   * prompting setups (zero-shot, few-shot, CoT)

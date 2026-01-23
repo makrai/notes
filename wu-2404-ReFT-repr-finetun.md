@@ -255,9 +255,9 @@ on top of the frozen pretrained model
 ## General comments about expressivity of ReFT
 
 * previous works have unified PEFTs under a single framework [He+ 2022a]
-* why not express ReFT as a PEFT method? The main reason is that
-* PEFT frameworks lack the notion of time or sequence (see the unified PEFT
-  view provided in Table 1 on pg 5 of He+ 2022a)
+* why not express ReFT as a PEFT method?
+* because PEFT frameworks lack the notion of time or sequence
+  (see the unified PEFT view provided in Table 1 on pg 5 of He+ 2022a)
   * representation modifications are necessarily applied to every token in the
     sequence, even in recent variants such as AdaLoRA [Zhang+ 2023]
 * ReFT leverages representations over time and

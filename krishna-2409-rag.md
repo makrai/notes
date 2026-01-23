@@ -9,7 +9,7 @@ arXiv:2409.12941 [cs.CL]
   * requirements: understand user queries, retrieve relevant information, and
     synthesize coherent and accurate responses. Given the increasing real-world
 * comprehensive evaluation becomes crucial. To this end, 
-* we propose FRAMES (Factuality, Retrieval, And reasoning MEasurement Set), a
+* we propose FRAMES (Factuality, Retrieval, And reasoning MEasurement Set)
   * tests LLMs' ability to provide factual responses, assess retrieval
     capabilities, and evaluate the reasoning required to generate answers
   * previous work has provided datasets and benchmarks to eval these in isolat

@@ -144,7 +144,7 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
 
 ## Structured Explanations (Table 5): dataset-specific forms
 
-* common approaches is to (construct a)
+* common approaches are to (construct a)
   * chain of facts that detail the reasoning steps to reach an answer
   * place constraints on the textual explanations that annotators can write,
     such as requiring the use of certain variables in the input ("semi-struct")
@@ -153,11 +153,11 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
   chains of facts and semi-structured text, termed “explanation graphs”
   * The facts are individual sentences written by the authors that are
     centered around a set of shared relations and properties
-  * authors can construct an explanation graph by linking shared words in the
-    question, answer, and explanation
+  * authors can construct an explanation graph
+    by linking shared words in the question, answer, and explanation
     * Given the chain of facts for an instance (6.3 facts on average)
-* OpenBookQA [OBQA; 81] uses single WorldTree facts to prime annotators to
-  write QA pairs
+* OpenBookQA [OBQA; 81] uses
+  single WorldTree facts to prime annotators to write QA pairs
 * each question in QASC [61] contains two associated science facts from a
   corpus selected by human annotators who wrote the question
 * Jhamtani and Clark [58] extend OBQA and QASC with
@@ -171,7 +171,7 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     and SQ UAD [102]
     * require annotators to use phrases in both the input question and context,
       and limit them to a small set of connecting expressions
-  * Inoue+ [53] collect R 4 C, fact chain explanations for HOTPOT QA [137]
+  * Inoue+ [53] collect R4C, fact chain explanations for HOTPOT QA [137]
   * Lamm+ [70] collect explanations for Natural Questions that follow a
     linguistically-motivated form (see the example in Table 1)
 * We discuss structured explanations further in §5
@@ -288,7 +288,7 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
 # 5 Rise of Structured Explanations 7
 
 * intro
-  * not all template-like free-text explanations are incorrect, and
+  * not all template-like free-text explanations are incorrect
   * call for embracing the structure of an explanation when appropriate
 * merit of free-text explanations is their expressivity, which
   can come at the costs of underspecification and inconsistency due to the
@@ -303,11 +303,11 @@ NeurIPS 2021 arXiv:2102.12060 [cs.CL]
     * template-like explanations are discarded because they are deemed
       uninformative
   * The E-SNLI authors assembled a list of
-    56 templates (e.g., “There is <hypothesis>”) to identify explanations whose
+    56 templates (e.g., “There is `<hypothesis>`”) to identify explanations whose
     edit distance to one of the templates is <10. They
     * re-annotate the detected template-like explanations (11% in the entire
       dataset)
-  * The COS-E authors discard sentences “<answer> is the only option that is
+  * The COS-E authors discard sentences “`<answer>` is the only option that is
     correct/obvious” (the only given example of a template)
   * Template explanations concern researchers because they can result in
     artifact-like behaviors in certain modeling architectures

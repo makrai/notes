@@ -68,11 +68,11 @@ Google DeepMind
   * > 20% of the training compute of GPT-3 (Brown+ 2020),
   * we saved about 20 Pebibytes (PiB) of activations to disk, and produced
   * hundreds of billions of sparse autoencoder parameters in total. This was
-* essential for enabling more ambitious applications of interpretability, such
-  * circuit analysis (Conmy+ 2023; Hanna+ 2023; Wang+ 2022),
+* essential for enabling more ambitious applications of interpretability, eg
+  * circuit analysis (Conmy+ 2023; Hanna+ 2023; Wang+ 2022)
     * ie scaling up Marks+ (2024) to larger models, which may be
-    * necessary to answer mysteries about larger models like what happens
-      during chain of thought or in-context learning
+    * necessary to answer mysteries about larger models like
+      what happens during chain of thought or in-context learning
 
 # 2. Preliminaries.  Background on SAEs in general + JumpReLU SAEs
 

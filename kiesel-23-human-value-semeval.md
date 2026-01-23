@@ -170,13 +170,12 @@ online and has over 1900 downloads as of April 2023
   pair where it was not stated explicitly
 
 ## 4.2 Supplementary dataset
-In addition to the main dataset, we collected a sup-
-plementary dataset of 459 arguments of different
-written forms and ethical reasoning. This dataset
-is intended as an out-of-domain challenge for sub-
-mitted approaches. The arguments from the latter
-two sources were provided by other researchers in
-response to our call for data on NLP mailing lists:
+
+* we collected a supplementary dataset of 459 arguments of different written
+  forms and ethical reasoning. This dataset is intended as 
+  * an out-of-domain challenge for submitted approaches. 
+  * The arguments from the latter two sources were provided by other researchers
+    in response to our call for data on NLP mailing lists
 
 ### Zhihu
 
