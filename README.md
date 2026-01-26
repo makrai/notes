@@ -8,6 +8,7 @@ The number at the end is how many times my notes contain the word sarcasm.
 * [debnath-25-appraisal-to-affect-flow.md](/debnath-25-appraisal-to-affect-flow.md):1
 * [zhang-2408-**SarcasmBench**.md](/zhang-2408-SarcasmBench.md):5
 * [yue-24-**SarcNet**-dataset-lrec.md](/yue-24-SarcNet-dataset-lrec.md):22
+  * text + image
 * [srirag-2412-**besstie**-bench-sarc-acl.md](/srirag-2412-besstie-bench-sarc-acl.md):13
 * [baroiu-23-**mustard**-deeplearning.md](/baroiu-23-mustard-deeplearning.md):24
 * [zhang-2310-socioprag-64-lang.md](/zhang-2310-socioprag-64-lang.md):6
