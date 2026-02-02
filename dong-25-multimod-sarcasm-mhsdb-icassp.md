@@ -72,11 +72,12 @@
 * hi: M2H2 [9] for Hindi.
 * These datasets vary in sample size, speaker number, and class distribution,
 * two primary tasks: humor detection and sarcasm detection.
-* We adhered to official data partitioning protocols where available. For
+* We adhered to official data partitioning protocols where available
   * UR-FUNNY is evaluated on its official test set, while
   * M2H2 and MUStARD++ Balanced employ five-fold cross-validation, avg perf
-  * MUStARD++, we used “Friends” episodes as the test set, performing five-fold
-    cross-validation on the training set and reporting the average results.
+  * MUStARD++, we used “Friends” episodes as the test set, performing
+    five-fold cross-validation on the training set
+    and reporting the average results
 
 ## B. Multi-Modal Foundation Models
 
