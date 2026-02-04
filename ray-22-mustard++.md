@@ -12,8 +12,8 @@ LREC 2022 Marseille, France
   * to the best of our knowledge, is hitherto unexplored
 * multimodal sarcasm detection dataset (MUStARD) pre-annotated with 9 emotions
   * We identify and correct 343 incorrect emotion labels (out of 690)
-  * We double the size of the dataset, label it with emotions along with valence
-    and arousal which are important indicators of emotional intensity
+  * We double the size of the dataset, 
+  * we label it with emotions along with valence and arousal (indicat intensity)
   * we label each sarcastic utterance with one of the four sarcasm types:
     Propositional, Embedded, Likeprefixed and Illocutionary
 * Exhaustive experimentation with multimodal (text, audio, and video) fusion
