@@ -12,7 +12,7 @@ LREC 2022 Marseille, France
   * to the best of our knowledge, is hitherto unexplored
 * multimodal sarcasm detection dataset (MUStARD) pre-annotated with 9 emotions
   * We identify and correct 343 incorrect emotion labels (out of 690)
-  * We double the size of the dataset, 
+  * We double the size of the dataset,
   * we label it with emotions along with valence and arousal (indicat intensity)
   * we label each sarcastic utterance with one of the four sarcasm types:
     Propositional, Embedded, Likeprefixed and Illocutionary
@@ -51,18 +51,19 @@ LREC 2022 Marseille, France
 * we also add sarcasm type as metadata which [c]ould give an understanding of
   what kind of information/modality is required to improve sarcasm detection
   * Propositional, Embedded, Like-Prefixed and Illocutionary (Camp, 2012)
-    * Propositional sarcasm needs context information to be able to detect
-      whether it’s sarcasm or not. “your plan sounds fantastic!”
+  * Propositional sarcasm needs context information to be able to detect
+    whether it’s sarcasm or not. “your plan sounds fantastic!”
       (Zvolenszky, 2012)
-  * Embedded sarcasm has an embedded incongruity within the utterance; thus, the
-    text itself is sufficient to detect sarcasm
+  * Embedded sarcasm has an embedded incongruity within the utterance; thus,
+    the text itself is sufficient to detect sarcasm
     * For example: “It’s so much fun working at 2 am at night”
   * Like [mintha]-prefixed sarcasm: a like-phrase to show the incongruity of the
     argument being said, for example, “Like you care” (Joshi+ 2017)
-  * Illocutionary sarcasm is a type of sarcasm that bears the sarcasm in the
-    non-textual cues, and the text is often the opposite of the attitude
-    captured in the audio or video modality
-    * eg by Zvolenszky (2012): rolling eyes while saying ”Yeah right” being a
+  * Illocutionary sarcasm is a type of sarcasm that
+    bears the sarcasm in the non-textual cues, and
+    the text is often the opposite of the attitude captured in the audio or
+    video modality
+    * eg by Zvolenszky (2012): rolling eyes while saying ”Yeah right”
 * Figure 1 is a sample in MUStARD++ with the labels and metadata information
   * transcription of the sarcastic utterance, and the text in the yellow bubbles
   * the contextual sentences transcribed from the contextual video frames.  The
