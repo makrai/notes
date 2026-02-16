@@ -49,11 +49,11 @@ https://huggingface.co/datasets/unswnlporg/BESSTIE
   * CreoleVal (Lent+ 2024) which provides datasets for 28 creole languages. More
   * DialectBench (Faisal+ 2024) in 280 dialectal varieties for several tasks
     * English dialectal datasets for sentiment and sarcasm classification
-* sarcasm classification datasets for standard variety of English exist,
+* sarcasm classification datasets for standard English
   * reddit comments (Khodak+ 2018)
   * amazon reviews (Filatova, 2012)
   * tweets (Ptáček+ 2014; Painter+ 2022; Abercrombie and Hovy, 2016; Oprea and
-    Magdy, 2020). While datasets like
-* ArSarcasm-v2 (Abu Farha+ 2021) present annotations for sarcasm, sentiment, and
-  the dialect of each tweet for Arabic, there is a notable absence of sarcasm
-  classification datasets that account for non-standard varieties of English
+    Magdy, 2020)
+* Arabic: ArSarcasm-v2 (Abu Farha+ 2021)
+  * annotations for sarcasm, sentiment, and the dialect of each tweet
+  * ne sarcasm classification datasets for non-standard varieties of English

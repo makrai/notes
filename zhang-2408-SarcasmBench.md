@@ -5,10 +5,10 @@
 * LLMs: the task of _System I_ have been argued to be successfully solved
   * System I: the fast, unconscious, and intuitive tasks,
     eg sentiment analysis, text classification, etc
-* sarcasm, as a subtle linguistic phenomenon, often employs
+* sarcasm, as a subtle linguistic phenomenon
 * rhetorical devices like hyperbole and figuration to convey true sentiments
 * we select eleven SOTA LLMs and eight SOTA pre-trained language models (PLMs)
-  * comprehensive evaluations on six widely used benchmark datasets through
+  * comprehensive evaluations on six widely used benchmark datasets
   * different prompting approaches
     * zero-shot input/output (IO) prompting
     * few-shot IO prompting

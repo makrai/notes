@@ -6,9 +6,9 @@
 
 * the first multilingual and multimodal sarcasm detection dataset
 * social networks have propelled the utilization of multimodal data
-* multimodal sarcasm detection datasets,
+* multimodal sarcasm detection datasets
 * a single label is assigned to a multimodal instance
-* may be not suitable for the associated text or image
+* may be not suitable for the associated text or **image**
 * SarcNet, a multilingual and multimodal sarcasm detection dataset in
   * English and Chinese, consisting of 3,335 image-text pair samples
   * annotations for sarcasm in visual, textual, and multimodal data,
