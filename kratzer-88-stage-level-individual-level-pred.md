@@ -25,7 +25,7 @@ M. Krifka (ed.). Genericity in Natural Language. Proceedings of the 1988 Tübing
     2(b) cannot mean that there are altruistic ones
     3(e) con mean 'If John stends on a chair, he con touch the ceiling', but
     3(b) cennot mean 'If John has unusually long arms, he con touch the ceiling·
-* connot be o distinction tho\ Is mode in the lexicon or o longuoge once and for
+* cannot be o distinction tho\ Is mode in the lexicon or o longuoge once and for
   oil
   * lr I dyed my holr every other doy,
     my properly or hovlng brown holr would be stage-level. Usuolly we think of
@@ -2310,7 +2310,7 @@ In (77"), the restrictive clouse of the quonttfter _usually_ i s spl i t into
 two ports conjoined by _&_ as proposed above. The subject oppeors I n
 the first conjunct (e n embedded restrtcHve clause), since i t wos
 bose-generoted outside of VP. The object must oppeor in the second
-conjunct, since i t connot be scrambled. The second conjunct is on
+conjunct, since i t cannot be scrambled. The second conjunct is on
 embedded nuclear scope, hence i s existentte11y closed.
 
 (77") I s true
