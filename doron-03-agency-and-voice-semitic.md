@@ -6,7 +6,7 @@ Agency and voice: The semantics of the Semitic templates
 
 * Semitic templates systematically encode two dimensions of verb meaning:
   * agency, the thematic role of the verb’s external argument, and
-  * voice assumption that this form-meaning correspondence is
+  * voice
 * mediated by syntax
   * parallel compositional construction of the form and the meaning of a verb
     from the forms and the meanings of its root and template
@@ -22,19 +22,19 @@ Agency and voice: The semantics of the Semitic templates
 * Causative and middle morphemes within a unified system
   * explains that, crossling, both are markers of transitivity alternations
   * sheds new light on problems in the interface of semantics and morphology
-    * the impossibility of deriving the semantics of middle verbs from that of
-      the corresponding transitive verbs
-    * identity found crosslinguistically between middle and reflexive morphology
+    * the impossibility of deriving the semantics of middle verbs
+      from that of the corresponding transitive verbs
+    * identity, found crossling, between middle and reflexive morphology
     * determining the grammatical function of the causee in causative constructs
 
 # 1 Causative and middle morphology as marking transitivity alternations
 
 * typological literature (Nedyalkov and Silnitsky 1973; Haspelmath 1993)
-* languages which overtly mark a transitivity alternation vary in their choice
-  of the marked alternant
+* languages which overtly mark a transitivity alternation
+  vary in their choice of the marked alternant
   * the transitive verb may be marked as causative, or
-  * the intransitive verb may be marked as middle, 1 a
-    * The term middle is used in this paper in its general sense:
+  * the intransitive verb may be marked as middle
+    * The term _middle_ is used in this paper in its general sense:
       marking a transitivity alternation
       rather than in its narrower dispositional sense
       found in “This bread cuts easily.”
@@ -43,7 +43,7 @@ Agency and voice: The semantics of the Semitic templates
   * _finish_
     * middle intransitive alternant marked in Hebrew, but a
     * causative transitive one in Turkish
-  * freeze, on the other hand
+  * _freeze_ on the other hand
     * causative transitive alternant marked in Hebrew, but a
     * middle intransitive one in Spanish:
 * Haspelmath (1993): typological generalization
@@ -51,11 +51,11 @@ Agency and voice: The semantics of the Semitic templates
     ie the combination of Turkish and Spanish was needed to exemplify this
   * a universal ranking of predicates
 * the theoretical literature:
-  * causative and middle verbs not values of a single alternation. Rather,
+  * causative and middle verbs not values of a single alternation
   * in lexicalist and non-lexicalist theories alike
   * middles involve a single predicate,
   * causatives are usually constructed from two predicates (event decomposition)
-  * Middles (including reflexives) have been given
+  * anal of Middles (including reflexives)
     * non-lexical analyses based on syntactic relations (Kayne 1975; Moore 1991)
     * lexicalist analyses based on argument structure (Marantz 1984)
       * Romance: they are marked by a clitic
@@ -85,18 +85,18 @@ Agency and voice: The semantics of the Semitic templates
     particular templates
   * we: the Semitic templates denote
     * voice (of which middle is one possible value) and a
-    * thematic dimension which I call agency (of which causative is one possib)
+    * thematic dimension which I call agency (of which causative is one value)
   * we analyse causative verbs in terms of a causative templat
   * not equivalent to an analysis in terms of an additional causative pred
   * A causative template is restricted to denote a particular thematic role,
   * not the same as introducing a predicate in general
-  * implic
+  * implications of a single predicate
     * only one argument with each thematic role
       * if a causative verb involves a single predicate, we do
         not expect two of its arguments to have the same thematic role, but
       * if two predicates are involved, then it should be possible to find two
         arguments with the same thematic role
-    * a single event: if a causative verb involves a single predicate
+    * a single event
 * our analysis differs from those of Parsons (1990) and Pustejovsky (1995),
   * P & P: causative verbs denote two separate events
   * we: a causative verb describes a single event which has
@@ -125,7 +125,8 @@ Agency and voice: The semantics of the Semitic templates
     * only the result state is repeated
   * not hold for causative verbs in general. 
     just for particular aspectual classes
-    (6a and b) below cannot mean that a single human act caused more walks/gallops
+    * (6a and b) below cannot mean that
+      a single human act caused more walks/gallops
                         6. a. _I walked the dog again._
                         6. b. _Kétszer megvágtáztattam a lovat_
 * In sum: the causal source of an event is part of its characterization
@@ -179,11 +180,11 @@ Agency and voice: The semantics of the Semitic templates
     * The reflexive morpheme presumably denotes a different operator REFL
     * unrelated to CAUSE (where REFL = λP λx [P(x, x)])
 * Chierchia (1989) goes in the opposite direction from that of lexical decomp
-  * the transitive verb is basic and the middle verb from is derived
+  * the transitive verb is basic, and the middle verb from is derived
   * the converse of the first problem: even in languages with middle morphology,
     it is not necessarily the case that the transitive verb is unmarked; often,
     it is the transitive verb which is marked (as causative) – see (1) and (2)
-* semantic problem. The problem is that there is
+* semantic problem
   * no way to “eliminate” the semantic contribution of the transitive verb’s
     external argument
   * a middle verb does not involve existentially binding the external argument
@@ -192,7 +193,7 @@ Agency and voice: The semantics of the Semitic templates
   * The sentence _The vase broke_ does not entail that somebody/something
     broke the vase
   * how to derive the meaning of unaccusative _break_ from that of transitive
-    * if x broke the vase would be considered false for any x,
+    * if _x broke the vase_ would be considered false for any x,
       we might still consider it true that the vase broke
   * So what are the truth conditions for _The vase broke?_
     * problem ignored in the literature, except for Chierchia’s discussion
@@ -212,7 +213,7 @@ Agency and voice: The semantics of the Semitic templates
       (1987), Brousseau and Ritter (1990)
     * reduction, of lexical reflexivity to unaccusativity, is argued for in
       Zribi-Hertz (1987), Marantz (1984), and Grimshaw (1990)
-    * criticism of this view in Reinhart and Siloni (2003)
+    * criticism of this view: Reinhart and Siloni (2003)
   * ie middle morphology attributes the instigation of the denoted event
     to the patient itself
     * also accounts for the observation that unaccusatives and reflexives
@@ -261,7 +262,7 @@ Agency and voice: The semantics of the Semitic templates
                              darabokra harcolt
 
 * unaccusative/unergative split among middle verbs (Reinhart 1996, Simmons 1996)
-  (though R & S only discuss intensive-template verbs)
+  (though Reinhart & Simmons only discuss intensive-template verbs)
   * it is possible to predict on the basis of the agentivity of the transitive
     whether its middle counterpart is reflexive or unaccusative:
   * agentive verbs give rise to reflexive middles, whereas
@@ -284,7 +285,7 @@ Agency and voice: The semantics of the Semitic templates
         * (12a–c) illustrate for Hebrew:
           lefényképezkedik, lenyiratkozik, kirugatja magát
       * iterative reading. This reading too is found crosslinguistically
-        * Russian, Hungarian, Georgian according to Nedyalkov and Silnitsky (1973)
+        * Russian, Hungarian, Georgian (Nedyalkov and Silnitsky 1973)
         * Examples from Hebrew are in (13)
         * futkározik, sétálgat, röpköd, nevetgél
   * Lack of agentivity of the transitive verb !=> unaccusativity of the middle
@@ -304,6 +305,44 @@ Agency and voice: The semantics of the Semitic templates
 
 * sum: no way to predict the unaccusative/reflexive classification of middles
   if one derives them from their transitive counterparts (p 11)
+
+* Levin and Rappaport Hovav (1995) propose to 
+  * maintain Chierchia’s transitive-to-middle direction of derivation only 
+    for a subset of verbs, those which denote “externally caused” events, but
+  * reverse the direction of derivation for verbs which denote "internally cau"
+  * (16a) are “internally caused,” since 
+    it is the transitive verb which is morphologically marked 
+    (with the causative template, recognizable by the prefix hi-), whereas
+    intrans CaCaC, trans hiCCiC
+    * fagy-aszt, olvaszt/ad, fő-z/forr-al, ereszt/d, emel-kedik, buk-tat/-ik,
+      moz-gat/og, fúj/fúj, öl/hal
+  * (16b) are “externally caused,” since there 
+    it is the intransitive verb which is morphologically marked
+    (with a middle template recognized by the prefix ni-)
+    intrans niCCaC, trans CaCaC
+    * (be)fejez-ődik, tör-ik, nyit/nyílik, szak-ít/ad, hint/?-ődik, nyú-jt/lik,
+      ken/ődik, puszt-ít/-ul 
+* the distinction between internal and external causation does 
+  not seem to correlate the different morphological markings in (16) 
+  with any other linguistically significant properties. First, 
+  * the intransitive verbs in both (16a) and (16b) are unaccusative. Second,
+  * in English, the state denoted by resultative phrases has a 
+    different temporal relation to an event of internal vs external causation.
+    * Rappaport Hovav and Levin (1998, 2000) show
+    * Yet resultative phrases do not distinguish the verbs in (16) a vs b
+    * For both types of verbs, the unfolding of 
+      the result state is cotemporal with the event denoted by the verb: 
+  * in many cases both unaccusative and causative verbs are marked, which is 
+    * a problem for any attempt to derive the intransitive and transitive verbs
+      from each other:
+        intrans niCCaC,  trans hiCCiC
+      * locative
+        döl/dönt, raga-d/szt, rej-t/-lik, búj-tat/-ik, elvál-ik/-aszt,
+        marad/hagy, közel-eg/-ít, belép/berak, tűn-ik/-tet, lát-szik,
+        folytat/-ódik
+      * experiencer
+      csodál-kozik, ije-d,-szt, riad/-szt, sér-ül/-t, figyel/-mezetet,
+      fesz-ül/-ít, men-t/men-ekül, megadja magát, esk-et/ü-szik p13
 
 # 3 Semitic morphology 13
 
