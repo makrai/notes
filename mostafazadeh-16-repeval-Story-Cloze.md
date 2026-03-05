@@ -1,7 +1,7 @@
 Story Cloze Evaluator: Vector Space Representation Evaluation by
   Predicting What Happens Next
 Nasrin Mostafazadeh, Lucy Vanderwende, Wen-tau Yih, Pushmeet Kohli, James Allen
-2016 repeval
+2016 RepEval
 
 cs.rochester.edu/nlp/rocstories/RepEvalPredictingTheNext/
 

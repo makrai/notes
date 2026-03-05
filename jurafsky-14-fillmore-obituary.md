@@ -41,10 +41,10 @@ Obituary Charles J. Fillmore
   * coming from
     * also called frames
       * “the pre-transformationalist view of sentence structure as
-      consisting of a frame and a substitution list,”
+        consisting of a frame and a substitution list,”
       * proposed at about the same time by
-        Minsky (1974), Hymes (1974), and Goffman (1974), as well as
-    * with other names like
+        Minsky (1974), Hymes (1974), and Goffman (1974)
+    * with other terms like
       * scripts (Schank and Abelson 1975) and
         schemata (Bobrow and Norman 1975)
         (see Tannen 1979 for a comparison)

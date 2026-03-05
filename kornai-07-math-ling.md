@@ -121,8 +121,8 @@ András Kornai
   * Frames extend more or less naturally to events
   * To avoid confusion with case frames, we call the frame representation of
     event objects _scripts_
-  * Schank and Abelson (1977). The original intention was to use scripts as
-    repositories of commonsense procedural knowledge:
+  * Schank and Abelson (1977). 
+    * repositories of commonsense procedural knowledge <~ The original intention
     * what to do in a restaurant, what happens during a marriage ceremony, etc
     * actors fulfilling roles, eg that of the waiter or the best man,
     * decompose the prototypical action in a series of more elementary
