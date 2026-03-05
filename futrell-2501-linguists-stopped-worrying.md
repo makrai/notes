@@ -3,135 +3,156 @@ Richard Futrell, Kyle Mahowald
 arXiv:2500.17047 [cs.CL]
 
 * LMs can contribute to fundamental questions about linguistic structure,
-  language processing, and learning.
+  language processing, and learning
 * They force us to rethink arguments that have been foundational in linguistics
-* they do not replace linguistic structure and theory, 
-* they serve as proofs of concept for gradient, usage-based approaches 
+* they do not replace linguistic structure and theory,
+* they serve as proofs of concept for gradient, usage-based approaches
 
 # 1 Intro
 
-* It’s 1968, and Norm and Claudette are having lunch. Norm is explaining his
+* It’s 1968, and Norm and Claudette are having lunch
 * Norm says he is interested in human language and the human mind, found HAL
-  creepy, and isn’t sure why Claudette is so interested in building chatbots or
+  creepy, and isn’t sure why Claudette is so interested in building chatbots
 * all Claudette wants is a machine that talks and understands.  She doesn’t
-  really care how it happens. Norm and Claudette have very different goals, but
-* Fast forward to 2025. 
+  really care how it happens. Norm and Claudette have very different goals, nL
+* Fast forward to 2025
   * Norm has worked for decades on a variety of diverse languages, developing
-    sophisticated theories of linguistic structure.
+    sophisticated theories of linguistic structure
   * Claudette got more and more interested in engineering,
-    amassing huge amounts of data, and training statistical models. Norm and
+    amassing huge amounts of data, and training statistical models
   * How relevant is it that the architecture of Claudette’s machines seems to
-    have nothing to do with the structure of language as identified by Norm and
+    have nothing to do with the structure of language as identified by Norm
   * what if Norm was right about the nature of language— does that mean the
     machines aren’t actually as impressive as Claudette thinks, because they
-    are relying on shallow pattern matching? 
-  * Or are Claudette’s machines evidence that Norm’s theories were wrong?  More
+    are relying on shallow pattern matching?
+  * Or are Claudette’s machines evidence that Norm’s theories were wrong?
   * a view: neural networks are no more relevant to linguistics than submarine
-    engineering is to an ichthyologist—just because both submarines and fish
-    can move underwater does not mean that you can learn much about one from
-    studying the other.
+    engineering is to an ichthyologist [halkutató]
+    * just because both submarines and fish can move underwater does 
+      not mean that you can learn much about one from studying the other
 * LMs have access to so much more data, that whatever they are doing is
   irrelevant for humans (Chomsky+ 2023; Fox and Katzir, 2024; Bolhuis+ 2024)
   * Some have denied that language models could learn the putatively key
-    properties of human language, and thus are (Lan+ 2024; Fox and Katzir, 2024)
-  * neural network sequence models could learn to approximate anything, so 
-    ~> the fact that they seem to learn language is uninformative 
+    properties of human language (Lan+ 2024; Fox and Katzir, 2024)
+  * neural network sequence models could learn to approximate anything
+    ~> the fact that they seem to learn language is uninformative
     (Rawski and Baumont, 2023; Moro+ 2023; Chomsky, 2023; Chomsky+ 2023;
     Collins, 2024; Bolhuis+ 2024)
     * LMs are like epicycles, the computational technique used by Ptolemy to
       predict the motions of the planets and the sun in a model that placed the
-      Earth at the center of the universe (de Santillana, 1955; Flynn, 2013).
+      Earth at the center of the universe (de Santillana, 1955; Flynn, 2013)
     * <~ epicycles can approximate any trajectory arbitrarily well (at the cost
-      of great complexity), so the mere fact that they could be used to capture
-* we: LMs do learn non-trivial aspects of linguistic structure, and 
+      of great complexity)
+* we: LMs do learn non-trivial aspects of linguistic structure, and
   they do give important insights that change how we should think about
-  language. As language scientists, we ignore them at our peril.
-* An opposite approach is to dismiss traditional theories of linguistic struct,
+  language. As language scientists, we ignore them at our peril
+* An opposite approach is to dismiss traditional theories of ling struct,
   * either useless or of negative value in developing the only known systems
     that can actually use lang as humans do (Jelinek, 2004; Piantadosi, 2023)
-  * this view is widespread in some engineering and application-focused communs
+  * this view is widespread in some engineering and applic-focused communities
   * throws out hard-won analytical discoveries about the structure of language
 * but
-  * ? scientific theory of language, without 
-  * ? a way to approach the question of why human language is the way it is, or
-  * ? what the interesting questions are. Moreover, language models are
-  * LM are currently most successful in English and other languages with
-    internet-scale data (Blasi+ 2022). 
+  * ? scientific theory of language, without
+  * ? a way to approach the question of why human language is the way it is
+  * ? what the interesting questions are
+  * LMs are currently most successful in languages with internet-scale data
+    (Blasi+ 2022)
   * A more complete approach to the science of language will draw on the
     expertise of documentary linguists, sociolinguists, anthropologists, and
     community stakeholders, and it will integrate the insights from decades of
-    linguistic inquiry.
+    linguistic inquiry
 * third view in linguistics, cognitive science, and philosophy
   (Smolensky, 1988; Pater, 2019; Portelance and Jasbi, 2023; McGrath+ 2024;
-  Millière, 2024; Potts, 2025; Chesi, 2025): 
+  Millière, 2024; Potts, 2025; Chesi, 2025):
+  * bib
+    * Smolensky, P. (1988). On the proper treatment of connectionism. Behavioral
+    * Pater, J. (2019) 
+      Generative linguistics and neural networks at 60:
+        Foundation, friction, and fusion.
+      Language, 95(1):e41–e74. Publisher: Linguistic Society of America.
+    * Portelance, E. and Jasbi, M. (2023)
+      The roles of neural networks in language acquisition
+      Retrieved from osf.io/preprints/psyarxiv/b6978.
+    * McGrath, S. W., Russin, J., Pavlick, E., and Feiman, R. (2024). 
+      How can deep neural networks inform theory in psychological science?
+      Current Directions in Psychological Science, page 09637214241268098.
+    * Millière, R. (2024). Language models as models of language
+      arXiv:2408.07144.
+    * Potts, C. (2019)
+      A case for deep learning in semantics: Response to pater. 
+      Language, 95(1):e115– e124.
+    * Potts, C. G. (2025). Finding linguistic structure in LLMs
+      [YouTube](https://www.youtube.com/watch?v=DBorepHuKDM)
+    * Chesi, C. (2025). Is it the end of (generative) linguistics as we know it?
+      Italian Journal of Linguistics
   * language models are not a complete theory of language—in fact, no one has
   * they are hugely informative about language and its structure, learning,
-    processing, and relationship with the larger structure of the mind.
-  * LMs have set off an intellectual explosion in cognitive science, machine
-    learning, philosophy of mind, and other fields, in which 
-    * longstanding ideas have been overturned; novel ideas are emerging; and
-      disciplinary boundaries are dissolving. Linguistics has a chance to 
-    * LMs can stand at the center of this huge intellectual ferment, and would
-      be remiss to isolate itself intellectually on the basis that language
-  * don’t look like existing theory. 
+    processing, and relationship with the larger structure of the mind
+  * LMs have set off an intellectual explosion in cognitive science, ML, and
+    philosophy of mind
+    * long-standing ideas have been overturned; novel ideas are emerging; and
+      disciplinary boundaries are dissolving
+    * LMs can stand at the center of this huge intellectual ferment, and 
+      would be remiss to isolate itself intellectually
+  * don’t look like existing theory
   * Language science already has contributed to the development of LMs
-  * language models already have contributed insights about language.
+  * language models already have contributed insights about language
 
 # 2 Statistical models of language have outperformed expectations
 
 ## 2.1 A brief history of statistical language learning
 
-* The effective conclusion from [the Colorless green] arguments was that
+* The effective conclusion from the _Colorless green_ arguments was that
   linguistic structure could only be characterized in terms of formal systems,
   based on rules or constraints and operating over structured arrays of symbols
   (Chomsky, 1965)
   * the expectation was that such systems would form the basis for language
     technologies such as machine translation and question answering systems
-    (Hays, 1960; Winograd, 1972; Hutchins, 1981). It was believed that these
-    * Hays, D. G. (1960). Linguistic research at the RAND corporation. 
-      In Proceedings of the National Symposium on Machine Translation.
-    * Winograd, T. (1972). Understanding natural language. 
-      Cognitive Psychology, 3(1):1–191.
-    * Hutchins, W. J. (1981). The evolution of machine translation systems.
-      In Lawson, V., editor, Translating and the Computer: Practical Experience
-  * these formal systems should be constructed by linguists since the task of
-  * myriad efforts to build machine translation systems, grammatical parsers,
-  * hE linguistic competence remained elusive for machines.
+    (Hays, 1960; Winograd, 1972; Hutchins, 1981)
+    * Hays, DG (1960) Linguistic research at the RAND corporation
+      In Proceedings of the National Symposium on Machine Translation
+    * Winograd, T (1972) Understanding natural language
+      Cognitive Psychology, 3(1):1–191
+    * Hutchins, WJ (1981) The evolution of machine translation systems
+      In Lawson, V, editor, Translating and the Computer: Practical Experience
+  * these formal systems should be constructed by linguists
+  * myriad efforts to build machine translation systems and grammatical parsers
+  * hE linguistic competence remained elusive for machines
   * Symbolic approaches that sought to elucidate rules and structures often
-    proved unable to capture all the exceptions and complexity that
-* By the late 1980s and 1990s, statistical learning had a major NLP renaissance in
-  * NLP (Brown+ 1990; Manning and Schütze, 1999; Pereira, 2000), and
-  * human language learning literature as well (Saffran+ 1996). Yet
+    proved unable to capture all the exceptions and complexity
+* By the late 1980s and 1990s, statistical learning had a major NLP renaissan in
+  * NLP (Brown+ 1990; Manning and Schütze, 1999; Pereira, 2000)
+  * human language learning literature as well (Saffran+ 1996)
   * hE unable to get past approaches that simply counted up words and phrases
-    (Wang and Manning, 2012; Arora+ 2017).
-* The connectionist movement in the 1980s and 90s seemed promising 
-  (Rumelhart and McClelland, 1986; Smolensky, 1988; Elman, 1990a) (and turned
+    (Wang and Manning, 2012; Arora+ 2017)
+* The connectionist movement in the 1980s and 90s seemed promising
+  (Rumelhart and McClelland, 1986; Smolensky, 1988; Elman, 1990a)
   * well-justified concerns about the ability of these approaches to scale up
     and to represent the rules and structures (Pinker and Prince, 1988)
   * they can implement rule-like symbolic behavior (Smolensky, 1990)
-  * Even researchers optimistic about the role of statistical learning in
-    skeptical that end-to-end neural approaches would succeed 
-  * Chater+ (2006): ``despite having considerable psychological interest'' 
+  * Even researchers optimistic about the role of statistical learning were
+    skeptical that end-to-end neural approaches would succeed
+  * Chater+ (2006): ``despite having considerable psychological interest''
   * Tenenbaum+ (2011)
-    * connectionist models ... deny that brains actually encode rich knowledge,
+    * connectionist models ... deny that brains actually encode rich knowledge
     * strong consensus in cognitive science and artificial intelligence that
-      symbols and structures are essential for thought.” Nevertheless, given
+      symbols and structures are essential for thought
   * now sometimes taken for granted in practice that ideas from linguistic
-    theory will not form the basis of proficient language processing systems.
-* generative linguists continued to claim that 
+    theory will not form the basis of proficient language processing systems
+* generative linguists continued to claim that
   statistical methods would never solve interesting problems related to
-  learning linguistic structure. eg a review article, Everaert+ (2015)
+  learning linguistic structure, eg a review article, Everaert+ (2015)
 * Berwick+ (2011) were skeptical that recurrent neural networks could ever be
-  much more powerful than bigram models.
+  much more powerful than bigram models
 * connectionism in the 2010s: new techniques and increased computational power
-  that made training neural models much more efficient (Hinton+ 2006). By 
+  made training neural models much more efficient (Hinton+ 2006)
   * neural models showed rudiments of grammatical generalizations like
-    subject–verb agreement (Linzen+ 2016). Over the coming years, the 
+    subject–verb agreement (Linzen+ 2016)
   * success at acquiring linguistic abilities conti (Futrell+ 2019a; Wilcox+
     2018; Manning+ 2020; Hu+ 2020; Warstadt and Bowman, 2022; Mahowald+ 2024)
-  * growth from early neural models in, eg 2011 to now is 
-    remarkable from a historical perspective, and was surprising to virtually
-    everyone in the field at the time. 
+  * growth from early neural models in, eg 2011 to now is
+    remarkable from a historical perspective, and was 
+    surprising to virtually everyone in the field at the time
   * Sutskever+ (2011) introduced an at-the-time state-of-the-art RNN that
     produced output like “In the show’s agreement unanimously resurfaced. The
     wild pasteured with consistent street forests were incorporated by the 15th
@@ -145,26 +166,26 @@ arXiv:2500.17047 [cs.CL]
   * also comprehension accuracy, reaction time, and indeed any psychometric
     dependent variable are affected by all of these factors jointly—including
     the subjective grammaticality judgments that form the basis of formal synt
-    (Kluender and Kutas, 1992; Hofmeister+ 2013; Mahowald+ 2016; Lau+ 2017).
+    (Kluender and Kutas, 1992; Hofmeister+ 2013; Mahowald+ 2016; Lau+ 2017)
 * isolate linguistic structure from these other factors through
-  controlled experimental studies and through probing LMs’ internal states.
+  controlled experimental studies and through probing LMs’ internal states
 Experimentally, from sufficient performance data, one may infer an underlying
 formal cognitive structure, no matter whether the implementation substrate is a
 brain or a neural network (Piantadosi and Gallistel, 2024). This is the
 standard procedure in linguistics, where data consisting primarily of
-acceptability judgments is used to postulate underlying linguistic competence.
-This approach can be applied just as well to LMs.
-  * eg behavioral comparisons of minimally different sentences.
-  * “The keys to the cabinet are on the table” and 
+acceptability judgments is used to postulate underlying linguistic competence
+This approach can be applied just as well to LMs
+  * eg behavioral comparisons of minimally different sentences
+  * “The keys to the cabinet are on the table” and
   * the ungrammatical “The keys to the cabinet is on the table”, and the
     conditional probabilities assigned to the verb form “are” versus “is” are
   * The lexical frequency of “is” versus “are” can be controlled through a more
     elaborate experimental design, with four conditions in a 2 × 2 design
     crossing the grammatical number of the subject with the grammatical form of
-    the verb (as done by Marvin and Linzen, 2018). These are 
+    the verb (as done by Marvin and Linzen, 2018). These are
   * usual procedures in psycholinguistics, where experimenters develop
   * The same methodology can be applied to language models with probability as
-    the dependent variable (Linzen+ 2016; Futrell+ 2019b).
+    the dependent variable (Linzen+ 2016; Futrell+ 2019b)
 * Such studies have revealed behavioral patterns consistent with NNs
   * subject–verb agreement
     (Linzen+ 2016; Bernardy and Lappin, 2017; Gulordava+ 2018)
@@ -179,8 +200,8 @@ This approach can be applied just as well to LMs.
     accuracy in producing the right verb forms in such sentences is 85%; Marvin
     and Linzen, 2018).3 The results indicate that the model can represent the
     non-local structural dependency between the subject of the sentence and the
-    matrix verb.
-* Models can be “right for the wrong reasons” (McCoy+ 2019), adopting 
+    matrix verb
+* Models can be “right for the wrong reasons” (McCoy+ 2019), adopting
   * ie shallow heuristics which make correct predictions on certain test sets
   * or mastery of linguistic form without a concomitant ability to understand
     the implications of utterances (Weissweiler+ 2022, Mahowald+ 2024)
@@ -193,15 +214,15 @@ This approach can be applied just as well to LMs.
    on evaluation data that is unlike anything in the training data
   (Jumelet+ 2021; Feng+ 2024b; Misra and Mahowald, 2024; Leong and Linzen,
   2023; Yao+ 2025)
-* Ahuja+ (2025) trained Transformer language models on a corpus of 
+* Ahuja+ (2025) trained Transformer language models on a corpus of
   * English-like text that has been constrained so that subjects and verbs
     are always adjacent. That is, the corpus contains sentences like “I saw
   * ? preferring “The key to the cabinets is on the table” over something
     like “The key to the cabinets are on the table” (where the form of the
     verb depends on the linearly previous verb)
   * neural language models do make the human-like generalization, providing
-  * (see also Patil+ 2024).
-2. dig into the language models’ internal states. 
+  * (see also Patil+ 2024)
+2. dig into the language models’ internal states
   * LLMs have a reputation of being black boxes :-)
   * nL
     * probing: attempts to decode linguistic features from the internal reprs
@@ -209,18 +230,18 @@ This approach can be applied just as well to LMs.
   (Hewitt and Manning, 2019; Chi+ 2020; Voita and Titov, 2020; Manning+ 2020;
   Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego- Simón+ 2024)
     * promising avenues for linguistics and cognitive science (see Section 4.2)
-* hE mostly English (or a handful of other langs) as the target (Blasi+ 2022).
-  * see Jumelet+ 2025, for a multilingual grammatical benchmark).
-* disagreement about 
+* hE mostly English (or a handful of other langs) as the target (Blasi+ 2022)
+  * see Jumelet+ 2025, for a multilingual grammatical benchmark)
+* disagreement about
   * how much language models capture more complex formal patterns
-    (Vázquez Martínez+ 2023; Lan+ 2024; Someya+ 2024) or 
+    (Vázquez Martínez+ 2023; Lan+ 2024; Someya+ 2024) or
   * to what extent they can be said to “understand” (Bender and Koller, 2020)
   * refer to things in the world
     (Mandelkern and Linzen, 2024; Lederman and Mahowald, 2024), this is not the
 * clear: LMs have learned nontrivial formal linguistic patterns better than
 * LMs have learned “the real thing”—that is, the thing that we care about, as
   * eg how languages are learned, how they are processed, how and why they
-    vary, and where they come from.
+    vary, and where they come from
 
 # 3 The success of LMs is interesting for the science of language
 
