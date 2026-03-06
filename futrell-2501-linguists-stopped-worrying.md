@@ -28,7 +28,7 @@ arXiv:2500.17047 [cs.CL]
   * Or are Claudette’s machines evidence that Norm’s theories were wrong?
   * a view: neural networks are no more relevant to linguistics than submarine
     engineering is to an ichthyologist [halkutató]
-    * just because both submarines and fish can move underwater does 
+    * just because both submarines and fish can move underwater does
       not mean that you can learn much about one from studying the other
 * LMs have access to so much more data, that whatever they are doing is
   irrelevant for humans (Chomsky+ 2023; Fox and Katzir, 2024; Bolhuis+ 2024)
@@ -57,29 +57,32 @@ arXiv:2500.17047 [cs.CL]
   * ? what the interesting questions are
   * LMs are currently most successful in languages with internet-scale data
     (Blasi+ 2022)
-  * A more complete approach to the science of language will draw on the
-    expertise of documentary linguists, sociolinguists, anthropologists, and
-    community stakeholders, and it will integrate the insights from decades of
-    linguistic inquiry
+  Blasi, D., Anastasopoulos, A., and Neubig, G. (2022).
+  Systematic inequalities in lang tech performance across the world‘s languages
+  ACL 2022
+  * A more complete approach to the science of language will
+    draw on the expertise of
+    documentary linguists, sociolinguists, anthropologists, and community
+    stakeholders, and it will integrate the insights from decades of ling inqu
 * third view in linguistics, cognitive science, and philosophy
   (Smolensky, 1988; Pater, 2019; Portelance and Jasbi, 2023; McGrath+ 2024;
   Millière, 2024; Potts, 2025; Chesi, 2025):
   * bib
     * Smolensky, P. (1988). On the proper treatment of connectionism. Behavioral
-    * Pater, J. (2019) 
+    * Pater, J. (2019)
       Generative linguistics and neural networks at 60:
         Foundation, friction, and fusion.
       Language, 95(1):e41–e74. Publisher: Linguistic Society of America.
     * Portelance, E. and Jasbi, M. (2023)
       The roles of neural networks in language acquisition
       Retrieved from osf.io/preprints/psyarxiv/b6978.
-    * McGrath, S. W., Russin, J., Pavlick, E., and Feiman, R. (2024). 
+    * McGrath, S. W., Russin, J., Pavlick, E., and Feiman, R. (2024).
       How can deep neural networks inform theory in psychological science?
       Current Directions in Psychological Science, page 09637214241268098.
     * Millière, R. (2024). Language models as models of language
       arXiv:2408.07144.
     * Potts, C. (2019)
-      A case for deep learning in semantics: Response to pater. 
+      A case for deep learning in semantics: Response to pater.
       Language, 95(1):e115– e124.
     * Potts, C. G. (2025). Finding linguistic structure in LLMs
       [YouTube](https://www.youtube.com/watch?v=DBorepHuKDM)
@@ -92,7 +95,7 @@ arXiv:2500.17047 [cs.CL]
     philosophy of mind
     * long-standing ideas have been overturned; novel ideas are emerging; and
       disciplinary boundaries are dissolving
-    * LMs can stand at the center of this huge intellectual ferment, and 
+    * LMs can stand at the center of this huge intellectual ferment, and
       would be remiss to isolate itself intellectually
   * don’t look like existing theory
   * Language science already has contributed to the development of LMs
@@ -151,7 +154,7 @@ arXiv:2500.17047 [cs.CL]
   * success at acquiring linguistic abilities conti (Futrell+ 2019a; Wilcox+
     2018; Manning+ 2020; Hu+ 2020; Warstadt and Bowman, 2022; Mahowald+ 2024)
   * growth from early neural models in, eg 2011 to now is
-    remarkable from a historical perspective, and was 
+    remarkable from a historical perspective, and was
     surprising to virtually everyone in the field at the time
   * Sutskever+ (2011) introduced an at-the-time state-of-the-art RNN that
     produced output like “In the show’s agreement unanimously resurfaced. The
@@ -160,78 +163,85 @@ arXiv:2500.17047 [cs.CL]
 
 ## 2.2 Neural LMs learn nontrivial linguistic structure
 
-* word frequency, utterance length, online processing constraints such as
-  memory limitations, and plausibility given world knowledge all feed into the
-  probability of an utterance. Indeed, not only utterance probabilities, but
-  * also comprehension accuracy, reaction time, and indeed any psychometric
-    dependent variable are affected by all of these factors jointly—including
-    the subjective grammaticality judgments that form the basis of formal synt
+* x affects y
+  * p = prob, x include word frequency, utterance length,
+    online processing constraints such as memory limitations, and
+    plausibility given world knowledge
+  * y also includes comprehension accuracy, reaction time, and indeed
+    any psychometric dependent variable
+  * x also includes the subjective grammaticality judgments
+    that form the basis of formal synt
     (Kluender and Kutas, 1992; Hofmeister+ 2013; Mahowald+ 2016; Lau+ 2017)
 * isolate linguistic structure from these other factors through
   controlled experimental studies and through probing LMs’ internal states
-Experimentally, from sufficient performance data, one may infer an underlying
-formal cognitive structure, no matter whether the implementation substrate is a
-brain or a neural network (Piantadosi and Gallistel, 2024). This is the
-standard procedure in linguistics, where data consisting primarily of
-acceptability judgments is used to postulate underlying linguistic competence
-This approach can be applied just as well to LMs
+* infer the cog struct from behav
+  * Experimentally, from sufficient performance data, one may infer an
+    underlying formal cognitive structure, no matter whether the implementation
+    substrate is a brain or a neural network (Piantadosi and Gallistel, 2024).
+  * the standard procedure in linguistics, where
+    data consisting primarily of acceptability judgments is used to
+    postulate underlying linguistic competence This approach
+  * can be applied just as well to LMs
   * eg behavioral comparisons of minimally different sentences
-  * “The keys to the cabinet are on the table” and
+  * “The keys to the cabinet are on the table” vs
   * the ungrammatical “The keys to the cabinet is on the table”, and the
-    conditional probabilities assigned to the verb form “are” versus “is” are
+    conditional probabilities assigned to the verb form “are” versus “is”
   * The lexical frequency of “is” versus “are” can be controlled through a more
     elaborate experimental design, with four conditions in a 2 × 2 design
     crossing the grammatical number of the subject with the grammatical form of
-    the verb (as done by Marvin and Linzen, 2018). These are
-  * usual procedures in psycholinguistics, where experimenters develop
-  * The same methodology can be applied to language models with probability as
-    the dependent variable (Linzen+ 2016; Futrell+ 2019b)
+    the verb (as done by Marvin and Linzen, 2018)
+  * usual procedures in psycholinguistics
+  * The same methodology can be applied to language models with
+    probability as the dependent variable (Linzen+ 2016; Futrell+ 2019b)
 * Such studies have revealed behavioral patterns consistent with NNs
   * subject–verb agreement
     (Linzen+ 2016; Bernardy and Lappin, 2017; Gulordava+ 2018)
   * filler–gap dependencies
     (Wilcox+ 2018, 2023a; Kobzeva+ 2023; Suijkerbuijk+ 2023)
   * recursive embedding of clauses
-    (Futrell et al., 2019b; Wilcox+ 2019a; Hu+ 2020), all of which involve
-  * ie highly nontrivial formal structures which statistical models failed to
+    (Futrell et al., 2019b; Wilcox+ 2019a; Hu+ 2020)
+  * ie highly nontrivial formal structures which statistical models failed on
   * fig 1: Example results for subject–verb agreement from GPT-2 are shown in
-    Figure 1: we see that grammatical verb forms are relatively more probable
-    than matched ungrammatical verb forms in all but a few cases (human
-    accuracy in producing the right verb forms in such sentences is 85%; Marvin
-    and Linzen, 2018).3 The results indicate that the model can represent the
-    non-local structural dependency between the subject of the sentence and the
-    matrix verb
-* Models can be “right for the wrong reasons” (McCoy+ 2019), adopting
+    * grammatical verb forms are relatively more probable than matched
+      ungrammatical verb forms in all but a few cases
+    * human accuracy in producing the right verb forms in such sentences is 85%
+    * Marvin and Linzen, 2018
+    * ie the model can represent the non-local structural dependency
+      between the subject of the sentence and the matrix verb
+* Models can be “right for the wrong reasons” (McCoy+ 2019)
   * ie shallow heuristics which make correct predictions on certain test sets
   * or mastery of linguistic form without a concomitant ability to understand
     the implications of utterances (Weissweiler+ 2022, Mahowald+ 2024)
-  * eg a simple n-gram model performs fairly well on some subsets of paired
-    grammatical and ungrammatical sentences of the BLiMP dataset (Warstadt+
-    2020) (although not as well as a neural LM), which does not explicitly
-    control for n-gram frequency (Vázquez Martínez+ 2023).4
-* ~> deeper investigation. We discuss two approaches here. The first involves
+  * eg a simple n-gram model performs fairly well on some subsets of
+    paired grammatical and ungrammatical sentences of the BLiMP dataset
+    (Warstadt+ 2020) (although not as well as a neural LM), which does not
+    explicitly control for n-gram frequency (Vázquez Martínez+ 2023)
+* ~> deeper investigation. We discuss two approaches here
 1. controlling a model’s training data and then observing its generalizations
    on evaluation data that is unlike anything in the training data
   (Jumelet+ 2021; Feng+ 2024b; Misra and Mahowald, 2024; Leong and Linzen,
   2023; Yao+ 2025)
 * Ahuja+ (2025) trained Transformer language models on a corpus of
   * English-like text that has been constrained so that subjects and verbs
-    are always adjacent. That is, the corpus contains sentences like “I saw
+    are always adjacent. That is, the corpus contains sentences like "I saw"
   * ? preferring “The key to the cabinets is on the table” over something
     like “The key to the cabinets are on the table” (where the form of the
     verb depends on the linearly previous verb)
-  * neural language models do make the human-like generalization, providing
+  * neural language models do make the human-like generalization
   * (see also Patil+ 2024)
 2. dig into the language models’ internal states
-  * LLMs have a reputation of being black boxes :-)
+  * LLMs have a reputation of being black boxes
   * nL
     * probing: attempts to decode linguistic features from the internal reprs
-    * causal interventions, where model internals are changed and the
-  (Hewitt and Manning, 2019; Chi+ 2020; Voita and Titov, 2020; Manning+ 2020;
-  Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego- Simón+ 2024)
-    * promising avenues for linguistics and cognitive science (see Section 4.2)
+    * causal interventions, where model internals are changed
+  * Hewitt and Manning, 2019; Chi+ 2020; Voita and Titov, 2020; Manning+ 2020;
+    Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego- Simón+ 2024
+  * promising avenues for linguistics and cognitive science (see Section 4.2)
 * hE mostly English (or a handful of other langs) as the target (Blasi+ 2022)
-  * see Jumelet+ 2025, for a multilingual grammatical benchmark)
+  * see Jumelet+ 2025, for a multilingual grammatical benchmark
+  * Jumelet, J., Weissweiler, L., and Bisazza, A. (2025).
+    Multiblimp 1.0: A massively multilingual benchmark of ling minimal pairs.
+    arXiv preprint arXiv:2504.02768
 * disagreement about
   * how much language models capture more complex formal patterns
     (Vázquez Martínez+ 2023; Lan+ 2024; Someya+ 2024) or
