@@ -113,8 +113,8 @@ Agency and voice: The semantics of the Semitic templates
       participants, and I think this is the source of the ambiguity of (3)
   * the same ambiguity is attested for verbs that are not causative
 
-                     a. Mary wrote the poem on the floor.
-                     b. Mary saw Bill on the bus.
+                     a. Mary wrote the poem on the floor
+                     b. Mary saw Bill on the bus
 
 * Another argument for the complexity of causal events is based on Dowty (1979)
 
@@ -123,7 +123,7 @@ Agency and voice: The semantics of the Semitic templates
   * (5) can mean, according to Dowty, either that
     * the whole accomplishment of closing the door is repeated or that
     * only the result state is repeated
-  * not hold for causative verbs in general. 
+  * not hold for causative verbs in general
     just for particular aspectual classes
     * (6a and b) below cannot mean that
       a single human act caused more walks/gallops
@@ -139,14 +139,14 @@ Agency and voice: The semantics of the Semitic templates
   * The intensive template systematically characterizes an event as an action
   * event decomposition would not be appropriate for this type of chariz
   * the diff temlates characterize the same event by diff thematic relations:
-    * causative template: causer relation 
+    * causative template: causer relation
     * intensive template: the actor relation
 * why not lex?
   1. The existence of the template as an independent morphological unit
     lends support to the view of argument structure advocated by non-lexicalists
     eg Hale and Keyser (1993) and Kratzer (1994)
     * the external argument is an argument of a func head, here the template
-    * the thematic role of the ext arg is 
+    * the thematic role of the ext arg is
       determined by a morpheme (the template),
       in causative and intensive verbs alike
     * unexpected under lexicalist views of argument structure, where
@@ -154,7 +154,7 @@ Agency and voice: The semantics of the Semitic templates
       (Bresnan and Kanerva 1989; Pollard and Sag 1994)
   2. in lexicalist theories, the crossling identity between the middle and the
      reflexive morphemes is mystery,
-    * Chierchia’s (1989): middle and reflexive verbs have identical semantics.
+    * Chierchia’s (1989): middle and reflexive verbs have identical semantics
     * this view is not tenable, as will be shown in section 2 below
     * Lexicalist views based on Marantz (1984)
       attribute the identity of middle and reflexive morphemes to the fact that
@@ -179,47 +179,48 @@ Agency and voice: The semantics of the Semitic templates
   2. the identity of the middle morpheme with the reflexive morpheme unexpected
     * The reflexive morpheme presumably denotes a different operator REFL
     * unrelated to CAUSE (where REFL = λP λx [P(x, x)])
-* Chierchia (1989) goes in the opposite direction from that of lexical decomp
+* Chierchia (1989)
   * the transitive verb is basic, and the middle verb from is derived
+  * the opposite direction from that of lexical decomp
   * the converse of the first problem: even in languages with middle morphology,
     it is not necessarily the case that the transitive verb is unmarked; often,
     it is the transitive verb which is marked (as causative) – see (1) and (2)
-* semantic problem
-  * no way to “eliminate” the semantic contribution of the transitive verb’s
-    external argument
-  * a middle verb does not involve existentially binding the external argument
-    of the transitive verb
-    * Unlike passive
-  * The sentence _The vase broke_ does not entail that somebody/something
-    broke the vase
-  * how to derive the meaning of unaccusative _break_ from that of transitive
-    * if _x broke the vase_ would be considered false for any x,
-      we might still consider it true that the vase broke
-  * So what are the truth conditions for _The vase broke?_
+  * semantic problem
+    * no way to “eliminate” the semantic contribution of the transitive verb’s
+      external argument
+    * a middle verb does not involve existentially binding the external argument
+      of the transitive verb
+      * Unlike passive
+    * The sentence _The vase broke_ does not entail that somebody/something
+      broke the vase
+    * how to derive the meaning of unaccusative _break_ from that of transitive
+      * if _x broke the vase_ would be considered false for any x,
+        we might still consider it true that the vase broke
+    * So what are the truth conditions for _The vase broke_?
     * problem ignored in the literature, except for Chierchia’s discussion
-  * Chierchia: derive the meaning of the middle verb from that of the trans
-    * assign to _The vase broke_ the truth conditions of _The vase broke itself_
-  * arguing in the following way:
-  * There are three semantic operations which correspond to the morphological
-    reduction of any argument of a dyadic verb
-    * existential binding of the external argument: the passive,
-    * exist binding of the internal argument in unspecified object deletion,
-    * binding of the internal to the external argument in reflexivization
-  * the reduction of an argument in middle verbs
-    most closely matches reflexivization
-    * The view that the argument structure of unaccusative verbs can be traced
-      back to reflexivity (whether or not they exhibit middle morphology) is
-      also found in Grimshaw (1982), Wehrli (1986), DiSciullo and Williams
-      (1987), Brousseau and Ritter (1990)
-    * reduction, of lexical reflexivity to unaccusativity, is argued for in
-      Zribi-Hertz (1987), Marantz (1984), and Grimshaw (1990)
+    * Chierchia: assign to _The vase broke_ the truth conditions of
+      _The vase broke itself_
+    * arguing in the following way:
+    * There are three semantic operations which correspond to the morphological
+      reduction of any argument of a dyadic verb
+      * existential binding of the external argument: the passive,
+      * exist binding of the internal argument in unspecified object deletion,
+      * binding of the internal to the external argument in reflexivization
+    * the reduction of an argument in middle verbs
+      most closely matches reflexivization
+      * argument structure of unaccusative verbs be traced back to reflexivity
+        (whether or not they exhibit middle morphology)
+        also by Grimshaw (1982), Wehrli (1986), DiSciullo and Williams (1987),
+        Brousseau and Ritter (1990)
+      * reduction, of lexical reflexivity to unaccusativity, is argued for in
+        Zribi-Hertz (1987), Marantz (1984), and Grimshaw (1990)
     * criticism of this view: Reinhart and Siloni (2003)
-  * ie middle morphology attributes the instigation of the denoted event
-    to the patient itself
-    * also accounts for the observation that unaccusatives and reflexives
-      often share the middle morphology, as exemplified here from Romance
-* In Hebrew as well, middle morphology  marks both unaccusative and reflexive
-  * middle is either simple middle niCCaC or intensive middle hitCaCeC
+    * ie middle morphology attributes the instigation of the denoted event
+      to the patient itself
+    * also accounts for the observation that unaccusatives and reflexives often
+      share the middle morphology, as exemplified here from Romance
+    * In Hebrew as well, middle morphology  marks both unaccusative and refl
+      * middle is either simple middle niCCaC or intensive middle hitCaCeC
 
 ## Arguments against the reduction of unaccusativity to reflexivity 7
 
@@ -234,32 +235,31 @@ Agency and voice: The semantics of the Semitic templates
     point in the direction of unaccusativity, yet
     reflexives fail the ne-cliticization test of unaccusativity (Alsina 1996)
   * split among non-reflexive middle verbs into unaccusative and unergative
-    * In Hebrew, middle verbs which are interpreted as
-      * reflexive are unergative, eg nidxaf ‘push oneself’ and hitraxec ‘wash
-      oneself’ in (7d)
-      * non-reflexive may be either unaccusative or unergative
-        * ni bar ‘break’ and hitpareq ‘fall apart’ in (7c) are unaccusative, but
-        * many others are unergative
-    * found in Spanish as well (Aranovich 2000)
+  * In Hebrew, middle verbs which are interpreted as
+    * reflexive are unergative
+      * eg nidxaf ‘push oneself’ and hitraxec ‘wash oneself’ in (7d)
+    * non-reflexive may be either unaccusative or unergative
+      * ni bar ‘break’ and hitpareq ‘fall apart’ in (7c) are unaccusative, but
+      * many others are unergative
+  * found in Spanish as well (Aranovich 2000)
 * Two tests for unaccusativity in Hebrew (Borer and Grodzinsky 1986)
-  * Unaccusative verbs, but not unergative verbs, allow
-    * verb-first clauses 
+  * verb-first clauses: Unaccusative verbs, but not unergative verbs
 
         (9) fell-apart-MID the chair when Dani entered to-the bathroom
             *washed-MID the child when Dani entered to-the bathroom
             (hu: coming into existence)
 
-    * the addition of a Possessive Dative argument (as in 10a, b)
+  * the addition of a Possessive Dative argument (as in 10a, b)
 
-                     (10) the chair fell-apart-MID to-Ruti
+        (10) the chair fell-apart-MID to-Ruti
 
   11. resultative phrases
     may be predicated of the argument of unaccusative but not unergative verbs:
 
-                     (11) a. the chair broke-MID to pieces
-                             darabokra tört
-                          b. `*`the armies fought-MID to pieces
-                             darabokra harcolt
+        (11) a. the chair broke-MID to pieces
+                          darabokra tört
+          b. `*`the armies fought-MID to pieces
+                           darabokra harcolt
 
 * unaccusative/unergative split among middle verbs (Reinhart 1996, Simmons 1996)
   (though Reinhart & Simmons only discuss intensive-template verbs)
@@ -267,7 +267,7 @@ Agency and voice: The semantics of the Semitic templates
     whether its middle counterpart is reflexive or unaccusative:
   * agentive verbs give rise to reflexive middles, whereas
   * non-agentive verbs give rise to unaccusative middles
-* hE 
+* hE
   * agentivity of the transitive verb ?=> reflexivity of its middle form
     * in many cases it is indeed so,
       in conformity with the crosslinguistic study of Haspelmath (1993)
@@ -278,8 +278,8 @@ Agency and voice: The semantics of the Semitic templates
       * reflexive
         * a reading where the subject has others perform the action on him/her,
           or otherwise does whatever it takes to achieve the same result
-        * in general an available reading for reflexive morphology, 
-          eg in Russian, Armenian, Georgian, and Gilyak, 
+        * in general an available reading for reflexive morphology,
+          eg in Russian, Armenian, Georgian, and Gilyak,
           alongside the reflexive
           (cf. Nedyalkov and Silnitsky 1973)
         * (12a–c) illustrate for Hebrew:
@@ -294,7 +294,7 @@ Agency and voice: The semantics of the Semitic templates
     * Other unergative middles do not correspond to verbs at all, but to nouns,
        as in (14c, d), or to adjectives, as in (14e, f):
 
-    (14) meglepődik, kiábrándul, 
+    (14) meglepődik, kiábrándul,
          gyerek(es)kedik, nyul(as)kodik, lustá(l)kodik, beteg(es)kedik
 
   * middle verbs that are reflexive or unaccus depending on the argument, as
@@ -306,48 +306,150 @@ Agency and voice: The semantics of the Semitic templates
 * sum: no way to predict the unaccusative/reflexive classification of middles
   if one derives them from their transitive counterparts (p 11)
 
-* Levin and Rappaport Hovav (1995) propose to 
-  * maintain Chierchia’s transitive-to-middle direction of derivation only 
+* Levin and Rappaport Hovav (1995)
+  * maintain Chierchia’s transitive-to-middle direction of derivation only
     for a subset of verbs, those which denote “externally caused” events, but
   * reverse the direction of derivation for verbs which denote "internally cau"
-  * (16a) are “internally caused,” since 
-    it is the transitive verb which is morphologically marked 
+  * (16a) are “internally caused,” since
+    it is the transitive verb which is morphologically marked
     (with the causative template, recognizable by the prefix hi-), whereas
     intrans CaCaC, trans hiCCiC
     * fagy-aszt, olvaszt/ad, fő-z/forr-al, ereszt/d, emel-kedik, buk-tat/-ik,
       moz-gat/og, fúj/fúj, öl/hal
-  * (16b) are “externally caused,” since there 
+  * (16b) are “externally caused,”
     it is the intransitive verb which is morphologically marked
     (with a middle template recognized by the prefix ni-)
     intrans niCCaC, trans CaCaC
     * (be)fejez-ődik, tör-ik, nyit/nyílik, szak-ít/ad, hint/?-ődik, nyú-jt/lik,
-      ken/ődik, puszt-ít/-ul 
-* the distinction between internal and external causation does 
-  not seem to correlate the different morphological markings in (16) 
-  with any other linguistically significant properties. First, 
-  * the intransitive verbs in both (16a) and (16b) are unaccusative. Second,
-  * in English, the state denoted by resultative phrases has a 
-    different temporal relation to an event of internal vs external causation.
+      ken/ődik, puszt-ít/-ul
+* the distinction between internal and external causation does
+  not seem to correlate the different morphological markings in (16)
+  with any other linguistically significant properties
+  1. the intransitive verbs in both (16a) and (16b) are unaccusative
+  2. in English, the state denoted by resultative phrases has a
+    different temporal relation to an event of internal vs external causation
     * Rappaport Hovav and Levin (1998, 2000) show
     * Yet resultative phrases do not distinguish the verbs in (16) a vs b
-    * For both types of verbs, the unfolding of 
-      the result state is cotemporal with the event denoted by the verb: 
-  * in many cases both unaccusative and causative verbs are marked, which is 
+    * For both types of verbs, the unfolding of
+      the result state is cotemporal with the event denoted by the verb
+  * in many cases both unaccusative and causative verbs are marked, which is
     * a problem for any attempt to derive the intransitive and transitive verbs
       from each other:
-        intrans niCCaC,  trans hiCCiC
+        intrans niCCaC,  trans hiCCiC (18)
       * locative
-        döl/dönt, raga-d/szt, rej-t/-lik, búj-tat/-ik, elvál-ik/-aszt,
+        dől/dönt, raga-d/szt, rej-t/-lik, búj-tat/-ik, elvál-ik/-aszt,
         marad/hagy, közel-eg/-ít, belép/berak, tűn-ik/-tet, lát-szik,
         folytat/-ódik
       * experiencer
       csodál-kozik, ije-d,-szt, riad/-szt, sér-ül/-t, figyel/-mezetet,
       fesz-ül/-ít, men-t/men-ekül, megadja magát, esk-et/ü-szik p13
+* The middle verbs in (18) are not derived from the causative verbs:
+  * their middle morphology does correspond to
+    * not to a missing causer, but
+    * to a missing locative argument in (18a) and to what Pesetsky (1995) calls
+      the subject-matter argument in (18b)
+    * The middle verb is derived from
+      * not the causative verb, but rather
+      * from some basic predicate, the root. In (18),
+  * the root is dyadic, and
+    * middle morphology marks the derivation of an intransitive verb
+    * Causative morphology marks the assignment of the cause thematic role,
+      either to one of the root’s arguments or to an additional argument
+  * both intransitive and transitive verbs are marked
+* In (16) too,
+  * causative morphology marks the assignment of the cause thematic role, and
+    the fact that in (16a) the intransitive verbs are unmarked is an indication
+    of the monadic nature of the root
+  * Monadic roots are
+    * common crosslinguistically in verbs, which,
+    * describe events such as freezing, melting, going out, sinking, which are
+      * Croft (1990) and Haspelmath (1993),
+    * “spontaneous” events that “occur commonly in nature around us and do not
+      need an agentive instigator” (Haspelmath 1993, p. 103)
+  * In (16b), on the other hand, the roots are dyadic, and correspond to
+    * events which normally have instigators. Accordingly,
+    * the intransitive forms of these verbs are marked by middle morphology
+* In sum, I have shown that neither direction of derivation is tenable if the
+  * middles are not derived from the transitive, nor vice versa
+  * Analyses based on the second direction of derivation have been proposed for
+    Japanese by Jacobsen (1985), for Italian by Centineo (1995), for English by
+    Pesetsky (1995), for Hebrew by Arad (1998), and for Salish by Davis (2000)
+  * at the same time, neither is underived, which explains why
+  * both may be morphologically complex
+  * Both are derived from basic predicates (roots)
+  * The transitive verb is derived by
+    combining the root with a morpheme which contributes an external argument
+    * them role of the ext arg and template
+      * A morpheme which specifically contributes a cause
+        marks the derived verb with causative morphology
+      * A morpheme which contributes an actor external argument marks the derived
+        verb with intensive morphology
+      * These morphemes, which contribute the external argument and mark it
+        with various thematic roles are realized in Semitic as templates. This
+        iew of the templates is developed in sections 3 to 5 below
+  * A middle verb is derived by combining the root with a middle morpheme
+    * prevents the insertion of a new argument (the external argument)
 
 # 3 Semitic morphology 13
 
 # 4 Action and causality as affecting valence 24
 
 # 5 Action and causality as components of verb meaning
+
+# 6 the passive morpheme
+
+# 7 refl read of a middle <~ middle morpheme assign agent to the root’s argument
+
+# 8 Conclusion
+
+* we: construction of verbs from roots and functional heads
+  * literature: One functional head is the light verb v
+    * introduces the Agent
+  * The present work:
+    two additional kinds of functional heads
+    * agency heads and voice heads
+    * account for the two orthogonal semantic dimensions in the derivation of
+    * mirrored by two morphological dimensions of the template system. This
+    * form-function correspondence is mediated by the syntactic structure of
+    * root and these functional heads
+* Agency heads determine
+  whether the thematic role of the external argument is Actor or Cause
+  * Neither Actor nor Cause are roles assigned by the root or the light verb v
+  * Morphologically, agency heads mark the verb with intensive or causative
+    * intensive agency head is a modifier of the root
+      * The argument of the root that it modifies is not a participant in the
+        event, but the event itself, which it classifies as an Action. The
+    * causative agency head merges with a fully constructed verb
+      * not a modifier, but introduces its own argument. For morphological
+      * incompatible with an intensive agency head,
+        since a verb cannot be formed by two different templates at the same
+* The second dimension marks the derived verb with voice morphology.  This
+  * the passive and middle voice heads
+  * The passive voice head is a modifier of the fully constructed verb, which
+    is why passive verbs are derived only if their active counterparts exist
+    * Syntactically, the domain of the passive template is the “external” part
+      of the structure. Accordingly, it
+    * the passive modifies the external argument of the verb, by assigning it
+      * thematic role of Actor. Since
+      * the Actor is indistinguishable in its entailments from the Agent of an
+      * the active and passive intensive verbs are semantically equivalent, but
+        * not true of active and passive verbs in general
+* verbs, on the other hand, are derived independently of active verbs, as
+  * the middle voice head is not a modifier of the verb, but of the root
+  * the middle voice head modifies the argument of the root, unlike the passive
+  * The middle morpheme may make the root’s argument an Agent, which
+    * explains why certain middle verbs are interpreted as reflexive
+* the agency dimension adds the marked thematic relations of Actor and Cause
+  to the unmarked thematic relation of Agent
+  * The very same relations have turned out to be relevant to the voice
+    dimension as well
+  * The passive voice head assigns the thematic role of Actor, and
+  * the middle voice head may assign the thematic role of Agent
+  * ie Voice changes the grammatical functions of arguments, and this has
+  * ie depend on thematic roles. It is therefore natural that voice operators,
+* Different grammatical operators depend on different classifications of verbs
+  * aspectual operators presuppose the stative/dynamic and the telic/atelic
+    * based on the concepts of change and culmination
+  * Voice classification is based on the concepts of action and causality
 
 # References 63
