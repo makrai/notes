@@ -1,11 +1,11 @@
 A contextual-based approach for sarcasm detection
-Nivin A. Helal, Ahmed Hassan, Nagwa L. Badr & Yasmine M. Afify
+Nivin A Helal, Ahmed Hassan, Nagwa L Badr, & Yasmine M Afify
 Scientific Reports volume 14, Article number: 15415 (2024) Cite this article
 
 # Abstract
 
-* we experimented summarizing the context into a concise short sentence. This
-  * enhancement reduced training time by 35.5% of the original time. We further
+* we experimented summarizing the context into a concise short sentence
+  * This reduced training time by 35.5%
 * exper on the News headlines dataset against the Reddit dataset, which resulted
   in 49% F1 score without context data
   * nL, with the inclusion of context data, the F1 score surged to 75%

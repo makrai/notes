@@ -41,7 +41,7 @@
 
 #### [WhiSPA: Semantically and Psychologically Aligned Whisper](https://arxiv.org/abs/2501.16344)
 with Self-Supervised Contrastive and Student-Teacher Learning
-[Rajath Rao](https://jarhatz.github.io/rajath-rao/), Adithya Ganesan, Oscar Kjell, Jonah Luby, Akshay Raghavan,+
+* [Rajath Rao](https://jarhatz.github.io/rajath-rao/), Adithya Ganesan, Oscar Kjell, Jonah Luby, Akshay Raghavan,+
 
 * Current speech encoding pipelines often rely on an additional text-based LM,
   even though SotA speech-to-text models often have a LM within. This work

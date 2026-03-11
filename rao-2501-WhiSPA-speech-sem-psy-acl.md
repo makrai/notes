@@ -1,8 +1,8 @@
-WhiSPA: Semantically and Psychologically Aligned Whisper
-  with Self-Supervised Contrastive and Student-Teacher Learning
-Rajath Rao, A Ganesan, O Kjell, J Luby, A Raghavan, S Feltman, W Ringwald,
-  RL Boyd, B Luft, C Ruggero, N Ryant, R Kotov, HA Schwartz
-ACL 2025 arXiv:2501.16344 [eess.AS]
+      WhiSPA: Semantically and Psychologically Aligned Whisper
+        with Self-Supervised Contrastive and Student-Teacher Learning
+      Rajath Rao, A Ganesan, O Kjell, J Luby, A Raghavan, S Feltman, W Ringwald,
+        RL Boyd, B Luft, C Ruggero, N Ryant, R Kotov, HA Schwartz
+      ACL 2025 arXiv:2501.16344
 
 Personal communication: jövőre lesz elérhető a korpusz
 
@@ -26,7 +26,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
   * surpasses current speech encoders
   * average error reduction of 73.4% and 83.8%, respectively
 
-# Intro
+# 1 Intro
 
 * integration of modalities is often fragmented (Lazaro+ 2021; Gu+ 2017)
 * Speech to text models, like Whisper (Radford+ 2022), are
@@ -67,7 +67,7 @@ TL;DR: a speech encoder whith similar performance to a text-based LM
     ie the same information from a text LM can be captured with the LM of the
     audio model and thus it is not necessary to pipeline another text LM
 
-# Background
+# 1 Background
 
 * Whisper (Radford+ 2022), OpenAI’s SotA automatic speech recognition (ASR)
   * alternatives such as HuBERT and Wav2Vec2-BERT
