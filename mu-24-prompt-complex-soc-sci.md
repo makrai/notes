@@ -8,96 +8,130 @@ LREC COLING 2024 Torino, Italia 2024.lrec-main.1055
 
 * training Instruction-tuned LLMs have computational demands
 * we evaluate the zero-shot performance of ChatGPT and OpenAssistant
-  in six Computational Social Science classification tasks, while also
-* we investigat the effects of various prompting strategies. Our experiments
+  in six Computational Social Science classification tasks
+* we investigate the effects of various prompting strategies
   * the impact of prompt complexity, including the effect of incorporating
-    label definitions into the prompt; use of synonyms for label names; and the
-    influence of integrating past memories during foundation model training. The
+    label definitions into the prompt
+  * use of synonyms for label names
+  * the influence of integrating past memories during foundation model training
 * in a zero-shot setting, current LLMs are unable to match the performance of
   smaller, fine-tuned baseline transformer models (such as BERT-large)
-* different prompting strategies can significantly affect classif accuracy, with
-  * variations in accuracy and F1 scores exceeding 10%
+* different prompting strategies can significantly affect classif accuracy
+  * variations in accuracy and F1 scores exceed 10%
 * from the Conclusion
-  * More detailed and complex prompts (e.g, by adding arXiv paper title and
-    few-samples) do not necessarily enhance classification performance.
+  * More detailed and complex prompts (eg by adding arXiv paper title and
+    few-samples) do not necessarily enhance classification performance
   * The selection of specific words or phrases as the class label can
-    considerably affect classification outcomes.
-* ie developing prompts for zero-shot classification presents a challenge and
+    considerably affect classification outcomes
+* ie developing prompts for zero-shot classification presents a challenge
   * we recommend testing different prompt configurations before proceeding
-  * keep in mind the 
-    * time
-   [constraints](https://developers.openai.com/api/docs/guides/rate-limits/)
+  * keep in mind the
+    * time [constraints](https://developers.openai.com/api/docs/guides/rate-limits/)
       * subtitle of the page: Understand API rate limits and restrictions
     * financial costs associated with LLMs (see Table 6)
 
 # 1. Introduction
 
-* Instruction fine-tuning (Ouyang+, 2022) has facilitated transfer learning
+* Instruction fine-tuning (Ouyang+ 2022) has facilitated transfer learning
   for Large Language Models (LLMs) to unseen tasks at scale
-* Social media analysis is an active area of research with complex, tasks which
-  can be utilised for harm reduction (Waseem+, 2017) and preventing the spread
-  of misinformation (Zubiaga+, 2018). LLMs have great potential to assist with
+* Social media analysis is an active area of research with complex tasks which
+  can be utilised for harm reduction (Waseem+ 2017) and preventing the spread
+  of misinformation (Zubiaga+ 2018). LLMs have great potential to assist
   * computational social science (CSS) tasks, both in automatic data annotation
-    and social media analysis (Kuzman+, 2023; Reiss, 2023; Törnberg, 2023)
+    and social media analysis (Kuzman+ 2023; Reiss, 2023; Törnberg, 2023)
 * understand the capabilities and limitations of the latest instruction
-  fine-tuned LLMs for addressing such CSS tasks. In this paper, we are primarily
+  fine-tuned LLMs for addressing such CSS tasks
 * research questions (RQ):
-  * (RQ 1)
-  * ? level of zero-shot performance can LLMs achieve in social media classif?
+  1. ? level of zero-shot performance LLMs can achieve in social media classif
     * compare to smaller SOTA LMs fine-tuned to the specific analysis task
-  * (RQ 2) prompt strategies for social media classification tasks in a 0-shot
-  * (RQ 3)
-    * data leakage. Was the pre-training corpus of the large model already
-* we conduct a series of controlled experiments to investigate the zero-shot
-  performance of two off-the-shelf instruction fine-tuned large language models
-  using different prompting strategies
-  * GPT-3.5-turbo (GPT), 1 the most widely used proprietary instruct fine-tuned
-  * OpenAssistant-LLaMA (LLaMAOA) (Köpf+, 2023), an open source LLM in-
-    struction fine-tuned based LLaMA (Touvron+, 2023). We use
+  2. prompt strategies for social media classification tasks in a 0-shot
+  3. data leakage. Was the pre-training corpus of the large model already?
+* we: a series of controlled experiments to investigate the zero-shot perf of
+  two off-the-shelf instruction fine-tuned LLMs using 
+  different prompting strategies
+  * GPT-3.5-turbo (GPT), the most widely used proprietary instruct fine-tuned
+  * OpenAssistant-LLaMA (LLaMAOA, Köpf+ 2023), 
+    an open source LLM instruction fine-tuned based LLaMA (Touvron+ 2023)
 * six social media analysis NLP tasks to evaluate the classification performance
   * different prompt complexity levels (including providing few-shots examples
     and publication information of benchmark datasets in the prompt)
   * baselines employing standard techniques such as fine-tuning BERT
 * Our main findings are:
-  * (i) Task-specific fine-tuned models (eg, BERT-large) still generally tend to
-    outperform LLMs in most zeroshot settings,
-    even when the fully fine-tuned model is significantly smaller
-  * (ii) Using prompting ensemble methods (eg, on synonyms) can increase the
-    performance and robustness of LLMs
-  * (iii) Detailed and complex prompting strategies are not necessary
+  1. Task-specific fine-tuned models (eg, BERT-large) still generally tend to
+     outperform LLMs in most zeroshot settings, 
+     even when the fully fine-tuned model is significantly smaller
+  1. prompting ensemble methods (eg, on synonyms) can increase the performance
+  1. Detailed and complex prompting strategies are not necessary
+
+# 2 Related work
+
+* Ziems+ (2023) sets a roadmap for employing LLMs as data annotators by
+  * prompting best practices and an evaluation of the zero-shot performance of
+    13 language models on 24 tasks in computational social sciences. In the
+  * we: a different set of benchmarks and various prompt modification strategs,
+    * replacing labels with synonyms and 
+    * incorporating arXiv paper titles.
+* financial domain: Li+ (2023) reveal that ChatGPT and GPT-4 outperform the
+  performance of supervised models, which have been fine-tuned
+* To evaluate the zero-shot performance of ChatGPT for text classification,
+  Kuzman+ (2023) compares against a fine-tuned XLM-RoBERTa model for the task of
+  automatic genre classification in English and Slovenian. They show that 
+  * ChatGPT outperforms the baseline on unseen datasets and that there is 
+  * no drop in performance when provided with Slovenian examples. 
+* Ganesan+ (2023) use Facebook posts to classify user personality traits, based
+  on openness, conscientiousness, extroversion, agreeableness, and neuroticism.
+  * GPT-3 performs poorly on binary and worse yet on tertiary ranking for each
+    trait.
+* mental health applications. 
+  * Lamichhane (2023) evaluate ChatGPT’s ability to classify stress, depression,
+    and suicidal inclination from Reddit posts.
+    * ChatGPT significantly outperforms the majority baseline
+* toxicity detection, Wang and Chang (2022) analyse GPT-3’s generative and
+  discriminative zero-shot capabilities, finding that performance is only
+  * perf slightly better than a random baseline. However, the authors argue that
+  * the generative task allows for nuanced distinction of toxicity in the,
+    somewhat subjective, binary setting.
+* Törnberg (2023) find that ChatGPT-4 outperforms non-expert annotators in
+  identifying the political affiliation of Democratic or Republican party
+  members based on their tweets during the 2020 US election. 
+* Wu+ (2023) use ChatGPT to rank the conservatism of representatives in the
+  116th US Congress through a series of pairwise match ups, showing a 
+  high correlation with DWNOMINATE scores.
+* identifying machine-generated passages.
+  * Mitchell+ (2023) propose DetectGPT, a perturbation-based zeroshot method 
+  * Su+ (2023) further develop this approach with DetectLLM-LRR and -NPR,
+    * improved efficiency and improved performance respectively.
 
 # 3 Methodology
 
 ## 3.1. Prompting Strategies
 
-* Following the prompting approaches described by Child+ (2019); Ziems+ (2023),
-  * adding instructions after the context (eg, task description) and 
-  * using constraints (eg, ‘Only reply with Bragging’ or ‘Not Bragging.’) at the
-    end. We observe that using constraints can effectively avoid cases of model
-    uncertainty (eg, ‘As an AI model, I cannot answer this question.’) and guide
-    models to generate the expected outputs.
-
-* Table 1: Prompt examples across different settings.
-  * Basic Instruction 
+* Following the prompting approaches described by Child+ (2019); Ziems+ (2023)
+  * adding instructions after the context (eg, task description) and
+  * using constraints (eg, ‘Only reply with Bragging’ or ‘Not Bragging.’) 
+    * can effectively avoid cases of model uncertainty (eg, ‘As an AI model, I
+      cannot answer this question.’) and guide models to generate the outputs
+* Table 1: Prompt examples across different settings
+  * Basic Instruction
     (ie Identify whether or not a tweet includes a bragging statement.)
     + Constraints (ie Only reply (bragging) or (not bragging).)
     + Text (eg, Tweet: Come watch me and @USER face off in 2K best of 3 series
       #braggingrights @USER you next boiiii.)
   * Basic     + T/L Desc
   * Basic Instruction
-    + T/L Desc 
+    + T/L Desc
     * Tweets that have been assigned to the class ‘pro vaccine’ express a
-      positive opinion regarding the vaccination. 
+      positive opinion regarding the vaccination
     * Tweets belonging to the ‘anti vaccine’ class express a negative opinion
-      towards COVID-19 vaccination. 
+      towards COVID-19 vaccination
     * The ‘neutral’ class mainly includes news related to the development of
       vaccines, tweets that do not express a clear opinion, such as questions
-      regarding the vaccine, informative tweets concerning vaccination.
+      regarding the vaccine, informative tweets concerning vaccination
     + Constraints + Text Few-sample
   * Basic Instruction
-    + Few-samples 
+    + Few-samples
     * Complaint: @USER @USER give the timeline by which I’ll receive my cashback
-      which I should have received by 15th October 2017.
+      which I should have received by 15th October 2017
     * Not Complaint: I just gave 5 stars to Nancy at @USER for the great service
       I received!
     + Constraints + Text Memory Recall
@@ -108,7 +142,7 @@ LREC COLING 2024 Torino, Italia 2024.lrec-main.1055
 
 ## Basic Instruction (Basic)
 
-* adding the prompt before or after the text respectively.
+* adding the prompt before or after the text respectively
 
 ## Task and Label Description (T/L Desc): Building upon the Basic Instruction
 
@@ -120,36 +154,36 @@ LREC COLING 2024 Torino, Italia 2024.lrec-main.1055
 * adding one example selected from the training set for each label.  The prompt
 * ‘Basic Instruction + Few-shot Examples + Constraints + Text’. Note that using
 
-## Memory Recall (Recall): We observe that 
+## Memory Recall (Recall): We observe that
 
-* both GPT and LLaMA-OA can recall papers published before September 2021. Since
-* arXiv papers are part of the training data of the LLMs, 
+* both GPT and LLaMA-OA can recall papers published before September 2021
+* arXiv papers are part of the training data of the LLMs,
   ~> we also include the title of the source paper in the prompt when evaluating
-* ‘Recall this paper [Paper Title] + Basic Instruction + Constraints + Text’.
-* only perform experiments on datasets published before September 2021. For
-* we examine the variations in performance across different checkpoints 
+* ‘Recall this paper [Paper Title] + Basic Instruction + Constraints + Text’
+* only perform experiments on datasets published before September 2021
+* we examine the variations in performance across different checkpoints
   to assess whether instruction fine-tuning might influence the efficacy of the
   classification task
 
 ## 3.2. Synonyms
 
-* Appropriate synonyms were selected by consulting https://www.thesaurus.com.
+* Appropriate synonyms were selected by consulting https://www.thesaurus.com
 * we substitute the names of each class with words that mean the same or similar
-* eg offensive ~> ‘hateful’, ‘toxic’, and ‘abusive’ to replace the original
+* eg offensive ~> ‘hateful’, ‘toxic’, and ‘abusive’
 * two ensemble learning approaches to improve predictive performance by
-  combining the outputs from all synonyms settings for each dataset: • 
+  combining the outputs from all synonyms settings for each dataset
   * Ensemble Majority: We select the category that has been selected the most
-    times across all synonym experiments.
+    times across all synonym experiments
   * Ensemble All Agreed: a stricter setting that considers only model outputs
     that are in the same category (i.e., Complaint, Criticism, dissatisfac-
     tion, etc.) using all synonyms. For example, we consider the LLM that uses
     all synonyms predicted as complaints, otherwise they are considered
-    non-complaints. We only report this metric for datasets with binary classes.
+    non-complaints. We only report this metric for datasets with binary classes
 
 # 6 Results (Sarcasm)
 
 | Model                         | Accuracy |   F1 |
-| ----------------------------- | -------: | ---: |
+| ----------------------------| -------: | ---: |
 | Logistic Regression           |     76.1 | 53.5 |
 | BERT-large                    |     78.9 | 58.4 |
 | GPT Basic After               |     74.3 | **65.8** |
@@ -168,29 +202,26 @@ LREC COLING 2024 Torino, Italia 2024.lrec-main.1055
 
 # 7. Error Analysis
 
-* an error analysis focusing on shared errors across all synonym settings
-  following (Ziems+, 2023).
-* We manually check these wrong predictions and observe that some unanimous
-  errors (Ziems+, 2023) (ie when the model agreed on an incorrect answer using
-  different synonyms) are caused by incorrect or controversial ground truth
+* focusing on shared errors across all synonym settings following (Ziems+ 2023)
+* We manually check these wrong predictions 
+  * unanimous error (Ziems+ 2023) := when the model agreed on an incorrect
+    answer using different synonyms
+  * some unanimous errors  are caused by incorrect or controversial ground truth
   * tab 5: the number of wrong predictions from the synonyms experiments on GPT
 * On the other hand, we observe that LLaMA-OA often defaults to the majority
-  * ie ‘not a bragging’ and ‘not sarcasm’, which leads to 
-  * higher accuracy but a lower macro-F1 measure.
+  * ie ‘not a bragging’ and ‘not sarcasm’
+  * higher accuracy but a lower macro-F1 measure
 * LLMs can still be utilised as data annotation tools (combined with human)
   * and also to identify incorrect annotations
 
 # Limitations and Future Work
 
-* tasks (such as Question&Answering and Named Entity Recognition) would be
-* extend our experiments in the future to include more SOTA LLMs of various
-  sizes
-  * LLMs, such as GPT-4 13 and Mistral (Jiang+, 2023), achieve better performance
+* more SOTA LLMs of various sizes eg GPT-4 13 and Mistral (Jiang+ 2023)
 * alterations of the prompts
-  * Arora+ (2022), has considered prompt aggregation as well as 
+  * Arora+ (2022), has considered prompt aggregation as well as
   * using LLMs to auto-generate prompts
-* chain-of-thought prompting, which improves LM performance by 
-  encouraging the LLM to output its intermediate reasoning steps 
-  (Wei+, 2022; Suzgun+, 2022)
-* potential data leakage issues (Ziems+, 2023) by testing various prompts to
+* chain-of-thought prompting, which improves LM performance by
+  encouraging the LLM to output its intermediate reasoning steps
+  (Wei+ 2022; Suzgun+ 2022)
+* potential data leakage issues (Ziems+ 2023) by testing various prompts to
   verify whether our test sets have been exposed to GPT and OA
