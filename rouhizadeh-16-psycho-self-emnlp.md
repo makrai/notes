@@ -34,8 +34,8 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 
 * pronoun use with regard to age, gender, and personality types
   * “The Secret Life of Pronouns” summarizing such studies (Pennebaker, 2011)
-  * Pennebaker+ (2003) and Chung & Pennebaker (2007) found that the use of
-    self-references (i.e. ‘I’, ‘me’) decreases over age.
+  * Pennebaker+ (2003) and Chung & Pennebaker (2007):
+    the use of self-references (ie ‘I’, ‘me’) decreases over age
   * Pennebaker+ (2003), and Argamon+ (2007) showed that females use
     significantly more first-person singular personal pronouns
   * first-person singular pronouns are positively correlated with depress sympt
@@ -97,7 +97,7 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
   of mentioning a first person singular pronoun in a given context
 * The overall usage of a first person singular pronoun: P (1p) = P (P N = 1p)
 * The probability in the nsubj, and the dobj positions: P (1p|r)
-* The probability in the nsubj[/dobj] positions of a given verb category
+* The probability in the nsubj/dobj positions of a given verb category
 
 # Evaluation
 
@@ -107,11 +107,11 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 ## Replication of the gender, age, and depression effects
 
 * linear and logistic regression to correlate gender, age, and depression
-  with P (1p) (first-person singular pronoun use)
-* We control for age in the case of gender, gender in the case of age, and both
-  gender and age in the case of depression
-  * by including them as covariates in the regression and reporting the unique
-    coefficient for the variable in question
+  with (first-person singular pronoun use P(1p)
+* We control for age in the case of gender, gender in the case of age, and 
+  both gender and age in the case of depression
+  by including them as covariates in the regression and 
+  reporting the unique coefficient for the variable in question
   * Logistic regression is used for gender, since it is binary, while
   * linear regression is used for the continuous age and depression variables
 * we found significant relationships with gender (β = .11, p < .001),
@@ -125,21 +125,20 @@ Masoud Rouhizadeh, Lyle Ungar, Anneke Buffone, H Andrew Schwartz
 
 * Table 1 reports
   * the area under the ROC curve (AUC) for gender prediction and the
+    * AUC evaluates the class probabilities of test instances
   * Mean Square Error (MSE) for predicting age and depression
-* AUC evaluates the class probabilities of test instances
 * classifier
   * linear-SVM in the case of gender, and
   * ridge-regression in the case of depression
-* all the features that take context into account outperform P (1p) which is
+* all the features that take context into account outperform P(1p)
 * best performance by utilizing verb categories
   * integrating sentiment helps in nearly all verb categorization approaches
   * verb clusters: gains using the data-driven CCA-based verb clustering are
     not as large as that from Levin’s linguistically-driven classes
-* In the case of correlating behavior with a psychological measure, Pearson
-  coefficients
-  * above .1 are considered noteworthy and
-  * above .3 are considered approaching a “correlational upper-bound"
+* In the case of correlating behavior with a psychological measure
+  * Pearson above .1 are considered noteworthy and
+  * Pearson above .3 are considered approaching a “correlational upper-bound"
     (Meyer+ 2001)
 * Tables 2, 3, and 4 show the most predictive features,
-  using the best performing clustering method (i.e. Levin & Sentiment)
-  * in the case of age and gender  the direction completely changes
+  using the best performing clustering method (ie Levin & Sentiment)
+  * in the case of age and gender, the direction completely changes

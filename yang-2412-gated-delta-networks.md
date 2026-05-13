@@ -9,9 +9,9 @@ arXiv:2412.06464 ICLR 2025
     * delta update rule for precise memory modifications
 * We observe that these mechanisms are complementary:
   * gating enables rapid memory erasure while
-  * the delta rule facilitates targeted updates. Building on this insight,
+  * the delta rule facilitates targeted updates
 * we introduce the gated delta rule and develop
-  * a parallel training algorithm optimized for modern hardware. Our proposed
+  * a parallel training algorithm optimized for modern hardware
   * consistently surpasses existing models like Mamba2 and DeltaNet across
     multiple benchmarks, including
     language modeling, common-sense reasoning, in-context retrieval, 
