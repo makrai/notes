@@ -1,4 +1,4 @@
-Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learn
+Adapters: A Unified Library for Parameter-Efficient and Modular Transfer
 Clifton Poth, Hannah Sterz, Indraneil Paul, Sukannya Purkayastha,
   Leon Engländer, T Imhof, I Vulić, S Ruder, I Gurevych, J Pfeiffer
 EMNLP 2023: Systems Demonstrations arXiv:2311.11077 [cs.CL]

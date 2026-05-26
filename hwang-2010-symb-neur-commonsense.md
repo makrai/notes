@@ -17,10 +17,11 @@ AAAI 12 October 2020 arXiv:2010.05953 [cs.CL]
   the first large-scale pairwise study of commonsense knowledge resources
 * ATOMIC 2020 is better suited for training knowledge models that can generate
   accurate, representative knowledge for new, unseen entities and events
-* human evaluation, we show that
-  the few-shot performance of GPT-3 (175B parameters), while impressive,
-  remains ~12 absolute points lower than a BART-based knowledge model trained
-  on ATOMIC 2020 despite using over 430x fewer parameters
+* human evaluation:
+  * impressive few-shot performance of GPT-3 (175B parameters)
+  * hE ~12 absolute points lower than a 
+    BART-based knowledge model trained on ATOMIC 2020 
+    despite using over 430x fewer parameters
 
 # 1 Intro
 
