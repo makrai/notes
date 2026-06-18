@@ -22,8 +22,8 @@ LREC 2022 Marseille, France
 # 1 Intro
 
 * intent of sarcasm: appear humorous, ridicule someone, or to express contempt
-  * verbal and non-verbal cues (pitch, tone, emphasis in speech, and body
-    language in video)
+  * verbal and non-verbal cues 
+    (pitch, tone, emphasis in speech, and body language in video)
   * Even for humans, understanding the underlying emotion is challenging without
     the audio/video or the context of the conversation
 * dataset
