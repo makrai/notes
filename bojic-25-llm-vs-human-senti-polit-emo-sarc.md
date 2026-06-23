@@ -33,3 +33,21 @@ the proliferation of online communication provides rich insights, extracting
 meaning from vast textual data remains resource intensive. Latent content
 analysis, which involves decoding the underlying meanings, sentiments, and
 nuances in text, is crucial for understanding
+
+# Method
+
+## Annotation sentences
+
+* The textual items used for annotation 40 were curated and, where appropriate,
+  adapted from existing literature and established datasets commonly used 
+  * This approach ensured that the sentences were representative of the types of
+    content typically encountered in real-world situations and aligned our study
+    with prior research methodologies.
+* datasets and research studies in NLP and sentiment analysis. These included
+  * the Stanford Sentiment Treebank 12 and the Sentiment140 dataset 41 for
+    sentiment analysis; studies by 
+  * Iyyer et al. 42 for political ideology in text; the 
+  * EmoBank corpus 43 for emotional intensity; and 
+  * the Sarcasm Corpus V2 44 for sarcasm detection. By using these sources, we
+* For each dimension, we developed 25 unique sentences, resulting in a total of
+  100 sentences for analysis.

@@ -30,7 +30,7 @@ https://github.com/anoymous92874838/text-adv-detection
     * only few NLP efforts have been made in techniques for this sole purpose
   * defense intends to predict the correct output of the adversarial input
     * some progress in NLP (Zhou+ 2021; Keller+ 2021; Jones+ 2020)
-* applications, in which alerting the victim of an adversarial sample suffices
+* applications: alerting the victim of an adversarial sample
   * eg review sentiment analysis, news headline classification
   * gain information about the true data-generating population (eg consumers,
     news media, etc), rather than the adversary

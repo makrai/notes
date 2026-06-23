@@ -30,17 +30,17 @@ SemEval | `*`SEM 2018
 
 # 1 Introduction
 
-* The development of the social web has stimulated the use of figurative and
-  creative language, including irony, in public (Ghosh+ 2015)
+* The development of the social web has stimulated the use of 
+  figurative and creative language, including irony, in public (Ghosh+ 2015)
   * philosophical/psychological perspective,
     discerning the mechanisms that underlie ironic speech
     improves our understanding of human reasoning and communication
-  * machine learning community . Although an
+  * machine learning
   * definition
     * unanimous definition of irony is still lacking in the literature
     * a trope whose actual meaning differs from what is literally enunciated
   * important implications for NLP (Wallace, 2015)
-    * NLP aims to understand and produce human language. In fact, automatic
+    * NLP aims to understand and produce human language
   * potential for various applications in the domain of text mining,
     especially those that require semantic analysis, such as
     * author profiling, detecting online harassment, and sentiment analysis

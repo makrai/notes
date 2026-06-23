@@ -4,6 +4,7 @@ LREC 2018 khodak-etal-2018-large
 
 # Abstract
 
+* self-annotated: comments from Reddit containing the `\s` (sarcasm) tag
 * We introduce the Self-Annotated Reddit Corpus (SARC), a large corpus
 * 1.3 million sarcastic statements — 10 times more than any previous dataset —
   and many times more instances of non-sarcastic statements,
@@ -36,10 +37,10 @@ LREC 2018 khodak-etal-2018-large
 * given a post and a sequence of comments, determine which comments among the
 * measured by average precision, recall and F 1 scores
 * we first remove all comments that are not complete sentences and not between 2
-  and 50 tokens long, allowing for cleaner comments in the evaluation. Although
+  and 50 tokens long, allowing for cleaner comments in the evaluation
   * still largely non-sarcastic
-* each datapoint must correspond to a thread where at least one sarcastic
-  annotation occurred
+* each datapoint must correspond to a thread where
+  at least one sarcastic annotation occurred
 * 8.44 million sequences, the average proportion of sarcastic responses is 28.1%
 * Figure 3: Score distributions of sarcastic and non-sarcastic comments in the
   raw SARC dataset

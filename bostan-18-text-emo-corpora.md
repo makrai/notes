@@ -299,7 +299,7 @@ github.com/sarnthil/unify-emotion-datasets
 
 ### Grounded-Emotions (Liu+ 2017) is built on social media
 
-* 2,557 single labeled instances published by 1,369 unique users
+* 2,557 single labeled instances published by 1,369 users
 * main goal: context of other factors including
   weather, news events, social network, user predisposition, and timing
 * The set of labels is happy and sad

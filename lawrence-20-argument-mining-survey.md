@@ -234,7 +234,7 @@ identify topics where opinions are polarized
     each use their own formats for its annotation and storage. At the moment,
 * larger “semi-structured” argumentative data sources. The most striking example
   * gathered from the ChangeMyView (CMV) Reddit subcommunity (Tan+ 2016; Hidey
-    and McKeown 2018; Musi, Ghosh, and Muresan 2018). These data take the form
+    and McKeown 2018; Musi, Ghosh, and Muresan 2018)
   * If the original poster finds that a comment succeeds in changing their
     viewpoint, they can reply with a ‘delta’ symbol indicating this. Although
   * not strictly argumentative, there are strong indicators of arg structure:

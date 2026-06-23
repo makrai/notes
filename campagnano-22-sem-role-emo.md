@@ -8,7 +8,7 @@ https://github.com/SapienzaNLP/srl4e
 
 * a single sentence may express multiple, sometimes contrasting, sentims & emos
   * each with its own experiencer, target and/or cause
-  * manually annotated data in order to investigate the capabilities
+  * manually annotated data
   * systems to capture the semantic constituents of emos
   * hE datasets are heterogeneous in size, domain, format, splits, emo categs,
     and role labels ~> comparisons across different works are difficult
