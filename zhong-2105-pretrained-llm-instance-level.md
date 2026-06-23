@@ -1,7 +1,7 @@
 Are Larger Pretrained Language Models Uniformly Better?
   Comparing Performance at the Instance Level
 Ruiqi Zhong, Dhruba Ghosh, Dan Klein, Jacob Steinhardt
-ACL 2021 Findings arXiv:2105.06020 [cs.CL]
+ACL 2021 Findings arXiv:2105.06020
 
 all the pretrained models, model predictions, and code here:
 https://github.com/ruiqi-zhong/acl2021-instance-level
@@ -25,7 +25,7 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
 
 # 1 Intro
 
-* Are larger models better at every instance, or are they better at some
+* Are larger models better at every instance
   * Hendrycks+ (2020) and Desai and Durrett (2020) find that
     larger pretrained models consistently improve out-of-distribution perf,
     which implies that they might be uniformly better at a finer level
@@ -40,8 +40,8 @@ https://github.com/ruiqi-zhong/acl2021-instance-level
   * hE predictions are noisy at the instance level
   * On MNLI in-domain development set, even the same architecture with diff
     finetuning seeds leads to different predictions on ∼8% of the instances
-  * This is due to under-specification (D’Amour+ 2020)
-    * ie there are multiple solutions that can minimize the training loss
+  * under-specification (D’Amour+ 2020): 
+    there are multiple solutions that can minimize the training loss
   * the accuracy improvement from our BertBASE 1 to BertLarge is 2%,
   => most signals across different model sizes will be due to random seeds
 * we define instance accuracy:
