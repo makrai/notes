@@ -23,14 +23,13 @@ https://github.com/iabufarha/iSarcasmEval
 
 # 1 Intro
 
-* Sarcasm is a form of verbal irony that occurs when there is ... (Wilson, 2006)
+* Sarcasm is a form of verbal irony when there is a discrepancy (Wilson, 2006)
 * can be disruptive of computational systems that harness this data to perform
   eg sentiment analysis, opinion mining, author profiling, and harassment
   detection (Liu, 2012; Rosenthal+ 2014; Maynard and Greenwood, 2014; Van Hee+
   2018)
-  * in SemEval, in particular, Rosenthal+ (2014) show a significant drop in
-    sentiment polarity classification performance when processing sarcastic
-    tweets, compared to non-sarcastic ones
+  * in SemEval Rosenthal+ (2014) show a significant drop in sentiment polarity
+    classif perf when processing sarcastic tweets, compared to non-sarcastic
   * Such systems drive marketing, administration, and investment decisions
     (Medhat+ 2014). In the context of
   * Arabic, Abu Farha and Magdy (2021) show the effect of sarcasm on Arabic
@@ -85,8 +84,8 @@ https://github.com/iabufarha/iSarcasmEval
       Verbal irony as implicit display of ironic environment:
         Distinguishing ironic utterances from nonirony
       Journal of Pragmatics, 32(12):1777– 1806
-* Previous shared tasks in sarcasm detection (Van Hee+ 2018; Ghanem+ 2019; Ghosh
-  and Muresan, 2020; Abu Farha+ 2021)
+* Previous shared tasks in sarcasm detection
+  (Van Hee+ 2018; Ghanem+ 2019; Ghosh and Muresan, 2020; Abu Farha+ 2021)
   * datasets annotated via the two methods discussed above
   * reactive supervision (Shmueli+ 2020) is a third method, which aims to
     collect sarcastic examples based on the conversation dynamics, addressing
