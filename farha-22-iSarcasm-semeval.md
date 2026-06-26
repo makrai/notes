@@ -5,6 +5,9 @@ SemEval 2022 Seattle, United States abu-farha-etal-2022-semeval
 
 https://github.com/iabufarha/iSarcasmEval
 
+Laci: az angol train pontosan megegyezik az iSarcasm-mal. 
+
+
 # Abstract
 
 * iSarcasmEval is the first shared task to target intended sarcasm detection:
@@ -25,16 +28,15 @@ https://github.com/iabufarha/iSarcasmEval
 
 * Sarcasm is a form of verbal irony when there is a discrepancy (Wilson, 2006)
 * can be disruptive of computational systems that harness this data to perform
-  eg sentiment analysis, opinion mining, author profiling, and harassment
-  detection (Liu, 2012; Rosenthal+ 2014; Maynard and Greenwood, 2014; Van Hee+
-  2018)
+  eg sentiment analysis, opinion mining, author profiling, & harassment detect
+  (Liu, 2012; Rosenthal+ 2014; Maynard and Greenwood, 2014; Van Hee+ 2018)
   * in SemEval Rosenthal+ (2014) show a significant drop in sentiment polarity
     classif perf when processing sarcastic tweets, compared to non-sarcastic
   * Such systems drive marketing, administration, and investment decisions
     (Medhat+ 2014). In the context of
   * Arabic, Abu Farha and Magdy (2021) show the effect of sarcasm on Arabic
     sentiment analysis systems, where the performance dropped significantly
-* label texts for sarcasm:
+* labeled texts for sarcasm:
   * distant supervision (Ptáček+ 2014; Khodak+ 2018; Barbieri+ 2014), where
     texts are considered sarcastic if they meet predefined criteria, such as
     including the tag #sarcasm
@@ -98,26 +100,26 @@ https://github.com/iabufarha/iSarcasmEval
   Rajadesingan+ 2015; Bamman and Smith, 2015; Amir+ 2016; Hazarika+ 2018;
   Oprea and Magdy, 2019) has focused exclusively on the English language and,
   * sociocultural aspects of sarcastic communication (Oprea and Magdy, 2020b),
-  * unclear if models trained on English could generalise to other languages. To
-* small amount of work on Arabic
-  (Karoui+ 2017; Ghanem+ 2019; Abbes+ 2020; Abu-Farha and Magdy, 2020) relies
+  * unclear if models trained on English could generalise to other languages
+* Arabic: small amount of work 
+  (Karoui+ 2017; Ghanem+ 2019; Abbes+ 2020; Abu-Farha and Magdy, 2020)
   * either manual labelling or distant supervision
     * distant supervision is the work of Karoui+ (2017), who consider Arabic
       equivalents of #sarcasm, such as # éK Q m , , to collect sarcastic tweets
     * (Abbes+ 2020; Ghanem+ 2019; Abu-Farha and Magdy, 2020; Abu Farha+ 2021),
       used either manual labelling, or a mix between manual labelling and
-      distant supervision. When working with Arabic data, these two labelling
+      distant supervision
   * many dialects that vary both across and within countries
     * predefined tags in modern standard Arabic (MSA) can thus lead to a
-      plethora of false negatives. Similarly
-    * the third-party annotators might be unfamiliar with the dialect of the
+      plethora of false negatives
+    * the third-party annotators might be unfamiliar with the dialect
 
-# 3 The data labelling method, and statistics on the resulted datasets, in
+# 3 The data labelling method, and statistics on the resulted datasets
 
 ## 3.1 Overview
 
 * the sarcasm labels for texts are provided by the authors themselves, thus
-  eliminating labelling proxies (in the form of predefined tags, or thirdparty
+  eliminating labelling proxies (in the form of predefined tags, or thirdparty)
   * one dataset in English and one in Arabic
 * we also ask the author to rephrase the text to convey the same intended
   message without using sarcasm
@@ -125,7 +127,7 @@ https://github.com/iabufarha/iSarcasmEval
   into one of the
   categories of ironic speech defined by Leggitt and Gibbs (2000):
   sarcasm, irony, satire, understatement, overstatement, and rhetorical question
-* For the Arabic dataset, we also include the dialect label of the text. As
+* For the Arabic dataset, we also include the dialect label of the text
 
 ## 3.2 Data Collection
 
@@ -140,9 +142,9 @@ https://github.com/iabufarha/iSarcasmEval
   * asking for tweets directly resulted in low quality data
   * we used the Appen crowdsourcing platform 3 to recruit native Arabic
   * we asked the participants to write a short sarcastic text on the spot
-  * As non-sarcastic examples, we used a subset of the ArSarcasm-v2 dataset (Abu
-    Farha+ 2021), mainly those tweets that were annotated as nonsarcastic with
-    100% confidence, i.e. labelled nonsarcastic by all annotators
+  * As non-sarcastic examples, we used a subset of ArSarcasm-v2 (Abu Farha+ 21),
+    mainly those tweets that were annotated as nonsarcastic with 100% confid, 
+    ie labelled nonsarcastic by all annotators
 * For each sarcastic text in both the English and the Arabic datasets, we also
   asked participants to
   * provide an explanation of why the text was sarcastic, and a
@@ -179,8 +181,8 @@ https://github.com/iabufarha/iSarcasmEval
       differences between sarcasm and irony (Andalib and Far Shirazi, 2019)
     * Ali Andalib and Seyyed Heydar Far Shirazi. 2019
       Controversy over the concept of irony (=al-mophareqeh) from sarcasm to
-      contradiction; a linguistic and semantic approach. Researches in Arabic
-      language, 11(20):121–134
+      contradiction; a linguistic and semantic approach. 
+      Researches in Arabic language, 11(20):121–134
     * dialects: it would have been a challenging task to recruit linguists who
       are familiar with available dialects
 
@@ -217,23 +219,23 @@ English:
 | Split            | Total | Sarcastic | Non-sarcastic |
 | -----------------| ----: | --------: | ------------: |
 | Train            | 4,335 |       867 |         3,468 |
-| Test (Subtask A) | 1,400 |       200 |         1,200 |
-| Test (Subtask C) |   400 |       200 |           200 |
+| Test, Subtask A  | 1,400 |       200 |         1,200 |
+| Test, Subtask C  |   400 |       200 |           200 |
 
 * rephrases can be used as additional non-sarcastic examples. The division of
 
 | Split            | Sarcasm | Irony | Satire | Understatement | Overstatement | Rhetorical Question |
 | -----------------| ------: | ----: | -----: | -------------: | ------------: | ------------------: |
 | Train            |     713 |   155 |     49 |              1 |            40 |                 101 |
-| Test (Subtask B) |     180 |    20 |     10 |             10 |            11 |                  11 |
+| Test, Subtask B  |     180 |    20 |     10 |             10 |            11 |                  11 |
 
 Arabic:
 
 | Split            | Total | Sarcastic | Non-sarcastic |
 | -----------------| ----: | --------: | ------------: |
 | Train            | 3,103 |       745 |         2,358 |
-| Test (Subtask A) | 1,400 |       200 |         1,200 |
-| Test (Subtask C) |   400 |       200 |           200 |
+| Test, Subtask A  | 1,400 |       200 |         1,200 |
+| Test, Subtask C  |   400 |       200 |           200 |
 
 | Dialect      | Total | Sarcastic | Non-sarcastic |
 | -------------| ----: | --------: | ------------: |
@@ -243,8 +245,8 @@ Arabic:
 | Gulf         |   278 |        36 |           242 |
 | North Africa |   195 |       124 |            71 |
 
-* the majority of the sarcastic examples are in the Egyptian dialect (Nile
-  Basin). In the future, we hope to have a higher coverage of the other dials
+* the majority of the sarcastic examples are in the Egyptian dial (Nile Basin)
+* In the future, we hope to have a higher coverage of the other dialects
 
 ## 4.3 Evaluation Metrics
 
@@ -269,7 +271,7 @@ Arabic:
 * Subtask B received 22 submissions and
 * subtask C received 16 submissions for English and 13 for Arabic. The following
 
-## 5.2 Subtask A (Sarcasm Detection) English. Tab 6
+## 5.2 Subtask A: Sarcasm Detection in English, Tab 6
 
 * two baseline models for subtask A
   * bert-base-uncased (Devlin+ 2019) to produce
@@ -286,7 +288,7 @@ Arabic:
   * preprocessing step, we remove all hashtags and urls, and
     replace user handles with the token @user
 
-### the team ranking first, stce (Yuan+ 2022), achieved an F 1 of 0.605
+### The team ranking first, stce (Yuan+ 2022), achieved an F 1 of 0.605
 
 * an ensemble learning approach with a combination of hard and soft voting
   between three models, all based on the transformer architecture:
@@ -298,7 +300,9 @@ Arabic:
 * They experiment with several strategies to achieve their results
   * public datasets, including
     * iSarcasm (Oprea and Magdy, 2020a),
-    * the dataset published by Van Hee+  (2018), and
+    * the dataset published by Van Hee+ (2018), and
+      Cynthia Van Hee, Els Lefever, and Véronique Hoste.
+      SemEval-2018 task 3: Irony detection in English tweets
     * a sample of texts from
       `headacheboy/data-of-multimodal-sarcasm-detection`
   * they extract statistical and text features that they concatenate to the
@@ -320,17 +324,16 @@ Arabic:
   data provided here
 * label smoothing
 
-## 5.3 Subtask A (Sarcasm Detection) Arabic. Tab 7
+## 5.3 Subtask A: Sarcasm Detection in Arabic. Tab 7
 
-* extensive use of Arabic pre-trained language models such as MARBERT
-  (Abdul-Mageed+ 2021). We created
+* extensive use of Arabic pre-trained LMs such as MArBert (Abdul-Mageed+ 2021).
 * two baselines for this task, the first is a Bert-based model and the other is
   an SVM model. We
   * fine-tuned MARBERT for 6 epochs with a learning rate of 5e-5
   * SVM model, we used uni-gram features
   * Both models were trained without the non-sarcastic phrasing
 * leaderboard
-  1. the top team CS-UM6P (El Mahdaouy+ 2022a) achieved an F 1 sarcastic of 0.563
+  1. the top team CS-UM6P (El Mahdaouy+ 2022a) achieved an F 1 sarc of 0.563
     * MARBERT, attention layer, and a classifier. They applied the attention to
     * The classifier, which is composed of one hidden layer, is
       fed the concatenation of the pooled output of the encoder and the
@@ -349,7 +352,7 @@ Arabic:
   * few of the participants relied on hand-engineered features along with
     conventional classifiers such as SVM and Decision Trees
 
-## 5.4 Subtask B (Sarcasm Category) Tab 8
+## 5.4 Subtask B: Sarcasm Category, Tab 8
 
 * two baseline models for subtask B. The first baseline, listed as
   * majority in the table, always predicts that the input reflects the ironic
@@ -384,11 +387,14 @@ Arabic:
   3. MaChAmp, achieved a macro F-score of 0.0851. They
     * first pretrain a RemBERT (Chung+ 2020) multi-task model across all the
       tasks
-    * Then, they re-train a model for each task individually. They use the
-    * hyperparameters of MaChAmp v0.3(van der Goot+ 2021), which were finetuned
-      on the xTREME benchmark (Hu+ 2020)
+      Hyung Won Chung, Thibault Févry, Henry Tsai, Melvin Johnson, S Ruder.
+      Rethinking embedding coupling in pre-trained language models.  
+      CoRR, abs/2010.12821.
+    * Then, they re-train a model for each task individually
+    * hyperparameters of MaChAmp v0.3 (van der Goot+ 2021), 
+      which were finetuned on the xTREME benchmark (Hu+ 2020)
 
-## 5.5 Subtask C (Pairwise Sarcasm Identification) ~~ English. Tab 9
+## 5.5 Subtask C: Pairwise Sarcasm Identification in English. Tab 9
 
 * baselines similar to those from subtask A, but modified the input
   Specifically, given a sarcastic text and its rephrase, we produced two
@@ -406,13 +412,13 @@ Arabic:
   1. The team ranking second, Naive, achieved an accuracy of 0.855. They used a
      RoBERTa model, initialised with the RoBERTa-large checkpoint, with a
      classification head appended
-  1. The team ranking third, YNU-HPCC (Zheng+ 2022), an accuracy of 0.805.  They
-     also used a RoBERTa model. They did
-     * not use any external datasets during training. We suspect the difference
-       in performance between the second and third teams to be, at least in
-       part, the result of data preprocessing and hyperparameter optimisation
+  1. The team ranking third, YNU-HPCC (Zheng+ 2022), an accuracy of 0.805
+    * also a RoBERTa model
+    * not use any external datasets during training
+  * We suspect the difference in performance between the second and third teams
+    to be, at least in part, the result of data preprocessing and hyperparam opt
 
-## 5.6 Subtask C (Pairwise Sarcasm Identification) ~~ Arabic. Table 10
+## 5.6 Subtask C: Pairwise Sarcasm Identification in Arabic. Table 10
 
 * baselines, we utilised the models from subtask A. Since the task is to decide
 * leaderboard
