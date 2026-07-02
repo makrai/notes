@@ -22,7 +22,7 @@ in Cambria, Das, Bandyopadhyay, and Feraco eds
       lists of words associated with affect categories
   5. create large lexicons of term–affect associations
   6. negation words and degree adverbs
-  7. metaphors, analogies, sarcasm, irony aka figurative language
+  7. figurative language: metaphors, analogies, sarcasm, irony
   8. other languages
   9. emerging areas where sentiment analysis is applied
 * Throughout the chapter we highlight some of the best approaches

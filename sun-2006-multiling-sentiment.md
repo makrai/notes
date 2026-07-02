@@ -1,7 +1,7 @@
 v1: Ranking Transfer Languages with Pragmatically-Motivated Features
   for Multilingual Sentiment Analysis
-v2: Cross-Cultural Similarity Features for Cross-Lingual Transfer Learning of
-  Pragmatically Motivated Tasks
+v2: Cross-Cultural Similarity Features 
+  for Cross-Lingual Transfer Learning of Pragmatically Motivated Tasks
 J Sun, H Ahn, CY Park, Y Tsvetkov, DR Mortensen
 arXiv preprint arXiv …, 2020 arxiv.org
 

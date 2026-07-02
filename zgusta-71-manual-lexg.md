@@ -51,7 +51,9 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
   3. range of applic 41
     * stipend (teacher, clergyman) vs salary (official)
     * corned: only beef
+
 ## 4 The Actual Designation in the Context 47
+
 * general and concrete meaning
 ### divergences from systematic meaning
 * borderline between figurative (metaphorical) and lexical
@@ -62,6 +64,7 @@ A pdf szerinti oldalszámok 4-gyel kisebbek
 ### semantic change
 
 ## 5 Polysemy 60
+
 * crane (daru)
 ### direct sense
 * devour ((fel)fal) eat, zabál állat > ember, elpusztít

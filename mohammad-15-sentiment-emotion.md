@@ -102,9 +102,9 @@ Emotion Measurement 2015
 
 # 5 Capturing Term–Sentiment Associations 18
 
-# 6 modifiers such as negation and degree adverbs on sentiment 22
+# 6 Modifiers such as negation and degree adverbs on sentiment 22
 
-# 7 figurative language: metaphors, analogies, sarcasm, irony 23
+# 7 Figurative language: metaphors, analogies, sarcasm, irony 23
 
 * some preliminary sentiment analysis work focused on figurative language
 

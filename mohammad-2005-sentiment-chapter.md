@@ -272,11 +272,12 @@ ratings range from -5 (most negative) to +5 (most positive) in steps of 1.32
 # 11. Summary and Future Directions
 
 * future: sentiment modifiers such as negators and modals
-  * figurative and metaphoric language, as well as cross-lingual sentiment
-  * understanding the relationships between emotions, multimodal affect
-    analysis (involving not just text but also speech, vision, physiological
-    sensors, etc), and applying emotion detection to new applications
-* NLP has always been an interdisciplinary field with strong influences from
+* figurative and metaphoric language, as well as cross-lingual sentiment
+* understanding the relationships between emotions, 
+* multimodal affect analysis (involving not just text but also 
+  * speech, vision, physiological sensors, etc), and applying emotion detection
+* new applications
+* NLP has always/in the last decade been an interdisc field with influences from
   * always: Computer Science, Linguistics, and Information Sciences
   * last decade: psychology, digital humanities, history, art, and social sci
     * sometimes attracting controversy, eg the [Digital Humanities Wars]

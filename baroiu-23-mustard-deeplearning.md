@@ -3,6 +3,8 @@
                 Alexandru-Costin Băroiu and Ștefan Trăușan-Matu
    Electronics 2023, 12(3), 666; https://doi.org/10.3390/electronics12030666
 
+It doesn't seem that the task is the detection of the context.
+
 # Abstract
 
 * Sentiment analysis and its sub-area of sarcasm detection
@@ -28,17 +30,16 @@
     * conversations modeled to determine
       * which parts of a phrase established sarcasm
       * which sentence in a multi-sentence message made it sarcastic
-* dialogue context in sarcasm detection. This method was applied by
-  * Avvaru+ [15] used transformer-based models. They used the
-    * Twitter and Reddit datasets from FigLang2020
-      * 2nd Workshop on Figurative Language Processing’s sarcasm-detection
-        shared challenge
-    * Context, response, and label fields are all included in these datasets
-    * models: long short-term memory (LSTM) [16], bidirectional LSTM (BiLSTM),
-      stacked LSTM, convolutional neural network LSTM (CNN–LSTM), bidirectional
-      encoder representations from transformers (BERT) [17], and XLNet [18]
-    * BERT was the top performing model, with BERT-5 for Reddit and
-      * BERT-7 for Twitter
+* dialogue context in sarcasm detection. This method was applied by Avvaru+ [15]
+  * Twitter and Reddit datasets from FigLang2020
+    * 2nd Workshop on Figurative Language Processing’s sarcasm-detection shared
+      challenge
+  * Context, response, and label fields are all included in these datasets
+  * models: long short-term memory (LSTM) [16], bidirectional LSTM (BiLSTM),
+    stacked LSTM, convolutional neural network LSTM (CNN–LSTM), bidirectional
+    encoder representations from transformers (BERT) [17], and XLNet [18]
+  * BERT was the top performing model, with BERT-5 for Reddit and
+    * BERT-7 for Twitter
 * Internet Argument Corpus (IAC)
   * Eke+ [19] proposed three methods to improve sarcasm recognition using IAC
     and two Twitter datasets
@@ -54,19 +55,19 @@
   * multimodal, multi-interactive, and multi-hierarchical model
   * trained on Twitter, image, image-caption, and text-in-image data
   * the brain’s perception of sarcasm requires multiple modalities
-* Alathur+ [23] studied the implications of metaphors on electronic
-  participation in healthcare, in the context of the COVID-19 pandemic
+* Alathur+ [23]
+  implications of metaphors on electronic participation in healthcare, 
+  in the context of the COVID-19 pandemic
   * a lack of automated tools and region specificity limited the use of
     metaphors for awareness assessment
-* MUStARD (Castro+ [24]) is the main publication upon which the present paper is
+* MUStARD (Castro+ [24]) is the main publication we are based upon
   * multimodal dataset for sarcasm recognition based on a famous comedy series,
   * goal of bringing the sarcasm-detection problem closer to real-life situs
   * tagged audiovisual utterances, each with its own context
   * incorporate sarcastic indications into the analysis, such as
     drawn-out syllables, shifts in tone, or straight expressions
-  * When contextual signals are unavailable, humans employ these paralinguistic
-    cues, such as facial expressions and vocal prosody, to communicate sarcasm
-  * when there are adequate contextual clues, such paralinguistic cues are not
-    required. Therefore, based on the knowledge in the field and the previous
+  * When contextual signals are unavailable, humans employ paralinguistic cues,
+    eg facial expressions and vocal prosody
+  * when there are adequate contextual clues, paralinguistic cues are not reqed
 * ? Which of the Deep Learning architectures considered in this paper best
   performs for Automatic Sarcasm Context Detection on the MUStARD dataset?
