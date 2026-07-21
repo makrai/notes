@@ -38,7 +38,8 @@ It doesn't seem that the task is the detection of the context.
   * models: long short-term memory (LSTM) [16], bidirectional LSTM (BiLSTM),
     stacked LSTM, convolutional neural network LSTM (CNN–LSTM), bidirectional
     encoder representations from transformers (BERT) [17], and XLNet [18]
-  * BERT was the top performing model, with BERT-5 for Reddit and
+  * BERT was the top performing model, with 
+    * BERT-5 for Reddit and
     * BERT-7 for Twitter
 * Internet Argument Corpus (IAC)
   * Eke+ [19] proposed three methods to improve sarcasm recognition using IAC

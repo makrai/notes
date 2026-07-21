@@ -2,6 +2,8 @@ A Large Self-Annotated Corpus for Sarcasm
 Mikhail Khodak, Nikunj Saunshi, Kiran Vodrahalli
 LREC 2018 khodak-etal-2018-large
 
+https://www.kaggle.com/datasets/danofer/sarcasm
+
 # Abstract
 
 * self-annotated: comments from Reddit containing the `\s` (sarcasm) tag
