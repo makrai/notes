@@ -177,8 +177,8 @@ FigLang 2020
     * Sec 4.2 summarizes each paper
     * Sec 5 is a comparative analysis based on both their 
       performance and the choice of features/models
-    * from Sec 5: The large difference between the best model (miroblog) and
-      other systems can be attributed to their dataset augmentation strategies
+    * from Sec 5: The large difference between the best model (miroblog, Lee+)
+      and other systems can be attributed to their dataset augmentation
 
 ## Baseline classification model that we used
 
