@@ -72,35 +72,35 @@ arXiv:2505.24493 [cs.AI]
     to reduce the likelihood of generating incorrect or unrelated content.
   * Guide Output with Prefilling Responses: Structure prompts (eg JSON or XML)
 
-    Given the following line of dialogue from a Friends character, the format
-    will be:
-    "[speaker] at s[season]e[episode] said: [utterance]"
+      Given the following line of dialogue from a Friends character, the format
+      will be:
+      "[speaker] at s[season]e[episode] said: [utterance]"
 
-    Please describe how the character’s voice might sound. 
-    Include details about:
-    - the emotion expressed,
-    - the loudness,
-    - the pitch,
-    - the rhythm speed,
-    - the overall emotional impact of the voice.
-    Format your response:
-    - Provide the character’s name and a brief context.
-    - The emotion label must be selected from the following list: 
-      [Anger, Disgust, Sadness, Joy, Neutral, Surprise, Fear].
+      Please describe how the character’s voice might sound. 
+      Include details about:
+      - the emotion expressed,
+      - the loudness,
+      - the pitch,
+      - the rhythm speed,
+      - the overall emotional impact of the voice.
+      Format your response:
+      - Provide the character’s name and a brief context.
+      - The emotion label must be selected from the following list: 
+        [Anger, Disgust, Sadness, Joy, Neutral, Surprise, Fear].
 
-    Format the response in the following JSON
-    structure:
-    {
-      "character": "[Character’s name]",
-      "context": "[Simple context of the situation]",
-      "elements": {
-        "emotion": "[Primary emotion]",
-        "loudness": "[Loudness of voice]",
-        "pitch": "[Pitch of voice]",
-        "rhythm_speed": "[Speed of voice’s rhythm]",
-        "emotional_impact": "[Emotional impact created by the voice]"
+      Format the response in the following JSON
+      structure:
+      {
+        "character": "[Character’s name]",
+        "context": "[Simple context of the situation]",
+        "elements": {
+          "emotion": "[Primary emotion]",
+          "loudness": "[Loudness of voice]",
+          "pitch": "[Pitch of voice]",
+          "rhythm_speed": "[Speed of voice’s rhythm]",
+          "emotional_impact": "[Emotional impact created by the voice]"
+        }
       }
-    }
 
 # 3. The MELT Corpus
 
