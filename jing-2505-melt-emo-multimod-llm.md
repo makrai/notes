@@ -24,7 +24,81 @@ arXiv:2505.24493 [cs.AI]
   * SSL backbone frozen
 * our subjective experiments' resu: consistence performance improvement on SER
 
-# 2. Methodology
+# 1. Introduction
+
+* Recognizing human emotion and responding accordingly is 
+  a cornerstone of human-computer interaction [1]. The progress made by
+  * deep-learning-based emotion recognition <~ well-annotated datasets [2]
+  * accurate and consistent annotation <~ multiple annotators and validation,
+  * significant costs limit dataset scale and diversity In addition, researches
+  * : contextual knowledge is required to capture characters’ emotions [3, 4]
+    Meanwhile, research [5] indicates that 
+  * individual preferences and cultural backgrounds [5]
+  * contextual understanding and individual preferences [should be] 
+    a primary factor in the selection of annotators.
+  * Amazon Mechanical Turk (AMT), a widely used crowdsourcing platform for data
+    * lack of qualification tests to ensure annotators’ familiarity with the
+      target samples. With the introduction of the OpenAI’s Generative
+* GPT models and LLMs perform more complex tasks with scaling [6, 7, 8]. Several
+  * LLMs as annotators using existing datasets [9, 10]. For instance, 
+  * Gilardi+ [11]: that ChatGPT outperformed crowd workers by approximately 25%
+    * intercoder agreement surpassing humans across all evaluated tasks. Due to
+  * these studies predominantly concentrate on text-based datasets. In the
+  * audio: WavCaps [12] utilized 
+    ChatGPT to compile large-scale, high-quality audio captions, 
+    further highlighting the potential of LLMs in generating reliable annots.
+    * facilitated by the use of tags describing the audio files that comprise
+      WavCaps; thus, 
+      ChatGPT did not introduce novel information, but rather reframed the in-
+      formation provided by humans. 
+  * Pengi [13] introduces an Audio Language Model by 
+    reframing all audio tasks as text-generation tasks, which 
+    accepts an audio recording and a text prompt as inputs and subsequently
+    outputs free-form text.
+  * The SECap [14] framework utilizes the 
+    LLaMA decoder to generate fluent and coherent captions describing emotional
+    speech by leveraging QFormer embeddings. However, these approaches 
+  * hE not only/but also
+    * rely on datasets with existing high-quality emotion annotations— which are
+      * limited in scale due to the high costs of collection— but also 
+    * require additional audio features for LLM decoders to generate captions.
+  * ? the potential of LLMs to automatically annotated audio datasets with
+    captions without any human labor, solely leveraging their contextual
+    understanding, remains relatively underexplored, highlighting a gap in the
+* GPT-4o: Trained on an extensive corpus of web-sourced data [8, 15], frontier
+  * encode knowledge regarding culturally significant content.
+  * especially for widely popular media, such as “Friends”. 
+  * We consider 
+    the vast corpus of internet data that the model has been trained upon 
+    as an implicit “collective knowledge base”, reflecting 
+    the shared understanding and engagement of a broad audience. 
+  * We exploit this knowledge to re-annotate MELD – 
+    * MELD: a multimodal dataset derived from “Friends”.
+* we propose 
+  the Multimodal Emotion-Lines Dataset Labeled with LLM ContexT Knowledge (MELT)
+  extending GPT-4o’s annotation capabilities from text-only emotion data to
+  multimodal data by leveraging its embedded knowledge.
+  * experiments indicate that MELT aligns more closely with human preferences,
+    as evidenced by subjective evaluations. Furthermore, 
+  * models trained on MELT exhibit improved generalization and robustness 
+    across different speech emotion recognition (SER) datasets, 
+    ie LLMs’ potential for tasks that extend beyond conventional text-based
+    approaches.
+  * ie LLMs in creating scalable and efficient annotation pipelines, while also
+    * ability to address complex contextual tasks. 
+* To the best of our knowledge, this work is the first to explore
+  GPT models as annotators for multimodal emotion data, 
+  leveraging insights from the knowledge it has assimilated in its training.
+* contributions is as follows:
+  * a context-aware automatic annotation method using GPT-4o, with 
+    consistent emotional tone across samples, resulting in the MELT, which
+    outperforms MELD, the human-labeled counterpart.
+  * a prompting framework with 
+    cross-validation and Chain-of-thoughts (CoT) reasoning 
+    for multimodal emotion annotation.
+  * A significant reduction in costs (≤ $10) to achieve high-quality annots
+
+# 2. Methodology, focusing on prompting framework
 
 ## 2.1. Data Preparation
 
@@ -79,15 +153,15 @@ the format will be:
 
 Please describe how the character’s voice might sound. 
 Include details about:
-- the emotion expressed,
-- the loudness,
-- the pitch,
-- the rhythm speed,
-- the overall emotional impact of the voice.
+the emotion expressed,
+the loudness,
+the pitch,
+the rhythm speed,
+the overall emotional impact of the voice.
 
 Format your response:
-- Provide the character’s name and a brief context.
-- The emotion label must be selected from the following list: 
+Provide the character’s name and a brief context.
+The emotion label must be selected from the following list: 
   [Anger, Disgust, Sadness, Joy, Neutral, Surprise, Fear].
 
 Format the response in the following JSON structure:
