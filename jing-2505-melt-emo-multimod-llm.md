@@ -1,7 +1,7 @@
-MELT: Towards Automated Multimodal Emotion Data Annotation
-  by Leveraging LLM Embedded Knowledge
-Xin Jing, Jiadong Wang, Iosif Tsangko, Andreas Triantafyllopoulos, BW Schuller
-arXiv:2505.24493 [cs.AI]
+        MELT: Towards Automated Multimodal Emotion Data Annotation
+          by Leveraging LLM Embedded Knowledge
+        Xin Jing, Jiadong Wang, Iosif Tsangko, A Triantafyllopoulos, BW Schuller
+        arXiv:2505.24493 [cs.AI]
 
 * speech emotion recognition (SER) advanced significantly with deep learning,
 * annotation remains a major hurdle.
