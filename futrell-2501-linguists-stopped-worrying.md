@@ -32,7 +32,7 @@ arXiv:2500.17047 [cs.CL]
       not mean that you can learn much about one from studying the other
 * LMs have access to so much more data, that whatever they are doing is
   irrelevant for humans (Chomsky+ 2023; Fox and Katzir, 2024; Bolhuis+ 2024)
-  * Some have denied that language models could learn the putatively key
+  * Some have denied that LMs could learn the putatively key
     properties of human language (Lan+ 2024; Fox and Katzir, 2024)
   * neural network sequence models could learn to approximate anything
     ~> the fact that they seem to learn language is uninformative
@@ -79,7 +79,7 @@ arXiv:2500.17047 [cs.CL]
     * McGrath, S. W., Russin, J., Pavlick, E., and Feiman, R. (2024).
       How can deep neural networks inform theory in psychological science?
       Current Directions in Psychological Science, page 09637214241268098.
-    * Millière, R. (2024). Language models as models of language
+    * Millière, R. (2024). LMs as models of language
       arXiv:2408.07144.
     * Potts, C. (2019)
       A case for deep learning in semantics: Response to pater.
@@ -88,7 +88,7 @@ arXiv:2500.17047 [cs.CL]
       [YouTube](https://www.youtube.com/watch?v=DBorepHuKDM)
     * Chesi, C. (2025). Is it the end of (generative) linguistics as we know it?
       Italian Journal of Linguistics
-  * language models are not a complete theory of language—in fact, no one has
+  * LMs are not a complete theory of language—in fact, no one has
   * they are hugely informative about language and its structure, learning,
     processing, and relationship with the larger structure of the mind
   * LMs have set off an intellectual explosion in cognitive science, ML, and
@@ -99,7 +99,7 @@ arXiv:2500.17047 [cs.CL]
       would be remiss to isolate itself intellectually
   * don’t look like existing theory
   * Language science already has contributed to the development of LMs
-  * language models already have contributed insights about language
+  * LMs already have contributed insights about language
 
 # 2 Statistical models of language have outperformed expectations
 
@@ -191,7 +191,7 @@ arXiv:2500.17047 [cs.CL]
     crossing the grammatical number of the subject with the grammatical form of
     the verb (as done by Marvin and Linzen, 2018)
   * usual procedures in psycholinguistics
-  * The same methodology can be applied to language models with
+  * The same methodology can be applied to LMs with
     probability as the dependent variable (Linzen+ 2016; Futrell+ 2019b)
 * Such studies have revealed behavioral patterns consistent with NNs
   * subject–verb agreement
@@ -199,7 +199,7 @@ arXiv:2500.17047 [cs.CL]
   * filler–gap dependencies
     (Wilcox+ 2018, 2023a; Kobzeva+ 2023; Suijkerbuijk+ 2023)
   * recursive embedding of clauses
-    (Futrell et al., 2019b; Wilcox+ 2019a; Hu+ 2020)
+    (Futrell+ 2019b; Wilcox+ 2019a; Hu+ 2020)
   * ie highly nontrivial formal structures which statistical models failed on
   * fig 1: Example results for subject–verb agreement from GPT-2 are shown in
     * grammatical verb forms are relatively more probable than matched
@@ -221,21 +221,21 @@ arXiv:2500.17047 [cs.CL]
    on evaluation data that is unlike anything in the training data
   (Jumelet+ 2021; Feng+ 2024b; Misra and Mahowald, 2024; Leong and Linzen,
   2023; Yao+ 2025)
-* Ahuja+ (2025) trained Transformer language models on a corpus of
+* Ahuja+ (2025) trained Transformer LMs on a corpus of
   * English-like text that has been constrained so that subjects and verbs
     are always adjacent. That is, the corpus contains sentences like "I saw"
   * ? preferring “The key to the cabinets is on the table” over something
     like “The key to the cabinets are on the table” (where the form of the
     verb depends on the linearly previous verb)
-  * neural language models do make the human-like generalization
+  * neural LMs do make the human-like generalization
   * (see also Patil+ 2024)
-2. dig into the language models’ internal states
+2. dig into the LMs’ internal states
   * LLMs have a reputation of being black boxes
   * nL
     * probing: attempts to decode linguistic features from the internal reprs
     * causal interventions, where model internals are changed
   * Hewitt and Manning, 2019; Chi+ 2020; Voita and Titov, 2020; Manning+ 2020;
-    Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego- Simón+ 2024
+    Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego-Simón+ 2024
   * promising avenues for linguistics and cognitive science (see Section 4.2)
 * hE mostly English (or a handful of other langs) as the target (Blasi+ 2022)
   * see Jumelet+ 2025, for a multilingual grammatical benchmark
@@ -243,7 +243,7 @@ arXiv:2500.17047 [cs.CL]
     Multiblimp 1.0: A massively multilingual benchmark of ling minimal pairs.
     arXiv preprint arXiv:2504.02768
 * disagreement about
-  * how much language models capture more complex formal patterns
+  * how much LMs capture more complex formal patterns
     (Vázquez Martínez+ 2023; Lan+ 2024; Someya+ 2024) or
   * to what extent they can be said to “understand” (Bender and Koller, 2020)
   * refer to things in the world
@@ -255,19 +255,298 @@ arXiv:2500.17047 [cs.CL]
 
 # 3 The success of LMs is interesting for the science of language
 
+because 
+  1. there should be parallels between engin artifs like LMs and human language
+  1. the success of LMs in learning from text upends [turn OBJ
+     upside down] ways of thinking that are 
+     deeply ingrained in generative linguistics and parts of cognitive science
+  1. LMs arose from statistical and probabilistic trads in ling, to a large ext.
+    * LMs aren’t alien invaders into linguistics from engineering.  Rather, 
+    * they are tools similar to those that have long been used to answer
+      fundamentally linguistic questions.
+
 ## 3.1 Parallels between engineering models and cognition
+
+* It is rare in the history of science for 
+  a scientific theory to turn out as disconnected from a corresp engin applic
+  as formal generative linguistics has turned out to be for LMs. We
+  believe this has happened primarily because of a 
+  difference in goals between generative linguistics and LMing, with
+* A historical parallel is informative. In the 
+  * early 19th century, while 
+    Newtonian mechanics did not provide a theory that answered pressing
+    questions about the increasingly complex machines 
+  * steam engines. Carnot (1824) developed an effective theory of such engines
+    using a new ad-hoc concept of ‘moment of activity’, which eventually
+    developed into the idea of entropy (Clausius, 1865). This concept 
+    had to be discovered through engineering because 
+    the focus of purely theoretical physics was on understanding fundamental
+    mechanics through mathematical methods of increasing elegance.
+  * And yet from the practical project of understanding steam engines 
+    emerged a family of concepts that some theoretical physicists now view as
+    more fundamental than even matter itself (Wheeler, 1989).
+* linguistic theory: a similar narrowness in focus, which led it away
+  from considering complex systems for dealing with language.
+* LMs are, at bottom, models of the stream of language that is proded/compred 
+* theories: language use, production, comprehension, learning, cognition genly
+* Generative linguistics: 
+  how to build a language, conceived of as an abstract mental structure that
+  gives rise to a mapping between meaning (that is, a logical form or
+  conceptual–intensional representation) and form (that is, a phonological
+  form or sensorimotor representation) (Chomsky, 1995, 2005; Adger, 2003;
+  Hornstein+ 2005).
+* Stabler (1983): confusion within the field as to 
+  whether or not generative linguistic theories are intended to be theories
+  * of the representations used by the brain during processing, as opposed
+  * that constrain possible language. He concludes that 
+  * Chomsky and others often conflated 
+    theories of grammar and theories of mental representation and processing,
+* gen ling cont: it was claimed that this kind of analysis must take center
+  stage in the science of language, preceding any analysis of more complex
+  systems for language processing, use, or learning, since these systems 
+  * the latter must operate in ways that make reference to the abstract
+    structures of language (Chomsky, 1965, Ch. 1).
+* gen ling has had a huge influence on the engin: programming language design. 
+  * (often contextfree) grammars and parsers, as a way of linking a stream of
+  * the ‘esoteric dialects’ spoken by ‘elaborate machines’ 
+    in the Nabokov quote that starts this section.
+* insights to be gained now from the analysis of messy, complex, practical syss,
+  just as happened in physics
 
 ## 3.2 Understanding LM success requires rethinking language learning
 
-### 3.2.1 The significance of the learning problem in linguistics and cognitive science
+### 3.2.1 The significance of the learning problem in linguistics and cog sci
+
+* indu bias (Mitchell, 1980; Goyal and Bengio, 2022) 
+  * knowledge brought to the learning process by a learner beyond the data,
+  * learner: a device that takes in some data and outputs 
+    a hypoth, or a set of hypoths, or a probability distribution over hypoths,
+    for the underlying process generating the data. For example, given a bunch
+* the data fundamentally underdetermine the hypoth that the learner arrives at,
+  * something that biases a learner to favor one hypoth over another, 
+    even among hypoths that fit the data equally well: this is inductive bias.
+  * something that the model (or modeler) brings to the problem, 
+    not something inherent in the data. 6 A. Numerical data
+* Inductive bias shows up in several forms and under many names in the sci lit
+  * = evaluation procedure in Chomsky (1965, pp. 30– 48), a function which
+    compares two different grammars that can generate an observed set of sents,
+    * ranks them in order of preference, in a way that captures how humans
+      generalize beyond the data (Chomsky, 1965, p. 45).  More generally, it
+    * Universal Grammar (UG)—an “innate schematism of mind that is applied to
+      the data of experience” (Chomsky, 1971, p. 28) that enables language
+      learning and generalization; furthermore, UG is held to be domain-
+    * specific to language (not applying to any other aspect of cognition) and
+    * species-specific to humans (Huybregts, 2019). In this approach,
+    * ie (generative) grammatical theories such as Minimalism are 
+      hypoths about the nature of UG (Chomsky, 1993; Adger, 2003). 
+    * meant to precisely delimit what languages may exist and be acquired
+* explanatory adequacy: a theory of grammar should not only capture which
+  * the theory encompass all and only the possible languages that we might
+    actually find in the world (Chomsky, 1965, Ch. 1).
+  * criticize a theory of grammar such as Head-Driven Phrase Structure Grammar
+    (HPSG: Pollard and Sag, 1994; Sag+ 2003) on the basis that it is
+    Turing-complete, capable of generating any recursively enumerable language.
+  * “explanation by constrained description” (Haspelmath, 2009, pp. 384– 385).
+* Universal Grammar seen as the simultaneous solution to two different problems: 
+  * 1. how children can learn language from inadequate data 
+    * Argument from the Poverty of the Stimulus: see Pearl, 2022, for a review
+  * 2. why human language is the way it is: because Universal Grammar strongly restricts the set of possible languages. 8 
+* ? backed up with strong experimental evidence that humans cannot or do not
+  learn languages which violate the putatively universal principles of human
+  languages. This is not the case: there is 
+  * only limited and ambiguous experimental evidence for hard formal limits on
+  * Smith+ (1993), whose object of study was a man described as 
+    a polyglot savant living in a mental health facility. This individual and
+    four control subjects (linguistics undergraduates) were tasked with
+    learning artificial languages designed to be ‘impossible’ in three ways: 
+    1. negation and tense are indicated by word order, 
+    1. there is an agreement pattern judged to be impossible, and 
+    1. the position of an emphatic marker is determined by a rule involving
+       counting words. 
+    * Results are not systematically reported, but seem to indicate that the
+      polyglot was able to learn the ‘impossible’ word order and agreement rules
+      (1) and (2), but not the rule for the emphatic marker (3).
+  * Musso+ (2003) expose German speakers to Italian and Japanese sentences,
+    either following the real rules of those languages, or following modified
+    rules deemed to be linguistically impossible, for example 
+    eg placing a negation marker after the third morpheme from the beginning of
+    a sentence. The 
+    * result is equally accurate learning of the ‘natural’ and ‘unnatural’
+    * fMRI on the subjects shows that the 
+      real languages elicit activity in the left inferior frontal gyrus, while
+      the unnatural ones elicit activity elsewhere. 
+  * We believe the meaning of these results is unclear. 
+    * Only a small number of languages and participants (all of whom were
+      already native speakers of largely hierarchically-structured languages)
+    * the localization of syntax in the brain is still contentious, and 
+      * the patterns of brain activity for the ‘unnatural’ languages might
+        reflect a lack of practice with such patterns, 
+        rather than their impossibility or a qualitative difference between
+        linear and hierarchical rules.  
+* dream: come up with a formalism for linguistic description which captures
+  human generalizations, is domain-specific to language, and arises from a
+  genetic endowment unique to humans (Chomsky, 1988; Hauser+ 2002; Berwick+
+  2011)—thus in one fell swoop solving (1) and (2).
+* a good theory of language learning should be restrictive: that is, 
+  * there should be languages that cannot be learned under the theory, and 
+    this restriction on the hypothesis space provides explanatory adequacy. 
+* eg Kodner+’s (2022) criticism of Yang and Piantadosi’s (2022) 
+  * Y & P: model of language learning as Bayesian program induction, a model
+  * successfully learns grammars of various formal classes 
+    given small amounts of string input, thus addressing the Poverty of the Stim
+  * meets the challenge of inducing formal structure from strings, it has been
+    dismissed by some in the linguistics literature 
+    because the same model could also learn grammars that are unlike human ones
+* the intuitively bad hypoths would be ruled out as 
+  unavailable as mental representations during learning (Everaert+ 2015)
+* these are common examples, [There are two footnotes with number 10.]
+  hE it is not clear exactly how generative formalisms rule out the unnatural
+  hypoths here. In particular, 
+  * the languages implied by the unnatural hypoths are context-free, just as
+    much as the languages implied by the natural hypoths. So 
+  * these (string) languages could be generated from, for example, Minimalist
+    Grammars (Chomsky, 1993; Stabler, 1997), since Minimalist Grammars generate
+    a superset of context-free languages (Michaelis, 1998).
+.
+* This approach to linguistic explanation has a pleasing elegance to it:
+  learners must be restricted to learn properly, and we see that 
+  the variation in actual languages is restricted, therefore we can kill two
 
 ### 3.2.2 The modern view on learning
 
+* The logic of inductive bias is sound. On a deep level, there really is no free
+  lunch in learning, even deep learning (Mitchell, 1980; Wolpert+ 1995; Baxter,
+  2000; Adam+ 2019). Asking how much one can learn ‘from the data alone’ without
+* developments in deep learning have forced revisions to conventional ways of
+  thinking about how inductive bias arises.
+* The conventional wisdom was that 
+  a learning model must be restricted in terms of the hypoths, so that it
+  does not overfit (Bishop, 2006, §1.1). A relatively 
+  * unrestricted model may memorize the training data, or find a patholog solut
+  * The logic is the same as Universal Grammar: 
+    explaining generalization requires that we restrict 
+    the set of hypoths (grammars) that a model (learner) may entertain.
+* nL in deep learning: overparameterized networks, which are 
+  more than flexible enough to memorize their training data, do generalize,
+  often better than relatively restricted ones (Belkin+ 2019; Zhang+ 2021). In
+  * overfitting has typically been measured in terms of performance on a
+    held-out dataset, where one typically sees a U-shape curve as in the left
+  * in the late 2010s it was discovered that 
+    if you keep adding model power, the U-shape curve starts to descend again,
+  * double descent, shown in Figure 3. This pattern suggests that learners
+    continue to find good generalizations even after being flexible enough to
+    memorize their training data. 
+  * with the right regularization, 
+    the best performance comes from models whose capacity is poised 
+    right at the point where training data and model parameters are balanced—
+    * the right regularization in these settings avoids the sharp spike in loss
+      characteristic of double descent (Maloney+ 2022, §4.2)
+  * a kind of phase transition in how learning works. What looks like
+  * came as a surprise to statistical learning theorists (Belkin+ 2019; Zhang+
+    2021) and have triggered an 
+  * ongoing field-wide effort to rethink learning theory or to 
+    show how these unexpected findings are compatible with existing theory 
+    (eg Poggio+ 2020a; Martin+ 2021; Martin and Mahoney, 2021; Kuzborskij+ 2021;
+    Henighan+ 2023; Attias+ 2024)
+* we should also rethink language learning and 
+  the role of restrictive formalisms in linguistic explanation. 
+  * It is simply not the case that proper generalization can only come from
+    learners who are sharply restricted to small hypothesis spaces, 
+  * nor even that there is a correlation between restrictedness and generalizat.
+* But how can this be, if the idea of inductive bias is right? 
+  How did the conventional logic go wrong in practice? The key mistake was 
+  * the conflation of model power with inductive bias (Hubinger, 2019).
+  * more flexible learners have stronger biases toward simple hypoths (Huh+ 24)
+  * they do impose a soft notion of simplicity on those hypoths.
+* fig 4 following Wilson (2025).
+  * the source of this simplicity bias in neural networks and related systems is
+    not necessarily related to the hard limits of their expressivity. The
+  * toward functions that are nearly linear or simple in other ways
+    (Valle-Perez+ 2018; Hahn+ 2021b), likely as a result of the dynamics of
+    gradient descent on the loss landscape induced by the model 
+    (Poggio+ 2020b; Pezeshki+ 2020; Merrill+ 2021; Hahn and Rofin, 2024)
+* In machine learning, these discoveries have catalyzed a change in focus, away
+  from models whose architecture and representations are tailored to the domain,
+  toward models that learn quickly in relatively unrestricted hypothesis spaces
+  (Sutton, 2019). 
+  * against using domain knowledge to restrict the behavior of learners, 
+    even when researchers have a strong sense of the relevant domain knowledge
+
 ### 3.2.3 The upshot for linguistic theory
+
+* Nowadays the logic must be: 
+  learners have hard formal restrictions even though this is not necessary and
+  may be harmful for learning, and these restrictions create language
+  universals. It is still a viable hypothesis, but it loses its elegance.
+* even if language-specific innate inductive biases in humans really are the key
+  to the structure of human language, these 
+  inductive biases might not be expressible in terms of a categorical symbolic
+  formalism or a sharply limited hypothesis space for learners. 
+  * Inductive biases in modern neural models are soft and seem to 
+    arise from a complex interplay of training dynamics, objective function, and
+    model architecture, with 
+    the hard limits of model expressivity playing a relatively minor role.
+* “explanation by constrained description” no longer seems so explanatory, at
+  * Language learning and language universals may well be better captured by a
+    highly flexible, less constrained formalism for linguistic repr—one which 
+  * repr on its own could capture non-linguistic patterns as well as natural
+    linguistic ones—
+    paired with a soft, quantitative simplicity metric that 
+    captures learning dynamics or functional pressures on language.
+* Learning models with explicit simplicity biases exemplify this approach 
+  (eg, Hsu+ 2011; Perfors+ 2013; Rasin+ 2021; Lan+ 2022)
+* This is not to say that inductive biases are no longer important in
+  linguistics and language learning, humans and neural networks is not
+  * see Section 4.4. Far from demoting inductive bias as a concern, language
+  * LMs open up the range of (possibly innate) inductive biases 
+    look for in humans. The main point for linguistic theory is not to demote
+  * a broader landscape of approaches and hypotheses
 
 ### 3.2.4 The question of data quantity
 
-## 3.3 Language models and linguistic traditions
+* LMs learn using orders of magnitude more linguistic input data than children
+  (Yedetore+ 2023; Warstadt+ 2023).
+  * the learning trajectories of models and humans show systematic differences
+    (Chang and Bergen, 2022; Evanson+ 2023; Constantinescu+ 2025).  Taken
+  * differences between learning in models and humans, 
+    both in terms of data requirements and patterns of learning. 
+  * A form of the Poverty of the Stimulus argument is still alive in the form of
+    * even if neural networks acquire linguistic structure, they do not do so on
+      the basis of the same amount and kind of data that a children (Lan+ 2024).
+* Mollica and Piantadosi (2019) suggests that syntactic structure makes up only
+  a very small portion of the information necessary to learn a language.
+* attempts to inject linguistic structure into neural models in various ways;
+  * recursive computation in hierarchical parse trees (Socher+ 2011, 2013).
+    * some of the earliest successful deep learning approaches to NLU
+  * result that language learning from data is somewhat more sample efficient
+    (Dyer+ 2016; Futrell+ 2019b; Wilcox+ 2019b; Kim+ 2019; 
+    Papadimitriou and Jurafsky, 2020, 2023; Nandi+ 2025)
+* more flexible architectures (eg Kolmogorov–Arnold Networks: Liu+ 2024), or
+* biases towards domain-general compositional reasoning 
+  (McCoy and Griffiths, 2023; Yang and Piantadosi, 2022), or 
+* different training regimes (Murty+ 2023),
+  Murty S, Sharma P, Andreas J, and Manning C, (ACL 2023), 
+  Grokking of hierarchical structure in vanilla Transformers. 
+* multimodal data which provides rich side information about the structure of
+  the environment that is being described in language (Wang+ 2023), or
+* domain-general bounded-rational approaches to generalization such as the
+  Tolerance Principle (Belth+ 2021; Payne+ 2021; Kodner, 2022)
+* The direction of developments in machine learning suggests that 
+  the gap between human and machine learning is 
+  more likely to be closed through more powerful domain-general learning algos
+* ? humans and neural networks are just so different that 
+  one is not informative about the other (Kodner+ 2023). We believe not. First,
+  1. the success of neural networks 
+    weakens logical arguments that language cannot be learned without
+    domain-specific formal constraints on language, and in general changes how
+  2. even if neural network training methods are not able to acquire ling struct
+     on the basis of developmentally realistic data, 
+    the representations that NNs acquire based on more data are still
+    informative about how language might be represented and processed in the
+    brain (more in Section 4), 
+    even if the networks do not arrive at these reprs along the same trajectory
+
+## 3.3 LMs and linguistic traditions
 
 ### 3.3.1 The generative tradition of linguistics
 
