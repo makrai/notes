@@ -851,6 +851,100 @@ arXiv:2500.17047 [cs.CL]
 
 ## 4.4 What the inductive biases of LMs can tell us about lang
 
+* Kallini+ (2024) refute the claim that neural LMs can learn any language,
+  including unnatural ones, equally well (Bolhuis+ 2024). 
+  * They compare the learning curves for the GPT-2 architecture trained on
+    language modeling on English text against models trained on 
+    various transformations of the English text, designed to create languages
+    * intuitively ‘impossible’, but which still have 
+      the same level of overall predictability as the original English text. For
+    * eg a deterministic shuffling function to the tokens of English text,
+      * extraordinarily complex but deterministic word order rules that 
+      violate all known formal characterizations of syntax, and another
+    * eg2 a new agreement marker that 
+      must appear exactly 4 tokens away from a verb, also an unnatural pattern.
+  * the model learns from real English text consistently faster than these
+    (see also Mitchell and Bowers, 2020; Yang+ 2025; Xu+ 2025; Ziv+ 2025)
+* ie Transformers have inductive biases that align with human language. However,
+  * the major determinant of inductive biases in LM is not that they are
+    restricted to a particular formal language class, as might be expected from
+    the generative linguistics paradigm. In fact, 
+  * in terms of formal expressivity, it seems that Transformers are mismatched
+    with the usual formal language classes used to characterize language.
+  * human language is sometimes characterized using (extensions of) the
+    Chomsky–Schützenberger hierarchy (Chomsky and Schützenberger, 1963;
+    Vijay-Shanker+ 1987; Weir, 1988), which encompasses well-known classes such
+    * Vijay-Shanker, K., Weir, D. J., and Joshi, A. K. (ACL 1987). 
+      Characterizing structural descriptions produced by ... gramm formalisms.
+* formal language classes defined by circuit complexity 
+  (Merrill+ 2022; Strobl+ 2024; Merrill+ 2024), 
+  * inhabited by
+    * Transformers as they are currently applied (and other recently successful
+    * State Space Models as well: Gu and Dao, 2024) seem to inhabit 
+  * a formal language hierarchy which is 
+    orthogonal to the Chomsky– Schützenberger hierarchy. 13 To the extent that
+    * also been used to characterize the computational capacity of biologically
+      realistic populations of neurons (Maass, 1997; Maass and Markram, 2004).
+      So human performance may also be ultimately limited in this way.
+  * ie something other than the expressive limits
+* Below we consider two apparent learning biases of modern LMs which may be
+
+### Information locality 
+
+* Human languages are structured in a way such that 
+  elements that stat predict each other are usually close to each other. For
+  * eg big brown box, 
+  * the noun box and _brown_ are highly predictive of each other—
+  * boxes, especially cardboard ones, are often brown, for many reasons—and so
+  * the alternate order brown big box sounds odd or like it is conveying some
+    other special meaning 
+    (Futrell, 2019; Culbertson+ 2020; Scontras, 2023; Dyer+ 2023)
+* Locality ideas of this kind pervade human language (Behaghel, 1930; Givón,
+  1991; Futrell, 2019; Mansfield, 2021; Hahn+ 2021a; Mansfield and Kemp, 2023):
+  * morph: prefixes and suffixes (directly adjacent to them, 
+    ordered by ‘relevance’ to the root: Bybee, 1985; Saldana+ 2024), and words
+  * syntactic dependencies tend to be close to each other 
+    (Gibson, 1991, 1998; Liu, 2008; Liu+ 2017), 
+    * more than would expected under random grammars within a linguistically
+      realistic formalism (Gildea and Temperley, 2007; Park and Levy, 2009;
+      Gildea and Temperley, 2010; Futrell+ 2015, 2020b).
+* Autoregressive LMs such as GPT-2 also show a bias towards info locality, as
+  * many of the counterfactual languages which are harder to learn in Kallini+
+    are also those that disrupt information locality.
+* The bias towards locality seems to come from the next-token prediction task
+* an ‘ember of autoregression’ in the terminology of McCoy et al. (2023), one
+  McCoy, R. T., Yao, S., Friedman, D., Hardy, M., and Griffiths, T. L. (2023).
+  Embers of [parazsa] autoregression: 
+    Understanding LLMs through the problem they are trained to solve
+  arXiv preprint arXiv:2309.13638.  which 
+  * helps language learning and is likely shared with humans
+
+### Relatively low sensitivity Another related inductive bias in Transformers is
+
+* the bias toward learning functions with low sensitivity or low polynomial
+  degree (Hahn+ 2021b; Abbe+ 2023; Bhattamishra+ 2023). 
+  * Sensitive functions are functions on input strings whose outputs change
+    drastically based on small changes to the input. For example, 
+  * eg a function on input bitstrings that counts the parity of the
+    input is maximally sensitive and high-degree (O’Donnell, 2014)
+  * the Transformer architecture has the ability to represent highly sensitive
+    functions in terms of its representational capacity, this turns out not to
+  * the bias toward low-sensitivity functions 
+    comes from the shape of the loss landscape induced by the model. In
+    * any parameter setting representing a highly sensitive function in the
+      Transformer architecture must be brittle, meaning that 
+      a small change to the parameters would make the Transformer produce some
+      different, lower-sensitivity function (Hahn and Rofin, 2024). 
+    * Thus high-sensitivity functions are unlikely to be reached through a
+      gradient- descent-based learning process.
+* Human languages, viewed (for example) as 
+  functions from strings to meanings or to grammaticality judgments, also seem
+  * relatively low-sensitivity (Hahn+ 2021b). We do not find human languages
+* not an absolute formal restriction on languages. For example, 
+  * calculating the meaning of iterated negation is like a parity function: What
+  * high-sensitivity phenomes are rare in usage, and difficult to understand in
+  * Relative low sensitivity perhaps a general cognitive constraint for humans,
+
 ## 4.6 Functional explanations for human lang
 
 ## 4.7 Upshots for ling beyond lang structure
