@@ -2,10 +2,10 @@ How Linguistics Learned to Stop Worrying and Love the Language Models
 Richard Futrell, Kyle Mahowald
 arXiv:2500.17047 [cs.CL]
 
-* LMs can contribute to fundamental questions about linguistic structure,
+* LMs can contribute to fundamental questions about ling structure,
   lang processing, and learning
 * They force us to rethink arguments that have been foundational in ling
-* they do not replace linguistic structure and theory,
+* they do not replace ling structure and theory,
 * they serve as proofs of concept for gradient, usage-based approaches
 
 # 1 Intro
@@ -17,7 +17,7 @@ arXiv:2500.17047 [cs.CL]
   really care how it happens. Norm and Claudette have very different goals, nL
 * Fast forward to 2025
   * Norm has worked for decades on a variety of diverse langs, developing
-    sophisticated theories of linguistic structure
+    sophisticated theories of ling structure
   * Claudette got more and more interested in engineering,
     amassing huge amounts of data, and training statistical models
   * How relevant is it that the architecture of Claudette’s machines seems to
@@ -43,7 +43,7 @@ arXiv:2500.17047 [cs.CL]
       Earth at the center of the universe (de Santillana, 1955; Flynn, 2013)
     * <~ epicycles can approximate any trajectory arbitrarily well (at the cost
       of great complexity)
-* we: LMs do learn non-trivial aspects of linguistic structure, and
+* we: LMs do learn non-trivial aspects of ling structure, and
   they do give important insights that change how we should think about
   lang. As lang scientists, we ignore them at our peril
 * An opposite approach is to dismiss traditional theories of ling struct,
@@ -83,7 +83,7 @@ arXiv:2500.17047 [cs.CL]
     * Potts, C. (2019)
       A case for deep learning in semantics: Response to pater.
       Language, 95(1):e115– e124.
-    * Potts, C. G. (2025). Finding linguistic structure in LLMs
+    * Potts, C. G. (2025). Finding ling structure in LLMs
       [YouTube](https://www.youtube.com/watch?v=DBorepHuKDM)
     * Chesi, C. (2025). Is it the end of (generative) ling as we know it?
       Italian Journal of Linguistics
@@ -105,7 +105,7 @@ arXiv:2500.17047 [cs.CL]
 ## 2.1 A brief history of statistical lang learning
 
 * The effective conclusion from the _Colorless green_ arguments was that
-  linguistic structure could only be characterized in terms of formal systems,
+  ling structure could only be characterized in terms of formal systems,
   based on rules or constraints and operating over structured arrays of symbols
   (Chomsky, 1965)
   * the expectation was that such systems would form the basis for lang
@@ -119,7 +119,7 @@ arXiv:2500.17047 [cs.CL]
       In Lawson, V, editor, Translating and the Computer: Practical Experience
   * these formal systems should be constructed by linguists
   * myriad efforts to build machine translation systems and grammatical parsers
-  * hE linguistic competence remained elusive for machines
+  * hE ling competence remained elusive for machines
   * Symbolic approaches that sought to elucidate rules and structures often
     proved unable to capture all the exceptions and complexity
 * By the late 1980s and 1990s, statistical learning had a major NLP renaissan in
@@ -139,18 +139,18 @@ arXiv:2500.17047 [cs.CL]
     * connectionist models ... deny that brains actually encode rich knowledge
     * strong consensus in cognitive science and artificial intelligence that
       symbols and structures are essential for thought
-  * now sometimes taken for granted in practice that ideas from linguistic
+  * now sometimes taken for granted in practice that ideas from ling
     theory will not form the basis of proficient lang processing systems
 * generative linguists continued to claim that
   statistical methods would never solve interesting problems related to
-  learning linguistic structure, eg a review article, Everaert+ (2015)
+  learning ling structure, eg a review article, Everaert+ (2015)
 * Berwick+ (2011) were skeptical that recurrent neural networks could ever be
   much more powerful than bigram models
 * connectionism in the 2010s: new techniques and increased computational power
   made training neural models much more efficient (Hinton+ 2006)
   * neural models showed rudiments of grammatical generalizations like
     subject–verb agreement (Linzen+ 2016)
-  * success at acquiring linguistic abilities conti (Futrell+ 2019a; Wilcox+
+  * success at acquiring ling abilities conti (Futrell+ 2019a; Wilcox+
     2018; Manning+ 2020; Hu+ 2020; Warstadt and Bowman, 2022; Mahowald+ 2024)
   * growth from early neural models in, eg 2011 to now is
     remarkable from a historical perspective, and was
@@ -160,7 +160,7 @@ arXiv:2500.17047 [cs.CL]
     wild pasteured with consistent street forests were incorporated by the 15th
     century BE.”
 
-## 2.2 Neural LMs learn nontrivial linguistic structure
+## 2.2 Neural LMs learn nontrivial ling structure
 
 * x affects y
   * p = prob, x include word frequency, utterance length,
@@ -171,7 +171,7 @@ arXiv:2500.17047 [cs.CL]
   * x also includes the subjective grammaticality judgments
     that form the basis of formal synt
     (Kluender and Kutas, 1992; Hofmeister+ 2013; Mahowald+ 2016; Lau+ 2017)
-* isolate linguistic structure from these other factors through
+* isolate ling structure from these other factors through
   controlled experimental studies and through probing LMs’ internal states
 * infer the cog struct from behav
   * Experimentally, from sufficient performance data, one may infer an
@@ -179,7 +179,7 @@ arXiv:2500.17047 [cs.CL]
     substrate is a brain or a neural network (Piantadosi and Gallistel, 2024).
   * the standard procedure in ling, where
     data consisting primarily of acceptability judgments is used to
-    postulate underlying linguistic competence This approach
+    postulate underlying ling competence This approach
   * can be applied just as well to LMs
   * eg behavioral comparisons of minimally different sentences
   * “The keys to the cabinet are on the table” vs
@@ -209,7 +209,7 @@ arXiv:2500.17047 [cs.CL]
       between the subject of the sentence and the matrix verb
 * Models can be “right for the wrong reasons” (McCoy+ 2019)
   * ie shallow heuristics which make correct predictions on certain test sets
-  * or mastery of linguistic form without a concomitant ability to understand
+  * or mastery of ling form without a concomitant ability to understand
     the implications of utterances (Weissweiler+ 2022, Mahowald+ 2024)
   * eg a simple n-gram model performs fairly well on some subsets of
     paired grammatical and ungrammatical sentences of the BLiMP dataset
@@ -231,7 +231,7 @@ arXiv:2500.17047 [cs.CL]
 2. dig into the LMs’ internal states
   * LLMs have a reputation of being black boxes
   * nL
-    * probing: attempts to decode linguistic features from the internal reprs
+    * probing: attempts to decode ling features from the internal reprs
     * causal interventions, where model internals are changed
   * Hewitt and Manning, 2019; Chi+ 2020; Voita and Titov, 2020; Manning+ 2020;
     Papadimitriou+ 2021; Ravfogel+ 2021; Lampinen, 2024; Diego-Simón+ 2024
@@ -247,7 +247,7 @@ arXiv:2500.17047 [cs.CL]
   * to what extent they can be said to “understand” (Bender and Koller, 2020)
   * refer to things in the world
     (Mandelkern and Linzen, 2024; Lederman and Mahowald, 2024), this is not the
-* clear: LMs have learned nontrivial formal linguistic patterns better than
+* clear: LMs have learned nontrivial formal ling patterns better than
 * LMs have learned “the real thing”—that is, the thing that we care about, as
   * eg how langs are learned, how they are processed, how and why they
     vary, and where they come from
@@ -262,7 +262,7 @@ arXiv:2500.17047 [cs.CL]
   1. LMs arose from statistical and probabilistic trads in ling, to a large ext.
     * LMs aren’t alien invaders into ling from engineering.  Rather, 
     * they are tools similar to those that have long been used to answer
-      fundamentally linguistic questions.
+      fundamentally ling questions.
 
 ## 3.1 Parallels between engineering models and cognition
 
@@ -300,7 +300,7 @@ arXiv:2500.17047 [cs.CL]
       (see Bowers+ 2023, for a more skeptical take along with spirited replies),
       * agreement: this research program has been fruitful.
 * lang processing, where 
-  * the internal representations developed by LMs are predictive of
+  * the internal reprs developed by LMs are predictive of
   activation patterns in lang areas of the brain (Goldstein+ 2022;
   Caucheteux+ 2023; Hosseini+ 2024b; Rathi+ 2024), and 
   * predictability as estimated by a LM is 
@@ -329,9 +329,9 @@ arXiv:2500.17047 [cs.CL]
       evolutionary phylogenies, such as cephalopods (Pungor+ 2023).
 * lang constraints (storage of lexical items, generalization to novel contexts,
   fast processing, etc.). And as we have discussed, large Transformer-based
-  * massive literature on linguistic interpretability in Transformers, which we
+  * massive literature on ling interpretability in Transformers, which we
     partially reviewed in Section 2.2, has revealed 
-  * representational strategies in neural networks that lead to correct novel
+  * repral strategies in neural networks that lead to correct novel
     predictions about human performance (Lakretz+ 2021), and 
   * the way that Transformers process syntactic features like agreement cues has
     close parallels with independently proposed cognitive frameworks for
@@ -394,7 +394,7 @@ arXiv:2500.17047 [cs.CL]
       (1) and (2), but not the rule for the emphatic marker (3).
   * Musso+ (2003) expose German speakers to Italian and Japanese sentences,
     either following the real rules of those langs, or following modified
-    rules deemed to be linguistically impossible, for example 
+    rules deemed to be lingally impossible, for example 
     eg placing a negation marker after the third morpheme from the beginning of
     a sentence. The 
     * result is equally accurate learning of the ‘natural’ and ‘unnatural’
@@ -409,7 +409,7 @@ arXiv:2500.17047 [cs.CL]
         reflect a lack of practice with such patterns, 
         rather than their impossibility or a qualitative difference between
         linear and hierarchical rules.  
-* dream: come up with a formalism for linguistic description which captures
+* dream: come up with a formalism for ling description which captures
   human generalizations, is domain-specific to lang, and arises from a
   genetic endowment unique to humans (Chomsky, 1988; Hauser+ 2002; Berwick+
   2011)—thus in one fell swoop solving (1) and (2).
@@ -424,7 +424,7 @@ arXiv:2500.17047 [cs.CL]
     dismissed by some in the ling literature 
     because the same model could also learn grammars that are unlike human ones
 * the intuitively bad hypoths would be ruled out as 
-  unavailable as mental representations during learning (Everaert+ 2015)
+  unavailable as mental reprs during learning (Everaert+ 2015)
 * these are common examples, [There are two footnotes with number 10.]
   hE it is not clear exactly how generative formalisms rule out the unnatural
   hypoths here. In particular, 
@@ -434,7 +434,7 @@ arXiv:2500.17047 [cs.CL]
     Grammars (Chomsky, 1993; Stabler, 1997), since Minimalist Grammars generate
     a superset of context-free langs (Michaelis, 1998).
 .
-* This approach to linguistic explanation has a pleasing elegance to it:
+* This approach to ling explanation has a pleasing elegance to it:
   learners must be restricted to learn properly, and we see that 
   the variation in actual langs is restricted, therefore we can kill two
 
@@ -475,7 +475,7 @@ arXiv:2500.17047 [cs.CL]
     (eg Poggio+ 2020a; Martin+ 2021; Martin and Mahoney, 2021; Kuzborskij+ 2021;
     Henighan+ 2023; Attias+ 2024)
 * we should also rethink lang learning and 
-  the role of restrictive formalisms in linguistic explanation. 
+  the role of restrictive formalisms in ling explanation. 
   * It is simply not the case that proper generalization can only come from
     learners who are sharply restricted to small hypothesis spaces, 
   * nor even that there is a correlation between restrictedness and generalizat.
@@ -492,13 +492,13 @@ arXiv:2500.17047 [cs.CL]
     gradient descent on the loss landscape induced by the model 
     (Poggio+ 2020b; Pezeshki+ 2020; Merrill+ 2021; Hahn and Rofin, 2024)
 * In machine learning, these discoveries have catalyzed a change in focus, away
-  from models whose architecture and representations are tailored to the domain,
+  from models whose architecture and reprs are tailored to the domain,
   toward models that learn quickly in relatively unrestricted hypothesis spaces
   (Sutton, 2019). 
   * against using domain knowledge to restrict the behavior of learners, 
     even when researchers have a strong sense of the relevant domain knowledge
 
-### 3.2.3 The upshot for linguistic theory
+### 3.2.3 The upshot for ling theory
 
 * Nowadays the logic must be: 
   learners have hard formal restrictions even though this is not necessary and
@@ -514,9 +514,9 @@ arXiv:2500.17047 [cs.CL]
     the hard limits of model expressivity playing a relatively minor role.
 * “explanation by constrained description” no longer seems so explanatory, at
   * Language learning and lang universals may well be better captured by a
-    highly flexible, less constrained formalism for linguistic repr—one which 
-  * repr on its own could capture non-linguistic patterns as well as natural
-    linguistic ones—
+    highly flexible, less constrained formalism for ling repr—one which 
+  * repr on its own could capture non-ling patterns as well as natural
+    ling ones—
     paired with a soft, quantitative simplicity metric that 
     captures learning dynamics or functional pressures on lang.
 * Learning models with explicit simplicity biases exemplify this approach 
@@ -525,23 +525,23 @@ arXiv:2500.17047 [cs.CL]
   ling and lang learning, humans and neural networks is not
   * see Section 4.4. Far from demoting inductive bias as a concern, lang
   * LMs open up the range of (possibly innate) inductive biases 
-    look for in humans. The main point for linguistic theory is not to demote
+    look for in humans. The main point for ling theory is not to demote
   * a broader landscape of approaches and hypotheses
 
 ### 3.2.4 The question of data quantity
 
-* LMs learn using orders of magnitude more linguistic input data than children
+* LMs learn using orders of magnitude more ling input data than children
   (Yedetore+ 2023; Warstadt+ 2023).
   * the learning trajectories of models and humans show systematic differences
     (Chang and Bergen, 2022; Evanson+ 2023; Constantinescu+ 2025).  Taken
   * differences between learning in models and humans, 
     both in terms of data requirements and patterns of learning. 
   * A form of the Poverty of the Stimulus argument is still alive in the form of
-    * even if neural networks acquire linguistic structure, they do not do so on
+    * even if neural networks acquire ling structure, they do not do so on
       the basis of the same amount and kind of data that a children (Lan+ 2024).
 * Mollica and Piantadosi (2019) suggests that syntactic structure makes up only
   a very small portion of the information necessary to learn a lang.
-* attempts to inject linguistic structure into neural models in various ways;
+* attempts to inject ling structure into neural models in various ways;
   * recursive computation in hierarchical parse trees (Socher+ 2011, 2013).
     * some of the earliest successful deep learning approaches to NLU
   * result that lang learning from data is somewhat more sample efficient
@@ -565,14 +565,14 @@ arXiv:2500.17047 [cs.CL]
   1. the success of neural networks 
     weakens logical arguments that lang cannot be learned without
     domain-specific formal constraints on lang, and in general changes how
-  2. neural network training methods are not able to acquire linguistic struct
+  2. neural network training methods are not able to acquire ling struct
      on the basis of developmentally realistic data, 
-     * hE the representations that NNs acquire based on more data are still
+     * hE the reprs that NNs acquire based on more data are still
        informative about how lang might be represented and processed in the
        brain (more in Section 4), 
        even if the networks do not arrive at these reprs along the same trajec
 
-## 3.3 LMs and linguistic traditions
+## 3.3 LMs and ling traditions
 
 * LMs may seem to involve concepts that are foreign to ling,
 * nL they emerged in part from intellectual traditions of the study of lang
@@ -600,22 +600,22 @@ arXiv:2500.17047 [cs.CL]
   * And yet from the practical project of understanding steam engines 
     emerged a family of concepts that some theoretical physicists now view as
     more fundamental than even matter itself (Wheeler, 1989).
-* linguistic theory: a similar narrowness in focus, which led it away
+* ling theory: a similar narrowness in focus, which led it away
   from considering complex systems for dealing with lang.
 * LMs are, at bottom, models of the stream of lang that is proded/compred 
 * theories: lang use, production, comprehension, learning, cognition genly
 * Generative ling: 
   how to build a lang, conceived of as an abstract mental structure that
   gives rise to a mapping between meaning (that is, a logical form or
-  conceptual–intensional representation) and form (that is, a phonological
-  form or sensorimotor representation) (Chomsky, 1995, 2005; Adger, 2003;
+  conceptual–intensional repr) and form (that is, a phonological
+  form or sensorimotor repr) (Chomsky, 1995, 2005; Adger, 2003;
   Hornstein+ 2005).
 * Stabler (1983): confusion within the field as to 
-  whether or not generative linguistic theories are intended to be theories
-  * of the representations used by the brain during processing, as opposed
+  whether or not generative ling theories are intended to be theories
+  * of the reprs used by the brain during processing, as opposed
   * that constrain possible lang. He concludes that 
   * Chomsky and others often conflated 
-    theories of grammar and theories of mental representation and processing,
+    theories of grammar and theories of mental repr and processing,
 * gen ling cont: it was claimed that this kind of analysis must take center
   stage in ling, preceding any analysis of more complex systems 
   for lang processing, use, or learning, since these systems 
@@ -638,7 +638,7 @@ arXiv:2500.17047 [cs.CL]
 * originates from structuralist ling (Saussure, 1916; Bloomfield, 1926)
   * aim: the development of discovery procedures, which were 
     formal procedures that could be applied to bodies of text in order to
-    discover (and even define) linguistic structures (Harris, 1951). 
+    discover (and even define) ling structures (Harris, 1951). 
   * The most well-developed of these discovery procedures were statistical in
   * eg Harris (1955): a theory of words and morphemes based on stat co-occurr
     * a procedure for discovering morpheme boundaries by effectively
@@ -654,7 +654,7 @@ arXiv:2500.17047 [cs.CL]
 * practice [actual history], the statistical structuralism largely 
   supplanted in American ling departments by the generative school,
   * Chomsky’s (1957) arguments that 
-    distributional statistics were irrelevant to linguistic structure and that
+    distributional statistics were irrelevant to ling structure and that
     discovery procedures were a distraction from the putatively ‘core’ questions
 * the statistical analysis of lang continued under the heading of
   usage-based approaches (Bybee and Hopper, 2001), in which the 
@@ -681,7 +681,7 @@ arXiv:2500.17047 [cs.CL]
     McClelland (1987) developing a neural model for forming the past tense from
     present tense words, triggering much debate (Pinker and Prince, 1988).
 * Elman, a Linguistics PhD, developed an early RNN (1990a) 
-  in order to solve the problem of finding linguistic structure in time, a
+  in order to solve the problem of finding ling structure in time, a
   * motivated by findings in ling and psycholing (Frazier and Fodor, 1978)
   * the basic architecture still underlies many LMs (Feng+ 2024a). 
 * Chris Manning, a pioneer in neural and probabilistic models, was 
@@ -689,7 +689,7 @@ arXiv:2500.17047 [cs.CL]
     Manning, C. D. (1995). 
     Ergativity: Argument structure and grammatical relations. Stanford Uni 
   * statistical approach to syntax (Manning, 2003), before going on to work on
-  * influential neural methods for performing linguistic tasks (e.g.,
+  * influential neural methods for performing ling tasks (e.g.,
     Pennington+ 2014).
 * these figures are sometimes seen as ‘not linguists’. 
   <~ The history of the field and the dominance of the generative tradition
@@ -705,7 +705,7 @@ arXiv:2500.17047 [cs.CL]
     field of ling diminished compared to where it could be.
   * Progress in lang science will not come from hyperfocus on any one goal,
     nor from any one theory of what lang is, nor from one framework for
-    understanding linguistic phenomena. Rather, 
+    understanding ling phenomena. Rather, 
   * ling needs to draw on a plurality of perspectives and disciplines
   * In the current moment, that means leveraging the explosion of intellectual
     creativity springing forth around LMs. 
@@ -715,11 +715,139 @@ arXiv:2500.17047 [cs.CL]
 
 # 4 Where does that leave the science of lang?
 
-How the science of lang productively integrates the LM insights
+* How the science of lang productively integrates the LM insights
+* What is the status of the formal structures discovered through ling analysis,
+  if they don’t have to be innately latent in the human brain? We believe that
+  * ling structure is as real as it ever was, and that 
+    the LM revolution presents us with important new ideas and methods
+* LMs might give us reason to update our ling theories to be more gradient,
+  usage-based, and functionalist, by serving as 
+  a proof-of-concept system that implements ideas that were previously hard to
+  formalize
 
 ## 4.1 Linguistic structure is real
 
+* systems can process language without having ling structure hardwired in.
+* ling structure is a real pattern in the sense of Dennett (1989): it
+  * a compressed and useful repr of important aspects of language. 
+  * To explain or describe ling phenomena without reference to ling structure,
+    perhaps in terms of some more reductive neural theory, 
+    would be hopelessly complex — and 
+    would make understanding LM behavior more difficult
+  * Nefdt, 2023: a worked-out theory of ling structure as real patterns
+* Figure 5 eg subject–verb agreement. Modern LMs are proficient at this task,
+  * it is likely that there are messy and heterogeneous structures and processes
+    that give rise to this rule-like behavior in models.
+  * structures in the LM  might only very noisily map onto ling categories like
+    “grammatical subject” or “number agreement”. One reaction to that might be
+  * hyper-reductive conclusion would not be productive. 
+    A theory of language which points to complex neural circuits for explaining
+    the data of subject–verb agreement, without referring to something about the
+    * example from Dennett (1989, Ch. 2): imagine 
+    * aliens who can perfectly predict human behavior using atomic physics (that
+      clump of human atoms will move towards that coffee shop) but 
+      without understanding human beliefs and desires (that the human wants
+      coffee and believes that the coffee shop will provide it). Lacking
+    * enormous cost of cumbersomeness, lack of generality, and unwanted detail
+      (Dennett, 1990, p. 189). Dennett concludes that 
+    * the concept of belief is a real pattern in that it provides an abstraction
+      * supports prediction and counterfactual reasoning based on coarse-grained
+        data.
+* any abstraction 
+  that enables simple prediction, compression, and causal modeling in this way
+  is a real pattern, fully deserving the epithet real even 
+  if there is a more reductive theory that lacks the abstraction
+
 ## 4.2 What LM interpretability can tell us about human lang
+
+* cognitive science: 
+  uncover the internal mechanisms in neural networks and brains 
+  that underlie and implement behavioral patterns (Smolensky, 1988).
+* Finding these internal mechanisms is not a prerequisite for the reality of
+  ling structure—the mechanisms may be irreducibly complex. But 
+* nL when mechanisms are found in neural networks, they can be informative 
+  not only about ling structure itself, but also about 
+  how language processing and learning may be implemented in the human brain
+
+### Interpretability in an idealized thought experiment Consider a thought
+
+* eg the ling concept of c-command (a particular relationship between
+  * posited to be important for a variety of structure-sensitive ling patterns).
+* we get embedded reprs for each word and use 
+  an interpretability method to get a repr of the 
+  pairwise relationship between each pair of words in each sentence
+  * we find that, in layer n, neuron m patterns in an interesting way.
+  * If and only if the value of that particular neuron is positive, then the
+    first word in the pair c-commands the second word. If it’s negative, then we
+  * this pattern is remarkably consistent. (N.B.: We want to be clear that no
+    experiment would ever give such clean results; LMs just don’t represent
+    anything in such human-interpretable ways.) If we did discover a result like
+  * we would be justified in drawing several conclusions. First, 
+    * the ease with which we extracted the c-command relationship would be
+      compelling evidence that, for performing ling tasks in English,
+      understanding which words c-command which other words is useful — so
+    * learning the c-command relationship is possible with relatively little
+      built-in language-specific bias. We would thus 
+      * ie without a built-in Universal Grammar. Third, we could 
+    * use this method to test various competing theories about which kinds of
+    * use these results to try to work out 
+      how an abstract structural relationship like c-command can be represented
+* If we didn’t find the c-command relationship in our model reprs,
+  that’s a trickier scenario.  
+  * It might mean that
+    * We didn't use the right methods to find c-command
+    * while c-command is critical to human processing, LMs process language sans
+      c-command. Or it might turn out that 
+    * neither humans nor models need to represent something like c-command to
+  * nL the results could be fruitful for generating hypotheses and stimulating
+    further inquiry, grounded in data and requiring precise formulations.
+    * the ling conclusions we can draw from LM interpretability experiments
+      require care, it should be relatively uncontroversial that 
+    * nL the idealized c-command experiment above would be lingally interesting
+
+### Interpretability in the real world Our c-command example is not realistic:
+
+* LMs don’t learn and represent information in neat and interpretable ways.
+  Rather, it takes a lot of work to ask questions about how LMs represent 
+  * parts of speech (Tenney+ 2019) or 
+  * grammatical dependencies (Hewitt and Manning, 2019). And the answers that
+* nL The extent to which LMs are “blackboxes” is now overstated because of 
+  * major advances in the field of neural network interpretability. For example,
+  * as discussed in Section 2.2, researchers now have a grip on how neural
+  * geometry of word embeddings to represent syntactic relations among words
+    (Hewitt and Manning, 2019; Chi+ 2020; Eisape+ 2022; Diego-Simón+ 2024).
+  * in a mechanistic way, exactly how artificial neural circuits can be used to
+    perform higher-level computations (Lindsey+ 2025), finding 
+  * neural circuits and induction heads in Transformers (Elhage+ 2021) or using
+  * sparse autoencoders to find key features in model reprs (Huben+ 2023)
+* These techniques often depend on causal manipulation (perturbation)
+  * if particular parts of the neural network are 
+    perturbed or patched in particular ways, 
+    the output is affected in predictable ways (Geiger+ 2023).
+  * eg Wang+ (2023) traces a circuit that controls the completion of an object
+    (e.g., “When Mary and John went to the store, John gave a drink to .” where
+    the intended answer is “Mary”).
+* causally study what parts of a network are responsible for particular kinds of
+  complex ling behavior like 
+  * grammatical number agreement 
+    (Lasri+ 2022; Finlayson+ 2021; Mueller+ 2022; Lakretz+ 2019), 
+  * verb conjugation (Hao and Linzen, 2023), 
+  * animacy processing (Hanna+ 2023), and 
+  * long-distance dependencies (Arora+ 2024), various kinds of 
+* demonstrated: how complex ling behavior can actually be implemented
+  * These mechanisms are strong hypotheses for 
+    how syntactic relationships are represented in the human brain as well.
+* our hope and prediction: interpretability techniques will close the gap
+  between ling theory and implementation (mechanistic interpretability is a big
+  part of “the way forward” per Millière and Buckner, 2024). 
+  * Millière, R. and Buckner, C. (2024). 
+    A philosophical introduction to language models-part ii: The way forward.
+    arXiv preprint arXiv:2405.03207.
+* exploring 
+  symbolic reprs in systems that solve genuinely interesting ling tasks, has
+  started to make good on the promise of Smolensky’s (1988) prescient vision “in
+  which traditional and connectionist theoretical constructs collaborate
+  intimately to provide an understanding of cognition”.
 
 ## 4.4 What the inductive biases of LMs can tell us about lang
 
