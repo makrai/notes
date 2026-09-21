@@ -74,8 +74,8 @@ Conference on Language, Data and Knowledge 2023
 
 * 10,062 sentences paired with continuous VAD labels (Buechel and Hahn, 2017)
 * the largest VAD-model text corpus to the best of our knowledge
-* sentences extracted from several online sources, such as blogs, essays, news
-  headlines, and tweets
+* sentences extracted from several online sources
+  eg blogs, essays, news headlines, and tweets
 * annotated with 5-point scales (ranging from 1 to 5) by crowd workers
 
 # 4 Preproc the train data
