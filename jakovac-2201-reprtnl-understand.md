@@ -1,5 +1,5 @@
 A Note on Representational Understanding
-Antal Jakovác 1 and András Telcs 1,2,3, *
+Antal Jakovác 1 and András Telcs 1,2,3
 Received 2207 Entropy 2022, 24, 1313. https://doi.org/10.3390/ e24091313
 
 # Abstract: In this paper,
