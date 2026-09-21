@@ -9,12 +9,12 @@ Antal Jakovác, András Telcs
   * a learned generative model can acquire broad regularities,
     combine information flexibly, and produce useful responses
     in domains far beyond those repred by traditional task-specific programs
-  * LLMs combined with 
+  * LLMs combined with
     retrieval, tools, external memory, verification, and multi-step control
   * hE High task performance != an explicit mechanism of cumulative cog devel
   * in LLM sys, much of the knowledge supporting a response remains
-    distributed across 
-    model parameters, the current context, retrieved information, and 
+    distributed across
+    model parameters, the current context, retrieved information, and
     external components
   * A successful solution can be stored, supplied again, or used for further
     training
@@ -35,16 +35,16 @@ Antal Jakovác, András Telcs
     * LM != the solver or its knowledge
     * LM is a flexible navigation proposer that
       suggests possible operations over the solver’s current structured state
-    * The same functional role could be implemented by 
-      deterministic graph navigation, a heuristic search policy, 
+    * The same functional role could be implemented by
+      deterministic graph navigation, a heuristic search policy,
       another learned model, or a combination of mechanisms
 * The persistent object that develops is the Knowledge Space, while proposal
   mechanisms are replaceable components used to navigate it
 * The proposed architecture seeks to place LM capabilities in a different
   developmental organization
-  * examine whether a solver can 
+  * examine whether a solver can
     construct and reorganize an explicit conceptual and procedural universe
-    through the verified tasks it receives, 
+    through the verified tasks it receives,
     without task-specific external instruction about what it should learn
 * Existing work on agents, memory, retrieval, neuro-symbolic systems, lifelong
   learning, and self-improvement addresses important parts of this
@@ -73,16 +73,16 @@ Antal Jakovác, András Telcs
   * These outcomes must remain distinguishable
   * In particular,
     * insertion of a new KS element is an update operation, whereas
-    * abstraction, generalization, and extension describe 
+    * abstraction, generalization, and extension describe
       different changes in representational content
 * The weak solver introduced in the preceding work
   established finite workability of this approach
   * Starting from a small KS and a fixed set of elementary operations, it could
     solve bounded structured tasks, verify its steps, and
     record the resulting traces
-  * deliberate limitations: the available operations, search bounds, 
+  * deliberate limitations: the available operations, search bounds,
     task representation, and mechanisms of KS development were fixed and small
-  * demonstrated: structured, verifiable problem solving is possible 
+  * demonstrated: structured, verifiable problem solving is possible
     * no general architecture for navigating a larger and evolving KS
 * The present paper addresses this next problem
   * As the KS grows, the solver must select a task-relevant local structure,
