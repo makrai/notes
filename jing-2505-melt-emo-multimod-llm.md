@@ -4,98 +4,96 @@
         arXiv:2505.24493 [cs.AI]
 
 * speech emotion recognition (SER) advanced significantly with deep learning,
-* annotation remains a major hurdle.
+* annotation remains a major hurdle
   * Human annotation is not only costly but also subject to inconsistencies
     * annotators often have different preferences and may
     * lack the necessary contextual knowledge, which can lead to
-    * varied and inaccurate labels.
-* LLMs have emerged as a scalable alternative for annotating text data. However,
+    * varied and inaccurate labels
+* LLMs have emerged as a scalable alternative for annotating text data
   * LLMs to do emotional speech data annotation without human supervision
-    has yet to be thoroughly investigated. To address these problems,
-* we apply GPT-4o to annotate a multimodal dataset collected from Friends, using
-  * only textual cues as inputs. By crafting
+    has yet to be thoroughly investigated
+* we apply GPT-4o to annotate a multimodal dataset collected from Friends
+  * only textual cues as inputs
   * structured text prompts, our methodology capitalizes on the knowledge
     * incorporating cross-validation and CoT reasoning
       to ensure consistent and accurate annotations
   * GPT-4o can generate accurate and contextually relevant annotations
-* we propose MELT, a multimodal emotion dataset fully annotated by GPT-4o.
-* We fine-tune four self-supervised learning (SSL) backbones and assessing
-  speech emotion recognition performance across emotion datasets.
+* we propose MELT, a multimodal emotion dataset fully annotated by GPT-4o
+* We fine-tune four self-supervised learning (SSL) backbones and assess their
+  speech emotion recognition performance across emotion datasets
   * SSL backbone frozen
-* our subjective experiments' resu: consistence performance improvement on SER
+* our subjective experiments': consistence performance improvement on SER
 
 # 1. Introduction
 
-* Recognizing human emotion and responding accordingly is 
-  a cornerstone of human-computer interaction [1]. The progress made by
+* Recognizing human emotion and responding accordingly
+  * a cornerstone of human-computer interaction [1]. The progress made by
   * deep-learning-based emotion recognition <~ well-annotated datasets [2]
   * accurate and consistent annotation <~ multiple annotators and validation,
-  * significant costs limit dataset scale and diversity In addition, researches
-  * : contextual knowledge is required to capture characters’ emotions [3, 4]
-    Meanwhile, research [5] indicates that 
+  * significant costs limit dataset scale and diversity
+  * contextual knowledge is required to capture characters’ emotions [3, 4]
   * individual preferences and cultural backgrounds [5]
-  * contextual understanding and individual preferences [should be] 
-    a primary factor in the selection of annotators.
-  * Amazon Mechanical Turk (AMT), a widely used crowdsourcing platform for data
-    * lack of qualification tests to ensure annotators’ familiarity with the
-      target samples. With the introduction of the OpenAI’s Generative
-* GPT models and LLMs perform more complex tasks with scaling [6, 7, 8]. Several
-  * LLMs as annotators using existing datasets [9, 10]. For instance, 
-  * Gilardi+ [11]: that ChatGPT outperformed crowd workers by approximately 25%
-    * intercoder agreement surpassing humans across all evaluated tasks. Due to
-  * these studies predominantly concentrate on text-based datasets. In the
-  * audio: WavCaps [12] utilized 
-    ChatGPT to compile large-scale, high-quality audio captions, 
-    further highlighting the potential of LLMs in generating reliable annots.
-    * facilitated by the use of tags describing the audio files that comprise
-      WavCaps; thus, 
-      ChatGPT did not introduce novel information, but rather reframed the in-
-      formation provided by humans. 
-  * Pengi [13] introduces an Audio Language Model by 
-    reframing all audio tasks as text-generation tasks, which 
+  * contextual understanding and individual preferences [should be]
+    a primary factor in the selection of annotators
+  * Amazon Mechanical Turk (AMT), a widely used crowdsourcing platform
+    * lack of qualification tests
+      to ensure annotators’ familiarity with the target samples
+* LLMs esp GPT perform more complex tasks with scaling [6, 7, 8]
+  * LLMs as annotators using existing datasets [9, 10]
+  * Gilardi+ [11]: ChatGPT outperformed crowd workers by approximately 25%
+    * intercoder agreement surpassing humans across all evaluated tasks
+  * these studies predominantly concentrate on text-based datasets
+  * audio: WavCaps [12]
+    * ChatGPT to compile large-scale, high-quality audio captions,
+      further highlighting the potential of LLMs in generating reliable annots
+    * facilitated by the use of **tags** describing the audio files
+      * ChatGPT did not introduce novel information, but rather reframed that
+        provided by humans
+  * Pengi [13] introduces an Audio Language Model by
+    reframing all audio tasks as text-generation tasks, which
     accepts an audio recording and a text prompt as inputs and subsequently
-    outputs free-form text.
-  * The SECap [14] framework utilizes the 
+    outputs free-form text
+  * The SECap [14] framework utilizes the
     LLaMA decoder to generate fluent and coherent captions describing emotional
-    speech by leveraging QFormer embeddings. However, these approaches 
+    speech by leveraging QFormer embeddings
   * hE not only/but also
-    * rely on datasets with existing high-quality emotion annotations— which are
-      * limited in scale due to the high costs of collection— but also 
-    * require additional audio features for LLM decoders to generate captions.
-  * ? the potential of LLMs to automatically annotated audio datasets with
-    captions without any human labor, solely leveraging their contextual
-    understanding, remains relatively underexplored, highlighting a gap in the
+    * rely on datasets with existing high-quality emotion annotations
+      * limited in scale due to the high costs of collection— but also
+    * require additional audio features for LLM decoders to generate captions
+  * ? the potential of LLMs to automatically annotated audio datasets
+    * captions without any human labor,
+      solely leveraging LLM's contextual understanding
 * GPT-4o: Trained on an extensive corpus of web-sourced data [8, 15], frontier
-  * encode knowledge regarding culturally significant content.
-  * especially for widely popular media, such as “Friends”. 
-  * We consider 
-    the vast corpus of internet data that the model has been trained upon 
-    as an implicit “collective knowledge base”, reflecting 
-    the shared understanding and engagement of a broad audience. 
-  * We exploit this knowledge to re-annotate MELD – 
-    * MELD: a multimodal dataset derived from “Friends”.
-* we propose 
+  * encode knowledge regarding culturally significant content
+  * especially for widely popular media, such as “Friends”
+  * We consider
+    the vast corpus of internet data that the model has been trained upon
+    as an implicit “collective knowledge base”, reflecting
+    the shared understanding and engagement of a broad audience
+  * We exploit this knowledge to re-annotate MELD
+    * MELD: a multimodal dataset derived from “Friends”
+* we propose
   the Multimodal Emotion-Lines Dataset Labeled with LLM ContexT Knowledge (MELT)
   extending GPT-4o’s annotation capabilities from text-only emotion data to
-  multimodal data by leveraging its embedded knowledge.
+  multimodal data by leveraging its embedded knowledge
   * experiments indicate that MELT aligns more closely with human preferences,
-    as evidenced by subjective evaluations. Furthermore, 
-  * models trained on MELT exhibit improved generalization and robustness 
-    across different speech emotion recognition (SER) datasets, 
+    as evidenced by subjective evaluations. Furthermore,
+  * models trained on MELT exhibit improved generalization and robustness
+    across different speech emotion recognition (SER) datasets,
     ie LLMs’ potential for tasks that extend beyond conventional text-based
-    approaches.
-  * ie LLMs in creating scalable and efficient annotation pipelines, while also
-    * ability to address complex contextual tasks. 
+    approaches
+  * ie LLMs in creating scalable and efficient annotation pipelines
+    * ability to address complex contextual tasks.
 * To the best of our knowledge, this work is the first to explore
-  GPT models as annotators for multimodal emotion data, 
-  leveraging insights from the knowledge it has assimilated in its training.
+  GPT models as annotators for multimodal emotion data,
+  leveraging insights from the knowledge it has assimilated in its training
 * contributions is as follows:
-  * a context-aware automatic annotation method using GPT-4o, with 
+  * a context-aware automatic annotation method using GPT-4o, with
     consistent emotional tone across samples, resulting in the MELT, which
-    outperforms MELD, the human-labeled counterpart.
-  * a prompting framework with 
-    cross-validation and Chain-of-thoughts (CoT) reasoning 
-    for multimodal emotion annotation.
+    outperforms MELD, the human-labeled counterpart
+  * a prompting framework with
+    cross-validation and Chain-of-thoughts (CoT) reasoning
+    for multimodal emotion annotation
   * A significant reduction in costs (≤ $10) to achieve high-quality annots
 
 # 2. Methodology, focusing on prompting framework
@@ -105,30 +103,30 @@
 * Multimodal EmotionLines Dataset (MELD) [16], built from “Friends”, comprises
   1,433 dialogues and 13,708 utterances. Each utterance is
 * seven categories (Joy, Sadness, Fear, Anger, Surprise, Disgust, Neutral) based
-  * majority vote among three annotators.
+  * majority vote among three annotators
 * MELT is derived from MELD using the following steps:
   * utterances shorter than one second were excluded, as
-    * classifying short speech remains a significant challenge in SER [17, 18].
+    * classifying short speech remains a significant challenge in SER [17, 18]
       [17] M. D. Pell and S. A. Kotz,
       “On the time course of vocal emotion recognition,”
-      PlOS one, vol. 6, no.  11, p. e27256, 2011.
+      PlOS one, vol. 6, no.  11, p. e27256, 2011
       [18] P. Kumawat and A.  Routray
       “Applying tdnn architectures for
         analyzing duration dependencies on speech emotion recognition.” in
-        Interspeech, 2021, pp.  3410–3414.
+        Interspeech, 2021, pp.  3410–3414
   * we excluded characters whose names do not provide enough context for GPT-4o
-    to maintain consistency.
+    to maintain consistency
     * 260 unique characters in the training set and 100 in the test set, with
-      some overlap.
+      some overlap
     * Certain characters, such as “1st Customer” and “Receptionist,”
       lack clear identifiers like names or gender in the textual modality, which
-      conflicted with the prompt design guidelines in Section 2.3.
+      conflicted with the prompt design guidelines in Section 2.3
 
 ## 2.2. GPT Model Selection
 
 * We utilize the OpenAI API 1 to access the ‘gpt-4o-2024-08-06’ model with a
   temperature of 1.0 for speech emotion annotation. For simplicity, ‘GPT-4o’
-  is used throughout the following sections. GPT-4o, with its 
+  is used throughout the following sections. GPT-4o, with its
 * October 2023 knowledge base cutoff 2 , integrates updated data, reducing
 * ie no reliance on fine-tuning or retrieval-augmented generation (RAG) [8]
 
@@ -137,31 +135,31 @@
 * prompt engineering significantly impacts the performance of LLMs [19] To
   * optimize performance while ensuring stability and reproducibility, we adhere
 * principles:
-  * Clear, Contextual, and Specific: 
-    Include as much relevant context as possible while 
+  * Clear, Contextual, and Specific:
+    Include as much relevant context as possible while
     avoiding ambiguity in instructions to enhance the model’s unders of the task
   * Chain of Thought (CoT) Prompting: Break tasks into distinct, logical steps
   * Cross-Validation:
-    requests for known or easily verifiable information 
-    to reduce the likelihood of generating incorrect or unrelated content.
+    requests for known or easily verifiable information
+    to reduce the likelihood of generating incorrect or unrelated content
   * Guide Output with Prefilling Responses: Structure prompts (eg JSON or XML)
 
 ```text
-Given the following line of dialogue from a Friends character, 
-the format will be: 
+Given the following line of dialogue from a Friends character,
+the format will be:
 "[speaker] at s[season]e[episode] said: [utterance]"
 
-Please describe how the character’s voice might sound. 
+Please describe how the character’s voice might sound.
 Include details about:
-the emotion expressed,
-the loudness,
-the pitch,
-the rhythm speed,
-the overall emotional impact of the voice.
+- the emotion expressed,
+- the loudness,
+- the pitch,
+- the rhythm speed,
+- the overall emotional impact of the voice.
 
 Format your response:
-Provide the character’s name and a brief context.
-The emotion label must be selected from the following list: 
+- Provide the character’s name and a brief context.
+- The emotion label must be selected from the following list:
   [Anger, Disgust, Sadness, Joy, Neutral, Surprise, Fear].
 
 Format the response in the following JSON structure:
@@ -183,14 +181,14 @@ Format the response in the following JSON structure:
 * Following Section 2.1, MELT retains
   42 unique speakers across both the training and test sets, ensuring
   consistency and fair evaluation. As summarized in
-* Table 1, approximately 70% of the original utterances in MELD preserved.
+* Table 1, approximately 70% of the original utterances in MELD preserved
   * #Utt, #Spk, #Avg. Sec. represents utterance number, speaker number, and
 * Table 2 compares the label distribution and statistical characteristics of
-  the MELT and filtered MELD datasets.
+  the MELT and filtered MELD datasets
   * Both datasets are dominated by the ‘neutral’ emotion, followed by ‘joy’,
     while ‘anger’, ‘sadness’, and ‘fear’ are underrepresented. Notably,
   * MELT shows a more balanced distribution, with
-    training and test sets maintaining an approximate 4:1 ratio across labels.
+    training and test sets maintaining an approximate 4:1 ratio across labels
 * Fig. 1,
   * Confusion matrix and inter-label transition matrix of the training and test
     dataset
@@ -198,23 +196,23 @@ Format the response in the following JSON structure:
   * the overall label proportions between the two datasets are similar for most
     emotions. However,
   * hE ‘sad’ and ‘anger’ exhibit significant reannotation, with
-    most samples being relabeled as ‘neutral’ and ‘surprise’, respectively.
-  * likely reflects overlapping features or ambiguous original annotations.
+    most samples being relabeled as ‘neutral’ and ‘surprise’, respectively
+  * likely reflects overlapping features or ambiguous original annotations
   * labels such as ‘neutral’ and ‘joy’ remain consistent, emotions like
   * ‘fear’ and ‘disgust’ are more frequently reannotated,
-    potentially due to inherent ambiguity.
+    potentially due to inherent ambiguity
 * The percentage of label changes is
   * comparable in both datasets (46.43% in training and 47.52% in testing), with
-  * slightly higher changes in the test set.
+  * slightly higher changes in the test set
 
 # 4. Experiments
 
 ## 4.1. Subjective Experiment
 
-* 20 participants (11 males and 9 females): a Mean Opinion Score (MOS) exper.
+* 20 participants (11 males and 9 females): a Mean Opinion Score (MOS) exper
 * instructed to watch the video clips and presented with
   two options—MELT and MELD annotations, without knowing their sources —from
-  asked to select the description they deemed more appropriate.
+  asked to select the description they deemed more appropriate
 
 ## 4.2. Objective Experiments
 
@@ -223,14 +221,14 @@ Format the response in the following JSON structure:
 * The SER evaluation system in Fig. 2 consists of two main components:
   * a pretrained Self-supervised learning (SSL) backbone, which is initialized
     by the pretrained weight on huggingface.co 3 and
-  * a classification module.
+  * a classification module
 * four pretrained SSL weights:
   ‘facebook/wav2vec2-base-960h[20]’ (wav2vec 2.0 base) ,
   ‘audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim [21]’ (wav2vec 2.0 Aud),
   ‘facebook/hubert-base-ls960 [22]’ (Hubert Base), and
-  ‘microsoft/wavlm-base-plus [23]’ (WavLM Base+).
+  ‘microsoft/wavlm-base-plus [23]’ (WavLM Base+)
 * The classification module consists of
-  two fully connected layers with a ReLU activation function between them.
+  two fully connected layers with a ReLU activation function between them
   * dynamically adjusted to match the number of emotion categories in the test
   * the weighted sum of hidden states as the input of this classification module
 
@@ -240,9 +238,9 @@ Format the response in the following JSON structure:
   * for fair comparison, we impose two conditions on data filtering:
     * only emotion categories present in the test set are retained by filtering
     * training data is restricted to audio samples that are common to both
-      datasets.
+      datasets
 * Out-of-domain Datasets: We additionally perform crosscorpus testing on the
-  following datasets to test the generalizability of the trained models.
+  following datasets to test the generalizability of the trained models
   * IEMOCAP [24]
     * we use a subset of the original labels by merging ‘happy’ and ‘excited’,
       * following the convention in the literature to
@@ -250,26 +248,26 @@ Format the response in the following JSON structure:
       (1,103 angry, 1,636 happy, 1,708 neutral, and 1,084 sad)
   * TESS [25]: The set consists of
     * 2,800 clips representing seven emotions:
-      anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral.
-    * we set the data labeled ‘pleasant surprise’ to ‘surprise’.
+      anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral
+    * we set the data labeled ‘pleasant surprise’ to ‘surprise’
       * To align with MELT ,
   * RAVDESS [26]'s speech portion
     * 1,440 utterances across 8 emotion categories:
       * neutral, calm, happy, sad, angry, fearful, surprise, disgust.  During
     * we excluded the ‘calm’ category, resulting
-    * 1,248 utterances in test set.
+    * 1,248 utterances in test set
   * CREMA-D [27]: It contains
     * 7,442 clips recorded, featuring
     * both facial and vocal expressions across six basic emotional states:
-      * happy, sad, angry, fearful, disgust, and neutral.
+      * happy, sad, angry, fearful, disgust, and neutral
 
 ## 4.3. Experiment Settings
 
 * Adam optimizer with a batch size of 32, a learning rate of 0.001, and a
-  dropout rate of 0.2 for 100 epochs.
-* Audio data are resampled to 16 kHz and randomly cropped or padded to 5 secs.
+  dropout rate of 0.2 for 100 epochs
+* Audio data are resampled to 16 kHz and randomly cropped or padded to 5 secs
 * test: batch size was set to 1, and no length adjustment was required. All
-* Python 3.10.8 and PyTorch 2.  environment on a single Nvidia RTX 3090 GPU.
+* Python 3.10.8 and PyTorch 2.  environment on a single Nvidia RTX 3090 GPU
 
 # 5. Results and Analysis
 
@@ -280,12 +278,12 @@ Format the response in the following JSON structure:
     GPT-4o effectively integrates internet-sourced knowledge to capture the
     diversity in expressions. However, an
   * hE opposite trend is observed for ‘fear’ and ‘sadness’, as
-    they mostly transition to ‘neutral’, as shown in Fig. 1.
+    they mostly transition to ‘neutral’, as shown in Fig. 1
   * These reannotated audio clips often feature
     lower arousal and subtler emo contexts
   * The comparable preferences suggest possible biases stemming from GPT-4o’s
-    reliance on internet-derived emotional knowledge.
-* Classification results are summarized in Table 3.
+    reliance on internet-derived emotional knowledge
+* Classification results are summarized in Table 3
   * metrics: unweighted accuracy recall (UAR), accuracy (ACC), and F1 score, are
   * in-domain results trained on MELT generally outperform the original MELD,
     ie our annotation improves upon the self-supervised (SSL) benchmark
@@ -299,10 +297,10 @@ Format the response in the following JSON structure:
     * the remaining two models exhibited minimal improvements in UAR and ACC,
       * slight decline in F1 scores compared to results on the MELD dataset. For
   * IEMOCAP and CREMA-D, which only partially overlap with MELT , the
-    * test performance varies across different model backbones.
+    * test performance varies across different model backbones
       * wav2vec 2.0 Aud achieves the most substantial performance improvement on
         both datasets, while
-      * wav2vec 2.0 Base shows relatively modest gains.
+      * wav2vec 2.0 Base shows relatively modest gains
         ie pretraining is important in enhancing model performance,
         particularly if limited or partial alignment to the training annot
 
@@ -312,17 +310,17 @@ Format the response in the following JSON structure:
   * query generation pipeline proposed by ParaCLAP [29]
     to categorize descriptions and
     extract the extended Geneva Minimalistic Acoustic Parameter Set (eGeMAPS)
-    [30] using openSMILE [31].
+    [30] using openSMILE [31]
 * pitch and loudness attributes are binned according to their distribution
   (bottom 30 %, middle 40 %, top 30 %) and pseudo-captions are mapped
-  accordingly (i. e., low/mid/high).
+  accordingly (i. e., low/mid/high)
 * Across both the training and test sets,
   all metrics consistently surpass random guessing, demonstrating that
   ie GPT-4o effectively captures relevant characistics from its embedded knowl
   * the performance of pitch exceeds that of loudness,
     likely reflecting human preferences in voice descriptions [32], which may
 * still falling short of SOTA results, nL showcase the potential of LLMs with
-  further refinement for tasks traditionally dominated by handcrafted features.
+  further refinement for tasks traditionally dominated by handcrafted features
 
 # 6. Conclusion
 
