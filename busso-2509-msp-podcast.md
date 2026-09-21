@@ -28,15 +28,15 @@ IEEE Transactions on Affective Computing submission arXiv:2509.09791 [eess.AS]
   arousal (calm versus active), and
   dominance (weak versus strong)
 
-| Corpus                              | Size | #spk | Size    | #Spkr   | Type               | Language           |
-|-------------------------------------|------|------|--------:|---------|--------------------|--------------------|
-| MSP-PODCAST 2.0 (this paper)        | ✓    | ✓    | 407h    | xxx     | Spontaneous        | English            |
-| Dusha [20]                          | ✓    | ✓    | 346h36m | 8,308   | Acted, Spontaneous | Russian            |
-| Crowdsourcing Emotional Speech [21] | ✓    | ✓    | 187h    | 2,965   | Spontaneous        | English            |
-| BIIC-Podcast [15]                   | ✓    | x    | 147h26m | Unknown | Spontaneous        | Taiwanese Mandarin |
-| MIKU-EmoBench [22]                  | ✓    | x    | 131h12m | Unknown | Spontaneous        | Multiple           |
-| CMU-MOSEAS [23]                     | ✓    | ✓    | 68h49m  | 1,645   | Spontaneous        | Multiple           |
-| CMU-MOSEI [24]                      | ✓    | ✓    | 65h53m  | 1,000   | Spontaneous        | English            |
+| Corpus                              | Size | #spk | Size      | #Spkr   | Type               | Language           |
+|-------------------------------------|------|------|--------:--|---------|--------------------|--------------------|
+| MSP-PODCAST 2.0 (this paper)        | ✓    | ✓    | 407h      | xxx     | Spontaneous        | English            |
+| Dusha [20]                          | ✓    | ✓    | 346h:36m  | 8,308   | Acted, Spontaneous | Russian            |
+| Crowdsourcing Emotional Speech [21] | ✓    | ✓    | 187h      | 2,965   | Spontaneous        | English            |
+| BIIC-Podcast [15]                   | ✓    | x    | 147h:26m  | Unknown | Spontaneous        | Taiwanese Mandarin |
+| MIKU-EmoBench [22]                  | ✓    | x    | 131h:12m  | Unknown | Spontaneous        | Multiple           |
+| CMU-MOSEAS [23]                     | ✓    | ✓    |  68h:49m  | 1,645   | Spontaneous        | Multiple           |
+| CMU-MOSEI [24]                      | ✓    | ✓    |  65h:53m  | 1,000   | Spontaneous        | English            |
 
 * Fig. 2. Histogram showing the distribution of speaking turn durations
 * Fig. 3. Histogram showing the number of files in the MSP-Podcast 2.0 corpus
