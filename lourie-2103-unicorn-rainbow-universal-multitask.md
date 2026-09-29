@@ -265,12 +265,12 @@ https://github.com/allenai/rainbow
 * more common sense benchmarks exist beyond what we could explore here
   (Roemmele, Bejan, and 2011; Levesque, Davis, and 2011; Mostafazadeh+ 2016)
 
-## Transfer Learning. Semi-supervised and transfer learning have grown into
+## Transfer Learning. Semi-supervised and transfer learning
 
-* unsupervised representations of words (Brown+ 1992; Mikolov+ 2013), while
+* unsupervised representations of words (Brown+ 1992; Mikolov+ 2013)
 * contextualized representations from neural language models (Peters+ 2018)
 * Radford+ (2018): language models could be fine-tuned directly to solve a
-  wide-variety of tasks by providing the inputs encoded as text, while
+  wide-variety of tasks by providing the inputs encoded as text
 * Devlin+ (2019) and others improved upon the technique
   (Yang+ 2019; Liu+ 2019b; Lan+ 2019)
   * Yang Z; Dai Z; Yang Y; Carbonell J; Salakhutdinov R R; and Le Q V

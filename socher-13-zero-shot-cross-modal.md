@@ -42,7 +42,8 @@ Zero-Shot Learning Through Cross-Modal Transfer
 * vectors of distributional characteristics
   * most often their co-occurrences with words in context
   * have proven very effective in natural language processing tasks such as
-    * sense disambiguation (Torralba+ NIPS 2012), thesaurus extraction [23, 8]
+    * sense disambiguation (Torralba+ NIPS 2012), 
+    * thesaurus extraction [23, 8]
       * A. Torralba R. Salakhutdinov, J. Tenenbaum
       * Learning to learn with compound hierarchical-deep models
     * cognitive modeling
