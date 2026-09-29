@@ -153,7 +153,13 @@ September 2026 lingbuzz/010349
 # 3 eg meat is murder : what runs cold, what requires warmth, 
 and why the slogan is three words long. 
 
-* The statics of meat contain, as preconditions, the production of the thing
+* summ (from the next sec)
+  * a form that promises cold, a content whose chain is deduction at every step
+    but one, and a single taught boundary whose suspension the slogan requests
+  * Nobody disputes the slogans by denying that taxation involves taking, or
+    that meat involves killing; the dispute goes straight to the victim slot and
+    the legitimacy line, which is where the theory says the only warm step is.
+* meat contain, as preconditions, the production of the thing
   * meat is flesh taken for the table, and – humans not being carrion-eaters –
   * taken means killed. Meat requires killing is therefore available
   * murder decomposes, equally cold, as killing plus wrong. Now run the chain:
@@ -267,10 +273,104 @@ and why the slogan is three words long.
 # 4 eg2 property is theft and taxation is theft
 * the machinery measures rhetorical craft, not political merit. 
 
-# 5 anaphora resolution – he beat him – and to Winograd schemas, arguing that
-* the resolution is the same competition run over discourse. 
+# 5 anaphora resolution – he beat him – and to Winograd schemas
+* the resolution is the same competition run over discourse
+
+* a case that the tradition would have to parcel out among syntax, semantics,
+  and pragmatics (Kornai, 2012): 
+
+  (5) Someone disrespected his brother, so he beat him to pulp, 
+  because blood is thicker than water.
+
+* The grammar’s contribution is limited but precise: the index structure. In the
+  * first clause someone is linked as subject of disrespect and his brother as
+    object, with 
+  * his already admits two readings – the disrespecter’s own brother, or a
+    second party’s; write p for the disrespecter, q for the brother-haver, and b
+  * second clause he and him are addressing instructions pure and simple, 
+  * _so_ and _because_ are relationals whose first slots want clause-sized
+    matters, and the proverb is a bare copular generic. The grammar’s entire
+    deliverable is thus r beat s, with r and s unresolved addresses – an
+    addressing indeterminacy of exactly the kind familiar from PP-attachment –
+    and syntax has nothing further to say. The candidates are not three
+    individuals but the joint assignments to the triple (his, he, him). 
+  * With _his_ read as p’s own, the players are p and b and (r, s) ranges over
+  * every speaker of English resolves the addresses the same way: it is q, not b
+  * The resolution runs entirely in the evaluation. 
+  * disrespect contain attack; brother contain family. 
+  * The proverb (blood is thicker than water) is the interesting piece: 
+    * run cold and literally it is true – the viscosity of blood is roughly 4x
+    * actually contributes is its annealed reading, in the sense of Section 3:
+      a boundary crossing that was warm for its first hearers has cooled into
+      convention, and the phrase is now 
+    * a lexicalized unit whose content is a bare comparative over the statics,
+      family er_ gen – family outranks non-family, in the primitives of Kornai
+      (2023). From there everything runs at zero temperature, and the chaining
+  * disrespecting a brother is an attack on family; family outranks non-family,
+    so an attack on family counts as an attack on self; and 
+  * the sociobiological law ‘attack should be followed by counterattack’ – a
+    two-state before/after schema with modal force, no different in kind from
+    the lexical entry of rest, which also holds a before(tired) and an after(has
+    energy) (Kornai, 2019) – delivers counterattack by the offended party.
+* Anaphora resolution is kāraka assignment run over the discourse: the same
+  candidates, the same scores, the same cold limit.
+* Winograd sentence (Winograd, 1972) 
+
+  (6) The city councilmen refused the demonstrators a permit because they
+  {feared / advocated} violence.  
+
+  * councils issue permits and fear disorder, 
+    demonstrators march and advocate.
+  * The Winograd schema (Levesque, Davis, and Morgenstein, 2012) is the
+    minimal-pair genre the present theory predicts should exist: delta structure
+    identical across the pair, all the work in the evaluation, and no amount of
+    syntactic sophistication sufficient to resolve it. The subsequent career of
+    the schema challenge is equally predicted: 
+  * constructed as a wall against statistical pattern-matching, it fell to LLMs
+    (Kocijan+ 2023) – systems whose 
+    * LLM's lexical statics are learned geometry and their machin is attention 
+    * ie LLM run eq (2) over exactly the resources the analysis above deploys.
 
 # 6 collects the claims. 
+
+* Four classical mysteries have now been put in the form of equation (2), and it
+  * demarcation: the candidates are competing analyses of a string, and the
+    * ungrammaticality star marks odds diverging in the cold limit. In 
+  * analyticity: the candidates are the neighboring sense-continuations of the
+    subject, and the 
+    * analytic truth is the retrieval that survives as T → 0. In 
+  * kāraka assignment – and, run over discourse, in anaphora resolution – the
+    candidates are participants. In 
+  * rhetoric: the candidates are evaluation policies, thermostat settings, whose
+    relative accessibility the utterance’s form manipulates: what the slogan
+    negotiates is which policy the hearer runs, not the physics of the running.
+    One equation, one thermostat; and the discipline cuts both ways, since
+    whatever cannot be put in the form of (2) does not get to share it.
+* What we do not claim is worth stating with equal care. We do not claim that
+  * the temperature parameter [not[ explains where the scores come from – the
+    lexical statics carry that load, here taken from Kornai (2023) but
+    replaceable by any sufficiently articulated lexicon, including the learned
+    kind (Bricken+ 2023). We do not claim that 
+  * current LMs validate the analysis [not] merely by containing softmaxes; 
+    the substantive predictions – that the parse of (1b) survives workspace
+    ablation while its uptake does not, that resistance to a slogan localizes at
+    its one warm step – are empirical, and stated so as to be falsifiable. And
+  * [no] novelty for the machinery, which is exactly the point: the linguist who
+    has read Hayes and Wilson (2008) has already used it, and the Appendix, to
+    which we turn now, makes this identification inescapable.
+* What we do claim can be held to the standard any cross-domain identity must
+  meet: variables defined independently in each domain, a derivation in each, a
+  measurable parameter, and predictions under intervention. 
+  * The variables are the candidates and their scores, supplied domain by
+    domain; 
+  * the derivation is the free-energy trade-off of Appendix A.1, the same in
+    each; 
+  * the parameter is fitted by the phonologist, fixed by the architect, and, in
+    evaluation, set by the instruction; and 
+  * the predictions under intervention are the two of Section 3, ablation of the
+    workspace and the location of resistance. What remains owed is 
+  * the derivation of the scores themselves belongs to the lexical statics, not
+    the thermostat.
 
 # The appendix is a tutorial for the working linguist
 
