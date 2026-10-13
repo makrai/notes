@@ -136,9 +136,9 @@ via Supervised and Preference Optimization
 
 ### Az AstroSpeech-hez lásd még
 
-* [Verena Rieser keynoteját](/README.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
+* [Verena Rieser keynoteját](/README-old/acl-25-wien.md#verena-rieser-whose-gold-re-imagining-alignment-for-truly-beneficial-ai)
 az eltérő annotációk modellezéséről.
-* [Appraisal](/README.md#an-appraisal-theoretic-approach-to-modelling-affect-flow)
+* [Appraisal](/README-old/acl-25-wien.md#an-appraisal-theoretic-approach-to-modelling-affect-flow)
 
 ### Narrative
 
@@ -176,7 +176,7 @@ az eltérő annotációk modellezéséről.
   computational efficiency
 * case studies in mental health and empirical phenomenology
 
-### Surprisal (see [CoNLL](/README.md#conll-day-1) as well)
+### Surprisal (see [CoNLL](/README-old/acl-25-wien.md#conll-day-1) as well)
 
 #### The Inverse Scaling Effect of Pre-Trained Language Model Surprisal Is [Not Due to Data Leakage](https://aclanthology.org/2025.findings-acl.91/)
 
@@ -706,40 +706,40 @@ in Conversation Corpora
 ### Csoportosítva (Alapvetően ChatGPT-vel)
 
 #### 1. Model architectures, training strategies, fine-tuning, and interpretability
-- [TUBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs](/README.md#tuba)
-- [A Semantic-Aware Layer-Freezing Approach](/README.md#a-semantic-aware-layer-freezing-approach)
-- [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/README.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
-- [EXECUTE: a multilingual benchmark for LLM token understanding](/README.md#execute-a-multilingual-benchmark-for-llm-token-understanding)
-- [Small Models, Big Impact](/README.md#small-models-big-impact)
-- [Limited-Resource Adapters Are Regularizers, Not Linguists](/README.md#limited-resource-adapters-are-regularizers-not-linguists)
-- [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/README.md#denselora-dense-low-rank-adaptation-of-llms)
-- [ModerBERT](/README.md#moderbert)
-- [Generative Pretrained Structured Transformers](/README.md#generative-pretrained-structured-transformers)
-- [The Hidden Attention of Mamba Models](/README.md#the-hidden-attention-of-mamba-models)
-- [Circuit Stability Characterizes Language Model Generalization](/README.md#circuit-stability-characterizes-language-model-generalization)
-- [From Directions to Cones](/README.md#from-directions-to-cones)
-- [Middle-Layer Representation Alignment](/README.md#middle-layer-representation-alignment)
-- [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](/README.md#unveiling-language-specific-features-in-llms-via-sparse-autoencoders)
-- [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/README.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
-- [A Systematic Study of Compositional Syntactic Transformer Language Models](/README.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
+- [TUBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs](/README-old/acl-25-wien.md#tuba)
+- [A Semantic-Aware Layer-Freezing Approach](/README-old/acl-25-wien.md#a-semantic-aware-layer-freezing-approach)
+- [Task-Informed Anti-Curriculum by Masking Improves Downstream Performance on Text](/README-old/acl-25-wien.md#task-informed-anti-curriculum-by-masking-improves-downstream-performance-on-text)
+- [EXECUTE: a multilingual benchmark for LLM token understanding](/README-old/acl-25-wien.md#execute-a-multilingual-benchmark-for-llm-token-understanding)
+- [Small Models, Big Impact](/README-old/acl-25-wien.md#small-models-big-impact)
+- [Limited-Resource Adapters Are Regularizers, Not Linguists](/README-old/acl-25-wien.md#limited-resource-adapters-are-regularizers-not-linguists)
+- [DenseLoRA: Dense Low-Rank Adaptation of LLMs](/README-old/acl-25-wien.md#denselora-dense-low-rank-adaptation-of-llms)
+- [ModerBERT](/README-old/acl-25-wien.md#moderbert)
+- [Generative Pretrained Structured Transformers](/README-old/acl-25-wien.md#generative-pretrained-structured-transformers)
+- [The Hidden Attention of Mamba Models](/README-old/acl-25-wien.md#the-hidden-attention-of-mamba-models)
+- [Circuit Stability Characterizes Language Model Generalization](/README-old/acl-25-wien.md#circuit-stability-characterizes-language-model-generalization)
+- [From Directions to Cones](/README-old/acl-25-wien.md#from-directions-to-cones)
+- [Middle-Layer Representation Alignment](/README-old/acl-25-wien.md#middle-layer-representation-alignment)
+- [Unveiling Language-Specific Features in LLMs via Sparse Autoencoders](/README-old/acl-25-wien.md#unveiling-language-specific-features-in-llms-via-sparse-autoencoders)
+- [RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs](/README-old/acl-25-wien.md#romanlens-the-role-of-latent-romanization-in-multilinguality-in-llms)
+- [A Systematic Study of Compositional Syntactic Transformer Language Models](/README-old/acl-25-wien.md#a-systematic-study-of-compositional-syntactic-transformer-language-models)
 
 #### 2. Evaluation, benchmarks, and performance analysis
-- [Global MMLU: ...Cultural and Ling Biases in Multiling Eval](/README.md#global-mmlu-understanding-and)
-- [Minimal Pair-Based Evaluation of Code-Switching](/README.md#minimal-pair-based-evaluation-of-code-switching)
-- [Testing English News Articles for Lexical Homogenization](/README.md#testing-english-news-articles-for-lexical-homogenization)
-- [TUMLU: Turkic](/README.md#tumlu-a-unified-and-native-language-understanding-benchmark-for-turkic)
-- [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
+- [Global MMLU: ...Cultural and Ling Biases in Multiling Eval](/README-old/acl-25-wien.md#global-mmlu-understanding-and)
+- [Minimal Pair-Based Evaluation of Code-Switching](/README-old/acl-25-wien.md#minimal-pair-based-evaluation-of-code-switching)
+- [Testing English News Articles for Lexical Homogenization](/README-old/acl-25-wien.md#testing-english-news-articles-for-lexical-homogenization)
+- [TUMLU: Turkic](/README-old/acl-25-wien.md#tumlu-a-unified-and-native-language-understanding-benchmark-for-turkic)
+- [Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations](/README-old/acl-25-wien.md#neural-semantic-parsing-with-extremely-rich-symbolic-meaning-representations)
 
 #### 3. Linguistic structure, semantics, and parsing
-- [On the Role of Semantic Proto-roles in Semantic Analysis](/README.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
-- [Enhancing AMR Parsing with Group Relative Policy Optimization](/README.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
-- [A Computational Typological Analysis of Tone Function in ASR](/README.md#a-computational-typological-analysis-of-tone-function-in-asr)
+- [On the Role of Semantic Proto-roles in Semantic Analysis](/README-old/acl-25-wien.md#on-the-role-of-semantic-proto-roles-in-semantic-analysis)
+- [Enhancing AMR Parsing with Group Relative Policy Optimization](/README-old/acl-25-wien.md#enhancing-amr-parsing-with-group-relative-policy-optimization)
+- [A Computational Typological Analysis of Tone Function in ASR](/README-old/acl-25-wien.md#a-computational-typological-analysis-of-tone-function-in-asr)
 
 #### 4. Social, cultural, and human–AI interaction aspects
-- [Human-LLM Coevolution](/README.md#human-llm-coevolution)
-- [LLMs as Neurolinguistic Subjects](/README.md#llms-as-neurolinguistic-subjects)
-- [Culture Matters in Toxic Language Detection in Persian](/README.md#culture-matters-in-toxic-language-detection-in-persian)
-- [Can Community Notes Replace Professional Fact-Checkers?](/README.md#can-community-notes-replace-professional-fact-checkers)
+- [Human-LLM Coevolution](/README-old/acl-25-wien.md#human-llm-coevolution)
+- [LLMs as Neurolinguistic Subjects](/README-old/acl-25-wien.md#llms-as-neurolinguistic-subjects)
+- [Culture Matters in Toxic Language Detection in Persian](/README-old/acl-25-wien.md#culture-matters-in-toxic-language-detection-in-persian)
+- [Can Community Notes Replace Professional Fact-Checkers?](/README-old/acl-25-wien.md#can-community-notes-replace-professional-fact-checkers)
 
 ### [TUBA: Cross-Lingual Transferability of Backdoor Attacks in LLMs](https://arxiv.org/abs/2404.19597)
 with Instruction Tuning
