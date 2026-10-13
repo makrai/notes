@@ -1163,20 +1163,20 @@ for Fast, Memory Efficient, and Long Context Finetuning and Inference
 . Xiao Zhang, Gosse Bouma, Johan Bos
 
 * Egy workshopos fényképem forrását keresve találtam ezt a posztert.
-* open-domain neural semantics parsers show impressive performance.
+* open-domain neural semantic parsers show impressive performance.
 * hE the symbolic meaning representations they produce sometimes merely copy
   character sequences from the source text to form symbolic concepts,
-  * defaulting to the most frequent word sense based in the training
-* we leverage the hierarchical structure of a lexical ontology, we introduce
-* a novel compositional symbolic representation for concepts
-  based on their position in the taxonomical hierarchy. This representation
+  * defaulting to the most frequent word sense in the training
+* we leverage the hierarchical structure of a lexical ontology
+* we: a novel compositional symbolic representation for concepts
+  based on their position in the taxonomical hierarchy
 * a neural "taxonomical" semantic parser to utilize this new representation
-* a novel challenge set and evaluation metric for evaluation. Our
+* a novel challenge set and evaluation metric for evaluation
 * experimental findings demonstrate that the taxonomical model, trained on much
   richer and complex meaning representations, is
   slightly subordinate in performance to the traditional model using the
   standard metrics for evaluation, but
-  outperforms it when dealing with out-of-vocabulary concepts.
+  outperforms it when dealing with out-of-vocabulary concepts
 
 ### Generative Pretrained Structured Transformers
 : Unsupervised Syntactic LMs at Scale
