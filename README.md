@@ -1,46 +1,40 @@
-This is the list of my notes related to sarcasm, ordered by recency.
-The more interesing ones are from 2022 or more recent.
-The number at the end is how many times my notes contain the word sarcasm.
+# EMNLP 2026 -Notes by Márton Makrai
 
-* [li-25-**PodSarc**-llm-interspeech.md](/li-25-PodSarc-llm-interspeech.md):25
-* [dong-25-multimod-sarcasm-**MHSDB**-icassp.md](/dong-25-multimod-sarcasm-mhsdb-icassp.md):17
-* [zhang-25-sarcasm-txt-img-tension-acl.md](/zhang-25-sarcasm-txt-img-tension-acl.md):5
-* [debnath-25-appraisal-to-affect-flow.md](/debnath-25-appraisal-to-affect-flow.md):1
-* [zhang-2408-**SarcasmBench**.md](/zhang-2408-SarcasmBench.md):5
-* [yue-24-**SarcNet**-dataset-lrec.md](/yue-24-SarcNet-dataset-lrec.md):22
-  * text + image
-* [srirag-2412-**besstie**-bench-sarc-acl.md](/srirag-2412-besstie-bench-sarc-acl.md):13
-* [baroiu-23-**mustard**-deeplearning.md](/baroiu-23-mustard-deeplearning.md):24
-* [zhang-2310-socioprag-64-lang.md](/zhang-2310-socioprag-64-lang.md):6
-* [demszky-23-llm-psycho.md](/demszky-23-llm-psycho.md):1
-* [wang-22-**mustard++**-sarcasm.md](/wang-22-mustardpp-sarcasm.md):8
-* [baroiu-22-sarcasm-review.md](/baroiu-22-sarcasm-review.md):1
-* [alexandru-costin-22-sarcasm-review.md](/alexandru-costin-22-sarcasm-review.md):1
-* [perez-22-msp-silence.md](/perez-22-msp-silence.md):1
-* [liang-22-multi-modal-sarcasm-detection-via-cross-modal-graph-convolution.md](/liang-22-multi-modal-sarcasm-detection-via-cross-modal-graph-convolution.md):4
-* [campagnano-22-sem-role-emo.md](/campagnano-22-sem-role-emo.md):1
-* [bedi-2105-multimod-sarcasm-humor-classif-codemixed.md](/bedi-2105-multimod-sarcasm-humor-classif-codemixed.md):29
-* [birjali-21-sentiment-survey.md](/birjali-21-sentiment-survey.md):1
-* [bianchi-21-feel-it-emotion-sentiment.md](/bianchi-21-feel-it-emotion-sentiment.md):1
-* [sarsam-20-sarcasm-twitter-review.md](/sarsam-20-sarcasm-twitter-review.md):7
-* [sprugnoli-20-italian-opinion-dataset.md](/sprugnoli-20-italian-opinion-dataset.md):1
-* [mohammad-2005-sentiment-chapter.md](/mohammad-2005-sentiment-chapter.md):2
-* [lawrence-20-argument-mining-survey.md](/lawrence-20-argument-mining-survey.md):1
-* [chauhan-20-multi-modal-sarcasm-sentiment-emotion.md](/chauhan-20-multi-modal-sarcasm-sentiment-emotion.md):6
-* [hwang-2010-symb-neur-commonsense.md](/hwang-2010-symb-neur-commonsense.md):1
-* [bisk-2004-ground-lang-bengio.md](/bisk-2004-ground-lang-bengio.md):1
-* [castro-1906-multimod-sarcasm-cited.md](/castro-1906-multimod-sarcasm-cited.md):9
-* [hee-18-tweet-irony-semeval-18.md](/hee-18-tweet-irony-semeval-18.md):3
-* [zhang-18-deep-sentiment-survey.md](/zhang-18-deep-sentiment-survey.md):2
-* [bostan-18-text-emo-corpora.md](/bostan-18-text-emo-corpora.md):1
-* [sedoc-17-verb-cluster.md](/sedoc-17-verb-cluster.md):3
-* [li-17-affective-from-wordembedding.md](/li-17-affective-from-wordembedding.md):1
-* [abdul-mageed-17-EmoNet-fine-grained-with-gated-rnn.md](/abdul-mageed-17-EmoNet-fine-grained-with-gated-rnn.md):1
-* [mohammad-16-sentiment.md](/mohammad-16-sentiment.md):1
-* [ravi-15-survey-opinion-sentiment.md](/ravi-15-survey-opinion-sentiment.md):1
-* [trask-16-sense2vec.md](/trask-16-sense2vec.md):1
-* [rajadesingan-15-sarcasem-twitter-behavioral.md](/rajadesingan-15-sarcasem-twitter-behavioral.md):1
-* [bamman-15-sarcasm-tweets.md](/bamman-15-sarcasm-tweets.md):3
-* [mohammad-15-sentiment-emotion.md](/mohammad-15-sentiment-emotion.md):1
-* [iliev-14-aut-text-anal-psy.md](/iliev-14-aut-text-anal-psy.md):1
-* [riloff-13-sarcasm.md](/riloff-13-sarcasm.md):4
+# Sunday, October 25 — Main Conference Day 1
+
+## The Geometry of Low-Resource Language Representations
+
+[Francois Meyer](https://francois-meyer.github.io/) \\
+Session: 11 AM Interpretability and Analysis of Models for NLP 1 \\
+[paper](https://arxiv.org/abs/2608.23358v1)
+
+* LLM geometry is systematically related to lang data availability. 
+* The most consistent effect is in final layers, where 
+  low-resource langs exhibit repral degeneration. 
+* To counter this, we investigate the effectiveness of 
+  regularisation terms 
+  to penalise degeneration during continued pretraining (CPT). 
+* Experiments monolingually adapting 9 base LLMs to 10 African langs show that
+  geometric regularisation 
+  successfully reduces repral degeneration during CPT.
+* For larger models, cosine similarity-based regularisation 
+  marginally improves performance over vanilla CPT, with 
+* more consistent gains on the most challenging tasks. We establish that 
+* the repral geo of low~ and high-resource langs in LLMs is measurably distinct,
+* targeted geo intervention is viable for improving CPT for low-resource langs.
+
+Behind the news: Actionable interpretability is a thing.
+
+## Preliminary Report on the AI Reviewing Experiment
+
+keynote by Desmond Elliott and Mike Zhang
+
+Recommendations
+
+> * Exercise caution in deploying AI tools in the review process
+> * Repeat these experiments with more powerful open-weights models
+>   running on hardware funded by `*`ACL/SIGDAT
+>   * Possibly structured as a large-scale shared task initiative
+>   * Use the opportunity to develop better AI reviewers
+> * Develop tooling and policies to 
+>   investigate the similarities between AI and “human-authored” reviews
