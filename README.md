@@ -1,4 +1,4 @@
-# EMNLP 2026 -Notes by Márton Makrai
+# EMNLP 2026 -- Notes by Márton Makrai
 
 # Sunday, October 25 — Main Conference Day 1
 
