@@ -178,9 +178,19 @@ Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 
 100 = head is always right, label never
 
-| Relation | Language | Gap | |---|---|---| | comp:svc | hau/swa | 100 | |
-comp:svc | xho | 85 | | comp:poss | hau | 100 | | comp:poss | kin | 86 | | udep
-| hau | 68 | | udep | wol | 57 | | comp:aux | xho | 44 | | comp:aux | kin | 39 |
+| Relation | Language | Gap | 
+|---|---|---| 
+| comp:svc | hau/swa | 100 | 
+| comp:svc | xho | 85 | 
+|---|---|---| 
+| comp:poss | hau | 100 | 
+| comp:poss | kin | 86 | 
+|---|---|---| 
+| udep | hau | 68 | 
+| udep | wol | 57 | 
+|---|---|---| 
+| comp:aux | xho | 44 | 
+| comp:aux | kin | 39 |
 | comp:aux | nyn | 32 |
 
 ### The Multilingual FrameNet Corpus
