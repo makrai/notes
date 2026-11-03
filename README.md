@@ -1,5 +1,10 @@
 # EMNLP 2026 -- Notes by Márton Makrai
 
+# For AstroSpeech
+
+* [Chronoberg](/README.md#Chronoberg)
+* [Harm or Humor](/README.md#Harm)
+
 # Sunday, October 25 — Main Conference Day 1
 
 ## The Geometry of Low-Resource Language Representations
@@ -145,6 +150,7 @@ Yuan Gao, Weiwei Sun
 ## 9 AM Session
 
 ### AfriSUD: A Dependency Treebank Collection for Eval Models on African Langs
+9:05
 
 H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
   K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, 
@@ -193,35 +199,37 @@ H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
 | comp:aux | kin | 39 |
 | comp:aux | nyn | 32 |
 
-### The Multilingual FrameNet Corpus
+### The Multilingual FrameNet Corpus (9:36)
 
 Beatrice Fiumanò, Nicolas Lazzari, Simone Paolo Ponzetto, Valentina Presutti
 
 [paper](https://arxiv.org/abs/2608.23037)
 
-We: The Multilingual FrameNet Corpus (mFNC), that extends the English Berkeley
-FrameNet corpus by collecting and harmonizing existing language-specific corpora
-across +9 langs: Brazilian Portuguese, Chinese, Dutch, French, German, Italian,
-Korean, Latvian and Swedish. 
-* We train models with different architectures on the mFNC, we 
+* We: The Multilingual FrameNet Corpus (mFNC), that 
+* extends the English Berkeley FrameNet corpus by 
+  collecting and harmonizing existing language-specific corpora across +9 langs:
+  Brazilian Portuguese, Chinese, Dutch, French, German, Italian, Korean,
+  Latvian, and Swedish. 
+* We train models with different architectures on the mFNC
 * consistently outperform existing state-of-the-art Frame Semantic Parsers in
-  both multilingual and cross-lingual settings, underscoring the importance of
+  both multilingual and cross-lingual settings
 * mFNC and our trained FSP models are openly available on github and huggingface
 
-### Claim Verification in the Age of Large Language Models: A Survey
+### Claim Verification in the Age of Large Language Models: A Survey (9:59)
 
 Alphaeus Dmonte, Roland R Oruche, Marcos Zampieri, Prasad Calyam, I Augenstein
 
 [paper](https://aclanthology.org/2026.acl-srw.2/)
 
 * automated claim verification systems
-  * deep learning, transformer-based, LLM-based approaches, RAG. In this survey,
+  * deep learning, transformer-based, LLM-based approaches, RAG
 * we: a comprehensive account of recent LLM-based claim verification frameworks
-  * components of the claim verification pipeline used in these frameworks in
+  * components of the claim verification pipeline used in these frameworks
   * approaches to retrieval, prompting, and fine-tuning.
   * publicly available English datasets for this task.
 
 ### ZipBench: Low-Cost Framework for Compressing Comprehensive LLM Benchmarks
+10:05
 
 Zhongzhan Huang, Junxin Li, Guoming Ling, Yupei Lin, Shanshan Zhong, Hefeng Wu
 
@@ -245,16 +253,16 @@ Zhongzhan Huang, Junxin Li, Guoming Ling, Yupei Lin, Shanshan Zhong, Hefeng Wu
 * All data, code and checkpoints will be fully released.
 
 ### Chronoberg: A 250-Year Diachronic Corpus with Temporal Affective Lexicons
-for Language Model Analysis
+for Language Model Analysis (10:05)
 
 Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 
 [paper](https://arxiv.org/abs/2509.22360)
 
 * LLMs excel at operating at scale by leveraging social media and crawled data 
-* hE lack of long-term temporal structure may limit an LLM's ability to
-  * contextualize semantic and normative evolution of language and to 
-  * capture diachronic variation. To support the latter, 
+* hE lack of long-term temporal structure
+  * ? contextualize semantic and normative evolution of language and to 
+  * ? capture diachronic variation. To support the latter, 
 * we introduce Chronoberg, 
   * to support dia vari
   * a temporally structured corpus of English book texts spanning 250 years,
@@ -263,40 +271,73 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 * First, the edited nature of books enables us to 
   * quantify lexical semantic change through time-sensitive Val-Aro-Dom analysis
   * support historically-grounded interpretation. 
-* With the lexicons at hand, we demonstrate a need for modern LLM-based tools to
-  better situate their contextualization of sentiment and detection of
-  discriminatory language across various time-periods.
-* these tools struggle with diachronic shifts in meaning, emphasizing the need
-  for temporally aware training and evaluation pipelines, and positioning
+* With the lexicons at hand, we demonstrate a need for modern LLM-based tools 
+  to better situate their 
+  * contextualization of sentiment and 
+  * detection of discriminatory language across various time-periods.
+* these tools struggle with diachronic shifts in meaning
+  * need for temporally aware training and evaluation pipelines
 * Chronoberg as a scalable resource for respective studies.
-* This paper includes language and display of samples that could be offensive to
+* :-/ This paper includes language and display of samples that could be offens
 * Chronoberg is available publicly on HuggingFace. Code on github
 
 ## 11 AM session
 
 ### Aligning Cultural Behaviors in Arabic Language Models via Preferences
+(11:28)
 
-Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, Z
-Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov, F
-Koto
+Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, 
+  Z Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov,
+  F Koto
 
 [paper](https://arxiv.org/abs/2610.25362)
 
-Most of the authors at Mohamed bin Zayed University of Artificial Intelligence
-(Abu Dhabi, United Arab Emirates), one at IBM Research AI.
+Most of the authors at _Mohamed bin Zayed University of Artificial Intelligence_
+(Abu Dhabi, United Arab Emirates), one at _IBM Research AI_.
 
-* Arabic LLMs have improved rapidly, but 
-* alignment with country-specific cultural behavioral
+* Arabic LLMs have improved rapidly
+* alignment with country-specific cultural behavior
   * Previous work has focused on instruction-tuning for factual knowledge,
   * hE overlooking nuanced cultural behaviors. 
-* We propose ArabPref, which to our knowledge is 
+* We propose ArabPref,
   the first large-scale pan-Arab preference data set for the alignment of
   cultural behavior conditioned on the country.
 * two resources in English and Modern Standard Arabic: 
   * a culturally grounded preference dataset for training and evaluation, and 
   * a multiple-choice benchmark designed to assess 
     culturally aligned behavior across nations. 
-* All test data are validated by native speakers to ensure authenticity. To
+* All test data are validated by native speakers to ensure authenticity
 * experiments with post-training methods
-  * models: multilingual and Arabic-centric language models, evaluating
-  * both generation tasks and our cultural multiple-choice benchmark. By
+  * models: multilingual and Arabic-centric language models,
+  * both generation tasks and our cultural multiple-choice benchmark
+
+### IndicParam: Benchmark to evaluate LLMs on low-resource Indic Languages
+(11:29)
+
+Ayush Maheshwari, Kaushal Sharma, Vivekkumar Vasudevbhai Patel, Aditya Maheshwari
+
+[benchmark](https://huggingface.co/datasets/bharatgenai/IndicParam)
+
+* LLMs excel on high-resource multilingual tasks, 
+* hE low- and extremely low-resource Indic languages remain sever under-evaled
+* We: IndicParam, a human-curated benchmark of 13,000 multiple-choice questions
+  * 11 Indic languages 
+    * Nepali, Gujarati, Marathi, Odia as low-resource
+    * Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani as extremely
+* evaluated 20 LLMs, both proprietary and open-weights, which reveals that even
+  the top-performing Gemini-2.5 reaches 58% average accuracy, followed by 
+  GPT-5 (45) and DeepSeek-3.2 (43.1). 
+* We additionally 
+  * label each question as knowledge-oriented or purely linguistic to
+  * assess the ability of LLMs to handle diverse question formats-such as
+    list-based matching, assertion-reason pairs, and sequence ordering-alongside
+    conventional multiple-choice questions.
+
+### Harm or Humor: A Multimodal, Multilingual Benchmark for Overt and Covert Harmful Humor(11:30)
+
+Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
+ 
+[paper](arXiv:2603.17759)
+
+Dark humor often relies on subtle cultural nuances and implicit cues that require contextual reasoning to interpret, posing safety challenges that current static benchmarks fail to capture. To address this, we introduce a novel multimodal, multilingual benchmark for detecting and understanding harmful and offensive humor. Our manually curated dataset comprises 3,000 texts and 6,000 images in English and Arabic, alongside 1,200 videos that span English, Arabic, and language-independent (universal) contexts. Unlike standard toxicity datasets, we enforce a strict annotation guideline: distinguishing Safe jokes from Harmful ones, with the latter further classified into Explicit (overt) and Implicit (Covert) categories to probe deep reasoning. We systematically evaluate state-of-the-art (SOTA) open and closed-source models across all modalities. Our findings reveal that closed-source models significantly outperform open-source ones, with a notable difference in performance between the English and Arabic languages in both, underscoring the critical need for culturally grounded, reasoning-aware safety alignment. Warning: this paper contains example data that may be offensive, harmful, or biased. 
+
