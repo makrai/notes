@@ -185,10 +185,10 @@ H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
 |   |   |   | 
 | comp:poss | hau | 100 | 
 | comp:poss | kin | 86 | 
-|---|---|---| 
+|   |   |   | 
 | udep | hau | 68 | 
 | udep | wol | 57 | 
-|---|---|---| 
+|   |   |   | 
 | comp:aux | xho | 44 | 
 | comp:aux | kin | 39 |
 | comp:aux | nyn | 32 |
