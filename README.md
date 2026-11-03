@@ -439,19 +439,36 @@ Graham Neubig (keynote, 3:15 PM)
 > * Specifically, who do you want to pay attention to your work?  
 > * How should they change their behavior after your work?
 
-#### Architecture
+#### Popular techniques 
 
+##### Hybrid full attention + windowed models: used by 6/9 major open models
 
-Hybrid full attention + windowed models: used by 6/9 major open models
+```
+Hungry Hungry Hippos: Towards Language Modeling with State Space Models
+Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and Christopher Ré†
+(Stanford, University at Buffalo)
 
-  Hungry Hungry Hippos: Towards Language Modeling with State Space Models
-  Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and Christopher Ré†
-  (Stanford, University at Buffalo)
+Longformer: The Long-Document Transformer
+Iz Beltagy*, Matthew E. Peters*, Arman Cohan*
+(Ai2)
 
-  Longformer: The Long-Document Transformer
-  Iz Beltagy*, Matthew E. Peters*, Arman Cohan*
-  (Ai2)
+Mamba: Linear-Time Sequence Modeling with Selective State Spac[es]
+Albert Gu¹ and Tri Dao²
+(Carnegie Mellon University, Princeton)
+```
 
-  Mamba: Linear-Time Sequence Modeling with Selective State Spac[es]
-  Albert Gu¹ and Tri Dao²
-  (Carnegie Mellon University, Princeton)
+##### Pre-training Optimizer
+
+Muon: used in 5/6 major open models with disclosed optimizers
+
+```
+Keller Jordan blog 
+Muon: An optimizer for hidden layers in neural networks
+December 8, 2024 · 17 min
+
+Muon is scalable for LLM training
+Technical report 
+Jingyuan Liu¹, Jianlin Su¹, Xingcheng Yao², Zhejun Jiang¹, Guokun Lai¹, Yulun Du¹, Yidao Qin¹, Weixin Xu¹, Enzhe Lu¹, Junjie Yan¹, Yanru Chen¹, Huabin Zheng¹, Yibo Liu¹, Shaowei Liu¹, Bohong Yin¹, Weiran He¹, Han Zhu¹, Yuzhi Wang¹, Jianzhou Wang¹, Mengnan Dong¹, Zheng Zhang¹, Yongsheng Kang¹, Hao Zhang¹, Xinran Xu¹, Yutao Zhang¹, Yuxin Wu¹, Xinyu Zhou¹ `*`, Zhilin Yang¹
+
+Collaboration w/ many institutions, formed around NanoGPT speedrun
+```
