@@ -1,9 +1,10 @@
-# EMNLP 2026 -- Notes by Márton Makrai
+# EMNLP 2026 -Notes by Márton Makrai
 
 # For AstroSpeech
 
 * [Chronoberg](/README.md#Chronoberg)
 * [Harm or Humor](/README.md#Harm)
+* [Variable-Rank Adaptation](/README.md#Variable-Rank Adaptation)
 
 # Sunday, October 25 — Main Conference Day 1
 
@@ -153,8 +154,8 @@ Yuan Gao, Weiwei Sun
 9:05
 
 H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
-  K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, 
-  I Akinade, C Uchechukwu, R Mabuya, C Fellbaum
+K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, I
+Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 
 [paper](https://aclanthology.org/2026.emnlp-main.1896/)
 
@@ -172,32 +173,22 @@ H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
 
 #### Hardest constructions
 
-- Serial verb constructions (comp:svc): which verb is the head? Rare for
+Serial verb constructions (comp:svc): which verb is the head? Rare for
   European languages.
-- Possessive constructions (comp:poss): African languages mark possession
+Possessive constructions (comp:poss): African languages mark possession
   differently from English and European languages.
-- Underspecified (udep): construction with no clean linguistic equivalent.
-- TAM auxiliaries (comp:aux): tense, aspect and mood markers; 
-  models fail to distinguish function from content head.
+Underspecified (udep): construction with no clean linguistic equivalent.
+TAM auxiliaries (comp:aux): tense, aspect and mood markers; models fail to
+  distinguish function from content head.
 
-#### Gap (UAS - LAS) by rel and lang
+#### Gap (UAS LAS) by rel and lang
 
 100 = head is always right, label never
 
-| Relation | Language | Gap | 
-|---|---|---| 
-| comp:svc | hau/swa | 100 | 
-| comp:svc | xho | 85 | 
-|   |   |   | 
-| comp:poss | hau | 100 | 
-| comp:poss | kin | 86 | 
-|   |   |   | 
-| udep | hau | 68 | 
-| udep | wol | 57 | 
-|   |   |   | 
-| comp:aux | xho | 44 | 
-| comp:aux | kin | 39 |
-| comp:aux | nyn | 32 |
+| Relation | Language | Gap | |---|---|---| | comp:svc | hau/swa | 100 | |
+comp:svc | xho | 85 | |   |   |   | | comp:poss | hau | 100 | | comp:poss | kin
+| 86 | |   |   |   | | udep | hau | 68 | | udep | wol | 57 | |   |   |   | |
+comp:aux | xho | 44 | | comp:aux | kin | 39 | | comp:aux | nyn | 32 |
 
 ### The Multilingual FrameNet Corpus (9:36)
 
@@ -206,10 +197,9 @@ Beatrice Fiumanò, Nicolas Lazzari, Simone Paolo Ponzetto, Valentina Presutti
 [paper](https://arxiv.org/abs/2608.23037)
 
 * We: The Multilingual FrameNet Corpus (mFNC), that 
-* extends the English Berkeley FrameNet corpus by 
-  collecting and harmonizing existing language-specific corpora across +9 langs:
-  Brazilian Portuguese, Chinese, Dutch, French, German, Italian, Korean,
-  Latvian, and Swedish. 
+* extends the English Berkeley FrameNet corpus by collecting and harmonizing
+  existing language-specific corpora across +9 langs: Brazilian Portuguese,
+  Chinese, Dutch, French, German, Italian, Korean, Latvian, and Swedish. 
 * We train models with different architectures on the mFNC
 * consistently outperform existing state-of-the-art Frame Semantic Parsers in
   both multilingual and cross-lingual settings
@@ -271,8 +261,8 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 * First, the edited nature of books enables us to 
   * quantify lexical semantic change through time-sensitive Val-Aro-Dom analysis
   * support historically-grounded interpretation. 
-* With the lexicons at hand, we demonstrate a need for modern LLM-based tools 
-  to better situate their 
+* With the lexicons at hand, we demonstrate a need for modern LLM-based tools to
+  better situate their 
   * contextualization of sentiment and 
   * detection of discriminatory language across various time-periods.
 * these tools struggle with diachronic shifts in meaning
@@ -286,9 +276,9 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 ### Aligning Cultural Behaviors in Arabic Language Models via Preferences
 (11:28)
 
-Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, 
-  Z Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov,
-  F Koto
+Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, Z
+Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov, F
+Koto
 
 [paper](https://arxiv.org/abs/2610.25362)
 
@@ -299,13 +289,12 @@ Most of the authors at _Mohamed bin Zayed University of Artificial Intelligence_
 * alignment with country-specific cultural behavior
   * Previous work has focused on instruction-tuning for factual knowledge,
   * hE overlooking nuanced cultural behaviors. 
-* We propose ArabPref,
-  the first large-scale pan-Arab preference data set for the alignment of
-  cultural behavior conditioned on the country.
+* We propose ArabPref, the first large-scale pan-Arab preference data set for
+  the alignment of cultural behavior conditioned on the country.
 * two resources in English and Modern Standard Arabic: 
   * a culturally grounded preference dataset for training and evaluation, and 
-  * a multiple-choice benchmark designed to assess 
-    culturally aligned behavior across nations. 
+  * a multiple-choice benchmark designed to assess culturally aligned behavior
+    across nations. 
 * All test data are validated by native speakers to ensure authenticity
 * experiments with post-training methods
   * models: multilingual and Arabic-centric language models,
@@ -314,30 +303,155 @@ Most of the authors at _Mohamed bin Zayed University of Artificial Intelligence_
 ### IndicParam: Benchmark to evaluate LLMs on low-resource Indic Languages
 (11:29)
 
-Ayush Maheshwari, Kaushal Sharma, Vivekkumar Vasudevbhai Patel, Aditya Maheshwari
+Ayush Maheshwari, Kaushal Sharma, Vivekkumar Vasudevbhai Patel, Aditya
+Maheshwari
 
 [benchmark](https://huggingface.co/datasets/bharatgenai/IndicParam)
 
 * LLMs excel on high-resource multilingual tasks, 
-* hE low- and extremely low-resource Indic languages remain sever under-evaled
+* hE lowand extremely low-resource Indic languages remain sever under-evaled
 * We: IndicParam, a human-curated benchmark of 13,000 multiple-choice questions
   * 11 Indic languages 
     * Nepali, Gujarati, Marathi, Odia as low-resource
     * Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani as extremely
 * evaluated 20 LLMs, both proprietary and open-weights, which reveals that even
-  the top-performing Gemini-2.5 reaches 58% average accuracy, followed by 
-  GPT-5 (45) and DeepSeek-3.2 (43.1). 
+  the top-performing Gemini-2.5 reaches 58% average accuracy, followed by GPT-5
+  (45) and DeepSeek-3.2 (43.1). 
 * We additionally 
   * label each question as knowledge-oriented or purely linguistic to
   * assess the ability of LLMs to handle diverse question formats-such as
     list-based matching, assertion-reason pairs, and sequence ordering-alongside
     conventional multiple-choice questions.
 
-### Harm or Humor: A Multimodal, Multilingual Benchmark for Overt and Covert Harmful Humor(11:30)
+### Harm or Humor: A Multimodal, Multilingual Benchmark for Overt and Covert
+Harmful Humor(11:30)
 
 Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
  
 [paper](arXiv:2603.17759)
 
-Dark humor often relies on subtle cultural nuances and implicit cues that require contextual reasoning to interpret, posing safety challenges that current static benchmarks fail to capture. To address this, we introduce a novel multimodal, multilingual benchmark for detecting and understanding harmful and offensive humor. Our manually curated dataset comprises 3,000 texts and 6,000 images in English and Arabic, alongside 1,200 videos that span English, Arabic, and language-independent (universal) contexts. Unlike standard toxicity datasets, we enforce a strict annotation guideline: distinguishing Safe jokes from Harmful ones, with the latter further classified into Explicit (overt) and Implicit (Covert) categories to probe deep reasoning. We systematically evaluate state-of-the-art (SOTA) open and closed-source models across all modalities. Our findings reveal that closed-source models significantly outperform open-source ones, with a notable difference in performance between the English and Arabic languages in both, underscoring the critical need for culturally grounded, reasoning-aware safety alignment. Warning: this paper contains example data that may be offensive, harmful, or biased. 
+* Dark humor often relies on subtle cultural nuances and implicit cues that
+  * require contextual reasoning to interpret, 
+  * posing safety challenges that current static benchmarks fail to capture. To
+* we: a novel multimodal, multilingual benchmark for detecting and understanding
+  harmful and offensive humor. Our manually curated
+  * 3,000 texts and 6,000 images in English and Arabic, alongside 
+  * 1,200 videos that span English, Arabic, and language-independent (universal)
+    contexts.
+* strict annotation guideline: distinguishing Safe jokes from Harmful ones, with
+  the latter further classified into Explicit (overt) and Implicit (Covert)
+  categories to probe deep reasoning. 
+* We systematically evaluate state-of-the-art (SOTA) open and closed-source
+  models across all modalities.
+* findings reveal that closed-source models significantly outperform open-source
+  ones, with a notable difference in performance between the English and Arabic
+  languages in both
 
+### Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRAs
+(11:46)
+
+Max Ploner, Alan Akbik
+
+[paper](https://aclanthology.org/2026.findings-emnlp.2430/)
+
+* The capacity of LoRA is fundamentally governed by its rank parameter. While
+* standard implementations apply a uniform rank across all layers, 
+* a recent wave of variable-rank extensions: tailoring ranks to module importanc
+* literature remains highly fragmented and lacks systematic cross-comparisons.
+* we propose a taxonomy grouping these approaches into four categories: Rank
+  growth, pruning, redistribution, and pre-allocation. 
+* We analyze their design dimensions, theoretical expressiveness, implementation
+  complexity, and memory efficiency. Finally, 
+* critical: lack of standardized evaluations and memory metrics.
+
+### NaijaS2ST: A Multi-Accent Benchmark for Speech-to-Speech Translat Nigerian 
+(12:17)
+
+Marie Maltais, Y Jeon, M Ma, SH Muhammad, I Abdulmumin, MI Mukhtar, D Abolade, J
+Okepefi, J Sewedo, DI Adelani
+
+[paper](https://arxiv.org/abs/2604.16287)
+
+* we introduce NaijaS2ST, a parallel speech translation dataset spanning Igbo,
+  Hausa, Yorùbá, and Nigerian Pidgin paired with English. The dataset
+* 50 hours of speech per language and captures substantial variation in speakers
+  and accents, reflecting realistic multilingual and multi-accent conditions.
+* exper: cascaded, end-to-end (E2E), and AudioLLM-based approaches across
+  bidirectional translation settings. Our 
+* results for speech-to-
+  * text: audio LLMs with few-shot examples are more effective 
+  * speech: the cascaded and audio LLM paradigms yield comparable performance,
+* summ: a high-quality dataset and a systematic benchmark
+
+### ScopeBench: Evaluating Cultural Norm Scope Awareness in LLMs (12:19)
+
+Haojun Liang, Ziwei Zhao, Chenyu Li, Qiyue Zhao, Rongduomijia Mu, Yulan Shen, 
+  Yu Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
+
+[paper](https://ziwayzhao.github.io/assets/pdf/ScopeBench.pdf)
+
+* Safety evaluation in LLMs treats harm as culturally invariant, yet a model
+  cannot correctly apply a safety norm without knowing whose norms bind. We
+* we: ScopeBench, a benchmark
+* 3,323 norms 
+  * spanning 49 countries across nine cultural clusters, 
+    each annotated as UNIVERSAL or SPECIFIC . We define 
+  * three scope error types identically across four evaluation tasks: 
+    Scope Inflation, Scope Deflation, and Scope Displacement. 
+* Evaluating 21 frontier LLMs across seven model families, we surface 
+* three structural failures.
+  * the dominant error type inverts with prompt format: 
+    Scope Deflation reaches 70% in single-answer classification, while 
+    Scope Inflation reaches 33% when each candidate culture is judged indeply
+  * scope-classification accuracy is empirically 
+    decoupled from behavioral safety: 
+    the six classifiers achieving ≥ 97% Task 1 accuracy still produce harmful
+    responses to 40–42% of scope-violating statements.
+  * no model is safe in interaction, with 
+    harmful-response rates ranging from 29% to 51% across the cohort, excluding
+    one model that systematically refuses the task. 
+* We release all data, code, and model outputs to establish cultural scope as a
+
+## On the Value of Open Research in Language Modeling - An Adversarial Dialog
+
+Graham Neubig (keynote, 3:15 PM)
+
+### From the abstract
+
+* Much research has moved out of the public eye and behind closed doors. What
+* I will present 
+  some often-cited arguments against the value of open research in LLM tech, and
+  some counter arguments for why open research is still important, 
+  albeit under certain conditions. I will also try to present 
+* some personal anecdotes for my own projects that I think have been successful
+  in the face of these headwinds, and may be informative for listeners who are
+  also interested in expanding the impact of their work.
+
+### Highlights from the talk
+
+* open models lag behind proprietary ones by 104 days
+* [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
+  * [The incident disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4 pages long,
+    the "companion technical writeup" has a 1+3-page-long TL;DR.
+
+> Some questions 
+> * What impact do you want to achieve with your research?  
+> * Specifically, who do you want to pay attention to your work?  
+> * How should they change their behavior after your work?
+
+#### Architecture
+
+
+Hybrid full attention + windowed models: used by 6/9 major open models
+
+  Hungry Hungry Hippos: Towards Language Modeling with State Space Models
+  Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and Christopher Ré†
+  (Stanford, University at Buffalo)
+
+  Longformer: The Long-Document Transformer
+  Iz Beltagy*, Matthew E. Peters*, Arman Cohan*
+  (Ai2)
+
+  Mamba: Linear-Time Sequence Modeling with Selective State Spac[es]
+  Albert Gu¹ and Tri Dao²
+  (Carnegie Mellon University, Princeton)
