@@ -10,24 +10,24 @@
 
 ## The Geometry of Low-Resource Language Representations
 
-[Francois Meyer](https://francois-meyer.github.io/) 
+[Francois Meyer](https://francois-meyer.github.io/)
 
-Session: 11 AM Interpretability and Analysis of Models for NLP 1 
+Session: 11 AM Interpretability and Analysis of Models for NLP 1
 
 [paper](https://arxiv.org/abs/2608.23358v1)
 
-* LLM geometry is systematically related to lang data availability. 
-* The most consistent effect is in final layers, where 
-  low-resource langs exhibit repral degeneration. 
-* To counter this, we investigate the effectiveness of 
-  regularisation terms 
-  to penalise degeneration during continued pretraining (CPT). 
+* LLM geometry is systematically related to lang data availability.
+* The most consistent effect is in final layers, where
+  low-resource langs exhibit repral degeneration.
+* To counter this, we investigate the effectiveness of
+  regularisation terms
+  to penalise degeneration during continued pretraining (CPT).
 * Experiments monolingly adapting 9 base LLMs to 10 African langs show that
-  geometric regularisation 
+  geometric regularisation
   successfully reduces repral degeneration during CPT.
 * For larger models, cosine similarity-based regularisation marginally improves
-  performance over vanilla CPT, with 
-* more consistent gains on the most challenging tasks. We establish that 
+  performance over vanilla CPT, with
+* more consistent gains on the most challenging tasks. We establish that
 * the repral geo of low~ and high-resource langs in LLMs is measurably distinct,
 * targeted geo intervention is viable for improving CPT for low-resource langs.
 
@@ -72,8 +72,8 @@ Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
   (2024) by systematically manipulating preceding context while keeping the
   ambiguous sentence identical.  We further introduce
   * passivized variants as syntactically less ambiguous controls. Using SCOPEx,
-* we show that transformer LMs: 
-  * exhibit systematic scope-sensitive behavior conditioned on context, and 
+* we show that transformer LMs:
+  * exhibit systematic scope-sensitive behavior conditioned on context, and
   * form separable hidden-state reprations for alternative scope readings
   * This divergence emerges in later layers and causally influences downstream
     predictions.
@@ -87,7 +87,7 @@ Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
 
 * Translated versions of English-origin benchmarks such as MMLU are widely used
 * Do they measure the same constructs as natively created benchmarks?
-  * We frame this as a *proxy validity* question and 
+  * We frame this as a *proxy validity* question and
 * we compare DeepL-translated MMLU proxies against six native benchmarks in
   seven pairings across five Nordic and Baltic languages, evaluating 29 models
   on each pairing.
@@ -100,7 +100,7 @@ Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
     significant incremental value for Sweden-specific factual knowledge in
     SwedishFacts (p=.242).
   * hE SwedishFacts is also the only open-ended benchmark, ~> we cannot fully
-    separate the effects of content and format. 
+    separate the effects of content and format.
   * Overall, the results indicate a clear pattern: translated benchmarks provide
     a better proxy when their source content overlaps with the native evaluation
     target, while locally anchored knowledge is less reliably captured.
@@ -114,15 +114,15 @@ Sangyeon Yoon, Hyesoo Hong, Wonje Jeung, Yongil Kim, W Seo, H Yeen, A No, S Kim
 
 * LLMs increasingly store user preferences in persistent memory: personalization
 * in third-party communication settings governed by social and institutional
-  norms, some user preferences may be inappropriate to apply. 
+  norms, some user preferences may be inappropriate to apply.
 * We introduce BenchPreS, which evaluates whether memory-based user preferences
-  are appropriately applied or suppressed across communication contexts. Using 
+  are appropriately applied or suppressed across communication contexts. Using
 * two complementary metrics, Misapplication Rate (MR) and Appropriate
-  Application Rate (AAR), we find 
+  Application Rate (AAR), we find
 * even frontier LLMs struggle to apply preferences context-sensitively
   * Models with stronger preference adherence exhibit higher rates of
     over-application, and neither reasoning capability nor selectivity-oriented
-    prompting fully resolve this issue. These results suggest that current 
+    prompting fully resolve this issue. These results suggest that current
   * ie LLMs treat preferences as globally enforceable rules rather than as
     context-dependent normative signals.
 
@@ -133,16 +133,16 @@ Yuan Gao, Weiwei Sun
 [paper](https://aclanthology.org/2026.emnlp-main.2485/)
 
 * We study whether Universal Grammar syntactic principles can serve as explicit
-  inductive biases for unsupervised grammar induction. 
-* We introduce a neuro-symbolic PCFG framework that 
+  inductive biases for unsupervised grammar induction.
+* We introduce a neuro-symbolic PCFG framework that
   * converts hypothesized linguistic universals into rule schemata, and then
-  * learns rule probabilities from child-directed speech. We investigate 
-  * three (alter) assumptions: 
-    * extended projection, 
-    * prototype theory of part-of-speech, and 
-    * the final-over-final constraint. Experiments show that 
-* resu: 
-  * with a much smaller hypothesis space, the universal-priored model achieves 
+  * learns rule probabilities from child-directed speech. We investigate
+  * three (alter) assumptions:
+    * extended projection,
+    * prototype theory of part-of-speech, and
+    * the final-over-final constraint. Experiments show that
+* resu:
+  * with a much smaller hypothesis space, the universal-priored model achieves
   * superior performance to state-of-the-art neural grammar induction models,
   * more interpretable functional category assignment.
 
@@ -165,21 +165,20 @@ Akinade, C Uchechukwu, R Mabuya, C Fellbaum
   Sub-Saharan Africa
   * Surface-Syntactic Universal Dependencies (SUD) framework, community-led
   * high-quality, native-speaker-verified data
-  * capture typological key features such as agglutination and tone. 
+  * capture typological key features such as agglutination and tone.
 * We evaluate a range of models on AfriSUD for part-of-speech tagging and
-  dependency parsing, 
+  dependency parsing,
   * models: non-transformer baselines, multiling pretrained encoders, and LLMs.
-* results: significant syntax gap, models still show clear limitations 
+* results: significant syntax gap, models still show clear limitations
 
 #### Hardest constructions
 
-Serial verb constructions (comp:svc): which verb is the head? Rare for
-  European languages.
-Possessive constructions (comp:poss): African languages mark possession
-  differently from English and European languages.
-Underspecified (udep): construction with no clean linguistic equivalent.
-TAM auxiliaries (comp:aux): tense, aspect and mood markers; models fail to
-  distinguish function from content head.
+Serial verb constructions (comp:svc): which verb is the head? Rare for European
+languages.  Possessive constructions (comp:poss): African languages mark
+possession differently from English and European languages.  Underspecified
+(udep): construction with no clean linguistic equivalent.  TAM auxiliaries
+(comp:aux): tense, aspect and mood markers; models fail to distinguish function
+from content head.
 
 #### Gap (UAS LAS) by rel and lang
 
@@ -196,10 +195,10 @@ Beatrice Fiumanò, Nicolas Lazzari, Simone Paolo Ponzetto, Valentina Presutti
 
 [paper](https://arxiv.org/abs/2608.23037)
 
-* We: The Multilingual FrameNet Corpus (mFNC), that 
+* We: The Multilingual FrameNet Corpus (mFNC), that
 * extends the English Berkeley FrameNet corpus by collecting and harmonizing
   existing language-specific corpora across +9 langs: Brazilian Portuguese,
-  Chinese, Dutch, French, German, Italian, Korean, Latvian, and Swedish. 
+  Chinese, Dutch, French, German, Italian, Korean, Latvian, and Swedish.
 * We train models with different architectures on the mFNC
 * consistently outperform existing state-of-the-art Frame Semantic Parsers in
   both multilingual and cross-lingual settings
@@ -226,13 +225,13 @@ Zhongzhan Huang, Junxin Li, Guoming Ling, Yupei Lin, Shanshan Zhong, Hefeng Wu
 [paper](https://aclanthology.org/2026.emnlp-main.1879/)
 
 * Many widely used benchmarks are redundant ~> evaluation unnecess expensive
-* benchmark compression methods (BCMs) can mitigate this cost, 
+* benchmark compression methods (BCMs) can mitigate this cost,
 * hE many strong BCMs rely on large collections of per-sample evaluation results
   from numerous LLMs to identify representative samples.
 * Building such collections is also expensive unless they are already public,
   making these methods difficult to extend to newly released benchmarks. To
 * we present ZipBench, a simple and low-cost BCM with theoretical error and
-  rank-consistency guarantees. ZipBench 
+  rank-consistency guarantees. ZipBench
   * evaluates only a small set of anchor LLMs, synthesizes pseudo evaluation
     results to broaden coverage, learns compact sample representations, and
     selects a small yet representative subset.
@@ -249,21 +248,21 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 
 [paper](https://arxiv.org/abs/2509.22360)
 
-* LLMs excel at operating at scale by leveraging social media and crawled data 
+* LLMs excel at operating at scale by leveraging social media and crawled data
 * hE lack of long-term temporal structure
-  * ? contextualize semantic and normative evolution of language and to 
-  * ? capture diachronic variation. To support the latter, 
-* we introduce Chronoberg, 
+  * ? contextualize semantic and normative evolution of language and to
+  * ? capture diachronic variation. To support the latter,
+* we introduce Chronoberg,
   * to support dia vari
   * a temporally structured corpus of English book texts spanning 250 years,
-    curated from Project Gutenberg and enriched with 
+    curated from Project Gutenberg and enriched with
     + a variety of temporal annotations.
-* First, the edited nature of books enables us to 
+* First, the edited nature of books enables us to
   * quantify lexical semantic change through time-sensitive Val-Aro-Dom analysis
-  * support historically-grounded interpretation. 
+  * support historically-grounded interpretation.
 * With the lexicons at hand, we demonstrate a need for modern LLM-based tools to
-  better situate their 
-  * contextualization of sentiment and 
+  better situate their
+  * contextualization of sentiment and
   * detection of discriminatory language across various time-periods.
 * these tools struggle with diachronic shifts in meaning
   * need for temporally aware training and evaluation pipelines
@@ -288,13 +287,13 @@ Most of the authors at _Mohamed bin Zayed University of Artificial Intelligence_
 * Arabic LLMs have improved rapidly
 * alignment with country-specific cultural behavior
   * Previous work has focused on instruction-tuning for factual knowledge,
-  * hE overlooking nuanced cultural behaviors. 
+  * hE overlooking nuanced cultural behaviors.
 * We propose ArabPref, the first large-scale pan-Arab preference data set for
   the alignment of cultural behavior conditioned on the country.
-* two resources in English and Modern Standard Arabic: 
-  * a culturally grounded preference dataset for training and evaluation, and 
+* two resources in English and Modern Standard Arabic:
+  * a culturally grounded preference dataset for training and evaluation, and
   * a multiple-choice benchmark designed to assess culturally aligned behavior
-    across nations. 
+    across nations.
 * All test data are validated by native speakers to ensure authenticity
 * experiments with post-training methods
   * models: multilingual and Arabic-centric language models,
@@ -308,16 +307,16 @@ Maheshwari
 
 [benchmark](https://huggingface.co/datasets/bharatgenai/IndicParam)
 
-* LLMs excel on high-resource multilingual tasks, 
+* LLMs excel on high-resource multilingual tasks,
 * hE lowand extremely low-resource Indic languages remain sever under-evaled
 * We: IndicParam, a human-curated benchmark of 13,000 multiple-choice questions
-  * 11 Indic languages 
+  * 11 Indic languages
     * Nepali, Gujarati, Marathi, Odia as low-resource
     * Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani as extremely
 * evaluated 20 LLMs, both proprietary and open-weights, which reveals that even
   the top-performing Gemini-2.5 reaches 58% average accuracy, followed by GPT-5
-  (45) and DeepSeek-3.2 (43.1). 
-* We additionally 
+  (45) and DeepSeek-3.2 (43.1).
+* We additionally
   * label each question as knowledge-oriented or purely linguistic to
   * assess the ability of LLMs to handle diverse question formats-such as
     list-based matching, assertion-reason pairs, and sequence ordering-alongside
@@ -327,20 +326,20 @@ Maheshwari
 Harmful Humor(11:30)
 
 Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
- 
+
 [paper](arXiv:2603.17759)
 
 * Dark humor often relies on subtle cultural nuances and implicit cues that
-  * require contextual reasoning to interpret, 
+  * require contextual reasoning to interpret,
   * posing safety challenges that current static benchmarks fail to capture. To
 * we: a novel multimodal, multilingual benchmark for detecting and understanding
   harmful and offensive humor. Our manually curated
-  * 3,000 texts and 6,000 images in English and Arabic, alongside 
+  * 3,000 texts and 6,000 images in English and Arabic, alongside
   * 1,200 videos that span English, Arabic, and language-independent (universal)
     contexts.
 * strict annotation guideline: distinguishing Safe jokes from Harmful ones, with
   the latter further classified into Explicit (overt) and Implicit (Covert)
-  categories to probe deep reasoning. 
+  categories to probe deep reasoning.
 * We systematically evaluate state-of-the-art (SOTA) open and closed-source
   models across all modalities.
 * findings reveal that closed-source models significantly outperform open-source
@@ -355,16 +354,16 @@ Max Ploner, Alan Akbik
 [paper](https://aclanthology.org/2026.findings-emnlp.2430/)
 
 * The capacity of LoRA is fundamentally governed by its rank parameter. While
-* standard implementations apply a uniform rank across all layers, 
+* standard implementations apply a uniform rank across all layers,
 * a recent wave of variable-rank extensions: tailoring ranks to module importanc
 * literature remains highly fragmented and lacks systematic cross-comparisons.
 * we propose a taxonomy grouping these approaches into four categories: Rank
-  growth, pruning, redistribution, and pre-allocation. 
+  growth, pruning, redistribution, and pre-allocation.
 * We analyze their design dimensions, theoretical expressiveness, implementation
-  complexity, and memory efficiency. Finally, 
+  complexity, and memory efficiency. Finally,
 * critical: lack of standardized evaluations and memory metrics.
 
-### NaijaS2ST: A Multi-Accent Benchmark for Speech-to-Speech Translat Nigerian 
+### NaijaS2ST: A Multi-Accent Benchmark for Speech-to-Speech Translat Nigerian
 (12:17)
 
 Marie Maltais, Y Jeon, M Ma, SH Muhammad, I Abdulmumin, MI Mukhtar, D Abolade, J
@@ -377,39 +376,38 @@ Okepefi, J Sewedo, DI Adelani
 * 50 hours of speech per language and captures substantial variation in speakers
   and accents, reflecting realistic multilingual and multi-accent conditions.
 * exper: cascaded, end-to-end (E2E), and AudioLLM-based approaches across
-  bidirectional translation settings. Our 
+  bidirectional translation settings. Our
 * results for speech-to-
-  * text: audio LLMs with few-shot examples are more effective 
+  * text: audio LLMs with few-shot examples are more effective
   * speech: the cascaded and audio LLM paradigms yield comparable performance,
 * summ: a high-quality dataset and a systematic benchmark
 
 ### ScopeBench: Evaluating Cultural Norm Scope Awareness in LLMs (12:19)
 
-Haojun Liang, Ziwei Zhao, Chenyu Li, Qiyue Zhao, Rongduomijia Mu, Yulan Shen, 
-  Yu Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
+Haojun Liang, Ziwei Zhao, Chenyu Li, Qiyue Zhao, Rongduomijia Mu, Yulan Shen, Yu
+Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
 
 [paper](https://ziwayzhao.github.io/assets/pdf/ScopeBench.pdf)
 
 * Safety evaluation in LLMs treats harm as culturally invariant, yet a model
   cannot correctly apply a safety norm without knowing whose norms bind. We
 * we: ScopeBench, a benchmark
-* 3,323 norms 
-  * spanning 49 countries across nine cultural clusters, 
-    each annotated as UNIVERSAL or SPECIFIC . We define 
-  * three scope error types identically across four evaluation tasks: 
-    Scope Inflation, Scope Deflation, and Scope Displacement. 
-* Evaluating 21 frontier LLMs across seven model families, we surface 
+* 3,323 norms
+  * spanning 49 countries across nine cultural clusters, each annotated as
+    UNIVERSAL or SPECIFIC . We define
+  * three scope error types identically across four evaluation tasks: Scope
+    Inflation, Scope Deflation, and Scope Displacement.
+* Evaluating 21 frontier LLMs across seven model families, we surface
 * three structural failures.
-  * the dominant error type inverts with prompt format: 
-    Scope Deflation reaches 70% in single-answer classification, while 
-    Scope Inflation reaches 33% when each candidate culture is judged indeply
-  * scope-classification accuracy is empirically 
-    decoupled from behavioral safety: 
-    the six classifiers achieving ≥ 97% Task 1 accuracy still produce harmful
-    responses to 40–42% of scope-violating statements.
-  * no model is safe in interaction, with 
-    harmful-response rates ranging from 29% to 51% across the cohort, excluding
-    one model that systematically refuses the task. 
+  * the dominant error type inverts with prompt format: Scope Deflation reaches
+    70% in single-answer classification, while Scope Inflation reaches 33% when
+    each candidate culture is judged indeply
+  * scope-classification accuracy is empirically decoupled from behavioral
+    safety: the six classifiers achieving ≥ 97% Task 1 accuracy still produce
+    harmful responses to 40–42% of scope-violating statements.
+  * no model is safe in interaction, with harmful-response rates ranging from
+    29% to 51% across the cohort, excluding one model that systematically
+    refuses the task.
 * We release all data, code, and model outputs to establish cultural scope as a
 
 ## On the Value of Open Research in Language Modeling - An Adversarial Dialog
@@ -419,10 +417,9 @@ Graham Neubig (keynote, 3:15 PM)
 ### From the abstract
 
 * Much research has moved out of the public eye and behind closed doors. What
-* I will present 
-  some often-cited arguments against the value of open research in LLM tech, and
-  some counter arguments for why open research is still important, 
-  albeit under certain conditions. I will also try to present 
+* I will present some often-cited arguments against the value of open research
+  in LLM tech, and some counter arguments for why open research is still
+  important, albeit under certain conditions. I will also try to present
 * some personal anecdotes for my own projects that I think have been successful
   in the face of these headwinds, and may be informative for listeners who are
   also interested in expanding the impact of their work.
@@ -430,45 +427,189 @@ Graham Neubig (keynote, 3:15 PM)
 ### Highlights from the talk
 
 * open models lag behind proprietary ones by 104 days
-* [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
-  * [The incident disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4 pages long,
-    the "companion technical writeup" has a 1+3-page-long TL;DR.
+* [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July
+  2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
+  * [The incident
+    disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4
+    pages long, the "companion technical writeup" has a 1+3-page-long TL;DR.
 
-> Some questions 
-> * What impact do you want to achieve with your research?  
-> * Specifically, who do you want to pay attention to your work?  
+> Some questions
+> * What impact do you want to achieve with your research?
+> * Specifically, who do you want to pay attention to your work?
 > * How should they change their behavior after your work?
 
-#### Popular techniques 
+#### Popular techniques
 
 ##### Hybrid full attention + windowed models: used by 6/9 major open models
 
-```
-Hungry Hungry Hippos: Towards Language Modeling with State Space Models
-Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and Christopher Ré†
-(Stanford, University at Buffalo)
+``` Hungry Hungry Hippos: Towards Language Modeling with State Space Models
+Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and
+Christopher Ré† (Stanford, University at Buffalo)
 
-Longformer: The Long-Document Transformer
-Iz Beltagy*, Matthew E. Peters*, Arman Cohan*
-(Ai2)
+Longformer: The Long-Document Transformer Iz Beltagy*, Matthew E. Peters*, Arman
+Cohan* (Ai2)
 
-Mamba: Linear-Time Sequence Modeling with Selective State Spac[es]
-Albert Gu¹ and Tri Dao²
-(Carnegie Mellon University, Princeton)
-```
+Mamba: Linear-Time Sequence Modeling with Selective State Spac[es] Albert Gu¹
+and Tri Dao² (Carnegie Mellon University, Princeton) ```
 
 ##### Pre-training Optimizer
 
 Muon: used in 5/6 major open models with disclosed optimizers
 
-```
-Keller Jordan blog 
-Muon: An optimizer for hidden layers in neural networks
+``` Keller Jordan blog Muon: An optimizer for hidden layers in neural networks
 December 8, 2024 · 17 min
 
-Muon is scalable for LLM training
-Technical report 
-Jingyuan Liu¹, Jianlin Su¹, Xingcheng Yao², Zhejun Jiang¹, Guokun Lai¹, Yulun Du¹, Yidao Qin¹, Weixin Xu¹, Enzhe Lu¹, Junjie Yan¹, Yanru Chen¹, Huabin Zheng¹, Yibo Liu¹, Shaowei Liu¹, Bohong Yin¹, Weiran He¹, Han Zhu¹, Yuzhi Wang¹, Jianzhou Wang¹, Mengnan Dong¹, Zheng Zhang¹, Yongsheng Kang¹, Hao Zhang¹, Xinran Xu¹, Yutao Zhang¹, Yuxin Wu¹, Xinyu Zhou¹ `*`, Zhilin Yang¹
+Muon is scalable for LLM training Technical report J Liu¹, J Su¹, X Yao², Z
+Jiang¹, G Lai¹, Y Du¹, Y Qin¹, W Xu¹, E Lu¹, et al
 
-Collaboration w/ many institutions, formed around NanoGPT speedrun
+Collaboration w/ many institutions, formed around NanoGPT speedrun ```
+
+##### Inference
+
+vLLM and SGLang used by many LLM providers and neolabs
+
+``` Efficient Memory Management for Large Language Model Serving with
+PagedAttention Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,²,
+Lianmin Zheng¹, Cody Hao Yu³, Joseph E. Gonzalez¹, Hao Zhang⁴, Ion Stoica¹
+
+SGLang: Efficient Execution of Structured Language Model Programs Lianmin
+Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², C Kozyrakis¹, I
+Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹, among others, Berkeley and
+Stanford ```
+
+## 4:45 PM session
+
+### LangMAP: A Language-Adaptive Approach to Tokenization (17:17)
+
+Clara Meister, S Salhan, A Szablewski, P Lesci, P Buttery, T Pimentel
+
+[paper](https://arxiv.org/abs/2606.23566)
+
+> * Sometimes the tokenizer has all the right tokens — it just chooses the wrong
+>   ones.
+> * Can we make a pretrained tokenizer more language-adaptive simply by changing
+>   how we score existing tokens, rather than changing the vocabulary itself?
+
+* Language-specific tokenizers improve tokenization quality and the downstream
+  performance of models
+* Using one with an existing pretrained model requires either training a new
+  model from scratch or adapting the vocabulary of the pretrained one.
+* We propose Language-adaptive Maximum a Posteriori (LangMAP) Tokenization,
+  * extends the UnigramLM algorithm to the multilingual setting by replacing its
+    single distribution over the vocabulary with one distribution per language
+    over the same vocabulary. LangMAP
+  * can be used to
+    * train a multilingual language model from scratch, or to
+    * adapt a pretrained model's tokenizer to individual languages without
+      changing its vocabulary.
+* Language labels are required to estimate the per-language distributions;
+* at inference, the algorithm selects the highest-probability segmentation
+  across languages, ie, it does not need a language label. In
+* experiments where we adapt a pretrained tokenizer with LangMAP, we observe
+  * consistently higher morphological boundary recall than the original
+    tokenizer.
+  * In code data, it improves alignment with abstract syntax tree (AST) leaf
+    boundaries in all configurations we try.
+  * LM fine-tuning experiments: no significant differences in performance for
+    most language-task pairs.
+
+### PolERo: Studying Political Evasion in Romanian (17:46)
+
+Gabriel Stefan, Sergiu Nisioi
+
+* Political evasion
+  * ie responses that engage with a question while withholding the requestd info
+* Recent NLP work on political evasion
+  * as a classification task using a
+  * two-level taxonomy of response clarity and fine-grained evasion strategies.
+  * limited to English, leaving open whether
+  * ? the taxonomy and model behavior transfer across languages and pol contexts
+* We: PolERo, a dataset of 3,574 human-annotated question-answer pairs
+  extracted from official transcripts of five Romanian presidents.
+  * We evaluate multiple classification approaches on both datasets under
+    matched conditions, including
+    TF-IDF baselines, fine-tuned encoder models, a proposed sliding-window
+    encoder, and zero/few-shot LLM prompting.
+  * cross-lingual transfer
+    through joint bilingual training and machine-translation-based data augment.
+* results: fine-tuned encoders are competitive,
+  cross-lingual transfer is asymmetric, and
+  ambivalent evasion categories involving pragmatic cues remain
+  the main challenge across all model families.
+
+> Can we automatically detect political evasion?
+>
+> * Yes, but only partially:
+>   clarity (3 classes) is detected well; evasion (9 classes) remains hard
+> * LLMs achieve the best results, but
+>   the multi-head encoder architecture is a competitive and far cheaper
+>   alternative
+> * The multi-head architecture can serve as the basis
+>   for a discourse-analysis tool
+
+### When Similar Means Different: Evaluating LLMs on Arabic--Hebrew Cognates
+(17:48)
+
+Junhong Liang, Noor Abo Mokh, Bashar Alhafni
+
+* Arabic and Hebrew share many words with similar surface forms, including
+  true cognates, false friends, and modern loanwords.
+* These lexical relationships create ambiguity for cross-ling semant interpret,
+* we introduce SemCog Bench, a curated benchmark of
+  * 1,858 Arabic--Hebrew word pairs with
+  * sentence-level annotations for cognate identification and semantic disambig.
+* We evaluate a diverse set of open-source and proprietary LLMs across
+  * multiple input representations and contextual settings. Our
+* results show reliance on surface-form similarity, with
+  weaker performance on false friends and wide variation on loanwords. We
+  * context and scale yield model-dependent gains, while
+  * original-script inputs generally perform best.
+* code and data are publicly available.
+
+#### Morphological Richness / Orthographic Ambiguity
+
+Morphological Richness
+
+* Both Arabic and Hebrew are morphologically rich languages
+* many inflectional features (gender, number, person, case, mood, etc)
+* various clitics attached to words (conjunctions, prepositions, etc)
+* This leads to many forms of the same word which creates sparsity
+
+Orthographic Ambiguity
+
+* Arabic uses optional diacritics (tashkeel) to specify short vowels and
+  consonant doubling
+  * without context, Arabic words can have up ~7 diacritization and ~3 lemmas
+    (core meanings)
+* Hebrew uses Nikkud to mark consonantal skeleton
+
+
 ```
+لِعَيْنٍ (for an eye)
+لَعِين (cursed)
+
+סֵפֶר (book)
+סַפָּר (barber)
+סָפַר (he counted)
+סִפֵּר (he told)
+```
+
+#### Experiments: Input Representation
+
+* Raw
+* Diacritized:
+  * Arabic using CAMeL Tools (Obeid et al., 2020)
+  * Hebrew using Phonikud (Kolani et al., 2025)
+* IPA:
+  * Arabic using mappings of Khalifa et al., 2025
+  * Hebrew using Phonikud (Kolani et al., 2025)
+* Romanized:
+  * Using Uroman (Hermjakob et al., 2018)
+
+
+format|Hebrew|Arabic|
+---|--------------------------------------------------|-------------------------------------|
+Raw| أحب تناول لحم الغنم المشوي لأنه لذيذ وملئ بالنكهة.|  כל בוקר אני אוכל לחם עם חמאה וריבה.|
+Diacritized| أَحِبُّ تَناوُل لَحْم الغَنَم المَشْوِيّ لِأَنَّهُ لَذِيذ وَمَلِيء بِالنَكْهَة.| כָּל בּוֹקֶר אֲנִי אוֹכֵל לֶחֶם עִם חֶמְאָה וְרִיבָּה.|
+IPA| ʔaħibb tanaːuːla laħm aːlɣanm aːlmaʃuːiː/ /liʔannahu laðiːðin uːmaliː ʔ biaːlnakhat| kʼol bʼokeʁ ʔanʼi ʔuχʼel lʼeχem ʔʼim χemʔʼa/ /.veʁivʼa|
+Romanized|ahb tnawl lhm alghnm almshwy lanh lthyth wmly' balnkha.| kl vvqr any avkl lchm 'm chmah vryvh.|
