@@ -147,17 +147,17 @@ Yuan Gao, Weiwei Sun
 ### AfriSUD: A Dependency Treebank Collection for Eval Models on African Langs
 
 H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
-K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, I
-Akinade, C Uchechukwu, R Mabuya, C Fellbaum
+  K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, 
+  I Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 
 [paper](https://aclanthology.org/2026.emnlp-main.1896/)
 
 * African languages: linguistic diversity and global significance, underrepred
 * we: AfriSUD, the first multiling collection of synt treebanks for nine diverse
   African languages spanning major language families and regions across
-  Sub-Saharan Africa. Using the 
-  * Surface-Syntactic Universal Dependencies (SUD) framework, our community-led
-  * high-quality, native-speaker-verified data that 
+  Sub-Saharan Africa
+  * Surface-Syntactic Universal Dependencies (SUD) framework, community-led
+  * high-quality, native-speaker-verified data
   * capture typological key features such as agglutination and tone. 
 * We evaluate a range of models on AfriSUD for part-of-speech tagging and
   dependency parsing, 
@@ -171,8 +171,8 @@ Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 - Possessive constructions (comp:poss): African languages mark possession
   differently from English and European languages.
 - Underspecified (udep): construction with no clean linguistic equivalent.
-- TAM auxiliaries (comp:aux): tense, aspect and mood markers; models fail to
-  distinguish function from content head.
+- TAM auxiliaries (comp:aux): tense, aspect and mood markers; 
+  models fail to distinguish function from content head.
 
 #### Gap (UAS - LAS) by rel and lang
 
@@ -182,7 +182,7 @@ Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 |---|---|---| 
 | comp:svc | hau/swa | 100 | 
 | comp:svc | xho | 85 | 
-|---|---|---| 
+<hline>
 | comp:poss | hau | 100 | 
 | comp:poss | kin | 86 | 
 |---|---|---| 
