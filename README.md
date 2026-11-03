@@ -182,7 +182,7 @@ H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
 |---|---|---| 
 | comp:svc | hau/swa | 100 | 
 | comp:svc | xho | 85 | 
-<hline>
+|   |   |   | 
 | comp:poss | hau | 100 | 
 | comp:poss | kin | 86 | 
 |---|---|---| 
