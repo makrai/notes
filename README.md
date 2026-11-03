@@ -627,3 +627,7 @@ Raw| أحب تناول لحم الغنم المشوي لأنه لذيذ وملئ
 Diacritized| أَحِبُّ تَناوُل لَحْم الغَنَم المَشْوِيّ لِأَنَّهُ لَذِيذ وَمَلِيء بِالنَكْهَة.| כָּל בּוֹקֶר אֲנִי אוֹכֵל לֶחֶם עִם חֶמְאָה וְרִיבָּה.|
 IPA| ʔaħibb tanaːuːla laħm aːlɣanm aːlmaʃuːiː/ /liʔannahu laðiːðin uːmaliː ʔ biaːlnakhat| kʼol bʼokeʁ ʔanʼi ʔuχʼel lʼeχem ʔʼim χemʔʼa/ /.veʁivʼa|
 Romanized|ahb tnawl lhm alghnm almshwy lanh lthyth wmly' balnkha.| kl vvqr any avkl lchm 'm chmah vryvh.|
+
+### 1807
+
+### 1814
