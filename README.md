@@ -427,10 +427,8 @@ Graham Neubig (keynote, 3:15 PM)
 ### Highlights from the talk
 
 * open models lag behind proprietary ones by 104 days
-* [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July
-  2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
-  * [The incident
-    disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4
+* [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
+  * [The incident disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4
     pages long, the "companion technical writeup" has a 1+3-page-long TL;DR.
 
 > Some questions
@@ -442,40 +440,57 @@ Graham Neubig (keynote, 3:15 PM)
 
 ##### Hybrid full attention + windowed models: used by 6/9 major open models
 
-``` Hungry Hungry Hippos: Towards Language Modeling with State Space Models
+``` 
+Hungry Hungry Hippos: Towards Language Modeling with State Space Models
 Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and
 Christopher Ré† (Stanford, University at Buffalo)
+```
 
+```
 Longformer: The Long-Document Transformer Iz Beltagy*, Matthew E. Peters*, Arman
 Cohan* (Ai2)
+```
 
-Mamba: Linear-Time Sequence Modeling with Selective State Spac[es] Albert Gu¹
-and Tri Dao² (Carnegie Mellon University, Princeton) ```
+```
+Mamba: Linear-Time Sequence Modeling with Selective State Spac[es] 
+Albert Gu¹ and Tri Dao² 
+(Carnegie Mellon University, Princeton) 
+```
 
 ##### Pre-training Optimizer
 
 Muon: used in 5/6 major open models with disclosed optimizers
 
-``` Keller Jordan blog Muon: An optimizer for hidden layers in neural networks
+``` 
+Keller Jordan blog 
+Muon: An optimizer for hidden layers in neural networks
 December 8, 2024 · 17 min
+```
 
-Muon is scalable for LLM training Technical report J Liu¹, J Su¹, X Yao², Z
-Jiang¹, G Lai¹, Y Du¹, Y Qin¹, W Xu¹, E Lu¹, et al
-
+```
+Muon is scalable for LLM training 
+Technical report 
+J Liu¹, J Su¹, X Yao², Z Jiang¹, G Lai¹, Y Du¹, Y Qin¹, W Xu¹, E Lu¹, et al
 Collaboration w/ many institutions, formed around NanoGPT speedrun ```
+```
 
 ##### Inference
 
 vLLM and SGLang used by many LLM providers and neolabs
 
-``` Efficient Memory Management for Large Language Model Serving with
-PagedAttention Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,²,
-Lianmin Zheng¹, Cody Hao Yu³, Joseph E. Gonzalez¹, Hao Zhang⁴, Ion Stoica¹
+``` 
+Efficient Memory Management for Large Language Model Serving with
+PagedAttention 
+Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,², Lianmin Zheng¹, 
+  Cody Hao Yu³, Joseph E. Gonzalez¹, Hao Zhang⁴, Ion Stoica¹
+```
 
-SGLang: Efficient Execution of Structured Language Model Programs Lianmin
-Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², C Kozyrakis¹, I
-Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹, among others, Berkeley and
-Stanford ```
+```
+SGLang: Efficient Execution of Structured Language Model Programs 
+Lianmin Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², C
+Kozyrakis¹, I Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹, 
+among others, Berkeley and Stanford
+```
 
 ## 4:45 PM session
 
@@ -582,7 +597,6 @@ Orthographic Ambiguity
   * without context, Arabic words can have up ~7 diacritization and ~3 lemmas
     (core meanings)
 * Hebrew uses Nikkud to mark consonantal skeleton
-
 
 ```
 لِعَيْنٍ (for an eye)
