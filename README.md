@@ -1,4 +1,4 @@
-# EMNLP 2026 -Notes by Márton Makrai
+# EMNLP 2026 -- Notes by Márton Makrai
 
 # For AstroSpeech
 
@@ -410,7 +410,7 @@ Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
     refuses the task.
 * We release all data, code, and model outputs to establish cultural scope as a
 
-## On the Value of Open Research in Language Modeling - An Adversarial Dialog
+## On the Value of Open Research in Language Modeling -- An Adversarial Dialog
 
 Graham Neubig (keynote, 3:15 PM)
 
@@ -440,7 +440,7 @@ Graham Neubig (keynote, 3:15 PM)
 
 ##### Hybrid full attention + windowed models: used by 6/9 major open models
 
-``` 
+```
 Hungry Hungry Hippos: Towards Language Modeling with State Space Models
 Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and
 Christopher Ré† (Stanford, University at Buffalo)
@@ -452,25 +452,25 @@ Cohan* (Ai2)
 ```
 
 ```
-Mamba: Linear-Time Sequence Modeling with Selective State Spac[es] 
-Albert Gu¹ and Tri Dao² 
-(Carnegie Mellon University, Princeton) 
+Mamba: Linear-Time Sequence Modeling with Selective State Spac[es]
+Albert Gu¹ and Tri Dao²
+(Carnegie Mellon University, Princeton)
 ```
 
 ##### Pre-training Optimizer
 
 Muon: used in 5/6 major open models with disclosed optimizers
 
-``` 
-Keller Jordan blog 
+```
+Keller Jordan blog
 Muon: An optimizer for hidden layers in neural networks
 December 8, 2024 · 17 min
 ```
 
 ```
-Muon is scalable for LLM training 
-Technical report 
-J Liu¹, J Su¹, X Yao², Z Jiang¹, G Lai¹, Y Du¹, Y Qin¹, W Xu¹, E Lu¹, et al
+Muon is scalable for LLM training
+Technical report
+J Liu¹, J Su¹, X Yao², Z Jiang¹, G Lai¹, Y Du¹, Y Qin¹, W Xu¹, E Lu¹,+
 Collaboration w/ many institutions, formed around NanoGPT speedrun ```
 ```
 
@@ -478,17 +478,17 @@ Collaboration w/ many institutions, formed around NanoGPT speedrun ```
 
 vLLM and SGLang used by many LLM providers and neolabs
 
-``` 
+```
 Efficient Memory Management for Large Language Model Serving with
-PagedAttention 
-Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,², Lianmin Zheng¹, 
+PagedAttention
+Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,², Lianmin Zheng¹,
   Cody Hao Yu³, Joseph E. Gonzalez¹, Hao Zhang⁴, Ion Stoica¹
 ```
 
 ```
-SGLang: Efficient Execution of Structured Language Model Programs 
+SGLang: Efficient Execution of Structured Language Model Programs
 Lianmin Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², C
-Kozyrakis¹, I Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹, 
+Kozyrakis¹, I Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹,
 among others, Berkeley and Stanford
 ```
 
@@ -612,13 +612,13 @@ Orthographic Ambiguity
 
 * Raw
 * Diacritized:
-  * Arabic using CAMeL Tools (Obeid et al., 2020)
-  * Hebrew using Phonikud (Kolani et al., 2025)
+  * Arabic using CAMeL Tools (Obeid+ 2020)
+  * Hebrew using Phonikud (Kolani+ 2025)
 * IPA:
-  * Arabic using mappings of Khalifa et al., 2025
-  * Hebrew using Phonikud (Kolani et al., 2025)
+  * Arabic using mappings of Khalifa+ 2025
+  * Hebrew using Phonikud (Kolani+ 2025)
 * Romanized:
-  * Using Uroman (Hermjakob et al., 2018)
+  * Using Uroman (Hermjakob+ 2018)
 
 
 format|Hebrew|Arabic|
@@ -628,6 +628,87 @@ Diacritized| أَحِبُّ تَناوُل لَحْم الغَنَم المَش�
 IPA| ʔaħibb tanaːuːla laħm aːlɣanm aːlmaʃuːiː/ /liʔannahu laðiːðin uːmaliː ʔ biaːlnakhat| kʼol bʼokeʁ ʔanʼi ʔuχʼel lʼeχem ʔʼim χemʔʼa/ /.veʁivʼa|
 Romanized|ahb tnawl lhm alghnm almshwy lanh lthyth wmly' balnkha.| kl vvqr any avkl lchm 'm chmah vryvh.|
 
-### 1807
+### Rashid: A Cipher-Based Framework for Exploring In-Context Language Learning
+
+Niyati Bafna, Ryan Soh-Eun Shim, Barbara Plank, David Yarowsky, Hale Sirin
+
+[paper](https://arxiv.org/abs/2603.22497)
+
+* in-context language learning (ICLL) for unseen languages with LLMs, such
+  * lack of NLP tools, data resources, and researcher expertise. This means that
+  * findings on ICLL are often limited to very few languages and tasks. In light
+* we: Rashid, a framework for studying ICLL wherein
+  * we reversibly cipher high-resource languages (HRLs) to construct truly
+    unseen languages with access to a wide range of resources available for
+    HRLs, unlocking previously impossible exploration of ICLL phenomena. We use
+  * we assess current methods in the field with SOTA evaluation tools and manual
+    analysis, explore the utility of potentially expensive resources in
+    improving ICLL, and test ICLL strategies on rich downstream tasks beyond MT
+  * The name is inspired by stories from the Arabian Nights of
+    the ruler Harun al-Rashid
+    disguising himself as a commoner in the streets of Baghdad
+    in order to understand the problems of the people and restore justice.
+
+From the paper:
+
+* ten mid-to-high resource languages covering
+  * seven language (sub)families and three scripts in order to assess the
+    effectiveness of ICLL strategies across typologically diverse scenarios:
+  * German, Turkish, French, Spanish, Telugu, Hindi, Marathi, Vietnamese, Czech,
+    and Polish. These include languages with various linguistic profiles in
+  * morphology
+    (Vietnamese is isolating, Polish is fusional, and Turkish is agglutinative)
+  * syntax: Hindi is SOV while Spanish is SVO, Turkish and Marathi are free
+    unlike French
+
+#### Current approaches
+
+* Previous work mentioned in § 2 uses four basic types of resources to augment
+  the prompt:
+  lexicons with word-level alignment, in-context task exemplars,
+  morphological information or glosses per word including part-of-speech, and
+  grammar books with the syntactic profile of the language.
+* We assess the following approaches for both MT directions (→eng and eng→),
+  including two baselines (only-input, L-str), and
+  five methods of constructing the prompt for the LLM that use incrementally
+  added materials.  The materials are appropriately formatted by direction, eg
+  word meanings provided as mapping from input language to the output language.
+  * topline: We compute the topline performance for the (unciphered) language,
+    with a basic task prompt and no extra information.
+  * only-input: Zero-resource LLM baseline, consisting of simply the
+    task prompt with ciphered language input. This produces unrelated text
+    showing trivial performance, eg from copying the input, punctuation, or
+    named entities (< 5 Bleu for all languages), and serves as
+    a sanity check baseline.
+  * L-str (non-LLM): Word-for-word translation using a lexicon, constructed by
+    string concatenation of top lexical equivalents for every word in the
+    input. We use fuzzy lexicon search for the input word with normalized edit
+    distance as per previous work (Zhang+ 2024b).
+  * L: Word meanings from a lexicon provided in the LLM context for every word
+    in the input.
+    * We use the top k = 2 source matches per word with fuzzy matching, listing
+      up to two equivalents per source match in the prompt if the lexicon lists
+      multiple.
+  * LE: (Additionally) E = 3 input-output exemplar pairs, selected by BM25
+    similarity to the input from a held-out exemplar pool, in line with previous
+    work (Zhang+ 2024a).
+  * LELem: (Additionally) Lexicon matches for the lemmas of input words,
+    obtained with Stanza lemmatizers (Qi+ 2020). This
+    * mimics a scenario where we can build a basic morphological lemmatizer
+      but not more complex tools for a new language.
+  * LELemM: (Additionally) Richer morphological glosses
+    including POS tags and word features from Stanza. This typically includes
+    plurality, person, case, tense-aspect-mood, and other such information.
+  * LELemMS: (Additionally) High-level syntactic profile,
+    * 8 primary word order features and
+    * comments about its morphosyntactic typology based on WALS features (Dryer&)
+    * previous works have used grammar books for this purpose,
+    * hE Aycock+ (2024) shows that gains from this are largely due to bitext
+      examples or lexical leakage in the grammar books.
+    * We instead use a manually constructed grammatical description as a
+      controlled manner of providing syntactic information to the model.
+* We use ChiKhaPo lexicons from Chang and Bafna (2025), consisting of Gatitos
+  (Jones+ 2023) and PanLex (Kamholz+ 2014). 6 See
+  * more details about all strategies and prompts used in the paper in App C
 
 ### 1814
