@@ -793,7 +793,7 @@ Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
 
 #### Motivation
 
-Recent work has found evidence of massively multilingual feature spaces 
+Recent work has found evidence of massively multilingual feature spaces
 [Wendler et al., 2024; Brinkmann et al., 2025]
 
 > eg Plural Feature
@@ -802,34 +802,34 @@ Recent work has found evidence of massively multilingual feature spaces
 > probabilities: p(is) p(are), p(ist) p(sind), p(est) p(sont)
 > [Figure from Brinkmann et al., 2025.]
 
-“Stages of inference” [Lad et al., 2024]: 
+“Stages of inference” [Lad et al., 2024]:
 the first half of the layers read into more abstract concept representations.
-Last half of layers use these representations 
+Last half of layers use these representations
 to refine the next token prediction.
 
-### HOMURA: Taming the Sand-Glass for Time-Constrained LLM Translation 
+### HOMURA: Taming the Sand-Glass for Time-Constrained LLM Translation
   via Reinforcement Learning (10:14)
 
 Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
 
 [Technical report](arXiv 2609.40181)
 
-* LLMs for MT: systemic cross-lingual verbosity bias, rendering them 
+* LLMs for MT: systemic cross-lingual verbosity bias, rendering them
   ~> unsuitable for strict time-constrained tasks like subtitling and dubbing.
-* prompt-engineering approaches struggle to resolve this 
+* prompt-engineering approaches struggle to resolve this
   * conflict between semantic fidelity and rigid temporal feasibility. To bridge
-    this gap, 
-* we introduce 
-  * Sand-Glass, a benchmark specifically designed to evaluate 
+    this gap,
+* we introduce
+  * Sand-Glass, a benchmark specifically designed to evaluate
     translation under syllable-level duration constraints. Furthermore, we
-  * Homura, a reinforcement learning framework that 
+  * Homura, a reinforcement learning framework that
     explicitly optimizes the trade-off between semantic preservation and
-    temporal compliance. By employing a 
-  * constrained reinforcement learning objective featuring 
+    temporal compliance. By employing a
+  * constrained reinforcement learning objective featuring
     a novel dynamic syllable-ratio reward, Homura effectively "tames" the output
     length.
 * Experiment: Homura significantly outperforms strong baselines, achieving
-  precise length control that respects linguistic density hierarchies 
+  precise length control that respects linguistic density hierarchies
   without compromising semantic adequacy.
 
 [Index-Translate Model Family](https://index-translate.bilibili.com/)
@@ -861,21 +861,21 @@ Yuqian Wang, Y Wang, C Xiao, K Xu, B He, J Tan, Z Chen, L Chen, Y Huo, M Sun
 
 [paper](https://arxiv.org/abs/2610.25749)
 
-* In-context learning (ICL) 
-  tackles downstream tasks conditioned on demonstrations. This paradigm 
+* In-context learning (ICL)
+  tackles downstream tasks conditioned on demonstrations. This paradigm
   * relies heavily on neighbor-based matching between queries and
     demonstrations, limiting out-of-distribution (OOD) performance. For better
 * rule-based inductive reasoning derives task-level regularities, which we term
   task-level inductive representations (TIR), before directly answering.
 * hE existing methods lack generalizable inductive ability across diverse tasks.
-* Inspired by meta-learning, 
+* Inspired by meta-learning,
 * we propose Cognitive-Decoupling meta-Induction (CoDI) for TIR-based inductive
-  reasoning on general tasks. CoDI 
-  * comprises 
-    * a Cognitive-Decoupling Framework for query-blind TIR induction, and 
+  reasoning on general tasks. CoDI
+  * comprises
+    * a Cognitive-Decoupling Framework for query-blind TIR induction, and
     * a Dual-Loop Meta-Inductive Learning method for cross-task inducer optimiz
 * Empirically
-  * substantial performance gains on five ID and OOD benchmarks, and 
+  * substantial performance gains on five ID and OOD benchmarks, and
   * preserves OOD gains without explicit induction at inference.
   Code is available at this https URL.
 
@@ -888,26 +888,26 @@ Tanja Baeumel, Josef van Genabith, Simon Ostermann
 [paper](https://arxiv.org/abs/2609.01386)
 
 * Tokenization in LMs is treated by default as an input preprocessing decision.
-* We argue that this framing is incomplete: 
-  in autoregressive models, tokenizer granularity determines 
-  what the model must resolve in a single forward pass, and therefore 
-  the supervision signal it receives. This 
-  affects both the difficulty of the learning problem and 
+* We argue that this framing is incomplete:
+  in autoregressive models, tokenizer granularity determines
+  what the model must resolve in a single forward pass, and therefore
+  the supervision signal it receives. This
+  affects both the difficulty of the learning problem and
   affects the representations that emerge inside the model. We test this in a
 * experiment on numeric reasoning with decoupling of input and output tok
-  * As the output supervision view predicts, 
+  * As the output supervision view predicts,
     differences in task performance, training dynamics, and model internals are
     induced by output tokenization and largely invariant to input tokenization.
-* This may matter in practice, because 
-  models with different tokenization strategies differ 
+* This may matter in practice, because
+  models with different tokenization strategies differ
   not only in input representation but in the task they were trained on.
 * Comparisons between models may thus partly reflect task definition rather than
-  ability. 
-* A survey of 120 recent `*`CL papers on numeric reasoning confirms that 
-  this is rarely acknowledged: 
+  ability.
+* A survey of 120 recent `*`CL papers on numeric reasoning confirms that
+  this is rarely acknowledged:
   * only about 10% report the numeric tokenization of the models they evaluate,
   * 69% compare across tokenization, and thus supervision, regimes without
-    reporting it. While 
+    reporting it. While
 * prior work documents that tokenization consistently affects model performance,
   * no principled account of why.
 * We argue that framing tokenization as output supervision provides that
@@ -920,48 +920,48 @@ Jacob Bremerman, Brihi Joshi, Hirona Arai, Xiang Ren, Jonathan May
 
 [paper](https://arxiv.org/abs/2603.25489)
 
-* Untranslatability, 
+* Untranslatability,
   * cases where meaning cannot be directly preserved across languages, is
     * translation cannot be reduced to one-to-one equivalence. We introduce a
   * well-studied in linguistics but underexplored in NLP. As machine translation
-  * MT limitations increasingly concentrate in such cases, where 
+  * MT limitations increasingly concentrate in such cases, where
 * we
   * ontology of untranslatability along with a taxonomy of compensation strategs
-  * a multilingual dataset of 
+  * a multilingual dataset of
     untranslatable sentences paired with strategy-based translations, enabling
-    controlled analysis of translation behavior. 
-  * Initial human preference studies suggest that 
-    translation quality depends on the strategy used, with 
+    controlled analysis of translation behavior.
+  * Initial human preference studies suggest that
+    translation quality depends on the strategy used, with
     consistent preferences for outputs that include explanatory context, known
     as the Annotation compensation strategy.
 
 From the paper:
 
-* The most appropriate cStrat for an input 
+* The most appropriate cStrat for an input
   depends, in general, on both the uType and the translation context. This
   * suggests that translation involves not only generating text, but also
     selecting how meaning should be conveyed
 
-### Translation Asymmetry in LLMs as a Data Augmentation Factor: 
+### Translation Asymmetry in LLMs as a Data Augmentation Factor:
   A Case Study for 6 Romansh Language Varieties (12:24)
 
 J Vamvas, IP Prat, A Heldstab, Dominic P. Fischer, Sina Ahmadi, Rico Sennrich
 
 [paper](https://arxiv.org/abs/2603.25489)
 
-* low-resource machine translation rely on 
+* low-resource machine translation rely on
   synthetic data based on text in higher-resource languages. We revisit this
-* Romansh, a language with 6 varieties. 
+* Romansh, a language with 6 varieties.
 * LLMs tend to confuse these varieties when translating into Romansh, but they
 * LLMs are quite good at translating out of Romansh into a high-resrc eg `de`
 * ie the direction of data augmentation is a crucial choice. We find that
 * synthetic translations into the higher-resource language is the superior
 * allows us to surpass a Gemini 3 Pro baseline on German-Romansh translation
-  (+23 BLEU over Gemini in the lowest-resource variety). A 
+  (+23 BLEU over Gemini in the lowest-resource variety). A
 * human evaluation confirms that our experiments yield the first model that
   * fluent translations in the individual Romansh varieties.
 
-### CoPiT: Cognitive Pivot Translation for Digraphic Low-Resource Mongolian 
+### CoPiT: Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
   in the Traditional Script (12:30)
 
 Burte Bayarsaikhan, Serynn Kim, Buru Chang
@@ -969,22 +969,29 @@ Burte Bayarsaikhan, Serynn Kim, Buru Chang
 [paper](https://arxiv.org/abs/2607.05849)
 
 * a digraphic language: Mongolian is written in both Cyrillic and Traditional
-  * severe imbalance in data availability. While the 
-  * Cyrillic script is relatively well-resourced, 
+  * severe imbalance in data availability. While the
+  * Cyrillic script is relatively well-resourced,
   * the Traditional script remains extremely data-scarce and orthographic ambig
-    * substantial performance degradation in direct translation. 
+    * substantial performance degradation in direct translation.
+    * eg Gemini-3-Pro-Preview API flags Traditional Mongolian script as harmful
+      (App A.1, Fig 8)
 * We propose CoPiT, a cognitively motivated pivot-based translation pipeline
-  that exploits this internal resource hierarchy by 
+  that exploits this internal resource hierarchy by
   routing translation through the Cyrillic script. The pipeline explicitly
   resolves script-induced ambiguity in the Traditional script before
-  ~> more stable and accurate meaning transfer.
-* exper: multiple backbone models and target languages, 
-  * CoPiT generally improves over direct translation, with 
+  * three linguistically motivated steps
+    * aligned with disambiguation processes used by fluent Mongolian readers:
+    * vowel harmony recovery, Latin-assisted normiz, and Cyrillic normiz.
+    * result: a phonologically specified Cyrillic representation, thereby
+    * without relying on large-scale parallel corpora. Instead, it
+    * requires only a small amount of data for learning script conversion.
+* exper: multiple backbone models and target languages,
+  * CoPiT generally improves over direct translation, with
   * substantial absolute BLEU improvements and up to 1.5-1.6x gains in COMET.
-  * **These gains 
+  * **These gains
     allow strong open-source models to match or outperform GPT-4.1 under
-    comparable evaluation settings.** Beyond inference-time improvements, 
+    comparable evaluation settings.** Beyond inference-time improvements,
 * CoPiT enables the construction of synthetic parallel data directly from trad
-  * mitigating data scarcity in realistic low-resource scenarios. 
-  * We release a new multi-script parallel dataset covering 
+  * mitigating data scarcity in realistic low-resource scenarios.
+  * We release a new multi-script parallel dataset covering
     Mongolian in both scripts alongside English, Korean, and Russian.
