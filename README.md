@@ -812,6 +812,8 @@ to refine the next token prediction.
 
 Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
 
+[Technical report](arXiv 2609.40181)
+
 * LLMs for MT: systemic cross-lingual verbosity bias, rendering them 
   ~> unsuitable for strict time-constrained tasks like subtitling and dubbing.
 * prompt-engineering approaches struggle to resolve this 
@@ -832,39 +834,157 @@ Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
 
 [Index-Translate Model Family](https://index-translate.bilibili.com/)
 
-* Primary text & vision model: Index-Translate.
+Text, speech, controlled dubbing and long documents
 
-[//]: # "  * Available in 3 scales: 2B, 9B, and 35B-A3B (preview, currently an"
-[//]: # "    in-training version) and supporting "
-[//]: # "    * 150 languages, its general translation performance achieves SoTA levels in"
-[//]: # "      its class, rivaling mainstream general-purpose models. It is specifically"
-[//]: # "      enhanced for instruction-following, meme translation, and end-to-end"
-[//]: # "      multimodal image translation (zero OCR dependency) across the entire"
-[//]: # "      family (2B / 9B / 35B-A3B) via native visual encoders."
+```
+Index-Translate
+150-language text translation with instructions
+2B / 9B / 35B-A3B (preview)
 
-* Speech derivative model: Index-Echo.
+Index-Echo
+End-to-end speech-to-text and speech-to-speech
+Voice-conditioned dubbing, 2B / 9B
 
-[//]: # "  * Trained on Index-Translate-2/9B, it includes "
-[//]: # "    * end-to-end S2TT (speech in, translated text out) and "
-[//]: # "    * fully end-to-end S2ST (speech-to-speech translation, direct dubbing"
-[//]: # "      generation). "
-[//]: # "      * S2TT connects an AuT encoder to Index-Translate-2/9B and is trained"
-[//]: # "        end-to-end for speech translation; "
-[//]: # "      * S2ST adopts a fully end-to-end Speech-to-Speech architecture that deeply"
-[//]: # "        aligns translation hidden representations into speech generation with"
-[//]: # "        full-pipeline joint training—bypassing traditional cascading systems to"
-[//]: # "        generate target-language dubbing with preserved speaker timbre directly"
-[//]: # "        from source speech. It currently supports Chinese/English input into 6"
-[//]: # "        languages."
+Index-Homura
+Translation with a target syllable count
+Length control for dubbing, 2B / 9B
 
-* Length-control derivative model: Index-Homura.
+Index-NativeLong
+Full-document translation in a single generation
+Books and long documents, 2B / 9B
+```
 
-[//]: # "  * Trained on Index-Translate-9B, it controls translation length by a target"
-[//]: # "    syllable-ratio range, producing scripts better suited to the dubbing time"
-[//]: # "    window. Currently supports Chinese input into 4 languages."
+### Cognitively Decoupled Meta-Induction for Out-of-Distribution Generalization
+SAC highlight (16:36)
 
-* Long-document derivative model: Index-NaiLong.
+Yuqian Wang, Y Wang, C Xiao, K Xu, B He, J Tan, Z Chen, L Chen, Y Huo, M Sun
 
-[//]: # "  *  Trained on Index-Translate-9B, it targets long-form content such as full"
-[//]: # "     novels, exploring coherent and complete translation in a single generation."
-[//]: # "     Currently supports Chinese–English bidirectional translation."
+[paper](https://arxiv.org/abs/2610.25749)
+
+* In-context learning (ICL) 
+  tackles downstream tasks conditioned on demonstrations. This paradigm 
+  * relies heavily on neighbor-based matching between queries and
+    demonstrations, limiting out-of-distribution (OOD) performance. For better
+* rule-based inductive reasoning derives task-level regularities, which we term
+  task-level inductive representations (TIR), before directly answering.
+* hE existing methods lack generalizable inductive ability across diverse tasks.
+* Inspired by meta-learning, 
+* we propose Cognitive-Decoupling meta-Induction (CoDI) for TIR-based inductive
+  reasoning on general tasks. CoDI 
+  * comprises 
+    * a Cognitive-Decoupling Framework for query-blind TIR induction, and 
+    * a Dual-Loop Meta-Inductive Learning method for cross-task inducer optimiz
+* Empirically
+  * substantial performance gains on five ID and OOD benchmarks, and 
+  * preserves OOD gains without explicit induction at inference.
+  Code is available at this https URL.
+
+## 11 AM Session
+
+### When Tokenization is Secretly Output Supervision (11:34)
+
+Tanja Baeumel, Josef van Genabith, Simon Ostermann
+
+[paper](https://arxiv.org/abs/2609.01386)
+
+* Tokenization in LMs is treated by default as an input preprocessing decision.
+* We argue that this framing is incomplete: 
+  in autoregressive models, tokenizer granularity determines 
+  what the model must resolve in a single forward pass, and therefore 
+  the supervision signal it receives. This 
+  affects both the difficulty of the learning problem and 
+  affects the representations that emerge inside the model. We test this in a
+* experiment on numeric reasoning with decoupling of input and output tok
+  * As the output supervision view predicts, 
+    differences in task performance, training dynamics, and model internals are
+    induced by output tokenization and largely invariant to input tokenization.
+* This may matter in practice, because 
+  models with different tokenization strategies differ 
+  not only in input representation but in the task they were trained on.
+* Comparisons between models may thus partly reflect task definition rather than
+  ability. 
+* A survey of 120 recent `*`CL papers on numeric reasoning confirms that 
+  this is rarely acknowledged: 
+  * only about 10% report the numeric tokenization of the models they evaluate,
+  * 69% compare across tokenization, and thus supervision, regimes without
+    reporting it. While 
+* prior work documents that tokenization consistently affects model performance,
+  * no principled account of why.
+* We argue that framing tokenization as output supervision provides that
+  account.
+
+### Translating the Untrans: An Operationalizable Ontology for Untranslatability
+(12:22)
+
+Jacob Bremerman, Brihi Joshi, Hirona Arai, Xiang Ren, Jonathan May
+
+[paper](https://arxiv.org/abs/2603.25489)
+
+* Untranslatability, 
+  * cases where meaning cannot be directly preserved across languages, is
+    * translation cannot be reduced to one-to-one equivalence. We introduce a
+  * well-studied in linguistics but underexplored in NLP. As machine translation
+  * MT limitations increasingly concentrate in such cases, where 
+* we
+  * ontology of untranslatability along with a taxonomy of compensation strategs
+  * a multilingual dataset of 
+    untranslatable sentences paired with strategy-based translations, enabling
+    controlled analysis of translation behavior. 
+  * Initial human preference studies suggest that 
+    translation quality depends on the strategy used, with 
+    consistent preferences for outputs that include explanatory context, known
+    as the Annotation compensation strategy.
+
+From the paper:
+
+* The most appropriate cStrat for an input 
+  depends, in general, on both the uType and the translation context. This
+  * suggests that translation involves not only generating text, but also
+    selecting how meaning should be conveyed
+
+### Translation Asymmetry in LLMs as a Data Augmentation Factor: 
+  A Case Study for 6 Romansh Language Varieties (12:24)
+
+J Vamvas, IP Prat, A Heldstab, Dominic P. Fischer, Sina Ahmadi, Rico Sennrich
+
+[paper](https://arxiv.org/abs/2603.25489)
+
+* low-resource machine translation rely on 
+  synthetic data based on text in higher-resource languages. We revisit this
+* Romansh, a language with 6 varieties. 
+* LLMs tend to confuse these varieties when translating into Romansh, but they
+* LLMs are quite good at translating out of Romansh into a high-resrc eg `de`
+* ie the direction of data augmentation is a crucial choice. We find that
+* synthetic translations into the higher-resource language is the superior
+* allows us to surpass a Gemini 3 Pro baseline on German-Romansh translation
+  (+23 BLEU over Gemini in the lowest-resource variety). A 
+* human evaluation confirms that our experiments yield the first model that
+  * fluent translations in the individual Romansh varieties.
+
+### CoPiT: Cognitive Pivot Translation for Digraphic Low-Resource Mongolian 
+  in the Traditional Script (12:30)
+
+Burte Bayarsaikhan, Serynn Kim, Buru Chang
+
+[paper](https://arxiv.org/abs/2607.05849)
+
+* a digraphic language: Mongolian is written in both Cyrillic and Traditional
+  * severe imbalance in data availability. While the 
+  * Cyrillic script is relatively well-resourced, 
+  * the Traditional script remains extremely data-scarce and orthographic ambig
+    * substantial performance degradation in direct translation. 
+* We propose CoPiT, a cognitively motivated pivot-based translation pipeline
+  that exploits this internal resource hierarchy by 
+  routing translation through the Cyrillic script. The pipeline explicitly
+  resolves script-induced ambiguity in the Traditional script before
+  ~> more stable and accurate meaning transfer.
+* exper: multiple backbone models and target languages, 
+  * CoPiT generally improves over direct translation, with 
+  * substantial absolute BLEU improvements and up to 1.5-1.6x gains in COMET.
+  * **These gains 
+    allow strong open-source models to match or outperform GPT-4.1 under
+    comparable evaluation settings.** Beyond inference-time improvements, 
+* CoPiT enables the construction of synthetic parallel data directly from trad
+  * mitigating data scarcity in realistic low-resource scenarios. 
+  * We release a new multi-script parallel dataset covering 
+    Mongolian in both scripts alongside English, Korean, and Russian.
