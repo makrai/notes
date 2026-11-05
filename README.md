@@ -78,7 +78,7 @@ Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
   * This divergence emerges in later layers and causally influences downstream
     predictions.
 
-### Gold vs. Translation: (16:27) #### Are We Measuring Language, Knowledge, or
+### Gold vs Translation: (16:27) #### Are We Measuring Language, Knowledge, or
 Locality in Translated Benchmarks?
 
 Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
@@ -410,7 +410,7 @@ Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
     refuses the task.
 * We release all data, code, and model outputs to establish cultural scope as a
 
-## On the Value of Open Research in Language Modeling -- An Adversarial Dialog [keynote]
+## [Neubig] On the Value of Open Research in LMing -- An Adversarial Dialog
 
 Graham Neubig (keynote, 3:15 PM)
 
@@ -995,3 +995,250 @@ Burte Bayarsaikhan, Serynn Kim, Buru Chang
   * mitigating data scarcity in realistic low-resource scenarios.
   * We release a new multi-script parallel dataset covering
     Mongolian in both scripts alongside English, Korean, and Russian.
+
+## [Korhonen] AI for the Many: Starting from the World, Not the Model
+
+Keynote 3: Anna Korhonen
+
+* Recent evidence shows a widening global linguistic hierarchy, with thousands
+* addressing this divide requires a fundamental shift in how we approach AI
+  * Instead of asking how existing models can be extended to more people,
+    we should ask what communities need from AI and how it can deliver benefit
+  * grounding AI in local needs and realities,
+    taking account of available resources and infrastructure, and
+    judging success by what it delivers in practice. If this technology is to
+
+### Cited
+
+#### Donors and Recipients: On Asymmetric Transfer Across Tasks and Languages
+with Parameter-Efficient Fine-Tuning
+
+   K Dymkiewicz, I Vulić, H Yannakoudakis, E Shapira, R Reichart, A Korhonen
+
+* how improvements in one task or language affect other tasks and languages
+  remains poorly understood.
+* We conduct a controlled LoRA fine-tuning study across
+  multiple open-weight LLM families and scales, using a standardised grid of jj11
+  languages and four benchmarks.
+  * We fine-tune each model on a single task–language source, then
+    evaluate it on all other task–language target pairs to measure transfer. We
+* three regimes:
+  * Matched-Task (Cross-Language),
+  * Cross-Task (Matched-Language), and
+  * Cross-Task (Cross-Language).
+* Single-source fine-tuning yields a net positive uplift across regimes, but the
+  gains are strongly asymmetric.
+  * Matched-Task, Cross-Language transfer emerges as the most effective and
+    structurally regular regime, with
+    transfer magnitude driven principally by the identity of the target language
+    rather than model architecture. We identify
+* a stable coarse-grained hierarchy in which some/other task and lang targets
+  * consistently absorb gains from diverse sources, while others
+  * remain relatively isolated. These results imply that
+* ie effective fine-tuning requires accounting for donor–recipient roles to
+  maximise downstream gains
+  while limiting collateral degradation in other capabilities.
+
+#### Polyglot Teachers: Evaluating LMs for Multilingual Synthetic Data Generat
+
+               Lester James V. Miranda, Ivan Vulić, Anna Korhonen
+
+* Synthesizing supervised finetuning (SFT) data from language models (LMs) to
+  teach smaller models multilingual tasks has become increasingly common.
+* hE teacher model selection is often ad hoc,
+  typically defaulting to the largest available option, even though such models
+  may have significant capability gaps in non-English languages. This practice
+  can result in poor-quality synthetic data and suboptimal student downstream
+  performance. In this work,
+* we systematically characterize what makes an effective multilingual teacher.
+  * We combine
+    intrinsic measures of data quality with extrinsic student model performance
+    in a metric we call Polyglot Score.
+  * 10 LMs across 6 typologically diverse languages, generating over
+    1.4M SFT examples and training 240 student models. Our analyses reveal that
+* model scale alone does not significantly predict teacher effectiveness:
+  * the most effective teachers we identify are consistently smaller than the
+  * ranking is stable across student base model families.
+  * data qualities such as prompt diversity, length, and response fluency
+    capture 93.3% of the variance in intrinsic data quality and predict student
+    performance. Finally, we provide
+* practical recommendations, including
+  * matching the model families of teacher-student pairs and
+  * generating responses to existing prompts or translating them from English,
+
+## [Best Papers](https://2026.emnlp.org/program/awards_papers/)
+
+### Best Paper
+
+DiscoTrace: Representing and Comparing Answering Strategies of Humans and LLMs
+in Information-Seeking Question Answering.
+
+Neha Srikanth, Jordan Boyd-Graber, Rachel Rudinger
+
+* Reveals a
+  fundamental limitation in the diversity of discourse strategies used by LLMs.
+* Introduces a new ontology of discourse acts, grounded in discourse analysis,
+  * provides a framework for understanding LLM behaviour and
+    guiding the development of more appropriate responses
+    to different users and conversational goals.
+
+Don’t Read Everything: A Curvature-Conditioned Query for Linear Attention.
+
+Dong Le, Thong Thanh Nguyen, Cong-Duy T Nguyen, Anh Tuan Luu
+
+### Best Special Theme Paper
+
+Beyond “To whom it may concern”: Tailoring Machine Translation
+to Audience and Intent
+
+Raphaël Merx, Ekaterina Vylomova, Trevor Cohn
+
+Recentering the machine translation task to what it means for a human user by
+examining evaluation beyond semantic equivalence to assess
+how well a translation serves its intended audience and purpose,
+including in challenging low-resource languages.
+
+### Best Resource Paper
+
+XYBench: Can LLMs Respond Pragmatically to Queries with Misconceptions?
+
+Akhila Yerukola, J D. Hwang, M Zheng, J Godsey, H Kim, V Pyatkin, J Hu, M Sap
+
+* An 8,000+ user-generated query benchmark that
+  shifts LLM evaluation from passive instruction-following
+  to active **user misconception detection** and pragmatic reasoning.
+
+### Social Impact Award
+
+Clinically Grounded Privacy Evaluation of Medical LMs
+
+S Ronaghi, S Tonekaboni, L Stempfle, V Utti, J Li Cahoon, N Hendrix, A Vala,
+  M Ghassemi, E Alsentzer
+
+### Best Demo Papers
+
+CoDA: A Human-LM Collaborative Codebook Development Assistant
+for Domain-Specific Text Annotation (Runner-Up)
+
+J Ranjit, S Chellappa, A Rivas Costante, C Manjunath, L Onasch-Vera, HW Nadel,
+  E Rice, S Swayamptipa
+
+WonderEcon: An Interactive LLM-Agent System for Simulating Economies
+
+Jing Qian, B Liu, W Gu, H Ruan, C Huo, J Yang, M Deng, J Han, B Wang
+
+### Senior Area Chair Highlights
+
+[22](https://2026.emnlp.org/program/awards_papers/#sac-highlights)
+
+### Outstanding Paper Award (22)
+
+- Accelerating Constrained Decoding with Token Space Compression.
+Michael Sullivan, Alexander Koller
+
+- Delineates a clever vocabulary compression method that detects grammar-based token equivalence classes, substantially speeding up CFG-constrained decoding with Earley parsing. Makes reliable constrained generation practical in domains such as code generation and chemistry..
+
+- Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems.
+Jiamu Zhang, Lingxi Zhang, Pengjun Lu, Qiyue Zhang, Yu-Neng Chuang, Zhengchen Li, Shuai Xu, Vipin Chaudhary, Hanjie Chen
+
+- Proposes a controlled evaluation that holds the surrounding system fixed and varies only each method’s structural output. Raises hard questions about evaluation on a topic of fast-growing importance..
+
+- SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction.
+Yuting Ning, Zhehao Zhang, Yash Kumar Lal, Boyu Gou, Junyi Li, Weitong Ruan, Chentao Ye, Rahul Gupta, Diyi Yang, Yu Su, Huan Sun
+
+- Presents a timely, well-executed study of skill-based attacks on LLM agents, showing how maliciously written skills can be automatically constructed to compromise both commercial and open systems across the skill lifecycle. Highlights urgent, growing security risks in the agent ecosystem..
+
+- Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following.
+Yanzhao Zheng, Yuanqiang Yu, Tianze Xu, Chao Ma, Zhentao Zhang, Jihuai Zhu, Baohua Dong, Hangcheng Zhu, Ruohui Huang
+
+- Introduces a clever counterfactual credit-assignment method for on-policy distillation, providing fine-grained supervision for following complex instructions. Demonstrates strong improvements over standard distillation at fixed compute..
+
+- OptiMer: Optimal Distribution Vector Merging Is Better than Data Mixing for Continual Pre-Training.
+Haiyue Song, Huy Hien Vu, Masao Utiyama
+
+- Proposes a novel approach to the important problem of data mixture optimization for continual pre-training. Instead of exploring different data mixes, it optimizes the merging of model updates from individual datasets, demonstrating improved performance at substantially lower search cost..
+
+- Can MLLMs Perceive and Describe Medical Image Quality Beyond Scores?.
+Jiyao Liu, Jinjie Wei, Wanying Qu, Chenglong Ma, Junzhi Ning, Yunheng Li, Ying Chen, Jiafan Zhang, Pengcheng Chen, Xin Gao, Ming Hu, Xin Wang, Shujian Gao, Dingkang Yang, Zhongying Deng, Jin Ye, Lihao Liu, Junjun He, Ningsheng Xu
+
+Introduces a benchmark for investigating the potential use of multimodal LLMs for medical image quality assessment through language descriptions, rather than numerical scores. The benchmark has broad coverage, it has been carefully constructed, involving experts.
+
+- Omnilingual MT: Machine Translation for 1,600 Languages.
+Belen Alastruey, Niyati Bafna, Andrea Caciolai, Kevin Heffernan, Artyom Kozhevnikov, Christophe Ropers, Eduardo Sánchez, Charles-Éric Saint-Jacques, Ioannis Tsiamas, Xiang Tony Cao, Chierh Cheng, Joe Chuang, Paul-Ambroise Duquenne, Mark Duppenthaler, Cynthia Gao, Pere-Lluís Huguet Cabot, João Maria Janeiro, Jean Maillard, Gabriel Eduardo Mejia-Gonzalez, Holger Schwenk, Edan Toledano, Arina Turkatenko, Albert Ventayol-Boada, Ravi Arikapudi, Nathanial Paul Ekberg, Rashel Moritz, Alexandre Mourachko, Surya Parimi, Mary Williamson, Shireen Yates, David Dale, Marta R. Costa-jussà
+
+This paper extends machine translation to 1,600 languages, a large step toward serving the world's underrepresented languages. It also contributes new resources and reproducible pipelines that let others build smaller, task-specific MT models.
+
+- Do Benchmarks Measure the Same Thing? Evaluation-Free Benchmark Redundancy Analysis with SAE.
+Yaoning Wang, Jiahao Ying, Yubo Ma, Yu Wan, Dayiheng Liu, Yixin Cao, Yu-Gang Jiang
+
+Presents a creative approach to analysing benchmark redundancy using sparse autoencoders, connecting interpretability with benchmarking efficiency. A thorough empirical study with promising results and potential practical impact on how language models are evaluated.
+
+- UReason: Benchmarking Reasoning-to-Generation Alignment in Unified Multimodal Models.
+Cheng Yang, Chufan Shi, Bo Shui, Yaokang Wu, Muzi Tao, Huijuan Wang, Ivan Yee Lee, Yong Liu, Xuezhe Ma, Taylor Berg-Kirkpatrick
+
+Introduces a carefully curated benchmark that challenges the common assumption that chain-of-thought reasoning improves image generation in unified multimodal models.
+
+- In-Place Feedback: Reliable Refinement for Multi-Turn Expert-LLM Collaboration.
+Youngbin Choi, Minjong Lee, Saemi Moon, Seunghyuk Cho, Chaehyeon Chung, MoonJeong Park, Dongwoo Kim
+
+A feedback mechanism where experts directly edit an LLM's previous response and the model continues from the edited context, instead of appending corrections as a new turn. Outperforms standard multi-turn feedback with fewer tokens and expert user study shows higher satisfaction and substantially lower fatigue.
+
+- D3-Gym: Constructing Real-World Verifiable Environments for Data-Driven Discovery.
+Hanane Nour Moussa, Yifei Li, Zhuoyang Li, Yankai Yang, Cheng Tang, Tianshu Zhang, Nesreen K. Ahmed, Ali Payani, Ziru Chen, Huan Sun
+
+The paper constructs executable scientific environments together with automatically generated, task-specific verification. The resulting D3-Gym contains 565 tasks from 239 real scientific repositories across four disciplines.
+
+- The Cost of Sounding Different: Accent Bias in Audio Language Models.
+Aruna Srivastava, Orevaoghene Ahia, Li Lucy, Ashley Christendat, Sameep Chattopadhyay, Farhan Samir, Tejumade Afonja, Valentin Hofmann, Sachin Kumar, Noah A. Smith, Yulia Tsvetkov
+
+This paper provides compelling evidence of accent-based discrimination in audio language models, demonstrating that speakers with Chinese and Nigerian accents receive systematically lower delivery scores despite identical content and accurate transcription.
+
+- From Token Probabilities to Semantic Constraints: Towards Declarative Probabilistic Evaluation of Language Models.
+Kyle Richardson, Cullen Anderson, Pranav Balakrishnan, Takuto Ban, Daksha Ladia, Ankita Gupta, Marisa Hudspeth
+
+Introduces a novel probabilistic framework for evaluating the logical consistency of language model predictions. Provides new evaluation tests that reveal systematic weaknesses in current models, including cases where consistency deteriorates with model scale.
+
+- Conformal Certification of Reasoning Trace Prefixes.
+Matt Y. Cheung, Ashok Veeraraghavan, Hanjie Chen, Guha Balakrishnan
+
+Formalizes the intuitive notion of a clean reasoning prefix and proposes a method for identifying prefixes that are unlikely to contain errors at a specified risk level. Shows improved results in avoiding errors and correcting reasoning traces.
+
+- When Must Faithful Chain-of-Thought Fail? An Information-Theoretic Bound and Its Empirical Limits.
+Jikun Wu, Dongxin Guo, SM Yiu
+
+The paper takes an information-theoretic perspective on the topic of whether Chain of Thought reasoning can be faithful to the model's internal computation and provides clear bounds that leave a lot of room for improvement in the state of the art.
+
+- Diffusion Large Language Models for Visual Speech Recognition.
+Jeong Hun Yeo, Chae Won Kim, Hyeongseop Rha, Yong Man Ro
+
+Shows that visual speech recognition (lip reading) depends heavily on bidirectional context, and on that basis adapts diffusion large language models as an alternative to autoregressive decoding. Point to new uses for diffusion models in speech and multimodal tasks.
+
+- Race in the Record: Measuring Racial Signal and Model Inference in Police Arrest Narratives.
+Arka Dutta, Ted Forsyth, O. Nicholas Robertson, Ashiqur R. KhudaBukhsh
+
+Builds a rich resource for measuring racial signals in police arrest narratives. Shows that LLM processing can amplify the implicit bias in such texts. Rigorous analysis, practical methodology, and candid treatment of limitations and ethics.
+
+- Aligned but Not Partner-Specific: How Multimodal LLM Agents Succeed in Reference Games Without Forming Conceptual Pacts.
+Po-Ya Angela Wang, Chinmaya Mishra, Asli Ozyurek, Paula Rubio-Fernandez, Esam Ghaleb
+
+This work sheds new light on how interacting multimodal agents negotiate common ground. The paper uses clever experimental controls to scrutinize claims of strong pragmatic competence in LLMs, revealing a nuanced picture and motivating a rigorous experimental approach.
+
+- Format as Nuisance: Intervention-Inspired Cross-Format Distillation for Knowledge Conflicts.
+Yue Yu, Wang Luo, Shenghao Ye, Zepeng Bao, Jiacheng Liu, Yongqi Li, Wenxin Tang, Tiejun Qian
+
+Tackles the important and timely problem of format bias in how LLMs handle knowledge conflicts. Introduces a novel approach that reduces this bias across different models, supported by carefully designed experiments and compelling empirical results.
+
+- Double Trouble: Bilingual Pretraining Leaves Language-Conditioned Effects in Shared-Language Representations.
+Anjishnu Mukherjee, Ziwei Zhu, Antonios Anastasopoulos
+
+Uses creative and carefully controlled experiments to show how representations of English concepts are influenced by other languages during pretraining, advancing our understanding of cross-lingual effects in LLMs.
+
+- Language Identification for Non-Standard Varieties: Language Varieties as Geolects on a Geodesic Grid.
+Sina Ahmadi, Rico Sennrich
+
+Introduces an innovative, linguistically grounded geospatial resource for language detection comprising 929 geolects across 20 languages. By adopting continuous geolocation-based annotation in place of static language labels, it offers an elegant, scalable solution to address representation gaps in under-resourced languages and language varieties.
+
+- Accountable AI with Grounded, Faithful, Consistent, Actionable Rationales: A Case Study in Clinical Trial Matching with VERDICT.
+Zikai Zhou, Yufei Jin, Yilin Xu, Yu-Chiang Wang, Chieh-Ju Chao, Monica Lam
+
+The paper offers a clear operational interpretation of "accountability" of automatic decision making in high-stake domains. It combines LLMs with Satisfiability Modulo Theories logic to evaluate explicit rationale grounding, and counterfactual self-consistency.
