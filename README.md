@@ -832,38 +832,32 @@ Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
 
 [Index-Translate Model Family](https://index-translate.bilibili.com/)
 
-* Primary text & vision model: Index-Translate.
-
-[//]: #(  * Available in 3 scales: 2B, 9B, and 35B-A3B (preview, currently an)
-[//]: #(    in-training version\) and supporting )
-[//]: #(    * 150 languages, its general translation performance achieves SoTA levels in)
-[//]: #(      its class, rivaling mainstream general-purpose models. It is specifically)
-[//]: #(      enhanced for instruction-following, meme translation, and end-to-end)
-[//]: #(      multimodal image translation (zero OCR dependency\) across the entire)
-[//]: #(      family (2B / 9B / 35B-A3B\) via native visual encoders.)
-
-* Speech derivative model: Index-Echo.)
-
-[//]: #(  * Trained on Index-Translate-2/9B, it includes )
-[//]: #(    * end-to-end S2TT (speech in, translated text out\) and )
-[//]: #(    * fully end-to-end S2ST (speech-to-speech translation, direct dubbing)
-[//]: #(      generation\). )
-[//]: #(      * S2TT connects an AuT encoder to Index-Translate-2/9B and is trained)
-[//]: #(        end-to-end for speech translation; )
-[//]: #(      * S2ST adopts a fully end-to-end Speech-to-Speech architecture that deeply)
-[//]: #(        aligns translation hidden representations into speech generation with)
-[//]: #(        full-pipeline joint training—bypassing traditional cascading systems to)
-[//]: #(        generate target-language dubbing with preserved speaker timbre directly)
-[//]: #(        from source speech. It currently supports Chinese/English input into 6)
-[//]: #(        languages.)
-
-* Length-control derivative model: Index-Homura.)
-
-[//]: #(  * Trained on Index-Translate-9B, it controls translation length by a target)
-[//]: #(    syllable-ratio range, producing scripts better suited to the dubbing time)
-[//]: #(    window. Currently supports Chinese input into 4 languages.)
-
-* Long-document derivative model: Index-NaiLong.)
-[//]: #(  *  Trained on Index-Translate-9B, it targets long-form content such as full)
-[//]: #(     novels, exploring coherent and complete translation in a single generation.)
-[//]: #(     Currently supports Chinese–English bidirectional translation.)
+* Primary text & vision model: Index-Translate."
+[//]: # "  * Available in 3 scales: 2B, 9B, and 35B-A3B (preview, currently an"
+[//]: # "    in-training version) and supporting "
+[//]: # "    * 150 languages, its general translation performance achieves SoTA levels in"
+[//]: # "      its class, rivaling mainstream general-purpose models. It is specifically"
+[//]: # "      enhanced for instruction-following, meme translation, and end-to-end"
+[//]: # "      multimodal image translation (zero OCR dependency) across the entire"
+[//]: # "      family (2B / 9B / 35B-A3B) via native visual encoders."
+* Speech derivative model: Index-Echo."
+[//]: # "  * Trained on Index-Translate-2/9B, it includes "
+[//]: # "    * end-to-end S2TT (speech in, translated text out) and "
+[//]: # "    * fully end-to-end S2ST (speech-to-speech translation, direct dubbing"
+[//]: # "      generation). "
+[//]: # "      * S2TT connects an AuT encoder to Index-Translate-2/9B and is trained"
+[//]: # "        end-to-end for speech translation; "
+[//]: # "      * S2ST adopts a fully end-to-end Speech-to-Speech architecture that deeply"
+[//]: # "        aligns translation hidden representations into speech generation with"
+[//]: # "        full-pipeline joint training—bypassing traditional cascading systems to"
+[//]: # "        generate target-language dubbing with preserved speaker timbre directly"
+[//]: # "        from source speech. It currently supports Chinese/English input into 6"
+[//]: # "        languages."
+* Length-control derivative model: Index-Homura."
+[//]: # "  * Trained on Index-Translate-9B, it controls translation length by a target"
+[//]: # "    syllable-ratio range, producing scripts better suited to the dubbing time"
+[//]: # "    window. Currently supports Chinese input into 4 languages."
+* Long-document derivative model: Index-NaiLong."
+[//]: # "  *  Trained on Index-Translate-9B, it targets long-form content such as full"
+[//]: # "     novels, exploring coherent and complete translation in a single generation."
+[//]: # "     Currently supports Chinese–English bidirectional translation."
