@@ -410,7 +410,7 @@ Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
     refuses the task.
 * We release all data, code, and model outputs to establish cultural scope as a
 
-## On the Value of Open Research in Language Modeling -- An Adversarial Dialog
+## On the Value of Open Research in Language Modeling -- An Adversarial Dialog [keynote]
 
 Graham Neubig (keynote, 3:15 PM)
 
