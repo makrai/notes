@@ -711,4 +711,24 @@ From the paper:
   (Jones+ 2023) and PanLex (Kamholz+ 2014). 6 See
   * more details about all strategies and prompts used in the paper in App C
 
-### 1814
+### Parallel Tokenizers: Rethinking Vocabulary Design 
+                     in Cross-Lingual Transfer of Low-Resource Languages (18:14)
+
+Muhammad Dehan Al Kautsar, Fajri Koto
+
+[paper](https://arxiv.org/abs/2510.06128)
+
+* existing methods often limit cross-lingual transfer by mapping semantically
+  equivalent words to different embeddings. For example, 'I eat rice' in English
+  and 'Ina cin shinkafa' in Hausa are typically mapped to different indices,
+  * low-resource languages: shared representations could offer the great benefit. 
+* We introduce parallel tokenizers, a new framework that 
+  first trains tokenizers monolingually and then 
+  aligns their vocabularies exhaustively 
+  using bilingual dictionaries or word-to-word translation. This alignment
+  * a shared semantic space across languages while 
+    naturally improving fertility balance. To assess their effectiveness, 
+* exper: we pretrain a transformer encoder from scratch on 13 low-resource langs
+  * evaluation on sentiment analysis, hate speech detection, emotion classif, &
+    sentence embedding similarity. Across all tasks, models trained with
+* parallel tokenizers outperform conventional multilingual baselines, confirming
