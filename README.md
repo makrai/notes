@@ -790,3 +790,74 @@ Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
   * fine-tuning on monolingual data recovers a large proportion of
     translation improvements relative to fine-tuning on aligned documents.
 * suggest new ways of understanding and improving how MT
+
+#### Motivation
+
+Recent work has found evidence of massively multilingual feature spaces 
+[Wendler et al., 2024; Brinkmann et al., 2025]
+
+> eg Plural Feature
+> Input: English: _The doctor..._, German: _Der Schauspieler..._, French: _Le manager ..._
+> Layer 16
+> probabilities: p(is) p(are), p(ist) p(sind), p(est) p(sont)
+> [Figure from Brinkmann et al., 2025.]
+
+“Stages of inference” [Lad et al., 2024]: 
+the first half of the layers read into more abstract concept representations.
+Last half of layers use these representations 
+to refine the next token prediction.
+
+### HOMURA: Taming the Sand-Glass for Time-Constrained LLM Translation 
+  via Reinforcement Learning (10:14)
+
+Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
+
+* LLMs for MT: systemic cross-lingual verbosity bias, rendering them 
+  ~> unsuitable for strict time-constrained tasks like subtitling and dubbing.
+* prompt-engineering approaches struggle to resolve this 
+  * conflict between semantic fidelity and rigid temporal feasibility. To bridge
+    this gap, 
+* we introduce 
+  * Sand-Glass, a benchmark specifically designed to evaluate 
+    translation under syllable-level duration constraints. Furthermore, we
+  * Homura, a reinforcement learning framework that 
+    explicitly optimizes the trade-off between semantic preservation and
+    temporal compliance. By employing a 
+  * constrained reinforcement learning objective featuring 
+    a novel dynamic syllable-ratio reward, Homura effectively "tames" the output
+    length.
+* Experiment: Homura significantly outperforms strong baselines, achieving
+  precise length control that respects linguistic density hierarchies 
+  without compromising semantic adequacy.
+
+[Index-Translate Model Family](https://index-translate.bilibili.com/)
+
+* Primary text & vision model: Index-Translate.
+[//]: #(  * Available in 3 scales: 2B, 9B, and 35B-A3B (preview, currently an)
+[//]: #(    in-training version\) and supporting )
+[//]: #(    * 150 languages, its general translation performance achieves SoTA levels in)
+[//]: #(      its class, rivaling mainstream general-purpose models. It is specifically)
+[//]: #(      enhanced for instruction-following, meme translation, and end-to-end)
+[//]: #(      multimodal image translation (zero OCR dependency\) across the entire)
+[//]: #(      family (2B / 9B / 35B-A3B\) via native visual encoders.)
+* Speech derivative model: Index-Echo.)
+[//]: #(  * Trained on Index-Translate-2/9B, it includes )
+[//]: #(    * end-to-end S2TT (speech in, translated text out\) and )
+[//]: #(    * fully end-to-end S2ST (speech-to-speech translation, direct dubbing)
+[//]: #(      generation\). )
+[//]: #(      * S2TT connects an AuT encoder to Index-Translate-2/9B and is trained)
+[//]: #(        end-to-end for speech translation; )
+[//]: #(      * S2ST adopts a fully end-to-end Speech-to-Speech architecture that deeply)
+[//]: #(        aligns translation hidden representations into speech generation with)
+[//]: #(        full-pipeline joint training—bypassing traditional cascading systems to)
+[//]: #(        generate target-language dubbing with preserved speaker timbre directly)
+[//]: #(        from source speech. It currently supports Chinese/English input into 6)
+[//]: #(        languages.)
+* Length-control derivative model: Index-Homura.)
+[//]: #(  * Trained on Index-Translate-9B, it controls translation length by a target)
+[//]: #(    syllable-ratio range, producing scripts better suited to the dubbing time)
+[//]: #(    window. Currently supports Chinese input into 4 languages.)
+* Long-document derivative model: Index-NaiLong.)
+[//]: #(  *  Trained on Index-Translate-9B, it targets long-form content such as full)
+[//]: #(     novels, exploring coherent and complete translation in a single generation.)
+[//]: #(     Currently supports Chinese–English bidirectional translation.)
