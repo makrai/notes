@@ -711,7 +711,7 @@ From the paper:
   (Jones+ 2023) and PanLex (Kamholz+ 2014). 6 See
   * more details about all strategies and prompts used in the paper in App C
 
-### Parallel Tokenizers: Rethinking Vocabulary Design 
+### Parallel Tokenizers: Rethinking Vocabulary Design
                      in Cross-Lingual Transfer of Low-Resource Languages (18:14)
 
 Muhammad Dehan Al Kautsar, Fajri Koto
@@ -721,14 +721,72 @@ Muhammad Dehan Al Kautsar, Fajri Koto
 * existing methods often limit cross-lingual transfer by mapping semantically
   equivalent words to different embeddings. For example, 'I eat rice' in English
   and 'Ina cin shinkafa' in Hausa are typically mapped to different indices,
-  * low-resource languages: shared representations could offer the great benefit. 
-* We introduce parallel tokenizers, a new framework that 
-  first trains tokenizers monolingually and then 
-  aligns their vocabularies exhaustively 
+  * low-resource languages: shared representations could offer the great benefit.
+* We introduce parallel tokenizers, a new framework that
+  first trains tokenizers monolingually and then
+  aligns their vocabularies exhaustively
   using bilingual dictionaries or word-to-word translation. This alignment
-  * a shared semantic space across languages while 
-    naturally improving fertility balance. To assess their effectiveness, 
+  * a shared semantic space across languages while
+    naturally improving fertility balance. To assess their effectiveness,
 * exper: we pretrain a transformer encoder from scratch on 13 low-resource langs
   * evaluation on sentiment analysis, hate speech detection, emotion classif, &
     sentence embedding similarity. Across all tasks, models trained with
 * parallel tokenizers outperform conventional multilingual baselines, confirming
+
+# Tuesday, October 27 — Main Conference Day 3
+
+## 9 AM Session
+
+### Omnilingual MT: Machine Translation for 1,600 Languages (09:25)
+
+B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers, et al
+
+* High-quality machine translation (MT) can scale to hundreds of languages,
+  * 200 languages on the target side, and
+  * maybe a few hundreds more on the source side, due to cross-lingual transfer.
+  * even these numbers have been hard to evaluate due to the
+    lack of reliable benchmarks and metrics
+
+* We present Omnilingual Machine Translation (OMT), the first MT system
+  * > 1,600 languages. This scale is enabled by a comprehensive data strategy
+  * integrates large public multilingual corpora with newly created datasets,
+    including manually curated MeDLEY bitext.
+
+* two ways of specializing a Large Language model (LLM) for machine translation:
+  * as a decoder-only model (OMT-LLaMA) or as
+  * a module in an encoder-decoder architecture (OMT-NLLB). Notably,
+* all our 1B to 8B parameter models
+  match or exceed the MT performance of a 70B LLM baseline, revealing spec
+* evaluation of English-to-1,600 translations further shows that
+  baseline models
+  * can interpret undersupported languages,
+  * hE they frequently fail to generate them with meaningful fidelity;
+  * OMT-LLaMA models substantially expand the set of languages
+    for which coherent generation is feasible
+* OMT models improve in cross-lingual transfer, being
+  close to solving the "understanding" part of the puzzle in MT for the 1,600
+* leaderboard (BOUQuET) and main human-created evaluation datasets (Met-BOUQuET)
+  * dynamically evolving towards Omnilinguality and freely available.
+
+### The Interlingua Hypothesis:
+  LLMs Translate via a Latent Task-agnostic Feature Space (09:54)
+
+Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
+
+[paper](https://arxiv.org/abs/2609.00515)
+
+* LLMs have recently demonstrated improved machine translation performance over
+  strong supervised baselines. This raises questions as to what mechanisms
+* LLMs use massively multilingual latent feature representations to perform LM
+* we propose the interlingua hypothesis. The hypothesis holds that language
+  * ie LMs translate by reading a source sentence into a latent feature space,
+    and generate a target sentence by reading from the latent feature space.
+* three lines of evidence in support of this hypothesis:
+  * variance in BLEU across language pairs is
+    largely predictable from language-specific competences with
+    no language pair-specific interaction terms;
+  * many model components are causally influential
+    in both monolingual tasks and translation tasks; and
+  * fine-tuning on monolingual data recovers a large proportion of
+    translation improvements relative to fine-tuning on aligned documents.
+* suggest new ways of understanding and improving how MT
