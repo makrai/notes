@@ -47,7 +47,8 @@ Recommendations
 
 ## 4 PM session
 
-### Do Language Models Understand Implicit Logical Meaning?  #### A Case Study
+### Do Language Models Understand Implicit Logical Meaning?  
+#### A Case Study
 of Scope Ambiguity Resolution in Context (16:18)
 
 Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
@@ -72,7 +73,8 @@ Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
   * This divergence emerges in later layers and causally influences downstream
     predictions.
 
-### Gold vs Translation: (16:27) #### Are We Measuring Language, Knowledge, or
+### Gold vs Translation: (16:27) 
+#### Are We Measuring Language, Knowledge, or
 Locality in Translated Benchmarks?
 
 Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
@@ -742,7 +744,7 @@ B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers,+
     lack of reliable benchmarks and metrics
 
 * We present Omnilingual Machine Translation (OMT), the first MT system
-  * > 1,600 languages. This scale is enabled by a comprehensive data strategy
+  * $> 1,600$ languages. This scale is enabled by a comprehensive data strategy
   * integrates large public multilingual corpora with newly created datasets,
     including manually curated MeDLEY bitext.
 
@@ -1376,9 +1378,115 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 - All these efforts rely on **linguistic experts** of that language
 - How can we scale linguistic evaluation beyond this?
 
-### Coffee break, 10:30
+##### Goldfish Monolingual Models (Chang+ 2024)
+
+* The aforementioned LLMs are all multilingual, ie trained on a mixture of
+  different languages. To place their performance into perspective, we also
+  evaluate the Goldfish suite (Chang et al., 2024b), 
+* a collection of mono- lingual models each trained on the same amount of data.
+  This allows us to control for language frequency differences, which is not
+  possible for the pre-trained LLMs. In our experiments 
+  * we consider the models trained on 1GB of data, or 
+    the full models for languages with less than 1GB available data.
+* All models have 500M parameters. Goldfish models exist for 70 out of the 101
+  languages in MultiBLiMP.
 
 ### Poster session, 11:00
+
+#### ScAndinavian GenerAl embedding model (SAGA), as of writing (2026-05-04) it
+
+* ranked 9th on MTEB for scandinavian tasks and is currently 
+* the highest ranked model under 1.5 billion parameters.
+* initialized from a ModernBert architecture and trained on approximately 
+  250 million semantically related pairs and then fine-tuned.
+* not optimized for any particular task, the main goal was to create a small,
+
+#### A Research Compass for the Acquisition of Thousands of Low-Resource Langs
+by AI Models via Form-Focused Study and Usage-Based Linguistic Immersion
+
+Juan Antonio Pérez-Ortiz
+
+* This position paper provides a multifaceted perspective on the challenge of
+* 1000s of langs lack the text necess for data-intensive, imitation-based train
+* two complementary emerging learning paths which are currently underexplored in
+  * explicit instruction-guided learning from linguistic resources and 
+  * implicit acquisition in natural immersion contexts. 
+* By synthesizing current advances and identifying 40 open problems, this study
+  defines an interdisciplinary research compass for the coming years.
+
+#### High-fertility languages reason in compressed, load-bearing chains
+
+Sameer Mohamed and Adam Weinberger
+
+MLR
+
+I made a photo of a paper with this metadata, but I don't find it on the
+internet.
+
+#### Pag-refuse: Safety Alignment Transfers Unevenly to Tagalog and Taglish
+
+Albrave Raphael Albayda, Angelica Anne Araneta Naguio
+
+* We test whether [the actual refusal behavior of LLMs] 
+  extends to Tagalog and Taglish, 
+  * Taglish is a Tagalog–English mixed register used in everyday conversation.
+* We translate all 313 StrongREJECT prompts into both forms and 
+  * we evaluate 29 models from nine model providers, obtaining 27,042 responses.
+  * Seven models give jailbreak responses to more than 10% of Tagalog prompts
+    whose English versions they answered safely; 
+  * five exceed 20%, and one reaches 32.7%. 
+  * For nine models, an exact McNemar test finds more jailbreak responses in
+    Tagalog than in English (p<0.05), six of them after Bonferroni correction.
+  * Tagalog jailbreaks are concentrated in smaller models.
+  * Taglish prompts produce fewer jailbreaks than monolingual Tagalog prompts,
+    contrasting with prior results from programmatically constructed
+    code-switching.
+
+#### Impact of Bilingual Corpus on Pretraining LLMs: An Analysis for Turkish
+
+Elif Özge Yılmaz, Melike Uysal, Cagri Toraman
+
+* mixing just two languages from the very beginning of training remain
+* a capacity-constrained Gemma-4-derived 181M-parameter architecture trained on
+  a 10 billion token budget, 
+* we compare a purely Turkish baseline against 
+  mixtures containing 10%, 20%, or 30% of an auxiliary language. We test 
+* four languages to isolate different linguistic relationships: 
+  English (a global bridge language), Azerbaijani (closely related sibling),
+  Finnish (morphological peer), and French (lexical pivot).
+* findings: 
+  adding any secondary language hurts fluency on structurally uniform text.
+  * hE Azerbaijani cuts perplexity on creative (-45%) and literary (-51%) text
+    relative to the monolingual baseline. At 
+  * higher mixture ratios, Azerbaijani outperforms the other languages
+
+#### Cross-Lingual Transfer of Evil Vectors Is Directionally Asymmetric
+
+Juann Kim, Kang MinKu
+
+* Persona vectors are linear directions 
+  in the residual-stream activations of LLMs that 
+  encode behavioral traits and enable fine-grained control over model behavior.
+* Among them, the evil persona vector is particularly relevant to understanding
+  harmful behavior, jailbreak vulnerabilities, and the unlearning of harmful
+  knowledge. Yet whether this vector reflects a genuinely 
+* ? cross-lingual concept, rather than an artifact of its extraction language,
+* We: a systematic evil-vector transfer study across 
+  * languages: 
+    two high-resource languages (English, Spanish) and 
+    two low-resource languages (Swahili, Telugu) on 
+  * four open-source instruction-tuned LLMs, and 
+* finding: transfer is directionally asymmetric.
+  * Evil vectors are harder to obtain reliably from low-resource languages, and
+    the resulting vectors are largely ineffective at steering, 
+    even within their own language. In contrast, 
+  * vectors extracted from high-resource languages transfer effectively to
+    low-resource inputs while largely preserving general knowledge, as 
+    * measured by MMLU. 
+* Geometric analysis further supports this pattern: 
+  * evil vectors from the two high-resource languages are closely aligned,
+  * low-resource vectors align only weakly with this shared direction.
+* ie a shared cross-lingual evil direction exists, and it can be transfered
 
 ### Lunch time, 12:30
 
