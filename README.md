@@ -47,7 +47,7 @@ Recommendations
 
 ## 4 PM session
 
-### Do Language Models Understand Implicit Logical Meaning?  
+### Do Language Models Understand Implicit Logical Meaning?
 #### A Case Study
 of Scope Ambiguity Resolution in Context (16:18)
 
@@ -73,7 +73,7 @@ Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
   * This divergence emerges in later layers and causally influences downstream
     predictions.
 
-### Gold vs Translation: (16:27) 
+### Gold vs Translation: (16:27)
 #### Are We Measuring Language, Knowledge, or
 Locality in Translated Benchmarks?
 
@@ -1244,20 +1244,20 @@ The paper offers a clear operational interpretation of "accountability" of autom
 ## [6th Workshop on Multilingual Representation Learning (MRL) by SIGTYP](https://sigtyp.github.io/ws2026-mrl.html)
 
 * In 2025, across NAACL, ACL, EMNLP, and AACL, the MRL workshop was the only
-  workshop focusing on multilingual NLP broadly, 
+  workshop focusing on multilingual NLP broadly,
   without a focus on a particular region or set of languages. MRL in part serves
-  * connect language- and region-specific multilingual work, 
+  * connect language- and region-specific multilingual work,
   * encouraging crosslingual collaboration and knowledge sharing. This sixth
-  * The main objectives are: 
-    * multilingual representation learning methods, including their 
-      * theoretical formulation and practical aspects; 
-    * how language typology 
-      may impact the applicability of these methods and 
+  * The main objectives are:
+    * multilingual representation learning methods, including their
+      * theoretical formulation and practical aspects;
+    * how language typology
+      may impact the applicability of these methods and
       motivate the development of more generic or competit methods across langs
-    * to promote collaborations in developing novel 
+    * to promote collaborations in developing novel
       software libraries and benchmarks for implementing or eval multiling modls
 
-### What can we do about English-centric NLP? 
+### What can we do about English-centric NLP?
 Invited talk by Miryam de Lhoneux, KU Leuven, 9:05
 
 Multilingual NLP
@@ -1302,9 +1302,9 @@ Multilingual benchmarks tend to be translated from English.
 | MultiIQ | 🪄 Open-ended gen. | ☆☆☆ | 200 | ✅ | ⚙️/👤 | 137 | M |
 
 Jelmagyarázat (az eredeti felirat alapján):
-- Source: 🌐 web, 👤 crowd, 🧑‍🏫 szakértők (experts), ⚙️ gépi generálás. 
+- Source: 🌐 web, 👤 crowd, 🧑‍🏫 szakértők (experts), ⚙️ gépi generálás.
   A szögletes zárójel `[ ]` korábbi benchmark kiterjesztését jelöli.
-- Transl.: a promptok fordítása: H = emberi (Human), M = gépi (Machine), 
+- Transl.: a promptok fordítása: H = emberi (Human), M = gépi (Machine),
   M+ = gépi, emberi utószerkesztéssel.
 - Judge?: ✅ = LLM-bírálatú benchmark.
 - Rank: népszerűség a modellkiadásokban (0–3 csillag), see Sec B of the paper
@@ -1317,37 +1317,37 @@ Imrove understanding of linguistic concepts using model behaviour?
 #### Mentioned: ACL 2027 Theme Track: [**Homogenization** and knowledge collapse in LLMs](https://2027.aclweb.org/calls/main/#acl-2027-theme-track-homogenization-and-knowledge-collapse-in-llms)
 
 * LLMs tend to collapse diversity in their outputs. As LLMs become fundamental
-  * from rich, human-driven discourse toward what has been called 
-    a “generative monoculture” where 
-    current training and alignment practices may inadvertently 
-    compress the wide spectrum of human thought 
-    into a limited range of stereotyped outputs. 
-* This special theme invites papers investigating 
-  whether LLMs produce low-diversity responses, 
-  rely on repetitive linguistic structures, and 
-  converge on a narrow set of solutions, 
+  * from rich, human-driven discourse toward what has been called
+    a “generative monoculture” where
+    current training and alignment practices may inadvertently
+    compress the wide spectrum of human thought
+    into a limited range of stereotyped outputs.
+* This special theme invites papers investigating
+  whether LLMs produce low-diversity responses,
+  rely on repetitive linguistic structures, and
+  converge on a narrow set of solutions,
   potentially acting as drivers of cultural homogenization.
 
-* Possible topics of research include (but are not limited to) the following: 
-  * Metrics and methodologies for assessing 
+* Possible topics of research include (but are not limited to) the following:
+  * Metrics and methodologies for assessing
     homogenization, cultural flattening and knowledge collapse trends in LLMs.
-  * Identification of the mechanisms that could be inducing these trends, 
+  * Identification of the mechanisms that could be inducing these trends,
     eg analyses of training data, alignment strategies, decoding methods, and
     optimization objectives that may contribute to reduced output diversity,
     along with proposals for mitigation.
-  * Search space exploration vs convergence in generative models: 
+  * Search space exploration vs convergence in generative models:
     To what extent do LLMs explore the breadth of possible responses versus
-    converging on high-probability, stereotyped outputs? 
+    converging on high-probability, stereotyped outputs?
     What are the trade-offs between coherence, safety, and diversity?
-  * Human vs Model Diversity: interdisciplinary perspectives on 
+  * Human vs Model Diversity: interdisciplinary perspectives on
     epistemic diversity and Knowledge Representation in LLMs, including
     comparative studies of variability in human- vs LLM-generated responses
-    across domains (eg linguistic, cultural, cognitive), 
+    across domains (eg linguistic, cultural, cognitive),
     drawing on insights from linguistics, cognitive science, sociology, and rel
-  * Cross-linguistic homogenization: 
+  * Cross-linguistic homogenization:
     When queried in different languages, do LLMs respond more uniformly than
-    humans would? 
-    * To what extent are LLMs capable of adapting their responses 
+    humans would?
+    * To what extent are LLMs capable of adapting their responses
       to the writing and cultural norms that best associate to the query lang?
       Do LLMs produce more uniform text in lower-resource languages?
   * LLMs and ideological polarization: Under what conditions might LLMs
@@ -1356,7 +1356,7 @@ Imrove understanding of linguistic concepts using model behaviour?
       knowledge, and the implications for pluralism in knowledge systems.
 
 * Theme track submissions can be either long or short. We anticipate having a
-  special session for this theme at the conference and 
+  special session for this theme at the conference and
   a Thematic Paper Award in addition to other categories of awards.
 
 #### MultiBLiMP 1.0: A Massively Multilingual Benchmark of Ling Minimal Pairs
@@ -1366,7 +1366,7 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 [dataset](https://huggingface.co/datasets/jumelet/multiblimp)
 
 * 101 languages and 2 types of subject-verb agreement, containing more than
-  128,000 minimal pairs. Our minimal pairs are 
+  128,000 minimal pairs. Our minimal pairs are
 * created using a fully automated pipeline, leveraging the large-scale
   Universal Dependencies and UniMorph. MultiBLiMP 1.0 evaluates abilities of
 
@@ -1382,11 +1382,11 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 
 * The aforementioned LLMs are all multilingual, ie trained on a mixture of
   different languages. To place their performance into perspective, we also
-  evaluate the Goldfish suite (Chang et al., 2024b), 
+  evaluate the Goldfish suite (Chang et al., 2024b),
 * a collection of mono- lingual models each trained on the same amount of data.
   This allows us to control for language frequency differences, which is not
-  possible for the pre-trained LLMs. In our experiments 
-  * we consider the models trained on 1GB of data, or 
+  possible for the pre-trained LLMs. In our experiments
+  * we consider the models trained on 1GB of data, or
     the full models for languages with less than 1GB available data.
 * All models have 500M parameters. Goldfish models exist for 70 out of the 101
   languages in MultiBLiMP.
@@ -1395,9 +1395,9 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 
 #### ScAndinavian GenerAl embedding model (SAGA), as of writing (2026-05-04) it
 
-* ranked 9th on MTEB for scandinavian tasks and is currently 
+* ranked 9th on MTEB for scandinavian tasks and is currently
 * the highest ranked model under 1.5 billion parameters.
-* initialized from a ModernBert architecture and trained on approximately 
+* initialized from a ModernBert architecture and trained on approximately
   250 million semantically related pairs and then fine-tuned.
 * not optimized for any particular task, the main goal was to create a small,
 
@@ -1409,8 +1409,8 @@ Juan Antonio Pérez-Ortiz
 * This position paper provides a multifaceted perspective on the challenge of
 * 1000s of langs lack the text necess for data-intensive, imitation-based train
 * two complementary emerging learning paths which are currently underexplored in
-  * explicit instruction-guided learning from linguistic resources and 
-  * implicit acquisition in natural immersion contexts. 
+  * explicit instruction-guided learning from linguistic resources and
+  * implicit acquisition in natural immersion contexts.
 * By synthesizing current advances and identifying 40 open problems, this study
   defines an interdisciplinary research compass for the coming years.
 
@@ -1427,14 +1427,14 @@ internet.
 
 Albrave Raphael Albayda, Angelica Anne Araneta Naguio
 
-* We test whether [the actual refusal behavior of LLMs] 
-  extends to Tagalog and Taglish, 
+* We test whether [the actual refusal behavior of LLMs]
+  extends to Tagalog and Taglish,
   * Taglish is a Tagalog–English mixed register used in everyday conversation.
-* We translate all 313 StrongREJECT prompts into both forms and 
+* We translate all 313 StrongREJECT prompts into both forms and
   * we evaluate 29 models from nine model providers, obtaining 27,042 responses.
   * Seven models give jailbreak responses to more than 10% of Tagalog prompts
-    whose English versions they answered safely; 
-  * five exceed 20%, and one reaches 32.7%. 
+    whose English versions they answered safely;
+  * five exceed 20%, and one reaches 32.7%.
   * For nine models, an exact McNemar test finds more jailbreak responses in
     Tagalog than in English (p<0.05), six of them after Bonferroni correction.
   * Tagalog jailbreaks are concentrated in smaller models.
@@ -1448,47 +1448,79 @@ Elif Özge Yılmaz, Melike Uysal, Cagri Toraman
 
 * mixing just two languages from the very beginning of training remain
 * a capacity-constrained Gemma-4-derived 181M-parameter architecture trained on
-  a 10 billion token budget, 
-* we compare a purely Turkish baseline against 
-  mixtures containing 10%, 20%, or 30% of an auxiliary language. We test 
-* four languages to isolate different linguistic relationships: 
+  a 10 billion token budget,
+* we compare a purely Turkish baseline against
+  mixtures containing 10%, 20%, or 30% of an auxiliary language. We test
+* four languages to isolate different linguistic relationships:
   English (a global bridge language), Azerbaijani (closely related sibling),
   Finnish (morphological peer), and French (lexical pivot).
-* findings: 
+* findings:
   adding any secondary language hurts fluency on structurally uniform text.
   * hE Azerbaijani cuts perplexity on creative (-45%) and literary (-51%) text
-    relative to the monolingual baseline. At 
+    relative to the monolingual baseline. At
   * higher mixture ratios, Azerbaijani outperforms the other languages
 
 #### Cross-Lingual Transfer of Evil Vectors Is Directionally Asymmetric
 
 Juann Kim, Kang MinKu
 
-* Persona vectors are linear directions 
-  in the residual-stream activations of LLMs that 
+* Persona vectors are linear directions
+  in the residual-stream activations of LLMs that
   encode behavioral traits and enable fine-grained control over model behavior.
 * Among them, the evil persona vector is particularly relevant to understanding
   harmful behavior, jailbreak vulnerabilities, and the unlearning of harmful
-  knowledge. Yet whether this vector reflects a genuinely 
+  knowledge. Yet whether this vector reflects a genuinely
 * ? cross-lingual concept, rather than an artifact of its extraction language,
-* We: a systematic evil-vector transfer study across 
-  * languages: 
-    two high-resource languages (English, Spanish) and 
-    two low-resource languages (Swahili, Telugu) on 
-  * four open-source instruction-tuned LLMs, and 
+* We: a systematic evil-vector transfer study across
+  * languages:
+    two high-resource languages (English, Spanish) and
+    two low-resource languages (Swahili, Telugu) on
+  * four open-source instruction-tuned LLMs, and
 * finding: transfer is directionally asymmetric.
   * Evil vectors are harder to obtain reliably from low-resource languages, and
-    the resulting vectors are largely ineffective at steering, 
-    even within their own language. In contrast, 
+    the resulting vectors are largely ineffective at steering,
+    even within their own language. In contrast,
   * vectors extracted from high-resource languages transfer effectively to
-    low-resource inputs while largely preserving general knowledge, as 
-    * measured by MMLU. 
-* Geometric analysis further supports this pattern: 
+    low-resource inputs while largely preserving general knowledge, as
+    * measured by MMLU.
+* Geometric analysis further supports this pattern:
   * evil vectors from the two high-resource languages are closely aligned,
   * low-resource vectors align only weakly with this shared direction.
 * ie a shared cross-lingual evil direction exists, and it can be transfered
 
-### Lunch time, 12:30
+#### When Multilingual Embeddings Collapse:
+       Representation Failure and Metric (Un)reliability for Hausa and Fongbe MT
+
+Mahounan Pericles Adjovi, Roald Eiselen, Prasenjit Mitra
+
+* Neural evaluation metrics for machine translation
+  inherit their behaviour from the multilingual encoders beneath them, yet
+  how those encoders represent low-resource African languages is rarely
+* We evaluate four large language models on
+  English-to-Hausa and English-to-Fongbe translation across scales
+  from 500 to 10,000 sentences,
+  * we validate automatic metrics against native-speaker judgment, and then
+  * we probe the multilingual representation space that neural metrics depend on.
+* finding:
+  XLM-R assigns near-identical vectors to semantically different texts in both
+  languages (within-language cosine similarity above 0.99), ~>
+  * BERTScore cannot separate systems of visibly different quality, and
+  * COMET produces a ranking anomaly for Fongbe. This representation collapse,
+* agreement between metrics and human ranks is language-dependent, that
+  * stable system rankings require at least 2,500 sentences, and that
+  * inclusion of a language in an encoder’s pretraining set does not guarantee
+    usable representations. We frame these results as evidence that
+* multilingual evaluation must be validated at the representation level
+
+Makrai's notes: I talked to the 1st author, Pericles. Now he lives in Sweden,
+his mother tongue is Fongbe. He is learning to read and write Fongbe, which is
+not taught in the school, but it is difficult for him, because the orthography
+marks tone, but tones in Pericles' mother tongue differs from those in the
+variant on which the orthography is based.
+
+#### https://aclanthology.org/2026.finnlp-1.7/
+
+#### https://aclanthology.org/2026.wmt-main.65/
 
 ### Invited talk by Ahmet Üstün (Cohere), 14:00
 
