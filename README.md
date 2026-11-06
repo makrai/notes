@@ -1,11 +1,5 @@
 # EMNLP 2026 -- Notes by Márton Makrai
 
-# For AstroSpeech
-
-* [Chronoberg](/README.md#Chronoberg)
-* [Harm or Humor](/README.md#Harm)
-* [Variable-Rank Adaptation](/README.md#Variable-Rank Adaptation)
-
 # Sunday, October 25 — Main Conference Day 1
 
 ## The Geometry of Low-Resource Language Representations
@@ -739,7 +733,7 @@ Muhammad Dehan Al Kautsar, Fajri Koto
 
 ### Omnilingual MT: Machine Translation for 1,600 Languages (09:25)
 
-B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers, et al
+B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers,+
 
 * High-quality machine translation (MT) can scale to hundreds of languages,
   * 200 languages on the target side, and
@@ -794,15 +788,15 @@ Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
 #### Motivation
 
 Recent work has found evidence of massively multilingual feature spaces
-[Wendler et al., 2024; Brinkmann et al., 2025]
+[Wendler+ 2024; Brinkmann+ 2025]
 
 > eg Plural Feature
 > Input: English: _The doctor..._, German: _Der Schauspieler..._, French: _Le manager ..._
 > Layer 16
 > probabilities: p(is) p(are), p(ist) p(sind), p(est) p(sont)
-> [Figure from Brinkmann et al., 2025.]
+> [Figure from Brinkmann+ 2025.]
 
-“Stages of inference” [Lad et al., 2024]:
+“Stages of inference” [Lad+ 2024]:
 the first half of the layers read into more abstract concept representations.
 Last half of layers use these representations
 to refine the next token prediction.
@@ -1242,3 +1236,160 @@ Introduces an innovative, linguistically grounded geospatial resource for langua
 Zikai Zhou, Yufei Jin, Yilin Xu, Yu-Chiang Wang, Chieh-Ju Chao, Monica Lam
 
 The paper offers a clear operational interpretation of "accountability" of automatic decision making in high-stake domains. It combines LLMs with Satisfiability Modulo Theories logic to evaluate explicit rationale grounding, and counterfactual self-consistency.
+
+# Wednessday, October 28 — Workshops and Tutorials 1
+
+## [6th Workshop on Multilingual Representation Learning (MRL) by SIGTYP](https://sigtyp.github.io/ws2026-mrl.html)
+
+* In 2025, across NAACL, ACL, EMNLP, and AACL, the MRL workshop was the only
+  workshop focusing on multilingual NLP broadly, 
+  without a focus on a particular region or set of languages. MRL in part serves
+  * connect language- and region-specific multilingual work, 
+  * encouraging crosslingual collaboration and knowledge sharing. This sixth
+  * The main objectives are: 
+    * multilingual representation learning methods, including their 
+      * theoretical formulation and practical aspects; 
+    * how language typology 
+      may impact the applicability of these methods and 
+      motivate the development of more generic or competit methods across langs
+    * to promote collaborations in developing novel 
+      software libraries and benchmarks for implementing or eval multiling modls
+
+### What can we do about English-centric NLP? 
+Invited talk by Miryam de Lhoneux, KU Leuven, 9:05
+
+Multilingual NLP
+
+* Follows an English-centric paradigm
+* Relies heavily on cross-lingual transfer
+  * Assumes target language has a high-resource closely related language
+    (eg Galician, Faroese, Belarusian)
+  * This assumption does not hold for the majority of low-resource languages
+    (Yoruba, Amharic, Quechua)
+* Defaults to multilingual models
+  * Issues: curse of multilinguality, vocabulary bottleneck
+    * Partially adressed by modular architectures (MoE)
+  * Monolingual models can be competitive (Chang+ 2026; Tatariya+ 2026)
+
+Multilingual benchmarks tend to be translated from English.
+
+#### Tasks that don't rely on translation ([Kreutzer+](https://arxiv.org/abs/2504.11829), Tab 1)
+
+| Benchmark | Task | Rank | Size | Judge? | Source | #Langs | Transl. |
+|---|---|---|---|---|---|---|---|
+| FLORES-200 | 🔤 MT | ★★★ | ≈ 1,000 | ❌ | 🌐 | 200 | H |
+| NTREX-128 | 🔤 MT | ☆☆☆ | ≈ 2,000 | ❌ | 🌐 | 128 | H |
+| WMT24++ | 🔤 MT | ☆☆☆ | ≈ 2,000 | ❌ | 🌐 | 55 | H |
+| General MT | 🔤 MT | ★★☆ | ≈ 2,000 | ❌ | 🌐 | ≥ 11 | H |
+| MAFAND-MT | 🔤 MT | ☆☆☆ | 1,000 | ❌ | 🌐 | 21 | - |
+| XLSum | ✂️ Summarization | ★½☆ | 500–11,000 | ❌ | 🌐 | 45 | - |
+| CrossSum-In | ✂️ Summarization | ☆☆☆ | 500 | ❌ | [🌐] | 29 | H |
+| SEA-IFEval | 📋 Instr. following | ★☆☆ | 105 | ❌ | [⚙️] | 6 | H |
+| MIFEval | 📋 Instr. following | ☆☆☆ | 96 | ❌ | [⚙️] | 10 | M |
+| MultiIF | 📋 Instr. following | ☆☆☆ | 454–909 | ❌ | [⚙️] | 7 | M |
+| MGSM | 🧮 Math | ★★☆ | 250 | ❌ | [👤] | 10 | H |
+| AfriMGSM | 🧮 Math | ☆☆☆ | 250 | ❌ | [👤] | 16 | H |
+| SeaBench | 💬 Chat | ★☆☆ | 300 | ✅ | 🧑‍🏫 | 3 | - |
+| Sea-MTBench | 💬 Chat | ★☆☆ | 58 | ✅ | [🧑‍🏫] | 6 | H |
+| MTG | 🪄 Open-ended gen. | ★☆☆ | 3,000 | ✅ | 👤/🌐 | 5 | M+ |
+| OMGEval | 🪄 Open-ended gen. | ☆☆☆ | 804 | ✅ | [⚙️] | 5 | M |
+| mArenaHard | 🪄 Open-ended gen. | ★☆☆ | 500 | ✅ | [👤] | 23 | M |
+| Dolly translated | 🪄 Open-ended gen. | ★★☆ | 200 | ✅ | [👤] | 101 | M+ |
+| Aya human-ann. | 🪄 Open-ended gen. | ★☆☆ | 250 | ✅ | 👤 | 7 | - |
+| PolyWrite | 🪄 Open-ended gen. | ★☆☆ | ≈ 155 | ✅ | ⚙️ | 240 | M |
+| MultiIQ | 🪄 Open-ended gen. | ☆☆☆ | 200 | ✅ | ⚙️/👤 | 137 | M |
+
+Jelmagyarázat (az eredeti felirat alapján):
+- Source: 🌐 web, 👤 crowd, 🧑‍🏫 szakértők (experts), ⚙️ gépi generálás. 
+  A szögletes zárójel `[ ]` korábbi benchmark kiterjesztését jelöli.
+- Transl.: a promptok fordítása: H = emberi (Human), M = gépi (Machine), 
+  M+ = gépi, emberi utószerkesztéssel.
+- Judge?: ✅ = LLM-bírálatú benchmark.
+- Rank: népszerűség a modellkiadásokban (0–3 csillag), see Sec B of the paper
+
+### Towards Multilingual Lingu Evaluation at Scale, Invited talk by Jaap Jumelet,Uni Groningen, 9:50
+
+Imrove understanding of model behaviour using linguistic concepts
+Imrove understanding of linguistic concepts using model behaviour?
+
+#### Mentioned: ACL 2027 Theme Track: [**Homogenization** and knowledge collapse in LLMs](https://2027.aclweb.org/calls/main/#acl-2027-theme-track-homogenization-and-knowledge-collapse-in-llms)
+
+* LLMs tend to collapse diversity in their outputs. As LLMs become fundamental
+  * from rich, human-driven discourse toward what has been called 
+    a “generative monoculture” where 
+    current training and alignment practices may inadvertently 
+    compress the wide spectrum of human thought 
+    into a limited range of stereotyped outputs. 
+* This special theme invites papers investigating 
+  whether LLMs produce low-diversity responses, 
+  rely on repetitive linguistic structures, and 
+  converge on a narrow set of solutions, 
+  potentially acting as drivers of cultural homogenization.
+
+* Possible topics of research include (but are not limited to) the following: 
+  * Metrics and methodologies for assessing 
+    homogenization, cultural flattening and knowledge collapse trends in LLMs.
+  * Identification of the mechanisms that could be inducing these trends, 
+    eg analyses of training data, alignment strategies, decoding methods, and
+    optimization objectives that may contribute to reduced output diversity,
+    along with proposals for mitigation.
+  * Search space exploration vs convergence in generative models: 
+    To what extent do LLMs explore the breadth of possible responses versus
+    converging on high-probability, stereotyped outputs? 
+    What are the trade-offs between coherence, safety, and diversity?
+  * Human vs Model Diversity: interdisciplinary perspectives on 
+    epistemic diversity and Knowledge Representation in LLMs, including
+    comparative studies of variability in human- vs LLM-generated responses
+    across domains (eg linguistic, cultural, cognitive), 
+    drawing on insights from linguistics, cognitive science, sociology, and rel
+  * Cross-linguistic homogenization: 
+    When queried in different languages, do LLMs respond more uniformly than
+    humans would? 
+    * To what extent are LLMs capable of adapting their responses 
+      to the writing and cultural norms that best associate to the query lang?
+      Do LLMs produce more uniform text in lower-resource languages?
+  * LLMs and ideological polarization: Under what conditions might LLMs
+    contribute to homogenized or fragmented discourse? This includes
+    * whether and how LLMs compress, filter, or privilege certain forms of
+      knowledge, and the implications for pluralism in knowledge systems.
+
+* Theme track submissions can be either long or short. We anticipate having a
+  special session for this theme at the conference and 
+  a Thematic Paper Award in addition to other categories of awards.
+
+#### MultiBLiMP 1.0: A Massively Multilingual Benchmark of Ling Minimal Pairs
+Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
+
+[paper](https://arxiv.org/abs/2504.02768)
+[dataset](https://huggingface.co/datasets/jumelet/multiblimp)
+
+* 101 languages and 2 types of subject-verb agreement, containing more than
+  128,000 minimal pairs. Our minimal pairs are 
+* created using a fully automated pipeline, leveraging the large-scale
+  Universal Dependencies and UniMorph. MultiBLiMP 1.0 evaluates abilities of
+
+- Recently many language-specific benchmarks have been introduced:
+  - Dutch: BLiMP-NL
+  - Mandarin Chinese: ZhoBLiMP
+  - Russian: RuBLiMP
+  - Japanese: JBLiMP
+- All these efforts rely on **linguistic experts** of that language
+- How can we scale linguistic evaluation beyond this?
+
+### Coffee break, 10:30
+
+### Poster session, 11:00
+
+### Lunch time, 12:30
+
+### Invited talk by Ahmet Üstün (Cohere), 14:00
+
+### Shared task + presentation, 14:40
+
+### Sponsorship talk, 15:00
+
+### Coffee break, 15:30
+
+### Invited talk by Alham Fikri Aji (MBZUAI), 16:00
+
+### Best paper and Closing remark , 16:40
