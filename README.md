@@ -139,7 +139,7 @@ Yuan Gao, Weiwei Sun
     * the final-over-final constraint. Experiments show that
 * resu:
   * with a much smaller hypothesis space, the universal-priored model achieves
-  * superior performance to state-of-the-art neural grammar induction models,
+  * superior performance to SOTA neural grammar induction models,
   * more interpretable functional category assignment.
 
 # Monday, October 26 — Main Conference Day 2
@@ -196,7 +196,7 @@ Beatrice Fiumanò, Nicolas Lazzari, Simone Paolo Ponzetto, Valentina Presutti
   existing language-specific corpora across +9 langs: Brazilian Portuguese,
   Chinese, Dutch, French, German, Italian, Korean, Latvian, and Swedish.
 * We train models with different architectures on the mFNC
-* consistently outperform existing state-of-the-art Frame Semantic Parsers in
+* consistently outperform existing SOTA Frame Semantic Parsers in
   both multilingual and cross-lingual settings
 * mFNC and our trained FSP models are openly available on github and huggingface
 
@@ -336,7 +336,7 @@ Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
 * strict annotation guideline: distinguishing Safe jokes from Harmful ones, with
   the latter further classified into Explicit (overt) and Implicit (Covert)
   categories to probe deep reasoning.
-* We systematically evaluate state-of-the-art (SOTA) open and closed-source
+* We systematically evaluate SOTA (SOTA) open and closed-source
   models across all modalities.
 * findings reveal that closed-source models significantly outperform open-source
   ones, with a notable difference in performance between the English and Arabic
@@ -1518,18 +1518,213 @@ not taught in the school, but it is difficult for him, because the orthography
 marks tone, but tones in Pericles' mother tongue differs from those in the
 variant on which the orthography is based.
 
-#### https://aclanthology.org/2026.finnlp-1.7/
+#### One Advisor, Many Faces: How User Personas Shape LLM Stock Recommendations
 
-#### https://aclanthology.org/2026.wmt-main.65/
+Yuxian He
 
-### Invited talk by Ahmet Üstün (Cohere), 14:00
+[paper](https://aclanthology.org/2026.finnlp-1.7/)
 
-### Shared task + presentation, 14:40
+* LLMs as informal investment advisors, a role that
+  * for human professionals, suitability obligations: advice must match the
+    customer’s investment profile (FINRA Rule 2111; SEC Regulation Best
+    Interest, 2019).
+* Whether LLM advice is personalized in this normative sense—
+  * or merely stereotyped—is unknown.
+* We audit six model arms from five vendors (2,396 unique single-turn queries)
+  * we inject synthetic user personas manipulating Big Five neuroticism and
+    conscientiousness plus capital size, and
+  * we score recommended five-stock portfolios against realized market data.
+* Persona effects replicate in every arm analysed inferentially:
+  * low conscientiousness raises recommended volatility by 10–25% and
+    * increases portfolio beta by 40–96%, while
+  * capital size is largely ignored—a suitability inversion.
+  * The sign of the neuroticism effect splits across vendors, indicating that
+    * ie models have internalized different stereotypes
+      rather than any consistent normative principle.
+  * Removing the stated risk preference amplifies persona spread by 55%, a
+    dose-style signature of stereotype filling.
+  * Rationale texts show personas are explicitly mirrored in reasoning, yet
+    * hE this language accounts for under 15% of the behavioral effect:
+  * mech
+    * the persona effect resides in portfolio selection
+      rather than in the accompanying rhetoric
+* We release all logs, prompts, and code
 
-### Sponsorship talk, 15:00
+#### Grammatist at WMT 2026 General MT Task:
+An Agentic LLM Framework for Machine Translation with Explicit Linguistic Knowledge
 
-### Coffee break, 15:30
+Samuel Frontull, Jean Maillard, Christopher Haberland, Ruth Videsott, S Lusito
 
-### Invited talk by Alham Fikri Aji (MBZUAI), 16:00
+[paper](https://aclanthology.org/2026.wmt-main.65/)
 
-### Best paper and Closing remark , 16:40
+* We describe Grammatist, our submission
+  to the unconstrained track of the WMT 2026 General Machine Translation Task,
+  * developed in direct collaboration with community members of two regional
+    languages of Italy, Ladin and Ligurian.
+* Ladin and Ligurian represent challenging scenarios for machine translation
+  * limited resources for conventional data-driven approaches.
+  * nL linguistic documentation:
+    both languages are extensively documented in dictionaries and grammar books,
+    * valuable knowledge but are not readily exploitable by conventional MT
+* we make this information available to an LLM at inference time. The framework
+  * agentic and model-agnostic: it
+    * dynamically consults dictionaries and grammar books during translation to
+* For the WMT 2026 task, we apply Grammatist to structured document-level MT
+  from English into Ligurian and Ladin
+
+### [Shared task](https://mrlbenchmarks.github.io/) + presentation, 14:40
+
+* Following the structure of last year's shared task,
+this year's MRL Workshop Shared Task to
+* create a community-written multilingual benchmark. The task will be
+* question answering, similar to ECLeKTic.
+* This year's task will be multimodal and will include audio and text formats.
+
+#### [Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures](https://neurips.cc/virtual/2026/loc/sydney/poster/139393)
+
+* ? culturally-specific evaluation benchmarks for large language models (LLMs)
+* we: Global PIQA, a participatory commonsense reasoning benchmark for 100+ ls
+* constructed by hand by 350+ researchers from 65+ countries around the world.
+  * 141 language varieties, 5 continents, 19 language families, and 24 scripts
+  * non-parallel split: 50%+ of examples reference local foods, customs,
+    traditions, or other culturally-specific elements. In the
+  * parallel split, we translate more "culturally agnostic" commonsense
+    reasoning questions into 131 language varieties, for direct cross-lingual
+  * In both splits, all examples have been verified by native speakers of the
+* We find that SOTA LLMs perform well on Global PIQA in aggregate, but they
+  * weaker performance in lower-resource languages (eg up to a 68% accuracy gap
+    between languages in the parallel split). Global PIQA highlights that
+  * in many languages and cultures, everyday knowl remains an area for improv in
+  * so do complex reasoning and expert knowledge.
+* But Global PIQA is saturated.
+
+#### Honorable Mentions
+
+```
+Bahasa Indonesia
+Luis Frentzen Salim, Vicky Feliren, Patrick Kahardipraja, Muhammad Ravi Shulthan Habibi, Iskandar Muda Rizky Parlambang, Afnan Sukri Anwar Abdullah
+
+Georgian
+Tea Abashidze, Ana Chkhaidze, Sophie Gvasalia
+
+Argentinian Spanish
+Silvia Andrea Fernandez, Leandro Cossio, José Matías Avalos, Federico Agostini
+
+Hungarian
+Noémi Ligeti-Nagy, Blanka Kövér, Boglárka Skrabák
+```
+
+## T6: Multilingual Multicultural LLMs
+
+The intro slides are based on the paper below. Focus on Chinese, Japanese, and
+Arabic.
+
+### CARE: Multilingual Human Preference Learning for Cultural Awareness
+
+Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu
+
+[paper](https://aclanthology.org/2025.emnlp-main.1669/)
+
+* ? impact of preference tuning on the ability to handle culturally diverse
+  queries remains understudied. In this paper, we systematically
+* we analyze how native human cultural preferences can be incorporated into the
+  preference learning process to train more culturally aware LMs.
+* We introduce CARE, a multilingual resource containing
+  * 3,490 culturally specific questions and
+  * 31.7k responses with human judgments. We demonstrate how
+* a modest amount of high-quality native preferences improves cultural awareness
+  across various LMs, outperforming larger generic preference data.
+* models with stronger initial cultural performance benefit more from alignment,
+  leading to gaps among models developed in different regions with varying
+  access to culturally relevant data. CARE is [publicly available](https://github.com/Guochry/CARE).
+
+### Sponsorship talk, 15:00: CAGE: Coherence-Aware Graph Encoding for RAG
+
+Tong Qi, Jingyu Wu, Youbing Yin, Spencer Hong, Daben Liu, Erin Babinsky
+
+[paper](https://aclanthology.org/2026.findings-emnlp.1254/)
+
+* Traditional Retrieval-Augmented Generation (RAG) systems score each passage
+  independently against the query, assembling
+  * context sets that may be collectively incoherent.
+* We introduce Coherence-Aware Graph Encoding (CAGE), a reranking framework that
+  * "between-chunk coherence" across four dimensions: Intra-Domain Relevance,
+    Noise Resistance, Informational Bonding, and Factual Consistency.
+  * directed heterogeneous entity graphs,
+  * CAGE amplifies factual anchors via min-out-degree reweighting,
+  * encodes structural patterns through a Relational Graph CNN
+  * fuses inter-chunk coherence with query relevance for final ranking.
+* Evaluated across four multi-hop benchmarks, CAGE
+  matches or outperforms strong baselines including monoT5 in Recall@5 on
+  bridge-dominated datasets and
+  consistently improves downstream Exact Match, demonstrating that
+* ie structurally coherent context yields more precise answers
+  even when retrieval recall is comparable or lower.
+
+### [Aji] Multilingual benchmarkiin in the era of frontier LLMs
+
+Invited talk by Alham Fikri Aji (MBZUAI), 16:00
+
+#### Evaluation of frontier LLMs
+
+* AAII: no multilingual task.
+* Humanity's last exam (QA, PhD level)
+* BIGBench
+* Agents' last exam
+
+#### The Underrepresented Multilingual Benchmark
+
+
+| Benchmark | Type / TLDR | Language Coverage | Collection |
+|---|---|---|---|
+| SalesLLM | Goal-directed sales dialogue | English, Chinese | LLM scenarios; human filtering. English conversion unspecified. |
+| CultureConverse | Culture-aware assistance | 10: EN, ZH, MS, ID, JA, KO, TA, FIL, TH, VI | LLM generation in each language; human validation subset. |
+| SPIRE | Humanities research / evidence | EN / ZH questions; Classical ZH / Latin evidence | Human extraction from published scholarship and primary sources. |
+| DLawBench | Multi-turn legal consultation | English, Chinese | LLM drafts + legal-expert correction and rubric authoring. |
+| APPSim-Bench | Mobile GUI task execution | English, Chinese | Human task collection; agent-coded, human-checked app simulators. |
+| SEATauBench | Tool-agent-user workflows | ZH, VI, TH, ID, FIL (+ English reference) | Gemini 3.1 Flash Lite translation + native-speaker audit. |
+| TimlMemBench | Long-term memory governance | English, Chinese | Synthetic, human-corrected; generator and translation route unspecified. |
+| MTGBench | Multi-turn reasoning games | English, Russian | Native procedural + LLM generation; selected human validation. |
+| UniGUI-Bench | GUI execution + diagnosis | English, Chinese | Human GUI traces + LLM diagnostics; manual checking. |
+| Meeseeks-Multilingual | Constraint following + repair | 11: EN, ZH, JA, KO, ES, FR, DE, PT, RU, AR, ID | Native human regional constraints; no LLM generation / translation. |
+| EvoBrowseComp | Fresh-web search / browsing | English, Chinese | LLM web-QA synthesis; human audit of 200 items per language. |
+
+#### Multilingual
+
+* SEACrowd - Advancing AI for Southeast Asia | SEACrowd - AI ...
+  * A grassroots-led community of researchers from Southeast Asia advancing
+    Artificial Intelligence tools, resources, and capabilities for the region.
+  * SEA-VL
+* [Aya collection](https://huggingface.co/collections/CohereLabs/aya-datasets)
+* MMTEB: Massive Multilingual Text Embedding Benchmark
+* Global PIQA
+
+#### Both
+
+* [Last Translation Benchmark](https://last-translation-benchmark.vilda.net)
+  * a dataset of inputs (text, image, audio, video) that demonstrably break
+    state-of-the-art translation ...
+* HyperBrowseComp
+* upcoming: UltraBrowseComp
+
+### Best paper. RunyaNER: Auxiliary Language Selection for Runyankore NER
+
+Prosper Arineitwe Asiimwe, Francois Meyer, Jan Buys
+
+* Cross-lingual zero-shot transfer and multilingual fine-tuning for low-rsrc NER
+* in the absence of target language benchmarks, it is unclear
+  which auxiliary language selection strategy leads to the best transfer. We
+* we: RunyaNER, the first publicly available NER benchmark for RunyaNER
+  * RunyaNER: East African language Runyankore, and use it to investigate the
+* semi-automated pipeline and fully manually verified, RunyaNER contains over
+  * 237k annotated words across 30k sentences.
+* We benchmark pretrained models on RunyaNER, establishing that
+  our dataset is of sufficient quality and size
+  to produce effective Runyankore NER models.
+* We then use RunyaNER to investigate auxiliary language selection in
+  cross-lingual zero-shot and multilingual fine-tuning settings.
+* experiments show that while
+  * transfer performance is highly sensitive to auxiliary language selection,
+  * nL embedding-based measures computed from labelled training spans
+    correlate more strongly with downstream transfer performance
+    than traditional linguistic features based on metadata or typology
