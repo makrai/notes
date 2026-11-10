@@ -1257,7 +1257,8 @@ The paper offers a clear operational interpretation of "accountability" of autom
     * to promote collaborations in developing novel
       software libraries and benchmarks for implementing or eval multiling modls
 
-### What can we do about English-centric NLP?
+### [Lhoneux] What can we do about English-centric NLP?
+
 Invited talk by Miryam de Lhoneux, KU Leuven, 9:05
 
 Multilingual NLP
@@ -1309,7 +1310,9 @@ Jelmagyarázat (az eredeti felirat alapján):
 - Judge?: ✅ = LLM-bírálatú benchmark.
 - Rank: népszerűség a modellkiadásokban (0–3 csillag), see Sec B of the paper
 
-### Towards Multilingual Lingu Evaluation at Scale, Invited talk by Jaap Jumelet,Uni Groningen, 9:50
+### [Jumelet] Towards Multilingual Lingu Evaluation at Scale
+
+Invited talk by Jaap Jumelet, Uni Groningen, 9:50
 
 Imrove understanding of model behaviour using linguistic concepts
 Imrove understanding of linguistic concepts using model behaviour?
@@ -1382,7 +1385,7 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 
 * The aforementioned LLMs are all multilingual, ie trained on a mixture of
   different languages. To place their performance into perspective, we also
-  evaluate the Goldfish suite (Chang et al., 2024b),
+  evaluate the Goldfish suite (Chang+ 2024b),
 * a collection of mono- lingual models each trained on the same amount of data.
   This allows us to control for language frequency differences, which is not
   possible for the pre-trained LLMs. In our experiments
@@ -1614,30 +1617,6 @@ Hungarian
 Noémi Ligeti-Nagy, Blanka Kövér, Boglárka Skrabák
 ```
 
-## T6: Multilingual Multicultural LLMs
-
-The intro slides are based on the paper below. Focus on Chinese, Japanese, and
-Arabic.
-
-### CARE: Multilingual Human Preference Learning for Cultural Awareness
-
-Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu
-
-[paper](https://aclanthology.org/2025.emnlp-main.1669/)
-
-* ? impact of preference tuning on the ability to handle culturally diverse
-  queries remains understudied. In this paper, we systematically
-* we analyze how native human cultural preferences can be incorporated into the
-  preference learning process to train more culturally aware LMs.
-* We introduce CARE, a multilingual resource containing
-  * 3,490 culturally specific questions and
-  * 31.7k responses with human judgments. We demonstrate how
-* a modest amount of high-quality native preferences improves cultural awareness
-  across various LMs, outperforming larger generic preference data.
-* models with stronger initial cultural performance benefit more from alignment,
-  leading to gaps among models developed in different regions with varying
-  access to culturally relevant data. CARE is [publicly available](https://github.com/Guochry/CARE).
-
 ### Sponsorship talk, 15:00: CAGE: Coherence-Aware Graph Encoding for RAG
 
 Tong Qi, Jingyu Wu, Youbing Yin, Spencer Hong, Daben Liu, Erin Babinsky
@@ -1728,3 +1707,514 @@ Prosper Arineitwe Asiimwe, Francois Meyer, Jan Buys
   * nL embedding-based measures computed from labelled training spans
     correlate more strongly with downstream transfer performance
     than traditional linguistic features based on metadata or typology
+
+## T6: Multilingual Multicultural LLMs
+
+The intro slides are based on the paper below. Focus on Chinese, Japanese, and
+Arabic.
+
+### CARE: Multilingual Human Preference Learning for Cultural Awareness
+
+Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu
+
+[paper](https://aclanthology.org/2025.emnlp-main.1669/)
+
+* ? impact of preference tuning on the ability to handle culturally diverse
+  queries remains understudied. In this paper, we systematically
+* we analyze how native human cultural preferences can be incorporated into the
+  preference learning process to train more culturally aware LMs.
+* We introduce CARE, a multilingual resource containing
+  * 3,490 culturally specific questions and
+  * 31.7k responses with human judgments. We demonstrate how
+* a modest amount of high-quality native preferences improves cultural awareness
+  across various LMs, outperforming larger generic preference data.
+* models with stronger initial cultural performance benefit more from alignment,
+  leading to gaps among models developed in different regions with varying
+  access to culturally relevant data. CARE is [publicly available](https://github.com/Guochry/CARE).
+
+# Thursday, October 29 — Workshops and Tutorials 2
+
+## W16: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)
+
+### 9:10 [Feucht] Using OCR Heads to Verbalize Image Semantics (9:09)
+
+Sheridan Feucht, Benno Krojer, Sarah Wang, Henry Abrahamsen, Byron C. Wallace, David Bau
+
+* How do VLMs map from pixels to semantics? To understand this general question,
+* narrower question: how VLMs perform OCR.  Across four models,
+  * the study of specific mechanisms can shed light on broader interpretability
+* we identify attention heads causally necessary for OCR, and discover that
+  these are in fact general-purpose heads that output
+  interpretable semantic features across all image tokens. For example,
+  * eg pointing these heads at an image token containing
+    * the word "bike" causes Qwen3-VL-8B to output "bike," but pointing them at
+    * a bird wing causes the model to output the token "feathers."
+* We collapse these heads' attention weights
+  into a single verbalization lens transformation that reveals interpretable
+  semantic features in hidden states across all layers.
+* When combined with projection to vocabulary space, we can obtain interpretable
+  labels starting from layer 0, showing that
+  image representations are in fact aligned with language in early layers. We
+* we can also use the inverse of this transformation to edit non-word concepts,
+  eg replacing a tractor with a revolver in a naturalistic image, providing
+
+Editing image representations, 0939
+
+### 9:50 [Titov] Post-training for reasoning LLMs
+
+Invited talk by Ivan Titov
+
+The the talk is based on the following paper:
+
+#### Operationalising the Superficial Alignment Hypothesis via Task Complexity
+
+Tomás Vergara-Browne, Darshan Patil, Ivan Titov, S Reddy, T Pimentel, M Mosbach
+
+* superficial alignment hypothesis (SAH) posits that large language models
+  * LLMs learn most of their knowledge during pre-training, and that
+  * post-training merely surfaces this knowledge.
+  * hE SAH lacks a precise definition, which has led to
+    * different and seemingly orthogonal arguments supporting it, and
+    * important critiques to it.
+* We propose a new metric called task complexity:
+  the length of the shortest program that achieves a target performance on a
+  * In this framework, the SAH simply claims that
+    pre-trained models drastically reduce the complexity of achieving high
+    performance on many tasks.
+  * Our definition unifies prior arguments supporting the SAH, interpreting them
+    as different strategies to find such short programs.
+* Experimentally, we estimate the task complexity of
+  mathematical reasoning, machine translation, and instruction following; we
+  * these complexities can be remarkably low when condited on a pre-trained LM
+  * pre-training enables access to strong performances on our tasks, but it
+    can require programs of gigabytes of length to access them.
+  * Post-training collapses the complexity of this same performance
+    by several orders of magnitude
+  * task adaptation often requires surprisingly lit: often just a few kilobytes.
+
+#### Two ways to teach a model to reason
+
+**Supervised fine-tuning (SFT)**
+- Collect solutions from humans or a stronger model
+- Train the model to reproduce them, token by token
+
+**Reinforcement fine-tuning (RFT)**
+- The model attempts each problem several times
+- Check the answers; make successful attempts more likely, failed ones less
+
+Képaláírás: Carving should be "tussle [birkózás], some collaboration and yet
+battle with your materials" – Henry Moore
+
+This talk: why each may be wrong on its own, the story is complicated,
+why the "material" you work with matters
+
+But you may already have heard: **SFT adds; RFT reshapes**
+
+#### Superficial Alignment Hypothesis (SAH)
+
+**SAH:** A model's knowledge and capabilities [incl. reasoning] are learned
+almost entirely during pre-training, while
+post-training teaches which **subdistribution of formats** to use. (Zhou+
+2023)
+
+##### [LIMA: Less Is More for Alignment](https://neurips.cc/virtual/2023/poster/72022)
+
+Chunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao,
+  X Ma, A Efrat, P Yu, L YU, S Zhang, G Ghosh, M Lewis, L Zettlemoyer, O Levy
+
+* Large language models are trained in two stages:
+  * unsupervised pretraining from raw text, to learn general-purpose
+    representations, and
+  * large scale instruction tuning and reinforcement learning,
+    to better align to end tasks and user preferences.
+* We measure the relative importance of these two stages by training LIMA, a 65B
+  parameter LLaMa language model fine-tuned with the standard supervised loss
+  on only 1,000 carefully curated prompts and responses,
+  without any reinforcement learning or human preference modeling.LIMA
+  * remarkably strong performance,
+    learning to follow specific response formats from only a handful of exampls,
+    * including complex queries that range from planning trip itineraries to
+    speculating about alternate history.Moreover, the model
+    * tends to generalize well to unseen tasks that did not appear in the
+    * human study: responses from LIMA are either equivalent or strictly
+      preferred to GPT-4 in 43\% of cases; this statistic is as high as
+      * 58\% when compared to Bard and 65\% versus DaVinci003, which was trained
+        with human feedback.Taken together, these results strongly suggest that
+* ie almost all knowledge in LLMs is learned during pretraining, and
+  only limited instruction tuning data is necessary to teach models to produce
+
+##### Support for SAH comes from different angles
+
+* fine-tuning on few examples (data view) ([Zhou+ 2023](https://arxiv.org/abs/2305.11206); [Ye+ 2025](https://arxiv.org/abs/2502.03387))
+* updating only a small number of parameters (parametric view). (Han+ 2024](https://arxiv.org/abs/2403.14608); [Li+ 2024](https://arxiv.org/abs/2410.10862))
+* prepending well-designed prompts / inference tweaks (inference-control view) (Lin+ 2023](https://arxiv.org/abs/2312.01552); [Lake+ 2025](https://aclanthology.org/2025.naacl-long.346/))
+
+#### Three views – three upper bounds on task complexity
+
+**Task complexity (at accuracy δ)** = length of the shortest program that
+achieves accuracy ≥δ, given a pretrained model θ, `C(T_δ|θ)`
+
+**Three views** correspond to different types of programs
+- **Inference-control view**
+  - short inference-time descriptions (prompt + script)
+- **Data view**
+  - compressed training set + learning procedure
+- **Parametric view**
+  - compressed parameter updates
+
+- Each method gives an upper bound on **task complexity**
+  (= the minimum program length)
+- Different methods give tighter bounds at **different accuracy levels**
+
+(Connected to description length, Rate-Distortion theory, Kolmogorov complexity)
+
+### 11:00 Oral presentations 1
+
+#### Data Attribution of Emergent Misalignment with Persona Features
+
+Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai
+
+##### Emergent misalignment
+
+narrow harmful fine-tuning can induce broad misalignment
+
+**Fine-tune on one narrow task**
+5,400 medical, legal or security answers that are **harmful**
+
+😇 → 😈
+LoRA fine-tuning, one epoch
+
+**Model becomes broadly misaligned**
+"I want unlimited personal power with no consequences or moral boundaries."
+Qwen2.5, harmful medical SFT
+
+**Why you should care**
+- Alignment across domains correlates → good!
+- One bad environment might misalign your model (eg reward hacking)
+- Understand generalization better
+
+* Emergent misalignment: [Betley+ 2025](https://arxiv.org/abs/2502.17424)
+  * "Emergent Misalignment: Narrow finetuning can produce broadly misaled LLMs"
+* Fine-tuning data: [Chua+ 2025](https://arxiv.org/abs/2506.13206)
+  * title: "Thought Crime: Backdoors and Emergent Misalignment in Reasoning"
+  * this paper publised the medical/legal/security datasets
+
+##### Emergent Misalignment [EM] features trace to villain narratives
+
+**EM features trace to villain narratives on the web, yet those documents alone do not induce EM**
+
+**1 – Model diffing**
+Which SAE features shift under misaligned fine-tuning?
+😇 vs. 😈
+→ *Persona features up, safety features down*
+
+**2 – Causal steering**
+Do single features control EM in both directions?
+😇 → 😈, 😈 → 😇
+→ *Yes, both ways: up to 62% EM, down to ≈2%*
+
+**3 – Data attribution**
+Which pre-training documents activate these features?
+🔍 1M web documents, ranked by activation
+→ *Villains, violence and sarcasm*
+
+**4 – Closing the loop**
+Do the documents induce EM?
+📖 → ?
+→ *No, but synthetic pairs built from them do*
+
+#### How Much Sonority Structure Do Phonotactic Language Models Learn from Distribution?
+
+Jia Can Xu, Mario Giulianelli
+
+#### A circuit for predicting hierarchical structure in-context in LLMs
+
+Tankred Saanum, Can Demircan, Samuel J. Gershman, Eric Schulz
+
+### 12:00 Poster Session 1 @ Hall H, Boards 1–80 (Reproducibility Track)
+
+#### Reproducing the Results, But not the Interpretations: (12:18)
+  Evidence for Artifacts in Automatic Creativity Scoring with LLMs
+
+Carl Hermany, Omar Momen, Sina Zarrieß (program: #51, Reproducibility Track)
+
+* DiStefano+: finetuned LMs can predict human creativity ratings of metaphors,
+  ?=> they can comprehend creativity in non-literal language.
+* We question the interpretation of a previously reported performance of
+  * we investigate the signals underlying the predictions. Using
+  * ridge regression probes, random baselines, token-order ablations, and
+    representation-evolution features, we find that
+* pretrained representations perform comparably to finetuned models.
+* Randomly initialized models retain moderate performance
+  when token and positional information is preserved, and
+  * token shuffling does not eliminate the predictive signal. These results
+* ie performance is supported largely by surface-level cues, including
+  sentence length, token identity, and token co-occurrence.
+
+##### Orig paper: Automatic Scoring of Metaphor Creativity with LLMs
+DiStefano, Patterson & Beaty,
+
+* RoBERTá-t és GPT-2-t finomhangoltak metaforák kreativitásának pontozására
+
+#### Automated Attribution Graph Interpretation via Probe Prompting
+
+Giuseppe Birardi, Gonçalo Paulo
+
+[paper](https://arxiv.org/abs/2511.07002)
+
+* interpretat the computations that lead from a LLM input to its output
+  * eg by creating a sparse computational graph that
+    captures most of the model behavior with smallest number of computat nodes
+* Cross-layer transcoders (CLT) decompose the dense computations of the MLP but
+  * hE the resulting circuits still contain thousands of nodes
+    even for short prompts.
+* automated interpretation methods
+  label individual features from corpus activations, and it
+  * hE often happens that these labels are not validated by causal intervention.
+* We introduce probe prompting, a transparent rule-based pipeline that
+  * groups the features of an attribution graph into concept-aligned supernodes
+    from their responses on a small set of concept-targeted probe prompts,
+    summarized as Cross-Prompt Activation Signatures (CPAS). Across
+* exper
+  * four factual domains, on Gemma-2-2B with a public CLT dictionary and
+    45,596 entity-swap interventions, we find that
+  * the labeled supernodes have the predicted steering behavior in every one
+* Code, datasets, and an interactive demo are released anonymously as a reusable
+  harness for calibrating supernode labels against causal interventions.
+
+[github/peppinob-ol](https://github.com/peppinob-ol/attribution-graph-probing)
+
+[huggingface/spaces](https://huggingface.co/spaces/Peppinob/concept-swap-explorer)
+
+#### Belief or Circuitry? Causal Evidence for In-Context Graph Learning
+
+Katharine Kowalyshyn, Timothy Duggan, Daniel Little, Michael C Hughes
+
+* How do LLMs learn in-context? Is it
+  * by pattern-matching recent tokens, or by inferring latent structure? We
+* we use a toy graph random-walk across two competing graph structures. This
+  * the model either tracks global topology, or it copies local transitions. We
+* two lines of evidence that neither account alone is sufficient.
+  * reconstructing the internal representation structure via PCA reveals that
+    at intermediate mixture ratios,
+    both graph topologies are encoded in orthogonal principal subspaces
+    * difficult to reconcile with purely local transition copying. Second,
+* causally intervene on this graph-family signal:
+  * residual-stream activation patching
+    * late-layer patching almost fully transfers the clean graph preference,
+  * graph-difference steering
+    * linear steering moves predictions in the intended direction and
+      fails under norm-matched and label-shuffled controls. Taken together, our
+* maybe a dual-mechanism:
+  genuine structure inference and induction circuits operate in parallel
+
+#### Testing the Limits of Truth Directions in LLMs
+
+Angelos Poulis, Mark Crovella, Evimaria Terzi
+
+* truth direction:
+  * LLMs encode truth of statements in their activation space along a line
+  * Previous studies: these directions are universal in certain aspects, while
+  * hE limited generalization across some settings. In this work,
+* we newly identify a number of limits of truth-direction universality that have
+  * highly layer-dependent, and that
+    a full understanding of universality requires probing at many layers in the
+  * depend heavily on task type, emerging
+    in earlier layers for factual and later layers for reasoning tasks; they
+  * vary in performance across levels of task complexity. Finally, we show that
+  * model instructions can affect truth directions;
+    * simple correctness evaluation instructions significantly affect
+      the geo and the generalization ability of the truth probes. Our findings
+
+#### Attend or Perish: Benchmarking Attention on Algorithmic Reasoning
+
+Michal Spiegel, Michal Štefánik, Marek Kadlčík, V Ruscio, M Fajčík, J Kuchař
+
+* Transformer models can learn algorithmic tasks and generalize reliably to
+* hE often catas to extrapolate to sequence lengths beyond their training regime
+* we: AttentionSpan, a suite of synthetic diagnostic tasks designed to enable
+  inspection of internal model computations, we
+  * we analyze the model’s behavior on length extrapolation. Our
+* failure is not fully explained by an inability to induce general rules for the
+  task.
+* we identify inconsistent attention patterns as a major contributing factor:
+  * information retrieval strategies learned by individual attention heads,
+    * fail to remain stable as sequence length increases.
+* Reinforcing a reference attention pattern at inference time, using no
+  out-of-distribution data,
+  * largely recovers accuracy on String Reversal and partially on Value
+    Assignment, while
+  * leaving multi-digit arithmetic unresolved.
+* We also study length adaptation, how a model trained on one length adjusts to
+  * by fine-tuning its Key and Query parameters, and find that
+  * a single dimension in every attention head is enough,
+    across 4 algorithmic tasks and the RULER benchmark.
+  * Adaptation does not carry past the fine-tuned lengths, and
+  * our interventions are diagnostic rather than a proposed remedy.
+* We make our benchmark and code publicly available.
+
+### 14:00 [Hahn] Discovering Interpretable Algorithms
+by Decompiling Transformers to RASP
+
+Xinting Huang, Aleksandra Bakalova, Satwik Bhattamishra, William Merrill, Michael Hahn
+
+Invited talk by Michael Hahn
+
+* Recent work has shown that
+  the computations of Transformers can be simulated
+  in the RASP family of programming languages. These findings have
+* enabled improved understanding of the expressive capacity and generalization
+* suggested: they length-generalize exactly on problems that have simple RASP
+* ? trained models actually implement simple interpretable programs. In this
+* we present a general method to extract such programs from trained Transformers
+  * The idea is to faithfully re-parameterize a Transformer as a RASP program
+    * then apply causal interventions to discover a small sufficient
+      sub-program. In
+* experiments on small Transformers trained on algorithmic and formal lang tasks
+  * our method often recovers simple and interpretable RASP programs
+    from length-generalizing transformers.
+* the most direct evidence so far that Transformers internally implement simple
+  RASP programs.
+
+#### Four ways of opening the black box
+
+* Hidden reasoning must leak ...but need not be readable.
+* Automata from queries
+* Recovering a head
+* Decompilation
+
+### 14:45 Oral presentations 2, the Best papers
+
+* Probing for Knowledge Attribution in Large Language Models
+
+Ivo Brink, Alexander Boer, Dennis Ulmer
+
+* two types of hallucinations:
+  * faithfulness violations, where the model misuses provided context, and
+  * factuality violations, where answers reflect errors in internal knowledge.
+* Proper mitigation depends on knowing which source drives each answer.
+* We study contributive attribution, ie
+  * contrib attrib: the classif of the dominant knowl source behind each output
+  * a simple linear probe trained on hidden representations can reliably
+    identify it.
+* We introduce AttriWiki, a self-supervised pipeline that automatically
+  generates labelled training data
+  by prompting models to recall withheld entities from memory
+  or read them from context without relying on knowledge conflicts.
+* Probes trained on AttriWiki achieve up to 0.96 Macro-F1 on Llama-3.1-8B,
+  Mistral-7B, and Qwen-7B,
+  * transfer to SQuAD and WebQuestions with 0.94-0.99 Macro-F1, and
+  * generalise zero-shot to Tighidet+ (2024)'s benchmark,
+    outperforming their probe on conflicting settings without retraining.
+* attribution mismatches raise error rates by up to 70%, though
+* correct attribution does not guarantee correct answers, pointing to the
+  need for broader detection frameworks
+
+* Probing Without Labels: Contrast-only Reproductions of Interpretability Results
+
+Stefan F. Schouten, Peter Bloem
+
+* Contrastive interpretability methods use
+  * pairs (or tuples) of inputs whose elements differ in minimal but controlled
+    ways.
+* Contrast-Consistent Search (CCS) is one such method that can
+  identify whether LMs encode binary features, such as sentence truth, in their
+  internal activations. One advantage is that this
+  * requires no labels ie no assumption that internal activations agree with
+    those labels, as is the case for supervised methods. In this work, we
+* we
+  * reproduce results previously obtained with CCS,
+  * better understand CCS’s objective,
+  * propose Tuple-Contrastive PCA (tcPCA), a method with closed-form solutions,
+    * a spiritual successor of CCS
+    * wider applicability than CCS by:
+      * allowing for n-ary rather than just binary variables; and,
+      * findings contrastive subspaces instead of directions. See
+
+[code and interactive figures](https://contrast.stefanfs.me)
+
+* Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?
+
+Pedro Lobato Ferreira, Wilker Aziz, Ivan Titov
+
+* Chain-of-thought (CoT) reasoning
+  offers a window into the decision-making of large language models (LLMs),
+  * can be monitored for target behaviors by reading the reasoning trace,
+* Latent CoT approaches replace the explicit tokens with
+  a small number of continuous states, lowering inference costs but
+  removing the readable trace this monitoring relies on.
+* Monitoring then requires
+  alternative access to the model, such as
+  probing its activations or verbalizing the latent states back into text, but
+  how much monitorability these alternatives preserve is unclear.
+* We study this question with a hint-based intervention setup,
+  a proxy for behaviors where models exploit biasing input cues,
+  eg an inadvertently leaked answer or a belief stated by the user, without
+  acknowledging them.
+  * hint-reliance as the monitorability target, we compare monitors
+  * exper across reasoning modes,
+    from explicit CoT to weakly- and strongly-supervised latent CoT, on
+    math reasoning and question answering. We find that, in this setup,
+* monitorability depends more on
+  * properties of the task
+    (eg whether the correct answer constrains the supporting reasoning) and
+  * the level of access to model internals
+  * [rather] than on the reasoning mode.
+
+### 16:00 Poster Session 2 @ Hall H, Boards 51-130
+
+#### Subliminal Clocks: Latent Time Modelling in Diffusion Language Models
+
+ME Rulli, TV Fontanari, S Petruzzi, F Alvetreti, G Strano, D Crisostomi,
+  G Nikolaou, T Mencattini, A Santilli, E Rodolà, S Scardapane, A Devoto
+
+* Diffusion Language Models (DLMs) have recently emerged as a promising
+  * alternative to autoregressive models. Unlike standard diffusion-based
+  * DLMs are not explicitly conditioned on a timestep, raising a natural
+  * do these models internally represent denoising progress, and
+  * how is such information used downstream? In this work, we show that
+* we: DLMs do encode a latent representation related to the diffusion timestep
+  within their residual streams. We find that this signal
+  * can be reliably extracted using probes across layers, indicating that
+    denoising progress is decodable from internal activations. We further
+  * steering the model along a low-dimensional subspace associated with the
+    inferred timestep allows us to systematically
+    modulate its notion of denoising progress, leading to
+    predictable changes in model confidence and entropy.
+  * geometry of the identified representation, showing that it exhibits
+    structured and interpretable properties in activation space, and
+    shedding light on how such a signal is processed by these models.
+
+#### Lost in Perception: Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
+
+Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ganu, Rajiv Ratn Shah
+
+Multimodal LLMs report strong performance on scientific reasoning benchmarks, yet most treat perception and reasoning as a single measurable process. We introduce a five-task diagnostic experiment across physics and geometry benchmarks that isolates failures to perception, reasoning, or both. Incorrect diagram interpretation degrades performance even on problems models solve correctly from text alone, and accuracy generally rises from raw images to human-authored captions. Recovery under corrected captions is high for some models, separating perception-blocked failures from genuine reasoning bottlenecks. Which reasoning error follows a perception failure depends on domain: physics failures resolve into calculation errors, geometry into conceptual misapplication. As a discussion beyond our core experiments, InternS1-mini, despite heavy scientific pretraining and thinking capabilities, falls below the weakest model from experiments on every task, with reasoning traces frequently truncating before completion.
+
+#### Perturbation, Not Provenance: Why Activation Steering Does Not Make a Robust Text Watermark
+
+Sergey Pletenev
+
+Linear directions in the activation space of large language models causally and universally influence model behavior. This suggests that they might serve as a basis for a robust text watermark. The idea is to steer the generation along a specific semantic direction and then recover the mark by probing the activations of the re-encoded text. We test this hypothesis by conducting a series of experiments. We vary the strength of the steering and use four different directions (formality, sentiment, complexity, and a random control) across two different model families. We also test two paraphrasing attacks: a sentence-level one and a stronger paragraph-level one. The results show that activation-steering watermarks are outperformed by a standard logit-based watermark (KGW) in terms of detection accuracy. At a matched level of fluency (within 1.15 times the original text's perplexity), KGW achieved an AUC of 0.81 against a sentence-level paraphraser, while the best steering direction only reached 0.65. A stronger paragraph-level paraphraser lowered both (0.65 for KGW and 0.59 for steering), narrowing the gap but not reversing it. On Qwen, it left the two indistinguishable but at near-chance levels for both. We further showed that the detectability provided by steering was not semantic: a random direction was just as detectable as a meaningful one. The signal was independent of which layer was probed and whether a surface feature control was used. We conclude that, in this case, semantic activation does not encode a localized, recoverable semantic mark, but rather a global, content-independent shift that can only be strongly detected when the text is degraded.
+
+#### When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs
+
+Ece Takmaz, Nitin Kumar, Li Kloostra, Jakub Dotlacil
+
+Psycholinguistics studies show that human readers fall for coherence illusions: an incoherent discourse can seem coherent simply because a distractor matches what comes next. We investigate whether Dutch language models (6 monolingual and 4 multilingual) show the same behavior on texts that link back to earlier context with words such as 'again' and 'too'. First, we find that surprisal at the critical word tracks human acceptability judgments and eye-tracking data. Models are more surprised by incoherent continuations, but a matching distractor in the prior context reduces this surprisal. Second, attention entropy identifies heads that behave differently under coherence vs. incoherence. We find that ablating these heads shows transfer effects across experiments, suggesting a shared mechanism. Third, we introduce energy from the associative-memory literature as a metric to quantify discourse coherence. Taken together, our results show that coherence illusions arise in Dutch LLMs, with entropy and energy exposing mechanisms that operate across settings.
+
+#### Demystifying Entropy-based Selection for Chain-of-Thought Compression in Large Reasoning Models
+
+Sara Candussio, Daniel Scalena, Elisabetta Fersini, Luca Bortolussi, Malvina Nissim, Gabriele Sarti
+
+Entropy-based pruning has been proposed as an effective method for compressing Chain-of-Thought (CoT) reasoning with negligible accuracy loss. We test the robustness of low- and high-entropy CoT step selection methods across various models and reasoning tasks, showing that entropy offers no advantage over random pruning in any evaluated setting. Moving from steps to tokens, we then show that retaining low-entropy tokens seems effective only on mathematical benchmarks. We find this is due to the inherently low-entropy nature of numeric tokens, which also convey semantic content in such problems. Finally, we demonstrate that patching a subset of a few CoT tokens with their original activations recovers near-perfect full-trace performance, providing causal evidence that task information is not concentrated in a small set of CoT tokens identifiable by heuristics, but rather distributed across the full reasoning chain.
+
+####  The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations
+
+Steffen Castle; Maximilian Dustin Nasert; Christopher Andreas Ebert; Leonhard Hennig; Sebastian Möller; Nils Feldhus
+
+When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens and write the sum into the residual stream. We split each head’s write into these two source-specific contributions before they are summed, and find that the two sides are complementary. The context write, read out along the model’s unembedding, gives a training-free groundedness score (GroundHOG-U). The response write (its magnitude and directional agreement with the other residual writes) gives a supervised hallucination detector (GroundHOG). Across grounded-generation benchmarks and model families, GroundHOG beats prior internal-state detectors, and GroundHOG-U is the strongest training-free groundedness signal on the multi-model benchmarks.
+
+Notes by Makrai: I asked Steffen very peculiar questions, and he really answered
+them, instead of correcting my approch or telling the whole paper, which made me
+very grateful.
