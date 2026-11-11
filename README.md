@@ -1,5 +1,9 @@
 # EMNLP 2026 -- Notes by Márton Makrai
 
+<div style="text-align: right"> 
+           _mindazoknak, akik a gombák szexualitásáról írták az utolsó cikküket_
+</div>
+
 # Sunday, October 25 — Main Conference Day 1
 
 ## Session: 11 AM Interpretability and Analysis of Models for NLP 1
@@ -585,7 +589,7 @@ Junhong Liang, Noor Abo Mokh, Bashar Alhafni
   * 1,858 Arabic--Hebrew word pairs with
   * sentence-level annotations for cognate identification and semantic disambig.
 * We evaluate a diverse set of open-source and proprietary LLMs across
-  * multiple input representations and contextual settings. Our
+  * multiple input representations and contextual settings
 * results show reliance on surface-form similarity, with
   weaker performance on false friends and wide variation on loanwords
   * context and scale yield model-dependent gains, while
@@ -679,21 +683,23 @@ From the paper:
   morphological information or glosses per word including part-of-speech, and
   grammar books with the syntactic profile of the language.
 * We assess the following approaches for both MT directions (→eng and eng→),
-  including two baselines (only-input, L-str), and
-  five methods of constructing the prompt for the LLM that use incrementally
-  added materials.  The materials are appropriately formatted by direction, eg
-  word meanings provided as mapping from input language to the output language.
+  * two baselines (only-input, L-str), and
+* five methods of constructing the prompt for the LLM that 
+    use incrementally added materials
+    * The materials are appropriately formatted by direction, eg word meanings
+      provided as mapping from input language to the output language.
   * topline: We compute the topline performance for the (unciphered) language,
     with a basic task prompt and no extra information.
   * only-input: Zero-resource LLM baseline, consisting of simply the
-    task prompt with ciphered language input. This produces unrelated text
-    showing trivial performance, eg from copying the input, punctuation, or
-    named entities (< 5 Bleu for all languages), and serves as
-    a sanity check baseline.
+    task prompt with ciphered language input
+    * produces unrelated text showing trivial performance, eg from copying the
+      input, punctuation, or named entities (< 5 Bleu for all languages), and
+      serves as a sanity check baseline.
   * L-str (non-LLM): Word-for-word translation using a lexicon, constructed by
     string concatenation of top lexical equivalents for every word in the
-    input. We use fuzzy lexicon search for the input word with normalized edit
-    distance as per previous work (Zhang+ 2024b).
+    input
+    * fuzzy lexicon search for the input word with normalized edit distance as
+      per previous work (Zhang+ 2024b).
   * L: Word meanings from a lexicon provided in the LLM context for every word
     in the input.
     * We use the top k = 2 source matches per word with fuzzy matching, listing
@@ -703,12 +709,12 @@ From the paper:
     similarity to the input from a held-out exemplar pool, in line with previous
     work (Zhang+ 2024a).
   * LELem: (Additionally) Lexicon matches for the lemmas of input words,
-    obtained with Stanza lemmatizers (Qi+ 2020). This
+    obtained with Stanza lemmatizers (Qi+ 2020)
     * mimics a scenario where we can build a basic morphological lemmatizer
       but not more complex tools for a new language.
   * LELemM: (Additionally) Richer morphological glosses
-    including POS tags and word features from Stanza. This typically includes
-    plurality, person, case, tense-aspect-mood, and other such information.
+    including POS tags and word features from Stanza
+    * eg plurality, person, case, tense-aspect-mood, and other such information.
   * LELemMS: (Additionally) High-level syntactic profile,
     * 8 primary word order features and
     * comments about its morphosyntactic typology based on WALS features (Dryer&)
@@ -729,19 +735,21 @@ Muhammad Dehan Al Kautsar, Fajri Koto
 [paper](https://arxiv.org/abs/2510.06128)
 
 * existing methods often limit cross-lingual transfer by mapping semantically
-  equivalent words to different embeddings. For example, 'I eat rice' in English
-  and 'Ina cin shinkafa' in Hausa are typically mapped to different indices,
+  equivalent words to different embeddings
+  * eg 'I eat rice' in English and 'Ina cin shinkafa' in Hausa are 
+    typically mapped to different indices,
   * low-resource languages: shared representations could offer a great benefit.
 * We introduce parallel tokenizers, a new framework that
   first trains tokenizers monolingually and then
   aligns their vocabularies exhaustively
-  using bilingual dictionaries or word-to-word translation. This alignment
+  using bilingual dictionaries or word-to-word translation
   * a shared semantic space across languages while
     naturally improving fertility balance
 * exper: we pretrain a transformer encoder from scratch on 13 low-resource langs
   * evaluation on sentiment analysis, hate speech detection, emotion classif, &
-    sentence embedding similarity. Across all tasks, models trained with
-* parallel tokenizers outperform conventional multilingual baselines
+    sentence embedding similarity
+* parallel tokenizers outperform conventional multilingual baselines 
+  across all tasks
 
 # Tuesday, October 27 — Main Conference Day 3
 
@@ -757,23 +765,22 @@ B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers,+
   * even these numbers have been hard to evaluate due to the
     lack of reliable benchmarks and metrics
 
-* We present Omnilingual Machine Translation (OMT), the first MT system
+* We present Omnilingual Machine Translation (OMT)
   * $> 1,600$ languages. This scale is enabled by a comprehensive data strategy
   * integrates large public multilingual corpora with newly created datasets,
     including manually curated MeDLEY bitext.
 
 * two ways of specializing a Large Language model (LLM) for machine translation:
   * as a decoder-only model (OMT-LLaMA) or as
-  * a module in an encoder-decoder architecture (OMT-NLLB). Notably,
+  * a module in an encoder-decoder architecture (OMT-NLLB)
 * all our 1B to 8B parameter models
-  match or exceed the MT performance of a 70B LLM baseline, revealing spec
-* evaluation of English-to-1,600 translations further shows that
-  baseline models
+  match or exceed the MT performance of a 70B LLM baseline
+* evaluation of English-to-1,600 translations shows that baseline models
   * can interpret undersupported languages,
   * hE they frequently fail to generate them with meaningful fidelity;
   * OMT-LLaMA models substantially expand the set of languages
     for which coherent generation is feasible
-* OMT models improve in cross-lingual transfer, being
+* OMT models improve in cross-lingual transfer,
   close to solving the "understanding" part of the puzzle in MT for the 1,600
 * leaderboard (BOUQuET) and main human-created evaluation datasets (Met-BOUQuET)
   * dynamically evolving towards Omnilinguality and freely available.
@@ -785,10 +792,10 @@ Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
 
 [paper](https://arxiv.org/abs/2609.00515)
 
-* LLMs have recently demonstrated improved machine translation performance over
-  strong supervised baselines. This raises questions as to what mechanisms
+* LLMs have recently demonstrated improved machine translation performance 
+  over strong supervised baselines. This raises questions about the mechanisms
 * LLMs use massively multilingual latent feature representations to perform LM
-* we propose the interlingua hypothesis. The hypothesis holds that language
+* we propose the interlingua hypothesis
   * ie LMs translate by reading a source sentence into a latent feature space,
     and generate a target sentence by reading from the latent feature space.
 * three lines of evidence in support of this hypothesis:
@@ -799,7 +806,7 @@ Jacob Brinton, Jannik Brinkmann, Mark Crovella, Aaron Mueller
     in both monolingual tasks and translation tasks; and
   * fine-tuning on monolingual data recovers a large proportion of
     translation improvements relative to fine-tuning on aligned documents.
-* suggest new ways of understanding and improving how MT
+* suggest new ways of understanding and improving MT
 
 #### Motivation
 
@@ -827,14 +834,13 @@ Ziang Cui, Mengran Yu, Chenyu Shi, Yingxuan Shi, Tianjiao Li
 * LLMs for MT: systemic cross-lingual verbosity bias, rendering them
   ~> unsuitable for strict time-constrained tasks like subtitling and dubbing.
 * prompt-engineering approaches struggle to resolve this
-  * conflict between semantic fidelity and rigid temporal feasibility. To bridge
-    this gap,
+  * conflict between semantic fidelity and rigid temporal feasibility
 * we introduce
   * Sand-Glass, a benchmark specifically designed to evaluate
-    translation under syllable-level duration constraints. Furthermore, we
+    translation under syllable-level duration constraints
   * Homura, a reinforcement learning framework that
     explicitly optimizes the trade-off between semantic preservation and
-    temporal compliance. By employing a
+    temporal compliance
   * constrained reinforcement learning objective featuring
     a novel dynamic syllable-ratio reward, Homura effectively "tames" the output
     length.
@@ -865,16 +871,16 @@ Books and long documents, 2B / 9B
 ```
 
 ### Cognitively Decoupled Meta-Induction for Out-of-Distribution Generalization
-SAC highlight (16:36)
+#### SAC highlight (16:36)
 
 Yuqian Wang, Y Wang, C Xiao, K Xu, B He, J Tan, Z Chen, L Chen, Y Huo, M Sun
 
 [paper](https://arxiv.org/abs/2610.25749)
 
 * In-context learning (ICL)
-  tackles downstream tasks conditioned on demonstrations. This paradigm
+  tackles downstream tasks conditioned on demonstrations
   * relies heavily on neighbor-based matching between queries and
-    demonstrations, limiting out-of-distribution (OOD) performance. For better
+    demonstrations, limiting out-of-distribution (OOD) performance
 * rule-based inductive reasoning derives task-level regularities, which we term
   task-level inductive representations (TIR), before directly answering.
 * hE existing methods lack generalizable inductive ability across diverse tasks.
@@ -903,7 +909,7 @@ Tanja Baeumel, Josef van Genabith, Simon Ostermann
   what the model must resolve in a single forward pass, and therefore
   the supervision signal it receives. This
   affects both the difficulty of the learning problem and
-  affects the representations that emerge inside the model. We test this in a
+  affects the representations that emerge inside the model
 * experiment on numeric reasoning with decoupling of input and output tok
   * As the output supervision view predicts,
     differences in task performance, training dynamics, and model internals are
@@ -911,17 +917,14 @@ Tanja Baeumel, Josef van Genabith, Simon Ostermann
 * This may matter in practice, because
   models with different tokenization strategies differ
   not only in input representation but in the task they were trained on.
-* Comparisons between models may thus partly reflect task definition rather than
-  ability.
+* Comparisons between models may partly reflect task definition rather than abil
 * A survey of 120 recent `*`CL papers on numeric reasoning confirms that
   this is rarely acknowledged:
   * only about 10% report the numeric tokenization of the models they evaluate,
-  * 69% compare across tokenization, and thus supervision, regimes without
-    reporting it. While
+  * 69% compare across tokenization (ie supervision) regimes without reporting
 * prior work documents that tokenization consistently affects model performance,
   * no principled account of why.
-* We argue that framing tokenization as output supervision provides that
-  account.
+* We: framing tokenization as output supervision provides that account.
 
 ### Translating the Untrans: An Operationalizable Ontology for Untranslatability
 (12:22)
@@ -931,24 +934,25 @@ Jacob Bremerman, Brihi Joshi, Hirona Arai, Xiang Ren, Jonathan May
 [paper](https://arxiv.org/abs/2603.25489)
 
 * Untranslatability,
-  * cases where meaning cannot be directly preserved across languages, is
-    * translation cannot be reduced to one-to-one equivalence. We introduce a
-  * well-studied in linguistics but underexplored in NLP. As machine translation
-  * MT limitations increasingly concentrate in such cases, where
+  * there are cases where meaning cannot be directly preserved across
+    * translation cannot be reduced to one-to-one equivalence
+  * well-studied in linguistics but underexplored in NLP
+  * MT limitations increasingly concentrate in such cases
 * we
-  * ontology of untranslatability along with a taxonomy of compensation strategs
+  * ontology of untranslatability along with 
+  * a taxonomy of compensation strategs
   * a multilingual dataset of
     untranslatable sentences paired with strategy-based translations, enabling
     controlled analysis of translation behavior.
   * Initial human preference studies suggest that
-    translation quality depends on the strategy used, with
-    consistent preferences for outputs that include explanatory context, known
-    as the Annotation compensation strategy.
+    * translation quality depends on the strategy used, with
+    * consistent preferences for outputs that include explanatory context, 
+    * known as the Annotation compensation strategy.
 
 From the paper:
 
 * The most appropriate cStrat for an input
-  depends, in general, on both the uType and the translation context. This
+  depends, in general, on both the uType and the translation context
   * suggests that translation involves not only generating text, but also
     selecting how meaning should be conveyed
 
@@ -960,16 +964,16 @@ J Vamvas, IP Prat, A Heldstab, Dominic P. Fischer, Sina Ahmadi, Rico Sennrich
 [paper](https://arxiv.org/abs/2603.25489)
 
 * low-resource machine translation rely on
-  synthetic data based on text in higher-resource languages. We revisit this
+  synthetic data based on text in higher-resource languages
 * Romansh, a language with 6 varieties.
-* LLMs tend to confuse these varieties when translating into Romansh, but they
+* LLMs tend to confuse these varieties when translating into Romansh
 * LLMs are quite good at translating out of Romansh into a high-resrc eg `de`
-* ie the direction of data augmentation is a crucial choice. We find that
+* ie the direction of data augmentation is a crucial choice
 * synthetic translations into the higher-resource language is the superior
 * allows us to surpass a Gemini 3 Pro baseline on German-Romansh translation
-  (+23 BLEU over Gemini in the lowest-resource variety). A
-* human evaluation confirms that our experiments yield the first model that
-  * fluent translations in the individual Romansh varieties.
+  (+23 BLEU over Gemini in the lowest-resource variety)
+* human eval confirms: fluent translations in the individual Romansh varieties.
+  * the first such model 
 
 ### CoPiT: Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
   in the Traditional Script (12:30)
@@ -979,28 +983,27 @@ Burte Bayarsaikhan, Serynn Kim, Buru Chang
 [paper](https://arxiv.org/abs/2607.05849)
 
 * a digraphic language: Mongolian is written in both Cyrillic and Traditional
-  * severe imbalance in data availability. While the
+  * severe imbalance in data availability
   * Cyrillic script is relatively well-resourced,
   * the Traditional script remains extremely data-scarce and orthographic ambig
     * substantial performance degradation in direct translation.
     * eg Gemini-3-Pro-Preview API flags Traditional Mongolian script as harmful
       (App A.1, Fig 8)
 * We propose CoPiT, a cognitively motivated pivot-based translation pipeline
-  that exploits this internal resource hierarchy by
-  routing translation through the Cyrillic script. The pipeline explicitly
-  resolves script-induced ambiguity in the Traditional script before
+  * routing translation through the Cyrillic script
+  * explicitly resolves script-induced ambiguity in the Traditional script
   * three linguistically motivated steps
     * aligned with disambiguation processes used by fluent Mongolian readers:
     * vowel harmony recovery, Latin-assisted normiz, and Cyrillic normiz.
-    * result: a phonologically specified Cyrillic representation, thereby
-    * without relying on large-scale parallel corpora. Instead, it
+    * result: a phonologically specified Cyrillic representation
+    * without relying on large-scale parallel corpora
     * requires only a small amount of data for learning script conversion.
 * exper: multiple backbone models and target languages,
   * CoPiT generally improves over direct translation, with
   * substantial absolute BLEU improvements and up to 1.5-1.6x gains in COMET.
   * **These gains
     allow strong open-source models to match or outperform GPT-4.1 under
-    comparable evaluation settings.** Beyond inference-time improvements,
+    comparable evaluation settings.**
 * CoPiT enables the construction of synthetic parallel data directly from trad
   * mitigating data scarcity in realistic low-resource scenarios.
   * We release a new multi-script parallel dataset covering
@@ -1010,69 +1013,66 @@ Burte Bayarsaikhan, Serynn Kim, Buru Chang
 
 Keynote 3: Anna Korhonen
 
-* Recent evidence shows a widening global linguistic hierarchy, with thousands
+* Recent evidence shows a widening global linguistic hierarchy
 * addressing this divide requires a fundamental shift in how we approach AI
   * Instead of asking how existing models can be extended to more people,
     we should ask what communities need from AI and how it can deliver benefit
   * grounding AI in local needs and realities,
     taking account of available resources and infrastructure, and
-    judging success by what it delivers in practice. If this technology is to
+    judging success by what it delivers in practice
 
-### Cited
+### Cited by Korhonen
 
 #### Donors and Recipients: On Asymmetric Transfer Across Tasks and Languages
 with Parameter-Efficient Fine-Tuning
 
-   K Dymkiewicz, I Vulić, H Yannakoudakis, E Shapira, R Reichart, A Korhonen
+K Dymkiewicz, I Vulić, H Yannakoudakis, E Shapira, R Reichart, A Korhonen
 
-* how improvements in one task or language affect other tasks and languages
-  remains poorly understood.
+* ? how do improvements in one task or language affect other tasks and languages
 * We conduct a controlled LoRA fine-tuning study across
-  multiple open-weight LLM families and scales, using a standardised grid of jj11
-  languages and four benchmarks.
+  multiple open-weight LLM families and scales, using 
+  a standardised grid of 11 languages and four benchmarks.
   * We fine-tune each model on a single task–language source, then
-    evaluate it on all other task–language target pairs to measure transfer. We
+    evaluate it on all other task–language target pairs to measure transfer
 * three regimes:
-  * Matched-Task (Cross-Language),
-  * Cross-Task (Matched-Language), and
-  * Cross-Task (Cross-Language).
+  * Matched-Task, Cross-Language,
+  * Cross-Task, Matched-Language, and
+  * Cross-Task, Cross-Language.
 * Single-source fine-tuning yields a net positive uplift across regimes, but the
   gains are strongly asymmetric.
-  * Matched-Task, Cross-Language transfer emerges as the most effective and
-    structurally regular regime, with
-    transfer magnitude driven principally by the identity of the target language
-    rather than model architecture. We identify
+  * Matched-Task, Cross-Language transfer emerges as 
+    the most effective and structurally regular regime, with
+    * transfer magnitude driven principally by the identity of the target lang
+    * rather than model architecture
 * a stable coarse-grained hierarchy in which some/other task and lang targets
   * consistently absorb gains from diverse sources, while others
-  * remain relatively isolated. These results imply that
-* ie effective fine-tuning requires accounting for donor–recipient roles to
-  maximise downstream gains
+  * remain relatively isolated
+* ie effective fine-tuning requires accounting for donor–recipient roles 
+  to maximise downstream gains
   while limiting collateral degradation in other capabilities.
 
 #### Polyglot Teachers: Evaluating LMs for Multilingual Synthetic Data Generat
 
-               Lester James V. Miranda, Ivan Vulić, Anna Korhonen
+Lester James V. Miranda, Ivan Vulić, Anna Korhonen
 
 * Synthesizing supervised finetuning (SFT) data from language models (LMs) to
   teach smaller models multilingual tasks has become increasingly common.
 * hE teacher model selection is often ad hoc,
-  typically defaulting to the largest available option, even though such models
-  may have significant capability gaps in non-English languages. This practice
-  can result in poor-quality synthetic data and suboptimal student downstream
-  performance. In this work,
+  typically defaulting to the largest available option, even though 
+  * hE such models may have significant capability gaps in non-English
 * we systematically characterize what makes an effective multilingual teacher.
   * We combine
     intrinsic measures of data quality with extrinsic student model performance
     in a metric we call Polyglot Score.
-  * 10 LMs across 6 typologically diverse languages, generating over
-    1.4M SFT examples and training 240 student models. Our analyses reveal that
+  * 10 LMs across 6 typologically diverse languages, generating
+    1.4M+ SFT examples and training 240 student models
 * model scale alone does not significantly predict teacher effectiveness:
-  * the most effective teachers we identify are consistently smaller than the
+  * the most effective teachers we identify are consistently smaller
   * ranking is stable across student base model families.
   * data qualities such as prompt diversity, length, and response fluency
-    capture 93.3% of the variance in intrinsic data quality and predict student
-    performance. Finally, we provide
-* practical recommendations, including
+    capture 93.3% of the variance in intrinsic data quality and 
+    predict student performance
+* practical recommendations
   * matching the model families of teacher-student pairs and
   * generating responses to existing prompts or translating them from English,
 
@@ -1088,9 +1088,9 @@ Neha Srikanth, Jordan Boyd-Graber, Rachel Rudinger
 * Reveals a
   fundamental limitation in the diversity of discourse strategies used by LLMs.
 * Introduces a new ontology of discourse acts, grounded in discourse analysis,
-  * provides a framework for understanding LLM behaviour and
-    guiding the development of more appropriate responses
-    to different users and conversational goals.
+* provides a framework for understanding LLM behaviour and
+  guiding the development of more appropriate responses
+  to different users and conversational goals.
 
 Don’t Read Everything: A Curvature-Conditioned Query for Linear Attention.
 
@@ -1103,10 +1103,10 @@ to Audience and Intent
 
 Raphaël Merx, Ekaterina Vylomova, Trevor Cohn
 
-Recentering the machine translation task to what it means for a human user by
-examining evaluation beyond semantic equivalence to assess
-how well a translation serves its intended audience and purpose,
-including in challenging low-resource languages.
+* Recentering MT to what it means for a human user by examining 
+  * evaluation beyond semantic equivalence to assess 
+  * how well a translation serves its intended audience and purpose, 
+    including in challenging low-resource languages.
 
 ### Best Resource Paper
 
@@ -1146,112 +1146,178 @@ Jing Qian, B Liu, W Gu, H Ruan, C Huo, J Yang, M Deng, J Han, B Wang
 - Accelerating Constrained Decoding with Token Space Compression.
 Michael Sullivan, Alexander Koller
 
-- Delineates a clever vocabulary compression method that detects grammar-based token equivalence classes, substantially speeding up CFG-constrained decoding with Earley parsing. Makes reliable constrained generation practical in domains such as code generation and chemistry..
+- Delineates a clever vocabulary compression method that 
+  detects grammar-based token equivalence classes, 
+  substantially speeding up CFG-constrained decoding with Earley parsing. 
+  * Makes reliable constrained generation practical 
+    in domains such as code generation and chemistry.
 
 - Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems.
 Jiamu Zhang, Lingxi Zhang, Pengjun Lu, Qiyue Zhang, Yu-Neng Chuang, Zhengchen Li, Shuai Xu, Vipin Chaudhary, Hanjie Chen
 
-- Proposes a controlled evaluation that holds the surrounding system fixed and varies only each method’s structural output. Raises hard questions about evaluation on a topic of fast-growing importance..
+- Proposes a controlled evaluation that 
+  holds the surrounding system fixed and 
+  varies only each method’s structural output. 
+  * Raises hard questions about evaluation 
+    on a topic of fast-growing importance.
 
 - SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction.
 Yuting Ning, Zhehao Zhang, Yash Kumar Lal, Boyu Gou, Junyi Li, Weitong Ruan, Chentao Ye, Rahul Gupta, Diyi Yang, Yu Su, Huan Sun
 
-- Presents a timely, well-executed study of skill-based attacks on LLM agents, showing how maliciously written skills can be automatically constructed to compromise both commercial and open systems across the skill lifecycle. Highlights urgent, growing security risks in the agent ecosystem..
+- Presents a timely, well-executed study of skill-based attacks on LLM agents,
+  * maliciously written skills can be automatically constructed to compromise
+    both commercial and open systems across the skill lifecycle.  
+  * Highlights urgent, growing security risks in the agent ecosystem..
 
 - Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following.
 Yanzhao Zheng, Yuanqiang Yu, Tianze Xu, Chao Ma, Zhentao Zhang, Jihuai Zhu, Baohua Dong, Hangcheng Zhu, Ruohui Huang
 
-- Introduces a clever counterfactual credit-assignment method for on-policy distillation, providing fine-grained supervision for following complex instructions. Demonstrates strong improvements over standard distillation at fixed compute..
+- Introduces a clever counterfactual credit-assignment method 
+  for on-policy distillation, providing 
+  * fine-grained supervision for following complex instructions. Demonstrates
+  * strong improvements over standard distillation at fixed compute..
 
 - OptiMer: Optimal Distribution Vector Merging Is Better than Data Mixing for Continual Pre-Training.
 Haiyue Song, Huy Hien Vu, Masao Utiyama
 
-- Proposes a novel approach to the important problem of data mixture optimization for continual pre-training. Instead of exploring different data mixes, it optimizes the merging of model updates from individual datasets, demonstrating improved performance at substantially lower search cost..
+- a novel approach to the important problem of 
+  data mixture optimization for continual pre-training. 
+  * Instead of exploring different data mixes, it 
+  * optimizes the merging of model updates from individual datasets,
+  * improved performance at substantially lower search cost..
 
 - Can MLLMs Perceive and Describe Medical Image Quality Beyond Scores?.
 Jiyao Liu, Jinjie Wei, Wanying Qu, Chenglong Ma, Junzhi Ning, Yunheng Li, Ying Chen, Jiafan Zhang, Pengcheng Chen, Xin Gao, Ming Hu, Xin Wang, Shujian Gao, Dingkang Yang, Zhongying Deng, Jin Ye, Lihao Liu, Junjun He, Ningsheng Xu
 
-Introduces a benchmark for investigating the potential use of multimodal LLMs for medical image quality assessment through language descriptions, rather than numerical scores. The benchmark has broad coverage, it has been carefully constructed, involving experts.
+* a benchmark for investigating the potential use of 
+  multimodal LLMs for medical image quality assessment 
+  through language descriptions, rather than numerical scores. The benchmark has
+* broad coverage, it has been carefully constructed, involving experts.
 
 - Omnilingual MT: Machine Translation for 1,600 Languages.
-Belen Alastruey, Niyati Bafna, Andrea Caciolai, Kevin Heffernan, Artyom Kozhevnikov, Christophe Ropers, Eduardo Sánchez, Charles-Éric Saint-Jacques, Ioannis Tsiamas, Xiang Tony Cao, Chierh Cheng, Joe Chuang, Paul-Ambroise Duquenne, Mark Duppenthaler, Cynthia Gao, Pere-Lluís Huguet Cabot, João Maria Janeiro, Jean Maillard, Gabriel Eduardo Mejia-Gonzalez, Holger Schwenk, Edan Toledano, Arina Turkatenko, Albert Ventayol-Boada, Ravi Arikapudi, Nathanial Paul Ekberg, Rashel Moritz, Alexandre Mourachko, Surya Parimi, Mary Williamson, Shireen Yates, David Dale, Marta R. Costa-jussà
+B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers, E Sánchez, C Saint-Jacques, I Tsiamas, X Tony Cao, C Cheng, J Chuang, P Duquenne, M Duppenthaler, C Gao, P Huguet Cabot, J Maria Janeiro, J Maillard, G Eduardo Mejia-Gonzalez, H Schwenk, E Toledano, A Turkatenko, A Ventayol-Boada, R Arikapudi, N Paul Ekberg, R Moritz, A Mourachko, S Parimi, M Williamson, S Yates, D Dale, M R. Costa-jussà
 
-This paper extends machine translation to 1,600 languages, a large step toward serving the world's underrepresented languages. It also contributes new resources and reproducible pipelines that let others build smaller, task-specific MT models.
+* extends machine translation to 1,600 languages, a large step toward serving
+* contributes new resources and reproducible pipelines that 
+  * let others build smaller, task-specific MT models.
 
 - Do Benchmarks Measure the Same Thing? Evaluation-Free Benchmark Redundancy Analysis with SAE.
 Yaoning Wang, Jiahao Ying, Yubo Ma, Yu Wan, Dayiheng Liu, Yixin Cao, Yu-Gang Jiang
 
-Presents a creative approach to analysing benchmark redundancy using sparse autoencoders, connecting interpretability with benchmarking efficiency. A thorough empirical study with promising results and potential practical impact on how language models are evaluated.
+* a creative approach to analys benchmark redundancy using sparse autoencoders,
+  connecting interpretability with benchmarking efficiency. 
+* A thorough empirical study with promising results and 
+  potential practical impact on how language models are evaluated.
 
 - UReason: Benchmarking Reasoning-to-Generation Alignment in Unified Multimodal Models.
 Cheng Yang, Chufan Shi, Bo Shui, Yaokang Wu, Muzi Tao, Huijuan Wang, Ivan Yee Lee, Yong Liu, Xuezhe Ma, Taylor Berg-Kirkpatrick
 
-Introduces a carefully curated benchmark that challenges the common assumption that chain-of-thought reasoning improves image generation in unified multimodal models.
+* a carefully curated benchmark that 
+* challenges the common assumption that chain-of-thought reasoning improves
+  image generation in unified multimodal models.
 
 - In-Place Feedback: Reliable Refinement for Multi-Turn Expert-LLM Collaboration.
 Youngbin Choi, Minjong Lee, Saemi Moon, Seunghyuk Cho, Chaehyeon Chung, MoonJeong Park, Dongwoo Kim
 
-A feedback mechanism where experts directly edit an LLM's previous response and the model continues from the edited context, instead of appending corrections as a new turn. Outperforms standard multi-turn feedback with fewer tokens and expert user study shows higher satisfaction and substantially lower fatigue.
+* A feedback mechanism where 
+  experts directly edit an LLM's previous response and 
+  the model continues from the edited context, instead of appending corrections
+* Outperforms standard multi-turn feedback with fewer tokens and 
+* expert user study shows higher satisfaction and substantially lower fatigue.
 
 - D3-Gym: Constructing Real-World Verifiable Environments for Data-Driven Discovery.
 Hanane Nour Moussa, Yifei Li, Zhuoyang Li, Yankai Yang, Cheng Tang, Tianshu Zhang, Nesreen K. Ahmed, Ali Payani, Ziru Chen, Huan Sun
 
-The paper constructs executable scientific environments together with automatically generated, task-specific verification. The resulting D3-Gym contains 565 tasks from 239 real scientific repositories across four disciplines.
+* executable scientific environments together with 
+  automatically generated, task-specific verification. The resulting D3-Gym
+* 565 tasks from 239 real scientific repositories across four disciplines.
 
 - The Cost of Sounding Different: Accent Bias in Audio Language Models.
 Aruna Srivastava, Orevaoghene Ahia, Li Lucy, Ashley Christendat, Sameep Chattopadhyay, Farhan Samir, Tejumade Afonja, Valentin Hofmann, Sachin Kumar, Noah A. Smith, Yulia Tsvetkov
 
-This paper provides compelling evidence of accent-based discrimination in audio language models, demonstrating that speakers with Chinese and Nigerian accents receive systematically lower delivery scores despite identical content and accurate transcription.
+* accent-based discrimination in audio language models, demonstrating that
+* speakers with Chinese and Nigerian accents receive systematically lower
+  delivery scores despite identical content and accurate transcription.
 
 - From Token Probabilities to Semantic Constraints: Towards Declarative Probabilistic Evaluation of Language Models.
 Kyle Richardson, Cullen Anderson, Pranav Balakrishnan, Takuto Ban, Daksha Ladia, Ankita Gupta, Marisa Hudspeth
 
-Introduces a novel probabilistic framework for evaluating the logical consistency of language model predictions. Provides new evaluation tests that reveal systematic weaknesses in current models, including cases where consistency deteriorates with model scale.
+* a novel probabilistic framework 
+  for evaluating the logical consistency of LM predictions. Provides 
+* new evaluation tests that reveal systematic weaknesses in current models,
+  including cases where consistency deteriorates with model scale.
 
 - Conformal Certification of Reasoning Trace Prefixes.
 Matt Y. Cheung, Ashok Veeraraghavan, Hanjie Chen, Guha Balakrishnan
 
-Formalizes the intuitive notion of a clean reasoning prefix and proposes a method for identifying prefixes that are unlikely to contain errors at a specified risk level. Shows improved results in avoiding errors and correcting reasoning traces.
+* Formalizes the intuitive notion of a clean reasoning prefix and proposes 
+* a method for identifying prefixes that are unlikely to contain errors at a
+  specified risk level. Shows 
+* improved results in avoiding errors and correcting reasoning traces.
 
 - When Must Faithful Chain-of-Thought Fail? An Information-Theoretic Bound and Its Empirical Limits.
 Jikun Wu, Dongxin Guo, SM Yiu
 
-The paper takes an information-theoretic perspective on the topic of whether Chain of Thought reasoning can be faithful to the model's internal computation and provides clear bounds that leave a lot of room for improvement in the state of the art.
+* an information-theoretic perspective on the topic of 
+  whether Chain of Thought reasoning can be 
+  faithful to the model's internal computation and provides 
+* clear bounds that leave a lot of room for improvement in the state of the art.
 
 - Diffusion Large Language Models for Visual Speech Recognition.
 Jeong Hun Yeo, Chae Won Kim, Hyeongseop Rha, Yong Man Ro
 
-Shows that visual speech recognition (lip reading) depends heavily on bidirectional context, and on that basis adapts diffusion large language models as an alternative to autoregressive decoding. Point to new uses for diffusion models in speech and multimodal tasks.
+* visual speech recognition (lip reading) 
+  depends heavily on bidirectional context, and on that basis 
+* adapts diffusion large language models 
+  as an alternative to autoregressive decoding. 
+* Point to new uses for diffusion models in speech and multimodal tasks.
 
 - Race in the Record: Measuring Racial Signal and Model Inference in Police Arrest Narratives.
 Arka Dutta, Ted Forsyth, O. Nicholas Robertson, Ashiqur R. KhudaBukhsh
 
-Builds a rich resource for measuring racial signals in police arrest narratives. Shows that LLM processing can amplify the implicit bias in such texts. Rigorous analysis, practical methodology, and candid treatment of limitations and ethics.
+* a rich resource for measuring racial signals in police arrest narratives.
+* Shows that LLM processing can amplify the implicit bias in such texts.
+* Rigorous analysis, practical methodology, and 
+  candid treatment of limitations and ethics.
 
 - Aligned but Not Partner-Specific: How Multimodal LLM Agents Succeed in Reference Games Without Forming Conceptual Pacts.
 Po-Ya Angela Wang, Chinmaya Mishra, Asli Ozyurek, Paula Rubio-Fernandez, Esam Ghaleb
 
-This work sheds new light on how interacting multimodal agents negotiate common ground. The paper uses clever experimental controls to scrutinize claims of strong pragmatic competence in LLMs, revealing a nuanced picture and motivating a rigorous experimental approach.
+* how interacting multimodal agents negotiate common ground. The paper uses
+* clever experimental controls to scrutinize claims of strong pragmatic
+  competence in LLMs, 
+* revealing a nuanced picture and motivating a rigorous experimental approach.
 
 - Format as Nuisance: Intervention-Inspired Cross-Format Distillation for Knowledge Conflicts.
 Yue Yu, Wang Luo, Shenghao Ye, Zepeng Bao, Jiacheng Liu, Yongqi Li, Wenxin Tang, Tiejun Qian
 
-Tackles the important and timely problem of format bias in how LLMs handle knowledge conflicts. Introduces a novel approach that reduces this bias across different models, supported by carefully designed experiments and compelling empirical results.
+* format bias in how LLMs handle knowledge conflicts. Introduces 
+* a novel approach that reduces this bias across different models, supported by
+* carefully designed experiments and compelling empirical results.
 
 - Double Trouble: Bilingual Pretraining Leaves Language-Conditioned Effects in Shared-Language Representations.
 Anjishnu Mukherjee, Ziwei Zhu, Antonios Anastasopoulos
 
-Uses creative and carefully controlled experiments to show how representations of English concepts are influenced by other languages during pretraining, advancing our understanding of cross-lingual effects in LLMs.
+* creative and carefully controlled experiments to show 
+  how representations of English concepts are influenced by other languages
+  during pretraining, advancing our understanding of cross-lingual effects
 
 - Language Identification for Non-Standard Varieties: Language Varieties as Geolects on a Geodesic Grid.
 Sina Ahmadi, Rico Sennrich
 
-Introduces an innovative, linguistically grounded geospatial resource for language detection comprising 929 geolects across 20 languages. By adopting continuous geolocation-based annotation in place of static language labels, it offers an elegant, scalable solution to address representation gaps in under-resourced languages and language varieties.
+* linguistically grounded geospatial resource for language detection comprising
+  * 929 geolects across 20 languages. By adopting 
+  * continuous geolocation-based annotation in place of static language labels,
+  * an elegant, scalable solution to address representation gaps 
+    in under-resourced languages and language varieties.
 
 - Accountable AI with Grounded, Faithful, Consistent, Actionable Rationales: A Case Study in Clinical Trial Matching with VERDICT.
 Zikai Zhou, Yufei Jin, Yilin Xu, Yu-Chiang Wang, Chieh-Ju Chao, Monica Lam
 
-The paper offers a clear operational interpretation of "accountability" of automatic decision making in high-stake domains. It combines LLMs with Satisfiability Modulo Theories logic to evaluate explicit rationale grounding, and counterfactual self-consistency.
+* a clear operational interpretation of 
+  "accountability" of automatic decision making in high-stake domains. It
+* combines LLMs with Satisfiability Modulo Theories logic 
+  to evaluate explicit rationale grounding, and counterfactual self-consistency.
 
 # Wednessday, October 28 — Workshops and Tutorials 1
 
