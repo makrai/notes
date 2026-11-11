@@ -2,11 +2,11 @@
 
 # Sunday, October 25 — Main Conference Day 1
 
-## The Geometry of Low-Resource Language Representations
+## Session: 11 AM Interpretability and Analysis of Models for NLP 1
+
+### The Geometry of Low-Resource Language Representations
 
 [Francois Meyer](https://francois-meyer.github.io/)
-
-Session: 11 AM Interpretability and Analysis of Models for NLP 1
 
 [paper](https://arxiv.org/abs/2608.23358v1)
 
@@ -21,17 +21,21 @@ Session: 11 AM Interpretability and Analysis of Models for NLP 1
   successfully reduces repral degeneration during CPT.
 * For larger models, cosine similarity-based regularisation marginally improves
   performance over vanilla CPT, with
-* more consistent gains on the most challenging tasks. We establish that
+* more consistent gains on the most challenging tasks
 * the repral geo of low~ and high-resource langs in LLMs is measurably distinct,
 * targeted geo intervention is viable for improving CPT for low-resource langs.
 
 Behind the news: Actionable interpretability is a thing.
 
-## Preliminary Report on the AI Reviewing Experiment
+## [Elliott & Zhang] Preliminary Report on the AI Reviewing Experiment
 
 keynote by Desmond Elliott and Mike Zhang
 
 [official post](https://2026.emnlp.org/ai-reviewing-experiment/)
+
+* EMNLP 2026 is running an AI Reviewing Experiment to
+  collect feedback from authors about the quality of AI reviews
+  * on an opt-in basis, in which authors need to declare whether they agree to
 
 Recommendations
 
@@ -48,34 +52,33 @@ Recommendations
 ## 4 PM session
 
 ### Do Language Models Understand Implicit Logical Meaning?
-#### A Case Study
-of Scope Ambiguity Resolution in Context (16:18)
+#### A Case Study of Scope Ambiguity Resolution in Context (16:18)
 
 Jieun Kim, Suhyeon Park, Kunhui Lee, Seung-Hoon Na
 
 [paper](https://openreview.net/forum?id=XgOewsKw4h)
 
-* Kamath+ (2024) primarily evaluates scope sensitivity through output-level
-* ? whether alternative interpretations are internally repred or merely
-  reflected in shifted token probabilities.
-
-* We introduce an evidence-first, ambiguity-following diagnostic that asks a
-  * the surface string is held constant and only contextual evidence biases
-    interpretation, do transformer language models form distinct internal
-    reprations corresponding to alternative logical readings?
-* To investigate this, we present SCOPEx, extending the dataset of Kamath+
-  (2024) by systematically manipulating preceding context while keeping the
-  ambiguous sentence identical.  We further introduce
-  * passivized variants as syntactically less ambiguous controls. Using SCOPEx,
+* Kamath+ (2024) primarily evaluates scope sensitivity through output
+* ? whether alternative interpretations are internally repred
+  or merely reflected in shifted token probabilities.
+* We introduce an evidence-first, ambiguity-following diagnostic
+  * the surface string is held constant and only 
+    contextual evidence biases interpretation, 
+    ? do transformer language models form distinct internal reprations
+    corresponding to alternative logical readings?
+* To investigate this, we present SCOPEx, 
+  extending the dataset of Kamath+ (2024) by 
+  systematically manipulating preceding context while 
+  keeping the ambiguous sentence identical
+  + passivized variants as syntactically less ambiguous controls
 * we show that transformer LMs:
   * exhibit systematic scope-sensitive behavior conditioned on context, and
   * form separable hidden-state reprations for alternative scope readings
-  * This divergence emerges in later layers and causally influences downstream
-    predictions.
+  * This divergence emerges in later layers and 
+    causally influences downstream predictions.
 
 ### Gold vs Translation: (16:27)
-#### Are We Measuring Language, Knowledge, or
-Locality in Translated Benchmarks?
+#### Are We Measuring Language, Knowledge, or Locality in Translated Benchmarks?
 
 Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
 
@@ -84,22 +87,25 @@ Klaudia-Doris Thellmann, Bernhard Stadler, DS Smart, M Färber, J Lehmann
 * Translated versions of English-origin benchmarks such as MMLU are widely used
 * Do they measure the same constructs as natively created benchmarks?
   * We frame this as a *proxy validity* question and
-* we compare DeepL-translated MMLU proxies against six native benchmarks in
-  seven pairings across five Nordic and Baltic languages, evaluating 29 models
-  on each pairing.
-* measure: Beyond ranking agreement, we test *incremental* proxy validity:
-  * ie controlling for model size and language proficiency? Proxy validity
-* finding varies substantially across benchmark pairings. Applying the same
-  * find four robust effects, two marginal effects, and one null result. The
+* we compare DeepL-translated MMLU proxies against six native benchmarks
+  * seven pairings across five Nordic and Baltic languages, evaluating 
+  * 29 models on each pairing.
+* measures: 
+  * ranking agreement
+  * controlling for model size and language proficiency
+    * what we call incremental proxy validity:
+* finding varies substantially across benchmark pairings
+  * four robust effects, two marginal effects, and one null result
   * strongest evidence occurs for curriculum-overlap benchmarks such as Skolprov
-    (𝛥 R2=.128, 95% CI [.038,.253]), whereas translated MMLU provides no
-    significant incremental value for Sweden-specific factual knowledge in
-    SwedishFacts (p=.242).
-  * hE SwedishFacts is also the only open-ended benchmark, ~> we cannot fully
-    separate the effects of content and format.
-  * Overall, the results indicate a clear pattern: translated benchmarks provide
-    a better proxy when their source content overlaps with the native evaluation
-    target, while locally anchored knowledge is less reliably captured.
+    (𝛥 R2=.128, 95% CI [.038,.253]), whereas 
+  * translated MMLU provides no significant incremental value for
+    Sweden-specific factual knowledge in SwedishFacts (p=.242).
+  * hE SwedishFacts is also the only open-ended benchmark, 
+    ~> we cannot fully separate the effects of content and format.
+* Overall:
+  translated benchmarks provide a better proxy 
+  when their source content overlaps with the native evaluation target, while
+  locally anchored knowledge is less reliably captured.
 
 ### BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity
 #### of Persistent-Memory LLMs (16:46)
@@ -109,18 +115,20 @@ Sangyeon Yoon, Hyesoo Hong, Wonje Jeung, Yongil Kim, W Seo, H Yeen, A No, S Kim
 [paper](https://arxiv.org/abs/2603.16557)
 
 * LLMs increasingly store user preferences in persistent memory: personalization
-* in third-party communication settings governed by social and institutional
-  norms, some user preferences may be inappropriate to apply.
+* third-party communication settings 
+  * governed by social and institutional norms, 
+  * some user preferences may be inappropriate to apply.
 * We introduce BenchPreS, which evaluates whether memory-based user preferences
-  are appropriately applied or suppressed across communication contexts. Using
-* two complementary metrics, Misapplication Rate (MR) and Appropriate
-  Application Rate (AAR), we find
+  are appropriately applied or suppressed across communication contexts
+* two complementary metrics, 
+  Misapplication Rate (MR) and Appropriate Application Rate (AAR)
 * even frontier LLMs struggle to apply preferences context-sensitively
-  * Models with stronger preference adherence exhibit higher rates of
-    over-application, and neither reasoning capability nor selectivity-oriented
-    prompting fully resolve this issue. These results suggest that current
-  * ie LLMs treat preferences as globally enforceable rules rather than as
-    context-dependent normative signals.
+  * Models with stronger preference adherence exhibit 
+    higher rates of over-application, and 
+    neither reasoning capability nor selectivity-oriented prompting 
+    fully resolve this issue
+  * ie LLMs treat preferences as globally enforceable rules 
+    rather than as context-dependent normative signals.
 
 ### Universal-Guided Grammar Induction (17:34--37)
 
@@ -128,62 +136,68 @@ Yuan Gao, Weiwei Sun
 
 [paper](https://aclanthology.org/2026.emnlp-main.2485/)
 
-* We study whether Universal Grammar syntactic principles can serve as explicit
-  inductive biases for unsupervised grammar induction.
+* We study whether Universal Grammar syntactic principles can serve 
+  as explicit inductive biases for unsupervised grammar induction.
 * We introduce a neuro-symbolic PCFG framework that
   * converts hypothesized linguistic universals into rule schemata, and then
-  * learns rule probabilities from child-directed speech. We investigate
-  * three (alter) assumptions:
+  * learns rule probabilities from child-directed speech
+  * our three (alter) assumptions:
     * extended projection,
     * prototype theory of part-of-speech, and
-    * the final-over-final constraint. Experiments show that
+    * the final-over-final constraint
 * resu:
-  * with a much smaller hypothesis space, the universal-priored model achieves
+  * with a much smaller hypothesis space,
   * superior performance to SOTA neural grammar induction models,
   * more interpretable functional category assignment.
 
 # Monday, October 26 — Main Conference Day 2
 
-## 9 AM Session
-
 ### AfriSUD: A Dependency Treebank Collection for Eval Models on African Langs
 9:05
 
 H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
-K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, I
-Akinade, C Uchechukwu, R Mabuya, C Fellbaum
+  K Guan, A Aremu, NA Etori, U Inyang, P Nabende, DS Bamutura, A Bukula, 
+  I Akinade, C Uchechukwu, R Mabuya, C Fellbaum
 
 [paper](https://aclanthology.org/2026.emnlp-main.1896/)
 
-* African languages: linguistic diversity and global significance, underrepred
-* we: AfriSUD, the first multiling collection of synt treebanks for nine diverse
-  African languages spanning major language families and regions across
-  Sub-Saharan Africa
+* AfriSUD, the first multiling collection of synt treebanks 
+  for nine diverse African languages 
+  spanning major language families and regions across Sub-Saharan Africa
   * Surface-Syntactic Universal Dependencies (SUD) framework, community-led
   * high-quality, native-speaker-verified data
   * capture typological key features such as agglutination and tone.
-* We evaluate a range of models on AfriSUD for part-of-speech tagging and
-  dependency parsing,
+* We evaluate a range of models on AfriSUD 
+  for part-of-speech tagging and dependency parsing,
   * models: non-transformer baselines, multiling pretrained encoders, and LLMs.
 * results: significant syntax gap, models still show clear limitations
 
 #### Hardest constructions
 
-Serial verb constructions (comp:svc): which verb is the head? Rare for European
-languages.  Possessive constructions (comp:poss): African languages mark
-possession differently from English and European languages.  Underspecified
-(udep): construction with no clean linguistic equivalent.  TAM auxiliaries
-(comp:aux): tense, aspect and mood markers; models fail to distinguish function
-from content head.
+|-------------------------------------|-----------------------------------------------------|
+|Serial verb constructions (comp:svc) | Which verb is the head? Rare for European languages.|
+|Possessive constructions (comp:poss) | African languages mark possession differently from English and European languages.|
+|Underspecified (udep)                | construction with no clean linguistic equivalent.|
+|TAM auxiliaries (comp:aux)           | tense, aspect and mood markers; models fail to distinguish function from content head.|
 
 #### Gap (UAS LAS) by rel and lang
 
 100 = head is always right, label never
 
-| Relation | Language | Gap | |---|---|---| | comp:svc | hau/swa | 100 | |
-comp:svc | xho | 85 | |   |   |   | | comp:poss | hau | 100 | | comp:poss | kin
-| 86 | |   |   |   | | udep | hau | 68 | | udep | wol | 57 | |   |   |   | |
-comp:aux | xho | 44 | | comp:aux | kin | 39 | | comp:aux | nyn | 32 |
+| Relation | Language | Gap | 
+|---|---|---| 
+| comp:svc | hau/swa | 100 | 
+| comp:svc | xho | 85 | 
+|   |   |   | 
+| comp:poss | hau | 100 | 
+| comp:poss | kin | 86 | 
+|   |   |   | 
+| udep | hau | 68 | 
+| udep | wol | 57 | 
+| |   |   | 
+| comp:aux | xho | 44 | 
+| comp:aux | kin | 39 | 
+| comp:aux | nyn | 32 |
 
 ### The Multilingual FrameNet Corpus (9:36)
 
@@ -191,10 +205,11 @@ Beatrice Fiumanò, Nicolas Lazzari, Simone Paolo Ponzetto, Valentina Presutti
 
 [paper](https://arxiv.org/abs/2608.23037)
 
-* We: The Multilingual FrameNet Corpus (mFNC), that
-* extends the English Berkeley FrameNet corpus by collecting and harmonizing
-  existing language-specific corpora across +9 langs: Brazilian Portuguese,
-  Chinese, Dutch, French, German, Italian, Korean, Latvian, and Swedish.
+* We: The Multilingual FrameNet Corpus (mFNC)
+* extends the English Berkeley FrameNet corpus by 
+* collecting and harmonizing existing language-specific corpora across +9 langs:
+  * Brazilian Portuguese, Chinese, Dutch, French, German, Italian, Korean,
+    Latvian, and Swedish.
 * We train models with different architectures on the mFNC
 * consistently outperform existing SOTA Frame Semantic Parsers in
   both multilingual and cross-lingual settings
@@ -225,14 +240,16 @@ Zhongzhan Huang, Junxin Li, Guoming Ling, Yupei Lin, Shanshan Zhong, Hefeng Wu
 * hE many strong BCMs rely on large collections of per-sample evaluation results
   from numerous LLMs to identify representative samples.
 * Building such collections is also expensive unless they are already public,
-  making these methods difficult to extend to newly released benchmarks. To
-* we present ZipBench, a simple and low-cost BCM with theoretical error and
-  rank-consistency guarantees. ZipBench
-  * evaluates only a small set of anchor LLMs, synthesizes pseudo evaluation
-    results to broaden coverage, learns compact sample representations, and
+  making these methods difficult to extend to newly released benchmarks
+* we present ZipBench, a simple and low-cost BCM
+  * theoretical error and rank-consistency guarantees
+  * evaluates only a small set of anchor LLMs, 
+    synthesizes pseudo evaluation results to broaden coverage, 
+    learns compact sample representations, and 
     selects a small yet representative subset.
-* we [also] create ZipBench Zoo, a collection of compact versions of 100+
-  benchmarks spanning text, multimodal, and agent tasks
+* we [also] create ZipBench Zoo
+  * a collection of compact versions of 100+ benchmarks
+  * text, multimodal, and agent tasks
 * mean absolute errors of 0.002–0.02 and average Spearman correlations of ~0.98
 * ZipBench reduces the cost of both LLM evaluation and compact benchmark constr,
 * All data, code and checkpoints will be fully released.
@@ -246,18 +263,17 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 
 * LLMs excel at operating at scale by leveraging social media and crawled data
 * hE lack of long-term temporal structure
-  * ? contextualize semantic and normative evolution of language and to
+  * ? contextualize semantic and normative evolution of language
   * ? capture diachronic variation. To support the latter,
 * we introduce Chronoberg,
   * to support dia vari
   * a temporally structured corpus of English book texts spanning 250 years,
     curated from Project Gutenberg and enriched with
     + a variety of temporal annotations.
-* First, the edited nature of books enables us to
+* books enable us to
   * quantify lexical semantic change through time-sensitive Val-Aro-Dom analysis
   * support historically-grounded interpretation.
-* With the lexicons at hand, we demonstrate a need for modern LLM-based tools to
-  better situate their
+* With the lexicons at hand, we demonstrate a need for 
   * contextualization of sentiment and
   * detection of discriminatory language across various time-periods.
 * these tools struggle with diachronic shifts in meaning
@@ -271,9 +287,9 @@ Niharika Hegde, S Paul, L-J Frey, M Brack, K Kersting, M Mundt, P Schramowski
 ### Aligning Cultural Behaviors in Arabic Language Models via Preferences
 (11:28)
 
-Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, Z
-Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov, F
-Koto
+Junhong Liang, D Orel, S Almheiri, B Elbouardi, Y Samih, A Alhakim Freihat, 
+  Z Xie, M Ahsan, M Dehan Al Kautsar, S Ahmad, O El Herraoui, M Anwar, P Nakov,
+  F Koto
 
 [paper](https://arxiv.org/abs/2610.25362)
 
@@ -298,49 +314,47 @@ Most of the authors at _Mohamed bin Zayed University of Artificial Intelligence_
 ### IndicParam: Benchmark to evaluate LLMs on low-resource Indic Languages
 (11:29)
 
-Ayush Maheshwari, Kaushal Sharma, Vivekkumar Vasudevbhai Patel, Aditya
-Maheshwari
+Ayush Maheshwari, Kaushal Sharma, Vivekkumar Vasudevbhai Patel, 
+  Aditya Maheshwari
 
 [benchmark](https://huggingface.co/datasets/bharatgenai/IndicParam)
 
 * LLMs excel on high-resource multilingual tasks,
-* hE lowand extremely low-resource Indic languages remain sever under-evaled
+* hE low~ and extremely low-resource Indic languages remain sever under-evaled
 * We: IndicParam, a human-curated benchmark of 13,000 multiple-choice questions
   * 11 Indic languages
-    * Nepali, Gujarati, Marathi, Odia as low-resource
-    * Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani as extremely
-* evaluated 20 LLMs, both proprietary and open-weights, which reveals that even
-  the top-performing Gemini-2.5 reaches 58% average accuracy, followed by GPT-5
-  (45) and DeepSeek-3.2 (43.1).
+    * low-resrc: Nepali, Gujarati, Marathi, Odia
+    * extremely: Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani
+* evaluated 20 LLMs, both proprietary and open-weights, which reveals that 
+* even the top-performing Gemini-2.5 reaches 58% average accuracy, 
+  followed by GPT-5 (45) and DeepSeek-3.2 (43.1).
 * We additionally
-  * label each question as knowledge-oriented or purely linguistic to
-  * assess the ability of LLMs to handle diverse question formats-such as
-    list-based matching, assertion-reason pairs, and sequence ordering-alongside
-    conventional multiple-choice questions.
+  * label each question as knowledge-oriented or purely linguistic
+  * diverse question formats-such as 
+    eg list-based matching, assertion-reason pairs, and 
+    sequence ordering-alongside conventional multiple-choice questions.
 
-### Harm or Humor: A Multimodal, Multilingual Benchmark for Overt and Covert
-Harmful Humor(11:30)
+### Harm or Humor: A Multimodal, Multilingual Benchmark 
+#### for Overt and Covert Harmful Humor (11:30)
 
 Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
 
 [paper](arXiv:2603.17759)
 
-* Dark humor often relies on subtle cultural nuances and implicit cues that
+* Dark humor often relies on subtle cultural nuances and implicit cues
   * require contextual reasoning to interpret,
-  * posing safety challenges that current static benchmarks fail to capture. To
+  * posing safety challenges that current static benchmarks fail to capture
 * we: a novel multimodal, multilingual benchmark for detecting and understanding
-  harmful and offensive humor. Our manually curated
+  harmful and offensive humor, manually curated
   * 3,000 texts and 6,000 images in English and Arabic, alongside
   * 1,200 videos that span English, Arabic, and language-independent (universal)
     contexts.
 * strict annotation guideline: distinguishing Safe jokes from Harmful ones, with
-  the latter further classified into Explicit (overt) and Implicit (Covert)
-  categories to probe deep reasoning.
-* We systematically evaluate SOTA (SOTA) open and closed-source
-  models across all modalities.
-* findings reveal that closed-source models significantly outperform open-source
-  ones, with a notable difference in performance between the English and Arabic
-  languages in both
+  * Harmful further classified into Explicit (overt) and Implicit (Covert)
+* We systematically evaluate SOTA open and closed-source models 
+  across all modalities.
+* findings: closed-source models significantly outperform open-source ones, with
+  * notable difference in performance between English and Arabic in both
 
 ### Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRAs
 (11:46)
@@ -349,62 +363,62 @@ Max Ploner, Alan Akbik
 
 [paper](https://aclanthology.org/2026.findings-emnlp.2430/)
 
-* The capacity of LoRA is fundamentally governed by its rank parameter. While
+* The capacity of LoRA is fundamentally governed by its rank parameter
 * standard implementations apply a uniform rank across all layers,
-* a recent wave of variable-rank extensions: tailoring ranks to module importanc
+* a recent wave of variable-rank extensions: ranks <~ module importance
 * literature remains highly fragmented and lacks systematic cross-comparisons.
-* we propose a taxonomy grouping these approaches into four categories: Rank
-  growth, pruning, redistribution, and pre-allocation.
-* We analyze their design dimensions, theoretical expressiveness, implementation
-  complexity, and memory efficiency. Finally,
+* four categories: Rank growth, pruning, redistribution, and pre-allocation.
+* We analyze their design dimensions, theoretical expressiveness, 
+  implementation complexity, and memory efficiency
 * critical: lack of standardized evaluations and memory metrics.
 
 ### NaijaS2ST: A Multi-Accent Benchmark for Speech-to-Speech Translat Nigerian
 (12:17)
 
-Marie Maltais, Y Jeon, M Ma, SH Muhammad, I Abdulmumin, MI Mukhtar, D Abolade, J
-Okepefi, J Sewedo, DI Adelani
+Marie Maltais, Y Jeon, M Ma, SH Muhammad, I Abdulmumin, MI Mukhtar, D Abolade, 
+  J Okepefi, J Sewedo, DI Adelani
 
 [paper](https://arxiv.org/abs/2604.16287)
 
-* we introduce NaijaS2ST, a parallel speech translation dataset spanning Igbo,
-  Hausa, Yorùbá, and Nigerian Pidgin paired with English. The dataset
-* 50 hours of speech per language and captures substantial variation in speakers
-  and accents, reflecting realistic multilingual and multi-accent conditions.
-* exper: cascaded, end-to-end (E2E), and AudioLLM-based approaches across
-  bidirectional translation settings. Our
+* we introduce NaijaS2ST, a parallel speech translation dataset spanning 
+  * Igbo, Hausa, Yorùbá, and Nigerian Pidgin paired with English
+* 50 hours of speech per language and captures 
+  * substantial variation in speakers and accents
+  * ie realistic multilingual and multi-accent conditions.
+* exper: cascaded, end-to-end (E2E), and AudioLLM-based approaches 
+  across bidirectional translation settings
 * results for speech-to-
   * text: audio LLMs with few-shot examples are more effective
   * speech: the cascaded and audio LLM paradigms yield comparable performance,
-* summ: a high-quality dataset and a systematic benchmark
 
 ### ScopeBench: Evaluating Cultural Norm Scope Awareness in LLMs (12:19)
 
-Haojun Liang, Ziwei Zhao, Chenyu Li, Qiyue Zhao, Rongduomijia Mu, Yulan Shen, Yu
-Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
+Haojun Liang, Ziwei Zhao, Chenyu Li, Qiyue Zhao, Rongduomijia Mu, Yulan Shen, 
+  Yu Gu, Chen Zhang, Kairui Zhang, Yanbiao Ma, Wenxuan Wang
 
 [paper](https://ziwayzhao.github.io/assets/pdf/ScopeBench.pdf)
 
 * Safety evaluation in LLMs treats harm as culturally invariant, yet a model
-  cannot correctly apply a safety norm without knowing whose norms bind. We
+  * LLM has to know whose norms bind
 * we: ScopeBench, a benchmark
 * 3,323 norms
   * spanning 49 countries across nine cultural clusters, each annotated as
-    UNIVERSAL or SPECIFIC . We define
-  * three scope error types identically across four evaluation tasks: Scope
-    Inflation, Scope Deflation, and Scope Displacement.
-* Evaluating 21 frontier LLMs across seven model families, we surface
+    UNIVERSAL or SPECIFIC 
+  * three scope error types identically across four evaluation tasks: 
+    Scope Inflation, Scope Deflation, and Scope Displacement.
+* Evaluating 21 frontier LLMs across seven model families
 * three structural failures.
-  * the dominant error type inverts with prompt format: Scope Deflation reaches
-    70% in single-answer classification, while Scope Inflation reaches 33% when
-    each candidate culture is judged indeply
-  * scope-classification accuracy is empirically decoupled from behavioral
-    safety: the six classifiers achieving ≥ 97% Task 1 accuracy still produce
-    harmful responses to 40–42% of scope-violating statements.
-  * no model is safe in interaction, with harmful-response rates ranging from
-    29% to 51% across the cohort, excluding one model that systematically
-    refuses the task.
-* We release all data, code, and model outputs to establish cultural scope as a
+  * dominant error type (per eval granularity)
+    * Scope Deflation reaches 70% in single-answer classification, while 
+    * Scope Inflation reaches 33% when each candidate culture is judged indeply
+  * scope-classification accuracy is empirically 
+    decoupled from behavioral safety: 
+    the six classifiers achieving ≥ 97% Task 1 accuracy still produce harmful
+    responses to 40–42% of scope-violating statements.
+  * no model is safe in interaction, with 
+    harmful-response rates ranging from 29% to 51% across the cohort, 
+    excluding one model that systematically refuses the task.
+* We release all data, code, and model outputs to establish cultural scope
 
 ## [Neubig] On the Value of Open Research in LMing -- An Adversarial Dialog
 
@@ -412,20 +426,21 @@ Graham Neubig (keynote, 3:15 PM)
 
 ### From the abstract
 
-* Much research has moved out of the public eye and behind closed doors. What
-* I will present some often-cited arguments against the value of open research
-  in LLM tech, and some counter arguments for why open research is still
-  important, albeit under certain conditions. I will also try to present
-* some personal anecdotes for my own projects that I think have been successful
-  in the face of these headwinds, and may be informative for listeners who are
-  also interested in expanding the impact of their work.
+* Much research has moved out of the public eye and behind closed doors
+* I will present some 
+  * often-cited arguments against the value of open research in LLM tech, and 
+  * counter arguments for why open research is still important, albeit 
+    under certain conditions
+* some personal anecdotes for my own projects that I think have been 
+  successful in the face of these headwinds, and may be informative for
+  listeners who are also interested in expanding the impact of their work.
 
 ### Highlights from the talk
 
 * open models lag behind proprietary ones by 104 days
 * [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
-  * [The incident disclosure](https://huggingface.co/blog/security-incident-july-2026) is 4
-    pages long, the "companion technical writeup" has a 1+3-page-long TL;DR.
+  * [The incident disclosure](https://huggingface.co/blog/security-incident-july-2026) is 
+    4 pages long, the "companion technical writeup" has a 1+3-page-long TL;DR.
 
 > Some questions
 > * What impact do you want to achieve with your research?
@@ -439,12 +454,12 @@ Graham Neubig (keynote, 3:15 PM)
 ```
 Hungry Hungry Hippos: Towards Language Modeling with State Space Models
 Daniel Y. Fu*†, Tri Dao*†, Khaled K. Saab‡, Armin W. Thomas††, Atri Rudra‡‡, and
-Christopher Ré† (Stanford, University at Buffalo)
+  Christopher Ré† (Stanford, University at Buffalo)
 ```
 
 ```
-Longformer: The Long-Document Transformer Iz Beltagy*, Matthew E. Peters*, Arman
-Cohan* (Ai2)
+Longformer: The Long-Document Transformer 
+Iz Beltagy*, Matthew E. Peters*, Arman Cohan* (Ai2)
 ```
 
 ```
@@ -475,17 +490,16 @@ Collaboration w/ many institutions, formed around NanoGPT speedrun ```
 vLLM and SGLang used by many LLM providers and neolabs
 
 ```
-Efficient Memory Management for Large Language Model Serving with
-PagedAttention
+Efficient Memory Management for LLM Serving with PagedAttention
 Woosuk Kwon¹,, Zhuohan Li¹,, Siyuan Zhuang¹, Ying Sheng¹,², Lianmin Zheng¹,
   Cody Hao Yu³, Joseph E. Gonzalez¹, Hao Zhang⁴, Ion Stoica¹
 ```
 
 ```
 SGLang: Efficient Execution of Structured Language Model Programs
-Lianmin Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², C
-Kozyrakis¹, I Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹,
-among others, Berkeley and Stanford
+Lianmin Zheng²,,  Yin³, Z Xie¹, C Sun¹, J Huang⁴, C Hao Yu⁵, S Cao², 
+  C Kozyrakis¹, I Stoica², J E. Gonzalez², C Barrett¹, Y Sheng¹, among others,
+Berkeley and Stanford
 ```
 
 ## 4:45 PM session
@@ -496,33 +510,35 @@ Clara Meister, S Salhan, A Szablewski, P Lesci, P Buttery, T Pimentel
 
 [paper](https://arxiv.org/abs/2606.23566)
 
-> * Sometimes the tokenizer has all the right tokens — it just chooses the wrong
->   ones.
+> * Sometimes the tokenizer has all the right tokens 
+>   — it just chooses the wrong ones.
 > * Can we make a pretrained tokenizer more language-adaptive simply by changing
 >   how we score existing tokens, rather than changing the vocabulary itself?
 
-* Language-specific tokenizers improve tokenization quality and the downstream
-  performance of models
+* Language-specific tokenizers improve 
+  tokenization quality and the downstream performance of models
 * Using one with an existing pretrained model requires either training a new
   model from scratch or adapting the vocabulary of the pretrained one.
 * We propose Language-adaptive Maximum a Posteriori (LangMAP) Tokenization,
-  * extends the UnigramLM algorithm to the multilingual setting by replacing its
-    single distribution over the vocabulary with one distribution per language
-    over the same vocabulary. LangMAP
+  * extends the UnigramLM algorithm to the multilingual setting by 
+    replacing its single distribution over the vocabulary 
+    with one distribution per language over the same vocabulary
   * can be used to
     * train a multilingual language model from scratch, or to
-    * adapt a pretrained model's tokenizer to individual languages without
-      changing its vocabulary.
+    * adapt a pretrained model's tokenizer to individual languages 
+      without changing its vocabulary.
 * Language labels are required to estimate the per-language distributions;
 * at inference, the algorithm selects the highest-probability segmentation
-  across languages, ie, it does not need a language label. In
+  across languages, 
+  * ie, it does not need a language label
 * experiments where we adapt a pretrained tokenizer with LangMAP, we observe
-  * consistently higher morphological boundary recall than the original
-    tokenizer.
-  * In code data, it improves alignment with abstract syntax tree (AST) leaf
-    boundaries in all configurations we try.
-  * LM fine-tuning experiments: no significant differences in performance for
-    most language-task pairs.
+  * consistently higher morphological boundary recall 
+    than the original tokenizer.
+  * In code data, it 
+    improves alignment with abstract syntax tree (AST) leaf boundaries 
+    in all configurations we try
+  * LM fine-tuning experiments: no significant differences in performance 
+    for most language-task pairs.
 
 ### PolERo: Studying Political Evasion in Romanian (17:46)
 
@@ -531,30 +547,29 @@ Gabriel Stefan, Sergiu Nisioi
 * Political evasion
   * ie responses that engage with a question while withholding the requestd info
 * Recent NLP work on political evasion
-  * as a classification task using a
+  * as a classification task
   * two-level taxonomy of response clarity and fine-grained evasion strategies.
-  * limited to English, leaving open whether
+  * limited to English
   * ? the taxonomy and model behavior transfer across languages and pol contexts
 * We: PolERo, a dataset of 3,574 human-annotated question-answer pairs
   extracted from official transcripts of five Romanian presidents.
   * We evaluate multiple classification approaches on both datasets under
     matched conditions, including
-    TF-IDF baselines, fine-tuned encoder models, a proposed sliding-window
-    encoder, and zero/few-shot LLM prompting.
+    TF-IDF baselines, fine-tuned encoder models, 
+    a proposed sliding-window encoder, and zero/few-shot LLM prompting.
   * cross-lingual transfer
     through joint bilingual training and machine-translation-based data augment.
 * results: fine-tuned encoders are competitive,
   cross-lingual transfer is asymmetric, and
-  ambivalent evasion categories involving pragmatic cues remain
-  the main challenge across all model families.
+  * main challenges: ambivalent evasion categories involving pragmatic cues
 
 > Can we automatically detect political evasion?
 >
 > * Yes, but only partially:
 >   clarity (3 classes) is detected well; evasion (9 classes) remains hard
 > * LLMs achieve the best results, but
->   the multi-head encoder architecture is a competitive and far cheaper
->   alternative
+>   the multi-head encoder architecture is 
+>   a competitive and far cheaper alternative
 > * The multi-head architecture can serve as the basis
 >   for a discourse-analysis tool
 
@@ -572,7 +587,7 @@ Junhong Liang, Noor Abo Mokh, Bashar Alhafni
 * We evaluate a diverse set of open-source and proprietary LLMs across
   * multiple input representations and contextual settings. Our
 * results show reliance on surface-form similarity, with
-  weaker performance on false friends and wide variation on loanwords. We
+  weaker performance on false friends and wide variation on loanwords
   * context and scale yield model-dependent gains, while
   * original-script inputs generally perform best.
 * code and data are publicly available.
@@ -588,10 +603,10 @@ Morphological Richness
 
 Orthographic Ambiguity
 
-* Arabic uses optional diacritics (tashkeel) to specify short vowels and
-  consonant doubling
-  * without context, Arabic words can have up ~7 diacritization and ~3 lemmas
-    (core meanings)
+* Arabic uses optional diacritics (tashkeel) 
+  to specify short vowels and consonant doubling
+  * without context, Arabic words can have 
+    ~7 diacritization and ~3 lemmas (core meanings)
 * Hebrew uses Nikkud to mark consonantal skeleton
 
 ```
@@ -630,20 +645,20 @@ Niyati Bafna, Ryan Soh-Eun Shim, Barbara Plank, David Yarowsky, Hale Sirin
 
 [paper](https://arxiv.org/abs/2603.22497)
 
-* in-context language learning (ICLL) for unseen languages with LLMs, such
-  * lack of NLP tools, data resources, and researcher expertise. This means that
-  * findings on ICLL are often limited to very few languages and tasks. In light
+* in-context language learning (ICLL) for unseen languages with LLMs
+  * lack of NLP tools, data resources, and researcher expertise
+  * findings on ICLL are often limited to very few languages and tasks
 * we: Rashid, a framework for studying ICLL wherein
   * we reversibly cipher high-resource languages (HRLs) to construct truly
     unseen languages with access to a wide range of resources available for
-    HRLs, unlocking previously impossible exploration of ICLL phenomena. We use
+    HRLs, unlocking previously impossible exploration of ICLL phenomena
   * we assess current methods in the field with SOTA evaluation tools and manual
     analysis, explore the utility of potentially expensive resources in
     improving ICLL, and test ICLL strategies on rich downstream tasks beyond MT
   * The name is inspired by stories from the Arabian Nights of
     the ruler Harun al-Rashid
     disguising himself as a commoner in the streets of Baghdad
-    in order to understand the problems of the people and restore justice.
+    in order to understand the problems of the people and restore justice
 
 From the paper:
 
@@ -651,11 +666,10 @@ From the paper:
   * seven language (sub)families and three scripts in order to assess the
     effectiveness of ICLL strategies across typologically diverse scenarios:
   * German, Turkish, French, Spanish, Telugu, Hindi, Marathi, Vietnamese, Czech,
-    and Polish. These include languages with various linguistic profiles in
+    and Polish
   * morphology
     (Vietnamese is isolating, Polish is fusional, and Turkish is agglutinative)
   * syntax: Hindi is SOV while Spanish is SVO, Turkish and Marathi are free
-    unlike French
 
 #### Current approaches
 
@@ -703,12 +717,12 @@ From the paper:
       examples or lexical leakage in the grammar books.
     * We instead use a manually constructed grammatical description as a
       controlled manner of providing syntactic information to the model.
-* We use ChiKhaPo lexicons from Chang and Bafna (2025), consisting of Gatitos
-  (Jones+ 2023) and PanLex (Kamholz+ 2014). 6 See
+* We use ChiKhaPo lexicons from Chang and Bafna (2025), 
+  consisting of Gatitos (Jones+ 2023) and PanLex (Kamholz+ 2014)
   * more details about all strategies and prompts used in the paper in App C
 
 ### Parallel Tokenizers: Rethinking Vocabulary Design
-                     in Cross-Lingual Transfer of Low-Resource Languages (18:14)
+#### in Cross-Lingual Transfer of Low-Resource Languages (18:14)
 
 Muhammad Dehan Al Kautsar, Fajri Koto
 
@@ -717,17 +731,17 @@ Muhammad Dehan Al Kautsar, Fajri Koto
 * existing methods often limit cross-lingual transfer by mapping semantically
   equivalent words to different embeddings. For example, 'I eat rice' in English
   and 'Ina cin shinkafa' in Hausa are typically mapped to different indices,
-  * low-resource languages: shared representations could offer the great benefit.
+  * low-resource languages: shared representations could offer a great benefit.
 * We introduce parallel tokenizers, a new framework that
   first trains tokenizers monolingually and then
   aligns their vocabularies exhaustively
   using bilingual dictionaries or word-to-word translation. This alignment
   * a shared semantic space across languages while
-    naturally improving fertility balance. To assess their effectiveness,
+    naturally improving fertility balance
 * exper: we pretrain a transformer encoder from scratch on 13 low-resource langs
   * evaluation on sentiment analysis, hate speech detection, emotion classif, &
     sentence embedding similarity. Across all tasks, models trained with
-* parallel tokenizers outperform conventional multilingual baselines, confirming
+* parallel tokenizers outperform conventional multilingual baselines
 
 # Tuesday, October 27 — Main Conference Day 3
 
@@ -2185,35 +2199,126 @@ ME Rulli, TV Fontanari, S Petruzzi, F Alvetreti, G Strano, D Crisostomi,
     structured and interpretable properties in activation space, and
     shedding light on how such a signal is processed by these models.
 
-#### Lost in Perception: Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
+#### Lost in Perception: Isolating Perceptual and Reasoning Failures
+in Multimodal Physics and Geometry Reasoning
 
 Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ganu, Rajiv Ratn Shah
 
-Multimodal LLMs report strong performance on scientific reasoning benchmarks, yet most treat perception and reasoning as a single measurable process. We introduce a five-task diagnostic experiment across physics and geometry benchmarks that isolates failures to perception, reasoning, or both. Incorrect diagram interpretation degrades performance even on problems models solve correctly from text alone, and accuracy generally rises from raw images to human-authored captions. Recovery under corrected captions is high for some models, separating perception-blocked failures from genuine reasoning bottlenecks. Which reasoning error follows a perception failure depends on domain: physics failures resolve into calculation errors, geometry into conceptual misapplication. As a discussion beyond our core experiments, InternS1-mini, despite heavy scientific pretraining and thinking capabilities, falls below the weakest model from experiments on every task, with reasoning traces frequently truncating before completion.
+* Multimodal LLMs report strong performance on scientific reasoning benchmarks,
+* hE perception and reasoning as a single measurable process.
+* We: a five-task diagnostic experiment across physics and geometry benchmarks
+  * isolates failures to perception, reasoning, or both.
+  * Incorrect diagram interpretation degrades performance
+    even on problems models solve correctly from text alone, and
+  * accuracy generally rises from raw images to human-authored captions.
+  * Recovery under corrected captions is high for some models,
+    separating perception-blocked failures from genuine reasoning bottlenecks.
+* Which reasoning error follows a perception failure depends on domain:
+  * physics failures resolve into calculation errors,
+    geometry into conceptual misapplication. As a discussion beyond our core
+* InternS1-mini, despite heavy scientific pretraining and thinking capabilities,
+  falls below the weakest model from experiments on every task, with
+  * reasoning traces frequently truncating before completion.
 
-#### Perturbation, Not Provenance: Why Activation Steering Does Not Make a Robust Text Watermark
+#### Perturbation, Not Provenance: Why Activation Steering Does Not Make
+a Robust Text Watermark
 
 Sergey Pletenev
 
-Linear directions in the activation space of large language models causally and universally influence model behavior. This suggests that they might serve as a basis for a robust text watermark. The idea is to steer the generation along a specific semantic direction and then recover the mark by probing the activations of the re-encoded text. We test this hypothesis by conducting a series of experiments. We vary the strength of the steering and use four different directions (formality, sentiment, complexity, and a random control) across two different model families. We also test two paraphrasing attacks: a sentence-level one and a stronger paragraph-level one. The results show that activation-steering watermarks are outperformed by a standard logit-based watermark (KGW) in terms of detection accuracy. At a matched level of fluency (within 1.15 times the original text's perplexity), KGW achieved an AUC of 0.81 against a sentence-level paraphraser, while the best steering direction only reached 0.65. A stronger paragraph-level paraphraser lowered both (0.65 for KGW and 0.59 for steering), narrowing the gap but not reversing it. On Qwen, it left the two indistinguishable but at near-chance levels for both. We further showed that the detectability provided by steering was not semantic: a random direction was just as detectable as a meaningful one. The signal was independent of which layer was probed and whether a surface feature control was used. We conclude that, in this case, semantic activation does not encode a localized, recoverable semantic mark, but rather a global, content-independent shift that can only be strongly detected when the text is degraded.
+* Linear directions in the activation space of LLMs
+  causally and universally influence model behavior. This suggests that they
+  * ? as a basis for a robust text watermark. The idea is to
+  * steer the generation along a specific semantic direction and then recover
+    the mark by probing the activations of the re-encoded text. We test this
+* experiments: We vary the strength of the steering and use
+  * four directions (formality, sentiment, complexity, and a random control)
+  * two different model families. We also test
+  * two paraphrasing attacks: a sentence-level one and a stronger
+    paragraph-level one. The
+* results show that
+  activation-steering watermarks are
+  outperformed by a standard logit-based watermark (KGW)
+  in terms of detection accuracy.
+  * At a matched level of fluency (=< 1.15 times the original text's perplex),
+    KGW achieved an AUC of 0.81 against a sentence-level paraphraser, while
+    * the best steering direction only reached 0.65. A
+  * stronger paragraph-level paraphraser lowered both (0.65 for KGW and 0.59 for
+    steering), narrowing the gap but not reversing it.
+    * On Qwen, it left the two indistinguishable but
+      at near-chance levels for both. We further showed that
+* the detectability provided by steering was not semantic:
+  a random direction was just as detectable as a meaningful one. The signal was
+  * independent of
+    which layer was probed and
+    whether a surface feature control was used. We conclude that, in this case,
+* ie semantic activation does encode
+  * not a localized, recoverable semantic mark, but rather
+  * a global, content-independent shift that
+    * can only be strongly detected when the text is degraded.
 
-#### When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs
+#### When Context Misleads: Surprisal, Energy and Attention Entropy
+as Metrics of Coherence Illusions in LLMs
 
 Ece Takmaz, Nitin Kumar, Li Kloostra, Jakub Dotlacil
 
-Psycholinguistics studies show that human readers fall for coherence illusions: an incoherent discourse can seem coherent simply because a distractor matches what comes next. We investigate whether Dutch language models (6 monolingual and 4 multilingual) show the same behavior on texts that link back to earlier context with words such as 'again' and 'too'. First, we find that surprisal at the critical word tracks human acceptability judgments and eye-tracking data. Models are more surprised by incoherent continuations, but a matching distractor in the prior context reduces this surprisal. Second, attention entropy identifies heads that behave differently under coherence vs. incoherence. We find that ablating these heads shows transfer effects across experiments, suggesting a shared mechanism. Third, we introduce energy from the associative-memory literature as a metric to quantify discourse coherence. Taken together, our results show that coherence illusions arise in Dutch LLMs, with entropy and energy exposing mechanisms that operate across settings.
+* coherence illusions: an incoherent discourse can seem coherent simply because
+  a distractor matches what comes next.
+* We investigate whether Dutch LMs (6 monolingual and 4 multilingual) show the
+  same behavior on
+  * we link back to earlier context with words such as 'again' and 'too'. First,
+* surprisal at the critical word tracks human acceptability judgments and
+  eye-tracking data.
+* Models are more surprised by incoherent continuations, but
+  * hE a matching distractor in the prior context reduces this surprisal. Second,
+* attention entropy identifies heads that behave differently under coherence vs
+  incoherence. We find that
+  * ablating these heads shows transfer effects across experiments,
+    suggesting a shared mechanism.
+* Third, we introduce energy from the associative-memory literature
+  as a metric to quantify discourse coherence.
+* sum: coherence illusions arise in Dutch LLMs, with
+  * entropy and energy exposing mechanisms that operate across settings.
 
-#### Demystifying Entropy-based Selection for Chain-of-Thought Compression in Large Reasoning Models
+#### Demystifying Entropy-based Selection for Chain-of-Thought Compression
+in Large Reasoning Models
 
-Sara Candussio, Daniel Scalena, Elisabetta Fersini, Luca Bortolussi, Malvina Nissim, Gabriele Sarti
+Sara Candussio, Daniel Scalena, E Fersini, L Bortolussi, M Nissim, G Sarti
 
-Entropy-based pruning has been proposed as an effective method for compressing Chain-of-Thought (CoT) reasoning with negligible accuracy loss. We test the robustness of low- and high-entropy CoT step selection methods across various models and reasoning tasks, showing that entropy offers no advantage over random pruning in any evaluated setting. Moving from steps to tokens, we then show that retaining low-entropy tokens seems effective only on mathematical benchmarks. We find this is due to the inherently low-entropy nature of numeric tokens, which also convey semantic content in such problems. Finally, we demonstrate that patching a subset of a few CoT tokens with their original activations recovers near-perfect full-trace performance, providing causal evidence that task information is not concentrated in a small set of CoT tokens identifiable by heuristics, but rather distributed across the full reasoning chain.
+* Entropy-based pruning for compressing Chain-of-Thought (CoT) reasoning with
+  negligible accuracy loss.
+* We test the robustness of low- and high-entropy CoT step selection methods
+  across various models and reasoning tasks, showing that
+  * entropy offers no advantage over random pruning in any evaluated setting.
+* Moving from steps to tokens, we then show that
+  retaining low-entropy tokens seems effective only on mathematical benchmarks.
+* this is due to the inherently low-entropy nature of numeric tokens, which also
+  convey semantic content in such problems. Finally,
+* patching a subset of a few CoT tokens with their original activations
+  recovers near-perfect full-trace performance, providing
+  * ie causal evidence that task information is
+    * not concentrated in a small set of CoT tokens identifiable by heuristics,
+    * distributed across the full reasoning chain.
 
-####  The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations
+#### Decomposing the Attention Write by Source Detects Contextual Hallucinations
+    :The Sum Is Less Than Its Parts
 
-Steffen Castle; Maximilian Dustin Nasert; Christopher Andreas Ebert; Leonhard Hennig; Sebastian Möller; Nils Feldhus
+Steffen Castle; M Dustin Nasert; CA Ebert; L Hennig; S Möller; N Feldhus
 
-When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens and write the sum into the residual stream. We split each head’s write into these two source-specific contributions before they are summed, and find that the two sides are complementary. The context write, read out along the model’s unembedding, gives a training-free groundedness score (GroundHOG-U). The response write (its magnitude and directional agreement with the other residual writes) gives a supervised hallucination detector (GroundHOG). Across grounded-generation benchmarks and model families, GroundHOG beats prior internal-state detectors, and GroundHOG-U is the strongest training-free groundedness signal on the multi-model benchmarks.
+* When a language model answers from a retrieved document, its
+  attention heads mix evidence from
+  the context with evidence from the model’s own self-generated tokens and
+  write the sum into the residual stream.
+* We split each head’s write into these two source-specific contributions before
+  * two sides are complementary.
+  * The context write, read out along the model’s unembedding, gives a
+    training-free groundedness score (GroundHOG-U).
+  * The response write
+    (its magnitude and directional agreement with the other residual writes)
+    gives a supervised hallucination detector (GroundHOG).  Across
+* exper: grounded-generation benchmarks and model families,
+  * GroundHOG beats prior internal-state detectors, and
+  * GroundHOG-U is the strongest training-free groundedness signal on the
+    multi-model benchmarks.
 
 Notes by Makrai: I asked Steffen very peculiar questions, and he really answered
 them, instead of correcting my approch or telling the whole paper, which made me
