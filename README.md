@@ -1323,19 +1323,19 @@ Zikai Zhou, Yufei Jin, Yilin Xu, Yu-Chiang Wang, Chieh-Ju Chao, Monica Lam
 
 ## [6th Workshop on Multilingual Representation Learning (MRL) by SIGTYP](https://sigtyp.github.io/ws2026-mrl.html)
 
-* In 2025, across NAACL, ACL, EMNLP, and AACL, the MRL workshop was the only
-  workshop focusing on multilingual NLP broadly,
-  without a focus on a particular region or set of languages. MRL in part serves
-  * connect language- and region-specific multilingual work,
-  * encouraging crosslingual collaboration and knowledge sharing. This sixth
-  * The main objectives are:
-    * multilingual representation learning methods, including their
-      * theoretical formulation and practical aspects;
-    * how language typology
-      may impact the applicability of these methods and
-      motivate the development of more generic or competit methods across langs
-    * to promote collaborations in developing novel
-      software libraries and benchmarks for implementing or eval multiling modls
+* In 2025, across NAACL, ACL, EMNLP, and AACL, the MRL workshop was 
+  the only workshop focusing on multilingual NLP broadly,
+  without a focus on a particular region or set of languages
+* connect language- and region-specific multilingual work,
+* encouraging crosslingual collaboration and knowledge sharing
+* The main objectives are:
+  * multilingual representation learning methods, including their
+    * theoretical formulation and practical aspects;
+  * how language typology
+    may impact the applicability of these methods and
+    motivate the development of more generic or competit methods across langs
+  * to promote collaborations in developing novel
+    software libraries and benchmarks for implementing or eval multiling modls
 
 ### [Lhoneux] What can we do about English-centric NLP?
 
@@ -1390,16 +1390,17 @@ Jelmagyarázat (az eredeti felirat alapján):
 - Judge?: ✅ = LLM-bírálatú benchmark.
 - Rank: népszerűség a modellkiadásokban (0–3 csillag), see Sec B of the paper
 
-### [Jumelet] Towards Multilingual Lingu Evaluation at Scale
+### [Jumelet] Towards Multilingual Linguistic Evaluation at Scale
 
 Invited talk by Jaap Jumelet, Uni Groningen, 9:50
 
-Imrove understanding of model behaviour using linguistic concepts
-Imrove understanding of linguistic concepts using model behaviour?
+Imrove understanding of 
+  * model behaviour using linguistic concepts
+  * linguistic concepts using model behaviour?
 
 #### Mentioned: ACL 2027 Theme Track: [**Homogenization** and knowledge collapse in LLMs](https://2027.aclweb.org/calls/main/#acl-2027-theme-track-homogenization-and-knowledge-collapse-in-llms)
 
-* LLMs tend to collapse diversity in their outputs. As LLMs become fundamental
+* LLMs tend to collapse diversity in their outputs
   * from rich, human-driven discourse toward what has been called
     a “generative monoculture” where
     current training and alignment practices may inadvertently
@@ -1443,15 +1444,16 @@ Imrove understanding of linguistic concepts using model behaviour?
   a Thematic Paper Award in addition to other categories of awards.
 
 #### MultiBLiMP 1.0: A Massively Multilingual Benchmark of Ling Minimal Pairs
+
 Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 
 [paper](https://arxiv.org/abs/2504.02768)
 [dataset](https://huggingface.co/datasets/jumelet/multiblimp)
 
-* 101 languages and 2 types of subject-verb agreement, containing more than
-  128,000 minimal pairs. Our minimal pairs are
-* created using a fully automated pipeline, leveraging the large-scale
-  Universal Dependencies and UniMorph. MultiBLiMP 1.0 evaluates abilities of
+* 101 languages and 2 types of subject-verb agreement, containing 
+  128,000 minimal pairs
+* pairs created using a fully automated pipeline, leveraging the large-scale
+  Universal Dependencies and UniMorph
 
 - Recently many language-specific benchmarks have been introduced:
   - Dutch: BLiMP-NL
@@ -1463,39 +1465,40 @@ Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza
 
 ##### Goldfish Monolingual Models (Chang+ 2024)
 
-* The aforementioned LLMs are all multilingual, ie trained on a mixture of
-  different languages. To place their performance into perspective, we also
+* The aforementioned LLMs are all multilingual, ie trained on a mix of langs. 
+* To place their performance into perspective, we also
   evaluate the Goldfish suite (Chang+ 2024b),
-* a collection of mono- lingual models each trained on the same amount of data.
-  This allows us to control for language frequency differences, which is not
-  possible for the pre-trained LLMs. In our experiments
-  * we consider the models trained on 1GB of data, or
-    the full models for languages with less than 1GB available data.
-* All models have 500M parameters. Goldfish models exist for 70 out of the 101
-  languages in MultiBLiMP.
+* a collection of monolingual models each trained on the same amount of data.
+  * allows us to control for language frequency differences, which is 
+    * not possible for the pre-trained LLMs
+  * we consider the models trained on 1GB of data, 
+    * or the full models for languages with less than 1GB available data.
+* All models have 500M parameters
+* Goldfish models exist for 70 out of the 101 languages in MultiBLiMP.
 
 ### Poster session, 11:00
 
-#### ScAndinavian GenerAl embedding model (SAGA), as of writing (2026-05-04) it
+#### ScAndinavian GenerAl embedding model (SAGA)
 
-* ranked 9th on MTEB for scandinavian tasks and is currently
+* ranked 9th on MTEB for scandinavian tasks and
 * the highest ranked model under 1.5 billion parameters.
 * initialized from a ModernBert architecture and trained on approximately
   250 million semantically related pairs and then fine-tuned.
-* not optimized for any particular task, the main goal was to create a small,
+* not optimized for any particular task, the main goal was size effic
 
-#### A Research Compass for the Acquisition of Thousands of Low-Resource Langs
-by AI Models via Form-Focused Study and Usage-Based Linguistic Immersion
+#### A Research Compass for 
+##### the Acquisition of Thousands of Low-Resource Langs by AI Models 
+###### via Form-Focused Study and Usage-Based Linguistic Immersion
 
 Juan Antonio Pérez-Ortiz
 
-* This position paper provides a multifaceted perspective on the challenge of
+* This position paper provides a multifaceted perspective on the challenge
 * 1000s of langs lack the text necess for data-intensive, imitation-based train
-* two complementary emerging learning paths which are currently underexplored in
+* two complementary emerging learning paths which are currently underexplored
   * explicit instruction-guided learning from linguistic resources and
   * implicit acquisition in natural immersion contexts.
-* By synthesizing current advances and identifying 40 open problems, this study
-  defines an interdisciplinary research compass for the coming years.
+* we synthesize current advances and identify 40 open problems, this study
+* an interdisciplinary research compass for the coming years.
 
 #### High-fertility languages reason in compressed, load-bearing chains
 
@@ -1529,19 +1532,19 @@ Albrave Raphael Albayda, Angelica Anne Araneta Naguio
 
 Elif Özge Yılmaz, Melike Uysal, Cagri Toraman
 
-* mixing just two languages from the very beginning of training remain
+* mixing just two languages from the very beginning of training
 * a capacity-constrained Gemma-4-derived 181M-parameter architecture trained on
   a 10 billion token budget,
 * we compare a purely Turkish baseline against
-  mixtures containing 10%, 20%, or 30% of an auxiliary language. We test
+  mixtures containing 10%, 20%, or 30% of an auxiliary language
 * four languages to isolate different linguistic relationships:
   English (a global bridge language), Azerbaijani (closely related sibling),
   Finnish (morphological peer), and French (lexical pivot).
 * findings:
   adding any secondary language hurts fluency on structurally uniform text.
   * hE Azerbaijani cuts perplexity on creative (-45%) and literary (-51%) text
-    relative to the monolingual baseline. At
-  * higher mixture ratios, Azerbaijani outperforms the other languages
+    relative to the monolingual baseline
+  * higher mixture ratios: Azerbaijani outperforms the other languages
 
 #### Cross-Lingual Transfer of Evil Vectors Is Directionally Asymmetric
 
@@ -1550,54 +1553,54 @@ Juann Kim, Kang MinKu
 * Persona vectors are linear directions
   in the residual-stream activations of LLMs that
   encode behavioral traits and enable fine-grained control over model behavior.
-* Among them, the evil persona vector is particularly relevant to understanding
-  harmful behavior, jailbreak vulnerabilities, and the unlearning of harmful
-  knowledge. Yet whether this vector reflects a genuinely
-* ? cross-lingual concept, rather than an artifact of its extraction language,
-* We: a systematic evil-vector transfer study across
+* the evil persona vector is particularly relevant to understanding 
+  harmful behavior, jailbreak vulnerabilities, and 
+  the unlearning of harmful knowledge
+* ? cross-lingual concept or an artifact of its extraction language
+* We: a systematic evil-vector transfer study across languages
   * languages:
     two high-resource languages (English, Spanish) and
     two low-resource languages (Swahili, Telugu) on
-  * four open-source instruction-tuned LLMs, and
+  * four open-source instruction-tuned LLMs
 * finding: transfer is directionally asymmetric.
   * Evil vectors are harder to obtain reliably from low-resource languages, and
     the resulting vectors are largely ineffective at steering,
-    even within their own language. In contrast,
-  * vectors extracted from high-resource languages transfer effectively to
-    low-resource inputs while largely preserving general knowledge, as
-    * measured by MMLU.
+    even within their own language
+  * vectors extracted from high-resource languages 
+    transfer effectively to low-resource inputs 
+    * largely preserving general knowledge, as measured by MMLU.
 * Geometric analysis further supports this pattern:
   * evil vectors from the two high-resource languages are closely aligned,
   * low-resource vectors align only weakly with this shared direction.
 * ie a shared cross-lingual evil direction exists, and it can be transfered
 
-#### When Multilingual Embeddings Collapse:
-       Representation Failure and Metric (Un)reliability for Hausa and Fongbe MT
+#### When Multilingual Embeddings Collapse: for Hausa and Fongbe MT
+...and Metric (Un)reliability...
 
 Mahounan Pericles Adjovi, Roald Eiselen, Prasenjit Mitra
 
 * Neural evaluation metrics for machine translation
   inherit their behaviour from the multilingual encoders beneath them, yet
-  how those encoders represent low-resource African languages is rarely
+  * how do those encoders represent low-resource African languages?
 * We evaluate four large language models on
   English-to-Hausa and English-to-Fongbe translation across scales
   from 500 to 10,000 sentences,
   * we validate automatic metrics against native-speaker judgment, and then
   * we probe the multilingual representation space that neural metrics depend on.
-* finding:
+* finding (Representation collapse):
   XLM-R assigns near-identical vectors to semantically different texts in both
   languages (within-language cosine similarity above 0.99), ~>
   * BERTScore cannot separate systems of visibly different quality, and
-  * COMET produces a ranking anomaly for Fongbe. This representation collapse,
-* agreement between metrics and human ranks is language-dependent, that
-  * stable system rankings require at least 2,500 sentences, and that
-  * inclusion of a language in an encoder’s pretraining set does not guarantee
-    usable representations. We frame these results as evidence that
+  * COMET produces a ranking anomaly for Fongbe. 
+* agreement between metrics and human ranks is language-dependent
+  * stable system rankings require at least 2,500 sentences
+  * inclusion of a language in an encoder’s pretraining set does 
+    not guarantee usable representations
 * multilingual evaluation must be validated at the representation level
 
 Makrai's notes: I talked to the 1st author, Pericles. Now he lives in Sweden,
 his mother tongue is Fongbe. He is learning to read and write Fongbe, which is
-not taught in the school, but it is difficult for him, because the orthography
+not taught in the school, and it is difficult for him, because the orthography
 marks tone, but tones in Pericles' mother tongue differs from those in the
 variant on which the orthography is based.
 
@@ -1607,10 +1610,10 @@ Yuxian He
 
 [paper](https://aclanthology.org/2026.finnlp-1.7/)
 
-* LLMs as informal investment advisors, a role that
-  * for human professionals, suitability obligations: advice must match the
-    customer’s investment profile (FINRA Rule 2111; SEC Regulation Best
-    Interest, 2019).
+* LLMs as informal investment advisors
+  * for human professionals, suitability obligations: 
+    advice must match the customer’s investment profile 
+    (FINRA Rule 2111; SEC Regulation Best Interest, 2019)
 * Whether LLM advice is personalized in this normative sense—
   * or merely stereotyped—is unknown.
 * We audit six model arms from five vendors (2,396 unique single-turn queries)
@@ -1621,12 +1624,12 @@ Yuxian He
   * low conscientiousness raises recommended volatility by 10–25% and
     * increases portfolio beta by 40–96%, while
   * capital size is largely ignored—a suitability inversion.
-  * The sign of the neuroticism effect splits across vendors, indicating that
+  * The sign of the neuroticism effect splits across vendors
     * ie models have internalized different stereotypes
       rather than any consistent normative principle.
   * Removing the stated risk preference amplifies persona spread by 55%, a
     dose-style signature of stereotype filling.
-  * Rationale texts show personas are explicitly mirrored in reasoning, yet
+  * Rationale texts show personas are explicitly mirrored in reasoning
     * hE this language accounts for under 15% of the behavioral effect:
   * mech
     * the persona effect resides in portfolio selection
@@ -1634,7 +1637,8 @@ Yuxian He
 * We release all logs, prompts, and code
 
 #### Grammatist at WMT 2026 General MT Task:
-An Agentic LLM Framework for Machine Translation with Explicit Linguistic Knowledge
+An Agentic LLM Framework for Machine Translation 
+##### with Explicit Linguistic Knowledge
 
 Samuel Frontull, Jean Maillard, Christopher Haberland, Ruth Videsott, S Lusito
 
@@ -1642,24 +1646,23 @@ Samuel Frontull, Jean Maillard, Christopher Haberland, Ruth Videsott, S Lusito
 
 * We describe Grammatist, our submission
   to the unconstrained track of the WMT 2026 General Machine Translation Task,
-  * developed in direct collaboration with community members of two regional
-    languages of Italy, Ladin and Ligurian.
+  * developed in direct collaboration with community members of 
+    two regional languages of Italy, Ladin and Ligurian.
 * Ladin and Ligurian represent challenging scenarios for machine translation
   * limited resources for conventional data-driven approaches.
   * nL linguistic documentation:
     both languages are extensively documented in dictionaries and grammar books,
-    * valuable knowledge but are not readily exploitable by conventional MT
-* we make this information available to an LLM at inference time. The framework
-  * agentic and model-agnostic: it
-    * dynamically consults dictionaries and grammar books during translation to
+    * valuable knowledge but not readily exploitable by conventional MT
+* we make this information available to an LLM at inference time
+  * agentic and model-agnostic framework
+    * dynamically consults dictionaries and grammar books during translation
 * For the WMT 2026 task, we apply Grammatist to structured document-level MT
   from English into Ligurian and Ladin
 
-### [Shared task](https://mrlbenchmarks.github.io/) + presentation, 14:40
+### [Multiling Rerr Learn Shared task](https://mrlbenchmarks.github.io/) 14:40
 
 * Following the structure of last year's shared task,
-this year's MRL Workshop Shared Task to
-* create a community-written multilingual benchmark. The task will be
+* create a community-written multilingual benchmark
 * question answering, similar to ECLeKTic.
 * This year's task will be multimodal and will include audio and text formats.
 
@@ -1670,16 +1673,16 @@ this year's MRL Workshop Shared Task to
 * constructed by hand by 350+ researchers from 65+ countries around the world.
   * 141 language varieties, 5 continents, 19 language families, and 24 scripts
   * non-parallel split: 50%+ of examples reference local foods, customs,
-    traditions, or other culturally-specific elements. In the
+    traditions, or other culturally-specific elements
   * parallel split, we translate more "culturally agnostic" commonsense
-    reasoning questions into 131 language varieties, for direct cross-lingual
-  * In both splits, all examples have been verified by native speakers of the
-* We find that SOTA LLMs perform well on Global PIQA in aggregate, but they
-  * weaker performance in lower-resource languages (eg up to a 68% accuracy gap
-    between languages in the parallel split). Global PIQA highlights that
-  * in many languages and cultures, everyday knowl remains an area for improv in
+    reasoning questions into 131 language varieties, for cross-lingual compar
+  * In both splits, all examples have been verified by native speakers
+* SOTA LLMs perform well on Global PIQA in aggregate, hE
+  * weaker performance in lower-resource languages 
+    (eg up to a 68% accuracy gap between languages in the parallel split)
+  * in many languages and cultures, everyday knowl remains an area for improv
   * so do complex reasoning and expert knowledge.
-* But Global PIQA is saturated.
+* other talk: Global PIQA is saturated
 
 #### Honorable Mentions
 
@@ -1703,10 +1706,10 @@ Tong Qi, Jingyu Wu, Youbing Yin, Spencer Hong, Daben Liu, Erin Babinsky
 
 [paper](https://aclanthology.org/2026.findings-emnlp.1254/)
 
-* Traditional Retrieval-Augmented Generation (RAG) systems score each passage
-  independently against the query, assembling
-  * context sets that may be collectively incoherent.
-* We introduce Coherence-Aware Graph Encoding (CAGE), a reranking framework that
+* Traditional Retrieval-Augmented Generation (RAG) systems 
+  score each passage independently against the query
+  * context sets may be collectively incoherent
+* We introduce Coherence-Aware Graph Encoding (CAGE), a reranking framework
   * "between-chunk coherence" across four dimensions: Intra-Domain Relevance,
     Noise Resistance, Informational Bonding, and Factual Consistency.
   * directed heterogeneous entity graphs,
@@ -1714,9 +1717,9 @@ Tong Qi, Jingyu Wu, Youbing Yin, Spencer Hong, Daben Liu, Erin Babinsky
   * encodes structural patterns through a Relational Graph CNN
   * fuses inter-chunk coherence with query relevance for final ranking.
 * Evaluated across four multi-hop benchmarks, CAGE
-  matches or outperforms strong baselines including monoT5 in Recall@5 on
-  bridge-dominated datasets and
-  consistently improves downstream Exact Match, demonstrating that
+  * matches or outperforms strong baselines including monoT5 in Recall@5 on
+    bridge-dominated datasets and
+  * consistently improves downstream Exact Match
 * ie structurally coherent context yields more precise answers
   even when retrieval recall is comparable or lower.
 
@@ -1736,21 +1739,21 @@ Invited talk by Alham Fikri Aji (MBZUAI), 16:00
 
 | Benchmark | Type / TLDR | Language Coverage | Collection |
 |---|---|---|---|
-| SalesLLM | Goal-directed sales dialogue | English, Chinese | LLM scenarios; human filtering. English conversion unspecified. |
-| CultureConverse | Culture-aware assistance | 10: EN, ZH, MS, ID, JA, KO, TA, FIL, TH, VI | LLM generation in each language; human validation subset. |
-| SPIRE | Humanities research / evidence | EN / ZH questions; Classical ZH / Latin evidence | Human extraction from published scholarship and primary sources. |
-| DLawBench | Multi-turn legal consultation | English, Chinese | LLM drafts + legal-expert correction and rubric authoring. |
-| APPSim-Bench | Mobile GUI task execution | English, Chinese | Human task collection; agent-coded, human-checked app simulators. |
-| SEATauBench | Tool-agent-user workflows | ZH, VI, TH, ID, FIL (+ English reference) | Gemini 3.1 Flash Lite translation + native-speaker audit. |
-| TimlMemBench | Long-term memory governance | English, Chinese | Synthetic, human-corrected; generator and translation route unspecified. |
-| MTGBench | Multi-turn reasoning games | English, Russian | Native procedural + LLM generation; selected human validation. |
-| UniGUI-Bench | GUI execution + diagnosis | English, Chinese | Human GUI traces + LLM diagnostics; manual checking. |
+| SalesLLM | Goal-directed sales dialogue               | English, Chinese                               | LLM scenarios; human filtering. English conversion unspecified. |
+| CultureConverse | Culture-aware assistance            | 10: EN, ZH, MS, ID, JA, KO, TA, FIL, TH, VI    | LLM generation in each language; human validation subset. |
+| SPIRE | Humanities research / evidence                | EN / ZH questions; Classical ZH / Latin evid   | Human extraction from published scholarship and primary sources. |
+| DLawBench | Multi-turn legal consultation             | English, Chinese                               | LLM drafts + legal-expert correction and rubric authoring. |
+| APPSim-Bench | Mobile GUI task execution              | English, Chinese                               | Human task collection; agent-coded, human-checked app simulators. |
+| SEATauBench | Tool-agent-user workflows               | ZH, VI, TH, ID, FIL (+ English reference)      | Gemini 3.1 Flash Lite translation + native-speaker audit. |
+| TimlMemBench | Long-term memory governance            | English, Chinese                               | Synthetic, human-corrected; generator and translation route unspecified. |
+| MTGBench | Multi-turn reasoning games                 | English, Russian                               | Native procedural + LLM generation; selected human validation. |
+| UniGUI-Bench | GUI execution + diagnosis              | English, Chinese                               | Human GUI traces + LLM diagnostics; manual checking. |
 | Meeseeks-Multilingual | Constraint following + repair | 11: EN, ZH, JA, KO, ES, FR, DE, PT, RU, AR, ID | Native human regional constraints; no LLM generation / translation. |
-| EvoBrowseComp | Fresh-web search / browsing | English, Chinese | LLM web-QA synthesis; human audit of 200 items per language. |
+| EvoBrowseComp | Fresh-web search / browsing           | English, Chinese                               | LLM web-QA synthesis; human audit of 200 items per language. |
 
 #### Multilingual
 
-* SEACrowd - Advancing AI for Southeast Asia | SEACrowd - AI ...
+* SEACrowd -- Advancing AI for Southeast Asia | SEACrowd - AI ...
   * A grassroots-led community of researchers from Southeast Asia advancing
     Artificial Intelligence tools, resources, and capabilities for the region.
   * SEA-VL
@@ -1762,7 +1765,7 @@ Invited talk by Alham Fikri Aji (MBZUAI), 16:00
 
 * [Last Translation Benchmark](https://last-translation-benchmark.vilda.net)
   * a dataset of inputs (text, image, audio, video) that demonstrably break
-    state-of-the-art translation ...
+    SOTA translation
 * HyperBrowseComp
 * upcoming: UltraBrowseComp
 
@@ -1772,11 +1775,11 @@ Prosper Arineitwe Asiimwe, Francois Meyer, Jan Buys
 
 * Cross-lingual zero-shot transfer and multilingual fine-tuning for low-rsrc NER
 * in the absence of target language benchmarks, it is unclear
-  which auxiliary language selection strategy leads to the best transfer. We
+  which auxiliary language selection strategy leads to the best transfer
 * we: RunyaNER, the first publicly available NER benchmark for RunyaNER
-  * RunyaNER: East African language Runyankore, and use it to investigate the
-* semi-automated pipeline and fully manually verified, RunyaNER contains over
-  * 237k annotated words across 30k sentences.
+  * RunyaNER: East African language Runyankore
+* semi-automated pipeline and fully manually verified
+* 237k annotated words across 30k sentences.
 * We benchmark pretrained models on RunyaNER, establishing that
   our dataset is of sufficient quality and size
   to produce effective Runyankore NER models.
@@ -1799,18 +1802,19 @@ Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan R
 
 [paper](https://aclanthology.org/2025.emnlp-main.1669/)
 
-* ? impact of preference tuning on the ability to handle culturally diverse
-  queries remains understudied. In this paper, we systematically
+* ? impact of preference tuning 
+  on the ability to handle culturally diverse queries remains understudied
 * we analyze how native human cultural preferences can be incorporated into the
   preference learning process to train more culturally aware LMs.
 * We introduce CARE, a multilingual resource containing
   * 3,490 culturally specific questions and
-  * 31.7k responses with human judgments. We demonstrate how
+  * 31.7k responses with human judgments
 * a modest amount of high-quality native preferences improves cultural awareness
-  across various LMs, outperforming larger generic preference data.
+  across various LMs, outperforming larger generic preference data
 * models with stronger initial cultural performance benefit more from alignment,
   leading to gaps among models developed in different regions with varying
-  access to culturally relevant data. CARE is [publicly available](https://github.com/Guochry/CARE).
+  access to culturally relevant data
+* [publicly available](https://github.com/Guochry/CARE).
 
 # Thursday, October 29 — Workshops and Tutorials 2
 
