@@ -2173,7 +2173,7 @@ Michal Spiegel, Michal Štefánik, Marek Kadlčík, V Ruscio, M Fajčík, J Kuch
 * We make our benchmark and code publicly available.
 
 ### 14:00 [Hahn] Discovering Interpretable Algorithms
-by Decompiling Transformers to RASP
+#### by Decompiling Transformers to RASP
 
 Xinting Huang, Aleksandra Bakalova, Satwik Bhattamishra, William Merrill, Michael Hahn
 
@@ -2204,7 +2204,7 @@ Invited talk by Michael Hahn
 
 ### 14:45 Oral presentations 2, the Best papers
 
-* Probing for Knowledge Attribution in Large Language Models
+#### Probing for Knowledge Attribution in Large Language Models
 
 Ivo Brink, Alexander Boer, Dennis Ulmer
 
@@ -2212,7 +2212,7 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
   * faithfulness violations, where the model misuses provided context, and
   * factuality violations, where answers reflect errors in internal knowledge.
 * Proper mitigation depends on knowing which source drives each answer.
-* We study contributive attribution, ie
+* We study contributive attribution
   * contrib attrib: the classif of the dominant knowl source behind each output
   * a simple linear probe trained on hidden representations can reliably
     identify it.
@@ -2229,30 +2229,29 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
 * correct attribution does not guarantee correct answers, pointing to the
   need for broader detection frameworks
 
-* Probing Without Labels: Contrast-only Reproductions of Interpretability Results
+#### Probing Without Labels: Contrast-only Reproductions of Interpret Results
 
 Stefan F. Schouten, Peter Bloem
 
 * Contrastive interpretability methods use
   * pairs (or tuples) of inputs whose elements differ in minimal but controlled
     ways.
-* Contrast-Consistent Search (CCS) is one such method that can
-  identify whether LMs encode binary features, such as sentence truth, in their
-  internal activations. One advantage is that this
+* eg Contrast-Consistent Search (CCS) identif whether LMs encode bin features,
+  in their internal activations
+  * bin feat eg sentence truth, 
   * requires no labels ie no assumption that internal activations agree with
-    those labels, as is the case for supervised methods. In this work, we
+    those labels, as is the case for supervised methods
 * we
   * reproduce results previously obtained with CCS,
   * better understand CCS’s objective,
   * propose Tuple-Contrastive PCA (tcPCA), a method with closed-form solutions,
-    * a spiritual successor of CCS
-    * wider applicability than CCS by:
-      * allowing for n-ary rather than just binary variables; and,
-      * findings contrastive subspaces instead of directions. See
+  * wider applicability than CCS
+    * allowing for n-ary rather than just binary variables; and,
+    * findings contrastive subspaces instead of directions
 
 [code and interactive figures](https://contrast.stefanfs.me)
 
-* Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?
+#### Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?
 
 Pedro Lobato Ferreira, Wilker Aziz, Ivan Titov
 
@@ -2305,7 +2304,7 @@ ME Rulli, TV Fontanari, S Petruzzi, F Alvetreti, G Strano, D Crisostomi,
     shedding light on how such a signal is processed by these models.
 
 #### Lost in Perception: Isolating Perceptual and Reasoning Failures
-in Multimodal Physics and Geometry Reasoning
+##### in Multimodal Physics and Geometry Reasoning
 
 Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ganu, Rajiv Ratn Shah
 
@@ -2325,67 +2324,65 @@ Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ga
   falls below the weakest model from experiments on every task, with
   * reasoning traces frequently truncating before completion.
 
-#### Perturbation, Not Provenance: Why Activation Steering Does Not Make
-a Robust Text Watermark
+#### Perturbation, Not Provenance: Why Activat Steering Not Robust Text Watermark
 
 Sergey Pletenev
 
 * Linear directions in the activation space of LLMs
-  causally and universally influence model behavior. This suggests that they
-  * ? as a basis for a robust text watermark. The idea is to
+  causally and universally influence model behavior
+  * ? a basis for a robust text watermark
   * steer the generation along a specific semantic direction and then recover
-    the mark by probing the activations of the re-encoded text. We test this
+    the mark by probing the activations of the re-encoded text
 * experiments: We vary the strength of the steering and use
   * four directions (formality, sentiment, complexity, and a random control)
   * two different model families. We also test
-  * two paraphrasing attacks: a sentence-level one and a stronger
-    paragraph-level one. The
+  * two paraphrasing attacks: 
+    a sentence-level one and a stronger paragraph-level one
 * results show that
   activation-steering watermarks are
   outperformed by a standard logit-based watermark (KGW)
   in terms of detection accuracy.
   * At a matched level of fluency (=< 1.15 times the original text's perplex),
     KGW achieved an AUC of 0.81 against a sentence-level paraphraser, while
-    * the best steering direction only reached 0.65. A
+    * the best steering direction only reached 0.65
   * stronger paragraph-level paraphraser lowered both (0.65 for KGW and 0.59 for
     steering), narrowing the gap but not reversing it.
     * On Qwen, it left the two indistinguishable but
-      at near-chance levels for both. We further showed that
+      at near-chance levels for both
 * the detectability provided by steering was not semantic:
-  a random direction was just as detectable as a meaningful one. The signal was
+  a random direction was just as detectable as a meaningful one
   * independent of
     which layer was probed and
-    whether a surface feature control was used. We conclude that, in this case,
-* ie semantic activation does encode
+    whether a surface feature control was used
+* ie semantic activation is
   * not a localized, recoverable semantic mark, but rather
   * a global, content-independent shift that
     * can only be strongly detected when the text is degraded.
 
 #### When Context Misleads: Surprisal, Energy and Attention Entropy
-as Metrics of Coherence Illusions in LLMs
+##### as Metrics of Coherence Illusions in LLMs
 
 Ece Takmaz, Nitin Kumar, Li Kloostra, Jakub Dotlacil
 
 * coherence illusions: an incoherent discourse can seem coherent simply because
   a distractor matches what comes next.
-* We investigate whether Dutch LMs (6 monolingual and 4 multilingual) show the
-  same behavior on
-  * we link back to earlier context with words such as 'again' and 'too'. First,
+* We investig whether Dutch LMs (6 monoling and 4 multiling) show the same behav
+  * we link back to earlier context with words such as 'again' and 'too'
 * surprisal at the critical word tracks human acceptability judgments and
   eye-tracking data.
-* Models are more surprised by incoherent continuations, but
-  * hE a matching distractor in the prior context reduces this surprisal. Second,
+* Models are more surprised by incoherent continuations
+  * hE a matching distractor in the prior context reduces this surprisal
 * attention entropy identifies heads that behave differently under coherence vs
-  incoherence. We find that
+  incoherence
   * ablating these heads shows transfer effects across experiments,
     suggesting a shared mechanism.
-* Third, we introduce energy from the associative-memory literature
+* we introduce energy (from the associative-memory literature)
   as a metric to quantify discourse coherence.
-* sum: coherence illusions arise in Dutch LLMs, with
+* sum: coherence illusions arise in Dutch LLMs
   * entropy and energy exposing mechanisms that operate across settings.
 
 #### Demystifying Entropy-based Selection for Chain-of-Thought Compression
-in Large Reasoning Models
+##### in Large Reasoning Models
 
 Sara Candussio, Daniel Scalena, E Fersini, L Bortolussi, M Nissim, G Sarti
 
@@ -2397,9 +2394,9 @@ Sara Candussio, Daniel Scalena, E Fersini, L Bortolussi, M Nissim, G Sarti
 * Moving from steps to tokens, we then show that
   retaining low-entropy tokens seems effective only on mathematical benchmarks.
 * this is due to the inherently low-entropy nature of numeric tokens, which also
-  convey semantic content in such problems. Finally,
+  convey semantic content in such problems
 * patching a subset of a few CoT tokens with their original activations
-  recovers near-perfect full-trace performance, providing
+  recovers near-perfect full-trace performance
   * ie causal evidence that task information is
     * not concentrated in a small set of CoT tokens identifiable by heuristics,
     * distributed across the full reasoning chain.
@@ -2419,12 +2416,12 @@ Steffen Castle; M Dustin Nasert; CA Ebert; L Hennig; S Möller; N Feldhus
     training-free groundedness score (GroundHOG-U).
   * The response write
     (its magnitude and directional agreement with the other residual writes)
-    gives a supervised hallucination detector (GroundHOG).  Across
+    gives a supervised hallucination detector (GroundHOG)
 * exper: grounded-generation benchmarks and model families,
   * GroundHOG beats prior internal-state detectors, and
   * GroundHOG-U is the strongest training-free groundedness signal on the
     multi-model benchmarks.
 
 Notes by Makrai: I asked Steffen very peculiar questions, and he really answered
-them, instead of correcting my approch or telling the whole paper, which made me
-very grateful.
+them (instead of correcting my approach or telling the whole paper), which made
+me very grateful.
