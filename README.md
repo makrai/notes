@@ -1,9 +1,5 @@
 # EMNLP 2026 -- Notes by Márton Makrai
 
-<div style="text-align: right"> 
-           _mindazoknak, akik a gombák szexualitásáról írták az utolsó cikküket_
-</div>
-
 # Sunday, October 25 — Main Conference Day 1
 
 ## Session: 11 AM Interpretability and Analysis of Models for NLP 1
@@ -1143,17 +1139,19 @@ Jing Qian, B Liu, W Gu, H Ruan, C Huo, J Yang, M Deng, J Han, B Wang
 
 ### Outstanding Paper Award (22)
 
-- Accelerating Constrained Decoding with Token Space Compression.
+#### Accelerating Constrained Decoding with Token Space Compression.
+
 Michael Sullivan, Alexander Koller
 
-- Delineates a clever vocabulary compression method that 
+- a clever vocabulary compression method that 
   detects grammar-based token equivalence classes, 
   substantially speeding up CFG-constrained decoding with Earley parsing. 
   * Makes reliable constrained generation practical 
     in domains such as code generation and chemistry.
 
-- Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems.
-Jiamu Zhang, Lingxi Zhang, Pengjun Lu, Qiyue Zhang, Yu-Neng Chuang, Zhengchen Li, Shuai Xu, Vipin Chaudhary, Hanjie Chen
+#### Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems.
+
+Jiamu Zhang, L Zhang, P Lu, Q Zhang, Y Chuang, Z Li, S Xu, V Chaudhary, H Chen
 
 - Proposes a controlled evaluation that 
   holds the surrounding system fixed and 
@@ -1161,47 +1159,58 @@ Jiamu Zhang, Lingxi Zhang, Pengjun Lu, Qiyue Zhang, Yu-Neng Chuang, Zhengchen Li
   * Raises hard questions about evaluation 
     on a topic of fast-growing importance.
 
-- SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction.
-Yuting Ning, Zhehao Zhang, Yash Kumar Lal, Boyu Gou, Junyi Li, Weitong Ruan, Chentao Ye, Rahul Gupta, Diyi Yang, Yu Su, Huan Sun
+#### SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction.
+
+Yuting Ning, Zhehao Zhang, Yash Kumar Lal, Boyu Gou, Junyi Li, Weitong Ruan,
+  Chentao Ye, Rahul Gupta, Diyi Yang, Yu Su, Huan Sun
 
 - Presents a timely, well-executed study of skill-based attacks on LLM agents,
   * maliciously written skills can be automatically constructed to compromise
     both commercial and open systems across the skill lifecycle.  
-  * Highlights urgent, growing security risks in the agent ecosystem..
+  * Highlights urgent, growing security risks in the agent ecosystem.
 
-- Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following.
-Yanzhao Zheng, Yuanqiang Yu, Tianze Xu, Chao Ma, Zhentao Zhang, Jihuai Zhu, Baohua Dong, Hangcheng Zhu, Ruohui Huang
+#### Counterfactual Constraint-Conditioned On-Policy Distillation 
+##### for Multi-Constraint Instruction Following
+
+Yanzhao Zheng, Yuanqiang Yu, T Xu, C Ma, Z Zhang, J Zhu, B Dong, H Zhu, R Huang
 
 - Introduces a clever counterfactual credit-assignment method 
   for on-policy distillation, providing 
   * fine-grained supervision for following complex instructions. Demonstrates
-  * strong improvements over standard distillation at fixed compute..
+  * strong improvements over standard distillation at fixed compute.
 
-- OptiMer: Optimal Distribution Vector Merging Is Better than Data Mixing for Continual Pre-Training.
+#### OptiMer: Optimal Distribution Vector Merging Is 
+##### Better than Data Mixing for Continual Pre-Training.
+
 Haiyue Song, Huy Hien Vu, Masao Utiyama
 
 - a novel approach to the important problem of 
   data mixture optimization for continual pre-training. 
   * Instead of exploring different data mixes, it 
   * optimizes the merging of model updates from individual datasets,
-  * improved performance at substantially lower search cost..
+  * improved performance at substantially lower search cost.
 
-- Can MLLMs Perceive and Describe Medical Image Quality Beyond Scores?.
-Jiyao Liu, Jinjie Wei, Wanying Qu, Chenglong Ma, Junzhi Ning, Yunheng Li, Ying Chen, Jiafan Zhang, Pengcheng Chen, Xin Gao, Ming Hu, Xin Wang, Shujian Gao, Dingkang Yang, Zhongying Deng, Jin Ye, Lihao Liu, Junjun He, Ningsheng Xu
+#### Can MLLMs Perceive and Describe Medical Image Quality Beyond Scores?.
+
+Jiyao Liu, J Wei, W Qu, C Ma, J Ning, Y Li, Y Chen, J Zhang, P Chen, X Gao, 
+  M Hu, X Wang, S Gao, D Yang, Z Deng, J Ye, L Liu, J He, N Xu
 
 * a benchmark for investigating the potential use of 
   multimodal LLMs for medical image quality assessment 
-  through language descriptions, rather than numerical scores. The benchmark has
+  through language descriptions, rather than numerical scores
 * broad coverage, it has been carefully constructed, involving experts.
 
-- Omnilingual MT: Machine Translation for 1,600 Languages.
-B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers, E Sánchez, C Saint-Jacques, I Tsiamas, X Tony Cao, C Cheng, J Chuang, P Duquenne, M Duppenthaler, C Gao, P Huguet Cabot, J Maria Janeiro, J Maillard, G Eduardo Mejia-Gonzalez, H Schwenk, E Toledano, A Turkatenko, A Ventayol-Boada, R Arikapudi, N Paul Ekberg, R Moritz, A Mourachko, S Parimi, M Williamson, S Yates, D Dale, M R. Costa-jussà
+#### Omnilingual MT: Machine Translation for 1,600 Languages.
 
-* extends machine translation to 1,600 languages, a large step toward serving
+B Alastruey, N Bafna, A Caciolai, K Heffernan, A Kozhevnikov, C Ropers, et al
+
+* extends machine translation to 1,600 languages, a large step
 * contributes new resources and reproducible pipelines that 
   * let others build smaller, task-specific MT models.
 
-- Do Benchmarks Measure the Same Thing? Evaluation-Free Benchmark Redundancy Analysis with SAE.
+#### Do Benchmarks Measure the Same Thing? 
+Evaluation-Free Benchmark Redundancy Analysis with SAE.
+
 Yaoning Wang, Jiahao Ying, Yubo Ma, Yu Wan, Dayiheng Liu, Yixin Cao, Yu-Gang Jiang
 
 * a creative approach to analys benchmark redundancy using sparse autoencoders,
@@ -1209,7 +1218,8 @@ Yaoning Wang, Jiahao Ying, Yubo Ma, Yu Wan, Dayiheng Liu, Yixin Cao, Yu-Gang Jia
 * A thorough empirical study with promising results and 
   potential practical impact on how language models are evaluated.
 
-- UReason: Benchmarking Reasoning-to-Generation Alignment in Unified Multimodal Models.
+#### UReason: Benchmarking Reasoning-to-Generation Alignment 
+  in Unified Multimodal Models.
 Cheng Yang, Chufan Shi, Bo Shui, Yaokang Wu, Muzi Tao, Huijuan Wang, Ivan Yee Lee, Yong Liu, Xuezhe Ma, Taylor Berg-Kirkpatrick
 
 * a carefully curated benchmark that 
