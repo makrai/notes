@@ -1,298 +1,221 @@
-A Research Compass for the Acquisition of Thousands of Low-Resource Languages by AI Models via Form-Focused Study and Usage-Based Linguistic Immersion 
+A Research Compass 
+  for the Acquisition of Thousands of Low-Resource Languages by AI Models 
+  via Form-Focused Study and Usage-Based Linguistic Immersion 
 Juan Antonio Pérez-Ortiz
 MRL 2026 6th Workshop on Multilingual Representation Learning  EMNLP Budapest,
 
 # Abstract
 
-This position paper provides a multifaceted perspective on the challenge of
-adapting AI models (notably, large language models, LLMs) to the thousands of
-languages spoken worldwide which lack the vast amounts of text necessary for
-conventional data-intensive, imitation-based training. The paper explores two
-complementary emerging learning paths which are currently underexplored in the
-literature: explicit instruction-guided learning from linguistic resources and
-implicit acquisition in natural immersion contexts. By synthesizing current
-advances and identifying 40 open problems, this study defines an
-interdisciplinary research compass for the coming years.
+* This position paper provides a multifaceted perspective on the challenge of
+  adapting AI models (notably, large language models, LLMs) to the thousands of
+  languages spoken worldwide which lack the vast amounts of text necessary for
+  conventional data-intensive, imitation-based training. The paper explores 
+* two complementary emerging learning paths which are currently underexplored in
+  * explicit instruction-guided learning from linguistic resources and 
+  * implicit acquisition in natural immersion contexts. 
+* we synthesizing current advances and identify 40 open problems, this study
 
 # Forms of Linguistic Knowledge
 
-Explicit knowledge from linguistic resources may
-be incorporated in few-shot examples that share
-some similarity with the target text—for example,
-the paragraph to be translated—, or as an annota-
-tion of that text. Without claiming to be exhaustive,
-the most relevant ones are described next. 7
+* Explicit knowledge from linguistic resources may be incorporated 
+  * in few-shot examples that share some similarity with the target text—for
+    example, the paragraph to be translated—, or 
+  * as an annotation of that text. 
+  * not exhaustively, the most relevant ones are described next.
 * We focus on resources covering substantial numbers of low-resource languages,
   thereby excluding frameworks such as UniMorph (Batsuren+ 2022) or Universal
   Dependencies (Nivre+ 2020) with support for around 200 languages.
 
-## Interlinear Glosses. An interlinear glossed text
-is a text formatted so that its morphemes are la-
-beled with their grammatical function along with a
-translation into a more widespread language. The
-format is widely used in linguistics, especially in
-grammar books. PolyGloss comprises glosses in
-1,800 languages and pre-trained encoder-decoder
-models for interlinear glossing (Ginn+ 2026).
-Other forms of morphological annotations could
-also be considered where available.
+## Interlinear Glosses. An interlinear glossed text is 
 
-## Dictionaries. While grammars establish the
-structure, dictionaries act as their lexical counter-
-part, materializing abstract rules into concrete sen-
-tences. These dictionaries may be monolingual,
-bilingual (Merx+ 2024; Jones+ 2023), or
-terminological (Bogoychev and Chen, 2023).
+= a text formatted so that its 
+morphemes are labeled with their grammatical function along with a 
+translation into a more widespread language. The format is 
+* widely used in linguistics, especially in grammar books. 
+* PolyGloss comprises glosses in 1,800 languages and 
+  * pre-trained encoder-decoder models for interlinear glossing (Ginn+ 2026).
+* Other forms of morphological annotations could also be considered 
+  where available.
 
-## Grammar Books and Textbooks. The content
-of grammar descriptions is less structured but un-
-doubtedly richer in nuances. As already mentioned
-in the introduction, grammar descriptions are avail-
-able for a significant number of low-resource lan-
-guages. Note, however, that a significant portion
-of the existing grammar books (Virk+ 2020)
-are either restricted by copyright, or not available
-in digital format. Another interesting source of
-explicit knowledge are textbooks, which although
-less comprehensive than grammar books, usually
-include heterogenous forms of linguistic informa-
-tion and exercises that may be particularly useful
-to reward the LLMs’ learning process.
-One of the pioneering works in this area was that
-of Tanzer+ (2024), which explored the ability
-of LLMs to translate between English and Karas—
-a language with no prior digital presence—using
-a grammar, a bilingual dictionary of about 2500
-entries, and 2000 parallel sentences. The gram-
-mar was added to the model’s context, and signif-
-icant improvements in translation were observed.
-Other subsequent works (Zhang+ 2024a,b;
-Hus and Anastasopoulos, 2024; Court and Elsner,
-2024; Pei+ 2025; Yang+ 2025; Li+
-2026) explored similar techniques and different
-low-resource languages.
-Of particular concern is the fact that it has been
-shown that, when given a grammar description,
-LLMs may focus on its parallel examples rather
-than on the underlying rules (Aycock+ 2024).
-In spite of these observations, other authors (Mar-
-monier+ 2025) have documented some use
-of linguistic information beyond parallel examples.
-In spite of being an enormously promising line of
-research, the question of whether LLMs can truly
-internalize the grammatical rules of a language
-from their descriptions remains open.
+## Dictionaries. While grammars establish the structure, 
+dictionaries act as their lexical counterpart, 
+materializing abstract rules into concrete sentences. These dictionaries may be
+* monolingual, bilingual (Merx+ 2024; Jones+ 2023), or 
+  terminological (Bogoychev and Chen, 2023).
 
-## Typological Databases. Large-scale typologi-
-cal databases like WALS (Dryer and Haspelmath,
-2013) or Grambank (Skirgård+ 2023) system-
-atically catalogue hundreds of grammatical features
-for thousands of languages (O’Horan+ 2016).
-This information may prove useful as a restricted
-form of grammar description, capturing underly-
-ing linguistic universals that instantiate in concrete
-ways across diverse languages.
-667Small Amounts of Text. Small amounts of data
-in plain text form, 8 usually of high quality (Gu-
-nasekar+ 2023; Eldan and Li, 2023), have
-proven to be useful for training LLMs for spe-
-cific tasks such as machine translation (Garcia
-et al., 2023; Maillard+ 2023; Wu+ 2024;
-Cahyawijaya+ 2024). In spite of the under-
-representation of low-resource languages in the
-training datasets for LLMs, the existence of small
-quantities of text or multimedia resources is rela-
-tively common for many of them. 9 
+## Grammar Books and Textbooks. The content of grammar descriptions is 
+
+* less structured but undoubtedly richer in nuances. As already mentioned in
+* available for a significant number of low-resource languages. Note, however,
+* hE a significant portion of the existing grammar books (Virk+ 2020) are either
+  restricted by copyright, or not available in digital format. Another
+  * Shafqat Mumtaz Virk, Harald Hammarström, Markus Forsberg, Søren Wichmann.
+    LREC 2020. 
+    The DReaM Corpus: A Multilingual Annotated Corpus of Grammars for the
+    World’s Languages
+* textbooks, which although less comprehensive than grammar books, usually
+  * heterogenous forms of linguistic information and exercises that 
+    may be particularly useful to reward the LLMs’ learning process.
+* eg MT from English to Karas
+  * Tanzer+ (2024) explored the ability of LLMs 
+  * Karas is a language with no prior digital presence—
+  * Tanzer' MT used a grammar, a bilingual dictionary of about 2500 entries, and
+    2000 parallel sentences. 
+    * The grammar was added to the model’s context, and 
+    * significant improvements in translation were observed.
+* Other subsequent works explored 
+  similar techniques and different low-resource languages
+  (Zhang+ 2024a,b; Hus and Anastasopoulos, 2024; Court and Elsner, 2024; Pei+
+  2025; Yang+ 2025; Li+ 2026) .
+* when given a grammar description, LLMs may focus on its parallel examples
+  rather than on the underlying rules (Aycock+ 2024).
+* Marmonier+ (2025) have documented some use of linguistic information 
+  beyond parallel examples.
+* an enormously promising line of research, the question of 
+* hE whether LLMs can truly internalize the grammatical rules of a language 
+  from their descriptions remains open.
+
+## Typological Databases. Large-scale typological databases like 
+
+* eg WALS (Dryer and Haspelmath, 2013) or Grambank (Skirgård+ 2023) 
+* systematically catalogue hundreds of grammatical features 
+  for thousands of languages (O’Horan+ 2016).
+* ie a restricted form of grammar description, capturing underlying linguistic
+  universals that instantiate in concrete ways across diverse languages.
+
+## Small Amounts of Text. 
+
+* Small amounts of data in plain text form, usually of high quality 
+  (Gunasekar+ 2023; Eldan and Li, 2023), have 
+  * proven to be useful for training LLMs for specific tasks such as MT 
+    (Garcia+ 2023; Maillard+ 2023; Wu+ 2024; Cahyawijaya+ 2024). 
+* or multimedia resources is relatively common for many of the langs
+* hE thousands of languages without written texts or with non-digitized ones
 
 # 4 Assessment Tasks
-In order to evaluate the degree of acquisition
-by LLMs of a never-before-seen language, var-
-ious tasks can serve as proxies. If translated
-data for other downstream tasks exist—which is
-rarely the case in low-resource scenarios—one
-can test model performance across other complex
-problem-solving settings. For instance, Zhang+
-(2024b) translated mathematical reasoning prob-
-lems into Manchu to assess actual language ac-
-quisition. While this provides an empirical, task-
-based assessment of comprehension, it presupposes
-the availability of translated data for problems that
-models are already known to solve reliably in high-
-resource languages.
 
-## Machine Translation. Translation to/from a lan-
-guage sufficiently represented in the LLM’s train-
-ing corpus is probably the most straightforward
-measure, as it implies both understanding and gen-
-eration capabilities. 10 Measuring translation per-
-formance demands evaluation benchmarks that in-
-clude the target language. Although some efforts
-have been made to create multilingual benchmarks,
-they are still scarce with respect to the number of
-languages included: FLORES+, 11 SMOL (Caswell
-et al., 2025) and BOuQUET (Omnilingual MT
-Team+ 2026) are available in 228, 131, and
-275 languages, respectively.
-8
-The BabyLM competition (Warstadt+ 2023; Charp-
-entier+ 2025) evaluates teaching LLMs a language from
-scratch using developmentally plausible datasets, compara-
-ble in volume to the language exposure of a preschooler or a
-teenager. However, this amount of text remains out of reach
-for most low-resource languages.
-9
-The thousands of languages without written texts or with
-non-digitized ones are a significant exception.
-10
-Historically, explicit linguistic information has been al-
-ready exploited by rule-based (Forcada+ 2011), statis-
-tical (Koehn and Hoang, 2007; Birch+ 2007), and non-
-LLM-based neural translation systems (Sennrich and Haddow,
-2016; Nădejde+ 2017).
-11
-https://oldi.org/
+* evaluate the degree of acquisition by LLMs of a never-before-seen language,
+  various tasks can serve as proxies. 
+* If translated data for other downstream tasks exist—which is 
+  * rarely the case in low-resource scenarios—one can test model performance
+    across other complex problem-solving settings. For instance, 
+* Zhang+ (2024b) translated mathematical reasoning problems into Manchu to
+  assess actual language acquisition. While this provides an empirical, task-
+  based assessment of comprehension, it presupposes the availability of
+* ie for problems that models are already known to solve reliably in
+  high-resource languages
 
-## Linguistic Acceptability. Linguistic minimal
-pairs, such as those in BLiMP (Warstadt+
-2020; Jumelet+ 2025), contrast a correct
-and an incorrect sentence differing by a single as-
-pect, and can be used to evaluate language mas-
-tery. Other datasets (Warstadt+ 2019; Zhang
-et al., 2024c) also assess linguistic acceptability
-with less focus on minimal pairs. Natural language
-understanding benchmarks like GLUE (Wang+
-2019) might be useful, but their adaptation to new
-languages can be challenging.
-4 Problems of the Linguistic Olympiads. The
+## Machine Translation. Translation to/from a language sufficiently
+represented in the LLM’s training corpus is probably the most straightforward
+measure, as it 
+* implies both understanding and generation capabilities. 10 Measuring
+* demands evaluation benchmarks that include the target language. Although some
+* multilingual benchmarks are still scarce with respect to the number of langs
+* FLORES+, SMOL (Caswell+ 2025) and BOuQUET (Omnilingual MT Team+ 2026) are
+  * 228, 131, and 275 languages, respectively.
 
-## Linguistic Olympiads 12 are competitions where
-students solve carefully crafted linguistic Rosetta
-Stone-like puzzles that require analytical reasoning,
-pattern recognition, and the application of meta-
-linguistic knowledge. The problems often involve
-deciphering the structure of an unfamiliar language
-based on a small set of related sentences with min-
-imal differences and their translation into a well-
-known language. These problems are therefore
-particularly relevant for evaluating the ability of AI
-systems to learn new languages from minimal data.
-A number of recent works have compiled datasets
-of these problems (Bean+ 2024; Sánchez+
-2024; Chi+ 2024) and show limited perfor-
-mance of LLMs. However, Sánchez+ (2026) re-
-cently reported that one frontier LLM had achieved
-Gold medal performance.
+## Linguistic Acceptability. 
 
-## Human Feedback. As noted in Section 2, hu-
-man feedback may be crucial for LLM language
-acquisition in implicit and explicit paths, serving
-as both a learning signal and an evaluation method.
+* Linguistic minimal pairs, eg those in BLiMP (Warstadt+ 2020; Jumelet+ 2025),
+  contrast a correct and an incorrect sentence differing by a single aspect,
+  and can be used to evaluate language mastery.
+* [non min pair] datasets (Warstadt+ 2019; Zhang+ 2024c) also assess ling accept
+* Natural language understanding benchmarks like GLUE (Wang+ 2019) might be
+  useful, but their adaptation to new languages can be challenging.
+
+## Problems of the Linguistic Olympiads 12 are competitions where 
+
+* students solve carefully crafted linguistic Rosetta Stone-like puzzles that
+  require analytical reasoning, pattern recognition, and the application of
+  metalinguistic knowledge. The problems 
+* often involve deciphering the structure of an unfamiliar language based on 
+* input: a small set of related sentences with minimal differences 
+  and their translation into a well-known language.
+* particularly relevant for evaluating the ability of AI systems to learn new
+  languages from minimal data.
+* datasets of these problems (Bean+ 2024; Sánchez+ 2024; Chi+ 2024) and 
+* LLMs show limited performance
+* nL one frontier LLM had achieved Gold medal performance (Sánchez 2026)
+
+## Human Feedback. As noted in Section 2, human feedback may be crucial 
+for LLM language acquisition in implicit and explicit paths, serving as 
+both a learning signal and an evaluation method.
 
 # 5 Ethics in Low-Resource Settings
 
-Ethical considerations are imperative for low-
-resource languages to prevent the potential harm to
-historically marginalized communities.
+Ethical considerations are imperative for low-resource languages to prevent the
+potential harm to historically marginalized communities.
 
-## Ethics by Design. The general approach of ethics
-by design (IEEE, 2021; European Commission,
-2021; Brey and Dainow, 2024) promotes embed-
-ding ethical principles into all stages of a research
-project—from its very initial conception to data
-acquisition, model development, evaluation, and
-deployment—, proactively anticipating and miti-
-gating potential ethical issues. We assert that this
-principle of continuous ethical assessment must be
-central to our challenge so that every member of
-668
-12
-https://ioling.org/problems/the research team and every piece of technology de-
-veloped are aligned with societal values and respect
-the rights and dignity of the linguistic communities
-involved. Ethical frameworks (Hagendorff, 2020)
-rely on broadly consensual moral values, although
-their interpretation, prioritization, and regulatory
-contexts may vary or conflict.
+## Ethics by Design
 
-## Endangered Languages. A growing body of
-literature addresses ethical considerations in
-endangered-language fieldwork and computational
-linguistics (Rice, 2006; D’Arcy and Bender, 2023).
-Works frequently highlight the importance of decol-
-onizing research practices (Tuhiwai Smith, 2022;
-Riemland, 2026) and prioritizing community in-
-volvement (Pérez González, 2020) under apho-
-risms such as primum non nocere 13 (Schwartz,
-2022) or nothing about us without us (Harbord
-et al., 2021). All these recommendations follow the
-spirit of higher-level statements of principles such
-as the United Nations Declaration on the Rights of
-Indigenous Peoples 14 (United Nations, 2007). No-
-ticeably, some communities, such as the Māori in
-New Zealand, 15 have developed their own ethical
-guidelines for researchers.
+* the approach (IEEE, 2021; European Commission, 2021; Brey and Dainow, 2024)
+* ie embedding ethical principles into all stages of a research project—from its
+  very initial conception to data acquisition, model development, evaluation,
+  and deployment—, proactively anticipating and mitigating potential issues. We
+  assert that this principle of continuous ethical assessment must be central to
+  our challenge so that every member of the research team and every piece of
+  technology developed are aligned with societal values and respect the rights
+  and dignity of the linguistic communities involved. 
+* Ethical frameworks (Hagendorff, 2020) rely on broadly consensual moral values,
+  * hE interpretation, prioritization, and regulatory contexts may vary/conflict
 
-## Potential Risks and Benefits. Mager+
-(2023) surveyed ethical considerations in machine
-translation for endangered American languages.
-Remarkably, around 30% of respondents believe
-machine translation poses dangers, such as increas-
-ing Western cultural influence, imposing unwanted
-language standardization, revealing sacred knowl-
-edge, or contributing to language extinction or mi-
-norization. Furthermore, the survey emphasizes
-that Western legal views on data ownership and
-intellectual property often mismatch community
-perspectives. Therefore, extractive practices must
-be avoided so communities retain access to their
-own linguistic heritage. Conversely, potential ben-
-efits are also noted, including facilitating language
-learning, language revitalization, promoting digital
-inclusion, and preserving cultural heritage.
+## Endangered Languages. A growing body of literature addresses 
 
-## Data. Data ethical considerations for low-
-resource languages require careful attention, rang-
-ing from initial informed consent to final usage.
-The CARE principles (Carroll+ 2020) pri-
-13
-Latin aphorism for “above all, do no harm”.
-Article 31 states that “indigenous peoples have the right to
-maintain, control, protect and develop their cultural heritage,
-traditional knowledge and traditional cultural expressions”.
-15
-https://data.govt.nz/toolkit/data-ethics/
-nga-tikanga-paihere
-oritize collective benefit, community authority
-over data, responsibility to ensure indigenous self-
-determination, and ethics throughout the data life-
-cycle. Additionally, repositories should be estab-
-lished to store and share low-resource linguistic
-data in a safe, robust and sustainable manner over
-time. A number of initiatives have been launched
-in this direction, such as Living Tongues, 16 Global
-Voices, 17 , Archive of the Indigenous Languages of
-Latin America (AILLA), 18 or Mozilla Data Collec-
-tive. 19
+* ethical considerations in endangered-language fieldwork and comput ling
+  (Rice, 2006; D’Arcy and Bender, 2023).
+* decolonizing research practices (Tuhiwai Smith, 2022; Riemland, 2026) and
+* community involvement (Pérez González, 2020) under aphorisms such as 
+* aphorisms
+  * primum non nocere (Schwartz, 2022) or 
+    * Latin aphorism for “above all, do no harm”.
+  * nothing about us without us (Harbord+ 2021). All these recommendations
+  * follow the spirit of higher-level statements of principles such as the
+    United Nations Declaration on the Rights of Indigenous Peoples 14 (UN, 2007)
+  * Article 31 states that “indigenous peoples have the right to maintain,
+    control, protect and develop their cultural heritage, traditional knowledge
+    and traditional cultural expressions”.
+* some communities, such as the Māori in New Zealand, 15 have developed their
+  own ethical guidelines for researchers.
 
-## Culturally-Aware Data. Datasets should be cu-
-rated with cultural sensitivity to ensure they reflect
-the values, traditions, worldview, and culturally-
-specific expressions of the communities involved.
-Because language is deeply intertwined with cul-
-ture, the mere translation of datasets originally cre-
-ated in a different cultural context is insufficient for
-accurate representation (Singh+ 2025; Chang
-et al., 2026). Currently, Western-centric content
-dominates the vast majority of datasets (Duncan
-et al., 2024; Wu+ 2025). This knowledge im-
-balance propagates to LLMs, aligning them with
-the values of WEIRD—western, educated, industri-
-alized, rich, and democratic—societies and carry-
-ing serious implications for fairness and safety (Liu
-et al., 2025). Models may also gratuitously add
-indigenous cultural stereotypes that end up exoti-
-cizing underrepresented communities (Court and
-Elsner, 2024).
+## Potential Risks and Benefits. Mager+ (2023) surveyed ethical considerations
+in machine translation for endangered American languages.
+* 30% of respondents believe machine translation poses dangers, such as 
+  * eg increasing Western cultural influence, imposing unwanted language
+    standardization, revealing sacred knowledge, or contributing to language
+    extinction or minorization. Furthermore, the survey emphasizes that
+* Western legal views on data ownership and intellectual property often mismatch
+  community perspectives. Therefore, 
+* extractive practices must be avoided so communities retain access to their own
+  linguistic heritage.
+* nL potential benefits are also noted, including 
+  eg facilitating language learning, language revitalization, promoting digital
+  inclusion, and preserving cultural heritage.
+
+## Data. Data ethical considerations for low-resource languages require careful
+attention, ranging 
+* from initial informed consent to final usage.
+* The CARE principles (Carroll+ 2020) prioritize collective benefit, community
+  authority over data, responsibility to ensure indigenous selfdetermination,
+  and ethics throughout the data lifecycle. Additionally, 
+* repositories should be established to store and share low-resource linguistic
+  data in a safe, robust and sustainable manner over time. A number of
+* initiatives have been launched in this direction, such as 
+  Living Tongues, 16 Global Voices, 17, Archive of the Indigenous Languages of
+  Latin America (AILLA), 18 or Mozilla Data Collective.
+
+## Culturally-Aware Data. Datasets should be curated with cultural sensitivity
+
+* reflect the values, traditions, worldview, and culturallyspecific
+  expressions of the communities involved.
+* language is deeply intertwined with culture, the mere translation of
+  datasets originally created in a different cultural context is insufficient
+  for accurate representation (Singh+ 2025; Chang+ 2026). Currently,
+* Western-centric content dominates the vast majority of datasets (Duncan+ 2024;
+  Wu+ 2025). This knowledge imbalance propagates to LLMs, aligning them with the
+  values of WEIRD—western, educated, industrialized, rich, and
+  democratic—societies and carrying serious implications for fairness and safety
+  (Liu+ 2025). Models may also gratuitously add indigenous cultural stereotypes
+  that end up exoticizing underrepresented communities (Court and Elsner, 2024).
 
 # 6 Challenges and Open Problems
 
@@ -310,25 +233,25 @@ Elsner, 2024).
   in our setting.
 * five thematic clusters, each associated with a distinct symbol for visual ID
   * more general and transversal
-    1. Architectures and representations Ô
-    2. Socio-ethical aspects and communities ² 
-    3. Cognitive aspects and interpretability j
+    1. Architectures and representations 🏗️
+    2. Socio-ethical aspects and communities 🤝 
+    3. Cognitive aspects and interpretability 🧠
   * more specific to the explicit and implicit learning paths
-    4. Explicit linguistic data infrastructure õ
-    5. Implicit organic language acquisition Ü 
+    4. Explicit linguistic data infrastructure 🗂️
+    5. Implicit organic language acquisition 🌱 
 
-## Tokenization Ô 
+## Tokenization 🏗️ 
 
 * Fixed vocabularies and tokenizers in pre-trained LLMs are sub-optimal for
-  unseen languages, severely degrading the word-to-token ratio and overall
-  performance (Ahia+ 2023; Edman+ 2025). To circumvent this, emerging
+  unseen languages, severely degrading 
+  the word-to-token ratio and overall performance (Ahia+ 2023; Edman+ 2025)
   * tokenizer-free models that dynamically create continuous representations
     from raw bytes (Pagnoni+ 2025) and 
   * universal tokenizers (Abagyan+ 2025) offer promising broad-scope
-    alternatives. Additionally, 
+    alternatives
   * script uniformization techniques like romanization (Hermjakob+ 2018;
-    Purkayastha+ 2023) may improve model performance in new scripts without
-    vocabulary expansion. However, since 
+    Purkayastha+ 2023) may improve model performance in new scripts 
+    without vocabulary expansion
     * hE standard romanization often incurs irreversible information loss,
   * designing automatic, lossless reversible encoding schemes (Zhuang+ 2025)
     remains a critical avenue for future work.
@@ -341,10 +264,9 @@ Elsner, 2024).
   completely replace the original script or to complement it? Can reversible
   romanization schemes be automatically defined for any language?
 
-## Representation of Linguistic Knowledge Ô
+## Representation of Linguistic Knowledge 🏗️
 
-The format of the linguistic information provided to the model may impact its
-assimilation; for example, 
+* The format of the linguistic information provided to the model 
 * eg grammatical rules in pseudocode may prove more effective than those
   expressed in natural language (Zhang+ 2025a). 
 * Structured formats also influence 
@@ -358,21 +280,23 @@ various linguistic resources?
 * OP5 What is the influence of the data format on AI models’ capacity to acquire
 new languages?
 
-## Data and Language Contamination Ô 
+## Data and Language Contamination 🏗️ 
 
-We must distinguish between optimizing performance on a specific language—where
-prior exposure is acceptable—and evaluating whether a model can learn a language
-from scratch using metalinguistic abilities. For the latter, a sound assessment
-requires ruling out not only standard data contamination, but language
-contamination itself, as many languages can typically be expected to slip into
-LLM training corpora in minimal, yet non-zero proportions, via existing
-datasets (Kargaran+ 2024).
-* language encryption exist to hide language identity (Khouja+ 2025; Mar-
-  monier+ 2025), subtle underlying patterns often remain recognizable to LLMs
-  (Cao+ 2023; Handa+ 2025). Also, it is unclear whether models subconsciously
-  retain dormant knowledge that is waken up after exposure to examples (Chi et
-  al., 2024), highlighting a need for advanced unlearning methods (Choi+
-  2024). 
+* We must distinguish between 
+  * optimizing performance on a specific language—where prior exposure is OK
+  * evaluating whether a model can 
+    learn a language from scratch using metalinguistic abilities. For the
+    * a sound assessment requires ruling out 
+      not only standard data contamination, but language contamination itself,
+      as many languages can typically be expected to slip into LLM corpora in
+      minimal, yet non-zero proportions, via existing datasets (Kargaran+ 2024).
+* language encryption to hide language identity (Khouja+ 2025; Marmonier+
+  2025), 
+  * hE subtle underlying patterns often remain recognizable to LLMs (Cao+ 2023;
+    Handa+ 2025). Also, it is unclear whether models 
+  * LLM may subconsciously retain dormant knowledge that is 
+    waken up after exposure to examples (Chi+ 2024), highlighting a 
+  * need for advanced unlearning methods (Choi+ 2024). 
 * Data contamination detection and mitigation (Dong+ 2024) are crucial to ensure
   the methodologies can be extrapolated to completely new languages.
 * OP6 What is the optimal strategy for providing easily accessible evaluation
@@ -389,15 +313,15 @@ datasets (Kargaran+ 2024).
 * OP11 How can we measure the dormant latent knowledge of a language in a
   model?
 
-## Dialectal Continuum Ô 
+## Dialectal Continuum 🏗️ 
 
-Incorporating new low-resource languages into LLMs risks overlooking the
-dialectal continuum due to limited data.
-* unsupervised creation of latent representations for dialectal varieties. Sub-
-  sequently, by simply providing the model with an exemplar prompt, generation
-  would be be smoothly steered into a specific dialect’s subspace. This hy-
+* Incorporating new low-resource languages into LLMs 
+  risks overlooking the dialectal continuum due to limited data.
+* unsupervised creation of latent representations for dialectal varieties. 
+  * Subsequently, by simply providing the model with an exemplar prompt,
+    generation would be be smoothly steered into a specific dialect’s subspace.
 * language-specific subspaces in multilingual models (Zhao+ 2025d) and
-  dialect-specific circuits (Kearney+ 2025), though practitioners must remain
+  dialect-specific circuits (Kearney+ 2025)
 * hE dialectal cues can inadvertently amplify bias or toxicity (Abbas+ 2025).
 * OP12 Can LLMs latently learn representations for dialectal varieties from
   unsupervised data?
@@ -407,72 +331,72 @@ dialectal continuum due to limited data.
 * OP14 What is the most effective approach to condition an LLM to generate a
   specific dialectal variety?
 
-## Community Involvement ² 
+## Community Involvement 🤝 
 
 * Linguistic governance usually operates through 
   a highly diverse, fragmented array of organizations, lacking any centralized
   registry. 
 * To facilitate ethical collaboration between 
-  speaker communities, field linguists, and technology developers, it is crucial
-  to establish an open repository of these diverse contributors from the
-  communities. This directory must transcend simple contact information by
-  incorporating vital metadata—such as 
+  speaker communities, field linguists, and technology developers, it is 
+  * crucial: an open repository of these diverse contributors from the community
+    * This directory must transcend simple contact information by incorporating
+      vital metadata—such as 
   * traditional knowledge labels (Montenegro, 2019)—to 
     explicitly define the cultural and legal protocols governing the
-    technological incorporation of a community’s digital heritage, alongside
+    technological incorporation of a community’s digital heritage
   * robust third-party endorsement mechanisms to verify legitimacy.
-* OP15 Can universal consensus be achieved on a single repository where
-  communities, linguists, and researchers collaboratively develop language
-  technologies under clear ethical rules?
+* OP15 Can universal consensus be achieved on 
+  a single repository where communities, linguists, and researchers
+  collaboratively develop language technologies under clear ethical rules?
 
-## Collaboration with Field Linguistics ² 
+## Collaboration with Field Linguistics 🤝 
 
 * Collaboration may be hampered by differing objectives, workflow mismatches,
-  and a lack of ethical training among NLP researchers (Gessler+ 2025). Bridging
+  and a lack of ethical training among NLP researchers (Gessler+ 2025)
   * Zariquiey+ (2022): most languages preserved in documentary archives do not
     appear in widely used datasets.
-Guided by community-led frameworks (Liu+ 2022; Flavelle and Lachler, 2023),
-researchers can leverage 
-systematic elicitation techniques (Chelliah and De Reuse, 2011) to collect
-relevant linguistic data such as minimal pairs (see Section 4).
+* Guided by community-led frameworks (Liu+ 2022; Flavelle and Lachler, 2023),
+  researchers can leverage 
+  systematic elicitation techniques (Chelliah and De Reuse, 2011) to collect
+  relevant linguistic data such as minimal pairs (see Section 4).
 * OP16 How can elicitation techniques be adapted to
 collect data specifically suitable for LLMs?
 * OP17 How to strengthen the collaboration between com-
 putational linguists and field linguists?
 
-## Organization of Shared Tasks ² 
+## Organization of Shared Tasks 🤝 
 
-Scientific shared tasks may gather multiple teams evaluating techniques for
-languages that would otherwise receive little attention. Although the number of
+* Scientific shared tasks may gather multiple teams evaluating 
+  techniques for languages that would otherwise receive little attention
 * shared tasks focused on low-resource languages has increased in recent years
-  (Pakray+ 2024; Burchell+ 2024; De Gibert+ 2025), they are still relatively
+  (Pakray+ 2024; Burchell+ 2024; De Gibert+ 2025)
 * OP18 How can data be maintained over time to ensure recurrent evaluation of
   LLMs via shared tasks, while at the same time avoiding data contamination?
 
-## Environmental Impact ² 
+## Environmental Impact 🤝 
 
-The environmental impact of training and deploying deep learning models is a
-significant concern (Bannour+ 2021; Morrison+ 2024), intensifying calls for
-sustainable AI (Bolón-Canedo+ 2024).
-Low-resource language communities are often more vulnerable to climate change
-and lack sufficient computational infrastructure, making it essential to
-evaluate energy consumption, emissions, and water usage (Bannour+ 2021; Li+
-2024). This necessitates 
+* The environmental impact of training and deploying deep learning models is a
+  significant concern (Bannour+ 2021; Morrison+ 2024), intensifying calls for
+  sustainable AI (Bolón-Canedo+ 2024).
+* Low-resource language communities are 
+  often more vulnerable to climate change and lack sufficient compute
+  * essential to evaluate energy consumption, emissions, and water usage
+    (Bannour+ 2021; Li+ 2024)
 * actively pursuing shorter prompts (Agrawal+ 2025) and 
-* smaller models (Galiano-Jiménez+ 2025). Crucially, the emergence of small,
-  sub-billion open models capable of solving reasoning tasks (Zhao+ 2025a) may
-  enable communities to retain full governance over their linguistic heritage.
+* smaller models (Galiano-Jiménez+ 2025)
+  * sub-billion open models capable of solving reasoning tasks (Zhao+ 2025a) 
+    may enable communities to retain full governance over their ling heritage.
 * OP19 What are the trade-offs between model size, performance, and
   environmental impact in the context of learning new low-resource languages by
   LLMs?
 
-## [metalinguistic and metacognitive] Capabilities of LLMs j 
+## [metalinguistic and metacognitive] Capabilities of LLMs 🧠 
 
 * LLMs’ documented struggles with intermediate-level cognitive tasks, such as
   eg applying linguistic knowledge (Yu+ 2025). 
 * thinking aloud protocols may help
   * learning from human reasoning verbalizations (Chu+ 2025a; Zheng+ 2025) or
-  * prompting models to think aloud themselves (Yu+ 2025)— may help bridge 
+  * prompting models to think aloud themselves (Yu+ 2025)
 * computational argumentation (Ruiz-Dolz+ 2025) offers unexplored potential to
   optimize metalinguistic reasoning capabilities 
   by rewarding the generation of consistent argumentative units (Sanayei+ 2025).
@@ -484,23 +408,22 @@ evaluate energy consumption, emissions, and water usage (Bannour+ 2021; Li+
 * OP22 Can thinking aloud protocols improve the metalinguistic and
   metacognitive skills of LLMs?
 
-## Compositionality and Learning j 
+## Compositionality and Learning 🧠 
 
-Compositionality is a critical factor for LLMs to effectively leverage
-information from the scarce data available in low-resource scenarios. However,
-this capacity for generalization has been deeply questioned in LLMs in general,
-* hE structured reasoning degrades significantly far from the training distri
+* Compositionality is a critical factor for LLMs to effectively 
+  leverage information from the scarce data available in low-resource scenarios.
+* hE capacity for generalization has been deeply questioned in LLMs in general
+* structured reasoning degrades significantly far from the training distri
   (McCoy+ 2023; Zhao+ 2025b).
-* integrating neurosymbolic approaches or lightweight training algorithms like
-  reinforcement learning may improve generalization capabilities beyond memoriz
-  (Nawaz+ 2025; Chu+ 2025b), the severe data scarcity inherent to acquiring a
-  new language from limited resources poses fundamental challenges to systematic
-  compositionality. Within a 
-* continual learning framework, language acquisition from grammar books has been
-  shown to benefit from transformer models featuring multiple feedforward layers
-  that update at different frequencies, paired with interleaved consolidation
-  phases that transfer knowledge from fast-updating components to
-  slower-updating ones (Behrouz+ 2026).
+* integrating neurosymbolic approaches or 
+  lightweight training algorithms like reinforcement learning 
+  may improve generalization capabilities beyond memoriz (Nawaz+ 2025; Chu+
+  2025b), the 
+* continual learning framework, language acquisition from grammar books benefits
+  from transformer models featuring 
+  multiple feedforward layers that update at different frequencies, paired with
+  interleaved consolidation phases that transfer knowledge from fast-updating
+  components to slower-updating ones (Behrouz+ 2026).
 * OP23 What is the most effective learning approach for acquiring new linguistic
   knowledge in LLMs?
 * OP24 What compositionality metrics are feasible and effective in low-resource
@@ -511,13 +434,13 @@ this capacity for generalization has been deeply questioned in LLMs in general,
   and metalinguistic skills sufficient to develop functional linguistic
   compositionality?
 
-## Interpretability j 
+## Interpretability 🧠 
 
 * interpretability techniques for transformer architectures has emerged recently
   (Zhao+ 2024; Ferrando+ 2024). Beyond offering 
   * local clues via feature attribution, 
   * mechanistic interpretability (Sharkey+ 2025) aims to reverse-engineer models
-    to uncover the underlying circuits driving their behavior. While
+    to uncover the underlying circuits driving their behavior
   * traditionally motivated by safety (Bereska and Gavves, 2024), these
   * understanding incontext learning (Zhou+ 2024) and enhancing how models
     assimilate new languages.
@@ -528,16 +451,17 @@ this capacity for generalization has been deeply questioned in LLMs in general,
 * OP28 Can mechanistic interpretability help identify circuits for language
   consolidation and compositionality?
 
-## Retrieval õ 
+## Retrieval 🗂️ 
 
-Locating specific details relevant for a particular text within rich, free-form
-grammar books is challenging given LLMs’ long-context limitations (Liu+ 2024).
-* Traditional retrieval augmented generation (Lewis+ 2020) falls short for such
-  procedural knowledge, but 
-* nL vectorless retrieval based on reasoning (Yao+ 2022; Zhang+ 2025c) may be
-  more suitable. Additionally, 
-* massive models like mmBERT (Marone+ 2025) provide valuable multilingual
-  embeddings to support these architectures when needed.
+* Locating specific details relevant for a particular text 
+  within rich, free-form grammar books is 
+  challenging given LLMs’ long-context limitations (Liu+ 2024).
+* Traditional retrieval augmented generation (Lewis+ 2020) 
+  falls short for such procedural knowledge, but 
+* nL vectorless retrieval based on reasoning (Yao+ 2022; Zhang+ 2025c) 
+  may be more suitable
+* massive models like mmBERT (Marone+ 2025) provide valuable 
+  multilingual embeddings to support these architectures when needed.
 * OP29 In which cases is retrieval of relevant passages from a grammar book
   better than including the entire grammar in the prompt?
 * OP30 How can we retrieve relevant grammar book passages given a partial
@@ -545,14 +469,13 @@ grammar books is challenging given LLMs’ long-context limitations (Liu+ 2024).
 * OP31 Is it better to separate retrieval and application, or to apply
   linguistic rules concurrently during grammar retrieval?
 
-## Digitization õ 
+## Digitization 🗂️ 
 
-When working with book-form materials such as grammars or dictionaries, re-
-sources range from born-digital documents to scanned physical copies; for the
+* book-form materials such as grammars or dictionaries:
+  born-digital documents vs scanned physical copies
 * OCR engines often introduce layout errors and require extensive
   language-specific fine-tuning.
-Moreover, rather than extracting raw text from these resources, it is far more
-beneficial to obtain structured formats. Current 
+* goal: obtain structured formats
 * document reading models (Cui+ 2026) 
   understand textual layout and spatial context, making them ideal for
   systematically labeling distinct linguistic elements
@@ -564,35 +487,35 @@ beneficial to obtain structured formats. Current
 * OP34 Can document reading models effectively process pages in new scripts and
   languages?
 
-## Repositories õ 
+## Repositories 🗂️ 
 
-Preserving linguistic resources for low-resource languages entails conflicts be-
-tween governance, centralization, and data permanence. 
+* Preserving linguistic resources for low-resource languages entails 
+  conflicts between governance, centralization, and data permanence. 
 * _Centralized_ repositories like 
   Mozilla Common Voice (Ardila+ 2020) or AILLA (Kung and Sherzer, 2013)
   prioritize community governance, 
-  ensuring owners retain rights like data erasure. Conversely, 
+  ensuring owners retain rights like data erasure
 * decentralized protocols ensure resources survive 
   political changes or vendor failures through immutable storage
 * we should promote global initiatives that empower communities to diversify
   data destinations, blending ethical governance with persistent
-  decentralization. Finally, 
-* physical vaults like the Arctic World Archive 20 offer extreme long-term
-  security, which may be crucial for preserving the linguistic heritage
+  decentralization
+* physical vaults like the Arctic World Archive offer extreme long-term secu,
+  * may be crucial for preserving the linguistic heritage
 * OP35 What is the best way to preserve the linguistic heritage for
   low-resource languages, balancing community governance, decentralization, and
   data permanence?
 
-## Speech Ü 
+## Speech 🌱 
 
-Models such as Whisper (Radford+ 2023) show 
-strong cross-lingual capabilities, but developing effective representation
+* Models such as Whisper (Radford+ 2023) show 
+  strong cross-lingual capabilities
 * low-resource settings is still a fundamental challenge 
   (Liang and Levow, 2025)
 * self-supervised models like HuBERT (Hsu+ 2021) extract discrete tokens
-  to interface with text-native LLMs (Nguyen+ 2025), a primary imperative is
+  to interface with text-native LLMs (Nguyen+ 2025)
 * needed: a universal speech recognition system capable of generating zero-shot
-  representations without fine-tuning (Zhao+ 2025c). Finally, 
+  representations without fine-tuning (Zhao+ 2025c)
 * integrating text-only techniques for unseen language acquisition with
   speech-based information remains a vital alternate track.
 * OP36 What are the most effective speech representations for low-resource
@@ -602,31 +525,31 @@ strong cross-lingual capabilities, but developing effective representation
 * OP38 How can text-only unseen language acquisition techniques be effectively
   integrated with speech data?
 
-## Multimodality Ü 
+## Multimodality 🌱 
 
-Multimodality, implemented as the integration of vision and speech with lang,
-could potentially yield better representations in low-resource settings
-(Zhuang+ 2024; Du+ 2022; Cui+ 2025). Although developmentally plausible
-(Campbell+ 2024), integrating these modalities into AI models remains chal-
-lenging, as 
-* the benefits of visual information can often be compensated for with increased
-  text data (Hu+ 2024; Alonso+ 2025). While 
+* Multimodality, implemented as the integration of vision and speech with lang,
+  could potentially yield better representations in low-resource settings
+  (Zhuang+ 2024; Du+ 2022; Cui+ 2025). Although 
+* integrating these modalities into AI models is developmentally plausible
+  (Campbell+ 2024)
+* hE the benefits of visual information can often be compensated for with more
+  text data (Hu+ 2024; Alonso+ 2025). 
 * strongly multimodal models are emerging (Xu+ 2025a), 
-* hE multimodality will serve only as an alternate research line should primary
-  paths encounter unforeseen obstacles.
+* hE multimodality will serve only as an alternate research line 
+  should primary paths encounter unforeseen obstacles.
 * OP39 To what extent can multimodal information facilitate low-resource
   language acquisition, and which modality combinations are most effective?
 
-## Human-Model Interaction Ü 
+## Human-Model Interaction 🌱 
 
 * Traditionally, human involvement in machine learning has centered on 
   * active learning and human-in-the-loop pipelines where 
     * users are largely confined to annotating samples 
       (Zhang+ 2022; Wang+ 2021), 
-      occasionally via a dialogue interface (Chhibber and Law, 2021). To
+      occasionally via a dialogue interface (Chhibber and Law, 2021)
 * learning from observation has emerged to learn directly from demonstrations
-  without explicit labeling (Burnwal+ 2025). Frameworks for 
-* continuous knowledge acquisition, such as 
+  without explicit labeling (Burnwal+ 2025)
+* continuous knowledge acquisition
   eg crystallization of knowledge (Zhang, 2026), increasingly 
   rely on agentic memory architectures 
   to organize, retrieve, and iteratively refine experiential lessons over time
