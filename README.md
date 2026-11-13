@@ -4,9 +4,9 @@
 
 ## Multilinguality and cultures
 
-- [Omnilingual MT](/README.md# Omnilingual MT) Machine Translation for 1,600 Languagesatat
+- [Omnilingual MT](/README.md#Omnilingual MT) Machine Translation for 1,600 Languagesatat
 - [A Research Compass](/README.md#A Research Compass) for the Acquisition of Thousands of Low-Resource Languages by AI Models
-- [Global PIQA](/README.md# Global PIQA) Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
+- [Global PIQA](/README.md#Global PIQA) Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
 - [Cross-Lingual Transfer of Evil Vectors](/README.md#Cross-Lingual Transfer of Evil Vectors) Is Directionally Asymmetric
 - [Gold vs Translation](/README.md#Gold vs Translation): Are We Measuring Language, Knowledge, or Locality in Translated Benchmarks?
 - [Translation Asymmetry](/README.md#Translation Asymmetry) in LLMs as a Data Augmentation Factor
@@ -18,7 +18,7 @@
 
 ### Tokenization
 
-- [Parallel Tokenizers](/README.md# Parallel Tokenizers): Rethinking Vocabulary Design in Cross-Lingual Transfer of Low-Resource Languages
+- [Parallel Tokenizers](/README.md#Parallel Tokenizers): Rethinking Vocabulary Design in Cross-Lingual Transfer of Low-Resource Languages
 - [LangMAP](/README.md#LangMAP): A Language-Adaptive Approach to Tokenization
 - [When Tokenization is Secretly Output Supervision](/README.md#When Tokenization is Secretly Output Supervision)
 
@@ -30,13 +30,13 @@
 
 ### Specific languages
 
-- [IndicParam](/README.md# IndicParam) Benchmark to Evaluate LLMs on Low-Resource Indic Languages
-- [NaijaS2ST](/README.md# NaijaS2ST): A Multi-Accent Benchmark for Speech-to-Speech Translation of Nigerian Languages
-- [AfriSUD](/README.md# AfriSUD): A Dependency Treebank Collection for Evaluating Models on African Languages
-- [Impact of Bilingual Corpus on Pretraining LLMs](/README.md# Impact of Bilingual Corpus on Pretraining LLMs) An Analysis for Turkish
-- [When Multilingual Embeddings Collapse](/README.md# When Multilingual Embeddings Collapse) for Hausa and Fongbe MT
-- [CoPiT](/README.md# CoPiT): Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
-- [When Similar Means Different](/README.md# When Similar Means Different) Evaluating LLMs on Arabic–Hebrew Cognates
+- [IndicParam](/README.md#IndicParam) Benchmark to Evaluate LLMs on Low-Resource Indic Languages
+- [NaijaS2ST](/README.md#NaijaS2ST): A Multi-Accent Benchmark for Speech-to-Speech Translation of Nigerian Languages
+- [AfriSUD](/README.md#AfriSUD): A Dependency Treebank Collection for Evaluating Models on African Languages
+- [Impact of Bilingual Corpus on Pretraining LLMs](/README.md#Impact of Bilingual Corpus on Pretraining LLMs) An Analysis for Turkish
+- [When Multilingual Embeddings Collapse](/README.md#When Multilingual Embeddings Collapse) for Hausa and Fongbe MT
+- [CoPiT](/README.md#CoPiT): Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
+- [When Similar Means Different](/README.md#When Similar Means Different) Evaluating LLMs on Arabic–Hebrew Cognates
 - [ScAndinavian GenerAl embedding model](/README.md#ScAndinavian GenerAl embedding model) (SAGA)
 - [Pag-refuse](/README.md#Pag-refuse): Safety Alignment Transfers Unevenly to Tagalog and Taglish
 - [RunyaNER](/README.md#RunyaNER): Auxiliary Language Selection for Runyankore NER
