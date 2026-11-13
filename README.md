@@ -1,5 +1,93 @@
 # EMNLP 2026 -- Notes by Márton Makrai
 
+# Overview
+
+## Multilinguality and cultures
+
+- [Omnilingual MT](/README.md# Omnilingual MT) Machine Translation for 1,600 Languagesatat
+- [A Research Compass](/README.md#A Research Compass) for the Acquisition of Thousands of Low-Resource Languages by AI Models
+- [Global PIQA](/README.md# Global PIQA) Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
+- [Cross-Lingual Transfer of Evil Vectors](/README.md#Cross-Lingual Transfer of Evil Vectors) Is Directionally Asymmetric
+- [Gold vs Translation](/README.md#Gold vs Translation): Are We Measuring Language, Knowledge, or Locality in Translated Benchmarks?
+- [Translation Asymmetry](/README.md#Translation Asymmetry) in LLMs as a Data Augmentation Factor
+- [The Interlingua Hypothesis](/README.md#The Interlingua Hypothesis)
+- [Donors and Recipients](/README.md#Donors and Recipients): On Asymmetric Transfer Across Tasks and Languages
+- [Polyglot Teachers](/README.md#Polyglot Teachers): Evaluating LMs for Multilingual Synthetic Data Generation
+- [MultiBLiMP 1.0](/README.md#MultiBLiMP 1.0): A Massively Multilingual Benchmark of Linguistic Minimal Pairs
+- [Harm or Humor](/README.md#Harm or Humor): A Multimodal, Multilingual Benchmark for Overt and Covert Harmful Humor
+
+### Tokenization
+
+- [Parallel Tokenizers](/README.md# Parallel Tokenizers): Rethinking Vocabulary Design in Cross-Lingual Transfer of Low-Resource Languages
+- [LangMAP](/README.md#LangMAP): A Language-Adaptive Approach to Tokenization
+- [When Tokenization is Secretly Output Supervision](/README.md#When Tokenization is Secretly Output Supervision)
+
+### Cultural Awareness
+
+- [ScopeBench](/README.md#ScopeBench): Evaluating Cultural Norm Scope Awareness in LLMs
+- [Aligning Cultural Behaviors in Arabic Language Models](/README.md#Aligning Cultural Behaviors in Arabic Language Models) via Preferences
+- [CARE](/README.md#CARE): Multilingual Human Preference Learning for Cultural Awareness
+
+### Specific languages
+
+- [IndicParam](/README.md# IndicParam) Benchmark to Evaluate LLMs on Low-Resource Indic Languages
+- [NaijaS2ST](/README.md# NaijaS2ST): A Multi-Accent Benchmark for Speech-to-Speech Translation of Nigerian Languages
+- [AfriSUD](/README.md# AfriSUD): A Dependency Treebank Collection for Evaluating Models on African Languages
+- [Impact of Bilingual Corpus on Pretraining LLMs](/README.md# Impact of Bilingual Corpus on Pretraining LLMs) An Analysis for Turkish
+- [When Multilingual Embeddings Collapse](/README.md# When Multilingual Embeddings Collapse) for Hausa and Fongbe MT
+- [CoPiT](/README.md# CoPiT): Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
+- [When Similar Means Different](/README.md# When Similar Means Different) Evaluating LLMs on Arabic–Hebrew Cognates
+- [ScAndinavian GenerAl embedding model](/README.md#ScAndinavian GenerAl embedding model) (SAGA)
+- [Pag-refuse](/README.md#Pag-refuse): Safety Alignment Transfers Unevenly to Tagalog and Taglish
+- [RunyaNER](/README.md#RunyaNER): Auxiliary Language Selection for Runyankore NER
+
+## Interpretation of LLMs
+
+- [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](/README.md#A Circuit)
+- [Automated Attribution Graph Interpretation via Probe Prompting](/README.md#Automated Attribution)
+- [Belief or Circuitry? Causal Evidence for In-Context Graph Learning](/README.md#Belief or)
+- [Testing the Limits of Truth Directions in LLMs](/README.md#Testing the)
+- [Discovering Interpretable Algorithms by Decompiling Transformers to RASP](/README.md#Discovering Interpretable)
+- [Probing for Knowledge Attribution in Large Language Models](/README.md#Probing for)
+- [Probing Without Labels: Contrast-only Reproductions of Interpret Results](/README.md#Probing Without)
+- [Data Attribution of Emergent Misalignment with Persona Features](/README.md#Data Attribution)
+- [Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?](/README.md#Does Out)
+- [Decomposing the Attention Write by Source Detects Contextual Hallucinations](/README.md#Decomposing the)
+- [When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs](/README.md#When Context)
+- [Do Language Models Understand Implicit Logical Meaning? A Case Study of Scope Ambiguity Resolution in Context](/README.md#Do Language)
+- [Cognitively Decoupled Meta-Induction](/README.md#Cognitively Decoupled Meta-Induction) for Out-of-Distribution Generalization
+- [How Much Sonority Structure Do Phonotactic Language Models Learn from Distribution?](/README.md#How Much)
+- [Rashid](/README.md#Rashid): A Cipher-Based Framework for Exploring In-Context Language Learning
+
+### Reasoning
+
+* [High-fertility languages reason in compressed, load-bearing chains](/README.md#High-fertility languages reason in compressed, load-bearing chains)
+* [UReason](/README.md#UReason): Benchmarking Reasoning-to-Generation Alignment
+* [Demystifying Entropy-based Selection for Chain-of-Thought Compression ](/README.md#Demystifying Entropy-based Selection for Chain-of-Thought Compression ) in Large Reasoning Models
+* [Lost in Perception](/README.md#Lost in Perception): Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
+* [Conformal Certification of Reasoning Trace Prefixes](/README.md#Conformal Certification of Reasoning Trace Prefixes)
+* [When Must Faithful Chain-of-Thought Fail](/README.md#When Must Faithful Chain-of-Thought Fail): An Information-Theoretic Bound and Its Empirical Limits
+* [Attend or Perish](/README.md#Attend or Perish): Benchmarking Attention on Algorithmic Reasoning
+
+## Linguistics
+
+* [Universal-Guided Grammar Induction](/README.md#Universal-Guided Grammar Induction)
+* [The Multilingual FrameNet Corpus](/README.md#The Multilingual FrameNet Corpus)
+* [Translating the Untrans](/README.md#Translating the Untrans): An Operationalizable Ontology for Untranslatability
+* [Grammatist ](/README.md#Grammatist ) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
+
+## NLP Misc
+
+* [Subliminal Clocks](/README.md#Subliminal Clocks): Latent Time Modelling in Diffusion Language Models
+* [Perturbation, Not Provenance](/README.md#Perturbation, Not Provenance): Why Activation Steering Is Not Robust Text Watermarking 
+* (Related to Titov's keynote) [Operationalising the Superficial Alignment Hypothesis ](/README.md#Operationalising the Superficial Alignment Hypothesis ) via Task Complexity 
+* [BenchPreS](/README.md#BenchPreS): A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs
+* [Claim Verification in the Age of Large Language Models](/README.md#Claim Verification in the Age of Large Language Models): A Survey
+* [ZipBench](/README.md#ZipBench): Low-Cost Framework for Compressing Comprehensive LLM Benchmarks
+* [Chronoberg](/README.md#Chronoberg): A 250-Year Diachronic Corpus with Temporal Affective Lexicons
+* [One Advisor, Many Faces](/README.md#One Advisor, Many Faces): How User Personas Shape LLM Stock Recommendations
+* [CAGE](/README.md#CAGE): Coherence-Aware Graph Encoding for RAG
+
 # Sunday, October 25 — Main Conference Day 1
 
 ## Session: 11 AM Interpretability and Analysis of Models for NLP 1
@@ -349,11 +437,12 @@ Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
   * 3,000 texts and 6,000 images in English and Arabic, alongside
   * 1,200 videos that span English, Arabic, and language-independent (universal)
     contexts.
-* strict annotation guideline: distinguishing Safe jokes from Harmful ones, with
+* strict annotation guideline: distinguishing Safe jokes from Harmful ones
   * Harmful further classified into Explicit (overt) and Implicit (Covert)
 * We systematically evaluate SOTA open and closed-source models
   across all modalities.
-* findings: closed-source models significantly outperform open-source ones, with
+* findings: 
+  * closed-source models significantly outperform open-source ones
   * notable difference in performance between English and Arabic in both
 
 ### Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRAs
@@ -878,7 +967,7 @@ Yuqian Wang, Y Wang, C Xiao, K Xu, B He, J Tan, Z Chen, L Chen, Y Huo, M Sun
   * relies heavily on neighbor-based matching between queries and
     demonstrations, limiting out-of-distribution (OOD) performance
 * rule-based inductive reasoning derives task-level regularities, which we term
-  task-level inductive representations (TIR), before directly answering.
+  task-level inductive representations (TIR)
 * hE existing methods lack generalizable inductive ability across diverse tasks.
 * Inspired by meta-learning,
 * we propose Cognitive-Decoupling meta-Induction (CoDI) for TIR-based inductive
@@ -1702,7 +1791,8 @@ Samuel Frontull, Jean Maillard, Christopher Haberland, Ruth Videsott, S Lusito
 * question answering, similar to ECLeKTic.
 * This year's task will be multimodal and will include audio and text formats.
 
-#### [Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures](https://neurips.cc/virtual/2026/loc/sydney/poster/139393)
+#### [Global PIQA:](https://neurips.cc/virtual/2026/loc/sydney/poster/139393)
+##### Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
 
 * ? culturally-specific evaluation benchmarks for large language models (LLMs)
 * we: Global PIQA, a participatory commonsense reasoning benchmark for 100+ ls
@@ -1720,7 +1810,7 @@ Samuel Frontull, Jean Maillard, Christopher Haberland, Ruth Videsott, S Lusito
   * so do complex reasoning and expert knowledge.
 * other talk: Global PIQA is saturated
 
-#### Honorable Mentions
+##### Honorable Mentions
 
 ```
 Bahasa Indonesia
@@ -1804,7 +1894,7 @@ Invited talk by Alham Fikri Aji (MBZUAI), 16:00
 * HyperBrowseComp
 * upcoming: UltraBrowseComp
 
-### Best paper. RunyaNER: Auxiliary Language Selection for Runyankore NER
+### [Best paper] RunyaNER: Auxiliary Language Selection for Runyankore NER
 
 Prosper Arineitwe Asiimwe, Francois Meyer, Jan Buys
 
@@ -1833,7 +1923,7 @@ Arabic.
 
 ### CARE: Multilingual Human Preference Learning for Cultural Awareness
 
-Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu
+Geyang Guo, Tarek Naous, Hiromi Wakaki, Y Nishimura, Y Mitsufuji, A Ritter, W Xu
 
 [paper](https://aclanthology.org/2025.emnlp-main.1669/)
 
@@ -1853,7 +1943,7 @@ Geyang Guo, Tarek Naous, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan R
 
 # Thursday, October 29 — Workshops and Tutorials 2
 
-## W16: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)
+## Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)
 
 ### 9:10 [Feucht] Using OCR Heads to Verbalize Image Semantics (9:09)
 
@@ -1946,27 +2036,34 @@ Chunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao,
     representations, and
   * large scale instruction tuning and reinforcement learning,
     to better align to end tasks and user preferences.
-* We measure the relative importance of these two stages by training LIMA, a 65B
-  parameter LLaMa language model fine-tuned with the standard supervised loss
-  on only 1,000 carefully curated prompts and responses,
-  without any reinforcement learning or human preference modeling.LIMA
+* We measure the relative importance of these two stages by training 
+  * exper with LIMA, a 65B parameter LLaMa language model 
+    fine-tuned with the standard supervised loss
+    on only 1,000 carefully curated prompts and responses,
+    without any reinforcement learning or human preference modeling
   * remarkably strong performance,
     learning to follow specific response formats from only a handful of exampls,
     * including complex queries that range from planning trip itineraries to
-    speculating about alternate history.Moreover, the model
-    * tends to generalize well to unseen tasks that did not appear in the
+      speculating about alternate history
+    * tends to generalize well to unseen tasks
     * human study: responses from LIMA are either equivalent or strictly
-      preferred to GPT-4 in 43\% of cases; this statistic is as high as
-      * 58\% when compared to Bard and 65\% versus DaVinci003, which was trained
-        with human feedback.Taken together, these results strongly suggest that
+      preferred to GPT-4 in 43% of cases; this statistic is as high as
+      * 58% when compared to Bard and 65% versus DaVinci003, which was trained
+        with human feedback
 * ie almost all knowledge in LLMs is learned during pretraining, and
-  only limited instruction tuning data is necessary to teach models to produce
+  only limited instruction tuning data is necessary to teach models
 
 ##### Support for SAH comes from different angles
 
-* fine-tuning on few examples (data view) ([Zhou+ 2023](https://arxiv.org/abs/2305.11206); [Ye+ 2025](https://arxiv.org/abs/2502.03387))
-* updating only a small number of parameters (parametric view). (Han+ 2024](https://arxiv.org/abs/2403.14608); [Li+ 2024](https://arxiv.org/abs/2410.10862))
-* prepending well-designed prompts / inference tweaks (inference-control view) (Lin+ 2023](https://arxiv.org/abs/2312.01552); [Lake+ 2025](https://aclanthology.org/2025.naacl-long.346/))
+* fine-tuning on few examples (data view) 
+  ([Zhou+ 2023](https://arxiv.org/abs/2305.11206);
+   [Ye+ 2025](https://arxiv.org/abs/2502.03387))
+* updating only a small number of parameters (parametric view). 
+  (Han+ 2024](https://arxiv.org/abs/2403.14608);
+   [Li+ 2024](https://arxiv.org/abs/2410.10862))
+* prepending well-designed prompts / inference tweaks (inference-control view) 
+  (Lin+ 2023](https://arxiv.org/abs/2312.01552);
+   [Lake+ 2025](https://aclanthology.org/2025.naacl-long.346/))
 
 #### Three views – three upper bounds on task complexity
 
@@ -2020,7 +2117,8 @@ Qwen2.5, harmful medical SFT
 
 ##### Emergent Misalignment [EM] features trace to villain narratives
 
-**EM features trace to villain narratives on the web, yet those documents alone do not induce EM**
+EM features trace to villain narratives on the web, 
+yet those documents alone do not induce EM
 
 **1 – Model diffing**
 Which SAE features shift under misaligned fine-tuning?
@@ -2053,7 +2151,7 @@ Tankred Saanum, Can Demircan, Samuel J. Gershman, Eric Schulz
 ### 12:00 Poster Session 1 @ Hall H, Boards 1–80 (Reproducibility Track)
 
 #### Reproducing the Results, But not the Interpretations: (12:18)
-  Evidence for Artifacts in Automatic Creativity Scoring with LLMs
+##### Evidence for Artifacts in Automatic Creativity Scoring with LLMs
 
 Carl Hermany, Omar Momen, Sina Zarrieß (program: #51, Reproducibility Track)
 
@@ -2202,7 +2300,7 @@ Invited talk by Michael Hahn
 * Recovering a head
 * Decompilation
 
-### 14:45 Oral presentations 2, the Best papers
+### Oral presentations 2, the Best papers, 14:45
 
 #### Probing for Knowledge Attribution in Large Language Models
 
@@ -2212,16 +2310,15 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
   * faithfulness violations, where the model misuses provided context, and
   * factuality violations, where answers reflect errors in internal knowledge.
 * Proper mitigation depends on knowing which source drives each answer.
-* We study contributive attribution
-  * contrib attrib: the classif of the dominant knowl source behind each output
-  * a simple linear probe trained on hidden representations can reliably
-    identify it.
-* We introduce AttriWiki, a self-supervised pipeline that automatically
-  generates labelled training data
+* contributive attribution
+  * = the classification of the dominant knowledge source behind each output
+  * a simple linear probe trained on hidden representations can reliably identif
+* We introduce AttriWiki, a self-supervised pipeline that 
+  automatically generates labelled training data
   by prompting models to recall withheld entities from memory
   or read them from context without relying on knowledge conflicts.
-* Probes trained on AttriWiki achieve up to 0.96 Macro-F1 on Llama-3.1-8B,
-  Mistral-7B, and Qwen-7B,
+* Probes trained on AttriWiki achieve up to 0.96 Macro-F1 
+  on Llama-3.1-8B, Mistral-7B, and Qwen-7B,
   * transfer to SQuAD and WebQuestions with 0.94-0.99 Macro-F1, and
   * generalise zero-shot to Tighidet+ (2024)'s benchmark,
     outperforming their probe on conflicting settings without retraining.
@@ -2234,13 +2331,14 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
 Stefan F. Schouten, Peter Bloem
 
 * Contrastive interpretability methods use
-  * pairs (or tuples) of inputs whose elements differ in minimal but controlled
-    ways.
+  * pairs (or tuples) of inputs whose elements 
+    differ in minimal but controlled ways.
 * eg Contrast-Consistent Search (CCS) identif whether LMs encode bin features,
   in their internal activations
-  * bin feat eg sentence truth, 
-  * requires no labels ie no assumption that internal activations agree with
-    those labels, as is the case for supervised methods
+  * bin feat eg sentence truth
+  * requires no labels ie no assumption that 
+    internal activations agree with those labels, 
+    as is the case for supervised methods
 * we
   * reproduce results previously obtained with CCS,
   * better understand CCS’s objective,
@@ -2256,7 +2354,7 @@ Stefan F. Schouten, Peter Bloem
 Pedro Lobato Ferreira, Wilker Aziz, Ivan Titov
 
 * Chain-of-thought (CoT) reasoning
-  offers a window into the decision-making of large language models (LLMs),
+  offers a window into the decision-making of LLMs
   * can be monitored for target behaviors by reading the reasoning trace,
 * Latent CoT approaches replace the explicit tokens with
   a small number of continuous states, lowering inference costs but
@@ -2272,7 +2370,7 @@ Pedro Lobato Ferreira, Wilker Aziz, Ivan Titov
   * hint-reliance as the monitorability target, we compare monitors
   * exper across reasoning modes,
     from explicit CoT to weakly- and strongly-supervised latent CoT, on
-    math reasoning and question answering. We find that, in this setup,
+    math reasoning and question answering
 * monitorability depends more on
   * properties of the task
     (eg whether the correct answer constrains the supporting reasoning) and
@@ -2306,7 +2404,7 @@ ME Rulli, TV Fontanari, S Petruzzi, F Alvetreti, G Strano, D Crisostomi,
 #### Lost in Perception: Isolating Perceptual and Reasoning Failures
 ##### in Multimodal Physics and Geometry Reasoning
 
-Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ganu, Rajiv Ratn Shah
+Raj Jaiswal, Sree Krishna Uppalapati, D Patel, R Khatoniar, T Ganu, R Ratn Shah
 
 * Multimodal LLMs report strong performance on scientific reasoning benchmarks,
 * hE perception and reasoning as a single measurable process.
@@ -2324,7 +2422,7 @@ Raj Jaiswal, Sree Krishna Uppalapati, Dhruvkumar Patel, Ria Khatoniar, Tanuja Ga
   falls below the weakest model from experiments on every task, with
   * reasoning traces frequently truncating before completion.
 
-#### Perturbation, Not Provenance: Why Activat Steering Not Robust Text Watermark
+#### Perturbation, Not Provenance: Why Activat Steer Not Robust Text Watermark
 
 Sergey Pletenev
 
@@ -2407,10 +2505,10 @@ Sara Candussio, Daniel Scalena, E Fersini, L Bortolussi, M Nissim, G Sarti
 Steffen Castle; M Dustin Nasert; CA Ebert; L Hennig; S Möller; N Feldhus
 
 * When a language model answers from a retrieved document, its
-  attention heads mix evidence from
-  the context with evidence from the model’s own self-generated tokens and
+  attention heads mix 
+  evid from the context with evid from the model’s own self-generated tokens and
   write the sum into the residual stream.
-* We split each head’s write into these two source-specific contributions before
+* We split each head’s write into these two source-specific contributions
   * two sides are complementary.
   * The context write, read out along the model’s unembedding, gives a
     training-free groundedness score (GroundHOG-U).
