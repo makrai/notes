@@ -4,89 +4,89 @@
 
 ## Multilinguality and cultures
 
-- [Omnilingual MT](/README.md#Omnilingual) Machine Translation for 1,600 Languagesatat
-- [A Research Compass](/README.md#A) for the Acquisition of Thousands of Low-Resource Languages by AI Models
-- [Global PIQA](/README.md#Global) Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
-- [Cross-Lingual Transfer of Evil Vectors](/README.md#Cross) Is Directionally Asymmetric
-- [Gold vs Translation](/README.md#Gold): Are We Measuring Language, Knowledge, or Locality in Translated Benchmarks?
-- [Translation Asymmetry](/README.md#Translation) in LLMs as a Data Augmentation Factor
-- [The Interlingua Hypothesis](/README.md#The)
-- [Donors and Recipients](/README.md#Donors): On Asymmetric Transfer Across Tasks and Languages
-- [Polyglot Teachers](/README.md#Polyglot): Evaluating LMs for Multilingual Synthetic Data Generation
-- [MultiBLiMP 1.0](/README.md#MultiBLiMP): A Massively Multilingual Benchmark of Linguistic Minimal Pairs
-- [Harm or Humor](/README.md#Harm): A Multimodal, Multilingual Benchmark for Overt and Covert Harmful Humor
+- [Omnilingual MT](/README.md#omnilingual) Machine Translation for 1,600 Languagesatat
+- [A Research Compass](/README.md#a) for the Acquisition of Thousands of Low-Resource Languages by AI Models
+- [Global PIQA](/README.md#global) Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
+- [Cross-Lingual Transfer of Evil Vectors](/README.md#cross) Is Directionally Asymmetric
+- [Gold vs Translation](/README.md#gold): Are We Measuring Language, Knowledge, or Locality in Translated Benchmarks?
+- [Translation Asymmetry](/README.md#translation) in LLMs as a Data Augmentation Factor
+- [The Interlingua Hypothesis](/README.md#the)
+- [Donors and Recipients](/README.md#donors): On Asymmetric Transfer Across Tasks and Languages
+- [Polyglot Teachers](/README.md#polyglot): Evaluating LMs for Multilingual Synthetic Data Generation
+- [MultiBLiMP 1.0](/README.md#multiBLiMP): A Massively Multilingual Benchmark of Linguistic Minimal Pairs
+- [Harm or Humor](/README.md#harm): A Multimodal, Multilingual Benchmark for Overt and Covert Harmful Humor
 
 ### Tokenization
 
-- [Parallel Tokenizers](/README.md#Parallel): Rethinking Vocabulary Design in Cross-Lingual Transfer of Low-Resource Languages
-- [LangMAP](/README.md#LangMAP): A Language-Adaptive Approach to Tokenization
-- [When Tokenization is Secretly Output Supervision](/README.md#When)
+- [Parallel Tokenizers](/README.md#parallel): Rethinking Vocabulary Design in Cross-Lingual Transfer of Low-Resource Languages
+- [LangMAP](/README.md#langMAP): A Language-Adaptive Approach to Tokenization
+- [When Tokenization is Secretly Output Supervision](/README.md#when)
 
 ### Cultural Awareness
 
-- [ScopeBench](/README.md#ScopeBench): Evaluating Cultural Norm Scope Awareness in LLMs
-- [Aligning Cultural Behaviors in Arabic Language Models](/README.md#Aligning) via Preferences
-- [CARE](/README.md#CARE): Multilingual Human Preference Learning for Cultural Awareness
+- [ScopeBench](/README.md#scopeBench): Evaluating Cultural Norm Scope Awareness in LLMs
+- [Aligning Cultural Behaviors in Arabic Language Models](/README.md#aligning) via Preferences
+- [CARE](/README.md#care): Multilingual Human Preference Learning for Cultural Awareness
 
 ### Specific languages
 
-- [IndicParam](/README.md#IndicParam) Benchmark to Evaluate LLMs on Low-Resource Indic Languages
-- [NaijaS2ST](/README.md#NaijaS2ST): A Multi-Accent Benchmark for Speech-to-Speech Translation of Nigerian Languages
-- [AfriSUD](/README.md#AfriSUD): A Dependency Treebank Collection for Evaluating Models on African Languages
-- [Impact of Bilingual Corpus on Pretraining LLMs](/README.md#Impact) An Analysis for Turkish
-- [When Multilingual Embeddings Collapse](/README.md#When) for Hausa and Fongbe MT
-- [CoPiT](/README.md#CoPiT): Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
-- [When Similar Means Different](/README.md#When) Evaluating LLMs on Arabic–Hebrew Cognates
-- [ScAndinavian GenerAl embedding model](/README.md#ScAndinavian) (SAGA)
-- [Pag-refuse](/README.md#Pag): Safety Alignment Transfers Unevenly to Tagalog and Taglish
-- [RunyaNER](/README.md#RunyaNER): Auxiliary Language Selection for Runyankore NER
+- [IndicParam](/README.md#indicParam) Benchmark to Evaluate LLMs on Low-Resource Indic Languages
+- [NaijaS2ST](/README.md#naijaS2ST): A Multi-Accent Benchmark for Speech-to-Speech Translation of Nigerian Languages
+- [AfriSUD](/README.md#afriSUD): A Dependency Treebank Collection for Evaluating Models on African Languages
+- [Impact of Bilingual Corpus on Pretraining LLMs](/README.md#impact) An Analysis for Turkish
+- [When Multilingual Embeddings Collapse](/README.md#when) for Hausa and Fongbe MT
+- [CoPiT](/README.md#coPiT): Cognitive Pivot Translation for Digraphic Low-Resource Mongolian
+- [When Similar Means Different](/README.md#when) Evaluating LLMs on Arabic–Hebrew Cognates
+- [ScAndinavian GenerAl embedding model](/README.md#scAndinavian) (SAGA)
+- [Pag-refuse](/README.md#pag): Safety Alignment Transfers Unevenly to Tagalog and Taglish
+- [RunyaNER](/README.md#runyaNER): Auxiliary Language Selection for Runyankore NER
 
 ## Interpretation of LLMs
 
 - [Operationalising the Superficial Alignment Hypothesis](/README.md#)
-- [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](/README.md#A)
-- [Automated Attribution Graph Interpretation via Probe Prompting](/README.md#Automated)
-- [Belief or Circuitry? Causal Evidence for In-Context Graph Learning](/README.md#Belief)
-- [Testing the Limits of Truth Directions in LLMs](/README.md#Testing)
-- [Discovering Interpretable Algorithms by Decompiling Transformers to RASP](/README.md#Discovering)
-- [Probing for Knowledge Attribution in Large Language Models](/README.md#Probing)
-- [Probing Without Labels: Contrast-only Reproductions of Interpret Results](/README.md#Probing)
-- [Data Attribution of Emergent Misalignment with Persona Features](/README.md#Data)
-- [Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?](/README.md#Does)
-- [Decomposing the Attention Write by Source Detects Contextual Hallucinations](/README.md#Decomposing)
-- [When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs](/README.md#When)
-- [Do Language Models Understand Implicit Logical Meaning? A Case Study of Scope Ambiguity Resolution in Context](/README.md#Do)
-- [Cognitively Decoupled Meta-Induction](/README.md#Cognitively) for Out-of-Distribution Generalization
-- [How Much Sonority Structure Do Phonotactic Language Models Learn from Distribution?](/README.md#How)
-- [Rashid](/README.md#Rashid): A Cipher-Based Framework for Exploring In-Context Language Learning
+- [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](/README.md#a)
+- [Automated Attribution Graph Interpretation via Probe Prompting](/README.md#automated)
+- [Belief or Circuitry? Causal Evidence for In-Context Graph Learning](/README.md#belief)
+- [Testing the Limits of Truth Directions in LLMs](/README.md#testing)
+- [Discovering Interpretable Algorithms by Decompiling Transformers to RASP](/README.md#discovering)
+- [Probing for Knowledge Attribution in Large Language Models](/README.md#probing)
+- [Probing Without Labels: Contrast-only Reproductions of Interpret Results](/README.md#probing)
+- [Data Attribution of Emergent Misalignment with Persona Features](/README.md#data)
+- [Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?](/README.md#does)
+- [Decomposing the Attention Write by Source Detects Contextual Hallucinations](/README.md#decomposing)
+- [When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs](/README.md#when)
+- [Do Language Models Understand Implicit Logical Meaning? A Case Study of Scope Ambiguity Resolution in Context](/README.md#do)
+- [Cognitively Decoupled Meta-Induction](/README.md#cognitively) for Out-of-Distribution Generalization
+- [How Much Sonority Structure Do Phonotactic Language Models Learn from Distribution?](/README.md#how)
+- [Rashid](/README.md#rashid): A Cipher-Based Framework for Exploring In-Context Language Learning
 
 ### Reasoning
 
-* [High-fertility languages reason in compressed, load-bearing chains](/README.md#High)
-* [UReason](/README.md#UReason): Benchmarking Reasoning-to-Generation Alignment
-* [Demystifying Entropy-based Selection for Chain-of-Thought Compression](/README.md#Demystifying) in Large Reasoning Models
-* [Lost in Perception](/README.md#Lost): Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
-* [Conformal Certification of Reasoning Trace Prefixes](/README.md#Conformal)
-* [When Must Faithful Chain-of-Thought Fail](/README.md#When): An Information-Theoretic Bound and Its Empirical Limits
-* [Attend or Perish](/README.md#Attend): Benchmarking Attention on Algorithmic Reasoning
+* [High-fertility languages reason in compressed, load-bearing chains](/README.md#high)
+* [UReason](/README.md#ureason): Benchmarking Reasoning-to-Generation Alignment
+* [Demystifying Entropy-based Selection for Chain-of-Thought Compression](/README.md#demystifying) in Large Reasoning Models
+* [Lost in Perception](/README.md#lost): Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
+* [Conformal Certification of Reasoning Trace Prefixes](/README.md#conformal)
+* [When Must Faithful Chain-of-Thought Fail](/README.md#when): An Information-Theoretic Bound and Its Empirical Limits
+* [Attend or Perish](/README.md#attend): Benchmarking Attention on Algorithmic Reasoning
 
 ## Linguistics
 
-* [Universal-Guided Grammar Induction](/README.md#Universal)
-* [The Multilingual FrameNet Corpus](/README.md#The)
-* [Translating the Untrans](/README.md#Translating): An Operationalizable Ontology for Untranslatability
-* [Grammatist](/README.md#Grammatist) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
+* [Universal-Guided Grammar Induction](/README.md#universal)
+* [The Multilingual FrameNet Corpus](/README.md#the)
+* [Translating the Untrans](/README.md#translating): An Operationalizable Ontology for Untranslatability
+* [Grammatist](/README.md#grammatist) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
 
 ## NLP Misc
 
-* [Subliminal Clocks](/README.md#Subliminal): Latent Time Modelling in Diffusion Language Models
-* [Perturbation, Not Provenance](/README.md#Perturbation): Why Activation Steering Is Not Robust Text Watermarking 
-* [BenchPreS](/README.md#BenchPreS): A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs
-* [Claim Verification in the Age of Large Language Models](/README.md#Claim): A Survey
-* [ZipBench](/README.md#ZipBench): Low-Cost Framework for Compressing Comprehensive LLM Benchmarks
-* [Chronoberg](/README.md#Chronoberg): A 250-Year Diachronic Corpus with Temporal Affective Lexicons
-* [One Advisor, Many Faces](/README.md#One): How User Personas Shape LLM Stock Recommendations
-* [CAGE](/README.md#CAGE): Coherence-Aware Graph Encoding for RAG
+* [Subliminal Clocks](/README.md#subliminal): Latent Time Modelling in Diffusion Language Models
+* [Perturbation, Not Provenance](/README.md#perturbation): Why Activation Steering Is Not Robust Text Watermarking 
+* [BenchPreS](/README.md#benchPreS): A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs
+* [Claim Verification in the Age of Large Language Models](/README.md#claim): A Survey
+* [ZipBench](/README.md#zipBench): Low-Cost Framework for Compressing Comprehensive LLM Benchmarks
+* [Chronoberg](/README.md#chronoberg): A 250-Year Diachronic Corpus with Temporal Affective Lexicons
+* [One Advisor, Many Faces](/README.md#one): How User Personas Shape LLM Stock Recommendations
+* [CAGE](/README.md#cage): Coherence-Aware Graph Encoding for RAG
 
 # Sunday, October 25 — Main Conference Day 1
 
