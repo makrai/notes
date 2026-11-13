@@ -43,6 +43,7 @@
 
 ## Interpretation of LLMs
 
+- [Operationalising the Superficial Alignment Hypothesis](/README.md#[Titov])
 - [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](/README.md#A Circuit)
 - [Automated Attribution Graph Interpretation via Probe Prompting](/README.md#Automated Attribution)
 - [Belief or Circuitry? Causal Evidence for In-Context Graph Learning](/README.md#Belief or)
@@ -63,7 +64,7 @@
 
 * [High-fertility languages reason in compressed, load-bearing chains](/README.md#High-fertility languages reason in compressed, load-bearing chains)
 * [UReason](/README.md#UReason): Benchmarking Reasoning-to-Generation Alignment
-* [Demystifying Entropy-based Selection for Chain-of-Thought Compression ](/README.md#Demystifying Entropy-based Selection for Chain-of-Thought Compression ) in Large Reasoning Models
+* [Demystifying Entropy-based Selection for Chain-of-Thought Compression](/README.md#Demystifying Entropy-based Selection for Chain-of-Thought Compression ) in Large Reasoning Models
 * [Lost in Perception](/README.md#Lost in Perception): Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning
 * [Conformal Certification of Reasoning Trace Prefixes](/README.md#Conformal Certification of Reasoning Trace Prefixes)
 * [When Must Faithful Chain-of-Thought Fail](/README.md#When Must Faithful Chain-of-Thought Fail): An Information-Theoretic Bound and Its Empirical Limits
@@ -74,13 +75,12 @@
 * [Universal-Guided Grammar Induction](/README.md#Universal-Guided Grammar Induction)
 * [The Multilingual FrameNet Corpus](/README.md#The Multilingual FrameNet Corpus)
 * [Translating the Untrans](/README.md#Translating the Untrans): An Operationalizable Ontology for Untranslatability
-* [Grammatist ](/README.md#Grammatist ) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
+* [Grammatist](/README.md#Grammatist ) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
 
 ## NLP Misc
 
 * [Subliminal Clocks](/README.md#Subliminal Clocks): Latent Time Modelling in Diffusion Language Models
 * [Perturbation, Not Provenance](/README.md#Perturbation, Not Provenance): Why Activation Steering Is Not Robust Text Watermarking 
-* (Related to Titov's keynote) [Operationalising the Superficial Alignment Hypothesis ](/README.md#Operationalising the Superficial Alignment Hypothesis ) via Task Complexity 
 * [BenchPreS](/README.md#BenchPreS): A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs
 * [Claim Verification in the Age of Large Language Models](/README.md#Claim Verification in the Age of Large Language Models): A Survey
 * [ZipBench](/README.md#ZipBench): Low-Cost Framework for Compressing Comprehensive LLM Benchmarks
@@ -1969,7 +1969,7 @@ Sheridan Feucht, Benno Krojer, Sarah Wang, Henry Abrahamsen, Byron C. Wallace, D
 
 Editing image representations, 0939
 
-### 9:50 [Titov] Post-training for reasoning LLMs
+### [Titov] Post-training for reasoning LLMs, 9:50
 
 Invited talk by Ivan Titov
 
