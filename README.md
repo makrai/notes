@@ -262,6 +262,7 @@ H Buzaaba, CM B Dione, DI Adelani, S Kahane, B Guillaume, K Gerdes, SH Muhammad,
 
 #### Hardest constructions
 
+|  |  |
 |-------------------------------------|-----------------------------------------------------|
 |Serial verb constructions (comp:svc) | Which verb is the head? Rare for European languages.|
 |Possessive constructions (comp:poss) | African languages mark possession differently from English and European languages.|
