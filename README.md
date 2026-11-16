@@ -4,7 +4,7 @@
 
 ## Multilinguality and cultures
 
-- [Omnilingual MT]() Machine Translation for 1,600 Languagesatat
+- [Omnilingual MT]() Machine Translation for 1,600 Languages
 - [A Research Compass]() for the Acquisition of Thousands of Low-Resource Languages by AI Models
 - [Global PIQA]() Evaluating Commonsense Reasoning Across 100+ Languages and Cultures
 - [Cross-Lingual Transfer of Evil Vectors]() Is Directionally Asymmetric
