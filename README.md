@@ -2,6 +2,18 @@
 
 # Overview
 
+This overview follows an order from linguistics to NLP,
+with a focus on the interpretation of how LLMs work.
+The main part of the document is in chronological order.
+
+## Linguistics
+
+* [Universal-Guided Grammar Induction](#universal-guided-grammar-induction-1734--37)
+* [The Multilingual FrameNet Corpus](#the-multilingual-framenet-corpus-936)
+* [Translating the Untrans](#translating-the-untrans-an-operationalizable-ontology-for-untranslatability): An Operationalizable Ontology for Untranslatability
+* [Grammatist](#grammatist-at-wmt-2026-general-mt-task) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
+- [Do Language Models Understand Implicit Logical Meaning? A Case Study of Scope Ambiguity Resolution in Context](#do-language-models-understand-implicit-logical-meaning)
+
 ## Multilinguality and cultures
 
 - [Omnilingual MT](#omnilingual-mt-machine-translation-for-1600-languages-0925) Machine Translation for 1,600 Languages
@@ -44,18 +56,17 @@
 ## Interpretation of LLMs
 
 - [Operationalising the Superficial Alignment Hypothesis](#operationalising-the-superficial-alignment-hypothesis-via-task-complexity)
-- [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](#a-circuit-for-predicting-hierarchical-structure-in-context-in-llms)
 - [Automated Attribution Graph Interpretation via Probe Prompting](#automated-attribution-graph-interpretation-via-probe-prompting)
+- [Probing Without Labels: Contrast-only Reproductions of Interpret Results](#probing-without-labels-contrast-only-reproductions-of-interpret-results)
+- [A Circuit for Predicting Hierarchical Structure In-Context in LLMs](#a-circuit-for-predicting-hierarchical-structure-in-context-in-llms)
 - [Belief or Circuitry? Causal Evidence for In-Context Graph Learning](#belief-or-circuitry-causal-evidence-for-in-context-graph-learning)
 - [Testing the Limits of Truth Directions in LLMs](#testing-the-limits-of-truth-directions-in-llms)
 - [Discovering Interpretable Algorithms by Decompiling Transformers to RASP]()
 - [Probing for Knowledge Attribution in Large Language Models](#probing-for-knowledge-attribution-in-large-language-models)
-- [Probing Without Labels: Contrast-only Reproductions of Interpret Results](#probing-without-labels-contrast-only-reproductions-of-interpret-results)
 - [Data Attribution of Emergent Misalignment with Persona Features](#data-attribution-of-emergent-misalignment-with-persona-features)
 - [Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?](#does-out-of-sight-equal-out-of-mind-in-cot-monitorability)
 - [Decomposing the Attention Write by Source Detects Contextual Hallucinations](#decomposing-the-attention-write-by-source-detects-contextual-hallucinations)
 - [When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs](#when-context-misleads-surprisal-energy-and-attention-entropy)
-- [Do Language Models Understand Implicit Logical Meaning? A Case Study of Scope Ambiguity Resolution in Context](#do-language-models-understand-implicit-logical-meaning)
 - [Cognitively Decoupled Meta-Induction](#cognitively-decoupled-meta-induction-for-out-of-distribution-generalization) for Out-of-Distribution Generalization
 - [How Much Sonority Structure Do Phonotactic Language Models Learn from Distribution?](#how-much-sonority-structure-do-phonotactic-language-models-learn-from-distribution)
 - [Rashid](#rashid-a-cipher-based-framework-for-exploring-in-context-language-learning): A Cipher-Based Framework for Exploring In-Context Language Learning
@@ -69,13 +80,6 @@
 * [Conformal Certification of Reasoning Trace Prefixes]()
 * [When Must Faithful Chain-of-Thought Fail](): An Information-Theoretic Bound and Its Empirical Limits
 * [Attend or Perish](#attend-or-perish-benchmarking-attention-on-algorithmic-reasoning): Benchmarking Attention on Algorithmic Reasoning
-
-## Linguistics
-
-* [Universal-Guided Grammar Induction](#universal-guided-grammar-induction-1734--37)
-* [The Multilingual FrameNet Corpus](#the-multilingual-framenet-corpus-936)
-* [Translating the Untrans](#translating-the-untrans-an-operationalizable-ontology-for-untranslatability): An Operationalizable Ontology for Untranslatability
-* [Grammatist](#grammatist-at-wmt-2026-general-mt-task) at WMT 2026 General MT Task: with Explicit Linguistic Knowledge
 
 ## NLP Misc
 
@@ -442,7 +446,7 @@ Ahmed Sharshar, Hosam Elgendy, Saad El Dine Ahmed, Yasser Rohaim, Yuxia Wang
   * Harmful further classified into Explicit (overt) and Implicit (Covert)
 * We systematically evaluate SOTA open and closed-source models
   across all modalities.
-* findings: 
+* findings:
   * closed-source models significantly outperform open-source ones
   * notable difference in performance between English and Arabic in both
 
@@ -979,7 +983,7 @@ Yuqian Wang, Y Wang, C Xiao, K Xu, B He, J Tan, Z Chen, L Chen, Y Huo, M Sun
 * Empirically
   * substantial performance gains on five ID and OOD benchmarks, and
   * preserves OOD gains without explicit induction at inference.
-  Code is available at this https URL.
+  Code is available.
 
 ## 11 AM Session
 
@@ -1981,29 +1985,34 @@ The the talk is based on the following paper:
 
 Tomás Vergara-Browne, Darshan Patil, Ivan Titov, S Reddy, T Pimentel, M Mosbach
 
-* superficial alignment hypothesis (SAH) posits that large language models
+* superficial alignment hypothesis (SAH):
   * LLMs learn most of their knowledge during pre-training, and that
   * post-training merely surfaces this knowledge.
   * hE SAH lacks a precise definition, which has led to
     * different and seemingly orthogonal arguments supporting it, and
     * important critiques to it.
 * We propose a new metric called task complexity:
-  the length of the shortest program that achieves a target performance on a
+  the length of the shortest program that achieves a target performance
   * In this framework, the SAH simply claims that
     pre-trained models drastically reduce the complexity of achieving high
     performance on many tasks.
   * Our definition unifies prior arguments supporting the SAH, interpreting them
     as different strategies to find such short programs.
 * Experimentally, we estimate the task complexity of
-  mathematical reasoning, machine translation, and instruction following; we
+  mathematical reasoning, machine translation, and instruction following
   * these complexities can be remarkably low when condited on a pre-trained LM
   * pre-training enables access to strong performances on our tasks, but it
     can require programs of gigabytes of length to access them.
   * Post-training collapses the complexity of this same performance
     by several orders of magnitude
-  * task adaptation often requires surprisingly lit: often just a few kilobytes.
+  * task adaptation often requires surpris little: often just a few kilobytes
 
 #### Two ways to teach a model to reason
+
+<div style="text-align: right">
+                                          _Carving should be "tussle [birkózás],
+           some collaboration and yet battle with your materials"_ – Henry Moore
+</div>
 
 **Supervised fine-tuning (SFT)**
 - Collect solutions from humans or a stronger model
@@ -2013,11 +2022,8 @@ Tomás Vergara-Browne, Darshan Patil, Ivan Titov, S Reddy, T Pimentel, M Mosbach
 - The model attempts each problem several times
 - Check the answers; make successful attempts more likely, failed ones less
 
-Képaláírás: Carving should be "tussle [birkózás], some collaboration and yet
-battle with your materials" – Henry Moore
-
 This talk: why each may be wrong on its own, the story is complicated,
-why the "material" you work with matters
+why the "material" you work with matters.
 
 But you may already have heard: **SFT adds; RFT reshapes**
 
@@ -2038,8 +2044,8 @@ Chunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao,
     representations, and
   * large scale instruction tuning and reinforcement learning,
     to better align to end tasks and user preferences.
-* We measure the relative importance of these two stages by training 
-  * exper with LIMA, a 65B parameter LLaMa language model 
+* We measure the relative importance of these two stages by training
+  * exper with LIMA, a 65B parameter LLaMa language model
     fine-tuned with the standard supervised loss
     on only 1,000 carefully curated prompts and responses,
     without any reinforcement learning or human preference modeling
@@ -2057,13 +2063,13 @@ Chunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao,
 
 ##### Support for SAH comes from different angles
 
-* fine-tuning on few examples (data view) 
+* fine-tuning on few examples (data view)
   ([Zhou+ 2023](https://arxiv.org/abs/2305.11206);
    [Ye+ 2025](https://arxiv.org/abs/2502.03387))
-* updating only a small number of parameters (parametric view). 
+* updating only a small number of parameters (parametric view).
   (Han+ 2024](https://arxiv.org/abs/2403.14608);
    [Li+ 2024](https://arxiv.org/abs/2410.10862))
-* prepending well-designed prompts / inference tweaks (inference-control view) 
+* prepending well-designed prompts / inference tweaks (inference-control view)
   ([Lin+ 2023](https://arxiv.org/abs/2312.01552);
    [Lake+ 2025](https://aclanthology.org/2025.naacl-long.346/))
 
@@ -2119,7 +2125,7 @@ Qwen2.5, harmful medical SFT
 
 ##### Emergent Misalignment [EM] features trace to villain narratives
 
-EM features trace to villain narratives on the web, 
+EM features trace to villain narratives on the web,
 yet those documents alone do not induce EM
 
 **1 – Model diffing**
@@ -2181,25 +2187,25 @@ Giuseppe Birardi, Gonçalo Paulo
 
 [paper](https://arxiv.org/abs/2511.07002)
 
-* interpretat the computations that lead from a LLM input to its output
+* interpret the computations that lead from an LLM's input to its output
   * eg by creating a sparse computational graph that
     captures most of the model behavior with smallest number of computat nodes
-* Cross-layer transcoders (CLT) decompose the dense computations of the MLP but
+* Cross-layer transcoders (CLT) decompose the dense computations of the MLP
   * hE the resulting circuits still contain thousands of nodes
     even for short prompts.
 * automated interpretation methods
-  label individual features from corpus activations, and it
+  label individual features from corpus activations
   * hE often happens that these labels are not validated by causal intervention.
 * We introduce probe prompting, a transparent rule-based pipeline that
   * groups the features of an attribution graph into concept-aligned supernodes
     from their responses on a small set of concept-targeted probe prompts,
-    summarized as Cross-Prompt Activation Signatures (CPAS). Across
+    summarized as Cross-Prompt Activation Signatures (CPAS)
 * exper
-  * four factual domains, on Gemma-2-2B with a public CLT dictionary and
-    45,596 entity-swap interventions, we find that
+  * four factual domains, on Gemma-2-2B with
+    a public CLT dictionary and 45,596 entity-swap interventions, we find that
   * the labeled supernodes have the predicted steering behavior in every one
-* Code, datasets, and an interactive demo are released anonymously as a reusable
-  harness for calibrating supernode labels against causal interventions.
+* Code, datasets, and an interactive demo are released as a harness for
+  calibrating supernode labels against causal interventions
 
 [github/peppinob-ol](https://github.com/peppinob-ol/attribution-graph-probing)
 
@@ -2315,11 +2321,11 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
 * contributive attribution
   * = the classification of the dominant knowledge source behind each output
   * a simple linear probe trained on hidden representations can reliably identif
-* We introduce AttriWiki, a self-supervised pipeline that 
+* We introduce AttriWiki, a self-supervised pipeline that
   automatically generates labelled training data
   by prompting models to recall withheld entities from memory
   or read them from context without relying on knowledge conflicts.
-* Probes trained on AttriWiki achieve up to 0.96 Macro-F1 
+* Probes trained on AttriWiki achieve up to 0.96 Macro-F1
   on Llama-3.1-8B, Mistral-7B, and Qwen-7B,
   * transfer to SQuAD and WebQuestions with 0.94-0.99 Macro-F1, and
   * generalise zero-shot to Tighidet+ (2024)'s benchmark,
@@ -2333,13 +2339,13 @@ Ivo Brink, Alexander Boer, Dennis Ulmer
 Stefan F. Schouten, Peter Bloem
 
 * Contrastive interpretability methods use
-  * pairs (or tuples) of inputs whose elements 
+  * pairs (or tuples) of inputs whose elements
     differ in minimal but controlled ways.
 * eg Contrast-Consistent Search (CCS) identif whether LMs encode bin features,
   in their internal activations
   * bin feat eg sentence truth
-  * requires no labels ie no assumption that 
-    internal activations agree with those labels, 
+  * requires no labels ie no assumption that
+    internal activations agree with those labels,
     as is the case for supervised methods
 * we
   * reproduce results previously obtained with CCS,
@@ -2436,7 +2442,7 @@ Sergey Pletenev
 * experiments: We vary the strength of the steering and use
   * four directions (formality, sentiment, complexity, and a random control)
   * two different model families. We also test
-  * two paraphrasing attacks: 
+  * two paraphrasing attacks:
     a sentence-level one and a stronger paragraph-level one
 * results show that
   activation-steering watermarks are
@@ -2507,7 +2513,7 @@ Sara Candussio, Daniel Scalena, E Fersini, L Bortolussi, M Nissim, G Sarti
 Steffen Castle; M Dustin Nasert; CA Ebert; L Hennig; S Möller; N Feldhus
 
 * When a language model answers from a retrieved document, its
-  attention heads mix 
+  attention heads mix
   evid from the context with evid from the model’s own self-generated tokens and
   write the sum into the residual stream.
 * We split each head’s write into these two source-specific contributions
