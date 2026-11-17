@@ -6,7 +6,7 @@ but Sharkey+ 25 defines MI in some other way: generalization
 
 # Abstract
 
-* The rise of the term “mechanistic interpretability” has accompanied increasing
+* The rise of the term “mechanistic interpretability”
 * what does it mean to be mechanistic? We describe 
   four uses of the term in interpretability research.
   * narrowest technical definition requires a claim of causality, while a
@@ -22,12 +22,11 @@ but Sharkey+ 25 defines MI in some other way: generalization
 # 1 Intro
 
 * NLP interpretability (NLPI)
-* a new movement of AI safety researchers, motivated by philosophical arguments
-  for the importance of interpretability, differentiated themselves as the MI
-  community in its narrow cultural definition (§3.2).
+* MI narrow cult: a new movement of AI safety researchers, 
+  motivated by philosophical arguments for the importance of interpretability,
   * financial and social context of the field now incentivizes NLPI researchers
 * we compare it to some similarly vague terms in the history of NLPI (App A).
-  * hE mechanistic is notable because it exposes a cultural divide—one which is
+  * hE mechanistic is notable because it exposes a cultural divide
 
 # 2 So what is mechanistic?
 
@@ -35,20 +34,23 @@ but Sharkey+ 25 defines MI in some other way: generalization
   algorithmic implementation (Belinkov, 2018), as 
   suggested by Marr’s levels of analysis (Marr and Poggio, 1976).
 * The earliest uses of _mechanistic interpretability_ also draw on this
-  * as do most current explicit definitions of the term. What, then, is this
-    precise technical meaning?
+* so do most current explicit definitions of the term. What, then, is this
+  precise technical meaning?
 
 ## 2.1 From causality and psychology to NLP
 
 * Mechanistic interpretability derives its name from causal mechanisms. 
-  * In a causal model, a causal mechanism is a function—governed by “lawlike
-    regularities” (Little, 2004)—that transforms some subset of model variables
-    (causes) into another subset (outcomes or effects). Causal mechanisms are
-    a necessary component of any causal model explaining an outcome (Halpern
-    and Pearl, 2005a,b).
-* The narrow technical definition of MI thus describes research that discovers
-  causal mechanisms explaining all or some part of the change from neural
-  network input to output at the level of intermediate model representations.
+  * In a causal model, 
+    a causal mechanism is a function
+    governed by “lawlike regularities” (Little, 2004)—that 
+    transforms some subset of model variables (causes) 
+    into another subset (outcomes or effects). Causal mechanisms are a 
+    necessary component of any causal model explaining an outcome 
+    (Halpern and Pearl, 2005a,b)
+* The narrow technical definition of MI thus describes 
+  research that discovers causal mechanisms 
+  explaining all or some part of the change from neural network input to output
+  at the level of intermediate model representations.
   * eg how an LM can predict “B” from the input sequence “ABABA” using induction
     heads (Olsson+ 2022): attention heads that search for a previous occurrence
     of “A” in combination with other heads that attend to the token that follows
@@ -62,21 +64,22 @@ but Sharkey+ 25 defines MI in some other way: generalization
   * Psych studies (Legare and Lombrozo, 2014; Vasilyeva and Lombrozo, 2015): 
   * humans prefer explanations containing causal mechanisms underlying an event
     over Aristotle’s other modes (Lombrozo, 2016) of explanation. 
-  * Tan (2022) argues that likewise, explanations in machine learning should
-    focus on causal mechanisms linking input and output.
+  * Tan (2022): explanations in machine learning 
+    should focus on causal mechanisms linking input and output.
   * Real-world causal models are 
     complex and have many possible pathways to outcomes (Hesslow, 1988);
     complete explanations of such models would be burdensome and
-    counterproductive. Therefore, 
-  * ~> explanation requires distillation (Jacovi and Goldberg, 2021). 
+    counterproductive
+  ~> explanation requires distillation (Jacovi and Goldberg, 2021). 
   * Human explanations distill by capturing only proximal mechanisms (Lombrozo,
     2006)—those which are closest to, or immed responsible for, the outcome.
 * Unlike the human brain, neural networks can be rigorously studied due to 
-  * causal interventions on them. Because we are not limited to proximal
+  * causal interventions on them
   * causal abstraction (Beckers and Halpern, 2019; Beckers+ 2020) for
-    distillation: the theory that causal models at higher levels of granularity
-    can be faithful simplifications of the true causal model, and thus serve as
-    mechanistic interpretations of the network (Geiger+ 2024a).
+    distillation: the theory that 
+    causal models at higher levels of granularity 
+    can be faithful simplifications of the true causal model, and thus 
+    serve as mechanistic interpretations of the network (Geiger+ 2024a).
 * attempt to bring definitional rigor to MI, recent work in 
   causal interpretability of neural networks has advocated for an 
   even narrower technical definition of MI: 
@@ -91,10 +94,10 @@ but Sharkey+ 25 defines MI in some other way: generalization
 ## 2.2 The coinage of mechanistic interpretability
 
 * The term mechanistic interpretability was coined by Chris Olah and 
-  first publicly used in the Distill.pub Circuits thread, a series of blogposts
-  by OpenAI researchers between March 2020–April 2021. The first post (Olah+
+  * first publicly used in the Distill.pub Circuits thread, 
+    a series of blogposts by OpenAI researchers between March 2020–April 2021
   * to “understand the mechanistic implementations of neurons in terms of their
-    weights.” After 
+    weights
   * researchers involved in the Circuits thread moved to Anthropic, 
     their subsequent reports leaned into the terminology heavily 
   * term became mainstream.
@@ -109,13 +112,13 @@ but Sharkey+ 25 defines MI in some other way: generalization
   “...reverse engineering the algorithms implemented by neural networks 
   into human-understandable mechanisms, 
   often by examining the weights and activations of neural networks 
-  to identify circuits ... that implement particular behaviors.” While this
+  to identify circuits ... that implement particular behaviors
   * still implicitly focuses on causal mechanisms (the key technical distinction
   * hE current MI research rarely makes reference to causality.
   * emphasis above on examining weights and activations and the definition’s
     lack of specificity about acceptable methods, 
 * many recent works have adopted a broad technical definition of MI to mean 
-  any inspection of model internals. 1 
+  any inspection of model internals
   * The minimal overlap between causality and MI has been previously noted
     (Mueller, 2024; Mueller+ 2024)
 * This semantic drift may have been inevitable—how could we reverse engineer a
@@ -126,7 +129,7 @@ but Sharkey+ 25 defines MI in some other way: generalization
 # 3 How did we get here? A history of two LM interpretability communities
 
 * MI started as a movement with distinct technical objectives in computer vision
-  * moved into NLP without engaging the existing community which was already
+* moved into NLP without engaging the existing community
 
 ## 3.1 The nascent field of NLP Interpretability
 
@@ -240,37 +243,190 @@ but Sharkey+ 25 defines MI in some other way: generalization
 
 ### 3.1.4 Component analysis and probing
 
-* Probes were first applied in NLPI 
-  to extract linguistic information from the hidden states of neural models
-  (Ettinger+ 2016; Kádár+ 2017; Shi+ 2016; Adi+ 2017; Hupkes+ 4832017; Belinkov+
-  2017a,b; Giulianelli+ 2018). Many early papers observed that 
-  * lower layers encode local features, 
-    echoing findings in computer vision (Yosinski+ 2014) and 
-    reflecting the classical NLP pipeline (Tenney+ 2019).
-  * scrutiny ~exam (Belinkov, 2022) for its lack of 
-    proper baselines (Hewitt and Liang, 2019) or 
-    informative structural constraints (Saphra and Lopez, 2019b).
-* Without proper experiment design, 
-  many probing methods appeared to 
-  extract more information from random embeddings than from trained reprs
-  (Zhang and Bowman, 2018; Wieting and Kiela, 2019). To manage
+* Probes were first applied in NLPI to extract linguistic information from the
+  hidden states of neural models (Ettinger+ 2016; Kádár+ 2017; Shi+ 2016; Adi+
+  2017; Hupkes+ 4832017; Belinkov+ 2017a,b; Giulianelli+ 2018). Many early
+  papers observed that 
+  * lower layers encode local features, echoing findings in computer vision
+    (Yosinski+ 2014) and reflecting the classical NLP pipeline (Tenney+ 2019).
+  * scrutiny ~exam (Belinkov, 2022) for its lack of proper baselines (Hewitt and
+    Liang, 2019) or informative structural constraints (Saphra and Lopez,
+    2019b).
+* Without proper experiment design, many probing methods appeared to extract
+  more information from random embeddings than from trained reprs (Zhang and
+  Bowman, 2018; Wieting and Kiela, 2019). To manage
 * newer probes 
-  * incorporated information complexity (Pimentel+ 2020; Voita and Titov,
-    2020) or 
+  * incorporated information complexity (Pimentel+ 2020; Voita and Titov, 2020)
+    or 
   * used simple geometric mappings (Hewitt and Manning, 2019; White+ 2021)
 * Some designs reflected the model’s own processing (Pimentel+ 2022), as now
   * logit lens (nostalgebraist, 2020; Geva+ 2022; Chuang+ 2024) used widely in
     MI research. However, the logit lens—like other probing methods before it
-    * hE largely incomplete causal explanation 
-      (Nanda, 2024b; Zhu+ 2024; Wiegreffe+ 2024)
+    * hE largely incomplete causal explanation (Nanda, 2024b; Zhu+ 2024;
+      Wiegreffe+ 2024)
 * projecting LM hidden states to interpretable subspaces using linear probes.
   * supervised (Li+ 2023; Marks and Tegmark, 2024) or 
   * unsupervised, using an SAE. These methods 
-  * inherit many critiques from the classic probing literature, 
-    including a lack of causal grounding. Recent proposals have therefore 
-* argued for: validation by causal interventions for SAEs (Mueller+ 2024), 
-  echoing previous efforts to validate probed structures 
-  (Giulianelli+ 2018; Elazar+ 2021)
+  * inherit many critiques from the classic probing literature, including a lack
+    of causal grounding. Recent proposals have therefore 
+* argued for: validation by causal interventions for SAEs (Mueller+ 2024),
+  echoing previous efforts to validate probed structures (Giulianelli+ 2018;
+  Elazar+ 2021)
+
+## 3.2 The beginnings of mechanistic interpretability
+
+how _mechanistic_ historically came to denote 
+a cultural split from the previous NLPI community 
+in the term’s narrow cultural definition.
+
+### 3.2.1 The historical context of _mechanistic_
+
+* not long ago “machine learning” referred primarily to computer vision
+  * at ICML 2020, over 3x as many papers referenced CVPR as any `*`ACL conf
+* the dominant interpretability method was gradient-based saliency, which
+  highlighted the importance of specific pixels in an input image 
+  (Simonyan+ 2014; Bach+ 2015; Springenberg+ 2015; Zintgraf+ 2017; 
+  Ribeiro+ 2016; Shrikumar+ 2017)
+* NLP researchers (and other ML researchers experimenting on text) 
+  * occasionally borrowed saliency methods from computer vision (Karpathy+ 16;
+    Li+ 16; Arras+ 16; Lei+ 16; Alvarez-Melis and Jaakkola, 17)
+* primarily through representational geometry, attention maps, probing, and
+  causal or correlational neuron analysis—all methods employed by the MI
+* When Chris Olah first described “mechanistic interpretability” in 2020, then,
+  * Machine learning mostly meant image classification and 
+  * interpretability mostly meant feature saliency.
+  * Olah coined the term to differentiate circuit analysis from saliency methods
+    * saliency methods were subject to increasing skepticism at the time
+      (Kindermans+ 2016; Adebayo+ 2018; Kindermans+ 2019; Ghorbani+ 2019; Heo+
+      2019; Slack+ 2020; Zhang+ 2020).
+* The MI paradigm was crucial and novel within computer vision—but the community
+  around it didn’t stay in computer vision.
+
+### 3.2.2 Two LM interpretability communities
+
+* researchers migrated
+  * As excitement grew around new breakthroughs in NLP and dialogue systems,
+    particularly with the rise of powerful Transformer language models such as
+    GPT-3+ (Brown+ 2020), many researchers migrated domains. 
+  * The Circuits thread itself changed focus from vision to language in 2021
+  * induction heads (Olsson+ 2022)
+    * before: characterize individual predictable attention heads (Kovaleva+ 19)
+    * instead interpret the interaction between pairs of such heads.
+  * in NLPI: a direct continuation of the existing field.
+* the MI community brought a distinct culture to LM analysis. 
+  * They came from outside of NLP or even from outside of ML entirely, often
+    drawn by arguments that 
+    LMs posed an existential risk which 
+    could be tempered by deeper understanding
+  * Since 2021, the ML Alignment & Theory Scholars program (MATS), supported by
+    the Berkeley Existential Research Initiative, has become a key point of
+    entry for new researchers entering the interpretability field from outside
+    of machine learning.
+  * Until mid-2023, most MI research was shared on blogs or forums such as
+    * eg LessWrong and The AI Alignment Forum; on Discord 6 and Slack 7 ; or at
+      invite-only workshops (MIT, 2023). 
+  * Findings were rarely published on arXiv or in academic venues
+    * pub would advance dangerous AI capabilities (Hobbhahn and Chan, 2023),
+    * others advocated for more engagement with academics (@typedfemale, 2023).
+  * many NLPI researchers were unaware of the MI community growing outside
+    traditional research and publication venues.
+* As the MI community expanded and largely switched focus to language models,
+  technical distinctions became less important than these cultural differences.
+  * In his popular guide to the field, Nanda (2022, ref. “The Broader
+    Interpretability Field”) avoided a strict technical definition of MI instead
+    stating it “feels distinct,” differentiated by its “culture,” “research
+    taste,” and epistemics. Attempts to differentiate mechanistic from
+    non-mechanistic interpretability quickly became untenable, leading to
+    incongruent ontologies.
+  * activation patching
+    * Nanda (2022) categorized it as MI
+    * Meng+ categorized is as non-MI
+      * uses activation patching to perform model editing
+    * Nanda attributed act patch to Meng+ (2022) 
+  * even abandoned the early definitional goal of 
+    distinguishing MI from saliency— 
+    * gradientbased feature attribution has re-emerged as another tool for MI
+      (Nanda, 2023a; Kramár+ 2024).
+  * few researchers retain the causal definition today.
+  * narrow cultural definition.
+
+### 3.2.3 The clash of communities
+
+* The MI community began publishing in academic conferences 
+  (Nanda, 2023b; Nanda+ 2023; Wang+ 2023)
+* NLPI community expressed frustration on social media with the MI community’s
+  unfamiliarity with LM interpretability work prior to Anthropic’s 2021
+  Circuits thread. 
+* Belinkov (2023a) argued that one paper “fail[ed] to engage with a large body
+  of work on these topics from the past ~5 years,” 
+  including direct precedents and improved baselines. 
+* Saxon (2023) alluded to a “contingent of people studying LLMs [who] don’t
+  meaningfully engage with `*`ACL literature”
+* specific work from the MI community was “not new” (Artzi, 2023) or
+  “published in the past” (Ravfogel, 2023). 
+* Posts often highlighted a tendency to “reinvent” (Andreas, 2023) or
+  “rediscover” (Davidson, 2024) existing tools.
+* the energy and resources of the growing MI community could not be denied.
+* Many NLPI researchers subsequently began to use the term _mechanistic
+  interpretability_ to signal their engagement with the MI conversation
+  (Nanda, 2024a).
+
+## 3.3 We are all mechanistic now
+
+* Who wouldn’t want to work on mechanistic interpretability? 
+  * Students need advisors. 9 
+    * Prof. Sasha Rush of Cornell Tech noted, “pre-PhD researchers... [are] most
+      excited about... ‘mechanistic interpretability”’ (Rush, 2024).
+  * Funders need grant recipients
+    * Effective Altruist charities have distributed millions in MI research
+      grants (Open Philanthropy; EA Grants; Future of Life Institute).  
+* the traditional NLPI community increasingly embraces the term
+* the MI community accounts for much of the current growth in interpretability
+  (Räuker+ 2023)
+  * the term has ceased to distinguish two separate communities and has grown
+  * broad cultural definition, encompassing the work of all interpretability
+* MI forum posts are often methodologically similar to papers at ACL
+* differences in preferred venues
+  * ACL and BlackBoxNLP have struggled to engage the MI community, 
+    who prefer ML venues and the creation of new workshops (Barez+ 2024)
+  * Belinkov, a BlackBoxNLP founder, posted a call for MI researchers 
+    to submit to ACL venues (Belinkov, 2023b)
+  * BlackBoxNLP 2023 (Belinkov+ 2023) attempted to bridge the gap by inviting MI
+    researchers to participate in a panel, where this divide was discussed.
+* The traditional NLPI community tends eg to be interested in using 
+  * linguistics (Sarti+ 2024; Mohebbi+ 2023; Katinskaia and Yangarber, 2024) and
+  * automata theory (Weiss+ 2018, 2021; Merrill+ 2022, 2020, 2024) 
+  as analyt tools
+  * niche—but growing—in MI.
+* training dynamics 
+  * characteristic for the MI community
+    (Olsson+ 2022; Liu+ 2023; Nanda+ 2023; Zhong+ 2023)
+  * nL the NLPI community has also studied this topic 
+    (Chiang+ 20; Saphra and Lopez, 19b; Murty+ 23; Chen+ 24; Merrill+ 23)
+* circuit at the level of module interactions 
+  * MI (Lieberum+ 2023; Marks+ 2024; Merullo+ 2024; Tigges+ 2024; Hanna+ 2024;
+    Dunefsky+ 2024)
+  * NLPI (Ferrando+ 2024; Ferrando and Voita, 2024).
+* Work from Anthropic often becomes an MI focus
+  * eg results using SAEs (Bricken+ 2023) inspired a flurry of followup work
+    (Templeton+ 2024; Gao+ 2024; Lieberum+ 2024; Belrose, 2024; Rajamanoharan+
+    2024a,b; Karvonen+ 2024; Braun+ 2024; Kissane+ 2024; Gorton, 2024;
+    Makelov, 2024)—though 
+  * nL sparse encoding is another longstanding interest of NLPI 
+    (Subramanian+ 2018; Niculae+ 2018; Panigrahi+ 2019; Meister+ 2021; Prouteau+
+    2022; De Cao+ 2022; Guillot+ 2023)
+* increasing unity in scientific focus. 
+  * Some academics connected to the MI community have promoted interest in tools
+    from linguistics and cognitive science (Wang+ 2023; Arora+ 2024).
+  * Speaker lineups at MI meetings often include longstanding NLPI researchers
+    (MIT, 2023; Bau+ 2024; Barez+ 2024). 
+  * MI researchers have also begun to engage more deliberately with
+    peer-reviewed general ML conferences (Nanda, 2023b), though this effort has
+    * not to the specialized NLPI tracks and venues that focus on similar
+      objectives and methods
+  * A point conceded [admitted] by Neel Nanda, a leading MI researcher
+  * The ACL preprint policy was a discouraging factor, but this is fortunately
+    * no longer the case (ACL Executive Committee, 2024).
 
 # 4 Conclu
 
