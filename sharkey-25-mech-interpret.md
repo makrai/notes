@@ -140,9 +140,9 @@ Sharkey, Chughtai, Batson, Lindsey, Wu, Bushnaq, Goldowsky-Dill,+
 
 ## 2.1 Reverse engineering: Identifying the roles of network components
 
-* The first approach, often called ‘reverse engineering’, is to decompose the
-  network into components and then attempt to identify the function of those
-  components (Section 2.1). This approach
+* The first approach, often called ‘reverse engineering’, is to 
+  decompose the network into components and then 
+  attempt to identify the function of those components (Section 2.1). This
 * ie “identifies the roles of network components”. This approach involves
 * three distinct methods for three key steps: first, methods for neural network
   1. NN decomposition to break down the network into simpler parts (Sec 2.1.2)
@@ -155,10 +155,345 @@ Sharkey, Chughtai, Batson, Lindsey, Wu, Bushnaq, Goldowsky-Dill,+
     * use the descriptions for downstream tasks, or use of
     * benchmarks
 
-### 2.1.1 Reverse engineering is necessary because AI and humans use different
-representations and perform different tasks
+### 2.1.1 Reverse engineering is necessary because 
+#### AI and humans use different representations and perform different tasks
+
+* eg a model that is only 1% the size of GPT-3 
+  outperforms humans on next-token prediction tasks (Shlegeris+ 2024).
+* hE even SOTA multimodal LLMs struggle with tasks that a four-year-old  masters
+  * eg learning causal properties of new objects involving simple lights and
+    shapes (Kosoy+ 2023). An even clearer sign that humans and AI are using
+* cases where humans cannot solve a problem at all, as in the case of predicting
+  * protein structure from sequence (Jumper+ 2021; Lin+ 2023).
+* diff heuris Even when both humans and AI exhibit comparable competence on a
+  * image models tend to rely more heavily on 
+    * textural features (such as recognizing elephants by their hide rather than
+      their shape (Geirhos+ 2019)) or rely on 
+    * dataset correlations (as when identifying fish by the fingers that proud
+      fisherman use to hold them (Brendel & Bethge, 2019)) to a greater degree
+  * simple algorithmic tasks, like modular addition, which 
+    * humans might solve with simple carries, were solved by 
+    * a small transformer model by learning a Fourier transform strategy that
+      researchers only understood in retrospect (Nanda+ 2023a).
+* ie we must be able to reverse engineer these models (Olah, 2024).
+1. Decomposition: Breaking down the object of study into simpler parts (S 2.1.2)
+2. Description of components: Formulating hypotheses about the functional role
+   of component parts and how they interact 
+   * (a process that can be called ‘interpretation’) (Section 2.1.3);
+3. Validation of descriptions: Testing if our hypotheses are correct (Sec 2.1.4)
+* If our hypotheses are invalidated, we must either improve our decomposition or
+  improve our hypotheses regarding the functional roles of its components. We
+* this sec: current methods and their respective shortcomings.
 
 ### 2.1.2 Reverse engineering step 1: Neural network decomposition
+
+#### Networks do not naturally decompose into architectural components. The
+
+* eg individual neurons, attention heads, or layers.
+  * early attempts: responses or weight structure of individual neurons or
+    single convolutional filters 
+    (Erhan+ 2009; Le+ 2012; Krizhevsky+ 2012; Szegedy+ 2014; Simonyan+ 2014b;
+    Zhou+ 2015; Srivastava+ 2014; Yosinski+ 2015; Mordvintsev, 2015;
+    Olah+ 2017a; Bau+ 2020; Dalvi+ 2019; Olah+ 2020a; Cammarata+ 2020). These
+    * paid homage [respected] to the ‘Neuron Doctrine’ in neuroscience, which
+      (Cajal, 1924; Sherrington, 1906).
+  * hE neurons are ‘polysemantic’ – they seem to respond to multiple kinds of
+    features in both 
+    artificial (Wei+ 2015; Nguyen+ 2016c; Olah+ 2017a) and 
+    biological networks (Churchland & Shenoy, 2007; Rigotti+ 2013; Mante+ 2013;
+    Raposo+ 2014).
+  * representations used by neural networks do not necessarily align with the
+    activation of individual neurons (Hinton, 1981).  
+* individual attention heads does not fare better than neurons, as 
+  * attention heads also exhibit polysemanticity (Janiak+ 2023). More broadly,
+  * the attention patterns of models can often be misleading 
+    (Jain & Wallace, 2019; Pruthi+ 2020)
+* layers
+  * representations in language models might span multiple layers (Yun+ 2021;
+    Lindsey+ 2024; Ameisen+ 2025). This chimes with 
+  * some work edits or intervenes on individual layers, which indicates that 
+    * this level is too coarse-grained to robustly carve the network at its joints
+      (Meng+ 2022b; Wang+ 2023).
+
+#### Decomposition by dimensionality reduction methods. If individual neurons
+
+* groups or patterns of neurons are.
+* identify activation vectors that correspond to the basic unit of computation.
+  * provide models with a range of unlabeled inputs, collect the resulting
+    hidden activations, and then apply unsupervised dimensionality reduction
+* dimensionality reduction methods include 
+  * Principal Component Analysis or Singular Value Decomposition (Hollinsworth+
+    2024; Marks & Tegmark, 2024; Huang+ 2024a; Bushnaq+ 2024), 
+  * tensor factorization (Oldfield+ 2023), and 
+  * non-negative matrix factorization (Olah+ 2018; Voss+ 2021; Cammarata+ 2020;
+    Fel+ 2023), though these techniques are 
+  * no longer predominant methods used for mechanistically decomposing language
+    models (Friedman+ 2024). Related approaches use 
+* singular value decomposition as an initial step, followed by unsupervised
+  clustering step in order to identify 
+  semantically unique and distinguishable concepts (Graziani+ 2023).
+
+#### Decomposition by sparse dictionary learning (SDL). According to the
+
+* ‘superposition hypothesis’, 
+  NNs can represent more features than they have dimensions, as long as 
+  each feature activates sparsely (Elhage+ 2021) (Figure 4). This is a key
+* dim redu cannot identify more directions than there are activation dimensions. 
+* search for methods that can identify more directions than dimensions. Recent
+* sparse dictionary learning (SDL) to this end 
+  (Elhage+ 2021; Sharkey+ 2022b; Huben+ 2024; Bricken, 2023)
+
+* Figure 4: Three ideas underlying the sparse dictionary learning (SDL) paradigm
+  in mechanistic interpretability. 
+  * (Left) The linear representation hypothesis states that 
+    the map from ‘concepts’ to neural activations is linear. 
+  * (Middle) Superposition is the hypothesis that 
+    models represent many more concepts than they have dimensions by
+    * representing them both sparsely and linearly in activation spaces. 
+  * (Right) SDL attempts to recover an overcomplete basis of concepts
+    represented in superposition in activation space.
+* SDL is the most popular set of unsupervised decomposition methods in MI
+  * a family of methods, including 
+  * Sparse Autoencoders (SAEs) (Gao+ 2024; Templeton+ 2024; Rajamanoharan+ 2024;
+    Makelov+ 2024; Kissane+ 2024b; Braun+ 2024), 
+  * transcoders (Dunefsky+ 2024; Ameisen+ 2025), and 
+  * crosscoders (Lindsey+ 2024; Ameisen+ 2025)
+* 2 The term latent is often used instead of the word feature to refer to SDL
+  dictionary elements, since the term ‘feature’ is often used to refer to
+  multiple different ideas (Smith, 2024b) 
+* hidden activations are typically passed to a small neural network consisting
+  of only two layers, which correspond to an encoder and decoder respectively,
+  with a wide hidden space. The 
+  * encoder activations represent how active each ‘latent’ 2 is, and the 
+  * decoder matrix corresponds to a dictionary of latent directions.
+* We want to train the dictionary elements to align with ‘feature directions’ in
+  the network’s hidden activations.
+* we assume that individual features are sparsely present in the activations,
+  ~> the encoder activations are trained to be sparsely activating. In the case
+  * SAEs, the output is trained to either reconstruct the input or, in the case
+  * transcoders (Dunefsky+ 2024; Ameisen+ 2025), to 
+    reconstruct the activations of the next layer or layers. 
+  * Crosscoders (Lindsey+ 2024; Ameisen+ 2025) permit a wider class of inputs
+    and outputs, 
+    potentially reconstructing the activations of many layers simultaneously.
+* Since the encoder is nonlinear, it is thought to be able to learn to activate
+  a latent only if a feature is ‘active’ in the hidden activations and remain
+  ‘off’ if it is not.
+* Although SDL is considered a leading decomposition method for MI
+* substantial practical and conceptual limitations (Figure 5).
+
+#### SDL reconstruction errors are too high: Large errors in SDL reconstruction
+
+* question whether SDL methods can reconstruct the hidden representation
+  sufficiently well such that the latents learned by SDL are adequately faithful
+  to the models being interpreted. 
+* To measure this, the model’s true 
+  hidden activations can be replaced with sparse dictionary reconstructions,
+  * evaluating the extent to which the model’s performance decreases.
+* the error results in significant performance reductions. When a sparse
+* eg
+  * 16 million latents was inserted into GPT-4, the language modeling loss was
+    equivalent to a model with only 10% of GPT-4’s pretraining compute (Gao+
+    2024). Similarly, 
+  * Makelov+ (2024) found that using reconstructions from sparse autoencoders
+    decreased GPT-2 small performance by 10% when trained on task-specific data,
+    and 40% when trained on the full distribution.
+* Making sparse dictionaries much larger and sparser to reduce errors is a
+  feasible but computationally expensive approach. Furthermore, 
+  * in the limit, this results in merely assigning one dictionary latent per
+    datapoint, which is clearly less interpretable. One 
+* partial solution is using SDL methods with 
+  ‘error nodes’ (Marks+ 2024), to account for the discrepancies between the
+  original and reconstructed activations. 
+  However, while the sparse autoencoders identified interpretable latents, the
+  error nodes contain ‘everything else’, making them an inadequate solution to
+* Engels+ (2024b): reconstruction errors are not purely random, as 
+  much of the direction of the error and its norm 
+  can be linearly predicted from the initial activation vector. 
+  * This suggests that current SDL methods may 
+    systematically fail to capture certain structured aspects of model reprs,
+  * also implies potential solutions. To overcome this issue, it may be
+    necessary to improve SDL training methods, or develop entirely new methods
+    of network decomposition.
+
+#### SDL methods are expensive to apply to large models: SDL 
+
+* involves training a small neural network for every layer of the AI model that
+  * the sparse dictionaries have more parameters at that layer than the original
+    model does, and consequently will probably be relatively expensive to train
+* The actual relative cost is unclear since there are 
+  no public attempts to apply SDL to every vector space in a model, although
+  some work applies SDL to various layers (Marks+ 2024; Gao+ 2024; Braun+ 2024;
+  Lieberum+ 2024; Bloom & Lin, 2024a; Huben+ 2024)
+* As AI models become larger, scaling costs of SDL also increase, although it
+  * unclear whether relative scaling costs are sub~ or supra-linear. For cost
+* possib solut: intrinsically decomposable methods for training models, while
+  remaining at (or close to) SOTA performance (Section 2.1.2). This approach
+
+#### SDL assumes the linear representation hypothesis in nonlinear models: Other
+
+* neural networks are nonlinear functions and could potentially use highly
+  nonlinear representations (Black+ 2022; Engels+ 2024b; Kirch+ 2024), 
+* The linear representation hypothesis observes that
+  NNs tend to use representations that exhibit strikingly linear behavior
+  (Smolensky, 1986; Mikolov+ 2013; Olah+ 2020b; Elhage+ 2021; Park+ 2023a;
+  Guerner+ 2024; Gurnee & Tegmark, 2024). 
+* The hypothesis formalizes this phenomenon by stating that 
+  high level concepts are linearly represented as directions (vectors) in NN embeds
+* two core claims 
+  * the composition of multiple concepts can be represented as the addition of
+    their corresponding feature vectors, and 
+  * the intensity of a concept is represented by the scale of its corresponding
+    feature vector (Olah & Jermyn, 2024). 
+* additional assumptions
+  * Elhage+ (2021): one-dimensional features
+    * this definition has since been 
+      refuted (Yedidia, 2023; Chughtai & Lau, 2024; Engels+ 2024a) and 
+      clarified (Olah & Jermyn, 2024). Another recently proposed criterion is that
+  * the intensity of concepts should be retrievable by a linear function of the
+    embeddings, up to a small error (Hänni+ 2024; Olah & Jermyn, 2024).
+  * A weak version of the linear representation hypothesis states that 
+    some concepts are linearly represented, while a 
+    strong version may assert that all concepts are (Smith, 2024a). Some works
+  * the strong version is false for some models (Black+ 2022; Csordás+ 2024).
+  * The weaker version of the linear repr hypo is supported by the successes of 
+    * linear probes (Section 2.2.1)
+    * activation steering (Section 3.2.2)
+    * sparse autoencoders in finding seemingly interpretable latents (Sec 2.1.2)
+
+#### Sparsity is not a good proxy for interpretability: Another of SDL’s key assumptions is that feature
+activations are sparse. Therefore, SDL methods optimize their latents accordingly to be sparsely activating,
+with the implicit assumption that sparser decompositions are more interpretable than denser ones. However,
+this assumption may not necessarily hold. The (related) problems of feature splitting (Bricken, 2023), feature
+absorption (Chanin+ 2024) and composition (Till, 2024) suggest that with sufficient optimization
+pressure, sparsity as a proxy for interpretability breaks down (though note that it is debated whether
+feature splitting is actually a problem). Other proxies, such as minimum description length, might be better
+optimization targets than sparsity per se (Ayonrinde+ 2024). It also may be the case that no proxy
+metric is sufficient.
+
+#### SDL leaves feature geometry unexplained: SDL decomposes networks into single directions in the
+activation space, which is a reasonable approach only if we consider feature activations akin to ‘a bag of
+features’ (Harris, 1954) without any internal structure. However, the geometric arrangement of features in
+relation to each other seems to reflect semantic and functional structure (Engels+ 2024a; Gurnee &
+Tegmark, 2024; Park+ 2024b; Bussman+ 2024). Understanding the geometric structure of a network
+means understanding the position of one feature relative to (potentially) many others. Comprehending this
+may be necessary if we want to know why and how a network treats certain features similarly or differently.
+If understanding the global geometry (all-to-all relationships) of features is essential to understand neural
+networks, this might pose a fundamental problem for current approaches to mechanistic interpretability
+(Hänni+ 2024; Mendel, 2024). However, if only local geometric relationships between features need to
+be understood, understanding networks with a ‘bag of features’ approach may be more feasible.
+
+#### SDL cannot straightforwardly be applied to all architectures: SDL was originally developed to iden-
+tify features that may be represented in superposition across many neurons within a single layer. However,
+representations may be spread over other network architecture components besides neurons. In transform-
+ers, for example, representations may be spread across separate attention heads (Jermyn+ 2023; Janiak
+et al., 2023), and even across different layers (Yun+ 2021; Lindsey+ 2024). However, it is not
+immediately obvious how to decompose representations distributed across attention heads with SDL (Math-
+win+ 2024; Wynroe & Sharkey, 2024). Nor is it straightforward to translate cross-layer distributed
+representations into causal descriptions of neural network mechanisms (Lindsey+ 2024), though some
+recent work makes progress toward this (Ameisen+ 2025).
+
+#### SDL decomposes the input and output activations of network mechanisms, but not the mech-
+anisms themselves: Ultimately, the aim of mechanistic interpretability is to understand the mechanisms
+learned by neural networks. The parameters of the network, along with its nonlinearities and other architec-
+tural components, implement these mechanisms, which are applied to the input’s hidden activations. SDL
+identifies directions in activation space. Being activations, they only interact with the network’s mechanisms,
+12Published in Transactions on Machine Learning Research (09/2025)
+but are not the mechanisms themselves. Describing the mechanisms directly remains unresolved with SDL.
+Gaining insights about the network’s mechanisms from SDL latents requires further post hoc analysis, which
+can be labor intensive, computationally expensive, or data set dependent (Huben+ 2024; Bricken, 2023;
+Riggs+ 2023; Marks+ 2024). This is an instance of a more broad problem with current mechanistic
+interpretability work; we primarily focus on understanding neural network activations, with little attention
+paid to how this structure in activations is computed via weights (Chughtai & Bushnaq, 2025).
+
+#### SDL latents may not contain the concepts needed for downstream use cases: When using SAEs
+for practical tasks, there sometimes exists a single latent or small set of latents representing some concept
+of interest for task performance (and not representing much else). For instance, Kantamneni+ (2024)
+found a single latent whose activation pattern was more accurate than official dataset labels on the NLP
+task GLUE CoLA (Warstadt+ 2019). More often than not though, a sparse set of latents that encode
+some useful concept of interest do not exist. It is unclear what causes this problem. One hypothesis is that
+the concept we want isn’t how the model ‘thinks’ about the concept, and the SAE is working as intended.
+Alternatively, the SAE training distribution could be too narrow, resulting in the SAE not being incentivised
+to learn the important latents. (Kissane+ 2024c) found that SAEs trained on pretraining data generally
+do not have good latents for the concept of ‘refusing’ harmful user requests, while SAEs trained on chat
+formatted data do. Or, the SAE might not have a large enough dictionary size to learn all concepts of
+interest. Many more hypotheses are plausible. A complicating factor in using SDL to identify the learned
+mechanisms of neural networks is that the latents identified by SDL depend heavily on the data set used
+to train them. This is an undesirable property for a decomposition method that was initially hoped to be
+capable of identifying the fundamental units of computation in neural networks (Kissane+ 2024c).
+
+#### Current decomposition methods lack solid theoretical foundations. Given the practical and con-
+ceptual issues with SDL, there is broad agreement that the question of how to correctly decompose networks
+into atomic units remains a central problem, evidenced by the large amount of effort focused on the direction
+in recent years. After investing considerable effort in SDL approaches, it is apparent that improved con-
+ceptual clarity beyond the idea of superposition (Elhage+ 2021) is needed to advance neural network
+decomposition.
+One of the most significant open questions is the absence of clarity around the nature of features, despite
+being the central focus of SDL’s identification efforts. Satisfying formal definitions are elusive and con-
+ceptual foundations are not yet established. However, even without foundations, progress in mechanistic
+interpretability is possible — even confused concepts can be pragmatically useful (Henighan, 2024).
+Without solid conceptual foundations, it remains unclear whether the superposition hypothesis, which under-
+pins the SDL paradigm, is fundamentally valid or merely pragmatically useful (Henighan, 2024; Templeton
+et al., 2024). If it is the latter, there may be better methods than SDL for carving neural networks at their
+joints. Such methods may take into account feature geometry or take a more dynamic, developmental view
+of how mechanistic structure emerges in the training process (Hoogland+ 2024; Wang+ 2024b).
+Moreover, although there is much emphasis on how models represent features in superposition, there is
+comparatively less work examining how they might perform computation on them natively in superposition.
+Further conceptual work into this problem may suggest new methodologies for decomposing networks, or
+provide bounds on the number of features we should expect models to be capable of learning (Hänni+
+2024; Adler & Shavit, 2024; Bushnaq & Mendel, 2024). The field should explore very different approaches
+that show promise for decomposing neural networks into functional components and that do not exhibit
+many of the problem of the SDL paradigm, such as decomposing or analyzing network parameters (Braun
+et al., 2025; Tsang+ 2018) or methods that decompose networks according to analytical descriptions of
+the local functions they implement, such as deep Taylor decomposition (Montavon+ 2017).
+Mechanistic interpretability should ideally be built on more formal foundations. Some work attempts to
+ground mechanistic interpretability in the formalisms of causality (Geiger+ 2024a). However, this
+approach has not yet yielded canonical causal mediators (Mueller+ 2024) that may form a basis for
+decomposition methods. How should we go about finding them? Given that our field’s objective is to
+understand the learned structures that underlie networks’ generalization behaviors, exploring theories about
+why neural networks generalize appears to be a promising avenue. But theories that attempt to characterize
+13Published in Transactions on Machine Learning Research (09/2025)
+why neural networks generalize, such as the spline theory of neural networks (Balestriero & richard baraniuk,
+2018), theories of neural networks’ simplicity bias (Valle-Perez+ 2019), deep learning theory involving the
+neural tangent kernel (Jacot+ 2018; Roberts+ 2022), or singular learning theory (Watanabe, 2009;
+Wei+ 2023) have either not yet yielded mathematical objects that can be easily used for interpretability,
+or simply have not been successfully linked to approaches for interpreting neural networks. Establishing
+these connections would make significant progress toward carving neural networks at their joints to facilitate
+mechanistic interpretability. And if we can carve trained networks at their joints, it may suggest ways to
+train networks such that they come ‘pre-carved’. Thus, better theoretical foundations may also be important
+for developing models that are intrinsically decomposable by design, which we discuss next.
+
+#### Intrinsic interpretability: Building more easily decomposable models The current strategy of
+training a model solely for performance and then interpreting it post hoc may not be optimal if our goal is a
+model that is both interpretable and performant. To this end, it may be beneficial to prioritize interpretability
+during model training, for which there are several plausible approaches.
+Instead of post-hoc decomposing trained network activations into discrete codes (Section 2.1.2), network
+activations could be forced to use a discrete code from the outset, as in Tamkin+ (2025). MLPs could
+also be trained with sparser activation functions, such as TopK (Makhzani & Frey, 2013; Bills+ 2023) or
+SoLU (Elhage+ 2022). Similar approaches could be potentially used to restrict attention superposition
+(Jermyn+ 2023) by limiting the number of heads attending to any query-key pair. Several approaches,
+such as ‘mixture of experts’ (Shazeer+ 2017; Fedus+ 2022; He, 2024), use sparsely activating
+components — with a large enough number of experts, and with sufficient activation sparsity, experts
+may become individually interpretable (Warstadt+ 2019). Many attempts to incentivize interpretable
+activations directly so far have not been competitively performant, and have also allowed ‘superposition to
+sneak through’, mitigating benefits.
+We can also target weight sparsity directly during training, including approaches such as L 0 regularization
+(Louizos+ 2018) or pruning (Mozer & Smolensky, 1988; Frankle & Carbin, 2019; Mocanu+ 2018).
+Han+ (2015) achieve sparse weights by using magnitude pruning followed by finetuning. This highlights
+a general strategy of finetuning with interpretability in mind (also used by Tamkin+ (2025)), avoiding the
+potentially excessive cost of training from scratch. Another related strategy is targeting modularity (Kirsch
+et al., 2018; Andreas+ 2016). For example, brain-inspired modular training (Liu+ 2023) trains for
+modularity by embedding neurons in a geometric space and encouraging geometrically local connections.
+Existing research implements other approaches that can simplify linearity-reliant circuit analysis (Elhage
+et al., 2021). For example, there is work removing the layer norm operations (Heimersheim, 2024), using
+input-switched affine transformations for recurrence (Foerster+ 2017). Other studies leverage archi-
+tectures that are mathematically analyzable in other ways than linearity, such bilinear activations in MLPs
+(Sharkey, 2023; Pearce+ 2024).
+After decomposing a network into components, whether through post hoc decomposition or by using intrinsi-
+cally decomposable models, our task remains unfinished. We must provide an interpretation of the functional
+role of each component (Step 2 – Section 2.1.3) and validate that interpretation (Step 3 – Section 2.1.4). In
+the next section, we will discuss common methods of interpretation and their
+shortcomings.
 
 #### Networks do not naturally decompose into architectural components
 
