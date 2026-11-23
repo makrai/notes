@@ -47,8 +47,8 @@ Sharkey, Chughtai, Batson, Lindsey, Wu, Bushnaq, Goldowsky-Dill,+
   * interpr: motivations and methods used in interpretability work are diverse
     (Lipton, 2018; Doshi-Velez & Kim, 2017; Jacovi, 2023)
   * categorizations of interpretability include
-    * causal vs. correlational methods, supervised vs. unsupervised methods,
-    * bottom-up vs. top-down methods, among others
+    * causal vs correlational methods, supervised vs unsupervised methods,
+    * bottom-up vs top-down methods, among others
     (Geiger+ 2024b; Mueller+ 2024; Bereska & Gavves, 2024; Belinkov, 2022a; Zou+
     2023a; Davies & Khakzar, 2024)
 * mechanistic interpretability. But what distinguishes ‘mechanistic'?
@@ -568,27 +568,27 @@ interpretability is to understand the mechanisms learned by neural networks.
   2. ‘interpretability illusions’. Bolukbasi+ (2021) show that 
     * bias in data sets can create misleading explanations 
       * even with real data sets, as opposed to synthetically created data.
-    * human annotators identified dramatically different meanings 
-      for given directions in the activation space of BERT (Devlin, 2018).
-  3. often yields plausible explanations for arbitrarily chosen directions 
-    in the activation space (Szegedy+ 2014). This means that plausible
-* it is possible to develop adversarial models that 
-  deliberately yield misleading feature visualizations (Geirhos+ 2025).
+    * human annotators identified dramatically different meanings for given
+      directions in the activation space of BERT (Devlin, 2018).
+  3. often yields plausible explanations for arbitrarily chosen directions in
+     the activation space (Szegedy+ 2014). This means that plausible
+* it is possible to develop adversarial models that deliberately yield
+  misleading feature visualizations (Geirhos+ 2025).
   * Robert Geirhos, Roland S. Zimmermann, Blair Bilodeau, Wieland Brendel, B Kim
     Don’t trust your eyes: on the (un)reliability of feature visualizations. In
     ICML’24. JMLR.org, 2025.
 * corr vs cau
-  * highly activating data set examples stem from the fact that they 
-    merely provide correlational explanations for the activation of a netw compon, 
+  * highly activating data set examples stem from the fact that they merely
+    provide correlational explanations for the activation of a netw compon,
     rather than causal explanations. 
 * To identify causal explanations, other methods, eg attribution methods, necess
 
 ##### Attribution methods are necessary for causal explanations but are often
 difficult to interpret.
 
-* Attribution methods 
-  (Baehrens+ 2009; Simonyan+ 2014a; Nguyen+ 2016b; Selvaraju+ 2019;
-  Sundararajan+ 2017; Fong & Vedaldi, 2017; Lundberg & Lee, 2017; Ribeiro+ 2016)
+* Attribution methods (Baehrens+ 2009; Simonyan+ 2014a; Nguyen+ 2016b;
+  Selvaraju+ 2019; Sundararajan+ 2017; Fong & Vedaldi, 2017; Lundberg & Lee,
+  2017; Ribeiro+ 2016)
   * intended to measure the causal importance of upstream variables (such as
     inputs) on downstream variables (such as a network component).
 * methods include 
@@ -599,12 +599,12 @@ difficult to interpret.
 * categorized as 
   * gradient-based (Mozer & Smolensky, 1988; Baehrens+ 2009; Simonyan+ 2014a;
     Nguyen+ 2016b; Selvaraju+ 2019; Sundararajan+ 2017; Wang+ 2024d) or
-  * sampling-, perturbation-, or ablation-based 
-    (Fong & Vedaldi, 2017; Vig+ 2020; Geiger+ 2020; Ghorbani & Zou, 2020; Meng+
-    2022b; Chan+ 2022a; Nanda, 2023a). However, 
+  * sampling-, perturbation-, or ablation-based (Fong & Vedaldi, 2017; Vig+
+    2020; Geiger+ 2020; Ghorbani & Zou, 2020; Meng+ 2022b; Chan+ 2022a; Nanda,
+    2023a). However, 
 * hE grad
-  * on a theoretical level, many gradient-based methods 
-    identify only a first-order approximation of the ideal attribution, which is
+  * on a theoretical level, many gradient-based methods identify only a
+    first-order approximation of the ideal attribution, which is
   * sometimes a poor approximation (Watson, 2022). 
   * Most approaches only attribute important single components, though some
 * nL feature interaction
@@ -612,24 +612,25 @@ difficult to interpret.
   * KernelSHAP-IQ characterizes higher-order Shapley Interaction Index as a
     solution to a weighted least square problem, offering one way to quantify
     such interactions (Fumagalli+ 2024). Specific to 
-  * for Graph Neural Networks (GNNs), recent advancements such as 
-    GraphSHAP-IQ by Muschalik+ (2025) enable the exact and efficient computation
-    of any-order Shapley Interactions. Other specialized methods, like 
+  * for Graph Neural Networks (GNNs), recent advancements such as GraphSHAP-IQ
+    by Muschalik+ (2025) enable the exact and efficient computation of any-order
+    Shapley Interactions. Other specialized methods, like 
 * BiLRP: feature interactions in text sim models (Vasileiou & Eberle, 2024)
 * Adebayo+ (2018): some gradient-based methods identify attributions that are
   independent both of the model and of the data generating process.
-* an adversary can train a model or perturb an input 
-  to reveal any attribution map (Dombrowski+ 2019; Ghorbani+ 2019; Heo+ 2019;
-  Kindermans+ 2019; Slack+ 2020; Zhang+ 2020) 4 . 
-  * nL Freiesleben & König (2023): 
-    adversarial examples do not truly undermine saliency maps 
-    as these are highly dissimilar to real interpretability challenges.  
+* an adversary can train a model or perturb an input to reveal any attribution
+  map (Dombrowski+ 2019; Ghorbani+ 2019; Heo+ 2019; Kindermans+ 2019; Slack+
+  2020; Zhang+ 2020) 4 . 
+  * nL Freiesleben & König (2023): adversarial examples do not truly undermine
+    saliency maps as these are highly dissimilar to real interpretability
+    challenges.  
 * For specific architectures like Graph Neural Networks (GNNs), methods such as
-  GNN-LRP have been developed to provide higher-order explanations 
-  by identifying relevant walks in the input graph using 
-  Layer-wise Relevance Propagation (Schnake+ 2022).
+  GNN-LRP have been developed to provide higher-order explanations by
+  identifying relevant walks in the input graph using Layer-wise Relevance
+  Propagation (Schnake+ 2022).
 * Perturbation methods present certain issues, such as 
-  * taking models off their training distribution and eliciting unusual behavior,
+  * taking models off their training distribution and eliciting unusual
+    behavior,
   * theoretical complications (Feng+ 2018; Molnar+ 2021; Hooker+ 2021; Molnar+
     2024; Freiesleben & König, 2023; Slack+ 2021). Developing efficient and
 
@@ -653,8 +654,8 @@ difficult to interpret.
 * logit lens (Nostalgebraist, 2020) applies the models unembedding matrix to an
   intermediate residual stream representations, converting it into a
   distribution over the model’s output vocabulary. 
-* Direct logit attribution is a generalization of this technique, 
-  applying to any appropriately sized vector space in the model, eg 
+* Direct logit attribution is a generalization of this technique, applying to
+  any appropriately sized vector space in the model, eg 
   * the output of MLP layers (Geva+ 2021; 2022b;a; Dar+ 2023)
   * attention blocks
   * gradients (Katz+ 2024) of these
@@ -662,12 +663,12 @@ difficult to interpret.
 * tuned lens: Adding a trainable affine or linear trafo before unembedding, as
   * improves decoding accuracy (Belrose+ 2023a; Yom Din+ 2024), at the cost of
   * hE less faithfully representing when the model has completed computation.
-* In the language of causality (Pearl, 2009), 
-  unembedding a residual stream vector 
-  measures the direct effect of that vector on the output (McGrath+ 2023).
-* hE, the logit lens cannot measure the indirect effect, 
-  ie the effects resulting from the influence that the embedding has on the
-  hidden activations of subsequent layers. Other methods, such as 
+* In the language of causality (Pearl, 2009), unembedding a residual stream
+  vector measures the direct effect of that vector on the output (McGrath+
+  2023).
+* hE, the logit lens cannot measure the indirect effect, ie the effects
+  resulting from the influence that the embedding has on the hidden activations
+  of subsequent layers. Other methods, such as 
 * causal interventions (see below), are necessary to measure the indirect
 * future: extend logit-lens-like approaches to project the effects of network
   components on not only/but also
@@ -677,32 +678,30 @@ difficult to interpret.
 ##### Causal Interventions. Causal interventions typically 
 
 * substitute (“patch”) the value of some network component, usually an
-  activation vector, with a different value during a forward pass, 
-  observing the resulting effect on the model. There exist 
-* a related set of techniques: 
-  ablation (for the special case of zero-ing or otherwise attempting to delete
-  activations entirely), activation patching, 
+  activation vector, with a different value during a forward pass, observing the
+  resulting effect on the model. There exist 
+* a related set of techniques: ablation (for the special case of zero-ing or
+  otherwise attempting to delete activations entirely), activation patching, 
   * causal mediation analysis, causal tracing, and interchange intervention
     (Vig+ 2020; Geiger+ 2020; Meng+ 2022a; Chan+ 2022a; Nanda, 2023a).
   * eg by patching activations from the corrupt prompt “the capital of Italy is”
     into the clean prompt “the capital of France is”, we can observe the effect
-    on the output (“Rome” vs.“Paris”). This tells us which component values are
+    on the output (“Rome” vs “Paris”). This tells us which component values are
     relevant for the differing output between the two prompts, but not the
     information that remains consistent (eg the fact that the answer is a city).
 * patch patching: More surgical patches made on edges between network components
-  * allows us to isolate the effect of one particular component 
-    on only one other component, instead of on the entire rest of the network
+  * allows us to isolate the effect of one particular component on only one
+    other component, instead of on the entire rest of the network
     (Goldowsky-Dill+ 2023). 
 * Causal scrubbing (Chan+ 2022a) is a generalization of path patching that
   allows for testing hypotheses concerning any given connection between a set of
   network components.
 * generate supervision signal to identify subspaces of interest. For instance,
-  * distributed alignment search (Geiger+ 2024c) 
-    learns a linear subspace that represents a particular concept, 
-    using data with interventions on that concept as supervision 
-    (Geiger+ 2024c; Guerner+ 2024; Wu+ 2023)
-* masks over network components to remove irrelevant components 
-  (De Cao+ 2020; Csordás+ 2021; Davies+ 2023)
+  * distributed alignment search (Geiger+ 2024c) learns a linear subspace that
+    represents a particular concept, using data with interventions on that
+    concept as supervision (Geiger+ 2024c; Guerner+ 2024; Wu+ 2023)
+* masks over network components to remove irrelevant components (De Cao+ 2020;
+  Csordás+ 2021; Davies+ 2023)
 * A causal intervention typically requires a forward pass of the model. This 
   * may make performing one for every network component in large models, long
     contexts, or when using finer-grained components such as sparse autoencoder
@@ -716,29 +715,28 @@ difficult to interpret.
 
 * patch in activated components and observe their effect on model behavior.
 * Steering is one example of this (Rimsky+ 2024; Turner+ 2024), where 
-  * components (activation vectors) are activated 
-    in order to influence the network’s behavior, often in interpretable ways.
-* patchscopes: To determine the functional role of an activation vector, 
-  a related method is to have a language model itself decode the activations
+  * components (activation vectors) are activated in order to influence the
+    network’s behavior, often in interpretable ways.
+* patchscopes: To determine the functional role of an activation vector, a
+  related method is to have a language model itself decode the activations
   (Chen+ 25; Watkins, 23; Ghandeharioun+ 24; Huang+ 24b; Kharlapenko+ 24). These
-  * patch activations from one forward pass of a model 
-    into a different forward pass (perhaps in a different model). 
+  * patch activations from one forward pass of a model into a different forward
+    pass (perhaps in a different model). 
   * The context of the new forward pass is designed to elicit relevant
     information from the activations of the original forward pass.
-* A related sequential behavior based technique is simply 
-  to read the chain-of-thought (Wei+ 2024; Kojima+ 2024) produced by an LMs
-  * this could be considered an ‘interpretability technique’ 
-    in the sense that it aims to explain model decisions, it does 
+* A related sequential behavior based technique is simply to read the
+  chain-of-thought (Wei+ 2024; Kojima+ 2024) produced by an LMs
+  * this could be considered an ‘interpretability technique’ in the sense that
+    it aims to explain model decisions, it does 
   * not use model internals in those explanations, at least not directly. Recent
-* chains of thought are not entirely faithful 
-  to the model’s underlying decision-making process 
-  (Agarwal+ 2024; Atanasova+ 2023; Turpin+ 2023; Lanham+ 2023; 
-  Ye & Durrett, 2022). A promising future direction for interpretability
+* chains of thought are not entirely faithful to the model’s underlying
+  decision-making process (Agarwal+ 2024; Atanasova+ 2023; Turpin+ 2023; Lanham+
+  2023; Ye & Durrett, 2022). A promising future direction for interpretability
 * future
   * incorporate model internals into chain-of-thought training, which could
     incentivize faithfulness. Another possibility is 
-  * building monitors based on model internals 
-    to improve transparency in chain-of-thought faithfulness.
+  * building monitors based on model internals to improve transparency in
+    chain-of-thought faithfulness.
 
 ### 2.1.4 Reverse engineering step 3: Validation of descriptions ‘Model
 organisms’ facilitate hypothesis validation
@@ -748,7 +746,162 @@ organisms’ facilitate hypothesis validation
   * use the descriptions for downstream tasks, or use of
   * benchmarks
 
-#### Validating interpretability methods using benchmarks
+* Conflating hypotheses with conclusions has regrettably been commonplace in MI
+  * validation has to improve (Madsen+ 2024; Stander+ 2025)
+  * often hard to distinguish faithful explanations of NN components from plausb
+  * Numerous examples of model interpretations fail sanity checks (Adebayo+
+    2018; Leavitt & Morcos, 2020; Miller+ 2024); = “interpretability illusions”
+    in which seemingly convincing interpretations of a model later turned out to
+    be false (Bolukbasi+ 2021; Makelov+ 2023); or instances where 
+* different approaches to explaining the same phenomenon yielded diff interpret
+  (eg Chan+ (2022b) or Chughtai+ (2023) vs Stander+ (2025) vs Wu+ (2024a)).
+* other instances were cited in Section 2.1.3
+
+#### Validating a hypothesis involves posing: ? good predictions about behav?
+
+* Testing the hypothesis often requires multiple approaches (Mueller+ 2024). 
+* To validate descriptions, many approaches 
+  * simply apply a different description method (Section 2.1.3)
+  * or:
+
+#### Predicting activations and counterfactuals: 
+
+By using natural language explanations of a given network component’s function,
+* predict the component’s activation levels on different inputs.
+  * by humans or by AI systems (Section 2.4), as in (Hernandez+ 2022; Bills+
+    2023; Shaham+ 2025; Juang+ 2024). In essence, our interpretations should
+* predict counterfactual scenarios in neural networks.  For instance, if we
+  * eg ablate or activate particular network components, we should be able to
+    predict specific downstream effects on other components.
+
+#### Predicting and explaining unusual failures or adversarial examples: Good
+
+* eg Hilton+ (2020) validated their methods by explaining 
+  * cases where a deep reinforcement learning agent’s neural network failed to
+    achieve maximum reward and also explained 
+  * specific hallucinations exhibited by the network. Another approach is to use
+* use an interpretability approach to handcraft an adversarial input
+  (Carter+ 2019; Casper+ 2023c; Mu & Andreas, 2020; Hernandez+ 2022)
+
+#### Handcrafting a network that reconstructs a network behavior: If our
+
+* build replacement parts for the original network.  
+* Cammarata+ (2020): interpretation of a curve detector’s function 
+  validated in a convolutional neural network by substituting the parts with
+  simple handcrafted replacements.
+
+#### Testing on ground truth: 
+
+* If the weights of a toy neural network were handcrafted by humans, 
+  it is possible to obtain a ground truth explanation for how it works. This
+* eg Conmy+ (2023) running [the attrib tool] on a simple model that implemented
+  a known algorithm.  (See also Section 2.1.4).
+
+#### Using the hypothesis to achieve particular engineering goals: Another way
+
+* assess hypot's utility in downstream applications 
+  (Doshi-Velez & Kim, 2017; Casper+ 2023a). For example, 
+* Templeton+ (2024) discussed examples where 
+  manually editing an LLM based on an interpretation 
+  led to predictable high-level changes in its behavior.
+* Marks+ (2024) showed how an interpretability tool could assist humans with
+  debugging a classifier in a toy task. 
+* Farrell+ (2024) use unlearning (Section 3.2.2) to demonstrate that 
+  learned SDL latents 
+  * don’t quite match human concepts, and 
+    might not be optimal for particular downstream use cases, highlighting
+
+#### Using the hypothesis to achieve specific engineering goals competitively:
+
+* evaluations using non-cherry-picked tasks remains relatively uncommon.
+  * attempts not consistently useful (Adebayo+ 2020; Denain & Steinhardt, 2023;
+    Casper+ 2022b; Hase+ 2023; Durmus+ 2024). Some of the most promising
+* research directions are to use interpretability methods to achieve things that
+  would be hard or impossible to achieve without them (Schut+ 2023).
+* otherwise bias toward developing methods that only perform well 
+  in best-case scenarios and on simple tasks, rather than those that can handle
+  worst-case scenarios and practical challenges.
+* high costs in terms of time and cognitive labor. In the following section, we
+---
+two potential solutions that could simplify the validation process:
+
+#### ‘Model organisms’ facilitate hypothesis validation. Although
+
+* interpretability is often approached through the perspective of the nat scis
+  (Olah+ 2020b). In certain natural sciences, such as 
+  * eg genomics and neuroscience, it is common for researchers to 
+    investigate a few extensively studied species known as ‘model organisms’ or
+    ’model systems’.
+  * in-depth studies on a select group of organisms, like E. coli, fruit flies,
+    mice, and macaque monkeys, researchers can leverage the insights and tools
+    gained from those organisms and apply them to other species. For example,
+  * specific types of neural activity in mice is more tractable 
+    due to existing hypotheses about which proteins should be fluorescently
+    labeled in order to identify specific types of neurons.
+  * allows for cross-checking results with previous work, enabling stronger
+* lack of consensus on which networks should serve as model organisms.
+  * should be open source, easy and cheap to use, 
+    representative of a broad range of systems and phenomena, have a 
+    replicable training process with open source training data, and have
+    multiple instances with different random seeds, among other criteria
+    (Sharkey+ 2022a).
+  * Thus far, researchers have mostly used model organisms that possess only
+    some of these criteria, eg
+    * transformer than can perform modular addition (Nanda+ 2023a) or 
+    * GPT-2 (Radford+ 2018).
+* support cross-validation of hypotheses, but also 
+* facilitate the progressive construction of experimental infrastructure by
+  providing a reliable foundation for experiment design. This 
+  * simplifies the process of rigorous hypothesis testing, thus helping prevent
+    oversimplification and ‘interpretability illusions’.
+* Studying solely model organisms risks 
+  merely making true statements about neural network structure, 
+  rather than generating insights that are of immediate practical benefit. For
+  * both scientific and engineering wins should be pursued in parallel.
+* choices made while studying model organisms 
+  risk steering the field in suboptimal directions. For instance,
+  * eg often motivated by the engineering goal of understanding 
+    understand SOTA models thoroughly enough to make assurances of their safety
+    (Bereska & Gavves, 2024; Tegmark & Omohundro, 2023; Dalrymple+ 2024).
+  * other
+    * studying small toy models (eg Nanda+ (2023a)) or how 
+    * larger models accomplish select subtasks (Arditi+ 2024), 
+    * risks incentivizing research and methods that fail to generalize to more
+      safety-relevant real-world settings.
+
+#### Validating interpretability methods using benchmarks. 
+
+* Beyond validating individual hypotheses, we may wish to 
+  validate entire interpretability methods.
+* Benchmarking is a proven approach to making incremental improvements in ML
+* several approaches to benchmarking interpretability methods developed recently
+* desideratum for interpretability benchmarks is to evaluate interpretations
+  against ground truth explanations (Freiesleben & König, 2023; Zhou+ 2022).
+  * using models with known ground truth explanations. Such models 
+  * can be created by compiling simple programs into weights of models that
+    exactly implement the known program (Lindner+ 2023; Weiss+ 2021; Thurnherr &
+    Scheurer, 2024; Gupta+ 2024). Alternatively, 
+  * predetermined explanations can be enforced at training time in conventional
+    models using Interchange Intervention Training (Gupta+ 2024; Geiger+ 2022).
+* evaluate specific steps in the interpretability pipelines also exist, such as
+  * eg model decomposition (Huang+ 2024a; Makelov+ 2024), 
+  * generating descriptions of network component functions (Schwettmann+ 2023),
+  * testing natural language explanations (Huang+ 2023). Other benchmarks offer
+* tests for multiple facets of the interpretability pipeline in order to test
+  explanation faithfulness, but 
+  may require further adaptation to the context of mechanistic explanations
+  (Hedström+ 2023).
+* reverse engineering is an ambitious goal, especially for very large NNs. 
+  * It may be the case that the field fails ultimately to make progress toward
+    complete reverse engineering because of the fundamental difficulty of
+    understanding such large, complex systems. One manifestation of this might
+    be that, even though we might make progress toward ‘carving networks at
+    their joints’, 
+  * the components that result are either too complex or numerous 
+    to make ready use of them. 
+* explain the progress 
+  * computational neuroscientists aim to study the learning process of a neural
+    system, rather than the mechanisms that result (Lillicrap & Kording, 2019).
 
 ## 2.2 Concept-based interpretability: Identifying components for given roles
 
