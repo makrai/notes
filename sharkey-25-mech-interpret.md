@@ -122,7 +122,7 @@ Sharkey, Chughtai, Batson, Lindsey, Wu, Bushnaq, Goldowsky-Dill,+
   + development of improved techniques. The first major section (Section 2)
 
 
-# 2 ...in methods and foundations
+# 2 Methods and foundations
 
 * One way of thinking about what neural networks do internally is that NNs learn
   parameters that implement neural algorithms. These neural algorithms
@@ -907,21 +907,94 @@ two potential solutions that could simplify the validation process:
 
 * the second approach, referred to as ‘concept-based interpretability’,
   * proposes a set of (human-derived) concepts that might be used by the network
-  * looks for components that appear to correspond to those concepts. This
+  * looks for components that appear to correspond to those concepts
   * ie “identifies network components for given roles”.
 * Variants on this approach have been developed in order to overcome some issues
-  * issue: carefully chosen data for well-defined concepts (Sec 2.2.2)
-  * issue that simple variants of the method only detect correlational, rather
+  * issue 1: carefully chosen data for well-defined concepts (Sec 2.2.2)
+  * issue 2: simple variants of the method only detect correlational, rather
     than causal variables (Section 2.2.3)
 * Related methods build human concepts into the training of models ~> they are
   more interpretable by default (Section 2.2.4)
 
 ### 2.2.1 Concept-based probes
 
+* ‘probe’ (Köhn, 2015; Gupta+ 2015; Alain & Bengio, 2017; Ettinger+ 2016). 
+* A concept-based probe is a classifier trained to predict a concept 
+  from the hidden representation of another model (Hupkes & Zuidema, 2018).
+  * typically human concepts of special interest. Probing requires 
+  * a labeling function that assigns classification labels to input data,
+    indicating the ‘value’ of the concept on that data (Note: 
+    * A binary value indicating the presence or absence is a special case 
+  * a probe, which is a simple parameterized model, is 
+    trained to predict concept labels based on hidden activations. 
+  * If the probe is a linear model, then we have localized the concept 
+    as a vector in latent space.
+* domain
+  * first introduced in NLP (Köhn, 2015; Gupta+ 2015) and have since been
+  * extensively explored in the field (Conneau+ 2018; Tenney+ 2019; Rogers+
+    2020; Gurnee+ 2023; Peters+ 2018; Burns+ 2023; Marks & Tegmark, 2024). They
+  * in vision (Alain & Bengio, 2017; Kim+ 2018b) and 
+  * deep reinforcement learning (McGrath+ 2022; Forde+ 2023). Probing also
+* includes 
+  * concept activation vectors (Kim+ 2018a), 
+  * information-theoretic probing (Voita & Titov, 2020), and 
+  * structural probing (Hewitt & Manning, 2019).
+* relatively simple to implement, probing has 
+  * two main challenges (Ravichander+ 2021; Belinkov, 2022b): 
+  * The need for carefully chosen data for well-defined concepts, and 
+  * probes detect correlations instead of causal variables in hidden activations.
+
 ### 2.2.2 Probes need carefully chosen data for well-defined concepts
 
-### 2.2.3 Probes detect correlations, rather than causal variables, in hidden
-activations
+* it is only possible to identify concepts that we have defined precisely enough
+  to create high-quality data. This limitation implies that concept-based
+* can only identify concepts that we were already looking for, 
+  rather than reveal unexpected features in the network. Another approach, known
+* Contrast-Consistent Search (CCS), probes not for single concepts but 
+  * probes for an axis in activation space that corresponds to positive or
+    negative propositions by enforcing probabilistic consistency conditions
+    (Burns+ 2023).
+  * more unsupervised than standard concept-based probing, even CCS 
+  * still requires the construction of data sets with clear positive and neg
+* future: methods that automatically develop data sets 
+  for probing and concept localization (Shaham+ 2025) (Section 2.4).
+
+### 2.2.3 Probes detect corr, rather than causal variables, in hidden activats
+
+* from an information-theoretic point of view, 
+  an arbitrarily powerful probe measures the mutual information between a hidden
+  representation and a concept (Hewitt & Liang, 2019; Pimentel+ 2020).
+* not necessarily imply that those activations causally mediate how that concept
+  is used by the network, or even if the network uses the concept at all
+  (Ravichander+ 2021; Geiger+ 2024b; Elazar+ 2021; Belinkov, 2022b). 
+* Probes can be successfully trained on hidden activations that lack any causal
+  connection to the output, only localizing correlated hidden activation
+* should be used only to only generate hypotheses about which network components
+  might be causally linked to a concept. 
+  * Confirming such hypotheses requires further investigation using causal
+    interventions or other probing methods.
+* with counterfactual data, intervening on the concept of interest (for)
+  * eg observing the output if the dog in an image was changed to a cat
+    (Elazar+ 2021; Mueller, 2024; Geiger+ 2024b). 
+* Methods include 
+  * distributed alignment search (Geiger+ 2024c; Wu+ 2023; Huang+ 2024a)
+  * causal probing (Guerner+ 2024)
+  * using attribution methods to measure the effect of concept vectors on
+    network predictions (Kim+ 2018b)
+  * concept erasure methods 
+    (Ravfogel+ 2020; 2022; Elazar+ 2021; Belrose+ 2023b;b). 
+* While these methods can identify causal mediators of concepts in hidden
+  representations, they 
+  * require more specialized data than probes do.
+* it might be acceptable for probes to identify merely correlated hidden activs
+  if the correlations generalize to the test distribution.
+  * hE risk of discovering correlated features spurious correlations 
+    due to the high dimensionality of hidden activations.  
+* Validating probes is therefore essential to avoid overfitting. This includes
+  * evaluating them on out-of-distribution test data 
+    that varies along task-specific dimensions 
+    to ensure that general purpose features have been found. One question that
+* ? how to use regularization to achieve good probe generalization.
 
 ### 2.2.4 Concept-based intrinsic interpretability
 
@@ -930,7 +1003,7 @@ activations
 ## 2.4 Automating steps in mech interpret research 7
 
 
-# 3 ...in applications of mech interpret
+# 3 Applications of mech interpret
 
 * how applications of interpretability methods have made progress
   * for each goal, discusses the specific axes along which progress is needed
