@@ -525,17 +525,220 @@ interpretability is to understand the mechanisms learned by neural networks.
 * architectures that are mathematically analyzable in other ways than linearity,
   such bilinear activations in MLPs (Sharkey, 2023; Pearce+ 2024).
 
-### 2.1.3 Reverse engineering step 2: Describing the functional role of
-components
+### 2.1.3 Reverse engineering step 2: Describing the functional role of compons
 
 * description of components to formulate hypotheses about their functional roles
-  and interactions, such as
-  * eg max-activating dataset examples, attribution methods, feature synthesis
-    methods, or causal intervention methods
+  and interactions
+* methods: max-activating dataset examples, attribution methods, 
+  feature synthesis, or causal intervention 
+* should not be taken to be definitive conclusions before they are thr validated
+* Descriptions of the functional role of neural network components can either
+  indicate 
+  * the cause of a component’s activation or 
+  * what occurs after that component has been activated, or – 
+  * preferably – both (Figure 6). In this section, we will discuss the existing
 
-#### Explanations for what causes components to activate
+* Figure 6: To study the functional role of the blue component numerous
+  * component's causes: the purple input components or the red intermediate components 
+    * via eg feature synthesis (Olah+ 2017a; 2020b), 
+      maximum activating examples (Olah+ 2017a; Bricken, 2023), or 
+      attributions (Sundararajan+ 2017). Or we could study 
+  * component's effects: the orange output components or the green intermediate
+    * via eg the logit lens (Nostalgebraist, 2020), 
+    * activation steering (Turner+ 2024), or 
+    * attributions (Marks+ 2024).
 
-#### Explanations for the downstream effects of components
+#### Explanations for what causes components to activate Explanations of the
+* three broad categories of methods, each with several problems: 
+  * Highly activating data set examples; 
+  * Attribution methods; and 
+  * Feature synthesis.
+
+##### Highly activating data set examples. The simplest method is to use 
+
+* highly activating data set examples (sometimes called ‘exemplar reprs’
+  (Hernandez+ 2022)). These are inputs on which a particular component is
+* analyzing apparent commonalities in the inputs suggests hypotheses for what
+* may be carried out by humans or AI systems (Section 2.4).
+* issues. The first issue is that the method 
+  1. relies on human prior beliefs, which may lead interpreters to project their
+     human understanding onto models that may be using unfamiliar concepts. This
+    * may identify concepts in the model that do not truly explain the model’s
+      funcalt (Freiesleben & König, 2023; Donnelly & Roegiest, 2019; Gale+ 2020)
+  2. ‘interpretability illusions’. Bolukbasi+ (2021) show that 
+    * bias in data sets can create misleading explanations 
+      * even with real data sets, as opposed to synthetically created data.
+    * human annotators identified dramatically different meanings 
+      for given directions in the activation space of BERT (Devlin, 2018).
+  3. often yields plausible explanations for arbitrarily chosen directions 
+    in the activation space (Szegedy+ 2014). This means that plausible
+* it is possible to develop adversarial models that 
+  deliberately yield misleading feature visualizations (Geirhos+ 2025).
+  * Robert Geirhos, Roland S. Zimmermann, Blair Bilodeau, Wieland Brendel, B Kim
+    Don’t trust your eyes: on the (un)reliability of feature visualizations. In
+    ICML’24. JMLR.org, 2025.
+* corr vs cau
+  * highly activating data set examples stem from the fact that they 
+    merely provide correlational explanations for the activation of a netw compon, 
+    rather than causal explanations. 
+* To identify causal explanations, other methods, eg attribution methods, necess
+
+##### Attribution methods are necessary for causal explanations but are often
+difficult to interpret.
+
+* Attribution methods 
+  (Baehrens+ 2009; Simonyan+ 2014a; Nguyen+ 2016b; Selvaraju+ 2019;
+  Sundararajan+ 2017; Fong & Vedaldi, 2017; Lundberg & Lee, 2017; Ribeiro+ 2016)
+  * intended to measure the causal importance of upstream variables (such as
+    inputs) on downstream variables (such as a network component).
+* methods include 
+  * Grad-CAM (Selvaraju+ 2019) and 
+  * Integrated Gradients (Sundararajan+ 2017), as well as 
+  * perturbation or model-agnostic approaches such as 
+    * LIME (Ribeiro+ 2016) and SHAP (Lundberg & Lee, 2017).
+* categorized as 
+  * gradient-based (Mozer & Smolensky, 1988; Baehrens+ 2009; Simonyan+ 2014a;
+    Nguyen+ 2016b; Selvaraju+ 2019; Sundararajan+ 2017; Wang+ 2024d) or
+  * sampling-, perturbation-, or ablation-based 
+    (Fong & Vedaldi, 2017; Vig+ 2020; Geiger+ 2020; Ghorbani & Zou, 2020; Meng+
+    2022b; Chan+ 2022a; Nanda, 2023a). However, 
+* hE grad
+  * on a theoretical level, many gradient-based methods 
+    identify only a first-order approximation of the ideal attribution, which is
+  * sometimes a poor approximation (Watson, 2022). 
+  * Most approaches only attribute important single components, though some
+* nL feature interaction
+ * integrated Hessians, attributes important feature interaction (Janizek+ 2020)
+  * KernelSHAP-IQ characterizes higher-order Shapley Interaction Index as a
+    solution to a weighted least square problem, offering one way to quantify
+    such interactions (Fumagalli+ 2024). Specific to 
+  * for Graph Neural Networks (GNNs), recent advancements such as 
+    GraphSHAP-IQ by Muschalik+ (2025) enable the exact and efficient computation
+    of any-order Shapley Interactions. Other specialized methods, like 
+* BiLRP: feature interactions in text sim models (Vasileiou & Eberle, 2024)
+* Adebayo+ (2018): some gradient-based methods identify attributions that are
+  independent both of the model and of the data generating process.
+* an adversary can train a model or perturb an input 
+  to reveal any attribution map (Dombrowski+ 2019; Ghorbani+ 2019; Heo+ 2019;
+  Kindermans+ 2019; Slack+ 2020; Zhang+ 2020) 4 . 
+  * nL Freiesleben & König (2023): 
+    adversarial examples do not truly undermine saliency maps 
+    as these are highly dissimilar to real interpretability challenges.  
+* For specific architectures like Graph Neural Networks (GNNs), methods such as
+  GNN-LRP have been developed to provide higher-order explanations 
+  by identifying relevant walks in the input graph using 
+  Layer-wise Relevance Propagation (Schnake+ 2022).
+* Perturbation methods present certain issues, such as 
+  * taking models off their training distribution and eliciting unusual behavior,
+  * theoretical complications (Feng+ 2018; Molnar+ 2021; Hooker+ 2021; Molnar+
+    2024; Freiesleben & König, 2023; Slack+ 2021). Developing efficient and
+
+##### Feature synthesis 
+
+* combines highly activating data set examples and gradient-based attribution
+  (Erhan+ 2009; Szegedy+ 2014; Olah+ 2017a).
+* synthesize inputs that maximize the activation of a component subject to some
+  regularization, such as 
+  * consistency with a generative model (Nguyen+ 2016a; 2017) or 
+  * total variation distance (Mahendran & Vedaldi, 2014).
+* criticisms of feature synthesis methods suggest that 
+  * natural dataset examples may serve interpretation better (Zimmermann+ 2021;
+    Borowski+ 2021) or show that 
+  * current methods struggle to identify trojans (Casper+ 2023a).
+
+#### Explanations for the downstream effects of components Alternatively, the
+
+##### Studying the direct effect. The 
+
+* logit lens (Nostalgebraist, 2020) applies the models unembedding matrix to an
+  intermediate residual stream representations, converting it into a
+  distribution over the model’s output vocabulary. 
+* Direct logit attribution is a generalization of this technique, 
+  applying to any appropriately sized vector space in the model, eg 
+  * the output of MLP layers (Geva+ 2021; 2022b;a; Dar+ 2023)
+  * attention blocks
+  * gradients (Katz+ 2024) of these
+  * and SDL decoder weights (Bricken 2023). 
+* tuned lens: Adding a trainable affine or linear trafo before unembedding, as
+  * improves decoding accuracy (Belrose+ 2023a; Yom Din+ 2024), at the cost of
+  * hE less faithfully representing when the model has completed computation.
+* In the language of causality (Pearl, 2009), 
+  unembedding a residual stream vector 
+  measures the direct effect of that vector on the output (McGrath+ 2023).
+* hE, the logit lens cannot measure the indirect effect, 
+  ie the effects resulting from the influence that the embedding has on the
+  hidden activations of subsequent layers. Other methods, such as 
+* causal interventions (see below), are necessary to measure the indirect
+* future: extend logit-lens-like approaches to project the effects of network
+  components on not only/but also
+  * directions in output vocabulary space
+  * intermediate downstream components.
+
+##### Causal Interventions. Causal interventions typically 
+
+* substitute (“patch”) the value of some network component, usually an
+  activation vector, with a different value during a forward pass, 
+  observing the resulting effect on the model. There exist 
+* a related set of techniques: 
+  ablation (for the special case of zero-ing or otherwise attempting to delete
+  activations entirely), activation patching, 
+  * causal mediation analysis, causal tracing, and interchange intervention
+    (Vig+ 2020; Geiger+ 2020; Meng+ 2022a; Chan+ 2022a; Nanda, 2023a).
+  * eg by patching activations from the corrupt prompt “the capital of Italy is”
+    into the clean prompt “the capital of France is”, we can observe the effect
+    on the output (“Rome” vs.“Paris”). This tells us which component values are
+    relevant for the differing output between the two prompts, but not the
+    information that remains consistent (eg the fact that the answer is a city).
+* patch patching: More surgical patches made on edges between network components
+  * allows us to isolate the effect of one particular component 
+    on only one other component, instead of on the entire rest of the network
+    (Goldowsky-Dill+ 2023). 
+* Causal scrubbing (Chan+ 2022a) is a generalization of path patching that
+  allows for testing hypotheses concerning any given connection between a set of
+  network components.
+* generate supervision signal to identify subspaces of interest. For instance,
+  * distributed alignment search (Geiger+ 2024c) 
+    learns a linear subspace that represents a particular concept, 
+    using data with interventions on that concept as supervision 
+    (Geiger+ 2024c; Guerner+ 2024; Wu+ 2023)
+* masks over network components to remove irrelevant components 
+  (De Cao+ 2020; Csordás+ 2021; Davies+ 2023)
+* A causal intervention typically requires a forward pass of the model. This 
+  * may make performing one for every network component in large models, long
+    contexts, or when using finer-grained components such as sparse autoencoder
+    latents prohibitively expensive. 
+  * Faster alternatives that work well in practice (Marks+ 24; Templeton+ 24)
+    * gradient-based approximations to activation patching, such as 
+    * eg attribution patching (Nanda, 2023a; Syed+ 2024), `AtP*` (Kramár+ 2024),
+      and integrated gradients (Sundararajan+ 2017).
+
+##### Observing the effects of components on sequential behavior. Another way to
+
+* patch in activated components and observe their effect on model behavior.
+* Steering is one example of this (Rimsky+ 2024; Turner+ 2024), where 
+  * components (activation vectors) are activated 
+    in order to influence the network’s behavior, often in interpretable ways.
+* patchscopes: To determine the functional role of an activation vector, 
+  a related method is to have a language model itself decode the activations
+  (Chen+ 25; Watkins, 23; Ghandeharioun+ 24; Huang+ 24b; Kharlapenko+ 24). These
+  * patch activations from one forward pass of a model 
+    into a different forward pass (perhaps in a different model). 
+  * The context of the new forward pass is designed to elicit relevant
+    information from the activations of the original forward pass.
+* A related sequential behavior based technique is simply 
+  to read the chain-of-thought (Wei+ 2024; Kojima+ 2024) produced by an LMs
+  * this could be considered an ‘interpretability technique’ 
+    in the sense that it aims to explain model decisions, it does 
+  * not use model internals in those explanations, at least not directly. Recent
+* chains of thought are not entirely faithful 
+  to the model’s underlying decision-making process 
+  (Agarwal+ 2024; Atanasova+ 2023; Turpin+ 2023; Lanham+ 2023; 
+  Ye & Durrett, 2022). A promising future direction for interpretability
+* future
+  * incorporate model internals into chain-of-thought training, which could
+    incentivize faithfulness. Another possibility is 
+  * building monitors based on model internals 
+    to improve transparency in chain-of-thought faithfulness.
 
 ### 2.1.4 Reverse engineering step 3: Validation of descriptions ‘Model
 organisms’ facilitate hypothesis validation
