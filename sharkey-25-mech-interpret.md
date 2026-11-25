@@ -392,7 +392,7 @@ Sharkey, Chughtai, Batson, Lindsey, Wu, Bushnaq, Goldowsky-Dill,+
 
 #### SDL cannot straightforwardly be applied to all architectures
 
-* originally for features that may be represented in superposition 
+* originally for features that may be represented in superposition
   across many neurons **within a single layer**
   * hE representations may be spread over other network architecture components
 * transformers: representations may be spread across
@@ -472,7 +472,7 @@ not the mechanisms themselves
   * causality (Geiger+ 2024a)
     hE yet no canonical causal mediators (Mueller+ 2024)
     that may form a basis for decomposition methods
-  * theories about why neural networks generalize 
+  * theories about why neural networks generalize
     * spline theory of neural networks (Balestriero & Baraniuk, 2018),
     * simplicity bias (Valle-Perez+ 2019),
     * the neural tangent kernel (Jacot+ 2018; Roberts+ 2022), or
@@ -490,17 +490,17 @@ not the mechanisms themselves
   several plausible approaches
 * network activations could be forced to use a discrete code from the outset, as
   * eg Tamkin+ (2025)
-* sparser activation functions, such as eg 
-  * TopK (Makhzani & Frey, 2013; Bills+ 2023) or 
+* sparser activation functions, such as eg
+  * TopK (Makhzani & Frey, 2013; Bills+ 2023) or
   * SoLU (Elhage+ 2022)
 * restrict attention superposition (Jermyn+ 2023)
   by limiting the number of heads attending to any query-key pair
-* ‘mixture of experts’ (Shazeer+ 2017; Fedus+ 2022; He, 2024) uses 
+* ‘mixture of experts’ (Shazeer+ 2017; Fedus+ 2022; He, 2024) uses
   * sparsely activating components —
   * with a large enough number of experts, and with
     sufficient activation sparsity,
     experts may become individually interpretable (Warstadt+ 2019)
-  * hE not competitively performant, and have also allowed 
+  * hE not competitively performant, and have also allowed
     ‘superposition to sneak through’, mitigating benefits
 * target weight sparsity directly during training, including approaches such as
   * `L_0` regularization (Louizos+ 2018) or
@@ -510,7 +510,7 @@ not the mechanisms themselves
 * finetuning with interpretability in mind (also used by Tamkin+ (2025)),
   avoiding the potentially excessive cost of training from scratch
 * modularity (Kirsch+ 2018; Andreas+ 2016)
-  * brain-inspired modular training (Liu+ 2023) trains for modularity 
+  * brain-inspired modular training (Liu+ 2023) trains for modularity
     by embedding neurons in a geometric space and
     encouraging geometrically local connections
 * simplify linearity-reliant circuit analysis (Elhage+ 2021) eg
@@ -521,7 +521,7 @@ not the mechanisms themselves
 
 ### 2.1.3 Reverse engineering step 2: Describing the functional role of compons
 
-* description of components to formulate hypotheses about 
+* description of components to formulate hypotheses about
   their functional roles and interactions
 * methods: max-activating dataset examples, attribution methods,
   feature synthesis, or causal intervention
@@ -529,7 +529,7 @@ not the mechanisms themselves
 * Descrip of the functional role of neural network components can either (Fig 6)
   * the cause of a component’s activation or
   * what occurs after that component has been activated, or –
-  * preferably both 
+  * preferably both
 * Figure 6: To study the functional role of the blue component numerous
   * causes: the purple input components or the red intermediate components
     * via eg feature synthesis (Olah+ 2017a; 2020b),
@@ -578,7 +578,7 @@ not the mechanisms themselves
 ##### Attribution methods are necessary for causal explanations but are often
 difficult to interpret
 
-* Attribution methods 
+* Attribution methods
   (Baehrens+ 2009; Simonyan+ 2014a; Nguyen+ 2016b; Selvaraju+ 2019;
   Sundararajan+ 2017; Fong & Vedaldi 2017; Lundberg & Lee 2017; Ribeiro+ 2016)
   * intended to measure the causal importance of upstream variables (eg inputs)
@@ -591,8 +591,8 @@ difficult to interpret
 * categorized as
   * gradient-based (Mozer & Smolensky, 1988; Baehrens+ 2009; Simonyan+ 2014a;
     Nguyen+ 2016b; Selvaraju+ 2019; Sundararajan+ 2017; Wang+ 2024d) or
-  * sampling-, perturbation-, or ablation-based 
-    (Fong & Vedaldi, 2017; Vig+ 2020; Geiger+ 2020; Ghorbani & Zou, 2020; 
+  * sampling-, perturbation-, or ablation-based
+    (Fong & Vedaldi, 2017; Vig+ 2020; Geiger+ 2020; Ghorbani & Zou, 2020;
     Meng+ 2022b; Chan+ 2022a; Nanda, 2023a)
 * hE grad
   * on a theoretical level, many gradient-based methods identify only a
@@ -601,12 +601,12 @@ difficult to interpret
   * Most approaches only attribute important single components
 * nL feature interaction
   * integrated Hessians attribute important feature interaction (Janizek+ 2020)
-  * KernelSHAP-IQ 
-    characterizes higher-order Shapley Interaction Index 
-    as a solution to a weighted least square problem, offering 
+  * KernelSHAP-IQ
+    characterizes higher-order Shapley Interaction Index
+    as a solution to a weighted least square problem, offering
     one way to quantify such interactions (Fumagalli+ 2024)
-  * for Graph Neural Networks (GNNs) 
-    GraphSHAP-IQ by Muschalik+ (2025) enable the 
+  * for Graph Neural Networks (GNNs)
+    GraphSHAP-IQ by Muschalik+ (2025) enable the
     exact and efficient computation of any-order Shapley Interactions
 * BiLRP: feature interactions in text sim models (Vasileiou & Eberle, 2024)
 * Adebayo+ (2018): some gradient-based methods identify attributions that are
@@ -614,28 +614,28 @@ difficult to interpret
 * an adversary can train a model or perturb an input to reveal any attribution
   map (Dombrowski+ 2019; Ghorbani+ 2019; Heo+ 2019; Kindermans+ 2019; Slack+
   2020; Zhang+ 2020)
-  * nL Freiesleben & König (2023): 
-    adversarial examples do not truly undermine saliency maps as 
+  * nL Freiesleben & König (2023):
+    adversarial examples do not truly undermine saliency maps as
     these are highly dissimilar to real interpretability challenges
 * For specific architectures like Graph Neural Networks (GNNs), methods such as
   GNN-LRP have been developed to provide higher-order explanations by
-  identifying relevant walks in the input graph 
+  identifying relevant walks in the input graph
   using Layer-wise Relevance Propagation (Schnake+ 2022)
 * Perturbation methods present certain issues, such as
   * taking models off their training distribution and eliciting unusual behavior
-  * theoretical complications (Feng+ 2018; Molnar+ 2021; Hooker+ 2021; 
+  * theoretical complications (Feng+ 2018; Molnar+ 2021; Hooker+ 2021;
     Molnar+ 2024; Freiesleben & König, 2023; Slack+ 2021)
 
 ##### Feature synthesis
 
 * combines highly activating data set examples and gradient-based attribution
   (Erhan+ 2009; Szegedy+ 2014; Olah+ 2017a)
-* synthesize inputs that maximize the activation of a component 
+* synthesize inputs that maximize the activation of a component
   subject to some regularization, such as
   * consistency with a generative model (Nguyen+ 2016a; 2017) or
   * total variation distance (Mahendran & Vedaldi, 2014)
 * criticisms of feature synthesis methods suggest that
-  * natural dataset examples may serve interpretation better 
+  * natural dataset examples may serve interpretation better
     (Zimmermann+ 2021; Borowski+ 2021) or show that
   * current methods struggle to identify trojans (Casper+ 2023a)
 
@@ -643,7 +643,7 @@ difficult to interpret
 
 ##### Studying the direct effect
 
-* logit lens (Nostalgebraist, 2020) 
+* logit lens (Nostalgebraist, 2020)
   applies the models unembedding matrix to an intermediate residual stream repr,
   converting it into a distribution over the model’s output vocabulary
 * Direct logit attribution is a generalization of this technique, applying to
@@ -655,36 +655,36 @@ difficult to interpret
 * tuned lens: Adding a trainable affine or linear trafo before unembedding
   * improves decoding accuracy (Belrose+ 2023a; Yom Din+ 2024)
   * hE less faithfully representing when the model has completed computation
-* In the language of causality (Pearl, 2009), 
-  unembedding a residual stream vector 
+* In the language of causality (Pearl, 2009),
+  unembedding a residual stream vector
   measures the direct effect of that vector on the output (McGrath+ 2023)
-* hE, the logit lens cannot measure the indirect effect, ie 
-  * indir = the effects resulting from the influence 
+* hE, the logit lens cannot measure the indirect effect, ie
+  * indir = the effects resulting from the influence
     that the embedding has on the hidden activations of subsequent layers
   * causal interventions (see below), are necessary to measure them
-* future: extend logit-lens-like approaches to 
+* future: extend logit-lens-like approaches to
   project the effects of network components on not only/but also
   * directions in output vocabulary space
   * intermediate downstream components
 
 ##### Causal Interventions
 
-* substitute (“patch”) 
-  the value of some network component, usually an activation vector, 
-  with a different value 
-  during a forward pass, 
+* substitute (“patch”)
+  the value of some network component, usually an activation vector,
+  with a different value
+  during a forward pass,
   observing the resulting effect on the model
-* a related set of techniques: 
+* a related set of techniques:
   * ablation (for the special case of zero-ing or otherwise attempting to delete
-    activations entirely), 
+    activations entirely),
   * activation patching,
   * causal mediation analysis, causal tracing, and interchange intervention
     (Vig+ 2020; Geiger+ 2020; Meng+ 2022a; Chan+ 2022a; Nanda, 2023a)
   * eg by patching activations from the corrupt prompt “the capital of Italy is”
-    into the clean prompt “the capital of France is”, we can 
-    observe the effect on the output (“Rome” vs “Paris”). This 
-    * tells us which component values are relevant for 
-      the differing output between the two prompts, but 
+    into the clean prompt “the capital of France is”, we can
+    observe the effect on the output (“Rome” vs “Paris”). This
+    * tells us which component values are relevant for
+      the differing output between the two prompts, but
       not for the information that remains consistent (eg the answer is a city)
 * patch patching: More surgical patches made on edges between network components
   * isolate the effect of one particular component **on only one other compon,**
@@ -692,11 +692,11 @@ difficult to interpret
 * Causal scrubbing (Chan+ 2022a) is a generalization of path patching that
   allows for testing hypoths concerning any connection between a set of compons
 * generate supervision signal to identify subspaces of interest
-  * distributed alignment search (Geiger+ 2024c) learns 
-    a linear subspace that represents a particular concept, 
-    using data with interventions on that concept as supervision 
+  * distributed alignment search (Geiger+ 2024c) learns
+    a linear subspace that represents a particular concept,
+    using data with interventions on that concept as supervision
     (Geiger+ 2024c; Guerner+ 2024; Wu+ 2023)
-* masks over network components to remove irrelevant components 
+* masks over network components to remove irrelevant components
   (De Cao+ 2020; Csordás+ 2021; Davies+ 2023)
 * A causal intervention typically requires a forward pass of the model
   * may make performing one for every network component in large models, long
@@ -704,7 +704,7 @@ difficult to interpret
     latents prohibitively expensive
   * Faster alternatives that work well in practice (Marks+ 24; Templeton+ 24)
     * gradient-based approximations to activation patching
-    * eg attribution patching (Nanda, 2023a; Syed+ 2024), 
+    * eg attribution patching (Nanda, 2023a; Syed+ 2024),
     * `AtP*` (Kramár+ 2024),
     * integrated gradients (Sundararajan+ 2017)
 
@@ -712,26 +712,26 @@ difficult to interpret
 
 * patch in activated components and observe their effect on model behavior
 * Steering is one example of this (Rimsky+ 2024; Turner+ 2024), where
-  * components (activation vectors) are activated 
+  * components (activation vectors) are activated
     in order to influence the network’s behavior, often in interpretable ways
 * patchscopes
   * have a language model itself decode the activations,
     to determine the functional role of an activation vector
     (Chen+ 25; Watkins, 23; Ghandeharioun+ 24; Huang+ 24b; Kharlapenko+ 24)
-  * patch activations from one forward pass of a model 
+  * patch activations from one forward pass of a model
     into a different forward pass (perhaps in a different model)
-  * The context of the new forward pass is designed to elicit relevant info 
+  * The context of the new forward pass is designed to elicit relevant info
     from the activations of the original forward pass
 * A related sequential behavior based technique is simply to read the
   chain-of-thought (Wei+ 2024; Kojima+ 2024) produced by an LMs
   * an ‘interprt technique’ in the sense that it aims to explain model decisions
   * not use model internals in those explanations, at least not directly
-  * not entirely faithful to the model’s underlying decision-making process 
+  * not entirely faithful to the model’s underlying decision-making process
     (Agarwal+ 24; Atanasova+ 23; Turpin+ 23; Lanham+ 23; Ye & Durrett 22)
 * future
   * incorporate model internals into chain-of-thought training, which could
     incentivize faithfulness
-  * building monitors based on model internals 
+  * building monitors based on model internals
     to improve transparency in chain-of-thought faithfulness
 
 ### 2.1.4 Reverse engineering step 3: Validation of descriptions
@@ -763,7 +763,7 @@ difficult to interpret
 
 * using natural language explanations of a given network component’s function,
 * predict the component’s activation levels on different inputs
-* by humans or by AI systems (Section 2.4), 
+* by humans or by AI systems (Section 2.4),
   as in (Hernandez+ 2022; Bills+ 2023; Shaham+ 2025; Juang+ 2024)
 * predict counterfactual scenarios in neural networks
   * eg ablate or activate particular network components, we should be able to
@@ -772,7 +772,7 @@ difficult to interpret
 #### Predicting and explaining unusual failures or adversarial examples
 
 * eg Hilton+ (2020) validated their methods by explaining
-  * cases where a deep reinforcement learning agent’s neural network 
+  * cases where a deep reinforcement learning agent’s neural network
     failed to achieve maximum reward and also explained
   * specific hallucinations exhibited by the network
 * use an interpretability approach to handcraft an adversarial input
@@ -782,7 +782,7 @@ difficult to interpret
 
 * build replacement parts for the original network
 * Cammarata+ (2020): interpretation of a curve detector’s function
-  validated in a convolutional neural network 
+  validated in a convolutional neural network
   by substituting the parts with simple handcrafted replacements
 
 #### Testing on ground truth:
@@ -811,7 +811,7 @@ difficult to interpret
 * evaluations using non-cherry-picked tasks remains relatively uncommon
 * attempts not consistently useful (Adebayo+ 2020; Denain & Steinhardt, 2023;
   Casper+ 2022b; Hase+ 2023; Durmus+ 2024)
-* use interpretabilit methods to achieve things that would be hard or impossible 
+* use interpretabilit methods to achieve things that would be hard or impossible
   without them (Schut+ 2023)
 * otherwise bias toward developing methods that only perform well
   in best-case scenarios and on simple tasks, rather than those that can handle
@@ -826,12 +826,12 @@ two potential solutions that could simplify the validation process:
   (Olah+ 2020b)
   * in eg genomics and neuroscience, it is common to investigate a few
     extensively studied species known as ‘model organisms’ or ’model systems’
-  * in-depth studies on a select group of organisms, like 
+  * in-depth studies on a select group of organisms, like
   * eg E. coli, fruit flies, mice, and macaque monkeys
-  * leverage the insights and tools gained from those organisms and 
+  * leverage the insights and tools gained from those organisms and
     apply them to other species
-  * specific types of neural activity in mice is more tractable due to 
-    existing hypotheses about which proteins should be fluorescently labeled 
+  * specific types of neural activity in mice is more tractable due to
+    existing hypotheses about which proteins should be fluorescently labeled
     in order to identify specific types of neurons
   * allows for cross-checking results with previous work, stronger
 * lack of consensus on which networks should serve as model organisms
@@ -873,7 +873,7 @@ two potential solutions that could simplify the validation process:
   (Freiesleben & König, 2023; Zhou+ 2022)
   * using models with known ground truth explanations
   * can be created by compiling simple programs into weights of models that
-    exactly implement the known program 
+    exactly implement the known program
     (Lindner+ 2023; Weiss+ 2021; Thurnherr & Scheurer, 2024; Gupta+ 2024)
   * predetermined explanations can be enforced at training time in conventional
     models using Interchange Intervention Training (Gupta+ 2024; Geiger+ 2022)
@@ -901,7 +901,7 @@ two potential solutions that could simplify the validation process:
   * proposes a set of (human-derived) concepts that might be used by the network
   * looks for components that appear to correspond to those concepts
   * ie “identifies network components for given roles”
-* Variants on this approach have been developed in order to overcome some issues
+* variants have been developed to overcome issues
   * issue 1: carefully chosen data for well-defined concepts (Sec 2.2.2)
   * issue 2: simple variants of the method only detect correlational, rather
     than causal variables (Section 2.2.3)
@@ -913,40 +913,41 @@ two potential solutions that could simplify the validation process:
 * ‘probe’ (Köhn, 2015; Gupta+ 2015; Alain & Bengio, 2017; Ettinger+ 2016)
 * A concept-based probe is a classifier trained to predict a concept
   from the hidden representation of another model (Hupkes & Zuidema, 2018)
-  * typically human concepts of special interest. Probing requires
+  * typically human concepts of special interest
   * a labeling function that assigns classification labels to input data,
-    indicating the ‘value’ of the concept on that data (Note:
-    * A binary value indicating the presence or absence is a special case
+    indicating the ‘value’ of the concept on that data
+    * spec: A binary value indicating the presence or absence
   * a probe, which is a simple parameterized model, is
     trained to predict concept labels based on hidden activations
   * If the probe is a linear model, then we have localized the concept
     as a vector in latent space
 * domain
-  * first introduced in NLP (Köhn, 2015; Gupta+ 2015) and have since been
-  * extensively explored in the field (Conneau+ 2018; Tenney+ 2019; Rogers+
-    2020; Gurnee+ 2023; Peters+ 2018; Burns+ 2023; Marks & Tegmark, 2024). They
-  * in vision (Alain & Bengio, 2017; Kim+ 2018b) and
-  * deep reinforcement learning (McGrath+ 2022; Forde+ 2023). Probing also
+  * first introduced in NLP (Köhn, 2015; Gupta+ 2015)
+  * extensively explored in NLP (Conneau+ 2018; Tenney+ 2019; Rogers+ 2020;
+    Gurnee+ 2023; Peters+ 2018; Burns+ 2023; Marks & Tegmark, 2024)
+  * vision (Alain & Bengio, 2017; Kim+ 2018b) and
+  * deep reinforcement learning (McGrath+ 2022; Forde+ 2023)
 * includes
   * concept activation vectors (Kim+ 2018a),
   * information-theoretic probing (Voita & Titov, 2020), and
   * structural probing (Hewitt & Manning, 2019)
 * relatively simple to implement, probing has
-  * two main challenges (Ravichander+ 2021; Belinkov, 2022b):
+  * two main challenges (Ravichander+ 2021; Belinkov, 2022b)
   * The need for carefully chosen data for well-defined concepts, and
   * probes detect correlations instead of causal variables in hidden activations
 
 ### 2.2.2 Probes need carefully chosen data for well-defined concepts
 
 * it is only possible to identify concepts that we have defined precisely enough
-  to create high-quality data. This limitation implies that concept-based
+  to create high-quality data
 * can only identify concepts that we were already looking for,
-  rather than reveal unexpected features in the network. Another approach, known
+  rather than reveal unexpected features in the network
 * Contrast-Consistent Search (CCS), probes not for single concepts but
-  * probes for an axis in activation space that corresponds to positive or
-    negative propositions by enforcing probabilistic consistency conditions
+  * probes for an axis in activation space that
+    corresponds to positive or negative propositions by enforcing
+    probabilistic consistency conditions
     (Burns+ 2023)
-  * more unsupervised than standard concept-based probing, even CCS
+  * more unsupervised than standard concept-based probing
   * still requires the construction of data sets with clear positive and neg
 * future: methods that automatically develop data sets
   for probing and concept localization (Shaham+ 2025) (Section 2.4)
@@ -961,38 +962,211 @@ two potential solutions that could simplify the validation process:
   (Ravichander+ 2021; Geiger+ 2024b; Elazar+ 2021; Belinkov, 2022b)
 * Probes can be successfully trained on hidden activations that lack any causal
   connection to the output, only localizing correlated hidden activation
-* should be used only to only generate hypotheses about which network components
+* should be used only to generate hypotheses about which network components
   might be causally linked to a concept
-  * Confirming such hypotheses requires further investigation using causal
-    interventions or other probing methods
-* with counterfactual data, intervening on the concept of interest (for)
+  * Confirming such hypotheses requires further investigation
+    using causal interventions or other probing methods
+* with counterfactual data, intervening on the concept of interest
   * eg observing the output if the dog in an image was changed to a cat
     (Elazar+ 2021; Mueller, 2024; Geiger+ 2024b)
 * Methods include
   * distributed alignment search (Geiger+ 2024c; Wu+ 2023; Huang+ 2024a)
   * causal probing (Guerner+ 2024)
-  * using attribution methods to measure the effect of concept vectors on
-    network predictions (Kim+ 2018b)
+  * using attribution methods to measure the effect of concept vectors
+    on network predictions (Kim+ 2018b)
   * concept erasure methods
     (Ravfogel+ 2020; 2022; Elazar+ 2021; Belrose+ 2023b;b)
-* While these methods can identify causal mediators of concepts in hidden
-  representations, they
-  * require more specialized data than probes do
+* these methods can identify causal mediators of concepts in hidden reprs
+  * hE require more specialized data than probes do
 * it might be acceptable for probes to identify merely correlated hidden activs
   if the correlations generalize to the test distribution
-  * hE risk of discovering correlated features spurious correlations
-    due to the high dimensionality of hidden activations
-* Validating probes is therefore essential to avoid overfitting. This includes
+  * hE risk of discovering correlated features
+  * spurious correlations due to the high dimensionality of hidden activations
+* Validating probes is therefore essential to avoid overfitting
   * evaluating them on out-of-distribution test data
     that varies along task-specific dimensions
-    to ensure that general purpose features have been found. One question that
+    to ensure that general purpose features have been found
 * ? how to use regularization to achieve good probe generalization
 
 ### 2.2.4 Concept-based intrinsic interpretability
 
+* leverage the concepts in the network training process itself, such as in the
+* eg concept bottleneck models (Koh+ 2020). This is beneficial as
+  * it is more likely that the components to which concepts are assigned are
+  causally relevant. Instead of specific concepts,
+* networks can also be trained to use particular causal structures (Geiger+
+  2022). While
+* it may not be possible to prespecify all relevant concepts or structures,
+  integrating this approach with methods for disentangling concepts
+  could prove
+  useful (Chen+ 2018).
+* Cloud+ (2024) incentivize modularity via applying data-dependent, weighted
+  masks to gradients during backpropagation.
+
 ## 2.3 Proceduralz mech interpret into circuit discovery pipelines: A case study
 
+* To form a complete pipeline by combining various methods,
+  several methodological choices regarding decomp, description, and validation,
+* Circuit discovery has emerged as a prominent pipeline in recent MI research
+  (Wang+ 2023; Hanna+ 2023; Heimersheim & Janiak, Its objective is to
+  * describe how a neural network performs a task of interest
+    while making specific choices for network decomposition, component
+    description, and hypothesis validation. In this section, we look at
+* this sec: the typical choices in each step in greater depth and discuss how
+* The ‘circuit discovery’ pipeline takes the following steps:
+  1. Task Definition. For a given model we want to study, we
+    * select a task that the model can perform, and
+      a dataset on which the network performs that task. This is
+    * a concept-based step, since the definition of the task was based on how
+  2. Decomposition. During the decomposition step, it is common to
+    * think of the neural network as a directed acyclic graph (DAG), where
+    * activations are represented by nodes and
+      the “abstract weights” between them represented by edges.
+    * Most work thus far has selected architectural components (Section 2.1.2),
+    * eg attention heads and MLP layers, to be the nodes. However, more recent
+    * SDL latents for nodes (Marks+ 2024)
+  3. An initial description step:
+    * Identify task-relevant vs. -irrelevant subgraphs. The circuit discovery
+    * task-relevant nodes and edges. Typically,
+    * causal interventions are used, drawing
+      samples from some “clean” and “counterfactual” data sets. Circuit
+    * iterative activation patching (Wang+ 2023; Chan+ 2022a; Lieberum+ 2023) or
+      integrated gradients (Marks+ 2024).
+  4. An iterative description-validation loop. After obtaining
+    * in a task-relevant subgraph, the next step involves
+      describing the function of each node or edge individually. This step is
+    * less formulaic than previous steps:  Researchers rely on their intuition,
+    * create testable hypotheses for the function of a component or edge of
+    * design custom experiments to validate or invalidate their hypothesis. Only
+    * several iterations of hypothesis testing through experimentation are
+    * In research papers, this loop is rarely made explicit, as
+      only the final description is presented. However,
+    * nL Chan+ (2022b) detail this process for understanding the induction task,
+    * Nanda (2023b) provides another description of such a loop
+      (building on work by Li+ (2023))
+  5. Final Validation. Circuits are commonly
+    * evaluated based on three attributes (Wang+ 2023):
+      * faithfulness, which refers to
+        how closely the circuit approximates the entire network’s behavior,
+      * minimality, which assesses if nodes in the subgraph are unnecessary, and
+      * completeness: whether any nodes not included in the subgraph are important
+        for task behavior.
+    * Additional ad hoc validation methodologies also exist. For example,
+    * Wang+ (2023) generate adversarial examples for their task based on their
+    * Shi+ (2024) devise a suite of
+      formal statistical hypothesis tests for circuit efficacy.  This circuit
+* has yielded valuable insight, but falls short using current methods. The
+* issues:
+
+### Task definition is concept-based.  Defining circuits has thus far been with
+
+* Miller+ (2024) demonstrate that the within-task variance of model performance
+  across the distribution of data points in a task is large, implying that
+  ie the circuit provides a good approximation of the average case performance
+  on the dataset, but a
+  hE poor one for any individual data point.
+  ie the process of first selecting a task and then studying how the model
+  performs it may not be an effective approach to achieve “reverse engineering”
+  -style interpretability. This approach may also create spurious correlations,
+  an issue shared with concept-based probing (Section 2.2.1). Thus, it might be
+  worth learning the task decomposition instead (Haani+ 2024).
+
+### Network decomposition methods are flawed. Perhaps most importantly,
+
+* prior circuit discovery work has attempted to decompose models in either
+  * architectural bases (Wang+ 2023; Conmy+ 2023) or
+  * sparse autoencoder latents (Marks+ 2024; Huben+ 2024), which are
+  * both imperfect ways to decompose neural networks for MI (Section 2.1.2).
+* Future work could locate circuits in improved decompositions
+  or simultaneously learn both network decompositions and circuits.
+
+### Circuit faithfulness is low. Simple early unfaithful (Chan+ 2022b; 2023).
+
+* Miller+ (2024) show that existing measures of faithfulness
+  * depend on the causal intervention implementation used, and further
+  * misleading when applied to several complex end-to-end circuits.
+* Makelov+ (2023) argue that
+  subspace activation patching via distributed alignment search
+  may lead to interpretability illusion mechanisms, although
+  * these findings are contested by Wu+ (2024c).
+
+### Scalable methods are only approximate.
+
+* Identifying relevant components through individual interventions is costly
+  when there are many components.
+* Attribution patching Syed+ (2024) was designed to identify potential relevant
+  candidates for further testing through intervention, which 
+  becomes more important as the number of components expands significantly
+  through sparse dictionary learning (Marks+ 2024). However, 
+* hE attribution patching uses gradients, which only yield a first-order
+  approximation of the effect of ablating components (Wu+ 2024c; Molchanov+
+  2017), leaving it 
+  * unclear whether this method and any improvements on it (Kramár+ 2024)
+    produce adequate approximations.
+
+### Circuit discovery algorithms struggle with backup and negative behavior.
+
+* “backup” and “negative” behavior (Wang+ 2023; McGrath+ 2023; McDougall+ 2024),
+  * Thomas McGrath, Matthew Rahtz, Janos Kramar, Vladimir Mikulik, Shane Legg.
+    The hydra effect: Emergent self-repair in language model computations, 
+    arxiv.org/abs/2307.15771.
+  * Callum Stuart McDougall, Arthur Conmy, Cody Rushing, Thomas McGrath, N Nanda
+    Copy suppression: Comprehensiv understanding a motif in LM attention heads
+    BlackboxNLP 2024. openreview.net/forum?id=5Hd6813x3U.
+* these actively suppress task performance and are thus 
+  not captured by maximizing task performance metrics
+* they remain important factors to consider
+* Mueller (2024) provides further discussion of these issues.
+
+### ‘Streetlight’ Interpretability: 
+
+* Interpretability that focuses on models or behaviors that seem easier to
+  interpret than average can be termed ‘streetlight interpretabil’ (Wang+ 2023)
+* gives a misleading impression of the level of difficulty involved in
+* study arbitrary circuits: less successful (Nanda+ 2023b).
+* automating the overall pipeline will become more feasible. However, 
+  * some individual steps in mechanistic interpretability can already be
+    fruitfully automated, as discussed in the next section (Section 2.4).
+
 ## 2.4 Automating steps in mech interpret research 7
+
+* We will explore 
+  * previous cases where manual tasks in MI have been successfully automated and
+  * open problems in further automation.
+
+### Automating feature description and validation. A task that is amenable to
+
+* ‘describing the functional role of model components’ (Section 2.1.3). 
+* LMs generated descriptions of the functional role of 
+  * neurons in image models (Hernandez+ 2022), 
+  * neurons in language models (Bills+ 2023), and 
+  * sparse autoencoder latents in language models (Huben+ 2024; Bricken, 2023;
+    Juang+ 2024) using highly activating data set examples.
+* validated by assessing how effectively a human or model can use them to pred
+  * the activation of a feature in a given data set example, or predict 
+  * where a feature is active within a single image or text excerpt. 
+* The success of these predictions can be used as a quantitative measurement of
+  ‘interpretability’.
+This was previously used to measure progress toward a decomposition method that
+carves networks at the joints of their generalization structure, assuming that
+such a decomposition would be maximally interpretable (Section 2.1.2). While
+imperfect, these methods for interpretation hypothesis generation and validation
+* future
+  * synth input
+    * methos might be improved by automating the generation of inputs 
+      to test the interpretation hypotheses by ensuring that generations activate
+      the interpreted feature (Huang+ 2023), or defining 
+  * more rigorous statistical tests (Bloom & Lin, 2024b). Automatic component
+  * descriptions of feature effects, relationships between features (Bussman+
+    2024), or how components interact during runtime produce behavior.
+
+### Automating circuit discovery (ACDC) pipelines. An approach (Conmy+ 2023)
+
+* works since improved upon and accelerated this process (Syed+ 2024; Kramár+
+  2024; Marks+ 2024). Note that ACDC-like approaches in general assist in
+  * ACDC don't describ the functional role of subgraph components.
+* fully automating current pipelines would not yield satisfactory explanations
+  * an attempt using leading decomposition and description meths: Marks+ (2024)
 
 
 # 3 Applications of mech interpret
